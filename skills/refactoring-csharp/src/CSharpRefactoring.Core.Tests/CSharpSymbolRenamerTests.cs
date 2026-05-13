@@ -140,6 +140,40 @@ public sealed class CSharpSymbolRenamerTests
     }
 
     [Fact]
+    public async Task RenameSymbol_WithDirectoryInput_MergesMultipleSolutionsAndUpdatesSharedProjects()
+    {
+        string monorepoDirectory = CreateMultiSolutionMonorepo();
+        string sharedFilePath = Path.Combine(monorepoDirectory, "Shared", "SharedWidget.cs");
+        string consumerFilePath = Path.Combine(monorepoDirectory, "App", "Consumer.cs");
+
+        int lineNumber = FindLineNumber(sharedFilePath, "public sealed class SharedWidget");
+
+        CSharpSymbolRenamer.RenameResult result = await CSharpSymbolRenamer.Tool.RenameSymbol(
+            monorepoDirectory,
+            sharedFilePath,
+            lineNumber,
+            "SharedWidget",
+            "SharedKnowledgeWidget",
+            dryRun: false);
+
+        Assert.True(result.Success, result.Message);
+        Assert.Equal("applied", result.Mode);
+        Assert.Contains("temporary solution", result.Message);
+        Assert.True(result.ChangedDocumentCount >= 2);
+
+        string movedSharedFilePath = Path.Combine(monorepoDirectory, "Shared", "SharedKnowledgeWidget.cs");
+        Assert.False(File.Exists(sharedFilePath));
+        Assert.True(File.Exists(movedSharedFilePath));
+
+        string updatedSharedCode = await File.ReadAllTextAsync(movedSharedFilePath);
+        string updatedConsumerCode = await File.ReadAllTextAsync(consumerFilePath);
+
+        Assert.Contains("public sealed class SharedKnowledgeWidget", updatedSharedCode);
+        Assert.Contains("new SharedKnowledgeWidget()", updatedConsumerCode);
+        Assert.DoesNotContain("SharedWidget", updatedConsumerCode);
+    }
+
+    [Fact]
     public async Task RenameSymbol_ReturnsError_WhenNewNameIsSameAsCurrent()
     {
         string workingDirectory = CreateWorkingCopyFromTestData();
@@ -260,6 +294,90 @@ public sealed class CSharpSymbolRenamerTests
         string ctorFilePath = Path.Combine(workingDirectory, "UnsupportedCase.cs");
         File.WriteAllText(ctorFilePath, constructorFileContent);
         Assert.True(File.Exists(ctorFilePath));
+    }
+
+    private static string CreateMultiSolutionMonorepo()
+    {
+        string rootDirectory = Path.Combine(
+            Path.GetTempPath(),
+            "CSharpRefactoring.Core.Tests",
+            Guid.NewGuid().ToString("N"));
+
+        string sharedDirectory = Path.Combine(rootDirectory, "Shared");
+        string appDirectory = Path.Combine(rootDirectory, "App");
+        Directory.CreateDirectory(sharedDirectory);
+        Directory.CreateDirectory(appDirectory);
+
+        File.WriteAllText(
+            Path.Combine(sharedDirectory, "Shared.csproj"),
+            """
+            <Project Sdk="Microsoft.NET.Sdk">
+              <PropertyGroup>
+                <TargetFramework>net10.0</TargetFramework>
+                <Nullable>enable</Nullable>
+              </PropertyGroup>
+            </Project>
+            """);
+
+        File.WriteAllText(
+            Path.Combine(appDirectory, "App.csproj"),
+            """
+            <Project Sdk="Microsoft.NET.Sdk">
+              <ItemGroup>
+                <ProjectReference Include="../Shared/Shared.csproj" />
+              </ItemGroup>
+              <PropertyGroup>
+                <TargetFramework>net10.0</TargetFramework>
+                <Nullable>enable</Nullable>
+              </PropertyGroup>
+            </Project>
+            """);
+
+        File.WriteAllText(
+            Path.Combine(sharedDirectory, "Shared.slnx"),
+            """
+            <Solution>
+              <Project Path="Shared.csproj" />
+            </Solution>
+            """);
+
+        File.WriteAllText(
+            Path.Combine(appDirectory, "App.slnx"),
+            """
+            <Solution>
+              <Project Path="App.csproj" />
+              <Project Path="../Shared/Shared.csproj" />
+            </Solution>
+            """);
+
+        File.WriteAllText(
+            Path.Combine(sharedDirectory, "SharedWidget.cs"),
+            """
+            namespace MultiSolution.Shared;
+
+            public sealed class SharedWidget
+            {
+                public string Label => nameof(SharedWidget);
+            }
+            """);
+
+        File.WriteAllText(
+            Path.Combine(appDirectory, "Consumer.cs"),
+            """
+            using MultiSolution.Shared;
+
+            namespace MultiSolution.App;
+
+            public sealed class Consumer
+            {
+                public SharedWidget Create()
+                {
+                    return new SharedWidget();
+                }
+            }
+            """);
+
+        return rootDirectory;
     }
 
     private static void CopyDirectory(string sourcePath, string destinationPath)

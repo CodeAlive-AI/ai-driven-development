@@ -1,6 +1,17 @@
 # refactoring-csharp
 
-Inspired by ReSharper. A Roslyn-based refactorer for C# solutions (`.sln` / `.slnx`), packaged as an agent skill with bundled .NET 10 source and optional prebuilt CLI binaries.
+Inspired by ReSharper. A Roslyn-based refactorer for C# solutions and multi-solution monorepos, packaged as an agent skill with bundled .NET 10 source and optional prebuilt CLI binaries.
+
+## Contents
+
+- [Quick start](#quick-start)
+- [What it does](#what-it-does)
+- [Supported agents](#supported-agents)
+- [Use directly](#use-directly)
+- [Contract](#contract)
+- [Build and test](#build-and-test)
+- [Release](#release)
+- [License](#license)
 
 ## Quick start
 
@@ -52,6 +63,7 @@ irm https://github.com/CodeAlive-AI/ai-driven-development/releases/download/refa
 
 - Renames C# symbols across a whole solution using Roslyn.
 - Supports `.sln` and `.slnx`.
+- Supports multi-solution monorepos by accepting a directory, merging discovered solutions/projects into a temporary aggregate `.slnx`, refactoring through Roslyn, and deleting the temporary solution afterward.
 - Resolves targets from `file_path`, 1-based `line_number`, and required `old_name`.
 - Applies by default; dry-run is opt-in.
 - Renames comments by default.
@@ -90,6 +102,17 @@ Preferred, if installed from release with a prebuilt binary:
   NewName
 ```
 
+For multi-solution monorepos, pass the repository directory instead of a solution file:
+
+```bash
+~/.codex/skills/refactoring-csharp/bin/csharp-refactor rename-symbol \
+  /repo \
+  /repo/src/Foo.cs \
+  42 \
+  OldName \
+  NewName
+```
+
 Source fallback:
 
 ```bash
@@ -102,7 +125,7 @@ dotnet run --project ~/.codex/skills/refactoring-csharp/src/CSharpRefactoring.Cl
 ## Contract
 
 ```text
-rename-symbol <solution> <file> <line> <oldName> <newName> [dryRun=false|true]
+rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]
 ```
 
 Defaults:

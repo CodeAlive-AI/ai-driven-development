@@ -90,7 +90,7 @@ public static class Program
     private static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  rename-symbol <sln> <file> <line> <oldName> <newName> [dryRun=false|true]");
+        Console.WriteLine("  rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]");
     }
 
     public static bool TryParseDryRunArgument(string? argument, out bool dryRun, out string? error)

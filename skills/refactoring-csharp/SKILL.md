@@ -1,6 +1,6 @@
 ---
 name: refactoring-csharp
-description: Rename and refactor C# symbols in a solution with a one-shot Roslyn CLI. Use when the user asks to rename a symbol, preview impact, or update references across a .NET solution.
+description: Rename and refactor C# symbols in a .NET solution or multi-solution monorepo with a one-shot Roslyn CLI. Use when the user asks to rename a symbol, preview impact, update references across a solution, or refactor shared projects across several solutions.
 ---
 
 # Refactoring C# Symbols
@@ -9,26 +9,39 @@ This skill ships a Roslyn-based C# rename CLI in `src/`. It is intentionally one
 stateless: one call resolves the target, validates the request, and returns either a preview
 or an applied rename. There is no public prepare step.
 
+## Contents
+
+- [Canonical CLI](#canonical-cli)
+- [Contract](#contract)
+- [How To Use It](#how-to-use-it)
+- [Monorepo Directory Mode](#monorepo-directory-mode)
+- [Important Behavioral Rules](#important-behavioral-rules)
+- [Supported Targets](#supported-targets)
+- [File Rename Nuance](#file-rename-nuance)
+- [Error Handling](#error-handling)
+- [Success Criteria](#success-criteria)
+- [Recommended Output Style](#recommended-output-style)
+
 ## Canonical CLI
 
 If the skill was installed by `install.sh`, prefer the prebuilt CLI:
 
 ```bash
-bin/csharp-refactor rename-symbol <sln> <file> <line> <oldName> <newName> [dryRun=false|true]
+bin/csharp-refactor rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]
 ```
 
 Otherwise run the bundled source CLI from the skill directory:
 
 ```bash
-dotnet run --project src/CSharpRefactoring.Cli -- rename-symbol <sln> <file> <line> <oldName> <newName> [dryRun=false|true]
+dotnet run --project src/CSharpRefactoring.Cli -- rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]
 ```
 
 When invoked from outside the skill directory, use an absolute project path:
 
 ```bash
-/<skill-dir>/bin/csharp-refactor rename-symbol <sln> <file> <line> <oldName> <newName> [dryRun=false|true]
+/<skill-dir>/bin/csharp-refactor rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]
 # or, if no prebuilt binary is installed:
-dotnet run --project /path/to/refactoring-csharp/src/CSharpRefactoring.Cli -- rename-symbol <sln> <file> <line> <oldName> <newName> [dryRun=false|true]
+dotnet run --project /path/to/refactoring-csharp/src/CSharpRefactoring.Cli -- rename-symbol <sln|slnx|directory> <file> <line> <oldName> <newName> [dryRun=false|true]
 ```
 
 The tool project may create normal `bin/` and `obj/` directories under the skill. That is
@@ -45,7 +58,7 @@ renames benefit from the project's existing MSBuild/Roslyn design-time build cac
 
 | Field | Required | Default | Notes |
 | --- | --- | --- | --- |
-| `solution_path` | yes | - | Absolute path to the `.sln` or `.slnx` file. |
+| `solution_path` | yes | - | Absolute path to the `.sln`/`.slnx` file, or a repository directory for monorepo-wide refactoring. |
 | `file_path` | yes | - | Absolute path to a file inside the solution. |
 | `line_number` | yes | - | 1-based line number. Use the value reported by `rg -n`. |
 | `old_name` | yes | - | Exact current identifier on that line. This is the anchor. |
@@ -64,12 +77,27 @@ renames benefit from the project's existing MSBuild/Roslyn design-time build cac
 4. Do not run a dry run just because the tool supports it. The tool loads the solution on every call, so preview+apply doubles the cost on large projects.
 5. Summarize the result by reporting the original name, new name, changed document count, total text changes, changed files, and any file move.
 
+## Monorepo Directory Mode
+
+Use directory mode only when a repository contains multiple `.sln`/`.slnx` files or shared
+projects that are not all present in one normal solution. For ordinary repositories, pass the
+specific solution file because it is faster and avoids scanning unrelated projects.
+
+When `solution_path` is a directory:
+
+- Pass the repository or workspace root as `solution_path`.
+- Keep `file_path` as the absolute path to the target source file.
+- The tool recursively discovers `.sln`, `.slnx`, and supported project files under the directory.
+- It merges them into one temporary `.slnx`, opens that aggregate solution, performs the rename, and deletes the temporary solution directory before returning.
+- The temporary aggregate solution lives outside the target repository; source files and normal project build caches remain in their original locations.
+
 ## Important Behavioral Rules
 
 - The tool is stateless. It loads the solution on every call.
+- If `solution_path` is a directory, the tool scans it recursively, merges discovered `.sln`, `.slnx`, and project files into one temporary `.slnx`, opens that solution, runs the rename, and deletes the temporary solution directory before returning.
 - A preview does not reserve state. If the workspace changes between preview and apply, rerun the preview.
 - Prefer one apply call over preview+apply when the user already asked to perform the rename.
-- The tool runs Roslyn from the target solution directory and uses the target project's normal MSBuild outputs. Do not pass properties that redirect the target project's `BaseIntermediateOutputPath`, `BaseOutputPath`, or `ArtifactsPath` unless the user explicitly asks for isolated build outputs.
+- For a `.sln`/`.slnx` input, the tool runs Roslyn from the target solution directory. For a directory input, it runs Roslyn from that directory while opening the temporary aggregate solution. In both modes, project files stay in place and use the target project's normal MSBuild outputs.
 - Do not invent a session or hidden prepare state.
 - Do not ask for a column number. The tool resolves from `file_path`, `line_number`, and `old_name`.
 - `old_name` is mandatory because it disambiguates the target when a line contains more than one renameable identifier.
@@ -111,7 +139,7 @@ Use the tool's error codes as actionable guidance:
 
 | Error code | Meaning | What to do |
 | --- | --- | --- |
-| `invalid_solution_path` | Solution path is missing or not a `.sln`/`.slnx` file. | Ask for a real solution path. |
+| `invalid_solution_path` | Solution path is missing, does not exist, or is neither `.sln`/`.slnx` nor a directory. | Ask for a real solution path or repository directory. |
 | `invalid_file_path` | File path is missing or not present on disk. | Ask for the correct file path. |
 | `file_not_in_solution` | The file is not part of the loaded solution. | Ask for the correct file or solution. |
 | `invalid_line_number` | Line number is outside file bounds or not 1-based. | Ask for the correct line. |

@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using DotNetSolutionsMerger;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.CSharp;
@@ -67,6 +68,31 @@ public static class CSharpSymbolRenamer
         public int EndColumn { get; init; }
     }
 
+    private sealed class ResolvedSolutionInput : IDisposable
+    {
+        public string SolutionPath { get; init; } = string.Empty;
+        public string WorkingDirectory { get; init; } = string.Empty;
+        public string? TemporaryDirectory { get; init; }
+        public SolutionMergeResult? MergeResult { get; init; }
+
+        public void Dispose()
+        {
+            if (string.IsNullOrWhiteSpace(TemporaryDirectory) || !Directory.Exists(TemporaryDirectory))
+            {
+                return;
+            }
+
+            try
+            {
+                Directory.Delete(TemporaryDirectory, recursive: true);
+            }
+            catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
+            {
+                // Cleanup is best-effort: never turn an already-applied rename into a reported failure.
+            }
+        }
+    }
+
     [McpServerToolType]
     public static class Tool
     {
@@ -89,7 +115,7 @@ public static class CSharpSymbolRenamer
 
         [McpServerTool, Description("Rename a C# symbol in a solution using file, line, and old symbol name.")]
         public static async Task<RenameResult> RenameSymbol(
-            [Description("Absolute path to .sln or .slnx file")] string solutionPath,
+            [Description("Absolute path to .sln/.slnx file, or a directory containing multiple solutions/projects")] string solutionPath,
             [Description("Absolute path to target document inside that solution")] string filePath,
             [Description("1-based line number")] int lineNumber,
             [Description("Expected current symbol name on the selected line")] string oldName,
@@ -103,9 +129,9 @@ public static class CSharpSymbolRenamer
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(solutionPath) || !File.Exists(solutionPath))
+                if (string.IsNullOrWhiteSpace(solutionPath))
                 {
-                    return Error("invalid_solution_path", "solutionPath must be an existing .sln or .slnx file.");
+                    return Error("invalid_solution_path", "solutionPath must be an existing .sln/.slnx file or a directory containing .NET projects/solutions.");
                 }
 
                 if (string.IsNullOrWhiteSpace(filePath) || !File.Exists(filePath))
@@ -113,9 +139,17 @@ public static class CSharpSymbolRenamer
                     return Error("invalid_file_path", "filePath must be an existing file inside the solution.");
                 }
 
-                if (!IsSupportedSolutionFile(solutionPath))
+                string normalizedSolutionPath = Path.GetFullPath(solutionPath);
+                bool solutionFileExists = File.Exists(normalizedSolutionPath);
+                bool solutionDirectoryExists = Directory.Exists(normalizedSolutionPath);
+                if (!solutionFileExists && !solutionDirectoryExists)
                 {
-                    return Error("invalid_solution_extension", "solutionPath must have .sln or .slnx extension.");
+                    return Error("invalid_solution_path", "solutionPath must be an existing .sln/.slnx file or a directory containing .NET projects/solutions.");
+                }
+
+                if (solutionFileExists && !IsSupportedSolutionFile(normalizedSolutionPath))
+                {
+                    return Error("invalid_solution_extension", "solutionPath must have .sln or .slnx extension, or be a directory for monorepo-wide refactoring.");
                 }
 
                 if (lineNumber < 1)
@@ -135,18 +169,19 @@ public static class CSharpSymbolRenamer
 
                 using (CancellationTokenSource cts = CreateCancellationTokenSource(timeoutSeconds))
                 {
-                    string? solutionDirectory = Path.GetDirectoryName(Path.GetFullPath(solutionPath));
+                    using ResolvedSolutionInput resolvedSolution = await ResolveSolutionInputAsync(normalizedSolutionPath, cts.Token);
+
                     string previousCurrentDirectory = Directory.GetCurrentDirectory();
                     try
                     {
-                        if (!string.IsNullOrWhiteSpace(solutionDirectory))
+                        if (!string.IsNullOrWhiteSpace(resolvedSolution.WorkingDirectory))
                         {
-                            Directory.SetCurrentDirectory(solutionDirectory);
+                            Directory.SetCurrentDirectory(resolvedSolution.WorkingDirectory);
                         }
 
                         using (MSBuildWorkspace workspace = MSBuildWorkspace.Create())
                         {
-                            Solution solution = await workspace.OpenSolutionAsync(solutionPath, cancellationToken: cts.Token);
+                            Solution solution = await workspace.OpenSolutionAsync(resolvedSolution.SolutionPath, cancellationToken: cts.Token);
                             if (solution is null)
                             {
                                 return Error("workspace_open_failed", "Could not open solution workspace.");
@@ -252,6 +287,11 @@ public static class CSharpSymbolRenamer
                             string resultMessage = dryRun
                                 ? $"Dry-run: '{candidate.Symbol.Name}' -> '{newName}'. {changed.Count} documents would change."
                                 : $"Renamed '{candidate.Symbol.Name}' -> '{newName}'. {changed.Count} documents changed.";
+
+                            if (resolvedSolution.MergeResult is not null)
+                            {
+                                resultMessage += $" Directory input was merged into a temporary solution with {resolvedSolution.MergeResult.SourceSolutionCount} source solution(s) and {resolvedSolution.MergeResult.AddedProjectCount} project(s).";
+                            }
 
                             if (!string.IsNullOrWhiteSpace(fileMoveFromPath) && !string.IsNullOrWhiteSpace(fileMoveToPath))
                             {
@@ -467,6 +507,76 @@ public static class CSharpSymbolRenamer
             string extension = Path.GetExtension(solutionPath);
             return string.Equals(extension, ".sln", StringComparison.OrdinalIgnoreCase)
                 || string.Equals(extension, ".slnx", StringComparison.OrdinalIgnoreCase);
+        }
+
+        private static async Task<ResolvedSolutionInput> ResolveSolutionInputAsync(string solutionOrDirectoryPath, CancellationToken cancellationToken)
+        {
+            string fullPath = Path.GetFullPath(solutionOrDirectoryPath);
+            if (File.Exists(fullPath))
+            {
+                string solutionDirectory = Path.GetDirectoryName(fullPath)
+                    ?? throw new InvalidOperationException($"Unable to determine solution directory for '{fullPath}'.");
+
+                return new ResolvedSolutionInput
+                {
+                    SolutionPath = fullPath,
+                    WorkingDirectory = solutionDirectory
+                };
+            }
+
+            if (!Directory.Exists(fullPath))
+            {
+                throw new FileNotFoundException($"Solution path does not exist: {fullPath}", fullPath);
+            }
+
+            string temporaryDirectory = Path.Combine(
+                Path.GetTempPath(),
+                "csharp-refactoring-monorepo",
+                Guid.NewGuid().ToString("N"));
+
+            Directory.CreateDirectory(temporaryDirectory);
+            string temporarySolutionPath = Path.Combine(temporaryDirectory, "monorepo.slnx");
+
+            try
+            {
+                SolutionMergeResult mergeResult = await SolutionMerger.MergeDirectoryAsync(
+                    fullPath,
+                    temporarySolutionPath,
+                    new SolutionMergeOptions
+                    {
+                        IncludeStandaloneProjectsWhenExpandingDirectories = true,
+                        GroupProjectsBySourceSolution = true,
+                        PreserveInputSolutionFolders = true,
+                        GroupStandaloneProjectsByDirectory = true,
+                        DistillProjectConfigurations = true,
+                        ValidateRoundTrip = true,
+                        MissingProjectPolicy = MissingProjectPolicy.SkipWithWarning,
+                        DuplicateProjectPolicy = DuplicateProjectPolicy.MergeMetadata
+                    },
+                    cancellationToken);
+
+                if (mergeResult.AddedProjectCount <= 0)
+                {
+                    throw new InvalidOperationException($"No supported .NET projects were found under directory '{fullPath}'.");
+                }
+
+                return new ResolvedSolutionInput
+                {
+                    SolutionPath = temporarySolutionPath,
+                    WorkingDirectory = fullPath,
+                    TemporaryDirectory = temporaryDirectory,
+                    MergeResult = mergeResult
+                };
+            }
+            catch
+            {
+                if (Directory.Exists(temporaryDirectory))
+                {
+                    Directory.Delete(temporaryDirectory, recursive: true);
+                }
+
+                throw;
+            }
         }
 
         private static Document? FindDocument(Solution solution, string normalizedFilePath)
