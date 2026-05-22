@@ -72,6 +72,8 @@ fi
 PROMPT="${1:-}"
 CONTEXT_FILE="${2:-}"
 
+warn_shell_special_in_prompt "$PROMPT"
+
 # If no positional prompt was given but stdin has content, treat stdin as
 # the prompt itself (so `script.sh < prompt.txt` works). Reading it here
 # also stops build_prompt from later re-adding the same content as a

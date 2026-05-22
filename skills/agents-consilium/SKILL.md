@@ -19,6 +19,7 @@ The skill keeps each agent independent (no debate, no cross-contamination) and l
 ## Contents
 
 - [Quick Start](#quick-start)
+- [Shell escaping — read this before passing prompts inline](#shell-escaping--read-this-before-passing-prompts-inline)
 - [Design Principles](#design-principles)
 - [Anti-Bias Protocol](#anti-bias-protocol)
 - [Agent Freedom and Read-Only Guardrails](#agent-freedom-and-read-only-guardrails)
@@ -56,21 +57,23 @@ Edit `config.json` to enable/disable agents or swap models. See `config.example.
 
 ### Passing the prompt
 
-The prompt is a **positional** argument. Three ways to pass it, pick whichever is convenient:
+The prompt is a **positional** argument. Three ways to pass it — **prefer file-based forms** for anything containing backticks, `$`, `!`, or quotes (see [Shell escaping](#shell-escaping--read-this-before-passing-prompts-inline)):
 
 ```bash
-# (a) Inline string — best for short prompts.
-scripts/consensus-query.sh --xml "review this design"
+# (a) RECOMMENDED: From a file via flag — RAW mode
+#     (no role/principles/template wrapping; agents see the file verbatim).
+#     Safe for any prompt content. Use this for benchmarks/evals too.
+scripts/consensus-query.sh --xml --prompt-file prompt.txt
 
-# (b) From a file via stdin — best for long multi-line prompts.
+# (b) RECOMMENDED: From a file via stdin — best for long multi-line prompts.
 #     With NO positional argument, stdin is treated as the prompt.
+#     Template wrapping (principles + role + output schema) is applied.
 scripts/consensus-query.sh --xml < prompt.txt
 cat prompt.txt | scripts/consensus-query.sh --xml
 
-# (c) From a file via flag — same as (b) but uses RAW mode
-#     (no role/principles/template wrapping; agents see the file verbatim).
-#     Use this for benchmarks/evals where wrapper differences would skew results.
-scripts/consensus-query.sh --xml --prompt-file prompt.txt
+# (c) Inline string — ONLY for short, shell-safe prompts
+#     (no backticks, no $, no !, no embedded quotes).
+scripts/consensus-query.sh --xml "review this design"
 ```
 
 **When BOTH a positional prompt and stdin are given**, stdin is appended to the prompt as `--- Input ---` context. That is the existing pattern for piping a file under review:
@@ -79,6 +82,85 @@ scripts/consensus-query.sh --xml --prompt-file prompt.txt
 cat src/auth.py | scripts/consensus-query.sh "review this code"
 #       └── stdin = context ────┘   └── positional = the prompt ─┘
 ```
+
+## Shell escaping — read this before passing prompts inline
+
+**The trap.** Technical prompts routinely contain backticks (around config keys, function names, code paths), `$` (env vars, regex anchors, `$()` substitution), `!` (interactive history), and unbalanced quotes. Inside a **double-quoted** positional argument, bash/zsh will *execute* the contents of backticks and `$(...)` as commands, expand `$variable`, and silently splice the result back into the prompt. Failed substitutions become empty strings. The agent then receives a mangled prompt and — worse — `codex exec` (and `claude -p`, `opencode run`) may stall in the foreground waiting on stdin for clarification, holding the process at **0% CPU for hours** before you notice.
+
+The exact symptom in `~/.codex/log/codex-tui.log` or the agent's transcript:
+
+```
+(eval):1: command not found: index.knn.advanced.approximate_threshold=-1
+(eval):1: command not found: POST
+Reading additional input from stdin...
+```
+
+This is a shell-quoting bug, not a CLI bug. Single quotes around `EOF` in a heredoc, or a separate file, are the fix.
+
+### DO / DON'T
+
+| Don't | Do |
+|-------|----|
+| ``tool "What does `foo()` do?"`` — backticks get eval'd by the shell | Use one of the three safe patterns below |
+| `tool "Explain $PATH precedence"` — `$PATH` expands to your env var | Same |
+| `tool "Why does $(date) appear?"` — `$(date)` runs as a subshell | Same |
+| `tool "Don't run !! again"` — `!!` triggers history (zsh interactive) | Same |
+| Inline prompts with any of: `` ` ``, `$`, `$(`, `!`, embedded `"` | Files or heredocs |
+
+### Three safe patterns (in order of preference)
+
+```bash
+# (1) RAW mode via --prompt-file — safest. No shell interpretation at any layer.
+#     No template/role wrapping either; agents see the file verbatim.
+scripts/consensus-query.sh --xml --prompt-file prompt.md
+
+# (2) Pipe via stdin — template wrapping (principles + role + output schema) IS applied.
+cat prompt.md | scripts/consensus-query.sh --xml
+scripts/consensus-query.sh --xml < prompt.md
+
+# (3) Heredoc with SINGLE-quoted delimiter — single quotes around EOF disable
+#     expansion of $, backticks, !, and \ inside the body. This is the
+#     canonical bash idiom for "embed an arbitrary technical prompt inline".
+scripts/consensus-query.sh --xml "$(cat <<'EOF'
+Explain how `index.knn.advanced.approximate_threshold=-1` interacts with
+`POST /_forcemerge?max_num_segments=1` in OpenSearch 3.5. Cover $variable
+expansion semantics in the config parser too.
+EOF
+)"
+#                ^^^^                                            ^^^^
+#                single quotes around EOF — REQUIRED for safety
+```
+
+If you write `<<EOF` (no quotes) or `<<"EOF"`, double-quoted-style expansion happens INSIDE the heredoc. Always single-quote the opening delimiter when the body is a prompt.
+
+### Bypassing the skill (calling `codex exec` / `claude -p` directly)
+
+The same trap applies the moment you build a `codex exec -m … "<prompt>"` or `claude -p "<prompt>"` invocation yourself — e.g. because you want a non-default model, a custom `-C <dir>`, or a one-off `-o <transcript>`. Wrap the prompt the same way:
+
+```bash
+# Safe: prompt loaded from a file
+codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" "$(cat prompt.md)"
+
+# Safe: single-quoted heredoc
+codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" "$(cat <<'EOF'
+…prompt body with `backticks` and $vars…
+EOF
+)"
+
+# UNSAFE: inline string with shell-special characters
+codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" \
+  "Explain \`index.knn.advanced.approximate_threshold=-1\` semantics"
+#          ^^ even escaping the backticks here is fragile —
+#             the shell still has to interpret them once
+```
+
+### Diagnostic recipe
+
+If `codex` / `claude` / `opencode` **appears to hang at 0% CPU** and the output file is empty (or ~146 bytes of garbage prelude), this is almost always the bug. Check, in order:
+
+1. `tail -50 ~/.codex/log/codex-tui.log` (or the agent's transcript / your captured `2>` stderr) for `command not found:` or `Reading additional input from stdin...`.
+2. The *prompt as the shell saw it*: re-run the same command with `set -x` (or prepend `echo` to a copy) to print the expanded argv. If a backtick'd token vanished, expansion ate it.
+3. Kill the stuck process (`kill -TERM <pid>`; `kill -KILL` if needed), reissue the prompt via `--prompt-file` or a single-quoted heredoc.
 
 ## Design Principles
 

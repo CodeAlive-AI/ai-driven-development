@@ -281,6 +281,27 @@ ${prompt}"
     printf '%s' "$full"
 }
 
+# Warn (stderr only — never fail) if a positional prompt still contains
+# literal backticks or $(...) after the shell has parsed it. By the time
+# this fires the bug — if any — already happened: either (a) the caller
+# correctly single-quoted / heredoc'd the prompt and the warning is benign,
+# or (b) the caller used double quotes and what we see here is whatever
+# survived after the shell ate the substitution. Either way, surfacing it
+# is cheap and points the next agent at the right diagnosis.
+# Usage: warn_shell_special_in_prompt "$POSITIONAL_PROMPT"
+warn_shell_special_in_prompt() {
+    local p="${1:-}"
+    [[ -z "$p" ]] && return 0
+    [[ -n "${CONSILIUM_SUPPRESS_SHELL_WARN:-}" ]] && return 0
+    if printf '%s' "$p" | LC_ALL=C grep -qE '`|\$\(' ; then
+        echo -e "${YELLOW}[consilium] WARNING: prompt contains literal backticks or \$(...).${NC}" >&2
+        echo -e "${YELLOW}  If you passed the prompt as a double-quoted positional argument,${NC}" >&2
+        echo -e "${YELLOW}  the shell already ran the substitution and your prompt is mangled.${NC}" >&2
+        echo -e "${YELLOW}  Use --prompt-file, stdin, or a single-quoted heredoc instead.${NC}" >&2
+        echo -e "${YELLOW}  See SKILL.md § Shell escaping. Set CONSILIUM_SUPPRESS_SHELL_WARN=1 to silence.${NC}" >&2
+    fi
+}
+
 # Run a command with optional timeout
 # Usage: run_with_timeout "agent_name" callback_function
 run_with_timeout() {

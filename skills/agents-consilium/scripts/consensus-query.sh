@@ -108,6 +108,11 @@ if [[ ${#EXCLUDE_PATTERNS[@]} -eq 0 && -n "${CONSILIUM_EXCLUDE:-}" ]]; then
     IFS=',' read -ra EXCLUDE_PATTERNS <<< "$CONSILIUM_EXCLUDE"
 fi
 
+# Warn (don't fail) if the positional prompt contains literal backticks or
+# $(...). See SKILL.md § Shell escaping — by this point any unescaped
+# substitution already ran in the caller's shell.
+warn_shell_special_in_prompt "$PROMPT"
+
 config_validate || exit $EXIT_CONFIG_ERROR
 
 # --list-agents: emit plan and exit.
@@ -195,6 +200,10 @@ fi
 
 echo -e "${CYAN}  CONSENSUS QUERY — ${#ENABLED_AGENTS[@]} agent(s) in parallel: ${ENABLED_AGENTS[*]}${NC}" >&2
 echo -e "${YELLOW}[Launching parallel queries...]${NC}" >&2
+
+# Dispatcher already warned (once) about shell-special chars in the prompt;
+# avoid printing the same warning N more times from each per-agent script.
+export CONSILIUM_SUPPRESS_SHELL_WARN=1
 
 declare -a AGENT_IDS PIDS OUT_FILES ERR_FILES LABELS MODELS ROLES BACKENDS STATUSES EXITS
 
