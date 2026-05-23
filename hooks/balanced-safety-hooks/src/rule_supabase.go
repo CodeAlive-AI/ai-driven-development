@@ -84,6 +84,9 @@ func (r SupabaseRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 				"Sequelize migration", argv(cmd))
 		}
 	case "flyway":
+		if hasFlywayDryRunOutput(args) {
+			return nil
+		}
 		if hasArg(args, "migrate", "repair", "undo", "clean") {
 			return mkAsk(r.Name(), "supabase.flyway_migration",
 				"Flyway migration", argv(cmd))
@@ -116,6 +119,9 @@ func checkSupabase(cmd ExecutedCommand, args []string) *Decision {
 	rule := "supabase"
 	// supabase db push
 	if seq(args, "db", "push") {
+		if hasNoOpDryRunFlag(args) {
+			return nil
+		}
 		return mkAsk(rule, "supabase.db_push",
 			"supabase db push — pushes migrations to the REMOTE (production) database", argv(cmd))
 	}

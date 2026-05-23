@@ -1,0 +1,16 @@
+{
+  "name": "cloud_aws_s3_rm_dryrun",
+  "description": "aws s3 rm --dryrun displays operations without deleting",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "aws s3 rm s3://bucket/path --recursive --dryrun"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

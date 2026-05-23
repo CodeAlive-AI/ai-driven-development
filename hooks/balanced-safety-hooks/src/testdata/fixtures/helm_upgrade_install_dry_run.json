@@ -1,0 +1,16 @@
+{
+  "name": "helm_upgrade_install_dry_run",
+  "description": "helm upgrade --install --dry-run renders without persisting changes",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "helm upgrade --install api ./chart --dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "kubectl_delete_dry_run_client",
+  "description": "kubectl delete --dry-run=client renders without deleting resources",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "kubectl delete pod api --dry-run=client"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

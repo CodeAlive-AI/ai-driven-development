@@ -1,0 +1,16 @@
+{
+  "name": "flyway_migrate_dry_run_output",
+  "description": "flyway migrate with dryRunOutput generates SQL without modifying the database",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "flyway migrate -dryRunOutput=/tmp/flyway.sql"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

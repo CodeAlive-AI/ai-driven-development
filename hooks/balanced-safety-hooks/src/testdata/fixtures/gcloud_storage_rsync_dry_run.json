@@ -1,0 +1,16 @@
+{
+  "name": "gcloud_storage_rsync_dry_run",
+  "description": "gcloud storage rsync --dry-run previews sync actions",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "gcloud storage rsync ./dist gs://bucket/dist --delete-unmatched-destination-objects --dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "kubectl_apply_dry_run_server",
+  "description": "kubectl apply --dry-run=server submits without persisting resources",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "kubectl apply -f manifest.yaml --dry-run=server"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "helm_upgrade_dry_run_server",
+  "description": "helm upgrade --dry-run=server simulates without persisting changes",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "helm upgrade api ./chart --dry-run=server"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

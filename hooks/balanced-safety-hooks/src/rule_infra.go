@@ -36,15 +36,15 @@ func (InfraRule) Triggers() []string {
 // insensitive) so subdomains like `compute.googleapis.com` or
 // `ec2.us-east-1.amazonaws.com` are covered without enumerating each one.
 var cloudControlPlaneHosts = []string{
-	"backboard.railway.com",  // Railway GraphQL
+	"backboard.railway.com", // Railway GraphQL
 	"api.fly.io",
 	"api.heroku.com",
 	"api.vercel.com",
 	"api.netlify.com",
 	"api.digitalocean.com",
 	"api.linode.com",
-	"googleapis.com",      // covers compute.googleapis.com, iam.googleapis.com, …
-	"amazonaws.com",       // covers ec2.*.amazonaws.com, iam.amazonaws.com, …
+	"googleapis.com", // covers compute.googleapis.com, iam.googleapis.com, …
+	"amazonaws.com",  // covers ec2.*.amazonaws.com, iam.amazonaws.com, …
 	"management.azure.com",
 	"oraclecloud.com",
 	"cloud.ibm.com",
@@ -87,11 +87,17 @@ var (
 func (r InfraRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 	switch cmd.Name {
 	case "kubectl":
+		if hasNoOpDryRunFlag(cmd.Args) {
+			return nil
+		}
 		if firstNonFlag(cmd.Args) != "" && contains(kubectlDestructive, firstNonFlag(cmd.Args)) {
 			return mkAsk(r.Name(), "infra.kubectl_destructive",
 				"Destructive kubectl command: kubectl "+firstNonFlag(cmd.Args), argv(cmd))
 		}
 	case "gcloud":
+		if hasNoOpDryRunFlag(cmd.Args) {
+			return nil
+		}
 		// gcloud has a deep verb tree (e.g., `gcloud compute instances delete`).
 		// Match if any token in args is a destructive verb.
 		for _, a := range cmd.Args {
@@ -115,6 +121,9 @@ func (r InfraRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 			}
 		}
 	case "helm":
+		if hasNoOpDryRunFlag(cmd.Args) {
+			return nil
+		}
 		if firstNonFlag(cmd.Args) != "" && contains(helmDestructive, firstNonFlag(cmd.Args)) {
 			return mkAsk(r.Name(), "infra.helm_mutation",
 				"Helm mutation: helm "+firstNonFlag(cmd.Args), argv(cmd))
@@ -190,6 +199,9 @@ func (r InfraRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 				"Mutating GraphQL request (mutation in body)", argv(cmd))
 		}
 	case "aws":
+		if hasNoOpDryRunFlag(cmd.Args) {
+			return nil
+		}
 		// AWS CLI: verbs starting with delete-/terminate-/destroy-/purge-/
 		// remove-/deregister-/revoke- mutate AWS resources.
 		for _, a := range cmd.Args {
@@ -210,6 +222,9 @@ func (r InfraRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 		// `aws s3 rm s3://bucket/...` (without --recursive a single object;
 		// with --recursive, a tree). Either is a deletion.
 		if seq(cmd.Args, "s3", "rm") {
+			if hasNoOpDryRunFlag(cmd.Args) {
+				return nil
+			}
 			return mkAsk(r.Name(), "infra.aws_s3_rm",
 				"aws s3 rm — removes S3 objects", argv(cmd))
 		}
