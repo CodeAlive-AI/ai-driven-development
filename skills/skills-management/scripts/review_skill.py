@@ -296,8 +296,20 @@ def check_structure(skill_path: Path) -> list[dict]:
     """Check skill directory structure."""
     issues = []
 
-    # Check for forbidden documentation files
-    forbidden_docs = ["README.md", "CHANGELOG.md", "INSTALLATION_GUIDE.md"]
+    # README.md is allowed for skills that are published (e.g. via `npx skills add` / skills.sh):
+    # the page renders the skill's README, so a top-level README is part of the public surface.
+    # We only flag it as INFO so the maintainer is reminded not to duplicate SKILL.md content there.
+    readme_path = skill_path / "README.md"
+    if readme_path.exists():
+        issues.append({
+            "severity": "info",
+            "rule": "readme-present",
+            "message": "Skill contains a README.md",
+            "suggestion": "OK for publishable skills (rendered on skills.sh/GitHub). Keep it short — install instructions + 'why this skill' only. Do not duplicate SKILL.md guidance; that file is what the agent reads at runtime."
+        })
+
+    # Other doc files are still warnings — agents do not read them and they bloat the skill.
+    forbidden_docs = ["CHANGELOG.md", "INSTALLATION_GUIDE.md", "CONTRIBUTING.md", "LICENSE.md"]
     for doc_name in forbidden_docs:
         doc_path = skill_path / doc_name
         if doc_path.exists():
@@ -305,7 +317,7 @@ def check_structure(skill_path: Path) -> list[dict]:
                 "severity": "warning",
                 "rule": "forbidden-doc-file",
                 "message": f"Skill contains '{doc_name}' — not needed inside a skill folder",
-                "suggestion": "Move documentation to SKILL.md or references/. Skills are for agents, not humans"
+                "suggestion": "Move documentation to SKILL.md, references/, or the repository root. Skills are for agents, not humans"
             })
 
     # Check for reference files longer than 100 lines without TOC
