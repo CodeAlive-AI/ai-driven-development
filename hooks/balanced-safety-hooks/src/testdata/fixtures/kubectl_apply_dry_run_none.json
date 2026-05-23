@@ -1,0 +1,16 @@
+{
+  "name": "kubectl_apply_dry_run_none",
+  "description": "kubectl apply --dry-run=none persists changes and is still a mutation",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "kubectl apply -f manifest.yaml --dry-run=none"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "ask",
+    "rule": "infra",
+    "reason_code": "infra.kubectl_destructive"
+  }
+}

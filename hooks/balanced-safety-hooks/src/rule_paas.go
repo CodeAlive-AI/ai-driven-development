@@ -44,6 +44,9 @@ var paasColonDestructiveSuffixes = []string{
 }
 
 func (r PaasRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
+	if hasNoOpDryRunFlag(cmd.Args) {
+		return nil
+	}
 	for _, a := range cmd.Args {
 		if a == "" || strings.HasPrefix(a, "-") {
 			continue

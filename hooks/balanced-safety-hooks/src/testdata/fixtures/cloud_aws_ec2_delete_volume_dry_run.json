@@ -1,0 +1,16 @@
+{
+  "name": "cloud_aws_ec2_delete_volume_dry_run",
+  "description": "aws ec2 delete-volume --dry-run checks permissions without deleting",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "aws ec2 delete-volume --volume-id vol-12345 --dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

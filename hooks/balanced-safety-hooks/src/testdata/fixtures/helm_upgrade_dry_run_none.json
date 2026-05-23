@@ -1,0 +1,16 @@
+{
+  "name": "helm_upgrade_dry_run_none",
+  "description": "helm upgrade --dry-run=none persists changes and is still a mutation",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "helm upgrade api ./chart --dry-run=none"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "ask",
+    "rule": "infra",
+    "reason_code": "infra.helm_mutation"
+  }
+}

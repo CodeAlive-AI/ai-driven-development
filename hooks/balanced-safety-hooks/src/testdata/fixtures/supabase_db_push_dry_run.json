@@ -1,0 +1,16 @@
+{
+  "name": "supabase_db_push_dry_run",
+  "description": "supabase db push --dry-run prints migrations without applying them",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "supabase db push --dry-run --db-url postgres://example"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

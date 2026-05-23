@@ -1,0 +1,16 @@
+{
+  "name": "paas_railway_down_dry_run",
+  "description": "PaaS destructive command with explicit dry-run is treated as a preview",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "railway down --dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

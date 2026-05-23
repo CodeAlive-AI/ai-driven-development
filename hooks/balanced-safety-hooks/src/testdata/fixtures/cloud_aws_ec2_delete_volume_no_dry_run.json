@@ -1,0 +1,16 @@
+{
+  "name": "cloud_aws_ec2_delete_volume_no_dry_run",
+  "description": "aws ec2 delete-volume --no-dry-run is still destructive",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "aws ec2 delete-volume --volume-id vol-12345 --dry-run --no-dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "ask",
+    "rule": "infra",
+    "reason_code": "infra.aws_destructive"
+  }
+}

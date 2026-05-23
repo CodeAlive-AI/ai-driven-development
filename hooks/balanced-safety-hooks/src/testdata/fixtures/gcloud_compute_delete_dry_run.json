@@ -1,0 +1,16 @@
+{
+  "name": "gcloud_compute_delete_dry_run",
+  "description": "gcloud destructive command with explicit --dry-run is not persisted",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "gcloud compute instances delete web-1 --dry-run"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}
