@@ -54,7 +54,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [hooks-management](skills/hooks-management/) | Manage hooks and automation for Claude Code, Codex CLI, and OpenCode |
 | [settings-management](skills/settings-management/) | Configure settings for Claude Code (JSON), Codex CLI (TOML), and OpenCode (JSON/JSONC) |
 | [subagents-management](skills/subagents-management/) | Create and manage subagents across Claude Code, Codex CLI, and OpenCode |
-| [skills-management](skills/skills-management/) | Organise, discover, and share skills for coding agents |
+| [skills-management](skills/skills-management/) | Organise, discover, share, and **train** skills for coding agents — SkillOpt-style optimisation loop with bounded edits, held-out validation gate, rejected-edit buffer, epoch-wise slow/meta update, plus trigger / transfer / diff / edit-log tooling |
 | [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code and OpenCode (validate, scaffold, submit to Anthropic's directory) |
 | [optimizing-claude-code](skills/optimizing-claude-code/) | Audit repos and optimise CLAUDE.md for agent work |
 

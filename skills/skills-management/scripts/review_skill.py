@@ -292,6 +292,262 @@ def check_body(body: str, skill_path: Path) -> list[dict]:
     return issues
 
 
+def _approx_tokens(text: str) -> int:
+    """Approximate token count using the SkillOpt heuristic (chars / 4)."""
+    return len(text) // 4
+
+
+def _strip_fenced_code(body: str) -> str:
+    """Remove fenced code blocks and indented (4-space) code blocks from body."""
+    # Remove triple-fenced blocks (``` … ```)
+    without_fences = re.sub(r"```.*?```", "", body, flags=re.DOTALL)
+    # Remove indented code blocks (lines starting with 4+ spaces or a tab)
+    cleaned_lines = []
+    for line in without_fences.split("\n"):
+        if re.match(r"^( {4,}|\t)", line):
+            continue
+        cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
+
+
+def _extract_slow_update_section(body: str) -> str | None:
+    """Return content between SLOW_UPDATE markers, or None if not both present."""
+    start_marker = "<!-- SLOW_UPDATE_START -->"
+    end_marker = "<!-- SLOW_UPDATE_END -->"
+    if start_marker not in body or end_marker not in body:
+        return None
+    start_idx = body.find(start_marker)
+    end_idx = body.find(end_marker)
+    if start_idx >= end_idx:
+        return None
+    return body[start_idx + len(start_marker):end_idx]
+
+
+def check_tokens(body: str, skill_path: Path) -> list[dict]:
+    """Check token footprint against SkillOpt guidelines (300-2000 tokens)."""
+    issues = []
+
+    body_tokens = _approx_tokens(body)
+
+    # Sum tokens across all reference files
+    references_tokens = 0
+    references_dir = skill_path / "references"
+    if references_dir.exists() and references_dir.is_dir():
+        for ref_file in references_dir.rglob("*"):
+            if ref_file.is_file():
+                try:
+                    ref_text = ref_file.read_text(encoding="utf-8", errors="replace")
+                except OSError:
+                    continue
+                references_tokens += _approx_tokens(ref_text)
+
+    total_tokens = body_tokens + references_tokens
+
+    # Footprint info line (synthetic issue carrying the totals)
+    issues.append({
+        "severity": "info",
+        "rule": "token-footprint",
+        "message": (
+            f"Token footprint — body: {body_tokens}, "
+            f"references: {references_tokens}, total: {total_tokens}"
+        ),
+        "suggestion": "SkillOpt sweet spot is 300-2000 body tokens; push detail into references/"
+    })
+
+    if body_tokens < 300:
+        issues.append({
+            "severity": "info",
+            "rule": "body-tokens-small",
+            "message": f"Skill body unusually small ({body_tokens} tokens); may be a stub or over-summarised",
+            "suggestion": "Expand the body to ~300-2000 tokens if more procedural guidance is needed"
+        })
+    elif body_tokens <= 2000:
+        issues.append({
+            "severity": "info",
+            "rule": "body-tokens-compact",
+            "message": f"Compact ({body_tokens} tokens) — SkillOpt sweet spot",
+            "suggestion": "Maintain compactness; move new detail into references/ when adding content"
+        })
+    elif body_tokens <= 4000:
+        issues.append({
+            "severity": "warning",
+            "rule": "body-tokens-large",
+            "message": f"Above SkillOpt 2000-token target ({body_tokens} tokens) — consider splitting into references/",
+            "suggestion": "Move detail, examples, and tables into references/ to keep SKILL.md compact"
+        })
+    else:
+        issues.append({
+            "severity": "warning",
+            "rule": "body-tokens-bloated",
+            "message": f"Far above SkillOpt target ({body_tokens} tokens) — high risk of context bloat; move detail into references/",
+            "suggestion": "Aggressively extract sections into references/; SKILL.md should be procedural rules, not a manual"
+        })
+
+    return issues
+
+
+def check_procedurality(body: str) -> list[dict]:
+    """Detect instance-specific signals that hint the skill is task-tied rather than procedural."""
+    issues = []
+
+    # Strip fenced/indented code blocks so legitimate examples don't trip heuristics
+    prose = _strip_fenced_code(body)
+
+    triggered_heuristics = 0
+    concrete_hits: list[str] = []
+
+    # 1) Long quoted strings containing digits or filename-like tokens
+    quoted_matches = re.findall(r'"([^"\n]{41,})"', prose)
+    quoted_concrete = [
+        q for q in quoted_matches
+        if re.search(r"\d", q) or re.search(r"\b\w+\.(csv|json|xml|xlsx|sql|parquet|md|txt|py|js|tsv)\b", q)
+    ]
+    if quoted_concrete:
+        triggered_heuristics += 1
+        concrete_hits.extend(quoted_concrete[:5])
+
+    # 2) Task-specific filenames in prose
+    filename_matches = re.findall(r"\b\w+\.(?:csv|json|xml|xlsx|sql|parquet)\b", prose)
+    if filename_matches:
+        triggered_heuristics += 1
+        concrete_hits.extend(filename_matches[:5])
+
+    # 3) Long literal numbers in non-code context (percentages, quarter labels, etc.)
+    literal_numbers = re.findall(r"\b\d{2,}\.\d+%|\b\d{4}-Q[1-4]\b|\b\d{4}-\d{2}-\d{2}\b", prose)
+    if literal_numbers:
+        triggered_heuristics += 1
+        concrete_hits.extend(literal_numbers[:5])
+
+    # 4) Patterns like "task X", "question #N", "the file at /path/to/specific.thing"
+    pattern_hits: list[str] = []
+    pattern_hits.extend(re.findall(r"\btask\s+[A-Z0-9]+\b", prose))
+    pattern_hits.extend(re.findall(r"\bquestion\s*#\s*\d+\b", prose, re.IGNORECASE))
+    pattern_hits.extend(re.findall(r"the file at\s+/[\w./-]+\.\w+", prose, re.IGNORECASE))
+    if pattern_hits:
+        triggered_heuristics += 1
+        concrete_hits.extend(pattern_hits[:5])
+
+    if triggered_heuristics >= 3 or len(concrete_hits) >= 5:
+        issues.append({
+            "severity": "info",
+            "rule": "instance-specific-leakage",
+            "message": (
+                f"Body contains {len(concrete_hits)} instance-specific markers — "
+                "SkillOpt rules should be procedural, not task-specific"
+            ),
+            "suggestion": (
+                "Prefer general principles ('Infer expected answer type from clue wording') "
+                "over task-specific values"
+            )
+        })
+
+    return issues
+
+
+def check_patch_friendliness(body: str) -> list[dict]:
+    """Check that the body has stable anchors for atomic patch operations."""
+    issues = []
+
+    lines = body.split("\n")
+    body_lines = len(lines)
+
+    # Count ## and ### headings (exclude #### and deeper, and excluded #)
+    heading_lines = [ln for ln in lines if re.match(r"^#{2,3}\s+\S", ln)]
+    heading_count = len(heading_lines)
+
+    # Count bolded labels like **Foo:**
+    bolded_label_count = len(re.findall(r"\*\*[^*\n]+:\*\*", body))
+
+    anchor_density = (heading_count + bolded_label_count) / max(1, body_lines)
+
+    if anchor_density < 0.04 and body_lines > 60:
+        issues.append({
+            "severity": "info",
+            "rule": "low-anchor-density",
+            "message": (
+                "Body has few headings/anchors relative to length — "
+                "automated `insert_after` edits will be unreliable"
+            ),
+            "suggestion": (
+                "Add `##`/`###` headings or `**Label:**` markers every ~25 lines "
+                "so patches have stable targets"
+            )
+        })
+
+    # Detect duplicate heading texts (break exact-match insert_after targets)
+    heading_texts = [re.sub(r"^#{2,3}\s+", "", ln).strip() for ln in heading_lines]
+    seen: dict[str, int] = {}
+    for text in heading_texts:
+        seen[text] = seen.get(text, 0) + 1
+    duplicates = sorted({text for text, count in seen.items() if count > 1})
+    if duplicates:
+        preview = ", ".join(f"'{t}'" for t in duplicates[:3])
+        more = f" (+{len(duplicates) - 3} more)" if len(duplicates) > 3 else ""
+        issues.append({
+            "severity": "info",
+            "rule": "duplicate-anchors",
+            "message": (
+                f"Repeated heading texts detected: {preview}{more} — "
+                "these break exact-match `insert_after` targets"
+            ),
+            "suggestion": "Make each heading unique so patch operations can locate it unambiguously"
+        })
+
+    return issues
+
+
+def check_slow_update_section(body: str) -> list[dict]:
+    """Validate the protected SLOW_UPDATE longitudinal-guidance section markers."""
+    issues = []
+
+    start_marker = "<!-- SLOW_UPDATE_START -->"
+    end_marker = "<!-- SLOW_UPDATE_END -->"
+    has_start = start_marker in body
+    has_end = end_marker in body
+
+    if has_start ^ has_end:
+        issues.append({
+            "severity": "error",
+            "rule": "slow-update-unbalanced",
+            "message": "Slow-update markers are unbalanced",
+            "suggestion": "Either include both markers or remove the lone one"
+        })
+        return issues
+
+    if not has_start and not has_end:
+        return issues
+
+    start_idx = body.find(start_marker)
+    end_idx = body.find(end_marker)
+
+    if start_idx > end_idx:
+        issues.append({
+            "severity": "error",
+            "rule": "slow-update-unbalanced",
+            "message": "Slow-update START marker appears after END marker",
+            "suggestion": "Reorder markers so START precedes END"
+        })
+        return issues
+
+    inner = body[start_idx + len(start_marker):end_idx]
+    if start_marker in inner:
+        issues.append({
+            "severity": "warning",
+            "rule": "slow-update-nested",
+            "message": "Nested SLOW_UPDATE_START marker found inside slow-update section",
+            "suggestion": "Remove nested START markers — the section must be flat"
+        })
+
+    issues.append({
+        "severity": "info",
+        "rule": "slow-update-present",
+        "message": "Protected slow-update section detected (managed by epoch-boundary optimiser)",
+        "suggestion": "Do not edit this section with normal patches; reserved for slow-update flow"
+    })
+
+    return issues
+
+
 def check_structure(skill_path: Path) -> list[dict]:
     """Check skill directory structure."""
     issues = []
@@ -369,15 +625,53 @@ def review_skill(name: str, scope: str | None = None, output_format: str = "text
     all_issues.extend(check_frontmatter_xml(metadata))
     all_issues.extend(check_body(body, skill_path))
     all_issues.extend(check_structure(skill_path))
+    all_issues.extend(check_tokens(body, skill_path))
+    all_issues.extend(check_procedurality(body))
+    all_issues.extend(check_patch_friendliness(body))
+    all_issues.extend(check_slow_update_section(body))
+
+    # Compute footprint stats (re-used for both JSON output and scoring)
+    body_tokens = _approx_tokens(body)
+    references_tokens = 0
+    references_dir = skill_path / "references"
+    if references_dir.exists() and references_dir.is_dir():
+        for ref_file in references_dir.rglob("*"):
+            if ref_file.is_file():
+                try:
+                    references_tokens += _approx_tokens(
+                        ref_file.read_text(encoding="utf-8", errors="replace")
+                    )
+                except OSError:
+                    continue
+
+    slow_update_inner = _extract_slow_update_section(body)
+    slow_update_tokens = _approx_tokens(slow_update_inner) if slow_update_inner is not None else 0
+    total_tokens = body_tokens + references_tokens
+
+    # Anchor density (re-derived for output / scoring)
+    body_line_list = body.split("\n")
+    body_lines = len(body_line_list)
+    heading_lines = [ln for ln in body_line_list if re.match(r"^#{2,3}\s+\S", ln)]
+    heading_count = len(heading_lines)
+    bolded_label_count = len(re.findall(r"\*\*[^*\n]+:\*\*", body))
+    anchor_density = (heading_count + bolded_label_count) / max(1, body_lines)
 
     # Count by severity
     error_count = len([i for i in all_issues if i["severity"] == "error"])
     warning_count = len([i for i in all_issues if i["severity"] == "warning"])
     info_count = len([i for i in all_issues if i["severity"] == "info"])
 
-    # Calculate score (simple scoring)
-    max_score = 100
-    score = max_score - (error_count * 20) - (warning_count * 10) - (info_count * 2)
+    # Calculate score
+    score = 100
+    score -= error_count * 20
+    score -= warning_count * 10
+    score -= info_count * 2
+    if body_tokens > 4000:
+        score -= 15
+    if body_tokens > 2000:
+        score -= 5
+    if anchor_density < 0.04 and body_lines > 60:
+        score -= 5
     score = max(0, score)
 
     return {
@@ -386,7 +680,13 @@ def review_skill(name: str, scope: str | None = None, output_format: str = "text
         "scope": found_scope,
         "path": str(skill_path),
         "description": description,
-        "body_lines": len(body.split("\n")),
+        "body_lines": body_lines,
+        "body_tokens": body_tokens,
+        "references_tokens": references_tokens,
+        "slow_update_tokens": slow_update_tokens,
+        "total_tokens": total_tokens,
+        "anchor_density": round(anchor_density, 4),
+        "heading_count": heading_count,
         "issues": all_issues,
         "summary": {
             "errors": error_count,
@@ -412,6 +712,12 @@ def format_output(result: dict, output_format: str) -> str:
         f"Scope: {result['scope']}",
         f"Path:  {result['path']}",
         f"Lines: {result['body_lines']}",
+        f"",
+        f"Token footprint:",
+        f"  Body:           {result['body_tokens']} tokens  (target 300-2000)",
+        f"  References:     {result['references_tokens']} tokens",
+        f"  Slow-update:    {result['slow_update_tokens']} tokens  (protected section)",
+        f"  Total:          {result['total_tokens']} tokens",
         f"",
         f"Score: {result['summary']['score']}/100",
         f"  Errors:   {result['summary']['errors']}",

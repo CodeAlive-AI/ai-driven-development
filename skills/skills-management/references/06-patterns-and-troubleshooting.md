@@ -135,7 +135,58 @@ Key techniques:
 - Fallback options
 - Transparency about choices
 
-## Pattern 5: Domain-specific intelligence
+## Pattern 6: Validated iterative refinement (SkillOpt-style)
+
+**Use when:** A skill underperforms on a measurable task set and you can score outcomes.
+
+This is Pattern 3 (iterative refinement) hardened with the SkillOpt discipline: bounded edits, held-out validation gate, rejected-edit buffer, and an epoch-boundary slow update. See `skill-optimization.md` and `../scripts/optimize_skill.py`.
+
+```markdown
+## Optimised skill loop
+
+### Forward pass: rollout
+1. Sample a rollout batch from train split
+2. Run the frozen target agent with the current skill on each task
+3. Collect (trajectory, score) per task
+
+### Backward pass: reflection
+1. Split rollouts into failures / successes
+2. Partition each into minibatches (default 8)
+3. Optimiser proposes AT MOST L_t atomic edits per minibatch
+   (operations: append, insert_after, replace, delete)
+4. Merge hierarchically: failure → success → final
+5. Rank and clip to L_t
+
+### Bounded apply
+1. Apply edits to a candidate skill
+2. NEVER touch content between <!-- SLOW_UPDATE_START --> and <!-- SLOW_UPDATE_END -->
+
+### Validation gate
+1. Evaluate candidate on selection split
+2. Accept only if STRICTLY greater than current score
+3. Else: store edits + failure summary in rejected_buffer.json
+
+### Epoch boundary (e >= 2)
+1. Slow update: compare same tasks under previous and current skill,
+   write longitudinal guidance into the protected section
+2. Optimiser meta-skill: capture which edit patterns helped vs hurt
+   (optimiser-side only — never shipped)
+
+### Final
+1. Report best skill on the test split
+2. Export best_skill.md + optimization_report.md
+```
+
+Key techniques:
+- Strict-greater gate prevents silent drift on ties
+- Rejected buffer feeds back into the next optimiser call in the same epoch
+- Bounded `L_t` (default 4 with cosine decay to floor 2) preserves continuity between revisions
+- Slow-update lives in a protected region — step edits cannot overwrite durable lessons
+- Final artefact stays compact (target 300-2000 tokens) and procedural rather than instance-specific
+
+**Anti-pattern: blind rewrites.** Without an edit budget, the optimiser erases useful rules; without a strict-greater gate, candidates that tie the current score get silently accepted; without a rejected buffer, the same bad edit gets re-proposed every step. Removing any one component costs measurable accuracy (Table 3 of the paper).
+
+## Pattern 7: Domain-specific intelligence (was Pattern 5)
 
 **Use when:** Your skill adds specialized knowledge beyond tool access.
 

@@ -1,6 +1,6 @@
 ---
 name: skills-management
-description: Search, find, discover, install, remove, update, review, list, and move skills for AI coding agents. Use when user asks "find a skill for X", "search for a skill", "is there a skill for X", "install skill", "remove skill", "update skills", "list skills", "review skill quality", "move skill", "check for updates", or "how do I do X" where X might have an existing skill. This is THE tool for skill discovery and ecosystem search.
+description: Search, find, discover, install, remove, update, review, list, move, optimise, and iterate on skills for AI coding agents. Use when user asks "find a skill for X", "search for a skill", "is there a skill for X", "install skill", "remove skill", "update skills", "list skills", "review skill quality", "move skill", "check for updates", "optimise skill", "train skill on tasks", "iterate skill", "audit skill edits", "log skill edit", "diff skill versions", "trigger test skill", "transfer skill across agents", or "how do I do X" where X might have an existing skill. THE tool for skill discovery, ecosystem search, and SkillOpt-style training loops. Do not use for creating skills from scratch (use /skill-creator instead).
 ---
 
 # Skills Manager
@@ -18,6 +18,16 @@ description: Search, find, discover, install, remove, update, review, list, and 
 | Move to user | `python3 scripts/move_skill.py <name> user` |
 | Move to project | `python3 scripts/move_skill.py <name> project` |
 | Create new | Use `/skill-creator` |
+| **Optimize & Iterate (SkillOpt-style)** | |
+| Plan optimisation | `python3 scripts/optimize_skill.py <name> --tasks tasks.jsonl --dry-run` |
+| Run optimisation | `python3 scripts/optimize_skill.py <name> --tasks tasks.jsonl --output-dir runs/r1` |
+| Log a manual edit | `python3 scripts/log_skill_edit.py <name> --reason "..." --snapshot` |
+| List recent edits | `python3 scripts/log_skill_edit.py <name> --list --since 7d` |
+| Diff vs last snapshot | `python3 scripts/diff_skill_versions.py <name> --log --format stats` |
+| Diff between commits | `python3 scripts/diff_skill_versions.py <name> --git HEAD~3 HEAD` |
+| Trigger test | `python3 scripts/trigger_test.py <name> --cases cases.yaml` |
+| Generate trigger cases | `python3 scripts/trigger_test.py <name> --generate > cases.yaml` |
+| Transfer test | `python3 scripts/transfer_test.py <name> --all` |
 | **Discovery & Install** | |
 | Find skills | `npx skills find [query]` |
 | Review remote skills | Fetch skills.sh pages, assess using [assessment framework](references/remote-skill-assessment.md) |
@@ -77,6 +87,10 @@ python3 scripts/review_skill.py <name> -f json # JSON output for programmatic us
 - XML angle brackets in frontmatter (security)
 - Forbidden docs files (README.md, CHANGELOG.md)
 - Body length (warns if >500 lines)
+- **Token footprint** (300-2000 tokens target per SkillOpt; warns at 2000, penalises at 4000)
+- **Procedurality** (instance-specific markers — filenames, literal numbers, task references — should be rare)
+- **Patch-friendliness** (anchor density: `##`/`###` headings + `**Label:**` markers needed for reliable `insert_after` edits)
+- **Slow-update section integrity** (`<!-- SLOW_UPDATE_START -->` / `<!-- SLOW_UPDATE_END -->` markers must be balanced and unnested)
 - Time-sensitive content
 - Path format (no Windows backslashes)
 - Reference depth (should be one level)
@@ -116,6 +130,83 @@ python3 scripts/move_skill.py <name> user -f   # Overwrite if exists
 ### Create New Skill
 
 Use the `/skill-creator` skill for guided creation with proper structure.
+
+## Optimize a Skill (SkillOpt-style)
+
+Treat a skill as a **trainable text artefact**: bounded edits + held-out validation gate + rejected-edit buffer + epoch-wise slow update. See [references/skill-optimization.md](references/skill-optimization.md) for the full method (Microsoft, arXiv 2605.23904, May 2026).
+
+**When to use this loop:**
+- Skill already exists and underperforms on a measurable task set
+- You have (or can write) a verifier — exact-match, scored output, or LLM judge
+- You can produce 20-100 representative tasks with reference answers
+
+**When NOT to use:**
+- Task has no measurable success signal — bounded text optimisation needs a gate
+- Creating a skill from scratch — write a v0 with `/skill-creator` first
+- Only 1-5 tasks available — the loop needs evidence batches
+
+### Run the loop
+
+```bash
+# 1. Dry-run to see the plan (splits, schedule, prompt previews)
+python3 scripts/optimize_skill.py <name> \
+    --tasks tasks.jsonl --epochs 4 --edit-budget 4 \
+    --output-dir runs/r1 --dry-run
+
+# 2. Real run
+python3 scripts/optimize_skill.py <name> \
+    --tasks tasks.jsonl --output-dir runs/r1 \
+    --optimizer-cmd "claude -p --model claude-opus-4-7" \
+    --target-cmd  "claude -p --model claude-haiku-4-5-20251001"
+
+# 3. Inspect
+cat runs/r1/optimization_report.md
+python3 scripts/diff_skill_versions.py <name> --files \
+    runs/r1/initial_skill.md runs/r1/best_skill.md --format stats
+```
+
+The loop produces `best_skill.md`, `optimization_report.md`, `edit_apply_report.json`, `rejected_buffer.json`, and `meta_skill.json` (optimiser-side only — not shipped).
+
+### Manual-edit audit trail
+
+For edits made outside the loop (hand-tweaks, bug-fix follow-ups), keep a lightweight log:
+
+```bash
+# After saving an edit
+python3 scripts/log_skill_edit.py <name> \
+    --reason "tightened insert_after target" \
+    --source from-bug --ref "issue #42" --snapshot
+
+python3 scripts/log_skill_edit.py <name> --list --since 30d
+python3 scripts/diff_skill_versions.py <name> --log
+```
+
+`--snapshot` saves a copy under `<skill>/.skill_snapshots/SKILL.<sha8>.md` so the diff helper can show actual content, not just hashes.
+
+### Protected slow-update section
+
+A skill that gets optimised iteratively should include a markup-fenced region for longitudinal guidance:
+
+```markdown
+<!-- SLOW_UPDATE_START -->
+<!-- This block is managed by the epoch-boundary slow-update process.
+     Step-level edits never modify it. -->
+<!-- SLOW_UPDATE_END -->
+```
+
+`scripts/review_skill.py` flags unbalanced or nested markers. `scripts/optimize_skill.py` refuses to apply step-level edits that target content inside this region.
+
+### Trigger and transfer tests
+
+```bash
+# Auto-generate candidate trigger cases from the skill's description
+python3 scripts/trigger_test.py <name> --generate > cases.yaml
+# Curate, then run
+python3 scripts/trigger_test.py <name> --cases cases.yaml --threshold 0.8
+
+# Verify skill lands and parses in other agents
+python3 scripts/transfer_test.py <name> --all --scope global
+```
 
 ## Discover & Install Skills
 
@@ -349,12 +440,17 @@ Consult these when reviewing skills or advising on skill structure and best prac
 | `references/03-planning-and-design.md` | Use cases, categories, success criteria, YAML frontmatter, writing instructions |
 | `references/04-testing-and-iteration.md` | Trigger tests, functional tests, performance comparison, skill-creator usage |
 | `references/05-distribution-and-sharing.md` | Distribution model, API usage, GitHub hosting, positioning |
-| `references/06-patterns-and-troubleshooting.md` | 5 workflow patterns, common errors and fixes |
+| `references/06-patterns-and-troubleshooting.md` | 7 workflow patterns (incl. SkillOpt-style validated iterative refinement), common errors and fixes |
 | `references/07-resources-and-references.md` | Official docs, example skills, tools, support channels |
 | `references/ref-a-quick-checklist.md` | Pre-build, development, upload, and post-upload checklists |
 | `references/ref-b-yaml-frontmatter.md` | Required/optional fields, security restrictions |
 | `references/ref-c-complete-skill-examples.md` | Links to production-ready skill examples |
 | `references/remote-skill-assessment.md` | Framework for evaluating ecosystem skills before installation |
+| `references/skill-optimization.md` | SkillOpt-style training loop: bounded edits, validation gate, rejected buffer, slow/meta update (Microsoft, arXiv 2605.23904) |
+| `prompts/analyst_error.md`, `analyst_success.md` | Failure / success analysis prompt contracts for the optimiser |
+| `prompts/merge_failure.md`, `merge_success.md`, `merge_final.md` | Hierarchical edit-merge contracts |
+| `prompts/ranking.md` | Edit ranking and selection contract |
+| `prompts/slow_update.md`, `meta_skill.md` | Epoch-boundary slow-update and optimiser-side meta-skill contracts |
 
 ## Acknowledgments
 
