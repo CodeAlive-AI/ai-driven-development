@@ -28,6 +28,8 @@ description: Search, find, discover, install, remove, update, review, list, move
 | Trigger test | `python3 scripts/trigger_test.py <name> --cases cases.yaml` |
 | Generate trigger cases | `python3 scripts/trigger_test.py <name> --generate > cases.yaml` |
 | Transfer test | `python3 scripts/transfer_test.py <name> --all` |
+| Aggregate runs | `python3 scripts/aggregate_runs.py runs/*` |
+| Compare runs | `python3 scripts/aggregate_runs.py runs/r1 runs/r2 --compare` |
 | **Discovery & Install** | |
 | Find skills | `npx skills find [query]` |
 | Review remote skills | Fetch skills.sh pages, assess using [assessment framework](references/remote-skill-assessment.md) |
@@ -447,6 +449,8 @@ Consult these when reviewing skills or advising on skill structure and best prac
 | `references/ref-c-complete-skill-examples.md` | Links to production-ready skill examples |
 | `references/remote-skill-assessment.md` | Framework for evaluating ecosystem skills before installation |
 | `references/skill-optimization.md` | SkillOpt-style training loop: bounded edits, validation gate, rejected buffer, slow/meta update (Microsoft, arXiv 2605.23904) |
+| `references/optimization-artifacts-schemas.md` | JSON schemas for every artefact written by `optimize_skill.py` and `log_skill_edit.py` (splits, state, rollouts, proposals, decisions, edit_apply_report, rejected_buffer, meta_skill, etc.) |
+| `references/optimization-grading-checklist.md` | Audit checklist for a finished optimization run — what to inspect in `best_skill.md`, `edit_apply_report.json`, `rejected_buffer.json` before shipping |
 | `prompts/analyst_error.md`, `analyst_success.md` | Failure / success analysis prompt contracts for the optimiser |
 | `prompts/merge_failure.md`, `merge_success.md`, `merge_final.md` | Hierarchical edit-merge contracts |
 | `prompts/ranking.md` | Edit ranking and selection contract |
