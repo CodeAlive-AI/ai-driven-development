@@ -69,6 +69,51 @@ def build_toc(h2_entries: list[tuple[str, str, int, str]]) -> str:
     return "\n".join(toc_lines)
 
 
+# Top-level Parts A-K. The spec spells these out as H1 headings
+# ("# Part A – …", "# Part D – …", …). A missing one means a Part's `#` heading
+# was deleted upstream and its content silently orphaned under the previous Part
+# — the regression fixed by ailev/FPF#42 / PR #43. Guard against it so a
+# malformed spec fails loudly instead of producing a structurally wrong tree.
+EXPECTED_PART_LETTERS = list("ABCDEFGHIJK")
+
+
+def validate_part_structure(h1_titles: list[str]) -> None:
+    """Fail loudly if an expected Part A-K H1 heading is missing, duplicated, or
+    out of order, so a bad spec never silently produces a wrong sections/ tree."""
+    positions: dict[str, list[int]] = {}
+    for idx, title in enumerate(h1_titles):
+        for letter in EXPECTED_PART_LETTERS:
+            if re.search(rf"\bPart {letter}\b", title):
+                positions.setdefault(letter, []).append(idx)
+
+    problems: list[str] = []
+    for letter in EXPECTED_PART_LETTERS:
+        hits = positions.get(letter, [])
+        if not hits:
+            problems.append(
+                f"  - Part {letter}: no H1 heading "
+                "(content likely orphaned under the previous Part)"
+            )
+        elif len(hits) > 1:
+            problems.append(
+                f"  - Part {letter}: found {len(hits)} H1 headings (expected 1)"
+            )
+
+    firsts = [positions[l][0] for l in EXPECTED_PART_LETTERS if positions.get(l)]
+    if firsts != sorted(firsts):
+        problems.append("  - Part A-K headings are out of document order")
+
+    if problems:
+        print(
+            "ERROR: FPF-Spec.md Part A-K heading structure is invalid:\n"
+            + "\n".join(problems)
+            + "\n\nAn upstream edit likely deleted a Part's `#` heading "
+            "(see ailev/FPF#42). Fix the spec before splitting.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+
 def split_spec():
     if not SPEC_FILE.exists():
         print(f"Error: {SPEC_FILE} not found. Did you init the submodule?", file=sys.stderr)
@@ -102,6 +147,11 @@ def split_spec():
 
     if current_h1 is not None:
         h1_sections.append((current_h1, current_h2s))
+
+    # Validate Part A-K structure before destroying the existing output tree,
+    # so an upstream heading regression aborts the run instead of silently
+    # producing a wrong tree.
+    validate_part_structure([h1[1] for h1, _ in h1_sections])
 
     # Clean output dir
     if OUTPUT_DIR.exists():
