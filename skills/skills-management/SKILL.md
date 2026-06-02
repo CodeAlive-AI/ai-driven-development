@@ -30,6 +30,11 @@ description: Search, find, discover, install, remove, update, review, list, move
 | Transfer test | `python3 scripts/transfer_test.py <name> --all` |
 | Aggregate runs | `python3 scripts/aggregate_runs.py runs/*` |
 | Compare runs | `python3 scripts/aggregate_runs.py runs/r1 runs/r2 --compare` |
+| Assertion-graded run | `python3 scripts/optimize_skill.py <name> --tasks tasks.jsonl --verifier assertions` |
+| Multi-run variance | `python3 scripts/optimize_skill.py <name> --tasks tasks.jsonl --runs-per-task 3` |
+| Blind A/B compare | `python3 scripts/blind_comparator.py --skill-a runs/r1/initial_skill.md --skill-b runs/r1/best_skill.md --tasks tasks.jsonl --output-dir cmp/` |
+| HTML viewer | `python3 scripts/eval_viewer.py runs/r1` |
+| Compare two runs (HTML) | `python3 scripts/eval_viewer.py runs/r1 runs/r2 --compare` |
 | **Discovery & Install** | |
 | Find skills | `npx skills find [query]` |
 | Review remote skills | Fetch skills.sh pages, assess using [assessment framework](references/remote-skill-assessment.md) |
@@ -209,6 +214,42 @@ python3 scripts/trigger_test.py <name> --cases cases.yaml --threshold 0.8
 # Verify skill lands and parses in other agents
 python3 scripts/transfer_test.py <name> --all --scope global
 ```
+
+### Rich grading: assertions verifier
+
+Pass `--verifier assertions` to grade each rollout against declarative `assertions[]` from `tasks.jsonl`. The grader returns per-assertion pass/fail with evidence, extracted claims, AND a **critique of the assertions themselves** (`eval_feedback`) — a meta layer that flags weak or non-discriminating checks. `optimization_report.md` aggregates these into an "Assertion critique" section.
+
+```json
+// tasks.jsonl entry for --verifier assertions
+{"id":"t1","prompt":"...","assertions":["The output is a valid JSON array","Each item has a name field"]}
+```
+
+### Variance: multi-run per task
+
+Pass `--runs-per-task 3` to run each task N times. `rollouts.jsonl` records `score_mean` and `score_stddev`; validation gate uses the mean. Use this when the verifier is noisy or the agent's behaviour is non-deterministic.
+
+### Blind A/B comparison
+
+Independent verdict on whether `best_skill.md` is actually better than `initial_skill.md` — important because the SkillOpt gate uses the same verifier that proposed the edits, which can be self-confirming.
+
+```bash
+python3 scripts/blind_comparator.py \
+    --skill-a runs/r1/initial_skill.md \
+    --skill-b runs/r1/best_skill.md \
+    --tasks tasks.jsonl \
+    --output-dir cmp/r1
+```
+
+Per task: both skills run on the same prompt, outputs presented as X/Y to an independent judge with randomised labels. Aggregated to `comparison_report.{json,md}`.
+
+### HTML viewer for a run
+
+```bash
+python3 scripts/eval_viewer.py runs/r1                    # opens in browser
+python3 scripts/eval_viewer.py runs/r1 runs/r2 --compare  # side-by-side
+```
+
+Single-page static HTML: per-epoch chart, accepted/rejected edit timelines, slow-update history, per-task rollouts with grading, initial→best diff. No JS / CSS deps.
 
 ## Discover & Install Skills
 
@@ -455,6 +496,8 @@ Consult these when reviewing skills or advising on skill structure and best prac
 | `prompts/merge_failure.md`, `merge_success.md`, `merge_final.md` | Hierarchical edit-merge contracts |
 | `prompts/ranking.md` | Edit ranking and selection contract |
 | `prompts/slow_update.md`, `meta_skill.md` | Epoch-boundary slow-update and optimiser-side meta-skill contracts |
+| `prompts/grader.md` | Rich grading contract for `--verifier assertions` (per-assertion pass/fail + claims + eval_feedback critique) |
+| `prompts/blind_comparator.md` | Independent A/B judge contract for `blind_comparator.py` |
 
 ## Acknowledgments
 

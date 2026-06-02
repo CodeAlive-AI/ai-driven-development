@@ -43,6 +43,35 @@ optimisation output dir:
 
 ---
 
+## tasks.jsonl (input)
+
+The optimiser's input task set. Not written by `optimize_skill.py` — supplied
+by the operator via `--tasks`. Documented here because every other artefact
+references task ids and field semantics defined by this file.
+
+Location: caller-supplied; conventionally `<skill-root>/tasks.jsonl`.
+
+One JSON object per line:
+
+```json
+{"id": "t1", "prompt": "Summarise the doc", "reference_answer": "Expected text"}
+{"id": "t2", "prompt": "Draft an email", "assertions": ["addresses recipient by name", "states action"], "files": ["thread.eml"]}
+```
+
+- `id` — string. Stable task identifier. Quoted verbatim in `splits.json`,
+  `rollouts.jsonl`, and `edit_apply_report.json` reasoning.
+- `prompt` — string. The user-side instruction passed to the target model.
+- `reference_answer` — string. Required when verifier is `exact-match`.
+- `assertions` — list of strings. Required when verifier is `assertions`;
+  each entry is a single check the grader evaluates against the output.
+- `files` — list of string paths. Optional. Preserved verbatim on the task
+  object for future verifiers; current verifiers ignore the field.
+
+A task may set both `reference_answer` and `assertions` if the same task
+set is shared across verifiers.
+
+---
+
 ## splits.json
 
 Deterministic train/selection/test partition derived from `--seed` and task
@@ -101,16 +130,64 @@ score) triples produced by `evaluate_skill`.
 Location: `<output-dir>/epoch-{e}/step-{s}/rollouts.jsonl`
 
 ```json
-{"task_id": "task-001", "prompt": "Summarise...", "reference": "Expected text", "output": "Model output", "score": 1}
-{"task_id": "task-007", "prompt": "Translate...", "reference": "Expected text", "output": "Model output", "score": 0}
+{"task_id": "task-001", "prompt": "Summarise...", "reference": "Expected text", "output": "Model output", "score": 1, "score_mean": 1.0, "score_stddev": 0.0, "score_min": 1.0, "score_max": 1.0, "runs_per_task": 1, "runs": [{"output": "Model output", "score": 1}]}
+{"task_id": "task-007", "prompt": "Translate...", "reference": "Expected text", "output": "Model output", "score": 0.667, "score_mean": 0.667, "score_stddev": 0.577, "score_min": 0.0, "score_max": 1.0, "runs_per_task": 3, "runs": [{"output": "out a", "score": 1}, {"output": "out b", "score": 1}, {"output": "out c", "score": 0}]}
 ```
 
 - `task_id` — string. Matches an id from `tasks.jsonl`.
 - `prompt` — string. The verbatim task prompt passed to the target model.
 - `reference` — string. The reference answer (empty string if the task has none).
-- `output` — string. The target model's stdout. Empty string if the rollout
-  raised an exception (logged but not failed).
-- `score` — int. 0 or 1; the verifier verdict.
+- `output` — string. The target model's stdout from the final run. Empty
+  string if the rollout raised an exception (logged but not failed). When
+  `runs_per_task > 1`, equals `runs[-1].output`.
+- `score` — float 0.0-1.0. Kept as an alias for `score_mean` for backward
+  compatibility with pre-v3.5 consumers.
+- `score_mean` — float 0.0-1.0. Mean verifier score across `runs`.
+- `score_stddev` — float. Sample standard deviation (n-1 divisor) across
+  `runs`. `0.0` when `runs_per_task == 1`.
+- `score_min` / `score_max` — float 0.0-1.0. Extrema across `runs`.
+- `runs_per_task` — int. Value of `--runs-per-task` for the run that
+  produced this rollout. Default 1.
+- `runs` — list of `{"output": str, "score": float}` objects, one per run.
+  Always populated; length equals `runs_per_task`.
+
+### grading (assertions verifier only)
+
+Present when `--verifier assertions`. Absent for `exact-match` and
+`llm-judge` rollouts.
+
+```json
+{
+  "grading": {
+    "expectations": [
+      {"text": "addresses recipient by name", "passed": true, "evidence": "Hi Sam,"},
+      {"text": "states action", "passed": false, "evidence": "no action verb in body"}
+    ],
+    "summary": {"passed": 1, "failed": 1, "total": 2, "pass_rate": 0.5},
+    "claims": [
+      {"claim": "tone is friendly", "type": "quality", "verified": true, "evidence": "Hi Sam,"}
+    ],
+    "eval_feedback": {
+      "suggestions": [
+        {"assertion": "states action", "reason": "ambiguous — does not specify which action"}
+      ],
+      "overall": "Tighten assertion 2 to name the expected verb."
+    }
+  }
+}
+```
+
+- `expectations` — one entry per assertion from the task. `passed` is bool;
+  `evidence` quotes the supporting span in the output (or empty when failed).
+- `summary.pass_rate` — float 0.0-1.0. The rollout `score` /
+  `score_mean` for assertion-graded rollouts equals this value.
+- `claims` — grader-extracted claims from the output, classified
+  `factual` | `process` | `quality`. Informational; not scored.
+- `eval_feedback.suggestions` — grader's per-assertion critique of the
+  assertion itself (not the output). Aggregated in `optimization_report.md`
+  under "Assertion critique".
+- `eval_feedback.overall` — string. Free-form summary of the assertion-set
+  quality for this rollout.
 
 ---
 
@@ -154,7 +231,9 @@ Location: `<output-dir>/epoch-{e}/step-{s}/decision.json`
 ```json
 {
   "candidate_score": 0.65,
+  "candidate_score_stddev": 0.08,
   "current_score": 0.62,
+  "current_score_stddev": 0.10,
   "delta": 0.03,
   "accepted": true,
   "L_t": 4,
@@ -168,6 +247,9 @@ Location: `<output-dir>/epoch-{e}/step-{s}/decision.json`
 
 - `candidate_score` — float 0.0-1.0. Mean verifier score of the candidate
   on the selection split.
+- `candidate_score_stddev` / `current_score_stddev` — float. Population
+  stddev of per-task mean scores across the selection split. Present from
+  v3.5.0; absent for runs produced by earlier versions.
 - `current_score` — float 0.0-1.0. Score the candidate must strictly beat.
 - `delta` — `candidate_score - current_score`.
 - `accepted` — bool. True iff `candidate_score > current_score` (strict).
@@ -296,6 +378,11 @@ Required sections (in order):
    `Epoch | Step | L_t | Pass | Fail | Candidate | Current | Best | Accepted`.
 5. `## Accepted Edits (Table 6 / Fig 4 style)` — up to ten subsections, one
    per accepted step, listing up to three edits each.
+6. `## Assertion critique` — present only when verifier is `assertions`.
+   Aggregates `grading.eval_feedback.suggestions` from every rollout in the
+   run, deduplicated by assertion text, ranked by occurrence count. Each
+   entry lists the assertion, the count of rollouts that flagged it, and a
+   representative `reason` string.
 
 Parsers should treat the Summary bullet list as the authoritative
 key-value source; the tables are for humans.
@@ -360,7 +447,114 @@ Location: `<skill-root>/.skill_snapshots/SKILL.<sha8>.md`
 
 ---
 
+## Blind comparator artefacts
+
+Written by `../scripts/blind_comparator.py` when comparing two skills head
+to head over a shared task set. The comparator runs both skills, presents
+outputs to a judge with labels randomised, and aggregates verdicts.
+
+Location: caller-supplied `--output-dir`. Tree:
+
+```
+<comparator-output-dir>/
+├── comparison_report.json
+├── comparison_report.md
+└── task-{id}/
+    └── verdict.json
+```
+
+### comparison_report.json
+
+Top-level aggregate over the full task set.
+
+```json
+{
+  "skill_a": "/path/to/initial_skill.md",
+  "skill_b": "/path/to/best_skill.md",
+  "task_count": 24,
+  "a_wins": 9,
+  "b_wins": 12,
+  "ties": 3,
+  "confidence_breakdown": {
+    "high": {"a": 4, "b": 6, "tie": 0},
+    "medium": {"a": 3, "b": 4, "tie": 1},
+    "low": {"a": 2, "b": 2, "tie": 2}
+  },
+  "randomise_labels": true,
+  "seed": 42
+}
+```
+
+- `skill_a` / `skill_b` — absolute paths to the SKILL.md files compared.
+- `task_count` — int. Total tasks judged.
+- `a_wins` / `b_wins` / `ties` — int. Sum equals `task_count`.
+- `confidence_breakdown` — counts of verdicts bucketed by judge confidence
+  (`high` | `medium` | `low`). Sub-buckets sum to `a_wins`, `b_wins`,
+  `ties` respectively.
+- `randomise_labels` — bool. When true, the judge sees `X` / `Y` instead
+  of `A` / `B`, with the X-to-A mapping resolved per task in
+  `verdict.json`.
+- `seed` — int. Seed for the label-randomisation RNG. Required for
+  reproducing a comparator run.
+
+### comparison_report.md
+
+Human-readable summary of `comparison_report.json`. No schema enforced;
+parsers should read the JSON.
+
+### task-{id}/verdict.json
+
+Per-task judge record.
+
+```json
+{
+  "task_id": "t1",
+  "prompt": "Summarise the doc",
+  "x_label": "a",
+  "y_label": "b",
+  "output_x": "Skill A output",
+  "output_y": "Skill B output",
+  "verdict": {
+    "winner": "y",
+    "confidence": "high",
+    "reasoning": "Y covers the third point that X omits.",
+    "x_strengths": ["concise opening"],
+    "x_weaknesses": ["misses 'risks' section"],
+    "y_strengths": ["complete coverage", "structured headings"],
+    "y_weaknesses": ["slightly verbose"]
+  }
+}
+```
+
+- `x_label` / `y_label` — string `"a"` or `"b"`. Records which skill was
+  shown as X and which as Y to the judge. With `randomise_labels: false`,
+  always `x_label="a"`, `y_label="b"`.
+- `output_x` / `output_y` — string. Skill outputs in judge-display order.
+- `verdict.winner` — `"x"` | `"y"` | `"tie"`. Aggregation in
+  `comparison_report.json` resolves this back to a/b via `x_label`.
+- `verdict.confidence` — `"high"` | `"medium"` | `"low"`.
+- `verdict.reasoning` — string. Judge's free-form rationale.
+- `verdict.{x,y}_strengths` / `verdict.{x,y}_weaknesses` — lists of short
+  strings keyed to the display labels, not the skills.
+
+---
+
+## Eval viewer artefact
+
+Written by `../scripts/eval_viewer.py`. Reads a SkillOpt output directory
+and emits a single self-contained HTML report.
+
+Location: `<viewer-output-dir>/report.html`
+
+- Single file. No JSON sidecar; the report bundles per-task rollouts,
+  decisions, and accepted-edit history into one navigable page.
+- Stylesheet and any JS inlined; safe to attach to a PR or email.
+
+---
+
 Schema stability is a v3.x guarantee. Breaking changes (renamed fields,
 removed keys, changed semantics) bump the major version of
 `skills-management`. Additive fields may appear within a major version;
-consumers should ignore unknown keys rather than fail.
+consumers should ignore unknown keys rather than fail. v3.5.0 adds
+`runs_per_task`/`grading`/`score_stddev` fields and `comparison_*`
+artefacts — all additive.

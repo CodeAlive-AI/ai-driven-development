@@ -8,6 +8,19 @@ the caller has configured.
 
 See prompts/ for the per-stage contract texts. See the README/SKILL.md of
 skills-management for the overall protocol.
+
+Task schema (`tasks.jsonl`, one JSON object per line):
+    {
+      "id": "t1",                       # required, unique string
+      "prompt": "...",                  # required, the task prompt
+      "reference_answer": "...",        # required for the exact-match verifier
+      "assertions": ["...", "..."],     # required for the assertions verifier
+      "files": ["path/to/input.csv"]    # optional, passed through to rollout
+    }
+
+Each task can be executed N times via `--runs-per-task N`. The per-task score
+then becomes the mean across runs with stddev recorded; aggregate scores are
+the mean of per-task means.
 """
 
 import argparse
@@ -18,6 +31,7 @@ import os
 import random
 import re
 import shutil
+import statistics
 import subprocess
 import sys
 import tempfile
@@ -391,6 +405,52 @@ def verify_script(script_path: Path, rollout_output: str, reference: str, prompt
     return 1 if int(parsed.get("score", 0)) >= 1 else 0
 
 
+def verify_assertions(
+    optimizer_cmd: str,
+    prompts_dir: Path,
+    rollout_output: str,
+    assertions: list[str],
+    prompt: str,
+) -> tuple[float, dict]:
+    """Grade `rollout_output` against an explicit list of `assertions`.
+
+    Calls the optimiser once with the `grader.md` contract. Returns
+    `(pass_rate, grading_json)` where `pass_rate` is a float in [0, 1] taken
+    from `summary.pass_rate` in the grader's response.
+    """
+    contract = _read_prompt(prompts_dir, "grader.md")
+    grader_prompt = (
+        contract
+        + "\n\n## TASK PROMPT\n"
+        + prompt
+        + "\n\n## AGENT OUTPUT\n"
+        + rollout_output
+        + "\n\n## ASSERTIONS\n"
+        + json.dumps(assertions, indent=2)
+        + "\n"
+    )
+    try:
+        parsed = call_llm_json(optimizer_cmd, grader_prompt) or {}
+    except Exception as exc:  # noqa: BLE001
+        log(f"  [warn] grader failed: {exc}; scoring 0")
+        return 0.0, {"error": str(exc), "expectations": [], "summary": {"passed": 0, "failed": len(assertions), "total": len(assertions), "pass_rate": 0.0}}
+    summary = parsed.get("summary") or {}
+    pass_rate = summary.get("pass_rate")
+    if pass_rate is None:
+        # Fall back to computing pass_rate from expectations if the summary
+        # block is missing or malformed.
+        expectations = parsed.get("expectations") or []
+        total = len(expectations) or len(assertions) or 1
+        passed = sum(1 for e in expectations if e.get("passed"))
+        pass_rate = passed / total if total else 0.0
+    try:
+        pass_rate = float(pass_rate)
+    except (TypeError, ValueError):
+        pass_rate = 0.0
+    pass_rate = max(0.0, min(1.0, pass_rate))
+    return pass_rate, parsed
+
+
 def run_rollout(
     target_cmd: str,
     skill_text: str,
@@ -420,18 +480,42 @@ def score_rollout(
     optimizer_cmd: str,
     rollout_output: str,
     task: dict,
-) -> int:
+    prompts_dir: Path | None = None,
+) -> tuple[float, dict | None]:
+    """Score one rollout. Returns `(score, grading_or_none)`.
+
+    `score` is a float in [0, 1]. For binary verifiers it is 0.0 or 1.0; for
+    the `assertions` verifier it is the assertion pass rate. `grading` is the
+    structured grader output (only populated for the `assertions` verifier).
+    """
     if verifier == "exact-match":
-        return verify_exact_match(rollout_output, task.get("reference_answer", ""))
+        return float(verify_exact_match(rollout_output, task.get("reference_answer", ""))), None
     if verifier == "llm-judge":
-        return verify_llm_judge(
+        return float(verify_llm_judge(
             optimizer_cmd,
             rollout_output,
             task.get("reference_answer", ""),
             task["prompt"],
+        )), None
+    if verifier == "assertions":
+        if prompts_dir is None:
+            raise RuntimeError("assertions verifier requires prompts_dir")
+        assertions = task.get("assertions")
+        if not assertions or not isinstance(assertions, list):
+            raise ValueError(
+                f"task {task.get('id')!r}: 'assertions' verifier requires a "
+                f"non-empty 'assertions: [\"...\"]' list. See module docstring "
+                f"for the tasks.jsonl schema."
+            )
+        return verify_assertions(
+            optimizer_cmd,
+            prompts_dir,
+            rollout_output,
+            [str(a) for a in assertions],
+            task["prompt"],
         )
     # Treat anything else as a script path.
-    return verify_script(Path(verifier), rollout_output, task.get("reference_answer", ""), task["prompt"])
+    return float(verify_script(Path(verifier), rollout_output, task.get("reference_answer", ""), task["prompt"])), None
 
 
 # --------------------------------------------------------------------------- #
@@ -445,8 +529,12 @@ def _read_prompt(prompts_dir: Path, name: str) -> str:
 def _format_trajectories(rollouts: list[dict]) -> str:
     out = []
     for r in rollouts:
+        score = r["score"]
+        # Render integer-valued scores as ints to preserve byte-identical
+        # prompt output for the default single-run binary path.
+        score_text = str(int(score)) if float(score).is_integer() else f"{float(score):.3f}"
         out.append(
-            f"--- TASK {r['task_id']} (score={r['score']}) ---\n"
+            f"--- TASK {r['task_id']} (score={score_text}) ---\n"
             f"PROMPT: {r['prompt']}\n"
             f"REFERENCE: {r['reference']}\n"
             f"AGENT_OUTPUT: {r['output']}\n"
@@ -598,11 +686,13 @@ def build_longitudinal(
             "prev_output": prev["output"],
             "curr_output": curr["output"],
         }
-        if prev["score"] == 1 and curr["score"] == 0:
+        prev_pass = prev["score"] >= 1.0
+        curr_pass = curr["score"] >= 1.0
+        if prev_pass and not curr_pass:
             regressions.append(pair)
-        elif prev["score"] == 0 and curr["score"] == 0:
+        elif not prev_pass and not curr_pass:
             persistent_failures.append(pair)
-        elif prev["score"] == 0 and curr["score"] == 1:
+        elif not prev_pass and curr_pass:
             improvements.append(pair)
         else:
             stable_successes.append(pair)
@@ -624,24 +714,71 @@ def evaluate_skill(
     verifier: str,
     skill_text: str,
     tasks: list[dict],
+    prompts_dir: Path | None = None,
+    runs_per_task: int = 1,
 ) -> tuple[float, list[dict]]:
-    """Run rollouts for every task and return (mean_score, rollouts)."""
+    """Run rollouts for every task and return (mean_score, rollouts).
+
+    Each task is executed `runs_per_task` times. The per-task score is the
+    mean across runs; the aggregate score is the mean of per-task means. Each
+    rollout row records `runs[]`, `score_mean`, `score_stddev`, `score_min`,
+    `score_max`, and `runs_per_task`. The legacy `score` field is preserved
+    as an alias for `score_mean` for backward compatibility.
+    """
+    if runs_per_task < 1:
+        raise ValueError(f"runs_per_task must be >= 1 (got {runs_per_task})")
     rollouts: list[dict] = []
     for task in tasks:
-        try:
-            output = run_rollout(target_cmd, skill_text, task)
-        except Exception as exc:  # noqa: BLE001
-            log(f"  [warn] rollout for {task['id']} failed: {exc}")
-            output = ""
-        score = score_rollout(verifier, optimizer_cmd, output, task)
-        rollouts.append({
+        runs: list[dict] = []
+        for run_idx in range(runs_per_task):
+            try:
+                output = run_rollout(target_cmd, skill_text, task)
+            except Exception as exc:  # noqa: BLE001
+                log(f"  [warn] rollout for {task['id']} (run {run_idx + 1}/{runs_per_task}) failed: {exc}")
+                output = ""
+            try:
+                score, grading = score_rollout(
+                    verifier, optimizer_cmd, output, task, prompts_dir=prompts_dir,
+                )
+            except ValueError as exc:
+                # Surfaced when a task is missing required verifier fields.
+                log(f"  [skip] {exc}")
+                score, grading = 0.0, None
+            run_entry: dict = {"output": output, "score": score}
+            if grading is not None:
+                run_entry["grading"] = grading
+            runs.append(run_entry)
+        scores = [r["score"] for r in runs]
+        score_mean = sum(scores) / len(scores)
+        score_stddev = statistics.stdev(scores) if len(scores) > 1 else 0.0
+        score_min = min(scores)
+        score_max = max(scores)
+        row: dict = {
             "task_id": task["id"],
             "prompt": task["prompt"],
             "reference": task.get("reference_answer", ""),
-            "output": output,
-            "score": score,
-        })
-    mean = sum(r["score"] for r in rollouts) / max(1, len(rollouts))
+            # Keep the first run's output in the legacy field so existing
+            # consumers (formatter, reflection prompts) still get a string.
+            "output": runs[0]["output"] if runs else "",
+            "score": score_mean,  # legacy alias for score_mean
+            "score_mean": score_mean,
+            "score_stddev": score_stddev,
+            "score_min": score_min,
+            "score_max": score_max,
+            "runs_per_task": runs_per_task,
+            "runs": runs,
+        }
+        # Promote the first run's grading to the row level for convenience when
+        # downstream tools want a single grading object per task.
+        if runs and "grading" in runs[0]:
+            row["grading"] = runs[0]["grading"]
+        # Pass through optional task fields so downstream tooling can use them.
+        if "files" in task:
+            row["files"] = task["files"]
+        if "assertions" in task:
+            row["assertions"] = task["assertions"]
+        rollouts.append(row)
+    mean = sum(r["score_mean"] for r in rollouts) / max(1, len(rollouts))
     return mean, rollouts
 
 
@@ -658,8 +795,11 @@ def reflect_and_propose(
     """Run §C.2 reflection: failure + success analyses, three merge calls,
     then ranking. Returns the final patch with `edits`.
     """
-    failures = [r for r in rollouts if r["score"] == 0]
-    successes = [r for r in rollouts if r["score"] == 1]
+    # With float scoring (assertions verifier or runs_per_task > 1) any
+    # non-perfect mean is treated as a failure so partially-correct rollouts
+    # still feed the failure analysis.
+    failures = [r for r in rollouts if r["score"] < 1.0]
+    successes = [r for r in rollouts if r["score"] >= 1.0]
 
     failure_patches: list[dict] = []
     success_patches: list[dict] = []
@@ -817,12 +957,19 @@ def run_optimization(args: argparse.Namespace) -> int:
         log(f"target_cmd: {args.target_cmd}")
         log(f"optimizer_cmd: {args.optimizer_cmd}")
         log(f"verifier: {args.verifier}")
+        log(f"runs_per_task: {args.runs_per_task}")
         log(f"rollout_batch={args.rollout_batch} reflection_minibatch={args.reflection_minibatch}")
         # Print prompt previews.
-        for name in ("analyst_error.md", "analyst_success.md", "merge_failure.md",
-                     "merge_success.md", "merge_final.md", "ranking.md",
-                     "slow_update.md", "meta_skill.md"):
-            preview = _read_prompt(prompts_dir, name)[:200].replace("\n", " ")
+        prompt_names = ["analyst_error.md", "analyst_success.md", "merge_failure.md",
+                        "merge_success.md", "merge_final.md", "ranking.md",
+                        "slow_update.md", "meta_skill.md"]
+        if args.verifier == "assertions":
+            prompt_names.append("grader.md")
+        for name in prompt_names:
+            try:
+                preview = _read_prompt(prompts_dir, name)[:200].replace("\n", " ")
+            except FileNotFoundError:
+                preview = "<missing>"
             log(f"  prompt[{name}]: {preview}...")
         log("--- end dry run ---")
         return 0
@@ -833,6 +980,7 @@ def run_optimization(args: argparse.Namespace) -> int:
         skill_text = current_skill_path.read_text(encoding="utf-8")
         baseline, _ = evaluate_skill(
             args.target_cmd, args.optimizer_cmd, args.verifier, skill_text, sel_tasks,
+            prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
         )
         state["current_score"] = baseline
         state["best_score"] = baseline
@@ -862,9 +1010,12 @@ def run_optimization(args: argparse.Namespace) -> int:
             log(f"Rolling out {len(batch)} train tasks...")
             _, rollouts = evaluate_skill(
                 args.target_cmd, args.optimizer_cmd, args.verifier, skill_text, batch,
+                prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
             )
             write_jsonl(step_dir / "rollouts.jsonl", rollouts)
-            n_fail = sum(1 for r in rollouts if r["score"] == 0)
+            # Treat any non-perfect mean as a failure for the pass/fail split
+            # used to bucket rollouts into the failure / success analyses.
+            n_fail = sum(1 for r in rollouts if r["score_mean"] < 1.0)
             n_pass = len(rollouts) - n_fail
             log(f"Rollouts: {n_pass} pass / {n_fail} fail")
 
@@ -892,15 +1043,23 @@ def run_optimization(args: argparse.Namespace) -> int:
 
             # Validate on the selection split.
             log("Validating candidate on selection split...")
-            cand_score, _ = evaluate_skill(
+            cand_score, cand_rollouts = evaluate_skill(
                 args.target_cmd, args.optimizer_cmd, args.verifier, candidate_text, sel_tasks,
+                prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
             )
+            # Aggregate stddev across the selection split (mean of per-task
+            # stddevs) for visibility into multi-run variance at the gate.
+            stddevs = [r.get("score_stddev", 0.0) for r in cand_rollouts]
+            cand_stddev = sum(stddevs) / max(1, len(stddevs))
             decision = {
                 "candidate_score": cand_score,
+                "score": cand_score,  # legacy alias
+                "score_stddev": cand_stddev,
                 "current_score": state["current_score"],
                 "delta": cand_score - state["current_score"],
                 "accepted": cand_score > state["current_score"],
                 "L_t": L_t,
+                "runs_per_task": args.runs_per_task,
                 "apply_report": apply_report,
                 "edits": edits,
             }
@@ -957,9 +1116,11 @@ def run_optimization(args: argparse.Namespace) -> int:
             prev_text = epoch_end_skills[epoch - 1]
             _, prev_rollouts = evaluate_skill(
                 args.target_cmd, args.optimizer_cmd, args.verifier, prev_text, sampled,
+                prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
             )
             _, curr_rollouts = evaluate_skill(
                 args.target_cmd, args.optimizer_cmd, args.verifier, epoch_skill_text, sampled,
+                prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
             )
             epoch_end_rollouts[epoch] = curr_rollouts
             longitudinal = build_longitudinal(prev_rollouts, curr_rollouts)
@@ -1009,11 +1170,17 @@ def run_optimization(args: argparse.Namespace) -> int:
     best_text = best_skill_path.read_text(encoding="utf-8")
     test_score, test_rollouts = evaluate_skill(
         args.target_cmd, args.optimizer_cmd, args.verifier, best_text, test_tasks,
+        prompts_dir=prompts_dir, runs_per_task=args.runs_per_task,
     )
     log(f"Test score: {test_score:.3f}")
 
     # Report.
     total_tokens = sum(approx_tokens(h.get("note", "")) for h in history)
+    assertion_critique = (
+        collect_assertion_critique(output_dir, test_rollouts)
+        if args.verifier == "assertions"
+        else []
+    )
     write_optimization_report(
         output_dir / "optimization_report.md",
         skill_name=args.skill,
@@ -1025,9 +1192,68 @@ def run_optimization(args: argparse.Namespace) -> int:
         best_score=state["best_score"],
         schedule_table=schedule_table,
         approx_tokens_used=total_tokens,
+        assertion_critique=assertion_critique,
     )
     write_jsonl(output_dir / "test_rollouts.jsonl", test_rollouts)
     return 0
+
+
+def collect_assertion_critique(
+    output_dir: Path,
+    test_rollouts: list[dict],
+) -> list[dict]:
+    """Aggregate `eval_feedback.suggestions` across every grading payload.
+
+    Walks every `rollouts.jsonl` and `test_rollouts` row, harvests the
+    suggestions from each run's grading block, then returns a list of
+    `{"assertion", "reason_examples", "count"}` rows ordered by descending
+    frequency. Helps the operator iterate on their assertions.
+    """
+    bucket: dict[str, dict] = {}
+
+    def harvest(grading: dict | None) -> None:
+        if not isinstance(grading, dict):
+            return
+        feedback = grading.get("eval_feedback") or {}
+        for item in feedback.get("suggestions") or []:
+            if not isinstance(item, dict):
+                continue
+            assertion = (item.get("assertion") or "").strip()
+            reason = (item.get("reason") or "").strip()
+            if not assertion:
+                continue
+            entry = bucket.setdefault(assertion, {
+                "assertion": assertion,
+                "count": 0,
+                "reason_examples": [],
+            })
+            entry["count"] += 1
+            if reason and reason not in entry["reason_examples"]:
+                # Keep at most three distinct reasons per assertion so the
+                # report stays readable.
+                if len(entry["reason_examples"]) < 3:
+                    entry["reason_examples"].append(reason)
+
+    def walk_rows(rows: list[dict]) -> None:
+        for row in rows:
+            for run in row.get("runs") or []:
+                harvest(run.get("grading"))
+            # Fall back to a row-level grading block when the runs[] payload
+            # is absent (e.g. legacy rows from before this change).
+            if not row.get("runs"):
+                harvest(row.get("grading"))
+
+    # Sweep every per-step rollouts.jsonl.
+    for path in sorted(output_dir.glob("epoch-*/step-*/rollouts.jsonl")):
+        try:
+            walk_rows(load_jsonl(path))
+        except Exception as exc:  # noqa: BLE001
+            log(f"  [warn] could not scan {path}: {exc}")
+    # And the final test rollouts.
+    walk_rows(test_rollouts)
+
+    ranked = sorted(bucket.values(), key=lambda x: (-x["count"], x["assertion"]))
+    return ranked
 
 
 def write_optimization_report(
@@ -1042,6 +1268,7 @@ def write_optimization_report(
     best_score: float | None,
     schedule_table: list[dict],
     approx_tokens_used: int,
+    assertion_critique: list[dict] | None = None,
 ) -> None:
     rejected_count = 0
     if rejected_buffer_path.exists():
@@ -1091,6 +1318,28 @@ def write_optimization_report(
             content_preview = (edit.get("content") or "")[:200].replace("\n", " ")
             lines.append(f"- **{op}** target=`{target}` content=`{content_preview}`")
 
+    # Only emitted by the assertions verifier so the default report stays
+    # byte-equivalent to the pre-change output.
+    if assertion_critique:
+        lines += [
+            "",
+            "## Assertion critique",
+            "",
+            "Aggregated from `eval_feedback.suggestions` across every grading "
+            "payload in this run. Ranked by frequency, deduplicated by "
+            "assertion text. Use this to iterate on the task list.",
+            "",
+            "| Count | Assertion | Sample reasons |",
+            "|-------|-----------|----------------|",
+        ]
+        for entry in assertion_critique[:50]:
+            assertion = entry["assertion"].replace("|", "\\|")[:120]
+            reasons = "; ".join(
+                r.replace("|", "\\|")[:100]
+                for r in entry.get("reason_examples", [])
+            )
+            lines.append(f"| {entry['count']} | {assertion} | {reasons} |")
+
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -1115,7 +1364,14 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--optimizer-cmd", default="claude -p --model claude-opus-4-7")
     p.add_argument("--target-cmd", default="claude -p --model claude-haiku-4-5-20251001")
     p.add_argument("--verifier", default="llm-judge",
-                   help="'exact-match', 'llm-judge', or a path to a script")
+                   help="'exact-match', 'llm-judge', 'assertions', or a path "
+                        "to a script. The 'assertions' verifier requires each "
+                        "task to carry an 'assertions: [\"...\"]' list and "
+                        "uses prompts/grader.md.")
+    p.add_argument("--runs-per-task", type=int, default=1,
+                   help="Execute each task this many times per rollout phase. "
+                        "Score is the mean across runs with stddev recorded "
+                        "(default: 1)")
     p.add_argument("--output-dir", default="./skillopt-runs/run-001")
     p.add_argument("--seed", type=int, default=DEFAULT_SEED)
     p.add_argument("--resume", action="store_true",

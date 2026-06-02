@@ -34,6 +34,9 @@ files contain) and `./skill-optimization.md` (why each gate exists).
 7. Confirm no aborted step left an orphan `candidate.md` newer than
    `current_skill.md`. If so, the run state is inconsistent — re-run with
    `--resume` until clean.
+8. If `runs_per_task > 1`, check per-task `score_stddev` in
+   `rollouts.jsonl` is reasonable. High stddev means unstable scoring;
+   gate decisions made on noisy means may be spurious.
 
 ## Reviewing best_skill.md
 
@@ -81,6 +84,23 @@ files contain) and `./skill-optimization.md` (why each gate exists).
 - No two accepted edits should be semantic duplicates. If the optimiser
   keeps re-discovering the same lesson, the previous slow-update missed
   it.
+
+## Reviewing per-task scores and variance
+
+- For `runs_per_task > 1` runs, scan `score_stddev` per task across the
+  final epoch's `rollouts.jsonl`. Flag any task where `score_stddev > 0.2`
+  on the 0..1 scale — that task contributes noise to every gate decision
+  it touches.
+- A cluster of high-stddev tasks in the selection split means
+  `decision.json` deltas are within noise. Re-run the gate with a higher
+  `--runs-per-task` or remove the offenders from selection.
+- If `score_min` and `score_max` are at the extremes (0 and 1) for the
+  same task across runs, the verifier is bimodal on that input — either
+  the prompt is ambiguous or the target model is borderline. Fix the
+  task before the next training cycle.
+- Compare per-task `score_mean` to the legacy `score` field. They should
+  match by definition; mismatch means a downstream consumer stripped a
+  field or a pre-v3.5 rollout is mixed into a v3.5 dataset.
 
 ## Reviewing rejected_buffer.json
 
@@ -133,6 +153,25 @@ files contain) and `./skill-optimization.md` (why each gate exists).
   CLI billing output separately — this field is for trend comparison
   across runs, not for finance.
 
+## Reviewing assertion critique (assertions verifier only)
+
+- Present only when `optimization_report.md` contains an
+  `## Assertion critique` block (verifier was `assertions`). Skip
+  otherwise.
+- Read the ranked list. Assertions flagged by the grader as ambiguous,
+  redundant, or unverifiable are candidates to rewrite before the next
+  training run — the grader is reporting that the assertion, not the
+  output, is the problem.
+- A long tail of unique low-frequency complaints is noise; a short head
+  of high-frequency complaints is signal. Rewrite the head before
+  shipping a follow-up run.
+- Cross-reference against `tasks.jsonl`. If an assertion appears in many
+  tasks and is flagged in most of them, the assertion text itself needs
+  work — fix it once at the task-set level.
+- An empty critique block on a verifier-`assertions` run means the grader
+  was satisfied with the assertion set. Confirm by sampling three random
+  task rollouts; rubber-stamp critiques are a verifier failure mode.
+
 ## Reviewing meta_skill.json
 
 - Content should be actionable optimiser guidance — heuristics like "when
@@ -173,6 +212,30 @@ files contain) and `./skill-optimization.md` (why each gate exists).
   aborted mid-flight; either resume or discard.
 - `tokens_best > 2 * tokens_initial` with `test_delta < 0.05`. The skill
   ballooned for a marginal gain — token-cost-per-point is unacceptable.
+- Blind comparator gives `a_wins >= b_wins` despite SkillOpt accepting
+  edits. The gate's verifier may be self-confirming. Investigate before
+  shipping.
+
+## Blind comparison verdict (if a blind_comparator run exists)
+
+- Verdict alignment. `comparison_report.json` must show `b_wins > a_wins`
+  with skill_a as `initial_skill.md` and skill_b as `best_skill.md`. A
+  reversed verdict contradicts SkillOpt's claim and blocks shipping.
+- Confidence breakdown. A majority of verdicts in `low` confidence means
+  the difference between skills is subtle; treat the win margin as soft
+  and re-run with more tasks before declaring victory.
+- Tie rate. `ties / task_count > 0.4` means the skill change made no
+  observable difference on most tasks. Either the optimisation was
+  cosmetic or the task set does not exercise the affected behaviour.
+- Per-task losses. Walk `task-{id}/verdict.json` for cases where the best
+  skill lost decisively (`winner` against b, `confidence: high`). Read
+  the two outputs and the slow-update content side by side — these are
+  regressions the gate missed.
+- Label randomisation. Confirm `randomise_labels: true` in
+  `comparison_report.json`. A non-randomised run lets order bias
+  contaminate the verdict.
+- Seed recorded. The `seed` field must be non-null and logged with the
+  run command. Without it the comparator is not reproducible.
 
 ## Green-light decision
 
