@@ -3,8 +3,8 @@
   | Bridges (CL/Loss) | Unification Rationale | Notes
 ```
 
-**Example headers (illustrative, not canonical):**  
-`OMG BPMN 2.0 (2011) | W3C PROV‑O (2013) | ITIL 4 (2020) | W3C SOSA/SSN (2017) | OMG Essence (Language, 2023)`  
+**Example headers (illustrative, not canonical):**
+`OMG BPMN 2.0 (2011) | W3C PROV‑O (2013) | ITIL 4 (2020) | W3C SOSA/SSN (2017) | OMG Essence (Language, 2023)`
 _(Use the actual Contexts from your F.1 cut; always include the edition.)_
 
 **Layout B — Base‑concept pivot**

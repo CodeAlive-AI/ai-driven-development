@@ -6,7 +6,7 @@
 
 *with `requiredRoles` substitution, SoD (`⊥`), and bundle (`⊗`) hooks*
 
-**Builds on:** A.1.1 **`U.BoundedContext`**, A.2 **Role Taxonomy**.  
+**Builds on:** A.1.1 **`U.BoundedContext`**, A.2 **Role Taxonomy**.
 **Coordinates with:** A.2.1 **`U.RoleAssignment`**, A.15 **Role–Method–Work Alignment**.
 
 ### A.2.7:1 - Problem frame
@@ -25,7 +25,7 @@
 * No mereology; role algebra does not describe part‑of or structure membership.
 * No capability model; intrinsic ability evidence lives in `U.Capability` and related patterns.
 
-**Disambiguation.** Do not confuse role specialization `≤` with kind subsumption `⊑` (Kind‑CAL).  
+**Disambiguation.** Do not confuse role specialization `≤` with kind subsumption `⊑` (Kind‑CAL).
 `≤` is **requirement substitution** between role *types* in one Context; `⊑` is **typing** between kinds.
 
 ### A.2.7:2 - Solution (the three operators)
@@ -36,7 +36,7 @@ Role algebra relates **role types** inside **one** `U.BoundedContext`. It is **n
 
 * **Notation:** `RoleS ≤ RoleG`
 * **Semantics (normative):** For any `U.RoleAssignment` with `role = RoleS` in this Context, the holder **also satisfies** requirements for `RoleG` in this Context.
-* **Use:** Stable expertise ladders; privilege inheritance; “junior→senior” substitution.
+* **Use:** Stable expertise-order relations, privilege inheritance, and “junior→senior” substitution.
 * **CC‑ALG‑1.** Engines that check `requiredRoles` **MUST** treat `≤` as admissible substitution.
 
 #### A.2.7:2.2 - Incompatibility (conceptual role incompatibility)
@@ -54,7 +54,7 @@ Role algebra relates **role types** inside **one** `U.BoundedContext`. It is **n
 * **CC‑ALG‑3.** Engines that check `requires: [RoleC]` **MUST** expand to conjunctive checks.
 
 > **Didactic guardrails.**
-> Use `≤` for lasting ladders, `⊥` for critical safety/governance, `⊗` for frequent conjunctions. Prefer listing multiple `requiredRoles` on Method steps to avoid ornate lattices.
+> Use `≤` for lasting role-order relations, `⊥` for critical safety/governance, `⊗` for frequent conjunctions. Prefer listing multiple `requiredRoles` on Method steps to avoid ornate lattices.
 
 ### A.2.7:3 - Relations
 

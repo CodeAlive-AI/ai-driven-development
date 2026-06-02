@@ -38,7 +38,7 @@ Think of a **Role** as a **mask**, and the **RSG** as the **traffic lights for t
 * **RSG.State.** Intensional **named place**. Properties:
 
   * `enactable ∈ {true,false}` — whether being in this state authorizes enactment of steps that require this role.
-  * `initial?`, `terminal?` — optional markers for lifecycle reasoning.
+  * `initial?`, `terminal?` — optional markers for state-reachability reasoning.
 * **RSG.Transition.** Edge `state_i → state_j` with **Guard** (predicate over RCS characteristics and/or contextual events such as `U.SpeechAct`, `U.Observation`, `U.Evaluation` results).
 * **RCS (Role Characterisation Space).** The **characteristic bundle** that characterises this role in this Context (e.g., *CalibrationAge*, *AuthorizationScope*, *FatigueIndex*, *IndependenceFlag*, *EvidenceFreshness*). *(Defined in A.2 Role Taxonomy / RoleDescription.)*
 * **State Checklist (description).** A **RoleDescription** component that enumerates **criteria** to test whether a holder can legitimately be treated as **in** a given state for a **Window**. *(Description, not the state itself.)*
@@ -53,11 +53,11 @@ Think of a **Role** as a **mask**, and the **RSG** as the **traffic lights for t
 
 ### A.2.5:5 - What an RSG is **not** (guardrails)
 
-* **Not a workflow.** RSG transitions do **not** encode task order; they encode **eligibility changes** of the *role*.
+* **Not a task-order description.** RSG transitions do **not** encode method order; they encode **eligibility changes** of the *role*.
 * **Not a capability list.** RSG is **authorization/readiness over time**, distinct from `U.Capability` (ability).
 * **Not a global status set.** RSG lives **inside one Context**; the label *Ready* in another Context is **a different state** unless bridged (F.9).
 * **Not a log.** RSG is not a history. Histories are **StateAssertions** over Windows; **`U.Work`** is the record of enactments.
-* **Not a document lifecycle.** Epistemic role RSGs can *look like* document lifecycles, but they remain **role‑status graphs**; the **carrier** lifecycle stays separate (A.7, `U.Carrier`).
+* **Not a document-state sequence.** Epistemic role RSGs can *look like* document-state sequences, but they remain **role‑status graphs**; carrier history and carrier replacement stay separate (A.7, `U.Carrier`).
 
 
 ### A.2.5:6 - Invariants (preview)
@@ -80,7 +80,7 @@ Think of a **Role** as a **mask**, and the **RSG** as the **traffic lights for t
 
   * the role’s **RCS snapshot** at a **Window** (values on named characteristics; see A.2.3), and
   * **Context events** (e.g., presence of a `U.SpeechAct`, freshness of `U.Observation`, validity of a prior `U.Evaluation`).
-* **`init? : S → {true,false}`** — optionally marks **initial** state(s). (Useful for lifecycles; not required for gating.)
+* **`init? : S → {true,false}`** — optionally marks **initial** state(s). (Useful for state-sequence descriptions; not required for gating.)
 
 **Naming discipline (RSG‑N1…N3).**
 
@@ -207,9 +207,9 @@ To keep RSGs **operational** but **not procedural**, guards draw on **observable
 
 **Rules (RSG‑G4…G6).**
 
-* **RSG‑G4 (Observable only).** Each guard **MUST** be checkable from **observable artefacts** (observations, work logs, speech acts, evaluations) or present RCS values.
+* **RSG‑G4 (Observable only).** Each guard **MUST** be checkable from **observable records** (observations, work logs, speech acts, evaluations) or present RCS values.
 * **RSG‑G5 (Context‑local semantics).** Guard semantics are **scoped to Context**; Cross‑context reuse requires a Bridge (§14 in Part 1/4, F.9).
-* **RSG‑G6 (Didactic sparseness).** Prefer **few, stable guards** over many brittle micro‑conditions. If a guard encodes **task order**, you are drifting into workflow; refactor back to eligibility.
+* **RSG‑G6 (Didactic sparseness).** Prefer **few, stable guards** over many brittle micro‑conditions. If a guard encodes **task order**, you are drifting into method-order description; refactor back to eligibility.
 
 Allowed guard evidences include:
 * Observation facts (measurements/metrics),
@@ -366,11 +366,11 @@ Keep each RSG **teachable on one screen**. Use the following **notation‑neutra
 
 ```
 RSG for: <RoleName>   Context: <ContextName/Edition>
-RCS characteristics (gist): <characteristic1>, <characteristic2>, … 
+RCS characteristics (gist): <characteristic1>, <characteristic2>, …
 States (◉ = enactable):
   - [◉] <StateName> — checklist gist; typical admission/maintenance/exit
-  - [  ] <StateName> — … 
-  - … 
+  - [  ] <StateName> — …
+  - …
 Green‑Gate: step requiring <RoleName> is enactable iff holder asserts any ◉ state at Window.
 Role algebra hooks: specialization (≤ … ), incompatibility (⊥ … ), bundles (⊗ … ).
 ```
@@ -394,7 +394,7 @@ R' state        π(state in R)   entailment note (why Checklist_R' ⇒ Checklist
 -----------     -------------    -----------------------------------------------
 <Ready+>        Ready            adds stricter fatigue & independence thresholds
 <Authorized+>   Authorized       requires same approval + extra duty segregation
-… 
+…
 ```
 
 #### A.2.5:13.4 - SoD focus (⊥) — enactable pairs
@@ -406,7 +406,7 @@ Incompatibility ⊥ (applies when both sides enactable at same Window):
 Rationale: <one‑line reason>
 ```
 
-> **Didactic cue.** If your “template” spills beyond a screen, you’re drifting into **workflow**. Pull back to **eligibility** (RSG) and **recognition** (checklists).
+> **Didactic cue.** If your “template” spills beyond a screen, you’re drifting into **method-order description**. Pull back to **eligibility** (RSG) and **recognition** (checklists).
 
 
 ### A.2.5:14 - Cross‑context adjustments (via Bridges, not imports)
@@ -450,7 +450,7 @@ When you define or revise an RSG, check these **concept‑level** rules. They ar
 
 **CC‑RSG‑03 (Observable criteria).** Every checklist item must be **observable** (Observation, Work record, SpeechAct, or derived Evaluation). No opinions.
 
-**CC‑RSG‑04 (Guard discipline).** Guards **gate change**, checklists **recognise state**. Don’t smuggle **task order** into guards; workflow lives elsewhere (A.15).
+**CC‑RSG‑04 (Guard discipline).** Guards **gate change**, checklists **recognise state**. Don’t smuggle **task order** into guards; task order belongs to `U.MethodDescription` and A.15 work alignment.
 
 **CC‑RSG‑05 (Refinement map).** If you declare `R' ≤ R`, provide a **π‑map** and ensure **entailment** (RSG‑R1). Specialist states may be **stricter**, never **weaker**.
 
@@ -582,7 +582,7 @@ Use when **adding/removing states**, **changing criteria**, or **bridging** acro
 
 | Failure            | Symptom                               | Why it hurts                       | Quick remedy                                                              |
 | ------------------ | ------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------- |
-| **Workflow creep** | Guards encode task order              | RSG becomes a hidden workflow model | Move ordering to `MethodDescription`; keep guards as **eligibility** only |
+| **Workflow creep** | Guards encode task order              | RSG becomes a hidden method-order model | Move ordering to `MethodDescription`; keep guards as **eligibility** only |
 | **Vague criteria** | “experienced”, “mature” in checklists | Non‑decidable Green‑Gate           | Replace with observable proxies (hours, exam score, age thresholds)       |
 | **Global states**  | “Ready” reused across contexts        | Meaning leakage                    | Qualify by `(Role, Context)`; use Bridges for Cross‑context talk             |
 | **Over‑broad ⊥**   | Many false conflicts                  | Blocks delivery                    | Make ⊥ **state‑aware**; restrict to enactable pairs                       |
@@ -599,7 +599,7 @@ Use when **adding/removing states**, **changing criteria**, or **bridging** acro
 >
 > Different Contexts may use the same role labels. We never assume global meaning; we relate Contexts with **Bridges** that map states and record losses.
 >
-> Keep each RSG **on one screen**, with **observable** checklists. If you’re writing task order, you’ve slipped into workflow—move it to the Method. If you’re writing opinions, convert them into **observables** or drop them. That’s the whole trick.”\*
+> Keep each RSG **on one screen**, with **observable** checklists. If you’re writing task order, you’ve slipped into method-order description—move it to `U.MethodDescription`. If you’re writing opinions, convert them into **observables** or drop them. That’s the whole trick.”\*
 
 
 ### A.2.5:21 - Relations (quick pointers)

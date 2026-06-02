@@ -1,5 +1,7 @@
 ## A.3.3 - `U.Dynamics`
 
+> **Status:** Stable
+
 ### A.3.3:1 - Context
 
 Teams need one place to say **how a thing changes**. Physicists call this “dynamics” (equations of motion, state‑transition maps). In IT and enterprise change, we often talk about **evolution of characteristics** (latency, cost, reliability, compliance, architectural fitness) across time. In knowledge work, **KD‑CAL** (knowledge dynamics) reasons about how the **status of claims** shifts as evidence arrives. All these are *the same modeling need*: a context‑local description of **state space** and **allowed transitions**.
@@ -7,7 +9,7 @@ Teams need one place to say **how a thing changes**. Physicists call this “dyn
 FPF already separates:
 
 * **what a holon is** (structure, PBS/SBS),
-* **how we act** (Method/MethodDescription, Work),
+* **how we act** (Method or MethodDescription, Work),
 * **what we promise** (Service).
 
 What is missing without `U.Dynamics` is the **law of change**—the model that tells us how states evolve **with or without** our interventions.
@@ -16,7 +18,7 @@ What is missing without `U.Dynamics` is the **law of change**—the model that t
 
 **Lexical note.** Terms like *process* and *thermodynamic process* are mapped by **L‑PROC**:
 
-* the **recipe** is `U.Method/MethodDescription`,
+* the **recipe** is `U.Method or U.MethodDescription`,
 * the **dated run** is `U.Work`,
 * the **law/trajectory model** is `U.Dynamics`.
 
@@ -24,7 +26,7 @@ What is missing without `U.Dynamics` is the **law of change**—the model that t
 
 Without a first‑class `U.Dynamics`, models suffer predictable failures:
 
-1. **Recipe = Law.** Teams put the *procedure* (Method/MethodDescription) where the *state law* should be, so simulations and predictions become impossible to compare with reality.
+1. **Recipe = Law.** Teams put the *procedure* (Method or MethodDescription) where the *state law* should be, so simulations and predictions become impossible to compare with reality.
 2. **Run = Law.** Logs of Work are mistaken for dynamics; past events are treated as if they defined what *must* happen.
 3. **No state space.** Discussions jump between metrics (latency! throughput!) without an explicit **characteristic space** or invariants, so “improvements” cannot be reasoned about.
 4. **Domain lock‑in.** “Dynamics” is left to domain vocabularies (physics, control, finance), losing a trans‑disciplinary way to speak about change in a single kernel.
@@ -43,7 +45,7 @@ Without a first‑class `U.Dynamics`, models suffer predictable failures:
 ### A.3.3:4 - Solution — The unified concept `U.Dynamics`
 
 **Definition (normative).**
-Within a `U.BoundedContext`, **`U.Dynamics`** is an **`U.Episteme` that specifies a state space and a state‑transition law** (deterministic or stochastic, continuous/discrete/hybrid) for one or more holons, possibly under exogenous inputs and constraints. It **does not** prescribe what an agent should do (that is `U.Method/MethodDescription`) and **is not** the dated evolution itself (that is `U.Work` evidence).
+Within a `U.BoundedContext`, **`U.Dynamics`** is an **`U.Episteme` that specifies a state space and a state‑transition law** (deterministic or stochastic, continuous/discrete/hybrid) for one or more holons, possibly under exogenous inputs and constraints. It **does not** prescribe what an agent should do (that is `U.Method or U.MethodDescription`) and **is not** the dated evolution itself (that is `U.Work` evidence).
 
 * **Type:** `U.Episteme` (design‑time model/law on a carrier).
 * **Orientation:** descriptive/predictive about **how states evolve**; can be used by Methods but remains separate from them.
@@ -72,7 +74,7 @@ U.Dynamics {
 
 #### A.3.3:4.2 - What `U.Dynamics` is **not**
 
-* **Not a Method/MethodDescription:** no imperative steps or prescriptions.
+* **Not a Method or MethodDescription:** no imperative steps or prescriptions.
 * **Not Work:** no timestamps/resources attached; evidence lives on `U.Work`.
 * **Not a Service:** no consumer promise; dynamics may underpin service SLOs but does not define the promise.
 * **Not PBS/SBS:** do not place dynamics inside structural BoMs.
@@ -106,20 +108,20 @@ If neither condition is satisfied, using prediction for gating is **forbidden**;
 | **Process control**           | Reactor: {Temperature, Concentration}   | Non‑linear ODE with disturbance term | Thermocouples, analyzers    | Will we overshoot? What control horizon keeps safety constraints? |
 | **Reliability/ops**           | Service platform: {MTBF, MTTR, Backlog} | Birth–death/queueing model           | Incident logs, uptime pings | Given load, what SLO is feasible?                                 |
 | **Evolutionary architecture** | System: {Latency, Cost, Coupling}       | Discrete‑time map per release        | Perf tests, bills           | If we change X, how does latency trend next 3 sprints?            |
-| **KD‑CAL (knowledge)**        | Claim: {Belief, Support}                | Bayesian update rule                 | Evidence artifacts          | How does confidence evolve as studies arrive?                     |
+| **KD‑CAL (knowledge)**        | Claim: {Belief, Support}                | Bayesian update rule                 | Evidence carriers          | How does confidence evolve as studies arrive?                     |
 
 **Key takeaway:** one kernel object captures **trajectories in a characteristic space**, from thermodynamics to software quality and knowledge confidence.
 
 ### A.3.3:8 - Conformance Checklist (normative)
 
 **CC‑A3.3‑1 (Type).**
-`U.Dynamics` **IS** an `U.Episteme` (design‑time model/law on a carrier). It is **not** a `U.Method/MethodDescription`, **not** `U.Work`, and **not** a structural part of any PBS/SBS.
+`U.Dynamics` **IS** an `U.Episteme` (design‑time model/law on a carrier). It is **not** a `U.Method or U.MethodDescription`, **not** `U.Work`, and **not** a structural part of any PBS/SBS.
 
 **CC‑A3.3‑2 (Context).**
 Every `U.Dynamics` **MUST** be declared **inside** a `U.BoundedContext`. Units, characteristic names, admissible regions, and time base are **local to the context**; cross‑context reuse requires a Bridge (`U.Alignment`).
 
 **CC‑A3.3‑3 (Explicit state space).**
-`stateSpace` **MUST** enumerate characteristics with units/scales (continuous/discrete/ordinal) and any topology/geometry needed for trajectories. Do **not** refer to informal “axes”.
+`stateSpace` **MUST** enumerate characteristics with units and scales (continuous, discrete, or ordinal) and any topology/geometry needed for trajectories. Do **not** refer to informal “axes”.
 
 **CC‑A3.3‑4 (Transition law).**
 `transitionLaw` **MUST** specify a state‑transition relation/map/kernel suitable for the declared time base (`continuous|discrete|hybrid`) and stochasticity (deterministic or with a likelihood/noise model).
@@ -131,7 +133,7 @@ If evidence from `U.Work` is to be checked against the law, an `observation` map
 If safety/envelope constraints apply, they **MUST** be declared under `constraints`. Operating region, approximations, version, and `timespan` **SHOULD** be stated under `validity`.
 
 **CC‑A3.3‑7 (Separation from Method).**
-A `U.Dynamics` **SHALL NOT** prescribe imperative steps or responsibilities. Planning/control algorithms that *use* the dynamics belong to `U.Method/MethodDescription`.
+A `U.Dynamics` **SHALL NOT** prescribe imperative steps or responsibilities. Planning/control algorithms that *use* the dynamics belong to `U.Method or U.MethodDescription`.
 
 **CC‑A3.3‑8 (No actuals on Dynamics).**
 Resource/time **actuals** and telemetry **MUST** attach to `U.Work`. Calibration outcomes produce **new versions** of `U.Dynamics`; the law object itself carries no run‑time logs.
@@ -143,7 +145,7 @@ If state is aggregated across parts or time, the aggregation policy (`Γ_time`, 
 Ambiguous uses of *process/processual* (laws vs. runs vs. recipes) **MUST** be resolved per **L‑PROC**/**L‑ACT**:
 
 * law → `U.Dynamics`,
-* recipe → `U.Method/MethodDescription`,
+* recipe → `U.Method or U.MethodDescription`,
 * run → `U.Work`.
 
 **CC‑A3.3‑11 (Link to Services—optional).**
@@ -157,10 +159,10 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 #### A.3.3:9.1 - Derived evidence
 
 * **`trace(W, D)` → Sequence\<t, y>:**
-  derive an ordered sequence of observed values `y` at times `t` by applying `obs_D` to Work/telemetry associated with `W`. (Not a kernel type; a derived artifact for analysis/assurance.)
+  derive an ordered sequence of observed values `y` at times `t` by applying `obs_D` to Work/telemetry associated with `W`. (Not a kernel type; a derived analysis or assurance value.)
 
 * **`inputs(W)` → Series:**
-  exogenous inputs/control signals recovered from Work metadata if the model declares `inputs`.
+  exogenous inputs and control signals recovered from Work metadata if the model declares `inputs`.
 
 * **`initialState(W, D)` → x₀:**
   the assumed/estimated state at trace start (from Work context or a stated estimation rule).
@@ -198,7 +200,7 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 ### A.3.3:10 - Anti‑patterns (and the right move)
 
 * **“Dynamics = procedure.”**
-  Control recipes/step graphs belong to `Method/MethodDescription`. Keep the law in `U.Dynamics`.
+  Control recipes/step graphs belong to `Method or MethodDescription`. Keep the law in `U.Dynamics`.
 
 * **“Telemetry = dynamics.”**
   Logs are `Work` evidence. Build `trace(Work, D)` and compare to the law; do not store logs inside the law.
@@ -220,7 +222,7 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 
 1. **Name the changing things.** Pick 3–7 **characteristics** that matter (physical or architectural). Declare `stateSpace` with units and ranges.
 2. **Write the law you already use.** Even if it is a queueing approximation or a simple ARIMA—put it under `transitionLaw` and state assumptions under `validity`.
-3. **Separate recipe from law.** Move control procedures to `Method/MethodDescription`; keep forecasting/plant equations in `U.Dynamics`.
+3. **Separate recipe from law.** Move control procedures to `Method or MethodDescription`; keep forecasting/plant equations in `U.Dynamics`.
 4. **Wire evidence.** Ensure production `Work` emits the measurements needed by `observation`. Build `trace(Work, D)`.
 5. **Start conformance.** Define a simple `tol` and compute `fits(D, trace, tol)` weekly. Raise issues on drift; version the model when calibrating.
 6. **Link to promises (optional).** If SLOs depend on the law, reference `U.Dynamics` from `U.PromiseContent` and derive targets transparently.
@@ -228,6 +230,13 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 
 
 ### A.3.3:12 - Relations
+
+**C.27 temporal-claim relation.**
+
+- C.27 may flag: a claim whose downstream use depends on a reusable transition law, prediction, simulation, calibrated control, or formal model.
+- This pattern keeps: state space, transition law, observation/model constraints, simulation, prediction, calibrated control, and validity discipline.
+- Non-admissible use: a `Dyn2TemporalClaimAdequacyCard` or Dyn2 classification is not a law of change, and `dynOrder` is not a property of the state space or transition law.
+- Exit: if the answer requires a reusable law, prediction, simulation, or calibrated control model, the claim belongs with `U.Dynamics`; C.27 only cites that pattern relation and keeps the temporal-claim adequacy question.
 
 * **Builds on:**
   `A.1.1 U.BoundedContext` (local meaning/units),
@@ -255,5 +264,8 @@ Let `D` be a `U.Dynamics` in context `C`. Let `W` be a set of `U.Work` records p
 
 **Memory hook:** **Method decides - Dynamics predicts - Work reveals.**
 
-### A.3.3:End
+### A.3.3:12a - C.29 MLA relation
 
+> If `transitionLaw` or `observation` uses accepted local dynamics, Markov kernels, ODEs, simulations, or accepted domain theory, stay in `A.3.3`; no MLA output is needed unless a separate lens-transfer, publication, assurance, bridge, prediction, or reusable-explanation use is being claimed. If `transitionLaw` or `observation` depends on a contested, cross-domain, learned, or speculative mathematical lens, add the applicable `C.29` output for that stated use. That output states preserved dynamic structure, lost structure, validity or scale window, rival lens when live, `LensSupportPosture`, and stop condition; then return to `A.3.3` for state space, transition law, observation, constraints, and calibration semantics.
+
+### A.3.3:End

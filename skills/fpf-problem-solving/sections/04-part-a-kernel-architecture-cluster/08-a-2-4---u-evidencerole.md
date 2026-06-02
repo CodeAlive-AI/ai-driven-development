@@ -1,10 +1,10 @@
 ## A.2.4 - `U.EvidenceRole`
 
-> *This pattern defines how a knowledge artefact (“episteme”) serves as **evidence** for a specific claim or theory **inside a bounded context**. It is a **non-behavioural** role enacted via `U.RoleAssignment`; the evidence-role assignment **must** declare the **target claim**, the **claim-scope**, and a **timespan of relevance**. Evidence is a classificatory status of an episteme; it is not an action and it is not an assignment of an actor.*
+> *This pattern defines how a `U.Episteme` serves as **evidence** for a specific claim or theory **inside a bounded context**. It is a **non-behavioural** role enacted via `U.RoleAssignment`; the evidence-role assignment **must** declare the **target claim**, the **claim-scope**, and a **timespan of relevance**. Evidence is a classificatory status of an episteme; it is not an action and it is not an assignment of an actor.*
 
 ### A.2.4:1 - Context and intent
 
-FPF separates **what exists** (holons and their kinds) from **what acts** (systems under roles performing work) and from **what is known** (epistemes carried on symbols). Roles are contextual masks that holons may wear; role meanings are **local to a `U.BoundedContext`**. In this setting, we need a kernel‑level way to say that *this* episteme **counts as evidence** about *that* claim, **here**, and **for this period**, without confusing evidence with services, methods, or work. 
+FPF separates **what exists** (holons and their kinds) from **what acts** (systems under roles performing work) and from **what is known** (epistemes carried on symbols). Roles are contextual masks that holons may wear; role meanings are **local to a `U.BoundedContext`**. In this setting, we need a kernel‑level way to say that *this* episteme **counts as evidence** about *that* claim, **here**, and **for this period**, without confusing evidence with services, methods, or work.
 
 **Intent.** Provide one uniform, discipline‑neutral role by which an episteme can be assigned as evidence, while keeping:
 
@@ -40,7 +40,7 @@ The role is enacted by a standard `U.RoleAssignment` that connects:
 
 ```
 RoleAssigning {
-  holder  : U.Episteme,        // the artefact: paper, proof, dataset, report…
+  holder  : U.Episteme,        // paper, proof, dataset, report, or other episteme
   role    : U.EvidenceRole,    // a context-defined role with normative properties
   context : U.BoundedContext   // where the role definition is valid
   timespan?: Interval          // optional: relevance window for this specific assignment
@@ -50,7 +50,7 @@ RoleAssigning {
 The **normative properties** of the role (e.g., `claimRef`, `claimScope`, `polarity`, `weightModelRef`) are set in the **role’s definition** in the given `U.BoundedContext`, not in the evidence-role assignment.
 `U.RoleAssignment` carries only the linkage between a concrete episteme and a role already defined and attributed in that context.
 
-> **Non-behavioural guard.** The holder is an episteme; any actions that produced it are `U.Work` performed by systems. Evidence classifies an artefact’s evidential status; it does not itself enact behaviour.
+> **Non-behavioural guard.** The holder is an episteme; any actions that produced it are `U.Work` performed by systems. Evidence classifies an episteme’s evidential status; it does not itself enact behaviour.
 
 **Minimal readable grammar (informative).**
 `<Episteme>#<EvidenceRole>:<Context>` — where `<EvidenceRole>` in `<Context>` already normatively specifies `polarity Claim / Scope [weight]`.
@@ -69,6 +69,25 @@ The **normative properties** of the role (e.g., `claimRef`, `claimScope`, `polar
 
 
 ### A.2.4:5 - Role family and specialisations
+#### A.2.4:5.3 - Causal evidence-role specialisations
+
+For causal-use support, `U.EvidenceRole` may receive these context-local specialisations as evidence-role terms:
+
+```text
+InterventionEvidenceRole
+RealizedCounterfactualSampleEvidenceRole
+IdentifiedCounterfactualEstimateEvidenceRole
+SimulationOnlyCounterfactualOutputRole
+```
+
+These are evidence-role specialisations, not new evidence-source authorities. `identifiedCounterfactualEstimateSupportBasis` and `realizedCounterfactualSampleSupportBasis` are both counterfactual support bases but are not the same support basis. `SimulationOnlyCounterfactualOutputRole` may support `simulationOnlyCounterfactualOutputBasis` and bounded model-supported use under `C.28`; it never becomes `interventionalActionSupportBasis` or `realizedCounterfactualSampleSupportBasis` by vocabulary, validation, or role relabeling alone.
+
+What changes in practice: an episteme holding `SimulationOnlyCounterfactualOutputRole` cannot be relabelled as `RealizedCounterfactualSampleEvidenceRole` just because the simulation mentions a counterfactual; the role assignment must preserve whether the support basis is observation, intervention, realized counterfactual sample, identified counterfactual estimate, or simulation-only output.
+
+The corresponding `CausalEvidenceSupportBasis` values are governed by `C.28`: `observationalAssociationSupportBasis`, `interventionalActionSupportBasis`, `realizedCounterfactualSampleSupportBasis`, `identifiedCounterfactualEstimateSupportBasis`, and `simulationOnlyCounterfactualOutputBasis`. `A.2.4` only classifies evidence roles held by epistemes; it does not mint a second causal support-basis value set.
+
+What this does not authorize: `A.2.4` does not decide the causal-use question, estimand, identification, or counterfactual sampling realizability; it preserves the evidence-role assignment and the authority-reference boundary so `C.28` and `B.3` can judge the causal-use claim without vocabulary laundering.
+
 
 `U.EvidenceRole` is a **role kind** refined by **specialisation** (no mereology of roles). The recommended, substrate‑neutral specialisations are:
 
@@ -90,7 +109,7 @@ The **normative properties** of the role (e.g., `claimRef`, `claimScope`, `polar
 * **`CalibrationEvidenceRole`** — evidence about the measurement chain (instrument validity), typically **constraining** claims.
 * **`BenchmarkEvidenceRole`** — standardised tasks or suites producing comparable scores.
 
-**Semantics.** Experimental roles require a **claim‑scope** and a **relevance timespan**. Their contribution to confidence is **graded** and may **decay**; the same artefact may carry multiple bindings for different claims or scopes (distinct role assignments).
+**Semantics.** Experimental roles require a **claim-scope** and a **relevance timespan**. Their contribution to confidence is **graded** and may **decay**; the same episteme may carry multiple bindings for different claims or scopes (distinct role assignments).
 
 > **Specialisation, not stacking.** Do not build chains like “transformer‑agent‑observer role.” A system enacts behavioural roles (e.g., `TransformerRole`) to **perform work**; an episteme enacts `U.EvidenceRole` to **classify** its evidential function. Keep enactment lines separate.
 
@@ -100,8 +119,8 @@ The **normative properties** of the role (e.g., `claimRef`, `claimScope`, `polar
 | --------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------- |
 | **Who acted and consumed resources**    | `U.System` with `U.RoleAssignment` performing `U.Work`           | Only systems act; work records resource deltas.                       |
 | **What was promised to a consumer**     | `U.PromiseContent` (promise with access and acceptance)              | A promise is not evidence; it is judged from work.                    |
-| **How work should be done or invoked**  | `U.Method` / `U.MethodDescription`                                   | Recipes and interfaces are not evidence.                              |
-| **What counts as evidence for a claim** | `U.Episteme` holding `U.EvidenceRole` via `U.RoleAssignment`     | Evidence is a status of an artefact relative to a claim in a context. |
+| **How work should be done, requested, or started** | `U.Method` / `U.MethodDescription`                                   | Recipes and interfaces are not evidence.                              |
+| **What counts as evidence for a claim** | `U.Episteme` holding `U.EvidenceRole` via `U.RoleAssignment`     | Evidence is a status of an episteme relative to a claim in a context. |
 | **Moving meaning across contexts**      | An explicit bridge/alignment pattern in the receiving context | Role meanings are context‑local by design.                            |
 
 ### A.2.4:7 - Core invariants (concept level)
@@ -112,25 +131,25 @@ The **normative properties** of the role (e.g., `claimRef`, `claimScope`, `polar
 4. **Claim-scope.** Every evidence-role assignment **must** declare an applicability scope; for the axiomatic line this can be the theory’s domain.
 5. **Timespan.** Every evidence-role assignment **must** declare a relevance interval. Axiomatic roles may be open-ended **for a fixed theory version**; experimental roles require finite or refreshable windows.  **Gating:** narrative only at **M-0**; explicit `timespan` & `decayClass` at **M-2**; version fence & `proofChecks` at **F-**.  # [M/F]
 6. **Non-self-evidence.** The provenance of experimental evidence-role assignments **must** trace to external `U.Work` performed by systems under roles; an episteme cannot “evidence itself.”
-7. **No mixing of stances.** Do not mix design‑time proof artefacts and run‑time traces in one provenance chain; relate them via separate bindings if needed.
+7. **No mixing of stances.** Do not mix design-time proof epistemes and run-time traces in one provenance chain; relate them via separate bindings if needed.
 8. **No role mereology.** Roles have **no parts**; refine by **specialisation** only. This prevents confusing “sub‑role” with “subsystem”.   **Profile note:** The constraint is universal (applies to **all profiles**).  # [all]
 
-**Minimal readable grammar (informative).**  
+**Minimal readable grammar (informative).**
 `<Episteme>#<EvidenceRole>:<Context>` — where `<EvidenceRole>` is **defined inside `<Context>`** with normative facets (`claimRef`, `claimScope`, `polarity`, optional `weightModelRef`, decay policy).
 
 **Examples (illustrative only):**
 
-*Cardio (empirical line)*  
-Role **definition** in `Cardio_2026`:  
-`ModelFitEvidenceRole` with  
-`claimRef = (β-blocker > placebo)`, `claimScope = adults 40–65`, `polarity = supports`, `weightModelRef = KD:SupportMeasure`.  
-**Binding:**  
+*Cardio (empirical line)*
+Role **definition** in `Cardio_2026`:
+`ModelFitEvidenceRole` with
+`claimRef = (β-blocker > placebo)`, `claimScope = adults 40–65`, `polarity = supports`, `weightModelRef = KD:SupportMeasure`.
+**Binding:**
 `Trial-R3.csv#ModelFitEvidenceRole:Cardio_2026`
 
-*Graph theory (formal line)*  
-Role **definition** in `GraphTheory`:  
-`AxiomaticProofRole` with `claimRef = Theorem-12`, `claimScope = all finite DAG`, `polarity = supports` (entails), fenced to `TheoryVersion = 3.1`.  
-**Binding:**  
+*Graph theory (formal line)*
+Role **definition** in `GraphTheory`:
+`AxiomaticProofRole` with `claimRef = Theorem-12`, `claimScope = all finite DAG`, `polarity = supports` (entails), fenced to `TheoryVersion = 3.1`.
+**Binding:**
 `Lemma-12.proof#AxiomaticProofRole:GraphTheory`
 
 ### A.2.4:8 - Facets and semantics (normative)
@@ -168,7 +187,7 @@ When the relevance window closes (`validUntil` reached), the evidence incurs **E
 
 Each `U.EvidenceRole` **MUST** anchor into the **Evidence–Provenance DAG** (A.10):
 
-* **Formal**: `verifiedBy` → proof artefact carrier(s), with optional `checkedBy` metadata for proof-checker runs.
+* **Formal**: `verifiedBy` -> proof publication carriers, with optional `checkedBy` metadata for proof-checker runs.
 * **Empirical**: `validatedBy` → data carriers from observed `U.Work` runs; `protocolRef` → `U.MethodDescription`; `fromWorkSet` → IDs of those runs.
 * SCR/RSCR anchors (A.10) are mandatory for all carriers.
 
@@ -176,7 +195,7 @@ Each `U.EvidenceRole` **MUST** anchor into the **Evidence–Provenance DAG** (A.
 
 #### A.2.4:8.4 - Contribution to assurance
 
-A `U.EvidenceRole` classifies an artefact; its contribution to the target claim’s assurance tuple ⟨F, G, R⟩ is computed in B.3 using:
+A `U.EvidenceRole` classifies an episteme; its contribution to the target claim’s assurance tuple ⟨F, G, R⟩ is computed in B.3 using:
 
 * **F (formality)** — lower-bounded by the least formal constituent in the provenance path.
 * **G (ClaimScope)** — limited to the claim scope; unsupported regions are dropped (WLNK).
@@ -204,40 +223,40 @@ If any element in the support chain is `postulative`, the aggregate `epistemicMo
 
 #### A.2.4:9.1 - Formal line — *Proof as evidence for a theorem*
 
-**Role definition (in `GraphTheory`)**  
-`AxiomaticProofRole`  
-- `claimRef = Theorem-12` (“Every finite acyclic graph admits a topological ordering”),  
-- `claimScope = all finite DAG`,  
-- `polarity = supports` (entails),  
-- `epistemicMode = formal`, `assuranceUse = VA`,  
+**Role definition (in `GraphTheory`)**
+`AxiomaticProofRole`
+- `claimRef = Theorem-12` (“Every finite acyclic graph admits a topological ordering”),
+- `claimScope = all finite DAG`,
+- `polarity = supports` (entails),
+- `epistemicMode = formal`, `assuranceUse = VA`,
 - fenced to `TheoryVersion = 3.1` (open-ended relevance as long as that version stands).
 
-**Role assignment(s)**  
+**Role assignment(s)**
 `Lemma-12.proof#AxiomaticProofRole:GraphTheory`
 
-**Provenance sketch**  
+**Provenance sketch**
 `verifiedBy → Carrier#Proof_p1` (machine-checked), `usedCarrier → Carrier#Def_graph`.
 
-**Effect on assurance (informative)**  
+**Effect on assurance (informative)**
 High **F** (machine-checked proof), **G** = “finite DAG”, **R** from proof-obligation integrity; potential CL penalty if an ontology bridge is used.
 
 ##### A.2.4:9.2 - Empirical line — *Sensor calibration as evidence for an accuracy claim*
 
-**Role definition (in `Cardio_2026`)**  
-`ModelFitEvidenceRole`  
-- `claimRef = “Sensor S achieves ±0.3 °C accuracy in [0,70] °C under lab conditions L”`,  
-- `claimScope = temperature [0,70] °C; humidity 30–50%; environment L`,  
-- `polarity = supports`,  
-- `epistemicMode = postulative`, `assuranceUse = LA`,  
+**Role definition (in `Cardio_2026`)**
+`ModelFitEvidenceRole`
+- `claimRef = “Sensor S achieves ±0.3 °C accuracy in [0,70] °C under lab conditions L”`,
+- `claimScope = temperature [0,70] °C; humidity 30–50%; environment L`,
+- `polarity = supports`,
+- `epistemicMode = postulative`, `assuranceUse = LA`,
 - `weightModelRef = KD:SupportMeasure`, `decayPolicy = annual recalibration`.
 
-**Role assignment(s)**  
+**Role assignment(s)**
 `Trial-R3.csv#ModelFitEvidenceRole:Cardio_2026`
 
-**Provenance sketch**  
+**Provenance sketch**
 `validatedBy → Carrier#Dataset_calib_v5`, `protocolRef → MethodDescription#ThermoCalibration`, `fromWorkSet → {cal_run_0502, cal_run_0503}`.
 
-**Effect on assurance (informative)**  
+**Effect on assurance (informative)**
 **F** from formalised procedure, **G** = measured envelope, **R** from replication and CL on unit mapping; **R** decays after the policy window unless refreshed.
 
 ### A.2.4:10 - Conformance checklist (normative)
@@ -325,7 +344,7 @@ These operators extend E.6.1 citation graph capabilities for evidence analysis i
 A.2 `U.Role`, A.2.1 `U.RoleAssignment` (role as mask, binding as assignment), A.10 Evidence Graph Referring (EPV-DAG), B.3 Trust & Assurance Calculus.
 
 **Coordinates with:**
-A.3.2 `U.MethodDescription` (protocols, proof obligations), E.6.1 Epistemic Roles via `U.RoleAssignment` (didactic gateway).
+A.3.2 `U.MethodDescription` (protocols, proof obligations), E.6.1 Epistemic Roles via `U.RoleAssignment` (didactic gateway), `C.28` when an evidence role is used to support causal-use claims and must stay distinct as observational, interventional, realized counterfactual sample, identified counterfactual estimate, or simulation-only counterfactual output.
 
 **Informs:**
 KD-CAL (knowledge dynamics, assurance cases), Norm-CAL (policy claims with evidence), planned `U.PromiseFulfillmentEvaluation` (services judged from work and reported as epistemes with evidence bindings).
@@ -345,7 +364,7 @@ These are short reminders for non-specialist readers to apply `U.EvidenceRole` c
 
 * **Evidence ≠ Work** — Work is *what happened*; Evidence is a *documented argument* (episteme) about a claim in a context.
 * **Local, not global** — Evidence links *in a room* (context). Outside that room, you need a bridge (`U.Alignment`).
-* **Two lines of trust** — Formal line: proof artefacts checked in a declared theory version. Empirical line: observations from Work under a declared method. Both are epistemes wearing `U.EvidenceRole`.
+* **Two lines of trust** — Formal line: proof carriers checked in a declared theory version. Empirical line: observations from Work under a declared method. Both are epistemes wearing `U.EvidenceRole`.
 * **Services are promises; Work proves** — KPIs are measured from Work; service evaluations can be bound as evidence for policy claims.
 * **Specialise, don’t stack** — Use specialisations of `U.EvidenceRole` to refine meaning; never chain behavioural roles into evidence.
 
@@ -403,4 +422,5 @@ EvidenceRoleAssigning:
 10. **No role-of-role**: Is this role bound directly to an episteme without chaining behavioural roles?
 
 ### A.2.4:End
+
 

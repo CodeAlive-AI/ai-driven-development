@@ -24,7 +24,7 @@ Everything here is **free of implementation detail**; verification lives in Tool
 
 | Non‑Goal                      | Rationale / Pattern link                                                                                                                       |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Domain encyclopaedia**      | FPF hosts no physics constants or finance taxonomies; import such knowledge via Type & Role Calculus (`D‑0`).                                  |
+| **Domain encyclopaedia**      | FPF carries no physics constants or finance taxonomies; import such knowledge via Type & Role Calculus (`D‑0`).                                  |
 | **Single mathematical dogma** | Patterns are expressible in multiple formalisms; **Notational Independence** (`E.5.2`) forbids locking into OWL, JSON‑LD, or category theory. |
 | **Prescribed tool stack**     | Implementation choices belong to the **Tooling Reference**; the Core never cites CI pipelines or file formats (**DevOps Lexical Firewall `E.5.1`**). |
 | **Step‑by‑step tutorial**     | Pedagogical Companion carries worked examples and Intellect‑Stack exercises; the Core remains concise and normative.                           |

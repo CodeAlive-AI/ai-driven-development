@@ -9,9 +9,9 @@ A useful analogy is the distinction between an individual cook following a recip
 *   **A domain-specific methodology** (like Lean Startup or a specific scientific method) is like a **cookbook**: it provides excellent recipes for using those ingredients to create a specific dish, such as a software product or a research paper.
 *   **The First Principles Framework (FPF)** is the **architecture of the kitchen itself**—the system established by Auguste Escoffier as the *brigade de cuisine*.
 
-Escoffier did not invent the ingredients, nor did he create every recipe. He designed a **system** with defined roles (*Saucier, Pâtissier*), standardized techniques (*sauté, julienne*), and a clear workflow that could reliably produce a vast range of complex dishes to a consistently high standard. The architecture of the kitchen, not any single recipe, is what enables culinary excellence at scale.
+Escoffier did not invent the ingredients, nor did he create every recipe. He designed a **system** with defined roles (*Saucier, Pâtissier*), standardized techniques (*sauté, julienne*), and a clear coordination discipline that could reliably produce a vast range of complex dishes to a consistently high standard. The architecture of the kitchen, not any single recipe, is what enables culinary excellence at scale.
 
-FPF provides this same architectural layer for the process of thinking. It operationalizes these "obvious" ideas by giving them a formal place and a normative function within a larger, cohesive system.
+FPF provides this same architectural function for the process of thinking. It operationalizes these "obvious" ideas by giving them a formal place and a normative function within a larger, cohesive system.
 
 | **Culinary Architecture** | **First Principles Framework (FPF)** | **The Value of the Architecture** |
 | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ FPF's utility begins to scale exponentially when the problem itself crosses a **
 *   **Collaborative Complexity:** The need to align the mental models and coordinate the work of a diverse team, ensuring that a shared understanding is maintained without stifling individual contribution.
 *   **Temporal Complexity:** The need for a solution to live, adapt, and evolve over long periods, maintaining its conceptual integrity and remaining auditable for future generations of stakeholders.
 *   **Assurance Complexity:** The need to provide explicit, auditable, and often formal proof that a solution is safe, reliable, and fair, especially when the cost of failure is high.
-*   **Generative Complexity:** The need not to find a single correct answer, but to systematically explore a vast solution space, manage a portfolio of diverse options, and drive open-ended evolution.
+*   **Generative Complexity:** The need not to find a single correct answer, but to systematically explore a vast solution space, manage a declared set of diverse options, and drive open-ended evolution.
 
 An expert's intuition can find a single, excellent point on this multi-dimensional frontier. FPF provides the architectural discipline to navigate the entire frontier. It is the necessary scaffold for building solutions that are not only clever, but also composable, collaborative, evolvable, trustworthy, and perpetually creative at scale.
 

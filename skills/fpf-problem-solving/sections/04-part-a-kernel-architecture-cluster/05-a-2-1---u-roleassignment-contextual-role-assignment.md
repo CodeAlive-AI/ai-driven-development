@@ -6,15 +6,15 @@
 
 *with `Role Performance View`, `U.RoleStateGraph (RSG)`, and `Role Characterisation Space (RCS)` hooks*
 
-**Builds on:** A.1 **Holonic Foundation**, A.1.1 **`U.BoundedContext`**, A.2 **Role Taxonomy**.  
-**Coordinates with:** A.13 **Agential Role & Agency Spectrum**, A.15 **Role–Method–Work Alignment**, E.10.D1 **D.CTX (Context discipline)**, E.10.D2 **Strict Distinction**.  
+**Builds on:** A.1 **Holonic Foundation**, A.1.1 **`U.BoundedContext`**, A.2 **Role Taxonomy**.
+**Coordinates with:** A.13 **Agential Role & Agency Spectrum**, A.15 **Role–Method–Work Alignment**, E.10.D1 **D.CTX (Context discipline)**, E.10.D2 **Strict Distinction**.
 **Lexical discipline.** *Context* ≡ `U.BoundedContext` (E.10.D1). *Appointment* is **colloquial only**; the canonical term in this specification is **Role Assignment** (see **CC‑LX‑1**).
 
 **Mint vs reuse.** This pattern defines `U.RoleAssignment` and `U.RoleEnactment` and introduces the labels `Role Characterisation Space (RCS)` and `Role State Graph (RSG)` as intensional facets recorded in `RoleDescription` / `RoleSpec`. It reuses existing kernel terms (`U.Holon`, `U.System`, `U.Episteme`, `U.BoundedContext`, `U.Work`, `U.Method`) without changing their meanings.
 
 ### A.2.1:1 - Problem frame
 
-**Intent.** Provide one, universal, **context‑local** way to say *who is being what, where (and when)* without altering what the thing **is**. The same grammar works for people, machines, software, teams, and **also** for knowledge artefacts (epistemes) when they hold **statuses** rather than perform actions.
+**Intent.** Provide one, universal, **context-local** way to say *who is being what, where (and when)* without altering what the thing **is**. The same grammar works for people, machines, software, teams, and **also** for epistemes when they hold **statuses** rather than perform actions.
 
 **Scope.**
 
@@ -51,7 +51,7 @@
 
 #### A.2.1:4.1 - Canonical definition (notation‑free)
 
-**`U.RoleAssignment`** is a **context-local assignment:
+**`U.RoleAssignment`** is a **context-local assignment**:
 
 ```
 RoleAssignment ::=
@@ -179,7 +179,7 @@ A Role’s **family** constrains **who can wear its badge**. Eligibility is part
 
 #### A.2.1:4.7 - Role algebra within a single Context (meaning relations)
 
-Role algebra 
+Role algebra
 
 The in‑Context role algebra relates **role types** inside **one** `U.BoundedContext`. It is **not** mereology. Its operators (`≤`, `⊥`, `⊗`) is specified normatively in **A.2.7 `U.RoleAlgebra`**.
 
@@ -392,19 +392,19 @@ A `U.Work` entry `W#Seam134` is valid only if `performedBy = Robot_SN789#WelderR
 
 Lenses tested: **Arch**, **Onto/Epist**, **Socio‑tech**, **Prag**, **Did**. Scope: **Kernel** (A‑cluster).
 
-* **Architecture bias (Arch):** treating roles/assignments as structural parts can smuggle function into mereology and break holarchies.  
+* **Architecture bias (Arch):** treating roles/assignments as structural parts can smuggle function into mereology and break holarchies.
   *Mitigation:* keep roles out of BoM/structure trees; close windows instead of deleting history.
 
-* **Onto/Epist bias (Onto/Epist):** anthropomorphising epistemes collapses evidence into agency (“the SOP approved”).  
+* **Onto/Epist bias (Onto/Epist):** anthropomorphising epistemes collapses evidence into agency (“the SOP approved”).
   *Mitigation:* only Systems enact Work; Epistemes may justify, constrain, and gate; enforce RE‑1 and CC‑SD‑2.
 
-* **Socio‑technical bias (Socio‑tech):** role eligibility rules can silently encode exclusion, power asymmetries, or discrimination (e.g., “Approver must be X” with no rationale).  
+* **Socio‑technical bias (Socio‑tech):** role eligibility rules can silently encode exclusion, power asymmetries, or discrimination (e.g., “Approver must be X” with no rationale).
   *Mitigation:* keep eligibility refinements explicit in the Context, recorded as Episteme policy, and review them under D.2/D.* ethics patterns; prefer capability/competence evidence over demographic proxies.
 
-* **Pragmatic bias (Prag):** over‑localising role labels can fragment reuse and create naming drift.  
+* **Pragmatic bias (Prag):** over‑localising role labels can fragment reuse and create naming drift.
   *Mitigation:* require explicit `:Context` binding and explicit Bridges with CL/loss notes instead of silent equivalence.
 
-* **Didactic bias (Did):** metaphors (“badge”, “mask”, “green gate”) may be misread as informal or security‑only.  
+* **Didactic bias (Did):** metaphors (“badge”, “mask”, “green gate”) may be misread as informal or security‑only.
   *Mitigation:* bind obligations to the Conformance Checklist; keep metaphors as mnemonic only.
 
 ### A.2.1:7 - Conformance Checklist (normative)
@@ -485,7 +485,7 @@ See **A.2.7 `U.RoleAlgebra`** (CC‑ALG‑1, 2, 3).
 | **A5** | **Hidden state**      | Acting while *Authorized? Active?* unclear | Safety & audit gaps                | Use RSG with StateAssertions gating enactment                      |
 | **A6** | **Edition blur**      | Context “ITIL” with no version             | Sense slippage                     | Context card must carry edition (E.10.D1/F.1)                      |
 | **A7** | **Bridge‑by‑name**    | Equating roles across Contexts by label    | Cross‑context drift                | Use F.9 Bridge with CL & loss notes                                |
- 
+
 ### A.2.1:9 - Consequences
 
 **Benefits**
@@ -494,7 +494,7 @@ See **A.2.7 `U.RoleAlgebra`** (CC‑ALG‑1, 2, 3).
 2. **Traceable authority.** Every `U.Work` has a clean chain: **performedBy → RoleAssignment → Role → (RCS,RSG) → Context**.
 3. **Safe heterogeneity.** Different Contexts can use the same badge name differently; conflicts are dissolved by locality and explicit Bridges.
 4. **Didactic economy.** One mental form — `Holder#Role:Context@Window` — covers factories, clouds, labs, and libraries.
-5. **Strong SoD.** Incompatibilities (`⊥`) and bundles (`⊗`) are first‑class; audits become mechanical.
+5. **Strict SoD.** Incompatibilities (`⊥`) and bundles (`⊗`) are first‑class; audits become mechanical.
 6. **Assurance‑ready.** RSG + StateAssertions convert checklists into **explicit gates**; CL penalties quantify Cross‑context risk.
 7. **Temporal honesty.** Windows encode the ebb and flow of assignments without history loss.
 
@@ -541,7 +541,7 @@ If a team claims to “use A.2.1”, a random audit sample should pass all of th
 | Separation of duties & traceable responsibility | NIST SP 800‑53 Rev. 5 (2020); ISO/IEC 27001:2022 | `⊥` incompatibilities; auditable windows; reviewer independence hooks | Adopt |
 | Continuous authorisation / policy enforcement | NIST SP 800‑207 (2020) Zero Trust Architecture | Window + RSG state as explicit gates; “green gate” as a checkable condition | Adapt |
 | Checklist‑based state progression | OMG Essence 1.2 (2019) | RSG states with explicit checklists and StateAssertions | Adapt |
-| Requirements/standards as first‑class normative artefacts | ISO/IEC/IEEE 29148:2018; ISO 26262:2018 | Epistemes hold Normative‑Status/Requirement roles; Systems act; Work is evaluated against them | Adopt |
+| Requirements and standards as first-class normative epistemes | ISO/IEC/IEEE 29148:2018; ISO 26262:2018 | Epistemes hold Normative-Status/Requirement roles; Systems act; Work is evaluated against them | Adopt |
 
 ### A.2.1:12 - Relations
 

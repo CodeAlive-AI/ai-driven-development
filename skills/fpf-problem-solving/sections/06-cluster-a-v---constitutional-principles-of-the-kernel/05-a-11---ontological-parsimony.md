@@ -39,7 +39,7 @@ A proposal to add a `U.Type` or core relation **MUST** clear **all four gates** 
 | **G‑3 Functional Naming** | *Does the chosen name state **what the thing does**, not what it *is made of*?*                       | Prevents vague catch‑alls; supports didactic clarity. |
 | **G‑4 Sharp Boundary**    | *Is there a one‑sentence litmus test that unambiguously includes or excludes any candidate instance?* | Ensures crisp taxonomy edges.                         |
 
-**Lifecycle — Sunset Timer**
+**Sunset timer — provisional-type review**
 A cleared type enters the kernel **provisionally** with a timer (default = 4 quarters). If usage count remains zero at expiry, the type faces *Sunset Review*: delete, demote to Extention Pattern, or renew with fresh evidence.
 
 > *Manager’s mnemonic:* **“Compose, Unique, Functional, Crisp — or sunset.”**
@@ -101,7 +101,7 @@ A cleared type enters the kernel **provisionally** with a timer (default = 4 qua
 
 1. **Hard size cap** — should the kernel enforce an absolute limit (e.g., 64 live types) beyond which any new entry forces retirement of an old one?
 2. **Semantic similarity tooling** — can embedding models automate Gate G‑2 overlap detection reliably across domains?
-3. **Gate calibration** — is default Sunset Timer (4 quarters) optimal for research‑oriented patterns with slower uptake?
+3. **Gate calibration** — is default Sunset Timer (4 quarters) optimal for research‑oriented patterns with slower adoption and evidence accumulation?
 
 ### A.11:End
 

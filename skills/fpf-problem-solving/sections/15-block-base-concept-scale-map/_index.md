@@ -4,7 +4,7 @@
   | Unification Rationale | Notes
 ```
 
-**Examples of Discipline Columns (illustrative):** Operational Management - IT/Software - Physics - Science/Theory - Mathematics - Literature - Religion.  
+**Examples of Discipline Columns (illustrative):** Operational Management - IT/Software - Physics - Science/Theory - Mathematics - Literature - Religion.
 _(Choose 3–5 that fit the thread; do not place Contexts here.)_
 
 ### F.17:13 - Didactic Aids
@@ -42,7 +42,7 @@ _(Choose 3–5 that fit the thread; do not place Contexts here.)_
 ### F.17:17 - FAQ (authoring hygiene)
 
 **Q1. Is the UTS a registry?**
-*A.* No. It is a **didactic publication artifact**. No CRUD semantics, no workflows.
+*A.* No. It is a **didactic publication**. No CRUD semantics, no workflows.
 
 **Q2. Can we collapse two Contexts if their terms look identical?**
 *A.* Only via **F.9 Bridge** with **CL=3**. Identity must be argued, not assumed by spelling.
@@ -55,11 +55,11 @@ _(Choose 3–5 that fit the thread; do not place Contexts here.)_
 
 ### F.17:18 - 90‑Second Teaching Script
 
-> “To make our language usable, we publish a **Unified Term Sheet** for each thread. Each **row** is one **unified concept** (a Concept‑Set) named with a **Tech** and a **Plain** label and tied to concrete senses in our chosen **context of meaning**. If two contexts differ, we show an explicit **Bridge** with a **CL score** and a short **loss note**. The rows are grouped into 5–7 **didactic blocks** so the whole sheet fits in working memory. This is not a database; it’s the **one table** a careful mind can hold. From this sheet, everyone—engineers, managers, researchers—can talk precisely about **the same things** across disciplines.”
+> “To make our language usable, we publish a **Unified Term Sheet** for each thread. Each **row** is one **unified concept** (a Concept‑Set) named with a **Tech** and a **Plain** label and tied to concrete senses in our chosen **context of meaning**. If two contexts differ, we show an explicit **Bridge** with a **CL score** and a short **loss note**. The rows are grouped into 5–7 **didactic blocks** so the whole sheet fits in working memory. This is not a database; it’s the **one table** a careful mind can hold. From this sheet, everyone—engineers, managers, researchers—can talk precisely through **the same Concept-Set rows** across disciplines.”
 
 ### F.17:End
 
 
 ## Contents
 
-- [F.18 - Local‑First Unification Naming Protocol](01-f-18---local-first-unification-naming-protocol.md) (752 lines) — Status: normative (Part F, Unification Suite). Audience: engineer‑managers, lead architects, editors of FPF artefacts.
+- [F.18 - Local‑First Unification Naming Protocol](01-f-18---local-first-unification-naming-protocol.md) (842 lines) — Status: normative (Part F, Unification Suite). Audience: engineer‑managers, lead architects, editors of FPF records/publications.

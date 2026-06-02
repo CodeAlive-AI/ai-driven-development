@@ -6,8 +6,8 @@ Establish a single, substrate‑neutral way to say **who acts**, **under which r
 
 ### A.3:2 - Context
 
-* **Holonic substrate.** FPF separates *what things are* (Holon → {System, Episteme, …}) from *what they are being right now* via **roles**. Only **systems** can bear **behavioural** roles and execute methods/work; epistemes are changed **via their symbol carriers**.
-* **Role as mask; behaviour as method/work.** A role is a **mask**, not behaviour; behaviour is a **Method** (order‑sensitive capability) that may be executed as **Work** (dated occurrence).
+* **Holonic substrate.** FPF separates *what things are* (Holon → {System, Episteme, …}) from *what they are being right now* via **roles**. Only **systems** can bear **behavioural** roles, execute methods, and perform `U.Work`; epistemes are changed **via their symbol carriers**.
+* **Role as mask; behaviour as Method and Work occurrence.** A role is a **mask**, not behaviour; behaviour is a **Method** (order-sensitive capability) that may be performed as **Work** (dated occurrence).
 * **Design‑time vs run‑time.** A holon’s states belong to disjoint scopes **Tᴰ** and **Tᴿ**; transitions are physically grounded by a system bearing **TransformerRole**.
 * **Evidence & carriers.** Claims about outcomes must anchor to **carriers** (SCR/RSCR) and to an **external** evidencing transformer.
 
@@ -110,7 +110,7 @@ This is the canonical way to say *who acts, in which role, where (semantically),
 The **bearer** of `TransformerRole` MUST NOT be the same model instance as the **object‑under‑change** within the same assignment. Self-modification is modelled via two **`U.RoleAssignment`s** (same holder playing two roles) or via an explicit controller–plant split. This upholds **Agent Externalization** (A.12).
 
 **CC‑A3‑2 - Design–Run separation.**
-`U.MethodDescription` (recipe, definition) is a **design‑time** artefact; `U.Method` (mask‑of‑work) and `U.Work` (executed work) are **run‑time**. It is non‑conformant to mutate a `MethodDescription` inside a `Work` log or to treat a `Work` as a `MethodDescription`. This enforces the kernel’s **Temporal Duality** (A.4) and the A.15 alignment.
+`U.MethodDescription` (recipe, definition) is a design-time `U.Episteme`; `U.Method` (mask-of-work) and `U.Work` (executed work) are run-time kinds. It is non-conformant to mutate a `MethodDescription` inside a `Work` log or to treat a `Work` as a `MethodDescription`. This enforces the kernel’s **Temporal Duality** (A.4) and the A.15 alignment.
 
 **CC‑A3‑3 - Boundary‑crossing evidence.**
 A conformant transformation that changes a system’s state MUST reference the **boundary effects** it induces: interactions, flows, or state transitions attach to the target system’s boundary (per Γ‑defaults for additive, min/AND/OR folds). Conservation‑class effects MUST satisfy B‑invariants (e.g., **B‑1 Conservation**).
@@ -142,7 +142,7 @@ Descriptions MUST be sufficient for the relevant Γ‑aggregations to run: Γ\_m
 **Benefits**
 
 * **Explainability by construction.** Every transformative claim carries *who/what/when/why/how* via **`U.RoleAssignment`** + provenance fields; audits become mechanical rather than heroic. (B‑invariants and Γ tables do the heavy lifting.)
-* **No category errors.** Keeping methods/roles out of mereology and enforcing design/run separation prevents the usual “process‑as‑part” and “version‑as‑component” mistakes. (A.14 + A.15.)
+* **No category errors.** Keeping methods/roles out of mereology and enforcing DesignRunTag separation prevents the usual “process‑as‑part” and “version‑as‑component” mistakes. (A.14 + A.15.)
 * **Composable analytics.** With measures and boundary folds explicit, cross‑scale proofs (Σ/Π/min/∧/∨) are predictable.
 * **Contextual pluralism without chaos.** Divergent domain practices coexist as distinct bounded contexts with bridges; disagreements are localised and tractable.
 
@@ -158,10 +158,10 @@ Descriptions MUST be sufficient for the relevant Γ‑aggregations to run: Γ\_m
 Our **Transformer Principle** mirrors constructor theory’s shift from *dynamics* to *tasks*: what transformations are **possible** vs **impossible**, and why. By making the **transformer** (constructor) an explicit bearer of a role and keeping recipes as `MethodDescription`, A.3 captures the core “tasks & constructors” distinction and aligns with constructor‑theoretic thermodynamics linking work, heat, and informational constraints. ([Royal Society Publishing][1], [arXiv][2], [Constructor Theory][3])
 
 **Active inference & free‑energy mechanics (2017→).**
-Where transformers are *agentic*, A.3’s policy–plan–action split and boundary‑centred accounting dovetail with **active inference** and **free‑energy** formulations of self‑organising systems (Markov blankets; Bayesian mechanics). This legitimises `U.Objective`/cost function links and makes design–run duality natural (prior vs posterior policies). ([MIT Press Direct][4], [PubMed][5], [arXiv][6])
+Where transformers are *agentic*, A.3’s policy–plan–action split and boundary‑centred accounting dovetail with **active inference** and **free‑energy** formulations of self‑organising systems (Markov blankets; Bayesian mechanics). This legitimises `U.Objective`/cost function links and makes DesignRunTag duality natural (prior vs posterior policies). ([MIT Press Direct][4], [PubMed][5], [arXiv][6])
 
 **Provenance and FAIR packaging (2016→).**
-Provenance minima in CC‑A3‑7 reflect **FAIR** principles (machine‑actionable reuse), **RO‑Crate** (methods+data+context packaged together), and operational lineage standards such as **OpenLineage** and **ML Metadata (TFX)** that treat *artefacts, runs, and jobs* as first‑class, with typed facets and versioning — exactly what enactment + Γ\_work need. ([Nature][7], [researchobject.org][8], [SAGE Journals][9], [openlineage.io][10], [GitHub][11], [arXiv][12])
+Provenance minima in CC-A3-7 reflect **FAIR** principles (machine-actionable reuse), **RO-Crate** (methods, data, and context packaged together), and operational lineage standards such as **OpenLineage** and **ML Metadata (TFX)** that treat research objects, runs, and jobs as first-class, with typed facets and versioning - exactly what enactment + Γ\_work need. ([Nature][7], [researchobject.org][8], [SAGE Journals][9], [openlineage.io][10], [GitHub][11], [arXiv][12])
 
 Together, these lines of work argue for **explicit role‑bearing transformers**, **recipe/run separation**, **boundary‑grounded deltas**, and **traceable contexts** — the four pillars that CC‑A3 enforces.
 
@@ -170,13 +170,13 @@ Together, these lines of work argue for **explicit role‑bearing transformers**
 
 **A.7 Strict Distinction.**
 A.3 operationalises A.7 by keeping **object ≠ description ≠ observation**:
-*object* = target holon; *description* = `MethodDescription`; *observation/log* = `Work`. Violations (e.g., treating a recipe as a part) are non‑conformant and usually surface as Γ failures.
+*object* = target holon; *description* = `MethodDescription`; *observation/log* = `Work`. Violations (e.g., treating a recipe as a part) are non‑conformant and usually show up as Γ failures.
 
 **A.12 Agent Externalization & External Transformer.**
 A.3’s CC‑A3‑1 is the mechanical guard‑rail for A.12: even in self‑modification, the *modelling split* keeps the agent (transformer bearer) distinct from the object‑under‑change.
 
 **A.13 Agential Role.**
-When the bearer is an **Agent**, A.3 defers identity and states management to Agent‑CAL (`U.Agent`, `U.Intent`, `U.Action`), while still requiring `RoleAssigning` + Γ compatibility. This is where policy/plan/action pipelines live.
+When the bearer is an **Agent**, A.3 keeps identity and states management in Agent‑CAL (`U.Agent`, `U.Intent`, `U.Action`), while still requiring `RoleAssigning` + Γ compatibility. This is where policy/plan/action pipelines live.
 
 **A.15 Role–Method–Work Alignment.**
 A.3 relies on A.15’s vocabulary guard‑rails (roles are not parts; methods are masks of work; specs are recipes). CC‑A3‑2/‑4 are enforceable precisely because A.15 fixes the naming discipline.

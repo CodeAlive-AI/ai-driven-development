@@ -12,7 +12,7 @@ The following contrasts highlight this shift:
 | :--- | :--- | :--- |
 | **Core Task** | Logically consistent inventory of entity types. | Generative scaffold for reasoning and decision-making. |
 | **Primary Question** | “What is this?” | “How do we reason about this, and why does it matter?” |
-| **Guiding Artefact** | Taxonomy & logical axioms. | **Patterns** (context ▲ problem ▲ solution + CC). |
+| **Guiding form** | Taxonomy and logical axioms. | **FPF patterns** (context ▲ problem ▲ solution + CC). |
 | **Validation Mode** | Consistency in formal reasoners. | Satisfying **Conformance Checklist** for goals, trust, emergence. |
 | **Change Driver** | Domain evolution → new classes. | Cognitive evolution → new reasoning patterns. |
 | **Cross-Disciplinarity** | Challenging: each domain = new branch. | Built-in: patterns span ≥3 domains (C-1 Universality). |

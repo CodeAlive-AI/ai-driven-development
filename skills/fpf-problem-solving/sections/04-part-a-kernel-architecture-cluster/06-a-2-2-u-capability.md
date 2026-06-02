@@ -47,9 +47,9 @@ Teams frequently blur the two, and then further mix them with **how** the work i
 When you describe a capability in a model or a review, anchor it by answering these five didactic prompts:
 
 1. **Holder:** *Whose ability is this?* → a specific `U.System`.
-2. **Context:** *In which bounded context were the measures established?* → `U.BoundedContext` (strongly recommended for clarity and comparability).
+2. **Context:** *In which bounded context were the measures established?* → `U.BoundedContext` (recommended for clarity and comparability).
 3. **Task family:** *Ability to do **what kind** of work?* → reference the relevant **MethodDescription**(s) or method family the system can execute.
-4. **WorkScope:** *Under what conditions?* → inputs/resources/environment assumptions (e.g., voltage, pressure, ambient, tool head).
+4. **WorkScope:** *Under what conditions?* -> inputs, resources, and environment assumptions (e.g., voltage, pressure, ambient, tool head).
 5. **Performance measures:** *With what bounds?* → CHR‑style measures (throughput, precision, latency, reliability, MTBF…) with ranges/targets.
 
 Optional descriptors that improve trust without adding bureaucracy:
@@ -75,7 +75,7 @@ This is not a formal notation—just a consistent way to keep the five prompts i
 | ------------------------------------------ | ----------------------- | -------------------------------------------------------------------------------------------- |
 | **assignment** (who is being what, where) | **Role → Role assignment** | Can you reassign to another holder without changing the system’s composition? If yes → Role. |
 | **Ability** (can do within bounds)         | **Capability**          | Would you still say “can do” even if not currently assigned? If yes → Capability.           |
-| **Recipe** (how‑to)                        | **Method / MethodDescription** | Has inputs/outputs and steps but no date/time.                                               |
+| **Recipe** (how‑to)                        | **Method or MethodDescription** | Recover whether the text means the abstract way of doing or the episteme that describes it; has inputs and outputs and steps but no date/time. |
 | **Execution** (what happened)              | **Work**                | Has a start/end, consumed resources, left a log.                                             |
 | **External promise**                       | **Promise content (service promise clause)** | Framed as “we provide/guarantee to others.”                                                  |
 | **Law/model of change**                    | **Dynamics**            | Describes state evolution, not an ability of one system.                                     |
@@ -129,7 +129,7 @@ This is not a formal notation—just a consistent way to keep the five prompts i
 A capability **belongs to** a **`U.System`** (physical, cyber, socio‑technical, or organizational). Capabilities are **not** assigned to `U.Episteme`.
 
 **CC‑A2.2‑2 (Separation of concerns).**
-A capability is **not** a Role, **not** a Method/MethodDescription, **not** a Work, and **not** a promise content clause (`U.PromiseContent`). Models **SHALL NOT** use capability declarations to stand in for assignments, recipes, executions, or promises.
+A capability is **not** a Role, **not** a Method or MethodDescription, **not** a Work, and **not** a promise content clause (`U.PromiseContent`). Models **SHALL NOT** use capability declarations to stand in for assignments, recipes, executions, or promises.
 
 **CC‑A2.2‑3 (WorkScope required for operational use).**
 When a capability is used to qualify a step or to support planning, its statement **MUST** name a **WorkScope** (conditions/assumptions) and **WorkMeasures** (targets/ranges). **Guards that admit Work MUST test** that the **holder’s WorkScope covers the step’s JobSlice** (i.e., `WorkScope ⊇ JobSlice`) **and that WorkMeasures meet the step’s thresholds, with an explicit `Γ_time` window bound**. Without a WorkScope and measures, a capability is advisory and **SHALL NOT** be used for step admission or assurance claims.
@@ -216,7 +216,7 @@ A **service promise clause** (a `U.PromiseContent`) is a consumer‑facing **ext
 ### A.2.2:14 - Anti‑patterns (and the right move)
 
 * **Role‑as‑capability.** “Welder role ensures ±0.2 mm.” → Keep **role** as assignment; put **precision** in a **capability** on the holder; put the **threshold** on the **step**.
-* **Recipe‑as‑capability.** “We have the ‘Etch\_Al2O3’ capability.” → Recipe is **Method/MethodDescription**; ability is “can execute Etch\_Al2O3 within WorkScope E at measures M.”
+* **Recipe‑as‑capability.** “We have the ‘Etch\_Al2O3’ capability.” → Recipe is **Method or MethodDescription**; ability is “can execute Etch\_Al2O3 within WorkScope E at measures M.”
 * **Work‑as‑capability.** “We did it once, so we can.” → One Work log is not a stable ability; state envelope and measures if you want a capability claim.
 * **Context‑less claims.** “This tool can machine titanium.” → Say **where and under what bounds** (context + WorkScope + measures).
 * **Stuffing capabilities into BoM/PBS.** Structure lists **what it is**; capabilities belong to **what it can do** (the holder), not inside the parts list.
@@ -236,7 +236,7 @@ A **service promise clause** (a `U.PromiseContent`) is a consumer‑facing **ext
 
 | Benefits                                                                                           | Trade‑offs / mitigations                                                                                                      |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Truthful planning.** Schedulers and managers can ask “can do?” independently of “assigned now?” | **Extra column in tables.** Adding scope/measures/valid‑through is a small burden that repays itself in fewer reschedules. |
+| **Truthful planning.** Schedulers and managers can ask “can do?” independently of “assigned now?” | **Extra column in tables.** Adding scope, measures, and valid-through is a small authoring cost that repays itself in fewer reschedules. |
 | **Safer gating.** Steps gate on both role and ability; fewer silent failures.                      | **Two checks instead of one.** Keep the checklist simple: *badge + bounds*.                                                   |
 | **Clear service design.** Services become explicit promises built on visible abilities.            | **Temptation to over‑promise.** Keep service SLOs within demonstrated capability measures.                                    |
 | **Clean separation with Dynamics and PBS/SBS.** No more “process” or “function” soup.              | **Some retraining.** Use the litmus tables (from the lexical rules) during onboarding.                                        |

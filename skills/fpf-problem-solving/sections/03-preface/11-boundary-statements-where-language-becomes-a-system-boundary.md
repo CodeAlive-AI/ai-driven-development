@@ -8,17 +8,17 @@ In post‑2015 engineering practice, boundary text is everywhere:
 
 - API contracts (OpenAPI/Protobuf/gRPC), schema evolution, and data contracts;
 - SLO/SLA language in SRE, incident retrospectives, and operational gating;
-- ML governance artefacts: evaluation protocols, model cards, dataset sheets, reproducibility checklists;
+- ML governance publications and records: evaluation protocols, model cards, dataset sheets, reproducibility checklists;
 - regulatory and safety assurance: “what is guaranteed”, “what is admissible”, “what evidence counts”.
 
 FPF treats such boundary sentences as first‑class architectural objects. The **A.6 cluster** (*Signature Stack & Boundary Discipline*) is the place in the spec that deals with the edge‑cases of meaning: the situations where “normal prose” is too lossy, but a full formal spec is not yet available (or not yet worth the cost).
 
-The key idea is simple: do not let one sentence do four jobs. When the same line simultaneously tries to define meaning, declare a runtime gate, assign a duty, and claim evidence, it becomes uncheckable. A.6 gives a lightweight routing discipline—captured as the **Boundary Norm Square** (A.6.B)—that keeps these roles separate:
+The key idea is simple: do not let one sentence do four jobs. When the same line simultaneously tries to define meaning, declare a runtime gate, assign a duty, and claim evidence, it becomes uncheckable. A.6 gives a lightweight L/A/D/E claim-classification discipline—captured as the **Boundary Norm Square** (A.6.B)—that keeps these roles separate:
 
 - **L — laws & definitions** (truth‑conditional content you can inspect or reason over),
 - **A — admissibility & gates** (what a mechanism admits at application time),
 - **D — deontics & commitments** (who owes what, to whom, and under which scope),
 - **E — work‑effects & evidence** (what must be observable on carriers so adjudication is possible).
 
-Once boundary talk is routable, it becomes evolvable: different views can publish the *same* underlying boundary without creating parallel contracts, and changes can be narrated without silently rewriting meaning.
+Once boundary talk is decomposed and classified, it becomes evolvable: different views can publish the *same* underlying L/A/D/E-classified boundary claim set without creating parallel Contract Bundles, and changes can be narrated without silently rewriting meaning.
 
