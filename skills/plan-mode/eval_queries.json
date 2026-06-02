@@ -1,0 +1,25 @@
+{
+  "skill": "plan-mode",
+  "purpose": "Validate the description's activation boundary: it should fire on requests to change a project (feature, fix, refactor, migration, API/UI change) and stay quiet on read-only questions or trivial/already-approved edits.",
+  "notes": "Per the Agent Skills guidance, the description alone decides whether the full SKILL.md is loaded, so test it on both positive and negative prompts. 'positive' = skill should activate; 'negative' = skill should NOT activate.",
+  "positive": [
+    { "query": "Add Google SSO login to our REST API", "why": "New feature touching auth and public API — must investigate and plan before editing." },
+    { "query": "Refactor the payments service to use the new repository pattern", "why": "Refactor with compatibility and convention implications." },
+    { "query": "Migrate the user table from MySQL to Postgres", "why": "Data migration — high blast radius, needs rollout/rollback planning." },
+    { "query": "Implement rate limiting on the public endpoints", "why": "Implementation request affecting public behavior." },
+    { "query": "Change the checkout page to a two-step flow", "why": "UI change with UX and scope decisions." },
+    { "query": "We have a P1: orders are double-charging in prod, fix it", "why": "Urgent fix — gate still applies, plan shape changes." },
+    { "query": "Scope the work to add webhooks to the billing integration", "why": "Explicit scoping/estimation request." },
+    { "query": "Here's my plan to split the monolith — start implementing it", "why": "User-provided plan must be validated against context before execution." }
+  ],
+  "negative": [
+    { "query": "What does the parseConfig function return?", "why": "Pure read-only question about the codebase." },
+    { "query": "Explain how the auth middleware works", "why": "Explanation request — no modification." },
+    { "query": "Fix this typo in the comment on line 12", "why": "Trivial one-line edit, not a planning task." },
+    { "query": "Run the test suite and tell me if it passes", "why": "Diagnostic, read-only — no change to plan." },
+    { "query": "What's the difference between these two branches?", "why": "Informational git query." },
+    { "query": "We already reviewed the diff — just apply it", "why": "Change already reviewed and approved for direct implementation." },
+    { "query": "Reformat this file with the project formatter", "why": "Mechanical, low-risk, no design decisions." },
+    { "query": "Summarize what this repository does", "why": "Read-only overview request." }
+  ]
+}
