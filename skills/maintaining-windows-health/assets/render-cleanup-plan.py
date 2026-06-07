@@ -1167,7 +1167,7 @@ def make_handler(html_content: str, data_categories: list[dict]):
                     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
                     # Cross-platform temp dir: /tmp on macOS/Linux, %TEMP% on Windows.
                     out_path = Path(tempfile.gettempdir()) / f"cleanup-selection-{ts}.json"
-                    out_path.write_text(json.dumps(selection, indent=2, ensure_ascii=False))
+                    out_path.write_text(json.dumps(selection, indent=2, ensure_ascii=False), encoding="utf-8")
                     self.server.submission = {"selection": selection, "path": str(out_path)}
                     body = json.dumps({"ok": True, "path": str(out_path)}).encode("utf-8")
                     self.send_response(200)
@@ -1202,7 +1202,7 @@ def main(argv: list[str]) -> int:
     if not data_path.is_file():
         print(f"data file not found: {data_path}", file=sys.stderr)
         return 2
-    data = json.loads(data_path.read_text())
+    data = json.loads(data_path.read_text(encoding="utf-8"))
     html_content = render_html(data)
 
     handler = make_handler(html_content, data.get("categories", []))
