@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 21 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 22 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -23,7 +23,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 21 skills
+# Install all 22 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -85,11 +85,12 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 |-------|--------------|
 | [agents-consilium](skills/agents-consilium/) | Query Codex CLI and Gemini CLI in parallel for independent expert opinions on architecture, code reviews, and investigations. Different models bring different angles: more original ideas in brainstorming, broader coverage in code review |
 
-### macOS & system health (1)
+### macOS & Windows system health (2)
 
 | Skill | What It Does |
 |-------|--------------|
 | [maintaining-macos-health](skills/maintaining-macos-health/) | Disk cleanup + dev-machine optimisation + proactive health alerting. Triage flow for kernel panic / watchdog timeout / `vm-compressor-space-shortage` / Jetsam events. Tiered cleanup playbook (zero-risk → discuss-first), Mole-style safety guards, and a noise-resistant LaunchAgent alerter (3 CRITICAL-only triggers, hysteresis, calibration window). Apple Silicon focus |
+| [maintaining-windows-health](skills/maintaining-windows-health/) | Windows 11 port of the macOS health skill. Triage flow for BSOD / Kernel-Power 41 / crash dumps / commit-memory pressure. Ten-tier cleanup playbook (Storage Sense → discuss-first) using native Microsoft tooling (cleanmgr / DISM / pnputil / vssadmin / wevtutil / powercfg), a drift-protected HTML cleanup UI with an NTFS-hardened apply validator, and a Task Scheduler + BurntToast alerter (interactive-session, hysteresis, calibration). Heavy AI/Docker/WSL focus |
 
 ### Niche utilities (3)
 
@@ -136,6 +137,7 @@ ai-driven-development/
 │   ├── hooks-management/
 │   ├── investigating-repository-history/
 │   ├── maintaining-macos-health/
+│   ├── maintaining-windows-health/
 │   ├── mcp-management/
 │   ├── optimizing-claude-code/
 │   ├── plan-mode/
