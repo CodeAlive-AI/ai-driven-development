@@ -78,6 +78,59 @@ npx add-mcp https://mcp.example.com/sse --transport sse
 | OpenCode | `opencode` | Yes (`opencode.json`) |
 | Zed | `zed` | Yes (`.zed/settings.json`) |
 
+### Codex App / Desktop caveats
+
+Codex has two relevant surfaces:
+
+- **Codex CLI** (`codex mcp list`, `codex mcp get`, `codex mcp login`) can see and validate
+  MCP configuration from the CLI process.
+- **Codex App / Desktop threads** receive MCP tools only when the app starts a thread with
+  those servers loaded and authenticated. A server can appear in `codex mcp list` but still
+  be absent from the current model turn's tool list if the thread was created before the
+  server was added, authenticated, or reloaded.
+
+When configuring MCP for Codex App:
+
+1. Prefer project-level `.codex/config.toml` when the user explicitly asks for repo-level
+   setup. The project must be trusted in `~/.codex/config.toml` under
+   `[projects."/absolute/path"] trust_level = "trusted"`.
+2. For HTTP servers that use OAuth, run:
+   ```bash
+   codex mcp login <server-name>
+   ```
+   Then verify `codex mcp list` shows `Auth: OAuth`.
+3. For HTTP servers that use bearer tokens, prefer Codex's native bearer-token env form
+   over hardcoding a header:
+   ```bash
+   codex mcp add <name> --url https://example.com/mcp --bearer-token-env-var EXAMPLE_API_KEY
+   ```
+   If writing `.codex/config.toml` directly, this is the expected shape:
+   ```toml
+   [mcp_servers.example]
+   type = "http"
+   url = "https://example.com/mcp"
+   bearer_token_env_var = "EXAMPLE_API_KEY"
+   ```
+   Some third-party installers write `http_headers.Authorization = "Bearer ${EXAMPLE_API_KEY}"`;
+   Codex CLI may display this as a bearer-token server, but the native field is clearer.
+4. After adding, removing, editing, or logging in to a Codex App MCP server, tell the user to
+   fully restart Codex App. Existing threads can receive newly available tools after the app
+   restart; create a new thread only as a fallback if `tool_search` still cannot find the
+   server tools in the existing thread.
+5. Verification has two levels:
+   ```bash
+   codex mcp list
+   codex mcp get <server-name>
+   ```
+   confirms Codex CLI/config/auth. Inside a Codex App thread, also use `tool_search` for a
+   server-specific tool name (for example `supabase execute_sql` or `render list_services`).
+   If `tool_search` returns no tools while `codex mcp list` is correct, the issue is usually
+   App/thread reload or the server being configured only in a scope the App did not load.
+6. If project-level `.codex/config.toml` is not being picked up by Codex App, as a temporary
+   diagnostic duplicate the server in user-level `~/.codex/config.toml`, restart the App, and
+   confirm tools appear. Remove the user-level duplicate afterward if the user wanted repo-only
+   setup.
+
 ### Examples
 
 ```bash
