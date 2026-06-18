@@ -10,7 +10,7 @@ FPF is a **thinking amplifier** — it helps you plan deeper and make better dec
 
 ## How it works
 
-This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The 82,000-line FPF specification is split into a two-level hierarchy (20 directories, 269 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section. The agent then navigates `_index.md` files to pick the narrowest sub-section (~300 lines) and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
+This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The 82,000-line FPF specification is split into a two-level hierarchy (20 directories, 269 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including decision, causality, temporal reasoning, architecture description, publication stability, SoTA-pack refresh, and provenance needs. The agent then navigates `_index.md` files to pick the narrowest sub-section (~300 lines) and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
 
 ## Install
 
