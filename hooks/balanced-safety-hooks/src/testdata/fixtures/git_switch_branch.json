@@ -1,0 +1,16 @@
+{
+  "name": "git_switch_branch",
+  "description": "git switch main — moves between existing branches, safe",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git switch main"
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "allow",
+    "rule": "default",
+    "reason_code": "no_rule_matched"
+  }
+}

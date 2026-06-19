@@ -5,10 +5,9 @@ import (
 	"strings"
 )
 
-// Level is the permission decision emitted to Claude Code.
-// Only Allow or Ask — never Deny. Memory feedback_no_deny_in_hooks.md:
-// agents trivially bypass deny (rephrase, split, retry); ask keeps the user
-// in the loop, which is the actual defense.
+// Level is bash-guard's internal policy decision. Claude Code can receive
+// Allow or Ask directly. Codex PreToolUse does not support Ask yet, so the
+// Codex adapter maps Ask to a blocking Deny at the output boundary.
 type Level int
 
 const (

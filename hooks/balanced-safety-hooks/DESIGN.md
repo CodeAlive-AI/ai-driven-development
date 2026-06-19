@@ -11,6 +11,7 @@
 - v3 — switched runtime to Go + [mvdan.cc/sh](https://github.com/mvdan/sh) per project maintainer's perf concern. Single static binary, build-on-stale wrapper for hot-reload editing.
 - v3.1 — dropped the bash wrapper after measuring 80 ms per-invocation overhead from `go build` no-op. settings.json now points directly at `bash_guard.bin`; rebuilds are explicit (`make build` or `make watch`). End-to-end latency 0-10 ms warm.
 - v3.2 — phases 0/1/2 collapsed in one go: shipped `rule_supabase.go`, `rule_bw.go`, `rule_infra.go`, ran `install.sh --live --replace-legacy`. Bash hook chain reduced from 7 entries to 1; 92 fixtures (~30 of them on the new rules) all green.
+- v3.3 — added Codex CLI / Codex App adapter and installer support. Internal decisions remain `allow|ask`; Claude Code emits `ask`, while Codex maps internal `ask` to supported `permissionDecision: "deny"` because Codex `PreToolUse` does not support hook-created ask prompts yet.
 
 ---
 
@@ -34,7 +35,7 @@ Root causes: brittle parser (shlex breaks on heredocs), trigger keywords matched
 - Single replacement program for both legacy hooks.
 - < 30 ms cold path, < 10 ms warm — Bash-hook is invoked on every Bash tool call.
 - High recall on real destructive operations: `rm -rf /`, `$HOME`, `/etc`, `/usr`, etc.
-- **Never emit `permissionDecision: "deny"`**. Only `allow` or `ask`. Reason: agents trivially bypass `deny` (rephrase, split, retry); the user is the real defense. Memory: `feedback_no_deny_in_hooks.md`.
+- Internal policy decisions remain `allow|ask`. Claude Code emits those directly. Codex `PreToolUse` currently does not support hook-created ask prompts, so the Codex adapter maps internal `ask` to supported `permissionDecision: "deny"` at the output boundary.
 - Treat the hook as a real program: typed, tested, configurable, observable, hot-editable.
 
 ### Non-Goals
@@ -50,7 +51,7 @@ Root causes: brittle parser (shlex breaks on heredocs), trigger keywords matched
 
 ### 3.1 Layout
 
-Source lives in the `ai-driven-development` repo (under `hooks/balanced-safety-hooks/`); deployed via symlink to `~/.claude/hooks/bash-guard/` so edits in git pick up live (build-on-stale wrapper rebuilds on next invocation).
+Source lives in the `ai-driven-development` repo (under `hooks/balanced-safety-hooks/`); deployed via symlink to `~/.claude/hooks/bash-guard/` and/or `~/.codex/hooks/bash-guard/` so edits in git pick up live after rebuilding.
 
 ```
 path/to/ai-driven-development/hooks/balanced-safety-hooks/
@@ -132,9 +133,9 @@ stdin JSON
     │
     ├─ for each ExecutedCommand, run all matching rules
     │
-    ├─ aggregate(decisions):  ask > allow   (no deny tier)
+    ├─ aggregate(decisions):  ask > allow   (no internal deny tier)
     │
-    └─ write JSON to stdout, audit log to ~/.claude/logs/bash-guard.jsonl
+    └─ write agent-specific JSON to stdout, audit log to ~/.claude/logs/bash-guard.jsonl
 ```
 
 ### 3.4 Span classification & executor unwrapping
@@ -231,7 +232,7 @@ func Aggregate(ds []Decision) Decision {
 }
 ```
 
-No deny tier anywhere. Compile-time invariant: the type only allows `"allow"` and `"ask"` (we use a typed enum, see §3.7 in code).
+No internal deny tier. Compile-time invariant: the type only allows `"allow"` and `"ask"` (we use a typed enum, see §3.7 in code). The Codex output adapter is the only place that emits `permissionDecision: "deny"`, because Codex does not support `ask` for `PreToolUse`.
 
 ### 3.8 Output
 

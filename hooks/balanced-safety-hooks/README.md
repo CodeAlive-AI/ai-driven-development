@@ -4,16 +4,25 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/CodeAlive-AI/ai-driven-development?style=social)](https://github.com/CodeAlive-AI/ai-driven-development/stargazers)
 
-A small Go program that sits between Claude Code and your shell, parses every Bash command the agent is about to run with a real shell AST, and decides whether to **allow** it or **ask** you. The default rule set uses `ask` rather than `deny` — see [why](#why-we-default-to-ask).
+A small Go program that sits between Claude Code / Codex and your shell, parses every Bash command the agent is about to run with a real shell AST, and decides whether to **allow** it or require human/operator attention.
+
+On Claude Code, risky commands emit `permissionDecision: "ask"` so the built-in confirmation UI appears. On Codex CLI / Codex App, `PreToolUse` does not support `ask` yet; live mode maps the same internal `ask` decision to Codex's supported `deny` output so the risky command is blocked instead of silently continuing. See [why we default to ask](#why-we-default-to-ask).
 
 ## Install
 
 ### Quick install (no Go required)
 
-Downloads the prebuilt binary for your OS/arch (darwin / linux × arm64 / amd64) from the latest GitHub release, verifies the SHA-256 checksum, and patches `~/.claude/settings.json`. Requires `curl` and `jq`.
+Downloads the prebuilt binary for your OS/arch (darwin / linux x arm64 / amd64) from the latest GitHub release, verifies the SHA-256 checksum, and patches your agent hook config. Requires `curl` and `jq`.
 
 ```bash
+# Claude Code (default)
 curl -fsSL https://raw.githubusercontent.com/CodeAlive-AI/ai-driven-development/main/hooks/balanced-safety-hooks/install-prebuilt.sh | sh
+
+# Codex CLI / Codex App
+curl -fsSL https://raw.githubusercontent.com/CodeAlive-AI/ai-driven-development/main/hooks/balanced-safety-hooks/install-prebuilt.sh | sh -s -- --codex
+
+# Both agents
+curl -fsSL https://raw.githubusercontent.com/CodeAlive-AI/ai-driven-development/main/hooks/balanced-safety-hooks/install-prebuilt.sh | sh -s -- --both
 ```
 
 To pin a specific release, set `BASH_GUARD_VERSION=bash-guard-vX.Y.Z` in the environment before running.
@@ -26,20 +35,31 @@ Requires Go ≥ 1.21 and `jq`.
 git clone https://github.com/CodeAlive-AI/ai-driven-development.git
 cd ai-driven-development/hooks/balanced-safety-hooks
 
-./install.sh --live       # real enforcement — emits ask for risky commands (the normal mode)
+./install.sh --live       # real enforcement: Claude asks, Codex blocks risky commands
 ./install.sh --shadow     # observe-only: logs every decision, never prompts. For tuning safe paths before going live.
 ./install.sh --dry-run    # same effect as --shadow, with a distinct log label
 ./install.sh --uninstall  # remove hook entry + symlink
+
+./install.sh --codex --live  # install for Codex CLI / Codex App
+./install.sh --both --live   # install for Claude Code and Codex
 ```
 
 What `install.sh` does, idempotently:
 
 1. Verifies Go is on `PATH`.
-2. Symlinks `~/.claude/hooks/bash-guard` → this directory's `src/`.
+2. Symlinks `~/.claude/hooks/bash-guard` and/or `~/.codex/hooks/bash-guard` to this directory's `src/`.
 3. Builds `bash_guard.bin` (warms the Go cache).
-4. Patches `~/.claude/settings.json` with a `PreToolUse[matcher=Bash]` entry pointing at the binary. Existing hooks are preserved; previous `bash-guard` entries are replaced. A timestamped backup is written next to the file.
+4. Patches `~/.claude/settings.json` and/or `~/.codex/hooks.json` with a `PreToolUse[matcher=Bash]` entry pointing at the binary. Existing hooks are preserved; previous `bash-guard` entries are replaced. A timestamped backup is written next to the file.
 
-Switching modes later is the same command — `settings.json` is re-read on every hook fire, so no Claude Code restart is needed.
+Switching modes later is the same command. Restart the agent after changing hook config. In Codex CLI/App, open `/hooks` after installation and trust the new hook if Codex marks it for review.
+
+### Codex App notes
+
+Codex CLI and Codex App share the same configuration layers: user config under `~/.codex/`, plus trusted project `.codex/` config. Hooks are enabled by default in current Codex builds; `[features].hooks = false` disables them, and the old `[features].codex_hooks` key is only a deprecated alias.
+
+The installer uses `~/.codex/hooks.json` rather than adding inline `[hooks]` tables to `~/.codex/config.toml`, because Codex loads both representations and warns when one layer mixes them. Project-local hooks work only after the project is trusted. Non-managed command hooks must also be reviewed through `/hooks` before Codex runs them.
+
+Known limitation: as of June 2026, Codex `PreToolUse` supports `allow` for rewrites and `deny` for blocking, but not `ask`. Returning `permissionDecision: "ask"` is treated as a hook error and Codex continues the tool call. For that reason, bash-guard's Codex adapter emits no stdout for allow and emits `permissionDecision: "deny"` for risky commands in live mode.
 
 ## Why this exists
 
@@ -81,7 +101,7 @@ bash-guard descends into all of those, classifies every span (`Executed` / `Data
 
 **4. Safe-paths matrix with carve-outs.** Catastrophic-prefix paths (`/etc/...`, `/usr/...`) and home-protected paths (`$HOME/...`) match unconditionally **except** when the operand is on the explicit safe-paths list. `/tmp/foo` is safe; `/etc/nginx` is not. `$HOME/code/myproject/node_modules` is safe iff `myproject` is in the safe-paths list; `$HOME/.ssh` is never safe.
 
-**5. Trusted-projects allowlist.** Per-repo `.claude/bash-guard.toml` is **not** auto-loaded — that would let any hostile repo whitelist `/etc`. A repo's config is only honoured if its root is listed in the global `~/.claude/hooks/bash-guard/trusted-projects.toml`.
+**5. Trusted-projects allowlist.** Per-repo `.claude/bash-guard.toml` / `.codex/bash-guard.toml` is **not** auto-loaded — that would let any hostile repo whitelist `/etc`. A repo's config is only honoured if its root is listed in the global `trusted-projects.toml` next to the installed bash-guard binary.
 
 **6. Performance budget.** ~0.16 ms quick-reject for commands without any trigger keyword; <5 ms for full parse + rule evaluation; 0–10 ms end-to-end warm. Rebuilds are explicit (`make build`); no per-invocation `go build` wrapper.
 
@@ -94,7 +114,7 @@ bash-guard descends into all of those, classifies every span (`Executed` / `Data
 | **rm via pipe-to-shell** | `echo "rm -rf /" \| bash`, `cat script.sh \| sh`, etc. |
 | **supabase** | `supabase db push`, `db reset --linked`, `migration repair`, `--db-url <prod>`; ORM migration verbs (`alembic upgrade`, `manage.py migrate`, `prisma migrate deploy`, `drizzle-kit push`, `knex migrate`, `sequelize db:migrate`, `flyway migrate`, `liquibase update`, `rails db:migrate`, `rake db:migrate`, `typeorm migration:run`, `goose up`) |
 | **infra** | `kubectl delete/apply/patch`, destructive `gcloud compute/storage/...`, `helm install/upgrade/uninstall`, `docker rm/system prune`, destructive Mongo (`drop`, `deleteMany`, `mongorestore`, `mongodump`), `terraform/tofu apply/destroy`, `gsutil rm` |
-| **git** | `push -f / --force / --force-with-lease / +refspec`, `push --delete / -d / :branch`, `reset --hard`, `clean -f[d\|x]`, `checkout . / -- <pathspec>`, `restore .` (without `--source`/`--staged`), `branch -D / --delete --force`, `stash drop / clear`, `filter-branch`, `filter-repo` (carve-out: `--analyze`), `bfg` |
+| **git** | `push -f / --force / --force-with-lease / +refspec`, `push --delete / -d / :branch`, `reset --hard`, `clean -f[d\|x]`, `checkout . / -- <pathspec>`, `restore .` (without `--source`/`--staged`), `branch -D / --delete --force`, `stash drop / clear`, `stash` / `stash push` / `stash save` (sweeps uncommitted work), `checkout -b / -B`, `switch -c / -C` (creates a new branch), `filter-branch`, `filter-repo` (carve-out: `--analyze`), `bfg` |
 | **hyperscaler clouds** | `aws <svc> delete-* / terminate-* / destroy-* / purge-* / remove-* / deregister-* / revoke-*`, `aws s3 rm`, `az ... delete / purge`, `oci ... delete / terminate`, `ibmcloud ... delete / *-rm / *-delete` |
 | **paas** | `railway`, `fly` / `flyctl`, `heroku`, `vercel`, `doctl`, `netlify`, `linode-cli` with destructive verbs (`delete`, `destroy`, `remove`, `rm`, `down`, `reset`) and Heroku/Netlify-style colon-suffix forms (`apps:destroy`, `pg:reset`, `sites:delete`, `addons:destroy`, `domains:remove`, `env:unset`) |
 | **DB clients** | `psql` / `mysql` / `mariadb` with inline SQL containing `DROP DATABASE/TABLE/SCHEMA/...`, `TRUNCATE`, `DELETE FROM`, `ALTER ... DROP`; `redis-cli FLUSHALL / FLUSHDB / SHUTDOWN / MIGRATE` |
@@ -115,7 +135,7 @@ In April 2026 a Cursor agent on Claude Opus 4.6 wiped the production database of
 
 What bash-guard still does **not** cover, and what your defence-in-depth needs alongside it:
 
-- **MCP-tool calls.** If the agent invokes Railway / Fly / Heroku via an MCP server (Railway markets a hosted MCP endpoint), the destructive call goes through `PreToolUse:mcp__*`, not `PreToolUse:Bash`. Out of scope.
+- **MCP-tool calls.** If the agent invokes Railway / Fly / Heroku via an MCP server (Railway markets a hosted MCP endpoint), the destructive call goes through `PreToolUse:mcp__*`, not `PreToolUse:Bash`. Out of scope. Codex can intercept MCP tool calls, but this project deliberately gates Bash only.
 - **Direct SDK calls** (`import boto3; ec2.delete_volume(...)`) executed from a script the agent runs are visible only as `python script.py` to the hook — content of the Python file is not parsed.
 - **Token scope.** bash-guard cannot tell whether the token in `$RAILWAY_TOKEN` is scoped to staging or production. That is a vendor-side IAM problem.
 
@@ -127,7 +147,7 @@ What it explicitly does **not** trigger on:
 
 ## Why we default to ask
 
-Claude Code's hook protocol supports three decisions: `allow`, `ask`, `deny`. The default rule set ships with `allow` and `ask` — `deny` is intentionally not used out of the box.
+Claude Code's hook protocol supports three decisions: `allow`, `ask`, `deny`. The default rule set ships with `allow` and `ask` — `deny` is intentionally not used for Claude Code.
 
 **Reasoning.** A `deny` decision is a hard wall the agent immediately tries to climb over. Modern agents are good enough to find a path around any primitive hook — and that capability is amplified when a prompt-injection has primed them with adversarial intent. Hooks are usually shallow string-matchers; agents are not. In practice:
 
@@ -138,7 +158,7 @@ Claude Code's hook protocol supports three decisions: `allow`, `ask`, `deny`. Th
 
 `deny` is hostile to the agent's planner without informing the human. `ask` keeps the human in the loop — which is the only durable defence — and gives the agent a clear signal that the destructive intent was recognised. Empirically (and per the consilium review of the design), `ask` reduces both false-negative escapes ("agent worked around the block") and operator fatigue ("why does this keep silently failing?").
 
-If your environment requires hard blocks for specific commands (e.g. compliance constraints, shared infra), nothing in the design prevents you from forking and extending the `Level` enum with a `LevelDeny` tier and emitting it from your own rules. Just be aware of the workaround behaviour above and pair `deny` with platform-side guardrails (scoped tokens, server-side gates) so it isn't your only line of defence.
+Codex is different today: `PreToolUse` cannot force a native ask prompt. In Codex live mode, bash-guard maps its internal `ask` to Codex `deny` to avoid the documented failure mode where unsupported `ask` is ignored and the tool call continues. Pair this with Codex's own approval policy and sandboxing; hooks are guardrails, not a complete enforcement boundary.
 
 ## Tuning
 
@@ -146,7 +166,7 @@ Going straight to `--live` is fine — the worst case is a few extra ask prompts
 
 If you'd rather observe before any prompts hit your workflow, `--shadow` logs every would-be decision without prompting. Tail `~/.claude/logs/bash-guard.jsonl` (`tail -f … | jq '.'`); each entry has `would_decide`, `rule`, `reason_code`, `command_hash` (set `BASH_GUARD_LOG_COMMANDS=1` to log raw commands; off by default).
 
-When you see asks on legitimate work, add the project root to `~/.claude/hooks/bash-guard/trusted-projects.toml` and put project-specific safe paths in `<repo>/.claude/bash-guard.toml`. Switching modes is just rerunning `install.sh` — `settings.json` is re-read on every hook fire.
+When you see asks/blocks on legitimate work, add the project root to the installed `trusted-projects.toml` (`~/.claude/hooks/bash-guard/trusted-projects.toml` or `~/.codex/hooks/bash-guard/trusted-projects.toml`) and put project-specific safe paths in `<repo>/.claude/bash-guard.toml` or `<repo>/.codex/bash-guard.toml`. Switching modes is just rerunning the installer.
 
 ## Architecture
 
@@ -159,12 +179,12 @@ When you see asks on legitimate work, add the project root to `~/.claude/hooks/b
 | `src/rule_rm.go` | `rm`, `unlink`, `rmdir`, `shred`. |
 | `src/rule_supabase.go` | Supabase CLI + ORM migrations. |
 | `src/rule_infra.go` | kubectl, gcloud, helm, docker, mongo*, terraform/tofu, gsutil; aws/az/oci/ibmcloud destructive verbs; curl against OpenSearch/Elasticsearch + cloud control-plane APIs + GraphQL mutations. |
-| `src/rule_git.go` | Git operations that lose work or rewrite history: `push -f`, `push --delete`, `reset --hard`, `clean -f`, `checkout` / `restore` pathspec, `branch -D`, `stash drop/clear`, `filter-branch`, `filter-repo`, `bfg`. |
+| `src/rule_git.go` | Git operations that lose work, rewrite history, or change the agent's working context: `push -f`, `push --delete`, `reset --hard`, `clean -f`, `checkout` / `restore` pathspec, `branch -D`, `stash drop/clear`, `stash` / `stash push/save` (sweeps uncommitted work), `checkout -b/-B` / `switch -c/-C` (silent branch swap), `filter-branch`, `filter-repo`, `bfg`. |
 | `src/rule_paas.go` | PaaS CLIs: railway, fly/flyctl, heroku, vercel, doctl, netlify, linode-cli. |
 | `src/rule_db.go` | DB clients: psql, mysql, mariadb, redis-cli — destructive SQL + redis verbs. |
 | `src/decision.go` | `Level` enum (Allow / Ask only — no Deny), aggregation: ask wins. |
 | `src/audit.go` | JSONL log at `~/.claude/logs/bash-guard.jsonl` with size-based rotation, 0o600 perms. |
-| `src/config.go` | TOML loader, trusted-projects allowlist. |
+| `src/config.go` | TOML loader, trusted-projects allowlist for `.claude` / `.codex` project config. |
 | `testdata/fixtures/*.json` | Golden-table fixtures: `(decision, rule, reason_code)` tuples. ~155 cases. |
 | `DESIGN.md` | Full architecture, consilium review, asymmetric fail-open rationale, open questions. |
 

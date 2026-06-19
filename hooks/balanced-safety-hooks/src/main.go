@@ -1,7 +1,7 @@
-// Command bash-guard is a Claude Code PreToolUse:Bash safety hook.
+// Command bash-guard is a Claude Code / Codex PreToolUse:Bash safety hook.
 // It reads a JSON envelope on stdin, evaluates the wrapped Bash command
 // against a set of rules (rm/unlink/rmdir/shred + future rules), and emits
-// a JSON envelope on stdout requesting "allow" or "ask" — never "deny".
+// the hook output shape expected by the selected agent adapter.
 //
 // Design doc: ../DESIGN.md
 package main
@@ -19,12 +19,14 @@ import (
 
 // HookInput is the JSON envelope Claude Code sends.
 type HookInput struct {
-	HookEventName  string         `json:"hook_event_name"`
-	ToolName       string         `json:"tool_name"`
-	ToolInput      ToolInput      `json:"tool_input"`
-	SessionID      string         `json:"session_id"`
-	Cwd            string         `json:"cwd"`
-	PermissionMode string         `json:"permission_mode"`
+	HookEventName  string    `json:"hook_event_name"`
+	ToolName       string    `json:"tool_name"`
+	ToolInput      ToolInput `json:"tool_input"`
+	SessionID      string    `json:"session_id"`
+	TranscriptPath string    `json:"transcript_path"`
+	TurnID         string    `json:"turn_id"`
+	Cwd            string    `json:"cwd"`
+	PermissionMode string    `json:"permission_mode"`
 }
 
 type ToolInput struct {
@@ -43,13 +45,18 @@ type HookSpecific struct {
 	AdditionalContext        string `json:"additionalContext,omitempty"`
 }
 
+type HookAdapter string
+
+const (
+	AdapterClaude HookAdapter = "claude"
+	AdapterCodex  HookAdapter = "codex"
+)
+
 func main() {
 	start := time.Now()
+	adapter := adapterFromEnv()
 	exitWithAllow := func(reason string) {
-		emit(HookOutput{HookSpecificOutput: HookSpecific{
-			HookEventName:      "PreToolUse",
-			PermissionDecision: "allow",
-		}})
+		emitDecision(adapter, Decision{Level: LevelAllow, Rule: "default", ReasonCode: reason})
 		os.Exit(0)
 	}
 
@@ -77,6 +84,7 @@ func main() {
 		exitWithAllow("malformed input")
 		return
 	}
+	adapter = resolveAdapter(in, adapter)
 	if in.ToolName != "Bash" {
 		exitWithAllow("non-bash")
 		return
@@ -120,24 +128,18 @@ func main() {
 	switch mode {
 	case "shadow", "dry-run":
 		// Always emit allow; record what would have happened.
-		emit(HookOutput{HookSpecificOutput: HookSpecific{
-			HookEventName:      "PreToolUse",
-			PermissionDecision: "allow",
-		}})
+		emitDecision(adapter, Decision{Level: LevelAllow, Rule: "default", ReasonCode: "shadow_allow"})
 	default:
-		emit(HookOutput{HookSpecificOutput: HookSpecific{
-			HookEventName:            "PreToolUse",
-			PermissionDecision:       decision.Level.String(),
-			PermissionDecisionReason: decision.Reason,
-			AdditionalContext:        buildAdditionalContext(decision),
-		}})
+		emitDecision(adapter, decision)
 	}
 
 	// --- audit ---
 	entry := AuditEntry{
 		TS:          nowISO(),
+		Adapter:     string(adapter),
 		Mode:        mode,
 		Decision:    decision.Level.String(),
+		Emitted:     emittedDecision(adapter, decision),
 		Rule:        decision.Rule,
 		ReasonCode:  decision.ReasonCode,
 		LatencyMS:   float64(time.Since(start).Microseconds()) / 1000.0,
@@ -236,10 +238,68 @@ func buildAdditionalContext(d Decision) string {
 	return strings.Join(parts, " ")
 }
 
-func emit(out HookOutput) {
-	enc := json.NewEncoder(os.Stdout)
+func adapterFromEnv() HookAdapter {
+	switch strings.ToLower(os.Getenv("BASH_GUARD_ADAPTER")) {
+	case "codex":
+		return AdapterCodex
+	default:
+		return AdapterClaude
+	}
+}
+
+func resolveAdapter(in HookInput, fallback HookAdapter) HookAdapter {
+	_ = in
+	// Keep Claude as the default for backwards compatibility with existing
+	// installations that do not set BASH_GUARD_ADAPTER. Codex installers set
+	// BASH_GUARD_ADAPTER=codex explicitly.
+	return fallback
+}
+
+func emitDecision(adapter HookAdapter, d Decision) {
+	out := renderHookOutput(adapter, d)
+	if len(out) == 0 {
+		return
+	}
+	_, _ = os.Stdout.Write(out)
+}
+
+func renderHookOutput(adapter HookAdapter, d Decision) []byte {
+	switch adapter {
+	case AdapterCodex:
+		if d.Level != LevelAsk {
+			// Codex treats empty stdout + exit 0 as allow. Emitting
+			// permissionDecision:"allow" is reserved for rewrites.
+			return nil
+		}
+		return mustJSON(HookOutput{HookSpecificOutput: HookSpecific{
+			HookEventName:            "PreToolUse",
+			PermissionDecision:       "deny",
+			PermissionDecisionReason: d.Reason,
+			AdditionalContext:        buildAdditionalContext(d),
+		}})
+	default:
+		return mustJSON(HookOutput{HookSpecificOutput: HookSpecific{
+			HookEventName:            "PreToolUse",
+			PermissionDecision:       d.Level.String(),
+			PermissionDecisionReason: d.Reason,
+			AdditionalContext:        buildAdditionalContext(d),
+		}})
+	}
+}
+
+func emittedDecision(adapter HookAdapter, d Decision) string {
+	if adapter == AdapterCodex && d.Level == LevelAsk {
+		return "deny"
+	}
+	return d.Level.String()
+}
+
+func mustJSON(out HookOutput) []byte {
+	var b strings.Builder
+	enc := json.NewEncoder(&b)
 	enc.SetEscapeHTML(false)
 	_ = enc.Encode(out)
+	return []byte(b.String())
 }
 
 // selfDir returns the directory containing the running binary (or src dir
@@ -257,7 +317,7 @@ func selfDir() string {
 }
 
 func versionString() string {
-	return "bash-guard 0.2.0"
+	return "bash-guard 0.3.0"
 }
 
 // runSelfTest is a manual smoke check: it runs the parser on a couple of

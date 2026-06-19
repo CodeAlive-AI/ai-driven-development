@@ -1,10 +1,10 @@
 {
-  "name": "git_checkout_new_branch",
-  "description": "git checkout -b feature creates a new branch — ask first",
+  "name": "git_checkout_dash_capital_b",
+  "description": "git checkout -B feature force-creates a new branch — ask first",
   "input": {
     "tool_name": "Bash",
     "tool_input": {
-      "command": "git checkout -b feature"
+      "command": "git checkout -B feature"
     },
     "cwd": "/home/example-user/myproject"
   },

@@ -8,7 +8,9 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
-// GlobalConfig is loaded from ~/.claude/hooks/bash-guard/config.toml (if present).
+// GlobalConfig is loaded from config.toml next to the deployed binary
+// (for example ~/.claude/hooks/bash-guard/config.toml or
+// ~/.codex/hooks/bash-guard/config.toml).
 type GlobalConfig struct {
 	Mode struct {
 		Default string `toml:"default"` // live | shadow | dry-run
@@ -44,8 +46,8 @@ func LoadGlobalConfig(cfgPath string) GlobalConfig {
 	return cfg
 }
 
-// TrustedProjects describes which per-project .claude/bash-guard.toml files
-// the user has explicitly opted into. Untrusted project configs are
+// TrustedProjects describes which per-project bash-guard.toml files the user
+// has explicitly opted into. Untrusted project configs are
 // IGNORED, not allowed to widen the safe-paths or weaken rules.
 type TrustedProjects struct {
 	Trusted []TrustedProject `toml:"trusted"`
@@ -72,14 +74,16 @@ func LoadTrustedProjects(path string) TrustedProjects {
 	return tp
 }
 
-// ProjectConfig is the optional per-repo file at <repo>/.claude/bash-guard.toml.
+// ProjectConfig is the optional per-repo file at
+// <repo>/.claude/bash-guard.toml or <repo>/.codex/bash-guard.toml.
 type ProjectConfig struct {
 	SafePaths struct {
 		Extra []string `toml:"extra"`
 	} `toml:"safe_paths"`
 }
 
-// LoadAndMergeProjectConfig walks up from cwd looking for .claude/bash-guard.toml.
+// LoadAndMergeProjectConfig walks up from cwd looking for agent-local
+// bash-guard.toml files.
 // If found AND the project root is in the trust list AND honor_safe_paths is set,
 // returns the project's safe paths after sanitisation:
 //   - paths must resolve INSIDE the project root (no widening to /, /etc, etc.)
@@ -103,7 +107,7 @@ func LoadAndMergeProjectConfig(cwd string, tp TrustedProjects) (extras []string,
 	}
 	if trusted == nil {
 		return nil, rootReal, fmt.Sprintf(
-			"bash-guard: untrusted project config at %s; ignored. To trust, add to ~/.claude/hooks/bash-guard/trusted-projects.toml.",
+			"bash-guard: untrusted project config at %s; ignored. To trust, add this project root to the trusted-projects.toml next to the bash-guard binary.",
 			cfgPath)
 	}
 
@@ -153,9 +157,11 @@ func LoadAndMergeProjectConfig(cwd string, tp TrustedProjects) (extras []string,
 func findProjectConfig(cwd string) (root, cfgPath string) {
 	dir := cwd
 	for {
-		candidate := filepath.Join(dir, ".claude", "bash-guard.toml")
-		if _, err := os.Stat(candidate); err == nil {
-			return dir, candidate
+		for _, agentDir := range []string{".claude", ".codex"} {
+			candidate := filepath.Join(dir, agentDir, "bash-guard.toml")
+			if _, err := os.Stat(candidate); err == nil {
+				return dir, candidate
+			}
 		}
 		parent := filepath.Dir(dir)
 		if parent == dir {

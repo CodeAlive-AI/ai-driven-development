@@ -1,17 +1,19 @@
 # bash-guard — maintenance guide
 
-This is the Claude Code PreToolUse:Bash safety hook source. Architecture, design rationale, and consilium decisions live in [`../DESIGN.md`](../DESIGN.md). Read that first if you're making non-trivial changes.
+This is the Claude Code / Codex PreToolUse:Bash safety hook source. Architecture, design rationale, and consilium decisions live in [`../DESIGN.md`](../DESIGN.md). Read that first if you're making non-trivial changes.
 
 ## Locations
 
 - **Source** (this dir): `<repo>/hooks/balanced-safety-hooks/src/` in the `ai-driven-development` checkout
-- **Symlink** (where Claude Code calls it): `~/.claude/hooks/bash-guard/` → source dir
+- **Claude symlink**: `~/.claude/hooks/bash-guard/` -> source dir
+- **Codex symlink**: `~/.codex/hooks/bash-guard/` -> source dir
 - **Audit log**: `~/.claude/logs/bash-guard.jsonl` (newest entries last)
 - **Settings entry**: `~/.claude/settings.json` → `hooks.PreToolUse[matcher=Bash]`
+- **Codex hook entry**: `~/.codex/hooks.json` -> `hooks.PreToolUse[matcher=^Bash$]`
 
 ## Hard rules (do NOT relax)
 
-1. **Never emit `permissionDecision: "deny"`.** Only `allow` or `ask`. Memory: agents trivially bypass `deny` (rephrase, split, retry); `ask` keeps the user in the loop, which is the actual defense. The `Level` enum in `decision.go` enforces this at compile time — don't add a third constant.
+1. **Keep the internal policy level to `allow|ask`.** Claude Code emits those directly. Codex `PreToolUse` does not support `ask`, so `main.go` maps internal `ask` to Codex `permissionDecision: "deny"` at the adapter boundary. Do not add a third internal level unless the whole aggregation model is redesigned.
 2. **Asymmetric fail-open** (§3.6 of DESIGN.md): pre-trigger failures → `allow`; post-trigger failures (parse error after a trigger keyword matched) → `ask`. Don't change one without the other.
 3. **Untrusted project configs** (§6.2): `<repo>/.claude/bash-guard.toml` is NOT auto-loaded. Trust requires global `trusted-projects.toml` opt-in. Don't add an "auto-load if signed" shortcut.
 
@@ -24,7 +26,7 @@ make build     # ~50 ms warm; produces bash_guard.bin
 make test      # full suite, ~700 ms
 ```
 
-The binary is loaded via `~/.claude/hooks/bash-guard/bash_guard.bin` — symlinks resolve transparently, no extra step needed. The next Bash hook invocation picks up the new binary automatically.
+The binary is loaded via `~/.claude/hooks/bash-guard/bash_guard.bin` or `~/.codex/hooks/bash-guard/bash_guard.bin` — symlinks resolve transparently, no extra step needed. The next Bash hook invocation picks up the new binary automatically.
 
 For tight iteration use `make watch` (requires `entr`; `brew install entr`).
 
@@ -72,16 +74,18 @@ If a new wrapper command needs unwrapping (e.g., the team starts using `firejail
 
 ## Switching modes
 
-`install.sh` rewrites the env-prefix in `settings.json`. Run from repo root:
+`install.sh` rewrites the env-prefix in Claude `settings.json` and/or Codex `hooks.json`. Run from repo root:
 
 ```bash
 ./install.sh --shadow     # logs only, never blocks. Default.
 ./install.sh --dry-run    # same effect, distinct log mode label
 ./install.sh --live       # real enforcement
 ./install.sh --uninstall  # remove hook entry + symlink
+./install.sh --codex --live
+./install.sh --both --live
 ```
 
-After changing modes, no Claude Code restart is needed — `settings.json` is read on each hook fire.
+After changing modes, restart the target agent. In Codex CLI/App, open `/hooks` and trust the updated hook if prompted.
 
 ## Inspecting behaviour
 
@@ -121,6 +125,7 @@ If you change anything in `parser.go` or `unwrap.go`, run a manual sanity check 
 - `rule_infra.go`: kubectl, gcloud, helm, docker, mongo*, terraform/tofu, gsutil, curl-vs-OpenSearch + cloud control-plane API
 - `rule_git.go`: git operations that lose work or rewrite history (push -f / --delete, reset --hard, clean -f, checkout/restore pathspec, branch -D, stash drop/clear, filter-branch, filter-repo, bfg)
 - `rule.go`: Rule interface + registry
-- `decision.go`: Decision type + aggregation (no deny tier)
+- `decision.go`: internal Decision type + aggregation (`allow|ask`)
+- `main.go`: agent adapter maps internal decisions to Claude/Codex wire output
 - `audit.go`: JSONL log + rotation + 0o600 perms
 - `config.go`: TOML loader + trust system

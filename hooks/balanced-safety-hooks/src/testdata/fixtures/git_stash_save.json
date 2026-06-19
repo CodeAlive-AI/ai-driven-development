@@ -1,0 +1,16 @@
+{
+  "name": "git_stash_save",
+  "description": "git stash save \"...\" (deprecated form) creates a new stash — ask first",
+  "input": {
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git stash save \"wip\""
+    },
+    "cwd": "/home/example-user/myproject"
+  },
+  "expect": {
+    "decision": "ask",
+    "rule": "git",
+    "reason_code": "git.stash_create"
+  }
+}

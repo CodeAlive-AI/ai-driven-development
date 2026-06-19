@@ -27,12 +27,12 @@ type FixtureExpect struct {
 
 // Fixture is one test case stored as testdata/fixtures/<name>.json.
 type Fixture struct {
-	Name        string        `json:"name"`
-	Description string        `json:"description,omitempty"`
-	Skip        string        `json:"skip,omitempty"` // non-empty = skip with this reason
+	Name        string            `json:"name"`
+	Description string            `json:"description,omitempty"`
+	Skip        string            `json:"skip,omitempty"` // non-empty = skip with this reason
 	Env         map[string]string `json:"env,omitempty"`
-	Input       FixtureInput  `json:"input"`
-	Expect      FixtureExpect `json:"expect"`
+	Input       FixtureInput      `json:"input"`
+	Expect      FixtureExpect     `json:"expect"`
 }
 
 func TestGoldenFixtures(t *testing.T) {
@@ -111,6 +111,40 @@ func decisionFor(in FixtureInput) Decision {
 	triggers := reg.triggerSet()
 	sp := NewSafePaths(in.Cwd, nil)
 	return evaluate(cmd, triggers, reg, &RuleEnv{HookCwd: in.Cwd, SafePaths: sp})
+}
+
+func TestRenderHookOutputAdapters(t *testing.T) {
+	ask := Decision{
+		Level:      LevelAsk,
+		Rule:       "rm",
+		Reason:     "rm outside safe paths",
+		ReasonCode: "rm.outside_safe_path",
+		Context:    "target=/etc",
+	}
+
+	t.Run("claude_ask", func(t *testing.T) {
+		out := string(renderHookOutput(AdapterClaude, ask))
+		if !strings.Contains(out, `"permissionDecision":"ask"`) {
+			t.Fatalf("expected Claude ask output, got %s", out)
+		}
+	})
+
+	t.Run("codex_ask_maps_to_deny", func(t *testing.T) {
+		out := string(renderHookOutput(AdapterCodex, ask))
+		if !strings.Contains(out, `"permissionDecision":"deny"`) {
+			t.Fatalf("expected Codex deny output, got %s", out)
+		}
+		if strings.Contains(out, `"permissionDecision":"ask"`) {
+			t.Fatalf("Codex output must not use unsupported ask: %s", out)
+		}
+	})
+
+	t.Run("codex_allow_is_silent", func(t *testing.T) {
+		out := renderHookOutput(AdapterCodex, Decision{Level: LevelAllow})
+		if len(out) != 0 {
+			t.Fatalf("expected silent Codex allow output, got %s", string(out))
+		}
+	})
 }
 
 // BenchmarkEvaluate measures hot-path latency for the orchestrator. Two
