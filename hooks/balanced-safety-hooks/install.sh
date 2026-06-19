@@ -27,16 +27,21 @@ set -euo pipefail
 
 usage() {
     cat <<EOF
-Usage: $0 [--shadow|--dry-run|--live|--uninstall] [--claude|--codex|--both]
+Usage: $0 [--shadow|--dry-run|--live|--uninstall] [--claude|--codex|--both] [--codex-native-prompts]
 
 Default mode: --shadow (always-allow + log everything).
 Default agent: --claude.
+
+Codex note: --live is fail-closed by default. Use --codex-native-prompts
+only when you intentionally want selected bash-guard ask decisions to defer
+to Codex execpolicy prompt rules.
 EOF
 }
 
 mode="shadow"
 agent="claude"
 replace_legacy=0
+codex_native_prompts=0
 for arg in "$@"; do
     case "$arg" in
         --shadow)         mode="shadow" ;;
@@ -47,6 +52,7 @@ for arg in "$@"; do
         --codex)          agent="codex" ;;
         --both)           agent="both" ;;
         --replace-legacy) replace_legacy=1 ;;
+        --codex-native-prompts) codex_native_prompts=1 ;;
         -h|--help)        usage; exit 0 ;;
         *) echo "Unknown arg: $arg"; usage; exit 2 ;;
     esac
@@ -128,7 +134,7 @@ hook_entry_json() {
     local adapter="$2"
     local env_prefix="BASH_GUARD_ADAPTER=$adapter"
     local entry
-    if [[ "$adapter" == "codex" && "$mode" == "live" ]]; then
+    if [[ "$adapter" == "codex" && "$mode" == "live" && "$codex_native_prompts" == 1 ]]; then
         env_prefix="$env_prefix BASH_GUARD_CODEX_DEFER_REASON_CODES=supabase.db_push"
     fi
     case "$mode" in
@@ -304,7 +310,9 @@ install_selected_agents() {
         codex|both)
             create_symlink "$CODEX_HOOK_DIR"
             patch_codex_hooks_install
-            patch_codex_rules_install
+            if [[ "$codex_native_prompts" == 1 ]]; then
+                patch_codex_rules_install
+            fi
             ;;
     esac
 }
@@ -343,7 +351,7 @@ case "$mode" in
         echo "  Codex verify:  jq '.hooks.PreToolUse' $CODEX_HOOKS"
         echo "  Selftest: $REPO_SRC_DIR/bash_guard.bin --selftest"
         echo "  Restart the agent. In Codex CLI/App, open /hooks and trust the new hook if prompted."
-        echo "  Codex prompts require approval_policy granular.rules=true (or an interactive approval policy)."
+        echo "  Codex live mode is fail-closed by default; --codex-native-prompts enables experimental execpolicy prompts."
         ;;
     uninstall)
         echo "Uninstalling bash-guard (agent: $agent)"
