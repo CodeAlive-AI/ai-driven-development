@@ -346,7 +346,7 @@ func selfDir() string {
 }
 
 func versionString() string {
-	return "bash-guard 0.3.1"
+	return "bash-guard 0.3.2"
 }
 
 // runSelfTest is a manual smoke check: it runs the parser on a couple of

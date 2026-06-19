@@ -42,6 +42,8 @@ cd ai-driven-development/hooks/balanced-safety-hooks
 
 ./install.sh --codex --live  # install for Codex CLI / Codex App
 ./install.sh --both --live   # install for Claude Code and Codex
+# Optional, experimental Codex native prompts for selected reason codes:
+./install.sh --codex --live --codex-native-prompts
 ```
 
 What `install.sh` does, idempotently:
@@ -64,7 +66,9 @@ Known limitation: as of June 2026, Codex `PreToolUse` supports `allow` for rewri
 For that reason, bash-guard's Codex adapter uses a hybrid:
 
 - Default risky decisions emit `permissionDecision: "deny"` so they cannot silently pass.
-- A small explicit allowlist of reason codes can be deferred to Codex execpolicy rules with `BASH_GUARD_CODEX_DEFER_REASON_CODES`. The installer configures `supabase.db_push` this way and adds a matching `prefix_rule(... decision="prompt")`, so `supabase db push` gets Codex's native approval prompt while unrelated dangerous commands stay blocked by the hook.
+- A small explicit allowlist of reason codes can be deferred to Codex execpolicy rules with `BASH_GUARD_CODEX_DEFER_REASON_CODES`, but this is opt-in via `--codex-native-prompts`. The installer then configures `supabase.db_push` this way and adds a matching `prefix_rule(... decision="prompt")`, so `supabase db push` can use Codex's native approval prompt while unrelated dangerous commands stay blocked by the hook.
+
+Treat `--codex-native-prompts` as a UX feature, not as the primary safety boundary. Codex has had runtime paths where `codex execpolicy check` reports `prompt`, but the actual tool run does not surface the prompt under full access (see [openai/codex#25312](https://github.com/openai/codex/issues/25312)). If you need fail-closed behavior, use plain `--codex --live` and let bash-guard block risky commands directly.
 
 For native Codex rule prompts to surface under full access, use a granular approval policy with `rules = true`:
 
@@ -180,7 +184,7 @@ If you'd rather observe before any prompts hit your workflow, `--shadow` logs ev
 
 When you see asks/blocks on legitimate work, add the project root to the installed `trusted-projects.toml` (`~/.claude/hooks/bash-guard/trusted-projects.toml` or `~/.codex/hooks/bash-guard/trusted-projects.toml`) and put project-specific safe paths in `<repo>/.claude/bash-guard.toml` or `<repo>/.codex/bash-guard.toml`. Switching modes is just rerunning the installer.
 
-For Codex commands that should behave like Claude Code's `ask` rather than hard `deny`, add both pieces:
+For Codex commands that should behave like Claude Code's `ask` rather than hard `deny`, enable `--codex-native-prompts` and add both pieces:
 
 1. A Codex `prefix_rule(... decision="prompt")`.
 2. The matching bash-guard `reason_code` in `BASH_GUARD_CODEX_DEFER_REASON_CODES`.

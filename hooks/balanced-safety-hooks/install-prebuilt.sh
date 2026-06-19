@@ -22,6 +22,9 @@
 #   --claude      Install for Claude Code (default).
 #   --codex       Install for Codex CLI / Codex App.
 #   --both        Install for both agents.
+#   --codex-native-prompts
+#                 Experimental: defer selected Codex ask decisions to
+#                 execpolicy prompt rules instead of fail-closed deny.
 
 set -euo pipefail
 
@@ -36,6 +39,7 @@ CODEX_RULES="$HOME/.codex/rules/default.rules"
 
 mode="live"
 agent="claude"
+codex_native_prompts=0
 for arg in "$@"; do
     case "$arg" in
         --live)      mode="live" ;;
@@ -45,6 +49,7 @@ for arg in "$@"; do
         --claude)    agent="claude" ;;
         --codex)     agent="codex" ;;
         --both)      agent="both" ;;
+        --codex-native-prompts) codex_native_prompts=1 ;;
         -h|--help)
             sed -n '2,/^$/p' "$0" | sed 's/^# \{0,1\}//'
             exit 0
@@ -168,7 +173,7 @@ hook_entry_json() {
     local target="$1"
     local adapter="$2"
     local env_prefix="BASH_GUARD_ADAPTER=$adapter"
-    if [[ "$adapter" == "codex" && "$mode" == "live" ]]; then
+    if [[ "$adapter" == "codex" && "$mode" == "live" && "$codex_native_prompts" == 1 ]]; then
         env_prefix="$env_prefix BASH_GUARD_CODEX_DEFER_REASON_CODES=supabase.db_push"
     fi
     case "$mode" in
@@ -253,7 +258,9 @@ patch_selected_install() {
     case "$agent" in
         codex|both)
             patch_codex_hooks_install
-            patch_codex_rules_install
+            if [[ "$codex_native_prompts" == 1 ]]; then
+                patch_codex_rules_install
+            fi
             ;;
     esac
 }
@@ -348,7 +355,7 @@ case "$mode" in
         echo "  Codex selftest:  $CODEX_BIN_PATH --selftest"
         echo "  Audit:           tail -f ~/.claude/logs/bash-guard.jsonl | jq '.'"
         echo "  Restart the agent. In Codex CLI/App, open /hooks and trust the new hook if prompted."
-        echo "  Codex prompts require approval_policy granular.rules=true (or an interactive approval policy)."
+        echo "  Codex live mode is fail-closed by default; --codex-native-prompts enables experimental execpolicy prompts."
         ;;
     uninstall)
         echo "Uninstalling bash-guard (agent: $agent)"
