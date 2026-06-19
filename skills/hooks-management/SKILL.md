@@ -27,13 +27,23 @@ Manage hooks and automation through natural language commands.
 
 **Handler types**: `command`, `http`, `mcp_tool`, `prompt`, `agent`. Some events are command-only (PostCompact, PermissionDenied, Elicitation/ElicitationResult, FileChanged, CwdChanged, ConfigChange, InstructionsLoaded, WorktreeCreate/Remove, SubagentStart, StopFailure, TeammateIdle, Setup, SessionStart, SessionEnd, Notification).
 
-**Settings Files**:
+**Claude Code Settings Files**:
 - User-wide: `~/.claude/settings.json`
 - Project: `.claude/settings.json`
 - Local (not committed): `.claude/settings.local.json`
 - Drop-in policy fragments: `~/.claude/managed-settings.d/` (managed-settings only)
 
-**Default control mechanism for PreToolUse**: emit JSON on stdout with `hookSpecificOutput.permissionDecision` set to `"allow"`, `"deny"`, **`"ask"`** (triggers the built-in user confirmation prompt), or **`"defer"`** (pause headless tool calls; resume with `-p --resume`). See [Decision Control](#decision-control-pretooluse). Do NOT roll your own confirmation schemes (env-var flags, interactive `osascript` prompts, bypass tokens) — those break the built-in UX and silently fail under existing `permissions.allow` entries.
+**Codex CLI / Codex App Settings Files (current as of 2026-06)**:
+- User config: `~/.codex/config.toml`
+- User hooks: `~/.codex/hooks.json` or inline `[hooks]` tables in `~/.codex/config.toml`
+- Project hooks: `<repo>/.codex/hooks.json` or inline `[hooks]` tables in `<repo>/.codex/config.toml` (trusted projects only)
+- Codex App and CLI share these config layers. In the App/IDE, the settings UI opens the same `config.toml`.
+- Hooks are enabled by default. Use `[features].hooks = false` to disable them. `codex_hooks` is a deprecated alias.
+- Non-managed Codex command hooks must be reviewed/trusted with `/hooks`; changed hook definitions are skipped until trusted.
+
+**Claude Code default control mechanism for PreToolUse**: emit JSON on stdout with `hookSpecificOutput.permissionDecision` set to `"allow"`, `"deny"`, **`"ask"`** (triggers the built-in user confirmation prompt), or **`"defer"`** (pause headless tool calls; resume with `-p --resume`). See [Decision Control](#decision-control-pretooluse). Do NOT roll your own confirmation schemes (env-var flags, interactive `osascript` prompts, bypass tokens) — those break the built-in UX and silently fail under existing `permissions.allow` entries.
+
+**Codex exception**: Codex `PreToolUse` does not support `"ask"` yet. In Codex configs, use `deny` / exit code 2 for hard blocks, `additionalContext` for advisory context, or Codex approval policy/permissions for native prompts.
 
 **Disable all hooks**: set `disableAllHooks: true` in settings.json.
 
@@ -76,9 +86,9 @@ Use Edit tool for modifications, Write tool for new files.
 | "block .env file changes" | PreToolUse | Edit\|Write | Exit code 2 blocks |
 | "notify me when done" | Notification | "" | Desktop notification |
 | "run tests after code changes" | PostToolUse | Edit\|Write | Filter by extension |
-| "ask before dangerous commands" | PreToolUse | Bash | Emit JSON `permissionDecision: "ask"` (built-in confirm UI) |
-| "require manual approval for X" | PreToolUse | Bash/Edit/Write | Same — emit JSON `permissionDecision: "ask"`, NOT exit 2 |
-| "block unless confirmed" | PreToolUse | Bash | Same — JSON `"ask"` lets the user approve per call |
+| "ask before dangerous commands" | PreToolUse | Bash | Claude Code: emit JSON `permissionDecision: "ask"` (built-in confirm UI). Codex: use approval policy if possible; hook-level `ask` is unsupported. |
+| "require manual approval for X" | PreToolUse | Bash/Edit/Write | Claude Code: emit JSON `permissionDecision: "ask"`, NOT exit 2. Codex: choose policy prompt or hard block. |
+| "block unless confirmed" | PreToolUse | Bash | Claude Code: JSON `"ask"` lets the user approve per call. Codex: no hook-created confirmation prompt yet. |
 
 ### Hook Configuration Template
 
@@ -218,9 +228,9 @@ exit 0  # Allow (silent)
 }
 ```
 
-## Decision Control (PreToolUse)
+## Decision Control (Claude Code PreToolUse)
 
-PreToolUse hooks control tool execution by emitting JSON on stdout. This is the **default mechanism** — use it instead of exit codes whenever the intent is richer than "silently allow / hard block", especially when the user should be asked to confirm.
+Claude Code PreToolUse hooks control tool execution by emitting JSON on stdout. This is the **default mechanism** — use it instead of exit codes whenever the intent is richer than "silently allow / hard block", especially when the user should be asked to confirm.
 
 | `permissionDecision` | Behavior | Use for |
 |----------------------|----------|---------|
@@ -275,15 +285,26 @@ If the tool call already matches an entry in `.claude/settings.local.json` → `
 
 See [references/claude-event-schemas.md](references/claude-event-schemas.md) for the full output schema.
 
-## Codex CLI Hooks
+## Codex CLI / Codex App Hooks
 
-As of CLI v0.124.0 (April 2026) Codex hooks are **stable** and support six lifecycle events: `SessionStart`, `UserPromptSubmit`, `PreToolUse`, `PermissionRequest`, `PostToolUse`, `Stop`. Hooks live inline in `config.toml` (preferred) or in `hooks.json`.
+As of June 2026, Codex hooks are enabled by default and are shared by Codex CLI, Codex IDE extension, and Codex App/desktop sessions through the same `~/.codex` and trusted project `.codex` configuration layers.
 
-Enable the feature flag:
+Current Codex lifecycle events:
+- `SessionStart`
+- `SubagentStart`
+- `PreToolUse`
+- `PermissionRequest`
+- `PostToolUse`
+- `PreCompact`
+- `PostCompact`
+- `UserPromptSubmit`
+- `SubagentStop`
+- `Stop`
+
+Do not add the old feature flag for new configs. If hooks must be disabled, use:
 ```toml
-# ~/.codex/config.toml
 [features]
-codex_hooks = true
+hooks = false
 ```
 
 Minimal PreToolUse blocking hook:
@@ -298,7 +319,36 @@ timeout = 30
 statusMessage = "Checking Bash command"
 ```
 
-Blocking semantics: exit code `2` blocks (stderr is reason), or emit JSON `{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "deny", "permissionDecisionReason": "..."}}`. Starlark rules in `.codex/rules/` are still useful for static command policy and complement hooks.
+Equivalent `~/.codex/hooks.json`:
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 ~/.codex/hooks/policy.py",
+            "timeout": 30,
+            "statusMessage": "Checking Bash command"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Prefer one representation per config layer: either `hooks.json` or inline `[hooks]`. Codex loads both and warns if both exist in the same layer.
+
+Blocking semantics: exit code `2` blocks (stderr is reason), or emit JSON `{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "deny", "permissionDecisionReason": "..."}}`.
+
+Important Codex gap: `PreToolUse` currently does **not** support `permissionDecision: "ask"`. Returning `"ask"` makes the hook run fail and Codex continues the tool call. For "ask before X" in Codex, use Codex's approval policy/permissions where possible; otherwise choose between a hard hook block (`deny`/exit 2) and a non-blocking advisory `additionalContext`.
+
+`PermissionRequest` only fires when Codex is already about to ask for approval. It can return `allow`, `deny`, or no decision; it cannot create a prompt for commands that Codex would otherwise run without asking.
+
+Codex `PreToolUse` can intercept Bash, `apply_patch` file edits, and MCP tool calls, but it is not a complete enforcement boundary: interception of richer shell paths is incomplete, and WebSearch / non-shell / non-MCP tool calls are out of scope.
 
 See [references/codex-hooks.md](references/codex-hooks.md) for full Codex hooks reference, all event input/output schemas, common patterns, and migration from the legacy `AfterAgent` / `AfterToolUse` events.
 

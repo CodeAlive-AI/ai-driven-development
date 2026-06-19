@@ -19,8 +19,10 @@ const (
 // AuditEntry is one JSONL row.
 type AuditEntry struct {
 	TS          string  `json:"ts"`
-	Mode        string  `json:"mode"` // live | shadow | dry-run
+	Adapter     string  `json:"adapter,omitempty"` // claude | codex
+	Mode        string  `json:"mode"`              // live | shadow | dry-run
 	Decision    string  `json:"decision"`
+	Emitted     string  `json:"emitted_decision,omitempty"`
 	Rule        string  `json:"rule"`
 	ReasonCode  string  `json:"reason_code"`
 	LatencyMS   float64 `json:"latency_ms"`

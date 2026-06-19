@@ -3,10 +3,12 @@
 #
 # What it does:
 #   1. Verifies Go is installed (>= 1.21).
-#   2. Creates a symlink at ~/.claude/hooks/bash-guard pointing at this src/.
+#   2. Creates a symlink at ~/.claude/hooks/bash-guard and/or
+#      ~/.codex/hooks/bash-guard pointing at this src/.
 #   3. Triggers a first build (warms Go cache).
-#   4. Patches ~/.claude/settings.json to add the bash-guard hook entry,
-#      preserving the existing hooks. Uses jq for JSON-aware editing.
+#   4. Patches Claude Code settings.json and/or Codex hooks.json to add the
+#      bash-guard hook entry, preserving existing hooks. Uses jq for JSON-aware
+#      editing.
 #
 # Re-running is safe: the symlink is recreated, the build is a no-op, and
 # the settings.json patch is a no-op when our entry already exists.
@@ -17,18 +19,23 @@
 #   --dry-run   Add hook with BASH_GUARD_DRY_RUN=1 (logs `would_decide`).
 #   --live      Add hook with no env override (real enforcement).
 #   --uninstall Remove our hook entry from settings.json AND delete the symlink.
+#   --claude    Install for Claude Code (default).
+#   --codex     Install for Codex CLI / Codex App.
+#   --both      Install for both agents.
 
 set -euo pipefail
 
 usage() {
     cat <<EOF
-Usage: $0 [--shadow|--dry-run|--live|--uninstall]
+Usage: $0 [--shadow|--dry-run|--live|--uninstall] [--claude|--codex|--both]
 
 Default mode: --shadow (always-allow + log everything).
+Default agent: --claude.
 EOF
 }
 
 mode="shadow"
+agent="claude"
 replace_legacy=0
 for arg in "$@"; do
     case "$arg" in
@@ -36,6 +43,9 @@ for arg in "$@"; do
         --dry-run)        mode="dry-run" ;;
         --live)           mode="live" ;;
         --uninstall)      mode="uninstall" ;;
+        --claude)         agent="claude" ;;
+        --codex)          agent="codex" ;;
+        --both)           agent="both" ;;
         --replace-legacy) replace_legacy=1 ;;
         -h|--help)        usage; exit 0 ;;
         *) echo "Unknown arg: $arg"; usage; exit 2 ;;
@@ -43,8 +53,10 @@ for arg in "$@"; do
 done
 
 REPO_SRC_DIR="$(cd -- "$(dirname -- "$0")" && pwd)/src"
-HOOK_DIR="$HOME/.claude/hooks/bash-guard"
-SETTINGS="$HOME/.claude/settings.json"
+CLAUDE_HOOK_DIR="$HOME/.claude/hooks/bash-guard"
+CLAUDE_SETTINGS="$HOME/.claude/settings.json"
+CODEX_HOOK_DIR="$HOME/.codex/hooks/bash-guard"
+CODEX_HOOKS="$HOME/.codex/hooks.json"
 
 require_jq() {
     if ! command -v jq >/dev/null 2>&1; then
@@ -66,27 +78,29 @@ require_go() {
     fi
 }
 
-backup_settings() {
-    if [[ -f "$SETTINGS" ]]; then
+backup_file() {
+    local path="$1"
+    if [[ -f "$path" ]]; then
         local ts
         ts="$(date +%Y%m%d-%H%M%S)"
-        cp "$SETTINGS" "$SETTINGS.bak.$ts"
-        echo "  backup: $SETTINGS.bak.$ts"
+        cp "$path" "$path.bak.$ts"
+        echo "  backup: $path.bak.$ts"
     fi
 }
 
 create_symlink() {
-    if [[ -e "$HOOK_DIR" && ! -L "$HOOK_DIR" ]]; then
-        echo "error: $HOOK_DIR exists and is not a symlink." >&2
+    local hook_dir="$1"
+    if [[ -e "$hook_dir" && ! -L "$hook_dir" ]]; then
+        echo "error: $hook_dir exists and is not a symlink." >&2
         echo "       Move/remove it manually before installing." >&2
         exit 1
     fi
-    if [[ -L "$HOOK_DIR" ]]; then
+    if [[ -L "$hook_dir" ]]; then
         local current
-        current="$(readlink "$HOOK_DIR")"
+        current="$(readlink "$hook_dir")"
         if [[ "$current" != "$REPO_SRC_DIR" ]]; then
             echo "  replacing existing symlink ($current -> $REPO_SRC_DIR)"
-            rm "$HOOK_DIR"
+            rm "$hook_dir"
         else
             # Explicit return 0 — without it, `return` inherits the exit
             # status of the preceding `[[ ... ]]` test (1 when paths match)
@@ -94,9 +108,9 @@ create_symlink() {
             return 0
         fi
     fi
-    mkdir -p "$(dirname "$HOOK_DIR")"
-    ln -s "$REPO_SRC_DIR" "$HOOK_DIR"
-    echo "  linked: $HOOK_DIR -> $REPO_SRC_DIR"
+    mkdir -p "$(dirname "$hook_dir")"
+    ln -s "$REPO_SRC_DIR" "$hook_dir"
+    echo "  linked: $hook_dir -> $REPO_SRC_DIR"
 }
 
 first_build() {
@@ -109,23 +123,24 @@ first_build() {
 # verbatim. We point directly at the .bin to avoid a wrapper layer that
 # costs ~50 ms per invocation; rebuilds are explicit (`make build`).
 hook_entry_json() {
-    local target='~/.claude/hooks/bash-guard/bash_guard.bin'
+    local target="$1"
+    local adapter="$2"
     local entry
     case "$mode" in
-        shadow)  entry="{\"type\":\"command\",\"command\":\"BASH_GUARD_SHADOW=1 $target\"}" ;;
-        dry-run) entry="{\"type\":\"command\",\"command\":\"BASH_GUARD_DRY_RUN=1 $target\"}" ;;
-        live)    entry="{\"type\":\"command\",\"command\":\"$target\"}" ;;
+        shadow)  entry="{\"type\":\"command\",\"command\":\"BASH_GUARD_ADAPTER=$adapter BASH_GUARD_SHADOW=1 $target\",\"timeout\":30,\"statusMessage\":\"Checking Bash command\"}" ;;
+        dry-run) entry="{\"type\":\"command\",\"command\":\"BASH_GUARD_ADAPTER=$adapter BASH_GUARD_DRY_RUN=1 $target\",\"timeout\":30,\"statusMessage\":\"Checking Bash command\"}" ;;
+        live)    entry="{\"type\":\"command\",\"command\":\"BASH_GUARD_ADAPTER=$adapter $target\",\"timeout\":30,\"statusMessage\":\"Checking Bash command\"}" ;;
     esac
     printf '%s' "$entry"
 }
 
-patch_settings_install() {
+patch_claude_settings_install() {
     require_jq
-    backup_settings
-    [[ -f "$SETTINGS" ]] || echo '{}' > "$SETTINGS"
+    backup_file "$CLAUDE_SETTINGS"
+    [[ -f "$CLAUDE_SETTINGS" ]] || { mkdir -p "$(dirname "$CLAUDE_SETTINGS")"; echo '{}' > "$CLAUDE_SETTINGS"; }
 
     local hook_entry
-    hook_entry="$(hook_entry_json)"
+    hook_entry="$(hook_entry_json '~/.claude/hooks/bash-guard/bash_guard.bin' claude)"
 
     # 1. Make sure hooks.PreToolUse exists.
     # 2. Find or create the {matcher: "Bash", hooks: [...]} block.
@@ -144,9 +159,33 @@ patch_settings_install() {
       # If no Bash matcher block existed at all, add a new one.
       ( if any(.hooks.PreToolUse[]?; .matcher == "Bash") then .
         else .hooks.PreToolUse += [{"matcher":"Bash","hooks":[$entry]}] end )
-    ' "$SETTINGS" > "$tmp"
-    mv "$tmp" "$SETTINGS"
-    echo "  patched: $SETTINGS"
+    ' "$CLAUDE_SETTINGS" > "$tmp"
+    mv "$tmp" "$CLAUDE_SETTINGS"
+    echo "  patched: $CLAUDE_SETTINGS"
+}
+
+patch_codex_hooks_install() {
+    require_jq
+    backup_file "$CODEX_HOOKS"
+    [[ -f "$CODEX_HOOKS" ]] || { mkdir -p "$(dirname "$CODEX_HOOKS")"; echo '{"hooks":{}}' > "$CODEX_HOOKS"; }
+
+    local hook_entry tmp
+    hook_entry="$(hook_entry_json '~/.codex/hooks/bash-guard/bash_guard.bin' codex)"
+    tmp="$(mktemp)"
+    jq --argjson entry "$hook_entry" '
+      .hooks //= {} |
+      .hooks.PreToolUse //= [] |
+      .hooks.PreToolUse |=
+        ( map( if .matcher == "^Bash$" or .matcher == "Bash" then
+                 .hooks //= [] |
+                 .hooks |= ( map(select((.command // "") | test("bash-guard") | not)) + [$entry] ) |
+                 .matcher = "^Bash$"
+               else . end ) ) |
+      ( if any(.hooks.PreToolUse[]?; .matcher == "^Bash$" or .matcher == "Bash") then .
+        else .hooks.PreToolUse += [{"matcher":"^Bash$","hooks":[$entry]}] end )
+    ' "$CODEX_HOOKS" > "$tmp"
+    mv "$tmp" "$CODEX_HOOKS"
+    echo "  patched: $CODEX_HOOKS"
 }
 
 # Remove legacy shell-hook entries that bash-guard now supersedes.
@@ -154,7 +193,7 @@ patch_settings_install() {
 # Easy rollback: restore from $SETTINGS.bak.<timestamp>.
 patch_settings_remove_legacy() {
     require_jq
-    [[ -f "$SETTINGS" ]] || return
+    [[ -f "$CLAUDE_SETTINGS" ]] || return
     local legacy_pattern='safety-net-ask|validate-rm|supabase-safety|bw-permission-check|docker-prune-permission|infra-safety'
     local tmp
     tmp="$(mktemp)"
@@ -165,15 +204,15 @@ patch_settings_remove_legacy() {
                  .hooks |= map(select((.command // "") | test($pat) | not))
                else . end )
       else . end
-    ' "$SETTINGS" > "$tmp"
-    mv "$tmp" "$SETTINGS"
-    echo "  removed legacy shell-hook entries from $SETTINGS"
+    ' "$CLAUDE_SETTINGS" > "$tmp"
+    mv "$tmp" "$CLAUDE_SETTINGS"
+    echo "  removed legacy shell-hook entries from $CLAUDE_SETTINGS"
 }
 
-patch_settings_uninstall() {
+patch_claude_settings_uninstall() {
     require_jq
-    [[ -f "$SETTINGS" ]] || return
-    backup_settings
+    [[ -f "$CLAUDE_SETTINGS" ]] || return
+    backup_file "$CLAUDE_SETTINGS"
     local tmp
     tmp="$(mktemp)"
     jq '
@@ -183,33 +222,84 @@ patch_settings_uninstall() {
                  .hooks |= map(select((.command // "") | test("bash-guard") | not))
                else . end )
       else . end
-    ' "$SETTINGS" > "$tmp"
-    mv "$tmp" "$SETTINGS"
-    echo "  removed bash-guard from $SETTINGS"
+    ' "$CLAUDE_SETTINGS" > "$tmp"
+    mv "$tmp" "$CLAUDE_SETTINGS"
+    echo "  removed bash-guard from $CLAUDE_SETTINGS"
+}
+
+patch_codex_hooks_uninstall() {
+    require_jq
+    [[ -f "$CODEX_HOOKS" ]] || return
+    backup_file "$CODEX_HOOKS"
+    local tmp
+    tmp="$(mktemp)"
+    jq '
+      if .hooks.PreToolUse then
+        .hooks.PreToolUse |=
+          map( if .matcher == "^Bash$" or .matcher == "Bash" then
+                 .hooks |= map(select((.command // "") | test("bash-guard") | not))
+               else . end )
+      else . end
+    ' "$CODEX_HOOKS" > "$tmp"
+    mv "$tmp" "$CODEX_HOOKS"
+    echo "  removed bash-guard from $CODEX_HOOKS"
+}
+
+install_selected_agents() {
+    case "$agent" in
+        claude|both)
+            create_symlink "$CLAUDE_HOOK_DIR"
+            patch_claude_settings_install
+            if [[ "$replace_legacy" == 1 ]]; then
+                patch_settings_remove_legacy
+            fi
+            ;;
+    esac
+    case "$agent" in
+        codex|both)
+            create_symlink "$CODEX_HOOK_DIR"
+            patch_codex_hooks_install
+            ;;
+    esac
+}
+
+uninstall_selected_agents() {
+    case "$agent" in
+        claude|both)
+            patch_claude_settings_uninstall
+            if [[ -L "$CLAUDE_HOOK_DIR" ]]; then
+                rm "$CLAUDE_HOOK_DIR"
+                echo "  removed symlink: $CLAUDE_HOOK_DIR"
+            fi
+            ;;
+    esac
+    case "$agent" in
+        codex|both)
+            patch_codex_hooks_uninstall
+            if [[ -L "$CODEX_HOOK_DIR" ]]; then
+                rm "$CODEX_HOOK_DIR"
+                echo "  removed symlink: $CODEX_HOOK_DIR"
+            fi
+            ;;
+    esac
 }
 
 case "$mode" in
     shadow|dry-run|live)
-        echo "Installing bash-guard ($mode mode)"
+        echo "Installing bash-guard ($mode mode, agent: $agent)"
         require_go
-        create_symlink
         first_build
-        patch_settings_install
-        if [[ "$replace_legacy" == 1 ]]; then
-            patch_settings_remove_legacy
-        fi
+        install_selected_agents
         echo
         echo "Done."
-        echo "  Verify: jq '.hooks.PreToolUse' $SETTINGS"
+        echo "  Claude verify: jq '.hooks.PreToolUse' $CLAUDE_SETTINGS"
+        echo "  Codex verify:  jq '.hooks.PreToolUse' $CODEX_HOOKS"
         echo "  Selftest: $REPO_SRC_DIR/bash_guard.bin --selftest"
+        echo "  Restart the agent. In Codex CLI/App, open /hooks and trust the new hook if prompted."
         ;;
     uninstall)
-        echo "Uninstalling bash-guard"
-        patch_settings_uninstall
-        if [[ -L "$HOOK_DIR" ]]; then
-            rm "$HOOK_DIR"
-            echo "  removed symlink: $HOOK_DIR"
-        fi
+        echo "Uninstalling bash-guard (agent: $agent)"
+        uninstall_selected_agents
         echo "Done."
         ;;
 esac

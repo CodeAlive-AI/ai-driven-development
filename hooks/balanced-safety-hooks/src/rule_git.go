@@ -2,7 +2,8 @@ package main
 
 import "strings"
 
-// GitRule covers git operations that lose work or rewrite history:
+// GitRule covers git operations that lose work, rewrite history, or change
+// the agent's working context in ways the user must opt into:
 //
 //   - push -f / --force / --force-with-lease / +<refspec>  → force push
 //   - push --delete / push -d / push origin :<branch>      → remote ref deletion
@@ -12,14 +13,20 @@ import "strings"
 //   - restore .  (without --source / --staged)             → working-tree wipe
 //   - branch -D / --delete --force                         → force-delete unmerged branch
 //   - stash drop / clear                                   → stash loss
+//   - stash (no verb) / push / save                        → silently sweeps the user's
+//     uncommitted work into a stash
+//     that's easy to forget
+//   - checkout -b / -B <name> / switch -c / -C <name>      → creates a new branch and
+//     switches off the user's branch
 //   - filter-branch / filter-repo                          → history rewrite
 //   - bfg (BFG Repo-Cleaner)                               → history rewrite
 //
-// Rationale: each of these is one keystroke from "lost work" — uncommitted
-// changes, untracked files, unmerged branches, stashed work, or commits
-// removed from shared history. They're rare in normal flow and almost always
-// intentional; an ask costs one click. The lossy edges of git are exactly
-// where banner-blindness Allow-mashing hurts most.
+// Rationale: each of these is one keystroke from "lost work" or "I'm not
+// where I thought I was" — uncommitted changes, untracked files, unmerged
+// branches, stashed work, commits removed from shared history, or a branch
+// silently swapped out from under the user. They're rare in normal flow and
+// almost always intentional; an ask costs one click. The lossy edges of git
+// are exactly where banner-blindness Allow-mashing hurts most.
 type GitRule struct{}
 
 func (GitRule) Name() string { return "git" }
@@ -67,11 +74,27 @@ func (r GitRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 		case "checkout":
 			// Trigger on pathspec form: `.` (wipe everything) or `--`
 			// (anything after `--` is a filesystem-side wipe). Plain branch
-			// switches (`git checkout main`, `git checkout -b feature`) have
-			// neither and pass through.
+			// switches (`git checkout main`) pass through.
 			if hasArg(cmd.Args, ".") || hasArg(cmd.Args, "--") {
 				return mkAsk(r.Name(), "git.checkout_pathspec",
 					"git checkout with pathspec discards working-tree changes", argv(cmd))
+			}
+			// `-b <name>` / `-B <name>` create a new branch. The agent should
+			// not silently invent a branch without the user's say-so.
+			for _, a := range cmd.Args {
+				if a == "-b" || a == "-B" {
+					return mkAsk(r.Name(), "git.branch_create",
+						"git checkout -b creates a new branch; confirm with the user first", argv(cmd))
+				}
+			}
+		case "switch":
+			// `-c <name>` / `-C <name>` create a new branch. Plain
+			// `git switch main` switches between existing branches and is fine.
+			for _, a := range cmd.Args {
+				if a == "-c" || a == "-C" {
+					return mkAsk(r.Name(), "git.branch_create",
+						"git switch -c creates a new branch; confirm with the user first", argv(cmd))
+				}
 			}
 		case "restore":
 			// `git restore .` wipes the working tree to HEAD. `--source=...`
@@ -113,13 +136,24 @@ func (r GitRule) Check(cmd ExecutedCommand, _ *RuleEnv) *Decision {
 					"git branch -D force-deletes a branch (drops unmerged commits)", argv(cmd))
 			}
 		case "stash":
-			// `drop` / `clear` lose stashed work. `pop` is intentional restore;
-			// `apply`, `push`, `list`, `show` are safe.
+			// `drop` / `clear` lose stashed work.
+			// Bare `git stash`, `git stash push`, `git stash save` silently
+			// sweep the user's uncommitted work into a stash that's easy to
+			// forget about — ask before doing it. `pop`, `apply`, `list`,
+			// `show`, `branch` are safe.
 			rest := cmd.Args[indexOf(cmd.Args, "stash")+1:]
 			second := firstNonFlag(rest)
 			if second == "drop" || second == "clear" {
 				return mkAsk(r.Name(), "git.stash_loss",
 					"git stash "+second+" discards stashed work", argv(cmd))
+			}
+			if second == "" || second == "push" || second == "save" {
+				verb := second
+				if verb == "" {
+					verb = "<implicit push>"
+				}
+				return mkAsk(r.Name(), "git.stash_create",
+					"git stash "+verb+" sweeps the user's uncommitted work into a stash; confirm first", argv(cmd))
 			}
 		case "filter-branch":
 			return mkAsk(r.Name(), "git.history_rewrite",
