@@ -59,7 +59,19 @@ Codex CLI and Codex App share the same configuration layers: user config under `
 
 The installer uses `~/.codex/hooks.json` rather than adding inline `[hooks]` tables to `~/.codex/config.toml`, because Codex loads both representations and warns when one layer mixes them. Project-local hooks work only after the project is trusted. Non-managed command hooks must also be reviewed through `/hooks` before Codex runs them.
 
-Known limitation: as of June 2026, Codex `PreToolUse` supports `allow` for rewrites and `deny` for blocking, but not `ask`. Returning `permissionDecision: "ask"` is treated as a hook error and Codex continues the tool call. For that reason, bash-guard's Codex adapter emits no stdout for allow and emits `permissionDecision: "deny"` for risky commands in live mode.
+Known limitation: as of June 2026, Codex `PreToolUse` supports `allow` for rewrites and `deny` for blocking, but not `ask`. Returning `permissionDecision: "ask"` is treated as a hook error and Codex continues the tool call.
+
+For that reason, bash-guard's Codex adapter uses a hybrid:
+
+- Default risky decisions emit `permissionDecision: "deny"` so they cannot silently pass.
+- A small explicit allowlist of reason codes can be deferred to Codex execpolicy rules with `BASH_GUARD_CODEX_DEFER_REASON_CODES`. The installer configures `supabase.db_push` this way and adds a matching `prefix_rule(... decision="prompt")`, so `supabase db push` gets Codex's native approval prompt while unrelated dangerous commands stay blocked by the hook.
+
+For native Codex rule prompts to surface under full access, use a granular approval policy with `rules = true`:
+
+```toml
+default_permissions = ":danger-full-access"
+approval_policy = { granular = { sandbox_approval = false, rules = true, mcp_elicitations = false, request_permissions = false, skill_approval = false } }
+```
 
 ## Why this exists
 
@@ -167,6 +179,13 @@ Going straight to `--live` is fine — the worst case is a few extra ask prompts
 If you'd rather observe before any prompts hit your workflow, `--shadow` logs every would-be decision without prompting. Tail `~/.claude/logs/bash-guard.jsonl` (`tail -f … | jq '.'`); each entry has `would_decide`, `rule`, `reason_code`, `command_hash` (set `BASH_GUARD_LOG_COMMANDS=1` to log raw commands; off by default).
 
 When you see asks/blocks on legitimate work, add the project root to the installed `trusted-projects.toml` (`~/.claude/hooks/bash-guard/trusted-projects.toml` or `~/.codex/hooks/bash-guard/trusted-projects.toml`) and put project-specific safe paths in `<repo>/.claude/bash-guard.toml` or `<repo>/.codex/bash-guard.toml`. Switching modes is just rerunning the installer.
+
+For Codex commands that should behave like Claude Code's `ask` rather than hard `deny`, add both pieces:
+
+1. A Codex `prefix_rule(... decision="prompt")`.
+2. The matching bash-guard `reason_code` in `BASH_GUARD_CODEX_DEFER_REASON_CODES`.
+
+Never add a reason code to `BASH_GUARD_CODEX_DEFER_REASON_CODES` unless a matching Codex prompt rule exists; otherwise the hook would silently allow that risky command.
 
 ## Architecture
 

@@ -32,6 +32,7 @@ CLAUDE_SETTINGS="$HOME/.claude/settings.json"
 CODEX_BIN_DIR="$HOME/.codex/hooks/bash-guard"
 CODEX_BIN_PATH="$CODEX_BIN_DIR/bash_guard.bin"
 CODEX_HOOKS="$HOME/.codex/hooks.json"
+CODEX_RULES="$HOME/.codex/rules/default.rules"
 
 mode="live"
 agent="claude"
@@ -166,10 +167,14 @@ backup_file() {
 hook_entry_json() {
     local target="$1"
     local adapter="$2"
+    local env_prefix="BASH_GUARD_ADAPTER=$adapter"
+    if [[ "$adapter" == "codex" && "$mode" == "live" ]]; then
+        env_prefix="$env_prefix BASH_GUARD_CODEX_DEFER_REASON_CODES=supabase.db_push"
+    fi
     case "$mode" in
-        shadow)  printf '{"type":"command","command":"BASH_GUARD_ADAPTER=%s BASH_GUARD_SHADOW=1 %s","timeout":30,"statusMessage":"Checking Bash command"}'  "$adapter" "$target" ;;
-        dry-run) printf '{"type":"command","command":"BASH_GUARD_ADAPTER=%s BASH_GUARD_DRY_RUN=1 %s","timeout":30,"statusMessage":"Checking Bash command"}' "$adapter" "$target" ;;
-        live)    printf '{"type":"command","command":"BASH_GUARD_ADAPTER=%s %s","timeout":30,"statusMessage":"Checking Bash command"}'                       "$adapter" "$target" ;;
+        shadow)  printf '{"type":"command","command":"%s BASH_GUARD_SHADOW=1 %s","timeout":30,"statusMessage":"Checking Bash command"}'  "$env_prefix" "$target" ;;
+        dry-run) printf '{"type":"command","command":"%s BASH_GUARD_DRY_RUN=1 %s","timeout":30,"statusMessage":"Checking Bash command"}' "$env_prefix" "$target" ;;
+        live)    printf '{"type":"command","command":"%s %s","timeout":30,"statusMessage":"Checking Bash command"}'                       "$env_prefix" "$target" ;;
     esac
 }
 
@@ -218,12 +223,38 @@ patch_codex_hooks_install() {
     echo "  patched: $CODEX_HOOKS"
 }
 
+patch_codex_rules_install() {
+    mkdir -p "$(dirname "$CODEX_RULES")"
+    touch "$CODEX_RULES"
+    if grep -q 'bash-guard:begin supabase.db_push' "$CODEX_RULES"; then
+        echo "  rule present: $CODEX_RULES"
+        return
+    fi
+    backup_file "$CODEX_RULES"
+    cat >> "$CODEX_RULES" <<'EOF'
+
+# bash-guard:begin supabase.db_push
+prefix_rule(
+    pattern=["supabase", "db", "push"],
+    decision="prompt",
+    justification="supabase db push pushes migrations to the remote database; require explicit approval before running.",
+    match=["supabase db push", "supabase db push --include-all"],
+    not_match=["supabase db reset --linked"],
+)
+# bash-guard:end supabase.db_push
+EOF
+    echo "  patched: $CODEX_RULES"
+}
+
 patch_selected_install() {
     case "$agent" in
         claude|both) patch_claude_settings_install ;;
     esac
     case "$agent" in
-        codex|both) patch_codex_hooks_install ;;
+        codex|both)
+            patch_codex_hooks_install
+            patch_codex_rules_install
+            ;;
     esac
 }
 
@@ -261,6 +292,23 @@ patch_codex_hooks_uninstall() {
     echo "  removed bash-guard from $CODEX_HOOKS"
 }
 
+patch_codex_rules_uninstall() {
+    [[ -f "$CODEX_RULES" ]] || return
+    if ! grep -q 'bash-guard:begin supabase.db_push' "$CODEX_RULES"; then
+        return
+    fi
+    backup_file "$CODEX_RULES"
+    local tmp
+    tmp="$(mktemp)"
+    awk '
+      /# bash-guard:begin supabase.db_push/ { skip=1; next }
+      /# bash-guard:end supabase.db_push/ { skip=0; next }
+      !skip { print }
+    ' "$CODEX_RULES" > "$tmp"
+    mv "$tmp" "$CODEX_RULES"
+    echo "  removed bash-guard rule from $CODEX_RULES"
+}
+
 uninstall_selected() {
     case "$agent" in
         claude|both)
@@ -275,6 +323,7 @@ uninstall_selected() {
     case "$agent" in
         codex|both)
             patch_codex_hooks_uninstall
+            patch_codex_rules_uninstall
             if [[ -f "$CODEX_BIN_PATH" ]]; then
                 rm "$CODEX_BIN_PATH"
                 rmdir "$CODEX_BIN_DIR" 2>/dev/null || true
@@ -299,6 +348,7 @@ case "$mode" in
         echo "  Codex selftest:  $CODEX_BIN_PATH --selftest"
         echo "  Audit:           tail -f ~/.claude/logs/bash-guard.jsonl | jq '.'"
         echo "  Restart the agent. In Codex CLI/App, open /hooks and trust the new hook if prompted."
+        echo "  Codex prompts require approval_policy granular.rules=true (or an interactive approval policy)."
         ;;
     uninstall)
         echo "Uninstalling bash-guard (agent: $agent)"

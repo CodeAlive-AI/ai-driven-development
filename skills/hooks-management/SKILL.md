@@ -344,7 +344,14 @@ Prefer one representation per config layer: either `hooks.json` or inline `[hook
 
 Blocking semantics: exit code `2` blocks (stderr is reason), or emit JSON `{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "deny", "permissionDecisionReason": "..."}}`.
 
-Important Codex gap: `PreToolUse` currently does **not** support `permissionDecision: "ask"`. Returning `"ask"` makes the hook run fail and Codex continues the tool call. For "ask before X" in Codex, use Codex's approval policy/permissions where possible; otherwise choose between a hard hook block (`deny`/exit 2) and a non-blocking advisory `additionalContext`.
+Important Codex gap: `PreToolUse` currently does **not** support `permissionDecision: "ask"`. Returning `"ask"` makes the hook run fail and Codex continues the tool call. For "ask before X" in Codex, use Codex execpolicy rules (`prefix_rule(... decision="prompt")`) plus a granular approval policy with `rules = true`.
+
+When adapting a Claude Code `ask` hook to Codex, prefer this order:
+1. If the risky action can be expressed as command argv prefixes, use Codex rules for the prompt and keep the hook silent for that exact reason code.
+2. If it cannot be safely represented as a Codex rule, keep the hook as hard `deny` / exit 2.
+3. Do not put the whole hook into shadow mode unless you intentionally want logging only; that allows every risky action the hook would otherwise catch.
+
+For bash-guard specifically, Codex live mode defaults to hard `deny` for internal `ask` decisions. Only reason codes listed in `BASH_GUARD_CODEX_DEFER_REASON_CODES` are allowed to pass through to execpolicy. Each deferred reason code must have a matching `prefix_rule(... decision="prompt")`; otherwise the risky command would be silently allowed.
 
 `PermissionRequest` only fires when Codex is already about to ask for approval. It can return `allow`, `deny`, or no decision; it cannot create a prompt for commands that Codex would otherwise run without asking.
 

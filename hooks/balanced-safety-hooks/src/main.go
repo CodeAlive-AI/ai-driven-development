@@ -271,6 +271,12 @@ func renderHookOutput(adapter HookAdapter, d Decision) []byte {
 			// permissionDecision:"allow" is reserved for rewrites.
 			return nil
 		}
+		if codexDeferToExecPolicy(d) {
+			// Codex PreToolUse cannot create an approval prompt. For a small,
+			// explicitly configured set of reason codes, stay silent so
+			// execpolicy prompt rules can surface the native approval UI.
+			return nil
+		}
 		return mustJSON(HookOutput{HookSpecificOutput: HookSpecific{
 			HookEventName:            "PreToolUse",
 			PermissionDecision:       "deny",
@@ -289,9 +295,32 @@ func renderHookOutput(adapter HookAdapter, d Decision) []byte {
 
 func emittedDecision(adapter HookAdapter, d Decision) string {
 	if adapter == AdapterCodex && d.Level == LevelAsk {
+		if codexDeferToExecPolicy(d) {
+			return "defer_to_execpolicy"
+		}
 		return "deny"
 	}
 	return d.Level.String()
+}
+
+func codexDeferToExecPolicy(d Decision) bool {
+	raw := os.Getenv("BASH_GUARD_CODEX_DEFER_REASON_CODES")
+	if raw == "" || d.ReasonCode == "" {
+		return false
+	}
+	allowed := map[string]bool{}
+	for _, item := range strings.Split(raw, ",") {
+		item = strings.TrimSpace(item)
+		if item != "" {
+			allowed[item] = true
+		}
+	}
+	for _, code := range strings.Split(d.ReasonCode, ",") {
+		if allowed[strings.TrimSpace(code)] {
+			return true
+		}
+	}
+	return false
 }
 
 func mustJSON(out HookOutput) []byte {
@@ -317,7 +346,7 @@ func selfDir() string {
 }
 
 func versionString() string {
-	return "bash-guard 0.3.0"
+	return "bash-guard 0.3.1"
 }
 
 // runSelfTest is a manual smoke check: it runs the parser on a couple of

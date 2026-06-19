@@ -145,6 +145,27 @@ func TestRenderHookOutputAdapters(t *testing.T) {
 			t.Fatalf("expected silent Codex allow output, got %s", string(out))
 		}
 	})
+
+	t.Run("codex_can_defer_selected_reasons_to_execpolicy", func(t *testing.T) {
+		t.Setenv("BASH_GUARD_CODEX_DEFER_REASON_CODES", "supabase.db_push")
+		out := renderHookOutput(AdapterCodex, Decision{
+			Level:      LevelAsk,
+			Rule:       "supabase",
+			Reason:     "supabase db push",
+			ReasonCode: "supabase.db_push",
+		})
+		if len(out) != 0 {
+			t.Fatalf("expected Codex defer-to-execpolicy output to be silent, got %s", string(out))
+		}
+	})
+
+	t.Run("codex_does_not_defer_unlisted_reasons", func(t *testing.T) {
+		t.Setenv("BASH_GUARD_CODEX_DEFER_REASON_CODES", "supabase.db_push")
+		out := string(renderHookOutput(AdapterCodex, ask))
+		if !strings.Contains(out, `"permissionDecision":"deny"`) {
+			t.Fatalf("expected unlisted Codex ask to stay deny, got %s", out)
+		}
+	})
 }
 
 // BenchmarkEvaluate measures hot-path latency for the orchestrator. Two
