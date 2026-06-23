@@ -31,8 +31,9 @@ Follow this sequence for every test run. Do not skip steps.
 - Call `capture_window_screenshot()` (UICollector) -- baseline screenshot
 
 ### 3. Collect controls
-- Call `get_app_window_controls_info(field_list=["label","control_text","control_type","automation_id","control_rect"])`
-- Anchor on `id` + `control_text` / `automation_id` -- never hardcode coordinates unless control tree fails
+- Call `qa_refresh_controls(field_list=["label","control_text","control_type","automation_id","control_rect"])`
+- Anchor on `id` + `control_text` / `automation_id` when the returned tree is usable
+- If control collection returns an error or an empty tree for a large/legacy WinForms window, continue with screenshot inspection and coordinate actions; do not repeatedly force full UIA subtree scans
 
 ### 4. Interact
 - Use `click_input(id, name)`, `set_edit_text(id, name, text)`, `keyboard_input(id, name, keys)`
@@ -56,14 +57,14 @@ Follow this sequence for every test run. Do not skip steps.
 |------|--------|---------|
 | `qa_refresh_and_list_windows` | QA helper | Refresh + list all windows |
 | `select_application_window` | HostUIExecutor | Select SUT by id+name |
-| `get_app_window_controls_info` | UICollector | Get control tree |
+| `get_app_window_controls_info` | UICollector | Raw control tree; use only when helper output is insufficient |
 | `capture_window_screenshot` | UICollector | Screenshot selected window |
 | `click_input` | AppUIExecutor | Click control by id+name |
 | `set_edit_text` | AppUIExecutor | Type into control |
 | `keyboard_input` | AppUIExecutor | Send keystrokes |
 | `texts` | AppUIExecutor | Read control text |
 | `qa_wait_for_text_contains` | QA helper | Poll until text matches |
-| `qa_refresh_controls` | QA helper | Re-collect control tree |
+| `qa_refresh_controls` | QA helper | Re-collect control tree with fail-soft parsing |
 
 ## Example: Login Smoke Test
 
@@ -73,7 +74,7 @@ User says: "Test the login flow on MyApp"
 1. qa_refresh_and_list_windows() → find "MyApp - Login"
 2. select_application_window(id="3", name="MyApp - Login")
 3. capture_window_screenshot() → baseline
-4. get_app_window_controls_info(field_list=["label","control_text","control_type","automation_id","control_rect"])
+4. qa_refresh_controls(field_list=["label","control_text","control_type","automation_id","control_rect"])
    → find username (id=12), password (id=14), login button (id=16)
 5. set_edit_text(id="12", name="Username", text="testuser")
 6. set_edit_text(id="14", name="Password", text="pass123")
@@ -88,7 +89,7 @@ User says: "Test the login flow on MyApp"
 
 **No windows found**: Re-check the SUT is running. Call `qa_refresh_and_list_windows()` again. If still empty, ask the user to confirm the app is open.
 
-**Empty control tree**: The window may not have finished loading. Wait 2-3 seconds, then `qa_refresh_controls(field_list=[...])`. If still empty, try `CONTROL_BACKEND=win32` (see setup.md).
+**Empty control tree**: The window may not have finished loading. Wait 2-3 seconds, then `qa_refresh_controls(field_list=[...])`. If still empty, try `CONTROL_BACKEND=win32` (see setup.md). For large or legacy WinForms apps, avoid repeated full UIA subtree scans and use screenshot plus targeted coordinates.
 
 **Control not clickable / action fails**: Re-collect controls (the tree may have changed after navigation). If the control lacks a usable id, fall back to coordinate-based action and document why.
 
