@@ -11,6 +11,8 @@ Requires: UFO installed (pip install from repo), fastmcp, pydantic
 
 from __future__ import annotations
 
+import json
+import logging
 import time
 from typing import Annotated, Any, Dict, List, Optional
 
@@ -19,6 +21,8 @@ from pydantic import Field
 
 from ufo.client.mcp.mcp_registry import MCPRegistry
 from ufo.client.mcp.local_servers import load_all_servers
+
+logger = logging.getLogger(__name__)
 
 
 def _get_ufo_server(namespace: str) -> FastMCP:
@@ -42,6 +46,26 @@ mcp.mount(_get_ufo_server("AppUIExecutor"))
 
 # QA helper tools (thin wrappers around UFO tools)
 
+def _parse_tool_result(result: Any) -> Any:
+    """Return structured FastMCP results when possible."""
+    structured = getattr(result, "structured_content", None)
+    if structured is not None:
+        if isinstance(structured, dict) and set(structured.keys()) == {"result"}:
+            return structured["result"]
+        return structured
+
+    content = getattr(result, "content", None)
+    if content:
+        text = getattr(content[0], "text", None)
+        if text is not None:
+            try:
+                return json.loads(text)
+            except json.JSONDecodeError:
+                return text
+
+    return result
+
+
 @mcp.tool()
 def qa_refresh_and_list_windows(
     remove_empty: Annotated[bool, Field(description="Drop empty/ghost windows.")] = True
@@ -58,9 +82,15 @@ def qa_refresh_controls(
     field_list: Annotated[List[str], Field(description="Fields to fetch per control.")],
 ) -> Annotated[List[Dict[str, Any]], Field(description="Controls for selected window.")]:
     """Refresh control map for the selected window. Wraps UICollector.get_app_window_controls_info."""
-    return mcp.call_tool_sync(
-        "get_app_window_controls_info", {"field_list": field_list}
-    )
+    try:
+        result = mcp.call_tool_sync(
+            "get_app_window_controls_info", {"field_list": field_list}
+        )
+        parsed = _parse_tool_result(result)
+        return parsed if isinstance(parsed, list) else []
+    except Exception as exc:
+        logger.warning("qa_refresh_controls failed: %s", exc)
+        return [{"error": str(exc), "source": "ufo_qa"}]
 
 
 @mcp.tool()
