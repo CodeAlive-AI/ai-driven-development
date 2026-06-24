@@ -17,10 +17,10 @@
     "opencode": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode/gemini-3.1-pro",
-      "effort": "high",
+      "model": "opencode-go/glm-5.2",
+      "effort": "max",
       "role": "lateral",
-      "label": "OpenCode"
+      "label": "OpenCode GLM-5.2"
     },
     "claude-code": {
       "enabled": false,
@@ -46,101 +46,45 @@
       "role": "lateral",
       "label": "Claude Sonnet (high)"
     },
-    "opencode-gpt5.5-xhigh": {
-      "enabled": false,
-      "backend": "opencode",
-      "model": "openai/gpt-5.5",
-      "effort": "xhigh",
-      "role": "analyst",
-      "label": "OC openai/gpt-5.5 (xhigh)"
-    },
     "opencode-go-minimax": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/minimax-m2.7",
-      "effort": "high",
+      "model": "opencode-go/minimax-m3",
+      "effort": "thinking",
       "role": "lateral",
-      "label": "OC-Go MiniMax M2.7"
-    },
-    "opencode-go-deepseek": {
-      "enabled": true,
-      "backend": "opencode",
-      "model": "opencode-go/deepseek-v4-pro",
-      "effort": "max",
-      "role": "analyst",
-      "label": "OC-Go DeepSeek V4 Pro"
-    },
-    "opencode-go-mimo": {
-      "enabled": true,
-      "backend": "opencode",
-      "model": "opencode-go/mimo-v2.5-pro",
-      "effort": "high",
-      "role": "lateral",
-      "label": "OC-Go MiMo V2.5 Pro"
+      "label": "OC-Go MiniMax M3"
     },
     "opencode-go-kimi": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/kimi-k2.6",
-      "effort": "high",
+      "model": "opencode-go/kimi-k2.7-code",
+      "effort": "none",
       "role": "analyst",
-      "label": "OC-Go Kimi K2.6"
+      "label": "OC-Go Kimi K2.7 Code"
     },
     "opencode-go-glm": {
       "enabled": true,
       "backend": "opencode",
       "model": "opencode-go/glm-5.1",
-      "effort": "high",
+      "effort": "none",
       "role": "lateral",
       "label": "OC-Go GLM-5.1"
     },
-    "opencode-go-deepseek-flash": {
-      "enabled": false,
+    "opencode-go-qwen37-max": {
+      "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/deepseek-v4-flash",
-      "effort": "max",
+      "model": "opencode-go/qwen3.7-max",
+      "effort": "none",
       "role": "analyst",
-      "label": "OC-Go DeepSeek V4 Flash"
+      "label": "OC-Go Qwen3.7 Max"
     },
-    "opencode-go-qwen36-plus": {
-      "enabled": false,
+    "opencode-go-qwen37-plus": {
+      "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/qwen3.6-plus",
+      "model": "opencode-go/qwen3.7-plus",
       "effort": "none",
       "role": "lateral",
-      "label": "OC-Go Qwen 3.6 Plus"
-    },
-    "opencode-gemini-3-flash": {
-      "enabled": false,
-      "backend": "opencode",
-      "model": "opencode/gemini-3-flash",
-      "effort": "high",
-      "role": "lateral",
-      "label": "OC Gemini 3 Flash"
-    },
-    "opencode-openai": {
-      "enabled": false,
-      "backend": "opencode",
-      "model": "openai/gpt-5.5",
-      "effort": "high",
-      "role": "analyst",
-      "label": "OC OpenAI GPT-5.5"
-    },
-    "codex-gpt-5-4-mini": {
-      "enabled": false,
-      "backend": "codex-cli",
-      "model": "gpt-5.4-mini",
-      "effort": "xhigh",
-      "role": "analyst",
-      "label": "Codex GPT-5.4-mini"
-    },
-    "opencode-gpt-5-4-mini": {
-      "enabled": false,
-      "backend": "opencode",
-      "model": "openai/gpt-5.4-mini",
-      "effort": "xhigh",
-      "role": "analyst",
-      "label": "OC OpenAI GPT-5.4-mini"
+      "label": "OC-Go Qwen3.7 Plus"
     }
   }
 }

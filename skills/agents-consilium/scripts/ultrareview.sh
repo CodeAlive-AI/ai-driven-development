@@ -9,22 +9,22 @@
 #   Stage 1: broad (parallel) — 4 frontier analysts
 #     • codex (gpt-5.5 high)         analyst       (uncapped)
 #     • claude-code (Opus 4.7 max)   analyst       (uncapped)
-#     • opencode (gemini-3.1-pro)    lateral       (uncapped)
-#     • opencode-go-deepseek (Pro)   analyst       (uncapped)
+#     • opencode (GLM-5.2)           lateral       (uncapped)
+#     • opencode-go-qwen37-max       analyst       (uncapped)
 #
 #   Stage 2: specialists (parallel) — 5×3 matrix, uniform cap=10
-#     3 small models × 5 roles (security, correctness, performance,
-#     architecture, consistency). Models: deepseek-flash, qwen36-plus,
-#     gemini-3-flash.
+#     3 OC-Go models × 5 roles (security, correctness, performance,
+#     architecture, consistency). Models: MiniMax M3, Kimi K2.7 Code,
+#     Qwen3.7 Plus.
 #
 #   Stage 3: probe (sequential) — 1 generic gap probe
-#     • opencode-go-deepseek-flash auditor (cap=10) on the generic prompt
+#     • opencode-go-glm auditor (cap=10) on the generic prompt
 #       (model picks the highest-risk defect class for THIS input)
 #
 #   Stage 4: dedup (deterministic) — union all findings
 #
 #   Stage 5: judge — claude-code (Opus) by default; on failure falls back to
-#     opencode-gpt5.5-xhigh (which was the rescue judge in the bench).
+#     opencode (GLM-5.2).
 #
 # Output: filtered findings (VALID + DOWNGRADE) as markdown or XML.
 #
@@ -39,8 +39,7 @@
 #   ultrareview.sh --help
 #
 # Cost expectation: ~$1.50-3.00 on a 12KB file. The Opus judge is the
-# expensive component (~$0.50-1.00); fallback to opencode-gpt5.5-xhigh is
-# slightly cheaper (~$0.40-0.50) and proved more reliable in the bench.
+# expensive component (~$0.50-1.00); fallback uses the default OpenCode model.
 #
 # Exit codes:
 #   0 — success
@@ -66,7 +65,7 @@ INPUT_PATH=""
 DRY_RUN=""
 KEEP_TMP=""
 JUDGE_AGENT="claude-code"
-JUDGE_FALLBACK="opencode-gpt5.5-xhigh"
+JUDGE_FALLBACK="opencode"
 NO_FALLBACK=""
 
 while [[ $# -gt 0 ]]; do
@@ -89,17 +88,17 @@ BROAD_PASSES=(
     "codex|analyst|uncapped|broad-analyst.txt"
     "claude-code|analyst|uncapped|broad-analyst.txt"
     "opencode|lateral|uncapped|broad-lateral.txt"
-    "opencode-go-deepseek|analyst|uncapped|broad-analyst.txt"
+    "opencode-go-qwen37-max|analyst|uncapped|broad-analyst.txt"
 )
 
 SPECIALIST_ROLES=(security correctness performance architecture consistency)
-SPECIALIST_MODELS=(opencode-go-deepseek-flash opencode-go-qwen36-plus opencode-gemini-3-flash)
+SPECIALIST_MODELS=(opencode-go-minimax opencode-go-kimi opencode-go-qwen37-plus)
 
-PROBE_PASS="opencode-go-deepseek-flash|auditor|10|probe-generic.txt"
+PROBE_PASS="opencode-go-glm|auditor|10|probe-generic.txt"
 
 ALL_AGENTS_NEEDED=(
-    "codex" "claude-code" "opencode" "opencode-go-deepseek"
-    "opencode-go-deepseek-flash" "opencode-go-qwen36-plus" "opencode-gemini-3-flash"
+    "codex" "claude-code" "opencode" "opencode-go-qwen37-max"
+    "opencode-go-minimax" "opencode-go-kimi" "opencode-go-qwen37-plus" "opencode-go-glm"
     "$JUDGE_AGENT"
 )
 [[ -z "$NO_FALLBACK" ]] && ALL_AGENTS_NEEDED+=("$JUDGE_FALLBACK")
@@ -212,10 +211,10 @@ done
 
 # ------ Stage 3: probe (sequential after parallel completes) ---------------
 echo -e "${YELLOW}[Running generic probe...]${NC}" >&2
-probe_out="$RESP_DIR/probe__opencode-go-deepseek-flash__auditor.xml"
+probe_out="$RESP_DIR/probe__opencode-go-glm__auditor.xml"
 probe_code=0
 "$LIB_DIR/discovery-pass.sh" \
-    --agent "opencode-go-deepseek-flash" --role "auditor" --cap "10" \
+    --agent "opencode-go-glm" --role "auditor" --cap "10" \
     --prompt "$PROMPTS_DIR/probe-generic.txt" \
     --input-kind "$INPUT_KIND" \
     --input-label "$INPUT_LABEL" \

@@ -6,17 +6,17 @@
 #
 # Pipeline (10 LLM calls total):
 #
-#   Stage 1: discovery-small (parallel) — 7 small/cheap passes
-#     • opencode-go-deepseek-flash analyst       (uncapped)
-#     • opencode-go-qwen36-plus    analyst       (uncapped)
-#     • opencode-go-qwen36-plus    lateral       (uncapped)
-#     • opencode-go-deepseek-flash architecture  (uncapped, specialist)
-#     • opencode-go-deepseek-flash correctness   (cap=10,    specialist)
-#     • opencode-go-qwen36-plus    architecture  (cap=3,     specialist)
-#     • opencode-go-qwen36-plus    security      (uncapped,  specialist)
+#   Stage 1: discovery-small (parallel) — 7 OC-Go passes
+#     • opencode-go-minimax      analyst       (uncapped)
+#     • opencode-go-qwen37-plus  analyst       (uncapped)
+#     • opencode-go-qwen37-plus  lateral       (uncapped)
+#     • opencode-go-glm          architecture  (uncapped, specialist)
+#     • opencode-go-glm          correctness   (cap=10,    specialist)
+#     • opencode-go-qwen37-max   architecture  (cap=3,     specialist)
+#     • opencode-go-qwen37-max   security      (uncapped,  specialist)
 #
 #   Stage 2: discovery-frontier (parallel) — 2 hand-picked frontier add-ons
-#     • opencode-gpt5.5-xhigh      analyst       (uncapped)  → adds GT-41/63
+#     • opencode                   analyst       (uncapped)
 #     • claude-code (Opus 4.7 max) lateral       (uncapped)  → adds GT-43
 #
 #   Stage 3: dedup (deterministic) — union all findings into one XML
@@ -79,23 +79,25 @@ done
 # ------ Discovery plan -----------------------------------------------------
 # Format: agent|role|cap|prompt-template
 SMALL_PASSES=(
-    "opencode-go-deepseek-flash|analyst|uncapped|broad-analyst.txt"
-    "opencode-go-qwen36-plus|analyst|uncapped|broad-analyst.txt"
-    "opencode-go-qwen36-plus|lateral|uncapped|broad-lateral.txt"
-    "opencode-go-deepseek-flash|architecture|uncapped|specialist.txt"
-    "opencode-go-deepseek-flash|correctness|10|specialist.txt"
-    "opencode-go-qwen36-plus|architecture|3|specialist.txt"
-    "opencode-go-qwen36-plus|security|uncapped|specialist.txt"
+    "opencode-go-minimax|analyst|uncapped|broad-analyst.txt"
+    "opencode-go-qwen37-plus|analyst|uncapped|broad-analyst.txt"
+    "opencode-go-qwen37-plus|lateral|uncapped|broad-lateral.txt"
+    "opencode-go-glm|architecture|uncapped|specialist.txt"
+    "opencode-go-glm|correctness|10|specialist.txt"
+    "opencode-go-qwen37-max|architecture|3|specialist.txt"
+    "opencode-go-qwen37-max|security|uncapped|specialist.txt"
 )
 FRONTIER_PASSES=(
-    "opencode-gpt5.5-xhigh|analyst|uncapped|broad-analyst.txt"
+    "opencode|analyst|uncapped|broad-analyst.txt"
     "claude-code|lateral|uncapped|broad-lateral.txt"
 )
 
 ALL_AGENTS_NEEDED=(
-    "opencode-go-deepseek-flash"
-    "opencode-go-qwen36-plus"
-    "opencode-gpt5.5-xhigh"
+    "opencode-go-minimax"
+    "opencode-go-qwen37-plus"
+    "opencode-go-glm"
+    "opencode-go-qwen37-max"
+    "opencode"
     "claude-code"
     "$JUDGE_AGENT"
 )
