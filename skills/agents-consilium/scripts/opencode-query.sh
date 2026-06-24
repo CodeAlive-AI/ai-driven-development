@@ -15,7 +15,7 @@
 #                      Defaults to the "effort" field in config.json. If neither is
 #                      set, or the value is "none"/empty, no --variant is passed
 #                      and the provider's default is used. Models with no variants
-#                      (e.g. qwen3.6-plus) MUST run without --variant; passing one
+#                      (e.g. qwen3.7-plus) MUST run without --variant; passing one
 #                      causes opencode to reject the call (silent hang).
 #
 # Exit codes:
@@ -52,7 +52,7 @@ LABEL="${LABEL:-OpenCode}"
 BUILTIN_AGENT="${OPENCODE_AGENT:-plan}"
 EFFORT="${OPENCODE_EFFORT:-$(config_get_field "$AGENT_ID" effort)}"
 # "none" or empty → omit --variant entirely (provider default). Required for
-# models whose variants list is empty (e.g. opencode-go/qwen3.6-plus); passing
+# models whose variants list is empty (e.g. opencode-go/qwen3.7-plus); passing
 # any --variant to such a model causes opencode to silently reject the call.
 if [[ "$EFFORT" == "none" ]]; then
     EFFORT=""

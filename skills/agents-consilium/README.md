@@ -1,6 +1,6 @@
 # agents-consilium
 
-> **A multi-agent orchestration skill** — fans out one query across **Codex**, **Claude Code**, **OpenCode** (Gemini via Zen or Google direct), and **Gemini CLI** in parallel, then hands the raw responses back to you. No debate, no committee answer — you adjudicate.
+> **A multi-agent orchestration skill** — fans out one query across **Codex**, **Claude Code**, **OpenCode** (OC-Go), and **Gemini CLI** in parallel, then hands the raw responses back to you. No debate, no committee answer — you adjudicate.
 
 Different frontier models see different things. The union of their findings is materially broader than any single reviewer's.
 
@@ -91,7 +91,7 @@ scripts/ultrareview.sh --no-fallback path/to/file.cs         # CI-strict mode
 Each agent has a `role` in config:
 
 - **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Opus.
-- **lateral** — Lateral Thinker (cross-domain patterns, questioning premises, creative alternatives). Default: OpenCode (Gemini Pro), Gemini CLI.
+- **lateral** — Lateral Thinker (cross-domain patterns, questioning premises, creative alternatives). Default: OpenCode GLM-5.2, Gemini CLI.
 
 Agents respond with a shared structure (Assessment / Key Findings / Blind Spots / Alternatives / Recommendation + confidence) so the caller can compare section by section.
 
@@ -204,7 +204,7 @@ The `ID` column is an internal scoreboard handle (preset name in the harness) �
 | h6 | frontier-broad set-cover | 55.4% | 75.4% | $1.51–2.59 | 6 frontier + 3 specialists, overfit |
 | h2 | specialists-only (no broad pass) | 60.0% | 73.8% | $1.16–1.67 | narrow findings, no broad context |
 
-Total real cost across all 9 presets: **$13.66–$24.63**. Three presets needed Opus-judge rescue (claude-code timed out at 1200s on 200+ findings; rescue via `opencode-gpt5.5-xhigh` ~$0.40–0.50). The Opus-judge fallback shipped in `ultrareview.sh` is the production-hardened version of that rescue.
+Total real cost across all 9 presets: **$13.66–$24.63**. Three presets needed fallback judging after the primary judge timed out on 200+ findings. The shipped `ultrareview.sh` now uses the current default OpenCode model as that fallback.
 
 </details>
 
@@ -217,12 +217,12 @@ Aggregated across all 9 presets, per agent × role (MATCH = judge-confirmed matc
 |---|---|---:|---:|
 | **Claude Opus 4.7** | `analyst` (45× lateral) | 6 presets | 37 unique GT (analyst mode) |
 | **Codex gpt-5.5 (xhigh)** | `analyst` + specialist hybrid | 5 presets | up to 47 MATCH per pass |
-| **OC-Go DeepSeek V4 Flash** | **architecture specialist** | 9 presets | 47 unique GT (specialist 4× analyst) |
-| **OC-Go Qwen 3.6 Plus** | `analyst` | 9 presets | 15 unique GT |
-| **OpenCode Gemini 3.1 Pro** | **`lateral`** | 7 presets | rare but unique angles (arch/design) |
-| **OC-Go Kimi K2.6** | `analyst` | 1 preset (evidence-thin) | 2 unique GT |
+| **OC-Go specialist model** | **architecture specialist** | 9 presets | 47 unique GT (specialist 4x analyst) |
+| **OC-Go Qwen Plus** | `analyst` | 9 presets | 15 unique GT |
+| **OpenCode lateral model** | **`lateral`** | 7 presets | rare but unique angles (arch/design) |
+| **OC-Go Kimi** | `analyst` | 1 preset (evidence-thin) | 2 unique GT |
 
-Default config roles are calibrated from this data: Opus / Codex / Qwen / Kimi / DeepSeek-Flash → `analyst`; Gemini-3.1-Pro → `lateral`. DeepSeek V4 Flash gets specialist passes (architecture/correctness) in `ultrareview.sh` because its specialist signal dominates analyst signal 4×.
+Default config roles are calibrated from this data, with the model ids updated to the current OpenCode roster.
 
 </details>
 
@@ -232,8 +232,8 @@ Default config roles are calibrated from this data: Opus / Codex / Qwen / Kimi /
 
 Agents are declared in `config.json`. The default config enables:
 
-- **codex** + **opencode** (Zen / Gemini Pro)
-- **5 OpenCode-Go models**: MiniMax · DeepSeek Pro · MiMo · Kimi · GLM
+- **codex** + **opencode** (`opencode-go/glm-5.2`)
+- **5 additional OpenCode-Go models**: GLM-5.1 · Kimi K2.7 Code · MiniMax M3 · Qwen3.7 Max · Qwen3.7 Plus
 
 Each entry has 6 fields:
 

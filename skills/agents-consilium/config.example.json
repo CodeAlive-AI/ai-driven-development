@@ -15,21 +15,13 @@
       "role": "lateral",
       "label": "Gemini"
     },
-    "opencode-zen": {
+    "opencode": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode/gemini-3.1-pro",
-      "effort": "high",
-      "role": "lateral",
-      "label": "OpenCode (Zen)"
-    },
-    "opencode-google-direct": {
-      "enabled": false,
-      "backend": "opencode",
-      "model": "google/gemini-3.1-pro-preview",
+      "model": "opencode-go/glm-5.2",
       "effort": "max",
       "role": "lateral",
-      "label": "OpenCode (Google)"
+      "label": "OpenCode GLM-5.2"
     },
     "claude-opus": {
       "enabled": false,
@@ -50,51 +42,42 @@
     "opencode-go-minimax": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/minimax-m2.7",
-      "effort": "high",
+      "model": "opencode-go/minimax-m3",
+      "effort": "thinking",
       "role": "lateral",
-      "label": "OC-Go MiniMax M2.7"
-    },
-    "opencode-go-deepseek": {
-      "enabled": true,
-      "backend": "opencode",
-      "model": "opencode-go/deepseek-v4-pro",
-      "effort": "max",
-      "role": "analyst",
-      "label": "OC-Go DeepSeek V4 Pro"
-    },
-    "opencode-go-mimo": {
-      "enabled": true,
-      "backend": "opencode",
-      "model": "opencode-go/mimo-v2.5-pro",
-      "effort": "high",
-      "role": "lateral",
-      "label": "OC-Go MiMo V2.5 Pro"
+      "label": "OC-Go MiniMax M3"
     },
     "opencode-go-kimi": {
       "enabled": true,
       "backend": "opencode",
-      "model": "opencode-go/kimi-k2.6",
-      "effort": "high",
+      "model": "opencode-go/kimi-k2.7-code",
+      "effort": "none",
       "role": "analyst",
-      "label": "OC-Go Kimi K2.6"
+      "label": "OC-Go Kimi K2.7 Code"
     },
     "opencode-go-glm": {
       "enabled": true,
       "backend": "opencode",
       "model": "opencode-go/glm-5.1",
-      "effort": "high",
+      "effort": "none",
       "role": "lateral",
       "label": "OC-Go GLM-5.1"
     },
-    "opencode-openai": {
-      "_comment": "OpenAI direct via the opencode backend. Disabled by default — flip enabled=true to use. Requires `opencode auth login` for OpenAI (oauth) or OPENAI_API_KEY in the environment.",
-      "enabled": false,
+    "opencode-go-qwen37-max": {
+      "enabled": true,
       "backend": "opencode",
-      "model": "openai/gpt-5.5",
-      "effort": "high",
+      "model": "opencode-go/qwen3.7-max",
+      "effort": "none",
       "role": "analyst",
-      "label": "OC OpenAI GPT-5.5"
+      "label": "OC-Go Qwen3.7 Max"
+    },
+    "opencode-go-qwen37-plus": {
+      "enabled": true,
+      "backend": "opencode",
+      "model": "opencode-go/qwen3.7-plus",
+      "effort": "none",
+      "role": "lateral",
+      "label": "OC-Go Qwen3.7 Plus"
     }
   }
 }

@@ -24,7 +24,7 @@ The skill keeps each agent independent (no debate, no cross-contamination) and l
 - [Anti-Bias Protocol](#anti-bias-protocol)
 - [Agent Freedom and Read-Only Guardrails](#agent-freedom-and-read-only-guardrails)
 - [Configuration](#configuration)
-  - [OpenCode provider choice: Zen vs Google direct vs OpenAI direct](#opencode-provider-choice-zen-vs-google-direct-vs-openai-direct)
+  - [OpenCode provider choice](#opencode-provider-choice)
   - [Claude Code backend](#claude-code-backend)
 - [Scripts](#scripts)
   - [Flags & Exit Codes](#flags--exit-codes)
@@ -217,31 +217,25 @@ Agents are declared in `config.json` at the skill root. Each agent has:
 Default config (`config.json`):
 - `codex` (backend=codex-cli, model=gpt-5.5, role=analyst) — **enabled**
 - `gemini-cli` (backend=gemini-cli, model=gemini-3.1-pro-preview, role=lateral) — **disabled**
-- `opencode` (backend=opencode, model=opencode/gemini-3.1-pro, role=lateral, effort=high) — **enabled**
+- `opencode` (backend=opencode, model=opencode-go/glm-5.2, role=lateral, effort=max) — **enabled** and the default OpenCode agent
 - `claude-code` (backend=claude-code, model=opus, effort=max, role=analyst) — **disabled**
-- `opencode-go-minimax` (backend=opencode, model=opencode-go/minimax-m2.7, role=lateral, effort=high) — **enabled**
-- `opencode-go-deepseek` (backend=opencode, model=opencode-go/deepseek-v4-pro, role=analyst, effort=max) — **enabled**
-- `opencode-go-mimo` (backend=opencode, model=opencode-go/mimo-v2.5-pro, role=lateral, effort=high) — **enabled**
-- `opencode-go-kimi` (backend=opencode, model=opencode-go/kimi-k2.6, role=analyst, effort=high) — **enabled**
-- `opencode-go-glm` (backend=opencode, model=opencode-go/glm-5.1, role=lateral, effort=high) — **enabled**
-- `opencode-openai` (backend=opencode, model=openai/gpt-5.5, role=analyst, effort=high) — **disabled** (reference entry; flip on if you want OpenAI direct)
+- `opencode-go-minimax` (backend=opencode, model=opencode-go/minimax-m3, role=lateral, effort=thinking) — **enabled**
+- `opencode-go-kimi` (backend=opencode, model=opencode-go/kimi-k2.7-code, role=analyst, effort=none) — **enabled**
+- `opencode-go-glm` (backend=opencode, model=opencode-go/glm-5.1, role=lateral, effort=none) — **enabled**
+- `opencode-go-qwen37-max` (backend=opencode, model=opencode-go/qwen3.7-max, role=analyst, effort=none) — **enabled**
+- `opencode-go-qwen37-plus` (backend=opencode, model=opencode-go/qwen3.7-plus, role=lateral, effort=none) — **enabled**
 
-Effort policy: `max` is used wherever the model exposes it (`claude-code`, `opencode-go/deepseek-v4-pro`); `high` is the fallback for models that top out at `high` (`opencode/gemini-3.1-pro`, `opencode-go/mimo-v2.5-pro`, `openai/gpt-5.5` if you don't want `xhigh`) or expose no variants at all (`minimax`, `kimi`, `glm` — `effort` is set but ignored by the provider).
+Effort policy: use the highest supported OpenCode variant for models that expose one (`opencode-go/glm-5.2` uses `max`, `opencode-go/minimax-m3` uses `thinking`). Use `none` for models whose variants list is empty (`glm-5.1`, `kimi-k2.7-code`, `qwen3.7-max`, `qwen3.7-plus`) so the backend omits `--variant` entirely.
 
 Multiple agents can share one backend — the dispatcher passes the entry id through `CONSILIUM_AGENT_ID`, so each backend script reads its own slice of `config.json`.
 
 Edit `config.json` to flip agents on/off or change models. Set `CONSILIUM_CONFIG=/path/to/custom.json` to use an override file.
 
-### OpenCode provider choice: Zen vs Google direct vs OpenAI direct
+### OpenCode provider choice
 
-The `opencode` backend works with any provider/model that OpenCode supports. For Gemini 3.1 Pro you have two options:
+The `opencode` backend works with any provider/model that OpenCode supports. The default configuration uses the OC-Go provider:
 
-- **Zen** (default): `"model": "opencode/gemini-3.1-pro"` — goes through OpenCode Zen. Works out of the box once `opencode providers login opencode` (or a valid Zen credential) is configured.
-- **Google direct**: `"model": "google/gemini-3.1-pro-preview"` — goes straight to Google's v1beta API. Requires `GOOGLE_GENERATIVE_AI_API_KEY` (OpenCode does **not** pick up `GEMINI_API_KEY` for this provider).
-
-For OpenAI flagship models (GPT-5.5, GPT-5.4, etc.) there's a third path:
-
-- **OpenAI direct**: `"model": "openai/gpt-5.5"` — goes straight to OpenAI's API via the `openai/*` provider in OpenCode. Requires either an `opencode auth login` session for OpenAI (oauth) or `OPENAI_API_KEY` in the environment. The default config ships an `opencode-openai` entry **disabled** as a reference; flip `enabled=true` if you want a GPT-5.5 voice in the consilium. Variants: `none / low / medium / high / xhigh` — pick `xhigh` if you want the heaviest reasoning, otherwise `high` is the safe default.
+- **OC-Go** (default): `"model": "opencode-go/glm-5.2"` — goes through OpenCode's OC-Go provider. Works once OpenCode is authenticated for OC-Go.
 
 Flip between providers by editing the `model` field; the rest of the config stays the same.
 
@@ -289,13 +283,12 @@ Swap `opencode` for `opencode-go` (or any other provider id) to scan a different
 
 | Model | Variants | `effort` in default config |
 |-------|----------|----------------------------|
-| `opencode/gemini-3.1-pro` | low, medium, high | `high` (no `max`) |
-| `opencode-go/deepseek-v4-pro` | low, medium, high, **max** | `max` |
-| `opencode-go/mimo-v2.5-pro` | low, medium, high | `high` (no `max`) |
-| `opencode-go/minimax-m2.7` | — | `high` (ignored) |
-| `opencode-go/kimi-k2.6` | — | `high` (ignored) |
-| `opencode-go/glm-5.1` | — | `high` (ignored) |
-| `openai/gpt-5.5` | none, low, medium, high, xhigh | `high` (entry **disabled** by default) |
+| `opencode-go/glm-5.2` | high, max | `max` |
+| `opencode-go/glm-5.1` | — | `none` |
+| `opencode-go/kimi-k2.7-code` | — | `none` |
+| `opencode-go/minimax-m3` | none, thinking | `thinking` |
+| `opencode-go/qwen3.7-max` | — | `none` |
+| `opencode-go/qwen3.7-plus` | — | `none` |
 
 ### Claude Code backend
 
@@ -476,16 +469,16 @@ analysis on a 65-issue ground-truth pilot.
 in the bench at 67.7% recall / 82.7% sev-w on snippet1.cs.
 
 ```
-Stage 1: discovery-small (parallel)    7 small/cheap passes
-  - opencode-go-deepseek-flash analyst       uncapped
-  - opencode-go-qwen36-plus    analyst       uncapped
-  - opencode-go-qwen36-plus    lateral       uncapped
-  - opencode-go-deepseek-flash architecture  uncapped
-  - opencode-go-deepseek-flash correctness   cap=10
-  - opencode-go-qwen36-plus    architecture  cap=3
-  - opencode-go-qwen36-plus    security      uncapped
+Stage 1: discovery-small (parallel)    7 OC-Go passes
+  - opencode-go-minimax      analyst       uncapped
+  - opencode-go-qwen37-plus  analyst       uncapped
+  - opencode-go-qwen37-plus  lateral       uncapped
+  - opencode-go-glm          architecture  uncapped
+  - opencode-go-glm          correctness   cap=10
+  - opencode-go-qwen37-max   architecture  cap=3
+  - opencode-go-qwen37-max   security      uncapped
 Stage 2: discovery-frontier (parallel) 2 hand-picked add-ons
-  - opencode-gpt5.5-xhigh      analyst       uncapped
+  - opencode                   analyst       uncapped
   - claude-code (Opus 4.7 max) lateral       uncapped
 Stage 3: dedup (deterministic union)
 Stage 4: judge — claude-sonnet (default)
@@ -510,15 +503,15 @@ maximum coverage and lowest false-positive rate.
 Stage 1: broad (parallel)         4 frontier analysts
   - codex (gpt-5.5 high)         analyst      uncapped
   - claude-code (Opus 4.7 max)   analyst      uncapped
-  - opencode (gemini-3.1-pro)    lateral      uncapped
-  - opencode-go-deepseek (Pro)   analyst      uncapped
-Stage 2: specialists (parallel)   5×3 matrix, uniform cap=10
+  - opencode (GLM-5.2)           lateral      uncapped
+  - opencode-go-qwen37-max       analyst      uncapped
+Stage 2: specialists (parallel)   5x3 matrix, uniform cap=10
   - 3 small models × 5 roles (security/correctness/performance/architecture/consistency)
 Stage 3: probe (sequential)       1 generic gap probe (model picks focus)
-  - opencode-go-deepseek-flash auditor cap=10
+  - opencode-go-glm auditor cap=10
 Stage 4: dedup
 Stage 5: judge — claude-code (Opus 4.7 max)
-                fallback: opencode-gpt5.5-xhigh on primary failure
+                fallback: opencode (GLM-5.2) on primary failure
 ```
 
 Usage:
@@ -559,11 +552,11 @@ modes ignore `enabled` and look up the entry by id directly):
 | `opencode` | ultrareview broad |
 | `claude-code` | both, plus ultrareview judge |
 | `claude-sonnet` | superreview judge |
-| `opencode-go-deepseek` | ultrareview broad |
-| `opencode-go-deepseek-flash` | both, specialist + probe |
-| `opencode-go-qwen36-plus` | both |
-| `opencode-gpt5.5-xhigh` | superreview frontier add-on, ultrareview judge fallback |
-| `opencode-gemini-3-flash` | ultrareview specialist |
+| `opencode-go-minimax` | both, discovery + specialist |
+| `opencode-go-kimi` | ultrareview specialist |
+| `opencode-go-glm` | superreview specialist, ultrareview probe |
+| `opencode-go-qwen37-max` | both, broad + specialist |
+| `opencode-go-qwen37-plus` | both, discovery + specialist |
 
 If any are missing the script exits 4 with the list of missing IDs.
 
@@ -578,7 +571,7 @@ If any are missing the script exits 4 with the list of missing IDs.
 
 ## When to Use Which
 
-Pick by role, not by vendor. The default config has Codex (`analyst`) + OpenCode/Gemini-3.1-Pro (`lateral`) enabled; flip `claude-code` or `gemini-cli` on in `config.json` when you want an additional voice.
+Pick by role, not by vendor. The default config has Codex (`analyst`) + OpenCode GLM-5.2 (`lateral`) enabled, plus the current OC-Go roster; flip `claude-code` or `gemini-cli` on in `config.json` when you want an additional voice.
 
 | Situation | Script | Role(s) involved |
 |-----------|--------|-------------------|
