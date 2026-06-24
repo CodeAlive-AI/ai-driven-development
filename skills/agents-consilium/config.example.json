@@ -23,13 +23,13 @@
       "role": "lateral",
       "label": "OpenCode GLM-5.2"
     },
-    "claude-opus": {
+    "claude-code": {
       "enabled": false,
       "backend": "claude-code",
-      "model": "opus",
+      "model": "claude-opus-4-8",
       "effort": "max",
       "role": "analyst",
-      "label": "Claude Opus"
+      "label": "Claude Opus 4.8"
     },
     "claude-sonnet-lateral": {
       "enabled": false,
