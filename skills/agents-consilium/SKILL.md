@@ -218,7 +218,7 @@ Default config (`config.json`):
 - `codex` (backend=codex-cli, model=gpt-5.5, role=analyst) — **enabled**
 - `gemini-cli` (backend=gemini-cli, model=gemini-3.1-pro-preview, role=lateral) — **disabled**
 - `opencode` (backend=opencode, model=opencode-go/glm-5.2, role=lateral, effort=max) — **enabled** and the default OpenCode agent
-- `claude-code` (backend=claude-code, model=opus, effort=max, role=analyst) — **disabled**
+- `claude-code` (backend=claude-code, model=claude-opus-4-8, effort=max, role=analyst) — **disabled**
 - `opencode-go-minimax` (backend=opencode, model=opencode-go/minimax-m3, role=lateral, effort=thinking) — **enabled**
 - `opencode-go-kimi` (backend=opencode, model=opencode-go/kimi-k2.7-code, role=analyst, effort=none) — **enabled**
 - `opencode-go-glm` (backend=opencode, model=opencode-go/glm-5.1, role=lateral, effort=none) — **enabled**
@@ -294,8 +294,8 @@ Swap `opencode` for `opencode-go` (or any other provider id) to scan a different
 
 The `claude-code` backend shells out to `claude -p` (headless mode, see [docs](https://code.claude.com/docs/en/headless)). Useful when you want a second Claude in the consilium — e.g. Opus as analyst cross-checking Codex.
 
-- `model`: a shortname (`opus`, `sonnet`, `haiku`) or full id (`claude-opus-4-7`, `claude-sonnet-4-6`).
-- `effort`: maps to `claude --effort` — accepts `low`, `medium`, `high`, `xhigh`, `max`. Default config sets `max` for opus; omit the field to fall back to the skill's default of `max` for the claude-code backend.
+- `model`: a shortname (`sonnet`, `haiku`) or full id (`claude-opus-4-8`, `claude-sonnet-4-6`).
+- `effort`: maps to `claude --effort` — accepts `low`, `medium`, `high`, `xhigh`, `max`. Default config sets `max` for `claude-opus-4-8`; omit the field to fall back to the skill's default of `max` for the claude-code backend.
 - Runs in the caller's CWD with `--permission-mode plan` — Claude can freely `Read`/`Grep`/`Glob`/`Bash` read-only across the project, but cannot `Edit`/`Write`. Override with `CLAUDE_PERMISSION_MODE` only if you know what you're doing.
 - Authentication uses the same Claude Code credentials the CLI is already logged in with (`claude /login`).
 
@@ -479,7 +479,7 @@ Stage 1: discovery-small (parallel)    7 OC-Go passes
   - opencode-go-qwen37-max   security      uncapped
 Stage 2: discovery-frontier (parallel) 2 hand-picked add-ons
   - opencode                   analyst       uncapped
-  - claude-code (Opus 4.7 max) lateral       uncapped
+  - claude-code (Opus 4.8 max) lateral       uncapped
 Stage 3: dedup (deterministic union)
 Stage 4: judge — claude-sonnet (default)
 ```
@@ -502,7 +502,7 @@ maximum coverage and lowest false-positive rate.
 ```
 Stage 1: broad (parallel)         4 frontier analysts
   - codex (gpt-5.5 high)         analyst      uncapped
-  - claude-code (Opus 4.7 max)   analyst      uncapped
+  - claude-code (Opus 4.8 max)   analyst      uncapped
   - opencode (GLM-5.2)           lateral      uncapped
   - opencode-go-qwen37-max       analyst      uncapped
 Stage 2: specialists (parallel)   5x3 matrix, uniform cap=10
@@ -510,7 +510,7 @@ Stage 2: specialists (parallel)   5x3 matrix, uniform cap=10
 Stage 3: probe (sequential)       1 generic gap probe (model picks focus)
   - opencode-go-glm auditor cap=10
 Stage 4: dedup
-Stage 5: judge — claude-code (Opus 4.7 max)
+Stage 5: judge — claude-code (Opus 4.8 max)
                 fallback: opencode (GLM-5.2) on primary failure
 ```
 
@@ -633,7 +633,7 @@ What's happening?"
 - `OPENCODE_MODEL`: Override OpenCode model at runtime (default: value from config)
 - `OPENCODE_AGENT`: Override OpenCode built-in agent (default: `plan`, read-only)
 - `OPENCODE_EFFORT`: Override OpenCode reasoning effort (default: config `effort` field, or `high`)
-- `CLAUDE_MODEL`: Override Claude Code model at runtime (alias like `opus` or full id)
+- `CLAUDE_MODEL`: Override Claude Code model at runtime (full id or supported alias)
 - `CLAUDE_PERMISSION_MODE`: Override Claude Code permission mode (default: `plan`)
 - `CLAUDE_EFFORT`: Override Claude Code reasoning effort (default: config `effort` field, or `max` if both unset). Levels: `low`, `medium`, `high`, `xhigh`, `max`.
 - `CODEX_EFFORT`: Override Codex reasoning effort (default: config `effort` field, or `high` if both unset). Levels: `minimal`, `low`, `medium`, `high`, `xhigh`.

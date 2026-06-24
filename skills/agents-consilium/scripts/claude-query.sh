@@ -9,7 +9,7 @@
 #        ./claude-query.sh --help
 #
 # Overrides:
-#   CLAUDE_MODEL           — override model from config (alias like "opus" or full id)
+#   CLAUDE_MODEL           — override model from config (full id or supported alias)
 #   CLAUDE_PERMISSION_MODE — override permission mode (default: plan)
 #   CLAUDE_EFFORT          — reasoning effort level (low, medium, high, xhigh, max).
 #                            Defaults to the "effort" field in config.json, or

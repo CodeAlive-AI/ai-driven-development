@@ -90,7 +90,7 @@ scripts/ultrareview.sh --no-fallback path/to/file.cs         # CI-strict mode
 
 Each agent has a `role` in config:
 
-- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Opus.
+- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Opus 4.8.
 - **lateral** — Lateral Thinker (cross-domain patterns, questioning premises, creative alternatives). Default: OpenCode GLM-5.2, Gemini CLI.
 
 Agents respond with a shared structure (Assessment / Key Findings / Blind Spots / Alternatives / Recommendation + confidence) so the caller can compare section by section.
@@ -215,7 +215,7 @@ Aggregated across all 9 presets, per agent × role (MATCH = judge-confirmed matc
 
 | Agent | Best role | Bench appearances | Avg unique GT contributed |
 |---|---|---:|---:|
-| **Claude Opus 4.7** | `analyst` (45× lateral) | 6 presets | 37 unique GT (analyst mode) |
+| **Claude Opus 4.8** | `analyst` (45× lateral) | 6 presets | 37 unique GT (analyst mode) |
 | **Codex gpt-5.5 (xhigh)** | `analyst` + specialist hybrid | 5 presets | up to 47 MATCH per pass |
 | **OC-Go specialist model** | **architecture specialist** | 9 presets | 47 unique GT (specialist 4x analyst) |
 | **OC-Go Qwen Plus** | `analyst` | 9 presets | 15 unique GT |

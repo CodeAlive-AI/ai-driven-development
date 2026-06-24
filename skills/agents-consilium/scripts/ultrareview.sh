@@ -8,7 +8,7 @@
 #
 #   Stage 1: broad (parallel) — 4 frontier analysts
 #     • codex (gpt-5.5 high)         analyst       (uncapped)
-#     • claude-code (Opus 4.7 max)   analyst       (uncapped)
+#     • claude-code (Opus 4.8 max)   analyst       (uncapped)
 #     • opencode (GLM-5.2)           lateral       (uncapped)
 #     • opencode-go-qwen37-max       analyst       (uncapped)
 #
