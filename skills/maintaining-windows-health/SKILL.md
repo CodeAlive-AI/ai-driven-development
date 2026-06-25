@@ -65,23 +65,24 @@ Read the relevant reference before acting. Do NOT operate from memory of these f
 
 1. **Triage** — read `references/triage.md`, identify which signal fired and how urgent. Run `assets/Audit-WinHealth.ps1` (read-only) for the preflight inventory (drives, Component Store, shadow storage, drivers, **CFA / OneDrive KFM / BitLocker / reparse points**).
 2. **Snapshot baseline** — record free GB on the target drive.
-3. **Run all scans, don't delete yet** — work the tiers in `references/cleanup-tiers.md` in *inventory* mode (list candidates, sizes, ages). Capture everything; deletion comes only after the user picks via the UI.
+3. **Run all scans, don't delete yet** — work the tiers in `references/cleanup-tiers.md` in *inventory* mode (list candidates, sizes, ages), including the large-file visibility pass. Capture everything before opening the browser; deletion comes only after the user picks via the UI. The cleanup UI should be a single final questionnaire containing safe cleanup candidates, protected/discuss-first items, and large suspicious user/workload files together, not a sequence of separate UI rounds.
 4. **Python gate** — the cleanup UI needs Python 3. Check for a real interpreter (`py -3 --version`, or a `python.exe` that isn't the Microsoft Store alias). **If Python is missing, ask the user for permission to install it** (`winget install Python.Python.3.12`), then continue. Do not silently skip the UI.
 5. **Resolve unknown items before building JSON** — for every candidate > 500 MB you cannot explain in one sentence (unfamiliar app/folder, vendor cache, VM/VHDX, model weights), research it first: check `references/never-touch.md`, then delegate a quick lookup to the `web-searcher` subagent ("what is `<path>` on Windows 11, safe to delete in 2026"). Write a concrete `description` (1–3 sentences in the user's language) into the item. **Never show vague placeholders like "unknown".**
-6. **Build the data JSON** — every candidate becomes a structured `item` (id, label, path, size_bytes, age_days, kind, **PowerShell `command`**, mandatory `description`, optional `protected` + `warning`). Use the schema in `assets/render-cleanup-plan.py`. Irreversible-tool commands (DISM `/ResetBase`, `vssadmin delete`, `wevtutil cl`, `pnputil /delete-driver`, `powercfg /h off`) should be marked `protected: true`.
-7. **Render and open the cleanup UI**:
+6. **Show large-but-not-safe items too** — any explainable item > 500 MB that is user-owned or workload-owned but not a safe cache must still appear in the same final UI, normally `protected: true`, `default_selected: false`, with a concrete `warning`. Examples: old `.7z/.zip/.iso` archives, `.gguf`/`.safetensors` model weights, project/game assets, app diagnostic dumps, profiler snapshots, synced-folder media, and VHDX files. Visibility is required because only the user can know whether these are still needed. Do not include hard-protected system internals as bare-delete candidates; show them only through supported tools, or omit deletion entirely if no supported action exists.
+7. **Build one data JSON** — every candidate becomes a structured `item` (id, label, path, size_bytes, age_days, kind, **PowerShell `command`**, mandatory `description`, optional `protected` + `warning`). Use the schema in `assets/render-cleanup-plan.py`. Irreversible-tool commands (DISM `/ResetBase`, `vssadmin delete`, `wevtutil cl`, `pnputil /delete-driver`, `powercfg /h off`) should be marked `protected: true`. Do not open the UI until this unified JSON contains both safe default-selected items and protected unchecked items.
+8. **Render and open the cleanup UI**:
    ```powershell
    python3 <skill>\assets\render-cleanup-plan.py %TEMP%\cleanup-data-<ts>.json
    ```
    It serves on `127.0.0.1:18347`, opens the browser, and **blocks** until Submit/Cancel. On submit it writes `%TEMP%\cleanup-selection-<ts>.json`. Tell the user out loud: "браузер открыт — поставь галочки, нажми Submit, потом пингани меня." Then **stop and wait**.
-8. **After the user pings** — read the selection JSON, render their choices back in chat (categories, item list, total GB, any protected overrides flagged), and **ask one explicit confirmation** before deleting.
-9. **Apply via the helper — never hand-rolled `Remove-Item`**:
+9. **After the user pings** — read the selection JSON, render their choices back in chat (categories, item list, total GB, any protected overrides flagged), and **ask one explicit confirmation** before deleting.
+10. **Apply via the helper — never hand-rolled `Remove-Item`**:
    ```powershell
    python3 <skill>\assets\apply-cleanup-selection.py %TEMP%\cleanup-selection-<ts>.json
    #   add --scan-root D:\projects to allow bare deletes on an external dev drive
    ```
    It reads `selected_items`, validates each `command` (NTFS canonicalization, deny/allow longest-prefix, provider/UNC/ADS/8.3/chaining refusal), skips protected items not in `protected_overrides`, runs each via `powershell.exe`, and logs to `%LOCALAPPDATA%\win-health\operations.log`. `--dry-run` previews. **The selection JSON is the single source of truth.**
-10. **Post-check** — report the free-space delta, then `Dism /Online /Cleanup-Image /CheckHealth` + `sfc /scannow` to confirm nothing was broken. Stop at the goal.
+11. **Post-check** — report the free-space delta, then `Dism /Online /Cleanup-Image /CheckHealth` + `sfc /scannow` to confirm nothing was broken. Stop at the goal.
 
 Hard-protected items (per `references/never-touch.md`) must always appear in the UI with `"protected": true` + a concrete `warning` — the UI dims them and requires a per-item confirm before they can be checked. Never omit a protected item user data depends on; visibility teaches the surrounding risk.
 
@@ -129,7 +130,7 @@ Prefer `winget uninstall --id <App.Id>` (clean, supported). For apps with stubbo
 - **`Available MBytes` includes standby/cache** — high "available" doesn't mean healthy; commit-limit exhaustion is the real OOM signal.
 - **`pagefile.sys` and `swapfile.sys` are two different files**; `C:\Windows\Installer` + `Package Cache` break MSI repair if deleted; **Prefetch** should not be cleaned (myth).
 - **Modern Standby (S0ix)** makes wake timers unreliable and hides S3 — normal, not a fault. The task pauses in sleep and catches up on wake via `-StartWhenAvailable`.
-- **General rule**: if you can't describe a folder in one sentence (especially > 500 MB), don't guess — delegate a `web-searcher` lookup before writing the item's `description`.
+- **General rule**: if you can't describe a folder in one sentence (especially > 500 MB), don't guess — delegate a `web-searcher` lookup before writing the item's `description`. If you can describe it but it may be user data, still show it in the single final cleanup UI as protected and unchecked by default.
 
 ## Outcomes scale
 

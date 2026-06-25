@@ -437,6 +437,12 @@ HTML_TEMPLATE = r"""<!doctype html>
       white-space: nowrap;
     }}
     .select-all-wrap input {{ margin: 0; cursor: pointer; }}
+    .actions .select-all-wrap {{
+      padding: 10px 14px;
+      border: 1px solid var(--border-strong);
+      color: var(--fg);
+      font-weight: 500;
+    }}
     .category-body {{
       border-top: 1px solid var(--border);
       padding: 4px 0;
@@ -772,7 +778,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 </head>
 <body>
   <header>
-    <h1>🧹 macOS cleanup plan</h1>
+    <h1>🧹 Windows cleanup plan</h1>
     <div class="meta">
       <span><strong>{container_free_gb} GB</strong> free <span class="label-sub">/ {container_total_gb} GB · {pct_free}%</span></span>
       <span><strong>{container_used_gb} GB</strong> used</span>
@@ -805,6 +811,10 @@ HTML_TEMPLATE = r"""<!doctype html>
         </div>
       </div>
       <div class="actions">
+        <label class="select-all-wrap">
+          <input type="checkbox" id="select-all-global">
+          <span class="select-all-label">all files</span>
+        </label>
         <button id="cancel-btn" type="button">Cancel</button>
         <button id="submit-btn" class="primary" type="button" disabled>Submit plan →</button>
       </div>
@@ -829,6 +839,7 @@ HTML_TEMPLATE = r"""<!doctype html>
     const selCount = document.getElementById('sel-count');
     const selProtected = document.getElementById('sel-protected');
     const protectedWarning = document.getElementById('protected-warning');
+    const selectAllGlobal = document.getElementById('select-all-global');
     const submitBtn = document.getElementById('submit-btn');
     const cancelBtn = document.getElementById('cancel-btn');
     const doneScreen = document.getElementById('done-screen');
@@ -896,6 +907,10 @@ HTML_TEMPLATE = r"""<!doctype html>
           selectAll.indeterminate = checked.length > 0 && checked.length < items.length;
         }}
       }});
+      if (selectAllGlobal) {{
+        selectAllGlobal.checked = allItems.length > 0 && count === allItems.length;
+        selectAllGlobal.indeterminate = count > 0 && count < allItems.length;
+      }}
     }}
 
     // Esc → cancel (peak-end / keyboard-friendly)
@@ -919,25 +934,46 @@ HTML_TEMPLATE = r"""<!doctype html>
       }});
     }});
 
+    function confirmProtectedBulk(scopeLabel, protectedCount) {{
+      if (protectedCount === 0) return true;
+      return confirm(
+        '⚠️ PROTECTED ITEMS\\n\\n' +
+        scopeLabel + ' includes ' + protectedCount + ' protected item(s). ' +
+        'These may include user data, synced files, dumps, models, VM disks, or irreversible system actions.\\n\\n' +
+        'Select them anyway?'
+      );
+    }}
+
+    function setItemsChecked(items, checked, scopeLabel) {{
+      const itemList = Array.from(items);
+      const protectedCount = itemList.filter(cb => cb.dataset.protected === '1').length;
+      if (checked && !confirmProtectedBulk(scopeLabel, protectedCount)) {{
+        return false;
+      }}
+      itemList.forEach(cb => {{ cb.checked = checked; }});
+      updateTotals();
+      if (checked && protectedCount > 0) {{
+        showToast('Selected ' + protectedCount + ' protected item(s). Review before Submit.', 5000);
+      }}
+      return true;
+    }}
+
     document.querySelectorAll('.select-all').forEach(sa => {{
       sa.addEventListener('change', (ev) => {{
         ev.stopPropagation();
         const catId = sa.dataset.cat;
         const cat = document.querySelector('.category[data-cat="' + catId + '"]');
         const items = cat.querySelectorAll('.item-cb');
-        let protectedInside = false;
-        items.forEach(cb => {{
-          if (cb.dataset.protected === '1' && sa.checked) {{
-            protectedInside = true;
-            return; // skip — must opt in individually
-          }}
-          cb.checked = sa.checked;
-        }});
-        if (protectedInside && sa.checked) {{
-          showToast('Skipped protected items in this category — opt in individually.', 4000);
+        if (!setItemsChecked(items, sa.checked, 'This category')) {{
+          updateTotals();
         }}
-        updateTotals();
       }});
+    }});
+
+    selectAllGlobal.addEventListener('change', () => {{
+      if (!setItemsChecked(allItems, selectAllGlobal.checked, 'The full cleanup plan')) {{
+        updateTotals();
+      }}
     }});
 
     cancelBtn.addEventListener('click', async () => {{
