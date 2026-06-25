@@ -14,6 +14,7 @@ Ten tiers, ordered by risk and reward. Always start at the lowest, only escalate
 - [Tier 8 — Docker & WSL2 / Hyper-V VHDX](#tier-8--docker--wsl2--hyper-v-vhdx)
 - [Tier 9 — Elevated: Windows.old, DO, Event Logs, restore points](#tier-9--elevated-windowsold-delivery-optimization-event-logs-restore-points)
 - [Tier 10 — Discuss-first](#tier-10--discuss-first)
+- [Large-file visibility pass](#large-file-visibility-pass)
 - [Reset prevention recipes](#reset-prevention-recipes)
 - [After cleanup](#after-cleanup)
 
@@ -241,6 +242,54 @@ Get-CimInstance Win32_PageFileUsage | Select-Object Name, AllocatedBaseSize, Cur
 ```
 
 ⚠️ **Registry is never a cleanup target.** Microsoft does not support registry cleaners; "registry bloat" is a myth as a space/perf source. Only export-and-edit a specific known key when fixing a concrete problem.
+
+---
+
+## Large-file visibility pass
+
+Run this after the tier scans and before building the cleanup JSON. Its purpose is visibility, not automatic deletion: it catches the large one-off files the user may no longer need, while keeping them unchecked/protected in the single final UI unless they are clearly safe cache.
+
+```powershell
+$roots = @(
+  $env:USERPROFILE,
+  $env:LOCALAPPDATA,
+  $env:APPDATA,
+  "$env:USERPROFILE\RiderProjects",
+  "$env:USERPROFILE\PycharmProjects",
+  "$env:USERPROFILE\source",
+  "$env:USERPROFILE\repos",
+  "$env:USERPROFILE\dev",
+  "$env:USERPROFILE\Projects",
+  "$env:USERPROFILE\GitHub",
+  "$env:USERPROFILE\Code",
+  "$env:USERPROFILE\work"
+) | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Select-Object -Unique
+
+$denyRegex = '\\\.git\\objects\\|\\Windows\\|\\Program Files( \(x86\))?\\|\\ProgramData\\Package Cache\\'
+
+foreach ($root in $roots) {
+  Get-ChildItem -LiteralPath $root -Recurse -File -Force -EA SilentlyContinue |
+    Where-Object {
+      $_.Length -gt 500MB -and
+      $_.FullName -notmatch $denyRegex -and
+      -not ($_.Attributes -band [IO.FileAttributes]::ReparsePoint) -and
+      -not ($_.Attributes -band [IO.FileAttributes]::Offline)
+    } |
+    Sort-Object Length -Desc |
+    Select-Object -First 80 FullName,
+      @{N='GB';E={[math]::Round($_.Length/1GB,2)}},
+      LastWriteTime,
+      Extension
+}
+```
+
+When converting these findings to JSON:
+
+- Mark user data, synced media, model weights (`.gguf`, `.safetensors`, `.onnx`), archives, app/project assets, app diagnostic dumps, and profiler captures as `protected: true`, `default_selected: false`, with a concrete warning.
+- Include those protected findings in the same final cleanup JSON as the safe cache/temp/build-artifact candidates. Do not open a second UI round just for large files.
+- Show VHDX files as inventory, but do not offer bare deletion. Use compact/prune workflows only; a WSL/Docker VHDX may be an entire filesystem.
+- Do not offer `.git\objects` files as direct deletes. If a repository is too large, propose Git-native cleanup (`git gc`, removing stale branches, deleting the whole repo if the user chooses), not object-file deletion.
+- Do not include cloud placeholders or Files On-Demand stubs. Deleting them deletes the cloud item.
 
 ---
 
