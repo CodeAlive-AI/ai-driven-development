@@ -1,0 +1,425 @@
+## A.21 — GateProfilization: `OperationalGate(profile)` (GateFit core)
+
+> **Type:** Architectural (A)
+> **Status:** Stable
+> **Normativity:** Normative for gate-decision publication by `OperationalGate(profile)` under `E.18` `TransformationFlowStructure`, A.20 constraint-validity input, and the A.21 CV=>GF activation boundary.
+
+**One-liner.** A single microkernel-style gate aggregates **GateChecks (CV + GF)** into an **order-independent** `GateDecision` via the `GateDecision` join-semilattice `abstain <= pass <= degrade <= block`, uses the **CV=>GF activation predicate** and the LaunchGate pre-run barrier, applies `GateProfile`-bound folds for `error|timeout|unknown`, and publishes replay-grade traces through MVPK faces, `DecisionLog`, and `EquivalenceWitnessRef`.
+
+**Use this when.** Use A.21 when the current question is whether a gate-decision relation publishes a `GateProfile`-bound `GateDecision` from declared GateChecks, folds, pins, and rationale.
+
+**First useful gate use.** Name the `OperationalGate(profile)`, the current declared `GateProfile`, the effective `GateCheckRef` set, the aggregated CV status, and the `DecisionLogRef` that carries the decision rationale.
+
+**Smallest sufficient gate-publication guidance.** Use the lightest gate-publication guidance that preserves the current bounded gate use. Add crossing fields, launch fields, regulated fields, safety-critical fields, replay witnesses, `CrossingBundle`, `PQG` or `RSCR`, or MIP-run material only when the present gate-decision claim would otherwise become false, unsafe, non-replayable, or lack a named governing-definition locus.
+
+**Minimum sufficient gate use.** If there is only a guard, dashboard cue, explanation, full-kit-looking label, or readiness-looking label and no `A.21` gate-decision relation, A.21 has no gate-decision relation to publish. Once the gate-decision relation is present, the low-risk publication minimum is `GateId + GateProfile + GateCheckRef set + CV aggregate + GateDecision + DecisionLogRef`; crossing, launch, regulated, and safety-critical fields appear only when those claims are being made. If the current question is whether intended work has full-kit or work-entry readiness without a gate-decision relation, use `A.15.5`.
+
+**Do not escalate when.** Do not turn cues, guards, narrative explanations, dashboard states, CV results, or readiness-looking labels into a `GateDecision`. Use A.21 only when a present gate-decision relation consumes check refs under a current declared `GateProfile`.
+
+**Gate-looking display and conformance-label disposition.** A green tile, readiness badge, release screen, full-kit label, conformance label, `CV.Status`, safety-envelope note, or regulated-conformance phrase is not gate passage by resemblance. If the attempted use is gate passage, recover the current `OperationalGate(profile)`, `GateProfile`, effective `GateCheckRef` set, CV aggregate, `GateDecision`, `DecisionLogRef`, scope, currentness, and effective window. If those fields are not recoverable, keep the display as a cue, source pointer, CV result, evidence question, or work-entry-readiness question; the evidence claim is governed by `A.10`, the CV result by `A.20`, the work-entry-readiness relation by `A.15.5`, the assurance claim by `B.3`, the language-quality question by `E.19`, or the recovered neighboring claim by its own governing pattern. Safety-envelope, work-entry-readiness, and assurance claims do not belong to A.21 unless they are declared gate checks consumed under the current `GateProfile`; their evidence, readiness, and assurance relations remain with `A.10`, `A.15.5`, and `B.3`. Plain wording remains ordinary unless it changes bounded use, source relation, evidence, gate, readiness, assurance, work, decision, or neighboring-pattern relation.
+
+**Common wrong interpretation.** A green tile, readiness display, or release screen means `GateDecision=pass` exists. First honest entry: A.21 applies only when a current `OperationalGate(profile)` consumes declared checks and publishes a `GateDecision` with `DecisionLogRef`; otherwise the display remains a cue or source question.
+
+Repaired anti-case: a release screen says all checks are green but no current `OperationalGate(profile)`, effective `GateCheckRef` set, `GateDecision`, or `DecisionLogRef` is recoverable. The display remains a cue or evidence question; the attempted gate-passage use has no bounded current gate use until the A.21 gate-decision relation is recoverable.
+
+Agent-loop anti-case: a monitor retries twice, escalates to a supervisor, and the harness dashboard turns green. That sequence may be performed work, telemetry, a transformation-flow path, or evidence for a later check, but it is not `GateDecision=pass` unless a current `OperationalGate(profile)` consumes declared `GateCheckRef`s and publishes `GateDecision` plus `DecisionLogRef`. If the gate-decision relation is intended but missing, repair it by recovering the A.21 gate-decision relation; otherwise the result remains a cue for A.15, E.18, G.9, or evidence work, not an A.21 gate passage.
+
+**Same problem, different current question.** For a gate-bearing transformation-flow problem, use `E.18` for transformation-flow structure, graph value, path relation, valuation, or crossing claims, `A.20` for internal step validity, `A.21` for gate-decision publication, and `E.20` for mechanism-meaning placement; do not use the other three until their own claim is present.
+
+**Semantic repair target.** When A.21 blocks a misleading word, face, alias, or source label, the repair must restore the gate-decision claim: name the current gate-decision relation, current `GateProfile`, consumed `GateCheckRef` set, aggregate, `GateDecision`, and `DecisionLogRef` that remain available under A.21. Do not stop at a classification of vocabulary or publication faces.
+
+**EntityOfConcern and relation separation.** Keep the graph value, path relation or crossing relation (`E.18`), MVPK publication faces (`E.17`), internal CV status and witness (`A.20`), gate decision and `DecisionLog` (`A.21`), evidence or provenance relation (`A.10` and `G.6`), work plan or work occurrence (`A.15`), and mechanism-governing definition assignment (`E.20`) distinct. An MVPK face, `DecisionLog`, evidence value, MIP manifest, or work witness does not stand in for another pattern's project-side value unless that governing pattern consumes it for that relation.
+
+**Smallest affected locus.** Localize the change to the smallest affected locus: `PathSlice` or crossing in `E.18`, CV step in `A.20`, `GateDecision` equivalence class in `A.21`, or mechanism-governing definition in `E.20`. Do not widen to a whole flow or unrelated EntityOfConcern when that locus is enough.
+
+
+**Ordinary success.** For ordinary A.21 use, success is that the current gate-decision relation, current `GateProfile`, check set, aggregated decision, and `DecisionLogRef` are placed without implying performed work or mechanism-definition truth. A full conformance review is needed only when crossing, launch, regulated, safety-critical, or replay claims consume expanded assurance or conformance material.
+
+**Locality asymmetry.** `E.18` is graph-local, `A.20` is step-local, `A.21` is gate-local, and `E.20` is trigger-local. Do not normalize the four patterns into one assurance regime.
+
+**Do not merge these pairs.** Keep `CV.Status` distinct from `GateDecision`, `E.18` `Check` locus distinct from `GateCheckKind`, MIP manifest distinct from `DecisionLog`, `ViewpointMap` distinct from graph semantics, `PathSlice` distinct from a performed work occurrence, and `GateProfile=Lite` distinct from `PublishMode=Lite`.
+
+**Field applicability.** Always core for A.21 once the gate-decision relation is present: `GateId`, `GateProfile`, effective `GateCheckRef` set, CV aggregate, `GateDecision`, and `DecisionLogRef`. Conditional fields are crossing pins, LaunchGate pre-run barrier fields, regulated or safety-critical evidence refs, equivalence witnesses, and replay or currentness fields; include a conditional field only when the corresponding crossing, launch, regulated, safety-critical, replay, or reuse claim is present.
+
+**Retrieval trap guard.** When excerpted alone, A.21 DecisionLog fields must not be interpreted as requiring a full regulated log for every cue, guard, or low-risk gate. The `DecisionLog` content follows the current `GateDecision`, current `GateProfile`, and field-applicability rules.
+
+**Anti-Goodhart guard.** A complete gate record is not a substitute for the governed gate result: the gate must still publish the correct `GateDecision` under the current `GateProfile`, and that decision does not prove performed work or mechanism-definition truth. `DecisionLog` completeness does not make an invalid check true; check truth remains with the governing patterns.
+
+**Generative side.** A.21 preserves open-ended action by publishing explicit `GateDecision=pass`, `GateDecision=degrade`, `GateDecision=block`, or `GateDecision=abstain` decisions with rationale, so downstream work can continue, narrow, retry, or stop under declared conditions instead of being hidden behind an unreviewable cue.
+
+**What goes wrong if missed.** A guard can be mistaken for a GateCheck, a human-readable explanation can be mistaken for the decision or decision record, and a dashboard-like pass-or-fail cue can be treated as gate passage without the `A.21` decision relation.
+
+**What this buys.** A.21 gives the practitioner one place to separate `GateProfile` fit, decision aggregation, rationale, optional explanation, and decision-record reuse while keeping gate logic out of CV and planning.
+
+**Not this pattern when.** If the question is internal step constraint satisfaction, use `A.20`. If the question is graph crossing or valuation, use `E.18`. If the question is performed work or work planning, use the work occurrence or work-planning loci. If the question is full-kit condition or work-entry readiness before work entry, use `A.15.5` unless an actual gate-decision relation is current. If the text only contains a guard, cue, explanation, dashboard state, lexical pseudo-gate, or readiness-looking label without an `A.21` gate-decision relation, do not infer gate passage.
+
+### A.21:1 - Problem frame
+
+#### A.21:1.1 - Intent & scope
+
+This pattern is the governing locus for canonical gate-decision publication content for `OperationalGate(profile)`: `GateCheckRef` as the GateFit check-catalog boundary, gate aggregation, `GateDecision` terminology, `GateDecisionRationale`, `GateDecisionExplanation`, `DecisionLog` minima, profile-bound folds, and A.21 decision equivalence. A.20 governs CV class meaning; an A.21 gate-decision relation may consume referenced CV results but does not define CV class semantics. Neighboring governing patterns carry the domain truth conditions of their checks.
+
+Within that boundary, A.21:
+
+* aggregates per-check outcomes into a single **published** `GateDecision` using the join lattice,
+* states the **CV⇒GF** activation boundary: GateFit checks are inactive until `CV.Status=pass`,
+* defines the minimal **publication faces** and `DecisionLog` content required to make gate outcomes auditable and replayable,
+* applies **SWP at the gate**: `OperationalGate(profile)` and its `GateCheck`s are **ref-only** with respect to editions, registries, and domain publications or records; A.21 publishes **only** `GateDecision` and `DecisionLog` pins and references, and does not declare or mutate edition families.
+This pattern is **about the semantics of what is published** (and how it composes), not about procedural execution.
+
+#### A.21:1.2 - Primary EntityOfConcern and gate-profile value family
+
+* **`OperationalGate(profile)`** — a gate/check locus in an `E.18` `TransformationFlowStructure` that mediates any **GateCrossing**: any change in `CtxState = ⟨L,P,E⃗,D⟩` or entry to performed `U.Work` through `LaunchGate`.
+* **`GateProfile`** — the profile-bound constraint of the partial function `CtxState_from -> CtxState_to`; this pattern carries the current binding and minimum profile semantics. Fuller project-local profile matrices are auxiliary material unless a current governing pattern includes them by value.
+* **`GateCheckRef`** — the publication lexeme that binds a check to `(aspect, kind, edition, scope)`.
+* **`GateDecision`, `GateDecisionRationale`, and `GateDecisionExplanation`** — decision value, structured rationale, and optional narrative (non-decision).
+* **`DecisionLog`** — append-only audit record linking decisions to check refs, rule references, and (where applicable) SquareLaw mismatches.
+
+#### A.21:1.3 - CV vs GF boundary (what “activation” means)
+
+* **ConstraintValidity (CV)** evaluates *internal step validity*;
+* **GateFit (GF)** is an aspect label on `GateCheckRef` for checks that evaluate *fit to the current `GateProfile`*: plane fit, crossing fit, freshness, evidence, role-channel fit, regulator conformance, and similar profile-fit claims. It is not a durable U-kind, graph node, record family, module, queue, or stage in the flow.
+* **Ordering & activation.** CV is evaluated before GateFit; **while `CV.Status != pass`, all GateFit checks return `abstain`.**
+
+#### A.21:1.4 - Failure cases (diagnostic lens)
+
+* **CV ✔, GF ✖**: the transformation has passing internal CV, but the gate, profile, role, timing, or evidence fit is wrong.
+* **CV ✖, GF ?**: fix the internal constraint-validity failure first; GF is inactive.
+* **CV ✔, GF ✔**: the gate publishes a `GateDecision` for the declared crossing; for `LaunchGate`, this is the gate decision for crossing into performed `U.Work`, not actual work occurrence.
+
+#### A.21:1.5 - Non-goals
+
+* No procedural semantics (no scheduling, no API formats, no automation narratives).
+* No “second hidden execution order” outside the transformation-flow structure: every **check locus** is an `OperationalGate(profile)` in the same `E.18` `TransformationFlowStructure`; its **pluggable GateChecks** are declared on that gate/check locus (no floating checks), and only the declared check set and reaction rules vary across gates.
+* No key, hash, or cache *formats*: A.21 constrains **equivalence and invalidation conditions**, but not key materialization.
+* No lexical “pseudo-gating”: a lexical alias view is non-decisional and is not modeled as a GateCheckKind.
+
+### A.21:2 - Problem
+
+Without a unified GateFit core:
+
+* Gate decisions become ad hoc, **order-dependent**, and hard to audit (especially with multiple independent checks).
+* Gate logic enters CV: plane claims, comparator claims, freshness claims, or role-channel claims appear “inside steps”, collapsing the CV and GF separation.
+* “Unknown”, “timeout”, or “error” behavior becomes implicit and inconsistent across cases, undermining reproducibility and safety.
+* Publication faces drift into “extra semantics” (computed scalars or tool encodings) rather than pins and references, breaking MVPK discipline.
+
+### A.21:3 - Forces
+
+* **Separation vs convenience.** Keeping CV internal and GF profile-bound keeps the boundary explicit, but demands a crisp activation boundary.
+* **Determinism vs incompleteness.** Gate decisions stay deterministic even when evidence is missing or partial (`unknown`).
+* **Safety vs throughput.** Some profiles treat ambiguity as `block`, others as `degrade`.
+* **Human comprehension vs formal minimality.** Optional narratives help practitioners understand a gate decision, but are not used as decisions.
+* **Reuse vs freshness.** Decision reuse requires explicit equivalence; otherwise re-aggregation is mandatory.
+* **Scope granularity vs complexity.** Checks are declared with scopes (`lane|locus|subflow|profile`) and merged; duplicates preserve evidence rather than overwrite it.
+
+### A.21:4 - Solution
+
+#### A.21:4.1 - Gate = microkernel of checks
+
+> **Note (guards are not GateChecks).** `USM.CompareGuard` and `USM.LaunchGuard` are **not** `GateCheckKind`s; they may emit `GuardFail` events which are aggregated by the gate referenced by the existing aggregation-assignment field `GuardOwnerGateId` under the current `GateProfile` (`degrade|block`) and recorded in `DecisionLog`. Guard vocabulary is received through `A.2.6`; gate aggregation remains here.
+`OperationalGate(profile)` is treated as a microkernel: checks are **pluggable** `GateCheck`s; the gate core **aggregates** their outputs **conceptually**, without procedural semantics and without altering the transformation-flow structure.
+
+#### A.21:4.2 - Publication lexemes and register discipline
+
+**Per-check reference lexeme.**
+`GateCheckRef := { aspect, kind, edition, scope }`, where:
+* `aspect ∈ {ConstraintValidity, GateFit}`,
+* `scope ∈ {lane|locus|subflow|profile}`.
+
+**Short-form shorthand (insufficient for publication).**
+If a local short form `{ kind, edition, scope }` appears in prose, it is interpreted only as a projection of the normative record with `aspect` supplied explicitly at the point of publication. Any published face or `DecisionLog` entry uses the full `GateCheckRef` with `aspect`.
+
+**Decision terminology separation.**
+
+* `GateDecision` is the published lattice value.
+* `GateDecisionRationale` is the minimal structured rationale payload for that decision (check outcomes, folds, witness refs).
+* `GateDecisionExplanation` is optional, human-readable, derived from the rationale; it **does not carry the decision value** and is not used as one.
+
+**Register discipline.** Tech labels are ASCII and twin-labeled where the plain form uses symbolic notation.
+(Example: paired labels use `CLPlane` and “CL^plane”, `CLKind` and “CL^k”, `UNM.TransportRegistryPhi` and “UNM.TransportRegistryΦ”, `GammaTimeRule` and “Γ_timeRule”.)
+
+#### A.21:4.3 - CV⇒GF activation predicate (counterfactual boundary)
+
+GateFit checks are *defined* as inactive unless `CV.Status=pass`:
+* Let `CV.Status` be the join-aggregate of all `GateCheckRef` with `aspect=ConstraintValidity`.
+* For any `GateCheckRef` with `aspect=GateFit`:
+  **If `CV.Status ≠ pass`, the GateFit check outcome is `abstain`.**
+* While `CV.Status ≠ pass` **(or the current `GateProfile` suppresses narratives)**, any GateFit-oriented `GateDecisionExplanation` **does not apply**.
+
+This keeps the boundary crisp: CV explains internal validity; GF explains fit to `GateProfile` **only in the counterfactual world where `CV.Status=pass` holds**.
+
+**LaunchGate pre‑run barrier (work‑boundary special case).**
+
+For the unique `LaunchGate` at the entry of each performed `U.Work`, let `Prev.CV.Status` denote the aggregate over the declared ingress predecessor set or ingress cut-set for the addressed `PathSlice`. In a linear path this may be one predecessor; where graph or fan-in semantics are present, it is not reduced to one immediately preceding step.
+
+* If `Prev.CV.Status ≠ pass`, then (i) all GateFit-scoped LaunchGate checks return `abstain` by activation, and (ii) the **overall LaunchGate** decision is forced to `block` (pre‑run barrier). The rationale records the predecessor CV status and the forced-block rule in `DecisionLog`.
+
+This is a publication-safety invariant: it constrains which `GateDecision` may be published for the work boundary without specifying evaluation order or execution scheduling. Actual launch values and work occurrences remain governed by `A.15`.
+
+#### A.21:4.4 - Decision algebra: join-semilattice (“worst wins”)
+
+A.21 adopts order-independent aggregation, not a universal policy language or a one-size-fits-all safety rule. The gate core does not define the domain truth of checks; it aggregates declared check outcomes under the current `GateProfile`.
+
+**Decision domain.** `GateDecision ∈ {abstain, pass, degrade, block}`.
+
+**Aggregation rule.** Aggregation over all applicable checks is the **idempotent, commutative, associative join** on
+`GateDecision` values `abstain <= pass <= degrade <= block`, with **neutral = `abstain`** and **absorbing = `block`**.
+
+Publications carry only:
+
+1. the aggregated `GateDecision`, and
+2. its `GateDecisionRationale` recorded in the `DecisionLog`.
+
+#### A.21:4.5 - Profile-bound folds for `error|timeout|unknown`
+A check may encounter `error`, `timeout`, or evidence-scoped `unknown`. These do **not** become new decision values; they are folded into the decision lattice **by profile and check policy**.
+**Normative minimum folds (tri-state).**
+
+> **Naming note.** Some conformance tables use **Lean** as a display label for the `GateProfile=Lite` GateProfile value. Treat this as a label only, and do not confuse it with `PublishMode=Lite` (a publication-face reduction mode).
+
+| Current `GateProfile` | `error` fold | `timeout` fold | `unknown` fold (evidence-scoped) |
+| -------------------- | -----------: | -------------: | ------------------------------: |
+| `Lite`               |    `degrade` |      `degrade` | per `GateCheck` policy (`abstain` or `degrade`) |
+| `Core`               |    `degrade` |      `degrade` | per `GateCheck` policy (`abstain` or `degrade`) |
+| `SafetyCritical`     |      `block` |        `block` | per `GateCheck` policy (safety-default: `degrade`) |
+| `RegulatedX`         |      `block` |        `block` | per `GateCheck` policy (safety-default: `degrade`); X identity and edition are recorded in `DecisionLog` |
+
+Where a `GateCheck` declares an evidence-scoped `unknown` strategy, that strategy is part of the check's criteria definition; the fold applied and its justification are recorded in `DecisionLog`.
+
+#### A.21:4.6 - GateProfiles: current binding and minimum profile semantics
+
+A.21 binds the following *functional role* of `GateProfile`:
+
+> **Terminology (avoid confusing `Lite` and `Lean`).** `GateProfile=Lite|Core|SafetyCritical|RegulatedX` is the **GateProfile value** that determines the effective GateCheck set and fold policies. `PublishMode=Lite` is a **publication-face reduction mode** (AssuranceLane‑Lite or TechCard‑Lite) and is not interpreted as a reduced-obligation `GateProfile`.
+
+* A `GateProfile` is an attribute of a **branch or `PathSlice`**; the default is `Core`.
+* Local overrides may change the current `GateProfile` for the current GateCrossing and its subordinate scope **but cannot reduce** the already-effective set of `GateCheckKind`s; the override adds checks only. Weakening uses a new `PathSlice` via sentinel.
+* `PublishMode=Lite` changes *face reduction only* and does **not** weaken the check set or aggregation rule.
+
+#### A.21:4.7 - Scope and merge semantics (`lane|locus|subflow|profile`)
+
+* Each `GateCheckRef` declares its scope; `subflow` scope is bounded by a sentinel bridge (restart or refresh boundary).
+* The effective check set is formed by **union across all declared scopes**; duplicates by `kind` merge by the same join rule (“worst wins”), and **all rationales are preserved** in `DecisionLog`.
+  * For `RegulatedConformance(X)`, the identity of **X** and its rule and edition reference are part of the rationale record; multiple `RegulatedConformance(X{…})` may coexist in one gate.
+* A check outside its scope reports `abstain`.
+
+#### A.21:4.8 - Publication repeatability, caching, and re-aggregation triggers
+**Repeatability (publication).** Gate decisions must be replayable from declared pins and references: no implicit "latest" or "now". If a currentness selector is expressed through `Γ_time` or a `Γ_timeRule`, the `DecisionLog` records the selector, the resolved window, and the resolution rule used for the gate decision.
+
+**Caching constraint (publication).** A gate decision is cacheable only per
+`{PathSliceId, GateProfile, GateChecks.editions, editions{...}}`, where `GateChecks.editions` denotes the canonicalized, order-independent listing of the **effective** `GateCheckRef{aspect,kind,edition,scope}` (including their `edition`s) for this gate instance. The cached decision remains reusable while the declared freshness or evidence window remains current under the current `GateProfile`.
+
+**Re-aggregation triggers (non-exhaustive, normative).** Re-aggregation is required if any of the following changes (slice-local; no method sequence implied):
+
+* any component of `editions{...}` changes (any `edition_key -> EditionId` bump),
+* any `GateCheckRef.edition` changes (including regulator X editions for `RegulatedConformance(X)`),
+* the declared `Γ_time` selector changes or resolves differently,
+* a relevant `FreshnessTicket` expires or changes, or TOCTOU window constraints change,
+* a sentinel-bounded `subflow` refresh adds an SCR or RSCR reference to the `DecisionLog` rationale-reference set,
+* any input breaks the declared `A.21` equivalence witness.
+
+Decision stability is under the `A.21` equivalence relation; a witness is recorded on the `DecisionLog` (see §4.10). A.21 constrains equivalence and invalidation conditions but does not fix key formats.
+
+#### A.21:4.9 - MVPK faces for `OperationalGate(profile)` (minimum pins)
+
+The gate publishes faces to record **what is declared**, not "how it executes". Faces remain **pins and references** (no new numeric claims; no input-output relisting).
+
+**Minimum pins (PlainView, TechCard, or AssuranceLane where applicable).**
+
+* View scope: `PublicationScopeId` with MVPK profile (`Min|Lite|SetReady|Max`)
+* Identity: `GateId`, `BridgeId`, `PathId`, `PathSliceId`
+* Temporal: `DesignRunTagFrom`, `DesignRunTagTo`
+* Profile: `GateProfile` (`PublishMode` changes only face reduction)
+* Checks: list of `GateCheckRef` (`aspect`, `kind`, `edition`, `scope`)
+* CV: aggregated `ConstraintValidityStatus` and optional `ConstraintValidityWitnessRef` (refs only)
+* Editions: `editions{...}` vector and `EditionPins{CGSpec, ComparatorSet, UNM.TransportRegistryPhi}`
+  * **Gate-requirement on edition refs.** Any face that cites `CGSpec`, `ComparatorSet`, or `UNM.TransportRegistryPhi` editions also includes `BridgeCard` and UTS row through `F.9`, `F.17`, `E.17`, and `E.18`; otherwise downstream consumption is non-conformant.
+* ReferencePlane and CL: source `ReferencePlane` pins and target `ReferencePlane` pins; `CLPlane` and `CL^plane` (for non-crossings the field value is `CL^plane = none`, but pins are still explicit); any Φ penalties are published as rule refs and appear in the **R-channel only**.
+* Freshness: declared `GammaTime` and `Γ_time` pin plus presence or absence of `FreshnessTicket` (refs).
+* Evidence: SCR or RSCR references plus VALATA (`VA`, `LA`, `TA`) presence on AssuranceLane.
+* Guards: `USM.CompareGuard` and `USM.LaunchGuard` applicability pins (presence-only; GuardFail uses the `A.2.6` guard vocabulary and is aggregated here by the gate referenced by the existing aggregation-assignment field `GuardOwnerGateId`).
+* Decision: aggregated `GateDecision` and `DecisionLogRef`.
+
+**Lean face (PublishMode=Lite).** It can fold to `GateProfile`, `GateChecks`, `EditionPins`, `GateDecision`, and `DecisionLogRef`, but:
+
+* it keeps `GateProfile` and `DecisionLogRef`,
+* it does not weaken GateChecks or the aggregation algebra, and
+* if `EditionPins` are present, it still includes `BridgeCard` and UTS row through `F.9`, `F.17`, `E.17`, and `E.18` and preserves the crossing boundaries (explicit `ReferencePlane`, `CLPlane`, and Φ to R-channel only).
+
+#### A.21:4.10 - DecisionLog (minimum composition)
+
+`DecisionLog` is an append-only record of reasons and references:
+
+* gate identity, `PathSliceId`, and `PublicationScopeId` when the log is published via a face bundle;
+* each `GateCheckKind`, its `GateCheckRef.edition`, and its folded outcome (`pass|degrade|block|abstain`) including the applied `error|timeout|unknown` fold;
+* rule references and evidence references (SCR or RSCR references plus VALATA bindings); SquareLaw mismatched pins appear only when the crossing check is present;
+* policy-id dependencies used by checks, as `PolicyIdRef` bundles per F.8:8.1; `Φ(CL)`, `Φ_plane`, and `Ψ(CL^k)` appear only when bridge or crossing is present, while gate-local policy ids appear only when consulted by the current `GateProfile`;
+* `GuardFail` events only when guard events exist; if present, they are received from `USM.Guards` and aggregated by the gate referenced by the existing aggregation-assignment field `GuardOwnerGateId` with the applied `GateProfile` rule (`degrade|block`);
+* `EquivalenceWitness` or `EquivalenceWitnessRef` as an `A.21` publication record field, minimally: `{ keys, E⃗, Γ_time(selector), PathSliceId?, ReturnShapeClass, ComparatorSetRef?, GateProfile }`; use `G.6` or `G.11` where evidence-provenance visibility or refresh implications are present;
+* the declared publish reaction for `degrade|block` only when that outcome has a declared publication consequence, including any local "degrade mode" notes when the `GateProfile` permits them;
+* for `RegulatedConformance(X)`, only when `RegulatedConformance(X)` is present: the identity of X and the rule references and edition references used.
+
+#### A.21:4.11 - GateFit check catalog boundary
+
+**Mandatory on LaunchGate.** `FreshnessUpToDate`, `DesignRunTagConsistency`.
+**Declared GateFit check catalog (non-exhaustive, normative minima).**
+
+* `DesignRunTagConsistency` (mandatory on LaunchGate; may appear elsewhere)
+* `FreshnessUpToDate` (mandatory on LaunchGate; may appear elsewhere)
+* `ReferencePlaneCrossing`
+* `ComparatorConstraintRules (CSLC)`
+* `EvidenceCompleteness`
+* `SafetyEnvelope`
+* `RegulatedConformance(X)` (X identity plus edition and rule refs are recorded in `DecisionLog`)
+* `RoleChannelFit` (roles are Kernel `U.Role` tokens; channel fit is a separate check component, not an alias string)
+* `EquivalencePreservation`
+* `OutflowAudit`
+* `SnapshotConsistency`
+
+**Neighboring-governance truth examples (informative).** A.21 names and aggregates the check; it does not decide the domain truth condition. `EvidenceCompleteness` is governed by `A.10`, `G.6`, or `B.3`; `RoleChannelFit` is governed by `A.2`, `A.15`, or `A.2.6`; `ReferencePlaneCrossing` is governed by `E.18`, `F.9`, `F.17`, and UNM; `ComparatorConstraintRules` is governed by `A.19`, `G.0`, `G.5`, `C.18`, `C.19`, `G.9`, or `G.11` where comparator, archive, parity, set-return, or refresh claims are present; `SafetyEnvelope` and `RegulatedConformance(X)` are governed by the safety or regulatory pattern that governs the envelope or rule.
+
+**Forbidden (hard boundary).**
+
+* Modeling CV classes “as GateFit” (CV classes remain CV; GF remains GF).
+* Any “LEX gate checks” or lexical pseudo-checking (lexical views do not participate in decisions).
+
+#### A.21:4.12 - SquareLaw compatibility at crossings
+For every GateCrossing, the SquareLaw constraint holds:
+`gate_out ∘ transfer = transfer' ∘ gate_in`.
+
+Profile selection or inheritance does not weaken this requirement; inconsistency yields `block` or `degrade` within the current `GateProfile` and is recorded in the DecisionLog. LaunchGate is a work-boundary GateCrossing case, so SquareLaw is mandatory there as well.
+
+#### A.21:4.13 - Lexical mediation (optional trace, non-decisional)
+
+A gate publication can include a `LexicalResolutionRef` or `LexicalView` for traceability of alias resolution, but:
+
+* it does **not** participate in aggregation, and
+* it is not a `GateCheck` input and cannot change `GateDecision`.
+
+### A.21:5 - Archetypal Grounding
+
+#### A.21:5.1 - System vignette — “Regulated release gate”
+
+**Show 0 (green cue, no gate decision).** A dashboard tile says “ready” because a source system returned green. No `OperationalGate(profile)`, `GateCheckRef` set, `GateDecision`, or `DecisionLogRef` is named. The tile remains orientation or source-finding only; it is not gate passage and does not establish A.21 decision reuse.
+
+**Tell.** A `PathSlice` includes a `LaunchGate` immediately before performed `U.Work` that can finalize binding. The current `GateProfile` is `RegulatedX`. The gate publishes a single `GateDecision` and a `DecisionLog` explaining the release-crossing decision, without encoding any execution method.
+
+**Show A (CV ✔, GF ✖).** `CV.Status=pass`, activating GateFit. `RegulatedConformance(X)` is present but evidence references are incomplete (`EvidenceCompleteness` folds to `degrade` under `Core` or `RegulatedX` policy), so the join yields `GateDecision=degrade`. The DecisionLog records which `GateCheckRef` caused the fold and the declared publish reaction for degraded release.
+
+**Show B (CV ✖, GF not applicable).** CV aggregate is `degrade`. All GateFit checks return `abstain` by activation, and any GateFit-oriented explanation is inapplicable. The gate’s published decision is driven by CV; the DecisionLog shows CV status and the “inactive GF” boundary rather than a fabricated GF narrative.
+
+#### A.21:5.2 - Episteme vignette — “Cross-plane comparability gate”
+
+**Tell.** A `PathSlice` includes a comparability-critical step (CSLC). The gate publishes `BridgeId + UTS + CLPlane` and edition pins for downstream consumers, and remains stable under the `A.21` equivalence witness.
+
+**Show A (Core, clean crossing).** The gate publishes `EditionPins{CGSpec, ComparatorSet, TransportRegistryPhi}`, `ComparatorSetRef`, `CL` and `CLPlane`, and a `GateDecision=pass` with a rationale that cites the relevant `GateCheckRef`s and editions.
+
+**Show B (SquareLaw mismatch).** A crossing attempts to change plane pins without the commutative-square witness; the SquareLaw check yields `block` (or `degrade` under a profile with a less strict fold policy), and the DecisionLog records the mismatched pins as the reason.
+
+### A.21:6 - Bias-Annotation
+
+The built-in biases of this pattern are stated across the five Principle-Taxonomy lenses (Gov, Arch, Onto-Epist, Prag, Did).
+
+* **Gov.** Bias toward auditability and explicit responsibility (DecisionLog + profile-bound folds). Risk: gate-stewardship roles become de facto governors; mitigation: keep profiles explicit, inheritable, and pinned to `PathSliceId` for reviewable replay.
+* **Arch.** Bias toward a microkernel of checks (pluggable GateChecks + join aggregation). Risk: “check sprawl”; mitigation: scope discipline + forbidden LEX pseudo-checking + CC-based profile minima.
+* **Onto-Epist.** Bias toward a 4-value `GateDecision` lattice and explicit “does not apply” boundaries. Risk: oversimplifying nuanced epistemic uncertainty; mitigation: preserve structured rationales and check-scoped `unknown` policies rather than inventing new global decision values.
+* **Prag.** Bias toward determinism and replayability (cache invalidation by pinned vectors). Risk: higher publication overhead; mitigation: PublishMode=Lite for faces (never for weakening checks).
+* **Did.** Bias toward explicit separation (CV vs GF) and “what is published” clarity. Risk: more concepts to learn; mitigation: archetypal grounding + stable minimal pins across faces.
+
+### A.21:7 - Conformance Checklist
+
+**Conformance use.** This checklist is evidence for the gate-decision publication guidance already stated in the Solution. It is not the first entry text for ordinary use and not a full audit regime by default; a checklist row is applied only when its corresponding gate, check set, decision, crossing, launch, publication, or assurance relation is present. Before applying any row, name the Solution relation it tests; if no such practitioner use is present, treat the row as orientation-only or not applicable rather than expanding the applied assurance or conformance material.
+
+**Conformance groups.** Ordinary gate use starts with the current gate, check set, CV aggregate, `GateDecision`, and `DecisionLogRef`. Crossing and launch rows apply only when the gate is a GateCrossing or `LaunchGate`. Publication and assurance rows apply only when MVPK faces, evidence references, decision stability, or replay are present. Extension and change rows apply only when lexical tokens, profile variants, or neighboring policy or evidence loci are being changed or consumed.
+
+Minimum unified conformance for A.21 and for any `PathSlice` or gate-bearing transformation-flow value where GateFit discipline is asserted:
+
+#### A.21:7.1 - Core gate semantics
+
+* [ ] **CC‑TFS‑06**: all GateCrossings (CtxState changes, and work-boundary crossings via LaunchGate) are mediated by `OperationalGate(profile)` and have a `DecisionLog`.
+* [ ] **CC‑TFS‑07**: CV=>GF activation predicate holds (`CV.Status!=pass => GF=abstain`).
+* [ ] **CC-TFS-21**: decision stability witness is present on the `DecisionLog` record as an `A.21` `EquivalenceWitness` or `EquivalenceWitnessRef`.
+* [ ] **CC‑TFS‑21a**: aggregation is the join on `GateDecision` values `abstain <= pass <= degrade <= block`; `GateDecisionExplanation` is optional and non-decisional.
+* [ ] **CC‑TFS‑22**: `error|timeout` folds are profile-bound; `unknown` folds per GateCheck policy.
+* [ ] **Gate-looking display boundary**: a dashboard state, green tile, readiness badge, conformance label, CV result, safety-envelope note, or release screen is not gate passage unless current `OperationalGate(profile)`, effective `GateCheckRef` set, aggregate, `GateDecision`, `DecisionLogRef`, scope, currentness, and effective window are recoverable.
+
+#### A.21:7.2 - LaunchGate discipline (pre-run barrier)
+
+* [ ] **CC‑TFS‑08**: every performed `U.Work` launch boundary has one and only one `LaunchGate` with mandatory `FreshnessUpToDate` and `DesignRunTagConsistency`; **pre‑run barrier:** if `ConstraintValidityStatus!=pass` over the declared ingress predecessor set or ingress cut-set for the addressed `PathSlice`, then all LaunchGate GateFit checks are `abstain` and the overall `GateDecision=block` (logged).
+
+* [ ] **Pre‑Run barrier** is satisfied for any `U.Work` where `FinalizeLaunchValues` is possible.
+
+#### A.21:7.3 - Publication and evidence
+
+* [ ] **CC‑TFS‑20**: `PublishMode=Lite` changes face reduction only; required GateChecks remain intact.
+
+* [ ] **CC‑TFS‑25**: AssuranceLane carries `GateProfile`, `GateCheckRef` list, edition pins, `GateDecision`, and `DecisionLogRef` with the two-part evidence scheme (SCR or RSCR plus VALATA).
+
+#### A.21:7.4 - Cross-boundary additions (when the gate is a crossing)
+
+* [ ] **CC‑TFS‑11**: crossings publish `BridgeId + UTS + CLPlane` and `CL^plane`; penalties appear in the R-channel only.
+* [ ] **CC‑TFS‑23**: SquareLaw holds on crossings; mismatch yields `block|degrade` per profile and is logged.
+
+#### A.21:7.5 - Lexical norms (E.10 discipline)
+
+* [ ] Tech names are ASCII and twin-labeled; required token classes are registered under LEX (including `GateProfile`, `GateCheckKind`, `GateCheckRef`, `DecisionLog`).
+* [ ] Any lexical alias view is trace-only and cannot change `GateDecision`.
+
+### A.21:8 - Common Anti-Patterns and How to Avoid Them
+
+| Anti-pattern | Why it fails | Correct use |
+|---|---|---|
+| Guard as GateCheck | A guard, status cue, or publication label is treated as a profile-bound gate check. | Declare the `GateCheckRef`, check criteria, fold policy, and governing neighboring truth condition. |
+| Explanation as decision | A readable narrative is treated as the `GateDecision` or `DecisionLog`. | Keep `GateDecision`, `GateDecisionRationale`, optional explanation, and decision record distinct. |
+| Gate pass as performed work | `GateDecision=pass` is read as work occurrence, release action, work-entry readiness, or work authorization. | Use A.21 only for the gate-decision relation; use A.15.5 for work-entry readiness and A.15 or the release-governing pattern for work or authorization claims. |
+| Profile drift by publication mode | `PublishMode=Lite` is read as a weaker `GateProfile`. | Keep publication-face reduction in E.17 and keep `GateProfile` fold policy explicit in A.21. |
+
+### A.21:9 - Consequences
+
+**Benefits**
+
+* **Deterministic gating.** Join-semilattice aggregation makes decisions order-independent and idempotent (modulo declared equivalence), enabling consistent audit and replay.
+* **Clean CV and GF separation.** Activation boundary keeps profile concerns out of mechanism validity.
+* **Profile clarity.** Fold policies (`error|timeout|unknown`) are explicit and profile-bound, making safety review result inspectable.
+* **Publication hygiene.** MVPK faces remain pins and references (no new numeric claims), and DecisionLog captures rationale without procedural commitments.
+
+**Trade-offs**
+
+* **More decision records to publish.** Decisions are not just binary pass-or-fail values: they require rationales, pins, and logs.
+* **Two-stage reasoning.** Users need the rule “GF does not apply until `CV.Status=pass` holds”; mitigated by explicit inapplicability rules and optional narratives only when applicable.
+* **Scope complexity.** Multi-scope merge semantics can feel heavy; mitigated by union + worst-wins + preserved rationales.
+
+### A.21:10 - Rationale
+
+* The microkernel framing preserves a single graph semantics: checks are gate/check loci and decision publications, not an external execution sequence; this keeps a second hidden execution order outside the gate core from appearing.
+* The join lattice provides minimal, monotone aggregation with two useful properties:
+
+  * early absorption at `block` without specifying execution strategy, and
+  * deterministic publication semantics (commutative, associative, and idempotent).
+* CV⇒GF activation is the mechanism that keeps orthogonality strict while still publishing a single gate decision publication: GF results do not replace CV failures.
+* Explicit folds for `error|timeout|unknown` make safety review result inspectable and profile-specific without inventing new decision values.
+
+### A.21:11 - SoTA-Echoing
+
+Source references (post-2015) that this pattern **adopts, adapts, or rejects**, consistent with the transformation-flow goal of assured lanes, open graph composition, and join-semantics.
+
+* **Adopt.** *Join-semilattice aggregation as deterministic, profile-bound merge* (distributed-systems and CRDT literature, e.g., Kleppmann 2017; Kleppmann & Beresford 2017): A.21 uses the algebraic idea only so declared gate-check outcomes fold to the same `GateDecision` under the same current `GateProfile` and equivalence witness. It does not import CRDT architecture or use CRDT as prestige terminology.
+
+* **Adapt.** *Compositional reasoning with commuting diagrams* (applied category theory, e.g., Fong & Spivak 2019): A.21 adapts the intuition by making SquareLaw a gate-audited invariant on crossings, while keeping publications human-first and pin-based.
+* **Adapt.** *Supply-chain provenance and policy gating via attestations* (software supply-chain security, e.g., in-toto 2019; SLSA v1.2 provenance and VSA attestation specification line): A.21 adapts the attestation-shaped evidence discipline as MVPK pins plus `DecisionLog`, not DevOps release procedure, tool-specific methods, or runtime scripts.
+
+* **Reject.** *Narrative-as-authority.* Any approach where human-readable explanations function as decision-bearing records is rejected; in A.21, narratives remain optional derivatives of structured rationales and are explicitly non-decisional.
+
+Gate-publication result in attestation-shaped practice: green tiles, readiness badges, full-kit labels, release screens, conformance labels, safety-envelope notes, CV results, and gate-looking explanations do not become gate passage, release authorization, deontic permission, safety acceptance, work-entry readiness, assurance, work occurrence, or work authorization by appearance. The local A.21 result is a current `OperationalGate(profile)`, current `GateProfile`, effective `GateCheckRef` set, CV aggregate, `GateDecision`, `DecisionLogRef`, scope, currentness, and effective window, or else the display remains a cue, source pointer, CV result, evidence question, or readiness question governed outside A.21. Reopen the gate result when the current `GateProfile`, check set, CV aggregate, decision, rationale, scope, currentness, effective window, equivalence witness, or consuming neighboring relation changes.
+
+### A.21:12 - Relations
+
+* **`E.18` transformation-flow structure →coordinates→ A.21.** GateFit-scoped GateChecks are aggregated by `OperationalGate(profile)`; GateCheck enumeration and publication shape are governed here.
+* **A.20 →couples_to→ A.21 via CV=>GF.** CV is evaluated inside transformations; while `CV.Status!=pass`, GF is `abstain` and GF explanations do not apply.
+* **A.15.5 →separates→ work-entry readiness from gate decision.** Full-kit and work-entry readiness labels may be cited by A.21 only when they are declared GateChecks under a current `GateProfile`; otherwise `WorkEntryReadiness@Context` remains governed by A.15.5.
+* **A.21 GateProfile binding.** A.21 carries the current profile binding, inheritance boundary, and minimum mandatory check-set semantics. Fuller project-local profile matrix material is not separately governing unless a current governing pattern includes it by value.
+* **E.18 and G.11 →provide→ scope and refresh boundaries.** `subflow` scope is bounded and restartable through PathSlice and refresh wiring where present; weakening check sets use a new `PathSlice`.
+* **F.9, F.17, E.17, and E.18 →required_by→ any edition-citing face.** Whenever gate faces cite editions, the compatibility reference (BridgeCard + UTS + `CL` and `CLPlane`) is required for downstream consumption.
+* **A.21, G.6, and G.11 →define→ equivalence for decision stability.** Gate decisions are stable only under the declared equivalence witness; evidence-provenance or refresh implications use `G.6` or `G.11` where present.
+
+### A.21:End
+

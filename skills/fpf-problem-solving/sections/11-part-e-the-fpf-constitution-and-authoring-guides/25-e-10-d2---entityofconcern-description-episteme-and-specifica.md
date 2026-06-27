@@ -1,0 +1,355 @@
+## E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline
+> **Status:** Stable
+
+*Definitional pattern - normative, notation-agnostic*
+
+> **One-sentence summary.** For any `EntityOfConcern` in FPF, keep the entity under concern distinct from the `Description` episteme that describes it in a bounded context and viewpoint, and admit `...Spec` wording only for a Description episteme whose specification use is made checkable by explicit conditions. Specification is not a third peer ontology class beside the entity and its Description episteme.
+
+**Status.** Definitional pattern.
+**Builds on:** A.7 **Strict Distinction (Clarity Lattice)**; E.10.D1 **D.CTX (Context is U.BoundedContext)**; C.2.1 **U.EpistemeSlotRelation**; C.2.3 **Unified Formality Characteristic (F)**; F.15 **conformance and regression harness discipline**.
+**Coordinates with.** F.4 **Role Description**; F.5 **Naming Discipline**; F.12 **Service Acceptance Binding**; F.9 **Alignment & Bridge across Contexts**; F.9.1 **Bridge Stance Overlay**; F.10 **Status Families Mapping**.
+**Non-goals.** This pattern does not define editors, work-process descriptions, registries, storage formats, or publication carriers. It gives the boundary discipline that other FPF patterns use when they name an entity, its Description episteme, and any specification-use admission.
+
+### E.10.D2:1 - Problem frame
+
+Use this pattern when FPF-governed wording names something under concern and also names a description, view, specification, publication, file, card, diagram, dashboard, work record, evidence item, assurance result, gate result, or decision around it.
+
+The first useful move is to ask five questions:
+
+1. What is the `EntityOfConcern`?
+2. Which Description episteme describes it, if describing is live?
+3. Which `DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>` bounds that description?
+4. Is specification use admitted by explicit checkability, acceptance, validation, formality, or harness conditions, or is this only a Description episteme?
+5. Which neighboring FPF pattern carries any publication, carrier, evidence, assurance, gate, decision, commitment, promise, work, view, bridge, retargeting, or state-family claim?
+
+Not this pattern when the question under repair is already an evidence path named by value, assurance claim, gate decision, commitment, work occurrence, bridge, representation transition, source relation, or state-family field. Use the neighboring pattern governing that claim for that claim and use E.10.D2 only to keep the EntityOfConcern, Description episteme, and specification-use boundary readable.
+
+FPF frequently has to say that some item is being described: a role, method, system, work occurrence, promise content, characteristic, architecture, episteme, view, or another FPF entity. The old short memory of "entity, description words, and rules" remains useful, but it becomes harmful when it is taught as three peer kinds.
+
+The working distinction is sharper:
+
+* the **EntityOfConcern** is the item under concern;
+* the **Description episteme** is the claim-bearing episteme that describes that item under one bounded context and viewpoint;
+* **specification use** is an admitted use or refinement of a Description episteme, not a separate peer class;
+* publication faces, publication forms, carriers, renderings, work occurrences, gate decisions, evidence relations, and assurance claims remain outside this boundary unless a neighboring pattern makes one of them the EntityOfConcern.
+
+This matters whenever wording such as `RoleDescription`, `ArchitectureDescription`, `MethodSpec`, `ServiceSpec`, "the diagram is the architecture", "the card authorizes work", or "the file is the method" could make readers confuse the item under concern with a description, a publication, a carrier, a work occurrence, or a granted use.
+
+What goes wrong if E.10.D2 is missed: specification-looking words become authority, a publication becomes the thing described, a file becomes the method, an approval state over an episteme becomes a runtime state, or two descriptions with the same label are treated as the same EntityOfConcern across contexts.
+
+What E.10.D2 buys in practice: the practitioner can name the item under concern, keep the Description episteme inspectable, admit specification use only when checkability exists, and apply the governing FPF pattern for every other claim being made.
+
+### E.10.D2:2 - Problem
+
+
+1. **Entity-description collapse.** A text treats the `EntityOfConcern` as if it were identical to the Description episteme, the diagram, the card, the file, or the work record.
+2. **Specification inflation.** A text calls any detailed write-up a `...Spec` although no checkability, acceptance condition, or harness relation is present.
+3. **Publication or carrier substitution.** A publication face, document, dashboard, schema file, or generated view is treated as the described entity or as the authority for work.
+4. **Context and viewpoint loss.** A Description episteme is read as global even though FPF descriptions are bounded by `DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>`.
+5. **Status and state leakage.** Epistemic or deontic statuses over epistemes are used as if they were role states, system states, or runtime facts about the EntityOfConcern.
+
+### E.10.D2:3 - Forces
+
+| Force | Pressure |
+|---|---|
+| **Useful shorthand vs second ontology** | `Description`, `Spec`, `View`, `Card`, and `Dashboard` names help readers work quickly, but they can accidentally create peer classes beside the EntityOfConcern and Description episteme. |
+| **Checkability vs official appearance** | A document can look formal, approved, or stored in a schema without satisfying specification-use admission. |
+| **Description use vs authority use** | The same publication can help work while not being evidence, assurance, permission, gate result, decision, promise, commitment, or work occurrence. |
+| **Reader affordance vs precision apparatus** | The pattern must give a small first move without duplicating the whole episteme, publication, evidence, gate, assurance, work, bridge, or state-family machinery. |
+
+### E.10.D2:4 - Solution
+
+
+For any sentence that names an entity and also names description, specification, view, publication, carrier, evidence, evaluation, or work:
+
+1. **Name the EntityOfConcern.** State what item is under concern: for example `U.Role`, `U.Method`, `U.System`, `U.Work`, `U.PromiseContent`, `U.Characteristic`, `U.ArchitectureOf@Context`, or `U.Episteme`.
+2. **Name the Description episteme when describing is live.** A `...Description` is a `U.Episteme` that describes the EntityOfConcern under `DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>`.
+3. **Admit specification use only by conditions.** A `...Spec` is a Description episteme admitted for specification use when checkability conditions are present. The conditions must name formal checkability or declared formality, checkable invariants or acceptance criteria, a validation or acceptance harness, and the same DescriptionContext.
+4. **Keep publication and carrier relations separate.** A card, document, dashboard, diagram, file, rendering, API description, or interface declaration may publish, encode, render, or expose a Description episteme; it is not thereby the EntityOfConcern and it does not by itself create permission, evidence, gate, assurance, decision, commitment, or work.
+5. **Apply the neighboring pattern when another claim becomes live.** Evidence is governed by `A.10` or `G.6`; assurance by `B.3`; status-family, standard-use, and requirement-use distinctions by `F.10`; publication and view mechanics by `E.17`, `E.17.0`, `E.17.2`, or their direct subpatterns; commitments and promises by `F.18` and related patterns; work, work plans, and work-facing role assignments by `A.15`, `A.15.1`, `A.2`, or `A.2.1`; retargeting by `A.6.4`.
+
+When source wording says that a description, source, standard, requirement, evidence item, publication, dashboard, or view "has a role" or "plays a role", recover the typed relation first. It is normally evidence-use, status-use, source-use, publication-use, standard-use, requirement-use, assurance-use, gate-use, or work-relevance wording. Do not create a `U.Role`, `U.RoleAssignment`, or role-state value unless the current claim is about a system or acting holon holding a work-facing role in a bounded work context.
+
+Ordinary minimum:
+ write one line that names the EntityOfConcern, the Description episteme or `not live`, the DescriptionContext or missing-context blocker, the specification-use admission value, and the neighboring FPF pattern governing that claim for any live non-description claim.
+
+```text
+E10D2BoundaryLine:
+  entityOfConcernRef:
+  descriptionEpistemeRef or notLive:
+  descriptionContext or missingContextBlocker:
+  specificationUseAdmission: admitted | notAdmitted | candidateOnly
+  neighboringPatternApplicationRefs for non-description claims:
+  admissibleUse:
+  nonAdmissibleUse:
+```
+
+Stop at the boundary line when it makes the next admissible use clear. Open heavier episteme, publication, source, bridge, evidence, assurance, gate, decision, work, or state-family records only when those claims are being made.
+
+### E.10.D2:4.1 - Core field discipline
+
+
+#### E.10.D2:4.1.1 - EntityOfConcern
+
+`EntityOfConcern` means the item under concern in the current claim. It is not a universal "object" bucket and not an authoring target. It may be a system-side entity, an episteme, a relation, a characteristic, a work occurrence, a pattern, or another FPF kind named by value.
+
+When the EntityOfConcern is itself an episteme, the same distinction still holds. The episteme under concern is not automatically identical to a Description episteme about that episteme, and a publication of that episteme is still a publication relation.
+
+#### E.10.D2:4.1.2 - Description episteme
+
+A Description episteme is a `U.Episteme` whose `subjectRef` is interpreted through:
+
+```
+DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>
+```
+
+It may carry labels, glosses, characterizations, state-machine diagrams, structural views, criteria, diagrams, examples, or other claim-bearing content about the EntityOfConcern. Those parts remain episteme content. They do not become parts of the EntityOfConcern unless a separate FPF pattern establishes that relation.
+
+#### E.10.D2:4.1.3 - Specification-use admission
+
+Use a `...Spec` name only when the Description episteme is admitted for specification use under all applicable conditions:
+
+1. **Checkability.** The claimed invariants or acceptance conditions are checkable.
+2. **Declared formality or equivalent discipline.** The text states the formal mode, notation discipline, measurement criterion, comparator, or other named checkability condition that makes checking possible.
+3. **Harness or validation relation.** The text names the acceptance harness, conformance or regression check, validation method, measurement procedure, source-currentness/provenance record, or neighboring FPF relation that will check the specification use.
+4. **Same DescriptionContext.** The specification-use episteme preserves or explicitly updates `EntityOfConcernRef`, `BoundedContextRef`, and `ViewpointRef`.
+
+If any condition is absent, use `...Description` and state the live criteria informatively or as candidates without claiming specification use.
+
+#### E.10.D2:4.1.4 - Publication, carrier, and work boundary
+
+`U.Carrier` encodes an episteme. A publication face, publication form, or publication unit makes an episteme available. A rendering, UI rendering, or front-end view displays it. A work occurrence uses it or acts under it. None of those relations changes the EntityOfConcern or upgrades a Description episteme to specification use by itself.
+
+### E.10.D2:5 - Naming discipline
+
+**Default suffix.** Use `...Description` for a Description episteme unless specification-use admission is explicit.
+
+**Reserved suffix.** Use `...Spec` only for a Description episteme admitted for specification use. Do not use `Spec` as a synonym for "detailed", "important", "official-looking", "formal-looking", or "stored in a schema".
+
+**Entity names.** Use the bare FPF kind named by value for the EntityOfConcern: `Role`, `Method`, `System`, `Architecture`, `Characteristic`, `PromiseContent`, `Work`, `Episteme`, or another kind named by value. Do not append `Description`, `Spec`, `Card`, `View`, or `Carrier` unless the episteme, view, publication, or carrier is the actual EntityOfConcern.
+
+**DescriptionContext names.** Use `EntityOfConcernRef`, `BoundedContextRef`, and `ViewpointRef` for Description episteme addressing. Do not revive `DescribedEntityRef`, `EntityOfInterest`, or peer-layer I-D-S wording.
+
+### E.10.D2:6 - Invariants
+
+**D2-1 (Entity-description distinction).** The EntityOfConcern and the Description episteme about it are distinct even when the EntityOfConcern is itself an episteme.
+
+**D2-2 (Specification is admitted use).** Specification is not a peer class beside EntityOfConcern and Description episteme. A `...Spec` is a Description episteme admitted for specification use.
+
+**D2-3 (DescriptionContext).** A Description episteme names or recovers `DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>`.
+
+**D2-4 (Publication and carrier separation).** Publication faces, publication forms, publication units, carriers, renderings, files, dashboards, UI renderings, and front-end views do not become the EntityOfConcern and do not grant specification use by appearance.
+
+**D2-5 (Work separation).** A plan, checklist, or specification-use Description episteme does not execute work. Work occurrences and work results remain under work and P2W patterns.
+
+**D2-6 (Status-state separation).** Epistemic and deontic statuses over epistemes are not role states, system states, or runtime facts unless the exact state pattern grants that interpretation.
+
+**D2-7 (No label-only cross-context sameness).** Identical labels in two bounded contexts or viewpoints do not establish sameness. Use F.9 bridges, A.6.3 views, or A.6.4 retargeting as appropriate.
+
+**D2-8 (ReferencePlane reservation).** Do not call this distinction a plane. Use `ReferencePlane` only where CHR or another governing pattern defines that field.
+
+**D2-9 (No episteme role shortcut).** A description, source, standard, requirement, evidence item, publication, dashboard, or view does not hold a `U.Role` merely because source wording says it has a role. Recover the typed use relation and governing pattern; open `U.RoleAssignment` only for work-facing roles held by systems or acting holons.
+
+### E.10.D2:7 - Reasoning primitives
+
+**Description link.**
+
+```
+EntityOfConcernRef(T), BoundedContextRef(C), ViewpointRef(Vp)
+  |- isDescriptionOf(TDesc, T, C, Vp)
+```
+
+`TDesc` is the Description episteme about EntityOfConcern `T` in bounded context `C` under viewpoint `Vp`.
+
+**Specification-use admission.**
+
+```
+isDescriptionOf(TDesc, T, C, Vp)
+  and checkableInvariants(TSpec)
+  and validationOrAcceptanceHarness(TSpec)
+  and sameDescriptionContext(TSpec, TDesc)
+  |- admittedForSpecificationUse(TSpec, T, C, Vp)
+```
+
+Only under those conditions may the episteme be named `TSpec`.
+
+**Characterization relation.**
+
+```
+isDescriptionOf(RoleDesc, U.Role, C, Vp)
+  and characterizes(RoleDesc, RoleCharacteristicSpace)
+  and characterizes(RoleDesc, RoleStateRelation@BoundedContext)
+  |- RoleDesc characterizes U.Role by those structures @C,Vp
+```
+
+The role is characterized through the Description episteme. The structures are not silently parts of the role.
+
+**Evaluation relation.**
+
+```
+evidence E satisfies criteria K within window W
+  |- attestation(subject has state, status, or result S @C within W)
+```
+Evaluation produces an attestation in a window. It does not mutate the EntityOfConcern.
+
+### E.10.D2:8 - Archetypal Grounding
+
+**System case.** A service interface document describes a system interface. The system interface is the EntityOfConcern; the document is a Description episteme or publication relation; a deployment gate, assurance claim, or work authorization requires its own governing pattern.
+
+**Episteme case.** A DRR, pattern, safety case, or source set can itself be the EntityOfConcern. A review note, dashboard, or PDF about it is then a Description episteme, publication relation, or carrier about that episteme, not the episteme's authority, evidence, or work result by appearance.
+
+### E.10.D2:9 - Bias-Annotation
+
+The main bias is entity-description collapse: readers let a description, publication, carrier, source, standard, evidence item, dashboard, or view become the item under concern or a work-facing role holder. The corrective move is not lexical replacement; it is to recover the EntityOfConcern, DescriptionContext, specification-use admission, and any neighboring governed claim separately.
+
+### E.10.D2:10 - Anti-patterns and repairs
+
+
+| Anti-pattern | Symptom | Repair |
+|---|---|---|
+| **Entity-description collapse** | "The method is the document"; "the architecture is the diagram"; "the role contains the checklist". | Name the EntityOfConcern, then name the Description episteme or publication relation separately. |
+| **Spec by name** | Any detailed write-up is called `...Spec`. | Use `...Description` unless specification-use admission conditions are present. |
+| **Publication as authority** | A card, dashboard, schema, generated view, or file is treated as permission, evidence, gate, assurance, decision, or work. | Apply the neighboring pattern that governs the exact claim being made; keep the publication relation separate. |
+| **Carrier identity** | The file path or repository entry is treated as the episteme or EntityOfConcern. | Say the carrier encodes or renders the episteme. |
+| **Context erasure** | A context-local Description episteme is read as a global definition. | Restore `BoundedContextRef` and `ViewpointRef`, or use F.9, A.6.3, or A.6.4 for cross-context relations. |
+| **Status-state leakage** | Evidence, requirement, approval, or standard status becomes a role-state value. | Keep statuses over epistemes distinct from role-state relations and runtime state attestations. |
+| **Episteme-role shortcut** | "The standard plays the compliance role"; "the evidence has the approval role"; "the source authorizes work". | Recover the typed relation: standard-use, evidence-use, status-use, source-use, assurance-use, gate-use, publication-use, or work-relevance relation. Use `U.RoleAssignment` only for work-facing holder-role claims. |
+
+### E.10.D2:11 - Worked examples
+
+#### E.10.D2:11.1 - Role
+
+`U.Role :: ChangeAuthority` is the EntityOfConcern. `ChangeAuthorityRoleDescription@ITIL4` is a Description episteme with `DescriptionContext = <EntityOfConcernRef(ChangeAuthority), BoundedContextRef(ITIL4), ViewpointRef(RoleViewpoint)>`.
+
+The Description episteme may characterize the role by credential level, mandate window, separation-of-duty criteria, and a role-state relation. The role does not contain the relation description or the checklist. If testable invariants and an acceptance harness are declared, a `ChangeAuthorityRoleSpec@ITIL4` may be admitted for specification use.
+
+#### E.10.D2:11.2 - Method
+
+`U.Method :: BacklogRefinement` is the EntityOfConcern. A team note, practice card, or pseudo-code sketch is a `BacklogRefinementMethodDescription@EssenceContext` when it describes the method. It becomes `BacklogRefinementMethodSpec@EssenceContext` only when checkable method constraints and an acceptance or validation harness are present.
+
+Calendar sessions, chat threads, and tickets are work occurrences or work records. They may use the method description, but they are not the method and not the Description episteme.
+
+#### E.10.D2:11.3 - Architecture
+
+`ArchitectureOf@Context(Holon)` is the EntityOfConcern. An architecture description, structural view, graph, ADR, or dashboard is a Description episteme, view, publication, or carrier about that architecture. The diagram does not become the architecture, and an ADR does not by itself create permission or assurance.
+
+If a structural view uses a mathematical lens, C.29 carries the declared mathematical-lens use question. If an architecture description is used to guide work, A.15.4 and P2W-related patterns carry the work-relevance relation.
+
+#### E.10.D2:11.4 - Episteme as EntityOfConcern
+
+A safety case, DRR, pattern, or source set can itself be the EntityOfConcern. A review note describing that DRR is then a Description episteme about an episteme. A published PDF of the DRR is a carrier or publication relation. This prevents the common slide from "talking about a description" into "talking only about descriptions of descriptions".
+
+#### E.10.D2:11.5 - Boundary-line replay slice
+
+A project note says: "The architecture dashboard approves the deployment role." Applying E.10.D2 does not replace that phrase with one better noun. It recovers the typed FPF values and relations:
+
+```text
+E10D2BoundaryLine:
+  entityOfConcernRef: ArchitectureOf@Context(PaymentService)
+  descriptionEpistemeRef or notLive: PaymentServiceArchitectureDashboardDescription@ReleaseCandidate
+  descriptionContext: <ArchitectureOf@Context(PaymentService), ReleaseCandidateContext, OperationsViewpoint>
+  specificationUseAdmission: notAdmitted
+  neighboringPatternApplicationRefs for non-description claims:
+    publication or view use: E.17, E.17.0, or E.17.2
+    evidence, assurance, or gate claim: A.10, G.6, B.3, or A.21 only when that exact claim is made
+    work-facing role assignment: A.2 or A.2.1 only when an acting holon and bounded work context are named
+  admissibleUse: the dashboard publishes or renders an architecture Description episteme or view for operations discussion
+  nonAdmissibleUse: the dashboard is not the architecture, not approval, not a gate result, and not a U.RoleAssignment
+```
+
+The practical delta is immediate: do not treat the dashboard as permission to deploy or as a role assignment. First name the exact evidence, assurance, gate, work, or publication relation being claimed; if none is present, keep only the description-publication use.
+
+### E.10.D2:12 - Consequences
+
+| Consequence | Cost or boundary |
+|---|---|
+| Description/specification wording becomes safer across FPF. | Authors must name DescriptionContext and specification-use admission instead of relying on familiar suffixes. |
+| Publication, carrier, evidence, assurance, gate, work, and role claims stay with their governing patterns. | Some prose becomes slightly longer when a source phrase had compressed several typed relations. |
+| The pattern prevents semio-bias in non-semio patterns by keeping description-publication guards compact. | When another claim is genuinely live, E.10.D2 must stop and the neighboring pattern must be applied. |
+| A local E.10.D2 application remains rejectable when its typed values cannot be recovered. | Reject or reopen the local application when EntityOfConcern, DescriptionContext, specification-use admission, or neighboring-pattern boundary changes or cannot be named from current source text. |
+
+### E.10.D2:13 - Rationale
+
+Specification is treated as admitted use of a Description episteme because this preserves the two-way distinction between the EntityOfConcern and the episteme that describes it. Making specification a third peer class would recreate the old I-D-S ontology and make publication appearance, formality, or approval labels look like authority. E.10.D2 therefore keeps the first move small: recover the EntityOfConcern, recover the Description episteme and context, admit `...Spec` only under checkability conditions, and apply the neighboring governing pattern for any other claim.
+
+### E.10.D2:14 - SoTA-Echoing and source-use
+
+| Source or practice line | FPF use | Boundary |
+
+| --- | --- | --- |
+| ISO/IEC/IEEE 42010-style architecture-description practice separates described architecture, stakeholder concern, viewpoint, view, model kind, correspondence, and architecture-description publication. | Adapt the separation as pressure for `DescriptionContext`, viewpoint, view, and correspondence discipline beyond architecture-only cases. | Does not make every Description episteme an architecture description and does not grant evidence, assurance, gate, decision, or work authority. |
+| ISO/IEC/IEEE 29148:2018-style requirements engineering practice treats requirements and specifications as products tied to quality criteria, verification, validation, conformance, and life-cycle use. | Use `...Spec` only when the Description episteme has explicit checkability, formality, criteria, comparator, harness, or neighboring-pattern gate. | A detailed or official-looking document is not specification use by name alone. |
+| FPF episteme, publication, view, carrier, and source-use machinery (`C.2.1`, `E.17`, `E.17.0`, `A.6.3`, `C.2.P`) supplies the ontology named by value. | Reuse existing episteme slots, DescriptionContext, views, publication faces, publication forms, publication units, carrier separation, source relation, bridge, and retargeting pattern applications. | E.10.D2 does not mint a rival description ontology and does not replace source, evidence, bridge, work, or state-family patterns. |
+| Andrey Rodin-style near-sameness and postulate-theory concerns motivate explicit same-EntityOfConcern and bridge checks across descriptions. | Same label, similar description, or shared formal substrate is not enough; use F.9, A.6.3, A.6.4, or same-EntityOfConcern recovery by value. | E.10.D2 names the boundary; it does not decide all cross-context sameness or mathematical-substrate adequacy. |
+
+Currentness and reopen condition: reopen this source-use section when ISO/IEC/IEEE 42010, ISO/IEC/IEEE 29148, the FPF episteme/publication ontology, or the accepted same-EntityOfConcern and bridge discipline changes enough that DescriptionContext, specification-use admission, publication separation, or same-EoC recovery would be stated differently.
+
+### E.10.D2:15 - Relations
+
+
+**Builds on:**
+
+
+* **A.7 - Strict Distinction (Clarity Lattice).** Supplies the general distinction between an EntityOfConcern and the epistemes, publications, carriers, work, decisions, evidence, and assurance claims around it.
+* **C.2.1 - U.EpistemeSlotRelation.** Supplies `DescriptionContext`, `subjectRef`, and episteme slot discipline.
+* **C.2.3 - Unified Formality Characteristic.** Supplies formality levels used by specification-use admission.
+* **F.15 - conformance and regression harness discipline.** Supplies check and regression-check harness discipline.
+
+**Coordinates with:**
+
+* **A.6.2, A.6.3, and A.6.4.** Description epistemes can be transformed, viewed, or retargeted only under their episteme-morphism laws.
+* **E.17 and E.17.0.** Publication, view, face, form, unit, and carrier relations remain separate from the EntityOfConcern and Description episteme.
+* **F.9.** Cross-context relation or near-sameness requires a bridge, not label reuse.
+* **F.4, F.5, F.8, and F.10.** Role, service, naming, acceptance, and evaluation patterns consume this boundary when they name descriptions and specifications.
+
+### E.10.D2:16 - Current repair actions
+
+Use these repairs when live FPF prose violates this pattern:
+
+1. Replace old `DescribedEntity*`, `EntityOfInterest`, `EoI`, and `EoIClass` wording with `EntityOfConcern`, `EntityOfConcernRef`, `EntityOfConcernClass`, or the local FPF kind named by value. Retain old spellings only as source-side trigger wording.
+2. Replace peer-layer I-D-S wording with EntityOfConcern, Description episteme, and specification-use admission wording.
+3. Replace "contains role characteristic space, role-state relation, or checklist" with "is characterized through the Description episteme by role characteristic space, role-state relation, or checklist".
+4. Replace carrier identity with "carrier encodes" or "publication exposes" wording.
+5. Replace generic "object under description" talk with the EntityOfConcern named by value and its `DescriptionContext`.
+6. Replace `...Spec` names that lack specification-use admission with `...Description`.
+
+7. For permission, evidence, assurance, gate, decision, promise, commitment, work, publication, view, bridge, or retargeting claims, apply the neighboring pattern governing that exact claim instead of keeping the claim as local semio guard prose.
+8. Replace "role of this description, source, standard, evidence, or publication" wording with the exact typed relation: evidence-use, status-use, source-use, publication-use, standard-use, requirement-use, assurance-use, gate-use, or work-relevance relation. Use `U.RoleAssignment` only for work-facing roles held by systems or acting holons.
+
+### E.10.D2:17 - Conformance checklist
+
+| ID | Check |
+|---|---|
+| **CC-D2-1** | The text names or recovers the EntityOfConcern and does not hide it behind generic `object`, `target`, `subject`, source-side wording, or carrier wording. |
+| **CC-D2-2** | Every Description episteme recovers `DescriptionContext = <EntityOfConcernRef, BoundedContextRef, ViewpointRef>` when the description relation is live. |
+| **CC-D2-3** | Every `...Spec` wording has explicit specification-use admission: checkable invariants or criteria, check method or harness, and preserved or declared DescriptionContext. |
+| **CC-D2-4** | Publication faces, publication forms, publication units, carriers, renderings, views, and work records are not treated as the EntityOfConcern. |
+| **CC-D2-5** | Evidence, assurance, gate, decision, promise, commitment, and work claims apply the neighboring pattern governing that exact claim when they are being made. |
+| **CC-D2-6** | The text does not use old I-D-S peer-class wording, `intensional object`, `DescribedEntity*`, `EntityOfInterest`, `EoI`, or `EoIClass` as accepted vocabulary for current FPF prose. |
+| **CC-D2-7** | The word `plane` is not used for this distinction; only governing patterns such as CHR may define `ReferencePlane`. |
+| **CC-D2-8** | Wording about the "role" of a description, source, standard, requirement, evidence item, publication, dashboard, or view is resolved as the typed use relation and governing pattern; it does not create `U.RoleAssignment` unless a work-facing holder-role claim is current. |
+
+### E.10.D2:18 - Phrasebook
+
+| Avoid | Use |
+|---|---|
+| "The role contains the state graph." | "The RoleDescription characterizes `RoleStateRelation@BoundedContext`; the graph or state-machine diagram is only a description lens when that lens is current." |
+| "The diagram is the architecture." | "The diagram publishes or renders an architecture Description episteme or structural view." |
+| "MethodSpec draft." | "MethodDescription draft; specification use not admitted until checkability and harness conditions are present." |
+| "The PDF is the method." | "The PDF is a carrier that encodes the MethodDescription." |
+| "Same label, same thing." | "Same label requires a bridge, view, retargeting relation, or explicit same-EntityOfConcern claim." |
+| "Evidence status is a role state." | "Evidence status classifies an episteme; role states belong to the relevant role-state relation." |
+| "The source has the approval role." | "The source is used as an evidence, authority-reference, assurance, gate, publication, or work-relevance relation only when that exact typed relation is recoverable." |
+
+### E.10.D2:19 - Didactic memory
+
+Use the short memory **entity, description, and admitted specification use**:
+
+1. **Entity.** What item is under concern?
+2. **Description.** Which episteme describes it, in which bounded context and viewpoint?
+3. **Admitted specification use.** What makes a `...Spec` checkable here?
+4. **Publication and carrier.** What only exposes, renders, stores, or transports the episteme?
+5. **Neighboring claims.** Which evidence, assurance, gate, decision, commitment, work, bridge, view, or retargeting pattern carries any additional claim being made?
+
+### E.10.D2:End
+

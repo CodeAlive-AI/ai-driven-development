@@ -1,0 +1,84 @@
+## B.3.3 — Assurance Subtypes & Levels
+
+### B.3.3:1 - **Problem Frame**
+
+A complex project may generate hundreds of assurance targets and evidence carriers: design specifications, simulation models, test suites, and operational logs. While the Trust & Assurance Calculus provides a framework for evaluating these assurance targets and their evidence, teams often face a critical challenge: how to aggregate this diverse evidence into a single, meaningful signal of an assurance target's maturity. Simply counting the number of tests or documents can lead to "paper compliance," where an assurance target appears well-supported but has critical, unexamined weaknesses in its formal structure or conceptual alignment.
+
+### B.3.3:2 - **Problem**
+
+How do we create an objective, auditable, and balanced Standard for what constitutes "trustworthiness" at each stage of an assurance target's development state cycle? FPF requires a mechanism that moves beyond simple evidence counting to a qualitative assessment of assurance. This mechanism must prevent common failure modes, such as over-investing in run-time validation (LA) at the expense of design-time verification (VA), or neglecting the critical work of ensuring concepts are correctly mapped and typed (TA).
+
+### B.3.3:3 - **Solution**
+
+FPF establishes a formal Standard that links three distinct **Assurance Subtypes** to three computable **Assurance Levels**. An assurance target's level is not assigned manually by an author; it is **derived automatically** by its anchored evidence. This creates a transparent and falsifiable system for tracking an assurance target's progression from a speculative idea to a robust, reliable holon.
+
+#### B.3.3:3.1 - Assurance Subtypes: The Three Pillars of Trust
+
+These three subtypes categorize the kind of question an assurance activity answers, ensuring a balanced approach to building confidence.
+
+| Subtype | Code | Core Question | Links to Epistemic Score | Manager's View: What It Prevents |
+| :--- | :--- | :--- | :--- | :--- |
+| **Concept-Bridge Assurance** | CBA | "Are the assurance target's load-bearing terms bridged to the intended FPF values?" | **CL** (Congruence Level) | **Miscommunication & Integration Failures.** CBA checks whether a requirement's "Sensor" and an architecture view's "Sensor" name the same entity, characteristic, role assignment, interface, or publication claim in the current scope. This activity directly improves the Congruence Level (CL) of the integration *edges* between assurance targets. |
+| **Verification Assurance**| VA | “Is the holon logically correct under its stated assumptions?” | **FV** (Formal Verifiability)| **"It Works on Paper" Errors.** VA catches design flaws, logical inconsistencies, and specification errors before a single line of code is written or a physical part is machined. It ensures the blueprint is sound. |
+| **Validation Assurance**| LA | “Does the holon work correctly in the real world?” | **EV** (Empirical Validability)| **"Works in the Lab, Fails in the Field" Surprises.** LA confirms that the holon performs as expected under real or simulated operational conditions, accounting for noise, unexpected inputs, and environmental factors. |
+
+#### B.3.3:3.2 - Computed Assurance Levels: Evidence-support progression
+
+An assurance target's level is computed based on the evidence it has accumulated. This creates a declared progression for increasing trust without treating assurance as a generic ladder.
+
+| Level | Name | How It Is Computed |
+| :--- | :--- | :--- |
+| **Level 0** | **Unsubstantiated** | No `verifiedBy` or `validatedBy` evidence is present. The assurance target is a claim or an idea. |
+| **Level 1** | **Substantiated** | At least one `verifiedBy` or `validatedBy` link to an evidence carrier exists, and the assurance target is supported by Concept-Bridge Assurance (CBA). |
+| **Level 2** | **Axiomatic** | The assurance target is `verifiedBy` either a proof **or** a **Compose‑CAL (Γₘ) constructive narrative** that the author has linked from the Working‑Model via `tv:groundedBy` (CT2R‑LOG). Its FormalVerifiabilityScore (FV) meets or exceeds a pre‑defined threshold. Additionally, if the holon is designated as safety‑critical, it **MUST** also be supported by **Validation Assurance (LA)**. For non‑critical holons, LA is recommended (`SHOULD`). |
+
+> **Didactic Note for Managers: What 'Level 1' Really Means**
+>
+> Think of moving from Level 0 to Level 1 as the first step toward professional seriousness.
+>
+> *   **Level 0** is an idea on a whiteboard. It has potential, but no receipts.
+> *   **Level 1** means you have **at least one receipt**. You have anchored the idea to something concrete: a passing test, a formal sketch, a simulation result. It's no longer just an opinion.
+>
+> Crucially, Level 1 also demands **Concept-Bridge Assurance**. This sounds technical, but its business impact is simple: **it means the project has named its terms in a way that survives movement across documents, diagrams, and specialist vocabularies**. You've used the Domain-Concept Bridge (Pattern B.5.3) to check whether "Sensor" in requirements and "Sensor" in an architecture view name the same entity, characteristic, role assignment, interface, or publication claim. This basic alignment work is what prevents costly integration failures and endless meetings where teams talk past each other.
+
+### B.3.3:4 - **Conformance Checklist**
+
+To ensure the integrity of the assurance calculus, the following rules are normative. A **Target of Assurance (ToA)** is any working-model element designated as a root claim (e.g., a root system requirement, safety goal, or core hypothesis).
+
+*   **CC-B3.3.1 (L1 Anchor Mandate):** A ToA **SHALL NOT** be considered to have reached `AssuranceLevel:L1` unless it is linked to at least one evidence carrier via `verifiedBy` or `validatedBy`.
+*   **CC-B3.3.2 (Concept-Bridge Mandate):** A ToA at `AssuranceLevel:L1` or higher **MUST** be supported by **Concept-Bridge Assurance**. This includes, at a minimum, that its core terms are mapped through the Domain-Concept Bridge (Pattern B.5.3) and conform to their declared schemas, slot relations, or bridge records.
+*   **CC-B3.3.3 (L2 V&V Mandate):** A ToA at `AssuranceLevel:L2` **MUST** satisfy all L1 criteria. In addition, it **MUST** be supported by **Verification Assurance (VA)** with `FV ≥ threshold_FV`. For holons designated as safety-critical (e.g., `criticality ≥ SIL-2`), the ToA **MUST** also be supported by **Validation Assurance (LA)** with `EV > 0`. For non-critical holons, LA **SHOULD** be present.
+    *   *Exemption Note:* Purely formal epistemes (e.g., mathematical axioms) may justify an exemption from the LA requirement, provided this is documented in the formal episteme's rationale.
+*   **CC-B3.3.4 (Concept-Bridge Completeness):** For any mechanism used in a model at `AssuranceLevel:L1` or higher, its load-bearing local terms, slots, and governed values **MUST** be mapped to their declared FPF kinds, relations, characteristics, method values, work values, publication-use relations, or evidence-use relations via the Domain-Concept Bridge (Pattern B.5.3).
+*   **CC-B3.3.5 (Scope Separation):** Assurance claims **MUST** maintain a strict separation between `design-time` and `run-time` scopes (Pattern A.4). An assurance tuple for a `MethodDescription` (design-time) SHALL NOT be conflated with one for its corresponding `Work`/`Trace` (run-time). The Evidence Graph Ref (`verifiedBy`, `validatedBy`) must point to evidence carriers or records with the appropriate scope.
+* **CC-B3.3.6 (CT2R‑LOG Handshake):** If a ToA depends on **structural** claims, those claims **SHALL** be published as **Working‑Model** relations and, when used to justify `L2`, **SHALL** declare `validationMode=axiomatic` and provide **Constructive** grounding with `tv:groundedBy → Γₘ.(sum|set|slice)` (see B.3.5 and C.13).
+* **CC-B3.3.7 (Downward‑Only Dependence):** Assurance publications or records (Mapping, Logical, Constructive, and Evidence) **SHALL NOT** impose vocabulary or layout back onto the Working‑Model surface (E.14).
+
+### B.3.3:5 - **Common Anti-Patterns and How to Avoid Them**
+
+| Anti-Pattern | Manager's View: What It Looks Like | How FPF Prevents It |
+| :--- | :--- | :--- |
+| **The "Tested but Unbridged" Mess** | "Our code has 100% test coverage, but we still have integration bugs and nobody understands what the code does." | **CC-B3.3.2** makes Concept-Bridge Assurance (CBA) mandatory for L1. You cannot claim your work is "Substantiated" without first ensuring your terms and concepts are clear, context-scoped, and consistently bridged. |
+| **The "Perfect Blueprint, Flawed Reality"** | "The design was formally proven to be perfect, but the physical product failed catastrophically in the field." | **CC-B3.3.3** mandates Validation Assurance (LA) for safety-critical systems at L2. A perfect blueprint (`FV=4`) is not enough; you must also provide empirical evidence (`EV>0`) that it works in the real world. |
+| **The "Paper Compliance" Shell Game** | "We have thousands of documents and links, so we must be at a high assurance level." | The computed `AssuranceLevel` is not based on the *quantity* of evidence but on its *type* and *quality* (via FV/EV scores). You cannot reach L2 without strong formal verification (VA), no matter how much validation (LA) you do. |
+
+### B.3.3:6 - **Consequences**
+
+| Benefits | Trade-offs / Mitigations |
+| :--- | :--- |
+| **Objective Gatekeeping:** The rules provide a clear, objective, and falsifiable basis for an assurance target's assurance status, eliminating subjective judgment and "assurance theater." | **Risk of Over-stringency:** The rules might feel too strict for rapid prototypes. *Mitigation:* The requirements for `L1` are deliberately lightweight, demanding only one piece of evidence and basic typing, making the first evidence-support transition accessible. |
+| **Balanced Assurance:** The Standard requires a mix of evidence types for higher levels, preventing teams from over-investing in one area (e.g., testing) while neglecting another (e.g., formal specification). | **Risk of Evidence Inflation:** Teams might add trivial evidence just to meet the criteria. *Mitigation:* The quality of evidence is assessed via the epistemic scores (FV, EV, CL); merely linking to low-quality evidence will not significantly raise the scores needed for L2. |
+| **Clear Progress Tracking:** The assurance-level progression provides a clear roadmap for maturing an assurance target from an idea to a fully assured component, making planning and progress monitoring transparent. | **Overhead for Complex Holons:** A holon with many ToAs may require significant assurance work. *Mitigation:* The framework allows grouping, where a parent claim's evidence can satisfy the coverage requirements for its children if explicitly declared. |
+
+### B.3.3:7 - **Rationale**
+
+This pattern transforms the assurance framework from a descriptive taxonomy into a prescriptive, actionable Standard. By binding the computed `AssuranceLevel` to mandatory, well-defined evidence coverage, it makes the notion of "trustworthiness" in FPF an objective and auditable property. The rules ensure that as an assurance target's formality and claimed reliability increase, the rigor and balance of its supporting evidence increase in lockstep, operationalizing the principle of "no blind trust." The separation of `design-time` and `run-time` evidence, mandated by CC-B3.3.5, further ensures that claims made about a blueprint are not confused with claims made about a running system, preserving the integrity of the whole design-time and run-time evidence history.
+
+### B.3.3:8 - **Relations**
+
+*   **Builds on:** `B.3 Trust & Assurance Calculus`, `C.2.1 U.Episteme`, `C.16/A.19` characterization discipline, `A.10 Evidence Graph Referring`, `A.4 Temporal Duality`.
+*   **Constrains:** The computation and interpretation of `AssuranceLevel` for all holons.
+*   **Enables:** Objective quality gates in the Canonical Evolution Loop (B.4) and reliable inputs for D.4 Ethical Mediation and Decision Use.
+
+### B.3.3:End
+

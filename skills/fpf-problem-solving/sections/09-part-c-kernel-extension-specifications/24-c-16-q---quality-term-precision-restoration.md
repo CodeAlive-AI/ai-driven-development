@@ -1,0 +1,777 @@
+## C.16.Q - Quality-Term Precision Restoration
+
+> **Type:** Characterization precision-restoration pattern
+> **Status:** Stable
+> **Normativity:** Normative unless explicitly marked informative
+
+**Plain-name.** Quality-term precision restoration.
+
+**Intent.**
+Provide a reusable discipline for repairing overloaded quality and evaluative-characterization wording in FPF texts.
+
+This pattern lives in the `C.16` characterization pattern nest. It rewrites bare evaluative prose either into one explicit endpoint-pattern-governed evaluative form or, when endpoint selection is still being stabilized, into one explicit transitional quality-term repair form with a declared sense family, admissible normal form (`SignalPack | Characteristic | Bundle | Objective`), reference-plane accountability, and lexical guardrails.
+
+It allows philosophical, neuro-symbolic, control-theoretic, engineering, and open-ended-search uses to coexist without false identity by label. It does not treat quality-term or evaluative characterization as relation construction by default. When the found problem is relation construction, bridge, basedness, action-invitation relation, endpoint mismatch, or another relation-shaped claim, use `A.6.P` or the relation named by value specialization.
+
+**Placement.**
+Part C > `C.16` characterization pattern nest > precision-restoration pattern for overloaded quality and evaluative-characterization wording.
+
+**Builds on.**
+`E.10`, `E.10.ARCH`, `C.16.P`, `C.16`, `C.25`, `E.21`, `A.17`, `A.18`, `A.19`, `A.7`, `C.2.1`, `E.8`, `F.9`, and `F.18`.
+
+**Coordinates with.**
+`A.6.P` for relation-construction exits; `A.6.A` for action-invitation exits; `C.2.2a`, `A.16`, `A.16.1`, `A.16.2`, and `B.4.1` for language-state chart positions, admissible moves, early cue handling, responsibility handoff, and admissible retreat when an evaluative publication must be reopened; `B.5.2.0` when the admissible continuation is still an open explanatory probe rather than a stable endpoint characterization; `C.2.LS`, `C.2.4`, `C.2.5`, `C.2.6`, and `C.2.7` for articulation, closure, anchoring, and representation-factor facets referenced but not governed here; `E.17.0`, `E.17`, and `E.18` for viewpoint publication; `A.10` and `B.3` for evidence and assurance; `A.19.CN` for comparability governance; `F.9.1` for bridge-stance annotations; `C.3.3` for explicit kind-bridge repair when endpoint kind mismatches appear.
+
+**E.10.ARCH governing-pattern relation.**
+When `E.10` encounters `quality`, `good`, `fit`, `high-quality`, `quality metric`, `quality score`, `quality characteristic`, `quality requirement`, `model quality`, `architecture quality`, `solution quality`, or evaluative `-ility` wording whose quality sense, bearer, evaluation frame, endpoint normal form, or governing pattern is hidden, `E.10.ARCH` assigns the repair to `C.16.Q` only until those values are recovered or the claim being made exits to `C.16.P`, `C.25`, `E.21`, `A.6.P`, `A.6.A`, `C.29`, `A.10`, `B.3`, `A.20`, `A.21`, `C.11`, `C.2.P`, or another pattern governing the recovered claim. `C.16.Q` does not keep evidence, assurance, gate, decision, work, release, relation, action-invitation, mathematical-lens, source-use, or publication invariants after that exit is recoverable.
+
+**Non-goal.**
+This pattern does not assert that phenomenal character or qualia, phenomenological preconceptual fit, Pirsig-style dynamic quality and static quality, latent fit in learned representations, explanatory merit, engineering `-ilities`, QD and NQD selector value, and control adequacy are one concept.
+Its job is to publish a disciplined evaluative-characterization use across those traditions while preventing false identity by shared label.
+It also does not assert that every trigger use of "quality" is admissibly repaired by the transitional quality-term repair form: where the repaired statement is primarily about an action invitation under `A.6.A`, relation construction under `A.6.P`, or a requirement or commitment over explicit heads, the admissible move is to exit to the pattern governing the recovered claim rather than assigning a quality-term or evaluative characterization.
+
+### C.16.Q:0 - Use this when
+
+Use this pattern when wording such as `quality`, `good`, `fit`, `high-quality`, `quality characteristic`, `quality improved`, or an evaluative `-ility` claim hides which quality or evaluative-characterization use is live.
+
+**Lowest sufficient use.** Keep ordinary praise or quoted source-local wording ordinary when it carries no FPF-governed use. When the evaluative endpoint is already known, prefer a direct endpoint-governed rewrite. Use `qualityTermAscription(...)` only when transitional ambiguity must remain inspectable. Use the full slot set only when decision-bearing, publication-bearing, cross-tradition-bearing, or boundary-bearing claim is live.
+
+**What goes wrong if missed.** A broad quality word becomes a scalar verdict, a gate, an evidence claim, a relation, a bridge, an action invitation, or a bundle by appearance, while the bearer, evaluation frame, quality sense, admissible normal form, and pattern governing the recovered claim remain hidden.
+
+**What this buys.** The reader can recover the bearer, evaluation frame, candidate quality sense, admissible normal form, bridge or relation exit when live, and the pattern governing the recovered claim before using the quality word as action guidance.
+
+**First useful move.** Name the bearer and evaluation frame, choose whether the wording is quality-term or evaluative characterization, characteristic-scale construction, Q-bundle, pattern-quality coordinate, relation construction, bridge stance, action invitation, or ordinary prose, then apply the pattern governing the recovered claim.
+
+**Not this pattern when.**
+
+- If the issue under repair is hidden characteristic, scale, score, metric, coordinate, threshold, or comparison construction, use `C.16.P` first.
+- If the claim being made is already a Q-bundle, pattern-quality coordinate, relation construction, action invitation, evidence, assurance, gate, work, decision, causal-use, release, or source-use claim, use the pattern governing the recovered claim directly after any needed quality-word repair.
+- If the word is ordinary praise or source-local wording with no FPF-governed use, keep it ordinary, quote-only, or reduced-use rather than publishing a quality-term repair.
+
+### C.16.Q:1 - Problem frame
+
+FPF repeatedly encounters a predictable precision failure mode around the token **quality**:
+
+drafts say:
+
+* “this design has quality”
+* “the model quality improved”
+* “quality matters before formalisation”
+* “quality characteristics”
+* “quality in QD and NQD”
+* “the world model is higher quality”
+* “the explanation is high-quality”
+
+…but the intended meaning is actually one of several different **evaluative families**, for example:
+
+1. **Phenomenal character or qualia** when the experienced quality itself is the topic of description rather than an externally measured characteristic.
+2. **Preconceptual fit or felt rightness** before stable EntityOfConcern characterization.
+3. **Latent and distributed fit signals** in learned representations, world models, or active inference loops.
+4. **Explanatory merit** of a theory, problem frame, or conjecture.
+5. **Architectural-description fitness and compression merit** of an architecture description or architecture model under a declared viewpoint.
+6. **Engineering quality families** such as reliability, maintainability, security, evolvability.
+7. **Usefulness and selection value** in open-ended search, novelty–quality–diversity, or portfolio selection.
+8. **Control adequacy** of a policy, model, or controller in a closed loop.
+
+The failure modes are recurrent:
+
+* **Sense elision.** One broad evaluative noun hides several non-equivalent evaluative kinds.
+* **Bearer confusion.** The bearer of the evaluation is unclear: record, publication carrier when the carrier itself is evaluated, episode, model, policy, explanation, candidate, architecture, relation, or action loop.
+* **Form confusion.** A non-metric signal is rewritten as a metric; a bundle is treated as one scalar; an objective is mistaken for a characteristic.
+* **Substrate confusion.** Embodied and preconceptual, latent and distributed, and symbolic-local representations are silently collapsed.
+* **Plane confusion.** Quality of the EntityOfConcern being described, quality of the description, quality of the carrier, and quality of the publication face are silently collapsed across `ReferencePlane` values and A.7 lanes.
+* **Bridge illusion.** Similar wording across traditions is mistaken for sameness.
+* **Illegal scalarisation.** Composite engineering families or explanatory merit are compressed into one number without an admissible scoring method.
+* **Viewpoint conflict.** One stakeholder means architectural attributes, another means usefulness, another means preconceptual fit.
+
+### C.16.Q:2 - Problem
+
+How can FPF let working texts keep the communicative convenience of the word **quality** while preventing category errors when the term crosses:
+
+* phenomenological and epistemological discourse,
+* architecture-description fitness discourse and viewpoint-fit discourse,
+* representation-learning and neuro-symbolic discourse,
+* Popper- and Deutsch-style explanation-and-criticism discourse,
+* engineering architecture and quality-characteristic discourse,
+* open-ended evolution, NQD, and selection discourse,
+* control, world-model, and active-inference discourse,
+* ecological affordance discourse, including source-tradition `affordance` cases that must leave quality-term restoration for `A.6.A` or another action-invitation governing pattern?
+
+### C.16.Q:3 - Forces
+
+* **Breadth vs precision.** “Quality” is attractive because it is broad; that same breadth makes it unsafe at boundaries.
+* **Preconceptuality vs auditability.** Some uses refer to something real but not yet stably characterised.
+* **Distributed substrate vs local publication.** Some evaluative signals arise in distributed or embodied substrates but must later be published in explicit local forms.
+* **Comparability vs non-reduction.** Engineering and selection settings need comparability, but not every evaluative signal is an admissible metric.
+* **Cross-tradition dialogue vs false unification.** The framework should permit parallels without asserting identity.
+* **Progressive articulation.** A term may begin as a felt signal and later become a bundle, proxy set, or objective.
+
+### C.16.Q:4 - Solution
+
+**Stable repair frame > Sense Family > Slots > Normal Form > Change Lexicon > Guardrails**
+
+#### C.16.Q:4.0 - Trigger rule
+
+A use of **quality** is in scope for C.16.Q when any of the following holds:
+
+* the token **quality** or **high-quality or low-quality** appears in Tech or normative prose;
+* a boundary statement relies on “quality” for admission, selection, explanation, comparison, assurance, or requirement-setting;
+* different traditions are compared using the same word *quality*;
+* a draft introduces *quality metric*, *quality score*, *quality characteristic*, *quality requirement*, *model quality*, *architecture quality*, *solution quality*, or *quality in QD* without a declared sense;
+* the occurrence is intended to carry more than one of: evaluative fit, measurable characteristic, bundle, utility, or optimization objective.
+
+#### C.16.Q:4.0a - Operational repair sequence
+
+When the trigger fires, follow the `E.10.ARCH` recovery order specialized to quality-term or evaluative characterization:
+
+1. **Capture the trigger span.**
+   Copy the trigger phrase using *quality* or a red-flag derivative such as *high-quality*, *quality metric*, *quality characteristic*, or *model quality*.
+
+2. **Recover the bearer and publication lane.**
+   Name the bearer and the relevant A.7 lane or kind: EntityOfConcern being described, description, `episteme` or publication face, carrier when the carrier itself is evaluated, pattern, model, policy, explanation, candidate, architecture description, work result, relation, action loop, or ordinary prose.
+
+3. **Reconstruct candidate quality senses and endpoint patterns.**
+   Enumerate plausible candidate senses and, when relevant, candidate endpoint-governing FPF patterns or explicit endpoint source references. If the occurrence is decision-bearing, publication-bearing, or cross-tradition-bearing, record a short quality-term candidate note before selecting the repair.
+
+4. **Exit when the claim being made is not quality-term or evaluative characterization.**
+   If the occurrence is primarily action invitation, relation construction, bridge, basedness, endpoint mismatch, evidence, assurance, gate, work, decision, causal-use, release, mathematical-lens use, characteristic and scale construction, or source-use, do not assign a `QualitySense`. Apply `A.6.P`, `A.6.A`, `C.16.P`, `C.29`, `C.2.P`, or the pattern governing the recovered claim.
+
+5. **Select one explicit quality sense.**
+   Pick one `QualitySense` token and state why rival senses were rejected in this local context.
+
+6. **Emit an endpoint-explicit or transitional rewrite.**
+   Rewrite the sentence either into one explicit endpoint-pattern-governed evaluative form (`Characteristic | Q-Bundle | Objective | ExplanatoryMeritBundle | selector-value endpoint`) or, when endpoint choice is still being stabilized, into one explicit `qualityTermAscription(...)` transitional repair form with bearer, frame, evaluator and viewpoint, normal form, and explicit qualifiers.
+
+7. **Classify boundary-bearing consequences.**
+   If the repaired statement is used for admissibility, commitments, publication, evidence-bearing decisions, gates, release, or work, apply the governing pattern instead of letting *quality* carry the required claim by itself.
+
+#### C.16.Q:4.1 - Transitional repair frame: evaluative classification anchored by `qualityTermAscription(...)`
+
+`C.16.Q` stabilizes the ambiguity cluster by treating every in-scope quality statement as explicit evaluative content that must name the endpoint governing pattern or publication with named authority-reference relation that carries it, not as a bare adjective.
+
+`qualityTermAscription(...)` is the canonical transitional quality-term repair form when the endpoint choice is not yet fixed. It is not the universal resting place, not a relation kind by default, and not a shadow endpoint source.
+
+Entry into `C.16.Q` presupposes enough articulation explicitness to name the bearer, evaluation frame, and at least one candidate evaluative family. Closure degree may remain low while `qualityTermAscription(...)` is serving as a transitional repair form, but if the content is still only a cue pack, forwarded cue, or open explanatory probe, keep it in `A.16.1`, `B.4.1`, or `B.5.2.0` rather than publishing it here prematurely. If a previously published evaluative record later loses the evidence, witness, or authority-reference relation needed to keep even that transitional status live, retreat via `A.16.2`.
+
+The transitional form is:
+
+```text
+qualityTermAscription :=
+{
+  bearerTuple,
+  qualitySense: QualitySense,
+  evaluationFrame,
+  evaluator?,
+  viewpoint?: U.Viewpoint,
+  view?: U.View,
+  referencePlane?,
+  refScheme?: U.ReferenceScheme,
+  reprScheme?: U.RepresentationScheme,
+  normalForm: SignalPack | Characteristic | Bundle | Objective,
+  scope?: U.Scope,
+  gammaTime?,
+  representationSubstrate?: embodied-kinesthetic | latent-distributed | symbolic-local | hybrid,
+  bridgeRef?,
+  witnesses?,
+  endpointGoverningPatternRef,
+  admissibleUse,
+  nonAdmissibleUse
+}
+```
+
+So the sentence "X has quality" is never accepted as a terminal form. It must be rewritten either into an explicit endpoint-pattern-governed evaluative form or into this transitional repair form with a declared endpoint-governing pattern or explicit endpoint source relation.
+
+**Discipline note.**
+`QualitySense` is a slot value inside the transitional repair form; it is not a replacement for the endpoint FPF pattern or explicit endpoint source reference. The sense token refines what kind of evaluative characterization is being made while the endpoint source, governing pattern, or EntityOfConcern remains explicit.
+
+**Separation note.**
+`evaluator` and `viewpoint` are not synonyms. When both matter, publish them separately: the evaluator is the observing, criticizing, or selecting party or policy, while the viewpoint is the declared `U.Viewpoint` under which the ascription is presented.
+
+#### C.16.Q:4.1b - Polarity discipline (bearer-centred; no silent inverse)
+
+`qualityTermAscription` is bearer-centred.
+Tech and normative prose SHALL keep the evaluated participant in the bearer position and SHALL publish evaluator and viewpoint separately.
+
+* “Architects rate the system highly” rewrites to `qualityTermAscription(bearer=System, evaluator=ArchitectureReviewBoard, …)`.
+* “The benchmark says model quality is high” rewrites to `qualityTermAscription(bearer=Model, evaluator=BenchmarkPolicy, …)`.
+
+There is no inverse token that silently makes the evaluator the bearer.
+If inverse wording is used in Plain prose, the wording SHALL be rewritten into the bearer-centred form (or publish an explicit inverse form under the pattern governing the recovered claim that governs it).
+
+#### C.16.Q:4.1c - Endpoint-first discipline
+
+When the admissible endpoint-governing FPF pattern or explicit endpoint source reference is already known, the endpoint-pattern-governed evaluative form SHOULD be published directly, and `qualityTermAscription(...)` SHOULD remain only when preserving the transitional ambiguity is itself informative. `qualityTermAscription(...)` is therefore a transitional characterization record, not a shadow endpoint source.
+
+Typical direct endpoints are:
+
+* engineering `-ility` heads published as one `Characteristic` or one `Q-Bundle`,
+* selector-context uses published as an `Objective` headed by `QS.UseValue` unless overridden explicitly,
+* architecture-description uses published under the description-side evaluative head already selected by the viewpoint bundle,
+* explanatory-merit uses published under the explicit merit bundle when that bundle head is already known.
+
+#### C.16.Q:4.2 - Core construct: `QualitySense`
+
+Every in-scope use SHALL resolve to an explicit **`QualitySense` token**.
+
+A `QualitySense` token publishes at least:
+
+```text
+QualitySense :=
+  ⟨
+    senseId,
+    bearerArity,
+    articulationMode,
+    representationSubstrate,
+    defaultNormalForm,
+    admissibleNormalForms,
+    evaluationFrameKind,
+    admissibleEvidenceModes,
+    admissibleChangeClasses,
+    bridgePolicy
+  ⟩
+```
+
+Where:
+
+* **`articulationMode`** ∈
+  `{ preconceptual, exemplar-grounded, proxy-grounded, characteristic-bound, bundle-bound, objective-bound }`
+* **`representationSubstrate`** ∈
+  `{ embodied-kinesthetic, latent-distributed, symbolic-local, hybrid }`
+* **`defaultNormalForm`** ∈
+  `{ SignalPack, Characteristic, Bundle, Objective }`
+* **`admissibleNormalForms`** is the explicitly declared set of admissible evaluative normal forms for the sense.
+  `defaultNormalForm` names the primary evaluative normal form; any additional endpoint forms MUST be declared here rather than inferred ad hoc. If the quality ascription is published, route publication face, form, unit, carrier, and rendering questions to E.17, E.8, or the publication pattern governing the claim.
+
+#### C.16.Q:4.3 - Normative starter set of sense families
+
+A Context MAY add local senses, but the following starter set is normative as the initial disambiguation menu:
+
+| `QualitySense` token               | Use when “quality” means…                                                                                      | Default normal form | Typical substrate                | Must **not** be silently collapsed into                                    |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------: | -------------------------------- | -------------------------------------------------------------------------- |
+| `QS.PreconceptualFit`              | preconceptual fit, felt rightness, “quality before definition”, kinesthetic or embodied salience                |         `SignalPack` | `embodied-kinesthetic` or `hybrid` | Characteristic, utility, fitness score                                     |
+| `QS.PhenomenalCharacter`           | phenomenal character, qualia, or felt characteristic when the experienced quality itself is described          |         `SignalPack` | `embodied-kinesthetic` or `hybrid` | `QS.PreconceptualFit`, engineering quality, utility                        |
+| `QS.LatentFit`                     | distributed fit or tension in learned representations, world models, probes, prediction structures              |         `SignalPack` | `latent-distributed` or `hybrid` | `QS.PreconceptualFit`, engineering quality, explanatory merit              |
+| `QS.ExplanatoryMerit`              | epistemic merit of an explanation, conjecture, problem frame, or theory                                      |             `Bundle` | `symbolic-local` or `hybrid`     | engineering `-ilities`, use-value                                          |
+| `QS.ArchitecturalDescriptionFitness` | task-fit and compression merit of an architecture description, architecture model, or viewpoint bundle as a description of structure for downstream reasoning |             `Bundle` | `symbolic-local` or `hybrid`     | `QS.EngineeringQualityFamily`, `QS.ExplanatoryMerit`, publication polish   |
+| `QS.EngineeringQualityFamily`      | reliability, availability, security, maintainability, evolvability, usability, and related engineering families                                |             `Bundle` | `symbolic-local` or `hybrid`     | function or capability statements, preconceptual fit                          |
+| `QS.UseValue`                      | usefulness of a candidate under a declared goal or CG-frame; the “Q” head in NQD or QD by default                  |          `Objective` | `symbolic-local` or `hybrid`     | engineering quality family, explanatory merit                              |
+| `QS.ControlAdequacy`               | adequacy of a policy, model, or controller in a closed action loop                                                |             `Bundle` | `hybrid`                         | bare model “quality”, felt fit                                             |
+
+**Default-form note.**
+`QS.EngineeringQualityFamily` and `QS.ControlAdequacy` default to `Bundle`.
+A local Context MAY operationalize one explicit head as a `Characteristic`, but that is a declared operationalization, not a second default normal form.
+
+**Normative rewrite note.**
+
+* In **NQD, QD, or selector** contexts, bare *quality* SHALL rewrite to **`QS.UseValue`** unless a different `QualitySense` is explicitly declared.
+* In **engineering** contexts, bare *quality* SHALL rewrite either to:
+
+  * one explicit **`U.Characteristic` + CSLC Scale**, or
+  * one explicit **`Bundle`**, preferably published as a **`Q-Bundle`** when composite.
+* In **phenomenological** contexts, bare *quality* SHALL rewrite to **`QS.PhenomenalCharacter`** when the experienced quality itself is the topic of description, and to **`QS.PreconceptualFit`** when the talk is about preconceptual fit or felt rightness before stable characterisation.
+* In **representation-learning and world-model** contexts, bare *model quality* SHALL rewrite to **`QS.LatentFit`**, **`QS.ControlAdequacy`**, or both, with the distinction made explicit.
+* In **epistemic evaluation** contexts, “good explanation” SHALL rewrite to **`QS.ExplanatoryMerit`**.
+* In **architecture-description fitness or viewpoint** contexts, bare *architecture quality* or *architectural quality* SHALL first disambiguate the bearer lane: if the bearer is the system-side bearer, use **`QS.EngineeringQualityFamily`**; if the bearer is the description or episteme, use **`QS.ArchitecturalDescriptionFitness`**.
+
+#### C.16.Q:4.4 - Required slots for a conforming `qualityTermAscription`
+
+A conforming `qualityTermAscription` SHALL make explicit:
+
+1. **Bearer tuple.**
+   What is being evaluated, with arity explicit.
+
+2. **`QualitySense`.**
+   Which evaluative family is intended.
+
+3. **Evaluation frame.**
+   The evaluation criterion or criterion frame under which the ascription is made.
+   Examples: exemplar pack, probe pack, criticism or test pack, Q-bundle definition, CG-frame, acceptance spec, control horizon.
+
+4. **Evaluator or viewpoint.**
+   State the evaluator (observer, critic, selector policy, stakeholder family, or review body) and, when relevant, the `U.Viewpoint`, separately.
+   The two SHALL NOT be silently collapsed when they differ.
+
+5. **Normal form.**
+   Whether the ascription is published as `SignalPack`, `Characteristic`, `Bundle`, or `Objective`.
+
+6. **Scope and time when relevant.**
+   The relevant USM scope (`U.ClaimScope`, `U.WorkScope`, `U.PublicationScope`, or generic `U.Scope`) and `Γ_time` SHALL be explicit when omission changes meaning.
+   Freshness windows, qualification windows, or evidence decay windows SHALL be declared in the appropriate evidence or capability lane rather than smuggled into “quality” as an adjective.
+
+7. **Reference plane when relevant.**
+   Especially when the same trigger phrase can refer to the EntityOfConcern being described, its description, its carrier, or a publication face under a different `ReferencePlane`.
+
+8. **Reference and representation scheme when relevant.**
+   Especially when the ascription depends on a declared reference scheme, representation scheme, or viewpoint-specific decoding convention.
+
+9. **Representation substrate when relevant.**
+   Especially when discussing parallels between preconceptual, latent-distributed, and symbolic-local treatments.
+
+10. **Witness and evidence mode.**
+   Exemplars, probes, measurements, bundle members, tests, traces, or closed-loop performance carriers.
+
+#### C.16.Q:4.5 - Normal-form discipline
+
+A `QualitySense` SHALL declare one admissible **default** evaluative normal form and MAY declare additional admissible evaluative normal forms explicitly.
+
+The normal forms in this section are endpoint or evaluative forms. They are not publication forms by themselves. Publication face, publication form, publication unit, carrier, rendering, export, and front-end questions remain with `E.17`, `E.8`, or the endpoint-governing publication pattern named by value.
+
+**QNF-1 - `SignalPack`.**
+Use for `QS.PhenomenalCharacter`, `QS.PreconceptualFit`, and many cases of `QS.LatentFit`.
+
+A conforming `SignalPack` contains:
+
+* exemplar or contrast set or probe set,
+* articulation notes,
+* source episode, carrier, and observer,
+* optional ordinal or thresholded summaries,
+* explicit warning that the signal is **not** yet a `Characteristic` unless an admissible proxy is later declared.
+
+**QNF-2 - `Characteristic`.**
+Use only when the sense is truly one measurable characteristic on one declared scale.
+This uses **A.17, A.18, and C.16** and inherits full scale legality.
+
+**QNF-3 - `Bundle`.**
+Use when the sense is composite.
+Typical for `QS.ExplanatoryMerit`, many engineering quality families, and `QS.ControlAdequacy`.
+
+A conforming bundle contains:
+
+* member heads,
+* whether each head is Characteristic, status, mechanism, scope, or test,
+* aggregation policy if any,
+* prohibition on hidden scalarisation.
+
+**Engineering note.**
+For engineering `-ility` families, the preferred bundle endpoint is **`Q-Bundle`** (C.25), because it keeps **Measures[CHR]** distinct from **ClaimScope and WorkScope** and from **Mechanisms and Status**.
+`Q-Bundle` is a **C.25-governed bundle endpoint** rather than a fifth normal form beside `SignalPack | Characteristic | Bundle | Objective`.
+Do not use a free-floating bundle with hidden metric semantics.
+
+**QNF-4 - `Objective`.**
+Use for `QS.UseValue` in selection, generation, or search contexts.
+
+A conforming objective contains:
+
+* CG-frame or objective endpoint source reference,
+* admissible comparators,
+* acceptance or selector policy,
+* reference plane and window,
+* relation to novelty, diversity, and constraints.
+
+#### C.16.Q:4.6 - Functional vs quality-family discipline
+
+C.16.Q SHALL prevent the collapse of **function or capability** claims into **quality-family** claims.
+
+* A statement about **what a system does** uses `A.6.F` first when function-like wording hides the FPF kind named by value, relation, or claim, then the pattern governing the recovered capability, method, work, role, `A.6.M` module-interface, architecture, mathematical, evidence, assurance, gate, decision, or release claim whose primary `EntityOfConcern`, bearer, relation record, or characteristic-space construction is recovered.
+* A statement about **how well, how safely, how robustly, or how maintainably** it does so belongs to `QS.EngineeringQualityFamily`.
+* “Quality characteristic” and “functional characteristic” SHALL NOT be used as interchangeable labels.
+* In engineering contexts, `-ility` names are **quality-family labels**, not automatically Characteristics.
+  They become admissible only as one explicit `U.Characteristic` or one explicit `Bundle` (preferably expressed through `Q-Bundle` when composite).
+* Cross-references are allowed; category collapse is not.
+
+#### C.16.Q:4.7 - Bridge discipline across traditions
+
+Whenever two different traditions are compared using the word *quality*, the repair SHALL publish an explicit **bridge stance** and loss note.
+
+Allowed bridge stances:
+
+* **`localRename`** — near-synonymous within one Context.
+* **`operationalizes`** — one sense is turned into a proxy or measurable form.
+* **`partialAnalogy`** — structurally similar but not identical.
+* **`projection`** — one richer sense is projected into a narrower evaluative frame.
+* **`nonEquivalent`** — same word, no admissible bridge asserted.
+
+Examples:
+
+* `QS.PreconceptualFit` - `QS.LatentFit` is usually `partialAnalogy`, not identity.
+* `QS.PreconceptualFit` - `QS.PhenomenalCharacter` is usually a progression-by-articulation relation, not identity.
+* `QS.PreconceptualFit` > engineering measures is usually `operationalizes` or `projection`, with loss notes.
+* `QS.EngineeringQualityFamily` > `QS.UseValue` is usually `projection` under a CG-frame.
+* `QS.ExplanatoryMerit` - `QS.UseValue` is **not** identity unless a Context explicitly defines such a projection.
+* Pirsig-style **dynamic quality** usually applies `QS.PreconceptualFit` (sometimes `QS.LatentFit`) only as `localRename` or `partialAnalogy` under a declared `U.BoundedContext`; it is not identity by label.
+* Pirsig-style **static quality** usually applies `Characteristic` or `Bundle` publication under some other declared sense; it is not identity with dynamic quality.
+* `QS.ArchitecturalDescriptionFitness` - `QS.EngineeringQualityFamily` is usually `projection` or `nonEquivalent` unless the Context explicitly states which heads of description-fitness are intended to proxy which system-side characteristics.
+
+#### C.16.Q:4.8 - Change lexicon
+
+A conforming quality-term repair publication SHALL narrate changes with a stable change lexicon aligned to A.6.P:
+
+* **`declareQualityTermAscription(...)`** — create a new explicit quality ascription record.
+* **`withdrawQualityTermAscription(...)`** — retire a prior record.
+* **`retargetBearer(...)`** — change the evaluated bearer tuple while keeping the same quality-term repair form.
+* **`reviseSense(...)`** — change the value in the `qualitySense` slot.
+* **`reArticulate(...)`** — change `articulationMode` while preserving sense family.
+* **`reProxy(...)`** — change proxy, probe, or operationalisation details.
+* **`reBundle(...)`** — change bundle members or aggregation policy.
+* **`reScale(...)`** — change characteristic scale or scale type.
+* **`reFrame(...)`** — change evaluation frame.
+* **`reView(...)`** — change evaluator and viewpoint.
+* **`rescope(...)`** — change `U.Scope`.
+* **`retime(...)`** — change `Γ_time`.
+* **`refreshWitnesses(...)`** — refresh evidence or witness bindings.
+* **`assignToGoverningPattern(...)`** — semantic move to a non-quality governing pattern; never edit in place silently.
+
+A silent **sense rewrite** is a breaking semantic change.
+If the ascription ceases to mean “quality ascription” at all, use `assignToGoverningPattern(...)` rather than pretending the same record survived unchanged.
+
+**A.6.P rewrite note.**
+`retargetBearer(...)` is the family-specific form of `retargetParticipant(BearerSlot, …)`.
+`reviseSense(...)`, `reArticulate(...)`, `reProxy(...)`, `reBundle(...)`, `reScale(...)`, `reFrame(...)`, and `reView(...)` are family-specific refinements of `reviseByValue(...)` and SHALL preserve the A.6.5 distinction between ref retargeting and by-value edits.
+
+#### C.16.Q:4.8a - A.6.B boundary classification template for quality-term repair
+
+When a repaired quality statement becomes boundary-bearing, classify it explicitly:
+
+* **L** — `qualityTermAscription` repair-form skeleton, `QualitySense` semantics, normal-form admissibility, and declared bridge stances;
+* **A** — admissibility conditions for using the ascription in selector, gating, and publication lanes (required qualifiers, witnesses, thresholds, qualification windows);
+* **D** — publication requirements (lexical firewall, mandatory rewrites, publication duties);
+* **E** — carrier-anchored evidence and work effects (measurements, traces, critique sheets, probe packs, selector logs).
+
+Where this family is published as a reusable boundary publication, stable `L-Q*`, `A-Q*`, `D-Q*`, and `E-Q*` claim ids SHOULD be published (or the reused L/A/D/E-classified claim set should be cited by location), and paraphrase drift across quadrants SHALL be avoided.
+Do not let the bare word *quality* carry L/A/D/E claim by itself.
+
+#### C.16.Q:4.9 - Lexical guardrails
+
+In **Tech and normative prose**:
+
+* bare **quality** MUST NOT appear without immediate resolution to a `QualitySense`;
+* **high-quality, low-quality, quality metric, quality score, quality requirement, model quality, architecture quality, and solution quality** are red-flag tokens;
+* **quality characteristic** MAY appear only as:
+
+  * a bridge label to an external standard or tradition, or
+  * a family label immediately rewritten into one explicit `U.Characteristic` or `Q-Bundle`;
+* **quality requirement or quality requirements** MUST NOT remain bare noun phrases; the text SHALL rewrite them into explicit `RequirementRole`, `U.Commitment`, or `U.PromiseContent.acceptanceSpec` structures over one named `U.Characteristic`, one `Q-Bundle` head, or one explicit objective head;
+* **architecture quality or architectural quality** MUST NOT appear without an explicit bearer lane (`EntityOfConcern being described`, `description`, `episteme` or publication face, or carrier when the carrier itself is evaluated) and, when omission changes meaning, an explicit `referencePlane`;
+* in QD and NQD contexts, bare **quality** MUST default to **`QS.UseValue`**;
+* preconceptual uses MUST NOT be presented as if they were already Characteristics;
+* latent and distributed fit MUST NOT be presented as if it were automatically explanatory merit;
+* if the occurrence is primarily **action-invitation** talk, the text MUST NOT assign a `QualitySense`; it SHALL exit to `A.6.A` or another action-invitation governing pattern, with source-tradition `affordance` wording kept only as a quoted cue when needed;
+* scope words (*applicability*, *envelope*, *generality*, *validity*) MUST NOT be used as hidden substitutes for `U.Scope`, `U.ClaimScope (G)`, or `U.WorkScope`;
+* quoted metalinguistic uses of the token *quality* are allowed, but SHALL be marked as **token-under-discussion**, not as a boundary-bearing term.
+
+#### C.16.Q:4.10 - Progressive elaboration
+
+C.16.Q permits monotone elaboration:
+
+1. Start by selecting a **`QualitySense`** and capturing rival candidates when ambiguity is live.
+2. Declare bearer, frame, viewpoint, and substrate.
+3. Choose an admissible **normal form**.
+4. Add exemplars, probes, characteristic heads, bundle members, and objective pins.
+5. Add bridges and loss notes if comparing traditions.
+6. If the repaired sentence is boundary-bearing, emit `L/A/D/E` hooks rather than letting “quality” carry them implicitly.
+7. Never move between sense families silently.
+
+### C.16.Q:5 - Archetypal Grounding
+
+#### C.16.Q:5.1 - Tell
+
+If a draft says *quality*, the draft has not yet named the evaluative family.
+A conforming rewrite publishes either one explicit endpoint-pattern-governed evaluative form or one explicit `qualityTermAscription(...)` transitional record with one `QualitySense`, one bearer tuple, one evaluation frame, one evaluator and viewpoint, one admissible normal form, explicit scope, time, and bridge qualifiers when they matter, and declared endpoint-governing pattern or explicit endpoint source relation.
+
+#### C.16.Q:5.2 - Show (System lane)
+
+**Draft:** “The model quality improved.”
+
+**Repair A — latent representation line**
+`qualityTermAscription(
+  bearer = Model_v5,
+  qualitySense = QS.LatentFit,
+  evaluationFrame = ProbePack_PP2,
+  evaluator = RepLearningReviewBoard,
+  normalForm = SignalPack,
+  Γ_time = Window_W5,
+  witnesses = {ProbeSeparationRun_22, AliasRiskCard_9}
+)`
+
+**Repair B — closed-loop control line**
+`qualityTermAscription(
+  bearer = PolicyModelPair_PM5,
+  qualitySense = QS.ControlAdequacy,
+  evaluationFrame = Horizon_H × EnvClass_E,
+  evaluator = ControlReviewBoard,
+  viewpoint = ControlView_VP,
+  normalForm = Bundle,
+  scope = U.WorkScope(ControlDeploymentScope_7),
+  Γ_time = RunWindow_RW,
+  witnesses = {ClosedLoopTraceSet_41}
+)`
+
+#### C.16.Q:5.3 - Show (Episteme lane)
+
+**Draft:** “Quality matters before definition.”
+
+**Repair A — preconceptual or phenomenological line**
+`qualityTermAscription(
+  bearer = ProblemFramingEpisode_PF3,
+  qualitySense = QS.PreconceptualFit,
+  evaluationFrame = ExemplarPack_EP3,
+  evaluator = ReviewerGroup_A,
+  normalForm = SignalPack,
+  representationSubstrate = embodied-kinesthetic,
+  witnesses = {EpisodeNotes_3}
+)`
+
+**Repair B — explanatory line**
+`qualityTermAscription(
+  bearer = Explanation_N5,
+  qualitySense = QS.ExplanatoryMerit,
+  evaluationFrame = CriticismBundle_CB4,
+  evaluator = TheoryReviewPanel,
+  referencePlane = episteme,
+  normalForm = Bundle,
+  witnesses = {CritiqueSheet_14, CounterexampleSet_2}
+)`
+
+#### C.16.Q:5.3a - Show (Architecture description lane)
+
+**Draft:** “The architecture quality improved.”
+
+**Repair A — quality of the system-side bearer**
+`qualityTermAscription(
+  bearer = PaymentPlatform_v4,
+  qualitySense = QS.EngineeringQualityFamily,
+  evaluationFrame = Q_Bundle_AvailabilitySecurityEvolvability_3,
+  evaluator = ArchitectureReviewBoard,
+  viewpoint = TEVB_ArchitectureViewpointSet,
+  referencePlane = world,
+  normalForm = Bundle,
+  witnesses = {AvailabilityReport_8, CouplingCheck_3, EvolvabilityNote_2}
+)`
+
+**Repair B — quality of the architecture description**
+`qualityTermAscription(
+  bearer = ArchitectureDescription_AD12,
+  qualitySense = QS.ArchitecturalDescriptionFitness,
+  evaluationFrame = ViewpointBundle_TEVB × DecisionQuestionSet_DQ7,
+  evaluator = ArchitectureReviewBoard,
+  viewpoint = TEVB_ArchitectureViewpointSet,
+  referencePlane = episteme,
+  normalForm = Bundle,
+  witnesses = {CoverageMatrix_4, CorrespondenceCheck_7, ViewConsistencyNote_2}
+)`
+
+#### C.16.Q:5.4 - Show (QD or selector lane)
+
+**Draft:** “Quality in our QD loop.”
+
+**Repair**
+`qualityTermAscription(
+  bearer = Candidate_7,
+  qualitySense = QS.UseValue,
+  evaluationFrame = CG_Frame_9,
+  evaluator = SelectorPolicy_P4,
+  normalForm = Objective,
+  Γ_time = SelectionWindow_SW,
+  witnesses = {ObjectiveCard_9, AcceptanceSpec_4}
+)`
+
+### C.16.Q:6 - Bias-Annotation
+
+Lenses tested: **Gov**, **Arch**, **Onto-Epist**, **Prag**, **Did**. Scope: **Universal** for overloaded evaluative uses of *quality* in FPF-governed wording.
+
+* **Gov bias:** this pattern favors explicit evaluative publication and explicit L/A/D/E hooks, which improves auditability but adds drafting overhead.
+* **Arch bias:** this pattern prefers one stable ascription relation over free-form philosophical prose, which improves reuse but can feel rigid in exploratory notes.
+* **Onto-Epist bias:** this pattern refuses to collapse preconceptual, latent, explanatory, engineering, and selector senses into one concept; that increases honesty at the cost of extra lexical work.
+* **Prag bias:** this pattern defaults QD and NQD uses toward `UseValue`, which improves selector clarity but can feel narrower than colloquial “quality”.
+* **Did bias:** this pattern is intentionally teachable through repeated rewrites; the risk is over-formalizing early exploratory language.
+
+### C.16.Q:7 - Conformance Checklist (CC-C16Q)
+
+A text or pattern conforms to C.16.Q iff:
+
+1. **CC-C16Q-1 - Explicit endpoint classification and explicit sense.**
+   Every in-scope use of *quality* resolves either to one declared endpoint-pattern-governed evaluative form or to one declared `qualityTermAscription(...)` transitional record with one declared `QualitySense` and explicit endpoint classification.
+2. **CC-C16Q-2 - Explicit bearer and arity.**
+   The evaluated bearer tuple is explicit.
+
+3. **CC-C16Q-3 - Explicit frame.**
+   Evaluation frame is explicit and reviewable.
+
+4. **CC-C16Q-4 - Evaluator and viewpoint are explicit.**
+   The ascription states who evaluates, from which viewpoint, or under which selector or observer policy.
+
+5. **CC-C16Q-5 - Substrate and referencePlane are declared when relevant.**
+   Cross-talk between preconceptual, latent-distributed, symbolic-local, and `ReferencePlane` values `world`, `concept`, and `episteme` is not allowed without an explicit substrate declaration and, when live, `referencePlane` declaration when those distinctions are live.
+
+6. **CC-C16Q-6 - Scope and `Γ_time` are explicit when omission changes meaning.**
+   If scope or time selection affects interpretation, the ascription declares `U.Scope` and, when live, `Γ_time` explicitly.
+
+7. **CC-C16Q-7 - Admissible normal form.**
+   The ascription uses `SignalPack`, `Characteristic`, `Bundle`, or `Objective` as its endpoint or evaluative normal form, with the corresponding discipline observed.
+
+8. **CC-C16Q-8 - No illegal scalarisation.**
+   Composite senses are not collapsed into one score without an explicit scoring method.
+
+9. **CC-C16Q-9 - No silent sense rewrite.**
+   Any semantic change in the ascription uses the declared change lexicon; changing sense silently is forbidden.
+
+10. **CC-C16Q-10 - QD default.**
+   In search, selection, or NQD contexts, *quality* resolves to `QS.UseValue` unless overridden explicitly.
+
+11. **CC-C16Q-11 - Engineering family discipline.**
+   Engineering `-ility` uses resolve to one explicit `U.Characteristic` or one explicit `Bundle` (preferably published as `Q-Bundle` when composite); they are not left as free-floating adjectives.
+
+12. **CC-C16Q-12 - Functional separation.**
+    Function or capability claims remain distinct from quality-family claims.
+
+13. **CC-C16Q-13 - Bridge accountability.**
+    Cross-tradition parallels publish bridge stance and loss notes; cross-context or cross-plane reuse cites explicit Bridge ids and CL policy where applicable.
+
+14. **CC-C16Q-14 - Boundary-claim hook when needed.**
+    If a repaired quality ascription is used for admissibility, commitments, publication, or adjudication, the downstream `L/A/D/E` hooks are explicit rather than carried implicitly by the word *quality*.
+
+15. **CC-C16Q-15 - Lexical firewall.**
+    Bare *quality* is absent from Tech and normative prose except as quoted metalinguistic discussion.
+
+16. **CC-C16Q-16 - `qualityTermAscription` repair-form skeleton is published.**
+    The family-specific transitional token `qualityTermAscription` resolves to a repair-form skeleton that publishes bearer position, evaluator and viewpoint slots, qualifier expectations, repair paths for bearer-kind mismatches, witness discipline, admissible change classes, and cross-context or cross-plane policy.
+
+17. **CC-C16Q-17 - Candidate-Set Note is used when ambiguity is live.**
+    If sense selection, bearer facet, or A.7 lane or kind (`EntityOfConcern being described`, `description`, `episteme` or publication face, or carrier when the carrier itself is evaluated) is non-obvious, the text records a short Candidate-Set Note before the rewrite is treated as decision-bearing or publication-bearing.
+
+18. **CC-C16Q-18 - Evaluator and viewpoint are not silently collapsed.**
+    When both an evaluator and a `U.Viewpoint` matter, they are represented as separate slots or fields.
+
+19. **CC-C16Q-19 - Family-specific change verbs dock cleanly with A.6.P and A.6.5.**
+    `retargetBearer(...)` is used only for ref retargeting; sense, frame, bundle, scale, and view edits are narrated as explicit by-value revisions; silent retyping is forbidden.
+
+### C.16.Q:8 - Common Anti-Patterns and How to Avoid Them
+
+| Anti-pattern | Symptom | Why it fails | How to avoid or repair |
+| --- | --- | --- | --- |
+| **Magic scalar quality** | one number silently stands for several evaluative families | collapses senses, carriers, and scoring legality | publish one explicit `QualitySense` and an admissible normal form |
+| **Preconceptual-as-metric** | felt fit is presented as if it were already a measured characteristic | erases articulation stage and overstates evidence | keep it as `SignalPack` until an admissible proxy is declared |
+| **Engineering adjective drift** | *reliable, maintainable, or high-quality* appear with no explicit Characteristic or Q-Bundle | hides measurement shape and scope | rewrite to one `U.Characteristic` or one `Q-Bundle` |
+| **Selector ambiguity** | *quality in QD and NQD* is left undefined | breaks comparability and selection semantics | default to `QS.UseValue` unless another objective head is declared explicitly |
+| **Model-quality collapse** | latent fit, explanatory merit, and control adequacy are merged under one phrase | destroys carrier and frame distinctions | split into separate `qualityTermAscription(...)` records |
+| **Architecture-vs-description collapse** | *architecture quality* is used with no explicit bearer lane | collapses the system-side bearer into its description, carrier, or publication face | publish the bearer lane explicitly and select `QS.EngineeringQualityFamily` or `QS.ArchitecturalDescriptionFitness` |
+| **Action-invitation-as-quality** | action invitations are narrated as if they were evaluations | wrong governing pattern; the rewrite hides action semantics instead of clarifying them | stop the Q-rewrite and use `assignToGoverningPattern(...)` into `A.6.A` or another action-invitation governing pattern; keep source-tradition `affordance` wording only as a quoted cue |
+| **Bridge-by-label** | two traditions both use *quality*, so the draft implies they are the same | creates false identity and silent loss | publish one bridge stance with loss notes |
+
+### C.16.Q:9 - Consequences
+
+**Benefits.**
+This pattern makes evaluative language auditable across phenomenology, engineering, and search and selection contexts.
+It also makes subsequent wording repair easier because the repair is carried by one explicit quality-term repair form plus endpoint governing-pattern assignments rather than by ad hoc prose rules.
+
+**Trade-offs and mitigations.**
+The pattern adds drafting overhead and can feel heavy in exploratory notes.
+Mitigation: allow bare *quality* in Plain commentary during exploration, but require repair before the term enters Tech and normative, boundary, selector, or assurance use.
+
+### C.16.Q:10 - Rationale
+
+C.16.Q makes one strategic move:
+
+> **The word “quality” is not treated as one concept. It is treated as a family of evaluative ascriptions whose members differ by substrate, articulation mode, bearer, frame, and admissible publication form.**
+
+This lets FPF discuss:
+
+* Pirsig-like preconceptual fit,
+* representation-learning and neuro-symbolic latent fit,
+* explanation quality in criticism-driven inquiry,
+* architecture-description fitness under a viewpoint,
+* engineering quality families,
+* use-value in open-ended evolution,
+* control adequacy in action loops,
+
+without forcing them into one false universal scalar.
+
+It also makes the distributed-vs-local issue explicit:
+
+* some senses originate in **embodied** or **latent-distributed** substrates,
+* some are only publishable as **symbolic-local** CHR, bundle, and objective forms,
+* and some require an explicit **projection** from the first into the second.
+
+It also makes the bearer and plane issue explicit:
+
+* some uses evaluate the **EntityOfConcern being described**,
+* some evaluate its **description** under a viewpoint,
+* some evaluate a **carrier** or **publication face**,
+* and those uses must not be collapsed without an explicit bearer lane and, when needed, a declared `referencePlane`.
+
+That is exactly where semantic drift usually starts; C.16.Q turns that drift into an auditable design choice.
+
+### C.16.Q:11 - SoTA-Echoing
+
+**Evidence binding note.** If your Context maintains a **SoTA Synthesis Pack** for evaluative language, architecture-quality vocabularies, selector and objective semantics, world-model evaluation, or embodied and preconceptual articulation, this section **SHALL cite** its ClaimSheet IDs, CorpusLedger entries, and BridgeMatrix rows and keep the adoption statuses below consistent with those IDs. Otherwise, use the table below as the current source-use and source-currentness record for this pattern revision, not as a generic seed list.
+
+This section follows the required structure: **claim > practice > source use and currentness > source > alignment > adoption status**. C.16.Q aligns with contemporary practice across architecture-description standards, software-quality standards, evolutionary architecture, QD search, active-inference and world-model research, phenomenology and TAE, source-tradition `affordance` work, and philosophy of explanation, while making one explicit FPF move that those traditions usually leave implicit: the overloaded token *quality* is repaired into explicit evaluative endpoint forms, with `qualityTermAscription(...)` available as a declared transitional record carrying `QualitySense`, bearer, frame, admissible normal form, and bridge disposition while governing-pattern assignment remains open.
+
+**Source-use convention.** `Current-best source use` means the row is used as the best-known current line for the narrow effect named in the alignment cell. `Current-standard and reference-only use` means an official standard supplies a useful distinction but does not by itself solve C.16.Q's quality-term restoration question. `Current-practice reference use` means the source family records a widely used current practice that C.16.Q adapts. `Lineage and local-gloss material` means the row helps recognition or terminology only. `Rejected import` states what C.16.Q refuses to import as FPF ontology.
+
+| Claim (C.16.Q need) | SoTA practice (post-2015) | Source use and currentness | Primary source (post-2015 unless marked lineage) | Alignment with C.16.Q | Adoption status |
+|---|---|---|---|---|---|
+| Description-side quality must not be confused with system-side quality. | Contemporary architecture-description practice distinguishes the **system or entity that fills the architecture-description `EntityOfConcern`** from the **architecture description** and structures discourse through viewpoints, concerns, and model kinds. | **Current-standard and reference-only use.** The standard is a current architecture-description reference for entity, description, and viewpoint separation; it is not treated as a full quality-term repair method. | ISO/IEC/IEEE 42010:2022, *Software, systems and enterprise - Architecture description*. | C.16.Q mirrors this split by separating `QS.ArchitecturalDescriptionFitness` from system-side `QS.EngineeringQualityFamily`, and by requiring an explicit bearer lane plus `referencePlane` when phrases such as *architecture quality* appear. | **Adopt and adapt.** Adopt the EntityOfConcern-vs-description split; adapt by making lexical repair and bearer-lane publication mandatory. Reject importing the standard's conceptual model as FPF ontology. |
+| Engineering “quality” should resolve to explicit heads, not free adjectives. | Contemporary systems/software quality practice works through named **characteristics** and **subcharacteristics** used to specify, measure, and evaluate quality, and to define acceptance criteria and requirements. | **Current-standard and reference-only use.** The standard supplies a current quality-model reference for explicit heads; C.16.Q still requires FPF `U.Characteristic`, `Q-Bundle`, objective, or endpoint governance named by value. | ISO/IEC 25010:2023, *Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Product quality model*. | C.16.Q adopts the explicit-head discipline by assigning engineering uses either to one admissible `Characteristic` or to one explicit `Bundle` or `Q-Bundle`, and by refusing to leave *quality requirement(s)* as bare noun phrases. | **Adopt and adapt.** Adopt explicit quality heads; adapt by treating composite families as bundles rather than pretending that every family label is already a scalar. Reject ISO characteristic lists as automatically sufficient FPF evaluation spaces. |
+| Evolutionary architecture needs continuously checked heads rather than generic “quality”. | Evolutionary-architecture practice uses **fitness functions** to drive, manage, and automate change across architectural concerns, and ties structure to the capacity for change. | **Current-practice reference use.** The row records concern-specific fitness heads, not a universal definition of quality. | Ford, Parsons, Kua, Sadalage (2022), *Building Evolutionary Architectures*, 2nd ed. | C.16.Q aligns by treating engineering quality families and change-enabling concerns as explicit evaluative heads under declared frames, not as one rhetorical “high quality” scalar. | **Adopt and adapt.** Adopt the fitness-function discipline; adapt by keeping `QS.EngineeringQualityFamily`, `QS.ControlAdequacy`, and `QS.UseValue` distinct and by forbidding function and quality-family collapse. |
+| In QD, NQD, or selector settings, “quality” is an objective head under a declared search frame. | Modern QD work is explicit that search returns a **collection** of solutions that are high with respect to an objective and diverse with respect to declared measures and behavior descriptors; the archive is not a synonym for one hidden global score. | **Current-best source use for selector-quality semantics in this pattern revision.** The row governs the `QS.UseValue` default, objective form, and scalar-collapse boundary; it does not define all QD and NQD practice. | Fontaine, Togelius, Nikolaidis, Hoover (2020), *Covariance matrix adaptation for the rapid illumination of behavior space*; Fontaine & Nikolaidis (2023), *Covariance Matrix Adaptation MAP-Annealing*. | C.16.Q therefore defaults selector-context *quality* to `QS.UseValue` in `Objective` form, while keeping novelty, diversity, and constraints explicit and separate. | **Adopt and adapt.** Adopt objective-explicit selector semantics; adapt by making the Q-head a named `QualitySense` and by rejecting unexplained scalar collapse. |
+| Latent fit, world-model adequacy, and closed-loop control must not collapse into one phrase. | Contemporary world-model and active-inference work evaluates generative and predictive models, planning, action, uncertainty reduction, and intrinsic objectives through explicit factor sets rather than through one undifferentiated “model quality”. | **Current research and practice source use.** The row is used for multi-factor separation of latent, control, and value claims; it is not imported as an active-inference ontology for FPF. | Parr, Pezzulo, Friston (2022), *Active Inference: The Free Energy Principle in Mind, Brain, and Behavior*; LeCun (2022), *A Path Towards Autonomous Machine Intelligence*; Friston et al. (2024), *Designing Ecosystems of Intelligence from First Principles*. | C.16.Q adapts this by separating `QS.LatentFit`, `QS.ControlAdequacy`, and `QS.UseValue`, and by requiring explicit evaluation frames and witnesses for each ascription. | **Adapt.** Adapt multi-factor evaluation into one repair discipline; reject the colloquial habit of letting *model quality* silently cover representation, prediction, control, and utility at once. |
+| Preconceptual felt fit should remain pre-metric until admissibly articulated. | TAE-style practice treats felt aspects of thinking as something that can be clarified progressively with tentative language that stays responsive to lived experience and widens conceptual structure. | **Current-practice reference use with lineage use.** The row is used for progressive articulation and the `SignalPack` boundary; it is not current-best source use for metric construction. | Schoeller (2022), work on Thinking at the Edge and embodied critical thinking. | C.16.Q uses this as a practice reason for `QS.PreconceptualFit` in `SignalPack` form, with exemplars, articulation notes, and an explicit ban on premature promotion to `Characteristic`. | **Adopt and adapt.** Adopt progressive articulation from felt sense to wording; adapt by giving that articulation an admissible publication form and explicit witness discipline. |
+| Some trigger uses of “quality” are really about action invitation, not evaluative characterization. | Recent source-tradition `affordance` work treats affordances as perceptually available action possibilities, and in some accounts as invitations or action-guiding structures that position the agent to act. | **Current research cue and boundary cue.** The row is used only to recognize action-invitation cases and send them to `A.6.A` or another action-invitation governing pattern. | Hansen (2024), *Perceiving affordances and the problem of visually indiscernible kinds*; Jorba & Lopez-Silva (2024), *Mind in action: expanding the concept of affordance*. | C.16.Q uses this only as an action-invitation cue: when the trigger use is primarily action-invitation talk, the admissible FPF move is `assignToGoverningPattern(A.6.A, action-invitation claim)` or another action-invitation governing-pattern assignment, rather than forcing a `QualitySense` or `qualityTermAscription(...)`. | **Adopt and adapt.** Adopt the action-guiding insight; adapt by making the governing-pattern assignment named by value and auditable. Reject importing `affordance` as a quality sense or FPF governing-pattern name. |
+| Explanation quality is an epistemic merit family, not engineering quality or selector utility. | Contemporary philosophy of explanation treats understanding, explanatory value, and the cognitive significance of explanations as a distinct epistemic topic. | **Lineage and reference source use for a local evaluative family.** The row is used for the `QS.ExplanatoryMerit` distinction and anti-scalarization boundary; it is not presented as current-best source use for all explanation evaluation. | Khalifa (2017), *Understanding, Explanation, and Scientific Knowledge*. | C.16.Q therefore treats explanatory evaluation as `QS.ExplanatoryMerit`, typically `Bundle`-shaped, and rejects silent collapse into engineering `-ilities`, bare usefulness, or one unexplained “high-quality explanation” score. | **Adapt.** Adapt explanatory-value practice into a slot-explicit evaluative family; reject cross-family scalarization by label. |
+
+**Short alignment notes.**
+
+**Architecture-description practice.** ISO 42010 is a current-standard reference for not collapsing the selected system or other entity under description into its description. C.16.Q adopts that guardrail and adds lexical discipline: a draft may not say *architecture quality* without publishing which bearer lane is under evaluation and whether the evaluation is description-side or system-side.
+
+**Engineering quality practice.** ISO 25010 gives a mainstream current-standard reason not to leave *quality* as a free noun: contemporary quality work is organized around named characteristics and subcharacteristics that are specified, measured, and evaluated. C.16.Q adopts that explicit-head discipline, but adapts it by assigning composite cases to `Bundle` or `Q-Bundle` and by treating *quality requirement(s)* as requirements over explicit heads rather than as self-standing nouns.
+
+**Evolutionary-architecture practice.** Fitness functions treat architecture-relevant concerns as continuously monitored heads tied to change and governance, not as one mystical scalar. C.16.Q adopts that operational spirit, but adapts it by keeping engineering-family evaluation, control adequacy, and selector value distinct and by forbidding function and quality-family collapse.
+
+**QD and NQD practice.** Modern QD work is explicit that search returns a collection of solutions that are high with respect to an objective and diverse with respect to declared measures. C.16.Q therefore adopts the default rewrite of selector-context *quality* to `QS.UseValue` in `Objective` form and rejects any rewrite that silently blends novelty, diversity, constraints, and utility into an unexplained scalar.
+
+**World-model and active-inference practice.** Contemporary world-model and active-inference work uses generative and predictive models for perception, planning, learning, and action, which makes evaluation inherently multi-factor: latent representation quality, model evidence or predictive adequacy, policy adequacy, and task and objective value are not one thing. C.16.Q adapts this by separating `QS.LatentFit`, `QS.ControlAdequacy`, and `QS.UseValue`, and by requiring explicit evaluation frames and witnesses for each ascription.
+
+**Phenomenology and TAE practice.** TAE-style work treats a felt sense as something that can be clarified and worded progressively, with tentative language that stays responsive to lived experience. C.16.Q adopts this progressive-articulation stance by giving `QS.PreconceptualFit` an admissible `SignalPack` form and by keeping `QS.PhenomenalCharacter` separately available when the experienced character itself, not action-guiding fit, is the topic.
+
+**Action-invitation boundary.** Recent source-tradition `affordance` work emphasizes that affordances can be perceptually experienced as action possibilities that position or invite the agent to act. C.16.Q uses that insight only as a governing-pattern boundary cue: when the trigger use of *quality* is really action-invitation talk, the text should use `assignToGoverningPattern(...)` into `A.6.A` or another action-invitation governing pattern rather than forcing a `QualitySense` or `qualityTermAscription(...)`.
+
+**Explanation practice.** Contemporary philosophy of explanation keeps explanatory understanding and epistemic value distinct from engineering performance or utility maximization. C.16.Q adapts this by publishing `QS.ExplanatoryMerit` as its own evaluative family, typically `Bundle`-shaped, and by rejecting hidden scalarization into “high-quality explanation” without explicit heads.
+
+**Scale legality.** The rows above do **not** license free arithmetic on the word *quality*. Whenever C.16.Q operationalizes engineering heads, selector objectives, or control adequacy numerically, it **SHALL** bind the comparison to an explicit `ComparatorSet`, `CG-Spec`, or declared aggregation policy and **SHALL** reject covert scalarization of bundles, explanations, or preconceptual signals.
+
+**Cross-Context and plane note.** This section states alignment and non-identity only; it does **not** assert silent sameness across `U.BoundedContext`s or across planes. Any actual reuse of a quality vocabulary, selector head, or viewpoint-bound quality family across Contexts and planes **SHALL** publish `BridgeId`, `CL`, and loss-note policy and, where planes differ, the relevant `Φ(CL)` and `Φ_plane` policy ids.
+
+**Historical-lineage note.** Earlier touchstones such as Pirsig, Popper, and Deutsch remain useful as lineage and local-gloss resources, but C.16.Q does not use them as formal SoTA anchors here because E.8 requires post-2015 primary sources for Architectural patterns unless the row is explicitly lineage or local-gloss material.
+
+This SoTA alignment backs the pattern’s central move: *quality* is not one universal evaluative noun. In contemporary practice, the relevant work is already distributed across explicit characteristics, objectives, viewpoints, world-model criteria, explanatory virtues, felt signals, and action invitations; C.16.Q makes that distribution first-class and auditable.
+
+### C.16.Q:11a - Refresh and reopen conditions
+
+Reopen or narrow C.16.Q when any of these current-pattern-language conditions becomes live:
+
+* a recurring quality or evaluative family appears that is not covered by the current `QualitySense` starter set and cannot be treated as an existing endpoint-pattern-governed form;
+* a new endpoint governing pattern can govern a class of uses that currently require transitional `qualityTermAscription(...)`;
+* `A.7`, `C.2.P`, `C.2.1`, or bridge-policy vocabulary changes the admissible lane, EntityOfConcern, publication-face, carrier, or `ReferencePlane` wording used by this pattern;
+* current best-known practice changes a `QualitySense`, normal-form boundary, action-invitation boundary, scale-legality boundary, or source-use and currentness row used in `C.16.Q:11`;
+* README, ToC, `E.11`, retrieval, or local Problem-frame first-entry cues change for quality, characteristic, action-invitation, architecture-description, selector, or explanation wording;
+* subject patterns begin copying quality trigger lists, `QualitySense` rows, or transitional repair-form slots that belong in this first-stage quality-term precision-restoration pattern.
+
+The refresh action is to remove, narrow, or redirect the affected row or exit. Do not preserve a stale `QualitySense`, endpoint exit, lane wording, or source row as historical compatibility text.
+
+### C.16.Q:12 - Relations
+
+* **Lives in:** **C.16** characterization pattern nest as the quality-term realization of **E.10.ARCH** and **C.16.P**.
+* **Builds on:** **E.10.ARCH** for shared wording-use restoration architecture; **C.16.P** for characteristic and scale exits; **A.2.6** for explicit scope and `Γ_time`; **A.17, A.18, and C.16** for admissible measurable characteristics; **C.25** for engineering `Q-Bundle` publication.
+* **Coordinates with:** **A.6.P** when the recovered content is relation construction rather than quality-term or evaluative characterization; **A.6.A** or another action-invitation governing pattern when the trigger invites action rather than evaluates a bearer; **C.2.2a, A.16, A.16.1, A.16.2, and B.4.1** for language-state chart positions, admissible moves, early cue handling, responsibility handoff, and admissible retreat or reopen; use **A.16.0** only when lineage, branch, loss, or handoff history itself must be published as an explicit trajectory account; **B.5.2.0** for prompt-shaped continuations that are not yet stable endpoint publication; **C.2.LS, C.2.4, C.2.5, C.2.6, and C.2.7** for language-state facet governance; **C.17, C.18, and C.19** for `QS.UseValue`, novelty and diversity discipline, and selector policy; **E.17.0** and **E.17.2** for architecture-description and viewpoint bundles; **F.9** and **F.9.1** for Bridges, CL, and bridge-stance annotations; **A.6.B** when repaired ascriptions become boundary-bearing.
+* **Publishes vocabulary through:** **E.10, F.17, and F.18** when the `qualityTermAscription` repair-form skeleton, the `QualitySense` starter set, and the red-flag rewrites become stable shared vocabulary.
+
+#### C.16.Q:12.1 - Language-space refactor note
+This pattern uses **endpoint-first assignment** rather than universal governance of all quality language. `qualityTermAscription(...)` remains useful as a transitional repair form, but it is not the required resting place or durable local record kind for every repaired use of `quality`.
+
+#### C.16.Q:12.2 - Explicit endpoint selection
+Admissible endpoints after repair include:
+- a single `Characteristic`,
+- a `Q-Bundle`,
+- an `E.21 PatternQualityQBundle`, when the bearer is one FPF pattern version and the evaluative claim asks whether the pattern is good enough for a declared reader, use, and scope. In this case, do not assign the claim to general `C.25` unless the bearer is a non-pattern engineering quality family,
+- an `Objective`,
+- an explanatory-merit bundle,
+- a selector-value endpoint.
+
+Bare `quality` in Tech prose should therefore be banned or rewritten immediately under an explicit endpoint-governing FPF pattern or explicit endpoint source reference. If that endpoint source is already known, `qualityTermAscription(...)` need not remain in the published normal form.
+
+#### C.16.Q:12.3 - Endpoint-governance boundary
+This pattern does not govern articulation-state characteristics, bridge stances, or representation factors. Those remain governed by `A.16`, `C.2.LS`, `C.2.4`, `C.2.5`, `C.2.6`, `C.2.7`, and `F.9.1`.
+
+### C.16.Q:End
+

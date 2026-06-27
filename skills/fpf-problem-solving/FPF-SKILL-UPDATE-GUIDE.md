@@ -17,6 +17,19 @@ but a stale thinking-verb router silently degrades navigation quality.
 
 ## What to update (checklist)
 
+### 0. Upstream section generation
+
+Regenerate `sections/` only from official upstream `ailev/FPF`. Clone or update
+`FPF/FPF-Spec.md`, then run:
+
+```bash
+python3 scripts/split_spec.py
+```
+
+The splitter follows the upstream H1 structure as published. Do not invent missing Part
+headings in the skill layer; if upstream omits a Part-level H1, reflect that in the
+Section INDEX and README tables.
+
 ### 1. Description field (YAML frontmatter)
 
 The description decides WHETHER the skill triggers at all. It must include:
@@ -103,10 +116,11 @@ README files are for humans on GitHub — they must reflect the current state of
 ## Process summary
 
 ```
-1. Identify what changed in the FPF spec
-2. For each change, ask: "What thinking need does this serve?"
-3. Update the relevant SKILL.md component (description / use cases / router / INDEX)
-4. Run the FPF self-audit (table above)
-5. Test with simulated user queries
-6. Update README.md and README-RU.md to match
+1. Regenerate `sections/` from upstream `ailev/FPF`
+2. Identify what changed in the FPF spec
+3. For each change, ask: "What thinking need does this serve?"
+4. Update the relevant SKILL.md component (description / use cases / router / INDEX)
+5. Run the FPF self-audit (table above)
+6. Test with simulated user queries
+7. Update README.md and README-RU.md to match
 ```
