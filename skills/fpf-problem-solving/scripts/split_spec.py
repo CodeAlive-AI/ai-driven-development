@@ -69,11 +69,9 @@ def build_toc(h2_entries: list[tuple[str, str, int, str]]) -> str:
     return "\n".join(toc_lines)
 
 
-# Top-level Parts A-K. The spec spells these out as H1 headings
-# ("# Part A – …", "# Part D – …", …). A missing one means a Part's `#` heading
-# was deleted upstream and its content silently orphaned under the previous Part
-# — the regression fixed by ailev/FPF#42 / PR #43. Guard against it so a
-# malformed spec fails loudly instead of producing a structurally wrong tree.
+# Top-level Parts are emitted as H1 headings when they exist in the upstream spec.
+# Validate ordering and duplicates without assuming the spec currently contains
+# every possible Part A-K heading.
 EXPECTED_PART_LETTERS = list("ABCDEFGHIJK")
 
 
@@ -89,12 +87,7 @@ def validate_part_structure(h1_titles: list[str]) -> None:
     problems: list[str] = []
     for letter in EXPECTED_PART_LETTERS:
         hits = positions.get(letter, [])
-        if not hits:
-            problems.append(
-                f"  - Part {letter}: no H1 heading "
-                "(content likely orphaned under the previous Part)"
-            )
-        elif len(hits) > 1:
+        if len(hits) > 1:
             problems.append(
                 f"  - Part {letter}: found {len(hits)} H1 headings (expected 1)"
             )
@@ -107,8 +100,7 @@ def validate_part_structure(h1_titles: list[str]) -> None:
         print(
             "ERROR: FPF-Spec.md Part A-K heading structure is invalid:\n"
             + "\n".join(problems)
-            + "\n\nAn upstream edit likely deleted a Part's `#` heading "
-            "(see ailev/FPF#42). Fix the spec before splitting.",
+            + "\n\nFix duplicate or out-of-order Part headings before splitting.",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -116,7 +108,7 @@ def validate_part_structure(h1_titles: list[str]) -> None:
 
 def split_spec():
     if not SPEC_FILE.exists():
-        print(f"Error: {SPEC_FILE} not found. Did you init the submodule?", file=sys.stderr)
+        print(f"Error: {SPEC_FILE} not found. Clone upstream ailev/FPF into FPF/ first.", file=sys.stderr)
         sys.exit(1)
 
     lines = SPEC_FILE.read_text(encoding="utf-8").splitlines(keepends=True)

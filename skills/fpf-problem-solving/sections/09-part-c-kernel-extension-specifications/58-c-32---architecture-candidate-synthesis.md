@@ -1,0 +1,319 @@
+## C.32 - Architecture Candidate Synthesis
+
+> **Type:** Architectural pattern
+> **Status:** Draft
+> **Normativity:** Normative unless explicitly marked informative
+
+### C.32:1 - Problem frame
+
+Use this pattern when a practitioner has a grounded `ArchitectureOf@Context` question and needs to synthesize several candidate architecture configurations across selected structures before comparison, archive or front-policy work, publication of a selected set, or decision.
+
+Primary working reader: an architect or architecture-responsible practitioner preparing alternatives for one described holon before comparison, selection, publication of a selected set, local choice, or project decision.
+
+Typical entry phrases:
+
+```text
+"The functional structure is clear, but module allocation and placement change the trade-off."
+"One platform proposal improves reuse and worsens evidence or control burden."
+"A search or workshop produced options; which selected structures and architecture characteristics do they change?"
+"We need a candidate palette with structurally different architecture configurations before choosing one."
+"The architecture of the team or tool that changes the target holon no longer fits the target architecture."
+```
+
+**First-minute use slice.** A regulated product-family team has a grounded `ArchitectureOf@Context` for a field device family. The work question is synthesis: how should required functions, constructive modules, field placement, control responsibility, and certification evidence be coordinated so maintainability, substitutability, latency, and evidence reuse stay acceptable? Using C.32, the practitioner first builds a synthesis structure map, then records three candidate configurations: one shared module grammar with tighter evidence scope, one product-family split with lower interface burden, and one bounded exception that keeps the existing module split but changes evidence responsibility and reopen trigger. The team now has candidate architecture configurations under declared characteristics, not one attractive platform proposal.
+
+The primary `EntityOfConcern` is the local candidate architecture palette for one synthesis question over `ArchitectureOf@Context`. The described holon can be a system, product family, organization, method family, discipline, cultural practice, evidence-bearing practice, AI-agent setup, built asset, or another admitted holon kind when the governing FPF pattern admits that use. C.32 is not software-system architecture by default; software-system sources are one source family and one domain example.
+
+What goes wrong if C.32 is missed: the team optimizes one visible structure, such as modules, placement, team responsibility, control relation, or evidence package, and then treats that local improvement as architecture synthesis. The competing structures, architecture characteristics, losses, and alternatives disappear before they can be compared.
+
+What C.32 buys in practice: a practitioner can build a small set of candidate architecture configurations, each grounded in selected structure changes, architecture characteristics, known losses, and receiving patterns.
+
+Ordinary working move: name the selected structures that really change, name the few architecture characteristics that make the trade-off real, then write two to five candidate configurations with gain, loss, preserved structure, hidden loss, and next receiving use.
+
+Adoption test: after using C.32, another practitioner can see at least two structurally different candidate configurations, the selected-structure changes, the architecture characteristics under pressure, each gain and loss, the source-return condition, and the next receiving use.
+
+Use C.32 only for candidate palette construction. Do not use it to ground the architecture claim, recover one structure, build characteristic criteria rows, design eval programs, handle transformer correspondence, run archive or front-policy work, publish a selected set, choose locally, or decide the project architecture.
+
+Common exits by claim kind:
+
+- `C.30` grounds the architecture claim; `C.30.ASV`, `A.6.F`, and `A.6.M` recover structural views, function wording, and module-interface relations.
+- `C.32.HCS`, `C.32.ACS`, `C.32.ACE`, `C.25`, `C.31`, `C.31.ASAP`, and `C.16` govern starter heads, project criteria rows, eval programs, Q-Bundles, modularity or scale-preference claims, and measurement.
+- `C.32.MLAO`, `C.32.CONWAY`, `C.32.FAIL`, and `C.29` govern residual-reducing frames, transformer-transformed correspondence, candidate repair, and mathematical-lens use.
+- `A.19.CPM`, `A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, `C.11`, and `C.32.PAD` govern comparison, selection, archive, front, publication of a selected set, local choice, and decision work.
+- `C.30.AD`, `E.17`, `E.24.PUB`, `A.10`, and `B.3` govern architecture-description, publication-face, evidence, and assurance claims.
+
+The first useful output is `CandidateArchitecturePalette@Project`. It is the project working record for candidate-palette construction. The name does not introduce a new `U.*` kind, and the record does not carry selection, publication, evidence, assurance, or decision authority.
+
+For a first pass, fill only the described holon, bounded context, synthesis question, synthesis structure map, live architecture-characteristic rows, candidate configurations, and palette stop condition. Add optional refs only when they change the next use of the palette:
+
+```text
+CandidateArchitecturePalette@Project:
+  describedHolonRef:
+  boundedContextRef:
+  synthesisQuestion:
+  architectureSynthesisFrameRef?:
+  synthesisStructureMap:
+    - structureKindRef:
+      selectedStructureRef?:
+      contributionToSynthesis:
+      constraintOrAffordance:
+      governingPatternRef:
+      sourceReturnCondition?:
+  architectureCharacteristicCriteriaSetRef?:
+  architectureCharacteristicCriteriaRowRefs:
+  qBundleRefs?:
+  characteristicImprovementCycleRef?:
+  architectureIdealityPressureRef?:
+  scaleAmenabilityPolicyRef?:
+  functionBearerFeasibilityRef?:
+  candidateArchitectureConfigurations:
+    - candidateId:
+      candidateName:
+      selectedStructureChanges:
+        - structureKindRef:
+          selectedStructureRef?:
+          changeMade:
+          governingPatternRef:
+      affectedArchitectureCharacteristicRefs:
+      affectedCriteriaRowRefs?:
+      architectureCharacteristicEvalResultRefs?:
+      qBundleRefs?:
+      expectedArchitectureGain:
+      knownArchitectureLoss:
+      constraintFit:
+      preservedStructure:
+      lostOrHiddenStructure:
+      sourceCueRefs?:
+      sourceSideReferent?:
+      sourceReturnCondition:
+      nextUse:
+  tradeoffFrontOrArchiveRef?:
+  evolutionWindowRef:
+  transformerTransformedCorrespondenceRef?:
+  paletteStopCondition:
+```
+
+### C.32:2 - Problem
+
+Architecture synthesis is the constructive middle of architecture work. A practitioner may already know the described holon, bounded context, some selected structures, and some concerns, but still need to configure those structures together before later comparison or decision can be honest.
+
+The typical synthesis problem is multi-structure. Required functions or effects must be borne by candidate modules, roles, work methods, control relations, transformation-flow structures, placement structures, information structures, or evidence structures. A control relation can improve supervision while increasing timing or accountability burden; an information structure can improve maintenance access when exposed through a digital-twin view while still hiding source-return loss; a team structure can improve flow while failing to match module or deployment structure.
+
+A functional architecture is not enough by itself. A function graph, use case decomposition, workflow, neural cell graph, method step, or cultural practice function can enter architecture synthesis only after a possible bearer is named. If no admitted module, role, method, resource, placement, control relation, or evidence structure can carry the required function under current constraints, the candidate must be repaired before it enters comparison, selection, local choice, or decision work.
+
+The typical synthesis problem is also multi-characteristic. Architecture characteristics such as cohesion, coupling, substitutability, evidence reuse, work repeatability, latency, locality, control separation, source-return cost, and composite quality families often compete. Functional demands describe what the holon is to do; architecture characteristics describe whether the selected structures make those demands maintainable, controllable, evolvable, replaceable, inspectable, and otherwise acceptable in the current context.
+
+One recurring candidate-generation heuristic is idealization: ask whether an existing selected structure or resource can carry an additional required function, whether a support bearer can disappear, or whether a more general scale-amenable bearer can replace several special bearers. Admit that heuristic only as a candidate. The candidate must name the functions transferred to a bearer, the bearer removed or generalized, the architecture characteristics improved and worsened, and any BLP scale window or waiver when scale advantage is claimed.
+
+C.32 makes the constructive translation explicit. It creates a small palette whose candidates answer: which selected structures are configured together, which architecture characteristics improve or worsen, which constraints remain admissible, what source detail must remain recoverable, and which receiving pattern governs the next use.
+
+### C.32:3 - Forces
+
+| Force | Tension |
+|---|---|
+| Decision pressure | Teams want one answer before the alternatives are explicit. |
+| Candidate plurality | Several plausible variants may be useful for different reasons. |
+| Source richness | Source cues can suggest candidate work without governing the architecture claim. |
+| Compression risk | A short palette can hide source distinctions needed later. |
+| Neighboring claim patterns | Front, G.5 publication, local choice, evidence, assurance, and decision claims are admissible only through receiving patterns after the architecture content is shaped. |
+
+### C.32:4 - Solution
+
+Create an `ArchitectureSynthesisFrame@Project` when the selected structures and characteristics are not yet visible enough. The frame is a temporary visibility aid for C.32 use; the palette remains the first useful output. Then create a `CandidateArchitecturePalette@Project`. Treat the palette as a small constructive object over selected structures of a described holon, not as a checklist, not as a decision, and not as a published selected set under `G.5`.
+
+Work in seven steps:
+
+1. Anchor the palette to one described holon or holon family, bounded context, and synthesis question.
+2. Build the smallest useful synthesis structure map. Start with the declared functional demand, constructive module or manufacture structure, and placement or deployment structure when they shape the question; add control, transformation-flow, work, role, information, evidence, scale, or other selected structures only when they change the synthesis question. For each required function, name at least one admissible bearer under the declared constraints.
+3. Reference the architecture-characteristic criteria rows and any Q-Bundle slots that make the trade-off real. Separate functional demand, architecture characteristics, criteria rows, eval results, and decisions.
+4. Generate candidate architecture configurations. Each candidate may change decomposition, allocation, function bearing, bearer count, placement, interface grammar, control relation, transformation-flow relation, work method, role responsibility, evidence scope, information structure, or bounded exception.
+5. For each candidate, state selected structure changes, expected architecture gain, known architecture loss, constraint fit, preserved structure, lost or hidden structure, and source-return condition.
+6. When a front, archive, search result, or pool-treatment policy is being used, cite `C.18`, `C.19`, or NQD and OEE support as generation or retention support only. Keep the C.32 candidate content separate from archive work, front membership, pool treatment, publication of a selected set, and local choice.
+7. Stop when the palette contains the fields required by the receiving pattern for comparison, C.18 or C.19 front-policy use, publication of a selected set, local choice, decision, or repair.
+
+The synthesis structure map is not an audit checklist. It is the small set of structures that actually changes the candidate configuration.
+
+**Architecture-characteristic improvement loop.** C.32 is one turn in a continuing improvement cycle over architecture characteristics, not a one-shot search for final form. The practitioner starts with characteristic pressure or criteria rows from `C.32.ACS`, `C.31`, `C.25`, `C.16`, `C.16.P`, `C.31.ASAP`, or a local Q-Bundle; synthesizes candidate selected-structure changes; and records which criteria rows are expected to improve and which protected rows may worsen.
+
+`ArchitectureCharacteristicImprovementLoop@Project` is a local feedback record for reopening C.32 synthesis when characteristic pressure changes. It is not an E.23 method, an ACE eval program, a comparison rule, a selection result, or a decision.
+
+Keep each receiving claim with its own pattern.
+Criteria rows stay with `C.32.ACS`; Q-Bundles with `C.25`; scale preference with `C.31.ASAP`; measurement with `C.16`; eval programs and eval results with `C.32.ACE`.
+Improvement-question framing and repeated-improvement method stay with `E.22` or `E.23`.
+Comparison, set-returning selection, selected-set publication, local choice, and project architecture decision stay with `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, `C.11`, and `C.32.PAD`.
+C.32 only consumes the changed characteristic pressure and produces the next candidate palette.
+Open the next synthesis question from the resulting eval result, front relation, retained alternative, rejected candidate, or source-return trigger.
+
+An eval result that cohesion improved, evidence reuse decayed, coupling changed, latency worsened, or exception growth changed does not choose an architecture. C.32 can use it as feedback only after the bearer, criteria row, scale or qualitative reading frame, selected structures, parity frame, and receiving pattern use are recoverable.
+
+```text
+ArchitectureCharacteristicImprovementLoop@Project:
+  describedHolonRef:
+  currentArchitectureCharacteristicPressureRefs:
+  architectureCharacteristicCriteriaSetRef?:
+  architectureCharacteristicCriteriaRowRefs?:
+  synthesisQuestion:
+  candidatePaletteRef:
+  architectureCharacteristicEvalResultRefs?:
+  changedSelectedStructureRefs:
+  improvementClaimGoverningPatternRef: C.32.ACS | C.32.ACE | C.31 | C.25 | C.16 | C.16.P | C.31.ASAP | other receiving pattern
+  nextSynthesisQuestion?:
+  sourceReturnCondition:
+```
+
+| Synthesis role | Typical selected structure | What it contributes | First receiving pattern |
+|---|---|---|---|
+| Functional demand | `FunctionalStructure` | A.6.F-recovered functional demands, dependencies, constraints, and candidate bearer pressure. | `C.30.ASV`, `A.6.F`, `C.30.TFS-REL` when flow relation is current. |
+| Constructive bearer | `ModuleInterfaceStructure`, material, manufacturing, or component relation. | Candidate modules, interface grammar, substitutability, variation slots, and fabrication burden. | `A.6.M`, `C.31`, `C.30.ASV`. |
+| Placement and locality | `PlacementDeploymentStructure` or `MaterialSpatialStructure`. | Location, latency, access, environment, maintenance, and source-return burden. | `C.30.ASV`, domain pattern when current. |
+| Control and flow | `ControlStructure` and `TransformationFlowStructure`. | Feedback, supervisor relation, rate, flow relation, crossing, and transformation relation. | `C.30.LCA`, `E.18`, `C.30.TFS-REL`, `C.27` when timing is current. |
+| Work, role, information, and evidence | Work-method, allocation-responsibility, information, and evidence structures. | Enactment burden, responsibility, data custody, evidence reuse, assurance pressure, and source return. | A.15 family, `A.10`, `B.3`, `C.25`, `C.31` when those claims are current. |
+
+Candidate architecture changes are local C.32 entries for candidate configurations. They are not FPF work occurrences, method steps, or receiving-pattern claims. A change is admissible only when the selected structure being changed is named.
+
+| Architecture-change kind | Constructive use | Minimum repair against overread |
+|---|---|---|
+| `configurationSynthesis` | Coordinate several selected structures into one candidate architecture configuration. | State the synthesis structure map and architecture characteristics before claiming improvement. |
+| `functionalAllocationChange` | Change which candidate bearer, module, role, method, or work structure carries a required functional demand. | Keep functional demand, bearer, module, role, and work as distinct relations. |
+| `functionBearerFeasibilityRepair` | Repair a candidate whose functional structure names a required function that no admitted bearer can perform under module, placement, resource, control, or evidence constraints. | Add or change a bearer, split the function, change placement or resource access, change control responsibility, reduce the functional demand, or reject the candidate. |
+| `functionBearerConsolidation` | Transfer a required function onto an existing selected structure, remove a support bearer, or propose one more general bearer for several functions. | State the functions transferred, the bearer removed or generalized, the affected architecture characteristics, the lost options, and the BLP scale window or waiver when scale advantage is claimed. |
+| `structuralSubstitution` | Replace one selected structure with another candidate structure. | State what is preserved and what is lost. |
+| `relationRetargeting` | Change an affected relation endpoint, responsibility relation, role relation, dependency relation, admissible-use boundary, or source-return relation. | Name the relation kind or boundary before using the change in a candidate. |
+| `transformerTransformedCorrespondenceSynthesis` | Coordinate candidate structures when a holon that changes another holon constrains the changed holon's architecture. | Open `C.32.CONWAY`; name the changing relation, transformer-side selected structure, transformed-side selected structure, affected architecture characteristics, expected gain, known loss, and receiving pattern. |
+| `decompositionOrAllocationChange` | Reallocate module, role, work, evidence responsibility, data custody, control responsibility, or variation slot across structures. | State the new boundary and migration burden. |
+| `placementOrDeploymentChange` | Change locality, deployment, material placement, installation, or maintenance access. | Name the affected structure and the latency, access, source-return, or environment burden. |
+| `flowOrControlVariant` | Change transformation flow, control depth, rate band, feedback boundary, or mediator relation. | State the timing, control, observability, or accountability burden created by the change. |
+| `interfaceGrammarChange` | Narrow, split, widen, or stabilize an interaction boundary. | Apply `A.6.M` when module-interface relation repair is current. |
+| `declaredScopeOrHolonLevelChange` | Split, merge, add, or remove a declared holon-level reference, declared scope, evidence scope, work-method scope, or aggregation scope. | Name the affected reference, use `C.30.STRAT` when the wording is only a stratification term, and use `B.2` only when whole reidentification is current. |
+| `boundedException` | Keep a residual because removing it costs more than it buys now. | State the exception, reopen trigger, and next governing pattern if later source use or decision use expands. |
+
+**Didactic mini-slices.** Use these as examples of the kind of work C.32 expects, not as domain-specific templates.
+
+| Situation | First C.32 step | Candidate repair |
+|---|---|---|
+| A sterilization function is placed in a shared field module, but the field placement has no power and no certified evidence relation for that heat cycle. | Keep the functional demand separate from the module and placement structures. | Add a local certified bearer, split the function into pre-field and field steps, change placement, or reject the shared-module candidate. |
+| An ML functional graph includes retrieval, planning, and action, but no module-interface relation or role relation carries evidence-refresh responsibility or admissible-use control. | Treat the graph as functional structure and recover module-interface, evidence, and control structures. | Add a retrieval service with explicit evidence-refresh responsibility, add a supervisor relation, narrow model-interface behavior, or reject the candidate. |
+| A method family says the review function is automated, but no role or method structure can carry accountability for exceptions. | Recover method structure, role-enactor structure, and evidence structure separately. | Add an exception role, split the method step, change evidence scope, or keep the automation as source cue only. |
+
+When the architecture being synthesized belongs to a holon that changes another holon, use `C.32.CONWAY` before using Conway, mirroring, or inverse-Conway language in candidate synthesis. The practitioner names the changing relation, the transformer holon, the transformed holon, selected structures on both sides, architecture characteristics under pressure, candidate changes, expected gains, known losses, and source-return conditions.
+
+The C.32 side keeps the candidate palette. `C.32.CONWAY` carries the correspondence frame. Transformation, work, transformation-flow, and module-interface claims belong to `A.3.4`, `E.18`, `A.15`, `C.30.TFS-REL`, or `A.6.M` when current. Structural-similarity or preservation claims belong to `C.29` when they are current.
+
+A richer dossier is optional. Open it only when one candidate must carry source views, relation notes, measurements, C.29 lens outputs, evidence notes, or failure repairs that affect the next architecture use. Ordinary C.32 use should remain one row per candidate configuration.
+
+**Downstream use.** C.32 prepares architecture-specific candidate content. Publishing a selected set belongs to `G.5`. A fixed local choice belongs to `C.11`. A project architecture decision belongs to `C.32.PAD`. Archive, front, pool-treatment, or generation policy belongs to `C.18` or `C.19` when that claim is being made. Architecture-description or publication-face work belongs to `C.30.AD`, `E.17`, or `E.24.PUB`.
+
+**Stop condition.** Stop C.32 when the palette can support the next use without hiding the selected structures, architecture-change kind, architecture gain, architecture loss, constraint fit, source-return condition, or receiving pattern.
+
+**Lowering condition.** Lower the record out of C.32 use when the needed architecture claim is not grounded, the item is only a source artifact, only one configuration is visible, the candidate lacks selected-structure change, the functional demand has no feasible bearer, the architecture gain or loss is unnamed, or the next use is already comparison, selection, publication of a selected set, local choice, decision, evidence, or assurance. Return to `C.30` for grounding, to the source or description pattern for source artifacts, to `C.32.FAIL` for candidate repair, and to the named receiving pattern when the downstream claim is current. Reopen C.32 when a criteria row, eval result, retained alternative, front relation, source-return trigger, or source-currentness change alters the selected structures under pressure or the acceptable loss profile.
+
+### C.32:5 - Worked Architecture Cases
+
+| Grounded working case | Synthesis question | C.32 candidate work | Stop condition |
+|---|---|---|---|
+| Regulated product family with growing field exceptions | How should functions, module interfaces, placement, and evidence scope be configured so substitutability and certification burden stay acceptable? | Prepare candidates that narrow interface grammar, split the family by evidence scope, change placement responsibility, or keep a bounded exception with source return. | Stop at palette unless G.5 publication of a selected set, assurance, or architecture decision is current. |
+| Built-asset digital-twin handover where a method-defined digital-twin view hides source loss | Which selected structures do the digital-twin dimensions actually describe, and which source-return obligations must survive maintenance use? | Prepare candidates that split information view, add source-return scope, retarget maintenance responsibility, or change module and placement structure. | Stop before built-asset architecture-description, MVPK publication-face, or A.10 evidence-relation claims unless `C.30.AD.BA`, `E.17`, `E.24.PUB`, or evidence patterns are current. |
+| Emergency-department triage practice whose local desk is fast but hospital-wide escalation is brittle | How should role-enactor, procedural-work, control, and evidence structures be configured so speed does not erase escalation adequacy? | Prepare candidates that retarget escalation responsibility, add a mediator role, split triage scope by patient class, or adjust evidence capture. | Stop before ethical mediation, evidence, or staffing decision unless those claims are current. |
+| AI-agent review setup where local autonomy conflicts with policy scope | How should control, module-interface, evidence-refresh, and work-method structures be configured so autonomy and policy conformance stay jointly acceptable? | Prepare candidates that add supervisor relation, narrow model interface behavior, change evidence refresh cadence, or alter work-method responsibility. | Stop before safety, release, gate, or causal claims unless their governing patterns are current. |
+| Method family whose reusable template speeds authoring and slows review | How should method structure, authored-section structure, review evidence, and role responsibility be configured so repeatability does not create hidden review residue? | Prepare candidates that split method variants, add review evidence scope, retarget role responsibility, or accept bounded local method residue. | Stop before method governance, curriculum decision, description use, or publication-face use unless the receiving pattern is current. |
+
+### C.32:6 - Architecture Trade-Off Failure Modes
+
+| Failure mode | C.32 repair action |
+|---|---|
+| **Local structure win hides other-scope loss** | A module split, control placement, evidence scope, or team responsibility change helps one concern while worsening another architecture characteristic. Rebuild the synthesis structure map and record the gained and lost characteristics before comparison. |
+| **Function and architecture characteristic collapse** | The candidate is argued from user-visible function while evolvability, coupling, cohesion, latency, evidence burden, or another architecture characteristic remains unnamed. Recover the function through `A.6.F` or the structural-view pattern, then name the architecture characteristic separately. |
+| **Function without feasible bearer** | A functional architecture, workflow, method step, or searched graph asks for a function that no admitted module, role, resource, placement, control relation, or evidence structure can carry. Repair the bearer set before admitting the candidate. |
+| **No real trade-off** | Only one configuration is visible, or alternatives differ only by description. Generate structurally different candidates, or state why the project work is not architecture synthesis and return to the direct governing pattern. |
+| **Description artifact stands in for candidate content** | A diagram, ADR, view, dashboard, benchmark output, or digital-twin view is the visible work product, but the selected structures and architecture-characteristic trade-off are still missing. Keep the visible work product under description-use, C.29 mathematical-lens use, benchmark, publication, or source-use governance and recover candidate content before C.32 use. |
+| **Front member treated as durable optimum** | A front member, local winner, or benchmark leader is used as if the evolution window will stay fixed. Record evolution window, source-return condition, and retained alternatives through C.18 or C.19; use G.5 only when publishing a selected set after the receiving pattern has made that set available. |
+| **Software-source overfit** | A software architecture source supplies a useful architecture-change idea, but the described holon is not a software system. Translate only the change over selected structures and characteristics; do not import the software ontology. |
+| **Transformer-side architecture omitted** | The candidate architecture for a changed holon cannot be built, tested, deployed, certified, or evolved by the declared changing holon. Open `C.32.CONWAY` and prepare transformer-side change, transformed-side change, joint change, and bounded mismatch as candidate alternatives or comparison inputs. |
+| **Method-defined dimensions lose their semantics** | A BIM, digital-twin, or view-method dimension already carries method-defined structure, constraint, cost, schedule, use-phase, or maintenance semantics, but the synthesis text keeps only the dimension name or dimension count. Preserve the method semantics and map them to selected structures, constraints, characteristics, and source-return conditions. |
+| **Ideality shortcut** | Fewer bearers, fewer modules, or one universal module is only a candidate direction until functions, architecture characteristics, scale window, safety, admissibility, and losses are named. |
+
+### C.32:7 - Conformance Checklist
+
+| ID | Requirement | Purpose |
+|---|---|---|
+| `CC-C32-1` | The use names one synthesis question, described holon, and bounded context. | Keeps the palette local. |
+| `CC-C32-2` | The synthesis structure map names the smallest useful set of selected structures and governing patterns. | Prevents one-structure optimization from masquerading as synthesis. |
+| `CC-C32-3` | Architecture characteristics and any quality bundles are named before candidate comparison. | Keeps functional demand distinct from architecture trade-offs. |
+| `CC-C32-4` | Each candidate configuration names selected structure changes, expected gain, known loss, and constraint fit. | Makes the candidate actionable. |
+| `CC-C32-5` | Compressed, generated, or view-derived candidates carry a source-return condition. | Keeps later source-use or decision-use claims tied to recoverable sources. |
+| `CC-C32-6` | Archive, front, pool-treatment, G.5 publication, local choice, and decision uses have named receiving patterns. | Keeps synthesis separate from downstream receiving claims. |
+| `CC-C32-7` | Worked slices show what changes in practice across multiple selected structures. | Keeps the pattern constructive. |
+| `CC-C32-8` | If a changing holon constrains the changed holon's architecture, `C.32.CONWAY` is opened before Conway, mirroring, or inverse-Conway language is used as guidance. | Keeps transformer-side and transformed-side architectures distinct while making correspondence synthesis constructive. |
+
+### C.32:8 - Common Repair Cues
+
+| Repair cue | Symptom | First repair |
+|---|---|---|
+| `SingleStructureSynthesis` | One structure is optimized and the result is called the architecture. | Build the synthesis structure map and name the architecture characteristics before admitting the candidate as C.32 work. |
+| `UserFunctionAsArchitectureCharacteristic` | The user-visible function is treated as the architecture quality being optimized. | Recover the functional demand through `A.6.F` or `C.30.ASV`; then name the architecture characteristic or quality bundle separately. |
+| `FunctionNoFeasibleBearer` | A functional architecture names a required function, but no admitted module, role, method, resource, placement, control relation, or evidence structure can carry it. | Repair with `functionBearerFeasibilityRepair`: add or change a bearer, split the function, change placement or resource access, change control responsibility, reduce the demand, or reject the candidate. |
+| `DescriptionFormAsArchitecture` | An architecture-description artifact is treated as the architecture because it is the most visible representation. | Keep the visible work product under `C.30.AD`, `C.30.ASV`, `E.17`, `E.24.PUB`, `C.29`, or source-use governance as applicable; recover described holon, selected structures, candidate architecture change, and characteristic bundle before admitting any C.32 candidate. |
+| `BenchmarkWinnerAsArchitecture` | A comparison result is treated as architecture selection. | Treat the result as comparison input or as source material for an A.10 evidence relation when that claim is current; admit a C.32 candidate only after selected structure, architecture-change kind, gain, loss, and receiving pattern are recovered. |
+| `MethodDimensionSemanticsLost` | A BIM, digital-twin, or architecture-view method supplies dimensions, but C.32 use keeps only the dimension name or dimension count and loses the method's structure, constraint, schedule, cost, use-phase, or maintenance semantics. | Preserve the source method semantics, then map each method-declared dimension to selected structures, constraints, preserved and lost structure, architecture characteristics, and source-return condition. |
+| `TransformerTransformedMismatch` | The architecture of the holon doing the changing cannot produce, test, maintain, evolve, or certify the architecture desired for the changed holon. | Open `C.32.CONWAY`; recover the changing relation through `A.3.4`, `E.18`, work, or method patterns; generate candidates that change the transformer side, the transformed side, both sides, or a bounded mismatch. Use `C.29` only if structural similarity is claimed. |
+| `ShortlistByName` | A set is called shortlist before the fields required by `G.5` publication exist. | Keep it as a local palette or open `G.5`. |
+| `UniversalBearerAsArchitecture` | A universal module, general substrate, or existing resource is treated as better architecture by name. | Create a C.32 candidate that names functions transferred to the bearer, bearer count change, coupling change, evidence burden, control burden, safety and admissibility boundary, and BLP scale window or waiver if scale advantage is claimed. |
+| `SourceCompressionNoReturn` | A candidate hides source distinctions. | Add a source-return condition or demote the item to a source cue. |
+
+### C.32:9 - Consequences
+
+| Positive consequence | Cost or trade-off |
+|---|---|
+| Candidate architecture configurations are visible before local choice or decision. | Losses and constraint fits must be named earlier. |
+| Architecture-characteristic improvement is handled as iterative architecture work. | Each iteration must say which characteristic pressure changed, which selected structures were changed, which reading or feedback is admissible as synthesis input, and what source-return condition opens the next synthesis question. |
+| Multi-structure synthesis is reviewable. | The practitioner must keep functions, modules, placement, control, work, evidence, and other selected structures distinct when they matter. |
+| Architecture characteristics and quality bundles are recorded as comparison inputs for the receiving pattern. | The palette may need characteristic repair through `C.25`, `C.31`, `C.16`, or later comparison handling through `A.19.CPM`, `C.11`, `A.19.SelectorMechanism`, or `G.5` when those claims are being made. |
+| Holonic architecture breadth is preserved. | Examples and candidates must name the described holon and selected structures instead of using domain defaults as unstated selected structures. |
+| Source cues can inform architecture work without importing source-domain ontology. | Source-side expressions require recovery of referent, selected structure, architecture-change kind, and source-return condition. |
+| Downstream G.5 publication and architecture-decision work stay cleaner. | The team must open the receiving pattern when it wants to publish a selected set, make a local choice, or decide the project architecture. |
+| Evolutionary and search practices are usable without hidden single-winner optimization. | The palette may need retained alternatives even when one candidate looks convenient. |
+
+### C.32:10 - Rationale
+
+Architecture practice needs a pattern between a grounded architecture question and an architecture decision. `C.30` can ground the architecture question over selected structures of a described holon. `C.30.ASV`, `A.6.F`, `A.6.M`, `C.30.LCA`, `C.30.TFS-REL`, `C.25`, and `C.31` can recover the particular structures and characteristics. Front patterns, `G.5` publication of a selected set, `C.11` local choice, and decision patterns can later govern downstream set treatment and project decisions.
+
+C.32 governs the constructive middle: building a small set of candidate architecture configurations whose selected structures, allocations, characteristic trade-offs, known losses, source-return conditions, and receiving patterns are explicit.
+
+The same middle repeats during improvement. A later criteria-row change, scale-row change, C.16 reading, C.25 or C.31 pressure change, C.31.ASAP scale-preference change, or C.18 or C.19 front, archive, or retained-alternative relation can reopen C.32 when it changes the architecture-characteristic pressure, the selected structures under stress, or the acceptable loss profile. C.32 then synthesizes another candidate palette; it does not turn the trigger into a decision.
+
+The nontrivial work is not to warn against every possible confusion. The work is to make synthesis real enough that architecture content is available for a later front, comparison, publication of a selected set, or decision.
+
+### C.32:11 - SoTA-Echoing
+
+These rows document transfers from source practice into C.32. Each row states which C.32 field, repair row, boundary, or worked case the draft sets or revises from the source, and where a reader can inspect that source line. Software-system sources are used as lineage and domain examples only; they do not narrow C.32 to IT architecture.
+
+| Source to inspect | Why this source is load-bearing here | Transfer into C.32 | Concrete C.32 mutation | Blocked overread |
+|---|---|---|---|---|
+| Architecture synthesis and quality-attribute optimization: Di Pompeo and Tucci 2023 (`https://arxiv.org/abs/2301.07516`), ATRAF 2025 (`https://arxiv.org/abs/2505.00688`), and current FPF `C.32.HCS`, `C.32.ACS`, `C.32.ACE`, `C.25`, `C.31`, `C.16` | Current architecture optimization line: quality attributes and architecture characteristics compete, and multi-objective treatment gives the architect a trade-off view instead of one scalar winner. | Make candidate configurations name ACS criteria rows and Q-Bundle slots before comparison, and use ACE eval results as feedback for the next synthesis question only through the receiving pattern. | `CandidateArchitecturePalette@Project` now includes `architectureCharacteristicCriteriaSetRef?`, `architectureCharacteristicCriteriaRowRefs`, `qBundleRefs?`, `affectedCriteriaRowRefs?`, `architectureCharacteristicEvalResultRefs?`, `constraintFit`, and `tradeoffFrontOrArchiveRef?`; Problem separates functional demand from architecture characteristics. | A user function, metric, benchmark, scalarized score, eval result, or apparent improvement is not architecture synthesis, comparison, project architecture decision, or improvement-cycle closure. |
+| DSM, multiple-domain matrix, and current DSM modularization research, including Jiang and Luo 2026 (`https://arxiv.org/abs/2604.28018`) | DSM modularization remains a strong engineering-design line. Current LLM-based DSM work also shows a concrete semantic-alignment risk: functional priors and structural modularization objectives can diverge. | Use DSM or clustering as one candidate-generation and inspection source; recover selected structures, structural objective, and engineering semantics before treating the result as architecture-synthesis material. | Solution adds `synthesisStructureMap`; candidate work coordinates functional, constructive, placement, control, work, information, and evidence structures rather than accepting a cluster as architecture. | A cohesive cluster, graph partition, or generated modularization is not architecture adequacy by itself. |
+| Current FPF architecture kernel: `A.22`, `C.30`, `C.30.ASV`, `C.30.ILC`, `C.31`, `C.31.ASAP`; architecture source section 15.3 | This is the current local architecture law for holonic architecture: selected structures of a described holon in a bounded context remain primary. | Use SoTA and domain sources only after recovering described holon, synthesis structure map, architecture criteria rows, selected structure changes, gain, loss, and receiving pattern. | `CandidateArchitecturePalette@Project` now requires `synthesisStructureMap`, architecture-characteristic criteria rows, selected structure changes, `constraintFit`, preserved and lost structure, source-return condition, and `nextUse`; worked cases cover heterogeneous holon kinds. | Diagrams, source expressions, software-system templates, and platform proposals remain source cues until the described holon, selected structures, architecture criteria, gain, loss, and receiving pattern are recovered. |
+| ISO 42010:2022 architecture-description standard (`https://www.iso.org/standard/74393.html`) | Current architecture-description standard. It is load-bearing because C.32 must not confuse architecture, description, view, viewpoint, concern, correspondence, or model kind. ISO also states that architecture itself is outside the AD standard's subject. | Treat architecture-description artifacts as source cues or architecture-description material until a candidate selected-structure change is recovered. | C.32 fields distinguish source cues, source-side referents, selected structures, and architecture characteristics; the Relations section names `C.30.AD` or `C.30.ASV` for description or view repair, and `E.17` or `E.24.PUB` for publication-face use, when current. | An architecture-description artifact or publication face is not a candidate architecture by itself. |
+| Ford, Parsons, Kua, and Sadalage, `Building Evolutionary Architectures`, 2nd ed.; overview at `https://evolutionaryarchitecture.com/` and O'Reilly page `https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/` | Best current practitioner line for architecture as guided incremental change over declared architecture characteristics, affected selected structures, and feedback from source-side fitness functions. | Add evolutionary candidate discipline: reversible first step where useful, affected criteria row, ACE eval result, source-return trigger, next synthesis question, and no source-term takeover. | Solution and SoTA rows now say source-side fitness-function practice is restored through `C.32.ACE` as eval programs over ACS rows; candidate rows can name `affectedCriteriaRowRefs?`, `architectureCharacteristicEvalResultRefs?`, next synthesis question, and source-return condition; measurement claims belong to C.16. | Eval results need a receiving comparison, local choice, or governance pattern before they affect preference or start the next synthesis iteration. |
+| Shaw and Petre, `Design Spaces and How Software Designers Use Them` (`https://arxiv.org/abs/2407.18502`); Cortellessa, Diaz-Pace, Di Pompeo, Tucci, `Towards Assessing Spread in Sets of Software Architecture Designs` (`https://arxiv.org/abs/2402.19171`) | Current research line for design alternatives and architecture-space diversity. It repairs the common error of judging only objective-space scores while losing architectural differences. | Preserve a candidate palette when one scalar winner would hide structurally different alternatives; distinguish objective-space signals from selected-structure differences. | C.32 keeps candidate plurality until `G.5`, `C.11`, or a `C.32.PAD` project architecture decision relation is current; each candidate must name selected structure, architecture-change kind, gain, loss, and hidden or preserved structure. | A Pareto front, score, spread indicator, or generated set does not select the architecture and does not replace architecture-space inspection. |
+| MOSA and open-system engineering from `C.31.RSA` (`https://www.cto.mil/sea/mosa/`; `https://www.cto.mil/wp-content/uploads/2025/03/MOSA-Implementation-Guidebook-27Feb2025-Cleared.pdf`); product-line variability and product-platform practice from `C.31.RSA` and `C.31.ASAP` (`https://www.sei.cmu.edu/library/variability-in-software-product-lines/`; `https://arxiv.org/abs/2605.21353`; `https://link.springer.com/article/10.1007/s00163-023-00427-1`; `https://arxiv.org/abs/2510.11089`); information-hiding lineage carried by `C.31.RSA` | Current source families for modular interface conformance, substitution policy, variability slots, extension rules, exception curves, and assembly or realization constraints. Information hiding is lineage for hidden-change and implicit-dependency repair. | Use them as candidate-generation prompts: change the interface grammar, change substitution policy, move a variation slot, split evidence scope, admit a bounded exception, or consolidate a bearer. | C.32 adds `interfaceGrammarChange`, `declaredScopeOrHolonLevelChange`, and `boundedException` as architecture-change kinds; the product-family worked case prepares interface-grammar change, evidence-scope split, and bounded exception as candidate alternatives. | Before a candidate is preferred, send reusable-structure accounting to `C.31.RSA`, scale preference to `C.31.ASAP`, interface grammar to `A.6.M`, comparison to `C.16` or `A.19`, and selected-set or local-decision use to `G.5` or `C.11`. |
+| TRIZ ideality, Ideal Final Result, technical-system evolution regularities, and current FPF `C.19.1` BLP | Older heuristic lineage for increasing useful function while reducing cost, harm, and unnecessary parts; BLP supplies current FPF discipline for preferring more general scale-amenable bearers when safety and admissibility are comparable. | Use idealization only to generate candidates: transfer function to an existing bearer, remove support bearers, use available resources, or try a more general bearer as a candidate. | C.32 adds `architectureIdealityPressureRef?`, `scaleAmenabilityPolicyRef?`, and `functionBearerConsolidation`; repair cues require function-bearing, affected architecture characteristics, losses, scale window, and BLP scale window or waiver when scale advantage is claimed. | An ideal-final-result slogan, fewer modules, or one universal module is not architecture adequacy, scale adequacy, or project architecture decision. |
+| NAS survey line: Elsken, Metzen, and Hutter 2019 (`https://www.jmlr.org/papers/v20/18-598.html`); multi-objective differentiable NAS 2025 (`https://arxiv.org/abs/2402.18213`); hardware-aware NAS 2024 (`https://arxiv.org/abs/2404.12403`); Sutton's Bitter Lesson (`https://www.incompleteideas.net/IncIdeas/BitterLesson.html`) and scaling-law practice | Current ML architecture line for functional graph search under multi-objective performance, resource, hardware, and transfer constraints. It is load-bearing as a transferable synthesis technique, not as an IT ontology. | Treat functional architecture as one selected structure and require bearer feasibility across module, deployment, resource, control, information, and evidence structures before comparison. | C.32 adds `functionBearerFeasibilityRef?`, `functionBearerFeasibilityRepair`, and didactic slices where a functional graph or method step fails because no bearer can carry it under current constraints. | A neural cell graph, function graph, benchmark winner, or scale curve is not holonic architecture adequacy unless selected structures and bearers are recovered. |
+| Conway's law, mirroring, DORA loosely coupled teams (`https://dora.dev/capabilities/loosely-coupled-teams/`), and Team Topologies key concepts (`https://teamtopologies.com/key-concepts`) | Current socio-technical architecture practice for co-synthesizing the changing holon and the changed holon under independent change, test, deployment, evidence, and coordination constraints. | Treat team, work, responsibility, method, toolchain, deployment, and communication structures as transformer-side selected structures when they constrain transformed-holon architecture. Use inverse Conway only as a candidate architecture change that changes selected transformer structures. | C.32 adds `transformerTransformedCorrespondenceSynthesis`, names `C.32.CONWAY` as the correspondence-frame governing pattern, and keeps role, work, module-interface, evidence, and mathematical-lens claims with their governing patterns. | Keep transformer-side change, transformed-side change, joint change, and bounded mismatch as candidate alternatives or comparison inputs; explicit comparison, module-interface, evidence, decision, and G.5 publication claims exit to their own patterns. |
+| MAAD 2025 (`https://arxiv.org/abs/2507.21382`) and LLM-assisted ADD 2025 (`https://arxiv.org/abs/2506.22688`) | Current AI-assisted architecture design research. It is load-bearing because generated alternatives are now practical, but the research itself stresses knowledge intensity, trade-offs, evaluation, and human oversight. | Use AI outputs to widen candidate space, then recover source-side referent, selected structure, architecture-change kind, gain, loss, source-return condition, and receiving pattern before palette admission. | C.32 problem and Solution now treat generated outputs as source cues; `sourceCueRefs?` and `sourceSideReferent?` prevent generated text from carrying an architecture-adequacy authority relation. | A generated blueprint, evaluation report, benchmark, or agent consensus is not an authority relation for architecture adequacy, evidence sufficiency, assurance, gate passage, or decision. |
+
+**Source-currentness boundary.** Use each source row only for the C.32 candidate-generation move that the row transfers. If a named standard, guide, book edition, survey, or research line changes that move, recheck the row before using it again. If a receiving FPF pattern named in the row changes how it handles the source family, recheck the row before using it again. If the project needs comparison, selection, publication of a selected set, local choice, decision, evidence, or assurance, leave C.32 and open the receiving pattern. Rows named as lineage, such as TRIZ ideality, information hiding, or mature DSM lineage, stay lineage until a current source relation is recovered.
+
+### C.32:12 - Relations
+
+- **Builds on:** `C.30`, `C.30.P`, `C.30.ASV`, `A.22`, `A.6.F`, `A.6.M`, `C.32.HCS`, `C.32.ACS`, `C.32.ACE`, `C.25`, `C.31`, `C.31.ASAP`, `C.16`, `C.16.P`, `E.22`, `E.23`, `C.19.1`, `C.30.LCA`, `C.30.TFS-REL`, `E.18`, `A.3.4`, `A.15`, and local patterns for recovering source-side architecture referents.
+- **Uses:** `C.30.ILC` when a residual starts the candidate work; `C.32.MLAO` when residual-reducing multilevel framing is being used; `C.32.CONWAY` when transformer and transformed architectures must be co-synthesized; `C.32.FAIL` when a candidate needs repair before explicit comparison, selection, local choice, or decision; `C.32.ACE` when candidate eval results are needed before later comparison or selection; `C.33` when a source, description, view, decision record, eval report, handoff, or realized observation captures only part of selected structure; `C.34` when candidate or source structures need preservation adequacy or correspondence adequacy; `C.35` when generated or discovered carriers need admission support before candidate palette use; `C.29` when mathematical-lens use is being claimed.
+- **Receiving patterns:** `A.19.CPM` for explicit comparison claims, `A.19.SelectorMechanism` for set-returning selection claims, `G.5` for claims about publishing a selected set, `C.18` and `C.19` for archive, front, or pool-treatment policy, `C.11` for fixed local choice, `C.30.AD`, `E.17`, and `E.24.PUB` for architecture-description or publication-face work, and `C.32.PAD` for project architecture decisions.
+- **P2S docking:** `C.32.P2S` uses C.32 for the candidate-synthesis stages after problem pressure, selected structures, architecture characteristics, and structural uncertainty have been recovered; C.32 remains the candidate-palette owner.
+- **Boundary:** C.32 governs candidate architecture palette construction for one grounded architecture question over selected structures of a described holon. C.35 may feed C.32 with generated or discovered carrier adequacy, but C.35 does not select candidates, publish sets, or decide the project architecture. Evidence, assurance, gate, release, work authorization, method governance, ethical mediation, and causal claims use their own patterns when those claims are being made.
+
+### C.32:13 - Footer marker
+
+`C.32` governs first useful architecture candidate-configuration synthesis for one grounded architecture question. Later C.18 or C.19 front-policy, publication of a selected set, local choice, architecture-description, publication-face, decision, gate, release, and authority-relation claims use their own patterns.
+
+### C.32:End
+

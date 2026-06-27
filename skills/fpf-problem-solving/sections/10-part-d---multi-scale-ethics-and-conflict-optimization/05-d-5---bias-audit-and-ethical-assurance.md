@@ -1,0 +1,178 @@
+## D.5 - Bias Audit and Ethical Assurance
+
+> **Type:** D-family bias-audit and ethical-assurance boundary pattern
+> **Status:** Stable
+> **Pattern role:** This compact pattern owns bias, fairness, impact-audit, causal-fairness audit consumption, and ethical-assurance boundary use; it does not replace D.1 through D.4.
+
+**Use this when.** Use this pattern when a model, metric, policy, publication, decision system, recommendation, method, work plan, system, holon, or FPF claim may create bias, unfairness, human or group impact, causal-fairness overclaim, or ethical assurance risk.
+
+**Not this pattern when.** If the ethical value frame is missing, use `D.1`. If the current question is multilevel ethics entry, use `D.2`. If the current question is interlevel ethical conflict structure, use `D.3`. If the current question is mediation or decision use of that conflict, use `D.4`. If the current question is only evidence, causality, assurance, measurement, or architecture residual without bias, fairness, human or group impact, or ethical assurance, use the direct owner.
+
+**What goes wrong if missed.** A model, metric, policy, publication, or decision system passes ordinary evidence or assurance checks while representation, proxy, visibility, metric, language, or human-impact bias remains hidden.
+
+**What this buys.** Bias, fairness, human-impact, causal-fairness, and ethical-assurance concerns become auditable without replacing `D.1` through `D.4`, evidence, causal, measurement, or architecture owners.
+
+### D.5:1 - Problem Frame
+
+Bias and fairness failures often survive ordinary verification. A metric may be accurate while hiding subgroup harm. A model may be predictive while reproducing past exclusion. A policy may look neutral while moving cost to people or groups who were not represented in the evidence. A publication may look technically clear while licensing a harmful use.
+
+`D.5` keeps this audit and assurance question explicit. It does not replace multilevel ethics. It asks whether the current object and its intended use are ethically unsafe because of bias, unfairness, impact, causal fairness without the required C.28 evidence value, or assurance without the required assurance relation.
+
+### D.5:1.0 - Problem
+
+Bias, fairness, human-impact, causal-fairness, and ethical-assurance concerns can remain invisible after ordinary technical verification. The failure is to let the model, metric, policy, publication, method, work plan, system, or holon be treated as admissible for use while the audited EntityOfConcern, intended use, affected people or groups, evidence, mitigation, and residuals are not explicit.
+
+### D.5:1.1 - Forces
+
+| Force | Tension |
+| --- | --- |
+| Ordinary verification vs. subgroup harm | Evidence or accuracy can look strong while representation, proxy, metric, visibility, language, or impact bias remains current. |
+| Lightweight scan vs. consequential use | Local reversible use may need a small register, while release-bearing or repeated use needs a fuller audit report. |
+| Fairness wording vs. causal claim | Metric disparity, associative fairness, interventional fairness, and counterfactual fairness are different claims. |
+| Assurance relation vs. ethical permission | Assurance can record examined evidence and residuals, but cannot turn unresolved bias or harm into moral authorization. |
+| Audit frame vs. neighboring owners | D.5 must keep bias and ethical assurance visible without replacing evidence, causality, measurement, architecture, or D.1 through D.4. |
+
+### D.5:2 - Solution
+
+Open a `BiasAuditAssuranceFrame@Context`:
+
+```text
+BiasAuditAssuranceFrame@Context:
+  auditedEntityOfConcernRef
+  boundedContextRef
+  intendedUseRef
+  affectedPeopleOrGroupRefs?
+  affectedHolonRefs?
+  metricOrModelRefs?
+  policyOrPublicationRefs?
+  biasConcernRefs
+  fairnessClaimRef?
+  impactClaimRef?
+  causalFairnessUseRef?
+  evidenceRefs
+  assuranceClaimRefs?
+  mitigationOrConstraintRefs?
+  acceptedResidualRefs?
+  admissibleUse
+  inadmissibleOverread
+  strongerSourceReturnCondition
+```
+
+The frame is not a universal ethics owner. It is the local audit object used when bias, fairness, impact, or ethical assurance is current.
+
+### D.5:3 - Bias and Fairness Recognition
+
+| Current claim | What D.5 requires | Neighboring owner |
+| --- | --- | --- |
+| "This metric shows the system is fair." | Distinguish metric disparity, proxy choice, subgroup impact, and intended use. | `C.16` for metric construction |
+| "This intervention makes outcomes fair." | Declare the causal fairness use, C.28 evidence value, and causal-use verdict. | `C.28` |
+| "The model is unbiased." | Name represented and missing groups, data-generation limits, model-use limits, and evidence. | `A.10`, `C.16`, `D.5` |
+| "The release is ethically assured." | Separate audit findings, mitigations, accepted residuals, and the assurance or evidence relation. | `B.3`, `D.5` |
+| "The policy is acceptable because it helps the whole." | Check whether a multilevel conflict is live. | `D.2`, `D.3`, `D.4` |
+
+#### D.5:3.1 - Optional Audit Records And Depth
+
+D.5 may use a compact `BiasRegister@Context` when the live need is to keep concerns visible during ordinary work:
+
+```text
+BiasRegister@Context:
+  auditedEntityOfConcernRef
+  intendedUseRef
+  affectedPeopleOrGroupRefs?
+  biasConcernCode
+  evidenceRefs
+  mitigationOrConstraintRef?
+  acceptedResidualRef?
+  nextReviewTrigger?
+```
+
+Use a fuller `BiasAuditReport@Context` only when the object is being released, relied on by other work, exposed to affected people or groups, used for assurance, or used after a material source-currentness, population, context, model, metric, or policy change. The report is a Description episteme or publication-use object; it does not make the audited object fair by existing.
+
+Lightweight scan is enough when the intended use is local, reversible, low-impact, and the scan finds no affected group, proxy, metric, representation, causal-use, or publication-use concern. Deeper review is required when the use is consequential, repeated, automated, cross-context, externally published, safety-relevant, regulatorily or deontically constrained, or when an affected group, missing group, proxy variable, threshold, causal fairness claim, accepted residual, or assurance claim is current.
+
+#### D.5:3.2 - Compact Bias Concern Taxonomy
+
+| Code | Concern | Typical question |
+| --- | --- | --- |
+| REP | Representation, coverage, sampling, proxy choice, missing group, or shifted population. | Who or what is missing, over-weighted, proxied, or moved out of scope? |
+| ALG | Algorithmic, modeling, objective, ranking, optimization, or threshold behavior. | Which model or optimization choice changes outcomes for whom? |
+| VIS | Visibility, interface, dashboard, presentation, or publication framing. | What becomes easy to see, hard to see, or too authoritative by display? |
+| MET | Metric, measurement, scale, comparator, normalization, or threshold. | What does the metric count, hide, compare, or turn into a pass or fail claim? |
+| LNG | Language, naming, category, definition, group label, or claim wording. | Which words change what can be asserted, counted, blamed, or done? |
+
+The codes are only concern locators. They do not replace the governed object, affected people or groups, intended use, evidence, mitigation, or accepted residual.
+
+### D.5:4 - Causal Fairness Boundary
+
+A fairness claim can be associative, interventional, or counterfactual. D.5 records the ethical-audit use of that claim, but `C.28` owns the causal-use question, causality-ladder rung, estimand, identification, realizability, evidence design, `CausalEvidenceSupportBasis`, and causal-use verdict.
+
+Metric-only fallback: if only metric disparity is claimed and no causal fairness use is made, record it as metric or evaluation use. Do not add causal-fairness machinery by vocabulary alone.
+
+Fairness escalation rule: an interventional-action proxy may admit bounded interventional fairness use, but it cannot be published as counterfactual fairness without the needed C.28 evidence value and verdict.
+
+### D.5:5 - Ethical Assurance Boundary
+
+Ethical assurance is not a stamp of moral permission. It is an assurance claim that bias, fairness, impact, and accepted residuals have been examined for the current use.
+
+Use `B.3` for the assurance relation. Use `A.10` for evidence provenance and source currentness. Use `D.3` and `D.4` when the audit exposes an interlevel ethical conflict. Use `C.30.ILC` when the issue is an architecture residual rather than a bias or fairness audit.
+
+### D.5:6 - Archetypal Grounding (Worked Slice)
+
+A hiring-screening model has high aggregate accuracy and an internal note says it is "fair." D.5 first asks what fairness claim is being made. If the claim is only a metric disparity comparison, the audit records the metric, affected groups, intended use, missing evidence, and admissible use. If the team claims the model would have prevented unfair outcomes under an intervention or counterfactual, `C.28` must supply the causal-use evidence value and verdict before D.5 can treat the fairness claim as admissible for that ethical-audit use. If the audit exposes a conflict between company efficiency and applicant harm across declared scopes, `D.3` maps that conflict and `D.4` governs decision use.
+
+### D.5:6.1 - Bias-Annotation
+
+| Bias risk | Failure | Mitigation |
+| --- | --- | --- |
+| Audit as document ritual | A register or report exists but does not change intended use, residuals, or constraints. | Tie each concern to audited EntityOfConcern, intended use, evidence, mitigation, and accepted residual. |
+| Metric fairness overclaim | A metric comparison is published as causal or counterfactual fairness. | Recover the fairness claim kind and use C.28 for causal-use evidence value and verdict. |
+| Assurance as authorization | Ethical assurance is treated as permission to proceed. | Record assurance as assurance or evidence relation and keep `D.4` and `D.5` use separate. |
+| Bias category replaces object | REP, ALG, VIS, MET, or LNG code is treated as the governed object. | Use codes only as concern locators; keep audited EntityOfConcern and intended use explicit. |
+
+### D.5:7 - Conformance Checklist
+
+| ID | Requirement | Purpose |
+| --- | --- | --- |
+| CC-D5-1 | The audited EntityOfConcern, intended use, affected people or groups, bias, fairness, or impact concern, evidence refs, and admissible use are named. | Keeps audit scope inspectable. |
+| CC-D5-2 | Metric, causal fairness, evidence, assurance, publication, and architecture-residual claims use their direct owners. | Prevents D.5 from swallowing neighboring patterns. |
+| CC-D5-3 | Ethical assurance is recorded as assurance or evidence relation, not moral permission. | Keeps assurance from becoming ethical authorization. |
+| CC-D5-4 | If the audit exposes interlevel conflict, D.3 and D.4 become the owners for conflict structure and decision use. | Keeps D.5 connected to the D cluster without replacing it. |
+
+### D.5:3.3 - Common Anti-Patterns and How to Avoid Them
+
+| Anti-pattern | What goes wrong | Repair |
+| --- | --- | --- |
+| Ethics ghetto | Bias or fairness is left in a separate ethics note while the model, metric, release, publication, or work plan keeps operating unchanged. | Put the concern on the audited EntityOfConcern and its intended use, then name the mitigation, constraint, or accepted residual. |
+| Checklist charade | A checklist is completed without naming affected people or groups, evidence, current use, or residuals. | Use `BiasRegister@Context` for a light scan or `BiasAuditReport@Context` for deeper review; do not treat a blank checklist as assurance. |
+| Bias whack-a-mole | One disparity is patched while proxy, representation, metric, visibility, or language concerns move elsewhere. | Keep REP, ALG, VIS, MET, and LNG concerns visible until the admissible use and accepted residual are explicit. |
+
+### D.5:8 - Consequences
+
+This pattern keeps bias, fairness, impact, causal-fairness audit consumption, and ethical assurance from being scattered across technical patterns. It also prevents D.5 from swallowing all ethics. The cost is that teams must say which bias or fairness claim they are making. The gain is that ethical assurance becomes a typed assurance or evidence claim rather than a comforting label.
+
+### D.5:9 - Rationale
+
+`D.5` exists because bias, fairness, human-impact, causal-fairness audit consumption, and ethical assurance often survive ordinary technical checks. It keeps those concerns in one audit frame while preserving direct owners: metrics and measurement remain with measurement patterns, causal fairness remains with causal-use patterns, assurance remains an assurance relation, and multilevel ethical conflict remains with D.2 through D.4.
+
+Audit record depth is selected by use, reliance, exposure, source currentness, and residual risk. A compact register is enough for local low-impact use when no live concern remains; a fuller report is required when release, reliance, affected people or groups, source-currentness change, causal fairness, accepted residual, or assurance use is current.
+
+### D.5:10 - SoTA-Echoing
+
+| Source line | Practical implication for this pattern |
+| --- | --- |
+| Fairness and bias audit practice | Representation, proxy, metric, visibility, language, and impact concerns must be tied to intended use, affected groups, source-currentness, and accepted residuals. |
+| Causal fairness and causal inference | Associative, interventional, and counterfactual fairness claims need different evidence values and cannot be interchanged by wording. |
+| Assurance and governance practice | An assurance record can support bounded reliance, but does not grant moral permission under unresolved residual harm or replace D.3 and D.4 when interlevel conflict is exposed. |
+| FPF episteme and publication discipline | Bias registers and reports are descriptions or publication-use objects; they do not make the audited object fair by existing. |
+
+### D.5:11 - Relations
+
+- Builds on `D.1` and coordinates with `D.2`, `D.3`, and `D.4` for value frame, multilevel entry, conflict structure, and mediation or decision use.
+- Coordinates with `A.10` for evidence and source currentness.
+- Coordinates with `B.3` for assurance relation and reliance.
+- Coordinates with `C.16` for metric and measurement construction.
+- Coordinates with `C.28` for causal fairness and causal-use evidence value.
+- Coordinates with `E.17` when publication or publication-use relation changes admissible use.
+
+### D.5:End
+
