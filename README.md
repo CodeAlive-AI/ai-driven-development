@@ -18,6 +18,12 @@
 
 ---
 
+## Related Projects
+
+- [Vibe Stack](https://github.com/CodeAlive-AI/vibe-stack) — an opinionated AI-native development stack with one verified default per layer, covering web apps, agent apps, deployment, persistence, error tracking, and observability.
+
+---
+
 ## Installation
 
 **Via Skills CLI** (recommended — works in 12+ agents):
