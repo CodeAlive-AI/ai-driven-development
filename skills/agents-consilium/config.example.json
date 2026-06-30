@@ -26,18 +26,18 @@
     "claude-code": {
       "enabled": false,
       "backend": "claude-code",
-      "model": "claude-opus-4-8",
+      "model": "claude-sonnet-5",
       "effort": "max",
       "role": "analyst",
-      "label": "Claude Opus 4.8"
+      "label": "Claude Sonnet 5"
     },
-    "claude-sonnet-lateral": {
+    "claude-sonnet": {
       "enabled": false,
       "backend": "claude-code",
-      "model": "sonnet",
+      "model": "claude-sonnet-5",
       "effort": "max",
       "role": "lateral",
-      "label": "Claude Sonnet (Lateral)"
+      "label": "Claude Sonnet 5 (Lateral)"
     },
     "opencode-go-minimax": {
       "enabled": true,

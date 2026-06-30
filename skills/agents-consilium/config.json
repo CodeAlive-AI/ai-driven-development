@@ -25,18 +25,18 @@
     "claude-code": {
       "enabled": false,
       "backend": "claude-code",
-      "model": "claude-opus-4-8",
+      "model": "claude-sonnet-5",
       "effort": "max",
       "role": "analyst",
-      "label": "Claude Opus 4.8"
+      "label": "Claude Sonnet 5"
     },
     "claude-sonnet": {
       "enabled": false,
       "backend": "claude-code",
-      "model": "sonnet",
+      "model": "claude-sonnet-5",
       "effort": "high",
       "role": "lateral",
-      "label": "Claude Sonnet (high)"
+      "label": "Claude Sonnet 5 (high)"
     },
     "opencode-go-minimax": {
       "enabled": true,
