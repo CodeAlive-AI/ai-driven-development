@@ -90,7 +90,7 @@ scripts/ultrareview.sh --no-fallback path/to/file.cs         # CI-strict mode
 
 Each agent has a `role` in config:
 
-- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Opus 4.8.
+- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Sonnet 5.
 - **lateral** — Lateral Thinker (cross-domain patterns, questioning premises, creative alternatives). Default: OpenCode GLM-5.2, Gemini CLI.
 
 Agents respond with a shared structure (Assessment / Key Findings / Blind Spots / Alternatives / Recommendation + confidence) so the caller can compare section by section.
@@ -215,7 +215,7 @@ Aggregated across all 9 presets, per agent × role (MATCH = judge-confirmed matc
 
 | Agent | Best role | Bench appearances | Avg unique GT contributed |
 |---|---|---:|---:|
-| **Claude Opus 4.8** | `analyst` (45× lateral) | 6 presets | 37 unique GT (analyst mode) |
+| **Claude Sonnet 5** | `analyst` (45x lateral) | 6 presets | 37 unique GT (analyst mode) |
 | **Codex gpt-5.5 (xhigh)** | `analyst` + specialist hybrid | 5 presets | up to 47 MATCH per pass |
 | **OC-Go specialist model** | **architecture specialist** | 9 presets | 47 unique GT (specialist 4x analyst) |
 | **OC-Go Qwen Plus** | `analyst` | 9 presets | 15 unique GT |
@@ -315,7 +315,7 @@ agents-consilium/
     ├── consensus-query.sh           # Parallel dispatch across enabled agents
     ├── code-review.sh               # 2- or 5-specialist code review (single-stage)
     ├── superreview.sh               # multi-stage: small-swarm + 2 frontier add-ons + sonnet judge
-    ├── ultrareview.sh               # multi-stage: broad-grid + specialists + probe + opus judge (w/ fallback)
+    ├── ultrareview.sh               # multi-stage: broad-grid + specialists + probe + sonnet judge (w/ fallback)
     ├── code_review_validate.py      # Parses findings, validates quoted-code, renders XML/markdown
     ├── common.sh                    # Shared role prompts, exit codes, helpers
     ├── config.sh                    # JSON config loader (Python-backed)
