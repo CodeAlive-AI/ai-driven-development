@@ -232,8 +232,19 @@ Default config roles are calibrated from this data, with the model ids updated t
 
 Agents are declared in `config.json`. The default config enables:
 
-- **codex** + **opencode** (`opencode-go/glm-5.2`)
+- **codex** (`gpt-5.6-sol`, high) + **opencode** (`opencode-go/glm-5.2`)
 - **5 additional OpenCode-Go models**: GLM-5.1 · Kimi K2.7 Code · MiniMax M3 · Qwen3.7 Max · Qwen3.7 Plus
+
+Codex GPT-5.6 profiles included in both config files:
+
+| Agent ID | Model | Effort | Intended use |
+|---|---|---|---|
+| `codex` | `gpt-5.6-sol` | `high` | Default quality-first code-review model |
+| `codex-gpt-5.6` | `gpt-5.6` | `high` | Latest alias; wrapper resolves it to Sol |
+| `codex-gpt-5.6-terra` | `gpt-5.6-terra` | `medium` | Balanced cost, latency, and quality |
+| `codex-gpt-5.6-luna` | `gpt-5.6-luna` | `low` | High-throughput, simple, or strict-latency tasks |
+
+Only `codex` is enabled among these profiles. The others are selectable with `-a <agent-id>` without increasing the default fan-out.
 
 Each entry has 6 fields:
 
@@ -253,7 +264,8 @@ The exact `model` and `effort` of every entry live in `config.json` so they can 
 
 - **opencode** — `low` / `medium` / `high` / `max` — maps to `opencode run --variant`. Provider-specific; enumerate via `opencode models <provider> --verbose`. See [SKILL.md → Discovering OpenCode reasoning variants](SKILL.md#discovering-opencode-reasoning-variants-per-model).
 - **claude-code** — `low` / `medium` / `high` / `xhigh` / `max` — maps to `claude --effort`.
-- **codex-cli** and **gemini-cli** — `effort` is ignored.
+- **codex-cli** — `minimal` / `low` / `medium` / `high` / `xhigh` — maps to `model_reasoning_effort`.
+- **gemini-cli** — `effort` is ignored.
 
 `gemini-cli` and `claude-code` are disabled by default (flip `enabled: true` to add). Multiple agents can share one backend (e.g. five OpenCode-Go models all use `backend: "opencode"`); per-agent config is selected by the entry's id, passed through `CONSILIUM_AGENT_ID`.
 

@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 # ultrareview.sh — multi-stage code review based on the ultrareview-bench h3
-# preset (Codex gpt-5.5 broad-grid + probe; best severity-weighted recall on
-# snippet1.cs at ~$1.47-2.96).
+# preset (benchmarked with Codex gpt-5.5 broad-grid + probe; current Codex
+# binding is gpt-5.6-sol high).
 #
 # Pipeline (21 LLM calls total):
 #
 #   Stage 1: broad (parallel) — 4 frontier analysts
-#     • codex (gpt-5.5 high)         analyst       (uncapped)
+#     • codex (gpt-5.6-sol high)     analyst       (uncapped)
 #     • claude-code (Sonnet 5 max)   analyst       (uncapped)
 #     • opencode (GLM-5.2)           lateral       (uncapped)
 #     • opencode-go-qwen37-max       analyst       (uncapped)
