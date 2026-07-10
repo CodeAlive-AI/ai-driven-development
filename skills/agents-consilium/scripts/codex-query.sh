@@ -32,7 +32,13 @@ config_validate || exit $EXIT_CONFIG_ERROR
 
 AGENT_ID="${CONSILIUM_AGENT_ID:-codex}"
 
-MODEL="${CODEX_MODEL:-$(config_get_field "$AGENT_ID" model)}"
+REQUESTED_MODEL="${CODEX_MODEL:-$(config_get_field "$AGENT_ID" model)}"
+MODEL="$REQUESTED_MODEL"
+# Codex CLI's ChatGPT backend may lag the rolling gpt-5.6 alias even when the
+# target tier is already available. Keep the documented alias deterministic.
+if [[ "$MODEL" == "gpt-5.6" ]]; then
+    MODEL="gpt-5.6-sol"
+fi
 ROLE_ID="${CONSILIUM_ROLE_OVERRIDE:-$(config_get_field "$AGENT_ID" role)}"
 LABEL="$(config_get_field "$AGENT_ID" label)"
 LABEL="${LABEL:-Codex}"
@@ -76,6 +82,9 @@ fi
 export FULL_PROMPT
 FULL_PROMPT=$(build_prompt "$ROLE_PROMPT" "$PROMPT" "$CONTEXT_FILE")
 
+if [[ "$REQUESTED_MODEL" != "$MODEL" ]]; then
+    echo -e "${YELLOW}[${LABEL}] Resolving ${REQUESTED_MODEL} alias to ${MODEL}${NC}" >&2
+fi
 echo -e "${YELLOW}[${LABEL}] Querying ${MODEL} (role=${ROLE_ID}, effort=${EFFORT})...${NC}" >&2
 
 export MODEL

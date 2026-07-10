@@ -139,16 +139,16 @@ The same trap applies the moment you build a `codex exec -m … "<prompt>"` or `
 
 ```bash
 # Safe: prompt loaded from a file
-codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" "$(cat prompt.md)"
+codex exec -m gpt-5.6-sol --full-auto -C /tmp/work -o "$OUT" "$(cat prompt.md)"
 
 # Safe: single-quoted heredoc
-codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" "$(cat <<'EOF'
+codex exec -m gpt-5.6-sol --full-auto -C /tmp/work -o "$OUT" "$(cat <<'EOF'
 …prompt body with `backticks` and $vars…
 EOF
 )"
 
 # UNSAFE: inline string with shell-special characters
-codex exec -m gpt-5.5 --full-auto -C /tmp/work -o "$OUT" \
+codex exec -m gpt-5.6-sol --full-auto -C /tmp/work -o "$OUT" \
   "Explain \`index.knn.advanced.approximate_threshold=-1\` semantics"
 #          ^^ even escaping the backticks here is fragile —
 #             the shell still has to interpret them once
@@ -212,10 +212,13 @@ Agents are declared in `config.json` at the skill root. Each agent has:
 | `model` | Model id passed to that CLI |
 | `role` | `analyst` (deep/precise) or `lateral` (broad/creative) |
 | `label` | Display name in reports (optional) |
-| `effort` | Reasoning effort. **opencode:** maps to `opencode run --variant` (e.g. `low`, `medium`, `high`, `max`) — provider-specific, see [Discovering reasoning variants](#discovering-opencode-reasoning-variants-per-model) below. **claude-code:** maps to `claude --effort` (`low`, `medium`, `high`, `xhigh`, `max`). Other backends ignore it. |
+| `effort` | Reasoning effort. **codex-cli:** maps to `model_reasoning_effort` (`minimal`, `low`, `medium`, `high`, `xhigh`). **opencode:** maps to `opencode run --variant` — provider-specific, see [Discovering reasoning variants](#discovering-opencode-reasoning-variants-per-model). **claude-code:** maps to `claude --effort` (`low`, `medium`, `high`, `xhigh`, `max`). Gemini ignores it. |
 
 Default config (`config.json`):
-- `codex` (backend=codex-cli, model=gpt-5.5, role=analyst) — **enabled**
+- `codex` (backend=codex-cli, model=gpt-5.6-sol, effort=high, role=analyst) — **enabled** and the default code-review agent
+- `codex-gpt-5.6` (backend=codex-cli, model=gpt-5.6, effort=high, role=analyst) — **disabled**; latest alias routing to Sol
+- `codex-gpt-5.6-terra` (backend=codex-cli, model=gpt-5.6-terra, effort=medium, role=analyst) — **disabled**
+- `codex-gpt-5.6-luna` (backend=codex-cli, model=gpt-5.6-luna, effort=low, role=analyst) — **disabled**
 - `gemini-cli` (backend=gemini-cli, model=gemini-3.1-pro-preview, role=lateral) — **disabled**
 - `opencode` (backend=opencode, model=opencode-go/glm-5.2, role=lateral, effort=max) — **enabled** and the default OpenCode agent
 - `claude-code` (backend=claude-code, model=claude-sonnet-5, effort=max, role=analyst) — **disabled**
@@ -227,6 +230,19 @@ Default config (`config.json`):
 - `opencode-go-qwen37-plus` (backend=opencode, model=opencode-go/qwen3.7-plus, role=lateral, effort=none) — **enabled**
 
 Effort policy: use the highest supported OpenCode variant for models that expose one (`opencode-go/glm-5.2` uses `max`, `opencode-go/minimax-m3` uses `thinking`). Use `none` for models whose variants list is empty (`glm-5.1`, `kimi-k2.7-code`, `qwen3.7-max`, `qwen3.7-plus`) so the backend omits `--variant` entirely.
+
+### Codex GPT-5.6 model profiles
+
+| Model | Intended use | Default profile |
+|-------|--------------|-----------------|
+| `gpt-5.6` | Latest GPT-5.6 alias; the wrapper resolves it to Sol for Codex CLI compatibility | `codex-gpt-5.6`, high, disabled |
+| `gpt-5.6-sol` | Flagship tier for the hardest quality-first coding and reasoning workflows | `codex`, high, **enabled** |
+| `gpt-5.6-terra` | Balanced cost, latency, and quality | `codex-gpt-5.6-terra`, medium, disabled |
+| `gpt-5.6-luna` | High-throughput, simple, or strict-latency tasks | `codex-gpt-5.6-luna`, low, disabled |
+
+`code-review.sh` assigns enabled agents in config order. Keeping `codex` first makes `gpt-5.6-sol` at high effort the default security reviewer while preserving the stable `codex` agent id used by scripts and existing callers. Select another profile ad hoc with `-a codex-gpt-5.6-terra` or `-a codex-gpt-5.6-luna`.
+
+The Codex CLI wrapper normalizes `gpt-5.6` to `gpt-5.6-sol` before execution. This preserves the documented alias semantics on ChatGPT-backed Codex installations whose server-side alias roster has not caught up yet.
 
 Multiple agents can share one backend — the dispatcher passes the entry id through `CONSILIUM_AGENT_ID`, so each backend script reads its own slice of `config.json`.
 
@@ -502,7 +518,7 @@ maximum coverage and lowest false-positive rate.
 
 ```
 Stage 1: broad (parallel)         4 frontier analysts
-  - codex (gpt-5.5 high)         analyst      uncapped
+  - codex (gpt-5.6-sol high)     analyst      uncapped
   - claude-code (Sonnet 5 max)   analyst      uncapped
   - opencode (GLM-5.2)           lateral      uncapped
   - opencode-go-qwen37-max       analyst      uncapped
