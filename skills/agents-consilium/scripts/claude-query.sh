@@ -13,8 +13,8 @@
 #   CLAUDE_PERMISSION_MODE — override permission mode (default: plan)
 #   CLAUDE_EFFORT          — reasoning effort level (low, medium, high, xhigh, max).
 #                            Defaults to the "effort" field in config.json, or
-#                            "max" if both env and config are empty (claude is the
-#                            most capable backend; max effort is the sane default).
+#                            "high" if both env and config are empty. This default
+#                            applies to both Opus and Sonnet model selections.
 #
 # Exit codes:
 #   0 — success
@@ -47,7 +47,7 @@ LABEL="$(config_get_field "$AGENT_ID" label)"
 LABEL="${LABEL:-ClaudeCode}"
 PERMISSION_MODE="${CLAUDE_PERMISSION_MODE:-plan}"
 EFFORT="${CLAUDE_EFFORT:-$(config_get_field "$AGENT_ID" effort)}"
-EFFORT="${EFFORT:-max}"
+EFFORT="${EFFORT:-high}"
 
 if ! ROLE_PROMPT="$(get_role_prompt "$ROLE_ID")"; then
     echo -e "${RED}Error: unknown role '$ROLE_ID' for claude-code in config${NC}" >&2
