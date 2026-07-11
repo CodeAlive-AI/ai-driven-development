@@ -76,6 +76,28 @@ The filtering step is local and context-sensitive, but the criteria used **SHALL
 
 No one filter is universally decisive. The pattern only requires that at least two filters be declared when a prime hypothesis is selected.
 
+#### B.5.2:4.5 - Abductive Unfolding Structure Block
+
+When the abductive run must be reused as more than a one-off hypothesis note, add an unfolding block. It shows how the prompt becomes rival hypotheses and downstream tests without treating the creative passage as evidence.
+
+```text
+AbductiveUnfoldingStructureBlock:
+  unfoldingStructureRef: current AbductiveSearchUnfoldingStructure record
+  abductivePromptRef:
+  cueSetWithDownstreamPatternAlternativesRef:
+  rivalHypothesisSetRef:
+  hypothesisGenerationLoci[]:
+  plausibilityConstraintRefs[]:
+  evidenceReturnLoci[]:
+  languageStateMoveRefs[]:
+  poolPolicyOrSelectionRef?:
+  blockedOverread: not inspiration event, not linear ideation workflow, not evidence by itself
+```
+
+Use `unfoldingStructureRef` for the current local structure record; use A.22.CGUS `specializedStructureRef?` only when the generic CGUS record must point to this narrower specialization. Use `cueSetWithDownstreamPatternAlternativesRef` when the prompt still carries several possible downstream governing-pattern alternatives. Use `rivalHypothesisSetRef` before selecting a prime hypothesis. Use `evidenceReturnLoci[]` to say where later evidence, deduction, probe design, or assurance work can return; do not use those loci as evidence. If the live claim becomes candidate retention, pool policy, selected-set publication, or comparison, exit to `C.18`, `C.19`, `G.5`, or the comparison governing pattern instead of making abduction a selector.
+
+`AbductiveSearchUnfoldingStructure` is a local `A.22.CGUS` `U.Structure` specialization governed here for abductive-search use. It is not a root U-kind, not an ideation workflow, not evidence, and not a selection decision. `B.5.2` governs the abductive prompt, cue set with downstream governing-pattern alternatives, rival hypotheses, plausibility constraints, and evidence-return loci; evidence, deduction, probe design, assurance, selected-set publication, pool policy, and comparison claims leave to their direct governing patterns.
+
 ### B.5.2:5 - Archetypal Grounding
 
 **Tell.** Abduction is not "a flash of insight." It is the governed passage from a typed prompt to a candidate conjecture through explicit rival generation and plausibility comparison.
@@ -130,6 +152,7 @@ Contemporary inquiry practice in science, engineering, design, and diagnosis tre
 - **Consumes:** `U.AbductivePrompt` publications from `B.5.2.0`, often reached through `B.4.1` and `A.16`.
 - **Produces:** hypothesis-bearing `U.Episteme` publications at `AssuranceLevel:L0`.
 - **Provides inputs for:** downstream deduction, probe design, and evidence acquisition in the reasoning cycle.
+- **Coordinates with:** `A.22.CGUS` when the abductive prompt, `B.4.1` cue publication, rival hypotheses, plausibility constraints, evidence-return loci, and downstream tests must be inspected as an `AbductiveSearchUnfoldingStructure`.
 
 #### B.5.2:12.1 - Prompt-entry broadening via `U.AbductivePrompt`
 
@@ -171,7 +194,7 @@ A selected prime hypothesis should preserve more than the hypothesis sentence it
 - the **prompt** it answers,
 - the **filters** under which it outranked rivals,
 - the **scope** within which it is being advanced,
-- the **next admissible downstream use** (deduction, probe design, targeted evidence acquisition, or explicit reopening criteria),
+- the **next admissible downstream move** (deduction, probe design, targeted evidence acquisition, or explicit reopening criteria),
 - and any **known fragilities** already visible at selection time.
 
 This is how `B.5.2` stays connected to the rest of the reasoning cycle. The abductive loop does not merely emit an idea; it emits a conjecture with explicit downstream-use terms.
@@ -182,7 +205,7 @@ The abductive loop is iterative, but it is not formless. Several transition case
 
 #### B.5.2:14.1 - Relation to `B.4.1` and `A.16`
 
-`B.4.1` and `A.16` often supply the pre-abductive seam. They help preserve and stabilize upstream publications, including route-bearing publication forms when those forms are explicitly governed, before the publication is fit for explicit conjecture. `B.5.2` begins only once the current publication is ready to function as an abductive prompt. This boundary matters because it prevents two opposite errors:
+`B.4.1` and `A.16` often supply the pre-abductive seam. They help preserve and stabilize upstream publications, including publication forms that carry route-shaped representations when those forms are explicitly governed, before the publication is fit for explicit conjecture. `B.5.2` begins only once the current publication is ready to function as an abductive prompt. This boundary matters because it prevents two opposite errors:
 
 - **premature abduction**, where a low-articulation cue is treated as if it had already earned hypothesis form;
 - **delayed abduction**, where a now-stable prompt is kept indefinitely in early cue form even though rival conjectures should already be compared.
@@ -261,7 +284,7 @@ Authors should treat the abductive loop as a **selection discipline**, not as a 
 - what is the prompt,
 - what rival candidates were seriously considered,
 - why is one candidate currently the best live conjecture,
-- and what downstream use could expose that selection as right or wrong?
+- and what downstream move could expose that selection as right or wrong?
 
 If those answers cannot be given, the publication is probably not yet at `B.5.2` and should return to prompt-shaping or lexical repair.
 

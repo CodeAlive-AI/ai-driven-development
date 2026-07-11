@@ -47,7 +47,7 @@ Unification work fails when composition is claimed before locality and continuit
 
 1. **Locality leak.** A same-spelled label is treated as one meaning across contexts.
 2. **Row sprawl.** Concept-Set rows grow laterally with near-duplicates.
-3. **Role or status inflation.** Adjectival, temporal, or source-looking variants become new role or status types.
+3. **Role or status inflation.** Adjectival, temporal, or source-label variants become new role or status types.
 4. **Silent rewrite.** An edition or rename changes meaning while keeping the old row or name.
 5. **Bridge hardening.** A weak Bridge is later used as equivalence without a new witness set.
 6. **Register split.** Unified Tech and Plain labels drift apart and no longer refer to the same local sense.

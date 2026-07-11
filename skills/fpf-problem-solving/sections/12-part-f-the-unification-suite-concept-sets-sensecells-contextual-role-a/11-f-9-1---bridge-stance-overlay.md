@@ -85,7 +85,7 @@ The practical gain is narrow but real: teams already use short stance glosses in
 ### F.9.1:11 - SoTA-Echoing
 **SoTA note.** This section does not mint an independent second bridge rule track. It stays truthful only when the boundary rule, conformance checklist, worked bridge-card examples, and legacy-note repair below still tell the same story about the stance staying subordinate to the bridge card.
 
-**Traditions covered.** This overlay binds itself to comparative-theory glossing, design-translation annotation, operator documentation, and other practices that add short interpretive stance labels on top of already bridge-stance overlay relation cards.
+**Traditions covered.** This overlay binds itself to comparative-theory glossing, design-translation annotation, operator documentation, and other practices that add short interpretive stance labels on top of already governed bridge cards.
 
 | Claim need | SoTA practice (post-2015) | Primary source (post-2015) | Alignment with `F.9.1` | Adoption status |
 | --- | --- | --- | --- | --- |

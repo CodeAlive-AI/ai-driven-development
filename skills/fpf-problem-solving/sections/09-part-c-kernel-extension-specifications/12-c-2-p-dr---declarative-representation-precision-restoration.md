@@ -123,6 +123,19 @@ The note records the local repair long enough to make the next governing pattern
 
 The defect is not the word. The defect is hidden ontology: the sentence treats a representation as if something literally ran, flowed, executed, authorized, released, proved, selected, or prescribed action without the governing kind named by value.
 
+When the representation is route-shaped, loop-shaped, graph-shaped, diffusion-like, or workflow-like, ask first which object is current:
+
+| Current object | Governing pattern |
+| --- | --- |
+| constraint-governed `U.Structure` across several constrained loci | `A.22.CGUS` |
+| transformation-flow structure, path, path slice, crossing, guard, or valuation | `E.18` and `E.18.3` when unfolding use is current |
+| description, diagram, table, graph, route card, slide, README line, or narrative that renders the structure | `ConstraintGovernedUnfoldingStructureDescription@Context`, `DemonstrativeUnfoldingSlice@Context`, `A.6.3.NAR`, `E.17`, or the direct description governing pattern |
+| method or method description | `A.3.1` or `A.3.2` |
+| work plan, work readiness, or performed work | A.15 family |
+| evidence, assurance, gate, decision, architecture, publication, or currentness-refresh claim | the direct governing pattern for that claim |
+
+Do not repair route-shaped wording by replacing it with another route-shaped word. The repair succeeds only when the representation, represented EntityOfConcern or claim, preserved and lost structure, admissible use, blocked overread, and direct governing pattern are recoverable.
+
 #### C.2.P.DR:4.4 - Method, algorithm, mechanism, and work-slot settlement
 
 Do not repair `algorithm`, `program`, `solver`, `proof`, `recipe`, `method`, `workflow`, `process`, `procedure`, `access path`, `query plan`, or `control strategy` by choosing one fashionable replacement.
@@ -167,7 +180,7 @@ Repair:
 DeclarativeRepresentationRepair:
   EncounteredRepresentation: P2W path or path slice in a selected TransformationFlowStructure
   RepresentationKind: graph path or PathSlice candidate under E.18 and E.18.1
-  RepresentedEntityOfConcernOrClaim: carry-through relation from accepted problem-side material to next FPF kind named by value
+  RepresentedEntityOfConcernOrClaim: carry-through relation among accepted problem-side records, candidate next FPF kinds or records, and governing-pattern returns named by value
   SourceOrPublicationRelation: current graph or pattern publication when relevant
   TemptingImperativeOverread: ordered work route for the team
   RecoveredGoverningPattern: E.18.1, with A.15.2 or A.15.1 only if planned or dated work is current
@@ -289,7 +302,7 @@ DeclarativeRepresentationRepair:
 
 This pattern uses external sources only for the representation-overread repair question. They do not replace FPF ontology, and older famous sources are lineage or contrast unless a current source below supplies the contemporary payload.
 
-| Source or practice line | Source-use function or relation | What it changes here |
+| Exact source or practice anchor | Source-use function or relation | What it changes here |
 | --- | --- | --- |
 | `E.10`, `E.10.ARCH`, and `C.2.P` | Current FPF precision-restoration architecture. | This pattern is a bounded child realization under `C.2.P`, not a new umbrella pattern. |
 | `A.10` and `E.18` | Local FPF direct governing patterns for evidence paths, provenance paths, transformation-flow graph paths, and path slices. | Path wording is legitimate when those kinds are current; the defect is stronger overread. |

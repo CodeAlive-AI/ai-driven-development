@@ -69,6 +69,8 @@ ADR practice is useful because it makes architectural decisions small enough to 
 
 C.32.ADR treats ADR as a publication projection. The project decision relation belongs to `C.32.PAD`. The architecture description belongs to `C.30.AD` and related view patterns. The method description or pattern-use recommendation belongs to `A.15`, `E.8`, and `E.11.PUR` when those claims are live. The ADR-like record publishes a decision description for a declared reader and use.
 
+For a principle framework, `E.4.PFAD` supplies the prior framework architecture decision relation. The ADR-like record should recover decision question, context, selected answer, alternatives, rationale, consequences, status, links, and supersession conditions, while framework realization, pattern quality, and publication adequacy stay with their direct owners.
+
 The section question is therefore not "which headings are allowed?" The section question is "which decision functions must a reader recover?" A heading can vary by organization or industry, but the record must carry the decision question, candidate options or reason no candidate set is live, outcome, rationale, consequences, method-use instruction when the decision guides work, work split, confirmation or eval path, source-return, status, and supersession or reopen condition.
 
 ADR-like projection is not software-only. Engineering trade-study records, safety-certification rationale, design review memos, BIM decision logs, method-governance records, and organization-design records can play the same publication role after the project decision relation and record use are typed. The source form may differ; the FPF section functions stay recoverable.

@@ -10,7 +10,7 @@
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate‑neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their motion and equivalence. Exports: (i) three point‑characteristics—Formality F,...
 - [C.2.1 - U.Episteme - Epistemes and their slot relation](02-c-2-1---u-episteme---epistemes-and-their-slot-relation.md) (868 lines) — Normativity: Normative except where a section is explicitly marked informative
-- [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (641 lines) — Type: C.2 precision-restoration pattern for episteme, publication, and source-use wording
+- [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (659 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (375 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). Cross-context reuse is Bridge-only: scope may be re-expressed via...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (264 lines) — Type: Architectural (A)
 - [C.2.3 - Unified Formality Characteristic F](06-c-2-3---unified-formality-characteristic-f.md) (311 lines) — Type: Definitional (D)
@@ -19,8 +19,8 @@
 - [C.2.5 - U.LanguageStateClosureDegree](09-c-2-5---u-languagestateclosuredegree.md) (193 lines) — Type: Definitional (D)
 - [C.2.6 - U.LanguageStateAnchoringMode](10-c-2-6---u-languagestateanchoringmode.md) (175 lines) — Type: Definitional (D)
 - [C.2.7 - U.LanguageStateRepresentationFactorBundle](11-c-2-7---u-languagestaterepresentationfactorbundle.md) (175 lines) — Type: Definitional (D)
-- [C.2.P.DR - Declarative Representation Precision Restoration](12-c-2-p-dr---declarative-representation-precision-restoration.md) (304 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
-- [C.3 - Kinds, Intent and Extent, and Typed Reasoning](13-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (154 lines) — Type: Typed reasoning discipline pattern
+- [C.2.P.DR - Declarative Representation Precision Restoration](12-c-2-p-dr---declarative-representation-precision-restoration.md) (317 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
+- [C.3 - Kinds, Intent and Extent, and Typed Reasoning](13-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (158 lines) — Type: Typed reasoning discipline pattern
 - [C.3.1 - U.Kind and U.SubkindOf Core](14-c-3-1---u-kind-and-u-subkindof-core.md) (125 lines) — Type: Typed reasoning core pattern
 - [C.3.2 - KindSignature (+F) & Extension/MemberOf](15-c-3-2---kindsignature-extension-memberof.md) (201 lines) — One‑line summary. Specifies the intent and extent of kinds: (i) a KindSignature(k) (the intensional definition of kind k) that declares its own Formality F; (ii) an Extension(k, slice) ⊆...
 - [C.3.3 - KindBridge & CL^k — Cross‑context Mapping of Kinds](16-c-3-3---kindbridge-cl-k-cross-context-mapping-of-kinds.md) (236 lines) — One‑line summary. Defines KindBridge as the normative mechanism for moving kinds (their intent and selected subkind‑of links) between bounded contexts (“Contexts”). A bridge declares how a source...
@@ -28,7 +28,7 @@
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](18-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (163 lines) — One‑line summary. Defines KindAT as an informative facet attached to U.Kind that classifies the intentional abstraction stance of a kind—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, K3...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](19-c-3-a---typed-guard-macros-for-kinds-usm.md) (728 lines) — One‑line summary. Provides normative guard macros that combine USM Scope (A.2.6) with Kind‑CAL (C.3.x) so authors can gate state changes and compositions that quantify over kinds without conflating...
 - [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (716 lines) — Normativity: Normative unless marked informative
-- [C.13 — Constructional Mereology (Compose‑CAL)](21-c-13-constructional-mereology.md) (220 lines) — At a glance. Use C.13 when a structural identity claim needs a constructive trace showing how a whole, collection-as-whole, or aspect is obtained from parts.
+- [C.13 — Constructional Mereology (Compose‑CAL)](21-c-13-constructional-mereology.md) (227 lines) — At a glance. Use C.13 when a structural identity claim needs a constructive trace showing how a whole, collection-as-whole, or aspect is obtained from parts.
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](22-c-16---measurement-metrics-characterization.md) (454 lines) — Use this pattern when. Use C.16 when a value, score, rating, metric label, QL probe output, dashboard reading, or comparison is being treated as meaningful without a visible characteristic, scale,...
 - [C.16.P - Characteristic and Scale Precision Restoration](23-c-16-p---characteristic-and-scale-precision-restoration.md) (250 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](24-c-16-q---quality-term-precision-restoration.md) (777 lines) — Type: Characterization precision-restoration pattern
@@ -52,32 +52,32 @@
 - [C.27 - Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Temporal Change](42-c-27---temporal-claim-adequacy-state-readings-temporal-trend.md) (1964 lines) — Type: Claim-adequacy pattern
 - [C.27.TA - Temporal Aspect: Time Windows, Rhythm, Cadence, and Currentness](43-c-27-ta---temporal-aspect-time-windows-rhythm-cadence-and-cu.md) (272 lines) — Type: Definitional pattern
 - [C.28 - CausalUse-CAL: Causal-Use Questions, Causality-Ladder Rungs, Identification and Realizability](44-c-28---causaluse-cal-causal-use-questions-causality-ladder-r.md) (867 lines) — Normativity: Normative unless explicitly marked informative
-- [C.29 - Mathematical Lens Use](45-c-29---mathematical-lens-use.md) (1353 lines) — Type: Architectural pattern
+- [C.29 - Mathematical Lens Use](45-c-29---mathematical-lens-use.md) (1362 lines) — Type: Architectural pattern
 - [C.30 - Grounded Architecture and Selected-Structure Adequacy](46-c-30---grounded-architecture-and-selected-structure-adequacy.md) (592 lines) — Type: Architectural pattern
-- [C.30.AD - Architecture Description Adequacy](47-c-30-ad---architecture-description-adequacy.md) (401 lines) — Type: Architectural pattern
+- [C.30.AD - Architecture Description Adequacy](47-c-30-ad---architecture-description-adequacy.md) (402 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](48-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (197 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Architecture and Structure Precision Restoration](49-c-30-p---architecture-and-structure-precision-restoration.md) (248 lines) — Type: Architectural pattern
 - [C.30.STRAT - Stratification Wording Precision Restoration](50-c-30-strat---stratification-wording-precision-restoration.md) (270 lines) — Type: Architectural precision-restoration subpattern under C.30
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](51-c-30-asv---architecture-structural-view-adequacy.md) (716 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](52-c-30-lca---control-structure-view-adequacy.md) (269 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](53-c-30-ilc---cross-scope-architecture-residual-triage.md) (252 lines) — Type: Architectural subpattern under C.30
-- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](54-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (341 lines) — Type: Architectural pattern
+- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](54-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (361 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](55-c-31---modularity-and-reusable-structure-characteristics.md) (367 lines) — Type: Characterization pattern
 - [C.31.RSA - Reusable Structure Accounting](56-c-31-rsa---reusable-structure-accounting.md) (381 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](57-c-31-asap---architecture-scale-amenability-preference.md) (300 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](58-c-32---architecture-candidate-synthesis.md) (319 lines) — Type: Architectural pattern
-- [C.32.P2S - Problem-to-Structure Architecturing Transformation Flow](59-c-32-p2s---problem-to-structure-architecturing-transformatio.md) (236 lines) — Type: Architectural process pattern under C.32
-- [C.32.HCS - Holon-Family Architecture Characteristic Starter Packs](60-c-32-hcs---holon-family-architecture-characteristic-starter.md) (197 lines) — Type: Architectural characterization subpattern under C.32
+- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](59-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (292 lines) — Type: Architectural process pattern under C.32
+- [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](60-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (201 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](61-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (265 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](62-c-32-ace---architecture-characteristic-eval-programs.md) (201 lines) — Type: Architecture eval-support subpattern under C.32
 - [C.32.CONWAY - Transformer and Transformed Architecture Correspondence](63-c-32-conway---transformer-and-transformed-architecture-corre.md) (252 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Multilevel Architecture Residual Optimization](64-c-32-mlao---multilevel-architecture-residual-optimization.md) (269 lines) — Type: Architectural subpattern under C.32
 - [C.32.FAIL - Architecture Failure Recognition and Repair](65-c-32-fail---architecture-failure-recognition-and-repair.md) (236 lines) — Type: Architectural subpattern under C.32
 - [C.32.PAD - Project Architecture Decision After Candidate Synthesis](66-c-32-pad---project-architecture-decision-after-candidate-syn.md) (302 lines) — Type: Architecture decision pattern under C.32
-- [C.32.ADR - Architecture Decision Record Projection](67-c-32-adr---architecture-decision-record-projection.md) (222 lines) — Type: Architecture publication pattern under C.32
+- [C.32.ADR - Architecture Decision Record Projection](67-c-32-adr---architecture-decision-record-projection.md) (224 lines) — Type: Architecture publication pattern under C.32
 - [C.32.ADA - Architecture Decision Adequacy Scales](68-c-32-ada---architecture-decision-adequacy-scales.md) (265 lines) — Type: Architecture evaluation pattern under C.32
-- [C.33 - Structural Information Adequacy for Architecture Capture and Source Return](69-c-33---structural-information-adequacy-for-architecture-capt.md) (192 lines) — Type: Architectural pattern
-- [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](70-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (181 lines) — Type: Architectural pattern
-- [C.35 - Structural Synthesis and Discovery Adequacy](71-c-35---structural-synthesis-and-discovery-adequacy.md) (191 lines) — Type: Architectural pattern
+- [C.33 - Structural Information Adequacy for Architecture Capture and Missing-Structure Return](69-c-33---structural-information-adequacy-for-architecture-capt.md) (203 lines) — Type: Architectural pattern
+- [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](70-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
+- [C.35 - Structural Synthesis and Discovery Adequacy](71-c-35---structural-synthesis-and-discovery-adequacy.md) (197 lines) — Type: Architectural pattern
 - [C.36 - Cultural Evolution and Cultural-Evolution Engineering](72-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (302 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](73-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (146 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

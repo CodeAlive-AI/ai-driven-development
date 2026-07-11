@@ -29,15 +29,16 @@ Stronger AI does not remove the need for FPF. AI can generate fluent options qui
 
 Core ideas in plain language:
 
-- first name the project thing under concern; when it is treated as a whole with parts, FPF calls it a holon;
+- first name the project object under concern; when it is treated as a whole with parts, FPF calls it a holon;
 - local teams may use local meanings, but translation must be explicit when work crosses a boundary;
-- the thing itself, its description, a dashboard about it, a decision about it, and the work done to change it are not the same;
-- architecture is structure of that thing in a context, not the diagram, document, approval, or plan about it;
+- the project object itself, its description, a dashboard about it, a decision about it, and the work done to change it are not the same;
+- architecture is structure of that holon or project object in a context, not the diagram, document, approval, or plan about it;
 - serious architecture work can move from problem pressure to candidate structures, selected structures, decisions, method and work, actual structures, and feedback;
 - keep several options alive until the comparison is clear enough to choose;
 - say what "better" means before optimizing or scoring;
 - make trust depend on evidence, freshness, scope, and intended use;
 - publish different views for different readers without changing the underlying claim;
+- when selected source structure must become an explanation, reader-facing ordering, or narrative for a reader, state what structure is preserved, deliberately coarsened, abstracted, omitted, or lost, and which named source basis or governing pattern receives the return when loss matters;
 - use mathematics or formal models when they clarify what structure is preserved, what is lost, and what can be checked;
 - build domain or local FPF-grounded frameworks as dependents of FPF Core, not as silent rewrites of the Core.
 

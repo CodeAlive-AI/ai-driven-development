@@ -198,7 +198,7 @@ Positive repaired example: a model card plus documented bounded-use statement or
 
 #### B.3:4.2b - Minimum reliance safety assurance record
 
-Use this B.3 section when the B.3 material-reliance threshold is met: reliance on a visible source may materially change behavior, safety, release, compliance, public or protocol behavior, access, resource allocation, people or team status value, operational action, or controlled-entity regulation. The first B.3 move is to decide whether an assurance claim is being made; if it is, write the minimum reliance safety assurance record for the named reliance use. Mere attention shift, learning, orientation, source-finding, or source-wording correction is not enough.
+Use this B.3 section when the B.3 material-reliance threshold is met: reliance on a visible carrier, source reference, publication face, or display may materially change behavior, safety, release, compliance, public or protocol behavior, access, resource allocation, people or team status value, operational action, or controlled-entity regulation. The first B.3 move is to decide whether an assurance claim is being made; if it is, write the minimum reliance safety assurance record for the named reliance use. Mere attention shift, learning, orientation, source-finding, or source-wording correction is not enough.
 
 `RelianceSafetyCase` is the local Tech label for this B.3 assurance-record form. The plain phrase is **minimum reliance safety assurance record**. The label is not a new FPF pattern, Core kind, safety authority, gate, policy source, approval, certificate, compliance method, or general safety-case ontology.
 
@@ -226,7 +226,7 @@ Minimum assurance record:
 | --- | --- |
 | Reliance use and assurance claim | The behavior, safety, release, compliance, public or protocol behavior, access, resource allocation, people or team status value, operational action, or controlled-entity regulation that would materially change, and the assurance claim being made about that change. |
 | Context, audience, and affected role | The bounded context, environment, user group, team, public audience, relying role, affected role, tenant, release line, service, or work occurrence being guided. |
-| Source record and evidence kind | The visible source, publication face, record, cue, marker, conformance label, dashboard, explanation rendering, score, warning, or status-value display, plus the evidence kind being used. |
+| Source relation or carrier record and evidence kind | The visible carrier, source reference, publication face, record, cue, marker, conformance label, dashboard, explanation rendering, score, warning, or status-value display, plus the evidence kind being used. |
 | A.10 evidence-provenance path | Claim, source record or source relation, producer or method trace, currentness and window, source-maintenance role assignment, evidence relation, rival explanation, bounded evidence use, unsupported attempted use, and reopen trigger. |
 | Argument and assurance relation | Why this evidence-provenance path carries the assurance claim under the context; include assumptions, limitations, defeaters, residual uncertainty, and unacceptable-harm or risk-tolerance condition when relevant. |
 | Dependencies | Any relevant `A.20` CV status, `A.21` gate decision, `E.19` pattern-quality result, `C.27` temporal claim, `G.11` refresh and decay relation, `B.2.5` control relation, or representation and retargeting relation. |

@@ -8,7 +8,7 @@ Without FPF, the conversation often mixes architecture, vendor comparison, safet
 
 With FPF, the first pass can become a small set of explicit project objects:
 
-- holons in play: the product, the agent stack, and the team or toolchain that will change it are not the same thing;
+- holons in play: the product, the agent stack, and the team or toolchain that will change it are not the same holon;
 - architecture flow: what problem pressure should become which candidate, selected, expected, and actual structures;
 - comparison frame: which alternatives are in the candidate set;
 - evaluation characteristics: cost, latency, controllability, safety, maintainability, time to first use, and other project-specific characteristics;

@@ -13,7 +13,7 @@ FPF's cards, records, tables, views, term sheets, characteristic spaces, pattern
 
 The medium is not prescribed. A team may use paper, markdown, a wiki, a spreadsheet, a model repository, or a specialized tool. FPF is tool-agnostic. What matters is the conceptual structure of the durable publication unit and the relations it makes recoverable.
 
-This is especially important for AI use. An AI assistant can generate fluent prose faster than a team can inspect it. FPF forms give the generated material places to land: candidate set, evidence gap, description-use note, architecture question, term sheet row, source-return condition, or blocked-use result. Without such forms, the output often remains persuasive text rather than project reasoning.
+This is especially important for AI use. An AI assistant can generate fluent prose faster than a team can inspect it. FPF forms give generated outputs and proposals places to land: candidate set, evidence gap, description-use note, architecture question, term sheet row, source-basis return condition, missing-structure return condition, or blocked-use result. Without such forms, the output often remains persuasive text rather than project reasoning.
 
 Thinking through writing is not paperwork. It is how thought becomes durable enough to challenge, improve, and responsibly act on.
 

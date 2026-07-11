@@ -16,5 +16,3 @@ Those materials can be valuable, but they have different jobs. They may teach, d
 
 This separation protects both sides. The Core can stay tool-agnostic and pattern-centered. Companions and tools can be vivid, practical, and domain-rich without turning every example into a new norm. The Preface therefore speaks about FPF as a whole project while keeping the boundary clear: patterns govern, companions teach, tools implement, project-local material applies, and examples show.
 
-The same boundary now applies to FPF-grounded frameworks. FPF Core is not the same object as a domain principle framework or a local practice framework. A crop-production framework, neural-network architecture framework, enterprise architecture-review framework, or local Codex-process framework may depend on FPF Core, reuse its patterns, publish its own local monolith, and run its own quality and refresh loop. It should not silently rewrite the Core just because the local framework is useful.
-

@@ -5,7 +5,7 @@ FPF is a pattern language for disciplined thinking in projects where ordinary pr
 It helps teams:
 
 - keep meanings stable when work crosses teams, tools, documents, and time;
-- separate the thing being discussed from diagrams, dashboards, explanations, promises, decisions, and actual work;
+- separate the project object being discussed from diagrams, dashboards, explanations, promises, decisions, and actual work;
 - state what a claim can responsibly be used for before people rely on it;
 - compare options without collapsing too early to one favorite;
 - define quality criteria before improvement starts;

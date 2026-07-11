@@ -6,7 +6,7 @@
 
 ### E.4.PFAD:1 - Problem frame
 
-Use this pattern when a framework author or steward must decide the architecture of one FPF-grounded domain principle framework or local practice framework: its purpose, selected pattern set, relation structure, publication unit, dependency boundary, names, source basis, quality route, and currentness route.
+Use this pattern when a framework author or steward must decide the architecture of one FPF-grounded domain principle framework or local practice framework: its purpose, selected pattern set, relation structure, publication or access carrier, dependency boundary, names, source basis, quality route, and currentness route.
 
 Primary `EntityOfConcern`: `PrincipleFrameworkArchitectureDecision@Context`, a framework-local architecture decision relation with explicit slots. The first useful output is a filled decision relation, not an ADR document and not the realized framework itself.
 
@@ -14,7 +14,7 @@ Use this pattern only when the decision has framework-specific obligations beyon
 
 ### E.4.PFAD:2 - Problem
 
-Framework architecture decisions recur in FPF-grounded work. A steward must decide whether a set of patterns belongs in Core, in a domain framework, in a local framework, or in publication and pedagogy. They must also decide how the framework depends on FPF Core, what edition boundary it has, what sources ground it, what names are admissible, and which carriers publish the decision.
+Framework architecture decisions recur in FPF-grounded work. A steward must decide whether a set of patterns belongs in Core, in a domain framework, in a local framework, or in publication and pedagogy. They must also decide how the framework depends on FPF Core, what edition boundary it has, what sources ground it, what names are admissible, and which carriers publish or expose the framework.
 
 If those decisions are hidden in prose, table shape, or an ADR-like file, later maintainers cannot tell which structure was selected, which alternative was rejected, what consequences were accepted, or when the decision should be repaired or superseded.
 
@@ -46,13 +46,14 @@ PrincipleFrameworkArchitectureDecision@Context:
   selectedPatternSetRefs
   selectedPatternRelationRefs
   publicationUnitRefs
+  accessCarrierRefs?
   dependencyAndEditionRefs
   qualityEvaluationRefs
   admissionReviewRefs
   rejectedAlternatives
   rationaleRefs
   consequences
-  localMonolithLandingRefs?
+  publicationCarrierRefs?
   sourceReturnConditions
   refreshOrSupersessionConditions
 ```
@@ -63,19 +64,19 @@ Fill the relation in this order:
 2. Name the bounded context, governed framework, and FPF Core edition dependency.
 3. List the source basis and SoTA synthesis packs that make the decision admissible.
 4. Select the pattern set and relation records, or state why the decision is not yet ready.
-5. Select the publication unit only after the structure being published is clear.
+5. Select the publication or access carrier only after the structure being exposed is clear.
 6. Record dependency and edition effects under `E.5.3` and `E.4.PFR`.
 7. Record naming decisions or required `F.18` name-card work.
 8. Record rejected alternatives, rationale, consequences, quality route, source-return route, and refresh or supersession conditions.
 9. Publish the decision projection through `C.32.ADR` or `E.17` only after the decision relation exists.
 
-`qualityEvaluationRefs` and `admissionReviewRefs` are distinct reference families. `qualityEvaluationRefs` point to `E.21` pattern or framework-quality evaluation and improvement evidence. `admissionReviewRefs` point to `E.19` only when the decision is being used to claim admission, profile gating, external-review readiness, or landing readiness.
+`qualityEvaluationRefs` and `admissionReviewRefs` are distinct reference families. `qualityEvaluationRefs` point to `E.4.DPF.DA` package adequacy, `E.21` pattern-quality evaluation, or `E.23` improvement evidence. `admissionReviewRefs` point to `E.19` only when the decision is being used to claim admission, profile gating, external-review readiness, or landing readiness.
 
 Demotion condition: if no framework-specific slots are live, do not keep this pattern in play. Use `E.9` for rationale, `C.32.PAD` for project architecture decision structure, and `C.32.ADR` for the publication projection.
 
 ### E.4.PFAD:5 - Archetypal Grounding
 
-Tell: A team wants a hydroponic-cucumber domain principle framework. The PFAD decision asks whether the framework depends directly on FPF Core only, or also on an agriculture-domain framework edition; which crop-growth concerns become first patterns; which source packs are strong enough; and which local monolith or publication unit will expose the framework.
+Tell: A team wants a hydroponic-cucumber domain principle framework. The PFAD decision asks whether the framework depends directly on FPF Core only, or also on an agriculture-domain framework edition; which crop-growth concerns become first patterns; which source packs are strong enough; and which publication or access carrier will expose the framework.
 
 Show: A Codex local practice framework has process patterns for baton handoff and prelanding checks. The decision records that these are local practice framework patterns, not FPF Core patterns. It names the FPF Core edition, selected local process patterns, local publication unit, source-return owners, and refresh conditions.
 
@@ -95,14 +96,16 @@ PrincipleFrameworkArchitectureDecision@HydroponicCucumberDomain:
   namingDecisionRefs: F18-HC-framework-name-card-required
   selectedPatternSetRefs: problem-framing, nutrient-monitoring, climate-control interpretation, harvest-feedback patterns
   selectedPatternRelationRefs: PFR-HC-source-reuse, PFR-HC-specialization, PFR-HC-publication
-  publicationUnitRefs: HC-local-monolith-readme-and-toc
+  publicationUnitRefs: HC-all-in-one-carrier-readme-and-toc
+  accessCarrierRefs: HC-grower-skill-pack-or-MCP-route-if-built
   dependencyAndEditionRefs: depends on FPFCorePatternSet@current; no Core reverse dependency
   qualityEvaluationRefs: E21-HC-first-pattern-evaluation
   admissionReviewRefs: none until admission is claimed
   rejectedAlternatives: land into FPF-Spec.md; publish only a crop checklist
   rationaleRefs: source-pack claim sheet and E.4 family map
   consequences: faster domain guidance; explicit refresh debt when sources or Core edition change
-  localMonolithLandingRefs: HC-local-monolith-draft
+  publicationCarrierRefs: HC-all-in-one-carrier
+  accessCarrierRefs: HC-grower-skill-pack-or-MCP-route-if-built
   sourceReturnConditions: return to G.2 when source pack loses a rival horticulture tradition
   refreshOrSupersessionConditions: G.11 refresh when Core edition or greenhouse practice changes
 ```
@@ -118,7 +121,7 @@ The second drift is child-pattern duplication: PFAD can become a local restateme
 | Check | Passing condition |
 | --- | --- |
 | CC-PFAD.1 Decision relation exists | A filled `PrincipleFrameworkArchitectureDecision@Context` relation exists before any ADR-like publication is treated as the decision. |
-| CC-PFAD.2 Framework-specific slots live | The decision uses at least one framework-specific slot: edition dependency, selected pattern set, relation graph, local monolith, name cards, source-return, quality route, or currentness route. |
+| CC-PFAD.2 Framework-specific slots live | The decision uses at least one framework-specific slot: edition dependency, selected pattern set, relation graph, publication carrier, access carrier, name cards, source-return, quality route, or currentness route. |
 | CC-PFAD.3 Generic owners reused | Rationale uses `E.9`; project architecture decision shape uses `C.32.PAD`; publication projection uses `C.32.ADR` or `E.17`. |
 | CC-PFAD.4 Alternatives and consequences present | Rejected alternatives, rationale, consequences, and repair or supersession conditions are recoverable. |
 | CC-PFAD.5 Source and name routes present | Source packs, source-return conditions, and required name-card work are named. |
@@ -142,7 +145,7 @@ The pattern also constrains ADR use. ADR-like records remain useful, but they be
 
 ### E.4.PFAD:10 - Rationale
 
-FPF already has decision, architecture decision, and ADR-projection patterns. The reason PFAD exists is narrower: framework authors repeatedly need the same framework-specific slots that generic decision patterns do not keep visible by default. Those slots are edition dependency, selected pattern set, relation structure, local monolith publication, source-return, naming, quality route, and currentness route.
+FPF already has decision, architecture decision, and ADR-projection patterns. The reason PFAD exists is narrower: framework authors repeatedly need the same framework-specific slots that generic decision patterns do not keep visible by default. Those slots are edition dependency, selected pattern set, relation structure, publication carrier, access carrier, source-return, naming, quality route, and currentness route.
 
 PFAD is therefore a specialization by obligation, not by vocabulary. If those obligations are not live, the specialization has no value.
 
@@ -162,7 +165,7 @@ PFAD is therefore a specialization by obligation, not by vocabulary. If those ob
 - **Coordinates with:** `C.32.ADR` and `E.17` for decision publication projections.
 - **Coordinates with:** `E.4` for family membership and selected structures.
 - **Coordinates with:** `E.4.PFR` for dependency, edition, compatibility, relation, and supersession effects.
-- **Coordinates with:** `F.18`, `G.2`, `G.11`, `E.21`, `E.23`, `C.33`, `C.34`, and `C.35` for name, source, currentness, quality, preservation, and produced-carrier claims.
+- **Coordinates with:** `F.18`, `G.2`, `G.11`, `E.4.DPF.DA`, `E.21`, `E.23`, `C.33`, `C.34`, and `C.35` for name, source, currentness, package adequacy, pattern quality, preservation, and produced-carrier claims.
 
 ### E.4.PFAD:End
 

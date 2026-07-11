@@ -4,7 +4,7 @@ Traditional document practice often treats one file as "the truth". Contemporary
 
 FPF separates the pieces:
 
-- the EntityOfConcern is the project thing under concern;
+- the EntityOfConcern is the project entity under concern;
 - a description is a reviewable knowledge object, or episteme, that describes it;
 - a view is a selected presentation of description material for a concern;
 - a viewpoint states the concern and selection discipline behind a view;
@@ -14,7 +14,9 @@ FPF separates the pieces:
 
 This is why a diagram is not the architecture, a dashboard is not evidence by itself, a model card is not model safety, and a generated explanation is not the system it explains. They can all be valuable, but each has a kind and a relation.
 
-Multi-view publication is therefore a strength, not a defect. A safety case, architecture description, dashboard, model card, evidence graph, and management summary may all concern the same project thing under different viewpoints. FPF's job is to keep them connected without letting one view silently replace another.
+Multi-view publication is therefore a strength, not a defect. A safety case, architecture description, dashboard, model card, evidence graph, and management summary may all concern the same project entity under different viewpoints. FPF's job is to keep them connected without letting one view silently replace another.
 
-This is also how FPF can work with distributed and AI-generated representations. A vector representation, solver model, graph, natural-language summary, and human-readable pattern can all be treated as descriptions or views when their relation to the project thing, source, viewpoint, and reliance boundary is declared. The question is not whether one carrier is more "real" than another. The question is what claim the publication can responsibly carry.
+This is also how FPF can work with distributed and AI-generated representations. A vector representation, solver model, graph, natural-language summary, and human-readable pattern can all be treated as descriptions or views when their relation to the project entity, source, viewpoint, and reliance boundary is declared. The question is not whether one carrier is more "real" than another. The question is what claim the publication can responsibly carry.
+
+A narrative or explanatory rendering is one such publication shape. It can help a reader follow complex structure over time, but it must still say what selected source structure it used, what it preserved, what it deliberately coarsened, abstracted, omitted, or lost, whose viewpoint it uses, and which named source basis or governing pattern receives the return when loss matters. If the rendering begins from an architecture description or view, that source basis may already be a coarsened account of actual, expected, or candidate structures; the narrative rendering must not hide that earlier loss. Narrative readability does not turn a rendering into evidence, assurance, permission, architecture, or the described object itself.
 

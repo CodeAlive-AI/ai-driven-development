@@ -3,17 +3,17 @@
 
 `U.Capability` is the FPF object for "can do within bounds".
 
-Use this pattern when a project claim says that a person, team, machine, software service, organization, composite cell, or other system can produce a kind of result, perform a class of work, or meet a performance threshold. The claim is about ability, not about who is assigned, which method is described, which work occurred, or what was promised to another party.
+Use this pattern when a project claim says that a person, team, machine, software service, organization, composite cell, or other system can produce a kind of result, perform a class of work, or meet a performance threshold. The claim is about a holder's capability instance, not about who is assigned, which method is described, which work occurred, or what was promised to another party.
 
-**Primary EntityOfConcern.** The EntityOfConcern is `U.Capability`: a dispositional property of a `U.System` that states the system's ability to perform or produce a class of work results within a declared envelope and measured bounds.
+**Primary EntityOfConcern.** The EntityOfConcern is `U.Capability`: an `E.24.UK`-admitted dependent durable U-kind name for holder-dependent capability instances. An individual `U.Capability` instance is a holder-dependent concrete governed object of a named `U.System`, recognized as that system's ability to perform a work family or produce a result class within a declared envelope, measure set, qualification window, and currentness condition. A statement, report row, certification, evidence relation, source-use relation, dashboard display, or currentness assessment about that instance is a neighboring governed record or relation, not the capability instance itself.
 
-**Primary working reader.** A manager, architect, engineer, safety assessor, scheduler, or model author who needs to decide whether a holder can be used for a work claim, method step, service promise, or architecture move without smuggling role assignment, method description, or past work into the ability claim.
+**Primary working reader.** A manager, architect, engineer, safety assessor, scheduler, or model author who needs to decide whether a holder can be used for a work claim, method step, service promise, or architecture move without smuggling role assignment, method description, past work, evidence, or quality wording into the capability instance.
 
-**First useful move.** Ask: who is the holder system, what work family or result class is claimed, under what envelope, with what measures, during which qualification window, and by which current evidence or source-use relation?
+**First useful move.** Ask: who is the holder system, what work family or result class is the ability about, under what envelope, with what declared measures, during which qualification window, and which separate statement, evidence relation, source-use relation, or currentness assessment currently supports reliance on that capability?
 
 **What goes wrong if missed.** A role label becomes a hidden proof of ability, a method description is treated as if it can perform work, a single successful run is generalized into a stable ability, or a promise is made without a measured capability behind it.
 
-**What this buys.** Capability becomes checkable and reusable: a work-admission claim can test role assignment, role state, method requirements, and capability thresholds separately.
+**What this buys.** Capability becomes checkable and reusable: a work-admission claim can test role assignment, role state, method-side admission conditions, and capability thresholds separately.
 
 **Not this pattern when.**
 
@@ -24,6 +24,9 @@ Use this pattern when a project claim says that a person, team, machine, softwar
 - If the current claim is dated performed work or planned work, use `A.15`, `A.15.1`, or `A.15.2`.
 - If the current claim is a promise to others, use the promise-content and commitment patterns.
 - If the current claim is evidence, source, status, assurance, publication, or description use of an episteme, use the direct episteme-use pattern. Do not make the episteme a capability holder.
+- If the current claim is one measured aspect with a declared scale, use `U.Characteristic` through `C.16.P`, `A.19`, and the current characteristic or scale owner.
+- If the current claim is a composite quality family such as availability, resilience, security, or maintainability, use `C.25` Q-Bundle.
+- If the current claim is an architecture-characteristic starter head, project criteria row, architecture eval reading, or architecture-description concern, use `C.32.HCS`, `C.32.ACS`, `C.32.ACE`, or `C.30` as applicable.
 
 ### A.2.2:1 - Problem Frame
 
@@ -35,7 +38,7 @@ In ordinary work, the same sentence often carries several typed values:
 - "The robot welded batch B at 10:20."
 - "The supplier promises 12 seams per minute."
 
-Only the second sentence is a `U.Capability` claim. The others may be role assignment, method description, performed work, or promise content. When FPF collapses them, project reasoning becomes brittle:
+Only the second sentence can support a `U.Capability` instance when the holder, work family, envelope, measures, and currentness conditions are recoverable. The sentence itself is a statement about the capability instance. The others may be role assignment, method description, performed work, or promise content. When FPF collapses them, project reasoning becomes brittle:
 
 1. **Role assignment becomes fake ability.** "Assigned as verifier" is treated as "able to verify".
 2. **Method description becomes fake ability.** A recipe or algorithm is treated as if it can execute itself.
@@ -46,34 +49,58 @@ Only the second sentence is a `U.Capability` claim. The others may be role assig
 
 ### A.2.2:2 - Kind and Boundary
 
-`U.Capability` is a system-side ability claim.
+`U.Capability` is retained as a dependent durable U-kind name under `E.24.UK`. A concrete `U.Capability` instance is the holder-dependent capability instance of a named `U.System`; its identity is grounded by the holder, work family or result class, envelope, measure set, qualification window, and currentness condition. The statement that asserts the ability, the evidence that supports reliance, and the fit predicate that tests work admission are separately governed records or relations rather than the `U.Capability` instance.
 
 ```text
-Capability:
+CapabilityUKindAdmissionDecision:
+  CandidateSpelling: U.Capability
+  Disposition: retained as dependent durable U-kind name
+  E24Settlement: dependent capability instance under the named U.System holder settlement, governed here by A.2.2
+  RootSubjectUKind: U.System holder whose ability is being stated
+  DependentInstance: holder-dependent concrete U.Capability instance
+  semanticArea: system ability, work admission, capability planning, and method threshold use
+  ontologicalNeighborhood: U.System holder, U.RoleAssignment, U.Method, U.MethodDescription, U.WorkPlan, U.Work, U.Characteristic, Q-Bundle, architecture-characteristic row, evidence relation, source-use relation, currentness assessment, and capability-fit predicate
+  IdentityGroundingOrRecognitionRule: holder plus work family or result class plus envelope plus measure set plus qualification window plus currentness condition
+  admissibleUse: state or test that a named holder can perform a work family or produce a result class within declared bounds for planning, promise support, role-method-work admission, or architecture move feasibility
+  nonUseBoundary: do not use U.Capability for statements, reports, evidence, source-use relations, currentness assessments, characteristics, Q-Bundles, architecture-characteristic rows, fit predicates, role assignments, method descriptions, work plans, or work occurrences
+  NonUSubstitutionBoundary: statements, evidence, source-use relations, currentness assessments, Q-Bundles, characteristics, architecture-characteristic rows, and fit predicates do not become U.Capability
+
+ConcreteCapabilityInstance:
   CapabilityHolderRef: U.System
   WorkFamilyOrResultClassRef:
   CapabilityEnvelope:
   CapabilityMeasureSet:
   QualificationWindow:
-  EvidenceOrSourceUseRefs:
-  CapabilityCurrentnessPredicate:
+  CapabilityCurrentnessCondition:
+  DependentInstancePolicy: dependent on holder identity and declared envelope/measure/window boundary
+
+SupportAndUseReferencesAroundCapability:
+  CapabilityStatementRefs?: governed episteme or publication records that describe the instance
+  EvidenceRelationRefs?: governed evidence relations that support reliance
+  SourceUseRelationRefs?: governed source-use relations used to justify or constrain the statement
+  CurrentnessAssessmentRefs?: dated assessment relations evaluating the currentness condition
+  CapabilityFitConditionRefs?: admission predicates or gate relations that test this instance for a use
 ```
 
 **CapabilityHolderRef.** The holder is a `U.System`: a physical system, cyber system, socio-technical system, organization, team, composite cell, software service as deployed system, or other acting holon admitted as system for the claim. A role assignment, method, method description, work record, episteme, publication, standard, or dashboard is not the capability holder merely because it appears in the sentence.
 
 **WorkFamilyOrResultClassRef.** The ability is about a class of work results or a method family the holder can enact. It may refer to a `U.Method`, `U.MethodDescription`, method family, result class, or work family, but the reference does not turn the method or description into the holder.
 
-**CapabilityEnvelope.** The envelope states the bounded conditions under which the ability is claimed: input range, environment, resources, configuration, system version, calibration state, staffing composition, access constraints, safety limits, or other current conditions.
+**CapabilityEnvelope.** The envelope states the bounded conditions under which the ability holds: input range, environment, resources, configuration, system version, calibration state, staffing composition, access constraints, safety limits, or other current conditions.
 
-**CapabilityMeasureSet.** The measures state the achieved or required bounds with units, scales, tolerances, success predicates, reliability, throughput, latency, precision, defect rate, or other characteristics.
+**CapabilityMeasureSet.** The measures state achieved or required bounds with units, scales, tolerances, success predicates, reliability, throughput, latency, precision, defect rate, or other declared characteristics. A measure may cite a `U.Characteristic`, Q-Bundle slot, or architecture-characteristic criteria row as an input for a capability-fit check, but that characteristic, Q-Bundle, or architecture row does not become the capability.
 
-**QualificationWindow.** Capability is stable enough to plan with but not timeless. A claim may depend on software version, calibration horizon, team training state, wear, operating season, regulatory state, or other temporal currentness relation.
+**QualificationWindow.** Capability is stable enough to plan with but not timeless. The instance may depend on software version, calibration horizon, team training state, wear, operating season, regulatory state, or other temporal currentness relation.
 
-**EvidenceOrSourceUseRefs.** Evidence, tests, certifications, prior work summaries, simulations, audit records, standards, and model results can justify a capability claim through direct evidence or source-use relations. They do not become the capability.
+**CapabilityStatementRefs.** A `CapabilityStatement` is a governed episteme or publication-side record that says a capability instance exists, describes its holder, envelope, measures, and window, or cites it for planning. It is not `U.Capability`, but it is still a governed record under its own episteme or publication pattern.
 
-**CapabilityCurrentnessPredicate.** The claim states what keeps the ability current and what lowers or reopens it.
+**EvidenceRelationRefs and SourceUseRelationRefs.** Evidence, tests, certifications, prior work summaries, simulations, audit records, standards, and model results can justify a capability statement through direct evidence or source-use relations. These are governed relations or records. They do not become the capability and do not become its holder.
 
-**Neighboring-term boundary.** When a neighboring pattern uses `U.WorkScope`, recover the set-valued condition part of `CapabilityEnvelope`: the inputs, environment, resources, configuration, and assumptions against which an intended work slice is checked. When it uses `U.WorkMeasures`, recover `CapabilityMeasureSet`. `JobSlice` names the intended work slice for a work-admission check. `QualificationWindow` names the temporal currentness relation for the capability claim. These are neighboring governed terms, not substitute names for `U.Capability`.
+**CurrentnessAssessmentRefs.** A currentness assessment is a dated assessment relation saying whether the capability instance remains usable under its qualification window and current conditions. It is not the capability instance, but it is still a governed assessment relation. `CapabilityCurrentnessCondition` states what must remain true; an assessment evaluates that condition.
+
+**CapabilityFitConditionRefs.** A capability-fit condition is an admission predicate, threshold, or gate relation that tests a holder capability and any declared characteristic, Q-Bundle, or architecture-characteristic inputs against a current role, method step, work plan, work occurrence, bounded context, or gate need. It is a governed relation or predicate. Unless a separate E.24.UK admission is written, it is not a `U.*` kind.
+
+**Neighboring-term boundary.** When a neighboring pattern uses `U.WorkScope`, recover the set-valued condition part of `CapabilityEnvelope`: the inputs, environment, resources, configuration, and assumptions against which an intended work slice is checked. When it uses `U.WorkMeasures`, recover `CapabilityMeasureSet`. `JobSlice` names the intended work slice for a work-admission check. `QualificationWindow` names the temporal currentness relation for the capability instance. These are neighboring governed terms, not substitute names for `U.Capability`.
 
 
 
@@ -81,16 +108,26 @@ Capability:
 
 Use `U.Capability` when the object under discussion is the holder's ability to achieve a result class within a declared envelope and measure set.
 
-Minimal capability statement:
+Minimal capability instance:
 
 ```text
-CapabilityStatement:
+ConcreteCapabilityInstance:
   holder: U.System
   canDo: WorkFamilyOrResultClass
   envelope: CapabilityEnvelope
   measures: CapabilityMeasureSet
   qualificationWindow: QualificationWindow
-  evidenceOrSourceUse: EvidenceOrSourceUseRefs
+  currentnessCondition: CapabilityCurrentnessCondition
+```
+
+Separate supporting record:
+
+```text
+CapabilityStatementRecord:
+  describedCapabilityRef: ConcreteCapabilityInstance
+  statementSourceRef:
+  evidenceOrSourceUseRefs:
+  currentnessAssessmentRefs?:
 ```
 
 Plain sentence form:
@@ -103,7 +140,7 @@ during <qualification window>,
 with <evidence or source-use relation>.
 ```
 
-This form is deliberately not a method description. It does not list the step order or algorithm. It also does not assign the holder to a role or assert that a work occurrence happened.
+This sentence form is a publication or statement about the capability instance. It is deliberately not a method description. It does not list the step order or algorithm. It also does not assign the holder to a role, assert that a work occurrence happened, prove an architecture characteristic, or make the evidence relation into the capability.
 
 ### A.2.2:4 - Separation From Neighboring Values
 
@@ -113,9 +150,9 @@ This form is deliberately not a method description. It does not list the step or
 | "The robot is assigned as welder." | `U.RoleAssignment`; add `U.Capability` only if the claim also says the robot can meet a welding envelope and measures. |
 | "The solver has the scheduling algorithm." | `U.MethodDescription` or deployed software-system relation; `U.Capability` only for the deployed system's ability to produce schedules within bounds. |
 | "The report has evidence capability." | Evidence-use relation around an episteme; no capability holder unless a system can perform evidential work. |
-| "The team did one successful run." | `U.Work` occurrence; capability only after a separate ability claim with envelope, measures, and currentness. |
-| "We promise five-day close." | Promise content and commitment; capability is the internal holder ability that makes the promise credible. |
-| "The architecture provides resilience capability." | Architecture or structure claim plus capability claim for the relevant system or composite, with measured resilience characteristics. |
+| "The team did one successful run." | `U.Work` occurrence; capability only after a separate capability instance is established with envelope, measures, and currentness. |
+| "We promise five-day close." | Promise content and commitment; capability is the holder-dependent capability instance that makes the promise credible. |
+| "The architecture provides resilience capability." | Architecture-characteristic or Q-Bundle material under `C.30`, `C.32.HCS`, `C.32.ACS`, and `C.25`; add `U.Capability` only when a named holder system has a capability instance to produce or maintain a result class within a capability envelope. Resilience characteristics may constrain a capability-fit condition; they are not capability by name. |
 
 ### A.2.2:5 - Work-Admission Use
 
@@ -126,7 +163,8 @@ WorkAdmissionCheck:
   roleAssignmentCurrent: A.2.1
   roleStateAdmitsWork: A.2.5
   methodStepRequires: A.3.1 or A.3.2
-  holderCapabilityMeets: A.2.2
+  holderCapabilityRef: A.2.2
+  capabilityFitCondition: admission predicate over declared capability measures and any named characteristic, Q-Bundle, or architecture-characteristic inputs
   performedWorkRecord: A.15.1 after execution
 ```
 
@@ -135,10 +173,11 @@ The checks are separate:
 - role assignment says who is acting in which context;
 - role state says whether that assignment is in a work-admitting state;
 - method or method description says what capability threshold is required;
-- capability says whether the holder can meet that threshold within the envelope and window;
+- capability names the holder's capability instance within the envelope, measure set, and window;
+- capability-fit condition tests whether that instance meets the current threshold or gate need;
 - performed work says what actually happened.
 
-Do not put the threshold into the role name. Do not treat a role assignment as proof of ability. Do not let a capability claim perform the work.
+Do not put the threshold into the role name. Do not treat a role assignment as proof of ability. Do not let a capability instance perform the work. Do not treat a fit predicate, Q-Bundle, architecture-characteristic row, evidence relation, or currentness assessment as the capability instance.
 
 ### A.2.2:6 - Worked Cases
 
@@ -146,15 +185,17 @@ Do not put the threshold into the role name. Do not treat a role assignment as p
 
 `RobotArm_A` is assigned as `WelderRole` on `AssemblyLine_2026`. That assignment alone says who is eligible to act in the line context.
 
-The capability claim is separate:
+The capability instance is separate; a statement or record may describe it:
 
 ```text
-Capability:
+ConcreteCapabilityInstance:
   holder: RobotArm_A
   canDo: Weld_MIG_v3 seam family
   envelope: steel grades S235-S355, ambient 18-30 C, argon mix 92-95 percent, torch T-MIG-07
   measures: bead width 6.0 mm plus or minus 0.2 mm, throughput up to 12 seams per minute, defect rate below 0.5 percent
   qualificationWindow: calibration valid through 2026-09-30
+  currentnessCondition: calibration and configuration remain inside the qualification window
+SupportAndUseReferencesAroundCapability:
   evidenceOrSourceUse: latest welding test report and calibration source relation
 ```
 
@@ -164,39 +205,39 @@ If a method step requires `WelderRole` and bead width tolerance below 0.2 mm, th
 
 `PlannerService_v4` is a deployed system. It may have capability to generate job-shop schedules for 50-500 jobs and 5-40 machines, with benchmark optimality above 0.95 and latency below 20 ms in `PlantScheduling_2026`.
 
-The algorithm paper and method description are not the capability. The deployed system has the capability only while its version, dependencies, input range, and operational measurements keep the claim current.
+The algorithm paper and method description are not the capability. The deployed system has the capability only while its version, dependencies, input range, and operational measurements satisfy the declared currentness condition; a benchmark report or model card is support for a statement about that instance.
 
 #### A.2.2:6.3 - Organization or Team
 
 `FinanceDept` can close books for eight legal entities under IFRS with ERP v12, staffing at or above six qualified people, and close duration below five business days. That is a capability of the organizational system.
 
-The monthly-close service promise is a promise content claim. The actual close for March 2026 is performed work. Staff assignments and role states are neighboring role claims. The capability claim keeps the ability of the department visible and measurable.
+The monthly-close service promise is a promise content claim. The actual close for March 2026 is performed work. Staff assignments and role states are neighboring role claims. The capability instance keeps the ability of the department visible and measurable; the management report describing it is a statement about that instance.
 
 #### A.2.2:6.4 - Episteme Anti-Case
 
-"ISO 26262 has safety capability" is not a capability claim. The standard is an episteme used as source, requirement, or assurance input. A safety engineering team or toolchain may have a capability to perform safety-case work using that standard within a declared envelope.
+"ISO 26262 has safety capability" is not a capability statement about a holder-dependent capability instance. The standard is an episteme used as source, requirement, or assurance input. A safety engineering team or toolchain may have a capability to perform safety-case work using that standard within a declared envelope.
 
 ### A.2.2:7 - Capability Currentness and Lowering
 
-Lower or reopen a capability claim when any of these changes:
+Lower or reopen a capability instance, or lower reliance on a statement about it, when any of these changes:
 
 - the holder system changes composition, version, calibration, staffing, training state, toolchain, or environment;
 - the envelope no longer covers the intended work slice;
 - measures no longer meet the required threshold;
 - the qualification window expires or becomes contested;
-- evidence, source-use, test, audit, or simulation relations become stale or are reclassified;
+- evidence, source-use, test, audit, or simulation relations become stale or are reclassified, lowering the support or currentness assessment rather than becoming the capability;
 - the method or method description changes the required capability threshold;
 - the role assignment or role state changes, causing a work-admission claim to fail even though capability remains true;
 - a composite holder changes dependency conditions.
 
-Repair the smallest value that changed. A stale calibration window lowers the capability claim; it does not rewrite the role value. A failed role assignment lowers work admission; it does not by itself lower the holder's measured ability.
+Repair the smallest object that changed. A stale calibration window lowers the capability currentness assessment and may lower reliance on the capability instance; it does not rewrite the role value. A failed role assignment lowers work admission; it does not by itself lower the holder's measured ability. A stale report lowers a statement or evidence relation before it lowers the capability instance itself.
 
 ### A.2.2:8 - Composite Capability
 
 A composite system may have a capability that none of its parts has alone. Treat the composite as the holder.
 
 ```text
-Capability:
+ConcreteCapabilityInstance:
   holder: Cell_3
   canDo: place 12 PCB per minute
   envelope: feeder, vision, head, controller, and operator conditions
@@ -205,35 +246,38 @@ Capability:
   dependencyNotes: feeder and vision subsystem conditions
 ```
 
-The capability belongs to `Cell_3`, not to every part and not to the method description. Dependencies may be named, but the whole-system capability remains a property of the composite holder.
+The concrete capability instance is asserted for `Cell_3`, not for every part and not for the method description. Dependencies may be named, but the bounded capability claim is about the composite holder.
 
 ### A.2.2:9 - Checklist
 
 | Check | Question |
 |---|---|
 | `CC-A2.2-01` | Is the holder a `U.System` or acting holon admitted as system for this claim? |
-| `CC-A2.2-02` | Does the capability statement name the work family or result class? |
-| `CC-A2.2-03` | Does it name the envelope: inputs, environment, configuration, resources, constraints, or conditions? |
-| `CC-A2.2-04` | Does it name measurable bounds with units, scales, thresholds, or predicates? |
-| `CC-A2.2-05` | Does it name the qualification window or other currentness predicate? |
-| `CC-A2.2-06` | Are evidence and source-use relations expressed as neighboring episteme-use values, not as capability holders? |
-| `CC-A2.2-07` | Are role assignment, role state, method requirement, performed work, and promise content kept separate? |
-| `CC-A2.2-08` | For work admission, are role and capability checks both visible when both are current? |
+| `CC-A2.2-02` | Does the capability instance name the work family or result class? |
+| `CC-A2.2-03` | Does the capability instance name the envelope: inputs, environment, configuration, resources, constraints, or conditions? |
+| `CC-A2.2-04` | Does the measure set bind measurable bounds to units, scales, thresholds, predicates, declared `U.Characteristic` values, Q-Bundle slots, or architecture-characteristic rows without making those inputs the capability? |
+| `CC-A2.2-05` | Does the capability instance name the qualification window and currentness condition, while dated currentness assessments remain separate relations? |
+| `CC-A2.2-06` | Are statements, evidence, source-use relations, certifications, reports, dashboards, and currentness assessments expressed as neighboring support records or relations, not as `U.Capability` or capability holders? |
+| `CC-A2.2-07` | Are role assignment, role state, method-side admission or fit condition, performed work, and promise content kept separate? |
+| `CC-A2.2-08` | For work admission, are role, capability instance, and capability-fit predicate all visible when all are current? |
 | `CC-A2.2-09` | For composite holders, is the capability stated at the whole whose ability is being claimed? |
-| `CC-A2.2-10` | Are lowering and reopen conditions local enough to change only the affected value? |
+| `CC-A2.2-10` | Are lowering and reopen conditions local enough to change only the affected capability instance, statement, evidence relation, currentness assessment, or fit predicate? |
 
 ### A.2.2:10 - Anti-Patterns and Repairs
 
 | Anti-pattern | Symptom | Repair |
 |---|---|---|
-| Role-as-capability | "The inspector role can detect this defect." | Keep the role value and role assignment; state capability for the holder system if measured detection ability is current. |
-| Assignment-as-capability | "Assigned, therefore able." | Use A.2.1 for assignment and A.2.2 for the ability claim. |
+| Role-as-capability | "The inspector role can detect this defect." | Keep the role value and role assignment; state capability for the holder system only when a currentness assessment supports reliance on the measured detection capability instance. |
+| Assignment-as-capability | "Assigned, therefore able." | Use A.2.1 for assignment and A.2.2 for the holder-dependent capability instance. |
 | Method-description-as-capability | "The procedure has capability." | Use `U.MethodDescription` for the episteme; use `U.Capability` for the system that can enact the method within bounds. |
-| Work-as-capability | "We did it once, so we can." | Keep the work occurrence; add a separate capability claim only when envelope, measures, and currentness are justified. |
+| Work-as-capability | "We did it once, so we can." | Keep the work occurrence; add a separate capability instance only when envelope, measures, and currentness are justified. |
 | Promise-as-capability | "The SLA is our capability." | Use promise content or commitment for what is offered; capability is the internal measured ability that makes the promise credible. |
 | Episteme-as-holder | "The report has assessment capability." | Use evidence, source, status, or assessment relation for the episteme; capability holder remains a system. |
 | Unbounded capability | "The tool can machine titanium." | Add material grade, tolerances, feed range, environment, version, qualification window, and measurement evidence. |
-| Capability threshold in role name | `HighPrecisionWelderRole` hides a measured threshold. | Keep role name clean; put precision threshold in method requirement and holder capability. |
+| Capability threshold in role name | `HighPrecisionWelderRole` hides a measured threshold. | Keep role name clean; put the precision threshold in the method-side admission or fit condition and the holder capability instance. |
+| Characteristic-as-capability | "Low latency is a capability." | Use `U.Characteristic` with declared scale for latency; add `U.Capability` only when a named holder can produce a result class within an envelope that includes the latency measure. |
+| Q-Bundle-as-capability | "Resilience is our capability." | Use `C.25` for the composite quality family; cite a capability only when a currentness assessment supports reliance on a holder-dependent capability instance and a fit predicate tests the relevant bundle slot. |
+| Architecture-row-as-capability | "Maintainability row gives capability." | Use `C.32.ACS` for the architecture-characteristic criteria row; it may constrain a capability-fit condition but is not `U.Capability`. |
 
 ### A.2.2:11 - Consequences
 
@@ -241,7 +285,7 @@ The capability belongs to `Cell_3`, not to every part and not to the method desc
 
 - Planning separates "can do" from "is assigned now".
 - Method steps can name capability thresholds without putting extra meaning into role names.
-- Work records can be judged against the capability claim current at the time of work.
+- Work records can be judged against the capability instance and fit predicate current at the time of work.
 - Promise content becomes less magical because the internal ability and measured envelope are explicit.
 - Composite-system ability can be stated at the right holder instead of scattered across parts.
 
@@ -257,10 +301,10 @@ The cost is intentional: without it, FPF cannot distinguish authorization, abili
 
 | Current practice or research line | What FPF takes | Practical implication |
 |---|---|---|
-| Capability-based planning in defense and enterprise architecture keeps ability, mission need, activities, systems, and portfolio planning separate. | `U.Capability` is ability with envelope and measures; it is not a role, method, work record, or promise. | A capability claim can be compared across candidate systems without selecting the implementation too early. |
-| Current model-based systems engineering, including SysML v2 work, increases semantic precision and traceability between system model elements, requirements, measures, and stakeholder concerns. | Capability claims name holder, result class, envelope, measures, evidence, and currentness as separate typed values. | The reader can see which value changed when a requirement, holder, measure, or context changes. |
-| Current uncertainty and verification work for cyber-physical and autonomous systems treats operating conditions and currentness as first-class modeling concerns. | Qualification windows, evidence or source-use refs, and lowering triggers are part of the capability pattern, not later paperwork. | A stale calibration, changed version, or out-of-envelope input lowers the capability claim locally. |
-| Modern access-control and zero-trust practice separates subject, role or attribute relation, current state, policy decision, and resource action. | A role assignment or role state may admit a work attempt, but it does not grant capability. | "Allowed to act" and "able to achieve the measured result" remain separate checks. |
+| Capability-based planning in defense and enterprise architecture keeps ability, mission need, activities, systems, and portfolio planning separate. | The `U.Capability` name governs holder-dependent capability instances with envelope and measures; each instance is not a role, method, work record, promise, statement, evidence record, or quality bundle. | A capability instance can be compared across candidate systems without selecting the implementation too early. |
+| Current model-based systems engineering, including SysML v2 work, increases semantic precision and traceability between system model elements, requirements, measures, and stakeholder concerns. | Capability instances name holder, result class, envelope, measures, and qualification window; statements, evidence, and currentness assessments remain separate typed values. | The reader can see which object changed when a requirement, holder, measure, source, or context changes. |
+| Current uncertainty and verification work for cyber-physical and autonomous systems treats operating conditions and currentness as first-class modeling concerns. | Qualification windows and lowering triggers are part of the capability instance boundary; evidence, source-use refs, and currentness assessments support or lower reliance without becoming capability. | A stale calibration, changed version, or out-of-envelope input lowers the currentness assessment or capability instance locally. |
+| Modern access-control and zero-trust practice separates subject, role relation, current state, policy decision, and resource action. | A role assignment or role state may admit a work attempt, but it does not grant capability. | "Allowed to act" and "able to achieve the measured result" remain separate checks. |
 
 Source-currentness note: DoDAF and TOGAF are used here as stable capability-planning practice lineage, not as the full current frontier. Current pressure comes from SysML v2 and 2025-2026 MBSE work on semantic precision, uncertainty, stakeholder-context formalization, and model integration. The NIST zero-trust line is used only for the split between current authorization and measured ability.
 
@@ -272,16 +316,19 @@ Source-currentness note: DoDAF and TOGAF are used here as stable capability-plan
 | `A.2` | Governs `U.Role`; role values do not carry capability by label. |
 | `A.2.1` | Governs `U.RoleAssignment`; assignment relation can cite a holder that separately has capability. |
 | `A.2.5` | Governs role states and enactable-state admission; role state is not capability. |
-| `A.2.7` | Governs role relation structure; role-requirement substitution or incompatibility does not create capability structure. |
+| `A.2.7` | Governs role relation structure; role-admission substitution or incompatibility does not create capability structure. |
 | `A.3.1` | Governs `U.Method`; method may require capability thresholds. |
 | `A.3.2` | Governs `U.MethodDescription`; a method description can describe required capability. |
-| `A.3.3` | Governs `U.Dynamics`, the state-space and transition-law episteme; dynamics may explain or predict capability but is not the holder ability. |
+| `A.3.3` | Governs `U.Dynamics`, the state-space and transition-law episteme; dynamics may explain or predict capability but is not the holder-dependent capability instance. |
 | `A.15`, `A.15.1`, `A.15.2` | Govern method, plan, and performed work alignment; capability is one input to work admission, not work itself. |
 | `A.6.5` | Supplies SlotSpec discipline for capability relation fields and capability-use relations. |
 | `A.6.F` | Repairs function and functionality wording that may hide capability, method, work, math function, or functional-architecture claims. |
 | `A.6.RSIR` | Recovers relation, signature, interface, role, and slot wording before capability repair when the source sentence is mixed. |
 | `C.27` | Governs temporal currentness, windows, rhythm, and drift when capability timing is material. |
-| `C.2.1`, `A.10`, `B.3`, `C.28`, `F.10`, `E.17` | Govern episteme, evidence, assurance, counterfactual, status, and publication-use relations that may justify or qualify a capability claim. |
+| `C.2.1`, `A.10`, `B.3`, `C.28`, `F.10`, `E.17` | Govern episteme, evidence, assurance, counterfactual, status, and publication-use relations that may justify or qualify a statement or reliance use about a capability instance. |
+| `C.16.P`, `A.19` | Govern characteristic, scale, and characteristic-space recovery when capability measures depend on declared measured aspects. |
+| `C.25` | Governs composite quality families and Q-Bundles that may supply slots for capability-fit checks. |
+| `C.30`, `C.32.HCS`, `C.32.ACS`, `C.32.ACE` | Govern architecture-characteristic material, project criteria rows, and eval readings that may constrain capability use without becoming `U.Capability`. |
 | Promise-content and commitment patterns | Govern outward promise and commitment relations; a promise or commitment claim may cite a capability relation, but capability does not become promise or commitment. |
 
 ### A.2.2:14 - Excluded Objects
@@ -293,9 +340,13 @@ Do not use `U.Capability` as the current object for:
 - work plan, work occurrence, run record, or measurement trace;
 - evidence graph, source record, model card, standard, report, dashboard, publication, or specification-use relation;
 - promise content, commitment, permission, authority relation, or policy decision;
+- `U.Characteristic`, scale row, coordinate, score, metric, indicator, or threshold;
+- `C.25` Q-Bundle, quality-family label, mechanism, status, or evidence slot;
+- architecture-characteristic starter head, project criteria row, eval program, eval reading, selected-structure adequacy claim, or architecture-description concern;
+- capability-fit predicate, gate, admission relation, or work-entry readiness record;
 - structural part, module, interface, port, or functional structure unless the current claim is the ability of a holder system expressed through that structure.
 
-These values may be related to a capability claim. They do not become the capability by adjacency.
+These values may be related to a capability instance, a statement about it, or a fit check over it. They do not become the capability by adjacency. Name the neighboring value, record, relation, or predicate through its own governing pattern when that neighboring claim is current.
 
 ### A.2.2:End
 

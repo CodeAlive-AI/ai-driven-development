@@ -9,7 +9,7 @@ The old open-world versus closed-world distinction is a useful didactic picture.
 FPF does not transform the open world into a closed one. It lets a project build small closed worlds for declared purposes:
 
 - a bounded context states which meanings and invariants are current;
-- an EntityOfConcern states what project thing the reasoning is about;
+- an EntityOfConcern states what project entity the reasoning is about;
 - a description states what can be relied on and under what relation;
 - evidence and assurance state what claim is credible enough for the local use;
 - a gate or decision states what boundary is crossed;
