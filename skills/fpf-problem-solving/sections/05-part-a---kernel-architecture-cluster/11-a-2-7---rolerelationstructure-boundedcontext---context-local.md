@@ -5,7 +5,7 @@
 
 ### A.2.7:0.1 - Kind Settlement
 
-**Use this pattern when** a project needs context-local role substitution, incompatibility, factor, qualification, or bundle relations without turning labels or role-algebra notation into a second ontology.
+**Use this pattern when** a project needs context-local role substitution, incompatibility, factor, qualification, bundle relations, or role-decomposition repair without turning labels or role-algebra notation into a second ontology.
 
 **What goes wrong if missed.** Role labels start carrying type, capability, method, work, evidence, or permission claims, and a representation lens starts replacing the role relation structure in life.
 
@@ -15,17 +15,17 @@ A.2.7 does not admit `U.RoleAlgebra` as a durable U-kind. The governed object is
 
 `RoleRelationStructure@BoundedContext` is the FPF object for context-local relations among role descriptions, declared role values, local role expressions, role-bundle expressions, and role-assignment-admission uses. It is not a new `U.*` kind beside `U.Role`; it is a selected relation structure over role-side values inside one bounded context. When project prose calls this "role architecture", the FPF object is still the selected role-relation structure in life; a role-algebra, graph, matrix, embedding, distributed, or neural description is a lens over that structure, not the structure itself and not an operation on holder systems. Coupled method relations are governed symmetrically as `MethodRelationStructure@BoundedContext` under `A.3.1`, `A.3.2`, `A.15`, `G.5`, or a direct method-composition pattern when current; A.2.7 names the role-relation side and the bridge to role-method naming.
 
-Use this pattern when a method, work-admission rule, staffing rule, safety case, governance rule, or role description needs to say that one role value can satisfy another role requirement, two roles cannot be held together by the same holder during the same window, a role expression has a factor or domain qualification, or a frequent conjunction of roles is worth naming.
+Use this pattern when a method, work-admission rule, staffing rule, safety case, governance rule, or role description needs to say that one role value can satisfy a role-admission condition stated with another role value, two roles cannot be held together by the same holder during the same window, a role expression has a factor or domain qualification, a role-decomposition claim needs grounding, or a frequent conjunction of roles is worth naming.
 
 **Primary EntityOfConcern.** The EntityOfConcern is `RoleRelationStructure@BoundedContext`: a context-local role-relation and role-expression structure in one `U.BoundedContext`. Algebraic notation, matrices, partial orders, products, graphs, embeddings, neural representations, or other mathematical or representation expressions are descriptions or lenses of that structure. The role architecture in life is the selected relation structure among role values and role expressions; the lens is not the holder, not the performed work, not the living system, not the method, and not the role assignment.
 
-**Primary working reader.** A manager, architect, method author, safety assessor, or model author who needs role-requirement substitution, separation-of-duties, role-factor or qualification expression, role-bundle expression, or ordinary name guidance without turning the role relation structure into capability, method, holder, work, evidence, status, or kind hierarchy.
+**Primary working reader.** A manager, architect, method author, safety assessor, or model author who needs role-admission substitution, separation-of-duties, role-factor or qualification expression, role-bundle expression, or ordinary name guidance without turning the role relation structure into capability, method, holder, work, evidence, status, or kind hierarchy.
 
-**First useful move.** Name the bounded context, the role descriptions or role values being related, the local role expression or relation being claimed, and the assignment, method, work-admission, naming, or bridge check that will use that relation. Use a role-algebra lens only when mathematical notation helps state or check that relation.
+**First useful move.** Name the bounded context, the role descriptions or role values being related, the local role expression or relation being claimed, and the assignment, method, work-admission, naming, or bridge check that will use that relation. If the claim decomposes a role, first decide whether the recovered object is role-admission substitution, factor or qualification, bundle expression, separate role value, role-state refinement, capability-fit condition, responsibility, permission, commitment, or obligation relation, method/work decomposition, or only ordinary prose. Use a role-algebra lens only when mathematical notation helps state or check that relation.
 
 **What goes wrong if missed.** Role names start acting like type hierarchy, org-chart hierarchy, permission policy, capability model, method family, staffing plan, or cross-context translation. Then FPF grows a second ontology beside `U.Role`, `U.RoleAssignment`, `U.Capability`, and method or work patterns, or treats algebraic notation as if it were the object in life.
 
-**What this buys.** Context-local role relation structure gives a small, replayable set of role relations for role assignment, method-step checks, naming, and bridge work while keeping ability, work, method, evidence, and status claims in their governing patterns. Role-algebra notation remains a lens for describing those relations, not a substitute ontology.
+**What this buys.** Context-local role relation structure gives a small, replayable set of role relations for role assignment, method role-admission checks, naming, and bridge work while keeping ability, work, method, evidence, and status claims in their governing patterns. Role-algebra notation remains a lens for describing those relations, not a substitute ontology.
 
 **Not this pattern when.**
 
@@ -44,13 +44,15 @@ Use this pattern when a method, work-admission rule, staffing rule, safety case,
 
 **What goes wrong if missed.** Role labels act as type hierarchy, org chart, permission, capability, method family, staffing plan, or cross-context equivalence; mathematical notation then starts replacing the role relation structure in life.
 
-**What this buys.** Role-requirement substitution, incompatibility, role factors, and role bundles become inspectable local relations while role assignment, capability, method, work, evidence, source, status, and publication claims stay with their governing patterns.
+**What this buys.** Role-admission substitution, incompatibility, role factors, and role bundles become inspectable local relations while role assignment, capability, method, work, evidence, source, status, and publication claims stay with their governing patterns.
 
 Work governed by role values and role assignments often needs three small claims:
 
-1. One role value can satisfy another role requirement in the same context when a role-requirement substitution relation is declared.
+1. One role value can satisfy a role-admission condition stated with another role value in the same context when a role-admission substitution relation is declared.
 2. Two roles are incompatible for the same holder during overlapping windows.
 3. A recurring conjunction of roles can be named as a role bundle expression.
+
+Role decomposition is not a fourth primitive and not evidence of role holonhood. It prompts recovery of one of the declared relations above, a role-state refinement under `A.2.5`, a separate role value under `A.2`, a capability, responsibility, permission, commitment, or obligation relation under its direct owner, or a coupled method/work decomposition under `A.15`.
 
 Without a local role relation structure, teams usually encode those claims in the wrong objects:
 
@@ -58,19 +60,19 @@ Without a local role relation structure, teams usually encode those claims in th
 - a separation-of-duties rule is written as a deontic slogan rather than an incompatibility relation over assignments;
 - a role bundle becomes a new holder, capability, work product, or method;
 - a cross-context label match is treated as role equivalence;
-- method requirements smuggle capability or work claims into role names.
+- method role-admission wording smuggles capability or work claims into role names.
 
 A.2.7 keeps the role relation structure small and local. It says how role values, role descriptions, and role expressions relate; it does not say who holds them, whether holders are able, whether work happened, or whether an episteme proves something. Algebraic, graph, factor, embedding, distributed, neural, or other mathematical descriptions are optional lenses over that structure.
 
 ### A.2.7:1.0 - Problem
 
-A combined role expression such as engineer-roboticist, inspector-auditor, or musician-teacher can hide several different claims: a local role-requirement substitution, a role bundle, an incompatibility, a holder assignment, a capability claim, or a method/work coupling. The problem is to recover the local role relation structure without minting a new universal role kind or treating an algebraic, graph, factor, embedding, or neural description as the role structure itself.
+A combined role expression such as engineer-roboticist, inspector-auditor, or musician-teacher can hide several different claims: a local role-admission substitution, a role bundle, a factor or qualification, an incompatibility, a holder assignment, a capability claim, a responsibility, permission, commitment, or obligation relation, a role-state refinement, or a method/work coupling. The problem is to recover the local role relation structure without minting a new universal role kind, treating role decomposition as mereological parthood, or treating an algebraic, graph, factor, embedding, or neural description as the role structure itself.
 
 ### A.2.7:1.1 - Forces
 
 | Force | Tension |
 |---|---|
-| Local relation vs universal type | A role-requirement substitution is valid inside one bounded context; it must not become kind subsumption or a universal role taxonomy. |
+| Local relation vs universal type | A role-admission substitution is valid inside one bounded context; it must not become kind subsumption or a universal role taxonomy. |
 | Life structure vs representation lens | Algebra, graph, matrix, embedding, or neural representation may describe the selected role relation structure; the lens is not the holder, role assignment, capability, method, or work. |
 | Compact naming vs hidden bundle | Ordinary names such as engineer-roboticist can help when the context declares the relation or bundle; they hide work when they silently combine independent roles or methods. |
 | Role-method coupling vs collapse | Role and method relation structures often appear together, but method, method family, work plan, and performed work keep their direct governing patterns. |
@@ -85,7 +87,7 @@ RoleRelationStructure:
   RoleDescriptionRefs?:
   RoleValueSet:
   RoleExpressionSet?:
-  RoleRequirementSubstitutionSet:
+  RoleAdmissionSubstitutionSet:
   IncompatibilityRelationSet:
   FactorOrQualificationExpressionSet?:
   BundleExpressionSet:
@@ -99,9 +101,9 @@ RoleRelationStructure:
 
 **RoleValueSet.** The structure ranges over `U.Role` values governed by `A.2`.
 
-**RoleExpressionSet.** The structure may include context-local role expressions such as qualified roles, bundle expressions, or labels that ordinary prose uses before a durable role value is declared.
+**RoleExpressionSet.** The structure may include context-local role expressions such as qualified roles, bundle expressions, decomposition candidates, or labels that ordinary prose uses before a durable role value is declared.
 
-**RoleRequirementSubstitutionSet.** The context may declare `AcceptedRoleForRequirement <= RequiredRole` as a role-requirement substitution relation. This is a local admissibility relation for method, work-admission, staffing, safety, or governance checks. It is not kind subsumption, org-chart rank, capability evidence, source-label equivalence, or public naming.
+**RoleAdmissionSubstitutionSet.** The context may declare `AcceptedAssignmentRole <= AdmissionConditionRole` as a role-admission substitution relation. This is a local admissibility relation for method, work-admission, staffing, safety, or governance checks. It is not kind subsumption, org-chart rank, capability evidence, source-label equivalence, or public naming.
 
 **IncompatibilityRelationSet.** The context may declare `RoleA incompatibleWith RoleB`. This means the same holder cannot use overlapping role assignments for both roles in the same bounded context and window when that incompatibility is current for the work claim.
 
@@ -115,17 +117,32 @@ RoleRelationStructure:
 
 ### A.2.7:3 - Role-Relation Expressions
 
-#### A.2.7:3.1 - Role-Requirement Substitution
+#### A.2.7:3.0 - Role Decomposition Boundary
 
-Use role-requirement substitution when one role value can satisfy another required role in the same bounded context.
+Start from the object claim, not from the word used for it. If a role is decomposed, the admissible repairs are:
+
+- role-admission substitution when one role assignment may satisfy a role-admission condition stated with another role value;
+- factor or qualification when one role expression narrows a role by domain, practice, method family, work field, or context;
+- bundle expression when several independent role assignments must be held together;
+- separate role value when the bounded context needs its own role description, state expectations, capability-fit conditions, and method or work relations;
+- role-state refinement under `A.2.5` when only enactable-state detail changes;
+- capability-fit condition, responsibility relation, permission, commitment, or obligation under the direct owner when the decomposition actually names those objects;
+- method or work decomposition under `A.15` when the source actually divides method into submethods or work into work-part relations.
+
+Do not use role `partOf`. `U.Role` is a root work-facing role value under `A.2`, not an admitted holon kind under `A.1`.
+Do not infer role parts from slots. `RoleAssignment`, role-state relations, evidence-use relations, and role-relation structures may declare SlotSpecs under `A.6.5`; those SlotSpecs are relation positions. Role descriptions may have episteme constituents. Neither case supplies parts of the `U.Role` value.
+
+#### A.2.7:3.1 - Role-Admission Substitution
+
+Use role-admission substitution when one role value can satisfy a role-admission condition stated with another role value in the same bounded context.
 
 ```text
 SeniorWeldingInspector <= WeldingInspector
 ```
 
-Read this as: an assignment to `SeniorWeldingInspector` may satisfy a method or work-admission requirement for `WeldingInspector` when the bounded context declares that substitution and the assignment window is current.
+Read this as: an assignment to `SeniorWeldingInspector` may satisfy a method or work-admission condition stated with `WeldingInspector` when the bounded context declares that substitution and the assignment window is current.
 
-The relation is not kind subsumption. `SeniorWeldingInspector` is not a subtype of a system kind; it is a role value related to another role value for local requirement satisfaction. It is also not capability evidence, public naming, or method identity. A senior inspector role may still require a separate capability claim under `A.2.2`, a method relation under `A.3.1`/`A.3.2`, or a naming settlement under `F.5`/`F.18`.
+The relation is not kind subsumption. `SeniorWeldingInspector` is not a subtype of a system kind; it is a role value related to another role value for local admission satisfaction. It is also not capability evidence, public naming, or method identity. A senior inspector role may still need a separate capability-fit claim under `A.2.2`, a method relation under `A.3.1`/`A.3.2`, or a naming settlement under `F.5`/`F.18`.
 
 #### A.2.7:3.2 - Role Incompatibility
 
@@ -147,16 +164,17 @@ IncidentLeadOnCall := IncidentCommander and Communicator and DecisionMaker
 
 The bundle expression is satisfied by current assignments to all component roles under the same bounded context and required window. It is not a product of role values, not a new holder, not a method, and not a capability.
 
-A bundle expression becomes a durable role value only when the bounded context declares it as a role with its own role description, role-state expectations, capability requirements, and method or work relations where current.
+A bundle expression becomes a durable role value only when the bounded context declares it as a role with its own role description, role-state expectations, capability-fit conditions, and method or work relations where current.
 
 ### A.2.7:4 - How Role Relation Structure Is Used
 
 Role relation structure is normally used by neighboring patterns as one selected structure, sometimes informally called the local role architecture:
 
 ```text
-MethodStepRequirement:
-  requiredRole: WeldingInspector
-  acceptedAssignmentRole: SeniorWeldingInspector
+MethodRoleAdmissionCheck:
+  methodRef: WeldInspectionMethod
+  requiredRoleValue: WeldingInspector
+  proposedAssignmentRoleValue: SeniorWeldingInspector
   substitutionRef: SeniorWeldingInspector <= WeldingInspector
 ```
 
@@ -168,11 +186,11 @@ WorkAdmissionCheck:
   window: AssignmentWindow
 ```
 
-The role relation structure supplies one relation used by the check. The method, method family, method relation structure, work plan, performed work, capability envelope, and evidence use remain governed by their direct patterns. When a method relation or method composition structure also needs to be named, the current object is `MethodRelationStructure@BoundedContext` under `A.3.1`, `A.3.2`, `A.15`, `G.5`, or a direct method-composition pattern when current; method-algebra notation is a lens over that structure, not a hidden product of roles.
+The role relation structure supplies one role-substitution relation used by the method role-admission or work-admission check. The method, method family, method relation structure, work plan, performed work, capability envelope, and evidence use remain governed by their direct patterns. When a method relation or method composition structure also needs to be named, the current object is `MethodRelationStructure@BoundedContext` under `A.3.1`, `A.3.2`, `A.15`, `G.5`, or a direct method-composition pattern when current; method-algebra notation is a lens over that structure, not a hidden product of roles.
 
 #### A.2.7:4.1 - Naming role-relation and role-method expressions
 
-Role relation work may leave behind something people need to name in ordinary project prose. The named object is not always an atomic `U.Role` value. It may be a holder-in-role statement, a context-local role expression, a role-requirement substitution relation, an incompatibility relation, a role-bundle expression, a durable combined role value, a coupled role-method expression, a method name, or a work name.
+Role relation work may leave behind something people need to name in ordinary project prose. The named object is not always an atomic `U.Role` value. It may be a holder-in-role statement, a context-local role expression, a role-admission substitution relation, an incompatibility relation, a role-bundle expression, a durable combined role value, a coupled role-method expression, a method name, or a work name.
 
 Recover the named object before choosing the label:
 
@@ -190,11 +208,11 @@ Recover the named object before choosing the label:
 
 Hyphenation is not algebra by itself. Use a hyphenated ordinary label when it helps a reader see a recovered factor, domain, practice, method-family qualification, or combined role expression. Use "and" when the current point is multiple independent role assignments. Do not mechanically concatenate operands into a Tech label.
 
-The math-lens boundary is narrow. A role-algebra, graph, matrix, embedding, distributed, or neural representation is a lens over role values, role-requirement substitution relations, incompatibility relations, role-factor or qualification expressions, and role-bundle expressions. The lens is not itself the role, holder, assignment, method, work, or capability. The name attaches to the recovered object or expression, not to the notation that helped recover it.
+The math-lens boundary is narrow. A role-algebra, graph, matrix, embedding, distributed, or neural representation is a lens over role values, role-admission substitution relations, incompatibility relations, role-factor or qualification expressions, and role-bundle expressions. The lens is not itself the role, holder, assignment, method, work, or capability. The name attaches to the recovered object or expression, not to the notation that helped recover it.
 
 ### A.2.7:5 - Archetypal Grounding - Worked Cases
 
-#### A.2.7:5.1 - Role-Requirement Substitution Without Capability Smuggling
+#### A.2.7:5.1 - Role-Admission Substitution Without Capability Smuggling
 
 `PlantMaintenance_2026` declares:
 
@@ -202,7 +220,7 @@ The math-lens boundary is narrow. A role-algebra, graph, matrix, embedding, dist
 SeniorHydraulicsTechnician <= HydraulicsTechnician
 ```
 
-A method step requiring `HydraulicsTechnician` may accept an assignment to `SeniorHydraulicsTechnician`. This does not prove that the technician has the pressure-test capability. The method step may separately require `PressureTestCapability` under `A.2.2`.
+A method-description source or work-admission check that states `HydraulicsTechnician` as a role-admission condition may accept an assignment to `SeniorHydraulicsTechnician`. This does not prove that the technician has the pressure-test capability. The same source or admission check may separately state `PressureTestCapability` as a capability-fit condition under `A.2.2`.
 
 #### A.2.7:5.2 - Incompatibility for Independence
 
@@ -222,7 +240,7 @@ The same holder cannot use overlapping assignments for both roles when approving
 IncidentLeadOnCall := IncidentCommander and Communicator and DecisionMaker
 ```
 
-This is a reusable role-bundle expression for method requirements. It does not state that one person has incident-management capability; that remains a capability claim. It does not state that incident work happened; that remains a work claim.
+This is a reusable role-bundle expression for method role-admission checks. It does not state that one person has incident-management capability; that remains a capability claim. It does not state that incident work happened; that remains a work claim.
 
 #### A.2.7:5.4 - Naming Engineer-Roboticist and Musician
 
@@ -255,7 +273,7 @@ Robot-engineering, music performance, and teaching robots music are method or wo
 
 Role relation structure is context-local. Matching role labels across contexts are not enough.
 
-`ArticleAssessorRole:JournalContext` and `SafetyAssessorRole:SafetyCaseContext` may share a source label, but a role-requirement substitution or incompatibility relation in one context does not transfer to the other context by label. Cross-context reuse, bridge, translation, public naming, or semantic alignment uses F-family context and naming patterns.
+`ArticleAssessorRole:JournalContext` and `SafetyAssessorRole:SafetyCaseContext` may share a source label, but a role-admission substitution or incompatibility relation in one context does not transfer to the other context by label. Cross-context reuse, bridge, translation, public naming, or semantic alignment uses F-family context and naming patterns.
 
 ### A.2.7:6.1 - Bias-Annotation
 
@@ -267,23 +285,25 @@ A.2.7 blocks two biases. The first is role nominalism: a convenient role label s
 |---|---|
 | `CC-A2.7-01` | Is the bounded context named? |
 | `CC-A2.7-02` | Are the related values `U.Role` values governed by A.2? |
-| `CC-A2.7-03` | Is each `<=` claim framed as same-context role-requirement substitution rather than kind hierarchy or generic specialization? |
+| `CC-A2.7-03` | Is each `<=` claim framed as same-context role-admission substitution rather than kind hierarchy or generic specialization? |
 | `CC-A2.7-04` | Is incompatibility checked over role assignments, holders, and overlapping windows rather than over labels alone? |
 | `CC-A2.7-05` | Is a bundle expression kept separate from holder, capability, method, and performed work? |
-| `CC-A2.7-06` | Do capability requirements use A.2.2? |
-| `CC-A2.7-07` | Do assignment and state checks use A.2.1 and A.2.5? |
-| `CC-A2.7-08` | Do method claims use A.3 patterns and work claims use A.15 patterns? |
-| `CC-A2.7-09` | Do cross-context equivalence and translation claims use F-family patterns? |
-| `CC-A2.7-10` | Does any evidence, source, approval, status, assurance, publication, description, or strict-distinction claim use `C.2.1`, `A.10`, `B.3`, `E.17.*`, `E.24.PUB`, or `A.7` rather than expressed as role relation structure or a lens over it? |
+| `CC-A2.7-06` | Has any role decomposition claim been recovered as role-admission substitution, factor or qualification, bundle, separate role value, role-state refinement, capability-fit condition, responsibility, permission, commitment, or obligation relation, method/work decomposition, or ordinary prose rather than role `partOf`? |
+| `CC-A2.7-07` | Do capability-fit conditions use A.2.2? |
+| `CC-A2.7-08` | Do assignment and state checks use A.2.1 and A.2.5? |
+| `CC-A2.7-09` | Do method claims use A.3 patterns and work claims use A.15 patterns? |
+| `CC-A2.7-10` | Do cross-context equivalence and translation claims use F-family patterns? |
+| `CC-A2.7-11` | Does any evidence, source, approval, status, assurance, publication, description, or strict-distinction claim use `C.2.1`, `A.10`, `B.3`, `E.17.*`, `E.24.PUB`, or `A.7` rather than expressed as role relation structure or a lens over it? |
 
 ### A.2.7:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Symptom | Repair |
 |---|---|---|
 | Role relation structure as type hierarchy | `EngineerRole <= HumanSystem`. | Keep role relation over `U.Role` values; use kind taxonomy only for kinds. |
-| Role relation structure as org chart | "Manager is above Engineer, therefore satisfies Engineer." | Declare same-context role-requirement substitution only when that role-requirement relation is intended. |
-| Role-requirement substitution as capability model | "Senior role implies precision capability." | Keep the substitution relation separate; add `U.Capability` claim for measured ability if current. |
+| Role relation structure as org chart | "Manager is above Engineer, therefore satisfies Engineer." | Declare same-context role-admission substitution only when that admission relation is intended. |
+| Role-admission substitution as capability model | "Senior role implies precision capability." | Keep the substitution relation separate; add `U.Capability` claim for measured ability if current. |
 | Bundle as new holder | `IncidentLeadOnCall` is treated as a person or team. | Treat it as role-bundle expression unless a role value or holder is separately declared. |
+| Role decomposition as role part | `AssistantReviewerRole partOf ReviewerRole` is asserted. | Recover the relation: role-admission substitution, factor or qualification, bundle expression, separate role value, role-state refinement, capability-fit condition, responsibility, permission, commitment, or obligation relation, method/work decomposition, or ordinary prose. Do not use role `partOf` for `U.Role`. |
 | Incompatibility as slogan | "Approver is independent" without relation. | State the incompatible role values, holder relation, bounded context, and overlapping window condition. |
 | Cross-context label equivalence | Same role label in two contexts is treated as the same role relation structure. | Use F-family bridge or naming patterns; do not import role relations by label. |
 | Episteme as role relation structure | A standard, report, or dashboard is put into role relation structure. | Use `C.2.1`, `A.10`, `B.3`, `E.17.*`, `E.24.PUB`, or `A.7` for the source, evidence, status, assurance, publication, description, or strict-distinction claim being made. |
@@ -292,7 +312,7 @@ A.2.7 blocks two biases. The first is role nominalism: a convenient role label s
 
 **Benefits.**
 
-- Method requirements can accept declared role substitutions without encoding taxonomy in every method step.
+- Method role-admission checks can use declared role substitutions without encoding taxonomy in every method-description source.
 - Separation-of-duties and independence claims become inspectable relations over assignments and windows.
 - Frequent role conjunctions can be named without creating fake holders or capabilities.
 - Role relation structure remains small enough to use in ordinary project work.
@@ -301,7 +321,7 @@ A.2.7 blocks two biases. The first is role nominalism: a convenient role label s
 
 - Contexts need to declare their role relations instead of relying on job-title intuition.
 - Some role-like source labels need F-family cross-context repair before role relation structure can be reused.
-- Capability and method requirements need separate claims when role labels used to hide them.
+- Capability-fit conditions and method role-admission conditions need separate claims when role labels used to hide them.
 
 ### A.2.7:10 - Rationale
 
@@ -324,7 +344,7 @@ Source-currentness note: RBAC and separation-of-duties are stable lineage, not t
 |---|---|
 | `A.1.1` | Supplies `U.BoundedContext`, the locality boundary for role relation structure. |
 | `A.2` | Governs `U.Role` values ranged over by role relation structure. |
-| `A.2.1` | Governs `U.RoleAssignment`, the relation checked when role-requirement substitutions, incompatibilities, or bundles are used for real holders. |
+| `A.2.1` | Governs `U.RoleAssignment`, the relation checked when role-admission substitutions, incompatibilities, or bundles are used for real holders. |
 | `A.2.2` | Governs capability; role relation structure does not grant ability. |
 | `A.2.5` | Governs role state and enactable-state admission; role relation structure does not prove current state. |
 | `A.3.1`, `A.3.2`, `A.15`, `A.15.1`, `A.15.2` | Govern method, method description, plan, and performed work uses that may cite a role relation. |

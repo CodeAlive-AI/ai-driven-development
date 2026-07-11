@@ -100,7 +100,7 @@ encountered publication or projection, that wording does not mint a new surface
 kind; use an existing publication face, publication form, interop publication form,
 `U.View`, card, or lane kind only when that kind is actually being made.
 
-Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is available only through one publication, cite the `U.EpistemePublication` that publishes it separately; the publication, projection, or carrier does not become the defining episteme by being the encountered item.
+Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is available only through one publication, cite the `U.EpistemePublication` that publishes it separately; the publication, projection, or carrier does not become the defining episteme merely because it exposed the definition to the reader.
 
 `A.6.RSIG` does not govern:
 

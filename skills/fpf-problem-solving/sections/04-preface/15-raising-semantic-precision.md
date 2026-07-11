@@ -5,7 +5,7 @@ FPF does not expect people to start with perfect terminology. Early thinking is 
 FPF therefore provides a semantic precision upgrade path:
 
 1. Notice the wording that is doing too much. Broad heads, pronouns, metaphors, status words, level words, support words, function words, architecture words, and evidence words often signal a hidden claim.
-2. Recover the project thing under concern, relation, claim, or project-side source relation being made.
+2. Recover the project entity under concern, relation, claim, or project-side source-use relation being made.
 3. Recover the ontology before changing the word. Name the kinds, slots, context, viewpoint, time, evidence, and use that matter.
 4. Use mathematical modeling or a formal signature only when it helps. FPF calls these a math lens or formal substrate when a graph, order, signature, state space, topology, probability model, or variational principle makes the structure reviewable. Mathematics is not decoration.
 5. Rewrite the wording as a plain reader line and, when needed, technical fields so the practical point remains readable and the claim remains checkable.

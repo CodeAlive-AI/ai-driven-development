@@ -29,7 +29,7 @@
 
 **Reliance-bearing use.** Use the fuller record when reproducibility, launch-guard preparation, crossing expectations, suite or kit reuse, Part G universalization, publication-view projection, or P2W carry-through depends on the baseline.
 
-**Stop condition.** Stop once the planned rows are explicit enough for the work-planning use, or lower the claim to a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap without claiming a conforming planned baseline.
+**Stop condition.** Stop once the planned rows are explicit enough for the work-planning use, or lower the claim to a plan cue, missing-source-relation note, relation governed by another FPF pattern, or blocked kind-definition gap without claiming a conforming planned baseline.
 
 **What goes wrong if missed.** Teams hide planned choices in mechanism prose, suite descriptions, generated cards, "latest" references, local checklists, or execution logs. Later nobody can tell what was planned, what was performed, which edition changed, or which variance belongs to performed work.
 
@@ -299,9 +299,9 @@ If the later work uses `ComparatorSpecRef:CG42-v4`, the work record states varia
 
 #### A.15.3:5.3 - Hardware acceptance fixture
 
-**Tell.** A hardware team plans acceptance work for a fixture. The slot-bearing description is an acceptance-method description with slots for reference plane, measurement method, calibration source, and acceptance threshold.
+**Tell.** A hardware team plans acceptance work for a fixture. The slot-bearing description is an acceptance-method description with slots for reference plane, measurement method, calibration record or certificate, and acceptance threshold.
 
-**Show with A.15.3.** The planned baseline pins the reference-plane description, calibration source ref, and threshold edition. The performed acceptance work later records actual measurements and substitutions. The PlanItem does not become the measurement evidence.
+**Show with A.15.3.** The planned baseline pins the reference-plane description, calibration-record or certificate ref, and threshold edition. The performed acceptance work later records actual measurements and substitutions. The PlanItem does not become the measurement evidence.
 
 ### A.15.3:6 - Scope Declaration and Rationale
 
@@ -309,7 +309,7 @@ If the later work uses `ComparatorSpecRef:CG42-v4`, the work record states varia
 
 The pattern does not try to make every work plan heavy. Ordinary plans stay in A.15.2. A.15.3 opens only when slot-filling choices themselves are the planned baseline that later work, gates, evidence, or publication projections will rely on.
 
-The anti-bias guard is locality: if the current issue is mechanism meaning, work-entry readiness, evidence sufficiency, gate passage, source restoration, publication use, or performed work, use that governing pattern and bring only the returned planned-baseline relation back here.
+The anti-bias guard is locality: if the current issue is mechanism meaning, work-entry readiness, evidence sufficiency, gate passage, appearance-based reliance repair, publication use, or performed work, use that governing pattern and bring only the returned planned-baseline relation back here.
 
 ### A.15.3:7 - Conformance Checklist
 
@@ -374,7 +374,7 @@ This split is especially useful in P2W and Part G work because many downstream r
 
 - **Builds upon:** `A.15.2` for `U.WorkPlan` and PlanItem discipline; `A.15.1` for performed `U.Work`; `A.6.5` for SlotKind, ValueKind, RefKind, and SlotSpec discipline; `E.24` for ontic introduction and slot-relation discipline; `E.10.D2` for EntityOfConcern vs Description episteme vs specification-use; `E.17` for publication-use and view-use projection; `E.18.1` for P2W carry-through; `E.20` for mechanism-introduction boundaries.
 - **Coordinates with:** `A.15.5` for work-entry readiness and full-kit preparation; `A.20` and `A.21` for gates and constraint decisions; `A.10`, `B.3`, and `G.6` for evidence, assurance, and provenance; `C.27.TA` and `G.11` for currentness and refresh; Part G patterns when planned baselines are used by kits, packs, or refresh plans.
-- **Does not replace:** target description patterns, mechanism definitions, suite definitions, gate records, evidence relations, publication views, performed work, or source restoration.
+- **Does not replace:** target description patterns, mechanism definitions, suite definitions, gate records, evidence relations, publication views, performed work, or `A.15.4` appearance-based reliance repair.
 
 ### A.15.3:12a - P2W planned-baseline use relation
 
@@ -382,7 +382,7 @@ When `E.18.1` reaches a planned-baseline question, `SlotFillingsPlanItem` record
 
 When `A.15.5` checks full-kit condition, it may cite `SlotFillingsPlanItem` for planned fillers, target description edition, required refs, and time selector. That citation does not make the planned baseline a readiness verdict; `A.15.5` states the readiness relation and any missing-input or degraded-use condition.
 
-If the same source phrase also carries launch-value, performed-work, evidence, gate, result, measurement, publication-use, source-restoration, or refresh meaning, name that separate current relation before using the PlanItem downstream.
+If the same wording in a source `U.Episteme`, source `U.EpistemePublication`, or source relation also carries launch-value, performed-work, evidence, gate, result, measurement, publication-use, appearance-based reliance repair, or refresh meaning, name that separate current relation before using the PlanItem downstream.
 
 ### A.15.3:12b - Planned-baseline to performed-work boundary
 
@@ -392,7 +392,7 @@ The work-planning record preserves what was intended. The performed-work record 
 
 ### A.15.3:12c - Lowering, repair, and refresh conditions
 
-Lower a `SlotFillingsPlanItem` claim when the item cannot name exactly one target slot-bearing description, concrete SlotKinds from that description, EntityOfConcern, bounded context, time selector or time rule, authoritative planned-filling rows, concrete RefKinds for ByRef fillers, or required edition pins. The lowered result is a plan cue, source-gap note, relation governed by another FPF pattern, or blocked kind-definition gap.
+Lower a `SlotFillingsPlanItem` claim when the item cannot name exactly one target slot-bearing description, concrete SlotKinds from that description, EntityOfConcern, bounded context, time selector or time rule, authoritative planned-filling rows, concrete RefKinds for ByRef fillers, or required edition pins. The lowered result is a plan cue, missing-source-relation note, relation governed by another FPF pattern, or blocked kind-definition gap.
 
 Repair the PlanItem when a source-currentness change alters the target description edition, exposed SlotKind set, planned filler, concrete RefKind, edition pin, context, time rule, evidence-reference pin, guard-preparation ref, crossing-policy ref, or expected gate relation. If performed `U.Work` already cited the PlanItem as a baseline, preserve the cited baseline and record variance or crossing witness in the work-governed relation.
 

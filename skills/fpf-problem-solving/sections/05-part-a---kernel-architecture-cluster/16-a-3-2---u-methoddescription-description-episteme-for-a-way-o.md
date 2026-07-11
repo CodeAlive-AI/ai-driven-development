@@ -148,6 +148,8 @@ If the source turns a graph path, evidence path, query plan, predicate, checklis
 
 A method description may describe not only one `U.Method`, but also a selected `MethodRelationStructure@BoundedContext`: the relation structure by which methods or method families compose, refine, substitute, iterate, dispatch, or fall back in one bounded context.
 
+Description nodes, workflow boxes, code blocks, proof-script blocks, diagram paths, and table rows are representation constituents. They do not become method parts by position in the description. A node can participate in method-holon composition only after the recovered object is itself a `U.Method` value governed by `A.3.1` and, when order-sensitive composition is current, `B.1.5`.
+
 Keep the positions separate:
 
 - the method relation structure is the selected structure among method-side values;

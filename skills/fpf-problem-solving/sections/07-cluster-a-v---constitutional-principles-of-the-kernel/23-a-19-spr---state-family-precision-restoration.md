@@ -27,7 +27,7 @@ Typical triggers:
 - local fields such as `source posture`, `evidence posture`, `assurance posture`, `publication posture`, `release posture`, `validation posture`, `readiness posture`, or `support posture`;
 - precision-looking local fields such as `LensUseAdmissibilityValue`, `dynClaimPosture`, or a specification-use label when their bearer, value set, governing pattern, use boundary, or reopen condition is not recoverable.
 
-**What goes wrong if missed.** A broad state word becomes a miniature hidden ontology. A source gets called "current", "supporting", or "accepted" without a source-use role. Evidence becomes assurance. A publication face becomes gate passage. A lens-use label becomes empirical truth. An external administrative status leaks into pattern prose. A readiness word implies work may proceed without the threshold, evidence path, gate, or decision record that would carry that claim.
+**What goes wrong if missed.** A broad state word becomes a miniature hidden ontology. A source gets called "current", "supporting", or "accepted" without a source-use relation. Evidence becomes assurance. A publication face becomes gate passage. A lens-use label becomes empirical truth. An external administrative status leaks into pattern prose. A readiness word implies work may proceed without the threshold, evidence path, gate, or decision record that would carry that claim.
 
 **What this buys.** The reader can recover the state-like claim named by value, the governing pattern, the allowed use, and the blocked adjacent overread before acting on the word.
 
@@ -143,7 +143,7 @@ If any of those are missing, either complete them now or rename the field to the
 
 ### A.19.SPR:5 - Worked slices
 
-**Show, source currentness.** "The source posture is good" is not admissible. Repair to: "The source has `SourceUseRole = acceptedDecisionSource` and `SourceCurrentnessStatus = localAcceptedDecision` for this `DRR` use; it does not become evidence, assurance, gate passage, or FPF doctrine by citation."
+**Show, source currentness.** "The source posture is good" is not admissible. Repair to: "The source has `SourceUseRelation = acceptedDecisionSource` and `SourceCurrentnessStatus = localAcceptedDecision` for this `DRR` use; it does not become evidence, assurance, gate passage, or FPF doctrine by citation."
 
 **Show, evidence path.** "Evidence posture is incomplete" repairs to an `A.10` result: evidence kind, claim and effect, carrier or source path, currentness window, `RelianceDisposition`, admissible reliance, blocked reliance, and reopen trigger.
 

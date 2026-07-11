@@ -110,7 +110,7 @@ Use `*Ref` only for RefKinds or fields whose type is a RefKind. Do not use `*Ref
 
 ValueKind names do not carry `*Slot` or `*Ref`. If a current source name violates this rule, recover the intended kind before renaming. The repair may split one old token into a SlotKind, a ValueKind, and a RefKind or field.
 
-Do not use `Role` as the head noun for a SlotKind. `U.Role` is a role value governed by `A.2`. A relation position that admits a `U.Role` filler can be named `RoleValueSlot`; a position filled by a system or acting holon under a role assignment can be named `RoleHolderSlot` or a context-specific refinement. The head remains `Slot`, and the `U.Role` value remains a value.
+Do not use `Role` as the head noun for a SlotKind. `U.Role` is a role value governed by `A.2`. A relation position that admits a `U.Role` filler can be named `RoleValueSlot`; a position filled by an admitted `U.System` under a role assignment can be named `RoleHolderSlot` or a context-specific refinement. The head remains `Slot`, and the `U.Role` value remains a value.
 
 #### A.6.5:4.4 - Role assignment under slot discipline
 
@@ -120,7 +120,7 @@ Core SlotSpecs for a work-facing role assignment include:
 
 | SlotKind | ValueKind | refMode | Meaning |
 |---|---|---|---|
-| `RoleHolderSlot` | `U.System` or acting holon admitted by the governing work or method pattern as system-like performer | `RefKind` selected by the governing context | The system or admitted acting holon that holds the role in this bounded context. |
+| `RoleHolderSlot` | admitted `U.System` selected by the governing work, transformation, functioning, or method pattern as system-like performer | `RefKind` selected by the governing context | The system that holds the role in this bounded context. The holder may be a person, team, service, device, motor, pump, component, organism, or other system; role holding does not imply consciousness or responsibility unless a neighboring pattern makes that stronger claim current. |
 | `RoleValueSlot` | `U.Role` | `RefKind` or by-value local role value | The role value being assigned. |
 | `BoundedContextSlot` | `U.BoundedContext` | `RefKind` or by-value context descriptor | The context in which the assignment has meaning. |
 | `AssignmentWindowSlot` | temporal window value governed by the temporal pattern current in the context | `ByValue` or selected RefKind | The time window for the assignment claim. |
@@ -203,6 +203,8 @@ If the text does not say which link is affected, keep the phrase ordinary or rep
 **Episteme case: model evaluation result.** A `ModelEvaluationResult` episteme can use `EntityOfConcernSlot` with ValueKind `U.Method`, `DatasetSlot` with ValueKind `U.Entity`, `TargetCharacteristicSlot` with ValueKind `U.Characteristic`, `GroundingHolonSlot` with ValueKind `U.Holon`, and `ClaimGraphSlot` with ValueKind `U.ClaimGraph` by value. Retargeting `DatasetSlot` from `Dataset_A` to `Dataset_B` changes a reference filler. Editing the threshold inside `ClaimGraphSlot` changes embedded claim content. Those are different operations.
 
 **Role case: inspection work.** A maintenance context assigns `InspectorRole` to `Robot_7` for a window. The role assignment relation can fill `RoleHolderSlot = Robot_7`, `RoleValueSlot = InspectorRole`, `BoundedContextSlot = MaintenanceLine_A`, and `AssignmentWindowSlot = from 2026-06-15T09:00 to 2026-06-15T11:00`. The robot's capability remains `U.Capability`, the inspection method remains `U.Method` or `U.MethodDescription`, the planned inspection remains `U.WorkPlan`, and the performed inspection remains `U.Work`.
+
+**Role case: motor in a pump assembly.** A pump-assembly context assigns `DriveMotorRole` to `Motor_M1` for an installed window. The role assignment relation can fill `RoleHolderSlot = Motor_M1`, `RoleValueSlot = DriveMotorRole`, `BoundedContextSlot = WaterPumpAssembly_A`, and `AssignmentWindowSlot = installed-window`. The motor's torque capability, electrical supply, thermal limit, functional-port relation, transformation-flow structure, and dated pumping work stay with their direct governing patterns; the role assignment only says which system bears which role in this context.
 
 **Evidence case: one report for two claims.** One report episteme can be used as evidence for Claim A and Claim B. The episteme is not assigned two evidence roles. FPF creates two evidence-use relations with different `EvidenceTargetClaimSlot` fillers and any distinct scope, polarity, relevance-window, or weight-model fillers.
 

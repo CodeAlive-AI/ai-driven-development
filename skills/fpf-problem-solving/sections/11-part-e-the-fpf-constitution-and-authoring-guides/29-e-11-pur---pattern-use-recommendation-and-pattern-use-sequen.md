@@ -12,7 +12,7 @@
 
 **First output.** One compact `PatternUseRecommendation@Context` or `PatternUseSequence@Context` record that names the current concern, the recommended pattern use, the reason for recommending it, the expected output shape, blocked stronger uses, and any neighboring governing pattern that becomes current after this use.
 
-**Not this pattern when.** If accepted problem-side material is being carried through P2W, use `E.18.1`. If work is being planned or performed, use the A.15 family. If a gate decision is current, use `A.21`. If a tool-call plan is current, use `C.24`. If the sentence is only about publication, phrase wording, or description use, use `E.8`, `E.17`, or the direct publication or description pattern.
+**Not this pattern when.** If an accepted problem-side record or cue is being carried through P2W, use `E.18.1`. If work is being planned or performed, use the A.15 family. If a gate decision is current, use `A.21`. If a tool-call plan is current, use `C.24`. If the sentence is only about publication, phrase wording, or description use, use `E.8`, `E.17`, or the direct publication or description pattern.
 
 ### E.11.PUR:1 - Problem Frame
 
@@ -27,14 +27,14 @@ Without an explicit pattern-use recommendation relation, four failures recur:
 1. A pattern that only recommends a next FPF use is overread as if it performed work, passed a gate, or authorized work.
 2. Applicability and recommendation collapse: "this pattern can be used" becomes "this pattern is the selected useful use now."
 3. Several pattern uses are described as a workflow or lifecycle, even when they are only a recommended pattern-use sequence.
-4. Teaching language such as "first useful move" becomes a false kind and starts competing with `U.Work`, `U.WorkPlan`, P2W, A.16 language-state moves, C.24 call planning, and C.30 architecture candidate material.
+4. Teaching language such as "first useful move" becomes a false kind and starts competing with `U.Work`, `U.WorkPlan`, P2W, A.16 language-state moves, C.24 call planning, and C.30 architecture candidate records.
 
 ### E.11.PUR:3 - Forces
 
 | Force | Pressure |
 | --- | --- |
 | Teachability | Engineer-facing speech needs simple words such as first useful move, working move, and professional move. |
-| Ontological precision | FPF must not create a root `U.Move` when the direct governed value is pattern use, plan, work, gate, source, publication, architecture, or transformation. |
+| Ontological precision | FPF must not create a root `U.Move` when the direct governed value is pattern use, plan, work, gate, source relation, publication, architecture, or transformation. |
 | Applicability vs recommendation | A pattern can be applicable without being the recommended use for the current concern. |
 | Composition | Several pattern uses can form a useful FPF phrase without becoming a work plan or process. |
 | Practical payoff | The result must still tell the practitioner what can be produced or inspected next. |
@@ -47,7 +47,7 @@ In engineer-facing speech, phrases such as "first useful move", "working move", 
 
 In didactic pattern-language speech, the same idea can be explained as building a useful FPF phrase from pattern words: one pattern may frame the problem, another preserve variants, another recommend an architecture question, another carry the decision toward work, and another update SoTA or wording.
 
-In the precise FPF layer, do not create a `Move` kind from either metaphor. Recover `PatternUseRecommendation@Context` for the recommended use of one pattern, `PatternUseSequence@Context` for several pattern uses, and the direct governing pattern for work, plan, gate, decision, publication, architecture, source, or transformation claims.
+In the precise FPF layer, do not create a `Move` kind from either metaphor. Recover `PatternUseRecommendation@Context` for the recommended use of one pattern, `PatternUseSequence@Context` for several pattern uses, and the direct governing pattern for work, plan, gate, decision, publication, architecture, source-relation, or transformation claims.
 
 #### E.11.PUR:4.1 - PatternUseRecommendation@Context
 
@@ -106,12 +106,12 @@ The sequence is not a work plan, route, workflow, lifecycle, or performed work. 
 | --- | --- |
 | Which FPF pattern use is recommended now? | `PatternUseRecommendation@Context`. |
 | Which several FPF pattern uses belong together for this concern? | `PatternUseSequence@Context`. |
-| Accepted problem-side material is carried toward a next FPF value. | `E.18.1`. |
+| Accepted problem-side record or cue is carried toward a next FPF value. | `E.18.1`. |
 | Work is intended, scheduled, or prepared. | `A.15.2`, `A.15.3`, or `A.15.5`. |
 | Work actually occurred. | `A.15.1`. |
 | A gate admits, degrades, blocks, or abstains. | `A.21`. |
 | An AI agent is planning tool calls. | `C.24`. |
-| Architecture candidate material is current. | `C.30` or the direct architecture child pattern. |
+| Architecture candidate record is current. | `C.30` or the direct architecture child pattern. |
 | Language-state transition is current. | `A.16`. |
 | Publication expression makes the pattern use visible. | `E.8`, `E.11`, `E.17`, or the direct publication pattern. |
 
@@ -145,9 +145,9 @@ Use `PatternUseRecommendation@Context` when the current question is which FPF pa
 
 #### E.11.PUR:5.3 - P2W Boundary
 
-Situation: a problem card has accepted problem-side material and the team asks for the next useful FPF use.
+Situation: a problem card has an accepted problem-side record or cue and the team asks for the next useful FPF use.
 
-Use `E.18.1` for the carry-through relation. `E.18.1` may cite `PatternUseRecommendation@Context` when the next recovered value is a recommended FPF pattern use. P2W remains the relation from accepted problem-side material to the next governed value; `E.11.PUR` does not replace it.
+Use `E.18.1` for the carry-through relation. `E.18.1` may cite `PatternUseRecommendation@Context` when the next recovered value is a recommended FPF pattern use. P2W remains the relation from accepted problem-side record or cue to the next governed value; `E.11.PUR` does not replace it.
 
 #### E.11.PUR:5.4 - Proxy Failure
 
@@ -167,7 +167,7 @@ Do not treat the familiar pattern id as the value. Fill `PatternUseRecommendatio
 | --- | --- | --- |
 | `CC-E11PUR-1` | names the project concern before recommending a pattern use. | The concern is not replaced by a pattern id alone. |
 | `CC-E11PUR-2` | separates applicability from recommendation. | `ApplicabilityFinding` and `RecommendedPatternUse` are both recoverable when both claims are made. |
-| `CC-E11PUR-3` | blocks stronger uses. | Work, plan, gate, decision, source, publication, architecture, and transformation overreads are named only when their governing pattern is current. |
+| `CC-E11PUR-3` | blocks stronger uses. | Work, plan, gate, decision, source-relation, publication, architecture, and transformation overreads are named only when their governing pattern is current. |
 | `CC-E11PUR-4` | preserves the remaining reader use. | The result says what the practitioner can inspect, write, decide, or apply next. |
 | `CC-E11PUR-5` | uses `PatternUseSequence@Context` only for pattern-use relations. | The sequence is not a work plan, workflow, lifecycle, or performed work. |
 | `CC-E11PUR-6` | keeps didactic move language plain. | "First useful move" can remain in teaching prose, but durable FPF text names the recovered relation. |
@@ -180,10 +180,10 @@ Lower, reject, or reopen the recommendation when the project concern changes, a 
 
 | Anti-pattern | Why it fails | Better use |
 | --- | --- | --- |
-| Move as kind | A useful phrase becomes a false `U.Move`. | Recover recommended pattern use, work, plan, gate, source, publication, architecture, or transformation. |
+| Move as kind | A useful phrase becomes a false `U.Move`. | Recover recommended pattern use, work, plan, gate, source relation, publication, architecture, or transformation. |
 | Applicability as recommendation | Every applicable pattern appears equally selected. | State why this pattern use is recommended for the current concern. |
 | Pattern phrase as work plan | A pattern-use sequence is treated as intended or performed project work. | Use `A.15.2` for work planning and `A.15.1` for performed work. |
-| Pattern recommendation as authorization | A pattern recommendation is read as gate passage, source sufficiency, assurance, or work authorization. | Use A.21, source restoration, assurance, or the direct work-authorization pattern when those claims are current. |
+| Pattern recommendation as authorization | A pattern recommendation is read as gate passage, evidence sufficiency, source-relation sufficiency, assurance, or work authorization. | Use `A.21` for gate passage, `A.10` for evidence or source relation, `B.3` for assurance, `A.15.4` for appearance-based reliance repair, and the direct governing pattern for authorization or work planning when those claims are current. |
 
 ### E.11.PUR:9 - Consequences
 
@@ -191,7 +191,7 @@ Benefits:
 
 - FPF can keep friendly "what is the next useful move?" language without minting a root `Move`.
 - The first-entry and seminar-facing pattern-language metaphor becomes useful but bounded.
-- P2W, work planning, performed work, gates, architecture, source, and publication claims keep their governing patterns.
+- P2W, work planning, performed work, gates, architecture, source-relation, and publication claims keep their governing patterns.
 
 Costs:
 
@@ -202,7 +202,7 @@ Costs:
 
 The practical question "what should I do next with FPF?" is real. It deserves a stable relation because it recurs in first-entry use, seminar teaching, AI assistance, and multi-pattern composition. The relation is not a new kind of project object. It is a pattern-use recommendation relation that points to the pattern likely to produce the next useful result.
 
-This keeps FPF action-guiding: users can still ask for a first useful move, while FPF can answer with a precise pattern use and then use the pattern that governs work, gates, architecture, source, publication, or transformation.
+This keeps FPF action-guiding: users can still ask for a first useful move, while FPF can answer with a precise pattern use and then use the pattern that governs work, gates, architecture, source relation, publication, or transformation.
 
 ### E.11.PUR:11 - SoTA-Echoing
 

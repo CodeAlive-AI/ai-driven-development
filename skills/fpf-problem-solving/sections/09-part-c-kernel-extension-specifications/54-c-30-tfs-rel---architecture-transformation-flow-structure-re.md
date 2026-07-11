@@ -11,7 +11,7 @@
 
 Use this pattern when an architecture discussion depends on a selected `TransformationFlowStructure`, its path, path slice, crossing, flow valuation, edition pin, plane pin, context pin, no-hidden-scalarization claim, or mathematical description.
 
-The first useful move is small. `ArchitectureTransformationFlowStructureRelation@Context` is a C.30-side relation record for a relation being used between `ArchitectureOf@Context`, selected architecture-relevant structure, architecture structural view, or conditional `ArchitectureDescription@Context` use and the E.18 selected transformation-flow structure being used for architecture work. It names the architecture locus, selected structure or view reference when used in the relation, conditional description reference when durable description use is being made, any functional structure view, view-local functional element record, functional behavior, transformer-side filler, candidate bearer, input condition, output condition, functional port, E.18 selected structure, mathematical description, math-lens use, correspondence, source-return condition, and admissible architecture use that changes the relation.
+The first useful move is small. `ArchitectureTransformationFlowStructureRelation@Context` is a C.30-side relation record for a relation being used between `ArchitectureOf@Context`, selected architecture-relevant structure, architecture structural view, or conditional `ArchitectureDescription@Context` use and the E.18 selected transformation-flow structure being used for architecture work. It names the architecture locus, selected structure or view reference when used in the relation, conditional description reference when durable description use is being made, any functional structure view, view-local functional element record, functional behavior, transformer-side filler, candidate bearer, input condition, output condition, functional port, E.18 selected structure, mathematical description, math-lens use, correspondence, publication or edition used by an extracted or generated graph when current, extraction or probe locus, relation observation class, unexplored region, hidden relation-structure return condition, and admissible architecture use that changes the relation.
 
 ```text
 ArchitectureTransformationFlowStructureRelation@Context:
@@ -29,18 +29,23 @@ outputConditionRefs?:
 functionalPortRefs?:
 transformationFlowStructureViewRef?:
 transformationFlowStructureRef?:
+transformationFlowUnfoldingStructureRef?:
 selectedPathOrSliceRefs?:
 crossingBundleRefs?:
 flowValuationRefs?:
 mathematicalDescriptionRefs?:
 mathLensUseRefs?:
 correspondenceRefs?:
-sourceReturnCondition?:
+sourcePublicationOrEditionRef?:
+extractionOrProbeLocusRef?:
+relationObservationClassRef?:
+unexploredRegionRefs?:
+hiddenRelationStructureReturnCondition?:
 admissibleUse:
 nonAdmissibleUse:
 ```
 
-Ordinary minimum: name at least one architecture-side reference (`architectureClaimRef`, `selectedArchitectureStructureRefs`, `architectureStructuralViewRef`, or `architectureDescriptionRef` when durable description use is being made), at least one E.18-side reference (`transformationFlowStructureRef`, `selectedPathOrSliceRefs`, `crossingBundleRefs`, or `flowValuationRefs`), one blocked overread, and stop or governing-pattern application. Use functional-structure, functional-element, functional-behavior, transformer-side filler, candidate-bearer, input-condition, output-condition, functional-port, transformation-flow-structure, mathematical-description, math-lens-use, crossing, flow-valuation, correspondence, and source-return fields only when they change the next architecture move. All other fields are conditional and may be `not used`.
+Ordinary minimum: name at least one architecture-side reference (`architectureClaimRef`, `selectedArchitectureStructureRefs`, `architectureStructuralViewRef`, or `architectureDescriptionRef` when durable description use is being made), at least one E.18-side reference (`transformationFlowStructureRef`, `transformationFlowUnfoldingStructureRef`, `selectedPathOrSliceRefs`, `crossingBundleRefs`, or `flowValuationRefs`), one blocked overread, and stop or governing-pattern application. Use functional-structure, functional-element, functional-behavior, transformer-side filler, candidate-bearer, input-condition, output-condition, functional-port, transformation-flow-structure, transformation-flow unfolding structure, mathematical-description, math-lens-use, crossing, flow-valuation, correspondence, publication-or-edition, extraction-or-probe, observation-class, unexplored-region, and hidden-relation return fields only when they change the next architecture move. All other fields are conditional and may be `not used`.
 
 Use this relation only when a grounded architecture claim, selected architecture-relevant structure, architecture structural view, functional-architecture view, transformation-flow-structure claim, or conditional architecture-description use depends on an E.18 selected structure, path, crossing, or valuation relation. Stop when the architecture-to-transformation-flow relation and non-admissible uses are clear. If another claim is being made, that claim is governed by its governing pattern and this relation remains only the architecture-to-transformation-flow relation.
 
@@ -89,19 +94,24 @@ ArchitectureTransformationFlowStructureRelation@Context ::= {
   functionalPortRefs?,
   transformationFlowStructureViewRef?,
   transformationFlowStructureRef?,
+  transformationFlowUnfoldingStructureRef?,
   selectedPathOrSliceRefs?,
   crossingBundleRefs?,
   flowValuationRefs?,
   mathematicalDescriptionRefs?,
   mathLensUseRefs?,
   correspondenceRefs?,
-  sourceReturnCondition?,
+  sourcePublicationOrEditionRef?,
+  extractionOrProbeLocusRef?,
+  relationObservationClassRef?,
+  unexploredRegionRefs?,
+  hiddenRelationStructureReturnCondition?,
   admissibleUse,
   nonAdmissibleUse
 }
 ```
 
-At least one architecture-side field and at least one E.18-side field must be named by value. Optional fields stay `not used` unless they change inspection, correspondence, source return, governing-pattern application, or stop.
+At least one architecture-side field and at least one E.18-side field must be named by value. Optional fields stay `not used` unless they change inspection, correspondence, hidden relation-structure return, governing-pattern application, or stop.
 
 #### C.30.TFS-REL:4.1 - Use trigger
 
@@ -114,9 +124,11 @@ Use this pattern only when a `ArchitectureOf@Context` claim being made, selected
 - edition, plane, or context pin;
 - no-hidden-scalarization or set-return discipline;
 - correspondence between functional structure and transformation-flow structure;
-- generated or extracted relation graph used as architecture-to-transformation-flow source material.
+- generated or extracted relation graph used as candidate input for the architecture-to-transformation-flow relation.
 
 If the sentence only says that work occurred, use A.15 or the governing work pattern. If the sentence only says that a selected transformation-flow structure exists, use E.18. If the sentence uses a graph-shaped expression as mathematical description, use E.18.2. If it relies on a mathematical lens, use C.29.
+
+Use `transformationFlowUnfoldingStructureRef?` only when the architecture relation depends on an `E.18.3` transformation-flow unfolding structure: the selected E.18 structure is being unfolded toward next architecture, decision, work, feedback, narrative, or refresh uses under constraints and direct exits. Generic architecture use of a constraint-governed unfolding structure belongs in `C.32.P2S` or the direct C.30 architecture governing pattern; this pattern keeps only the architecture-to-transformation-flow relation.
 
 #### C.30.TFS-REL:4.2 - Relation to functional structure
 
@@ -141,7 +153,11 @@ crossingBundleRef:
 correspondenceOrCoReferenceClaim:
 preservedStructure:
 lostOrHiddenStructure:
-sourceReturnCondition?:
+sourcePublicationOrEditionRef?:
+extractionOrProbeLocusRef?:
+relationObservationClassRef?:
+unexploredRegionRefs?:
+hiddenRelationStructureReturnCondition?:
 admissibleUse:
 nonAdmissibleUse:
 ```
@@ -223,20 +239,24 @@ crossingBundleRefs: not used
 flowValuationRefs: not used
 mathematicalDescriptionRefs: not used
 correspondenceRefs: required effect `authorize payment` corresponds to the E.18 path slice; this is correspondence, not identity
-sourceReturnCondition: reopen if mathematical-description edition, path slice, source observation class, or required-effect declaration changes
+sourcePublicationOrEditionRef: model or generated graph edition when the flow relation was extracted from one
+extractionOrProbeLocusRef: path-slice extraction or code-agent probe locus when current
+relationObservationClassRef: observed, inferred, or unknown relation class when current
+unexploredRegionRefs: not used
+hiddenRelationStructureReturnCondition: reopen if mathematical-description edition, path slice, relation observation class, or required-effect declaration changes
 admissibleUse: inspect whether the functional structure view depends on the E.18 path slice being used and whether an architecture split or correspondence note is needed
 nonAdmissibleUse: flow diagram as functional architecture itself; selected transformation-flow structure as work occurrence; mathematical graph description as evidence sufficiency; crossing as gate result; flow relation as project decision
 ```
 
 Near miss: if the selected transformation-flow structure has no C.30-side architecture reference named by value, the case stays in `E.18`. If the same sentence is a mathematical description, use `E.18.2`; if it is a math-lens-use claim, use `C.29`. If it is a work log, evidence claim, gate decision, or benchmark result, that non-flow claim is governed by its governing pattern and this relation keeps only the architecture-to-transformation-flow relation.
 
-**Pump-station flow relation.** A plant team says, "the safety architecture is the bypass flow." C.30.TFS-REL applies only if the plant `ArchitectureOf@Context`, selected control or material-flow structure, and E.18 selected bypass-flow structure are named. The bypass path may be architecture-relevant, but it is not safety proof, performed maintenance work, gate passage, or release permission. The relation record names the plant architecture locus, selected E.18 path or crossing, source-return condition, and the one architecture move changed by the bypass relation.
+**Pump-station flow relation.** A plant team says, "the safety architecture is the bypass flow." C.30.TFS-REL applies only if the plant `ArchitectureOf@Context`, selected control or material-flow structure, and E.18 selected bypass-flow structure are named. The bypass path may be architecture-relevant, but it is not safety proof, performed maintenance work, gate passage, or release permission. The relation record names the plant architecture locus, selected E.18 path or crossing, hidden relation-structure return condition, and the one architecture move changed by the bypass relation.
 
 **Supply-chain transformation-flow relation.** A logistics architecture view may use an E.18 selected flow structure for supplier handoff, transport crossing, freshness window, and valuation. The architecture claim remains about selected supply-chain structure; work occurrences, contractual commitments, evidence, and gate decisions stay with their governing patterns.
 
 **Neural-network dataflow change.** Source labels such as attention block, SSM block, convolution block, memory mechanism, cache mechanism, and MoE expert-selection go through `C.30.STRAT` unless the changed value is already recovered. C.30.TFS-REL applies only when the changed structure kind and transformation-flow relation are named. A benchmark, ablation, or pruning result may bear on a non-architecture claim named by value, but it does not make the flow relation an architecture decision or evidence sufficiency by itself.
 
-**Code-agent relation graph.** A code-agent relation graph with `IMPORTS`, `CALLS_API`, `REGISTRY_WIRES`, or `DATA_FLOWS_TO` edges can be used for an architecture-to-transformation-flow relation only with source edition, a source observation class selected from {observed, inferred, unknown}, typed relation semantics, unexplored regions, and source-return condition when subsequent action relies on hidden distinctions.
+**Code-agent relation graph.** A code-agent relation graph with `IMPORTS`, `CALLS_API`, `REGISTRY_WIRES`, or `DATA_FLOWS_TO` edges can be used for an architecture-to-transformation-flow relation only with the source publication or codebase edition, extraction or probe locus, relation observation class selected from {observed, inferred, unknown}, typed relation semantics, unexplored regions, and hidden relation-structure return condition when subsequent action relies on hidden distinctions.
 
 #### C.30.TFS-REL:4.6 - Lowering and currentness conditions
 
@@ -244,13 +264,13 @@ Lower, narrow, or reopen the relation at the smallest changed locus when:
 
 - E.18 selected structure, path, crossing, or flow-valuation semantics change;
 - edition, plane, context pin, set-return, or no-hidden-scalarization discipline changes;
-- source graph edition, path slice, source observation class, source pin, unexplored region, or source-return condition changes;
+- source publication or graph edition, path slice, relation observation class, edition or context pin, unexplored region, or hidden relation-structure return condition changes;
 - the C.30 architecture locus, selected architecture-relevant structure, architecture structural view, conditional architecture description, or C.30.ASV relation changes;
 - functional-to-transformation-flow correspondence changes;
 - a non-flow claim is being made and is governed by `C.30.TFS-REL:4.3` rather than by this relation;
 - C.29, C.16, C.28, A.10, G.6, B.3, A.20, A.21, A.15, C.30, C.30.ASV, A.6.F, C.30.STRAT, or E.18 changes the governing boundary used by the relation.
 
-Admissible repair results are: update the affected reference, add or change correspondence, add or change source-return condition, narrow admissible use, keep the selected-structure claim inside E.18, keep the mathematical-description claim inside E.18.2, keep the math-lens-use claim inside C.29, apply the governing pattern to a non-flow claim, lower to quote-only or reduced-use cue, or block the architecture-to-transformation-flow use.
+Admissible repair results are: update the affected reference, add or change correspondence, add or change the hidden relation-structure return condition, narrow admissible use, keep the selected-structure claim inside E.18, keep the mathematical-description claim inside E.18.2, keep the math-lens-use claim inside C.29, apply the governing pattern to a non-flow claim, lower to quote-only or reduced-use cue, or block the architecture-to-transformation-flow use.
 
 ### C.30.TFS-REL:5 - Archetypal Grounding
 
@@ -258,7 +278,7 @@ Admissible repair results are: update the affected reference, add or change corr
 | --- | --- |
 | Tell | A practitioner sees a flow diagram, path, or graph-shaped expression and wants to use it for a grounded architecture claim, selected architecture-relevant structure, architecture structural view, or conditional architecture description. C.30.TFS-REL asks whether a selected E.18 transformation-flow relation is current for the selected architecture locus, and names its non-admissible uses. |
 | Show: `U.System` | A software system, plant, AI agent, neural network, vehicle, or supply chain may have transformation-flow structure. A diagram or mathematical description can inform architecture reasoning about that structure without carrying the non-flow claims named in `C.30.TFS-REL:4.3`. |
-| Show: `U.Episteme` | A mathematical graph description, generated relation graph, code-agent probe, neural-network diagram, dashboard, or architecture note is an episteme, view, or publication. It can publish or substantiate the transformation-flow relation only when its E.18 object, context pins, correspondence, source-return condition, and admissible use are recoverable. |
+| Show: `U.Episteme` | A mathematical graph description, generated relation graph, code-agent probe, neural-network diagram, dashboard, or architecture note is an episteme, view, or publication. It can publish or substantiate the transformation-flow relation only when its E.18 object, context pins, correspondence, hidden relation-structure return condition, and admissible use are recoverable. |
 
 ### C.30.TFS-REL:6 - Bias-Annotation
 
@@ -286,9 +306,9 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | **CC-C30TFR-6 No evidence, assurance, or gate overread.** | The relation is not used as evidence sufficiency, assurance claim, gate decision, or release permission without evidence named by value, assurance, gate, or release pattern application. | Assign the claim being made to A.10, G.6, B.3, A.20, A.21, or the release locus named by value when a release claim is being made. |
 | **CC-C30TFR-7 Causal and mathematical boundaries.** | Causal or intervention claims and mathematical-lens claims are assigned to C.28 and C.29. | Apply those governing patterns or narrow the relation's admissible use. |
 | **CC-C30TFR-8 Pin and scalarization boundary.** | Edition, context, and plane pins plus no-hidden-scalarization claims remain E.18-governed. | Add E.18 pin and set-return references or remove the comparison or selection claim. |
-| **CC-C30TFR-9 Source return.** | Extracted, generated, coarsened, or partial relation graphs or flow diagrams state source-return conditions when hidden distinctions affect action. | Add source-return condition or narrow the admissible use. |
+| **CC-C30TFR-9 Hidden relation return.** | Extracted, generated, coarsened, or partial relation graphs or flow diagrams state the source publication or edition, extraction or probe locus, relation observation class, unexplored regions, and hidden relation-structure return condition when hidden distinctions affect action. | Add the missing relation-structure fields or narrow the admissible use. |
 | **CC-C30TFR-10 Useful action.** | The repair leaves a remaining use: name selected structure, path, or crossing relation; add correspondence; return to source; assign the claim being made to a governing pattern; or stop. | Restore that use, or classify the phrase as reduced-use cue, quote-only wording, blocked transfer, or incomplete rewrite. |
-| **CC-C30TFR-11 Lowering and currentness.** | The relation states the smallest changed locus when E.18 semantics or pins, source observation class, architecture locus, correspondence, source return, or related governing boundary changes. | Update the affected reference, narrow admissible use, keep the selected-structure claim inside E.18, keep the mathematical-description claim inside E.18.2, keep math-lens use inside C.29, apply the governing pattern to the non-flow claim, lower the relation, or block architecture-to-transformation-flow use. |
+| **CC-C30TFR-11 Lowering and currentness.** | The relation states the smallest changed locus when E.18 semantics or pins, relation observation class, architecture locus, correspondence, hidden relation-structure return, or related governing boundary changes. | Update the affected reference, narrow admissible use, keep the selected-structure claim inside E.18, keep the mathematical-description claim inside E.18.2, keep math-lens use inside C.29, apply the governing pattern to the non-flow claim, lower the relation, or block architecture-to-transformation-flow use. |
 
 ### C.30.TFS-REL:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -299,7 +319,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | **Flow-as-work-log** | Path or slice wording is treated as work occurrence. | Assign occurrence or result claims to A.15 or P2W and keep E.18 to selected structure, path, slice, or valuation. |
 | **Crossing-as-gate-result** | A crossing relation is treated as gate passage. | Assign gate-decision claims to A.21 and keep crossing relation under E.18. |
 | **Valuation-as-score** | A flow valuation is used as a generic architecture score. | State E.18 valuation and set-return discipline; assign measurement, characterization, selection, or candidate-set claims to `C.16` or an admitted governing pattern when those claims are being made. |
-| **Generated relation-graph proof** | A code-agent relation graph or probe output is used as proof of architecture understanding or safety. | Recover source, source observation class selected from {observed, inferred, unknown}, hidden structure, and evidence or assurance pattern governing the claim applications. |
+| **Generated relation-graph proof** | A code-agent relation graph or probe output is used as proof of architecture understanding or safety. | Recover the source publication or codebase edition, extraction or probe locus, relation observation class selected from {observed, inferred, unknown}, hidden structure, and evidence or assurance pattern governing the claim applications. |
 | **Prompt-data-tool flow as authority proof** | A prompt, data, or tool-flow diagram is treated as permission for tool action or proof that authority is safe. | Keep the diagram as a transformation-flow relation or E.18.2 mathematical description. A path from untrusted content to tool action is governed by `SecurityTrustBoundaryStructure`, C.24, E.16, A.20, or A.21 when those claim kinds are being made. |
 
 ### C.30.TFS-REL:9 - Consequences
@@ -319,15 +339,15 @@ This pattern also protects functional architecture. A functional structure view 
 
 ### C.30.TFS-REL:11 - SoTA-Echoing
 
-| Practice or source line | C.30.TFS-REL adoption | Action consequence | Boundary |
+| Practice or reference line | C.30.TFS-REL adoption | Action consequence | Boundary |
 | --- | --- | --- | --- |
 | E.18 transformation-flow structure, path, crossing, and flow-valuation discipline | Adopt E.18 as the governing source for selected structure, path, crossing, and valuation objects. | The pattern names E.18 references rather than redefining flow semantics. | E.18 does not become generic architecture ontology or architecture-description ontology. |
 | ISO/IEC/IEEE 42010:2022 and multi-view architecture practice | Adapt view and correspondence discipline to architecture-to-transformation-flow reliance. | Transformation-flow views relate to grounded architecture claims, selected architecture-relevant structures, architecture structural views, or conditional architecture descriptions through C.30, C.30.ASV, and correspondence refs. | Architecture views do not become proof, evidence, gates, or decisions. |
-| MBSE and SysML v2 view and relation practice | Adapt model-derived flow views and path views as Description-episteme source relations. | A model-derived flow view states source, selection, hidden or lost structure, and admissible use. | Tool models do not override FPF E.18 or C.30 relations. |
+| MBSE and SysML v2 view and relation practice | Adapt model-derived flow views and path views as description-episteme relations derived from a model publication or model edition. | A model-derived flow view states model edition, selected structure, hidden or lost structure, and admissible use. | Tool models do not override FPF E.18 or C.30 relations. |
 | Neural-network dataflow and GonzoML architecture-operation corpus | Adopt practitioner flow-structure recognition for block replacement, path-selection, memory and cache placement, MoE expert-selection, pruning, distillation, ablation, and compute, memory, and latency tradeoffs. | Keep block, cache, expert, router, gate, and similar words as `C.30.STRAT` source labels until the transformation-flow structure is recovered; C.30.TFS-REL applies only when that recovered structure changes the architecture move. | Benchmarks, ablations, pruning masks, or architecture-search outputs do not become evidence sufficiency, assurance, gate passage, or architecture decision by themselves. |
-| Theory of Code Space and arXiv:2603.00601 code-agent relation graph probing | Adapt relation graphs with source observation class selected from {observed, inferred, unknown} and partial-observability warnings. | Generated code relation graphs can be used for a transformation-flow relation only with typed relation semantics, source pins, unexplored regions, and source return. | Do not mint `U.CodeSpace`; do not treat probe output as internal belief proof, architecture adequacy, assurance, or release evidence or release claim. |
+| Theory of Code Space and arXiv:2603.00601 code-agent relation graph probing | Adapt relation graphs with relation observation class selected from {observed, inferred, unknown} and partial-observability warnings. | Generated code relation graphs can be used for a transformation-flow relation only with typed relation semantics, source publication or codebase edition pins, extraction or probe locus, unexplored regions, and hidden relation-structure return condition. | Do not mint `U.CodeSpace`; do not treat probe output as internal belief proof, architecture adequacy, assurance, or release evidence or release claim. |
 
-**Currentness front.** The governing currentness sources are E.18 object semantics and pins, C.30 and C.30.ASV architecture-side relation law, the source observation class, and the non-flow governing patterns named in `C.30.TFS-REL:4.3`. When one changes, the relation changes only at the affected reference, correspondence, source-return condition, admissible-use boundary, or governing-pattern assignment.
+**Currentness boundary.** The inputs to the currentness judgment are E.18 object semantics and pins, C.30 and C.30.ASV architecture-side relation rules, the relation observation class, and the non-flow governing patterns named in `C.30.TFS-REL:4.3`. When one changes, the relation changes only at the affected reference, correspondence, hidden relation-structure return condition, admissible-use boundary, or governing-pattern assignment.
 
 ### C.30.TFS-REL:12 - Relations
 

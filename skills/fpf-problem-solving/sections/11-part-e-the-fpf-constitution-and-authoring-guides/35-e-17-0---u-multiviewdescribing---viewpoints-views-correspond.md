@@ -33,7 +33,7 @@ Post‑2015 MBSE and architecture practice emphasise **viewpoints and views** (I
 
 In FPF terms:
 
-* the things we talk about — systems, methods, services, epistemes — are `U.Entity` or `U.Holon` values in `EntityOfConcernSlot`;
+* the things we talk about — systems and admitted holons, methods, services, and epistemes — fill `EntityOfConcernSlot` under their governing kind discipline; describing or viewing a method, service, or source label does not make it a holon by label;
 * descriptions and specifications of those things are `U.Episteme` instances (`…Description` or `…Spec`) with a **DescriptionContext** = `⟨EntityOfConcernRef, BoundedContextRef, ViewpointRef⟩`;
 * episteme-side views are `U.View` (`U.EpistemeView`) that slice ClaimGraphs under specific viewpoints and representation schemes.
 

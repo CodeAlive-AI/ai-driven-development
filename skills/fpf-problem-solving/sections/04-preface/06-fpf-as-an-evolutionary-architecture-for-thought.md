@@ -14,7 +14,6 @@ FPF applies the same idea to reasoning:
 - characteristic spaces define what "better" means for the object under improvement;
 - precision-restoration patterns repair language when it begins to carry work;
 - state-of-the-art and option-portfolio patterns keep the frontier moving;
-- problem-to-structure architecture patterns carry pressure into candidate structures, selected structures, decisions, realization work, actual-structure feedback, and repair;
 - review and refresh patterns let FPF itself improve.
 
 The result is not one final answer. It is a way to keep producing, comparing, selecting, publishing, and improving answers without losing traceability or semantic integrity.

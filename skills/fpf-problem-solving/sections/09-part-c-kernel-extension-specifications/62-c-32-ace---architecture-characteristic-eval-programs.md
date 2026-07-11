@@ -166,7 +166,7 @@ C.32.ACE governs architecture-characteristic eval-program construction and the k
 
 An architecture-characteristic eval program is the missing middle object between criteria rows and architecture selection. It answers "how did these candidates or structures read under this parity frame?" It does not answer "what is the criterion?", "is the measurement valid outside this use?", or "which architecture must be chosen?"
 
-The pattern is architecture-specific because it evaluates selected structures and architecture characteristics. It stays holonic because the same eval form can apply to systems, methods, roles, organizations, cultures, built assets, AI-agent workflows, and evidence-bearing practices after bearers and scale rows are rebound.
+The pattern is architecture-specific because it evaluates selected structures and architecture characteristics. It stays holon-grounded because the same eval form can apply to admitted holons such as systems, organizations-as-systems, built assets, epistemes, work occurrences, disciplines, AI-agent setups, and C.36-recovered cultural-evolution cases. It can also evaluate method-side, role-side, work-side, or evidence-side structures after the described holon, governing owner pattern, bearers, and scale rows are rebound; it does not admit methods, roles, practices, or cultures as holon kinds by label.
 
 ### C.32.ACE:11 - SoTA-Echoing
 

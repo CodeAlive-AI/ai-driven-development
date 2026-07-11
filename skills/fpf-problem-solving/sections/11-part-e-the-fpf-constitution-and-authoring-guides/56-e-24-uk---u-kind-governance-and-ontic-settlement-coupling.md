@@ -16,13 +16,13 @@ Typical moments:
 - a slot name, relation position, record field, diagram node, table column, graph expression, or publication form has acquired a `U.*` spelling;
 - a single E.24 ontic settlement appears to govern one root value plus several dependent durable values.
 
-**Primary EntityOfConcern.** The EntityOfConcern is the U-kind admission relation for one candidate `U.*`, type, kind, or subkind name. The pattern governs whether the candidate is retained as a durable U-kind, retained as a dependent durable value under a root settlement, governed by C.3 typed-reasoning law, or treated as a non-U object governed elsewhere.
+**Primary EntityOfConcern.** The EntityOfConcern is the U-kind admission relation for one candidate `U.*`, type, kind, or subkind name. The pattern governs whether the candidate is retained as a durable U-kind, retained as a dependent durable value under a root settlement, governed by C.3 typed-reasoning rules, or treated as a non-U object governed elsewhere.
 
 **Primary working reader.** The first reader is an FPF pattern author or reviewer deciding whether a public FPF name should remain `U.*`. The downstream reader is the practitioner who uses public pattern titles, headings, ToC rows, and names as orientation cues and needs those cues to point to the real governed object.
 
-**First useful move.** Recover the current governed object and the current use before judging the spelling. Then ask which existing FPF law governs the value: E.24 ontic settlement, C.3 typed reasoning, A.8 universal-core admission, A.11 parsimony, F.8 mint-or-reuse, F.5 naming, a direct subject pattern, or E.10 precision restoration.
+**First useful move.** Recover the current governed object and the current use before judging the spelling. Then ask which existing FPF rule set governs the value: E.24 ontic settlement, C.3 typed reasoning, A.8 universal-core admission, A.11 parsimony, F.8 mint-or-reuse, F.5 naming, a direct subject pattern, or E.10 precision restoration.
 
-**What goes wrong if missed.** FPF grows a shadow ontology by punctuation. A slot label becomes a kind, a publication form becomes an ontic, type and kind wording becomes active beside ontic law, and a useful title survives because it is searchable rather than because it names the governed object.
+**What goes wrong if missed.** FPF grows a shadow ontology by punctuation. A slot label becomes a kind, a publication form becomes an ontic, type and kind wording becomes active beside ontic settlement, and a useful title survives because it is searchable rather than because it names the governed object.
 
 **What this buys.** Public `U.*` names become trustworthy. Root U-kinds, dependent durable values, C.3 `U.Kind` values, Concept-Set rows, slot names, relation structures, records, publication forms, lenses, local frames, and source wording outside current FPF use are separated before naming.
 
@@ -46,14 +46,14 @@ The same token shape can name different kinds of things:
 - type, kind, or subkind wording whose governed value must be recovered before current FPF use;
 - a slot position, relation structure, selected structure, record form, publication form, math lens, representation lens, local frame, or source expression.
 
-E.24.UK governs that separation. It is an E.24 subpattern because U-kind admission depends on ontic settlement, but it is not the head E.24 pattern. E.24 remains the head pattern for `U.Ontic` and ontic introduction. E.24.UK owns the detailed U-kind law.
+E.24.UK governs that separation. It is an E.24 subpattern because U-kind admission depends on ontic settlement, but it is not the head E.24 pattern. E.24 remains the head pattern for `U.Ontic` and ontic introduction. E.24.UK owns the detailed U-kind admission rules.
 
 ### E.24.UK:2 - Problem
 
 Without this pattern:
 
 1. **`U.*` spelling substitutes for admission.** A public name is retained because it looks like a kind.
-2. **Unsettled type and kind wording competes with U-kind admission law.** Type, kind, subkind, Concept-Set rows, U-kind names, and E.24 ontics become overlapping ontologies.
+2. **Unsettled type and kind wording competes with U-kind admission rules.** Type, kind, subkind, Concept-Set rows, U-kind names, and E.24 ontics become overlapping ontologies.
 3. **Dependent values become root values.** A value whose identity is held by a root settlement gets treated as a new root kind.
 4. **Structural names over-admit.** Titles, filenames, headings, and ToC rows advertise kindhood more strongly than the pattern body establishes.
 5. **Slot names and lenses become objects.** Relation positions, graph expressions, tuple views, table columns, and publication forms receive `U.*` names.
@@ -110,7 +110,7 @@ Retain or introduce a candidate `U.*` name as a durable U-kind only if all of th
 3. The admission cites an identity, grounding, or recognition rule: direct governing pattern, C.3 membership and extent rule, Concept-Set witness set, A.6 `SubjectBlock` with `RangedValueKind`, imported signature symbol, CT2R/Compose-CAL constructive grounding for structural claims, formal-substrate or principle-frame declaration when current, or another accepted operational identity test.
 4. FPF users need to make action-facing claims about that value, not only about a wording choice.
 5. Existing root U-kinds plus slot and relation combinatorics cannot express the claim without losing reviewable distinctions.
-6. The candidate has a primary governing pattern or a selected governing pattern in the same landing set.
+6. The candidate has a primary governing pattern or another selected governing pattern in the same governed source set.
 7. The candidate has an E.24-compatible settlement: root subject, SlotRelation when needed, semanticArea, ontologicalNeighborhood, admissible use, non-use boundary, and dependent-value policy.
 8. Dependent patterns rely on this value by value or are expected to rely on it after the selected amendments.
 9. F.18 and F.17 can name and publish the term without turning a local slot label into a kernel kind.
@@ -122,7 +122,7 @@ If any row fails, the candidate is not admitted as a durable U-kind in the curre
 
 A root U-kind is the subject value whose identity is held by the primary settlement.
 
-A dependent durable U-kind is a reusable governed value whose identity is kept by the same primary settlement as a root U-kind, while the head pattern states the exact dependence relation and the governing pattern for the dependent value. It is not automatically:
+A dependent durable U-kind is a reusable public U-kind name for governed individual instances whose identity is kept through the same primary settlement as a root U-kind. The head pattern states the exact dependence relation and the governing pattern for those instances. It is not automatically:
 
 - a C.3 subkind;
 - a slot name;
@@ -131,6 +131,26 @@ A dependent durable U-kind is a reusable governed value whose identity is kept b
 - a synonym for the root;
 - a title convenience.
 
+Read the words carefully:
+
+- A **U-kind name** such as `U.WorkPlan`, `U.RoleAssignment`, `U.MethodDescription`, or `U.Capability` names a reusable governed kind admitted by this pattern and by its direct owner.
+- An **individual instance of that U-kind** is one concrete governed object under that kind, for example one work plan, one role assignment, one method description, or one holder capability. It is not a second kind named `Value`, not a slot filler by that fact, and not a record field.
+- **Dependent durable** means that the individual instance has durable identity for FPF use, but its identity is held through another settlement and declared dependence relation. It is not a root beside that settlement.
+- The dependency relation is an identity and governance relation, not parthood by default. A `U.RoleAssignment` depends on role, holder, bounded context, and window; that does not make the assignment a part of the role. A `U.Capability` may depend on a holder `U.System`; that does not make the capability a system part or a `U.Characteristic`.
+- A statement, record, evidence relation, publication, dashboard row, source expression, or fit predicate about a dependent individual remains a neighboring object unless its own governing pattern admits it as a governed object.
+- Avoid bare **value** when the contrast is kind versus instance. Use **individual**, **instance**, or **concrete governed object**. Reserve slot-filler wording for actual slot relations and record-field wording for records.
+
+Use this small reading table when authoring:
+
+| Form in prose | Ontological reading |
+| --- | --- |
+| "`U.WorkPlan` is dependent durable" | The public U-kind name is admitted, but its instances depend on method, role, time, and intended-work relations rather than forming a root beside `U.Work`. |
+| "this `U.WorkPlan` instance" | One concrete intended-work episteme or plan record governed by the work-plan pattern. |
+| "`U.RoleAssignment` is dependent" | Assignment instances depend on role, holder, bounded context, window, and work-facing use. |
+| "this `U.RoleAssignment` instance" | One concrete assignment relation, not the role, not the holder, and not performed work. |
+| "`U.Capability` is dependent" | The public U-kind name is admitted for holder-dependent capability instances under the system-holder settlement. |
+| "this `U.Capability` instance" | One concrete holder capability under envelope, measures, qualification window, and currentness condition; not the statement, evidence, currentness assessment, characteristic, Q-Bundle, architecture row, or fit predicate around it. |
+
 Examples:
 
 | Candidate | Disposition |
@@ -138,18 +158,18 @@ Examples:
 | `U.Episteme` | root U-kind governed by the episteme ontic settlement. |
 | `U.EpistemePublication` | dependent durable value only when the episteme/publication settlement states the dependence relation. |
 | `U.View` and `U.Viewpoint` | dependent or directly governed values under episteme and multi-view settlement, not automatic roots. |
-| `U.Method` | root U-kind for semantic way-of-doing when governed by the method pattern. |
+| `U.Method` | root U-kind for semantic way-of-doing and admitted non-agentive method holon kind when governed by `A.3.1` and direct method-composition patterns. |
 | `U.MethodDescription` | dependent value: description episteme for a method, not a C.3 subkind by default. |
 | `U.Work` | root U-kind for dated performed occurrence. |
 | `U.WorkPlan` | dependent value under method, work, role, and time settlement; it does not show that work occurred. |
 | `U.Role` | root work-facing role value under role patterns. |
 | `U.RoleAssignment` | dependent typed assignment relation value under role, holder, bounded-context, and work settlement. |
 | `RoleRelationStructure` | non-U selected relation structure unless E.24.UK evidence admits durable U-kindhood. |
-| `MethodRelationStructure` | non-U selected relation structure unless direct method-composition law admits durable U-kindhood. |
+| `MethodRelationStructure` | non-U selected relation structure for method-side relations that do not assert one `U.Method` whole assembled from method parts; direct method-composition patterns govern composite `U.Method` claims without promoting this relation structure to a U-kind. |
 
 #### E.24.UK:4.3 - Combined Admission Order
 
-Use existing law in this order:
+Use existing rules in this order:
 
 1. Recover the source use and governed EntityOfConcern.
 2. If the current question is typed claim quantification, apply C.3 and C.3.1 first. `U.Kind` is the context-local intensional value; `U.SubkindOf` is a partial-order relation over those values.
@@ -185,7 +205,7 @@ Then select the FPF object:
 
 | Source construct use | FPF recovery |
 | --- | --- |
-| claim quantification, membership, extent, subkind, or kind bridge | C.3 `U.Kind`, C.3.1 `U.SubkindOf`, and typed-reasoning law |
+| claim quantification, membership, extent, subkind, or kind bridge | C.3 `U.Kind`, C.3.1 `U.SubkindOf`, and typed-reasoning rules |
 | public durable FPF kind needed across patterns | E.24.UK durable U-kind admission, then E.24-compatible settlement |
 | a reusable cluster of slots, fillers, and governing relations | E.24 ontic settlement with one root subject U-kind or explicit reuse of an existing root |
 | imported formal symbol or declared range in a signature or mechanism | A.6 `SubjectBlock` with `RangedValueKind`, imported signature symbol, Concept-Set row, or admitted durable U-kind |
@@ -233,11 +253,11 @@ A structural title that names an action-invitation precision-restoration move as
 
 #### E.24.UK:5.3 - Dependent Durable Value
 
-`U.WorkPlan` is not performed work. It may remain a dependent durable value when the work-plan pattern states dependence on method, role, time, and intended work relations. The dependence relation is not `U.SubkindOf` unless C.3 typed-reasoning law explicitly says so.
+`U.WorkPlan` is not performed work. It may remain a dependent durable value when the work-plan pattern states dependence on method, role, time, and intended work relations. The dependence relation is not `U.SubkindOf` unless C.3 typed-reasoning rules explicitly say so.
 
 #### E.24.UK:5.4 - Type And Kind Governance Passage
 
-A passage that says a proposed type must pass A.8 or A.11 is a kernel-level U-kind admission question. A passage that says `U.Kind` and `U.SubkindOf` are used for typed reasoning remains C.3 law. A naming passage in F.5 or F.8 waits until the recovered value and admission decision are stable.
+A passage that says a proposed type must pass A.8 or A.11 is a kernel-level U-kind admission question. A passage that says `U.Kind` and `U.SubkindOf` are used for typed reasoning remains under C.3 rules. A naming passage in F.5 or F.8 waits until the recovered value and admission decision are stable.
 
 #### E.24.UK:5.5 - Lower-level Heading
 
@@ -245,7 +265,7 @@ A C.2.1 heading such as `U.ClaimGraph` or `U.Viewpoint` does not admit kindhood 
 
 ### E.24.UK:5.6 - Bias-Annotation
 
-This pattern blocks punctuation-bias and taxonomy-bias. A `U.*` spelling, title, filename, table row, or imported type word is not enough to create a durable FPF kind. First recover the governed object, its current use, the owning ontic or typed-reasoning law, and the slot or relation position. Only then decide whether the public name should be a root U-kind, dependent durable value, C.3 `U.Kind`, Concept-Set row, slot name, relation structure, record, publication form, lens, or local frame.
+This pattern blocks punctuation-bias and taxonomy-bias. A `U.*` spelling, title, filename, table row, or imported type word is not enough to create a durable FPF kind. First recover the governed object, its current use, the owning ontic settlement or typed-reasoning rule set, and the slot or relation position. Only then decide whether the public name should be a root U-kind, dependent durable value, C.3 `U.Kind`, Concept-Set row, slot name, relation structure, record, publication form, lens, or local frame.
 
 ### E.24.UK:6 - Conformance Checklist
 
@@ -258,7 +278,7 @@ This pattern blocks punctuation-bias and taxonomy-bias. A `U.*` spelling, title,
 | `CC-E24UK-5` | Structural locations retain `U.*` only with settlement evidence or direct reference to an already governed value. |
 | `CC-E24UK-6` | Non-U objects are classified as slot, relation, record, form, lens, local frame, expression, or source wording outside current FPF use, with the direct governing pattern named where the claim remains current. |
 | `CC-E24UK-7` | F.8, F.5, F.18, and F.17 are used only after the recovered value and admission decision are stable. |
-| `CC-E24UK-8` | E.24 remains the head ontic pattern; this pattern owns detailed U-kind law and does not duplicate it back into E.24. |
+| `CC-E24UK-8` | E.24 remains the head ontic pattern; this pattern owns detailed U-kind admission rules and does not duplicate them back into E.24. |
 
 ### E.24.UK:6.1 - Common Anti-Patterns and How to Avoid Them
 
@@ -266,7 +286,7 @@ This pattern blocks punctuation-bias and taxonomy-bias. A `U.*` spelling, title,
 | --- | --- | --- |
 | **U-dot by punctuation.** A heading or filename contains `U.` and therefore survives as a kind. | Public spelling outruns admission. | Apply the durable U-kind test; otherwise rename to the governed object. |
 | **Slot becomes kind.** `EvidenceRole`, `MethodRole`, or `DescriptionRole` is admitted because a value fills a relation position. | Slot-position label becomes a false ontology branch. | Keep SlotKind, ValueKind, RefKind, and governing pattern separate. |
-| **Source type import.** A BFO, ISO, OWL, database, or programming-language type is copied as an FPF U-kind. | Source ontology and FPF ontic law become mixed. | Use the source conversion guide and name the FPF governed object. |
+| **Source type import.** A BFO, ISO, OWL, database, or programming-language type is copied as an FPF U-kind. | Source ontology and FPF ontic admission rules become mixed. | Use the source conversion guide and name the FPF governed object. |
 | **Searchable title wins.** A memorable heading remains public even though the body governs a record, publication form, relation structure, or local frame. | Discoverability replaces ontology. | Keep the searchable phrase in entry or retrieval material if useful, and put the governed object in the public pattern name. |
 | **Dependent value promoted.** A value that depends on an existing ontic settlement is admitted as an independent root U-kind. | FPF grows duplicate roots for one ontological neighborhood. | Keep the root settlement and state the dependent durable value relation explicitly. |
 
@@ -295,7 +315,7 @@ The coupling rule keeps the architecture compact: a durable U-kind needs an E.24
 
 | Source line | Use in this pattern | Practical implication |
 | --- | --- | --- |
-| Foundational and applied ontology distinguish classes, individuals, relations, roles, qualities, functions, and representation forms. | Adapt: FPF does not copy one source taxonomy as U-kind law; it recovers the governed object and its admission basis. | A source `type`, `class`, or `category` becomes an FPF U-kind only after FPF admission, not by translation. |
+| Foundational and applied ontology distinguish classes, individuals, relations, roles, qualities, functions, and representation forms. | Adapt: FPF does not copy one source taxonomy as U-kind admission rules; it recovers the governed object and its admission basis. | A source `type`, `class`, or `category` becomes an FPF U-kind only after FPF admission, not by translation. |
 | Modular ontology and ontology-design-pattern practice use reusable fragments rather than one flat taxonomy. | Adopt for E.24 coupling: public durable names are backed by ontic settlement and neighboring-pattern obligations. | A durable U-kind must be usable across patterns without forcing a new taxonomy branch for every slot position. |
 | Naming and controlled-vocabulary practice separate labels from the objects they label. | Adopt through F.5, F.8, F.17, and F.18 after the governed value is recovered. | A good title can remain searchable while the body names the actual governed object and avoids false U-kind admission. |
 

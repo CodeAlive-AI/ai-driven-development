@@ -70,6 +70,29 @@ CT2R‑LOG introduces a **two‑link discipline** around each canonical edge:
 > **G** (its *Grounding*): `:e123 tv:groundedBy :trace_Γm_sum_456`.
 > **R** (declared *Reliability mode*): `tv:validationMode=axiomatic` → inputs B.3.3’s **AssuranceLevel** assessment.
 
+#### B.3.5:4.1 - Typing-Grounding Unfolding Structure Block
+
+When a constructive trace, working-model relation, and target kind or logical representation must be carried together across contexts, use this block or cite an equivalent `A.22.CGUS` specialization. The block is useful when the reader must see the passage from constructional material to a typed or logical claim without treating a readable relation label as proof.
+
+```text
+TypingGroundingUnfoldingStructureBlock:
+  unfoldingStructureRef: current TypingGroundingUnfoldingStructure record
+  workingModelOrConstructiveRepresentationRef:
+  targetKindOrLogicalRepresentationRef:
+  bridgeRef?:
+  constructiveTraceRef?:
+  preservedStructure:
+  lostOrCollapsedStructure:
+  CL_or_CLk:
+  admissibleReuse:
+  blockedSubstitution:
+  evidenceOrProofLinkageRef?:
+```
+
+`unfoldingStructureRef` names the current local structure record. `TypingGroundingUnfoldingStructure` is a local `A.22.CGUS` `U.Structure` specialization whose block is governed by B.3.5 for typing-grounding use; the A.22-level relation to that narrower specialization, when needed, is `specializedStructureRef?` on the generic CGUS record. It is not a root U-kind, not proof, not empirical evidence, not a work plan, and not a decision. C.13 contributes constructive-trace loci; C.3 contributes kind intent, extent, subkind, and bridge loci; neither C.13 nor C.3 creates separate authority for this block.
+
+`workingModelOrConstructiveRepresentationRef` names the relation, trace, model, or representation being carried. `targetKindOrLogicalRepresentationRef` names the typed or logical target. `bridgeRef` and `CL_or_CLk` are mandatory when cross-context or kind-level movement is current. `preservedStructure` and `lostOrCollapsedStructure` state what survives the passage and what the published relation no longer carries. Evidence linkage remains with B.3 evidence and assurance governing patterns; proof linkage remains with the proof or mathematical governing pattern that is current. The unfolding block only makes the structure of the passage inspectable.
+
 ### B.3.5:5 - Vocabulary & notation (normative)
 
 * **Working-Model relations (front‑stage).**
@@ -122,7 +145,7 @@ When you add or import a relation edge:
 
 ### B.3.5:8 - Compatibility & cross‑references
 
-* **C.6 Proof and Inference Use Calculus (LOG‑CAL).** CT2R‑LOG supplies the **places to hang proofs/evidence** that C.6 formalizes.
+* **B.3.2 (LOG‑use).** CT2R‑LOG supplies the **places to hang proofs/evidence** that B.3.2 formalizes.
 * **B.3.3 (Assurance levels).** `validationMode` + presence/quality of `tv:groundedBy` are the **inputs** to compute `AssuranceLevel (L0–L2)`.
 * **B.3.4 (Evidence ageing).** If an edge relies on **postulated evidence**, its confidence **decays** per that pattern until refreshed; **axiomatic** edges from `Γ_m` traces do not age, but their **inputs** (tokens) might.
 
@@ -222,7 +245,7 @@ The purpose of this section is to make **typical cognitive slips** visible and n
 
 | Bias (name)                     | Symptom in the model                                                                                                          | Cognitive counter‑move (conceptual only)                                                                                                                                                                          | Where to check                                                       |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **Formalism capture**           | Treating a constructive trace as “the real thing” and the human relation (e.g., *ComponentOf*) as an optional label.          | Re‑assert **canonical‑first**: the Working‑Model relation is the canonical publication. A constructive trace is a **grounding** you may attach when assurance demands it. Choose a **validationMode** explicitly. | CC‑CT2R‑1, CC‑CT2R‑2; B.3 skeleton for assurance conservatism.       |
+| **Formalism capture**           | Treating a constructive trace as “the real relation” and the human relation (e.g., *ComponentOf*) as an optional label.          | Re‑assert **canonical‑first**: the Working‑Model relation is the canonical publication. A constructive trace is a **grounding** you may attach when assurance demands it. Choose a **validationMode** explicitly. | CC‑CT2R‑1, CC‑CT2R‑2; B.3 skeleton for assurance conservatism.       |
 | **Canonical inversion**         | Demanding a constructive grounding for **epistemic** claims by default. *(For **structural** claims, Constructive grounding is mandatory; epistemic remains progressive.)*                    | Keep **progressive assurance**: declare `validationMode ∈ {postulate, inferential, axiomatic}`; reserve *axiomatic* with **Constructive** grounding for structural; use **Logical/Mapping**/**Empirical** where appropriate. Express formality via **F** (C.2.3), not tiers. | CC-CT2R-2; B.3.3 relation-kind discipline & validation modes.         |
 | **Order/time leakage**          | Encoding sequence or phase as part‑whole edges.                                                                               | Apply **Strict Distinction**: order/time belong to Γ\_method and Γ\_time, not to mereology or CT2R relations.                                                                                                       | B.3 “keep order/time in their own lanes”; cross‑ref Γ\_ctx/Γ\_time.  |
 | **Notation lock‑in**            | Letting a diagram or syntax define the meaning (“it’s true because the diagram says so”).                                     | Enforce **Notational Independence**: meaning is defined in prose/maths; renderings are illustrative only.                                                                                                         | Part E guard‑rail on notational independence.                        |
@@ -309,6 +332,7 @@ Constructive mereology, assurance-case practice, and model-based engineering all
 
 **Coordinates with**
 • **Compose-CAL (Γ_m)** — provides the **constructive** shoulder of the Assurance layer for **structural** relations; CT2R-LOG’s `tv:groundedBy` points *conceptually* to traces narratable as **sum/set/slice**.
+• **A.22.CGUS / TypingGroundingUnfoldingStructureBlock** — provides the local unfolding-structure block when a constructive trace, working-model relation, target kind or logical representation, bridge, preserved structure, and loss must be inspected together.
 • **KD‑CAL** — provides the **logical** shoulder (inferential justification) when authors pick `validationMode = inferential`.
 • **Kind-CAL / Lang-CHR** — provide the **mapping** shoulder (kind and relation-label alignment) governing alias policies without altering Working-Model relations.
 
@@ -316,10 +340,10 @@ Constructive mereology, assurance-case practice, and model-based engineering all
 • **Notational Independence (E.5.2)** — CT2R‑LOG refuses to prescribe formats, keeping all obligations conceptual.
 
 **Specialises / feeds**
-• **B.3 with B.3.3 and B.3.4** — supplies the publication discipline (Working-Model relations, declared **relation kind** and **validationMode**; **F** per C.2.3 where relevant) that B.3’s trust calculus expects; interacts with ageing and assurance-level assessments without changing the relations themselves.
+• **B.3.1–B.3.4** — supplies the publication discipline (Working-Model relations, declared **relation kind** and **validationMode**; **F** per C.2.3 where relevant) that B.3’s trust calculus expects; interacts with ageing and assurance-level assessments without changing the relations themselves.
 
 **Non‑relations**
-**No introduction of order/time** — CT2R‑LOG does **not** define `SerialStepOf` / `ParallelFactorOf` / temporal **phases**; method structure and work ordering belong to `A.3`, `A.15`, and `B.1.5`, while physical or temporal system claims go to `C.1 Sys‑CAL`, `C.27`, or the direct temporal governing pattern when current.
+**No introduction of order/time** — CT2R‑LOG does **not** define `SerialStepOf` / `ParallelFactorOf` / temporal **phases**; those belong to **Method‑CAL** and **Sys‑CAL (TemporalPart)** respectively.
 
 ### B.3.5:End
 

@@ -82,6 +82,12 @@ Use Compose-CAL whenever a claim concerns **structural containment** of entities
 * **PortionOf** ⇢ `slice(entity, facet="material/spatial‑region")` **plus** metrical semantics (A.14);
 * **ConstituentOf** (logical/content) ⇢ `sum` narrative over conceptual parts. *(Material mixtures are **not** `ConstituentOf`; use `PortionOf` or `ComponentOf` per A.14.)*
 
+#### C.13:4.4 - Typing-Grounding Unfolding Use
+
+When a `Γ_m` trace is part of a larger passage from constructive representation to a working-model relation, target kind, or logical representation, cite `TypingGroundingUnfoldingStructureBlock` from `B.3.5`. The C.13 contribution is the constructive trace and the preserved or lost mereological structure inside that B.3.5-governed local `A.22.CGUS` structure specialization. C.13 does not create separate unfolding-structure authority and does not by itself supply cross-context bridge, kind intent, proof, empirical evidence, or admissible reuse.
+
+Use this split especially when a readable relation label such as ComponentOf, MemberOf, AspectOf, ConstituentOf, or RepresentationOf is being reused as if the label itself proved constructive grounding. The repair is to name the constructor trace, the target relation or kind, the bridge when current, preserved and collapsed structure, and the proof or evidence relation when that stronger claim is being made.
+
 ### C.13:5 - Archetypal Grounding *(System / Episteme duo)*
 
 > **Tell–Show–Show.** Compose‑CAL is a thinking‑level calculus for building structural wholes from parts. We *show* it twice—first on a **System** (structural) and then on an **Episteme** case (where constructive grounding is *not* the primary mode).
@@ -115,7 +121,7 @@ Here the Working‑Model relation (e.g., **RepresentationOf**) is **epistemic**.
 
 | Bias (name)                       | Symptom                                                                                                         | Counter‑move (conceptual)                                                                                                    | Where to look                               |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| **Constructor‑centrism**          | Treating the trace as “the real thing” and the Working‑Model edge (e.g., **ComponentOf**) as merely decorative. | Re‑affirm **Working‑Model first** (publish in `ut:*Of`), then attach constructive narratives only when assurance demands it. | B.3.5 (Working‑Model relations & grounding) |
+| **Constructor‑centrism**          | Treating the trace as “the real part-whole structure” and the Working‑Model edge (e.g., **ComponentOf**) as merely decorative. | Re‑affirm **Working‑Model first** (publish in `ut:*Of`), then attach constructive narratives only when assurance demands it. | B.3.5 (Working‑Model relations & grounding) |
 | **Collection ↔ Composition swap** | Using **MemberOf** to stand in for **PartOf**, then inferring structural identity.                              | Keep **set** outputs as *collections*; use **sum** for wholes with extensional identity.                                     | A.14 (Advanced Mereology)                   |
 | **Temporal leakage**              | Smuggling sequence/phase into part‑trees.                                                                       | Assign order/time to their governing planes; **no** “temporal slice” constructor in Compose‑CAL.                                        | B.1.\* (Γ\_method and Γ\_time)                |
 | **Over‑slicing**                  | Multiplying aspects until identity becomes opaque.                                                              | Declare the **facet** explicitly; stop when aspects no longer aid recognition of the same whole.                             | A.14 (Aspect/Phase distinction)             |
@@ -202,6 +208,7 @@ Constructional mereology, formal ontology, and model-based engineering all separ
 
 **Coordinates with**
 * **B.3.5 CT2R-LOG.** `tv:groundedBy` refers (conceptually) to Compose-CAL traces when `validationMode = axiomatic`; **Working-Model** relations remain the public relation layer.
+* **A.22.CGUS / TypingGroundingUnfoldingStructureBlock.** Use this coordination when a constructive trace is one locus inside a broader passage to a working-model relation, target kind, logical representation, bridge, proof, or admissible reuse.
 * **B.1 flavours.** Keeps order (`Γ_method`) and time (`Γ_time`) outside structure; may co‑appear in narratives when relevant but never as constructors.
 * **Kind-CAL / Lang‑CHR.** Provide the Mapping shoulder of assurance (labels, type alignment) that complements constructive narratives in this pattern.
 * **KD‑CAL.** Provides the Logical shoulder when authors justify relations inferentially instead of constructively.

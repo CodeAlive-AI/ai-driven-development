@@ -11,7 +11,7 @@ Keep an architecture description useful without letting the description, view, d
 
 **Builds on.** `C.30`, `C.30.ASV`, `A.1`, `A.22`, `E.24.PUB`, `A.7`, `A.6.3`, `E.17.0`, `E.17.1`, `E.17.2`, `E.17`, `C.2.P`, `E.10`, and `E.10.ARCH`.
 
-**Coordinates with.** `C.30.AD.BA`, `C.30.P`, `C.30.TFS-REL`, `C.30.LCA`, `C.30.ILC`, `C.32.P2S`, `C.32`, `C.32.MLAO`, `C.32.PAD`, `C.32.ADR`, `C.32.ADA`, `A.19.CPM`, `A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, `A.6.F`, `A.6.M`, `C.29`, `C.16`, `C.16.P`, `A.10`, `B.3`, `A.20`, `A.21`, `A.15`, `A.15.5`, `C.11`, `C.28`, `E.8`, `E.10.MOVE`, `E.11.PUR`, `E.24.CD`, and `F.18`.
+**Coordinates with.** `C.30.AD.BA`, `C.30.P`, `C.30.TFS-REL`, `C.30.LCA`, `C.30.ILC`, `C.32.P2S`, `C.32`, `C.32.MLAO`, `C.32.PAD`, `C.32.ADR`, `C.32.ADA`, `A.6.3.NAR`, `A.19.CPM`, `A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, `A.6.F`, `A.6.M`, `C.29`, `C.16`, `C.16.P`, `A.10`, `B.3`, `A.20`, `A.21`, `A.15`, `A.15.5`, `C.11`, `C.28`, `E.8`, `E.10.MOVE`, `E.11.PUR`, `E.24.CD`, and `F.18`.
 
 ### C.30.AD:0 - Use this when
 
@@ -389,6 +389,7 @@ The pattern therefore specializes generic Description and publication machinery 
 - `C.30.ASV` governs architecture structural views and structure-kind and viewpoint separation.
 - `C.33` governs capture and loss of selected structure when an architecture description, generated relation graph, ADR-like record, or view set carries only part of the architecture content for a declared use.
 - `C.34` governs preservation or correspondence adequacy when the architecture description is being compared with another view, source model, generated output, candidate, or realized structure.
+- `A.6.3.NAR` governs a reader-facing narrative rendering made from an architecture description, description set, view set, or architecture-decision route. C.30.AD remains the owner for architecture-description adequacy; NAR owns only the structure-to-sequence relation, selected-source carry-through, lost structure, reader-use boundary, and source return.
 - `C.30.TFS-REL`, `C.30.LCA`, and `C.30.ILC` govern architecture structure-relation subcases named by value.
 - `C.32.P2S` governs the connected architecturing flow when the description carries only part of selected structure, decision handoff, method expectation, source-return, or actual-structure feedback.
 - `A.7`, `E.17.0`, `E.17.1`, `E.17.2`, and `E.17` govern generic EntityOfConcern, Description, view, viewpoint, publication, and MVPK machinery.

@@ -6,7 +6,7 @@
 
 ### C.3:0 - Use This When
 
-Use this pattern when a claim needs to say what kind of thing it quantifies over, which instances belong to that kind in a context slice, how intent and extent are related, and how typed compatibility affects composition.
+Use this pattern when a claim needs to say what kind of entity or value it quantifies over, which instances belong to that kind in a context slice, how intent and extent are related, and how typed compatibility affects composition.
 
 **What goes wrong if missed.** A source type, local category, programming class, schema shape, or public `U.*` name starts doing several jobs at once: membership, scope, construction basis, public kind admission, and cross-context sameness all blur.
 
@@ -77,11 +77,15 @@ Use this decision split:
 
 | Current question | Governing pattern |
 | --- | --- |
-| What kind of thing does this claim quantify over? | `C.3`, `C.3.1`, and dependent C.3 patterns |
+| What kind of entity or value does this claim quantify over? | `C.3`, `C.3.1`, and dependent C.3 patterns |
 | Is this local kind a subkind of that local kind? | `C.3.1` |
 | Does this context-local kind deserve a durable public FPF `U.*` name? | `E.24.UK`, then `F.8` and `F.5` or `F.18` |
 | Is the candidate universal enough for kernel-level status? | `A.8` after `E.24.UK` |
 | Can existing ontology express it without a new kind? | `A.11` after object recovery |
+
+When typed reasoning is part of a passage from constructive representation or working model to a target kind or logical representation, cite `TypingGroundingUnfoldingStructureBlock` from `B.3.5`. C.3 contributes the kind intent, extent, subkind, and bridge loci inside that B.3.5-governed local `A.22.CGUS` structure specialization. It does not create separate unfolding-structure authority and does not make the constructive trace, working-model relation, proof, or evidence relation true by label.
+
+The unfolding is admitted only when the block can name the starting representation, target kind or logical representation, bridge if current, preserved structure, lost or collapsed structure, `CL` or `CL^k`, admissible reuse, blocked substitution, and the proof or evidence governing pattern when that stronger claim is current.
 
 ### C.3:7 - Archetypal Grounding
 
@@ -147,7 +151,7 @@ Do not treat this compact head pattern as the whole C.3 discipline when a case n
 ### C.3:15 - Relations
 
 - **Builds on:** USM scope discipline, F-G-R, C.2.3 formality, and bridge patterns.
-- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `E.24.UK`, `A.8`, `A.11`, `F.8`, and `F.5`.
+- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `E.24.UK`, `A.8`, `A.11`, `F.8`, `F.5`, and `A.22.CGUS` or `TypingGroundingUnfoldingStructureBlock` when typed reasoning is one locus in a constructive-to-logical or cross-context grounding unfolding.
 - **Does not replace:** ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
 
 ### C.3:End

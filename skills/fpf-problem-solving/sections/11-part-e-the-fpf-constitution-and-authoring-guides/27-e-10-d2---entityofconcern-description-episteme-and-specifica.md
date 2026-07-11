@@ -118,7 +118,7 @@ If any condition is absent, use `...Description` and state the live criteria inf
 
 #### E.10.D2:4.1.4 - Publication, carrier, and work boundary
 
-`U.Carrier` encodes an episteme. A publication face, publication form, or publication unit makes an episteme available. A rendering, UI rendering, or front-end view displays it. A work occurrence uses it or acts under it. None of those relations changes the EntityOfConcern or upgrades a Description episteme to specification use by itself.
+`U.PresentationCarrier` or another explicitly named carrier relation bears, encodes, transports, or renders an episteme publication; it is publication-side in C.2.1+ rather than a semantic part of `U.Episteme`. A publication face, publication form, or publication unit makes an episteme available. A rendering, UI rendering, or front-end view displays it. A work occurrence uses it or acts under it. None of those relations changes the EntityOfConcern or upgrades a Description episteme to specification use by itself.
 
 ### E.10.D2:5 - Naming discipline
 
@@ -210,7 +210,7 @@ The main bias is entity-description collapse: readers let a description, publica
 | **Entity-description collapse** | "The method is the document"; "the architecture is the diagram"; "the role contains the checklist". | Name the EntityOfConcern, then name the Description episteme or publication relation separately. |
 | **Spec by name** | Any detailed write-up is called `...Spec`. | Use `...Description` unless specification-use admission conditions are present. |
 | **Publication as authority** | A card, dashboard, schema, generated view, or file is treated as permission, evidence, gate, assurance, decision, or work. | Apply the neighboring pattern that governs the exact claim being made; keep the publication relation separate. |
-| **Carrier identity** | The file path or repository entry is treated as the episteme or EntityOfConcern. | Say the carrier encodes or renders the episteme. |
+| **Carrier identity** | The file path or repository entry is treated as the episteme or EntityOfConcern. | Say the `U.PresentationCarrier` or carrier relation bears, encodes, transports, or renders the publication, and keep the episteme and EntityOfConcern separate. |
 | **Context erasure** | A context-local Description episteme is read as a global definition. | Restore `BoundedContextRef` and `ViewpointRef`, or use F.9, A.6.3, or A.6.4 for cross-context relations. |
 | **Status-state leakage** | Evidence, requirement, approval, or standard status becomes a role-state value. | Keep statuses over epistemes distinct from role-state relations and runtime state attestations. |
 | **Episteme-role shortcut** | "The standard plays the compliance role"; "the evidence has the approval role"; "the source authorizes work". | Recover the typed relation: standard-use, evidence-use, status-use, source-use, assurance-use, gate-use, publication-use, or work-relevance relation. Use `U.RoleAssignment` only for work-facing holder-role claims. |
@@ -309,7 +309,7 @@ Use these repairs when live FPF prose violates this pattern:
 1. Replace old `DescribedEntity*`, `EntityOfInterest`, `EoI`, and `EoIClass` wording with `EntityOfConcern`, `EntityOfConcernRef`, `EntityOfConcernClass`, or the local FPF kind named by value. Retain old spellings only as source-side trigger wording.
 2. Replace peer-layer I-D-S wording with EntityOfConcern, Description episteme, and specification-use admission wording.
 3. Replace "contains role characteristic space, role-state relation, or checklist" with "is characterized through the Description episteme by role characteristic space, role-state relation, or checklist".
-4. Replace carrier identity with "carrier encodes" or "publication exposes" wording.
+4. Replace carrier identity with "`U.PresentationCarrier` or carrier relation bears or renders" and "publication exposes" wording.
 5. Replace generic "object under description" talk with the EntityOfConcern named by value and its `DescriptionContext`.
 6. Replace `...Spec` names that lack specification-use admission with `...Description`.
 

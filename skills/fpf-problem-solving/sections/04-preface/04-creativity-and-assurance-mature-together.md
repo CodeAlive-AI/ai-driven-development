@@ -6,7 +6,7 @@ Creativity without assurance drifts. Assurance without creativity calcifies. A p
 
 FPF treats creative work as governed search. It gives names to the early move where a team asks "what could be true?", to the generation of multiple candidate explanations or designs, to the preservation of novelty and diversity, to the comparison of alternatives, and to the point where exploration should narrow into refinement. The relevant families include abduction, problem shaping, novelty-diversity and open-ended exploration, set-returning selection, publications of current best-known options, and option portfolios.
 
-FPF also treats assurance as more than a final audit. Evidence, assurance, freshness, source relation, gate validity, and decision permission are different claims. They can mature while creativity is still active. An early idea can be preserved as a cue without pretending it is evidence. A candidate can be kept in a portfolio without pretending it has been selected. A promising mathematical way of looking at the problem can be recorded without pretending it validates the world.
+FPF also treats assurance as more than a final audit. Evidence, assurance, freshness, source-use relation, gate validity, and decision permission are different claims. They can mature while creativity is still active. An early idea can be preserved as a cue without pretending it is evidence. A candidate can be kept in a portfolio without pretending it has been selected. A promising mathematical way of looking at the problem can be recorded without pretending it validates the world.
 
 The useful order is not a required sequence. The practical stance is:
 
@@ -14,7 +14,7 @@ The useful order is not a required sequence. The practical stance is:
 - keep novelty, use value, constraint fit, and comparison characteristics visible;
 - turn promising candidates into forms that evidence and assurance can inspect;
 - publish selected options, Pareto-like fronts, or portfolios without hiding remaining uncertainty;
-- reopen the work when evidence, source currentness, context, or state of the art changes.
+- reopen the work when evidence, source-publication or source-use currentness, context, or state of the art changes.
 
 In a laboratory, an anomaly is not merely noise. It may be a prompt for candidate explanations, followed by evidence and model comparison. In a product team, a concept sketch is not a meeting souvenir. It can become a reviewable knowledge object, which FPF calls an episteme, with scope, candidate value, and evidence needs. In operations, an emergency workaround may be a useful abductive move, but it must later be brought back into evidence, assurance, and work records.
 
