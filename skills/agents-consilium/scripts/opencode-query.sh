@@ -2,7 +2,8 @@
 #
 # OpenCode CLI Wrapper for Consilium
 # Role and model are read from config.json (agent id "opencode").
-# Runs opencode in read-only plan agent mode so it cannot modify files.
+# Runs opencode in read-only plan agent mode without external plugins, so it
+# cannot modify files or stall on globally configured MCP integrations.
 #
 # Usage: ./opencode-query.sh "prompt" [context_file]
 #        cat file.ts | ./opencode-query.sh "analyze this"
@@ -110,6 +111,7 @@ run_opencode() {
         variant_arg=(--variant "$OPENCODE_EFFORT_RESOLVED")
     fi
     opencode run \
+        --pure \
         --agent "$OPENCODE_BUILTIN_AGENT" \
         -m "$OPENCODE_MODEL_RESOLVED" \
         "${variant_arg[@]}" \

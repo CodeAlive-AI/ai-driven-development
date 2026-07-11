@@ -101,7 +101,7 @@ import json, sys, os, urllib.request, urllib.error
 api_key = os.environ["GEMINI_API_KEY"]
 model = os.environ.get("GEMINI_MODEL_RESOLVED", "gemini-3.1-pro-preview")
 prompt = os.environ["FULL_PROMPT"]
-timeout = int(os.environ.get("AGENT_TIMEOUT", "1200"))
+timeout = int(os.environ.get("AGENT_TIMEOUT", "3600"))
 
 url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
 body = json.dumps({
