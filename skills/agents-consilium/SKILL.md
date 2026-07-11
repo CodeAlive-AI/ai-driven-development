@@ -657,7 +657,7 @@ What's happening?"
 - `GEMINI_API_KEY`: Required for the `gemini-cli` backend (v1beta model access)
 - `GOOGLE_GENERATIVE_AI_API_KEY`: Required if the `opencode` backend uses `google/...` models
 - `OPENAI_API_KEY`: Required if the `opencode` backend uses `openai/...` models and OpenCode is not already logged in via `opencode auth login`
-- `AGENT_TIMEOUT`: Timeout seconds (default: 1200)
+- `AGENT_TIMEOUT`: Timeout seconds (default: 3600 / one hour)
 
 ## Prerequisites
 

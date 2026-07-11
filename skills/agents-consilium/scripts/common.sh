@@ -20,8 +20,8 @@ else
     TIMEOUT_CMD=""
 fi
 
-# Default timeout
-AGENT_TIMEOUT="${AGENT_TIMEOUT:-1200}"
+# Default timeout: one hour. Override per invocation with AGENT_TIMEOUT.
+AGENT_TIMEOUT="${AGENT_TIMEOUT:-3600}"
 
 # Liveness deadline for codex: if the -o output file is still empty after this
 # many seconds, the wrapper kills the process. Independent from AGENT_TIMEOUT
