@@ -269,6 +269,8 @@ The exact `model` and `effort` of every entry live in `config.json` so they can 
 
 `gemini-cli` and `claude-code` are disabled by default (flip `enabled: true` to add). Multiple agents can share one backend (e.g. five OpenCode-Go models all use `backend: "opencode"`); per-agent config is selected by the entry's id, passed through `CONSILIUM_AGENT_ID`.
 
+Claude Code defaults to `high` reasoning effort for both Opus and Sonnet selections unless `CLAUDE_EFFORT` or the selected agent profile overrides it.
+
 Set `CONSILIUM_CONFIG=/path/to/custom.json` to use an override file. See `config.example.json` for a fuller template.
 
 </details>

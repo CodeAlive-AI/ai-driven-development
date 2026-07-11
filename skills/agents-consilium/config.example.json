@@ -52,17 +52,17 @@
       "enabled": false,
       "backend": "claude-code",
       "model": "claude-sonnet-5",
-      "effort": "max",
+      "effort": "high",
       "role": "analyst",
-      "label": "Claude Sonnet 5"
+      "label": "Claude Sonnet 5 (high)"
     },
     "claude-sonnet": {
       "enabled": false,
       "backend": "claude-code",
       "model": "claude-sonnet-5",
-      "effort": "max",
+      "effort": "high",
       "role": "lateral",
-      "label": "Claude Sonnet 5 (Lateral)"
+      "label": "Claude Sonnet 5 (high, lateral)"
     },
     "opencode-go-minimax": {
       "enabled": true,

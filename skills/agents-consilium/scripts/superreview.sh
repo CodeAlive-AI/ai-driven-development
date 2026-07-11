@@ -17,7 +17,7 @@
 #
 #   Stage 2: discovery-frontier (parallel) — 2 hand-picked frontier add-ons
 #     • opencode                   analyst       (uncapped)
-#     • claude-code (Sonnet 5 max) lateral       (uncapped)  → adds GT-43
+#     • claude-code (Sonnet 5 high) lateral      (uncapped)  → adds GT-43
 #
 #   Stage 3: dedup (deterministic) — union all findings into one XML
 #
