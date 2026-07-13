@@ -8,7 +8,7 @@ FPF is a thinking-oriented architecture. It asks:
 
 - what project entity is under concern in this project moment;
 - what claim, relation, decision, evidence path, work object, or publication use is being made;
-- what distinction must remain visible for action to be responsible;
+- which distinction needs to remain visible for an action to be responsible;
 - what pattern can govern the next use or action;
 - what would make the result reviewable and reopenable.
 

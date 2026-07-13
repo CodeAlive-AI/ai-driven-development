@@ -4,5 +4,5 @@ Start with the `readme` when you are deciding whether FPF can help a working pro
 
 Do not read the specification linearly unless that is your study goal. In project use, the first useful FPF pattern family is selected by the working question.
 
-The main practical habit is this: when a project sentence starts to matter, ask what kind of entity, relation, value, or claim it is talking about, what claim it is making, what can responsibly be done with that claim, and which pattern can keep the next use or action honest. That habit is small. The architecture behind it is the rest of FPF.
+The main practical habit is this: when a project sentence starts to matter, ask what kind of entity, relation, governed record, or claim it is talking about, what claim it is making, what can responsibly be done with that claim, and which pattern can keep the next use or action honest. That habit is small. The architecture behind it is the rest of FPF.
 

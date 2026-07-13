@@ -17,7 +17,7 @@
 - [A.2.8 - U.Commitment (Deontic Commitment Object)](12-a-2-8---u-commitment.md) (343 lines) — Type: Definitional ontic pattern
 - [A.2.9 — U.SpeechAct (Communicative Work Object)](13-a-2-9-u-speechact.md) (319 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Constitution (Quartet)](14-a-3---transformer-constitution.md) (210 lines) — Establish a single, substrate‑neutral way to say who acts, under which role, according to which description, by which capability, and what actually happened—without “self‑magic” and without blurring...
-- [A.3.1 - U.Method: Context-Defined Way of Doing](15-a-3-1---u-method-context-defined-way-of-doing.md) (378 lines) — Type: Definitional pattern
+- [A.3.1 - U.Method: Context-Defined Way of Doing](15-a-3-1---u-method-context-defined-way-of-doing.md) (417 lines) — Type: Definitional pattern
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](16-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (307 lines) — Type: Definitional pattern
 - [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](17-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (308 lines) — Type: Definitional pattern
 - [A.3.4 - U.Transformation: Bounded Change Under Conditions](18-a-3-4---u-transformation-bounded-change-under-conditions.md) (471 lines) — Type: Definitional pattern

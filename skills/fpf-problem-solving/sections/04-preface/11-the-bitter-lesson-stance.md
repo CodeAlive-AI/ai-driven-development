@@ -10,9 +10,9 @@ FPF does not turn that observation into blind automation. It translates it into 
 - measure outcomes and refresh policies when the environment or model changes;
 - avoid hiding brittle procedure scripts inside prose that looks like general guidance.
 
-The important separation is between design-time constraints and run-time action. A designer may declare prohibited actions, risk budgets, cost ceilings, allowed tools, escalation conditions, evidence minima, or acceptance criteria. That is different from prescribing every step the acting system must take.
+The important separation is between design-time constraints and run-time action. A designer may declare inadmissible actions, risk budgets, cost ceilings, admitted tools, escalation conditions, evidence minima, or acceptance criteria. That differs from prescribing the acting system's complete action sequence.
 
-There are cases where procedure is required: safety, regulation, legal compliance, reproducibility, and training may need specified method descriptions. FPF does not forbid that. It requires the kind of claim to be explicit. A procedure script is a method description or work instruction; a constraint set is a different object; a monitor is not evidence of success; a gate is not the work itself.
+Some uses need a specified procedure: safety, regulation, legal compliance, reproducibility, and training can make a method description or work instruction current. FPF does not forbid that. It keeps the claim kind explicit. A procedure script is a method description or work instruction; a constraint set is a different object; a monitor is not evidence of success; a gate is not the work itself.
 
 This stance helps with human and AI work alike. A team can use general agents, search, simulation, model refresh, or state-of-the-art harvesting without surrendering safety. The freedom lives inside constraints, budgets, evidence, and typed checks.
 

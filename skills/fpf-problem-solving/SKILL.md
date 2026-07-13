@@ -1,6 +1,6 @@
 ---
 name: fpf-problem-solving
-description: "First Principles Framework (FPF) — thinking amplifier. Use when user wants to think through a complex problem, architect a system, evaluate alternatives, decompose complexity, classify problems, define quality attributes, plan rigorously, decide under uncertainty, establish causality, reason about time and trends, describe or synthesize architecture, check mathematical model fit, govern ontic/U-kind introduction, publish multi-view artifacts, refresh SoTA packs, trace provenance, or improve pattern quality. Also triggers on: FPF, bounded contexts, SoTA packs, assurance calculus, decision theory, causal reasoning, temporal reasoning, architecture description, modularity, constraint-governed unfolding, narrative rendering, structural adequacy, cultural evolution, quality gates, lexical discipline, FPF Parts A-I. Not for simple task planning, general philosophy, or Agile unrelated to FPF."
+description: "First Principles Framework (FPF) — thinking amplifier. Use when user wants to think through a complex problem, architect a system, evaluate alternatives, decompose complexity, classify problems, define quality attributes, plan rigorously, apply an FPF pattern to a first useful result, decide under uncertainty, establish causality, reason about time and trends, describe or synthesize architecture, check mathematical model fit, govern ontic/U-kind introduction, publish multi-view artifacts, refresh SoTA packs, trace provenance, or improve pattern quality. Also triggers on: FPF, bounded contexts, SoTA packs, assurance calculus, decision theory, causal reasoning, temporal reasoning, architecture description, modularity, constraint-governed unfolding, narrative rendering, structural adequacy, cultural evolution, quality gates, lexical discipline, FPF Parts A-I. Not for simple task planning, general philosophy, or Agile unrelated to FPF."
 ---
 
 # First Principles Framework (FPF)
@@ -30,6 +30,7 @@ Use FPF whenever you need to think more rigorously than the situation's default.
 - Refresh a SoTA pack, benchmark, or evidence trail when evidence decays or telemetry changes
 - Synthesize architecture candidates, compare structural options, or repair modularity/reuse claims
 - Govern when a new ontic concept or U-kind should be introduced instead of just renamed
+- Apply one selected FPF pattern to a current question and stop at the first useful result
 
 ## How to navigate
 
@@ -46,6 +47,7 @@ The use cases above help decide WHETHER to invoke FPF. The router below decides 
 | **Evaluate confidence** in a claim or artifact — including formality, scope, and reliability of the underlying knowledge | 08 Part B → B.3 Trust & Assurance; 09 Part C → C.2 KD-CAL / F-G-R scoring, C.2.2 Reliability, C.2.3 Formality |
 | **Compose** parts into wholes preserving properties | 08 Part B → B.1 Gamma algebra; 09 Part C → C.13 Compose-CAL, C.20 Discipline-CAL |
 | **Reason through** a problem systematically | 08 Part B → B.5 Reasoning Cycle, B.5.2 Abductive Loop |
+| **Apply** one selected FPF pattern to a working situation and obtain the first useful result | 11 Part E → E.11.PUA Pattern Use in a Working Situation and First Useful Result |
 | **Generate alternatives** / explore solution space | 09 Part C → C.17 Creativity-CHR, C.18 Open-Ended Search, C.19 Explore-Exploit |
 | **Measure and compare** options rigorously | 07 A.V → A.17-A.19 Characteristics, CSLC & SelectorMechanism; 09 Part C → C.16 MM-CHR; 13 Part G → G.9 Parity / Benchmark Harness |
 | **Resolve conflicts** across stakeholders or values | 10 Part D → Ethics, bias audit, conflict optimization |
@@ -115,7 +117,7 @@ Structural reference. Each entry is a folder — read its `_index.md` first, the
 | 08 | [Part B — Reasoning](sections/08-part-b-trans-disciplinary-reasoning-cluster/_index.md) | 25 | **Compose and evaluate**: structural views (STRUCT-CAL), aggregation (Gamma), trust scores, emergence, reasoning cycles. |
 | 09 | [Part C — Extensions](sections/09-part-c-kernel-extension-specifications/_index.md) | 73 | **Score, search, and architect**: epistemic quality, typed reasoning, measurement, decisions, search, agentic tool-use, quality bundles, temporal/causal/math lenses, architecture synthesis, structural adequacy, cultural evolution. |
 | 10 | [Part D — Ethics](sections/10-part-d---multi-scale-ethics-and-conflict-optimization/_index.md) | 5 | **Resolve conflicts**: ethical trade-offs, bias auditing, safety overrides, conflict optimization. |
-| 11 | [Part E — Constitution and Authoring](sections/11-part-e-the-fpf-constitution-and-authoring-guides/_index.md) | 56 | **Govern and publish**: framework forms and carriers, pillars, guard-rails, lexical discipline, multi-view publication, publication-unit stability, transformation flows, pattern quality, ontic/U-kind governance. |
+| 11 | [Part E — Constitution and Authoring](sections/11-part-e-the-fpf-constitution-and-authoring-guides/_index.md) | 57 | **Apply, govern, and publish**: practical-use guidance, first-useful-result pattern application, framework forms and carriers, lexical discipline, multi-view publication, transformation flows, pattern quality, ontic/U-kind governance. |
 | 12 | [Part F — Unification](sections/12-part-f-the-unification-suite-concept-sets-sensecells-contextual-role-a/_index.md) | 21 | **Align vocabulary**: concept sets, sense cells, bridges, role descriptions, UTS, lexical continuity. |
 | 13 | [Part G — SoTA Kit](sections/13-part-g-discipline-sota-patterns-kit/_index.md) | 15 | **Harvest and refresh disciplines**: SoTA Packs, CG-Frames, dispatchers, provenance ledgers, benchmark harnesses, shipping, telemetry refresh, dashboards, external interop. |
 | 14 | [Part H — Reserved](sections/14-part-h---reserved/_index.md) | 0 | **Reserve**: preserve the upstream Part H position for future specification content. |
