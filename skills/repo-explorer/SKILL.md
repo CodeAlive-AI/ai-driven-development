@@ -15,13 +15,13 @@ description: >
 
 # Repo Explorer
 
-Launch a separate Claude Code CLI process (`claude -p --model haiku`) with read-only
+Launch a separate Claude Code CLI process (`claude -p`) with read-only
 tools to explore a repository and answer questions about it. Supports both local
 repositories and remote URLs.
 
 ## Workflow
 
-### 1. Determine repo source and question
+### 1. Determine repo source, question, and model
 
 From the user's message extract:
 
@@ -30,6 +30,17 @@ From the user's message extract:
   - **remote URL** (`https://github.com/owner/repo`, `git@github.com:owner/repo.git`)
   - **shorthand** (`owner/repo` — treat as `https://github.com/owner/repo`)
 - **question**: what to find out about the repository.
+- **model** — pick by task type, not by habit:
+  - **`haiku`** — mechanical lookup, where the answer is *located* in the code and just needs
+    finding: "what endpoints exist", "where is X defined", "list the migrations", structure
+    inventory, "does this repo use Y".
+  - **`sonnet`** — analytical work, where the answer must be *judged*, not just found: "what can we
+    learn/borrow from this repo", applicability assessment, design/architecture review, comparing
+    approaches, security analysis, "what's original here", trade-off summaries. Cue words: оцени,
+    что полезного, идеи, применимость, review, compare, learn from.
+  - A cheap model on an analytical question produces shallow results with flattened nuances that
+    cost more to verify than the tokens saved — this rule exists because it happened.
+  - An explicit user request ("use haiku", "запусти sonnet", opus) always overrides the heuristic.
 
 ### 2. For remote repos — clone to temp directory
 
@@ -50,7 +61,7 @@ can take several minutes.
 
 ```
 cd <repo_path> && CLAUDECODE= claude -p "<question>" \
-  --model haiku \
+  --model <haiku|sonnet per step 1> \
   --output-format text \
   --max-turns 15 \
   --allowedTools "Read" "Grep" "Glob" "Bash(find *)" "Bash(ls *)" "Bash(wc *)" "Bash(git log *)" "Bash(git show *)" "Bash(git diff *)" "Bash(git branch *)" "Bash(head *)" "Bash(tail *)" \
@@ -64,8 +75,9 @@ Rules:
 - **Always** include `CLAUDECODE=` directly before `claude -p` (no `&&`, it's an inline env override)
 - Escape double quotes in the question with `\"`
 - Wrap repo paths containing spaces in quotes
-- For very large repos, increase `--max-turns` to 25
-- If user explicitly requests sonnet or opus, replace `--model haiku`
+- For very large repos or analytical (sonnet) runs, increase `--max-turns` to 25
+- Model follows the step 1 heuristic (haiku = lookup, sonnet = analysis); an explicit user request
+  always wins
 
 ### 4. Clean up (remote repos only)
 
@@ -82,18 +94,18 @@ retrying with a more specific question.
 
 ## Examples
 
-**Local repo:**
+**Local repo (lookup → haiku):**
 ```
 cd ~/projects/my-api && CLAUDECODE= claude -p "What REST endpoints are defined? List each with HTTP method, path, and handler." --model haiku --output-format text --max-turns 15 --allowedTools "Read" "Grep" "Glob" "Bash(find *)" "Bash(ls *)" "Bash(wc *)" "Bash(git log *)" "Bash(git show *)" "Bash(git diff *)" "Bash(git branch *)" "Bash(head *)" "Bash(tail *)" --append-system-prompt "You are a code exploration expert. Thoroughly explore the repository to answer the user's question. Strategy: 1) Glob to discover project structure. 2) Grep to find patterns, definitions, routes, classes. 3) Read to examine key files. Always cite file paths and line numbers. Give a structured answer based on code facts."
 ```
 
-**Remote repo (GitHub URL):**
+**Remote repo (analysis → sonnet):**
 ```bash
 REPO_DIR=$(mktemp -d) && git clone --depth 1 https://github.com/expressjs/express "$REPO_DIR"
 ```
 Then:
 ```
-cd "$REPO_DIR" && CLAUDECODE= claude -p "How is routing implemented? Describe the Router class and middleware chain." --model haiku --output-format text --max-turns 15 --allowedTools "Read" "Grep" "Glob" "Bash(find *)" "Bash(ls *)" "Bash(wc *)" "Bash(git log *)" "Bash(git show *)" "Bash(git diff *)" "Bash(git branch *)" "Bash(head *)" "Bash(tail *)" --append-system-prompt "You are a code exploration expert. Thoroughly explore the repository to answer the user's question. Strategy: 1) Glob to discover project structure. 2) Grep to find patterns, definitions, routes, classes. 3) Read to examine key files. Always cite file paths and line numbers. Give a structured answer based on code facts."
+cd "$REPO_DIR" && CLAUDECODE= claude -p "Assess the middleware chain design: what patterns are worth borrowing for our own router, and what are the known trade-offs?" --model sonnet --output-format text --max-turns 25 --allowedTools "Read" "Grep" "Glob" "Bash(find *)" "Bash(ls *)" "Bash(wc *)" "Bash(git log *)" "Bash(git show *)" "Bash(git diff *)" "Bash(git branch *)" "Bash(head *)" "Bash(tail *)" --append-system-prompt "You are a code exploration expert. Thoroughly explore the repository to answer the user's question. Strategy: 1) Glob to discover project structure. 2) Grep to find patterns, definitions, routes, classes. 3) Read to examine key files. Always cite file paths and line numbers. Give a structured answer based on code facts."
 ```
 Then: `rm -rf "$REPO_DIR"`
 
