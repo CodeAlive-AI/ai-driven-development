@@ -39,4 +39,4 @@
 - [A.20 - Flow Constraint Validity — Eulerian](34-a-20---flow-constraint-validity-eulerian.md) (363 lines) — Type: Architectural (A)
 - [A.21 — GateProfilization: OperationalGate(profile) (GateFit core)](35-a-21-gateprofilization-operationalgate.md) (425 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](36-a-22---structure-and-structural-views.md) (384 lines) — Type: Architectural pattern
-- [A.22.CGUS - Constraint-Governed Unfolding Structure](37-a-22-cgus---constraint-governed-unfolding-structure.md) (350 lines) — Type: A.22 specialization of U.Structure
+- [A.22.CGUS - Constraint-Governed Unfolding Structure](37-a-22-cgus---constraint-governed-unfolding-structure.md) (589 lines) — Type: A.22 specialization of U.Structure

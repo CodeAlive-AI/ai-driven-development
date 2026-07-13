@@ -1,10 +1,11 @@
 ## Thinking Through Writing
 
-FPF relies on written forms because serious reasoning needs objects that can be inspected. In everyday work, much reasoning stays inside conversation, memory, chat logs, sketches, or tool outputs. That is often enough for one short exchange. It is not enough when reasoning must survive delegation, review, reuse, publication, AI assistance, or time.
+FPF relies on written forms because serious reasoning needs objects that can be inspected. In everyday work, much reasoning stays inside conversation, memory, chat logs, sketches, or tool outputs. That is often enough for one short exchange. Addressable records become useful when reasoning is to survive delegation, review, reuse, publication, AI assistance, or time.
 
 FPF's cards, records, tables, views, term sheets, characteristic spaces, pattern bodies, conformance checks, and DRRs are thinking instruments. They are not documentation after the fact. Writing the record is often the work of thinking:
 
 - a problem card separates a complaint from a problem that later work can use;
+- a TaskSignature makes an accepted problem usable by later eligibility, acceptance, and method-family selection without selecting the method or planning the work inside the problem record;
 - a comparison frame forces the team to say what is being compared and by which characteristics;
 - a characteristic space makes "better" visible before improvement starts;
 - a term sheet keeps local meanings from being flattened across teams;

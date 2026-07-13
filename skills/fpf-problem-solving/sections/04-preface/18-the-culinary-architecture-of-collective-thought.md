@@ -20,7 +20,7 @@ In FPF terms:
 - state-of-the-art and option portfolios keep search open before selection;
 - improvement loops let the whole arrangement get better over time.
 
-For a small well-known problem solved by one expert, FPF may feel heavier than intuition. Its advantage appears when reasoning must be collective, long-lived, high-stakes, cross-domain, AI-assisted, or open-ended. That is where tacit expertise alone becomes hard to audit, transfer, or refresh.
+For a small well-known problem solved by one expert, FPF may feel heavier than intuition. Its advantage appears when reasoning is collective, long-lived, high-stakes, cross-domain, AI-assisted, or open-ended. That is where tacit expertise alone becomes hard to audit, transfer, or refresh.
 
 FPF does not replace expert judgment. It gives expert judgment a shared architecture so it can compound rather than evaporate.
 

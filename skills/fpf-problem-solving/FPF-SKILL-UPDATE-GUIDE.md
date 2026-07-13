@@ -19,15 +19,16 @@ but a stale thinking-verb router silently degrades navigation quality.
 
 ### 0. Upstream section generation
 
-Regenerate `sections/` only from official upstream `ailev/FPF`. Clone or update
-`FPF/FPF-Spec.md` in a temporary skill layout, then run:
+Regenerate `sections/` only from official upstream `ailev/FPF`. Create the temporary
+skill layout outside this repository, place the official clone at `FPF/` inside that
+layout, copy the tracked splitter into `scripts/`, then run it there:
 
 ```bash
-python3 scripts/split_spec.py
+python3 /path/to/temporary-skill-layout/scripts/split_spec.py
 ```
 
-Remove the temporary upstream clone after regeneration; the repository tracks the
-generated `sections/` tree, not an embedded upstream checkout.
+Replace the tracked `sections/` tree with that generated output, then remove the entire
+temporary layout. The repository tracks generated sections, not an embedded upstream checkout.
 
 The splitter follows the upstream H1 structure as published. Do not invent missing Part
 headings in the skill layer; if upstream omits a Part-level H1, reflect that in the

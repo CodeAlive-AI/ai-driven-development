@@ -8,7 +8,7 @@ Several commitments make FPF more than a collection of patterns.
 4. Role, method, plan, performed work, evidence, decision, and gate are different kinds of project objects.
 5. Architecture is structure of holons, and architecture descriptions are descriptions of that structure.
 6. Evidence and assurance are first-class, so trust is not reduced to confidence prose.
-7. Comparison and improvement require declared characteristics, scales, candidate sets, and current comparator fields.
+7. Comparison and improvement are evaluable only with declared characteristics, scales, candidate sets, and current comparator fields.
 8. Creativity is governed search over candidate possibilities, not an uninspectable burst of inspiration.
 9. State of the art is a refreshable publication object, not a frozen leaderboard.
 10. Semantic precision starts from ontology and, when useful, from mathematical modeling that preserves declared structure, not from synonym replacement.
