@@ -14,12 +14,12 @@ Provides structured techniques, audit workflows, and reference materials for cra
 - **Structured extraction** -- schema-based data extraction with validation
 - **Prompt migration** -- cross-model migration checklist
 
-### Reference Library (15 files, 5000+ lines)
+### Reference Library (17 files, 5000+ lines)
 
 | Category | Files |
 |----------|-------|
 | **Fundamentals** | Prompting introduction, techniques catalog (17 techniques), risks & misuses |
-| **Model-specific** | Claude 4.6, GPT-5/5.1/5.2, Gemini 2.5/3/3.1 |
+| **Model-specific** | Claude 4.x and Fable 5, GPT-5 through GPT-5.6 Sol, Gemini 2.5/3/3.1 |
 | **Mistakes & anti-patterns** | Hallucinations, structural fragility, context rot, prompt debt, security vulnerabilities |
 | **Failure analysis** | 18-category taxonomy with minimal reproducible prompts, risk scoring, case studies |
 | **Evaluation** | Metrics, CI gating, red-teaming workflows, tooling ecosystem |

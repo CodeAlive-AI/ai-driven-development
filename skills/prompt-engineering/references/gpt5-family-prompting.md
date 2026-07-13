@@ -1,6 +1,6 @@
 # GPT-5 Family Prompting Guide
 
-Covers GPT-5, GPT-5.1, GPT-5.2, GPT-5.4, and GPT-5.5. Based on official OpenAI Cookbook and developer-docs prompting guides.
+Covers GPT-5, GPT-5.1, GPT-5.2, GPT-5.4, and GPT-5.5. For GPT-5.6 Sol, see the dedicated [GPT-5.6 Sol Prompting Guide](gpt56-sol-prompting.md). Based on official OpenAI Cookbook and developer-docs prompting guides.
 
 Sources:
 - [GPT-5 Prompting Guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
