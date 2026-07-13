@@ -1,6 +1,6 @@
 # Claude Family Prompting Guide
 
-Covers Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5. Based on official Anthropic documentation.
+Covers Claude Opus 4.7, Claude Opus 4.6, Claude Sonnet 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5. For Claude Fable 5 and Mythos 5, see the dedicated [Claude Fable 5 Prompting Guide](claude-fable5-prompting.md). Based on official Anthropic documentation.
 
 Sources:
 - [Prompting Best Practices — Claude 4](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices)
