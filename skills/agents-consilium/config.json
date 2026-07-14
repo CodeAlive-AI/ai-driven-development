@@ -55,6 +55,14 @@
       "role": "analyst",
       "label": "Claude Sonnet 5 (high)"
     },
+    "claude-fable": {
+      "enabled": false,
+      "backend": "claude-code",
+      "model": "claude-fable-5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Claude Fable 5 (high)"
+    },
     "claude-sonnet": {
       "enabled": false,
       "backend": "claude-code",
