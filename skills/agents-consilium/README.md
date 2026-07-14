@@ -90,7 +90,7 @@ scripts/ultrareview.sh --no-fallback path/to/file.cs         # CI-strict mode
 
 Each agent has a `role` in config:
 
-- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Sonnet 5.
+- **analyst** — Rigorous Analyst (precision, edge cases, implementation depth). Default: Codex, Claude Sonnet 5, Claude Fable 5.
 - **lateral** — Lateral Thinker (cross-domain patterns, questioning premises, creative alternatives). Default: OpenCode GLM-5.2, Gemini CLI.
 
 Agents respond with a shared structure (Assessment / Key Findings / Blind Spots / Alternatives / Recommendation + confidence) so the caller can compare section by section.
@@ -246,6 +246,14 @@ Codex GPT-5.6 profiles included in both config files:
 
 Only `codex` is enabled among these profiles. The others are selectable with `-a <agent-id>` without increasing the default fan-out.
 
+Claude profiles are also defined but disabled by default:
+
+| Agent ID | Model | Effort | Intended use |
+|---|---|---|---|
+| `claude-code` | `claude-sonnet-5` | `high` | Sonnet analyst cross-check |
+| `claude-fable` | `claude-fable-5` | `high` | Hardest long-horizon review and reasoning tasks |
+| `claude-sonnet` | `claude-sonnet-5` | `high` | Sonnet lateral cross-check |
+
 Each entry has 6 fields:
 
 | Field | Purpose |
@@ -267,9 +275,9 @@ The exact `model` and `effort` of every entry live in `config.json` so they can 
 - **codex-cli** — `minimal` / `low` / `medium` / `high` / `xhigh` — maps to `model_reasoning_effort`.
 - **gemini-cli** — `effort` is ignored.
 
-`gemini-cli` and `claude-code` are disabled by default (flip `enabled: true` to add). Multiple agents can share one backend (e.g. five OpenCode-Go models all use `backend: "opencode"`); per-agent config is selected by the entry's id, passed through `CONSILIUM_AGENT_ID`.
+`gemini-cli` and Claude profiles are disabled by default (flip `enabled: true` to add). Multiple agents can share one backend (e.g. five OpenCode-Go models all use `backend: "opencode"`); per-agent config is selected by the entry's id, passed through `CONSILIUM_AGENT_ID`.
 
-Claude Code defaults to `high` reasoning effort for both Opus and Sonnet selections unless `CLAUDE_EFFORT` or the selected agent profile overrides it.
+Claude Code defaults to `high` reasoning effort for Opus, Sonnet, and Fable selections unless `CLAUDE_EFFORT` or the selected agent profile overrides it.
 
 Set `CONSILIUM_CONFIG=/path/to/custom.json` to use an override file. See `config.example.json` for a fuller template.
 

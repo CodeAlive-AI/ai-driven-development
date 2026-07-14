@@ -222,6 +222,7 @@ Default config (`config.json`):
 - `gemini-cli` (backend=gemini-cli, model=gemini-3.1-pro-preview, role=lateral) — **disabled**
 - `opencode` (backend=opencode, model=opencode-go/glm-5.2, role=lateral, effort=max) — **enabled** and the default OpenCode agent
 - `claude-code` (backend=claude-code, model=claude-sonnet-5, effort=high, role=analyst) — **disabled**
+- `claude-fable` (backend=claude-code, model=claude-fable-5, effort=high, role=analyst) — **disabled**
 - `claude-sonnet` (backend=claude-code, model=claude-sonnet-5, effort=high, role=lateral) — **disabled**
 - `opencode-go-minimax` (backend=opencode, model=opencode-go/minimax-m3, role=lateral, effort=thinking) — **enabled**
 - `opencode-go-kimi` (backend=opencode, model=opencode-go/kimi-k2.7-code, role=analyst, effort=none) — **enabled**
@@ -309,14 +310,14 @@ Swap `opencode` for `opencode-go` (or any other provider id) to scan a different
 
 ### Claude Code backend
 
-The `claude-code` backend shells out to `claude -p` (headless mode, see [docs](https://code.claude.com/docs/en/headless)). Useful when you want a second Claude in the consilium — e.g. Sonnet 5 as analyst cross-checking Codex.
+The `claude-code` backend shells out to `claude -p` (headless mode, see [docs](https://code.claude.com/docs/en/headless)). Useful when you want a second Claude in the consilium — e.g. Sonnet 5 as analyst cross-checking Codex, or Fable 5 for the hardest long-horizon review tasks.
 
-- `model`: a shortname (`sonnet`, `haiku`) or full id (`claude-sonnet-5`).
-- `effort`: maps to `claude --effort` — accepts `low`, `medium`, `high`, `xhigh`, `max`. Default config sets `high` for Sonnet; omit the field to use the backend fallback of `high`, which also applies when selecting Opus through `CLAUDE_MODEL`.
+- `model`: a shortname (`sonnet`, `haiku`) or full id (`claude-sonnet-5`, `claude-fable-5`).
+- `effort`: maps to `claude --effort` — accepts `low`, `medium`, `high`, `xhigh`, `max`. Default config sets `high` for Sonnet and Fable; omit the field to use the backend fallback of `high`, which also applies when selecting Opus through `CLAUDE_MODEL`.
 - Runs in the caller's CWD with `--permission-mode plan` — Claude can freely `Read`/`Grep`/`Glob`/`Bash` read-only across the project, but cannot `Edit`/`Write`. Override with `CLAUDE_PERMISSION_MODE` only if you know what you're doing.
 - Authentication uses the same Claude Code credentials the CLI is already logged in with (`claude /login`).
 
-Note: `claude-code` is disabled in the default config to avoid spawning another Claude session accidentally. Flip `enabled` to `true` in `config.json` (or `CONSILIUM_CONFIG`) when you want it in the consensus run.
+Note: Claude profiles are disabled in the default config to avoid spawning another Claude session accidentally. Flip `enabled` to `true` in `config.json` (or `CONSILIUM_CONFIG`) when you want one in the consensus run, or invoke Fable ad hoc with `scripts/consensus-query.sh -a claude-fable "Q"`.
 
 ## Scripts
 
