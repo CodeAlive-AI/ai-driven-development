@@ -53,7 +53,7 @@
       "model": "claude-sonnet-5",
       "effort": "high",
       "role": "analyst",
-      "label": "Claude Sonnet 5 (high)"
+      "label": "Claude Sonnet 5"
     },
     "claude-fable": {
       "enabled": false,
@@ -61,7 +61,7 @@
       "model": "claude-fable-5",
       "effort": "high",
       "role": "analyst",
-      "label": "Claude Fable 5 (high)"
+      "label": "Claude Fable 5"
     },
     "claude-sonnet": {
       "enabled": false,
@@ -69,7 +69,7 @@
       "model": "claude-sonnet-5",
       "effort": "high",
       "role": "lateral",
-      "label": "Claude Sonnet 5 (high)"
+      "label": "Claude Sonnet 5"
     },
     "opencode-go-minimax": {
       "enabled": true,

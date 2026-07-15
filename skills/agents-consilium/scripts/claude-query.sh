@@ -14,7 +14,7 @@
 #   CLAUDE_EFFORT          — reasoning effort level (low, medium, high, xhigh, max).
 #                            Defaults to the "effort" field in config.json, or
 #                            "high" if both env and config are empty. This default
-#                            applies to both Opus and Sonnet model selections.
+#                            applies to Opus, Sonnet, and Fable model selections.
 #
 # Exit codes:
 #   0 — success

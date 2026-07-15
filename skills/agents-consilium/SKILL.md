@@ -653,7 +653,7 @@ What's happening?"
 - `OPENCODE_EFFORT`: Override OpenCode reasoning effort (default: config `effort` field, or `high`)
 - `CLAUDE_MODEL`: Override Claude Code model at runtime (full id or supported alias)
 - `CLAUDE_PERMISSION_MODE`: Override Claude Code permission mode (default: `plan`)
-- `CLAUDE_EFFORT`: Override Claude Code reasoning effort (default: config `effort` field, or `high` if both unset; applies to Opus and Sonnet). Levels: `low`, `medium`, `high`, `xhigh`, `max`.
+- `CLAUDE_EFFORT`: Override Claude Code reasoning effort (default: config `effort` field, or `high` if both unset; applies to Opus, Sonnet, and Fable). Levels: `low`, `medium`, `high`, `xhigh`, `max`.
 - `CODEX_EFFORT`: Override Codex reasoning effort (default: config `effort` field, or `high` if both unset). Levels: `minimal`, `low`, `medium`, `high`, `xhigh`.
 - `GEMINI_API_KEY`: Required for the `gemini-cli` backend (v1beta model access)
 - `GOOGLE_GENERATIVE_AI_API_KEY`: Required if the `opencode` backend uses `google/...` models
