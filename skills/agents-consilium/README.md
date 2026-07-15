@@ -254,6 +254,12 @@ Claude profiles are also defined but disabled by default:
 | `claude-fable` | `claude-fable-5` | `high` | Hardest long-horizon review and reasoning tasks |
 | `claude-sonnet` | `claude-sonnet-5` | `high` | Sonnet lateral cross-check |
 
+OpenCode direct-provider profiles are also defined but disabled by default:
+
+| Agent ID | Model | Effort | Intended use |
+|---|---|---|---|
+| `opencode-xai-grok45` | `xai/grok-4.5` | `high` | Grok 4.5 through OpenCode's xAI provider at maximum reasoning |
+
 Each entry has 6 fields:
 
 | Field | Purpose |

@@ -48,6 +48,14 @@
       "role": "lateral",
       "label": "OpenCode GLM-5.2"
     },
+    "opencode-xai-grok45": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "xai/grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "xAI Grok 4.5"
+    },
     "claude-code": {
       "enabled": false,
       "backend": "claude-code",

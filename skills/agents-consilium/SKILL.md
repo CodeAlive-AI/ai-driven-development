@@ -221,6 +221,7 @@ Default config (`config.json`):
 - `codex-gpt-5.6-luna` (backend=codex-cli, model=gpt-5.6-luna, effort=low, role=analyst) — **disabled**
 - `gemini-cli` (backend=gemini-cli, model=gemini-3.1-pro-preview, role=lateral) — **disabled**
 - `opencode` (backend=opencode, model=opencode-go/glm-5.2, role=lateral, effort=max) — **enabled** and the default OpenCode agent
+- `opencode-xai-grok45` (backend=opencode, model=xai/grok-4.5, role=analyst, effort=high) — **disabled**
 - `claude-code` (backend=claude-code, model=claude-sonnet-5, effort=high, role=analyst) — **disabled**
 - `claude-fable` (backend=claude-code, model=claude-fable-5, effort=high, role=analyst) — **disabled**
 - `claude-sonnet` (backend=claude-code, model=claude-sonnet-5, effort=high, role=lateral) — **disabled**
@@ -251,9 +252,10 @@ Edit `config.json` to flip agents on/off or change models. Set `CONSILIUM_CONFIG
 
 ### OpenCode provider choice
 
-The `opencode` backend works with any provider/model that OpenCode supports. The default configuration uses the OC-Go provider:
+The `opencode` backend works with any provider/model that OpenCode supports. The default configuration uses the OC-Go provider, and optional profiles can target direct providers such as xAI:
 
 - **OC-Go** (default): `"model": "opencode-go/glm-5.2"` — goes through OpenCode's OC-Go provider. Works once OpenCode is authenticated for OC-Go.
+- **xAI/Grok**: `"model": "xai/grok-4.5"` — uses OpenCode's xAI provider. `grok-4.5` exposes `low`, `medium`, and `high`; set `effort` to `high` for maximum reasoning.
 
 Flip between providers by editing the `model` field; the rest of the config stays the same.
 
@@ -307,6 +309,7 @@ Swap `opencode` for `opencode-go` (or any other provider id) to scan a different
 | `opencode-go/minimax-m3` | none, thinking | `thinking` |
 | `opencode-go/qwen3.7-max` | — | `none` |
 | `opencode-go/qwen3.7-plus` | — | `none` |
+| `xai/grok-4.5` | low, medium, high | `high` |
 
 ### Claude Code backend
 
@@ -664,6 +667,7 @@ What's happening?"
 
 - [Codex CLI](https://github.com/openai/codex) installed and authenticated (`codex --version`) — for the `codex-cli` backend
 - [OpenCode CLI](https://opencode.ai) installed (`opencode --version`) — for the `opencode` backend. For Zen models (`opencode/...`) run `opencode providers login opencode` once; for Google direct models (`google/...`) set `GOOGLE_GENERATIVE_AI_API_KEY`; for OpenAI direct models (`openai/...`) either run `opencode auth login` and pick OpenAI, or set `OPENAI_API_KEY`.
+- xAI authentication — required only when the `opencode` backend uses `xai/...` models such as `xai/grok-4.5`; either log in through OpenCode's xAI provider or configure the provider's API key.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) installed (`gemini --version`) — for the `gemini-cli` backend (optional; falls back to direct API)
 - [Claude Code CLI](https://docs.claude.com/claude-code) installed and logged in (`claude --version`, `claude /login`) — for the `claude-code` backend
 - `GEMINI_API_KEY` environment variable — required only when `gemini-cli` backend is enabled (get key at https://ai.google.dev/gemini-api/docs/api-key)
