@@ -544,8 +544,9 @@ scripts/ultrareview.sh --no-fallback path/to/file.cs   # disable judge fallback
 ```
 
 The Opus-judge fallback is intentional — Claude Code's `claude -p` backend
-timed out at 1200s on 200+ findings during the bench. Setting `--no-fallback`
-lets you treat a primary judge failure as fatal (useful in CI).
+timed out under the old 1200s timeout on 200+ findings during the bench.
+Current agent and first-byte watchdog defaults are 3600s / one hour. Setting
+`--no-fallback` lets you treat a primary judge failure as fatal (useful in CI).
 
 ### Output filtering
 
@@ -662,6 +663,8 @@ What's happening?"
 - `GOOGLE_GENERATIVE_AI_API_KEY`: Required if the `opencode` backend uses `google/...` models
 - `OPENAI_API_KEY`: Required if the `opencode` backend uses `openai/...` models and OpenCode is not already logged in via `opencode auth login`
 - `AGENT_TIMEOUT`: Timeout seconds (default: 3600 / one hour)
+- `CODEX_FIRST_BYTE_DEADLINE`: Codex output-file first-byte watchdog seconds (default: 3600 / one hour)
+- `ULTRAREVIEW_FIRST_BYTE`: First-byte watchdog seconds used by superreview/ultrareview discovery and judge wrappers (default: 3600 / one hour)
 
 ## Prerequisites
 
