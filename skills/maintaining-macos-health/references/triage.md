@@ -38,6 +38,10 @@ test -f ~/Library/Logs/mac-health/health.log && tail -20 ~/Library/Logs/mac-heal
 
 echo "=== Uptime, load ==="
 uptime
+
+echo "=== Recent CPU monitor evidence ==="
+test -f ~/Library/Logs/mac-health/health.log && grep ' cpu ' ~/Library/Logs/mac-health/health.log | tail -10
+ls -lt ~/Library/Logs/mac-health/cpu-incidents/ 2>/dev/null | head -5
 ```
 
 ## Signal classification
@@ -112,6 +116,8 @@ sudo powermetrics --samplers cpu_power,thermal -i 1000 -n 5
 ```
 - If thermal pressure shows `Heavy`: close apps, let it cool, check fans.
 - Else fall back to memory-driven flow (B).
+
+If the CPU monitor recorded an incident, inspect its snapshot before sampling again. It contains system busy/load plus safe top-process fields (PID, PPID, elapsed time, executable) without command arguments. A per-process advisory is evidence, not permission to kill it: first determine whether the workload is an intentional build, test, indexer, VM, or a stale background tool.
 
 ## Decision tree
 

@@ -1,10 +1,13 @@
 #!/bin/bash
 # mac-health-check — minimal noise-resistant macOS health monitor.
 #
-# Three CRITICAL-only triggers:
+# Three CRITICAL-only resource triggers:
 #   1) Disk free below threshold (3 consecutive readings)
 #   2) Memory pressure critical AND swap above threshold (3 consecutive readings)
 #   3) New JetsamEvent with vm-compressor-space-shortage (immediate, via file polling)
+# Plus a noise-resistant CPU sensor:
+#   4) Whole-system CPU saturation (critical, audible)
+#   5) A single process burning CPU for a long time (advisory, silent)
 #
 # Compatible with bash 3.2 (Apple-shipped). No `set -u` to avoid 3.2 quirks
 # with `local var` declarations. Process substitution is used and tested.
@@ -31,16 +34,37 @@ CONFIG="${MAC_HEALTH_CONFIG:-$HOME/.config/mac-health/config.sh}"
 : "${NTFY_URL:=}"
 : "${JETSAM_DIR:=/Library/Logs/DiagnosticReports}"
 : "${NOTIFIER:=auto}"          # auto | alerter | terminal-notifier | osascript | none
+: "${CPU_ENABLED:=1}"
+: "${CPU_SYSTEM_BUSY_PCT:=90}"
+: "${CPU_SYSTEM_BUSY_READINGS:=3}"
+: "${CPU_PROCESS_HOT_PCT:=80}"
+: "${CPU_PROCESS_HOT_READINGS:=12}"
+: "${CPU_PROCESS_LEAK_PCT:=40}"
+: "${CPU_PROCESS_LEAK_READINGS:=72}"
+: "${CPU_PROCESS_RECOVERY_PCT:=20}"
+: "${CPU_SYSTEM_RECOVERY_PCT:=70}"
+: "${CPU_RECOVERY_READINGS:=3}"
+: "${CPU_MAX_SAMPLE_GAP_MINUTES:=15}"
+: "${CPU_IGNORE_REGEX:=^(kernel_task|WindowServer|mac-health-check|ps|iostat)$}"
+: "${CPU_LOG_TOP_N:=5}"
+: "${CPU_ALERT_TOP_N:=3}"
+: "${CPU_INCIDENT_RETENTION_DAYS:=30}"
 
-LOG_DIR="$HOME/Library/Logs/mac-health"
-STATE_DIR="$HOME/.local/state/mac-health"
+# Test hooks. Production config should leave these empty.
+: "${CPU_PS_FIXTURE:=}"
+: "${CPU_IOSTAT_FIXTURE:=}"
+
+LOG_DIR="${MAC_HEALTH_LOG_DIR:-$HOME/Library/Logs/mac-health}"
+STATE_DIR="${MAC_HEALTH_STATE_DIR:-$HOME/.local/state/mac-health}"
 LOG_FILE="$LOG_DIR/health.log"
+CPU_INCIDENT_DIR="$LOG_DIR/cpu-incidents"
 INSTALL_DATE_FILE="$STATE_DIR/install_date"
 JETSAM_SEEN="$STATE_DIR/jetsam_seen"
 
-mkdir -p "$LOG_DIR" "$STATE_DIR"
+mkdir -p "$LOG_DIR" "$STATE_DIR" "$CPU_INCIDENT_DIR"
 
-NOW=$(date '+%s')
+NOW="${MAC_HEALTH_NOW:-$(date '+%s')}"
+case "$NOW" in (''|*[!0-9]*) NOW=$(date '+%s') ;; esac
 
 # ---- helpers ----
 log() {
@@ -58,8 +82,9 @@ else
 fi
 
 is_suppressed() {
+  local bypass_calibration="${1:-0}"
   if [ -f "$SUPPRESS_FILE" ]; then return 0; fi
-  if [ "$IN_CALIBRATION" = "1" ]; then return 0; fi
+  if [ "$bypass_calibration" != "1" ] && [ "$IN_CALIBRATION" = "1" ]; then return 0; fi
   return 1
 }
 
@@ -80,6 +105,7 @@ set_cooldown() {
 # Pick the first available notifier; fall back gracefully.
 notifier_send() {
   local title="$1" message="$2"
+  local urgency="${3:-critical}"
   local choice="$NOTIFIER"
 
   if [ "$choice" = "auto" ]; then
@@ -93,16 +119,31 @@ notifier_send() {
   # alerter in particular blocks on user response unless detached.
   case "$choice" in
     alerter)
-      ( /opt/homebrew/bin/alerter --title "$title" --message "$message" \
-          --sound default --timeout 30 </dev/null >/dev/null 2>&1 & )
+      if [ "$urgency" = "critical" ]; then
+        ( /opt/homebrew/bin/alerter --title "$title" --message "$message" \
+            --sound default --timeout 30 </dev/null >/dev/null 2>&1 & )
+      else
+        ( /opt/homebrew/bin/alerter --title "$title" --message "$message" \
+            --timeout 30 </dev/null >/dev/null 2>&1 & )
+      fi
       ;;
     terminal-notifier)
-      ( /opt/homebrew/bin/terminal-notifier -title "$title" -message "$message" \
-          -sound default </dev/null >/dev/null 2>&1 & )
+      if [ "$urgency" = "critical" ]; then
+        ( /opt/homebrew/bin/terminal-notifier -title "$title" -message "$message" \
+            -sound default </dev/null >/dev/null 2>&1 & )
+      else
+        ( /opt/homebrew/bin/terminal-notifier -title "$title" -message "$message" \
+            </dev/null >/dev/null 2>&1 & )
+      fi
       ;;
     osascript)
-      ( /usr/bin/osascript -e "display notification \"$message\" with title \"$title\" sound name \"default\"" \
-          </dev/null >/dev/null 2>&1 & )
+      if [ "$urgency" = "critical" ]; then
+        ( /usr/bin/osascript -e "display notification \"$message\" with title \"$title\" sound name \"default\"" \
+            </dev/null >/dev/null 2>&1 & )
+      else
+        ( /usr/bin/osascript -e "display notification \"$message\" with title \"$title\"" \
+            </dev/null >/dev/null 2>&1 & )
+      fi
       ;;
     none) : ;;
   esac
@@ -110,9 +151,12 @@ notifier_send() {
 
 notify() {
   local key="$1" title="$2" message="$3" reason="$4"
-  log "ALERT key=$key reason='$reason' title='$title' msg='$message'"
+  local urgency="${5:-critical}"
+  local bypass_calibration="${6:-0}"
+  local skip_cooldown="${7:-0}"
+  log "ALERT key=$key urgency=$urgency reason='$reason' title='$title' msg='$message'"
 
-  if is_suppressed; then
+  if is_suppressed "$bypass_calibration"; then
     if [ -f "$SUPPRESS_FILE" ]; then
       log "  -> suppressed (silent file)"
     else
@@ -120,20 +164,24 @@ notify() {
     fi
     return
   fi
-  if in_cooldown "$key"; then
+  if [ "$skip_cooldown" != "1" ] && in_cooldown "$key"; then
     log "  -> cooldown active for '$key', skip"
     return
   fi
-  set_cooldown "$key"
-
-  notifier_send "$title" "$message"
-
-  if [ -n "$NTFY_URL" ]; then
-    /usr/bin/curl -s -m 5 -d "$message" -H "Title: $title" \
-      -H "Priority: high" -H "Tags: warning" "$NTFY_URL" >/dev/null 2>&1 || true
+  if [ "$skip_cooldown" != "1" ]; then
+    set_cooldown "$key"
   fi
 
-  log "  -> delivered via $NOTIFIER"
+  notifier_send "$title" "$message" "$urgency"
+
+  if [ -n "$NTFY_URL" ]; then
+    local ntfy_priority="default"
+    [ "$urgency" = "critical" ] && ntfy_priority="high"
+    /usr/bin/curl -s -m 5 -d "$message" -H "Title: $title" \
+      -H "Priority: $ntfy_priority" -H "Tags: warning" "$NTFY_URL" >/dev/null 2>&1 || true
+  fi
+
+  log "  -> delivered via $NOTIFIER urgency=$urgency"
 }
 
 bump_counter() {
@@ -208,7 +256,326 @@ check_memory() {
   fi
 }
 
-# ---- Sensor 3: JetsamEvent files in DiagnosticReports ----
+# ---- Sensor 3: sustained CPU anomalies ----
+# Per-process %CPU comes from macOS ps. It is a decaying average over up to
+# one minute and is expressed relative to one logical core, so values may be
+# greater than 100. Whole-system CPU comes from the second one-second iostat
+# sample and is expressed as 0..100 across the entire machine.
+
+cpu_comm_hash() {
+  local value="$1"
+  if [ -x /sbin/md5 ]; then
+    /sbin/md5 -q -s "$value"
+  else
+    printf '%s' "$value" | cksum | awk '{print $1}'
+  fi
+}
+
+cpu_is_ignored() {
+  local display_name="$1"
+  [ -n "$CPU_IGNORE_REGEX" ] || return 1
+  printf '%s\n' "$display_name" | grep -Eq "$CPU_IGNORE_REGEX"
+}
+
+cpu_collect_processes() {
+  if [ -n "$CPU_PS_FIXTURE" ] && [ -f "$CPU_PS_FIXTURE" ]; then
+    cat "$CPU_PS_FIXTURE"
+  else
+    /bin/ps -wwaxo pid=,ppid=,%cpu=,etime=,comm=
+  fi | awk '
+    NF >= 5 && $1 ~ /^[0-9]+$/ && $2 ~ /^[0-9]+$/ && $3 ~ /^[0-9]+([.][0-9]+)?$/ {
+      pid=$1; ppid=$2; cpu=$3; etime=$4; comm=$5
+      for (i=6; i<=NF; i++) comm=comm " " $i
+      gsub(/\t/, " ", comm)
+      printf "%d\t%s\t%s\t%s\t%s\n", int(cpu + 0.5), pid, ppid, etime, comm
+    }
+  ' | sort -nr -k1,1
+}
+
+cpu_collect_system() {
+  if [ -n "$CPU_IOSTAT_FIXTURE" ] && [ -f "$CPU_IOSTAT_FIXTURE" ]; then
+    cat "$CPU_IOSTAT_FIXTURE"
+  elif [ -x /usr/sbin/iostat ]; then
+    /usr/sbin/iostat -w 1 -c 2 2>/dev/null
+  else
+    return 1
+  fi | awk '
+    $1 ~ /^[0-9]+([.][0-9]+)?$/ && NF >= 6 {
+      idle=$(NF-3); load1=$(NF-2); load5=$(NF-1); load15=$NF; found=1
+    }
+    END {
+      if (found && idle ~ /^[0-9]+([.][0-9]+)?$/) {
+        printf "%d %s %s %s\n", int(100 - idle + 0.5), load1, load5, load15
+      }
+    }
+  '
+}
+
+cpu_top_summary() {
+  local snapshot="$1"
+  local max_items="$2"
+  awk -F '\t' -v max_items="$max_items" '
+    NR <= max_items {
+      name=$5
+      sub(/^.*\//, "", name)
+      gsub(/[;|]/, "_", name)
+      if (out != "") out=out "; "
+      out=out name " pid=" $2 " cpu=" $1 "%"
+    }
+    END { print out }
+  ' "$snapshot"
+}
+
+cpu_write_incident_snapshot() {
+  local snapshot="$1"
+  local busy="$2"
+  local load1="$3"
+  local load5="$4"
+  local load15="$5"
+  local incident_file="$CPU_INCIDENT_DIR/cpu-$(date '+%Y%m%d-%H%M%S')-$$.log"
+
+  {
+    printf 'timestamp=%s\n' "$(date '+%Y-%m-%d %H:%M:%S')"
+    printf 'system_busy_pct=%s load_1m=%s load_5m=%s load_15m=%s\n' \
+      "${busy:-unknown}" "${load1:-unknown}" "${load5:-unknown}" "${load15:-unknown}"
+    printf 'cpu_pct\tpid\tppid\telapsed\texecutable\n'
+    head -10 "$snapshot"
+  } > "$incident_file"
+  log "cpu incident snapshot=$incident_file"
+}
+
+check_cpu() {
+  [ "$CPU_ENABLED" = "1" ] || { log "cpu disabled"; return 0; }
+
+  local cpu_tmp_dir=""
+  cpu_tmp_dir=$(mktemp -d "${TMPDIR:-/tmp}/mac-health-cpu.XXXXXX")
+  local snapshot="$cpu_tmp_dir/processes.tsv"
+  local seen_pids="$cpu_tmp_dir/seen-pids"
+  local new_process_incidents="$cpu_tmp_dir/new-process-incidents.tsv"
+  : > "$seen_pids"
+  : > "$new_process_incidents"
+
+  cpu_collect_processes > "$snapshot"
+
+  local system_sample=""
+  local busy="" load1="" load5="" load15=""
+  system_sample=$(cpu_collect_system || true)
+  if [ -n "$system_sample" ]; then
+    read -r busy load1 load5 load15 <<EOF
+$system_sample
+EOF
+  fi
+
+  local top_summary="" alert_top_summary=""
+  top_summary=$(cpu_top_summary "$snapshot" "$CPU_LOG_TOP_N")
+  alert_top_summary=$(cpu_top_summary "$snapshot" "$CPU_ALERT_TOP_N")
+  log "cpu system_busy=${busy:-unknown} load=${load1:-unknown}/${load5:-unknown}/${load15:-unknown} top=[$top_summary]"
+
+  # Whole-system incident state:
+  # pending_count recovery_count incident_open last_sample_epoch
+  local system_state_file="$STATE_DIR/cpu_system_state"
+  local system_pending=0 system_recovery=0 system_incident=0 system_last_seen=0 system_new=0
+  if [ -f "$system_state_file" ]; then
+    read -r system_pending system_recovery system_incident system_last_seen < "$system_state_file" || true
+  fi
+  case "$system_pending" in (''|*[!0-9]*) system_pending=0 ;; esac
+  case "$system_recovery" in (''|*[!0-9]*) system_recovery=0 ;; esac
+  case "$system_incident" in (0|1) ;; (*) system_incident=0 ;; esac
+  case "$system_last_seen" in (''|*[!0-9]*) system_last_seen=0 ;; esac
+
+  if [ "$system_last_seen" -gt 0 ] \
+     && [ $(( (NOW - system_last_seen) / 60 )) -gt "$CPU_MAX_SAMPLE_GAP_MINUTES" ]; then
+    log "  cpu system sample gap exceeded; reset consecutive counters"
+    [ "$system_incident" = "0" ] && system_pending=0
+    system_recovery=0
+  fi
+
+  if [ -n "$busy" ]; then
+    if [ "$system_incident" = "1" ]; then
+      if [ "$busy" -lt "$CPU_SYSTEM_RECOVERY_PCT" ]; then
+        system_recovery=$(( system_recovery + 1 ))
+        if [ "$system_recovery" -ge "$CPU_RECOVERY_READINGS" ]; then
+          log "cpu system recovered busy=$busy% after $system_recovery readings"
+          system_pending=0
+          system_recovery=0
+          system_incident=0
+        fi
+      else
+        system_recovery=0
+      fi
+    elif [ "$busy" -ge "$CPU_SYSTEM_BUSY_PCT" ]; then
+      system_pending=$(( system_pending + 1 ))
+      log "  cpu system above threshold (count=$system_pending/$CPU_SYSTEM_BUSY_READINGS)"
+      if [ "$system_pending" -ge "$CPU_SYSTEM_BUSY_READINGS" ]; then
+        system_incident=1
+        system_recovery=0
+        system_new=1
+      fi
+    else
+      system_pending=0
+      system_recovery=0
+    fi
+    printf '%s %s %s %s\n' \
+      "$system_pending" "$system_recovery" "$system_incident" "$NOW" > "$system_state_file"
+  else
+    log "  cpu system sample unavailable; preserving prior state"
+  fi
+
+  # Per-process state is keyed by PID and guarded by a hash of the executable
+  # path, so PID reuse cannot inherit an old incident.
+  local tab=""
+  tab=$(printf '\t')
+  local cpu=0 pid=0 ppid=0 etime="" comm="" display_name=""
+  local process_state_file="" comm_hash="" saved_hash=""
+  local hot_count=0 leak_count=0 recovery_count=0 incident_open=0 process_last_seen=0
+  local fire_reason=""
+
+  while IFS="$tab" read -r cpu pid ppid etime comm; do
+    [ -n "$pid" ] || continue
+    printf '%s\n' "$pid" >> "$seen_pids"
+    display_name=${comm##*/}
+    process_state_file="$STATE_DIR/cpu_process.$pid"
+
+    if [ "$cpu" -lt "$CPU_PROCESS_LEAK_PCT" ] && [ ! -f "$process_state_file" ]; then
+      continue
+    fi
+    if cpu_is_ignored "$display_name"; then
+      rm -f "$process_state_file"
+      continue
+    fi
+
+    comm_hash=$(cpu_comm_hash "$comm")
+    saved_hash=""
+    hot_count=0
+    leak_count=0
+    recovery_count=0
+    incident_open=0
+    process_last_seen=0
+    if [ -f "$process_state_file" ]; then
+      read -r saved_hash hot_count leak_count recovery_count incident_open process_last_seen \
+        < "$process_state_file" || true
+    fi
+    if [ "$saved_hash" != "$comm_hash" ]; then
+      hot_count=0
+      leak_count=0
+      recovery_count=0
+      incident_open=0
+      process_last_seen=0
+    fi
+    case "$hot_count" in (''|*[!0-9]*) hot_count=0 ;; esac
+    case "$leak_count" in (''|*[!0-9]*) leak_count=0 ;; esac
+    case "$recovery_count" in (''|*[!0-9]*) recovery_count=0 ;; esac
+    case "$incident_open" in (0|1) ;; (*) incident_open=0 ;; esac
+    case "$process_last_seen" in (''|*[!0-9]*) process_last_seen=0 ;; esac
+
+    if [ "$process_last_seen" -gt 0 ] \
+       && [ $(( (NOW - process_last_seen) / 60 )) -gt "$CPU_MAX_SAMPLE_GAP_MINUTES" ]; then
+      log "  cpu process sample gap exceeded name='$display_name' pid=$pid; reset consecutive counters"
+      if [ "$incident_open" = "0" ]; then
+        hot_count=0
+        leak_count=0
+      fi
+      recovery_count=0
+    fi
+
+    if [ "$incident_open" = "1" ]; then
+      if [ "$cpu" -lt "$CPU_PROCESS_RECOVERY_PCT" ]; then
+        recovery_count=$(( recovery_count + 1 ))
+        if [ "$recovery_count" -ge "$CPU_RECOVERY_READINGS" ]; then
+          log "cpu process recovered name='$display_name' pid=$pid cpu=$cpu%"
+          hot_count=0
+          leak_count=0
+          recovery_count=0
+          incident_open=0
+        fi
+      else
+        recovery_count=0
+      fi
+    else
+      if [ "$cpu" -ge "$CPU_PROCESS_HOT_PCT" ]; then
+        hot_count=$(( hot_count + 1 ))
+      else
+        hot_count=0
+      fi
+      if [ "$cpu" -ge "$CPU_PROCESS_LEAK_PCT" ]; then
+        leak_count=$(( leak_count + 1 ))
+      else
+        leak_count=0
+      fi
+
+      fire_reason=""
+      if [ "$hot_count" -ge "$CPU_PROCESS_HOT_READINGS" ]; then
+        fire_reason="hot"
+      elif [ "$leak_count" -ge "$CPU_PROCESS_LEAK_READINGS" ]; then
+        fire_reason="leak"
+      fi
+      if [ -n "$fire_reason" ]; then
+        incident_open=1
+        recovery_count=0
+        printf '%s\t%s\t%s\t%s\t%s\t%s\n' \
+          "$cpu" "$pid" "$etime" "$display_name" "$fire_reason" \
+          "$([ "$fire_reason" = "hot" ] && echo "$hot_count" || echo "$leak_count")" \
+          >> "$new_process_incidents"
+      fi
+    fi
+
+    if [ "$incident_open" = "0" ] && [ "$cpu" -lt "$CPU_PROCESS_LEAK_PCT" ] \
+       && [ "$hot_count" = "0" ] && [ "$leak_count" = "0" ]; then
+      rm -f "$process_state_file"
+    else
+      printf '%s %s %s %s %s %s\n' \
+        "$comm_hash" "$hot_count" "$leak_count" "$recovery_count" "$incident_open" "$NOW" \
+        > "$process_state_file"
+    fi
+  done < "$snapshot"
+
+  # A process that exited resolves silently and cannot leave stale PID state.
+  local stale_state="" stale_pid=""
+  for stale_state in "$STATE_DIR"/cpu_process.*; do
+    [ -f "$stale_state" ] || continue
+    stale_pid=${stale_state##*.}
+    if ! grep -Fxq "$stale_pid" "$seen_pids"; then
+      log "cpu process state removed after exit pid=$stale_pid"
+      rm -f "$stale_state"
+    fi
+  done
+
+  local process_new=0
+  [ -s "$new_process_incidents" ] && process_new=1
+
+  if [ "$system_new" = "1" ] || [ "$process_new" = "1" ]; then
+    cpu_write_incident_snapshot "$snapshot" "$busy" "$load1" "$load5" "$load15"
+
+    local alert_cpu="" alert_pid="" alert_etime="" alert_name="" alert_reason="" alert_count=""
+    if [ "$process_new" = "1" ]; then
+      IFS="$tab" read -r alert_cpu alert_pid alert_etime alert_name alert_reason alert_count \
+        < "$new_process_incidents"
+    fi
+
+    if [ "$system_new" = "1" ]; then
+      notify "cpu_system_critical" "🔥 CPU Saturated" \
+        "CPU busy=${busy}% for ${system_pending} checks. Load=${load1}/${load5}/${load15}. Top: $alert_top_summary" \
+        "busy=${busy}% checks=$system_pending" "critical" "1" "1"
+    elif [ "$process_new" = "1" ]; then
+      local reason_text=""
+      if [ "$alert_reason" = "hot" ]; then
+        reason_text=">=${CPU_PROCESS_HOT_PCT}% for ${alert_count} checks"
+      else
+        reason_text=">=${CPU_PROCESS_LEAK_PCT}% for ${alert_count} checks"
+      fi
+      notify "cpu_process_advisory" "⚙️ CPU Process Anomaly" \
+        "$alert_name pid=$alert_pid cpu=${alert_cpu}% runtime=$alert_etime ($reason_text). System=${busy:-unknown}%. Top: $alert_top_summary" \
+        "name=$alert_name pid=$alert_pid cpu=${alert_cpu}% reason=$alert_reason" \
+        "advisory" "1" "1"
+    fi
+  fi
+
+  find "$CPU_INCIDENT_DIR" -type f -name 'cpu-*.log' \
+    -mtime "+$CPU_INCIDENT_RETENTION_DAYS" -delete 2>/dev/null || true
+  rm -rf "$cpu_tmp_dir"
+}
+
+# ---- Sensor 4: JetsamEvent files in DiagnosticReports ----
 # Polls ~/Library/Logs/DiagnosticReports/JetsamEvent-*.ips for new files
 # containing "vm-compressor-space-shortage". `log show` was tried but is too
 # slow even with --start (30+ s) on a busy machine. The .ips file approach
@@ -264,6 +631,7 @@ main() {
   log "=== run start (calibration=$IN_CALIBRATION, days=$DAYS_SINCE_INSTALL) ==="
   check_disk || log "ERROR check_disk: $?"
   check_memory || log "ERROR check_memory: $?"
+  check_cpu || log "ERROR check_cpu: $?"
   check_jetsam || log "ERROR check_jetsam: $?"
   log "=== run end ==="
 }

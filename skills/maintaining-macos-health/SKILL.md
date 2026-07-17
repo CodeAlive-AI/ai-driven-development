@@ -1,7 +1,7 @@
 ---
 name: maintaining-macos-health
-version: 1.0.0
-description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, broken app installs, or app-specific performance problems unrelated to disk or memory pressure.
+version: 1.1.0
+description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a process persistently burns CPU, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory/CPU alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, or broken app installs.
 ---
 
 # Maintaining macOS Health
@@ -30,6 +30,7 @@ Trigger on any of:
 - Watchdog-timeout / kernel panic / "no checkins from watchdogd"
 - New `JetsamEvent-*.ips` with `vm-compressor-space-shortage`
 - "Mac is slow", swap > 6 GB, sustained Critical memory pressure
+- A process persistently consumes a core, or the whole machine stays CPU-saturated
 - User wants to set up monitoring/alerting from scratch
 - Migration to a new Mac → restore the same alerter
 - General "clean my Mac" / "audit storage" / "free space" requests
@@ -42,7 +43,7 @@ Trigger on any of:
 | `references/cleanup-tiers.md` | Tiered cleanup playbook (10 tiers, zero-risk → discuss-first), copy-paste-safe shell blocks |
 | `references/never-touch.md` | Categories that **must not** be deleted even under sudo (Mole-derived blacklist + incident-derived additions) |
 | `references/mole-techniques.md` | What Mole does that we borrow: marker→target map for `mo purge`, safe-path validators, age thresholds |
-| `references/alerting.md` | Full alerter design: 3 CRITICAL-only triggers, hysteresis, calibration, alerter vs terminal-notifier vs osascript, install/restore commands |
+| `references/alerting.md` | Full alerter design: disk/memory/Jetsam critical triggers plus sustained CPU anomaly detection, incident lifecycle, hysteresis, notifier choices, install/restore commands |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
 | `assets/com.local.mac-health-check.plist` | LaunchAgent plist with `StartCalendarInterval` (StartInterval is broken on laptops) |
 | `assets/config.sh` | Default config with safe thresholds |
@@ -54,7 +55,7 @@ Read the relevant reference before acting. Do NOT operate from memory of these f
 ## Core mental model
 
 1. **Monitor passively** — Stats menubar (`brew install --cask stats`) — you see issues forming, not just when they explode.
-2. **Alert actively** — only on truly CRITICAL conditions: disk < 10 %, memory pressure Critical AND swap > 8 GB, or new JetsamEvent with `vm-compressor-space-shortage`. Anything else is noise.
+2. **Alert actively, diagnose quietly** — disk, memory, Jetsam, and whole-system CPU saturation are critical. A single process burning CPU is a silent advisory only after a long sustained window; routine samples stay in the log.
 3. **Cleanup tiers** — start zero-risk (caches, orphan data), only escalate to project artifacts and sudo categories if needed. Mole's `mo purge` and `mo clean` are the right primary tools.
 4. **Mole is the safety floor** — even when running shell commands by hand, follow Mole's path-validation rules: never delete inside `/System`, `/bin`, `/usr`, `/etc`, `/var/db` outside specific allowlisted subpaths; bin/ only under .NET; vendor/ only under PHP; protect AI/password/VPN/keychain bundle IDs.
 
@@ -93,6 +94,8 @@ The Python script is bash-3.2-friendly, uses only stdlib, and is safe to run fro
 7. First run permission prompt: open `alerter` once interactively (`alerter --message test`) so macOS asks for Notification Center permission.
 8. Tell the user: 7-day calibration is silent (logs only). Edit `config.sh` after a week if pattern noisy.
 
+The calibration window applies to the original disk/memory/Jetsam critical sensors. CPU uses conservative developer-workstation defaults and starts immediately; process advisories are silent and deduplicated for the full incident lifetime.
+
 Verify with `launchctl list | grep mac-health` (should show PID and exit 0) and `tail -f ~/Library/Logs/mac-health/health.log`.
 
 ### C. "Already have alerter, but it stopped working / making noise"
@@ -115,8 +118,9 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 4. **For Time Machine backups: `tmutil delete <path>`, never `rm`.** TM-tagged paths require the `tmutil` API.
 5. **For sudo cleanup of `/Library`, `/private/var/db/*`**: only the allowlisted subpaths from `references/never-touch.md` § Sudo allowlist.
 6. **No auto-cleanup hooks tied to alerts.** Alerts notify; user decides. Documented anti-pattern (Google SRE, also confirmed by community 2025-2026 — see `references/alerting.md`).
-7. **Don't delete swap files.** `rm /private/var/vm/swapfile*` while running = guaranteed kernel panic.
-8. **Apply phase reads only the selection JSON.** Never hand-roll `rm` blocks or hard-code paths from the earlier scan when applying. Real incident: agent applied the default-selected recordings list from the original scan, ignoring that the user had unchecked them in the UI before submitting. The fix is structural — use `assets/apply-cleanup-selection.py` which iterates `selected_items` from the selection JSON only.
+7. **No auto-kill hooks tied to CPU alerts.** A CPU advisory records the executable and PID; the user decides whether the workload is intentional and how to stop it.
+8. **Don't delete swap files.** `rm /private/var/vm/swapfile*` while running = guaranteed kernel panic.
+9. **Apply phase reads only the selection JSON.** Never hand-roll `rm` blocks or hard-code paths from the earlier scan when applying. Real incident: agent applied the default-selected recordings list from the original scan, ignoring that the user had unchecked them in the UI before submitting. The fix is structural — use `assets/apply-cleanup-selection.py` which iterates `selected_items` from the selection JSON only.
 
 ## Domain quirks captured
 
@@ -127,6 +131,8 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 - `osascript display notification` from launchd attributes to "Script Editor" and is unreliable. Use `alerter` from launchd context.
 - `log show --last 6m` is too slow (30+ s) for periodic checks. Poll `/Library/Logs/DiagnosticReports/JetsamEvent-*.ips` instead — async write delay is acceptable on a 5-min cadence.
 - `JetsamEvent-*.ips` files live in `/Library/Logs/DiagnosticReports/` (system-wide), NOT `~/Library/Logs/DiagnosticReports/`.
+- macOS `ps %cpu` is a decaying average over up to one minute and is measured relative to one logical core, so a process may exceed 100 %. Whole-system CPU from the second `iostat` sample is 0–100 % across the machine. `iostat` is much lighter than starting `top` every five minutes.
+- CPU counters reset after a gap longer than 15 minutes, so sleep and missed calendar firings cannot masquerade as consecutive high-CPU readings. Open incidents remain open but need fresh recovery readings before rearming.
 - APFS purgeable space lags behind actual deletion by minutes. After cleanup, `df` may not show the change immediately; wait or run `diskutil info /System/Volumes/Data | grep "Container Free"`.
 - **Claude Desktop `vm_bundles/claudevm.bundle/` is Claude Cowork**, not "Claude Code sandbox" — it's a ~10 GB Ubuntu VM image (`rootfs.img`, `sessiondata.img`, `efivars.fd`, `vmIP`) for Anthropic's sandboxed code-execution feature. It is **auto-provisioned at every Claude Desktop launch** via an SHA1 integrity check, so its recent mtime ≠ user activity. Technically safe to delete (no chat/MCP impact), but Claude Desktop **silently re-downloads ~10 GB on next launch** and runs at ~55 % CPU while doing so. The Claude Code CLI does NOT use this bundle. Recommended classification: Tier 10 discuss-first with quit-Claude-Desktop pre-step and a warning that the bundle returns until Anthropic ships an opt-out toggle (open in [anthropics/claude-code#57371](https://github.com/anthropics/claude-code/issues/57371)).
 - **General rule**: if you encounter a folder/bundle you can't describe in one sentence (especially > 500 MB), don't guess — delegate a quick lookup to the `web-searcher` subagent before writing the item's `description`. See Workflow A step 4.
