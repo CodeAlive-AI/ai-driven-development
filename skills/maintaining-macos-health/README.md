@@ -1,6 +1,6 @@
 # maintaining-macos-health
 
-> **v1.0.0** — Recovery and prevention playbook for macOS disk and memory crises, with an **interactive HTML cleanup UI**, a noise-resistant LaunchAgent alerter, and Mole-grounded safety guards. Built for Apple Silicon dev machines that run heavy workloads — Docker, multiple AI tools, IDEs, browsers.
+> **v1.1.0** — Recovery and prevention playbook for macOS disk, memory, and persistent CPU problems, with an **interactive HTML cleanup UI**, a noise-resistant LaunchAgent alerter, and Mole-grounded safety guards. Built for Apple Silicon dev machines that run heavy workloads — Docker, multiple AI tools, IDEs, browsers.
 
 ![Cleanup plan UI — categorised checkboxes, live "after cleanup" preview, sticky action bar](docs/screenshot.png)
 
@@ -14,7 +14,7 @@
   - [Triage flow (signal classification)](#triage-flow-signal-classification)
   - [Interactive cleanup UI](#interactive-cleanup-ui)
   - [Cleanup tiers (10 levels, risk-ordered)](#cleanup-tiers-10-levels-risk-ordered)
-  - [Active alerter (3 CRITICAL-only triggers)](#active-alerter-3-critical-only-triggers)
+  - [Active alerter](#active-alerter)
 - [Key features](#key-features)
 - [Sources and methodology](#sources-and-methodology)
 - [File structure](#file-structure)
@@ -28,7 +28,7 @@ This skill packages **three complementary capabilities** for that failure mode:
 
 1. A **triage playbook** with a first-five-minutes decision tree and a 10-tier cleanup catalogue.
 2. An **interactive HTML cleanup UI** the agent renders after scanning, so the user picks exactly what gets deleted instead of trusting the agent's memory.
-3. An **active LaunchAgent alerter** with three CRITICAL-only triggers, hysteresis, cooldown, and a 7-day calibration window so it doesn't cry wolf.
+3. An **active LaunchAgent alerter** with critical disk/memory/Jetsam triggers plus persistent CPU anomaly detection, hysteresis, incident deduplication, and safe diagnostic snapshots.
 
 Validated against a real watchdog-timeout panic on Apple Silicon caused by `vm_compressor` segments saturated at 100 % with the disk over 90 % full. The same playbook works for routine cleanup or first-time setup on a new machine.
 
@@ -107,7 +107,7 @@ The skill packages three complementary capabilities, each with its own entry poi
 |---|---|---|
 | **Triage + cleanup playbook** | `references/triage.md`, `references/cleanup-tiers.md`, `references/never-touch.md`, `references/mole-techniques.md` | Tells the agent how to classify a health signal, which 10-tier cleanup block to run, and what categories to never touch |
 | **Interactive cleanup UI** | `assets/render-cleanup-plan.py` + `assets/apply-cleanup-selection.py` | Renders a categorised, sortable, checkbox-driven HTML report from the agent's scan, serves it on `127.0.0.1:18347`, captures the user's selection, and feeds it to a sanctioned apply script that only deletes what was actually picked |
-| **Active alerter** | `references/alerting.md` + `assets/{mac-health-check, config.sh, com.local.mac-health-check.plist}` | Bash + launchd implementation. 3 CRITICAL-only triggers with hysteresis, cooldown, calibration window |
+| **Active alerter** | `references/alerting.md` + `assets/{mac-health-check, config.sh, com.local.mac-health-check.plist}` | Bash + launchd implementation. Critical disk/memory/Jetsam triggers plus whole-system and per-process CPU incident tracking |
 
 ### Triage flow (signal classification)
 
@@ -151,7 +151,7 @@ Read `references/cleanup-tiers.md`. Each tier ends with a `df` checkpoint so the
 9. **Dev artifacts** (~5 GB, manual) — venvs, node_modules in inactive projects
 10. **Discuss-first** — Maven repo, Rust nightly, dotTrace workspaces, `~/.AzureToolsForIntelliJ`, Claude Cowork VM, etc.
 
-### Active alerter (3 CRITICAL-only triggers)
+### Active alerter
 
 Read `references/alerting.md`. Runs every 5 min via `StartCalendarInterval`. Triggers:
 
@@ -159,7 +159,14 @@ Read `references/alerting.md`. Runs every 5 min via `StartCalendarInterval`. Tri
 2. **Memory pressure Critical AND swap > 8 GB** for 3 consecutive readings
 3. **New `JetsamEvent-*.ips` containing `vm-compressor-space-shortage`** (immediate, no hysteresis — this is the early-warning signal)
 
-Plus: 30-min cooldown between repeats, 7-day calibration window (logs only, no notifications), `~/.config/mac-health/silent` flag for manual suppression during heavy work, optional `ntfy.sh` URL for phone push.
+CPU monitoring adds two deliberately different signals:
+
+4. **Whole-system CPU busy >= 90 %** for 3 readings — audible critical alert.
+5. **One persistent process** >= 80 % of a core for ~1 hour or >= 40 % for ~6 hours — silent advisory, once per incident.
+
+Every five-minute run logs whole-system CPU and a safe top-process summary. CPU notifications never include command arguments, never kill a process, and do not repeat until the incident has recovered. Sleep gaps reset consecutive counters. Alert-time top-10 snapshots are retained for 30 days in `~/Library/Logs/mac-health/cpu-incidents/`.
+
+Plus: 30-min cooldown and 7-day calibration for the original resource alerts, `~/.config/mac-health/silent` for manual suppression, and optional `ntfy.sh` phone push. CPU starts immediately with conservative defaults; process advisories are silent and incident-deduplicated.
 
 ## Key features
 
@@ -168,9 +175,10 @@ Plus: 30-min cooldown between repeats, 7-day calibration window (logs only, no n
 - **Web-search-on-uncertainty** — for any candidate > 500 MB the agent can't describe in one sentence, the skill mandates a `web-searcher` lookup before showing the report. Prevents "unknown / ML data" vague descriptions.
 - **Claude Cowork aware** — the skill knows `~/Library/Application Support/Claude/vm_bundles/claudevm.bundle/` is the Cowork VM (Ubuntu 22.04 in Apple Virtualization.framework). It auto-recreates on every Claude Desktop launch via SHA1 integrity check, classified as **Tier 10 discuss-first** with the quit-Claude-Desktop pre-step and recreation warning (open issue [anthropics/claude-code#57371](https://github.com/anthropics/claude-code/issues/57371)).
 - **Never-touch list** — explicit blacklist with consequence notes: Mole's curated app-protection rules (`com.apple.coreaudio` issue #553, `controlcenter*` issue #136, `org.cups.*` issue #731) plus auth/credential dotfiles (`~/.ssh/*`, `~/.gnupg`, `~/.aws/*`, `~/.kube/config`, `~/.nuget`, `~/.git-credentials`), AI/password/VPN/keychain bundle IDs, `Telegram tdata`, crypto wallets, terminal saved state, container VM images. Reasoning included for every entry.
-- **Three CRITICAL-only alerter triggers** — Google SRE alert-fatigue principles: every alert requires intelligence to resolve. No warnings, no hints, no auto-cleanup actions.
+- **Noise-resistant active alerting** — critical resource signals remain audible; persistent per-process CPU is a silent, once-per-incident advisory. No auto-cleanup or auto-kill actions.
 - **2026 macOS quirks captured** — `terminal-notifier` is dead (last release 2019-11), use `alerter`. `StartInterval` clock pauses during sleep on laptops (radar 6630231), use `StartCalendarInterval` with explicit minute-entries. LaunchAgent default `PATH` does not include `/opt/homebrew/bin`, must declare in plist. `osascript display notification` from launchd attributes to Script Editor and is unreliable. `mo clean` / `mo purge` piped through `| head` raises SIGPIPE and exits 144 — capture to a file or use `tail` instead.
 - **Bash 3.2 compatible** — runs against Apple-shipped `/bin/bash` 3.2.57 with no `set -u` quirks. Label-aware `awk` parsing for `vm.swapusage` (survives field-position changes).
+- **Low-overhead CPU evidence** — `ps` supplies a one-minute decaying per-process average; the second `iostat` sample supplies 0–100 % whole-machine utilization. Executable names, PIDs, elapsed time, and CPU are logged; command arguments are deliberately excluded.
 - **File-polling JetsamEvent** — `log show --last 6m` is too slow (30+ s) on a busy machine; polling `/Library/Logs/DiagnosticReports/JetsamEvent-*.ips` has acceptable async-write latency on a 5-min cadence.
 
 ## Sources and methodology
@@ -180,6 +188,7 @@ Plus: 30-min cooldown between repeats, 7-day calibration window (logs only, no n
 - **xnu vm_compressor** — segments-vs-pages distinction, `vm-compressor-space-shortage` reason code
 - **Mole** ([github.com/tw93/mole](https://github.com/tw93/mole)) — battle-tested cleanup safety guards (path validator, project-artifact marker→target map, age thresholds, protected app bundle list)
 - **Google SRE Workbook** — alert-fatigue prevention, "every alert must require intelligence to resolve"
+- **Prometheus alerting practices** — symptom-based paging, cause-based diagnostics, pending duration, and actionable notifications
 - **alerter** ([github.com/vjeantet/alerter](https://github.com/vjeantet/alerter)) — Swift-based notification CLI that works in launchd background context (issue #259 of `terminal-notifier` documents the failure mode being avoided)
 - **launchd quirks** — radar 6630231 documents `StartInterval` clock-pause during sleep
 - **Claude Cowork research** — [PVIEITO](https://pvieito.com/2026/01/inside-claude-cowork), [Pluto Security](https://blog.pluto.security/p/inside-claude-cowork-how-anthropics), [Anthropic Help Center](https://support.claude.com/en/articles/14479288), GitHub issues [#47039](https://github.com/anthropics/claude-code/issues/47039), [#57371](https://github.com/anthropics/claude-code/issues/57371)
@@ -201,12 +210,14 @@ skills/maintaining-macos-health/
 │   ├── never-touch.md                  # Hard-protected categories with consequence notes
 │   ├── mole-techniques.md              # Marker→target map, safety guards, SIGPIPE-safe dry-run capture
 │   └── alerting.md                     # Alerter design + install + troubleshoot
-└── assets/
+├── assets/
     ├── mac-health-check                # Bash 3.2-compatible health-check script
     ├── config.sh                       # Default thresholds (sourced by the script)
     ├── com.local.mac-health-check.plist   # LaunchAgent (uses __HOME__ placeholder)
     ├── render-cleanup-plan.py          # Interactive HTML cleanup-plan UI (local HTTP server)
     └── apply-cleanup-selection.py      # Sanctioned apply path — reads selection JSON, validates, executes
+└── tests/
+    └── test-cpu-monitor.sh             # CPU pending/firing/recovery/rearm/gap fixture tests
 ```
 
 ## License
