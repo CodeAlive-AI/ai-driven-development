@@ -24,16 +24,16 @@ fi
 AGENT_TIMEOUT="${AGENT_TIMEOUT:-3600}"
 
 # Liveness deadline for codex: if the -o output file is still empty after this
-# many seconds, the wrapper kills the process. Independent from AGENT_TIMEOUT
-# because xhigh-effort thinking can legitimately take 10-15 min — but a hang
-# at MCP-init or pre-first-byte SSE produces zero output bytes immediately.
+# many seconds, the wrapper kills the process. Keep the default aligned with
+# AGENT_TIMEOUT so quality-first reasoning can use the full one-hour budget;
+# explicit CODEX_FIRST_BYTE_DEADLINE still allows shorter local watchdogs.
 # Exported because run_with_timeout invokes the run_codex function inside a
 # `bash -c` subshell, which only inherits exported variables. Without export,
 # the watchdog evaluates `[[ $elapsed -ge $CODEX_FIRST_BYTE_DEADLINE ]]` with
 # the right-hand side empty — the test then misfires after the first 10-second
 # tick and kills codex pre-first-byte. Caught while wiring the specialists
 # review mode; no behavioural change beyond the default actually being honoured.
-export CODEX_FIRST_BYTE_DEADLINE="${CODEX_FIRST_BYTE_DEADLINE:-180}"
+export CODEX_FIRST_BYTE_DEADLINE="${CODEX_FIRST_BYTE_DEADLINE:-3600}"
 
 # Shared exit codes — agent-consumers can branch on these.
 EXIT_OK=0                  # everything succeeded (or agent was disabled/skipped cleanly)
