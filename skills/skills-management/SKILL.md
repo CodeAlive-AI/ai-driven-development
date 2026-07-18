@@ -1,6 +1,6 @@
 ---
 name: skills-management
-description: Search, find, discover, install, remove, update, review, list, move, optimise, and iterate on skills for AI coding agents. Use when user asks "find a skill for X", "search for a skill", "is there a skill for X", "install skill", "remove skill", "update skills", "list skills", "review skill quality", "move skill", "check for updates", "optimise skill", "train skill on tasks", "iterate skill", "audit skill edits", "log skill edit", "diff skill versions", "trigger test skill", "transfer skill across agents", or "how do I do X" where X might have an existing skill. THE tool for skill discovery, ecosystem search, and SkillOpt-style training loops. Do not use for creating skills from scratch (use /skill-creator instead).
+description: Search, find, discover, install, remove, update, review, deduplicate, list, move, optimise, and iterate on skills for AI coding agents. Use when user asks "find a skill for X", "install skill", "remove skill", "update skills", "list skills", "deduplicate skills", "why are two skills shown", "choose the canonical skill", "check for skill conflicts", "review skill quality", "move skill", "check for updates", "optimise skill", "audit skill edits", "trigger test skill", or "transfer skill across agents". Includes duplicate-free installation preflight and SkillOpt-style training loops. Do not use for creating skills from scratch (use /skill-creator instead).
 ---
 
 # Skills Manager
@@ -17,6 +17,8 @@ description: Search, find, discover, install, remove, update, review, list, move
 | Delete from agents | `python3 scripts/delete_skill.py <name> --all-agents --force` |
 | Move to user | `python3 scripts/move_skill.py <name> user` |
 | Move to project | `python3 scripts/move_skill.py <name> project` |
+| Audit duplicate names | `python3 scripts/audit_skill_duplicates.py` |
+| Preflight install | `python3 scripts/audit_skill_duplicates.py --candidate /path/to/skill --fail-on-conflict` |
 | Create new | Use `/skill-creator` |
 | **Optimize & Iterate (SkillOpt-style)** | |
 | Plan optimisation | `python3 scripts/optimize_skill.py <name> --tasks tasks.jsonl --dry-run` |
@@ -41,7 +43,7 @@ description: Search, find, discover, install, remove, update, review, list, move
 | List ecosystem skills | `npx skills list` or `npx skills ls` |
 | Install from GitHub | `npx skills add <owner/repo@skill> -g -y` |
 | Remove ecosystem skill | `npx skills remove <name> -g -y` or `npx skills rm` |
-| Check for updates | `npx skills check` |
+| Inspect installed versions | Read lock metadata and upstream state; do not assume `npx skills check` is read-only |
 | Update all | `npx skills update` |
 | Browse online | [skills.sh](https://skills.sh) |
 | **Multi-Agent** | |
@@ -51,14 +53,17 @@ description: Search, find, discover, install, remove, update, review, list, move
 | Copy between agents | `python3 scripts/copy_skill.py <name> --from claude-code --to cursor` |
 | Move between agents | `python3 scripts/move_skill_agent.py <name> --from claude-code --to cursor` |
 
-## Scopes
+## Scopes and duplicate invariant
 
-| Scope | Path | Visibility |
-|-------|------|------------|
-| User | `~/.claude/skills/` | All projects for this user |
-| Project | `.claude/skills/` | This repository only |
+Skill discovery is consumer-specific. Codex uses `$HOME/.agents/skills` for user skills,
+scans `.agents/skills` from CWD to repo root, and follows symlinks. Other agents use the
+paths in `scripts/agents.py`; plugins add a separately managed namespaced layer.
 
-User scope takes precedence over project scope for skills with the same name.
+Maintain one active implementation of a frontmatter `name` per consumer topology. Aliases
+to one real directory are not independent copies; identical agent-specific replicas may be
+necessary, but divergent global/repo/plugin copies require a canonical-source decision.
+Read [skill-deduplication.md](references/skill-deduplication.md) before installing,
+deduplicating, migrating, or resolving plugin-vs-standalone conflicts.
 
 ## Operations
 
@@ -265,6 +270,15 @@ npx skills find pr review            # Search by task
 
 ### Install from Ecosystem
 
+**Mandatory preflight:** determine the candidate frontmatter `name` and run the duplicate
+auditor before installation. If the name exists, update/reuse the canonical copy instead.
+For intentional cross-agent replicas, document the need and use
+`install_skill.py --allow-duplicate-name` only after review.
+
+For a locally maintained canonical source, prefer `install_skill.py --link`: every agent
+sees the same real directory and future edits cannot make copied installs drift. Use a copy
+only when the consumer cannot follow symlinks or deliberately needs an isolated snapshot.
+
 ```bash
 npx skills add <owner/repo@skill> -g -y    # Install globally, skip prompts
 npx skills add vercel-labs/agent-skills@vercel-react-best-practices -g -y
@@ -299,11 +313,11 @@ npx skills check                     # Check for available updates
 npx skills update                    # Update all installed skills
 ```
 
-When the user asks to "update skills", "update all skills", "are my skills up to date?", or "check for updates":
-
-1. Run `npx skills check` first to show what has updates available
-2. If updates exist, confirm with user before running `npx skills update`
-3. After updating, remind user to restart the agent for changes to take effect
+Treat `npx skills check` as potentially mutating: some CLI versions update during `check`,
+and `check --help` may enter the same workflow. Do not run it for read-only inspection unless
+the user already authorized updates. Prefer repository HEAD, manager lock metadata, and
+installed hashes for a read-only freshness comparison. After any managed update, rerun the
+duplicate audit because stale lock entries can recreate removed copies.
 
 ### When to Search
 
@@ -355,49 +369,11 @@ If no skills found: offer to help directly, then suggest `npx skills init <name>
 
 Manage skills across 42 supported AI coding agents. Full registry at [skills.sh](https://skills.sh).
 
-### Supported Agents
+### Supported agents
 
-| Agent ID | Display Name | Project Skills Dir | Global Skills Dir |
-|----------|--------------|-------------------|-------------------|
-| `adal` | AdaL | `.adal/skills` | `~/.adal/skills` |
-| `amp` | Amp | `.agents/skills` | `~/.config/agents/skills` |
-| `antigravity` | Antigravity | `.agent/skills` | `~/.gemini/antigravity/skills` |
-| `augment` | Augment | `.augment/skills` | `~/.augment/skills` |
-| `claude-code` | Claude Code | `.claude/skills` | `~/.claude/skills` |
-| `cline` | Cline | `.cline/skills` | `~/.cline/skills` |
-| `codebuddy` | CodeBuddy | `.codebuddy/skills` | `~/.codebuddy/skills` |
-| `codex` | Codex | `.agents/skills` | `~/.codex/skills` |
-| `command-code` | Command Code | `.commandcode/skills` | `~/.commandcode/skills` |
-| `continue` | Continue | `.continue/skills` | `~/.continue/skills` |
-| `crush` | Crush | `.crush/skills` | `~/.config/crush/skills` |
-| `cursor` | Cursor | `.cursor/skills` | `~/.cursor/skills` |
-| `droid` | Droid | `.factory/skills` | `~/.factory/skills` |
-| `gemini-cli` | Gemini CLI | `.agents/skills` | `~/.gemini/skills` |
-| `github-copilot` | GitHub Copilot | `.agents/skills` | `~/.copilot/skills` |
-| `goose` | Goose | `.goose/skills` | `~/.config/goose/skills` |
-| `iflow-cli` | iFlow CLI | `.iflow/skills` | `~/.iflow/skills` |
-| `junie` | Junie | `.junie/skills` | `~/.junie/skills` |
-| `kilo` | Kilo Code | `.kilocode/skills` | `~/.kilocode/skills` |
-| `kimi-cli` | Kimi Code CLI | `.agents/skills` | `~/.config/agents/skills` |
-| `kiro-cli` | Kiro CLI | `.kiro/skills` | `~/.kiro/skills` |
-| `kode` | Kode | `.kode/skills` | `~/.kode/skills` |
-| `mcpjam` | MCPJam | `.mcpjam/skills` | `~/.mcpjam/skills` |
-| `mistral-vibe` | Mistral Vibe | `.vibe/skills` | `~/.vibe/skills` |
-| `mux` | Mux | `.mux/skills` | `~/.mux/skills` |
-| `neovate` | Neovate | `.neovate/skills` | `~/.neovate/skills` |
-| `openclaw` | OpenClaw | `skills` | `~/.openclaw/skills` |
-| `opencode` | OpenCode | `.agents/skills` | `~/.config/opencode/skills` |
-| `openhands` | OpenHands | `.openhands/skills` | `~/.openhands/skills` |
-| `pi` | Pi | `.pi/skills` | `~/.pi/agent/skills` |
-| `pochi` | Pochi | `.pochi/skills` | `~/.pochi/skills` |
-| `qoder` | Qoder | `.qoder/skills` | `~/.qoder/skills` |
-| `qwen-code` | Qwen Code | `.qwen/skills` | `~/.qwen/skills` |
-| `replit` | Replit | `.agents/skills` | `~/.config/agents/skills` |
-| `roo` | Roo Code | `.roo/skills` | `~/.roo/skills` |
-| `trae` | Trae | `.trae/skills` | `~/.trae/skills` |
-| `trae-cn` | Trae CN | `.trae/skills` | `~/.trae-cn/skills` |
-| `windsurf` | Windsurf | `.windsurf/skills` | `~/.codeium/windsurf/skills` |
-| `zencoder` | Zencoder | `.zencoder/skills` | `~/.zencoder/skills` |
+The authoritative registry of supported agents and discovery paths is
+`scripts/agents.py`. Use `detect_agents.py --all` to print it instead of copying the table
+into instructions where paths become stale.
 
 ### Detect Installed Agents
 
@@ -424,6 +400,7 @@ python3 scripts/install_skill.py /path/to/skill --agent cursor --agent amp  # Mu
 python3 scripts/install_skill.py /path/to/skill --all                       # All detected
 python3 scripts/install_skill.py /path/to/skill --agent goose -s global     # Global scope
 python3 scripts/install_skill.py /path/to/skill --agent cursor --force      # Overwrite
+python3 scripts/install_skill.py /path/to/skill --agent cursor --link --allow-duplicate-name  # Canonical alias
 ```
 
 ### Copy Skill Between Agents
@@ -448,7 +425,7 @@ python3 scripts/move_skill_agent.py my-skill --from claude-code --to goose --for
 - **Live change detection (Claude Code, 2026)**: Adding, editing, or removing a skill under `~/.claude/skills/`, project `.claude/skills/`, or `.claude/skills/` inside an `--add-dir` directory takes effect within the current Claude Code session — no restart needed
 - **Edits are immediate**: Changes to existing skill content work without restart
 - **Agent detection**: Uses config directory presence to detect installed agents
-- **Always update all agents**: When updating a locally-developed skill, use `install_skill.py --all -s global --force` to push changes to every detected agent — not just Claude Code. A skill updated only in `~/.claude/skills/` will be stale in all other agents
+- **Install once per discovery topology**: prefer one shared canonical root or symlink. Create agent-specific replicas only for consumers that cannot read that root, and audit after replication.
 - **Custom commands have merged into skills (Claude Code, 2026)**: A file at `.claude/commands/deploy.md` and a skill at `.claude/skills/deploy/SKILL.md` both create `/deploy`. Existing `.claude/commands/` files keep working; skills add a directory for supporting files, frontmatter, and auto-invocation.
 - **Plugin skills are namespaced** as `plugin-name:skill-name` and cannot conflict with user/project skills
 
@@ -489,6 +466,7 @@ Consult these when reviewing skills or advising on skill structure and best prac
 | `references/ref-b-yaml-frontmatter.md` | Required/optional fields, security restrictions |
 | `references/ref-c-complete-skill-examples.md` | Links to production-ready skill examples |
 | `references/remote-skill-assessment.md` | Framework for evaluating ecosystem skills before installation |
+| `references/skill-deduplication.md` | Canonical-source selection, duplicate classification, plugin handling, install preflight, and verification |
 | `references/skill-optimization.md` | SkillOpt-style training loop: bounded edits, validation gate, rejected buffer, slow/meta update (Microsoft, arXiv 2605.23904) |
 | `references/optimization-artifacts-schemas.md` | JSON schemas for every artefact written by `optimize_skill.py` and `log_skill_edit.py` (splits, state, rollouts, proposals, decisions, edit_apply_report, rejected_buffer, meta_skill, etc.) |
 | `references/optimization-grading-checklist.md` | Audit checklist for a finished optimization run — what to inspect in `best_skill.md`, `edit_apply_report.json`, `rejected_buffer.json` before shipping |

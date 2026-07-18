@@ -14,6 +14,7 @@ from agents import (
     get_skills_dir,
     validate_agent,
 )
+from audit_skill_duplicates import audit_candidate
 
 
 # Files to exclude when copying skills (per add-skill pattern)
@@ -108,7 +109,9 @@ def install_skill(
     agent: str,
     scope: str = "project",
     force: bool = False,
-    cwd: Path | None = None
+    cwd: Path | None = None,
+    allow_duplicate_name: bool = False,
+    link: bool = False,
 ) -> tuple[bool, str]:
     """Install a skill to a specific agent.
 
@@ -118,6 +121,8 @@ def install_skill(
         scope: "project" or "global"
         force: Overwrite existing skill
         cwd: Working directory for project scope
+        allow_duplicate_name: Bypass the cross-root duplicate-name preflight
+        link: Create a symlink to the canonical local source instead of copying
 
     Returns:
         Tuple of (success, message)
@@ -139,6 +144,18 @@ def install_skill(
         skill_name = source.name
     skill_name = sanitize_name(skill_name)
 
+    if not allow_duplicate_name:
+        audit = audit_candidate(source, cwd or Path.cwd())
+        if audit["blocked"]:
+            locations = ", ".join(
+                match["record"]["path"] for match in audit["matches"]
+            )
+            return False, (
+                f"Skill name '{skill_name}' is already discoverable at: {locations}. "
+                "Reuse/update the canonical copy, or pass --allow-duplicate-name "
+                "only after reviewing scripts/audit_skill_duplicates.py --candidate."
+            )
+
     # Get target directory
     target_base = get_skills_dir(agent, scope, cwd)
     if not target_base:
@@ -146,8 +163,11 @@ def install_skill(
 
     target_path = target_base / skill_name
 
+    if (target_path.exists() or target_path.is_symlink()) and target_path.resolve() == source.resolve():
+        return True, f"Already linked to canonical source: {target_path}"
+
     # Check if target exists
-    if target_path.exists():
+    if target_path.exists() or target_path.is_symlink():
         if not force:
             return False, f"Skill '{skill_name}' already exists at {target_path}. Use --force to overwrite."
         if target_path.is_symlink():
@@ -155,10 +175,16 @@ def install_skill(
         else:
             shutil.rmtree(target_path)
 
-    # Copy skill
+    # Link a maintained local source when possible; copy only when isolation is desired.
     try:
-        copy_skill_directory(source, target_path)
-        return True, f"Installed '{skill_name}' to {agent} ({scope}): {target_path}"
+        target_path.parent.mkdir(parents=True, exist_ok=True)
+        if link:
+            target_path.symlink_to(source.resolve(), target_is_directory=True)
+            action = "Linked"
+        else:
+            copy_skill_directory(source, target_path)
+            action = "Installed"
+        return True, f"{action} '{skill_name}' to {agent} ({scope}): {target_path}"
     except Exception as e:
         return False, f"Error installing skill: {e}"
 
@@ -193,6 +219,16 @@ def main():
         action="store_true",
         help="Overwrite if skill exists"
     )
+    parser.add_argument(
+        "--allow-duplicate-name",
+        action="store_true",
+        help="Bypass duplicate-name preflight after explicit review"
+    )
+    parser.add_argument(
+        "--link",
+        action="store_true",
+        help="Symlink to one maintained local source instead of creating a copy"
+    )
     args = parser.parse_args()
 
     # Validate arguments
@@ -220,11 +256,33 @@ def main():
     # Resolve source path
     source = Path(args.path).resolve()
 
+    if not args.allow_duplicate_name:
+        try:
+            audit = audit_candidate(source, Path.cwd())
+        except ValueError as error:
+            print(f"Error: {error}")
+            return 1
+        if audit["blocked"]:
+            print("Error: installation would add another discoverable skill with the same name:")
+            for match in audit["matches"]:
+                record = match["record"]
+                print(f"  - {match['relation']}: {record['path']} [{record['root_kind']}]")
+            print("Run audit_skill_duplicates.py --candidate PATH, choose one canonical source, ")
+            print("or use --allow-duplicate-name only for an intentional cross-agent replica.")
+            return 1
+
     # Install to each agent
     results = []
     for agent in target_agents:
         config = get_agent_config(agent)
-        success, message = install_skill(source, agent, args.scope, args.force)
+        success, message = install_skill(
+            source,
+            agent,
+            args.scope,
+            args.force,
+            allow_duplicate_name=True,
+            link=args.link,
+        )
         results.append((agent, config["display_name"], success, message))
 
     # Print results

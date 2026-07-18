@@ -73,7 +73,7 @@ AGENTS: dict[str, AgentConfig] = {
         "name": "codex",
         "display_name": "Codex",
         "project_dir": ".agents/skills",
-        "global_dir": "~/.codex/skills",
+        "global_dir": "~/.agents/skills",
         "detect_paths": ["~/.codex"],
     },
     "command-code": {
