@@ -267,11 +267,9 @@ for i in "${!AGENT_IDS[@]}"; do
     code=0
     wait "$pid" || code=$?
     EXITS[$i]="$code"
-    # Empty stdout with exit 0 is never a real answer. We compare bytes, not
-    # `-s`, because run_with_timeout always emits two newlines as a header
-    # before the actual response body — so the file is never strictly zero.
+    # Empty stdout with exit 0 is never a real answer.
     out_bytes=$(wc -c < "${OUT_FILES[$i]}" | tr -d ' ')
-    if [[ $code -eq 0 && $out_bytes -gt 10 ]]; then
+    if [[ $code -eq 0 && $out_bytes -gt 0 ]]; then
         STATUSES[$i]="ok"
     elif [[ $code -eq 0 ]]; then
         EXITS[$i]=66  # EX_NOINPUT

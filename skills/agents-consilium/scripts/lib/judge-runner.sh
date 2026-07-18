@@ -138,7 +138,7 @@ RAW_ERR="$TMP_DIR/raw-err.txt"
 ) || {
     rc=$?
     echo -e "${RED}[judge/$AGENT] backend failed (exit $rc)${NC}" >&2
-    [[ -s "$RAW_ERR" ]] && head -30 "$RAW_ERR" >&2
+    [[ -s "$RAW_ERR" ]] && cat "$RAW_ERR" >&2
     exit 3
 }
 

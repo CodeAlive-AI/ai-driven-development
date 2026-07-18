@@ -495,8 +495,8 @@ Stage 1: discovery-small (parallel)    7 OC-Go passes
   - opencode-go-qwen37-plus  analyst       uncapped
   - opencode-go-qwen37-plus  lateral       uncapped
   - opencode-go-glm          architecture  uncapped
-  - opencode-go-glm          correctness   cap=10
-  - opencode-go-qwen37-max   architecture  cap=3
+  - opencode-go-glm          correctness   uncapped
+  - opencode-go-qwen37-max   architecture  uncapped
   - opencode-go-qwen37-max   security      uncapped
 Stage 2: discovery-frontier (parallel) 2 hand-picked add-ons
   - opencode                   analyst       uncapped
@@ -526,10 +526,10 @@ Stage 1: broad (parallel)         4 frontier analysts
   - claude-code (Sonnet 5 high)  analyst      uncapped
   - opencode (GLM-5.2)           lateral      uncapped
   - opencode-go-qwen37-max       analyst      uncapped
-Stage 2: specialists (parallel)   5x3 matrix, uniform cap=10
+Stage 2: specialists (parallel)   5x3 matrix, uncapped
   - 3 small models × 5 roles (security/correctness/performance/architecture/consistency)
 Stage 3: probe (sequential)       1 generic gap probe (model picks focus)
-  - opencode-go-glm auditor cap=10
+  - opencode-go-glm auditor uncapped
 Stage 4: dedup
 Stage 5: judge — claude-code (Sonnet 5 high)
                 fallback: opencode (GLM-5.2) on primary failure
@@ -660,11 +660,14 @@ What's happening?"
 - `CLAUDE_EFFORT`: Override Claude Code reasoning effort (default: config `effort` field, or `high` if both unset; applies to Opus, Sonnet, and Fable). Levels: `low`, `medium`, `high`, `xhigh`, `max`.
 - `CODEX_EFFORT`: Override Codex reasoning effort (default: config `effort` field, or `high` if both unset). Levels: `minimal`, `low`, `medium`, `high`, `xhigh`.
 - `GEMINI_API_KEY`: Required for the `gemini-cli` backend (v1beta model access)
+- `GEMINI_MAX_OUTPUT_TOKENS`: Optional direct Gemini API fallback output cap. Unset by default so the wrapper does not impose its own output-token limit.
 - `GOOGLE_GENERATIVE_AI_API_KEY`: Required if the `opencode` backend uses `google/...` models
 - `OPENAI_API_KEY`: Required if the `opencode` backend uses `openai/...` models and OpenCode is not already logged in via `opencode auth login`
 - `AGENT_TIMEOUT`: Timeout seconds (default: 3600 / one hour)
 - `CODEX_FIRST_BYTE_DEADLINE`: Codex output-file first-byte watchdog seconds (default: 3600 / one hour)
 - `ULTRAREVIEW_FIRST_BYTE`: First-byte watchdog seconds used by superreview/ultrareview discovery and judge wrappers (default: 3600 / one hour)
+- `CONSILIUM_OUTPUT_DIR`: Directory for full raw stdout archives from backend calls (default: `${TMPDIR:-/tmp}/agents-consilium-outputs`)
+- `CONSILIUM_SAVE_OUTPUTS`: Set to `0` to disable raw stdout archival. Default is enabled so long responses survive UI/terminal truncation.
 
 ## Prerequisites
 

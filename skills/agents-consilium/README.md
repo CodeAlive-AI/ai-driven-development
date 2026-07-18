@@ -77,6 +77,10 @@ CONSILIUM_AGENTS='codex,opencode-go-kimi' scripts/code-review.sh file.py
 # Multi-stage modes — dry-run validates config + plan without LLM calls
 scripts/superreview.sh --dry-run path/to/file.cs
 scripts/ultrareview.sh --no-fallback path/to/file.cs         # CI-strict mode
+
+# Full raw stdout archives are enabled by default so long answers survive
+# terminal/UI truncation. Override the directory when needed.
+CONSILIUM_OUTPUT_DIR=/tmp/consilium-out scripts/consensus-query.sh -a claude-fable "Q"
 ```
 
 </details>
@@ -150,7 +154,7 @@ Highest severity-weighted recall in the bench, lowest false-positive rate (a hea
 ```
 Stage 1: broad (4 parallel)         4 frontier analysts of different families
                                     (analyst-roled + one lateral)
-Stage 2: specialists (15 parallel)  3 small models × 5 roles, uniform cap=10
+Stage 2: specialists (15 parallel)  3 small models × 5 roles, uncapped
                                     (security/correctness/performance/architecture/consistency)
 Stage 3: probe (1, sequential)      Generic gap-probe — model picks the
                                     highest-risk defect class for THIS input
@@ -300,6 +304,7 @@ Set `CONSILIUM_CONFIG=/path/to/custom.json` to use an override file. See `config
 - **Hallucination + actionability gates** — findings must reference real symbols and carry a concrete fix
 - **4-level severity rubric** — operational definitions, action horizons, security + correctness examples
 - **Stable XML output** with CDATA — safe for downstream agent consumers
+- **Full stdout archive by default** — backend raw output is saved under `${TMPDIR:-/tmp}/agents-consilium-outputs` (override with `CONSILIUM_OUTPUT_DIR`, disable with `CONSILIUM_SAVE_OUTPUTS=0`) so long responses are not lost when a UI truncates displayed output
 - **Differentiated exit codes** — agent callers can branch on failure mode
 
 ---

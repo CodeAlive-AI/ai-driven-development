@@ -12,13 +12,13 @@
 #     • opencode (GLM-5.2)           lateral       (uncapped)
 #     • opencode-go-qwen37-max       analyst       (uncapped)
 #
-#   Stage 2: specialists (parallel) — 5×3 matrix, uniform cap=10
+#   Stage 2: specialists (parallel) — 5×3 matrix, uncapped
 #     3 OC-Go models × 5 roles (security, correctness, performance,
 #     architecture, consistency). Models: MiniMax M3, Kimi K2.7 Code,
 #     Qwen3.7 Plus.
 #
 #   Stage 3: probe (sequential) — 1 generic gap probe
-#     • opencode-go-glm auditor (cap=10) on the generic prompt
+#     • opencode-go-glm auditor (uncapped) on the generic prompt
 #       (model picks the highest-risk defect class for THIS input)
 #
 #   Stage 4: dedup (deterministic) — union all findings
@@ -94,7 +94,7 @@ BROAD_PASSES=(
 SPECIALIST_ROLES=(security correctness performance architecture consistency)
 SPECIALIST_MODELS=(opencode-go-minimax opencode-go-kimi opencode-go-qwen37-plus)
 
-PROBE_PASS="opencode-go-glm|auditor|10|probe-generic.txt"
+PROBE_PASS="opencode-go-glm|auditor|uncapped|probe-generic.txt"
 
 ALL_AGENTS_NEEDED=(
     "codex" "claude-code" "opencode" "opencode-go-qwen37-max"
@@ -148,7 +148,7 @@ fi
 SPECIALIST_PASSES=()
 for model in "${SPECIALIST_MODELS[@]}"; do
     for role in "${SPECIALIST_ROLES[@]}"; do
-        SPECIALIST_PASSES+=("${model}|${role}|10|specialist.txt")
+        SPECIALIST_PASSES+=("${model}|${role}|uncapped|specialist.txt")
     done
 done
 
@@ -160,7 +160,7 @@ if [[ -n "$DRY_RUN" ]]; then
     echo "  Stage 1 — broad (parallel):" >&2
     for p in "${BROAD_PASSES[@]}"; do echo "    $p" >&2; done
     echo "" >&2
-    echo "  Stage 2 — specialists (parallel, 5×3 matrix, uniform cap=10):" >&2
+    echo "  Stage 2 — specialists (parallel, 5×3 matrix, uncapped):" >&2
     for p in "${SPECIALIST_PASSES[@]}"; do echo "    $p" >&2; done
     echo "" >&2
     echo "  Stage 3 — probe (sequential):" >&2
@@ -214,7 +214,7 @@ echo -e "${YELLOW}[Running generic probe...]${NC}" >&2
 probe_out="$RESP_DIR/probe__opencode-go-glm__auditor.xml"
 probe_code=0
 "$LIB_DIR/discovery-pass.sh" \
-    --agent "opencode-go-glm" --role "auditor" --cap "10" \
+    --agent "opencode-go-glm" --role "auditor" --cap "uncapped" \
     --prompt "$PROMPTS_DIR/probe-generic.txt" \
     --input-kind "$INPUT_KIND" \
     --input-label "$INPUT_LABEL" \
