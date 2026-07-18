@@ -38,6 +38,14 @@ CPU_LOG_TOP_N=5
 CPU_ALERT_TOP_N=3
 CPU_INCIDENT_RETENTION_DAYS=30
 
+# Local notification actions. Investigations are read-only. "Stop Process…"
+# always asks for confirmation, revalidates PID identity/ownership/current CPU,
+# sends SIGTERM first, and offers SIGKILL only after the grace period.
+CPU_ACTIONS_ENABLED=1
+CPU_PREFER_DESKTOP_APPS=1
+CPU_STOP_ACTION_ENABLED=1
+CPU_STOP_GRACE_SECONDS=10
+
 # Path to "silence" flag — touch this file to disable alerts on demand
 SUPPRESS_FILE="$HOME/.config/mac-health/silent"
 
