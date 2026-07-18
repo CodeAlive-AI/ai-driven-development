@@ -1,6 +1,6 @@
 # maintaining-macos-health
 
-> **v1.1.0** — Recovery and prevention playbook for macOS disk, memory, and persistent CPU problems, with an **interactive HTML cleanup UI**, a noise-resistant LaunchAgent alerter, and Mole-grounded safety guards. Built for Apple Silicon dev machines that run heavy workloads — Docker, multiple AI tools, IDEs, browsers.
+> **v1.2.0** — Recovery and prevention playbook for macOS disk, memory, and persistent CPU problems, with an **interactive HTML cleanup UI**, a noise-resistant actionable LaunchAgent alerter, and Mole-grounded safety guards. Built for Apple Silicon dev machines that run heavy workloads — Docker, multiple AI tools, IDEs, browsers.
 
 ![Cleanup plan UI — categorised checkboxes, live "after cleanup" preview, sticky action bar](docs/screenshot.png)
 
@@ -78,10 +78,11 @@ Manual install of the alerter (without an agent):
 SKILL=$HOME/.claude/skills/maintaining-macos-health
 mkdir -p ~/bin ~/.config/mac-health ~/Library/Logs/mac-health ~/.local/state/mac-health
 cp "$SKILL/assets/mac-health-check"          ~/bin/
+cp "$SKILL/assets/mac-health-action"         ~/bin/
 cp "$SKILL/assets/config.sh"                 ~/.config/mac-health/
 sed "s|__HOME__|$HOME|g" "$SKILL/assets/com.local.mac-health-check.plist" \
   > ~/Library/LaunchAgents/com.local.mac-health-check.plist
-chmod +x ~/bin/mac-health-check
+chmod +x ~/bin/mac-health-check ~/bin/mac-health-action
 launchctl load -w ~/Library/LaunchAgents/com.local.mac-health-check.plist
 ```
 
@@ -107,7 +108,7 @@ The skill packages three complementary capabilities, each with its own entry poi
 |---|---|---|
 | **Triage + cleanup playbook** | `references/triage.md`, `references/cleanup-tiers.md`, `references/never-touch.md`, `references/mole-techniques.md` | Tells the agent how to classify a health signal, which 10-tier cleanup block to run, and what categories to never touch |
 | **Interactive cleanup UI** | `assets/render-cleanup-plan.py` + `assets/apply-cleanup-selection.py` | Renders a categorised, sortable, checkbox-driven HTML report from the agent's scan, serves it on `127.0.0.1:18347`, captures the user's selection, and feeds it to a sanctioned apply script that only deletes what was actually picked |
-| **Active alerter** | `references/alerting.md` + `assets/{mac-health-check, config.sh, com.local.mac-health-check.plist}` | Bash + launchd implementation. Critical disk/memory/Jetsam triggers plus whole-system and per-process CPU incident tracking |
+| **Active alerter** | `references/alerting.md` + `assets/{mac-health-check, mac-health-action, config.sh, com.local.mac-health-check.plist}` | Bash + launchd implementation. Critical disk/memory/Jetsam triggers plus whole-system and per-process CPU incident tracking with explicit investigation/stop actions |
 
 ### Triage flow (signal classification)
 
@@ -164,7 +165,7 @@ CPU monitoring adds two deliberately different signals:
 4. **Whole-system CPU busy >= 90 %** for 3 readings — audible critical alert.
 5. **One persistent process** >= 80 % of a core for ~1 hour or >= 40 % for ~6 hours — silent advisory, once per incident.
 
-Every five-minute run logs whole-system CPU and a safe top-process summary. CPU notifications never include command arguments, never kill a process, and do not repeat until the incident has recovered. Sleep gaps reset consecutive counters. Alert-time top-10 snapshots are retained for 30 days in `~/Library/Logs/mac-health/cpu-incidents/`.
+Every five-minute run logs whole-system CPU and a safe top-process summary. Alerts show the owning application and process separately—for example, `App=ChatGPT; process=Codex (Renderer)` or `App=Playwriter; process=Google Chrome for Testing Helper`. App attribution uses known tool paths and the executable/parent `.app` chain without reading command arguments. CPU alerts offer `Investigate in Codex`, `Investigate in Claude`, and `Stop Process…` from an `Actions…` menu. Investigations start read-only; Claude Desktop is preferred through its documented deep link, with interactive terminal CLIs as fallback. Stop is never automatic: it revalidates PID identity, ownership and current CPU, asks for confirmation, sends SIGTERM first, and requires a second confirmation before SIGKILL. Sleep gaps reset consecutive counters. Alert-time top-10 snapshots are retained for 30 days in `~/Library/Logs/mac-health/cpu-incidents/`.
 
 Plus: 30-min cooldown and 7-day calibration for the original resource alerts, `~/.config/mac-health/silent` for manual suppression, and optional `ntfy.sh` phone push. CPU starts immediately with conservative defaults; process advisories are silent and incident-deduplicated.
 
@@ -175,10 +176,10 @@ Plus: 30-min cooldown and 7-day calibration for the original resource alerts, `~
 - **Web-search-on-uncertainty** — for any candidate > 500 MB the agent can't describe in one sentence, the skill mandates a `web-searcher` lookup before showing the report. Prevents "unknown / ML data" vague descriptions.
 - **Claude Cowork aware** — the skill knows `~/Library/Application Support/Claude/vm_bundles/claudevm.bundle/` is the Cowork VM (Ubuntu 22.04 in Apple Virtualization.framework). It auto-recreates on every Claude Desktop launch via SHA1 integrity check, classified as **Tier 10 discuss-first** with the quit-Claude-Desktop pre-step and recreation warning (open issue [anthropics/claude-code#57371](https://github.com/anthropics/claude-code/issues/57371)).
 - **Never-touch list** — explicit blacklist with consequence notes: Mole's curated app-protection rules (`com.apple.coreaudio` issue #553, `controlcenter*` issue #136, `org.cups.*` issue #731) plus auth/credential dotfiles (`~/.ssh/*`, `~/.gnupg`, `~/.aws/*`, `~/.kube/config`, `~/.nuget`, `~/.git-credentials`), AI/password/VPN/keychain bundle IDs, `Telegram tdata`, crypto wallets, terminal saved state, container VM images. Reasoning included for every entry.
-- **Noise-resistant active alerting** — critical resource signals remain audible; persistent per-process CPU is a silent, once-per-incident advisory. No auto-cleanup or auto-kill actions.
+- **Noise-resistant actionable alerting** — critical resource signals remain audible; persistent per-process CPU is a silent, once-per-incident advisory. Investigation is read-only, and process stopping is explicit, identity-checked, confirm-first, and graceful-first. No auto-cleanup or auto-kill hooks.
 - **2026 macOS quirks captured** — `terminal-notifier` is dead (last release 2019-11), use `alerter`. `StartInterval` clock pauses during sleep on laptops (radar 6630231), use `StartCalendarInterval` with explicit minute-entries. LaunchAgent default `PATH` does not include `/opt/homebrew/bin`, must declare in plist. `osascript display notification` from launchd attributes to Script Editor and is unreliable. `mo clean` / `mo purge` piped through `| head` raises SIGPIPE and exits 144 — capture to a file or use `tail` instead.
 - **Bash 3.2 compatible** — runs against Apple-shipped `/bin/bash` 3.2.57 with no `set -u` quirks. Label-aware `awk` parsing for `vm.swapusage` (survives field-position changes).
-- **Low-overhead CPU evidence** — `ps` supplies a one-minute decaying per-process average; the second `iostat` sample supplies 0–100 % whole-machine utilization. Executable names, PIDs, elapsed time, and CPU are logged; command arguments are deliberately excluded.
+- **Low-overhead CPU evidence** — `ps` supplies a one-minute decaying per-process average; the second `iostat` sample supplies 0–100 % whole-machine utilization. Alerts resolve the owning app through known tool paths and `.app` ancestry, while executable names, PIDs, elapsed time, and CPU remain available for diagnosis. Command arguments are deliberately excluded.
 - **File-polling JetsamEvent** — `log show --last 6m` is too slow (30+ s) on a busy machine; polling `/Library/Logs/DiagnosticReports/JetsamEvent-*.ips` has acceptable async-write latency on a 5-min cadence.
 
 ## Sources and methodology
@@ -212,12 +213,14 @@ skills/maintaining-macos-health/
 │   └── alerting.md                     # Alerter design + install + troubleshoot
 ├── assets/
     ├── mac-health-check                # Bash 3.2-compatible health-check script
+    ├── mac-health-action               # Action dispatcher: read-only investigation + confirmed graceful stop
     ├── config.sh                       # Default thresholds (sourced by the script)
     ├── com.local.mac-health-check.plist   # LaunchAgent (uses __HOME__ placeholder)
     ├── render-cleanup-plan.py          # Interactive HTML cleanup-plan UI (local HTTP server)
     └── apply-cleanup-selection.py      # Sanctioned apply path — reads selection JSON, validates, executes
 └── tests/
-    └── test-cpu-monitor.sh             # CPU pending/firing/recovery/rearm/gap fixture tests
+    ├── test-cpu-monitor.sh             # CPU pending/firing/recovery/rearm/gap fixture tests
+    └── test-cpu-actions.sh             # Prompt routing, PID identity, system selection, dry-run stop tests
 ```
 
 ## License

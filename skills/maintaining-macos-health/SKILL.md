@@ -1,6 +1,6 @@
 ---
 name: maintaining-macos-health
-version: 1.1.0
+version: 1.2.0
 description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a process persistently burns CPU, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory/CPU alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, or broken app installs.
 ---
 
@@ -45,6 +45,7 @@ Trigger on any of:
 | `references/mole-techniques.md` | What Mole does that we borrow: marker→target map for `mo purge`, safe-path validators, age thresholds |
 | `references/alerting.md` | Full alerter design: disk/memory/Jetsam critical triggers plus sustained CPU anomaly detection, incident lifecycle, hysteresis, notifier choices, install/restore commands |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
+| `assets/mac-health-action` | Background action dispatcher for read-only Codex/Claude investigations and explicitly confirmed graceful process stopping |
 | `assets/com.local.mac-health-check.plist` | LaunchAgent plist with `StartCalendarInterval` (StartInterval is broken on laptops) |
 | `assets/config.sh` | Default config with safe thresholds |
 | `assets/render-cleanup-plan.py` | Interactive HTML cleanup-plan UI. Renders categorised checkboxes from a JSON of scan findings, serves on `127.0.0.1:18347`, opens browser, waits for the user's selection, writes it to `/tmp/cleanup-selection-<ts>.json`. Used by Workflow A. |
@@ -85,7 +86,7 @@ The Python script is bash-3.2-friendly, uses only stdlib, and is safe to run fro
 
 ### B. "Set up alerting" (new machine or first time)
 
-1. Copy `assets/mac-health-check` to `~/bin/mac-health-check` (mkdir first; chmod +x).
+1. Copy `assets/mac-health-check` and `assets/mac-health-action` to `~/bin/` (mkdir first; chmod +x).
 2. Copy `assets/com.local.mac-health-check.plist` to `~/Library/LaunchAgents/`.
 3. Copy `assets/config.sh` to `~/.config/mac-health/config.sh` (mkdir first).
 4. `brew install vjeantet/tap/alerter` (NOT terminal-notifier — it's broken in 2026 on Sequoia/Tahoe).
@@ -118,7 +119,7 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 4. **For Time Machine backups: `tmutil delete <path>`, never `rm`.** TM-tagged paths require the `tmutil` API.
 5. **For sudo cleanup of `/Library`, `/private/var/db/*`**: only the allowlisted subpaths from `references/never-touch.md` § Sudo allowlist.
 6. **No auto-cleanup hooks tied to alerts.** Alerts notify; user decides. Documented anti-pattern (Google SRE, also confirmed by community 2025-2026 — see `references/alerting.md`).
-7. **No auto-kill hooks tied to CPU alerts.** A CPU advisory records the executable and PID; the user decides whether the workload is intentional and how to stop it.
+7. **No auto-kill hooks tied to CPU alerts.** A CPU advisory may offer `Stop Process…`, but only as an explicit user action. Revalidate PID/executable identity and ownership, confirm, send SIGTERM first, and require a separate confirmation before SIGKILL.
 8. **Don't delete swap files.** `rm /private/var/vm/swapfile*` while running = guaranteed kernel panic.
 9. **Apply phase reads only the selection JSON.** Never hand-roll `rm` blocks or hard-code paths from the earlier scan when applying. Real incident: agent applied the default-selected recordings list from the original scan, ignoring that the user had unchecked them in the UI before submitting. The fix is structural — use `assets/apply-cleanup-selection.py` which iterates `selected_items` from the selection JSON only.
 
@@ -132,6 +133,7 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 - `log show --last 6m` is too slow (30+ s) for periodic checks. Poll `/Library/Logs/DiagnosticReports/JetsamEvent-*.ips` instead — async write delay is acceptable on a 5-min cadence.
 - `JetsamEvent-*.ips` files live in `/Library/Logs/DiagnosticReports/` (system-wide), NOT `~/Library/Logs/DiagnosticReports/`.
 - macOS `ps %cpu` is a decaying average over up to one minute and is measured relative to one logical core, so a process may exceed 100 %. Whole-system CPU from the second `iostat` sample is 0–100 % across the machine. `iostat` is much lighter than starting `top` every five minutes.
+- CPU notifications resolve an owning app without reading command arguments: first from known tool paths (Playwriter, SourceCraft, Logi Options+), then from the outer `.app` bundle in the executable/parent chain, then from the executable fallback. Alerts show both `App` and `Process` so helpers such as `Codex (Renderer)` are attributed to ChatGPT.
 - CPU counters reset after a gap longer than 15 minutes, so sleep and missed calendar firings cannot masquerade as consecutive high-CPU readings. Open incidents remain open but need fresh recovery readings before rearming.
 - APFS purgeable space lags behind actual deletion by minutes. After cleanup, `df` may not show the change immediately; wait or run `diskutil info /System/Volumes/Data | grep "Container Free"`.
 - **Claude Desktop `vm_bundles/claudevm.bundle/` is Claude Cowork**, not "Claude Code sandbox" — it's a ~10 GB Ubuntu VM image (`rootfs.img`, `sessiondata.img`, `efivars.fd`, `vmIP`) for Anthropic's sandboxed code-execution feature. It is **auto-provisioned at every Claude Desktop launch** via an SHA1 integrity check, so its recent mtime ≠ user activity. Technically safe to delete (no chat/MCP impact), but Claude Desktop **silently re-downloads ~10 GB on next launch** and runs at ~55 % CPU while doing so. The Claude Code CLI does NOT use this bundle. Recommended classification: Tier 10 discuss-first with quit-Claude-Desktop pre-step and a warning that the bundle returns until Anthropic ships an opt-out toggle (open in [anthropics/claude-code#57371](https://github.com/anthropics/claude-code/issues/57371)).

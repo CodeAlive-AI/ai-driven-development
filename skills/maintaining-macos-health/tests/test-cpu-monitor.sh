@@ -89,18 +89,29 @@ EOF
 setup_case process_lifecycle
 write_system_sample 80
 cat > "$CASE_PS" <<EOF
-111 1 95.0 01:00:00 /tmp/csharp-ls
+111 110 95.0 01:00:00 /tmp/csharp-ls
+110 1 1.0 02:00:00 /Applications/SourceCraft.app/Contents/MacOS/SourceCraft
 222 1 5.0 00:10:00 /tmp/normal-worker
 EOF
 run_check
 assert_count 0 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
 run_check
 assert_count 1 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
+assert_count 1 'App=SourceCraft; process=csharp-ls' "$CASE_LOG_DIR/health.log"
+assert_count 1 "title='⚙️ SourceCraft CPU Anomaly'" "$CASE_LOG_DIR/health.log"
+PROCESS_INCIDENT=$(find "$CASE_LOG_DIR/cpu-incidents" -type f -name 'cpu-*.log' | head -1)
+[ -n "$PROCESS_INCIDENT" ] || fail 'process incident snapshot was not created'
+grep -q '^format=2$' "$PROCESS_INCIDENT" || fail 'incident format metadata missing'
+grep -q '^incident_kind=process$' "$PROCESS_INCIDENT" || fail 'process incident kind missing'
+grep -q '^primary_pid=111$' "$PROCESS_INCIDENT" || fail 'primary PID missing from process incident'
+grep -q '^primary_app=SourceCraft$' "$PROCESS_INCIDENT" || fail 'primary app missing from process incident'
+[ "$(stat -f '%Lp' "$PROCESS_INCIDENT")" = "600" ] || fail 'incident snapshot permissions are not 600'
 run_check
 assert_count 1 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
 
 cat > "$CASE_PS" <<EOF
-111 1 5.0 01:20:00 /tmp/csharp-ls
+111 110 5.0 01:20:00 /tmp/csharp-ls
+110 1 1.0 02:20:00 /Applications/SourceCraft.app/Contents/MacOS/SourceCraft
 222 1 5.0 00:30:00 /tmp/normal-worker
 EOF
 run_check
@@ -108,7 +119,8 @@ run_check
 assert_count 1 "cpu process recovered name='csharp-ls'" "$CASE_LOG_DIR/health.log"
 
 cat > "$CASE_PS" <<EOF
-111 1 95.0 01:40:00 /tmp/csharp-ls
+111 110 95.0 01:40:00 /tmp/csharp-ls
+110 1 1.0 02:40:00 /Applications/SourceCraft.app/Contents/MacOS/SourceCraft
 EOF
 run_check
 run_check
@@ -118,11 +130,16 @@ assert_count 2 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
 setup_case system_lifecycle
 write_system_sample 5
 cat > "$CASE_PS" <<EOF
-333 1 15.0 00:30:00 /tmp/worker
+333 1 15.0 00:30:00 /Applications/Docker.app/Contents/MacOS/Docker Helper
 EOF
 run_check
 run_check
 assert_count 1 'ALERT key=cpu_system_critical' "$CASE_LOG_DIR/health.log"
+assert_count 1 'Apps: Docker/Docker Helper pid=333' "$CASE_LOG_DIR/health.log"
+SYSTEM_INCIDENT=$(find "$CASE_LOG_DIR/cpu-incidents" -type f -name 'cpu-*.log' | head -1)
+[ -n "$SYSTEM_INCIDENT" ] || fail 'system incident snapshot was not created'
+grep -q '^incident_kind=system$' "$SYSTEM_INCIDENT" || fail 'system incident kind missing'
+grep -q '^primary_pid=333$' "$SYSTEM_INCIDENT" || fail 'top PID missing from system incident'
 run_check
 assert_count 1 'ALERT key=cpu_system_critical' "$CASE_LOG_DIR/health.log"
 
@@ -149,6 +166,16 @@ assert_count 0 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
 grep -q 'kernel_task pid=444 cpu=180%' "$CASE_LOG_DIR/health.log" \
   || fail 'ignored process missing from diagnostic top list'
 
+# Known automation paths are attributed to the launcher, not just Chrome.
+setup_case playwriter_attribution
+write_system_sample 80
+cat > "$CASE_PS" <<EOF
+777 1 95.0 01:00:00 /Users/test/.playwriter/browsers/chrome/Google Chrome for Testing.app/Contents/Frameworks/Google Chrome for Testing Helper
+EOF
+run_check
+run_check
+assert_count 1 'App=Playwriter; process=Google Chrome for Testing Helper' "$CASE_LOG_DIR/health.log"
+
 # A long sleep/missed interval breaks the consecutive-reading streak.
 setup_case sample_gap
 write_system_sample 80
@@ -164,4 +191,4 @@ run_check
 assert_count 1 'ALERT key=cpu_process_advisory' "$CASE_LOG_DIR/health.log"
 assert_count 1 'cpu process sample gap exceeded' "$CASE_LOG_DIR/health.log"
 
-printf 'PASS: CPU monitor lifecycle, deduplication, recovery, rearm, ignore rules, and gap reset\n'
+printf 'PASS: CPU lifecycle, snapshots, deduplication, recovery, rearm, app attribution, ignore rules, and gap reset\n'

@@ -49,6 +49,8 @@ CONFIG="${MAC_HEALTH_CONFIG:-$HOME/.config/mac-health/config.sh}"
 : "${CPU_LOG_TOP_N:=5}"
 : "${CPU_ALERT_TOP_N:=3}"
 : "${CPU_INCIDENT_RETENTION_DAYS:=30}"
+: "${CPU_ACTIONS_ENABLED:=1}"
+: "${CPU_ACTION_HANDLER:=$HOME/bin/mac-health-action}"
 
 # Test hooks. Production config should leave these empty.
 : "${CPU_PS_FIXTURE:=}"
@@ -62,6 +64,7 @@ INSTALL_DATE_FILE="$STATE_DIR/install_date"
 JETSAM_SEEN="$STATE_DIR/jetsam_seen"
 
 mkdir -p "$LOG_DIR" "$STATE_DIR" "$CPU_INCIDENT_DIR"
+chmod 700 "$CPU_INCIDENT_DIR" 2>/dev/null || true
 
 NOW="${MAC_HEALTH_NOW:-$(date '+%s')}"
 case "$NOW" in (''|*[!0-9]*) NOW=$(date '+%s') ;; esac
@@ -106,6 +109,7 @@ set_cooldown() {
 notifier_send() {
   local title="$1" message="$2"
   local urgency="${3:-critical}"
+  local incident_file="${4:-}"
   local choice="$NOTIFIER"
 
   if [ "$choice" = "auto" ]; then
@@ -119,6 +123,12 @@ notifier_send() {
   # alerter in particular blocks on user response unless detached.
   case "$choice" in
     alerter)
+      if [ "$CPU_ACTIONS_ENABLED" = "1" ] && [ -n "$incident_file" ] \
+         && [ -x "$CPU_ACTION_HANDLER" ]; then
+        ( "$CPU_ACTION_HANDLER" notify "$incident_file" "$title" "$message" "$urgency" \
+            </dev/null >/dev/null 2>&1 & )
+        return
+      fi
       if [ "$urgency" = "critical" ]; then
         ( /opt/homebrew/bin/alerter --title "$title" --message "$message" \
             --sound default --timeout 30 </dev/null >/dev/null 2>&1 & )
@@ -154,6 +164,7 @@ notify() {
   local urgency="${5:-critical}"
   local bypass_calibration="${6:-0}"
   local skip_cooldown="${7:-0}"
+  local incident_file="${8:-}"
   log "ALERT key=$key urgency=$urgency reason='$reason' title='$title' msg='$message'"
 
   if is_suppressed "$bypass_calibration"; then
@@ -172,7 +183,7 @@ notify() {
     set_cooldown "$key"
   fi
 
-  notifier_send "$title" "$message" "$urgency"
+  notifier_send "$title" "$message" "$urgency" "$incident_file"
 
   if [ -n "$NTFY_URL" ]; then
     local ntfy_priority="default"
@@ -277,6 +288,83 @@ cpu_is_ignored() {
   printf '%s\n' "$display_name" | grep -Eq "$CPU_IGNORE_REGEX"
 }
 
+cpu_known_app_for_comm() {
+  local comm="$1"
+  case "$comm" in
+    *"/.playwriter/"*) printf '%s\n' "Playwriter" ;;
+    *"/Application Support/sourcecraft/"*) printf '%s\n' "SourceCraft" ;;
+    *"/Logitech.localized/LogiOptionsPlus/"*) printf '%s\n' "Logi Options+" ;;
+    *) return 1 ;;
+  esac
+}
+
+cpu_bundle_display_name() {
+  local bundle_path="$1"
+  local plist="$bundle_path/Contents/Info.plist"
+  local value=""
+
+  if [ -x /usr/libexec/PlistBuddy ] && [ -f "$plist" ]; then
+    value=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleDisplayName' "$plist" 2>/dev/null || true)
+    if [ -z "$value" ]; then
+      value=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleName' "$plist" 2>/dev/null || true)
+    fi
+  fi
+  if [ -z "$value" ]; then
+    value=${bundle_path##*/}
+    value=${value%.app}
+  fi
+  printf '%s' "$value" | tr '\t\r\n;|' '     '
+}
+
+cpu_app_name_for_pid() {
+  local snapshot="$1"
+  local original_pid="$2"
+  local original_comm="$3"
+  local current_pid="$original_pid"
+  local current_comm="$original_comm"
+  local parent_line="" parent_pid="" parent_comm=""
+  local known_app="" bundle_path="" fallback=""
+  local depth=0
+
+  fallback=${original_comm##*/}
+  case "$original_comm" in
+    *"/.cache/opencode/"*) fallback="OpenCode" ;;
+  esac
+
+  while [ "$depth" -lt 12 ] && [ -n "$current_comm" ]; do
+    known_app=$(cpu_known_app_for_comm "$current_comm" || true)
+    if [ -n "$known_app" ]; then
+      printf '%s\n' "$known_app"
+      return 0
+    fi
+
+    case "$current_comm" in
+      *.app/*)
+        bundle_path="${current_comm%%.app/*}.app"
+        cpu_bundle_display_name "$bundle_path"
+        printf '\n'
+        return 0
+        ;;
+    esac
+
+    [ "$current_pid" = "0" ] && break
+    [ "$current_pid" = "1" ] && break
+    parent_line=$(awk -F '\t' -v wanted="$current_pid" \
+      '$2 == wanted { print $3 "\t" $5; exit }' "$snapshot")
+    [ -n "$parent_line" ] || break
+    IFS=$(printf '\t') read -r parent_pid parent_comm <<EOF
+$parent_line
+EOF
+    [ -n "$parent_pid" ] || break
+    [ "$parent_pid" = "$current_pid" ] && break
+    current_pid="$parent_pid"
+    current_comm="$parent_comm"
+    depth=$(( depth + 1 ))
+  done
+
+  printf '%s\n' "$fallback"
+}
+
 cpu_collect_processes() {
   if [ -n "$CPU_PS_FIXTURE" ] && [ -f "$CPU_PS_FIXTURE" ]; then
     cat "$CPU_PS_FIXTURE"
@@ -326,22 +414,68 @@ cpu_top_summary() {
   ' "$snapshot"
 }
 
+cpu_top_app_summary() {
+  local snapshot="$1"
+  local max_items="$2"
+  local tab="" result=""
+  local cpu="" pid="" ppid="" etime="" comm="" process_name="" app_name="" label=""
+  local count=0
+  tab=$(printf '\t')
+
+  while IFS="$tab" read -r cpu pid ppid etime comm; do
+    [ -n "$pid" ] || continue
+    process_name=${comm##*/}
+    app_name=$(cpu_app_name_for_pid "$snapshot" "$pid" "$comm")
+    if [ "$app_name" = "$process_name" ]; then
+      label="$app_name"
+    else
+      label="$app_name/$process_name"
+    fi
+    label=$(printf '%s' "$label" | tr '\t\r\n;|' '     ')
+    if [ -n "$result" ]; then result="$result; "; fi
+    result="${result}${label} pid=${pid} cpu=${cpu}%"
+    count=$(( count + 1 ))
+    [ "$count" -ge "$max_items" ] && break
+  done < "$snapshot"
+
+  printf '%s\n' "$result"
+}
+
 cpu_write_incident_snapshot() {
   local snapshot="$1"
   local busy="$2"
   local load1="$3"
   local load5="$4"
   local load15="$5"
+  local incident_kind="${6:-system}"
+  local primary_pid="${7:-}"
+  local primary_cpu="${8:-}"
+  local primary_app="${9:-}"
+  local primary_process="${10:-}"
+  local primary_executable="${11:-}"
   local incident_file="$CPU_INCIDENT_DIR/cpu-$(date '+%Y%m%d-%H%M%S')-$$.log"
+  local primary_hash=""
+  [ -n "$primary_executable" ] && primary_hash=$(cpu_comm_hash "$primary_executable")
 
   {
+    printf 'format=2\n'
+    printf 'incident_kind=%s\n' "$incident_kind"
     printf 'timestamp=%s\n' "$(date '+%Y-%m-%d %H:%M:%S')"
+    printf 'created_epoch=%s\n' "$NOW"
     printf 'system_busy_pct=%s load_1m=%s load_5m=%s load_15m=%s\n' \
       "${busy:-unknown}" "${load1:-unknown}" "${load5:-unknown}" "${load15:-unknown}"
+    printf 'primary_pid=%s\n' "$primary_pid"
+    printf 'primary_cpu_pct=%s\n' "$primary_cpu"
+    printf 'primary_app=%s\n' "$primary_app"
+    printf 'primary_process=%s\n' "$primary_process"
+    printf 'primary_executable=%s\n' "$primary_executable"
+    printf 'primary_executable_hash=%s\n' "$primary_hash"
     printf 'cpu_pct\tpid\tppid\telapsed\texecutable\n'
     head -10 "$snapshot"
   } > "$incident_file"
+  chmod 600 "$incident_file"
   log "cpu incident snapshot=$incident_file"
+  printf '%s\n' "$incident_file"
 }
 
 check_cpu() {
@@ -366,9 +500,8 @@ $system_sample
 EOF
   fi
 
-  local top_summary="" alert_top_summary=""
+  local top_summary=""
   top_summary=$(cpu_top_summary "$snapshot" "$CPU_LOG_TOP_N")
-  alert_top_summary=$(cpu_top_summary "$snapshot" "$CPU_ALERT_TOP_N")
   log "cpu system_busy=${busy:-unknown} load=${load1:-unknown}/${load5:-unknown}/${load15:-unknown} top=[$top_summary]"
 
   # Whole-system incident state:
@@ -428,7 +561,7 @@ EOF
   local cpu=0 pid=0 ppid=0 etime="" comm="" display_name=""
   local process_state_file="" comm_hash="" saved_hash=""
   local hot_count=0 leak_count=0 recovery_count=0 incident_open=0 process_last_seen=0
-  local fire_reason=""
+  local fire_reason="" app_name=""
 
   while IFS="$tab" read -r cpu pid ppid etime comm; do
     [ -n "$pid" ] || continue
@@ -512,8 +645,9 @@ EOF
       if [ -n "$fire_reason" ]; then
         incident_open=1
         recovery_count=0
-        printf '%s\t%s\t%s\t%s\t%s\t%s\n' \
-          "$cpu" "$pid" "$etime" "$display_name" "$fire_reason" \
+        app_name=$(cpu_app_name_for_pid "$snapshot" "$pid" "$comm")
+        printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+          "$cpu" "$pid" "$etime" "$display_name" "$app_name" "$fire_reason" \
           "$([ "$fire_reason" = "hot" ] && echo "$hot_count" || echo "$leak_count")" \
           >> "$new_process_incidents"
       fi
@@ -544,18 +678,29 @@ EOF
   [ -s "$new_process_incidents" ] && process_new=1
 
   if [ "$system_new" = "1" ] || [ "$process_new" = "1" ]; then
-    cpu_write_incident_snapshot "$snapshot" "$busy" "$load1" "$load5" "$load15"
-
-    local alert_cpu="" alert_pid="" alert_etime="" alert_name="" alert_reason="" alert_count=""
+    local alert_cpu="" alert_pid="" alert_etime="" alert_name="" alert_app="" alert_reason="" alert_count=""
+    local alert_app_summary="" alert_executable="" incident_file="" incident_kind="system"
+    alert_app_summary=$(cpu_top_app_summary "$snapshot" "$CPU_ALERT_TOP_N")
     if [ "$process_new" = "1" ]; then
-      IFS="$tab" read -r alert_cpu alert_pid alert_etime alert_name alert_reason alert_count \
+      IFS="$tab" read -r alert_cpu alert_pid alert_etime alert_name alert_app alert_reason alert_count \
         < "$new_process_incidents"
     fi
 
     if [ "$system_new" = "1" ]; then
+      IFS="$tab" read -r alert_cpu alert_pid _ _ alert_executable < "$snapshot"
+      alert_name=${alert_executable##*/}
+      alert_app=$(cpu_app_name_for_pid "$snapshot" "$alert_pid" "$alert_executable")
+    else
+      incident_kind="process"
+      alert_executable=$(/usr/bin/awk -F '\t' -v pid="$alert_pid" '$2 == pid {print $5; exit}' "$snapshot")
+    fi
+    incident_file=$(cpu_write_incident_snapshot "$snapshot" "$busy" "$load1" "$load5" "$load15" \
+      "$incident_kind" "$alert_pid" "$alert_cpu" "$alert_app" "$alert_name" "$alert_executable")
+
+    if [ "$system_new" = "1" ]; then
       notify "cpu_system_critical" "🔥 CPU Saturated" \
-        "CPU busy=${busy}% for ${system_pending} checks. Load=${load1}/${load5}/${load15}. Top: $alert_top_summary" \
-        "busy=${busy}% checks=$system_pending" "critical" "1" "1"
+        "CPU busy=${busy}% for ${system_pending} checks. Load=${load1}/${load5}/${load15}. Apps: $alert_app_summary" \
+        "busy=${busy}% checks=$system_pending" "critical" "1" "1" "$incident_file"
     elif [ "$process_new" = "1" ]; then
       local reason_text=""
       if [ "$alert_reason" = "hot" ]; then
@@ -563,14 +708,16 @@ EOF
       else
         reason_text=">=${CPU_PROCESS_LEAK_PCT}% for ${alert_count} checks"
       fi
-      notify "cpu_process_advisory" "⚙️ CPU Process Anomaly" \
-        "$alert_name pid=$alert_pid cpu=${alert_cpu}% runtime=$alert_etime ($reason_text). System=${busy:-unknown}%. Top: $alert_top_summary" \
-        "name=$alert_name pid=$alert_pid cpu=${alert_cpu}% reason=$alert_reason" \
-        "advisory" "1" "1"
+      notify "cpu_process_advisory" "⚙️ $alert_app CPU Anomaly" \
+        "App=$alert_app; process=$alert_name pid=$alert_pid cpu=${alert_cpu}% runtime=$alert_etime ($reason_text). System=${busy:-unknown}%. Apps: $alert_app_summary" \
+        "app=$alert_app process=$alert_name pid=$alert_pid cpu=${alert_cpu}% reason=$alert_reason" \
+        "advisory" "1" "1" "$incident_file"
     fi
   fi
 
-  find "$CPU_INCIDENT_DIR" -type f -name 'cpu-*.log' \
+  # Includes incident logs plus any prompt/bin/launcher files created after an
+  # investigation action, so auxiliary evidence cannot accumulate forever.
+  find "$CPU_INCIDENT_DIR" -type f -name 'cpu-*' \
     -mtime "+$CPU_INCIDENT_RETENTION_DAYS" -delete 2>/dev/null || true
   rm -rf "$cpu_tmp_dir"
 }
