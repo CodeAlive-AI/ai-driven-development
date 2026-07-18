@@ -23,6 +23,12 @@ fi
 # Default timeout: one hour. Override per invocation with AGENT_TIMEOUT.
 AGENT_TIMEOUT="${AGENT_TIMEOUT:-3600}"
 
+# Full stdout archive for every backend call. This protects expensive long-form
+# answers from being lost when a terminal, parent agent, or UI truncates displayed
+# output. Override the directory with CONSILIUM_OUTPUT_DIR, or set
+# CONSILIUM_SAVE_OUTPUTS=0 to disable archival for a one-off run.
+CONSILIUM_OUTPUT_DIR="${CONSILIUM_OUTPUT_DIR:-${TMPDIR:-/tmp}/agents-consilium-outputs}"
+
 # Liveness deadline for codex: if the -o output file is still empty after this
 # many seconds, the wrapper kills the process. Keep the default aligned with
 # AGENT_TIMEOUT so quality-first reasoning can use the full one-hour budget;
@@ -302,32 +308,61 @@ warn_shell_special_in_prompt() {
     fi
 }
 
-# Run a command with optional timeout
+# Run a command with optional timeout.
+#
+# Important: stream stdout directly instead of capturing it in a shell variable.
+# Large LLM responses must remain available to the caller/redirect target even
+# when the terminal or parent tool truncates displayed output. Command
+# substitution would buffer the whole response in memory, strip trailing
+# newlines, and leave no independent raw artifact after display truncation.
 # Usage: run_with_timeout "agent_name" callback_function
 run_with_timeout() {
     local agent_name="$1"
     local fn_name="$2"
+    local save_file=""
+    if [[ "${CONSILIUM_SAVE_OUTPUTS:-1}" != "0" ]]; then
+        mkdir -p "$CONSILIUM_OUTPUT_DIR"
+        local safe_agent
+        safe_agent="$(printf '%s' "$agent_name" | LC_ALL=C tr -c 'A-Za-z0-9._-' '_')"
+        save_file="$(mktemp "${CONSILIUM_OUTPUT_DIR%/}/${safe_agent}.out.XXXXXX")"
+        echo -e "${YELLOW}[${agent_name}] Full stdout will be saved to: ${save_file}${NC}" >&2
+    fi
 
-    local response
+    local exit_code=0
     if [[ -n "$TIMEOUT_CMD" ]]; then
-        response=$($TIMEOUT_CMD "${AGENT_TIMEOUT}s" bash -c "$(declare -f "$fn_name"); $fn_name") || {
-            local exit_code=$?
-            if [[ $exit_code -eq 124 ]]; then
-                echo -e "${RED}[${agent_name}] Timeout after ${AGENT_TIMEOUT}s${NC}" >&2
-                exit 124
-            fi
-            echo -e "${RED}[${agent_name}] Error (exit code: $exit_code)${NC}" >&2
-            exit $exit_code
-        }
+        if [[ -n "$save_file" ]]; then
+            set +e
+            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" bash -c "$(declare -f "$fn_name"); $fn_name" | tee "$save_file"
+            exit_code="${PIPESTATUS[0]}"
+            set -e
+        else
+            set +e
+            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" bash -c "$(declare -f "$fn_name"); $fn_name"
+            exit_code=$?
+            set -e
+        fi
     else
-        response=$($fn_name) || {
-            local exit_code=$?
-            echo -e "${RED}[${agent_name}] Error (exit code: $exit_code)${NC}" >&2
-            exit $exit_code
-        }
+        if [[ -n "$save_file" ]]; then
+            set +e
+            $fn_name | tee "$save_file"
+            exit_code="${PIPESTATUS[0]}"
+            set -e
+        else
+            set +e
+            $fn_name
+            exit_code=$?
+            set -e
+        fi
+    fi
+
+    if [[ $exit_code -ne 0 ]]; then
+        if [[ $exit_code -eq 124 ]]; then
+            echo -e "${RED}[${agent_name}] Timeout after ${AGENT_TIMEOUT}s${NC}" >&2
+            exit 124
+        fi
+        echo -e "${RED}[${agent_name}] Error (exit code: $exit_code)${NC}" >&2
+        exit $exit_code
     fi
 
     echo -e "${GREEN}[${agent_name}] Response received${NC}" >&2
-    echo ""
-    echo "$response"
 }

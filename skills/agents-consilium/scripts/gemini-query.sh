@@ -104,10 +104,11 @@ prompt = os.environ["FULL_PROMPT"]
 timeout = int(os.environ.get("AGENT_TIMEOUT", "3600"))
 
 url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
-body = json.dumps({
-    "contents": [{"parts": [{"text": prompt}]}],
-    "generationConfig": {"maxOutputTokens": 65536}
-}).encode()
+payload = {"contents": [{"parts": [{"text": prompt}]}]}
+max_output_tokens = os.environ.get("GEMINI_MAX_OUTPUT_TOKENS", "").strip()
+if max_output_tokens:
+    payload["generationConfig"] = {"maxOutputTokens": int(max_output_tokens)}
+body = json.dumps(payload).encode()
 
 req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
 try:

@@ -11,8 +11,8 @@
 #     • opencode-go-qwen37-plus  analyst       (uncapped)
 #     • opencode-go-qwen37-plus  lateral       (uncapped)
 #     • opencode-go-glm          architecture  (uncapped, specialist)
-#     • opencode-go-glm          correctness   (cap=10,    specialist)
-#     • opencode-go-qwen37-max   architecture  (cap=3,     specialist)
+#     • opencode-go-glm          correctness   (uncapped, specialist)
+#     • opencode-go-qwen37-max   architecture  (uncapped, specialist)
 #     • opencode-go-qwen37-max   security      (uncapped,  specialist)
 #
 #   Stage 2: discovery-frontier (parallel) — 2 hand-picked frontier add-ons
@@ -83,8 +83,8 @@ SMALL_PASSES=(
     "opencode-go-qwen37-plus|analyst|uncapped|broad-analyst.txt"
     "opencode-go-qwen37-plus|lateral|uncapped|broad-lateral.txt"
     "opencode-go-glm|architecture|uncapped|specialist.txt"
-    "opencode-go-glm|correctness|10|specialist.txt"
-    "opencode-go-qwen37-max|architecture|3|specialist.txt"
+    "opencode-go-glm|correctness|uncapped|specialist.txt"
+    "opencode-go-qwen37-max|architecture|uncapped|specialist.txt"
     "opencode-go-qwen37-max|security|uncapped|specialist.txt"
 )
 FRONTIER_PASSES=(
