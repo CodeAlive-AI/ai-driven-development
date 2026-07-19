@@ -62,7 +62,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [subagents-management](skills/subagents-management/) | Create and manage subagents across Claude Code, Codex CLI, and OpenCode |
 | [skills-management](skills/skills-management/) | Organise, discover, share, and **train** skills for coding agents — SkillOpt-style optimisation loop with bounded edits, held-out validation gate, rejected-edit buffer, epoch-wise slow/meta update, plus trigger / transfer / diff / edit-log tooling |
 | [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code and OpenCode (validate, scaffold, submit to Anthropic's directory) |
-| [optimizing-claude-code](skills/optimizing-claude-code/) | Audit repos and optimise CLAUDE.md for agent work |
+| [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 
 ### Engineering practices (6)
 
@@ -145,7 +145,7 @@ ai-driven-development/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/
 │   ├── mcp-management/
-│   ├── optimizing-claude-code/
+│   ├── agentic-readiness/
 │   ├── plan-mode/
 │   ├── plugins-management/
 │   ├── prompt-engineering/
@@ -160,7 +160,8 @@ ai-driven-development/
 ├── hooks/
 │   └── balanced-safety-hooks/    ← bash-guard (Go, pre-built binaries via release)
 ├── README.md (+ ru/zh/pt-BR translations)
-├── CLAUDE.md
+├── AGENTS.md                    ← canonical repository instructions
+├── CLAUDE.md                   ← imports AGENTS.md for Claude Code
 └── LICENSE
 ```
 
@@ -178,7 +179,7 @@ When adding a skill or materially changing one, refresh:
 - The relevant section table above
 - `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` version (semver — minor bump for new skills, major for breaking interface changes)
 
-See [CLAUDE.md](CLAUDE.md) for the full development guide.
+See [AGENTS.md](AGENTS.md) for the full development guide.
 
 ---
 
