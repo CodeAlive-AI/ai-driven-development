@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic Readiness"
+  short_description: "Audit repositories for reliable agent work"
+  default_prompt: "Use $agentic-readiness to audit this repository for Codex, Claude Code, and OpenCode readiness."
