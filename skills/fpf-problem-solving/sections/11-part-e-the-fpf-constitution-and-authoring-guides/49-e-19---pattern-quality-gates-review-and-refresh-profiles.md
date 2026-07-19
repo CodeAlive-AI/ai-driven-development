@@ -522,6 +522,48 @@ Use triggered accounts only for the selected entry-recognition function:
 
 For `PCP-ENTRY`, the ordinary compact pattern-local note remains enough unless one of the triggered concerns above is genuinely present.
 
+#### E.19:4.3.3 - Pattern-Edition Use-Value Replay
+
+Use this replay when an exact candidate pattern edition changes materially under `E.8:4.1.2`. First verify the author-selected branch against the exact edition basis and changed locus. A mechanical change closes as `not triggered` only when the smallest relevant comparison shows that every materiality value named in `E.8:4.1.2` is preserved. Physical rewrite size is not evidence.
+
+Keep each selected use probe as one atomic judgment; one run may contain probes from both branches. Carry the same probe separately by its branch, exact edition or candidate-only basis, working use or relying work, expected first useful result, boundary, necessity, and selected evidence mode. E.19 adds the branch-correct disposition or outcome and checked evidence without regrouping or reclassifying the use. A grouped verdict such as `uses preserved or added` or `usability preserved` closes neither branch. Record the results in the existing E.19 run record; the labels below are review dispositions, not U-kinds, coordinates, statuses, cards, or another result ontology.
+
+**Prior-edition differential.** Review one candidate pattern edition × one prior-edition use probe and close it with exactly one disposition:
+
+| Disposition | Semantic test and recoverability |
+| --- | --- |
+| `preserved` | The situation, action, result, and required boundary remain semantically available, so the declared use remains admissible and replayable from the pinned editions. |
+| `improved` | The required old use remains and a separate replay demonstrates an action, result, boundary, or affordability gain. |
+| `transferred` | A discoverable handoff reaches one named neighboring pattern whose Solution carries the needed action guidance and exposes its result. A bare pattern ID or unreachable action is `regressed`. |
+| `intentionally retired` | An accepted decision drops a harmful or false old action and supplies the corrected positive action or boundary as the recoverability endpoint. |
+| `regressed` | A required action, result, risk disclosure, cheap exit, or usable handoff is unintentionally absent; repair or an explicit retirement decision is required. |
+
+A use classified as unsupported historical residue before replay receives no differential disposition and supports no compatibility claim. New evidence of a valid old use reopens that classification instead of restoring wording silently. A required `regressed` probe blocks closure; keep the probe's required/optional necessity visible for later evaluation.
+
+**Candidate-only adequacy.** Review one candidate pattern edition × one new intended-use probe against its exact candidate-only basis, never against invented history. Close it with exactly one outcome:
+
+| Outcome | Semantic test |
+| --- | --- |
+| **adequate for the candidate-only use** | The selected basis, situation, action, first useful result, action-changing boundary, and intended reader are recoverable and executable enough for the declared use. |
+| **absent or insufficient for the candidate-only use** | The use is only promised, named, ambiguous, or unsupported; the intended reader cannot perform the action and distinguish the first result under the required boundary. |
+
+A missing candidate-only decision or basis is `absent or insufficient`; it never licenses a fabricated prior edition. Absence for a required new use blocks closure. Absence for optional breadth is non-blocking by itself but cannot support breadth, transfer, or exceptional-expression claims. If no exact new intended use is selected, no candidate-only check opens.
+
+**Replay the positive Solution separately.** Judge these atomic items over the candidate edition:
+
+1. the governed subject;
+2. the recurring problem and ordinary failure;
+3. an executable proposed move;
+4. a first useful result rather than completed review apparatus;
+5. each prominent boundary or guard and the credible neighboring case whose action it changes; and
+6. guards that inspect an already present positive Solution instead of supplying its outline.
+
+Refine item 5 by boundary whenever boundaries can pass, fail, or route independently. Follow the short first-use rendering's action and result logic against a concrete situation. Merely finding words such as `situation`, `move`, `result`, or `stop` is not evidence. Record each failed item as an exact finding with remediation direction; do not replace the replay with one prose-quality impression.
+
+**Replay each triggered enumeration.** Verify the semantic resolution selected under `E.8:4.1.2`: a declared closed set has one explicit membership rule covering every member; named-kind or proposition examples remain subordinate and explicitly non-exhaustive; heterogeneous neighbors do not assert a false common kind; an implicit kind, relation, or structure reaches an existing direct governor or remains blocked; and a hidden action or claim is stated before its examples. One list is a small attention series. Review a member separately when its membership can fail independently or route to another owner. A genuinely small closed set may close as one predicate-level unit only when one rule decides every member and none has an independent disposition. Nearby nouns that assert no common membership, and an unchanged declared set or example list still covered by its exact rule, take the cheap positive-control path. A blanket `all lists are coherent` result cannot close a triggered enumeration.
+
+Desk replay is the ordinary evidence mode for both use branches, the positive Solution, and enumerations. Escalate to a cold reader, AI agent, or observed-work exercise when competing actions remain plausible, the result distinction is not recoverable by inspection, a transfer is uncertain, or a missed failure has high consequence. When a claim extends recurring applicability beyond the exact cases, or high consequence makes one observed slice insufficient, select a proportionate qualitative practitioner survey, action-research cycle, or case study. Evidence escalation is risk-selected; it is not a universal benchmark or an ordinary-rewrite requirement. The E.19 run returns branch-correct evidence and remediation direction while leaving ordinal coordinate values and `PatternQualityStatus` to the full E.21 evaluation.
+
 #### E.19:4.4 - Decision outcomes
 
 A PQG run **MUST** end with (a) one compact list of blocking findings and (b) one concrete remediation-direction account.
@@ -589,6 +631,7 @@ Bias risks and mitigations:
 | **CC-E19-20 (Pattern-quality review is not project certification).** | If an `E.19` result is reused outside FPF pattern-quality review, the run record **MUST** state the project-side claim and the project-side relation that carries it. `E.19` alone **MUST NOT** be treated as project evidence, safety-assurance material, gate input, release justification, compliance-assurance material, assurance material, work authority, or publication truth. | Prevents pattern-quality conformance from supplying false project-world certification, gate passage, evidence sufficiency, or safety acceptance. |
 | **CC-E19-21 (Precision-restoration distribution is preserved).** | When the reviewed change applies or edits `E.10`-triggered precision restoration, the run **MUST** check that the selected precision-restoration architecture remains distributed: `E.10` states trigger and applicability, `E.10.ARCH` states shared recovery architecture, realization patterns perform ontological unpacking for the EntityOfConcern, relation, claim, characteristic-space item, state-family field, or other selected ontological neighborhood named by value, and affected patterns carry only thin pointers named by value unless they themselves work over the recovered primary entity, relation, claim, characteristic-space item, state-like field, or phrase or record named by value. A review fails this row when an affected pattern silently grows a second trigger registry, a duplicate recovery algorithm, or a local architecture that contradicts the selected restoration pattern. | Prevents pattern admission or refresh from re-centralizing wording-use restoration or duplicating `E.10.ARCH` inside affected patterns. |
 | **CC-E19-22 (EntityOfConcern and precision-restoration triage is explicit).** | When a reviewed change touches EntityOfConcern wording, source selected-family aliases, same-referent preservation, slot/reference migration, alignment-path claims, role/method/work boundaries, description/publication-use guards, semio-bias repair, phrase apparatus, architecture-placement rationale, package-boundary rationale, corpus-projection or quality-status evidence, or repeated/distributed boundary doctrine, the run record **MUST** state the pattern's own `EntityOfConcern`, first useful move, positive subject-kind/action spine, source-wording disposition if any, same-EntityOfConcern or retargeting result, exact alignment path or blocked-transfer result, ordinary references used or architecture-note/evaluation-carrier locus when applicable, and the governing patterns for role, method, work, evidence, assurance, gate, decision, release, and publication-pragmatics claims. When `E.21` is active, its `PrecisionRestorationProfile` carries the collapsed word/head/use, phrase-apparatus, repetition/distribution, role-boundary, and pattern-application assessment. If `E.21` is not the evaluation pattern, the row names the object named by value-under-review evaluation instead; no preliminary substitute or grouped statement may replace the required evaluation result. A grouped statement such as "E.10/E.19 passed" does not close this row when the touched rows themselves are not recoverable. | Keeps precision restoration auxiliary to the pattern claim and prevents selected-family migration from creating a second ontology or weakening user-facing action guidance. |
+| **CC-E19-23 (Pattern-edition use-value replay is branch-correct and atomic).** | When `E.8:4.1.2` selects a material pattern-edition change, the run **MUST** keep every selected probe separately recoverable and preserve its branch, exact basis, working use or relying work, expected first useful result, boundary, necessity, and evidence mode without regrouping; it **MUST** close every present prior-edition probe with exactly one differential disposition and every present candidate-only probe with exactly one adequacy outcome, replay each positive-Solution item and independently contestable enumeration member, and select evidence by ambiguity, consequence, or claim breadth. Both branches may be present in one run. A grouped preservation claim, fabricated history, physical-size proxy, bare transfer ID, lexical list scan, or E.19-assigned E.21 value **MUST NOT** close the review. A required regression or required candidate-only absence **MUST** remain blocking with exact remediation direction. | Preserves practical action and result through revision while keeping review evidence, ontology, and E.21 evaluation responsibilities distinct. |
 
 ### E.19:8 - Common Anti-Patterns and How to Avoid Them
 

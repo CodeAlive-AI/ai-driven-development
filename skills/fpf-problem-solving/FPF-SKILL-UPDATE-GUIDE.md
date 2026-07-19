@@ -34,6 +34,9 @@ The splitter follows the upstream H1 structure as published. Do not invent missi
 headings in the skill layer; if upstream omits a Part-level H1, reflect that in the
 Section INDEX and README tables.
 
+After generation, record the upstream commit hash and verify both the generated Markdown
+file total and every per-section H2 count against SKILL.md, README.md, and README-RU.md.
+
 ### 1. Description field (YAML frontmatter)
 
 The description decides WHETHER the skill triggers at all. It must include:

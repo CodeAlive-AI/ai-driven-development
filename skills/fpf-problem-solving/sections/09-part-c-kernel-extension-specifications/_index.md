@@ -9,7 +9,7 @@
 ## Contents
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate‑neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their motion and equivalence. Exports: (i) three point‑characteristics—Formality F,...
-- [C.2.1 - U.Episteme - Epistemes and their slot relation](02-c-2-1---u-episteme---epistemes-and-their-slot-relation.md) (868 lines) — Normativity: Normative except where a section is explicitly marked informative
+- [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (507 lines) — Normativity: Normative except where a section is explicitly marked informative
 - [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (659 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (375 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). Cross-context reuse is Bridge-only: scope may be re-expressed via...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (264 lines) — Type: Architectural (A)

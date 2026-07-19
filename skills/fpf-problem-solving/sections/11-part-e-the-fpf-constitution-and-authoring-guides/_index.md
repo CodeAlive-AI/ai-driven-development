@@ -20,7 +20,7 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](15-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the Specification](16-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
 - [E.7 - Archetypal Grounding Principle](17-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](18-e-8---fpf-authoring-conventions-style-guide.md) (573 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](18-e-8---fpf-authoring-conventions-style-guide.md) (650 lines) — Type: Architectural (A)
 - [E.8.ECSPF - Evaluation CharacteristicSpace FPF Pattern Publication Form](19-e-8-ecspf---evaluation-characteristicspace-fpf-pattern-publi.md) (180 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](20-e-9---design-rationale-record-method.md) (374 lines) — Type: Governance and authoring pattern
 - [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](21-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (283 lines) — Use E.9.DA when one DRR must be reliable enough for a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through, source-use...
@@ -51,12 +51,12 @@
 - [E.18.1 - P2W Problem-to-Work Carry-Through](46-e-18-1---p2w-problem-to-work-carry-through.md) (537 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](47-e-18-2---transformation-flow-mathematical-description.md) (215 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](48-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (260 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
-- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](49-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (681 lines) — Type: Architectural pattern
+- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](49-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (724 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](50-e-20---mechanism-introduction-protocol.md) (407 lines) — Type: Architectural pattern
-- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](51-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (372 lines) — Use this when one authored FPF pattern of concern must be evaluated for quality under the use required by the governing evaluation frame: ordinary practitioner use, authoring input, landing input,...
+- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](51-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (393 lines) — Use this when one authored FPF pattern of concern must be evaluated for quality under the use required by the governing evaluation frame: ordinary practitioner use, authoring input, landing input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](52-e-22---improvement-oriented-quality-evaluation-question-fram.md) (317 lines) — Use E.22 when someone is about to ask for a quality evaluation, quality review, returned-finding absorption, improvement proposal, or follow-up hypothesis over an object version named by value, and...
 - [E.23 - Quality Improvement Loop Method](53-e-23---quality-improvement-loop-method.md) (370 lines) — When the entry phrase is "loop engineering", "agent loop", "harness loop", or "improve this with an agent", treat the phrase as a recognition cue, not as an FPF kind. First recover the object version...
-- [E.24 - U.Ontic and Ontic Introduction Discipline](54-e-24---u-ontic-and-ontic-introduction-discipline.md) (470 lines) — Type: Part E FPF authoring discipline pattern
+- [E.24 - U.Ontic and Ontic Introduction Discipline](54-e-24---u-ontic-and-ontic-introduction-discipline.md) (542 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.CD - Ontic Candidate Detection](55-e-24-cd---ontic-candidate-detection.md) (306 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.PUB - Ontic Description and Publication Discipline](56-e-24-pub---ontic-description-and-publication-discipline.md) (246 lines) — Type: Part E FPF authoring discipline pattern
-- [E.24.UK - U-kind Governance and Ontic Settlement Coupling](57-e-24-uk---u-kind-governance-and-ontic-settlement-coupling.md) (329 lines) — Type: Part E FPF authoring discipline pattern
+- [E.24.UK - U-kind Admission and Ontic Settlement](57-e-24-uk---u-kind-admission-and-ontic-settlement.md) (387 lines) — Type: Part E FPF authoring discipline pattern
