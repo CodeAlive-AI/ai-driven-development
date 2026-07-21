@@ -14,9 +14,11 @@
 
 **Builds on.** `E.2`, `E.9`, `E.10`, `C.2.P`, `A.6.P`, `C.16.Q`, `C.16`, `A.19`, `C.22`, `C.25`, `C.29`, `G.5`, `G.9`, `A.6.3.RT`, and `A.6.4`.
 
-**Coordinates with.** `C.11`, `C.18`, `C.19`, `C.22.1`, `C.24`, `C.27`, `C.28`, `A.15`, `A.15.5`, `A.21`, `E.16`, `G.6`, `G.11`, `A.10`, `B.3`, `E.17`, `E.17.ID.CR`, `A.6.3`, `F.9`, `E.18`, `C.32.P2S`, and `E.10.MOVE`.
+**Coordinates with.** `C.11`, `C.18`, `C.19`, `C.22.1`, `C.22.PFR`, `C.24`, `C.27`, `C.28`, `A.15`, `A.15.5`, `A.21`, `E.16`, `G.6`, `G.11`, `A.10`, `B.3`, `E.17`, `E.17.ID.CR`, `A.6.3`, `F.9`, `E.18`, `C.32.P2S`, and `E.10.MOVE`.
 
 **Boundary summary.** `C.22.2` use starts from messy problem-side signals and yields one reviewable `ProblemCard@Context`, a `P2W-ready` problem-side input for downstream `C.22`, or a stop with a governing-pattern cue for the claim being made, relation, or boundary outside the card.
+
+**Claim-family, actuality, and solvability boundary.** A `ProblemCard@Context` is an episteme and may carry several distinct claims without creating or ending an actual Problem. An actual-problem assertion states affirmative or negative polarity for the exact `ProblematicForRelation` obtaining predicate. An affirmative assertion may designate an already individuated current occurrence only when `C.22.PFR` independently establishes it. Negative polarity neither creates, erases, nor reidentifies an occurrence; any reference to an independently established occurrence retains its exact temporal and contextual qualification under its direct governor. The card, its acceptance, and its publication do not make the relation obtain. Only when an explicit reliance judgment is current for the declared use does `A.10` or the receiving evaluation separately state supported, refuted, or unresolved reliance; that result does not make the relation obtain. A forecast, scenario, counterfactual, or anticipated-condition claim keeps its exact assumptions, horizon, evidence, and direct governor under `C.2.1`, `C.27`, `C.28`, or the more specific claim pattern and does not assert a current PFR merely by affirmative polarity. A claim that no supported method is currently known concerns method availability, evidence, constraints, and the intended use; selecting a method changes that solvability claim but does not end an obtaining `ProblematicForRelation`. The actual Problem ceases only when its actual-condition relation, criterion-applicability relation, or adverse predicate truth ceases under `C.22.PFR`.
 
 ### C.22.2:1 - Problem Frame
 
@@ -226,7 +228,7 @@ For this decision, `problem` remains an ordinary word in non-FPF-governed prose.
 | FPF-governed use | Current FPF recovery | `C.22.2` disposition |
 |---|---|---|
 | Symptom, anomaly, deviation, risk signal, or stakeholder signal | Problem signal or problem signal reference | May trigger a `ProblemCard@Context`, but is not yet a problem-side representation by itself. |
-| Problematic situation | Context-bound situation under a viewpoint, domain, constraints, risks, and candidate EntityOfConcern | Captured only through fields that make the situation reviewable. |
+| Problematic situation | Plain cue for an exact condition, entity, work, transformation, relation, or combination already governed by their direct patterns | The card states claims about the exact recovered objects; the phrase does not introduce `U.Situation`. An actual Problem requires an obtaining `ProblematicForRelation` under `C.22.PFR`. |
 | Framed problem representation | Problem-side representation of a selected EntityOfConcern under context and acceptance constraints | Center of `ProblemCard@Context`; representation-change claims apply `A.6.3.RT`, `A.6.4`, `E.17`, `F.9`, or `E.18` when current. |
 | Candidate problem in archive or retained candidate pool | Member of a retained candidate set, pool, archive, or front | Must preserve source set or reference, declared set relation when that FPF relation is being made and named by value, retention criterion, budget or window, and review cadence when the retention rule requires it. |
 | Selected problem from a set-return treatment | Selected set member or emitted problem-side record under a selection criterion | `ProblemCard@Context` may carry the selected problem, but selected-set semantics remain with `G.5`, `C.18`, `C.19`, `G.9`, `G.11`, `A.6.P:7a`, and `C.16.Q`. |
@@ -245,7 +247,7 @@ Use this split:
 
 | Term or local name | Current FPF recovery | Local disposition |
 |---|---|---|
-| `Problem` | Problem-side representation of the selected EntityOfConcern under context | Center of `C.22.2` only after problem-kind recovery. |
+| `Problem` | Either Plain wording for the framed problem episteme or an actual `ProblematicForRelation`, according to the current claim | `C.22.2` governs the episteme; `C.22.PFR` governs the actual relation. Do not infer either from the label alone. |
 | ProblemCard@Context | Compact problem-side record before P2W | `C.22.2`-governed record shape under `C.22`; stabilizes a problem-side representation under declared context. |
 | ProblemProfile | C.22-facing `ProblemProfile` prepared or bound from a problem-side representation when sufficient | Downstream `ProblemProfile` reference; not the card itself and not a work request. |
 | `TaskKind` | Selector-facing task kind in `C.22` | Downstream typed selector reference; not a work-plan entry. |
@@ -647,7 +649,7 @@ For P2W carry-through, use `E.18.1` with the accepted problem-side material and 
 ### C.22.2:25 - Relations
 
 - Builds on: `E.2`, `E.9`, `E.10`, `C.2.P`, `A.6.P`, `C.16.Q`, `C.16`, `A.19`, `C.22`, `C.25`, `C.29`, `G.5`, `G.9`, `A.6.3.RT`, and `A.6.4`.
-- Coordinates with: `C.11`, `C.18`, `C.19`, `C.22.1`, `A.15`, `A.15.5`, `A.21`, `E.16`, `G.6`, `G.11`, `A.10`, `B.3`, `E.17`, `E.17.ID.CR`, `A.6.3`, `F.9`, `E.18`, `E.18.1`, `C.32.P2S`, and `E.10.MOVE`. Use `C.32.P2S` only when a problem-side record exposes architecture pressure that must continue into selected structures, candidate synthesis, decision, realization, actual-structure feedback, or refresh.
+- Coordinates with: `C.11`, `C.18`, `C.19`, `C.22.1`, `C.22.PFR`, `A.15`, `A.15.5`, `A.21`, `E.16`, `G.6`, `G.11`, `A.10`, `B.3`, `E.17`, `E.17.ID.CR`, `A.6.3`, `F.9`, `E.18`, `E.18.1`, `C.32.P2S`, and `E.10.MOVE`. Use `C.22.PFR` when actual Problem obtaining or identity is current. Use `C.32.P2S` only when a problem-side record exposes architecture pressure that must continue into selected structures, candidate synthesis, decision, realization, actual-structure feedback, or refresh.
 
 ### C.22.2:End
 

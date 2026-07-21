@@ -10,7 +10,7 @@ FPF is a **thinking amplifier** — it helps you plan deeper and make better dec
 
 ## How it works
 
-This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The 97,000-line upstream FPF specification is split into a two-level hierarchy (15 directories, 324 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including applying a selected pattern to its first useful result, distinguishing relations from their occurrences, decision, causality, temporal reasoning, architecture description and synthesis, constraint-governed unfolding, narrative rendering, ontic governance, publication stability, SoTA-pack refresh, and provenance needs. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
+This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (15 directories, 331 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including applying a selected pattern to its first useful result, distinguishing relations from their occurrences, decision, causality, temporal reasoning, architecture description and synthesis, constraint-governed unfolding, narrative rendering, ontic governance, publication stability, SoTA-pack refresh, and provenance needs. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
 
 ## Install
 
@@ -26,10 +26,10 @@ sections/
     _index.md                          # TOC with descriptions of all sub-sections
     01-a-0---onboarding-glossary.md    # 248 lines
     02-a-1---holonic-foundation.md     # 185 lines
-    ...                                # 21 sub-sections total
+    ...                                # 22 sub-sections total
   09-part-c-kernel-extension-specifications/
     _index.md
-    ...                                # 73 sub-sections
+    ...                                # 75 sub-sections
   ...                                  # 15 directories total
 ```
 
@@ -43,11 +43,11 @@ The agent reads `_index.md` first, picks the right sub-section file, and loads o
 | 02 | Table of Content | 0 |
 | 03 | FPF Readme | 7 |
 | 04 | Preface | 21 |
-| 05 | Part A — Kernel Architecture | 21 |
-| 06 | A.IV.A — Signature Stack & Boundary | 26 |
-| 07 | A.V — Constitutional Principles | 37 |
+| 05 | Part A — Kernel Architecture | 22 |
+| 06 | A.IV.A — Signature Stack & Boundary | 27 |
+| 07 | A.V — Constitutional Principles | 40 |
 | 08 | Part B — Trans-disciplinary Reasoning | 25 |
-| 09 | Part C — Kernel Extensions | 73 |
+| 09 | Part C — Kernel Extensions | 75 |
 | 10 | Part D — Ethics & Conflict | 5 |
 | 11 | Part E — Constitution & Authoring | 57 |
 | 12 | Part F — Unification Suite | 21 |

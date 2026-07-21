@@ -131,7 +131,7 @@ A6.5-S7 RepresentationBoundary:
   world-side participant or relation occurrence by form.
 ```
 
-A system performing typed substitution keeps the SlotSpec fixed and checks a proposed relation-participant designation against the exact ValueKind. A system performing retargeting changes a reference value in an assertion or description while preserving SlotKind, ValueKind, and RefKind. Neither operation changes a world-side participant or establishes that the direct relation obtaining predicate is satisfied. The system separately evaluates that predicate by the direct method and records an assertion with the warranted modality; type compatibility alone never warrants a positive assertion.
+A system performing typed substitution keeps the SlotSpec fixed and checks a proposed relation-participant designation against the exact ValueKind. A system performing retargeting changes a reference value in an assertion or description while preserving SlotKind, ValueKind, and RefKind. Neither operation changes a world-side participant or establishes that the direct relation obtaining predicate is satisfied. The system separately evaluates that predicate by the direct method and records affirmative or negative assertion polarity under the exact direct claim family. Only when an explicit reliance judgment is current for the declared use does `A.10` or the receiving evaluation separately record supported, refuted, or unresolved reliance. Type compatibility alone establishes neither obtaining nor affirmative polarity.
 
 #### A.6.5:4.4 - Distinguish predicate grammar from holonhood and agency
 
@@ -145,6 +145,8 @@ Use the direct patterns for that settlement:
 - Only an admitted `U.System` acts and holds a role. Work is performed, a method is applied in work, and a transformation occurs or is carried out. The relation, method, work, transformation, role, signature, and structure do not become actors because prose gives them an active verb.
 
 When one word could denote a relation predicate or a holon occurrence, first ground the participants and ask what obtaining or occurrence identity rule the receiving claim needs. Then select the direct pattern. Do not decide by part of speech.
+
+Predicate grammar also decides neither claim polarity nor reliance. An ordinary relational assertion states affirmative or negative polarity for the exact direct predicate; a forecast, scenario, counterfactual, permission, or other claim family retains its exact direct governor. Only when an explicit reliance judgment is current for the declared use does `A.10` or the receiving evaluation separately state supported, refuted, or unresolved reliance. None of those claim-side distinctions makes the world-side relation obtain.
 
 #### A.6.5:4.5 - Use progressive elaboration
 
@@ -168,7 +170,7 @@ The local-kind branch does not turn every participant qualification into a kind.
 | Current reading | Governed object | Next pattern |
 |---|---|---|
 | The direct relation obtains for these participants, which satisfy its obtaining predicate | one world-side relation occurrence whose participants retain their own kinds | direct relation pattern, with `A.6.REL` only when occurrence identity is consumed |
-| An assertion designates the participants under declared SlotSpecs and states positive, negative, or unknown modality for the predicate | an assertion episteme about the direct relation; only positive modality may designate an already established occurrence | `C.2.1`, A.6.5, and the direct relation pattern |
+| An assertion designates the participants under declared SlotSpecs and states affirmative or negative polarity for the direct predicate; only when an explicit reliance judgment is current for the declared use does `A.10` or the receiving evaluation separately state supported, refuted, or unresolved reliance | an assertion episteme about the direct relation; an affirmative assertion may designate only an occurrence whose obtaining the direct owner already established; forecasts, scenarios, counterfactuals, permissions, and other claim families retain their exact governors | `C.2.1`, A.6.5, and the direct claim pattern; add `A.10` or the receiving evaluation only when a reliance judgment is current |
 | A typed claim ranges over all actual participants corresponding to one declared participant meaning | local C.3 kind whose extent rule selects those participants | `C.3` and `C.3.1` |
 
 These readings do not leave a fourth object called `RelationDefinedQualification`. Do not introduce that name or `E.24.RC`.
@@ -204,7 +206,7 @@ For a refrigerant transfer relation, the participant meanings may be upstream tr
 | Operation | Exact change | Governing boundary |
 |---|---|---|
 | supply a designation under one SlotSpec in an assertion or description | carry a value or reference that designates the actual participant admitted by that SlotSpec | A.6.5 governs designation typing; the direct relation pattern governs the participant meaning and predicate |
-| replace a participant designation in an assertion or description | change the designation associated with one SlotSpec while preserving that SlotSpec | resolve the new designation, then let a system evaluate the direct predicate by its governing method before recording assertion modality |
+| replace a participant designation in an assertion or description | change the designation associated with one SlotSpec while preserving that SlotSpec | resolve the new designation, then let a system evaluate the direct predicate by its governing method before recording assertion polarity and any separately governed reliance posture |
 | substitute a participant designation in typed reasoning | replace one designation with another while preserving the SlotSpec and testing ValueKind compatibility; this operation does not replace a world-side participant or establish predicate truth | A.6.5, with C.3 only when the reasoning quantifies over a local participant kind |
 | retarget a reference | replace one reference value in an episteme with another of the same RefKind | the receiving episteme's direct pattern governs its changed designation; the effective reference scheme supplies the resolution rules and the direct RefKind pattern constrains the referent range; F.18 enters only when a durable name changes; world-side change is a separate claim |
 | resolve a reference | obtain the designated referent from a reference under its reference scheme | the effective reference scheme supplies the resolution rules and the direct RefKind pattern constrains the referent range; F.18 enters only when durable naming is current |
@@ -224,7 +226,7 @@ After replacement, changing the `PartHolonSlot` designation from `Bearing_B_Ref`
 
 #### A.6.5:5.2 - Role-assignment assertion in inspection work
 
-In this worked case, the direct role-assignment predicate already obtains, and the positive assertion is warranted under `A.2.1`. The assertion designates the four required actual participants and may designate the explicitly individuated occurrence; it is not the `RelationSignature` and does not create the occurrence by being recorded. The following field block represents the assertion episteme under `C.29`:
+In this worked case, the direct role-assignment predicate already obtains, and affirmative assertion polarity is warranted under `A.2.1`; any reliance posture for a receiving use remains separately governed. The assertion designates the four required actual participants and may designate the explicitly individuated occurrence; it is not the `RelationSignature` and does not create the occurrence by being recorded. The following field block represents the assertion episteme under `C.29`:
 
 ```text
 RoleAssignmentAssertion:

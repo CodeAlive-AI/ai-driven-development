@@ -121,6 +121,8 @@ prioritize the FPF-governed sections and enforceable requirements in E.19:4.2.1.
    If the pattern defines specialization or an abstraction stack, it SHOULD NOT mix slot interfaces or parameters from different abstraction positions; use explicit `⊑/⊑⁺` or `Uses` cuts instead.
 9. **Substantive solution and locus adequacy**
    Baseline triage includes a small reviewed-pattern-specific question set about the actual problem and current change: does the pattern still solve the stated problem, are decision loci and governing-pattern applications correct, are kind boundaries and selected companion or projection functions preserved, did anything get worse, are SoTA rows current enough for the claim they discipline, and is the support material required by that claim neither too thin nor too heavy?
+10. **Triggered method, performer, work, and result separation**
+   When a method-bearing Solution prescribes actual work or world-side change, the run independently verifies the intended reader, method episteme, admitted performing `U.System` and current role assignment, dated `U.Work`, and problem-facing result. The run returns a finding when the pattern episteme, checklist, reader role, plan, or prose is made to perform the work, or when work and result are collapsed. Judgment-only guidance does not trigger fictive performer or work requirements.
 
 ##### E.19:4.2.1 - Triage: spend depth on FPF-governed sections without making reviews heavier
 
@@ -556,7 +558,8 @@ A missing candidate-only decision or basis is `absent or insufficient`; it never
 3. an executable proposed move;
 4. a first useful result rather than completed review apparatus;
 5. each prominent boundary or guard and the credible neighboring case whose action it changes; and
-6. guards that inspect an already present positive Solution instead of supplying its outline.
+6. guards that inspect an already present positive Solution instead of supplying its outline; and
+7. for a method-bearing Solution that prescribes actual work or world-side change, the intended reader, method episteme, admitted performing `U.System`, current role assignment under which that system performs the work, dated work, and problem-facing result as separately recoverable positions. Fail the item if the episteme, checklist, reader role, plan, or prose performs the work; leave it `not triggered` when the pattern only guides a judgment.
 
 Refine item 5 by boundary whenever boundaries can pass, fail, or route independently. Follow the short first-use rendering's action and result logic against a concrete situation. Merely finding words such as `situation`, `move`, `result`, or `stop` is not evidence. Record each failed item as an exact finding with remediation direction; do not replace the replay with one prose-quality impression.
 

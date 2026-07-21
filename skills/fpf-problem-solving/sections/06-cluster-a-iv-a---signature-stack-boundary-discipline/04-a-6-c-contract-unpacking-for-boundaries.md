@@ -4,10 +4,10 @@
 > **Status:** Stable
 > **Normativity:** Normative (unless explicitly marked informative)
 > **Placement:** Part A → **A.6 Signature Stack & Boundary Discipline**
-> **Builds on:** A.6 (stack + classification intent), **A.6.B** (L/A/D/E), **A.6.8 (RPR‑SERV)** (service‑cluster polysemy unpacking), **A.7** (EntityOfConcern, Description episteme, and carrier separation), **A.2.3** (`U.PromiseContent`), **A.2.8** (`U.Commitment`), **A.2.9** (`U.SpeechAct`), **A.15.1** (`U.Work`), **A.10** and **B.3** (evidence and assurance use), E.10 (`L-SERV` and `LEX-BUNDLE`), E.17 (MVPK “no new semantics” faces), F.12 (service acceptance and evidence discipline)
-> **Naming boundary:** **F.18** may provide durable names for recovered terms when naming is current; it does not govern the promise-content, speech-act, commitment, work, evidence, or boundary ontology.
+> **Builds on:** A.6 (stack + classification intent), **A.6.B** (L/A/D/E), **A.6.8 (RPR‑SERV)** (service‑cluster polysemy unpacking), **A.7** (EntityOfConcern, Description episteme, and carrier separation), **A.2.3** (`U.PromiseContent`), **A.2.8** (`U.Commitment`), **A.2.8.PER** (strong/weak permission, exercise, and conflict), **A.2.9** (`U.SpeechAct`), **A.15.1** (`U.Work`), **A.10** and **B.3** (evidence and assurance use), E.10 (`L-SERV` and `LEX-BUNDLE`), E.17 (MVPK “no new semantics” faces), F.12 (service acceptance and evidence discipline)
+> **Naming boundary:** **F.18** may provide durable names for recovered terms when naming is current; it does not govern the promise-content, speech-act, commitment, permission, work, evidence, or boundary ontology.
 > **Mint or reuse (terminology):** Reuses “contract”, “SLA”, and “guarantee” as Plain-level boundary shorthand; mints **Contract Bundle** as an unpacking lens (not a new entity kind), plus optional register columns (`bundleId`, `bundlePart`, and `faceRefs`). **NQD-front seeds (informative):** contract packet, agreement bundle, boundary bundle (chosen: *Contract Bundle* for low collision with existing “bundle” terms).
-> **Purpose (one line):** Prevent “contract soup” and agency misattribution by unpacking contract-language into distinct promise-content, utterance package, commitment, performed work, and carrier-referenced evidence as adjudication basis, then classifying each part into the Boundary Norm Square.
+> **Purpose (one line):** Prevent “contract soup” and agency misattribution by unpacking contract-language into distinct promise-content, utterance package, commitment or permission under separate direct owners, performed work, and carrier-referenced evidence as adjudication basis, then classifying each part into the Boundary Norm Square.
 
 ### A.6.C:1 — Problem frame
 
@@ -15,7 +15,7 @@ Boundary descriptions frequently use “contract” as a shorthand for “the th
 
 * **Promise-level intent** (what is promised to be true or provided),
 * **Published description** (what is written and versioned),
- * **Deontic commitment relation** (who is accountable for which obligations and permissions),
+* **Deontic governance results** (accountable obligations/recommendations/prohibitions as commitments, and strong/weak permission under its separate owner),
 * **Operational work and evidence** (what actually happens and what can be observed).
 
 When these layers are collapsed, authors accidentally assign agency to epistemes (“the interface guarantees…”), encode runtime gates as if they were internal laws, or treat observability as a property of text rather than of carriers and work. A.6 and A.6.B already provide an L/A/D/E claim-classification discipline for boundary claims, but “contract” language remains a recurring entry point for category mistakes.
@@ -26,8 +26,8 @@ A.6.C makes contract-language usable inside the A.6 stack by providing a canonic
 
 **Non‑goals (to preserve modularity).** A.6.C does **not**:
 * define “legal contract” doctrine (offer, acceptance, consideration, jurisdictional enforceability, etc.);
-* resolve conflicts between incompatible commitments across scales or contexts (capture them as separate `D-*` claims and apply conflict or mediation patterns when they exist);
-* redefine the core meanings of `U.PromiseContent`, `U.Work`, `U.SpeechAct`, or `U.Commitment`—it only makes “contract talk” classifiable into those objects or claims.
+* resolve conflicts between incompatible commitments or between a current grant and prohibition across scales or contexts (capture them as separate `D-*` claims and apply the direct commitment, permission-conflict, or mediation owner when it exists);
+* redefine the core meanings of `U.PromiseContent`, `U.Work`, `U.SpeechAct`, `U.Commitment`, or the exact `A.2.8.PER` results—it only makes “contract talk” classifiable into those objects or claims.
 * redefine quadrant semantics (`L/A/D/E`) or cross‑quadrant reference rules; those are defined normatively in A.6.B.
 
 ### A.6.C:2 — Problem
@@ -35,7 +35,7 @@ A.6.C makes contract-language usable inside the A.6 stack by providing a canonic
 How can an author write (or repair) contract-language so that:
 
 1. **Agency is not misattributed** to descriptions (signatures, docs, specs, “interfaces”),
-2. **Governance statements** (obligations and commitments) are distinguishable from **admissibility gates** and from **semantic laws**,
+2. **Governance statements** (obligation/recommendation/prohibition commitments and separately governed permission results) are distinguishable from **admissibility gates** and from **semantic laws**,
 3. **Operational “guarantees”** become adjudicable via explicit evidence expectations, without smuggling evidence into semantics,
 4. **Multi-view publication** (MVPK faces) does not create parallel Contract Bundles or rival canonical claim sets by paraphrase drift?
 
@@ -47,14 +47,14 @@ How can an author write (or repair) contract-language so that:
 | Ontological correctness    | “Contract” is a metaphor unless we explicitly locate who promises or commits and what can be evidenced.                                              |
 | Boundary diversity         | Software APIs, hardware connectors, protocols, and SLAs share the “contract” word but differ in what is adjudicated and how.                      |
 | Multi-view publication     | Faces are necessary for audience fit, but rephrasing easily creates new commitments.                                                              |
-| Adjudicability             | “Guarantee” claims must either be (i) semantic truths, (ii) deontic commitments, or (iii) evidenced properties—otherwise they are empty rhetoric. |
+| Adjudicability             | “Guarantee” claims must be (i) semantic truths, (ii) exact deontic commitment or permission results, or (iii) evidenced properties—otherwise they are empty rhetoric. |
 | Minimality                 | The unpacking should be lightweight enough to apply during routine authoring and review.                                                          |
 
 ### A.6.C:4 — Solution
 
 A.6.C introduces a **Contract Bundle** lens for boundary writing. It is not a new foundational entity kind; it is a disciplined way to interpret and rewrite contract-language under A.6.B.
 
-#### A.6.C:4.1 — The Contract Bundle (four-part unpacking)
+#### A.6.C:4.1 — The Contract Bundle (four positions; deontic position has two direct-result branches)
 
 Whenever a text uses “contract”, “guarantee”, “promise”, “SLA”, or “interface agreement” language, unpack it into four parts:
 
@@ -69,29 +69,30 @@ Whenever a text uses “contract”, “guarantee”, “promise”, “SLA”, 
 2. **Utterance Package (speech act + published descriptions)**
 
    * The work occurrence of stating, publishing, or approving (a `U.SpeechAct <: U.Work`, A.2.9) **and** the utterance descriptions it produces or updates (versioned **epistemes** on carriers) that carry the L/A/D/E-classified claim set.
-   * A speech act **may** institute or update commitments, but only under an explicit context policy that recognizes that `actType` as having such institutional force.
-   * The published utterance descriptions (signature or mechanism descriptions plus MVPK faces) carry L/A/D/E-classified claims. The act is not “the contract”; it is the work occurrence that created or updated the descriptions and (when recognized) the associated commitments.
-   * **Default interpretation rule (normative).** A conformant boundary model **MUST NOT** infer or assume any `U.Commitment` objects solely from the presence of a `Publish` or `Approve` `U.SpeechAct`. Publication creates or updates utterance descriptions and MAY institute publication claims or status claims (e.g., “Published”, “Approved as Standard”, “Deprecated”), but commitments exist only when represented explicitly as `U.Commitment` records (A.2.8).
-   * If a bounded context defines a policy that maps certain publish or approve act types to commitment-instituting effects (e.g., a named `SpecPublicationPolicy@Context`), the model **MUST** cite that policy, and any resulting commitments **MUST** still be represented explicitly as one or more `U.Commitment` objects with accountable subjects (not inferred from publication alone).
+   * A speech act **may** institute or update commitments or strong granted permissions, but only under an explicit context policy that recognizes that `actType` as having the corresponding institutional force.
+   * The published utterance descriptions (signature or mechanism descriptions plus MVPK faces) carry L/A/D/E-classified claims. The act is not “the contract”; it is the work occurrence that created or updated the descriptions and, when recognized, instituted the separately represented commitments or granted permissions.
+   * **Default interpretation rule (normative).** A conformant boundary model **MUST NOT** infer `U.Commitment` or `GrantedPermissionRelation@Context` occurrences solely from a `Publish` or `Approve` `U.SpeechAct`. Publication creates or updates utterance descriptions and MAY institute publication/status claims (for example, “Published”, “Approved as Standard”, or “Deprecated”), but commitments and strong grants exist only as explicit direct-owner objects under an exact context policy.
+   * If a bounded context defines a policy mapping publish or approve act types to deontic effects, the model **MUST** cite that policy. Resulting duties, recommendations-as-duty, or prohibitions **MUST** still be explicit `U.Commitment` objects with accountable subjects; resulting strong permissions **MUST** still be explicit `A.2.8.PER` grant occurrences with their exact beneficiaries and ground.
 
-3. **Commitment (Deontic accountability relation)**
+3. **Deontic governance (commitment and permission kept separate)**
 
-   * The accountable role assignment, `U.Role`, or admitted acting system bound to obligations, permissions, and prohibitions (including being accountable for satisfying a promise content).
-   * This bundle part is the **D‑side commitment object**: by default, one or more `U.Commitment` records (A.2.8).
-   * **Default checklist (A.2.8 minimal structure):**
+   * Accountable obligations, recommendations-as-duty, and prohibitions (including accountability for satisfying a promise content) are one or more explicit `U.Commitment` records under A.2.8.
+   * A strong grant, weak non-prohibition/non-violation finding, actual permission exercise, or permission conflict is an exact `A.2.8.PER` result. It is not stored in `U.Commitment.modality` and is not inferred from a permit carrier or `MAY` token.
+   * **Commitment-branch checklist (A.2.8 minimal structure):**
      * `id` (stable; often the `D-*` claim ID),
      * `subject` (accountable role or party; never an episteme),
-     * `modality` (normalized deontic token from the BCP-14 family),
+     * `modality` (the exact A.2.8 `DeonticModalityToken`: `MUST | MUST_NOT | SHOULD | SHOULD_NOT`),
      * `scope` (`U.ClaimScope`) and `validityWindow` (`U.QualificationWindow`),
      * `referents` (by reference or ID: promise content IDs like `SVC-*`, plus `L-*`, `A-*`, `MethodDescriptionRef(...)`, or `PromiseContentRef(...)` as needed),
      * optional `owedTo` (beneficiary or counterparty),
      * optional `adjudication.evidenceRefs` when the commitment is meant to be auditable (point to `E-*`),
      * optional `source` when authority or provenance matters (issuer + instituting `speechActRef` + description reference),
      * optional `notes` for explicitly informative commentary (not part of the binding).
+   * **Permission-branch pointer:** cite the exact selected `A.2.8.PER` grant, finding, exercise, non-violation, or conflict object and preserve its own schema, participants, and references; do not reuse the commitment checklist as a generic permission record.
    * A commitment is not “the spec text”: utterance descriptions carry the statement, but the binding is the `U.Commitment` object (A.7 and A.2.8).
 4. **Performed work and evidence (Adjudication substrate)**
 
-   * The executed work and the observable carriers and traces that can adjudicate whether a commitment was met.
+   * The executed work and observable carriers and traces that can adjudicate whether a commitment was met or whether actual work exercised a grant or was non-violating in the checked frame.
    * This is **E quadrant**: “what evidence is produced, exposed, or retained, under what conditions, and how it is interpreted”.
    * Work is not “the contract”; it is what makes any operational claim testable.
    * In FPF terms, evidence is normally expressed as **carrier-referenced `E-*` claims**, evidence paths, witness relations, or assurance claims governed by `A.10`, `B.3`, or the direct evidence pattern named by value.
@@ -103,18 +104,19 @@ After unpacking, classify each **atomic** statement using the Boundary Norm Squa
 * **Promise content → L/A (promise semantics + eligibility).**
   * Put meanings, invariants, and metric definitions for what is promised in **L** (`L-*` in signature laws and definitions).
   * Put “eligible, covered, or valid iff …” predicates as **A** (`A-*` admissibility or gate predicates), not as deontic obligations.
-* **Commitment → D (who is accountable).**
+* **Deontic governance → D (which direct result).**
   * Put “MUST, SHALL, or commits to …” statements as **D** (`D-*`), preferably as `U.Commitment` payloads (A.2.8).
+  * Put strong/weak permission, exercise, non-violation, and conflict statements as **D** with the exact `A.2.8.PER` result; do not convert them to commitment modality.
   * If compliance requires satisfying or enforcing a gate, the commitment **MUST** reference the relevant `A-*` ID(s) (D→A).
   * If the commitment is meant to be auditable, include evidence hooks by referencing `E-*` (D→E), preferably via `U.Commitment.adjudication.evidenceRefs`.
 * **Performed work and evidence → E (how we can tell).**
   * Put observable traces, audit records, measurement windows, and carrier semantics as **E** (`E-*`) with explicit carrier and observation or measurement conditions (A.6.B:5.4).
 **Keyword placement rule (canonical claim set).**
-Within the canonical L/A/D/E-classified claim set, BCP‑14 norm keywords (RFC 2119 + RFC 8174)—and their common synonyms (e.g., SHALL, REQUIRED, RECOMMENDED, OPTIONAL)—belong in **D** claims only, expressed as `U.Commitment.modality` and normalized per **A.2.8**. Authors **SHOULD** avoid using these keywords in **L/A/E** claims; phrase **L** as definitions or invariants (“is defined as…”, “holds iff…”), **A** as predicates (“is admissible iff…”), and **E** as observable/evidenced properties. If a BCP‑14 keyword (or synonym) appears in an **L/A/E** claim, it **SHOULD** be rewritten into predicate or definition form (or explicitly marked informative) before publication.
+Within the canonical L/A/D/E-classified claim set, BCP‑14 norm keywords (RFC 2119 + RFC 8174) and their common synonyms (for example SHALL, REQUIRED, RECOMMENDED, and OPTIONAL) are statement operators, not ontology selectors. `MUST`, `MUST NOT`, `SHOULD`, and `SHOULD NOT` route to `U.Commitment` only when the recovered claim is an accountable duty, recommendation-as-duty, or prohibition. `MAY` and `OPTIONAL` route to `A.2.8.PER` when the recovered claim is strong or weak permission; when they express only mechanism entry, rewrite the claim as an `A-*` predicate. Authors **SHOULD** avoid these keywords in **L/A/E** claims; phrase **L** as definitions or invariants (“is defined as…”, “holds iff…”), **A** as predicates (“is admissible iff…”), and **E** as observable/evidenced properties. If a BCP‑14 keyword or synonym appears in an **L/A/E** claim, it **SHOULD** be rewritten into predicate or definition form or explicitly marked informative before publication.
 
 A helpful rewrite rule:
 
-> If a sentence mixes “when allowed” + “who must comply” + “how we can tell”, decompose it into an **A** predicate, a **D** duty referencing that predicate, and an **E** evidence claim referencing that predicate (per A.6.B triangle decomposition).
+> First recover what “allowed” asserts: an entry condition becomes an **A** predicate; an actual strong/weak permission, exercise, non-violation, or conflict claim becomes **D** plus its exact `A.2.8.PER` object; an accountable duty to satisfy or enforce a gate becomes **D** plus `U.Commitment`; observable adjudication remains **E**. The keyword alone selects none, and references across these claims follow A.6.B.
 
 #### A.6.C:4.3 — “Guarantee” disambiguation
 
@@ -131,12 +133,11 @@ If none of these fits, the statement is likely rhetorical and should be rewritte
 A contract bundle has one canonical claim set. Publication faces are **views** of that set under viewpoints:
 
 * Faces may **select, summarize, and render** claims for audiences.
-* Faces must not **introduce new semantic commitments** beyond the underlying claim set.
+* Faces must not **introduce new semantic commitments or permission results** beyond the underlying claim set.
 * Any face-level decision-relevant or normative-looking statement **SHOULD** cite the underlying claim ID(s). If it cannot be traced to claim IDs, it **MUST** be explicitly presented as informative commentary.
 
 **Keyword rule (faces).**
-If a face contains BCP‑14 norm keywords (RFC 2119 + RFC 8174), including common synonyms (SHALL, REQUIRED, RECOMMENDED, OPTIONAL), then each such sentence MUST be a projection of an existing **D‑*** claim (`U.Commitment`) and MUST cite the underlying **D** claim ID(s).
-If a sentence cannot be traced to **D‑*** claim IDs, it MUST be rewritten to remove BCP‑14 keywords (e.g., turn it into explanatory prose that cites the relevant claim IDs) or moved out of the face.
+If a face contains BCP‑14 norm keywords (RFC 2119 + RFC 8174), including common synonyms such as SHALL, REQUIRED, RECOMMENDED, and OPTIONAL, each sentence MUST project an existing classified claim and cite its underlying claim ID. Duty/recommendation/prohibition projections cite the corresponding `D-*` and `U.Commitment`; permission projections cite the corresponding `D-*` and exact `A.2.8.PER` grant, finding, exercise, non-violation, or conflict result with that object's own participants and references. A face-level `MAY` or `OPTIONAL` cannot manufacture any direct object. If no underlying claim and direct object are traceable, the sentence MUST be rewritten to remove the keyword or moved out of the face.
 To avoid keyword‑evasion, equivalent deontic phrasings (e.g., “is required to…”, “is prohibited from…”) SHOULD follow the same trace-by-ID discipline even when no BCP‑14 keyword is present.
 
 Projection may be paraphrased for audience fit, but it **MUST NOT** change the deontic or semantic claim; if exactness is critical or disputed, use verbatim.
@@ -148,7 +149,7 @@ This prevents faces from becoming “second contracts” by paraphrase drift.
 Use the **A.6.B Claim Register** (IDs, statements, quadrant, and canonical location). Add two optional columns that make A.6.C auditable without adding new ontology:
 
 * `bundleId: ContractBundleId` (local stable ID grouping the claims that constitute one boundary “contract bundle”)
-* `bundlePart ∈ {PromiseContent, Utterance, Commitment, WorkEvidence}`
+* `bundlePart ∈ {PromiseContent, Utterance, Commitment, Permission, WorkEvidence}` (the deontic position has two direct-result branches)
 * `faceRefs = {PlainView|TechCard|InteropCard|AssuranceLane : …}` (where the claim is rendered)
 
 ### A.6.C:5 — Archetypal Grounding (Tell–Show–Show)
@@ -158,9 +159,9 @@ Use the **A.6.B Claim Register** (IDs, statements, quadrant, and canonical locat
 If you use contract-language for a boundary, do not treat “the interface or specification” as an acting system. Instead:
 
 1. Identify the **promise content** (promise content) being promised,
-2. Identify the accountable **Commitment** holder(s) (accountable role assignments or admitted acting systems),
+2. Identify the accountable **Commitment** holder(s) for a duty/recommendation/prohibition branch; when permission is current, identify the exact `A.2.8.PER` grant, finding, exercise, non-violation, or conflict result and preserve that object's own participants and references,
 3. Identify the **Utterance** surfaces that publish the boundary (signature or mechanism descriptions plus MVPK views),
-4. Identify the **Performed work and evidence** carriers that could adjudicate whether commitments were met,
+4. Identify the **Performed work and evidence** carriers that could adjudicate whether commitments were met or whether actual work exercised a grant or was non-violating in the checked frame,
 5. Classify each claim through **L/A/D/E** and reference across quadrants rather than paraphrasing.
 
 #### A.6.C:5.2 — Show (System archetypes)
@@ -193,6 +194,18 @@ If you use contract-language for a boundary, do not treat “the interface or sp
 * **A:** admissibility predicate: power delivery is admissible only after handshake state reaches an agreed mode.
 * **D:** manufacturer or integrator obligations: implement handshake; enforce voltage constraints.
 * **E:** evidence: test-report carriers; measurement traces; observable negotiation logs (if exposed), or lab measurements under a declared method.
+
+**(B-PER) Compact permission replay (only when the permission branch is live)**
+
+*Situation:* “ReleaseAuthority approved Operator-A to deploy Release-4711; deployment is allowed after preflight.”
+
+**Unpack + classify:**
+
+* **Utterance and institution:** the dated `Approve` speech-act occurrence `SA-4711`, performed by the exact grantor assignment under current `ReleaseGrantPolicy`, institutes—not merely publishes—the separately represented grant occurrence `PER-4711`. Approval text without that policy and act does not create the grant.
+* **D — permission result:** `GrantedPermissionRelation@Context` names beneficiary `RoleAssignmentRef(Operator-A)` and `permittedActionSpecificationRef = U.EpistemeRef(Deploy-Release-4711)`; `SA-4711`, the grantor assignment, policy, context, scope, and window remain ground or qualifiers. If the available basis establishes only current absence of prohibition, record `NonProhibitionFinding@Context` instead and do not promote it to a strong grant.
+* **A — independent entry predicate:** “deployment is admissible iff `PER-4711` currently obtains and preflight is green” is an `A-*` predicate. It may consume the grant as one condition but is neither the grant nor proof of gate passage.
+* **Work and exercise:** only after later dated actual `U.Work` occurrence `DeployRun-4711` exists, instantiates the action specification, matches the beneficiary branch, and stays inside the grant's scope and window may `PermissionExerciseRelation@Context` bind `WorkRef(DeployRun-4711)` to `U.EntityRef(PER-4711)`. Planned work, the approval wording, and preflight alone are not exercise.
+* **E:** speech-act, policy-edition, grant-occurrence, preflight, work, and observation carriers support the classified claims without replacing their direct objects.
 
 #### A.6.C:5.3 — Show (Episteme archetypes)
 
@@ -237,7 +250,7 @@ Lenses tested: **Gov**, **Arch**, **Ontological and Epistemic**, **Prag**, **Did
 A boundary description conforms to A.6.C iff it satisfies all items below:
 
 1. **CC‑A.6.C‑1 (Unpacking when contract-language appears).**
-   If the text uses “contract”, “guarantee”, “promise”, or “SLA” language, it **SHALL** explicitly disambiguate the statement as referring to at least one of: **Promise content (promise content)**, **Utterance (published description)**, **Commitment (deontic binding)**, **Performed work and evidence (adjudication)**.
+   If the text uses “contract”, “guarantee”, “promise”, or “SLA” language, it **SHALL** explicitly disambiguate the statement as referring to at least one of: **Promise content**, **Utterance** (published description), **Commitment** (duty/recommendation/prohibition), **Permission** (exact `A.2.8.PER` result), or **Performed work and evidence** (adjudication).
 
 2. **CC‑A.6.C‑2 (No agency to epistemes).**
    The text **MUST NOT** attribute promising, committing, or obligating agency to signatures, mechanisms, interfaces, or documents. Any duty or commitment **SHALL** name an accountable role assignment, `U.Role`, or admitted acting system.
@@ -253,25 +266,25 @@ A boundary description conforms to A.6.C iff it satisfies all items below:
    If a “guarantee” is operational (requires reality to decide), the text **SHALL** include an **E** claim that states what evidence would adjudicate it, with the evidence carrier or evidence claim named when current.
 
 6. **CC‑A.6.C‑6 (No second contracts via faces).**
-   MVPK faces **MUST NOT** add new commitments beyond the underlying L/A/D/E-classified claims; faces may only project, summarize, or select from the canonical claim set under a viewpoint.
+   MVPK faces **MUST NOT** add new commitments or permission results beyond the underlying L/A/D/E-classified claims; faces may only project, summarize, or select from the canonical claim set under a viewpoint.
 
 7. **CC‑A.6.C‑7 (RFC‑keyword discipline inside faces).**
-   If an MVPK face contains BCP‑14 norm keywords, each BCP‑14 sentence **MUST** cite the underlying **D‑*** claim ID(s) (`U.Commitment`) it is projecting. If it cannot, the face is non‑conformant until rewritten (no BCP‑14 keyword) or moved out of the face.
+   If an MVPK face contains BCP‑14 norm keywords, each sentence **MUST** cite the underlying classified claim ID and direct object: `U.Commitment` for duty/recommendation/prohibition or the exact `A.2.8.PER` result for permission. If it cannot, the face is non-conformant until rewritten without the BCP‑14 keyword or moved out of the face.
 
 8. **CC‑A.6.C‑8 (No commitment-by-publication default).**
-   A `Publish` or `Approve` utterance (including publishing a `…Spec`) MUST NOT be treated as instituting `U.Commitment` objects by default. If a Context policy maps publication acts to binding effects, the policy SHALL be cited, and any resulting bindings SHALL still be represented explicitly as `U.Commitment` objects with accountable subjects.
+   A `Publish` or `Approve` utterance, including publication of a `…Spec`, MUST NOT be treated as instituting `U.Commitment` or `GrantedPermissionRelation@Context` by default. If a Context policy maps publication acts to deontic effects, the policy SHALL be cited; every resulting duty/recommendation/prohibition remains an explicit `U.Commitment` with an accountable subject, and every resulting strong grant remains an explicit `A.2.8.PER` relation occurrence with its exact beneficiary and ground.
 
 ### A.6.C:8 — Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern                                        | Why it fails                                                   | Repair                                                                                      |
 | --------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | **Interface-as-promiser** (“the API promises…”)     | Epistemes and publication carriers are descriptions; they do not commit                 | Name the committing role assignment or admitted acting system; classify as a D claim; keep the API, signature, or interface description as description episteme or publication carrier |
-| **Guarantee-without-substrate**                     | “Guarantee” is empty unless it is L, D, or E                   | Decide: semantic law (L), deontic commitment (D), or evidenced property (E)                 |
+| **Guarantee-without-substrate**                     | “Guarantee” is empty unless it is L, D, or E                   | Decide: semantic law (L), exact commitment or permission result (D), or evidenced property (E) |
 | **SLA smuggled into laws**                          | Mixes governance with semantics; breaks substitution reasoning | Put SLA targets as D claims referencing L-defined metrics and E evidence                    |
 | **Gate written as obligation**                      | Confuses admissibility predicates with duties                  | Write predicate as A; write duty-to-gate as D→A reference                                   |
 | **Evidence as prose property** (“document proves…”) | Violates EntityOfConcern, Description episteme, and carrier                            | State evidence as E claims about carriers produced or observed in work                         |
-| **Face-level paraphrase drift**                     | Creates multiple incompatible contracts                        | Faces should reference canonical claims; keep commitments centralized                       |
-| **Cross‑scale contract collapse**                   | Different agents claim incompatible “contracts” at different scales or contexts | Represent each as separate, scoped `D-*` claims (with accountable roles + Context); apply conflict or mediation patterns rather than collapsing them into one “contract”. |
+| **Face-level paraphrase drift**                     | Creates multiple incompatible contracts                        | Faces should reference canonical claims; keep commitments and permission results with their direct owners |
+| **Cross‑scale contract collapse**                   | Different agents claim incompatible “contracts” at different scales or contexts | Represent each as separate, scoped `D-*` claims with accountable roles or exact permission beneficiaries plus Context; apply `A.2.8.PER` for a grant/prohibition conflict and the exact commitment, conflict, or mediation owner rather than collapsing them into one “contract”. |
 
 ### A.6.C:9 — Consequences
 
@@ -290,7 +303,7 @@ A boundary description conforms to A.6.C iff it satisfies all items below:
 
 FPF already distinguishes signatures, mechanisms, and work and evidence layers. Contract-language is a high-frequency linguistic entry point that collapses these layers unless a disciplined unpacking is applied.
 
-F.18 may supply durable names for recovered terms when naming is current, but it does not provide the ontology. A.6.C makes the boundary split operational: promise content, speech act or utterance package, deontic commitment, performed work, and carrier-referenced evidence as the adjudication basis. This keeps “contract” language classifiable under A.6.B and compatible with MVPK multi-view discipline without relocating ontology into the naming chapter.
+F.18 may supply durable names for recovered terms when naming is current, but it does not provide the ontology. A.6.C makes the boundary split operational: promise content, speech act or utterance package, deontic commitment or separately governed permission result, performed work, and carrier-referenced evidence as the adjudication basis. This keeps “contract” language classifiable under A.6.B and compatible with MVPK multi-view discipline without relocating ontology into the naming chapter.
 
 ### A.6.C:11 — SoTA‑Echoing (informative; post‑2015 alignment)
 
@@ -315,6 +328,7 @@ F.18 may supply durable names for recovered terms when naming is current, but it
   * **A.7** (EntityOfConcern, Description episteme, and carrier) for correct placement of evidence claims.
   * **F.12** (service acceptance) for structuring how promise-level commitments connect to evidence and acceptance windows.
   * **E.17** MVPK “no new semantics” rule to prevent publication faces from becoming new contracts.
+  * **A.2.8.PER** for strong/weak permission, exercise, non-violation, and conflict results kept outside `U.Commitment`.
 
 ### A.6.C:End
 
