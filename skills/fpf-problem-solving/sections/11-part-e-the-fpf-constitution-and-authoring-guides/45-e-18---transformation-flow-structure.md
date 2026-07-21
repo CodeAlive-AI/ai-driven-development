@@ -56,9 +56,9 @@ When a sentence says that a system performs a functional transformation at one p
 
 ### E.18:2 - Problem frame
 
-Teams can produce many **well-typed flow valuations** for transformations of the same context holon under `VP.Functional`, for example for a declared `U.Capability` or transformation claim. The holon is the described context object; the E.18 `EntityOfConcern` remains the selected `TransformationFlowStructure` over transformations and adjacent governed loci. The P2W reference path is:
-`U.Signature(profile=FormalSubstrate) -> U.PrincipleFrame -> U.Mechanism -> U.ContextNormalization (UNM) -> SelectionAndTuning locus (selector relation governed by G.5) <-> WorkPlanning locus (A.15.2 U.WorkPlan or plan-item relation) -> U.Work -> EvaluatingAndRefreshing locus (refresh relation governed by G.11)`
-is one **path** among many possible domain-specific transformation-flow paths. Without a common **structure discipline**:
+Teams can produce many **well-typed flow valuations** for transformations of the same context holon under `VP.Functional`, for example for a declared `U.Capability` or transformation claim. The holon is the described context object; the E.18 `EntityOfConcern` remains the selected `TransformationFlowStructure` over transformations and adjacent governed positions.
+
+`E.18.1 P2W Problem-to-Work Carry-Through` begins with an accepted `ProblemCard@Context` claim and carries it into whichever directly governed method, planning, work, result, interpretation, stop, branch, or local-return relation becomes current. It does not prescribe one path. A first-principles specialization may traverse a path such as `U.Signature(profile=FormalSubstrate) -> U.PrincipleFrame -> U.Mechanism -> U.ContextNormalization (UNM) -> selector relation -> U.WorkPlan or plan-item relation -> U.Work -> evaluation or currentness relation`; that is one possible transformation-flow path, not the definition of P2W. Without a common **structure discipline**:
 
 * flows look ad-hoc and **non-comparable**;
 * cross‑Context **crossings** (plane or Context changes) are undocumented;
@@ -79,7 +79,7 @@ MVPK already fixes publication drift at the **single-arrow** scope; E.18 lifts t
 
 | Force                                            | Tension                                                                                                                                                                    |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Universality vs specialization**               | One architecture covers supply chains, water networks, ML functionals, and the P2W first-principles-to-work path, **without** baking in any one morphism set. |
+| **Universality vs specialization**               | One architecture covers supply chains, water networks, ML functionals, general P2W problem-to-work carry-through, and a first-principles P2W specialization, **without** baking in any one morphism set. |
 | **Publication neutrality vs auditability**       | Keep faces notation‑neutral and non‑mechanistic while requiring **pins**, **ComparatorSet**, **Bridge and CL**, and **PublicationScope**.                                            |
 | **Set-return discipline vs business pressure for totals** | Preserve **return sets and declared partial orders** ↔ stakeholders demand single numbers.                                                                                     |
 | **Cross‑Context reuse vs safety**                | Enable reuse across `U.BoundedContext` while requiring **Bridge and CL** with **R‑only penalties**.                                                                                  |
@@ -95,7 +95,7 @@ Define a **typed, editioned transformation-flow structure**
 `TransformationFlowStructure := (Loci, Transfer, tau_L, tau_Transfer, Gamma_time, Bridge, CL, TransportRegistry^Phi)`
 with:
 
-* **Loci:** structure-positioned loci or bindings to governed FPF values (open world). Common specialisations **include but are not limited to** the P2W illustrative set: bounded `U.Transformation`, `U.Signature(profile=FormalSubstrate)`, `U.PrincipleFrame`, `U.Mechanism`, `U.ContextNormalization (UNM)`, `SelectionAndTuning` locus governed by current selector and comparator patterns, `WorkPlanning` locus governed by `A.15.2 U.WorkPlan` or a plan-item relation, `U.Work`, and `EvaluatingAndRefreshing` locus governed by current refresh and evaluation patterns. This list is **illustrative**, not exhaustive. A locus may be expressed by a morphism, graph vertex, tuple position, or category-theoretic object under a mathematical lens when that lens is current, but E.18 does not make every locus a `U.Morphism`, graph vertex, or `U.Transformation`.
+* **Loci:** structure positions or bindings to governed FPF values (open world). Common specialisations **include but are not limited to** one first-principles P2W example: bounded `U.Transformation`, `U.Signature(profile=FormalSubstrate)`, `U.PrincipleFrame`, `U.Mechanism`, `U.ContextNormalization (UNM)`, a selector relation governed by current selector and comparator patterns, `A.15.2 U.WorkPlan` or a plan-item relation, `U.Work`, and current evaluation or currentness relations. This list is **illustrative**, not exhaustive, and none of its entries is mandatory for general P2W. A structure position may be expressed by a morphism, graph vertex, tuple position, or category-theoretic object under a mathematical lens when that lens is current, but E.18 does not make every position a `U.Morphism`, graph vertex, or `U.Transformation`.
 * **Transfer relation:** a **single relation kind `U.Transfer`** (typed) carrying carrier refs and token refs; all **plane, Context, and edition** changes occur **only at loci via `OperationalGate(profile)`** with **Bridge and CL** annotations; penalties **-> R only**. Transport conversions pin **Phi-policies** and editions.
 * **Scopes:** `Gamma_time` (budgets, horizons), `PublicationScope` for faces (E.17), and **slice ids** for refresh (G.11).
 
@@ -157,7 +157,7 @@ with:
 * `U.Transfer` preserves `CtxState` (`⟨L,P,E⃗,D⟩`) and carries **Assurance‑operations** only (see S3b); any crossing of locus, plane, edition, or `T^D↔T^R` is placed at `OperationalGate(profile)`.
 * A **PathSlice** is a **slice‑scoped execution window** used for refresh and telemetry; faces pin `PathSliceId`; **re‑emission** happens when any pinned edition changes or `SliceRefresh` is triggered by sentinel rules.
 
-> **Consequences.** The P2W reference flow is simply one `p` in `TransformationFlowStructure`. Other domains (supply chain, water network, NN functional) instantiate different `p` on the **same selected-structure pattern**.
+> **Consequences.** One P2W use may cite one path `p` in a `TransformationFlowStructure` when the receiving use relies on explicit path structure. The `ProblemToWorkCarryThroughRelation@Context` itself remains governed by E.18.1 and is not identical to that path. Other domains, including supply chains, water networks, and neural-network function structures, may instantiate different paths under E.18.
 >
 **Why "flow = valuation" preserves the ordinary "some state changes" intuition**
 There are two complementary perspectives:
@@ -325,7 +325,7 @@ This is an expandable list of viewpoint families; E.18 is intentionally viewpoin
 5. Do not name transformation-flow loci by operands or output states; an operation is not its operand or output state.
 6. `TypicalEnactorRoleName` can be added for pedagogy; it is not used as a GateFit role because GateFit uses `U.Role` only.
 7. Morphology: ASCII TitleCase; conjunctions use `And`; for composite operation labels use `XingAndYing` or `XAndYing` when grammar calls for it.
-8. The P2W illustrative locus row (`U.Signature(profile=FormalSubstrate)` through `EvaluatingAndRefreshing` locus with functional or procedural labels and `TypicalEnactorRoleName`) is informative and does not change kind or viewpoint semantics.
+8. The first-principles illustrative row used by one P2W case (`U.Signature(profile=FormalSubstrate)` through current evaluation or currentness relations) is informative. It neither defines general P2W nor changes kind or viewpoint semantics.
 
 **Conditional deliverable — `UTS.ViewpointMap` (TEVB-aligned when current).**
 
@@ -356,7 +356,7 @@ Publish a UTS block named `ViewpointMap` only when an engineering or publication
 
 ### E.18:6 - Archetypal Grounding (Tell–Show–Show; concise)
 
-*Tell (P2W reference path).* A first-principles-to-work path is one path through the selected transformation-flow structure, not the whole structure itself: `U.Signature(profile=FormalSubstrate)` declaration, principle frame, mechanism, normalization, selection, planning, work enactment, and refresh are represented as loci linked by one `U.Transfer` relation kind, with crossings pinned where context, plane, edition, or design-run state changes.
+*Tell (one first-principles P2W specialization).* A first-principles-to-work path is one path through a selected transformation-flow structure, not P2W as a whole: `U.Signature(profile=FormalSubstrate)` declaration, principle frame, mechanism, normalization, selection, planning, work enactment, and current evaluation or currentness relations occupy exact governed positions. `E.18.1` separately carries the accepted problem-side claim through whichever of those relations becomes current.
 
 *Show-A (Supply chain).* Loci: procurement -> inbound QC (UNM) -> selection (supplier set; declared order) <-> planning (lotting and schedule; budget) -> execution (receipts; **WorkEnactment enacts world-contact**) -> refresh (quality telemetry; affected faces re-emitted). Crossings: vendor Context via **Bridge and CL**; penalties appear **in R only**; comparators pinned to CG-Spec edition.
 
@@ -455,7 +455,7 @@ Publish a UTS block named `ViewpointMap` only when an engineering or publication
 | Graph expression as selected structure | A mathematical graph, morphism chain, or tool pipeline is treated as the `TransformationFlowStructure` itself. | Separate selected structure from mathematical description; use `E.18.2` and `C.29` when lens adequacy is live. |
 | Flow as performed work | A valuation or path is treated as a work occurrence or work procedure. | Keep work planning and performed work with the A.15 family. |
 | Gate everywhere | Internal step validity, crossing, launch, and gate-decision publication are collapsed. | Use `A.20` for internal constraint validity and `A.21` for gate fit, aggregation, decision, and publication. |
-| Publication face as evidence | An MVPK face or dashboard view is treated as evidence, gate passage, release authorization, or deontic permission. | Use `E.17`, `A.10`, `A.21`, `A.2.8`, `A.2.9`, or release-governing patterns according to the claim being made. |
+| Publication face as evidence | An MVPK face or dashboard view is treated as evidence, gate passage, release authorization, or deontic permission. | Use `E.17` for publication, `A.10` for evidence/currentness, `A.21` for gate effects, `A.2.9` for an issuing act, `A.2.8.PER` for strong/weak permission, exercise, non-violation, or conflict, `A.2.8` only for an actual duty/recommendation/prohibition commitment, and the direct release owner for release. |
 | Whole-flow refresh | Any small edition, source-use relation, or source-publication relation change triggers a whole-structure rewrite. | Refresh the smallest affected path slice, crossing, edition pin, source-use relation, source-publication relation, or publication face. |
 
 ### E.18:8 - Gating Profiles (applied to E.18)
@@ -567,7 +567,7 @@ When a selected structure locus, selected path, path slice, substructure, or flo
 
 ### E.18:15a - E.18.1 P2W Child-Pattern Relation
 
-`E.18.1` is a child pattern for principles-to-work carry-through. It inherits this pattern's selected structure, path, flow-valuation, transfer, crossing, and gate minimum, then adds the local P2W relation from an accepted problem-side record or accepted `ProblemCard@Context` plus carried distinction to the next FPF kind named by value, relation, record, or application. In this split, `E.18.1` carries P2W specialization examples and P2W relation guidance; `E.18` carries the selected-structure invariants and this short child-pattern relation.
+`E.18.1` is a child pattern for problem-to-work carry-through. It governs the local P2W relation from an accepted `ProblemCard@Context` and carried ClaimGraph content to one next directly governed value or relation. A P2W use consumes this pattern's selected-structure discipline only when a named receiving use relies on an explicit `TransformationFlowStructure`, path, flow valuation, transfer, crossing, or gate position; when branches, joins, guards, or governing-pattern positions must be recoverable, `E.18.3` governs that fuller structure. In this split, `E.18.1` carries the accepted problem-side claim and local continuation, while `E.18` carries selected transformation-flow structure without making it mandatory for ordinary P2W use.
 
 ### E.18:15b - E.23 Improvement-Loop Boundary Relation
 

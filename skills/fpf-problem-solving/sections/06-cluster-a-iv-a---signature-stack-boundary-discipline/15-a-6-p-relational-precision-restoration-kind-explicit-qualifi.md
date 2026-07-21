@@ -357,6 +357,8 @@ If any participant or qualifier implies cross‑Context or cross‑plane reuse, 
 
 #### A.6.P:4.4 — Change‑class lexicon (operations are not adjectives)
 
+**Assertion-family boundary (normative).** The direct relation owner determines whether the relation obtains for the named participants, independently of assertions and evidence. A relational assertion is a `C.2.1` episteme that either affirms or denies that exact direct obtaining predicate and names the exact direct claim-family reference when one is current. `A.10` and the receiving evaluation separately record whether reliance on that assertion is supported, refuted, or unresolved for the declared use. `unresolved` is not a third obtaining value; denial, refutation, or unresolved reliance creates no negative relation occurrence. Revising an assertion or its reliance posture therefore uses its claim or evidence owner and is not `declareRelation`, `withdrawRelation`, or another world-side relation-change class.
+
 A RPR‑pattern SHALL publish a **relation‑change lexicon**: a small set of semantic change classes used in normative prose to describe “what changed” without umbrella verbs.
 
 Minimum semantic change classes (conceptual; specialisations may add more):

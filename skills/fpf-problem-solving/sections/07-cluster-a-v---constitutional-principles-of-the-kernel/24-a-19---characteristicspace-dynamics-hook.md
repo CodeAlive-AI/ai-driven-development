@@ -427,9 +427,9 @@ Dynamical-systems and state-space practice supplies the useful hook: a dynamics 
 
 > If topology, order, distance, product, subspace, embedding, or metric is only a `CharacteristicSpace` overlay, stay in `A.19` and write the space, coordinate, normalization, and comparability declaration there. If the overlay is used as a mathematical lens to explain, predict, bridge, assure, publish, compare across contexts, or carry a reusable explanation claim beyond local declaration, add the applicable `C.29` lens-use result for the stated lens use. Do not move the space declaration out of `A.19`; `C.29` names only what the mathematical lens preserves, loses, makes visible, and cannot license.
 
-### A.19:12.2 - Source Role and Currentness
+### A.19:12.2 - Source-use basis and currentness
 
-A.19 is primarily internal-kernel doctrine, not an external SoTA-import pattern. Its authority for `U.CharacteristicSpace` comes from the accepted FPF chain: `A.17` for `U.Characteristic`, `A.18` for scale and value discipline, `C.16` for measurement and coordinate evidence, `A.19.UNM` for normalization methods, `C.29` when a mathematical lens is being used beyond local space declaration, and `E.24` for ontic-head and slot-relation discipline.
+A.19 is primarily internal-kernel doctrine, not an external SoTA-import pattern. The accepted FPF basis for `U.CharacteristicSpace` is the chain of `A.17` for `U.Characteristic`, `A.18` for scale and value discipline, `C.16` for measurement and coordinate evidence, `A.19.UNM` for normalization methods, `C.29` when a mathematical lens is used beyond local space declaration, and `E.24` for ontic-head and slot-relation discipline.
 
 Currentness is therefore inherited through that chain. Reopen A.19 when any governing pattern in that chain changes characteristic identity, scale semantics, value-set meaning, missingness semantics, normalization admissibility, comparability, bridge discipline, mathematical-lens boundary, or ontic slot discipline. Do not reopen A.19 merely because one consumer pattern adds a new score table, dashboard, evaluation report, certification interface, or portfolio view that uses a declared `CharacteristicSpace`.
 

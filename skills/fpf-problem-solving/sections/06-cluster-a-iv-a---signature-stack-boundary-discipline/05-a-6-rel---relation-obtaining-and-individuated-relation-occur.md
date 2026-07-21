@@ -23,7 +23,7 @@
 
 **What this buys.** Engineers can keep ordinary relation assertions readable. When a receiving use depends on exactly one occurrence, a system performing comparison or evaluation work can distinguish repetition, change, or constitution while assertions, descriptions, designations, representations, and publication occurrences retain their own identities.
 
-**Not this pattern when.** If the wording does not yet identify the direct relation and participants, start with `A.6.P` or `A.6.RSIR`. If the current assertion content is negative, modal, or still unresolved, keep that modality in a relational assertion under `C.2.1`; do not invent an obtaining occurrence. If the question concerns only the SlotSpecs of a reusable relation declaration, apply `A.6.5`. If no named receiving use depends on occurrence identity, stop at the direct relation sentence.
+**Not this pattern when.** If the wording does not yet identify the direct relation and participants, start with `A.6.P` or `A.6.RSIR`. If the only current basis is an assertion that denies the direct obtaining predicate or belongs to a forecast, scenario, counterfactual, permission, or another separately governed claim family, keep the claim episteme under `C.2.1` and its exact direct claim governor; none of those claim-side facts invents an obtaining occurrence. Only when an explicit reliance judgment is current for the declared use, keep its supported, refuted, or unresolved reliance result separately under `A.10` or the receiving evaluation; that reliance result likewise does not establish obtaining. When the direct relation owner independently establishes obtaining, A.6.REL remains available if a named receiving use needs occurrence identity. If the question concerns only the SlotSpecs of a reusable relation declaration, apply `A.6.5`. If no named receiving use depends on occurrence identity, stop at the direct relation sentence.
 
 ### A.6.REL:2 - Problem
 
@@ -124,7 +124,7 @@ In the world-side relation, the actual entities participate directly under the r
 | Canonical FPF name | What this object is | Direct relation to preserve | Naming rule | Direct governing pattern |
 |---|---|---|---|---|
 | **relation-participant designation** | a value or governed reference in a receiving episteme; it retains its own value kind or RefKind | denotes the actual relation participant corresponding to one SlotSpec | use the SlotKind as the representation field label and the participant's own value or reference designator as the field value; the field value is not renamed as a participant kind | `C.2.1`, `A.6.5`, and `F.18` when durable naming is current |
-| **relational assertion** | a claim-bearing `U.Episteme` | its content states a modality for the direct obtaining predicate with relation-participant designations; a positive assertion may also designate an already individuated occurrence | name the asserted direct relation and its modality; a durable assertion-family name makes the relation kind and assertion reading recoverable | `C.2.1` and the direct claim pattern |
+| **relational assertion** | a claim-bearing `U.Episteme` | its content states affirmative or negative assertion polarity for the direct obtaining predicate with relation-participant designations; an affirmative assertion may also designate an already individuated occurrence only after the direct relation owner independently establishes obtaining; a forecast, scenario, counterfactual, permission, or other claim family keeps its own direct semantics, while supported, refuted, or unresolved reliance belongs to `A.10` or the receiving evaluation | name the asserted direct relation and its polarity; name the exact direct claim family whenever ordinary affirmation or denial is insufficient | `C.2.1`, the direct claim pattern, and `A.10` or the receiving evaluation for reliance |
 | **relation-occurrence description episteme** | a `U.Episteme` whose EntityOfConcern is one explicitly individuated relation occurrence | describes that occurrence without replacing it or supplying its identity | use `description of <relation-occurrence designator>` in readable prose; give a reusable description-episteme kind its own governed name only when another use depends on that kind | `C.2.1` |
 
 A receiving episteme can therefore contain a representation field whose label corresponds to a SlotKind and whose value is a relation-participant designation. That designation denotes an actual participant. The actual participant remains a `U.Entity`, and the obtaining relation occurrence remains a `U.Relation`. The receiving episteme keeps its own identity under `C.2.1`.
@@ -174,7 +174,7 @@ Here **receiving use** is a Plain head, not a common FPF kind. Resolve it to the
 
 1. Name the direct relation kind and participants in a readable sentence.
 2. Recover the direct governing pattern, relation obtaining predicate, relation-participant meanings, actual relation participants, applicability, and relation occurrence-identity rule. Cite the established settlement rather than restating it unless this use introduces or changes one of those objects. Recover the `RelationSignature` SlotSpecs only when typed assertion or description reuse is current.
-3. Check whether the direct relation obtains and the named participants jointly satisfy the predicate. If the relational assertion content is negative, modal, or unresolved, no obtaining occurrence is available for individuation; return to the direct claim pattern or `A.6.P`.
+3. Check through the direct relation owner whether the relation obtains and the named participants jointly satisfy the predicate. A denial, a forecast, scenario, counterfactual, permission, or another separately governed claim, and supported, refuted, or unresolved reliance do not establish an obtaining occurrence; do not infer occurrence identity from any of them. Individuate only an occurrence whose obtaining the direct owner establishes, or return to the exact direct claim pattern or `A.6.P`.
 4. Ask whether the named receiving assertion or description episteme, direct relation, or operation-application assertion episteme depends on this occurrence being distinguishable from another.
 5. If not, keep the readable assertion and stop. Do not create a relation-occurrence description episteme for completeness.
 6. If yes, apply the direct identity rule and explicitly individuate one occurrence.
@@ -203,7 +203,7 @@ A changed episteme contributes to occurrence identity only when that episteme it
 
 #### A.6.REL:4.4 - Separate occurrence, assertion, reifier, relator, description, and publication
 
-A relational assertion is an episteme whose content states that the direct relation obtains, does not obtain, or has another modality. The assertion can be revised or superseded while the world-side relation remains unchanged.
+A relational assertion is an episteme whose content affirms or denies the direct obtaining predicate for the designated participants. Forecast, scenario, counterfactual, permission, and other claim families keep their exact direct governors rather than entering one common catch-all field; `A.10` or the receiving evaluation separately states supported, refuted, or unresolved reliance. The assertion and its reliance posture can be revised or superseded while the world-side relation remains unchanged.
 
 A reifier is a representation-side term or node. A system may use it to represent statements about a proposition, assertion episteme, or relation-occurrence description episteme. Its presence does not make the direct relation obtain and is not a world-side occurrence-identity rule.
 
@@ -225,7 +225,7 @@ This is demand-driven progressive elaboration within the Solution, not a draftin
 
 ```text
 readable direct relation assertion with named participants
-  +-- direct obtaining and predicate-satisfaction check, when positive modality or occurrence use is current
+  +-- direct obtaining and predicate-satisfaction check, whenever occurrence use is current; affirmative assertion polarity alone does not supply obtaining
   +-- RelationSignature and SlotSpecs, when typed reuse matters
   +-- explicit occurrence individuation, when a named receiving use needs identity
       +-- relation-occurrence description episteme, when a receiving episteme describes the occurrence
@@ -305,7 +305,7 @@ Engineers can easily picture relation instances through data-model examples. The
 2. The text does not conflate relation obtaining, predicate satisfaction, root-kind admission, explicit-individuation work, identifier assignment, and reference use.
 3. Root `U.Relation` admission is governed by `E.24.UK` from the common `A.6.REL` discipline and the relation-specific witness supplied by each direct relation pattern; project use does not repeat the admission decision.
 4. The current use names one receiving assertion or description episteme, direct relation, or operation-application assertion episteme whose dependence on a distinguishable occurrence makes explicit occurrence identity necessary.
-5. A negative, modal, or unresolved assertion does not create an obtaining occurrence.
+5. A denial, a separately governed non-actual claim, or unresolved reliance does not create an obtaining occurrence; affirmative polarity alone does not create one either.
 6. The direct governing pattern declares the occurrence-identity rule.
 7. Participant-determined identity is used only when the direct ontology establishes that the same participant identities cannot recur in distinct occurrences of that relation kind.
 8. When the same participants can recur, the direct pattern declares the domain discriminator; maximal continuous obtaining interval and constituting work are possible choices only when that pattern includes them in the occurrence-identity rule.
@@ -334,11 +334,11 @@ Engineers can easily picture relation instances through data-model examples. The
 
 **Costs.** A direct relation pattern needs a stated occurrence-identity rule, not only participants, when a receiving assertion, description, direct relation, or declared operation application depends on distinguishing one occurrence from another. A system performing relation-identification work establishes whether participants, temporal extent, constituting work, or another domain discriminator distinguishes repetition. Data schemas that used row identity as ontology may need to expose the domain identity they hid.
 
-**Limits.** `A.6.REL` does not decide whether a particular direct relation obtains, define every relation kind, or prescribe a storage model. It does not supply evidence, comparison, publication, or temporal semantics governed by neighboring patterns. It also does not turn a negative or modal assertion into an obtaining occurrence.
+**Limits.** `A.6.REL` does not decide whether a particular direct relation obtains, define every relation kind, or prescribe a storage model. It does not supply evidence, comparison, publication, forecast, scenario, counterfactual, permission, or temporal semantics governed by neighboring patterns. It also does not turn assertion polarity, a separately governed claim family, or a reliance posture into an obtaining occurrence.
 
 ### A.6.REL:10 - Rationale
 
-Applying this method lets an engineer use exact occurrence identity without equating ontology with documentation. A direct relation can obtain for its participants before an FPF episteme states a sentence about it. The actual relation participants, considered under their participant meanings, satisfy the semantic predicate within the direct relation pattern's declared applicability and temporal conditions; an assertion is an episteme whose content states that the relation obtains or has another modality; explicit-individuation work is performed by a system for a named receiving use; and an identifier only enables later reference. Keeping those objects and moves distinct prevents semio-bias in which an episteme is mistaken for the world-side relation.
+Applying this method lets an engineer use exact occurrence identity without equating ontology with documentation. A direct relation can obtain for its participants before an FPF episteme states a sentence about it. The actual relation participants, considered under their participant meanings, satisfy the semantic predicate within the direct relation pattern's declared applicability and temporal conditions; an assertion is an episteme whose content affirms or denies that predicate under its exact direct claim family; `A.10` or the receiving evaluation separately governs supported, refuted, or unresolved reliance; explicit-individuation work is performed by a system for a named receiving use; and an identifier only enables later reference. Keeping those objects and moves distinct prevents semio-bias in which an episteme is mistaken for the world-side relation.
 
 The identity rule belongs to the direct relation pattern because the direct ontology determines whether participant identities suffice. The same holder and role value can stand in two assignments, and the same component and whole can participate in distinct assembly episodes. Conversely, an ordinary formal order assertion may need no explicit occurrence object in project work. A universal key would be too weak for repetition and too heavy for ordinary use.
 

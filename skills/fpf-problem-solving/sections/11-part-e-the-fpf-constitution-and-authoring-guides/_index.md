@@ -20,11 +20,11 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](15-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the Specification](16-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
 - [E.7 - Archetypal Grounding Principle](17-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](18-e-8---fpf-authoring-conventions-style-guide.md) (650 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](18-e-8---fpf-authoring-conventions-style-guide.md) (653 lines) — Type: Architectural (A)
 - [E.8.ECSPF - Evaluation CharacteristicSpace FPF Pattern Publication Form](19-e-8-ecspf---evaluation-characteristicspace-fpf-pattern-publi.md) (180 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](20-e-9---design-rationale-record-method.md) (374 lines) — Type: Governance and authoring pattern
 - [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](21-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (283 lines) — Use E.9.DA when one DRR must be reliable enough for a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through, source-use...
-- [E.10 - Unified Lexical Rules for FPF](22-e-10---unified-lexical-rules-for-fpf.md) (1784 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](22-e-10---unified-lexical-rules-for-fpf.md) (1787 lines) — Type: Part E lexical-governance pattern
 - [E.10.MOVE - Move and Readiness Wording Precision Restoration](23-e-10-move---move-and-readiness-wording-precision-restoration.md) (268 lines) — Type: Part E precision-restoration pattern
 - [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](24-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (408 lines) — Type: Architectural (E)
 - [E.10.P - Conceptual Prefixes policy & registry](25-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
@@ -51,7 +51,7 @@
 - [E.18.1 - P2W Problem-to-Work Carry-Through](46-e-18-1---p2w-problem-to-work-carry-through.md) (537 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](47-e-18-2---transformation-flow-mathematical-description.md) (215 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](48-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (260 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
-- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](49-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (724 lines) — Type: Architectural pattern
+- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](49-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (727 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](50-e-20---mechanism-introduction-protocol.md) (407 lines) — Type: Architectural pattern
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](51-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (393 lines) — Use this when one authored FPF pattern of concern must be evaluated for quality under the use required by the governing evaluation frame: ordinary practitioner use, authoring input, landing input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](52-e-22---improvement-oriented-quality-evaluation-question-fram.md) (317 lines) — Use E.22 when someone is about to ask for a quality evaluation, quality review, returned-finding absorption, improvement proposal, or follow-up hypothesis over an object version named by value, and...

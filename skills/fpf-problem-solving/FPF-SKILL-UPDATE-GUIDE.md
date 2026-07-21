@@ -19,7 +19,7 @@ but a stale thinking-verb router silently degrades navigation quality.
 
 ### 0. Upstream section generation
 
-Regenerate `sections/` only from official upstream `ailev/FPF`. Create the temporary
+Regenerate `sections/` only from the default branch of official upstream `ailev/FPF`. Create the temporary
 skill layout outside this repository, place the official clone at `FPF/` inside that
 layout, copy the tracked splitter into `scripts/`, then run it there:
 

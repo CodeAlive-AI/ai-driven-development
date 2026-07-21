@@ -4,7 +4,7 @@
 > **Status:** Stable
 > **Normativity:** Normative (unless explicitly marked informative)
 > **Placement:** Part A → A.6.B (matrix module; referenced by A.6 cluster overview)
-> **Builds on:** E.8 (authoring template), A.6.0 (`U.Signature`), A.6.1 (`U.Mechanism`), A.6.3 (`U.EpistemicViewing`), E.17.0/E.17 (MVPK + “no new semantics” faces), A.7 (EntityOfConcern and Description-episteme boundary; specification-use and publication-carrier distinction), A.2.3 (promise content when contract language is current), A.2.8 (`U.Commitment`), A.2.9 (`U.SpeechAct`), E.10.D2 (EntityOfConcern and Description-episteme boundary; specification-use and refinement discipline), E.10 publication face, form, unit, and carrier discipline
+> **Builds on:** E.8 (authoring template), A.6.0 (`U.Signature`), A.6.1 (`U.Mechanism`), A.6.3 (`U.EpistemicViewing`), E.17.0/E.17 (MVPK + “no new semantics” faces), A.7 (EntityOfConcern and Description-episteme boundary; specification-use and publication-carrier distinction), A.2.3 (promise content when contract language is current), A.2.8 (`U.Commitment`), A.2.8.PER (strong/weak permission, exercise, non-violation, and conflict results), A.2.9 (`U.SpeechAct`), E.10.D2 (EntityOfConcern and Description-episteme boundary; specification-use and refinement discipline), E.10 publication face, form, unit, and carrier discipline
 > **Purpose (one line):** Provide a canonical 2×2 norm square that classifies boundary statements (L/A/D/E), constrains how each quadrant is written, and defines explicit cross‑quadrant reference rules so boundaries remain evolvable and audit‑ready.
 
 ### A.6.B:0 — Conventions
@@ -86,7 +86,7 @@ The square yields four quadrants that are *mutually exclusive for atomic claims*
 | **In-work or in-execution**     | **E — Work‑Effects & Evidence**                  | **A — Admissibility & Gates**              |
 
 **Clarification (do not conflate).** The Governance column includes two different “normative” roles:
-* **D** is **role-assignment, `U.Role`, or admitted acting-system governance** (duties, commitments, prohibitions).
+* **D** is **role-assignment, `U.Role`, or admitted acting-system governance**. Duties, recommendations-as-duty, and prohibitions use `A.2.8 U.Commitment`; strong or weak permission claims use the exact `A.2.8.PER` grant, finding, exercise, or conflict object warranted by the statement.
 * **A** is **mechanism governance** (admissibility predicates: what the mechanism admits at application time).
 `A-*` is not an obligation on an actor; obligations belong in `D-*` and may reference `A-*`.
 
@@ -100,7 +100,7 @@ The quadrants have canonical placements in the boundary stack:
 
 * **L → Signature layer:** `U.Signature.Laws` (and mechanism‑local semantic laws if present).
 * **A → Mechanism layer:** `U.Mechanism.AdmissibilityConditions` (entry gates / runtime admissibility predicates).
-* **D → Norms & commitments layer:** role-bound duties, commitments, publication and accountability duties (often rendered inside MVPK `TechCard`).
+* **D → Norms & deontic-results layer:** accountable duty/recommendation/prohibition commitments under `A.2.8`, or exact permission grant/finding/exercise/conflict results under `A.2.8.PER`; publication and accountability duties remain in the commitment branch (often rendered inside MVPK `TechCard`).
 * **E → Evidence bindings layer:** work‑adjudicated effects tied to carriers and measurement conditions (authored canonically in an Evidence-and-carriers section; commonly rendered inside MVPK `AssuranceLane` as a projection).
 
 A published view **MUST NOT** introduce new semantic claims outside this L/A/D/E-classified claim set. **E.17 (MVPK)** is a specialization that enforces this rule for a fixed set of publication face kinds.
@@ -129,7 +129,7 @@ This section is the normative “API” of the square: what each quadrant is for
 
 #### A.6.B:5.2 — Quadrant A: Admissibility & Gates
 
-**Intent.** Specify when a mechanism application is admissible: runtime entry predicates, authorization gates, validity gates, applicability checks that require context or execution environment.
+**Intent.** Specify when a mechanism application is admissible: runtime entry predicates, validity gates, and applicability checks that require context or execution environment. An `A-*` predicate may test a current grant or conflict result as one condition, but it does not institute permission, resolve conflict, or become a grant.
 
 **Common mistake #0 — Applicability ≠ Admissibility (informative).** Signature `Applicability` scopes *intended use and bounded context*; it is not a runtime entry gate. Runtime entry checks and admissibility predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If your prose reads like “clients must satisfy the applicability”, you almost certainly want a `D-*` duty + an `A-*` gate (linked by ID) instead.
 
@@ -152,21 +152,21 @@ This section is the normative “API” of the square: what each quadrant is for
 
 #### A.6.B:5.3 — Quadrant D: Deontics & Commitments
 
-**Intent.** State governance: obligations, governance conditions, exclusions, commitments, publication duties, operational duties, contractual commitments—always with accountable role assignments, role values, or admitted acting systems.
+**Intent.** State governance through one of two D branches: accountable obligations, recommendations-as-duty, prohibitions, commitments, publication duties, operational duties, or contractual commitments under `A.2.8`; or the exact strong/weak permission, exercise, non-violation, or conflict result under `A.2.8.PER`. Only the commitment branch requires an accountable role assignment, role value, or admitted acting system as its subject.
 
 **Adjudication.** In‑description (governance is stated in the spec); compliance may be audited via `E-*`.
 
-**Canonical form.** A deontic statement **MUST** have an accountable subject (role assignment, `U.Role`, or admitted acting system), e.g.:
+**Canonical form.** In the `U.Commitment` branch, a `D-*` statement **MUST** have an accountable subject (role assignment, `U.Role`, or admitted acting system). In the permission branch, it **MUST** cite the exact `A.2.8.PER` object and preserve that object's own participant/reference contract: beneficiary/action for a grant or weak finding, actual work plus grant occurrence for exercise, checked actual work for non-violation, or the exact grant and conflicting norm for conflict. Commitment-branch examples:
 
 * “Client implementers **MUST** satisfy `A-…`.”
 * “Operators **SHALL** retain carriers …”
 * “Provider **SHALL** meet `E-…` under exclusions …”
 
-**Canonical payload (recommended; lintable).** When a `D-*` claim is intended to be lintable and reusable, it **SHOULD** be representable as a `U.Commitment` record (A.2.8). Default fields to make explicit:
+**Canonical payload (recommended; lintable).** When a `D-*` claim states an accountable obligation, recommendation-as-duty, or prohibition and is intended to be lintable and reusable, it **SHOULD** be representable as a `U.Commitment` record (A.2.8). A `D-*` statement that instead asserts strong permission, weak non-prohibition/non-violation, actual permission exercise, or permission conflict cites the exact `A.2.8.PER` result and does not force it through `U.Commitment.modality`. Default commitment fields to make explicit:
 
 * `id` (often the `D-*` claim ID),
 * `subject` (accountable role assignment or party; never an episteme),
-* `modality` (BCP‑14/RFC keyword family normalized),
+* `modality` (the exact A.2.8 `DeonticModalityToken`: `MUST | MUST_NOT | SHOULD | SHOULD_NOT`),
 * `scope` + `validityWindow`,
 * `referents` (by ID; e.g., `SVC-*`, `L-*`, `A-*`, `E-*`, `MethodDescriptionRef(...)`),
 * optional `adjudication.evidenceRefs` when the commitment is meant to be auditable,
@@ -174,11 +174,11 @@ This section is the normative “API” of the square: what each quadrant is for
 
 **Prohibitions.**
 
-* A `D-*` statement **MUST NOT** use “the system, service, interface, or specification” as the grammatical subject unless the accountable role assignment or admitted acting system is explicitly named (so the statement is representable as a `U.Commitment` with an explicit `subject`, A.2.8). Use `A.6.C` when contract, promise, utterance, or agreement-like boundary language is live.
+* A commitment-branch `D-*` statement **MUST NOT** use “the system, service, interface, or specification” as the grammatical subject unless the accountable role assignment or admitted acting system is explicitly named. A permission-branch `D-*` statement **MUST NOT** acquire a commitment subject; it **MUST** preserve the exact selected `A.2.8.PER` object's participants and references. Use `A.6.C` when contract, promise, utterance, or agreement-like boundary language is live.
 * A `D-*` statement **MUST NOT** restate `L-*` or `A-*` predicates in new words when an ID exists; it **SHOULD** reference the ID.
-* A `D-*` statement **MUST NOT** pretend that commitments are laws. A commitment is an agent relation, not a truth‑conditional invariant.
+* A `D-*` statement **MUST NOT** pretend that deontic results are laws. A commitment is an accountable-agent relation, and a permission result retains its direct `A.2.8.PER` relation/finding kind; neither is a truth-conditional invariant.
 
-**A.7 EntityOfConcern binding.** `D-*` claims are primarily **about Objects** (accountable role assignments or admitted acting systems and their duties) or **about Carriers** (retention and exposure duties), but they are still written as **Descriptions**.
+**A.7 EntityOfConcern binding.** A commitment-branch `D-*` claim is about the accountable role assignment or admitted acting system and its duty, or about a carrier-retention/exposure duty. A permission-branch `D-*` claim is about the exact `A.2.8.PER` relation or finding with its direct participants and references. Both remain written as **Descriptions**.
 
 **Required references (explicit).**
 
@@ -356,18 +356,20 @@ Convert a boundary-ish sentence that mixes “laws / gates / duties / evidence�
 * **A** if it is an *in‑work* **gate predicate**: what the mechanism admits at application time (“admissible iff …”). It is not a duty and MUST NOT be phrased as one.
   **Guardrails:** `A-*` SHOULD be written in predicate form and MUST NOT (i) use RFC deontic keywords as if it were an agent obligation, (ii) claim that evidence carriers exist (that is `E-*`), or (iii) assign responsibility or enforcement (that is `D-*`).
   *(Do not confuse this with `Signature.Applicability`: applicability scopes intended meaning and intended use; it is not a runtime entry gate.)*
-* **D** if it assigns **duties or commitments** to an accountable role assignment, `U.Role`, or admitted acting system (RFC keywords belong here; “the interface or system promises” does not).
-  **Guardrails:** `D-*` MUST name an accountable subject and SHOULD reference `L-*`/`A-*`/`E-*` by ID rather than restating them in new words (to prevent paraphrase drift).
+* **D** if it either assigns an accountable duty/recommendation/prohibition commitment under `A.2.8`, or asserts the exact strong/weak permission, exercise, non-violation, or conflict result governed by `A.2.8.PER`. RFC keywords alone select neither branch.
+  **Guardrails:** a commitment-branch `D-*` claim MUST name its accountable subject; a permission-branch `D-*` claim MUST cite the exact `A.2.8.PER` object with its direct participants/references. Either branch SHOULD reference `L-*`/`A-*`/`E-*` by ID rather than restating them in new words.
 * **E** if it is an *in‑work* truth‑conditional claim about adjudicable effects and evidence: what carriers exist, under what observation conditions, or both.
   **Minimum fields (recommended):** (1) observation and measurement conditions, (2) carrier-class and carrier-schema reference, and (3) viewpoint and consumer.
   **Guardrails:** `E-*` SHOULD NOT use RFC deontic keywords, MUST NOT hide a gate predicate (that is `A-*`), and MUST NOT cite `D-*`.
   *(If the sentence is “Role SHALL measure, retain, or expose …”, classify that obligation to **D**, even if it is about evidence.)*
 
-**Step 3 — Triangle decomposition.** If the original sentence mixes (i) an entry condition, (ii) an obligation or commitment, and (iii) an observability expectation (a common failure mode with “guarantee, ensure, approved, or aligned”), decompose it into:
+**Step 3 — Triangle decomposition.** If the original sentence mixes (i) an entry condition, (ii) an accountable obligation or commitment, and (iii) an observability expectation (a common failure mode with “guarantee, ensure, approved, or aligned”), decompose it into:
 
 * **A**: the admissibility predicate (what must be true to treat the claim as applicable),
 * **D → A**: who is responsible for keeping or ensuring the predicate,
 * **E → A**: what evidence or traces are used to adjudicate the predicate.
+
+A permission-branch `D-*` claim instead cites its exact `A.2.8.PER` relation or finding. An `A-*` predicate may consume that result as one condition without becoming it, instituting a grant, or resolving a conflict.
 
 **Note (claim-classification sanity).** `D-*` claims are authored in the description even when their compliance is audited via `E-*` claims. Auditing via evidence does not move `D-*` into quadrant E.
 
@@ -536,7 +538,7 @@ For lot `L123` and window `Γ_time=[t1..t2]`, under conditions pinned to `A-FIT-
 
 **A-PRJ-01 (Gate predicate: stage entry).**
 For starting execution work, `ExecutionAdmissible(project)` holds iff required approvals are present *and* required prerequisites are satisfied (e.g., risk review completed, budget line exists, key roles staffed).
-*(This is the real “may start work” gate; references L-PRJ-01 for what counts as approvals.)*
+*(This is the real “may start work” entry predicate; references L-PRJ-01 for what counts as approvals. It does not assert a `GrantedPermissionRelation@Context` unless a separate D-side grant claim and its `A.2.8.PER` ground are present.)*
 
 **D-PRJ-01 (Duty).**
 `ProjectOwner` SHALL not initiate execution unless `A-PRJ-01` holds, SHALL keep the approval registry current, and SHALL retain or expose the evidence carriers referenced in `E-PRJ-01`.
@@ -585,8 +587,8 @@ Lenses tested: **Gov**, **Arch**, **Ontological and Epistemic**, **Prag**, **Did
 | ID                                       | Requirement                                                                                                                                                                                                      | Purpose                                                  |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **CC‑A.6.B.1 (Atomicity).**              | A conforming boundary text **SHALL** decompose mixed sentences into **atomic claims** such that each atomic claim belongs to exactly one quadrant **L/A/D/E**.                                                    | Makes L/A/D/E classification unambiguous; prevents contract soup.       |
-| **CC‑A.6.B.2 (Quadrant classification).**       | Each atomic claim **MUST** be classified by the Boundary Norm Square and placed in its canonical stack placement (L→Signature.Laws; A→Mechanism.AdmissibilityConditions; D→Norms-and-commitments; E→Evidence-and-carriers). | Preserves stack modularity and evolvability.             |
-| **CC‑A.6.B.3 (Form constraints).**       | `L-*` and `A-*` claims **MUST NOT** contain RFC deontic keywords as operators; `D-*` claims **MUST** name an accountable role assignment, `U.Role`, or admitted acting system; `E-*` claims **SHOULD NOT** use RFC deontic keywords.                       | Keeps modalities separated and audit‑ready.              |
+| **CC‑A.6.B.2 (Quadrant classification).**       | Each atomic claim **MUST** be classified by the Boundary Norm Square and placed in its canonical stack placement (L→Signature.Laws; A→Mechanism.AdmissibilityConditions; D→Norms-and-deontic-results, using `A.2.8` for an accountable commitment or `A.2.8.PER` for the exact permission result; E→Evidence-and-carriers). | Preserves stack modularity and evolvability.             |
+| **CC‑A.6.B.3 (Form constraints).**       | `L-*` and `A-*` claims **MUST NOT** contain RFC deontic keywords as operators; a commitment-branch `D-*` claim **MUST** name an accountable role assignment, `U.Role`, or admitted acting system, while a permission-branch `D-*` claim **MUST** cite the exact selected `A.2.8.PER` object with its own participants/references; `E-*` claims **SHOULD NOT** use RFC deontic keywords. | Keeps modalities separated and audit-ready.              |
 | **CC‑A.6.B.4 (Explicit references).**    | Where a claim depends on another L/A/D/E-classified claim, that dependency **MUST** be expressed by explicit ID reference rather than restating the other claim in new words.                                                | Prevents paraphrase drift across layers and faces.           |
 | **CC‑A.6.B.5 (E‑claim adjudicability).** | Each `E-*` claim **SHOULD** include (a) observation conditions, (b) carrier-class and carrier-schema reference, and (c) viewpoint and consumer.                                                                                  | Makes work‑effects adjudicable rather than aspirational. |
 | **CC‑A.6.B.6 (No gate smuggling).**      | Operational admissibility predicates **MUST NOT** appear as `L-*` laws in the signature layer; they **MUST** be `A-*` claims in the mechanism layer.                                                             | Preserves substitution and signature stability.          |
@@ -639,7 +641,7 @@ By requiring atomicity and explicit cross‑quadrant references, the square conv
 * **Constrains A.6.0 (`U.Signature`):** enforces that `L-*` laws are truth‑conditional and do not include admissibility predicates.
 * **Constrains A.6.1 (`U.Mechanism`):** enforces that admissibility lives in `AdmissibilityConditions` (`A-*`) and that evidence semantics are classified as `E-*` with carrier references.
 * **Requires A.7:** binds quadrants to `EntityOfConcern`, Description episteme, or publication carrier so agency and evidence are not misattributed.
-* **Interacts with MVPK/E.17:** faces are projections that cite L/A/D/E-classified claims; faces must not mint new semantic commitments.
+* **Interacts with MVPK/E.17:** faces are projections that cite L/A/D/E-classified claims; faces must not mint new semantic commitments or permissions. **A.2.8** owns accountable duty/recommendation/prohibition commitments; **A.2.8.PER** owns strong/weak permission, exercise, non-violation, and conflict results.
 
 ### A.6.B:15a - Probe-coupled boundary claim classification
 

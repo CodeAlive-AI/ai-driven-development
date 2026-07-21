@@ -5,7 +5,7 @@
 
 ### A.2.8:0.1 - Kind Settlement
 
-`U.Commitment` is a durable deontic-relation value. Its source may cite speech acts and descriptions, but the commitment is not the utterance description, carrier, gate, or performed work.
+`U.Commitment` is a durable deontic-relation value for an accountable obligation, recommendation-as-duty, or prohibition. Its source may cite speech acts and descriptions, but the commitment is not the utterance description, carrier, gate, performed work, strong permission, permission exercise, or weak non-prohibition/non-violation finding. Positive permission and its conflict semantics are governed by `A.2.8.PER`.
 
 ### A.2.8:0 - Use This When
 
@@ -65,7 +65,7 @@ A.6.B provides L/A/D/E claim-classification discipline, and A.6.C provides contr
 How can FPF represent a deontic commitment relation so that:
 
 1. **The accountable subject is explicit** (role or role-enactor; not “the spec/interface/service”),
-2. **Modality is explicit and lintable** (obligation, permission, prohibition, and strength),
+2. **Modality is explicit and lintable** (obligation, recommendation-as-duty, prohibition, and strength),
 3. **Scope and validity window are explicit** (bounded context + time + conditions),
 4. **The content is referenceable** via stable referent claim IDs (promise contents, gates, evidence targets, etc.),
 5. **Adjudication hooks exist** when the commitment is meant to be testable/auditable (links to evidence claims and carrier expectations),
@@ -90,7 +90,7 @@ This pattern defines:
 
 * a **normative minimal structure** for `U.Commitment`,
 * how `U.Commitment` relates to `U.PromiseContent`, `U.Work`, and evidence,
-* how it is used as the canonical payload for **D-quadrant** claims (A.6.B),
+* how it is used as the canonical payload for **D-quadrant** obligation, recommendation-as-duty, and prohibition claims (A.6.B), while permission claims route to the exact `A.2.8.PER` result,
 * and what must be stated for a commitment to be considered **auditable**.
 
 #### A.2.8:4.1 - Normative definition
@@ -130,7 +130,7 @@ CounterpartyRef ::=
   // Optional “to whom”/beneficiary/counterparty handle. Keep minimal: do not treat it as a full legal-party model.
 
 DeonticModalityToken ::=
-  MUST | MUST_NOT | SHOULD | SHOULD_NOT | MAY
+  MUST | MUST_NOT | SHOULD | SHOULD_NOT
   // FPF deontic-modality values for the `modality` slot.
   // RFC words and their synonyms are source expressions; map them only after the commitment relation is recovered.
   //
@@ -139,7 +139,7 @@ DeonticModalityToken ::=
   // - SHALL NOT, PROHIBITED  -> MUST_NOT
   // - RECOMMENDED            -> SHOULD
   // - NOT RECOMMENDED        -> SHOULD_NOT
-  // - OPTIONAL               -> MAY
+  // MAY and OPTIONAL do not normalize into U.Commitment. Recover their actual claim: strong or weak permission under A.2.8.PER, an A-* entry predicate, or informative prose.
 
 ReferentRef ::=
   ClaimIdRef | PromiseContentRef | MethodDescriptionRef | WorkRef
@@ -182,7 +182,7 @@ CommitmentSource ::=
 * **(C1) Subject must be accountable.** `subject` **MUST** resolve to an accountable role or party; it **MUST NOT** be “the interface, spec, service, or system” as an episteme.
 * **(C2) Modality must be explicit and normalized.** `modality` **MUST** be present for normative commitments and **MUST** be normalized to `DeonticModalityToken`.
 * **(C3) Scope + validity must be explicit.** `scope` and `validityWindow` **MUST** be present. Defaults are allowed only when an explicit context policy is cited as the source of those defaults (do not rely on “implied defaults”). `validityWindow` expresses *in-force* conditions; per-action admissibility gates belong in referenced `A-*` predicates.
-* **(C4) Referents must be non-empty.** `referents` **MUST** contain at least one referent (what is being obligated, permitted, or prohibited).
+* **(C4) Referents must be non-empty.** `referents` **MUST** contain at least one referent (what is being obligated, recommended as a duty, or prohibited).
 * **(C5) Referents must be by reference when possible.** If the bound content already exists as claim IDs, `referents` **SHOULD** cite those IDs rather than restating them.
 * **(C6) Auditable commitments must have adjudication hooks.** If a commitment is intended to be audited/adjudicated by observation, `adjudication.evidenceRefs` **SHALL** include the evidence claim IDs (typically `E-*`) that carry the adjudication substrate.
 * **(C7) Evidence belongs in adjudication by default.** If an `E-*` claim is referenced **only** to define *how to measure/verify* a commitment, it **SHALL** be listed in `adjudication.evidenceRefs` (not in `referents`). An `E-*` claim **MAY** appear in `referents` only when the commitment’s content is itself an evidence-producing/retaining duty (e.g., “MUST retain traces”).
@@ -207,7 +207,7 @@ CommitmentSource ::=
 
 #### A.2.8:4.4 - Canonical use in boundary claim registers (recommended)
 
-When using the A.6 stack, represent each **D-quadrant** atomic claim as a `U.Commitment` payload with:
+When using the A.6 stack, represent each **D-quadrant** atomic claim that states an accountable obligation, recommendation-as-duty, or prohibition as a `U.Commitment` payload with the fields below. A `D-*` strong/weak permission, exercise, non-violation, or conflict claim instead cites the exact `A.2.8.PER` result and does not acquire a `U.Commitment` payload:
 
 * `id = D-*`,
 * `subject = accountable role or party`,
@@ -315,7 +315,7 @@ The triad “promise, utterance, and commitment” is useful for language discip
 
 * **BCP 14 (RFC 2119 + RFC 8174) / modern spec-language discipline (2017+).** Treating modality tokens as a controlled family is standard; `U.Commitment.modality` makes this family explicit and lintable.
 * **Policy-as-code ecosystems (2016+).** Modern governance stacks often encode gates as code (e.g., Kubernetes admission controls, OPA/Rego-style policy evaluation) and obligations as process controls; the `U.Commitment` structure helps keep “gate predicates” separate from “actor duties”, while still linking them by reference.
-* **ODRL-style duty, permission, and prohibition modeling (W3C ODRL 2.2, 2018).** The minimal “subject + modality + constraint/window + target” shape is widely used; `U.Commitment` adopts the kernel of that idea while keeping FPF’s boundary claim classification and evidence discipline.
+* **ODRL-style duty, permission, and prohibition modeling (W3C ODRL 2.2, 2018).** The minimal subject/assignee, action/target, constraint/window, and policy shape is widely used, and its source separation is useful. FPF adapts that shape without forcing unlike deontic effects into one modality record: `U.Commitment` keeps accountable duty/recommendation/prohibition, while `A.2.8.PER` owns strong/weak permission and exercise. Both retain explicit subject or beneficiary, action/referent, constraint/window, policy provenance, FPF boundary-claim classification, and evidence discipline.
 * **Trace-based compliance and audit (2018+ supply-chain / reproducibility practice).** “Compliance is evidenced by evidence carriers and records” is mainstream; `adjudication.evidenceRefs` captures this without turning evidence into semantics.
 * **Supply-chain attestations (2021+).** Attestation-oriented schemes (e.g., SLSA-style provenance, transparency logs) operationalize “claims + evidence carriers”; `adjudication.evidenceRefs` is the bridge point without collapsing evidence into truth.
 
@@ -329,7 +329,7 @@ The triad “promise, utterance, and commitment” is useful for language discip
 
 **Used by**
 
-* A.6.B (Quadrant D) as the canonical payload shape for deontic statements.
+* A.6.B (Quadrant D) as the canonical payload shape only for obligation, recommendation-as-duty, and prohibition statements; strong or weak permission, exercise, non-violation, and conflict claims cite the exact `A.2.8.PER` result instead.
 * A.6.C (Contract Unpacking) as the formal governing pattern for the “Commitment” component of the bundle.
 * Part D governance/ethics patterns, when current, for expressing layered, conflicting, multi-authority commitments.
 
@@ -338,6 +338,7 @@ The triad “promise, utterance, and commitment” is useful for language discip
 * A.2.3 (`U.PromiseContent`): services are promise clauses; commitments assign accountable subjects to those clauses.
 * **A.2.9 (`U.SpeechAct`)**: `U.Commitment.source.speechActRef` points to the instituting communicative work occurrence when provenance matters.
 * A.15.1 (`U.Work`) and evidence patterns: adjudication hooks refer to evidence in work, not to text.
+* **A.2.8.PER:** strong grants, permission exercise, weak non-prohibition/non-violation findings, and permission conflicts remain separate from `U.Commitment`; a visible `MAY` or `OPTIONAL` token does not choose between those objects and an `A-*` entry predicate.
 
 ### A.2.8:End
 

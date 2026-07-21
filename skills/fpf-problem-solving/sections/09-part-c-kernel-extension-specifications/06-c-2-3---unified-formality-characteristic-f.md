@@ -140,6 +140,7 @@ Post-2015 practice across formal methods, software architecture, safety engineer
 - **Defines:** the `F` coordinate of the typed `F-G-R` assurance tuple.
 - **Builds on:** characteristic machinery from `A.18` / `A.19` and episteme-level characteristic assignment from Part C.
 - **Coordinates with:** `C.2.2`, `B.3`, `F.9`, `C.2.LS`, `A.16`, `C.2.4`, `C.2.5`, `C.2.6`, and `C.2.7`.
+- **Coordinates with:** `C.19.2` when a declared use asks whether increasing rigor of expression or selecting/configuring a formal apparatus repays application work. `F` measures expression rigor; it does not select the apparatus, plan the work, or establish the problem-facing result.
 - **Constrains:** any pattern, gate, or editorial rule that speaks about rigor of expression.
 
 ### C.2.3:13 - Canonical Anchors `F0...F9`

@@ -70,13 +70,13 @@ CT2R‑LOG introduces a **two‑link discipline** around each canonical edge:
 > **G** (its *Grounding*): `:e123 tv:groundedBy :trace_Γm_sum_456`.
 > **R** (declared *Reliability mode*): `tv:validationMode=axiomatic` → inputs B.3.3’s **AssuranceLevel** assessment.
 
-#### B.3.5:4.1 - Typing-Grounding Unfolding Structure Block
+#### B.3.5:4.1 - Structural CT2R Typing-Grounding Unfolding Structure Block
 
 When a constructive trace, working-model relation, and target kind or logical representation must be carried together across contexts, use this block or cite an equivalent `A.22.CGUS` specialization. The block is useful when the reader must see the passage from constructional material to a typed or logical claim without treating a readable relation label as proof.
 
 ```text
-TypingGroundingUnfoldingStructureBlock:
-  unfoldingStructureRef: current TypingGroundingUnfoldingStructure record
+StructuralCT2RTypingGroundingUnfoldingStructureBlock:
+  unfoldingStructureRef: current StructuralCT2RTypingGroundingUnfoldingStructure record
   workingModelOrConstructiveRepresentationRef:
   targetKindOrLogicalRepresentationRef:
   bridgeRef?:
@@ -89,7 +89,9 @@ TypingGroundingUnfoldingStructureBlock:
   evidenceOrProofLinkageRef?:
 ```
 
-`unfoldingStructureRef` names the current local structure record. `TypingGroundingUnfoldingStructure` is a local `A.22.CGUS` `U.Structure` specialization whose block is governed by B.3.5 for typing-grounding use; the A.22-level relation to that narrower specialization, when needed, is `specializedStructureRef?` on the generic CGUS record. It is not a root U-kind, not proof, not empirical evidence, not a work plan, and not a decision. C.13 contributes constructive-trace loci; C.3 contributes kind intent, extent, subkind, and bridge loci; neither C.13 nor C.3 creates separate authority for this block.
+`unfoldingStructureRef` names the current local structure record. `StructuralCT2RTypingGroundingUnfoldingStructure` is a local `A.22.CGUS` `U.Structure` specialization whose block is governed by B.3.5 only for structural construction-to-typed/logical projection; the A.22-level relation to that narrower specialization, when needed, is `specializedStructureRef?` on the generic CGUS record. It is not a root U-kind, proof, empirical evidence, work plan, decision, or general ontology-return structure. `C.13` contributes constructive-trace loci; `C.3` contributes kind intent, extent, subkind, and bridge loci; neither creates separate authority for this block.
+
+When an inadequate working account requires a general diagnostic return to the exact subject construction, use `A.7.1`. That return may stop at a direct relation, role assignment, state/capability, work occurrence, holon recognition, or another subject owner without opening this structural CT2R specialization.
 
 `workingModelOrConstructiveRepresentationRef` names the relation, trace, model, or representation being carried. `targetKindOrLogicalRepresentationRef` names the typed or logical target. `bridgeRef` and `CL_or_CLk` are mandatory when cross-context or kind-level movement is current. `preservedStructure` and `lostOrCollapsedStructure` state what survives the passage and what the published relation no longer carries. Evidence linkage remains with B.3 evidence and assurance governing patterns; proof linkage remains with the proof or mathematical governing pattern that is current. The unfolding block only makes the structure of the passage inspectable.
 
@@ -332,7 +334,7 @@ Constructive mereology, assurance-case practice, and model-based engineering all
 
 **Coordinates with**
 • **Compose-CAL (Γ_m)** — provides the **constructive** shoulder of the Assurance layer for **structural** relations; CT2R-LOG’s `tv:groundedBy` points *conceptually* to traces narratable as **sum/set/slice**.
-• **A.22.CGUS / TypingGroundingUnfoldingStructureBlock** — provides the local unfolding-structure block when a constructive trace, working-model relation, target kind or logical representation, bridge, preserved structure, and loss must be inspected together.
+• **A.22.CGUS / StructuralCT2RTypingGroundingUnfoldingStructureBlock** — provides the local structural CT2R unfolding block when a constructive trace, working-model relation, target kind or logical representation, bridge, preserved structure, and loss must be inspected together; `A.7.1` owns general diagnostic return to a subject construction.
 • **KD‑CAL** — provides the **logical** shoulder (inferential justification) when authors pick `validationMode = inferential`.
 • **Kind-CAL / Lang-CHR** — provide the **mapping** shoulder (kind and relation-label alignment) governing alias policies without altering Working-Model relations.
 

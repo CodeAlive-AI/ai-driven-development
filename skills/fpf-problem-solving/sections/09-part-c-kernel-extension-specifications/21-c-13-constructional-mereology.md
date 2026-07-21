@@ -82,11 +82,11 @@ Use Compose-CAL whenever a claim concerns **structural containment** of entities
 * **PortionOf** ⇢ `slice(entity, facet="material/spatial‑region")` **plus** metrical semantics (A.14);
 * **ConstituentOf** (logical/content) ⇢ `sum` narrative over conceptual parts. *(Material mixtures are **not** `ConstituentOf`; use `PortionOf` or `ComponentOf` per A.14.)*
 
-#### C.13:4.4 - Typing-Grounding Unfolding Use
+#### C.13:4.4 - Structural CT2R Typing-Grounding Use
 
-When a `Γ_m` trace is part of a larger passage from constructive representation to a working-model relation, target kind, or logical representation, cite `TypingGroundingUnfoldingStructureBlock` from `B.3.5`. The C.13 contribution is the constructive trace and the preserved or lost mereological structure inside that B.3.5-governed local `A.22.CGUS` structure specialization. C.13 does not create separate unfolding-structure authority and does not by itself supply cross-context bridge, kind intent, proof, empirical evidence, or admissible reuse.
+When a `Γ_m` trace and working-model relation must be carried with a target kind or logical representation as a structural construction-to-typed/logical projection, cite `StructuralCT2RTypingGroundingUnfoldingStructureBlock` from `B.3.5`. The C.13 contribution is only the constructive-trace locus and its preserved or lost mereological structure inside that B.3.5-governed local `A.22.CGUS` structure specialization. C.13 does not create separate unfolding-structure authority and does not by itself supply cross-context bridge, kind intent, proof, empirical evidence, or admissible reuse. A general diagnostic return from an inadequate working account to the exact subject construction belongs to `A.7.1`, not to this structural CT2R block.
 
-Use this split especially when a readable relation label such as ComponentOf, MemberOf, AspectOf, ConstituentOf, or RepresentationOf is being reused as if the label itself proved constructive grounding. The repair is to name the constructor trace, the target relation or kind, the bridge when current, preserved and collapsed structure, and the proof or evidence relation when that stronger claim is being made.
+Use this split especially when a readable relation label such as ComponentOf, MemberOf, AspectOf, ConstituentOf, or RepresentationOf is being reused beyond what its label warrants. The readable label does not by itself prove either constructive grounding or the wider structural projection. The repair is to name the constructor trace and working-model relation, the target kind or logical representation, the bridge when current, preserved and collapsed structure, and the proof or evidence relation when that stronger structural claim is being made. If the evidence instead diagnoses a mismatch that requires revision of the working ontology, route the return through `A.7.1`.
 
 ### C.13:5 - Archetypal Grounding *(System / Episteme duo)*
 
@@ -208,7 +208,7 @@ Constructional mereology, formal ontology, and model-based engineering all separ
 
 **Coordinates with**
 * **B.3.5 CT2R-LOG.** `tv:groundedBy` refers (conceptually) to Compose-CAL traces when `validationMode = axiomatic`; **Working-Model** relations remain the public relation layer.
-* **A.22.CGUS / TypingGroundingUnfoldingStructureBlock.** Use this coordination when a constructive trace is one locus inside a broader passage to a working-model relation, target kind, logical representation, bridge, proof, or admissible reuse.
+* **A.22.CGUS / StructuralCT2RTypingGroundingUnfoldingStructureBlock.** Use this coordination only when a constructive trace and working-model relation are loci inside a structural construction-to-typed/logical projection to a target kind or logical representation. General diagnostic return to revise an inadequate working ontology remains with `A.7.1`.
 * **B.1 flavours.** Keeps order (`Γ_method`) and time (`Γ_time`) outside structure; may co‑appear in narratives when relevant but never as constructors.
 * **Kind-CAL / Lang‑CHR.** Provide the Mapping shoulder of assurance (labels, type alignment) that complements constructive narratives in this pattern.
 * **KD‑CAL.** Provides the Logical shoulder when authors justify relations inferentially instead of constructively.

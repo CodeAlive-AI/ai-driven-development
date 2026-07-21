@@ -10,7 +10,7 @@
 
 **Primary EntityOfConcern.** One `WorkEntryReadiness@Context` relation for one intended work item, target work plan, PlanItem, or work-boundary concern in one bounded context.
 
-**First output.** One `WorkEntryReadiness@Context` record with its `FullKitCondition`, commitment disposition, resource-readiness refs, WIP or flow-policy refs, planned-baseline refs, gate refs when current, and stop or degraded-use condition.
+**First output.** One `WorkEntryReadiness@Context` record with its `FullKitCondition`, commitment disposition, prospective direct permission inputs (a current grant occurrence, non-prohibition finding, or permission-conflict finding), and any retrospective exercise/non-violation ref only through `PriorWorkEvidenceRefs` for a different exact already-dated work occurrence or an explicitly post-launch recheck whose target work is already actual; plus resource-readiness, WIP or flow-policy, planned-baseline, gate, and stop or degraded-use refs when current.
 
 **Not this pattern when.** Use `A.15.2` for the work plan itself, `A.15.3` for planned slot fillers, `A.15.1` for dated performed work, `A.21` for gate decisions, `A.15.4` only when a reliance appearance is already being used as a reason for work or reliance before the governing pattern slot, relation, or project-side reference is named, `B.1.6` for resource aggregation after work, `E.18` for transformation-flow structure, and `E.18.1` for P2W carry-through from accepted problem-side material.
 
@@ -59,12 +59,15 @@ WorkEntryReadiness@Context:
   IntendedOutcomeOrValueRef?
   FullKitCondition?
   CommitmentDisposition?
+  GrantedPermissionOccurrenceRef?     # prospective direct input when current
+  NonProhibitionFindingRef?           # prospective direct input when current
+  PermissionNormConflictFindingRef?   # prospective current-conflict input
   ResourceReadinessRefs?
   WIPPolicyRef?
   FlowPolicyRef?
   SlotFillingsPlanItemRefs?
   PreparationWorkRefs?
-  PriorWorkEvidenceRefs?
+  PriorWorkEvidenceRefs?              # may cite exercise/non-violation only for a different exact already-dated work occurrence
   SourceCurrentnessRefs?
   LaunchGateRef?
   GateDecisionRef?
@@ -72,7 +75,7 @@ WorkEntryReadiness@Context:
   StopCondition
   DegradedUse?
   ReturnOrRecheckCondition?
-  PostLaunchVarianceRef?
+  PostLaunchVarianceRef?              # target-work exercise/non-violation only in an explicit post-launch recheck after that work is actual
 ```
 
 The record is filled according to the current readiness claim. It is not a demand to fill every slot. It is a checklist of concerns that must not be forgotten when those concerns are live.
@@ -103,7 +106,7 @@ Full-kit preparation can include gathering information, coordinating roles, prod
 
 `CommitmentDisposition` states the work-entry stance, such as `notReady`, `readyWithKnownGaps`, `readyForProbe`, `readyForCommitment`, `committed`, `blocked`, or `requiresGateDecision`.
 
-Use A.21 only when a current `OperationalGate(profile)` consumes declared checks and publishes a `GateDecision`. A readiness badge, green tile, full-kit label, or commitment board position is not gate passage unless A.21 fields are recoverable.
+Use `A.2.8.PER` when a pre-entry readiness check requires a current granted-permission occurrence, non-prohibition finding, or permission-conflict finding. `PermissionExerciseRelation@Context` and `NonViolationFinding@Context` require already dated actual work: cite either through `PriorWorkEvidenceRefs` only for a different exact work occurrence, or in an explicitly marked post-launch recheck only after the target work is actual; the latter is not evidence that the target was ready before entry. Prior exercise or non-violation proves none of a current grant, current capability, future exercise, future non-violation, readiness, gate passage, or target-work performance. Readiness does not institute permission, exercise it, resolve conflict, or turn non-prohibition into a grant; an unresolved current conflict blocks or degrades reliance according to `A.2.8.PER`. Use A.21 only when a current `OperationalGate(profile)` consumes declared checks and publishes a `GateDecision`. A readiness badge, green tile, full-kit label, or commitment board position is not gate passage unless A.21 fields are recoverable; gate passage creates none of the permission objects.
 
 #### A.15.5:4.4 - Relation to A.15 Family
 
@@ -176,12 +179,13 @@ If the current claim is "the release gate passed", use A.21 and recover `Operati
 | `CC-A15.5-5` | keeps gate decisions in A.21. | Readiness labels do not create `GateDecision` without A.21 fields. |
 | `CC-A15.5-6` | keeps resource readiness and resource aggregation distinct. | Planned reservations and actual consumption are not merged. |
 | `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can tell whether to stop, probe, commit, launch, or return to a missing governing pattern value. |
+| `CC-A15.5-8` | keeps prospective and retrospective permission inputs temporally typed and non-productive. | A current grant, non-prohibition finding, or conflict finding may be a prospective direct input; exercise/non-violation appears only in `PriorWorkEvidenceRefs` for different dated work or in an explicit post-launch recheck after the target work is actual. Neither prior result proves current grant, capability, future exercise/non-violation, readiness, gate passage, or target-work performance; unresolved current conflict blocks or degrades reliance under `A.2.8.PER`. |
 
 ### A.15.5:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Better use |
 | --- | --- | --- |
-| Ready label as authorization | A label is treated as work authorization or gate passage. | Use A.21 for gate decision or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the governing pattern slot or relation is named. |
+| Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the exact permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the governing pattern slot, relation, or project-side reference is named. |
 | Full kit as work done | Prepared inputs are treated as target work completion. | Record preparation work separately and target work only when it occurs. |
 | Baseline as actuals | Planned slot fillers are treated as launch or performed values. | Keep planned fillers in A.15.3 and record variance after work. |
 | MOVE imported as kind | TameFlow source wording becomes an FPF object. | Recover intended work, commitment, readiness, gate, preparation work, or performed work under FPF patterns. |
@@ -215,7 +219,7 @@ The readiness question is practical and recurrent: should this intended work ent
 
 ### A.15.5:12 - Relations
 
-- **Builds on:** `A.15`, `A.15.1`, `A.15.2`, `A.15.3`, `A.15.4`, `A.21`, `B.1.6`, `E.18`, `E.18.1`, and `E.24`.
+- **Builds on:** `A.15`, `A.15.1`, `A.15.2`, `A.15.3`, `A.15.4`, `A.21`, `B.1.6`, `E.18`, `E.18.1`, and `E.24`; consumes current `A.2.8.PER` grant/non-prohibition/conflict refs as prospective inputs, and exercise/non-violation refs only as evidence about different dated work or in an explicit post-launch recheck after target work is actual.
 - **Coordinates with:** `E.11.PUR` for recommended pattern use before readiness is selected, `E.10.MOVE` for readiness wording repair, `C.32.P2S` when readiness prepares work that realizes architecture-selected structures, and `A.3.4.P` when workflow or process wording is primarily transformation-situation wording.
 - **Does not replace:** target `U.WorkPlan`, `SlotFillingsPlanItem`, `U.Work`, `GateDecision`, `A.15.4` local repair relation, resource aggregation, or transformation-flow structure.
 

@@ -41,14 +41,14 @@ The use cases above help decide WHETHER to invoke FPF. The router below decides 
 | What you need to do | Start here |
 |---|---|
 | **Decompose** a complex whole into bounded parts | 05 Part A → A.1 Holons, A.1.1 Bounded Contexts, A.14 Mereology |
-| **Assign** roles and responsibilities | 05 Part A → A.2 Roles, A.15 Role-Method-Work Alignment |
-| **Set boundaries** on what statements mean or **distinguish relations** from their individuated occurrences | 06 Signature Stack → A.6.B boundary norms, A.6.REL relation obtaining and occurrences, declarations, gates, duties, and evidence |
-| **Prevent category errors** (role vs. function, method vs. work) | 07 Constitutional Principles → A.7 Strict Distinction |
+| **Assign** roles and responsibilities or **check permission** without confusing grants, exercise, and non-prohibition | 05 Part A → A.2 Roles, A.2.8.PER Permission, A.15 Role-Method-Work Alignment |
+| **Set boundaries** on what statements mean, **distinguish relations** from their individuated occurrences, or derive a missing relation claim | 06 Signature Stack → A.6.B boundary norms, A.6.REL relation obtaining and occurrences, A.6.RCD relation-claim derivation, declarations, gates, duties, and evidence |
+| **Prevent category errors** or reconcile ontology premises before extending the framework | 07 Constitutional Principles → A.7 Strict Distinction, A.7.1 Consequence-Guided Ontological Problem Solving, A.7.2 Premise Reconciliation, A.7.CP Constructive Premise Compact |
 | **Evaluate confidence** in a claim or artifact — including formality, scope, and reliability of the underlying knowledge | 08 Part B → B.3 Trust & Assurance; 09 Part C → C.2 KD-CAL / F-G-R scoring, C.2.2 Reliability, C.2.3 Formality |
 | **Compose** parts into wholes preserving properties | 08 Part B → B.1 Gamma algebra; 09 Part C → C.13 Compose-CAL, C.20 Discipline-CAL |
 | **Reason through** a problem systematically | 08 Part B → B.5 Reasoning Cycle, B.5.2 Abductive Loop |
 | **Apply** one selected FPF pattern to a working situation and obtain the first useful result | 11 Part E → E.11.PUA Pattern Use in a Working Situation and First Useful Result |
-| **Generate alternatives** / explore solution space | 09 Part C → C.17 Creativity-CHR, C.18 Open-Ended Search, C.19 Explore-Exploit |
+| **Generate alternatives** / explore solution space and keep apparatus use bounded | 09 Part C → C.17 Creativity-CHR, C.18 Open-Ended Search, C.19 Explore-Exploit, C.19.2 Use-Bounded Apparatus Application |
 | **Measure and compare** options rigorously | 07 A.V → A.17-A.19 Characteristics, CSLC & SelectorMechanism; 09 Part C → C.16 MM-CHR; 13 Part G → G.9 Parity / Benchmark Harness |
 | **Resolve conflicts** across stakeholders or values | 10 Part D → Ethics, bias audit, conflict optimization |
 | **Unify vocabulary** across teams or domains | 12 Part F → concept sets, bridges, UTS, lexical continuity |
@@ -63,7 +63,7 @@ The use cases above help decide WHETHER to invoke FPF. The router below decides 
 | **Assess structural information** — check architecture capture, source return, equivalence, morphisms, or discovery adequacy | 09 Part C → C.33, C.34, C.35 |
 | **Model context-dependent or indeterminate states** — represent superposed, probe-coupled, or viability-bounded behaviour | 09 Part C → C.26 Quantum-Like Modeling Lens, C.26.1 Probe-Coupled Boundary, C.26.2 Enacted Distributed State, C.26.3 Viability-Envelope |
 | **Survey a discipline** and build, ship, or refresh a reusable toolkit | 13 Part G → G.1-G.13 SoTA kit, CG-Frame, dispatcher, benchmarks, shipping, telemetry refresh, dashboards, external interop; 09 Part C → C.21 Discipline-CHR |
-| **Classify** a problem type before solving | 09 Part C → C.22 Problem-CHR, C.3 Kind-CAL (typed reasoning) |
+| **Classify** a problem type or state exactly what is problematic for whom before solving | 09 Part C → C.22 Problem-CHR, C.22.PFR Problematic-For Relation, C.3 Kind-CAL (typed reasoning) |
 | **Define quality** attributes ("-ilities") as structured bundles | 09 Part C → C.25 Q-Bundle; 07 A.V → A.17-A.19 Characteristics |
 | **Govern ontology** — decide whether a new ontic concept or U-kind is warranted | 11 Part E → E.24 Ontic Introduction Discipline, E.24.UK U-kind Admission and Ontic Settlement |
 | **Reason about cultural evolution** — describe cultural-evolution engineering or repair cultural-evolution wording | 09 Part C → C.36 Cultural Evolution, C.36.P Precision Restoration |
@@ -111,11 +111,11 @@ Structural reference. Each entry is a folder — read its `_index.md` first, the
 | 02 | [Table of Content](sections/02-table-of-content/_index.md) | 0 | **Navigate**: locate a pattern, keyword, query cue, dependency, or neighboring section. |
 | 03 | [FPF Readme](sections/03-first-principles-framework-readme/_index.md) | 7 | **Onboard**: understand what each part contributes before selecting a narrow pattern. |
 | 04 | [Preface](sections/04-preface/_index.md) | 21 | **Orient**: read philosophy, adoption storylines, uncertainty posture, and purpose/non-goals. |
-| 05 | [Part A — Kernel](sections/05-part-a---kernel-architecture-cluster/_index.md) | 21 | **Decompose and assign**: holons, bounded contexts, roles, transformers, method/work separation. |
-| 06 | [A.IV.A — Signatures](sections/06-cluster-a-iv-a---signature-stack-boundary-discipline/_index.md) | 26 | **Set boundaries and render**: distinguish relations from occurrences; classify statements as definitions, gates, duties, evidence, signatures, semantic repairs, or faithful structure-to-narrative transformations. |
-| 07 | [A.V — Principles](sections/07-cluster-a-v---constitutional-principles-of-the-kernel/_index.md) | 37 | **Prevent confusion and unfold structure**: category errors, measuring, comparing, evidence graphs, mechanism suites, flow constraints, gate profiles, constraint-governed unfolding. |
+| 05 | [Part A — Kernel](sections/05-part-a---kernel-architecture-cluster/_index.md) | 22 | **Decompose, assign, and authorize**: holons, bounded contexts, roles, permission distinctions, transformers, method/work separation. |
+| 06 | [A.IV.A — Signatures](sections/06-cluster-a-iv-a---signature-stack-boundary-discipline/_index.md) | 27 | **Set boundaries, derive relations, and render**: distinguish relations from occurrences; derive needed relation claims; classify statements as definitions, gates, duties, evidence, signatures, semantic repairs, or faithful structure-to-narrative transformations. |
+| 07 | [A.V — Principles](sections/07-cluster-a-v---constitutional-principles-of-the-kernel/_index.md) | 40 | **Prevent confusion and reconcile premises**: category errors, ontology premises, measuring, comparing, evidence graphs, mechanism suites, flow constraints, gate profiles, constraint-governed unfolding. |
 | 08 | [Part B — Reasoning](sections/08-part-b-trans-disciplinary-reasoning-cluster/_index.md) | 25 | **Compose and evaluate**: structural views (STRUCT-CAL), aggregation (Gamma), trust scores, emergence, reasoning cycles. |
-| 09 | [Part C — Extensions](sections/09-part-c-kernel-extension-specifications/_index.md) | 73 | **Score, search, and architect**: epistemic quality, typed reasoning, measurement, decisions, search, agentic tool-use, quality bundles, temporal/causal/math lenses, architecture synthesis, structural adequacy, cultural evolution. |
+| 09 | [Part C — Extensions](sections/09-part-c-kernel-extension-specifications/_index.md) | 75 | **Score, search, and architect**: epistemic quality, typed reasoning, problem-for relations, measurement, decisions, bounded apparatus use, agentic tool-use, quality bundles, temporal/causal/math lenses, architecture synthesis, structural adequacy, cultural evolution. |
 | 10 | [Part D — Ethics](sections/10-part-d---multi-scale-ethics-and-conflict-optimization/_index.md) | 5 | **Resolve conflicts**: ethical trade-offs, bias auditing, safety overrides, conflict optimization. |
 | 11 | [Part E — Constitution and Authoring](sections/11-part-e-the-fpf-constitution-and-authoring-guides/_index.md) | 57 | **Apply, govern, and publish**: practical-use guidance, first-useful-result pattern application, framework forms and carriers, lexical discipline, multi-view publication, transformation flows, pattern quality, ontic/U-kind governance. |
 | 12 | [Part F — Unification](sections/12-part-f-the-unification-suite-concept-sets-sensecells-contextual-role-a/_index.md) | 21 | **Align vocabulary**: concept sets, sense cells, bridges, role descriptions, UTS, lexical continuity. |
