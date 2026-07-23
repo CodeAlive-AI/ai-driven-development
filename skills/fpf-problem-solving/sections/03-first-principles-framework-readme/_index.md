@@ -18,7 +18,7 @@ Begin with the project object at stake and the current question about it. FPF of
 ## Contents
 
 - [Decide Whether FPF Fits](01-decide-whether-fpf-fits.md) (49 lines) — Use FPF when ordinary discussion is no longer enough to keep work coherent. Typical signs:
-- [Practical-Use Cards](02-practical-use-cards.md) (177 lines) — Start with the current project question, not an ordinal route through FPF. The fifteen semantic keys below are stable identifiers, not steps. When several cards seem plausible, compare their...
+- [Practical-Use Cards](02-practical-use-cards.md) (178 lines) — Start with the current project question, not an ordinal route through FPF. The fifteen semantic keys below are stable identifiers, not steps. When several cards seem plausible, compare their...
 - [One-Minute Example](03-one-minute-example.md) (21 lines) — A platform team asks:
 - [What FPF Is](04-what-fpf-is.md) (17 lines) — FPF is a pattern language for disciplined thinking in projects where ordinary prose, local expert judgment, or one-off AI output is not enough.
 - [What FPF Is Not](05-what-fpf-is-not.md) (13 lines) — - a shrink-wrapped project methodology;

@@ -22,5 +22,5 @@
 - [F.15 - Static and Regression Conformance Harness for Unification](17-f-15---static-and-regression-conformance-harness-for-unifica.md) (460 lines) — "Prove locality and parsimony first; only then prove composition."
 - [F.16 - Worked‑Example Template (Cross‑Domain)](18-f-16---worked-example-template.md) (285 lines) — “Show the thought, not the tooling.”
 - [F.17 - Unified Term Sheet](19-f-17---unified-term-sheet.md) (552 lines) — Type: Lexical publication pattern (F)
-- [F.18 - Local-First Unification Naming Protocol](20-f-18---local-first-unification-naming-protocol.md) (452 lines) — Pattern state: stable pattern. Audience: engineer-managers, lead architects, ontology editors, and authors who must make one name reusable without turning that name into a hidden ontology.
+- [F.18 - Local-First Unification Naming Protocol](20-f-18---local-first-unification-naming-protocol.md) (482 lines) — Pattern state: stable pattern. Audience: engineer-managers, lead architects, ontology editors, and authors who must make one name reusable without turning that name into a hidden ontology.
 - [F.19 - Ontology-First Plain Technical Rewriting](21-f-19---ontology-first-plain-technical-rewriting.md) (235 lines) — Type: Plain-technical precision-restoration pattern

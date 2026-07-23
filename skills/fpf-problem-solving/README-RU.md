@@ -44,8 +44,8 @@ sections/
 | 03 | FPF Readme | 7 |
 | 04 | Preface | 21 |
 | 05 | Part A — Kernel Architecture | 22 |
-| 06 | A.IV.A — Signature Stack & Boundary | 27 |
-| 07 | A.V — Constitutional Principles | 40 |
+| 06 | A.IV.A — Signature Stack & Boundary | 28 |
+| 07 | A.V — Constitutional Principles | 41 |
 | 08 | Part B — Trans-disciplinary Reasoning | 25 |
 | 09 | Part C — Kernel Extensions | 75 |
 | 10 | Part D — Ethics & Conflict | 5 |
