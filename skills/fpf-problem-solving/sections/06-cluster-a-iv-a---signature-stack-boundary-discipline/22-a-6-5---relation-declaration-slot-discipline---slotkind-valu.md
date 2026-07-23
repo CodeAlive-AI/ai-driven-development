@@ -65,6 +65,8 @@ Apply relation-declaration slot discipline only after the direct relation and it
 
 Relation-declaration slot discipline is a rule set, not a durable U-kind. This pattern reuses `RelationSignature`, `SlotSpec`, `SlotKind`, `ValueKind`, and `RefKind` from the existing signature and relation vocabulary; it introduces no U-kind. The notation `U.RelationSlotDiscipline` is not admitted: it has no separate instances, identity rule, grounding rule, constructive assembly, or ontic settlement. The governed object in this pattern is one `SlotSpec` declaration belonging to one exact `RelationSignature`. Operation argument and result declarations remain under `A.6.1`; mathematical operands and their order remain representation elements under `C.29`.
 
+A.15.3 may cite one exact SlotSpec as the target of a planned participant designation inside a `U.WorkPlan`. That citation does not fill the SlotSpec, extend SlotSpec to another description family, make the planned designation an actual participant, or make the direct relation obtain. Planned operation arguments and results instead cite their exact A.6.1 declarations. No method-description, plan, work, evaluation, card, schema, or record field becomes a SlotSpec. A receiving episteme field may designate a participant under A.6.5 only through an explicit correspondence to one exact SlotSpec in one independently governed `RelationSignature`.
+
 #### A.6.5:4.1 - Keep pattern scope exact
 
 | Governed object | Governing pattern | What A.6.5 contributes |
@@ -74,6 +76,7 @@ Relation-declaration slot discipline is a rule set, not a durable U-kind. This p
 | `RelationSignature` declaration | `A.6.0` | complete `SlotSpec` declarations inside its vocabulary item |
 | Assertion that a predicate obtains | `C.2.1` and the direct claim pattern | no new assertion kind; the assertion can name exact relation participants |
 | Local derived kind of participants | `C.3` and `C.3.1` | a local kind whose extent rule selects actual participants corresponding to one declared relation-participant meaning; the SlotKind remains declaration-local |
+| Planned participant designation | `A.15.2` and `A.15.3` | one exact SlotSpec may be cited as the target of a planned filling; A.6.5 contributes only the declaration-local SlotKind, ValueKind, and refMode discipline and establishes neither the plan claim nor actual participation |
 
 None of these objects gets its identity or truth condition from A.6.5. A.6.5 governs typing discipline at their shared boundary.
 
@@ -282,6 +285,8 @@ A declaration episteme describes reusable relation semantics; a separate represe
 14. Ordinary use can stop before signatures, explicit occurrence identity, or C.3 kind derivation when the receiving use depends on none of them; typed reuse, occurrence identity, and local-kind quantification are independent thresholds, and none is a prerequisite for another.
 15. Relation-declaration slot discipline remains a rule set; its pattern name is not promoted to `U.RelationSlotDiscipline`.
 16. A relation fact, an episteme claim, and a locally derived kind are dispatched to their direct patterns without minting `RelationDefinedQualification` or `E.24.RC`.
+17. SlotSpecs occur only inside exact `RelationSignature` declarations for direct-relation participant meanings; method-description, operation, plan, work, evaluation, representation, card, schema, and record fields do not become SlotSpecs by shape or label, and any receiving-field use needs an explicit correspondence to one exact SlotSpec.
+18. An A.15.3 planned-filling row may cite an exact SlotSpec, but the planned designation remains plan content and establishes neither an actual participant nor relation obtaining.
 
 ### A.6.5:8 - Common Failure Modes and Repairs
 
@@ -295,6 +300,8 @@ A declaration episteme describes reusable relation semantics; a separate represe
 | Active grammar used as agency evidence | A relation, method, work, structure, or episteme is said to act. | Recover the acting `U.System`; keep relation, work, method, and transformation claims under their direct patterns. |
 | `BoundedContextSlot` or optional `ModelUseStructureSlot` added to generic role assignment | A discarded universal context or use qualifier enters the direct participant declaration. | Use holder system, role value, role-taxonomy episteme, and effective reference scheme; keep any selected model-use structure in the receiving assertion or use. |
 | A participant designation is promoted into a new qualification ontic | A value or reference in an episteme is mistaken for a further world-side object. | Apply the three-way dispatch in A.6.5:4.6: direct relation fact, assertion episteme, or current local participant kind. |
+| A method-description, operation, plan, work, evaluation, card, schema, or record field is called a SlotSpec | A reusable direct-relation participant declaration is invented from representation shape or broad wording. | Require the direct relation pattern, one exact RelationSignature and SlotSpec, and an explicit correspondence for any receiving field; route operation arguments/results to A.6.1 and other fields to their direct owners. |
+| An A.15.3 planned designation is treated as the actual relation participant | Plan content is mistaken for world-side participation and predicate satisfaction. | Keep the row in the WorkPlan; identify any later participant and obtaining relation independently under the direct pattern. |
 
 ### A.6.5:9 - Consequences
 
@@ -329,6 +336,7 @@ The predicate boundary prevents a second collapse. Natural language often verbal
 - `A.2.1` governs role-assignment predicate, identity, and participant meanings; A.6.5 governs their exact SlotSpec reading.
 - `C.2.1` governs episteme identity, assertion and description content, and their explicit fields. A field corresponds to a relation SlotSpec only when a compatible `RelationSignature` contains that SlotSpec for a participant meaning stated by the direct relation pattern.
 - `C.3` and `C.3.1` govern local participant kinds only when typed quantification or kind order is current.
+- `A.15.3` may cite an exact RelationSignature SlotSpec for a planned participant designation; A.15.2/A.15.3 govern the planned claim, the direct relation pattern owns the participant meaning and later actual-participation predicate, and A.6.5 supplies only SlotSpec declaration discipline. Operation arguments and results remain A.6.1 declarations.
 - `A.15.1` and `A.3.1` govern the constructive holonhood and identity of work and methods; `A.3.4` governs the actual-bounded-change identity of transformations; `E.18` governs selected transformation-flow structures over those independently governed transformations and adjacent loci.
 - `A.1`, `A.2`, and `A.15` keep acting systems, role values, role assignments, methods, and performed work distinct.
 - `A.2.4` governs compact episteme evidence-use and status-use relation SlotSpecs; `A.10` governs the full evidence-provenance path, and `F.10` governs durable status semantics. A.6.5 does not duplicate those relations or make the episteme a role holder.

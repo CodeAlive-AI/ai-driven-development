@@ -280,9 +280,9 @@ The lens is a compression device: one stable abstraction that keeps the relation
 
 #### A.6.P:4.2 — Kind‑explicit relation tokens (no umbrella meaning‑surrogates)
 
-For every in‑scope relational claim, authors SHALL select (or mint) an explicit **RelationKind token** as a declared vocabulary element.
+For every in-scope direct subject-relation claim that exits A.6.P as positive or governed negative, authors SHALL select an explicit admitted **RelationKind token** as a declared vocabulary element. An exact `A.6.1` operation-application binding, local `A.15.PROD`/`A.6.RCD` claim, or non-assertability result keeps its direct owner's semantics and is not coerced into this relation-kind family.
 
-A RelationKind token is authored as a `U.Signature`‑level vocabulary element with explicit SlotSpecs for its participant and qualifier positions (`⟨SlotKind, ValueKind, refMode⟩`). When no suitable token already exists, authors SHALL NOT improvise a one-off string by intuition. They SHALL use **F.18** for mint-or-reuse: use **MintNew** by default, build a seed candidate set, show an honest NQD-front, run the sense-seed read-through, and record why the selected token is chosen from the non-dominated front. Use **DocumentLegacy** only when the label is externally fixed and that status is stated explicitly.
+A RelationKind token is authored as a `U.Signature`‑level vocabulary element with explicit SlotSpecs for its participant and qualifier positions (`⟨SlotKind, ValueKind, refMode⟩`). When no suitable token already exists, authors SHALL NOT improvise a one-off string by intuition or let naming admit the kind. They SHALL first recover the exact governed relation value and complete its direct-pattern plus `A.6.RCD`/`E.24` admission when a relation kind is current. **F.8** then records the smallest truthful decision: `nameDirectPatternValue` only for that already settled value, or a local/alias/blocked result when durable naming is not justified. A durable name uses an **F.18** NameCard with a visible candidate set, rejected alternatives, and lineage; a public, Core-facing, durable, or cross-context term also uses an **F.17** term row. An externally fixed label remains quoted source wording or an explicit alias/source-retention decision unless those same prerequisites are met.
 
 **RelationKind relation specification skeleton (minimum, recipe-level).**
 For each `RelationKind` token, a conforming Context publication SHALL publish a vocabulary entry whose **signature-level definition** is paired with (or points to) an **L, A, D, and E-classified claim bundle** ("relation specification skeleton") that declares (at minimum):
@@ -494,6 +494,19 @@ If a ConstructorSignature is provided, it SHOULD (conceptually) declare, for eac
 **Publication note (recommended).**
 If the TargetSignature or relation-kind registry is published via MVPK, treat every face as a **view** (no new semantics), keep viewpoint accountability explicit, and prefer stable claim IDs (Claim Register) so downstream carriers cite claims rather than paraphrasing.
 
+#### A.6.P:4.11 — Exit to the pattern that governs the recovered relation
+
+A.6.P ends when an existing direct relation and its participants are selected; that direct pattern governs the relation. When generic relation recovery instead identifies one current claim at a method, intended-work, actual-work, production, evaluation, delivery, acceptance, transfer, or receiving-use boundary, apply `A.6.P.WMR` before selecting the final governor. `A.6.P.WMR` specializes only that relation-bearing claim: it returns one of four families: an exact direct subject-relation claim, positive or governed negative; an exact `A.6.1` operation-application binding; a local `A.15.PROD` claim or another local relation-bearing claim selected under `A.6.RCD` disposition 2; or an exact non-assertability result independently reasoned as `factually unsupported`, `missing-information`, or `missing-governor`. Only `missing-governor` is an ontology blocker that names the affected use and future owner.
+
+When the participant referents and named receiving claim are exact but no current direct relation closes that claim outside this specialization, exit to `A.6.RCD` rather than improvising a new relation or kind.
+
+| Recovered question | Governing exit |
+| --- | --- |
+| current method/work-boundary claim whose exact direct governor is still hidden | `A.6.P.WMR`, then one of its four truthful exits |
+| exact participants recovered but no current direct relation closes the named receiving claim | `A.6.RCD` |
+
+Any separate assertion, occurrence-identity, evidence, work, bridge, description, publication, or designation question remains with its own neighboring pattern.
+
 ### A.6.P:5 — Archetypal Grounding (System / Episteme)
 
 A.6.P requires Tell-Show-Show grounding in both System and Episteme cases.
@@ -602,9 +615,9 @@ A pattern P conforms to A.6.P (i.e., is an RPR‑pattern) iff:
 1. **CC‑A.6.P‑1 — Lens is explicit.**
    P SHALL name the stable lens used to stabilise the ambiguity cluster and justify its fit.
 
-2. **CC‑A.6.P‑2 — RelationKind is explicit and named through admissible mint-or-reuse.**
-   Every in‑scope relation claim SHALL name an explicit RelationKind token, and that token SHALL resolve to a vocabulary entry whose relation specification skeleton publishes (at minimum): polarity (and explicit inverses if needed), participant SlotSpecs `⟨SlotKind, ValueKind, refMode⟩`, qualifier requirements, witness expectations for decision or publication use, admissible semantic change classes, and (when applicable) cross-Context or cross-plane policy (Bridge + CL + loss notes). Claims classified under A.6.B SHALL respect A.6.B.
-   When a suitable token does not already exist, authors SHALL mint or document it through **F.18** rather than inventing a one-off label by intuition: **MintNew** is the default, the seed candidate set and NQD-front SHALL be shown, and the final token SHALL be selected from that non-dominated front unless an explicit continuity exception is recorded.
+2. **CC‑A.6.P‑2 — Direct RelationKind is explicit, admitted, then named.**
+   Every in-scope direct subject-relation claim that the specialization returns as positive or governed negative SHALL name an explicit admitted RelationKind token, and that token SHALL resolve to a vocabulary entry whose relation specification skeleton publishes (at minimum): polarity (and explicit inverses if needed), participant SlotSpecs `⟨SlotKind, ValueKind, refMode⟩`, qualifier requirements, witness expectations for decision or publication use, admissible semantic change classes, and (when applicable) cross-Context or cross-plane policy (Bridge + CL + loss notes). Claims classified under A.6.B SHALL respect A.6.B. An exact `A.6.1` operation-application binding, local `A.15.PROD`/`A.6.RCD` claim, or non-assertability result remains under its direct owner and is not made a RelationKind token or occurrence by this checklist.
+   When a suitable token does not already exist, authors SHALL first settle the governed relation value and any required kind admission, then record the applicable **F.8** decision. `nameDirectPatternValue` is admissible only for that settled value; otherwise keep a local phrase or alias, or return `blockOrLowerUse`. A durable selected name SHALL use **F.18** candidate comparison and lineage, and a public, Core-facing, durable, or cross-context term SHALL also publish the corresponding **F.17** row. Neither a NameCard nor a term row admits the relation kind or an occurrence.
    The relation specification skeleton SHALL also declare admissible **repair options for endpoint kind mismatches** (KindBridge / explicit narrowing / explicit retargeting) and enforce **qualifier placement discipline** (no adjective smuggling).
 
 3. **CC‑A.6.P‑3 — Slot‑explicit instances.**
@@ -650,6 +663,8 @@ A pattern P conforms to A.6.P (i.e., is an RPR‑pattern) iff:
 
 15. **CC‑A.6.P‑15 — Trigger rule is explicit.**
     P SHALL include an explicit trigger rule (or selection heuristic) stating when the repair case applies and what counts as “in-scope” umbrella relational prose.
+
+16. **CC‑A.6.P‑16 — Neighbor exit.** The repaired claim leaves A.6.P through one exact governing exit named in A.6.P:4.11. `A.6.RCD` is used only when exact participants are recovered and no current direct relation closes the named receiving claim.
 
 ### A.6.P:7a - Portfolio, front, archive, and shortlist disambiguation
 
@@ -772,8 +787,11 @@ These echoes justify why A.6.P is structured as: **stable lens -> explicit slots
 * **A.6.8 (RPR‑SERV)** — service polysemy unpacking as a relation and facet precision restoration discipline (serviceSituation lens + canonical rewrites + service‑specific tests and change narration).
 * **A.6.9 (RPR-XCTX)** - Cross-Context Sameness Disambiguation - Repairing cross-context "same", "equivalent", "align", or "map" via explicit Bridges
 * **A.6.H (RPR‑WHOLE)** — wholeness language unpacking (“whole, part, integrity, or complete”) into boundary, typed parthood, explicit Γ selection, order and time classification, and A.15 completeness and coverage claims.
+* **A.6.P.WMR** — exact relation recovery when method, work, input, result, production, delivery, acceptance, transfer, or receiving-use wording hides the current relation-bearing claim.
 
 **Coordinates with**
+
+* **A.6.RCD** — governs only the residual needed relation-bearing claim after exact participants are recovered and existing direct relations fail to close the named receiving use.
 
 * **A.6.S `U.SignatureEngineeringPair`** — RPR rewrite operations can be packaged as a ConstructorSignature for engineered relation specialisations; must preserve canonical verb mapping and effect‑free constructor semantics.
 * **A.19 `U.CharacteristicSpace` + `A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW`** — for declared characteristic spaces, guarded role references, and interpretive-view and atlas-view discipline when one relation repair needs those layers explicit.

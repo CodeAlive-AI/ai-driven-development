@@ -6,153 +6,156 @@
 
 ### C.3:0 - Use This When
 
-Use this pattern when a claim needs to say what kind of entity or value it quantifies over, which instances belong to that kind in a context slice, how intent and extent are related, and how typed compatibility affects composition.
+Use this pattern when a claim needs a context-local kind, a subkind order, a judgment about whether one exact candidate satisfies one local kind, or an optional representation of the candidates that satisfy it in one exact context slice.
 
-**What goes wrong if missed.** A source type, local category, programming class, schema shape, or public `U.*` name starts doing several jobs at once: membership, scope, construction basis, public kind admission, and sameness across reference schemes or context slices all blur.
+**What goes wrong if missed.** A source type, local category, programming class, schema label, mathematical set, or public `U.*` name starts doing several jobs at once. The kind is confused with its declaration, evidence is treated as membership, an unavailable fact becomes false, a current extension becomes ontology, or claim scope is stored on the kind.
 
-**What this buys.** Typed reasoning becomes reviewable before naming or ontology growth: the user can separate local `U.Kind` values, intent, extent, claim scope, bridge loss, and durable FPF U-kind admission.
+**What this buys.** Typed reasoning stays usable without premature ontology growth. A practitioner can recover the local kind, the declaration used to classify, one three-valued judgment, and any optional extension representation while leaving direct world-side features, evidence, scope, work, and durable U-kind admission with their own governors.
 
-Typical moments:
+**Primary EntityOfConcern.** One typed-reasoning use under an effective `U.ReferenceScheme`: the exact local `U.Kind` and any `U.SubkindOf` order needed by the claim, together with the C.3.2 classification question that the use actually asks.
 
-- two claims may be about different kinds of entities;
-- scope is being widened by abstract wording instead of supported slices;
-- a local kind needs membership, extension, bridge, or subkind reasoning;
-- a `U.Kind` or `U.SubkindOf` occurrence must be kept distinct from durable FPF U-kind admission.
+**First useful move.** Write the ordinary conclusion first. For example: `Pump #14 counts as a cooling pump in this plant slice because it satisfies the declared cooling-pump criterion.` Add a reusable declaration, explicit judgment details, evidence reference, or extension representation only when a named receiving use needs it.
 
-**Primary EntityOfConcern.** The EntityOfConcern is one typed-reasoning claim: one local `U.Kind` intent interpreted under an effective `U.ReferenceScheme`, its extent in an exact `U.ContextSlice`, membership, and typed compatibility.
-
-**First useful move.** Ask whether the current question is C.3 typed reasoning or U-kind admission. If it is U-kind admission, use `E.24.UK`. If it is claim quantification, stay in C.3.
-
-When a source ontology, schema, standard, class hierarchy, or top-level ontology supplies type, class, category, or subtype wording, C.3 may govern the local typed-reasoning claim. Use `E.24.UK` only when the source construct is being proposed as a public durable FPF U-kind or as part of an E.24 ontic settlement.
+**Not this pattern when.** Use `E.24.UK` when the question is durable public FPF U-kind admission. Use the direct subject pattern when the question is whether a physical quality, relation, construction, work occurrence, or other world-side feature obtains. Use `A.2.6` for claim, work, or publication scope and `C.29` for a claim-bearing mathematical representation.
 
 ### C.3:1 - Problem Frame
 
-Across source ontologies, reference schemes, and project slices, "type" can mean ontology class, programming type, schema shape, category, source label, or public FPF U-kind. C.3 provides a smaller discipline: `U.Kind` is a local value used for one typed-reasoning use under an effective `U.ReferenceScheme`, and its extent is evaluated over named `U.ContextSlice` values. It is not automatically a durable FPF U-kind and it does not by itself admit a `U.*` structural name. A C.3 `U.Kind` may be backed by construction, recognition, membership, or extent criteria for that use, but that basis remains local typed-reasoning law until `E.24.UK` admits durable FPF kindhood.
+Across source ontologies, reference schemes, and project slices, "type" can mean ontology class, programming type, schema shape, category, source label, local kind, or public FPF U-kind. C.3 provides the smaller typed-reasoning architecture. A context-local `U.Kind` can be used now without being promoted to a durable public kind; its declared intent, candidate judgment, current extension representation, and the scope of any assertion remain separate objects.
 
 ### C.3:2 - Problem
 
-A project often needs typed reasoning before it is doing ontology governance. The same working word may label a source category, a project-local grouping, a schema class, an ordinary-language kind, or a candidate public FPF U-kind. If the user treats all of these as the same object, the text starts making unsupported membership, scope, naming, and construction claims. C.3 keeps the current claim's local kind value visible while leaving durable U-kind admission to `E.24.UK`.
+A project often needs classification before it needs ontology governance. If the kind, its definition, the classified candidate, a record about the candidate, and a displayed set of current members are treated as one object, several false conclusions follow: a label classifies by itself, evidence creates the feature it reports, missing evidence proves non-membership, a table becomes an entity set, or a plan row becomes actual work. C.3 keeps each conclusion at its direct owner.
 
 ### C.3:3 - Forces
 
 | Force | Tension |
 | --- | --- |
 | Local typed reasoning vs public ontology growth | A project needs typed claims now, but not every useful local kind deserves a durable FPF `U.*` name. |
-| Intent vs extent | A definition, recognition rule, or construction basis may be clear while membership in the current context slice is disputed or stale. |
-| Scope vs kind | A claim can have a narrow scope without creating a narrower kind. |
-| Same wording vs same kind | Two reference schemes or context slices may reuse a label while membership criteria, bridges, and loss notes differ. |
-| Formal discipline vs working use | Users need enough typing to avoid category mistakes without turning every local distinction into ontology engineering. |
+| Kind vs declaration | A kind must remain usable across compatible declaration editions without becoming identical to the episteme that declares its criterion. |
+| Truth vs support | Direct candidate features make classification true or false; evidence can support an assertion about those features but cannot create them. |
+| False vs unknown | A known failed criterion differs from missing evidence, unavailable dependency, or out-of-domain input. |
+| Extent vs ontology | A set of true members can be useful for a query without becoming a collection holon, entity-set kind, or direct relation occurrence. |
+| Scope vs kind | A claim can have narrow scope without creating a narrower kind or storing scope on the kind. |
+| Formal discipline vs ordinary use | Repeated typed use may need a declaration; one readable case should not require a card or extension table. |
 
-### C.3:4 - Core Split
+### C.3:4 - Four Objects and Their Owners
 
-Keep four objects separate:
+Keep these four objects separately recoverable:
 
-| Object | Meaning |
-| --- | --- |
-| `U.Kind` | Local kind value naming what a claim quantifies over under an effective `U.ReferenceScheme`. |
-| Intent | The kind's signature, predicates, invariants, and formality-bearing definition. |
-| Extent | The instances belonging to the kind in one context slice. |
-| Scope | Where a claim holds; this belongs to claims or capabilities, not to kinds. |
+| Object | Meaning | Direct owner |
+| --- | --- | --- |
+| context-local `U.Kind` and `U.SubkindOf` order | The kind value used by the typed-reasoning claim and its local partial order. | `C.3` and `C.3.1` |
+| `KindSignature` | One `U.Signature` declaration episteme whose exact EntityOfConcern is the local kind and whose claim content declares the candidate `ValueKind`, criterion, slice conditions, reference scheme, assumptions, dependencies, formality, and any current `ExtentRule`. It is neither the kind nor another root U-kind. | `C.3.2`, `A.6.0`, and `C.2.1` |
+| classification judgment | One evaluation for an exact candidate, local kind, signature edition, and context slice with result `true`, `false`, or `unknown`. It is not a direct relation occurrence by default. | `C.3.2` |
+| `KindExtension(k, slice)` | An optional set-valued representation of the declared candidates whose judgment is `true` for the fixed signature edition and slice. | `C.3.2`, with `C.29` when the representation changes a claim-bearing use |
 
-Typed reasoning composes with F-G-R and USM by order: first typed compatibility, then scope coverage, then assurance and freshness penalties where relevant.
+Scope is not a fifth part of the kind. A `KindSignature` episteme may carry its own `U.ClaimScope`, and a separate classification assertion carries the scope of that assertion. The `U.ContextSlice` is an explicit input to the judgment.
 
 ### C.3:5 - Solution
 
-Use C.3 when the current claim is about typed compatibility, membership, kind intent, kind extent, or kind bridges across reference schemes or context slices.
+Use the lightest object that answers the current typed-reasoning question.
 
-Do not use C.3 to admit durable U-kind names. That decision belongs to `E.24.UK`, with `A.8`, `A.11`, `F.8`, and `F.18` when kernel-level or public naming force is current.
+1. **Recover the local kind.** State the effective `U.ReferenceScheme` and the typed-reasoning use. A local `U.Kind` is not automatically a durable FPF U-kind.
+2. **Use C.3.1 for order and continuity.** `U.SubkindOf` is a partial order over local kinds. C.3.1 also decides whether the same local kind continues when a declaration edition changes.
+3. **Use C.3.2 for declaration and judgment.** A repeated criterion may justify a `KindSignature`; one application judges an exact candidate against one exact edition in one exact slice.
+4. **Let direct features decide.** Direct qualities, relations, constructive grounding, or other governed candidate features make the criterion hold or fail. Measurements, observations, schemas, sources, and evidence support claims about those features; they do not constitute membership.
+5. **Keep three results.** A satisfied criterion gives `true`; a known failed criterion gives `false`; missing evidence, an unavailable declared dependency, or an out-of-domain candidate gives `unknown`. A guard may decline use on `unknown` without changing that judgment to `false`.
+6. **Materialize an extension only for use.** A query, quantification, comparison, or review may need `KindExtension(k, slice)`. The representation contains the true candidates for the fixed signature edition and slice; notation, rows, or set membership do not create an ontic collection or classification relation.
+7. **Keep scope, formality, and work separate.** Formality characterizes the declaration episteme. Scope belongs to claims or capabilities. `U.Work` is the admitted U-kind; `W : U.Work` is one independently grounded, world-side, dated 4D work occurrence; a plan, log, card, field bundle, or database row about W is a separate episteme. No kind symbol or record occupies an individual-occurrence position.
 
-Normative decisions:
+Typed reasoning composes with F-G-R and USM in this order: recover typed compatibility and the exact judgment; separately check claim-scope coverage; then apply evidence, assurance, freshness, and bridge consequences when the receiving use requires them.
 
-1. `U.Kind` is local to a declared typed-reasoning use and intent-bearing under an effective `U.ReferenceScheme`; its extent is evaluated over `U.ContextSlice` values.
-2. `U.SubkindOf` is a partial-order relation over C.3 `U.Kind` values.
-3. Kind intent and kind extent are different claims and may have different evidence.
-4. Kinds do not carry scope; claim scope and work scope remain USM values.
-5. Kind reuse across reference schemes or context slices requires bridge discipline and loss notes.
-6. Public `U.*` spelling in a heading, title, filename, or ToC row does not follow from C.3 typed reasoning.
-
-### C.3:6 - Decision Split With E.24.UK
-
-Use this decision split:
+### C.3:6 - Decision Split
 
 | Current question | Governing pattern |
 | --- | --- |
-| What kind of entity or value does this claim quantify over? | `C.3`, `C.3.1`, and dependent C.3 patterns |
-| Is this local kind a subkind of that local kind? | `C.3.1` |
-| Does this local typed-reasoning kind deserve a durable public FPF `U.*` name? | `E.24.UK`, then `F.8` and `F.5` or `F.18` |
-| Is the candidate universal enough for kernel-level status? | `A.8` after `E.24.UK` |
-| Can existing ontology express it without a new kind? | `A.11` after object recovery |
+| What local kind does this claim quantify over? | `C.3` and `C.3.1` |
+| Is one local kind a subkind of another, or does the same kind continue across a declaration change? | `C.3.1` |
+| Does this exact candidate satisfy this local kind under this declaration edition and context slice? | `C.3.2` |
+| Does a receiving use need the represented set of true members? | `C.3.2`; `C.29` when the representation itself changes a claim-bearing use |
+| Does the assertion hold in a target slice? | `A.2.6` for its `U.ClaimScope`; do not attach that scope to the kind |
+| Is the local kind being proposed as a durable public FPF `U.*` kind? | `E.24.UK`, followed by the applicable naming patterns |
+| Is a candidate, quality, relation, construction, or work occurrence being identified? | The direct subject pattern; C.3 consumes the governed result and does not create it |
 
-When typed reasoning is part of a structural construction-to-representation passage from a constructive representation or working model to a target kind or logical representation, cite `StructuralCT2RTypingGroundingUnfoldingStructureBlock` from `B.3.5`. `C.3` contributes the kind intent, extent, subkind, and bridge loci inside that B.3.5-governed local `A.22.CGUS` specialization. It does not create separate unfolding-structure authority and does not make the constructive trace, working-model relation, proof, or evidence relation true by label. For a general diagnostic return from an inadequate working account to the exact subject construction, use `A.7.1`; typed reasoning remains one possible locus rather than a general ontology-return method.
+When typed reasoning is part of a structural construction-to-representation passage from a constructive representation or working model to a target kind or logical representation, cite `StructuralCT2RTypingGroundingUnfoldingStructureBlock` from `B.3.5`. C.3 contributes only the local kind, judgment, subkind, and bridge loci inside that B.3.5-governed local `A.22.CGUS` specialization. It does not create separate unfolding-structure authority and does not make a constructive trace, working-model relation, proof, evidence relation, or classification true by label. For a general diagnostic return from an inadequate working account to the exact subject construction, use `A.7.1`; classification remains one possible locus rather than a general ontology-return method.
 
-The unfolding is admitted only when the block can name the starting representation, target kind or logical representation, bridge if current, preserved structure, lost or collapsed structure, `CL` or `CL^k`, admissible reuse, blocked substitution, and the proof or evidence governing pattern when that stronger claim is current.
+The unfolding is admitted only when the block names the starting representation, target kind or logical representation, current bridge when one is used, preserved structure, lost or collapsed structure, `CL` or `CL^k`, admissible reuse, blocked substitution, and the proof or evidence governing pattern when that stronger claim is current.
 
 ### C.3:7 - Archetypal Grounding
 
 | Situation | C.3 typed-reasoning move | Boundary |
 | --- | --- | --- |
-| A safety standard uses a source category such as "critical component". | Treat the category as a local `U.Kind` value interpreted under the selected reference scheme, with intent and extent criteria for the named context slices. | Do not mint a durable FPF U-kind unless `E.24.UK` admits the ontic and public naming case. |
-| A software schema has a `Customer` class. | Use C.3 to ask what claims quantify over instances matching that schema under the declared reference scheme and in the named context slice. | Do not assume the schema class is the same kind as a contractual customer, user role, payer, or account holder. |
-| A cross-discipline term appears with the same label in two traditions. | Keep kind reuse bridge-visible and record loss notes before comparing extents. | Same label is not sameness of kind or scope. |
-| A local project splits "robotic musical instrument" into several working categories. | Let local kinds support the current typed reasoning claim. | Public `U.*` spelling, FPF naming, and durable ontic admission remain outside C.3. |
+| Pump #14 is evaluated as a cooling pump. | Use one local kind, one declared criterion, one exact plant slice, and one `true`/`false`/`unknown` judgment. | The pump and its cooling, flow, and measured-state facts remain under direct physical and measurement governors. |
+| A maintenance episteme is classified while PDF and HTML forms circulate. | Judge the exact episteme against the local kind criterion. | Publication form and carrier do not decide membership. |
+| A temperature value is classified into an interval. | Keep the value under its unit and measurement interpretation and judge the value directly. | Do not fabricate a value-shaped entity merely to classify it. |
+| A schema labels a row `Customer`. | Treat the label as a cue to recover the actual candidate and criterion. | Schema spelling alone yields neither `true` nor a public U-kind. |
+| A measurement required by a criterion is unavailable. | Return `unknown`; let a safety guard decline the use separately. | Do not coerce missing information to `false`. |
+| A log row is labelled `inspection work`. | First identify any exact dated `W : U.Work` under `A.15.1`; only then can W be a candidate for a local kind. | The row, plan, or label is not W, and `U.Work` never occupies W's individual position. |
 
 ### C.3:8 - Bias-Annotation
 
-C.3 blocks two common biases. First, lexical bias: a familiar type word is treated as if it already carried intent, extent, scope, and public FPF kindhood. Second, ontology-growth bias: every useful project distinction is promoted into a durable `U.*` kind instead of remaining a local typed-reasoning value with bridge and scope discipline.
+C.3 counters lexical bias, document bias, and ontology-growth bias. A familiar type word or schema label does not supply the declared criterion. A record or evidence item does not create the candidate feature. A displayed set does not create a collection holon. The mitigation is the four-object split, direct-feature judgment, three-valued result, and progressive elaboration from one readable sentence.
 
 ### C.3:9 - Conformance Checklist
 
 | Check | Requirement |
 | --- | --- |
-| `CC-C3-1` | The text distinguishes C.3 `U.Kind` from durable FPF U-kind admission. |
-| `CC-C3-2` | Intent, extent, and scope are not collapsed. |
-| `CC-C3-3` | `U.SubkindOf` is used only as a partial-order relation over C.3 kinds unless another governing pattern explicitly says otherwise. |
-| `CC-C3-4` | Public `U.*` spelling, structural headings, and new U-kind claim are governed by `E.24.UK` before C.3 typed-reasoning values are published as public FPF names. |
-| `CC-C3-5` | Reuse across reference schemes or context slices uses bridge discipline rather than pretending that same wording gives sameness. |
+| `CC-C3-1` | The local `U.Kind` and any `U.SubkindOf` order remain distinct from durable FPF U-kind admission. |
+| `CC-C3-2` | Kind, `KindSignature`, classification judgment, and optional `KindExtension` are separately recoverable. |
+| `CC-C3-3` | The judgment names an exact candidate, kind, signature edition, context slice, and one of `true`, `false`, or `unknown`. |
+| `CC-C3-4` | Direct governed candidate features decide classification; evidence or representation does not create membership. |
+| `CC-C3-5` | Missing evidence, unavailable dependency, and out-of-domain input yield `unknown`, not `false`. |
+| `CC-C3-6` | Kind scope is absent; declaration and assertion scopes remain on their own epistemes, and `U.ContextSlice` remains an evaluation input. |
+| `CC-C3-7` | An extension is a representation of true candidates, not `U.EntitySet`, A.14 `MemberOf`, a collection holon, or a direct relation occurrence. |
+| `CC-C3-8` | Public `U.*` admission uses `E.24.UK`; cross-context kind use uses `C.3.3`. |
+| `CC-C3-9` | `U.Work`, an exact `W : U.Work`, and any episteme about W remain distinct. |
 
 ### C.3:10 - Common Anti-Patterns and How to Avoid Them
 
-* Treating a programming type, schema class, source ontology class, regulatory category, or everyday noun as a durable FPF U-kind without `E.24.UK`.
-* Treating a narrower claim scope as a narrower kind.
-* Treating same wording across reference schemes or context slices as the same kind without bridge and loss notes.
-* Treating current extent as the whole intent of the kind.
-* Treating intent clarity as proof that all disputed instances already belong to the extent.
+* Treating a programming type, schema class, source ontology class, regulatory category, or ordinary noun as a durable public FPF U-kind.
+* Treating a `KindSignature` as the kind, or attaching its formality and claim scope to the kind.
+* Using A.14 `MemberOf` or minting a classification relation merely to state one judgment.
+* Treating evidence availability, a schema row, or a publication form as the fact that makes classification true.
+* Returning `false` when the criterion cannot be evaluated.
+* Treating `KindExtension` or mathematical set notation as ontology.
+* Repairing a subkind counterexample by silently changing an extension table.
+* Treating a plan or work record as a dated work occurrence.
 
 ### C.3:11 - Consequences
 
-**Benefits.** C.3 lets users make typed claims without premature ontology growth; it keeps local membership, scope, and reuse across reference schemes or context slices inspectable.
+**Benefits.** C.3 supports local typed claims, subkind reasoning, classification, and queryable extensions without premature ontology growth or evidence-created membership.
 
-**Costs.** The user must state intent and extent when they matter and must not hide bridge loss behind familiar labels.
+**Costs.** Repeated uses must pin a declaration edition and context slice, and receiving uses must distinguish `false` from `unknown`.
 
-**Risks avoided.** The main avoided risks are false sameness, accidental public `U.*` minting, and category mistakes in selector, evidence, architecture, or method claims.
+**Risks avoided.** False sameness, implicit time, scope-on-kind, record ontology, accidental relation minting, kind/individual substitution, and mathematical-set overread are blocked at the first use.
 
 ### C.3:12 - Rationale
 
-Typed reasoning in FPF keeps the meaning rule, current members, and claim scope as different objects. That separation lets a project use typed compatibility locally without turning every project grouping, source class, or imported category into FPF ontology growth.
+The kind, its declaration, one classification judgment, and a representation of current true members answer different engineering questions and change for different reasons. Keeping them separate lets a kind continue across compatible declaration revisions, lets candidate state change an extension without changing the kind, and lets evidence or a guard change reliance without rewriting the world-side classification.
 
 ### C.3:13 - SoTA-Echoing
 
-Ontology engineering, model theory, and schema practice separate classification rules from current instances and from the scope of a particular assertion. C.3 adapts that discipline for FPF users by making `U.Kind` local to a declared typed-reasoning use and explicit about its reference scheme and context-slice extent, while `E.24.UK` governs durable public FPF U-kind admission. The practical safeguard is parsimony: typed reasoning remains available everywhere, but public kind growth requires an admitted ontic basis, identity and membership criteria, naming, and an admission case.
+Model theory, type systems, ontology engineering, and schema practice distinguish intensional declarations, candidate evaluation, extensions, and assertion scope. C.3 adapts that separation to FPF's object discipline: declaration epistemes follow `A.6.0` and `C.2.1`, context slices and claim scope follow `A.2.6`, mathematical representations follow `C.29`, and durable kind admission follows `E.24.UK`.
 
 ### C.3:14 - Detail Map
-
-C.3 is the head pattern for typed reasoning. It should not replay all C.3 mechanics, but it must leave the detailed loci visible.
+C.3 is the head pattern for typed reasoning. It leaves each detailed mechanism at its direct neighboring pattern while preserving a discoverable route to that mechanism.
 
 | Needed detail | Governing locus | Content carried there |
 | --- | --- | --- |
-| Intent and membership | `C.3.2` | `KindSignature`, formality, extension, membership, definedness, and the rule that kinds carry no claim scope. |
-| Kind reuse across reference schemes or context slices | `C.3.3` | KindBridge, the separate bridge treatment of kind and scope, loss notes, and target-slice membership evaluation. |
-| Local adaptation without cloning a kind | `C.3.4` | RoleMask, mask registration, mask adapters, and the boundary between masks and subkinds. |
-| Abstraction facet | `C.3.5` | KindAT levels, use limits, and catalog expectations. |
-| Typed guards and applied examples | `C.3.A` | Guard macros, regulatory categories, evidence and assurance use, method and work compatibility, and worked cross-scheme or cross-slice cases. |
+| Local kind order and continuity | `C.3.1` | `U.Kind`, `U.SubkindOf`, partial-order law, judgment monotonicity, and continuity across signature editions. |
+| Declaration, candidate judgment, and extension | `C.3.2` | `KindSignature`, exact four-key judgment, `true`/`false`/`unknown`, optional `KindExtension`, and scope/formality/evidence boundaries. |
+| Cross-context kind use | `C.3.3` | The direct `KindBridge` relation between exact source and target local kinds, its separate bridge-assertion episteme, declared preservation and loss, and target-context reevaluation under the exact target `KindSignature` edition. |
+| Local adaptation without cloning a kind | `C.3.4` | A `RoleMask` declaration episteme, its pinned base-kind judgment and additional candidate-feature constraints, the exact three-valued masked judgment, and any separately declared cross-context adapter. |
+| Abstraction facet | `C.3.5` | `KindAT` as an editorial planning facet on one exact local kind, with no effect on the kind, declaration, judgment, extension, bridge assessment, guard, or F–G–R. |
+| Typed guards and applied examples | `C.3.A` | Declaration-level kind compatibility and exact candidate-use judgments kept separate across regulatory, assurance, ESG, and Method–Work uses, including the independently grounded actual `W : U.Work` boundary. |
 
-Do not treat this compact head pattern as the whole C.3 discipline when a case needs membership, bridge, mask, abstraction, or applied-guard detail. Use the neighboring C.3 pattern that governs the live detail.
+Do not treat this compact head pattern as the whole C.3 discipline when a case needs declaration, classification, extension, bridge, mask, abstraction, or applied-guard detail. Use the neighboring C.3 pattern that governs the live detail.
 
 ### C.3:15 - Relations
 
-- **Builds on:** USM scope discipline, F-G-R, C.2.3 formality, and bridge patterns.
-- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `E.24.UK`, `A.8`, `A.11`, `F.8`, `F.5`, and generic `A.22.CGUS` when typed reasoning is one locus in an admitted unfolding structure; coordinates with `StructuralCT2RTypingGroundingUnfoldingStructureBlock` only when `C.3` supplies kind intent, extent, subkind, and bridge loci inside a structural construction-to-typed/logical projection, with any cross-scheme or cross-slice bridge remaining a bridge within that projection rather than an alternative trigger; coordinates with `A.7.1` for the general diagnostic return to an exact subject construction.
-- **Does not replace:** ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
+- **Builds on:** `A.2.6` context-slice and scope discipline, `A.6.0` reusable declaration discipline, `C.2.1` episteme identity, F-G-R, and direct subject patterns for candidate features.
+- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `C.29`, `E.24.UK`, `A.8`, `A.11`, `F.8`, `F.18`, and generic `A.22.CGUS` when typed reasoning is one locus in an admitted unfolding structure; coordinates with `StructuralCT2RTypingGroundingUnfoldingStructureBlock` only when C.3 supplies local-kind, judgment, subkind, and bridge loci inside a structural construction-to-typed/logical projection, with any cross-context bridge remaining a bridge within that projection rather than an alternative trigger; coordinates with `A.7.1` for a general diagnostic return.
+- **Does not replace:** direct candidate-feature ontology, A.14 collection membership, `A.2.6` scope, `C.29` representation use, ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
 
 ### C.3:End
 
