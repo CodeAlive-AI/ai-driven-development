@@ -37,7 +37,8 @@
       "backend": "gemini-cli",
       "model": "gemini-3.1-pro-preview",
       "role": "lateral",
-      "label": "Gemini"
+      "label": "Gemini",
+      "supports_delegate": false
     },
     "opencode": {
       "enabled": true,
@@ -47,13 +48,21 @@
       "role": "lateral",
       "label": "OpenCode GLM-5.2"
     },
+    "grok": {
+      "enabled": true,
+      "backend": "grok-build",
+      "model": "grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok 4.5 (native)"
+    },
     "opencode-xai-grok45": {
       "enabled": false,
       "backend": "opencode",
       "model": "xai/grok-4.5",
       "effort": "high",
       "role": "analyst",
-      "label": "xAI Grok 4.5"
+      "label": "xAI Grok 4.5 (OpenCode fallback)"
     },
     "claude-code": {
       "enabled": false,

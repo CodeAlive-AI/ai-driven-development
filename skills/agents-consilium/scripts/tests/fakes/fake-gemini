@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
+python3 -c '
+import json,sys
+print(json.dumps({"bin":"gemini","argv":sys.argv[1:]}))
+' -- "$@" >> "$LOG"
+echo 'FAKE_GEMINI_OK'
+exit 0

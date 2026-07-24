@@ -1,0 +1,58 @@
+#!/bin/bash
+set -euo pipefail
+LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
+python3 -c '
+import json,sys
+print(json.dumps({"bin":"grok","argv":sys.argv[1:]}))
+' -- "$@" >> "$LOG"
+
+MODE="${CONSILIUM_FAKE_GROK_MODE:-ok}"
+
+# Force line-buffered stdout so concurrent streaming tests observe events mid-flight.
+if command -v stdbuf >/dev/null 2>&1; then
+  # Re-exec under stdbuf only once
+  if [[ -z "${CONSILIUM_FAKE_GROK_STDBUF:-}" ]]; then
+    export CONSILIUM_FAKE_GROK_STDBUF=1
+    exec stdbuf -oL -eL "$0" "$@"
+  fi
+fi
+
+case "$MODE" in
+  ok)
+    echo '{"type":"thought","data":"thinking..."}'
+    echo '{"type":"text","data":"FAKE_"}'
+    echo '{"type":"text","data":"GROK_OK"}'
+    echo '{"type":"end","stopReason":"EndTurn","sessionId":"test"}'
+    exit 0
+    ;;
+  slow)
+    # Emit an early event, signal the test harness, sleep, then final/end.
+    # Proves progress is observable before the backend exits.
+    echo '{"type":"thought","data":"early-progress"}'
+    if [[ -n "${CONSILIUM_FAKE_SLOW_MARKER:-}" ]]; then
+      printf 'early\n' > "$CONSILIUM_FAKE_SLOW_MARKER"
+    fi
+    sleep "${CONSILIUM_FAKE_SLOW_SLEEP:-0.8}"
+    echo '{"type":"text","data":"FAKE_GROK_OK"}'
+    echo '{"type":"end","stopReason":"EndTurn","sessionId":"test"}'
+    exit 0
+    ;;
+  error-event)
+    echo '{"type":"text","data":"partial"}'
+    echo '{"type":"error","message":"boom"}'
+    echo '{"type":"end","stopReason":"Error"}'
+    exit 0
+    ;;
+  missing-end)
+    echo '{"type":"text","data":"no end"}'
+    exit 0
+    ;;
+  nonzero)
+    echo '{"type":"error","message":"failed"}'
+    exit 2
+    ;;
+  *)
+    echo '{"type":"error","message":"unknown fake mode"}'
+    exit 1
+    ;;
+esac

@@ -78,9 +78,16 @@
 #
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/common.sh"
-source "$SCRIPT_DIR/config.sh"
+LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=common.sh
+source "$LIB_DIR/common.sh"
+# shellcheck source=config.sh
+source "$LIB_DIR/config.sh"
+# shellcheck source=progress.sh
+source "$LIB_DIR/progress.sh"
+# shellcheck source=artifacts.sh
+source "$LIB_DIR/artifacts.sh"
+SCRIPT_DIR="$LIB_DIR"
 
 OUTPUT_FORMAT="markdown"
 INPUT_KIND="file"        # file | diff
@@ -93,8 +100,10 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)       OUTPUT_FORMAT="xml"; shift ;;
         --diff)      INPUT_KIND="diff"; shift ;;
-        --mode)      shift; REVIEW_MODE="${1:-}"; shift ;;
-        --mode=*)    REVIEW_MODE="${1#--mode=}"; shift ;;
+        --mode|--depth)
+                     shift; REVIEW_MODE="${1:-}"; shift ;;
+        --mode=*|--depth=*)
+                     REVIEW_MODE="${1#*=}"; shift ;;
         -a|--agents|--agent)
                      shift
                      IFS=',' read -ra _parts <<< "${1:-}"
@@ -117,10 +126,13 @@ done
 case "$REVIEW_MODE" in
     basic|specialists) ;;
     *)
-        echo -e "${RED}Error: --mode must be 'basic' or 'specialists' (got: '$REVIEW_MODE')${NC}" >&2
+        echo -e "${RED}Error: review_code depth must be basic|specialists (got: '$REVIEW_MODE'); super/ultra are separate pipelines${NC}" >&2
         exit $EXIT_USAGE
         ;;
 esac
+
+export CONSILIUM_MODE="review-code-$REVIEW_MODE"
+artifacts_init_run "code-$REVIEW_MODE"
 
 if [[ ${#INCLUDE_PATTERNS[@]} -eq 0 && -n "${CONSILIUM_AGENTS:-}" ]]; then
     IFS=',' read -ra INCLUDE_PATTERNS <<< "$CONSILIUM_AGENTS"
@@ -213,17 +225,6 @@ for i in "${!SPECIALIZATIONS[@]}"; do
     ASSIGN_ROLES+=("$role")
 done
 
-# --- Resolve backend script for each assigned agent ---
-backend_script() {
-    case "$1" in
-        codex-cli)   echo "$SCRIPT_DIR/codex-query.sh" ;;
-        gemini-cli)  echo "$SCRIPT_DIR/gemini-query.sh" ;;
-        opencode)    echo "$SCRIPT_DIR/opencode-query.sh" ;;
-        claude-code) echo "$SCRIPT_DIR/claude-query.sh" ;;
-        *)           echo "" ;;
-    esac
-}
-
 # --- Build the per-request user prompt ---
 # Code content is wrapped in CDATA so quotes, angle brackets, and xml-like
 # sequences in user code can't break the outer prompt framing.
@@ -308,33 +309,24 @@ fi
 
 declare -a PIDS OUT_FILES ERR_FILES KEYS
 total=${#ASSIGN_AGENTS[@]}
-echo -e "${CYAN}  CODE REVIEW (mode=$REVIEW_MODE) — $total pass(es): ${ASSIGN_AGENTS[*]} / roles=${ASSIGN_ROLES[*]}${NC}" >&2
-echo -e "${YELLOW}[Launching parallel specialist queries...]${NC}" >&2
+progress_stage "code-review" "depth=$REVIEW_MODE passes=$total agents=${ASSIGN_AGENTS[*]} roles=${ASSIGN_ROLES[*]}"
 
 for i in "${!ASSIGN_AGENTS[@]}"; do
     agent="${ASSIGN_AGENTS[$i]}"
     role="${ASSIGN_ROLES[$i]}"
-    backend="$(config_get_field "$agent" backend)"
-    script="$(backend_script "$backend")"
     key="${agent}.${role}"
     out="$RESP_DIR/${key}.out"
     err="$RESP_DIR/${key}.err"
 
-    if [[ -z "$script" || ! -x "$script" ]]; then
-        echo -e "${RED}Skipping '$agent/$role': backend '$backend' unavailable${NC}" >&2
-        : > "$out"
-        echo "backend unavailable: $backend" > "$err"
-        PIDS+=("")
-        OUT_FILES+=("$out"); ERR_FILES+=("$err"); KEYS+=("$key")
-        continue
-    fi
-
     prompt="$(make_prompt "$INPUT_KIND" "$INPUT_SOURCE_LABEL" "$CODE_CONTENT")"
     (
-        CONSILIUM_AGENT_ID="$agent" \
-        CONSILIUM_ROLE_OVERRIDE="$role" \
-        CONSILIUM_SKIP_OUTPUT_TEMPLATE=1 \
-        "$script" "$prompt" > "$out" 2>"$err"
+        export CONSILIUM_RUN_DIR
+        export CONSILIUM_SAVE_OUTPUTS
+        export CONSILIUM_SKIP_OUTPUT_TEMPLATE=1
+        # Live progress → parent stderr; also capture for failure reporting.
+        printf '%s' "$prompt" | "$LIB_DIR/backend_run.sh" \
+            --mode review --agent-id "$agent" --role "$role" \
+            >"$out" 2> >(tee "$err" >&2)
     ) &
     PIDS+=("$!")
     OUT_FILES+=("$out"); ERR_FILES+=("$err"); KEYS+=("$key")
@@ -378,8 +370,12 @@ if [[ $succeeded -eq 0 ]]; then
 fi
 
 # --- Parse + validate + render ---
-python3 "$SCRIPT_DIR/code_review_validate.py" \
+REPORT=$(mktemp)
+python3 "$LIB_DIR/code_review_validate.py" \
     --input-kind "$INPUT_KIND" \
     --input-path "$INPUT_SOURCE_LABEL" \
     --output-format "$OUTPUT_FORMAT" \
-    "$RESP_DIR"
+    "$RESP_DIR" > "$REPORT"
+artifacts_set_primary_final "$REPORT"
+cat "$REPORT"
+rm -f "$REPORT"
