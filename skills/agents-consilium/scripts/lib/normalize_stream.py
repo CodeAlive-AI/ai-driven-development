@@ -216,7 +216,12 @@ def main() -> int:
     if args.raw_out:
         raw_out_f = open(args.raw_out, "a", encoding="utf-8", errors="replace")
 
-    text_chunks: list[str] = []
+    text_out_f: Optional[TextIO] = None
+    if args.text_out:
+        # Stream final text to disk as it arrives. This avoids buffering an
+        # arbitrarily long model response in the normalizer's memory.
+        text_out_f = open(args.text_out, "w", encoding="utf-8")
+
     saw_end = False
     saw_error = False
     error_msg = ""
@@ -259,7 +264,9 @@ def main() -> int:
                 reporter.feed(typ, data)
 
             if typ == "text" and data is not None:
-                text_chunks.append(str(data))
+                if text_out_f is not None:
+                    text_out_f.write(str(data))
+                    text_out_f.flush()
             elif typ == "end":
                 saw_end = True
             elif typ == "error":
@@ -272,11 +279,8 @@ def main() -> int:
             inp.close()
         if raw_out_f is not None:
             raw_out_f.close()
-
-    final_text = "".join(text_chunks)
-    if args.text_out:
-        with open(args.text_out, "w", encoding="utf-8") as f:
-            f.write(final_text)
+        if text_out_f is not None:
+            text_out_f.close()
 
     if args.backend == "grok-build" and not args.no_validate:
         if saw_error:

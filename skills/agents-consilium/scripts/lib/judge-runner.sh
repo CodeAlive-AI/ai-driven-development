@@ -126,7 +126,6 @@ RAW_ERR="$TMP_DIR/raw-err.txt"
 (
     cd "$TMP_DIR"
     export CONSILIUM_SKIP_OUTPUT_TEMPLATE=1
-    export CODEX_FIRST_BYTE_DEADLINE="${ULTRAREVIEW_FIRST_BYTE:-3600}"
     export CONSILIUM_RUN_DIR="${CONSILIUM_RUN_DIR:-}"
     # Live progress → parent stderr; also capture for failure reporting.
     printf '%s' "$RENDERED_PROMPT" | "$BACKEND_SCRIPT" \

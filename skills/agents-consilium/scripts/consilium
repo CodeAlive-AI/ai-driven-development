@@ -54,7 +54,8 @@ delegate
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
-  AGENT_TIMEOUT, and per-backend model/effort overrides — see SKILL.md.
+  AGENT_TIMEOUT (opt-in; default unlimited), and per-backend model/effort
+  overrides — see SKILL.md.
 EOF
 }
 
