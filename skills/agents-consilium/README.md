@@ -104,6 +104,15 @@ Edit `config.json` or set `CONSILIUM_CONFIG`.
 
 Consilium drives backends via **direct headless CLI** (not ACP). Grok Build already has native ACP (`grok agent stdio`); a separate `grok-acp` is unnecessary. ACP is not the batch transport because review/delegate safety is CLI-flag enforcement, and Codex/Claude would need adapters — direct CLI is the uniform path with live stream observability.
 
+### Limits
+
+Consilium does not impose a timeout, maximum turn/step count, token budget, or
+response-length cap by default. Large prompts use stdin or a prompt file rather
+than argv, and complete raw/normalized/final outputs are archived without
+truncation. Provider context windows and limits configured inside each harness
+still apply. Set a positive `AGENT_TIMEOUT` only when an explicit watchdog is
+wanted (`0` or unset means unlimited).
+
 ---
 
 ## Tests

@@ -85,6 +85,20 @@ Architecture: `backend_cmd | normalize_stream.py --raw-out --progress --extract-
 
 Disable archival with `CONSILIUM_SAVE_OUTPUTS=0`.
 
+## Resource-limit contract
+
+Consilium is unlimited by default:
+
+- no wrapper timeout (`AGENT_TIMEOUT=0`);
+- no `max-turns`, step, token, response-length, or budget flags;
+- prompts travel over stdin or a temporary prompt file, never as large argv values;
+- raw, normalized, and final artifacts are not truncated;
+- final text is streamed to disk rather than buffered as one in-memory response.
+
+Provider context windows, model output limits, and limits in user/managed harness
+configuration still apply. To add an explicit watchdog for one invocation, set
+`AGENT_TIMEOUT` to a positive number of seconds.
+
 ## Transport: direct CLI (not ACP)
 
 Consilium uses **direct headless CLI** invocations for every backend (argv + stdout streams). It does **not** use the Agent Client Protocol as the batch transport.
@@ -165,7 +179,7 @@ EOF
 
 - `CONSILIUM_CONFIG`, `CONSILIUM_AGENTS`, `CONSILIUM_EXCLUDE`
 - `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR`, `CONSILIUM_SAVE_OUTPUTS`
-- `AGENT_TIMEOUT` (default 3600), `CODEX_FIRST_BYTE_DEADLINE`, `ULTRAREVIEW_FIRST_BYTE`
+- `AGENT_TIMEOUT` (`0`/unset = unlimited; positive integer = opt-in seconds)
 - Per-backend: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GEMINI_MODEL`, `GEMINI_API_KEY`
 
 ## Tests

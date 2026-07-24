@@ -28,7 +28,7 @@
 #   artifacts under $CONSILIUM_RUN_DIR when archival enabled
 #
 # Streaming architecture (structured backends):
-#   backend_cmd 2>stderr_file | normalize_stream.py --raw-out --progress --extract-text
+#   prompt_file -> backend_cmd 2>stderr_file | normalize_stream.py --raw-out --progress --extract-text
 #     • each raw stdout line is persisted immediately (--raw-out, flushed)
 #     • each event is normalized and written immediately (stdout → NORM_STREAM)
 #     • compact semantic progress reaches stderr before process completion
@@ -211,7 +211,7 @@ build_cmd_codex() {
 }
 
 build_cmd_claude() {
-    # Prompt is appended later as the -p argument value.
+    # -p enables headless print mode; the complete prompt is read from stdin.
     CMD=("$BIN")
     if [[ "$MODE" == "review" ]]; then
         CMD+=(--permission-mode plan)
@@ -230,7 +230,7 @@ build_cmd_claude() {
     else
         CMD+=(--output-format text)
     fi
-    CMD+=(-p)  # prompt follows
+    CMD+=(-p)
 }
 
 build_cmd_opencode() {
@@ -253,8 +253,9 @@ build_cmd_opencode() {
 }
 
 build_cmd_gemini() {
-    # review only — prompt appended later after -p
-    CMD=("$BIN" --model "$MODEL" --approval-mode plan -o text -e "" --allowed-mcp-server-names "" -p)
+    # Review only. Non-TTY stdin selects headless mode without putting the
+    # potentially large prompt in argv.
+    CMD=("$BIN" --model "$MODEL" --approval-mode plan -o text -e "" --allowed-mcp-server-names "")
 }
 
 build_cmd_grok() {
@@ -294,9 +295,7 @@ if [[ -n "${CONSILIUM_DUMP_ARGV:-}" ]]; then
     if [[ "$PROMPT_VIA_FILE" -eq 1 ]]; then
         dump_cmd+=(--prompt-file "__PROMPT_FILE__")
     elif [[ "$BACKEND" == "codex-cli" ]]; then
-        dump_cmd+=(-o "__LAST_MSG__" "__PROMPT__")
-    elif [[ "$BACKEND" == "claude-code" || "$BACKEND" == "gemini-cli" || "$BACKEND" == "opencode" ]]; then
-        dump_cmd+=("__PROMPT__")
+        dump_cmd+=(-o "__LAST_MSG__" -)
     fi
     printf '%s\0' "${dump_cmd[@]}" | AGENT_ID="$AGENT_ID" BACKEND="$BACKEND" MODE="$MODE" MODEL="$MODEL" DUMP_ARGV_PATH="$CONSILIUM_DUMP_ARGV" python3 -c '
 import json, os, sys
@@ -335,11 +334,13 @@ BACKEND_ERR="$TMP_DIR/stderr.txt"
 export PYTHONUNBUFFERED=1
 
 # Run a backend with concurrent line streaming through normalize_stream.py.
-# Args after backend name are the full command argv (including binary).
+# The second argument is an optional stdin file. Remaining args are the full
+# command argv (including binary). Large prompts never enter process argv.
 # Sets: BACKEND_RC, NORM_RC (and writes RAW_STREAM, NORM_STREAM, FINAL_TEXT).
 run_streamed() {
     local backend="$1"
-    shift
+    local stdin_file="$2"
+    shift 2
     local -a run_argv=("$@")
     local -a norm_argv=(
         python3 "$LIB_DIR/normalize_stream.py"
@@ -362,13 +363,25 @@ run_streamed() {
     set +o pipefail
     local -a _ps
     if [[ -n "$TIMEOUT_CMD" ]]; then
-        $TIMEOUT_CMD "${AGENT_TIMEOUT}s" "${run_argv[@]}" 2>"$BACKEND_ERR" \
-            | "${norm_argv[@]}" >"$NORM_STREAM"
-        _ps=("${PIPESTATUS[@]}")
+        if [[ -n "$stdin_file" ]]; then
+            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" "${run_argv[@]}" <"$stdin_file" 2>"$BACKEND_ERR" \
+                | "${norm_argv[@]}" >"$NORM_STREAM"
+            _ps=("${PIPESTATUS[@]}")
+        else
+            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" "${run_argv[@]}" 2>"$BACKEND_ERR" \
+                | "${norm_argv[@]}" >"$NORM_STREAM"
+            _ps=("${PIPESTATUS[@]}")
+        fi
     else
-        "${run_argv[@]}" 2>"$BACKEND_ERR" \
-            | "${norm_argv[@]}" >"$NORM_STREAM"
-        _ps=("${PIPESTATUS[@]}")
+        if [[ -n "$stdin_file" ]]; then
+            "${run_argv[@]}" <"$stdin_file" 2>"$BACKEND_ERR" \
+                | "${norm_argv[@]}" >"$NORM_STREAM"
+            _ps=("${PIPESTATUS[@]}")
+        else
+            "${run_argv[@]}" 2>"$BACKEND_ERR" \
+                | "${norm_argv[@]}" >"$NORM_STREAM"
+            _ps=("${PIPESTATUS[@]}")
+        fi
     fi
     BACKEND_RC=${_ps[0]:-1}
     NORM_RC=${_ps[1]:-0}
@@ -392,7 +405,7 @@ run_and_capture() {
 
     case "$BACKEND" in
         codex-cli)
-            run_streamed "codex-cli" "${CMD[@]}" -o "$LAST_MSG" "$FULL_PROMPT"
+            run_streamed "codex-cli" "$PROMPT_PATH" "${CMD[@]}" -o "$LAST_MSG" -
             exit_code=$BACKEND_RC
             # Codex authoritative final message is -o last-message when present
             if [[ -s "$LAST_MSG" ]]; then
@@ -405,7 +418,7 @@ run_and_capture() {
             fi
             ;;
         claude-code)
-            run_streamed "claude-code" "${CMD[@]}" "$FULL_PROMPT"
+            run_streamed "claude-code" "$PROMPT_PATH" "${CMD[@]}"
             exit_code=$BACKEND_RC
             if [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
                 python3 -c '
@@ -429,7 +442,7 @@ open(sys.argv[2],"w").write("".join(text) if text else open(sys.argv[1]).read())
             fi
             ;;
         opencode)
-            run_streamed "opencode" "${CMD[@]}" "$FULL_PROMPT"
+            run_streamed "opencode" "$PROMPT_PATH" "${CMD[@]}"
             exit_code=$BACKEND_RC
             if [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
                 if ! grep -q '^{' "$RAW_STREAM" 2>/dev/null; then
@@ -453,7 +466,7 @@ open(sys.argv[2],"w").write("".join(chunks))
             ;;
         gemini-cli)
             if command -v "$BIN" &>/dev/null || [[ -x "$BIN" ]]; then
-                run_streamed "plain" "${CMD[@]}" "$FULL_PROMPT"
+                run_streamed "plain" "$PROMPT_PATH" "${CMD[@]}"
                 exit_code=$BACKEND_RC
             else
                 echo "gemini CLI missing" >"$BACKEND_ERR"
@@ -465,7 +478,7 @@ open(sys.argv[2],"w").write("".join(chunks))
             ;;
         grok-build)
             # --prompt-file is the large-prompt one-shot headless path (see grok --help)
-            run_streamed "grok-build" "${CMD[@]}" --prompt-file "$PROMPT_PATH"
+            run_streamed "grok-build" "" "${CMD[@]}" --prompt-file "$PROMPT_PATH"
             exit_code=$BACKEND_RC
             ;;
     esac

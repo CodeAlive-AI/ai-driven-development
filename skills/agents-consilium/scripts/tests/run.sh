@@ -88,6 +88,11 @@ assert_contains "list-agents has grok-build backend" "$out" 'backend="grok-build
 out=$(env -u CONSILIUM_CONFIG "$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "default config resolves from skill root" "$out" 'id="grok"'
 
+timeout_state=$(env -u AGENT_TIMEOUT bash -c \
+  'source "$1"; printf "%s|%s" "$AGENT_TIMEOUT" "$TIMEOUT_CMD"' \
+  _ "$LIB_DIR/common.sh")
+assert_eq "default execution has no timeout" "$timeout_state" "0|"
+
 # Unknown command
 set +e
 "$CONSILIUM" foobar >/dev/null 2>&1
@@ -166,6 +171,53 @@ assert_contains "grok delegate always-approve" "$argv" "--always-approve"
 assert_not_contains "grok delegate no sandbox" "$argv" "--sandbox"
 assert_contains "grok delegate streaming-json" "$argv" "streaming-json"
 assert_contains "grok delegate prompt-file one-shot" "$argv" "--prompt-file"
+
+# Prompts must not be embedded in argv: large tasks are delivered over stdin
+# (or a temporary prompt file for Grok), avoiding the OS ARG_MAX ceiling.
+echo "=== Unbounded prompt transport ==="
+large_prompt="$TMP/large-prompt.txt"
+awk 'BEGIN {
+  printf "BEGIN_LARGE_PROMPT\n"
+  for (i = 0; i < 131072; i++) printf "x"
+  printf "\nEND_LARGE_PROMPT\n"
+}' > "$large_prompt"
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/large-prompt-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+for agent in codex claude-code opencode gemini-cli grok; do
+  export CONSILIUM_RUN_DIR="$TMP/run-large-$agent"
+  mkdir -p "$CONSILIUM_RUN_DIR"
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id "$agent" --raw \
+    < "$large_prompt" >/dev/null 2>"$TMP/large-$agent.err"
+done
+transport_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json
+import sys
+
+rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
+assert len(rows) == 5, rows
+for row in rows:
+    argv = "\0".join(row["argv"])
+    assert "BEGIN_LARGE_PROMPT" not in argv
+    assert "END_LARGE_PROMPT" not in argv
+    for forbidden in (
+        "--max-turns",
+        "--max-budget-usd",
+        "--max-tokens",
+        "--max-output-tokens",
+        "--max-steps",
+    ):
+        assert forbidden not in row["argv"], (row["bin"], forbidden, row["argv"])
+    if row["bin"] == "grok":
+        assert "--prompt-file" in row["argv"]
+    else:
+        data = row.get("stdin", "")
+        assert data.startswith("BEGIN_LARGE_PROMPT\n"), row["bin"]
+        assert data.endswith("\nEND_LARGE_PROMPT"), row["bin"]
+        assert len(data) > 131072, row["bin"]
+print("ok")
+PY
+)
+assert_eq "large prompts use stdin or prompt-file, never argv" "$transport_check" "ok"
 
 # Gemini cannot delegate
 set +e

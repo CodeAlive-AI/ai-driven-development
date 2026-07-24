@@ -11,7 +11,8 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-# Find timeout command (GNU coreutils on macOS is gtimeout)
+# Find timeout command (GNU coreutils on macOS is gtimeout). It is used only
+# when the caller explicitly sets a positive AGENT_TIMEOUT.
 if command -v timeout &> /dev/null; then
     TIMEOUT_CMD="timeout"
 elif command -v gtimeout &> /dev/null; then
@@ -20,26 +21,21 @@ else
     TIMEOUT_CMD=""
 fi
 
-# Default timeout: one hour. Override per invocation with AGENT_TIMEOUT.
-AGENT_TIMEOUT="${AGENT_TIMEOUT:-3600}"
+# Unlimited by default. A positive integer enables an explicit opt-in watchdog.
+AGENT_TIMEOUT="${AGENT_TIMEOUT:-0}"
+if ! [[ "$AGENT_TIMEOUT" =~ ^[0-9]+$ ]]; then
+    echo "Error: AGENT_TIMEOUT must be a non-negative integer (0 = unlimited)" >&2
+    exit 5
+fi
+if [[ "$AGENT_TIMEOUT" -eq 0 ]]; then
+    TIMEOUT_CMD=""
+fi
 
 # Full stdout archive for every backend call. This protects expensive long-form
 # answers from being lost when a terminal, parent agent, or UI truncates displayed
 # output. Override the directory with CONSILIUM_OUTPUT_DIR, or set
 # CONSILIUM_SAVE_OUTPUTS=0 to disable archival for a one-off run.
 CONSILIUM_OUTPUT_DIR="${CONSILIUM_OUTPUT_DIR:-${TMPDIR:-/tmp}/agents-consilium-outputs}"
-
-# Liveness deadline for codex: if the -o output file is still empty after this
-# many seconds, the wrapper kills the process. Keep the default aligned with
-# AGENT_TIMEOUT so quality-first reasoning can use the full one-hour budget;
-# explicit CODEX_FIRST_BYTE_DEADLINE still allows shorter local watchdogs.
-# Exported because run_with_timeout invokes the run_codex function inside a
-# `bash -c` subshell, which only inherits exported variables. Without export,
-# the watchdog evaluates `[[ $elapsed -ge $CODEX_FIRST_BYTE_DEADLINE ]]` with
-# the right-hand side empty — the test then misfires after the first 10-second
-# tick and kills codex pre-first-byte. Caught while wiring the specialists
-# review mode; no behavioural change beyond the default actually being honoured.
-export CODEX_FIRST_BYTE_DEADLINE="${CODEX_FIRST_BYTE_DEADLINE:-3600}"
 
 # Shared exit codes — agent-consumers can branch on these.
 EXIT_OK=0                  # everything succeeded (or agent was disabled/skipped cleanly)
@@ -322,7 +318,7 @@ warn_shell_special_in_prompt() {
     fi
 }
 
-# Run a command with optional timeout.
+# Run a command with an explicitly requested optional timeout.
 #
 # Important: stream stdout directly instead of capturing it in a shell variable.
 # Large LLM responses must remain available to the caller/redirect target even
