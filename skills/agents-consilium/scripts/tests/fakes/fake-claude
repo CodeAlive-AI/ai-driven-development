@@ -2,14 +2,35 @@
 set -euo pipefail
 LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
 python3 -c '
-import json,sys
-print(json.dumps({"bin":"claude","argv":sys.argv[1:],"stdin":sys.stdin.read()}))
+import json, os, sys
+print(json.dumps({
+    "bin": "claude",
+    "argv": sys.argv[1:],
+    "stdin": sys.stdin.read(),
+    "cwd": os.getcwd(),
+    "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
+    "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
+    "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
+    "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+}))
 ' -- "$@" >> "$LOG"
 
+MODE="${CONSILIUM_FAKE_CLAUDE_MODE:-ok}"
+
 if printf '%s\n' "$@" | grep -q -- 'stream-json'; then
-  echo '{"type":"content_block_delta","delta":{"type":"text_delta","text":"FAKE_CLAUDE_OK"}}'
-  echo '{"type":"result","result":"FAKE_CLAUDE_OK"}'
+  case "$MODE" in
+    result-only)
+      # Final result only — no content_block_delta events.
+      echo '{"type":"result","result":"FAKE_CLAUDE_RESULT"}'
+      ;;
+    *)
+      # Delta text deliberately differs from the authoritative result so tests
+      # can prove extract/backend prefer result (not concatenate or keep delta).
+      echo '{"type":"content_block_delta","delta":{"type":"text_delta","text":"FAKE_CLAUDE_DELTA"}}'
+      echo '{"type":"result","result":"FAKE_CLAUDE_RESULT"}'
+      ;;
+  esac
 else
-  echo 'FAKE_CLAUDE_OK'
+  echo 'FAKE_CLAUDE_RESULT'
 fi
 exit 0

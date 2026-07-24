@@ -183,10 +183,12 @@ awk 'BEGIN {
 }' > "$large_prompt"
 export CONSILIUM_FAKE_ARGV_LOG="$TMP/large-prompt-argv.jsonl"
 : > "$CONSILIUM_FAKE_ARGV_LOG"
+# Parent shells may carry a leftover FULL_PROMPT; backend_run must not re-export it.
+unset FULL_PROMPT 2>/dev/null || true
 for agent in codex claude-code opencode gemini-cli grok; do
   export CONSILIUM_RUN_DIR="$TMP/run-large-$agent"
   mkdir -p "$CONSILIUM_RUN_DIR"
-  "$LIB_DIR/backend_run.sh" --mode review --agent-id "$agent" --raw \
+  env -u FULL_PROMPT "$LIB_DIR/backend_run.sh" --mode review --agent-id "$agent" --raw \
     < "$large_prompt" >/dev/null 2>"$TMP/large-$agent.err"
 done
 transport_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
@@ -194,11 +196,14 @@ import json
 import sys
 
 rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
-assert len(rows) == 5, rows
-for row in rows:
+# Primary CLI rows only (ignore grok-prompt-meta helpers).
+primary = [r for r in rows if r.get("bin") in ("codex", "claude", "opencode", "gemini", "grok")]
+assert len(primary) == 5, primary
+for row in primary:
     argv = "\0".join(row["argv"])
     assert "BEGIN_LARGE_PROMPT" not in argv
     assert "END_LARGE_PROMPT" not in argv
+    assert row.get("has_FULL_PROMPT") is False, row["bin"]
     for forbidden in (
         "--max-turns",
         "--max-budget-usd",
@@ -214,6 +219,9 @@ for row in rows:
         assert data.startswith("BEGIN_LARGE_PROMPT\n"), row["bin"]
         assert data.endswith("\nEND_LARGE_PROMPT"), row["bin"]
         assert len(data) > 131072, row["bin"]
+# Grok body arrives via --prompt-file (meta row)
+meta = [r for r in rows if r.get("bin") == "grok-prompt-meta"]
+assert meta and meta[-1]["prompt_len"] > 131072, meta
 print("ok")
 PY
 )
@@ -445,6 +453,535 @@ set -e
 # May exit 0 with zero findings after validate, or still 0
 assert_eq "code review basic exit 0" "$rc" "0"
 assert_contains "code review progress" "$(cat "$TMP/code.err")" "code-review"
+
+echo "=== Claude stream-json: authoritative result wins over distinct delta ==="
+# Delta and result strings differ — final answer must be result, never delta/concat.
+export CONSILIUM_FAKE_CLAUDE_MODE=ok
+export CONSILIUM_RUN_DIR="$TMP/run-claude-dup"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/claude-dup-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+out=$(CONSILIUM_SINGLE_AGENT=1 "$LIB_DIR/backend_run.sh" \
+  --mode review --agent-id claude-code --raw "ping" 2>"$TMP/claude-dup.err")
+assert_eq "claude backend_run prefers result over delta" "$out" "FAKE_CLAUDE_RESULT"
+assert_not_contains "claude backend_run has no delta text" "$out" "FAKE_CLAUDE_DELTA"
+# Count occurrences in final artifact
+claude_final="$CONSILIUM_RUN_DIR/final/claude-code.txt"
+if [[ -f "$claude_final" ]]; then
+  count=$(grep -o 'FAKE_CLAUDE_RESULT' "$claude_final" | wc -l | tr -d ' ')
+  delta_count=$(grep -c 'FAKE_CLAUDE_DELTA' "$claude_final" 2>/dev/null || true)
+else
+  count=$(grep -o 'FAKE_CLAUDE_RESULT' <<<"$out" | wc -l | tr -d ' ')
+  delta_count=0
+fi
+delta_count="${delta_count:-0}"
+assert_eq "claude final artifact result once" "$count" "1"
+assert_eq "claude final artifact no delta" "$delta_count" "0"
+# Normalized stream still has both text delta and result events
+assert_file "claude raw artifact" "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl"
+assert_contains "claude raw has delta" "$(cat "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl")" "content_block_delta"
+assert_contains "claude raw has result" "$(cat "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl")" '"type":"result"'
+assert_file "claude normalized artifact" "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl"
+assert_contains "claude norm has text event" "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" '"type": "text"'
+assert_contains "claude norm has result event" "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" '"type": "result"'
+assert_contains "claude progress on stderr" "$(cat "$TMP/claude-dup.err")" "[consilium]"
+
+# result-only stream (no deltas)
+export CONSILIUM_FAKE_CLAUDE_MODE=result-only
+export CONSILIUM_RUN_DIR="$TMP/run-claude-result-only"
+mkdir -p "$CONSILIUM_RUN_DIR"
+out=$(CONSILIUM_SINGLE_AGENT=1 "$LIB_DIR/backend_run.sh" \
+  --mode review --agent-id claude-code --raw "ping" 2>"$TMP/claude-ro.err")
+assert_eq "claude result-only answer once" "$out" "FAKE_CLAUDE_RESULT"
+count=$(grep -o 'FAKE_CLAUDE_RESULT' <<<"$out" | wc -l | tr -d ' ')
+assert_eq "claude result-only count" "$count" "1"
+export CONSILIUM_FAKE_CLAUDE_MODE=ok
+
+# Unit-level: normalize_stream extract-text with *distinct* delta+result
+printf '%s\n' \
+  '{"type":"content_block_delta","delta":{"type":"text_delta","text":"DELTA_ONLY"}}' \
+  '{"type":"result","result":"RESULT_WINS"}' \
+  > "$TMP/claude-stream.jsonl"
+python3 "$LIB_DIR/normalize_stream.py" --backend claude-code --agent-id claude \
+  --input "$TMP/claude-stream.jsonl" --extract-text --text-out "$TMP/claude-extract.txt" \
+  --no-validate --progress >"$TMP/claude-norm.jsonl" 2>"$TMP/claude-norm.err"
+assert_eq "normalize claude result wins over delta" "$(cat "$TMP/claude-extract.txt")" "RESULT_WINS"
+assert_not_contains "normalize extract has no delta" "$(cat "$TMP/claude-extract.txt")" "DELTA_ONLY"
+assert_contains "normalize keeps result event" "$(cat "$TMP/claude-norm.jsonl")" '"type": "result"'
+assert_contains "normalize keeps text event" "$(cat "$TMP/claude-norm.jsonl")" '"type": "text"'
+
+printf '%s\n' \
+  '{"type":"result","result":"ONLY"}' \
+  > "$TMP/claude-stream-ro.jsonl"
+python3 "$LIB_DIR/normalize_stream.py" --backend claude-code --agent-id claude \
+  --input "$TMP/claude-stream-ro.jsonl" --extract-text --text-out "$TMP/claude-extract-ro.txt" \
+  --no-validate >/dev/null
+assert_eq "normalize claude result-only once" "$(cat "$TMP/claude-extract-ro.txt")" "ONLY"
+
+echo "=== Prompt > ARG_MAX; inherited FULL_PROMPT must not reach child ==="
+ARG_MAX_BYTES="$(getconf ARG_MAX 2>/dev/null || echo 262144)"
+# Slightly larger than ARG_MAX so an env export of the body would E2BIG.
+OVER_SIZE=$((ARG_MAX_BYTES + 4096))
+huge_prompt="$TMP/huge-prompt.txt"
+python3 -c '
+import sys
+n = int(sys.argv[1])
+sys.stdout.write("BEGIN_HUGE_PROMPT\n")
+sys.stdout.write("H" * n)
+sys.stdout.write("\nEND_HUGE_PROMPT\n")
+' "$OVER_SIZE" > "$huge_prompt"
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/huge-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-huge"
+mkdir -p "$CONSILIUM_RUN_DIR"
+# Start with an *inherited exported* FULL_PROMPT (do not env -u). backend_run
+# must unset it so the child does not see it, while still delivering >ARG_MAX body.
+export FULL_PROMPT="LEAKED_INHERITED_FULL_PROMPT_MUST_NOT_REACH_CHILD"
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id codex --raw \
+  < "$huge_prompt" >"$TMP/huge.out" 2>"$TMP/huge.err"
+huge_rc=$?
+set -e
+assert_eq "huge prompt backend exit 0" "$huge_rc" "0"
+assert_eq "huge prompt final answer" "$(cat "$TMP/huge.out")" "FAKE_CODEX_OK"
+huge_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" "$OVER_SIZE" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+assert rows, "no fake log rows"
+codex = [r for r in rows if r.get("bin") == "codex"]
+assert codex, rows
+row = codex[-1]
+assert row.get("has_FULL_PROMPT") is False, row
+stdin = row.get("stdin") or ""
+assert "LEAKED_INHERITED_FULL_PROMPT" not in stdin, stdin[:120]
+assert stdin.startswith("BEGIN_HUGE_PROMPT\n"), stdin[:80]
+assert stdin.rstrip().endswith("END_HUGE_PROMPT"), stdin[-80:]
+assert len(stdin) > int(sys.argv[2]), len(stdin)
+print("ok")
+PY
+)
+assert_eq "huge prompt reaches fake; FULL_PROMPT not in env" "$huge_check" "ok"
+
+# Grok path (prompt-file) also must not re-export inherited FULL_PROMPT
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-huge-grok"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export FULL_PROMPT="LEAKED_INHERITED_FULL_PROMPT_MUST_NOT_REACH_CHILD"
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id grok --raw \
+  < "$huge_prompt" >"$TMP/huge-grok.out" 2>"$TMP/huge-grok.err"
+huge_grok_rc=$?
+set -e
+assert_eq "huge grok exit 0" "$huge_grok_rc" "0"
+huge_grok_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" "$OVER_SIZE" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+meta = [r for r in rows if r.get("bin") == "grok-prompt-meta"]
+base = [r for r in rows if r.get("bin") == "grok"]
+assert base and meta, rows
+assert all(r.get("has_FULL_PROMPT") is False for r in base + meta), (base, meta)
+m = meta[-1]
+assert m["prompt_len"] > int(sys.argv[2]), m
+assert m["prompt_startswith"].startswith("BEGIN_HUGE_PROMPT")
+assert m["prompt_endswith"].endswith("END_HUGE_PROMPT")
+print("ok")
+PY
+)
+assert_eq "huge grok prompt-file; FULL_PROMPT absent" "$huge_grok_check" "ok"
+unset FULL_PROMPT 2>/dev/null || true
+
+echo "=== Delegate positional normalized off argv ==="
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/del-pos-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-del-pos"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+out=$("$CONSILIUM" delegate -a grok "implement positional task XYZ" 2>"$TMP/del-pos.err")
+rc=$?
+set -e
+assert_eq "delegate positional exit 0" "$rc" "0"
+assert_eq "delegate positional stdout" "$out" "FAKE_GROK_OK"
+del_pos_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip() and '"bin": "grok"' in l or '"bin":"grok"' in l.replace(" ","")]
+# parse properly
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+grok = [r for r in rows if r.get("bin") == "grok"]
+assert grok, rows
+argv = grok[-1]["argv"]
+joined = "\0".join(argv)
+assert "implement positional task XYZ" not in joined, argv
+assert "--prompt-file" in argv
+print("ok")
+PY
+)
+assert_eq "delegate positional not in backend argv" "$del_pos_check" "ok"
+# --prompt-file path still works
+printf 'from file task\n' > "$TMP/del-file-prompt.txt"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-del-file"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+out=$("$CONSILIUM" delegate -a grok --prompt-file "$TMP/del-file-prompt.txt" 2>"$TMP/del-file.err")
+rc=$?
+set -e
+assert_eq "delegate --prompt-file exit 0" "$rc" "0"
+assert_eq "delegate --prompt-file stdout" "$out" "FAKE_GROK_OK"
+
+echo "=== Discovery/judge backends run from caller CWD ==="
+# discovery-pass must not cd into empty temp; fake records cwd.
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/cwd-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+CALLER_CWD="$TMP/project-cwd"
+mkdir -p "$CALLER_CWD"
+printf 'def x():\n    return 1\n' > "$CALLER_CWD/app.py"
+body_file="$TMP/cwd-body.txt"
+awk '{printf "%4d  %s\n", NR, $0}' "$CALLER_CWD/app.py" > "$body_file"
+# Minimal prompt template with placeholders
+printf 'ROLE={{ROLE}}\nBODY:\n{{INPUT_BODY}}\n{{CAP_DIRECTIVE}}\n' > "$TMP/cwd-prompt.txt"
+export CONSILIUM_RUN_DIR="$TMP/run-cwd"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+(
+  cd "$CALLER_CWD"
+  "$LIB_DIR/discovery-pass.sh" \
+    --agent grok --role analyst --cap uncapped \
+    --prompt "$TMP/cwd-prompt.txt" \
+    --input-kind file --input-label app.py \
+    --input-body-file "$body_file" \
+    --out "$TMP/cwd-out.xml"
+) >"$TMP/cwd-pass.out" 2>"$TMP/cwd-pass.err"
+cwd_rc=$?
+set -e
+assert_eq "discovery-pass exit 0" "$cwd_rc" "0"
+cwd_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" "$CALLER_CWD" <<'PY'
+import json, os, sys
+want = os.path.realpath(sys.argv[2])
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+got = [os.path.realpath(r["cwd"]) for r in rows if "cwd" in r]
+assert got, rows
+assert all(c == want for c in got), (got, want)
+print("ok")
+PY
+)
+assert_eq "discovery backend cwd is caller project" "$cwd_check" "ok"
+
+echo "=== Artifact keys disambiguate agent role reuse ==="
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/art-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-art-reuse"
+mkdir -p "$CONSILIUM_RUN_DIR"
+# One agent, two roles in parallel (basic mode with single agent)
+set +e
+out=$("$CONSILIUM" review code --depth basic -a codex "$FIX/sample.py" 2>"$TMP/art.err")
+rc=$?
+set -e
+assert_eq "artifact reuse review exit 0" "$rc" "0"
+# Expect codex.security and codex.correctness artifacts (not a single codex.txt overwrite)
+assert_file "artifact codex.security final" "$CONSILIUM_RUN_DIR/final/codex.security.txt"
+assert_file "artifact codex.correctness final" "$CONSILIUM_RUN_DIR/final/codex.correctness.txt"
+assert_file "artifact codex.security raw" "$CONSILIUM_RUN_DIR/raw/codex.security.jsonl"
+assert_file "artifact codex.correctness raw" "$CONSILIUM_RUN_DIR/raw/codex.correctness.jsonl"
+# Ordinary single-agent ask still uses plain agent id
+export CONSILIUM_RUN_DIR="$TMP/run-art-ask"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_RAW_PROMPT=1
+set +e
+"$CONSILIUM" review ask -a grok "plain ask" >/dev/null 2>"$TMP/art-ask.err"
+set -e
+assert_file "ask artifact plain agent id" "$CONSILIUM_RUN_DIR/final/grok.txt"
+
+echo "=== review code exit codes: partial / all-fail / all-ok ==="
+# all-ok already covered above (exit 0). Partial: one agent fails mid-pass.
+# Force grok fail mode while codex succeeds — assign both via two agents.
+export CONSILIUM_FAKE_GROK_MODE=fail
+export CONSILIUM_RUN_DIR="$TMP/run-code-partial"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_RAW_PROMPT=
+set +e
+out=$("$CONSILIUM" review code --depth basic -a codex,grok "$FIX/sample.py" 2>"$TMP/code-partial.err")
+partial_rc=$?
+set -e
+# With 2 agents and 2 roles: codex→security, grok→correctness. grok fails → partial.
+assert_eq "code review partial exit 2" "$partial_rc" "2"
+# Report still emitted from successful specialist(s) on stdout and/or final.txt
+partial_has_output=0
+[[ -n "$out" ]] && partial_has_output=1
+[[ -s "${CONSILIUM_RUN_DIR}/final.txt" ]] && partial_has_output=1
+assert_eq "partial emits report from successes" "$partial_has_output" "1"
+
+# all fail
+export CONSILIUM_FAKE_GROK_MODE=fail
+# Make codex fail too via a wrapper — use only grok for both roles
+export CONSILIUM_RUN_DIR="$TMP/run-code-allfail"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+out=$("$CONSILIUM" review code --depth basic -a grok "$FIX/sample.py" 2>"$TMP/code-allfail.err")
+allfail_rc=$?
+set -e
+assert_eq "code review all-fail exit 3" "$allfail_rc" "3"
+export CONSILIUM_FAKE_GROK_MODE=ok
+
+echo "=== Failure stderr not duplicated ==="
+# Use missing-end so a known normalize diagnostic is always present once.
+export CONSILIUM_FAKE_GROK_MODE=missing-end
+export CONSILIUM_RUN_DIR="$TMP/run-stderr-dup"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_RAW_PROMPT=1
+set +e
+"$CONSILIUM" review ask -a grok "fail please" >"$TMP/stderr-dup.out" 2>"$TMP/stderr-dup.err"
+set -e
+export CONSILIUM_FAKE_GROK_MODE=ok
+# progress_agent_done failed line should appear once (live via tee, not re-catted)
+fail_lines=$(grep -c 'status=failed' "$TMP/stderr-dup.err" 2>/dev/null || true)
+fail_lines="${fail_lines:-0}"
+assert_eq "failed status once on stderr" "$fail_lines" "1"
+# Known diagnostic must appear exactly once (not <=1 — zero would be a false green).
+norm_err_count=$(grep -c 'grok stream missing end event' "$TMP/stderr-dup.err" 2>/dev/null || true)
+norm_err_count="${norm_err_count:-0}"
+assert_eq "normalize error exactly once on stderr" "$norm_err_count" "1"
+# backend stderr banner from backend_run should not be doubled
+banner_count=$(grep -c 'backend stderr:' "$TMP/stderr-dup.err" 2>/dev/null || true)
+banner_count="${banner_count:-0}"
+assert_le "backend stderr banner not duplicated" "$banner_count" "1"
+
+echo "=== No-FIFO redirect-failure path terminates promptly ==="
+# Old named-FIFO design could hang forever if the writer never opened.
+# Force a failed stdout redirect (OUT is a directory) and supervise externally
+# (harness timeout only — no internal AGENT_TIMEOUT required).
+mkdir -p "$TMP/bad-out-as-dir"
+printf 'BODY={{INPUT_BODY}}\n' > "$TMP/redir-prompt.txt"
+printf '1  code\n' > "$TMP/redir-body.txt"
+export CONSILIUM_RUN_DIR="$TMP/run-redir-fail"
+mkdir -p "$CONSILIUM_RUN_DIR"
+redir_out=$(python3 - "$LIB_DIR/discovery-pass.sh" "$TMP" <<'PY'
+import subprocess, sys, os
+script, tmp = sys.argv[1], sys.argv[2]
+cmd = [
+    script,
+    "--agent", "grok", "--role", "analyst", "--cap", "uncapped",
+    "--prompt", os.path.join(tmp, "redir-prompt.txt"),
+    "--input-kind", "file", "--input-label", "x",
+    "--input-body-file", os.path.join(tmp, "redir-body.txt"),
+    "--out", os.path.join(tmp, "bad-out-as-dir"),  # directory → redirect fails
+]
+try:
+    p = subprocess.run(cmd, capture_output=True, text=True, timeout=8,
+                       env=os.environ.copy())
+    print(f"DONE:{p.returncode}")
+except subprocess.TimeoutExpired:
+    print("HUNG")
+PY
+)
+assert_not_contains "redirect-failure did not hang" "$redir_out" "HUNG"
+assert_contains "redirect-failure terminated" "$redir_out" "DONE:"
+# Non-zero exit expected (failed invocation)
+redir_rc="${redir_out#DONE:}"
+if [[ "$redir_rc" != "0" && "$redir_rc" != "HUNG" && -n "$redir_rc" ]]; then
+  echo "  PASS  redirect-failure non-zero exit ($redir_rc)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  redirect-failure non-zero exit (got $redir_rc)"
+  FAIL=$((FAIL+1))
+fi
+
+echo "=== discovery-pass grep -c zero findings (no double-zero) ==="
+# Empty findings output still reports "0 finding(s)" not "0\n0"
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/grep0-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-grep0"
+mkdir -p "$CONSILIUM_RUN_DIR"
+# Use a fake that returns non-finding text (FAKE_GROK_OK has no <finding>)
+printf 'BODY={{INPUT_BODY}}\n' > "$TMP/grep0-prompt.txt"
+printf '1  code\n' > "$TMP/grep0-body.txt"
+set +e
+"$LIB_DIR/discovery-pass.sh" \
+  --agent grok --role analyst --cap uncapped \
+  --prompt "$TMP/grep0-prompt.txt" \
+  --input-kind file --input-label x \
+  --input-body-file "$TMP/grep0-body.txt" \
+  --out "$TMP/grep0-out.xml" \
+  >"$TMP/grep0.out" 2>"$TMP/grep0.err"
+grep0_rc=$?
+set -e
+assert_eq "discovery zero-findings exit 0" "$grep0_rc" "0"
+# Must be exactly "0 finding(s)" once — not "0\n0 finding(s)"
+assert_contains "zero findings message" "$(cat "$TMP/grep0.err")" "0 finding(s)"
+# Reject the double-zero bug: "0\n0 finding" or "00 finding"
+assert_not_contains "no double-zero bug" "$(cat "$TMP/grep0.err" | tr '\n' ' ')" "0 0 finding"
+
+echo "=== Explicit distinct artifact keys for multi-pass discovery + judge ==="
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/artkey-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+export CONSILIUM_RUN_DIR="$TMP/run-artkeys"
+mkdir -p "$CONSILIUM_RUN_DIR"
+# Poison ambient key — fan-out must not use it for both passes.
+export CONSILIUM_ARTIFACT_KEY="ambient.poison.key"
+printf 'BODY={{INPUT_BODY}}\n' > "$TMP/artkey-prompt.txt"
+printf '1  code\n' > "$TMP/artkey-body.txt"
+set +e
+"$LIB_DIR/discovery-pass.sh" \
+  --agent grok --role analyst --cap uncapped \
+  --prompt "$TMP/artkey-prompt.txt" \
+  --input-kind file --input-label x \
+  --input-body-file "$TMP/artkey-body.txt" \
+  --out "$TMP/artkey-a.xml" \
+  --artifact-key "discovery-small.0.grok.analyst" \
+  >"$TMP/artkey-a.out" 2>"$TMP/artkey-a.err"
+"$LIB_DIR/discovery-pass.sh" \
+  --agent grok --role lateral --cap uncapped \
+  --prompt "$TMP/artkey-prompt.txt" \
+  --input-kind file --input-label x \
+  --input-body-file "$TMP/artkey-body.txt" \
+  --out "$TMP/artkey-b.xml" \
+  --artifact-key "discovery-small.1.grok.lateral" \
+  >"$TMP/artkey-b.out" 2>"$TMP/artkey-b.err"
+set -e
+assert_file "discovery key 0 final" "$CONSILIUM_RUN_DIR/final/discovery-small.0.grok.analyst.txt"
+assert_file "discovery key 1 final" "$CONSILIUM_RUN_DIR/final/discovery-small.1.grok.lateral.txt"
+assert_file "discovery key 0 raw" "$CONSILIUM_RUN_DIR/raw/discovery-small.0.grok.analyst.jsonl"
+assert_file "discovery key 1 raw" "$CONSILIUM_RUN_DIR/raw/discovery-small.1.grok.lateral.jsonl"
+# Ambient poison must not be the only artifact written
+if [[ -f "$CONSILIUM_RUN_DIR/final/ambient.poison.key.txt" ]]; then
+  echo "  FAIL  ambient artifact key was used"
+  FAIL=$((FAIL+1))
+else
+  echo "  PASS  ambient artifact key not used for discovery"
+  PASS=$((PASS+1))
+fi
+
+# Judge primary vs fallback distinct keys; inherited legacy body must not reach child.
+printf '<findings/>\n' > "$TMP/judge-findings.xml"
+printf 'line one\n' > "$TMP/judge-source.py"
+# Minimal judge prompt that still renders placeholders
+printf 'KIND={{INPUT_KIND}}\nLABEL={{INPUT_LABEL}}\nBODY={{INPUT_BODY}}\nFINDINGS={{FINDINGS_BODY}}\n{"verdicts":[]}\n' \
+  > "$TMP/judge-prompt.txt"
+export JUDGE_INPUT_BODY="LEGACY_MARKER_MUST_NOT_REACH_BACKEND_CHILD"
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/judge-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+set +e
+"$LIB_DIR/judge-runner.sh" \
+  --agent grok \
+  --findings "$TMP/judge-findings.xml" \
+  --source "$TMP/judge-source.py" \
+  --input-kind file \
+  --out "$TMP/verdicts-primary.json" \
+  --prompt "$TMP/judge-prompt.txt" \
+  --artifact-key "judge.primary.grok" \
+  >"$TMP/judge-p.out" 2>"$TMP/judge-p.err"
+j1=$?
+"$LIB_DIR/judge-runner.sh" \
+  --agent codex \
+  --findings "$TMP/judge-findings.xml" \
+  --source "$TMP/judge-source.py" \
+  --input-kind file \
+  --out "$TMP/verdicts-fallback.json" \
+  --prompt "$TMP/judge-prompt.txt" \
+  --artifact-key "judge.fallback.codex" \
+  >"$TMP/judge-f.out" 2>"$TMP/judge-f.err"
+j2=$?
+set -e
+# Fake backends emit non-JSON answers → stable schema-failure exit 2; artifacts still written.
+assert_eq "judge primary schema-failure exit" "$j1" "2"
+assert_eq "judge fallback schema-failure exit" "$j2" "2"
+assert_file "judge primary artifact" "$CONSILIUM_RUN_DIR/final/judge.primary.grok.txt"
+assert_file "judge fallback artifact" "$CONSILIUM_RUN_DIR/final/judge.fallback.codex.txt"
+judge_env_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+assert rows, "no fake log"
+# Every backend child must not see legacy body env markers.
+for r in rows:
+    assert r.get("has_JUDGE_INPUT_BODY") is not True, r
+    assert r.get("has_JR_INPUT_BODY") is not True, r
+    assert r.get("has_JR_FINDINGS_BODY") is not True, r
+print("ok")
+PY
+)
+assert_eq "judge legacy body env absent in backend" "$judge_env_check" "ok"
+unset JUDGE_INPUT_BODY CONSILIUM_ARTIFACT_KEY 2>/dev/null || true
+
+# Direct call without --artifact-key gets an invocation-unique default (not ambient).
+export CONSILIUM_ARTIFACT_KEY="ambient.poison.key"
+export CONSILIUM_RUN_DIR="$TMP/run-artkey-default"
+mkdir -p "$CONSILIUM_RUN_DIR"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+set +e
+"$LIB_DIR/discovery-pass.sh" \
+  --agent grok --role analyst --cap uncapped \
+  --prompt "$TMP/artkey-prompt.txt" \
+  --input-kind file --input-label x \
+  --input-body-file "$TMP/artkey-body.txt" \
+  --out "$TMP/artkey-default.xml" \
+  >"$TMP/artkey-def.out" 2>"$TMP/artkey-def.err"
+set -e
+# Must not write under ambient.poison.key
+if [[ -f "$CONSILIUM_RUN_DIR/final/ambient.poison.key.txt" ]]; then
+  echo "  FAIL  default key ignored ambient (wrote ambient key)"
+  FAIL=$((FAIL+1))
+else
+  echo "  PASS  default discovery key ignores ambient"
+  PASS=$((PASS+1))
+fi
+# Some discovery.*.txt should exist
+default_arts=$(find "$CONSILIUM_RUN_DIR/final" -name 'discovery.*.txt' 2>/dev/null | wc -l | tr -d ' ')
+if [[ "${default_arts:-0}" -ge 1 ]]; then
+  echo "  PASS  default discovery wrote invocation-unique artifact"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  default discovery wrote invocation-unique artifact (found $default_arts)"
+  FAIL=$((FAIL+1))
+fi
+unset CONSILIUM_ARTIFACT_KEY 2>/dev/null || true
+
+echo "=== Bash 3.2 required-arg validation (exit 5) ==="
+# Invoke under /bin/bash so Apple Bash 3.2 paths are exercised (no ${var,,}).
+set +e
+/bin/bash "$LIB_DIR/discovery-pass.sh" --role analyst \
+  >"$TMP/disc-miss.out" 2>"$TMP/disc-miss.err"
+dmiss_rc=$?
+/bin/bash "$LIB_DIR/judge-runner.sh" --agent grok \
+  >"$TMP/judge-miss.out" 2>"$TMP/judge-miss.err"
+jmiss_rc=$?
+set -e
+assert_eq "discovery-pass missing required exit 5" "$dmiss_rc" "5"
+assert_contains "discovery-pass missing required diagnostics" \
+  "$(cat "$TMP/disc-miss.err")" "required"
+assert_contains "discovery-pass missing required names flag" \
+  "$(cat "$TMP/disc-miss.err")" "--agent"
+assert_eq "judge-runner missing required exit 5" "$jmiss_rc" "5"
+assert_contains "judge-runner missing required diagnostics" \
+  "$(cat "$TMP/judge-miss.err")" "required"
+# First missing among AGENT FINDINGS SOURCE OUT is --findings when only --agent set
+assert_contains "judge-runner missing required names flag" \
+  "$(cat "$TMP/judge-miss.err")" "--findings"
+
+echo "=== Steerable delegate (deterministic fakes) ==="
+# Subprocess suite with its own counters; fold into PASS/FAIL.
+chmod +x "$FAKES"/steer/* 2>/dev/null || true
+set +e
+STEER_OUT=$(PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 "$TESTS_DIR/steer/test_steer_e2e.py" 2>&1)
+STEER_RC=$?
+set -e
+printf '%s\n' "$STEER_OUT"
+# Parse "steer tests: N passed, M failed"
+steer_pass=$(printf '%s\n' "$STEER_OUT" | sed -n 's/.*steer tests: \([0-9]*\) passed.*/\1/p' | tail -1)
+steer_fail=$(printf '%s\n' "$STEER_OUT" | sed -n 's/.*steer tests: [0-9]* passed, \([0-9]*\) failed.*/\1/p' | tail -1)
+steer_pass=${steer_pass:-0}
+steer_fail=${steer_fail:-1}
+PASS=$((PASS + steer_pass))
+FAIL=$((FAIL + steer_fail))
+if [[ $STEER_RC -ne 0 && $steer_fail -eq 0 ]]; then
+  echo "  FAIL  steerable suite non-zero exit without fail count"
+  FAIL=$((FAIL + 1))
+fi
+
+# CLI surface for steerable modes
+help_out=$("$CONSILIUM" delegate -h 2>&1) || true
+assert_contains "delegate help mentions steerable" "$help_out" "steerable"
+assert_contains "delegate help mentions steer" "$help_out" "steer"
+assert_contains "delegate help mentions status" "$help_out" "status"
+assert_contains "delegate help mentions cancel" "$help_out" "cancel"
 
 echo ""
 echo "Results: $PASS passed, $FAIL failed"

@@ -187,25 +187,35 @@ mkdir -p "$RESP_DIR"
 
 declare -a PIDS LABELS OUT_FILES
 launch_pass() {
-    local triple="$1" stage="$2"
+    local triple="$1" stage="$2" idx="$3"
     local agent role cap prompt_name
     IFS='|' read -r agent role cap prompt_name <<< "$triple"
     local out_file="$RESP_DIR/${stage}__${agent}__${role}.xml"
+    # Deterministic stage/index key — never ambient inherited CONSILIUM_ARTIFACT_KEY.
+    local art_key="${stage}.${idx}.${agent}.${role}"
     "$LIB_DIR/discovery-pass.sh" \
         --agent "$agent" --role "$role" --cap "$cap" \
         --prompt "$PROMPTS_DIR/$prompt_name" \
         --input-kind "$INPUT_KIND" \
         --input-label "$INPUT_LABEL" \
         --input-body-file "$INPUT_BODY_FILE" \
-        --out "$out_file" &
+        --out "$out_file" \
+        --artifact-key "$art_key" &
     PIDS+=("$!")
     LABELS+=("$stage:$agent/$role")
     OUT_FILES+=("$out_file")
 }
 
 echo -e "${YELLOW}[Launching broad + specialists in parallel ($((${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]})) passes)...]${NC}" >&2
-for p in "${BROAD_PASSES[@]}";      do launch_pass "$p" "broad"; done
-for p in "${SPECIALIST_PASSES[@]}"; do launch_pass "$p" "specialists"; done
+pass_idx=0
+for p in "${BROAD_PASSES[@]}"; do
+    launch_pass "$p" "broad" "$pass_idx"
+    pass_idx=$((pass_idx + 1))
+done
+for p in "${SPECIALIST_PASSES[@]}"; do
+    launch_pass "$p" "specialists" "$pass_idx"
+    pass_idx=$((pass_idx + 1))
+done
 
 succeeded=0; failed=0
 for i in "${!PIDS[@]}"; do
@@ -223,7 +233,8 @@ probe_code=0
     --input-kind "$INPUT_KIND" \
     --input-label "$INPUT_LABEL" \
     --input-body-file "$INPUT_BODY_FILE" \
-    --out "$probe_out" || probe_code=$?
+    --out "$probe_out" \
+    --artifact-key "probe.${pass_idx}.opencode-go-glm.auditor" || probe_code=$?
 if [[ $probe_code -eq 0 ]]; then succeeded=$((succeeded+1)); else failed=$((failed+1)); fi
 OUT_FILES+=("$probe_out")
 
@@ -254,7 +265,8 @@ if "$LIB_DIR/judge-runner.sh" \
         --findings "$UNION_XML" \
         --source "$SOURCE_FILE" \
         --input-kind "$INPUT_KIND" \
-        --out "$VERDICTS_JSON"; then
+        --out "$VERDICTS_JSON" \
+        --artifact-key "judge.primary.${JUDGE_AGENT}"; then
     judge_ok=1
 else
     echo -e "${RED}Primary judge ($JUDGE_AGENT) failed.${NC}" >&2
@@ -265,7 +277,8 @@ else
                 --findings "$UNION_XML" \
                 --source "$SOURCE_FILE" \
                 --input-kind "$INPUT_KIND" \
-                --out "$VERDICTS_JSON"; then
+                --out "$VERDICTS_JSON" \
+                --artifact-key "judge.fallback.${JUDGE_FALLBACK}"; then
             judge_ok=1
         fi
     fi

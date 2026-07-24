@@ -1,0 +1,304 @@
+#!/usr/bin/env python3
+"""
+Steerable Grok ACP fake:
+- Concurrent session/prompt requests allowed (dispatch lock released before await).
+- Normal prompts FIFO queue; _meta.sendNow cancels running and jumps ahead.
+- Emits real-ish `_x.ai/queue/changed` (entries / runningPromptId) before work.
+- Echoes _meta.promptId on session/update and `_x.ai/session/prompt_complete`
+  (also accepts legacy `x.ai/…` in the adapter).
+- Emits agent_thought_chunk distinct from agent_message_chunk so final-text
+  filtering can be regression-tested.
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+import threading
+import time
+import uuid
+from collections import deque
+from typing import Any, Deque, Dict, List, Optional
+
+
+def send(obj: Dict[str, Any]) -> None:
+    sys.stdout.write(json.dumps(obj, ensure_ascii=False) + "\n")
+    sys.stdout.flush()
+
+
+def notify(method: str, params: Dict[str, Any]) -> None:
+    send({"jsonrpc": "2.0", "method": method, "params": params})
+
+
+class PromptItem:
+    def __init__(self, rid: Any, prompt_id: str, text: str, send_now: bool):
+        self.rid = rid
+        self.prompt_id = prompt_id
+        self.text = text
+        self.send_now = send_now
+        self.cancel = threading.Event()
+
+
+class Session:
+    def __init__(self):
+        self.session_id = "gsess_" + uuid.uuid4().hex[:8]
+        self.queue: Deque[PromptItem] = deque()
+        self.running: Optional[PromptItem] = None
+        self.lock = threading.Lock()
+        self.cv = threading.Condition(self.lock)
+        self.order: List[str] = []  # completion order of promptIds
+        self.started_order: List[str] = []
+        self.slow = float(os.environ.get("CONSILIUM_FAKE_STEER_SLOW", "0.45"))
+        # Delay before first agent_* chunk for a prompt (simulates tool sleep).
+        # Used to force steer() to return queued before applied confirmation.
+        self.ack_delay = float(os.environ.get("CONSILIUM_FAKE_GROK_ACK_DELAY", "0"))
+        self.mode = os.environ.get("CONSILIUM_FAKE_GROK_STEER_MODE", "ok")
+        # When set, emit thought text that must NOT appear in final output.
+        self.emit_thought = os.environ.get("CONSILIUM_FAKE_GROK_THOUGHT", "1") != "0"
+        self.stop = False
+
+    def _queue_snapshot(self) -> Dict[str, Any]:
+        with self.lock:
+            entries = [
+                {
+                    "id": it.prompt_id,
+                    "version": 0,
+                    "kind": "prompt",
+                    "text": it.text,
+                    "position": i,
+                }
+                for i, it in enumerate(self.queue)
+            ]
+            params: Dict[str, Any] = {
+                "sessionId": self.session_id,
+                "entries": entries,
+            }
+            if self.running is not None:
+                params["runningPromptId"] = self.running.prompt_id
+                params["runningText"] = self.running.text
+                params["runningKind"] = "prompt"
+            return params
+
+    def _emit_queue_changed(self) -> None:
+        notify("_x.ai/queue/changed", self._queue_snapshot())
+
+    def enqueue(self, item: PromptItem) -> None:
+        with self.cv:
+            if item.send_now and self.running is not None:
+                self.running.cancel.set()
+                # insert after running front — here we put at head of queue
+                self.queue.appendleft(item)
+            elif item.send_now:
+                # insert at head but behind other send_now? simple: left
+                self.queue.appendleft(item)
+            else:
+                self.queue.append(item)
+            self.cv.notify()
+        # Backend-confirmed queue (matches real Grok wire) — no promptId session/update yet.
+        self._emit_queue_changed()
+
+    def worker(self) -> None:
+        while not self.stop:
+            with self.cv:
+                while not self.queue and not self.stop:
+                    self.cv.wait(timeout=0.1)
+                if self.stop:
+                    return
+                if not self.queue:
+                    continue
+                item = self.queue.popleft()
+                self.running = item
+                self.started_order.append(item.prompt_id)
+            self._emit_queue_changed()
+            # Optional delay before agent chunks (late applied after queued return)
+            if self.ack_delay > 0:
+                deadline = time.time() + self.ack_delay
+                while time.time() < deadline:
+                    if item.cancel.is_set():
+                        break
+                    time.sleep(min(0.05, max(0.0, deadline - time.time())))
+            # Simulate work
+            cancelled = False
+            steps = 5
+            # Emit a thought chain that must never land in final text.
+            if self.emit_thought and not item.cancel.is_set():
+                thought = "The user wants THOUGHT_ONLY_MARKER not in final."
+                notify(
+                    "session/update",
+                    {
+                        "sessionId": self.session_id,
+                        "_meta": {"promptId": item.prompt_id},
+                        "update": {
+                            "sessionUpdate": "agent_thought_chunk",
+                            "content": {"type": "text", "text": thought},
+                        },
+                    },
+                )
+            for i in range(steps):
+                if item.cancel.is_set():
+                    cancelled = True
+                    break
+                # Emit text chunk with promptId meta
+                chunk = "G" if i == 0 else ("." if i < steps - 1 else "OK")
+                if item.prompt_id and i == 0 and item.text and "STEER" in item.text.upper():
+                    chunk = f"STEERED({item.prompt_id[:8]})"
+                notify(
+                    "session/update",
+                    {
+                        "sessionId": self.session_id,
+                        "_meta": {"promptId": item.prompt_id},
+                        "update": {
+                            "sessionUpdate": "agent_message_chunk",
+                            "content": {"type": "text", "text": chunk},
+                        },
+                    },
+                )
+                time.sleep(self.slow / steps)
+            stop_reason = "Cancelled" if cancelled else "end_turn"
+            # Real Grok Build 0.2.x uses underscored method name.
+            notify(
+                "_x.ai/session/prompt_complete",
+                {
+                    "sessionId": self.session_id,
+                    "promptId": item.prompt_id,
+                    "stopReason": stop_reason,
+                    "agentResult": "ok" if not cancelled else "cancelled",
+                    **({"cancelTrigger": "send_now"} if cancelled else {}),
+                },
+            )
+            # Respond to the original request
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": item.rid,
+                    "result": {
+                        "stopReason": stop_reason,
+                        "_meta": {"promptId": item.prompt_id},
+                    },
+                }
+            )
+            with self.cv:
+                self.order.append(item.prompt_id)
+                self.running = None
+            self._emit_queue_changed()
+            with self.cv:
+                if not self.queue and not cancelled:
+                    # allow more prompts briefly; don't stop process yet
+                    pass
+
+
+def main() -> int:
+    log = os.environ.get("CONSILIUM_FAKE_ARGV_LOG")
+    if log:
+        with open(log, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"bin": "grok-steer", "argv": sys.argv[1:]}) + "\n")
+
+    sess = Session()
+    worker = threading.Thread(target=sess.worker, daemon=True)
+    worker.start()
+    initialized = False
+
+    # Track concurrent in-flight request ids accepted before first completes
+    accepted_while_busy = 0
+    first_prompt_started = threading.Event()
+
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            msg = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        mid = msg.get("id")
+        method = msg.get("method")
+        params = msg.get("params") or {}
+
+        if method == "initialize":
+            initialized = True
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {
+                        "protocolVersion": 1,
+                        "agentCapabilities": {},
+                        "agentInfo": {"name": "fake-grok", "version": "0.0.0"},
+                    },
+                }
+            )
+            continue
+        if method == "session/new":
+            send({"jsonrpc": "2.0", "id": mid, "result": {"sessionId": sess.session_id}})
+            continue
+        if method == "session/prompt":
+            meta = params.get("_meta") or params.get("meta") or {}
+            prompt_id = meta.get("promptId") or str(uuid.uuid4())
+            send_now = bool(meta.get("sendNow"))
+            blocks = params.get("prompt") or []
+            text = ""
+            for b in blocks:
+                if isinstance(b, dict) and b.get("type") == "text":
+                    text += b.get("text") or ""
+                elif isinstance(b, dict) and "text" in b:
+                    text += b.get("text") or ""
+            with sess.lock:
+                busy = sess.running is not None or len(sess.queue) > 0
+            if busy:
+                accepted_while_busy += 1
+            item = PromptItem(mid, prompt_id, text, send_now)
+            # CRITICAL: respond only after work (like real ACP), but accept/enqueue
+            # immediately without waiting for previous response — which we do by
+            # not blocking this stdin loop on previous prompts.
+            sess.enqueue(item)
+            first_prompt_started.set()
+            # Replay-only user_message_chunk (no applied confirmation by itself).
+            notify(
+                "session/update",
+                {
+                    "sessionId": sess.session_id,
+                    "update": {
+                        "sessionUpdate": "user_message_chunk",
+                        "content": {"type": "text", "text": text[:80]},
+                    },
+                },
+            )
+            continue
+        if method == "session/cancel":
+            with sess.lock:
+                if sess.running:
+                    sess.running.cancel.set()
+                for q in list(sess.queue):
+                    q.cancel.set()
+            if mid is not None:
+                send({"jsonrpc": "2.0", "id": mid, "result": {}})
+            continue
+        if mid is not None:
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "error": {"code": -32601, "message": f"unknown {method}"},
+                }
+            )
+
+    sess.stop = True
+    with sess.cv:
+        sess.cv.notify_all()
+    # Persist race evidence for tests
+    evidence = os.environ.get("CONSILIUM_FAKE_GROK_EVIDENCE")
+    if evidence:
+        with open(evidence, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "accepted_while_busy": accepted_while_busy,
+                    "started_order": sess.started_order,
+                    "complete_order": sess.order,
+                },
+                f,
+            )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

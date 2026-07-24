@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""Steerable Claude fake: stream-json stdin/out with user replay."""
+from __future__ import annotations
+
+import json
+import os
+import sys
+import time
+
+
+def main() -> int:
+    log = os.environ.get("CONSILIUM_FAKE_ARGV_LOG")
+    if log:
+        with open(log, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"bin": "claude-steer", "argv": sys.argv[1:]}) + "\n")
+
+    mode = os.environ.get("CONSILIUM_FAKE_CLAUDE_STEER_MODE", "ok")
+    slow = float(os.environ.get("CONSILIUM_FAKE_STEER_SLOW", "0.3"))
+    users = []
+
+    # Read stdin lines concurrently-ish: process as they arrive
+    # Emit progress first
+    print(json.dumps({"type": "content_block_delta", "delta": {"type": "text_delta", "text": "WORKING"}}), flush=True)
+
+    # Non-blocking style: read with select-like timeout via os.read if needed
+    # Simpler: read all available then sleep in chunks checking stdin
+    deadline = time.time() + (5.0 if mode != "hang" else 30.0)
+    buf = ""
+    while time.time() < deadline:
+        # Try reading stdin without full block forever
+        import select
+
+        r, _, _ = select.select([sys.stdin], [], [], 0.05)
+        if r:
+            chunk = sys.stdin.readline()
+            if chunk == "":
+                break
+            buf += chunk
+            if "\n" in buf or chunk.endswith("\n"):
+                line = chunk.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if obj.get("type") == "user":
+                    # Replay user message
+                    print(json.dumps(obj), flush=True)
+                    users.append(obj)
+                    uuid = obj.get("uuid") or ""
+                    if uuid and uuid != "initial":
+                        print(
+                            json.dumps(
+                                {
+                                    "type": "content_block_delta",
+                                    "delta": {"type": "text_delta", "text": f"+STEER:{uuid[:8]}"},
+                                }
+                            ),
+                            flush=True,
+                        )
+        else:
+            # after initial delay, finish if we got initial user
+            if users and time.time() > deadline - 4.5 + slow:
+                break
+            if not users and time.time() > deadline - 4.0:
+                # no input yet
+                continue
+        if mode == "crash" and users:
+            sys.exit(2)
+        if len(users) >= 1 and time.time() > (deadline - 5.0 + slow + 0.1 * len(users)):
+            # enough work
+            if mode == "ok" and (len(users) >= 2 or time.time() > deadline - 3.5):
+                break
+
+    # If still no users, try blocking read once
+    if not users:
+        try:
+            line = sys.stdin.readline()
+            if line:
+                obj = json.loads(line)
+                print(json.dumps(obj), flush=True)
+                users.append(obj)
+        except Exception:
+            pass
+
+    result = "FAKE_CLAUDE_STEER_OK"
+    if any((u.get("uuid") or "") != "initial" for u in users):
+        result += "_STEERED"
+    print(json.dumps({"type": "result", "result": result}), flush=True)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

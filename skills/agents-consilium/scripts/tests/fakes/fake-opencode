@@ -2,8 +2,17 @@
 set -euo pipefail
 LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
 python3 -c '
-import json,sys
-print(json.dumps({"bin":"opencode","argv":sys.argv[1:],"stdin":sys.stdin.read()}))
+import json, os, sys
+print(json.dumps({
+    "bin": "opencode",
+    "argv": sys.argv[1:],
+    "stdin": sys.stdin.read(),
+    "cwd": os.getcwd(),
+    "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
+    "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
+    "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
+    "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+}))
 ' -- "$@" >> "$LOG"
 
 if printf '%s\n' "$@" | grep -qx -- 'json' || printf '%s\n' "$@" | grep -q -- '--format'; then

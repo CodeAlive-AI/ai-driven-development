@@ -149,7 +149,20 @@ fi
 progress_stage "ask" "agents=${ENABLED_AGENTS[*]}"
 export CONSILIUM_SUPPRESS_SHELL_WARN=1
 
-declare -a AGENT_IDS PIDS OUT_FILES ERR_FILES LABELS MODELS ROLES BACKENDS STATUSES EXITS
+# Initialize arrays before append / ${#arr[@]}. Bash 3.2 + set -u treats an
+# empty "${arr[@]}" as unbound (even after arr=()); use ${arr[@]+"${arr[@]}"}
+# when expanding a possibly-empty array (see EXTRA_ARGS below).
+AGENT_IDS=()
+PIDS=()
+OUT_FILES=()
+ERR_FILES=()
+PROMPT_FILES=()
+LABELS=()
+MODELS=()
+ROLES=()
+BACKENDS=()
+STATUSES=()
+EXITS=()
 
 for agent in "${ENABLED_AGENTS[@]}"; do
     backend="$(config_get_field "$agent" backend)"
@@ -169,6 +182,7 @@ for agent in "${ENABLED_AGENTS[@]}"; do
 
     out=$(mktemp)
     err=$(mktemp)
+    prompt_file=$(mktemp)
     EXTRA_ARGS=()
     if [[ -n "${CONSILIUM_RAW_PROMPT:-}" ]]; then
         EXTRA_ARGS+=(--raw)
@@ -179,23 +193,36 @@ for agent in "${ENABLED_AGENTS[@]}"; do
     else
         agent_prompt="$PROMPT"
     fi
+    # Render prompt to a file first so the backend is never fed via a hanging pipe
+    # and so redirect failures cannot deadlock a named FIFO.
+    printf '%s' "$agent_prompt" > "$prompt_file"
+    # Drain-safe live stderr (no FIFO): stdout → out file; stderr → tee → live + err file.
+    # Enclosing subshell waits for tee; PIPESTATUS[0] is the backend, not tee.
+    # ask: one shot per agent — plain agent id as artifact key (do not inherit ambient).
     (
+        set +e
+        set +o pipefail
         export CONSILIUM_RUN_DIR
         export CONSILIUM_SAVE_OUTPUTS
-        # Live progress → parent stderr; also capture for failure reporting.
-        printf '%s' "$agent_prompt" | "$LIB_DIR/backend_run.sh" \
-            --mode review --agent-id "$agent" "${EXTRA_ARGS[@]}" \
-            >"$out" 2> >(tee "$err" >&2)
+        unset CONSILIUM_ARTIFACT_KEY
+        # Bash 3.2 + set -u: empty EXTRA_ARGS must not use "${EXTRA_ARGS[@]}".
+        "$LIB_DIR/backend_run.sh" \
+            --mode review --agent-id "$agent" ${EXTRA_ARGS[@]+"${EXTRA_ARGS[@]}"} \
+            <"$prompt_file" 2>&1 1>"$out" | tee "$err" >&2
+        ps=("${PIPESTATUS[@]}")
+        exit "${ps[0]}"
     ) &
     STATUSES+=("pending")
     EXITS+=("0")
     OUT_FILES+=("$out")
     ERR_FILES+=("$err")
+    PROMPT_FILES+=("$prompt_file")
     PIDS+=("$!")
 done
 
 cleanup() {
-    for f in "${OUT_FILES[@]:-}" "${ERR_FILES[@]:-}"; do
+    # [@]:- is safe on empty arrays under Bash 3.2 + set -u (unlike bare [@]).
+    for f in "${OUT_FILES[@]:-}" "${ERR_FILES[@]:-}" "${PROMPT_FILES[@]:-}"; do
         [[ -n "$f" ]] && rm -f "$f"
     done
 }
@@ -205,6 +232,7 @@ for i in "${!AGENT_IDS[@]}"; do
     pid="${PIDS[$i]}"
     [[ -z "$pid" ]] && continue
     code=0
+    # Wait on the enclosing subshell (pipeline + tee already drained inside it).
     wait "$pid" || code=$?
     EXITS[$i]="$code"
     out_bytes=$(wc -c < "${OUT_FILES[$i]}" | tr -d ' ')
@@ -217,10 +245,7 @@ for i in "${!AGENT_IDS[@]}"; do
     else
         STATUSES[$i]="failed"
     fi
-    # Forward per-agent stderr progress already emitted; surface failures
-    if [[ "${STATUSES[$i]}" == "failed" && -s "${ERR_FILES[$i]}" ]]; then
-        cat "${ERR_FILES[$i]}" >&2 || true
-    fi
+    # Live stderr already streamed via tee — do not re-print on failure.
 done
 
 queried=0; succeeded=0; failed=0

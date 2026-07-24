@@ -14,7 +14,12 @@
 #     --source <file-or-diff-source> \
 #     --input-kind <file|diff> \
 #     --out <verdicts.json> \
+#     [--artifact-key <key>] \
 #     [--prompt <judge.txt>] [--keep-tmp]
+#
+# Large callers must use JUDGE_INPUT_BODY_FILE (path pointer), not the legacy
+# JUDGE_INPUT_BODY env var. After materializing the body, legacy markers are
+# unset before any backend child starts.
 #
 # Exit codes:
 #   0 — success, valid JSON written
@@ -41,23 +46,30 @@ INPUT_KIND="file"
 OUT=""
 PROMPT="$SKILL_DIR/prompts/judge.txt"
 KEEP_TMP=""
+ARTIFACT_KEY_ARG=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        --agent)       AGENT="$2"; shift 2 ;;
-        --findings)    FINDINGS="$2"; shift 2 ;;
-        --source)      SOURCE="$2"; shift 2 ;;
-        --input-kind)  INPUT_KIND="$2"; shift 2 ;;
-        --out)         OUT="$2"; shift 2 ;;
-        --prompt)      PROMPT="$2"; shift 2 ;;
-        --keep-tmp)    KEEP_TMP=1; shift ;;
-        -h|--help)     sed -n '2,30p' "$0"; exit 0 ;;
-        *)             echo -e "${RED}Error: unknown flag: $1${NC}" >&2; exit 5 ;;
+        --agent)         AGENT="$2"; shift 2 ;;
+        --findings)      FINDINGS="$2"; shift 2 ;;
+        --source)        SOURCE="$2"; shift 2 ;;
+        --input-kind)    INPUT_KIND="$2"; shift 2 ;;
+        --out)           OUT="$2"; shift 2 ;;
+        --prompt)        PROMPT="$2"; shift 2 ;;
+        --artifact-key)  ARTIFACT_KEY_ARG="$2"; shift 2 ;;
+        --keep-tmp)      KEEP_TMP=1; shift ;;
+        -h|--help)       sed -n '2,35p' "$0"; exit 0 ;;
+        *)               echo -e "${RED}Error: unknown flag: $1${NC}" >&2; exit 5 ;;
     esac
 done
 
 for var in AGENT FINDINGS SOURCE OUT; do
-    [[ -n "${!var}" ]] || { echo -e "${RED}Error: --${var,,} required${NC}" >&2; exit 5; }
+    if [[ -z "${!var}" ]]; then
+        # Bash 3.2-safe flag wording (no ${var,,}); underscores → hyphens.
+        flag=$(printf '%s' "$var" | tr 'A-Z_' 'a-z-')
+        echo -e "${RED}Error: --${flag} required${NC}" >&2
+        exit 5
+    fi
 done
 [[ -f "$FINDINGS" ]] || { echo -e "${RED}Error: findings xml not found: $FINDINGS${NC}" >&2; exit 4; }
 [[ -f "$PROMPT"   ]] || { echo -e "${RED}Error: judge prompt not found: $PROMPT${NC}" >&2; exit 4; }
@@ -78,7 +90,7 @@ BACKEND_SCRIPT="$LIB_DIR/backend_run.sh"
 [[ -f "$BACKEND_SCRIPT" ]] || { echo -e "${RED}Error: backend runner missing: $BACKEND_SCRIPT${NC}" >&2; exit 4; }
 chmod +x "$BACKEND_SCRIPT" 2>/dev/null || true
 
-# --- Tmp-isolated execution ------------------------------------------------
+# --- Temp artifacts (backend still runs from caller's CWD) -----------------
 TMP_DIR="$(mktemp -d -t "agents-consilium-judge-XXXXXX")"
 cleanup() { [[ -z "$KEEP_TMP" ]] && rm -rf "$TMP_DIR" || echo -e "${YELLOW}[debug] keeping tmp: $TMP_DIR${NC}" >&2; }
 trap cleanup EXIT
@@ -86,57 +98,92 @@ trap cleanup EXIT
 # Render judge prompt with placeholders. SOURCE may be a path (file mode) or
 # the literal diff text already on disk (we accept either — "--source" points
 # to whatever was reviewed, line-numbered for verification).
+# Large bodies are written to files — never exported into the environment
+# (ARG_MAX / E2BIG includes env size).
 INPUT_LABEL="$SOURCE"
+INPUT_BODY_FILE="$TMP_DIR/input-body.txt"
 if [[ -f "$SOURCE" ]]; then
     if [[ "$INPUT_KIND" == "file" ]]; then
-        INPUT_BODY="$(awk '{printf "%4d  %s\n", NR, $0}' "$SOURCE")"
+        awk '{printf "%4d  %s\n", NR, $0}' "$SOURCE" > "$INPUT_BODY_FILE"
     else
-        INPUT_BODY="$(cat "$SOURCE")"
+        cat "$SOURCE" > "$INPUT_BODY_FILE"
     fi
 else
-    # SOURCE is a raw label (e.g. "(stdin diff)") — input body must be
-    # piped via $JUDGE_INPUT_BODY env var to keep this script stdin-free.
-    INPUT_BODY="${JUDGE_INPUT_BODY:-}"
+    # SOURCE is a raw label (e.g. "(stdin diff)") — body from optional file
+    # or small env path pointer, not the body itself.
+    if [[ -n "${JUDGE_INPUT_BODY_FILE:-}" && -f "$JUDGE_INPUT_BODY_FILE" ]]; then
+        cat "$JUDGE_INPUT_BODY_FILE" > "$INPUT_BODY_FILE"
+    elif [[ -n "${JUDGE_INPUT_BODY:-}" ]]; then
+        # Legacy: materialize then drop from env. Prefer JUDGE_INPUT_BODY_FILE.
+        printf '%s' "$JUDGE_INPUT_BODY" > "$INPUT_BODY_FILE"
+    else
+        : > "$INPUT_BODY_FILE"
+    fi
 fi
 
-FINDINGS_BODY="$(cat "$FINDINGS")"
+# Explicitly drop legacy/in-process body env vars before any backend child.
+# Large callers must use JUDGE_INPUT_BODY_FILE; no size cap on that path.
+unset JUDGE_INPUT_BODY JR_INPUT_BODY JR_FINDINGS_BODY
 
-# Substitute placeholders via python — bash parameter expansion would choke on
-# the XML/CDATA/braces inside the bodies. We hand the values to python through
-# env vars (single quoted heredoc, no shell interpolation needed).
+FINDINGS_BODY_FILE="$TMP_DIR/findings-body.txt"
+cat "$FINDINGS" > "$FINDINGS_BODY_FILE"
+
+# Substitute placeholders via python — paths (small) in env/argv, bodies on disk.
 export JR_INPUT_KIND="$INPUT_KIND"
 export JR_INPUT_LABEL="$INPUT_LABEL"
-export JR_INPUT_BODY="$INPUT_BODY"
-export JR_FINDINGS_BODY="$FINDINGS_BODY"
-RENDERED_PROMPT="$(python3 - "$PROMPT" <<'PYEOF'
+export JR_INPUT_BODY_FILE="$INPUT_BODY_FILE"
+export JR_FINDINGS_BODY_FILE="$FINDINGS_BODY_FILE"
+RENDERED_PROMPT_FILE="$TMP_DIR/rendered-prompt.txt"
+python3 - "$PROMPT" "$RENDERED_PROMPT_FILE" <<'PYEOF'
 import os, sys
 tpl = open(sys.argv[1]).read()
 out = (tpl
        .replace('{{INPUT_KIND}}',    os.environ.get('JR_INPUT_KIND', ''))
        .replace('{{INPUT_LABEL}}',   os.environ.get('JR_INPUT_LABEL', ''))
-       .replace('{{INPUT_BODY}}',    os.environ.get('JR_INPUT_BODY', ''))
-       .replace('{{FINDINGS_BODY}}', os.environ.get('JR_FINDINGS_BODY', '')))
-sys.stdout.write(out)
+       .replace('{{INPUT_BODY}}',    open(os.environ['JR_INPUT_BODY_FILE']).read())
+       .replace('{{FINDINGS_BODY}}', open(os.environ['JR_FINDINGS_BODY_FILE']).read()))
+open(sys.argv[2], 'w').write(out)
 PYEOF
-)"
+
+# After rendering, drop JR_* path helpers so they cannot leak into the child.
+unset JR_INPUT_KIND JR_INPUT_LABEL JR_INPUT_BODY_FILE JR_FINDINGS_BODY_FILE
+
+# Explicit key from fan-out (primary vs fallback), or invocation-unique default.
+# Never rely solely on ambient inherited CONSILIUM_ARTIFACT_KEY.
+if [[ -n "$ARTIFACT_KEY_ARG" ]]; then
+    ARTIFACT_KEY="$ARTIFACT_KEY_ARG"
+else
+    ARTIFACT_KEY="judge.${AGENT}.$$.${RANDOM:-0}"
+fi
 
 RAW_OUT="$TMP_DIR/raw-out.txt"
 RAW_ERR="$TMP_DIR/raw-err.txt"
 
+# Drain-safe live stderr (no FIFO):
+#   backend stdout → RAW_OUT
+#   backend stderr → tee → live parent stderr + RAW_ERR
+# Pipeline waits for tee; PIPESTATUS[0] is the backend status (not tee).
+set +e
+set +o pipefail
 (
-    cd "$TMP_DIR"
     export CONSILIUM_SKIP_OUTPUT_TEMPLATE=1
     export CONSILIUM_RUN_DIR="${CONSILIUM_RUN_DIR:-}"
-    # Live progress → parent stderr; also capture for failure reporting.
-    printf '%s' "$RENDERED_PROMPT" | "$BACKEND_SCRIPT" \
+    export CONSILIUM_ARTIFACT_KEY="$ARTIFACT_KEY"
+    "$BACKEND_SCRIPT" \
         --mode review --agent-id "$AGENT" --role analyst \
-        > "$RAW_OUT" 2> >(tee "$RAW_ERR" >&2)
-) || {
-    rc=$?
+        < "$RENDERED_PROMPT_FILE" 2>&1 1>"$RAW_OUT" | tee "$RAW_ERR" >&2
+    ps=("${PIPESTATUS[@]}")
+    exit "${ps[0]}"
+)
+rc=$?
+set -e
+set -o pipefail
+
+if [[ $rc -ne 0 ]]; then
     echo -e "${RED}[judge/$AGENT] backend failed (exit $rc)${NC}" >&2
-    [[ -s "$RAW_ERR" ]] && cat "$RAW_ERR" >&2
+    # Live stderr already streamed via tee — do not re-print RAW_ERR.
     exit 3
-}
+fi
 
 [[ -s "$RAW_OUT" ]] || { echo -e "${RED}[judge/$AGENT] empty output${NC}" >&2; exit 1; }
 

@@ -1,0 +1,239 @@
+#!/usr/bin/env python3
+"""Steerable Codex fake: app-server JSON-RPC with turn/steer + expectedTurnId.
+
+Interrupt handshake: turn/interrupt → turn/completed(interrupted) for the old
+turn, then a subsequent turn/start may begin a new turn. Natural
+turn/completed(completed) ends the run.
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+import threading
+import time
+import uuid
+
+
+def send(obj):
+    sys.stdout.write(json.dumps(obj, ensure_ascii=False) + "\n")
+    sys.stdout.flush()
+
+
+def notify(method, params):
+    send({"jsonrpc": "2.0", "method": method, "params": params})
+
+
+def main() -> int:
+    log = os.environ.get("CONSILIUM_FAKE_ARGV_LOG")
+    if log:
+        with open(log, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"bin": "codex-steer", "argv": sys.argv[1:]}) + "\n")
+
+    mode = os.environ.get("CONSILIUM_FAKE_CODEX_STEER_MODE", "ok")
+    slow = float(os.environ.get("CONSILIUM_FAKE_STEER_SLOW", "0.4"))
+    thread_id = "thread_" + uuid.uuid4().hex[:8]
+    turn_counter = 0
+    active_turn = None
+    text_parts = []
+    steers = []
+    lock = threading.Lock()
+    done = threading.Event()
+    worker_gen = 0
+
+    def new_turn_id():
+        nonlocal turn_counter
+        turn_counter += 1
+        return f"turn_{turn_counter}_{uuid.uuid4().hex[:6]}"
+
+    def finish_turn(status="completed", *, end_run: bool = True):
+        nonlocal active_turn
+        tid = active_turn
+        items = []
+        for s in steers:
+            items.append(
+                {
+                    "type": "userMessage",
+                    "clientId": s.get("clientUserMessageId"),
+                    "text": s.get("text", ""),
+                }
+            )
+        items.append(
+            {
+                "type": "agentMessage",
+                "text": "".join(text_parts) or "FAKE_CODEX_STEER_OK",
+            }
+        )
+        notify(
+            "turn/completed",
+            {
+                "threadId": thread_id,
+                "turn": {"id": tid, "status": status, "items": items},
+            },
+        )
+        active_turn = None
+        if end_run and status == "completed":
+            done.set()
+
+    def worker(my_gen, my_turn):
+        time.sleep(slow)
+        with lock:
+            if my_gen != worker_gen or active_turn != my_turn:
+                return  # interrupted / superseded
+            text_parts.append("FAKE_CODEX")
+        notify(
+            "item/agentMessage/delta",
+            {"threadId": thread_id, "turnId": my_turn, "delta": "FAKE_CODEX"},
+        )
+        time.sleep(slow)
+        with lock:
+            if my_gen != worker_gen or active_turn != my_turn:
+                return
+            if steers:
+                text_parts.append("_STEERED")
+            else:
+                text_parts.append("_STEER_OK")
+            finish_turn("completed", end_run=True)
+
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            msg = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        mid = msg.get("id")
+        method = msg.get("method")
+        params = msg.get("params") or {}
+
+        if method == "initialize":
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {"serverInfo": {"name": "fake-codex"}},
+                }
+            )
+            continue
+        if method == "thread/start":
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {
+                        "thread": {"id": thread_id},
+                        "sandbox": "danger-full-access",
+                        "approvalPolicy": "never",
+                        "cwd": params.get("cwd") or "",
+                        "model": params.get("model") or "fake",
+                        "modelProvider": "fake",
+                        "approvalsReviewer": "user",
+                    },
+                }
+            )
+            continue
+        if method == "turn/start":
+            with lock:
+                turn_id = new_turn_id()
+                active_turn = turn_id
+                worker_gen += 1
+                gen = worker_gen
+                # Reset text for a fresh post-interrupt turn, keep steers list
+                if turn_counter > 1:
+                    text_parts.clear()
+            notify(
+                "turn/started",
+                {
+                    "threadId": thread_id,
+                    "turn": {"id": turn_id, "status": "inProgress", "items": []},
+                },
+            )
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {
+                        "turn": {"id": turn_id, "status": "inProgress", "items": []}
+                    },
+                }
+            )
+            threading.Thread(target=worker, args=(gen, turn_id), daemon=True).start()
+            continue
+        if method == "turn/steer":
+            expected = params.get("expectedTurnId")
+            with lock:
+                cur = active_turn
+            if mode == "stale" or (expected and expected != cur):
+                send(
+                    {
+                        "jsonrpc": "2.0",
+                        "id": mid,
+                        "error": {
+                            "code": -32600,
+                            "message": f"stale expectedTurnId: got {expected}, active {cur}",
+                        },
+                    }
+                )
+                continue
+            if not cur:
+                send(
+                    {
+                        "jsonrpc": "2.0",
+                        "id": mid,
+                        "error": {
+                            "code": -32600,
+                            "message": "no active turn for turn/steer",
+                        },
+                    }
+                )
+                continue
+            inp = params.get("input") or []
+            text = ""
+            for i in inp:
+                if isinstance(i, dict) and i.get("type") == "text":
+                    text += i.get("text") or ""
+            client_id = params.get("clientUserMessageId")
+            with lock:
+                steers.append({"text": text, "clientUserMessageId": client_id})
+            notify(
+                "item/completed",
+                {
+                    "threadId": thread_id,
+                    "turnId": cur,
+                    "completedAtMs": int(time.time() * 1000),
+                    "item": {
+                        "type": "userMessage",
+                        "clientId": client_id,
+                        "text": text,
+                    },
+                },
+            )
+            send({"jsonrpc": "2.0", "id": mid, "result": {"turnId": cur}})
+            continue
+        if method == "turn/interrupt":
+            want = params.get("turnId")
+            send({"jsonrpc": "2.0", "id": mid, "result": {}})
+            with lock:
+                # Only complete the turn we were asked to interrupt (no stale ack)
+                if want and active_turn and want != active_turn:
+                    # Stale interrupt: do not emit completed for wrong turn
+                    continue
+                if active_turn:
+                    worker_gen += 1  # cancel worker
+                    finish_turn("interrupted", end_run=False)
+            continue
+        send(
+            {
+                "jsonrpc": "2.0",
+                "id": mid,
+                "error": {"code": -32601, "message": f"unknown method {method}"},
+            }
+        )
+
+    done.wait(timeout=15)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

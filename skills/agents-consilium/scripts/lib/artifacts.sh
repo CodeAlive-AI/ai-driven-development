@@ -4,15 +4,27 @@
 # Layout:
 #   $CONSILIUM_RUN_DIR/
 #     meta.json
-#     raw/<agent_id>.jsonl          # backend raw stdout (structured when available)
-#     normalized/<agent_id>.jsonl   # normalized semantic events
-#     final/<agent_id>.txt          # final text answer per agent
-#     final.txt                     # primary final answer (single-agent or combined)
+#     raw/<key>.jsonl          # backend raw stdout (structured when available)
+#     normalized/<key>.jsonl   # normalized semantic events
+#     final/<key>.txt          # final text answer per invocation
+#     final.txt                # primary final answer (single-agent or combined)
+#
+# Keys identify the *invocation*, not only the agent id:
+#   - ask / delegate: plain agent id (e.g. "grok") — one shot per agent
+#   - code review (basic/specialists): "agent.role" (e.g. "codex.security")
+#   - multi-stage discovery (super/ultra): explicit fan-out keys of the form
+#     "<stage>.<index>.<agent>.<role>" passed via --artifact-key
+#   - judge attempts: "judge.primary.<agent>" / "judge.fallback.<agent>"
+# Fan-out layers always pass an explicit key. discovery-pass / judge-runner
+# never rely on an ambient inherited CONSILIUM_ARTIFACT_KEY alone — if called
+# without --artifact-key they choose an invocation-unique default.
+# backend_run uses CONSILIUM_ARTIFACT_KEY when set, else agent id.
 #
 # Env:
 #   CONSILIUM_OUTPUT_DIR  — parent for auto run dirs (default: ${TMPDIR}/agents-consilium-outputs)
 #   CONSILIUM_RUN_DIR     — if set, use this directory (created if missing)
 #   CONSILIUM_SAVE_OUTPUTS — set 0 to disable (no-op helpers)
+#   CONSILIUM_ARTIFACT_KEY — per-invocation key set by fan-out callers (see backend_run.sh)
 
 artifacts_init_run() {
     local mode="${1:-unknown}"
@@ -49,10 +61,11 @@ with open(path, "w") as f:
 }
 
 artifacts_paths_for() {
-    # Sets: ART_RAW ART_NORM ART_FINAL for agent id $1
-    local agent_id="$1"
+    # Sets: ART_RAW ART_NORM ART_FINAL for invocation key $1
+    # Key is agent id, agent.role, or a fan-out key (stage.index.agent.role / judge.*).
+    local key="$1"
     local safe
-    safe="$(printf '%s' "$agent_id" | LC_ALL=C tr -c 'A-Za-z0-9._-' '_')"
+    safe="$(printf '%s' "$key" | LC_ALL=C tr -c 'A-Za-z0-9._-' '_')"
     if [[ -z "${CONSILIUM_RUN_DIR:-}" || "${CONSILIUM_SAVE_OUTPUTS:-1}" == "0" ]]; then
         ART_RAW=""
         ART_NORM=""
@@ -66,9 +79,9 @@ artifacts_paths_for() {
 }
 
 artifacts_write_final() {
-    local agent_id="$1"
+    local key="$1"
     local text_file="$2"
-    artifacts_paths_for "$agent_id"
+    artifacts_paths_for "$key"
     if [[ -n "$ART_FINAL" && -f "$text_file" ]]; then
         cp "$text_file" "$ART_FINAL"
         # Primary final.txt = last successful single-agent answer, or first write

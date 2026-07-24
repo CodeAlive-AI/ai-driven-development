@@ -176,25 +176,35 @@ mkdir -p "$RESP_DIR"
 
 declare -a PIDS LABELS OUT_FILES
 launch_pass() {
-    local triple="$1" stage="$2"
+    local triple="$1" stage="$2" idx="$3"
     local agent role cap prompt_name
     IFS='|' read -r agent role cap prompt_name <<< "$triple"
     local out_file="$RESP_DIR/${stage}__${agent}__${role}.xml"
+    # Deterministic stage/index key — never ambient inherited CONSILIUM_ARTIFACT_KEY.
+    local art_key="${stage}.${idx}.${agent}.${role}"
     "$LIB_DIR/discovery-pass.sh" \
         --agent "$agent" --role "$role" --cap "$cap" \
         --prompt "$PROMPTS_DIR/$prompt_name" \
         --input-kind "$INPUT_KIND" \
         --input-label "$INPUT_LABEL" \
         --input-body-file "$INPUT_BODY_FILE" \
-        --out "$out_file" &
+        --out "$out_file" \
+        --artifact-key "$art_key" &
     PIDS+=("$!")
     LABELS+=("$stage:$agent/$role")
     OUT_FILES+=("$out_file")
 }
 
 echo -e "${YELLOW}[Launching $total_passes discovery passes in parallel...]${NC}" >&2
-for p in "${SMALL_PASSES[@]}";    do launch_pass "$p" "discovery-small"; done
-for p in "${FRONTIER_PASSES[@]}"; do launch_pass "$p" "discovery-frontier"; done
+pass_idx=0
+for p in "${SMALL_PASSES[@]}"; do
+    launch_pass "$p" "discovery-small" "$pass_idx"
+    pass_idx=$((pass_idx + 1))
+done
+for p in "${FRONTIER_PASSES[@]}"; do
+    launch_pass "$p" "discovery-frontier" "$pass_idx"
+    pass_idx=$((pass_idx + 1))
+done
 
 succeeded=0; failed=0
 for i in "${!PIDS[@]}"; do
@@ -230,7 +240,8 @@ echo -e "${YELLOW}[Running judge: $JUDGE_AGENT]${NC}" >&2
     --findings "$UNION_XML" \
     --source "$SOURCE_FILE" \
     --input-kind "$INPUT_KIND" \
-    --out "$VERDICTS_JSON" || {
+    --out "$VERDICTS_JSON" \
+    --artifact-key "judge.primary.${JUDGE_AGENT}" || {
     echo -e "${RED}judge failed; emitting unfiltered union for triage.${NC}" >&2
     cat "$UNION_XML"
     exit 6

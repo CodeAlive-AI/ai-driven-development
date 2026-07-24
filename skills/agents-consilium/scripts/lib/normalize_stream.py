@@ -161,9 +161,13 @@ def normalize_claude(obj: Dict[str, Any]) -> tuple[str, Any]:
         if texts:
             return "text", "".join(texts)
     if typ in ("result", "result_success"):
+        # Final result carries the complete answer. Emit as type=result (not
+        # text) so extract-text can prefer it over streamed deltas without
+        # concatenating both into a duplicated final answer. Live progress
+        # still comes from content_block_delta text events.
         result = obj.get("result")
         if isinstance(result, str):
-            return "text", result
+            return "result", result
         return "end", typ
     if typ == "error":
         return "error", obj.get("error") or json.dumps(obj)
@@ -225,6 +229,10 @@ def main() -> int:
     saw_end = False
     saw_error = False
     error_msg = ""
+    # Claude (and similar) may stream text deltas then emit a final `result`
+    # with the complete answer. Prefer result for --extract-text so the answer
+    # appears exactly once, while still streaming deltas until result arrives.
+    final_result_text: Optional[str] = None
     reporter = ProgressReporter(args.agent_id) if args.progress else None
 
     try:
@@ -260,13 +268,28 @@ def main() -> int:
 
             emit(sys.stdout, args.backend, args.agent_id, typ, data, raw if isinstance(raw, dict) else None)
 
-            if reporter is not None and typ in ("text", "thought", "end", "error"):
-                reporter.feed(typ, data)
+            if reporter is not None and typ in ("text", "thought", "end", "error", "result"):
+                # Progress for result is a short notice, not the full answer body
+                if typ == "result":
+                    reporter.feed("end", "result")
+                else:
+                    reporter.feed(typ, data)
 
             if typ == "text" and data is not None:
-                if text_out_f is not None:
+                # Stream deltas only until a definitive result overrides them.
+                if text_out_f is not None and final_result_text is None:
                     text_out_f.write(str(data))
                     text_out_f.flush()
+            elif typ == "result":
+                # Authoritative final answer: replace any streamed deltas.
+                if data is not None:
+                    final_result_text = str(data)
+                    if text_out_f is not None:
+                        text_out_f.seek(0)
+                        text_out_f.truncate()
+                        text_out_f.write(final_result_text)
+                        text_out_f.flush()
+                saw_end = True
             elif typ == "end":
                 saw_end = True
             elif typ == "error":

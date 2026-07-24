@@ -71,8 +71,9 @@
 #     quote-valid="false" so you can drop likely hallucinations.
 #
 # Exit codes:
-#   0 — run completed (even if zero findings). Check quote-valid per finding.
-#   3 — every dispatched agent failed
+#   0 — all specialist passes succeeded (even if zero findings). Check quote-valid.
+#   2 — partial: some specialists failed, some succeeded; report still emitted
+#   3 — every dispatched specialist failed
 #   4 — config error (missing config, no enabled agents, role unknown)
 #   5 — usage error (missing input, unknown flag, file not found)
 #
@@ -307,33 +308,49 @@ else
     echo -e "${YELLOW}[debug] keeping temp dir: $RESP_DIR${NC}" >&2
 fi
 
-declare -a PIDS OUT_FILES ERR_FILES KEYS
+# Initialize arrays before append / ${#arr[@]}. Bash 3.2 + set -u treats an
+# empty "${arr[@]}" as unbound (even after arr=()).
+PIDS=()
+OUT_FILES=()
+ERR_FILES=()
+PROMPT_FILES=()
+KEYS=()
+EXITS=()
 total=${#ASSIGN_AGENTS[@]}
 progress_stage "code-review" "depth=$REVIEW_MODE passes=$total agents=${ASSIGN_AGENTS[*]} roles=${ASSIGN_ROLES[*]}"
 
 for i in "${!ASSIGN_AGENTS[@]}"; do
     agent="${ASSIGN_AGENTS[$i]}"
     role="${ASSIGN_ROLES[$i]}"
+    # Specialization list has unique roles; key = agent.role (no index suffix).
+    # code_review_validate.py splits on the first '.' only.
     key="${agent}.${role}"
     out="$RESP_DIR/${key}.out"
     err="$RESP_DIR/${key}.err"
+    prompt_file="$RESP_DIR/${key}.prompt"
 
-    prompt="$(make_prompt "$INPUT_KIND" "$INPUT_SOURCE_LABEL" "$CODE_CONTENT")"
+    make_prompt "$INPUT_KIND" "$INPUT_SOURCE_LABEL" "$CODE_CONTENT" > "$prompt_file"
+    # Drain-safe live stderr (no FIFO): stdout → out; stderr → tee (live + err).
+    # Enclosing subshell waits for tee; PIPESTATUS[0] is the backend status.
     (
+        set +e
+        set +o pipefail
         export CONSILIUM_RUN_DIR
         export CONSILIUM_SAVE_OUTPUTS
         export CONSILIUM_SKIP_OUTPUT_TEMPLATE=1
-        # Live progress → parent stderr; also capture for failure reporting.
-        printf '%s' "$prompt" | "$LIB_DIR/backend_run.sh" \
+        export CONSILIUM_ARTIFACT_KEY="$key"
+        # stdin prompt (not --prompt-file): preserves role/principles wrap.
+        "$LIB_DIR/backend_run.sh" \
             --mode review --agent-id "$agent" --role "$role" \
-            >"$out" 2> >(tee "$err" >&2)
+            <"$prompt_file" 2>&1 1>"$out" | tee "$err" >&2
+        ps=("${PIPESTATUS[@]}")
+        exit "${ps[0]}"
     ) &
     PIDS+=("$!")
-    OUT_FILES+=("$out"); ERR_FILES+=("$err"); KEYS+=("$key")
+    OUT_FILES+=("$out"); ERR_FILES+=("$err"); PROMPT_FILES+=("$prompt_file"); KEYS+=("$key")
 done
 
 # --- Await ---
-declare -a EXITS
 failed=0
 succeeded=0
 for i in "${!PIDS[@]}"; do
@@ -344,6 +361,7 @@ for i in "${!PIDS[@]}"; do
         continue
     fi
     code=0
+    # Wait on enclosing subshell (tee already drained inside the pipeline).
     wait "$pid" || code=$?
     EXITS+=("$code")
     if [[ $code -eq 0 ]]; then
@@ -360,7 +378,8 @@ for i in "${!KEYS[@]}"; do
     if [[ $code -eq 0 ]]; then
         echo -e "${GREEN}[${key}] ok${NC}" >&2
     else
-        echo -e "${RED}[${key}] failed (exit $code) — see ${ERR_FILES[$i]}${NC}" >&2
+        # Live stderr already streamed; only a one-line status here.
+        echo -e "${RED}[${key}] failed (exit $code)${NC}" >&2
     fi
 done
 
@@ -379,3 +398,9 @@ python3 "$LIB_DIR/code_review_validate.py" \
 artifacts_set_primary_final "$REPORT"
 cat "$REPORT"
 rm -f "$REPORT"
+
+# Partial specialist failure still emitted the report above.
+if [[ $failed -gt 0 ]]; then
+    exit $EXIT_PARTIAL
+fi
+exit $EXIT_OK
