@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "codex": {
+      "enabled": true,
+      "backend": "codex-cli",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Codex Test"
+    },
+    "claude-code": {
+      "enabled": true,
+      "backend": "claude-code",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Claude Test"
+    },
+    "opencode": {
+      "enabled": true,
+      "backend": "opencode",
+      "model": "opencode-go/glm-5.2",
+      "effort": "max",
+      "role": "lateral",
+      "label": "OpenCode Test"
+    },
+    "grok": {
+      "enabled": true,
+      "backend": "grok-build",
+      "model": "grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok Test"
+    },
+    "gemini-cli": {
+      "enabled": false,
+      "backend": "gemini-cli",
+      "model": "gemini-3.1-pro-preview",
+      "role": "lateral",
+      "label": "Gemini Test",
+      "supports_delegate": false
+    },
+    "opencode-xai-grok45": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "xai/grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "OpenCode Grok fallback"
+    }
+  }
+}

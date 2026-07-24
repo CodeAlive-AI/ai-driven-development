@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
+python3 -c '
+import json,sys
+print(json.dumps({"bin":"opencode","argv":sys.argv[1:]}))
+' -- "$@" >> "$LOG"
+
+if printf '%s\n' "$@" | grep -qx -- 'json' || printf '%s\n' "$@" | grep -q -- '--format'; then
+  # emit json when format json requested
+  for a in "$@"; do
+    if [[ "$a" == "json" ]]; then
+      echo '{"type":"text","text":"FAKE_OPENCODE_OK"}'
+      echo '{"type":"session.complete"}'
+      exit 0
+    fi
+  done
+fi
+echo 'FAKE_OPENCODE_OK'
+exit 0

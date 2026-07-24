@@ -30,8 +30,8 @@ LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SCRIPTS_DIR="$(dirname "$LIB_DIR")"
 SKILL_DIR="$(dirname "$SCRIPTS_DIR")"
 
-# Pick up colour helpers if the calling skill defines them.
-if [[ -f "$SCRIPTS_DIR/common.sh" ]]; then source "$SCRIPTS_DIR/common.sh"; fi
+# Pick up colour helpers from lib (v5 layout).
+if [[ -f "$LIB_DIR/common.sh" ]]; then source "$LIB_DIR/common.sh"; fi
 : "${RED:=$'\033[0;31m'}" "${GREEN:=$'\033[0;32m'}" "${YELLOW:=$'\033[1;33m'}" "${CYAN:=$'\033[0;36m'}" "${NC:=$'\033[0m'}"
 
 AGENT=""
@@ -74,14 +74,9 @@ if '$AGENT' not in d:
 print(d['$AGENT']['backend'])
 ")" || exit 4
 
-case "$BACKEND" in
-    codex-cli)   BACKEND_SCRIPT="$SCRIPTS_DIR/codex-query.sh" ;;
-    gemini-cli)  BACKEND_SCRIPT="$SCRIPTS_DIR/gemini-query.sh" ;;
-    opencode)    BACKEND_SCRIPT="$SCRIPTS_DIR/opencode-query.sh" ;;
-    claude-code) BACKEND_SCRIPT="$SCRIPTS_DIR/claude-query.sh" ;;
-    *)           echo -e "${RED}Error: unknown backend '$BACKEND'${NC}" >&2; exit 4 ;;
-esac
-[[ -x "$BACKEND_SCRIPT" ]] || { echo -e "${RED}Error: backend script not executable: $BACKEND_SCRIPT${NC}" >&2; exit 4; }
+BACKEND_SCRIPT="$LIB_DIR/backend_run.sh"
+[[ -f "$BACKEND_SCRIPT" ]] || { echo -e "${RED}Error: backend runner missing: $BACKEND_SCRIPT${NC}" >&2; exit 4; }
+chmod +x "$BACKEND_SCRIPT" 2>/dev/null || true
 
 # --- Tmp-isolated execution ------------------------------------------------
 TMP_DIR="$(mktemp -d -t "agents-consilium-judge-XXXXXX")"
@@ -130,11 +125,13 @@ RAW_ERR="$TMP_DIR/raw-err.txt"
 
 (
     cd "$TMP_DIR"
-    export CONSILIUM_AGENT_ID="$AGENT"
-    export CONSILIUM_ROLE_OVERRIDE="analyst"
     export CONSILIUM_SKIP_OUTPUT_TEMPLATE=1
     export CODEX_FIRST_BYTE_DEADLINE="${ULTRAREVIEW_FIRST_BYTE:-3600}"
-    "$BACKEND_SCRIPT" "$RENDERED_PROMPT" > "$RAW_OUT" 2> "$RAW_ERR"
+    export CONSILIUM_RUN_DIR="${CONSILIUM_RUN_DIR:-}"
+    # Live progress → parent stderr; also capture for failure reporting.
+    printf '%s' "$RENDERED_PROMPT" | "$BACKEND_SCRIPT" \
+        --mode review --agent-id "$AGENT" --role analyst \
+        > "$RAW_OUT" 2> >(tee "$RAW_ERR" >&2)
 ) || {
     rc=$?
     echo -e "${RED}[judge/$AGENT] backend failed (exit $rc)${NC}" >&2

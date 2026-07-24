@@ -1,5 +1,5 @@
 {
-  "_comment": "Example consilium config. Copy over config.json (or point CONSILIUM_CONFIG at this file) and edit. JSON does not support comments in-place, hence this _comment field (ignored by the loader).",
+  "_comment": "Example consilium config (v5). Copy over config.json or set CONSILIUM_CONFIG. JSON ignores _comment.",
   "agents": {
     "codex": {
       "enabled": true,
@@ -38,7 +38,8 @@
       "backend": "gemini-cli",
       "model": "gemini-3.1-pro-preview",
       "role": "lateral",
-      "label": "Gemini"
+      "label": "Gemini",
+      "supports_delegate": false
     },
     "opencode": {
       "enabled": true,
@@ -48,13 +49,21 @@
       "role": "lateral",
       "label": "OpenCode GLM-5.2"
     },
+    "grok": {
+      "enabled": true,
+      "backend": "grok-build",
+      "model": "grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok 4.5 (native Grok Build)"
+    },
     "opencode-xai-grok45": {
       "enabled": false,
       "backend": "opencode",
       "model": "xai/grok-4.5",
       "effort": "high",
       "role": "analyst",
-      "label": "xAI Grok 4.5"
+      "label": "xAI Grok 4.5 (OpenCode fallback, disabled)"
     },
     "claude-code": {
       "enabled": false,

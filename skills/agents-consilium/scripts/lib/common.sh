@@ -196,6 +196,16 @@ MANDATORY workflow per candidate finding (hypothesis → validation → fix-cons
 4. Emit the finding ONLY if all three pass. Include one reason the existing deviation might be deliberate.
 "
 
+AUDITOR_ROLE_PROMPT="YOUR ROLE: Independent Auditor for gap-finding code review.
+Scope: defects the other specialists may have missed — cross-cutting risks, incomplete error handling, missing tests for critical paths, operational failure modes. Prefer high-severity gaps over nits.
+
+MANDATORY workflow per candidate finding (hypothesis → validation → fix-consistency):
+1. Draft a hypothesis about a concrete defect class for THIS input.
+2. Validate via tools in this working directory (Grep/Glob/Read/call sites/tests/project rules).
+3. FIX-CONSISTENCY CHECK: produce a concrete suggested-fix; drop if you cannot.
+4. Emit only validated findings. Include one reason it might still be a false positive.
+"
+
 # Data-driven role table: "<role-id>|<prompt-var-name>" per line.
 CONSILIUM_ROLE_MAP="analyst|ANALYST_ROLE_PROMPT
 lateral|LATERAL_ROLE_PROMPT
@@ -203,7 +213,8 @@ security|SECURITY_ROLE_PROMPT
 correctness|CORRECTNESS_ROLE_PROMPT
 performance|PERFORMANCE_ROLE_PROMPT
 architecture|ARCHITECTURE_ROLE_PROMPT
-consistency|CONSISTENCY_ROLE_PROMPT"
+consistency|CONSISTENCY_ROLE_PROMPT
+auditor|AUDITOR_ROLE_PROMPT"
 
 # Legacy aliases kept for backward compatibility with external scripts or overrides.
 CODEX_ROLE="$ANALYST_ROLE_PROMPT"
@@ -287,13 +298,16 @@ ${prompt}"
     printf '%s' "$full"
 }
 
-# Warn (stderr only — never fail) if a positional prompt still contains
+# Warn (stderr only — never fail) if a *positional* prompt still contains
 # literal backticks or $(...) after the shell has parsed it. By the time
 # this fires the bug — if any — already happened: either (a) the caller
 # correctly single-quoted / heredoc'd the prompt and the warning is benign,
 # or (b) the caller used double quotes and what we see here is whatever
 # survived after the shell ate the substitution. Either way, surfacing it
 # is cheap and points the next agent at the right diagnosis.
+#
+# Callers MUST only invoke this for positional CLI prompts. Do not warn on
+# --prompt-file or stdin content (code samples legitimately contain ` / $()).
 # Usage: warn_shell_special_in_prompt "$POSITIONAL_PROMPT"
 warn_shell_special_in_prompt() {
     local p="${1:-}"

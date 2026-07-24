@@ -51,12 +51,16 @@
 #
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SKILL_DIR="$(dirname "$SCRIPT_DIR")"
-LIB_DIR="$SCRIPT_DIR/lib"
+LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILL_DIR="$(cd "$LIB_DIR/../.." && pwd)"
 PROMPTS_DIR="$SKILL_DIR/prompts"
 
-source "$SCRIPT_DIR/common.sh" 2>/dev/null || true
+# shellcheck source=common.sh
+source "$LIB_DIR/common.sh" 2>/dev/null || true
+# shellcheck source=progress.sh
+source "$LIB_DIR/progress.sh" 2>/dev/null || true
+# shellcheck source=artifacts.sh
+source "$LIB_DIR/artifacts.sh" 2>/dev/null || true
 : "${RED:=$'\033[0;31m'}" "${GREEN:=$'\033[0;32m'}" "${YELLOW:=$'\033[1;33m'}" "${CYAN:=$'\033[0;36m'}" "${NC:=$'\033[0m'}"
 
 OUTPUT_FORMAT="markdown"

@@ -1,0 +1,147 @@
+#!/bin/bash
+#
+# consilium — single public CLI for agents-consilium v5
+#
+# Modes:
+#   consilium review ask  [...]
+#   consilium review code --depth basic|specialists|super|ultra [...]
+#   consilium delegate -a <exact-agent-id> [...]
+#
+# Observability contract:
+#   compact semantic live progress → stderr
+#   clean final answer → stdout
+#   per-run artifacts under CONSILIUM_RUN_DIR / CONSILIUM_OUTPUT_DIR
+#
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LIB_DIR="$SCRIPT_DIR/lib"
+
+# shellcheck source=lib/common.sh
+source "$LIB_DIR/common.sh"
+# shellcheck source=lib/progress.sh
+source "$LIB_DIR/progress.sh"
+
+usage() {
+    cat <<'EOF'
+consilium — multi-agent review and single-agent YOLO delegation
+
+Usage:
+  consilium review ask [options] ["question"]
+  consilium review code --depth basic|specialists|super|ultra [options] <file|--diff>
+  consilium delegate -a <exact-agent-id> ["task"]
+  consilium --list-agents
+  consilium -h | --help
+
+review ask
+  Fan-out independent opinions across enabled (or selected) agents. Read-only.
+  Options: --xml, --list-agents, --prompt-file, -a/--agents, -x/--exclude
+
+review code
+  Structured code review. Always read-only.
+  --depth basic         2 specialists: security + correctness (default)
+  --depth specialists   5 specialists
+  --depth super         multi-stage superreview + judge
+  --depth ultra         multi-stage ultrareview + judge
+  Other options: --xml, --diff, -a/--agents, -x/--exclude, --dry-run (super/ultra),
+                 --judge, --no-fallback (ultra)
+
+delegate
+  Full-YOLO: run exactly one agent in the current directory with no sandbox
+  and no approval prompts. Requires -a <exact-agent-id> (no globs, no default).
+  Supported backends: codex-cli, claude-code, opencode, grok-build.
+  Gemini is review-only.
+
+Environment:
+  CONSILIUM_CONFIG, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
+  AGENT_TIMEOUT, and per-backend model/effort overrides — see SKILL.md.
+EOF
+}
+
+if [[ $# -eq 0 ]]; then
+    usage
+    exit $EXIT_USAGE
+fi
+
+case "$1" in
+    -h|--help|help)
+        usage
+        exit $EXIT_OK
+        ;;
+    --list-agents)
+        # shellcheck source=lib/config.sh
+        source "$LIB_DIR/config.sh"
+        config_validate || exit $EXIT_CONFIG_ERROR
+        config_xml_plan
+        exit $EXIT_OK
+        ;;
+    review)
+        shift
+        sub="${1:-}"
+        [[ -n "$sub" ]] || { echo "Error: review requires 'ask' or 'code'" >&2; exit $EXIT_USAGE; }
+        shift
+        case "$sub" in
+            ask)
+                exec bash "$LIB_DIR/review_ask.sh" "$@"
+                ;;
+            code)
+                # Parse --depth early to route super/ultra pipelines
+                DEPTH="${CONSILIUM_REVIEW_MODE:-basic}"
+                FORWARD=()
+                while [[ $# -gt 0 ]]; do
+                    case "$1" in
+                        --depth)
+                            DEPTH="${2:-}"
+                            shift 2
+                            ;;
+                        --depth=*)
+                            DEPTH="${1#--depth=}"
+                            shift
+                            ;;
+                        --mode)
+                            # accept legacy --mode as alias of --depth
+                            DEPTH="${2:-}"
+                            shift 2
+                            ;;
+                        --mode=*)
+                            DEPTH="${1#--mode=}"
+                            shift
+                            ;;
+                        *)
+                            FORWARD+=("$1")
+                            shift
+                            ;;
+                    esac
+                done
+                case "$DEPTH" in
+                    basic|specialists)
+                        exec bash "$LIB_DIR/review_code.sh" --depth "$DEPTH" "${FORWARD[@]+"${FORWARD[@]}"}"
+                        ;;
+                    super)
+                        exec bash "$LIB_DIR/review_super.sh" "${FORWARD[@]+"${FORWARD[@]}"}"
+                        ;;
+                    ultra)
+                        exec bash "$LIB_DIR/review_ultra.sh" "${FORWARD[@]+"${FORWARD[@]}"}"
+                        ;;
+                    *)
+                        echo "Error: --depth must be basic|specialists|super|ultra (got: $DEPTH)" >&2
+                        exit $EXIT_USAGE
+                        ;;
+                esac
+                ;;
+            *)
+                echo "Error: unknown review subcommand: $sub (expected ask|code)" >&2
+                exit $EXIT_USAGE
+                ;;
+        esac
+        ;;
+    delegate)
+        shift
+        exec bash "$LIB_DIR/delegate.sh" "$@"
+        ;;
+    *)
+        echo "Error: unknown command: $1 (expected review|delegate)" >&2
+        usage >&2
+        exit $EXIT_USAGE
+        ;;
+esac

@@ -89,7 +89,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
-| [agents-consilium](skills/agents-consilium/) | Query Codex CLI and Gemini CLI in parallel for independent expert opinions on architecture, code reviews, and investigations. Different models bring different angles: more original ideas in brainstorming, broader coverage in code review |
+| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code) and single-agent **delegate** (full YOLO) via `scripts/consilium`. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only). Independent opinions, structured specialists, super/ultra judge pipelines |
 
 ### macOS & Windows system health (2)
 

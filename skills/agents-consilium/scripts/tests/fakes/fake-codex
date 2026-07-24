@@ -1,0 +1,31 @@
+#!/bin/bash
+# Fake codex CLI for consilium tests.
+# Records argv to CONSILIUM_FAKE_ARGV_LOG (JSON line) and emits canned output.
+set -euo pipefail
+LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
+python3 -c '
+import json,sys
+print(json.dumps({"bin":"codex","argv":sys.argv[1:]}))
+' -- "$@" >> "$LOG"
+
+# Parse -o last message path if present
+out_file=""
+args=("$@")
+for i in "${!args[@]}"; do
+  if [[ "${args[$i]}" == "-o" || "${args[$i]}" == "--output-last-message" ]]; then
+    out_file="${args[$((i+1))]:-}"
+  fi
+done
+
+# Emit a simple JSONL event stream on stdout when --json is present
+if printf '%s\n' "$@" | grep -qx -- '--json'; then
+  echo '{"type":"agent_message","text":"FAKE_CODEX_OK"}'
+  echo '{"type":"turn.completed"}'
+fi
+
+if [[ -n "$out_file" ]]; then
+  printf 'FAKE_CODEX_OK\n' > "$out_file"
+else
+  printf 'FAKE_CODEX_OK\n'
+fi
+exit 0

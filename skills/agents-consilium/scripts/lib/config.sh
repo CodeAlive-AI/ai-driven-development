@@ -5,14 +5,16 @@
 #
 # Agent config schema (per agent id):
 #   enabled  : bool   — is agent active for consensus runs
-#   backend  : string — codex-cli | gemini-cli | opencode
+#   backend  : string — codex-cli | gemini-cli | opencode | claude-code | grok-build
 #   model    : string — model id passed to the backend
-#   role     : string — analyst (deep/precise) | lateral (broad/creative)
+#   role     : string — analyst (deep/precise) | lateral (broad/creative) | specialists...
 #   label    : string — display name in reports (optional)
+#   effort   : string — reasoning effort (backend-specific)
+#   supports_delegate : bool — optional; false for review-only backends (gemini)
 #
 # Overrides: CONSILIUM_CONFIG env var can point to a custom JSON file.
 
-SKILL_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SKILL_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 CONSILIUM_CONFIG="${CONSILIUM_CONFIG:-$SKILL_ROOT/config.json}"
 
 # Internal: read JSON via python3.
@@ -125,6 +127,7 @@ BACKEND_CMDS = {
     "gemini-cli": "gemini",
     "opencode": "opencode",
     "claude-code": "claude",
+    "grok-build": "grok",
 }
 
 with open(os.environ["CONSILIUM_CONFIG_PATH"]) as f:
