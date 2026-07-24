@@ -11,10 +11,49 @@ if command -v stdbuf >/dev/null 2>&1; then
   fi
 fi
 
+# Read --prompt-file content for transport tests (Grok does not use stdin).
+prompt_file=""
+args=("$@")
+for i in "${!args[@]}"; do
+  if [[ "${args[$i]}" == "--prompt-file" ]]; then
+    prompt_file="${args[$((i+1))]:-}"
+  fi
+done
+prompt_body=""
+if [[ -n "$prompt_file" && -f "$prompt_file" ]]; then
+  prompt_body="$(cat "$prompt_file")"
+fi
+
 python3 -c '
-import json,sys
-print(json.dumps({"bin":"grok","argv":sys.argv[1:]}))
+import json, os, sys
+print(json.dumps({
+    "bin": "grok",
+    "argv": sys.argv[1:],
+    "cwd": os.getcwd(),
+    "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
+    "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
+    "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
+    "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+    "prompt_file_body": os.environ.get("_FAKE_PROMPT_BODY", ""),
+}))
 ' -- "$@" >> "$LOG"
+
+# Append prompt body length separately to avoid huge JSON log lines when testing ARG_MAX.
+if [[ -n "$prompt_body" ]]; then
+  python3 -c '
+import json, os, sys
+body = open(sys.argv[1]).read() if sys.argv[1] else ""
+print(json.dumps({
+    "bin": "grok-prompt-meta",
+    "prompt_len": len(body),
+    "prompt_startswith": body[:32] if body else "",
+    "prompt_endswith": body[-32:] if body else "",
+    "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
+    "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
+    "cwd": os.getcwd(),
+}))
+' "$prompt_file" >> "$LOG"
+fi
 
 MODE="${CONSILIUM_FAKE_GROK_MODE:-ok}"
 
@@ -50,6 +89,10 @@ case "$MODE" in
     ;;
   nonzero)
     echo '{"type":"error","message":"failed"}'
+    exit 2
+    ;;
+  fail)
+    echo '{"type":"error","message":"forced fail"}' >&2
     exit 2
     ;;
   *)

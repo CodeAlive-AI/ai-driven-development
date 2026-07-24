@@ -30,6 +30,10 @@ Usage:
   consilium review ask [options] ["question"]
   consilium review code --depth basic|specialists|super|ultra [options] <file|--diff>
   consilium delegate -a <exact-agent-id> ["task"]
+  consilium delegate -a <exact-agent-id> --steerable ["task"]
+  consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
+  consilium delegate status RUN_ID [--json]
+  consilium delegate cancel RUN_ID
   consilium --list-agents
   consilium -h | --help
 
@@ -51,11 +55,12 @@ delegate
   and no approval prompts. Requires -a <exact-agent-id> (no globs, no default).
   Supported backends: codex-cli, claude-code, opencode, grok-build.
   Gemini is review-only.
+  --steerable starts a long-lived session with mailbox steer/status/cancel.
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
-  AGENT_TIMEOUT (opt-in; default unlimited), and per-backend model/effort
-  overrides — see SKILL.md.
+  CONSILIUM_STEER_DIR, AGENT_TIMEOUT (opt-in; default unlimited), and per-backend
+  model/effort overrides — see SKILL.md.
 EOF
 }
 

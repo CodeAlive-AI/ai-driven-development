@@ -117,6 +117,11 @@ if [[ "$PROMPT_SOURCE" == "positional" ]]; then
     warn_shell_special_in_prompt "$PROMPT"
 fi
 
+# Drop any inherited FULL_PROMPT *before* assigning. In bash, assigning to a
+# name that arrived exported keeps the export attribute — which would put the
+# full prompt body back into the child environment and hit ARG_MAX/E2BIG.
+unset FULL_PROMPT 2>/dev/null || true
+
 if [[ "$RAW_MODE" -eq 1 || -n "${CONSILIUM_RAW_PROMPT:-}" ]]; then
     export CONSILIUM_RAW_PROMPT=1
     FULL_PROMPT="$PROMPT"
@@ -129,7 +134,9 @@ else
     # CONSILIUM_SKIP_OUTPUT_TEMPLATE is honored by build_prompt (code-review schemas).
     FULL_PROMPT="$(build_prompt "$ROLE_PROMPT" "$PROMPT" </dev/null)"
 fi
-export FULL_PROMPT
+# NEVER export FULL_PROMPT — large prompts exceed ARG_MAX when copied into the
+# environment (execve counts env + argv). Prompt bodies travel via temp file /
+# stdin only.
 
 # Resolve CLI binary (overridable for tests)
 bin_for() {
@@ -177,7 +184,11 @@ if [[ "${CONSILIUM_SAVE_OUTPUTS:-1}" != "0" ]]; then
         export CONSILIUM_RUN_DIR
     fi
 fi
-artifacts_paths_for "$AGENT_ID"
+# Artifact key identifies this invocation. Fan-out callers set an explicit
+# CONSILIUM_ARTIFACT_KEY (e.g. "codex.security", "discovery-small.0.x.analyst",
+# "judge.primary.claude-code"). Ordinary ask/delegate leave it unset → agent id.
+ARTIFACT_KEY="${CONSILIUM_ARTIFACT_KEY:-$AGENT_ID}"
+artifacts_paths_for "$ARTIFACT_KEY"
 
 # Build argv into array CMD
 CMD=()
@@ -326,6 +337,13 @@ FINAL_TEXT="$TMP_DIR/final.txt"
 LAST_MSG="$TMP_DIR/last-message.txt"
 PROMPT_PATH="$TMP_DIR/prompt.txt"
 printf '%s' "$FULL_PROMPT" > "$PROMPT_PATH"
+# Free the shell variable and ensure it cannot appear in child environments.
+unset FULL_PROMPT
+# PROMPT may also be large (stdin/file path); keep for diagnostics only when small.
+# Always clear export attribute on PROMPT too if a parent exported it.
+if [[ ${#PROMPT} -gt 8192 ]]; then
+    unset PROMPT
+fi
 BACKEND_ERR="$TMP_DIR/stderr.txt"
 : > "$RAW_STREAM"
 : > "$FINAL_TEXT"
@@ -420,24 +438,29 @@ run_and_capture() {
         claude-code)
             run_streamed "claude-code" "$PROMPT_PATH" "${CMD[@]}"
             exit_code=$BACKEND_RC
-            if [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
+            # Prefer authoritative result over streamed deltas (no duplication).
+            if [[ -s "$RAW_STREAM" ]]; then
                 python3 -c '
 import json,sys
-text=[]
+deltas=[]
+result=None
 for line in open(sys.argv[1]):
     line=line.strip()
     if not line: continue
     try:
         o=json.loads(line)
     except Exception:
-        text.append(line); continue
-    if o.get("type")=="result" and isinstance(o.get("result"), str):
-        text=[o["result"]]; break
-    if o.get("type")=="content_block_delta":
+        deltas.append(line); continue
+    if o.get("type") in ("result", "result_success") and isinstance(o.get("result"), str):
+        result=o["result"]
+    elif o.get("type")=="content_block_delta":
         d=o.get("delta") or {}
         if d.get("type")=="text_delta":
-            text.append(d.get("text",""))
-open(sys.argv[2],"w").write("".join(text) if text else open(sys.argv[1]).read())
+            deltas.append(d.get("text",""))
+# Prefer result (complete answer) over concatenated deltas.
+text = result if result is not None else "".join(deltas)
+if text or result is not None:
+    open(sys.argv[2],"w").write(text if text is not None else "")
 ' "$RAW_STREAM" "$FINAL_TEXT" 2>/dev/null || true
             fi
             ;;
@@ -482,6 +505,9 @@ open(sys.argv[2],"w").write("".join(chunks))
             exit_code=$BACKEND_RC
             ;;
     esac
+    # Non-zero `return` under `set -e` aborts the whole script before the
+    # caller can read RC / emit progress_agent_done / persist failure artifacts.
+    set +e
     return "$exit_code"
 }
 
@@ -497,7 +523,7 @@ if [[ -n "${ART_RAW:-}" ]]; then
     mkdir -p "$(dirname "$ART_RAW")" "$(dirname "$ART_NORM")" "$(dirname "$ART_FINAL")" 2>/dev/null || true
     [[ -f "$RAW_STREAM" ]] && cp "$RAW_STREAM" "$ART_RAW" 2>/dev/null || true
     [[ -f "$NORM_STREAM" ]] && cp "$NORM_STREAM" "$ART_NORM" 2>/dev/null || true
-    artifacts_write_final "$AGENT_ID" "$FINAL_TEXT" 2>/dev/null || true
+    artifacts_write_final "$ARTIFACT_KEY" "$FINAL_TEXT" 2>/dev/null || true
 fi
 
 if [[ $RC -ne 0 ]]; then
