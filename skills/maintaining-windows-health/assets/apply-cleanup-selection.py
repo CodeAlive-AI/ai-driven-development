@@ -383,6 +383,16 @@ def _run(command: str) -> subprocess.CompletedProcess:
     )
 
 
+def load_selection_json(path: Path) -> dict:
+    """Load a cleanup selection JSON, tolerating a UTF-8 BOM.
+
+    Windows PowerShell `Set-Content -Encoding UTF8` (and several editors)
+    write a BOM. `json.loads` rejects a leading U+FEFF under encoding=utf-8;
+    utf-8-sig strips it when present and is a no-op for BOM-less files.
+    """
+    return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description="Apply a cleanup selection JSON (Windows)")
     ap.add_argument("selection", help="path to cleanup-selection-<ts>.json")
@@ -398,7 +408,7 @@ def main(argv: list[str]) -> int:
         print(f"selection file not found: {sel_path}", file=sys.stderr)
         return 1
     try:
-        sel = json.loads(sel_path.read_text(encoding="utf-8"))
+        sel = load_selection_json(sel_path)
     except Exception as exc:
         print(f"invalid selection JSON: {exc}", file=sys.stderr)
         return 1
