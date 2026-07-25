@@ -11,10 +11,10 @@
     "claude-code": {
       "enabled": true,
       "backend": "claude-code",
-      "model": "claude-sonnet-5",
+      "model": "claude-opus-5",
       "effort": "high",
       "role": "analyst",
-      "label": "Claude Test"
+      "label": "Claude Opus 5 Test"
     },
     "opencode": {
       "enabled": true,

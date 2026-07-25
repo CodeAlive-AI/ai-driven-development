@@ -131,6 +131,8 @@ dump_review claude-code "$TMP/claude-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-review.json"'"))["argv"]))')
 assert_contains "claude review plan mode" "$argv" "--permission-mode plan"
 assert_contains "claude review denies Edit" "$argv" "Edit"
+assert_contains "claude review selects Opus 5" "$argv" "--model claude-opus-5"
+assert_contains "claude review defaults to high effort" "$argv" "--effort high"
 assert_not_contains "claude review no skip-permissions" "$argv" "--dangerously-skip-permissions"
 
 # Claude delegate: skip permissions, no plan

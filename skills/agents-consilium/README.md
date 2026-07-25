@@ -87,7 +87,8 @@ scripts/consilium delegate -a codex --prompt-file task.md
 | `opencode` + OC-Go roster | opencode | enabled |
 | **`grok`** | **grok-build / grok-4.5 high** | **enabled** |
 | `opencode-xai-grok45` | opencode xAI fallback | disabled |
-| `claude-*`, `gemini-cli` | … | disabled / review-only |
+| `claude-opus` | claude-code / claude-opus-5 high | disabled |
+| other `claude-*`, `gemini-cli` | … | disabled / review-only |
 
 Edit `config.json` or set `CONSILIUM_CONFIG`.
 
