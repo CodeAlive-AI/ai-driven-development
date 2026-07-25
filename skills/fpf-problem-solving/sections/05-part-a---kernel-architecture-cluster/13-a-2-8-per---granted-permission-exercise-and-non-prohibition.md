@@ -82,8 +82,9 @@ NonProhibitionFinding@Context <: U.Episteme
   evaluationWorkRef: WorkRef
 
 NonViolationFinding@Context <: U.Episteme
-  actionOrWorkRef: WorkRef
-  beneficiaryPerformanceBindingRef: U.EpistemeRef
+  workRef: WorkRef
+  performerAssignmentRefs: set<RoleAssignmentRef>
+  onBehalfOfRelationOccurrenceRef?: U.EntityRef
   normativeFrameRef: U.EpistemeRef
   frameCurrentnessResultRef: U.EpistemeRef
   frameCompletenessForUseResultRef: U.EpistemeRef
@@ -96,6 +97,8 @@ NonViolationFinding@Context <: U.Episteme
 ```
 
 `nonProhibited` and `nonViolating` are admissible only when the named frame is current and explicitly sufficiently complete for the intended use. Otherwise the finding is `unresolved`. Neither finding institutes permission, proves absence outside its frame, or becomes a world-side relation.
+
+For `NonViolationFinding@Context`, recover the actual performer systems from the named Work and cite their exact covering `U.RoleAssignment` occurrences. If the checked norm instead turns on work done for a `PartyRef`, cite the already obtaining subject-owned on-behalf-of relation occurrence. These are direct case facts used by the evaluation, not a new `beneficiaryPerformanceBinding` episteme. Omit the on-behalf-of reference when no such branch is used.
 
 #### A.2.8.PER:4.4 - Declare the strong granted-permission relation
 
@@ -126,7 +129,7 @@ RelationOccurrenceGroundAndQualifiers:
 
 The beneficiary and permitted-action specification are participants. Grantor assignment, instituting act, policy, context, scope/window, and revocation are constructive ground or qualifiers, not collapsed participants.
 
-The relation begins only when an exact grantor assignment performs a `U.SpeechAct` that satisfies the current policy's grant-validity predicate and institutes permission for the named participants. It obtains while beneficiary applicability, policy continuation, scope, and window hold and no valid revocation or supersession ends it.
+The relation begins only when an admitted holder `U.System` performs a `U.SpeechAct` under the exact `grantorAssignmentRef`, the act satisfies the current policy's grant-validity predicate, and it institutes permission for the named participants. The assignment's `HolderSystemSlot` must resolve to that system: the system performs the act, while the assignment supplies its role and authority ground and never acts. The relation obtains while beneficiary applicability, policy continuation, scope, and window hold and no valid revocation or supersession ends it.
 
 One occurrence is identified by the instituting speech-act occurrence, exact beneficiary ref and ref kind, action-specification edition, policy/context, and effective interval. Beneficiary change, renewal, materially changed action specification, non-carried policy edition, or revocation ends or splits the occurrence. A policy edition preserves it only through an explicit satisfied carry-forward rule.
 
@@ -149,38 +152,68 @@ RelationSignature:
 semanticDirection: ExercisingWorkSlot -> GrantedPermissionOccurrenceSlot
 
 RelationOccurrenceQualifiers:
-  actionMatchFindingRef: U.EpistemeRef
-  beneficiaryEligibilityFindingRef: U.EpistemeRef
+  beneficiaryAssignmentRef?: RoleAssignmentRef
+  onBehalfOfRelationOccurrenceRef?: U.EntityRef
   exerciseScope: U.ClaimScope
   exerciseInterval: QualificationWindowPolicy
 ```
 
-The exercise relation obtains only when actual dated work instantiates the permitted-action specification, the performer relation satisfies the exact beneficiary branch, the grant obtains throughout the exercise interval, and the work remains in scope. The work is a satisfier of permitted action content. It does not satisfy or discharge an obligation and does not consume the grant unless the named policy explicitly makes it single-use or quota-bound.
+Decide exercise from two observable questions about the existing objects: **did this dated Work instantiate the grant's permitted-action specification, and did its actual performer satisfy the grant's beneficiary branch?** For a `RoleAssignmentRef` beneficiary, the grant's assignment must cover the Work and have that performer as its holder. For a `RoleRef`, `beneficiaryAssignmentRef` names the covering assignment that instantiates the role. For a `PartyRef`, the performer must be that party or `onBehalfOfRelationOccurrenceRef` must cite the already obtaining subject-owned relation licensed by the policy. If either question fails, this exercise relation does not obtain.
+
+No `actionMatchFinding` or `beneficiaryEligibilityFinding` is required. The match and eligibility are direct obtaining predicates over the Work, grant, action specification, performer, and cited assignment or on-behalf-of relation. If a receiving assurance or audit use needs a separately recorded evaluation or evidence item, cite that item through its direct owner; do not mint a placeholder episteme merely to fill this relation.
+
+The exercise relation obtains only when those two predicates hold, the grant obtains throughout the exercise interval, and the work remains in scope. The work is a satisfier of permitted action content. It does not satisfy or discharge an obligation and does not consume the grant unless the named policy explicitly makes it single-use or quota-bound.
 
 Non-exercise leaves an obtaining grant unused and ordinarily still obtaining; it does not establish `NonViolationFinding@Context`. Exercise establishes only the exercise relation and likewise does not establish that finding without the separate checked-frame evaluation. Work outside the action specification, beneficiary binding, scope, or window does not exercise the grant; a separate prohibition, commitment, admissibility, or work owner decides any further consequence.
 
 #### A.2.8.PER:4.6 - Expose conflict without inventing precedence
 
 ```text
+PermissionConflictResolutionResultRef ::= U.EpistemeRef
+  // resolves only to PermissionConflictResolutionResult@Context
+
+PermissionConflictResolutionResult@Context <: U.Episteme
+  conflictFindingRef: U.EpistemeRef
+  governingPrecedencePolicyRef: U.EpistemeRef
+  resolutionWorkRef: WorkRef
+  deciderSystemRef: U.EntityRef
+  deciderAssignmentRef: RoleAssignmentRef
+  decisionAuthorityRelationOccurrenceRef: U.EntityRef
+  selectedGrantOccurrenceRef?: U.EntityRef
+  selectedNormClaimRef?: ClaimIdRef
+  effectiveScope: U.ClaimScope
+  effectiveWindow: QualificationWindowPolicy
+  reopenConditionRef: ClaimIdRef
+
 PermissionNormConflictFinding@Context <: U.Episteme
   grantedPermissionOccurrenceRef: U.EntityRef
   conflictingNormClaimRef: ClaimIdRef
-  beneficiaryAndActionMatchFindingRef: U.EpistemeRef
   overlapScope: U.ClaimScope
   overlapWindow: QualificationWindowPolicy
-  policyOrPrecedenceOwnerRef: U.EpistemeRef
+  governingPrecedencePolicyRef: U.EpistemeRef
+  applicablePrecedenceRuleRef?: ClaimIdRef
+  decisionAuthorityRelationOccurrenceRef?: U.EntityRef
+  resolutionWorkRef?: WorkRef
+  resolutionResultRef?: PermissionConflictResolutionResultRef
   blockedWorkOrRelianceRef: U.EntityRef
-  disposition: unresolved | resolvedByNamedOwner
-  resolutionOrReopenConditionRef: U.EpistemeRef
+  disposition: unresolved | settledByApplicableRule | settledByDecisionResult
+  reopenConditionRef: ClaimIdRef
 ```
 
-Create the finding only when the grant and current prohibition or commitment concern the same beneficiary/action content, overlapping scope/window, and incompatible practical conclusions. Permission and an obligation to perform the same action are not automatically in conflict. Until the named owner resolves a real conflict, work-entry reliance is unresolved; permit text, readiness, or a passing gate does not silently defeat the prohibition.
+Create the finding only when the grant and current prohibition or commitment concern the same beneficiary/action content, overlapping scope/window, and incompatible practical conclusions. Check that match directly from the two claims and their participants; do not require a `beneficiaryAndActionMatchFinding` wrapper. Permission and an obligation to perform the same action are not automatically in conflict.
+
+Resolve the conflict through exactly one of two branches:
+
+1. **The current policy already decides.** `applicablePrecedenceRuleRef` cites the policy claim whose stated conditions match this beneficiary, action, scope, and window. Set `settledByApplicableRule` only when that rule itself selects which claim governs the blocked use.
+2. **A decision is required.** Name the admitted `U.System` that decides, the covering assignment under which it performs the dated `resolutionWorkRef`, and the independently obtaining subject-owned authority relation that authorizes this decision. The direct result relation for that decision must connect the Work to a current `PermissionConflictResolutionResult@Context` selecting either the grant occurrence or the conflicting norm claim for the stated scope/window. The system decides; neither its assignment, authority relation, policy, nor organizational label performs the work.
+
+`PermissionConflictResolutionResult@Context` is the exact decision result for this conflict, not a generic owner record. Exactly one of `selectedGrantOccurrenceRef` or `selectedNormClaimRef` is filled. Its `deciderAssignmentRef` must cover `resolutionWorkRef` and have `deciderSystemRef` as holder; `decisionAuthorityRelationOccurrenceRef` must independently authorize that decision. If no policy rule decides and no such current result exists, the disposition remains `unresolved`, even when a responsible office or role is named. Permit text, readiness, or a passing gate does not silently defeat the prohibition.
 
 #### A.2.8.PER:4.7 - Keep the handshakes narrow
 
 | Neighboring object | Exact handshake |
 |---|---|
-| Grant/revoke act | `A.2.9 U.SpeechAct <: U.Work`; `institutes.permissions` cites the grant occurrence. The act is not the enduring relation. |
+| Grant/revoke act | `A.2.9 U.SpeechAct <: U.Work`; an admitted holder `U.System` performs the act under the exact grantor assignment, and `institutes.permissions` cites the grant occurrence. The assignment is authority ground, not the actor; the act is not the enduring relation. |
 | Permit episteme and carrier | `C.2.1`, `E.17`, `G.11`, and `A.10` may assert, publish, carry, or evidence the relation; readable form neither institutes nor equals it. |
 | Duty or prohibition | `A.2.8 U.Commitment`; permission remains outside its modality family. |
 | Boundary claim or entry predicate | `A.6.B` classifies the claim; an `A-*` predicate may consume a current permission result but does not create one. |
@@ -190,13 +223,13 @@ Create the finding only when the grant and current prohibition or commitment con
 
 ### A.2.8.PER:5 - Archetypal Grounding
 
-**Strong grant and exercise.** A policy-valid grant speech act institutes `GrantedPermissionRelation@Context` for `MaintenanceTechnicianRole` to run `CalibrationProcedure-v3` during one service window. Its beneficiary is a `RoleRef`. Assignment `Tech-17@Shift-B` instantiates that role and performs dated calibration work that matches the action specification within scope. A `PermissionExerciseRelation@Context` obtains from that work to the still-current grant. The grant remains current for the rest of the window because the policy is not single-use. No obligation, readiness, capability, gate passage, safe result, or successful calibration is inferred.
+**Strong grant and exercise.** Admitted system `MaintenanceCoordinator-A` performs a policy-valid grant speech act under `MaintenanceCoordinator-A@DayShift`, the exact grantor assignment whose holder is that system. The act institutes `MaintenanceCalibrationGrant-2026-07-19 : GrantedPermissionRelation@Context` for `MaintenanceTechnicianRole` to run `CalibrationProcedure-v3` during one service window. Its beneficiary is a `RoleRef`. Beneficiary assignment `Tech-17@Shift-B` instantiates that role for admitted technician system `Tech-17`; `Tech-17` performs dated `CalibrationWork-17B` under that assignment. The Work instantiates `CalibrationProcedure-v3` within the grant's zone, window, and scope, so the action-match predicate holds; `Tech-17@Shift-B` covers the Work and instantiates the beneficiary role, so the beneficiary predicate holds. `CalibrationExercise-17B : PermissionExerciseRelation@Context` therefore connects `CalibrationWork-17B` to `MaintenanceCalibrationGrant-2026-07-19`, cites `beneficiaryAssignmentRef=Tech-17@Shift-B`, and states the work interval and scope. No auxiliary match or eligibility finding is created. The assignments ground the grant and work attribution but perform neither act. The grant remains current for the rest of the window because the policy is not single-use. No obligation, readiness, capability, gate passage, safe result, or successful calibration is inferred.
 
 **Weak finding.** A policy reviewer checks a named, current, sufficiently complete plant-access frame and finds no prohibition applicable to the role, action specification, zone, and window. The result is `NonProhibitionFinding@Context(result=nonProhibited)`, not an instituted grant. If the emergency-policy register cannot be checked, the result is `unresolved`.
 
-**Actual-work non-violation.** After `CalibrationWork-17B` is performed, a compliance reviewer evaluates that exact work against `PlantCalibrationNormativeFrame-2026-07-19-e3`, whose currentness and sufficient completeness for the technician, procedure, zone, and service-window use are named and whose applicable prohibitions are checked. The result is `NonViolationFinding@Context(actionOrWorkRef=CalibrationWork-17B, normativeFrameRef=PlantCalibrationNormativeFrame-2026-07-19-e3, result=nonViolating)`. The separate exercise relation shows which grant the work exercised; exercise alone does not establish non-violation, and non-exercise alone does not establish it either. If the frame is stale or insufficiently complete for this use, the non-violation result is `unresolved`.
+**Actual-work non-violation.** After `CalibrationWork-17B` is performed, `CalibrationComplianceEvaluation-17B : U.Work` checks that Work against `PlantCalibrationNormativeFrame-2026-07-19-e3`, whose currentness and sufficient completeness for the technician, procedure, zone, and service-window use are named and whose applicable prohibitions are checked. The result is `NonViolationFinding@Context(workRef=CalibrationWork-17B, performerAssignmentRefs={Tech-17@Shift-B}, normativeFrameRef=PlantCalibrationNormativeFrame-2026-07-19-e3, evaluationWorkRef=CalibrationComplianceEvaluation-17B, result=nonViolating)`. It needs no beneficiary-binding episteme: the covering assignment already relates the performer system to the beneficiary role. The separate exercise relation shows which grant the work exercised; exercise alone does not establish non-violation, and non-exercise alone does not establish it either. If the frame is stale or insufficiently complete for this use, the non-violation result is `unresolved`.
 
-**Conflict and non-use.** The role-level calibration grant remains published while an emergency prohibition forbids entry into the contaminated zone during an overlapping interval. `PermissionNormConflictFinding@Context` names both exact claims and the emergency-policy precedence owner; work entry remains unresolved. A visible permit and green readiness tile cannot repair it. If no calibration work occurs, the permission is neither exercised nor violated.
+**Conflict and non-use.** The role-level calibration grant remains published while `ContaminatedZoneEntryProhibition-7` forbids the same beneficiary and calibration action in Zone 7 during an overlapping interval. In the direct-rule case, `EmergencyCalibrationPrecedencePolicy-e5` contains applicable claim `CZ7-Prohibition-Overrides-CalGrant`; the rule's conditions match, so the finding is `settledByApplicableRule`, cites that rule, and returns “do not enter Zone 7” for the blocked work. In a discretionary Zone 8 case, admitted system `SafetyDirector-3` performs `CalibrationConflictDecisionWork-8` under `SafetyDirector-3@EmergencyShift`; the separately obtaining `PlantEmergencyExceptionAuthority-8` relation authorizes that decision, and current `CalibrationConflictResolutionResult-8` selects the prohibition claim for the stated scope/window. Only then is the finding `settledByDecisionResult`. A second Zone 8 request that merely names the Safety Director but has no dated decision work or current result remains `unresolved`. A visible permit and green readiness tile cannot repair either gap. If no calibration work occurs, the permission is neither exercised nor violated.
 
 ### A.2.8.PER:6 - Bias-Annotation
 
@@ -210,11 +243,11 @@ The chief bias is document-and-display authority: a readable permit, badge, poli
 |---|---|
 | `CC-A2.8.PER-1` | The current result is exactly `NonProhibitionFinding@Context`, `GrantedPermissionRelation@Context`, `PermissionExerciseRelation@Context`, `NonViolationFinding@Context`, or `PermissionNormConflictFinding@Context`. |
 | `CC-A2.8.PER-2` | Beneficiary uses only `RoleRef | RoleAssignmentRef | PartyRef`, with its exact eligibility branch. |
-| `CC-A2.8.PER-3` | A strong grant names participants, instituting act, grantor assignment, policy/context, scope/window, currentness, and occurrence identity. |
+| `CC-A2.8.PER-3` | A strong grant names the admitted holder `U.System` that performs the instituting act, the exact grantor assignment whose `HolderSystemSlot` resolves to that system, participants, policy/context, scope/window, currentness, and occurrence identity; the assignment is authority ground and never the actor. |
 | `CC-A2.8.PER-4` | Weak findings require a current frame explicitly complete enough for the intended use; incompleteness returns `unresolved`. |
-| `CC-A2.8.PER-5` | Exercise names dated work, one current grant occurrence, action match, beneficiary eligibility, scope, and interval. |
+| `CC-A2.8.PER-5` | Exercise names dated work, the admitted `U.System` that performed it, the one current grant occurrence, scope, and interval; it answers action match and beneficiary eligibility from those objects and the exact covering assignment or on-behalf-of relation. It does not require generic match, eligibility, or beneficiary-binding findings, and the assignment never performs the work. |
 | `CC-A2.8.PER-6` | Neither exercise nor non-exercise establishes `NonViolationFinding@Context`; non-exercise is not violation, and exercise is not obligation satisfaction and does not consume a grant without an explicit policy. |
-| `CC-A2.8.PER-7` | A same-scope conflict names its direct policy/precedence owner and blocks only the unresolved work or reliance use. |
+| `CC-A2.8.PER-7` | A same-scope conflict is settled only by an applicable policy rule that selects the outcome or by a current resolution result produced by dated work of an admitted system under a covering assignment and independently obtaining decision-authority relation. Naming a policy, office, role, assignment, or “owner” alone leaves only the affected work or reliance use `unresolved`. |
 | `CC-A2.8.PER-8` | Permit episteme, carrier, evidence, admissibility, readiness, gate, capability, work, and result retain their direct owners. |
 
 ### A.2.8.PER:8 - Common Anti-Patterns and How to Avoid Them
@@ -227,6 +260,8 @@ The chief bias is document-and-display authority: a readable permit, badge, poli
 | Gate pass as authorization | Keep `GateDecision` in `A.21`; cite a separate grant/conflict result when the gate actually consumes one. |
 | Permission as readiness or capability | Keep readiness in `A.15.5` and capability in `A.2.2`; permission supplies neither. |
 | Work “violates permission” | Test exercise coverage and any separately governed prohibition; uncovered work is not a permission violation by default. |
+| Generic findings for action match or beneficiary binding | Test the Work against the action specification and the performer against the beneficiary branch; cite the already obtaining assignment or on-behalf-of relation and add separate evaluation evidence only when a receiving use needs it. |
+| Precedence “owner” as resolution | Apply a policy rule that itself selects the outcome, or name the authorized system's dated decision work and current conflict-resolution result; a role, office, assignment, or policy title alone decides nothing. |
 | Hidden generic beneficiary kind | Keep the closed reference union and branch-specific eligibility checks. |
 
 ### A.2.8.PER:9 - Consequences

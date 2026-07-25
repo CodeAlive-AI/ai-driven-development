@@ -42,7 +42,7 @@ The practical question is not “How much ontology can we recover?” It is “W
 
 The method described here specializes the method described by `C.19.2`. It always inherits the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, method/reader/performer/work/result separation, positive stop, and reopen rule.
 
-The normal short path begins with one already-selected subject or ontology owner, so it uses the lawful one-apparatus branch and creates no option set. Use `C.18` only when candidate ontology apparatuses must be generated or reframed. Use `C.11` only when two or more available eligible alternatives make a real local-choice question current. After selection, `A.15.2` owns planning and `A.15.1` owns dated work; `C.24` enters only for tool-call enactment planning.
+The normal short path uses the already selected A.7.1 analysis method as its one current apparatus. It begins from one exact engineering subject and that subject's current direct owner; subject and owner are inputs and constraints, not apparatus candidates. Use `C.18` only when the team must generate or reframe alternative analysis methods, models, formalisms, or other direct-kind apparatuses for the same declared use. Use `C.11` only when two or more already-available apparatuses are eligible for that same use and guarantee, making a real local-choice question current. After selection, `A.15.2` owns planning and `A.15.1` owns dated work; `C.24` enters only for tool-call enactment planning.
 
 #### A.7.1:4.2 - Start from the defeated consequence
 
@@ -89,7 +89,7 @@ A short domain/wording/typed-account/constructive-ground presentation may be kep
 
 ### A.7.1:5 - Archetypal Grounding
 
-**Support occurrence repair.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The direct relation identity rule defeats that reading before a second ontology is written. The current relation owner is already selected, so the work creates no option set. Ontology-analysis work uses `A7CP-01` and `A7CP-10`, recovers two support occurrences, repairs the warranty and incident-attribution claim, and returns it to maintenance. No new relation kind or U-kind is created.
+**Support occurrence repair.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The direct relation identity rule defeats that reading before a second ontology is written. The A.7.1 analysis method is already selected, while the current support-relation owner constrains the disputed claim; neither the bearing/shaft subject nor that owner is an apparatus candidate, so the work creates no option set. Ontology-analysis work uses `A7CP-01` and `A7CP-10`, recovers two support occurrences, repairs the warranty and incident-attribution claim, and returns it to maintenance. No new relation kind or U-kind is created.
 
 **Missing telemetry non-use.** A team cannot determine pump state because telemetry was never collected. State kinds, evidence relations, and candidate actions are already clear. The result is `returnToDirectOwner` for measurement and evidence work with the blocked state claim; no premise-use occurrence or ontology artifact is minted.
 
@@ -108,8 +108,8 @@ Ontology-display bias favors elaborate category systems even when direct owners 
 | `CC-A7.1-1` | The use names one engineering result, guarantee, smallest disputed claim, and consequence failure. |
 | `CC-A7.1-2` | One grounded defeated reading can trigger the method; fabricated alternatives are not required. |
 | `CC-A7.1-3` | The work enters the first capable domain, wording, typed-account, or constructive-ground locus rather than a mandatory ladder. |
-| `CC-A7.1-4` | The normal selected-owner case uses the `C.19.2` one-apparatus branch; candidate generation and choice open only when triggered. |
-| `CC-A7.1-5` | The intended reader, method episteme, admitted performer/role assignment, dated work, and problem-facing result are distinct. |
+| `CC-A7.1-4` | The normal case uses the already selected A.7.1 analysis method as its one current apparatus; the engineering subject and its direct owner remain inputs and constraints. Candidate generation and choice open only for alternative direct-kind apparatuses eligible for the same use and guarantee. |
+| `CC-A7.1-5` | The intended reader, method episteme, admitted performing `U.System`, separate current `U.RoleAssignment` under which that system performs, dated `U.Work`, and problem-facing result are distinct. |
 | `CC-A7.1-6` | Only load-bearing `A.7.CP` claims receive reasoning-basis relation occurrences. |
 | `CC-A7.1-7` | Direct relation, role, state, capability, evidence, source-use, work, and kind-admission owners remain authoritative. |
 | `CC-A7.1-8` | The result uses one declared local disposition and includes stop/reopen or exact blocker. |
@@ -124,7 +124,7 @@ Ontology-display bias favors elaborate category systems even when direct owners 
 | Treat missing evidence as a missing kind. | Return to measurement/evidence with the exact blocked claim. |
 | Run constructive analysis for every typed relation. | Stop when direct kinds, positions, direction, time, and identity already determine the move. |
 | Treat a graph, predicate, or formal class as the world construction. | Recover CT2R loss and the direct subject construction before reverse inference. |
-| Let the method episteme or reader role do the work. | Name the admitted performer assignment and dated ontology-analysis work. |
+| Let the method episteme, reader role, or assignment do the work. | Name the admitted performing `U.System`, the separate current `U.RoleAssignment` under which that system performs, and the dated ontology-analysis `U.Work`. |
 | Copy the twelve compact claims into the method. | Cite exact `A7CP-*` IDs only when load-bearing; leave ownership in `A.7.CP`. |
 
 ### A.7.1:9 - Consequences
@@ -150,7 +150,7 @@ These sources change the working method and its cases. They do not license a fix
 
 ### A.7.1:12 - Relations
 
-- **Specializes:** the method described by `C.19.2`. The specialization always inherits declared use/result/guarantee/horizon, useful threshold, reader/performer/work/result separation, stop, and reopen. It inherits `C.18`/`C.11` candidate and choice behavior only when those questions are current. This is a method-description relation, not `U.SubkindOf` and not a world relation.
+- **Specializes:** the method described by `C.19.2`. On the ordinary one-apparatus path, the already selected A.7.1 analysis method is the direct-kind apparatus; the engineering subject and its direct owner remain inputs and constraints. The specialization always inherits declared use/result/guarantee/horizon, useful threshold, reader/performer/work/result separation, stop, and reopen. It inherits `C.18`/`C.11` candidate and choice behavior only for alternative analysis methods, models, formalisms, or other applicable apparatuses eligible for the same use and guarantee. This is a method-description relation, not `U.SubkindOf` and not a world relation.
 - **Consumes:** exact `A.7.CP` claim epistemes through `ClaimUsedAsReasoningBasisRelation@Context` only when the ontology-analysis work relies on them.
 - **Coordinates with:** `A.7.2` when a material cross-pattern premise conflict is current; neither method is the other's parent or premise owner.
 - **Returns to:** direct relation, role, holon, state, capability, method, work, evidence, temporal, structural, and domain owners for the claim being repaired.
