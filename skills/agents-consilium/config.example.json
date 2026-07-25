@@ -73,6 +73,14 @@
       "role": "analyst",
       "label": "Claude Sonnet 5"
     },
+    "claude-opus": {
+      "enabled": false,
+      "backend": "claude-code",
+      "model": "claude-opus-5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Claude Opus 5"
+    },
     "claude-fable": {
       "enabled": false,
       "backend": "claude-code",
