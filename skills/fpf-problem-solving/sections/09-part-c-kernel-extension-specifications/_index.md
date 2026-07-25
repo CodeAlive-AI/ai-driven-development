@@ -9,7 +9,7 @@
 ## Contents
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate‑neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their motion and equivalence. Exports: (i) three point‑characteristics—Formality F,...
-- [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (507 lines) — Normativity: Normative except where a section is explicitly marked informative
+- [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (529 lines) — Normativity: Normative except where a section is explicitly marked informative
 - [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (659 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (375 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). Cross-context reuse is Bridge-only: scope may be re-expressed via...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (264 lines) — Type: Architectural (A)
@@ -19,8 +19,8 @@
 - [C.2.5 - U.LanguageStateClosureDegree](09-c-2-5---u-languagestateclosuredegree.md) (193 lines) — Type: Definitional (D)
 - [C.2.6 - U.LanguageStateAnchoringMode](10-c-2-6---u-languagestateanchoringmode.md) (175 lines) — Type: Definitional (D)
 - [C.2.7 - U.LanguageStateRepresentationFactorBundle](11-c-2-7---u-languagestaterepresentationfactorbundle.md) (175 lines) — Type: Definitional (D)
-- [C.2.P.DR - Declarative Representation Precision Restoration](12-c-2-p-dr---declarative-representation-precision-restoration.md) (317 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
-- [C.3 - Kinds, Intent and Extent, and Typed Reasoning](13-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (161 lines) — Type: Typed reasoning discipline pattern
+- [C.2.P.DR - Declarative Representation Precision Restoration](12-c-2-p-dr---declarative-representation-precision-restoration.md) (344 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
+- [C.3 - Kinds, Intent and Extent, and Typed Reasoning](13-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (167 lines) — Type: Typed reasoning discipline pattern
 - [C.3.1 - U.Kind and U.SubkindOf Core](14-c-3-1---u-kind-and-u-subkindof-core.md) (150 lines) — Type: Typed reasoning core pattern
 - [C.3.2 - Kind Intent, Membership Judgment, and Extension](15-c-3-2---kind-intent-membership-judgment-and-extension.md) (226 lines) — Type: Local kind declaration and classification pattern
 - [C.3.3 - KindBridge & CL^k — Cross‑context Mapping of Kinds](16-c-3-3---kindbridge-cl-k-cross-context-mapping-of-kinds.md) (211 lines) — One-line summary. Defines KindBridge as the direct cross-context relation between one exact source local kind and one exact target local kind under pinned reference-scheme editions and a declared...
@@ -28,7 +28,7 @@
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](18-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (159 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](19-c-3-a---typed-guard-macros-for-kinds-usm.md) (461 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
 - [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (716 lines) — Normativity: Normative unless marked informative
-- [C.13 — Constructional Mereology (Compose‑CAL)](21-c-13-constructional-mereology.md) (227 lines) — At a glance. Use C.13 when a structural identity claim needs a constructive trace showing how a whole, collection-as-whole, or aspect is obtained from parts.
+- [C.13 — Constructional Mereology (Compose‑CAL)](21-c-13-constructional-mereology.md) (251 lines) — At a glance. Use C.13 when a practitioner must show how exact constituents and obtaining part relations assemble one whole, collection, or aspect. The construction account explains the structural...
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](22-c-16---measurement-metrics-characterization.md) (454 lines) — Use this pattern when. Use C.16 when a value, score, rating, metric label, QL probe output, dashboard reading, or comparison is being treated as meaningful without a visible characteristic, scale,...
 - [C.16.P - Characteristic and Scale Precision Restoration](23-c-16-p---characteristic-and-scale-precision-restoration.md) (250 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](24-c-16-q---quality-term-precision-restoration.md) (777 lines) — Type: Characterization precision-restoration pattern
@@ -42,7 +42,7 @@
 - [C.21 - Field Health & Structure (Discipline-CHR)](32-c-21---field-health-structure.md) (255 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline, without collapsing into taste, anecdotes, dashboard views,...
 - [C.22 - Problem Typing & TaskSignature Assignment (Problem-CHR)](33-c-22---problem-typing-tasksignature-assignment.md) (373 lines) — Purpose. Give FPF an admissible, minimal, and portable TaskSignature@Context declaration for selector-facing use after the problem-side representation is stable enough for Principles-to-Work,...
 - [C.22.1 - Task-family adaptation signature](34-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
-- [C.22.PFR - Problematic-For Relation](35-c-22-pfr---problematic-for-relation.md) (283 lines) — Normativity: Normative unless marked informative
+- [C.22.PFR - Problematic-For Relation](35-c-22-pfr---problematic-for-relation.md) (320 lines) — Normativity: Normative unless marked informative
 - [C.22.2 - ProblemCard@Context](36-c-22-2---problemcard-context.md) (655 lines) — Normativity: Normative
 - [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](37-c-23---methodfamily-evidence-maturity.md) (203 lines) — LOG (logic) for deductive shells for admissibility
 - [C.24 - Agentic Tool-Use and Call Planning (C.Agent-Tools-CAL)](38-c-24---agentic-tool-use-and-call-planning.md) (350 lines) — Normativity: Normative
@@ -54,7 +54,7 @@
 - [C.27 - Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Temporal Change](44-c-27---temporal-claim-adequacy-state-readings-temporal-trend.md) (1964 lines) — Type: Claim-adequacy pattern
 - [C.27.TA - Temporal Aspect: Time Windows, Rhythm, Cadence, and Currentness](45-c-27-ta---temporal-aspect-time-windows-rhythm-cadence-and-cu.md) (272 lines) — Type: Definitional pattern
 - [C.28 - CausalUse-CAL: Causal-Use Questions, Causality-Ladder Rungs, Identification and Realizability](46-c-28---causaluse-cal-causal-use-questions-causality-ladder-r.md) (867 lines) — Normativity: Normative unless explicitly marked informative
-- [C.29 - Mathematical Lens Use](47-c-29---mathematical-lens-use.md) (1362 lines) — Type: Architectural pattern
+- [C.29 - Mathematical Lens Use](47-c-29---mathematical-lens-use.md) (1364 lines) — Type: Architectural pattern
 - [C.30 - Grounded Architecture and Selected-Structure Adequacy](48-c-30---grounded-architecture-and-selected-structure-adequacy.md) (592 lines) — Type: Architectural pattern
 - [C.30.AD - Architecture Description Adequacy](49-c-30-ad---architecture-description-adequacy.md) (402 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](50-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (197 lines) — Type: Architecture-description subpattern under C.30.AD

@@ -6,9 +6,9 @@
 
 ### A.7.CP:0 - Use this when
 
-Use this pattern when reasoning, ontology analysis, choice, or reconciliation actually relies on a broad constructive claim and another person must be able to recover which claim, posture, context, work occurrence, and interval carried that reliance.
+Use this pattern when reasoning, ontology analysis, choice, or reconciliation actually relies on a broad constructive claim and another person must be able to recover which claim, exact receiving claim or result, posture, scope, work occurrence, and interval carried that reliance.
 
-The first useful move is to name the dated reasoning work, its declared use, the exact `A7CP-*` claim IDs it relies on, and whether each use is an `adoptedPremise` or `conditionalAssumption`. Leave the other compact claims latent.
+The first useful move is to name the dated reasoning work, each exact claim-bearing result or receiving decision it is forming, the exact `A7CP-*` claim IDs used for that result, and whether each use is an `adoptedPremise` or `conditionalAssumption`. Leave the other compact claims latent.
 
 **Not this pattern when.** Citation, publication, shared vocabulary, ordinary `A.7` category-error repair, source currentness, or a domain/evidence problem that uses no compact claim in reasoning creates no relation occurrence. This support pattern is not a method, performer, work plan, catalogue-reading episode, or problem-facing result.
 
@@ -16,9 +16,9 @@ The primary reader is an author or reviewer who must make one load-bearing const
 
 ### A.7.CP:1 - Problem frame
 
-FPF methods can depend on broad claims such as “a publication does not create world-side obtaining” or “a method episteme does not perform work”. When those claims are copied into every method, they drift. When they remain implicit, reviewers cannot tell whether a result depended on an adopted premise, a conditional branch, or no common claim at all.
+Dated work applying an FPF method can rely on broad claims such as “a publication does not create world-side obtaining” or “a method episteme does not perform work”. A method episteme may separately state or cite one of those claims as a declared premise or branch condition under its own episteme/declaration owner. `ClaimUsedAsReasoningBasisRelation@Context` instead records only the claim on which one actual inference, comparison, or choice in dated work relies. Copying the claim into every method makes it drift; leaving the dated reliance implicit hides whether a particular result used an adopted premise, a conditional branch, or no common claim at all.
 
-The compact publishes twelve stable claim contents once. Consumers cite only actual uses, so ordinary work does not acquire a foundation checklist.
+The compact publishes twelve stable claim contents once. A method description can declare an intrinsic premise or a branch condition under its own episteme/declaration owner; a dated application records only the compact claims actually used in its reasoning. Ordinary work therefore does not acquire a foundation checklist.
 
 ### A.7.CP:2 - Problem
 
@@ -77,43 +77,58 @@ RelationSignature:
     SlotKind: ReasoningWorkSlot
     ValueKind: U.Work
     refMode: WorkRef
+  ReceivingReasoningResultSlot:
+    SlotKind: ReceivingReasoningResultSlot
+    ValueKind: U.Episteme
+    refMode: U.EpistemeRef
 
-semanticDirection: BasisClaimSlot -> ReasoningWorkSlot
+semanticDirection: BasisClaimSlot -> ReceivingReasoningResultSlot
+  through the named ReasoningWorkSlot
 ReasoningBasisPostureValue ::= adoptedPremise | conditionalAssumption
 
 RelationOccurrenceQualifiers:
   basisClaimIdRef: ClaimIdRef
-  boundedContextRef: U.BoundedContextRef
-  declaredReasoningUseRef: U.EntityRef
   posture: ReasoningBasisPostureValue
-  relianceInterval: QualificationWindowPolicy
+  reasoningUseScope?: U.ClaimScope
+  modelUseStructureRef?: U.StructureRef
+
+OccurrenceIdentity:
+  <exact basis-claim edition and claim ID,
+   exact reasoning-work occurrence,
+   exact receiving-result edition,
+   posture,
+   reasoningUseScope when present,
+   maximalContinuousRelianceInterval>
 ```
 
-`BasisClaimSlot` is the exact claim-bearing episteme and exact compact claim ID used. `ReasoningWorkSlot` is the dated reasoning, choice, ontology-analysis, or reconciliation work that relies on it. `WorkRef` resolves to `U.Work`; the work's `performedBy` role assignment supplies the admitted system. The words “premise” and “assumption” are not relation participants.
+`BasisClaimSlot` is the exact claim-bearing episteme and exact compact claim ID used. `ReasoningWorkSlot` is the dated reasoning, choice, ontology-analysis, or reconciliation `U.Work` that relies on it. `ReceivingReasoningResultSlot` is the exact claim, comparison, decision, or other claim-bearing result episteme whose content that work forms or revises using the basis claim. If the practical result is world-side, use the exact governed result claim that bears on it; the world-side object retains its direct owner. The already admitted holder `U.System` performs the work under an exact current `U.RoleAssignment`; when F.6 `performedBy(W, RA)` attribution is cited, `RA.HolderSystemSlot` must resolve to that same system. The assignment neither supplies the system nor performs the work. Claim episteme, work occurrence, use posture, receiving result, and any world-side result remain distinct; the words “premise” and “assumption” are not relation participants.
 
-The relation obtains during the maximal interval in which the named work actually relies on the exact claim in an inference, comparison, or choice for the declared context and use. Access, citation, publication, or co-location alone is insufficient. It applies only to reasoning-basis use; source currentness, evidence, publication, and work method remain with their owners.
+The relation obtains during the maximal continuous interval in which the named work actually relies on the exact basis claim to form or revise the exact receiving result. Access, citation, publication, co-location, or use of the claim elsewhere in the same work is insufficient. `reasoningUseScope` appears only when this premise use is narrower than or otherwise differs from the receiving result's declared claim scope; `modelUseStructureRef` appears only when an independently selected `BoundedModelUseStructure` changes interpretation. Source currentness, evidence, publication, work method, and the receiving result's own governance remain with their owners.
 
-One occurrence is identified by exact claim episteme and claim ID, exact work occurrence, bounded context and declared use, posture, and maximal continuous reliance interval. A change to claim edition, work occurrence, context/use, posture, or interval ends or splits the occurrence.
+One occurrence is identified by the exact basis-claim edition and ID, reasoning-work occurrence, receiving-result edition, posture, optional narrower use scope, and maximal continuous reliance interval. If one work uses the same basis claim for two independent results, record two relation occurrences that share the work participant but name different receiving results; do not duplicate the work. A change to any identity value ends or splits only the affected result-specific occurrence.
 
 #### A.7.CP:4.3 - Keep posture and transition explicit
 
-`adoptedPremise` means the work presently proceeds on the claim as accepted basis in its declared scope. `conditionalAssumption` means the work uses the claim in a narrower model, scenario, proof, or branch with an explicit test, defeater, or reopen condition. Every conditional assumption actually used can function as a premise inside that bounded subargument; not every adopted premise is conditional. Neither posture changes the claim episteme's intrinsic kind.
+`adoptedPremise` means the named work presently uses the basis claim as accepted support for the exact receiving result. `conditionalAssumption` means the work uses it for that result only in a narrower model, scenario, proof, or branch with an explicit test, defeater, or reopen condition. Every conditional assumption actually used can function as a premise inside that bounded subargument; not every adopted premise is conditional. Neither posture changes the basis-claim episteme's intrinsic kind.
 
-The same claim can be adopted in one work and conditional in another. It can also change posture within one work through two relation occurrences. Such a transition reopens only results that depended on the changed use; it does not trigger corpus-wide synonym or claim rewriting.
+The same claim can have different postures in different work or for different receiving results of one work. A posture transition creates a later occurrence only for the exact receiving result on that relation edge. Reopen that result and its dependents; another result of the same work remains closed when its separate premise-use occurrence and posture did not change.
 
 #### A.7.CP:4.4 - Use the cheapest truthful path
 
-1. Name the exact reasoning work and declared use.
-2. Cite only the compact IDs that are load-bearing.
-3. Record one relation occurrence per exact claim/posture/continuous-use identity.
-4. Keep evidence, currentness, source use, kind admission, subject construction, and work method with their direct owners.
-5. Stop when the result and its premise uses are recoverable. Do not inspect unused compact entries.
+1. Name the exact reasoning work and each exact receiving claim, decision, comparison, or other claim-bearing result it is forming.
+2. For each receiving result, cite only the compact IDs that are load-bearing.
+3. Record one relation occurrence per exact basis claim, receiving result, posture, and continuous reliance interval; reuse the same work reference across independent results.
+4. Name a narrower `U.ClaimScope` or selected `BoundedModelUseStructure` only when it changes this premise use.
+5. Keep evidence, currentness, source use, kind admission, subject construction, work method, and result governance with their direct owners.
+6. Stop when every load-bearing receiving result points to its exact premise-use occurrences. Do not inspect unused compact entries.
 
 ### A.7.CP:5 - Archetypal Grounding
 
-**Relation-occurrence repair.** Ontology-analysis work splits one support relation into two occurrences after removal and reinstallation. It relies on `A7CP-01` and `A7CP-10`, so two reasoning-basis occurrences are recorded for that work. The other ten claims stay latent.
+**Relation-occurrence repair.** Ontology-analysis work splits one support relation into two occurrences after removal and reinstallation and returns `SupportOccurrenceRepairDecision-17`. That result relies on `A7CP-01` and `A7CP-10`, so two reasoning-basis occurrences name the same work and receiving result but different basis claims. The other ten claims stay latent.
 
-**Role/chart reconciliation.** Reconciliation work distinguishes assignment constitution from a chart that evidences the assignment. It uses `A7CP-01`, `A7CP-03`, `A7CP-05`, and `A7CP-06`. The source-use and evidence relations stay under their direct owners.
+**Role/chart reconciliation.** Reconciliation work returns `AssignmentConstitutionDecision-42`, which distinguishes assignment constitution from a chart that evidences the assignment. Four result-specific relation occurrences connect that decision to `A7CP-01`, `A7CP-03`, `A7CP-05`, and `A7CP-06`. Source-use and evidence relations stay under their direct owners.
+
+**Same-work selective reopen.** `SupportRepairWork-19` returns both `WarrantyClaimRepair-19` and `IncidentAttributionRepair-19`. Each has its own relation occurrence to `A7CP-10`. The warranty result uses that claim as an adopted premise; the incident result uses it as a conditional assumption while a removal timestamp is disputed. Evidence that settles that timestamp changes the posture only on the incident-result edge, so `IncidentAttributionRepair-19` reopens while the unchanged warranty-result edge leaves `WarrantyClaimRepair-19` closed.
 
 **No compact use.** Missing telemetry blocks a state claim while the relevant state and evidence distinctions are already clear. Work returns to measurement/evidence. No compact claim is load-bearing, so no reasoning-basis occurrence is created.
 
@@ -127,12 +142,12 @@ The main biases are foundation maximalism, premise-kind inflation, and trace-by-
 
 | ID | Check |
 |---|---|
-| `CC-A7CP-1` | Every relation occurrence names one exact claim episteme/ID, dated work occurrence, context/use, posture, and reliance interval. |
-| `CC-A7CP-2` | The work actually relies on the claim; citation, access, or publication alone is insufficient. |
+| `CC-A7CP-1` | Every relation occurrence names one exact basis-claim episteme/ID, dated reasoning-work occurrence, exact receiving-result episteme, posture, optional narrower use scope, and maximal continuous reliance interval. |
+| `CC-A7CP-2` | The work actually relies on the claim for that exact receiving result; citation, access, publication, or use elsewhere in the work is insufficient. |
 | `CC-A7CP-3` | `adoptedPremise` and `conditionalAssumption` are use postures, not intrinsic claim kinds. |
-| `CC-A7CP-4` | A posture or identity change splits the relation occurrence and reopens only dependent results. |
+| `CC-A7CP-4` | A posture or identity change splits only the affected result-specific relation occurrence and reopens that receiving result and its dependents. |
 | `CC-A7CP-5` | Consumers cite only load-bearing claim IDs and do not copy the compact. |
-| `CC-A7CP-6` | The support pattern is not described as a method, performer, work plan, result, or mandatory catalogue traversal. |
+| `CC-A7CP-6` | The support pattern is not a method, performer, work plan, result, or mandatory catalogue traversal. Actual dated reliance belongs to reasoning work; any premise or branch condition declared by a method episteme stays under that episteme's declaration owner. |
 | `CC-A7CP-7` | Evidence, currentness, source use, subject construction, kind admission, and work method remain with direct owners. |
 | `CC-A7CP-8` | The twelve compact claims retain their stable IDs and contents as one closed support set. |
 
@@ -141,9 +156,9 @@ The main biases are foundation maximalism, premise-kind inflation, and trace-by-
 | Anti-pattern | Repair |
 |---|---|
 | Require every ontology use to check all twelve claims. | Cite only actual load-bearing claims; unused entries remain latent. |
-| Treat a citation as a premise-use occurrence. | Name the dated work and inference/comparison that actually relies on the claim. |
+| Treat a citation or work-wide claim use as a premise-use occurrence for every result. | Name the dated work, exact receiving result, and inference or comparison that actually relies on the basis claim; use separate relation occurrences for independent results. |
 | Define “premise” and “assumption” as separate episteme kinds. | Keep one exact claim episteme and record the context-local posture. |
-| Let the compact perform or govern consuming work. | Keep the method and performer under the consuming pattern; this host supplies claim content and relation semantics. |
+| Let the compact, method episteme, or assignment perform or govern consuming work. | Name the admitted holder `U.System` that performs the dated reasoning `U.Work` under the exact current `U.RoleAssignment`; keep the method and attribution under the consuming pattern. |
 | Copy the compact into `A.7`, `A.7.1`, or `A.7.2`. | Keep one owner and use exact claim-ID references. |
 | Hide evidence or currentness inside the relation. | Cite direct evidence/currentness results without turning them into relation fields. |
 
@@ -170,8 +185,8 @@ The current-practice implication is practical: exact claim use and direct-owner 
 
 ### A.7.CP:12 - Relations
 
-- **Defines:** the twelve `A7CP-*` constructive claim contents and `ClaimUsedAsReasoningBasisRelation@Context`.
-- **Is consumed by:** `A.7.1` and `A.7.2`, which cite exact claims directly and expose relation occurrences only when use is load-bearing. Neither method depends on the other for the compact.
+- **Defines:** the twelve `A7CP-*` constructive claim contents and `ClaimUsedAsReasoningBasisRelation@Context`, whose direct result-specific edge states that dated reasoning work used one exact basis claim to form or revise one exact receiving result episteme.
+- **Is consumed by:** dated work applying `A.7.1` or `A.7.2`, which cites exact compact claims and exposes relation occurrences only for load-bearing actual reliance. The A.7.1 and A.7.2 method epistemes may separately declare premises or branch conditions under their exact episteme/declaration owner; neither method description is made a participant of `ClaimUsedAsReasoningBasisRelation@Context`.
 - **Coordinates with:** current `A.7` for its existing strict distinctions without broadening its EntityOfConcern, first move, Solution, or cases.
 - **Preserves direct ownership in:** `A.10` and `G.11` for evidence/currentness, `E.24`/`E.24.UK` for ontology admission, subject construction patterns for constructive settlement, and `A.7.2` for ontology source-use relations.
 - **Does not define:** a premise method, source authority, evidence relation, work plan, performer kind, common realism checklist, or universal foundation ontology.

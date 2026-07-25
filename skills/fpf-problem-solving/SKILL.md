@@ -29,7 +29,7 @@ Use FPF whenever you need to think more rigorously than the situation's default.
 - Publish a stable multi-view artifact without changing the source semantics
 - Refresh a SoTA pack, benchmark, or evidence trail when evidence decays or telemetry changes
 - Synthesize architecture candidates, compare structural options, or repair modularity/reuse claims
-- Govern when a new ontic concept or U-kind should be introduced instead of just renamed
+- Detect an ontic candidate, decide its first-use disposition, and govern whether a new concept or U-kind should be introduced instead of just renamed
 - Apply one selected FPF pattern to a current question and stop at the first useful result
 
 ## How to navigate
@@ -65,7 +65,7 @@ The use cases above help decide WHETHER to invoke FPF. The router below decides 
 | **Survey a discipline** and build, ship, or refresh a reusable toolkit | 13 Part G → G.1-G.13 SoTA kit, CG-Frame, dispatcher, benchmarks, shipping, telemetry refresh, dashboards, external interop; 09 Part C → C.21 Discipline-CHR |
 | **Classify** a problem type or state exactly what is problematic for whom before solving | 09 Part C → C.22 Problem-CHR, C.22.PFR Problematic-For Relation, C.3 Kind-CAL (typed reasoning) |
 | **Define quality** attributes ("-ilities") as structured bundles | 09 Part C → C.25 Q-Bundle; 07 A.V → A.17-A.19 Characteristics |
-| **Govern ontology** — decide whether a new ontic concept or U-kind is warranted | 11 Part E → E.24 Ontic Introduction Discipline, E.24.UK U-kind Admission and Ontic Settlement |
+| **Govern ontology** — detect an ontic candidate, decide its first-use disposition, and determine whether a new concept or U-kind is warranted | 11 Part E → E.24 Ontic Introduction Discipline, E.24.CD Ontic Candidate Detection and First-Use Disposition, E.24.UK U-kind Admission and Ontic Settlement |
 | **Reason about cultural evolution** — describe cultural-evolution engineering or repair cultural-evolution wording | 09 Part C → C.36 Cultural Evolution, C.36.P Precision Restoration |
 | **Orchestrate** agentic tool use under budgets and trust gates | 09 Part C → C.24 Agent-Tools-CAL |
 | **Trace provenance** of a claim or detect refresh debt | 07 A.V → A.10 Evidence Graph; 13 Part G → G.6 Provenance Ledger, G.11 Telemetry-Driven Refresh & Decay |

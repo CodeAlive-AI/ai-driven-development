@@ -10,11 +10,11 @@
 - [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (210 lines) — Type: B-family aggregation pattern
 - [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (318 lines) — Type: Part B composition and grounding pattern
 - [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (213 lines) — Type: B-family aggregation pattern
-- [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (277 lines) — Type: Part B holonic construction pattern
-- [B.2.P - Emergence and MHT Precision Restoration](09-b-2-p---emergence-and-mht-precision-restoration.md) (258 lines) — Type: Part B precision-restoration pattern
-- [B.2.2 - Meta-System Transition - System Specialization of MHT](10-b-2-2---meta-system-transition---system-specialization-of-mh.md) (253 lines) — Type: Part B holonic construction pattern
-- [B.2.3 - Meta-Holon Transition With Episteme Result](11-b-2-3---meta-holon-transition-with-episteme-result.md) (233 lines) — Type: Part B holonic construction pattern
-- [B.2.4 - Capability and Functioning Whole Reidentification](12-b-2-4---capability-and-functioning-whole-reidentification.md) (224 lines) — Type: Part B holonic construction pattern
+- [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (307 lines) — Type: Part B holonic construction pattern
+- [B.2.P - Emergence and MHT Precision Restoration](09-b-2-p---emergence-and-mht-precision-restoration.md) (257 lines) — Type: Part B precision-restoration pattern
+- [B.2.2 - Meta-System Transition - System Specialization of MHT](10-b-2-2---meta-system-transition---system-specialization-of-mh.md) (225 lines) — Type: Part B holonic construction pattern
+- [B.2.3 - Meta-Holon Transition With Episteme Result](11-b-2-3---meta-holon-transition-with-episteme-result.md) (208 lines) — Type: Part B holonic construction pattern
+- [B.2.4 - Capability and Functioning Whole Reidentification](12-b-2-4---capability-and-functioning-whole-reidentification.md) (198 lines) — Type: Part B holonic construction pattern
 - [B.2.5 - Supervisor-Subholon Feedback Relation](13-b-2-5---supervisor-subholon-feedback-relation.md) (214 lines) — Type: Part B holonic construction pattern
 - [B.3 - Trust and Assurance Calculus (F-G-R with Congruence)](14-b-3---trust-and-assurance-calculus.md) (602 lines) — Type: Foundational (B)
 - [B.3.3 — Assurance Subtypes & Levels](15-b-3-3-assurance-subtypes-levels.md) (84 lines) — A complex project may generate hundreds of assurance targets and evidence carriers: design specifications, simulation models, test suites, and operational logs. While the Trust & Assurance Calculus...

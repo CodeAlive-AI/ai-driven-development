@@ -19,13 +19,13 @@ Typical first-minute situations are:
 
 **Primary EntityOfConcern.** One exact needed relation-bearing claim for one named receiving use. The application also settles whether that claim remains local, receives a reusable predicate-definition episteme, or justifies a derived or primitive relation kind. This wording does not mint a `NeededRelationClaim` kind or an application-record kind.
 
-**First useful move.** Write the blocked receiving use and the participant meanings in ordinary domain language. Then use `A.6.P` to verify that no current direct relation already closes the claim.
+**First useful move.** Write the blocked receiving use and the participant meanings in ordinary domain language. Then use `A.6.P` to recover the current direct governing pattern and predicate and ask whether that predicate can already state the needed affirmative, negative, or exact governed modal claim for those participants. If current facts or history do not decide that predicate, keep the direct question open and route information sufficiency or reliance to the exact evaluation or evidence owner. Derive a compound predicate only when no current direct predicate can express the needed claim.
 
 **What goes wrong if missed.** A team either leaves the claim as vague connective prose or promotes a formula, query, graph path, definition, or convenient name into ontology. The first loses replayable meaning. The second invents relation kinds without an obtaining law or occurrence identity.
 
 **What this buys.** The engineer gets the lightest sufficient result: an existing direct relation, a local compound claim, reusable predicate-definition content with an optional separately admitted derived relation kind, or a genuinely irreducible primitive relation kind. The ontology grows only when the receiving use needs occurrence semantics that claim content alone cannot supply.
 
-**Ordinary non-use boundary.** Do not use this pattern when a current direct relation already states the needed claim; use that direct pattern and stop. Do not use it for wording-only cleanup, mathematical-lens adequacy, naming, evidence, assurance, or publication questions. `E.10`, `C.29`, `F.18`, `A.10`, `B.3`, and `E.17` govern those questions respectively.
+**Ordinary non-use boundary.** Do not use this pattern when a current direct governing predicate can already state the needed affirmative, negative, or exact governed modal claim; write that claim under the direct pattern and stop. A negative, hypothetical, forecast, or governed modal claim needs no obtaining relation occurrence. When available facts do not decide the direct predicate, leave that question open and assess information sufficiency, support, or reliance under the exact evaluation or evidence owner; `unresolved` is not a direct relation-claim polarity. Do not use A.6.RCD for wording-only cleanup, mathematical-lens adequacy, naming, evidence, assurance, or publication questions. `E.10`, `C.29`, `F.18`, `A.10`, `B.3`, and `E.17` govern those questions respectively.
 
 **Cheap stop.** If a readable current direct relation closes the receiving use, stop before constructing a compound claim. If a local compound claim closes it, stop before publishing a reusable definition. If a reusable definition closes it, stop before admitting a relation kind.
 
@@ -58,7 +58,7 @@ Authors MUST preserve expressive claims while preventing representation-created 
 
 ### A.6.RCD:4 - Solution
 
-Name the blocked receiving claim and participants. Reuse a current relation when it suffices. Derive only what the selected substrate warrants. Publish reusable predicate semantics only for repeated subject use. Admit a relation kind only with its direct obtaining and occurrence-identity laws. Stop when the receiving use works.
+Name the blocked receiving claim and participants. Reuse a current direct governing predicate when it can state that claim. Derive only what the selected substrate warrants. Publish reusable predicate semantics only for repeated use. Admit a relation kind only with its direct obtaining and occurrence-identity laws. Stop when the receiving use works.
 
 #### A.6.RCD:4.1 - Execute the demand-first method
 
@@ -67,7 +67,7 @@ Name the blocked receiving claim and participants. Reuse a current relation when
 3. **Choose the least constructor admitted by the current substrate.** State the constructor semantics and the base claim content it consumes. Do not infer an operator from punctuation or notation.
 4. **Replay three things.** Test one positive case, one discriminating failure case, and the named receiving use. Keep hidden intermediates, polarity, scope, time, and base-definition editions visible when they change the result.
 5. **Select the lightest disposition.** Choose exactly one of the four dispositions in section 4.3 and stop at its stopping rule.
-6. **Open reusable semantics only when repeated subject use needs the same rule.** Identify one truthful `C.2.1` `EntityOfConcern`, state participant meanings, derivation, applicability, and dependencies, and keep the definition distinct from a `RelationSignature`.
+6. **Open reusable semantics only when repeated use needs the same rule.** First decide whether every reuse concerns one exact subject or the parameterized rule is reused across several subject instances. For one subject, identify a subject-bounded compound-law episteme whose exact `EntityOfConcern` is that subject and state the reuse limit. For a rule reused across subject instances, identify the exact reusable predicate definition as `EntityOfConcern`; that episteme may satisfy A.6.0 `U.Signature` membership before any relation kind is admitted, but it is not a `RelationSignature`.
 7. **Open kind admission only when occurrence semantics are consumed.** A derived kind needs a direct subject settlement with obtaining, applicability, base dependencies, and a non-optional occurrence-identity rule. A primitive candidate additionally carries the failed derivation, the exact action-facing distinction lost, its own obtaining and recurrence laws, independent receiving uses, and a standalone governing-pattern obligation.
 
 Use this compact working note only while the decision is live:
@@ -83,7 +83,9 @@ A.6.RCD working note:
   discriminatingFailureCase:
   receivingUseReplay:
   disposition:
+  predicateDefinitionModeIfCurrent: subjectBounded | reusableAcrossSubjects
   predicateDefinitionEntityOfConcernIfCurrent:
+  subjectBoundReuseBoundaryIfCurrent:
   directSubjectSettlementIfKindCurrent:
   stopOrReturn:
 ```
@@ -106,7 +108,11 @@ A constructor probe is usable only when the selected substrate defines its input
 | aggregation | the population or collection, grouping rule, aggregated value, aggregation operator, empty or duplicate treatment, scope, and applicability | an aggregate or scalar summary does not silently become a relation predicate or occurrence |
 | probabilistic operator | the event or sample space, random variables or events, probability operator or model, conditioning, threshold or decision rule, applicability, and uncertainty boundary | a probability, likelihood, or posterior does not silently become a relation predicate, and shared event labels do not bridge algebras |
 
-**Cross-algebra claim-use boundary.** An explicit direct subject rule governs every joint receiving use of separately derived claims from different algebras, whether the use stays within one `U.BoundedContext` and one ReferencePlane or crosses contexts or planes. That rule states which claims are used and for what receiving use; it does not thereby define a cross-algebra constructor, a new predicate, or a relation occurrence. When the joint receiving use additionally depends on sense alignment across `U.BoundedContext`s or ReferencePlanes, authors MUST cite, in addition to that direct rule, the applicable `F.9` Bridge id, `CL`, Loss Notes, admitted-use statement, and the applicable ReferencePlane policy pin when planes differ. F.9 governs the declared alignment and its admitted cross-context use; it does not create the receiving-use relation, decision use, predicate, or relation occurrence. Any assurance penalty from that crossing reduces only `B.3` `R_eff`; it does not change `F` or `G`. One local same-context and same-plane joint use, one local single-substrate derivation, and bounded SoTA comparison require no fictitious Bridge.
+**Cross-algebra claim-use boundary.** Ask how the named decision or work occurrence actually uses each result. For every consumed result, state its own obtaining premise-use, reference-use, decision-use, or other direct use relation under the receiving pattern. If the decision is one actual application of a declared operation, an exact A.6.1 argument binding may state that use instead. If neither a direct subject relation nor a truthful A.6.1 binding governs the use, return the exact missing-governor blocker; co-publication, a shared topic, or one decision record supplies no use relation.
+
+Stop there when those independent uses close the receiver. Open a separate joint predicate only when the decision genuinely depends on a joint condition that the independent use relations cannot express; then name that condition and use A.6.RCD to derive exactly it. Do not add a generic joint-use relation or record merely because one decision cites results from two algebras.
+
+When any consumed result also crosses `U.BoundedContext`s or ReferencePlanes, cite for that result the applicable `F.9` Bridge id, `CL`, Loss Notes, admitted-use statement, and the applicable ReferencePlane policy pin when planes differ. F.9 governs the declared alignment and its admitted cross-context use; it creates neither the receiving-use relation nor a joint predicate. Any assurance penalty from that crossing reduces only `B.3` `R_eff`; it does not change `F` or `G`. One same-context and same-plane use and one local single-substrate derivation require no fictitious Bridge.
 
 A local compound claim needs recoverable constructor semantics, but it does not need a separately materialized substrate document. Authors MUST name and pin the substrate when the derivation is nontrivial, intended for interoperability, used as proof, or becomes a reusable predicate definition. If no current substrate supplies the proposed operator, return a missing-substrate blocker rather than improvising a universal constructor algebra.
 
@@ -114,20 +120,26 @@ A local compound claim needs recoverable constructor semantics, but it does not 
 
 | Disposition | Test | Result | Stop |
 | --- | --- | --- | --- |
-| **1. Existing direct relation** | One current direct relation already has the needed participant meanings, obtaining condition, applicability, and receiving-use meaning. | State the readable direct claim under that pattern. | Stop. Do not derive a synonym predicate or duplicate relation kind. |
+| **1. Existing direct governing predicate** | One current direct pattern already supplies the participant meanings, obtaining predicate, applicability, and claim family needed by the receiver. | State the readable affirmative, negative, or exact governed modal claim in a claim-bearing episteme under that owner. The direct pattern defines the test; current case facts or constituting history supply its factual basis. If they do not decide the test, leave the direct question open and return information sufficiency or reliance to its exact evaluation or evidence owner. | Stop. Do not derive a synonym predicate or duplicate relation kind. Only when an adequately grounded affirmative case satisfies the predicate is there an obtaining occurrence; open A.6.REL only when a receiver consumes that occurrence's identity. |
 | **2. Local compound relation-bearing claim** | A substrate-admitted composition of governed base predicates closes this one receiving use, and no repeated definition or occurrence semantics is needed. | Put positive or negative compound claim content in one identified `C.2.1` episteme. An unresolved information-sufficiency or reliance assessment stays with the evaluation or evidence pattern; it is not a third predicate value. | Stop. Introduce no relation kind, `RelationSignature`, or `U.Relation` occurrence. |
-| **3. Reusable predicate semantics, with derived-kind continuation only when needed** | Several uses in one direct subject practice need the same parameterized rule. | Publish one predicate-definition episteme. If those uses also need stable relation-occurrence semantics, return a derived-kind candidate plus its proposed direct subject settlement covering obtaining, applicability, base dependencies, and occurrence identity; route that candidate to `E.24` and `E.24.UK`, and to `A.11` when parsimony is current, for admission. | Stop at the definition unless occurrence semantics are named and the proposed settlement is supplied. A definition is not a kind; neither the proposal nor its direct subject pattern admits the kind. The route to `A.6.0` declaration opens only for an admitted result. |
+| **3. Reusable predicate semantics, with derived-kind continuation only when needed** | Several uses need the same parameterized rule. If they all concern one exact subject, the rule is subject-bounded; if the rule is reused across subject instances, it is a genuinely reusable predicate definition. | Publish one C.2.1 episteme with the truthful branch-specific `EntityOfConcern`: the exact subject for a subject-bounded compound law, or the exact reusable predicate definition for cross-subject reuse. The latter may independently satisfy A.6.0 `U.Signature` membership. If a receiving use also needs stable relation-occurrence semantics, return a derived-kind candidate plus its proposed direct subject settlement and route that candidate to `E.24` and `E.24.UK`, and to `A.11` when parsimony is current. | Stop at the selected definition unless occurrence semantics are named and the proposed settlement is supplied. A definition is not a kind. A.6.0 membership does not make it a `RelationSignature`; only an admitted relation kind opens that specialization. |
 | **4. Primitive relation kind** | Every accepted derivation loses one exact action-facing distinction, and the candidate has independent receiving uses plus its own obtaining, recurrence, applicability, and occurrence-identity laws. | Carry the candidate to `A.11`, `E.24`, and `E.24.UK`, and author a standalone direct subject pattern. | Stop or block if the failed derivation, lost distinction, independent use, direct pattern, or identity law is absent. A convenient name never passes this test. |
 
 These are economy dispositions, not maturity stages. Later need can reopen a local claim or definition. The four dispositions do not impose a required maturity ladder on any application.
 
 #### A.6.RCD:4.4 - Keep the governed objects distinct
 
+Keep the order visible: the admitted relation kind classifies; its direct predicate defines the test; current case facts or constituting history determine whether that test is satisfied, failed, or still open; a claim-bearing episteme states an affirmative, negative, or exact governed modal claim; and an obtaining world-side occurrence exists only in a satisfied affirmative case. When the facts do not decide the predicate, information sufficiency, support, or reliance is evaluated by its exact owner rather than encoded as another direct polarity. A.6.REL opens explicit occurrence individuation only when a receiver consumes identity.
+
 | Object | What it is | What it is not |
 | --- | --- | --- |
-| existing direct relation occurrence | one obtaining `U.Relation` occurrence under its direct pattern | not its assertion, signature, identifier, or graph edge |
+| admitted direct relation kind | the independently governed classificatory distinction over its possible obtaining occurrences | not the direct predicate, one case result, an assertion, or an occurrence |
+| direct obtaining predicate | the direct owner's test for named participant meanings under declared applicability | not proof that the test is satisfied in this case and not an occurrence |
+| direct relation-bearing assertion | one `C.2.1` episteme whose exact claim family states affirmative, negative, or exact governed modal content about the predicate for named participants | not the world-side obtaining result and not an information-sufficiency or reliance disposition |
+| obtaining direct relation occurrence | one world-side relation occurrence for which current case facts or constituting history satisfy the direct predicate; its direct identity rule exists even when no receiver needs an explicit designator | not created by the assertion, evidence, a representation, or an identifier |
 | local compound relation-bearing claim | claim content in one `C.2.1` episteme, asserting or denying satisfaction of a substrate-admitted compound predicate | not a relation kind and not a relation occurrence |
-| reusable predicate-definition episteme | one `C.2.1` episteme in the direct subject pattern whose claims define parameterized predicate semantics | not a `RelationSignature` and not a classifier of relation occurrences |
+| subject-bounded compound-law episteme | one `C.2.1` episteme whose exact `EntityOfConcern` is the promise-content edition, subject structure, decision occurrence, or other exact subject to which the rule is explicitly limited | not a predicate definition reusable across subject instances, not a `RelationSignature`, and not a classifier of relation occurrences |
+| reusable predicate-definition episteme | one `C.2.1` episteme whose exact `EntityOfConcern` is the reusable predicate definition itself and whose claims define its parameterized semantics across subject instances | may satisfy A.6.0 `U.Signature` membership, but is not a `RelationSignature` before relation-kind admission and does not classify relation occurrences |
 | admitted derived relation kind | a classificatory distinction over relation occurrences, with obtaining defined through governed base relations | not the definition episteme; it needs its own direct subject settlement and identity rule |
 | admitted primitive relation kind | a classificatory distinction whose needed action-facing semantics cannot be preserved by accepted derivation | not a reward for a familiar word or notation |
 | claim or derivation representation | formula tokens, formula trees, query paths, graph elements, tables, diagrams, or other `C.29` representation elements | not satisfaction, obtaining, admission, or occurrence identity |
@@ -135,9 +147,12 @@ These are economy dispositions, not maturity stages. Later need can reopen a loc
 
 #### A.6.RCD:4.5 - Settle a reusable predicate definition truthfully
 
-A reusable predicate-definition episteme has one exact `C.2.1` `EntityOfConcern`. State what the definition claims about that value and why the repeated subject uses concern it. The `EntityOfConcern` can be a promise-content edition, a subject structure, a governed decision-work occurrence, or another exact subject value when that is truthful for the case. It is not a union of every participant, base assertion, formula, receiver, and publication that appears nearby.
+When the same rule is used more than once, first ask where the reuse actually travels.
 
-Its content states:
+- **One exact subject.** If every use asks about the same promise-content edition, subject structure, decision occurrence, or other exact subject, identify a subject-bounded compound-law episteme whose `EntityOfConcern` is that subject. State plainly that the rule may be reused only for claims about that subject; a familiar formula does not make it portable to another subject.
+- **Across subject instances.** If the same parameterized rule is applied to several independently identified subjects, identify one reusable predicate-definition episteme whose `EntityOfConcern` is the exact predicate definition itself. If its claim graph supplies the subject and value range, Vocabulary, Laws, and Applicability required by A.6.0, the already identified episteme may satisfy `U.Signature` membership without relation-kind admission. It remains a predicate-definition declaration, not a `RelationSignature` or a classifier of occurrences.
+
+In either branch, the definition content states:
 
 - parameter and participant meanings;
 - the exact base-relation claims and their direct governing patterns;
@@ -147,7 +162,7 @@ Its content states:
 - positive and discriminating cases;
 - the admissible claim use and the non-admissible occurrence or ontology overread.
 
-If no single truthful `EntityOfConcern` can be selected, keep the needed results as local compound claims. Do not manufacture a union concern to make the definition publishable.
+If neither the exact subject nor the exact reusable predicate definition is the truthful `EntityOfConcern`, keep the needed results as local compound claims. Do not manufacture a union concern or alternate opportunistically between the rule and a nearby domain subject.
 
 #### A.6.RCD:4.6 - Prepare derived or primitive relation-kind admission only with occurrence semantics
 
@@ -165,7 +180,9 @@ An admitted relation kind never has `identity intentionally absent`. Ordinary us
 
 A pure converse preserves one base occurrence only when the direct subject ontology explicitly says that inverse wording concerns the same occurrence. Restriction, projection, composition, closure, aggregation, and hidden intermediates require an explicit identity decision. Their syntax does not decide whether the derived occurrence inherits one base identity, is constituted as a composite occurrence, or has a new direct identity rule. If no truthful rule is available, remain at local-claim or predicate-definition level.
 
-Authors MAY publish under `A.6.0` a `RelationSignature` whose `EntityOfConcern` is that exact kind only after the kind is admitted. The signature declares reusable SlotSpecs and restates the direct laws; it does not admit the kind or make an occurrence obtain.
+Before relation-kind admission, authors MAY ask A.6.0 whether a genuinely reusable predicate-definition episteme satisfies ordinary `U.Signature` membership. That declaration's `EntityOfConcern` is the exact predicate definition, not a candidate relation kind, and the result neither classifies occurrences nor admits a kind.
+
+Authors MAY publish under A.6.0 a `RelationSignature` whose `EntityOfConcern` is an exact relation kind only after that kind is admitted. The `RelationSignature` declares reusable SlotSpecs and restates the direct laws; it does not admit the kind or make an occurrence obtain.
 
 #### A.6.RCD:4.7 - Separate recognition from assurance
 
@@ -173,11 +190,13 @@ Authors MAY publish under `A.6.0` a `RelationSignature` whose `EntityOfConcern` 
 
 1. What receiving claim or action is blocked?
 2. Who or what are the exact participants, and under which meanings?
-3. Does one current direct relation already answer it?
+3. Does one current direct governing predicate already state the needed affirmative, negative, or exact governed modal claim?
 4. If not, what smallest substrate-admitted compound claim answers it?
 5. Which of the four dispositions lets the receiver proceed now?
 
-The ordinary branch can stop at a readable direct claim or one readable compound claim. It does not require a named substrate document, predicate-definition publication, relation kind, signature, explicit occurrence, or designator when the receiving use consumes none of them.
+The ordinary branch can stop at a readable direct claim or one readable compound claim. It does not require a named substrate document, predicate-definition publication, new relation kind, signature, explicit occurrence, or designator when the receiving use consumes none of them.
+
+**Negative direct-claim case.** A staffing check asks whether `Robot_7` holds `InspectorRole` in `Cell_3` during `Interval_T`. The current A.2.1 participant meanings and predicate govern the question. If the current assignment facts show that the predicate is false, one claim-bearing episteme states the negative result and disposition 1 closes the check; there is no obtaining assignment occurrence to individuate. If the available facts do not decide the predicate, leave the direct assignment question open. An exact evaluation or evidence owner may then return an information-sufficiency or reliance disposition; that disposition is neither a negative assignment fact nor a third direct polarity.
 
 **Assurance branch for DPF and FPF authors.** DPF and FPF authors use this branch whenever they author a compound claim, reusable predicate definition, or relation-kind admission candidate, including a durable local compound claim that stops at disposition 2. In addition, verify:
 
@@ -208,17 +227,25 @@ Stop at the first disposition that closes the named receiving use. Return to thi
 
 ### A.6.RCD:5 - Archetypal Grounding — Worked Cases
 
-#### A.6.RCD:5.1 - Promise-content fulfilment: reusable predicate semantics, not automatic kind admission
+#### A.6.RCD:5.1 - Promise-content fulfilment: use the existing direct A.2.3 predicate
 
-**Situation.** Several delivery and acceptance uses ask whether one exact `U.PromiseContent` edition is fulfilled. No one convenient word should hide the governed delivery-work facts, affected-referent post-state facts, and acceptance predicate.
+**Situation.** `PromiseContent_Housing42_v3` says that exact housing `Housing_42` must be delivered to `AssemblyCell_B` during `Interval_42`, satisfy `OutcomeSpec_Housing42_v3`, and satisfy the acceptance predicate in `AcceptanceSpec_Housing42_v3`. The actual delivery work is the independently identified `U.Work` occurrence `Work_DeliverHousing42`; it is not the delivered entity, the post-delivery state, the evaluation, or the acceptance result.
 
-**Base and derivation.** Use the direct A.2.3 relations governing that promise content, the exact delivery-work and post-state claims, and the acceptance predicate. Publish one predicate-definition episteme whose `EntityOfConcern` is the exact promise-content edition. Its claims state how those governed facts satisfy that content under the declared applicability.
+**Direct owner and required subset.** A.2.3 already supplies the direct predicate `fulfilsPromiseContent(W, SC)`, so disposition 1 is available. For this exact promise-content edition, the necessary and sufficient world-side subset is:
 
-**Positive case.** The named delivery work occurred, the affected referent has the required post-state, and every acceptance condition of the current promise-content edition is satisfied.
+1. `PromiseContentUse(Work_DeliverHousing42, PromiseContent_Housing42_v3, Interval_42)` obtains;
+2. `PromisedOutcomeDeliveryRelation(Work_DeliverHousing42, OutcomeSpec_Housing42_v3)` obtains because the selected work facts, exact delivered entity `Housing_42`, and its post-delivery state satisfy that OutcomeSpec; and
+3. the acceptance predicate in `AcceptanceSpec_Housing42_v3` is satisfied for those exact facts and states.
 
-**Discriminating failure.** The same delivery work occurred, but one required post-state or acceptance condition is false. Work occurrence alone therefore does not satisfy the fulfilment predicate. Missing evidence produces an unresolved reliance assessment; it does not create a third predicate value.
+No production or entity-inception claim is current because `Housing_42` already existed before this delivery work. This edition requires no additional generic transfer or institutional-acceptance relation beyond the two A.2.3 relations and its acceptance predicate. If another edition requires one, it must name that exact direct relation and its participants rather than adding a `delivery work` bundle.
 
-**Disposition and stop.** Disposition 3 stops at the reusable predicate-definition episteme. If a later receiving use needs fulfilment occurrences, A.6.RCD returns a derived fulfilment-kind candidate plus a proposed direct A.2.3 subject settlement that supplies obtaining, applicability, dependencies, and a direct occurrence-identity rule. `E.24` and `E.24.UK` decide admission, with `A.11` applied when parsimony is current. The route to `A.6.0` declaration opens only for an admitted result. `Only truth is needed` means no explicit individuation is consumed; it never means identity is absent from an admitted kind.
+**Evaluation, result, and evidence.** Separate evaluation work `Work_InspectHousing42` applies the declared acceptance method. Its exact operation-result binding carries the verdict value; optional episteme `InspectionVerdict_Housing42` states that evaluation result. An A.10 evidence-use relation may support reliance on the affirmative fulfilment assertion. The evaluation work, result binding, verdict episteme, and evidence-use relation neither become parts of `Work_DeliverHousing42` nor make `PromiseContentFulfilmentRelation` obtain. The three world-side conditions above make the direct relation obtain; evaluation and evidence only support an assertion about it.
+
+**Positive case.** All three required conditions above are satisfied, so the direct predicate is satisfied and a claim-bearing episteme may state `fulfilsPromiseContent(Work_DeliverHousing42, PromiseContent_Housing42_v3)` without creating the occurrence.
+
+**Discriminating failures.** `Work_DeliverHousing42` can occur and `Housing_42` can be in the target post-state while `PromiseContentUse` is absent or concerns another promise edition; then `PromisedOutcomeDeliveryRelation` for this promised outcome does not obtain and the promise is not fulfilled. Or the delivery relation can obtain while one acceptance condition is false; an `accepted` label or report cannot repair that failure. Missing evidence leaves reliance on the assertion unresolved; it creates neither fulfilment nor non-fulfilment.
+
+**Disposition and stop.** Stop at disposition 1 under A.2.3. No new compound-law episteme, predicate definition, relation kind, or `RelationSignature` is needed. Open A.6.REL only if a later receiver must distinguish this fulfilment occurrence from another occurrence of the same admitted relation.
 
 #### A.6.RCD:5.2 - Role enactment: one local compound claim
 
@@ -232,17 +259,17 @@ Stop at the first disposition that closes the named receiving use. Return to thi
 
 **Disposition and stop.** Disposition 2. Keep the readable local enactment claim; admit no universal `RoleEnactment` kind, occurrence, or `RelationSignature`. If a later subject pattern demonstrates repeated occurrence-semantics need, reopen that exact subject case rather than generalizing from the verb.
 
-#### A.6.RCD:5.3 - Supply-chain reachability: query, reusable definition, and conditional kind boundary
+#### A.6.RCD:5.3 - Supply-chain reachability: subject-bounded query or reusable predicate definition
 
-**Situation.** A supply-chain practice repeatedly asks whether one exact participant is reachable from another inside one identified subject structure.
+**Situation.** One planner asks whether `Supplier_A` can reach `Plant_B` inside `SupplyNetwork_North_2026`. Other planners want the same directed-reachability rule for independently identified supply-network structures.
 
-**Base and derivation.** Name the direct edge-relation kinds, direction, structure, path or closure rule, zero-length and cycle policies, applicability, and edge-definition editions. A one-off answer is a local compound claim. Repeated query semantics can be published in a predicate-definition episteme whose `EntityOfConcern` is the exact subject structure within which the questions are asked.
+**Base and derivation.** Name the direct edge-relation kinds, direction, structure parameter, source and target parameters, path or closure rule, zero-length and cycle policies, applicability, and edge-definition editions. A one-off answer is a local compound claim. Repeated queries only about `SupplyNetwork_North_2026` may use a subject-bounded compound-law episteme whose `EntityOfConcern` is that exact structure and whose reuse boundary excludes other structures. When the same parameterized rule is reused across independently identified structures, publish `DirectedReachabilityPredicate_v1` as a predicate-definition episteme whose `EntityOfConcern` is that exact reusable definition. If its claim graph supplies A.6.0's subject and value range, Vocabulary, Laws, and Applicability, it may independently satisfy ordinary `U.Signature` membership without becoming a `RelationSignature`.
 
-**Positive case.** A path exists whose every edge is an obtaining occurrence of the admitted base relation under the current structure and closure rule.
+**Positive case.** A path exists whose every edge is an obtaining occurrence of the admitted base relation under the selected structure and closure rule.
 
 **Discriminating failure.** A graph representation contains a visual or stored path, but one edge points in the wrong direction, denotes a different base relation, or belongs to a superseded structure edition. Representation connectivity therefore does not satisfy the reachability predicate.
 
-**Disposition and stop.** A one-off query stops at disposition 2; repeated semantics stop at disposition 3's predicate definition. If the subject practice later needs reachability occurrences with action-facing identity, recurrence, continuation, or participation in another relation, A.6.RCD returns a derived reachability-kind candidate plus a proposed direct subject settlement that supplies the direct occurrence rule. `E.24` and `E.24.UK` decide admission, with `A.11` applied when parsimony is current. The route to `A.6.0` declaration opens only for an admitted result. Path identity, query-result-row identity, and relation-occurrence identity are not interchangeable.
+**Disposition and stop.** The one-off query stops at disposition 2. Repeated use confined to one exact structure stops at disposition 3's subject-bounded branch. Cross-structure reuse stops at disposition 3's reusable predicate-definition branch and may add ordinary A.6.0 `U.Signature` membership. If a subject practice later needs reachability occurrences with action-facing identity, recurrence, continuation, or participation in another relation, A.6.RCD returns a derived reachability-kind candidate plus a proposed direct subject settlement; `E.24` and `E.24.UK` decide admission, with `A.11` applied when parsimony is current. Only an admitted relation kind opens `RelationSignature`. Path identity, query-result-row identity, predicate-definition identity, subject-structure identity, and relation-occurrence identity are not interchangeable.
 
 #### A.6.RCD:5.4 - Formal and probabilistic result use: preserve separate algebras
 
@@ -273,15 +300,15 @@ The formal examples can bias authors toward syntax-first reasoning. The method t
 
 1. **Blocked receiver.** The exact claim, check, decision, or continuation under repair is named.
 2. **Participants first.** Actual referents and relation-participant meanings are recovered before constructor or notation choice.
-3. **Direct-relation stop.** `A.6.P` verifies that no current direct relation already closes the claim before compound derivation begins.
-4. **Governed base.** Every base predicate names its direct governing pattern and obtaining law.
+3. **Direct-predicate stop.** `A.6.P` recovers the current direct governing pattern and predicate before compound derivation begins. If that predicate can state the needed affirmative, negative, or exact governed modal claim, use it and stop; an obtaining occurrence is not a prerequisite for negative or governed modal content. If case facts do not decide the predicate, leave the direct question open and route information sufficiency, support, or reliance to the exact evaluation or evidence owner.
+4. **Governed base.** Every base predicate names its direct governing pattern and obtaining law. The current case separately supplies the relevant facts or constituting history; an assertion or representation does not turn that rule into an obtaining occurrence.
 5. **Substrate authority.** Every used constructor has semantics in the selected substrate; nontrivial, interoperable, proof-bearing, or reusable derivation pins the substrate and edition.
 6. **Replay.** One positive case, one discriminating failure case, and the receiving-use replay agree.
 7. **Lightest disposition.** Exactly one of the four dispositions closes the current use; later branches are not opened by habit.
-8. **Claim polarity.** Positive and negative compound assertions concern predicate satisfaction; information sufficiency, support, or reliance is evaluated separately.
-9. **Definition identity.** A reusable predicate-definition episteme has one truthful `C.2.1` `EntityOfConcern`, exact applicability, and visible base dependencies.
-10. **Definition/signature boundary.** A predicate-definition episteme is not a `RelationSignature` and does not classify relation occurrences.
-11. **Derived-kind candidate and admission.** When a named receiver needs stable occurrence semantics, A.6.RCD returns a derived-kind candidate plus a proposed direct subject settlement covering derivation and dependencies, obtaining, applicability, recurrence where current, and a direct occurrence-identity rule. `E.24` and `E.24.UK` decide admission; `A.11` decides parsimony when current. Neither the proposal nor its direct subject pattern admits the kind, and only an admitted result proceeds to `A.6.0` declaration.
+8. **Claim polarity and occurrence boundary.** Direct and compound assertions may be affirmative, negative, or governed modal claims; information sufficiency, support, or reliance is evaluated separately and is not a third predicate value. The direct owner defines the test, current case facts or constituting history determine its satisfaction, and the assertion states the result without creating an occurrence. Open A.6.REL only when a satisfied affirmative case has an occurrence whose identity a receiver consumes.
+9. **Definition identity and reuse boundary.** A subject-bounded compound-law episteme names the exact subject as its `EntityOfConcern` and states that reuse does not travel to another subject. A genuinely reusable predicate-definition episteme names the exact reusable predicate definition as its `EntityOfConcern`. Both state exact applicability and visible base dependencies.
+10. **Definition/signature boundary.** A genuinely reusable predicate-definition episteme may satisfy ordinary A.6.0 `U.Signature` membership before relation-kind admission. It is not a `RelationSignature`, does not classify relation occurrences, and does not make one obtain.
+11. **Derived-kind candidate and admission.** When a named receiver needs stable occurrence semantics, A.6.RCD returns a derived-kind candidate plus a proposed direct subject settlement covering derivation and dependencies, obtaining, applicability, recurrence where current, and a direct occurrence-identity rule. `E.24` and `E.24.UK` decide admission; `A.11` decides parsimony when current. Neither the proposal nor its direct subject pattern admits the kind. Only an admitted relation kind proceeds to an A.6.0 `RelationSignature`; ordinary `U.Signature` membership of a predicate-definition episteme is independent of that route.
 12. **Primitive-kind settlement.** A primitive candidate records the failed derivation, exact action-facing loss, independent uses, own obtaining and identity laws, and standalone direct pattern before A.11/E.24/E.24.UK admission can pass.
 13. **Identity never absent.** Explicit individuation can be omitted from ordinary use; an admitted relation kind's identity rule cannot.
 14. **Representation boundary.** Formula, query, graph, tree, path, diagram, row, and name remain representations or designators connected to independently recovered content.
@@ -347,7 +374,7 @@ Reopen the exact affected disposition, not the whole relation foundation, when:
 
 - **Entered from:** `A.6.P` only after exact participants are recovered and no current direct relation closes the named receiving claim.
 - **Builds on:** `A.6.REL` for relation obtaining and occurrence identity; `A.6.5` for participant declaration discipline; `C.2.1` for local claims and predicate-definition epistemes; and the direct subject patterns supplying base relations.
-- **Coordinates with:** `A.11`, `E.24`, and `E.24.UK` for parsimony, ontic settlement, and durable admission; `A.6.0` for `RelationSignature` only after relation-kind admission; `C.29` for derivation representations; `F.9` for Bridge id, `CL`, loss, admitted-use, and plane-policy discipline when claims cross contexts or ReferencePlanes; `B.3` for any resulting `R_eff`-only assurance penalty; `F.18` for names and designators after settlement; and `G.11` for dependency currentness and scoped refresh.
+- **Coordinates with:** `A.11`, `E.24`, and `E.24.UK` for parsimony, ontic settlement, and durable admission; `A.6.0` for possible ordinary `U.Signature` membership of a genuinely reusable predicate-definition episteme before relation-kind admission, and for `RelationSignature` only after the exact relation kind is admitted; `C.29` for derivation representations; `F.9` for Bridge id, `CL`, loss, admitted-use, and plane-policy discipline when claims cross contexts or ReferencePlanes; `B.3` for any resulting `R_eff`-only assurance penalty; `F.18` for names and designators after settlement; and `G.11` for dependency currentness and scoped refresh.
 - **Does not replace:** direct subject relation patterns, `A.6.P`, `E.24.UK`, `C.29`, `F.18`, evidence or assurance patterns, or work and decision patterns.
 
 ### A.6.RCD:End
