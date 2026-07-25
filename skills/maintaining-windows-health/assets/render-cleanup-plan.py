@@ -1238,7 +1238,7 @@ def main(argv: list[str]) -> int:
     if not data_path.is_file():
         print(f"data file not found: {data_path}", file=sys.stderr)
         return 2
-    data = json.loads(data_path.read_text(encoding="utf-8"))
+    data = json.loads(data_path.read_text(encoding="utf-8-sig"))
     html_content = render_html(data)
 
     handler = make_handler(html_content, data.get("categories", []))
