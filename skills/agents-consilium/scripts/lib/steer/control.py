@@ -106,6 +106,7 @@ def cmd_status(args: argparse.Namespace) -> int:
     steers = []
     for m in messages:
         if m.get("kind") == "steer" or m.get("kind") == "invalid":
+            msg_meta = m.get("meta") if isinstance(m.get("meta"), dict) else {}
             steers.append(
                 {
                     "seq": m.get("seq"),
@@ -118,6 +119,10 @@ def cmd_status(args: argparse.Namespace) -> int:
                     "mode": m.get("mode"),
                     "content_hash": m.get("content_hash"),
                     "updated_at": m.get("updated_at"),
+                    "prompt_id": msg_meta.get("promptId"),
+                    "merged_into_prompt_id": msg_meta.get("mergedIntoPromptId"),
+                    "superseded_by_prompt_id": msg_meta.get("supersededByPromptId"),
+                    "cancel_trigger": msg_meta.get("cancelTrigger"),
                 }
             )
 

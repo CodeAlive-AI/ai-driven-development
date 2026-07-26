@@ -107,12 +107,16 @@ Use this sequence whenever the user may want to redirect an active delegate:
 4. Send only new information or a clear course correction. Do not repeat the
    entire original task. Use `--prompt-file` or stdin for long guidance.
 5. Use `--mode auto` unless the user explicitly needs different semantics.
-   Record the returned `client_id` and `seq`.
+   Record the returned `client_id` and `seq`. For Grok, `auto`/`queue` is the
+   productive default for additive details. Use `interrupt` only to replace the
+   current direction: every later `interrupt` intentionally supersedes the
+   prompt currently running, including an earlier steer.
 6. Treat the immediate `accepted` response as mailbox persistence only. Query
    `delegate status RUN_ID --json`, find the matching `client_id`, and inspect
    `mailbox_status`, `delivery_class`, `backend_ack`, and `error`.
-7. Continue observing the original process. A later backend event may promote
-   the steer from `request_sent`/`queued` to `applied`.
+7. Continue observing the original process. Later backend events may advance
+   the steer from `request_sent`/`queued` to `running` and `completed`, or end
+   it as `cancelled`, `dropped`, `failed`, or `rejected`.
 8. Wait for the original delegate process to finish and consume its stdout as
    the final answer. Use `cancel` only when intentionally stopping the whole
    delegated run.
@@ -133,8 +137,17 @@ Interpret steer status precisely:
 | `delivering` | The supervisor is currently calling the backend adapter |
 | `request_sent` | Written to the backend transport; no application evidence yet |
 | `queued` | Queued/accepted by the backend but not yet observed running |
-| `applied` | Correlated backend evidence confirms the guidance was replayed, started, or completed |
-| `failed` / `rejected` | Not applied; inspect `error` and decide whether to start a new run |
+| `awaiting_queue_resolution` | Grok returned Cancelled for a never-observed-running prompt; wait for the authoritative next queue snapshot before deciding merged vs dropped |
+| `merged` | Grok combined this steer text into another running prompt; keep observing that linked prompt |
+| `running` | The backend correlated the steer with an active prompt/turn; this does **not** prove the requested effect happened |
+| `completed` | That steer prompt ended without a cancellation/error stop reason; verify artifacts/result for semantic compliance |
+| `incomplete` | Grok stopped the steer at a token limit; its requested work may be partial |
+| `applied` | A backend with a direct replay/injection acknowledgement confirmed receipt; still verify task effects when they matter |
+| `cancelled` | The steer turn started but was cancelled, commonly by a later `interrupt`; do not assume its requested work happened |
+| `superseded` | A later Grok `interrupt` (`sendNow`) intentionally replaced this steer; inspect `superseded_by_prompt_id` |
+| `dropped` | Grok removed a never-observed-running prompt and later queue evidence did not show a merge |
+| `abandoned` | The overall delegate run ended before this steer produced a terminal protocol outcome |
+| `failed` / `rejected` | The steer did not complete normally; inspect `error` / `backend_ack` and decide whether to retry or start a new run |
 
 For retry-safe automation, provide a stable `--client-id`:
 
@@ -152,8 +165,8 @@ a new delegate with the remaining task. Do not put secrets into steer guidance
 unless persistence in private raw/audit artifacts is intentional.
 
 - Large task/guidance bodies travel via files or mailbox JSON — never large argv/env.
-- **Mailbox `accepted` ≠ protocol delivered/applied.** `status` shows `delivery_class` and backend evidence separately.
-- Protocol ack ladder: `request_sent`/`queued` = transport wrote the request; `applied` only after backend confirmation (matching `promptId` / user replay / `clientUserMessageId`).
+- **Mailbox `accepted` ≠ protocol delivery, execution, or compliance.** `status` shows `delivery_class` and backend evidence separately.
+- Protocol lifecycle is backend-specific. Never reinterpret `request_sent`, `queued`, or `running` as proof that guidance changed files or the final answer. `completed` proves prompt lifecycle completion, not semantic compliance.
 - Registry root: `CONSILIUM_STEER_DIR` (default under user cache). Permissions: registry/run dirs `0700`, state files `0600`. Symlink run dirs are rejected.
 - **Steerable always keeps a service registry + protocol artifacts** (mailbox, audit, raw/normalized/final under the private registry run or the configured `CONSILIUM_RUN_DIR`) for observability — even when `CONSILIUM_SAVE_OUTPUTS=0` disables ordinary review/delegate archival. With `SAVE_OUTPUTS=0`, protocol artifacts never land in the project cwd; `meta.artifacts_dir` records the private 0700 path. Registry is independent of output archival.
 - Client ids are never used as path components (SHA-256 safe names); original `client_id` is stored in JSON. Idempotent retry requires the same content hash, mode, and kind; otherwise conflict is rejected.
@@ -168,7 +181,7 @@ unless persistence in private raw/audit artifacts is intentional.
 | OpenCode | `step_inject` (`prompt_async` at step boundary; works while busy) | same as auto | `abort_and_prompt` (session abort then prompt); loopback-only URL + redirect re-validation; per-run `OPENCODE_SERVER_PASSWORD` Basic auth (password never logged/stored); `message.part.updated` is cumulative per part id |
 | Grok Build | `queue_next_turn` (concurrent ACP `session/prompt`; server FIFO) | same as auto | `cancel_and_send` (second prompt with `_meta.sendNow: true` + own `promptId`) |
 
-Grok steerable uses native ACP `grok agent stdio` concurrent prompt queue semantics (not same-turn injection, not external holding of prompts until first completion). Attribution uses `_meta.promptId` on notifications and `x.ai/session/prompt_complete` / `_x.ai/session/prompt_complete`, plus `_x.ai/queue/changed` (`entries[].id`, `runningPromptId`). Writing a concurrent `session/prompt` is `request_sent`/`queued`, not `applied`, until the matching promptId is observed. If confirmation arrives after `steer()` returns `queued`, the adapter emits correlated `steer_ack` events and the supervisor reconciles mailbox/state by saved `meta.promptId` (never demoting terminal statuses). Only `agent_message_chunk` (and confirmed aliases) contributes to final text; `agent_thought_chunk` is progress/thought only; `user_message_chunk` is replay only.
+Grok steerable uses native ACP `grok agent stdio` concurrent prompt queue semantics (not same-turn injection, not external holding of prompts until first completion). Attribution uses `_meta.promptId` on notifications and `x.ai/session/prompt_complete` / `_x.ai/session/prompt_complete`, plus `_x.ai/queue/changed` (`entries[].id`, `runningPromptId`, `runningCombinedTexts`). Writing a concurrent `session/prompt` is `request_sent`/`queued`; `runningPromptId` or prompt-attributed updates advance it only to `running`. When Grok combines a queued follower into another prompt, consilium reports `merged`, links `merged_into_prompt_id`, and follows the front prompt to a terminal outcome. Grok deliberately returns a Cancelled RPC for a combined follower before its authoritative `runningCombinedTexts` broadcast, so consilium first reports `awaiting_queue_resolution`; the next queue snapshot resolves that state to `merged` or `dropped`. `end_turn` becomes `completed`; `max_tokens` becomes `incomplete`; refusal becomes `rejected`; a normal cancellation becomes `cancelled`; `cancelTrigger=send_now` becomes `superseded` and links `superseded_by_prompt_id`; `error`, `rate_limit`, and unknown stop reasons become `failed`. Grok transport events cannot prove that the model semantically obeyed guidance, so the Grok adapter never claims `applied`. `steer()` itself never waits on Grok: it returns transport state immediately so the supervisor can accept more guidance and stream/reconcile lifecycle events. Terminal outcomes cannot be overwritten by late weaker acknowledgements except the evidence-backed refinement `cancelled → superseded`. If the whole run ends while a steer is still lifecycle-open, it becomes `abandoned` instead of remaining stuck. Only `agent_message_chunk` (and confirmed aliases) contributes to final text; `agent_thought_chunk` is progress/thought only; `user_message_chunk` is replay only.
 
 Codex interrupt uses a **local protocol-ack wait** (bounded handshake for the interrupted turn's `turn/completed`) — not a global run timeout. Ordinary `turn/completed` with status `completed` ends this delegate run (not a permanent idle session).
 

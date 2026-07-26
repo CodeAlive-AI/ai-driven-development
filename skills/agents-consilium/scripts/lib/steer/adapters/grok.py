@@ -18,8 +18,15 @@ Ack ladder (honest statuses):
 - `request_sent` / `queued`: JSON-RPC request written and/or in-flight only —
   NOT "delivered". Backend-confirmed queue (`_x.ai/queue/changed` entries)
   upgrades evidence while staying `queued`.
-- `applied`: promptId seen as running, on session/update meta (agent chunks),
-  prompt_complete, or matching session/prompt result.
+- `running`: promptId seen as running or on an attributed agent/tool update.
+- `completed`: the prompt turn ended without a cancellation/error stop reason.
+- `cancelled`: a turn that had started was cancelled.
+- `dropped`: a cancelled JSON-RPC result for a prompt that was never observed
+  running (Grok Build's RemovedFromQueue / combined-follower path).
+- `failed`: prompt_complete/result reported error or rate_limit.
+
+No Grok transport event can prove semantic compliance, so this adapter never
+claims `applied`. It reports only wire-observable lifecycle facts.
 - Late acks after steer() returns are emitted as `steer_ack` events so the
   supervisor can reconcile mailbox status asynchronously.
 """
@@ -27,7 +34,6 @@ from __future__ import annotations
 
 import queue
 import threading
-import time
 import uuid
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Set, Tuple
@@ -62,6 +68,15 @@ _USER_MESSAGE_TYPES = frozenset(
     }
 )
 
+_CANCEL_STOP_REASONS = frozenset({"cancelled", "canceled"})
+_FAIL_STOP_REASONS = frozenset({"error", "rate_limit", "ratelimit"})
+_SUCCESS_STOP_REASONS = frozenset({"end_turn", "endturn"})
+_INCOMPLETE_STOP_REASONS = frozenset({"max_tokens", "maxtokens"})
+
+
+def _normalize_stop_reason(value: Any) -> str:
+    return str(value or "").strip().replace("-", "_").lower()
+
 
 def _normalize_acp_method(method: str) -> str:
     """Map `_x.ai/foo` → `x.ai/foo` for stable matching of real wire shapes."""
@@ -87,6 +102,12 @@ class GrokAdapter(BackendAdapter):
         self._prompt_queue_confirmed: Set[str] = set()
         self._prompt_running: Set[str] = set()
         self._prompt_result: Dict[str, Any] = {}
+        self._prompt_content: Dict[str, str] = {}
+        self._prompt_merged_into: Dict[str, str] = {}
+        self._prompt_cancelled_pending: Dict[str, int] = {}
+        self._queue_change_seq = 0
+        self._current_running_prompt_id: Optional[str] = None
+        self._superseded_by: Dict[str, str] = {}
         self._in_flight: Dict[str, Tuple[Any, "queue.Queue[Dict[str, Any]]"]] = {}
         self._initial_prompt_id: Optional[str] = None
         self._final_prompt_id: Optional[str] = None
@@ -137,11 +158,15 @@ class GrokAdapter(BackendAdapter):
             first = not self._prompt_seen_meta.get(prompt_id)
             self._prompt_seen_meta[prompt_id] = True
         if first:
-            self._emit_steer_ack(prompt_id, status="applied", evidence=evidence)
+            self._emit_steer_ack(prompt_id, status="running", evidence=evidence)
 
     def _on_queue_changed(self, params: Dict[str, Any]) -> None:
         """Backend FIFO observability: entries[].id / runningPromptId correlate to promptId."""
+        with self._lock:
+            self._queue_change_seq += 1
+            queue_change_seq = self._queue_change_seq
         entries = params.get("entries") or []
+        entry_ids: Set[str] = set()
         if isinstance(entries, list):
             for entry in entries:
                 if not isinstance(entry, dict):
@@ -149,6 +174,7 @@ class GrokAdapter(BackendAdapter):
                 eid = entry.get("id") or ""
                 if not eid:
                     continue
+                entry_ids.add(eid)
                 with self._lock:
                     first = eid not in self._prompt_queue_confirmed
                     self._prompt_queue_confirmed.add(eid)
@@ -162,6 +188,7 @@ class GrokAdapter(BackendAdapter):
         running = params.get("runningPromptId") or ""
         if running:
             with self._lock:
+                self._current_running_prompt_id = running
                 first_run = running not in self._prompt_running
                 self._prompt_running.add(running)
                 # Running is stronger confirmation than mere queue membership.
@@ -169,23 +196,75 @@ class GrokAdapter(BackendAdapter):
             if first_run:
                 self._emit_steer_ack(
                     running,
-                    status="applied",
+                    status="running",
                     evidence="running_prompt_id",
                     raw={"runningPromptId": running, "params": params},
                 )
+            combined = params.get("runningCombinedTexts") or []
+            if isinstance(combined, list) and len(combined) >= 2:
+                combined_texts = [str(x) for x in combined]
+                with self._lock:
+                    candidates: Dict[str, List[str]] = {}
+                    for candidate, text in self._prompt_content.items():
+                        if (
+                            candidate != running
+                            and candidate in self._prompt_queue_confirmed
+                            and candidate not in self._prompt_complete
+                            and (
+                                candidate not in self._prompt_result
+                                or candidate in self._prompt_cancelled_pending
+                            )
+                            and text in combined_texts
+                        ):
+                            candidates.setdefault(text, []).append(candidate)
+                    merged = [ids[0] for ids in candidates.values() if len(ids) == 1]
+                    fresh = [pid for pid in merged if pid not in self._prompt_merged_into]
+                    for pid in fresh:
+                        self._prompt_merged_into[pid] = running
+                for pid in fresh:
+                    self._emit_steer_ack(
+                        pid,
+                        status="merged",
+                        evidence="running_combined_texts",
+                        raw={
+                            "mergedIntoPromptId": running,
+                            "runningCombinedTexts": combined_texts,
+                        },
+                    )
+        else:
+            with self._lock:
+                self._current_running_prompt_id = None
+        with self._lock:
+            dropped = []
+            for pid, seen_seq in list(self._prompt_cancelled_pending.items()):
+                if seen_seq >= queue_change_seq:
+                    continue
+                if pid in self._prompt_merged_into:
+                    self._prompt_cancelled_pending.pop(pid, None)
+                    continue
+                if pid == running or pid in entry_ids:
+                    continue
+                self._prompt_cancelled_pending.pop(pid, None)
+                dropped.append(pid)
+        for pid in dropped:
+            self._emit_steer_ack(
+                pid,
+                status="dropped",
+                evidence="queue_reconciled_cancelled_never_ran",
+                raw={"queueChangedSeq": queue_change_seq, "params": params},
+            )
         self._events.put(
             AdapterEvent(kind="progress", data="queue/changed", raw=params)
         )
 
     def _on_prompt_complete(self, params: Dict[str, Any]) -> None:
         pid = params.get("promptId") or ""
+        stop = _normalize_stop_reason(params.get("stopReason"))
         with self._lock:
             self._prompt_complete[pid] = dict(params)
-            stop = params.get("stopReason") or ""
-            if stop != "Cancelled":
+            self._prompt_cancelled_pending.pop(pid, None)
+            if stop not in _CANCEL_STOP_REASONS:
                 self._completed_prompt_ids.append(pid)
-            if pid:
-                self._prompt_seen_meta[pid] = True
         self._events.put(
             AdapterEvent(
                 kind="prompt_complete",
@@ -194,12 +273,37 @@ class GrokAdapter(BackendAdapter):
             )
         )
         if pid:
+            status, evidence = self._terminal_outcome(
+                pid,
+                stop_reason=stop,
+                source="prompt_complete",
+                cancel_trigger=params.get("cancelTrigger"),
+            )
+            ack_raw = dict(params)
+            if status == "superseded":
+                with self._lock:
+                    successor = self._superseded_by.get(pid) or self._current_running_prompt_id
+                if successor and successor != pid:
+                    ack_raw["supersededByPromptId"] = successor
             self._emit_steer_ack(
                 pid,
-                status="applied",
-                evidence="prompt_complete",
-                raw=params,
+                status=status,
+                evidence=evidence,
+                raw=ack_raw,
             )
+            with self._lock:
+                merged_followers = [
+                    follower
+                    for follower, front in self._prompt_merged_into.items()
+                    if front == pid
+                ]
+            for follower in merged_followers:
+                self._emit_steer_ack(
+                    follower,
+                    status=status,
+                    evidence=f"merged_{evidence}",
+                    raw={"mergedIntoPromptId": pid, "frontCompletion": ack_raw},
+                )
 
     def _on_notification(self, msg: Dict[str, Any]) -> None:
         method = msg.get("method") or ""
@@ -444,6 +548,8 @@ class GrokAdapter(BackendAdapter):
                 "sendNow": bool(send_now),
             },
         }
+        with self._lock:
+            self._prompt_content[prompt_id] = text
         rid, q = self.rpc.start_request("session/prompt", params)
         with self._lock:
             self._in_flight[prompt_id] = (rid, q)
@@ -472,12 +578,38 @@ class GrokAdapter(BackendAdapter):
             )
             with self._lock:
                 self._prompt_result[prompt_id] = result
-                self._prompt_seen_meta[prompt_id] = True
+            stop = result.get("stopReason") if isinstance(result, dict) else ""
+            result_meta = result.get("_meta") if isinstance(result, dict) else {}
+            if not isinstance(result_meta, dict):
+                result_meta = {}
+            if _normalize_stop_reason(stop) in _CANCEL_STOP_REASONS:
+                with self._lock:
+                    started = prompt_id in self._prompt_running or bool(
+                        self._prompt_seen_meta.get(prompt_id)
+                    )
+                    merged = prompt_id in self._prompt_merged_into
+                    if not started and not merged:
+                        self._prompt_cancelled_pending[prompt_id] = self._queue_change_seq
+            status, evidence = self._terminal_outcome(
+                prompt_id,
+                stop_reason=stop,
+                source="prompt_result",
+                cancel_trigger=(
+                    result.get("cancelTrigger") if isinstance(result, dict) else None
+                )
+                or result_meta.get("cancelTrigger"),
+            )
+            ack_raw: Dict[str, Any] = {"promptId": prompt_id, "result": result}
+            if status == "superseded":
+                with self._lock:
+                    successor = self._superseded_by.get(prompt_id)
+                if successor:
+                    ack_raw["supersededByPromptId"] = successor
             self._emit_steer_ack(
                 prompt_id,
-                status="applied",
-                evidence="prompt_result",
-                raw={"promptId": prompt_id, "result": result},
+                status=status,
+                evidence=evidence,
+                raw=ack_raw,
             )
             return result
         except Exception as e:
@@ -505,13 +637,22 @@ class GrokAdapter(BackendAdapter):
         with self._lock:
             if self._in_flight:
                 return
+            unresolved = list(self._prompt_cancelled_pending)
+            self._prompt_cancelled_pending.clear()
+            for pid in unresolved:
+                self._emit_steer_ack(
+                    pid,
+                    status="dropped",
+                    evidence="run_finished_cancelled_never_ran",
+                    raw={"promptId": pid},
+                )
             if self._cancelled:
                 self._done = True
                 self._exit_code = 130
                 return
             pc = self._prompt_complete.get(completed_prompt_id) or {}
-            stop = pc.get("stopReason") or ""
-            if stop == "Cancelled":
+            stop = _normalize_stop_reason(pc.get("stopReason"))
+            if stop in _CANCEL_STOP_REASONS:
                 # If everything cancelled and nothing left, still may wait
                 if not self._completed_prompt_ids and not self._all_text:
                     return
@@ -519,7 +660,7 @@ class GrokAdapter(BackendAdapter):
                 if self._completed_prompt_ids:
                     completed_prompt_id = self._completed_prompt_ids[-1]
                     pc = self._prompt_complete.get(completed_prompt_id) or {}
-                    stop = pc.get("stopReason") or ""
+                    stop = _normalize_stop_reason(pc.get("stopReason"))
                 else:
                     return
             if completed_prompt_id == self._final_prompt_id or (
@@ -528,10 +669,9 @@ class GrokAdapter(BackendAdapter):
             ):
                 if self._all_text or stop in (
                     "end_turn",
-                    "EndTurn",
-                    "endTurn",
+                    "endturn",
                     "max_tokens",
-                    "MaxTokens",
+                    "maxtokens",
                     "",
                 ):
                     # Only terminal if final prompt itself completed (not just any)
@@ -576,17 +716,79 @@ class GrokAdapter(BackendAdapter):
     def _interrupt_class(self) -> DeliveryClass:
         return DeliveryClass.CANCEL_AND_SEND
 
-    def _applied_for(self, prompt_id: str) -> Optional[str]:
-        """Return evidence string if backend confirmed this promptId as applied."""
+    def _ever_started(self, prompt_id: str) -> bool:
         with self._lock:
-            if prompt_id in self._prompt_complete:
-                return "prompt_complete"
-            if prompt_id in self._prompt_result:
-                return "prompt_result"
+            return prompt_id in self._prompt_running or bool(
+                self._prompt_seen_meta.get(prompt_id)
+            )
+
+    def _terminal_outcome(
+        self,
+        prompt_id: str,
+        *,
+        stop_reason: Any,
+        source: str,
+        cancel_trigger: Any = None,
+    ) -> Tuple[str, str]:
+        """Classify only facts Grok exposes; never infer instruction compliance."""
+        stop = _normalize_stop_reason(stop_reason)
+        trigger = _normalize_stop_reason(cancel_trigger)
+        started = self._ever_started(prompt_id)
+        if stop in _CANCEL_STOP_REASONS:
+            with self._lock:
+                merged = prompt_id in self._prompt_merged_into
+            if merged:
+                return "merged", "running_combined_texts"
+            if trigger == "send_now":
+                return "superseded", f"{source}_superseded"
+            if source == "prompt_result" and not started:
+                return "awaiting_queue_resolution", "prompt_result_cancelled_unresolved"
+            return "cancelled", f"{source}_cancelled"
+        if stop in _FAIL_STOP_REASONS:
+            return "failed", f"{source}_{stop}"
+        if stop in _INCOMPLETE_STOP_REASONS:
+            return "incomplete", f"{source}_{stop}"
+        if stop == "refusal":
+            return "rejected", f"{source}_refusal"
+        if stop in _SUCCESS_STOP_REASONS:
+            return "completed", source
+        return "failed", f"{source}_unknown_stop:{stop or 'missing'}"
+
+    def _observed_for(self, prompt_id: str) -> Optional[Tuple[str, str]]:
+        """Return the strongest wire-observable lifecycle state for promptId."""
+        with self._lock:
+            complete = self._prompt_complete.get(prompt_id)
+            result = self._prompt_result.get(prompt_id)
             if prompt_id in self._prompt_running:
-                return "running_prompt_id"
-            if self._prompt_seen_meta.get(prompt_id):
-                return "promptId_notification_meta"
+                running = True
+            else:
+                running = False
+            seen_meta = bool(self._prompt_seen_meta.get(prompt_id))
+        if complete is not None:
+            status, evidence = self._terminal_outcome(
+                prompt_id,
+                stop_reason=complete.get("stopReason"),
+                source="prompt_complete",
+                cancel_trigger=complete.get("cancelTrigger"),
+            )
+            return status, evidence
+        if result is not None:
+            status, evidence = self._terminal_outcome(
+                prompt_id,
+                stop_reason=result.get("stopReason") if isinstance(result, dict) else "",
+                source="prompt_result",
+                cancel_trigger=(
+                    result.get("cancelTrigger")
+                    or ((result.get("_meta") or {}).get("cancelTrigger"))
+                    if isinstance(result, dict)
+                    else None
+                ),
+            )
+            return status, evidence
+        if running:
+            return "running", "running_prompt_id"
+        if seen_meta:
+            return "running", "promptId_notification_meta"
         return None
 
     def _queue_confirmed_for(self, prompt_id: str) -> Optional[str]:
@@ -628,6 +830,11 @@ class GrokAdapter(BackendAdapter):
         # but always store client_id in meta for correlation.
         prompt_id = client_id if client_id and _looks_like_uuid(client_id) else str(uuid.uuid4())
         self._final_prompt_id = prompt_id
+        if send_now:
+            with self._lock:
+                interrupted = self._current_running_prompt_id
+                if interrupted and interrupted != prompt_id:
+                    self._superseded_by.setdefault(interrupted, prompt_id)
         try:
             # Concurrent send — do not wait for prior prompt JSON-RPC response
             self._send_prompt(content, prompt_id=prompt_id, send_now=send_now, wait=False)
@@ -638,31 +845,30 @@ class GrokAdapter(BackendAdapter):
                 status="failed",
                 error=str(e),
             )
-        # Wait briefly for backend confirmation (promptId on notification / complete)
-        deadline = time.time() + 5.0
-        while time.time() < deadline:
-            list(self.poll_events())
-            evidence = self._applied_for(prompt_id)
-            if evidence:
-                return SteerResult(
-                    ok=True,
-                    delivery_class=dclass,
-                    status="applied",
-                    evidence=evidence,
-                    meta={
-                        "promptId": prompt_id,
-                        "sendNow": send_now,
-                        "client_id": client_id,
-                    },
-                )
-            time.sleep(0.05)
-
+        # Do not wait here: steer() runs on the supervisor's mailbox loop.
+        # Blocking would delay later guidance and prevent event reconciliation.
+        # Callback-maintained state may already contain an observation; otherwise
+        # return transport state and let async steer_ack events advance it.
+        observed = self._observed_for(prompt_id)
+        if observed:
+            status, evidence = observed
+            return SteerResult(
+                ok=True,
+                delivery_class=dclass,
+                status=status,
+                evidence=evidence,
+                meta={
+                    "promptId": prompt_id,
+                    "sendNow": send_now,
+                    "client_id": client_id,
+                },
+            )
         with self._lock:
             in_flight = prompt_id in self._in_flight
         # JSON-RPC write / in-flight is NOT "delivered" — only request_sent/queued.
         q_ev = self._queue_confirmed_for(prompt_id)
         if in_flight or q_ev:
-            status = "queued" if not send_now else "request_sent"
+            status = "queued" if q_ev else "request_sent"
             return SteerResult(
                 ok=True,
                 delivery_class=dclass,
@@ -674,12 +880,13 @@ class GrokAdapter(BackendAdapter):
                     "client_id": client_id,
                 },
             )
-        evidence = self._applied_for(prompt_id)
-        if evidence:
+        observed = self._observed_for(prompt_id)
+        if observed:
+            status, evidence = observed
             return SteerResult(
                 ok=True,
                 delivery_class=dclass,
-                status="applied",
+                status=status,
                 evidence=evidence,
                 meta={
                     "promptId": prompt_id,

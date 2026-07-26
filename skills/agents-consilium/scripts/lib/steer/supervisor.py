@@ -32,10 +32,36 @@ _STEER_SUCCESS_RANK = {
     "delivering": 1,
     "request_sent": 2,
     "queued": 3,
+    "awaiting_queue_resolution": 3,
+    "running": 4,
+    "merged": 5,
+    "completed": 10,
     "applied": 10,
     "delivered": 10,
 }
-_STEER_FAILURE_TERMINAL = frozenset({"failed", "rejected"})
+_STEER_TERMINAL = frozenset(
+    {
+        "completed",
+        "incomplete",
+        "superseded",
+        "cancelled",
+        "dropped",
+        "abandoned",
+        "failed",
+        "rejected",
+    }
+)
+_STEER_LIFECYCLE_NONTERMINAL = frozenset(
+    {
+        "accepted",
+        "delivering",
+        "request_sent",
+        "queued",
+        "awaiting_queue_resolution",
+        "merged",
+        "running",
+    }
+)
 # Evidence preference when status rank is equal (higher = better confirmation).
 _EVIDENCE_RANK = {
     "concurrent_prompt_request_in_flight": 1,
@@ -43,8 +69,25 @@ _EVIDENCE_RANK = {
     "backend_queue_entry": 2,
     "promptId_notification_meta": 5,
     "running_prompt_id": 6,
+    "running_combined_texts": 6,
+    "prompt_result_cancelled_unresolved": 7,
+    "queue_reconciled_cancelled_never_ran": 9,
+    "run_finished_cancelled_never_ran": 9,
     "prompt_result": 7,
     "prompt_complete": 8,
+    "prompt_result_cancelled_never_ran": 9,
+    "prompt_result_cancelled": 9,
+    "prompt_complete_cancelled": 9,
+    "prompt_result_superseded": 9,
+    "prompt_complete_superseded": 9,
+    "prompt_result_error": 9,
+    "prompt_complete_error": 9,
+    "prompt_result_rate_limit": 9,
+    "prompt_complete_rate_limit": 9,
+    "prompt_result_max_tokens": 9,
+    "prompt_complete_max_tokens": 9,
+    "prompt_result_refusal": 9,
+    "prompt_complete_refusal": 9,
 }
 
 
@@ -180,6 +223,10 @@ class Supervisor:
                 # One more mailbox pass for late writers racing completion,
                 # still under non-terminal meta so run-lock enqueue can succeed.
                 self._drain_mailbox()
+                # Events may have arrived between the loop's first drain and
+                # the done flag. Reconcile them before closing the mailbox.
+                for ev in self.adapter.poll_events():
+                    self._handle_event(ev)
                 text = self.adapter.final_text()
                 code = self.adapter.exit_code()
                 # Cancel path may have set _done without success text
@@ -279,17 +326,6 @@ class Supervisor:
             "user_replay",
         ):
             progress("event", f"run_id={self.run_id}", ev.kind, preview_text(ev.data, 60))
-            # prompt_complete also carries promptId — reconcile if adapter did not
-            # already emit a dedicated steer_ack (older adapters / other backends).
-            if ev.kind == "prompt_complete" and isinstance(ev.raw, dict):
-                pid = ev.raw.get("promptId") or ""
-                if pid:
-                    self._reconcile_steer_ack_fields(
-                        prompt_id=pid,
-                        status="applied",
-                        evidence="prompt_complete",
-                        raw=ev.raw,
-                    )
         elif ev.kind == "error":
             progress("event", f"run_id={self.run_id}", "error", preview_text(ev.data, 120))
         elif ev.kind == "done":
@@ -347,8 +383,21 @@ class Supervisor:
             "status": status if self._status_rank(status) >= self._status_rank(old_status) else old_status,
             "backend_ack": evidence or old_evidence,
         }
-        # Never demote: if ranks equal keep higher-rank status name preference applied>queued
-        if self._status_rank(status) > self._status_rank(old_status):
+        detail = (raw or {}).get("raw") if isinstance((raw or {}).get("raw"), dict) else {}
+        meta = dict(msg.get("meta") or {})
+        if detail.get("mergedIntoPromptId"):
+            meta["mergedIntoPromptId"] = detail["mergedIntoPromptId"]
+        if detail.get("supersededByPromptId"):
+            meta["supersededByPromptId"] = detail["supersededByPromptId"]
+        if detail.get("cancelTrigger"):
+            meta["cancelTrigger"] = detail["cancelTrigger"]
+        if meta != (msg.get("meta") or {}):
+            fields["meta"] = meta
+        terminal_refinement = old_status == "cancelled" and status == "superseded"
+        # Never demote; permit the narrow cancel → sendNow-supersede refinement.
+        if terminal_refinement:
+            fields["status"] = status
+        elif self._status_rank(status) > self._status_rank(old_status):
             fields["status"] = status
         elif self._status_rank(status) == self._status_rank(old_status):
             fields["status"] = old_status if old_status else status
@@ -375,6 +424,9 @@ class Supervisor:
                 "delivery_class": updated.get("delivery_class") or prev.get("delivery_class"),
                 "evidence": updated.get("backend_ack"),
                 "error": updated.get("error") or prev.get("error") or "",
+                "merged_into_prompt_id": meta.get("mergedIntoPromptId") or prev.get("merged_into_prompt_id"),
+                "superseded_by_prompt_id": meta.get("supersededByPromptId") or prev.get("superseded_by_prompt_id"),
+                "cancel_trigger": meta.get("cancelTrigger") or prev.get("cancel_trigger"),
                 "updated_at": utc_now_iso(),
             }
         )
@@ -413,7 +465,7 @@ class Supervisor:
 
     @staticmethod
     def _status_rank(status: str) -> int:
-        if status in _STEER_FAILURE_TERMINAL:
+        if status in _STEER_TERMINAL:
             return 100
         return _STEER_SUCCESS_RANK.get(status or "", -1)
 
@@ -428,11 +480,12 @@ class Supervisor:
         old_evidence: str,
         new_evidence: str,
     ) -> bool:
-        if old_status in _STEER_FAILURE_TERMINAL:
+        if old_status == "cancelled" and new_status == "superseded":
+            return True
+        if old_status in _STEER_TERMINAL:
             return False
-        if new_status in _STEER_FAILURE_TERMINAL:
-            # Async acks are success-path only; never clobber with failure here.
-            return False
+        if new_status in _STEER_TERMINAL:
+            return True
         old_r = self._status_rank(old_status)
         new_r = self._status_rank(new_status)
         if new_r > old_r:
@@ -567,6 +620,9 @@ class Supervisor:
             self._terminal = True
             if self.mailbox:
                 self.mailbox.close(reason=reason)
+                self._abandon_nonterminal_steers(reason)
+                # Defensive fallback for malformed/open records that were not
+                # recognized as lifecycle steers above.
                 failed = self.mailbox.fail_open_messages(
                     f"run became terminal ({status}) before delivery completed"
                 )
@@ -603,6 +659,46 @@ class Supervisor:
             if not text.endswith("\n"):
                 sys.stdout.write("\n")
             sys.stdout.flush()
+
+    def _abandon_nonterminal_steers(self, reason: str) -> None:
+        """Close lifecycle states that cannot advance after run termination."""
+        assert self.mailbox and self.run_id
+        state = self.registry.load_state(self.run_id)
+        steers = dict(state.get("steers") or {})
+        changed = False
+        for msg in self.mailbox.list_messages(after_seq=0):
+            if msg.get("kind") != "steer":
+                continue
+            old = msg.get("status") or ""
+            if old not in _STEER_LIFECYCLE_NONTERMINAL:
+                continue
+            seq = int(msg.get("seq") or 0)
+            if not seq:
+                continue
+            error = f"run ended ({reason}) before steer reached a terminal outcome"
+            updated = self.mailbox.update_message(
+                seq,
+                status="abandoned",
+                backend_ack="run_ended_before_steer_terminal",
+                error=error,
+            )
+            client_id = msg.get("client_id") or f"seq_{seq}"
+            prev = dict(steers.get(client_id) or {})
+            prev.update(
+                {
+                    "seq": seq,
+                    "status": "abandoned",
+                    "delivery_class": updated.get("delivery_class")
+                    or prev.get("delivery_class"),
+                    "evidence": "run_ended_before_steer_terminal",
+                    "error": error,
+                    "updated_at": utc_now_iso(),
+                }
+            )
+            steers[client_id] = prev
+            changed = True
+        if changed:
+            self.registry.update_state(self.run_id, steers=steers)
 
     def _cleanup_adapter(self) -> None:
         if not self.adapter:

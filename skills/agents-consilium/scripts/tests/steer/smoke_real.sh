@@ -130,7 +130,7 @@ if [[ "$STRICT_GROK_CHECKS" -eq 1 ]]; then
     echo "PASS: no thought leak 'The user wants'" >&2
   fi
 
-  # Terminal steer status must be applied with matching evidence
+  # Terminal steer prompt must complete with matching lifecycle evidence.
   # Write status to a file so heredoc can own stdin for the checker script.
   STATUS_FILE="$CONSILIUM_STEER_DIR/status-final.json"
   printf '%s\n' "$STATUS_JSON" >"$STATUS_FILE"
@@ -153,25 +153,25 @@ ok_ev = {
     "running_prompt_id",
     "promptId_notification_meta",
 }
-applied = [s for s in steers if s.get("mailbox_status") == "applied"]
-if not applied:
-    print(f"FAIL: no steer with mailbox_status=applied: {steers}", file=sys.stderr)
+completed = [s for s in steers if s.get("mailbox_status") == "completed"]
+if not completed:
+    print(f"FAIL: no steer with mailbox_status=completed: {steers}", file=sys.stderr)
     sys.exit(1)
-good = [s for s in applied if s.get("backend_ack") in ok_ev]
+good = [s for s in completed if s.get("backend_ack") in ok_ev]
 if not good:
-    print(f"FAIL: applied steers lack matching evidence: {applied}", file=sys.stderr)
+    print(f"FAIL: completed steers lack matching evidence: {completed}", file=sys.stderr)
     sys.exit(1)
-print(f"PASS: steer applied evidence={good[0].get('backend_ack')}", file=sys.stderr)
+print(f"PASS: steer completed evidence={good[0].get('backend_ack')}", file=sys.stderr)
 state_steers = (st.get("state") or {}).get("steers") or {}
 for cid, s in state_steers.items():
-    if s.get("status") not in (None, "applied", "delivered"):
+    if s.get("status") not in (None, "completed"):
         print(
             f"FAIL: state.steers[{cid}].status={s.get('status')} evidence={s.get('evidence')}",
             file=sys.stderr,
         )
         sys.exit(1)
 if state_steers:
-    print("PASS: state.steers terminal applied", file=sys.stderr)
+    print("PASS: state.steers terminal completed", file=sys.stderr)
 sys.exit(0)
 PY
   then

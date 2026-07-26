@@ -53,6 +53,7 @@ class Session:
         # Used to force steer() to return queued before applied confirmation.
         self.ack_delay = float(os.environ.get("CONSILIUM_FAKE_GROK_ACK_DELAY", "0"))
         self.mode = os.environ.get("CONSILIUM_FAKE_GROK_STEER_MODE", "ok")
+        self.drop_steers = os.environ.get("CONSILIUM_FAKE_GROK_DROP_STEERS", "0") == "1"
         # When set, emit thought text that must NOT appear in final output.
         self.emit_thought = os.environ.get("CONSILIUM_FAKE_GROK_THOUGHT", "1") != "0"
         self.stop = False
@@ -96,6 +97,30 @@ class Session:
             self.cv.notify()
         # Backend-confirmed queue (matches real Grok wire) — no promptId session/update yet.
         self._emit_queue_changed()
+
+    def drop_never_run(self, item: PromptItem) -> None:
+        """Model Grok's RemovedFromQueue: queued once, never running, Cancelled result only."""
+        snapshot = self._queue_snapshot()
+        entry = {
+            "id": item.prompt_id,
+            "version": 0,
+            "kind": "prompt",
+            "text": item.text,
+            "position": len(snapshot.get("entries") or []),
+        }
+        snapshot.setdefault("entries", []).append(entry)
+        notify("_x.ai/queue/changed", snapshot)
+        self._emit_queue_changed()
+        send(
+            {
+                "jsonrpc": "2.0",
+                "id": item.rid,
+                "result": {
+                    "stopReason": "cancelled",
+                    "_meta": {"promptId": item.prompt_id, "totalTokens": 0},
+                },
+            }
+        )
 
     def worker(self) -> None:
         while not self.stop:
@@ -173,7 +198,10 @@ class Session:
                     "id": item.rid,
                     "result": {
                         "stopReason": stop_reason,
-                        "_meta": {"promptId": item.prompt_id},
+                        "_meta": {
+                            "promptId": item.prompt_id,
+                            **({"cancelTrigger": "send_now"} if cancelled else {}),
+                        },
                     },
                 }
             )
@@ -247,6 +275,9 @@ def main() -> int:
             if busy:
                 accepted_while_busy += 1
             item = PromptItem(mid, prompt_id, text, send_now)
+            if sess.drop_steers and busy and "DROP_WITHOUT_RUNNING" in text:
+                sess.drop_never_run(item)
+                continue
             # CRITICAL: respond only after work (like real ACP), but accept/enqueue
             # immediately without waiting for previous response — which we do by
             # not blocking this stdin loop on previous prompts.

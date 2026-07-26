@@ -21,7 +21,10 @@ class DeliveryClass(str, enum.Enum):
 class SteerResult:
     ok: bool
     delivery_class: DeliveryClass
-    status: str  # request_sent|queued|delivered|applied|failed|rejected|delivering
+    # Transport/lifecycle status. Backends must not call an instruction
+    # "applied" merely because its turn started: observable lifecycle states
+    # such as running/completed/cancelled/dropped are preferable.
+    status: str  # request_sent|queued|awaiting_queue_resolution|merged|running|completed|incomplete|superseded|cancelled|dropped|abandoned|applied|failed|rejected
     evidence: str = ""
     error: str = ""
     meta: Dict[str, Any] = field(default_factory=dict)

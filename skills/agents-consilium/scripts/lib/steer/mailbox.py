@@ -17,17 +17,6 @@ from .util import (
     utc_now_iso,
 )
 
-# Terminal / already-processed mailbox statuses (protocol or lifecycle).
-TERMINAL_MSG_STATUSES = frozenset(
-    {
-        "delivered",
-        "applied",
-        "failed",
-        "rejected",
-        "queued",
-        "request_sent",
-    }
-)
 OPEN_MSG_STATUSES = frozenset({None, "accepted", "delivering"})
 
 

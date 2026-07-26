@@ -413,6 +413,15 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
         in (
             "delivered",
             "applied",
+            "awaiting_queue_resolution",
+            "merged",
+            "running",
+            "completed",
+            "incomplete",
+            "superseded",
+            "cancelled",
+            "dropped",
+            "abandoned",
             "queued",
             "failed",
             "rejected",
@@ -491,7 +500,8 @@ def test_grok_queue_and_send_now(tmp: Path) -> None:
     assert_true(
         "grok honest classes",
         bool(classes & {"queue_next_turn", "cancel_and_send", "next_turn"}) or any(
-            (s.get("mailbox_status") in ("delivered", "applied")) for s in (st.get("steers") or [])
+            (s.get("mailbox_status") in ("running", "completed", "cancelled", "dropped"))
+            for s in (st.get("steers") or [])
         ),
         f"classes={classes} steers={st.get('steers')}",
     )
@@ -655,7 +665,7 @@ def test_artifact_no_truncate(tmp: Path) -> None:
 
 
 def test_grok_ack_not_delivered_on_write(tmp: Path) -> None:
-    """request_sent/queued/applied — never call pure write 'delivered'."""
+    """A write is request_sent/queued; later wire facts are running/completed."""
     print("=== e2e: grok honest ack statuses ===")
     reg_root = tmp / "reg-gack"
     art = tmp / "art-gack"
@@ -682,7 +692,15 @@ def test_grok_ack_not_delivered_on_write(tmp: Path) -> None:
         "delivering",
         "request_sent",
         "queued",
-        "applied",
+        "awaiting_queue_resolution",
+        "merged",
+        "running",
+        "completed",
+        "incomplete",
+        "superseded",
+        "cancelled",
+        "dropped",
+        "abandoned",
         "failed",
         "rejected",
         "delivered",  # legacy may appear; prefer not for mere write
@@ -692,21 +710,32 @@ def test_grok_ack_not_delivered_on_write(tmp: Path) -> None:
     assert_true("gack exit 0", code == 0, err[-300:])
     st2 = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
     final_steers = st2.get("steers") or []
-    # At least one steer should reach applied (promptId on notification) for fake-grok
-    applied = [s for s in final_steers if s.get("mailbox_status") == "applied"]
+    completed = [s for s in final_steers if s.get("mailbox_status") == "completed"]
     requestish = [
         s
         for s in final_steers
-        if s.get("mailbox_status") in ("request_sent", "queued", "applied", "delivered")
+        if s.get("mailbox_status")
+        in (
+            "request_sent",
+            "queued",
+            "awaiting_queue_resolution",
+            "merged",
+            "running",
+            "completed",
+            "incomplete",
+            "superseded",
+            "cancelled",
+            "dropped",
+            "abandoned",
+        )
     ]
     assert_true(
         "grok has protocol outcome not stuck accepted",
         len(requestish) >= 1,
         str(final_steers),
     )
-    # Evidence should not claim "delivered" solely from write if applied is available
-    if applied:
-        ok("grok applied via promptId/complete")
+    if completed:
+        ok("grok completed via correlated prompt lifecycle")
     else:
         acks = [s.get("backend_ack") for s in final_steers]
         assert_true(
@@ -878,7 +907,7 @@ def test_grok_message_type_filter_unit(tmp: Path) -> None:
 
 
 def test_grok_late_ack_reconcile_unit(tmp: Path) -> None:
-    """Late steer_ack after initial queued return advances mailbox to applied."""
+    """Late steer_ack advances queued → running → completed without claiming applied."""
     print("=== unit: late ack reconciliation ===")
     sys.path.insert(0, str(LIB_DIR))
     from steer.adapters.base import AdapterEvent  # type: ignore
@@ -962,40 +991,40 @@ def test_grok_late_ack_reconcile_unit(tmp: Path) -> None:
         str(m1),
     )
 
-    # 2) running → applied
+    # 2) running remains an observable lifecycle state, not semantic application
     sup._handle_event(
         AdapterEvent(
             kind="steer_ack",
-            data="applied:running_prompt_id",
+            data="running:running_prompt_id",
             raw={
                 "promptId": prompt_id,
-                "status": "applied",
+                "status": "running",
                 "evidence": "running_prompt_id",
             },
         )
     )
     m2 = mb.list_messages()[0]
-    assert_true("running promotes to applied", m2.get("status") == "applied", str(m2))
+    assert_true("queued promotes to running", m2.get("status") == "running", str(m2))
     assert_true(
         "running evidence",
         m2.get("backend_ack") == "running_prompt_id",
         str(m2.get("backend_ack")),
     )
 
-    # 3) prompt_complete upgrades evidence; does not demote
+    # 3) successful prompt completion is explicit and terminal
     sup._handle_event(
         AdapterEvent(
             kind="steer_ack",
-            data="applied:prompt_complete",
+            data="completed:prompt_complete",
             raw={
                 "promptId": prompt_id,
-                "status": "applied",
+                "status": "completed",
                 "evidence": "prompt_complete",
             },
         )
     )
     m3 = mb.list_messages()[0]
-    assert_true("still applied after complete", m3.get("status") == "applied", str(m3))
+    assert_true("running promotes to completed", m3.get("status") == "completed", str(m3))
     assert_true(
         "evidence upgraded to prompt_complete",
         m3.get("backend_ack") == "prompt_complete",
@@ -1015,7 +1044,7 @@ def test_grok_late_ack_reconcile_unit(tmp: Path) -> None:
         )
     )
     m4 = mb.list_messages()[0]
-    assert_true("no demotion from applied", m4.get("status") == "applied", str(m4))
+    assert_true("no demotion from completed", m4.get("status") == "completed", str(m4))
     assert_true(
         "evidence not demoted",
         m4.get("backend_ack") == "prompt_complete",
@@ -1025,14 +1054,77 @@ def test_grok_late_ack_reconcile_unit(tmp: Path) -> None:
     st = reg.load_state(run_id)
     s = (st.get("steers") or {}).get("steer_late_ack_client") or {}
     assert_true(
-        "state steers applied",
-        s.get("status") == "applied" and s.get("evidence") == "prompt_complete",
+        "state steers completed",
+        s.get("status") == "completed" and s.get("evidence") == "prompt_complete",
         str(s),
+    )
+
+    # A later sendNow signal is a valid refinement of a generic cancellation.
+    refine_pid = "late-refine-prompt-uuid-0002"
+    refine = mb.enqueue(
+        kind="steer",
+        content="replacement",
+        mode="interrupt",
+        client_id="steer_refine_client",
+        meta={"promptId": refine_pid},
+    )
+    mb.update_message(
+        refine["seq"],
+        status="cancelled",
+        delivery_class="cancel_and_send",
+        backend_ack="prompt_result_cancelled",
+    )
+    sup._handle_event(
+        AdapterEvent(
+            kind="steer_ack",
+            data="superseded:prompt_complete_superseded",
+            raw={
+                "promptId": refine_pid,
+                "status": "superseded",
+                "evidence": "prompt_complete_superseded",
+                "raw": {
+                    "cancelTrigger": "send_now",
+                    "supersededByPromptId": "successor-pid",
+                },
+            },
+        )
+    )
+    refined = next(m for m in mb.list_messages() if m.get("seq") == refine["seq"])
+    assert_true(
+        "cancelled refines to superseded with successor",
+        refined.get("status") == "superseded"
+        and (refined.get("meta") or {}).get("supersededByPromptId") == "successor-pid",
+        str(refined),
+    )
+
+    abandoned_pid = "late-abandoned-prompt-uuid-0003"
+    abandoned = mb.enqueue(
+        kind="steer",
+        content="never terminal",
+        mode="queue",
+        client_id="steer_abandoned_client",
+        meta={"promptId": abandoned_pid},
+    )
+    mb.update_message(
+        abandoned["seq"],
+        status="running",
+        delivery_class="queue_next_turn",
+        backend_ack="running_prompt_id",
+    )
+    sup._abandon_nonterminal_steers("run_completed")
+    abandoned_msg = next(
+        m for m in mb.list_messages() if m.get("seq") == abandoned["seq"]
+    )
+    assert_true(
+        "run end terminalizes lifecycle-open steer",
+        abandoned_msg.get("status") == "abandoned"
+        and abandoned_msg.get("backend_ack") == "run_ended_before_steer_terminal",
+        str(abandoned_msg),
     )
 
 
 def test_grok_late_ack_e2e(tmp: Path) -> None:
-    """Fake delays applied confirmation past steer() wait → async reconcile to applied."""
+    """Fake delays start past steer() wait → async queued/running/completed reconcile."""
     print("=== e2e: grok late ack after queued ===")
     reg_root = tmp / "reg-glate"
     art = tmp / "art-glate"
@@ -1056,7 +1148,7 @@ def test_grok_late_ack_e2e(tmp: Path) -> None:
 
     # Shortly after delivery attempt, may still be queued / request_sent
     saw_queued = False
-    saw_applied = False
+    saw_started = False
     deadline = time.time() + 45
     while time.time() < deadline:
         st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
@@ -1065,11 +1157,11 @@ def test_grok_late_ack_e2e(tmp: Path) -> None:
             ms = s.get("mailbox_status")
             if ms in ("queued", "request_sent"):
                 saw_queued = True
-            if ms == "applied":
-                saw_applied = True
-        if saw_applied and st.get("status") in ("completed", "failed", "cancelled"):
+            if ms in ("running", "completed"):
+                saw_started = True
+        if saw_started and st.get("status") in ("completed", "failed", "cancelled"):
             break
-        if proc.poll() is not None and saw_applied:
+        if proc.poll() is not None and saw_started:
             break
         time.sleep(0.3)
 
@@ -1077,14 +1169,14 @@ def test_grok_late_ack_e2e(tmp: Path) -> None:
     assert_true("late-ack exit 0", code == 0, err[-400:])
     st_final = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
     final_steers = st_final.get("steers") or []
-    applied = [s for s in final_steers if s.get("mailbox_status") == "applied"]
+    completed = [s for s in final_steers if s.get("mailbox_status") == "completed"]
     assert_true(
-        "late ack ends applied",
-        len(applied) >= 1,
+        "late ack ends completed",
+        len(completed) >= 1,
         str(final_steers),
     )
     assert_true(
-        "applied has matching evidence",
+        "completed has matching evidence",
         any(
             s.get("backend_ack")
             in (
@@ -1093,9 +1185,9 @@ def test_grok_late_ack_e2e(tmp: Path) -> None:
                 "running_prompt_id",
                 "promptId_notification_meta",
             )
-            for s in applied
+            for s in completed
         ),
-        str(applied),
+        str(completed),
     )
     # Thought marker must not appear in stdout / final
     assert_true(
@@ -1117,9 +1209,205 @@ def test_grok_late_ack_e2e(tmp: Path) -> None:
     assert_true("final has agent message", "STEERED" in body or "G" in body or "OK" in body, body[:300])
     # Optional: we observed intermediate queued (best-effort; timing dependent)
     if saw_queued:
-        ok("observed intermediate queued before applied")
+        ok("observed intermediate queued before completion")
     else:
         ok("skipped intermediate queued observation (timing)")
+
+
+def test_grok_cancelled_and_dropped_outcomes_unit(tmp: Path) -> None:
+    """Cancelled turns and never-ran prompts must never be reported as applied."""
+    print("=== unit: grok cancelled/dropped outcomes ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.grok import GrokAdapter  # type: ignore
+
+    art = tmp / "art-grok-outcomes"
+    (art / "raw").mkdir(parents=True)
+    adapter = GrokAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="grok",
+    )
+
+    never_ran = "pid-never-ran"
+    status, evidence = adapter._terminal_outcome(
+        never_ran, stop_reason="Cancelled", source="prompt_result"
+    )
+    assert_true(
+        "cancelled result waits for authoritative queue reconciliation",
+        status == "awaiting_queue_resolution"
+        and evidence == "prompt_result_cancelled_unresolved",
+        f"{status}:{evidence}",
+    )
+
+    running = "pid-running-cancelled"
+    adapter._on_queue_changed({"runningPromptId": running, "entries": []})
+    adapter._on_prompt_complete({"promptId": running, "stopReason": "cancelled"})
+    events = list(adapter.poll_events())
+    acks = [e.raw for e in events if e.kind == "steer_ack" and isinstance(e.raw, dict)]
+    assert_true(
+        "running then cancelled is not applied",
+        any(a.get("status") == "cancelled" for a in acks)
+        and not any(a.get("status") == "applied" for a in acks),
+        str(acks),
+    )
+
+    failed = "pid-rate-limit"
+    status, evidence = adapter._terminal_outcome(
+        failed, stop_reason="rate_limit", source="prompt_complete"
+    )
+    assert_true(
+        "rate-limit completion is failed",
+        status == "failed" and evidence == "prompt_complete_rate_limit",
+        f"{status}:{evidence}",
+    )
+    status, evidence = adapter._terminal_outcome(
+        failed, stop_reason="max_tokens", source="prompt_complete"
+    )
+    assert_true(
+        "max-tokens completion is incomplete",
+        status == "incomplete" and evidence == "prompt_complete_max_tokens",
+        f"{status}:{evidence}",
+    )
+    status, evidence = adapter._terminal_outcome(
+        failed, stop_reason="refusal", source="prompt_complete"
+    )
+    assert_true(
+        "refusal is rejected",
+        status == "rejected" and evidence == "prompt_complete_refusal",
+        f"{status}:{evidence}",
+    )
+
+    status, evidence = adapter._terminal_outcome(
+        running,
+        stop_reason="cancelled",
+        source="prompt_complete",
+        cancel_trigger="send_now",
+    )
+    assert_true(
+        "send-now cancellation is superseded",
+        status == "superseded" and evidence == "prompt_complete_superseded",
+        f"{status}:{evidence}",
+    )
+
+    # Regression: steer() used to call poll_events() internally and silently
+    # consume another prompt's cancellation before the supervisor saw it.
+    from steer.adapters.base import AdapterEvent  # type: ignore
+
+    adapter.rpc = object()  # readiness sentinel; _send_prompt is stubbed below
+    adapter.session_id = "s"
+    adapter._send_prompt = lambda *args, **kwargs: None  # type: ignore[method-assign]
+    adapter._observed_for = lambda prompt_id: ("running", "running_prompt_id")  # type: ignore[method-assign]
+    preserved = AdapterEvent(
+        kind="steer_ack",
+        data="superseded:prompt_complete_superseded",
+        raw={"promptId": running, "status": "superseded"},
+    )
+    adapter._events.put(preserved)
+    result = adapter.steer("new guidance", "interrupt", "new-client")
+    assert_true("new steer observes running", result.status == "running", result.status)
+    successor = result.meta.get("promptId")
+    assert_true(
+        "sendNow records interrupted-to-successor linkage",
+        adapter._superseded_by.get(running) == successor,
+        str(adapter._superseded_by),
+    )
+    still_queued = adapter._events.get_nowait()
+    assert_true(
+        "steer does not consume another prompt event",
+        still_queued is preserved,
+        str(still_queued),
+    )
+
+    merged_adapter = GrokAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="grok",
+    )
+    front, follower = "pid-front", "pid-follower"
+    merged_adapter._prompt_content.update({front: "front text", follower: "follower text"})
+    merged_adapter._prompt_queue_confirmed.add(follower)
+    # Grok resolves a combined follower's RPC as Cancelled before broadcasting
+    # the front's runningCombinedTexts. Pin that real ordering.
+    merged_adapter._prompt_result[follower] = {"stopReason": "cancelled"}
+    merged_adapter._prompt_cancelled_pending[follower] = 0
+    merged_adapter._on_queue_changed(
+        {
+            "entries": [],
+            "runningPromptId": front,
+            "runningCombinedTexts": ["front text", "follower text"],
+        }
+    )
+    merged_adapter._on_prompt_complete({"promptId": front, "stopReason": "end_turn"})
+    merged_acks = [
+        e.raw
+        for e in merged_adapter.poll_events()
+        if e.kind == "steer_ack" and isinstance(e.raw, dict) and e.raw.get("promptId") == follower
+    ]
+    assert_true(
+        "combined follower is linked then completed with front",
+        [a.get("status") for a in merged_acks] == ["merged", "completed"],
+        str(merged_acks),
+    )
+
+
+def test_grok_dropped_prompt_e2e(tmp: Path) -> None:
+    """Real-ish RemovedFromQueue result is terminal dropped, never applied."""
+    print("=== e2e: grok never-ran prompt is dropped ===")
+    reg_root = tmp / "reg-grok-drop"
+    art = tmp / "art-grok-drop"
+    art.mkdir(parents=True)
+    reg_root.mkdir(parents=True)
+    cwd = tmp / "cwd-grok-drop"
+    cwd.mkdir()
+    env = env_base(reg_root, art)
+    env["CONSILIUM_FAKE_STEER_SLOW"] = "1.0"
+    env["CONSILIUM_FAKE_GROK_DROP_STEERS"] = "1"
+    proc, run_id, _ = start_steerable("grok", "LONG INITIAL TASK", env, cwd)
+    time.sleep(0.15)
+    r = run_cmd(
+        [
+            str(CONSILIUM),
+            "delegate",
+            "steer",
+            run_id,
+            "--mode",
+            "queue",
+            "DROP_WITHOUT_RUNNING",
+        ],
+        env,
+        timeout=15,
+    )
+    assert_true("drop steer enqueued", r.returncode == 0, r.stderr)
+    code, out, err = wait_proc(proc, timeout=45)
+    assert_true("drop run exits cleanly", code == 0, err[-400:])
+    st = json.loads(
+        run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout
+    )
+    steers = st.get("steers") or []
+    assert_true(
+        "never-ran prompt ends dropped",
+        any(
+            s.get("mailbox_status") == "dropped"
+            and s.get("backend_ack")
+            in {
+                "queue_reconciled_cancelled_never_ran",
+                "run_finished_cancelled_never_ran",
+            }
+            for s in steers
+        ),
+        str(steers),
+    )
+    assert_true(
+        "never-ran prompt is never applied",
+        not any(s.get("mailbox_status") == "applied" for s in steers),
+        str(steers),
+    )
 
 
 def test_grok_thought_not_in_stdout_e2e(tmp: Path) -> None:
@@ -1708,8 +1996,10 @@ def main() -> int:
         test_grok_queue_and_send_now(tmp)
         test_grok_ack_not_delivered_on_write(tmp)
         test_grok_message_type_filter_unit(tmp)
+        test_grok_cancelled_and_dropped_outcomes_unit(tmp)
         test_grok_late_ack_reconcile_unit(tmp)
         test_grok_late_ack_e2e(tmp)
+        test_grok_dropped_prompt_e2e(tmp)
         test_grok_thought_not_in_stdout_e2e(tmp)
         test_cancel(tmp)
         test_duplicate_idempotency(tmp)
