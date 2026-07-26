@@ -168,6 +168,7 @@ unless persistence in private raw/audit artifacts is intentional.
 - **Mailbox `accepted` ≠ protocol delivery, execution, or compliance.** `status` shows `delivery_class` and backend evidence separately.
 - Protocol lifecycle is backend-specific. Never reinterpret `request_sent`, `queued`, or `running` as proof that guidance changed files or the final answer. `completed` proves prompt lifecycle completion, not semantic compliance.
 - Registry root: `CONSILIUM_STEER_DIR` (default under user cache). Permissions: registry/run dirs `0700`, state files `0600`. Symlink run dirs are rejected.
+- An active supervisor periodically validates its registry independently of model output. If its own run metadata is deleted or malformed, it safely rebuilds the private run structure, emits `registry_recovered`, and keeps the harness running. Unsafe symlink/ownership failures remain degraded instead of being overwritten; they cannot suppress the model's final stdout, and final artifacts are attempted before service-state finalization.
 - **Steerable always keeps a service registry + protocol artifacts** (mailbox, audit, raw/normalized/final under the private registry run or the configured `CONSILIUM_RUN_DIR`) for observability — even when `CONSILIUM_SAVE_OUTPUTS=0` disables ordinary review/delegate archival. With `SAVE_OUTPUTS=0`, protocol artifacts never land in the project cwd; `meta.artifacts_dir` records the private 0700 path. Registry is independent of output archival.
 - Client ids are never used as path components (SHA-256 safe names); original `client_id` is stored in JSON. Idempotent retry requires the same content hash, mode, and kind; otherwise conflict is rejected.
 - Terminal transition serializes with enqueue: remaining open mailbox messages are failed with an explicit reason; no accepted/delivering message is left without a terminal outcome.
@@ -206,6 +207,7 @@ Consilium is unlimited by default:
 - no wrapper timeout (`AGENT_TIMEOUT=0`);
 - no `max-turns`, step, token, response-length, or budget flags;
 - prompts travel over stdin or a temporary prompt file, never as large argv values;
+- delegate reads file/stdin/`/dev/stdin` task sources exactly once into a private temporary file, so pseudo-files and non-seekable streams work in both one-shot and steerable modes;
 - raw, normalized, and final artifacts are not truncated;
 - final text is streamed to disk rather than buffered as one in-memory response.
 

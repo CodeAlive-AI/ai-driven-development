@@ -1,6 +1,7 @@
 """Atomic filesystem registry for steerable runs."""
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -144,13 +145,23 @@ class Registry:
     def load_meta(self, run_id: str) -> Dict[str, Any]:
         rdir = self.run_path(run_id)
         self._assert_run_dir_safe(run_id, rdir)
-        meta = read_json(rdir / "meta.json")
+        try:
+            meta = read_json(rdir / "meta.json")
+        except (OSError, json.JSONDecodeError) as e:
+            raise RegistryError(
+                f"corrupt meta for run: {run_id}: {e}", exit_code=1
+            ) from e
         if not isinstance(meta, dict):
             raise RegistryError(f"corrupt meta for run: {run_id}", exit_code=1)
         # Mandatory owner_uid field
         if "owner_uid" not in meta or meta.get("owner_uid") is None:
             raise RegistryError(f"meta missing owner_uid for run: {run_id}", exit_code=5)
-        owner = int(meta["owner_uid"])
+        try:
+            owner = int(meta["owner_uid"])
+        except (TypeError, ValueError) as e:
+            raise RegistryError(
+                f"invalid owner_uid in meta for run: {run_id}", exit_code=5
+            ) from e
         if owner != os.getuid():
             raise RegistryError(f"run owned by different uid: {run_id}", exit_code=5)
         # Cross-check directory owner
@@ -173,10 +184,70 @@ class Registry:
         atomic_write_json(rdir / "meta.json", meta)
         return meta
 
+    def recover_run(
+        self,
+        run_id: str,
+        *,
+        meta: Dict[str, Any],
+        state: Optional[Dict[str, Any]] = None,
+        reason: str = "registry_unavailable",
+    ) -> Dict[str, Any]:
+        """Rebuild supervisor-owned state lost while its process is still alive.
+
+        The caller must supply its in-memory run identity. Unsafe existing run
+        directories (symlink or different owner) are never repaired.
+        """
+        self.ensure_root()
+        rdir = self.run_path(run_id)
+        if rdir.exists() or rdir.is_symlink():
+            self._assert_run_dir_safe(run_id, rdir)
+        else:
+            ensure_dir(rdir, DIR_MODE)
+            self._assert_run_dir_safe(run_id, rdir)
+        for sub in ("mailbox", "control", "steers", "turns"):
+            ensure_dir(rdir / sub, DIR_MODE)
+
+        recovered = dict(meta)
+        recovered.update(
+            {
+                "run_id": run_id,
+                "owner_uid": os.getuid(),
+                "recovered_at": utc_now_iso(),
+                "recovery_reason": reason,
+                "updated_at": utc_now_iso(),
+            }
+        )
+        recovered["recovery_count"] = int(recovered.get("recovery_count") or 0) + 1
+        recovered.setdefault("version", 1)
+
+        recovered_state = dict(state or {})
+        recovered_state.update(
+            {
+                "run_id": run_id,
+                "status": recovered.get("status", "running"),
+                "registry_recovered": True,
+                "updated_at": utc_now_iso(),
+            }
+        )
+        recovered_state.setdefault("active_turn", None)
+        recovered_state.setdefault("steers", {})
+
+        # Serialize recovery with steer enqueue / terminal transition. The lock
+        # lives in the rebuilt control dir and therefore survives all writes.
+        with flock_exclusive(rdir / "control" / "run.lock"):
+            atomic_write_json(rdir / "meta.json", recovered)
+            atomic_write_json(rdir / "state.json", recovered_state)
+        return recovered
+
     def load_state(self, run_id: str) -> Dict[str, Any]:
         rdir = self.run_path(run_id)
         self._assert_run_dir_safe(run_id, rdir)
-        state = read_json(rdir / "state.json", default={})
+        try:
+            state = read_json(rdir / "state.json", default={})
+        except (OSError, json.JSONDecodeError) as e:
+            raise RegistryError(
+                f"corrupt state for run: {run_id}: {e}", exit_code=1
+            ) from e
         if not isinstance(state, dict):
             raise RegistryError(f"corrupt state for run: {run_id}", exit_code=1)
         return state

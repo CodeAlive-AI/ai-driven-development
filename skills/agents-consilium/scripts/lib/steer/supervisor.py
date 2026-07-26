@@ -90,6 +90,8 @@ _EVIDENCE_RANK = {
     "prompt_complete_refusal": 9,
 }
 
+_REGISTRY_HEARTBEAT_SECONDS = 2.0
+
 
 class Supervisor:
     def __init__(
@@ -113,6 +115,13 @@ class Supervisor:
         self._processed: Set[int] = set()
         self._shutting_down = False
         self._terminal = False
+        self._registry_meta: Dict[str, Any] = {}
+        self._registry_state: Dict[str, Any] = {
+            "status": "starting",
+            "active_turn": None,
+            "steers": {},
+        }
+        self._registry_recoveries = 0
 
     def run(self) -> int:
         agent, backend, model, binary = agent_settings(self.agent_id)
@@ -131,6 +140,7 @@ class Supervisor:
             artifacts_dir=self.artifacts_dir,
             extra={"task_hash_prefix": _prefix_hash(self.task), "effort": effort},
         )
+        self._registry_meta = self.registry.load_meta(self.run_id)
         progress("steer", f"run_id={self.run_id}", f"agent={self.agent_id}", f"backend={backend}")
         # Also print bare run_id line for easy capture
         sys.stderr.write(f"run_id={self.run_id}\n")
@@ -145,21 +155,20 @@ class Supervisor:
             private = run_dir / "artifacts"
             ensure_dir(private, DIR_MODE)
             self.artifacts_dir = str(private)
-            self.registry.update_meta(self.run_id, artifacts_dir=self.artifacts_dir)
+            self._update_registry_meta(artifacts_dir=self.artifacts_dir)
 
         # Ensure artifact dirs (protocol artifacts always on for steerable observability)
         for sub in ("raw", "normalized", "final", "turns", "control"):
             ensure_dir(Path(self.artifacts_dir) / sub, DIR_MODE)
         secure_touch(run_dir / "audit.jsonl")
 
-        self.registry.update_meta(
-            self.run_id,
+        self._update_registry_meta(
             status="running",
             pid=os.getpid(),
             backend_binary=binary,
             artifacts_dir=self.artifacts_dir,
         )
-        self.registry.update_state(self.run_id, status="running")
+        self._update_registry_state(status="running")
 
         def _handle_sig(signum, frame):
             self._shutting_down = True
@@ -181,7 +190,7 @@ class Supervisor:
             self.adapter.start(self.task)
             child = self.adapter.child_pid()
             if child:
-                self.registry.update_meta(self.run_id, child_pid=child)
+                self._update_registry_meta(child_pid=child)
             progress("steer", f"run_id={self.run_id}", "adapter_started")
             return self._loop()
         except Exception as e:
@@ -203,6 +212,7 @@ class Supervisor:
     def _loop(self) -> int:
         assert self.adapter and self.mailbox and self.run_id
         last_progress = time.time()
+        last_registry_heartbeat = time.time()
         while not self._shutting_down:
             # Control cancel file
             if self.registry.cancel_requested(self.run_id):
@@ -238,11 +248,18 @@ class Supervisor:
                 self._finalize(status=status, exit_code=code, final_text=text)
                 return code
 
-            # Heartbeat
+            # Registry health is independent of model output. A busy streaming
+            # agent may emit events continuously, so do not tie recovery to the
+            # idle-progress heartbeat below.
+            now = time.time()
+            if now - last_registry_heartbeat > _REGISTRY_HEARTBEAT_SECONDS:
+                self._update_registry_meta()
+                last_registry_heartbeat = now
+
+            # Human-visible idle heartbeat.
             if time.time() - last_progress > 15:
                 progress("steer", f"run_id={self.run_id}", "alive")
                 last_progress = time.time()
-                self.registry.update_meta(self.run_id)  # touch updated_at
 
             time.sleep(0.05)
 
@@ -414,7 +431,7 @@ class Supervisor:
         except MailboxError:
             return
         # Mirror into state.steers
-        state = self.registry.load_state(self.run_id)
+        state = dict(self._registry_state)
         steers = dict(state.get("steers") or {})
         prev = dict(steers.get(client_id) or {})
         prev.update(
@@ -431,7 +448,7 @@ class Supervisor:
             }
         )
         steers[client_id] = prev
-        self.registry.update_state(self.run_id, steers=steers)
+        self._update_registry_state(steers=steers)
         append_jsonl(
             self.registry.run_path(self.run_id) / "audit.jsonl",
             {
@@ -558,7 +575,7 @@ class Supervisor:
             meta={**(msg.get("meta") or {}), **(result.meta or {})},
         )
         # Update state steers map
-        state = self.registry.load_state(self.run_id)
+        state = dict(self._registry_state)
         steers = dict(state.get("steers") or {})
         steers[client_id] = {
             "seq": seq,
@@ -568,7 +585,7 @@ class Supervisor:
             "error": result.error,
             "updated_at": utc_now_iso(),
         }
-        self.registry.update_state(self.run_id, steers=steers)
+        self._update_registry_state(steers=steers)
         append_jsonl(
             self.registry.run_path(self.run_id) / "audit.jsonl",
             {
@@ -603,6 +620,7 @@ class Supervisor:
             return
         if self._terminal:
             return
+        self._terminal = True
         text = final_text
         if not text and self.adapter:
             try:
@@ -610,49 +628,103 @@ class Supervisor:
             except Exception:
                 text = ""
 
-        run_dir = self.registry.run_path(self.run_id)
+        run_dir: Optional[Path] = None
+        registry_path_safe = True
+        try:
+            run_dir = self.registry.run_path(self.run_id)
+        except RegistryError:
+            registry_path_safe = False
+        registry_candidate = self.registry.runs_dir / self.run_id
+
+        # The answer is the primary product of delegate mode. Persist it before
+        # touching service metadata so registry loss cannot discard completed
+        # model work. Each destination is best-effort and independent.
+        artifact_errors = []
+        for path in (
+            Path(self.artifacts_dir) / "final" / f"{self.agent_id}.txt",
+            Path(self.artifacts_dir) / "final.txt",
+        ):
+            # If the registry run dir itself became an unsafe symlink, do not
+            # follow an artifacts path that was originally nested under it.
+            if not registry_path_safe and (
+                path == registry_candidate or registry_candidate in path.parents
+            ):
+                artifact_errors.append(f"{path}: unsafe registry path")
+                continue
+            try:
+                atomic_write_text(path, text)
+            except Exception as e:
+                artifact_errors.append(f"{path}: {e}")
+
+        registry_ok = self._ensure_registry("finalize")
+        if registry_ok:
+            run_dir = self.registry.run_path(self.run_id)
+            assert run_dir is not None
         # Atomic terminal transition under run-level lock:
         # 1) close mailbox acceptance
         # 2) fail any open messages without outcome
         # 3) mark meta terminal
         reason = f"run_{status}"
-        with self.registry.with_run_lock(self.run_id):
-            self._terminal = True
-            if self.mailbox:
-                self.mailbox.close(reason=reason)
-                self._abandon_nonterminal_steers(reason)
-                # Defensive fallback for malformed/open records that were not
-                # recognized as lifecycle steers above.
-                failed = self.mailbox.fail_open_messages(
-                    f"run became terminal ({status}) before delivery completed"
-                )
-                if failed:
-                    append_jsonl(
-                        run_dir / "audit.jsonl",
-                        {
-                            "ts": utc_now_iso(),
-                            "event": "open_messages_failed_on_terminal",
-                            "count": len(failed),
-                            "reason": reason,
-                            "seqs": [m.get("seq") for m in failed],
-                        },
-                    )
-            self.registry.update_meta(
-                self.run_id,
-                status=status,
-                exit_code=exit_code,
-                error=error or None,
-                finished_at=utc_now_iso(),
+        if registry_ok:
+            try:
+                with self.registry.with_run_lock(self.run_id):
+                    if self.mailbox:
+                        try:
+                            self.mailbox.close(reason=reason)
+                            self._abandon_nonterminal_steers(reason)
+                            # Defensive fallback for malformed/open records that were not
+                            # recognized as lifecycle steers above.
+                            failed = self.mailbox.fail_open_messages(
+                                f"run became terminal ({status}) before delivery completed"
+                            )
+                            if failed:
+                                append_jsonl(
+                                    run_dir / "audit.jsonl",
+                                    {
+                                        "ts": utc_now_iso(),
+                                        "event": "open_messages_failed_on_terminal",
+                                        "count": len(failed),
+                                        "reason": reason,
+                                        "seqs": [m.get("seq") for m in failed],
+                                    },
+                                )
+                        except Exception as e:
+                            self._registry_notice("mailbox_finalize_failed", str(e))
+                    if not self._update_registry_meta(
+                        status=status,
+                        exit_code=exit_code,
+                        error=error or None,
+                        finished_at=utc_now_iso(),
+                        recover=False,
+                    ):
+                        registry_ok = False
+                    if not self._update_registry_state(status=status, recover=False):
+                        registry_ok = False
+            except Exception as e:
+                registry_ok = False
+                self._registry_notice("terminal_registry_failed", str(e))
+
+        if registry_ok:
+            try:
+                atomic_write_text(run_dir / "final.txt", text)
+            except Exception as e:
+                self._registry_notice("registry_final_write_failed", str(e))
+                registry_ok = False
+
+        if artifact_errors:
+            progress(
+                "steer",
+                f"run_id={self.run_id}",
+                "final_artifact_warning=" + preview_text("; ".join(artifact_errors), 160),
             )
-            self.registry.update_state(self.run_id, status=status)
 
-        # Artifacts (full text, never truncated)
-        final_path = Path(self.artifacts_dir) / "final" / f"{self.agent_id}.txt"
-        atomic_write_text(final_path, text)
-        atomic_write_text(Path(self.artifacts_dir) / "final.txt", text)
-        atomic_write_text(run_dir / "final.txt", text)
-
-        progress("done", f"run_id={self.run_id}", f"status={status}", f"exit={exit_code}")
+        progress(
+            "done",
+            f"run_id={self.run_id}",
+            f"status={status}",
+            f"exit={exit_code}",
+            f"registry={'ok' if registry_ok else 'degraded'}",
+        )
         # Clean final answer on stdout only
         if text:
             sys.stdout.write(text)
@@ -660,10 +732,118 @@ class Supervisor:
                 sys.stdout.write("\n")
             sys.stdout.flush()
 
+    def _ensure_registry(self, operation: str) -> bool:
+        """Keep a live delegate running when its service registry disappears."""
+        assert self.run_id
+        try:
+            current = self.registry.load_meta(self.run_id)
+            self._registry_meta = current
+            return True
+        except (RegistryError, OSError) as e:
+            reason = f"{operation}: {e}"
+        try:
+            seed = dict(self._registry_meta)
+            seed.update(
+                {
+                    "status": "running",
+                    "pid": os.getpid(),
+                    "artifacts_dir": self.artifacts_dir,
+                }
+            )
+            recovered = self.registry.recover_run(
+                self.run_id,
+                meta=seed,
+                state=self._registry_state,
+                reason=reason,
+            )
+            self._registry_meta = recovered
+            self._registry_recoveries += 1
+            self.mailbox = Mailbox(self.registry.run_path(self.run_id))
+            self._registry_notice("registry_recovered", reason)
+            progress(
+                "steer",
+                f"run_id={self.run_id}",
+                "registry_recovered",
+                f"operation={operation}",
+            )
+            return True
+        except Exception as recovery_error:
+            self._registry_notice(
+                "registry_degraded",
+                f"{reason}; recovery failed: {recovery_error}",
+            )
+            progress(
+                "steer",
+                f"run_id={self.run_id}",
+                "registry_degraded",
+                f"operation={operation}",
+                preview_text(str(recovery_error), 120),
+            )
+            return False
+
+    def _update_registry_meta(self, recover: bool = True, **fields: Any) -> bool:
+        assert self.run_id
+        try:
+            updated = self.registry.update_meta(self.run_id, **fields)
+            self._registry_meta = updated
+            return True
+        except (RegistryError, OSError):
+            if not recover or not self._ensure_registry("update_meta"):
+                return False
+        try:
+            updated = self.registry.update_meta(self.run_id, **fields)
+            self._registry_meta = updated
+            return True
+        except (RegistryError, OSError) as e:
+            self._registry_notice("registry_meta_update_failed", str(e))
+            return False
+
+    def _update_registry_state(self, recover: bool = True, **fields: Any) -> bool:
+        assert self.run_id
+        self._registry_state.update(fields)
+        try:
+            self._registry_state = self.registry.update_state(self.run_id, **fields)
+            return True
+        except (RegistryError, OSError):
+            if not recover or not self._ensure_registry("update_state"):
+                return False
+        try:
+            self._registry_state = self.registry.update_state(self.run_id, **fields)
+            return True
+        except (RegistryError, OSError) as e:
+            self._registry_notice("registry_state_update_failed", str(e))
+            return False
+
+    def _registry_notice(self, event: str, detail: str) -> None:
+        """Best-effort diagnostics outside and inside the registry tree."""
+        record = {
+            "ts": utc_now_iso(),
+            "event": event,
+            "detail": detail,
+        }
+        paths = []
+        if self.artifacts_dir:
+            paths.append(Path(self.artifacts_dir) / "audit.jsonl")
+        if self.run_id:
+            try:
+                paths.append(self.registry.run_path(self.run_id) / "audit.jsonl")
+            except RegistryError:
+                pass
+        seen = set()
+        for path in paths:
+            key = str(path)
+            if key in seen:
+                continue
+            seen.add(key)
+            try:
+                append_jsonl(path, record)
+            except Exception:
+                pass
+
     def _abandon_nonterminal_steers(self, reason: str) -> None:
         """Close lifecycle states that cannot advance after run termination."""
         assert self.mailbox and self.run_id
-        state = self.registry.load_state(self.run_id)
+        state = dict(self._registry_state)
         steers = dict(state.get("steers") or {})
         changed = False
         for msg in self.mailbox.list_messages(after_seq=0):
@@ -698,7 +878,7 @@ class Supervisor:
             steers[client_id] = prev
             changed = True
         if changed:
-            self.registry.update_state(self.run_id, steers=steers)
+            self._update_registry_state(steers=steers, recover=False)
 
     def _cleanup_adapter(self) -> None:
         if not self.adapter:

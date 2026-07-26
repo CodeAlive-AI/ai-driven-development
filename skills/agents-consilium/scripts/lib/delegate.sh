@@ -96,15 +96,28 @@ if [[ -z "$AGENT_ID" ]]; then
     exit $EXIT_USAGE
 fi
 
+# Normalize every task source into one private temp file exactly once. This
+# supports regular files, FIFOs, and pseudo-files such as /dev/stdin without a
+# second read/cp (macOS fcopyfile rejects copying /dev/fd-backed stdin). It also
+# preserves trailing newlines and keeps large bodies out of argv and env.
+_del_prompt_tmp="$(mktemp "${TMPDIR:-/tmp}/consilium-delegate-task.XXXXXX")"
+chmod 600 "$_del_prompt_tmp"
+cleanup_delegate_prompt() { rm -f "$_del_prompt_tmp"; }
+trap cleanup_delegate_prompt EXIT
+
 if [[ -n "$PROMPT_FILE" ]]; then
-    [[ -f "$PROMPT_FILE" ]] || { echo "Error: prompt file not found: $PROMPT_FILE" >&2; exit $EXIT_USAGE; }
-    PROMPT="$(cat "$PROMPT_FILE")"
+    [[ -r "$PROMPT_FILE" ]] || { echo "Error: prompt source not readable: $PROMPT_FILE" >&2; exit $EXIT_USAGE; }
+    if ! cat -- "$PROMPT_FILE" > "$_del_prompt_tmp"; then
+        echo "Error: failed to read prompt source: $PROMPT_FILE" >&2
+        exit $EXIT_USAGE
+    fi
+elif [[ -n "$PROMPT" ]]; then
+    printf '%s' "$PROMPT" > "$_del_prompt_tmp"
+elif [[ ! -t 0 ]]; then
+    cat > "$_del_prompt_tmp"
 fi
 
-if [[ -z "$PROMPT" && ! -t 0 ]]; then
-    PROMPT="$(cat)"
-fi
-if [[ -z "$PROMPT" ]]; then
+if [[ ! -s "$_del_prompt_tmp" ]]; then
     echo "Error: no task prompt provided" >&2
     exit $EXIT_USAGE
 fi
@@ -134,15 +147,7 @@ progress_stage "delegate" "agent=$AGENT_ID cwd=$(pwd)${STEERABLE:+ steerable=1}"
 export CONSILIUM_RAW_PROMPT=1
 
 if [[ "$STEERABLE" -eq 1 ]]; then
-    # Large prompts via file only (never argv)
-    _del_prompt_tmp="$(mktemp "${TMPDIR:-/tmp}/consilium-steer-task.XXXXXX")"
-    cleanup_delegate_prompt() { rm -f "$_del_prompt_tmp"; }
-    trap cleanup_delegate_prompt EXIT
-    if [[ -n "$PROMPT_FILE" ]]; then
-        cp "$PROMPT_FILE" "$_del_prompt_tmp"
-    else
-        printf '%s' "$PROMPT" > "$_del_prompt_tmp"
-    fi
+    # Large prompts reach the supervisor through the normalized file only.
     # Protocol artifacts: use CONSILIUM_RUN_DIR only when ordinary archival is on.
     # With CONSILIUM_SAVE_OUTPUTS=0, artifacts_init_run clears RUN_DIR — never fall
     # back to project cwd (".") because that would write ./raw ./final.txt into the
@@ -167,19 +172,7 @@ if [[ "$STEERABLE" -eq 1 ]]; then
     exit $?
 fi
 
-# Prefer --prompt-file so backend_run does not treat file content as a
-# positional prompt (avoids misleading shell-interpolation warnings).
-# Positional / stdin prompts are normalized to a temporary prompt file so the
-# large body is never passed a second time via backend_run argv (ARG_MAX).
-if [[ -n "$PROMPT_FILE" ]]; then
-    exec "$LIB_DIR/backend_run.sh" --mode delegate --agent-id "$AGENT_ID" --raw --prompt-file "$PROMPT_FILE"
-else
-    _del_prompt_tmp="$(mktemp "${TMPDIR:-/tmp}/consilium-delegate-prompt.XXXXXX")"
-    # Remove the temp file after backend_run exits (or on interrupt). Do not
-    # exec-replace so the trap can clean up and we never leak the file.
-    cleanup_delegate_prompt() { rm -f "$_del_prompt_tmp"; }
-    trap cleanup_delegate_prompt EXIT
-    printf '%s' "$PROMPT" > "$_del_prompt_tmp"
-    "$LIB_DIR/backend_run.sh" --mode delegate --agent-id "$AGENT_ID" --raw --prompt-file "$_del_prompt_tmp"
-    exit $?
-fi
+# Always use the normalized file so backend_run never re-reads /dev/stdin,
+# treats content as positional input, or places a large task in argv/env.
+"$LIB_DIR/backend_run.sh" --mode delegate --agent-id "$AGENT_ID" --raw --prompt-file "$_del_prompt_tmp"
+exit $?

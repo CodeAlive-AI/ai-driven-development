@@ -268,6 +268,14 @@ def test_mailbox_and_registry_unit(tmp: Path) -> None:
             bad("symlink run dir rejected", "did not raise")
         except RegistryError as e:
             assert_true("symlink message", "symlink" in str(e).lower())
+        try:
+            reg.recover_run(
+                "evil",
+                meta={"owner_uid": os.getuid(), "status": "running"},
+            )
+            bad("symlink run recovery rejected", "did not raise")
+        except RegistryError:
+            ok("symlink run recovery rejected")
     finally:
         if link.is_symlink():
             link.unlink()
@@ -768,10 +776,60 @@ def test_oneshot_regression(tmp: Path) -> None:
     env["CONSILIUM_BIN_GEMINI"] = str(TESTS_DIR / "fakes" / "fake-gemini")
     env["CONSILIUM_SUPPRESS_SHELL_WARN"] = "1"
     env["CONSILIUM_RUN_DIR"] = str(tmp / "oneshot-art")
+    oneshot_log = tmp / "oneshot-argv.jsonl"
+    env["CONSILIUM_FAKE_ARGV_LOG"] = str(oneshot_log)
     (tmp / "oneshot-art").mkdir(parents=True)
     r = run_cmd([str(CONSILIUM), "delegate", "-a", "grok", "implement one-shot"], env, timeout=30)
     assert_true("oneshot exit 0", r.returncode == 0, r.stderr)
     assert_true("oneshot stdout", "FAKE_GROK_OK" in r.stdout, r.stdout)
+
+    # /dev/stdin is a non-seekable pseudo-file. It must be consumed exactly
+    # once, not copied/re-read after the first read.
+    r = run_cmd(
+        [str(CONSILIUM), "delegate", "-a", "grok", "--prompt-file", "/dev/stdin"],
+        env,
+        timeout=30,
+        input_text="ONESHOT_FROM_DEV_STDIN\n",
+    )
+    assert_true("oneshot /dev/stdin exit 0", r.returncode == 0, r.stderr)
+    assert_true("oneshot /dev/stdin stdout", "FAKE_GROK_OK" in r.stdout, r.stdout)
+    assert_true("oneshot /dev/stdin no fcopyfile", "fcopyfile" not in r.stderr, r.stderr)
+    prompt_meta = [
+        json.loads(line)
+        for line in oneshot_log.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    assert_true(
+        "oneshot /dev/stdin body delivered",
+        any(
+            item.get("bin") == "grok-prompt-meta"
+            and item.get("prompt_startswith") == "ONESHOT_FROM_DEV_STDIN"
+            for item in prompt_meta
+        ),
+        str(prompt_meta),
+    )
+
+    steer_env = dict(env)
+    steer_env["CONSILIUM_BIN_GROK"] = str(FAKES / "fake-grok-steer")
+    steer_env["CONSILIUM_STEER_DIR"] = str(tmp / "stdin-steer-registry")
+    steer_env["CONSILIUM_RUN_DIR"] = str(tmp / "stdin-steer-artifacts")
+    r = run_cmd(
+        [
+            str(CONSILIUM),
+            "delegate",
+            "-a",
+            "grok",
+            "--steerable",
+            "--prompt-file",
+            "/dev/stdin",
+        ],
+        steer_env,
+        timeout=30,
+        input_text="STEERABLE_FROM_DEV_STDIN\n",
+    )
+    assert_true("steerable /dev/stdin exit 0", r.returncode == 0, r.stderr)
+    assert_true("steerable /dev/stdin body delivered", "STEERED(" in r.stdout, r.stdout)
+    assert_true("steerable /dev/stdin no fcopyfile", "fcopyfile" not in r.stderr, r.stderr)
 
 
 def test_claude_interrupt_rejected(tmp: Path) -> None:
@@ -2105,6 +2163,86 @@ def test_opencode_auth_e2e_password_not_in_artifacts(tmp: Path) -> None:
     assert_true("auth used (healthy)", "FAKE_OC" in out or code == 0, out[:200])
 
 
+def test_registry_loss_does_not_lose_final(tmp: Path) -> None:
+    """Deleting/corrupting service metadata must not abort completed model work."""
+    print("=== e2e: registry loss recovery + final preservation ===")
+    for failure in ("deleted", "corrupt"):
+        reg_root = tmp / f"reg-loss-{failure}"
+        art = tmp / f"art-loss-{failure}"
+        cwd = tmp / f"cwd-loss-{failure}"
+        reg_root.mkdir(parents=True)
+        art.mkdir(parents=True)
+        cwd.mkdir(parents=True)
+        env = env_base(reg_root, art)
+        env["CONSILIUM_FAKE_STEER_SLOW"] = "3.2"
+        proc, run_id, _ = start_steerable(
+            "grok", f"registry resilience {failure}", env, cwd
+        )
+        run_dir = reg_root / "runs" / run_id
+        time.sleep(0.2)
+        assert_true(f"{failure} run active before fault", proc.poll() is None)
+        if failure == "deleted":
+            assert_true("delete target scoped to test root", run_dir.parent.parent == reg_root)
+            shutil.rmtree(run_dir)
+        else:
+            (run_dir / "meta.json").write_text("{broken", encoding="utf-8")
+
+        # Recovery must happen while the harness is still working, so status /
+        # steer regain a valid registry instead of waiting for finalization.
+        recovered_while_active = False
+        deadline = time.time() + 3.0
+        while time.time() < deadline and proc.poll() is None:
+            try:
+                live_meta = json.loads((run_dir / "meta.json").read_text(encoding="utf-8"))
+                if int(live_meta.get("recovery_count") or 0) >= 1:
+                    recovered_while_active = True
+                    break
+            except (OSError, json.JSONDecodeError):
+                pass
+            time.sleep(0.05)
+        assert_true(f"{failure} registry recovered while active", recovered_while_active)
+        live_status = run_cmd(
+            [str(CONSILIUM), "delegate", "status", run_id, "--json"], env
+        )
+        assert_true(f"{failure} recovered status works", live_status.returncode == 0, live_status.stderr)
+        if live_status.returncode == 0:
+            status_payload = json.loads(live_status.stdout)
+            assert_true(
+                f"{failure} recovered status observable",
+                status_payload.get("registry_recovered") is True
+                and int(status_payload.get("registry_recovery_count") or 0) >= 1,
+                str(status_payload),
+            )
+
+        code, out, err = wait_proc(proc, timeout=40)
+        assert_true(f"{failure} registry exit 0", code == 0, err[-600:])
+        assert_true(f"{failure} registry stdout final", "OK" in out, out)
+        assert_true(
+            f"{failure} registry external final",
+            (art / "final.txt").is_file() and "OK" in (art / "final.txt").read_text(),
+            str(art),
+        )
+        meta_path = run_dir / "meta.json"
+        assert_true(f"{failure} registry meta recovered", meta_path.is_file(), str(run_dir))
+        if meta_path.is_file():
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            assert_true(
+                f"{failure} registry terminal status",
+                meta.get("status") == "completed" and meta.get("exit_code") == 0,
+                str(meta),
+            )
+            assert_true(
+                f"{failure} registry recovery recorded",
+                int(meta.get("recovery_count") or 0) >= 1,
+                str(meta),
+            )
+        assert_true(
+            f"{failure} registry recovery observable",
+            "registry_recovered" in err and "registry=ok" in err,
+            err[-800:],
+        )
+
+
 def main() -> int:
     for p in FAKES.iterdir():
         if p.is_file():
@@ -2130,6 +2268,7 @@ def main() -> int:
         test_backend_e2e("opencode", "opencode", tmp)
         test_backend_e2e("grok", "grok", tmp)
         test_opencode_auth_e2e_password_not_in_artifacts(tmp)
+        test_registry_loss_does_not_lose_final(tmp)
         test_save_outputs_zero_no_cwd_artifacts(tmp)
         test_grok_queue_and_send_now(tmp)
         test_grok_ack_not_delivered_on_write(tmp)
