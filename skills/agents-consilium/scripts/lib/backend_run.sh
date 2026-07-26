@@ -85,6 +85,31 @@ EFFORT="$(config_get_field "$AGENT_ID" effort)"
 ROLE_ID="${ROLE_OVERRIDE:-$(config_get_field "$AGENT_ID" role)}"
 ROLE_ID="${ROLE_ID:-analyst}"
 
+# Per-invocation backend overrides. Keep this in sync with the steerable
+# config loader so ordinary review/delegate and steerable delegate resolve the
+# same model and effort without requiring edits to config.json or user config.
+case "$BACKEND" in
+    codex-cli)
+        MODEL="${CODEX_MODEL:-$MODEL}"
+        EFFORT="${CODEX_EFFORT:-$EFFORT}"
+        ;;
+    claude-code)
+        MODEL="${CLAUDE_MODEL:-$MODEL}"
+        EFFORT="${CLAUDE_EFFORT:-$EFFORT}"
+        ;;
+    opencode)
+        MODEL="${OPENCODE_MODEL:-$MODEL}"
+        EFFORT="${OPENCODE_EFFORT:-$EFFORT}"
+        ;;
+    grok-build)
+        MODEL="${GROK_MODEL:-$MODEL}"
+        EFFORT="${GROK_EFFORT:-$EFFORT}"
+        ;;
+    gemini-cli)
+        MODEL="${GEMINI_MODEL:-$MODEL}"
+        ;;
+esac
+
 if [[ "$MODE" == "delegate" ]]; then
     # Gemini is review-only.
     if [[ "$BACKEND" == "gemini-cli" ]]; then

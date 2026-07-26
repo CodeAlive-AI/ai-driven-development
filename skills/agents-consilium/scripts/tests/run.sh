@@ -126,6 +126,16 @@ argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/codex-del.
 assert_contains "codex delegate has YOLO bypass" "$argv" "--dangerously-bypass-approvals-and-sandbox"
 assert_not_contains "codex delegate no read-only sandbox" "$argv" "--sandbox read-only"
 
+# Per-invocation overrides must work in the ordinary shell runner, not only in
+# the steerable Python config loader.
+CODEX_MODEL="gpt-codex-override" CODEX_EFFORT="xhigh" \
+  CONSILIUM_DUMP_ARGV="$TMP/codex-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode delegate --agent-id codex --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/codex-overrides.json"'"))["argv"]))')
+assert_contains "codex shell runner honors CODEX_MODEL" "$argv" "--model gpt-codex-override"
+assert_contains "codex shell runner honors CODEX_EFFORT" "$argv" 'model_reasoning_effort="xhigh"'
+assert_not_contains "codex effort override replaces config effort" "$argv" 'model_reasoning_effort="high"'
+
 # Claude review: plan + disallowed write tools
 dump_review claude-code "$TMP/claude-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-review.json"'"))["argv"]))')
