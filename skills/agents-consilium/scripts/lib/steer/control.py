@@ -132,6 +132,7 @@ def cmd_status(args: argparse.Namespace) -> int:
         "agent_id": meta.get("agent_id"),
         "backend": meta.get("backend"),
         "model": meta.get("model"),
+        "effort": meta.get("effort"),
         "pid": meta.get("pid"),
         "child_pid": meta.get("child_pid"),
         "exit_code": meta.get("exit_code"),
@@ -155,7 +156,10 @@ def cmd_status(args: argparse.Namespace) -> int:
     if args.json:
         print(json.dumps(payload, indent=2, ensure_ascii=False))
     else:
-        print(f"run_id={args.run_id} status={meta.get('status')} backend={meta.get('backend')}")
+        print(
+            f"run_id={args.run_id} status={meta.get('status')} backend={meta.get('backend')} "
+            f"model={meta.get('model')} effort={meta.get('effort')}"
+        )
         print(f"agent={meta.get('agent_id')} pid={meta.get('pid')} child={meta.get('child_pid')}")
         if meta.get("error"):
             print(f"error={meta.get('error')}")

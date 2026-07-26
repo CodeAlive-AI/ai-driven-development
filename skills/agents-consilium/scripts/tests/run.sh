@@ -145,6 +145,13 @@ assert_contains "claude review selects Opus 5" "$argv" "--model claude-opus-5"
 assert_contains "claude review defaults to high effort" "$argv" "--effort high"
 assert_not_contains "claude review no skip-permissions" "$argv" "--dangerously-skip-permissions"
 
+CLAUDE_MODEL="claude-override" CLAUDE_EFFORT="max" \
+  CONSILIUM_DUMP_ARGV="$TMP/claude-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id claude-code --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-overrides.json"'"))["argv"]))')
+assert_contains "claude shell runner honors CLAUDE_MODEL" "$argv" "--model claude-override"
+assert_contains "claude shell runner honors CLAUDE_EFFORT" "$argv" "--effort max"
+
 # Claude delegate: skip permissions, no plan
 dump_delegate claude-code "$TMP/claude-del.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-del.json"'"))["argv"]))')
@@ -163,6 +170,18 @@ argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-del.jso
 assert_contains "opencode delegate build" "$argv" "--agent build"
 assert_contains "opencode delegate auto" "$argv" "--auto"
 assert_not_contains "opencode delegate no plan" "$argv" "--agent plan"
+
+OPENCODE_MODEL="provider/model-override" OPENCODE_EFFORT="thinking" \
+  CONSILIUM_DUMP_ARGV="$TMP/opencode-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode delegate --agent-id opencode --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/opencode-overrides.json"'"))["argv"]))')
+assert_contains "opencode shell runner honors OPENCODE_MODEL" "$argv" "-m provider/model-override"
+assert_contains "opencode shell runner honors OPENCODE_EFFORT" "$argv" "--variant thinking"
+
+OPENCODE_EFFORT="none" CONSILIUM_DUMP_ARGV="$TMP/opencode-none.json" \
+  "$LIB_DIR/backend_run.sh" --mode delegate --agent-id opencode --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/opencode-none.json"'"))["argv"]))')
+assert_not_contains "opencode shell runner treats none as no variant" "$argv" "--variant"
 
 # Grok review: sandbox read-only + tool allow/deny
 dump_review grok "$TMP/grok-review.json"
@@ -183,6 +202,18 @@ assert_contains "grok delegate always-approve" "$argv" "--always-approve"
 assert_not_contains "grok delegate no sandbox" "$argv" "--sandbox"
 assert_contains "grok delegate streaming-json" "$argv" "streaming-json"
 assert_contains "grok delegate prompt-file one-shot" "$argv" "--prompt-file"
+
+GROK_MODEL="grok-override" GROK_EFFORT="max" \
+  CONSILIUM_DUMP_ARGV="$TMP/grok-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode delegate --agent-id grok --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/grok-overrides.json"'"))["argv"]))')
+assert_contains "grok shell runner honors GROK_MODEL" "$argv" "-m grok-override"
+assert_contains "grok shell runner honors GROK_EFFORT" "$argv" "--reasoning-effort max"
+
+GEMINI_MODEL="gemini-override" CONSILIUM_DUMP_ARGV="$TMP/gemini-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id gemini-cli --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/gemini-overrides.json"'"))["argv"]))')
+assert_contains "gemini shell runner honors GEMINI_MODEL" "$argv" "--model gemini-override"
 
 # Prompts must not be embedded in argv: large tasks are delivered over stdin
 # (or a temporary prompt file for Grok), avoiding the OS ARG_MAX ceiling.
@@ -246,6 +277,29 @@ rc=$?
 set -e
 assert_eq "gemini delegate rejected" "$rc" "4"
 assert_contains "gemini delegate message" "$(cat "$TMP/gem.err")" "review-only"
+
+# JSON booleans must round-trip as lowercase shell values. Otherwise a
+# non-Gemini backend with supports_delegate=false would bypass this guard.
+printf '%s\n' '{"agents":{"review-codex":{"backend":"codex-cli","model":"m","supports_delegate":false}}}' \
+  > "$TMP/review-only-config.json"
+set +e
+CONSILIUM_CONFIG="$TMP/review-only-config.json" \
+  "$LIB_DIR/backend_run.sh" --mode delegate --agent-id review-codex --raw "x" \
+  >/dev/null 2>"$TMP/review-only.err"
+rc=$?
+set -e
+assert_eq "non-gemini supports_delegate=false rejected" "$rc" "4"
+assert_contains "supports_delegate=false message" "$(cat "$TMP/review-only.err")" "supports_delegate=false"
+
+set +e
+CONSILIUM_CONFIG="$TMP/review-only-config.json" \
+  "$CONSILIUM" delegate -a review-codex --steerable "x" \
+  >/dev/null 2>"$TMP/review-only-steerable.err"
+rc=$?
+set -e
+assert_eq "steerable review-only agent rejected before supervisor" "$rc" "4"
+assert_contains "steerable review-only has config message" "$(cat "$TMP/review-only-steerable.err")" "review-only"
+assert_not_contains "steerable review-only has no traceback" "$(cat "$TMP/review-only-steerable.err")" "Traceback"
 
 echo "=== Exact agent selection for delegate ==="
 set +e

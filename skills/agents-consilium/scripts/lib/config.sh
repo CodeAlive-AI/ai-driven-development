@@ -81,7 +81,10 @@ if name not in agents:
     print(f"Error: unknown agent id: {name}", file=sys.stderr)
     sys.exit(2)
 value = agents[name].get(os.environ["FIELD"], "")
-print(value if value is not None else "")
+if isinstance(value, bool):
+    print("true" if value else "false")
+else:
+    print(value if value is not None else "")
 '
 }
 

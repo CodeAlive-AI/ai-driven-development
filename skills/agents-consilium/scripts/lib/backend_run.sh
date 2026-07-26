@@ -198,7 +198,7 @@ case "$BACKEND" in
         ;;
 esac
 
-progress_agent_start "$AGENT_ID" "$BACKEND" "$MODE" "$MODEL"
+progress_agent_start "$AGENT_ID" "$BACKEND" "$MODE" "$MODEL" "$EFFORT"
 
 # Ensure run dir + artifact subdirs exist (honors pre-set CONSILIUM_RUN_DIR)
 if [[ "${CONSILIUM_SAVE_OUTPUTS:-1}" != "0" ]]; then

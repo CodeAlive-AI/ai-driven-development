@@ -74,9 +74,8 @@ def agent_settings(agent_id: str) -> Tuple[Dict[str, Any], str, str, str]:
     if backend == "gemini-cli" or agent.get("supports_delegate") in (False, "false", 0, "0"):
         raise ValueError(f"agent '{agent_id}' cannot steerable-delegate (review-only)")
     model = agent.get("model") or ""
-    if backend == "codex-cli" and model == "gpt-5.6":
-        model = "gpt-5.6-sol"
-    # Env model overrides (same spirit as existing backends)
+    # Non-empty per-invocation env overrides take precedence over config.json.
+    # Keep ordering/defaults identical to backend_run.sh.
     env_model = {
         "codex-cli": "CODEX_MODEL",
         "claude-code": "CLAUDE_MODEL",
@@ -85,6 +84,8 @@ def agent_settings(agent_id: str) -> Tuple[Dict[str, Any], str, str, str]:
     }.get(backend)
     if env_model and os.environ.get(env_model):
         model = os.environ[env_model]
+    if backend == "codex-cli" and model == "gpt-5.6":
+        model = "gpt-5.6-sol"
     effort = agent.get("effort") or ""
     env_effort = {
         "codex-cli": "CODEX_EFFORT",
@@ -94,6 +95,10 @@ def agent_settings(agent_id: str) -> Tuple[Dict[str, Any], str, str, str]:
     }.get(backend)
     if env_effort and os.environ.get(env_effort):
         effort = os.environ[env_effort]
+    if backend in ("codex-cli", "claude-code", "grok-build"):
+        effort = effort or "high"
+    elif backend == "opencode" and effort == "none":
+        effort = ""
     agent = dict(agent)
     agent["model"] = model
     agent["effort"] = effort

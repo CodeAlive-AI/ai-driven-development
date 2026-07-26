@@ -16,6 +16,7 @@ Different frontier models see different things. Consilium fans out independent o
 | **review code** *(super)* | production-critical — multi-stage + judge | `consilium review code --depth super` | $0.90–1.50 |
 | **review code** *(ultra)* | maximum coverage | `consilium review code --depth ultra` | $1.50–3.00 |
 | **delegate** | implement a task with one agent, no sandbox | `consilium delegate -a <id>` | varies |
+| **delegate --steerable** | delegate while retaining live status/steer/cancel control | `consilium delegate -a <id> --steerable` | varies |
 
 > **Pick in 5 seconds:** ideas → **ask** · normal PR file → **code basic** · money/auth → **specialists/super** · “just do it” → **delegate -a …**
 
@@ -65,6 +66,10 @@ scripts/consilium review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
 scripts/consilium review code --depth specialists path/to/file.py
 scripts/consilium review code --depth ultra --dry-run path/to/file.cs
 scripts/consilium delegate -a codex --prompt-file task.md
+scripts/consilium delegate -a grok --steerable "Implement the task"
+# Capture run_id from stderr, then from another process:
+scripts/consilium delegate steer run_<id> --mode auto "Additional detail"
+scripts/consilium delegate status run_<id> --json
 ```
 
 </details>
@@ -73,9 +78,10 @@ scripts/consilium delegate -a codex --prompt-file task.md
 
 ## Observability
 
-- **stderr** — live `[consilium] …` progress (not buffered until end)
+- **stderr** — live `[consilium] …` progress (ordinary start lines include resolved model/effort; output is not buffered until end)
 - **stdout** — final answer only
 - **artifacts** — `CONSILIUM_OUTPUT_DIR/run-*/{raw,normalized,final}/…` plus `final.txt`
+- **steerable status** — resolved model/effort plus mailbox/backend lifecycle evidence for each steer
 
 ---
 
@@ -103,7 +109,11 @@ Edit `config.json` or set `CONSILIUM_CONFIG`.
 
 ### Transport note
 
-Consilium drives backends via **direct headless CLI** (not ACP). Grok Build already has native ACP (`grok agent stdio`); a separate `grok-acp` is unnecessary. ACP is not the batch transport because review/delegate safety is CLI-flag enforcement, and Codex/Claude would need adapters — direct CLI is the uniform path with live stream observability.
+Ordinary review and one-shot delegate use each harness's direct headless CLI.
+Steerable delegate uses the harness's long-lived native interface: Codex app-server,
+Claude stream-json replay, OpenCode loopback HTTP/SSE, or Grok Build ACP
+(`grok agent stdio`). Review/delegate safety remains enforced by the selected
+mode's harness flags and adapter contract.
 
 ### Limits
 
@@ -112,7 +122,9 @@ response-length cap by default. Large prompts use stdin or a prompt file rather
 than argv, and complete raw/normalized/final outputs are archived without
 truncation. Provider context windows and limits configured inside each harness
 still apply. Set a positive `AGENT_TIMEOUT` only when an explicit watchdog is
-wanted (`0` or unset means unlimited).
+wanted for ordinary review or one-shot delegate (`0` or unset means unlimited).
+Steerable runs intentionally have no wrapper deadline; observe them with
+`status` and stop them explicitly with `cancel`.
 
 ---
 
@@ -122,7 +134,8 @@ wanted (`0` or unset means unlimited).
 scripts/tests/run.sh
 ```
 
-Fake CLIs assert argv safety, agent selection, stream extraction, and artifacts.
+Fake CLIs assert argv safety, per-harness model/effort resolution, agent
+selection, stream extraction, artifacts, and steerable control behavior.
 
 ---
 

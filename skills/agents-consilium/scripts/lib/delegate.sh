@@ -112,8 +112,16 @@ fi
 config_validate || exit $EXIT_CONFIG_ERROR
 
 # Exact id must exist
-if ! config_get_field "$AGENT_ID" backend >/dev/null 2>&1; then
+if ! BACKEND="$(config_get_field "$AGENT_ID" backend 2>/dev/null)"; then
     echo "Error: unknown agent id: $AGENT_ID" >&2
+    exit $EXIT_CONFIG_ERROR
+fi
+
+# Reject review-only agents before creating artifacts or entering the Python
+# supervisor. backend_run.sh repeats this as defense in depth for direct calls.
+SUPPORTS_DELEGATE="$(config_get_field "$AGENT_ID" supports_delegate 2>/dev/null || true)"
+if [[ "$BACKEND" == "gemini-cli" || "$SUPPORTS_DELEGATE" == "false" || "$SUPPORTS_DELEGATE" == "0" ]]; then
+    echo "Error: agent '$AGENT_ID' is review-only (supports_delegate=false)" >&2
     exit $EXIT_CONFIG_ERROR
 fi
 

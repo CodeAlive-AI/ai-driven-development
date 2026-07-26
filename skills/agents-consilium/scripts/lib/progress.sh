@@ -8,9 +8,9 @@ progress_info() {
 }
 
 progress_agent_start() {
-    local agent_id="$1" backend="$2" mode="$3" model="${4:-}"
-    printf '[consilium] start agent=%s backend=%s mode=%s model=%s\n' \
-        "$agent_id" "$backend" "$mode" "$model" >&2
+    local agent_id="$1" backend="$2" mode="$3" model="${4:-}" effort="${5:-}"
+    printf '[consilium] start agent=%s backend=%s mode=%s model=%s effort=%s\n' \
+        "$agent_id" "$backend" "$mode" "$model" "$effort" >&2
 }
 
 progress_agent_event() {

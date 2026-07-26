@@ -210,8 +210,10 @@ Consilium is unlimited by default:
 - final text is streamed to disk rather than buffered as one in-memory response.
 
 Provider context windows, model output limits, and limits in user/managed harness
-configuration still apply. To add an explicit watchdog for one invocation, set
-`AGENT_TIMEOUT` to a positive number of seconds.
+configuration still apply. To add an explicit watchdog for an ordinary review
+or one-shot delegate invocation, set `AGENT_TIMEOUT` to a positive number of
+seconds. Steerable runs intentionally have no wrapper deadline; observe them
+with `status` and stop them explicitly with `cancel`.
 
 ## Backends & read-only / YOLO flags
 
@@ -285,8 +287,8 @@ EOF
 - `CONSILIUM_CONFIG`, `CONSILIUM_AGENTS`, `CONSILIUM_EXCLUDE`
 - `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR`, `CONSILIUM_SAVE_OUTPUTS`
 - `CONSILIUM_STEER_DIR` — registry root for steerable runs
-- `AGENT_TIMEOUT` (`0`/unset = unlimited; positive integer = opt-in seconds)
-- Per-backend: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, `GEMINI_MODEL`, `GEMINI_API_KEY`. Non-empty model/effort variables override `config.json` for that invocation in both ordinary and steerable modes.
+- `AGENT_TIMEOUT` (`0`/unset = unlimited; positive integer = opt-in seconds for ordinary review/one-shot delegate; steerable remains unlimited)
+- Per-backend: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, `GEMINI_MODEL`, `GEMINI_API_KEY`. Non-empty model/effort variables override `config.json` for that invocation in both ordinary and steerable modes. OpenCode effort maps to its model `variant`; use `none` to omit the variant consistently.
 
 ## Tests
 

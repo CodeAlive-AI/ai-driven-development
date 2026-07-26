@@ -95,6 +95,7 @@ class OpenCodeAdapter(BackendAdapter):
         return [
             self.binary,
             "serve",
+            "--pure",
             "--hostname",
             "127.0.0.1",
             "--port",
@@ -283,6 +284,11 @@ class OpenCodeAdapter(BackendAdapter):
                 payload["model"] = {"providerID": provider, "modelID": mid}
             else:
                 payload["model"] = {"modelID": self.model}
+        if self.effort:
+            # prompt_async calls SessionPrompt.PromptInput, where reasoning
+            # effort is the top-level `variant` field (same semantics as
+            # `opencode run --variant`).
+            payload["variant"] = self.effort
         payload["metadata"] = {"clientId": client_id}
         path = f"/session/{quote(self.session_id, safe='')}/prompt_async"
         if self.cwd:

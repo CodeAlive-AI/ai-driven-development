@@ -380,6 +380,17 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
     try:
         st = json.loads(r2.stdout)
         assert_true(f"{label} status has steers", isinstance(st.get("steers"), list))
+        expected_effort = {
+            "claude-code": "high",
+            "codex": "high",
+            "opencode": "max",
+            "grok": "high",
+        }[agent]
+        assert_true(
+            f"{label} status exposes resolved effort",
+            st.get("effort") == expected_effort,
+            str(st.get("effort")),
+        )
     except json.JSONDecodeError as e:
         bad(f"{label} status json parse", str(e))
 
@@ -1610,6 +1621,131 @@ def test_codex_completed_items_xor_deltas(tmp: Path) -> None:
     )
 
 
+def test_backend_settings_consistency_unit(tmp: Path) -> None:
+    """Shell-equivalent env precedence/defaults for every steerable backend."""
+    print("=== unit: backend settings consistency ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.config_loader import agent_settings  # type: ignore
+
+    config = tmp / "settings-consistency.json"
+    config.write_text(
+        json.dumps(
+            {
+                "agents": {
+                    "codex": {"backend": "codex-cli", "model": "base-codex"},
+                    "claude": {"backend": "claude-code", "model": "base-claude"},
+                    "opencode": {
+                        "backend": "opencode",
+                        "model": "base/provider-model",
+                        "effort": "none",
+                    },
+                    "grok": {"backend": "grok-build", "model": "base-grok"},
+                }
+            }
+        ),
+        encoding="utf-8",
+    )
+    keys = (
+        "CONSILIUM_CONFIG",
+        "CONSILIUM_BIN_CODEX",
+        "CONSILIUM_BIN_CLAUDE",
+        "CONSILIUM_BIN_OPENCODE",
+        "CONSILIUM_BIN_GROK",
+        "CODEX_MODEL",
+        "CODEX_EFFORT",
+        "CLAUDE_MODEL",
+        "CLAUDE_EFFORT",
+        "OPENCODE_MODEL",
+        "OPENCODE_EFFORT",
+        "GROK_MODEL",
+        "GROK_EFFORT",
+    )
+    saved = {key: os.environ.get(key) for key in keys}
+    try:
+        for key in keys:
+            os.environ.pop(key, None)
+        os.environ["CONSILIUM_CONFIG"] = str(config)
+        for key in (
+            "CONSILIUM_BIN_CODEX",
+            "CONSILIUM_BIN_CLAUDE",
+            "CONSILIUM_BIN_OPENCODE",
+            "CONSILIUM_BIN_GROK",
+        ):
+            os.environ[key] = "/bin/false"
+
+        _, _, codex_model, codex_bin = agent_settings("codex")
+        assert_true("steerable codex defaults effort high", agent_settings("codex")[0]["effort"] == "high")
+        assert_true("steerable binary override honored", codex_bin == "/bin/false", codex_bin)
+        assert_true("steerable codex base model unchanged", codex_model == "base-codex", codex_model)
+
+        os.environ["CODEX_MODEL"] = "gpt-5.6"
+        os.environ["CODEX_EFFORT"] = "xhigh"
+        codex, _, codex_model, _ = agent_settings("codex")
+        assert_true("steerable codex normalizes env alias", codex_model == "gpt-5.6-sol", codex_model)
+        assert_true("steerable codex honors effort env", codex["effort"] == "xhigh", str(codex))
+
+        claude, _, claude_model, _ = agent_settings("claude")
+        assert_true("steerable claude defaults effort high", claude["effort"] == "high", str(claude))
+        os.environ["CLAUDE_MODEL"] = "claude-override"
+        os.environ["CLAUDE_EFFORT"] = "max"
+        claude, _, claude_model, _ = agent_settings("claude")
+        assert_true("steerable claude honors model env", claude_model == "claude-override", claude_model)
+        assert_true("steerable claude honors effort env", claude["effort"] == "max", str(claude))
+
+        opencode, _, _, _ = agent_settings("opencode")
+        assert_true("steerable opencode none omits variant", opencode["effort"] == "", str(opencode))
+        os.environ["OPENCODE_MODEL"] = "provider/model-override"
+        os.environ["OPENCODE_EFFORT"] = "thinking"
+        opencode, _, opencode_model, _ = agent_settings("opencode")
+        assert_true("steerable opencode honors model env", opencode_model == "provider/model-override", opencode_model)
+        assert_true("steerable opencode honors effort env", opencode["effort"] == "thinking", str(opencode))
+
+        grok, _, _, _ = agent_settings("grok")
+        assert_true("steerable grok defaults effort high", grok["effort"] == "high", str(grok))
+        os.environ["GROK_MODEL"] = "grok-override"
+        os.environ["GROK_EFFORT"] = "max"
+        grok, _, grok_model, _ = agent_settings("grok")
+        assert_true("steerable grok honors model env", grok_model == "grok-override", grok_model)
+        assert_true("steerable grok honors effort env", grok["effort"] == "max", str(grok))
+    finally:
+        for key, value in saved.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+
+
+def test_opencode_effort_payload_unit(tmp: Path) -> None:
+    """OpenCode prompt_async must carry the resolved effort as `variant`."""
+    print("=== unit: opencode effort payload ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.opencode import OpenCodeAdapter  # type: ignore
+
+    art = tmp / "art-oc-effort"
+    art.mkdir(parents=True)
+    (art / "raw").mkdir(parents=True)
+    calls = []
+    adapter = OpenCodeAdapter(
+        binary="false",
+        model="provider/model",
+        effort="thinking",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    assert_true("opencode steerable serve uses pure mode", "--pure" in adapter._argv(), str(adapter._argv()))
+    adapter.session_id = "session-test"
+    adapter.base_url = "http://127.0.0.1:1"
+    adapter._http_json = lambda method, path, **kwargs: calls.append(kwargs.get("body"))  # type: ignore[method-assign]
+    adapter._prompt_async("task", "client")
+    assert_true("opencode steerable sends effort variant", calls[-1].get("variant") == "thinking", str(calls[-1]))
+
+    calls.clear()
+    adapter.effort = ""
+    adapter._prompt_async("task", "client-none")
+    assert_true("opencode steerable omits empty variant", "variant" not in calls[-1], str(calls[-1]))
+
+
 def test_opencode_part_updated_cumulative(tmp: Path) -> None:
     """message.part.updated snapshots H/He/Hello → final Hello once."""
     print("=== unit: opencode cumulative part.updated ===")
@@ -1982,6 +2118,8 @@ def main() -> int:
         test_artifact_no_truncate(tmp)
         test_codex_interrupt_resets_result_text(tmp)
         test_codex_completed_items_xor_deltas(tmp)
+        test_backend_settings_consistency_unit(tmp)
+        test_opencode_effort_payload_unit(tmp)
         test_opencode_part_updated_cumulative(tmp)
         test_opencode_redirect_and_auth_unit(tmp)
         test_mailbox_cursor_on_exception(tmp)

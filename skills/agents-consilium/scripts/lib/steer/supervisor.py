@@ -129,7 +129,7 @@ class Supervisor:
             model=model,
             cwd=self.cwd,
             artifacts_dir=self.artifacts_dir,
-            extra={"task_hash_prefix": _prefix_hash(self.task)},
+            extra={"task_hash_prefix": _prefix_hash(self.task), "effort": effort},
         )
         progress("steer", f"run_id={self.run_id}", f"agent={self.agent_id}", f"backend={backend}")
         # Also print bare run_id line for easy capture
