@@ -280,16 +280,18 @@ This pattern governs only the narrower case in which a local mantra presents adm
 
 In public FPF explanation, call the admitted slice a `demonstrative walkthrough`. In the bounded seminar context recorded below, `mantra` is the shorter repeatable name for that same demonstrative episteme. One `mantra move` is a `DemonstratedPatternUseRow@Context`: it names the direct pattern, its Solution, the expected result, and the condition for continuing. Outside this admitted CGUS-demonstrative use, interpret a local mantra from the pattern's own Solution and context rather than forcing it into `DemonstrativeUnfoldingSlice@Context`.
 
-##### Naming assurance
+##### Naming settlement and bounded reuse
 
-The following F.18 cards and directional Bridge preserve the lexical and contextual decisions behind those Plain labels. The separate `LocalSenseBasisRelation@Context` values identify which public pattern episteme or seminar publication episteme supports each local sense. NameCards support naming review; the basis relations support the bounded sense lines. Neither adds a step to CGUS application.
+The F.18 cards below record the selected names for the governed A.22.CGUS values. The separate `LocalSenseBasisRelation@Context` values support the exact local-sense claims. The F.9 Bridge states only the semantic relation between the two exact F.17 cells. A separate ordinary C.2.1 assertion says whether that Bridge is suitable for the named seminar-to-public naming use, and A.10 separately governs reliance on that assertion. The cards carry none of the use direction, correspondence rule, loss tolerance, polarity, reliance, permission, or publication occurrence. `PublicRowStatus=current` and each `UnifiedTermRowRef` cite a separate current F.17 row; neither the card nor its inputs create that row. None adds a step to CGUS application.
 
 ```text
 NameCardId: NameCard.DemonstrativeUnfoldingSlice.FPFPublic
 GovernedValueRef: DemonstrativeUnfoldingSlice@Context
 GoverningPatternRef: A.22.CGUS
-BoundedContextRef: FPF English public publication, edition 2026-07-11
-LocalSenseRef: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
+ReferenceScheme: FPFCoreReferenceScheme
+ClaimContent: NameCard.DemonstrativeUnfoldingSlice.FPFPublic.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+LocalSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
+LocalSenseBasisRelationRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
 TechLabel: DemonstrativeUnfoldingSlice@Context
 PlainLabel: demonstrative walkthrough
 CandidateSet: [demonstrative walkthrough, mantra, mnemonic walkthrough, solution-story refrain, repeated explanatory walkthrough, pattern-use refrain]
@@ -300,7 +302,8 @@ RejectedCandidates:
   repeated explanatory walkthrough -> is too long to serve as the public label
   pattern-use refrain -> narrows the value although a CGUS slice may demonstrate wider structure
 SelectionRationale: the phrase identifies a presented explanatory episteme for a cold reader while the Tech value restores represented structure
-BridgeRefs: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
+BridgeRefs: [Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11]
+PublicRowStatus: current
 UnifiedTermRowRef: UTS.DemonstrativeUnfoldingSlice.FPFPublic
 LineageEntries: demonstrative slice -> cold-reader public Plain label
 RefreshCondition: readers treat the phrase as actual traversal, fixed work order, or teaching medium rather than the governed episteme
@@ -310,8 +313,10 @@ RefreshCondition: readers treat the phrase as actual traversal, fixed work order
 NameCardId: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching
 GovernedValueRef: DemonstrativeUnfoldingSlice@Context
 GoverningPatternRef: A.22.CGUS
-BoundedContextRef: English-language FPF seminar teaching, edition 2026-07-11
-LocalSenseRef: a short repeatable explanatory walkthrough that helps a participant hold the whole solution structure in mind without prescribing performed-work order
+ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
+ClaimContent: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+LocalSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
+LocalSenseBasisRelationRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
 TechLabel: DemonstrativeUnfoldingSlice@Context
 PlainLabel: mantra
 CandidateSet: [mantra, demonstrative walkthrough, mnemonic walkthrough, solution-story refrain, repeated explanatory walkthrough, pattern-use refrain]
@@ -321,8 +326,9 @@ RejectedCandidates:
   solution-story refrain -> overstates narrative form
   repeated explanatory walkthrough -> is too long for the repeated teaching alias
   pattern-use refrain -> narrows demonstrations to pattern use and loses wider CGUS cases
-SelectionRationale: repeated-formula and watchword senses support remembered repetition; the Sanskrit analysis instrument of thought supplies the attentional rationale; bounded context excludes ritual, slogan, method, plan, and work senses
-BridgeRefs: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
+SelectionRationale: repeated-formula and watchword senses support remembered repetition; the Sanskrit analysis instrument of thought supplies the attentional rationale; the seminar-teaching scheme excludes ritual, slogan, method, plan, and work senses
+BridgeRefs: [Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11]
+PublicRowStatus: current
 UnifiedTermRowRef: UTS.DemonstrativeUnfoldingSlice.SeminarTeaching
 LineageEntries: seminar teaching concept -> English lexical comparison -> bounded teaching alias over the same governed value
 RefreshCondition: readers infer ritual authority, slogan, rote formula, method, WorkPlan, Work, teaching medium, or cannot recover the demonstrated structure
@@ -332,8 +338,10 @@ RefreshCondition: readers infer ritual authority, slogan, rote formula, method, 
 NameCardId: NameCard.DemonstratedPatternUseRow.SeminarTeaching
 GovernedValueRef: DemonstratedPatternUseRow@Context
 GoverningPatternRef: A.22.CGUS
-BoundedContextRef: English-language FPF seminar teaching, edition 2026-07-11
-LocalSenseRef: one shown pattern-use continuation with its Solution, expected result, and current condition inside a mantra
+ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
+ClaimContent: NameCard.DemonstratedPatternUseRow.SeminarTeaching.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+LocalSenseCellRef: SenseCell.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
+LocalSenseBasisRelationRef: LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
 TechLabel: DemonstratedPatternUseRow@Context
 PlainLabel: mantra move
 CandidateSet: [mantra move, mantra row, demonstrated pattern-use row, walkthrough continuation, mnemonic step, solution-story move]
@@ -344,82 +352,160 @@ RejectedCandidates:
   mnemonic step -> suggests a fixed serial step and memory technique
   solution-story move -> overstates narrative form and can be read as movement
 SelectionRationale: the phrase keeps the bounded mnemonic relation and names one continuation; row fields restore direct pattern, Solution, result, and condition
-BridgeRefs: none; expression and governed row are local to one seminar context
+BridgeRefs: none; expression and governed-row use are interpreted under the same seminar-teaching scheme
+PublicRowStatus: current
 UnifiedTermRowRef: UTS.DemonstratedPatternUseRow.SeminarTeaching
 LineageEntries: bounded mantra alias plus local move wording -> typed demonstrated-pattern-use row
 RefreshCondition: readers infer universal Move, physical movement, operation, fixed serial step, PlanItem, Work, or a row detached from its slice
 ```
 
+The two expressions for the demonstrative slice and the local expression for its demonstrated row resolve through exact F.17 coordinates:
+
 ```text
 SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
-  Context: FPF English public publication, edition 2026-07-11
+  ReferenceScheme: FPFCoreReferenceScheme
+  LocalSenseId: DemonstrativeUnfoldingSlice-public
   LocalExpression: demonstrative walkthrough
-  LocalSense: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
+  LocalSenseClaim: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
   senseFamily: DemonstrativeExplanation
   NameCardRef: NameCard.DemonstrativeUnfoldingSlice.FPFPublic
   LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
 
 SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
-  Context: English-language FPF seminar teaching, edition 2026-07-11
+  ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
+  LocalSenseId: DemonstrativeUnfoldingSlice-mantra
   LocalExpression: mantra
-  LocalSense: a short repeatable explanatory walkthrough used to hold the whole solution structure in attention
+  LocalSenseClaim: a short repeatable explanatory walkthrough used to hold the whole solution structure in attention
   senseFamily: DemonstrativeExplanation
   NameCardRef: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching
   LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
 
+SenseCell.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
+  ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
+  LocalSenseId: DemonstratedPatternUseRow-mantra-move
+  LocalExpression: mantra move
+  LocalSenseClaim: one shown pattern-use continuation with its Solution, expected result, and current condition inside a mantra
+  senseFamily: DemonstratedPatternUseContinuation
+  NameCardRef: NameCard.DemonstratedPatternUseRow.SeminarTeaching
+  LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
+
 LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
-  localSenseCellRef: SenseCell(FPF-English-Public-2026-07-11, DemonstrativeUnfoldingSlice-public)
+  localSenseCellRef: SenseCell(FPFCoreReferenceScheme, DemonstrativeUnfoldingSlice-public)
   basisEpistemeRef: A.22.CGUS
-  basisEpistemeKindRef: U.MethodDescription
   basisPublicationUnitRef: A.22.CGUS:4.3.3-Ordinary-bounded-use
-  boundedContextRef: FPF English public publication, edition 2026-07-11
 
 LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
   entityOfConcernRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
   entityOfConcernKindRef: LocalSenseBasisRelation@Context
-  boundedContextRef: FPF English public publication, edition 2026-07-11
   viewpointRef: FPFPublicReaderViewpoint
-  subjectRef: <LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11, FPF English public publication 2026-07-11, FPFPublicReaderViewpoint>
   claimGraph:
     supportedSenseClaim: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
-    admittedUseClaim: support the public local-sense line for this SenseCell
+    admittedUseClaim: support the public local-sense line for this scheme-based coordinate
     nonAdmittedUseClaim: no evidence, authority, work-order, or naming decision follows from this relation
-  referenceScheme: F.3 SenseCell and F.17 local-sense-basis interpretation
+  referenceScheme: FPFCoreReferenceScheme
   editionId: 2026-07-11
 
 LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
-  localSenseCellRef: SenseCell(FPF-Seminar-Teaching-2026-07-11, DemonstrativeUnfoldingSlice-mantra)
+  localSenseCellRef: SenseCell(FPFSeminarTeachingReferenceScheme-2026-07-11, DemonstrativeUnfoldingSlice-mantra)
   basisEpistemeRef: SeminarExpression.FPFPracticalUse.2026-07-11
-  basisEpistemeKindRef: U.EpistemePublication
   basisPublicationUnitRef: SeminarExpression.FPFPracticalUse.2026-07-11.Slides8-10
-  boundedContextRef: English-language FPF seminar teaching, edition 2026-07-11
 
 LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
   entityOfConcernRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
   entityOfConcernKindRef: LocalSenseBasisRelation@Context
-  boundedContextRef: English-language FPF seminar teaching, edition 2026-07-11
   viewpointRef: FPF Seminar Participant Viewpoint
-  subjectRef: <LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11, English-language FPF seminar teaching 2026-07-11, FPF Seminar Participant Viewpoint>
   claimGraph:
     supportedSenseClaim: a short repeatable explanatory walkthrough used to hold the whole solution structure in attention
     admittedUseClaim: support the bounded teaching sense from the seminar expression
     nonAdmittedUseClaim: the slide carrier does not become the sense, naming settlement, method, plan, or work
-  referenceScheme: F.3 SenseCell and F.17 local-sense-basis interpretation
+  referenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
   editionId: 2026-07-11
-BridgeCardId: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
-BridgeKind: Narrower-than
-Direction: seminar CellB to public CellA only
-CL: 2
-LossNotes: the public sense omits repeated speech, remembered replay, and seminar attentional function
-CounterExampleOrInvariantEvidence: a public walkthrough may be read once without mnemonic repetition
-AdmittedUse: Naming-only from seminar mantra to public demonstrative walkthrough and the same governed value
-NonAdmittedUse: no reverse substitution and no inference of method, plan, order, authority, work, or teaching-medium identity
-RevisionTrigger: context edition, observed loss, local label, or governed value changes
+
+LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
+  localSenseCellRef: SenseCell(FPFSeminarTeachingReferenceScheme-2026-07-11, DemonstratedPatternUseRow-mantra-move)
+  basisEpistemeRef: SeminarExpression.FPFPracticalUse.2026-07-11
+  basisPublicationUnitRef: SeminarExpression.FPFPracticalUse.2026-07-11.Slides61-62
+
+LocalSenseBasisRelationDescription.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
+  entityOfConcernRef: LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
+  entityOfConcernKindRef: LocalSenseBasisRelation@Context
+  viewpointRef: FPF Seminar Participant Viewpoint
+  claimGraph:
+    supportedSenseClaim: one shown pattern-use continuation with its Solution, expected result, and current condition inside a mantra
+    admittedUseClaim: support the bounded teaching sense of mantra move
+    nonAdmittedUseClaim: the slide carrier does not become the row, pattern use, plan, or performed work
+  referenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
+  editionId: 2026-07-11
 ```
 
-The local relation species and its SlotKind, ValueKind, RefKind, direction, dependence, and identity are declared in `F.17:5.1`. `SeminarExpression.FPFPracticalUse.2026-07-11` is the seminar content as a `U.EpistemePublication`; the `.pptx` and extracted Markdown are separate carriers or renderings.
+`F.17:5.1` governs these scheme-based cells and basis relations, including their SlotKinds, value and reference kinds, direction, dependence, obtaining condition, and identity. The retained `@Context` suffix names lineage-compatible bounded local use; it introduces no context participant or `U.BoundedContext` slot.
 
-The bridge is directional; shared reference to one governed value does not erase the sense difference. It governs only the two senses of this CGUS-demonstrative value and does not govern every local pattern mantra. The seminar publication expression supplies the teaching problem and the local-sense basis; its carriers do not. Dictionaries supply English lexical and etymological evidence, while F.18 plus reader-use tests decide the bounded names. A changed NameCard therefore reopens naming without silently changing the public or teaching sense. A changed SenseCell address, basis-episteme edition, bounded context, or cited publication unit reopens the corresponding `LocalSenseBasisRelation@Context`; a changed supported-sense claim or use boundary opens a new `LocalSenseBasisRelationDescription@Context` edition. F.18 remains the naming procedure.
+`SeminarExpression.FPFPracticalUse.2026-07-11` names the seminar-content episteme. The publication occurrence that makes one edition available and the `.pptx` and extracted Markdown carriers remain separate. The public basis relation instead uses the current A.22.CGUS pattern episteme as its basis and narrows that basis to the ordinary-use publication unit.
+
+The cross-scheme relation and the row's named use are different objects:
+
+```text
+BridgeOccurrence:
+  BridgeOccurrenceRef: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
+  SourceSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
+  ReceivingSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
+  BridgePredicateProfile:
+    BridgeKind: Narrower-than
+    RelationOrientation: source SeminarTeaching sense is narrower than receiving FPFPublic sense
+    EndpointSenseReadings: both are DemonstrativeExplanation senses of the governed A.22.CGUS value; the seminar sense additionally requires repetition and attentional use
+    RelationSpecificCondition: every demonstrative episteme classified by the seminar sense is also classified by the public walkthrough sense, while some public walkthroughs are not seminar mantras
+    ApplicabilityOrAsOfBasis: FPFCoreReferenceScheme and FPFSeminarTeachingReferenceScheme-2026-07-11 at the named sense editions
+    BooleanTruthCondition: true only while the proper-specialization condition holds for those endpoint editions
+    RequiredDependencies: both F.17 SchemeSenseCells resolve, their cited local-sense basis claims hold, and the A.22.CGUS governed-value identity remains unchanged
+
+C.2.1 claim about this named use:
+  ClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
+  EntityOfConcern: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
+  EffectiveReferenceScheme: FPFCoreReferenceScheme
+  ClaimGraph:
+    ProposedUse: a seminar use of "mantra" points to the public demonstrative-walkthrough term and its governed value
+    Direction: SeminarTeaching sense -> FPFPublic sense
+    CorrespondenceRule: preserve reference to the same governed A.22.CGUS value and do not infer that every public walkthrough is a mantra
+    PermittedLossTolerance: repetition, remembered replay, and attentional function may be omitted; no method, plan, order, authority, Work, or teaching-medium claim may be carried
+    Polarity: affirmative
+
+A.10 evidence reliance for this claim:
+  EvidenceProvenanceRelationRef: EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
+  TargetClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
+  BoundedEvidenceUse: use the seminar word "mantra" to point to the public demonstrative-walkthrough term and the same governed A.22.CGUS value
+  EvidencePaths:
+    PublicSenseBasisRecord: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11 --basisEpistemeRef--> A.22.CGUS --basisPublicationUnitRef--> A.22.CGUS:4.3.3-Ordinary-bounded-use --carriedBy--> _current-pattern-hosts/A.22.CGUS-Constraint-Governed-Unfolding-Structure.md
+    SeminarSenseBasisRecord: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11 --basisEpistemeRef--> SeminarExpression.FPFPracticalUse.2026-07-11 --basisPublicationUnitRef--> SeminarExpression.FPFPracticalUse.2026-07-11.Slides8-10 --carriedBy--> FPF_first_seminar_reworked_slidement.pptx@sha256:325B50C5D062479434ECCABFF0B8B3E316825CAA5E1646A61D25183B90B9CA89 (Git blob e990847d37ddca59d15a9cc434fad15381a2122d) and fpf_first_seminar_slides.content.md@sha256:B38C6F5FBC85CAF9986D2141095C90DAFFAB6F3FEA607ACE7FA6CE60EB18228D (Git blob 34fd989b646aa4dc9f2879cab40d2e6dde989b1b)
+    NameSettlementRecord: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching --carriedBy--> _current-pattern-hosts/A.22.CGUS-Constraint-Governed-Unfolding-Structure.md
+    DictionaryEvidenceRecord-MW: Merriam-Webster "mantra" entry, accessed 2026-07-11 --derivedFrom--> https://www.merriam-webster.com/dictionary/mantra
+    DictionaryEvidenceRecord-OALD: Oxford Advanced Learner's Dictionary "mantra" entry, accessed 2026-07-11 --derivedFrom--> https://www.oxfordlearnersdictionaries.com/definition/english/mantra
+    ReaderCueEvidenceRecord: Zhu, Reinecke, and Mitra, Language Scent, arXiv:2604.03604 (2026) --derivedFrom--> https://arxiv.org/abs/2604.03604; supports contextual cues, not equivalence or fitness for every reader
+  EvidenceProducingOrInterpretingWork: absent from this fixture; no Work occurrence is used as a premise
+  CurrentRoleAssignment: absent from this fixture
+  MethodTrace: absent from this fixture
+  CurrentnessAndWindow: applies to the named 2026-07-11 sense as evidenced by the exact current seminar carrier editions above; both Git blobs must resolve, both carrier paths must retain the cited raw-SHA-256 bytes, and the cited NameCard and A.22.CGUS governed value must remain current
+  UnsupportedAttemptedUse: reverse substitution, structural inference, or any method, plan, authority, Work, teaching-medium identity, publication occurrence, or other receiving occurrence
+  ReopenOrStop: stop this naming use and reopen its A.10 classification if either cited Git blob does not resolve, either carrier path no longer contains its cited raw-SHA-256 bytes, any other cited item or provenance edge is missing or stale, either sense, NameCard, or governed value changes, or reader evidence shows that "mantra" obscures rather than locates the public value
+  RelianceDisposition: pass only for the named bounded naming use while every path and currentness condition above holds
+  B.3 branch: no assurance claim is made and this reversible naming use does not meet the material-reliance threshold
+BridgeCard:
+  EntityOfConcern: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
+  EffectiveReferenceScheme: FPFCoreReferenceScheme
+  ClaimGraph:
+    ClaimMode: actual
+    BridgeClaim: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11 obtains under the BridgePredicateProfile above
+    BoundedUseClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
+    EvidenceProvenanceRelationRef: EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
+    RelianceDispositionClaim: pass only for the named SeminarTeaching-to-FPFPublic naming use
+    ObservedLossClaim: the broader public sense does not require repeated speech, remembered replay, or the seminar attentional function
+    CounterExampleClaim: a public demonstrative walkthrough may be read once and understood without being repeated or used as a mnemonic
+    CurrentnessClaim: use this card only while the named Bridge, bounded-use claim, evidence-provenance relation, local reliance disposition, 2026-07-11 sense editions, and current A.22.CGUS governed value remain current
+    NearestNonUseClaim: do not use it for FPFPublic-to-SeminarTeaching substitution or to infer a method, plan, order, authority, Work, teaching-medium identity, publication occurrence, or other receiving occurrence
+```
+
+The Bridge is `Narrower-than` because the seminar sense adds repetition and attentional use. That relation orientation grants no use. The separate affirmative claim states the exact SeminarTeaching-to-FPFPublic naming use, direction, rule, and tolerance; the A.10 relation and `RelianceDisposition=pass` support reliance only on that claim. The B.3 branch is absent because no assurance claim is made and this bounded reversible naming use stays below its material-reliance threshold; a later threshold would require B.3's first-claim decision and would not create a positive claim. Neither the NameCards, Bridge, claim, card, nor passing disposition authorizes publication, makes an E.17/E.24.PUB publication occurrence obtain, or proves that publication Work occurred.
+
+The Bridge governs only these two senses of the CGUS-demonstrative value, not every local pattern mantra, and it does not establish the independently governed value identity. The seminar-content episteme supplies the teaching problem and local-sense basis; its publication occurrence and carriers do not. Current English dictionary evidence bears on the lexical choice but does not establish the Bridge or the bounded-use claim by itself. F.18 and reader-use evidence decide the names. A changed NameCard reopens naming without silently changing either sense. A changed SenseCell address, basis-episteme edition, or cited publication unit reopens the corresponding `LocalSenseBasisRelation@Context`; a changed supported-sense claim or use boundary opens another `LocalSenseBasisRelationDescription@Context` edition. A changed Bridge endpoint or profile reopens the relation, while a changed proposed use, rule, tolerance, evidence, or reliance reopens only its separately governed claim or reliance object.
 
 #### A.22.CGUS:4.4 - Direct Governing Pattern Exits
 
@@ -447,6 +533,8 @@ Some CGUS uses need dependent records that keep adjacent method, work, evidence,
 For method and work linkage, use `MethodWorkUnfoldingLinkage@Context`, governed by A.15, only when a named receiving use relies on that relation remaining inspectable across method, method description, role assignment, capability-fit condition, work plan, readiness, performed work, evidence, assurance, or gate positions. If only one method, work-plan, readiness, performed-work, evidence, assurance, or gate claim is current, use that direct governing record instead.
 
 For architecture use, use the C.32.P2S-owned `ArchitectureUnfoldingStructureUse@Project` only when a named unfolding structure is being used as architecture-relevant structure in problem-to-structure architecturing. If the current claim is only grounded architecture, structural view, architecture description, decision, ADR-like projection, measurement, eval, or performed realization work, use the direct pattern for that claim.
+
+In `ArchitectureUnfoldingStructureUse@Project` and `ArchitectureDecisionRelation@Project`, `@Project` is a compatibility and retrieval cue only. It establishes no project entity, composite-work identity, context, authority, or parthood. When the current use is genuinely local to one actual project, C.32.P2S or C.32.PAD must name the exact composite `U.Work` and the direct relation that connects the unfolding-structure use or architecture decision to that work. A.22.CGUS neither infers nor owns that project-work relation.
 
 This keeps A.22.CGUS thin: it governs the constraint-governed unfolding structure and its safe next-use boundary, while A.15, C.30, C.32, evidence, gate, publication, and domain patterns govern the adjacent records that carry stronger claims.
 

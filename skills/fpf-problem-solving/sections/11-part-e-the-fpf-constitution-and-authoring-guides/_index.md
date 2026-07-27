@@ -48,7 +48,7 @@
 - [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it](43-e-17-aud-lhr---publicationunit-stability-discipline-and-loca.md) (365 lines) — Placement. Narrow local lexical-head repair pattern inside the broader PublicationUnit Stability Discipline.
 - [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary EntityOfConcern Discipline - publication-unit stability over one primary EntityOfConcern](44-e-17-aud-ootd---publicationunit-stability-discipline-and-pub.md) (319 lines) — Placement. Narrow publication-unit stability pattern inside the broader PublicationUnit Stability Discipline.
 - [E.18 - Transformation Flow Structure](45-e-18---transformation-flow-structure.md) (586 lines) — Tech-name: TransformationFlowStructure (pattern label)
-- [E.18.1 - P2W Problem-to-Work Carry-Through](46-e-18-1---p2w-problem-to-work-carry-through.md) (637 lines) — Tech-name: ProblemToWorkCarryThrough
+- [E.18.1 - P2W Problem-to-Work Carry-Through](46-e-18-1---p2w-problem-to-work-carry-through.md) (598 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](47-e-18-2---transformation-flow-mathematical-description.md) (215 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](48-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (260 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
 - [E.19 - Pattern Quality Gates: Review and Refresh Profiles](49-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (745 lines) — Type: Architectural pattern
@@ -59,4 +59,4 @@
 - [E.24 - U.Ontic and Ontic Introduction Discipline](54-e-24---u-ontic-and-ontic-introduction-discipline.md) (660 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.CD - Ontic Candidate Detection and First-Use Disposition](55-e-24-cd---ontic-candidate-detection-and-first-use-dispositio.md) (326 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.PUB - Ontic Description and Publication Discipline](56-e-24-pub---ontic-description-and-publication-discipline.md) (246 lines) — Type: Part E FPF authoring discipline pattern
-- [E.24.UK - U-kind Admission and Ontic Settlement](57-e-24-uk---u-kind-admission-and-ontic-settlement.md) (466 lines) — Type: Part E FPF authoring discipline pattern
+- [E.24.UK - U-kind Admission and Ontic Settlement](57-e-24-uk---u-kind-admission-and-ontic-settlement.md) (469 lines) — Type: Part E FPF authoring discipline pattern

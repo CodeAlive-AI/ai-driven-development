@@ -11,7 +11,7 @@
 
 **Use this pattern when** a receiving action needs to decide whether a claim, capability, or publication use covers one exact combination of standards, environment, local sense, platform, cohort, or time selectors.
 
-**First useful move.** Name the exact claim, its exact `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one; add a Bridge only for exact local-sense translation.
+**First useful move.** Name the exact claim, its exact `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, first name the obtaining F.9 Bridge, then state the separate affirmative C.2.1 claim for this translation's direction, rule, and tolerance. Before using the translated scope, establish evidence-based reliance through A.10 or assurance-based reliance through B.3.
 
 **What goes wrong if missed.** Teams infer coverage from a document, table, “current context” label, or selected structure; treat an unevaluated slice as excluded; or mint `ScopeDelimitationRelation` occurrences for included and excluded slices. Those moves collapse predicate truth, evaluation, representation, and structure.
 
@@ -29,7 +29,7 @@ Source words such as *applicability*, *envelope*, *generality*, and *capability 
 **Cross‑references.**
 — **C.2.3** (Unified Formality **F**) and **C.2.2** (F–G–R): this pattern **defines G** as `U.ClaimScope`.
 — **A.2.2** (Capabilities): capability gating now **SHALL** use `U.WorkScope`.
-— **F.9** (Bridges and CL): use an exact obtaining Bridge occurrence only when membership content must be translated across exact local senses; a different label or reference scheme alone does not trigger translation. Congruence and loss qualify the receiving reliance claim, not membership truth.
+— **F.9** (Bridges): use an exact obtaining Bridge only when membership content must be translated across exact local senses; a different label or reference scheme alone does not trigger translation. F.9 supplies the direct semantic relation only. The separate C.2.1 claim states the exact translation use, direction, rule, tolerance, and polarity; A.10 or B.3 governs reliance on that claim.
 — **Part E** (Publication discipline; e.g., **E.17 MVPK**): publication views, cards, and lanes MAY declare `U.PublicationScope` to bound **where** a publication is admissible; `U.PublicationScope` MUST NOT widen the underlying `U.ClaimScope`/`U.WorkScope`. (USM supplies the scope calculus; Part E supplies publication discipline.)
 
 ### A.2.6:1 - Problem frame - Purpose and Audience
@@ -43,7 +43,7 @@ With USM, a practitioner can:
 * declare exact slice selectors and an exact scope predicate;
 * evaluate membership as true, false, or currently unknown;
 * combine exact scopes by intersection or independently supported union;
-* translate only when exact local senses require an obtaining F.9 Bridge occurrence; and
+* translate only when exact local senses require an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about this translation, and the current A.10 or B.3 reliance branch; and
 * stop without inventing a relation occurrence, context object, or selected structure.
 
 A.2.6 defines the scope values, membership predicate, mathematical scope algebra, exact reusable A.6.1 operation declarations, and use boundaries. It does not decide a gate, perform evaluation work, establish evidence, identify an A.22 structure, or prescribe which claim should widen.
@@ -71,7 +71,7 @@ In **F–G–R**:
 
 * **F** (formality) is “how strictly a claim is expressed” (C.2.3).
 * **G** must be “**where it holds**,” not “how abstract it sounds.”
-* **R** measures evidence and decays/penalties (freshness, CL).
+* **R** carries evidence and reliance currentness. Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
 
 When **G** is a **set‑valued scope**, composition becomes precise: serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion**—but only where each line is supported.
 
@@ -88,14 +88,14 @@ When **G** is a **set‑valued scope**, composition becomes precise: serial depe
 | Force                                             | Tension to resolve                                                                                                                                               |
 | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **One mechanism vs two worlds**                   | We must serve both **knowledge about the world** (claims) and **doing work in the world** (capabilities) **without** duplicating concepts.                       |
-| **Exact local interpretation vs interoperability** | Scope membership must be checkable under an effective reference scheme, while exact local-sense translation uses an obtaining F.9 Bridge occurrence without redefining predicate truth. |
+| **Exact local interpretation vs interoperability** | Scope membership must stay checkable under its effective reference scheme. Cross-scheme translation needs an obtaining F.9 Bridge for the direct semantic relation, a separate C.2.1 claim for the proposed translation, and current A.10 or B.3 reliance, without redefining membership truth. |
 | **Expressivity vs minimal vocabulary**            | Teams need to capture rich conditions (time windows, environment, versions) but not explode the lexicon into variants such as “envelope”, “applicability”, or “generality”.                |
 | **Static content vs operational change**          | Claims may hold broadly while current operations are narrow (or vice versa). The mechanism must keep “what is true” and “what can be done” aligned yet distinct. |
 | **Open‑world exploration vs closed‑world gating** | Exploration benefits from permissive drafts; **gates** require crisp, observable checks. The same scope object must support both.                                |
 
 ### A.2.6:5 - Solution - Overview
 
-USM keeps four things distinct:
+USM keeps the following things distinct:
 
 * **`U.ContextSlice`** - one addressable value identified independently of the predicate that later inspects it;
 * **`ContextSliceSet`** - the mathematical ValueKind `Set[U.ContextSlice]`, used for scope extensions and finite target sets;
@@ -103,7 +103,7 @@ USM keeps four things distinct:
 * **`U.ClaimScope`**, **`U.WorkScope`**, and **`U.PublicationScope`** - C.3 specializations for claim, capability, and publication uses;
 * **membership semantics, mathematical scope algebra, and reusable operations** - three separate layers: the bivalent predicate, its C.29 set representations, and the exact A.6.1 declarations used only when a receiving use needs an actual application and binding. None is a field or relation occurrence stored on the object being checked.
 
-The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersection handles serial dependence. `spanUnion` is allowed only for independently supported areas. `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge occurrence; a different label or reference scheme alone does not select translation.
+The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersection handles serial dependence. `spanUnion` is allowed only for independently supported areas. `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge and a separate affirmative C.2.1 claim names this translation's direction, rule, and tolerance. A receiving guard relies on that claim only through the current passing A.10 branch or positive B.3 branch; a different label or reference scheme alone selects none of these.
 
 One exact `U.ClaimScope` may participate in a `ModelApplicabilityRelation`. That relation, its actual obtaining extent, a selected A.22 structure, a membership evaluation, and a table displaying members remain separate.
 
@@ -122,18 +122,18 @@ Keep three layers explicit:
 **Mathematical semantics.**
 
 ```text
-member(x, S)                  : Bool
-scopeSubset(S1, S2)           := for every x, member(x,S1) implies member(x,S2)
-coversSet(S, T)               := for every x in T, member(x,S)
-extension(intersect(F))       := intersection of extension(S) for S in F
-extension(SpanUnion(F))       := union of extension(S) for S in F
-extension(translate(B,S,RS))  := the target-slice image of extension(S) admitted by Bridge occurrence B under RS
-widen(S0,S1)                  := extension(S0) proper-subset extension(S1)
-narrow(S0,S1)                 := extension(S1) proper-subset extension(S0)
-refit(E0,E1,S)                := expressions E0 and E1 both designate exact scope S
+member(x, S)                        : Bool
+scopeSubset(S1, S2)                 := for every x, member(x,S1) implies member(x,S2)
+coversSet(S, T)                     := for every x in T, member(x,S)
+extension(intersect(F))             := intersection of extension(S) for S in F
+extension(SpanUnion(F))             := union of extension(S) for S in F
+extension(translate(B,C_use,S,RS))  := the target-slice image of extension(S) selected by C_use's rule and tolerance over Bridge B under RS
+widen(S0,S1)                        := extension(S0) proper-subset extension(S1)
+narrow(S0,S1)                       := extension(S1) proper-subset extension(S0)
+refit(E0,E1,S)                      := expressions E0 and E1 both designate exact scope S
 ```
 
-Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finite scope family, `B` is an exact obtaining F.9 Bridge occurrence, and `RS` is the exact target reference scheme. `scopeSubset`, `coversSet`, `widen`, `narrow`, and `refit` are mathematical predicates or comparison classifications, not actual A.6.1 operations in this edition. Work that authors or compares scope declarations remains separately governed.
+Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finite scope family, `B` is an exact obtaining F.9 Bridge, `C_use` is the exact current C.2.1 claim with `B` as EntityOfConcern and affirmative polarity for this named scope-translation use, and `RS` is the exact target reference scheme. The claim's content names the direction, scope-correspondence rule, and permitted-loss tolerance used to select the target image; its effective ReferenceScheme makes those designations interpretable. `scopeSubset`, `coversSet`, `widen`, `narrow`, and `refit` are mathematical predicates or comparison classifications, not actual A.6.1 operations in this edition. The formula represents the claim's proposed mapping but proves neither the claim nor reliance on it and declares no operation application. Work that authors or compares scope declarations remains separately governed.
 
 **A.6.1 declaration A — `ScopeMembershipEvaluationMechanism`.**
 
@@ -187,11 +187,12 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 |  | argument `independenceBasis` | exact episteme stating the support lines and their required independence | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact basis actually used by this application | exactly 1 |
 |  | result `derivedScope` | exact extensional scope returned for `SpanUnion(scopeFamily)` | `U.Scope` | `ByValue` | the application actually returns this independently identifiable scope value | exactly 1 |
 | `deriveTranslatedScope` | argument `sourceScope` | exact source scope whose extension is mapped | `U.Scope` | `ByValue` | the application actually maps this exact scope value | exactly 1 |
-|  | argument `bridgeOccurrence` | exact obtaining F.9 Bridge occurrence whose mapping is used | `U.Relation` | `ByGovernedReference` | the reference resolves to the exact obtaining occurrence actually used by this application | exactly 1 |
+|  | argument `bridgeOccurrence` | exact obtaining F.9 Bridge whose direct semantic relation is used | `U.Relation` | `ByGovernedReference` | the reference resolves to the exact obtaining occurrence actually used by this application; it carries no use-specific rule, tolerance, or reliance | exactly 1 |
+|  | argument `scopeTranslationClaim` | exact current C.2.1 claim that says the bound Bridge is suitable for this named scope translation | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact affirmative claim whose EntityOfConcern is the bound Bridge and whose content names this use, direction, rule, and tolerance | exactly 1 |
 |  | argument `targetReferenceScheme` | exact scheme under which target slices and their local senses are interpreted | `U.ReferenceScheme` | `ByValue` | the application actually interprets the returned target-slice extension under this scheme | exactly 1 |
-|  | result `derivedScope` | exact extensional scope returned for the supported target-slice image | `U.Scope` | `ByValue` | the application actually returns this independently identifiable scope value | exactly 1 |
+|  | result `derivedScope` | exact extensional scope returned for the target image selected by the claim's rule and tolerance | `U.Scope` | `ByValue` | the application actually returns this independently identifiable scope value | exactly 1 |
 
-**ApplicationPredicate rules.** `deriveIntersectionScope` returns the scope represented under C.29 by `intersection of extension(S) for S in scopeFamily`. `deriveSpanUnionScope` implements the already established `SpanUnion`: it is admitted only when `independenceBasis` establishes the section 7.3 independence condition and returns the scope represented by `SpanUnion(scopeFamily)`. `deriveTranslatedScope` is admitted only when the bound Bridge occurrence obtains and returns the scope represented by `translate(bridgeOccurrence, sourceScope, targetReferenceScheme)`. The formulae alone declare no application or binding.
+**ApplicationPredicate rules.** `deriveIntersectionScope` returns the scope represented under C.29 by `intersection of extension(S) for S in scopeFamily`. `deriveSpanUnionScope` implements the already established `SpanUnion`: it is admitted only when `independenceBasis` establishes the section 7.3 independence condition and returns the scope represented by `SpanUnion(scopeFamily)`. `deriveTranslatedScope` is admitted only when the bound Bridge obtains and the bound C.2.1 claim has that Bridge as EntityOfConcern, affirmative polarity, and content naming this scope-translation use, its direction, rule, and tolerance. The application applies that rule within that tolerance and returns the scope represented by `translate(bridgeOccurrence, scopeTranslationClaim, sourceScope, targetReferenceScheme)`. The formulae and claim alone declare no application or result binding.
 
 For every governed-reference argument, record presence, citation, or a compatible token is insufficient: the reference must resolve to the exact value actually used. For every result row, the result binding obtains only when that exact application returns the independently identifiable extensional scope. The application and formula do not constitute that scope or make any membership predicate true.
 
@@ -199,15 +200,17 @@ For every governed-reference argument, record presence, citation, or a compatibl
 
 `ApplicationExtentRule`: the application begins after every required argument is bound for that invocation and ends when the derived-scope value is returned or the invocation stops without a result. A result-binding extent cannot begin before that scope value is returned.
 
-**`ScopeDerivationMechanism` LawSet.** Serial composition uses intersection. Parallel publication uses the one established `SpanUnion` and preserves only slices supplied by independently supported lines. Translation returns only the exact target-slice image admitted by the bound obtaining F.9 Bridge occurrence. No derivation operation widens support by itself.
+**`ScopeDerivationMechanism` LawSet.** Serial composition uses intersection. Parallel publication uses the one established `SpanUnion` and preserves only slices supplied by independently supported lines. Translation returns only the target-slice image selected by the bound claim's rule and tolerance over the bound obtaining F.9 Bridge. No derivation operation widens support by itself.
 
-**`ScopeDerivationMechanism` AdmissibilityConditions.** Intersection and `SpanUnion` require at least two exact scopes. `deriveSpanUnionScope` additionally requires the bound independence basis to meet section 7.3. `deriveTranslatedScope` requires an exact obtaining Bridge occurrence whose mapping covers the claimed target image. A missing condition blocks that derivation application rather than creating a guessed scope.
+**`ScopeDerivationMechanism` AdmissibilityConditions.** Intersection and `SpanUnion` require at least two exact scopes. `deriveSpanUnionScope` additionally requires the bound independence basis to meet section 7.3. `deriveTranslatedScope` requires both an exact obtaining Bridge and the exact affirmative C.2.1 claim whose named rule and tolerance select the claimed target image. A missing or non-obtaining Bridge or a missing or non-affirmative claim blocks that positive derivation application rather than creating a guessed scope; the latter does not negate an otherwise obtaining Bridge.
 
-**`ScopeDerivationMechanism` Applicability.** Name the exact source scopes and reference schemes required by the selected derivation. The receiving use names its exact `U.ClaimScope`, selected time when current, selected `CHR:ReferencePlane` only when plane-dependent, and derivation-specific conditions. `GammaTimePolicy` enters only when time changes membership; `ReferencePlane` is absent from ordinary set algebra.
+**`ScopeDerivationMechanism` Applicability.** Name the exact source scopes and reference schemes required by the selected derivation. For translation, also name the bound Bridge and separate C.2.1 claim. Before a receiving guard, assertion, publication, or structure selection relies on the returned scope, require either the exact A.10 evidence-provenance graph relation plus `RelianceDisposition=pass` for this bounded use, or a current positive B.3 assurance claim that carries this bounded assurance use and has its sufficient minimum reliance safety assurance record. Enter B.3 when an assurance claim is being made or its material-reliance threshold is met, and decide first whether a current assurance claim exists. The threshold requires the minimum record but does not create a positive claim.
 
-**`ScopeDerivationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the actual imported or provided declarations for `U.Scope` and, for translation, the exact F.9 Bridge declaration. The independence basis and particular Bridge occurrence are application arguments, not declaration-manifest entries by adjacency.
+A missing or non-affirmative use claim, a non-passing A.10 disposition, or a B.3 no-assurance-claim, insufficient-record, narrowed, rejected, withdrawn, abstaining, or blocked disposition stops or narrows the receiving use without changing membership truth or the Bridge. An A.10 pass or positive B.3 assurance claim supports reliance only for its named use; neither is legal, policy, or deontic authorization, and neither proves that a derivation application or another receiving object occurred. Any required authorization remains under its direct governor. The receiving use also names its exact `U.ClaimScope`, selected time when current, selected `CHR:ReferencePlane` only when plane-dependent, and derivation-specific conditions. `GammaTimePolicy` enters only when time changes membership; `ReferencePlane` is absent from ordinary set algebra.
 
-**`ScopeDerivationMechanism` neighboring objects.** A derivation can occur within dated calculation work governed by A.15.1. Its bound independence-basis episteme and Bridge occurrence retain their own identities and direct governors. The returned `U.Scope` is independently identified by its extension; neither the application nor its C.29 formula constitutes it. Evidence, publication, gate, and assurance claims remain with their direct owners. None of those objects, nor another derivation invocation, reidentifies this mechanism unless it reveals changed declaration content.
+**`ScopeDerivationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the actual imported or provided declarations for `U.Scope` and, for translation, the exact F.9 Bridge declaration and C.2.1 claim identity rules. The independence basis, particular Bridge, and particular scope-translation claim are application arguments, not declaration-manifest entries by adjacency. `scopeTranslationClaim` is only this declaration's argument label; it names no public claim kind. A.10 and B.3 reliance objects remain under their direct owners rather than becoming a common mechanism signature.
+
+**`ScopeDerivationMechanism` neighboring objects.** A derivation can occur within dated calculation work governed by A.15.1. Its bound independence-basis episteme, Bridge, and C.2.1 scope-translation claim retain their own identities and direct governors. The exact A.10 relation and disposition or B.3 claim and record govern reliance on the use claim; they are neither mechanism arguments nor results. The returned `U.Scope` is independently identified by its extension; neither the application nor its C.29 formula constitutes it. Evidence, publication, gate, assurance, and any downstream Work, assertion, relation, or publication occurrence remain with their direct owners. None of those objects, nor another derivation invocation, reidentifies this mechanism unless it reveals changed declaration content.
 
 **`ScopeDerivationMechanism` refinement or conservative extension.** A refinement preserves the inherited derivation operations, argument and result meanings, binding rules, application predicates, identity and extent, and the intersection, `SpanUnion`, and translation semantics while stating every strengthened law or admission condition. A conservative extension adds exact optional arguments, results, or operations without changing those inherited meanings or admitted uses.
 
@@ -274,7 +277,7 @@ A `BoundedModelUseStructure` may be selected over exact model-applicability and 
 
 **Expression.** State a Claim scope as an exact predicate or condition block over slice selectors: assumptions, parameter ranges, cohorts, platform or standard editions, exact local senses when current, and time conditions only when they change membership.
 
-**Algebra.** Serial dependencies use intersection. Independently supported areas may use `spanUnion` with the independence basis stated. `widen` and `narrow` change the declared set; `refit` preserves it. `translate` uses the exact F.9 branch below.
+**Algebra.** Serial dependencies use intersection. Independently supported areas may use `spanUnion` with the independence basis stated. `widen` and `narrow` change the declared set; `refit` preserves it. `translate` uses the section 7.5 Bridge-plus-use-claim branch and keeps reliance separate.
 
 #### A.2.6:6.4 - `U.WorkScope` — scope of doing Work (capability)
 
@@ -289,7 +292,7 @@ The use‑time admission requires **all** of: `WorkScope covers JobSlice` **AND*
 
 **Method–Work gating.** A Work step’s guard MUST check that the target slice is **covered** by the capability’s Work scope **and** that required measures and qualification windows are satisfied.
 
-**Composition and Delta-moves.** Work scope uses the same algebra as Claim scope (intersection / `spanUnion` / `translate` / `widen` / `narrow` / `refit`). Section 7.5 selects `translate` only for exact local-sense translation through an obtaining F.9 Bridge occurrence.
+**Composition and Delta-moves.** Work scope uses the same algebra as Claim scope (intersection / `spanUnion` / `translate` / `widen` / `narrow` / `refit`). Section 7.5 selects `translate` only for exact local-sense translation through an obtaining F.9 Bridge plus the separate affirmative C.2.1 claim and its current reliance branch.
 
 **Separation from knowledge.** A Work scope is a set-valued scope, not an assertion. The capability declaration uses it to delimit where a deliverability claim is evaluated. Measurements and monitoring may support that claim through separately governed evidence and reliance judgments; they do not make a slice a member.
 
@@ -307,7 +310,7 @@ These facets are **separate** from `U.WorkScope` and live in the **R‑lane** (a
   `PublicationScope(view_E) ⊆ ClaimScope(E)`.
 * If the publication is **about a capability `C`**:
   `PublicationScope(view_C) ⊆ WorkScope(C)`.
-* If the publication is **about a composition**, its scope is a subset of the intersection of the exact contributing scopes. When exact local senses require translation, translate each affected source scope through its exact obtaining F.9 Bridge occurrence before intersection; congruence and loss qualify R only.
+* If the publication is **about a composition**, its scope is a subset of the intersection of the exact contributing scopes. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are intersected.
 
 **Expression.** Declare `U.PublicationScope` as an exact predicate over only the `U.ContextSlice` selectors that restrict publication use: for example versioned standards, environment, audience, interface availability, exact local senses, or `gammaTime` when time changes membership. It may be narrower than the underlying scope but must not be wider.
 
@@ -370,25 +373,30 @@ USM already fixes composition: along a **dependent path** use **intersection**; 
 Early “G ladders” effectively encoded **abstraction/typing** (instances -> patterns -> formal classes/types -> up-to-iso). That is valuable **didactics**, but **not applicability**. We have already separated these concerns: **abstraction** is captured, if needed, by **`AbstractionTier (AT)`** as an optional facet; **applicability** is **`U.ClaimScope (G)`**.
 
 **4) A G ladder breaks locality and Bridge semantics.**
-When exact local senses require translation, an obtaining F.9 Bridge occurrence maps a scope set and its congruence or loss qualifies the receiving reliance assessment. There is no canonical way to translate an ordinal G level: the mapped area may be narrower or differently factored. USM translates exact sets only in that branch and keeps the reliance penalty in R rather than rewriting G.
+When exact local senses require translation, an obtaining F.9 Bridge establishes their direct semantic relation while a separate C.2.1 claim states the proposed mapping rule and tolerated loss. There is no canonical way to translate an ordinal G level: the mapped area may be narrower or differently factored. USM translates exact sets only through that bounded claim and keeps A.10 or B.3 reliance separate rather than rewriting G.
 
 **5) A G ladder duplicates ESG guards without adding decision power.**
 What teams often want to “compress into a G number” is actually (a) the quality of expression and (b) the completeness of the declared scope. The first is an F threshold; the second is handled by explicit guards: `Scope covers TargetSlice`, `gammaTime is explicit` only when membership varies with time, and a separate freshness-window check when current. A ladder for G adds confusion but no decision power.
 
 **Normative directive.**
-`U.ClaimScope (G)` **SHALL** remain a **set‑valued USM scope object**; **no ordinal or numeric ladder SHALL be defined** for G. If a profile needs scalar reporting, it MAY publish an explicit **report‑only** proxy **`CoverageMetric(G)`**, but **`CoverageMetric(G)` MUST NOT substitute for `G`** in norms, gates, bridge semantics, or CL routing. Authoring and gating **SHOULD** use **F thresholds** (C.2.3) and **explicit guard predicates** (A.2.6) rather than pseudo‑levels of G.
+`U.ClaimScope (G)` **SHALL** remain a **set‑valued USM scope object**; **no ordinal or numeric ladder SHALL be defined** for G. If a profile needs scalar reporting, it MAY publish an explicit **report‑only** proxy **`CoverageMetric(G)`**, but **`CoverageMetric(G)` MUST NOT substitute for `G`** in norms, gates, Bridge semantics, bounded-use claims, or reliance decisions. Authoring and gating **SHOULD** use **F thresholds** (C.2.3) and **explicit guard predicates** (A.2.6) rather than pseudo‑levels of G.
 
 #### A.2.6:7.5 - Translation across exact local senses
 
-Use the mathematical representation `translate(bridgeOccurrence, sourceScope, targetReferenceScheme)` only when the target membership predicate must express source conditions through exact local senses and an exact obtaining F.9 Bridge occurrence relates those senses. When a receiving use needs the actual calculation and its returned scope, use `deriveTranslatedScope` with those exact three arguments.
+Use translation only when ordinary designation resolution cannot settle the exact local senses needed by the target membership predicate. Then proceed in this order:
 
-Name the exact bridge participants, obtaining occurrence, congruence level, and loss. The translated value is another scope over target slices. A reference-scheme difference, different project label, or different slice designator alone establishes neither translation nor Bridge use.
+1. resolve the source and receiving F.17 `SchemeSenseCell` values and name the exact obtaining F.9 Bridge that relates them;
+2. state the proposed scope translation separately: name the source scope, target scheme, source-to-receiving direction, scope-correspondence rule, and tolerated loss, then cite the exact current C.2.1 claim with that Bridge as EntityOfConcern and affirmative polarity for this use;
+3. before a guard relies on the claim, require the exact A.10 evidence-provenance graph relation plus `RelianceDisposition=pass` for this bounded use; when an assurance claim is made or B.3's material-reliance threshold is met, first decide whether a current assurance claim exists, then require a current positive claim carrying this use with its sufficient minimum record, or stop or narrow the use under the exact non-positive B.3 disposition; and
+4. use `translate(Bridge, UseClaim, SourceScope, TargetReferenceScheme)` as the C.29 mathematical representation, or invoke `deriveTranslatedScope` with those same four values when one actual calculation and returned scope are needed.
 
-Any congruence penalty changes the separately governed reliance or evidence assessment. It does not make an included slice excluded, rewrite F or G, or become a scope member. Where known mapping loss changes the supported area, declare the narrower translated scope explicitly.
+The Bridge establishes the direct semantic correspondence. The separate claim selects this translation's direction, rule, and tolerance. A Bridge profile, Bridge Card, reference-scheme difference, project label, or slice designator cannot supply that claim or its reliance basis. A missing or non-obtaining Bridge blocks the semantic branch. A missing or non-affirmative use claim, a non-passing A.10 disposition, or a non-positive B.3 branch blocks reliance on the translation without making an otherwise obtaining Bridge false.
+
+Meeting B.3's threshold creates the minimum-record obligation, not a positive claim. A passing A.10 classification or positive B.3 assurance claim supports reliance only for the named use; neither authorizes it. Observed mismatch, calibration error, and counterexamples are evidence about the use claim. The permitted loss is the tolerance inside that claim. If the rule and tolerance support only a proper subset of the source area, return that explicitly narrower target scope. Neither the Bridge nor the claim supplies direct support for adding a slice, and neither makes membership true. The exact `deriveTranslatedScope` application remains an A.6.1 operation application; the claim and reliance basis do not prove that it occurred.
 
 #### A.2.6:7.6 - Δ‑Operations (Widen, Narrow, Refit)
 
-* **Delta-G+ (widen).** Monotone expansion: `S subsetOf S-prime`. Every added slice requires direct support under the receiving use; a Bridge occurrence by itself supplies translation, not support.
+* **Δ‑G+ (widen).** Monotone expansion: `S subsetOf S-prime`. Every added slice requires direct support under the receiving use; a Bridge and affirmative translation-use claim can define a mapping but supply no such support by themselves.
 * **ΔG− (narrow).** Monotone restriction: `S′ ⊂ S`. Often used to remove areas invalidated by new findings.
 * **Refit.** A different expression or parameterization designates the same extensional scope after normalization (for example, changing units or factoring common predicates). Refit MUST NOT alter membership and does not create another scope value.
 
@@ -400,7 +408,7 @@ Any congruence penalty changes the separately governed reliance or evidence asse
 
 #### A.2.6:7.7 - Invariants
 
-* **I-LOCAL.** Interpret membership under the effective reference scheme and exact local senses current to the declaration. Translate only through an obtaining F.9 Bridge occurrence when those senses differ.
+* **I-LOCAL.** Interpret membership under the effective reference scheme and exact local senses current to the declaration. Translate only through an obtaining F.9 Bridge plus the separate affirmative C.2.1 claim for that translation; keep A.10 or B.3 reliance outside membership truth.
 * **I‑SERIAL.** Serial scope is an **intersection**; it cannot grow by adding dependencies.
 * **I‑PARALLEL.** Parallel scope MAY grow by union, but only where **independently supported**.
 * **I‑WLNK.** Weakest‑link applies to **F** and **R** on dependency paths; **G** follows set rules (∩ / ⋃).
@@ -418,7 +426,7 @@ Any congruence penalty changes the separately governed reliance or evidence asse
 
 A scope is not owned by a `U.BoundedContext`. Interpret its predicate under the effective reference scheme and exact local senses named by the claim or scope declaration. Evaluate it against exact `U.ContextSlice` values.
 
-Do not assume that a similarly named selector elsewhere has the same sense. Use ordinary designation resolution when it suffices. Use `translate` only when exact local senses must be related through an obtaining F.9 Bridge occurrence.
+Do not assume that a similarly named selector elsewhere has the same sense. Use ordinary designation resolution when it suffices. Use `translate` only when exact local senses need an obtaining F.9 Bridge and a separate affirmative C.2.1 claim states the proposed translation's direction, rule, and tolerance; establish the current A.10 or B.3 reliance branch before acting on the returned scope.
 
 #### A.2.6:8.2 - Time selector `Γ_time`
 
@@ -426,7 +434,7 @@ When membership depends on time, the scope predicate and target slice name an ex
 
 #### A.2.6:8.3 - Standards, versions & notations
 
-When a standard, interface, or schema edition affects membership, name the exact edition. A notation change with faithful designation resolution does not change G. If exact local senses instead require an F.9 Bridge occurrence, its congruence and loss may affect R without redefining membership truth.
+When a standard, interface, or schema edition affects membership, name the exact edition. A notation change with faithful designation resolution does not change G. If exact local senses require translation, the F.9 Bridge establishes their relation, the separate C.2.1 claim states this translation's rule and tolerance, and A.10 or B.3 governs reliance; none redefines membership truth.
 
 #### A.2.6:8.4 - Determinism of evaluation
 
@@ -460,7 +468,7 @@ membershipResult := evaluateMembership(TargetSlice, ClaimScope, InterpretationBa
 
 Admit the scope condition only when the result is `true`. Stop on `false`. On `unknown`, abstain, obtain the missing input, narrow the attempted use, or apply a separately governed reliance policy. Evidence freshness, formality, time currentness, decision, and assurance remain separate predicates.
 
-Add a Bridge branch only when the membership predicate uses exact local senses that require translation. A different reference scheme or location label alone is not such a trigger.
+Add a translation branch only when the membership predicate uses exact local senses that ordinary designation resolution cannot align. Require the obtaining F.9 Bridge and the separate affirmative C.2.1 claim for this translation before deriving a scope, then require the current A.10 or B.3 reliance branch before the receiving guard relies on it. A different reference scheme or location label alone is not such a trigger.
 
 #### A.2.6:10.2 - Claim-scope guard family
 
@@ -476,7 +484,7 @@ Name the exact claim-bearing episteme, exact `U.ClaimScope`, and exact target sl
 
 **EG-3 - Unknown evaluation.** When a required selector, designation resolution, or translation input is unavailable, return `unknown` as the result binding of the exact `evaluateMembership` application, or as the result of the directly governed evaluation when no reusable application is current. Abstain or follow the exact receiving reliance policy; do not assert `member = false`. Add a C.2.1 result episteme only when a named receiving use needs the conclusion to persist. Use A.15.PROD only when the current claim is that dated work first constituted that episteme.
 
-**EG-4 - Translation.** When exact local senses differ and an obtaining F.9 Bridge occurrence relates them, derive the translated scope with `deriveTranslatedScope(SourceScope, ExactBridgeOccurrence, TargetReferenceScheme)`, then use that returned scope in `evaluateMembership`. Name congruence and loss separately. Scheme difference alone does not select this branch.
+**EG-4 - Translation.** When exact local senses differ, require the obtaining F.9 Bridge and the separate affirmative C.2.1 claim naming this scope translation's direction, rule, and tolerance. After the exact A.10 or B.3 branch supports reliance for that use, derive the scope with `deriveTranslatedScope(SourceScope, ExactBridgeOccurrence, ExactUseClaim, TargetReferenceScheme)`, then use that returned scope in `evaluateMembership`. Scheme difference alone does not select this branch.
 
 **EG-5 - Scope-value versus declaration change.** Widen or narrow only when the extension gains or loses at least one independently identified slice; that extension change identifies another `U.ClaimScope`. A changed predicate expression with the same exact extension is a refit: it preserves the exact scope value and may require another scope declaration or claim-bearing episteme edition under its direct governor. A result-record, table, or selected-structure change alone changes neither the scope value nor its declaration.
 
@@ -505,22 +513,23 @@ qualificationWindowHolds(capability, qualificationWindowPolicy, evaluationTime) 
 
 **WG-4 - Translation branch for capability use.**
 
-Translate `U.WorkScope` only when its condition predicates use exact local senses that differ from those needed by the job slice and an obtaining F.9 Bridge occurrence relates those senses. Name the exact bridge, congruence, and loss. A capability object and job slice carry no hidden `.Context` field that automatically selects this branch.
+Translate `U.WorkScope` only when its condition predicates use exact local senses that differ from those needed by the job slice. Require the obtaining F.9 Bridge and a separate affirmative C.2.1 claim naming this Work-scope translation's direction, rule, and tolerance; establish the exact A.10 or B.3 reliance branch before the capability guard uses the result. A capability object and job slice carry no hidden `.Context` field that automatically selects this branch.
 
-Known mapping loss may require an explicitly narrower translated Work scope. Any confidence penalty belongs to the separately governed reliance or evidence assessment, not to membership truth.
+Observed mapping loss is evidence about the use claim, and permitted loss is its tolerance. When the claim's rule and tolerance support only a subset, return an explicitly narrower Work scope. Neither fact changes membership truth by itself.
+
 **WG‑5 - Δ(WorkScope).**
 When widening Work scope (new operating ranges/platforms), the guard MUST require evidence at the new slices (measures + qualification windows). Refit (e.g., new units/parametrization) requires no new evidence.
 
 #### A.2.6:10.4 - Translation guard
 
-Use this branch only after an exact local-sense translation need and exact F.9 Bridge occurrence are current:
+Use this branch only after the exact local-sense translation need, the obtaining F.9 Bridge, and the separate affirmative C.2.1 claim for this translation are current. The claim names the source-to-receiving direction, scope-correspondence rule, and tolerated loss. Before the receiving guard relies on it, require the exact passing A.10 branch or a current positive B.3 assurance claim that carries this use with its sufficient required record.
 
 ```text
-translatedScope := deriveTranslatedScope(SourceScope, ExactBridgeOccurrence, TargetReferenceScheme)
+translatedScope := deriveTranslatedScope(SourceScope, ExactBridgeOccurrence, ExactUseClaim, TargetReferenceScheme)
 membershipResult := evaluateMembership(TargetSlice, translatedScope, InterpretationBasis)
 ```
 
-The source claim-bearing episteme designates `SourceScope`; it does not own that value as a hidden context field. The bridge occurrence relates exact local senses under F.9. Its congruence and loss qualify the receiving reliance claim. An unmapped slice yields `unknown` for the attempted evaluation unless the translated scope explicitly excludes it; it is not silently dropped and reported as false.
+The source claim-bearing episteme designates `SourceScope`; it does not own that value as a hidden context field. The Bridge relates exact local senses under F.9. The C.2.1 claim supplies this translation's rule and tolerance, and A.10 or B.3 supplies the separate reliance basis. None of them makes the A.6.1 operation application occur. An unmapped slice yields `unknown` for the attempted evaluation unless the returned scope explicitly excludes it; it is not silently dropped and reported as false.
 
 #### A.2.6:10.5 - Time selector
 
@@ -544,9 +553,17 @@ The same `G_adhesive` may participate in two independently governed model-applic
 
 #### A.2.6:11.2 - Translation only when local senses require it
 
-An assembly use expresses temperature through an exact local calibration sense different from the laboratory sense used in `G_adhesive`. An obtaining F.9 Bridge occurrence relates those two senses and declares a ±2 °C loss. `deriveTranslatedScope(G_adhesive, bridgeOccurrence, AssemblyReferenceScheme)` returns the explicitly narrowed receiving scope `[122,148]°C`; the receiving membership evaluation uses that scope.
+An assembly use expresses temperature through an exact local calibration sense different from the laboratory sense used in `G_adhesive`. F.9 Bridge `B-lab-assembly-temp` obtains between those two cells under its calibration-correspondence profile; the profile contains no translation-use rule or loss tolerance.
 
-If the receiving use merely uses another designation for the same sense under an ordinary resolvable reference scheme, no Bridge and no translation are introduced.
+Separate C.2.1 claim `C-adhesive-scope-translation` has that Bridge as EntityOfConcern and affirmative polarity. Its content names use `translate G_adhesive for the assembly membership check`, direction laboratory-to-assembly, the calibration rule for mapping the source interval, and tolerance `no selector-meaning loss and at most 2 °C boundary uncertainty`.
+
+Use that translation only while exact A.10 relation `EP-adhesive-scope-translation` connects the claim and that bounded use to evidence record `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25`. Provenance edge `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25 --carriedBy--> CalibrationComparisonRegister.Calib-v3-to-AssemblyCalibration-v5.2026-07-25.csv` names its carrier. The window runs from `2026-07-25` through `2026-10-23` and closes earlier if either calibration edition, the mapping rule, or the 2 °C tolerance changes.
+
+The path supports neither reverse translation, a mapping outside the named rule or tolerance, nor a claim that the A.6.1 application or membership evaluation occurred. This fixture asserts no evidence-producing or evidence-interpreting Work, current role assignment, or method trace. If the record, carrier, or provenance edge is missing or stale, or the window closes, stop before translation and set `RelianceDisposition=reopen`; otherwise `RelianceDisposition=pass` applies only to this bounded use. No assurance claim is made and the use does not meet B.3's material-reliance threshold.
+
+The actual A.6.1 application `deriveTranslatedScope(G_adhesive, B-lab-assembly-temp, C-adhesive-scope-translation, AssemblyReferenceScheme)` applies the named rule and tolerance and returns the explicitly narrowed receiving scope `[122,148]°C`. The receiving membership evaluation uses that scope. The Bridge and claim alone do not prove that this calculation occurred or that any target slice is a member.
+
+If the receiving use merely uses another designation for the same sense under an ordinary resolvable reference scheme, introduce no Bridge, use claim, or translation.
 
 #### A.2.6:11.3 - Capability: robotic weld Work scope
 
@@ -580,10 +597,15 @@ Controller certificate age does not change Work-scope membership in this case. W
 * **Model claim:** “AUC >= 0.92 on cohort K, pipeline P, feature sense `Training.F`.”
 * **Claim scope:** `{cohort=K, pipeline=P, exactLocalSense=Training.F}`. No `gammaTime` selector is present because this example does not claim that model applicability changes with the slice time.
 * **Target slice:** product `On-Device@v7`, pipeline `P-prime`, feature sense `Device.F-prime`.
-* **Translation trigger:** ordinary designation resolution fails because `Training.F` and `Device.F-prime` have different declared semantics, not merely different labels. An exact obtaining F.9 Bridge occurrence relates those senses and records a lossy subset mapping with `CL=1`.
-* **Evidence-freshness guard:** at evaluation time `2026-07-25`, require the A.10 evidence-provenance path for `TrainingEvaluationEvidence` to satisfy its declared 180-day relevance window; this does not enter Claim scope.
-* **Guard:** bind `translatedScope := deriveTranslatedScope(G, ExactBridgeOccurrence, ProductReferenceScheme)`, then evaluate `evaluateMembership(TargetSlice, translatedScope, InterpretationBasis)`; separately require the chosen formality and evidence-freshness predicates. The translated scope covers only the supported subset, and the low congruence reduces R rather than changing membership truth.
-* **Outcome:** admit only a target slice in the translated subset; otherwise return false or unknown according to the available translation input.
+* **Translation trigger:** ordinary designation resolution fails because `Training.F` and `Device.F-prime` have different declared semantics, not merely different labels. Exact F.9 Bridge `B-training-device-feature` obtains between those cells under a lossy-subset correspondence profile; the profile carries no device-use rule or tolerance.
+* **Bounded translation claim:** exact current C.2.1 claim `C-device-feature-scope-translation` has that Bridge as EntityOfConcern and affirmative polarity. It names use `translate the training claim scope for the On-Device@v7 membership check`, direction training-to-device, the subset-mapping rule, and tolerance `no feature-kind substitution and no target slice outside the tested mapped subset`.
+* **Evidence and reliance:** Before translating, verify that exact A.10 relation `EP-device-feature-scope-translation` connects claim `C-device-feature-scope-translation` and this bounded use to both records below.
+  * **Mapping evidence:** `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25`, with exact carrier edge `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25 --carriedBy--> MappingTestReport.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25.json`.
+  * **Training evidence:** `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25`, with exact carrier edge `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25 --carriedBy--> TrainingEvaluationReport.K-P-TrainingF.2026-07-25.json`.
+  * **Window and stop:** the 180-day window runs from `2026-07-25` through `2027-01-21` and closes earlier if pipeline `P` or `P-prime`, either feature-sense edition, or the tested mapped subset changes. If a record, carrier, or edge is missing or stale, the window closes, or a named dependency changes, stop before translation and set `RelianceDisposition=reopen`; otherwise `RelianceDisposition=pass` applies only to this bounded use.
+  * **Boundary:** the path supports neither feature-kind substitution, a target outside the tested subset, material release or assurance, nor a claim that deployment occurred. This fixture asserts no evidence-producing or evidence-interpreting Work, current role assignment, or method trace. No assurance claim is made and the B.3 material-reliance threshold is not met; a material release or assurance use must instead enter B.3.
+* **Guard:** bind `translatedScope := deriveTranslatedScope(G, B-training-device-feature, C-device-feature-scope-translation, ProductReferenceScheme)`, then evaluate `evaluateMembership(TargetSlice, translatedScope, InterpretationBasis)`; separately require the chosen formality predicate. The translated scope covers only the tested mapped subset. Neither the claim nor its passing reliance makes the derivation application or deployment occur.
+* **Outcome:** admit only a target slice in the returned subset; otherwise return false or unknown according to the exact returned scope and available evaluation input.
 
 ### A.2.6:12 - Bias-Annotation
 
@@ -601,10 +623,10 @@ USM counters three recurring biases. First, scope wording can hide a claim that 
 | **CC-USM-6 Structure separation.** | A bare scope, slice, membership outcome, or displayed boundary never enters A.22 identity. An exact `U.ClaimScope` remains a participant of its independently governed `ModelApplicabilityRelation`; selecting that exact occurrence contributes through the relation-occurrence discriminator. Separately, an exact applied constraint claim may refer to that scope and contribute through the applied-constraint discriminator. Neither path makes the scope a constituent, a membership occurrence, or a second delimiter. |
 | **CC-USM-7 Applicability interval.** | One exact `U.ClaimScope` participates in `ModelApplicabilityRelation`; a declared interval stays in assertion or occurrence-description content, while the actual occurrence extent is derived from maximal continuous obtaining. |
 | **CC-USM-8 Set algebra.** | Intersection, independently supported `spanUnion`, widen, narrow, and refit operate on exact scope values; refit preserves membership. |
-| **CC-USM-9 Translation trigger.** | `translate` is used only with an exact obtaining F.9 Bridge occurrence between exact local senses. A reference-scheme or label difference alone does not trigger it. |
+| **CC-USM-9 Translation boundary.** | `translate` uses an exact obtaining F.9 Bridge plus a separate affirmative C.2.1 claim naming the use, direction, rule, and tolerance. A receiving guard requires the passing A.10 or positive B.3 branch for that use; scheme or label difference, a profile, or a card alone supplies none of these. |
 | **CC-USM-10 Representation boundary.** | A set expression, query, table, graph, or diagram is a C.29 representation and neither identifies the scope nor makes membership true. |
 | **CC-USM-11 Time only when material.** | Name `gammaTime` when time changes membership; never use implicit “latest,” and do not add a fictitious time selector to a time-invariant predicate. |
-| **CC-USM-12 Separate reliance.** | Formality, evidence freshness, assurance, gate, and decision predicates remain outside membership; unknown is handled by the receiving guard without rewriting the scope. |
+| **CC-USM-12 Separate reliance.** | Formality, evidence freshness, assurance, gate, and decision predicates remain outside membership. A.10 or B.3 governs reliance on any cross-scheme translation claim; a passing A.10 disposition or positive B.3 assurance claim supports reliance only for its named use and neither authorizes that use, makes membership true, nor proves a derivation application occurred. A B.3 threshold alone supplies no positive claim. Unknown remains a receiving-guard result, not a rewritten scope. |
 | **CC-USM-13 Publication and capability specializations.** | `U.WorkScope` and `U.PublicationScope` reuse the same value and membership boundary; their measures, qualification, publication, and carrier relations remain separately governed. |
 
 ### A.2.6:14 - Common Anti-Patterns and How to Avoid Them
@@ -619,13 +641,13 @@ USM counters three recurring biases. First, scope wording can hide a claim that 
 | Table-created obtaining | A row, edge, query result, or diagram is treated as membership or scope identity. | Treat it as a C.29 representation of an independently declared scope or evaluation result. |
 | Scope-as-structure | A bare scope, slice, membership outcome, or displayed boundary is treated as an A.22 constituent or identity discriminator. | Keep the exact `U.ClaimScope` as a participant of its independently governed `ModelApplicabilityRelation`: only a selected exact occurrence contributes through the relation-occurrence discriminator. If an exact applied constraint claim refers to that scope, the claim contributes separately through the applied-constraint discriminator. The bare scope contributes through neither path and is never copied as a second delimiter. |
 | Interval-as-participant | A declared applicability interval is copied into the direct relation signature. | Keep it in assertion or description content and derive actual extent from continuous obtaining. |
-| Silent translation | A different scheme, label, or location automatically invokes a Bridge. | Translate only across exact local senses through an obtaining F.9 Bridge occurrence. |
+| Silent translation | A different scheme, label, or location automatically invokes a Bridge or lets the Bridge define the receiving use. | Translate only after naming exact local senses, an obtaining F.9 Bridge, a separate affirmative C.2.1 claim for the direction, rule, and tolerance, and the current A.10 or B.3 reliance branch. |
 | Implicit “latest” | A time-dependent predicate cannot be reproduced. | Name the exact temporal selector; omit it when time is irrelevant. |
 | Unsupported union | `spanUnion` claims areas not supported by independent lines. | State the independence basis or use intersection/narrower supported scope. |
 
 ### A.2.6:15 - Consequences
 
-A correct USM use makes scope checks reproducible: every judgment names an exact scope and slice, and true, false, and unknown evaluation results have different actions. Translation appears only for exact local senses through an obtaining F.9 Bridge occurrence. The cost is naming the selectors that actually affect membership and keeping evaluation work, result epistemes, representations, model applicability, and structure separate.
+A correct USM use makes scope checks reproducible: every judgment names an exact scope and slice, and true, false, and unknown evaluation results have different actions. Translation appears only for exact local senses after an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about the proposed translation, and its current A.10 or B.3 reliance branch are distinguished. The cost is naming the selectors, mapping rule, tolerated loss, and evidence that actually affect the receiving use while keeping membership truth, operation application, result epistemes, representations, model applicability, and structure separate.
 
 ### A.2.6:16 - Playbooks (Informative)
 
@@ -635,7 +657,7 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 2. **Name the target slice.** Designate the independently identified slice; bind only the declared selector projection that this membership evaluation needs.
 3. **Evaluate membership.** True admits the scope condition; false stops it; unknown requires abstention, a missing input, or a narrower attempted use.
 4. **Keep other checks separate.** Formality, evidence freshness, capability measures, qualification, gate, and decision have their own predicates.
-5. **Translate only when needed.** Use an exact F.9 Bridge occurrence only for exact local-sense translation; record congruence and loss separately.
+5. **Translate only when needed.** Name the exact local senses and obtaining F.9 Bridge; then state the separate affirmative C.2.1 claim for this translation's direction, rule, and tolerance and establish its A.10 or B.3 reliance branch before using the returned scope.
 6. **Persist only what the use needs.** A C.2.1 result episteme may record the judgment when a named receiving use needs it to persist; a C.29 table may display it. Neither changes membership. Use A.15.PROD only when the current claim is that the work first constituted that episteme.
 
 #### A.2.6:16.2 - Architect’s design rubric for scopes
@@ -644,7 +666,7 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 * **Factor common conditions.** Use Refit to normalize units and factor shared predicates; do not widen by stealth.
 * **Partition support lines.** If you plan a **SpanUnion**, document independence up front.
 * **Keep scope thin & honest.** Publish what you can support; add slices as support appears (ΔG+).
-* **Design Bridges early.** When interop is planned, sketch mapping characteristics and **expected CL**; plan **R** penalties.
+* **Design translations early.** Test the direct F.9 Bridge first, then state each proposed translation use separately with its direction, mapping rule, tolerated loss, and evidence plan; do not turn an expected loss score into permission to use the mapping.
 
 #### A.2.6:16.3 - Minimal DSL snippet for scope blocks (illustrative)
 
@@ -672,7 +694,7 @@ receivingGuards:
 * **P1 (Expansion).** Profiles are macros: guards **MUST** expand them to explicit predicates before evaluating `Scope covers TargetSlice`.
 * **P2 (Edition).** Profiles are editioned. A changed predicate expression is a content change for a carrier that references the profile even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
 * **P3 (No stealth widen).** A profile update MUST NOT implicitly widen a carrier’s published scope; ΔG+ must be explicit in that carrier.
-* **P4 (Translation awareness).** If a profile uses exact local senses that require translation, name the obtaining F.9 Bridge occurrence and its congruence and loss; a different label or scheme alone is insufficient.
+* **P4 (Translation awareness).** If a profile expands to predicates whose exact local senses require translation, name the obtaining F.9 Bridge and the separate affirmative C.2.1 claim for that translation's direction, rule, and tolerance. The receiving guard must recover the current A.10 or B.3 reliance branch; a different label, scheme, profile, or Bridge Card alone is insufficient.
 * **P5 (No hidden owner).** A profile expands to predicates; it is not a context object, scope owner, or additional scope kind.
 
 **Examples (illustrative).**
@@ -690,7 +712,7 @@ When a scope-aware decision needs durable audit evidence, its C.2.1 result epist
 * **Exact target slice.** Designate the independently identified slice with its complete declared selector schema and values. An evaluation may bind only the projection its scope predicate inspects; that projection does not replace slice identity. Include `gammaTime` in the schema only when that temporal selector is part of the exact slice being evaluated.
 * **Evaluation outcome.** Record `true`, `false`, or `unknown`, plus the evaluation method or work occurrence when replay needs it.
 * **Separate guard outcomes.** Record work measures, qualification windows, formality, or freshness only when the receiving use checks them; none is membership.
-* **Translation evidence, only when triggered.** If exact local senses required translation, name the exact obtaining F.9 Bridge occurrence, congruence, loss, and any separate reliance effect.
+* **Translation evidence, only when triggered.** Name the exact obtaining F.9 Bridge, the separate C.2.1 claim with its polarity, use, direction, rule, and tolerance, and the exact A.10 or B.3 reliance branch. Record any observed loss as evidence rather than a Bridge identity field.
 * **Scope change.** Say whether the declared set widened, narrowed, or remained identical under refit.
 
 Recording these facts does not make membership true, identify the scope, or create a membership-relation occurrence.
@@ -699,7 +721,7 @@ Recording these facts does not make membership true, identify the scope, or crea
 
 * **USM-Ready.** Exact scope and slice values are declared; editors can distinguish membership from evaluation, evidence, representation, and structure.
 * **USM-Guarded.** Guards evaluate exact Claim scope or Work scope membership and keep measures, qualification, freshness, and `gammaTime` when material as separate checks.
-* **USM-Auditable.** Durable result epistemes identify the exact scope, slice, and evaluation result, plus the exact F.9 Bridge occurrence details only when translation was triggered.
+* **USM-Auditable.** Durable result epistemes identify the exact scope, slice, and evaluation result. When translation was triggered, they cite the obtaining F.9 Bridge, separate bounded-use claim, and current A.10 or B.3 reliance without treating those citations as membership truth.
 * **USM‑Composed.** Serial intersection and SpanUnion are implemented in composition tooling.
 
 #### A.2.6:17.3 - Audit checklist (informative)
@@ -707,7 +729,7 @@ Recording these facts does not make membership true, identify the scope, or crea
 * Does each guard **name** a concrete **TargetSlice**?
 * Is **membership** reproducibly evaluable from the exact declared predicate and required inputs?
 * Are **freshness** and **coverage** separate predicates?
-* When exact local-sense translation was required, is the exact obtaining F.9 Bridge occurrence named with congruence and loss?
+* When exact local-sense translation was required, are the obtaining F.9 Bridge, separate C.2.1 use claim, direction, rule, tolerance, polarity, and current A.10 or B.3 reliance branch named?
 * For parallel support: is **independence** justified?
 
 #### A.2.6:17.4 - Risk controls (informative)
@@ -737,7 +759,7 @@ Not normatively. G is set‑valued. You MAY attach an **informative**, explicitl
 First decide what “latest” is doing. If it means that evidence or data must be no older than 90 days, do not put it in Claim scope: require the A.10 evidence-provenance path to satisfy its exact 90-day relevance or currentness window at the receiving use time. Put `gammaTime` in the scope only when claim applicability itself changes with the slice time, and state the membership boundary—for example, slices whose observation time falls outside the declared interval are non-members. The word “latest” alone supplies neither boundary.
 
 **Q7. How do we use a scope with differently named slice selectors?**
-First resolve whether the designations refer to the same values under the effective reference scheme. If exact local senses differ and membership must be expressed across them, use an obtaining F.9 Bridge occurrence, declare congruence and loss, and evaluate the explicitly translated scope. A different project, place, label, or reference scheme alone does not move or translate the scope.
+First resolve whether the designations refer to the same values under the effective reference scheme. If exact local senses differ and membership must be expressed across them, name the obtaining F.9 Bridge. Then state the separate affirmative C.2.1 claim for the proposed translation's direction, mapping rule, and tolerated loss, establish the exact A.10 or B.3 reliance branch, and evaluate the scope returned by `deriveTranslatedScope`. A different project, place, label, reference scheme, profile, or card alone does not move or translate the scope.
 **Q8. What about abstraction level or detail?**
 Keep **AT (AbstractionTier)** and **D (Detail and Resolution)** as orthogonal, optional annotations. They never substitute for **Claim scope** or **Work scope**.
 
@@ -795,7 +817,7 @@ def evaluate_membership(scope, target_slice, available_inputs):
 
 ### A.2.6:20 - Rationale
 
-A.2.6 needs a scope mechanism because scope is neither evidence freshness nor expression rigor: it is the set-valued condition under which a claim, work capability, or publication surface may be used. USM makes those membership conditions addressable, composable, and reopenable while preserving the F/G/R separation and using an exact F.9 Bridge occurrence only when exact local senses require translation.
+A.2.6 needs a scope mechanism because scope is neither evidence freshness nor expression rigor: it is the set-valued condition under which a claim, work capability, or publication surface may be used. USM makes those membership conditions addressable, composable, and reopenable while preserving the F/G/R separation. When exact local senses require translation, F.9 supplies the Bridge, C.2.1 supplies the separate claim about this use, and A.10 or B.3 supplies reliance; A.2.6 alone governs the scope calculation and membership question.
 
 #### A.2.6:20.1 - SoTA-Echoing - F-Cluster Unification for A.2.6 (F.17 and F.18)
 
@@ -818,7 +840,7 @@ A.2.6 needs a scope mechanism because scope is neither evidence freshness nor ex
 11. **ACM Artifact Review & Badging v1.1** (reproducibility signals)
 12. **MLOps/Cloud SLO practice (SRE / platform)** (operational guardrails)
 
-**Survey focus (terms we align):** `U.ContextSlice`, generic **Scope** and set algebra, **Claim scope (G)**, **Work scope**, **Bridge and CL**, **Γ\_time**, **widen**, **narrow**, **refit**, **translate**, **SpanUnion**, **serial intersection**, separation from **F** and **R**, and avoidance of overloaded **validity** and **operation** terms.
+**Survey focus (terms we align):** `U.ContextSlice`, generic **Scope** and set algebra, **Claim scope (G)**, **Work scope**, **Bridge plus a separate bounded-use claim and reliance basis**, **Γ\_time**, **widen**, **narrow**, **refit**, **translate**, **SpanUnion**, **serial intersection**, separation from **F** and **R**, and avoidance of overloaded **validity** and **operation** terms.
 
 ##### A.2.6:20.1.2 - UTS Table (F.17) — Cross‑context term mapping
 
@@ -850,7 +872,7 @@ A.2.6 needs a scope mechanism because scope is neither evidence freshness nor ex
 | Episteme applicability          | **`U.ClaimScope`** (*nick **G**)               | **Claim scope**                      | **G**                | “generality”, “applicability/envelope (of claim)”                     |
 | Capability applicability        | **`U.WorkScope`**                               | **Work scope**                       | —                    | “capability envelope”, “operational applicability”, “operation scope” |
 | Time selector                   | **`Γ_time`**                                    | **Time selector**                    | —                    | implicit “latest”                                                     |
-| Exact local-sense translation     | **Exact F.9 Bridge occurrence + CL**                    | **Bridge + congruence level**        | **CL**               | automatic Bridge use for a different label, project, or scheme        |
+| Exact local-sense translation | **Obtaining F.9 Bridge + separate affirmative C.2.1 use claim + current A.10 or B.3 reliance** | **Bridge, translation rule and tolerance, checked reliance** | — | automatic Bridge use or treating a loss score as permission |
 | Parallel coverage               | **SpanUnion**                                   | **Union of supported areas**         | —                    | unqualified “union” without independence                              |
 | Serial dependency               | **Intersection**                                | **Intersection of scopes**           | —                    | ordinal “more/less general” language                                  |
 | Scope edits                     | **ΔG+ (widen), ΔG− (narrow), Refit, Translate** | **Widen, narrow, refit, translate**  | —                    | stealth widening (“it’s obvious”)                                     |
@@ -869,7 +891,7 @@ A.2.6 needs a scope mechanism because scope is neither evidence freshness nor ex
 * Use **“Claim scope (G) covers TargetSlice”** and **“Work scope covers JobSlice”** in guards.
 * When time changes membership, name exact **`gammaTime`**; never say “latest.” Omit it when time is irrelevant.
 * To compose, say: **“intersection along dependency paths; SpanUnion across independent support lines.”**
-* When exact local-sense translation is current, say: **“through exact F.9 Bridge occurrence; congruence and loss qualify R, while membership is evaluated on the explicitly translated scope.”**
+* When exact local-sense translation is current, say: **“through an obtaining F.9 Bridge and a separate affirmative C.2.1 claim for this direction, rule, and tolerance; rely on it only through the current A.10 or B.3 branch, then evaluate membership on the returned scope.”**
 * When widening/narrowing, write **“ΔG+ / ΔG−”** and log the support change; use **“Refit”** for unit/param normalization.
 
 ###### A.2.6:20.1.3.3 - Rosetta summary (informative, for rationale box)
@@ -890,7 +912,7 @@ A.2.6 needs a scope mechanism because scope is neither evidence freshness nor ex
 #### A.2.6:21.1 - With F–G–R (C.2.2)
 
 * **G is Claim scope.** Use set algebra (∩ / SpanUnion).
-* **F** remains the expression rigor (C.2.3); **R** captures evidence freshness and CL penalties.
+* **F** remains the expression rigor (C.2.3); **R** captures evidence currentness and bounded reliance. Observed loss may bear on the translation-use claim; its permitted-loss tolerance remains in that claim rather than in G or the Bridge profile.
 * **Weakest‑link.** On dependency paths: **F\_composite = min(F)**, **R\_composite = min(R)**; **G** follows §7.2–§7.3 (set rules).
 
 #### A.2.6:21.2 - With Formality (C.2.3)
@@ -905,8 +927,8 @@ A.2.6 needs a scope mechanism because scope is neither evidence freshness nor ex
 
 #### A.2.6:21.4 - With exact F.9 Bridge occurrences
 
-* **Translation trigger.** Use an exact F.9 Bridge occurrence only for exact local-sense translation. Its congruence and loss qualify R and never make membership true or false by themselves.
-* **Best practice.** Narrow mapped scopes where mapping losses are material.
+* **Translation boundary.** Use an exact F.9 Bridge only for exact local-sense translation. State the translation's direction, rule, tolerated loss, and polarity in a separate C.2.1 claim, then recover the exact passing A.10 or positive B.3 reliance branch before the receiving use proceeds; none makes membership true or false by itself.
+* **Best practice.** Return an explicitly narrower scope when the bounded-use claim's rule and tolerance support only a proper subset; do not turn observed mapping loss into a Bridge identity field or a generic R penalty.
 
 #### A.2.6:21.5 - With Capability governance (A.2.2)
 

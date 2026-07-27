@@ -40,7 +40,7 @@ The practical question is not “How much ontology can we recover?” It is “W
 
 #### A.7.1:4.1 - Inherit the complete application contract
 
-The method described here specializes the method described by `C.19.2`. It always inherits the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, method/reader/performer/work/result separation, positive stop, and reopen rule.
+This A.7.1 description narrows the method claims stated by `C.19.2` for consequence-guided ontology analysis. When applying A.7.1, retain the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among method, reader, performer, Work, and result, positive stop, and reopen rule. This is description-level claim reuse; it adds no relation occurrence between the described Methods.
 
 The normal short path uses the already selected A.7.1 analysis method as its one current apparatus. It begins from one exact engineering subject and that subject's current direct owner; subject and owner are inputs and constraints, not apparatus candidates. Use `C.18` only when the team must generate or reframe alternative analysis methods, models, formalisms, or other direct-kind apparatuses for the same declared use. Use `C.11` only when two or more already-available apparatuses are eligible for that same use and guarantee, making a real local-choice question current. After selection, `A.15.2` owns planning and `A.15.1` owns dated work; `C.24` enters only for tool-call enactment planning.
 
@@ -133,7 +133,7 @@ The pattern gives ontology work a practical exit. It can repair a consequence-ch
 
 ### A.7.1:10 - Rationale
 
-Ontology effort should scale with changed consequence, not with available vocabulary. A direct-owner invariant or grounded counterexample provides a better start than a universal checklist because it exposes why the current account fails. Four loci preserve the common places where repair occurs without forcing an order. Specializing `C.19.2` carries the economics, work separation, and truthful one-apparatus path instead of duplicating them loosely.
+Ontology effort should scale with changed consequence, not with available vocabulary. A direct-owner invariant or grounded counterexample provides a better start than a universal checklist because it exposes why the current account fails. Four loci preserve the common places where repair occurs without forcing an order. The description-level narrowing of `C.19.2` carries the economics, work separation, and truthful one-apparatus path instead of duplicating them loosely.
 
 **Repair only the ontology that changes the engineering move.**
 
@@ -150,7 +150,7 @@ These sources change the working method and its cases. They do not license a fix
 
 ### A.7.1:12 - Relations
 
-- **Specializes:** the method described by `C.19.2`. On the ordinary one-apparatus path, the already selected A.7.1 analysis method is the direct-kind apparatus; the engineering subject and its direct owner remain inputs and constraints. The specialization always inherits declared use/result/guarantee/horizon, useful threshold, reader/performer/work/result separation, stop, and reopen. It inherits `C.18`/`C.11` candidate and choice behavior only for alternative analysis methods, models, formalisms, or other applicable apparatuses eligible for the same use and guarantee. This is a method-description relation, not `U.SubkindOf` and not a world relation.
+- **Description-level specialization:** A.7.1 narrows the method claims stated by `C.19.2`. On the ordinary one-apparatus path, the already selected A.7.1 analysis method is the direct-kind apparatus; the engineering subject and its direct owner remain inputs and constraints. A.7.1 retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among reader, performer, Work, and result, stop, and reopen. It retains `C.18` and `C.11` candidate and choice behavior only for alternative analysis methods, models, formalisms, or other applicable apparatuses eligible for the same use and guarantee. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.
 - **Consumes:** exact `A.7.CP` claim epistemes through `ClaimUsedAsReasoningBasisRelation@Context` only when the ontology-analysis work relies on them.
 - **Coordinates with:** `A.7.2` when a material cross-pattern premise conflict is current; neither method is the other's parent or premise owner.
 - **Returns to:** direct relation, role, holon, state, capability, method, work, evidence, temporal, structural, and domain owners for the claim being repaired.

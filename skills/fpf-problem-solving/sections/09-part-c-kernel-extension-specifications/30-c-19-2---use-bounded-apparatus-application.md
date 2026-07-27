@@ -158,7 +158,7 @@ These sources change the positive method: the user starts from a result, may obt
 - **Coordinates with:** `C.18` for candidate generation and reframing; `C.19` for candidate/front stewardship; `C.19.1` for scale-amenable bearer preference; `C.22.1` for adaptation signatures; `E.23` for repeated improvement; and `C.31.ASAP` for architecture-scale preference.
 - **Uses conditionally:** `C.11` only when an actual local-choice question over a live eligible set exists. It consumes, but does not extend, the four `ChoiceResult` dispositions.
 - **Hands off enactment to:** `A.15.2` for work plans, `A.15.1` for dated work, and `C.24` only for tool-call enactment planning. The direct domain pattern owns the practical result.
-- **Is specialized by:** the method described in `A.7.1`. That specialization always inherits declared use/result/guarantee/horizon, useful threshold, plan/work/result separation, stop, and reopen; it inherits the candidate/choice branch only when that branch is actually triggered. This is a method-description relation, not `U.SubkindOf` and not a world relation.
+- **Description-level specialization:** `A.7.1` narrows the method claims stated here for consequence-guided ontology analysis. It retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among plan, Work, and result, stop, and reopen. It retains the candidate and choice branch only when that branch is actually triggered. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.
 - **Does not replace:** durable U-kind admission in `E.24`/`E.24.UK`, parsimony in `A.11`, evidence and assurance owners, or any candidate's direct kind.
 
 ### C.19.2:End

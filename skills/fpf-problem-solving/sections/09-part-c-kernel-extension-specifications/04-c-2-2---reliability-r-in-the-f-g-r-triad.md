@@ -144,7 +144,7 @@ This invariant is why KD‑CAL guard macros and crossing bundles can be simple: 
 
 **Notation/plane transports.** NotationBridge and plane transports contribute to the relevant `CL*_min(P)` bottlenecks for the path; they do not “lower F” by penalty. If an author actually rewrites a claim into a different formality level, that is a new episteme (ΔF), not “transport”.
 
-#### C.2.2:4.4.A - Worked micro-example: `translate(G)` + penalty (A.2.6:12.2)
+#### C.2.2:4.4.A - Worked micro-example: `translate(G)` + penalty (A.2.6:11.2)
 
 **Source context:** `MaterialsLab@2026`. Claim:
 
