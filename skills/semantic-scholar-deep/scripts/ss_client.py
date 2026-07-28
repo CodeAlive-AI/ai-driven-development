@@ -36,7 +36,9 @@ DEFAULT_PAPER_FIELDS = (
     "paperId,title,abstract,year,venue,authors,citationCount,"
     "referenceCount,influentialCitationCount,externalIds,openAccessPdf,tldr"
 )
-LIGHT_PAPER_FIELDS = "paperId,title,year,authors.name,citationCount,venue"
+# Use bare `authors` (not `authors.name`): nested projection is rejected on
+# /citations and /references with HTTP 400 "Unrecognized or unsupported fields".
+LIGHT_PAPER_FIELDS = "paperId,title,year,authors,citationCount,venue"
 
 
 class SemanticScholarError(RuntimeError):

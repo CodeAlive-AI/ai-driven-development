@@ -63,7 +63,7 @@ def traverse(
     assert direction in {"forward", "backward", "both"}
     seed_info = ss_client.paper(
         seed,
-        fields="paperId,title,year,authors.name,citationCount,venue,externalIds",
+        fields="paperId,title,year,authors,citationCount,venue,externalIds",
     )
     seed_id = seed_info["paperId"]
 

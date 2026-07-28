@@ -85,7 +85,7 @@ Deviate from this only when the user's ask is simpler (e.g. "just build the grap
 
 - **Never print raw JSON from API calls into your response.** Save to `/tmp/<name>.json` via `--output` or shell redirection, then `jq`/`python3` for extraction.
 - **Cap per-call result sizes.** `--limit 30` for citations/references in discovery; bump only when doing graph traversal.
-- **Strip fields aggressively.** Default to `paperId,title,year,authors.name,citationCount,venue,tldr` unless a field is needed.
+- **Strip fields aggressively.** Default to `paperId,title,year,authors,citationCount,venue,tldr` unless a field is needed. (Use bare `authors`, not `authors.name` — nested projection is rejected on /citations and /references.)
 - **Summarize graphs, never dump them.** For `citation_graph.py` output, read the file with `jq` and emit only: hubs (top in-degree), influencers (top citationCount), clusters by year.
 
 ## Citation Discipline
