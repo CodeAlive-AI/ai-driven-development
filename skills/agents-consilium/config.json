@@ -41,7 +41,7 @@
       "supports_delegate": false
     },
     "opencode": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/glm-5.2",
       "effort": "max",
@@ -54,7 +54,7 @@
       "model": "grok-4.5",
       "effort": "high",
       "role": "analyst",
-      "label": "Grok 4.5 (native)"
+      "label": "Grok 4.5 (native, high)"
     },
     "opencode-xai-grok45": {
       "enabled": false,
@@ -63,6 +63,31 @@
       "effort": "high",
       "role": "analyst",
       "label": "xAI Grok 4.5 (OpenCode fallback)"
+    },
+    "opencode-kimi-k3": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "opencode/kimi-k3",
+      "effort": "none",
+      "role": "analyst",
+      "label": "OpenCode Zen Kimi K3 (fallback)"
+    },
+    "opencode-go-kimi-k3": {
+      "enabled": true,
+      "backend": "opencode",
+      "model": "opencode-go/kimi-k3",
+      "effort": "max",
+      "role": "analyst",
+      "label": "OC-Go Kimi K3 (max)",
+      "review_instructions": "Treat every review as an adversarial audit. Assume defects exist until repository evidence disproves them; never default to 'looks fine'. Inspect the changed and affected code exhaustively: callers, tests, error and cancellation paths, concurrency, data boundaries, configuration, and operational failure modes. Do not stop after the first issue and do not praise the implementation. Seek the maximum number of concrete, consequential defects — but never invent findings. Report only evidence-validated issues, and conclude 'no findings' only after completing this inspection."
+    },
+    "opencode-synthetic-kimi-k3": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "synthetic/hf:moonshotai/Kimi-K3",
+      "effort": "none",
+      "role": "lateral",
+      "label": "Synthetic Kimi K3 (fallback)"
     },
     "claude-code": {
       "enabled": false,
@@ -73,20 +98,20 @@
       "label": "Claude Sonnet 5"
     },
     "claude-opus": {
-      "enabled": false,
+      "enabled": true,
       "backend": "claude-code",
       "model": "claude-opus-5",
-      "effort": "high",
+      "effort": "medium",
       "role": "analyst",
-      "label": "Claude Opus 5"
+      "label": "Claude Opus 5 (medium)"
     },
     "claude-fable": {
-      "enabled": false,
+      "enabled": true,
       "backend": "claude-code",
       "model": "claude-fable-5",
-      "effort": "high",
+      "effort": "low",
       "role": "analyst",
-      "label": "Claude Fable 5"
+      "label": "Claude Fable 5 (low)"
     },
     "claude-sonnet": {
       "enabled": false,
@@ -97,7 +122,7 @@
       "label": "Claude Sonnet 5"
     },
     "opencode-go-minimax": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/minimax-m3",
       "effort": "thinking",
@@ -105,7 +130,7 @@
       "label": "OC-Go MiniMax M3"
     },
     "opencode-go-kimi": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/kimi-k2.7-code",
       "effort": "none",
@@ -113,7 +138,7 @@
       "label": "OC-Go Kimi K2.7 Code"
     },
     "opencode-go-glm": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/glm-5.1",
       "effort": "none",
@@ -121,7 +146,7 @@
       "label": "OC-Go GLM-5.1"
     },
     "opencode-go-qwen37-max": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/qwen3.7-max",
       "effort": "none",
@@ -129,7 +154,7 @@
       "label": "OC-Go Qwen3.7 Max"
     },
     "opencode-go-qwen37-plus": {
-      "enabled": true,
+      "enabled": false,
       "backend": "opencode",
       "model": "opencode-go/qwen3.7-plus",
       "effort": "none",

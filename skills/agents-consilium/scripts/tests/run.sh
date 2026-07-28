@@ -142,7 +142,7 @@ argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-rev
 assert_contains "claude review plan mode" "$argv" "--permission-mode plan"
 assert_contains "claude review denies Edit" "$argv" "Edit"
 assert_contains "claude review selects Opus 5" "$argv" "--model claude-opus-5"
-assert_contains "claude review defaults to high effort" "$argv" "--effort high"
+assert_contains "claude review uses medium effort" "$argv" "--effort medium"
 assert_not_contains "claude review no skip-permissions" "$argv" "--dangerously-skip-permissions"
 
 CLAUDE_MODEL="claude-override" CLAUDE_EFFORT="max" \
@@ -170,6 +170,17 @@ argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-del.jso
 assert_contains "opencode delegate build" "$argv" "--agent build"
 assert_contains "opencode delegate auto" "$argv" "--auto"
 assert_not_contains "opencode delegate no plan" "$argv" "--agent plan"
+
+# OpenCode Go Kimi K3: exact catalog model id and configured max reasoning.
+dump_review opencode-go-kimi-k3 "$TMP/oc-go-kimi-k3-review.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-go-kimi-k3-review.json"'"))["argv"]))')
+assert_contains "OpenCode Go Kimi K3 exact model" "$argv" "-m opencode-go/kimi-k3"
+assert_contains "OpenCode Go Kimi K3 uses max reasoning" "$argv" "--variant max"
+
+CONSILIUM_FAKE_ARGV_LOG="$TMP/oc-go-kimi-k3-prompt.jsonl" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id opencode-go-kimi-k3 "review this" >/dev/null
+kimi_prompt=$(python3 -c 'import json; print(json.loads(open("'"$TMP/oc-go-kimi-k3-prompt.jsonl"'").readline())["stdin"])')
+assert_contains "OpenCode Go Kimi K3 adds adversarial review prompt" "$kimi_prompt" "KIMI_K3_ADVERSARIAL_REVIEW_MARKER"
 
 OPENCODE_MODEL="provider/model-override" OPENCODE_EFFORT="thinking" \
   CONSILIUM_DUMP_ARGV="$TMP/opencode-overrides.json" \

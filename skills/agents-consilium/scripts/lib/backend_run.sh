@@ -84,6 +84,10 @@ LABEL="$(config_get_field "$AGENT_ID" label)"; LABEL="${LABEL:-$AGENT_ID}"
 EFFORT="$(config_get_field "$AGENT_ID" effort)"
 ROLE_ID="${ROLE_OVERRIDE:-$(config_get_field "$AGENT_ID" role)}"
 ROLE_ID="${ROLE_ID:-analyst}"
+REVIEW_INSTRUCTIONS=""
+if [[ "$MODE" == "review" ]]; then
+    REVIEW_INSTRUCTIONS="$(config_get_field "$AGENT_ID" review_instructions)"
+fi
 
 # Per-invocation backend overrides. Keep this in sync with the steerable
 # config loader so ordinary review/delegate and steerable delegate resolve the
@@ -154,6 +158,10 @@ else
     if ! ROLE_PROMPT="$(get_role_prompt "$ROLE_ID")"; then
         echo "Error: unknown role '$ROLE_ID' for agent $AGENT_ID" >&2
         exit $EXIT_CONFIG_ERROR
+    fi
+    if [[ -n "$REVIEW_INSTRUCTIONS" ]]; then
+        ROLE_PROMPT+=$'\n\nMODEL-SPECIFIC REVIEW INSTRUCTIONS:\n'
+        ROLE_PROMPT+="$REVIEW_INSTRUCTIONS"
     fi
     # build_prompt may also read stdin as context; we already consumed stdin.
     # CONSILIUM_SKIP_OUTPUT_TEMPLATE is honored by build_prompt (code-review schemas).

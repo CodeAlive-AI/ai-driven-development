@@ -90,11 +90,11 @@ scripts/consilium delegate status run_<id> --json
 | Id | Backend | Default |
 |----|---------|---------|
 | `codex` | codex-cli / gpt-5.6-sol high | enabled |
-| `opencode` + OC-Go roster | opencode | enabled |
+| `opencode-go-kimi-k3` | OpenCode Go / Kimi K3 max | enabled |
 | **`grok`** | **grok-build / grok-4.5 high** | **enabled** |
-| `opencode-xai-grok45` | opencode xAI fallback | disabled |
-| `claude-opus` | claude-code / claude-opus-5 high | disabled |
-| other `claude-*`, `gemini-cli` | … | disabled / review-only |
+| `claude-opus` | claude-code / claude-opus-5 medium | enabled |
+| `claude-fable` | claude-code / claude-fable-5 low | enabled |
+| all other profiles | … | disabled |
 
 Edit `config.json` or set `CONSILIUM_CONFIG`.
 

@@ -257,6 +257,7 @@ with `status` and stop them explicitly with `cancel`.
 | `role` | `analyst` \| `lateral` \| specialist roles |
 | `effort` | Backend-specific reasoning effort |
 | `label` | Display name |
+| `review_instructions` | Optional model-specific instructions appended to non-raw review prompts only |
 | `supports_delegate` | Optional; `false` for review-only agents |
 
 ## Shell escaping
