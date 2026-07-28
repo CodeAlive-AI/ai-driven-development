@@ -266,6 +266,11 @@ build_cmd_claude() {
         CMD+=(--permission-mode plan)
         # Defense in depth: deny write tools even if plan is misconfigured
         CMD+=(--disallowedTools "Edit,Write,NotebookEdit")
+        # plan mode withholds permission for WebSearch/WebFetch, so a headless
+        # review silently loses web access and says so mid-answer. --allowedTools
+        # pre-approves rather than restricts: Read/Grep/Glob stay available
+        # (verified against Claude Code 2.1.220).
+        CMD+=(--allowedTools "WebSearch,WebFetch")
     else
         CMD+=(--dangerously-skip-permissions)
     fi
@@ -333,9 +338,12 @@ build_cmd_grok() {
             CMD+=(--cwd "$CONSILIUM_EXPLORE_CWD")
         fi
     elif [[ "$ACCESS_POLICY" == "readonly" ]]; then
-        # Kernel sandbox + strict tool allowlist (plan mode alone is NOT read-only)
+        # Kernel sandbox + strict tool allowlist (plan mode alone is NOT read-only).
+        # The allowlist is exhaustive, so web tools must be named explicitly —
+        # verified against Grok Build 0.2.112: without them the model reports it
+        # has no web tool, with them it retrieves and cites live sources.
         CMD+=(--sandbox read-only)
-        CMD+=(--tools "read_file,grep,list_dir")
+        CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
         CMD+=(--disallowed-tools "search_replace,write,run_terminal_cmd,Agent")
     else
         # YOLO: always-approve, no sandbox flag (default off = unrestricted)

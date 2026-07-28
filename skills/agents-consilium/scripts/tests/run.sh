@@ -141,6 +141,9 @@ dump_review claude-code "$TMP/claude-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-review.json"'"))["argv"]))')
 assert_contains "claude review plan mode" "$argv" "--permission-mode plan"
 assert_contains "claude review denies Edit" "$argv" "Edit"
+# plan mode alone leaves WebSearch/WebFetch unapproved in a headless run.
+assert_contains "claude review keeps web research" "$argv" "WebSearch,WebFetch"
+assert_not_contains "claude review web approval is not a write approval" "$argv" "--allowedTools Edit"
 assert_contains "claude review selects Opus 5" "$argv" "--model claude-opus-5"
 assert_contains "claude review uses medium effort" "$argv" "--effort medium"
 assert_not_contains "claude review no skip-permissions" "$argv" "--dangerously-skip-permissions"
@@ -199,6 +202,9 @@ dump_review grok "$TMP/grok-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/grok-review.json"'"))["argv"]))')
 assert_contains "grok review sandbox read-only" "$argv" "--sandbox read-only"
 assert_contains "grok review tools allowlist" "$argv" "--tools"
+# The Grok allowlist is exhaustive: omitting the web tools silently removes web
+# research from every review, which is exactly how it was lost before.
+assert_contains "grok review keeps web research" "$argv" "web_search,web_fetch"
 assert_contains "grok review disallowed tools" "$argv" "--disallowed-tools"
 assert_contains "grok review streaming-json" "$argv" "streaming-json"
 assert_contains "grok review prompt-file one-shot" "$argv" "--prompt-file"

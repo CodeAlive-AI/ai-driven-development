@@ -334,6 +334,18 @@ with `status` and stop them explicitly with `cancel`.
 | `grok-build` | `--sandbox read-only` + tool allowlist/denylist (plan alone is **not** read-only) | `--always-approve`, no sandbox |
 | `gemini-cli` | `--approval-mode plan` | not supported |
 
+**Web research is on in every read-only mode.** Reviewing and exploring both depend on checking a CVE, an upstream API contract, a spec, or a release note. The two backends that needed help now get it explicitly:
+
+| Backend | Web in review/explore | How |
+|---------|----------------------|-----|
+| `codex-cli` | already available | default under `--sandbox read-only` |
+| `opencode` | already available | default in the `plan` agent |
+| `grok-build` | **added** | `web_search,web_fetch` in the `--tools` allowlist — the allowlist is exhaustive, so omitting them removed web access entirely |
+| `claude-code` | **added** | `--allowedTools "WebSearch,WebFetch"` — `plan` alone leaves them unapproved, and a headless run cannot answer the permission prompt |
+| `gemini-cli` | built-in `google_web_search` | unchanged |
+
+`--allowedTools` pre-approves; it does not restrict. Read/Grep/Glob remain available, and `--disallowedTools Edit,Write,NotebookEdit` still wins. Verified against Grok Build 0.2.112 and Claude Code 2.1.220 by probing each backend in its exact production argv.
+
 Read-only enforcement is driven by an access policy (`review` and `explore` → `readonly`, `delegate` → `yolo`), not by a literal mode comparison — a new read-only mode cannot accidentally inherit YOLO argv. `explore` additionally layers Grok-only isolation flags (`--cwd`, `--sandbox strict` for remote clones, `--no-subagents`, `--no-memory`) and grants `web_search` / `web_fetch`.
 
 ### Native Grok Build (default Grok path)
