@@ -6,7 +6,7 @@ Before/after refactorings drawn from Chapter 7 and §13.1 of the restaurant rese
 
 ### Before
 
-The original `Post` method (listing 6.9) has cyclomatic complexity 7 and fills an 80 × 24 box exactly. It mixes validation (no class fields) with repository I/O (uses `Repository`). The first section is the best extraction candidate because it uses no instance members.
+The original `Post` method (listing 6.9) mixes several validation decisions with repository I/O. The first section is the best extraction candidate because it is cohesive, uses no instance members, and can be verified independently.
 
 ### After
 
@@ -44,7 +44,7 @@ public async Task<ActionResult> Post(ReservationDto dto)
 
 1. Extracted the first guard-clause block (no class fields) into `IsValid` — chosen because its low cohesion with the controller's fields made it the most conspicuous seam.
 2. `IsValid` is marked `static` because a code analyser detected no instance-member usage; this is already a hint of Feature Envy (see Example 2).
-3. The hex flower for the caller drops from seven chunks to five — the three validation branches collapse into the single chunk `!IsValid`.
+3. The caller exposes fewer simultaneous decisions: three validation branches collapse into the named concept `!IsValid`.
 
 ---
 
@@ -134,7 +134,7 @@ private IEnumerable<Table> Allocate(
 ### Before (Bad — do not write code like this)
 
 ```csharp
-// Cyclomatic complexity 4, 17 lines, only 4 objects "activated".
+// Cyclomatic complexity 4; the top level exposes four domain concepts.
 // But one of those objects is an injected IRestaurantManager that
 // hides Manager.TrySave — a method that BOTH saves to the database
 // AND returns a bool. The Query-looking Check actually performs I/O.
@@ -192,20 +192,20 @@ public async Task<ActionResult> Post(ReservationDto dto)
 
 ---
 
-## Example 5: Hex Flower Before and After
+## Example 5: Progressive Disclosure Before and After
 
 ### Before (Original `Post`, listing 6.9)
 
-All seven hexagons filled: `dto NULL`, `At INVALID`, `Email NULL`, `Name NULL`, `Quantity INVALID`, `TOO LITTLE CAPACITY`, `HAPPY PATH`. No headroom for additional complexity.
+The caller exposes all decisions at once: `dto NULL`, `At INVALID`, `Email NULL`, `Name NULL`, `Quantity INVALID`, `TOO LITTLE CAPACITY`, and `HAPPY PATH`.
 
 ### After `Validate` Extraction
 
-Only four hexagons filled: `dto NULL`, `Validate NULL`, `TOO LITTLE CAPACITY`, `HAPPY PATH`. Three slots free — room to grow.
+The caller now exposes four higher-level decisions: `dto NULL`, `Validate NULL`, `TOO LITTLE CAPACITY`, and `HAPPY PATH`.
 
 ### Zooming Into `Validate`
 
-Inside `Validate`, five hexagons are filled: `At INVALID`, `Email NULL`, `Quantity INVALID`, `Name NULL` (via `??`), `HAPPY PATH`. Below the seven-chunk limit.
+Inside `Validate`, the related input decisions remain together: `At INVALID`, `Email NULL`, `Quantity INVALID`, `Name NULL` (via `??`), and `HAPPY PATH`.
 
 ### What This Shows
 
-The refactor reduced cyclomatic complexity (7 → 4 at the top) without removing any logic. It simply distributed chunks across two hex flowers at two zoom levels — the signature of fractal architecture. Both levels now fit in the reader's brain.
+The refactor reduced top-level cyclomatic complexity without removing logic. It distributed related decisions across two coherent zoom levels—the signature of fractal architecture—so each level communicates one understandable responsibility.

@@ -26,13 +26,9 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-### 2. Navigate with the IDE, not the file tree
+### 2. Use the Most Direct Available Navigation Signal
 
-Hide the file/solution explorer as an exercise. Use Go To Definition (F12 in Visual Studio), Go To Implementation, Find All References, symbol search, and tab switching. The file you worked on three minutes ago is one keyboard shortcut away.
-
-- Don't scroll a tree to find a class by name
-- Learn the keybindings for your IDE's navigation commands
-- Open files by symbol, not by path
+Use symbol references, search, tests, paths, history, or runtime traces according to the question. File layout and semantic tools are complementary; no IDE exercise or keybinding is a design rule.
 
 ### 3. Read tests first — they encode intent
 

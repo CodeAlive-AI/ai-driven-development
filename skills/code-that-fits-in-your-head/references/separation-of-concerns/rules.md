@@ -4,13 +4,15 @@ Actionable rules for adding cross-cutting concerns cleanly and for deciding when
 
 ## Core Rules
 
-### 1. Use a Decorator for cross-cutting concerns
+### 1. Attach Cross-Cutting Concerns at an Explicit Seam
 
-Do not edit the real implementation to add logging, caching, auditing, or retries. Wrap it with a Decorator that implements the same interface.
+Do not scatter logging, caching, auditing, retries, or telemetry through domain logic. Choose a visible mechanism whose scope matches the concern.
 
-- Decorator implements the interface fully.
-- Decorator holds an `Inner` reference to the wrapped instance.
-- Each method delegates to `Inner` and adds its own behaviour around the call.
+- Service-specific concern: a Decorator is often appropriate.
+- Request-wide concern: use middleware or a framework pipeline.
+- Handler-bus concern: use a pipeline behavior or interceptor.
+- A business audit rule: keep it explicit in domain/application behavior rather than hiding it as infrastructure.
+- Keep wiring greppable in the composition root or framework registration.
 
 **Example**:
 ```csharp
@@ -125,10 +127,20 @@ Correctness first, then (if required by stakeholders) performance. Even then, on
 
 | Rule | Summary |
 |------|---------|
-| Decorator, not edits | Add concerns by wrapping, never by rewriting the core |
+| Explicit seam | Choose Decorator, middleware, filter, or pipeline by scope |
 | Log impure actions | Skip pure functions; log I/O, clock, randomness, failures |
 | No double-logging | Record each event at one layer only |
 | Always log unhandled exceptions | And treat each as a defect to fix |
 | Structured logging | Named placeholders, not interpolated strings |
 | Legibility over speed | Micro-optimisation is waste without measurement |
 | Optimise bottlenecks only | Profile first, fix the slow link, leave the rest alone |
+
+## Editorial Amendment (2026) — Not from the Book
+
+Agent-authored observability needs deterministic guardrails, not prompt-only policy:
+
+- enforce structured fields, redaction, and forbidden-secret rules in shared libraries, analysers, or CI where practical;
+- review I/O-boundary changes for missing or duplicated telemetry;
+- prefer traces and metrics for latency/dependency timing and logs for discrete events and failures;
+- do not generate method-entry/exit logging around pure domain functions;
+- require cache invalidation or an explicit staleness contract in the same change that adds caching.

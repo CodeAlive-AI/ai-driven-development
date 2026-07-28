@@ -1,0 +1,4 @@
+interface:
+  display_name: "Installing CLI Tools"
+  short_description: "Install CLI tools with safe secret setup"
+  default_prompt: "Use $installing-cli-tools to install and configure a CLI without exposing API keys or env secrets."

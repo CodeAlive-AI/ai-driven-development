@@ -45,7 +45,7 @@ The blank line between phases is a heuristic. The act phase is usually the small
 
 ### Short-Term vs Long-Term Memory and Legacy Code
 
-Legacy code gets memorised into long-term memory over months. Refactoring it invalidates that memory. Better: avoid writing legacy code in the first place by keeping code simple enough to fit in short-term memory (≈ seven chunks).
+Legacy code gets memorised into long-term memory over months. Refactoring it invalidates that memory. Better: avoid writing legacy code in the first place by keeping responsibilities and behaviour explicit enough to reconstruct without relying on personal memory.
 
 ### Safety Net
 

@@ -1,5 +1,7 @@
 # Teamwork and Git Knowledge
 
+> **Source note:** This book-derived theme includes 2026 editorial reframing for agent-authored changes. Agent-specific additions are not from Seemann.
+
 Core concepts for how teams use Git, integrate work, and share code ownership.
 
 ## Overview
@@ -16,30 +18,29 @@ Most teams treat Git as little more than a way to push their code to a shared re
 
 **Key points**:
 - Initialise a Git repo as the first thing in a new code base (`git init`).
-- Consider an empty initial commit (`git commit --allow-empty -m "Initial commit"`) so you can rewrite history cleanly before publishing.
-- Learn the tool itself, not just a GUI — the CLI is the foundation and many GUIs interoperate with it.
+- Preserve enough Git understanding to inspect, recover, and automate history independently of a particular UI.
 
 ### Continuous Integration (the practice, not the server)
 
 **Definition**: A working practice where every developer frequently merges their code with the mainline so the team stays converged.
 
-Owning a CI server is not Continuous Integration. CI is a rhythm: you share your code with everyone else frequently — at least every four hours, ideally more often. The underlying problem it solves is concurrency on a shared resource (the code). Long-lived branches and infrequent merges cause "merge hell" regardless of the tool.
+Owning a CI server is not Continuous Integration. CI is the practice of keeping work compatible with the shared mainline. The appropriate cadence depends on concurrency, risk, and verification cost; a fixed number of hours is not the definition.
 
 **Key points**:
 - Integration means merging to mainline, not running a build server.
-- Rule of thumb: integrate at least every four hours (about half a day's work).
+- Integrate or synchronize often enough to prevent expensive divergence.
 - Writing everything on `master` is not CI — it confuses branch names with the actual problem (concurrent edits).
-- If a feature takes longer than four hours, hide it behind a feature flag and integrate anyway.
+- Use feature flags or branch-by-abstraction when incomplete behavior must integrate safely.
 
-### Small Commits and Manoeuvrability
+### Coherent Commits and Manoeuvrability
 
-**Definition**: Committing frequently at every green build and passing test, so you can cheaply discard, reorder, or recombine work.
+**Definition**: Preserving coherent known-good states so you can diagnose, discard, reorder, resume, or recover work.
 
-Large "Death Star" commits bundle unrelated edits together and make it hard to undo only part of a change. Many small commits let you abandon mistakes on side branches, keep what worked, and edit local history before pushing.
+The problem with a "Death Star" commit is mixed concerns and unverifiable architecture, not raw size. A systematic migration may be large while still having one transformation, clear evidence, and a useful recovery point.
 
 **Key points**:
 - The commit history should be a series of snapshots of working software.
-- Never commit code that doesn't work; do commit every time it does.
+- Keep published checkpoints useful; avoid arbitrary per-file commits that obscure the change.
 - Tactical manoeuvrability: change direction quickly, reset cheaply, keep side-branch experiments around.
 
 ### Collective Code Ownership
@@ -77,8 +78,7 @@ Code review is one of the few practices with documented effectiveness at finding
 
 **Key points**:
 - Anchor reviews to existing daily rhythms (morning, post-lunch).
-- If change sets represent less than half a day's work and the team reviews twice daily, worst-case wait is ~4 hours.
-- A review that takes more than an hour is not effective.
+- Keep latency low enough that context and mainline compatibility are not lost. Risk and architecture matter more than a universal review stopwatch.
 
 ### Pull Requests and GitHub Flow
 
@@ -87,18 +87,18 @@ Code review is one of the few practices with documented effectiveness at finding
 Even when you could self-merge, team policy should require someone else to review and sign off. PR review is a code review conducted asynchronously in writing, which means tone is easy to lose — be extra polite.
 
 **Key points**:
-- One PR does one thing. Multiple things → multiple PRs.
+- One PR has one coherent outcome. A systematic change may touch many files.
 - Don't mix reformatting with substantive changes (unless reformatting *is* the change).
-- A too-big PR should be declined, not rubber-stamped.
+- Decline a change when architecture or evidence cannot be evaluated; do not rubber-stamp generated bulk.
 
 ## Terminology
 
 | Term | Definition |
 |------|------------|
-| 50/72 rule | De-facto standard: 50-char imperative subject, blank line, body wrapped at 72. |
-| Continuous Integration | The practice of merging to mainline at least every few hours. |
+| Commit-message policy | Repository convention for accurate, searchable rationale. |
+| Continuous Integration | The practice of controlling divergence from shared mainline. |
 | Merge hell | Painful conflicts caused by diverging long-lived branches. |
-| Micro-commit | A commit of a single small change (rename, extract method, fix typo). |
+| Coherent commit | A known-good state with one explainable purpose. |
 | Bus factor / lottery factor | The number of people the team can lose before development halts. |
 | Collective code ownership | Every part of the code has at least two comfortable maintainers. |
 | Weak code ownership | A "natural" owner exists, but anyone is allowed to change the code. |
@@ -110,7 +110,7 @@ Even when you could self-merge, team policy should require someone else to revie
 
 - **Checklists (Ch 2)**: Using Git is the first item on the new-code-base checklist.
 - **Readability**: The review question "will I be okay maintaining this?" is really "does this fit in my brain?".
-- **Testing**: Small commits align naturally with the red-green-refactor cycle; every green is a commit candidate.
+- **Testing**: Verified, coherent checkpoints align naturally with red-green-refactor and provide useful recovery points.
 - **Feature flags (Ch 10)**: The escape hatch that lets you integrate unfinished work without breaking mainline.
 
 ## Common Misconceptions
@@ -138,10 +138,10 @@ Even when you could self-merge, team policy should require someone else to revie
 | Concept | One-Line Summary |
 |---------|-----------------|
 | Git tactically | Use local manoeuvrability: experiment, reset, edit history before push. |
-| CI | Merge to mainline at least every 4 hours. |
-| Small commits | Every green compile + passing tests is a commit candidate. |
+| CI | Integrate according to divergence and risk; keep the mainline verifiably healthy. |
+| Coherent commits | Record useful, known-good checkpoints without manufacturing microcommits. |
 | Collective ownership | ≥2 people comfortable in every part of the code. |
 | Pair programming | Real-time review + approval built-in, low latency. |
-| Review latency | Keep it to hours, not days; anchor to daily rhythms. |
-| Reject big change sets | A review you can't do in under an hour isn't effective. |
+| Review evidence | Make architecture, intent, verification, and residual risk inspectable. |
+| Large change sets | Accept systematic, well-specified work; reject incoherent or unverifiable bulk. |
 | PR discipline | One thing per PR, tests passing, proper commit messages. |

@@ -42,12 +42,12 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 
 - [ ] Read the full bug report (or the failing test output)
 - [ ] Identify: What was the user doing? What did they expect? What did they get?
-- [ ] Rubber-duck explanation — say it out loud (or write it down)
+- [ ] Write a concise explanation with evidence, attempted hypotheses, and unknowns
 - [ ] Ask yourself: could this be user error / environment / config rather than a defect?
 
 **Ask**: "What's the single sentence description of the wrong behaviour?"
 
-**Reference**: `references/troubleshooting/knowledge.md` (rubber ducking)
+**Reference**: `references/troubleshooting/knowledge.md` (externalizing the problem)
 
 ---
 
@@ -91,6 +91,8 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 
 **Reference**: `references/troubleshooting/knowledge.md` (scientific method)
 
+If repeated experiments produce no new evidence, stop editing and revise the hypothesis, instrumentation, or system model.
+
 ---
 
 ### Step 5: If It's a Regression, Bisect
@@ -113,10 +115,11 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 
 **Goal**: Fix makes the failing test pass; don't break any other test.
 
-- [ ] Apply the minimum change that makes the reproduction test pass
+- [ ] Apply the simplest change that restores the violated invariant without adding symptom-specific debt
 - [ ] Run the full test suite — all green
 - [ ] Review: does the fix handle related cases, or only the exact repro?
 - [ ] Add a few more test cases (Devil's Advocate) to cover the generalisation
+- [ ] For material impact, confirm behavior against an independent oracle where practical
 
 **Reference**: `references/outside-in-tdd/rules.md` (Devil's Advocate)
 
@@ -140,7 +143,7 @@ Methodical, scientific-method debugging — from bug report to regression-proofe
 **Goal**: Leave the history readable.
 
 - [ ] Commit the failing test + the fix
-- [ ] Commit subject: imperative, ≤ 50 chars ("Fix off-by-one in date parser")
+- [ ] Commit subject is concise, imperative, and follows repository policy ("Fix off-by-one in date parser")
 - [ ] Body explains: what was the symptom, what was the root cause, how the fix works
 - [ ] If warranted, add a comment at the fix site — but ONLY if the why is non-obvious
 

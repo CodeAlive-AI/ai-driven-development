@@ -1,6 +1,6 @@
 # Hallucination Debugging (Agent-Native)
 
-> ⚠️ **Not from the book.** This is an editorial amendment added to cover an agent-specific concern Seemann does not address. See `references/agent-native/README.md`.
+> ⚠️ **Not from the book.** This editorial amendment covers an agent-specific concern Seemann does not address. See `knowledge.md`.
 
 A defect class Seemann's Ch 12 doesn't cover: confident-wrong output from an LLM agent.
 
@@ -25,6 +25,7 @@ They need different debugging techniques.
 | **Wrong argument order** | Runtime value error or wrong result | `str.replace(new, old)` instead of `(old, new)` |
 | **Version-mismatched feature** | "Unknown option" / "unsupported" | React `use()` hook on React 17 |
 | **Close-but-not** library name | Install fails or wrong package | `pip install lxml-html` (real: `lxml`) |
+| **Package hallucination** | A plausible package name is absent or attacker-controlled | Installing an invented dependency without provenance checks |
 | **Phantom config key** | Silently ignored, no effect | `tsconfig` option that looks real but isn't |
 | **Type lie** | Tests pass; prod breaks | Returning `User` but typed as `User | null` — caller doesn't null-check |
 
@@ -60,7 +61,7 @@ When a suspect failure occurs:
 4. **Docs-for-this-version, not docs-in-general.** Pin library version, then look at its docs / types.
 5. **When uncertain, run it.** Don't reason about what the code will do — execute it.
 6. **Schema-validate all external responses.** Hallucinated JSON shapes pass through without schema checks.
-7. **Install before import.** If an import is suspicious, check `package.json` / `requirements.txt` — the package may not even be installed.
+7. **Verify before adding a dependency.** Confirm that the package is intended, maintained, available from the trusted registry, compatible with the lockfile, and justified by the design. Never install a plausible name merely because an import failed.
 
 ## Antipatterns
 
@@ -79,6 +80,7 @@ When a suspect failure occurs:
 - **Lockfiles**: `package-lock.json`, `poetry.lock`, `Cargo.lock` — without them, the "version the agent recalls" drifts from "version installed"
 - **Runtime schema validation** at boundaries (Zod, Pydantic, JSON Schema)
 - **Typo-safe package managers**: prefer managers that resolve to well-known registries; verify downloads
+- **Dependency provenance**: inspect publisher/owner, repository, release history, checksums/signatures where available, and the exact locked version
 
 ## Relation to the Book
 

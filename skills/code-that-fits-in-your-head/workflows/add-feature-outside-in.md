@@ -34,6 +34,8 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 
 **Primary references**: `references/outside-in-tdd/`, `references/encapsulation/`, `references/api-design/`
 
+For large features or migrations, define the target architecture, dependency direction, acceptance and non-regression criteria, verification strategy, and recovery path before implementation. Do not reduce scope merely to satisfy a line or file limit; stage work only where it improves architecture, verification, or rollback.
+
 ---
 
 ## Workflow Steps
@@ -121,9 +123,10 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 
 ### Step 7: Decompose If Needed
 
-**Goal**: Keep units small.
+**Goal**: Keep responsibilities and effects coherent.
 
-- [ ] Any method now exceeds 80×24 or complexity > 7? Decompose.
+- [ ] Any method exceeds cyclomatic complexity 15, or mixes responsibilities/effects even below that threshold? Review and decompose when it clarifies the design.
+- [ ] Any new cycles, duplicated rules, cross-module coupling, or temporary paths without cleanup ownership?
 - [ ] Prefer sequential composition over nested
 - [ ] Extract pure helpers; keep side effects at the shell
 - [ ] Re-run tests after each extraction
@@ -134,11 +137,11 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 
 ### Step 8: Add Cross-Cutting Concerns (if needed)
 
-**Goal**: Logging, metrics, caching — without littering the code.
+**Goal**: Logging, metrics, caching — without mixing them into domain logic.
 
-- [ ] Use a Decorator pattern, not inline calls
+- [ ] Attach the concern at an explicit seam: Decorator, middleware, filter, pipeline, or domain behavior according to scope
 - [ ] Log at the boundary of I/O (requests, failures), not on pure functions
-- [ ] Register the decorator at composition root
+- [ ] Keep wiring visible in the composition root or framework registration
 
 **Reference**: `references/separation-of-concerns/patterns.md`, `references/separation-of-concerns/rules.md`
 
@@ -155,13 +158,13 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 
 ---
 
-### Step 10: Commit in Small, Reversible Steps
+### Step 10: Preserve Coherent, Recoverable History
 
 **Goal**: Each commit is a viable state.
 
-- [ ] Commit after each green test + refactor
-- [ ] Subject ≤ 50 chars, imperative mood
-- [ ] Keep test-only and production-only refactors in separate commits
+- [ ] Preserve known-good checkpoints appropriate to the architecture and recovery plan
+- [ ] Use concise imperative subjects that follow repository policy
+- [ ] Make behavior, oracle, and mechanical refactoring changes distinguishable without forcing broken intermediate states
 
 **Reference**: `references/teamwork-git/rules.md`
 
@@ -177,7 +180,7 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 [ ] Step 5: Domain types with invariants
 [ ] Step 6: Domain unit-tested
 [ ] Step 7: Decomposition OK
-[ ] Step 8: Cross-cutting via Decorator
+[ ] Step 8: Cross-cutting concern attached at the right explicit seam
 [ ] Step 9: Threat-modelled if exposed
 [ ] Step 10: Small, clean commits
 ```
@@ -203,5 +206,6 @@ Feature is done when:
 - [ ] Domain unit tests pass
 - [ ] Decomposition rules satisfied
 - [ ] Threat model considered if applicable
-- [ ] Commits follow 50/72 and small-focused principles
+- [ ] Commit history is accurate, coherent, and useful for recovery
+- [ ] Material behavior has independent acceptance evidence where practical
 - [ ] Deployable end-to-end slice works

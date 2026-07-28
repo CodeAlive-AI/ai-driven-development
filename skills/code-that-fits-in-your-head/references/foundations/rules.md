@@ -1,128 +1,85 @@
 # Foundations Rules
 
-Actionable rules for writing sustainable, humane code and maintaining the personal rhythm that supports it.
+> **Source note:** This book-derived theme includes 2026 editorial reframing for agent-driven development. Agent-specific additions are not from Seemann.
+
+Rules for keeping software understandable, maintainable, and resistant to accidental complexity.
 
 ## Core Rules
 
-### 1. Write Code for the Next Reader
+### 1. Write for the Next Reader and Changer
 
-You spend more time reading code than writing it. Every line is read many times.
+Code is read, reviewed, debugged, and extended far more often than it is authored.
 
-- Optimise for readability, not typing speed.
-- Treat every minute spent on readability as a tenfold future saving.
-- When in doubt about a clever trick vs. plain code, choose plain code.
-- Never accept "more code faster" as a win — it is more maintenance.
+- Prefer plain code over clever compression.
+- Make intent, dependencies, invariants, and side effects discoverable.
+- Optimise for future modification, not generation speed.
+- Treat code that is easy to generate but difficult to own as a liability.
 
-### 2. Keep Active Concepts Under Seven
+### 2. Keep Each Unit Conceptually Cohesive
 
-Short-term memory tops out around seven items. The computer does not care, but you do.
+Human working memory is limited, but no universal item count defines good design.
 
-- Limit dependencies per class/module to under seven.
-- Keep cyclomatic complexity at most seven.
-- Limit arguments per function.
-- Write small, self-contained functions.
-- If you cannot hold all the relevant state for a function in your head, the function is too big.
+- Give each function, type, module, and service a coherent responsibility.
+- Keep dependencies and interacting concepts few enough to name and explain.
+- Split code when branches, state, effects, or responsibilities interfere with one another.
+- Do not split cohesive logic merely to satisfy a superficial size metric.
 
-### 3. Make All Relevant Context Visible Locally
+### 3. Make Context Discoverable and Effects Explicit
 
-System 1 only reasons about information that is activated — what is on the screen right now. What You See Is All There Is.
+A reader or agent should be able to find the information required to change a unit safely.
 
-- Place related code close together: dependencies, variables, and decisions required to understand a block should be visible simultaneously.
-- Avoid global variables — they are off-screen state System 1 will not account for.
-- Avoid hidden side effects — if a function touches state not in its signature, readers will miss it.
-- Prefer explicit arguments and return values over ambient context.
+- Avoid ambient mutable state and hidden side effects.
+- Prefer explicit inputs, outputs, dependencies, and ownership boundaries.
+- Keep repository-local architecture, contracts, and verification commands current.
+- Use progressive disclosure: provide a short map to authoritative details instead of duplicating every fact locally.
 
 ### 4. Treat Code as a Liability, Not an Asset
 
-More code means more to read, more to test, more places for bugs to hide.
+More code means more behavior to understand, verify, secure, and maintain.
 
-- Delete aggressively; do not hoard code "in case".
-- Resist generating large amounts of boilerplate or templated code.
-- Before adding code, ask whether an existing abstraction could handle it.
-- Prefer fewer, clearer lines over more lines that "do more".
+- Delete dead, duplicated, speculative, and obsolete code.
+- Reuse an existing coherent abstraction before adding another.
+- Reject boilerplate and generated volume that do not improve the design.
+- Prefer the smallest complete solution, not the smallest diff at the cost of architecture.
 
-### 5. Aim for Sustainability, Not Just Value
+### 5. Optimize for Sustainability
 
-Some work (security, architecture, internal quality) has no measurable value — only measurable absence.
+Sustainable software remains affordable to change after years of maintenance.
 
-- Do not reject refactoring or quality work because it has no immediate business metric.
-- Use checklists and treat warnings as errors to prevent cruft from forming.
-- Expect to rely on experience and judgment — heuristics guide, they do not guarantee.
-- Reject the "worse is better" impulse when it trades long-term survival for short-term speed.
+- Preserve cohesion and explicit boundaries before local delivery pressure erodes them.
+- Treat refactoring, security, architecture, and observability as lifecycle work, not optional polish.
+- Use mechanical checks for stable objective constraints and human judgment for intent and architecture.
+- Record debt deliberately with an owner and removal condition; do not let temporary compromises become invisible defaults.
 
-### 6. Slow Down
+### 6. Deliberate Before Accepting, Not Before Generating
 
-Typing faster produces more code, not more value.
+Agents can produce large changes quickly. Artificially slowing generation is not the goal.
 
-- Deliberately slow down when adding code.
-- Prefer one well-considered change over several rushed ones.
-- Treat "I need to slow down" as a neutral fact, not a criticism.
-
-### 7. Time-Box Your Work
-
-Work in 25-minute intervals with 5-minute breaks.
-
-- Keep a countdown timer visible (kitchen timer, tray app, etc.).
-- Use the visible timer to resist "just checking" Twitter / email / chat.
-- Starting a big task is the hard part; tell yourself "I can look at this for 25 minutes".
-- When the timer goes off, stop — even if you are in the zone.
-
-### 8. Take Real Breaks
-
-The 5-minute break only works if it is a real break.
-
-- Get out of the chair. Leave the room if possible.
-- Get away from the computer — physical movement matters.
-- Breaks surface wasted work: better to waste 15 minutes than 3 hours.
-- Insight arrives away from the keyboard, not at it. Plan for that.
-
-### 9. Use Time Deliberately
-
-Do not let the day happen to you.
-
-- Reserve fixed blocks for learning (e.g. two 25-minute boxes per morning).
-- Study textbooks, do exercises, answer others' questions — teaching is learning.
-- Limit meetings: ask for an agenda; many meetings cancel themselves.
-- Write things down — documentation scales, meetings do not.
-- Do not work long hours; past a point, productivity goes negative.
-
-### 10. Touch Type
-
-Typing is not the bottleneck; the eyes are.
-
-- Learn to touch type (a few weeks at one hour per day is enough).
-- The point is not speed — it is keeping your eyes on the screen.
-- Modern IDEs give constant feedback; hunt-and-peck typists miss it all.
-- Let statement completion and IDE hints "do the typing" so your attention stays on code.
+- Plan large work around stable architectural boundaries and explicit acceptance criteria.
+- Verify meaningful checkpoints and preserve evidence of correctness.
+- Pause or revise the plan when evidence contradicts assumptions.
+- Do not confuse task size with complexity: a large systematic migration may be safer than a small tangled patch.
 
 ## Guidelines
 
-Less strict recommendations:
-
-- Prefer well-packaged libraries (sorting, hashing, databases) over reinventing computer science.
-- Expect System 1 errors — double-check trivial-looking calculations and inferences.
-- Take breaks that combine physical activity with being outdoors when possible.
-- Do not try to learn a new programming language every year — spread learning across languages, testing, algorithms, design patterns, etc.
+- Prefer established libraries over reinventing solved infrastructure.
+- Re-check conclusions that look obvious but depend on hidden assumptions.
+- Prefer written, versioned rationale over transient conversation for important decisions.
+- Keep terminology consistent across code, tests, documentation, and product language.
 
 ## Exceptions
 
-When these rules may be relaxed:
-
-- **Exploratory spike**: Early prototypes can sacrifice readability if thrown away immediately afterwards.
-- **Fixed external contracts**: You cannot always reduce argument counts on externally defined APIs.
-- **Genuine emergency**: An outage may justify long hours once — not as a pattern.
+- **Exploratory spike**: readability may be relaxed only when the spike is isolated and will be discarded or deliberately rewritten.
+- **Fixed external contract**: awkward shapes may be unavoidable at a boundary; translate them into cleaner internal types.
+- **Production emergency**: accept temporary debt only with explicit follow-up, owner, and verification of the narrow fix.
 
 ## Quick Reference
 
 | Rule | Summary |
-|------|---------|
-| Read > Write | Optimise code for reading, not writing |
-| Under seven | Dependencies, complexity, arguments all stay small |
-| Visible context | All state a reader needs must be on screen |
-| Code = liability | Less code is better |
-| Sustainability | Long-term quality over short-term metric |
-| Slow down | Typing speed is not productivity |
-| 25-minute boxes | Work in intervals with visible countdown |
-| Real breaks | Leave the chair, move, change scene |
-| Deliberate time | Fixed learning blocks, minimal meetings, written docs |
-| Touch type | Keep eyes on the screen, not the keyboard |
+|---|---|
+| Next reader and changer | Optimize for ownership, not authorship speed |
+| Conceptual cohesion | Split conflicting responsibilities, not cohesive work |
+| Discoverable context | Make dependencies, effects, and sources of truth findable |
+| Code is liability | Delete duplication and speculative volume |
+| Sustainability | Resist erosion and make debt explicit |
+| Deliberate acceptance | Large work is fine when architecture and verification are sound |

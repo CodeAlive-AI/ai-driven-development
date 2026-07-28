@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-21-blue?style=for-the-badge" alt="21 Skills">
+  <img src="https://img.shields.io/badge/Skills-23-blue?style=for-the-badge" alt="23 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 21 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 23 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -29,7 +29,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 21 skills
+# Install all 23 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -50,7 +50,7 @@ The Bash safety hook (`bash-guard`) ships separately — see [hooks/balanced-saf
 
 ## What's Included
 
-### Agent reflection & meta (7)
+### Agent reflection & meta (8)
 
 Meta-skills that let AI coding agents configure themselves. No more editing config files — just tell your agent what you need.
 
@@ -63,13 +63,15 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [skills-management](skills/skills-management/) | Organise, discover, share, and **train** skills for coding agents — SkillOpt-style optimisation loop with bounded edits, held-out validation gate, rejected-edit buffer, epoch-wise slow/meta update, plus trigger / transfer / diff / edit-log tooling |
 | [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code and OpenCode (validate, scaffold, submit to Anthropic's directory) |
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
+| [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (6)
+### Engineering practices (7)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
+| [code-that-fits-in-your-head](skills/code-that-fits-in-your-head/) | Keep agent-authored systems understandable and maintainable by resisting accidental complexity, Big Balls of Mud, and technical-debt accumulation. Supports large changes when architecture, acceptance criteria, verification, and recovery are explicit; uses structural heuristics without universal formatting or task-size limits |
 | [prompt-engineering](skills/prompt-engineering/) | Universal prompt-engineering toolkit. 14 reference docs covering Claude / GPT / Gemini family-specific guidance, prompting techniques, evaluation & red-teaming, common failure modes (hallucinations, security, structure, debt) |
 | [fpf-problem-solving](skills/fpf-problem-solving/) | First Principles Framework — a transdisciplinary "operating system for thought". Decompose cross-domain problems, audit conclusions, and reason rigorously about complex systems. Based on Anatoly Levenchuk's [FPF](https://github.com/ailev/FPF) |
 | [bug-fix-protocol](skills/bug-fix-protocol/) | 8-step bug-fix protocol. Treats every production bug as **two** failures (the code defect + the testing system that allowed it through) and enforces a step-8 audit that closes the gap |
@@ -137,9 +139,11 @@ ai-driven-development/
 │   ├── agents-consilium/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
+│   ├── code-that-fits-in-your-head/
 │   ├── fetch-url-as-markdown/
 │   ├── fpf-problem-solving/
 │   ├── hooks-management/
+│   ├── installing-cli-tools/
 │   ├── investigating-repository-history/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/

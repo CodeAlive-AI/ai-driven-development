@@ -1,130 +1,82 @@
 # Foundations Knowledge
 
-Core concepts that justify every other practice in the book: code exists to sustain an organisation, programming is hard because of brain limits (not CPU limits), and software engineering is the art of writing code that fits in a human head.
+> **Source note:** This book-derived theme includes 2026 editorial reframing for agent-driven development. Agent-specific additions are not from Seemann.
 
-## Overview
+Why understandable code, explicit architecture, and technical-debt control remain essential when agents write much of the implementation.
 
-Software is a long-lived liability, not an asset. The binding constraint on a code base is the human brain — roughly seven items in short-term memory, two systems of thought (fast-but-wrong and slow-but-effortful), and a strong bias toward jumping to conclusions. Good software engineering organises code so humans can understand it at a sustainable pace, and extends that discipline to how the programmer spends their day.
+## Sustainability
 
-## Key Concepts
+Sustainability is the ability to keep supporting an organisation through code changes as effectively in six months or six years as today. Software becomes expensive when each change requires reconstructing hidden context, crossing unstable boundaries, or working around accumulated compromises.
 
-### Sustainability
+The central constraint is no longer typing capacity. Agentic development makes implementation abundant while human ownership, architectural judgment, verification, and operational responsibility remain scarce.
 
-**Definition**: The ability to keep supporting an organisation through code changes — adding features, fixing bugs — just as effectively in six months or six years as today.
+## Code as Liability
 
-Software typically lives for years or decades and undergoes constant change. Without attention to internal quality, progress is fast initially but slows until even small changes require understanding large, hard-to-understand areas of code.
+Code is useful only through the behavior it provides. Every additional abstraction, branch, dependency, and configuration path creates something that must be understood, tested, secured, upgraded, and eventually removed.
 
-**Key points**:
-- Sustainability is the problem software engineering should solve.
-- Poor internal quality is measurable — but often only after it is too late.
-- Checklists, treating warnings as errors, and heuristics pull in the right direction without guaranteeing perfection.
+Generated volume therefore is not an asset by itself. The desirable output is a coherent capability with the least accidental machinery and a clear path for future change.
 
-### Value vs. Sustainability
+## Human Comprehension Still Matters
 
-**Definition**: Value is what the code produces for its organisation; sustainability is the middle ground between ignoring value (tech for tech's sake) and a myopic focus on immediately measurable results.
+Humans have limited working memory and rely on incomplete mental models. The book uses seven as a memorable symbol for this constraint, not as a universal scientific limit for every dependency, variable, or branch.
 
-Some valuable work has no measurable output — only measurable *absence* (e.g. security, internal architecture). A "worse is better" fallacy arises when teams treat code that doesn't produce immediate value as prohibited.
+Agents have different limits: context can be externalised through files and tools, but long context does not guarantee correct architecture or lifecycle stewardship. Both humans and agents benefit from cohesion, explicit boundaries, good names, executable contracts, and progressive disclosure.
 
-### Short-Term Memory Limit (Seven)
+## Complexity and Big Ball of Mud
 
-**Definition**: The human brain's working memory holds roughly 4–7 pieces of information at once; this book uses seven as the canonical token for that limit.
+Accidental complexity is structure that the problem does not require. It accumulates through:
 
-A computer tracks millions of items in RAM; a brain tracks seven. Reading code is essentially running the language in your mind — if there are too many variables, branches, or dependencies, you cannot keep track.
+- responsibilities that change for different reasons living together;
+- implicit dependencies and side effects;
+- duplicated logic and competing abstractions;
+- cycles between modules or layers;
+- temporary migrations, flags, and compatibility paths that never disappear;
+- local fixes that ignore system-wide architecture.
 
-**Key points**:
-- Humane code keeps active concepts under seven.
-- Applies to dependencies per class, cyclomatic complexity, arguments per method, etc.
-- The exact number is less important than the fact that it is *orders of magnitude* smaller than a computer's memory.
+A Big Ball of Mud is the system-level outcome: boundaries stop constraining change, so every feature can touch everything. Small methods do not prevent it. The defence combines local decomposition with module boundaries, dependency direction, verification, and active deletion of obsolete paths.
 
-### Code Read More Than Written
+## Technical Debt
 
-**Definition**: You read code far more times than you write it — when fixing bugs, adding features, or refactoring.
+Technical debt is a deliberate or accidental choice that increases future change cost. Not all debt is forbidden, but invisible debt compounds.
 
-When writing, you have all the context. When reading, that context is gone. This is why "more code faster" is a bad strategy: more code means more to read.
+A responsible compromise records:
 
-**Key points**:
-- Optimise code for readability, not writing speed.
-- Every minute invested in readability pays back tenfold.
-- Automated code generation compounds the reading burden.
+- what was traded away;
+- why the compromise is acceptable now;
+- what risk it creates;
+- who owns it;
+- the condition or date for repayment.
 
-### System 1 and System 2 (Kahneman)
+Agents must not create speculative abstractions, TODOs, disabled checks, or permanent compatibility branches merely because they are cheap to generate.
 
-**Definition**: Two modes of thought. System 1 is fast, automatic, effortless, and prone to wrong conclusions. System 2 is slow, effortful, and deliberate.
+## Large Tasks
 
-System 1 is always running in the background, trying to make sense of code. It jumps to conclusions. What You See Is All There Is (WYSIATI) — information not visible at the current cursor is effectively invisible, even if System 2 "knows" about it.
+Task size is not a maintainability metric. Agents can complete migrations and implementations spanning tens of thousands of lines when the work has:
 
-**Key points**:
-- Hidden state (globals, side effects) defeats System 1 because it is not activated.
-- Place related code close together so all relevant dependencies are visible at once.
-- The bat-and-ball puzzle ($1.10 total, bat costs $1.00 more than ball — ball is 5¢, not 10¢) shows System 1 error on trivial problems.
+- a coherent target architecture;
+- explicit boundaries and dependency direction;
+- clear acceptance and non-regression criteria;
+- trustworthy automated verification;
+- observable checkpoints and rollback or recovery paths.
 
-### Humane Code
-
-**Definition**: Code organised so it fits the cognitive constraints of a human brain, not just the execution model of a computer.
-
-> "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler
-
-**In practice**:
-- Small, self-contained functions.
-- Fewer than seven dependencies.
-- Cyclomatic complexity at most seven.
-- All context needed to understand a piece of code is visible at the same time.
-
-### Personal Rhythm
-
-**Definition**: A loose daily structure — time-boxed work, deliberate breaks, deliberate learning time, and fundamental tool fluency — that treats the programmer's attention as the scarcest resource.
-
-Intellectual work is not physical work: you cannot measure productivity by hours. Long hours cause *negative* productivity because mistakes compound. Subconscious processing ("System 1 in the background") produces insights when you step away from the keyboard.
-
-**Key points**:
-- Time-box in 25-minute intervals with 5-minute breaks (not full Pomodoro).
-- Make breaks real: leave the room, walk, exercise.
-- Being in the zone is not a guarantee of useful output.
-- Touch typing matters because it frees the eyes to watch the screen and use IDE feedback.
-
-## Terminology
-
-| Term | Definition |
-|------|------------|
-| Sustainability | Capacity of a code base to keep supporting its organisation over years |
-| Humane code | Code organised to fit human cognitive limits |
-| Seven | Shorthand for the brain's short-term memory limit |
-| System 1 / System 2 | Kahneman's fast/automatic and slow/deliberate modes of thought |
-| WYSIATI | "What You See Is All There Is" — System 1 only reasons about activated information |
-| Flow / the zone | Mental state of immersion; productive-feeling but not always productive |
-| Complexity | "Assembled from parts" (Hickey) — the antonym of simplicity |
-| Time-boxing | Working in fixed intervals (e.g. 25 min) with mandatory breaks |
+The smell is unstructured scope: unclear ownership, mixed concerns, unverifiable behavior, or changes whose architectural effect cannot be explained.
 
 ## Key Principles
 
-| Principle | One-Line Summary |
-|-----------|------------------|
-| Code is a liability | The less you write, the less there is to maintain |
-| Optimise for readability | You will read this code many more times than you wrote it |
-| Fit in the head | Keep active concepts under seven |
-| Make dependencies visible | System 1 ignores what isn't on screen |
-| Value ≠ immediate measurable value | Security, architecture, and quality reveal themselves by their absence |
-| Sustainability beats speed | Faster typing produces more to maintain, not more value |
-| Breaks are work | Insights come away from the keyboard, not at it |
-| Don't work long hours | Negative productivity compounds after fatigue sets in |
+| Principle | Meaning |
+|---|---|
+| Code is a liability | Maintain only machinery that earns its lifecycle cost |
+| Optimize for change | Prefer designs that keep future modifications local |
+| Cohesion over arbitrary size | Keep related behavior together and conflicting responsibilities apart |
+| Explicit boundaries | Make dependencies, effects, and ownership visible |
+| Verification is design | Types, tests, schemas, and architecture checks constrain change |
+| Debt must be visible | Temporary compromises need an owner and exit condition |
+| Large is not automatically complex | Architecture and verification matter more than line count |
 
 ## How It Relates To
 
-- **Decomposition**: The seven-item limit drives function size, class size, and dependency counts.
-- **Encapsulation**: Hides detail so each layer fits in the head.
-- **Code navigation**: Tight cohesion supports WYSIATI — related code close together.
-- **Teamwork**: Checklists and shared practices are how we compensate for individual brain limits.
-
-## Common Misconceptions
-
-- **Myth**: Being in the zone means you are being productive.
-  **Reality**: Flow feels productive but is not contemplative; hours of flow can produce code that cannot work.
-
-- **Myth**: Productivity is proportional to hours worked.
-  **Reality**: Intellectual work degrades with fatigue; long hours can be net-negative.
-
-- **Myth**: Fast typing makes you a faster programmer.
-  **Reality**: You spend more time reading than typing; readability dominates.
-
-- **Myth**: Code that produces no measurable value is waste.
-  **Reality**: Security, quality, and architecture only become measurable by their absence.
+- **Decomposition** controls complexity inside methods, types, modules, and dependency graphs.
+- **Encapsulation** protects invariants so callers need less defensive knowledge.
+- **API design** makes intended use and side effects explicit.
+- **Evolution** prevents migrations, flags, and compatibility layers from becoming permanent mud.
+- **Agent-native guidance** protects verification integrity and human ownership when generation is cheap.

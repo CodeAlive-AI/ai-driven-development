@@ -72,16 +72,9 @@ Mentally replace every method name with `Xxx`. If the types alone still make it 
 - Fails for "stringly typed" APIs where every signature looks the same
 - A reason to keep classes focused rather than growing into God Classes
 
-### 7. Respect the Hierarchy of Communication
+### 7. Use Complementary Communication Channels
 
-Distill intent in this order, using the next mechanism only when the prior one cannot express the idea:
-
-1. **Types** — checked by the compiler; never stale
-2. **Method names** — read on every use
-3. **Comments** — for reasons and caveats
-4. **Automated tests** — executable illustrative examples
-5. **Commit messages** — context for a particular change
-6. **External docs** — high-level setup and mission
+Put enforceable contracts in types, schemas, and tests; put readable intent in names; put non-obvious rationale in comments and commit history; put system-level mission and usage in maintained documentation. None is sufficient alone, and any of them can drift when it is not checked or reviewed.
 
 ### 8. Design for the Reader, Not the Writer
 
@@ -94,7 +87,7 @@ An API with dozens of methods in a single class (a God Class) makes reasoning im
 ## Guidelines
 
 - Prefer non-nullable reference types; use `?` only when `null` is genuinely a valid value
-- Use an IDE's method-signature tooltip to evaluate whether a constructor is self-explanatory
+- Evaluate a constructor from its signature alone: required inputs and invalid combinations should be clear
 - When in doubt, write a test that tries to misuse the API — if it is too easy, tighten the types
 - If a class owns configuration, pass the whole class as a dependency rather than exploding its fields
 
@@ -110,7 +103,7 @@ An API with dozens of methods in a single class (a God Class) makes reasoning im
 |------|---------|
 | CQS | Command (void) or Query (returns data), never both |
 | Poka-yoke | Make invalid states fail to compile |
-| Hierarchy | Types > names > comments > tests > commits > docs |
+| Complementary contracts | Types, tests, schemas, names, rationale, and docs serve different roles |
 | X-Out | Blank every name — if still readable, names underused |
 | No Swiss Army | Favor specialized APIs over God Classes |
 | Write for readers | Optimize for reading, not writing |

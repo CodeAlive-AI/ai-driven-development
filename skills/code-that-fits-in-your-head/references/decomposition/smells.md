@@ -1,22 +1,24 @@
 # Decomposition Smells
 
+> **Source note:** D1–D7 derive from the book theme; system-wide sprawl and current thresholds are 2026 editorial adaptations.
+
 Code smells that signal a block needs to be decomposed, with how to detect and fix each. Use during code review and when responding to "this code feels off — what's wrong?"
 
 ---
 
 ## D1: High Cyclomatic Complexity
 
-**What it is**: A single method has more than seven independent pathways.
+**What it is**: A single method has more than 15 independent pathways, or fewer paths whose interaction is still difficult to explain and verify.
 
 **How to detect**:
 - Count: start at 1, add 1 for every `if`, `for`, `foreach`, `while`, `do`, `case`, and `??`.
 - Run Visual Studio's built-in metrics calculator (or equivalent).
-- The hex flower is full — no room for another chunk.
+- Use the project's configured metric when it has one; otherwise use 15 as a review trigger.
 
 **Why it's bad**:
-- Exceeds working-memory capacity; the reader must commit structure to long-term memory.
+- Makes behavior and test coverage harder to reason about when paths interact.
 - Each new branch requires another unit test.
-- Creeps upward unnoticed; past 15-20 the code is often unsalvageable.
+- Often indicates mixed responsibilities, nested decisions, or duplicated conditions.
 
 **How to fix**:
 - Extract cohesive sections into helpers.
@@ -25,7 +27,7 @@ Code smells that signal a block needs to be decomposed, with how to detect and f
 
 **Example**:
 ```csharp
-// Smell: cyclomatic complexity of 7, right at the ceiling
+// Smell: validation, parsing, policy, and persistence branches are mixed
 public async Task<ActionResult> Post(ReservationDto dto)
 {
     if (dto is null) throw new ArgumentNullException(nameof(dto));
@@ -47,33 +49,35 @@ public async Task<ActionResult> Post(ReservationDto dto)
 
 ---
 
-## D2: Long Method (80/24 Violation)
+## D2: Unfocused Method
 
-**What it is**: A method that does not fit in an 80 × 24 character box.
+**What it is**: A method that mixes responsibilities, abstraction levels, or effects so its purpose cannot be summarized precisely.
 
 **How to detect**:
-- Check line count; enable an 80-column ruler to catch wide lines.
-- Methods approaching 20 lines in C# should already feel uncomfortable.
+- Name the distinct reasons the method might change.
+- Look for interleaved validation, policy, persistence, formatting, or transport logic.
+- Check whether the reader must jump between unrelated concepts to explain the flow.
 
 **Why it's bad**:
-- Reader cannot see start and end together; correlates with higher cyclomatic complexity and variable count; prevents side-by-side viewing of test and implementation.
+- Mixed responsibilities make changes spread and cause unrelated behavior to regress.
+- Length alone is not the problem: a long cohesive transformation may be clearer than many tiny helpers.
 
 **How to fix**:
-- Identify blank-line groupings — those are natural seams.
-- Extract the first group that touches no class fields (lowest risk), then continue.
+- Extract a boundary only when it represents a meaningful responsibility or effect.
+- Preserve cohesive algorithms and avoid helper chains that merely move lines elsewhere.
 
 ---
 
 ## D3: Too Many Variables
 
-**What it is**: A method juggles more than seven distinct names — locals, parameters, and fields combined.
+**What it is**: A method coordinates too many unrelated values, mutable states, or dependencies at once.
 
 **How to detect**:
 - Tally every local variable, every parameter, every class field or property touched by the method body.
-- If the count approaches or exceeds seven, the method is overloaded.
+- Group the names by domain concept; the smell is many interacting groups, not a universal count.
 
 **Why it's bad**:
-- Each name occupies a memory slot; when you run out of slots, you lose track.
+- Unrelated live values make invariants and update ordering difficult to track.
 - Often predicts bugs, because the programmer has already lost track.
 
 **How to fix**:
@@ -157,7 +161,7 @@ internal bool IsValid
 **Why it's bad**:
 - Violates Command Query Separation.
 - Cyclomatic complexity underestimates the real load because hidden effects add chunks.
-- Each hidden effect is 14 percent of a seven-chunk memory budget.
+- Hidden effects make the signature an unreliable guide to behaviour and increase the state a reader must reconstruct.
 
 **How to fix**:
 - Split Commands from Queries; let the Query return data and have the caller perform the side effect.
@@ -184,14 +188,37 @@ internal bool IsValid
 
 ---
 
+## D8: System-Wide Sprawl
+
+**What it is**: A locally simple change requires edits across unrelated modules, adds a dependency cycle, duplicates an existing rule, or extends a temporary migration path.
+
+**How to detect**:
+- Inspect dependency direction and cycles.
+- Search for equivalent rules or abstractions before adding another.
+- Review change history for files repeatedly modified together.
+- Identify flags, adapters, and parallel implementations without a removal condition.
+
+**Why it's bad**:
+- Local method metrics can stay green while the architecture becomes a Big Ball of Mud.
+- Future changes lose a predictable home and accumulate more cross-module coordination.
+
+**How to fix**:
+- Restore a clear ownership boundary and dependency direction.
+- Consolidate duplicated rules.
+- Complete or remove stale migration paths.
+- Add an architecture check when the constraint is stable and mechanically expressible.
+
+---
+
 ## Quick Detection Table
 
 | ID | Smell | Key Indicator |
 |----|-------|---------------|
-| D1 | High cyclomatic complexity | Branch count + 1 > 7 |
-| D2 | Long method | Does not fit in 80 × 24 |
-| D3 | Too many variables | Locals + params + fields > 7 |
+| D1 | High cyclomatic complexity | Branch count + 1 > 15, or paths interact opaquely |
+| D2 | Unfocused method | Mixed responsibilities, levels, or effects |
+| D3 | Too much interacting state | Too many unrelated live concepts |
 | D4 | Feature envy | Uses only one parameter's state; wants to be `static` |
 | D5 | Lost in translation | Returns `bool` but caller re-parses |
 | D6 | Nested side-effect Query | Predicate-shaped signature that secretly writes |
 | D7 | Low-cohesion block | Section uses no class fields |
+| D8 | System-wide sprawl | Cycles, duplicated rules, broad change surface, stale migration paths |

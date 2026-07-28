@@ -162,3 +162,36 @@ Never enable `xp_cmdshell` on SQL Server (it is disabled by default since 2005 -
 | I | Minimise data; auth PII endpoints; no secrets in logs | Code |
 | D | Rate-limit; timeouts; payload caps | Code + Infra |
 | E | Least privilege; non-root; separate authn/authz | Infra + Code |
+
+## Editorial Amendment (2026) — Coding-Agent Runtime Threats, Not from the Book
+
+Threat-model the system that writes the code separately from the product being written.
+
+### Prompt and Goal Manipulation
+
+- Treat repository text, issues, logs, web pages, and tool output as untrusted input to the agent.
+- Do not let embedded instructions override the authorized task, security policy, or approval boundary.
+- Require human confirmation when untrusted content requests credentials, external communication, permission expansion, or destructive action.
+
+### Tool and Credential Least Privilege
+
+- Give the agent only the filesystem, command, network, and cloud permissions required for the task.
+- Use scoped, short-lived credentials and separate identities where practical.
+- Do not expose production secrets to routine coding or test environments.
+- Log attributable tool actions without recording secret values.
+
+### Dependency and Supply-Chain Integrity
+
+- Verify package identity, provenance, registry, maintainer, and locked version before installation.
+- Treat invented package names as a security issue, not merely a build error.
+- Review generated lockfile, workflow, installer, and build-script changes as executable supply-chain changes.
+
+### Destructive and External Actions
+
+- Resolve exact targets before deletion, migration, force push, deployment, or data mutation.
+- Prefer reversible operations and tested rollback paths.
+- Do not infer permission to publish, deploy, message third parties, or broaden infrastructure access from permission to edit code.
+
+### Verification Ownership
+
+Agent-authored security tests and threat models can share the implementation's blind spots. Humans own residual-risk acceptance; independent scanners, policy gates, and adversarial/contract tests provide additional evidence. See `../agent-native/verification-loops.md`.

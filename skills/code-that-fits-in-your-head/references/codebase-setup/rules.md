@@ -11,18 +11,16 @@ Initialise a Git repository *before* writing any code.
 - Run `git init` in the directory where the code will live.
 - Do *not* wait to connect to a remote (GitHub, GitLab, etc.) — that can always come later.
 - Apply this rule to any code base expected to live more than a week. The threshold for creating a repo should be low; you can always delete `.git` to undo.
-- Optional: create an empty initial commit (`git commit --allow-empty -m "Initial commit"`). This makes rewriting history easier before publishing.
-- Learn Git at the command-line level, not just through a GUI. Invest one or two days in the basics — it is trivial compared to learning a programming language.
 
 ### 2. Automate the Build From Line 1
 
 Commit a build script that compiles (and later tests and deploys) the code, runnable by any developer on their machine.
 
 - Create the minimal deployable application first (a "shell" from a wizard/scaffolding tool). Commit and deploy it *before* writing real functionality.
-- Add a build script file (e.g. `build.sh`, `build.ps1`, `build.bat`) at the repo root and commit it.
+- Provide one documented, non-interactive verification entry point and commit it. It may be a script, task-runner target, or build-tool command.
 - Configure the build script to produce a **Release** build — the automated build must reflect what goes to production.
 - As build steps are added (tests, packaging, analyzers), add them to the script as well.
-- The script is a low-friction tool: if it passes locally, it is OK to push.
+- Keep local and CI behavior aligned. Passing locally is useful evidence only when CI runs the same checks in a comparable environment.
 - Start simple. Don't reach for a full-blown build tool (Cake, Nuke, FAKE, Gradle) unless the simple script demonstrably does not fit.
 
 **Example — minimal `build.sh`**:
@@ -39,7 +37,7 @@ Treat every compiler warning, linter warning, and static-analysis warning as a b
 - Apply the setting to **every build configuration** — Release *and* Debug. If your toolchain stores these per-config (e.g. Visual Studio), set both. Put "set both" on your checklist.
 - Enable the language's static analysers / linters (in .NET: Roslyn analysers / FxCop successors).
 - Turn on language features that improve static checking (e.g. C# 8 **Nullable reference types**) immediately, while there is no code to break.
-- Treat the cost of addressing seven warnings today as far lower than hundreds later.
+- Treat the cost of addressing a small warning set today as far lower than hundreds later.
 - False positives exist in linters; suppress them narrowly via the tool's options rather than disabling the rule.
 
 ### 4. Build the Deployment Pipeline Early
@@ -60,7 +58,7 @@ When retrofitting checks onto existing code, turn guards on one slice at a time 
 - Once that type is at zero in that library, **flip it to an error** so it cannot regress.
 - Repeat: pick another warning type, or apply the same type to another library.
 - For nullable reference types (or equivalent opt-in features): enable file-by-file or project-by-project.
-- Rule of thumb: Boy Scout Rule — leave each touched area cleaner than you found it.
+- Improve the touched change surface without mixing unrelated cleanup into the same review.
 
 ### 6. Use Automated Gates as Cultural Armour
 
@@ -74,8 +72,7 @@ A machine-enforced rule is harder to override under delivery pressure than a hum
 
 Less strict recommendations:
 
-- Prefer command-line interfaces for frequent operations (like Git day-to-day); prefer IDE wizards for rare operations (like creating a new project).
-- Build scripts are more portable as POSIX shell (`build.sh`) but any script format is fine as long as it is committed and runnable.
+- Prefer reproducible, non-interactive commands for operations that CI and agents must run. Human interface choice is secondary.
 - Read the online documentation for each analyser rule before suppressing it — most rules encode decades of accumulated knowledge.
 - Don't show screenshots or step-by-step GUI instructions in documentation; they go stale fast.
 
@@ -99,3 +96,12 @@ When these rules may be relaxed:
 | Deployment pipeline early | CI wired to mainline; release or near-release on green. |
 | Ratchet for legacy | One library, one warning type at a time; flip to error at zero. |
 | Machine-enforced gates | Convert human conventions to build-breaking rules. |
+
+## Editorial Amendment (2026) — Not from the Book
+
+For agent-authored codebases:
+
+- Commit toolchain versions and dependency lockfiles where the ecosystem supports them.
+- Verify dependency provenance before adding a package; see `../agent-native/hallucination-debugging.md`.
+- Never weaken tests, warnings, analysers, permissions, or CI merely to make generated code pass; see `../agent-native/verification-loops.md`.
+- Prefer hermetic or reproducible environments where practical, especially for migrations and generated artifacts.

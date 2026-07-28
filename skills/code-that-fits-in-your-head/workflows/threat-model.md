@@ -45,6 +45,14 @@ Walk a new endpoint or service through the six STRIDE threats and decide mitigat
 - [ ] List data: what does it read / write / return? Any PII or secrets?
 - [ ] List integrations: what does it call downstream?
 
+If a coding agent or agent runtime is in scope, separately list:
+
+- [ ] Untrusted instructions/content it can read (repository, issues, web, logs, tool output)
+- [ ] Filesystem, shell, network, cloud, and external-communication capabilities
+- [ ] Credentials and whether they are scoped and short-lived
+- [ ] Dependency installation and executable supply-chain paths
+- [ ] Destructive or irreversible actions and their approval/rollback boundary
+
 **Ask**: "If this component is compromised, what gets lost?"
 
 ---
@@ -167,6 +175,7 @@ Walk a new endpoint or service through the six STRIDE threats and decide mitigat
 [ ] Step 6: Denial of Service — rate limits, timeouts, caps
 [ ] Step 7: Elevation of Privilege — least privilege, server-side authZ
 [ ] Step 8: Decisions recorded with owners
+[ ] Agent runtime scope reviewed separately when applicable
 ```
 
 ---
@@ -190,3 +199,4 @@ Threat model is done when:
 - [ ] Every "mitigated" has a code pointer
 - [ ] Every "deferred" or "accepted" has an owner and a date
 - [ ] The document is stored where PRs that touch this area can re-reference it
+- [ ] If an agent runtime was in scope, its permissions, untrusted inputs, dependency provenance, and destructive-action boundaries have explicit decisions

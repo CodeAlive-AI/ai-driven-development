@@ -1,66 +1,69 @@
-# Verification Loops (Agent-Native)
+# Verification Integrity (Agent-Native)
 
-> ⚠️ **Not from the book.** This is an editorial amendment added to cover an agent-specific concern Seemann does not address. See `references/agent-native/README.md`.
+> ⚠️ **Not from the book.** This editorial amendment covers agent-specific verification risks. See `knowledge.md`.
 
-Why an agent's edit-verify cycle differs from human TDD — and how to structure it.
+Agents can implement large changes successfully. The controlling factors are architecture, acceptance criteria, and trustworthy evidence—not a universal limit on lines, files, or task duration.
 
-## The Core Difference
+## Verification Strategy
 
-Seemann's TDD assumes human pace: minutes between red and green, a "cycle" of a few minutes. An agent runs `tsc --noEmit` in 0.5 seconds and a focused test in under one. The cycle shrinks by 10-100×.
+Define before implementation:
 
-**Consequence**: verification should happen *after every change*, not in batches. An agent that batches edits and verifies at the end inherits the worst properties of waterfall.
+1. the target architecture and invariants that must remain true;
+2. explicit acceptance and non-regression criteria;
+3. the canonical repository verification command;
+4. focused checks for each meaningful checkpoint;
+5. an independent source of truth for material behavior.
 
-| Aspect | Human cycle (book) | Agent cycle |
-|--------|-------------------|-------------|
-| Red → green | 5-15 min | 0.5-10 s |
-| Feedback source | Run test suite locally | Typecheck / focused test / grep |
-| Failure cost | Cheap to revert | Near-zero — edit → verify → revert is a single loop |
-| Optimal granularity | Per-feature slice | Per-line or per-hunk |
+Checkpoints should align with coherent architectural or behavioral stages. Do not force per-line commits or artificial micro-steps when a larger transformation is systematic and mechanically verifiable.
 
-## Tiered Feedback Pyramid
+## Feedback Layers
 
-Pick the *fastest* tool that can detect your class of error. Escalate only when the lower tier is green.
+Use the cheapest relevant layer during implementation and the complete required set before acceptance.
 
-| Tier | Tool | Latency | Catches |
-|------|------|---------|---------|
-| 0. Syntax | Parse / compile | ms | Typos, unbalanced braces |
-| 1. Types | `tsc --noEmit`, `mypy`, `pyright`, `cargo check`, `go vet` | seconds | Wrong signatures, invented methods, null-handling gaps |
-| 2. Lint | `eslint`, `ruff`, `clippy` | seconds | Unused vars, dead code, anti-patterns |
-| 3. Unit test | Focused test of the touched SUT | seconds | Wrong logic in the edited unit |
-| 4. Integration | Multi-unit test, real DB | tens of seconds | Contract mismatches |
-| 5. E2E | Full app, HTTP calls | minutes | System-level regressions |
+| Layer | Examples | Protects against |
+|---|---|---|
+| Parse/build | compiler, formatter | Invalid syntax and build graph |
+| Types/static checks | typechecker, lint, architecture rules | Contract drift, invented symbols, forbidden dependencies |
+| Focused tests | unit, property, contract | Local logic and invariants |
+| Integration/system tests | real boundaries, E2E | Cross-component behavior |
+| Operational evidence | migration rehearsal, telemetry, rollback test | Deployment and lifecycle risk |
+| Independent acceptance | existing contract, product criteria, hidden cases, human decision | Shared blind spots in agent-written code and tests |
 
-**Rule**: the higher the tier, the fewer times per edit you should run it.
+Latency is repository-specific. A slower high-value verifier is not "catastrophic"; run it at an appropriate checkpoint or gate rather than deleting it for throughput.
 
 ## Rules
 
-1. **Verify after each edit, not "I'll test at the end".** An undetected error compounds through later edits.
-2. **Run tier 1 (types) after every file change.** This catches the most common agent failure mode — invented symbols — before wasting a test run.
-3. **Never skip a failing tier because "it's just a warning".** Warnings today are blockers tomorrow.
-4. **Kill slow verification steps immediately.** A 60-second test step is catastrophic for agent throughput; rewrite it, split it, or run it only at gate time (pre-commit, not per-edit).
-5. **Commit after each green cycle.** Each commit is a known-good revert point. Squash before PR if needed.
-6. **Before editing: read the target file.** Don't edit from recall.
-7. **After editing: run at least tier 1 before declaring done.** "It should work" is not a verification tier.
+1. **Verify coherent checkpoints, not only the final result.** Detect divergence before it contaminates later work.
+2. **Use the repository's canonical commands.** Keep local and CI behavior aligned.
+3. **Do not weaken verification to obtain green output.** Never delete assertions, skip tests, broaden suppressions, or relax types without an explicit requirement change and reviewable rationale.
+4. **Require an independent oracle for material risk.** Tests written from the same mistaken interpretation as the implementation are not independent evidence.
+5. **Record evidence.** State what ran, what it establishes, what was not run, and remaining uncertainty.
+6. **Preserve recovery points.** Large migrations need recoverable commits, worktrees, backups, reversible stages, or another appropriate rollback mechanism.
+7. **Stop on contradictory evidence.** Revise the plan or architecture instead of patching around repeated failures.
 
-## Antipatterns
+## Independent Oracles
 
-| Pattern | Why it's bad |
-|---------|--------------|
-| "Write 200 lines across 5 files, then run all tests" | A single failure buries root cause in noise |
-| "Skip typecheck; the tests will catch it" | Tests are 10× slower; you're wasting your loop |
-| "Comment out the failing test to get a green run" | Destroys the feedback; agent proceeds on false signal |
-| "`any`/`// @ts-ignore` to unblock typecheck" | Removes the guardrail that was protecting the agent from itself |
-| "Assume `git status` is clean" — never verify | Ships accidental junk files |
+Choose according to the risk:
 
-## Tool Setup for an Agent-Friendly Repo
+- existing tests or recorded production behavior;
+- product acceptance criteria or examples supplied independently;
+- schema, protocol, or compatibility contracts;
+- property and metamorphic tests;
+- a reference implementation or differential comparison;
+- security/static analysis maintained separately from the change;
+- human acceptance for architecture, intent, and residual risk.
 
-- Watch mode on types: `tsc --watch --noEmit`, `pytest --watch`, `cargo watch`
-- Pre-commit hook running tier 1-3 (fast tiers only)
-- Fast focused-test runner (`pytest path/to/test_x.py::test_y`, `vitest run path/to/x.test.ts`)
-- `--fail-fast` on the test runner
-- A linter with auto-fix so style fixes don't consume agent loops
-- A revert script / worktree setup so "let me try this approach" is cheap
+No single oracle proves correctness. Independence means it did not originate from the same unverified assumption as the implementation.
+
+## Red Flags
+
+- The agent edits tests until they match the implementation without explaining a requirement change.
+- CI differs materially from the local verification path.
+- A large change has no architectural map or acceptance criteria.
+- Every check is authored by the same agent from the same prompt.
+- A failing gate is suppressed rather than understood.
+- The report says "all tests pass" without naming what was run or what remains unverified.
 
 ## Relation to the Book
 
-This builds on Ch 11 (Editing Unit Tests) and Ch 12 (Troubleshooting / slow tests). Seemann's "keep tests fast so you bisect quickly" applies here too, but with tighter tolerances. His "see tests fail first" rule holds — an agent that skips this step may pass tests that assert nothing.
+This extends outside-in TDD, troubleshooting, and automated gates. The book's red-green discipline remains useful; agent authorship adds the need to protect the oracle itself.

@@ -1,27 +1,25 @@
 # Practices Glossary
 
-Fast-lookup reference for 28 named practices from the book. Each entry: short definition + the theme folder where it's covered in depth.
+Fast-lookup reference for currently retained named practices from the book. Project-specific formatting and screen-size conventions are intentionally omitted.
 
 ## Quick Lookup Table
 
 | Practice | One-line summary | Deep dive |
 |----------|------------------|-----------|
-| 50/72 Rule | Git commit subject ≤50 chars, body wrapped at 72 | `teamwork-git/rules.md` |
-| 80/24 Rule | Keep code blocks within an 80-col × 24-row box | `decomposition/rules.md` |
 | Arrange Act Assert | Structure tests in three clearly separated sections | `outside-in-tdd/rules.md` |
 | Bisection | Halve the code repeatedly to isolate a defect | `troubleshooting/rules.md` |
 | Checklist for a New Code Base | Short startup checklist (Git, build automation, all warnings on) | `codebase-setup/rules.md` |
 | Command Query Separation | A method is either a Command (side effects) or a Query (returns data), never both | `api-design/rules.md` |
 | Count the Variables | Count locals, parameters, and fields in a method; keep the total low | `decomposition/rules.md` |
-| Cyclomatic Complexity | Useful code metric; keep under a threshold (7 works well) | `decomposition/rules.md` |
-| Decorators for Cross-Cutting Concerns | Wrap business logic with decorators for logging, caching, fault tolerance | `separation-of-concerns/rules.md` |
+| Cyclomatic Complexity | Path-count metric; values above 15 trigger review by default | `decomposition/rules.md` |
+| Explicit Seams for Cross-Cutting Concerns | Keep logging, caching, and resilience outside domain logic using a scope-appropriate seam | `separation-of-concerns/rules.md` |
 | Devil's Advocate | Deliberately mis-implement the SUT to expose missing tests | `outside-in-tdd/rules.md` |
 | Feature Flag | Hide incomplete features so you can keep integrating | `evolution/rules.md` |
 | Functional Core, Imperative Shell | Push pure functions to the core, keep side effects at the edge | `decomposition/rules.md` |
-| Hierarchy of Communication | Prefer types > names > comments > tests > commit msgs > docs | `api-design/rules.md` |
+| Complementary Communication | Put enforceable contracts in executable artifacts and rationale in prose/history | `api-design/rules.md` |
 | Justify Exceptions from the Rule | Deviating from a rule is OK — if documented and justified | `teamwork-git/rules.md` |
 | Parse, Don't Validate | Convert unstructured data to structured types as early as possible | `encapsulation/rules.md` |
-| Postel's Law | Be conservative in what you send, liberal in what you accept | `encapsulation/rules.md` |
+| Explicit Boundary Parsing | Accept deliberate compatibility and reject malformed input | `encapsulation/rules.md` |
 | Red Green Refactor | TDD loop: failing test → simplest pass → refactor → repeat | `outside-in-tdd/rules.md` |
 | Regularly Update Dependencies | Schedule dependency updates; never fall far behind | `evolution/rules.md` |
 | Reproduce Defects as Tests | Turn every reproducible bug into an automated test | `troubleshooting/rules.md` |
@@ -36,16 +34,6 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 | X Out Names | Mentally replace method names with Xs to test signature clarity | `api-design/rules.md` |
 
 ## Practices
-
-### 50/72 Rule
-**Definition**: Write Git commit messages with a subject line of no more than 50 characters, followed by a blank line, then a body wrapped at 72 characters.
-**Use when**: Writing any Git commit message.
-**Deep dive**: `teamwork-git/rules.md`
-
-### 80/24 Rule
-**Definition**: Keep blocks of code small. In C-based languages, try to stay within an 80 × 24 character box — the size of an old terminal window. The exact thresholds are a mnemonic (nod to the Pareto 80/20 rule); pick a limit and stay within it consistently.
-**Use when**: A method is growing long or wide.
-**Deep dive**: `decomposition/rules.md`
 
 ### Arrange Act Assert
 **Definition**: Structure automated tests according to the Arrange Act Assert pattern. Make it clear to readers where one section ends and the next begins.
@@ -73,12 +61,12 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Deep dive**: `decomposition/rules.md`
 
 ### Cyclomatic Complexity
-**Definition**: Cyclomatic complexity measures the number of pathways through a piece of code. A threshold of 7 works well in practice — big enough to be useful, small enough to fit in your head. It also gives the minimum number of tests needed to fully cover the method.
+**Definition**: Cyclomatic complexity measures the number of pathways through a piece of code. This skill uses above 15 as a review trigger, not an automatic rejection or proof of bad design. It also helps identify path-coverage needs.
 **Use when**: Deciding whether a method needs to be broken up.
 **Deep dive**: `decomposition/rules.md`
 
-### Decorators for Cross-Cutting Concerns
-**Definition**: Don't inject logging, caching, or fault-tolerance dependencies into your business logic — that jumbles concerns together. Instead, use the Decorator design pattern to wrap business logic with these concerns.
+### Explicit Seams for Cross-Cutting Concerns
+**Definition**: Keep logging, caching, telemetry, and resilience outside domain logic. Choose a Decorator, middleware, filter, interceptor, or pipeline according to scope and keep wiring visible.
 **Use when**: You need logging, caching, retries, or auditing around core logic.
 **Deep dive**: `separation-of-concerns/rules.md`
 
@@ -88,8 +76,8 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Deep dive**: `outside-in-tdd/rules.md`
 
 ### Feature Flag
-**Definition**: If you can't complete a coherent set of changes in half a day's work, hide the feature behind a feature flag and continue to integrate your changes with other peoples' work.
-**Use when**: A change is too big to finish in a single short-lived branch.
+**Definition**: Hide incomplete behavior behind a feature flag when deploy and release must be separated or blast radius controlled.
+**Use when**: Incomplete behavior must integrate or deploy without becoming visible to users.
 **Deep dive**: `evolution/rules.md`
 
 ### Functional Core, Imperative Shell
@@ -97,8 +85,8 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Use when**: Structuring a new module or refactoring existing logic.
 **Deep dive**: `decomposition/rules.md`
 
-### Hierarchy of Communication
-**Definition**: Write code for future readers. Favour communicating behaviour and intent in this prioritised order: (1) distinct types, (2) helpful method names, (3) good comments, (4) illustrative tests, (5) helpful commit messages, (6) external documentation.
+### Complementary Communication
+**Definition**: Use types, schemas, and tests for enforceable contracts; names for readable intent; comments and commit history for non-obvious rationale; documentation for system mission and usage.
 **Use when**: Deciding where to put an explanation.
 **Deep dive**: `api-design/rules.md`
 
@@ -112,9 +100,9 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Use when**: Data enters your system from the outside.
 **Deep dive**: `encapsulation/rules.md`
 
-### Postel's Law
-**Definition**: Be conservative in what you send, be liberal in what you accept. Methods should accept input as long as they can make sense of it, but no further. Return values should be as trustworthy as possible.
-**Use when**: Designing pre- and postconditions for a method.
+### Explicit Boundary Parsing
+**Definition**: Parse untrusted data into explicit supported forms. Accept compatibility only when deliberate and tested; reject malformed or invented shapes instead of silently coercing them.
+**Use when**: Designing trust-boundary inputs and compatibility behavior.
 **Deep dive**: `encapsulation/rules.md`
 
 ### Red Green Refactor
@@ -133,8 +121,8 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Deep dive**: `troubleshooting/rules.md`
 
 ### Review Code
-**Definition**: Have another person review every change — one of the most effective QA techniques we know. Reviews can be continuous (pair/mob programming) or asynchronous (pull requests). Reviews must be constructive, but rejection has to be a real option — otherwise a review is worth little.
-**Use when**: Any production change.
+**Definition**: Apply independent review proportional to risk. Material architecture, security, data, and contract changes require accountable human approval; automated review is screening rather than ownership.
+**Use when**: Reviewing production changes under repository risk policy.
 **Deep dive**: `teamwork-git/rules.md`
 
 ### Semantic Versioning
@@ -143,18 +131,18 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Deep dive**: `evolution/rules.md`
 
 ### Separate Refactoring of Test and Production Code
-**Definition**: Automated tests give you confidence when refactoring production code — but refactoring test code is more dangerous because you have no tests of the tests. You may refactor test code, but not at the same time as production code. When you refactor production code, leave test code alone, and vice versa.
+**Definition**: Make it possible to distinguish behavior changes, test-oracle changes, and mechanical test refactoring. Separate commits are useful but not mandatory when they would create broken intermediate states.
 **Use when**: Any refactoring session.
 **Deep dive**: `outside-in-tdd/rules.md`
 
 ### Slice
-**Definition**: Work in small increments. Each increment should improve a running, working system. Start with a vertical slice, then add functionality to it.
+**Definition**: Build through coherent vertical behavior and verifiable checkpoints. Large systematic work is acceptable when architecture and acceptance criteria remain clear.
 **Use when**: Planning how to deliver a feature.
 **Deep dive**: `outside-in-tdd/rules.md`
 
 ### Strangler
-**Definition**: When a refactoring is too large to finish in half a day of consistent state, use the Strangler process: establish the new way of doing things side-by-side with the old way, gradually migrate callers from the old API to the new, and delete the old API when nothing uses it anymore.
-**Use when**: A refactoring would otherwise take days or weeks in one shot.
+**Definition**: Establish the new implementation beside the old, migrate callers, and remove the old path when side-by-side change reduces blast radius or improves verification and rollback.
+**Use when**: In-place replacement would create excessive compatibility, deployment, or recovery risk.
 **Deep dive**: `evolution/rules.md`
 
 ### Threat-Model
@@ -163,7 +151,7 @@ Fast-lookup reference for 28 named practices from the book. Each entry: short de
 **Deep dive**: `security/rules.md`
 
 ### Transformation Priority Premise
-**Definition**: Try to work so your code is in a valid state most of the time. Transforming one valid state into another typically involves an invalid phase (won't compile). The Transformation Priority Premise suggests a series of small transformations that minimise these invalid phases.
+**Definition**: Prefer transformations with clear verified checkpoints. Small steps are useful when they reduce uncertainty; larger systematic transformations are valid when executable constraints make them safer and clearer.
 **Use when**: Planning a non-trivial edit.
 **Deep dive**: `outside-in-tdd/rules.md`
 

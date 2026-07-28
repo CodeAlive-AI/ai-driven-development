@@ -10,7 +10,7 @@ Decouple **deploying** code from **releasing** behaviour. Ship an incomplete fea
 
 ### When to Use
 
-- The work will take longer than ~4 hours and you want to keep merging to master.
+- The work needs staged exposure, crosses risky integration boundaries, or must remain mergeable before release.
 - You practice Continuous Integration or Continuous Deployment and can't justify a long-lived branch.
 - You need to exercise the new behaviour with integration tests before it's user-visible.
 
@@ -65,7 +65,7 @@ services.AddSingleton(new CalendarFlag(true));
 
 - A flag left in place past its useful life becomes a smell. Delete promptly.
 - Don't use flags for rollback — that's a deployment concern.
-- Very short features (<4 hours) don't need flags.
+- Do not add a flag when the change has low blast radius, can be verified before merge, and does not need deploy/release separation.
 
 ---
 
@@ -167,19 +167,19 @@ public IEnumerable<TimeSlot>                       Schedule   ( /* new */ );
 1. Add the new class. Commit and merge — no behaviour change.
 2. If helpful, add a conversion method between old and new, marked `internal` to bound its scope.
 3. If language constraints prevent a one-to-one replacement (C# has no return-type overloading), rename the old method to a temporary name (e.g. `ScheduleOcc`) and give the original name to the new method.
-4. Migrate callers incrementally; commit per caller.
+4. Migrate callers in coherent, verifiable batches. A systematic transformation may cover many callers at once when the mapping and oracle are trustworthy.
 5. When the old class has no callers, delete it along with the conversion helper.
 
 ### Benefits
 
-- Never more than a few minutes from a clean commit.
+- Each meaningful checkpoint is verified and leaves a clear recovery path.
 - Old and new can run side by side indefinitely.
 - Teammates can keep working during the migration.
 
 ### Considerations
 
 - Conversion helpers and temporary renames are scaffolding — remove them at the end.
-- If migration spans days, document it so nobody adds new uses of the old class.
+- If migration remains incomplete across integrations, document it and prevent new uses of the old class.
 
 ---
 
@@ -187,7 +187,7 @@ public IEnumerable<TimeSlot>                       Schedule   ( /* new */ );
 
 | Situation | Recommended Pattern |
 |-----------|--------------------|
-| Adding new behaviour that takes > 4 hours | Feature Flag |
+| Adding behaviour that needs staged exposure or deploy/release separation | Feature Flag |
 | Splitting deploy from release | Feature Flag |
 | Changing a single method signature | Method-Level Strangler |
 | Replacing one class with another | Class-Level Strangler |

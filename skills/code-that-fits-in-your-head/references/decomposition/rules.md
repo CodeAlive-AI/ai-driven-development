@@ -1,100 +1,100 @@
 # Decomposition Rules
 
-Hard thresholds and decomposition heuristics drawn from Chapter 7 and §13.1. Use these to answer "is this function too complex?" and "should I split this class?"
+> **Source note:** This book-derived theme includes 2026 editorial reframing for agent-scale changes and system-level complexity. Those additions are not from Seemann.
+
+Heuristics for keeping logic cohesive and preventing local complexity from growing into system-wide mud.
 
 ## Core Rules
 
-### 1. Keep cyclomatic complexity at or below 7
+### 1. Review Cyclomatic Complexity Above 15
 
-Count branches (start at 1, add 1 for each `if`, `for`, `foreach`, `while`, `do`, `case`, and `??` in C#). If the count exceeds 7, refactor before adding more branches. Seven echoes the brain's short-term memory limit.
+Count independent paths through a method. When cyclomatic complexity exceeds 15, refactor unless the branching is cohesive, explicit, and better represented in its current form.
 
-- Treat 7 as a ceiling, not a target.
-- When a method sits right at 7, refactor prophylactically — the next change will push it over.
-- Enforce via CI if possible. Rejecting changes that exceed the threshold hacks the "what you measure is what you get" effect.
+- Treat 15 as a review trigger, not a scientific law or automatic rejection.
+- Prefer reducing nested decisions, duplicated conditions, and mixed responsibilities.
+- Do not replace one understandable decision table or parser with a maze of tiny indirections merely to lower the number.
+- Projects may choose a stricter threshold based on language, domain risk, and tooling.
 
-### 2. Keep every method inside an 80 × 24 box
+### 2. Split by Responsibility, Not Display Geometry
 
-- Line width: 80 characters maximum.
-- Line height: 24 lines maximum per method.
-- Don't game the limit by packing multiple statements per line or writing wider lines.
-- Configure your editor with a vertical guide at column 80.
+Line width, screen height, and editor layout are project concerns, not universal design rules.
 
-**Example**:
-```csharp
-// Bad: one line, three statements — defeats the 80/24 spirit
-var foo = 32; var bar = foo + 10; Console.WriteLine(bar);
+- Split when a method mixes responsibilities, effects, abstraction levels, or reasons to change.
+- Keep cohesive transformations together even when they are long.
+- Extract only when the new name and boundary reduce what a reader must understand.
 
-// Good: one statement per line, within the box
-var foo = 32;
-var bar = foo + 10;
-Console.WriteLine(bar);
-```
+### 3. Watch Interacting State
 
-### 3. Count variables when complexity feels wrong
+Count variables, parameters, fields, mutable state, and external dependencies when logic feels hard to follow. The smell is not a fixed count; it is interaction that cannot be explained as a few coherent concepts.
 
-Sum local variables + parameters + class fields/properties the method uses. If the total approaches or exceeds 7, the method is juggling too much. Consider a Parameter Object before adding another parameter.
+- Group values that form one domain concept into a type.
+- Reduce live mutable state and push intermediate results forward.
+- Do not hide unrelated values inside a parameter object solely to game a count.
 
-### 4. Prefer sequential composition to nested composition
+### 4. Prefer Sequential Composition to Hidden Nesting
 
-When you decompose, chain Queries so the output of one becomes the input of the next. Nested composition (objects inside objects inside objects) hides side effects and multiplies the chunks a reader must hold in mind. See `patterns.md`.
+Chain transformations so the output of one becomes the input of the next. Avoid object graphs and callbacks that conceal ordering or side effects.
 
-### 5. Favour pure functions; push side effects to the edges
+### 5. Favour a Pure Core and Explicit Effects
 
-- Write complex logic as referentially-transparent functions (deterministic, no side effects).
-- Concentrate nondeterminism (time, GUIDs, random, I/O) and side effects in `Main`, controllers, and message handlers.
-- This is the *functional core, imperative shell* style, and it applies to object-oriented languages too.
+- Keep complex decisions deterministic where practical.
+- Concentrate time, randomness, I/O, and mutation at explicit boundaries.
+- Make effect ordering observable and testable.
 
-### 6. Move a method to the class it envies
+### 6. Move Behaviour to the Data It Understands
 
-If a method (often marked `static`) uses none of its declaring class's members and reads only one parameter's state, it suffers from Feature Envy. Move it onto the parameter's class. Prefer a property if the new member takes no input, has no preconditions, and cannot throw.
+If a method mainly reads another type's state and ignores its own class, consider moving it to that type or a cohesive domain service. Avoid static helper dumping grounds.
 
-### 7. Extract blocks that use no instance members first
+### 7. Extract Low-Coupling Sections First
 
-When decomposing a long method, look for sections that touch no class fields — those are the easiest, lowest-risk candidates for extraction. Blank-line groupings often reveal the seams.
+Blocks that use no instance state or external effects are low-risk extraction candidates. Preserve a clear abstraction level in the caller.
 
-### 8. Replace Boolean validation with parsing that returns the validated object
+### 8. Parse Into Stronger Types
 
-Do not return `bool` from validation. Return the stronger type or `null`/`Maybe<T>`. A Boolean forces callers to re-parse or re-inspect the input, duplicating work and losing type-level guarantees. (Full coverage lives in `encapsulation/`.)
+Do not return a Boolean when validation also discovers structured information. Return the parsed domain value or a typed failure so callers do not repeat work.
 
-### 9. Each class/method must fit in your head at its own zoom level
+### 9. Preserve Coherence at Every Zoom Level
 
-Fractal architecture: at the trunk, ~7 branches; inside each branch, ~7 more. A newcomer should be able to open the entry point, see no more than seven chunks, and know where to drill down for any detail.
+Entry points, modules, types, and methods should each expose a small number of meaningful concepts. The exact number is contextual; the requirement is that a reader can name the parts and predict where a change belongs.
 
-### 10. Refactor when a metric crosses its threshold — not later
+### 10. Check System Complexity, Not Only Methods
 
-Don't wait until the code "feels" bad. By then, the metric has drifted far past the threshold and cleanup is expensive. Treat threshold breaches as the signal that the refactor window is *now*.
+Tiny functions can still form a Big Ball of Mud. Review:
+
+- dependency cycles and violated layer direction;
+- fan-in/fan-out and cross-module coupling;
+- duplicated business rules and competing abstractions;
+- changes that spread across unrelated areas;
+- churn concentrated in unstable hotspots;
+- temporary flags, adapters, and migration paths that never disappear.
+
+Use available architecture tests or static analysis where they provide reliable signals. Do not mandate a particular product or reduce architectural judgment to one score.
 
 ## Guidelines
 
-Less-strict recommendations:
-
-- Prefer 20-line C# methods; become uncomfortable near 30.
-- In denser languages (Haskell, F#) treat 24 lines as already huge.
-- Constructors must not have side effects; treating them as Queries lets you reason about them like pure functions.
-- Mind `static` helper methods — they are a code smell worth investigating.
-- Count lines *deleted* as the productivity metric, not lines added.
-- Use blank-line groupings inside a method to reveal natural seams for extraction.
+- Prefer deletion and reuse over adding another helper or abstraction.
+- Constructors should not perform hidden I/O or irreversible effects.
+- Treat `static` helpers and utility modules as smells when they collect unrelated behavior.
+- Use blank-line groupings as clues to responsibility boundaries, not as proof that extraction is needed.
+- Refactor when a metric and the code's semantics both indicate rising change cost.
 
 ## Exceptions
 
-When these rules may be relaxed:
-
-- **At the system edge**: Controllers and `Main` orchestrate side effects — they *will* juggle nondeterminism. Keep them small but allow them to be imperative.
-- **Domain emergencies**: Breaking a threshold temporarily to fix a production incident is acceptable; schedule the cleanup so the code returns under the limit.
-- **Language density**: If your team uses a denser language or prefers 120×40, honour that — the point is having *a* threshold, not this specific one.
-- **Interfaces and abstract methods**: Variable counts and cyclomatic complexity do not apply (no implementation).
+- **Cohesive algorithms and generated code** may be long or branch-heavy while still being the clearest representation.
+- **System edges** coordinate effects; keep the sequence explicit rather than forcing artificial purity.
+- **Production emergencies** may accept temporary complexity with a recorded owner and removal condition.
+- **Project policy** may set different metric thresholds; preserve the underlying goal of comprehensibility and local change.
 
 ## Quick Reference
 
 | Rule | Summary |
-|------|---------|
-| Cyclomatic complexity ≤ 7 | Count branches + 1; refactor at the limit. |
-| 80 × 24 method size | Fits a VT100 screen — and your brain. |
-| Count variables | Locals + params + fields ≤ 7. |
-| Sequential over nested | Chain Queries; don't bury side effects. |
-| Pure core, imperative shell | Push I/O and time to the edge. |
-| Move feature-envious methods | Place them on the class they read. |
-| Extract no-field blocks first | They are the loosest and safest to pull out. |
-| Parse, don't Boolean-validate | Return the stronger type or nothing. |
-| Fractal at every zoom | Seven chunks at each level, recursively. |
-| Refactor on threshold breach | Don't wait until the code "feels" legacy. |
+|---|---|
+| CC > 15 triggers review | Investigate complexity; do not refactor mechanically |
+| Split by responsibility | Ignore universal screen and line limits |
+| Watch interacting state | Reduce unrelated live concepts and mutation |
+| Sequential composition | Keep ordering and effects explicit |
+| Pure core, explicit effects | Make decisions deterministic and boundaries visible |
+| Move feature-envious behavior | Put logic with the data it understands |
+| Stronger parse results | Return information, not a lossy Boolean |
+| Every zoom level coherent | Make parts nameable and change locations predictable |
+| Check system structure | Prevent cycles, duplication, sprawl, and permanent migration debt |

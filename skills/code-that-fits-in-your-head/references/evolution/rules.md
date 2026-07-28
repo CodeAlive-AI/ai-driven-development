@@ -6,7 +6,7 @@ Actionable rules for changing live software without breaking callers or stalling
 
 ### 1. Use Feature Flags to Split Deploy from Release
 
-If a feature takes longer than a few hours of work, hide it behind a feature flag so you can keep merging to master. The flag's default in production is `false`; tests and local config set it to `true`.
+When incomplete user-visible behavior must be deployed or integrated safely, hide it behind a feature flag. Use the flag because of release and blast-radius needs, not because the work exceeded a wall-clock threshold.
 
 - Wire the flag through configuration (appsettings, environment variables, config service).
 - Default to off — missing config must mean "feature disabled".
@@ -29,14 +29,14 @@ A flag that outlives its purpose becomes a code smell. Delete the flag class/var
 
 ### 3. Replace Subsystems with the Strangler Pattern
 
-Never change a widely-used method, class, or module in place if the edit will take more than a few hours. Instead:
+When replacing a widely used method, class, module, or subsystem, prefer the Strangler pattern when side-by-side migration reduces blast radius or makes verification and rollback safer. Do not choose it solely from estimated implementation time.
 
 1. Add the new method/class beside the old.
 2. Migrate callers one at a time, committing after each.
 3. Delete the old code once no caller remains.
 
 - Every commit during this process must leave the system consistent and deployable.
-- Aim to be within five minutes of a clean commit at all times.
+- Preserve recoverable, verified migration checkpoints appropriate to the system.
 - If two implementations can't legally coexist (e.g. C# return-type overloading), rename the old one temporarily (`ScheduleOcc` vs `Schedule`).
 
 ### 4. Use Semantic Versioning for Anything Others Depend On
@@ -72,6 +72,8 @@ Don't wait for a CVE or a forced upgrade. Pick a rhythm — weekly, every sprint
 - Never make it the *last* thing in a sprint — it'll be dropped for something urgent.
 - Same discipline applies to language/runtime versions, TLS certificates, domain renewals, and backup-restore drills.
 
+For agent-authored dependency changes, verify package identity, provenance, locked version, compatibility, and removal of obsolete transitive workarounds. See `../agent-native/hallucination-debugging.md`.
+
 ### 7. Be Aware of Conway's Law When Designing
 
 If your system crosses a team boundary, expect an interface to form there, whether you plan one or not. If you want a particular architecture, organise teams to match it.
@@ -90,14 +92,14 @@ If your system crosses a team boundary, expect an interface to form there, wheth
 ## Exceptions
 
 - **Monolith with no external API**: Breakage is cheap, so you can be less strict about SemVer. Still think in those terms for your own clarity.
-- **Trivial change (< 1 hour, narrow blast radius)**: In-place edit is fine; Strangler is overkill.
+- **Narrow, easily verified change**: In-place editing is fine when blast radius and rollback are clear; Strangler would add needless machinery.
 - **Emergency CVE**: Update the vulnerable dependency immediately, out of rhythm.
 
 ## Quick Reference
 
 | Rule | Summary |
 |------|---------|
-| Feature-flag long work | Hide incomplete behaviour; merge to master daily |
+| Feature-flag incomplete release | Decouple deploy from release when risk requires it |
 | Delete flags promptly | Never let flags rot in the codebase |
 | Strangler for replacements | Add new, migrate, delete old |
 | SemVer breaks = major | Breaking changes require a major bump |

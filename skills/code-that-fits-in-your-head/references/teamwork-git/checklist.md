@@ -1,108 +1,83 @@
 # PR / Code Review Checklist
 
-Use when you're asked to review a pull request, approve a change set, or decide whether a PR is ready to merge.
+> **Source note:** This book-derived checklist includes 2026 editorial checks for agent authorship, verification integrity, and risk ownership.
 
-## Before You Start
+Use for human or agent-authored changes. Judge architecture, evidence, and future change cost—not line count or approval speed.
 
-- [ ] The PR has a clear title and description — you can tell at a glance what it does.
-- [ ] You have time to do a proper review (a review that takes >1 hour is not effective; if the PR requires that, it's probably too big — decline and ask for a split).
-- [ ] You know the author's intent (from the description or a linked ticket). If not, ask before reading code.
+## Intent and Architecture
 
-## Size and Focus
+- [ ] Goal and non-goals are explicit.
+- [ ] The change is architecturally coherent, even if it spans many files.
+- [ ] Dependency direction and ownership boundaries remain clear.
+- [ ] Mechanical/generated edits are distinguishable from semantic decisions.
+- [ ] Unrelated cleanup is excluded or justified separately.
 
-- [ ] The PR does **exactly one thing**. If it bundles unrelated concerns, ask to split.
-- [ ] The change set is smaller than half a day's work. Rule of thumb: if you can't review it in under an hour, it's too big.
-- [ ] No mixed-in reformatting. Pure-reformatting PRs are fine; mixed PRs are not.
-- [ ] Not a "Death Star" commit that bundles refactors, features, and fixes together.
+## Complexity and Debt Delta
 
-## Commit Hygiene
+- [ ] No unnecessary abstraction, dependency, duplication, or indirection.
+- [ ] Cyclomatic complexity above 15 is understood and justified or refactored.
+- [ ] No new dependency cycles, layer violations, or cross-module sprawl.
+- [ ] Temporary flags, adapters, parallel implementations, and TODOs have owners and exit conditions.
+- [ ] The change makes future modifications no harder than necessary.
 
-- [ ] Each commit message follows the **50/72 rule**: subject ≤50 chars, blank line, body wrapped at 72.
-- [ ] Subject lines are in the **imperative mood** ("Add X", "Fix Y", "Return 404 for absent reservation" — not "Added" / "Fixed" / "Returns").
-- [ ] Messages explain **why**, not just what (the diff already shows what).
-- [ ] Commit history is a series of working snapshots — no commits that break the build or fail tests.
-- [ ] Prose is well-written: correct spelling, punctuation, grammar.
+## Verification Integrity
 
-## Build and Tests
+- [ ] Canonical build and required checks pass.
+- [ ] New behavior has appropriate tests or executable acceptance checks.
+- [ ] Existing assertions, types, analysers, permissions, and CI were not weakened merely to get green.
+- [ ] Material behavior has evidence independent of the implementation where practical.
+- [ ] The report names what ran, what it proves, and what remains unverified.
 
-- [ ] The code **builds** (CI green).
-- [ ] **All tests pass**.
-- [ ] **New behaviour has tests**. No new code path without a test exercising it.
-- [ ] Tests are comprehensive and clear.
-- [ ] If you're unsure, pull the branch and run it on your own machine.
+## Invariants, Effects, and Security
 
-## Readability — "Will I Be Okay Maintaining This?"
+- [ ] Domain invariants are enforced at the correct boundary.
+- [ ] Side effects and failure behavior are explicit.
+- [ ] Public contracts and migration/compatibility effects are called out.
+- [ ] New dependencies have verified identity, provenance, locked version, and justification.
+- [ ] Security, data, deployment, and rollback risks receive appropriate review.
 
-The fundamental review question. If the answer is no, reject.
+## History and Rationale
 
-- [ ] Does the code **fit in your head**? Methods short enough, complexity low enough.
-- [ ] Is the **intent clear** without comments or author narration?
-- [ ] Does the code work as intended (matches the stated goal in the PR description)?
-- [ ] No needless duplication.
-- [ ] Existing code in the codebase couldn't have solved this already (no reinvented wheel).
-- [ ] Could this be simpler? If yes, suggest how.
+- [ ] Commit messages are accurate, concise, imperative, and follow repository policy.
+- [ ] Non-obvious decisions explain why; the agent has not invented business rationale.
+- [ ] Commits preserve useful known-good or recoverable states.
+- [ ] History supports review and diagnosis rather than arbitrary micro-checkpoints.
 
-## Invariants and Correctness
+## Ownership and Review
 
-- [ ] Existing invariants are preserved (types, preconditions, postconditions, guard clauses).
-- [ ] New invariants are enforced where they belong, not scattered.
-- [ ] No silent weakening of checks (e.g. removed guard clauses, loosened types, disabled tests).
-- [ ] Public API changes are deliberate and called out. Typos in public API names are worth fixing now (breaking change later would be worse).
+- [ ] The reviewer reads independently rather than trusting an author walkthrough.
+- [ ] Material residual risk is accepted by an accountable human.
+- [ ] The authoring agent did not assign its own low-risk lane.
+- [ ] Automated review is treated as screening, not a replacement for human ownership or bus factor.
+- [ ] Blockers are separated from optional suggestions and include a concrete alternative or required evidence.
 
-## Review Process
+## Large Changes
 
-- [ ] You're reading the code at **your own pace**, not being walked through it by the author.
-- [ ] You're willing to **say no** if the bar isn't met — rejection is a real option, not sunk-cost appeasement.
-- [ ] When you comment, you **offer a concrete alternative**, not just "I don't like this".
-- [ ] You flag what you like as well as what you don't.
-- [ ] Your tone is explicitly polite — tone is lost easily in async writing. Emojis help signal friendly intent.
-- [ ] You avoid nitpicking formatting and variable names (fixable after merge) unless they're in a public API.
+Do not decline a change merely because it contains thousands of lines. Require:
 
-## Collective Ownership
+- coherent target architecture;
+- explicit transformation or implementation plan;
+- trustworthy verification and acceptance criteria;
+- documented exceptions and uncertainties;
+- recovery, rollback, or safe continuation strategy.
 
-- [ ] At least one reviewer other than the author has approved. (Pair/mob sessions count as approval.)
-- [ ] More than one person on the team is now comfortable maintaining the changed code.
-- [ ] No "single-owner" module is being created or reinforced.
-
-## Integration
-
-- [ ] The branch is being merged within ~4 hours of being ready for review (not days of stale).
-- [ ] If the feature is incomplete, it is **hidden behind a feature flag** so mainline stays healthy.
-- [ ] The merge won't force other open PRs into avoidable conflicts.
+Split or stage only when it improves architecture, verification, review, or recovery.
 
 ## Red Flags
 
-Stop and address if you find:
+- The change touches unrelated areas with no architectural explanation.
+- Tests or gates were changed to accommodate the implementation without a requirement change.
+- A new abstraction duplicates an existing capability.
+- Generated prose is confident but evidence is missing.
+- Migration scaffolding has no deletion path.
+- Review depends on merge rate, file count, or "the agent already spent time on it."
 
-- The PR is thousands of lines across dozens of files. **Decline it.** Ask for small, focused slices. Don't fall for sunk-cost reasoning ("they already spent a week on it").
-- Commit messages like "WIP", "fix", "stuff", "Added", or "No empty saga". Ask for rewrites.
-- Commits that don't build or don't pass tests in between working states.
-- Tests removed, disabled, or weakened with no explanation.
-- Public API names changed silently.
-- Formatting churn mixed with logic changes — you can't tell real edits from noise.
-- No new tests despite new behaviour.
-- The author is narrating the code in review comments because it isn't self-explanatory.
-- The review has been open for days with no activity — escalate or close.
+## Decision
 
-## Quick Reference
+1. Is the intended outcome and architecture clear?
+2. Does the change preserve maintainability and avoid unnecessary debt?
+3. Is the verification trustworthy and proportional to risk?
+4. Is ownership of residual risk explicit?
+5. Would the team be comfortable changing this code later?
 
-| Aspect | Ideal | Acceptable | Red Flag |
-|--------|-------|------------|----------|
-| PR size | <½ day of work | A day's work | Days/weeks — decline |
-| Review time | <30 min | Up to 1 hour | >1 hour — too big |
-| Review latency | Hours | Same day | Days — fix the process |
-| Commits | Many small, each green | Some larger, each green | Broken intermediate commits |
-| Subject line | ≤50 chars, imperative | 50-72 chars, imperative | >72 chars or past tense |
-| Scope | One thing | One thing + trivial fix | Multiple unrelated concerns |
-| Tests | New behaviour fully tested | Most paths tested | No tests for new behaviour |
-| Reviewers | 2+ approve (incl. non-author) | 1 non-author approves | Only author approves / self-merge |
-
-## Decision Tree
-
-1. **Is it too big?** → Decline. Ask for splits.
-2. **Does it build and pass tests?** → No → Back to author.
-3. **Does it fit in your head?** → No → Comment with concrete alternatives, send back.
-4. **Are commits clean (50/72, imperative, explain why)?** → No → Ask for rewrite/squash.
-5. **New behaviour tested?** → No → Ask for tests.
-6. **Invariants preserved?** → No → Comment, send back.
-7. **Would you be okay maintaining this?** → Yes → Approve. → No → Keep iterating.
+Approve, request changes, or reject with concrete reasons.

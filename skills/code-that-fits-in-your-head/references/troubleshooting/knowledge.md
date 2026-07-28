@@ -1,10 +1,12 @@
 # Troubleshooting Knowledge
 
+> **Source note:** This book-derived theme includes 2026 editorial reframing for durable agent debugging state. Agent-specific additions are not from Seemann.
+
 Core concepts and foundational understanding for debugging defects methodically.
 
 ## Overview
 
-Troubleshooting is the disciplined activity of *understanding* why code misbehaves, as opposed to "programming by coincidence" where developers try incantations until the symptom disappears. The goal is not to make the problem go away but to learn why it happened. A small set of techniques — the scientific method, simplification, rubber ducking, reproduction as tests, and bisection — covers most defects without a debugger.
+Troubleshooting is the disciplined activity of *understanding* why code misbehaves, as opposed to "programming by coincidence" where changes continue until the symptom disappears. Scientific hypotheses, simplification, executable reproduction, and bisection prevent speculative fixes from becoming debt.
 
 ## Key Concepts
 
@@ -26,16 +28,13 @@ The hypothesis must be falsifiable. The distinction from "programming by coincid
 
 The instinctive reaction to a problem is to add code to special-case it. The unspoken assumption is that the system "works" and the problem is just an aberration. More often, the problem is a manifestation of an underlying implementation error, and simplifying (or deleting) code resolves it. Ask: "Can I solve this by deleting code?"
 
-### Rubber Ducking
+### Externalizing the Problem
 
-**Definition**: Explaining a problem out loud to a passive listener (real or imagined) to force your own understanding.
+**Definition**: Recording the problem, evidence, attempted explanations, and open question clearly enough for another person or agent to evaluate.
 
-It is named after a programmer who literally talked to a rubber duck on their desk. The mere act of explaining a problem tends to produce insight — people frequently break off mid-sentence with "never mind, I just got an idea." If no colleague is around, write a Stack Overflow question; you will often answer it yourself before posting.
+Rubber ducking is one human form of this technique. For an agent, durable notes prevent repeated failed attempts and make escalation useful after a long run or context change.
 
-**Supporting techniques**:
-- Time-box the stuck period (e.g. 25 minutes).
-- Physically leave the computer. A walk or coffee refill changes perspective.
-- If still stuck, explain it to a human or a duck.
+Stop repeating experiments when they produce no new evidence. Revise the hypothesis, instrumentation, or system model instead.
 
 ### Reproduce Defects as Tests
 
@@ -47,7 +46,7 @@ If your hypothesis about a defect is correct, you can design an experiment: a te
 
 **Definition**: Tests (commonly integration tests touching a database or external service) that are too slow to run in the inner TDD loop.
 
-A developer test suite should finish in under ten seconds. Beyond that, focus is lost and the suite will not be run continuously. Slow tests (database, HTTP, filesystem) should be moved to a second stage — a separate Visual Studio solution, a CI-only step, or an on-demand build script — so they do not block the Red-Green-Refactor cycle.
+Feedback must be fast enough that it is used reliably, but no universal duration applies. Separate focused checks from comprehensive database, HTTP, filesystem, migration, or system verification. Keep slower high-value tests and run them at the appropriate checkpoint or gate.
 
 ### Non-deterministic Defects
 

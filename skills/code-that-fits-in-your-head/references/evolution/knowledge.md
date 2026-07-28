@@ -12,7 +12,7 @@ Existing code bases need three kinds of change: adding new behaviour, modifying 
 
 **Definition**: Augmenting means appending new code beside existing code. Modifying in-place means editing a live method or class while callers depend on it.
 
-Adding a new feature is usually low-risk because most of the code is new. Changing existing behaviour is risky because callers may break while you work. Prefer side-by-side additions whenever a change will take more than a few hours.
+Adding new behavior and changing existing behavior carry different compatibility risks. Prefer side-by-side replacement when it reduces blast radius, preserves rollback, or makes verification clearer—not because implementation crosses a wall-clock threshold.
 
 **Rule of thumb**: *For any significant change, don't make it in-place; make it side-by-side.*
 
@@ -92,7 +92,7 @@ How the team is organised shapes the code. Open offices with ad-hoc chatter tend
   **Reality**: They lead to merge hell. Hide the feature behind a flag and merge to master instead.
 
 - **Myth**: Strangler is only for replacing whole legacy systems.
-  **Reality**: It works at method and class level too — any time an in-place change would take longer than a few hours.
+  **Reality**: It works at method and class level too—whenever side-by-side migration improves verification, rollback, or control of blast radius.
 
 - **Myth**: If the compiler doesn't complain, you can skip deprecation.
   **Reality**: External callers get no compile errors from your changes until they upgrade. Deprecate first, delete later.

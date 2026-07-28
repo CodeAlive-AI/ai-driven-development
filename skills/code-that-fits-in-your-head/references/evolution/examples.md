@@ -233,13 +233,13 @@ private static TimeDto MakeEntry(TimeSlot timeSlot)
 
 ### Step 4: Migrate Callers, Then Delete the Old Class
 
-Each caller was migrated in its own commit. When all callers used `Schedule` / `TimeSlot`:
+Callers were migrated through coherent, verified checkpoints. When all callers used `Schedule` / `TimeSlot`:
 
 1. `ScheduleOcc` was deleted.
 2. The `ToTimeSlot` conversion helper was deleted.
 3. The `Occurrence<T>` class was deleted.
 
-Throughout the whole process the author was *"never more than five minutes from being able to do a commit, and all commits left the system in a consistent state that could be integrated and deployed."*
+Throughout the process, every meaningful checkpoint left the system in a consistent state that could be verified, integrated, and deployed.
 
 **Why it works**:
 - The new class ships first, standalone, with no behaviour change.

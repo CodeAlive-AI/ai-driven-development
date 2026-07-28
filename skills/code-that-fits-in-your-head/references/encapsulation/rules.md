@@ -62,11 +62,11 @@ internal Reservation? Validate()
 }
 ```
 
-### 4. Apply Postel's Law: Liberal Inputs, Conservative Outputs
+### 4. Be Explicit at Boundaries: Accept Supported Compatibility, Reject the Rest
 
-Be conservative in what you send, be liberal in what you accept. Accept any input you can meaningfully work with — but no further. As soon as input is unworkable, fail fast.
+Parse untrusted input into an explicit supported form. Do not silently coerce malformed or invented shapes merely to be "liberal". Compatibility is a deliberate product/API decision with tests, not a universal instruction to accept more.
 
-- Convert a missing `Name` to `""` — you can still fulfil the reservation without it.
+- Convert a missing `Name` to `""` only when the public contract explicitly defines that compatibility.
 - Reject a missing `Email` — you cannot contact the guest without it.
 - Reject a non-parseable `At` — there is no meaningful reservation without a date.
 
@@ -119,12 +119,12 @@ public void QuantityMustBePositive(int invalidQantity)
 }
 ```
 
-### 9. Move in Small Transformations (TPP)
+### 9. Move in Verified Transformations (TPP)
 
-Don't leap from a hard-coded constant to a fully implemented method. Use the Transformation Priority Premise: move one step at a time — constant→scalar, scalar→array, expression→function. Each step should keep the tests green.
+Use the Transformation Priority Premise when incremental transformations make the design safer to reason about. A larger systematic transformation is acceptable when architecture and executable constraints make it clear and verifiable.
 
-- After each transformation, run the full test suite.
-- If a transformation leaves the code broken for more than a few seconds, back out.
+- Verify each meaningful checkpoint with the relevant focused checks, then run the required complete gates before acceptance.
+- If evidence contradicts the transformation, back out or revise the plan instead of patching around it.
 
 ## Guidelines
 
@@ -148,7 +148,7 @@ When these rules may be relaxed:
 | Always Valid | Invalid construction must throw |
 | Validate at construction | Callers need not defend |
 | Parse, don't validate | Return the typed value, not a Boolean |
-| Postel's Law | Accept what you can use; reject the rest |
+| Explicit boundaries | Accept deliberate compatibility; reject malformed input |
 | ArgumentNullException | Name the null argument |
 | 400 on invalid input | Don't leak exceptions as 500 |
 | DTO ≠ Domain | Separate wire format from domain model |

@@ -90,7 +90,7 @@ Use when retrofitting checks onto a legacy project. Never flip everything at onc
 
 ## Audit-Mode Quick Check
 
-Use on an unknown repo to judge baseline discipline in under five minutes.
+Use on an unknown repo for a quick baseline-discipline check.
 
 - [ ] Is there a `.git` directory at the root?
 - [ ] Is there a build script committed at the root (or documented entry point)?

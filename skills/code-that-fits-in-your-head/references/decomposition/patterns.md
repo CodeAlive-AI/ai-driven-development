@@ -158,25 +158,25 @@ var result = Bar(Foo(x, y), z);   // in your head: Bar(42, z)
 
 ---
 
-## Pattern: Hex Flower (Decomposition Heuristic)
+## Pattern: Concept Inventory (Decomposition Heuristic)
 
 ### Intent
 
-A thinking tool: draw seven hexagons, label each with one chunk (a branch, a variable, a hidden side effect). If all seven are full and you are about to add more, decompose now.
+A thinking tool: list the independent decisions, state transitions, dependencies, and hidden effects a reader must track at one zoom level. When unrelated concepts compete for attention, decompose by responsibility.
 
 ### When to Use
 
-- Before adding a new branch to a method at the threshold.
+- Before adding a branch to an already dense method.
 - When a method feels heavy but the metric is still within limits.
 - When picking the first block to extract.
 
 ### Example
 
-For the `Post` method after extracting `Validate()`, only four hexagons fill: `dto NULL`, `Validate NULL`, `TOO LITTLE CAPACITY`, `HAPPY PATH`. Three slots remain as headroom.
+For the `Post` method after extracting `Validate()`, the caller exposes four concepts: `dto NULL`, `Validate NULL`, `TOO LITTLE CAPACITY`, and `HAPPY PATH`. The input-validation details remain at the lower zoom level.
 
 ### Considerations
 
-- Heuristic, not a metric. Use alongside cyclomatic complexity and variable counts.
+- Heuristic, not a metric or a fixed item limit. Use alongside cyclomatic complexity, state interaction, and coupling.
 - Catches hidden chunks (side effects buried in Queries) that metrics miss.
 
 ---
@@ -188,5 +188,5 @@ For the `Post` method after extracting `Validate()`, only four hexagons fill: `d
 | Pipeline of data transformations | Sequential Composition |
 | Controller or message handler | Functional Core, Imperative Shell |
 | Complex domain logic | Pure functions + Referential Transparency Replacement |
-| Method feels crowded | Hex Flower diagnosis |
+| Method feels crowded | Concept Inventory diagnosis |
 | You are tempted to nest objects deeply | Reconsider — prefer sequential |

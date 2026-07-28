@@ -41,12 +41,13 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 **Goal**: Know what the change is trying to achieve before judging how it achieves it.
 
 - [ ] Read the PR description / commit message. Is it clear *why*?
-- [ ] Size check: is the change focused (ideally one commit ~= one concept)?
-- [ ] Count distinct concerns in the diff — if > 1, flag for splitting
+- [ ] Is the change architecturally coherent, even if it is large?
+- [ ] Are unrelated cleanup and semantic changes separated?
+- [ ] For systematic migrations, are the transformation, exceptions, and recovery path explicit?
 
 **Ask**: "If I had to summarise this PR in one sentence, what is it doing?"
 
-**Reference**: `references/teamwork-git/rules.md` (50/72 rule, one-PR-one-thing)
+**Reference**: `references/teamwork-git/rules.md`, `references/agent-native/reviewability.md`
 
 ---
 
@@ -57,6 +58,8 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 - [ ] For each new/changed behaviour, is there a test?
 - [ ] Do the tests follow AAA structure (Arrange / Act / Assert)?
 - [ ] Would you believe the tests cover the stated behaviour?
+- [ ] Did the change weaken, skip, or rewrite an existing oracle merely to get green?
+- [ ] For material behavior, is any acceptance evidence independent of the implementation?
 - [ ] Any flaky patterns (time, random, network without isolation)?
 
 **If no tests for a behaviour change**: block and ask why (reference `references/outside-in-tdd/rules.md`).
@@ -69,11 +72,12 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 
 **Goal**: Verify each unit fits in a head.
 
-- [ ] Any method exceeds 80 cols × 24 rows?
-- [ ] Cyclomatic complexity > 7 anywhere?
-- [ ] Count of distinct variables in a method > 7?
+- [ ] Cyclomatic complexity > 15 anywhere, or lower complexity with opaque path interaction?
+- [ ] Any method mixes unrelated responsibilities, effects, or abstraction levels?
+- [ ] Too many unrelated values, mutable states, or dependencies interact at once?
 - [ ] Any feature envy (method uses another class's data more than its own)?
 - [ ] Cohesion OK (methods in a class share fields / serve one responsibility)?
+- [ ] Any new cycles, layer violations, duplicated rules, broad coupling, or stale migration paths?
 
 **Reference**: `references/decomposition/rules.md`, `references/decomposition/smells.md`
 
@@ -110,9 +114,10 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 
 **Goal**: Catch concerns that cut across layers.
 
-- [ ] New logging in the right place (via Decorator, not littering code)?
+- [ ] New logging/telemetry attached at an explicit seam appropriate to its scope?
 - [ ] Any secrets, PII, or sensitive data risk of being logged?
 - [ ] New endpoint → did we STRIDE it? (Optional deeper dive: `workflows/threat-model.md`)
+- [ ] New dependency → identity, provenance, locked version, and necessity verified?
 
 **Reference**: `references/separation-of-concerns/rules.md`, `references/security/checklist.md`
 
@@ -122,9 +127,9 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 
 **Goal**: The history is the record — make it readable.
 
-- [ ] Subject ≤ 50 chars, imperative mood?
-- [ ] Body wrapped at 72 cols?
-- [ ] Commits are small and focused (each one could compile + pass tests)?
+- [ ] Subjects are concise and imperative, following repository policy?
+- [ ] Messages accurately explain non-obvious rationale?
+- [ ] Commits preserve coherent known-good states useful for review or recovery?
 - [ ] No drive-by refactors mixed with behaviour changes?
 
 **Reference**: `references/teamwork-git/rules.md`
@@ -149,11 +154,11 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 ```
 [ ] Step 1: Understood the change's intent
 [ ] Step 2: Read the tests first
-[ ] Step 3: Decomposition OK (complexity, size, cohesion)
+[ ] Step 3: Complexity/debt delta understood (local + system structure)
 [ ] Step 4: Encapsulation OK (invariants, validation)
 [ ] Step 5: API design OK (CQS, naming)
 [ ] Step 6: Cross-cutting & security OK
-[ ] Step 7: Commits OK (50/72, small, focused)
+[ ] Step 7: History is accurate, coherent, and useful
 [ ] Step 8: Feedback written (blockers vs suggestions)
 ```
 

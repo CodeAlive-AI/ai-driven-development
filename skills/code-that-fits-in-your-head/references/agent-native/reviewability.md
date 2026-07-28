@@ -1,94 +1,70 @@
-# Reviewability as a Design Constraint (Agent-Native)
+# Accountable Review (Agent-Native)
 
-> ⚠️ **Not from the book.** This is an editorial amendment. Seemann covers code review and PR etiquette in Ch 9, but does NOT distinguish "readable" from "reviewable" or address the agent-as-author case. See `references/agent-native/README.md`.
+> ⚠️ **Not from the book.** This editorial amendment covers review when an agent authors much of the change. See `knowledge.md`.
 
-"Readable code" and "reviewable code" look similar but optimise for different things. For agent-produced PRs, review-ability is the harder target.
+Reviewability is the ability to judge intent, architecture, behavior, risk, and evidence without trusting the agent's narrative. It is not measured by approval time, line count, or number of files.
 
-## The Distinction
+## Large Changes
 
-Seemann's readability (Ch 3.2.3) optimises for a human *reading to understand* — minutes of attention, goal is mental model. Reviewability optimises for a human *reading to approve* — seconds of attention, goal is a confident yes/no decision.
+Do not reject a change merely because it spans thousands of lines. Large systematic migrations can be easier to validate than small tangled patches when they provide:
 
-| Aspect | Readable (book) | Reviewable (agent-era) |
-|--------|-----------------|------------------------|
-| Reader's goal | Understand the code | Decide to approve |
-| Time budget | Minutes | Seconds-to-a-minute |
-| Unknowns tolerated | Some (reader fills in) | Near-zero |
-| Verbosity preference | Condensed | Explicit |
-| Confidence signal | "I get it" | "I believe the author verified it" |
+- a coherent target architecture and dependency direction;
+- a precise transformation or implementation plan;
+- explicit acceptance and non-regression criteria;
+- trustworthy automated verification;
+- clear exceptions, uncertainties, and recovery strategy;
+- a diff structure that separates generated/mechanical changes from semantic decisions.
 
-They overlap: clear names, small functions, explicit contracts serve both. They diverge: clever condensation helps readability and hurts reviewability. A terse one-liner is beautiful to read and terrifying to approve — did the author consider the edge case it hides?
+Split or stage work when doing so improves architecture, recovery, or verification—not to satisfy an arbitrary size target.
 
-## Why It Matters More for Agent-Written Code
+## Review Contract
 
-Human review is the rate-limiting step of the agent → production pipeline. If the agent generates a 400-line PR that takes 40 minutes to review, the agent's throughput advantage evaporates. Worse, reviewers under time pressure approve-with-skim, and silent defects slip through.
+An agent-authored change should state:
 
-The agent's job isn't just "generate correct code." It's "generate code a human will confidently approve in under three minutes."
+- **Goal**: intended product or engineering outcome.
+- **Architecture**: boundaries, ownership, and dependency changes.
+- **Approach**: why this design was chosen and what alternatives were rejected.
+- **Verification**: exact commands and evidence, including what each check establishes.
+- **Independent oracle**: source of truth not created from the same assumption as the implementation.
+- **Risk and recovery**: data, security, compatibility, deployment, rollback, and residual uncertainty.
+- **Debt delta**: duplication, coupling, temporary paths, TODOs, dependencies, or cleanup introduced or removed.
 
-## Rules
+The agent must not invent business rationale or hide uncertainty behind confident prose.
 
-1. **Small diffs.** Aim for < 200 net lines per PR. Split larger changes into a sequence of PRs that each stand alone.
+## Risk Lanes
 
-2. **One concept per PR, one concept per commit.** A reviewer who bisects the PR mentally ("accept the new feature, reject the style change") has already lost. Keep refactors separate from behaviour changes.
+Review effort should reflect risk, but the authoring agent must never assign its own lane.
 
-3. **Explicit over clever.** `const userIds = users.map(u => u.id)` beats `const userIds = users.map(u => u?.id).filter(Boolean)` when the latter hides an edge-case decision. If you're inlining a filter, spell out *why*.
+A lane is selected by repository policy, a machine-checkable predicate, or a human. If none applies, default to human review.
 
-4. **Names answer what AND why.** `calculateTax` is what; `calculateTaxForEuCustomer` is what + when. Reviewers don't have to jump to the call site to understand.
+| Lane | Typical examples | Required ownership |
+|---|---|---|
+| Mechanical | deterministic generated output, formatting-only change | automated verification under repository policy |
+| Routine | localized behavior with stable contracts and strong tests | normal human review or explicit repository policy |
+| Material | architecture, security boundary, data migration, public contract, irreversible effect | accountable human approval and independent evidence |
 
-5. **Surface intent in the commit title AND the PR description.** The title is the TL;DR; the description is the review context. Both matter.
+Automated agent review is useful screening. It does not create a second human maintainer, transfer product ownership, or accept residual risk.
 
-6. **PR description — agent edition** should include:
-   - **Goal**: one sentence. What user-visible outcome?
-   - **Approach**: one paragraph. Why this design?
-   - **Alternatives considered and rejected**: two or three with reasons.
-   - **What's uncertain**: areas you're unsure about, and what would change if the assumption is wrong.
-   - **How to verify**: exact steps to sanity-check this locally.
+## What to Review First
 
-7. **Mark assumptions and TODOs explicitly.** `// ASSUMPTION: callers always pass non-null X` is reviewable. Silent assumption is not. TODO comments with the thing-to-do + who-to-ask + when are reviewable; "TODO: figure out" is a request to the reviewer.
+1. Does the change preserve or improve architectural boundaries?
+2. Does it introduce unnecessary abstraction, duplication, coupling, or dependencies?
+3. Are invariants and side effects explicit?
+4. Are tests and gates trustworthy, or were they weakened to match the implementation?
+5. Are migration and temporary paths removed or assigned an exit condition?
+6. Does the evidence support the claimed behavior and risk?
 
-8. **Don't hide drive-by changes.** A `renamed this function while I was at it` in a feature PR is a trust-breaker. Separate PR, always.
+## Red Flags
 
-9. **Keep the PR self-contained for local verification.** The reviewer shouldn't need to `git checkout + set up env + run e2e`. Ideally: `checkout; npm test -- <path>` and you're convinced.
-
-10. **When in doubt, ask in the PR description, don't guess in the code.** The review is a collaborative decision, not a code puzzle.
-
-## Red Flags in an Agent-Generated PR
-
-| Flag | What it usually means |
-|------|-----------------------|
-| Silent refactor mixed with the feature | Agent couldn't resist; now review is 3× the work |
-| New dependency added without justification | Possibly hallucinated; possibly bloat |
-| Test-only file added that always passes | Fake test to satisfy "add tests" request |
-| Comment says "TODO: handle this edge case" | Agent should have asked or handled; this is buck-passing |
-| Large prose comment explaining what the code does | Names and types are underused; rewrite |
-| "Fixed" several things with no root-cause explanation | Multiple suspected issues patched without understanding |
-| Removed a test that was failing | Suppressed a signal rather than solving |
-
-## Review Etiquette When the Author Is an Agent
-
-Assume, while reviewing:
-
-- Syntax is probably correct
-- Types mostly check (if they don't, rebuild the stack)
-- **Architecture may be questionable** — look here first
-- **Edge cases may be missed** — look here second
-- "Looks complete" ≠ "is complete" — ask the agent to enumerate what it *didn't* cover
-
-## Agent → Reviewer Contract
-
-A good agent PR gives the reviewer:
-
-- A minimal, focused diff
-- A commit history that tells the story
-- A PR description that makes alternatives and uncertainties visible
-- Verifiable claims ("runs locally with `npm test`")
-- Explicit handling of known edge cases; explicit acknowledgment of unknown ones
-
-The reviewer's contract in return:
-
-- Approve fast when the above is met
-- Request changes with specificity (line + rule + alternative), not vibes
-- Reject early when the description shows the agent didn't understand the problem
+- Mixed unrelated concerns with no architectural reason.
+- New dependency without provenance or design justification.
+- Tests changed only to make the implementation pass.
+- Broad suppressions, disabled checks, or reduced assertions.
+- Parallel implementations, flags, adapters, or TODOs without cleanup ownership.
+- Large prose explanation compensating for unclear names, types, or boundaries.
+- A low-risk label supplied only by the authoring agent.
+- Claims of correctness based solely on merge rate, generated volume, or self-review.
 
 ## Relation to the Book
 
-Seemann's Ch 9 (Teamwork — code review, PRs, rejecting change sets) sets the ground rules. His 50/72 commit-message rule and "small commits" principle (§9.1.3) directly serve reviewability. This file extends those norms to the case where the author is an agent and the reviewer is under specific time pressure to process many agent PRs per day.
+This extends the book's Git and code-review discipline. The durable principle is accountable, independent judgment—not a fixed PR size, review duration, or approval SLA.

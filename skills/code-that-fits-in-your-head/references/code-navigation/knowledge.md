@@ -87,7 +87,7 @@ Popularised by Adam Tornhill (CodeScene). Produces hotspot enclosure diagrams (c
 | Term | Definition |
 |------|------------|
 | Fractal architecture | Every zoom level is self-contained; outer context becomes irrelevant when you drill in |
-| Hex flower diagram | A visual check that a method's activated objects or branches fit in roughly seven cells |
+| Concept inventory | A lightweight check of the independent decisions, state, dependencies, and effects visible at one zoom level |
 | Composition Root | The single place where the object graph is wired up |
 | Test Utility Method | A helper inside the test project, often promotable to a production client SDK |
 | Hotspot | File with both high complexity and high change frequency |
