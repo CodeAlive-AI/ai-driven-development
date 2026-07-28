@@ -28,6 +28,25 @@ def new_id(prefix: str = "") -> str:
     return f"{prefix}{u}" if prefix else u
 
 
+def new_run_id(prefix: str = "run_") -> str:
+    """Human-readable run id (`run_amber-otter-4f21`).
+
+    Run ids are quoted back by agents and users — `delegate status <id>` is
+    typed from a transcript, not copy-pasted from a variable — so they are word
+    pairs rather than raw hex. Message / client ids stay opaque: nobody types
+    those. Falls back to the hex id if the word lists are unavailable, since a
+    missing module must never break a delegation.
+    """
+    lib_dir = str(Path(__file__).resolve().parent.parent)
+    if lib_dir not in sys.path:
+        sys.path.append(lib_dir)
+    try:
+        from human_id import human_id
+    except Exception:
+        return new_id(prefix)
+    return human_id(prefix)
+
+
 def content_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 

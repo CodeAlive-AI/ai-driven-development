@@ -31,6 +31,7 @@
 #   superreview.sh --xml <file>            # XML output
 #   superreview.sh --dry-run <file>        # plan + check config; no LLM calls
 #   superreview.sh --judge <agent-id> ..   # override judge (default claude-sonnet)
+#   superreview.sh --progress compact ..   # live progress style: full|compact|none
 #   superreview.sh --keep-tmp <file>       # retain $RESP_DIR for inspection
 #   superreview.sh --help
 #
@@ -65,20 +66,38 @@ INPUT_PATH=""
 DRY_RUN=""
 KEEP_TMP=""
 JUDGE_AGENT="claude-sonnet"
+PROGRESS="${CONSILIUM_PROGRESS:-full}"
+
+# progress.sh is sourced best-effort above; keep this pipeline runnable without it.
+if ! declare -F progress_set_style >/dev/null 2>&1; then
+    progress_set_style() { [[ "$1" == "full" || "$1" == "compact" || "$1" == "none" ]]; }
+fi
+if ! declare -F progress_enabled >/dev/null 2>&1; then
+    progress_enabled() { [[ "${CONSILIUM_PROGRESS_STYLE:-full}" != "none" ]]; }
+fi
+# Stage narration: suppressed by --progress none, like every other progress line.
+note() { progress_enabled || return 0; echo -e "$*" >&2; }
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)        OUTPUT_FORMAT="xml"; shift ;;
         --diff)       INPUT_KIND="diff"; shift ;;
+        --progress)   shift; PROGRESS="${1:-}"; shift ;;
+        --progress=*) PROGRESS="${1#--progress=}"; shift ;;
         --dry-run)    DRY_RUN=1; shift ;;
         --keep-tmp)   KEEP_TMP=1; shift ;;
         --judge)      JUDGE_AGENT="$2"; shift 2 ;;
-        -h|--help)    sed -n '2,40p' "$0"; exit 0 ;;
+        -h|--help)    sed -n '2,41p' "$0"; exit 0 ;;
         --)           shift; INPUT_PATH="${1:-}"; break ;;
         -*)           echo -e "${RED}Error: unknown flag: $1${NC}" >&2; exit 5 ;;
         *)            INPUT_PATH="$1"; shift; break ;;
     esac
 done
+
+if ! progress_set_style "$PROGRESS"; then
+    echo -e "${RED}Error: --progress must be full, compact, or none (got: $PROGRESS)${NC}" >&2
+    exit 5
+fi
 
 # ------ Discovery plan -----------------------------------------------------
 # Format: agent|role|cap|prompt-template
@@ -153,7 +172,7 @@ fi
 
 # ------ Plan ---------------------------------------------------------------
 total_passes=$(( ${#SMALL_PASSES[@]} + ${#FRONTIER_PASSES[@]} ))
-echo -e "${CYAN}superreview (h9): $total_passes discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" >&2
+note "${CYAN}superreview (h9): $total_passes discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" 
 
 if [[ -n "$DRY_RUN" ]]; then
     echo "" >&2
@@ -195,7 +214,7 @@ launch_pass() {
     OUT_FILES+=("$out_file")
 }
 
-echo -e "${YELLOW}[Launching $total_passes discovery passes in parallel...]${NC}" >&2
+note "${YELLOW}[Launching $total_passes discovery passes in parallel...]${NC}" 
 pass_idx=0
 for p in "${SMALL_PASSES[@]}"; do
     launch_pass "$p" "discovery-small" "$pass_idx"
@@ -234,7 +253,7 @@ python3 "$LIB_DIR/dedup-findings.py" "$UNION_XML" "${non_empty_outputs[@]}" || {
 
 # ------ Stage 4: judge -----------------------------------------------------
 VERDICTS_JSON="$TMP_ROOT/verdicts.json"
-echo -e "${YELLOW}[Running judge: $JUDGE_AGENT]${NC}" >&2
+note "${YELLOW}[Running judge: $JUDGE_AGENT]${NC}" 
 "$LIB_DIR/judge-runner.sh" \
     --agent "$JUDGE_AGENT" \
     --findings "$UNION_XML" \
@@ -322,5 +341,5 @@ if [[ $failed -gt 0 ]]; then
     echo -e "${YELLOW}superreview: $succeeded ok, $failed failed (judge ran on partial input)${NC}" >&2
     exit 2
 fi
-echo -e "${GREEN}superreview: $total_passes/$total_passes discovery passes ok${NC}" >&2
+note "${GREEN}superreview: $total_passes/$total_passes discovery passes ok${NC}" 
 exit 0

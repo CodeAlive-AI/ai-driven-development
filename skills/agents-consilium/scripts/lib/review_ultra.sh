@@ -35,6 +35,7 @@
 #   ultrareview.sh --dry-run <file>        # plan + check config; no LLM calls
 #   ultrareview.sh --judge <agent-id> ..   # override judge (default claude-code)
 #   ultrareview.sh --no-fallback ..        # disable judge fallback
+#   ultrareview.sh --progress compact ..   # live progress style: full|compact|none
 #   ultrareview.sh --keep-tmp <file>       # retain $RESP_DIR
 #   ultrareview.sh --help
 #
@@ -71,21 +72,39 @@ KEEP_TMP=""
 JUDGE_AGENT="claude-code"
 JUDGE_FALLBACK="opencode"
 NO_FALLBACK=""
+PROGRESS="${CONSILIUM_PROGRESS:-full}"
+
+# progress.sh is sourced best-effort above; keep this pipeline runnable without it.
+if ! declare -F progress_set_style >/dev/null 2>&1; then
+    progress_set_style() { [[ "$1" == "full" || "$1" == "compact" || "$1" == "none" ]]; }
+fi
+if ! declare -F progress_enabled >/dev/null 2>&1; then
+    progress_enabled() { [[ "${CONSILIUM_PROGRESS_STYLE:-full}" != "none" ]]; }
+fi
+# Stage narration: suppressed by --progress none, like every other progress line.
+note() { progress_enabled || return 0; echo -e "$*" >&2; }
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)         OUTPUT_FORMAT="xml"; shift ;;
         --diff)        INPUT_KIND="diff"; shift ;;
+        --progress)    shift; PROGRESS="${1:-}"; shift ;;
+        --progress=*)  PROGRESS="${1#--progress=}"; shift ;;
         --dry-run)     DRY_RUN=1; shift ;;
         --keep-tmp)    KEEP_TMP=1; shift ;;
         --judge)       JUDGE_AGENT="$2"; shift 2 ;;
         --no-fallback) NO_FALLBACK=1; shift ;;
-        -h|--help)     sed -n '2,45p' "$0"; exit 0 ;;
+        -h|--help)     sed -n '2,46p' "$0"; exit 0 ;;
         --)            shift; INPUT_PATH="${1:-}"; break ;;
         -*)            echo -e "${RED}Error: unknown flag: $1${NC}" >&2; exit 5 ;;
         *)             INPUT_PATH="$1"; shift; break ;;
     esac
 done
+
+if ! progress_set_style "$PROGRESS"; then
+    echo -e "${RED}Error: --progress must be full, compact, or none (got: $PROGRESS)${NC}" >&2
+    exit 5
+fi
 
 # ------ Discovery plan -----------------------------------------------------
 BROAD_PASSES=(
@@ -157,7 +176,7 @@ for model in "${SPECIALIST_MODELS[@]}"; do
 done
 
 total_discovery=$(( ${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]} + 1 ))
-echo -e "${CYAN}ultrareview (h3): $total_discovery discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" >&2
+note "${CYAN}ultrareview (h3): $total_discovery discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" 
 
 if [[ -n "$DRY_RUN" ]]; then
     echo "" >&2
@@ -206,7 +225,7 @@ launch_pass() {
     OUT_FILES+=("$out_file")
 }
 
-echo -e "${YELLOW}[Launching broad + specialists in parallel ($((${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]})) passes)...]${NC}" >&2
+note "${YELLOW}[Launching broad + specialists in parallel ($((${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]})) passes)...]${NC}" 
 pass_idx=0
 for p in "${BROAD_PASSES[@]}"; do
     launch_pass "$p" "broad" "$pass_idx"
@@ -224,7 +243,7 @@ for i in "${!PIDS[@]}"; do
 done
 
 # ------ Stage 3: probe (sequential after parallel completes) ---------------
-echo -e "${YELLOW}[Running generic probe...]${NC}" >&2
+note "${YELLOW}[Running generic probe...]${NC}" 
 probe_out="$RESP_DIR/probe__opencode-go-glm__auditor.xml"
 probe_code=0
 "$LIB_DIR/discovery-pass.sh" \
@@ -259,7 +278,7 @@ python3 "$LIB_DIR/dedup-findings.py" "$UNION_XML" "${non_empty_outputs[@]}" || {
 # ------ Stage 5: judge with fallback ---------------------------------------
 VERDICTS_JSON="$TMP_ROOT/verdicts.json"
 judge_ok=""
-echo -e "${YELLOW}[Running primary judge: $JUDGE_AGENT]${NC}" >&2
+note "${YELLOW}[Running primary judge: $JUDGE_AGENT]${NC}" 
 if "$LIB_DIR/judge-runner.sh" \
         --agent "$JUDGE_AGENT" \
         --findings "$UNION_XML" \
@@ -271,7 +290,7 @@ if "$LIB_DIR/judge-runner.sh" \
 else
     echo -e "${RED}Primary judge ($JUDGE_AGENT) failed.${NC}" >&2
     if [[ -z "$NO_FALLBACK" ]]; then
-        echo -e "${YELLOW}[Falling back to: $JUDGE_FALLBACK]${NC}" >&2
+        note "${YELLOW}[Falling back to: $JUDGE_FALLBACK]${NC}" 
         if "$LIB_DIR/judge-runner.sh" \
                 --agent "$JUDGE_FALLBACK" \
                 --findings "$UNION_XML" \
@@ -358,5 +377,5 @@ if [[ $failed -gt 0 ]]; then
     echo -e "${YELLOW}ultrareview: $succeeded ok, $failed failed (judge ran on partial input)${NC}" >&2
     exit 2
 fi
-echo -e "${GREEN}ultrareview: $total_discovery/$total_discovery discovery passes ok${NC}" >&2
+note "${GREEN}ultrareview: $total_discovery/$total_discovery discovery passes ok${NC}" 
 exit 0

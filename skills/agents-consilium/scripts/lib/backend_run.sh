@@ -211,7 +211,11 @@ case "$BACKEND" in
         ;;
 esac
 
-progress_agent_start "$AGENT_ID" "$BACKEND" "$MODE" "$MODEL" "$EFFORT"
+# Progress identity = the invocation, not just the agent. Fan-out layers run the
+# same agent in several roles/stages concurrently; without the key their live
+# lines are indistinguishable. Artifact paths reuse the same value below.
+PROGRESS_ID="${CONSILIUM_ARTIFACT_KEY:-$AGENT_ID}"
+progress_agent_start "$PROGRESS_ID" "$BACKEND" "$MODE" "$MODEL" "$EFFORT"
 
 # Ensure run dir + artifact subdirs exist (honors pre-set CONSILIUM_RUN_DIR)
 if [[ "${CONSILIUM_SAVE_OUTPUTS:-1}" != "0" ]]; then
@@ -225,7 +229,7 @@ fi
 # Artifact key identifies this invocation. Fan-out callers set an explicit
 # CONSILIUM_ARTIFACT_KEY (e.g. "codex.security", "discovery-small.0.x.analyst",
 # "judge.primary.claude-code"). Ordinary ask/delegate leave it unset → agent id.
-ARTIFACT_KEY="${CONSILIUM_ARTIFACT_KEY:-$AGENT_ID}"
+ARTIFACT_KEY="$PROGRESS_ID"
 artifacts_paths_for "$ARTIFACT_KEY"
 
 # Build argv into array CMD
@@ -434,9 +438,11 @@ run_streamed() {
         --raw-out "$RAW_STREAM"
         --extract-text --text-out "$FINAL_TEXT"
         --progress
+        --progress-id "$PROGRESS_ID"
     )
-    # explore sets a content-free progress style so neither chain-of-thought nor
-    # the incrementally streamed answer body can reach stderr.
+    # Every mode may pick a style: review defaults to full previews, explore uses
+    # a content-free style so neither chain-of-thought nor the incrementally
+    # streamed answer body can reach stderr, and none silences the stream.
     if [[ -n "${CONSILIUM_PROGRESS_STYLE:-}" ]]; then
         norm_argv+=(--progress-style "$CONSILIUM_PROGRESS_STYLE")
     fi
@@ -585,7 +591,7 @@ open(sys.argv[2],"w").write("".join(chunks))
     return "$exit_code"
 }
 
-progress_info "running" "agent=$AGENT_ID backend=$BACKEND"
+progress_info "running" "agent=$PROGRESS_ID backend=$BACKEND"
 
 set +e
 run_and_capture
@@ -601,7 +607,7 @@ if [[ -n "${ART_RAW:-}" ]]; then
 fi
 
 if [[ $RC -ne 0 ]]; then
-    progress_agent_done "$AGENT_ID" "failed" "$RC"
+    progress_agent_done "$PROGRESS_ID" "failed" "$RC"
     if [[ -s "$BACKEND_ERR" ]]; then
         echo "[$LABEL] backend stderr:" >&2
         cat "$BACKEND_ERR" >&2
@@ -610,12 +616,12 @@ if [[ $RC -ne 0 ]]; then
 fi
 
 if [[ ! -s "$FINAL_TEXT" ]]; then
-    progress_agent_done "$AGENT_ID" "empty" 66
+    progress_agent_done "$PROGRESS_ID" "empty" 66
     echo "[$LABEL] empty response" >&2
     exit 66
 fi
 
-progress_agent_done "$AGENT_ID" "ok" 0
+progress_agent_done "$PROGRESS_ID" "ok" 0
 # Final answer ONLY on stdout
 cat "$FINAL_TEXT"
 exit 0

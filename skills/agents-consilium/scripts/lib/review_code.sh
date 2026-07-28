@@ -47,6 +47,12 @@
 #                        is ignored — only matched agents run.
 #   -x, --exclude <ID|GLOB>
 #                        Subtract matching agents from the active set. Repeatable.
+#   --progress <full|compact|none>
+#                        Live progress on stderr, keyed by <agent>.<role> so the
+#                        caller can follow each specialist pass separately.
+#                        full (default) = thinking / answer previews,
+#                        compact = content-free liveness counters,
+#                        none = silent. Env fallback: CONSILIUM_PROGRESS.
 #   -h, --help           Show this help.
 #
 # Environment overrides:
@@ -96,10 +102,14 @@ INPUT_PATH=""
 INCLUDE_PATTERNS=()
 EXCLUDE_PATTERNS=()
 REVIEW_MODE="${CONSILIUM_REVIEW_MODE:-basic}"   # basic | specialists
+PROGRESS="${CONSILIUM_PROGRESS:-full}"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)       OUTPUT_FORMAT="xml"; shift ;;
+        --progress)  shift; PROGRESS="${1:-}"; shift ;;
+        --progress=*)
+                     PROGRESS="${1#--progress=}"; shift ;;
         --diff)      INPUT_KIND="diff"; shift ;;
         --mode|--depth)
                      shift; REVIEW_MODE="${1:-}"; shift ;;
@@ -117,12 +127,17 @@ while [[ $# -gt 0 ]]; do
                      EXCLUDE_PATTERNS+=("${_parts[@]}")
                      shift
                      ;;
-        -h|--help)   sed -n '2,78p' "$0"; exit $EXIT_OK ;;
+        -h|--help)   sed -n '2,85p' "$0"; exit $EXIT_OK ;;
         --)          shift; INPUT_PATH="${1:-}"; break ;;
         -*)          echo -e "${RED}Error: unknown flag: $1${NC}" >&2; exit $EXIT_USAGE ;;
         *)           INPUT_PATH="$1"; shift; break ;;
     esac
 done
+
+if ! progress_set_style "$PROGRESS"; then
+    echo -e "${RED}Error: --progress must be full, compact, or none (got: $PROGRESS)${NC}" >&2
+    exit $EXIT_USAGE
+fi
 
 case "$REVIEW_MODE" in
     basic|specialists) ;;
@@ -376,7 +391,9 @@ for i in "${!KEYS[@]}"; do
     key="${KEYS[$i]}"
     code="${EXITS[$i]}"
     if [[ $code -eq 0 ]]; then
-        echo -e "${GREEN}[${key}] ok${NC}" >&2
+        # Success is progress — silenced by --progress none. Failures below are
+        # an outcome and always surface, whatever the progress style.
+        if progress_enabled; then echo -e "${GREEN}[${key}] ok${NC}" >&2; fi
     else
         # Live stderr already streamed; only a one-line status here.
         echo -e "${RED}[${key}] failed (exit $code)${NC}" >&2

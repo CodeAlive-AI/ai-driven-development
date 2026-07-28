@@ -107,8 +107,13 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
+# Progress style: never `full` — that would stream chain-of-thought and the
+# answer body onto stderr, which exploration explicitly must not do. Set here,
+# ahead of the first progress_* call, so `none` silences the run from line one.
 case "$PROGRESS" in
-    compact|verbose|none) ;;
+    compact) progress_set_style compact 10 ;;
+    verbose) progress_set_style compact 2 ;;
+    none)    progress_set_style none ;;
     *)
         echo "Error: --progress must be compact, verbose, or none (got: $PROGRESS)" >&2
         exit $EXIT_USAGE
@@ -367,14 +372,6 @@ with open(meta_path, "w") as f:
     f.write("\n")
 PY
 fi
-
-# Progress style: never `full` — that would stream chain-of-thought and the
-# answer body onto stderr, which exploration explicitly must not do.
-case "$PROGRESS" in
-    compact) export CONSILIUM_PROGRESS_STYLE=compact; export CONSILIUM_PROGRESS_INTERVAL=10 ;;
-    verbose) export CONSILIUM_PROGRESS_STYLE=compact; export CONSILIUM_PROGRESS_INTERVAL=2 ;;
-    none)    export CONSILIUM_PROGRESS_STYLE=none ;;
-esac
 
 if [[ "$BACKEND" == "grok-build" ]]; then
     export CONSILIUM_EXPLORE_CWD="$SRC_AGENT_CWD"

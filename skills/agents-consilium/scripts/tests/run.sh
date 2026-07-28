@@ -1069,6 +1069,9 @@ assert_contains "delegate help mentions cancel" "$help_out" "cancel"
 # shellcheck source=explore.sh
 source "$TESTS_DIR/explore.sh"
 
+# shellcheck source=progress.sh
+source "$TESTS_DIR/progress.sh"
+
 echo ""
 echo "Results: $PASS passed, $FAIL failed"
 rm -rf "$TMP"

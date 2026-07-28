@@ -11,7 +11,7 @@ from .util import (
     atomic_write_json,
     ensure_dir,
     flock_exclusive,
-    new_id,
+    new_run_id,
     path_owner_uid,
     pid_alive,
     progress,
@@ -84,7 +84,7 @@ class Registry:
         extra: Optional[Dict[str, Any]] = None,
     ) -> str:
         self.ensure_root()
-        run_id = new_id("run_")
+        run_id = new_run_id("run_")
         rdir = self.runs_dir / run_id
         if rdir.exists() or rdir.is_symlink():
             raise RegistryError(f"run id collision: {run_id}", exit_code=1)

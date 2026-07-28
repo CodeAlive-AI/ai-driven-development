@@ -22,10 +22,13 @@ PROMPT_FILE=""
 PROMPT_SOURCE=""   # positional | file | stdin
 INCLUDE_PATTERNS=()
 EXCLUDE_PATTERNS=()
+PROGRESS="${CONSILIUM_PROGRESS:-full}"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)          OUTPUT_FORMAT="xml"; shift ;;
+        --progress)     shift; PROGRESS="${1:-}"; shift ;;
+        --progress=*)   PROGRESS="${1#--progress=}"; shift ;;
         --list-agents)  LIST_ONLY=true; shift ;;
         --prompt-file)  shift; PROMPT_FILE="${1:-}"; PROMPT_SOURCE="file"; shift ;;
         -a|--agents|--agent)
@@ -45,6 +48,11 @@ Usage: consilium review ask [options] ["question"]
 
 Options:
   --xml                 Emit <consilium-report> XML
+  --progress full|compact|none
+                        Live per-agent progress on stderr (default: full).
+                        full = thinking/answer previews per agent,
+                        compact = content-free liveness counters,
+                        none = silent.
   --list-agents         Print agent plan as XML and exit
   --prompt-file <path>  Send file contents verbatim (raw mode)
   -a, --agents <ID|GLOB>  Include agents (repeatable; globs ok)
@@ -60,6 +68,13 @@ EOF
         *)              PROMPT="$1"; PROMPT_SOURCE="positional"; shift; break ;;
     esac
 done
+
+# Set the style before the first progress_* call so `none` is honored from the
+# very first line, and export it so every backend child inherits it.
+if ! progress_set_style "$PROGRESS"; then
+    echo -e "${RED}Error: --progress must be full, compact, or none (got: $PROGRESS)${NC}" >&2
+    exit $EXIT_USAGE
+fi
 
 if [[ -n "$PROMPT_FILE" ]]; then
     if [[ ! -f "$PROMPT_FILE" ]]; then

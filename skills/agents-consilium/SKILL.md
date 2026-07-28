@@ -56,8 +56,11 @@ scripts/consilium review ask "Should we use Postgres or SQLite?"
 scripts/consilium review ask --xml --prompt-file prompt.md
 scripts/consilium review ask -a codex,grok "Review this approach"
 scripts/consilium review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
+scripts/consilium review ask --progress compact -a codex,grok "Q"   # quiet, still live
 scripts/consilium --list-agents
 ```
+
+Each agent answers under its own heading; consilium does not merge or rank them — you are the judge.
 
 Exit codes: `0` all ok · `2` partial · `3` all failed · `4` config · `5` usage.
 
@@ -299,11 +302,31 @@ Claude authoritative `result` events complete the adapter even if stdin remains 
 
 | Stream | Content |
 |--------|---------|
-| **stderr** | Compact semantic **live** progress (`[consilium] start|event|done|stage …`) while the model is still running — not post-hoc after completion |
+| **stderr** | Compact semantic **live** progress (`[consilium] start|event|done|stage …`) while the model is still running — not post-hoc after completion. Style is selectable per run — see below |
 | **stdout** | Clean final answer only |
 | **artifacts** | Per-run dir under `CONSILIUM_OUTPUT_DIR` (or `CONSILIUM_RUN_DIR`): `raw/*.jsonl`, `normalized/*.jsonl`, `final/*.txt`, `final.txt`. Keys are per-invocation: plain agent id for ask/delegate, `agent.role` for basic/specialists code review, explicit stage/index keys for super/ultra discovery (`<stage>.<index>.<agent>.<role>`), and `judge.primary.<agent>` / `judge.fallback.<agent>` for judge attempts. Fan-out never relies on ambient inherited `CONSILIUM_ARTIFACT_KEY` alone. |
 
 Architecture: `backend_cmd | normalize_stream.py --raw-out --progress --extract-text`. Each raw line is persisted and normalized immediately; progress reaches stderr before process completion. `PIPESTATUS` preserves backend exit (timeout/signal) and Grok end/error validation independently.
+
+### Progress styles
+
+`review ask` and every `review code` depth take `--progress` (env fallback `CONSILIUM_PROGRESS`):
+
+| Style | stderr carries |
+|-------|----------------|
+| `full` (default) | Per-agent thinking / answer previews, live |
+| `compact` | Content-free liveness only: `chunks=N chars=M elapsed=Ts` |
+| `none` | Nothing. Stage lines, per-pass `ok`, and model progress are all silenced; failures and the report itself are not |
+
+`explore` keeps its own vocabulary (`compact` / `verbose` / `none`) and never offers `full` — exploration must not stream chain-of-thought or the answer body.
+
+Progress lines are keyed by the **invocation**, not the agent: `agent=codex` for `ask`, `agent=codex.security` for a code-review pass, `agent=discovery-small.0.opencode-go-glm.correctness` for super/ultra fan-out. Two concurrent passes of the same agent therefore stay distinguishable while they run, and each key matches its artifact file under the run dir.
+
+The skill never synthesizes a verdict for `ask`, `basic`, or `specialists`: every agent's answer is returned verbatim under its own heading and the calling agent judges. (`super` / `ultra` are the deliberate exception — they run an explicit LLM judge stage over the deduped union.)
+
+### Run identifiers
+
+Run ids and run-dir names are human-readable word pairs — `run_amber-otter-4f21`, `run-ask-solar-orchid-fd8e` — not raw hex. They are quoted back on stderr, retyped into `delegate status <run_id>`, and referenced several turns later, all of which words survive and UUIDs do not. The 4-hex tail keeps them unique; `scripts/lib/human_id.py` is the single generator for both the steerable registry and artifact directories.
 
 Disable ordinary review/delegate archival with `CONSILIUM_SAVE_OUTPUTS=0`. Steerable runs still maintain their service registry (`CONSILIUM_STEER_DIR`) and protocol artifacts needed for steer/status/cancel observability.
 
@@ -411,6 +434,7 @@ EOF
 ## Environment variables
 
 - `CONSILIUM_CONFIG`, `CONSILIUM_AGENTS`, `CONSILIUM_EXCLUDE`
+- `CONSILIUM_PROGRESS` — default progress style for review modes (`full` | `compact` | `none`)
 - `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR`, `CONSILIUM_SAVE_OUTPUTS`
 - `CONSILIUM_STEER_DIR` — registry root for steerable runs
 - `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` — permit `file://` sources (offline tests only; blocked in normal use)
@@ -424,7 +448,7 @@ EOF
 scripts/tests/run.sh
 ```
 
-Uses fake backend CLIs; asserts argv safety (review/explore sandboxes vs delegate YOLO), exact agent selection, stdout/stderr separation, artifacts, Grok streaming-json success/failure, live progress before backend exit, explore source resolution (local / shorthand / URL / SSH, shorthand-vs-existing-directory precedence, credential redaction, blocked transports, branch/tag/SHA refs, clone cleanup on success, failure, and `--keep-clone`, isolation argv, prompt purity, and content-free progress), and steerable-delegate mailbox/adapters (Claude/Codex/OpenCode/Grok transport fakes, concurrent Grok queue + sendNow, cancel, idempotency, cleanup). Default suite is offline — no network/model spend.
+Uses fake backend CLIs; asserts argv safety (review/explore sandboxes vs delegate YOLO), exact agent selection, stdout/stderr separation, artifacts, Grok streaming-json success/failure, live progress before backend exit, explore source resolution (local / shorthand / URL / SSH, shorthand-vs-existing-directory precedence, credential redaction, blocked transports, branch/tag/SHA refs, clone cleanup on success, failure, and `--keep-clone`, isolation argv, prompt purity, and content-free progress), review progress styles (`full` / `compact` / `none` across every depth, per-invocation progress keys, human-readable run ids and run dirs), and steerable-delegate mailbox/adapters (Claude/Codex/OpenCode/Grok transport fakes, concurrent Grok queue + sendNow, cancel, idempotency, cleanup). Default suite is offline — no network/model spend.
 
 Opt-in real smoke (spends tokens):
 

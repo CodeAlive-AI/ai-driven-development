@@ -267,6 +267,11 @@ def main() -> int:
                     help="full: preview text/thought content (review, delegate). "
                          "compact: counters only, never model content (explore). "
                          "none: no progress at all.")
+    ap.add_argument("--progress-id", default="",
+                    help="Identity used in progress lines only (defaults to --agent-id). "
+                         "Fan-out layers pass the per-invocation key (agent.role, "
+                         "stage.index.agent.role) so parallel passes of the same agent "
+                         "are distinguishable live. Normalized events keep --agent-id.")
     ap.add_argument("--progress-interval", type=float, default=10.0,
                     help="Seconds between compact-style heartbeat lines")
     ap.add_argument("--extract-text", action="store_true",
@@ -305,10 +310,11 @@ def main() -> int:
     final_result_text: Optional[str] = None
     reporter: Any = None
     if args.progress and args.progress_style != "none":
+        progress_id = args.progress_id or args.agent_id
         if args.progress_style == "compact":
-            reporter = CompactProgressReporter(args.agent_id, args.progress_interval)
+            reporter = CompactProgressReporter(progress_id, args.progress_interval)
         else:
-            reporter = ProgressReporter(args.agent_id)
+            reporter = ProgressReporter(progress_id)
 
     try:
         for line in inp:

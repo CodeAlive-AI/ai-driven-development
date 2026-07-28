@@ -36,7 +36,26 @@ artifacts_init_run() {
     if [[ -z "${CONSILIUM_RUN_DIR:-}" ]]; then
         local parent="${CONSILIUM_OUTPUT_DIR:-${TMPDIR:-/tmp}/agents-consilium-outputs}"
         mkdir -p "$parent"
-        CONSILIUM_RUN_DIR="$(mktemp -d "${parent%/}/run-${mode}.XXXXXX")"
+        # Human-readable run dir (run-ask-amber-otter-4f21): the path is quoted
+        # back to the caller in progress output and referenced later by hand, so
+        # word pairs beat mktemp's random suffix. mkdir (not mktemp) is the
+        # collision check — it fails if the name is taken, and we retry.
+        CONSILIUM_RUN_DIR=""
+        local _lib_dir _candidate _try
+        _lib_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+        for _try in 1 2 3; do
+            _candidate="$(python3 "$_lib_dir/human_id.py" "${parent%/}/run-${mode}-" 2>/dev/null)" || _candidate=""
+            [[ -n "$_candidate" ]] || break
+            if mkdir -m 700 "$_candidate" 2>/dev/null; then
+                CONSILIUM_RUN_DIR="$_candidate"
+                break
+            fi
+        done
+        if [[ -z "$CONSILIUM_RUN_DIR" ]]; then
+            # Word list unavailable or three collisions in a row — never fail a
+            # review over a directory name.
+            CONSILIUM_RUN_DIR="$(mktemp -d "${parent%/}/run-${mode}.XXXXXX")"
+        fi
     else
         mkdir -p "$CONSILIUM_RUN_DIR"
     fi

@@ -87,9 +87,10 @@ scripts/consilium delegate status run_<id> --json
 
 ## Observability
 
-- **stderr** — live `[consilium] …` progress (ordinary start lines include resolved model/effort; output is not buffered until end)
+- **stderr** — live `[consilium] …` progress (ordinary start lines include resolved model/effort; output is not buffered until end), keyed per invocation (`codex`, `codex.security`, `discovery-small.0.<agent>.<role>`)
+- **progress style** — `--progress full|compact|none` on `review ask` and every `review code` depth (env `CONSILIUM_PROGRESS`); `explore` uses `compact|verbose|none`
 - **stdout** — final answer only
-- **artifacts** — `CONSILIUM_OUTPUT_DIR/run-*/{raw,normalized,final}/…` plus `final.txt`
+- **artifacts** — `CONSILIUM_OUTPUT_DIR/run-<mode>-<word>-<word>-<hex>/{raw,normalized,final}/…` plus `final.txt`; run ids are human-readable word pairs, not UUIDs
 - **steerable status** — resolved model/effort plus mailbox/backend lifecycle evidence for each steer
 
 ---

@@ -41,7 +41,10 @@ Usage:
 
 review ask
   Fan-out independent opinions across enabled (or selected) agents. Read-only.
-  Options: --xml, --list-agents, --prompt-file, -a/--agents, -x/--exclude
+  Every agent's answer is returned separately — this skill never synthesizes a
+  verdict; the calling agent is the judge.
+  Options: --xml, --list-agents, --prompt-file, -a/--agents, -x/--exclude,
+           --progress full|compact|none
 
 review code
   Structured code review. Always read-only.
@@ -50,7 +53,15 @@ review code
   --depth super         multi-stage superreview + judge
   --depth ultra         multi-stage ultrareview + judge
   Other options: --xml, --diff, -a/--agents, -x/--exclude, --dry-run (super/ultra),
-                 --judge, --no-fallback (ultra)
+                 --judge, --no-fallback (ultra), --progress full|compact|none
+
+Live progress (all review depths)
+  full (default)  per-agent thinking / answer previews on stderr, keyed by the
+                  invocation (agent, agent.role, stage.index.agent.role) so
+                  parallel passes of the same agent stay distinguishable
+  compact         content-free liveness counters (chunks/chars/elapsed)
+  none            silence — stdout still carries the report
+  Env fallback: CONSILIUM_PROGRESS.
 
 explore
   Read-only context exploration of a local or remote repository. One agent
@@ -67,7 +78,7 @@ delegate
   --steerable starts a long-lived session with mailbox steer/status/cancel.
 
 Environment:
-  CONSILIUM_CONFIG, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
+  CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
   CONSILIUM_STEER_DIR, AGENT_TIMEOUT (opt-in; default unlimited), and per-backend
   model/effort overrides — see SKILL.md.
 EOF
