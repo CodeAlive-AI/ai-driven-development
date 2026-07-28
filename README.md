@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 22 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 21 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -29,7 +29,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 22 skills
+# Install all 21 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -89,7 +89,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
-| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code) and single-agent **delegate** (full YOLO) via `scripts/consilium`. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only). Independent opinions, structured specialists, super/ultra judge pipelines |
+| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code), single-agent **explore** (read-only context exploration of a local or remote repo, Grok 4.5 by default), and single-agent **delegate** (full YOLO) via `scripts/consilium`. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only). Independent opinions, structured specialists, super/ultra judge pipelines |
 
 ### macOS & Windows system health (2)
 
@@ -98,12 +98,11 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [maintaining-macos-health](skills/maintaining-macos-health/) | Disk cleanup + dev-machine optimisation + proactive health alerting. Triage flow for kernel panic / watchdog timeout / `vm-compressor-space-shortage` / Jetsam events. Tiered cleanup playbook (zero-risk → discuss-first), Mole-style safety guards, and a noise-resistant LaunchAgent alerter (3 CRITICAL-only triggers, hysteresis, calibration window). Apple Silicon focus |
 | [maintaining-windows-health](skills/maintaining-windows-health/) | Windows 11 port of the macOS health skill. Triage flow for BSOD / Kernel-Power 41 / crash dumps / commit-memory pressure. Ten-tier cleanup playbook (Storage Sense → discuss-first) using native Microsoft tooling (cleanmgr / DISM / pnputil / vssadmin / wevtutil / powercfg), a drift-protected HTML cleanup UI with an NTFS-hardened apply validator, and a Task Scheduler + BurntToast alerter (interactive-session, hysteresis, calibration). Heavy AI/Docker/WSL focus |
 
-### Niche utilities (3)
+### Niche utilities (2)
 
 | Skill | What It Does |
 |-------|--------------|
 | [clipboard](skills/clipboard/) | Copy text to macOS clipboard with optional rich formatting (HTML + plain text). Slack/LinkedIn-aware — uses HTML rich text instead of mrkdwn, and warns about `<table>` not rendering in chat targets |
-| [repo-explorer](skills/repo-explorer/) | Explores repositories by delegating to Claude Code CLI. Saves context for the calling agent and speeds up codebase understanding |
 | [windows-qa-engineer](skills/windows-qa-engineer/) | Manual QA copilot for Windows 11 desktop apps (WinForms / WPF / UWP). Uses Microsoft UFO (UIA / Win32) + FastMCP `mount()` composition + MCP protocol |
 
 ### Hooks (1)
@@ -150,7 +149,6 @@ ai-driven-development/
 │   ├── plugins-management/
 │   ├── prompt-engineering/
 │   ├── refactoring-csharp/
-│   ├── repo-explorer/
 │   ├── semantic-scholar-deep/
 │   ├── settings-management/
 │   ├── skills-management/

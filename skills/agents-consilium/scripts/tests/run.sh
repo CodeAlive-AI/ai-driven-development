@@ -1060,6 +1060,9 @@ assert_contains "delegate help mentions steer" "$help_out" "steer"
 assert_contains "delegate help mentions status" "$help_out" "status"
 assert_contains "delegate help mentions cancel" "$help_out" "cancel"
 
+# shellcheck source=explore.sh
+source "$TESTS_DIR/explore.sh"
+
 echo ""
 echo "Results: $PASS passed, $FAIL failed"
 rm -rf "$TMP"

@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional, TextIO
 
@@ -101,6 +102,69 @@ class ProgressReporter:
         )
         if "\n" in chunk or len(self.buffer) >= threshold or sentence_boundary:
             self.flush()
+
+
+class CompactProgressReporter:
+    """Content-free liveness progress.
+
+    Exploration progress must prove the model is working without leaking what it
+    is thinking (chain-of-thought) or what it is about to answer (the final text,
+    arriving delta by delta). So this reporter reports *shape* only: which phase,
+    how many chunks, how many characters, how long. No payload ever reaches
+    stderr — which is the whole difference from ProgressReporter.
+    """
+
+    LABEL = {"thought": "thinking", "text": "answering"}
+
+    def __init__(self, agent_id: str, interval: float = 10.0) -> None:
+        self.agent_id = agent_id
+        self.interval = interval
+        self.phase = ""
+        self.chunks = 0
+        self.chars = 0
+        self.started = time.monotonic()
+        self.last_emit = 0.0
+        self.emitted_in_phase = False
+        self.pending = False
+
+    def _emit(self) -> None:
+        # `pending` guards against re-printing an already-reported count when a
+        # phase change or a final flush lands right after a heartbeat.
+        if not self.phase or self.chunks == 0 or not self.pending:
+            return
+        self.pending = False
+        self.last_emit = time.monotonic()
+        self.emitted_in_phase = True
+        elapsed = int(self.last_emit - self.started)
+        sys.stderr.write(
+            f"[consilium] event agent={self.agent_id} type={self.phase} "
+            f"chunks={self.chunks} chars={self.chars} elapsed={elapsed}s\n"
+        )
+        sys.stderr.flush()
+
+    def feed(self, typ: str, data: Any = None) -> None:
+        if typ in self.LABEL:
+            label = self.LABEL[typ]
+            if label != self.phase:
+                self._emit()
+                self.phase = label
+                self.chunks = 0
+                self.chars = 0
+                self.emitted_in_phase = False
+            self.chunks += 1
+            self.chars += len("" if data is None else str(data))
+            self.pending = True
+            if not self.emitted_in_phase or (time.monotonic() - self.last_emit) >= self.interval:
+                self._emit()
+            return
+        # Structural events (end / error / tool activity) carry no model content
+        # and are the most useful thing on the stream — pass them through.
+        self._emit()
+        self.phase = ""
+        progress_event(self.agent_id, typ, data)
+
+    def flush(self) -> None:
+        self._emit()
 
 
 def parse_line(line: str) -> Dict[str, Any]:
@@ -199,6 +263,12 @@ def main() -> int:
                     help="Append each raw input line immediately (for concurrent capture)")
     ap.add_argument("--progress", action="store_true",
                     help="Emit compact semantic progress to stderr as events arrive")
+    ap.add_argument("--progress-style", default="full", choices=["full", "compact", "none"],
+                    help="full: preview text/thought content (review, delegate). "
+                         "compact: counters only, never model content (explore). "
+                         "none: no progress at all.")
+    ap.add_argument("--progress-interval", type=float, default=10.0,
+                    help="Seconds between compact-style heartbeat lines")
     ap.add_argument("--extract-text", action="store_true",
                     help="Also print concatenated text events to a side file via --text-out")
     ap.add_argument("--text-out", default="")
@@ -233,7 +303,12 @@ def main() -> int:
     # with the complete answer. Prefer result for --extract-text so the answer
     # appears exactly once, while still streaming deltas until result arrives.
     final_result_text: Optional[str] = None
-    reporter = ProgressReporter(args.agent_id) if args.progress else None
+    reporter: Any = None
+    if args.progress and args.progress_style != "none":
+        if args.progress_style == "compact":
+            reporter = CompactProgressReporter(args.agent_id, args.progress_interval)
+        else:
+            reporter = ProgressReporter(args.agent_id)
 
     try:
         for line in inp:

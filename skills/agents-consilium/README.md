@@ -1,8 +1,8 @@
 # agents-consilium
 
-> Multi-agent **review** (read-only) and single-agent **delegate** (full YOLO) via one CLI: `scripts/consilium`.
+> Multi-agent **review** (read-only), single-agent **explore** (read-only repository context), and single-agent **delegate** (full YOLO) via one CLI: `scripts/consilium`.
 
-Different frontier models see different things. Consilium fans out independent opinions or structured code reviews, or hands a whole task to one explicitly chosen agent.
+Different frontier models see different things. Consilium fans out independent opinions or structured code reviews, explores an unfamiliar codebase and answers from cited evidence, or hands a whole task to one explicitly chosen agent.
 
 ---
 
@@ -15,10 +15,13 @@ Different frontier models see different things. Consilium fans out independent o
 | **review code** *(specialists)* | high-stakes — + perf / architecture / consistency | `consilium review code --depth specialists` | $0.30–0.80 |
 | **review code** *(super)* | production-critical — multi-stage + judge | `consilium review code --depth super` | $0.90–1.50 |
 | **review code** *(ultra)* | maximum coverage | `consilium review code --depth ultra` | $1.50–3.00 |
+| **explore** | understand a local or remote codebase, answer from evidence | `consilium explore [--repo SOURCE]` | varies |
 | **delegate** | implement a task with one agent, no sandbox | `consilium delegate -a <id>` | varies |
 | **delegate --steerable** | delegate while retaining live status/steer/cancel control | `consilium delegate -a <id> --steerable` | varies |
 
-> **Pick in 5 seconds:** ideas → **ask** · normal PR file → **code basic** · money/auth → **specialists/super** · “just do it” → **delegate -a …**
+> **Pick in 5 seconds:** ideas → **ask** · normal PR file → **code basic** · money/auth → **specialists/super** · “how does this codebase work?” → **explore** · “just do it” → **delegate -a …**
+>
+> `review` looks for problems. `explore` looks for context. They are different jobs — explore never hunts for defects and never emits findings.
 
 ---
 
@@ -51,6 +54,10 @@ scripts/consilium review code path/to/file.py
 git diff HEAD | scripts/consilium review code --xml --diff
 scripts/consilium review code --depth super path/to/file.cs
 
+# Explore context — local tree, or a remote repo (cloned and cleaned up)
+scripts/consilium explore "How is authentication wired up?"
+scripts/consilium explore --repo owner/repository --ref v2.4.0 "How does the middleware pipeline work?"
+
 # YOLO: one agent, current directory, no sandbox
 scripts/consilium delegate -a grok "Add retry with exponential backoff to client.py"
 ```
@@ -65,6 +72,8 @@ scripts/consilium review ask -a codex,grok "Q"
 scripts/consilium review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
 scripts/consilium review code --depth specialists path/to/file.py
 scripts/consilium review code --depth ultra --dry-run path/to/file.cs
+scripts/consilium explore --repo ~/src/app "Where is the public API assembled?"
+scripts/consilium explore --repo owner/repository --depth full --progress verbose --prompt-file question.md
 scripts/consilium delegate -a codex --prompt-file task.md
 scripts/consilium delegate -a grok --steerable "Implement the task"
 # Capture run_id from stderr, then from another process:

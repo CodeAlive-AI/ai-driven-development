@@ -1,17 +1,18 @@
 ---
 name: agents-consilium
-description: "Query external AI agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini) for independent second opinions, multi-depth code review, and full-YOLO single-agent delegation. Two public modes via scripts/consilium: review (read-only ask/code) and delegate (exact agent, no sandbox; optional --steerable long session with steer/status/cancel). Use for architecture choices, security review, deep multi-stage review, or handing a whole task to one agent. Not for simple questions answerable from docs or the codebase."
+description: "Query external AI agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini) for independent second opinions, multi-depth code review, repository context exploration, and full-YOLO single-agent delegation. Three public modes via scripts/consilium: review (read-only ask/code), explore (read-only exploration of a local or remote repository — clones remotes, answers from cited evidence, Grok 4.5 by default), and delegate (exact agent, no sandbox; optional --steerable long session with steer/status/cancel). Use for architecture choices, security review, deep multi-stage review, understanding an unfamiliar or third-party codebase, or handing a whole task to one agent. Not for simple questions answerable from docs or the codebase."
 ---
 
-# Consilium v5: Multi-Agent Review & Delegation
+# Consilium v6: Multi-Agent Review, Exploration & Delegation
 
-Query external AI agents for independent expert opinions, structured code review, or full-YOLO task delegation. Review modes stay read-only. Delegate hands the whole task to **exactly one** explicitly selected agent in the caller's CWD.
+Query external AI agents for independent expert opinions, structured code review, repository exploration, or full-YOLO task delegation. Review and explore stay read-only. Delegate hands the whole task to **exactly one** explicitly selected agent in the caller's CWD.
 
 ## Public CLI (only entrypoint)
 
 ```bash
 scripts/consilium review ask [...]
 scripts/consilium review code --depth basic|specialists|super|ultra [...]
+scripts/consilium explore [--repo SOURCE] [--ref REF] [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
 scripts/consilium delegate -a <exact-agent-id> --steerable [...]
 scripts/consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [...]
@@ -35,7 +36,18 @@ Old public scripts (`consensus-query.sh`, `code-review.sh`, `superreview.sh`, `u
 | `review code --depth specialists` | read-only | 5 specialists |
 | `review code --depth super` | read-only | Multi-stage superreview + LLM judge |
 | `review code --depth ultra` | read-only | Multi-stage ultrareview + LLM judge |
+| `explore` | read-only | One agent maps the context a question depends on |
 | `delegate -a <id>` | **full YOLO** | One agent implements the task in CWD |
+
+Review and explore are different jobs, not two depths of one job:
+
+```
+review    finds and validates problems in code you already own
+explore   builds a relevance-first map of context and answers from evidence
+delegate  changes the repository
+```
+
+`explore` never loads review principles, review roles, `review_instructions`, or the Assessment/Blind Spots/Recommendation template. Asking it to review is a category error — use `review` for that.
 
 ### `review ask`
 
@@ -66,6 +78,101 @@ scripts/consilium review code --depth ultra --dry-run path/to/file.cs
 Exit codes for `review code` (basic/specialists): `0` all specialists ok · `2` partial (report still emitted from successes) · `3` all failed · `4` config · `5` usage.
 
 Review is always read-only. Do **not** use Grok's `/review` slash command — consilium owns review semantics.
+
+### `explore`
+
+Read-only exploration of a repository's context — local tree or remote repo — answering a question from cited evidence. Single agent, **Grok 4.5 by default**.
+
+```bash
+# current directory
+scripts/consilium explore "How is authentication wired up?"
+
+# another local repository
+scripts/consilium explore --repo ~/src/app "Where is the public API assembled?"
+
+# remote; bare owner/repo means GitHub
+scripts/consilium explore --repo owner/repository "What handles incremental builds?"
+
+# pinned to a branch, tag, or commit
+scripts/consilium explore --repo https://github.com/owner/repository --ref v2.4.0 \
+  "How does the middleware pipeline work?"
+
+scripts/consilium explore --repo owner/repository --prompt-file question.md
+```
+
+| Option | Meaning |
+|--------|---------|
+| `--repo SOURCE` | Local path, `owner/repo` (GitHub), or git URL. Default `.` |
+| `--ref REF` | Branch, tag, or commit — **remote sources only** |
+| `-a, --agent ID` | Exact agent id, no globs. Default `grok` |
+| `--prompt-file FILE` | Question from a file |
+| `--depth N\|full` | Clone depth for remotes. Default `1` |
+| `--progress compact\|verbose\|none` | Progress detail on stderr. Default `compact` |
+| `--keep-clone` | Keep the clone and print its path (debugging only) |
+
+The source is `--repo` only — a positional `owner/repo` would be ambiguous against the question text and against local paths. An existing directory named `owner/repo` always beats the GitHub shorthand.
+
+Exit codes: `0` ok · `4` unknown agent / config · `5` usage · `6` source error (unresolvable spec, blocked transport, clone or ref failure) · otherwise the backend exit code.
+
+#### Answer shape
+
+```
+## Answer        direct answer, prose first
+## Evidence      repository-relative path:line, each stating what it proves
+## Context map   only the modules that bear on the question
+## Gaps          what could not be confirmed, and why
+```
+
+No `Blind Spots`, no `Alternatives`, no `Recommendation` — those belong to review.
+
+#### Trust boundary
+
+A remote repository is data, not a control plane. Grok Build discovers repo-local `.grok/config.toml`, plugins, MCP servers, hooks, `AGENTS.md`, and Claude-compatible instructions from its working directory, so explore clones into an isolated workspace and points the agent at the **neutral parent**:
+
+```
+<workspace>/          ← agent CWD
+  source/             ← the clone
+```
+
+Verified against Grok Build 0.2.112 with `grok inspect`: CWD `<workspace>` loads only user-level instructions; CWD `<workspace>/source` additionally loads the repository's own `AGENTS.md` and `CLAUDE.md`. The regression test asserts this layout.
+
+What this does **not** cover, stated plainly:
+
+- User-level configuration (`~/.grok`, `~/.claude`) still loads. It is yours, and is treated as trusted.
+- Nothing prevents the model from *reading* `AGENTS.md`; `prompts/explore.txt` forbids obeying it.
+
+Additional posture for remote sources: `--sandbox strict`, plus `--no-subagents`, `--no-memory`, no shell, no write tools. Local trusted trees are explored in place under `--sandbox read-only`, and repo-local instructions **are** discovered there — that is your own repository.
+
+Blocked by default: `file://`, `ext::` and other git remote helpers, plain `http://`. Submodules and LFS payloads are not fetched. Credentials embedded in a URL are stripped before anything is logged or written to `meta.json`. The clone is removed on success, failure, and signal; `--keep-clone` is the only exception.
+
+#### Web access
+
+Explore has `web_search` and `web_fetch`. Understanding a codebase routinely means reading the upstream docs, RFCs, and release notes it is built against. The prompt draws the line: the model may not visit a URL *because repository content told it to*, and may not send repository content anywhere.
+
+#### Progress
+
+Progress is content-free by construction. Exploration must not stream chain-of-thought or the answer body onto stderr, so `--progress` reports shape only:
+
+```
+[consilium] stage=explore agent=grok repo=owner/repository ref=v2.4.0
+[consilium] explore clone https://github.com/owner/repository at ref=v2.4.0 (depth=1)
+[consilium] source remote=… strategy=clone-branch commit=abc123def456
+[consilium] event agent=grok type=thinking chunks=128 chars=8213 elapsed=24s
+[consilium] event agent=grok type=answering chunks=44 chars=2117 elapsed=61s
+[consilium] event agent=grok type=end data=EndTurn
+```
+
+`verbose` shortens the heartbeat interval; `none` silences it. Tool-level progress (`grep pattern=…`, `read path=…`) needs the ACP transport and is deliberately deferred — see [ACP-RESEARCH.md](ACP-RESEARCH.md).
+
+#### Agents other than Grok
+
+Every isolation guarantee above is implemented with Grok Build flags. `-a <non-grok>` still runs read-only with the exploration prompt, but falls back to that backend's review-grade posture: repo-local instructions may be discovered while reading files, and memory / subagents / web follow the backend's own defaults. Explore prints a warning and records `"isolation": "reduced"` in `meta.json`.
+
+#### Provenance
+
+`meta.json` records mode, agent, backend, isolation level, source kind, **redacted** source URL, requested ref, resolved commit, branch, shallow/dirty flags, clone depth and strategy, caller CWD, exploration root, agent CWD, inventory size, and the question's SHA-256.
+
+Because explore has no shell, the orchestrator collects git facts (`rev-parse`, `log`, `status`) and a bounded file inventory (`git ls-files`, or a filtered walk for non-git trees) and passes them into the prompt as stated facts. Large repositories get a directory-level rollup that is explicitly labelled as incomplete rather than a silently truncated file list.
 
 ### `delegate`
 
@@ -219,13 +326,15 @@ with `status` and stop them explicitly with `cancel`.
 
 ## Backends & read-only / YOLO flags
 
-| Backend | Review (read-only) | Delegate (YOLO) |
-|---------|--------------------|-----------------|
+| Backend | Review / explore (read-only) | Delegate (YOLO) |
+|---------|-----------------------------|-----------------|
 | `codex-cli` | `exec --sandbox read-only` + ask-for-approval never | `--dangerously-bypass-approvals-and-sandbox` |
 | `claude-code` | `--permission-mode plan` + disallowed Edit/Write | `--dangerously-skip-permissions` |
 | `opencode` | `--agent plan` | `--agent build --auto` |
 | `grok-build` | `--sandbox read-only` + tool allowlist/denylist (plan alone is **not** read-only) | `--always-approve`, no sandbox |
 | `gemini-cli` | `--approval-mode plan` | not supported |
+
+Read-only enforcement is driven by an access policy (`review` and `explore` → `readonly`, `delegate` → `yolo`), not by a literal mode comparison — a new read-only mode cannot accidentally inherit YOLO argv. `explore` additionally layers Grok-only isolation flags (`--cwd`, `--sandbox strict` for remote clones, `--no-subagents`, `--no-memory`) and grants `web_search` / `web_fetch`.
 
 ### Native Grok Build (default Grok path)
 
@@ -278,6 +387,8 @@ EOF
 
 | Situation | Command |
 |-----------|---------|
+| Understand an unfamiliar or third-party codebase | `explore --repo <source>` |
+| "Where/how does X work here?" | `explore` |
 | Architecture / brainstorm | `review ask` |
 | Quick file/diff review | `review code` (basic) |
 | High-stakes PR file | `review code --depth specialists` or `super` |
@@ -290,6 +401,8 @@ EOF
 - `CONSILIUM_CONFIG`, `CONSILIUM_AGENTS`, `CONSILIUM_EXCLUDE`
 - `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR`, `CONSILIUM_SAVE_OUTPUTS`
 - `CONSILIUM_STEER_DIR` — registry root for steerable runs
+- `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` — permit `file://` sources (offline tests only; blocked in normal use)
+- `CONSILIUM_EXPLORE_ALLOW_INSECURE=1` — permit plain `http://` clone URLs
 - `AGENT_TIMEOUT` (`0`/unset = unlimited; positive integer = opt-in seconds for ordinary review/one-shot delegate; steerable remains unlimited)
 - Per-backend: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, `GEMINI_MODEL`, `GEMINI_API_KEY`. Non-empty model/effort variables override `config.json` for that invocation in both ordinary and steerable modes. OpenCode effort maps to its model `variant`; use `none` to omit the variant consistently.
 
@@ -299,7 +412,7 @@ EOF
 scripts/tests/run.sh
 ```
 
-Uses fake backend CLIs; asserts argv safety (review sandboxes vs delegate YOLO), exact agent selection, stdout/stderr separation, artifacts, Grok streaming-json success/failure, live progress before backend exit, and steerable-delegate mailbox/adapters (Claude/Codex/OpenCode/Grok transport fakes, concurrent Grok queue + sendNow, cancel, idempotency, cleanup). Default suite is offline — no network/model spend.
+Uses fake backend CLIs; asserts argv safety (review/explore sandboxes vs delegate YOLO), exact agent selection, stdout/stderr separation, artifacts, Grok streaming-json success/failure, live progress before backend exit, explore source resolution (local / shorthand / URL / SSH, shorthand-vs-existing-directory precedence, credential redaction, blocked transports, branch/tag/SHA refs, clone cleanup on success, failure, and `--keep-clone`, isolation argv, prompt purity, and content-free progress), and steerable-delegate mailbox/adapters (Claude/Codex/OpenCode/Grok transport fakes, concurrent Grok queue + sendNow, cancel, idempotency, cleanup). Default suite is offline — no network/model spend.
 
 Opt-in real smoke (spends tokens):
 

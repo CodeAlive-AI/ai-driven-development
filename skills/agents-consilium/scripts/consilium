@@ -5,6 +5,7 @@
 # Modes:
 #   consilium review ask  [...]
 #   consilium review code --depth basic|specialists|super|ultra [...]
+#   consilium explore [--repo SOURCE] [...]
 #   consilium delegate -a <exact-agent-id> [...]
 #
 # Observability contract:
@@ -24,11 +25,12 @@ source "$LIB_DIR/progress.sh"
 
 usage() {
     cat <<'EOF'
-consilium — multi-agent review and single-agent YOLO delegation
+consilium — multi-agent review, context exploration, and single-agent YOLO delegation
 
 Usage:
   consilium review ask [options] ["question"]
   consilium review code --depth basic|specialists|super|ultra [options] <file|--diff>
+  consilium explore [--repo SOURCE] [--ref REF] [options] ["question"]
   consilium delegate -a <exact-agent-id> ["task"]
   consilium delegate -a <exact-agent-id> --steerable ["task"]
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
@@ -49,6 +51,13 @@ review code
   --depth ultra         multi-stage ultrareview + judge
   Other options: --xml, --diff, -a/--agents, -x/--exclude, --dry-run (super/ultra),
                  --judge, --no-fallback (ultra)
+
+explore
+  Read-only context exploration of a local or remote repository. One agent
+  (default: grok / Grok 4.5). Not a review: no defect hunting, no findings.
+  Options: --repo SOURCE (path | owner/repo | git URL; default .), --ref REF,
+           -a/--agent EXACT_ID, --prompt-file, --depth N|full,
+           --progress compact|verbose|none, --keep-clone
 
 delegate
   Full-YOLO: run exactly one agent in the current directory with no sandbox
@@ -141,12 +150,16 @@ case "$1" in
                 ;;
         esac
         ;;
+    explore)
+        shift
+        exec bash "$LIB_DIR/explore.sh" "$@"
+        ;;
     delegate)
         shift
         exec bash "$LIB_DIR/delegate.sh" "$@"
         ;;
     *)
-        echo "Error: unknown command: $1 (expected review|delegate)" >&2
+        echo "Error: unknown command: $1 (expected review|explore|delegate)" >&2
         usage >&2
         exit $EXIT_USAGE
         ;;

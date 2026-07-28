@@ -48,3 +48,6 @@ env/
 # .NET
 **/bin/
 **/obj/
+
+# Python caches under skill script dirs (the !skills/*/scripts/lib/** negation above re-includes them)
+skills/*/scripts/**/__pycache__/
