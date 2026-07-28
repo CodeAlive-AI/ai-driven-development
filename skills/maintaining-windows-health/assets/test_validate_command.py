@@ -143,6 +143,56 @@ CASES = [
 ]
 
 
+def test_load_selection_bom() -> int:
+    """Regression for issue #1: PowerShell UTF8 selection JSON carries a BOM."""
+    import json
+    import tempfile
+    from pathlib import Path
+
+    mod = _load_validator()
+    payload = {
+        "selected_items": [
+            {
+                "id": "t1",
+                "label": "temp sample",
+                "path": r"C:\Users\dev\AppData\Local\Temp\sample",
+                "command": (
+                    r"Remove-Item -LiteralPath "
+                    r"'C:\Users\dev\AppData\Local\Temp\sample' "
+                    r"-Recurse -Force"
+                ),
+                "size_bytes": 1,
+            }
+        ],
+        "protected_overrides": [],
+    }
+    body = json.dumps(payload, indent=2).encode("utf-8")
+    bom_body = b"\xef\xbb\xbf" + body
+    failed = 0
+    with tempfile.TemporaryDirectory() as td:
+        plain = Path(td) / "plain.json"
+        bom = Path(td) / "bom.json"
+        plain.write_bytes(body)
+        bom.write_bytes(bom_body)
+        try:
+            a = mod.load_selection_json(plain)
+            b = mod.load_selection_json(bom)
+        except Exception as exc:
+            print(f"FAIL [BOM load raised]: {exc}")
+            return 1
+        if a != payload or b != payload:
+            print("FAIL [BOM load] decoded payload mismatch")
+            failed += 1
+        else:
+            print("OK   [BOM load] utf-8 and utf-8-sig selection JSON both load")
+        code = mod.main([str(HERE / "apply-cleanup-selection.py"), str(bom), "--dry-run"])
+        if code != 0:
+            print(f"FAIL [BOM dry-run] exit={code}")
+            failed += 1
+        else:
+            print("OK   [BOM dry-run] apply --dry-run accepts BOM selection")
+    return failed
+
 def main() -> int:
     os.environ.update(FAKE_ENV)
     mod = _load_validator()
@@ -158,8 +208,13 @@ def main() -> int:
             print(f"     cmd      = {command!r}")
             print(f"     expected = ok={exp_ok} prot={exp_prot}")
             print(f"     got      = ok={ok} prot={prot} reason={reason!r}")
+    bom_failed = test_load_selection_bom()
+    failed += bom_failed
+    if bom_failed == 0:
+        passed += 2
+
     print()
-    print(f"=== {passed} passed | {failed} failed | {len(CASES)} total ===")
+    print(f"=== {passed} passed | {failed} failed | {len(CASES)} total (+ BOM checks) ===")
     return 0 if failed == 0 else 1
 
 
