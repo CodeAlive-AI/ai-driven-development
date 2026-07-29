@@ -8,7 +8,9 @@
 
 #### E.11:1.1 - Use this when
 
-Use `E.11` when a practitioner, manager, or assisting agent has a recognizable working situation but does not yet know which FPF pattern to inspect first.
+Use `E.11` when an FPF author or maintainer publishes or refreshes the public practical-use cards that help a practitioner, manager, or assisting agent find which direct pattern to inspect first.
+
+The practitioner, manager, or assisting agent is the reader of that publication, not the performer of E.11's publication method. Their first move is to compare the current README cards by working situation and first result or blocker, then open the direct pattern from the card that best fits the work.
 
 Public guidance answers three questions quickly: "Is this my situation? What useful result could I obtain first? Which direct pattern should I open?" A public example remains a template; it is not a project instance, applicability finding, recommendation, plan, decision, or work occurrence.
 
@@ -18,7 +20,7 @@ Public guidance answers three questions quickly: "Is this my situation? What use
 
 **What this buys.** A cold reader can move from an ordinary project question to one or a few inspectable direct patterns. A wrong first choice remains recoverable, while ordinary comparison stays conversational.
 
-**Not this pattern when.** Use `E.11.PUA` after one direct pattern has been selected and its application to obtain the first result is current. Use `E.11.PUR` when local applicability, recommendation, coordination, or ordering among candidate pattern uses is current. Use the direct subject pattern for the actual result, plan, work, evidence, decision, or publication claim.
+**Not this pattern when.** After one direct pattern has been selected, use `E.11.PUA` to follow its conditional `Solution`: identify the first independently governed result and the direct basis for calling it this use's result, or stop when that basis is missing. Use `E.11.PUR` when local applicability, recommendation, coordination, or ordering among candidate pattern uses is current. Use the direct subject pattern for the actual result, plan, work, evidence, decision, or publication claim.
 
 ### E.11:2 - Problem
 
@@ -31,17 +33,19 @@ Attempts to help can create a second problem. Public guidance becomes a numbered
 | Force | Pressure on the solution |
 | --- | --- |
 | Recognition | Public wording starts from situations engineers recognize, not internal pattern topology. |
-| Exactness | Every candidate points to a direct `Solution` and an exact first-result kind. |
+| Exactness | Every candidate names the admitted kind of a potential result, the local identification question, its direct owner and identity-or-obtaining basis template, the kind of governed object relative to which the result phrase would be true, and one category-correct relative-basis template. |
 | No fictitious context | Public guidance has no reader-project identity and cannot contain `@Context` instances. |
 | Bounded search | Several cards can remain plausible, so comparison needs stop and return conditions rather than one perfect first guess. |
 | Light ordinary use | Card comparison should normally remain in conversation. |
-| Durable reliance | A named transfer, replay, audit, or automation use can rely on addressable comparison history. |
+| Durable reliance | A named later review, replay, audit, or automation use can rely on addressable comparison history. |
 | Didactic continuity | Every card needs a readable walkthrough, not only a list of PatternIDs. |
 | One source of guidance | README carries the public card set; Preface, ToC, retrieval, and pattern bodies answer different questions. |
 
 ### E.11:4 - Solution
 
-Publish fifteen semantic practical-use cards. Each card starts from a recognizable situation and question, states a readable first result, points to direct candidate-use templates, and links to an expansion with boundaries and one walkthrough.
+An FPF author or maintainer publishes or refreshes fifteen semantic practical-use cards. Each card starts from a recognizable situation and question, states a readable first result or exact public blocker, points to direct candidate-use templates, and links to an expansion with boundaries and one walkthrough.
+
+A practitioner, manager, or assisting agent uses the already published set: compare the cards that fit the working situation, inspect their different first results or blockers, and open the direct pattern from the card that best fits the work. Ordinary card use does not make that reader a framework publisher.
 
 The keys identify situations; they do not order them. A user may compare any finite set that remains plausible.
 
@@ -77,9 +81,9 @@ Exactly one walkthrough ref is present. Use `demonstrativeSliceRef` when the exa
 
 #### E.11:4.1.1 - Cold-reader recognition and grounded public value
 
-Test every public card and expansion against a first-time engineer, engineer-manager, or assisting agent who has not studied FPF. The heading and first sentence name a recognizable working situation before PatternIDs, FPF kind names, or internal quality, projection, and conformance vocabulary. They then name a first useful result that the reader can imagine producing or requesting in the project. The expansion and direct pattern restore the exact result kind, relation, boundary, and stronger-use conditions; plain recognition is not licence to leave those values vague.
+Test every public card and expansion against a first-time engineer, engineer-manager, or assisting agent who has not studied FPF. The heading and first sentence name a recognizable working situation before PatternIDs, FPF kind names, or internal quality, projection, and conformance vocabulary. They then name a first useful result or exact blocker that the reader can imagine identifying, grounding, or requesting in the project—for example, identifying a current plan, grounding a claim about a pre-existing pump, or requesting an evaluation—without implying that the public template performs any of those acts. The expansion names the admitted kind of the potential result, the local identification question, direct owner and identity-or-obtaining basis, the kind of method, plan, dated Work, transformation, evaluation, decision, or receiving-use object relative to which the phrase would be true, the category-correct relative basis, the minimum usable result, and any actually current conditional receiver. It introduces no project instance.
 
-A public benefit claim is grounded only when the card makes recoverable a concrete project need, a first useful result, one specific direct-pattern distinction that changes the next project action, and the direct pattern whose `Solution` governs obtaining that result. Otherwise the claim is marketing copy, even if it sounds plausible. These values may remain readable prose; this rule does not require the reader to fill a card or project record before opening the direct pattern.
+A public benefit claim is grounded only when the card makes recoverable a concrete project need, one admitted kind of potential first result or exact blocker, the local identification and category-correct basis questions, one specific direct-pattern distinction that changes the next project action, and the direct pattern whose `Solution` governs the result kind. Otherwise the claim is marketing copy, even if it sounds plausible. These values may remain readable prose; this rule does not require the reader to fill a card or project record before opening the direct pattern.
 
 Keep the public set representative of FPF's practical range. Wording and description repair remain visible, but they do not dominate architecture, problem shaping, work, comparison, evidence, timing, causal use, mathematical modeling, quality, improvement, and framework authoring.
 
@@ -97,14 +101,19 @@ PublicPatternUseObstacleDescription@FPFReadme <: U.Episteme:
   obstacleEffectOnUseRef: U.Episteme
 
 PublicPatternUseResultTemplate@FPFReadme <: U.Episteme:
-  directResultKindRef: U.Kind
-  directResultRelationSignatureRef?: RelationSignature
-  resultDescriptionRef: U.Episteme
+  readableResultDescriptionRef: U.Episteme
+  exactResultKindRef: U.Kind
+  resultIdentificationQuestionRef: U.Episteme
+  resultDirectOwnerPatternRef: U.MethodDescription
+  resultIdentityOrObtainingBasisTemplateRef: U.Episteme
+  resultRelativeGovernedObjectKindRef: U.Kind
+  resultRelativeDirectBasisKind: directRelationOccurrence | operationApplicationBinding | localRelationBearingClaim
+  resultRelativeDirectBasisTemplateRef: U.Episteme
   minimumUsableResultDescriptionRef: U.Episteme
-  receivingPatternRef: U.MethodDescription
+  conditionalReceivingPatternRef?: U.MethodDescription
 
 PublicPatternUseBoundaryConditionTemplate@FPFReadme <: U.Episteme:
-  boundaryConditionKind: recognizableCondition | stop | return | wrongTurnRecovery | strongerNeighbor
+  boundaryConditionKind: recognizableCondition | stop | return | wrongTurnRecovery | strongerNeighbor | missingGovernor | missingInformation
   conditionDescriptionRef: U.Episteme
   governingPatternRef: U.MethodDescription
   conditionalReceivingPatternRef?: U.MethodDescription
@@ -113,13 +122,19 @@ PublicPatternUseBoundaryConditionTemplate@FPFReadme <: U.Episteme:
 PublicResultCoarseningRow@FPFReadme:
   readableResultPhraseRef: U.Episteme
   exactResultKindRef: U.Kind
-  exactResultRelationSignatureRef?: RelationSignature
-  governingPatternRef: U.MethodDescription
+  resultIdentificationQuestionRef: U.Episteme
+  resultDirectOwnerPatternRef: U.MethodDescription
+  resultIdentityOrObtainingBasisTemplateRef: U.Episteme
+  resultRelativeGovernedObjectKindRef: U.Kind
+  resultRelativeDirectBasisKind: directRelationOccurrence | operationApplicationBinding | localRelationBearingClaim
+  resultRelativeDirectBasisTemplateRef: U.Episteme
 ```
 
-A result relation signature is present exactly when its result kind admits a relation. `return`, `wrongTurnRecovery`, and `strongerNeighbor` boundaries name a receiving pattern and position description. `recognizableCondition` and `stop` leave those positions absent.
+A public template asserts no project result and contains no project value. It names the admitted kind of a potential later result, the local question by which a practitioner would identify such an entity or occurrence, its direct owner, and what would make that candidate entity exist or that relation occurrence obtain. It separately names the kind of exact method, plan, dated Work, transformation, evaluation, decision, or separately governed receiving-use object relative to which a real PUA closure would call it a result.
 
-The optional obstacle names a recognizable obstacle only when one matters. Practical use may begin from an object to inspect, a result to evaluate, or an existing method to improve without first inventing a problem.
+The result-relative basis template has exactly one category. A direct-relation template asks for predicate, participants, applicability, obtaining, occurrence identity, and direct governor. An A.6.1 template asks for operation, application, argument or result binding, and direct governor. An A.6.RCD local-claim template asks for one C.2.1 claim episteme with polarity, substrate or constructor, base predicates and their direct owners, participants, case facts, and any support or warrant required by the later receiving use. The claim does not obtain, and A.6.RCD does not replace the base owners. Result identity or currentness and result-relative basis are different public questions; they coincide only when the potential result is the same direct relation occurrence used to close the later application.
+
+`conditionalReceivingPatternRef` is present only when the public branch itself promises a continuation or names a downstream reliance. A result template without such a continuation leaves it absent. A public `stop`, `missingGovernor`, or `missingInformation` boundary has no receiver. `return`, `wrongTurnRecovery`, and `strongerNeighbor` name a receiver only when that route is part of the branch. The optional obstacle names a recognizable obstacle only when one matters. Practical use may begin from an object to inspect, a result to evaluate, or an existing method to improve without first inventing a problem.
 
 #### E.11:4.3 - Candidate-use templates and basis completeness
 
@@ -129,18 +144,21 @@ PublicCandidatePatternUseTemplate@FPFReadme <: U.Episteme:
   recognizableConditionRef: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   directPatternRef: U.MethodDescription
   directSolutionSectionRef: PatternSolutionSectionRef
-  expectedResultTemplateRef: PublicPatternUseResultTemplate@FPFReadme
+  expectedResultTemplateRef?: PublicPatternUseResultTemplate@FPFReadme
+  resultPromiseBlockerRef?: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   candidateBasisCompletenessConditionRefs[1..*]: CandidatePatternUseBasisCompletenessCondition@FPFReadme
 
 CandidatePatternUseBasisCompletenessCondition@FPFReadme <: U.Episteme:
-  candidateBasisPosition: boundedContext | entityOfConcern | entityOfConcernKind | practicalQuestion | optionalProblemCard | candidateSpecificBasis
+  candidateBasisPosition: entityOfConcernKind | practicalQuestion | optionalProblemCard | resultIdentificationQuestion | resultRelativeGovernedObjectKind | candidateSpecificBasis
   admittedBasisValueKindRef: U.Kind
   completenessConditionDescriptionRef: U.Episteme
 ```
 
 `PatternSolutionSectionRef` is an edition-pinned reference to the cited pattern's `Solution`. A broad result family or pattern title is insufficient.
 
-The completeness condition inherits C.2.1 constitution. Its EntityOfConcern is the reusable candidate-basis position declared by the template; its ClaimGraph states the admitted filler kind and positive completeness condition; its ReferenceScheme explains how current project fillers satisfy that position. It contains no project value and orders nobody to fill a form.
+Exactly one of `expectedResultTemplateRef` and `resultPromiseBlockerRef` is present. The result-promise branch is admissible only when the exact potential-result kind, its identification question, direct owner, identity-or-obtaining basis template, result-relative governed-object kind, category-correct relative-basis template, minimum usable result, and any actually current conditional receiver are all stateable. The blocker branch uses `missingGovernor` or `missingInformation`, states the exact absent governor or information, and carries no fulfilled result template. Optional omissions cannot masquerade as a weak passing promise.
+
+The completeness condition inherits C.2.1 constitution. Its EntityOfConcern is the reusable candidate-basis position declared by the template; its ClaimGraph states the admitted filler kind and positive completeness condition; its ReferenceScheme explains how later current project fillers satisfy that position. It contains no project value and orders nobody to fill a form.
 
 #### E.11:4.4 - Ordinary walkthrough
 
@@ -148,24 +166,26 @@ The completeness condition inherits C.2.1 constitution. Its EntityOfConcern is t
 PublicOrdinaryWalkthrough@FPFReadme <: U.Episteme:
   guidanceRef: PracticalUseGuidance@FPFReadme
   situationDescriptionRef: U.Episteme
-  firstResultTemplateRef: PublicPatternUseResultTemplate@FPFReadme
+  firstResultTemplateRef?: PublicPatternUseResultTemplate@FPFReadme
+  resultPromiseBlockerRef?: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   walkthroughRowRefs[2..*]: PublicOrdinaryWalkthroughRow@FPFReadme
   fullPatternTransitionBoundaryRef: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   cgusNonAdmissionRationaleRef: U.Episteme
 
 PublicOrdinaryWalkthroughRow@FPFReadme <: U.Episteme:
   actionOrProposedUseDescriptionRef: U.Episteme
-  expectedResultTemplateRef: PublicPatternUseResultTemplate@FPFReadme
+  expectedResultTemplateRef?: PublicPatternUseResultTemplate@FPFReadme
+  resultPromiseBlockerRef?: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   directPatternRef: U.MethodDescription
   directSolutionSectionRef: PatternSolutionSectionRef
   continuationConditionRef: PublicPatternUseBoundaryConditionTemplate@FPFReadme
 ```
 
-An ordinary walkthrough is still an explanation, not a project method, work order, or recommendation. It may contain a local pattern mantra: a short repeatable formulation that keeps that pattern's Solution in attention. It may be presented as a CGUS-demonstrative mantra only when A.22.CGUS admits the represented conditional continuations as a `DemonstrativeUnfoldingSlice@Context`.
+The walkthrough and each row carry exactly one result template or exact public blocker. An ordinary walkthrough is still an explanation, not a project method, work order, or recommendation. It may contain a local pattern mantra: a short repeatable formulation that keeps that pattern's Solution in attention. It may be presented as a CGUS-demonstrative mantra only when A.22.CGUS admits the represented conditional continuations as a `DemonstrativeUnfoldingSlice@Context`.
 
 #### E.11:4.4.1 - Practical-use carry-through check
 
-Check every published card over its public values. This check evaluates whether the card can lead a reader to the direct pattern and an exact result; it does not create a project instance or an applicability verdict.
+Check every published card over its public values. This check asks whether the card can lead a reader to one direct pattern and either a truthful context-free result promise or an exact public missing-governor or missing-information blocker. It creates no project instance, applicability verdict, result entity, relation occurrence, or receiving use.
 
 ```text
 PracticalUseCarryThroughCheck:
@@ -188,7 +208,7 @@ PracticalUseCarryThroughCheck:
 
 Exactly one walkthrough reference is present. A demonstrative slice passes A.22.CGUS admission and identifies the included positions, C.33 structure-loss notes, alternatives or returns, direct patterns, and transition to the full pattern. An ordinary walkthrough carries its CGUS non-admission rationale. A local mantra inside it remains a compact reminder of the direct pattern's Solution; it does not acquire the Tech kind `DemonstrativeUnfoldingSlice@Context` merely because it is memorable or repeated.
 
-Each candidate-use template passes only when it names one direct pattern, that pattern's Solution, the exact result kind, the relation signature when the kind admits a relation, every candidate-basis completeness condition, and the pattern that can receive the result. Reject a public project instance, a broad family in place of the result, or a PatternID list without selection conditions. The principal blocked overread states the most consequential false project claim that a reader could otherwise infer from the card.
+Each candidate-use template passes one of two disjoint branches. A result-promise branch names one direct pattern and Solution, the admitted kind of a potential result, the local identification question, direct owner and identity-or-obtaining basis, full governed relative-object kind, category-correct relative-basis template, minimum usable result, every candidate-basis completeness condition, and a conditional receiver only when one is actually current. A blocker branch names the exact missing governor or missing information and carries no expected-result template. Reject omitted values presented as a weak promise, a public project instance, a broad family in place of the result kind, a generic result relation, or a PatternID list without selection conditions. The principal blocked overread states the most consequential false project claim that a reader could otherwise infer from the card.
 
 #### E.11:4.5 - Fifteen stable practical-use keys
 
@@ -215,13 +235,16 @@ README owns the current public cards and their expansions. Preface explains why 
 
 #### E.11:4.6 - Bounded comparison
 
-When more than one card remains plausible, compare four things: recognizable-situation fit, difference among first results, direct pattern, and stop or return condition. Keep the comparison in conversation for ordinary bounded use. Open the most promising direct pattern before constructing a project candidate.
+When more than one card remains plausible, compare four things: recognizable-situation fit, difference among first results or exact public blockers, direct pattern, and stop or return condition. Keep the comparison in conversation for ordinary bounded use. Open the most promising direct pattern before constructing a project candidate.
 
-The comparison rationale has one public guidance subject and exists before a project candidate is constructed:
+The comparison rationale has one public guidance subject and exists before a project candidate is constructed. When materialized, it follows full C.2.1 identity:
 
 ```text
 PracticalUseCardComparisonRationale@Context <: U.Episteme:
-  subjectGuidanceRef: PracticalUseGuidance@FPFReadme
+  entityOfConcernRef: U.EntityRef, referencing one PracticalUseGuidance@FPFReadme
+  claimGraph: U.ClaimGraph by value
+  effectiveReferenceSchemeRef: U.ReferenceSchemeRef
+  editionId
   recognitionReasonDescriptionRef: U.Episteme
   firstResultDifferenceDescriptionRef: U.Episteme
   comparisonRationaleDescriptionRef: U.Episteme
@@ -233,34 +256,40 @@ Materialize comparison history only when a named receiving use relies on it:
 
 ```text
 PracticalUseCardShortlist@Context <: U.Episteme:
+  entityOfConcernRef: U.EntityRef, referencing the exact PracticalUseQuestion@Context being compared
+  claimGraph: U.ClaimGraph by value
+  effectiveReferenceSchemeRef: U.ReferenceSchemeRef
+  editionId
+  claimScopeRef?: U.EntityRef, referencing one U.ClaimScope
+  modelUseStructureRef?: U.EntityRef, referencing one BoundedModelUseStructure
   namedRelianceConditionRef: U.Episteme
   receivingUseDescriptionRef: U.Episteme
   receivingUseGoverningPatternRef: U.MethodDescription
-  boundedContextRef: U.BoundedContext
-  entityOfConcernRef: U.Entity
-  entityOfConcernKindRef: U.Kind
-  practicalUseQuestionRef: PracticalUseQuestion@Context
   comparisonRefs[1..*]: PracticalUseCardComparison@Context
   selectedStartingGuidanceRef?: PracticalUseGuidance@FPFReadme
   inspectionStopBoundaryRef: PatternUseBoundaryCondition@Context
   returnBoundaryRef: PatternUseBoundaryCondition@Context
 
 PracticalUseCardComparison@Context <: U.Episteme:
+  entityOfConcernRef: U.EntityRef, referencing one PracticalUseGuidance@FPFReadme
+  claimGraph: U.ClaimGraph by value
+  effectiveReferenceSchemeRef: U.ReferenceSchemeRef
+  editionId
   shortlistRef: PracticalUseCardShortlist@Context
-  guidanceRef: PracticalUseGuidance@FPFReadme
   recognizableSituationFitRationaleRef: PracticalUseCardComparisonRationale@Context
-  firstResultTemplateRefs[1..*]: PublicPatternUseResultTemplate@FPFReadme
+  firstResultTemplateRefs[]: PublicPatternUseResultTemplate@FPFReadme
+  resultPromiseBlockerRefs[]: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   firstResultDifferenceRationaleRef: PracticalUseCardComparisonRationale@Context
   inspectionDisposition: keep | defer | discard | startHere
 ```
 
-Several plausible cards alone do not make this record current. The named reliance may be transfer, replay, audit, automation, or another use that needs addressable comparison history. Retain only the rows that use needs.
+Guidance, practical question, compared result templates or blockers, first-result differences, named reliance, stop, and return remain ClaimGraph content or separately governed references; none replaces the C.2.1 identity. Each comparison cites at least one result template or exact blocker from the guidance it evaluates. `claimScopeRef` or `modelUseStructureRef` is present only when its exact direct relation changes the named reliance. Several plausible cards alone do not make this record current. The named reliance may be a later review, replay, audit, automation, or another use that needs addressable comparison history. Retain only the rows that use needs.
 
 #### E.11:4.7 - Replay and currentness
 
-Replay one public guidance claim from the current card and expansion, the edition-pinned direct `Solution`, the exact result kind and conditional relation signature, the readable coarsening row, the applicable boundary, and the selected walkthrough. The claim remains current only while the direct `Solution` still admits that result and the public situation and question still recognize the same use.
+Replay one public guidance claim from the current card and expansion, the edition-pinned direct `Solution`, and its exact branch. For a result promise, recover the potential-result kind, identification question, direct owner and identity-or-obtaining basis, governed relative-object kind, category-correct relative-basis template, minimum usable result, readable coarsening row, boundary, any conditional receiver, and selected walkthrough. For a blocker, recover the exact missing governor or information and confirm that no fulfilled result template was published. The guidance remains current only while the card's recognizable situation and practical question still point to that same use.
 
-Recheck the smallest affected card slice when the direct `Solution`, result kind, relation signature, recognition condition, first-result difference, or boundary changes, or when use evidence shows a recurrent wrong turn. `G.11` governs edition, telemetry, currentness-window, and decay orchestration; E.11 supplies the card-specific values and change conditions that orchestration inspects.
+Recheck the smallest affected card slice when its recognizable situation, practical question, or resulting recognition condition changes; when the direct `Solution`, potential-result kind, identification question, direct owner, identity-or-obtaining basis, governed relative-object kind, relative-basis category, first-result difference, promise blocker, receiver, or boundary changes; or when use evidence shows a recurrent wrong turn. `G.11` governs edition, telemetry, currentness-window, and decay orchestration; E.11 supplies the card-specific values and change conditions that orchestration inspects.
 
 ### E.11:5 - Archetypal Grounding
 
@@ -270,7 +299,7 @@ A team says, "Our diagram no longer explains the system." `ARCHITECTURE` and `DE
 
 The team compares the first-result difference, opens `C.30` and `E.17.0`, and discovers that the selected structure is unsettled. It starts with `ARCHITECTURE`. No shortlist record is needed because the comparison is local and reversible.
 
-#### E.11:5.2 - Transfer needs comparison history
+#### E.11:5.2 - A later safety review needs comparison history
 
 The receiving safety review relies on an addressable rationale for why two teams considered `TIME`, `COSTLY-ACTION`, `CAUSAL-USE`, and `SYSTEM-IN-CONTEXT` before a hazardous test, because it will replay the selection after new measurements arrive. The fourth card remains plausible while the test-object boundary, participation, or functioning relation is unsettled.
 
@@ -278,13 +307,13 @@ That named reliance admits a `PracticalUseCardShortlist@Context` with four compa
 
 #### E.11:5.3 - A card leads to a physical result without promising it
 
-`WORKING-DOCUMENTS` can lead to a usable machining work instruction. The card's direct result is a method description or WorkPlan, not the machined component. The public expansion names the exact first result and points to A.15 for later work.
+`WORKING-DOCUMENTS` can lead to a usable machining work instruction. Its public template first names the admitted `U.MethodDescription` or `U.WorkPlan` kind and asks how a later project use would identify the episteme under A.3.2 or A.15.2. It then asks separately which exact relation occurrence, A.6.1 binding, or category-correct local claim would make that episteme the result relative to the later document-use or machining-planning object. Any conditional receiving pattern appears only when that continuation is part of the branch. The card does not promise a machined component.
 
-The reader can therefore imagine useful progress without inferring that publication or planning performed the machining.
+The reader can therefore imagine useful progress without inferring that publication or planning performed the machining. When actual machining or other dated work later becomes current, use A.15.1 to identify the exact performed Work occurrence; use A.15 as well only when role–method–work alignment is itself current. The instruction or plan is neither that dated `U.Work` nor proof that it occurred.
 
 #### E.11:5.4 - Repair the smallest card slice after a direct result changes
 
-Suppose a new `A.6.3.RT` edition makes `RepresentationSchemeTransitionRelation@Context` the exact first result for one `DESCRIPTION-USE` condition. Repair that candidate-use template, its exact result kind and conditional relation signature, its readable coarsening row, and any boundary whose condition changed. Recheck the linked walkthrough against the repaired result.
+Suppose a new `A.6.3.RT` edition makes one exact `RepresentationSchemeTransitionRelation@Context` kind the potential first-result kind for one `DESCRIPTION-USE` condition. Repair that candidate-use template so it names the relation kind, its source and target participant kinds, A.6.3.RT predicate and obtaining test, occurrence-identification question, the governed-object kind relative to which a later PUA use would call it a result, its readable coarsening row, and any boundary whose condition changed. Recheck the linked walkthrough against that context-free basis template; only PUA later names a project occurrence.
 
 The public card heading and question remain unchanged when readers still recognize the same situation. Preface and ToC remain unchanged when framework rationale and retrieval location did not move. The `A.6.3.RT` pattern body remains the authority for the relation; E.11 repairs only the public guidance that points to it.
 
@@ -307,23 +336,23 @@ The visible navigation measure improved while the intended value worsened: reade
 | ID | Check | Passing condition |
 | --- | --- | --- |
 | `E11-1` | Situation first | Card wording begins with a recognizable working situation before PatternIDs or internal topology. |
-| `E11-2` | Exact first result | Every candidate template names a direct Solution, result kind, conditional signature, and receiving pattern. |
+| `E11-2` | Exact first result | Every promise branch names the admitted potential-result kind, identification question, direct owner and identity-or-obtaining basis, full governed relative-object kind, category-correct relative-basis template, and only an actually current conditional receiver. Every blocker branch names exact missing governance or information and carries no result template. |
 | `E11-3` | No fictitious context | Public card, expansion, templates, and walkthrough contain no reader-project `@Context` values. |
 | `E11-4` | Complete public explanation | The carry-through check names exactly one admitted demonstrative slice or justified ordinary walkthrough, its selection rationale, and the principal blocked overread. |
-| `E11-5` | Template completeness | Every candidate template names one direct Solution, exact result kind, kind-conditioned relation signature, complete basis positions, and receiving pattern. |
+| `E11-5` | Template completeness | Exactly one result promise or public blocker is present. A promise carries the direct Solution and every required result-template position; a blocker carries `missingGovernor` or `missingInformation`. Optional omissions, project occurrences, generic result relations, and fabricated receivers do not pass. |
 | `E11-6` | Bounded comparison | Comparison exposes first-result differences and a stop or return condition. |
 | `E11-7` | Conditional shortlist | Every materialized shortlist names the receiving reliance that uses its history. |
-| `E11-8` | Publication responsibility | README, Preface, ToC, retrieval, and full patterns do not maintain duplicate card bodies. |
-| `E11-9` | Cold-reader recognition | A reader unfamiliar with FPF encounters the working situation and imaginable first result before internal vocabulary, while the expansion preserves the exact kind and boundary. |
-| `E11-10` | Grounded public value | Every benefit claim exposes the concrete need, first useful result, specific direct-pattern distinction that changes the next project action, and direct pattern; the public set does not present FPF mainly as wording or description policing. |
+| `E11-8` | Publication responsibility and reader separation | An FPF author or maintainer publishes or refreshes the README cards; a practitioner, manager, or assisting agent compares the published cards and opens a direct pattern. Preface, ToC, retrieval, and full patterns do not maintain duplicate card bodies. |
+| `E11-9` | Cold-reader recognition | A reader unfamiliar with FPF encounters the working situation and imaginable first result or blocker before internal vocabulary, while the expansion preserves the potential-result kind, identification question, direct owner, governed relative-object kind, category-correct basis, minimum usable result, and boundary. |
+| `E11-10` | Grounded public value | Every benefit claim exposes the concrete need, potential first-result kind or exact blocker, local identification and basis questions, specific direct-pattern distinction that changes the next project action, and direct pattern; the public set does not present FPF mainly as wording or description policing. |
 
 ### E.11:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misuse | Why it fails | Repair |
 | --- | --- | --- |
-| Pattern list as guidance | IDs do not show recognition conditions or result differences. | Publish situation, first result, direct Solution, and boundaries. |
+| Pattern list as guidance | IDs do not show recognition conditions, potential-result differences, local identification questions, category-correct basis templates, or exact blockers. | Publish situation, result promise or blocker, direct Solution, and boundaries. |
 | Internal vocabulary as the front door | The card starts with PatternIDs, FPF kinds, or quality and conformance terms before the reader can recognize the work. | Put the ordinary working situation and first useful result first, then restore precision in the expansion and direct pattern. |
-| Ungrounded public value | The card promises broad help but shows no concrete first result or direct-pattern distinction that changes the next project action. | Name the project need, first useful result, the specific direct-pattern distinction that changes the next project action, and the direct pattern whose `Solution` governs obtaining that result. |
+| Ungrounded public value | The card promises broad help but shows no concrete potential-result kind or blocker, identification question, basis template, or direct-pattern distinction that changes the next project action. | Name the need, result kind or exact blocker, local identification and basis questions, the distinction that changes the next action, and the direct pattern. |
 | Card as a form | Readers fabricate project facts before inspecting the pattern. | Keep the card context-free and defer local records to PUA under reliance. |
 | Fixed three-card shortlist | Interface convenience becomes ontology. | Use any finite inspected set bounded by the current question and stop condition. |
 | Walkthrough as workflow | Presentation order becomes a fixed work sequence. | State continuation conditions and use CGUS only when its structure is actually admitted. |
@@ -331,15 +360,15 @@ The visible navigation measure improved while the intended value worsened: reade
 
 ### E.11:9 - Consequences
 
-**Benefits.** FPF gains human-readable public practical-use guidance without losing exact result kinds or direct pattern authority. Readers can explore and recover from wrong turns. Ordinary use stays light, while transfer and replay can preserve comparisons.
+**Benefits.** FPF gains human-readable public practical-use guidance without losing the potential-result kind, direct owner, two distinct basis questions, or subject-pattern authority. Readers can explore and recover from wrong turns. Ordinary use stays light, while a named later review or replay can preserve comparisons.
 
-**Costs.** Public guidance remains trustworthy only while the fifteen cards and their expansions stay synchronized with the direct patterns. Every readable result phrase needs an exact kind restoration. Reliance-bearing comparisons add explicit records and return conditions.
+**Costs.** Public guidance remains trustworthy only while the fifteen cards and their expansions stay synchronized with the direct patterns. Every readable result phrase needs a context-free potential-result kind, identification question, direct owner and identity-or-obtaining basis, governed relative-object kind, category-correct relative basis, and boundary behind it. Honest blocker branches add exact missing-governor or missing-information distinctions. When a named later review, replay, audit, or automation must rely on a comparison, the team must materialize addressable comparison records and maintain their stop and return conditions.
 
 ### E.11:10 - Rationale
 
 Discovery is a bounded decision under limited attention, not a one-time lookup. A semantic card makes the practical question and first-result difference visible before the reader commits to a pattern. A recoverable return is more useful than pretending the first cue is always right.
 
-Public guidance remains trustworthy only when it is weaker than the direct pattern. It helps a reader decide what to inspect; it does not decide applicability, authorize work, or create the promised result. This division also keeps public explanation teachable: simple phrases can remain visible because expansions restore exact kinds and relations.
+Public guidance remains trustworthy only when it is weaker than the direct pattern. It helps a reader decide what to inspect; it does not decide applicability, authorize Work, identify a project result, or make a relation obtain. This division also keeps public explanation teachable: simple phrases can remain visible because expansions restore the admitted potential-result kind, local identification question, direct owner, governed relative-object kind, category-correct basis template, minimum usable result, and exact blocker when the promise cannot be made.
 
 ### E.11:11 - SoTA-Echoing
 
@@ -350,7 +379,7 @@ Public guidance remains trustworthy only when it is weaker than the direct patte
 | Zhu, Reinecke, and Mitra, *Language Scent: Exploring Cross-Language Information Navigation*, arXiv:2604.03604 (2026) | Keep contextual cues near the governed value while preserving the exact target behind a reader-facing expression. | Adapt to public cue and expansion design. The small study does not establish universal label equivalence or decide FPF ontology. |
 | Current FPF E.8, E.17, F.17, F.18, and E.11.PUA | Separate public recognition, publication, naming, and project pattern use. | Adopt as the governing patterns for their stated relations. E.11 defines only the public guidance and reliance-conditioned comparison layer. |
 
-The practitioner implication is concrete: inspect a small plausible set, compare the results each would produce, and keep a durable history only when someone will use it later.
+The practitioner implication is concrete: inspect a small plausible set, compare the potential-result kind or exact blocker each direct pattern can truthfully expose and the local identification and basis questions each requires, then keep durable history only when someone will use it later.
 
 Information-foraging is the lineage anchor, not by itself the current competitive claim. Familiar-title lookup and popularity ranking are the common comparator: they are cheap cues, but E.11 rejects either as the sole selection basis because neither exposes first-result differences or a recoverable return.
 

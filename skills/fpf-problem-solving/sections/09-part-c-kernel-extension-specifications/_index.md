@@ -63,7 +63,7 @@
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](53-c-30-asv---architecture-structural-view-adequacy.md) (716 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](54-c-30-lca---control-structure-view-adequacy.md) (269 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](55-c-30-ilc---cross-scope-architecture-residual-triage.md) (252 lines) — Type: Architectural subpattern under C.30
-- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](56-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (361 lines) — Type: Architectural pattern
+- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](56-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (403 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](57-c-31---modularity-and-reusable-structure-characteristics.md) (367 lines) — Type: Characterization pattern
 - [C.31.RSA - Reusable Structure Accounting](58-c-31-rsa---reusable-structure-accounting.md) (381 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](59-c-31-asap---architecture-scale-amenability-preference.md) (300 lines) — Type: Characterization pattern
@@ -72,7 +72,7 @@
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](62-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (201 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](63-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (265 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](64-c-32-ace---architecture-characteristic-eval-programs.md) (201 lines) — Type: Architecture eval-support subpattern under C.32
-- [C.32.CONWAY - Transformer and Transformed Architecture Correspondence](65-c-32-conway---transformer-and-transformed-architecture-corre.md) (252 lines) — Type: Architectural subpattern under C.32
+- [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](65-c-32-conway---architecture-influence-and-transformed-archite.md) (394 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Multilevel Architecture Residual Optimization](66-c-32-mlao---multilevel-architecture-residual-optimization.md) (269 lines) — Type: Architectural subpattern under C.32
 - [C.32.FAIL - Architecture Failure Recognition and Repair](67-c-32-fail---architecture-failure-recognition-and-repair.md) (236 lines) — Type: Architectural subpattern under C.32
 - [C.32.PAD - Project Architecture Decision After Candidate Synthesis](68-c-32-pad---project-architecture-decision-after-candidate-syn.md) (302 lines) — Type: Architecture decision pattern under C.32

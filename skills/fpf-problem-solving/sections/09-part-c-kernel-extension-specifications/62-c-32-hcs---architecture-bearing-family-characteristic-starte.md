@@ -1,7 +1,7 @@
 ## C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs
 
 > **Type:** Architectural characterization subpattern under C.32
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 
 ### C.32.HCS:1 - Problem frame

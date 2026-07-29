@@ -71,7 +71,7 @@ The transformed entity and its kind are both present. A flow position points to 
 
 Paths and demonstrations remain different. `pathIds[]` and `pathSliceIds[]` identify E.18 flow structure. `demonstrativeSliceRefs[]` identify post-admission A.22.CGUS epistemes whose EntityOfConcern is the already-admitted wider structure. A pre-admission flow card, worked example, or explanation remains a separate `ProvisionalUnfoldingDemonstrationDescription@Context` and does not fill `demonstrativeSliceRefs[]`. An admitted demonstrative slice can be linear while the current flow structure branches, joins, cycles, or keeps alternatives live.
 
-A pattern-selection flow, selected-pattern-application flow, and downstream-subject-work flow keep different EntitiesOfConcern, changes, work occurrences, results, direct governing patterns, constraints, and returns. One flow's result may fill an input, tool, context, or constraint position in another flow without changing kind. E.18 relates those positions without turning the flows into one workflow. When a `DemonstrativeUnfoldingSlice@Context` asserts this cross-flow provenance, its `transformationFlowStructureRef`, `pathSliceId`, and `designRunTag` are all present; otherwise all three are absent. Those fields locate the demonstration in one flow valuation. They do not merge the demonstrated structures, rows, work occurrences, or result claims. A nested pattern-selection slice is present only when selection provenance is current; it returns a candidate, fit finding, or recommendation to the enclosing demonstrated-pattern-use row rather than borrowing that row's application result.
+A pattern-selection flow, selected-pattern-application flow, and downstream-subject-work flow keep different EntitiesOfConcern, changes, Work occurrences, results, direct governing patterns, constraints, and returns. If a demonstration stays inside one exact TFS, the complete A.22.CGUS top-level one-TFS locator triple identifies that TFS, its current path slice, and its local `DesignRunTag`. If the case instead uses independently identified TFS or nested-network members plus exact obtaining cross-member relation occurrences, E.18.NET governs the network and the mutually exclusive `networkDemonstrationLocator` applies; the top-level one-TFS triple is absent. A result, tool, context, constraint, shared label, or displayed arrow neither merges those members nor supplies their relation. A nested pattern-selection slice is present only while its selection provenance is current for the declared demonstration use; stale or unresolved provenance omits that nested slice or returns the currentness question to G.11. The enclosing slice, a shared label, and separation of result kinds do not establish currentness. When present, the nested slice returns its own candidate, fit finding, or recommendation to the enclosing demonstrated-pattern-use row rather than borrowing that row's application result.
 
 
 Preserved transformation structure is carried by exact `U.Structure` refs. Captured, expected-but-uncaptured, lost, and hidden structure for a declared use is carried by C.33 `StructuralInformationAdequacyNote@Context`. E.18.3 does not mint parallel free-text loss fields. Stop and governing-pattern return are different boundary relations. Source currentness and decay remain with G.11; E.18 slice-local flow refresh remains with E.18.
@@ -84,7 +84,7 @@ Preserved transformation structure is carried by exact `U.Structure` refs. Captu
 2. Name the transformed entity and kind, then the typed transformation positions that matter to the current use.
 3. Reference the exact transfer, dependency, crossing, or guard relations. Add a subject-use classifier only when the same relation supports a separately governed evidence, assurance, architecture, narrative, or publication use.
 4. Connect every neighboring governed position through its exact kind, ref, governing pattern, connection kind, rationale, and supporting relation when that connection kind needs one.
-5. Name paths and path slices as transformation-flow structure; name demonstrative slices separately as presentation epistemes. Add the E.18 flow locator triple only when cross-flow demonstration provenance is current.
+5. Name paths and path slices under their exact TFS owners and name demonstrative slices separately as presentation epistemes. After admission, choose exactly one A.22.CGUS locator family: the complete top-level E.18 triple for one-TFS provenance, or the network locator for a selected E.18.NET-conforming network; keep both absent for a generic slice.
 6. Name preserved transformation structures and use C.33 for omitted or hidden structure needed by the declared use.
 7. Add a stop boundary and separate returns to the direct patterns governing stronger claims. If the transformation substrate, exact relation, or typed connection is absent, keep the artifact as a `ProvisionalUnfoldingDemonstrationDescription@Context`, route card, graph description, or broader A.22.CGUS admission question; do not fill `demonstrativeSliceRefs[]`.
 
@@ -105,11 +105,20 @@ TransformationFlowRelationReference@Context <: U.Episteme:
   SubjectUseSlot? = <SubjectUseSlot, TransformationFlowSubjectUseValue, by-value>
   RelationSignatureSlot = <RelationSignatureSlot, U.Signature, U.EntityRef>
   DirectGoverningPatternSlot = <DirectGoverningPatternSlot, U.MethodDescription, U.EntityRef>
+  NetworkEndpointBindingSets[]?: required for each selected network cross-flow row paired with this episteme
+    networkCrossFlowRelationRowRef: E.18.NET NetworkCrossFlowRelationRowRef
+    endpointRows[]:
+      relationParticipantPositionRef: U.EntityRef, referencing one exact participant position in RelationSignatureSlot
+      endpointMemberRef: U.EntityRef, referencing one exact TFS or nested-network member
+      endpointFlowPositionRef: U.EntityRef, referencing one FlowPositionRef or ExposedFlowPositionRef
+      endpointPositionBindingRef: U.EntityRef, referencing the already governed leaf-position binding
 ```
 
 `TransformationFlowStructuralFunctionValue` is `transfer | dependency | crossing | guard`. It states what the referenced relation does inside the flow structure. `TransformationFlowSubjectUseValue` is `evidence | assurance | architecture | narrative | publication`. It states which separately governed subject use the same relation supports. At least one classifier is present; both may be present when both claims are true. Neither classifier changes the exact relation signature, value kind, value ref, or direct governing pattern.
 
 For example, one crossing relation can also support evidence use. It remains one exact relation with `structuralFunction=crossing` and `subjectUse=evidence`; the two classifiers do not create two relations or let E.18.3 own the evidence claim.
+
+For each selected network mapping that pairs an E.18.NET `NetworkCrossFlowRelationRowRef` with this episteme, one `NetworkEndpointBindingSets[]` entry is required. Resolve the locator to exactly one row in its named current record edition, then require that row and this relation-reference episteme to agree on exact occurrence, relation kind, direct governor, signature and participant order, endpoint members, endpoint flow positions, and position bindings. The set adds no relation and makes none obtain; it preserves how the already obtaining occurrence reaches the admitted transformation positions.
 
 #### E.18.3:4.1 - Connections to positions governed elsewhere
 
@@ -135,7 +144,7 @@ This connection relation keeps the neighboring pattern visible without importing
 
 #### E.18.3:4.2 - Provisional flow demonstration and admitted slice
 
-Before a `ConstraintGovernedTransformationFlowUnfoldingStructure@Context` passes admission, a path fragment, flow card, worked example, replay, or first-use explanation remains a `ProvisionalUnfoldingDemonstrationDescription@Context`. Its subject is the transformed entity, current flow question, or proposed continuation set. Candidate positions and relation descriptions may guide discovery, but they are not admitted transformation positions or relation instances.
+Before a `ConstraintGovernedTransformationFlowUnfoldingStructure@Context` passes admission, a path fragment, flow card, worked example, replay, or first-use explanation remains a `ProvisionalUnfoldingDemonstrationDescription@Context`. Its subject is the transformed entity, current flow question, or proposed continuation set. Candidate positions and relation descriptions may guide discovery, but they are not admitted transformation positions or relation-reference epistemes, and they make no world-side relation instance obtain.
 
 After the generic CGUS and this transformation-flow specialization are admitted, a separate `DemonstrativeUnfoldingSlice@Context` may teach or demonstrate one admissible traversal. It names the admitted CGUS as EntityOfConcern and states included typed positions, C.33 notes for relevant omitted structure, loop-compression rule, presentation-ordering rule, alternatives, and return boundary when those affect use. It may cite the provisional description as derivation basis; it does not retype that description or the transformed entity.
 
@@ -143,13 +152,23 @@ Do not infer that demonstrated order is project work order. If work order is cur
 
 A pre-admission flow card can still help slot discovery. Each visible candidate position states the subject-domain object or question it concerns and the exact admission coordinate still unresolved. Once the transformed entity, typed positions, exact crossing or guard relations, valuation, preserved structures, C.33 notes, governing-pattern connections, and boundaries are recoverable, admit the structure first and create the slice second. This preserves the practical aid without circularly using a supposed slice as evidence for its own whole.
 
+#### E.18.3:4.2a - Admit network-aware demonstration mappings
+
+A network-aware `DemonstrativeUnfoldingSlice@Context` is post-admission only. First select and verify one E.18.NET-conforming network; then admit this E.18.3 structure, its `transformationPositionRefs[]`, and every required `TransformationFlowRelationReference@Context`. Then apply A.22.CGUS `networkDemonstrationLocator`; the locator cannot supply missing members, positions, relations, or admission.
+
+For each `selectedNetworkPositionMappingRows[]` entry, resolve the finite member path through exact direct members to its leaf TFS. A `FlowPositionRef` must name that final TFS. An `ExposedFlowPositionRef` must name this slice's selected network and repeat the same complete member path and leaf position; a different network, path, or leaf leaves the mapping out of the slice. Its `admittedIncludedPositionRef` must be the same exact `ConstraintGovernedUnfoldingPosition@Context` already present in this structure's `transformationPositionRefs[]` and the slice's `includedStructurePositionRefs[]`. The position ref locates that admitted position; it does not create a parallel position list.
+
+For each `selectedCrossFlowRelationReferenceRows[]` entry, require its E.18.NET `NetworkCrossFlowRelationRowRef` to name a current record edition whose `entityOfConcernRef` is this slice's selected network, then resolve exactly one row by occurrence and complete ordered endpoint-binding identity. Pair that resolved row with one `TransformationFlowRelationReference@Context` already present in an applicable transfer, dependency, crossing, guard, or subject-use reference field of this admitted E.18.3 structure and with its matching `NetworkEndpointBindingSets[]` entry. Verify occurrence, kind, direct governor, signature, participant order, endpoint members, flow positions, and position bindings by value. If the record describes another network, the locator resolves zero or several rows, any field differs, or the relation reference is not already admitted, keep the mapping out of the slice and return the exact missing or ambiguous network, row, position, relation, or governor.
+
+A network locator consumes only those admitted position and relation-reference epistemes. `transformationFlowValuationRef?`, `pathIds[]`, and `pathSliceIds[]` remain one-TFS fields; they do not qualify the network. Network demonstration valuations, path slices, and `DesignRunTag` values stay inside member-local locator rows bound to one exact leaf position.
+
 #### E.18.3:4.3 - Boundary
 
 This `U.Structure` specialization is not a second transformation ontology, workflow, method, work plan, performed work, mathematical graph, publication, evidence relation, gate decision, architecture decision, or architecture description. It is a transformation-flow structure over typed transformation positions and exact relation references, together with explicit connections and returns to the patterns governing stronger claims.
 
 #### E.18.3:4.4 - Replay and change localization
 
-Replay one use from the reciprocal CGUS specialization refs, transformed entity and kind, typed transformation positions, exact relation signatures and values, structural-function and subject-use classifiers, governed-position connections, path and slice ids, optional valuation, preserved structures, C.33 adequacy notes, and stop and return boundaries. For each continuation, recover the exact relation or guard that admits it and the pattern governing any stronger claim.
+Replay one use from the reciprocal CGUS specialization refs, transformed entity and kind, typed transformation positions, exact relation signatures and values, structural-function and subject-use classifiers, governed-position connections, one-TFS path and valuation refs when current, any post-admission network position and relation mappings, preserved structures, C.33 adequacy notes, and stop and return boundaries. For each continuation, recover the exact relation or guard that admits it and the pattern governing any stronger claim.
 
 Localize changes by the relation they affect. A changed relation value reopens its classifiers, dependent guards, and continuations. A changed neighbor value or kind reopens that governed-position connection and its supporting relation. A changed path or valuation reopens only the dependent path slices and demonstrations. Changed omitted structure reopens the C.33 note. Source edition, freshness, telemetry, and decay remain G.11 changes; E.18 owns only slice-local flow refresh. Reconstruct the wider specialization only when the transformed entity, transformation-position set, relation topology, preserved structure, or declared use boundary changes.
 
@@ -158,6 +177,8 @@ Localize changes by the relation they affect. A changed relation value reopens i
 **Minimal first use.** In the candidate-set repair situation, name `CandidateSetComparisonBasis@Review-2026-07` and its kind, then describe candidate `ReferenceEditionChangePosition`, `ComparisonRecalculationPosition`, and the proposed dependency `ComparisonDependsOnAdmittedEdition`. Keep the result as a `ProvisionalUnfoldingDemonstrationDescription@Context` with return descriptions pointing to G.11 and A.19. This already prevents a stale-edition comparison from looking current without asserting typed positions or a relation instance prematurely. Admit the full E.18.3 structure only when the exact dependency and every required admission coordinate are recoverable.
 
 **P2W carry-through.** Accepted problem-side records may name distinctions, constraints, and unresolved relation positions that jointly guide later method selection, planning, work, interpretation, and return. `E.18.3` can relate those positions to candidate governing-pattern positions through exact connection kinds and supporting relations. It does not authorize launch or performed work, and it does not replace E.18.1 carry-through.
+
+**Recursive build-the-builder demonstration.** After a four-level network is selected and verified under E.18.NET and its relevant E.18.3 positions and relation-reference epistemes are admitted, a demonstrative slice follows one finite member path to an already admitted leaf position. The network mapping points to the same included position, and every cross-member row cites an already admitted relation-reference episteme with matching participant positions and bindings. The leaf path slice and tag stay in its member-local row. Before those admissions, the same graph remains a provisional description rather than a network-aware slice.
 
 **Transformation-flow mini-example.** A team has a flow card "admitted reference-publication edition changes -> recalculate comparison -> update candidate set -> decide whether to repair." E.18.3 admits only the transformation-flow slice:
 
@@ -207,7 +228,9 @@ Before those typed positions, exact relation references, C.33 omission note, and
 | ID | Passing condition | Failed-check repair |
 | --- | --- | --- |
 | **CC-E18.3-1 Transformation substrate.** | Bounded transformations, transformed entity and kind, and typed transformation positions are named. | Use `A.22.CGUS` or another direct pattern instead of E.18.3. |
-| **CC-E18.3-2 Flow structure.** | Exact transfer, dependency, crossing, and guard relation refs; path and path-slice refs; demonstrations; and optional valuation are recoverable without union fields. | Lower to a route card, graph description, or ordinary explanation. |
+| **CC-E18.3-2 Flow structure.** | Exact transfer, dependency, crossing, and guard relation refs; one-TFS path and path-slice refs; demonstrations; and optional one-TFS valuation are recoverable without union fields. | Lower to a route card, graph description, or ordinary explanation. |
+| **CC-E18.3-2a Network position admission.** | Every position ref agrees with the selected network, complete member path, and leaf TFS position and maps to the same exact position already present in both `transformationPositionRefs[]` and the demonstrative slice's `includedStructurePositionRefs[]`; no parallel raw-position list is created. | Return the mismatched network, path, or leaf; admit the missing typed position or remove the network mapping and keep the graph provisional. |
+| **CC-E18.3-2b Network relation and local-state admission.** | Every selected network relation row comes from a current record of that same network and is paired with a relation-reference episteme already present in an applicable E.18.3 reference field, with occurrence, kind, governor, signature, participant order, endpoints, and bindings equal. Valuations, path slices, and tags remain leaf-local and are absent as network-global fields. | Return the exact network, record, relation, endpoint, binding, or governor blocker; remove global state and consume only admitted refs in the post-admission slice. |
 | **CC-E18.3-3 Governing-position connections.** | Every neighboring position has exact kind, ref, governing pattern, connection kind, and rationale. Every connection except `comparisonPeer` has an exact supporting relation; for `comparisonPeer`, this connection relation itself states the exact pair and rationale. | Add the typed connection or remove the neighboring-position claim. |
 | **CC-E18.3-4 Preserved and omitted structure.** | Preserved transformation structures are exact refs; relevant loss and hiddenness are C.33 adequacy notes for the declared use. | Add the exact structures and C.33 notes before relying on the slice. |
 | **CC-E18.3-5 Stop and return.** | Stop boundary and returns to exact governing patterns are separate; E.18 slice-local refresh and G.11 currentness remain distinct. | Add exact boundaries or keep the slice as a one-use example. |
@@ -219,6 +242,7 @@ Before those typed positions, exact relation references, C.33 omission note, and
 | --- | --- | --- |
 | **P2W as launch permission** | A carry-through note is used to begin work. | Add method, work-plan, work-entry, or gate record under the direct pattern before work is authorized. |
 | **Flow card as architecture decision** | A P2S flow card is treated as the decision or ADR. | Keep flow structure in E.18.3 or C.32.P2S; use `C.32.PAD` and `C.32.ADR` for decision and ADR projection. |
+| **Network graph as admitted slice** | Raw member paths, edge labels, copied positions, or one global tag are inserted into a demonstrative slice. | Select and verify the E.18.NET-conforming network first, then admit typed E.18.3 positions and exact relation-reference epistemes; then map to those same values through A.22.CGUS, or keep the graph provisional. |
 | **Evidence path as evidence** | A path through evidence-looking boxes is treated as sufficient evidence. | Open `A.10`, `B.3`, or `G.6`; name the evidence relation and admissible use. |
 | **Loop as improvement** | A retry loop in the flow is called quality improvement. | Use `E.23` only when object version, evaluation frame, repair, and re-evaluation are current. |
 
@@ -250,9 +274,9 @@ As of 2026-07-11, OCPQ is the current research comparator for typed multi-object
 
 Specializes: the `A.22.CGUS` use of `ConstraintGovernedUnfoldingStructure@Context` when the substrate is bounded transformation-flow structure with typed transformation positions, exact relation refs, crossings, guards, valuations, preserved structures, C.33 adequacy notes, and governing-position connections.
 
-Builds on: `E.18`, `A.3.4`, `A.22`, and `E.17` for transformation-flow structure and publication discipline.
+Builds on: `E.18` for one-TFS positions and local flow state, `E.18.NET` for selected network members, finite member paths, and exact obtaining cross-member relations, `A.22.CGUS` for mutually exclusive post-admission locator families, `A.3.4`, `A.22`, and `E.17` for transformation, structure, and publication discipline.
 
-Coordinates with: `E.18.1`, `C.32.P2S`, `C.30.TFS-REL`, `E.23`, `C.18`, `C.19`, `G.5`, `A.15`, `A.10`, `B.3`, `A.20`, `A.21`, `A.6.3.NAR`, and `G.11`.
+Coordinates with: `E.18.1`, `C.32.P2S`, `C.30.TFS-REL`, `E.23`, `C.18`, `C.19`, `G.5`, `A.15`, `A.10`, `B.3`, `A.20`, `A.21`, `A.6.3.NAR`, and `G.11`; a network demonstration consumes only already admitted E.18.3 position and relation-reference values.
 
 Does not replace: direct method, work, evidence, gate, architecture, decision, publication, mathematical-lens, E.18 slice-local refresh, or G.11 currentness patterns.
 

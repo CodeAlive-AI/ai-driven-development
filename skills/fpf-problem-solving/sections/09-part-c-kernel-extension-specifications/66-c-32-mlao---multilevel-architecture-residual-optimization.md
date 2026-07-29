@@ -1,7 +1,7 @@
 ## C.32.MLAO - Multilevel Architecture Residual Optimization
 
 > **Type:** Architectural subpattern under C.32
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 
 ### C.32.MLAO:1 - Problem frame

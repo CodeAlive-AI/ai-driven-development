@@ -162,7 +162,7 @@ ProvisionalUnfoldingDemonstrationDescription@Context <: U.Episteme:
   admissionTransitionConditionDescriptionRef: U.EpistemeRef
 ```
 
-This local declaration form is an episteme, not a structure slice and not a new root kind. Its C.2.1 identity comes from its exact EntityOfConcern, DescriptionContext, optional grounding holon, ClaimGraph, reference scheme, and edition. `entityOfConcernRef` names the subject that the explanation is currently about; it may not point to a not-yet-admitted CGUS. Candidate positions and relations are claims to investigate, not admitted `ConstraintGovernedUnfoldingPosition@Context` or relation instances. At least one unresolved admission coordinate remains present while the description is provisional.
+This local declaration form is an episteme, not a structure slice and not a new root kind. Its C.2.1 identity comes from its exact EntityOfConcern, DescriptionContext, optional grounding holon, ClaimGraph, reference scheme, and edition. `entityOfConcernRef` names the subject that the explanation is currently about; it may not point to a not-yet-admitted CGUS. Candidate positions and relation descriptions are claims to investigate, not admitted `ConstraintGovernedUnfoldingPosition@Context` values or relation-reference epistemes, and they make no world-side relation instance obtain. At least one unresolved admission coordinate remains present while the description is provisional.
 
 Once every coordinate in `4.2` is recoverable and the wider `ConstraintGovernedUnfoldingStructure@Context` is admitted, describe that structure without selecting a traversal through it by creating this C.2.1-conformant episteme:
 
@@ -199,6 +199,22 @@ DemonstrativeUnfoldingSlice@Context <: U.Episteme:
   transformationFlowStructureRef?: U.EntityRef, referencing one E.18 TransformationFlowStructure
   pathSliceId?: E.18 PathSliceId
   designRunTag?: E.18 DesignRunTag
+  networkDemonstrationLocator?:
+    transformationFlowStructureNetworkRef: exact selected E.18.NET-conforming TransformationFlowStructureNetwork ref
+    selectedNetworkPositionMappingRows[]:
+      networkPositionRef: FlowPositionRef | ExposedFlowPositionRef
+      memberPath[]: finite ordered path of exact direct-member refs
+      admittedIncludedPositionRef: exact ConstraintGovernedUnfoldingPosition@Context ref
+    selectedCrossFlowRelationReferenceRows[]?:
+      networkCrossFlowRelationRowRef: E.18.NET NetworkCrossFlowRelationRowRef
+      admittedTransformationFlowRelationReferenceRef: exact TransformationFlowRelationReference@Context ref
+    memberLocalFlowLocatorRows[]?:
+      memberPath[]: finite ordered path to one leaf TFS
+      transformationFlowStructureRef: that exact leaf TFS ref
+      pathSliceId: E.18 PathSliceId local to that TFS
+      designRunTag: E.18 DesignRunTag local to that exact position binding
+      leafFlowPositionRef: FlowPositionRef in that TFS
+      positionBindingRef: already governed E.18 position/valuation binding
   demonstratedPatternUseRowRefs[]: U.EpistemeRef, each referencing one DemonstratedPatternUseRow@Context
   includedStructurePositionRefs[]: U.EntityRef, each referencing one ConstraintGovernedUnfoldingPosition@Context
   omittedStructureInformationAdequacyNoteRefs[]?: U.EpistemeRef, each referencing one StructuralInformationAdequacyNote@Context under C.33
@@ -215,7 +231,15 @@ The transition does not retype the provisional episteme or any subject-domain re
 
 The local mode and presentation-form values are enumerations, not CharacteristicSpaces or U-kinds. Presentation form says how the episteme is rendered; it is not a carrier kind. Add an E.17 publication relation only when publication is current.
 
-The E.18 triple is all present or all absent. When present, it locates this post-admission demonstration in one flow valuation and relates pattern-selection, selected-pattern-application, and downstream-subject-work slices without merging their structures, rows, work occurrences, or results.
+The top-level transformation-flow locator families are mutually exclusive. For a one-TFS demonstration, `transformationFlowStructureRef`, `pathSliceId`, and `designRunTag` are all present and `networkDemonstrationLocator` is absent; their existing meaning is unchanged. For a network demonstration, all three top-level one-TFS fields are absent and one `networkDemonstrationLocator` is present. A generic CGUS slice that asserts no transformation-flow provenance may leave both families absent. No slice may mix a partial one-TFS triple with either family.
+
+The network locator does not admit new structure. Its `transformationFlowStructureNetworkRef` resolves to one independently identified, selected E.18.NET-conforming network. Every member path resolves through that network's exact direct members and ends in the TFS named by its leaf position. When `networkPositionRef` is a `FlowPositionRef`, the row's final member is the TFS named by that ref. When it is an `ExposedFlowPositionRef`, that ref's network, complete member path, and leaf position must equal this locator's network, this row's member path, and the resolved leaf position. A mismatch leaves the mapping out of the slice. Every `admittedIncludedPositionRef` is the same exact position already present both in this slice's `includedStructurePositionRefs[]` and in the admitted E.18.3 structure's `transformationPositionRefs[]`. The mapping rows locate that admitted list; they do not create a second raw or unadmitted position list.
+
+Every selected cross-flow mapping preserves one already obtaining relation. First resolve `networkCrossFlowRelationRowRef` by value and require its named current E.18.NET record edition to describe this locator's exact `transformationFlowStructureNetworkRef`; then require exactly one row to match the occurrence and complete ordered endpoint-binding identity. A different network, zero matches, or several matches leaves the mapping out of the slice. Then resolve the cited `TransformationFlowRelationReference@Context` separately. The row and that episteme must agree on exact occurrence, relation kind, direct governor, signature, endpoint order, and endpoint position bindings. The relation-reference episteme must already occur in an applicable admitted E.18.3 relation-reference field. A raw occurrence ref, diagram edge, unresolved locator, or network-record row alone is not admitted into the slice.
+
+The complete one-TFS triple may recur only inside `memberLocalFlowLocatorRows[]`, where it locates one exact leaf-TFS position binding. It never becomes the network slice's top-level locator. A network slice has no network-global `FlowValuation`, `pathSliceId`, or `DesignRunTag`; each path slice and tag remains recoverable from one exact member-local row.
+
+**Positive case.** A four-level build-the-builder demonstration follows a finite member path to one already admitted leaf position, maps it to the same included CGUS/E.18.3 position, cites an admitted exact cross-flow relation reference, and keeps the leaf path slice and tag in one member-local row. **Near miss.** A graph that supplies only raw positions or an edge label, mixes the top-level triple with the network locator, duplicates the included-position list, or assigns one tag to the network remains provisional or returns the exact admission blocker.
 
 #### A.22.CGUS:4.3.1 - Demonstrated pattern-use rows
 
@@ -617,6 +641,8 @@ The same visible chain helps planning because each position asks for a slot. It 
 | **CC-CGUS-1 Structure kind.** | The object is `ConstraintGovernedUnfoldingStructure@Context <: U.Structure` or a named narrower `U.Structure` specialization. | Lower to note, seed, description, route card, method description, or governing-pattern record. |
 | **CC-CGUS-2 Typed positions and cross-position constraints.** | More than one SlotSpec-grounded position is named, and exact relations or constraints among those positions affect admissible continuations. | Add typed positions and their exact relation references, or stop using CGUS. |
 | **CC-CGUS-3 Description separation.** | A pre-admission presentation remains a `ProvisionalUnfoldingDemonstrationDescription@Context`; after admission, a whole-structure account is a `ConstraintGovernedUnfoldingStructureDescription@Context`, while one selected traversal is a `DemonstrativeUnfoldingSlice@Context` whose EntityOfConcern is the admitted CGUS. | Keep the presentation provisional until CGUS admission. After admission, choose the description species by whether the episteme describes the admitted topology or selects one traversal through it. |
+| **CC-CGUS-3a Transformation-flow locator exclusivity.** | A one-TFS slice has the complete top-level E.18 triple and no network locator; a network slice has one network locator and none of the three top-level E.18 fields; a generic slice may have neither family. No partial or mixed family is present. | Restore one complete family, or remove transformation-flow provenance and keep the slice generic. |
+| **CC-CGUS-3b Network locator admission reuse.** | Every position ref agrees with the locator's exact network, member path, and leaf position and maps to the same exact position already included in the slice and admitted E.18.3 structure. Every selected cross-flow row comes from a current record of that same network and cites an exact relation-reference episteme already admitted by E.18.3. Member-local TFS triples remain nested, with no duplicate raw-position list or network-global valuation, path slice, or tag. | Return the mismatched network, path, leaf, record, admitted position, or relation reference. Remove copied position lists and global state; keep leaf-local bindings inside member-local rows. |
 | **CC-CGUS-4 Direct governing patterns.** | Method, work, evidence, gate, decision, architecture, publication, refresh, and mathematical claims point to direct governing patterns. | Add governing-pattern exits or narrow the claim. |
 | **CC-CGUS-5 Non-workflow boundary.** | The structure does not prescribe performed-work order by itself. | Move work-order claims to a work plan or method description if justified. |
 | **CC-CGUS-6 Admissible next form.** | At least one admissible next-form kind is named for the admitted structure. | Keep the artifact as a provisional description until a next use and next-form kind are recoverable. |
@@ -628,6 +654,7 @@ The same visible chain helps planning because each position asks for a slot. It 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | **Pretty route as ontology** | A graph, table, route card, or slide deck is treated as the structure, or its declared use is treated as sufficient CGUS admission. | Keep the artifact as a provisional description while any admission coordinate is unresolved. After admission, describe the whole admitted structure with `ConstraintGovernedUnfoldingStructureDescription@Context`, or create a separate `DemonstrativeUnfoldingSlice@Context` only for one selected traversal. |
+| **Network locator as admission shortcut** | A network graph supplies raw positions, edge labels, a duplicated position list, or one global tag and is treated as an admitted slice. | Select and verify the E.18.NET-conforming network first, then admit the E.18.3 positions and relation-reference epistemes. Then map to those exact values through the mutually exclusive network locator; otherwise keep the graph provisional. |
 | **Universal P2W parent** | P2W is used as the parent for architecture, narrative, abduction, grounding, and refresh. | Use P2W as a rich transformation-flow family; use CGUS for the shared constraint-governed unfolding structure and direct governing patterns for each family. |
 | **Loop word as improvement** | A retry loop or prompt loop is called improvement. | Open `E.22` and `E.23`; improvement-loop admission depends on an object version, evaluation frame, exact candidate proposal rows, scale-qualified expected evaluation-result changes, one loop-decision value, and re-evaluation. |
 | **README route authority** | A public practical-use card is treated as a fixed FPF procedure. | Return to its `E.11` card expansion and express each continuation through its condition, direct pattern, exact first result, and stop or return boundary. If the explanation claims one wider conditional structure, keep it as `ProvisionalUnfoldingDemonstrationDescription@Context` until A.22.CGUS admission; only then may a separate `DemonstrativeUnfoldingSlice@Context` show one traversal. |
@@ -667,9 +694,9 @@ As of 2026-07-11, OCPQ supplies the current research comparator for typed multi-
 
 Specializes: the `A.22` use of `U.Structure` when the selected structure is `ConstraintGovernedUnfoldingStructure@Context` and its typed positions, exact referenced relations, cross-position constraints, preserved structures, C.33 adequacy notes, admissible next-form kinds, and direct governing-pattern exits are current.
 
-Specialized by: `E.18.3` for transformation-flow unfolding structures, and by local blocks in `E.18.1`, `C.32.P2S`, `B.5.2`, `A.6.3.NAR`, `E.23`, `C.13`, `B.3.5`, and `C.3` when their admission tests pass.
+Specialized by: `E.18.3` for transformation-flow unfolding structures, including admitted positions and relation-reference epistemes cited by a network demonstration locator; and by local blocks in `E.18.1`, `C.32.P2S`, `B.5.2`, `A.6.3.NAR`, `E.23`, `C.13`, `B.3.5`, and `C.3` when their admission tests pass.
 
-Coordinates with: `E.11` for public practical-use card expansions, ordinary walkthroughs, and admitted CGUS-demonstrative walkthroughs, `E.10.MOVE` and `C.2.P.DR` for lexical and declarative-representation repair, `C.18`, `C.19`, and `G.5` for archive, front, live-pool, and selected-set claims, `G.11` for currentness and refresh claims, and `E.17` for publication of provisional descriptions or admitted demonstrative slices.
+Coordinates with: `E.18` for the complete one-TFS locator triple, `E.18.NET` for one selected E.18.NET-conforming TFS network and member paths, `E.11` for public practical-use card expansions, ordinary walkthroughs, and admitted CGUS-demonstrative walkthroughs, `E.10.MOVE` and `C.2.P.DR` for lexical and declarative-representation repair, `C.18`, `C.19`, and `G.5` for archive, front, live-pool, and selected-set claims, `G.11` for currentness and refresh claims, and `E.17` for publication of provisional descriptions or admitted demonstrative slices.
 
 Does not replace: `A.3.1`, `A.3.2`, `A.15`, `A.10`, `B.3`, `A.20`, `A.21`, `C.30`, `C.32.PAD`, `C.32.ADR`, `C.29`, `G.11`, or any direct governing pattern for stronger claims.
 
