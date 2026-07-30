@@ -1,6 +1,6 @@
 ---
 name: agents-consilium
-description: "Query external AI agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini) for independent second opinions, multi-depth code review, repository context exploration, and full-YOLO single-agent delegation. Three public modes via scripts/consilium: review (read-only ask/code), explore (read-only exploration of a local or remote repository — clones remotes, answers from cited evidence, Grok 4.5 by default), and delegate (exact agent, no sandbox; optional --steerable long session with steer/status/cancel). Use for architecture choices, security review, deep multi-stage review, understanding an unfamiliar or third-party codebase, or handing a whole task to one agent. Not for simple questions answerable from docs or the codebase."
+description: "Query external AI agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini) for independent second opinions, multi-depth code review, repository context exploration, and full-YOLO single-agent delegation. Three public modes via scripts/consilium: review (read-only ask/code), explore (read-only exploration of a local or remote repository — clones remotes, answers from cited evidence, Grok 4.5 by default), and delegate (exact agent, no sandbox; optional --steerable long session with steer/status/cancel, plus --detach to outlive the caller and wait/watch/list to block on, follow, or rediscover a run). Use for architecture choices, security review, deep multi-stage review, understanding an unfamiliar or third-party codebase, handing a whole task to one agent, or waiting on a delegated agent that was started earlier. Not for simple questions answerable from docs or the codebase."
 ---
 
 # Consilium v6: Multi-Agent Review, Exploration & Delegation
@@ -15,9 +15,13 @@ scripts/consilium review code --depth basic|specialists|super|ultra [...]
 scripts/consilium explore [--repo SOURCE] [--ref REF] [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
 scripts/consilium delegate -a <exact-agent-id> --steerable [...]
+scripts/consilium delegate -a <exact-agent-id> --detach [...]
 scripts/consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [...]
 scripts/consilium delegate status RUN_ID [--json]
 scripts/consilium delegate cancel RUN_ID
+scripts/consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
+scripts/consilium delegate watch RUN_ID [--timeout SEC] [--heartbeat SEC] [--json]
+scripts/consilium delegate list [--active|--all] [--reap] [--json]
 scripts/consilium --list-agents
 ```
 
@@ -191,7 +195,7 @@ scripts/consilium delegate -a codex --prompt-file task.md
 
 ### `delegate --steerable`
 
-Long-lived single-agent session with a filesystem mailbox. Prints `run_id=…` early on stderr; final answer still goes to stdout when the run completes.
+Long-lived single-agent session with a filesystem mailbox. Prints `run_id=…` early on stderr; final answer still goes to stdout when the run completes, and is also served by `delegate wait` from `<run_dir>/final.txt`.
 
 ```bash
 scripts/consilium delegate -a grok --steerable "Implement the caching layer"
@@ -199,37 +203,64 @@ scripts/consilium delegate -a grok --steerable "Implement the caching layer"
 scripts/consilium delegate steer run_<id> --mode auto "Prefer Redis over memcached"
 scripts/consilium delegate status run_<id> --json
 scripts/consilium delegate cancel run_<id>
+scripts/consilium delegate wait run_<id>
 ```
 
 #### Required workflow for the calling agent
 
-Use this sequence whenever the user may want to redirect an active delegate:
+1. **Start** from the target project CWD, either way:
 
-1. Run the command from the target project CWD. Start it in a long-running
-   process/PTY or in the background so the calling agent remains able to read
-   progress and issue control commands. Do **not** wait synchronously for the
-   final stdout before attempting to steer.
-2. Read early stderr and capture the exact `run_id=run_<id>`. Keep the original
-   process handle open: its stderr is the live progress stream and its stdout
-   will contain the final answer.
-3. If `CONSILIUM_STEER_DIR` was overridden for the start command, pass the same
-   environment value to every later `steer`, `status`, and `cancel` command.
-4. Send only new information or a clear course correction. Do not repeat the
-   entire original task. Use `--prompt-file` or stdin for long guidance.
-5. Use `--mode auto` unless the user explicitly needs different semantics.
-   Record the returned `client_id` and `seq`. For Grok, `auto`/`queue` is the
-   productive default for additive details. Use `interrupt` only to replace the
-   current direction: every later `interrupt` intentionally supersedes the
-   prompt currently running, including an earlier steer.
-6. Treat the immediate `accepted` response as mailbox persistence only. Query
-   `delegate status RUN_ID --json`, find the matching `client_id`, and inspect
-   `mailbox_status`, `delivery_class`, `backend_ack`, and `error`.
-7. Continue observing the original process. Later backend events may advance
-   the steer from `request_sent`/`queued` to `running` and `completed`, or end
-   it as `cancelled`, `dropped`, `failed`, or `rejected`.
-8. Wait for the original delegate process to finish and consume its stdout as
-   the final answer. Use `cancel` only when intentionally stopping the whole
-   delegated run.
+   ```bash
+   RUN_ID=$(scripts/consilium delegate -a grok --detach "Implement the caching layer")
+   ```
+
+   or start with `--steerable` under your harness's background execution and
+   read `run_id=run_<id>` off early stderr. Lost the id? `delegate list --active`.
+2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same environment
+   value to every later `steer`, `status`, `cancel`, `wait`, `watch`, and `list`.
+3. **Steer** only with new information or a clear course correction — never
+   repeat the original task. Use `--prompt-file` or stdin for long guidance, and
+   `--mode auto` unless the user explicitly needs different semantics. Record the
+   returned `client_id` and `seq`. For Grok, `auto`/`queue` is the productive
+   default for additive details; use `interrupt` only to replace the current
+   direction, since every later `interrupt` supersedes the prompt currently
+   running, including an earlier steer. The immediate `accepted` response means
+   mailbox persistence only — query `delegate status RUN_ID --json` once
+   afterwards and inspect `mailbox_status`, `delivery_class`, `backend_ack`, and
+   `error` for the matching `client_id`. Later backend events may advance a steer
+   from `request_sent`/`queued` to `running` and `completed`, or end it as
+   `cancelled`, `dropped`, `failed`, or `rejected`.
+4. **Observe** with `delegate watch RUN_ID` when the user wants live visibility.
+   It emits one line per meaningful change (status transitions, steer delivery,
+   turn boundaries, errors) and exits on its own at the terminal status. Per-chunk
+   model text is deliberately excluded. Skip this entirely if only the result
+   matters — do not poll `status` in a loop.
+5. **Collect** with `delegate wait RUN_ID [--timeout SEC]`. It blocks until the
+   run is terminal and prints the **full** final answer on stdout.
+
+| `wait` / `watch` exit | Meaning |
+|---|---|
+| `0` | completed |
+| `130` | cancelled |
+| `70` | the supervisor died without finishing |
+| `75` | **your** `--timeout` expired — the run continues; re-run `wait` |
+| `74` | completed but produced no answer text |
+| other non-zero | the agent's own failure code |
+
+`wait` never cancels anything. `cancel` remains the only way to stop actual work.
+
+#### `--detach` vs. running it in the background yourself
+
+| Situation | Use |
+|---|---|
+| The run should finish inside this session, and you want its stderr in the transcript | your harness's background execution + `--steerable` |
+| The run may outlive the session, the run id goes to another session/agent, or you want to reattach later | `--detach` |
+
+`--detach` implies `--steerable` (a registry entry is required to reattach),
+prints `run_id` on stdout and returns immediately. The supervisor calls
+`setsid`, so a `SIGINT`/`SIGHUP` aimed at the caller's process group cannot
+reach the run. Its stdio lands in `<run_dir>/supervisor.log` (0600), but that
+log is not the contract — `wait` serves the authoritative answer.
 
 Choose the mode deliberately:
 
@@ -329,6 +360,8 @@ The skill never synthesizes a verdict for `ask`, `basic`, or `specialists`: ever
 Run ids and run-dir names are human-readable word pairs — `run_amber-otter-4f21`, `run-ask-solar-orchid-fd8e` — not raw hex. They are quoted back on stderr, retyped into `delegate status <run_id>`, and referenced several turns later, all of which words survive and UUIDs do not. The 4-hex tail keeps them unique; `scripts/lib/human_id.py` is the single generator for both the steerable registry and artifact directories.
 
 Disable ordinary review/delegate archival with `CONSILIUM_SAVE_OUTPUTS=0`. Steerable runs still maintain their service registry (`CONSILIUM_STEER_DIR`) and protocol artifacts needed for steer/status/cancel observability.
+
+`delegate list` enumerates that registry, newest first, and is the recovery path when a run id was lost. It is read-only by default: a run whose supervisor died still shows its stored `status` alongside `effective_status: "stale"`. Only `--reap` rewrites those to `failed` / `supervisor_dead`. `wait` and `watch` perform the same reaping for the single run they are attached to, which is why neither can hang on a dead supervisor.
 
 ## Resource-limit contract
 
@@ -430,13 +463,18 @@ EOF
 | Max coverage | `review code --depth ultra` |
 | “Just implement this” with one agent | `delegate -a <id>` |
 | Delegate while retaining the ability to redirect it mid-run | `delegate -a <id> --steerable` |
+| Delegate something that may outlive this session | `delegate -a <id> --detach` |
+| Block until a delegated run finishes and take its answer | `delegate wait <run_id>` |
+| Follow a delegated run's progress without polling | `delegate watch <run_id>` |
+| Reattach to a run started earlier / find a lost run id | `delegate list --active` |
 
 ## Environment variables
 
 - `CONSILIUM_CONFIG`, `CONSILIUM_AGENTS`, `CONSILIUM_EXCLUDE`
 - `CONSILIUM_PROGRESS` — default progress style for review modes (`full` | `compact` | `none`)
 - `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR`, `CONSILIUM_SAVE_OUTPUTS`
-- `CONSILIUM_STEER_DIR` — registry root for steerable runs
+- `CONSILIUM_STEER_DIR` — registry root for steerable runs; must be passed identically to `steer`, `status`, `cancel`, `wait`, `watch`, and `list`
+- `CONSILIUM_DETACH_START_TIMEOUT` — seconds `--detach` waits for the supervisor to report a run id (default `30`)
 - `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` — permit `file://` sources (offline tests only; blocked in normal use)
 - `CONSILIUM_EXPLORE_ALLOW_INSECURE=1` — permit plain `http://` clone URLs
 - `AGENT_TIMEOUT` (`0`/unset = unlimited; positive integer = opt-in seconds for ordinary review/one-shot delegate; steerable remains unlimited)

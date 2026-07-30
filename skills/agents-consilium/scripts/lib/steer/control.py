@@ -1,16 +1,27 @@
-"""Client-side steer / status / cancel against the filesystem mailbox."""
+"""Client-side steer / status / cancel / wait / watch / list against the mailbox."""
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import signal
 import sys
+import time
 from pathlib import Path
 from typing import Any, Dict, Optional
 
 from .mailbox import Mailbox, MailboxError
 from .registry import Registry, RegistryError, TERMINAL_STATUSES
-from .util import preview_text, progress
+from .util import preview_text, progress, utc_now_iso
+from .waiter import (
+    EXIT_NO_FINAL_TEXT,
+    EXIT_WAIT_TIMEOUT,
+    WaitTimeout,
+    derive_exit_code,
+    poll_once,
+    read_final_text,
+    wait_for_terminal,
+)
 
 
 def cmd_steer(args: argparse.Namespace) -> int:
@@ -199,6 +210,391 @@ def cmd_cancel(args: argparse.Namespace) -> int:
     return 0
 
 
+class _Interrupted(Exception):
+    """SIGINT/SIGTERM reached the observer, not the run."""
+
+
+def _install_observer_signals() -> None:
+    """Ctrl-C on a watcher must never be mistaken for cancelling the run.
+
+    wait/watch exit with the timeout code, leaving the supervisor untouched;
+    `delegate cancel` remains the only way to stop actual work.
+    """
+
+    def _handler(signum, _frame):
+        raise _Interrupted(str(signum))
+
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        try:
+            signal.signal(sig, _handler)
+        except (ValueError, OSError):
+            pass
+
+
+def _resolve_run(reg: Registry, run_id: str) -> Dict[str, Any]:
+    """Fail fast on a bad id instead of spinning in a poll loop."""
+    return reg.load_meta(run_id)
+
+
+def _duration_seconds(meta: Dict[str, Any]) -> Optional[float]:
+    started, finished = meta.get("started_at"), meta.get("finished_at")
+    if not started or not finished:
+        return None
+    fmt = "%Y-%m-%dT%H:%M:%SZ"
+    try:
+        return max(
+            0.0,
+            time.mktime(time.strptime(finished, fmt)) - time.mktime(time.strptime(started, fmt)),
+        )
+    except (ValueError, TypeError):
+        return None
+
+
+def cmd_wait(args: argparse.Namespace) -> int:
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    try:
+        meta = _resolve_run(reg, args.run_id)
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    progress("wait", f"run_id={args.run_id}", "attached", f"status={meta.get('status')}")
+    _install_observer_signals()
+
+    started = time.time()
+    last_beat = [started]
+
+    def _heartbeat(snap) -> None:
+        now = time.time()
+        if snap.terminal or now - last_beat[0] < 15:
+            return
+        last_beat[0] = now
+        progress(
+            "wait",
+            f"run_id={args.run_id}",
+            f"status={snap.status}",
+            f"elapsed={int(now - started)}s",
+        )
+
+    try:
+        snap = wait_for_terminal(
+            reg,
+            args.run_id,
+            timeout=args.timeout,
+            poll_interval=args.poll_interval,
+            on_event=_heartbeat,
+        )
+    except WaitTimeout as e:
+        sys.stderr.write(
+            f"Error: {e}. Resume with: consilium delegate wait {args.run_id}\n"
+        )
+        return EXIT_WAIT_TIMEOUT
+    except _Interrupted:
+        sys.stderr.write(
+            f"Error: interrupted; run {args.run_id} is untouched. "
+            f"Resume with: consilium delegate wait {args.run_id}\n"
+        )
+        return EXIT_WAIT_TIMEOUT
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    meta = snap.meta
+    code = derive_exit_code(meta)
+    found = read_final_text(reg, args.run_id, meta)
+    progress(
+        "done",
+        f"run_id={args.run_id}",
+        f"status={meta.get('status')}",
+        f"exit={code}",
+        f"final={'ok' if found is not None else 'missing'}",
+    )
+
+    if found is None:
+        sys.stderr.write(
+            f"Error: final text unavailable for {args.run_id} (status={meta.get('status')})\n"
+        )
+        # A failed run has no answer by construction; its own code says more
+        # than "no text". 74 is reserved for the surprising case: the run
+        # claims success yet produced nothing.
+        return code or EXIT_NO_FINAL_TEXT
+    text, final_path = found
+
+    if args.quiet:
+        return code
+    if args.json:
+        payload = {
+            "run_id": args.run_id,
+            "status": meta.get("status"),
+            "exit_code": code,
+            "run_exit_code": meta.get("exit_code"),
+            "error": meta.get("error"),
+            "agent_id": meta.get("agent_id"),
+            "backend": meta.get("backend"),
+            "model": meta.get("model"),
+            "cwd": meta.get("cwd"),
+            "artifacts_dir": meta.get("artifacts_dir"),
+            "detach_log": meta.get("detach_log"),
+            "started_at": meta.get("started_at"),
+            "finished_at": meta.get("finished_at"),
+            "duration_s": _duration_seconds(meta),
+            "final_path": final_path,
+            # Deliberately the FULL body — this is what `status --json` truncates.
+            "final_text": text,
+        }
+        print(json.dumps(payload, indent=2, ensure_ascii=False))
+        return code
+
+    # Byte-identical to what a foreground delegate prints on stdout.
+    if text:
+        sys.stdout.write(text)
+        if not text.endswith("\n"):
+            sys.stdout.write("\n")
+        sys.stdout.flush()
+    return code
+
+
+# audit.jsonl gets one record per streamed chunk, so a raw tail would cost one
+# model turn per token. Only lifecycle-bearing adapter events survive.
+_AUDIT_KEEP_KINDS = frozenset(
+    {"turn_started", "turn_completed", "prompt_complete", "error", "done"}
+)
+# Pure bookkeeping; the same information reaches the caller via state.steers.
+_AUDIT_DROP_EVENTS = frozenset({"steer_ack_reconcile"})
+
+
+class _AuditTail:
+    """Byte-offset tail over run_dir/audit.jsonl. Never buffers the whole file."""
+
+    def __init__(self, path: Path):
+        self.path = path
+        self.offset = 0
+        self._partial = ""
+
+    def read_new(self) -> list:
+        records = []
+        try:
+            size = self.path.stat().st_size
+        except OSError:
+            return records
+        if size < self.offset:  # truncated/replaced — restart cleanly
+            self.offset = 0
+            self._partial = ""
+        if size == self.offset:
+            return records
+        try:
+            with self.path.open("r", encoding="utf-8", errors="replace") as fh:
+                fh.seek(self.offset)
+                chunk = fh.read()
+                self.offset = fh.tell()
+        except OSError:
+            return records
+        buf = self._partial + chunk
+        lines = buf.split("\n")
+        self._partial = lines.pop()
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(rec, dict):
+                records.append(rec)
+        return records
+
+
+def cmd_watch(args: argparse.Namespace) -> int:
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    try:
+        meta = _resolve_run(reg, args.run_id)
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    _install_observer_signals()
+    started = time.time()
+    state = {
+        "last_emit": 0.0,
+        "last_line": "",
+        "status": None,
+        "steers": {},
+    }
+
+    def emit(event: str, **fields: Any) -> None:
+        now = time.time()
+        if args.json:
+            line = json.dumps(
+                {"run_id": args.run_id, "ts": utc_now_iso(), "event": event, **fields},
+                ensure_ascii=False,
+            )
+        else:
+            parts = [f"[consilium] watch run_id={args.run_id}", f"ts={utc_now_iso()}", f"event={event}"]
+            parts.extend(f"{k}={v}" for k, v in fields.items() if v is not None and v != "")
+            line = " ".join(parts).replace("\n", " ")
+        if line == state["last_line"] and now - state["last_emit"] < 1.0:
+            return
+        state["last_line"] = line
+        state["last_emit"] = now
+        print(line, flush=True)
+
+    tail = _AuditTail(reg.run_path(args.run_id) / "audit.jsonl")
+
+    emit(
+        "attached",
+        status=meta.get("status"),
+        agent=meta.get("agent_id"),
+        backend=meta.get("backend"),
+        model=meta.get("model"),
+        started_at=meta.get("started_at"),
+    )
+    state["status"] = meta.get("status")
+
+    def on_event(snap) -> None:
+        if snap.status != state["status"]:
+            state["status"] = snap.status
+            if not snap.terminal:
+                emit("status", status=snap.status)
+
+        steers = snap.state.get("steers") if isinstance(snap.state.get("steers"), dict) else {}
+        for cid, cur in (steers or {}).items():
+            if not isinstance(cur, dict):
+                continue
+            fingerprint = (cur.get("status"), cur.get("delivery_class"), cur.get("error"))
+            if state["steers"].get(cid) == fingerprint:
+                continue
+            state["steers"][cid] = fingerprint
+            emit(
+                "steer",
+                client_id=cid,
+                status=cur.get("status"),
+                delivery_class=cur.get("delivery_class"),
+                error=preview_text(cur.get("error"), 120) if cur.get("error") else None,
+            )
+
+        for rec in tail.read_new():
+            ev = str(rec.get("event") or "")
+            if ev in _AUDIT_DROP_EVENTS:
+                continue
+            if ev == "adapter_event":
+                kind = str(rec.get("kind") or "")
+                if kind not in _AUDIT_KEEP_KINDS:
+                    continue
+                emit("turn", kind=kind, data=preview_text(rec.get("data_preview"), 120))
+                continue
+            emit(
+                ev or "audit",
+                client_id=rec.get("client_id"),
+                status=rec.get("status"),
+                error=preview_text(rec.get("error"), 120) if rec.get("error") else None,
+            )
+
+        if not snap.terminal and time.time() - state["last_emit"] >= args.heartbeat:
+            emit("alive", status=snap.status, elapsed=f"{int(time.time() - started)}s")
+
+    try:
+        snap = wait_for_terminal(
+            reg,
+            args.run_id,
+            timeout=args.timeout,
+            poll_interval=args.poll_interval,
+            on_event=on_event,
+        )
+    except WaitTimeout as e:
+        emit("timeout", status=e.status, elapsed=f"{int(e.elapsed)}s")
+        return EXIT_WAIT_TIMEOUT
+    except _Interrupted:
+        emit("detached", elapsed=f"{int(time.time() - started)}s")
+        return EXIT_WAIT_TIMEOUT
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    code = derive_exit_code(snap.meta)
+    found = read_final_text(reg, args.run_id, snap.meta)
+    emit(
+        "terminal",
+        status=snap.meta.get("status"),
+        exit=code,
+        error=snap.meta.get("error"),
+        final_bytes=len(found[0].encode("utf-8")) if found else 0,
+        final_path=found[1] if found else None,
+    )
+    return code
+
+
+def cmd_list(args: argparse.Namespace) -> int:
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    try:
+        runs = reg.list_runs()
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    if args.reap:
+        for meta in runs:
+            if meta.get("effective_status") != "stale":
+                continue
+            run_id = str(meta.get("run_id") or "")
+            try:
+                with reg.with_run_lock(run_id):
+                    reg.validate_active(run_id)
+            except RegistryError:
+                pass
+        runs = reg.list_runs()
+
+    if not args.all:
+        runs = [
+            m
+            for m in runs
+            if m.get("unreadable") or m.get("status") not in TERMINAL_STATUSES
+        ]
+    if args.limit > 0:
+        runs = runs[: args.limit]
+
+    if args.json:
+        payload = [
+            {
+                "run_id": m.get("run_id"),
+                "unreadable": m.get("unreadable"),
+                "status": m.get("status"),
+                "effective_status": m.get("effective_status"),
+                "agent_id": m.get("agent_id"),
+                "backend": m.get("backend"),
+                "model": m.get("model"),
+                "cwd": m.get("cwd"),
+                "artifacts_dir": m.get("artifacts_dir"),
+                "detach_log": m.get("detach_log"),
+                "pid": m.get("pid"),
+                "pid_alive": m.get("pid_alive"),
+                "started_at": m.get("started_at"),
+                "finished_at": m.get("finished_at"),
+                "exit_code": m.get("exit_code"),
+                "error": m.get("error"),
+            }
+            for m in runs
+        ]
+        print(json.dumps(payload, indent=2, ensure_ascii=False))
+        return 0
+
+    if not runs:
+        return 0
+    # Header on stderr so stdout stays machine-parseable without --json.
+    sys.stderr.write(
+        f"{'RUN_ID':<26} {'STATUS':<10} {'AGENT':<20} {'STARTED':<21} CWD\n"
+    )
+    for m in runs:
+        if m.get("unreadable"):
+            print(f"{str(m.get('run_id')):<26} {'unreadable':<10} {preview_text(m.get('unreadable'), 60)}")
+            continue
+        print(
+            f"{str(m.get('run_id')):<26} {str(m.get('effective_status')):<10} "
+            f"{str(m.get('agent_id')):<20} {str(m.get('started_at')):<21} {m.get('cwd')}"
+        )
+    return 0
+
+
 def main(argv: Optional[list] = None) -> int:
     p = argparse.ArgumentParser(prog="consilium-steer-control")
     p.add_argument("--registry-root", default=os.environ.get("CONSILIUM_STEER_DIR", ""))
@@ -222,6 +618,31 @@ def main(argv: Optional[list] = None) -> int:
     c.add_argument("run_id")
     c.add_argument("--json", action="store_true")
     c.set_defaults(func=cmd_cancel)
+
+    w = sub.add_parser("wait")
+    w.add_argument("run_id")
+    w.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
+    w.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
+    w.add_argument("--json", action="store_true")
+    w.add_argument("--quiet", action="store_true")
+    w.set_defaults(func=cmd_wait)
+
+    wt = sub.add_parser("watch")
+    wt.add_argument("run_id")
+    wt.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
+    wt.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
+    wt.add_argument("--heartbeat", type=float, default=60.0, help="seconds between alive lines")
+    wt.add_argument("--json", action="store_true")
+    wt.set_defaults(func=cmd_watch)
+
+    ls = sub.add_parser("list")
+    scope = ls.add_mutually_exclusive_group()
+    scope.add_argument("--active", action="store_true", help="non-terminal runs (default)")
+    scope.add_argument("--all", action="store_true", help="every run in the registry")
+    ls.add_argument("--limit", type=int, default=50)
+    ls.add_argument("--reap", action="store_true", help="mark dead-supervisor runs failed")
+    ls.add_argument("--json", action="store_true")
+    ls.set_defaults(func=cmd_list)
 
     args = p.parse_args(argv)
     if not args.registry_root:

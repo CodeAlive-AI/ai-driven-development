@@ -318,6 +318,50 @@ assert_eq "steerable review-only agent rejected before supervisor" "$rc" "4"
 assert_contains "steerable review-only has config message" "$(cat "$TMP/review-only-steerable.err")" "review-only"
 assert_not_contains "steerable review-only has no traceback" "$(cat "$TMP/review-only-steerable.err")" "Traceback"
 
+echo "=== delegate wait / watch / list ==="
+out=$("$CONSILIUM" delegate --help 2>&1) || true
+assert_contains "delegate help mentions wait" "$out" "delegate wait"
+assert_contains "delegate help mentions watch" "$out" "delegate watch"
+assert_contains "delegate help mentions list" "$out" "delegate list"
+assert_contains "delegate help mentions detach" "$out" "--detach"
+assert_contains "delegate help documents wait exit codes" "$out" "75 your --timeout expired"
+
+# Every observer command must fail cleanly on a bad id: no hang, no traceback.
+export CONSILIUM_STEER_DIR="$TMP/steer-empty"
+mkdir -p "$CONSILIUM_STEER_DIR"
+
+set +e
+"$CONSILIUM" delegate wait >/dev/null 2>"$TMP/wait-no-id.err"
+rc=$?
+set -e
+assert_eq "wait without a run id is a usage error" "$rc" "2"
+
+for sub in wait watch; do
+  set +e
+  "$CONSILIUM" delegate "$sub" bogus_run_id >/dev/null 2>"$TMP/$sub-bogus.err"
+  rc=$?
+  set -e
+  assert_eq "$sub on an unknown run exits 5" "$rc" "5"
+  assert_contains "$sub on an unknown run explains why" "$(cat "$TMP/$sub-bogus.err")" "unknown run"
+  assert_not_contains "$sub on an unknown run has no traceback" "$(cat "$TMP/$sub-bogus.err")" "Traceback"
+
+  set +e
+  "$CONSILIUM" delegate "$sub" ../escape >/dev/null 2>"$TMP/$sub-escape.err"
+  rc=$?
+  set -e
+  assert_eq "$sub rejects a traversal run id" "$rc" "5"
+  assert_not_contains "$sub traversal rejection has no traceback" "$(cat "$TMP/$sub-escape.err")" "Traceback"
+done
+
+out=$("$CONSILIUM" delegate list --json 2>/dev/null)
+assert_eq "list on an empty registry is empty json" "$out" "[]"
+set +e
+"$CONSILIUM" delegate list >/dev/null 2>&1
+rc=$?
+set -e
+assert_eq "list on an empty registry succeeds" "$rc" "0"
+unset CONSILIUM_STEER_DIR
+
 echo "=== Exact agent selection for delegate ==="
 set +e
 "$CONSILIUM" delegate "do something" >/dev/null 2>"$TMP/del-no-a.err"

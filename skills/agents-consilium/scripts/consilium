@@ -7,6 +7,7 @@
 #   consilium review code --depth basic|specialists|super|ultra [...]
 #   consilium explore [--repo SOURCE] [...]
 #   consilium delegate -a <exact-agent-id> [...]
+#   consilium delegate wait|watch|list [...]
 #
 # Observability contract:
 #   compact semantic live progress → stderr
@@ -33,9 +34,13 @@ Usage:
   consilium explore [--repo SOURCE] [--ref REF] [options] ["question"]
   consilium delegate -a <exact-agent-id> ["task"]
   consilium delegate -a <exact-agent-id> --steerable ["task"]
+  consilium delegate -a <exact-agent-id> --detach ["task"]
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
+  consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
+  consilium delegate watch RUN_ID [--timeout SEC] [--heartbeat SEC] [--json]
+  consilium delegate list [--active|--all] [--reap] [--json]
   consilium --list-agents
   consilium -h | --help
 
@@ -76,6 +81,13 @@ delegate
   Supported backends: codex-cli, claude-code, opencode, grok-build.
   Gemini is review-only.
   --steerable starts a long-lived session with mailbox steer/status/cancel.
+  --detach implies --steerable, prints run_id and returns immediately; the
+  supervisor becomes its own session leader and outlives the caller.
+  wait blocks until the run is terminal and prints the full final answer.
+    Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 --timeout expired
+    (run continues — re-run wait), 74 completed without an answer.
+  watch emits one line per meaningful change and exits with the same codes.
+  list finds runs again after the run id was lost.
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,

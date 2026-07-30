@@ -278,6 +278,45 @@ class Registry:
             )
         return meta
 
+    def effective_status(self, meta: Dict[str, Any]) -> str:
+        """Status as an observer should read it, without mutating anything.
+
+        A supervisor that died without a terminal transition leaves `running`
+        in meta forever. Discovery must surface that, but must not repair it:
+        reaping is a write, and a listing command has no business rewriting
+        runs it merely enumerated. `list --reap` opts into the repair.
+        """
+        status = str(meta.get("status") or "")
+        if status in TERMINAL_STATUSES:
+            return status
+        pid = int(meta.get("pid") or 0)
+        return status if pid_alive(pid) else "stale"
+
+    def list_runs(self) -> list:
+        """Every readable run in the registry, newest first.
+
+        Unreadable / foreign / symlinked entries are reported rather than
+        raised on: one poisoned directory must not hide every other run.
+        """
+        if not self.runs_dir.is_dir():
+            return []
+        runs = []
+        for entry in sorted(self.runs_dir.iterdir()):
+            if entry.is_symlink() or not entry.is_dir():
+                continue
+            run_id = entry.name
+            try:
+                meta = self.load_meta(run_id)
+            except RegistryError as e:
+                runs.append({"run_id": run_id, "unreadable": str(e)})
+                continue
+            meta = dict(meta)
+            meta["effective_status"] = self.effective_status(meta)
+            meta["pid_alive"] = pid_alive(int(meta.get("pid") or 0))
+            runs.append(meta)
+        runs.sort(key=lambda m: str(m.get("started_at") or ""), reverse=True)
+        return runs
+
     def request_cancel(self, run_id: str) -> None:
         meta = self.validate_active(run_id)
         rdir = self.run_path(run_id)

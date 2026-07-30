@@ -18,6 +18,8 @@ Different frontier models see different things. Consilium fans out independent o
 | **explore** | understand a local or remote codebase, answer from evidence | `consilium explore [--repo SOURCE]` | varies |
 | **delegate** | implement a task with one agent, no sandbox | `consilium delegate -a <id>` | varies |
 | **delegate --steerable** | delegate while retaining live status/steer/cancel control | `consilium delegate -a <id> --steerable` | varies |
+| **delegate --detach** | delegate something that should outlive the caller | `consilium delegate -a <id> --detach` | varies |
+| **delegate wait / watch / list** | block on, follow, or rediscover a delegated run | `consilium delegate wait <run_id>` | — |
 
 > **Pick in 5 seconds:** ideas → **ask** · normal PR file → **code basic** · money/auth → **specialists/super** · “how does this codebase work?” → **explore** · “just do it” → **delegate -a …**
 >
@@ -79,6 +81,12 @@ scripts/consilium delegate -a grok --steerable "Implement the task"
 # Capture run_id from stderr, then from another process:
 scripts/consilium delegate steer run_<id> --mode auto "Additional detail"
 scripts/consilium delegate status run_<id> --json
+
+# Detached: survives the caller exiting; collect the answer whenever you like
+RUN_ID=$(scripts/consilium delegate -a grok --detach "Implement the task")
+scripts/consilium delegate list --active          # lost the run id?
+scripts/consilium delegate watch "$RUN_ID"        # one line per meaningful change
+scripts/consilium delegate wait  "$RUN_ID"        # blocks, prints the full answer
 ```
 
 </details>
@@ -92,6 +100,7 @@ scripts/consilium delegate status run_<id> --json
 - **stdout** — final answer only
 - **artifacts** — `CONSILIUM_OUTPUT_DIR/run-<mode>-<word>-<word>-<hex>/{raw,normalized,final}/…` plus `final.txt`; run ids are human-readable word pairs, not UUIDs
 - **steerable status** — resolved model/effort plus mailbox/backend lifecycle evidence for each steer
+- **waiting** — `delegate wait` blocks to a terminal status and prints the full answer (exit `0` completed, `130` cancelled, `70` supervisor died, `75` your `--timeout` expired, `74` completed without text); `delegate watch` streams one line per meaningful change. Neither can hang on a dead supervisor, and neither cancels anything.
 
 ---
 

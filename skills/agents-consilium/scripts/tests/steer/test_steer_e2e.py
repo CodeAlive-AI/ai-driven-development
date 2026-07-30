@@ -2,6 +2,7 @@
 """Deterministic steerable-delegate tests (fake transports only; no network/model spend)."""
 from __future__ import annotations
 
+import glob
 import json
 import os
 import shutil
@@ -2243,6 +2244,258 @@ def test_registry_loss_does_not_lose_final(tmp: Path) -> None:
         )
 
 
+def _wait_env(tmp: Path, name: str, **extra) -> tuple:
+    reg_root = tmp / f"reg-{name}"
+    art = tmp / f"art-{name}"
+    cwd = tmp / f"cwd-{name}"
+    for d in (reg_root, art, cwd):
+        d.mkdir(parents=True, exist_ok=True)
+    env = env_base(reg_root, art)
+    env.update({k: str(v) for k, v in extra.items()})
+    return env, reg_root, cwd
+
+
+def _meta(reg_root: Path, run_id: str) -> dict:
+    return json.loads((reg_root / "runs" / run_id / "meta.json").read_text(encoding="utf-8"))
+
+
+def test_wait_already_terminal(tmp: Path) -> None:
+    print("=== e2e: wait on a finished run ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-done")
+    proc, run_id, _ = start_steerable("claude-code", "quick task", env, cwd)
+    code, out, _ = wait_proc(proc, timeout=30)
+    assert_true("wait/done foreground ok", code == 0, f"code={code}")
+
+    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id], env, timeout=30)
+    assert_true("wait/done exit 0", r.returncode == 0, r.stderr)
+    # The whole point of preferring run_dir/final.txt: identical bytes to the
+    # foreground delegate's stdout.
+    assert_true("wait/done stdout matches foreground", r.stdout == out, repr(r.stdout[:120]))
+
+    rj = run_cmd([str(CONSILIUM), "delegate", "wait", run_id, "--json"], env, timeout=30)
+    payload = json.loads(rj.stdout)
+    assert_true("wait/done json status", payload.get("status") == "completed", str(payload.get("status")))
+    # The JSON body is the stored answer verbatim; the trailing newline only
+    # exists on the stdout rendering, which mirrors foreground delegate.
+    assert_true(
+        "wait/done json carries full text",
+        payload.get("final_text") == out.rstrip("\n"),
+        repr(payload.get("final_text")),
+    )
+    st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
+    assert_true(
+        "wait/done json is not the status preview",
+        "final_preview" in st and "final_preview" not in payload,
+    )
+
+    rq = run_cmd([str(CONSILIUM), "delegate", "wait", run_id, "--quiet"], env, timeout=30)
+    assert_true("wait/done quiet prints nothing", rq.stdout == "" and rq.returncode == 0, repr(rq.stdout))
+
+
+def test_wait_running_to_completed(tmp: Path) -> None:
+    print("=== e2e: wait blocks until a running run finishes ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-run", CONSILIUM_FAKE_STEER_SLOW="1.5")
+    proc, run_id, _ = start_steerable("claude-code", "slow task", env, cwd)
+    started = time.time()
+    waiter = subprocess.Popen(
+        [str(CONSILIUM), "delegate", "wait", run_id],
+        env=env, cwd=str(cwd), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+    )
+    time.sleep(0.5)
+    assert_true("wait/run still blocking while run is active", waiter.poll() is None)
+    out, err = waiter.communicate(timeout=40)
+    elapsed = time.time() - started
+    assert_true("wait/run exit 0", waiter.returncode == 0, err[-200:])
+    assert_true("wait/run blocked for the run duration", elapsed >= 1.0, f"{elapsed:.2f}s")
+    # Settle window guard: the answer must be there even though run_dir/final.txt
+    # is written after the terminal meta transition.
+    assert_true("wait/run returned the answer", out.strip() != "", repr(out))
+    wait_proc(proc, timeout=20)
+
+
+def test_wait_failed(tmp: Path) -> None:
+    print("=== e2e: wait on a failed run ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-fail", CONSILIUM_FAKE_CLAUDE_STEER_MODE="crash")
+    proc, run_id, _ = start_steerable("claude-code", "crashing task", env, cwd)
+    wait_proc(proc, timeout=30)
+    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id], env, timeout=30)
+    meta = _meta(reg_root, run_id)
+    assert_true("wait/fail terminal status", meta.get("status") in ("failed", "completed"), str(meta.get("status")))
+    if meta.get("status") == "failed":
+        assert_true("wait/fail exit non-zero", r.returncode != 0, f"rc={r.returncode}")
+        assert_true(
+            "wait/fail mirrors the run's own code",
+            r.returncode == (int(meta.get("exit_code") or 0) or 1),
+            f"rc={r.returncode} meta={meta.get('exit_code')}",
+        )
+
+
+def test_wait_cancelled(tmp: Path) -> None:
+    print("=== e2e: wait on a cancelled run ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-cancel", CONSILIUM_FAKE_CLAUDE_STEER_MODE="hang")
+    proc, run_id, _ = start_steerable("claude-code", "long task", env, cwd)
+    time.sleep(0.3)
+    run_cmd([str(CONSILIUM), "delegate", "cancel", run_id], env, timeout=10)
+    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id], env, timeout=40)
+    meta = _meta(reg_root, run_id)
+    if meta.get("status") == "cancelled":
+        assert_true("wait/cancel exit 130", r.returncode == 130, f"rc={r.returncode}")
+    else:
+        assert_true("wait/cancel reached a terminal status", meta.get("status") in ("failed", "completed"))
+    wait_proc(proc, timeout=20)
+
+
+def test_wait_timeout(tmp: Path) -> None:
+    print("=== e2e: wait --timeout does not touch the run ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-timeout", CONSILIUM_FAKE_CLAUDE_STEER_MODE="hang")
+    proc, run_id, _ = start_steerable("claude-code", "long task", env, cwd)
+    started = time.time()
+    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id, "--timeout", "1"], env, timeout=20)
+    elapsed = time.time() - started
+    assert_true("wait/timeout exit 75", r.returncode == 75, f"rc={r.returncode} err={r.stderr[-200:]}")
+    assert_true("wait/timeout returns promptly", elapsed < 6, f"{elapsed:.2f}s")
+    assert_true("wait/timeout suggests resuming", "delegate wait" in r.stderr, r.stderr[-200:])
+    st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
+    assert_true(
+        "wait/timeout leaves the run alive",
+        st.get("status") not in ("cancelled", "failed"),
+        str(st.get("status")),
+    )
+    run_cmd([str(CONSILIUM), "delegate", "cancel", run_id], env, timeout=10)
+    wait_proc(proc, timeout=25)
+
+
+def test_wait_supervisor_killed(tmp: Path) -> None:
+    print("=== e2e: wait never hangs on a dead supervisor ===")
+    env, reg_root, cwd = _wait_env(tmp, "wait-killed", CONSILIUM_FAKE_CLAUDE_STEER_MODE="hang")
+    proc, run_id, _ = start_steerable("claude-code", "long task", env, cwd)
+    time.sleep(0.3)
+    sup_pid = int(_meta(reg_root, run_id).get("pid") or 0)
+    assert_true("wait/killed found supervisor pid", sup_pid > 0)
+    os.kill(sup_pid, signal.SIGKILL)
+
+    started = time.time()
+    # A subprocess timeout here would surface as an exception, which is exactly
+    # the regression this test exists to catch.
+    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id], env, timeout=30)
+    assert_true("wait/killed returns without hanging", time.time() - started < 25)
+    assert_true("wait/killed exit 70", r.returncode == 70, f"rc={r.returncode} err={r.stderr[-200:]}")
+    meta = _meta(reg_root, run_id)
+    assert_true("wait/killed reaped to failed", meta.get("status") == "failed", str(meta.get("status")))
+    assert_true("wait/killed records supervisor_dead", meta.get("error") == "supervisor_dead", str(meta.get("error")))
+    assert_true("wait/killed did not trigger recovery", int(meta.get("recovery_count") or 0) == 0)
+    wait_proc(proc, timeout=15)
+
+
+def test_list(tmp: Path) -> None:
+    print("=== e2e: list discovers runs ===")
+    env, reg_root, cwd = _wait_env(tmp, "list")
+    done_proc, done_id, _ = start_steerable("claude-code", "quick task", env, cwd)
+    wait_proc(done_proc, timeout=30)
+
+    env["CONSILIUM_FAKE_CLAUDE_STEER_MODE"] = "hang"
+    live_proc, live_id, _ = start_steerable("claude-code", "long task", env, cwd)
+    time.sleep(0.3)
+
+    active = json.loads(run_cmd([str(CONSILIUM), "delegate", "list", "--json"], env).stdout)
+    ids = [m["run_id"] for m in active]
+    assert_true("list default hides terminal runs", done_id not in ids, str(ids))
+    assert_true("list default shows the live run", live_id in ids, str(ids))
+
+    every = json.loads(run_cmd([str(CONSILIUM), "delegate", "list", "--all", "--json"], env).stdout)
+    all_ids = [m["run_id"] for m in every]
+    assert_true("list --all shows both", done_id in all_ids and live_id in all_ids, str(all_ids))
+
+    sup_pid = int(_meta(reg_root, live_id).get("pid") or 0)
+    os.kill(sup_pid, signal.SIGKILL)
+    time.sleep(0.5)
+    stale = json.loads(run_cmd([str(CONSILIUM), "delegate", "list", "--json"], env).stdout)
+    row = next((m for m in stale if m["run_id"] == live_id), {})
+    assert_true("list marks a dead supervisor stale", row.get("effective_status") == "stale", str(row))
+    assert_true(
+        "list without --reap does not rewrite meta",
+        _meta(reg_root, live_id).get("status") not in TERMINAL_FOR_TEST,
+        str(_meta(reg_root, live_id).get("status")),
+    )
+
+    run_cmd([str(CONSILIUM), "delegate", "list", "--reap", "--all", "--json"], env)
+    reaped = _meta(reg_root, live_id)
+    assert_true("list --reap marks it failed", reaped.get("status") == "failed", str(reaped.get("status")))
+    assert_true("list --reap records supervisor_dead", reaped.get("error") == "supervisor_dead")
+    wait_proc(live_proc, timeout=15)
+
+
+def test_watch_terminates(tmp: Path) -> None:
+    print("=== e2e: watch streams changes and stops at terminal ===")
+    env, reg_root, cwd = _wait_env(tmp, "watch", CONSILIUM_FAKE_STEER_SLOW="1.0")
+    proc, run_id, _ = start_steerable("claude-code", "slow task", env, cwd)
+    r = run_cmd([str(CONSILIUM), "delegate", "watch", run_id], env, timeout=40)
+    lines = [ln for ln in r.stdout.splitlines() if ln.strip()]
+    assert_true("watch exit 0", r.returncode == 0, r.stderr[-200:])
+    assert_true("watch has lines", len(lines) >= 2, str(lines))
+    assert_true("watch opens with attached", "event=attached" in lines[0], lines[0] if lines else "")
+    assert_true("watch closes with terminal", "event=terminal" in lines[-1], lines[-1] if lines else "")
+    assert_true("watch reports completion", "status=completed" in lines[-1], lines[-1] if lines else "")
+    # One emitted line costs one model turn under the Monitor tool, so per-chunk
+    # adapter events must never reach the stream.
+    assert_true("watch drops text chunks", not any("kind=text" in ln or "kind=thought" in ln for ln in lines), str(lines))
+    assert_true("watch stays within the line budget", len(lines) < 40, f"{len(lines)} lines")
+    wait_proc(proc, timeout=20)
+
+
+def test_detach_lifecycle(tmp: Path) -> None:
+    print("=== e2e: detached delegate ===")
+    env, reg_root, cwd = _wait_env(tmp, "detach", CONSILIUM_FAKE_STEER_SLOW="1.0")
+    # Scope the leak check to this test: earlier tests SIGKILL delegate.sh,
+    # which skips its EXIT trap and legitimately strands temp files.
+    task_tmp_glob = os.path.join(tempfile.gettempdir(), "consilium-delegate-task.*")
+    pre_existing = set(glob.glob(task_tmp_glob))
+    started = time.time()
+    r = run_cmd(
+        [str(CONSILIUM), "delegate", "-a", "claude-code", "--detach", "detached task"],
+        env, timeout=40,
+    )
+    elapsed = time.time() - started
+    assert_true("detach exit 0", r.returncode == 0, r.stderr[-300:])
+    assert_true("detach returns immediately", elapsed < 15, f"{elapsed:.2f}s")
+    run_id = r.stdout.strip()
+    assert_true("detach prints only the run id", run_id.startswith("run_") and "\n" not in r.stdout.strip(), repr(r.stdout))
+    assert_true("detach implies steerable", "--detach implies --steerable" in r.stderr, r.stderr[-200:])
+
+    meta = _meta(reg_root, run_id)
+    sup_pid = int(meta.get("pid") or 0)
+    # Proves os.setsid ran: a SIGINT aimed at the caller's group cannot reach it.
+    assert_true("detached supervisor leads its own session", os.getsid(sup_pid) == sup_pid, str(sup_pid))
+
+    log = Path(str(meta.get("detach_log") or ""))
+    assert_true("detach log moved under the run dir", str(reg_root) in str(log), str(log))
+    assert_true("detach log exists", log.is_file(), str(log))
+    assert_true("detach log is private", oct(log.stat().st_mode & 0o777) == "0o600", oct(log.stat().st_mode & 0o777))
+
+    leaked = set(glob.glob(task_tmp_glob)) - pre_existing
+    assert_true("detach cleans up its task temp file", not leaked, str(leaked))
+    detach_tmp = glob.glob(os.path.join(tempfile.gettempdir(), "consilium-detach*"))
+    assert_true("detach cleans up its handshake temp file", not detach_tmp, str(detach_tmp))
+
+    w = run_cmd([str(CONSILIUM), "delegate", "wait", run_id], env, timeout=60)
+    assert_true("detach + wait exit 0", w.returncode == 0, w.stderr[-200:])
+    assert_true("detach + wait returns the answer", w.stdout.strip() != "", repr(w.stdout))
+
+    # Same handshake, but the task arrives on stdin.
+    r2 = run_cmd(
+        [str(CONSILIUM), "delegate", "-a", "claude-code", "--detach"],
+        env, timeout=40, input_text="task from stdin",
+    )
+    assert_true("detach from stdin exit 0", r2.returncode == 0, r2.stderr[-300:])
+    rid2 = r2.stdout.strip()
+    assert_true("detach from stdin prints a run id", rid2.startswith("run_"), repr(r2.stdout))
+    w2 = run_cmd([str(CONSILIUM), "delegate", "wait", rid2], env, timeout=60)
+    assert_true("detach from stdin + wait exit 0", w2.returncode == 0, w2.stderr[-200:])
+
+
+TERMINAL_FOR_TEST = ("completed", "failed", "cancelled")
+
+
 def main() -> int:
     for p in FAKES.iterdir():
         if p.is_file():
@@ -2283,6 +2536,15 @@ def main() -> int:
         test_malicious_client_id_e2e(tmp)
         test_claude_interrupt_rejected(tmp)
         test_process_cleanup(tmp)
+        test_wait_already_terminal(tmp)
+        test_wait_running_to_completed(tmp)
+        test_wait_failed(tmp)
+        test_wait_cancelled(tmp)
+        test_wait_timeout(tmp)
+        test_wait_supervisor_killed(tmp)
+        test_list(tmp)
+        test_watch_terminates(tmp)
+        test_detach_lifecycle(tmp)
     except Exception:
         bad("suite crashed", traceback.format_exc())
     finally:

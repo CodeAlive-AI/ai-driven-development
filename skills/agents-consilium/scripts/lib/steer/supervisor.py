@@ -15,6 +15,7 @@ from .mailbox import Mailbox, MailboxError
 from .registry import Registry, RegistryError, TERMINAL_STATUSES
 from .util import (
     DIR_MODE,
+    FILE_MODE,
     append_jsonl,
     atomic_write_text,
     ensure_dir,
@@ -102,11 +103,17 @@ class Supervisor:
         cwd: str,
         artifacts_dir: str,
         registry: Optional[Registry] = None,
+        log_file: str = "",
+        run_id_file: str = "",
     ):
+        self.run_id_file = run_id_file
         self.agent_id = agent_id
         self.task = task
         self.cwd = cwd
         self.artifacts_dir = artifacts_dir
+        # Detached runs have their stdio redirected into this file by the
+        # launcher, before the run id (and therefore the run dir) exists.
+        self.log_file = log_file
         self.registry = registry or Registry()
         self.run_id: Optional[str] = None
         self.mailbox: Optional[Mailbox] = None
@@ -145,9 +152,18 @@ class Supervisor:
         # Also print bare run_id line for easy capture
         sys.stderr.write(f"run_id={self.run_id}\n")
         sys.stderr.flush()
+        # Detached launchers cannot scrape our stderr, and the stdio log moves
+        # under the run dir moments from now. Hand the id over through a file
+        # that never moves instead of racing the log.
+        if self.run_id_file:
+            try:
+                atomic_write_text(Path(self.run_id_file), f"{self.run_id}\n")
+            except OSError as e:
+                progress("steer", f"run_id={self.run_id}", f"run_id_file_failed={e}")
 
         run_dir = self.registry.run_path(self.run_id)
         self.mailbox = Mailbox(run_dir)
+        self._relocate_detach_log(run_dir)
 
         # If caller passed a placeholder (empty / "." / cwd) we relocate protocol
         # artifacts under the private registry run dir (0700) and update meta.
@@ -919,6 +935,32 @@ class Supervisor:
         return str(Path(path).expanduser())
 
 
+    def _relocate_detach_log(self, run_dir: Path) -> None:
+        """Move a detached run's stdio log under the private run dir.
+
+        The launcher cannot name this file itself: the run id does not exist
+        until create_run. rename(2) keeps our already-open stdout/stderr fds
+        pointing at the same inode, so nothing needs to be reopened.
+        """
+        if not self.log_file:
+            return
+        src = Path(self.log_file)
+        dest = run_dir / "supervisor.log"
+        try:
+            if src.resolve() == dest.resolve():
+                target = dest
+            else:
+                os.replace(str(src), str(dest))
+                target = dest
+            os.chmod(target, FILE_MODE)
+        except OSError as e:
+            # A log we cannot move is a cosmetic loss; the run must continue.
+            progress("steer", f"run_id={self.run_id}", f"detach_log_move_failed={e}")
+            target = src
+        self.log_file = str(target)
+        self._update_registry_meta(detach_log=self.log_file)
+
+
 def _prefix_hash(text: str) -> str:
     import hashlib
 
@@ -936,7 +978,23 @@ def main(argv: Optional[list] = None) -> int:
     # private registry run when archival is off or path is project cwd.
     p.add_argument("--artifacts-dir", default="", required=False)
     p.add_argument("--registry-root", default="")
+    p.add_argument("--log-file", default="", help="detached stdio log; relocated under the run dir")
+    p.add_argument("--run-id-file", default="", help="handshake file the run id is written to")
+    p.add_argument(
+        "--detach-setsid",
+        action="store_true",
+        help="become a session leader so the caller's SIGINT/SIGHUP cannot reach this run",
+    )
     args = p.parse_args(argv)
+    if args.detach_setsid:
+        # Not cosmetic: without a new session a Ctrl-C or teardown aimed at the
+        # caller's process group would tear down the delegated run and its whole
+        # backend tree. It also guarantees our own kill_process_group on cleanup
+        # can never signal the caller's shell.
+        try:
+            os.setsid()
+        except OSError:
+            pass  # already a session leader
     task = Path(args.task_file).read_text(encoding="utf-8")
     reg = Registry(Path(args.registry_root) if args.registry_root else None)
     sup = Supervisor(
@@ -945,6 +1003,8 @@ def main(argv: Optional[list] = None) -> int:
         cwd=args.cwd,
         artifacts_dir=args.artifacts_dir,
         registry=reg,
+        log_file=args.log_file,
+        run_id_file=args.run_id_file,
     )
     return sup.run()
 
