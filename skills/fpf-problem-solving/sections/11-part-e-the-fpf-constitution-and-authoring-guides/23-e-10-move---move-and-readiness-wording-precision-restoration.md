@@ -4,7 +4,7 @@
 > **Status:** Stable
 > **Normativity:** Normative for move-like and readiness-like wording-use restoration.
 
-**At a glance.** `E.10.MOVE` restores the exact FPF value or relation hidden by move-like, movement-like, and readiness-like wording. It keeps bounded Plain `mantra move` only for one A.22.CGUS demonstrated row, restores evaluation-result change wording to an E.23 prediction, and returns every stronger claim to its direct governing pattern.
+**At a glance.** `E.10.MOVE` restores the exact FPF value or relation hidden by move-like, movement-like, and readiness-like wording. It distinguishes an A.22.CGUS demonstrated row from a Plain local-mantra result and a Plain long-mantra map location, restores evaluation-result change wording to an E.23 prediction, and returns every stronger claim to its direct governing pattern.
 
 **Use this when.** Use this pattern when wording such as move, movement, step, action, readiness, route, workflow, or process is doing more than ordinary prose and a reader could mistake a demonstrated continuation, recommendation, prediction, transformation, readiness relation, gate decision, publication relation, or performed work for another kind.
 
@@ -48,7 +48,7 @@ Restore the governed target before choosing replacement wording:
 
 1. Name the exact `GovernedTextSpan`, the `ClaimBeingMade`, and the `ObjectUnderWordingRepair`.
 2. Decide whether the wording is ordinary prose, a quotation, or wording relied on for an FPF-governed claim. Ordinary and quotation uses can close without inventing a technical target.
-3. When the phrase is `mantra move`, first determine whether the local mantra has been admitted by `A.22.CGUS` as a `DemonstrativeUnfoldingSlice@Context`. If so, recover one `DemonstratedPatternUseRow@Context` and keep the phrase only when the enclosing slice, EntityOfConcern, practical-use question, public template or project candidate, direct pattern, Solution, expected result, and current condition are recoverable. If not, keep the local mantra as a compact rendering of its pattern's Solution and repair the move-like wording through that direct pattern rather than inventing a demonstrated row.
+3. When the phrase is `mantra move`, first ask which use is present. For an A.22.CGUS-admitted `DemonstrativeUnfoldingSlice@Context`, recover one complete `DemonstratedPatternUseRow@Context`; keep the phrase only when its enclosing slice, question, direct pattern, expected result, and continuation condition are recoverable. For a Plain local mantra, name the bounded result and restore the move-like wording through that result's direct pattern. For a Plain long mantra, name the intended final result and the particular map location whose answer or stop is current, then restore the direct pattern that owns that answer. Do not invent a demonstrated row, collapse the long map into one pattern's Solution, or treat any branch as Work order.
 4. When `move`, `movement`, `direction`, or similar wording predicts a later evaluation result, recover `ExpectedEvaluationResultChange@Context` under `E.23`. That value is a coordinate-and-scale-qualified prediction episteme, not an operation, transition, movement, work occurrence, or proof of improvement.
 5. For every other governed use, name the exact recovered value or relation, its kind, relation signature when the kind admits a relation, and its direct governing pattern. If that governed value is already clear, use its pattern directly.
 6. Split the text when one phrase carries more than one governed value. A recommendation, method, transformation, readiness relation, gate decision, publication relation, and performed work do not become one value because the same word was used for them.
@@ -246,7 +246,7 @@ Costs:
 
 Move-like wording is too useful to ban and too ambiguous to leave ungoverned. `E.10.MOVE` gives a narrow restoration path: recover the governed text span, claim being made, and object under wording repair; classify borrowed or ordinary wording; name the governed FPF value; preserve reader use; and apply the pattern that governs that value.
 
-The pattern is a child of E.10 because it starts as wording-use restoration. Two retained restorations are deliberately narrow: `mantra move` returns to one A.22.CGUS demonstrated row, while evaluation movement wording returns to one E.23 prediction about a later evaluation result. Recommendation, transformation, readiness, gate, publication, and work claims remain with their direct patterns.
+The pattern is a child of E.10 because it starts as wording-use restoration. Its mantra branch returns an admitted demonstrative use to one A.22.CGUS row, a Plain local use to its bounded result's direct pattern, and a Plain long use to the direct owner of the current map answer or stop. Evaluation movement wording returns separately to one E.23 prediction about a later evaluation result. Recommendation, transformation, readiness, gate, publication, and Work claims remain with their direct patterns.
 
 ### E.10.MOVE:11 - SoTA-Echoing
 
@@ -261,7 +261,7 @@ The current best problem-solving line for this pattern is therefore the current 
 ### E.10.MOVE:12 - Relations
 
 - **Builds on:** `E.10`, `E.10.ARCH`, `A.3.4.P`, `A.22.CGUS`, `E.11.PUR`, `E.23`, `A.15.5`, and `E.24`.
-- **Coordinates with:** `E.18`, `E.18.1`, `A.15`, `A.21`, `C.24`, `C.30`, `E.17`, `F.17`, `F.18`, `G.11`, `A.10`, and each recovered governed value's direct governing pattern. `F.18` governs a durable-name decision; `G.11` governs refresh orchestration only when currentness, edition, telemetry, freshness, or decay is the actual claim.
+- **Coordinates with:** `A.1.STM` for a non-CGUS system-thinking long-mantra map location; `E.18`, `E.18.1`, `A.15`, `A.21`, `C.24`, `C.30`, `E.17`, `F.17`, `F.18`, `G.11`, `A.10`, and each recovered governed value's direct governing pattern. `F.18` governs a durable-name decision; `G.11` governs refresh orchestration only when currentness, edition, telemetry, freshness, or decay is the actual claim.
 - **Selected by:** E.10 trigger scan when move or readiness wording has FPF-governed use and no direct governing pattern has already resolved the wording.
 
 ### E.10.MOVE:End

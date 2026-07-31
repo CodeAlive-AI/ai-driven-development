@@ -294,15 +294,15 @@ After CGUS admission, create a separate `DemonstrativeUnfoldingSlice@Context`, c
 
 #### A.22.CGUS:4.3.3 - Bounded names and bridge
 
-`Mantra` is broader Plain didactic wording for a short repeatable formulation that keeps a local pattern's Solution in attention. The word alone does not recover one universal FPF kind. `A.6.P`, for example, can publish a local RPR mantra that recalls its repair order without claiming a wider unfolding structure.
+`Mantra` is broader Plain didactic wording for a repeatable attention aid. A local mantra holds one bounded result, often one pattern's `Solution`; a long mantra holds the dependency from a recognizable difficulty to a distant intended result, its checking, and later use across several direct patterns. A short phrase can recall either scope. The word alone recovers no universal FPF kind, Method, WorkPlan, Work, or unfolding structure. `A.6.P`, for example, can publish a local RPR mantra that recalls its repair order, while `A.1.STM` helps practitioners use one Plain system-thinking long mantra without making either aid a CGUS.
 
-Other patterns may keep an established local name such as `mnemonic`, `watchword`, or `heuristic` when that name better tells their readers what the aid does. A.19's common-space comparison mnemonic, A.15.1's CAC mnemonic, and E.8's seven-step heuristic need not be renamed `mantra`. Conversely, an acronym, title mnemonic, or retrieval label is not a local mantra merely because it is memorable. These are Plain didactic choices interpreted from the local Solution and reader use, not rival FPF kinds.
+These are Plain didactic choices interpreted from the reader use. Other patterns may keep an established local name such as `mnemonic`, `watchword`, or `heuristic` when that name better tells their readers what the aid does. A.19's common-space comparison mnemonic, A.15.1's CAC mnemonic, and E.8's seven-step heuristic need not be renamed `mantra`; conversely, an acronym, title mnemonic, or retrieval label is not a local mantra merely because it is memorable. For a local aid, recover the one bounded result, its direct owner, and its return point. For a long aid, choose by the intended final result and keep each intermediate result with its direct owner. Neither scope creates a rival FPF kind.
 
-This pattern governs only the narrower case in which a local mantra presents admissible conditional continuations through a named wider constraint-governed unfolding structure. In that case, `mantra` may name the admitted `DemonstrativeUnfoldingSlice@Context`, and `mantra move` may name one `DemonstratedPatternUseRow@Context` inside it. Neither label grants method, plan, order, authority, work, or teaching-medium identity.
+This pattern governs only the narrower case in which separately recovered positions, conditions, branches, returns, and stops warrant an admitted constraint-governed unfolding structure and one demonstrated slice through it. A Plain local or long mantra does not become that slice merely by being memorable or repeatable. In the admitted demonstrative use, `mantra` may name the `DemonstrativeUnfoldingSlice@Context`, and `mantra move` may name one `DemonstratedPatternUseRow@Context` inside it. Neither label grants method, plan, order, authority, Work, or teaching-medium identity.
 
 ##### Ordinary bounded use
 
-In public FPF explanation, call the admitted slice a `demonstrative walkthrough`. In the bounded seminar context recorded below, `mantra` is the shorter repeatable name for that same demonstrative episteme. One `mantra move` is a `DemonstratedPatternUseRow@Context`: it names the direct pattern, its Solution, the expected result, and the condition for continuing. Outside this admitted CGUS-demonstrative use, interpret a local mantra from the pattern's own Solution and context rather than forcing it into `DemonstrativeUnfoldingSlice@Context`.
+In public FPF explanation, call the admitted slice a `demonstrative walkthrough`. In the bounded seminar context recorded below, `mantra` is the shorter repeatable name for that same demonstrative episteme. One `mantra move` is a `DemonstratedPatternUseRow@Context`: it names the direct pattern, its Solution, the expected result, and the condition for continuing. Outside this admitted CGUS-demonstrative use, keep a local mantra with its bounded result and direct owners, or a long mantra with its intended final result and cross-pattern dependency map. Force neither into `DemonstrativeUnfoldingSlice@Context`.
 
 ##### Naming settlement and bounded reuse
 
@@ -320,7 +320,7 @@ TechLabel: DemonstrativeUnfoldingSlice@Context
 PlainLabel: demonstrative walkthrough
 CandidateSet: [demonstrative walkthrough, mantra, mnemonic walkthrough, solution-story refrain, repeated explanatory walkthrough, pattern-use refrain]
 RejectedCandidates:
-  mantra -> broader local didactic wording that does not by itself identify this CGUS-demonstrative value
+  mantra -> broader Plain local-or-long didactic wording that does not by itself identify this CGUS-demonstrative value
   mnemonic walkthrough -> foregrounds a memory technique rather than the represented structure
   solution-story refrain -> overstates narrative form and refrain structure
   repeated explanatory walkthrough -> is too long to serve as the public label

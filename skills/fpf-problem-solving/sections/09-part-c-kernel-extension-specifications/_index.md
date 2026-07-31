@@ -29,7 +29,7 @@
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](19-c-3-a---typed-guard-macros-for-kinds-usm.md) (461 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
 - [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (716 lines) — Normativity: Normative unless marked informative
 - [C.13 — Constructional Mereology (Compose‑CAL)](21-c-13-constructional-mereology.md) (251 lines) — At a glance. Use C.13 when a practitioner must show how exact constituents and obtaining part relations assemble one whole, collection, or aspect. The construction account explains the structural...
-- [C.16 - Measurement & Metrics Characterization (MM‑CHR)](22-c-16---measurement-metrics-characterization.md) (454 lines) — Use this pattern when. Use C.16 when a value, score, rating, metric label, QL probe output, dashboard reading, or comparison is being treated as meaningful without a visible characteristic, scale,...
+- [C.16 - Measurement & Metrics Characterization (MM‑CHR)](22-c-16---measurement-metrics-characterization.md) (296 lines) — Use this pattern when. Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic,...
 - [C.16.P - Characteristic and Scale Precision Restoration](23-c-16-p---characteristic-and-scale-precision-restoration.md) (250 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](24-c-16-q---quality-term-precision-restoration.md) (777 lines) — Type: Characterization precision-restoration pattern
 - [C.17 - Characterising Generative Novelty & Value (Creativity‑CHR)](25-c-17---characterising-generative-novelty-value.md) (720 lines) — Status. Mechanism specification (CHR) — normative where stated.
@@ -40,10 +40,10 @@
 - [C.19.2 - Use-Bounded Apparatus Application](30-c-19-2---use-bounded-apparatus-application.md) (165 lines) — Type: Architectural (A)
 - [C.20 - Composition of U.Discipline (Discipline‑CAL)](31-c-20---composition-of-u-discipline.md) (135 lines) — U.Discipline is the root durable holon kind used for field-level practice-and-knowledge wholes. Its EntityOfConcern lets FPF users talk about a discipline as one reusable object without collapsing it...
 - [C.21 - Field Health & Structure (Discipline-CHR)](32-c-21---field-health-structure.md) (255 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline, without collapsing into taste, anecdotes, dashboard views,...
-- [C.22 - Problem Typing & TaskSignature Assignment (Problem-CHR)](33-c-22---problem-typing-tasksignature-assignment.md) (373 lines) — Purpose. Give FPF an admissible, minimal, and portable TaskSignature@Context declaration for selector-facing use after the problem-side representation is stable enough for Principles-to-Work,...
+- [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](33-c-22---task-typing-and-tasksignature-assignment.md) (376 lines) — Purpose. Give FPF an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
 - [C.22.1 - Task-family adaptation signature](34-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
-- [C.22.PFR - Problematic-For Relation](35-c-22-pfr---problematic-for-relation.md) (320 lines) — Normativity: Normative unless marked informative
-- [C.22.2 - ProblemCard@Context](36-c-22-2---problemcard-context.md) (655 lines) — Normativity: Normative
+- [C.22.PFR - Problematic-For Relation](35-c-22-pfr---problematic-for-relation.md) (333 lines) — Normativity: Normative unless marked informative
+- [C.22.2 - ProblemCard](36-c-22-2---problemcard.md) (645 lines) — Normativity: Normative
 - [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](37-c-23---methodfamily-evidence-maturity.md) (203 lines) — LOG (logic) for deductive shells for admissibility
 - [C.24 - Agentic Tool-Use and Call Planning (C.Agent-Tools-CAL)](38-c-24---agentic-tool-use-and-call-planning.md) (350 lines) — Normativity: Normative
 - [C.25 - Q-Bundle: Authoring "-ilities" as Structured Quality Bundles](39-c-25---q-bundle-authoring--ilities-as-structured-quality-bun.md) (417 lines) — Type: Definitional (D)
@@ -68,7 +68,7 @@
 - [C.31.RSA - Reusable Structure Accounting](58-c-31-rsa---reusable-structure-accounting.md) (381 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](59-c-31-asap---architecture-scale-amenability-preference.md) (300 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](60-c-32---architecture-candidate-synthesis.md) (319 lines) — Type: Architectural pattern
-- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](61-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (318 lines) — Type: Architectural process pattern under C.32
+- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](61-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (320 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](62-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (201 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](63-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (265 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](64-c-32-ace---architecture-characteristic-eval-programs.md) (201 lines) — Type: Architecture eval-support subpattern under C.32

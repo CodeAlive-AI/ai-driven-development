@@ -82,7 +82,7 @@ An episteme is ethically current when its claim-bearing structure, source-use re
 
 **Engineering advice.** A consultant improves the effectiveness of a client's harmful project. The conflict is not only "bad client, good method." `D.3` maps the client organization, affected public, consultant role assignment, method, work occurrence, responsibility threshold, evidence uncertainty, and consequence horizon. `D.4` governs refusal, conditions, escalation, or decision use.
 
-**Collection case.** A fleet-level optimization reduces maintenance cost but increases failure risk for a small subfleet used in harsher conditions. `D.3` names the fleet, subfleet, membership relation, affected users, evidence set, value concerns, and consequence horizon. It does not infer that the fleet is a responsible super-holon unless an admitted pattern allows that claim.
+**Collection case.** A fleet-level optimization reduces maintenance cost but increases failure risk for a small subfleet used in harsher conditions. `D.3` names the fleet, subfleet, membership relation, any acting collective system, affected users, evidence set, value concerns, responsibility relations, and consequence horizon separately. Collection membership alone makes neither the fleet a responsible acting whole nor the subfleet its part under another relation; each stronger claim needs its direct owner.
 
 **Episteme case.** A published architecture description normalizes an interface assumption that excludes an alternative implementation option. The ethical conflict may involve the episteme whole, its source-use relation, affected suppliers, and system consequences. `D.3` maps the conflict; `C.30.AD` governs architecture-description adequacy and `E.17` governs publication-use claims.
 

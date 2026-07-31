@@ -28,7 +28,7 @@ Use `B.2` first to decide whether whole reidentification is needed and to identi
 
 `B.2` is holon-general. `B.2.2` is its `U.System` specialization.
 
-A system-result MHT is current when B.2's exact candidate new whole is an acting physical or operational holon and the case needs that same whole to carry one or more separately governed system-level claims, such as delimitation, objective, coordination, capability, functioning, architecture, transformation, work, assurance, or time. The old constituent systems may remain parts, participants, resources, or interacting neighbors, but their claims do not automatically become claims about the candidate system.
+A system-result MHT is current when B.2's exact new whole proposed for recognition under the already admitted `U.System` kind is an acting physical or operational holon and the case needs that same recognized whole to carry one or more separately governed system-level claims, such as delimitation, objective, coordination, capability, functioning, architecture, transformation, work, assurance, or time. The old constituent systems may remain parts, participants, resources, or interacting neighbors, but their claims do not automatically become claims about that recognized result system.
 
 A collection of systems is not thereby a system MHT. B.2.2 carries B.2's existing-whole/new-whole comparison through complete A.1 recognition and the direct `U.System` criterion; it does not create a system-specific result object or record schema.
 
@@ -37,8 +37,8 @@ A collection of systems is not thereby a system MHT. B.2.2 carries B.2's existin
 Without this specialization:
 
 1. **System identity stays on old parts.** The project keeps component assurance, component responsibilities, and component interfaces after the operating whole has changed.
-2. **System claims become rhetoric.** A group gets a collective name, but no candidate-system delimitation, objective, obtaining coordination relation, or capability envelope is established.
-3. **Supervision is overread.** A coordination mechanism is treated as a super-holon, safety warrant, or complete system recognition.
+2. **System claims become rhetoric.** A group gets a collective name, but no delimitation, objective, obtaining coordination relation, or capability envelope is established for the exact new whole proposed for recognition under `U.System`.
+3. **Supervision is overread.** A coordination mechanism is treated as a containing whole, safety warrant, or complete system recognition without the corresponding direct facts.
 4. **Transformation is confused with containment.** One system changing another holon is treated as part-whole construction instead of transformation and work.
 5. **Architecture description replaces architecture.** Dashboards, diagrams, simulations, bills, and digital twins are treated as the operating system rather than descriptions of it.
 
@@ -84,7 +84,7 @@ When the candidate is recognized as `U.System`, state every changed result-syste
 - evidence and assurance through `A.10`, `B.3`, and `B.3.5`;
 - temporal and dynamics claims through `C.27`, `A.19`, and the direct temporal owners.
 
-Do not reuse old component evidence as if it automatically covered the candidate system. Carry an unchanged component claim only through its exact continuing relation; establish each changed result-system fact under its direct owner and support the associated claim through a separate evidence or assurance relation.
+Do not reuse old component evidence as if it automatically covered the proposed new whole after recognition under `U.System`. Carry an unchanged component claim only through its exact continuing relation; establish each changed result-system fact under its direct owner and support the associated claim through a separate evidence or assurance relation.
 
 #### B.2.2:4.3 - System Trigger Interpretation
 
@@ -95,7 +95,7 @@ When a receiving use has materialized B.2's optional `MHTTriggerProfile`, read i
 | Delimitation change | The operating whole now has an external delimitation and crossing relations that differ from the old aggregate. | `A.1`, `B.1.2`, `A.14`, `C.13` |
 | Objective or evaluation change | The whole is now evaluated by a system-level objective, mission, SLO, safety case, or viability claim. | `C.16`, `E.13`, `A.10`, decision or assurance owners |
 | Supervision or coordination change | A controller, protocol, governance relation, or distributed coordination relation regulates constituent behavior for the result whole. | `B.2.5`, `A.12`, `A.3.4`, `A.15.1` |
-| Capability or closure claim | Recover the exact capability envelope and closure relations of the candidate system; keep supporting evidence separate. | `A.2.2`, `C.16`, `A.10` for evidence use, and `B.2.4` when whole reidentification is current |
+| Capability or closure claim | Recover the exact capability envelope and closure relations of the proposed new whole after recognition under `U.System`; keep supporting evidence separate. | `A.2.2`, `C.16`, `A.10` for evidence use, and `B.2.4` when whole reidentification is current |
 | Agency threshold | The result whole crosses a concern-specific agency threshold in characteristic space. | `A.13`, `A.19`, `C.16` |
 | Temporal consolidation | A commissioning, phase, release, or operating-time consolidation changes the current system identity claim. | `C.27`, `A.15.1`, temporal owners |
 | Context reframe | The relevant bounded context changes the operating whole under concern. | `A.1`, bounded-context owners, architecture owners |
@@ -111,7 +111,7 @@ For system-result MHT, distinguish:
 - an environment or resource that participates in work;
 - a description, dashboard, twin, model, diagram, or publication about the result system.
 
-A lathe making a workpiece, a controller steering a plant, or a teacher changing a learner does not become a super-holon merely because it changes another holon. Use `A.12`, `A.3.4`, and `A.15.1` for acting side, transformation, and work. Use part-whole owners only when parthood itself is admitted.
+A lathe making a workpiece, a controller steering a plant, or a teacher changing a learner does not thereby become a part of the changed holon or the larger whole containing it. Use `A.12`, `A.3.4`, and `A.15.1` for acting side, transformation, and work. Use part-whole owners only when parthood itself is admitted.
 
 #### B.2.2:4.5 - Assurance Re-Basing
 
@@ -124,7 +124,7 @@ Ask:
 - Which assurance claims must be rewritten for the result system?
 - Which architecture, capability, functioning, work, temporal, or evidence claims now have different owners?
 
-A claim about the candidate system may reuse component evidence only through an exact correspondence or source-use relation and a fresh evaluation of applicability. The candidate does not inherit safety, reliability, responsibility, or performance claims by label.
+A claim about the recognized result system may reuse component evidence only through an exact correspondence or source-use relation and a fresh evaluation of applicability. That system does not inherit safety, reliability, responsibility, or performance claims by label.
 
 ### B.2.2:5 - Archetypal Grounding (Worked Cases)
 
@@ -156,10 +156,10 @@ The fixture being manufactured is not part of the machine merely because the mac
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
 | Named aggregate as system | A fleet, platform, or cell name is treated as system recognition. | Apply B.2 to one exact candidate; require the complete A.1 criterion and the direct `U.System` criterion. |
-| Component evidence transfer | Component certificates are read as assurance for the candidate system. | Re-test each claim against the candidate and use exact evidence or assurance relations; do not transfer support by label. |
+| Component evidence transfer | Component certificates are read as assurance for the proposed new whole after its recognition under `U.System`. | Re-test each claim against that exact recognized system and use exact evidence or assurance relations; do not transfer support by label. |
 | Coordination as whole | A controller, protocol, or coordination relation is treated as automatic system MHT. | Recover the obtaining relation, then require B.2 whole reidentification plus complete A.1 and `U.System` recognition; keep any support separate. |
 | Description as system | Dashboard, simulation, model, twin, or bill is treated as the operating system. | Use episteme, publication, source-use, and architecture-description owners for description objects. |
-| Transformation as containment | An external system changes a holon and is treated as its super-holon. | Use A.12, A.3.4, A.15.1, B.2.5, and part-whole owners separately. |
+| Transformation as containment | An external system changes a holon and is treated as its part or containing whole without a separately obtaining part-whole relation. | Use A.12, A.3.4, A.15.1, B.2.5, and part-whole owners separately. |
 
 ### B.2.2:6 - Conformance Checklist
 
@@ -180,7 +180,7 @@ The fixture being manufactured is not part of the machine merely because the mac
 | --- | --- | --- |
 | Named aggregate as system | "The platform" or "the fleet" is treated as a system because it has a name. | Identify one exact candidate and apply the complete A.1 and direct `U.System` criteria; return to the old whole if either fails. |
 | Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence owners. |
-| Controller as super-holon | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole owners separately. |
+| Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole owners separately. |
 | Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description owners. |
 | Capability jump as system MHT | A metric improves and the result is called a new system. | Use B.2's `ExistingWholeExplanationCheck`; return to capability, characteristic, method, work, or architecture owners if the existing whole remains sufficient. |
 
@@ -202,14 +202,14 @@ Costs:
 
 Valentin Turchin's meta-system transition remains a useful intuition for the system case: components can become a higher operating whole when coordination and control create a new object of management and assurance. FPF generalizes that intuition in B.2, then uses B.2.2 to keep the classical system case precise.
 
-The key distinction is ontological, not lexical. A candidate system is not a trigger profile, coordination mechanism, graph, description, dashboard, or process label. It is one exact candidate new whole that satisfies A.1 and the direct `U.System` criterion; every changed system fact and claim stays with its direct owner.
+The key distinction is ontological, not lexical. A whole proposed for recognition under the admitted `U.System` kind is not a trigger profile, coordination mechanism, graph, description, dashboard, or process label. It is one exact candidate new whole that satisfies A.1 and the direct `U.System` criterion; every changed system fact and claim stays with its direct owner.
 
 ### B.2.2:10 - SoTA-Echoing
 
 | Source family | Lesson for B.2.2 | FPF decision |
 | --- | --- | --- |
 | Meta-system transition and holonic systems lineage | A new coordinated whole can become the relevant operating object. | B.2 owns whole reidentification; B.2.2 applies complete A.1 and `U.System` recognition to the same exact candidate. |
-| Systems-of-systems and cyber-physical systems practice | Operational closure, coordination, external commitments, and assurance often change at the candidate-system level. | B.2.2 keeps the direct facts with their owners and tests each assurance claim against the exact candidate instead of transferring component support. |
+| Systems-of-systems and cyber-physical systems practice | Operational closure, coordination, external commitments, and assurance often change at the level of the exact new whole proposed for and then recognized under `U.System`. | B.2.2 keeps the direct facts with their owners and tests each assurance claim against that exact recognized system instead of transferring component support. |
 | Constructional and part-whole ontology | Acting on an object and being part of it are different relations. | A.12, A.3.4, A.15.1, A.14, and C.13 remain separate owners. |
 | Digital-twin and architecture-description practice | Rich descriptions can track a system without being the system. | Dashboards, models, twins, and publications use episteme and description owners unless the operating system is recovered as EoC. |
 

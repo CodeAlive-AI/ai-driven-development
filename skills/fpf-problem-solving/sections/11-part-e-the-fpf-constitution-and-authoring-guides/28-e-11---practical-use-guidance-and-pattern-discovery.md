@@ -43,7 +43,7 @@ Attempts to help can create a second problem. Public guidance becomes a numbered
 
 ### E.11:4 - Solution
 
-An FPF author or maintainer publishes or refreshes fifteen semantic practical-use cards. Each card starts from a recognizable situation and question, states a readable first result or exact public blocker, points to direct candidate-use templates, and links to an expansion with boundaries and one walkthrough.
+An FPF author or maintainer publishes or refreshes sixteen semantic practical-use cards. Each card starts from a recognizable situation and question, states a readable first result or exact public blocker, points to direct candidate-use templates, and links to an expansion with boundaries and one walkthrough.
 
 A practitioner, manager, or assisting agent uses the already published set: compare the cards that fit the working situation, inspect their different first results or blockers, and open the direct pattern from the card that best fits the work. Ordinary card use does not make that reader a framework publisher.
 
@@ -210,7 +210,7 @@ Exactly one walkthrough reference is present. A demonstrative slice passes A.22.
 
 Each candidate-use template passes one of two disjoint branches. A result-promise branch names one direct pattern and Solution, the admitted kind of a potential result, the local identification question, direct owner and identity-or-obtaining basis, full governed relative-object kind, category-correct relative-basis template, minimum usable result, every candidate-basis completeness condition, and a conditional receiver only when one is actually current. A blocker branch names the exact missing governor or missing information and carries no expected-result template. Reject omitted values presented as a weak promise, a public project instance, a broad family in place of the result kind, a generic result relation, or a PatternID list without selection conditions. The principal blocked overread states the most consequential false project claim that a reader could otherwise infer from the card.
 
-#### E.11:4.5 - Fifteen stable practical-use keys
+#### E.11:4.5 - Sixteen stable practical-use keys
 
 
 | Key | Public situation heading |
@@ -229,7 +229,10 @@ Each candidate-use template passes one of two disjoint branches. A result-promis
 | `MATHEMATICAL-MODELING` | Choose and bound a mathematical lens |
 | `SOTA-PORTFOLIO` | Build a current state-of-the-art synthesis pack |
 | `DPF-AUTHORING` | Build a domain or local FPF-grounded framework |
-| `SYSTEM-IN-CONTEXT` | Delimit a system and its environment before architecture synthesis |
+| `SYSTEM-RECOGNITION` | Decide whether the exact entity in the claim is a system |
+| `SYSTEM-DELIMITATION` | Decide which entities are parts of the system and which relations only cross its boundary |
+
+E.11 records one F.13-form historical read path: `splits(SYSTEM-IN-CONTEXT -> {SYSTEM-RECOGNITION, SYSTEM-DELIMITATION, WORDING, ARCHITECTURE})`. The unchanged F.13 body does not contain this row. The old card had no single surviving public-guidance identity: system recognition, system delimitation, lexical recovery, and architecture have different referents, relations or evaluations, receiving uses, first results, and direct governors. Older writing remains readable through this one read path; current card use names only the four successor keys. A.1.STM is a conditional continuation with a dedicated readable README guide, not a fifth successor key. The split creates no U-kind, relation kind, record kind, result kind, or generic `Context` claim.
 
 README owns the current public cards and their expansions. Preface explains why FPF's distinctions work together. ToC locates pattern families. Full patterns carry methods, conditions, costs, consequences, and exact result semantics. None is a second card store.
 
@@ -301,7 +304,9 @@ The team compares the first-result difference, opens `C.30` and `E.17.0`, and di
 
 #### E.11:5.2 - A later safety review needs comparison history
 
-The receiving safety review relies on an addressable rationale for why two teams considered `TIME`, `COSTLY-ACTION`, `CAUSAL-USE`, and `SYSTEM-IN-CONTEXT` before a hazardous test, because it will replay the selection after new measurements arrive. The fourth card remains plausible while the test-object boundary, participation, or functioning relation is unsettled.
+The receiving safety review relies on an addressable rationale for why two teams considered `TIME`, `COSTLY-ACTION`, `CAUSAL-USE`, and `SYSTEM-DELIMITATION` before a hazardous test, because it will replay the selection after new measurements arrive. The fourth card remains plausible while exact parthood, the direct choice or architecture-decision result that makes one inclusion/exclusion claim current for the test object, or a crossing participation relation is unsettled.
+
+In a separate systemhood fixture, “Could this stateful session or natural body be a system for this decision?” selects `SYSTEM-RECOGNITION`, because the exact entity and the A.1 evaluation can change what the decision may rely on. It does not select delimitation merely because an environment is mentioned.
 
 That named reliance admits a `PracticalUseCardShortlist@Context` with four comparison rows, the stop boundary, and the return condition. The shortlist does not authorize the test or replace evidence, assurance, gate, choice, or WorkPlan relations.
 
@@ -362,7 +367,7 @@ The visible navigation measure improved while the intended value worsened: reade
 
 **Benefits.** FPF gains human-readable public practical-use guidance without losing the potential-result kind, direct owner, two distinct basis questions, or subject-pattern authority. Readers can explore and recover from wrong turns. Ordinary use stays light, while a named later review or replay can preserve comparisons.
 
-**Costs.** Public guidance remains trustworthy only while the fifteen cards and their expansions stay synchronized with the direct patterns. Every readable result phrase needs a context-free potential-result kind, identification question, direct owner and identity-or-obtaining basis, governed relative-object kind, category-correct relative basis, and boundary behind it. Honest blocker branches add exact missing-governor or missing-information distinctions. When a named later review, replay, audit, or automation must rely on a comparison, the team must materialize addressable comparison records and maintain their stop and return conditions.
+**Costs.** Public guidance remains trustworthy only while the sixteen cards and their expansions stay synchronized with the direct patterns. Every readable result phrase needs a context-free potential-result kind, identification question, direct owner and identity-or-obtaining basis, governed relative-object kind, category-correct relative basis, and boundary behind it. Honest blocker branches add exact missing-governor or missing-information distinctions. When a named later review, replay, audit, or automation must rely on a comparison, the team must materialize addressable comparison records and maintain their stop and return conditions.
 
 ### E.11:10 - Rationale
 

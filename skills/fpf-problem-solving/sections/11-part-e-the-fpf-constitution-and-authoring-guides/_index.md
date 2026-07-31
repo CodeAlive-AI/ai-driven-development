@@ -30,7 +30,7 @@
 - [E.10.P - Conceptual Prefixes policy & registry](25-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Lexical Discipline for “Context” (D.CTX)](26-e-10-d1---lexical-discipline-for-context.md) (179 lines) — One‑sentence summary. Make the word Context unambiguous: in FPF it only denotes the formal primitive U.BoundedContext; remove the term anchor; reserve Problem Frame for situational narrative; treat...
 - [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline](27-e-10-d2---entityofconcern-description-episteme-and-specifica.md) (355 lines) — Definitional pattern - normative, notation-agnostic
-- [E.11 - Practical-Use Guidance and Pattern Discovery](28-e-11---practical-use-guidance-and-pattern-discovery.md) (395 lines) — Type: Pattern-language governance pattern (E)
+- [E.11 - Practical-Use Guidance and Pattern Discovery](28-e-11---practical-use-guidance-and-pattern-discovery.md) (400 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](29-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (553 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](30-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (272 lines) — Type: Pattern-language use pattern (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](31-e-12---didactic-primacy-cognitive-ergonomics.md) (88 lines) — The FPF is designed as an "Operating System for Thought," a tool intended to augment and clarify human (and artificial) reasoning. This mission places a unique demand on its architecture: the...
@@ -51,7 +51,7 @@
 - [E.18.1 - P2W Problem-to-Work Carry-Through](46-e-18-1---p2w-problem-to-work-carry-through.md) (598 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](47-e-18-2---transformation-flow-mathematical-description.md) (225 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](48-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (284 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
-- [E.18.NET - Network of Transformation-Flow Structures](49-e-18-net---network-of-transformation-flow-structures.md) (386 lines) — Tech-name: TransformationFlowStructureNetwork
+- [E.18.NET - Network of Transformation-Flow Structures](49-e-18-net---network-of-transformation-flow-structures.md) (396 lines) — Tech-name: TransformationFlowStructureNetwork
 - [E.19 - Pattern Quality Gates: Review and Refresh Profiles](50-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (745 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](51-e-20---mechanism-introduction-protocol.md) (407 lines) — Type: Architectural pattern
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](52-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (393 lines) — Use this when one authored FPF pattern of concern must be evaluated for quality under the use required by the governing evaluation frame: ordinary practitioner use, authoring input, landing input,...

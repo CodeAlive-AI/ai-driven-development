@@ -22,7 +22,9 @@ Typical moments:
 
 **First useful move.** Name the exact `U.Entity` under concern. Then test whether its actual construction satisfies the A.1 holon-recognition criterion under an already admitted public holon kind. `E.24.UK` admits the public kind once at ontology level; A.1 does not repeat that decision for each candidate.
 
-**What goes wrong if missed.** A document edits itself, a theory gets ports, a list becomes an organization, a lathe becomes the super-holon of the workpiece it changes, and architecture is discussed without naming the holon whose structure is selected.
+When the next engineering decision depends on which exact system acts, is intended to change, carries a capability, persists, or is being considered or designated as the project system-of-interest, use `A.1.SCR` to find that proposed subject. A.1.SCR first permits a direct-owner exit; it applies this complete criterion only while the decision still depends on systemhood. After recognition, use `A.1.STM` only when the remaining problem is loss of the long dependency from project use through architecture, Work, change, and recursive builders; otherwise continue directly to the owner of the next claim.
+
+**What goes wrong if missed.** A document edits itself, a theory gets ports, a list becomes an organization, a lathe that changes a workpiece is treated as its containing whole without an obtaining part-whole relation, and architecture is discussed without naming the holon whose structure is selected.
 
 **What this buys.** FPF gets one compact part-whole foundation without turning every whole into a physical system: identity starts at `U.Entity`; part-whole treatment starts at `U.Holon`; acting work attaches to `U.System`; claim-bearing knowledge is carried by `U.Episteme`; method holonhood is governed by `U.Method`; other admitted holon kinds keep their own governing patterns.
 
@@ -58,7 +60,7 @@ Without A.1:
 1. **System-bias spreads.** Physical and operational assumptions are projected onto epistemes, descriptions, theories, documents, dashboards, and source records.
 2. **Epistemes become agents.** A document, model, theory, pattern, or report is said to decide, promise, authorize, perform work, or revise itself.
 3. **Collections become collectives by wording.** A set of people, services, files, claims, assets, or suppliers is treated as an acting whole without boundary, coordination, role assignment, capability, method, or work evidence.
-4. **Transformation becomes containment.** A system that changes another holon is treated as that holon's super-holon or as a part-whole relation by the fact of interaction.
+4. **Transformation becomes containment.** A system that changes another holon is treated as the larger whole containing it, or as standing in a part-whole relation to it, merely from that interaction.
 5. **Architecture loses its grounding holon.** A structure, view, graph, diagram, or architecture claim floats free of the holon whose selected structure is under concern.
 6. **Slot filling creates false kinds.** A system, episteme, holon, relation occurrence, or other value is given a new intrinsic kind merely because it fills one slot of a role-assignment, evidence, publication, description, or another direct relation.
 
@@ -68,7 +70,7 @@ Without A.1:
 | --- | --- |
 | Universal root vs domain comfort | Practitioners know words such as system, model, product, team, document, program, and discipline; FPF needs a cross-domain root that does not import one domain's assumptions. |
 | Identity vs composition | A thing can be individuated before FPF knows whether it has parts or belongs to a larger whole. |
-| Acting vs claim-bearing | Systems can enact roles, methods, plans, and work; epistemes can be changed, published, cited, compared, and relied on, but they do not act by themselves. |
+| Acting vs claim-bearing | Systems can perform Work and participate in separately governed role, Method, plan, publication, citation, comparison, or reliance relations. Changed claim content identifies another episteme under C.2.1; an episteme performs none of those acts by itself. |
 | Open-world modeling vs premature completion | A holon slot can be relevant even when not yet filled; omission means "not current or not recovered", not absence in the world. |
 | Collection usefulness vs collective agency | Collections can have whole-level characteristics without being acting systems. |
 | Architecture usefulness vs math-lens drift | Graphs, algebras, matrices, and embeddings can describe structures; they do not become the structure or holon by spelling. |
@@ -121,7 +123,9 @@ When another use must inspect or cite the judgment, identify an optional C.2.1 c
 
 Exact evidence and assurance relations support or warrant assertion claim content. `G.11` separately governs whether the selected assertion edition is current. Receiving work separately decides whether to rely, decline to rely, defer, or reopen. `B.2` owns the different question whether the existing whole is no longer the right EntityOfConcern for a receiving use. A.1 satisfaction, failure, or evaluation uncertainty supplies neither warrant for a B.2 claim nor grounds for selecting B.2.
 
-In ordinary use, stop after naming the candidate, six constructive components, admitted kind, kind-specific condition, and resulting judgment needed by the work. Materialize a classification assertion only when a specific downstream task must inspect or cite that judgment.
+In ordinary use, stop after naming the exact entity being evaluated, six constructive components, admitted kind, kind-specific condition, and resulting judgment needed by the task. Materialize a classification assertion only when a specific downstream task must inspect or cite that judgment. If the result is being returned to a system-thinking long map, pass only this recognition result to A.1.STM; do not add external value, project designation, architecture, Work, or network selection to the A.1 criterion.
+
+**Historical read path.** Older FPF writing may use `super-holon`. Under `F.13`, read it either as the larger system of which `S` is an admitted part under one exact part-whole relation, or as the rejected inference that interaction, change, control, teaching, measurement, or repair alone makes such containment obtain. Current FPF does not use that historical expression as a head. `Environment` means the exact external referents and crossing relations made relevant by a stated system delimitation and use; a medium is named as such only when that exact medium is the subject. Neither denotes a generic `Context` or identifies a containing whole. An actual containing-system claim names the larger system and the exact obtaining part-whole relation.
 
 #### A.1:4.3 - Admitted Holon Kinds
 
@@ -158,7 +162,7 @@ A.1 introduces no omnibus participation relation over references to all those oc
 
 #### A.1:4.5 - U.Episteme
 
-`U.Episteme` is a claim-bearing, non-agentive holon kind. It can be changed, used, cited, published, represented, versioned, structured, compared, interpreted, or relied on by acting systems, but it does not act by itself.
+`U.Episteme` is a claim-bearing, non-agentive holon kind. Acting systems can use, cite, publish, represent, structure, compare, interpret, or rely on it through separately governed relations. Work may yield another edition, but changed claim content identifies another episteme under C.2.1 rather than an in-place transformation of the same one. The episteme does not act by itself.
 
 Use `C.2.1` for episteme identity, `EpistemeConstitutionRelation`, and the direct empirical-grounding and edition relations declared there. Use the neighboring direct patterns for viewpoint, view, claim scope, bounded model use, evidence, publication, source use, carrier, and representation. A.1 only says that an episteme can be treated as a holon when part-whole treatment of the claim-bearing object is current.
 
@@ -196,7 +200,7 @@ FPF avoids unrestricted composition. A set of nearby objects, graph, diagram, ro
 
 #### A.1:4.9 - Slot Filling Does Not Create A Kind
 
-A system that fills `HolderSystemSlot` of a role-assignment occurrence remains a system. An episteme that participates as the EntityOfConcern in an `EpistemeConstitutionRelation` remains an episteme. A system can participate in a transformation through an exact governed direct relation without becoming the changed holon's super-holon. A holon that participates as the EntityOfConcern of a structure-description episteme remains that holon rather than becoming the description.
+A system that fills `HolderSystemSlot` of a role-assignment occurrence remains a system. An episteme that participates as the EntityOfConcern in an `EpistemeConstitutionRelation` remains an episteme. A system can participate in a transformation through an exact governed direct relation without thereby becoming a part of the changed holon or the larger whole containing it. A holon that participates as the EntityOfConcern of a structure-description episteme remains that holon rather than becoming the description.
 
 The SlotSpec belongs to the direct relation declaration. Its SlotKind names the local participant slot; its ValueKind constrains admissible fillers. Filling that slot establishes neither a new intrinsic kind for the filler nor a new relation occurrence unless the direct obtaining predicate and identity rule are also satisfied. Use the direct governing pattern before introducing any durable kind name.
 
@@ -225,14 +229,14 @@ Newtonian gravitation in one exact selected edition is first a C.2.1 `U.Episteme
 
 - exact law, definition, derivation, diagram, exercise, and evidence-relation epistemes are the candidate constituents;
 - exact claim-composition and episteme part relations organize those constituents as one governed claim-bearing whole;
-- the selected-edition reidentification rule distinguishes the theory episteme and states which revisions preserve or end that identity;
+- the selected-edition identity rule distinguishes this theory episteme; different claim content identifies another episteme, and any historical continuity is stated through the applicable C.2.1 edition relation;
 - inferential and explanatory characteristics arise from the organized claim-bearing whole rather than from one constituent;
 - its actual inferential interfaces, effective reference scheme, applicability conditions, and identity-preservation conditions satisfy the applicability and compatibility conditions of at least one governed method for composing it as a constituent of a larger explanatory or educational episteme;
 - `E.24.UK` already admits `U.Episteme`, while C.2.1 supplies the kind-specific constitution condition.
 
 A textbook publication can make this edition available, but the publication form and the episteme that describes the composition method do not create the theory's compatibility or holonhood. Classification work may evaluate the criterion and a separate C.2.1 assertion may state the result; evidence, warrant, edition currentness, receiving reliance, and any B.2 whole-reidentification question remain separately governed.
 
-The theory does not teach itself, revise itself, or authorize laboratory work. A system under an exact role assignment may explain, revise, publish, compare, or use the episteme through separately governed work and relation occurrences.
+The theory does not teach itself, revise itself, or authorize laboratory work. A system under an exact role assignment may explain, publish, compare, or use this episteme through separately governed Work and relation occurrences; revision Work yields another episteme, with any edition relation tested separately.
 
 #### A.1:5.3 - Fleet As Collection Or Acting Collective
 
@@ -242,7 +246,7 @@ If a source says "the fleet responded", recover the actual claim: individual veh
 
 #### A.1:5.4 - Lathe Changing A Workpiece
 
-A lathe can change a workpiece during manufacturing without becoming the workpiece's super-holon.
+A lathe can change a workpiece during manufacturing without thereby becoming a part of the workpiece or the larger whole containing it.
 
 Use `A.3.4` to identify the bounded transformation from the exact changed referent, extent, boundary conditions, actual change facts, and continuity rule. Use the direct subject patterns for the lathe's participation, method, dated work, work-to-change facts, and evidence. Use A.14 or C.13 for part-whole only when an exact grounded part relation independently obtains.
 
@@ -277,10 +281,10 @@ This pattern intentionally resists:
 | `CC-A1-3` | A proposed new public holon kind first passes `E.24.UK`; its direct pattern then states the kind-specific membership condition without changing the common A.1 criterion for exact candidates. |
 | `CC-A1-4` | Candidate classification is not reified as a status relation. World-side satisfaction or failure, classification work, `true | false | unknown` evaluation, optional C.2.1 assertion identity, evidence or warrant, G.11 edition currentness, receiving-work disposition, and B.2 whole reidentification remain separately governed; no A.1 result warrants a B.2 claim or selects B.2. |
 | `CC-A1-5` | Role assignment, capability, method, work, transformation, functioning, evidence, and temporal claims remain separate direct relations; their reference bundle is not asserted as another occurrence. |
-| `CC-A1-6` | `U.Episteme` is non-agentive; systems may transform, publish, cite, or use epistemes, but the episteme does not act by itself. |
+| `CC-A1-6` | `U.Episteme` is non-agentive. Systems may publish, cite, use, or perform revision Work concerning epistemes, but changed claim content identifies another episteme and any edition relation is separately governed. |
 | `CC-A1-7` | Collection membership, collection-as-whole, acting collective system, whole-level characteristic, and B.2 whole reidentification are kept distinct. |
 | `CC-A1-8` | Boundary wording recovers an exact delimitation relation, criterion, or selected structure from its direct pattern; crossing wording preserves the exact crossing relation occurrence and uses F.9 without minting universal delimitation or crossing relation kinds. |
-| `CC-A1-9` | A system changing another holon is not treated as that holon's super-holon unless a separate grounded part-whole relation obtains. |
+| `CC-A1-9` | Changing, controlling, teaching, measuring, or repairing another holon does not make that holon a part of the acting system; any actual containing-whole claim names a separately grounded part-whole relation. |
 | `CC-A1-10` | A.14 and the direct part-relation patterns identify exact obtaining parthood; C.13 may ground an assembly only from those facts and does not create them; B.3.5 is opened only for a named assurance use. |
 | `CC-A1-11` | Publication forms, construction traces, and descriptions of holons remain distinct from the holons and world-side construction facts they describe. |
 | `CC-A1-12` | A candidate `U.System`, `U.Episteme`, `U.Method`, `U.Work`, or `U.Discipline` may use constructive grounding only after its direct patterns identify exact parts and whole-forming relations; a selected dependent `U.Structure` is not a holon by selection or name. |
@@ -292,7 +296,7 @@ This pattern intentionally resists:
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | System as universal root | A theory, document, model, source, or dashboard receives physical system properties. | Re-type as `U.Episteme`, publication, source-use object, or another direct object before using system claims. |
-| Document edited itself | A model, theory, or document is said to perform a revision. | Name the `U.System` in role that performed the work and the `U.Episteme` or publication that changed. |
+| Document edited itself | A model, theory, or document is said to perform a revision. | Name the `U.System` in role and the revision Work. Changed claim content identifies another `U.Episteme`; test any edition relation separately, and distinguish publication or carrier changes under their own owners. |
 | Collection as actor | A list, batch, pool, fleet, or community is said to decide or perform work. | Recover membership, collection-as-whole, whole-level characteristic, acting collective system, or B.2 whole reidentification. |
 | Interaction as one umbrella | Signal, source use, publication use, transformation, measurement, and control are all called interaction. | Recover the exact direct relation; use F.9 for a current crossing claim and `A.3.4` when bounded change is current. |
 | Omnibus participation relation | References to role, capability, method, work, transformation, evidence, and time are packed into one additional relation-shaped record. | Keep the direct relation occurrences separate; select their organization as `U.Structure` only when that organization changes the receiving use. |
@@ -305,7 +309,7 @@ Positive consequences:
 
 - FPF can talk about physical systems, organizations, documents, theories, models, work occurrences, disciplines, research programs, and selected structures without making them all systems or holons.
 - Acting work stays attached to systems in roles.
-- Epistemes can be changed, described, compared, published, and relied on without becoming agents.
+- Epistemes can be described, compared, published, and relied on without becoming agents; revision Work yields another episteme when claim content changes.
 - Architecture and selected-structure claims gain a grounding holon.
 - Collection-as-whole and acting collective claims become inspectable instead of lexical.
 
@@ -343,8 +347,10 @@ Treat a stronger source as current only when it changes the root split among `U.
 ### A.1:12 - Relations
 
 - **Builds on:** `E.24.UK` for one-time public U-kind admission, `A.14` and `C.13` for exact part relations and constructive assembly, and `B.3.5` when Working-Model assurance grounding is current.
-- **Coordinates with:** `A.15.1` for dated classification work; `A.6.1` for a current typed evaluation operation and actual bindings; `C.2.1` for classification-assertion or evaluation-result episteme identity; `A.10` and `B.3` for evidence and warrant; `G.11` for assertion-edition currentness; `B.2` for the separate whole-reidentification question; `A.1.1` for bounded model-use structure; `A.22` for selected structure; `C.30` for architecture; `A.3.4` for transformation; `C.20` for discipline; and `E.10.ARCH` for wording-use restoration.
+- **Coordinates with:** `A.1.STM` only after recognition when the current problem is use of the system-thinking long attention map; `A.15.1` for dated classification work; `A.6.1` for a current typed evaluation operation and actual bindings; `C.2.1` for classification-assertion or evaluation-result episteme identity; `A.10` and `B.3` for evidence and warrant; `G.11` for assertion-edition currentness; `B.2` for the separate whole-reidentification question; `A.1.1` for bounded model-use structure; `A.22` for selected structure; `C.30` for architecture; `A.3.4` for transformation; `C.20` for discipline; and `E.10.ARCH` for wording-use restoration.
+- **Applied by:** `A.1.SCR` when a practitioner must find the exact acting or changed system for a decision that depends on systemhood; `A.1.STM` receives only the returned recognition result when the practitioner still cannot connect that result to the long map. Direct Work, Method, capability, structure, episteme, and relation questions leave through their owners before this complete criterion is invoked.
 - **Used by:** patterns that need an exact recognized holon, an already admitted holon kind, an acting system, a non-agentive episteme, a grounded part-whole claim, a collection-versus-collective distinction, a delimitation relation, or a boundary-crossing relation.
+
 
 ### A.1:End
 

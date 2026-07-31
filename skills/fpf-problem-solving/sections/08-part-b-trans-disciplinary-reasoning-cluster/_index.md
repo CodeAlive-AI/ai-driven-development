@@ -5,18 +5,18 @@
 
 - [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (234 lines) — Type: Part B holonic construction pattern
 - [B.1.1 - Dependency Structure and Relation Grounding](02-b-1-1---dependency-structure-and-relation-grounding.md) (210 lines) — Type: Part B holonic construction pattern
-- [B.1.2 - System Aggregation and Holon Delimitation](03-b-1-2---system-aggregation-and-holon-delimitation.md) (226 lines) — Type: Part B holonic construction pattern
-- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation](04-b-1-3---epist---knowledge-specific-aggregation.md) (287 lines) — ► decided‑by: A.14 Advanced Mereology
-- [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (210 lines) — Type: B-family aggregation pattern
+- [B.1.2 - System Aggregation and Holon Delimitation](03-b-1-2---system-aggregation-and-holon-delimitation.md) (219 lines) — Type: Part B holonic construction pattern
+- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation](04-b-1-3---epist---knowledge-specific-aggregation.md) (295 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and conservative assurance bounds.
+- [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (211 lines) — Type: B-family aggregation pattern
 - [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (397 lines) — Type: Part B composition and grounding pattern
-- [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (213 lines) — Type: B-family aggregation pattern
+- [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (234 lines) — Type: B-family aggregation pattern
 - [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (307 lines) — Type: Part B holonic construction pattern
 - [B.2.P - Emergence and MHT Precision Restoration](09-b-2-p---emergence-and-mht-precision-restoration.md) (257 lines) — Type: Part B precision-restoration pattern
 - [B.2.2 - Meta-System Transition - System Specialization of MHT](10-b-2-2---meta-system-transition---system-specialization-of-mh.md) (225 lines) — Type: Part B holonic construction pattern
 - [B.2.3 - Meta-Holon Transition With Episteme Result](11-b-2-3---meta-holon-transition-with-episteme-result.md) (208 lines) — Type: Part B holonic construction pattern
 - [B.2.4 - Capability and Functioning Whole Reidentification](12-b-2-4---capability-and-functioning-whole-reidentification.md) (198 lines) — Type: Part B holonic construction pattern
 - [B.2.5 - Supervisor-Subholon Feedback Relation](13-b-2-5---supervisor-subholon-feedback-relation.md) (214 lines) — Type: Part B holonic construction pattern
-- [B.3 - Trust and Assurance Calculus (F-G-R with Congruence)](14-b-3---trust-and-assurance-calculus.md) (602 lines) — Type: Foundational (B)
+- [B.3 - Trust and Assurance Calculus (F-G-R with Congruence)](14-b-3---trust-and-assurance-calculus.md) (604 lines) — Type: Foundational (B)
 - [B.3.3 — Assurance Subtypes & Levels](15-b-3-3-assurance-subtypes-levels.md) (84 lines) — A complex project may generate hundreds of assurance targets and evidence carriers: design specifications, simulation models, test suites, and operational logs. While the Trust & Assurance Calculus...
 - [B.3.4 - Evidence Decay & Epistemic Debt](16-b-3-4---evidence-decay-epistemic-debt.md) (118 lines) — The FPF assurance model (Pattern B.3.3) provides a robust framework for building trust in holons by anchoring claims to a rich body of evidence. However, it implicitly treats this evidence as...
 - [B.3.5 - Working-Model Relations & Grounding (CT2R-LOG)](17-b-3-5---working-model-relations-grounding.md) (351 lines) — At a glance. Use B.3.5 when a human-facing Working-Model relation such as ut:ComponentOf, ut:MemberOf, ut:PortionOf, or ut:AspectOf needs an assurance grounding relation without exposing constructive...

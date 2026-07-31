@@ -19,8 +19,7 @@ ARCHITECTURE, WORKING-DOCUMENTS, OPTION-COMPARISON,
 PROBLEM-SHAPING, IMPROVEMENT, COSTLY-ACTION, TIME,
 CAUSAL-USE, DESCRIPTION-USE, NAMING, WORDING,
 MATHEMATICAL-MODELING, SOTA-PORTFOLIO, DPF-AUTHORING,
-or SYSTEM-IN-CONTEXT.
-
+SYSTEM-RECOGNITION, or SYSTEM-DELIMITATION.
 Then inspect the selected direct pattern and give:
 - the current EntityOfConcern and practical question;
 - the pattern and Solution selected under the current condition;

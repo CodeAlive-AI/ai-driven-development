@@ -76,8 +76,7 @@ EXPECTED_PART_LETTERS = list("ABCDEFGHIJK")
 
 
 def validate_part_structure(h1_titles: list[str]) -> None:
-    """Fail loudly if an expected Part A-K H1 heading is missing, duplicated, or
-    out of order, so a bad spec never silently produces a wrong sections/ tree."""
+    """Fail if present Part A-K H1 headings are duplicated or out of order."""
     positions: dict[str, list[int]] = {}
     for idx, title in enumerate(h1_titles):
         for letter in EXPECTED_PART_LETTERS:
