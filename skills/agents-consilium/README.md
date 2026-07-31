@@ -117,6 +117,27 @@ scripts/consilium delegate wait  "$RUN_ID"        # blocks, prints the full answ
 
 Edit `config.json` or set `CONSILIUM_CONFIG`.
 
+Agent ids are configured profiles, not an exhaustive list of model/effort
+pairs. To use an existing profile with a different reasoning effort for one
+invocation, set the backend env override:
+
+```bash
+CLAUDE_EFFORT=medium scripts/consilium review ask -a claude-fable --prompt-file prompt.md
+```
+
+Do not substitute prompt wording such as "medium-depth review" for an actual
+`*_EFFORT` override. In a fan-out, a backend env override applies to every
+selected agent on that backend; use a temporary `CONSILIUM_CONFIG` profile if
+only one same-backend agent should change.
+
+| Backend | Model override | Effort override |
+|---------|----------------|-----------------|
+| Codex CLI | `CODEX_MODEL` | `CODEX_EFFORT` |
+| Claude Code | `CLAUDE_MODEL` | `CLAUDE_EFFORT` |
+| OpenCode | `OPENCODE_MODEL` | `OPENCODE_EFFORT` (`none` omits variant) |
+| Grok Build | `GROK_MODEL` | `GROK_EFFORT` |
+| Gemini CLI | `GEMINI_MODEL` | none |
+
 ---
 
 ## Safety model

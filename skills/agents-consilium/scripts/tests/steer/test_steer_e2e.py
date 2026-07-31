@@ -390,7 +390,7 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
         st = json.loads(r2.stdout)
         assert_true(f"{label} status has steers", isinstance(st.get("steers"), list))
         expected_effort = {
-            "claude-code": "high",
+            "claude-code": "medium",
             "codex": "high",
             "opencode": "max",
             "grok": "high",

@@ -66,6 +66,35 @@ scripts/consilium --list-agents
 
 Each agent answers under its own heading; consilium does not merge or rank them — you are the judge.
 
+#### Agent id vs runtime effort
+
+`--list-agents` shows configured profiles, not every possible model/effort
+combination. If the desired model profile exists but the desired effort does
+not, select the exact agent id and override effort with the backend env var.
+Do **not** replace a real backend override with prompt wording like
+"medium-depth review"; that only instructs the model and does not change the
+backend's effort setting.
+
+```bash
+# Run Claude Fable with medium effort even though the registry profile says low.
+CLAUDE_EFFORT=medium scripts/consilium review ask -a claude-fable --prompt-file prompt.md
+```
+
+For one invocation, non-empty `CODEX_EFFORT`, `CLAUDE_EFFORT`,
+`OPENCODE_EFFORT`, and `GROK_EFFORT` override `config.json`. The same applies
+to `*_MODEL`. If a fan-out includes multiple agents sharing one backend, the
+env override applies to every agent on that backend in that invocation; create
+or point `CONSILIUM_CONFIG` at a temporary profile when only one of those agents
+should change.
+
+| Backend | Model override | Effort override | CLI mapping |
+|---------|----------------|-----------------|-------------|
+| Codex CLI | `CODEX_MODEL` | `CODEX_EFFORT` | `--model`, `model_reasoning_effort` |
+| Claude Code | `CLAUDE_MODEL` | `CLAUDE_EFFORT` | `--model`, `--effort` |
+| OpenCode | `OPENCODE_MODEL` | `OPENCODE_EFFORT` | `-m`, `--variant`; `none` omits variant |
+| Grok Build | `GROK_MODEL` | `GROK_EFFORT` | `-m`, `--reasoning-effort` |
+| Gemini CLI | `GEMINI_MODEL` | none | `--model` |
+
 Exit codes: `0` all ok · `2` partial · `3` all failed · `4` config · `5` usage.
 
 ### `review code`
