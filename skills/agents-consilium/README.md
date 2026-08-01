@@ -1,31 +1,35 @@
 # agents-consilium
 
-> Multi-agent **review** (read-only), single-agent **explore** (read-only repository context), and single-agent **delegate** (full YOLO) via one CLI: `scripts/consilium`.
+Use other coding agents as subagents — even when your primary agent does not support their models.
 
-Different frontier models see different things. Consilium fans out independent opinions or structured code reviews, explores an unfamiliar codebase and answers from cited evidence, or hands a whole task to one explicitly chosen agent.
+Most coding agents can only spawn copies of themselves or a small built-in model set. `agents-consilium` removes that boundary. Any coding agent that can run the skill can call a different coding-agent CLI to research, plan, review, or implement work.
 
----
+For example:
 
-## What you can run
+- send repository exploration to Grok 4.5 as a fast, cost-effective researcher;
+- ask Claude Fable to produce an independent plan;
+- delegate an implementation to Codex, Claude, Grok, or OpenCode;
+- review the same change with several unrelated model families and compare what they find.
 
-| Mode | Use when… | Command | Cost (12KB file) |
-|---|---|---|---|
-| **review ask** | architecture, design, root-cause, brainstorm | `consilium review ask` | varies |
-| **review code** *(basic)* | quick file/diff — security + correctness | `consilium review code` | $0.10–0.30 |
-| **review code** *(specialists)* | high-stakes — + perf / architecture / consistency | `consilium review code --depth specialists` | $0.30–0.80 |
-| **review code** *(super)* | production-critical — multi-stage + judge | `consilium review code --depth super` | $0.90–1.50 |
-| **review code** *(ultra)* | maximum coverage | `consilium review code --depth ultra` | $1.50–3.00 |
-| **explore** | understand a local or remote codebase, answer from evidence | `consilium explore [--repo SOURCE]` | varies |
-| **delegate** | implement a task with one agent, no sandbox | `consilium delegate -a <id>` | varies |
-| **delegate --steerable** | delegate while retaining live status/steer/cancel control | `consilium delegate -a <id> --steerable` | varies |
-| **delegate --detach** | delegate something that should outlive the caller | `consilium delegate -a <id> --detach` | varies |
-| **delegate wait / watch / list** | block on, follow, or rediscover a delegated run | `consilium delegate wait <run_id>` | — |
+Each worker runs through its real coding-agent harness, with access to the tools and repository context appropriate for the selected mode. This is not role-play inside one model.
 
-> **Pick in 5 seconds:** ideas → **ask** · normal PR file → **code basic** · money/auth → **specialists/super** · “how does this codebase work?” → **explore** · “just do it” → **delegate -a …**
->
-> `review` looks for problems. `explore` looks for context. They are different jobs — explore never hunts for defects and never emits findings.
+**Steering support:** long-running delegated agents are not fire-and-forget. You can send new guidance while they work, redirect the next turn, inspect status, watch progress, cancel a run, or detach and collect the result later.
 
----
+## Three ways to use it
+
+| Mode | What it does | Repository access |
+|---|---|---|
+| `review` | Gets independent opinions or reviews code with multiple agents | Read-only |
+| `explore` | Lets one agent investigate a local or remote repository and answer from cited evidence | Read-only |
+| `delegate` | Gives one exact agent a task, with optional live steering and detached execution | Full read/write access |
+
+In short:
+
+```text
+Need several opinions?         review
+Need to understand a repo?     explore
+Need another agent to do it?   delegate
+```
 
 ## Install
 
@@ -33,140 +37,180 @@ Different frontier models see different things. Consilium fans out independent o
 npx skills add CodeAlive-AI/ai-driven-development@agents-consilium -g -y
 ```
 
-Install at least one backend CLI:
+You also need Python 3 and at least one supported coding-agent CLI:
 
-| Backend | CLI | Notes |
+| Agent harness | Command | Supported modes |
 |---|---|---|
-| Codex CLI | `codex` | ChatGPT login |
-| OpenCode | `opencode` | OC-Go / provider auth |
-| Claude Code | `claude` | `claude /login` |
-| **Grok Build (native)** | `grok` | default Grok path (`backend: grok-build`) |
-| Gemini CLI | `gemini` | review-only; needs `GEMINI_API_KEY` |
+| [Codex CLI](https://github.com/openai/codex) | `codex` | all |
+| [Claude Code](https://docs.claude.com/claude-code) | `claude` | all |
+| [OpenCode](https://opencode.ai) | `opencode` | all |
+| [Grok Build](https://grok.x.ai) | `grok` | all |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | review only |
 
----
+Authentication stays with each CLI. If it already works in your terminal, Consilium can use it.
+
+The examples below abbreviate the entrypoint as `scripts/consilium`. When running it manually, use the installed script's absolute path and keep your shell in the repository you want the worker to inspect or change.
 
 ## Quick start
 
-```bash
-# Independent opinions
-scripts/consilium review ask "Should we use Postgres or SQLite for this CLI?"
-
-# Code review
-scripts/consilium review code path/to/file.py
-git diff HEAD | scripts/consilium review code --xml --diff
-scripts/consilium review code --depth super path/to/file.cs
-
-# Explore context — local tree, or a remote repo (cloned and cleaned up)
-scripts/consilium explore "How is authentication wired up?"
-scripts/consilium explore --repo owner/repository --ref v2.4.0 "How does the middleware pipeline work?"
-
-# YOLO: one agent, current directory, no sandbox
-scripts/consilium delegate -a grok "Add retry with exponential backoff to client.py"
-```
-
-<details>
-<summary>More examples</summary>
+List the configured workers:
 
 ```bash
 scripts/consilium --list-agents
-scripts/consilium review ask --xml --prompt-file prompt.md
-scripts/consilium review ask -a codex,grok "Q"
-scripts/consilium review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
-scripts/consilium review code --depth specialists path/to/file.py
-scripts/consilium review code --depth ultra --dry-run path/to/file.cs
-scripts/consilium explore --repo ~/src/app "Where is the public API assembled?"
-scripts/consilium explore --repo owner/repository --depth full --progress verbose --prompt-file question.md
-scripts/consilium delegate -a codex --prompt-file task.md
-scripts/consilium delegate -a grok --steerable "Implement the task"
-# Capture run_id from stderr, then from another process:
-scripts/consilium delegate steer run_<id> --mode auto "Additional detail"
-scripts/consilium delegate status run_<id> --json
-
-# Detached: survives the caller exiting; collect the answer whenever you like
-RUN_ID=$(scripts/consilium delegate -a grok --detach "Implement the task")
-scripts/consilium delegate list --active          # lost the run id?
-scripts/consilium delegate watch "$RUN_ID"        # one line per meaningful change
-scripts/consilium delegate wait  "$RUN_ID"        # blocks, prints the full answer
 ```
 
-</details>
-
----
-
-## Observability
-
-- **stderr** — live `[consilium] …` progress (ordinary start lines include resolved model/effort; output is not buffered until end), keyed per invocation (`codex`, `codex.security`, `discovery-small.0.<agent>.<role>`)
-- **progress style** — `--progress full|compact|none` on `review ask` and every `review code` depth (env `CONSILIUM_PROGRESS`); `explore` uses `compact|verbose|none`
-- **stdout** — final answer only
-- **artifacts** — `CONSILIUM_OUTPUT_DIR/run-<mode>-<word>-<word>-<hex>/{raw,normalized,final}/…` plus `final.txt`; run ids are human-readable word pairs, not UUIDs
-- **steerable status** — resolved model/effort plus mailbox/backend lifecycle evidence for each steer
-- **waiting** — `delegate wait` blocks to a terminal status and prints the full answer (exit `0` completed, `130` cancelled, `70` supervisor died, `75` your `--timeout` expired, `74` completed without text); `delegate watch` streams one line per meaningful change. Neither can hang on a dead supervisor, and neither cancels anything.
-
----
-
-## Default agents (config.json)
-
-| Id | Backend | Default |
-|----|---------|---------|
-| `codex` | codex-cli / gpt-5.6-sol high | enabled |
-| `opencode-go-kimi-k3` | OpenCode Go / Kimi K3 max | enabled |
-| **`grok`** | **grok-build / grok-4.5 high** | **enabled** |
-| `claude-opus` | claude-code / claude-opus-5 medium | enabled |
-| `claude-fable` | claude-code / claude-fable-5 low | enabled |
-| all other profiles | … | disabled |
-
-Edit `config.json` or set `CONSILIUM_CONFIG`.
-
-Agent ids are configured profiles, not an exhaustive list of model/effort
-pairs. To use an existing profile with a different reasoning effort for one
-invocation, set the backend env override:
+### Ask several model families
 
 ```bash
-CLAUDE_EFFORT=medium scripts/consilium review ask -a claude-fable --prompt-file prompt.md
+scripts/consilium review ask -a codex,grok,claude-fable \
+  "Propose a migration plan from REST to event-driven processing."
 ```
 
-Do not substitute prompt wording such as "medium-depth review" for an actual
-`*_EFFORT` override. In a fan-out, a backend env override applies to every
-selected agent on that backend; use a temporary `CONSILIUM_CONFIG` profile if
-only one same-backend agent should change.
+The agents work independently. Their answers are returned under separate headings so your primary agent — or you — can compare them without an artificial consensus.
 
-| Backend | Model override | Effort override |
-|---------|----------------|-----------------|
-| Codex CLI | `CODEX_MODEL` | `CODEX_EFFORT` |
-| Claude Code | `CLAUDE_MODEL` | `CLAUDE_EFFORT` |
-| OpenCode | `OPENCODE_MODEL` | `OPENCODE_EFFORT` (`none` omits variant) |
-| Grok Build | `GROK_MODEL` | `GROK_EFFORT` |
-| Gemini CLI | `GEMINI_MODEL` | none |
+### Use Grok as a repository researcher
 
----
+```bash
+# Explore the current repository
+scripts/consilium explore \
+  "Trace authentication from the HTTP entry point to authorization checks."
 
-## Safety model
+# Explore a remote GitHub repository
+scripts/consilium explore --repo owner/repository --ref main \
+  "How are plugins discovered and loaded?"
+```
 
-| Mode | Enforcement |
-|------|-------------|
-| review | Per-backend sandbox / plan agent / tool denylist (Grok: `--sandbox read-only` **and** tool allowlist — permission-mode plan alone is not enough) |
-| delegate | Documented YOLO flags; no sandbox; exact `-a` required |
+`explore` uses Grok 4.5 by default. It returns a direct answer, repository-relative evidence, a small context map, and any gaps it could not verify. Remote repositories are cloned into an isolated temporary workspace and removed afterwards.
 
-### Transport note
+### Ask Claude Fable for a plan
 
-Ordinary review and one-shot delegate use each harness's direct headless CLI.
-Steerable delegate uses the harness's long-lived native interface: Codex app-server,
-Claude stream-json replay, OpenCode loopback HTTP/SSE, or Grok Build ACP
-(`grok agent stdio`). Review/delegate safety remains enforced by the selected
-mode's harness flags and adapter contract.
+```bash
+scripts/consilium review ask -a claude-fable \
+  "Create a step-by-step implementation plan for DESIGN.md. Do not edit files."
+```
 
-### Limits
+### Delegate real work to another agent
 
-Consilium does not impose a timeout, maximum turn/step count, token budget, or
-response-length cap by default. Large prompts use stdin or a prompt file rather
-than argv, and complete raw/normalized/final outputs are archived without
-truncation. Provider context windows and limits configured inside each harness
-still apply. Set a positive `AGENT_TIMEOUT` only when an explicit watchdog is
-wanted for ordinary review or one-shot delegate (`0` or unset means unlimited).
-Steerable runs intentionally have no wrapper deadline; observe them with
-`status` and stop them explicitly with `cancel`.
+```bash
+scripts/consilium delegate -a grok \
+  "Implement the caching layer described in DESIGN.md and run the relevant tests."
+```
 
----
+`delegate` runs exactly one explicitly selected agent in the current directory. It has no sandbox or approval prompts, so use it only when you intend to give that agent full control of the repository.
+
+### Review code with independent specialists
+
+```bash
+# Security + correctness
+scripts/consilium review code path/to/file.py
+
+# Security, correctness, performance, architecture, and consistency
+scripts/consilium review code --depth specialists path/to/file.py
+
+# Review a diff
+git diff HEAD | scripts/consilium review code --diff
+```
+
+For deeper, multi-stage reviews with a final judge, use `--depth super` or `--depth ultra`.
+
+## Long-running delegation
+
+Use `--detach` when work should continue after the calling session exits:
+
+```bash
+RUN_ID=$(scripts/consilium delegate -a grok --detach \
+  "Implement the task in SPEC.md and run the test suite.")
+
+scripts/consilium delegate watch "$RUN_ID"
+scripts/consilium delegate wait "$RUN_ID"
+```
+
+Use `--steerable` when the caller needs to add guidance or change direction while the worker is running:
+
+```bash
+scripts/consilium delegate -a codex --steerable \
+  "Refactor the storage layer."
+
+# From another process, using the run_id printed at startup
+scripts/consilium delegate steer run_<id> --mode auto \
+  "Keep the public API backward compatible."
+scripts/consilium delegate status run_<id> --json
+scripts/consilium delegate cancel run_<id>
+```
+
+`list --active` recovers a lost run id. `wait` returns the full final answer and never cancels the worker.
+
+## Using it from a coding agent
+
+After installing the skill, ask your agent naturally:
+
+```text
+Use agents-consilium to have Grok explore this repository and explain
+how background jobs are retried. Cite the relevant files.
+```
+
+```text
+Ask Claude Fable and Codex for independent plans, compare the trade-offs,
+then recommend one. Do not modify the repository.
+```
+
+```text
+Delegate this implementation to Grok. Watch the run, collect its result,
+then verify the changes and tests yourself.
+```
+
+The calling agent reads `SKILL.md`, selects the appropriate mode, launches the external worker, and evaluates its output. The external worker is a real process backed by the selected agent and model — not a built-in subagent with a renamed persona.
+
+## Configuration
+
+Agent profiles live in `config.json`. A profile chooses the harness, model, reasoning effort, display label, and whether it participates by default.
+
+```json
+{
+  "agents": {
+    "grok": {
+      "enabled": true,
+      "backend": "grok-build",
+      "model": "grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok 4.5 (native, high)"
+    }
+  }
+}
+```
+
+Edit `config.json` or point `CONSILIUM_CONFIG` to another file. Model and effort can also be overridden for one invocation:
+
+```bash
+CLAUDE_EFFORT=medium scripts/consilium review ask \
+  -a claude-fable --prompt-file prompt.md
+```
+
+Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, and `GEMINI_MODEL`.
+
+## Safety and output
+
+- `review` and `explore` are read-only and use each harness's sandbox or tool restrictions.
+- `delegate` is intentionally full-access and requires an exact agent id; there is no default and no multi-agent fan-out.
+- Remote exploration blocks unsafe transports, does not fetch submodules or LFS payloads, and treats repository instructions as untrusted data.
+- Live progress goes to stderr; the final answer goes to stdout.
+- Complete run artifacts are saved under `CONSILIUM_OUTPUT_DIR` unless `CONSILIUM_SAVE_OUTPUTS=0`.
+- There is no timeout or token budget by default. Set a positive `AGENT_TIMEOUT` when an explicit watchdog is needed for ordinary review or one-shot delegation.
+
+## Command map
+
+```bash
+scripts/consilium review ask [...]
+scripts/consilium review code --depth basic|specialists|super|ultra [...]
+scripts/consilium explore [--repo SOURCE] [--ref REF] [...]
+scripts/consilium delegate -a <exact-agent-id> [...]
+scripts/consilium delegate -a <exact-agent-id> --steerable|--detach [...]
+scripts/consilium delegate steer|status|cancel|wait|watch|list [...]
+scripts/consilium --list-agents
+```
+
+The full operational contract, backend flags, exit codes, progress formats, and steering semantics are documented in [`SKILL.md`](SKILL.md).
 
 ## Tests
 
@@ -174,14 +218,4 @@ Steerable runs intentionally have no wrapper deadline; observe them with
 scripts/tests/run.sh
 ```
 
-Fake CLIs assert argv safety, per-harness model/effort resolution, agent
-selection, stream extraction, artifacts, and steerable control behavior.
-
----
-
-## Breaking changes in v5
-
-1. Single public CLI: `scripts/consilium` (old shell entrypoints removed).
-2. Modes: `review ask` / `review code --depth …` / `delegate -a …`.
-3. Native Grok Build is the default Grok path (`grok` agent).
-4. Explicit observability + artifact contract.
+The default suite uses fake backend CLIs, runs offline, and does not spend model tokens.
