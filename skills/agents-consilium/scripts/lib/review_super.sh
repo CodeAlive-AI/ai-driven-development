@@ -189,48 +189,50 @@ if [[ -n "$DRY_RUN" ]]; then
     exit 0
 fi
 
-# ------ Stage 1+2: dispatch all discovery passes in parallel ---------------
+# ------ Stage 1+2: dispatch discovery via declarative plan + bounded runner --
+# Plan data from workflow_plans.py; concurrency via CONSILIUM_MAX_PARALLEL
+# (default 0 = unlimited, historical behaviour).
 RESP_DIR="$TMP_ROOT/responses"
 mkdir -p "$RESP_DIR"
-
-declare -a PIDS LABELS OUT_FILES
-launch_pass() {
-    local triple="$1" stage="$2" idx="$3"
-    local agent role cap prompt_name
-    IFS='|' read -r agent role cap prompt_name <<< "$triple"
-    local out_file="$RESP_DIR/${stage}__${agent}__${role}.xml"
-    # Deterministic stage/index key — never ambient inherited CONSILIUM_ARTIFACT_KEY.
-    local art_key="${stage}.${idx}.${agent}.${role}"
-    "$LIB_DIR/discovery-pass.sh" \
-        --agent "$agent" --role "$role" --cap "$cap" \
-        --prompt "$PROMPTS_DIR/$prompt_name" \
-        --input-kind "$INPUT_KIND" \
-        --input-label "$INPUT_LABEL" \
-        --input-body-file "$INPUT_BODY_FILE" \
-        --out "$out_file" \
-        --artifact-key "$art_key" &
-    PIDS+=("$!")
-    LABELS+=("$stage:$agent/$role")
-    OUT_FILES+=("$out_file")
+PLAN_LINES="$TMP_ROOT/plan-lines.txt"
+python3 "$LIB_DIR/workflow_plans.py" super --judge "$JUDGE_AGENT" --shell \
+    > "$PLAN_LINES" || {
+    # Fallback: emit static lines from shell arrays if Python plan fails.
+    : > "$PLAN_LINES"
+    pass_idx=0
+    for p in "${SMALL_PASSES[@]}"; do
+        IFS='|' read -r agent role cap prompt_name <<< "$p"
+        echo "discovery-small|${pass_idx}|${agent}|${role}|${cap}|${prompt_name}|discovery-small.${pass_idx}.${agent}.${role}" >> "$PLAN_LINES"
+        pass_idx=$((pass_idx + 1))
+    done
+    for p in "${FRONTIER_PASSES[@]}"; do
+        IFS='|' read -r agent role cap prompt_name <<< "$p"
+        echo "discovery-frontier|${pass_idx}|${agent}|${role}|${cap}|${prompt_name}|discovery-frontier.${pass_idx}.${agent}.${role}" >> "$PLAN_LINES"
+        pass_idx=$((pass_idx + 1))
+    done
 }
 
-note "${YELLOW}[Launching $total_passes discovery passes in parallel...]${NC}" 
-pass_idx=0
-for p in "${SMALL_PASSES[@]}"; do
-    launch_pass "$p" "discovery-small" "$pass_idx"
-    pass_idx=$((pass_idx + 1))
-done
-for p in "${FRONTIER_PASSES[@]}"; do
-    launch_pass "$p" "discovery-frontier" "$pass_idx"
-    pass_idx=$((pass_idx + 1))
-done
+note "${YELLOW}[Launching $total_passes discovery passes (max_parallel=${CONSILIUM_MAX_PARALLEL:-0})...]${NC}"
 
-succeeded=0; failed=0
-for i in "${!PIDS[@]}"; do
-    code=0
-    wait "${PIDS[$i]}" || code=$?
-    if [[ $code -eq 0 ]]; then succeeded=$((succeeded+1)); else failed=$((failed+1)); fi
-done
+set +e
+SUMMARY="$("$LIB_DIR/workflow_runner.sh" run-discovery-plan \
+    --plan-lines-file "$PLAN_LINES" \
+    --prompts-dir "$PROMPTS_DIR" \
+    --input-kind "$INPUT_KIND" \
+    --input-label "$INPUT_LABEL" \
+    --input-body-file "$INPUT_BODY_FILE" \
+    --resp-dir "$RESP_DIR")"
+disc_rc=$?
+set -e
+
+succeeded="$(printf '%s\n' "$SUMMARY" | sed -n 's/^succeeded=//p' | tail -1)"
+failed="$(printf '%s\n' "$SUMMARY" | sed -n 's/^failed=//p' | tail -1)"
+succeeded="${succeeded:-0}"
+failed="${failed:-0}"
+OUT_FILES=()
+while IFS= read -r line; do
+    [[ "$line" == out=* ]] && OUT_FILES+=("${line#out=}")
+done <<< "$SUMMARY"
 
 if [[ $succeeded -eq 0 ]]; then
     echo -e "${RED}All $total_passes discovery passes failed.${NC}" >&2

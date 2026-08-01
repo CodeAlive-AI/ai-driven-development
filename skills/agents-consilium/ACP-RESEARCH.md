@@ -133,7 +133,10 @@ grok agent stdio
 ```
 
 Creating `grok-acp` would add another server or wrapper around the same native
-capability. If an ACP experiment is needed later, the useful missing component
+capability. Consilium's public runtime still uses ordinary CLI transports
+(Codex app-server, Claude stream-json, OpenCode HTTP/SSE, Grok streaming-json)
+plus a closed internal ConsiliumEvent schema for normalized artifacts; ACP is
+not a public Consilium transport. If an ACP experiment is needed later, the useful missing component
 would be a generic consilium ACP **client**, with Grok configured as one agent
 command. It would not be a Grok-specific ACP server.
 

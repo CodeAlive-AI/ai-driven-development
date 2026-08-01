@@ -22,15 +22,24 @@ if printf '%s\n' "$@" | grep -q -- 'stream-json'; then
     result-only)
       # Final result only — no content_block_delta events.
       echo '{"type":"result","result":"FAKE_CLAUDE_RESULT"}'
+      exit 0
+      ;;
+    is-error|error-result)
+      # CLI exits 0 but result carries is_error — one-shot must exit non-zero
+      # and must not emit a successful partial answer.
+      echo '{"type":"content_block_delta","delta":{"type":"text_delta","text":"FAKE_CLAUDE_PARTIAL"}}'
+      echo '{"type":"result","result":"partial-ok","is_error":true,"error":"FAKE_CLAUDE_IS_ERROR"}'
+      exit 0
       ;;
     *)
       # Delta text deliberately differs from the authoritative result so tests
       # can prove extract/backend prefer result (not concatenate or keep delta).
       echo '{"type":"content_block_delta","delta":{"type":"text_delta","text":"FAKE_CLAUDE_DELTA"}}'
       echo '{"type":"result","result":"FAKE_CLAUDE_RESULT"}'
+      exit 0
       ;;
   esac
 else
   echo 'FAKE_CLAUDE_RESULT'
+  exit 0
 fi
-exit 0

@@ -19,6 +19,10 @@ export CONSILIUM_BIN_GROK="$FAKES/fake-grok"
 export CONSILIUM_BIN_GEMINI="$FAKES/fake-gemini"
 export CONSILIUM_SUPPRESS_SHELL_WARN=1
 export AGENT_TIMEOUT=30
+# Parent shells (prior delegate runs, harnesses) must not leak mode wrappers
+# into the offline suite.
+unset CONSILIUM_RAW_PROMPT CONSILIUM_SKIP_OUTPUT_TEMPLATE CONSILIUM_MODE \
+  CONSILIUM_SINGLE_AGENT CONSILIUM_ARTIFACT_KEY 2>/dev/null || true
 
 PASS=0
 FAIL=0
@@ -232,6 +236,44 @@ GEMINI_MODEL="gemini-override" CONSILIUM_DUMP_ARGV="$TMP/gemini-overrides.json" 
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/gemini-overrides.json"'"))["argv"]))')
 assert_contains "gemini shell runner honors GEMINI_MODEL" "$argv" "--model gemini-override"
 
+# Gemini happy path: stdout answer, artifacts, backend label gemini-cli (not plain)
+export CONSILIUM_RUN_DIR="$TMP/run-gemini-ok"
+export CONSILIUM_SAVE_OUTPUTS=1
+export CONSILIUM_FAKE_GEMINI_MODE=ok
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+gem_out=$("$LIB_DIR/backend_run.sh" --mode review --agent-id gemini-cli --raw "gemini q" 2>"$TMP/gem-ok.err")
+gem_rc=$?
+set -e
+assert_eq "gemini happy-path exit 0" "$gem_rc" "0"
+assert_eq "gemini happy-path stdout" "$gem_out" "FAKE_GEMINI_OK"
+assert_file "gemini final artifact" "$CONSILIUM_RUN_DIR/final/gemini-cli.txt"
+assert_file "gemini raw artifact" "$CONSILIUM_RUN_DIR/raw/gemini-cli.jsonl"
+if [[ -f "$CONSILIUM_RUN_DIR/normalized/gemini-cli.jsonl" ]]; then
+  assert_contains "gemini normalized backend label" \
+    "$(cat "$CONSILIUM_RUN_DIR/normalized/gemini-cli.jsonl")" '"backend": "gemini-cli"'
+else
+  echo "  FAIL  gemini normalized artifact missing"
+  FAIL=$((FAIL+1))
+fi
+# plan-mode style approval on argv
+dump_review gemini-cli "$TMP/gem-plan.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/gem-plan.json"'"))["argv"]))')
+assert_contains "gemini review plan approval" "$argv" "--approval-mode plan"
+
+# Explicit empty-answer exit 66
+export CONSILIUM_RUN_DIR="$TMP/run-gemini-empty"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_FAKE_GEMINI_MODE=empty
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id gemini-cli --raw "empty" \
+  >/dev/null 2>"$TMP/gem-empty.err"
+gem_empty_rc=$?
+set -e
+assert_eq "gemini empty-answer exit 66" "$gem_empty_rc" "66"
+assert_contains "gemini empty message" "$(cat "$TMP/gem-empty.err")" "empty"
+export CONSILIUM_FAKE_GEMINI_MODE=ok
+
 # Prompts must not be embedded in argv: large tasks are delivered over stdin
 # (or a temporary prompt file for Grok), avoiding the OS ARG_MAX ceiling.
 echo "=== Unbounded prompt transport ==="
@@ -324,7 +366,27 @@ assert_contains "delegate help mentions wait" "$out" "delegate wait"
 assert_contains "delegate help mentions watch" "$out" "delegate watch"
 assert_contains "delegate help mentions list" "$out" "delegate list"
 assert_contains "delegate help mentions detach" "$out" "--detach"
+assert_contains "delegate help mentions one-shot escape hatch" "$out" "--one-shot"
+assert_contains "delegate help documents steerable default" "$out" "by default"
 assert_contains "delegate help documents wait exit codes" "$out" "75 your --timeout expired"
+
+set +e
+"$CONSILIUM" delegate -a grok --one-shot --steerable "x" \
+  >/dev/null 2>"$TMP/delegate-conflicting-mode.err"
+rc=$?
+set -e
+assert_eq "delegate rejects conflicting execution modes" "$rc" "5"
+assert_contains "delegate explains conflicting execution modes" \
+  "$(cat "$TMP/delegate-conflicting-mode.err")" "mutually exclusive"
+
+set +e
+"$CONSILIUM" delegate -a grok --one-shot --detach "x" \
+  >/dev/null 2>"$TMP/delegate-detached-oneshot.err"
+rc=$?
+set -e
+assert_eq "delegate rejects detached one-shot" "$rc" "5"
+assert_contains "delegate explains detached one-shot" \
+  "$(cat "$TMP/delegate-detached-oneshot.err")" "mutually exclusive"
 
 # Every observer command must fail cleanly on a bad id: no hang, no traceback.
 export CONSILIUM_STEER_DIR="$TMP/steer-empty"
@@ -489,7 +551,7 @@ export CONSILIUM_RUN_DIR="$TMP/run-del"
 mkdir -p "$CONSILIUM_RUN_DIR"
 export CONSILIUM_RAW_PROMPT=1
 set +e
-out=$("$CONSILIUM" delegate -a grok "implement the feature" 2>"$TMP/del.err")
+out=$("$CONSILIUM" delegate -a grok --one-shot "implement the feature" 2>"$TMP/del.err")
 rc=$?
 set -e
 assert_eq "delegate exit 0" "$rc" "0"
@@ -529,7 +591,7 @@ printf '%s\n' \
 python3 "$LIB_DIR/normalize_stream.py" --backend grok-build --agent-id grok \
   --input "$TMP/stream.jsonl" --extract-text --text-out "$TMP/stream.txt" > "$TMP/norm.jsonl"
 assert_eq "normalize concat text" "$(cat "$TMP/stream.txt")" "AB"
-assert_contains "normalize has end" "$(cat "$TMP/norm.jsonl")" '"type": "end"'
+assert_contains "normalize has run_completed" "$(cat "$TMP/norm.jsonl")" '"type": "run_completed"'
 
 for _ in $(seq 1 30); do
   printf '%s\n' '{"type":"thought","data":"word "}'
@@ -566,6 +628,34 @@ rc=$?
 set -e
 assert_eq "ultra dry-run exit 0" "$rc" "0"
 assert_contains "ultra dry-run plan" "$out" "DRY RUN"
+assert_contains "ultra dry-run 15 specialists" "$out" "15-pass"
+assert_contains "ultra dry-run discovery count 20" "$out" "20 discovery"
+
+# Declarative plan pass counts agree with dry-run keys
+plan_spec=$(python3 "$LIB_DIR/workflow_plans.py" ultra --shell 2>/dev/null | grep -c '^specialists|' || true)
+assert_eq "ultra plan specialists launched keys" "$plan_spec" "15"
+plan_total=$(python3 "$LIB_DIR/workflow_plans.py" ultra --shell 2>/dev/null | grep -cE '^(broad|specialists|probe)\|' || true)
+assert_eq "ultra plan total discovery keys" "$plan_total" "20"
+
+# CONSILIUM_MAX_PARALLEL=1 integration: sequential specialist fan-out still exits cleanly
+export CONSILIUM_RUN_DIR="$TMP/run-code-mp1"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+CONSILIUM_MAX_PARALLEL=1 \
+  "$CONSILIUM" review code --depth basic --progress none "$FIX/sample.py" \
+  >"$TMP/mp1.out" 2>"$TMP/mp1.err"
+mp1_rc=$?
+set -e
+# With fakes, basic review should succeed (exit 0) or partial (2) — never hang.
+if [[ "$mp1_rc" == "0" || "$mp1_rc" == "2" ]]; then
+  echo "  PASS  MAX_PARALLEL=1 basic review exit ok ($mp1_rc)"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  MAX_PARALLEL=1 basic review exit ($mp1_rc)"
+  echo "        err: $(head -c 400 "$TMP/mp1.err")"
+  FAIL=$((FAIL+1))
+fi
+unset CONSILIUM_MAX_PARALLEL
 
 # basic code review with fakes
 export CONSILIUM_CONFIG="$FIX/test-config.json"
@@ -609,7 +699,7 @@ assert_file "claude raw artifact" "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl"
 assert_contains "claude raw has delta" "$(cat "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl")" "content_block_delta"
 assert_contains "claude raw has result" "$(cat "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl")" '"type":"result"'
 assert_file "claude normalized artifact" "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl"
-assert_contains "claude norm has text event" "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" '"type": "text"'
+assert_contains "claude norm has answer_delta event" "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" '"type": "answer_delta"'
 assert_contains "claude norm has result event" "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" '"type": "result"'
 assert_contains "claude progress on stderr" "$(cat "$TMP/claude-dup.err")" "[consilium]"
 
@@ -624,6 +714,45 @@ count=$(grep -o 'FAKE_CLAUDE_RESULT' <<<"$out" | wc -l | tr -d ' ')
 assert_eq "claude result-only count" "$count" "1"
 export CONSILIUM_FAKE_CLAUDE_MODE=ok
 
+echo "=== Claude is_error result: non-zero exit even when CLI exits 0 ==="
+export CONSILIUM_FAKE_CLAUDE_MODE=is-error
+export CONSILIUM_RUN_DIR="$TMP/run-claude-is-error"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+out=$(CONSILIUM_SINGLE_AGENT=1 "$LIB_DIR/backend_run.sh" \
+  --mode review --agent-id claude-code --raw "ping" 2>"$TMP/claude-is-error.err")
+rc=$?
+set -e
+if [[ $rc -ne 0 ]]; then
+  assert_eq "claude is_error one-shot non-zero" "nonzero" "nonzero"
+else
+  assert_eq "claude is_error one-shot non-zero" "0" "nonzero"
+fi
+assert_not_contains "claude is_error no successful partial on stdout" "$out" "FAKE_CLAUDE_PARTIAL"
+assert_not_contains "claude is_error no partial-ok on stdout" "$out" "partial-ok"
+# Forensic artifacts preserved (raw/normalized; stderr/stdout separation).
+assert_file "claude is_error raw artifact" "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl"
+assert_file "claude is_error normalized artifact" "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl"
+assert_contains "claude is_error raw has is_error" \
+  "$(cat "$CONSILIUM_RUN_DIR/raw/claude-code.jsonl")" "is_error"
+assert_contains "claude is_error norm has run_failed" \
+  "$(cat "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")" "run_failed"
+export CONSILIUM_FAKE_CLAUDE_MODE=ok
+
+echo "=== OpenCode cumulative part snapshots assemble Hello not HHeHello ==="
+# Production-shaped message.part.updated stream through normalize extract-text.
+printf '%s\n' \
+  '{"directory":"/tmp","payload":{"type":"message.part.updated","properties":{"part":{"id":"p1","type":"text","text":"H"}}}}' \
+  '{"directory":"/tmp","payload":{"type":"message.part.updated","properties":{"part":{"id":"p1","type":"text","text":"He"}}}}' \
+  '{"directory":"/tmp","payload":{"type":"message.part.updated","properties":{"part":{"id":"p1","type":"text","text":"Hello"}}}}' \
+  '{"type":"session.idle"}' \
+  > "$TMP/oc-hello.jsonl"
+python3 "$LIB_DIR/normalize_stream.py" --backend opencode --agent-id opencode \
+  --input "$TMP/oc-hello.jsonl" --extract-text --text-out "$TMP/oc-hello.txt" \
+  --no-validate >/dev/null
+assert_eq "opencode oneshot Hello assembly" "$(cat "$TMP/oc-hello.txt")" "Hello"
+assert_not_contains "opencode oneshot not HHeHello" "$(cat "$TMP/oc-hello.txt")" "HHe"
+
 # Unit-level: normalize_stream extract-text with *distinct* delta+result
 printf '%s\n' \
   '{"type":"content_block_delta","delta":{"type":"text_delta","text":"DELTA_ONLY"}}' \
@@ -635,7 +764,7 @@ python3 "$LIB_DIR/normalize_stream.py" --backend claude-code --agent-id claude \
 assert_eq "normalize claude result wins over delta" "$(cat "$TMP/claude-extract.txt")" "RESULT_WINS"
 assert_not_contains "normalize extract has no delta" "$(cat "$TMP/claude-extract.txt")" "DELTA_ONLY"
 assert_contains "normalize keeps result event" "$(cat "$TMP/claude-norm.jsonl")" '"type": "result"'
-assert_contains "normalize keeps text event" "$(cat "$TMP/claude-norm.jsonl")" '"type": "text"'
+assert_contains "normalize keeps answer_delta event" "$(cat "$TMP/claude-norm.jsonl")" '"type": "answer_delta"'
 
 printf '%s\n' \
   '{"type":"result","result":"ONLY"}' \
@@ -723,7 +852,7 @@ export CONSILIUM_FAKE_ARGV_LOG="$TMP/del-pos-argv.jsonl"
 export CONSILIUM_RUN_DIR="$TMP/run-del-pos"
 mkdir -p "$CONSILIUM_RUN_DIR"
 set +e
-out=$("$CONSILIUM" delegate -a grok "implement positional task XYZ" 2>"$TMP/del-pos.err")
+out=$("$CONSILIUM" delegate -a grok --one-shot "implement positional task XYZ" 2>"$TMP/del-pos.err")
 rc=$?
 set -e
 assert_eq "delegate positional exit 0" "$rc" "0"
@@ -749,7 +878,7 @@ printf 'from file task\n' > "$TMP/del-file-prompt.txt"
 export CONSILIUM_RUN_DIR="$TMP/run-del-file"
 mkdir -p "$CONSILIUM_RUN_DIR"
 set +e
-out=$("$CONSILIUM" delegate -a grok --prompt-file "$TMP/del-file-prompt.txt" 2>"$TMP/del-file.err")
+out=$("$CONSILIUM" delegate -a grok --one-shot --prompt-file "$TMP/del-file-prompt.txt" 2>"$TMP/del-file.err")
 rc=$?
 set -e
 assert_eq "delegate --prompt-file exit 0" "$rc" "0"
@@ -1082,6 +1211,23 @@ assert_contains "judge-runner missing required diagnostics" \
 # First missing among AGENT FINDINGS SOURCE OUT is --findings when only --agent set
 assert_contains "judge-runner missing required names flag" \
   "$(cat "$TMP/judge-miss.err")" "--findings"
+
+echo "=== Shared runtime contracts (offline) ==="
+set +e
+CONTRACT_OUT=$(PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 "$TESTS_DIR/runtime_contracts.py" 2>&1)
+CONTRACT_RC=$?
+set -e
+printf '%s\n' "$CONTRACT_OUT"
+c_pass=$(printf '%s\n' "$CONTRACT_OUT" | sed -n 's/.*runtime contract tests: \([0-9]*\) passed.*/\1/p' | tail -1)
+c_fail=$(printf '%s\n' "$CONTRACT_OUT" | sed -n 's/.*runtime contract tests: [0-9]* passed, \([0-9]*\) failed.*/\1/p' | tail -1)
+c_pass=${c_pass:-0}
+c_fail=${c_fail:-1}
+PASS=$((PASS + c_pass))
+FAIL=$((FAIL + c_fail))
+if [[ $CONTRACT_RC -ne 0 && $c_fail -eq 0 ]]; then
+  echo "  FAIL  runtime contracts non-zero exit without fail count"
+  FAIL=$((FAIL + 1))
+fi
 
 echo "=== Steerable delegate (deterministic fakes) ==="
 # Subprocess suite with its own counters; fold into PASS/FAIL.

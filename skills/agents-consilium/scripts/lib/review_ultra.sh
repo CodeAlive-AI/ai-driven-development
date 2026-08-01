@@ -167,7 +167,8 @@ else
     echo -e "${RED}Error: no input${NC}" >&2; exit 5
 fi
 
-# Build full specialist plan
+# Build specialist plan arrays for dry-run display (must match workflow_plans.py:
+# 3 models × 5 roles = 15 specialist invocations).
 SPECIALIST_PASSES=()
 for model in "${SPECIALIST_MODELS[@]}"; do
     for role in "${SPECIALIST_ROLES[@]}"; do
@@ -175,19 +176,48 @@ for model in "${SPECIALIST_MODELS[@]}"; do
     done
 done
 
-total_discovery=$(( ${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]} + 1 ))
-note "${CYAN}ultrareview (h3): $total_discovery discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" 
+# Declarative plan is the source of truth for pass counts and artifact keys.
+PLAN_FULL="$TMP_ROOT/plan-full.txt"
+python3 "$LIB_DIR/workflow_plans.py" ultra --judge "$JUDGE_AGENT" \
+    --judge-fallback "${JUDGE_FALLBACK:-codex}" --shell \
+    > "$PLAN_FULL" 2>/dev/null || {
+    # Fallback mirrors historical matrix when Python plan emission fails.
+    : > "$PLAN_FULL"
+    pass_idx=0
+    for p in "${BROAD_PASSES[@]}"; do
+        IFS='|' read -r agent role cap prompt_name <<< "$p"
+        echo "broad|${pass_idx}|${agent}|${role}|${cap}|${prompt_name}|broad.${pass_idx}.${agent}.${role}" >> "$PLAN_FULL"
+        pass_idx=$((pass_idx + 1))
+    done
+    for p in "${SPECIALIST_PASSES[@]}"; do
+        IFS='|' read -r agent role cap prompt_name <<< "$p"
+        echo "specialists|${pass_idx}|${agent}|${role}|${cap}|${prompt_name}|specialists.${pass_idx}.${agent}.${role}" >> "$PLAN_FULL"
+        pass_idx=$((pass_idx + 1))
+    done
+    echo "probe|${pass_idx}|opencode-go-glm|auditor|uncapped|probe-generic.txt|probe.${pass_idx}.opencode-go-glm.auditor" >> "$PLAN_FULL"
+}
+broad_n=$(grep -c '^broad|' "$PLAN_FULL" 2>/dev/null || echo 0)
+spec_n=$(grep -c '^specialists|' "$PLAN_FULL" 2>/dev/null || echo 0)
+probe_n=$(grep -c '^probe|' "$PLAN_FULL" 2>/dev/null || echo 0)
+total_discovery=$(( broad_n + spec_n + probe_n ))
+note "${CYAN}ultrareview (h3): $total_discovery discovery (broad=$broad_n specialists=$spec_n probe=$probe_n) + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}"
 
 if [[ -n "$DRY_RUN" ]]; then
     echo "" >&2
-    echo "  Stage 1 — broad (parallel):" >&2
-    for p in "${BROAD_PASSES[@]}"; do echo "    $p" >&2; done
+    echo "  Stage 1 — broad (parallel, $broad_n):" >&2
+    grep '^broad|' "$PLAN_FULL" | while IFS='|' read -r st idx agent role cap prompt key; do
+        echo "    $agent|$role|$cap|$prompt  key=$key" >&2
+    done
     echo "" >&2
-    echo "  Stage 2 — specialists (parallel, 5×3 matrix, uncapped):" >&2
-    for p in "${SPECIALIST_PASSES[@]}"; do echo "    $p" >&2; done
+    echo "  Stage 2 — specialists (parallel, ${spec_n}-pass 3×5 matrix, uncapped):" >&2
+    grep '^specialists|' "$PLAN_FULL" | while IFS='|' read -r st idx agent role cap prompt key; do
+        echo "    $agent|$role|$cap|$prompt  key=$key" >&2
+    done
     echo "" >&2
-    echo "  Stage 3 — probe (sequential):" >&2
-    echo "    $PROBE_PASS" >&2
+    echo "  Stage 3 — probe (sequential after specialists, $probe_n):" >&2
+    grep '^probe|' "$PLAN_FULL" | while IFS='|' read -r st idx agent role cap prompt key; do
+        echo "    $agent|$role|$cap|$prompt  key=$key" >&2
+    done
     echo "" >&2
     echo "  Stage 4 — dedup (deterministic union)" >&2
     if [[ -z "$NO_FALLBACK" ]]; then
@@ -200,62 +230,31 @@ if [[ -n "$DRY_RUN" ]]; then
     exit 0
 fi
 
-# ------ Stage 1+2: parallel discovery --------------------------------------
+# ------ Stages via declarative plan + stage-barrier runner ---------------
+# workflow_runner respects stage id barriers (broad → specialists → probe).
 RESP_DIR="$TMP_ROOT/responses"
 mkdir -p "$RESP_DIR"
+PLAN_LINES="$TMP_ROOT/plan-lines.txt"
+grep -v '^#' "$PLAN_FULL" | grep -E '^(broad|specialists|probe)\|' > "$PLAN_LINES" || true
 
-declare -a PIDS LABELS OUT_FILES
-launch_pass() {
-    local triple="$1" stage="$2" idx="$3"
-    local agent role cap prompt_name
-    IFS='|' read -r agent role cap prompt_name <<< "$triple"
-    local out_file="$RESP_DIR/${stage}__${agent}__${role}.xml"
-    # Deterministic stage/index key — never ambient inherited CONSILIUM_ARTIFACT_KEY.
-    local art_key="${stage}.${idx}.${agent}.${role}"
-    "$LIB_DIR/discovery-pass.sh" \
-        --agent "$agent" --role "$role" --cap "$cap" \
-        --prompt "$PROMPTS_DIR/$prompt_name" \
-        --input-kind "$INPUT_KIND" \
-        --input-label "$INPUT_LABEL" \
-        --input-body-file "$INPUT_BODY_FILE" \
-        --out "$out_file" \
-        --artifact-key "$art_key" &
-    PIDS+=("$!")
-    LABELS+=("$stage:$agent/$role")
-    OUT_FILES+=("$out_file")
-}
-
-note "${YELLOW}[Launching broad + specialists in parallel ($((${#BROAD_PASSES[@]} + ${#SPECIALIST_PASSES[@]})) passes)...]${NC}" 
-pass_idx=0
-for p in "${BROAD_PASSES[@]}"; do
-    launch_pass "$p" "broad" "$pass_idx"
-    pass_idx=$((pass_idx + 1))
-done
-for p in "${SPECIALIST_PASSES[@]}"; do
-    launch_pass "$p" "specialists" "$pass_idx"
-    pass_idx=$((pass_idx + 1))
-done
-
-succeeded=0; failed=0
-for i in "${!PIDS[@]}"; do
-    code=0; wait "${PIDS[$i]}" || code=$?
-    if [[ $code -eq 0 ]]; then succeeded=$((succeeded+1)); else failed=$((failed+1)); fi
-done
-
-# ------ Stage 3: probe (sequential after parallel completes) ---------------
-note "${YELLOW}[Running generic probe...]${NC}" 
-probe_out="$RESP_DIR/probe__opencode-go-glm__auditor.xml"
-probe_code=0
-"$LIB_DIR/discovery-pass.sh" \
-    --agent "opencode-go-glm" --role "auditor" --cap "uncapped" \
-    --prompt "$PROMPTS_DIR/probe-generic.txt" \
+note "${YELLOW}[Launching discovery plan stages (max_parallel=${CONSILIUM_MAX_PARALLEL:-0})...]${NC}"
+set +e
+SUMMARY="$("$LIB_DIR/workflow_runner.sh" run-discovery-plan \
+    --plan-lines-file "$PLAN_LINES" \
+    --prompts-dir "$PROMPTS_DIR" \
     --input-kind "$INPUT_KIND" \
     --input-label "$INPUT_LABEL" \
     --input-body-file "$INPUT_BODY_FILE" \
-    --out "$probe_out" \
-    --artifact-key "probe.${pass_idx}.opencode-go-glm.auditor" || probe_code=$?
-if [[ $probe_code -eq 0 ]]; then succeeded=$((succeeded+1)); else failed=$((failed+1)); fi
-OUT_FILES+=("$probe_out")
+    --resp-dir "$RESP_DIR")"
+set -e
+succeeded="$(printf '%s\n' "$SUMMARY" | sed -n 's/^succeeded=//p' | tail -1)"
+failed="$(printf '%s\n' "$SUMMARY" | sed -n 's/^failed=//p' | tail -1)"
+succeeded="${succeeded:-0}"
+failed="${failed:-0}"
+OUT_FILES=()
+while IFS= read -r line; do
+    [[ "$line" == out=* ]] && OUT_FILES+=("${line#out=}")
+done <<< "$SUMMARY"
 
 if [[ $succeeded -eq 0 ]]; then
     echo -e "${RED}All $total_discovery discovery passes failed.${NC}" >&2

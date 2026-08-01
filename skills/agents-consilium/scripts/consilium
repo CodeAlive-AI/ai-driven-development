@@ -33,7 +33,7 @@ Usage:
   consilium review code --depth basic|specialists|super|ultra [options] <file|--diff>
   consilium explore [--repo SOURCE] [--ref REF] [options] ["question"]
   consilium delegate -a <exact-agent-id> ["task"]
-  consilium delegate -a <exact-agent-id> --steerable ["task"]
+  consilium delegate -a <exact-agent-id> --one-shot ["task"]
   consilium delegate -a <exact-agent-id> --detach ["task"]
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
@@ -80,8 +80,9 @@ delegate
   and no approval prompts. Requires -a <exact-agent-id> (no globs, no default).
   Supported backends: codex-cli, claude-code, opencode, grok-build.
   Gemini is review-only.
-  --steerable starts a long-lived session with mailbox steer/status/cancel.
-  --detach implies --steerable, prints run_id and returns immediately; the
+  Starts a long-lived session with mailbox steer/status/cancel by default.
+  --steerable is an explicit alias for the default; --one-shot uses the legacy
+  direct run. --detach prints run_id and returns immediately; the
   supervisor becomes its own session leader and outlives the caller.
   wait blocks until the run is terminal and prints the full final answer.
     Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 --timeout expired
@@ -91,7 +92,7 @@ delegate
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
-  CONSILIUM_STEER_DIR, AGENT_TIMEOUT (opt-in; default unlimited), and per-backend
+  CONSILIUM_STEER_DIR, AGENT_TIMEOUT (review/one-shot only; opt-in), and per-backend
   model/effort overrides — see SKILL.md.
 EOF
 }

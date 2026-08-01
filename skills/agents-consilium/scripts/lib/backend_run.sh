@@ -55,6 +55,7 @@ PROMPT=""
 PROMPT_FILE=""
 PROMPT_SOURCE=""   # positional | file | stdin — shell-interpolation warn only for positional
 RAW_MODE=0
+DEBUG_EVENTS=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -63,6 +64,14 @@ while [[ $# -gt 0 ]]; do
         --role)        ROLE_OVERRIDE="${2:-}"; shift 2 ;;
         --prompt-file) PROMPT_FILE="${2:-}"; PROMPT_SOURCE="file"; shift 2 ;;
         --raw|--no-wrap) RAW_MODE=1; shift ;;
+        --debug-events)
+            if [[ -n "${2:-}" && "${2:-}" != -* ]]; then
+                DEBUG_EVENTS="$2"; shift 2
+            else
+                DEBUG_EVENTS="__default__"; shift
+            fi
+            ;;
+        --debug-events=*) DEBUG_EVENTS="${1#--debug-events=}"; shift ;;
         -h|--help)     sed -n '2,40p' "$0"; exit $EXIT_OK ;;
         --)            shift; PROMPT="${1:-}"; PROMPT_SOURCE="positional"; break ;;
         -*)            echo "Error: unknown flag: $1" >&2; exit $EXIT_USAGE ;;
@@ -71,56 +80,107 @@ while [[ $# -gt 0 ]]; do
 done
 
 [[ -n "$MODE" ]] || { echo "Error: --mode required (review|explore|delegate)" >&2; exit $EXIT_USAGE; }
-case "$MODE" in
-    review|explore) ACCESS_POLICY="readonly" ;;
-    delegate)       ACCESS_POLICY="yolo" ;;
-    *)
-        echo "Error: --mode must be review, explore, or delegate (got: $MODE)" >&2
-        exit $EXIT_USAGE
-        ;;
-esac
+# Explicit mode→capability matrix (fail closed for unknown modes).
+# access_class is the coarse readonly|yolo switch; full matrix fields
+# (filesystem/shell/web/memory/subagents) also drive backend-specific argv
+# where the backend can enforce them.
+MODE_CAPS_JSON="$(
+    python3 "$LIB_DIR/mode_policy.py" "$MODE" --json 2>/dev/null
+)" || {
+    echo "Error: --mode must be a known Consilium mode (review|explore|delegate|…); got: $MODE" >&2
+    exit $EXIT_USAGE
+}
+ACCESS_POLICY="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print(json.loads(os.environ["MODE_CAPS_JSON"])["access_class"])'
+)"
+MODE_CAP_WEB="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print("true" if json.loads(os.environ["MODE_CAPS_JSON"]).get("web") else "false")'
+)"
+MODE_CAP_MEMORY="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print("true" if json.loads(os.environ["MODE_CAPS_JSON"]).get("memory") else "false")'
+)"
+MODE_CAP_SUBAGENTS="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print("true" if json.loads(os.environ["MODE_CAPS_JSON"]).get("subagents") else "false")'
+)"
+MODE_CAP_SHELL="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print("true" if json.loads(os.environ["MODE_CAPS_JSON"]).get("shell") else "false")'
+)"
+MODE_CAP_FILESYSTEM="$(
+    MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print(json.loads(os.environ["MODE_CAPS_JSON"]).get("filesystem") or "read")'
+)"
 [[ -n "$AGENT_ID" ]] || { echo "Error: --agent-id required" >&2; exit $EXIT_USAGE; }
 
 config_validate || exit $EXIT_CONFIG_ERROR
 
-BACKEND="$(config_get_field "$AGENT_ID" backend)" || exit $EXIT_CONFIG_ERROR
-MODEL="$(config_get_field "$AGENT_ID" model)"
-LABEL="$(config_get_field "$AGENT_ID" label)"; LABEL="${LABEL:-$AGENT_ID}"
-EFFORT="$(config_get_field "$AGENT_ID" effort)"
-ROLE_ID="${ROLE_OVERRIDE:-$(config_get_field "$AGENT_ID" role)}"
-ROLE_ID="${ROLE_ID:-analyst}"
-REVIEW_INSTRUCTIONS=""
-if [[ "$MODE" == "review" ]]; then
-    REVIEW_INSTRUCTIONS="$(config_get_field "$AGENT_ID" review_instructions)"
+# Shared backend contract: identity, model/effort, binary, capabilities.
+# Falls back to config.sh fields if the resolver fails (should not happen).
+_RESOLVE_ARGS=(resolve "$AGENT_ID" --mode "$MODE")
+if [[ "$MODE" == "delegate" ]]; then
+    _RESOLVE_ARGS+=(--require-delegate)
+fi
+RESOLVED_JSON="$(
+    python3 "$LIB_DIR/backend_contract.py" "${_RESOLVE_ARGS[@]}" 2>/dev/null
+)" || RESOLVED_JSON=""
+unset _RESOLVE_ARGS
+
+if [[ -n "$RESOLVED_JSON" ]]; then
+    eval "$(
+        RESOLVED_JSON="$RESOLVED_JSON" python3 - <<'PY'
+import json, os, shlex
+d = json.loads(os.environ["RESOLVED_JSON"])
+def emit(k, v):
+    print(f"{k}={shlex.quote('' if v is None else str(v))}")
+emit("BACKEND", d.get("backend"))
+emit("MODEL", d.get("model"))
+emit("EFFORT", d.get("effort"))
+emit("LABEL", d.get("label") or d.get("agent_id"))
+emit("ROLE_ID", d.get("role") or "analyst")
+emit("BIN", d.get("binary"))
+emit("REVIEW_INSTRUCTIONS", d.get("review_instructions") or "")
+emit("ACCESS_POLICY", d.get("access_class") or "")
+PY
+    )"
+    ROLE_ID="${ROLE_OVERRIDE:-$ROLE_ID}"
+    ROLE_ID="${ROLE_ID:-analyst}"
+    if [[ "$MODE" != "review" ]]; then
+        REVIEW_INSTRUCTIONS=""
+    fi
+else
+    BACKEND="$(config_get_field "$AGENT_ID" backend)" || exit $EXIT_CONFIG_ERROR
+    MODEL="$(config_get_field "$AGENT_ID" model)"
+    LABEL="$(config_get_field "$AGENT_ID" label)"; LABEL="${LABEL:-$AGENT_ID}"
+    EFFORT="$(config_get_field "$AGENT_ID" effort)"
+    ROLE_ID="${ROLE_OVERRIDE:-$(config_get_field "$AGENT_ID" role)}"
+    ROLE_ID="${ROLE_ID:-analyst}"
+    REVIEW_INSTRUCTIONS=""
+    if [[ "$MODE" == "review" ]]; then
+        REVIEW_INSTRUCTIONS="$(config_get_field "$AGENT_ID" review_instructions)"
+    fi
+    case "$BACKEND" in
+        codex-cli)
+            MODEL="${CODEX_MODEL:-$MODEL}"
+            EFFORT="${CODEX_EFFORT:-$EFFORT}"
+            ;;
+        claude-code)
+            MODEL="${CLAUDE_MODEL:-$MODEL}"
+            EFFORT="${CLAUDE_EFFORT:-$EFFORT}"
+            ;;
+        opencode)
+            MODEL="${OPENCODE_MODEL:-$MODEL}"
+            EFFORT="${OPENCODE_EFFORT:-$EFFORT}"
+            ;;
+        grok-build)
+            MODEL="${GROK_MODEL:-$MODEL}"
+            EFFORT="${GROK_EFFORT:-$EFFORT}"
+            ;;
+        gemini-cli)
+            MODEL="${GEMINI_MODEL:-$MODEL}"
+            ;;
+    esac
+    BIN=""
 fi
 
-# Per-invocation backend overrides. Keep this in sync with the steerable
-# config loader so ordinary review/delegate and steerable delegate resolve the
-# same model and effort without requiring edits to config.json or user config.
-case "$BACKEND" in
-    codex-cli)
-        MODEL="${CODEX_MODEL:-$MODEL}"
-        EFFORT="${CODEX_EFFORT:-$EFFORT}"
-        ;;
-    claude-code)
-        MODEL="${CLAUDE_MODEL:-$MODEL}"
-        EFFORT="${CLAUDE_EFFORT:-$EFFORT}"
-        ;;
-    opencode)
-        MODEL="${OPENCODE_MODEL:-$MODEL}"
-        EFFORT="${OPENCODE_EFFORT:-$EFFORT}"
-        ;;
-    grok-build)
-        MODEL="${GROK_MODEL:-$MODEL}"
-        EFFORT="${GROK_EFFORT:-$EFFORT}"
-        ;;
-    gemini-cli)
-        MODEL="${GEMINI_MODEL:-$MODEL}"
-        ;;
-esac
-
 if [[ "$MODE" == "delegate" ]]; then
-    # Gemini is review-only.
     if [[ "$BACKEND" == "gemini-cli" ]]; then
         echo "Error: agent '$AGENT_ID' backend gemini-cli is review-only; cannot delegate" >&2
         exit $EXIT_CONFIG_ERROR
@@ -156,27 +216,62 @@ fi
 # full prompt body back into the child environment and hit ARG_MAX/E2BIG.
 unset FULL_PROMPT 2>/dev/null || true
 
+# Stage prompt bodies on disk before the pipeline — never put large text in env.
+_PROMPT_STAGE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/consilium-prompt.XXXXXX")"
+_PROMPT_USER_FILE="$_PROMPT_STAGE_DIR/user.txt"
+_PROMPT_ROLE_FILE="$_PROMPT_STAGE_DIR/role.txt"
+printf '%s' "$PROMPT" > "$_PROMPT_USER_FILE"
+
 if [[ "$RAW_MODE" -eq 1 || -n "${CONSILIUM_RAW_PROMPT:-}" ]]; then
     export CONSILIUM_RAW_PROMPT=1
-    FULL_PROMPT="$PROMPT"
+    FULL_PROMPT="$(
+        python3 "$LIB_DIR/prompt_pipeline.py" --mode raw --raw --user-file "$_PROMPT_USER_FILE" 2>/dev/null \
+        || cat "$_PROMPT_USER_FILE"
+    )"
 else
     if ! ROLE_PROMPT="$(get_role_prompt "$ROLE_ID")"; then
+        rm -rf "$_PROMPT_STAGE_DIR"
         echo "Error: unknown role '$ROLE_ID' for agent $AGENT_ID" >&2
         exit $EXIT_CONFIG_ERROR
     fi
+    printf '%s' "$ROLE_PROMPT" > "$_PROMPT_ROLE_FILE"
     if [[ -n "$REVIEW_INSTRUCTIONS" ]]; then
-        ROLE_PROMPT+=$'\n\nMODEL-SPECIFIC REVIEW INSTRUCTIONS:\n'
-        ROLE_PROMPT+="$REVIEW_INSTRUCTIONS"
+        {
+            printf '%s' "$ROLE_PROMPT"
+            printf '\n\nMODEL-SPECIFIC REVIEW INSTRUCTIONS:\n%s' "$REVIEW_INSTRUCTIONS"
+        } > "$_PROMPT_ROLE_FILE"
     fi
-    # build_prompt may also read stdin as context; we already consumed stdin.
-    # CONSILIUM_SKIP_OUTPUT_TEMPLATE is honored by build_prompt (code-review schemas).
-    FULL_PROMPT="$(build_prompt "$ROLE_PROMPT" "$PROMPT" </dev/null)"
+    SKIP_TPL_ARGS=()
+    if [[ -n "${CONSILIUM_SKIP_OUTPUT_TEMPLATE:-}" ]]; then
+        SKIP_TPL_ARGS+=(--skip-output-template)
+    fi
+    PIPE_MODE="$MODE"
+    if [[ -n "${CONSILIUM_SKIP_OUTPUT_TEMPLATE:-}" && "$MODE" == "review" ]]; then
+        PIPE_MODE="review-code"
+    fi
+    FULL_PROMPT="$(
+        python3 "$LIB_DIR/prompt_pipeline.py" \
+            --mode "$PIPE_MODE" \
+            --role-file "$_PROMPT_ROLE_FILE" \
+            --user-file "$_PROMPT_USER_FILE" \
+            ${SKIP_TPL_ARGS[@]+"${SKIP_TPL_ARGS[@]}"} \
+            2>/dev/null
+    )" || FULL_PROMPT=""
+    if [[ -z "$FULL_PROMPT" ]]; then
+        if [[ -n "$REVIEW_INSTRUCTIONS" ]]; then
+            ROLE_PROMPT+=$'\n\nMODEL-SPECIFIC REVIEW INSTRUCTIONS:\n'
+            ROLE_PROMPT+="$REVIEW_INSTRUCTIONS"
+        fi
+        FULL_PROMPT="$(build_prompt "$ROLE_PROMPT" "$PROMPT" </dev/null)"
+    fi
 fi
+rm -rf "$_PROMPT_STAGE_DIR"
+unset _PROMPT_STAGE_DIR _PROMPT_USER_FILE _PROMPT_ROLE_FILE
 # NEVER export FULL_PROMPT — large prompts exceed ARG_MAX when copied into the
 # environment (execve counts env + argv). Prompt bodies travel via temp file /
 # stdin only.
 
-# Resolve CLI binary (overridable for tests)
+# Resolve CLI binary if shared contract did not supply one.
 bin_for() {
     case "$1" in
         codex-cli)   echo "${CONSILIUM_BIN_CODEX:-codex}" ;;
@@ -188,7 +283,9 @@ bin_for() {
     esac
 }
 
-BIN="$(bin_for "$BACKEND")"
+if [[ -z "${BIN:-}" ]]; then
+    BIN="$(bin_for "$BACKEND")"
+fi
 if [[ -z "$BIN" ]]; then
     echo "Error: unknown backend '$BACKEND' for agent $AGENT_ID" >&2
     exit $EXIT_CONFIG_ERROR
@@ -198,18 +295,27 @@ if ! command -v "$BIN" &>/dev/null && [[ ! -x "$BIN" ]]; then
     exit $EXIT_CONFIG_ERROR
 fi
 
-# Codex model alias normalization
+# Codex model alias + default efforts are already applied by backend_contract
+# when resolve succeeded; keep shell fallbacks for the legacy path.
 if [[ "$BACKEND" == "codex-cli" && "$MODEL" == "gpt-5.6" ]]; then
     MODEL="gpt-5.6-sol"
 fi
-
-# Default efforts
 case "$BACKEND" in
     codex-cli|claude-code|grok-build) EFFORT="${EFFORT:-high}" ;;
     opencode)
         if [[ "$EFFORT" == "none" ]]; then EFFORT=""; fi
         ;;
 esac
+
+# Opt-in debug event tape (CLI or CONSILIUM_DEBUG_EVENTS=1).
+if [[ -n "$DEBUG_EVENTS" ]]; then
+    if [[ "$DEBUG_EVENTS" == "__default__" ]]; then
+        export CONSILIUM_DEBUG_EVENTS=1
+    else
+        export CONSILIUM_DEBUG_EVENTS=1
+        export CONSILIUM_DEBUG_EVENTS_PATH="$DEBUG_EVENTS"
+    fi
+fi
 
 # Progress identity = the invocation, not just the agent. Fan-out layers run the
 # same agent in several roles/stages concurrently; without the key their live
@@ -265,16 +371,23 @@ build_cmd_codex() {
 
 build_cmd_claude() {
     # -p enables headless print mode; the complete prompt is read from stdin.
+    # Mode capability matrix drives write/shell denial; Claude flags enforce it.
     CMD=("$BIN")
     if [[ "$ACCESS_POLICY" == "readonly" ]]; then
         CMD+=(--permission-mode plan)
-        # Defense in depth: deny write tools even if plan is misconfigured
-        CMD+=(--disallowedTools "Edit,Write,NotebookEdit")
+        # Defense in depth: deny write tools even if plan is misconfigured.
+        # Also deny shell-mutation patterns when the CLI supports tool specs
+        # (verified: --disallowedTools accepts "Bash(...)" patterns).
+        # Full Bash deny would break readonly inspection that uses Bash(ls)/grep;
+        # we deny common mutation forms only — plan mode remains primary.
+        CMD+=(--disallowedTools "Edit,Write,NotebookEdit,Bash(rm *),Bash(git commit *),Bash(git push *),Bash(sudo *)")
         # plan mode withholds permission for WebSearch/WebFetch, so a headless
         # review silently loses web access and says so mid-answer. --allowedTools
         # pre-approves rather than restricts: Read/Grep/Glob stay available
-        # (verified against Claude Code 2.1.220).
-        CMD+=(--allowedTools "WebSearch,WebFetch")
+        # (verified against Claude Code 2.1.220). Web grant follows mode_policy.web.
+        if [[ "${MODE_CAP_WEB:-true}" == "true" || "${MODE_CAP_WEB:-1}" == "1" ]]; then
+            CMD+=(--allowedTools "WebSearch,WebFetch")
+        fi
     else
         CMD+=(--dangerously-skip-permissions)
     fi
@@ -320,6 +433,8 @@ build_cmd_grok() {
     # One-shot headless: --prompt-file is documented as "Single-turn prompt from a file"
     # (same headless class as -p/--single for inline prompts). Do not also pass -p;
     # --prompt-file alone selects single-turn non-TUI mode.
+    # Mode capability fields memory/subagents/shell/filesystem/web drive argv
+    # where Grok Build exposes matching flags.
     CMD=("$BIN")
     if [[ "$MODE" == "explore" ]]; then
         # Exploration may run over a repository nobody has vetted, so it keeps a
@@ -335,8 +450,13 @@ build_cmd_grok() {
         # instructions and forbids sending repository content to any URL the
         # repository itself supplied.
         CMD+=(--sandbox "${CONSILIUM_EXPLORE_SANDBOX:-read-only}")
-        CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
+        if [[ "${MODE_CAP_WEB:-true}" == "true" ]]; then
+            CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
+        else
+            CMD+=(--tools "read_file,grep,list_dir")
+        fi
         CMD+=(--disallowed-tools "search_replace,write,run_terminal_cmd,Agent")
+        # mode_policy: explore memory=false, subagents=false
         CMD+=(--no-subagents --no-memory)
         if [[ -n "${CONSILIUM_EXPLORE_CWD:-}" ]]; then
             CMD+=(--cwd "$CONSILIUM_EXPLORE_CWD")
@@ -347,8 +467,20 @@ build_cmd_grok() {
         # verified against Grok Build 0.2.112: without them the model reports it
         # has no web tool, with them it retrieves and cites live sources.
         CMD+=(--sandbox read-only)
-        CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
+        if [[ "${MODE_CAP_WEB:-true}" == "true" ]]; then
+            CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
+        else
+            CMD+=(--tools "read_file,grep,list_dir")
+        fi
         CMD+=(--disallowed-tools "search_replace,write,run_terminal_cmd,Agent")
+        # mode_policy review: memory=false, subagents=false — enforce when
+        # flags exist (Grok Build supports both).
+        if [[ "${MODE_CAP_SUBAGENTS:-false}" != "true" ]]; then
+            CMD+=(--no-subagents)
+        fi
+        if [[ "${MODE_CAP_MEMORY:-false}" != "true" ]]; then
+            CMD+=(--no-memory)
+        fi
     else
         # YOLO: always-approve, no sandbox flag (default off = unrestricted)
         CMD+=(--always-approve)
@@ -449,6 +581,13 @@ run_streamed() {
     if [[ -n "${CONSILIUM_PROGRESS_INTERVAL:-}" ]]; then
         norm_argv+=(--progress-interval "$CONSILIUM_PROGRESS_INTERVAL")
     fi
+    if [[ -n "${CONSILIUM_DEBUG_EVENTS:-}" ]]; then
+        if [[ -n "${CONSILIUM_DEBUG_EVENTS_PATH:-}" ]]; then
+            norm_argv+=(--debug-events "$CONSILIUM_DEBUG_EVENTS_PATH")
+        else
+            norm_argv+=(--debug-events)
+        fi
+    fi
     if [[ "$backend" != "grok-build" ]]; then
         norm_argv+=(--no-validate)
     fi
@@ -486,14 +625,18 @@ run_streamed() {
     set -o pipefail
     set -e
 
-    # Grok contract: success requires process exit 0 AND normalizer validation
-    # (end present, no error event). Prefer backend non-zero (timeout/signal)
-    # when both fail.
-    if [[ "$backend" == "grok-build" && "${NORM_RC:-0}" -ne 0 ]]; then
-        if [[ "${BACKEND_RC:-0}" -eq 0 ]]; then
+    # Preserve backend PIPESTATUS when the normalizer also fails. Prefer the
+    # backend non-zero (timeout/signal/crash) over a normalizer-only failure so
+    # callers see the true process outcome. Grok contract additionally requires
+    # end present / no error: if backend exited 0 but normalizer failed, surface 1.
+    if [[ "${NORM_RC:-0}" -ne 0 && "${BACKEND_RC:-0}" -eq 0 ]]; then
+        if [[ "$backend" == "grok-build" ]]; then
             BACKEND_RC=1
         fi
+        # Other backends: normalizer failure alone does not rewrite a clean
+        # backend exit unless Grok validation applies; PIPESTATUS[0] stays 0.
     fi
+    # When both fail, keep BACKEND_RC as-is (already captured from PIPESTATUS[0]).
 }
 
 run_and_capture() {
@@ -518,58 +661,168 @@ run_and_capture() {
         claude-code)
             run_streamed "claude-code" "$PROMPT_PATH" "${CMD[@]}"
             exit_code=$BACKEND_RC
-            # Prefer authoritative result over streamed deltas (no duplication).
-            if [[ -s "$RAW_STREAM" ]]; then
+            # Shared assembly: authoritative non-empty result XOR deltas.
+            # Empty/whitespace result must not erase non-empty answer deltas.
+            # is_error/error results never become a successful answer body.
+            claude_is_error=0
+            if [[ -s "$NORM_STREAM" ]]; then
+                if python3 -c '
+import json,sys
+for line in open(sys.argv[1], encoding="utf-8"):
+    line=line.strip()
+    if not line: continue
+    try: o=json.loads(line)
+    except Exception: continue
+    if o.get("type")=="run_failed":
+        sys.exit(0)
+sys.exit(1)
+' "$NORM_STREAM" 2>/dev/null; then
+                    claude_is_error=1
+                fi
+                python3 -c '
+import sys
+sys.path.insert(0, sys.argv[3])
+from events import assemble_final_text, ConsiliumEvent, EventValidationError
+import json
+evts=[]
+saw_fail=False
+for line in open(sys.argv[1], encoding="utf-8"):
+    line=line.strip()
+    if not line: continue
+    try:
+        o=json.loads(line)
+        if o.get("type")=="run_failed":
+            saw_fail=True
+            continue
+        evts.append(ConsiliumEvent.from_dict(o))
+    except Exception:
+        continue
+# Forensic final may keep deltas for debugging, but is_error path must not
+# promote a partial answer as the successful body when caller checks RC.
+text = assemble_final_text(evts)
+if text:
+    open(sys.argv[2],"w",encoding="utf-8").write(text)
+' "$NORM_STREAM" "$FINAL_TEXT" "$LIB_DIR" 2>/dev/null || true
+            elif [[ -s "$RAW_STREAM" ]]; then
                 python3 -c '
 import json,sys
 deltas=[]
 result=None
+is_err=False
 for line in open(sys.argv[1]):
     line=line.strip()
     if not line: continue
     try:
         o=json.loads(line)
     except Exception:
-        deltas.append(line); continue
-    if o.get("type") in ("result", "result_success") and isinstance(o.get("result"), str):
-        result=o["result"]
+        continue
+    if o.get("type") in ("result", "result_success"):
+        if o.get("is_error") or o.get("error"):
+            is_err=True
+            continue
+        r=o.get("result")
+        if isinstance(r, str) and r.strip():
+            result=r
     elif o.get("type")=="content_block_delta":
         d=o.get("delta") or {}
         if d.get("type")=="text_delta":
             deltas.append(d.get("text",""))
-# Prefer result (complete answer) over concatenated deltas.
 text = result if result is not None else "".join(deltas)
-if text or result is not None:
-    open(sys.argv[2],"w").write(text if text is not None else "")
+if text:
+    open(sys.argv[2],"w").write(text)
+if is_err:
+    open(sys.argv[2]+".is_error","w").write("1")
 ' "$RAW_STREAM" "$FINAL_TEXT" 2>/dev/null || true
+                if [[ -f "${FINAL_TEXT}.is_error" ]]; then
+                    claude_is_error=1
+                    rm -f "${FINAL_TEXT}.is_error"
+                fi
+            fi
+            # result/result_success with is_error or error → non-zero even when
+            # the CLI process exits 0 and partial deltas exist. Artifacts are
+            # preserved; do not emit a successful partial answer.
+            if [[ "$claude_is_error" -eq 1 && "$exit_code" -eq 0 ]]; then
+                exit_code=1
             fi
             ;;
         opencode)
             run_streamed "opencode" "$PROMPT_PATH" "${CMD[@]}"
             exit_code=$BACKEND_RC
-            if [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
-                if ! grep -q '^{' "$RAW_STREAM" 2>/dev/null; then
-                    cat "$RAW_STREAM" > "$FINAL_TEXT"
-                else
-                    python3 -c '
+            # Always reassemble with part-id last-write-wins when raw JSON is
+            # present. Live extract-text may already be correct; never leave a
+            # concatenated H+He+Hello FINAL just because the file is non-empty.
+            if [[ -s "$RAW_STREAM" ]] && grep -q '^{' "$RAW_STREAM" 2>/dev/null; then
+                python3 -c '
 import json,sys
-chunks=[]
+from collections import OrderedDict
+snaps=OrderedDict()
+deltas=[]
+def unwrap(o):
+    if not isinstance(o, dict):
+        return o
+    if isinstance(o.get("payload"), dict) and (o.get("type") is None or o.get("type")=="sync") and o["payload"].get("type"):
+        o=o["payload"]
+    if o.get("type")=="sync" and isinstance(o.get("syncEvent"), dict):
+        se=o["syncEvent"]
+        se_type=str(se.get("type") or "")
+        if se_type.endswith(".1") or se_type.endswith(".0"):
+            se_type=se_type.rsplit(".",1)[0]
+        if se_type:
+            data=se.get("data") if isinstance(se.get("data"), dict) else {}
+            o={"type": se_type, "properties": data if data else se}
+    return o
 for line in open(sys.argv[1]):
     line=line.strip()
     if not line: continue
     try: o=json.loads(line)
     except Exception: continue
-    part=o.get("part") or o
-    t=part.get("text") or o.get("text")
-    if t: chunks.append(t)
-open(sys.argv[2],"w").write("".join(chunks))
+    o=unwrap(o)
+    typ=o.get("type") or ""
+    props=o.get("properties") if isinstance(o.get("properties"), dict) else o
+    if not isinstance(props, dict):
+        props=o if isinstance(o, dict) else {}
+    part=props.get("part") if isinstance(props.get("part"), dict) else (o.get("part") if isinstance(o.get("part"), dict) else props)
+    if typ=="message.part.updated" and isinstance(part, dict):
+        pid=str(part.get("id") or part.get("partID") or part.get("partId") or "_")
+        t=part.get("text")
+        if isinstance(t,str) and t:
+            snaps[pid]=t
+    elif typ in ("message.part.delta","text"):
+        d=""
+        if isinstance(props, dict) and isinstance(props.get("delta"), str):
+            d=props["delta"]
+        if not d and isinstance(part, dict) and isinstance(part.get("delta"), str):
+            d=part["delta"]
+        if not d:
+            d=o.get("text") or o.get("delta") or ""
+        if d: deltas.append(str(d))
+text="".join(snaps.values()) if snaps else "".join(deltas)
+if text:
+    open(sys.argv[2],"w").write(text)
 ' "$RAW_STREAM" "$FINAL_TEXT" 2>/dev/null || true
-                fi
+            elif [[ ! -s "$FINAL_TEXT" && -s "$NORM_STREAM" ]]; then
+                python3 -c '
+import sys,json
+sys.path.insert(0, sys.argv[3])
+from events import assemble_final_text, ConsiliumEvent
+evts=[]
+for line in open(sys.argv[1], encoding="utf-8"):
+    line=line.strip()
+    if not line: continue
+    try: evts.append(ConsiliumEvent.from_dict(json.loads(line)))
+    except Exception: continue
+text=assemble_final_text(evts)
+if text: open(sys.argv[2],"w",encoding="utf-8").write(text)
+' "$NORM_STREAM" "$FINAL_TEXT" "$LIB_DIR" 2>/dev/null || true
+            elif [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
+                # Plain-text fallback when the stream is not JSON.
+                cat "$RAW_STREAM" > "$FINAL_TEXT"
             fi
             ;;
         gemini-cli)
+            # Backend identity is gemini-cli (not plain); plain-text behaviour retained.
             if command -v "$BIN" &>/dev/null || [[ -x "$BIN" ]]; then
-                run_streamed "plain" "$PROMPT_PATH" "${CMD[@]}"
+                run_streamed "gemini-cli" "$PROMPT_PATH" "${CMD[@]}"
                 exit_code=$BACKEND_RC
             else
                 echo "gemini CLI missing" >"$BACKEND_ERR"

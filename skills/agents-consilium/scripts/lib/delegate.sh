@@ -2,7 +2,7 @@
 #
 # delegate — full-YOLO single-agent task execution in the caller's CWD.
 # Invoked by: scripts/consilium delegate -a <exact-agent-id> ...
-#             scripts/consilium delegate --steerable -a <id> ...
+#             scripts/consilium delegate --one-shot -a <id> ...
 #             scripts/consilium delegate steer|status|cancel ...
 #
 # No sandbox, no approval prompts, no extra confirmation flag.
@@ -37,7 +37,8 @@ esac
 AGENT_ID=""
 PROMPT=""
 PROMPT_FILE=""
-STEERABLE=0
+STEERABLE=1
+LAUNCH_MODE="default"
 DETACH=0
 
 while [[ $# -gt 0 ]]; do
@@ -61,7 +62,21 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         --steerable)
+            if [[ "$LAUNCH_MODE" == "one-shot" ]]; then
+                echo "Error: --steerable and --one-shot are mutually exclusive" >&2
+                exit $EXIT_USAGE
+            fi
             STEERABLE=1
+            LAUNCH_MODE="steerable"
+            shift
+            ;;
+        --one-shot)
+            if [[ "$LAUNCH_MODE" == "steerable" ]]; then
+                echo "Error: --steerable and --one-shot are mutually exclusive" >&2
+                exit $EXIT_USAGE
+            fi
+            STEERABLE=0
+            LAUNCH_MODE="one-shot"
             shift
             ;;
         --detach)
@@ -75,7 +90,7 @@ while [[ $# -gt 0 ]]; do
             cat <<'EOF'
 Usage:
   consilium delegate -a <exact-agent-id> ["task"]
-  consilium delegate -a <exact-agent-id> --steerable ["task"]
+  consilium delegate -a <exact-agent-id> --one-shot ["task"]
   consilium delegate -a <exact-agent-id> --detach ["task"]
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
@@ -87,10 +102,10 @@ Usage:
 Full-YOLO delegation to exactly one agent in the current working directory.
 No sandbox, no approval prompts. Gemini is not supported (review-only).
 
---steerable starts a long-lived supervisor with a filesystem mailbox so you can
-steer / status / cancel the same run. Normal (non-steerable) delegate is one-shot.
+Delegate starts a long-lived steerable supervisor by default, with a filesystem
+mailbox for steer / status / cancel. --one-shot selects the legacy direct run.
 
---detach implies --steerable, prints run_id on stdout and returns immediately.
+--detach keeps the default steerable mode, prints run_id on stdout, and returns immediately.
 The supervisor becomes its own session leader, so the run survives the caller
 exiting. Collect the answer later with `delegate wait RUN_ID`.
 
@@ -104,8 +119,9 @@ list finds runs again when the run id was lost.
 
 Options:
   -a, --agent <id>       Exact agent id from config.json (required for start)
-  --steerable            Long-lived steerable session
-  --detach               Start detached (implies --steerable); print run_id and exit
+  --steerable            Explicit alias for the default steerable session
+  --one-shot             Direct non-steerable run
+  --detach               Start the steerable session detached; print run_id and exit
   --prompt-file <path>   Task / guidance from file
   -h, --help
 EOF
@@ -122,12 +138,11 @@ if [[ -z "$AGENT_ID" ]]; then
     exit $EXIT_USAGE
 fi
 
-# A detached run must be addressable afterwards, and only the steerable path
-# creates a registry entry (and therefore a run id). Imply it rather than
-# rejecting the combination — the caller's intent is unambiguous.
+# A detached run requires the steerable registry and cannot use the direct
+# one-shot path.
 if [[ "$DETACH" -eq 1 && "$STEERABLE" -ne 1 ]]; then
-    STEERABLE=1
-    echo "Note: --detach implies --steerable (a run id is required to reattach)" >&2
+    echo "Error: --detach and --one-shot are mutually exclusive" >&2
+    exit $EXIT_USAGE
 fi
 
 # Normalize every task source into one private temp file exactly once. This
@@ -175,7 +190,11 @@ fi
 export CONSILIUM_MODE="delegate"
 export CONSILIUM_SINGLE_AGENT=1
 artifacts_init_run "delegate"
-progress_stage "delegate" "agent=$AGENT_ID cwd=$(pwd)${STEERABLE:+ steerable=1}"
+if [[ "$STEERABLE" -eq 1 ]]; then
+    progress_stage "delegate" "agent=$AGENT_ID cwd=$(pwd) steerable=1"
+else
+    progress_stage "delegate" "agent=$AGENT_ID cwd=$(pwd) one_shot=1"
+fi
 
 # Delegate sends the task as-is (no consilium review principles wrap that forbids writes)
 export CONSILIUM_RAW_PROMPT=1

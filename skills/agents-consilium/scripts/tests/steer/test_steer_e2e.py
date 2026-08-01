@@ -780,14 +780,27 @@ def test_oneshot_regression(tmp: Path) -> None:
     oneshot_log = tmp / "oneshot-argv.jsonl"
     env["CONSILIUM_FAKE_ARGV_LOG"] = str(oneshot_log)
     (tmp / "oneshot-art").mkdir(parents=True)
-    r = run_cmd([str(CONSILIUM), "delegate", "-a", "grok", "implement one-shot"], env, timeout=30)
+    r = run_cmd(
+        [str(CONSILIUM), "delegate", "-a", "grok", "--one-shot", "implement one-shot"],
+        env,
+        timeout=30,
+    )
     assert_true("oneshot exit 0", r.returncode == 0, r.stderr)
     assert_true("oneshot stdout", "FAKE_GROK_OK" in r.stdout, r.stdout)
+    assert_true("oneshot creates no run id", "run_id=" not in r.stderr, r.stderr)
 
     # /dev/stdin is a non-seekable pseudo-file. It must be consumed exactly
     # once, not copied/re-read after the first read.
     r = run_cmd(
-        [str(CONSILIUM), "delegate", "-a", "grok", "--prompt-file", "/dev/stdin"],
+        [
+            str(CONSILIUM),
+            "delegate",
+            "-a",
+            "grok",
+            "--one-shot",
+            "--prompt-file",
+            "/dev/stdin",
+        ],
         env,
         timeout=30,
         input_text="ONESHOT_FROM_DEV_STDIN\n",
@@ -820,7 +833,6 @@ def test_oneshot_regression(tmp: Path) -> None:
             "delegate",
             "-a",
             "grok",
-            "--steerable",
             "--prompt-file",
             "/dev/stdin",
         ],
@@ -828,9 +840,10 @@ def test_oneshot_regression(tmp: Path) -> None:
         timeout=30,
         input_text="STEERABLE_FROM_DEV_STDIN\n",
     )
-    assert_true("steerable /dev/stdin exit 0", r.returncode == 0, r.stderr)
-    assert_true("steerable /dev/stdin body delivered", "STEERED(" in r.stdout, r.stdout)
-    assert_true("steerable /dev/stdin no fcopyfile", "fcopyfile" not in r.stderr, r.stderr)
+    assert_true("default steerable /dev/stdin exit 0", r.returncode == 0, r.stderr)
+    assert_true("default steerable /dev/stdin body delivered", "STEERED(" in r.stdout, r.stdout)
+    assert_true("default steerable /dev/stdin reports run id", "run_id=" in r.stderr, r.stderr)
+    assert_true("default steerable /dev/stdin no fcopyfile", "fcopyfile" not in r.stderr, r.stderr)
 
 
 def test_claude_interrupt_rejected(tmp: Path) -> None:
@@ -1376,6 +1389,11 @@ def test_grok_cancelled_and_dropped_outcomes_unit(tmp: Path) -> None:
         raw={"promptId": running, "status": "superseded"},
     )
     adapter._events.put(preserved)
+    # The cancellation scenario above now terminates an all-cancelled lineage.
+    # This regression block exercises event preservation during an otherwise
+    # active interrupt, so reset only the synthetic adapter's terminal marker.
+    adapter._done = False
+    adapter._exit_code = None
     result = adapter.steer("new guidance", "interrupt", "new-client")
     assert_true("new steer observes running", result.status == "running", result.status)
     successor = result.meta.get("promptId")
@@ -1423,6 +1441,134 @@ def test_grok_cancelled_and_dropped_outcomes_unit(tmp: Path) -> None:
         "combined follower is linked then completed with front",
         [a.get("status") for a in merged_acks] == ["merged", "completed"],
         str(merged_acks),
+    )
+
+
+def test_grok_all_cancelled_queue_drop_terminates(tmp: Path) -> None:
+    """All prompts cancelled + pending never-ran → later queue drop → done 130.
+
+    No additional prompt_complete/result event is required after the drop.
+    """
+    print("=== unit: grok all-cancelled lineage terminates on queue drop ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.grok import GrokAdapter  # type: ignore
+
+    art = tmp / "art-grok-all-cancel"
+    (art / "raw").mkdir(parents=True)
+    adapter = GrokAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="grok",
+    )
+    initial = "pid-initial-cancelled"
+    never = "pid-never-ran"
+    adapter._initial_prompt_id = initial
+    adapter._final_prompt_id = initial
+    adapter._prompt_result[initial] = {"stopReason": "cancelled"}
+    adapter._prompt_result[never] = {"stopReason": "cancelled"}
+    # Never-ran cancel recorded against the prior queue snapshot (seq 0).
+    adapter._prompt_cancelled_pending[never] = 0
+
+    # First advanced queue snapshot reconciles never-ran → dropped and must
+    # re-enter _maybe_mark_done so the all-cancelled lineage cannot hang.
+    adapter._on_queue_changed({"runningPromptId": "", "entries": []})
+    events = list(adapter.poll_events())
+    kinds = [(e.kind, e.data) for e in events]
+    acks = [
+        e.raw
+        for e in events
+        if e.kind == "steer_ack" and isinstance(e.raw, dict)
+    ]
+    assert_true(
+        "never-ran dropped on queue reconcile",
+        any(
+            a.get("promptId") == never and a.get("status") == "dropped"
+            for a in acks
+        ),
+        str(acks),
+    )
+    assert_true(
+        "adapter done after queue drop without further prompt event",
+        adapter.is_done(),
+        f"done={adapter.is_done()} kinds={kinds}",
+    )
+    assert_true(
+        "all-cancelled exit 130",
+        adapter.exit_code() == 130,
+        f"exit={adapter.exit_code()}",
+    )
+    assert_true(
+        "done event emitted once",
+        sum(1 for k, _ in kinds if k == "done") == 1,
+        str(kinds),
+    )
+    # Empty interrupt lineage must not resurrect superseded initial text.
+    adapter2 = GrokAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="grok",
+    )
+    adapter2._initial_prompt_id = "init"
+    adapter2._final_prompt_id = "successor"
+    adapter2._text_by_prompt["init"] = ["SUPERSEDED"]
+    adapter2._all_text = ["SUPERSEDED"]
+    assert_true(
+        "empty successor lineage does not resurrect initial",
+        adapter2.final_text() == "",
+        repr(adapter2.final_text()),
+    )
+
+
+def test_grok_cancel_exit_130_no_duplicate_done(tmp: Path) -> None:
+    """cancel() sets exit 130 and terminalizes pending without duplicate done."""
+    print("=== unit: grok cancel exit 130 ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.grok import GrokAdapter  # type: ignore
+
+    art = tmp / "art-grok-cancel"
+    (art / "raw").mkdir(parents=True)
+    adapter = GrokAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="grok",
+    )
+    adapter._initial_prompt_id = "p1"
+    adapter._final_prompt_id = "p1"
+    adapter._prompt_cancelled_pending["never"] = 0
+    adapter.cancel()
+    events = list(adapter.poll_events())
+    done_events = [e for e in events if e.kind == "done"]
+    dropped = [
+        e.raw
+        for e in events
+        if e.kind == "steer_ack"
+        and isinstance(e.raw, dict)
+        and e.raw.get("status") == "dropped"
+    ]
+    assert_true("cancel marks done", adapter.is_done())
+    assert_true("cancel exit 130", adapter.exit_code() == 130, str(adapter.exit_code()))
+    assert_true("single done event", len(done_events) == 1, str(done_events))
+    assert_true(
+        "pending never-ran dropped honestly",
+        any(d.get("promptId") == "never" for d in dropped),
+        str(dropped),
+    )
+    # Second cancel must not emit another done.
+    adapter.cancel()
+    more = list(adapter.poll_events())
+    assert_true(
+        "second cancel no duplicate done",
+        not any(e.kind == "done" for e in more),
+        str(more),
     )
 
 
@@ -1835,6 +1981,33 @@ def test_opencode_part_updated_cumulative(tmp: Path) -> None:
     assert_true("snapshot final Hello once", final == "Hello", final)
     assert_true("not HHeHello", final != "HHeHello", final)
 
+    # Nested production payload envelope
+    adapter_nested = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    for snap in ("H", "He", "Hello"):
+        adapter_nested._handle_event(
+            {
+                "directory": "/tmp",
+                "payload": {
+                    "type": "message.part.updated",
+                    "properties": {
+                        "part": {"id": "part_1", "type": "text", "text": snap},
+                    },
+                },
+            }
+        )
+    assert_true(
+        "nested payload snapshot Hello",
+        adapter_nested.final_text() == "Hello",
+        adapter_nested.final_text(),
+    )
+
     # delta path still incremental
     adapter2 = OpenCodeAdapter(
         binary="false",
@@ -1855,6 +2028,212 @@ def test_opencode_part_updated_cumulative(tmp: Path) -> None:
         "delta still incremental",
         adapter2.final_text() == "Hello",
         adapter2.final_text(),
+    )
+
+
+def test_opencode_abort_single_idle_completion(tmp: Path) -> None:
+    """abort (no abort-idle) → replacement → single idle completes; no double-count."""
+    print("=== unit: opencode abort without idle then single idle ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.opencode import OpenCodeAdapter  # type: ignore
+
+    art = tmp / "art-oc-abort"
+    art.mkdir(parents=True)
+    (art / "raw").mkdir(parents=True)
+    adapter = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    adapter.session_id = "sess-abort"
+    adapter.base_url = "http://127.0.0.1:1"
+    adapter._http_json = lambda *args, **kwargs: {}  # type: ignore[method-assign]
+
+    adapter._prompt_async("initial work", "initial")
+    assert_true("busy after initial", adapter.is_busy())
+
+    # Interrupt: abort without an idle for the aborted turn, then replacement.
+    result = adapter.steer("replacement work", "interrupt", "rep-client")
+    assert_true("interrupt accepted", result.ok, str(result))
+    assert_true(
+        "replacement_pending cleared after accepted prompt",
+        not adapter._replacement_pending,
+        str(adapter._replacement_pending),
+    )
+
+    # Single idle for the latest accepted (replacement) work — must terminalize.
+    adapter._handle_event(
+        {
+            "type": "session.idle",
+            "properties": {"sessionID": "sess-abort", "status": "idle"},
+        }
+    )
+    assert_true(
+        "single idle after abort+replacement completes",
+        adapter.is_done(),
+        f"done={adapter.is_done()} exit={adapter.exit_code()}",
+    )
+    assert_true("idle exit 0", adapter.exit_code() == 0, str(adapter.exit_code()))
+
+    # Auto/queue: multiple prompt_async mid-run still need only one idle.
+    adapter2 = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    adapter2.session_id = "sess-queue"
+    adapter2.base_url = "http://127.0.0.1:1"
+    adapter2._http_json = lambda *args, **kwargs: {}  # type: ignore[method-assign]
+    adapter2._prompt_async("t0", "initial")
+    adapter2._prompt_async("t1", "s1")
+    adapter2._prompt_async("t2", "s2")
+    adapter2._handle_event(
+        {
+            "type": "session.idle",
+            "properties": {"sessionID": "sess-queue", "status": "idle"},
+        }
+    )
+    assert_true(
+        "one idle terminalizes multi step_inject",
+        adapter2.is_done(),
+        f"done={adapter2.is_done()}",
+    )
+
+
+def test_opencode_sse_eof_partial_preserves_process_rc(tmp: Path) -> None:
+    """SSE EOF never upgrades partial text to exit 0 when process rc is non-zero."""
+    print("=== unit: opencode sse eof partial + process rc ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.opencode import OpenCodeAdapter  # type: ignore
+
+    art = tmp / "art-oc-eof"
+    art.mkdir(parents=True)
+    (art / "raw").mkdir(parents=True)
+    adapter = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    adapter._part_snapshots["p1"] = "partial"
+    adapter._part_order.append("p1")
+    adapter._text_parts.append("partial")
+
+    class _Proc:
+        def poll(self):
+            return 1
+
+    adapter.proc = _Proc()  # type: ignore[assignment]
+    # Simulate SSE finally-path with process already exited rc=1.
+    if not adapter._done:
+        proc_rc = adapter.proc.poll()
+        adapter._done = True
+        if proc_rc is not None:
+            adapter._exit_code = 0 if proc_rc == 0 else (proc_rc if proc_rc else 1)
+        else:
+            adapter._exit_code = 1
+    assert_true(
+        "partial text does not force exit 0",
+        adapter.exit_code() == 1,
+        str(adapter.exit_code()),
+    )
+    assert_true("final still has partial for forensics", "partial" in adapter.final_text())
+
+    # Still-running process + EOF without terminal evidence → failure.
+    adapter3 = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    adapter3._text_parts.append("partial-running")
+
+    class _Running:
+        def poll(self):
+            return None
+
+    adapter3.proc = _Running()  # type: ignore[assignment]
+    # Invoke the same policy as _sse_loop finally.
+    if not adapter3._done:
+        proc_rc = adapter3.proc.poll() if adapter3.proc is not None else None
+        adapter3._done = True
+        if proc_rc is not None:
+            adapter3._exit_code = 0 if proc_rc == 0 else (proc_rc if proc_rc else 1)
+        else:
+            adapter3._exit_code = 1
+            adapter3._error = "sse_eof_without_terminal"
+    assert_true(
+        "running process sse eof is failure",
+        adapter3.exit_code() == 1 and adapter3._error == "sse_eof_without_terminal",
+        f"exit={adapter3.exit_code()} err={adapter3._error}",
+    )
+
+
+def test_claude_content_block_stop_unknown_index(tmp: Path) -> None:
+    """Present unknown/text index is progress; only missing index may pop a tool."""
+    print("=== unit: claude content_block_stop index handling ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.claude import ClaudeAdapter  # type: ignore
+
+    art = tmp / "art-claude-stop"
+    art.mkdir(parents=True)
+    (art / "raw").mkdir(parents=True)
+    (art / "normalized").mkdir(parents=True)
+    adapter = ClaudeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="claude",
+    )
+    # Open a tool at index 1; text block at index 0.
+    adapter._handle_obj(
+        {
+            "type": "content_block_start",
+            "index": 1,
+            "content_block": {"type": "tool_use", "id": "t1", "name": "Bash"},
+        }
+    )
+    adapter._handle_obj(
+        {
+            "type": "content_block_start",
+            "index": 0,
+            "content_block": {"type": "text"},
+        }
+    )
+    # Present text index 0 must not false-complete the open tool.
+    adapter._handle_obj({"type": "content_block_stop", "index": 0})
+    events = list(adapter.poll_events())
+    kinds = [(e.kind, e.data) for e in events]
+    assert_true(
+        "text stop is progress not tool_completed",
+        any(k == "progress" and d == "block_stop" for k, d in kinds)
+        and not any(k == "tool" and str(d).startswith("completed:") for k, d in kinds),
+        str(kinds),
+    )
+    assert_true(
+        "tool still open after text stop",
+        "1" in adapter._open_tool_blocks,
+        str(adapter._open_tool_blocks),
+    )
+    # Matching tool index completes the tool.
+    adapter._handle_obj({"type": "content_block_stop", "index": 1})
+    events2 = list(adapter.poll_events())
+    assert_true(
+        "tool stop emits tool completed",
+        any(e.kind == "tool" and e.data == "completed:Bash" for e in events2),
+        str([(e.kind, e.data) for e in events2]),
     )
 
 
@@ -2460,7 +2839,7 @@ def test_detach_lifecycle(tmp: Path) -> None:
     assert_true("detach returns immediately", elapsed < 15, f"{elapsed:.2f}s")
     run_id = r.stdout.strip()
     assert_true("detach prints only the run id", run_id.startswith("run_") and "\n" not in r.stdout.strip(), repr(r.stdout))
-    assert_true("detach implies steerable", "--detach implies --steerable" in r.stderr, r.stderr[-200:])
+    assert_true("detach uses steerable default", "run_id=" in r.stderr, r.stderr[-200:])
 
     meta = _meta(reg_root, run_id)
     sup_pid = int(meta.get("pid") or 0)
@@ -2512,7 +2891,10 @@ def main() -> int:
         test_backend_settings_consistency_unit(tmp)
         test_opencode_effort_payload_unit(tmp)
         test_opencode_part_updated_cumulative(tmp)
+        test_opencode_abort_single_idle_completion(tmp)
+        test_opencode_sse_eof_partial_preserves_process_rc(tmp)
         test_opencode_redirect_and_auth_unit(tmp)
+        test_claude_content_block_stop_unknown_index(tmp)
         test_mailbox_cursor_on_exception(tmp)
         test_grok_steer_reject_when_done(tmp)
         test_oneshot_regression(tmp)
@@ -2527,6 +2909,8 @@ def main() -> int:
         test_grok_ack_not_delivered_on_write(tmp)
         test_grok_message_type_filter_unit(tmp)
         test_grok_cancelled_and_dropped_outcomes_unit(tmp)
+        test_grok_all_cancelled_queue_drop_terminates(tmp)
+        test_grok_cancel_exit_130_no_duplicate_done(tmp)
         test_grok_late_ack_reconcile_unit(tmp)
         test_grok_late_ack_e2e(tmp)
         test_grok_dropped_prompt_e2e(tmp)

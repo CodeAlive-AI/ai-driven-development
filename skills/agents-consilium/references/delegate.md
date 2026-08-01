@@ -4,7 +4,7 @@ Delegate hands one task to exactly one explicitly selected coding-agent profile 
 
 ## Contents
 
-- One-shot, steerable, and detached runs
+- Default steerable, explicit one-shot, and detached runs
 - Required caller workflow and exit codes
 - Steering modes and mailbox lifecycle
 - Retry safety, registry, and artifacts
@@ -19,13 +19,14 @@ scripts/consilium delegate -a codex --prompt-file task.md
 - Delegate is full YOLO: no sandbox, approval prompts, or confirmation flag.
 - Codex CLI, Claude Code, OpenCode, and native Grok Build support delegation.
 - Gemini is review-only and is rejected by delegate.
+- Delegate is steerable by default. Use `--one-shot` only for the legacy direct execution path.
 
 ## Steerable and detached runs
 
-`--steerable` starts a long-lived single-agent session with a private filesystem mailbox. It prints `run_id=…` early on stderr. The final answer goes to stdout and is also served later by `delegate wait`.
+Delegate starts a long-lived single-agent session with a private filesystem mailbox by default. It prints `run_id=…` early on stderr. The final answer goes to stdout and is also served later by `delegate wait`. `--steerable` remains as an explicit compatibility alias.
 
 ```bash
-scripts/consilium delegate -a grok --steerable "Implement the caching layer"
+scripts/consilium delegate -a grok "Implement the caching layer"
 scripts/consilium delegate steer run_<id> --mode auto "Prefer Redis"
 scripts/consilium delegate status run_<id> --json
 scripts/consilium delegate watch run_<id>
@@ -41,11 +42,11 @@ scripts/consilium delegate list --active
 scripts/consilium delegate wait "$RUN_ID"
 ```
 
-`--detach` implies `--steerable`, creates the registry entry required for reattachment, prints the run id on stdout, and returns immediately. The supervisor becomes its own session leader; caller `SIGINT`/`SIGHUP` cannot reach it. Supervisor stdio is stored in a private `supervisor.log`, but `wait` is the authoritative result interface.
+`--detach` uses the default steerable path, creates the registry entry required for reattachment, prints the run id on stdout, and returns immediately. The supervisor becomes its own session leader; caller `SIGINT`/`SIGHUP` cannot reach it. Supervisor stdio is stored in a private `supervisor.log`, but `wait` is the authoritative result interface. `--detach` and `--one-shot` are mutually exclusive.
 
 ## Required caller workflow
 
-1. Start from the target project CWD. Use `--steerable` under the calling harness's background execution when the run should remain in the current session; use `--detach` when it may outlive the session. Recover a lost id with `delegate list --active`.
+1. Start from the target project CWD. The default run is steerable and remains in the current session; use `--detach` when it may outlive the session. Recover a lost id with `delegate list --active`.
 2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same value to `steer`, `status`, `cancel`, `wait`, `watch`, and `list`.
 3. Steer only with new information or a genuine course correction. Do not repeat the original task. Prefer `--prompt-file` or stdin for long guidance and default to `--mode auto`.
 4. The immediate `accepted` response proves only mailbox persistence. Query `status --json` once and inspect the matching `client_id` fields: `mailbox_status`, `delivery_class`, `backend_ack`, and `error`.

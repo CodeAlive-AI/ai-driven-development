@@ -16,8 +16,8 @@ Use only `scripts/consilium`. Select the mode from the user's intent and load on
 | Review high-risk code | `review code --depth specialists` or `super` | read-only | [references/review.md](references/review.md) |
 | Maximize review coverage | `review code --depth ultra` | read-only | [references/review.md](references/review.md) |
 | Understand a local or remote repository | `explore` with Grok 4.5 | read-only | [references/explore.md](references/explore.md) |
-| Implement with one external worker | `delegate -a <exact-id>` | **full YOLO** | [references/delegate.md](references/delegate.md) |
-| Redirect and observe a long-running worker | `delegate --steerable`; steer with `--mode auto` | **full YOLO** | [references/delegate.md](references/delegate.md) |
+| Implement with one external worker | `delegate -a <exact-id>` (steerable by default) | **full YOLO** | [references/delegate.md](references/delegate.md) |
+| Redirect and observe a long-running worker | `delegate`; steer with `--mode auto` | **full YOLO** | [references/delegate.md](references/delegate.md) |
 | Let work outlive the caller or reattach later | `delegate --detach`, then `watch` or `wait` | **full YOLO for worker** | [references/delegate.md](references/delegate.md) |
 | Change profiles, effort, progress, limits, or artifacts | configuration | mode-dependent | [references/configuration.md](references/configuration.md) |
 | Diagnose events, capabilities, policy, prompts, or workflows | runtime contract | mode-dependent | [references/runtime-contracts.md](references/runtime-contracts.md) |
@@ -45,15 +45,15 @@ scripts/consilium review code --depth ultra path/to/file.py
 scripts/consilium explore "How is authentication wired up?"
 scripts/consilium explore --repo owner/repository --ref main "How are plugins loaded?"
 
-# One-shot delegate; run from the target project CWD
+# Steerable delegate (default); run from the target project CWD
 scripts/consilium delegate -a grok "Implement the caching layer and run tests."
-
-# Long-running delegate and steering
-scripts/consilium delegate -a grok --steerable "Implement the caching layer."
 scripts/consilium delegate steer run_<id> --mode auto "Keep the API compatible."
 scripts/consilium delegate status run_<id> --json
 scripts/consilium delegate watch run_<id>
 scripts/consilium delegate wait run_<id>
+
+# Explicit direct one-shot delegate
+scripts/consilium delegate -a grok --one-shot "Implement a quick isolated task."
 
 # Detached delegate and recovery
 RUN_ID=$(scripts/consilium delegate -a grok --detach "Implement SPEC.md.")

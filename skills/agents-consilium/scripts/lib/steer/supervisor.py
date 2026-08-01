@@ -178,6 +178,25 @@ class Supervisor:
             ensure_dir(Path(self.artifacts_dir) / sub, DIR_MODE)
         secure_touch(run_dir / "audit.jsonl")
 
+        # Opt-in debug event tape: per-run path under artifacts so fan-out /
+        # concurrent steerable runs never interleave sequence numbers on one file.
+        self._debug_tape_stats: Optional[Dict[str, Any]] = None
+        try:
+            from debug_tape import close_global_tape, env_enabled, init_global_tape
+
+            if env_enabled() or os.environ.get("CONSILIUM_DEBUG_EVENTS_PATH"):
+                tape_path = os.environ.get("CONSILIUM_DEBUG_EVENTS_PATH", "").strip()
+                if not tape_path:
+                    tape_path = str(Path(self.artifacts_dir) / "debug-events.jsonl")
+                # Isolate per run when path is a directory-ish default.
+                if self.run_id and "debug-events" in tape_path:
+                    tape_path = str(
+                        Path(self.artifacts_dir) / f"debug-events-{self.run_id}.jsonl"
+                    )
+                init_global_tape(tape_path)
+        except Exception:
+            pass
+
         self._update_registry_meta(
             status="running",
             pid=os.getpid(),
@@ -224,6 +243,24 @@ class Supervisor:
             return 1
         finally:
             self._cleanup_adapter()
+            try:
+                from debug_tape import close_global_tape
+
+                stats = close_global_tape()
+                if stats and (
+                    stats.get("dropped")
+                    or stats.get("overflow")
+                    or stats.get("sequence_gaps")
+                ):
+                    # Counters only — never event content on normal stderr.
+                    progress(
+                        "steer",
+                        f"run_id={self.run_id}",
+                        f"debug-events dropped={stats.get('dropped', 0)} "
+                        f"overflow={stats.get('overflow')} gaps={stats.get('sequence_gaps', 0)}",
+                    )
+            except Exception:
+                pass
 
     def _loop(self) -> int:
         assert self.adapter and self.mailbox and self.run_id
@@ -332,18 +369,58 @@ class Supervisor:
     def _handle_event(self, ev) -> None:
         assert self.run_id
         run_dir = self.registry.run_path(self.run_id)
-        # Full payload in normalized artifacts — never truncate data field.
-        record: Dict[str, Any] = {
-            "ts": utc_now_iso(),
-            "kind": ev.kind,
-            "data": ev.data or "",
-        }
-        if ev.raw is not None:
-            record["raw"] = ev.raw
-        append_jsonl(
-            Path(self.artifacts_dir) / "normalized" / f"{self.agent_id}.jsonl",
-            record,
-        )
+        # Persist via closed ConsiliumEvent schema when mappable; retain adapter
+        # kind for progress/audit. Unknown kinds are not silently written to
+        # normalized artifacts (protocol drift).
+        backend = getattr(self.adapter, "backend_name", "") if self.adapter else ""
+        record: Dict[str, Any]
+        try:
+            from events import adapter_kind_to_event  # type: ignore
+
+            ce = adapter_kind_to_event(
+                ev.kind,
+                backend=backend,
+                agent_id=self.agent_id,
+                data=ev.data or "",
+                raw=ev.raw,
+            )
+            if ce is not None:
+                record = ce.to_dict()
+                # Keep adapter kind for steerable tests / audit correlation.
+                record["kind"] = ev.kind
+            else:
+                record = {}
+        except Exception:
+            record = {}
+            ce = None
+
+        if record:
+            append_jsonl(
+                Path(self.artifacts_dir) / "normalized" / f"{self.agent_id}.jsonl",
+                record,
+            )
+            try:
+                from debug_tape import tape_record  # type: ignore
+
+                tape_record(
+                    "NORMALIZED",
+                    {"type": record.get("type"), "kind": ev.kind, "run_id": self.run_id},
+                    content_preview=preview_text(ev.data, 80),
+                )
+            except Exception:
+                pass
+        else:
+            # Drift: log to audit only, never invent a normalized type.
+            append_jsonl(
+                run_dir / "audit.jsonl",
+                {
+                    "ts": utc_now_iso(),
+                    "event": "normalized_rejected_unknown_kind",
+                    "kind": ev.kind,
+                    "data_preview": preview_text(ev.data, 80),
+                },
+            )
+
         if ev.kind == "text" and ev.data:
             progress("event", f"run_id={self.run_id}", "text", preview_text(ev.data, 80))
         elif ev.kind == "thought":

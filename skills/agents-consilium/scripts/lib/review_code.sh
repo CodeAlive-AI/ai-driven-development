@@ -334,6 +334,11 @@ EXITS=()
 total=${#ASSIGN_AGENTS[@]}
 progress_stage "code-review" "depth=$REVIEW_MODE passes=$total agents=${ASSIGN_AGENTS[*]} roles=${ASSIGN_ROLES[*]}"
 
+# Declarative plan for roles (agents already assigned via round-robin above).
+# CONSILIUM_MAX_PARALLEL bounds concurrent specialist passes (0 = unlimited).
+_CODE_LIMIT="${CONSILIUM_MAX_PARALLEL:-0}"
+if ! [[ "$_CODE_LIMIT" =~ ^[0-9]+$ ]]; then _CODE_LIMIT=0; fi
+
 for i in "${!ASSIGN_AGENTS[@]}"; do
     agent="${ASSIGN_AGENTS[$i]}"
     role="${ASSIGN_ROLES[$i]}"
@@ -345,6 +350,16 @@ for i in "${!ASSIGN_AGENTS[@]}"; do
     prompt_file="$RESP_DIR/${key}.prompt"
 
     make_prompt "$INPUT_KIND" "$INPUT_SOURCE_LABEL" "$CODE_CONTENT" > "$prompt_file"
+    if [[ "$_CODE_LIMIT" -gt 0 ]]; then
+        while true; do
+            alive=0
+            for p in "${PIDS[@]:-}"; do
+                [[ -n "$p" ]] && kill -0 "$p" 2>/dev/null && alive=$((alive + 1))
+            done
+            [[ "$alive" -lt "$_CODE_LIMIT" ]] && break
+            sleep 0.05
+        done
+    fi
     # Drain-safe live stderr (no FIFO): stdout → out; stderr → tee (live + err).
     # Enclosing subshell waits for tee; PIPESTATUS[0] is the backend status.
     (

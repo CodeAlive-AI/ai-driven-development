@@ -28,9 +28,12 @@ class ClaudeAdapter(BackendAdapter):
         self._raw_path = Path(self.artifacts_dir) / "raw" / f"{self.agent_id or 'claude'}.jsonl"
         self._norm_path = Path(self.artifacts_dir) / "normalized" / f"{self.agent_id or 'claude'}.jsonl"
         self._result_text: Optional[str] = None
+        self._final_parts: List[str] = []
         self._cancelled = False
         self._result_seen = False
         self._lock = threading.Lock()
+        # Track open tool_use content blocks by index so stop maps only tools.
+        self._open_tool_blocks: Dict[str, str] = {}
 
     def _argv(self) -> List[str]:
         cmd = [
@@ -146,22 +149,58 @@ class ClaudeAdapter(BackendAdapter):
                     raw={"uuid": uuid, "obj": obj},
                 )
             )
-            for cid, pending in list(self._pending_steers.items()):
-                if uuid == cid or (pending.get("content") and pending["content"] in content_preview):
-                    pending["replayed"] = True
-                    if not pending.get("ack_emitted"):
-                        pending["ack_emitted"] = True
-                        self._events.put(
-                            AdapterEvent(
-                                kind="steer_ack",
-                                data=cid,
-                                raw={
-                                    "promptId": cid,
-                                    "status": "applied",
-                                    "evidence": "user_message_replay",
-                                },
-                            )
+            # Correlate by client UUID only — never substring match on content
+            # (avoids false applied when guidance text appears inside model output).
+            if uuid and uuid in self._pending_steers:
+                pending = self._pending_steers[uuid]
+                pending["replayed"] = True
+                if not pending.get("ack_emitted"):
+                    pending["ack_emitted"] = True
+                    self._events.put(
+                        AdapterEvent(
+                            kind="steer_ack",
+                            data=uuid,
+                            raw={
+                                "promptId": uuid,
+                                "status": "applied",
+                                "evidence": "user_message_replay",
+                            },
                         )
+                    )
+            return
+        if typ == "content_block_start":
+            block = obj.get("content_block") or {}
+            if isinstance(block, dict) and block.get("type") == "tool_use":
+                name = block.get("name") or "tool"
+                tid = block.get("id") or ""
+                self._open_tool_blocks[str(obj.get("index", tid or name))] = name
+                self._events.put(
+                    AdapterEvent(kind="tool", data=str(name), raw=obj)
+                )
+            else:
+                self._events.put(
+                    AdapterEvent(kind="progress", data=typ or "block_start", raw=obj)
+                )
+            return
+        if typ == "content_block_stop":
+            # Only tool blocks map to tool_completed; text/thinking stops are progress.
+            # Arbitrary-pop only when index is actually missing. A present unknown
+            # or text index is structural progress — never a false tool_completed.
+            if "index" in obj and obj.get("index") is not None:
+                idx = str(obj.get("index"))
+                tool_name = self._open_tool_blocks.pop(idx, None)
+            else:
+                tool_name = None
+                if self._open_tool_blocks:
+                    _, tool_name = self._open_tool_blocks.popitem()
+            if tool_name is not None:
+                self._events.put(
+                    AdapterEvent(kind="tool", data=f"completed:{tool_name}", raw=obj)
+                )
+            else:
+                self._events.put(
+                    AdapterEvent(kind="progress", data="block_stop", raw=obj)
+                )
             return
         if typ == "content_block_delta":
             d = obj.get("delta") or {}
@@ -173,17 +212,23 @@ class ClaudeAdapter(BackendAdapter):
             return
         if typ in ("result", "result_success"):
             # Authoritative result completes the adapter even if stdin stays open.
+            # is_error/error → run_failed (exit 1), consistent with one-shot.
             result = obj.get("result")
-            if isinstance(result, str):
+            is_error = bool(obj.get("is_error") or obj.get("error"))
+            if isinstance(result, str) and result.strip() and not is_error:
+                # Non-empty result replaces streamed deltas (XOR final).
                 self._result_text = result
                 self._final_parts = [result]
-            is_error = bool(obj.get("is_error") or obj.get("error"))
+            # Empty/whitespace result: keep deltas already collected.
             with self._lock:
                 self._result_seen = True
                 self._done = True
                 if is_error:
                     self._exit_code = 1
                     self._error = str(obj.get("error") or result or "result_error")
+                    self._events.put(
+                        AdapterEvent(kind="error", data=self._error, raw=obj)
+                    )
                 else:
                     self._exit_code = 0
             self._events.put(AdapterEvent(kind="done", data="result", raw=obj))
@@ -252,18 +297,11 @@ class ClaudeAdapter(BackendAdapter):
                 error=str(e),
                 meta={"promptId": client_id},
             )
-        # Brief wait for replay ack (protocol applied evidence).
-        # Queued steers remain possible until authoritative result is seen.
-        deadline = time.time() + 5.0
-        applied = False
-        while time.time() < deadline:
-            if applied or self._pending_steers.get(client_id, {}).get("replayed"):
-                applied = True
-                break
-            if self._done:
-                break
-            time.sleep(0.05)
-        if applied:
+        # Non-blocking: return request_sent immediately so the supervisor can
+        # accept more mailbox work. Replay correlation (by client UUID) emits
+        # an async steer_ack → applied when the user message is re-emitted.
+        # Hard interrupt rejection is preserved via map_mode/NotImplementedError.
+        if self._pending_steers.get(client_id, {}).get("replayed"):
             return SteerResult(
                 ok=True,
                 delivery_class=dclass,

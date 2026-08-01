@@ -47,9 +47,10 @@ export CONSILIUM_STEER_DIR="${CONSILIUM_STEER_DIR:-$(mktemp -d "${TMPDIR:-/tmp}/
 echo "CONSILIUM_STEER_DIR=$CONSILIUM_STEER_DIR" >&2
 echo "task=$TASK" >&2
 
-# Run steerable in background; capture run_id from stderr
+# Run the default steerable delegate in background; capture run_id from stderr.
+# Omitting --steerable here ensures the paid smoke exercises the public default.
 set +e
-"$CONSILIUM" delegate -a "$AGENT" --steerable "$TASK" >"$CONSILIUM_STEER_DIR/stdout.txt" 2>"$CONSILIUM_STEER_DIR/stderr.txt" &
+"$CONSILIUM" delegate -a "$AGENT" "$TASK" >"$CONSILIUM_STEER_DIR/stdout.txt" 2>"$CONSILIUM_STEER_DIR/stderr.txt" &
 PID=$!
 set -e
 

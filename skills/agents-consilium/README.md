@@ -96,7 +96,7 @@ scripts/consilium delegate -a grok \
   "Implement the caching layer described in DESIGN.md and run the relevant tests."
 ```
 
-`delegate` runs exactly one explicitly selected agent in the current directory. It has no sandbox or approval prompts, so use it only when you intend to give that agent full control of the repository.
+`delegate` runs exactly one explicitly selected agent in the current directory and is steerable by default. It has no sandbox or approval prompts, so use it only when you intend to give that agent full control of the repository. Use `--one-shot` for the legacy direct execution path.
 
 ### Review code with independent specialists
 
@@ -125,10 +125,10 @@ scripts/consilium delegate watch "$RUN_ID"
 scripts/consilium delegate wait "$RUN_ID"
 ```
 
-Use `--steerable` when the caller needs to add guidance or change direction while the worker is running:
+Every normal delegate is steerable, so the caller can add guidance or change direction while the worker is running:
 
 ```bash
-scripts/consilium delegate -a codex --steerable \
+scripts/consilium delegate -a codex \
   "Refactor the storage layer."
 
 # From another process, using the run_id printed at startup
@@ -191,12 +191,12 @@ Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EF
 
 ## Safety and output
 
-- `review` and `explore` are read-only and use each harness's sandbox or tool restrictions.
-- `delegate` is intentionally full-access and requires an exact agent id; there is no default and no multi-agent fan-out.
+- `review` and `explore` are read-only and use each harness's sandbox or tool restrictions (mode capability matrix → `readonly`; unknown modes fail closed).
+- `delegate` is intentionally full-access and requires an exact agent id; its execution mode defaults to steerable, while the agent id has no default and there is no multi-agent fan-out.
 - Remote exploration blocks unsafe transports, does not fetch submodules or LFS payloads, and treats repository instructions as untrusted data.
-- Live progress goes to stderr; the final answer goes to stdout.
+- Live progress goes to stderr; the final answer goes to stdout. Normalized events use a closed ConsiliumEvent schema; unknown types are not persisted.
 - Complete run artifacts are saved under `CONSILIUM_OUTPUT_DIR` unless `CONSILIUM_SAVE_OUTPUTS=0`.
-- There is no timeout or token budget by default. Set a positive `AGENT_TIMEOUT` when an explicit watchdog is needed for ordinary review or one-shot delegation.
+- There is no timeout, token budget, or fan-out concurrency limit by default. Set `AGENT_TIMEOUT` for a one-shot watchdog, or `CONSILIUM_MAX_PARALLEL=N` to bound review fan-out. Opt-in `CONSILIUM_DEBUG_EVENTS=1` writes a bounded RAW→FINAL event tape.
 
 ## Command map
 
@@ -205,7 +205,7 @@ scripts/consilium review ask [...]
 scripts/consilium review code --depth basic|specialists|super|ultra [...]
 scripts/consilium explore [--repo SOURCE] [--ref REF] [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
-scripts/consilium delegate -a <exact-agent-id> --steerable|--detach [...]
+scripts/consilium delegate -a <exact-agent-id> --steerable|--one-shot|--detach [...]
 scripts/consilium delegate steer|status|cancel|wait|watch|list [...]
 scripts/consilium --list-agents
 ```

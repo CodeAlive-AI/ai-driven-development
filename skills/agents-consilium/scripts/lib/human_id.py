@@ -8,7 +8,7 @@ copy-paste. The short hex tail keeps ids unique when the same word pair is
 drawn twice.
 
 Used by:
-  - steer/registry.py   → delegate --steerable run ids
+  - steer/registry.py   → default steerable delegate run ids
   - artifacts.sh        → per-run artifact directory names
 
 CLI:

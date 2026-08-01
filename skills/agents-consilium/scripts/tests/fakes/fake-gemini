@@ -14,5 +14,14 @@ print(json.dumps({
     "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
 }))
 ' -- "$@" >> "$LOG"
-echo 'FAKE_GEMINI_OK'
-exit 0
+MODE="${CONSILIUM_FAKE_GEMINI_MODE:-ok}"
+case "$MODE" in
+  empty)
+    # Empty stdout → backend_run exit 66
+    exit 0
+    ;;
+  *)
+    echo 'FAKE_GEMINI_OK'
+    exit 0
+    ;;
+esac

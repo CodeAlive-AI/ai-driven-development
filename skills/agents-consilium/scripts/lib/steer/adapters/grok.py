@@ -234,6 +234,7 @@ class GrokAdapter(BackendAdapter):
         else:
             with self._lock:
                 self._current_running_prompt_id = None
+        cleared_pending = False
         with self._lock:
             dropped = []
             for pid, seen_seq in list(self._prompt_cancelled_pending.items()):
@@ -241,11 +242,13 @@ class GrokAdapter(BackendAdapter):
                     continue
                 if pid in self._prompt_merged_into:
                     self._prompt_cancelled_pending.pop(pid, None)
+                    cleared_pending = True
                     continue
                 if pid == running or pid in entry_ids:
                     continue
                 self._prompt_cancelled_pending.pop(pid, None)
                 dropped.append(pid)
+                cleared_pending = True
         for pid in dropped:
             self._emit_steer_ack(
                 pid,
@@ -256,6 +259,19 @@ class GrokAdapter(BackendAdapter):
         self._events.put(
             AdapterEvent(kind="progress", data="queue/changed", raw=params)
         )
+        # After never-ran cancels resolve (drop or merge clear), re-enter
+        # completion accounting so an all-cancelled lineage cannot hang waiting
+        # for a prompt_complete/result that will never arrive.
+        if cleared_pending or dropped:
+            with self._lock:
+                target = self._final_prompt_id or self._initial_prompt_id
+                if not target:
+                    known = set(self._prompt_result) | set(self._prompt_complete)
+                    target = next(iter(known), None)
+                if not target and dropped:
+                    target = dropped[-1]
+            if target:
+                self._maybe_mark_done(target)
 
     def _on_prompt_complete(self, params: Dict[str, Any]) -> None:
         pid = params.get("promptId") or ""
@@ -304,6 +320,9 @@ class GrokAdapter(BackendAdapter):
                     evidence=f"merged_{evidence}",
                     raw={"mergedIntoPromptId": pid, "frontCompletion": ack_raw},
                 )
+        # prompt_complete is authoritative for run completion accounting.
+        if pid:
+            self._maybe_mark_done(pid)
 
     def _on_notification(self, msg: Dict[str, Any]) -> None:
         method = msg.get("method") or ""
@@ -631,66 +650,172 @@ class GrokAdapter(BackendAdapter):
     def _maybe_mark_done(self, completed_prompt_id: str) -> None:
         """
         Mark the steerable run done when no prompts remain in-flight and the
-        latest non-cancelled completion belongs to the final prompt lineage.
-        Multiple concurrent in-flight prompts: only finish when all settled.
+        final prompt lineage has an authoritative stopReason from
+        prompt_complete or prompt_result.
+
+        Rules (honest):
+          - missing stop is never success
+          - end_turn → exit 0
+          - max_tokens → incomplete / non-success exit
+          - error / rate_limit / unknown / cancelled → non-zero even with partial text
+          - all-cancelled lineages terminate honestly (no hang)
+          - never-ran cancel stays awaiting_queue_resolution until queue evidence
+            resolves (do not force-drop here before runningCombinedTexts)
+          - never emit duplicate done events once already terminal
         """
         with self._lock:
+            if self._done:
+                return
             if self._in_flight:
                 return
-            unresolved = list(self._prompt_cancelled_pending)
-            self._prompt_cancelled_pending.clear()
-            for pid in unresolved:
-                self._emit_steer_ack(
-                    pid,
-                    status="dropped",
-                    evidence="run_finished_cancelled_never_ran",
-                    raw={"promptId": pid},
-                )
+            # Do NOT force-drop awaiting_queue_resolution prompts here — that
+            # races before runningCombinedTexts can arrive. Bounded grace is
+            # handled by queue snapshots / supervisor; only clear when we have
+            # advanced queue evidence (seq moved) or cancel of whole run.
             if self._cancelled:
+                # Force-resolve any still-pending never-ran cancels on hard cancel.
+                unresolved = list(self._prompt_cancelled_pending)
+                self._prompt_cancelled_pending.clear()
+                for pid in unresolved:
+                    self._emit_steer_ack(
+                        pid,
+                        status="dropped",
+                        evidence="run_finished_cancelled_never_ran",
+                        raw={"promptId": pid},
+                    )
                 self._done = True
                 self._exit_code = 130
+                self._events.put(
+                    AdapterEvent(kind="done", data="cancelled", raw={"promptId": completed_prompt_id})
+                )
                 return
+
+            # Prefer authoritative complete, then prompt_result.
             pc = self._prompt_complete.get(completed_prompt_id) or {}
+            pr = self._prompt_result.get(completed_prompt_id)
             stop = _normalize_stop_reason(pc.get("stopReason"))
-            if stop in _CANCEL_STOP_REASONS:
-                # If everything cancelled and nothing left, still may wait
-                if not self._completed_prompt_ids and not self._all_text:
+            source = "prompt_complete"
+            if not stop and isinstance(pr, dict):
+                stop = _normalize_stop_reason(pr.get("stopReason"))
+                source = "prompt_result"
+            if not stop:
+                # Missing stop is never success. If other prompts remain open in
+                # cancelled-pending, wait; if the whole lineage is cancelled,
+                # terminate honestly.
+                if self._prompt_cancelled_pending:
                     return
-                # Prefer latest non-cancelled completion
-                if self._completed_prompt_ids:
-                    completed_prompt_id = self._completed_prompt_ids[-1]
-                    pc = self._prompt_complete.get(completed_prompt_id) or {}
+                # All settled with no authoritative stop on this id — try final lineage.
+                final = self._final_prompt_id
+                if final and final != completed_prompt_id:
+                    pc = self._prompt_complete.get(final) or {}
+                    pr = self._prompt_result.get(final)
                     stop = _normalize_stop_reason(pc.get("stopReason"))
-                else:
-                    return
-            if completed_prompt_id == self._final_prompt_id or (
-                self._final_prompt_id in self._prompt_complete
-                or self._final_prompt_id in self._prompt_result
-            ):
-                if self._all_text or stop in (
-                    "end_turn",
-                    "endturn",
-                    "max_tokens",
-                    "maxtokens",
-                    "",
-                ):
-                    # Only terminal if final prompt itself completed (not just any)
-                    final = self._final_prompt_id
-                    final_done = (
-                        final in self._prompt_complete
-                        or final in self._prompt_result
-                        or completed_prompt_id == final
-                    )
-                    if final_done and not self._in_flight:
+                    source = "prompt_complete"
+                    if not stop and isinstance(pr, dict):
+                        stop = _normalize_stop_reason(pr.get("stopReason"))
+                        source = "prompt_result"
+                    completed_prompt_id = final or completed_prompt_id
+                if not stop:
+                    # All-cancelled lineage: every known prompt cancelled, none succeeded.
+                    all_ids = set(self._prompt_result) | set(self._prompt_complete)
+                    if all_ids and all(
+                        _normalize_stop_reason(
+                            (self._prompt_complete.get(pid) or {}).get("stopReason")
+                            or (
+                                self._prompt_result.get(pid).get("stopReason")
+                                if isinstance(self._prompt_result.get(pid), dict)
+                                else ""
+                            )
+                        )
+                        in _CANCEL_STOP_REASONS
+                        for pid in all_ids
+                    ):
                         self._done = True
-                        self._exit_code = 0
+                        self._exit_code = 130
                         self._events.put(
                             AdapterEvent(
                                 kind="done",
-                                data=stop or "end",
+                                data="all_cancelled",
+                                raw={"promptId": completed_prompt_id},
+                            )
+                        )
+                        return
+                    # Still missing stop — do not succeed on partial text alone.
+                    return
+
+            if stop in _CANCEL_STOP_REASONS:
+                # Prefer latest non-cancelled completion for final lineage.
+                if self._completed_prompt_ids:
+                    completed_prompt_id = self._completed_prompt_ids[-1]
+                    pc = self._prompt_complete.get(completed_prompt_id) or {}
+                    pr = self._prompt_result.get(completed_prompt_id)
+                    stop = _normalize_stop_reason(pc.get("stopReason"))
+                    source = "prompt_complete"
+                    if not stop and isinstance(pr, dict):
+                        stop = _normalize_stop_reason(pr.get("stopReason"))
+                        source = "prompt_result"
+                    if not stop or stop in _CANCEL_STOP_REASONS:
+                        # All cancelled — terminate honestly.
+                        self._done = True
+                        self._exit_code = 130
+                        self._events.put(
+                            AdapterEvent(
+                                kind="done",
+                                data="cancelled",
                                 raw=pc or {"promptId": completed_prompt_id},
                             )
                         )
+                        return
+                else:
+                    # No successful completion recorded; hang only while queue
+                    # resolution is still pending for never-ran cancels.
+                    if self._prompt_cancelled_pending:
+                        return
+                    self._done = True
+                    self._exit_code = 130
+                    self._events.put(
+                        AdapterEvent(
+                            kind="done",
+                            data="cancelled",
+                            raw={"promptId": completed_prompt_id},
+                        )
+                    )
+                    return
+
+            final = self._final_prompt_id
+            final_done = (
+                final is None
+                or final in self._prompt_complete
+                or final in self._prompt_result
+                or completed_prompt_id == final
+            )
+            if not final_done:
+                return
+
+            # Map stopReason → exit code. Partial text never upgrades errors to 0.
+            if stop in _SUCCESS_STOP_REASONS:
+                exit_code = 0
+                done_data = stop
+            elif stop in _INCOMPLETE_STOP_REASONS:
+                exit_code = 1
+                done_data = stop
+            elif stop in _FAIL_STOP_REASONS:
+                exit_code = 1
+                done_data = stop
+            else:
+                # unknown stop — non-success
+                exit_code = 1
+                done_data = f"unknown_stop:{stop}"
+
+            self._done = True
+            self._exit_code = exit_code
+            self._events.put(
+                AdapterEvent(
+                    kind="done",
+                    data=done_data,
+                    raw=pc or (pr if isinstance(pr, dict) else {"promptId": completed_prompt_id, "source": source}),
+                )
+            )
 
     def poll_events(self) -> Iterator[AdapterEvent]:
         if self.rpc:
@@ -829,12 +954,16 @@ class GrokAdapter(BackendAdapter):
         # Stable attribution: prefer client_id when UUID-shaped, else new UUID,
         # but always store client_id in meta for correlation.
         prompt_id = client_id if client_id and _looks_like_uuid(client_id) else str(uuid.uuid4())
-        self._final_prompt_id = prompt_id
+        # Final-text lineage: interrupt/sendNow may replace the whole result with
+        # the new prompt's answer. queue/auto guidance must NOT replace lineage
+        # with a tiny follower answer — keep the existing final prompt id.
         if send_now:
+            self._final_prompt_id = prompt_id
             with self._lock:
                 interrupted = self._current_running_prompt_id
                 if interrupted and interrupted != prompt_id:
                     self._superseded_by.setdefault(interrupted, prompt_id)
+        # else: leave _final_prompt_id on initial / last interrupt lineage
         try:
             # Concurrent send — do not wait for prior prompt JSON-RPC response
             self._send_prompt(content, prompt_id=prompt_id, send_now=send_now, wait=False)
@@ -910,7 +1039,26 @@ class GrokAdapter(BackendAdapter):
         return self.rpc.pid() if self.rpc else None
 
     def cancel(self) -> None:
-        self._cancelled = True
+        """Hard-cancel the run: exit 130, resolve pending never-ran honestly.
+
+        Emits at most one done event. Pending never-ran cancels become dropped
+        with run_finished_cancelled_never_ran evidence (no duplicate acks if
+        already resolved by queue reconciliation).
+        """
+        with self._lock:
+            already_done = self._done
+            self._cancelled = True
+            unresolved = list(self._prompt_cancelled_pending)
+            self._prompt_cancelled_pending.clear()
+            # Drop in-flight bookkeeping so completion accounting can finish.
+            self._in_flight.clear()
+        for pid in unresolved:
+            self._emit_steer_ack(
+                pid,
+                status="dropped",
+                evidence="run_finished_cancelled_never_ran",
+                raw={"promptId": pid},
+            )
         if self.rpc and self.session_id:
             try:
                 try:
@@ -927,15 +1075,59 @@ class GrokAdapter(BackendAdapter):
             self.rpc.terminate()
             if pid:
                 kill_process_group(pid, timeout=3.0)
-        self._done = True
+        with self._lock:
+            if not already_done and not self._done:
+                self._done = True
+                self._exit_code = 130
+                self._events.put(
+                    AdapterEvent(
+                        kind="done",
+                        data="cancelled",
+                        raw={"promptId": self._final_prompt_id or self._initial_prompt_id},
+                    )
+                )
+            else:
+                self._done = True
+                if self._exit_code is None:
+                    self._exit_code = 130
 
     def final_text(self) -> str:
+        """Assemble final answer from the authoritative lineage.
+
+        Prefer the final prompt id (initial task, or last interrupt/sendNow).
+        queue/auto followers do not become the sole lineage, so a tiny follower
+        answer cannot replace a full primary result.
+
+        After interrupt/sendNow, an empty successor lineage must not resurrect
+        superseded initial or concatenated all-text fragments.
+        """
         with self._lock:
-            if self._final_prompt_id and self._final_prompt_id in self._text_by_prompt:
-                return "".join(self._text_by_prompt[self._final_prompt_id])
+            lineage = self._final_prompt_id or self._initial_prompt_id
+            if lineage and lineage in self._text_by_prompt:
+                text = "".join(self._text_by_prompt[lineage])
+                if text.strip():
+                    return text
+            # Interrupt/sendNow replaced the lineage: empty successor wins over
+            # any superseded initial or pre-interrupt all_text fragments.
+            if (
+                self._final_prompt_id
+                and self._initial_prompt_id
+                and self._final_prompt_id != self._initial_prompt_id
+            ):
+                return "".join(self._text_by_prompt.get(self._final_prompt_id, []))
+            # Merged followers may have contributed only via the front prompt;
+            # fall back to initial, then all agent_message text (same lineage only).
+            if (
+                self._initial_prompt_id
+                and self._initial_prompt_id != lineage
+                and self._initial_prompt_id in self._text_by_prompt
+            ):
+                text = "".join(self._text_by_prompt[self._initial_prompt_id])
+                if text.strip():
+                    return text
             if self._all_text:
                 return "".join(self._all_text)
-        return "".join(self._final_parts)
+        return ""
 
     def close(self) -> None:
         self.cancel()

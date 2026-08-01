@@ -1,106 +1,47 @@
-"""Load consilium config.json (same resolution concepts as config.sh)."""
+"""Load consilium config.json via shared backend_contract (one-shot + steerable)."""
 from __future__ import annotations
 
-import json
-import os
-import shutil
+import sys
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Tuple
 
+# scripts/lib is the shared module root for events/backend_contract/mode_policy.
+_LIB = Path(__file__).resolve().parents[1]
+if str(_LIB) not in sys.path:
+    sys.path.insert(0, str(_LIB))
 
-BACKEND_BINS = {
-    "codex-cli": "codex",
-    "claude-code": "claude",
-    "opencode": "opencode",
-    "grok-build": "grok",
-    "gemini-cli": "gemini",
-}
+from backend_contract import (  # noqa: E402
+    BACKEND_BINS,
+    BIN_ENV,
+    config_path,
+    get_agent,
+    load_config,
+    resolve_agent,
+    resolve_binary,
+    skill_root,
+)
 
-BIN_ENV = {
-    "codex-cli": "CONSILIUM_BIN_CODEX",
-    "claude-code": "CONSILIUM_BIN_CLAUDE",
-    "opencode": "CONSILIUM_BIN_OPENCODE",
-    "grok-build": "CONSILIUM_BIN_GROK",
-    "gemini-cli": "CONSILIUM_BIN_GEMINI",
-}
-
-
-def skill_root() -> Path:
-    # scripts/lib/steer/config_loader.py -> skill root is ../../..
-    return Path(__file__).resolve().parents[3]
-
-
-def config_path() -> Path:
-    env = os.environ.get("CONSILIUM_CONFIG")
-    if env:
-        return Path(env)
-    return skill_root() / "config.json"
-
-
-def load_config() -> Dict[str, Any]:
-    path = config_path()
-    if not path.is_file():
-        raise FileNotFoundError(f"consilium config not found: {path}")
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def get_agent(agent_id: str) -> Dict[str, Any]:
-    cfg = load_config()
-    agents = cfg.get("agents") or {}
-    if agent_id not in agents:
-        raise KeyError(f"unknown agent id: {agent_id}")
-    return dict(agents[agent_id])
-
-
-def resolve_binary(backend: str) -> str:
-    env_key = BIN_ENV.get(backend)
-    if env_key and os.environ.get(env_key):
-        return os.environ[env_key]
-    name = BACKEND_BINS.get(backend)
-    if not name:
-        raise ValueError(f"unknown backend: {backend}")
-    # Prefer PATH
-    found = shutil.which(name)
-    if found:
-        return found
-    return name
+__all__ = [
+    "BACKEND_BINS",
+    "BIN_ENV",
+    "skill_root",
+    "config_path",
+    "load_config",
+    "get_agent",
+    "resolve_binary",
+    "agent_settings",
+]
 
 
 def agent_settings(agent_id: str) -> Tuple[Dict[str, Any], str, str, str]:
-    """Return (agent_dict, backend, model, binary)."""
+    """Return (agent_dict, backend, model, binary) — same shape as before.
+
+    Uses the shared backend_contract so model/effort/binary resolution matches
+    ordinary backend_run.sh paths (including env overrides).
+    """
+    r = resolve_agent(agent_id, mode="delegate-steerable", require_delegate=True)
     agent = get_agent(agent_id)
-    backend = agent.get("backend") or ""
-    if backend == "gemini-cli" or agent.get("supports_delegate") in (False, "false", 0, "0"):
-        raise ValueError(f"agent '{agent_id}' cannot steerable-delegate (review-only)")
-    model = agent.get("model") or ""
-    # Non-empty per-invocation env overrides take precedence over config.json.
-    # Keep ordering/defaults identical to backend_run.sh.
-    env_model = {
-        "codex-cli": "CODEX_MODEL",
-        "claude-code": "CLAUDE_MODEL",
-        "opencode": "OPENCODE_MODEL",
-        "grok-build": "GROK_MODEL",
-    }.get(backend)
-    if env_model and os.environ.get(env_model):
-        model = os.environ[env_model]
-    if backend == "codex-cli" and model == "gpt-5.6":
-        model = "gpt-5.6-sol"
-    effort = agent.get("effort") or ""
-    env_effort = {
-        "codex-cli": "CODEX_EFFORT",
-        "claude-code": "CLAUDE_EFFORT",
-        "opencode": "OPENCODE_EFFORT",
-        "grok-build": "GROK_EFFORT",
-    }.get(backend)
-    if env_effort and os.environ.get(env_effort):
-        effort = os.environ[env_effort]
-    if backend in ("codex-cli", "claude-code", "grok-build"):
-        effort = effort or "high"
-    elif backend == "opencode" and effort == "none":
-        effort = ""
     agent = dict(agent)
-    agent["model"] = model
-    agent["effort"] = effort
-    binary = resolve_binary(backend)
-    return agent, backend, model, binary
+    agent["model"] = r.model
+    agent["effort"] = r.effort
+    return agent, r.backend, r.model, r.binary

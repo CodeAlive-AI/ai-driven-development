@@ -469,12 +469,18 @@ class CodexAdapter(BackendAdapter):
         self._done = False
         # Drop partial OLD text before replacement turn (turn/started also resets).
         self._reset_turn_text_buffers()
+        # Preserve model, effort, cwd, and approval policy on the replacement turn
+        # (same binding as the initial turn/start — do not silently drop them).
         params: Dict[str, Any] = {
             "threadId": self._thread_id,
             "input": [{"type": "text", "text": content}],
             "clientUserMessageId": client_id,
             "approvalPolicy": "never",
+            "cwd": self.cwd,
+            "model": self.model,
         }
+        if self.effort:
+            params["effort"] = self.effort
         try:
             result = self.rpc.request("turn/start", params, timeout=30.0)
         except Exception as e:

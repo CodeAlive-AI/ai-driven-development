@@ -72,6 +72,14 @@ class OpenCodeAdapter(BackendAdapter):
         self._text_parts: List[str] = []
         # Cumulative snapshot text keyed by part id (message.part.updated).
         self._part_snapshots: Dict[str, str] = {}
+        # Stable insertion order of part ids for final assembly.
+        self._part_order: List[str] = []
+        # Turn liveness: session.idle is turn-idle. Do not require one idle per
+        # prompt_async. Track busy + replacement so the latest accepted work can
+        # terminalize on a single idle when no replacement is pending.
+        # Set around abort→replacement so an idle from the aborted turn cannot
+        # permanently complete the run before the new prompt is accepted.
+        self._replacement_pending = False
         self._lock = threading.Lock()
         self._cancelled = False
         # Per-run Basic auth — generated here, passed only to child env.
@@ -296,6 +304,10 @@ class OpenCodeAdapter(BackendAdapter):
         self._http_json("POST", path, body=payload, timeout=30.0, expect_empty=True)
         with self._lock:
             self._busy = True
+            # Latest accepted/replacement turn supersedes prior work accounting.
+            # Abort does not leave a residual "prompt in flight" to drain.
+            self._replacement_pending = False
+            self._done = False
 
     def _abort(self) -> None:
         if not self.session_id:
@@ -305,6 +317,8 @@ class OpenCodeAdapter(BackendAdapter):
             self._http_json("POST", path, body={}, timeout=15.0, expect_empty=True)
         except Exception as e:
             self._log_raw({"abort_error": str(e)})
+        # Abort ends the current turn but a replacement prompt may follow;
+        # do not treat the session as permanently done here.
 
     def _sse_loop(self) -> None:
         assert self.base_url
@@ -369,10 +383,30 @@ class OpenCodeAdapter(BackendAdapter):
                 resp.close()
             except Exception:
                 pass
-            if not self._done and (self._text_parts or self._part_snapshots):
+            # SSE EOF is never success solely because partial text exists.
+            # Preserve the process return code when the serve process has exited;
+            # if it is still running and no clean terminal evidence exists, fail.
+            if not self._done:
+                proc_rc = self.proc.poll() if self.proc is not None else None
                 self._done = True
-                self._exit_code = 0
-                self._events.put(AdapterEvent(kind="done", data="sse_eof"))
+                if proc_rc is not None:
+                    self._exit_code = 0 if proc_rc == 0 else (proc_rc if proc_rc else 1)
+                    self._events.put(
+                        AdapterEvent(
+                            kind="done",
+                            data="sse_eof",
+                            raw={"proc_rc": proc_rc},
+                        )
+                    )
+                else:
+                    self._exit_code = 1
+                    self._error = "sse_eof_without_terminal"
+                    self._events.put(
+                        AdapterEvent(kind="error", data=self._error)
+                    )
+                    self._events.put(
+                        AdapterEvent(kind="done", data="sse_eof_failure")
+                    )
 
     def _handle_sse_block(self, block: str) -> None:
         data_lines = []
@@ -392,6 +426,57 @@ class OpenCodeAdapter(BackendAdapter):
             self._events.put(AdapterEvent(kind="raw", data=payload))
             return
         self._handle_event(obj)
+
+    def _session_matches(self, props: Dict[str, Any], obj: Dict[str, Any]) -> bool:
+        """Global SSE must filter to this session only (exact sessionID match)."""
+        if not self.session_id:
+            return True
+        for src in (props, obj):
+            if not isinstance(src, dict):
+                continue
+            for key in ("sessionID", "sessionId", "session_id"):
+                val = src.get(key)
+                if val is not None and str(val) == str(self.session_id):
+                    return True
+            sess = src.get("session")
+            if isinstance(sess, dict):
+                for key in ("id", "sessionID", "sessionId"):
+                    val = sess.get(key)
+                    if val is not None and str(val) == str(self.session_id):
+                        return True
+        # If no session field is present, accept (some event types omit it).
+        has_any = False
+        for src in (props, obj):
+            if isinstance(src, dict) and any(
+                k in src for k in ("sessionID", "sessionId", "session_id", "session")
+            ):
+                has_any = True
+        return not has_any
+
+    def _apply_part_updated(self, part: Dict[str, Any], obj: Dict[str, Any]) -> None:
+        """Shared cumulative snapshot assembler (one-shot and steerable)."""
+        part_id = (
+            part.get("id")
+            or part.get("partID")
+            or part.get("partId")
+            or ""
+        )
+        text = part.get("text") if isinstance(part.get("text"), str) else ""
+        if not text:
+            return
+        key = str(part_id) if part_id else "_default"
+        with self._lock:
+            if key not in self._part_snapshots and key not in self._part_order:
+                self._part_order.append(key)
+            prev = self._part_snapshots.get(key, "")
+            self._part_snapshots[key] = text
+        # Emit only genuine growth (suffix), never H+He+Hello concatenation.
+        if text.startswith(prev) and len(text) > len(prev):
+            suffix = text[len(prev) :]
+            self._events.put(AdapterEvent(kind="text", data=suffix, raw=obj))
+        elif text != prev and not text.startswith(prev):
+            # Non-prefix replacement of this part only.
+            self._events.put(AdapterEvent(kind="text", data=text, raw=obj))
 
     def _handle_event(self, obj: Dict[str, Any]) -> None:
         # Real OpenCode 1.18 SSE wraps events as:
@@ -422,64 +507,75 @@ class OpenCodeAdapter(BackendAdapter):
         props = obj.get("properties") or obj.get("payload") or obj
         if not isinstance(props, dict):
             props = {}
+        # Filter global SSE events to this session when a session id is present.
+        if not self._session_matches(props, obj):
+            return
         if typ == "message.part.delta":
-            # Incremental append.
+            # Incremental append only (genuine deltas).
             part = props.get("part") or props
             delta = props.get("delta") or ""
-            text = delta or (part.get("text") if isinstance(part, dict) else "") or ""
+            text = ""
+            if isinstance(delta, str) and delta:
+                text = delta
+            elif isinstance(part, dict):
+                # Delta-only updated branch: some emitters put the delta on part
+                # without a full snapshot field.
+                text = ""
+                if isinstance(part.get("delta"), str):
+                    text = part["delta"]
             if text:
                 self._text_parts.append(str(text))
-                self._final_parts.append(str(text))
                 self._events.put(AdapterEvent(kind="text", data=str(text), raw=obj))
             return
         if typ == "message.part.updated":
-            # Cumulative snapshot per part id — store latest, do not append H+He+Hello.
             part = props.get("part") if isinstance(props.get("part"), dict) else props
             if not isinstance(part, dict):
                 part = {}
-            part_id = (
-                part.get("id")
-                or part.get("partID")
-                or part.get("partId")
-                or props.get("partID")
-                or props.get("id")
-                or ""
-            )
-            text = part.get("text") if isinstance(part.get("text"), str) else ""
-            if text == "" and isinstance(props.get("delta"), str) and not part.get("text"):
-                # Some emitters still put a full snapshot in delta-less updated.
-                text = ""
-            if text:
-                key = str(part_id) if part_id else "_default"
-                with self._lock:
-                    prev = self._part_snapshots.get(key, "")
-                    self._part_snapshots[key] = text
-                # Emit only the newly extended suffix for live progress (if any).
-                if text.startswith(prev) and len(text) > len(prev):
-                    suffix = text[len(prev) :]
-                    self._events.put(AdapterEvent(kind="text", data=suffix, raw=obj))
-                elif text != prev:
-                    # Non-prefix replacement: surface full snapshot as progress text
-                    self._events.put(AdapterEvent(kind="text", data=text, raw=obj))
+            # Delta-only updated: if text is missing but delta is present, treat
+            # as incremental rather than a full snapshot.
+            if not isinstance(part.get("text"), str) and isinstance(props.get("delta"), str):
+                d = props["delta"]
+                if d:
+                    self._text_parts.append(str(d))
+                    self._events.put(AdapterEvent(kind="text", data=str(d), raw=obj))
+                return
+            self._apply_part_updated(part, obj)
             return
         if typ in ("session.idle", "session.status", "session.completed", "session.complete"):
-            status = props.get("status") or typ
-            status_l = str(status).lower()
-            if (
-                "idle" in status_l
-                or "complete" in status_l
-                or typ in ("session.completed", "session.complete", "session.idle")
-            ):
+            status = props.get("status") if "status" in props else typ
+            # Exact status matching — never substring incomplete/not_idle.
+            status_s = str(status)
+            is_idle = (
+                typ == "session.idle"
+                or status_s == "idle"
+                or (isinstance(status, dict) and status.get("type") == "idle")
+            )
+            is_complete = typ in ("session.completed", "session.complete") or status_s in (
+                "completed",
+                "complete",
+            )
+            if is_idle or is_complete:
                 with self._lock:
                     self._busy = False
-                self._events.put(AdapterEvent(kind="turn_completed", data=str(status), raw=obj))
-                # Idle/complete for *this* delegate-run ends the adapter.
-                # Further steers must arrive before this event; supervisor
-                # drains the mailbox between events.
+                    replacement = self._replacement_pending
+                self._events.put(
+                    AdapterEvent(kind="turn_completed", data=str(status_s), raw=obj)
+                )
+                # session.idle = turn idle for the latest accepted work.
+                # One idle terminalizes when no abort→replacement is pending.
+                # Do not require one idle per historical prompt_async (auto/queue
+                # step_inject mid-run remains a single session that goes idle once).
+                if replacement:
+                    # Idle from the aborted turn before the replacement prompt
+                    # was accepted — observe the turn end, stay open for the
+                    # successor prompt.
+                    return
                 if not self._done:
                     self._done = True
                     self._exit_code = 0
-                    self._events.put(AdapterEvent(kind="done", data="idle", raw=obj))
+                    self._events.put(
+                        AdapterEvent(kind="done", data="idle", raw=obj)
+                    )
             return
         if typ in ("session.error", "error"):
             self._error = str(props)
@@ -499,9 +595,8 @@ class OpenCodeAdapter(BackendAdapter):
         if self.proc and self.proc.poll() is not None and not self._done:
             self._done = True
             rc = self.proc.returncode
+            # Do not mask non-zero process failures merely because partial text exists.
             self._exit_code = 0 if rc == 0 else (rc if rc is not None else 1)
-            if (self._text_parts or self._part_snapshots) and self._exit_code != 0:
-                self._exit_code = 0
             self._events.put(AdapterEvent(kind="done", data=str(rc)))
         while True:
             try:
@@ -537,10 +632,15 @@ class OpenCodeAdapter(BackendAdapter):
                 error=str(e),
             )
         if mode == "interrupt" or dclass == DeliveryClass.ABORT_AND_PROMPT:
+            with self._lock:
+                self._replacement_pending = True
+                self._done = False
             self._abort()
             try:
                 self._prompt_async(content, client_id=client_id)
             except Exception as e:
+                with self._lock:
+                    self._replacement_pending = False
                 return SteerResult(
                     ok=False,
                     delivery_class=dclass,
@@ -587,14 +687,16 @@ class OpenCodeAdapter(BackendAdapter):
         self._done = True
 
     def final_text(self) -> str:
-        # Prefer cumulative snapshots when present (join stable part-id order),
-        # else incremental deltas.
+        # Prefer cumulative snapshots in insertion order (part order preserved),
+        # else incremental deltas. Never concatenate H+He+Hello snapshots.
         with self._lock:
+            order = list(self._part_order)
             snaps = dict(self._part_snapshots)
         if snaps:
-            # Deterministic: sort keys so multi-part is stable.
+            if order:
+                return "".join(snaps[k] for k in order if k in snaps)
             return "".join(snaps[k] for k in sorted(snaps.keys()))
-        return "".join(self._text_parts) or "".join(self._final_parts)
+        return "".join(self._text_parts)
 
     def close(self) -> None:
         self.cancel()

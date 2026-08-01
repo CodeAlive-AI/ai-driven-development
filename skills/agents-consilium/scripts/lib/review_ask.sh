@@ -179,6 +179,10 @@ BACKENDS=()
 STATUSES=()
 EXITS=()
 
+# Bounded fan-out: CONSILIUM_MAX_PARALLEL=0 (default) = unlimited.
+_ASK_LIMIT="${CONSILIUM_MAX_PARALLEL:-0}"
+if ! [[ "$_ASK_LIMIT" =~ ^[0-9]+$ ]]; then _ASK_LIMIT=0; fi
+
 for agent in "${ENABLED_AGENTS[@]}"; do
     backend="$(config_get_field "$agent" backend)"
     label="$(config_get_field "$agent" label)"; label="${label:-$agent}"
@@ -211,6 +215,17 @@ for agent in "${ENABLED_AGENTS[@]}"; do
     # Render prompt to a file first so the backend is never fed via a hanging pipe
     # and so redirect failures cannot deadlock a named FIFO.
     printf '%s' "$agent_prompt" > "$prompt_file"
+    # Backpressure when CONSILIUM_MAX_PARALLEL > 0.
+    if [[ "$_ASK_LIMIT" -gt 0 ]]; then
+        while true; do
+            alive=0
+            for p in "${PIDS[@]:-}"; do
+                [[ -n "$p" ]] && kill -0 "$p" 2>/dev/null && alive=$((alive + 1))
+            done
+            [[ "$alive" -lt "$_ASK_LIMIT" ]] && break
+            sleep 0.05
+        done
+    fi
     # Drain-safe live stderr (no FIFO): stdout → out file; stderr → tee → live + err file.
     # Enclosing subshell waits for tee; PIPESTATUS[0] is the backend, not tee.
     # ask: one shot per agent — plain agent id as artifact key (do not inherit ambient).
