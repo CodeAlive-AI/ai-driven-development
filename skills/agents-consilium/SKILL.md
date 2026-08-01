@@ -347,7 +347,7 @@ unless persistence in private raw/audit artifacts is intentional.
 
 | Backend | `auto` | `queue` | `interrupt` |
 |---------|--------|---------|-------------|
-| Claude Code | `same_turn` (stream-json stdin + user replay) | same as auto | **rejected** (no silent downgrade) |
+| Claude Code | `queue_next_turn` (stream-json stdin + user replay; Claude runs in-flight messages as their own later turn) | same as auto | **rejected** (no silent downgrade) |
 | Codex CLI | `same_turn` (`turn/steer` + `expectedTurnId`) | same as auto | `abort_and_prompt` (`turn/interrupt` → wait `turn/completed` for that turn → `turn/start`); stale turn id → explicit reject |
 | OpenCode | `step_inject` (`prompt_async` at step boundary; works while busy) | same as auto | `abort_and_prompt` (session abort then prompt); loopback-only URL + redirect re-validation; per-run `OPENCODE_SERVER_PASSWORD` Basic auth (password never logged/stored); `message.part.updated` is cumulative per part id |
 | Grok Build | `queue_next_turn` (concurrent ACP `session/prompt`; server FIFO) | same as auto | `cancel_and_send` (second prompt with `_meta.sendNow: true` + own `promptId`) |
@@ -356,7 +356,7 @@ Grok steerable uses native ACP `grok agent stdio` concurrent prompt queue semant
 
 Codex interrupt uses a **local protocol-ack wait** (bounded handshake for the interrupted turn's `turn/completed`) — not a global run timeout. Ordinary `turn/completed` with status `completed` ends this delegate run (not a permanent idle session).
 
-Claude authoritative `result` events complete the adapter even if stdin remains open; stderr is always drained. Same-turn steers remain possible until that result.
+Claude authoritative `result` events complete the adapter even if stdin remains open; stderr is always drained. Queued steers remain possible until that result. The backend acknowledgement is `user_message_replay`, which proves Claude Code re-emitted the user message from stdin; it does not by itself prove semantic compliance.
 
 ## Observability contract
 

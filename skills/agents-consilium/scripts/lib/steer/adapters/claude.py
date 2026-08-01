@@ -15,7 +15,7 @@ from .base import AdapterEvent, BackendAdapter, DeliveryClass, SteerResult
 
 class ClaudeAdapter(BackendAdapter):
     backend_name = "claude-code"
-    auto_delivery = DeliveryClass.SAME_TURN
+    auto_delivery = DeliveryClass.QUEUE_NEXT_TURN
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -149,6 +149,19 @@ class ClaudeAdapter(BackendAdapter):
             for cid, pending in list(self._pending_steers.items()):
                 if uuid == cid or (pending.get("content") and pending["content"] in content_preview):
                     pending["replayed"] = True
+                    if not pending.get("ack_emitted"):
+                        pending["ack_emitted"] = True
+                        self._events.put(
+                            AdapterEvent(
+                                kind="steer_ack",
+                                data=cid,
+                                raw={
+                                    "promptId": cid,
+                                    "status": "applied",
+                                    "evidence": "user_message_replay",
+                                },
+                            )
+                        )
             return
         if typ == "content_block_delta":
             d = obj.get("delta") or {}
@@ -201,13 +214,14 @@ class ClaudeAdapter(BackendAdapter):
             self._exit_code = self.proc.returncode
 
     def _queue_class(self) -> DeliveryClass:
-        # Claude has no separate queue; same-turn inject is the honest class.
-        return DeliveryClass.SAME_TURN
+        # Claude Code queues stream-json messages sent while work is in flight
+        # as their own later turn; replay only proves the backend accepted it.
+        return DeliveryClass.QUEUE_NEXT_TURN
 
     def _interrupt_class(self) -> DeliveryClass:
         raise NotImplementedError(
             "claude-code steerable does not support interrupt mode "
-            "(same_turn only; refuse silent downgrade)"
+            "(queue_next_turn only; refuse silent downgrade)"
         )
 
     def steer(self, content: str, mode: str, client_id: str) -> SteerResult:
@@ -236,17 +250,13 @@ class ClaudeAdapter(BackendAdapter):
                 delivery_class=dclass,
                 status="failed",
                 error=str(e),
+                meta={"promptId": client_id},
             )
         # Brief wait for replay ack (protocol applied evidence).
-        # Same-turn steers remain possible until authoritative result is seen.
+        # Queued steers remain possible until authoritative result is seen.
         deadline = time.time() + 5.0
         applied = False
         while time.time() < deadline:
-            for ev in self.poll_events():
-                if ev.kind == "user_replay":
-                    raw = ev.raw or {}
-                    if raw.get("uuid") == client_id or content in (ev.data or ""):
-                        applied = True
             if applied or self._pending_steers.get(client_id, {}).get("replayed"):
                 applied = True
                 break
@@ -259,12 +269,14 @@ class ClaudeAdapter(BackendAdapter):
                 delivery_class=dclass,
                 status="applied",
                 evidence="user_message_replay",
+                meta={"promptId": client_id},
             )
         return SteerResult(
             ok=True,
             delivery_class=dclass,
             status="request_sent",
             evidence="stdin_write",
+            meta={"promptId": client_id},
         )
 
     def child_pid(self) -> Optional[int]:
