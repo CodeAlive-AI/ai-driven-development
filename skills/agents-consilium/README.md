@@ -1,5 +1,7 @@
 # agents-consilium
 
+![agents-consilium — other coding agents, as subagents](assets/agents-consilium-cover.png)
+
 Use other coding agents as subagents — even when your primary agent does not support their models.
 
 Most coding agents can only spawn copies of themselves or a small built-in model set. `agents-consilium` removes that boundary. Any coding agent that can run the skill can call a different coding-agent CLI to research, plan, review, or implement work.
