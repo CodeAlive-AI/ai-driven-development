@@ -22,7 +22,7 @@
 - [A.3 - Transformer Constitution (Quartet)](17-a-3---transformer-constitution.md) (220 lines) — Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence, under which exact U.RoleAssignment, by enacting which U.Method, and which separately governed...
 - [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](18-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (435 lines) — Type: Definitional pattern
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](19-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (327 lines) — Type: Definitional pattern
-- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](20-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (308 lines) — Type: Definitional pattern
+- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](20-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (327 lines) — Type: Definitional pattern
 - [A.3.4 - U.Transformation: Bounded Change Under Conditions](21-a-3-4---u-transformation-bounded-change-under-conditions.md) (393 lines) — Type: Definitional pattern
 - [A.3.4.P - Transformation Ontic Precision Restoration](22-a-3-4-p---transformation-ontic-precision-restoration.md) (262 lines) — Type: A.3.4 precision-restoration child pattern
 - [A.4 - Temporal Duality & Open‑Ended Evolution Principle](23-a-4---temporal-duality-open-ended-evolution-principle.md) (128 lines) — “A holon is born in design‑time, lives in run‑time,

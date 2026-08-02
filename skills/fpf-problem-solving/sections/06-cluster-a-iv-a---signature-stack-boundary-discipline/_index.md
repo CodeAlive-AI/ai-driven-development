@@ -21,9 +21,9 @@
 - [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](16-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (432 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording
 - [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission](17-a-6-rcd---needed-relation-claim-derivation-and-relation-kind.md) (381 lines) — Type: Kernel relation-foundation pattern
 - [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](18-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (265 lines) — Type: FPF precision-restoration pattern
-- [A.6.A - Action-Invitation Precision Restoration (ACT-INV)](19-a-6-a---action-invitation-precision-restoration.md) (735 lines) — Type: Architectural (A)
+- [A.6.A - Action-Invitation Precision Restoration (ACT-INV)](19-a-6-a---action-invitation-precision-restoration.md) (754 lines) — Type: Architectural (A)
 - [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION)](20-a-6-f---function-and-functional-precision-restoration.md) (416 lines) — Type: Architectural pattern
-- [A.6.M - Module Relation Repair](21-a-6-m---module-relation-repair.md) (345 lines) — Type: Architectural pattern
+- [A.6.M - Module Relation Repair](21-a-6-m---module-relation-repair.md) (367 lines) — Type: Architectural pattern
 - [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline](22-a-6-5---relation-declaration-slot-discipline---slotkind-valu.md) (365 lines) — Type: Architectural (A)
 - [A.6.6 - Base Declaration Discipline - Kind-explicit, scoped, witnessed base declaration discipline (with base-change lexicon)](23-a-6-6---base-declaration-discipline---kind-explicit-scoped-w.md) (575 lines) — Type: Definitional relation-discipline pattern
 - [A.6.7 - MechSuiteDescription — Description of a set of distinct mechanisms](24-a-6-7---mechsuitedescription-description-of-a-set-of-distinc.md) (441 lines) — Type: Architectural pattern.

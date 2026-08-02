@@ -18,13 +18,13 @@ Use this pattern when a communicative event must be modeled as performed work: a
 Typical moments:
 
 - a release, gate, or work step depends on whether a named approval or authorization was performed;
-- a publication, notice, or revocation changes status in a bounded context;
+- a publication, notice, or revocation may have an institutional effect only under an exact current policy or procedure, while the communicative act and any resulting effect retain distinct intervals;
 - a commitment must cite the act that instituted it, rather than only pointing at a document;
 - a message, ticket, signed record, or API call log is being mistaken for the act itself.
 
-**Primary EntityOfConcern.** The EntityOfConcern is one actual speech-act occurrence admitted under the kind `U.SpeechAct`: a communicative Work individual performed by an admitted accountable `U.System` under an exact obtaining `U.RoleAssignment` in a bounded context. The system performs the act; the assignment supplies the role and authority ground. A `SpeechActRecord`, the utterance-description episteme, and the file, message, ticket, or log carrier are separate objects.
+**Primary EntityOfConcern.** The EntityOfConcern is one actual speech-act occurrence admitted under the kind `U.SpeechAct`: communicative Work performed by an admitted accountable `U.System` under an exact obtaining `U.RoleAssignment` and enacting an exact `U.Method`. The assignment independently supplies the role, role-taxonomy episteme, effective reference scheme, authority ground, and covering extent; it does not act. Speech-act recognition separately uses an exact recognition-taxonomy episteme and effective reference scheme, plus a current policy or procedure only when classification or institutional force depends on it. A `SpeechActRecord`, MethodDescription, utterance-description episteme, channel, and file, message, ticket, or log carrier are separate objects.
 
-**First useful move.** Name the actual occurrence, performer system, and assignment under which it acts, then name the judgement context, time window, act type, what the utterance is about, and—only when current—the intended institutional target and independently established effect. Create a `SpeechActRecord` only when a receiving use needs a persistent claim about that occurrence; add utterance or carrier references only when observation, audit, or source return needs them.
+**First useful move.** Name the actual occurrence, performer system, exact obtaining assignment, and exact enacted Method. Recover the assignment's role taxonomy and scheme; then name the act's time window, recognition-taxonomy episteme and effective scheme, satisfied act type, optional channel, and any current policy or procedure. Keep the optional MethodDescription, utterance subject, policy-selected institutional target, and independently established effect separate. Create a `SpeechActRecord` only when a receiving use needs a persistent claim about that occurrence; add utterance or carrier references only when observation, audit, or source return needs them.
 
 **Not this pattern when.** If the question is only what a document says, use A.7/C.2/E.17. If the question is who is accountable under a deontic relation, use A.2.8. If the question is evidence, use A.10/G.6. If the work has no communicative effect, use A.15.1 directly.
 
@@ -62,7 +62,7 @@ How can FPF represent communicative enactments so that:
 
 1. **Agency is explicit:** an admitted accountable `U.System` performs the act under a covering role assignment, not a role value, assignment, document, spec, or interface.
 2. **The act is locatable in time:** the act has an explicit Window (and thus freshness can be evaluated).
-3. **The act is locatable in meaning:** the act is recognized inside a declared **bounded context** (the `U.Work` judgement context), not via `U.ClaimScope` (which expresses applicability of claims/commitments, not the judgement context for Work occurrences).
+3. **The act is locatable in meaning:** the act satisfies a type defined by an exact recognition-taxonomy episteme under an effective reference scheme; no generic bounded-context participant or Work judgement-context field substitutes for that basis, and `U.ClaimScope` remains only a claim-applicability object when a receiving claim needs one.
 4. **The act is auditable:** it has at least one declared utterance description, evidence carrier, or both when used for gate checks or governance.
 5. **Institutional effects are linkable:** the act can institute (or update/revoke) commitments, role assignments, statuses, etc., by reference.
 6. **Ambiguity is handled pragmatically:** the model supports multi-function and multi-party communication without requiring full linguistic pragmatics.
@@ -73,18 +73,18 @@ How can FPF represent communicative enactments so that:
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | Minimality             | Needs to be light enough for routine modeling and linting; not a full pragmatics or legal-contract system.              |
 | Auditability           | If used as a gate, it must be evidence-backed; but not all communicative acts are equally observable or retainable.     |
-| Context locality       | Meaning and “institutional force” are context-local; cross-context reuse must remain explicit (Bridge-only discipline). |
+| Interpretive locality  | Recognition and institutional force depend on exact taxonomies, schemes, and current policies; F.9 is needed only when a receiving use really crosses local meanings. |
 | Multi-party reality    | Many real boundaries are multiparty (protocols, organizations); dyadic “speaker-hearer” is too narrow.                  |
 | Multi-function reality | One utterance can carry multiple recognizable functions; “one act = one force” is often false.                          |
 | Separation discipline  | Must preserve **kind** ≠ **actual act occurrence** ≠ **SpeechActRecord** ≠ **utterance description** ≠ **carrier or trace**. |
 
 ### A.2.9:4 — Solution
 
-`U.SpeechAct` is the admitted kernel kind for communicative Work. An individual `SA : U.SpeechAct` is the actual enactment performed by an admitted accountable `U.System` under an exact obtaining role assignment within a bounded context. A `SpeechActRecord` may describe that occurrence and point to utterance descriptions or evidence carriers; none of those epistemic or representational objects is the act.
+`U.SpeechAct` is the admitted kernel kind for communicative Work. An individual `SA : U.SpeechAct` is the actual enactment performed by an admitted accountable `U.System` under an exact obtaining role assignment and enacting an exact `U.Method`. A separate recognition-taxonomy episteme and effective reference scheme make its act-type classification inspectable; an exact current policy or procedure governs any claimed institutional force. A `SpeechActRecord` may describe that occurrence and point to a MethodDescription, optional channel, utterance descriptions, or evidence carriers; none of those epistemic or representational objects is the act or the enacted Method.
 
 #### A.2.9:4.1 — Normative definition
 
-`U.SpeechAct <: U.Work` is a kind declaration. An actual Work individual is admitted as `SA : U.SpeechAct` when its primary effect is **communicative**: it places an utterance into a context in a way that is recognized by that context’s institutional semantics (policies, procedures, protocol rules) as potentially:
+`U.SpeechAct <: U.Work` is a kind declaration. An actual Work individual is admitted as `SA : U.SpeechAct` when its primary effect is **communicative**: it places an utterance through an optional channel in a way classified by an exact speech-act recognition taxonomy under an effective reference scheme and, when institutional force is claimed, by a current policy, procedure, or protocol rule as potentially:
 
 * asserting/informing,
 * requesting/directing,
@@ -94,7 +94,7 @@ How can FPF represent communicative enactments so that:
 
 Per A.7 and A.15.1, the actual speech-act occurrence is a Work individual; its `SpeechActRecord` and **utterance descriptions** are epistemes, while its **carriers** are utterance carriers, publication carriers, or traces that allow observation and audit. *(Note: “Surface” is reserved for MVPK publication/interoperability surfaces; do not use it here.)*
 
-Whether a given act type institutes commitments, permissions, or status changes is entirely context-policy dependent. Absent an explicit policy, treat `SA : U.SpeechAct` only as an actual communicative Work occurrence; neither its kind membership nor a complete-looking record licenses a deontic inference.
+Whether a given act type institutes commitments, permissions, publication relations, or status changes depends on an exact current policy or procedure and on the direct obtaining conditions of the claimed effect. Absent that basis, treat `SA : U.SpeechAct` only as actual communicative Work; neither its kind membership, recognition classification, channel, MethodDescription, nor a complete-looking record licenses a deontic or status inference.
 
 #### A.2.9:4.2 — Minimal occurrence-description record (normative)
 
@@ -112,23 +112,26 @@ SpeechActRecord ::=
     {
       speechActOccurrenceRef: SpeechActRef,
       performedBy: U.EntityRef,                     // resolves to the admitted U.System that acts
-      performedUnderAssignment: RoleAssignmentRef,  // exact covering role/authority ground
-      enactsMethodRef: optional<U.EntityRef>,        // resolves to the exact U.Method when recovered
-      methodDescriptionRef: optional<U.EpistemeRef>, // separate description, only when the use needs it
+      performedUnderAssignment: RoleAssignmentRef,  // exact obtaining assignment; A.2.1 owns its role taxonomy and scheme
+      enactsMethodRef: optional<U.EntityRef>,        // resolves to the exact U.Method enacted by the actual Work
+      methodDescriptionRef: optional<U.EpistemeRef>, // separate C.2.1 episteme used only when it identifies, constrains, or justifies that Method or intended Work
       unresolvedEnactsMethodClaimRef: optional<ClaimIdRef>,
       methodRelationGapProvenanceRef: optional<U.EpistemeRef>,
       reliancePosture: observationOnly | relianceReady,
       executedWithin: U.EntityRef,                   // claim about the containing U.System
-      window: [start, end | open],                   // claim about the occurrence's actual extent
-      judgementContextRef: U.BoundedContextRef,
+      window: [start, end | open],                   // the act occurrence's extent, never an instituted effect's validity interval
+      recognitionTaxonomyRef: U.EpistemeRef,         // exact speech-act recognition taxonomy
+      effectiveReferenceScheme: U.ReferenceScheme,  // scheme under which actTypes and cited policy/procedure are interpreted
+      policyOrProcedureRef: optional<U.EpistemeRef>, // current policy/procedure only when recognition or institutional force depends on it
+      channelRef: optional<U.EntityRef>,              // optional independently governed communication channel
       utteranceSubjectRefs: optional<set<U.EntityRef>>,
       institutionalTargetRefs: optional<set<U.EntityRef>>,
-      actTypes: set<SpeechActTypeRef>,               // ≥1 act types (supports multi-function)
-      addressedTo: optional<set<AddresseeRef>>,      // optional: who is addressed / audience
-      utteranceRefs: optional<set<DescriptionRef>>,  // where the utterance description is stated or recorded (A.7: Description)
-      carrierRefs: optional<set<CarrierRef>>,        // evidence carriers/traces (A.7: Carrier; use A.10 when evidentiary)
-      institutes: optional<InstitutedEffects>,       // references to objects/claims instituted/updated by this act
-      notes: optional<InformativeText>               // explicitly informative
+      actTypes: set<SpeechActTypeRef>,                // ≥1 satisfied classifications under the named taxonomy and scheme
+      addressedTo: optional<set<AddresseeRef>>,       // optional: who is addressed / audience
+      utteranceRefs: optional<set<DescriptionRef>>,   // where the utterance description is stated or recorded (A.7: Description)
+      carrierRefs: optional<set<CarrierRef>>,         // evidence carriers/traces (A.7: Carrier; use A.10 when evidentiary)
+      institutes: optional<InstitutedEffects>,        // references to separately obtaining objects/relations instituted or updated by this act
+      notes: optional<InformativeText>                // explicitly informative
     }
 
 DescriptionRef ::=
@@ -136,8 +139,8 @@ DescriptionRef ::=
   // Pointer to an utterance description (e.g., spec clause claim ID, a policy episteme, a message-content episteme).
 
 SpeechActTypeRef ::=
-  ContextLocalTokenRef
-  // Must be defined/recognized in the Work’s judgement context (bounded context).
+  RecognitionTaxonomyLocalTokenRef
+  // Must be defined by recognitionTaxonomyRef and satisfied under effectiveReferenceScheme.
 
 AddresseeRef ::=
   PartyRef | RoleRef | RoleAssignmentRef
@@ -159,26 +162,27 @@ InstitutedEffects ::=
 
 **Occurrence-side constraints:**
 
-* **(SA‑C0) Actual Work conformance.** The individual referenced by `speechActOccurrenceRef` **MUST** independently satisfy `U.Work` conformance (A.15.1), including the actual performer system, covering assignment, enacted method, containing system, temporal extent, and judgement-context anchoring. A complete record neither creates those facts nor substitutes for them.
-* **(SA‑C1) The accountable system performs; the assignment grounds.** The occurrence's actual performer **MUST** be an admitted `U.System`. The exact obtaining `U.RoleAssignment` under which it acts **MUST** have that system in `HolderSystemSlot` and cover the act. The assignment supplies role, authority, and attribution ground; it does not perform the act.
-* **(SA‑C2) Act types are occurrence classifications and context-local.** The occurrence **MUST** instantiate at least one `SpeechActTypeRef` recognized in its judgement context. A token written into a record does not establish that classification unless the context's predicate is satisfied.
-* **(SA‑C3) Time honesty.** The occurrence **MUST** have an actual temporal extent so freshness can be evaluated; a recorded timestamp is a claim about that extent, not the extent itself.
+* **(SA‑C0) Actual Work conformance.** The individual referenced by `speechActOccurrenceRef` **MUST** independently satisfy `U.Work` conformance under A.15.1: actual performer system, exact covering assignment and any current F.6 attribution, actual `enactsMethod -> U.Method`, containing system, and temporal extent. A complete record neither creates those facts nor substitutes for them. `methodDescriptionRef`, when present, cites a separate C.2.1 episteme used to identify, constrain, or justify that Method or intended Work; the description is not enacted.
+* **(SA‑C1) The accountable system performs; the assignment grounds.** The occurrence's actual performer **MUST** be an admitted `U.System`. The exact obtaining `U.RoleAssignment` under which it acts **MUST** have that system in `HolderSystemSlot` and cover the act. Recover the assignment's role value, role-taxonomy episteme, effective reference scheme, and obtaining extent under A.2.1. The assignment supplies role, authority, and attribution ground; it does not perform the act.
+* **(SA‑C2) Act types are independently satisfied recognition classifications.** The occurrence **MUST** instantiate at least one `SpeechActTypeRef` defined by the exact `recognitionTaxonomyRef` under the stated `effectiveReferenceScheme`. A token written into a record does not establish that classification. If a policy or procedure supplies an additional recognition condition, cite its exact current episteme and satisfy that condition separately.
+* **(SA‑C3) Time honesty and interval separation.** The occurrence **MUST** have an actual temporal extent so freshness can be evaluated; the record's `window` is a claim about that act extent, not the extent itself. Every instituted commitment, grant, publication relation, status relation, or other effect keeps its own independently governed occurrence or validity interval. Coincident boundaries do not merge act and effect.
+* **(SA‑C3a) Policy, procedure, and channel remain neighbors.** A cited `policyOrProcedureRef` is a separate current C.2.1 episteme; its currentness, applicability, and any edition relation must be established under their direct owners. An optional `channelRef` names an independently governed communication route or participating entity. Neither citation becomes the Method, the Work occurrence, an utterance description, a carrier, or an institutional effect merely by inclusion in the record.
 
-Keep three questions separate. `utteranceSubjectRefs` answers **what the utterance or claim is about**. `institutionalTargetRefs` answers **which object or relation the act is intended to institute or update under the named policy**. Actual change or institutional effect is a third world-side fact and is stated only through its exact direct change/effect relation and the matching typed `institutes.*` reference when the record needs it. An informative notice or assertion may have a subject without any institutional target or changed entity. Shared reference values do not collapse these relation meanings.
+Keep three questions separate. `utteranceSubjectRefs` answers **what the utterance or claim is about**. `institutionalTargetRefs` answers **which object or relation the act is intended to institute or update under the cited current policy or procedure**. Actual change or institutional effect is a third world-side fact and is stated only through its exact direct change/effect relation and the matching typed `institutes.*` reference when the record needs it. An informative notice or assertion may have a subject without any institutional target or changed entity. Shared reference values do not collapse these relation meanings.
 
 **Record- and reliance-side constraints:**
 
 * **(SA‑C4) A relied-on occurrence must be observable.** When a gate, checklist, commitment, or grant relies on a `SpeechActRef`, the `SpeechActRecord` **SHALL** identify that same occurrence and cite at least one applicable `utteranceRef`, `carrierRef`, or separately governed evidence relation. Evidence-critical uses **SHOULD** cite at least one carrier through A.10. Record completeness alone does not prove occurrence or institutional force.
-* **(SA‑C5) Institutional-effect claims are typed references to world-side effects.** `institutes.*` may reference only the exact commitment or relation occurrence through its declared RefKind. Each `institutes.permissions` value **MUST** be a `GrantedPermissionRelationRef@Context` whose context matches the speech-act occurrence's judgement context or is connected by the explicit Bridge used by the receiving claim. Each `institutes.publicationRelations` value **MUST** resolve to an obtaining `EpistemePublicationRelation` under E.24.PUB. A status claim is an episteme about an effect, not an instituted effect; keep it and its A.10 evidence relation outside `institutes.*`. The cited policy and direct world-side obtaining conditions still decide whether any effect exists.
-* **(SA‑C6) Cross-context use is Bridge-only.** If a `SpeechActRef` or `SpeechActRecord` is interpreted for checking, gate evidence, or provenance in a different bounded context than the occurrence's judgement context, the receiving claim **MUST** cite the Bridge/policy that licenses that interpretation rather than assuming equivalent force from the same label.
+* **(SA‑C5) Institutional-effect claims are typed references to world-side effects.** `institutes.*` may reference only the exact commitment or obtaining relation occurrence through its declared RefKind. Each `institutes.permissions` value **MUST** be an exact `GrantedPermissionRelationRef@Context` whose own participants, instituting policy, effective reference scheme, and validity interval satisfy A.2.8.PER; each `institutes.publicationRelations` value **MUST** resolve to an obtaining `EpistemePublicationRelation` under E.24.PUB. A status claim is an episteme about an effect, not an instituted effect; keep it and its A.10 evidence relation outside `institutes.*`. The cited current policy or procedure and the direct world-side obtaining conditions still decide whether any effect exists. A Bridge is added only if the receiving inference actually depends on translating or comparing local meanings across schemes.
+* **(SA‑C6) F.9 only for a real cross-locality dependency.** Cite an F.9 Bridge when a receiving check, gate, provenance claim, or effect inference actually compares, substitutes, or transfers a speech-act type or policy meaning between different local taxonomies, schemes, or policies. A different consumer, organization label, repository location, or downstream use does not by itself create that dependency. The same token in two local schemes does not establish equivalence, and a Bridge does not transfer institutional force by itself.
 
 #### A.2.9:4.3 — `SpeechActRef` discipline (normative)
 
 A **`SpeechActRef`** resolves to one actual Work individual admitted as `SA : U.SpeechAct`. It never denotes the kind itself or a `SpeechActRecord`.
 
-* If another object (for example, `U.Commitment.source.speechActRef`) cites a `SpeechActRef`, the referenced occurrence **MUST** satisfy occurrence-side **SA‑C0…SA‑C3**. A gate, audit, or provenance use additionally needs the record/evidence basis in **SA‑C4** and **SA‑C6** when cross-context.
+* If another object (for example, `U.Commitment.source.speechActRef`) cites a `SpeechActRef`, the referenced occurrence **MUST** satisfy occurrence-side **SA‑C0…SA‑C3a**. A gate, audit, or provenance use additionally needs the record/evidence basis in **SA‑C4** and needs **SA‑C6** only when its inference really crosses local taxonomies, schemes, or policies.
 * A `SpeechActRef` **MUST NOT** be replaced by an `EpistemeRef` (“see the document”) when occurrence provenance is needed. A `SpeechActRecord` or utterance-description episteme may make claims about the occurrence but is not the act.
-* If a source cannot complete a `SpeechActRecord`, it may create an observation stub with the candidate `speechActOccurrenceRef`, known claims, provenance for those claims, and explicit unknowns. When the actual `enactsMethod` relation is not recoverable, leave `enactsMethodRef` absent, cite the exact unresolved claim and source-gap provenance, and set `reliancePosture=observationOnly`. The stub does not make the candidate actual, satisfy occurrence-side conformance, or support gate/deontic provenance. It becomes reliance-ready only after the exact `enactsMethod -> U.Method` relation is recovered, or after the governing Work architecture explicitly establishes that this occurrence needs no such relation. Never mint an `AdHocCommunication` or other `U.MethodDescription` solely to fill the gap; a description neither is the method nor enacts itself.
+* If a source cannot complete a `SpeechActRecord`, it may create an observation stub with the candidate `speechActOccurrenceRef`, known claims, provenance for those claims, and explicit unknowns. When the actual `enactsMethod` relation is not recoverable, leave `enactsMethodRef` absent, cite the exact unresolved claim and source-gap provenance, and set `reliancePosture=observationOnly`. The stub does not make the candidate actual, satisfy occurrence-side conformance, or support gate/deontic provenance. It becomes reliance-ready only after the exact `enactsMethod -> U.Method` relation is recovered. Never mint an `AdHocCommunication` or other `U.MethodDescription` solely to fill the gap; a description neither is the method nor enacts itself.
 
 #### A.2.9:4.4 — Separation rules with `U.Commitment`, `GrantedPermissionRelation@Context`, and `U.PromiseContent` (normative)
 
@@ -208,86 +212,77 @@ A **`SpeechActRef`** resolves to one actual Work individual admitted as `SA : U.
 
 #### A.2.9:5.1 — Tell (universal rule)
 
-When governance or gating depends on “someone said/did X”, identify **that saying/doing** as an actual Work occurrence `SA : U.SpeechAct`. Add a `SpeechActRecord` only to state relied-on claims about it, and keep the utterance text and carriers separate. If the occurrence creates obligations, recommendations-as-duty, or prohibitions, cite explicit `U.Commitment` objects; if it creates strong permission, cite an explicit `GrantedPermissionRelation@Context`. The act institutes neither effect without the exact context policy.
+When governance or gating depends on “someone said/did X”, identify **that saying/doing** as actual Work `SA : U.SpeechAct`, its exact enacted `U.Method`, performer System, and obtaining assignment. Add a `SpeechActRecord` only to state relied-on claims about it, and keep any MethodDescription, optional channel, utterance text, and carriers separate. If the occurrence creates obligations, recommendations-as-duty, or prohibitions, cite explicit `U.Commitment` objects; if it creates strong permission, cite an exact `GrantedPermissionRelation@Context`. The act institutes neither effect without an exact current policy or procedure and the effect owner's independently satisfied conditions.
 
 #### A.2.9:5.2 — Show #1 (system archetype: change-control approval gates a deployment)
 
 **Situation (messy prose):**
 “Change is approved, so the pipeline may deploy.”
 
-**Conformant modeling sketch.** The first line names the actual Work individual. The following episteme reports claims about it; those claims must be true independently.
+**Conformant modeling sketch.** The first line names the actual communicative Work. The record then states claims about that occurrence; the assignment, Method, recognition classification, policy and grant must each obtain independently.
 
-* Actual occurrence: `SA-Approve-4711 : U.SpeechAct`
+* Actual occurrence: `SA-Approve-4711 : U.SpeechAct`.
+* Exact performer and assignment: admitted system `CAB_Chair_A` performs `SA-Approve-4711` under obtaining `CAB_Chair_A_ApproverAssignment_2026 : U.RoleAssignment`. That assignment independently exposes role value `ApproverRole`, role-taxonomy episteme `ChangeControlRoles_v3`, effective scheme `ChangeControlReferenceScheme_2026`, and an extent covering the act. The assignment grounds attribution; it does not act.
+* Actual method relation: `enactsMethod(SA-Approve-4711, ChangeApprovalMethod_v3)` independently obtains, with `ChangeApprovalMethod_v3 : U.Method`.
+* `SA-Approve-4711-Record : SpeechActRecord` states:
+  * `speechActOccurrenceRef = SpeechActRef(SA-Approve-4711)`;
+  * `performedBy = U.EntityRef(CAB_Chair_A)`;
+  * `performedUnderAssignment = RoleAssignmentRef(CAB_Chair_A_ApproverAssignment_2026)`;
+  * `enactsMethodRef = U.EntityRef(ChangeApprovalMethod_v3)`;
+  * `methodDescriptionRef = EpistemeRef(ChangeApprovalProcedure_v3)`, a separate C.2.1 episteme used here to identify and constrain the Method;
+  * `recognitionTaxonomyRef = EpistemeRef(ChangeControlSpeechActTaxonomy_v3)`;
+  * `effectiveReferenceScheme = ChangeControlReferenceScheme_2026`;
+  * `policyOrProcedureRef = EpistemeRef(ChangeControlApprovalPolicy_v3)`, current for this approval and grant use;
+  * `channelRef = U.EntityRef(CAB_TicketChannel)`;
+  * `actTypes = {SpeechActTypeRef(Approval)}` under that taxonomy and scheme;
+  * `reliancePosture = relianceReady`, `executedWithin = ChangeControlBoardSystem`, and `window = [2026-06-12T10:03Z, 2026-06-12T10:04Z]`;
+  * `utteranceSubjectRefs = {ChangeRequestId(4711)}`;
+  * `institutionalTargetRefs = {GrantedPermissionRelationRef@Context(PER-Deploy-4711)}`;
+  * `utteranceRefs = {EpistemeRef(ChangeTicket#4711)}` and `carrierRefs = {CarrierRef(TicketSystemRecord#4711)}`;
+  * `institutes.permissions = {GrantedPermissionRelationRef@Context(PER-Deploy-4711)}`.
 
-* `SA-Approve-4711-Record : SpeechActRecord`
+`PER-Deploy-4711 : GrantedPermissionRelation@Context` obtains separately under A.2.8.PER:
 
-  * `speechActOccurrenceRef = SpeechActRef(SA-Approve-4711)`
-  * `actTypes = {SpeechActTypeRef(Approval@ChangeControl)}`
-  * `performedBy = U.EntityRef(CAB_Chair_A)` where `CAB_Chair_A : U.System`
-  * `performedUnderAssignment = RoleAssignmentRef(CAB_Chair_A@ApproverRole@ChangeControl)`
-  * `enactsMethodRef = U.EntityRef(ChangeApprovalMethod_v3)`; the actual `enactsMethod` relation independently obtains
-  * `methodDescriptionRef = EpistemeRef(ChangeApprovalProcedure_v3)`
-  * `reliancePosture = relianceReady`
-  * `executedWithin = ChangeControlBoardSystem`
-  * `window = [t,t]`
-  * `judgementContextRef = ChangeControl`
-  * `utteranceSubjectRefs = {ChangeRequestId(4711)}`
-  * `institutionalTargetRefs = {GrantedPermissionRelationRef@ChangeControl(PER-Deploy-4711)}`
-  * `utteranceRefs = {EpistemeRef(ChangeTicket#4711)}`
-  * `carrierRefs = {CarrierRef(TicketSystemRecord#4711)}`
-  * `institutes.permissions = {GrantedPermissionRelationRef@ChangeControl(PER-Deploy-4711)}`
+* `beneficiaryRef = RoleAssignmentRef(OpsBot#DeployerRole:CD_Pipeline_v7)`;
+* `permittedActionSpecificationRef = EpistemeRef(DeployChange4711WorkSpecification)`;
+* `institutingSpeechActRef = SA-Approve-4711`;
+* `grantorAssignmentRef = RoleAssignmentRef(CAB_Chair_A_ApproverAssignment_2026)`;
+* `grantValidityPolicyRef = EpistemeRef(ChangeControlGrantPolicy_v3)` under `ChangeControlReferenceScheme_2026`; the separately cited `ChangeControlApprovalPolicy_v3` supplies the act-to-grant instituting rule;
+* scope, revocation stance, and validity interval `[2026-06-12T10:04Z, 2026-06-19T10:04Z]` are explicit.
 
-* `GrantedPermissionRelation@ChangeControl PER-Deploy-4711`
+The one-minute speech-act interval and seven-day grant interval are different facts even though the latter begins when the former ends.
 
-  * `beneficiaryRef = RoleAssignmentRef(OpsBot#DeployerRole:CD_Pipeline_v7)`
-  * `permittedActionSpecificationRef = EpistemeRef(DeployChange4711WorkSpecification)`
-  * `institutingSpeechActRef = SA-Approve-4711`
-  * `grantorAssignmentRef = RoleAssignmentRef(CAB_Chair_A@ApproverRole@ChangeControl)`
-  * `grantValidityPolicyRef = EpistemeRef(ChangeControlGrantPolicy_v3)`
-  * `scope`, `validityWindow`, and revocation stance are explicit.
 
-The utterance is about `ChangeRequestId(4711)`; its policy-selected institutional target and demonstrated effect are the separately obtaining grant occurrence. Nothing here claims that the change-request entity itself changed.
+The utterance is about `ChangeRequestId(4711)`; its policy-selected target and demonstrated effect are the separately obtaining grant. Nothing here claims that the change-request entity itself changed. Gate predicate `A-Gate-Deploy-4711` may check `exists SpeechAct(type=Approval, utteranceSubjectRefs includes ChangeRequestId(4711), performedBy=CAB_Chair_A, performedUnderAssignment role=ApproverRole, within 90d)`, consume the current grant, and apply other prerequisites; passing the gate neither institutes nor equals the grant. No F.9 Bridge is needed merely because a pipeline consumes the result: this case uses one exact taxonomy, scheme and policy. A Bridge becomes current only if another receiving use actually translates or compares a different local meaning.
 
-* Gate predicate `A-Gate-Deploy-4711` independently states whether deployment entry conditions hold. It may check `exists SpeechAct(type=Approval, utteranceSubjectRefs includes ChangeRequestId(4711), performedBy=CAB_Chair_A, performedUnderAssignment role=ApproverRole, within 90d)`, consume the current grant occurrence, and apply other prerequisites; passing the gate neither institutes nor equals the grant.
+**Near misses.** A ticket row alone is a carrier-backed claim, not the act. `ChangeApprovalProcedure_v3` is a MethodDescription, not what the act enacts. A current approver assignment does not prove that approval Work occurred. Without the exact current policies, the occurrence remains communicative Work but establishes no grant.
 
-This preserves:
-
-* kind vs actual act vs record vs utterance text vs carrier vs enduring grant,
-* explicit performer and grant beneficiary,
-* time window and policy for currentness,
-* explicit provenance from the grant to the instituting act, and
-* the distinction between strong permission and an admissibility gate.
+This case retains kind versus occurrence versus record, utterance versus carrier, explicit performer and grant beneficiary, exact act and grant intervals, current policy bases, provenance from grant to instituting act, and strong permission versus admissibility gate as independently judgeable distinctions.
 
 #### A.2.9:5.3 — Show #2 (episteme archetype: publishing a spec edition without making the spec an agent)
 
 **Situation (anti-pattern):**
 “The interface spec declares MUST/SHALL requirements.”
 
-**Conformant modeling sketch.** `SA-Publish-API-v12` is the actual occurrence; the record is a separate episteme about it.
+**Conformant modeling sketch.** `SA-Publish-API-v12 : U.SpeechAct` is the actual occurrence. Admitted system `StandardsEditor_A` performs it under obtaining `StandardsEditor_A_PublisherAssignment_v12`; that assignment independently identifies `PublisherRole`, role-taxonomy episteme `StandardsRoles_v12`, effective scheme `APISpecReferenceScheme_v12`, and an extent covering the act. `enactsMethod(SA-Publish-API-v12, SpecPublicationMethod_v12)` independently obtains; `SpecReleaseProcedure_v12` is only a separate description of that exact Method.
 
-* Actual occurrence: `SA-Publish-API-v12 : U.SpeechAct`
+`SA-Publish-API-v12-Record : SpeechActRecord` states:
 
-* `SA-Publish-API-v12-Record : SpeechActRecord`
+* `speechActOccurrenceRef = SpeechActRef(SA-Publish-API-v12)`;
+* `performedBy = U.EntityRef(StandardsEditor_A)` and `performedUnderAssignment = RoleAssignmentRef(StandardsEditor_A_PublisherAssignment_v12)`;
+* `enactsMethodRef = U.EntityRef(SpecPublicationMethod_v12)` and `methodDescriptionRef = EpistemeRef(SpecReleaseProcedure_v12)`;
+* `recognitionTaxonomyRef = EpistemeRef(APISpecSpeechActTaxonomy_v12)` and `effectiveReferenceScheme = APISpecReferenceScheme_v12`;
+* `policyOrProcedureRef = EpistemeRef(APISpecPublicationPolicy_v12)` and optional `channelRef = U.EntityRef(StandardsReleaseChannel)`;
+* `actTypes = {SpeechActTypeRef(Publish), SpeechActTypeRef(DeclareNorms)}` under that taxonomy and scheme;
+* `reliancePosture = relianceReady`, `executedWithin = SpecPublicationSystem`, and `window = [2026-06-14T09:00Z, 2026-06-14T09:06Z]`;
+* `utteranceSubjectRefs = {EpistemeRef(APISpec_v12)}`, `institutionalTargetRefs = {EpistemeRef(APISpec_v12)}`, `utteranceRefs = {EpistemeRef(APISpec_v12)}`, and `carrierRefs = {CarrierRef(GitTag:v12), CarrierRef(SignedReleaseArtifact:v12)}`;
+* `institutes.publicationRelations = {EpistemePublicationRelationRef(APISpec-v12-Publication)}`.
 
-  * `speechActOccurrenceRef = SpeechActRef(SA-Publish-API-v12)`
-  * `actTypes = {SpeechActTypeRef(Publish@APISpecContext), SpeechActTypeRef(DeclareNorms@APISpecContext)}`
-  * `performedBy = U.EntityRef(StandardsEditor_A)` where `StandardsEditor_A : U.System`
-  * `performedUnderAssignment = RoleAssignmentRef(StandardsEditor_A@PublisherRole@APISpecContext)`
-  * `enactsMethodRef = U.EntityRef(SpecPublicationMethod_v12)`; the actual `enactsMethod` relation independently obtains
-  * `methodDescriptionRef = EpistemeRef(SpecReleaseProcedure_v12)`
-  * `reliancePosture = relianceReady`
-  * `executedWithin = SpecPublicationSystem`
-  * `window = [t,t]`
-  * `judgementContextRef = APISpecContext`
-  * `utteranceSubjectRefs = {EpistemeRef(APISpec_v12)}`
-  * `institutionalTargetRefs = {EpistemeRef(APISpec_v12)}`
-  * `utteranceRefs = {EpistemeRef(APISpec_v12)}`
-  * `carrierRefs = {CarrierRef(GitTag:v12), CarrierRef(SignedReleaseArtifact:v12)}`
-  * `institutes.publicationRelations = {EpistemePublicationRelationRef(APISpec-v12-Publication)}`
+`APISpec-v12-Publication : EpistemePublicationRelation` separately names the selected `APISpec_v12` edition, audience declaration, bounded-use declaration, publication form, exact carrier, availability interval and governing publication conditions under E.24.PUB. It obtains only while that exact edition remains available under those conditions. Its interval need not equal the six-minute publishing act. The same episteme can be both utterance subject and publication object without those relations becoming identical.
 
-* `APISpec-v12-Publication : EpistemePublicationRelation` separately names the selected `APISpec_v12` edition, audience declaration, bounded-use declaration, publication form, and exact carrier; it obtains only while that edition is available under E.24.PUB.
+The act does not change the spec's claim content or make the episteme an actor. If `D-StdStatus-APISpec_v12-Published` is needed, keep it as a separate C.2.1 claim about the exact publication relation and cite its evidence through A.10; do not put the claim in `institutes`. Norms live in the published utterance description, while `StandardsEditor_A` performs the publishing Work. Another audience or scheme needs F.9 only when a receiving use actually translates or substitutes the local act or policy meaning.
 
-The same `APISpec_v12` episteme is both the subject of the publication utterance and the object made available by the publication relation, but those are different relations. The act does not thereby change the spec's claim content or make the episteme an actor. If `D-StdStatus-APISpec_v12-Published` is needed, keep it as a separate C.2.1 claim about the publication occurrence and cite its evidence through A.10; do not put the claim in `institutes`. Norms live in the **published utterance descriptions**, while the **act of publication** is performed by `StandardsEditor_A` under its publisher assignment.
+**Bounded non-use.** If the only question is what `APISpec_v12` says, stop at A.7/C.2/E.17. If the question is whether it is available to an audience, use E.24.PUB. If the question is evidentiary support for a status claim, use A.10. Keep A.2.9 only when the actual communicative Work occurrence itself matters.
 
 ### A.2.9:6 — Bias-Annotation
 
@@ -301,14 +296,16 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Ke
 
 ### A.2.9:7 — Conformance Checklist (normative)
 
-1. **CC‑A.2.9‑1 (Occurrence, performer, and assignment).** One actual Work individual is admitted as `SA : U.SpeechAct`; its performer is an admitted accountable `U.System`, and the exact covering `U.RoleAssignment` has that system as holder. Any `SpeechActRecord` states those as claims and **MUST NOT** make the assignment, role value, organizational label, episteme, or carrier the performer.
-2. **CC‑A.2.9‑2 (Act-type predicate).** The actual occurrence satisfies at least one context-local `SpeechActTypeRef`; merely writing a token into `SpeechActRecord.actTypes` is insufficient.
-3. **CC‑A.2.9‑3 (Actual extent versus timestamp claim).** The occurrence has an actual temporal extent. A record's `window` must truthfully state that extent at the required precision; it does not create it.
-4. **CC‑A.2.9‑4 (Observable relied-on occurrence).** If a checklist, guard, commitment, or grant cites the occurrence, one `SpeechActRecord` identifies it and cites an applicable utterance, carrier, or direct evidence relation. Evidence-critical uses **SHOULD** cite at least one carrier through A.10.
-5. **CC‑A.2.9‑5 (Typed world-side effects, separate claims).** A record's `institutes.*` branch references only an exact commitment or obtaining relation occurrence through its declared RefKind. A grant uses `GrantedPermissionRelationRef@Context`; publication uses `EpistemePublicationRelationRef`; a subject-specific status uses its direct relation type. A status claim and its evidence stay separate, and no record field makes any effect obtain.
-6. **CC‑A.2.9‑6 (Bridge-only cross-context use).** A receiving claim that interprets a `SpeechActRef` or `SpeechActRecord` in another bounded context cites the Bridge/policy that licenses that interpretation.
-7. **CC‑A.2.9‑7 (No fabricated method anchor).** If the occurrence's actual `enactsMethod -> U.Method` relation cannot be recovered, the record names the unresolved claim and source-gap provenance, remains `observationOnly`, and is not used for gate or deontic provenance. A placeholder `U.MethodDescription` never closes the gap.
-8. **CC‑A.2.9‑8 (Subject, target, and effect stay distinct).** A record uses `utteranceSubjectRefs` for aboutness and `institutionalTargetRefs` only for a policy-selected target. It claims actual change or institutional effect only through the exact direct relation; an informative act needs no changed target.
+1. **CC‑A.2.9‑1 (Occurrence, performer, and assignment).** One actual Work individual is admitted as `SA : U.SpeechAct`; its performer is an admitted accountable `U.System`, and the exact obtaining `U.RoleAssignment` has that system as holder and exposes its own role value, role-taxonomy episteme, effective reference scheme, and covering extent. Any `SpeechActRecord` states those as claims and **MUST NOT** make the assignment, role value, organizational label, episteme, or carrier the performer.
+2. **CC‑A.2.9‑2 (Exact Method and auxiliary description).** The actual occurrence independently satisfies `enactsMethod -> U.Method`. A current `methodDescriptionRef` resolves to a separate C.2.1 episteme used to identify, constrain, or justify that Method or intended Work; neither the reference nor the description is enacted.
+3. **CC‑A.2.9‑3 (Recognition taxonomy and scheme).** The actual occurrence satisfies at least one `SpeechActTypeRef` defined by the exact recognition-taxonomy episteme under the stated effective reference scheme. Merely writing a token into `SpeechActRecord.actTypes` is insufficient.
+4. **CC‑A.2.9‑4 (Actual extent versus effect interval).** The occurrence has an actual temporal extent, and a record's `window` truthfully states it at the required precision. Every instituted relation keeps its own occurrence or validity interval; neither interval creates or absorbs the other.
+5. **CC‑A.2.9‑5 (Observable relied-on occurrence).** If a checklist, guard, commitment, or grant cites the occurrence, one `SpeechActRecord` identifies it and cites an applicable utterance, carrier, or direct evidence relation. Evidence-critical uses **SHOULD** cite at least one carrier through A.10.
+6. **CC‑A.2.9‑6 (Current policy and typed world-side effects).** A record's `institutes.*` branch references only an exact commitment or obtaining relation occurrence through its declared RefKind. The exact current policy or procedure and direct owner establish any institutional effect; a status claim and its evidence stay separate, and no record field makes an effect obtain.
+7. **CC‑A.2.9‑7 (F.9 only for actual cross-locality dependence).** A receiving claim cites an F.9 Bridge only when it really compares, substitutes, or transfers speech-act or policy meaning across different local taxonomies, schemes, or policies. A new consumer or locality label alone neither requires a Bridge nor transfers force.
+8. **CC‑A.2.9‑8 (No fabricated method anchor).** If the occurrence's actual `enactsMethod -> U.Method` relation cannot be recovered, the record names the unresolved claim and source-gap provenance, remains `observationOnly`, and is not used for gate or deontic provenance. A placeholder `U.MethodDescription` never closes the gap.
+9. **CC‑A.2.9‑9 (Subject, target, and effect stay distinct).** A record uses `utteranceSubjectRefs` for aboutness and `institutionalTargetRefs` only for a policy-selected target. It claims actual change or institutional effect only through the exact direct relation; an informative act needs no changed target.
+10. **CC‑A.2.9‑10 (Optional channel stays separate).** A `channelRef`, utterance description, carrier, or trace may support identification or observation but is not the speech act, Method, performer, assignment, or instituted effect.
 
 ### A.2.9:8 — Common Anti-Patterns and How to Avoid Them
 
@@ -320,7 +317,10 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Ke
 | **Placeholder method as Work anchor**                                     | a fabricated description hides an unknown world-side relation | leave `enactsMethodRef` unresolved with source-gap provenance and `observationOnly`; recover the actual method relation before reliance |
 | **`affected` as aboutness, target, and effect**                            | one field makes mention look like world-side change | state the utterance subject and intended institutional target separately; cite an exact obtaining change/effect relation only when one exists |
 | **Status claim listed as instituted effect**                              | a claim ID is mistaken for the status it describes | cite the exact status or publication relation occurrence; keep the C.2.1 claim and A.10 evidence separate |
-| **Free-text type** (“type=‘approved-ish’”)                                | not lintable; drifts across faces    | register `SpeechActTypeRef` in the context and use it                                    |
+| **Free-text type** (“type=‘approved-ish’”)                                | not lintable; drifts across schemes  | define `SpeechActTypeRef` in the exact recognition-taxonomy episteme and interpret it under the effective reference scheme |
+| **Generic judgement-context field**                                      | one container word hides taxonomy, scheme, policy, channel, and receiving use | name only the exact recognition taxonomy, effective scheme, current policy/procedure, optional channel, and any actual F.9 crossing |
+| **MethodDescription as enacted Method**                                  | a procedure episteme is made the world-side way of doing | recover exact `enactsMethod -> U.Method`; cite `methodDescriptionRef` only as a separate identifying, constraining, or justifying episteme |
+| **Channel or carrier as act**                                            | transmission or evidence is mistaken for communicative Work | identify the exact speech-act occurrence; keep optional channel, utterance description, and carriers in their direct relations |
 | **Act carries obligations** (obligations embedded as prose in speech act) | collapses act and deontic binding    | model obligations as `U.Commitment` objects instituted by the act                        |
 | **Gating without window**                                                 | cannot evaluate freshness            | add explicit `window` and reference it in the guard/checklist                            |
 | **Hidden multi-act** (one event silently creates multiple commitments)    | loses traceability; creates disputes | represent multi-function via `actTypes` set or multiple speech acts sharing the same carrier |
@@ -336,11 +336,11 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Ke
 **Trade-offs / mitigations**
 
 * Reliance-bearing uses require a small structured `SpeechActRecord` plus adequate evidence; ordinary occurrence talk needs no record when no later claim must cite it.
-* Requires context-local `SpeechActTypeRef` registration; mitigated by starting with a small set (Approve, Revoke, Publish, Notify, Authorize) and extending as needed.
+* Requires one exact recognition-taxonomy episteme and effective reference scheme for `SpeechActTypeRef`; mitigated by starting with a small set (Approve, Revoke, Publish, Notify, Authorize) and extending that taxonomy deliberately.
 
 ### A.2.9:10 — Rationale
 
-FPF already relies on communicative acts (approvals, notices, overrides) as operationally meaningful events. A.2.9 therefore admits `U.SpeechAct` as the Work kind, treats each actual act as a temporally bounded Work individual under it, and uses `SpeechActRecord` only for claim-bearing representation. That separation keeps performer, scope, time, utterance descriptions, carriers, and separately governed deontic effects (`U.Commitment` or `GrantedPermissionRelation@Context`) inspectable without letting a record stand in for actuality.
+FPF already relies on communicative acts (approvals, notices, overrides) as operationally meaningful events. A.2.9 therefore admits `U.SpeechAct` as the Work kind, treats each actual act as a temporally bounded Work individual enacting an exact Method, and uses `SpeechActRecord` only for claim-bearing representation. That separation keeps performer, obtaining assignment, role and recognition taxonomies, effective schemes, any receiving claim scope, optional MethodDescription and channel, act interval, utterance descriptions, carriers, and separately governed effect intervals and deontic relations (`U.Commitment` or `GrantedPermissionRelation@Context`) inspectable without letting a record stand in for actuality.
 
 This also improves modularity:
 
@@ -359,7 +359,7 @@ This also improves modularity:
 
 **Uses / builds on**
 
-* Uses **A.15.1 (`U.Work`)** for the event/work backbone (actual performer system, covering assignment, window, and stance).
+* Uses **A.15.1 (`U.Work`)** for the occurrence backbone: actual performer system, exact covering assignment, actual `enactsMethod -> U.Method`, temporal extent, containing system, and a separate optional `methodDescriptionRef`.
 * Uses **A.7** for the strict actual-act≠record/description≠carrier split.
 * Coordinates with **A.2.6** for scope/window discipline.
 

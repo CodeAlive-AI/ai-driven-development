@@ -24,14 +24,20 @@ The first useful output is `StructuralSynthesisDiscoveryAdequacyNote@Project`:
 
 ```text
 StructuralSynthesisDiscoveryAdequacyNote@Project:
+  projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  structuralSynthesisAdequacyNoteProjectUseRelationRef?: U.RelationRef governed by the exact architecture-use or work-use pattern
   groundedArchitectureQuestionRef:
   selectedSourceStructureRefs:
   generationOrDiscoveryMethodRef:
+  generationOrDiscoveryWorkOccurrenceRef?: U.EntityRef constrained to one independently admitted U.Work
+  generationOrDiscoveryWorkAttributionRef?: U.RelationRef constrained to the exact F.6 performedUnderAssignment occurrence when attribution is current
   searchOrQuerySpaceRef?:
   constraintRefs:
   producedCarrierOrDescriptionRefs:
   describedStructureRefs?:
   synthesisStructureMapOrTransformationTrace?:
+  actualTransformationRefs?:
+  workToTransformationOrProductionClaimRefs?:
   preservedStructure:
   lostStructure:
   constraintGovernedUnfoldingStructureRef?:
@@ -51,13 +57,17 @@ StructuralSynthesisDiscoveryAdequacyNote@Project:
   carrierAdmissionReturnCondition:
 ```
 
+Here `@Project` is a compatibility and retrieval cue only. It establishes no project entity, composite-work identity, context, authority, viewpoint, or parthood. When the note is genuinely used in one actual project, `projectWorkOccurrenceRef` identifies the exact composite `U.Work` and `structuralSynthesisAdequacyNoteProjectUseRelationRef` identifies the direct relation by which that exact project Work uses the note. The suffix or either reference alone establishes no project locality. The note and the composite project Work remain distinct.
+
+When generation or discovery is claimed as performed work, `generationOrDiscoveryWorkOccurrenceRef` identifies one independently admitted dated `U.Work`; its performer System, exact obtaining `U.RoleAssignment`, F.6 `performedUnderAssignment` attribution when current, enacted Method, extent, and containing System remain under A.15.1, A.2.1, and F.6. The Method, Work, note, and produced carrier or description are different objects. `actualTransformationRefs` may cite only independently identified A.3.4 bounded changes; a method label, transformation trace, graph edge, or before-and-after picture does not make a transformation actual. Any positive link from the Work to an actual transformation or produced entity must cite an exact direct predicate, an admitted A.6.RCD local claim, or the selected A.15.PROD branch in `workToTransformationOrProductionClaimRefs`; otherwise keep the objects separate and return the exact `missing-governor`. Every structure reference likewise resolves to an independently selected A.22 `U.Structure`; a carrier, graph, cluster, or description does not supply its four identity discriminators.
+
 Adoption test: after using C.35, another practitioner can tell what was produced, which structure it describes, what it preserves and loses, what must happen before C.32 admission or realization claims, and which governing pattern receives the next claim.
 
 What C.35 buys in practice: the practitioner can accept useful generated or discovered output without handing it authority. The pattern lets a search output, cluster, query result, model transformation, or LLM proposal become candidate input for architecturing only after carrier, described structure, admission condition, and receiving governing pattern are named.
 
 Ordinary working move: name the produced carrier first, then the described structure, then the admission condition. If those three cannot be separated, do not let the output enter C.32 or a decision.
 
-Not this pattern when the current question is how to search, choose, measure, decide, authorize, publish, govern a reusable generator, or run the work itself. Use the governing pattern for that question first. Return to C.35 only when a produced carrier must be admitted or rejected before another architecture pattern relies on it.
+Not this pattern when the current question is how to search, choose, measure, decide, authorize, publish, govern a reusable generator, govern a cultural-evolution case, or run the work itself. Use the governing pattern for that question first, including `C.36` for the cultural-evolution relation bundle. Return to C.35 only when a produced carrier must be admitted or rejected before another architecture pattern relies on it.
 
 ### C.35:2 - Problem
 
@@ -65,7 +75,7 @@ Modern architecture work receives outputs that carry or describe selected struct
 
 These outputs can be extremely useful. They can expose candidate decompositions, relation gaps, hidden invariants, feasible search regions, trade-off points, source labels, or overlooked structure. But they are not automatically architecture, selected candidate structures, realized holon structures, eval results, evidence sufficiency, or decision authority.
 
-C.35 handles the gap between produced carrier and architecture use. It asks which selected source structures and production or discovery method produced the output, which described structure is recoverable, what is preserved and lost, what validation or comparison is available, what bearer or realization boundary is open, and what condition must be met before the output can feed C.32 or another governing pattern.
+C.35 handles the gap between produced carrier and architecture use. It asks which exact generation or discovery Method was used; whether one independently admitted Work occurrence actually enacted it; which exact production, discovery-use, or work-to-change claim connects that Work to the carrier or change, if any; which independently selected source and described structures are recoverable; what is preserved and lost; what validation or comparison is available; what bearer or realization boundary is open; and what condition must be met before the output can feed C.32 or another governing pattern.
 
 ### C.35:3 - Forces
 
@@ -89,9 +99,9 @@ Read the note as an admission check between generation and architecture work. Th
 Work in this order:
 
 1. Name the grounded architecture question and selected source structure refs. If no grounded architecture question exists, return to `C.30`, `C.32.P2S`, or `C.32`.
-2. Name the generation or discovery method and search or query space: DSM, MDM, MBSE query, graph grammar, model transformation, LLM proposal, NAS, DSE, QD archive, code-agent probe, simulation, benchmark, or source-mining method.
-3. Separate produced carrier or description from described structure. The carrier may be a diagram, table, graph, query result, cluster, model file, prompt output, or benchmark trace.
-4. State preserved structure, lost structure, constraints, source-label recovery, observation and uncertainty refs, validation or comparison refs, and transformation trace when present.
+2. Name the generation or discovery Method and search or query space: DSM, MDM, MBSE query, graph grammar, model transformation, LLM proposal, NAS, DSE, QD archive, code-agent probe, simulation, benchmark, or source-mining method. When actual performed generation or discovery is part of the claim, separately name the dated `U.Work`, its exact A.15.1/F.6 basis, and the direct production, discovery-use, or work-to-change claim on which this note relies.
+3. Separate produced carrier or description from described structure. The carrier may be a diagram, table, graph, query result, cluster, model file, prompt output, or benchmark trace. Naming it as produced does not by itself establish which Work produced it, entity-identity inception, production completion, or a relation to an actual transformation; cite the exact direct or local claim when any of those assertions is current.
+4. State preserved structure, lost structure, constraints, source-label recovery, observation and uncertainty refs, validation or comparison refs, and transformation trace when present. If an actual change is claimed, also cite the independently identified A.3.4 `U.Transformation`; the trace and the selected A.22 structures remain separate from that occurrence.
 5. State candidate-admission condition. Route to `C.32` only when the described structure can be used as a candidate configuration or candidate-generation input under selected structures, architecture characteristics, constraints, gains, losses, and carrier-admission return.
 6. State bearer or realization boundary. Use `bearerFeasibilityQuestionRef?` only when the direct governing pattern has opened a separate software, physical, organizational, method, role, or epistemic bearer-feasibility question.
 7. Route selected-set publication, archive, front, and pool policy to `G.5`, `C.18`, or `C.19`.
@@ -111,7 +121,7 @@ Show - DSM and MDM clustering. A DSM modularization clusters components by co-ch
 
 Show - NAS result. A multi-objective NAS run returns a neural architecture graph and Pareto point. C.35 records search space, constraints, performance and resource criteria refs, generated carrier, described functional architecture structure, preserved dataflow, lost deployment and evidence structure, bearer boundary, and eval return. `C.32` owns candidate-palette admission; `C.32.ACE` owns eval results.
 
-Show - graph grammar or model transformation. A graph grammar transforms a product-line model into a candidate structure. C.35 records transformation rules, selected source structures, target structures, preserved interfaces, lost manufacturing constraints, and transformation trace. C.34 may check preservation; C.32 admits only after selected-structure and characteristic effects are recoverable.
+Show - graph grammar or model transformation. A graph-grammar Method is applied in dated generation Work and returns a candidate-structure carrier for a product-line model. C.35 names the Method, exact Work when performed-work reliance is current, produced carrier, independently selected source and described structures, rules, preserved interfaces, lost manufacturing constraints, and transformation trace. If the use additionally asserts an actual formal or world-side change, it cites the exact A.3.4 occurrence and the separately governed Work-to-change or A.15.PROD claim; otherwise `model transformation` remains the Method or operation-family label and no `U.Transformation` is inferred. C.34 may check preservation; C.32 admits only after selected-structure and characteristic effects are recoverable.
 
 ### C.35:6 - Bias-Annotation
 
@@ -128,9 +138,9 @@ Show - graph grammar or model transformation. A graph grammar transforms a produ
 
 | Check | Pass condition |
 | --- | --- |
-| `CC-C35-1` | Grounded architecture question, selected source structures, generation method or discovery method, and produced carrier or description are named. |
-| `CC-C35-2` | Produced carrier or description is separated from described structure, selected candidate structure, realized holon structure, measurement return, eval return, and decision authority. |
-| `CC-C35-3` | Preserved structure, lost structure, constraints, source-label recovery, observation refs, uncertainty refs, validation refs, and comparison refs are present when they affect use. |
+| `CC-C35-1` | Grounded architecture question, independently selected source structures, generation or discovery Method, and produced carrier or description are named. When performed generation or discovery matters, one exact dated Work occurrence and its A.15.1/F.6 basis are named separately. |
+| `CC-C35-2` | Note, Method, dated generation or discovery Work, any actual transformation, production or work-to-change claim, produced carrier or description, described structure, selected candidate structure, realized holon structure, measurement return, eval return, decision authority, and composite project Work remain distinct. |
+| `CC-C35-3` | Preserved structure, lost structure, constraints, source-label recovery, observation refs, uncertainty refs, validation refs, comparison refs, and transformation trace are present when they affect use; none substitutes for the A.3.4 basis of an actual transformation or the four A.22 structure discriminators. |
 | `CC-C35-4` | Candidate admission condition names what must be true before C.32 can use the result. |
 | `CC-C35-5` | Bearer or realization boundary is stated, and any feasibility question is routed to the direct governing pattern. |
 | `CC-C35-6` | Archive, front, pool, publication, eval, measurement, mathematical lens, decision, evidence, assurance, gate, release, method, and work claims are routed to their governing patterns. |
@@ -144,7 +154,7 @@ Show - graph grammar or model transformation. A graph grammar transforms a produ
 | Pareto point as admission | A Pareto point shows trade-off position under chosen criteria, not architecture adequacy across selected structures and bearers. | Name search space, criteria refs, constraints, preserved and lost structure, bearer boundary, and eval return; then route candidate use to `C.32`. |
 | One output as reusable-generator governance | A single generated artifact does not describe the method, mechanism suite, dataset, prompt policy, or refresh process that produced a reusable generator. | Keep the one-case output in C.35 and open `E.20`, `G.1`, `G.10`, `G.11`, or another selected governing pattern when reusable generator governance is the claim. |
 | Cluster as module architecture | A DSM or MDM cluster can preserve co-change or dependency pressure while losing functional bearer semantics and interface substitutability. | Route modularity and reuse claims to `C.31`; route candidate palette use to `C.32`; keep C.35 for admission of the produced cluster carrier. |
-| Transformation output as feasibility proof | A graph grammar or model transformation can preserve formal structure while dropping manufacturing, deployment, organizational, or method bearers. | Record transformation trace, selected source structures, target structures, preserved structure, lost structure, and bearer boundary; use C.34 for preservation and the direct governing pattern for feasibility. |
+| Transformation output as feasibility proof | A graph grammar or model-transformation Method can return a useful carrier while neither proving an actual `U.Transformation` nor connecting performed Work to the change, production, manufacturing, deployment, organizational, or method bearers. | Record the Method, exact Work and attribution when current, carrier, transformation trace, independently selected source and described structures, preserved structure, lost structure, and bearer boundary. Cite A.3.4 plus the exact direct/local Work-to-change or A.15.PROD claim for any actual-change assertion; otherwise keep that branch absent. Use C.34 for preservation and the direct governing pattern for feasibility. |
 | Bypassing eval and measurement governance | A search score, benchmark, ablation, or validation trace can look like proof of architecture quality. | Route readings to `C.16`, Q-bundle use to `C.25`, eval programs and eval results to `C.32.ACE`, and decisions to `C.32.PAD`. |
 
 ### C.35:9 - Consequences
@@ -190,7 +200,7 @@ C.35 rejects the popular shortcut that a generated output, Pareto point, or clus
 
 - **Builds on:** `C.30`, `C.30.AD`, `C.30.ASV`, `A.22`, `C.32.P2S`, and `C.32`.
 - **Uses:** `C.34` when generated or transformed output must preserve selected source structure; `C.33` when capture and loss in the output are the current issue; `C.29` when a formal search, graph, entropy, category, or learned representation is being used as a mathematical lens.
-- **Coordinates with:** `C.30.STRAT`, `C.30.TFS-REL`, `A.6.M`, `C.31`, `C.31.ASAP`, `C.32.ACS`, `C.32.ACE`, `C.16`, `C.25`, `G.5`, `C.18`, `C.19`, `E.18`, `C.32.PAD`, and `C.32.ADR`.
+- **Coordinates with:** `A.3.4` for each actual bounded change; `A.15.1`, `A.2.1`, and `F.6` for performed generation or discovery Work; `A.15.PROD` and `A.6.RCD` for exact production or Work-to-change claims; `C.36` when a cultural-evolution case supplies the generated or discovered carrier while retaining governance of that case; `C.30.STRAT`, `C.30.TFS-REL`, `A.6.M`, `C.31`, `C.31.ASAP`, `C.32.ACS`, `C.32.ACE`, `C.16`, `C.25`, `G.5`, `C.18`, `C.19`, `E.18`, `C.32.PAD`, and `C.32.ADR`.
 - **Boundary:** C.35 governs generated or discovered carrier adequacy before or around C.32 candidate admission. It does not build the candidate palette, select from alternatives, govern reusable generators, define eval programs, measure values, decide projects, supply evidence or assurance, authorize work, or prove realization.
 
 ### C.35:End

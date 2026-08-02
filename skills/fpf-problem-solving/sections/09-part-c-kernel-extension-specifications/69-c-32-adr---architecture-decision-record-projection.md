@@ -40,6 +40,8 @@ The first useful output is `ArchitectureDecisionRecordProjection@Project`:
 
 ```text
 ArchitectureDecisionRecordProjection@Project:
+  projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  architectureDecisionRecordProjectUseRelationRef?: U.RelationRef governed by the exact record-use, publication-use, or work-use pattern
   projectionId:
   architectureDecisionRelationRef:
   architectureDecisionDescriptionRef:
@@ -62,6 +64,8 @@ ArchitectureDecisionRecordProjection@Project:
   updateOrReopenCondition:
   publicationUseRefs?
 ```
+
+Here `@Project` is a compatibility and retrieval cue only. It does not make the projection a project, project work, or the architecture decision relation. When this record projection is genuinely local to one actual project, `projectWorkOccurrenceRef` identifies the exact composite `U.Work`, while `architectureDecisionRecordProjectUseRelationRef` identifies the direct relation by which the record is published for, relied on by, or otherwise used in that work under the corresponding governing pattern. The decision relation, its description, the publication projection, any publication occurrence, and the composite project work remain separately identifiable.
 
 ### C.32.ADR:2 - Problem
 

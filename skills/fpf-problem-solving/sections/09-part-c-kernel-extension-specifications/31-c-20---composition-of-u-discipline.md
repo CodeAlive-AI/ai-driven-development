@@ -1,135 +1,358 @@
-## C.20 - Composition of `U.Discipline` (Discipline‑CAL)
+## C.20 - Composition of `U.Discipline` (Discipline-CAL)
 > **Status:** Stable
 > **Type:** Pattern
 
 ### E.24.UK settlement
 
-`U.Discipline` is the root durable holon kind used for field-level practice-and-knowledge wholes. Its EntityOfConcern lets FPF users talk about a discipline as one reusable object without collapsing it into a domain label, bounded context, organization, publication set, or tradition name.
+`U.Discipline` is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate under that admitted kind only after the candidate, constituents, obtaining constructive relations, assembly, identity or reidentification rule, composition-grounded whole characteristic, and larger-assembly compatibility are recoverable.
 
-The identity of a `U.Discipline` is held by a composition relation over five required positions:
+The kind is not established by a field name, subject domain, curriculum, department, professional body, journal, bibliography, standards folder, method family, bridge set, comparison policy, publication set, selected relation structure, or count of local viewpoints. A discipline is not a `U.System` or `U.Episteme` by default. A system, episteme, method, work occurrence, publication occurrence, bridge, comparison, and selected `U.Structure` retain their own identities even when they are used in work concerning a discipline.
 
-- **Episteme canon:** theories, models, reference works, definitions, proof traditions, benchmark descriptions, and other epistemes treated as canonical in the discipline;
-- **standards and practices:** accepted methods, norms, standard procedures, measurement conventions, and admissible comparison rules;
-- **organizational carriers:** journals, committees, curricula, professional bodies, labs, or institutional arrangements that carry and refresh the discipline without being identical to it;
-- **bridge set:** F.9/F.17 bridge and term rows that state how the discipline is reused across bounded contexts and source traditions;
-- **comparison governance:** characteristic, scale, evidence, and CG-Spec references that make comparisons inside or across disciplines admissible.
-
-This makes `U.Discipline` a `U.Holon`: it is a whole with epistemic, organizational, practice, bridge, and comparison-governance parts. It is not a `U.System` by default; some organizational carriers are systems, but the discipline holon includes epistemes and practices as well. It is not merely a `U.Episteme`; the canon is only one position in the discipline composition.
-
-Boundary: a **domain** names a subject area or catalog stitch; a **bounded context** names a local meaning frame; a **discipline** names the composed field-level holon that carries canon, practices, carriers, bridges, and comparison governance. Similar words across domains do not make one discipline; bridge and loss notes are required.
-
-`U.AppliedDiscipline` and `U.Transdiscipline` are C.3-governed subkind values under `U.Discipline`, not separate root ontics. `U.Tradition` and `U.Lineage` are not root U-kinds in C.20 because they name variant, edition, school, or provenance structures inside or across disciplines; write them as ordinary auxiliary values or C.3 local kinds unless a direct governing pattern supplies their own identity relation, admissible use, and E.24.UK settlement.
-
-**Builds on.** **C.2 KD-CAL** (F-G-R and the CL-to-R penalty rule), **A.19/G.0 CG-Spec** (comparability), **F.9 Bridges** (cross-context alignment), **E.10 LEX** (registers & twin labels). **Coordinates with.** **C.21** (Discipline-CHR, field health), **C.23** (Method-SoS-LOG), **F.17-F.18** (UTS).
+C.20 directly governs the narrow `DisciplinePartOfRelation` and the complete discipline-construction test. It does not introduce separate public U-kinds for applied discipline, transdiscipline, tradition, or lineage. Applied, multidisciplinary, transdisciplinary, tradition, lineage, school, and edition wording remains useful only as a separately governed classification, historical claim, or description whose exact criterion is stated.
 
 ### C.20:0 - Use This When
 
-Use this pattern when a project must treat a discipline as a durable field-level object, not as a loose domain label or a list of documents. Typical cases include comparing safety engineering traditions, moving a practice across bounded contexts, judging whether a method family belongs to a field, or keeping a discipline edition stable while its canon and standards change.
+Use this pattern when a team needs to decide whether an apparent field is one durable practice-and-knowledge whole rather than a convenient label or collection. Typical moments include:
 
-**What goes wrong if missed.** A field name starts doing the work of canon, practice, institutional carrier, bridge, and comparison governance at once; cross-context reuse then looks valid while meanings, evidence lanes, and comparison rules have already drifted.
+- comparing rival traditions within or across apparent disciplines without letting a shared label, Bridge, or comparison table merge them;
+- moving one practice across semantic localities while preserving the exact local meanings, direction, tolerated loss, and discipline boundaries;
+- judging whether an exact Method or method family actually belongs to a field assembly rather than being merely registered, used, cited, published, compared, or taught there;
+- keeping discipline continuity inspectable while its canon, standards, or accepted practices change, and identifying another whole when the reidentification rule fails;
+- deciding whether a research or engineering field has exact parts and a continuing identity;
+- deciding whether a theory, school, standard, or subdiscipline is actually a part;
+- using an applied, multidisciplinary, or transdisciplinary label without letting breadth wording create a kind or whole.
 
-**What this buys.** The discipline name becomes a reviewable holon with named composition positions, bridges, and comparison rules, so users can compare, transport, steward, or edition a field without turning it into a document list or a domain label.
+**Primary EntityOfConcern.** One exact `U.Entity` candidate being tested for recognition as `U.Discipline`. The candidate is recoverable before the classification result; calling it a candidate discipline does not make the result true.
 
-**Primary EntityOfConcern.** The EntityOfConcern is `U.Discipline`: a field-level practice-and-knowledge holon composed by canon epistemes, accepted practices and standards, organizational carriers, bridges, and comparison governance.
+**First useful move.** Name the exact candidate and two independently identified candidate parts: at least one making a knowledge-bearing contribution and at least one making a reusable-practice contribution. Then state why each direct part relation obtains and one whole-forming fact that couples the two contributions. Do this before letting the discipline name support a comparison, selector or dispatcher, health or maturity claim, transport, or edition decision. If those facts are unavailable, stop at the separately governed objects or collection.
 
-**First useful move.** State the five composition positions and the bridge/loss notes before using the discipline name in comparisons, selectors, or maturity claims.
+**What goes wrong if missed.** A field name starts doing the work of a canon, method repertoire, institution, bridge, comparison policy, and maturity score at once. A card or graph can then manufacture parts, and changes to a journal, standard, method list, or dashboard can silently manufacture a new discipline. Cross-locality reuse can also look valid after local meanings, evidence lanes, or comparison rules have drifted.
 
-**Not this pattern when.** A subject label alone belongs to domain/catalog work; local meaning belongs to bounded context; one theory or standard belongs to episteme/publication work; a school, edition, or lineage remains an auxiliary value unless a direct governing pattern admits it.
+**What this buys.** A practitioner can say what the discipline is made of, how the exact parts form one practice-and-knowledge whole, what remains the same through change, and which surrounding objects are merely used by discipline work. That makes comparison, transport, stewardship, and edition work inspectable without reducing the field to a document list or domain label.
+
+**Not this pattern when.** Use domain or catalogue work for a subject-area label; the effective ReferenceScheme, ClaimScope, F.17 local-sense row, and F.9 only when applicable for one local meaning or crossing; C.2.1 and its publication or source owners for one theory, standard, canon item, or their exact episteme edition; C.3, C.2.1, and direct historical or provenance relations for a school, variant, lineage, or classification; A.3.1 and B.1.5 for a Method or composite Method; A.15.1 for dated Work; A.22 for a selected relation organization; A.19.CPM for an actual comparison; C.21 for field-health characteristics; and E.24.PUB for publication. Return to C.20 only if the exact field-level whole and its construction are current.
 
 ### C.20:1 - Problem Frame
-Disciplines persist as *knowledge canons* (epistemes), *codified practices and standards*, and *institutional carriers* (journals, bodies, curricula). FPF needs a typed, provenance-preserving way to **compose** these into a reusable field-level holon that can be used across contexts *admissibly*. Composition must honour KD-CAL lanes and the CG-Spec Standard so that any numeric comparison or aggregation remains auditable and scale-admissible.
+
+Disciplines can persist while theories, standards, methods, organizations, publications, and vocabulary change. In practice that persistence is carried and refreshed through knowledge canons, codified practices and standards, and institutional carriers such as journals, professional bodies, curricula, committees, and laboratories, while none of those carrier families is identical to the discipline. FPF therefore still needs a typed, provenance-preserving field-level composition account. That persistence cannot be explained by a stable name or by one fixed five-position card. It needs exact constituents, direct constructive part relations, whole-forming facts, a field assembly, a reidentification rule, and a whole characteristic that the composition produces or sustains.
+
+The practice side and knowledge side must both be real. A bibliography without reusable ways of investigating or intervening is a knowledge collection. A method catalogue without field-level claim organization is a repertoire. An institution may sustain both through work, but the institution is still a separately identified system. C.20 asks when exact parts and their couplings warrant one further whole.
 
 ### C.20:2 - Problem
-Without a **composition calculus** for disciplines:
-* fields degenerate into labels; editions and rival **Traditions/Lineages** blur;
-* cross-context reuse silently drops meaning when no Bridge and loss notes are present, or performs inadmissible aggregations (means on ordinals; unit mixing);
-* selectors (Part G) cannot admissibly gate methods because maturity and evidence are not tied to a field's canon and carriers.
+
+Without a direct construction test:
+
+- labels, organizations, document sets, curricula, or registries are mistaken for disciplines;
+- a canon item or method is called a part merely because a community cites or uses it;
+- rival traditions are either flattened into false consensus or treated as separate disciplines without an identity test;
+- a changed standard, publication, or health score is mistaken for a new discipline edition;
+- bridge loss, comparison admissibility, evidence strength, and selector policy leak into discipline identity;
+- an optional selected structure is treated as a context holon, subdiscipline, or breadth count.
 
 ### C.20:3 - Forces
+
 | Force | Tension |
-|---|---|
-| **Pluralism vs Cohesion** | Rival traditions must co-exist while a discipline holon presents a coherent public identity. |
-| **Locality vs Federation** | Meaning is context‑local (rooms) ↔ reuse needs Bridges with CL and recorded loss notes. |
-| **Rigor vs Agility** | CG-Spec admissibility and KD-CAL lanes need to remain usable during practical authoring and edition work. |
-| **Didactic presentation vs Assurance depth** | Human-readable Discipline Card needs to remain tied to auditable F-G-R and provenance. |
+| --- | --- |
+| **Pluralism vs cohesion** | Rival claims and practices can remain visible while the exact assembly must still sustain one field-level whole. |
+| **Continuity vs genuine reidentification** | Parts and relations can change while the same discipline continues, but a name must not hide a changed assembly or boundary. |
+| **Readable minimum vs constructive assurance** | Ordinary work needs a short part-and-assembly account; reliance-bearing work may need a C.13 trace, evidence, currentness, and assurance. |
+| **Local meaning vs cross-field reuse** | A practice or term can be reused through an exact bridge without the bridge becoming a discipline part or merging its endpoints. |
+| **Rigor vs agility** | Exact parts and identity are required, while comparison, publication, health, and registry apparatus are added only for a named receiving use. |
+| **Didactic presentation vs ontology** | A discipline card can aid reading but none of its rows, columns, or empty positions makes a world-side relation obtain. |
 
-### C.20:4 - Solution — the **Discipline holon** and Γ_disc
+### C.20:4 - Solution - recover the whole from direct construction
 
-#### C.20:4.1 - U-kind settlement and registers
-* **`U.Discipline`** — a **Holon** that composes an **EpistemeCanon**, **Standards/Practices**, and **Organisational Carriers** into a durable field-level EntityOfConcern.
-* **`U.AppliedDiscipline`**, **`U.Transdiscipline`** — C.3-governed subkind values under `U.Discipline`; they are not separate root ontics.
-* **Tradition and lineage values** — auxiliary holon-like values that organise variants or editions within a `U.Discipline`; write them without `U.` unless a direct governing pattern admits `U.Tradition` or `U.Lineage` by E.24.UK settlement.
+#### C.20:4.1 - Run the complete recognition test
 
-**Placement and naming.** `U.Discipline` is governed by this pattern as the direct root durable U-kind. Its subkinds follow C.3/C.3.1 and F.5 naming discipline, E.10/F.17 register discipline, and A.11 parsimony. C.20 does not treat discipline names as candidate U-kinds merely because they appear in discipline-composition prose; a discipline kind needs the C.20 settlement plus ordinary U-kind admission evidence.
+Recover six constructive components for the same exact candidate:
 
-#### C.20:4.2 - What a `U.Discipline` is / is not
-* A `U.Discipline` is **not** a `U.BoundedContext` and **not** a **Domain**. **Domain** remains a *catalog label* (stitched to D.CTX + UTS): **Discipline ≠ Domain** is enforceable via **E.10 LexicalCheck**; any cross-domain or cross-context reuse cites a **Bridge (F.9)** with **CL** and loss notes; penalties apply to **R** only; **F** and **G** remain invariant (USM/KD‑CAL).
-* **Comparability** of a discipline is carried **only by** the discipline’s **CG-Spec** entries (no ad-hoc formulas).
-* Cross-context or cross-tradition reuse uses **Bridges** with **CL** and loss notes; **CL penalties apply to R** (KD-CAL/B.3); **F** and **G** remain invariant.
-* Public names obey **LEX** (EntityOfConcern, Description, specification-use, twin labels, banned heads); “discipline column” is **didactic only** and **carries no semantics** (enforced by LexicalCheck).
+1. **Exact candidate.** Identify one exact `U.Entity` and its proposed field boundary. A public name or description is only a designator or episteme about that candidate.
+2. **Exact constituents.** Identify every claimed part under its direct kind and identity owner. The construction must contain at least one exact knowledge-bearing contribution and at least one exact reusable-practice contribution; these are assembly contributions, not fixed part kinds or heterogeneous card positions.
+3. **Constructive part relations and assembly.** Recover each obtaining `disciplinePartOf(part, candidate)` occurrence and every other exact whole-forming claim needed by the assembly. A list, co-use, adjacency, or common publisher supplies none of them.
+4. **Identity and reidentification rule.** State which constituent, relation, boundary, or coupling changes preserve this candidate and which identify another whole or end the current one.
+5. **Composition-grounded whole characteristic.** State at least one exact A.17-governed Characteristic whose value or state is produced or sustained by the practice-and-knowledge composition and is not attributable to one constituent alone. Use A.18 for Scale legality and C.16 only when an actual value is measured.
+6. **Larger-assembly compatibility.** State the candidate boundary, exposed practice-and-knowledge interfaces, relevant whole characteristics, and identity-preservation conditions that make it admissible as a possible constituent under at least one governed larger field assembly. This establishes possibility, not an actual larger-discipline part relation.
 
-#### C.20:4.3 - Constructor **Γ_disc** (CAL export)
-*Signature.*
-`Γ_disc : ⟨EpistemeCanon, StandardsSet, OrgCarriers, {Bridges}, Policy⟩ → U.Discipline`
-*Intent.* Fold the three constituents into a `U.Discipline`, **preserving provenance**, publishing UTS cards, and enabling admissible comparability via referenced **CG‑Spec** rows.
-*Obligations.*
-1) **Provenance & lanes.** Each imported episteme/standard declares **A.10 anchors** and lane tags **{TA, VA, LA}**; freshness windows are recorded.
-2) **Assurance fold.** Use KD‑CAL weakest‑link on R with **Φ(CL)** (and, where applicable, **Φ_plane** for ReferencePlane crossings) **table‑backed and monotone**; publish policy ids. For any independent justification line **P**, compute **`R_eff(P) = max(0, min_i R_i − Φ(CL_min(P)))`**; for parallel independent lines to the *same* claim take **`R(Γ) = max_P R_eff(P)`**; **`F(Γ)=min`** along the used lines. No thresholds inside CHR/CAL (Acceptance‑only). Unknowns propagate as {pass|degrade|abstain} to Acceptance.
-3) **CG-Spec guard.** Any numeric comparison or aggregation in Discipline reports **MUST** cite the discipline’s **CG-Spec** with **ScaleComplianceProfile (SCP)**, **Γ-fold**, and **MinimalEvidence**; units, scale, and polarity admissibility via **MM-CHR/CSLC** precedes aggregation.
-4) **Scale, unit, and polarity admissibility.** Before any comparison/aggregation, **establish admissibility via MM‑CHR/CSLC** and cite **CG‑Spec characteristic ids** used in the fold (A.17–A.19).
-5) **ReferencePlane guard.** When crossings touch the world, concept, or episteme plane, apply **CL_meta** penalties to **R** only; record **plane** on the UTS row.
-6) **Edition discipline.** Changes to canons or standards that alter computed ⟨F,G,R⟩ **create a new edition**; the rationale belongs in the edition-continuity record, and UTS records the transition.
-7) **No stealth globalisation.** Cross-context mappings are **by Bridge only**; “by-name reuse” is forbidden even with similar labels.
+The candidate is recognized as `U.Discipline` only when all six components and the C.20-specific practice-and-knowledge condition hold. A materialized classification assertion is a separate C.2.1 episteme about the candidate. Evidence can support that assertion and receiving work can rely on it, but neither creates the discipline.
 
-#### C.20:4.4 - Discipline ESG (informative state view)
+#### C.20:4.2 - Direct `DisciplinePartOfRelation`
 
-Export a **Discipline.ESG** with named states and guarded transitions (e.g., *Emerging → Consolidating → Codified → Fragmenting*), where **guards reference C.21 metrics** (CHR‑typed; **Scale/Unit/Polarity + freshness windows**) and cite **CG‑Spec ids**; **all thresholds live only in AcceptanceClauses** (G.4). ESG is **descriptive**; all gating remains in CHR/CAL/LOG packs.
+C.20 directly governs `DisciplinePartOfRelation`, expressed in Plain register as `disciplinePartOf(partEntity, candidateDiscipline)`. The first participant is one exact `U.Entity` already identified under its direct owner. The second is the exact candidate `U.Entity` under the C.20 test; this participant meaning does not presuppose that the candidate has already passed the test.
 
-### C.20:5 - Archetypal Grounding *(Tell–Show–Show)*
+The predicate obtains throughout an interval exactly when all of the following are true:
 
-| Slot | **System** (safety code in a factory) | **Episteme** (discipline canon across editions) |
-|---|---|---|
-| **Object** | Production line with hazardous operations | “Safety engineering” as *entityOfConcern target* (accident models, tolerable risk) |
-| **Concept** | Acceptance clauses & evaluation templates bound to rigs/windows | Canon texts: causality models, design rules, proofs/benchmarks (e.g., **formal knowledge bases**, **proof carriers**, **concept schemas**) |
-| **Symbol** | Local SOP/notation sets for checklists | Notation packages (CLIF, RDF/TriG, proof scripts) |
-| **Γ_disc assembly** | Fold {line‑specific standard, plant procedures, certifying unit} into **`Discipline: Safety‑Plant‑A`** | Fold {canon papers, formal models, journals/committee} into **`Discipline: Safety‑Engineering`** with **Traditions** (e.g., system safety vs resilience engineering) |
-| **Evidence lanes** | LA test campaigns (freshness windows), VA design proofs, TA tool quals | VA proofs over kinds, LA replications/meta‑analyses; TA for checkers |
+- the candidate's actual field assembly includes the exact part as a required contributor or a currently realized admitted alternative for one required knowledge-bearing or reusable-practice contribution;
+- at least one exact whole-forming claim connects that contribution to the candidate's field boundary, to another required contribution, and to the declared composition-grounded whole characteristic;
+- the candidate's direct reidentification rule treats the current part, its contribution, and any allowed replacement as belonging to this continuing assembly.
+
+Mere eligibility for future use is insufficient. A source citation, canon list, standards list, registry row, curriculum position, organizational affiliation, publication, common label, diagram containment, shared audience, bridge endpoint, comparison row, selected structure, work participation, evidence relation, or health reading does not make `disciplinePartOf` obtain.
+
+One occurrence is identified by `<exact part entity, exact candidate, maximal continuous obtaining interval>`. If the same part leaves the assembly and later returns, the two episodes are distinct occurrences. A changed observation or evidence window does not split an ongoing occurrence; actual cessation and resumption under the direct predicate do. Reidentifying either participant also identifies another occurrence.
+
+Multiple contribution claims for the same part do not create several part occurrences during the same continuous interval. If typed declaration reuse is needed, the direct relation has only the two participant meanings above. Canon, practice, organization, bridge, comparison, policy, evidence, publication, and structure fields are not additional `SlotSpec`s. Qualifiers and whole-forming claims keep their direct owners.
+
+#### C.20:4.3 - State whole-forming claims before choosing notation
+
+Part relations alone do not make one discipline. State the field assembly in ordinary domain language:
+
+- which exact claim-bearing contributions supply the field's knowledge commitments, distinctions, explanatory resources, or admissible questions;
+- which exact methods or other independently governed parts supply reusable ways of investigating, designing, intervening, evaluating, or learning;
+- which claims make knowledge contributions constrain, explain, or qualify practice contributions;
+- which claims make separately governed results of actual practice relevant to evaluation, revision, or replacement of knowledge contributions;
+- how incompatible or rival contributions coexist without being silently equated;
+- which boundary, stop conditions, exposed interfaces, and substitution conditions keep the assembly one field-level whole.
+
+Each whole-forming statement stays at the lightest truthful disposition supplied by its direct relation pattern or A.6.RCD: an existing direct predicate, a local compound claim, or a reusable predicate-definition episteme. A readable arrow such as `uses`, `supports`, `tests`, `belongs to`, `standardizes`, or `aligns` does not admit a relation kind and does not make a part relation obtain.
+
+The assembly rule names the exact current part relations, contribution meanings, whole-forming claims, permitted alternatives, incompatibilities, boundary conditions, failure conditions, and substitution conditions. A C.13 `Gamma_m.sum` construction trace may report those facts when a named use needs an inspectable account. The trace is a C.2.1 episteme and creates none of the parts, relations, assembly, identity, or characteristic.
+
+The historical signature was `Γ_disc : ⟨EpistemeCanon, StandardsSet, OrgCarriers, {Bridges}, Policy⟩ → U.Discipline`. Retain it only as a migration map into the direct construction account. Its useful intent was to assemble a reviewable field-level whole account, preserve provenance, support separately governed publication of that account, and enable admissible comparison; none of those receiving functions creates the whole.
+
+Every former argument remains available but loses automatic constructor and identity force: `EpistemeCanon` routes to exact canon epistemes and their claims; `StandardsSet` to exact standard epistemes, Methods, and practice claims; `OrgCarriers` to independently identified systems, roles, and Work; `{Bridges}` to exact F.9 occurrences and bounded-use propositions; and `Policy` to exact comparison, evidence, assurance, and acceptance declarations under their direct owners. Section 4.6 preserves every named member of those intake families. Historical `Gamma_disc` expressions are therefore only incomplete shorthand for a C.13 construction account. A five-field argument list, Discipline Card, or filled schema does not complete the account and does not have constructor force.
+
+#### C.20:4.4 - Identity, continuity, and change
+
+The discipline's identity is not the extensional part list. It is the exact candidate with its field boundary, practice-and-knowledge assembly principle, obtaining constructive relations, whole-forming architecture, and declared whole characteristic under one direct reidentification rule.
+
+The same discipline may continue through a permitted canon revision, method replacement, institutional change, publication change, or temporary part-relation change when the rule admits that variation and the field boundary, required contribution meanings, essential couplings, and whole characteristic remain within their declared continuity conditions. The rule must say which substitutions are permitted and how the replacement contribution reconnects to the assembly.
+
+A change outside those conditions identifies another candidate or leaves the stronger claim unresolved. When a receiving use asks whether the old whole can still explain the case, run B.2's existing-whole explanation check after the direct C.20 facts are recovered. Loss of evidence, another description edition, a renamed field, or a stale registry entry does not itself end or create a discipline.
+
+"Discipline edition" is therefore not one automatic object. Recover the changed subject:
+
+- revised canon, standard, method description, classification assertion, or discipline description is another C.2.1 episteme when its identity discriminator changes, with historical continuation tested separately;
+- a newly available edition has its own E.24.PUB publication occurrence, form, carrier, audience, use, and availability interval;
+- an unchanged discipline during a proper interval may be described through the direct temporal and A.14 phase route;
+- a changed field assembly outside the reidentification rule requires another discipline candidate, not a renamed description.
+
+Keep the change rationale as claim content of one exact C.2.1-identified revision or decision episteme. When historical continuation is asserted, the continuity record is an assertion about the exact `EpistemeEditionRelation` and cites the revision Work, Method, source use, change facts, and evidence needed by C.2.1; provenance or common labels alone do not establish it. When availability changes, trace the publication transition through the ending and beginning E.24.PUB occurrences with their selected edition, audience, bounded use, form, carrier, and availability intervals. The rationale, edition-relation assertion, publication occurrences, and discipline reidentification result remain distinct; none decides another merely by being recorded.
+
+#### C.20:4.5 - Require a composition-grounded whole characteristic
+
+Name at least one exact Characteristic under A.17, its Scale under A.18, and its direct measurement or evaluation route only when a current use needs a value. A useful local choice is the degree to which the assembly sustains a replayable practice-knowledge coupling: independently identified knowledge contributions constrain field practice, and separately governed practice results can be used to test, revise, or replace those knowledge contributions under declared rules. This is a local characteristic choice, not a new universal kind or scalar score; C.16 governs a measurement chain only when dated measurement Work actually attributes a value.
+
+The value must depend on the composition. Citation count from one episteme, frequency of one method, size of one organization, bridge count, publication count, or a single maturity label is not a composition-grounded whole characteristic. Rival traditions can coexist when their boundaries, incompatibilities, permitted uses, and contribution relations are explicit; cohesion does not require false consensus.
+
+C.21 owns discipline-health characteristics such as reproducibility, standardization, diversity, and disruption balance. A health reading can reveal pressure to inspect construction or reidentification, but it is not a part, assembly fact, identity rule, or classification result.
+
+#### C.20:4.6 - Keep neighboring objects with their direct owners
+
+Keep the three boundaries explicit. A **domain** is a subject-area or catalogue designation. A **semantic locality** is the bounded use of exact local meanings under its effective ReferenceScheme, ClaimScope, and direct F.17/F.9 owners; it is not another holon or a discipline constituent by locality alone. A **discipline** is the exact field-level practice-and-knowledge whole recognized by the C.20 construction test. The same or similar word across domains or semantic localities establishes none of shared meaning, one discipline, parthood, or identity. State the exact local senses and any obtaining Bridge for a crossing, then test each discipline candidate independently; even a high-congruence Bridge does not merge its endpoints.
+
+The historical five-position card remains a useful intake palette only if every member keeps its direct owner and receives no automatic part or identity status. Its complete prompts were:
+
+- **canon candidates:** theories, models, reference works, definitions, proof traditions, benchmark descriptions, and other epistemes treated as canonical;
+- **practice and standard candidates:** accepted Methods, norms, standard procedures, measurement conventions, and admissible comparison rules;
+- **institutional and organizational candidates:** journals, committees, curricula, professional bodies, laboratories, and other institutional arrangements that may carry or refresh field work;
+- **cross-locality candidates:** exact F.9 Bridges, F.17 term or local-sense rows, Bridge descriptions, and loss observations used across semantic localities or source traditions;
+- **comparison candidates:** exact Characteristics, Scales, Units, comparators, evidence policies, and CG-Spec declarations used to make a named comparison admissible.
+
+The palette prevents those reader questions from disappearing; it is neither a required five-part decomposition nor a constructor. No category must be filled by ritual. Every exact item remains under the owner below and becomes a C.20 part only when `disciplinePartOf` independently obtains.
+
+| Apparent discipline content | Direct owner and C.20 boundary |
+| --- | --- |
+| field or domain name | catalogue, designation, or lexical owner; the name is not the candidate or its construction |
+| theory, model, canon item, definition, standard, or practice description | C.2.1 identifies the exact episteme; it becomes a discipline part only if a separate `disciplinePartOf` occurrence obtains |
+| reusable method or method family | A.3.1 identifies each Method and B.1.5 any composite Method; use, registry membership, or family similarity is not discipline parthood |
+| organization, laboratory, committee, journal operator, or professional body | A.1 identifies any system; its role assignments and Work stay direct; carrying or stewarding a discipline is not parthood |
+| dated research, engineering, teaching, revision, evaluation, or governance work | A.15.1 identifies each Work occurrence; performing work about or within a discipline does not make the work or performer a part |
+| selected organization of relations for one model use | A.22 identifies the dependent `U.Structure`; selection gives it no holonhood or discipline parthood |
+| sense or structure bridge | F.9 identifies the exact Bridge occurrence and endpoints; crossing, translation, congruence, or loss does not join the endpoint disciplines into one whole |
+| comparison predicate, characteristic space, comparator, or aggregation | C.16 and A.19.CPM own the exact comparison; comparability is not a discipline constituent or identity condition unless a separate C.20 whole-forming claim makes an exact contribution current |
+| publication, form, carrier, card, dashboard, registry, or bibliography | C.2.1, E.17, and E.24.PUB keep content, form, carrier, and availability separate; publication does not construct the field |
+| evidence, provenance, currentness, assurance, gate, or authorization | A.10, B.3, G.11, A.21, and direct decision owners govern reliance; epistemic support changes no world-side part or identity fact |
+
+Any entity in this table can become an actual part only when it is independently identified and the C.20 predicate separately obtains. Its ordinary association with the field is never enough.
+
+#### C.20:4.7 - Optional bounded-model-use structure
+
+Discipline work can use an independently selected `BoundedModelUseStructure` when the selected organization of exact relations changes how a named model is interpreted or used in that work. State the exact model, direct relation occurrences, selection basis, receiving work or claim, and the organization that matters. A.22 owns the structure and A.15.1 owns the dated work.
+
+The structure is optional. It is not the discipline, a constituent by selection, a subdiscipline, a context count, a description, a viewpoint, a whole characteristic, a breadth classification, or a second identity carrier. Several selected structures used in work about one discipline do not create several disciplines; one structure used across several disciplines does not merge them.
+
+#### C.20:4.8 - Breadth, tradition, lineage, and school claims
+
+Applied, multidisciplinary, transdisciplinary, tradition, lineage, and school labels do not carry a universal C.20 classification rule.
+
+- For a project-local kind, use C.3 to state exact intent, membership predicate, scope, and the candidate disciplines that satisfy it.
+- A multidisciplinary claim normally needs several independently identified disciplines and exact contribution or use claims; co-listing fields or counting viewpoints is insufficient.
+- A transdisciplinary claim must declare the integrative criterion that distinguishes it from side-by-side use. If the claim is that one new discipline exists, run the complete C.20 construction test for that new candidate.
+- A tradition, lineage, school, variant, edition, or provenance claim identifies its exact subject and the exact historical-continuation, source-use, method, similarity, edition, derivation, or provenance relation under that relation's direct owner. Tradition or lineage can organize variants or editions within or across disciplines as an ordinary auxiliary value or a C.3 project-local kind; none is a discipline part, subkind, or public U-kind by label. A public kind requires its own direct governor, identity and use rule, and E.24.UK admission.
+- An applied classification states what application-facing criterion is satisfied. Method use, one project, one organization, or one selected structure does not establish it by itself.
+
+The classification can remain a C.2.1 claim without admitting another public U-kind. A changed label or classification result does not reidentify the discipline unless the direct C.20 rule independently says the field assembly changed.
+
+#### C.20:4.9 - Crossing, comparison, evidence, health, and publication are conditional branches
+
+Open these branches only when the named discipline use actually needs them.
+
+**Cross-field or cross-sense use.** F.9 first resolves two exact local senses and identifies one obtaining Bridge occurrence under its direct two-participant predicate and identity rule. Keep a separate current C.2.1 bounded-use proposition whose EntityOfConcern is that Bridge and whose ClaimGraph names the proposed action `u`, exact direction `d`, use-specific correspondence rule `r`, tolerated semantic loss `t`, and affirmative or negative polarity. Observed loss and counterexamples remain evidence; the permitted-loss tolerance remains claim content. Neither one reidentifies the Bridge.
+
+For ordinary evidence reliance below B.3's material-reliance threshold and with no assurance claim, use the exact A.10 evidence-provenance graph relation for the same bounded use. Only its local `RelianceDisposition=pass` supports that exact affirmative use; `degrade` supports only the named narrower use, while `abstain`, `reopen`, `evidence-needed`, `blocked-current-use`, or `safety-case-required` does not pass the attempted use. Enter B.3 when an assurance claim is made or the threshold is met. A positive use then needs a current positive B.3 assurance claim, a sufficient minimum reliance safety assurance record, and the same bounded assurance use. A met threshold alone creates no positive assurance claim. Authorization and any actual comparison, substitution, translation, publication, or Work occurrence remain with their direct owners.
+
+**Crossing visibility and presentation checks.** Keep the exact Bridge and bounded-use proposition discoverable in any account that relies on the crossing. Materialize an E.18 `CrossingBundle` only when a named selector, acceptance, audit, replay, or other downstream use relies on durable crossing evidence; E.17 governs that publication packaging and A.21 governs any actual GateCheck or GateDecision. For a lane-purity inspection, check the current B.3 claim by value: CL and its declared penalty policy affect R, while F and G follow their own current Scale and scope laws. Apply E.10 lexical checks to the actual published labels, keep normative prose notation- and tool-neutral, and treat every discipline column as didactic only. These visibility and presentation artifacts create neither a Bridge nor a discipline fact.
+
+**Comparison or aggregation.** A.17 identifies every exact Characteristic; A.18 supplies its Scale, Unit and legal operations; C.16 supplies a measurement result only when an actual measurement chain exists. A mean over an ordinal Scale and an aggregation that mixes unconverted or incommensurable Units are inadmissible: stop that operation, establish a lawful transformation or comparison scheme, or retain the separate values rather than manufacturing an aggregate. A.19.CPM owns the actual comparison and binds the profile pair, comparator, claim scope and selected slices, optional predicate, reference scheme and plane, evaluation point or interval, dated comparison Work, operation application, set-valued result, and evidence policy; CPM does not fold or aggregate. Any numeric or profile aggregation is a separate explicit A.19.ULSAM or applicable B.1 `Γ-fold` operation with its own dated Work and result binding. Before either operation, the applicable G.0 CG-Spec route names the exact Characteristic ids, `ScaleComplianceProfile` with Scale, Unit, polarity and legal-operation conditions, `MinimalEvidence`, and either the admitted `ComparatorSet` member for comparison or the declared `Γ-fold` and contributors for aggregation. This pre-operation admissibility check fails closed on missing or unknown declarations or evidence and creates neither equality, an aggregate, nor a winner. A cross-scheme or cross-plane use adds the exact F.9 Bridge and bounded-use reliance branch, but the Bridge supplies none of the scope, predicate, comparator, plane, time, result, or selection.
+
+**Evidence, currentness, and assurance.** A.10 owns source use and the evidence-provenance path; G.11 owns selected-edition currentness. When an imported source claim actually supports a construction, classification, comparison, publication, or assurance use, keep its exact source and selected edition, A.10 anchors, TA/VA/LA lane tags, and freshness or valid-until window in the receiving evidence, reliance, or assurance record. Claims that need no such reliance do not acquire this apparatus merely because they concern a discipline. When B.3 is current, its present laws—not a C.20 constructor—govern the assurance claim: `F` uses its ordinal weakest-link rule, essential-path `G` uses intersection and only explicitly independent evidence lines may use `SpanUnion`, and `R` uses the declared conservative combination with the monotone bounded congruence penalty. A maximum across independent reliability lines is not a C.20 default; use it only when the current B.3 ratio-scale rule and independence basis explicitly justify it. A table-backed congruence penalty remains available as one explicitly declared B.3 policy implementation when its Scale legality, monotone direction, bounded result, table and policy identifier satisfy B.3; C.20 neither requires that implementation nor computes the penalty. Record the exact `ReferencePlane` as `world`, `concept`, or `episteme`. If one exact cross-plane assurance use needs a distinct reliability treatment, declare and identify that treatment as a B.3 policy under its current Scale and conservative-combination rules; there is no implicit `Φ_plane` and no C.20-owned plane penalty. A plane value or adjustment is neither a discipline part nor an identity condition. The assurance source-currentness record carries the contributing nodes and edges, TA/VA/LA lanes, freshness or valid-until data, declared ReferencePlane, CL and policy identifiers. Insufficient or unknown support narrows, degrades, abstains, reopens, requests evidence, or blocks the attempted use under B.3/G.4; it does not make a part relation or whole obtain or cease.
+
+**Health or state view.** C.21 can evaluate typed discipline-health characteristics. Local values such as emerging, consolidating, codified, or fragmenting require their own criteria, Scale, evidence basis, qualification window, and currentness. Any decision threshold belongs to the relevant G.4 AcceptanceClause. A state label, health vector, score, or dashboard transition is descriptive and does not itself reidentify the discipline.
+
+**Description and publication.** A discipline description, construction trace, comparison report, health series, card, or registry row is a separately identified C.2.1 episteme. E.24.PUB governs any actual publication occurrence and keeps selected episteme edition, audience, bounded-use declaration, form, carrier, and availability interval distinct. Updating or publishing the account changes neither the field assembly nor its past.
+
+### C.20:5 - Archetypal Grounding
+
+#### C.20:5.0 - Keep the System/Episteme contrast without making the table a constructor
+
+The former Tell-Show-Show contrast remains useful because it asks five different reader questions. Read every cell as an independently governed example, not as a slot or a recipe for manufacturing a discipline.
+
+| Reader function | System-side safety scene | Episteme-side discipline scene | C.20 boundary |
+| --- | --- | --- | --- |
+| **Exact object** | One production line with hazardous operations is an exact `U.System` under A.1; its work and state remain separate. | One exact canon or discipline-description `U.Episteme` states accident-model and tolerable-risk claims about its declared EntityOfConcern under its effective ReferenceScheme. The `SafetyEngineering-SE` field candidate remains another entity. | Neither the system nor one episteme is the discipline; identify the field candidate and test its construction independently. |
+| **Concept contribution** | Acceptance clauses and evaluation templates bound to exact rigs and windows are epistemes used by the plant system and its Work, not concepts owned by the system. | Canon content can include causality models, design rules, proofs, benchmarks, formal knowledge bases, proof carriers, and concept schemas under their direct episteme, form, or representation owners. | Ask which exact claim-bearing contribution is constitutive and which whole-forming claim connects it; conceptual relevance alone creates no part. |
+| **Symbolic representation** | Local SOP and checklist notation can express plant procedures for one bounded use. | CLIF, RDF/TriG, proof scripts, diagrams, and other notation packages can express or represent canon content. | E.17/E.24.PUB and C.29 govern form, carrier, publication, and representation; symbolic appearance identifies none of System, Episteme, or Discipline. |
+| **Assembly contrast** | A line-specific standard, plant procedures, and a certifying unit are exact epistemes, Methods, systems, roles, or Work inputs around a possible `Safety-Plant-A` field candidate. | Canon papers, formal models, a journal or committee, and system-safety or resilience-engineering tradition claims are likewise separately governed around `SafetyEngineering-SE`. | A list or historical `Gamma_disc` fold constructs neither candidate. For either scene, recover exact parts, obtaining `disciplinePartOf` occurrences, whole-forming couplings, assembly, reidentification, whole characteristic, and larger-assembly compatibility. |
+| **Evidence-lane contrast** | LA test campaigns with freshness windows, VA design proofs, and TA tool qualifications can support exact plant-side claims. | VA proofs over kinds, LA replications or meta-analyses, and TA evidence for checkers can support exact canon or construction claims. | A.10/B.3 records lanes, source anchors, currentness and reliance only for the exact supported use; evidence changes no System, Episteme, or Discipline identity and creates no part relation. |
+
+#### C.20:5.1 - Safety engineering as a positive construction
+
+Suppose `SafetyEngineering-SE` is one exact field candidate. C.2.1 independently identifies `HazardCausalityCanon-v5` as a claim-bearing episteme. A.3.1 independently identifies `HazardAnalysisMethod-v4` and `IncidentLearningMethod-v2` as reusable Methods. None is a C.20 part yet.
+
+The field assembly makes these exact contributions current:
+
+- `HazardCausalityCanon-v5` supplies the hazard, causal, and acceptable-argument meanings used by the two Methods;
+- `HazardAnalysisMethod-v4` supplies the reusable analysis practice by which those meanings constrain identification and treatment of hazards;
+- `IncidentLearningMethod-v2` supplies the reusable practice by which separately governed incident and evaluation results can challenge or refine the canon claims.
+
+The three exact relation occurrences are `disciplinePartOf(HazardCausalityCanon-v5, SafetyEngineering-SE)@I-SE-core-1`, `disciplinePartOf(HazardAnalysisMethod-v4, SafetyEngineering-SE)@I-SE-core-1`, and `disciplinePartOf(IncidentLearningMethod-v2, SafetyEngineering-SE)@I-SE-core-1`. They share the explicitly identified maximal current continuous obtaining interval `I-SE-core-1 = [2024-04-01T09:00Z, open)`: its left boundary is the dated field-assembly activation at which all three contributions first became jointly required. At the continuation check `2026-07-31T23:59Z`, each contribution remains required, the exact whole-forming claims still connect the canon meanings to method preconditions and result meanings, the same candidate and reidentification rule continue, and no cessation boundary has occurred; therefore the right boundary remains open. If any contribution ceases and later resumes, that part's interval ends at cessation and a new `disciplinePartOf` occurrence begins at resumption. The actual field assembly requires those contributions, and the reidentification rule admits them as current parts. The local A.17 Characteristic `PracticeKnowledgeCouplingReplayability` has the exact subject `SafetyEngineering-SE` and the ordinal A.18 Scale `broken < partial < replayable`: its criterion asks whether the named canon-to-Method constraints and result-to-canon revision routes remain executable across the declared safety-work classes. No constituent can have that whole value alone. If a current use needs an attributed value, C.16 requires the exact measurement subject, method, model, Scale, dated measurement Work, uncertainty, and result episteme; the label alone supplies no reading.
+
+The reidentification rule permits a compatible canon revision or replacement Method only when the field boundary, causal and argument meanings, practice-knowledge feedback, and whole characteristic remain within declared continuity conditions. Removing the feedback route, changing the governing safety concern and field boundary, or replacing the assembly by unrelated document and method lists falls outside the rule.
+
+`Safety Journal`, a standards committee, a university curriculum, a laboratory, a bridge to resilience-engineering terminology, a comparison CG-Spec, and published discipline card remain separately governed. They are not parts in this case because no separate C.20 predicate has been established for them. Actual review or teaching Work is performed by exact systems under exact role assignments and may enact the part Methods; it neither becomes the discipline nor proves the three part relations.
+
+For A.1's larger-assembly test, the separately identified rule episteme `EngineeringFieldAssemblyRule-v3` describes a governed larger-field construction whose applicability requires one constituent field to expose stable hazard-constraint meanings, analysis-result meanings, and identity-preserving interfaces to design and verification practices. `SafetyEngineering-SE` has those actual interfaces and its reidentification rule preserves them, so it is compatible with that possible assembly while remaining the same candidate. The rule episteme does not create the compatibility facts, and this result asserts no actual `disciplinePartOf(SafetyEngineering-SE, Engineering-E)` occurrence.
+
+A C.13 `Gamma_m.sum` trace may report the candidate, three parts, three part-relation occurrences, whole-forming claims, assembly, reidentification rule, and whole characteristic. Writing or publishing that trace does not construct `SafetyEngineering-SE`.
+
+#### C.20:5.2 - A department, corpus, and method registry are not yet a discipline
+
+`Safety Department A` performs research and teaching Work. Its repository contains standards and papers, and its registry lists analysis Methods. Those facts establish a system, Work, epistemes, publications, and registry membership under their direct owners.
+
+They do not yet establish which exact entities are field constituents, any `disciplinePartOf` occurrence, a practice-knowledge assembly, one whole characteristic, or a reidentification rule. The useful result is the recovered collection and work organization. Stop before `U.Discipline`; do not fill missing canon, carrier, bridge, or comparison positions merely to complete a card.
+
+#### C.20:5.3 - Cross-field reuse does not create a transdiscipline
+
+A safety-engineering team reuses one resilience-engineering term. F.9 identifies the two exact local senses and an obtaining directed Bridge. A separate bounded-use proposition states the direction, mapping rule, tolerated loss, and polarity for this hazard-review use. Exact review Work may rely on that proposition through A.10, and a comparison may apply A.19.CPM.
+
+These facts establish no `disciplinePartOf` occurrence and no new discipline. Calling the work transdisciplinary requires a declared classification criterion. Claiming one new integrated discipline requires another exact candidate and all six C.20 construction components; one Bridge, two labels, or two selected structures cannot supply them.
+
+#### C.20:5.4 - Canon revision, same field, and another field
+
+`HazardCausalityCanon-v6` changes claim content and is another C.2.1 episteme. Historical continuation from v5 is tested separately. The same `SafetyEngineering-SE` can continue if its C.20 rule permits that replacement and the required contribution meanings, whole-forming couplings, boundary, and whole characteristic persist. The old part occurrence ends and the new one begins; a description or evidence window does not decide those intervals.
+
+If the replacement rejects the field's former causal object, changes the practice-knowledge feedback rule, and changes the field boundary beyond permitted continuity, the same-discipline claim fails. The project then tests another candidate and uses B.2 only if a receiving use needs a whole-reidentification conclusion. A new canon edition, renamed department, or republished card alone decides neither branch.
 
 ### C.20:6 - Bias-Annotation
-**Lenses:** Governance (naming/UTS), Architecture (CAL+CHR split), Onto/Epist (discipline ≠ domain; triangle fidelity), Pragmatic (authoring/editions), Didactic (twin labels; System/Episteme scenes). **Scope:** context‑local; no “global discipline”.
 
-### C.20:7 - Conformance Checklist (normative)
-| ID | Requirement | Purpose |
-|---|---|---|
-| **CC‑C20‑1 (CG‑Spec linkage).** | A `U.Discipline` **SHALL** declare the **CG‑Spec** ids and **CHR characteristic ids** behind any comparison/aggregation; thresholds live only in **Acceptance** clauses referenced by those CG‑Specs. | Auditable comparability; no inadmissible operations. |
-| **CC‑C20‑2 (Bridge-only reuse).** | Any cross-context or cross-tradition use **SHALL** cite **Bridge id + CL + loss notes**; penalties **apply to R only**; **F** and **G** remain invariant. | Prevent silent globalisation; align with KD-CAL. |
-| **CC-C20-3 (ReferencePlane).** | For any crossing touching the world, concept, or episteme plane, publish plane and apply **Φ(CL)** and, where applicable, **Φ_plane**. Both penalty policies must be monotone, bounded, and table-backed; unknowns propagate as `{pass|degrade|abstain}` into Acceptance with an SCR note, with no silent `unknown -> 0`. | Keeps cross-plane comparison explicit and prevents hidden reliability collapse. |
-| **CC‑C20‑4 (Γ_disc integrity).** | `Γ_disc` **MUST** record lane tags and freshness windows for all imported evidence; **Φ(CL)** **MUST** be monotone and table‑backed per policy. | Deterministic assurance; hygiene of penalties. |
-| **CC‑C20‑5 (Edition & DRR).** | Discipline editions **SHALL** be recorded via **UTS edition-continuity records** with DRR links; no silent rewrites or renames. | Traceable evolution. |
-| **CC‑C20‑6 (LEX/I‑D‑S).** | `U.Discipline` names **SHALL** follow **LEX** (twin labels; registers; banned heads). **Domain** mentions are catalog‑only. | Register hygiene; avoid “Domain = Discipline”. |
-| **CC-C20-7 (Crossing visibility hooks).** | Any **cross-stance, cross-context, or cross-plane** reference in Discipline materials **SHALL** publish a **CrossingBundle** for the crossing (**E.18**; Bridge and UTS through **F.9**, **F.17**, **E.17**, and **E.18**) and expose it via `Expose_CrossingHooks` (**G.10-3**). Published crossings **MUST** be checkable for **LanePurity** (CL to R only; F and G invariant; Φ tables present) and **Lexical SD** (**E.10**) under the active GateProfile and GateChecks (**A.21**). | Prevents implied crossings; makes provenance auditable and replayable. |
-| **CC-C20-8 (Discipline column is didactic).** | Any use of a “discipline column” in tables is **didactic only**; semantics are carried by **UTS rows and Bridges**; **Domain** remains a catalog stitch (**E.10/F.17**). | Prevent table headings from becoming hidden ontology. |
-| **CC-C20-9 (Lexical firewall).** | Normative sections remain **notation-neutral and tool-neutral**; vendor/tool tokens are avoided (see **E.5.1**). | Keep discipline composition independent from one notation or tool family. |
+Apply five complementary lenses; the later risk table does not replace them.
+
+| Lens | Question and counter-bias |
+| --- | --- |
+| **Governance** | Are field names, classification claims, revision rationales, stewardship roles, publication availability, and decision authority kept with their direct owners, or has a name, card, registry, or publisher acquired governing force? |
+| **Architecture** | Are construction, Characteristic/Scale, comparison or aggregation, evidence/assurance, health, publication, and selection still separate branches, or has a convenient CAL/CHR-style record become an omnibus discipline constructor? |
+| **Onto/Epist** | Are the discipline, domain designation, semantic locality, system, episteme, description, representation, and evidence claim distinct, with each claim returning to an exact EntityOfConcern and ReferenceScheme? |
+| **Pragmatic** | Can ordinary authoring and edition work stop at exact parts, couplings, assembly, and reidentification, while only the receiving comparison, assurance, publication, or decision opens deeper apparatus? |
+| **Didactic** | Do twin labels, the System/Episteme contrast, cards, columns, diagrams, and examples aid recognition without supplying hidden parts, relations, kinds, identity, or truth? |
+
+**Scope guard.** Every use is bounded by exact field candidates, semantic localities, scopes, editions, and receiving work. There is no context-free or global discipline established by name, popularity, institutional reach, or a shared vocabulary.
+
+| Bias risk | Failure | Counter-move |
+| --- | --- | --- |
+| **Label realism** | A familiar field name is treated as the whole. | Recover candidate, parts, direct occurrences, assembly, identity, and whole characteristic. |
+| **Institutionalism** | The largest organization carrying the work is treated as the discipline. | Keep system, role, and Work direct; test parthood separately. |
+| **Canon or method monocentrism** | One document set or method family stands for both knowledge and practice. | Require independently identified contributions on both sides and exact coupling claims. |
+| **Schema completion** | Five filled positions or heterogeneous fields manufacture construction. | Use the two-participant direct relation and ordinary whole-forming claims; treat cards as descriptions. |
+| **Bridge universalism** | Translation or high congruence merges fields. | Keep Bridge, bounded-use proposition, reliance, comparison, and discipline construction separate. |
+| **Metric reification** | Health or maturity value is treated as discipline identity. | Keep C.21 readings and G.4 thresholds as evaluations over the exact discipline. |
+| **Snapshot extensionalism** | Any changed part creates another discipline, or the same part list guarantees sameness. | Apply the assembly-sensitive reidentification rule. |
+
+### C.20:7 - Conformance Checklist
+
+| ID | Passing condition |
+| --- | --- |
+| `CC-C20-1` | One exact candidate `U.Entity` and proposed field boundary are named before `U.Discipline` recognition. |
+| `CC-C20-2` | Every claimed part is independently identified under its direct owner; at least one exact knowledge-bearing contribution and one exact reusable-practice contribution are current. |
+| `CC-C20-3` | Every `disciplinePartOf` occurrence passes the required-or-currently-realized-alternative predicate and is identified by exact participants plus maximal continuous obtaining interval. |
+| `CC-C20-4` | Contribution claims and other whole-forming facts are stated in ordinary domain language and retain their direct predicate, local-claim, or reusable-definition disposition. |
+| `CC-C20-5` | The assembly names exact parts, relations, required contributions, alternatives, incompatibilities, boundary, stop conditions, and substitution conditions. A card or trace is not its cause. |
+| `CC-C20-6` | The direct reidentification rule says which part, relation, coupling, boundary, and characteristic changes preserve or end the whole. |
+| `CC-C20-7` | At least one exact A.17 Characteristic is composition-grounded and not reducible to one constituent, count, label, or external health score; A.18 governs its Scale and C.16 opens only for an actual measurement. |
+| `CC-C20-8` | Candidate-side interfaces and identity-preservation conditions fit at least one governed possible larger field assembly; an actual larger-discipline part claim still needs its own obtaining occurrence. |
+| `CC-C20-9` | Domain names, epistemes, Methods, systems, Work, structures, Bridges, comparisons, publications, evidence, and decisions remain with direct owners unless the separate C.20 part predicate actually obtains. |
+| `CC-C20-10` | Any selected bounded-model-use structure is optional, independently identified, tied to one named receiving use, and creates no part, holon, subkind, viewpoint count, breadth, or identity. |
+| `CC-C20-11` | Applied, multidisciplinary, transdisciplinary, tradition, lineage, and school claims state their own criteria; no public U-kind or discipline part follows from wording or counts. |
+| `CC-C20-12` | Any cross-field use separates the F.9 Bridge, bounded-use proposition, direction/rule/tolerance/polarity, A.10 or B.3 reliance branch, observed loss, and actual comparison. |
+| `CC-C20-13` | Comparison declares characteristic, scale, unit, polarity, comparator, scope, window, and admissible operation under C.16/A.19.CPM; C.20 owns no comparison or reliability fold. |
+| `CC-C20-14` | A health value, state label, evidence profile, registry row, description edition, publication occurrence, form, or carrier changes no discipline construction fact by itself. |
+| `CC-C20-15` | Any C.13 trace names the already grounded candidate, exact parts, direct occurrences, assembly, identity rule, and whole characteristic; `Gamma_m.sum` or historical `Gamma_disc` syntax creates none of them. |
+| `CC-C20-16` | Core prose and labels follow E.10 and remain notation- and tool-neutral; a didactic discipline column carries no hidden semantics. |
 
 ### C.20:7.1 - Common Anti-Patterns and How to Avoid Them
-* “TDD discipline” → **`Tradition: Test‑Driven`** *(Plain twin keeps “Tradition”)*.
-* “Safety Discipline Owner” → **`Holder#DisciplineStewardRole:Safety‑Context`**.
-* “ClinicalSafetyDomain Governance” → **`DisciplineSpec: Clinical‑Safety`** with comparability in **CG‑Spec**; the **Domain** mention remains a **D.CTX + UTS** catalog stitch.
+
+| Anti-pattern | Repair |
+| --- | --- |
+| "TDD discipline" or another Method/tradition label already names a discipline. | Treat "Test-Driven" as a tradition, method-family, or other local classification only under its exact criterion and subject. Identify each Method under A.3.1; identify a discipline only by the complete C.20 construction test. |
+| "Safety Discipline Owner" or another steward title proves ownership, parthood, or decision authority. | Identify the exact holder, role assignment, scope, and governing rule at their direct owners. The title is a role claim; actual authority and any discipline relation require separate grounds. |
+| "ClinicalSafetyDomain Governance" or another compound domain-governance label supplies a discipline and its comparison policy. | Separate the subject-area or catalogue label, exact governance role/rule and Work, any independently constructed C.20 discipline, and the A.19.CPM/G.0 comparison declaration. The compound label creates none of those objects or facts. |
+| "The five card positions are filled, so the discipline exists." | Recover the exact candidate, direct part occurrences, whole-forming claims, assembly, reidentification, characteristic, and larger-assembly compatibility. |
+| "The department is the discipline." | Keep the organization as an exact system and its activity as Work; establish any discipline part relation independently. |
+| "Every canonical paper and standard is a discipline part." | Identify each episteme and apply the C.20 predicate; citation, canonical status, or publication is insufficient. |
+| "Every method used in the field is a part." | Identify the Method under A.3.1 and test whether the current assembly makes its contribution constitutive; registry membership and use alone are insufficient. |
+| "The Bridge set assembles a transdiscipline." | Keep each Bridge and bounded-use proposition direct; apply a declared breadth criterion or rerun the full construction test for a new candidate. |
+| "The selected model-use structure is the discipline context." | Keep the optional A.22 Structure attached only to the named use; it is neither whole nor part by selection. |
+| "Three viewpoints make the field multidisciplinary." | State a project-local breadth predicate over exact disciplines and contributions; viewpoint or structure count proves nothing. |
+| "The journal, card, or dashboard carries the discipline." | Separate discipline, description episteme, publication occurrence, form, carrier, and health reading. |
+| "A maturity drop created a new discipline edition." | Keep the C.21 result separate and apply the C.20 reidentification rule to actual construction changes. |
+| "A later canon edition is the later discipline." | Apply C.2.1 to the canon and C.20 to the field; historical continuation and discipline continuity are separate claims. |
 
 ### C.20:8 - Consequences
-**Benefits.** Auditable field composition; admissible federation across traditions; selector-ready maturity/evidence linkage; didactic presentation for stewardship.
-**Trade‑offs.** Discipline authoring requires CG‑Spec literacy and Bridge hygiene; paid back by safe reuse and clearer governance.
+
+**Benefits.** Discipline claims become auditable without freezing one universal canon, institution, bridge set, or method repertoire. Rival traditions can remain explicit and federate only through admissible directed uses rather than false consensus; constituent replacement and genuine reidentification can be distinguished. Field comparison and dispatch can consume the exact construction without becoming its cause. A selector can additionally consume exact discipline-relevant Characteristic and evidence or assurance claims, while a steward can publish a readable didactic presentation without making its card, column, or registry ontological.
+
+**Costs and trade-offs.** A positive claim needs exact parts, direct relation intervals, whole-forming claims, an assembly, a reidentification rule, one whole characteristic, and a larger-assembly compatibility account. The cost is proportional: ordinary use can stop at readable sentences. A named comparison adds Scale, comparator, and CG-Spec literacy; a cross-locality use adds Bridge and reliance hygiene; trace, evidence, publication, health, selector, or assurance apparatus is added only for a named receiver. That extra explicitness pays back in safer reuse and clearer governance.
+
+**Risks avoided.** The pattern blocks label-made fields, institution-made identity, publication-made parts, context-count breadth, bridge-made merger, health-score ontology, and registry-made method or discipline membership.
 
 ### C.20:9 - Rationale
-The calculus keeps **entityOfConcern local**, **comparability admissible**, and **assurance explicit**. It aligns with KD‑CAL’s weak‑link folds and CL-to-R penalty rule, with CG‑Spec’s **ScaleComplianceProfile (SCP)** and **Γ‑fold** rules, and with LEX twin‑label governance. It avoids “phlogiston disciplines” by tying fields to measurable CHRs (C.21) and evidence lanes.
+
+A discipline is durable because a governed practice-and-knowledge assembly can continue through permitted replacement, not because all surrounding artifacts remain fixed. Direct part relations establish which exact entities are constitutive during which intervals. Whole-forming claims explain their contributions and coupling. The assembly and reidentification rule then distinguish continuity from a different field, while the composition-grounded characteristic shows why the candidate is a whole rather than a collection.
+
+Keeping organizations, Work, methods, epistemes, structures, Bridges, comparisons, publications, evidence, and health readings separate does not make them unimportant. It lets each object affect the discipline claim through its actual relation without being promoted to an automatic part or identity discriminator.
+
+This separation keeps every discipline-related claim local to an exact EntityOfConcern and effective ReferenceScheme, comparison admissible only under its current Scale and comparator declarations, and evidence-bearing reliance or assurance explicit under A.10/B.3. It also lets plural traditions, directed Bridges with visible loss, typed health readings, and TA/VA/LA evidence lanes remain inspectable together. Scale compliance, B.3's current conservative combination rules, and Bridge hygiene stay with their direct owners: C.20 adopts their constraints for a named use but owns no universal field score or reliability fold. Charisma, prestige, institutional reach, or an attractive field name cannot create a discipline that fails to return to exact construction, Characteristics, and source evidence.
 
 ### C.20:9.1 - SoTA-Echoing
-Discipline-composition practice is used here only when it preserves plural traditions, explicit bridges, characteristic health readings, and evidence lanes. C.20 adopts weak-link composition, scale-compliance, and bridge hygiene; it rejects universal field scores, charisma labels, and discipline names that cannot return to measurable CHRs and source evidence.
+
+| Current source or practice line | C.20 adoption | Boundary of non-overread |
+| --- | --- | --- |
+| Constructional-ontology work cited in A.1 and C.13 requires explicit constituents, constructive relations, assembly, dependence, and identity choices rather than an extensional list. | Require exact part occurrences, whole-forming claims, an assembly-sensitive reidentification rule, and one composition-grounded whole characteristic. | A graph, card, constructor expression, shared label, or input set creates neither whole nor relation. |
+| Current science-of-science and reproducibility practice cited in C.21 treats field health as several typed, scoped, time-qualified characteristics. | Let C.21 evaluate exact disciplines without importing health coordinates into construction. | Reproducibility, standardization, disruption, diversity, or evidence granularity is not discipline identity or truth by itself. |
+| Current model, workflow, and publication practice separates semantic ways of doing, claim-bearing descriptions, actual work, results, and publication availability. | Keep Methods, epistemes, Work, results, and publication occurrences independently governed even when their exact relations support a field assembly claim. | Use, representation, occurrence, evidence, or publication does not make an entity a discipline part. |
+| Plural-field and translation practice needs explicit local meanings, direction, substitution conditions, and visible loss. | Use the exact F.9 Bridge plus a separate bounded-use proposition and direct reliance or comparison branch when crossing is current. | A Bridge count or high congruence neither merges disciplines nor creates a transdisciplinary kind. |
+
+**Currentness and reopen.** Reopen only the affected construction, identity, crossing, or health decision when its direct source interface changes. A newer discipline study can change the local breadth criterion or worked case without weakening the exact-part, direct-relation, assembly, and reidentification boundary.
 
 ### C.20:10 - Relations
-**Builds on.** KD‑CAL (C.2); CG‑Spec (A.19/G.0); Bridges (F.9); LEX (E.10).
-**Coordinates with.** C.21 (field‑health CHRs), C.22 (Problem‑CHR), C.23 (Method‑SoS‑LOG).
-**Constrains.** G.2 **MUST** publish **TraditionCards**/**BridgeMatrix** sufficient for `Γ_disc` to assemble **≥2 Traditions** and **≥3 `U.BoundedContext`** per SoTA synthesis to avoid monoculture. G.5 selector **SHALL** cite Discipline **CG‑Spec ids** and **EvidenceGraph** rows when admitting families.
+
+**Builds on.** A.1 for constructive holon recognition; A.6.REL for relation-occurrence discipline; A.14 and direct part patterns for mereological meaning; C.13 for an optional construction trace; A.17 and A.18 for the composition-grounded Characteristic and Scale, with C.16 only for an actual measurement chain; E.24.UK for public-kind admission.
+
+**Coordinates with.** C.2.1 for canon, standard, classification, description, trace, and result epistemes; A.3.1 and B.1.5 for Methods and method composition; A.15.1 for dated discipline work; A.22 for optional selected structures; B.2 for a separately current whole-reidentification question; C.3 for project-local breadth and tradition classifications; C.22 for selector-facing problem typing and TaskSignature assignment; C.23 for MethodFamily evidence and maturity; E.10 for lexical precision; and F.17/F.18 for local-sense term publication and durable naming.
+
+**Conditional branches.** F.9 for exact Bridges; A.10 and B.3 for evidence-bearing reliance and assurance; C.21 for discipline health; A.19.CPM for comparison and G.0 for its CG-Spec admissibility declaration; G.4 for acceptance thresholds; E.24.PUB for publication; G.5 for selector use of independently grounded discipline or method claims.
+
+**G.2 source-pack boundary.** When one current G.2 harvest or synthesis informs a discipline account, preserve the anti-monoculture intent by keeping plausible rival lineages and the semantic localities relevant to that named synthesis visible, with an explicit coverage or omission rationale and explicit crossings where needed. C.20 sets no minimum number of Traditions, local frames, cards, contexts, or matrix rows; G.2 alone governs conformance of its pack. A plural or conforming pack, `TraditionPalette`, `BridgeMatrix`, or historical `Gamma_disc` expression still constructs no discipline and supplies no part relation.
+
+**Constrains.** A C.13 discipline trace consumes C.20 facts and creates none. C.21 evaluates an already identified discipline. G.5 may consume an independently identified Method together with exact discipline-relevant construction or classification, Characteristic, and evidence or assurance claims only through its own declared predicate. An ungrounded discipline name supplies none of field belonging, comparison value, evidence strength, selection, or truth. A registry or family row, selector request, policy, result or shortlist, CG-Spec reference, and EvidenceGraph row can make an actual G.5 use auditable; none lets G.5 infer Method membership, discipline parthood, actual selector application or selection, or claim truth. A selected structure, Bridge, comparison, publication, evidence graph, health reading, or label never supplies a missing C.20 part occurrence.
 
 ### C.20:End
 

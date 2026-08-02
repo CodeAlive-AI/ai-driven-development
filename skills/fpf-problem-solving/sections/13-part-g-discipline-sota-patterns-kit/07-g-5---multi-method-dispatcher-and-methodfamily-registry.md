@@ -11,6 +11,16 @@
 ### G.5:0 - Use this when
 When loop-engineering work retains several loop candidates, harness variants, method families, workflow-store entries, or DPF framework candidates for downstream use, use `G.5` only when the live claim is selector-facing publication of that retained set. The published result states the outcome kind, retained members, ordering status if any, and basis pins. It does not prove that any member improved, that work occurred, or that a local choice has been made.
 
+For ordinary method-family dispatch, open `G.5` when two or more already admitted Methods are live under grounded selector rows for the same declared task and the current question is the selector-facing set result: which candidates remain admissible, whether the emitted result may truthfully order them, or whether it must be a shortlist, narrowed handoff, abstain, or escalation. If the live question is still one local choice among available options, route it through `C.11` first. Reuse already grounded method-family rows when they exist; do not rebuild a registry on every run. Create a new reusable row only when the grouping itself must recur, carry family-level policy, be versioned, or be published. Crossing, evidence/reliance, assurance, stable public identity, and actual publication are conditional branches, not an entry fee.
+
+
+
+Before opening G.5 for method dispatch, resolve every selectable `MethodRef` to an exact `U.Method` already admitted under A.3.1. A `MethodFamilyId` is a selector-facing registry designator for a declared grouping: its row must cite the exact Methods it groups and the independently governed classification claim, membership relation, or local grouping criterion used for this selector. Neither the row, its label, a family card, a `U.MethodDescription`, an eligibility or maturity record, a policy, an evidence pin, a shortlist, nor a publication makes a candidate a Method or makes family membership obtain. Where no direct pattern admits an ontic family or membership relation, keep the row as a project-local selector grouping under its declared criterion. If only labels, descriptions, cards, or unresolved references are available, return to A.3.1, C.2.1, or the direct family-relation owner and stop before selection.
+
+Also say whether the current claim is only a reusable registry, selector, policy, template, or result-content declaration, or whether an actual selection and publication occurred. An actual selection requires its exact acting system, dated A.15.1 Work, and actual A.6.1 `Select` application with effective argument and `SelectionSlot` bindings under A.19.SelectorMechanism. Any persisted result episteme, A.10 evidence-provenance relation, B.3 assurance claim, authorization, and E.24.PUB publication occurrence remain separate. A row, declaration, record, telemetry pin, or selected-set label supplies none of them by appearance.
+
+
+
 - several method families or generator families can admissibly act on the same declared task family or work target
 - you need one selector to return a `Shortlist`, `RankedShortlist`, one `SpecialistHandoff`, one other narrowed handoff plan, or one abstain outcome without pretending that there is always one scalar winner
 - the published result must carry enough basis pins for later comparison, handoff, or escalation without changing its declared outcome kind or any applicable public selected-set label
@@ -37,10 +47,28 @@ Registry and dispatch remain the primary selector question here; selected-set pu
 - Which members are being retained or excluded now?
 - Does order materially belong to the published result?
 - Which basis pins or policy pins must the published result carry?
+- Which exact A.3.1 `MethodRef` values does every method-family row resolve to?
+- What independently governed classification, membership relation, or local grouping criterion justifies placing those Methods in that row for this selector use?
+- Is the current organization only a composition template, one B.1.5-qualified composite Method, or an independently selected A.22 Structure with all four identity discriminators?
+- Is this only selector declaration or result content, or is an actual selection claimed with an acting system, dated Work, actual `Select` application and bindings, and separately governed result and publication objects?
+- Does any consumed Method, claim or selector criterion cross two exact semantic-context projections; if so, where are the obtaining F.9 Bridge, separate `<u,d,r,t,polarity>` claim and matching A.10 or B.3 reliance branch?
+- Which stronger branch is actually current—a new reusable registry row, crossing, evidence/reliance, assurance, stable public identity, or actual publication—and which can remain unopened?
+
+
+
+
+
 
 ### G.5:0.4 - First output
 
 The first useful output from this dispatcher and registry question is one published selector outcome: one set-result outcome such as `Shortlist` or `RankedShortlist`, one `SpecialistHandoff` or other narrowed handoff plan, or one abstain or escalation result, with the outcome kind, any public selected-set label, retained members or handoff content, ordering status when relevant, and basis pins stated in one place.
+
+For an ordinary run over already grounded rows, that selector-facing result content is enough. The basis pins may be direct references to the declared grouping, eligibility, and comparison basis, and the same compact record may carry the DRR/SCR-addressable audit refs required by S3. Do not require a fresh registry build, `CrossingAllowance`, evidence graph, assurance claim, stable public id, separate audit package, or E.24.PUB occurrence unless the current use actually needs that stronger object or claim.
+
+
+
+Here “published selector outcome” first means complete selector-facing result content and, when needed, a stable public designator. It is not evidence that selection Work or an actual `Select` application occurred, and it is not an E.24.PUB availability occurrence. Claim actual publication only through the exact selected C.2.1 episteme edition, audience declaration, bounded-use declaration, publication form, presentation carrier, and obtaining `EpistemePublicationRelation`; rendering or uploading Work remains another occurrence.
+
 
 If that first output still cannot be written honestly, the current publication result is not finished `G.5` publication yet.
 
@@ -52,7 +80,54 @@ A publication result remains unfinished if the declared outcome kind, any applic
 
 When a framework publishes a selected pattern set, use `G.5` only for the selected-set publication claim: scope, selection conditions, included pattern refs, excluded candidate refs when relevant, publication status, and basis pins. This selected-set claim does not define pattern-use relations, architecture decisions, or framework edition dependencies.
 
+### G.5:0.5 - Minimum ordinary slice and bounded non-use
+
+**Situation.** A pump-maintenance team has two already admitted A.3.1 Methods, `ThresholdTrendReviewMethod-E2` and `SpectralResidualReviewMethod-E1`, behind two existing project-local selector rows. Both rows cite their exact `MethodRef[]` and the declared local basis `PumpTriageCandidateGrouping-E1`. The same `TaskSignatureRef=PumpVibrationTriage-T1` and effective reference scheme apply to both. The task signature requires a 24-hour series input and a 30-minute review budget, and both declared Method interfaces meet those constraints. No admitted comparator justifies ordering one above the other. The live `G.5` question is now how to surface that admissible set, not which pump action a decision-maker should choose.
+
+
+
+The minimum truthful result is:
+
+```text
+GroundedCandidateRows = [
+  { row = ThresholdTrendReview-local,
+    MethodRef = [ThresholdTrendReviewMethod-E2],
+    groupingBasis = PumpTriageCandidateGrouping-E1 },
+  { row = SpectralResidualReview-local,
+    MethodRef = [SpectralResidualReviewMethod-E1],
+    groupingBasis = PumpTriageCandidateGrouping-E1 }
+]
+
+SelectorOutcome(
+
+  selectorOutcomeKind = SetResultOutcome,
+  setResultFamily = Shortlist,
+  members = [ThresholdTrendReview-local, SpectralResidualReview-local],
+  ordering = unordered,
+  basisPins = [PumpTriageEligibility-E1],
+  auditRefs = [DRR-PumpTriage-01, SCR-PumpTriage-01],
+
+  nextUse = maintenance_method_handoff
+
+)
+```
+
+This is a positive `G.5` slice because the exact Methods, rows, grouping bases, task, eligibility basis, survivors, order status, compact audit refs and next use are explicit. It needs no fresh registry row or public `ShortlistId`; the same local senses make F.9 crossing apparatus irrelevant; no reliance or assurance claim is being made; and no E.24.PUB availability occurrence is asserted. The record also stops before claiming dated selection Work or an actual `Select` application. Open those branches only if a later claim actually needs them.
+
+
+**What changes in practice.** The team stops leaving the retained pair implicit in a comparison note and stops saying “the spectral method is best.” It emits one unordered `Shortlist` that another receiver can cite, with the exact survivors and basis visible, while making no local-choice, actual-use, or winning-method claim. A later receiver can request one missing comparator, use the bounded handoff, or open its separately governed decision question without rewriting either Method or inventing a winner.
+
+
+**Near misses and non-use.** Do not use `G.5` merely because several names appear in one list.
+
+- If the candidates are only labels, descriptions, cards, or unresolved references, return to A.3.1 and C.2.1 before dispatch.
+- If the current question is one local choice among already available options, use `C.11`; if it is the policy for retaining or retiring live candidate lines, use `C.19`; if it is enactment planning after choice, use `C.24` and the applicable A.15/A.6 occurrence owners.
+- If the current object is only a composition sketch, keep the S4 template; use B.1.5 only for a qualified composite Method and A.22 only for an independently selected Structure.
+- If no rival candidate set, selector result, narrowed handoff, abstain, or escalation is current, do not open `G.5`.
+- Open F.9, A.10, B.3, stable registry or UTS identity, and E.24.PUB only for an actual crossing, relied-on evidence, assurance claim, reusable identity, or audience-availability claim respectively; their absence does not invalidate the smaller same-scheme selector result.
+
 ### G.5:1 - Problem frame
+
 
 A `CG‑FrameContext` (from **G.1**) and a `SoTA Synthesis Pack@CG‑Frame` (from **G.2**) expose multiple rival, internally coherent **method families** (and sometimes **generator families**) that can plausibly act on the same `EntityOfConcernRef` and ReferencePlane.
 
@@ -71,7 +146,8 @@ How to design a **general, auditable dispatcher** that:
 
 * preserves **pluralism** (families from competing Traditions stay disjoint) while remaining **dispatchable** (selection is possible and explainable);
 * does **not embed algorithmic dogma** in the core selector kernel;
-* respects Context boundaries and crossing discipline (Bridge‑only; explicit pins);
+* respects semantic-context boundaries through the complete current crossing path—exact local senses, an obtaining F.9 Bridge, a separate bounded-use proposition, and the appropriate reliance or assurance branch—while treating pins as audit references rather than as the crossing facts;
+
 * produces **set‑valued outcomes** when only partial orders are admissible;
 * cleanly separates:
 
@@ -83,7 +159,8 @@ How to design a **general, auditable dispatcher** that:
 
 * **Pluralism vs. forced totalisation.** Many selection regimes are inherently partial-order; forcing a scalar winner often creates inadmissible semantics.
 * **Evidence realism vs. hard gates.** Eligibility and acceptance frequently depend on incomplete evidence; selection must remain auditable under tri-state unknowns.
-* **Reuse vs. leakage.** Cross‑Context reuse is valuable but must be explicit (Bridge with loss notes) and must not silently re‑ground semantics.
+* **Reuse vs. leakage.** Cross‑semantic-context reuse remains valuable, but it starts from exact F.17 local senses and an obtaining F.9 Bridge, then keeps the proposed use, direction, rule, tolerated loss, reliance or assurance, and actual selector use separate. Bridge, CL, loss, registry, bundle, or policy pins cannot silently re-ground semantics.
+
 * **Exploration vs. exploitation.** Dispatch sometimes must probe alternatives under explicit policy envelopes and risk envelopes, but probing must not become an implicit fourth status.
 * **Evolvability vs. churn.** Registries evolve (new families, deprecations, edition bumps); continuity must not be broken by “rename by meaning”.
 
@@ -144,6 +221,9 @@ Effective obligations, pins, and triggers are computed by union expansion of the
 
   * `TaskSignatureRef` *(see `G.5:4.2`, S2)*
   * `MethodFamilyId[]` *(registry keys in scope)*
+  * `MethodRef[]` *(exact A.3.1 Methods resolved from every method-bearing registry row in scope)*
+  * `SelectedStructureRef[]?` *(exact independently selected A.22 Structures consumed only when their organization changes this selector use)*
+
   * `GeneratorFamilyId[]?` *(when generator families are in scope)*
   * `PathId[]` *(audit citations for “why” and for evidence)*
   * `PathSliceId[]` *(audit citations for “why” and for evidence)*
@@ -168,12 +248,21 @@ G.5 defines the **object-set components** below. Their purpose is to make dispat
 A registry row represents *a family*, not a single implementation. Minimal fields (conceptual, notationally independent):
 
 * `Identity`: `MethodFamilyId`, `ContextId`, lineage and Tradition notes, `UTSRowId` (twin labels where applicable).
+* `Exact method members`: non-empty `MethodRef[]`, each resolving to one `U.Method` already admitted under A.3.1.
+* `Grouping basis`: exact claim, criterion, or direct relation reference that justifies this row's grouping for the current selector use; if no ontic family or membership relation is directly governed, the basis is explicitly project-local and creates none.
+
 * `EligibilityStandardRef`: a typed predicate record (tri‑state per `G.Core`), expressed in CHR and CAL terms and pinned to the relevant editions.
 * `AssuranceProfileRef`: evidence‑lane expectations and assurance-lane pins (SCR‑addressable).
 * `AdmissibilityBindings`: explicit references to the **single** governance card and admissibility gate (`CNSpecRef`, `CGSpecRef`) and to any required admissibility constraints, for example scale and unit admissibility via CSLC.
 * `EvidencePins`: citations to `G.6` (`PathId`, `PathSliceId`) for claims or guarantees where such claims are asserted.
-* `CrossingAllowance`: explicit Bridge and CL allowance pins **only** if cross‑Context operation is claimed.
+* `CrossingAllowance`: references to the exact F.17 endpoint senses, one obtaining F.9 Bridge, the separate C.2.1 bounded-use proposition, and the current A.10 or B.3 reliance basis, plus CL or observed-loss evidence when material, **only** if cross-semantic-context operation is claimed. These are audit references; the field makes none of the referenced facts obtain.
+
+For an actual crossing, first resolve both exact F.17 `SchemeSenseCell` endpoints and establish the two-participant F.9 Bridge under its own predicate profile. Then identify a separate C.2.1 episteme whose exact `EntityOfConcern` is that Bridge and whose ClaimGraph states the proposed use `u`, direction `d`, use-specific rule `r`, tolerated loss `t`, and polarity. For ordinary reliance require the matching current A.10 evidence-provenance relation and local `RelianceDisposition`; when an assurance claim or B.3 material-reliance threshold is current, use B.3's separate assurance branch instead. Observed loss and CL are evidence, defeater or assurance-policy material, not Bridge participants or permission. Authorization and the actual `Select` application remain with their direct owners. A Bridge id, `CrossingAllowance`, registry row, policy pin, `CrossingBundle`, DRR or SCR entry cannot substitute for any step.
+
 * `PolicyHooksRef?`: optional pointers to policy records (not defined here; wired via Extensions).
+
+Here “a registry row represents a family” means that the row is the auditable selector-facing record for one declared grouping. It does not identify the grouped Methods, make a membership relation obtain, or turn a common label, shared description, lineage note, eligibility rule, maturity card, evidence record, or policy into a method-family fact. Changing a row or its `MethodFamilyId` changes the registry artifact; it changes a Method or a separately governed family relation only when that object's direct identity or obtaining rule independently says so.
+
 
 **S1′ — `GeneratorFamily Registry` (design‑time; optional; per CG‑Frame).**
 A registry row for families that generate tasks and environments, and may co-evolve solver families. G.5 carries the registry-entry shape, not the generator semantics:
@@ -197,6 +286,15 @@ A notation‑independent selector that:
 * returns one declared selector outcome: most often one set-result outcome such as `Shortlist` or `RankedShortlist`, but sometimes one `SpecialistHandoff`, one other narrowed handoff, one abstain outcome, or one escalation outcome (per `DefaultId.PortfolioMode` and explicit overrides),
 * emits audit records with pins addressable by DRR and SCR records.
 
+For every `MethodFamilyId` consumed here, dereference the row to its exact A.3.1 `MethodRef[]` and grouping basis before admitting the candidate. The selector may compare or return registry rows as auditable selector-facing addresses, but row selection neither creates its Methods nor proves that every listed Method belongs, is admissible, is selected, or will be enacted. An unresolved Method reference or missing grouping basis blocks that row's method-bearing use; it is not repaired by a label, description, UTS identity, policy, or evidence pin.
+
+When a selector consumes an organization among Methods, cite an exact `SelectedStructureRef` only after A.22 has independently identified the `U.Structure` from exact constituents, exact already-obtaining relation occurrences, applied constraints, and one named use frame. G.5 neither supplies those discriminators nor selects the Structure by listing it. If the organization instead constitutes one composite Method, consume the exact A.3.1 Method only after B.1.5 has qualified that candidate from its independent parts and whole-forming basis.
+
+S3 states reusable selector behavior. It does not itself perform selection. For an actual selector use, identify the admitted `U.System` that performed the dated A.15.1 Work under an exact obtaining assignment, the enacted Method, and the actual A.6.1 `Select` application whose effective argument bindings and `SelectionSlot` binding carry the by-value selected set under A.19.SelectorMechanism. The declaration, planned pins, registry rows, policy and `CandidateSet` type create none of those occurrence-side facts.
+
+
+
+
 **S3.A — `TaskFamilySpecializationProfile@Context` (run‑time; conditional).**
 When the real selector question is acquisition of usable specialization on a declared task family, the selector may publish one `TaskFamilySpecializationProfile@Context` for each candidate, one `SpecialistHandoff`, or one narrowed handoff plan. Here `profile` means one selector-time comparison record for bounded specialization, not a new U-kind and not a generic narrative profile. `G.5` carries this selector-time specialization question here; it does not re-govern the adaptation-signature field vocabulary from `C.22.1`.
 
@@ -207,7 +305,14 @@ Admission rule for `SpecialistHandoff`: use that handoff kind only when the trut
 When the declared task family is heterogeneous, the selector may return one `SpecialistHandoff`, one other narrowed handoff plan, or one small admissible set that preserves rival specialists rather than collapsing them into a fake single winner. Low-human-overlap candidates remain admissible only when the profile, evidence basis, and policy constraints are explicit.
 
 **S4 — `Composition and fallbacks` templates (design‑time).**
-A library of composition shapes (preconditioner -> solver -> verifier; cascades; meta-selectors) **as templates**, admissibility-checked and pinned. Concrete strategy semantics stay in the referenced method families; G.5 only carries the composition template, selector relation, registry row, or selected-set result. When the current object is the method-side relation itself, use `MethodRelationStructure@BoundedContext` under `A.3.1`, `A.3.2`, `A.15`, or the direct method-composition pattern; a G.5 registry row or selector outcome is not that structure by default. Algebraic, graph, matrix, embedding, or neural selector notation is a mathematical or representation lens when that representation is current.
+A library of composition shapes—`preconditioner -> solver -> verifier`, cascades, and meta-selectors—remains available **as design-time templates**, admissibility-checked and pinned. A template is a description or policy-bound arrangement for possible composition; its existence, diagram order, registry placement, or selection does not create a Method, `methodPartOf` occurrence, obtaining relation, or selected Structure.
+
+If exact A.3.1 Methods, exact B.1.5 `methodPartOf` occurrences, all other required whole-forming claims and constraints, whole semantics, interface boundary, and reidentification rule qualify one already identified candidate as a composite `U.Method`, consume that exact Method through the B.1.5 branch. If independently identified Methods and already-obtaining relations are instead organized for one use without constituting one Method, consume an independently selected A.22 `U.Structure` only after its exact constituents, selected obtaining relation occurrences, applied constraints, and named selection-use frame are present. `MethodRelationStructure` may remain a local readable designator for that actually selected Structure; it is not a U-kind, relation kind, Method holon, registry-row identity, or generic `@BoundedContext` object.
+
+A C.2.1 episteme may describe either governed object. A.3.2 applies only when the episteme's exact `EntityOfConcern` is one already admitted Method and its claims substantively describe that Method; an episteme whose exact concern is the selected Structure is not thereby a `U.MethodDescription`. Concrete strategy semantics stay in the referenced method families; G.5 only carries the composition template, selector relation, registry row, exact consumed Method or Structure reference, or selected-set result. None of those G.5 artifacts supplies the B.1.5 or A.22 construction facts.
+
+Algebraic, graph, matrix, embedding, or neural selector notation remains a mathematical or representation lens when that representation is current; use C.29 for its correspondence and preserved-or-lost structure rather than reading notation as composition or selection.
+
 
 **S5 — `Publication and telemetry` record boundary (run-time).**
 A standard publication boundary publishes:
@@ -215,6 +320,9 @@ A standard publication boundary publishes:
 * `DRR` (decision rationale) and `SCR` (evidence and confidence citation) with explicit pins,
 * declared selector and selected-set records,
 * telemetry pins to refresh orchestration (`G.11`), without governing orchestration.
+
+S5 governs the selector-facing record boundary, not truth or actuality by record existence. A DRR, SCR, selected-set record, shortlist id, telemetry event, refresh cue, policy pin, or result label does not create dated Work, an actual operation application, the selected-set binding, a domain result, an evidence-provenance relation, assurance, authorization, or publication availability. Persist a selector-result claim as its own C.2.1 episteme when another use must rely on it; connect evidence through A.10, assurance through B.3, authorization through its direct governor, and actual availability through E.24.PUB only when each relation independently obtains.
+
 
 When the current publication question is selected-set publication rather than one generic registry trace, `Shortlist` is the public selected-set label, `RankedShortlist` is the ordered specialization when order materially belongs to the published result, `ShortlistId` is the emitted public identity, and `ChoiceSet` stays one mathematical gloss rather than the public selected-set label.
 
@@ -231,17 +339,25 @@ Method- and generator-specific pressures such as `QD` archives, open-ended decla
 
 | Selector relation                 | Consumes                                                                                                                                                     | Produces                                                                                                                                                                                                                                                   |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **G.5‑1 RegisterFamily**          | `SoTA` family cards (from `G.2`), CHR and CAL pins (from `G.3` and `G.4`), `CNSpecRef.edition`, `CGSpecRef.edition`, `ContextId`                                       | A `MethodFamily` registry row (`MethodFamilyId`, `EligibilityStandardRef`, `AssuranceProfileRef`, `UTSRowId`, pinned refs)                                                                                                                                 |
+| **G.5‑1 RegisterFamily**          | `SoTA` family card (from `G.2`), non-empty exact already admitted A.3.1 `MethodRef[]`, exact independently governed classification or membership-relation ref or explicit project-local grouping criterion, CHR and CAL pins (from `G.3` and `G.4`), `CNSpecRef.edition`, `CGSpecRef.edition`, `ContextId` | A `MethodFamily` registry row (`MethodFamilyId`, `MethodRef[]`, `GroupingBasisRefOrCriterion`, `EligibilityStandardRef`, `AssuranceProfileRef`, `UTSRowId`, pinned refs). The G.2 card and CHR/CAL/spec/context pins are metadata or evidence inputs and cannot supply either the exact Methods or the grouping fact. |
 | **G.5‑2 RegisterGeneratorFamily** | `SoTA` generator family cards (from `G.2`), `ContextId`, pinned refs (including `TransferRulesRef.edition` when applicable)                                  | A `GeneratorFamily` registry row (`GeneratorFamilyId`, `GeneratorSignatureRef`, `UTSRowId`, pinned refs)                                                                                                                                                   |
-| **G.5-3 Select**                  | `TaskSignatureRef`, `MethodFamilyId[]` (in scope), pinned `CNSpecRef` and `CGSpecRef` editions, policy refs if any, audit citation pins (`PathId` and `PathSliceId`) | `CandidateSet` (set-returning), declared selector result with `PortfolioMode` recorded, `DRR` and `SCR` pins; if no admissible candidate exists: return `CandidateSet = EMPTY` plus an escalation hint (`ActionHint`) and the pins required to plan next steps (P2W split applies) |
+| **G.5-3 Select**                  | `TaskSignatureRef`, `MethodFamilyId[]` in scope whose rows dereference to non-empty exact A.3.1 `MethodRef[]` and exact grouping bases, pinned `CNSpecRef` and `CGSpecRef` editions, policy refs if any, audit citation pins (`PathId` and `PathSliceId`) | `CandidateSet` (set-returning), declared selector result with `PortfolioMode` recorded, `DRR` and `SCR` pins; if no admissible candidate exists: return `CandidateSet = EMPTY` plus an escalation hint (`ActionHint`) and the pins required to plan next steps (P2W split applies) |
 | **G.5-4 Compose**                 | `CandidateSet`, composition template refs, pinned admissibility constraints                                                                                       | Composite strategy template (template-level; admissibility-checked; pinned)                                                                                                                                                                                      |
 | **G.5‑5 Telemetry**               | run outcomes, citations, and policy or edition pins                                                                                                               | refresh cues (typed RSCR causes and payload pins), parity deltas (if parity harness is in use), telemetry pins (selector‑side; orchestration governing definition is `G.11`)                                                                                              |
+
+`RegisterFamily` produces only the registry row described in S1. It does not produce any A.3.1 Method or independently governed membership fact. `Select` may address candidates through those rows only after their exact Methods and grouping bases resolve; its returned candidate or selected-set value does not retroactively ground a row member.
+
+`Compose` produces only the pinned template named in its output column. It neither qualifies one composite Method under B.1.5 nor selects one A.22 Structure. When a later selector use consumes either governed object, the exact Method or Structure reference is an independently grounded input rather than a result inferred from this template.
+
+
 
 #### G.5:4.4a - Worked selector slice
 
 - A catalyst-search team is choosing among three method families for the same declared `TaskSignature` and `C.22.1` adaptation signature.
 - The shared profile pins one work-measure threshold target, one freshness window, one prior-exposure declaration, and one adaptation budget. One family reaches threshold quickly but carries high downside on adjacent tasks. One family is slower but transfers cleanly. One family never clears `MinimalEvidence` and must abstain.
 - An admissible `G.5` result therefore publishes a set-return shortlist or a narrowed handoff plan, with DRR and SCR records citing why the third family was excluded and why the first two remain non-dominated. The selector does not invent one scalar winner and does not hide the specialization profile in auxiliary side notes.
+- If the project also claims that this selection actually occurred, it separately identifies the acting system, dated selection Work, actual `Select` application, effective candidate and criteria bindings, and the `SelectionSlot` binding. A persisted shortlist assertion is a separate C.2.1 episteme; its DRR or SCR references do not by themselves prove the exclusion facts, warrant the result, authorize downstream action, or make that episteme available to an audience.
+
 - When one upstream `C.19` pass has already narrowed the live pool to one internal retained subset over registered families, `G.5` may publish that result as one `Shortlist` with one `ShortlistId` and explicit basis pins only when selector-facing publication is now the question. Until that emission occurs, the internal retained subset is not yet one public shortlist result.
 - When one upstream `C.11` pass has already fixed one local choice over one declared source set, or one `C.24` pass has already produced one enactment-facing narrowed handoff, `G.5` may publish the selected-set or narrowed-handoff result only when selector-facing publication is now the question. Until this `G.5` emission occurs, the `ChoiceResult`, `CallPlan`, or `CheckpointReturn` is not itself one public `Shortlist`, `RankedShortlist`, or `ShortlistId`-bearing result.
 
@@ -541,7 +657,8 @@ Potential biases and failure modes this pattern explicitly guards against:
 * **Monoculture bias (single Tradition dominance by default).** Mitigation: registry requires explicit eligibility and assurance records; selection is set‑returning under partial orders; method‑specific policies stay explicit pins rather than hard-coded defaults.
 * **Hidden scalarisation bias.** Mitigation: set-return semantics is pinned through `G.Core`; dominance regimes are explicit and each default cites one declared governing definition.
 * **“Tool equals method” bias.** Mitigation: notation independence and prohibition of tool keywords in core registry and eligibility fields; tool choices are outside the core.
-* **Cross‑Context leakage bias.** Mitigation: explicit crossing pins only; Bridge and CL are required when crossings occur; no implicit crossings.
+* **Cross‑Context leakage bias.** Mitigation: require exact F.17 endpoint senses, an obtaining F.9 Bridge, a separate C.2.1 bounded-use proposition and the matching A.10 or B.3 reliance branch; keep loss and CL visible where material. Crossing pins and bundles remain audit or publication references and cannot make an implicit crossing admissible.
+
 * **Survivorship bias in refresh.** Mitigation: RSCR triggers are typed and id-based; freshness, decay, and telemetry deltas are first‑class causes with canonical ids.
 
 ### G.5:7 - Conformance Checklist (normative)
@@ -552,7 +669,8 @@ Potential biases and failure modes this pattern explicitly guards against:
 | `CC‑G5.0`       | Core standards **SHALL** remain notation‑independent; vendor or tool keywords are forbidden in registry, eligibility, assurance, or selector‑kernel obligations (E.5.*). |
 | `CC‑G5.1`       | Every `MethodFamily` **SHALL** declare an `EligibilityStandardRef` using CHR and CAL terms (typed; edition‑pinned where applicable). Standards **SHALL NOT** rely on tool‑specific keywords.  |
 | `CC-G5.2`       | Selection **SHALL** be a pure function of `TaskSignatureRef` and pinned policy or edition refs; side effects are limited to emitting DRR and SCR pins, telemetry triggers, and RSCR triggers (no hidden mutation of constraint-bearing spec refs). |
-| `CC‑G5.3`       | **Delegated (ID‑continuity).** Cross‑Context use **MUST** follow `G.Core` crossing visibility and penalty assignment semantics. **Delegation targets:** `CC‑GCORE‑CROSS‑1`, `CC‑GCORE‑PEN‑1`.  |
+| `CC‑G5.3`       | **Delegated (ID‑continuity) plus F.9 use boundary.** Cross-semantic-context use **MUST** resolve exact F.17 senses, an obtaining F.9 Bridge, a separate C.2.1 `<u,d,r,t,polarity>` proposition and the matching A.10 or B.3 reliance branch. G.Core crossing visibility and penalty-assignment semantics still apply. **Delegation targets:** `CC‑GCORE‑CROSS‑1`, `CC‑GCORE‑PEN‑1`. Pins alone **MUST NOT** establish the Bridge, use, reliance or actual selector application. |
+
 | `CC‑G5.4`       | **Default rule for** `DefaultId.GammaFoldForR_eff`. The selector **MUST** default to the weakest‑link rule for `R_eff` and record contributors in SCR; it **MAY** use an alternative Γ‑fold only when provided by an explicitly pinned policy or profile with proof obligations satisfied (monotonicity; boundary behavior). |
 | `CC-G5.5`       | Ordinal scales **MUST NOT** be averaged or subtracted; any aggregation or comparison must respect CHR scale typing and admissibility constraints, including CSLC where applicable. |
 | `CC‑G5.6`       | Method and generator family identities **SHALL** be published to UTS with the required naming discipline (twin labels where applicable; deprecations follow lexical continuity rules). *(Core conformance applies; `G.5` adds the registry‑specific publication obligation.)* |
@@ -577,7 +695,8 @@ Potential biases and failure modes this pattern explicitly guards against:
 | `CC‑G5.24`      | **Conditional (Open‑Ended).** If `G.5:Ext.OpenEndedFamilyWiring` is present, the selector **MUST** return declared sets of `{Environment, MethodFamily}` pairs as set‑valued outcomes under explicit pins. |
 | `CC‑G5.25`      | **Conditional (Open‑Ended).** In Open‑Ended mode, `TransferRulesRef.edition` is mandatory and **MUST** be visible to telemetry and RSCR triggers.  |
 | `CC-G5.26`      | **Conditional (Archive and QD).** Within any archive niche or cell, ordering and tie-breaks **MUST** remain admissible over compatible scales; inadmissible mixed-scale weighted sums are forbidden. |
-| `CC‑G5.27`      | If the selector cites any `GateCrossing`, the corresponding `CrossingBundle` publication **MUST** be present and conformant; missing or non‑conformant `CrossingBundle` blocks downstream consumption. |
+| `CC‑G5.27`      | If the selector cites any `GateCrossing`, the corresponding `CrossingBundle` publication **MUST** be present and conformant; missing or non‑conformant `CrossingBundle` blocks downstream consumption. The bundle packages already governed crossing evidence for that named use; it **MUST NOT** create the F.17 endpoints, F.9 Bridge, bounded-use proposition, A.10/B.3 reliance, gate decision, authorization, or actual selector use. |
+
 | `CC‑G5.28`      | **Default rule for** `DefaultId.DominanceRegime`. `DominanceRegime` **SHALL** default to `ParetoOnly`. Any inclusion of additional telemetry dimensions into dominance (e.g., illumination) requires an explicitly pinned acceptance or policy record and must be recorded in audit pins. **Parity‑run publication (CC‑G5.23a) remains mandatory** irrespective of dominance policy. |
 | `CC-G5.29`      | **Conditional (QD and Open-Ended).** Any telemetry event that materially changes an archive state or retained-set state **MUST** log `PathSliceId`, the active policy id, and the active editions of the relevant definition pins (`DescriptorMapRef.edition`, `DistanceDefRef.edition`, and `TransferRulesRef.edition` when applicable) and expose them to RSCR triggers. |
 | `CC‑G5.30`      | **No Strategy minting.** Within `G.5`, “strategy” is a policy‑bound composition template; the pattern **SHALL NOT** mint a durable U-kind named `Strategy` (E.10 and E.24.UK discipline). If a stable reference is needed, publish composition and policy ids (e.g., UTS entries) rather than minting a universal kind. |
@@ -590,6 +709,16 @@ Potential biases and failure modes this pattern explicitly guards against:
 | `CC‑G5.36`      | **Neighboring-pattern boundary.** If the current question is still local choice among already-available options, pool policy over still-live candidate lines, or enactment planning after choice, `G.5` **MUST** consume the published result from `C.11`, `C.19`, or `C.24` rather than restating those patterns as if publication itself decided the matter. |
 | `CC‑G5.37`      | **Derived tradition-view publication discipline.** If the selector publishes one result through a derived tradition view such as `TraditionFront` or `TraditionArchive`, it **MUST** keep the declared base `SourceSetFamily` explicit, keep `SoTAPaletteDescription` recoverable through `BasePaletteRef`, and **MUST NOT** let the derived view become the default meaning of `Tradition`, `TraditionPalette`, or the base palette. |
 | `CC‑G5.38`      | **Causal method dispatch declarations.** If method selection involves causal methods, each compared method **MUST** declare `causalMethodUseClassification` as observational predictor, intervention optimizer, counterfactual strategy, causal fairness estimator, causal-RL policy, or simulation-only method, and **MUST** carry `causalUseSupportRecordRef` and `causalUseSupportVerdict` when it consumes `C.28` causal-use support rather than treating method dispatch as causal certification. |
+| `CC-G5.39`      | **Method grounding and grouping boundary.** Every method-bearing registry row **MUST** resolve its non-empty `MethodRef[]` to exact A.3.1 Methods and cite the independently governed classification, membership relation, or explicit project-local grouping criterion used by this selector. A row, id, label, description, family card, eligibility or maturity record, policy, evidence pin, shortlist, or publication **MUST NOT** create a Method or membership fact. Missing grounding blocks that row's method-bearing use. |
+| `CC-G5.40`      | **Composition and selected-structure boundary.** A composition shape **MUST** remain a template unless one already identified A.3.1 Method separately passes B.1.5's complete composite-method qualification. An organization that does not constitute one Method **MUST** be consumed as an A.22 `U.Structure` only after all four A.22 identity discriminators are present. A template, A.3.2 description, registry row, selector outcome, diagram, label, or notation **MUST NOT** create either governed object or its underlying relations. |
+| `CC-G5.41`      | **Declaration, actuality, result and publication boundary.** A registry, selector, policy, template, shortlist, DRR, SCR, telemetry or publication-content declaration **MUST NOT** be treated as dated Work, an actual A.6.1 `Select` application or binding, a domain-result truth, C.2.1 result episteme, A.10 evidence relation, B.3 assurance claim, authorization, or E.24.PUB publication occurrence. Every claimed actual object or relation **MUST** be recovered under its direct owner; missing actuality blocks only that stronger claim. |
+| `CC-G5.42`      | **Crossing completeness.** A cross-semantic-context selector use **MUST NOT** proceed from Bridge, CL, loss, registry, policy, `CrossingAllowance`, `GateCrossing`, `CrossingBundle`, DRR or SCR pins alone. It requires exact F.17 endpoint senses, an obtaining F.9 Bridge, a separate C.2.1 bounded-use proposition and the matching A.10 reliance disposition or B.3 assurance branch; authorization and the actual selector application remain separate. |
+| `CC-G5.43`      | **Ordinary-use proportionality.** A bounded selector run over already grounded rows **MUST** be usable from the exact task, Methods and grouping bases, declared eligibility or comparison basis, truthful outcome, members, ordering status, basis refs and next use. It **MUST NOT** demand a fresh registry build, crossing branch, A.10/B.3 claim, stable public identity or E.24.PUB occurrence unless that stronger object or claim is current. Missing conditional apparatus blocks only the stronger claim. |
+
+
+
+
+
 
 ### G.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -598,8 +727,9 @@ Potential biases and failure modes this pattern explicitly guards against:
   *Avoid:* govern constraint semantics through `CNSpecRef` and `CGSpecRef` plus pinned CAL records; keep G.5 core as a boundary.
 
 * **Anti‑pattern: “Implicit crossings.”**
-  *Symptom:* cross‑Context reuse is claimed without Bridge and CL pins, or without cited `CrossingBundle`.
-  *Avoid:* require explicit crossing pins; block consumption without publication.
+  *Symptom:* cross‑semantic-context reuse is claimed from a shared label, Bridge or CL pin, registry row, policy, DRR/SCR line, `GateCrossing`, or `CrossingBundle` without the governed relation, use and reliance facts.
+  *Avoid:* resolve the exact F.17 endpoint senses; establish the F.9 Bridge; state the separate C.2.1 `<u,d,r,t,polarity>` claim; require the matching A.10 disposition or B.3 assurance branch; and keep authorization and actual selector use separate. Materialize or cite a bundle only when its named downstream use requires that durable package.
+
 
 * **Anti‑pattern: “Hidden scalarisation.”**
   *Symptom:* partial orders are flattened into single winners “for convenience”.
@@ -661,9 +791,16 @@ Evidence-source clarification: peer-reviewed source references carry the most di
 **Uses (conceptual dependencies; cited via pins and ids):**
 
 * Governing spec refs: `A.19 (CN‑Spec)`, `G.0 (CG‑Spec)`.
+* Method identity and family grouping: `A.3.1` for every exact selectable `U.Method`; `A.3.2` only for the same C.2.1 episteme that substantively describes one already admitted Method; and C.2.1 or the exact direct family-relation owner for the grouping claim that a registry row cites. G.5 creates none of those source facts.
+* Method composition and selected organization: `B.1.5` for the complete composite-Method qualification, `A.22` for an independently selected organization that does not constitute one Method, and `C.29` for algebraic, graph, matrix, embedding, neural, or other representation-lens use. G.5 consumes exact resulting references and does not construct them.
+
+
 * Upstream object sets: `G.1 (CG‑Frame Card)`, `G.2 (SoTA Pack)`, `G.3 (CHR Pack)`, `G.4 (CAL Pack)`.
-* Evidence and crossings: `G.6` (EvidenceGraph; `PathId` and `PathSliceId`), `G.7` (Bridge and CL calibration), `E.18` and `A.21` (CrossingBundle and GateChecks).
+* Evidence and crossings: `G.6` for EvidenceGraph citations; `F.17` for exact local senses; `F.9` for the direct Bridge; C.2.1 for the separate bounded-use proposition; and `A.10` or `B.3` for reliance or assurance. `E.18` and `A.21` govern a `CrossingBundle` or GateCheck only when that named downstream use requires one. Any G.7 calibration artifact remains a cited policy or evidence input rather than the owner of Bridge, bounded use, reliance or selector actuality.
+
 * Planning and enactment boundary: `A.15.3 (SlotFillingsPlanItem)` as the plannedBaselineRef (cited, not redefined).
+* Actual selector use and result availability: `A.19.SelectorMechanism` and A.6.1 for the actual `Select` application and bindings; `A.15.1` for dated selection Work by an admitted system under an obtaining assignment; C.2.1 for any persisted result episteme; `A.10` and `B.3` for evidence reliance and assurance; the direct authority pattern for authorization; and `E.24.PUB` for an actual publication occurrence. G.5 declarations and records create none of those neighboring facts.
+
 * Causal-use method dispatch: `C.28` when method selection involves causal effect, counterfactual comparison, causal fairness, causal policy, causal RL, or simulation-only causal-use claims.
 * Optional method or generator extensions through `G.5:Ext.*`: `C.18`, `C.19`, `C.23`, plus extension-bearing patterns admitted by a governing Part G relation when they add extra selector pins.
 * Mathematical-lens use: apply `C.29` when a selector input depends on a claim-relevant comparator, distance, descriptor geometry, embedding, normalization, surrogate model, learned representation, QD archive descriptor, model-family label, or model-selection basis whose mathematical object, mapping mode, preserved or lost structure, or stop condition is not yet recoverable. `C.29` may return no math-lens use, a lens-candidate note, a one-line note, a mini-card, a full card, or a note naming the direct governing pattern for the stated selector use. It does not publish the selected set, selector policy, registry row, shortlist, ranked shortlist, or selector evidence pins; those stay in `G.5` and its governing refs.

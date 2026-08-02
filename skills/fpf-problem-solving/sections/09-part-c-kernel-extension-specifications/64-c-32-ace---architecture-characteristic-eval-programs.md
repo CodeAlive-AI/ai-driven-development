@@ -18,18 +18,26 @@ Typical entry phrases:
 "Two methods, roles, system variants, or AI workflows need fair comparison against the same architecture characteristics."
 ```
 
-**First-minute use slice.** A product-family team has ACS rows for substitutability, evidence reuse, and latency, plus safety as a monitored guardrail. Two candidate architectures look plausible. Using C.32.ACE, the practitioner defines one eval program with the same parity frame, evaluates both candidates against the declared rows, records latency readings, evidence-scope findings, and protected safety loss, and records the result as input for `A.19.CPM` comparison or the next C.32 synthesis pass. The eval result informs the architecture work; it cannot define the criterion or decide the architecture.
+**First-minute use slice.** A product-family team has ACS rows for substitutability, evidence reuse, and latency, plus safety as a monitored guardrail. Two candidate architectures look plausible. The practitioner writes one ACE program record with the same claim scope, selected context slices, reference scheme and plane, evaluation window, parity frame, and input projections for both candidates. `EvalService-7`, the admitted System holding `EvaluatorAssignment-3`, separately performs dated `CandidateEvalWork-42` over both candidates under that assignment; its exact Method enactment or operation application is separately governed. `CandidateLatencyReading-42` and `CandidateEvidenceScopeFinding-42` are separately governed typed results, and any observed protected-safety loss remains explicit rather than being absorbed into one score. Those results can become inputs for `A.19.CPM` comparison or the next C.32 synthesis pass; neither the program record, Work, nor a result defines the criterion or decides the architecture.
 
-The primary `EntityOfConcern` is one architecture-characteristic eval program over declared criteria rows, Q-Bundle slots, candidates, bearers, or selected structures under a parity frame. Measurement validity, comparison policy, selection results, G.5 publications, and architecture decisions remain with their receiving patterns.
+The primary governed object is one architecture-characteristic eval-program record over declared criteria rows, Q-Bundle slots, candidates, bearers, or selected structures under a parity frame. It is a C.32.ACE-local record form, not a new `U.*` kind and not, by its `program` label, a `U.Method`, `U.MethodDescription`, `U.WorkPlan`, dated `U.Work`, or evaluation result. Measurement validity, comparison policy, selection results, G.5 publications, and architecture decisions remain with their receiving patterns.
 
-Ordinary working move: choose the declared criteria rows to read, hold one parity frame for the variants being evaluated, run the eval operation, and return readings or front information as feedback for comparison or the next synthesis pass.
+Ordinary working move: choose the declared criteria rows, bind the exact claim scope, relevant context slices, reference scheme and plane, evaluation window, and input projections, and hold one parity frame for all variants. When evaluation actually occurs, identify the admitted System and role assignment performing the dated Work plus any exact Method enactment or operation application, then return the separately governed typed results as feedback for comparison or the next synthesis pass.
 
-The first useful output is an `ArchitectureCharacteristicEvalProgram@Project`. The eval program is the project working record for evaluation over declared criteria. It reads characteristics through rows, slots, candidates, or structures; it is not the characteristic itself, the scale row, the measurement-validity claim, the comparison policy, or the decision:
+The first useful output is an `ArchitectureCharacteristicEvalProgram@Project`. This C.32.ACE-local working record states how one bounded architecture evaluation is to be framed over declared criteria. When a reusable way of evaluating is current, identify that separate `U.Method` under A.3.1; when a claim-bearing episteme describes that exact Method, test the same episteme for `U.MethodDescription` under A.3.2. A planned evaluation belongs to A.15.2, an actual dated evaluation to A.15.1, and each result to its direct measurement, comparison, evaluation, or assertion owner. The record reads characteristics through rows, slots, candidates, or structures; it is not any of those neighboring objects:
 
-For a first pass, fill only the evaluated rows or Q-Bundle slots, evaluated candidates or structures, parity frame, eval purpose, eval operation, result form, receiving use, and refresh or retire condition. Add trigger modes, method references, uncertainty policy, and comparison policy only when the current receiving use needs them.
+For a first pass, fill the exact claim scope and selected context slices, reference scheme and plane, evaluation window and input projections, evaluated rows or Q-Bundle slots, evaluated candidates or structures, parity frame, eval purpose, intended eval operation, result form, receiving use, and refresh or retire condition. Add project-use refs only for a claimed project-local program; add Method, MethodDescription, actual evaluation Work, operation-application, and typed-result refs only when those separate objects are current.
 
 ```text
 ArchitectureCharacteristicEvalProgram@Project:
+  projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  architectureEvalProgramProjectUseRelationRef?: U.RelationRef governed by the exact eval-program-use or work-use pattern
+  claimScopeRef: U.EntityRef referencing one U.ClaimScope
+  selectedContextSliceRefs:
+  effectiveReferenceScheme:
+  referencePlane?:
+  evaluationWindow:
+  inputProjectionRefs:
   evaluatedCriteriaSetRef:
   evaluatedCriteriaRowRefs:
   evaluatedQBundleSlotRefs?:
@@ -44,7 +52,10 @@ ArchitectureCharacteristicEvalProgram@Project:
   resultForm: reading | band | rank | dominanceRelation | tradeoffFront | qualitativeState | evidenceFinding
   runContext: designTime | laboratory | pipeline | production | workReview | decisionPrep
   measurementOrObservationMethodRefs:
-  resultRef?:
+  methodDescriptionRefs?:
+  evaluationWorkOccurrenceRefs?: U.EntityRef constrained to U.Work
+  evaluationOperationApplicationRefs?: direct-owner relation or A.6.1 application references
+  evaluationResultRefs?: typed result references governed by the selected direct owner
   uncertaintyAndMissingDataPolicy:
   proxyRisk:
   protectedCounterCharacteristicRefs:
@@ -52,6 +63,8 @@ ArchitectureCharacteristicEvalProgram@Project:
   receivingUseRef:
   refreshOrRetireCondition:
 ```
+
+Here `@Project` is a compatibility and retrieval cue only. It supplies no project entity, composite-work identity, context, authority, viewpoint, or parthood. A program local to one actual project names both the exact composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining direct program-use relation in `architectureEvalProgramProjectUseRelationRef`; either field alone is insufficient. `evalOperation` states the intended operation family in the program record, not an actual run or application. Each value in `evaluationWorkOccurrenceRefs` denotes a separate dated `U.Work`; its admitted performer System, exact `U.RoleAssignment`, F.6 attribution, any enacted Method or actual direct-owner/A.6.1 application binding, and each typed result remain under their direct owners. A program, Method, MethodDescription, Work occurrence, operation application, and result never substitute for one another.
 
 What goes wrong if C.32.ACE is missed: a project has architecture-characteristic rows but treats a test, monitor, dashboard, or source-side "fitness function" as the criterion or as the decision. The team may then reject useful losing variants as errors, optimize one indicator, or choose a candidate without fair comparison.
 
@@ -100,9 +113,9 @@ Work in this order:
 1. Reference the evaluated ACS criteria set, evaluated rows, and any Q-Bundle slots.
 2. State the eval purpose: current characterization, candidate comparison, portfolio-frontier work, post-change impact measurement, monitoring, or trigger for the next synthesis pass.
 3. Name the candidates, bearers, and selected structures being evaluated.
-4. Establish the parity frame: context, resource budget, time window, units, admissible observation or evidence inputs, and policy for missing or unknown readings.
+4. Establish one exact `U.ClaimScope`, the relevant A.2.6 `U.ContextSlice` membership, effective `U.ReferenceScheme` and reference plane, evaluation window, input projections, resource budget, units, admissible observation or evidence inputs, and missing-or-unknown policy. Record their parity requirement in `parityFrameRef`; the parity-frame record does not replace those bindings.
 5. Choose eval scope: one criterion, coupled criteria, one Q-Bundle slice, a candidate portfolio, or a holistic use slice.
-6. Choose eval operations. Use measurement, simulation, benchmark, scenario walkthrough, monitor, review, or evidence audit according to the claim. Use `test` only when the eval operation is actually checking an expectation or hard constraint.
+6. Choose eval operations. Use measurement, simulation, benchmark, scenario walkthrough, monitor, review, or evidence audit according to the claim. Use `test` only when the intended operation checks an expectation or hard constraint. When evaluation actually occurs, identify the dated `U.Work`, any enacted Method or actual direct-owner/A.6.1 application binding, and the typed result separately; the program record itself does not run.
 7. Declare the result form: reading, band, rank, dominance relation, trade-off front, qualitative state, or evidence finding.
 8. Name proxy risk and protected counter-characteristics before the eval result can drive work. Optimize only the cycle's chosen indicators; keep the remaining protected characteristics visible as guardrails or risk signals.
 9. State the receiving use: `C.32` synthesis input, `C.32.MLAO` residual input, `E.23` improvement feedback, `A.19.CPM` comparison input, `A.19.SelectorMechanism` selection input, `C.11` choice input, input for publishing a selected set under `G.5`, or architecture-decision input for `C.32.PAD`.
@@ -126,7 +139,7 @@ Work in this order:
 
 ### C.32.ACE:6 - Kind and Receiving-Claim Boundary
 
-C.32.ACE governs architecture-characteristic eval-program construction and the kind boundary between criterion, eval operation, eval result, comparison input, selection input, and decision input. It does not govern starter characteristic selection, ACS scale-row construction, measurement validity, Q-Bundle normal form, candidate synthesis, comparison-policy design, final selection, local choice, publishing a selected set under `G.5`, or architecture decisions. Use `C.32.HCS`, `C.32.ACS`, `C.16`, `C.25`, `C.32`, `A.19.CPM`, `A.19.SelectorMechanism`, `C.11`, `G.5`, or `C.32.PAD` when those claims are being made.
+C.32.ACE governs construction of the local architecture-characteristic eval-program record and the boundary among criterion, reusable evaluation Method, MethodDescription episteme, intended operation family, planned evaluation, actual dated evaluation Work, actual operation application, typed result, comparison input, selection input, and decision input. The local record admits no new U-kind. Use A.3.1, A.3.2, A.15.2, A.15.1, A.6.1, and the direct result owner when those neighboring claims are current. C.32.ACE does not govern starter characteristic selection, ACS scale-row construction, measurement validity, Q-Bundle normal form, candidate synthesis, comparison-policy design, final selection, local choice, publishing a selected set under `G.5`, or architecture decisions. Use `C.32.HCS`, `C.32.ACS`, `C.16`, `C.25`, `C.32`, `A.19.CPM`, `A.19.SelectorMechanism`, `C.11`, `G.5`, or `C.32.PAD` when those claims are being made.
 
 ### C.32.ACE:7 - Conformance requirements
 
@@ -140,6 +153,9 @@ C.32.ACE governs architecture-characteristic eval-program construction and the k
 | `CC-ACE-6` | Source-side "fitness function" wording is not used as the FPF object name in the record. |
 | `CC-ACE-7` | A check or test is admitted only as one eval operation when an expectation or hard constraint is being inspected. |
 | `CC-ACE-8` | The eval result does not select, decide, certify, or carry an architecture-adequacy claim by itself. |
+| `CC-ACE-9` | A project-local program names both `projectWorkOccurrenceRef` and `architectureEvalProgramProjectUseRelationRef`; the suffix or either reference alone asserts no locality. |
+| `CC-ACE-10` | The record separately identifies any reusable Method, MethodDescription, planned evaluation, dated evaluation Work, actual operation application, and typed result that the use needs; `evalOperation` or `resultForm` supplies none of those occurrences or identities. |
+| `CC-ACE-11` | Every actual evaluation use binds one exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, evaluation window, and input projections; `evalScope`, `runContext`, and `parityFrameRef` do not replace them. |
 
 ### C.32.ACE:8 - Common failures and repairs
 
@@ -152,6 +168,7 @@ C.32.ACE governs architecture-characteristic eval-program construction and the k
 | `ResultAsDecision` | A rank, score, pass, or dashboard reading selects the architecture. | Treat the result as source material for an A.10 evidence relation when an evidence claim is current, or as comparison input when comparison is current; explicit comparison belongs to `A.19.CPM`, set-returning selection to `A.19.SelectorMechanism`, local choice to `C.11`, publication of a selected set to `G.5`, and project architecture decision to `C.32.PAD`. |
 | `SingleIndicatorGoodhart` | Work improves one optimized indicator while an unmeasured architecture concern worsens. | Limit optimized indicators, add protected counter-characteristics, and open `E.13` when proxy-to-value drift appears. |
 | `LosingVariantAsError` | A candidate that lost a planned eval is recorded as a mistake. | Record it as a variant result unless an expectation caused unplanned rework; keep useful learning in the variant archive. |
+| `ProgramAsRunOrResult` | The ACE record is said to execute, measure, evaluate, or produce the result, or one generic `resultRef` hides the result kind. | Identify the actual system-performed dated Work, Method or operation application when current, and typed result under their direct owners; keep the ACE record as the evaluation framing record. |
 
 ### C.32.ACE:9 - Consequences
 
@@ -179,23 +196,23 @@ These rows document transfers from source practice into C.32.ACE. Keep a source 
 | `Software Architecture Metrics` (`https://www.oreilly.com/library/view/software-architecture-metrics/9781098112226/`) | Current practitioner source for metric categories and governance practice after quality goals are named. | Carry metric-cadence distinctions as eval-program fields, not as criteria rows. | ACE distinguishes scope, trigger mode, result form, run context, method refs, and refresh or retire condition. | A metric, dashboard, rank, or score is not a project criterion, selected architecture, or architecture decision. |
 | Ford, Richards, Sadalage, and Dehghani, `Software Architecture: The Hard Parts` (`https://www.oreilly.com/library/view/software-architecture-the/9781492086888/`) | Mature practitioner source for objective definitions, trade-off analysis, and least-worst choices under competing characteristics. | Require declared criteria rows and protected counter-characteristics before synthesis, comparison, or selection uses eval results. | ACE rows carry proxy risk, protected counter-characteristics, and receiving use before result-driven action. | A better reading or rank does not authorize comparison, selection, choice, G.5 publication of a selected set, or decision by itself. |
 | Goodhart and proxy-risk line, plus current FPF `E.13` | Optimized proxies can detach from the declared architecture concern. | Keep proxy repair in E.13 while ACE records the risk before result use. | ACE requires proxy risk and protected counter-characteristics; proxy drift exits to `E.13`. | An eval result cannot replace the declared architecture concern. |
-| Current FPF `C.16`, `C.25`, `E.23`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, and `C.11` | Existing receiving patterns for measurement, Q-Bundles, repeated improvement, comparison, selection, publication of selected sets, and local choice. | Keep ACE as eval-program and eval-result boundary. | The relation table names C.16 for measurement validity, C.25 for composite quality, E.23 for improvement feedback, A.19.CPM for comparison, A.19.SelectorMechanism for set-returning selection, G.5 for publication of selected sets, and C.11 for local choice. | ACE does not validate measurement, define Q-Bundles, compare, select, publish a selected set under G.5, choose, or decide. |
+| Current FPF `C.16`, `C.25`, `E.23`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, and `C.11` | Existing receiving patterns for measurement, Q-Bundles, repeated improvement, comparison, selection, publication of selected sets, and local choice. | Keep ACE as the eval-program framing and typed-result dispatch boundary. | The relation table names C.16 for measurement validity and readings, C.25 for composite quality, E.23 for improvement feedback, A.19.CPM for comparison, A.19.SelectorMechanism for set-returning selection, G.5 for publication of selected sets, and C.11 for local choice; each actual typed result stays with its selected direct owner. | ACE does not validate measurement, own every eval result, define Q-Bundles, compare, select, publish a selected set under G.5, choose, or decide. |
 
 **Source-currentness boundary.** Use each source row only for the ACE eval-program field, result-use boundary, or refresh condition named in that row. Recheck the row when a named book edition, source presentation, FPF receiving pattern, metric practice, or evolutionary-architecture practice changes the transferred move. If the project wants criteria-row admission, measurement validity, Q-Bundle structure, explicit comparison, selection, publication of a selected set, local choice, evidence, assurance, or decision use, leave ACE and open the receiving pattern.
 
 ### C.32.ACE:12 - Relations
 
-- **Builds on:** `C.32.HCS`, `C.32.ACS`, `C.16`, `C.16.P`, `C.25`, `E.13`, `E.22`, `E.23`, and `A.19.CPM`.
+- **Builds on:** `C.32.HCS`, `C.32.ACS`, `C.16`, `C.16.P`, `C.25`, `A.2.6`, `A.19`, `E.13`, `E.22`, `E.23`, and `A.19.CPM`; coordinates with A.3.1, A.3.2, A.15.2, A.15.1, and A.6.1 only for separately current Method, MethodDescription, planned Work, dated Work, or operation-application claims.
 - **Receiving uses:** `C.32.P2S` actual-structure feedback and next-synthesis repair, `C.32` candidate synthesis, `C.32.MLAO` residual optimization, `C.32.CONWAY` correspondence frames, `C.32.FAIL` repair, `A.19.CPM` comparison, `A.19.SelectorMechanism` selection, `C.11` local choice, publication of a selected set under `G.5`, and architecture-decision work for `C.32.PAD`.
 - **Measurement boundary:** Use `C.16` when a reading, coordinate, unit, threshold, score, uncertainty, or cross-case comparability claim is made.
-- **Structural-information boundary:** `C.33`, `C.34`, and `C.35` can supply captured structure, lost structure, preservation adequacy, generated-carrier context, or discovered-carrier context for an eval only after `C.32.ACS`, `C.16`, or `C.25` has declared what is being evaluated. ACE remains eval-program and eval-result owner; `C.33`, `C.34`, and `C.35` do not define eval programs.
+- **Structural-information boundary:** `C.33`, `C.34`, and `C.35` can supply captured structure, lost structure, preservation adequacy, generated-carrier context, or discovered-carrier context for an eval only after `C.32.ACS`, `C.16`, or `C.25` has declared what is being evaluated. ACE owns the eval-program framing and dispatches each actual typed result to its direct measurement, comparison, evaluation, or assertion owner; `C.33`, `C.34`, and `C.35` do not define eval programs.
 - **Q-Bundle boundary:** Use `C.25` when the evaluated item is a composite quality family.
 - **Test boundary:** Use `test` only as an eval operation for a declared expectation or hard constraint. Error recognition and architecture-synthesis repair use `C.32.FAIL`; non-architecture defects use the local defect-governing pattern.
-- **Decision boundary:** ACE can produce readings, ranks, dominance relations, trade-off-front descriptions, and source material for an A.10 evidence relation when an evidence claim is current. Explicit comparison, set-returning selection, local choice, publication of a selected set, and project architecture decision belong to `A.19.CPM`, `A.19.SelectorMechanism`, `C.11`, `G.5`, and `C.32.PAD`.
+- **Decision boundary:** An evaluation framed by an ACE record may reference separately governed readings, ranks, dominance relations, trade-off-front descriptions, and other typed results. When such a result is current, separately identify the admitted System, dated evaluation Work, applicable operation application, and selected direct measurement, comparison, evaluation, or assertion owner for that exact result. A separately governed result may serve as source material for an A.10 evidence relation when an evidence claim is current. Explicit comparison, set-returning selection, local choice, publication of a selected set, and project architecture decision belong to `A.19.CPM`, `A.19.SelectorMechanism`, `C.11`, `G.5`, and `C.32.PAD`.
 
 ### C.32.ACE:13 - Footer marker
 
-C.32.ACE closes when the eval program names evaluated criteria, evaluated candidates or structures, parity frame, eval purpose, scope, eval operation, trigger mode, result form, method refs, proxy risks, protected counter-characteristics, receiving use, and refresh or retire condition.
+C.32.ACE closes when the eval program names evaluated criteria, evaluated candidates or structures, exact claim scope and selected context slices, effective reference scheme and plane, evaluation window and input projections, parity frame, eval purpose, scope, intended eval operation, trigger mode, result form, method refs, proxy risks, protected counter-characteristics, receiving use, and refresh or retire condition; when actual evaluation is claimed, its dated Work, direct method or operation-application binding, and typed result remain separately identified.
 
 ### C.32.ACE:End
 

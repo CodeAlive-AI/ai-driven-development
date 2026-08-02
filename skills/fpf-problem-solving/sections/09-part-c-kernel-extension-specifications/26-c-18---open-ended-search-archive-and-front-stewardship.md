@@ -6,7 +6,8 @@
 > **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 > **Placement:** Part C
-> **Builds on:** `C.16`, `C.19`, `G.5`, `G.11`, `E.18`, `E.18.1`, `A.19.CPM`, `A.19.SelectorMechanism`, `C.30`, `F.17`, `F.18`, and `F.9`.
+> **Builds on:** `C.16`, `A.19.CPM`, `A.19.SelectorMechanism`, and `E.18`.
+> **Coordinates with:** `C.19`, `G.5`, `G.9`, `G.11`, `E.23`, `E.18.1`, the `C.30` family, `C.32.P2S`, `C.32`, `C.35`, `C.36`, `F.17`, `F.18`, `F.9`, and the A.15 family.
 > **Purpose:** make archive, front, Q-front, descriptor, telemetry, retained exploration value, stepping-stone value, lineage, edition, architecture-candidate generation, and cultural-variant generation usable without turning them into publication, decision, work permission, or cultural-evolution authority.
 
 ### C.18:0 - Use This When
@@ -67,6 +68,9 @@ ExplorationArchiveRecord@Context:
   steppingStoneUse?:
   lineageOrEditionPins:
   telemetryRefs?:
+  currentnessAsOf:
+  currentStatus:
+  stopOrRefreshReason:
   nextGoverningRelation:
 ```
 
@@ -85,6 +89,9 @@ FrontRecord@Context:
   relationTokenSetRef:
   excludedTelemetryRefs?:
   selectedSetPublicationRef?:
+  currentnessAsOf:
+  currentStatus:
+  stopOrRefreshReason:
   nextGoverningRelation:
 ```
 
@@ -104,6 +111,9 @@ ExplorationArchiveRecord@Context:
   steppingStoneUse: candidate material for C.36 cultural-evolution case work
   lineageOrEditionPins: lab session, teacher edit, platform-publication edition
   telemetryRefs: replay counts, class adoption counts, jury notes
+  currentnessAsOf: lab records and platform-publication edition reviewed through 2026-07-31
+  currentStatus: active for retained exploration and teaching use
+  stopOrRefreshReason: reopen if the teaching-use judgement, retention policy, lineage, or platform edition changes
   nextGoverningRelation: C.36 case card or G.11 refresh, depending on the current question
 ```
 
@@ -118,16 +128,27 @@ FrontRecord@Context:
   relationTokenSetRef: non-dominated candidates under current comparator
   excludedTelemetryRefs: tests outside the current temperature envelope
   selectedSetPublicationRef: empty until G.5 publishes the selected set
-  nextGoverningRelation: C.30 architecture candidate treatment or G.5 selected-set publication
+  currentnessAsOf: comparator, safety constraints, and test evidence reviewed through 2026-07-31
+  currentStatus: active non-dominated front for the declared comparator
+  stopOrRefreshReason: reopen if eligibility, comparator, dominance grounds, or evidence edition changes
+  nextGoverningRelation: C.30 architecture candidate treatment, G.5 selected-set publication, or G.11 refresh
 ```
 
 #### C.18:4.3 - Generation And Downstream-Use Record
-When loop-engineering practice generates many agent prompts, harness variants, workflow variants, or framework seeds, `C.18` records generation, archive, front, descriptors, telemetry, retained exploration value, lineage, and next governing relation. It does not say that the loop improved. Use `E.23` only when a retained object version is changed and re-evaluated; use `G.9` for parity between variants and `G.5` when a selected set must be published.
+
+When loop-engineering practice generates many agent prompts, harness variants, workflow variants, or framework seeds, `C.18` records generation, archive, front, descriptors, telemetry, retained exploration value, lineage, and the next governing relation. It does not say that the loop improved. Use `E.23` only when one retained object version is changed and re-evaluated; use `G.9` for parity between variants and `G.5` when a selected set must be published.
 
 ```text
 OpenEndedVariantGenerationRecord@Project:
   problemCardRef?:
   generationMethodOrFamilyRef:
+  sourceRefs?:
+  evaluatorOrComparatorRef?:
+  emitterPolicyRef?:
+  insertionPolicyRef?:
+  dedupThreshold?:
+  deduplicationBasisRef?:
+  deduplicationUnit?:
   variantSetRef:
   descriptorMapRef:
   characteristicOrDescriptorSetRef:
@@ -135,12 +156,36 @@ OpenEndedVariantGenerationRecord@Project:
   architectureCandidateRefs?:
   culturalVariantRefs?:
   telemetryRefs?:
+  projectLocality?:
+    generationWorkOccurrenceRef:
+    compositeProjectWorkOccurrenceRef:
+    governingRelationPatternRef:
+    exactGenerationToProjectRelationRef:
   workPlanOrMeasurementRef?:
   refreshRef?:
+  currentnessAsOf:
+  currentStatus:
+  stopOrRefreshReason:
   nextGoverningRelation:
 ```
 
-Use this record when generation is current. `architectureCandidateRefs` become architecture moves only through `C.30`, `C.30.ASV`, or `C.30.AD`. `culturalVariantRefs` become cultural-evolution cases only through `C.36`. Work planning, performed work, effect measurement, and refresh use the A.15 family and `G.11`. P2W carry-through uses `E.18.1` when an accepted problem-side distinction must be preserved into the next relation.
+Across the archive, front, and generation records, `currentnessAsOf` names the replay date or window together with the relevant pinned editions; `currentStatus` states whether the recorded archive/front/generation relation is active, held, closed, or stale for its declared use; and `stopOrRefreshReason` names the condition that ended it or the exact trigger that would reopen its currentness. These fields record the boundary but do not perform refresh. When source, descriptor, comparator, policy, evidence, or edition currentness becomes the live question, `nextGoverningRelation` points to `G.11` and `refreshRef?` may cite the separately governed refresh record.
+
+Here `@Project` is a compatibility and retrieval cue, not a project kind or relation assertion. Fill `projectLocality?` only after both Work occurrences have been admitted independently and the cited relation actually obtains under its direct governor. `generationWorkOccurrenceRef` names the exact dated generation `U.Work`; `compositeProjectWorkOccurrenceRef` names the selected composite project `U.Work`; and `exactGenerationToProjectRelationRef` cites, rather than creates, the exact work-part, containing-work, decision-use, source-use, or other governed relation. Use work parthood only when the complete `A.15.1` basis holds. Otherwise omit `projectLocality?`: the `@Project` suffix remains retrieval-only and establishes no project Work, parthood, authority, context, or viewpoint.
+
+For example, a completed harness-generation run may state:
+
+```text
+projectLocality:
+  generationWorkOccurrenceRef: HarnessVariantGenerationRun-2026-07-31 : U.Work
+  compositeProjectWorkOccurrenceRef: AgentHarnessProjectWork-2026 : U.Work
+  governingRelationPatternRef: A.15.1
+  exactGenerationToProjectRelationRef: OperationalPartOf_work(HarnessVariantGenerationRun-2026-07-31, AgentHarnessProjectWork-2026)
+```
+
+Every optional field whose name ends in `Ref?` points to a separately governed object, claim, policy profile, or measurement basis. `dedupThreshold?` is not a reference: it carries one declared scalar threshold value. `deduplicationUnit?` carries its unit literal. Fill `emitterPolicyRef?` and `insertionPolicyRef?` only when the cited C.19 profile or insertion policy actually governs the current pool treatment. When a threshold is inherited, the cited profile supplies `dedupThreshold`, `deduplicationBasisRef`, and `deduplicationUnit`; when it is not inherited, carry the scalar in `dedupThreshold?` and its basis and unit in `deduplicationBasisRef?` and `deduplicationUnit?`. These references and scalars do not give C.19 a generation operator or move archive/front ownership out of C.18. In particular, `problemCardRef?` may cite a C.22.2 problem-side episteme but creates neither an actual Problem nor a `ProblematicForRelation` under `C.22.PFR`. A generated variant, archive entry, front membership, telemetry value, or retained-exploration claim is neither an improvement-result nor a work-result identity and creates no relation from generation Work to a result. `nextGoverningRelation` names the next owner; it does not itself make a choice, publish a selected set, authorize work, perform refresh, or make any relation obtain.
+
+Use this record when generation is current. `architectureCandidateRefs` become architecture moves only through `C.30`, `C.30.ASV`, or `C.30.AD`. `culturalVariantRefs` become cultural-evolution cases only through `C.36`. Local choice uses `C.11`; work planning and performed work use the A.15 family; effect measurement uses its direct measurement and evaluation owners; refresh uses `G.11`. P2W carry-through uses `E.18.1` when an accepted problem-side distinction must be preserved into the next relation.
 
 #### C.18:4.4 - Front And Archive Are Different Returns
 
@@ -148,6 +193,7 @@ Use this record when generation is current. `architectureCandidateRefs` become a
 - Return the non-dominated front over the declared comparator, dominance set, or relation-token set.
 - Return the exploration archive separately when retained exploration value, coverage, novelty, diversity, stepping-stone value, or future reachability is current.
 - Keep tie-breakers and telemetry explicit so diversity, illumination, or popularity signals do not rewrite front semantics.
+- Before promoting telemetry or a popularity-like signal into the comparator, dominance set, or selected-set criteria, state which intended archive/front use or value becomes worse when that signal improves and cite the policy or decision authority that admits the trade-off. If either answer is missing, keep the signal as telemetry or an explicitly bounded tie-breaker rather than silently promoting it.
 - Use `RetentionIntent=steppingStone` when retention exists for frontier expansion or later curriculum value rather than current dominance.
 - If one source line keeps both returns, say that the front answers current non-domination while the archive answers retained exploration value.
 
@@ -161,12 +207,15 @@ For cultural variants, C.18 records the generated or retained variant set and it
 
 - `CC-C18-1` Descriptor, characteristic, distance, and family-coordinate refs are named before generation, archive update, or front publication.
 - `CC-C18-2` Archive and front returns are separate unless a governing pattern explicitly publishes a selected set from one of them.
-- `CC-C18-3` Telemetry remains telemetry unless a declared policy promotes it into the comparator, dominance set, or selected-set criteria.
+- `CC-C18-3` Telemetry remains telemetry unless a declared policy promotes it into the comparator, dominance set, or selected-set criteria and the governing record names both the intended archive/front use or value made worse by that promotion and the authority that admits the trade-off.
 - `CC-C18-4` Retained exploration value, stepping-stone use, lineage, and edition pins are recorded for archive use.
 - `CC-C18-5` Architecture candidates use C.30 family patterns before becoming architecture moves.
 - `CC-C18-6` Cultural variants use C.36 or term-bridge patterns before becoming cultural-evolution claims.
 - `CC-C18-7` Refresh uses `G.11` with the smallest affected archive, front, descriptor, edition, or lineage locus.
 - `CC-C18-8` Agent-loop, harness-loop, workflow-store, or DPF-seed variants retained in an archive name their descriptor, lineage, telemetry, and next governing relation; archive membership does not claim quality improvement without `E.23` re-evaluation.
+- `CC-C18-9` A filled `projectLocality?` names independently admitted dated generation and composite project `U.Work` occurrences, the direct governing pattern, and one exact obtaining relation; `@Project` alone remains retrieval-only.
+- `CC-C18-10` Problem-card, result, selected-set, choice, work, and refresh references remain references to separately governed objects or next owners and create none of those identities or relations.
+- `CC-C18-11` The SoTA basis names its reviewed-through boundary and exact mutable editions; a material source revision, newer field survey, or contrary archive, descriptor-generalization, or OEE-evaluation evidence records a reopen trigger and hands refresh to `G.11`.
 
 
 
@@ -203,13 +252,15 @@ Current quality-diversity, illumination search, open-ended engineering, and evol
 
 ### C.18:10 - SoTA-Echoing
 
+**Source-currentness boundary.** This source-use basis was reviewed through 2026-08-01. Mutable preprints are pinned below to the edition actually used; the Qin et al. survey is pinned to its DOI-fixed journal article. Reopen the affected source-use row through `G.11` when a cited revision changes the archive, front, generation, or evaluation claim used here; when a newer field survey materially changes the known QD/OEE boundary; or when contrary evidence changes what can be claimed about bounded archives, descriptor generalization, or open-ended evaluation. C.18 records that trigger and the affected row but does not itself perform refresh.
+
 | Source or source family | Adopted FPF move | Rejected overread | Field or boundary changed |
 |---|---|---|---|
-| Lin et al., `Quality-Diversity Optimization as Multi-Objective Optimization`, arXiv:2602.00478. | Treat QD and Q-front work through declared Q components, `DominanceSet`, comparator refs, archive relation, front relation, selected-set publication, and refresh. | Cell-filling or popularity accounts are the current ontology by default. | `FrontRecord@Context` must keep dominance grounds, comparator refs, and Q-component refs explicit. |
+| Lin et al., `Quality-Diversity Optimization as Multi-Objective Optimization`, arXiv:2602.00478v1 (2026-01-31). | Treat QD and Q-front work through declared Q components, `DominanceSet`, comparator refs, archive relation, front relation, selected-set publication, and refresh. | Cell-filling or popularity accounts are the current ontology by default. | `FrontRecord@Context` must keep dominance grounds, comparator refs, and Q-component refs explicit. |
 | Qin et al., `A survey on Quality-Diversity optimization: Approaches, applications, and challenges`, *Swarm and Evolutionary Computation* 100:102240 (2026), DOI `10.1016/j.swevo.2025.102240`, `https://www.sciencedirect.com/science/article/pii/S2210650225003979`. | Use current survey support for approaches, applications, archive use, diversity use, and challenge framing. | Survey taxonomy replaces FPF governing loci. | `ExplorationArchiveRecord@Context`, `FrontRecord@Context`, and `OpenEndedVariantGenerationRecord@Project` stay governed by C.18 while selected-set publication and refresh stay with `G.5` and `G.11`. |
-| Batra et al., `Quality Diversity for Robot Learning: Limitations and Future Directions`, arXiv:2407.17515. | State retained exploration value, generalization pressure, and limitations when an archive is used beyond current dominance. | Bounded archives or cell occupancy are enough evidence that NQD and OEE are useful. | `retainedValue`, `retentionPolicyRef`, `telemetryRefs`, and `nextGoverningRelation` must be filled when the archive is relied on. |
-| Zhang et al., `Darwin Godel Machine`, arXiv:2505.22954. | Keep generated agents, archive lineage, empirically validated changes, method-family use, evaluation, and refresh separate. | OEE is one winner-selection method or source-free self-improvement story. | `OpenEndedVariantGenerationRecord@Project` records generation and archive or front linkage, while evaluation and refresh move to their governing patterns. |
-| Novikov et al., `AlphaEvolve`, arXiv:2506.13131. | Separate generated method text, method description, evaluator relation, selected set, source-use relation, performed work, and work result. | Generated algorithm text is proof, gate permission, accepted method selection, or performed work. | `evaluatorOrComparatorRef`, lineage, source refs, and `nextGoverningRelation` decide whether to use C.18, A.19, `G.5`, `C.11`, A.15, or `G.11`. |
+| Batra et al., `Quality Diversity for Robot Learning: Limitations and Future Directions`, arXiv:2407.17515v1 (2024-07-09). | State retained exploration value, generalization pressure, and limitations when an archive is used beyond current dominance. | Bounded archives or cell occupancy are enough evidence that NQD and OEE are useful. | `retainedExplorationValue`, `retentionPolicyRef`, `telemetryRefs`, and `nextGoverningRelation` must be filled when the archive is relied on. |
+| Zhang et al., `Darwin Godel Machine`, arXiv:2505.22954v3 (2026-03-12). | Keep generated agents, archive lineage, empirically validated changes, method-family use, evaluation, and refresh separate. | OEE is one winner-selection method or source-free self-improvement story. | `OpenEndedVariantGenerationRecord@Project` records generation and archive or front linkage, while evaluation and refresh move to their governing patterns. |
+| Novikov et al., `AlphaEvolve`, arXiv:2506.13131v1 (2025-06-16). | Separate generated method text, method description, evaluator relation, selected set, source-use relation, performed work, and work result. | Generated algorithm text is proof, gate permission, accepted method selection, or performed work. | `evaluatorOrComparatorRef`, lineage, source refs, and `nextGoverningRelation` decide whether to use C.18, A.19, `G.5`, `C.11`, A.15, or `G.11`. |
 | Cultural-evolution and style-engineering source pressure from the music and dance intake. | Keep generated style or tradition variants as archive or front records until a cultural-evolution case or term bridge is current. | A cultural-style variant is a root cultural kind or a selected set by label. | `culturalVariantRefs` continue to `C.36`, `F.17`, `F.18`, or `F.9`; selected-set labels continue to `G.5`. |
 | Architecture-search and product-family work. | Treat retained structures as candidate architecture moves only after the architecture claim is named. | An archive of layouts is the architecture or the architecture decision. | Architecture candidates exit to `C.30`, `C.30.ASV`, `C.30.AD`, or `C.32.P2S` after C.18 records descriptor, archive or front relation, and telemetry. |
 

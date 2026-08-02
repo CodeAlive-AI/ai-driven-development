@@ -20,11 +20,11 @@ Typical entry phrases:
 "Do not average the decision; tell us what must be repaired."
 ```
 
-**First-minute use slice.** A reviewer receives a PAD decision relation and ADR projection for a modularization decision. Using C.32.ADA, the reviewer declares the use: "ready for developer work and ADR publication." The reviewer scores each coordinate with a short rationale. Candidate traceability is `4 wellExpressedForDeclaredUse`, architecture-characteristic trade-off is `3 sufficientlyExpressedForDeclaredUse`, method docking is `2 partiallyExpressedForDeclaredUse`, and publication projection is `4 wellExpressedForDeclaredUse`. The result does not approve the decision. It directs repair to the method-use instruction, responsible roles, readiness exit, and expected structure effect before the decision can guide developer work.
+**First-minute use slice.** `ArchitectureReviewService-4`, the admitted System holding `ArchitectureReviewerAssignment-6`, performs dated `DecisionAdequacyEvaluationWork-12` over one PAD decision relation and ADR projection for a modularization decision. One separate result episteme states the declared use, `ready for developer work and ADR publication`, and the coordinate outcomes: candidate traceability `4 wellExpressedForDeclaredUse`, architecture-characteristic trade-off `3 sufficientlyExpressedForDeclaredUse`, method docking `2 partiallyExpressedForDeclaredUse`, and publication projection `4 wellExpressedForDeclaredUse`. The result does not approve the decision. It directs repair to the method-use instruction, responsible assignments, readiness exit, and expected structure effect before the decision can guide developer work.
 
-The primary `EntityOfConcern` is `ArchitectureDecisionAdequacyEvaluation@Project`: an evaluation record over one `ArchitectureDecisionRelation@Project`, optional `ArchitectureDecisionRecordProjection@Project`, and declared use.
+The primary governed object is `ArchitectureDecisionAdequacyEvaluation@Project`: a C.32.ADA-local evaluation record over one `ArchitectureDecisionRelation@Project`, optional `ArchitectureDecisionRecordProjection@Project`, and declared use. It is not the evaluated decision, evaluation Work, or result episteme.
 
-`ArchitectureDecisionAdequacyEvaluation@Project` is not a new `U.*` kind, not a gate, not evidence, not assurance, not pattern-quality evaluation, and not a replacement for `C.32.PAD`. It is a typed adequacy evaluation that sends weak coordinates back to their governing repair patterns.
+`ArchitectureDecisionAdequacyEvaluation@Project` is a local record form, not a new `U.*` kind, gate, evidence, assurance, pattern-quality evaluation, or replacement for `C.32.PAD`. Its coordinate table expresses the ADA result content; when that result must be a durable claim, one separately identified C.2.1 episteme states it. The dated evaluation remains separate `U.Work`, and any actual evaluation operation application remains with its direct owner.
 
 What goes wrong if C.32.ADA is missed: a decision can appear complete because it has a record, rationale, or diagram, while it is unusable for the declared work. Weak candidate basis, hidden trade-offs, missing method instructions, absent source-return, and vague supersession conditions remain invisible until implementation or review fails.
 
@@ -40,11 +40,23 @@ The first useful output is `ArchitectureDecisionAdequacyEvaluation@Project`:
 
 ```text
 ArchitectureDecisionAdequacyEvaluation@Project:
+  projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  architectureDecisionEvaluationProjectUseRelationRef?: U.RelationRef governed by the exact evaluation-use or work-use pattern
   evaluationId:
+  claimScopeRef: U.EntityRef referencing one U.ClaimScope
+  selectedContextSliceRefs:
+  effectiveReferenceScheme:
+  referencePlane?:
+  evaluationWindow:
+  decisionQuestionInputProjectionRef:
+  evaluatorSystemRef?: U.EntityRef constrained to U.System
+  evaluatorRoleAssignmentRef?: U.RelationRef constrained to U.RoleAssignment
+  evaluationWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  evaluationOperationApplicationRefs?: direct-owner relation or A.6.1 application references
+  adequacyResultEpistemeRef?: U.EpistemeRef
   declaredUse:
   architectureDecisionRelationRef:
-  architectureDecisionRecordProjectionRef?
-  evaluatorRoleRef:
+  architectureDecisionRecordProjectionRef?:
   coordinateValues:
     - coordinateRef:
       value: 0|1|2|3|4|5
@@ -58,6 +70,8 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   stopCondition:
   reevaluationTrigger:
 ```
+
+Here `@Project` is a compatibility and retrieval cue only. A project-local ADA record names both the exact composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining direct record-use relation in `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's own project relation, the suffix, or either field alone is insufficient. When actual evaluation is claimed, name the admitted evaluator System, exact `U.RoleAssignment`, dated evaluation `U.Work`, F.6 `performedUnderAssignment(W, RA)`, and any enacted Method or direct-owner/A.6.1 operation application separately. The result episteme is a separately identified C.2.1 claim-bearing object; the record, Work, operation application, and result do not substitute for one another, and no generic work-to-result relation is inferred.
 
 ### C.32.ADA:2 - Problem
 
@@ -111,7 +125,7 @@ Evaluate every coordinate. If a coordinate is not live, mark it `notTriggered` o
 
 | Coordinate | What is evaluated | Repair when weak |
 |---|---|---|
-| `BoundedDecisionQuestionRecoverability` | Decision subject, described holon, bounded context, status, and decision question can be recovered. | Return to `C.32.PAD` decision subject fields. |
+| `BoundedDecisionQuestionRecoverability` | Decision subject, described holon, exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, evaluation window, status, and decision question can be recovered; a selected `BoundedModelUseStructure` is named only when it independently changes interpretation. | Return to `C.32.PAD`, A.2.6, or A.1.1 for the exact missing decision-subject, scope, slice, or model-use-structure content. |
 | `CandidateBasisAndSelectionTraceability` | Candidate palette, residual frame, comparison, selection, selected set, or reason no candidate-set question is live is recoverable. | Return to `C.32`, `C.32.MLAO`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, or `C.11`. |
 | `AffectedStructureAndDescriptionAdequacy` | Affected selected structures, views, architecture descriptions, correspondence, structural-information lens uses, and source-return are recoverable. | Return to `C.30`, `C.30.ASV`, `C.30.AD`, `A.6.F`, `A.6.M`, or `C.29`. |
 | `ArchitectureCharacteristicTradeoffAdequacy` | Architecture characteristics, criteria rows, Q-Bundles, eval readings, accepted losses, and guardrails are explicit. | Return to `C.32.ACS`, `C.32.HCS`, `C.25`, `C.32.ACE`, `C.16`, `C.31`, or `C.31.ASAP`. |
@@ -143,6 +157,16 @@ Use these as ordinary defaults. A project can declare stricter stop conditions. 
 ```text
 ArchitectureDecisionAdequacyEvaluation@OrderFlow:
   declaredUse: readyForDeveloperWork
+  claimScopeRef: OrderFlow developer-work readiness for the named decision and release slice
+  selectedContextSliceRefs: OrderFlow service, named product-family release, and current developer-work window slices
+  effectiveReferenceScheme: OrderFlow architecture decision scheme edition 4
+  referencePlane: selected architecture and developer-work commitment
+  evaluationWindow: review session 2026-07-31
+  decisionQuestionInputProjectionRef: PAD decision relation plus its declared-use and source-return fields
+  evaluatorSystemRef: ArchitectureReviewService-4
+  evaluatorRoleAssignmentRef: ArchitectureReviewerAssignment-6
+  evaluationWorkOccurrenceRef: DecisionAdequacyEvaluationWork-12
+  adequacyResultEpistemeRef: DecisionAdequacyResult-12
   architectureDecisionRelationRef: PAD:order-flow-event-integration
   architectureDecisionRecordProjectionRef: ADR:order-flow-event-integration
   noAveragePolicy: true
@@ -155,7 +179,7 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 
 | Coordinate | Value | Label | Short rationale and repair |
 |---|---:|---|---|
-| `BoundedDecisionQuestionRecoverability` | `4` | `wellExpressedForDeclaredUse` | Subject, holon, context, status, and question are clear; `5` would need transfer evidence across another product-family slice. |
+| `BoundedDecisionQuestionRecoverability` | `4` | `wellExpressedForDeclaredUse` | Subject, holon, exact claim scope and selected slices, scheme and plane, window, status, and question are clear; `5` would need transfer evidence across another product-family slice. |
 | `CandidateBasisAndSelectionTraceability` | `4` | `wellExpressedForDeclaredUse` | Candidate palette and selected option are cited; `5` would need another team to replay the selection without local recovery. |
 | `AffectedStructureAndDescriptionAdequacy` | `4` | `wellExpressedForDeclaredUse` | Module and information structures plus C.30.ASV refs are usable; `5` would need a worked cross-team source-return case. |
 | `ArchitectureCharacteristicTradeoffAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | Substitutability gain and latency loss are named, but guardrail eval rows are incomplete; repair through `C.32.ACS`, `C.32.ACE`, `C.25`, and `C.16`. |
@@ -204,6 +228,9 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `CC-ADA-5` | No coordinate values are averaged or converted into one global score. |
 | `CC-ADA-6` | Weak coordinates name repair pattern refs and repair instructions. |
 | `CC-ADA-7` | Evidence, assurance, gate, measurement, eval, publication, method, work, and pattern-quality claims exit to their governing patterns. |
+| `CC-ADA-8` | A project-local ADA record names both `projectWorkOccurrenceRef` and `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's relation, the suffix, or either field alone asserts no locality. |
+| `CC-ADA-9` | An evaluator-role claim names an exact `U.RoleAssignment`; actual evaluation names the admitted holder System, dated `U.Work`, F.6 attribution, and any Method or operation application, while the result remains a separate C.2.1 episteme. |
+| `CC-ADA-10` | Every evaluation binds one exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, evaluation window, and input projection; the declared-use label and coordinate table do not replace them. |
 
 ### C.32.ADA:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -215,6 +242,8 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `GateByScale` | A value of `4` or `5` is treated as approval or certification. | Keep ADA as evaluation; use `A.21`, `A.10`, `B.3`, or governance patterns for gate, evidence, assurance, and enforcement claims. |
 | `NotTriggeredAsConvenience` | A difficult coordinate is marked not triggered to close the review. | Require a declared-use reason and receiving-pattern boundary; otherwise score it and repair. |
 | `MethodDockingSkipped` | The decision is adequate for architecture discussion but then used to direct developer work. | Re-declare use as developer-work readiness and evaluate method docking, work split, and publication handoff. |
+| `RoleLabelAsEvaluator` | A reviewer-role label or the ADA record is treated as the performer of evaluation. | Name the admitted evaluator System, exact `U.RoleAssignment`, dated evaluation Work and F.6 attribution; keep the result episteme and operation application separate. |
+| `ContextLabelAsEvaluationScope` | A project, domain, or bounded-context label stands in for the evaluation boundary. | Bind the exact `U.ClaimScope`, selected context slices, scheme and plane, evaluation window, and decision-question input projection. |
 
 ### C.32.ADA:9 - Consequences
 
@@ -248,18 +277,18 @@ These rows document transfers from source practice into C.32.ADA. Keep a source 
 
 ### C.32.ADA:12 - Relations
 
-- **Builds on:** `C.32.PAD`, `C.32.ADR`, `C.32.P2S`, `C.32`, `C.32.MLAO`, `C.32.ACS`, `C.32.ACE`, `C.32.CONWAY`, `C.32.FAIL`, `C.30.AD`, `C.30.ASV`, `A.15`, `C.16`, `C.25`, `C.29`, `E.17`, and `E.21`.
+- **Builds on:** `C.32.PAD`, `C.32.ADR`, `C.32.P2S`, `C.32`, `C.32.MLAO`, `C.32.ACS`, `C.32.ACE`, `C.32.CONWAY`, `C.32.FAIL`, `C.30.AD`, `C.30.ASV`, `A.2.1`, `A.2.6`, `A.15`, `A.15.1`, `A.19`, `C.2.1`, `C.16`, `C.25`, `C.29`, `E.17`, and `E.21`; uses A.1.1 only when a selected `BoundedModelUseStructure` changes evaluation interpretation.
 - **Evaluation boundary:** ADA evaluates architecture-decision adequacy for declared use. It does not perform candidate synthesis, comparison, selection, selected-set publication, local choice, evidence support, assurance, gate passage, governance enforcement, or pattern-quality evaluation.
 - **Decision and projection boundary:** Use `C.32.PAD` to repair the decision relation and `C.32.ADR` to repair ADR-like publication projection.
 - **Description and structure boundary:** Use `C.30`, `C.30.AD`, and `C.30.ASV` for architecture claim, description, and view adequacy.
 - **P2S docking:** Use `C.32.P2S` when a weak decision-adequacy row must reopen the connected architecturing flow rather than only repair the decision record.
 - **Method and work boundary:** Use `A.15`, `A.15.1`, `A.15.2`, `A.15.5`, `E.8`, `E.11.PUR`, and `C.24` for method, work, readiness, pattern-use, and agentic tool-use claims.
-- **Characteristic and eval boundary:** Use `C.32.ACS`, `C.32.HCS`, `C.25`, `C.32.ACE`, `C.16`, `C.31`, and `C.31.ASAP` for characteristic rows, Q-Bundles, eval programs, measurement, modularity, and scale preference.
+- **Characteristic and eval boundary:** Use `C.32.ACS`, `C.32.HCS`, `C.25`, `C.32.ACE`, `C.16`, `C.31`, and `C.31.ASAP` for characteristic rows, Q-Bundles, eval-program framing, typed measurement or evaluation results, modularity, and scale preference. ADA may inspect references to those objects as coordinate evidence, but it does not redefine, execute, or own them.
 - **Evidence, assurance, gate, and governance boundary:** Use `A.10`, `B.3`, `A.21`, and local governance patterns when those claims are live.
 
 ### C.32.ADA:13 - Footer marker
 
-C.32.ADA closes when `ArchitectureDecisionAdequacyEvaluation@Project` declares the use and stop condition, cites the evaluated decision relation and optional projection, evaluates every coordinate with an E.21 value label and rationale or grounded not-triggered status, names weakest blocking coordinates, assigns repair patterns and repair instructions, and avoids average-score replacement.
+C.32.ADA closes when `ArchitectureDecisionAdequacyEvaluation@Project` declares the use and stop condition; binds the exact claim scope and selected context slices, reference scheme and plane, evaluation window, and decision-question input projection; cites the evaluated decision relation and optional projection; evaluates every coordinate with an E.21 value label and rationale or grounded not-triggered status; names weakest blocking coordinates, repair patterns, and repair instructions; avoids average-score replacement; and, when actual evaluation is claimed, keeps the evaluator assignment, dated Work, operation application, and result episteme separately identified.
 
 ### C.32.ADA:End
 
