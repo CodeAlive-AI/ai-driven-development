@@ -619,7 +619,13 @@ def main(argv: Optional[list] = None) -> int:
     c.add_argument("--json", action="store_true")
     c.set_defaults(func=cmd_cancel)
 
-    w = sub.add_parser("wait")
+    w = sub.add_parser(
+        "wait",
+        description=(
+            "Wait for terminal state and print the complete final answer. "
+            "While active, only liveness heartbeats are emitted."
+        ),
+    )
     w.add_argument("run_id")
     w.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
     w.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
@@ -627,7 +633,14 @@ def main(argv: Optional[list] = None) -> int:
     w.add_argument("--quiet", action="store_true")
     w.set_defaults(func=cmd_wait)
 
-    wt = sub.add_parser("watch")
+    wt = sub.add_parser(
+        "watch",
+        description=(
+            "Stream lifecycle changes and heartbeats until terminal state. "
+            "This does not expose active tools, files, commands, model text, "
+            "reasoning, or percent complete; use wait to print the final answer."
+        ),
+    )
     wt.add_argument("run_id")
     wt.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
     wt.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")

@@ -50,8 +50,32 @@ scripts/consilium delegate wait "$RUN_ID"
 2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same value to `steer`, `status`, `cancel`, `wait`, `watch`, and `list`.
 3. Steer only with new information or a genuine course correction. Do not repeat the original task. Prefer `--prompt-file` or stdin for long guidance and default to `--mode auto`.
 4. The immediate `accepted` response proves only mailbox persistence. Query `status --json` once and inspect the matching `client_id` fields: `mailbox_status`, `delivery_class`, `backend_ack`, and `error`.
-5. Use `watch` for live meaningful transitions; it excludes per-chunk model text and exits at terminal state. If only the result matters, skip watch instead of polling status.
+5. Use `watch` for supported lifecycle monitoring. It emits attach/status, steer lifecycle, selected turn-boundary/error events, heartbeats, and terminal state. It deliberately does **not** show the current tool, file, command, model text, reasoning, or a semantic percent-complete estimate. A heartbeat proves only that the supervisor still sees a live run.
 6. Use `wait` to block and print the full final answer. `wait` never cancels work; only `cancel` does.
+
+### Observation model
+
+Keep these concepts separate:
+
+| Concept / command | What it proves | What it does not prove |
+|---|---|---|
+| steerable run | Control commands can be accepted through the mailbox | Rich progress visibility or that a steer changed the work |
+| `--detach` | The supervisor outlives the caller and the run can be reattached | More observability than a foreground steerable run |
+| `status --json` | One point-in-time state snapshot; use once after steering to verify delivery fields | Ongoing progress; do not poll it as a monitor |
+| `watch` | Supported lifecycle transitions, liveness heartbeats, and terminal state | Which tool/file is active, substantive progress, or final answer text |
+| `wait` | Liveness heartbeats, terminal exit, and the complete final answer | Detailed lifecycle or substantive progress while the run is active |
+
+For an observed detached run, use `watch RUN_ID`, then `wait RUN_ID` after
+`watch` reaches terminal state. If only completion and the answer matter, call
+`wait` directly. A `watch --timeout` exit of `75` means only that the observer
+stopped; the worker continues and either command can be reattached later.
+
+Do not tail or parse the private registry, `audit.jsonl`, `supervisor.log`, or
+raw/normalized cache artifacts for routine progress. They are implementation
+and diagnostic data, may contain per-chunk noise, and are not a richer public
+progress contract. `watch` already filters lifecycle-bearing audit events. Do
+not infer progress from partially written task artifacts unless the delegated
+task explicitly defines those artifacts as checkpoints.
 
 ## Wait and watch exits
 
