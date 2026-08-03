@@ -1,7 +1,7 @@
 {
   "name": "ai-driven-development",
   "description": "An umbrella collection of 23 skills + 1 hook for AI-driven development: agent self-configuration (MCP / hooks / settings / subagents / skills / plugins / cross-agent repository readiness / safe CLI installation), engineering practices (maintainable complexity, prompt engineering, FPF problem solving, bug-fix protocol, planning gate, repository-history investigation, C# refactoring), research & docs (Semantic Scholar deep research, URL-to-Markdown, ubiquitous-language thesaurus), multi-agent orchestration (consilium: review, repository exploration, delegation), macOS & Windows health & cleanup, and niche utilities (clipboard, Windows QA). Plus a Claude Code Bash safety hook.",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "author": {
     "name": "CodeAlive-AI",
     "email": "contact@codealive.ai"

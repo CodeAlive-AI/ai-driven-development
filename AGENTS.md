@@ -2,6 +2,13 @@
 
 This repo is a single-plugin marketplace and a cross-agent skill collection in one. The same `skills/` directory at the repo root is read by both `npx skills add` (the cross-agent CLI) and Claude Code's plugin install (`/plugin marketplace add` + `/plugin install …@ai-driven-development`). The plugin sees the repo root as itself via `source: "./"` in `marketplace.json` — no nesting, no symlinks, no duplication.
 
+## Git publishing defaults
+
+When the user asks to commit or push without naming a target branch, commit and
+push directly to `main`. If the current branch is `main`, stay on it; do not
+create a feature branch by default. Use another branch only when the user
+explicitly requests one.
+
 ## When to create tags and releases
 
 **Only create git tags and GitHub releases when skill, hook, or plugin files change.**
