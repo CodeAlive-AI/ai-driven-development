@@ -127,6 +127,12 @@ scripts/consilium delegate watch "$RUN_ID"
 scripts/consilium delegate wait "$RUN_ID"
 ```
 
+`watch` is a lifecycle monitor, not a live tool or model-text stream. It reports
+selected run/steer/turn transitions, heartbeats, and terminal state; use `wait`
+to print the final answer. `--detach` changes process lifetime, and steerability
+enables control commands—neither adds tool/file-level visibility. Private
+registry files and `audit.jsonl` are diagnostic internals, not monitoring APIs.
+
 Every normal delegate is steerable, so the caller can add guidance or change direction while the worker is running:
 
 ```bash

@@ -15,7 +15,7 @@ Use this reference when diagnosing or changing observability, normalized events,
 
 | Stream | Contract |
 |---|---|
-| stderr | Live semantic progress while a model is running, controlled by the mode's progress style |
+| stderr | Mode-specific progress for foreground commands; this is not a promise of tool/file visibility for steerable delegation |
 | stdout | Clean final answer only |
 | artifacts | Per-run `raw/*.jsonl`, `normalized/*.jsonl`, `final/*.txt`, and `final.txt` under `CONSILIUM_OUTPUT_DIR` or `CONSILIUM_RUN_DIR` |
 
@@ -96,6 +96,15 @@ Explore never loads review principles, roles, or review schemas. Raw delegate ta
 ## Progress and run identifiers
 
 Review uses `full`, `compact`, or `none`; explore uses content-free `compact`, `verbose`, or `none`. Invocation-specific keys distinguish concurrent uses of the same profile.
+
+Steerable delegation has a narrower public observation contract. `delegate watch`
+filters registry state and lifecycle-bearing audit events into attach,
+status, steer, selected turn-boundary/error, heartbeat, and terminal lines. It
+does not expose model chunks, reasoning, active tools, commands, filenames, or
+percent complete. This remains true when a backend happens to use ACP for its
+steering transport: transport capability is not the same as normalized public
+progress. The private `audit.jsonl`, registry state, and supervisor log are
+diagnostic implementation artifacts, not alternate monitoring APIs.
 
 Run ids are human-readable word pairs with a four-hex uniqueness suffix, for example `run_amber-otter-4f21` and `run-ask-solar-orchid-fd8e`. `scripts/lib/human_id.py` is the single generator for steerable registry and artifact names.
 

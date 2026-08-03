@@ -87,7 +87,8 @@ delegate
   wait blocks until the run is terminal and prints the full final answer.
     Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 --timeout expired
     (run continues — re-run wait), 74 completed without an answer.
-  watch emits one line per meaningful change and exits with the same codes.
+  watch emits lifecycle changes and heartbeats, not tool/file/text progress,
+  and exits with the same codes. Use wait to print the final answer.
   list finds runs again after the run id was lost.
 
 Environment:

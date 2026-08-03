@@ -17,7 +17,7 @@ Use only `scripts/consilium`. Select the mode from the user's intent and load on
 | Maximize review coverage | `review code --depth ultra` | read-only | [references/review.md](references/review.md) |
 | Understand a local or remote repository | `explore` with Grok 4.5 | read-only | [references/explore.md](references/explore.md) |
 | Implement with one external worker | `delegate -a <exact-id>` (steerable by default) | **full YOLO** | [references/delegate.md](references/delegate.md) |
-| Redirect and observe a long-running worker | `delegate`; steer with `--mode auto` | **full YOLO** | [references/delegate.md](references/delegate.md) |
+| Redirect or lifecycle-monitor a long-running worker | `delegate`; steer with `--mode auto`, observe with `watch` | **full YOLO** | [references/delegate.md](references/delegate.md) |
 | Let work outlive the caller or reattach later | `delegate --detach`, then `watch` or `wait` | **full YOLO for worker** | [references/delegate.md](references/delegate.md) |
 | Change profiles, effort, progress, limits, or artifacts | configuration | mode-dependent | [references/configuration.md](references/configuration.md) |
 | Diagnose events, capabilities, policy, prompts, or workflows | runtime contract | mode-dependent | [references/runtime-contracts.md](references/runtime-contracts.md) |
@@ -58,8 +58,16 @@ scripts/consilium delegate -a grok --one-shot "Implement a quick isolated task."
 # Detached delegate and recovery
 RUN_ID=$(scripts/consilium delegate -a grok --detach "Implement SPEC.md.")
 scripts/consilium delegate list --active
+scripts/consilium delegate watch "$RUN_ID"  # lifecycle only; no tool/file/text stream
 scripts/consilium delegate wait "$RUN_ID"
 ```
+
+`steerable` means the run accepts control commands; it does **not** imply rich
+tool-level observability. `watch` is the supported lifecycle monitor. It shows
+run, steer, and turn-boundary transitions plus heartbeats and terminal state,
+but not the current tool, file, model text, or reasoning. Use `wait` to collect
+the final answer. Do not inspect the private registry or `audit.jsonl` for
+routine progress monitoring.
 
 ## Detail map
 

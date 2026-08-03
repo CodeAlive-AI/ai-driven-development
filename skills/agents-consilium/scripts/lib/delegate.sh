@@ -114,7 +114,8 @@ Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 your --timeout expired
 (the run keeps going — re-run wait), 74 completed but no answer text, otherwise
 the agent's own failure code.
 
-watch streams one line per meaningful change and exits with the same codes.
+watch streams lifecycle changes and heartbeats, not tool/file/text progress,
+and exits with the same codes. Use wait to print the final answer.
 list finds runs again when the run id was lost.
 
 Options:
