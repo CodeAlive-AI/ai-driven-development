@@ -27,7 +27,7 @@ sections/
     01-a-0---onboarding-glossary.md    # 248 строк
     02-a-1---holon-ontic-foundation.md # 356 строк
     ...                                # 24 подраздела
-  09-part-c-kernel-extension-specifications/
+  09-part-c---kernel-extension-specifications/
     _index.md
     ...                                # 75 подразделов
   ...                                  # 15 директорий

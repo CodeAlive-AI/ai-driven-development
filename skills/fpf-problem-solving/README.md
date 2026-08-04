@@ -27,7 +27,7 @@ sections/
     01-a-0---onboarding-glossary.md    # 248 lines
     02-a-1---holon-ontic-foundation.md # 356 lines
     ...                                # 24 sub-sections total
-  09-part-c-kernel-extension-specifications/
+  09-part-c---kernel-extension-specifications/
     _index.md
     ...                                # 75 sub-sections
   ...                                  # 15 directories total

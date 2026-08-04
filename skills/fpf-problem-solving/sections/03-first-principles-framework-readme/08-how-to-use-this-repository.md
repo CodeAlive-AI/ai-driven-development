@@ -20,15 +20,17 @@ PROBLEM-SHAPING, IMPROVEMENT, COSTLY-ACTION, TIME,
 CAUSAL-USE, DESCRIPTION-USE, NAMING, WORDING,
 MATHEMATICAL-MODELING, SOTA-PORTFOLIO, DPF-AUTHORING,
 SYSTEM-RECOGNITION, or SYSTEM-DELIMITATION.
-Then inspect the selected direct pattern and give:
-- the current EntityOfConcern and practical question;
-- the pattern and Solution selected under the current condition;
-- the exact kind of first useful result and how its direct pattern would identify it or make its relation obtain;
-- the exact method, plan, dated Work, transformation, evaluation, decision, or other governed use-object that result would answer;
-- the relation, application binding, or supported local claim that would make it the result for that object;
-- what it lets us do next, but only if that continuation is current;
-- the exact missing governor or information when no truthful result can yet be promised;
-- where to stop or return when a stronger claim becomes current.
+Then inspect the selected direct pattern and its `Solution`.
+Answer in this order:
+- one useful result for the current situation, or an honest stop if no truthful result can yet be given;
+- the current project question or action that result answers;
+- any missing fact or rule needed before a truthful answer is possible.
+If those lines are sufficient and no downstream identity, application, publication, or reliance is current, stop there.
+Only when the result's exact identity or obtaining basis, its application or publication, or later reliance changes the claim, also give:
+- the selected pattern and `Solution`, the current EntityOfConcern, and the exact kind of result or basis on which it obtains;
+- the exact Method, plan, dated Work, transformation, evaluation, decision, or other governed use-object it answers;
+- the exact relation or application binding that makes it a result for that object, or the supported local claim when no such relation is asserted.
+Name what it lets us do next only when that continuation is current, and state where to return if a stronger claim needs more information or a governing rule.
 Keep comparison conversational unless a named receiving use relies on an addressable record.
 Do not turn the card into a whole-project plan.
 ```

@@ -327,7 +327,7 @@ In this stub, RSG\_REFINEMENT maps states of a sub-role to states of a super-rol
 * **A.2 / A.2.5 (Roles / RSG).** RSG **checklists** quote **CN‑Spec.acceptance**; enactment gates rely on **admitted** CN‑frame data.
 * **B.1 (Γ‑algebra).** CN‑Spec’s `Γ_fold` instantiates Γ\_ctx/Γ\_time/WLNK/MONO choices explicitly.
 * **B.3 (Assurance).** Bridge CL enters the **R** term; WLNK protects safety roll‑ups.
-* **C.6 LOG‑CAL and C.16/A.19 characterization stack.** Units, scales, and measurement templates come from C.16, A.17, A.18, and A.19; proofs about folds live in LOG‑CAL.
+* **Current proof/inference support and the C.16/A.19 characterization stack.** Units, scales, and measurement templates come from C.16, A.17, A.18, and A.19. Claims about folds currently use C.2.1 for claim/episteme identity, A.10 for evidence and provenance, B.3 for assurance, and C.23 when method-family evidence or maturity is at issue. Planned C.6 LOG‑CAL may later consolidate proof-use semantics, but supplies no current governing force.
 
 ### A.19.CN:13 - Minimal CN‑Spec template (copy/paste, informational)
 

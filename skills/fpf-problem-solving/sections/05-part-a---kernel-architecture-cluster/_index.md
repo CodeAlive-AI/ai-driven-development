@@ -1,4 +1,4 @@
-# **Part A - Kernel Architecture Cluster**
+# Part A - Kernel Architecture Cluster
 
 
 ## Contents
@@ -8,14 +8,14 @@
 - [A.1.1 - Bounded Model-Use Structure and DDD Bounded-Context Recovery](03-a-1-1---bounded-model-use-structure-and-ddd-bounded-context.md) (436 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](04-a-1-scr---finding-the-acting-or-changed-system.md) (256 lines) — Type: Part A practitioner application pattern
 - [A.1.STM - Using the System-Thinking Long Mantra](05-a-1-stm---using-the-system-thinking-long-mantra.md) (170 lines) — Type: Part A practitioner application pattern
-- [A.2 - Role Taxonomy](06-a-2---role-taxonomy.md) (337 lines) — Type: Architectural (A)
+- [A.2 - Role Taxonomy](06-a-2---role-taxonomy.md) (294 lines) — Type: Architectural (A)
 - [A.2.1 - U.RoleAssignment - System Role Assignment](07-a-2-1---u-roleassignment---system-role-assignment.md) (316 lines) — Type: Definitional (D)
-- [A.2.2 - U.Capability - System Ability Envelope and Measures](08-a-2-2---u-capability---system-ability-envelope-and-measures.md) (352 lines) — U.Capability is the FPF object for "can do within bounds".
-- [A.2.3 - U.PromiseContent (Promise Content)](09-a-2-3---u-promisecontent.md) (480 lines) — Type: Definitional promise-content episteme pattern
+- [A.2.2 - U.Capability - System Ability Envelope and Measures](08-a-2-2---u-capability---system-ability-envelope-and-measures.md) (357 lines) — U.Capability is the FPF object for "can do within bounds".
+- [A.2.3 - U.PromiseContent (Promise Content)](09-a-2-3---u-promisecontent.md) (481 lines) — Type: Definitional promise-content episteme pattern
 - [A.2.4 - Episteme Evidence-Use and Status-Use Relations](10-a-2-4---episteme-evidence-use-and-status-use-relations.md) (283 lines) — Type: Boundary and relation-use pattern
-- [A.2.5 - RoleStateRelation@BoundedContext - Role State Space and Enactable-State Admission](11-a-2-5---rolestaterelation-boundedcontext---role-state-space.md) (334 lines) — Type: Definitional (D)
+- [A.2.5 - RoleStateRelation - Windowed Role-State Recognition and Work Admission](11-a-2-5---rolestaterelation---windowed-role-state-recognition.md) (346 lines) — Type: Definitional (D)
 - [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes](12-a-2-6---unified-scope-mechanism-context-slices-scopes.md) (939 lines) — U.ContextSlice and U.Scope are the durable USM values for scope work. U.ClaimScope, U.WorkScope, and U.PublicationScope are C.3-governed scope specializations under U.Scope, not independent root...
-- [A.2.7 - RoleRelationStructure@BoundedContext - Context-Local Role Relations and Representation-Lens Boundary](13-a-2-7---rolerelationstructure-boundedcontext---context-local.md) (372 lines) — Type: Ontic relation-structure pattern
+- [A.2.7 - Role Relation Structure - Substitution, Incompatibility, Qualification, and Joint Admission](13-a-2-7---role-relation-structure---substitution-incompatibili.md) (449 lines) — Type: Architectural (A)
 - [A.2.8 - U.Commitment (Deontic Commitment Object)](14-a-2-8---u-commitment.md) (344 lines) — Type: Definitional ontic pattern
 - [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](15-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (295 lines) — Type: Definitional ontic support pattern
 - [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](16-a-2-9-u-speechact.md) (373 lines) — Type: Definitional work-ontic pattern

@@ -1,4 +1,4 @@
-# **Part D - Multi-scale Ethics and Conflict Optimization**
+# Part D - Multi-scale Ethics and Conflict Optimization
 
 
 ## Contents

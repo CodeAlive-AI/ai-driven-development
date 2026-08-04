@@ -14,7 +14,7 @@
 - [A.12 - Acting-Side Externalization and Reflexive Split](09-a-12---acting-side-externalization-and-reflexive-split.md) (294 lines) — Type: Part A architectural ontology pattern
 - [A.13 - The Agential Role & Agency Spectrum](10-a-13---the-agential-role-agency-spectrum.md) (151 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
 - [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](11-a-14---advanced-mereology-components-portions-aspects-phases.md) (292 lines) — Type: Kernel mereology and part-whole relation discipline pattern
-- [A.15 - Role–Method–Work Alignment](12-a-15---role-method-work-alignment.md) (464 lines) — Type: Architectural (A)
+- [A.15 - Role–Method–Work Alignment](12-a-15---role-method-work-alignment.md) (467 lines) — Type: Architectural (A)
 - [A.15.1 - U.Work](13-a-15-1---u-work.md) (545 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan](14-a-15-2---u-workplan.md) (300 lines) — Type: Architectural (A)
 - [A.15.3 - SlotFillingsPlanItem](15-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
@@ -44,4 +44,4 @@
 - [A.20 - Flow Constraint Validity — Eulerian](39-a-20---flow-constraint-validity-eulerian.md) (363 lines) — Type: Architectural (A)
 - [A.21 — GateProfilization: OperationalGate(profile) (GateFit core)](40-a-21-gateprofilization-operationalgate.md) (425 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](41-a-22---structure-and-structural-views.md) (461 lines) — Type: Architectural pattern
-- [A.22.CGUS - Constraint-Governed Unfolding Structure](42-a-22-cgus---constraint-governed-unfolding-structure.md) (457 lines) — Type: A.22 specialization of U.Structure
+- [A.22.CGUS - Constraint-Governed Unfolding Structure](42-a-22-cgus---constraint-governed-unfolding-structure.md) (464 lines) — Type: A.22 specialization of U.Structure
