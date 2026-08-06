@@ -7,14 +7,26 @@ description: "Run external coding agents (Codex, Claude Code, OpenCode, native G
 
 Use only `scripts/consilium`. Select the mode from the user's intent and load only the linked reference needed for that mode.
 
+## Recommended review defaults
+
+Use these unless the user asks for a different tradeoff:
+
+- Independent architecture, design, debugging, or planning opinions: `review ask --progress compact` with all enabled profiles.
+- Routine file or diff review: `review code --progress compact` (`basic`: security + correctness).
+- High-risk or release-blocking review: `review code --depth super --progress compact`.
+- Use `specialists` only for a broader mid-cost review without an LLM judge. Use `ultra` only when the user explicitly prioritizes maximum coverage over cost and latency.
+
+Choose one review depth; do not run `basic`, `specialists`, `super`, and `ultra` sequentially. Do not call `--list-agents` routinely: enabled profiles are already the default pool for `review ask`, and code-review pass count is fixed by depth.
+
 ## Decision map by intent
 
-| User intent | Mode / reasonable default | Access | Read first |
+| User intent | Recommended default | Access | Read first |
 |---|---|---|---|
-| Independent architecture, design, debugging, or planning opinions | `review ask` with enabled profiles | read-only | [references/review.md](references/review.md) |
-| Review a file or diff | `review code` (`basic`: security + correctness) | read-only | [references/review.md](references/review.md) |
-| Review high-risk code | `review code --depth specialists` or `super` | read-only | [references/review.md](references/review.md) |
-| Maximize review coverage | `review code --depth ultra` | read-only | [references/review.md](references/review.md) |
+| Independent architecture, design, debugging, or planning opinions | `review ask --progress compact` with enabled profiles | read-only | [references/review.md](references/review.md) |
+| Routine file or diff review | `review code --progress compact` (`basic`) | read-only | [references/review.md](references/review.md) |
+| Broader mid-cost review without a judge | `review code --depth specialists --progress compact` | read-only | [references/review.md](references/review.md) |
+| High-risk or release-blocking review | `review code --depth super --progress compact` | read-only | [references/review.md](references/review.md) |
+| Maximum coverage explicitly requested | `review code --depth ultra --progress compact` | read-only | [references/review.md](references/review.md) |
 | Understand a local or remote repository | `explore` with Grok 4.5 | read-only | [references/explore.md](references/explore.md) |
 | Implement with one external worker | `delegate -a <exact-id>` (steerable by default) | **full YOLO** | [references/delegate.md](references/delegate.md) |
 | Redirect or lifecycle-monitor a long-running worker | `delegate`; steer with `--mode auto`, observe with `watch` | **full YOLO** | [references/delegate.md](references/delegate.md) |
@@ -28,18 +40,22 @@ Use only `scripts/consilium`. Select the mode from the user's intent and load on
 ## Default launch commands
 
 ```bash
-scripts/consilium --list-agents
+# Independent opinions: all enabled profiles
+scripts/consilium review ask --progress compact "Should we use Postgres or SQLite?"
 
-# Independent opinions
-scripts/consilium review ask "Should we use Postgres or SQLite?"
-scripts/consilium review ask -a codex,grok,claude-fable --prompt-file prompt.md
+# Explicit profile selection only when requested
+scripts/consilium review ask --progress compact -a codex,grok,claude-fable --prompt-file prompt.md
 
-# Code review
-scripts/consilium review code path/to/file.py
-git diff HEAD | scripts/consilium review code --diff
-scripts/consilium review code --depth specialists path/to/file.py
-scripts/consilium review code --depth super path/to/file.py
-scripts/consilium review code --depth ultra path/to/file.py
+# Routine code review
+scripts/consilium review code --progress compact path/to/file.py
+git diff HEAD | scripts/consilium review code --progress compact --diff
+
+# High-risk or release-blocking review
+scripts/consilium review code --depth super --progress compact path/to/file.py
+
+# Explicit tradeoffs: mid-cost without judge; maximum coverage
+scripts/consilium review code --depth specialists --progress compact path/to/file.py
+scripts/consilium review code --depth ultra --progress compact path/to/file.py
 
 # Repository exploration
 scripts/consilium explore "How is authentication wired up?"

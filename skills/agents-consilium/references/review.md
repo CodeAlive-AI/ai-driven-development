@@ -24,12 +24,14 @@ scripts/consilium review code --depth super path/to/file.cs
 scripts/consilium review code --depth ultra --dry-run path/to/file.cs
 ```
 
-| Depth | Work performed |
-|---|---|
-| `basic` (default) | Security + correctness; fixed two passes with quoted-code validation |
-| `specialists` | Adds performance, architecture, and consistency |
-| `super` | Multi-stage discovery, deterministic deduplication, and an LLM judge |
-| `ultra` | Maximum multi-stage discovery and an LLM judge |
+| Depth | Use when | Work performed |
+|---|---|---|
+| `basic` (default) | Routine file or diff review | Security + correctness; fixed two passes with quoted-code validation |
+| `specialists` | Broader mid-cost coverage is wanted without a judge | Adds performance, architecture, and consistency |
+| `super` | High-risk or release-blocking review; recommended high-stakes default | Multi-stage discovery, deterministic deduplication, and an LLM judge |
+| `ultra` | The user explicitly prioritizes maximum coverage over cost and latency | Maximum multi-stage discovery and an LLM judge |
+
+Choose one depth for a review. Do not run every depth sequentially.
 
 Do not invoke Grok's `/review` slash command. Consilium owns review semantics.
 
@@ -55,6 +57,10 @@ In fan-out, an environment override affects every selected profile on that backe
 ## Progress and outputs
 
 `review ask` and every code-review depth accept `--progress`; `CONSILIUM_PROGRESS` is the environment fallback.
+
+The CLI default remains `full`. Agent callers should normally use `compact`,
+as recommended in `SKILL.md`, unless live content previews are specifically
+useful.
 
 | Style | stderr |
 |---|---|

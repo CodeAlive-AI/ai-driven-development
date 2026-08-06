@@ -10,9 +10,10 @@
 # Two modes are supported:
 #   basic        (default) — 2 specialists: security, correctness.
 #   specialists  (opt-in)  — 5 specialists: security, correctness, performance,
-#                            architecture, consistency. Modeled on CodeAlive's
-#                            code_review crew (5 parallel specialists, no
-#                            synthesizer). Higher quality, ~2.5× cost.
+#                            architecture, consistency. Broader mid-cost coverage
+#                            with no synthesizer or LLM judge. For high-risk or
+#                            release-blocking work, prefer --depth super through
+#                            `consilium review code`.
 #
 # Usage:
 #   code-review.sh <file>                  # review a single file on disk (basic mode: 2 specialists)
@@ -37,9 +38,11 @@
 #                        "specialists" to opt in to a 5-pass review modeled on
 #                        CodeAlive's review crew (security + correctness +
 #                        performance + architecture + consistency). Specialists
-#                        mode is ~2.5× the LLM cost — use it for high-stakes
-#                        reviews, not every diff. Default is unchanged so
-#                        existing callers are not affected.
+#                        mode is ~2.5× the basic cost and has no judge. Use it
+#                        for broader mid-cost coverage; prefer --depth super via
+#                        `consilium review code` for high-risk or release-blocking
+#                        reviews. Default is unchanged so existing callers are
+#                        not affected.
 #   -a, --agents <ID|GLOB>
 #                        Override the active agent set with this id or glob.
 #                        Repeatable; comma-separated values also accepted.
