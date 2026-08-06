@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 23 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 24 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -29,7 +29,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 23 skills
+# Install all 24 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -65,7 +65,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (7)
+### Engineering practices (8)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
@@ -78,6 +78,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [plan-mode](skills/plan-mode/) | Planning gate for any project change. Investigate context → analyse the task → surface ambiguities, contradictions, risks, and blockers → ask focused questions → produce an evidence-based, step-by-step plan → implement **only after explicit approval**, then validate. Compact always-on `SKILL.md` + full `PROTOCOL.md` |
 | [investigating-repository-history](skills/investigating-repository-history/) | Reconstruct historical intent before risky edits. Local `git blame`/`log` + GitHub PR/review evidence (via `gh`, never direct API), with squash/rebase/cherry-pick/rename/revert anomaly handling, decision-atom extraction, and confidence-scored output — produces a cited history note instead of guessing |
 | [refactoring-csharp](skills/refactoring-csharp/) | One-shot Roslyn contract for renaming C# symbols from `file + 1-based line + oldName`, with dry-run preview, safe file moves for supported named types, and explicit error codes |
+| [repo-activity-summary](skills/repo-activity-summary/) | Summarize what a repository has *been doing* from local `git log` — technologies, work types, churn hotspots, contributor patterns, velocity, and health signals. Stdlib-only Python, no network or API keys. Benchmarked at **−42% cost / −37% wall clock** versus the same agent answering the same question unaided, at equal factual accuracy; flags its own low-confidence classification instead of asserting it |
 
 ### Research & docs (3)
 
@@ -145,6 +146,7 @@ ai-driven-development/
 │   ├── hooks-management/
 │   ├── installing-cli-tools/
 │   ├── investigating-repository-history/
+│   ├── repo-activity-summary/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/
 │   ├── mcp-management/
