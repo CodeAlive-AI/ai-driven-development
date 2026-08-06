@@ -9,7 +9,7 @@ FPF is a thinking-oriented architecture. It asks:
 - what project entity is under concern in this project moment;
 - what claim, relation, decision, evidence path, work object, or publication use is being made;
 - which distinction needs to remain visible for an action to be responsible;
-- what pattern can govern the next use or action;
+- what action- or judgement-guiding content is needed for the next use, and, when actual method identity matters, what exact Method and pattern-description rule content are current;
 - what would make the result reviewable and reopenable.
 
 This is the difference between a catalogue and an instrument. A catalogue can tell you that a method description and performed work are different FPF kinds. FPF also asks what happens in the project when those two are confused, what written form should separate them, what evidence or decision remains blocked, and what pattern should be used next.

@@ -52,17 +52,17 @@ StructuralInformationAdequacyNote@Context:
   admissibleUse:
   nonAdmissibleUse:
   missingStructureReturnCondition:
-  receivingGoverningPatternRef:
+  nextClaimOrRuleRef?:
   receivingClaimKind:
 ```
 
-Adoption test: after using C.33, another practitioner can tell what selected structure is captured, what structure is expected but not captured, what is lost or hidden, what use is admissible, which non-admissible uses are blocked, and which governing pattern receives the next claim.
+Adoption test: after using C.33, another practitioner can tell what selected structure is captured, what structure is expected but not captured, what is lost or hidden, what use is admissible, which non-admissible uses are blocked, and which practical claim, question, rule, or test comes next. Record a stable reference only when that next use must travel independently.
 
-What C.33 buys in practice: the practitioner can use a partial carrier without pretending it is complete. The pattern turns "this diagram, ADR, graph, report, or observation is useful" into a reviewable statement about captured structure, missing structure, missing-structure return, and receiving governing pattern.
+What C.33 buys in practice: the practitioner can use a partial carrier without pretending it is complete. The pattern turns "this diagram, ADR, graph, report, or observation is useful" into a reviewable statement about captured structure, missing structure, missing-structure return, and the next claim or test that needs that structure.
 
 Ordinary working move: underline the carrier sentence, diagram, graph edge set, or observation being relied on; write what selected structure it captures; write what it leaves out; then name the use that remains admissible.
 
-Not this pattern when the current question asks whether the architecture, record, lens, reading, decision, authorization, or publication is admissible. Use the governing pattern for that question first. Return to C.33 only when that governing pattern relies on a carrier whose captured structural content and missing structural content must be made explicit.
+Not this pattern when the current question asks whether the architecture, record, lens, reading, decision, authorization, or publication is admissible. Use the pattern that defines or tests admissibility for that object and question first. Use C.33 only when that test relies on a carrier whose captured structural content and missing structural content must be made explicit.
 
 ### C.33:2 - Problem
 
@@ -75,7 +75,7 @@ Without C.33:
 - a diagram, model, generated graph, ADR, or benchmark trace starts acting as architecture by presentation;
 - structural information is confused with a score, entropy value, epiplexity estimate, dashboard reading, or eval result;
 - hidden structure becomes invisible exactly when a later candidate, decision, or work method depends on it;
-- source labels such as layer, router, expert, cache, memory, block, gate, SSM, pruning, distillation, or architecture search are copied as FPF ontology instead of being recovered through current FPF governing patterns;
+- source labels such as layer, router, expert, cache, memory, block, gate, SSM, pruning, distillation, or architecture search are copied as FPF ontology instead of being recovered through current FPF rules that define the relevant structures and relations;
 - partial-observation outputs from code agents or AI tools are treated as internal belief proof, safe-change authority, evidence sufficiency, or release confidence.
 
 ### C.33:3 - Forces
@@ -86,7 +86,7 @@ Without C.33:
 | Capture vs loss | Architecture use often depends as much on what was lost or hidden as on what was captured. |
 | Cheap first note vs full record | Many cases need one note before a full architecture description, view correspondence record, measurement, or eval result. |
 | Observer boundary | Code agents, learned representations, probes, and epiplexity-like lenses expose structure under observation and budget limits. |
-| Source label pressure | Domain labels are useful recognition cues but must be recovered into selected structure, relation, bearer, characteristic, and receiving governing pattern. |
+| Source label pressure | Domain labels are useful recognition cues but must be recovered into selected structure, relation, bearer, characteristic, and the next claim plus the rule or test it needs. |
 | Evolution | The captured structure can decay when source publication edition, realized structure, environment, bearer, or holon level changes. |
 
 ### C.33:4 - Solution
@@ -98,25 +98,25 @@ Read the note as a small missing-structure return tool, not as a new documentati
 Work in this order:
 
 1. Name the architecture claim or pre-claim described holon and bounded context.
-2. Name the selected structure refs or structure kinds being relied on. If they are not recoverable, stop and return to `C.30`, `C.30.ASV`, `A.22`, or `C.32.P2S`.
+2. Name the selected structure refs or structure kinds being relied on. If they are not recoverable, stop and use `C.30`, `C.30.ASV`, `A.22`, or `C.32.P2S`.
 3. Name the carrier, selected source structure, description, view, narrative rendering, decision record, eval report, method handoff, generated relation graph, or realized observation being used.
 4. State the captured selected structure in relation terms: relations, constraints, invariants, allocations, compositions, variation classes, operations, dynamics refs, or preserved organization.
 5. State the expected but uncaptured structure when the next use needs it: hidden placement, data custody, runtime dependency, transformation-flow relation, source label semantics, confidence class, unexplored region, or missing bearer.
 6. State lost or hidden structure. If no loss is claimed, justify why the carrier is adequate for the declared use rather than for all uses.
 7. Add observer or budget boundary when the carrier comes from a bounded observer, learned representation, probe, relation graph, or epiplexity-style lens.
 8. Add source label recovery when source terms come from a domain practice such as neural-network architectures, software modules, built assets, organizational roles, methods, or work.
-9. Route mathematical-lens, measurement, eval, decision, evidence, assurance, gate, release, method, work, and publication claims to their direct governing patterns.
-10. Stop when admissible use, non-admissible use, missing-structure return condition, receiving governing pattern, and receiving claim kind are clear.
+9. Use the pattern that defines or tests each mathematical-lens, measurement, eval, decision, evidence, assurance, gate, release, method, work, or publication claim when one of those claims is current.
+10. Stop when admissible use, non-admissible use, missing-structure return condition, the next claim or question, and its required rule or test are clear.
 
-CGUS-aware neighbor use: when a carrier, route card, narrative rendering, architecture description, framework publication, or generated relation graph is relied on because it preserves a constraint-governed unfolding structure, C.33 records only what that carrier captures and loses. The selected structure remains `ConstraintGovernedUnfoldingStructure@Context` or a local `U.Structure` block governed by `A.22.CGUS`, `E.18.3`, `C.32.P2S`, `A.6.3.NAR`, `E.23`, or another direct pattern.
+CGUS-aware neighbor use: when a carrier, route card, narrative rendering, architecture description, framework publication, or generated relation graph is relied on because it preserves a constraint-governed unfolding structure, C.33 records only what that carrier captures and loses. The selected structure remains `ConstraintGovernedUnfoldingStructure@Context` or a local `U.Structure` block governed by `A.22.CGUS`, `E.18.3`, `C.32.P2S`, `E.23`, or another direct structure pattern. When the carrier is a narrative, `A.6.3.NAR` governs only its selected-source carry-through, ordering and connective account, loss, reader use, and source return; it neither selects nor admits the structure.
 
-A `DemonstrativeUnfoldingSlice@Context` may be the `U.Episteme` slice or presentation whose captured structure and lost structure C.33 records; it is not the selected `U.Structure` by itself. C.33 does not admit the CGUS; it tells the receiving pattern what the carrier actually preserved and where missing selected structure must be inspected or repaired.
+A `DemonstrativeUnfoldingSlice@Context` may be the `U.Episteme` slice or presentation whose captured structure and lost structure C.33 records; it is not the selected `U.Structure` by itself. C.33 does not admit the CGUS; it tells the pattern for the next question what the carrier actually preserved and where missing selected structure must be inspected or repaired.
 
 ### C.33:5 - Archetypal Grounding
 
-Tell: C.33 is the pattern for using a partial carrier that captures or describes selected structure without letting that carrier stand for the whole architecture. The carrier may be a diagram, decision record, query result, eval report, code-agent map, neural-network architecture review, method handoff, or observation of the realized holon. The grounding question is not whether the carrier is impressive. The grounding question is what selected structure it captures, what it leaves out, and which governing pattern receives the next claim.
+Tell: C.33 is the pattern for using a partial carrier that captures or describes selected structure without letting that carrier stand for the whole architecture. The carrier may be a diagram, decision record, query result, eval report, code-agent map, neural-network architecture review, method handoff, or observation of the realized holon. The grounding question is not whether the carrier is impressive. The grounding question is what selected structure it captures, what it leaves out, and which practical claim or question must be addressed next under which concrete rule or test. Add exact C.2.1 identity only if that claim must travel independently.
 
-Show - system case. An ADR-like record says "use event-carried integration with bounded exception." C.33 records that the carrier captures the selected integration style, exception boundary, and method expectation. It does not capture lower-level placement constraints, schema evolution burden, runtime data custody, or deployment topology. The admissible use is decision memory and method handoff; the non-admissible use is proof that the realized modules have the intended architecture. Missing-structure return goes to `C.32.PAD`, `C.32.ADR`, `C.30.AD`, and later `C.32` synthesis if actual structure diverges.
+Show - system case. An ADR-like record says "use event-carried integration with bounded exception." C.33 records that the carrier captures the selected integration style, exception boundary, and method expectation. It does not capture lower-level placement constraints, schema evolution burden, runtime data custody, or deployment topology. The admissible use is decision memory and method handoff; the non-admissible use is proof that the realized modules have the intended architecture. A missing-structure condition reopens the C.32.PAD decision, C.32.ADR projection, C.30.AD description, and, if actual structure diverges, the C.32 synthesis question.
 
 Show - episteme case. A code-agent relation graph finds imports, call edges, inferred module roles, and candidate invariants. C.33 records relation observation class `observed | inferred | unknownRegionPresent`, typed relation semantics, confidence class, active-passive gap when present, unexplored regions, and lost runtime or deployment structure. The graph can seed `C.34` preservation checks or `C.35` discovery, but it is not internal belief proof, release evidence, or full architecture adequacy.
 
@@ -132,7 +132,7 @@ The small working form is enough when it blocks a wrong next use. It is not enou
 | --- | --- |
 | Carrier completeness bias | Require captured selected structure, expected but uncaptured structure, lost or hidden structure, admissible use, and non-admissible use before relying on the carrier. |
 | Metric bias | Treat entropy, epiplexity estimate, benchmark score, dashboard value, dependency F1, and invariant F1 as readings only when `C.16` or `C.32.ACE` has opened that claim. |
-| Source-label ontology bias | Keep source labels such as layer, router, cache, expert, pruning, distillation, block, DSM cluster, and architecture-search result as labels until `C.30.STRAT`, `C.30.TFS-REL`, `A.6.M`, `C.31`, `C.32`, or another governing pattern recovers the selected structure and relation. |
+| Source-label ontology bias | Keep source labels such as layer, router, cache, expert, pruning, distillation, block, DSM cluster, and architecture-search result as labels until `C.30.STRAT`, `C.30.TFS-REL`, `A.6.M`, `C.31`, `C.32`, or another pattern defines the selected structure and relation. |
 | Observer-belief bias | Record observation class, confidence, active-passive gap, budget boundary, and unexplored regions for agent-produced or probe-produced carriers. Do not infer internal belief, safe change, or assurance from a map. |
 | Decision-memory bias | Treat ADR-like records as decision descriptions and method expectations. Use `C.32.PAD` or `C.32.ADR` for decision and projection claims, and use C.33 only for what structural content the record carries or loses. |
 
@@ -144,40 +144,40 @@ The small working form is enough when it blocks a wrong next use. It is not enou
 | `CC-C33-2` | Captured selected structure is stated as relations, constraints, invariants, allocations, compositions, variation classes, operations, dynamics refs, or preserved organization. |
 | `CC-C33-3` | Expected but uncaptured structure and lost or hidden structure are stated when the next use depends on them. |
 | `CC-C33-4` | Observer or budget boundary is present for agent-produced, learned, probed, epiplexity-style, or maps derived from a named source publication, source model, or source codebase. |
-| `CC-C33-5` | Mathematical-lens, measurement, eval, decision, evidence, assurance, gate, release, method, work, and publication claims are routed to their governing patterns. |
-| `CC-C33-6` | Admissible use, non-admissible use, missing-structure return condition, receiving governing pattern, and receiving claim kind are named. |
+| `CC-C33-5` | Each current mathematical-lens, measurement, eval, decision, evidence, assurance, gate, release, method, work, or publication claim uses the pattern that defines or tests it. |
+| `CC-C33-6` | Admissible use, non-admissible use, missing-structure return condition, the next claim or question, and its required rule or test are named. |
 
 ### C.33:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Repair move |
 | --- | --- | --- |
-| Diagram as complete architecture | The diagram may show modules or links while hiding placement, runtime dependency, control authority, evidence structure, bearer constraints, or data custody. | Write the C.33 note from the diagram: captured structure, missing structure, lost relation semantics, admissible use, and missing-structure return condition to the receiving governing pattern. |
-| ADR as realized structure proof | A decision record can carry decision memory and method expectation without showing what was built or how it behaves. | Use `C.32.PAD` or `C.32.ADR` for the decision claim; use C.33 only for the structural content and loss carried by the record; send realization claims to the architecture or evidence governing pattern. |
+| Diagram as complete architecture | The diagram may show modules or links while hiding placement, runtime dependency, control authority, evidence structure, bearer constraints, or data custody. | Write the C.33 note from the diagram: captured structure, missing structure, lost relation semantics, admissible use, and the condition that reopens the next dependent claim or question. Add its exact predicate and assertion identity only when that identity must travel independently. |
+| ADR as realized structure proof | A decision record can carry decision memory and method expectation without showing what was built or how it behaves. | Use `C.32.PAD` or `C.32.ADR` for the decision claim; use C.33 only for the structural content and loss carried by the record; state realization claims using the exact architecture or evidence predicate and cite the pattern that defines or tests it when that reference is needed. |
 | Narrative as complete architecture | A narrative can preserve a route through selected structures while hiding placement, alternatives, measurements, interfaces, or realized structure. | Use `A.6.3.NAR` for the structure-to-narrative rendering relation and C.33 for captured and lost selected structure before architecture reuse. |
-| Code-agent graph as safe-change authority | A graph can expose observed and inferred relations while leaving unknown regions and hidden invariants. | Add observation class, confidence, unexplored regions, and non-admissible use. Route safe-change, assurance, gate, and release claims to their governing patterns. |
-| Metric as structural adequacy | A score, entropy value, epiplexity estimate, benchmark trace, or dependency F1 is a reading only under the right measurement or eval governing pattern. | Keep it as lens or reading context until `C.16`, `C.25`, or `C.32.ACE` defines what is measured and how it may be used. |
-| Neural label import | Terms such as attention, SSM, router, expert, cache, pruning, distillation, and NAS can hide several structure kinds and characteristics. | Recover the selected structure kind, relation, bearer, affected characteristic, preserved structure, lost structure, and receiving governing pattern before using the label in architecture work. |
+| Code-agent graph as safe-change authority | A graph can expose observed and inferred relations while leaving unknown regions and hidden invariants. | Add observation class, confidence, unexplored regions, and non-admissible use. Use the patterns that define the safe-change, assurance, gate, and release checks when those claims are current. |
+| Metric as structural adequacy | A score, entropy value, epiplexity estimate, benchmark trace, or dependency F1 is a reading only under the applicable measurement or eval rule. | Keep it as lens or reading context until `C.16`, `C.25`, or `C.32.ACE` defines what is measured and how it may be used. |
+| Neural label import | Terms such as attention, SSM, router, expert, cache, pruning, distillation, and NAS can hide several structure kinds and characteristics. | Recover the selected structure kind, relation, bearer, affected characteristic, preserved structure, lost structure, and the next architecture claim plus the rule or test it needs before using the label in architecture work. |
 
 ### C.33:9 - Consequences
 
 Positive consequences:
 
 - A partial carrier becomes usable without becoming authoritative. The architect can take exactly the structure that is recoverable and stop before overreading the carrier.
-- Missing-structure return becomes local and reviewable: the note says which missing structure must return to C.30, C.30.ASV, C.32.P2S, C.32, PAD, ADR, C.29, C.16, ACE, evidence, assurance, or work governing patterns.
+- Missing-structure return becomes local and reviewable: the note says which missing structure requires C.30, C.30.ASV, C.32.P2S, C.32, PAD, ADR, C.29, C.16, ACE, evidence, assurance, or work checks before the next use.
 - AI-produced maps and maps derived from named source publications, source models, or source codebases become safer architecture inputs because observation class, confidence, unexplored regions, and budget boundary are visible.
 - Neural-network and code-architecture source labels become usable without importing those labels as FPF ontology.
 
 Costs and trade-offs:
 
 - C.33 adds one small note before some architecture work. The cost is justified only when a next use might overread a carrier.
-- The note can be too weak for decision, evidence, assurance, eval, release, or realized-structure claims. In those cases C.33 should stop early and route to the direct governing pattern.
+- The note can be too weak for decision, evidence, assurance, eval, release, or realized-structure claims. In those cases C.33 should stop early and use the pattern that defines or tests the current claim.
 - A team may discover that a familiar diagram or ADR is insufficient for the intended use. That is not a failure of C.33; it is the missing-structure return condition doing its job.
 
 ### C.33:10 - Rationale
 
 Architecture work often starts from carriers that are neither useless nor complete. A mature pattern must preserve both facts. If C.33 only says "do not confuse the carrier with architecture," it becomes a negative catalogue. If it treats every carrier as an architecture description or measurement, it duplicates C.30, C.16, and C.32.ACE. The chosen solution is a small adequacy note whose center is captured selected structure, lost structure, admissible use, and missing-structure return.
 
-This split keeps P2S as the whole architecturing spine and C.32 as candidate synthesis governing pattern. C.33 does not synthesize architecture and does not decide the project architecture. It gives the receiving governing pattern a typed account of what a carrier contributes and what must still be recovered.
+This split keeps P2S as the whole architecturing spine and C.32 as the pattern that describes candidate synthesis. C.33 does not synthesize architecture and does not decide the project architecture. It gives the practitioner and the next check a typed account of what a carrier contributes and what must still be recovered.
 
 The source choices explain the fields. Epiplexity motivates observer-bounded structural information but not a universal architecture metric. Multi-relational structural entropy motivates relation-kind awareness but not adequacy by number. Sapunov and ToCS motivate partial observability, active-passive gap, invariant fields, confidence, and unexplored regions. GonzoML motivates richer neural architecture operation language without making those labels FPF ontology.
 
@@ -186,11 +186,11 @@ The source choices explain the fields. Epiplexity motivates observer-bounded str
 | Source or practice line | Adopt, adapt, or reject | Concrete C.33 locus changed | Boundary and currentness |
 | --- | --- | --- | --- |
 | Finzi et al., `From Entropy to Epiplexity`, arXiv:2601.03220 | Adapt observer-bounded structural information. | Adds `observerOrBudgetBoundary?`, strengthens hidden-structure and compression guidance, and supports the warning that recoverable structure is observer-bound. | Epiplexity is not an architecture characteristic, proof, selector, evidence, assurance, decision, or realized-structure observation by itself. Reopen the note when observer budget, source publication edition, or downstream use changes. |
-| Cao et al., `Multi-Relational Structural Entropy`, arXiv:2405.07096 | Adapt relation heterogeneity and graph structural-information pressure. | Strengthens `typedRelationSemantics?`, relation-kind recovery, and measurement or eval routing. | A graph entropy value routes to `C.16` and `C.32.ACE` when measured or evaluated; it does not establish architecture adequacy. |
-| Sapunov, `Theory of Code Space`, and ToCS code-agent architecture-map practice | Adopt the partial-observability and belief-probing lessons; adapt them beyond software code agents. | Adds `relationObservationClass?`, confidence class, active-passive gap, unexplored regions, invariant return to the named architecture source map or governing pattern, and non-overread of JSON probes and benchmark scores. | A probe, JSON output, dependency F1, invariant F1, active-passive gap, or benchmark score is not architecture adequacy, evidence sufficiency, safe-change authority, assurance, gate passage, or release authority. Reopen when the probed codebase, architecture source map, or observation budget changes. |
-| GonzoML neural-network architecture intake | Adapt practitioner operation labels into FPF recovery steps. | Adds neural source-label recovery for block substitution, dataflow change, routing, gating, cache, memory, pruning, distillation, NAS, ablation, and affected characteristics. | Source labels and results do not become FPF ontology or adequacy. Recover selected structure, relation, bearer, affected characteristic, loss, and receiving governing pattern before architecture use. |
+| Cao et al., `Multi-Relational Structural Entropy`, arXiv:2405.07096 | Adapt relation heterogeneity and graph structural-information pressure. | Strengthens `typedRelationSemantics?`, relation-kind recovery, and measurement or eval routing. | A graph entropy value requires `C.16` and `C.32.ACE` when measured or evaluated; it does not establish architecture adequacy. |
+| Sapunov, `Theory of Code Space`, and ToCS code-agent architecture-map practice | Adopt the partial-observability and belief-probing lessons; adapt them beyond software code agents. | Adds `relationObservationClass?`, confidence class, active-passive gap, unexplored regions, invariant return to the named architecture source map or the rule that defines the invariant claim, and non-overread of JSON probes and benchmark scores. | A probe, JSON output, dependency F1, invariant F1, active-passive gap, or benchmark score is not architecture adequacy, evidence sufficiency, safe-change authority, assurance, gate passage, or release authority. Reopen when the probed codebase, architecture source map, or observation budget changes. |
+| GonzoML neural-network architecture intake | Adapt practitioner operation labels into FPF recovery steps. | Adds neural source-label recovery for block substitution, dataflow change, routing, gating, cache, memory, pruning, distillation, NAS, ablation, and affected characteristics. | Source labels and results do not become FPF ontology or adequacy. Recover selected structure, relation, bearer, affected characteristic, loss, and the next architecture claim plus its required rule before architecture use. |
 
-C.33 deliberately rejects a popular shortcut: "the richest available diagram, map, score, or model summary is the architecture content." The better practice is to ask what the carrier captures for one declared use and what it cannot support. That is why SoTA rows must change fields, stop conditions, or governing-pattern routing rather than only supplying lineage.
+C.33 deliberately rejects a popular shortcut: "the richest available diagram, map, score, or model summary is the architecture content." The better practice is to ask what the carrier captures for one declared use and what it cannot support. That is why SoTA rows must change fields, stop conditions, or concrete next-use rules rather than only supplying lineage.
 
 ### C.33:12 - Relations
 

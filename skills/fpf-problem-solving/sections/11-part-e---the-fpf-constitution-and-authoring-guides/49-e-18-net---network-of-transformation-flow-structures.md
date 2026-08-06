@@ -106,7 +106,7 @@ Changing only a name, reference designator, record edition, graph layout, mathem
 
 The selected direct-member nesting is acyclic. No direct or transitive member path from a network resolves back to that network, and every member path used by a reference is finite. This permits build-the-builder and supply-network recursion without inventing level-1, level-2, or level-3 network kinds.
 
-Cycles among selected cross-flow relation occurrences remain possible when their direct governing patterns permit them. Feedback from operation or evaluation to development is therefore compatible with acyclic membership: the cycle is in the subject relations, not in network containment.
+Cycles among selected cross-flow relation occurrences remain possible when their subject patterns permit them. Feedback from operation or evaluation to development is therefore compatible with acyclic membership: the cycle is in the subject relations, not in network containment.
 
 `E.18` owns the complete `FlowPositionRef` identity. Import that tuple unchanged; E.18.NET owns only the `ExposedFlowPositionRef` extension needed for a boundary position reached through one finite member path:
 
@@ -139,14 +139,14 @@ For every relation used by the network, recover:
 
 - the exact obtaining occurrence;
 - the exact relation kind;
-- the direct governing pattern;
+- the subject pattern;
 - the complete signature and participant order;
 - the endpoint member and position binding for every participant; and
 - direction only when the direct relation has direction.
 
 An n-ary relation remains n-ary. Do not decompose it into invented binary arrows. A row, edge label, shared entity, temporal adjacency, operation result, plan row, or graph connection never makes the relation obtain.
 
-`U.Transfer` remains E.18's internal relation kind for one TFS. It is not a universal relation between network members. For any production, use, participation, evaluation, correspondence, feedback, dependency, supply, or other cross-flow relation, first apply its direct owner: the relation kind must have passed relation-kind admission, that owner must supply the direct predicate and applicability, and current case facts or constituting history must satisfy the predicate affirmatively. Only then does one world-side occurrence obtain. Its identity remains under the direct relation owner and A.6.REL when a receiver consumes occurrence identity. The network selects only the exact already-obtaining occurrence ref.
+`U.Transfer` remains E.18's internal relation kind for one TFS. It is not a universal relation between network members. For any production, use, participation, evaluation, correspondence, feedback, dependency, supply, or other cross-flow relation, first recover its exact subject predicate and defining ClaimGraph: the relation kind must have passed relation-kind admission, and current case facts or constituting history must satisfy the predicate affirmatively. Only then does one world-side occurrence obtain. Its identity remains fixed by that exact occurrence-identity rule and A.6.REL when a named use consumes occurrence identity. The network selects only the exact already-obtaining occurrence ref.
 
 If no direct relation kind and predicate govern the intended participants and use, return `missing-governor`. If the governor exists but current facts do not decide the predicate, keep a proposed network description and return the exact missing facts or information-sufficiency boundary. If the predicate is false, no occurrence fills the network. If the occurrence obtains but an endpoint position binding is missing, return that missing binding. A row, graph edge, or episteme neither admits the kind nor creates the occurrence. In none of these branches substitute `creates`, `produces`, `uses`, `input`, `output`, `result`, `handoff`, or `transfer` as a generic edge.
 
@@ -170,7 +170,7 @@ TransformationFlowStructureNetworkRecord@Context <: U.Episteme:
   crossFlowRelationRows[]:
     exactRelationOccurrenceRef: U.RelationRef
     exactRelationKindRef: U.KindRef
-    governingPatternRef: U.MethodDescriptionRef
+    relationFunctionClaimRef: U.MethodDescriptionRef
     endpointRows[]:
       relationParticipantPositionRef
       memberRef
@@ -254,9 +254,9 @@ For a compiler-and-application use, practitioners independently identify five TF
 4. a TFS selected for release-assurance questions; and
 5. a TFS selected for deployment and operation after the application system exists.
 
-These descriptions are not TFS kinds or lifecycle phases. No transformation of a not-yet-existing compiler or application is asserted. Each TFS, Work occurrence, change of a continuing referent, production claim, identity-inception claim, completion claim, role assignment, and later operation/use fact keeps its direct owner.
+These descriptions are not TFS kinds or lifecycle phases. No transformation of a not-yet-existing compiler or application is asserted. Each TFS, Work occurrence, change of a continuing referent, production claim, identity-inception claim, completion claim, role assignment, and later operation/use fact keeps its subject pattern.
 
-In this worked use, `CompilerArchitectureTeam-1 : U.System` performs dated `CompilerNetworkSelectionWork-5 : U.Work` under obtaining `CompilerNetworkSelectionAssignment-5`; the separately identified result episteme records the accountable selection decision. During that Work the team selects nested networks only after exact cross-member relations obtain and every endpoint is bound. `CompilerRealizationNetwork` selects members 1 and 2 through the exact source/use, production, or other admitted occurrences needed by that use. `ApplicationCompilerUseNetwork` selects that network and member 3 through the exact compiler-input or operation-application occurrence supplied by its direct owner. `ReleaseAssuranceNetwork` adds member 4 through its exact evaluation or assurance occurrence. `DeliveryOperationNetwork` adds member 5 through its exact deployment, participation, application, or use occurrence. The names are local designators; every selection still needs direct members, obtaining relation occurrences, applied constraints, and its own `networkUseFrame`. The project Work, network, result episteme, team, assignment, and selection Work remain different objects.
+In this worked use, `CompilerArchitectureTeam-1 : U.System` performs dated `CompilerNetworkSelectionWork-5 : U.Work` under obtaining `CompilerNetworkSelectionAssignment-5`; the separately identified result episteme records the accountable selection decision. During that Work the team selects nested networks only after exact cross-member relations obtain and every endpoint is bound. `CompilerRealizationNetwork` selects members 1 and 2 through the exact source/use, production, or other admitted occurrences needed by that use. `ApplicationCompilerUseNetwork` selects that network and member 3 through the exact compiler-input or operation-application occurrence supplied by its subject pattern. `ReleaseAssuranceNetwork` adds member 4 through its exact evaluation or assurance occurrence. `DeliveryOperationNetwork` adds member 5 through its exact deployment, participation, application, or use occurrence. The names are local designators; every selection still needs direct members, obtaining relation occurrences, applied constraints, and its own `networkUseFrame`. The project Work, network, result episteme, team, assignment, and selection Work remain different objects.
 
 A compiler-production case can close on separately grounded identity inception, production completion or readiness, evidence, and decision while naming the application-build position as the downstream use outside that closed case. Project-level reasoning continues into the member where the compiler later participates. The same joint-selection question recurs for a builder system: select the TFS in which that admitted builder performs exact Work together with the independently identified TFS or nested network concerning production and identity inception of the builder, or its later change after it exists. Shared identity creates no edge; use exact production, inception, participation, application, use, or other directly governed occurrences and endpoint bindings.
 
@@ -303,7 +303,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Un
 | **Arch:** a network-shaped case can tempt the reader to invent one containing holon. | C.30.TFS-REL keeps named-containing-holon and explicit inter-holon uses separate. |
 | **Onto/Epist:** a graph, record, or demonstrative slice can be mistaken for the selected network. | The four A.22 identity discriminators precede every description, record, rendering, architecture reading, and demonstration. |
 | **Prag:** exact member, relation, endpoint, and constraint apparatus can crowd out first use. | The practitioner first produces one small network result or one exact stop; the durable record remains optional. |
-| **Did:** the coffee and build-the-builder cases can be over-read as a closed domain ontology or a universal edge vocabulary. | The cases demonstrate boundary choices only; each cross-flow relation still returns to its direct owner and exact participants. |
+| **Did:** the coffee and build-the-builder cases can be over-read as a closed domain ontology or a universal edge vocabulary. | The cases demonstrate boundary choices only; each cross-flow relation still requires its subject pattern and exact participants. |
 
 ### E.18.NET:7 - Conformance Checklist
 
@@ -311,11 +311,11 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Un
 | --- | --- | --- |
 | **CC-E18-NET-01 Three-way discriminator** | The case is explicitly distinguished from several valuations of one exact TFS and from one E.18 `SubflowRef`. | Return to member identity and relation basis; do not decide from diagram shape, team labels, or stage names. |
 | **CC-E18-NET-02 A.22 identity** | Exact direct members, selected obtaining cross-flow occurrences, applied constraints, and one concrete selection-use frame are recoverable. | Recover the missing discriminator or stop at a proposed description. |
-| **CC-E18-NET-03 Independent members** | Every member keeps its own TFS or independently identified E.18.NET-conforming network identity, transformations, Work, valuations, boundaries, and local state. | Split any merged object and reapply its direct governing patterns. |
+| **CC-E18-NET-03 Independent members** | Every member keeps its own TFS or independently identified E.18.NET-conforming network identity, transformations, Work, valuations, boundaries, and local state. | Split any merged object and reapply its subject patterns. |
 | **CC-E18-NET-04 Finite acyclic membership** | Every member path is finite and no member path returns to the same network. | Repair the selected member set or return the cyclic-membership blocker; do not add level kinds. |
 | **CC-E18-NET-05 Exposed position** | Every `ExposedFlowPositionRef` resolves hop by hop to an exposed leaf TFS position. | Recover the missing member hop or boundary exposure; do not flatten the nested network. |
 | **CC-E18-NET-06 Leaf-local state** | Every valuation, path slice, and `DesignRunTag` remains attached to one exact leaf-TFS binding. | Remove the network-global state field and restore the local bindings. |
-| **CC-E18-NET-07 Direct relations** | Every cross-flow relation has an admitted kind, applicable direct predicate, satisfied affirmative case, exact obtaining occurrence, direct governor, full signature, and grounded endpoint bindings. | Apply the direct owner: return `missing-governor` only for a missing kind/predicate; otherwise name unresolved grounding, false predicate, or missing endpoint binding exactly. |
+| **CC-E18-NET-07 Direct relations** | Every cross-flow relation has an admitted kind, applicable direct predicate, satisfied affirmative case, exact obtaining occurrence, direct governor, full signature, and grounded endpoint bindings. | Apply the subject pattern: return `missing-governor` only for a missing kind/predicate; otherwise name unresolved grounding, false predicate, or missing endpoint binding exactly. |
 | **CC-E18-NET-08 N-ary preservation** | Participant count, order, kinds, positions, and direction match the direct relation. | Restore the direct signature and remove invented binary decompositions. |
 | **CC-E18-NET-09 Record and row-locator separation** | Member rows and relation rows describe already identified objects and occurrences; the record does not create them, and every `NetworkCrossFlowRelationRowRef` resolves exactly one nested row by record, occurrence, and ordered endpoint-binding identity. | Separate the C.2.1 episteme from the selected `U.Structure`; repair or remove any locator that resolves zero or several rows. |
 | **CC-E18-NET-10 Non-agentivity** | The network, record, graph, pattern, architecture reading, and demonstrative slice do not act, build, decide, warrant, or perform Work. | Name the exact system, role, Work, and direct relation that supports the claim. |
@@ -328,7 +328,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Un
 | --- | --- | --- |
 | One giant flow | Development, use, evaluation, and refresh are called valuations solely because they are coupled. | Test shared TFS identity; when independent members and a direct relation are needed, select a network. |
 | Detail becomes a member | A zoomed diagram, team boundary, or named stage becomes another TFS. | Use E.18 `SubflowRef` while every position and internal transfer still resolves in one parent. |
-| Universal cross-flow edge | `creates`, `produces`, `uses`, `input`, `result`, `handoff`, or `transfer` labels stand in for several relations. | Apply each direct owner: missing kind/predicate returns `missing-governor`; unresolved or false predicates and missing endpoint bindings retain their own stop results. |
+| Universal cross-flow edge | `creates`, `produces`, `uses`, `input`, `result`, `handoff`, or `transfer` labels stand in for several relations. | Apply each subject pattern: missing kind/predicate returns `missing-governor`; unresolved or false predicates and missing endpoint bindings retain their own stop results. |
 | Record makes the world | Filling `memberRows` or drawing edges is treated as establishing members and relations. | Ground members and relation occurrences first; keep the record descriptive. |
 | Recursive flattening | A parent copies all nested positions and state into one global graph. | Keep finite member paths and expose only the boundary positions needed by the parent use. |
 | Global design/run ladder | One `DesignRunTag` is assigned to the network. | Restore one tag per exact leaf position binding. |
@@ -343,7 +343,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Un
 | Recursive networks scale without numbered levels. | Exposed positions require finite path resolution and explicit boundary selection. |
 | Subject relations keep their participant meanings and n-ary signatures. | A missing direct governor remains visible instead of being hidden by a convenient generic edge. |
 | Local valuations and tags remain usable without becoming global state. | A network record carries more explicit member and endpoint references than a simple graph. |
-| Graphs and mantras remain useful descriptions. | Description, demonstration, architecture use, Work, and selected structure require separate governing patterns. |
+| Graphs and mantras remain useful descriptions. | Description, demonstration, architecture use, Work, and selected structure require separate subject patterns. |
 
 Adoption test: use E.18.NET only when the current question needs independently identified members and at least one exact relation across their boundaries. If one TFS or one parent-relative `SubflowRef` answers the question, the added network, endpoint, and member-path apparatus buys nothing and stays absent.
 
@@ -357,7 +357,7 @@ Mint vs reuse: E.18.NET mints the durable names `TransformationFlowStructureNetw
 NameCard:
   NameCardId: NC-TRANSFORMATION-FLOW-STRUCTURE-NETWORK
   GovernedValueRef: TransformationFlowStructureNetwork@Context <: U.Structure
-  GoverningPatternRef: E.18.NET
+  SubjectPatternLocator: E.18.NET
   ReferenceScheme: FPFCoreReferenceScheme
   LocalSenseRef: recursive selected organization over independently identified TransformationFlowStructure or TransformationFlowStructureNetwork values and exact cross-flow relation occurrences, with member boundaries and locally exposed positions preserved
   TechLabel: TransformationFlowStructureNetwork
@@ -388,9 +388,9 @@ The F.18 NameCard entries `flow-of-flows` and `creator-graph` remain naming and 
 
 Builds on: `A.22` for selected-structure identity and non-agentivity; `E.18` for one TFS, internal `U.Transfer`, `FlowPositionRef`, valuations, paths, slices, and local state; `A.6.REL`, `A.6.RCD`, and `A.6.P.WMR` for exact relation recovery and `missing-governor`; `C.2.1` for the optional descriptive record; and `F.18` for the stable local name.
 
-Coordinates with: `A.15.6` for actual project Work, project system-of-interest designation, and subject- or claim-centred case closure; `A.1.STM` for a Plain provisional long-mantra display and backward/forward attention use; `E.18.2` and `C.29` for mathematical descriptions; `A.22.CGUS` and `E.18.3` for admitted demonstrative slices; `C.30.TFS-REL` for architecture use; `C.32.CONWAY` for one qualified architecture-influence pair; `A.3.4`, `A.12`, and the A.15 family for actual transformation, causal or acting positions, Work, production, and work-to-change claims; `E.17` for publication; and `E.11.PUA` for first-entry recognition.
+Coordinates with: `A.15.6` for actual project Work, project system-of-interest designation, and subject- or claim-centred case closure; `A.1.STM` for a Plain provisional long-mantra display and backward/forward attention use; `E.18.2` and `C.29` for mathematical descriptions; `A.22.CGUS` and `E.18.3` for admitted demonstrative slices; `C.30.TFS-REL` for architecture use; `C.32.CONWAY` for one qualified architecture-influence pair; `A.3.4`, `A.12`, and the A.15 family for actual transformation, causal or acting positions, Work, production, and work-to-change claims; `E.17` for publication; `E.11` for public entry and recognition; and `E.11.PUA` for using one already selected pattern to reach its first useful result.
 
-Does not replace: the direct pattern that governs any selected production, use, participation, evaluation, feedback, dependency, correspondence, supply, evidence, assurance, gate, decision, causal, or work relation. E.18.NET selects already obtaining occurrences for one network use; it does not mint their kinds or make them obtain.
+Does not replace: the direct pattern that defines or constrains any selected production, use, participation, evaluation, feedback, dependency, correspondence, supply, evidence, assurance, gate, decision, causal, or work relation. E.18.NET selects already obtaining occurrences for one network use; it does not mint their kinds or make them obtain.
 
 ### E.18.NET:End
 

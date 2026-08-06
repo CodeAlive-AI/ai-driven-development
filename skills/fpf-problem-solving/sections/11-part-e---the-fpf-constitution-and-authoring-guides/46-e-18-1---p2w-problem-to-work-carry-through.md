@@ -21,7 +21,7 @@ Keep three objects separate. The **accepted ProblemCard** is the `EntityOfConcer
 
 **So-what adoption test.** Use P2W only when keeping the accepted distinction changes which relation you assert, what result you write, or whether you continue, split, stop, or return. If the relation and result are already settled and P2W would add only another note, skip P2W and apply the direct pattern.
 
-E.11.PUA governs a smaller use and may begin without `ProblemCard@Context`: apply one selected pattern to one current practical question, obtain the first directly typed result, and state its receiving use. E.18.1 begins only when the wider work-facing continuation depends on preserving accepted problem-side material. PUA may support one pattern inspection inside a P2W flow, but it does not replace the accepted-problem carry-through.
+E.11.PUA governs a smaller use and may begin without `ProblemCard@Context`: use one selected pattern for one current practical question and obtain its first independently governed result or honest stop. That ordinary use may stop there; name a receiving use only when the enclosing P2W continuation or another actual later use is current. E.18.1 begins only when the wider work-facing continuation depends on preserving accepted problem-side material. PUA may support one pattern inspection inside a P2W flow, but it does not replace the accepted-problem carry-through.
 
 
 #### E.18.1:1.1 - Use this when
