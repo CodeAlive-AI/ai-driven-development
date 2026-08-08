@@ -9,14 +9,17 @@ Trusted layers (fixed order, lowest → highest provenance of user control):
   4. output_schema      — required output template or XML schema
   5. repository_facts   — orchestrator-collected facts (explore inventory, etc.)
   6. user_input         — the caller's question / task / code under review
+  7. framework_recap    — compact trusted reminder after untrusted content
 
 Prompt purity:
   - explore never inherits review principles, roles, or Assessment template
-  - raw delegate / --prompt-file is user_input only (+ optional trusted metadata)
+  - raw delegate is user_input only (+ optional trusted metadata)
+  - review --prompt-file changes transport only; review policy remains layered
   - code-review skips the default Assessment template (uses its own schema)
 
-Trust boundary: layers 1–5 are trusted orchestrator content; layer 6 is
-untrusted user/repo content and must never reorder above trusted policy.
+Trust boundary: layers 1–5 and 7 are trusted orchestrator content; layer 6 is
+untrusted user/repo content. The final recap keeps the operational contract
+salient without treating repository or caller text as instructions.
 """
 from __future__ import annotations
 
@@ -34,6 +37,7 @@ LAYER_ORDER = (
     "output_schema",
     "repository_facts",
     "user_input",
+    "framework_recap",
 )
 
 TRUSTED_LAYERS = frozenset(
@@ -43,6 +47,7 @@ TRUSTED_LAYERS = frozenset(
         "role",
         "output_schema",
         "repository_facts",
+        "framework_recap",
     }
 )
 UNTRUSTED_LAYERS = frozenset({"user_input"})
@@ -77,24 +82,12 @@ EXPLORE_MODES = frozenset({"explore"})
 RAW_MODES = frozenset({"delegate", "delegate-steerable", "raw", "steerable"})
 
 
-FRAMEWORK_POLICY_REVIEW = """[CONSILIUM — INDEPENDENT ADVISORY MODE]
-
-You are an independent expert consulted for your honest, unfiltered perspective.
-You were brought in precisely BECAUSE a different viewpoint is needed.
-
-THINKING PRINCIPLES:
-1. Think from first principles. Do NOT simply validate the framing of the question.
-2. If the question presents options A/B/C — consider whether D or E exist that weren't mentioned.
-3. Actively look for unstated assumptions, hidden constraints, and blind spots in the query.
-4. If you disagree with the premise of the question, say so directly.
-5. Your value is in intellectual honesty, not agreeableness. Disagreement is welcome.
-6. Consider perspectives outside the immediate domain — cross-cutting concerns, operational reality, user impact.
-7. State your confidence level explicitly. Distinguish what you know from what you suspect.
-
-OPERATIONAL RULES:
-- READ ONLY: Do NOT create, edit, or delete files. Do NOT implement changes.
-- Describe what SHOULD be done and WHY. Another agent implements.
-"""
+FRAMEWORK_POLICY_REVIEW = (
+    Path(__file__).resolve().parents[2] / "prompts" / "review-framework.txt"
+).read_text(encoding="utf-8")
+FRAMEWORK_RECAP_REVIEW = (
+    Path(__file__).resolve().parents[2] / "prompts" / "review-recap.txt"
+).read_text(encoding="utf-8")
 
 OUTPUT_TEMPLATE_REVIEW = """
 RESPOND USING THIS STRUCTURE (adapt section depth to the question complexity):
@@ -214,6 +207,7 @@ class PromptBuilder:
                 "output_schema": "",
                 "repository_facts": self.trusted_metadata or "",
                 "user_input": self.user_input,
+                "framework_recap": "",
             }
             # Raw delegate may carry minimal trusted metadata only when requested.
             return layers
@@ -228,6 +222,7 @@ class PromptBuilder:
                 "output_schema": self.output_schema,  # usually empty; shape in explore.txt
                 "repository_facts": self.repository_facts,
                 "user_input": self.user_input,
+                "framework_recap": "",
             }
 
         if mode in CODE_REVIEW_MODES or (
@@ -241,6 +236,7 @@ class PromptBuilder:
                 "output_schema": self.output_schema,
                 "repository_facts": self.repository_facts,
                 "user_input": self.user_input,
+                "framework_recap": FRAMEWORK_RECAP_REVIEW,
             }
 
         if mode in REVIEW_WRAP_MODES or mode.startswith("review"):
@@ -259,6 +255,7 @@ class PromptBuilder:
                 "output_schema": schema,
                 "repository_facts": self.repository_facts,
                 "user_input": self.user_input,
+                "framework_recap": FRAMEWORK_RECAP_REVIEW,
             }
 
         if mode in ("delegate", "delegate-steerable"):
@@ -271,6 +268,7 @@ class PromptBuilder:
                 "output_schema": "",
                 "repository_facts": self.trusted_metadata or self.repository_facts,
                 "user_input": self.user_input,
+                "framework_recap": "",
             }
 
         # Unknown mode: fail closed to raw user_input only (no accidental review wrap).
@@ -281,6 +279,7 @@ class PromptBuilder:
             "output_schema": "",
             "repository_facts": self.repository_facts,
             "user_input": self.user_input,
+            "framework_recap": "",
         }
 
     def build(self) -> BuiltPrompt:
@@ -371,6 +370,9 @@ class PromptBuilder:
             body = user
         if facts.strip():
             body += "\n\n--- Context ---\n" + facts
+        recap = by.get("framework_recap") or ""
+        if recap.strip():
+            body += "\n\n---\n\n" + recap.rstrip() + "\n"
         return body
 
 

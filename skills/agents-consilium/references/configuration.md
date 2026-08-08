@@ -67,6 +67,7 @@ The shell-interpolation warning applies only to positional prompts that still co
 | `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` | Permit `file://` sources for offline tests only |
 | `CONSILIUM_EXPLORE_ALLOW_INSECURE=1` | Permit plain HTTP clone URLs |
 | `AGENT_TIMEOUT` | Positive watchdog seconds for ordinary review/one-shot delegate; unset/`0` is unlimited |
+| `CONSILIUM_REVIEW_TIMEOUT` | Per-agent watchdog for review modes (`ask`, code depths, direct review backend); defaults to `600`, `0` disables it. An explicit positive `AGENT_TIMEOUT` takes precedence |
 | `GEMINI_API_KEY` | Gemini CLI authentication when required |
 
 Steerable runs intentionally ignore wrapper deadlines. Provider context/output limits and managed harness settings still apply.

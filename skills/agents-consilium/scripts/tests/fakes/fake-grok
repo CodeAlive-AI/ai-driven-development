@@ -48,6 +48,7 @@ print(json.dumps({
     "prompt_len": len(body),
     "prompt_startswith": body[:32] if body else "",
     "prompt_endswith": body[-32:] if body else "",
+    "prompt_body": body if os.environ.get("CONSILIUM_FAKE_CAPTURE_PROMPT") else "",
     "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
     "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
     "cwd": os.getcwd(),
@@ -93,6 +94,10 @@ case "$MODE" in
     ;;
   fail)
     echo '{"type":"error","message":"forced fail"}' >&2
+    exit 2
+    ;;
+  secret-fail)
+    echo 'request failed: https://example.invalid/mcp?exaApiKey=TEST_SECRET_VALUE&tools=x Authorization: Bearer TEST_BEARER_VALUE' >&2
     exit 2
     ;;
   *)

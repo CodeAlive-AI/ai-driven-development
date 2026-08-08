@@ -4,6 +4,8 @@
 ]]>
 </input>
 
+{{INITIAL_RELEVANT_FILES}}
+
 <task>
 You are running AFTER a panel of broad reviewers and specialists has already
 been over this code. Your job: identify the **single highest-risk defect class**
@@ -33,18 +35,18 @@ Begin your output with one HTML comment naming your focus, then the findings:
 </task>
 
 <schema>
-<finding severity="critical|high|medium|low" category="correctness|performance|architecture|consistency|security" file="{{INPUT_LABEL}}" line-start="N" line-end="N" confidence="0.0..1.0">
+<finding severity="critical|high|medium|low" category="correctness|performance|architecture|consistency|security" file="repository-relative/path" line-start="N" line-end="N" confidence="0.0..1.0">
   <title>one-sentence summary</title>
   <rationale><![CDATA[why; include ONE reason this might be a false positive]]></rationale>
   <suggested-fix><![CDATA[concrete code or steps]]></suggested-fix>
-  <quoted-code><![CDATA[verbatim source at line-start..line-end]]></quoted-code>
+  <quoted-code><![CDATA[verbatim source from the cited file at line-start..line-end]]></quoted-code>
 </finding>
 </schema>
 
 <rules>
 - HALLUCINATION GATE / ACTIONABILITY GATE / FIX-CONSISTENCY GATE — same as the standard specialist prompt.
 - {{CAP_DIRECTIVE}}
-- The <input> is the entire scope. Do not read external files.
+- The <input> and initial relevant-file list are a likely-incomplete navigation seed, not an allowlist or scope boundary. Independently inspect additional repository files needed to establish the real blast radius, including callers, callees, related implementations, tests, configuration, schemas/migrations, generated code, and build/CI/deployment/infra files. Remain read-only.
 - Keep rationale under 6 sentences.
 - Pick a focus that matches what's actually in the input — don't audit for async hazards in pure-CRUD code.
 </rules>

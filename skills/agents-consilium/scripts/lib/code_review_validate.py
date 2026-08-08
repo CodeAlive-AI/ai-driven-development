@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Parse <finding> blocks from per-agent code-review responses, validate the
-`quoted-code` claim against the real source file, and render a final report
+Parse <finding> blocks from per-agent code-review responses, validate each
+`quoted-code` claim against its cited repository file, and render a final report
 (XML or markdown).
 
 Usage:
@@ -84,6 +84,37 @@ def read_source_lines(path: Path) -> list[str]:
 def normalize(s: str) -> str:
     # Normalize whitespace for a forgiving comparison.
     return re.sub(r"\s+", " ", s).strip()
+
+
+def resolve_cited_path(
+    finding: Finding,
+    *,
+    input_path: str,
+    workspace_root: Path,
+) -> Path | None:
+    """Resolve only the primary input or files contained by the workspace.
+
+    A model-controlled absolute path or a symlink escaping the workspace must
+    never cause the validator to read arbitrary host files.
+    """
+    raw = finding.attrs.get("file", "").strip()
+    primary = Path(input_path).resolve() if input_path and Path(input_path).is_file() else None
+    if not raw or raw == input_path:
+        return primary
+    candidate = Path(raw)
+    if not candidate.is_absolute():
+        candidate = workspace_root / candidate
+    try:
+        resolved = candidate.resolve()
+    except OSError:
+        return None
+    if primary is not None and resolved == primary:
+        return resolved
+    try:
+        resolved.relative_to(workspace_root)
+    except ValueError:
+        return None
+    return resolved if resolved.is_file() else None
 
 
 def validate_quote(finding: Finding, lines: list[str]) -> bool | None:
@@ -255,18 +286,25 @@ def main() -> int:
         print(f"response_dir not found: {response_dir}", file=sys.stderr)
         return 4
 
-    # Only validate against real source when we were given a plain file on disk.
-    source_lines: list[str] = []
-    if args.input_kind == "file":
-        src = Path(args.input_path)
-        if src.is_file():
-            source_lines = read_source_lines(src)
+    workspace_root = Path.cwd().resolve()
+    source_cache: dict[Path, list[str]] = {}
 
     findings: list[Finding] = []
     for agent_id, role, content in load_responses(response_dir):
         for f in parse_response(agent_id, role, content):
-            if source_lines:
-                f.quoted_code_valid = validate_quote(f, source_lines)
+            cited = resolve_cited_path(
+                f,
+                input_path=args.input_path,
+                workspace_root=workspace_root,
+            )
+            if cited is not None:
+                if cited not in source_cache:
+                    source_cache[cited] = read_source_lines(cited)
+                f.quoted_code_valid = validate_quote(f, source_cache[cited])
+            elif args.input_kind == "file" or f.attrs.get("file"):
+                # A file-backed finding that cannot be resolved safely is not
+                # verifiable and must not receive an implicit pass.
+                f.quoted_code_valid = False
             findings.append(f)
 
     findings.sort(key=sort_key)

@@ -123,6 +123,9 @@ dump_review codex "$TMP/codex-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/codex-review.json"'"))["argv"]))')
 assert_contains "codex review has read-only sandbox" "$argv" "--sandbox read-only"
 assert_not_contains "codex review no full bypass" "$argv" "--dangerously-bypass-approvals-and-sandbox"
+assert_contains "codex review disables multi-agent" "$argv" "--disable multi_agent"
+assert_contains "codex review disables multi-agent v2" "$argv" "--disable multi_agent_v2"
+assert_contains "codex review enables web search" "$argv" "--search"
 
 # Codex delegate: YOLO bypass, no read-only sandbox
 dump_delegate codex "$TMP/codex-del.json"
@@ -140,17 +143,23 @@ assert_contains "codex shell runner honors CODEX_MODEL" "$argv" "--model gpt-cod
 assert_contains "codex shell runner honors CODEX_EFFORT" "$argv" 'model_reasoning_effort="xhigh"'
 assert_not_contains "codex effort override replaces config effort" "$argv" 'model_reasoning_effort="high"'
 
-# Claude review: plan + disallowed write tools
+# Claude review: non-planning report workflow with full Bash.
 dump_review claude-code "$TMP/claude-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-review.json"'"))["argv"]))')
-assert_contains "claude review plan mode" "$argv" "--permission-mode plan"
+assert_contains "claude review uses non-planning dontAsk mode" "$argv" "--permission-mode dontAsk"
+assert_not_contains "claude review does not activate plan workflow" "$argv" "--permission-mode plan"
 assert_contains "claude review denies Edit" "$argv" "Edit"
-# plan mode alone leaves WebSearch/WebFetch unapproved in a headless run.
+assert_not_contains "claude review keeps Bash available" "$argv" "Edit,Write,NotebookEdit,Bash"
+assert_contains "claude review preapproves Bash" "$argv" "Bash,WebSearch,WebFetch"
+assert_contains "claude review disables subagents" "$argv" "Agent,Task"
 assert_contains "claude review keeps web research" "$argv" "WebSearch,WebFetch"
 assert_not_contains "claude review web approval is not a write approval" "$argv" "--allowedTools Edit"
 assert_contains "claude review selects Opus 5" "$argv" "--model claude-opus-5"
 assert_contains "claude review uses medium effort" "$argv" "--effort medium"
 assert_not_contains "claude review no skip-permissions" "$argv" "--dangerously-skip-permissions"
+assert_contains "claude review disables customizations" "$argv" "--safe-mode"
+assert_contains "claude review disables session persistence" "$argv" "--no-session-persistence"
+assert_contains "claude review disables Chrome integration" "$argv" "--no-chrome"
 
 CLAUDE_MODEL="claude-override" CLAUDE_EFFORT="max" \
   CONSILIUM_DUMP_ARGV="$TMP/claude-overrides.json" \
@@ -163,13 +172,14 @@ assert_contains "claude shell runner honors CLAUDE_EFFORT" "$argv" "--effort max
 dump_delegate claude-code "$TMP/claude-del.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/claude-del.json"'"))["argv"]))')
 assert_contains "claude delegate YOLO" "$argv" "--dangerously-skip-permissions"
-assert_not_contains "claude delegate no plan" "$argv" "--permission-mode plan"
+assert_not_contains "claude delegate no dontAsk" "$argv" "--permission-mode dontAsk"
 
-# OpenCode review: plan agent
+# OpenCode review: dedicated primary review agent, not the plan agent.
 dump_review opencode "$TMP/oc-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-review.json"'"))["argv"]))')
-assert_contains "opencode review plan agent" "$argv" "--agent plan"
-assert_not_contains "opencode review no build agent" "$argv" "--agent build"
+assert_contains "opencode review uses dedicated review agent" "$argv" "--agent consilium-review"
+assert_contains "opencode review auto-approves allowed diagnostics" "$argv" "--auto"
+assert_not_contains "opencode review avoids plan agent" "$argv" "--agent plan"
 
 # OpenCode delegate: build + auto
 dump_delegate opencode "$TMP/oc-del.json"
@@ -188,6 +198,13 @@ CONSILIUM_FAKE_ARGV_LOG="$TMP/oc-go-kimi-k3-prompt.jsonl" \
   "$LIB_DIR/backend_run.sh" --mode review --agent-id opencode-go-kimi-k3 "review this" >/dev/null
 kimi_prompt=$(python3 -c 'import json; print(json.loads(open("'"$TMP/oc-go-kimi-k3-prompt.jsonl"'").readline())["stdin"])')
 assert_contains "OpenCode Go Kimi K3 adds adversarial review prompt" "$kimi_prompt" "KIMI_K3_ADVERSARIAL_REVIEW_MARKER"
+oc_review_policy=$(python3 -c 'import json; print(json.loads(open("'"$TMP/oc-go-kimi-k3-prompt.jsonl"'").readline())["review_policy"])')
+assert_contains "opencode review policy denies edits" "$oc_review_policy" "'edit': 'deny'"
+assert_contains "opencode review policy denies delegation" "$oc_review_policy" "'task': 'deny'"
+assert_contains "opencode review policy permits Bash" "$oc_review_policy" "'bash': 'allow'"
+oc_review_agent_prompt=$(python3 -c 'import json; print(json.loads(open("'"$TMP/oc-go-kimi-k3-prompt.jsonl"'").readline())["review_agent_prompt"])')
+assert_contains "opencode review agent prompt requires work alone" "$oc_review_agent_prompt" "Work alone"
+assert_contains "opencode review agent prompt requires blast-radius search" "$oc_review_agent_prompt" "real blast radius"
 
 OPENCODE_MODEL="provider/model-override" OPENCODE_EFFORT="thinking" \
   CONSILIUM_DUMP_ARGV="$TMP/opencode-overrides.json" \
@@ -209,6 +226,9 @@ assert_contains "grok review tools allowlist" "$argv" "--tools"
 # The Grok allowlist is exhaustive: omitting the web tools silently removes web
 # research from every review, which is exactly how it was lost before.
 assert_contains "grok review keeps web research" "$argv" "web_search,web_fetch"
+assert_contains "grok review keeps terminal diagnostics" "$argv" "run_terminal_cmd"
+assert_contains "grok review explicitly disables plan mode" "$argv" "--no-plan"
+assert_contains "grok review disables subagents" "$argv" "--no-subagents"
 assert_contains "grok review disallowed tools" "$argv" "--disallowed-tools"
 assert_contains "grok review streaming-json" "$argv" "streaming-json"
 assert_contains "grok review prompt-file one-shot" "$argv" "--prompt-file"
@@ -240,6 +260,8 @@ assert_contains "gemini shell runner honors GEMINI_MODEL" "$argv" "--model gemin
 export CONSILIUM_RUN_DIR="$TMP/run-gemini-ok"
 export CONSILIUM_SAVE_OUTPUTS=1
 export CONSILIUM_FAKE_GEMINI_MODE=ok
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/gemini-runtime-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
 mkdir -p "$CONSILIUM_RUN_DIR"
 set +e
 gem_out=$("$LIB_DIR/backend_run.sh" --mode review --agent-id gemini-cli --raw "gemini q" 2>"$TMP/gem-ok.err")
@@ -247,6 +269,9 @@ gem_rc=$?
 set -e
 assert_eq "gemini happy-path exit 0" "$gem_rc" "0"
 assert_eq "gemini happy-path stdout" "$gem_out" "FAKE_GEMINI_OK"
+gemini_runtime=$(tail -1 "$CONSILIUM_FAKE_ARGV_LOG")
+assert_contains "gemini review injects system settings" "$gemini_runtime" '"system_settings_path_set": true'
+assert_contains "gemini review disables subagents" "$gemini_runtime" '"agents_enabled": false'
 assert_file "gemini final artifact" "$CONSILIUM_RUN_DIR/final/gemini-cli.txt"
 assert_file "gemini raw artifact" "$CONSILIUM_RUN_DIR/raw/gemini-cli.jsonl"
 if [[ -f "$CONSILIUM_RUN_DIR/normalized/gemini-cli.jsonl" ]]; then
@@ -256,10 +281,12 @@ else
   echo "  FAIL  gemini normalized artifact missing"
   FAIL=$((FAIL+1))
 fi
-# plan-mode style approval on argv
+# Gemini review uses the full non-planning tool loop.
 dump_review gemini-cli "$TMP/gem-plan.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/gem-plan.json"'"))["argv"]))')
-assert_contains "gemini review plan approval" "$argv" "--approval-mode plan"
+assert_contains "gemini review uses yolo approval" "$argv" "--approval-mode yolo"
+assert_not_contains "gemini review avoids plan mode" "$argv" "--approval-mode plan"
+assert_contains "gemini review disables extensions" "$argv" "-e none"
 
 # Explicit empty-answer exit 66
 export CONSILIUM_RUN_DIR="$TMP/run-gemini-empty"
@@ -521,6 +548,19 @@ assert_not_contains "slow stdout clean" "$(cat "$TMP/slow.out")" "[consilium]"
 export CONSILIUM_FAKE_GROK_MODE=ok
 unset CONSILIUM_FAKE_SLOW_MARKER CONSILIUM_FAKE_SLOW_SLEEP
 
+echo "=== Backend stderr credential redaction ==="
+export CONSILIUM_FAKE_GROK_MODE=secret-fail
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id grok --raw "redact" \
+  >"$TMP/redact.out" 2>"$TMP/redact.err"
+redact_rc=$?
+set -e
+assert_eq "secret stderr backend still fails" "$redact_rc" "2"
+assert_contains "secret stderr is visibly redacted" "$(cat "$TMP/redact.err")" "<redacted>"
+assert_not_contains "query credential absent from stderr" "$(cat "$TMP/redact.err")" "TEST_SECRET_VALUE"
+assert_not_contains "authorization credential absent from stderr" "$(cat "$TMP/redact.err")" "TEST_BEARER_VALUE"
+export CONSILIUM_FAKE_GROK_MODE=ok
+
 echo "=== Review ask with fakes (stdout/stderr split) ==="
 export CONSILIUM_RUN_DIR="$TMP/run-ask"
 mkdir -p "$CONSILIUM_RUN_DIR"
@@ -545,6 +585,99 @@ assert_contains "ask has codex answer" "$out" "FAKE_CODEX_OK"
 assert_contains "ask has grok answer" "$out" "FAKE_GROK_OK"
 assert_contains "ask progress stderr" "$(cat "$TMP/ask2.err")" "[consilium]"
 assert_not_contains "ask stdout clean" "$out" "[consilium]"
+
+set +e
+CONSILIUM_REVIEW_TIMEOUT=not-a-number \
+  "$CONSILIUM" review ask --progress none -a codex "timeout validation" \
+  >"$TMP/ask-timeout-invalid.out" 2>"$TMP/ask-timeout-invalid.err"
+ask_timeout_invalid_rc=$?
+set -e
+assert_eq "ask rejects invalid review timeout" "$ask_timeout_invalid_rc" "5"
+assert_contains "ask invalid review timeout is explained" \
+  "$(cat "$TMP/ask-timeout-invalid.err")" "CONSILIUM_REVIEW_TIMEOUT"
+
+# A prompt file is transport only in public review: even an inherited raw-mode
+# environment must not strip the read-only/work-alone/blast-radius framework.
+printf '%s\n' '<initial_relevant_files completeness="likely-partial"><file path="src/a.py"/></initial_relevant_files>' > "$TMP/review-question.md"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+CONSILIUM_RAW_PROMPT=1 "$CONSILIUM" review ask --progress none -a codex \
+  --prompt-file "$TMP/review-question.md" >/dev/null 2>"$TMP/ask-file.err"
+ask_file_prompt=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
+row = rows[-1]
+print(row.get("stdin", "") + "\n" + "\n".join(row.get("argv", [])))
+PY
+)
+assert_contains "review prompt-file keeps framework" "$ask_file_prompt" "INDEPENDENT ADVISORY MODE"
+assert_contains "review prompt-file keeps read-only" "$ask_file_prompt" "READ-ONLY REVIEW"
+assert_contains "review prompt-file keeps work-alone" "$ask_file_prompt" "WORK ALONE"
+assert_contains "review prompt-file keeps blast-radius policy" "$ask_file_prompt" "SEED, NOT A BOUNDARY"
+assert_contains "review prompt-file enables official-doc research" "$ask_file_prompt" "CURRENT OFFICIAL DOCUMENTATION"
+assert_contains "review prompt-file keeps caller seed" "$ask_file_prompt" "src/a.py"
+last_contract_line=$(printf '%s\n' "$ask_file_prompt" | grep -n 'CONSILIUM REVIEW CONTRACT' | tail -1 | cut -d: -f1)
+seed_line=$(printf '%s\n' "$ask_file_prompt" | grep -n 'src/a.py' | tail -1 | cut -d: -f1)
+if [[ -n "$last_contract_line" && -n "$seed_line" && "$last_contract_line" -gt "$seed_line" ]]; then
+  echo "  PASS  review prompt ends with trusted contract recap"
+  PASS=$((PASS+1))
+else
+  echo "  FAIL  review prompt ends with trusted contract recap"
+  FAIL=$((FAIL+1))
+fi
+
+echo "=== Review ask survives one unresolvable profile ==="
+python3 - "$FIX/test-config.json" "$TMP/partial-resolve-config.json" <<'PY'
+import json, sys
+cfg = json.load(open(sys.argv[1]))
+cfg["agents"]["broken-reviewer"] = {
+    "enabled": True,
+    "backend": "unknown-backend",
+    "model": "broken",
+    "role": "analyst",
+    "label": "Broken Reviewer",
+}
+json.dump(cfg, open(sys.argv[2], "w"), indent=2)
+PY
+export CONSILIUM_RUN_DIR="$TMP/run-ask-partial-resolve"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+out=$(CONSILIUM_CONFIG="$TMP/partial-resolve-config.json" \
+  "$CONSILIUM" review ask --progress none -a codex,broken-reviewer "review this" \
+  2>"$TMP/ask-partial-resolve.err")
+partial_resolve_rc=$?
+set -e
+assert_eq "ask resolver failure is partial" "$partial_resolve_rc" "2"
+assert_contains "ask resolver failure keeps healthy answer" "$out" "FAKE_CODEX_OK"
+assert_contains "ask resolver failure is reported" "$out" "Broken Reviewer query failed"
+set +e
+CONSILIUM_CONFIG="$TMP/partial-resolve-config.json" \
+  "$CONSILIUM" review ask --progress none -a broken-reviewer "review this" \
+  >"$TMP/ask-all-resolve.out" 2>"$TMP/ask-all-resolve.err"
+all_resolve_rc=$?
+set -e
+assert_eq "ask all resolver failures exit 3" "$all_resolve_rc" "3"
+
+# Runtime overrides must be reflected in both human and machine-readable
+# provenance, not merely passed to the backend process.
+export CONSILIUM_RUN_DIR="$TMP/run-ask-override"
+mkdir -p "$CONSILIUM_RUN_DIR"
+out=$(CLAUDE_MODEL="claude-runtime" CLAUDE_EFFORT="max" \
+  "$CONSILIUM" review ask -a claude-code "What is 2+2?" 2>"$TMP/ask-override.err")
+assert_contains "ask heading uses resolved model" "$out" "claude-runtime"
+assert_contains "ask heading uses resolved effort" "$out" "effort=max"
+assert_not_contains "ask heading omits stale configured model" "$out" "claude-opus-5"
+start_raw=$(python3 -c 'import json,sys; print(json.loads(open(sys.argv[1]).readline())["raw"])' \
+  "$CONSILIUM_RUN_DIR/normalized/claude-code.jsonl")
+assert_contains "run_started persists resolved model" "$start_raw" "claude-runtime"
+assert_contains "run_started persists resolved effort" "$start_raw" "'effort': 'max'"
+assert_contains "run_started persists access policy" "$start_raw" "readonly"
+
+export CONSILIUM_RUN_DIR="$TMP/run-ask-override-xml"
+mkdir -p "$CONSILIUM_RUN_DIR"
+xml=$(CLAUDE_MODEL="claude-runtime" CLAUDE_EFFORT="max" \
+  "$CONSILIUM" review ask --xml -a claude-code "What is 2+2?" 2>/dev/null)
+assert_contains "ask XML uses resolved model" "$xml" 'model="claude-runtime"'
+assert_contains "ask XML uses resolved effort" "$xml" 'effort="max"'
 
 echo "=== Delegate with fake ==="
 export CONSILIUM_RUN_DIR="$TMP/run-del"
@@ -602,6 +735,26 @@ python3 "$LIB_DIR/normalize_stream.py" --backend grok-build --agent-id grok \
   >"$TMP/token-norm.jsonl" 2>"$TMP/token-progress.err"
 progress_lines=$(wc -l < "$TMP/token-progress.err" | tr -d ' ')
 assert_le "token deltas coalesce into compact progress" "$progress_lines" "6"
+
+printf '%s\n' \
+  '{"type":"tool_call","toolName":"run_terminal_command","status":"pending","rawInput":{"command":"secret command must not leak"}}' \
+  '{"type":"tool_call_update","status":"in_progress","rawOutput":"secret output must not leak"}' \
+  '{"type":"tool_call_update","status":"completed","rawOutput":"secret output must not leak"}' \
+  '{"type":"end","stopReason":"EndTurn"}' \
+  > "$TMP/tool-progress-stream.jsonl"
+python3 "$LIB_DIR/normalize_stream.py" --backend grok-build --agent-id grok \
+  --input "$TMP/tool-progress-stream.jsonl" --progress --progress-style compact \
+  --progress-interval 0 >"$TMP/tool-progress-norm.jsonl" 2>"$TMP/tool-progress.err"
+assert_contains "compact progress reports Grok tool liveness" \
+  "$(cat "$TMP/tool-progress.err")" "type=tool"
+assert_not_contains "compact tool progress hides command" \
+  "$(cat "$TMP/tool-progress.err")" "secret command"
+assert_not_contains "compact tool progress hides output" \
+  "$(cat "$TMP/tool-progress.err")" "secret output"
+assert_contains "normalized Grok tool start is persisted" \
+  "$(cat "$TMP/tool-progress-norm.jsonl")" '"type": "tool_started"'
+assert_contains "normalized Grok tool completion is persisted" \
+  "$(cat "$TMP/tool-progress-norm.jsonl")" '"type": "tool_completed"'
 
 printf '%s\n' '{"type":"error","message":"x"}' > "$TMP/stream-err.jsonl"
 set +e
@@ -670,6 +823,31 @@ set -e
 # May exit 0 with zero findings after validate, or still 0
 assert_eq "code review basic exit 0" "$rc" "0"
 assert_contains "code review progress" "$(cat "$TMP/code.err")" "code-review"
+
+# Caller-known related files are passed as a non-exhaustive seed to every
+# specialist; they do not close repository discovery.
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/related-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+"$CONSILIUM" review code --progress none --depth basic -a codex \
+  --related config/app.yml --related tests/test_sample.py "$FIX/sample.py" \
+  >/dev/null 2>"$TMP/related.err"
+related_prompt=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
+print("\n".join(r.get("stdin", "") + "\n" + "\n".join(r.get("argv", [])) for r in rows))
+PY
+)
+assert_contains "code review includes primary seed" "$related_prompt" "$FIX/sample.py"
+assert_contains "code review includes config seed" "$related_prompt" "config/app.yml"
+assert_contains "code review includes test seed" "$related_prompt" "tests/test_sample.py"
+assert_contains "code review marks seed incomplete" "$related_prompt" "likely incomplete"
+assert_contains "code review requires blast-radius discovery" "$related_prompt" "real blast radius"
+set +e
+"$CONSILIUM" review code --related= "$FIX/sample.py" >/dev/null 2>"$TMP/related-empty.err"
+related_empty_rc=$?
+set -e
+assert_eq "code review rejects empty related path" "$related_empty_rc" "5"
+assert_contains "empty related path is explained" "$(cat "$TMP/related-empty.err")" "--related requires a path"
 
 echo "=== Claude stream-json: authoritative result wins over distinct delta ==="
 # Delta and result strings differ — final answer must be result, never delta/concat.
@@ -752,6 +930,40 @@ python3 "$LIB_DIR/normalize_stream.py" --backend opencode --agent-id opencode \
   --no-validate >/dev/null
 assert_eq "opencode oneshot Hello assembly" "$(cat "$TMP/oc-hello.txt")" "Hello"
 assert_not_contains "opencode oneshot not HHeHello" "$(cat "$TMP/oc-hello.txt")" "HHe"
+
+echo "=== OpenCode terminal event bounds a hung CLI ==="
+export CONSILIUM_RUN_DIR="$TMP/run-opencode-terminal-guard"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+CONSILIUM_FAKE_OPENCODE_HANG_AFTER_COMPLETE=1 \
+CONSILIUM_FAKE_OPENCODE_HANG_SECONDS=30 \
+CONSILIUM_FAKE_OPENCODE_IDLE_BEFORE_TEXT=1 \
+CONSILIUM_FAKE_OPENCODE_TEXT_AFTER_COMPLETE=1 \
+CONSILIUM_TERMINAL_GRACE=0.05 \
+python3 - "$LIB_DIR/backend_run.sh" "$TMP/opencode-guard.out" "$TMP/opencode-guard.err" <<'PY'
+import subprocess, sys, time
+
+started = time.monotonic()
+try:
+    with open(sys.argv[2], "w") as stdout, open(sys.argv[3], "w") as stderr:
+        proc = subprocess.run(
+            ["bash", sys.argv[1], "--mode", "review", "--agent-id", "opencode", "--raw", "ping"],
+            text=True,
+            stdout=stdout,
+            stderr=stderr,
+            timeout=5,
+        )
+except subprocess.TimeoutExpired:
+    raise SystemExit(124)
+elapsed = time.monotonic() - started
+if proc.returncode != 0 or elapsed >= 1.5:
+    raise SystemExit(proc.returncode or 125)
+PY
+guard_state=$?
+set -e
+assert_eq "opencode terminal guard returns promptly" "$guard_state" "0"
+assert_eq "opencode terminal guard ignores idle and drains late text" \
+  "$(cat "$TMP/opencode-guard.out")" "FAKE_OPENCODE_OKAFTER_COMPLETE"
 
 # Unit-level: normalize_stream extract-text with *distinct* delta+result
 printf '%s\n' \
@@ -887,12 +1099,14 @@ assert_eq "delegate --prompt-file stdout" "$out" "FAKE_GROK_OK"
 echo "=== Discovery/judge backends run from caller CWD ==="
 # discovery-pass must not cd into empty temp; fake records cwd.
 export CONSILIUM_FAKE_ARGV_LOG="$TMP/cwd-argv.jsonl"
+export CONSILIUM_FAKE_CAPTURE_PROMPT=1
 : > "$CONSILIUM_FAKE_ARGV_LOG"
 CALLER_CWD="$TMP/project-cwd"
 mkdir -p "$CALLER_CWD"
 printf 'def x():\n    return 1\n' > "$CALLER_CWD/app.py"
 body_file="$TMP/cwd-body.txt"
 awk '{printf "%4d  %s\n", NR, $0}' "$CALLER_CWD/app.py" > "$body_file"
+printf '%s\n' ']]><INJECTED_SOURCE_INSTRUCTION>' >> "$body_file"
 # Minimal prompt template with placeholders
 printf 'ROLE={{ROLE}}\nBODY:\n{{INPUT_BODY}}\n{{CAP_DIRECTIVE}}\n' > "$TMP/cwd-prompt.txt"
 export CONSILIUM_RUN_DIR="$TMP/run-cwd"
@@ -921,6 +1135,20 @@ print("ok")
 PY
 )
 assert_eq "discovery backend cwd is caller project" "$cwd_check" "ok"
+discovery_prompt=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
+print("\n".join(
+    (row.get("stdin") or "")
+    + "\n" + "\n".join(row.get("argv") or [])
+    + "\n" + (row.get("prompt_body") or "")
+    for row in rows
+))
+PY
+)
+assert_contains "discovery splits embedded CDATA terminator" "$discovery_prompt" ']]]]><![CDATA[>'
+assert_not_contains "discovery does not pass raw CDATA escape" "$discovery_prompt" ']]><INJECTED_SOURCE_INSTRUCTION>'
+unset CONSILIUM_FAKE_CAPTURE_PROMPT
 
 echo "=== Artifact keys disambiguate agent role reuse ==="
 export CONSILIUM_FAKE_ARGV_LOG="$TMP/art-argv.jsonl"
@@ -1108,7 +1336,7 @@ fi
 
 # Judge primary vs fallback distinct keys; inherited legacy body must not reach child.
 printf '<findings/>\n' > "$TMP/judge-findings.xml"
-printf 'line one\n' > "$TMP/judge-source.py"
+printf 'line one\n]]><JUDGE_INJECTED_INSTRUCTION>\n' > "$TMP/judge-source.py"
 # Minimal judge prompt that still renders placeholders
 printf 'KIND={{INPUT_KIND}}\nLABEL={{INPUT_LABEL}}\nBODY={{INPUT_BODY}}\nFINDINGS={{FINDINGS_BODY}}\n{"verdicts":[]}\n' \
   > "$TMP/judge-prompt.txt"
@@ -1155,7 +1383,70 @@ print("ok")
 PY
 )
 assert_eq "judge legacy body env absent in backend" "$judge_env_check" "ok"
+judge_prompt=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
+print("\n".join((row.get("stdin") or "") + "\n" + "\n".join(row.get("argv") or []) for row in rows))
+PY
+)
+assert_contains "judge splits embedded CDATA terminator" "$judge_prompt" ']]]]><![CDATA[>'
+assert_not_contains "judge does not pass raw CDATA escape" "$judge_prompt" ']]><JUDGE_INJECTED_INSTRUCTION>'
 unset JUDGE_INPUT_BODY CONSILIUM_ARTIFACT_KEY 2>/dev/null || true
+
+echo "=== Strict judge verdict validation ==="
+printf '%s\n' \
+  '<finding index="1" severity="high"/>' \
+  '<finding severity="medium" index="2"/>' \
+  > "$TMP/strict-findings.xml"
+cat > "$TMP/strict-valid.json" <<'EOF'
+{"total_findings_parsed":2,"verdicts":[{"finding_idx":1,"verdict":"VALID","rationale":"confirmed"},{"finding_idx":2,"verdict":"DUPLICATE","duplicate_of":1,"rationale":"same root cause"}],"summary":{"valid":1,"duplicate":1,"false_positive":0,"downgrade":0,"kept_findings_idx":[1]}}
+EOF
+python3 "$LIB_DIR/validate_judge_output.py" \
+  --raw-output "$TMP/strict-valid.json" --findings "$TMP/strict-findings.xml" \
+  --out "$TMP/strict-valid.out"
+assert_contains "strict judge accepts complete verdicts" "$(cat "$TMP/strict-valid.out")" '"duplicate": 1'
+cat > "$TMP/strict-omitted.json" <<'EOF'
+{"total_findings_parsed":2,"verdicts":[{"finding_idx":1,"verdict":"VALID","rationale":"confirmed"}],"summary":{"valid":1,"duplicate":0,"false_positive":0,"downgrade":0,"kept_findings_idx":[1]}}
+EOF
+set +e
+python3 "$LIB_DIR/validate_judge_output.py" \
+  --raw-output "$TMP/strict-omitted.json" --findings "$TMP/strict-findings.xml" \
+  --out "$TMP/strict-omitted.out" 2>"$TMP/strict-omitted.err"
+strict_omitted_rc=$?
+set -e
+assert_eq "strict judge rejects omitted finding" "$strict_omitted_rc" "2"
+assert_contains "strict judge explains omission" "$(cat "$TMP/strict-omitted.err")" "omitted findings"
+cat > "$TMP/strict-upgrade.json" <<'EOF'
+{"total_findings_parsed":2,"verdicts":[{"finding_idx":1,"verdict":"VALID","rationale":"confirmed"},{"finding_idx":2,"verdict":"DOWNGRADE","new_severity":"high","rationale":"wrong direction"}],"summary":{"valid":1,"duplicate":0,"false_positive":0,"downgrade":1,"kept_findings_idx":[1,2]}}
+EOF
+set +e
+python3 "$LIB_DIR/validate_judge_output.py" \
+  --raw-output "$TMP/strict-upgrade.json" --findings "$TMP/strict-findings.xml" \
+  --out "$TMP/strict-upgrade.out" 2>"$TMP/strict-upgrade.err"
+strict_upgrade_rc=$?
+set -e
+assert_eq "strict judge rejects severity upgrade" "$strict_upgrade_rc" "2"
+
+echo "=== Cross-file finding quote validation stays inside workspace ==="
+mkdir -p "$TMP/cross-file-repo/responses"
+printf 'primary = 1\n' > "$TMP/cross-file-repo/primary.py"
+printf 'dangerous = True\n' > "$TMP/cross-file-repo/related.py"
+cat > "$TMP/cross-file-repo/responses/codex.security.out" <<'EOF'
+<finding severity="high" category="correctness" file="related.py" line-start="1" line-end="1" confidence="0.9"><title>Cross-file issue</title><rationale>Related config changes behavior.</rationale><quoted-code><![CDATA[dangerous = True]]></quoted-code></finding>
+<finding severity="low" category="security" file="/etc/hosts" line-start="1" line-end="1" confidence="0.8"><title>Escape attempt</title><rationale>Must not read outside workspace.</rationale><quoted-code><![CDATA[localhost]]></quoted-code></finding>
+EOF
+(
+  cd "$TMP/cross-file-repo"
+  python3 "$LIB_DIR/code_review_validate.py" --input-kind file \
+    --input-path primary.py --output-format xml responses
+) > "$TMP/cross-file-report.xml"
+cross_valid=$(python3 - "$TMP/cross-file-report.xml" <<'PY'
+import sys, xml.etree.ElementTree as ET
+root = ET.parse(sys.argv[1]).getroot()
+print("|".join(f.attrib.get("quote-valid", "") for f in root.findall("finding")))
+PY
+)
+assert_eq "cross-file validator verifies repo file and rejects host escape" "$cross_valid" "true|false"
 
 # Direct call without --artifact-key gets an invocation-unique default (not ambient).
 export CONSILIUM_ARTIFACT_KEY="ambient.poison.key"

@@ -137,11 +137,13 @@ RENDERED_PROMPT_FILE="$TMP_DIR/rendered-prompt.txt"
 python3 - "$PROMPT" "$RENDERED_PROMPT_FILE" <<'PYEOF'
 import os, sys
 tpl = open(sys.argv[1]).read()
+def cdata_escape(value):
+    return value.replace(']]>', ']]]]><![CDATA[>')
 out = (tpl
        .replace('{{INPUT_KIND}}',    os.environ.get('JR_INPUT_KIND', ''))
        .replace('{{INPUT_LABEL}}',   os.environ.get('JR_INPUT_LABEL', ''))
-       .replace('{{INPUT_BODY}}',    open(os.environ['JR_INPUT_BODY_FILE']).read())
-       .replace('{{FINDINGS_BODY}}', open(os.environ['JR_FINDINGS_BODY_FILE']).read()))
+       .replace('{{INPUT_BODY}}',    cdata_escape(open(os.environ['JR_INPUT_BODY_FILE']).read()))
+       .replace('{{FINDINGS_BODY}}', cdata_escape(open(os.environ['JR_FINDINGS_BODY_FILE']).read())))
 open(sys.argv[2], 'w').write(out)
 PYEOF
 
@@ -187,34 +189,11 @@ fi
 
 [[ -s "$RAW_OUT" ]] || { echo -e "${RED}[judge/$AGENT] empty output${NC}" >&2; exit 1; }
 
-# Extract JSON object (strip ```json fences or grab first balanced {...}).
+# Extract and strictly validate the JSON object. Every input finding must have
+# exactly one verdict; malformed or incomplete summaries fail closed.
 mkdir -p "$(dirname "$OUT")"
-python3 - "$RAW_OUT" > "$OUT" <<'PYEOF'
-import json, re, sys
-raw = open(sys.argv[1]).read()
-fence = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
-candidate = fence.group(1) if fence else raw
-if not fence:
-    start = candidate.find("{")
-    if start < 0:
-        sys.stderr.write("no JSON object found in judge output\n"); sys.exit(2)
-    depth = 0
-    for i, c in enumerate(candidate[start:], start=start):
-        if c == "{": depth += 1
-        elif c == "}":
-            depth -= 1
-            if depth == 0:
-                candidate = candidate[start:i+1]; break
-    else:
-        sys.stderr.write("unbalanced braces in judge output\n"); sys.exit(2)
-try:
-    obj = json.loads(candidate)
-except Exception as e:
-    sys.stderr.write(f"json parse failed: {e}\n"); sys.exit(2)
-if "verdicts" not in obj or not isinstance(obj["verdicts"], list):
-    sys.stderr.write("judge output missing 'verdicts' array\n"); sys.exit(2)
-print(json.dumps(obj, indent=2))
-PYEOF
+python3 "$LIB_DIR/validate_judge_output.py" \
+    --raw-output "$RAW_OUT" --findings "$FINDINGS" --out "$OUT" || exit 2
 
 [[ -s "$OUT" ]] || { echo -e "${RED}[judge/$AGENT] JSON extraction failed${NC}" >&2; exit 2; }
 echo -e "${GREEN}[judge/$AGENT] ok → $OUT${NC}" >&2

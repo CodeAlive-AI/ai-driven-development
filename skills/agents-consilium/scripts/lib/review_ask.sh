@@ -15,6 +15,11 @@ source "$LIB_DIR/progress.sh"
 # shellcheck source=artifacts.sh
 source "$LIB_DIR/artifacts.sh"
 
+# Public review is always layered with the read-only/work-alone framework.
+# Raw prompting remains an internal backend/delegate capability, not a way to
+# strip the review contract through an inherited environment variable.
+unset CONSILIUM_RAW_PROMPT 2>/dev/null || true
+
 OUTPUT_FORMAT="markdown"
 LIST_ONLY=false
 PROMPT=""
@@ -54,7 +59,7 @@ Options:
                         compact = content-free liveness counters,
                         none = silent.
   --list-agents         Print agent plan as XML and exit
-  --prompt-file <path>  Send file contents verbatim (raw mode)
+  --prompt-file <path>  Read the question from a file (review policy still applies)
   -a, --agents <ID|GLOB>  Include agents (repeatable; globs ok)
   -x, --exclude <ID|GLOB> Exclude agents
   -h, --help
@@ -87,7 +92,6 @@ if [[ -n "$PROMPT_FILE" ]]; then
     fi
     PROMPT="$(cat "$PROMPT_FILE")"
     PROMPT_SOURCE="file"
-    export CONSILIUM_RAW_PROMPT=1
 fi
 
 if [[ ${#INCLUDE_PATTERNS[@]} -eq 0 && -n "${CONSILIUM_AGENTS:-}" ]]; then
@@ -125,6 +129,17 @@ if [[ "$PROMPT_SOURCE" == "positional" ]]; then
 fi
 
 export CONSILIUM_MODE="review-ask"
+# A single provider that never emits a first event must not hold the whole
+# independent panel forever. Ordinary backend_run/delegate calls remain
+# unlimited by default; public review fan-out gets a generous bounded default.
+_REVIEW_TIMEOUT="${CONSILIUM_REVIEW_TIMEOUT:-600}"
+if ! [[ "$_REVIEW_TIMEOUT" =~ ^[0-9]+$ ]]; then
+    echo -e "${RED}Error: CONSILIUM_REVIEW_TIMEOUT must be a non-negative integer${NC}" >&2
+    exit $EXIT_USAGE
+fi
+if [[ "${AGENT_TIMEOUT:-0}" -eq 0 && "$_REVIEW_TIMEOUT" -gt 0 ]]; then
+    export AGENT_TIMEOUT="$_REVIEW_TIMEOUT"
+fi
 artifacts_init_run "ask"
 
 ALL_AGENTS=()
@@ -174,6 +189,7 @@ ERR_FILES=()
 PROMPT_FILES=()
 LABELS=()
 MODELS=()
+EFFORTS=()
 ROLES=()
 BACKENDS=()
 STATUSES=()
@@ -184,14 +200,45 @@ _ASK_LIMIT="${CONSILIUM_MAX_PARALLEL:-0}"
 if ! [[ "$_ASK_LIMIT" =~ ^[0-9]+$ ]]; then _ASK_LIMIT=0; fi
 
 for agent in "${ENABLED_AGENTS[@]}"; do
-    backend="$(config_get_field "$agent" backend)"
-    label="$(config_get_field "$agent" label)"; label="${label:-$agent}"
-    model="$(config_get_field "$agent" model)"
-    role="$(config_get_field "$agent" role)"
+    out=$(mktemp)
+    err=$(mktemp)
+    prompt_file=$(mktemp)
+    # Report the same effective identity backend_run will execute, including
+    # per-invocation environment overrides. Static config fields are not
+    # runtime provenance.
+    if ! resolved="$(python3 "$LIB_DIR/backend_contract.py" resolve "$agent" --mode review 2>"$err")"; then
+        # One malformed profile must not abort the entire fan-out before healthy
+        # agents run. Record it as a normal per-agent config failure so ask can
+        # still return a partial report.
+        label="$(config_get_field "$agent" label 2>/dev/null || true)"; label="${label:-$agent}"
+        backend="$(config_get_field "$agent" backend 2>/dev/null || true)"
+        model="$(config_get_field "$agent" model 2>/dev/null || true)"
+        effort="$(config_get_field "$agent" effort 2>/dev/null || true)"
+        role="$(config_get_field "$agent" role 2>/dev/null || true)"; role="${role:-analyst}"
+        AGENT_IDS+=("$agent"); LABELS+=("$label"); MODELS+=("$model")
+        EFFORTS+=("$effort"); ROLES+=("$role"); BACKENDS+=("$backend")
+        PIDS+=(""); STATUSES+=("failed"); EXITS+=("$EXIT_CONFIG_ERROR")
+        OUT_FILES+=("$out"); ERR_FILES+=("$err"); PROMPT_FILES+=("$prompt_file")
+        progress_info "config-failed" "agent=$agent"
+        continue
+    fi
+    eval "$(RESOLVED_JSON="$resolved" python3 - <<'PY'
+import json, os, shlex
+d = json.loads(os.environ["RESOLVED_JSON"])
+for key in ("backend", "label", "model", "effort", "role"):
+    print(f"{key.upper()}={shlex.quote(str(d.get(key) or ''))}")
+PY
+)"
+    backend="$BACKEND"
+    label="${LABEL:-$agent}"
+    model="$MODEL"
+    effort="$EFFORT"
+    role="${ROLE:-analyst}"
 
     AGENT_IDS+=("$agent")
     LABELS+=("$label")
     MODELS+=("$model")
+    EFFORTS+=("$effort")
     ROLES+=("$role")
     BACKENDS+=("$backend")
 
@@ -199,13 +246,7 @@ for agent in "${ENABLED_AGENTS[@]}"; do
         progress_info "override" "agent=$agent forced via --agents (enabled=false)"
     fi
 
-    out=$(mktemp)
-    err=$(mktemp)
-    prompt_file=$(mktemp)
     EXTRA_ARGS=()
-    if [[ -n "${CONSILIUM_RAW_PROMPT:-}" ]]; then
-        EXTRA_ARGS+=(--raw)
-    fi
     if [[ -n "$STDIN_CONTENT" ]]; then
         # Append context to prompt for this agent
         agent_prompt="${PROMPT}"$'\n\n--- Input ---\n'"${STDIN_CONTENT}"
@@ -295,15 +336,17 @@ if [[ "$OUTPUT_FORMAT" == "xml" ]]; then
         agent="${AGENT_IDS[$i]}"
         label="${LABELS[$i]}"
         model="${MODELS[$i]}"
+        effort="${EFFORTS[$i]}"
         role="${ROLES[$i]}"
         backend="${BACKENDS[$i]}"
         status="${STATUSES[$i]}"
         code="${EXITS[$i]}"
-        printf '  <agent id="%s" label="%s" backend="%s" model="%s" role="%s" status="%s" exit-code="%s">\n' \
+        printf '  <agent id="%s" label="%s" backend="%s" model="%s" effort="%s" role="%s" status="%s" exit-code="%s">\n' \
             "$(printf '%s' "$agent"   | xml_escape)" \
             "$(printf '%s' "$label"   | xml_escape)" \
             "$(printf '%s' "$backend" | xml_escape)" \
             "$(printf '%s' "$model"   | xml_escape)" \
+            "$(printf '%s' "$effort"  | xml_escape)" \
             "$(printf '%s' "$role"    | xml_escape)" \
             "$status" "$code"
         case "$status" in
@@ -344,10 +387,15 @@ else
     for i in "${!AGENT_IDS[@]}"; do
         label="${LABELS[$i]}"
         model="${MODELS[$i]}"
+        effort="${EFFORTS[$i]}"
         status="${STATUSES[$i]}"
         code="${EXITS[$i]}"
         echo ""
-        echo "## ${label} Response (${model})"
+        if [[ -n "$effort" ]]; then
+            echo "## ${label} Response (${model}, effort=${effort})"
+        else
+            echo "## ${label} Response (${model})"
+        fi
         echo ""
         case "$status" in
             ok)      cat "${OUT_FILES[$i]}" ;;

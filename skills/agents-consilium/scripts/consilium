@@ -57,7 +57,8 @@ review code
   --depth specialists   5 specialists
   --depth super         multi-stage superreview + judge
   --depth ultra         multi-stage ultrareview + judge
-  Other options: --xml, --diff, -a/--agents, -x/--exclude, --dry-run (super/ultra),
+  Other options: --xml, --diff, --related FILE (repeatable), -a/--agents,
+                 -x/--exclude, --dry-run (super/ultra),
                  --judge, --no-fallback (ultra), --progress full|compact|none
 
 Live progress (all review depths)

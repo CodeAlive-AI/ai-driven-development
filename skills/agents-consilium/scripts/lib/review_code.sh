@@ -23,6 +23,7 @@
 #   code-review.sh -a opencode-go-kimi <file>     # ad-hoc agent override
 #   code-review.sh -a 'opencode-go-*' <file>      # glob: all OpenCode-Go agents
 #   code-review.sh -x codex <file>                # subtract from defaults
+#   code-review.sh --related config/app.yml --related tests/app_test.py <file>
 #   code-review.sh --mode specialists <file>      # 5-specialist deep review
 #   code-review.sh --help
 #
@@ -56,6 +57,9 @@
 #                        full (default) = thinking / answer previews,
 #                        compact = content-free liveness counters,
 #                        none = silent. Env fallback: CONSILIUM_PROGRESS.
+#   --related <path>     Add a caller-identified file to the initial relevance
+#                        seed. Repeatable. The primary target is added
+#                        automatically; the seed is explicitly non-exhaustive.
 #   -h, --help           Show this help.
 #
 # Environment overrides:
@@ -104,6 +108,7 @@ INPUT_KIND="file"        # file | diff
 INPUT_PATH=""
 INCLUDE_PATTERNS=()
 EXCLUDE_PATTERNS=()
+RELATED_FILES=()
 REVIEW_MODE="${CONSILIUM_REVIEW_MODE:-basic}"   # basic | specialists
 PROGRESS="${CONSILIUM_PROGRESS:-full}"
 
@@ -114,6 +119,18 @@ while [[ $# -gt 0 ]]; do
         --progress=*)
                      PROGRESS="${1#--progress=}"; shift ;;
         --diff)      INPUT_KIND="diff"; shift ;;
+        --related)
+                     shift
+                     [[ -n "${1:-}" ]] || { echo -e "${RED}Error: --related requires a path${NC}" >&2; exit $EXIT_USAGE; }
+                     RELATED_FILES+=("$1")
+                     shift
+                     ;;
+        --related=*)
+                     _related="${1#--related=}"
+                     [[ -n "$_related" ]] || { echo -e "${RED}Error: --related requires a path${NC}" >&2; exit $EXIT_USAGE; }
+                     RELATED_FILES+=("$_related")
+                     shift
+                     ;;
         --mode|--depth)
                      shift; REVIEW_MODE="${1:-}"; shift ;;
         --mode=*|--depth=*)
@@ -263,6 +280,8 @@ make_prompt() {
 
     local escaped_body
     escaped_body="${body//]]>/]]]]><![CDATA[>}"
+    local initial_relevant_files
+    initial_relevant_files="$(render_initial_relevant_files "$label" ${RELATED_FILES[@]+"${RELATED_FILES[@]}"})"
 
     cat <<PROMPT
 <input kind="${kind}" source="${label}">
@@ -270,6 +289,8 @@ make_prompt() {
 ${escaped_body}
 ]]>
 </input>
+
+${initial_relevant_files}
 
 <task>
 Perform a focused code review on the input above, restricted to your specialization.
@@ -279,11 +300,11 @@ Do NOT add prose, headings, markdown, or XML outside the <finding> elements.
 </task>
 
 <schema>
-<finding severity="critical|high|medium|low" category="security|correctness|performance|architecture|consistency" file="${label}" line-start="N" line-end="N" confidence="0.0..1.0">
+<finding severity="critical|high|medium|low" category="security|correctness|performance|architecture|consistency" file="repository-relative/path" line-start="N" line-end="N" confidence="0.0..1.0">
   <title>one-sentence summary</title>
   <rationale><![CDATA[why this is an issue; include ONE reason this might be a false positive]]></rationale>
   <suggested-fix><![CDATA[concrete code or steps]]></suggested-fix>
-  <quoted-code><![CDATA[the exact source text spanning lines line-start..line-end, taken verbatim from the input]]></quoted-code>
+  <quoted-code><![CDATA[the exact source text spanning lines line-start..line-end, taken verbatim from the cited file]]></quoted-code>
 </finding>
 </schema>
 
@@ -301,17 +322,17 @@ Adjustments: downgrade one level on mitigating factors (auth required, non-defau
 </severity_rubric>
 
 <rules>
-- Cite real line numbers. quoted-code MUST match the input text at those lines exactly; the caller validates this.
-- HALLUCINATION GATE: the finding MUST reference a symbol, expression, or construct that is actually present in <input>. Do not invent APIs, flags, parameters, or patterns that aren't there.
+- Cite the actual repository file and real line numbers. Use ${label} when citing the primary target; use a repository-relative path for another file. quoted-code MUST match that cited file at those lines exactly; the caller validates accessible repository paths.
+- HALLUCINATION GATE: the finding MUST reference a symbol, expression, or construct that is actually present in the input or repository evidence you inspected. Do not invent APIs, flags, parameters, or patterns that aren't there.
 - ACTIONABILITY GATE: every finding MUST cite a concrete line range AND include a concrete <suggested-fix> (real code or a precise instruction). Vague advice ("be careful with user input", "consider refactoring") = suppress.
-- FIX-CONSISTENCY GATE: for severity=critical|warning, re-read your rationale and suggested-fix as a pair. If the fix would not clearly eliminate the hypothesized defect, drop the finding (or downgrade to nit). An inability to write a coherent fix is a strong signal the defect is imaginary.
+- FIX-CONSISTENCY GATE: for severity=critical|high, re-read your rationale and suggested-fix as a pair. If the fix would not clearly eliminate the hypothesized defect, drop the finding (or downgrade to nit). An inability to write a coherent fix is a strong signal the defect is imaginary.
 - Confidence MUST reflect genuine uncertainty. A finding you are not sure about belongs at confidence <= 0.6.
 - Stay inside your specialization. Do not emit findings from other categories.
 - No nits unless they are on the critical path of the specialization.
 - OUTPUT: no upper bound on the number of findings. Emit every distinct, defensible finding that survives the gates above.
 - Tone: educational, not accusatory. Describe the issue and the fix; don't editorialize about the author.
 - Keep rationale under 6 sentences.
-- You have read-only access to the surrounding project directory. Use it: Read/Grep/Glob neighboring files, check call sites, look at tests, consult CLAUDE.md / README / config, and verify data flow before asserting a finding. Do not modify anything.
+- The input and initial relevant-file list are a likely-incomplete navigation seed, not an allowlist or scope boundary. You have read-only access to the surrounding project directory: independently search wider and deeper for the real blast radius. Read/Grep/Glob callers, callees, related implementations, tests, configuration, schemas/migrations, generated code, and build/CI/deployment/infra files; verify data flow before asserting a finding. Do not modify anything.
 </rules>
 PROMPT
 }

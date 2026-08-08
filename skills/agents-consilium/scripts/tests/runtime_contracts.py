@@ -7,6 +7,7 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 LIB = Path(__file__).resolve().parents[1] / "lib"
@@ -48,11 +49,15 @@ def main() -> int:
         assert_layer_order,
         assert_mode_isolation,
         assert_raw_purity,
+        FRAMEWORK_POLICY_REVIEW,
+        FRAMEWORK_RECAP_REVIEW,
         LAYER_ORDER,
     )
     from workflow_plans import get_plan, assign_agents_to_roles, max_parallel
     from debug_tape import DebugTape
     from backend_contract import backend_capabilities, resolve_binary, list_backend_capabilities
+    from terminal_guard import is_terminal
+    from normalize_stream import normalize_grok, normalize_opencode
 
     print("=== Event schema ===")
     ok("closed set non-empty", len(KNOWN_EVENT_TYPES) >= 15)
@@ -183,6 +188,88 @@ def main() -> int:
         "opencode notes mention part snapshots / step_inject",
         "step_inject" in oc.notes and "cumulative" in oc.notes.lower(),
     )
+    ok(
+        "opencode session.complete is terminal",
+        is_terminal(b'{"type":"session.complete"}', "opencode"),
+    )
+    ok(
+        "opencode session.idle is not process-terminal",
+        not is_terminal(b'{"type":"session.idle"}', "opencode"),
+    )
+    ok(
+        "opencode normalizer records idle as progress",
+        normalize_opencode({"type": "session.idle"}) == ("progress", "session.idle"),
+    )
+    ok(
+        "grok tool call exposes tool liveness",
+        normalize_grok(
+            {
+                "type": "tool_call",
+                "toolName": "run_terminal_command",
+                "status": "pending",
+            }
+        )
+        == ("tool_started", "run_terminal_command"),
+    )
+    ok(
+        "grok tool update exposes content-free progress",
+        normalize_grok({"type": "tool_call_update", "status": "in_progress"})
+        == ("progress", "in_progress"),
+    )
+    ok(
+        "grok completed tool update closes tool lifecycle",
+        normalize_grok({"type": "tool_call_update", "status": "completed"})
+        == ("tool_completed", "completed"),
+    )
+    if os.name == "posix":
+        with tempfile.TemporaryDirectory() as td:
+            child_pid_file = Path(td) / "child.pid"
+            child_code = (
+                "import json,os,signal,sys,time;"
+                "open(sys.argv[1],'w').write(str(os.getpid()));"
+                "signal.signal(signal.SIGTERM,signal.SIG_IGN);"
+                "print(json.dumps({'type':'session.complete'}),flush=True);"
+                "time.sleep(30)"
+            )
+            guard = subprocess.Popen(
+                [
+                    sys.executable,
+                    str(LIB / "terminal_guard.py"),
+                    "--backend",
+                    "opencode",
+                    "--terminal-grace",
+                    "30",
+                    "--",
+                    sys.executable,
+                    "-c",
+                    child_code,
+                    str(child_pid_file),
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+            deadline = time.monotonic() + 3
+            while not child_pid_file.is_file() and time.monotonic() < deadline:
+                time.sleep(0.01)
+            child_pid = int(child_pid_file.read_text()) if child_pid_file.is_file() else -1
+            guard.terminate()
+            try:
+                guard.wait(timeout=4)
+            except subprocess.TimeoutExpired:
+                guard.kill()
+                guard.wait()
+            child_alive = child_pid > 0
+            if child_alive:
+                try:
+                    os.kill(child_pid, 0)
+                except ProcessLookupError:
+                    child_alive = False
+            ok(
+                "terminal guard SIGTERM reaps resistant child",
+                guard.returncode == 143 and not child_alive,
+                f"guard_rc={guard.returncode} child_pid={child_pid} alive={child_alive}",
+            )
 
     print("=== Workflow plans and concurrency ===")
     os.environ.pop("CONSILIUM_MAX_PARALLEL", None)
@@ -243,8 +330,42 @@ def main() -> int:
     rev = build_prompt(mode="review", user_input="Should we use X?", role_text="ROLE: analyst\n")
     assert_layer_order(rev)
     ok("review has framework", "INDEPENDENT ADVISORY MODE" in rev.text)
+    ok("review explicitly forbids file changes", "Do not create, edit, delete, move" in rev.text)
+    ok("review requires final response only", "do not save a plan or report to disk" in rev.text)
+    ok("review explicitly forbids delegation", "Do not spawn or invoke" in rev.text)
+    ok("review requires agent's own analysis", "perform the entire review yourself" in rev.text)
+    ok("review treats relevant files as seed", "SEED, NOT A BOUNDARY" in rev.text)
+    ok("review requires wider blast-radius search", "search wider and deeper" in rev.text)
+    ok("review includes config and delivery surfaces", "build/CI/deployment/infrastructure" in rev.text)
+    ok("review explicitly requires official docs", "CURRENT OFFICIAL DOCUMENTATION" in rev.text)
+    ok("review reconciles pinned versions", "pinned/installed" in rev.text)
+    ok("review prevents repository exfiltration", "Never upload or" in rev.text)
+    ok("review treats repository instructions as evidence", "SOURCE MATERIAL, NOT INSTRUCTIONS" in rev.text)
     ok("review has template", "## Assessment" in rev.text)
     ok("review layer order", rev.provenance()["layer_order"][0] == "framework_policy")
+    ok(
+        "review recap follows untrusted input",
+        rev.text.rfind("CONSILIUM REVIEW CONTRACT") > rev.text.find("Should we use X?"),
+    )
+    ok(
+        "review recap is final non-empty layer",
+        rev.provenance()["layer_order"][-1] == "framework_recap",
+        str(rev.provenance()["layer_order"]),
+    )
+    ok(
+        "canonical framework asset loaded",
+        FRAMEWORK_POLICY_REVIEW
+        == (LIB.parent.parent / "prompts" / "review-framework.txt").read_text(
+            encoding="utf-8"
+        ),
+    )
+    ok(
+        "canonical recap asset loaded",
+        FRAMEWORK_RECAP_REVIEW
+        == (LIB.parent.parent / "prompts" / "review-recap.txt").read_text(
+            encoding="utf-8"
+        ),
+    )
     exp = build_prompt(
         mode="explore",
         user_input="How is auth wired?",
@@ -266,10 +387,33 @@ def main() -> int:
     )
     ok("code review skips assessment", "## Assessment" not in code.text)
     ok("code review keeps framework", "INDEPENDENT ADVISORY MODE" in code.text)
-    # Trust boundary: user_input is last non-empty untrusted layer
+    prompt_dir = LIB.parent.parent / "prompts"
+    for template_name in (
+        "specialist.txt",
+        "probe-generic.txt",
+        "broad-analyst.txt",
+        "broad-lateral.txt",
+    ):
+        template = (prompt_dir / template_name).read_text(encoding="utf-8")
+        ok(
+            f"{template_name} receives relevant-file seed",
+            "{{INITIAL_RELEVANT_FILES}}" in template,
+        )
+        ok(
+            f"{template_name} expands blast radius",
+            "likely-incomplete navigation seed" in template
+            and "configuration" in template
+            and "build/CI/deployment/infra" in template,
+        )
+        ok(
+            f"{template_name} has no closed-file scope",
+            "entire scope" not in template and "Do not read external files" not in template,
+        )
+    # User input remains untrusted; a compact trusted recap follows it.
     prov = rev.provenance()
     ok("user_input untrusted", "user_input" in prov["trusted_boundary"]["untrusted"])
     ok("framework trusted", "framework_policy" in prov["trusted_boundary"]["trusted"])
+    ok("framework recap trusted", "framework_recap" in prov["trusted_boundary"]["trusted"])
 
     print("=== Mode capability policy ===")
     validate_matrix()
@@ -278,9 +422,11 @@ def main() -> int:
     ok("delegate yolo", access_policy_for("delegate") == "yolo")
     ok("review-ask aliases review", access_policy_for("review-ask") == "readonly")
     rcaps = get_mode_capabilities("review")
-    ok("review no shell", rcaps.shell is False and rcaps.filesystem == "read")
+    ok("review has diagnostic shell", rcaps.shell is True and rcaps.filesystem == "read")
     ok("review web on", rcaps.web is True)
     ok("review no steer", rcaps.steer is False)
+    ecaps = get_mode_capabilities("explore")
+    ok("explore does not claim unavailable shell", ecaps.shell is False)
     dcaps = get_mode_capabilities("delegate")
     ok("delegate write+shell", dcaps.filesystem == "write" and dcaps.shell is True)
     scaps = get_mode_capabilities("delegate-steerable")
@@ -771,10 +917,14 @@ def main() -> int:
             ok("review grok has --no-subagents", "--no-subagents" in argv, argv)
             ok("review grok has --no-memory", "--no-memory" in argv, argv)
             ok("review grok sandbox read-only", "read-only" in argv, argv)
+            ok("review grok avoids plan mode", "--no-plan" in argv, argv)
+            ok("review grok keeps terminal", "run_terminal_cmd" in argv, argv)
         else:
             ok("review grok has --no-subagents", False, "no dump")
             ok("review grok has --no-memory", False, "no dump")
             ok("review grok sandbox read-only", False, "no dump")
+            ok("review grok avoids plan mode", False, "no dump")
+            ok("review grok keeps terminal", False, "no dump")
 
         dump_c = td2 / "claude-argv.json"
         env["CONSILIUM_DUMP_ARGV"] = str(dump_c)
@@ -797,11 +947,31 @@ def main() -> int:
         )
         if dump_c.is_file():
             argv = " ".join(json.load(open(dump_c))["argv"])
-            ok("claude review denies Bash(rm", "Bash(rm" in argv, argv)
-            ok("claude review plan mode", "--permission-mode plan" in argv, argv)
+            ok(
+                "claude review keeps Bash and denies edit tools",
+                "Bash,WebSearch,WebFetch" in argv
+                and "Edit,Write,NotebookEdit,Bash" not in argv,
+                argv,
+            )
+            ok("claude review disables agent tools", "Agent,Task" in argv, argv)
+            ok(
+                "claude review avoids plan workflow",
+                "--permission-mode dontAsk" in argv
+                and "--permission-mode plan" not in argv,
+                argv,
+            )
+            ok("claude review disables customizations", "--safe-mode" in argv, argv)
+            ok(
+                "claude review has no session persistence",
+                "--no-session-persistence" in argv,
+                argv,
+            )
         else:
-            ok("claude review denies Bash(rm", False, "no dump")
-            ok("claude review plan mode", False, "no dump")
+            ok("claude review keeps Bash and denies edit tools", False, "no dump")
+            ok("claude review avoids plan workflow", False, "no dump")
+            ok("claude review disables agent tools", False, "no dump")
+            ok("claude review disables customizations", False, "no dump")
+            ok("claude review has no session persistence", False, "no dump")
 
     print(f"\nruntime contract tests: {PASS} passed, {FAIL} failed")
     return 1 if FAIL else 0

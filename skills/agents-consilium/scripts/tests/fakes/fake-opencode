@@ -3,6 +3,13 @@ set -euo pipefail
 LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
 python3 -c '
 import json, os, sys
+try:
+    inline = json.loads(os.environ.get("OPENCODE_CONFIG_CONTENT", "{}"))
+    review_agent = inline.get("agent", {}).get("consilium-review", {})
+    perms = review_agent.get("permission", {})
+except Exception:
+    review_agent = {}
+    perms = {}
 print(json.dumps({
     "bin": "opencode",
     "argv": sys.argv[1:],
@@ -12,6 +19,8 @@ print(json.dumps({
     "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
     "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
     "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+    "review_policy": {k: perms.get(k) for k in ("edit", "task", "bash")},
+    "review_agent_prompt": review_agent.get("prompt", ""),
 }))
 ' -- "$@" >> "$LOG"
 
@@ -19,8 +28,17 @@ if printf '%s\n' "$@" | grep -qx -- 'json' || printf '%s\n' "$@" | grep -q -- '-
   # emit json when format json requested
   for a in "$@"; do
     if [[ "$a" == "json" ]]; then
+      if [[ -n "${CONSILIUM_FAKE_OPENCODE_IDLE_BEFORE_TEXT:-}" ]]; then
+        echo '{"type":"session.idle"}'
+      fi
       echo '{"type":"text","text":"FAKE_OPENCODE_OK"}'
       echo '{"type":"session.complete"}'
+      if [[ -n "${CONSILIUM_FAKE_OPENCODE_TEXT_AFTER_COMPLETE:-}" ]]; then
+        echo '{"type":"text","text":"AFTER_COMPLETE"}'
+      fi
+      if [[ -n "${CONSILIUM_FAKE_OPENCODE_HANG_AFTER_COMPLETE:-}" ]]; then
+        sleep "${CONSILIUM_FAKE_OPENCODE_HANG_SECONDS:-30}"
+      fi
       exit 0
     fi
   done

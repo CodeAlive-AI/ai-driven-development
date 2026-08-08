@@ -9,12 +9,14 @@
 #     --prompt <prompt-template.txt> \
 #     --input-kind <file|diff> --input-label <label> \
 #     --input-body-file <path-to-line-numbered-or-raw-body> \
+#     [--initial-relevant-files-file <path>] \
 #     --out <output.xml> \
 #     [--artifact-key <key>] [--keep-tmp]
 #
 # Behaviour:
-#   - Renders {{INPUT_KIND}}, {{INPUT_LABEL}}, {{INPUT_BODY}}, {{ROLE}},
-#     {{CAP_DIRECTIVE}} into the chosen prompt.
+#   - Renders {{INPUT_KIND}}, {{INPUT_LABEL}}, {{INPUT_BODY}},
+#     {{INITIAL_RELEVANT_FILES}}, {{ROLE}}, and {{CAP_DIRECTIVE}} into the
+#     chosen prompt.
 #   - Resolves backend via $CONSILIUM_CONFIG (default: skill's config.json).
 #   - Keeps temp artifacts under an isolated /tmp dir but runs the backend
 #     from the caller's original CWD (so project files remain readable).
@@ -42,6 +44,7 @@ if [[ -f "$LIB_DIR/common.sh" ]]; then source "$LIB_DIR/common.sh"; fi
 
 AGENT=""; ROLE=""; CAP="uncapped"; PROMPT=""
 INPUT_KIND="file"; INPUT_LABEL=""; INPUT_BODY_FILE=""; OUT=""; KEEP_TMP=""
+INITIAL_RELEVANT_FILES_FILE=""
 ARTIFACT_KEY_ARG=""
 
 while [[ $# -gt 0 ]]; do
@@ -53,6 +56,7 @@ while [[ $# -gt 0 ]]; do
         --input-kind)        INPUT_KIND="$2"; shift 2 ;;
         --input-label)       INPUT_LABEL="$2"; shift 2 ;;
         --input-body-file)   INPUT_BODY_FILE="$2"; shift 2 ;;
+        --initial-relevant-files-file) INITIAL_RELEVANT_FILES_FILE="$2"; shift 2 ;;
         --out)               OUT="$2"; shift 2 ;;
         --artifact-key)      ARTIFACT_KEY_ARG="$2"; shift 2 ;;
         --keep-tmp)          KEEP_TMP=1; shift ;;
@@ -71,6 +75,10 @@ for var in AGENT ROLE PROMPT INPUT_LABEL INPUT_BODY_FILE OUT; do
 done
 [[ -f "$PROMPT" ]]          || { echo -e "${RED}Error: prompt not found: $PROMPT${NC}" >&2; exit 4; }
 [[ -f "$INPUT_BODY_FILE" ]] || { echo -e "${RED}Error: body file not found: $INPUT_BODY_FILE${NC}" >&2; exit 4; }
+if [[ -n "$INITIAL_RELEVANT_FILES_FILE" && ! -f "$INITIAL_RELEVANT_FILES_FILE" ]]; then
+    echo -e "${RED}Error: initial relevant-files file not found: $INITIAL_RELEVANT_FILES_FILE${NC}" >&2
+    exit 4
+fi
 
 CONSILIUM_CONFIG="${CONSILIUM_CONFIG:-$SKILL_DIR/config.json}"
 [[ -f "$CONSILIUM_CONFIG" ]] || { echo -e "${RED}Error: config not found: $CONSILIUM_CONFIG${NC}" >&2; exit 4; }
@@ -107,22 +115,30 @@ export DP_INPUT_LABEL="$INPUT_LABEL"
 export DP_INPUT_BODY_FILE="$INPUT_BODY_FILE"
 export DP_ROLE="$ROLE"
 export DP_CAP_DIRECTIVE="$CAP_DIRECTIVE"
+if [[ -z "$INITIAL_RELEVANT_FILES_FILE" ]]; then
+    INITIAL_RELEVANT_FILES_FILE="$TMP_DIR/initial-relevant-files.txt"
+    render_initial_relevant_files "$INPUT_LABEL" > "$INITIAL_RELEVANT_FILES_FILE"
+fi
+export DP_INITIAL_RELEVANT_FILES_FILE="$INITIAL_RELEVANT_FILES_FILE"
 RENDERED_PROMPT_FILE="$TMP_DIR/rendered-prompt.txt"
 python3 - "$PROMPT" "$RENDERED_PROMPT_FILE" <<'PYEOF'
 import os, sys
 tpl = open(sys.argv[1]).read()
 body = open(os.environ['DP_INPUT_BODY_FILE']).read()
+body = body.replace(']]>', ']]]]><![CDATA[>')
+seed = open(os.environ['DP_INITIAL_RELEVANT_FILES_FILE']).read()
 out = (tpl
        .replace('{{INPUT_KIND}}',    os.environ.get('DP_INPUT_KIND', ''))
        .replace('{{INPUT_LABEL}}',   os.environ.get('DP_INPUT_LABEL', ''))
        .replace('{{INPUT_BODY}}',    body)
+       .replace('{{INITIAL_RELEVANT_FILES}}', seed)
        .replace('{{ROLE}}',          os.environ.get('DP_ROLE', ''))
        .replace('{{CAP_DIRECTIVE}}', os.environ.get('DP_CAP_DIRECTIVE', '')))
 open(sys.argv[2], 'w').write(out)
 PYEOF
 
 # Drop render helpers before the backend child starts.
-unset DP_INPUT_KIND DP_INPUT_LABEL DP_INPUT_BODY_FILE DP_ROLE DP_CAP_DIRECTIVE
+unset DP_INPUT_KIND DP_INPUT_LABEL DP_INPUT_BODY_FILE DP_INITIAL_RELEVANT_FILES_FILE DP_ROLE DP_CAP_DIRECTIVE
 
 # Explicit key from fan-out, or an invocation-unique safe default. Never rely
 # solely on an ambient inherited CONSILIUM_ARTIFACT_KEY (would collide).

@@ -110,6 +110,25 @@ MODE_CAP_FILESYSTEM="$(
 )"
 [[ -n "$AGENT_ID" ]] || { echo "Error: --agent-id required" >&2; exit $EXIT_USAGE; }
 
+# Bound every review-family backend, not only `review ask`: code-review fan-out
+# can be held just as easily by a provider that never emits its first event.
+# Delegate and explore retain their existing timeout semantics.
+if [[ "$ACCESS_POLICY" == "readonly" && "$MODE" != "explore" && "$AGENT_TIMEOUT" -eq 0 ]]; then
+    _REVIEW_TIMEOUT="${CONSILIUM_REVIEW_TIMEOUT:-600}"
+    if ! [[ "$_REVIEW_TIMEOUT" =~ ^[0-9]+$ ]]; then
+        echo "Error: CONSILIUM_REVIEW_TIMEOUT must be a non-negative integer" >&2
+        exit $EXIT_USAGE
+    fi
+    if [[ "$_REVIEW_TIMEOUT" -gt 0 ]]; then
+        AGENT_TIMEOUT="$_REVIEW_TIMEOUT"
+        if command -v timeout &>/dev/null; then
+            TIMEOUT_CMD="timeout"
+        elif command -v gtimeout &>/dev/null; then
+            TIMEOUT_CMD="gtimeout"
+        fi
+    fi
+fi
+
 config_validate || exit $EXIT_CONFIG_ERROR
 
 # Shared backend contract: identity, model/effort, binary, capabilities.
@@ -342,12 +361,17 @@ artifacts_paths_for "$ARTIFACT_KEY"
 CMD=()
 PROMPT_VIA_FILE=0
 PROMPT_FILE_PATH=""
+RUNTIME_SETTINGS_FILE=""
 
 build_cmd_codex() {
     local approval_sandbox
     CMD=("$BIN")
     # Top-level -a is ask-for-approval
     if [[ "$ACCESS_POLICY" == "readonly" ]]; then
+        CMD+=(--disable multi_agent --disable multi_agent_v2)
+        if [[ "${MODE_CAP_WEB:-true}" == "true" || "${MODE_CAP_WEB:-1}" == "1" ]]; then
+            CMD+=(--search)
+        fi
         CMD+=(-a never)
         if [[ -n "$EFFORT" ]]; then
             CMD+=(-c "model_reasoning_effort=\"$EFFORT\"")
@@ -371,22 +395,25 @@ build_cmd_codex() {
 
 build_cmd_claude() {
     # -p enables headless print mode; the complete prompt is read from stdin.
-    # Mode capability matrix drives write/shell denial; Claude flags enforce it.
+    # Review uses Claude's normal tool loop, not its plan workflow.
     CMD=("$BIN")
     if [[ "$ACCESS_POLICY" == "readonly" ]]; then
-        CMD+=(--permission-mode plan)
-        # Defense in depth: deny write tools even if plan is misconfigured.
-        # Also deny shell-mutation patterns when the CLI supports tool specs
-        # (verified: --disallowedTools accepts "Bash(...)" patterns).
-        # Full Bash deny would break readonly inspection that uses Bash(ls)/grep;
-        # we deny common mutation forms only — plan mode remains primary.
-        CMD+=(--disallowedTools "Edit,Write,NotebookEdit,Bash(rm *),Bash(git commit *),Bash(git push *),Bash(sudo *)")
-        # plan mode withholds permission for WebSearch/WebFetch, so a headless
-        # review silently loses web access and says so mid-answer. --allowedTools
-        # pre-approves rather than restricts: Read/Grep/Glob stay available
-        # (verified against Claude Code 2.1.220). Web grant follows mode_policy.web.
+        # `plan` is the wrong workflow for an independent review: Claude Code
+        # deliberately creates a plan artifact under ~/.claude/plans. dontAsk
+        # stays non-interactive without activating that workflow. Dedicated
+        # edit tools remain unavailable; Bash is trusted to follow the review
+        # prompt's report-only contract so git/rg/test diagnostics still work.
+        CMD+=(--permission-mode dontAsk)
+        # Preserve the full review loop while disabling project/user
+        # customizations, hooks, MCP, custom agents, browser integration, and
+        # on-disk session history. Unlike --bare, safe-mode does not force an
+        # API-key-only authentication path.
+        CMD+=(--safe-mode --no-session-persistence --no-chrome)
+        CMD+=(--disallowedTools "Edit,Write,NotebookEdit,Agent,Task")
         if [[ "${MODE_CAP_WEB:-true}" == "true" || "${MODE_CAP_WEB:-1}" == "1" ]]; then
-            CMD+=(--allowedTools "WebSearch,WebFetch")
+            CMD+=(--allowedTools "Bash,WebSearch,WebFetch")
+        else
+            CMD+=(--allowedTools "Bash")
         fi
     else
         CMD+=(--dangerously-skip-permissions)
@@ -407,7 +434,12 @@ build_cmd_claude() {
 build_cmd_opencode() {
     CMD=("$BIN" run --pure)
     if [[ "$ACCESS_POLICY" == "readonly" ]]; then
-        CMD+=(--agent plan)
+        # The built-in plan agent is a planning workflow with its own plan-file
+        # permissions. Review needs the full analysis/tool loop instead. Define
+        # a primary review agent at runtime: full shell/search, no edits or task
+        # delegation. The trusted prompt carries the report-only contract.
+        export OPENCODE_CONFIG_CONTENT='{"agent":{"consilium-review":{"description":"Independent read-only review performed without delegation","prompt":"Review independently and read-only. Work alone: never use task delegation, subagents, other models, or external workers. Use Bash, search, and read tools to inspect any repository files needed for the real blast radius. Return only the report; never modify files or external state.","mode":"primary","permission":{"edit":"deny","task":"deny","bash":"allow","read":"allow","glob":"allow","grep":"allow","list":"allow","lsp":"allow","webfetch":"allow","websearch":"allow"}}}}'
+        CMD+=(--agent consilium-review --auto)
     else
         # --auto is current (opencode run --help): auto-approve non-denied permissions
         CMD+=(--agent build --auto)
@@ -424,9 +456,17 @@ build_cmd_opencode() {
 }
 
 build_cmd_gemini() {
-    # Review only. Non-TTY stdin selects headless mode without putting the
-    # potentially large prompt in argv.
-    CMD=("$BIN" --model "$MODEL" --approval-mode plan -o text -e "" --allowed-mcp-server-names "")
+    # Review only. Gemini Plan Mode is a planning workflow that writes a plan
+    # artifact and restricts tools. YOLO keeps headless review fully capable;
+    # extensions/MCP stay disabled and the trusted prompt forbids mutations and
+    # delegation. Non-TTY stdin keeps the potentially large prompt off argv.
+    # Gemini enables built-in subagents by default. A highest-precedence
+    # temporary system settings file disables them for this invocation; `-e
+    # none` is the documented way to disable every extension.
+    RUNTIME_SETTINGS_FILE="$(mktemp "${TMPDIR:-/tmp}/consilium-gemini-settings.XXXXXX")"
+    printf '%s\n' '{"experimental":{"enableAgents":false,"extensionManagement":false,"extensionConfig":false}}' > "$RUNTIME_SETTINGS_FILE"
+    export GEMINI_CLI_SYSTEM_SETTINGS_PATH="$RUNTIME_SETTINGS_FILE"
+    CMD=("$BIN" --model "$MODEL" --approval-mode yolo -o text -e none --allowed-mcp-server-names "")
 }
 
 build_cmd_grok() {
@@ -466,13 +506,13 @@ build_cmd_grok() {
         # The allowlist is exhaustive, so web tools must be named explicitly —
         # verified against Grok Build 0.2.112: without them the model reports it
         # has no web tool, with them it retrieves and cites live sources.
-        CMD+=(--sandbox read-only)
+        CMD+=(--sandbox read-only --no-plan)
         if [[ "${MODE_CAP_WEB:-true}" == "true" ]]; then
-            CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
+            CMD+=(--tools "read_file,grep,list_dir,run_terminal_cmd,web_search,web_fetch")
         else
-            CMD+=(--tools "read_file,grep,list_dir")
+            CMD+=(--tools "read_file,grep,list_dir,run_terminal_cmd")
         fi
-        CMD+=(--disallowed-tools "search_replace,write,run_terminal_cmd,Agent")
+        CMD+=(--disallowed-tools "search_replace,write,Agent")
         # mode_policy review: memory=false, subagents=false — enforce when
         # flags exist (Grok Build supports both).
         if [[ "${MODE_CAP_SUBAGENTS:-false}" != "true" ]]; then
@@ -525,12 +565,16 @@ with open(os.environ["DUMP_ARGV_PATH"], "w") as f:
     json.dump(obj, f)
     f.write("\n")
 '
+    [[ -z "$RUNTIME_SETTINGS_FILE" ]] || rm -f "$RUNTIME_SETTINGS_FILE"
     exit $EXIT_OK
 fi
 
 # Prepare temp files
 TMP_DIR="$(mktemp -d "${TMPDIR:-/tmp}/consilium-backend.XXXXXX")"
-cleanup_backend() { rm -rf "$TMP_DIR"; }
+cleanup_backend() {
+    rm -rf "$TMP_DIR"
+    [[ -z "$RUNTIME_SETTINGS_FILE" ]] || rm -f "$RUNTIME_SETTINGS_FILE"
+}
 trap cleanup_backend EXIT
 
 RAW_STREAM="$TMP_DIR/raw.stream"
@@ -550,6 +594,20 @@ BACKEND_ERR="$TMP_DIR/stderr.txt"
 : > "$RAW_STREAM"
 : > "$FINAL_TEXT"
 
+redact_backend_stderr() {
+    [[ -s "$BACKEND_ERR" ]] || return 0
+    local redacted="$TMP_DIR/stderr.redacted.txt"
+    if python3 "$LIB_DIR/redact_stream.py" \
+        --input "$BACKEND_ERR" --output "$redacted"; then
+        mv "$redacted" "$BACKEND_ERR"
+    else
+        # Fail closed for display: never print an unredacted backend diagnostic
+        # merely because the redactor itself failed.
+        printf '%s\n' '[backend stderr redaction failed; original diagnostic suppressed]' \
+            > "$BACKEND_ERR"
+    fi
+}
+
 # Unbuffered Python so progress/raw flushes reach the parent before backend exit.
 export PYTHONUNBUFFERED=1
 
@@ -562,10 +620,21 @@ run_streamed() {
     local stdin_file="$2"
     shift 2
     local -a run_argv=("$@")
+    if [[ "$backend" == "opencode" ]]; then
+        run_argv=(
+            python3 "$LIB_DIR/terminal_guard.py"
+            --backend opencode
+            --terminal-grace "${CONSILIUM_TERMINAL_GRACE:-2}"
+            -- "${run_argv[@]}"
+        )
+    fi
     local -a norm_argv=(
         python3 "$LIB_DIR/normalize_stream.py"
         --backend "$backend"
         --agent-id "$AGENT_ID"
+        --model "$MODEL"
+        --effort "$EFFORT"
+        --access-policy "$ACCESS_POLICY"
         --input -
         --raw-out "$RAW_STREAM"
         --extract-text --text-out "$FINAL_TEXT"
@@ -850,6 +919,10 @@ set +e
 run_and_capture
 RC=$?
 set -e
+
+# Parent workflows tee and archive this diagnostic, so scrub before any display
+# or handoff. The unredacted temp file is replaced in place.
+redact_backend_stderr
 
 # Persist artifacts (best-effort; never fail the run on copy issues)
 if [[ -n "${ART_RAW:-}" ]]; then

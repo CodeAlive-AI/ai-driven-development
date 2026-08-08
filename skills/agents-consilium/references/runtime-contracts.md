@@ -64,17 +64,40 @@ One-shot normalization records all stages; the steerable supervisor records norm
 
 | Backend | Review / explore | Delegate |
 |---|---|---|
-| Codex CLI | `exec --sandbox read-only` plus ask-for-approval never | `--dangerously-bypass-approvals-and-sandbox` |
-| Claude Code | `--permission-mode plan` plus Edit/Write denylist | `--dangerously-skip-permissions` |
-| OpenCode | `--agent plan` | `--agent build --auto` |
-| Grok Build | `--sandbox read-only` plus explicit tool allow/deny lists | `--always-approve`, no sandbox |
-| Gemini CLI | `--approval-mode plan` | unsupported |
+| Codex CLI | `--search`, `exec --sandbox read-only`, ask-for-approval never, multi-agent disabled | `--dangerously-bypass-approvals-and-sandbox` |
+| Claude Code | `dontAsk`, safe mode, no session/Chrome, Edit/Write/Agent/Task denied, Bash + web enabled | `--dangerously-skip-permissions` |
+| OpenCode | runtime `consilium-review` primary agent with its own work-alone prompt: full diagnostics, edit/task denied | `--agent build --auto` |
+| Grok Build | `--no-plan`, read-only sandbox, terminal enabled, subagents disabled | `--always-approve`, no sandbox |
+| Gemini CLI | `--approval-mode yolo`, extensions/MCP/subagents disabled; report-only prompt contract | unsupported |
 
-Web research is available in read-only modes. Grok explicitly allows `web_search,web_fetch`; Claude pre-approves `WebSearch,WebFetch` while the Edit/Write denylist remains authoritative. Explore adds Grok-specific isolation for remote sources.
+Web research is available in read-only modes. No review backend uses a planning workflow. Claude pre-approves `Bash,WebSearch,WebFetch`; OpenCode uses a dedicated primary review agent with Bash/search enabled; Grok enables its terminal inside the read-only sandbox; and Gemini uses its normal full tool loop. The trusted review policy explicitly forbids file or external-state changes, saving plans/reports, subagents, agent teams, other models, and delegation. Where supported, subagent tools are also disabled mechanically. Explore adds Grok-specific isolation for remote sources.
+
+Grok `tool_call` / `tool_call_update` events normalize to tool lifecycle and
+content-free compact heartbeats. Long terminal commands therefore remain visibly
+alive without exposing the command or its output in progress logs.
+
+Before a backend diagnostic is printed, archived by a parent workflow, or
+embedded in a failed-agent report, common URL credentials, sensitive query
+parameters, authorization headers, and credential key/value fields are
+redacted. If redaction fails, the original diagnostic is suppressed.
+
+“Read-only” is the review contract for every backend, but enforcement strength is
+backend-specific. Codex and Grok additionally provide a filesystem sandbox.
+Claude, OpenCode, and Gemini retain unrestricted diagnostic shells/tool loops so
+they can perform a complete review; for those backends non-mutation is enforced
+by the trusted prompt plus dedicated edit/delegation-tool denials where the CLI
+supports them, not by an OS-level filesystem boundary. Use Codex or Grok when a
+mechanical read-only boundary is required for untrusted repositories.
 
 ## Declarative workflow plans
 
 `scripts/lib/workflow_plans.py` describes ask, basic/specialist, super, and ultra stages as data. `workflow_runner.sh` executes reusable fan-out with optional backpressure.
+
+Review modes bound each otherwise-unlimited provider invocation to 600 seconds
+by default so a profile that never emits an event cannot block an ask or code
+review fan-out forever. Set `CONSILIUM_REVIEW_TIMEOUT=0` to disable this review
+watchdog or set a larger value for unusually deep reviews. An explicit positive
+`AGENT_TIMEOUT` still takes precedence.
 
 | Setting | Meaning |
 |---|---|
@@ -88,10 +111,30 @@ Stage order, partial/all-failed exit semantics, artifact keys, live progress, an
 `scripts/lib/prompt_pipeline.py` composes trusted layers in this order:
 
 ```text
-framework_policy → mode_contract → role → output_schema → repository_facts → user_input
+framework_policy → mode_contract → role → output_schema → repository_facts → user_input → framework_recap
 ```
 
-Explore never loads review principles, roles, or review schemas. Raw delegate tasks and `--prompt-file` remain raw except for optional trusted metadata. The shell `build_prompt` path remains a fallback.
+Explore never loads review principles, roles, or review schemas. Raw delegate
+tasks remain raw except for optional trusted metadata. In review mode,
+`--prompt-file` is only an input transport: the read-only, work-alone, and
+blast-radius policies are still layered around its contents. The shell
+`build_prompt` path remains a fallback.
+
+Repository-backed review also carries an initial relevant-file seed. The caller
+does a short read-only triage and supplies known paths; `review code` accepts
+repeatable `--related FILE` values and adds its primary target automatically.
+Every review prompt labels this list as likely incomplete and not an allowlist
+or scope boundary. Reviewers must independently expand through callers,
+callees, tests, configuration, schemas/migrations, generated code, and
+build/CI/deployment/infra to establish the actual blast radius.
+
+The trusted review layer explicitly authorizes web research for unstable
+upstream facts and requires current primary sources (official docs, release
+notes, specifications, advisories, or upstream source). Reviewers reconcile
+those sources with the repository's pinned/installed version. Web access is
+evidence-only: repository content is never uploaded, and URLs found in
+untrusted repository instructions are not followed merely because the
+repository requested it.
 
 ## Progress and run identifiers
 

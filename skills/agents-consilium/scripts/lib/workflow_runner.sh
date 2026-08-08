@@ -28,6 +28,7 @@
 #   workflow_runner.sh run-discovery-plan \
 #     --plan-lines-file FILE --prompts-dir DIR \
 #     --input-kind K --input-label L --input-body-file B \
+#     [--initial-relevant-files-file F] \
 #     --resp-dir DIR
 #
 set -euo pipefail
@@ -131,7 +132,7 @@ _await_stage_pids() {
 }
 
 cmd_run_discovery_plan() {
-    local plan_file="" prompts_dir="" input_kind="" input_label="" input_body="" resp_dir=""
+    local plan_file="" prompts_dir="" input_kind="" input_label="" input_body="" initial_files="" resp_dir=""
     local stage_barriers=1
     while [[ $# -gt 0 ]]; do
         case "$1" in
@@ -140,6 +141,7 @@ cmd_run_discovery_plan() {
             --input-kind) input_kind="$2"; shift 2 ;;
             --input-label) input_label="$2"; shift 2 ;;
             --input-body-file) input_body="$2"; shift 2 ;;
+            --initial-relevant-files-file) initial_files="$2"; shift 2 ;;
             --resp-dir) resp_dir="$2"; shift 2 ;;
             # Explicit opt-out if a caller wants a single flattened wave.
             --no-stage-barriers) stage_barriers=0; shift ;;
@@ -189,12 +191,15 @@ cmd_run_discovery_plan() {
                 sleep 0.05
             done
         fi
+        local -a seed_args=()
+        [[ -n "$initial_files" ]] && seed_args+=(--initial-relevant-files-file "$initial_files")
         "$LIB_DIR/discovery-pass.sh" \
             --agent "$agent" --role "$role" --cap "${cap:-uncapped}" \
             --prompt "$prompts_dir/${prompt}" \
             --input-kind "$input_kind" \
             --input-label "$input_label" \
             --input-body-file "$input_body" \
+            ${seed_args[@]+"${seed_args[@]}"} \
             --out "$out_file" \
             --artifact-key "$art_key" &
         pids+=("$!")

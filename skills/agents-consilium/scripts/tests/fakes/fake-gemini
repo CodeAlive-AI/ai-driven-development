@@ -3,6 +3,11 @@ set -euo pipefail
 LOG="${CONSILIUM_FAKE_ARGV_LOG:-/dev/null}"
 python3 -c '
 import json, os, sys
+settings_path = os.environ.get("GEMINI_CLI_SYSTEM_SETTINGS_PATH", "")
+try:
+    settings = json.load(open(settings_path)) if settings_path else {}
+except Exception:
+    settings = {}
 print(json.dumps({
     "bin": "gemini",
     "argv": sys.argv[1:],
@@ -12,6 +17,8 @@ print(json.dumps({
     "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
     "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
     "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+    "system_settings_path_set": bool(settings_path),
+    "agents_enabled": settings.get("experimental", {}).get("enableAgents"),
 }))
 ' -- "$@" >> "$LOG"
 MODE="${CONSILIUM_FAKE_GEMINI_MODE:-ok}"

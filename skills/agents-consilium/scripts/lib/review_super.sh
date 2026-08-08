@@ -32,6 +32,7 @@
 #   superreview.sh --dry-run <file>        # plan + check config; no LLM calls
 #   superreview.sh --judge <agent-id> ..   # override judge (default claude-sonnet)
 #   superreview.sh --progress compact ..   # live progress style: full|compact|none
+#   superreview.sh --related FILE ..       # repeatable initial relevance seed
 #   superreview.sh --keep-tmp <file>       # retain $RESP_DIR for inspection
 #   superreview.sh --help
 #
@@ -67,6 +68,7 @@ DRY_RUN=""
 KEEP_TMP=""
 JUDGE_AGENT="claude-sonnet"
 PROGRESS="${CONSILIUM_PROGRESS:-full}"
+RELATED_FILES=()
 
 # progress.sh is sourced best-effort above; keep this pipeline runnable without it.
 if ! declare -F progress_set_style >/dev/null 2>&1; then
@@ -82,6 +84,8 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --xml)        OUTPUT_FORMAT="xml"; shift ;;
         --diff)       INPUT_KIND="diff"; shift ;;
+        --related)    [[ -n "${2:-}" ]] || { echo -e "${RED}Error: --related requires a path${NC}" >&2; exit 5; }; RELATED_FILES+=("$2"); shift 2 ;;
+        --related=*)  _related="${1#--related=}"; [[ -n "$_related" ]] || { echo -e "${RED}Error: --related requires a path${NC}" >&2; exit 5; }; RELATED_FILES+=("$_related"); shift ;;
         --progress)   shift; PROGRESS="${1:-}"; shift ;;
         --progress=*) PROGRESS="${1#--progress=}"; shift ;;
         --dry-run)    DRY_RUN=1; shift ;;
@@ -170,6 +174,9 @@ else
     exit 5
 fi
 
+INITIAL_RELEVANT_FILES_FILE="$TMP_ROOT/initial-relevant-files.txt"
+render_initial_relevant_files "$INPUT_LABEL" ${RELATED_FILES[@]+"${RELATED_FILES[@]}"} > "$INITIAL_RELEVANT_FILES_FILE"
+
 # ------ Plan ---------------------------------------------------------------
 total_passes=$(( ${#SMALL_PASSES[@]} + ${#FRONTIER_PASSES[@]} ))
 note "${CYAN}superreview (h9): $total_passes discovery + 1 judge ($JUDGE_AGENT) on '$INPUT_LABEL'${NC}" 
@@ -221,6 +228,7 @@ SUMMARY="$("$LIB_DIR/workflow_runner.sh" run-discovery-plan \
     --input-kind "$INPUT_KIND" \
     --input-label "$INPUT_LABEL" \
     --input-body-file "$INPUT_BODY_FILE" \
+    --initial-relevant-files-file "$INITIAL_RELEVANT_FILES_FILE" \
     --resp-dir "$RESP_DIR")"
 disc_rc=$?
 set -e

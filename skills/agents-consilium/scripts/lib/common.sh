@@ -70,25 +70,36 @@ cdata_wrap() {
     printf '<![CDATA[%s]]>' "$content"
 }
 
-# Shared principles for all consilium agents — intellectual independence & anti-bias
-CONSILIUM_PRINCIPLES="[CONSILIUM — INDEPENDENT ADVISORY MODE]
+# Canonical review policy assets are shared with prompt_pipeline.py so the
+# normal Python path and the shell fallback cannot drift.
+_CONSILIUM_COMMON_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONSILIUM_PRINCIPLES="$(cat "$_CONSILIUM_COMMON_DIR/../../prompts/review-framework.txt")"
+CONSILIUM_RECAP="$(cat "$_CONSILIUM_COMMON_DIR/../../prompts/review-recap.txt")"
 
-You are an independent expert consulted for your honest, unfiltered perspective.
-You were brought in precisely BECAUSE a different viewpoint is needed.
-
-THINKING PRINCIPLES:
-1. Think from first principles. Do NOT simply validate the framing of the question.
-2. If the question presents options A/B/C — consider whether D or E exist that weren't mentioned.
-3. Actively look for unstated assumptions, hidden constraints, and blind spots in the query.
-4. If you disagree with the premise of the question, say so directly.
-5. Your value is in intellectual honesty, not agreeableness. Disagreement is welcome.
-6. Consider perspectives outside the immediate domain — cross-cutting concerns, operational reality, user impact.
-7. State your confidence level explicitly. Distinguish what you know from what you suspect.
-
-OPERATIONAL RULES:
-- READ ONLY: Do NOT create, edit, or delete files. Do NOT implement changes.
-- Describe what SHOULD be done and WHY. Another agent implements.
-"
+# Render the caller's known file paths as a deliberately non-exhaustive review
+# seed. Paths are source material, so keep them inside CDATA and split any CDATA
+# terminator rather than interpolating them into XML attributes.
+render_initial_relevant_files() {
+    local body=""
+    local path
+    for path in "$@"; do
+        body="${body}- ${path}"$'\n'
+    done
+    body="${body//]]>/]]]]><![CDATA[>}"
+    cat <<SEED
+<initial_relevant_files completeness="likely-partial">
+<![CDATA[
+${body}]]>
+</initial_relevant_files>
+<context_seed_note>
+This list is likely incomplete. It is an initial navigation seed, not an
+allowlist or scope boundary. Independently search wider and deeper to establish
+the real blast radius, including callers, callees, related implementations,
+tests, configuration, schemas/migrations, generated code, and
+build/CI/deployment/infrastructure files.
+</context_seed_note>
+SEED
+}
 
 # Structured output template requested from all agents
 OUTPUT_TEMPLATE='
@@ -247,8 +258,8 @@ list_roles() {
 # Set CONSILIUM_SKIP_OUTPUT_TEMPLATE=1 to omit the default Assessment/Findings
 # template — used by code-review mode which provides its own XML schema.
 # Set CONSILIUM_RAW_PROMPT=1 to send the user prompt verbatim — no principles,
-# no role, no template. Used by --prompt-file in consensus-query for uniform
-# benchmark runs where any wrapper-level differences would confound results.
+# no role, no template. This is an internal/delegate capability; public
+# `review ask`, including --prompt-file, always retains the review policy.
 build_prompt() {
     local role="$1"
     local prompt="$2"
@@ -291,6 +302,8 @@ ${prompt}"
             full+=$'\n\n--- Input ---\n'"$stdin_content"
         fi
     fi
+
+    full+=$'\n\n---\n\n'"$CONSILIUM_RECAP"
 
     printf '%s' "$full"
 }

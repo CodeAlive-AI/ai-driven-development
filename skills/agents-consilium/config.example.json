@@ -7,7 +7,7 @@
       "model": "gpt-5.6-sol",
       "effort": "high",
       "role": "analyst",
-      "label": "Codex GPT-5.6 Sol (high)"
+      "label": "Codex GPT-5.6 Sol"
     },
     "codex-gpt-5.6": {
       "enabled": false,
@@ -23,7 +23,7 @@
       "model": "gpt-5.6-terra",
       "effort": "medium",
       "role": "analyst",
-      "label": "Codex GPT-5.6 Terra (medium)"
+      "label": "Codex GPT-5.6 Terra"
     },
     "codex-gpt-5.6-luna": {
       "enabled": false,
@@ -31,7 +31,7 @@
       "model": "gpt-5.6-luna",
       "effort": "low",
       "role": "analyst",
-      "label": "Codex GPT-5.6 Luna (low)"
+      "label": "Codex GPT-5.6 Luna"
     },
     "gemini-cli": {
       "enabled": false,
@@ -79,7 +79,7 @@
       "model": "opencode-go/kimi-k3",
       "effort": "max",
       "role": "analyst",
-      "label": "OC-Go Kimi K3 (max)",
+      "label": "OC-Go Kimi K3",
       "review_instructions": "Treat every review as an adversarial audit. Assume defects exist until repository evidence disproves them; never default to 'looks fine'. Inspect the changed and affected code exhaustively: callers, tests, error and cancellation paths, concurrency, data boundaries, configuration, and operational failure modes. Do not stop after the first issue and do not praise the implementation. Seek the maximum number of concrete, consequential defects — but never invent findings. Report only evidence-validated issues, and conclude 'no findings' only after completing this inspection."
     },
     "opencode-synthetic-kimi-k3": {
@@ -104,7 +104,7 @@
       "model": "claude-opus-5",
       "effort": "medium",
       "role": "analyst",
-      "label": "Claude Opus 5 (medium)"
+      "label": "Claude Opus 5"
     },
     "claude-fable": {
       "enabled": true,
@@ -112,7 +112,7 @@
       "model": "claude-fable-5",
       "effort": "low",
       "role": "analyst",
-      "label": "Claude Fable 5 (low)"
+      "label": "Claude Fable 5"
     },
     "claude-sonnet": {
       "enabled": false,

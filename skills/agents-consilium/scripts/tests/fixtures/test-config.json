@@ -14,7 +14,7 @@
       "model": "claude-opus-5",
       "effort": "medium",
       "role": "analyst",
-      "label": "Claude Opus 5 Test (medium)"
+      "label": "Claude Opus 5 Test"
     },
     "opencode": {
       "enabled": true,
@@ -30,7 +30,7 @@
       "model": "opencode-go/kimi-k3",
       "effort": "max",
       "role": "analyst",
-      "label": "OC-Go Kimi K3 Test (max)",
+      "label": "OC-Go Kimi K3 Test",
       "review_instructions": "KIMI_K3_ADVERSARIAL_REVIEW_MARKER"
     },
     "grok": {

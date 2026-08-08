@@ -69,14 +69,14 @@ class ModeCapabilities:
             raise ValueError(
                 f"mode {self.mode!r}: invalid access_class={self.access_class!r}"
             )
-        # Safety invariant: yolo requires write; readonly forbids write+shell.
+        # Safety invariant: yolo requires write; readonly forbids filesystem
+        # write capability. Review may still use a shell for git/rg/tests;
+        # backend sandboxing and the trusted prompt define its write posture.
         if self.access_class == "readonly":
             if self.filesystem == "write":
                 raise ValueError(
                     f"mode {self.mode!r}: readonly cannot grant filesystem=write"
                 )
-            if self.shell:
-                raise ValueError(f"mode {self.mode!r}: readonly cannot grant shell")
         if self.access_class == "yolo" and self.filesystem != "write":
             raise ValueError(
                 f"mode {self.mode!r}: yolo requires filesystem=write"
@@ -90,7 +90,7 @@ _MODE_MATRIX: Dict[str, ModeCapabilities] = {
     "review": ModeCapabilities(
         mode="review",
         filesystem="read",
-        shell=False,
+        shell=True,
         web=True,
         memory=False,
         subagents=False,
@@ -196,9 +196,9 @@ def assert_no_yolo_leak(mode: str) -> None:
     """Fail closed: a readonly mode must never look like YOLO."""
     caps = get_mode_capabilities(mode)
     if caps.access_class == "readonly":
-        if caps.allows_writes() or caps.shell:
+        if caps.allows_writes():
             raise AssertionError(
-                f"readonly mode {mode!r} leaked write/shell grants: {caps.to_dict()}"
+                f"readonly mode {mode!r} leaked write grants: {caps.to_dict()}"
             )
         if caps.steer or caps.interrupt:
             raise AssertionError(

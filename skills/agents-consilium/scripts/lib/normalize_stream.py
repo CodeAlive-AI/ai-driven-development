@@ -119,9 +119,15 @@ class ProgressReporter:
 
 
 class CompactProgressReporter:
-    """Content-free liveness progress (explore)."""
+    """Content-free liveness progress for model output and tool activity."""
 
-    LABEL = {"thought": "thinking", "text": "answering"}
+    LABEL = {
+        "thought": "thinking",
+        "text": "answering",
+        "tool_started": "tool",
+        "tool_completed": "tool",
+        "progress": "tool",
+    }
 
     def __init__(self, agent_id: str, interval: float = 10.0) -> None:
         self.agent_id = agent_id
@@ -225,9 +231,21 @@ def normalize_grok(obj: Dict[str, Any]) -> tuple[str, Any]:
     if typ == "error":
         return "error", obj.get("message") or obj.get("data") or json.dumps(obj)
     if typ in ("tool_start", "tool_use", "tool_call"):
-        return "tool_started", obj.get("name") or obj.get("data") or typ
+        return "tool_started", (
+            obj.get("toolName")
+            or obj.get("name")
+            or obj.get("kind")
+            or "tool"
+        )
+    if typ == "tool_call_update":
+        status = str(obj.get("status") or "in_progress")
+        if status in {"completed", "complete", "done", "failed", "error"}:
+            return "tool_completed", status
+        return "progress", status
     if typ in ("tool_end", "tool_result"):
         return "tool_completed", obj.get("name") or obj.get("data") or typ
+    if typ in ("available_commands", "usage"):
+        return "progress", typ
     return typ, obj.get("data")
 
 
@@ -463,7 +481,11 @@ def normalize_opencode(obj: Dict[str, Any]) -> tuple[str, Any]:
             text = part["text"]
         if text:
             return "text", text
-    if typ in ("session.idle", "session.complete", "session.completed", "done"):
+    if typ == "session.idle":
+        # Idle is a turn-liveness signal, not proof that the one-shot process
+        # has emitted all answer bytes or completed its lifecycle.
+        return "progress", typ
+    if typ in ("session.complete", "session.completed", "done"):
         return "end", typ
     if typ == "error" or obj.get("error"):
         return "error", obj.get("error") or json.dumps(obj)
@@ -513,6 +535,9 @@ def main() -> int:
         "codex-cli", "claude-code", "opencode", "gemini-cli", "grok-build", "plain"
     ])
     ap.add_argument("--agent-id", required=True)
+    ap.add_argument("--model", default="")
+    ap.add_argument("--effort", default="")
+    ap.add_argument("--access-policy", default="")
     ap.add_argument("--input", default="-")
     ap.add_argument("--raw-out", default="",
                     help="Append each raw input line immediately (for concurrent capture)")
@@ -548,6 +573,9 @@ def main() -> int:
             "event": "run_started",
             "backend": args.backend,
             "agent_id": args.agent_id,
+            "model": args.model,
+            "effort": args.effort,
+            "access_policy": args.access_policy,
         },
     )
 
@@ -597,6 +625,11 @@ def main() -> int:
         backend=args.backend,
         agent_id=args.agent_id,
         data="start",
+        raw={
+            "model": args.model,
+            "effort": args.effort,
+            "access_policy": args.access_policy,
+        },
     )
     if started is not None:
         emit_event(sys.stdout, started)
@@ -708,9 +741,18 @@ def main() -> int:
 
             # Progress uses legacy display vocabulary for BC.
             prog_typ = stream_to_progress_type(stream_typ)
-            if reporter is not None and prog_typ in (
-                "text", "thought", "end", "error", "result"
-            ):
+            progress_types = {
+                "text",
+                "thought",
+                "end",
+                "error",
+                "result",
+                "tool_started",
+                "tool_completed",
+            }
+            if isinstance(reporter, CompactProgressReporter):
+                progress_types.add("progress")
+            if reporter is not None and prog_typ in progress_types:
                 if prog_typ == "result":
                     reporter.feed("end", "result")
                 else:
