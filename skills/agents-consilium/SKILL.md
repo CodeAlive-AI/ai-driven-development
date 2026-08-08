@@ -85,6 +85,12 @@ but not the current tool, file, model text, or reasoning. Use `wait` to collect
 the final answer. Do not inspect the private registry or `audit.jsonl` for
 routine progress monitoring.
 
+Steering is asynchronous on every backend, and on Grok it always runs as a new
+turn: `auto`/`queue` guidance waits for the current turn unless the agent is
+blocked in a tool call, so it can look ignored for minutes. Write each steer as
+a self-contained instruction, never resend it, and verify the effect through
+task artifacts — see [references/delegate.md](references/delegate.md).
+
 ## Detail map
 
 | File | Load for |

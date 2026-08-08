@@ -103,6 +103,8 @@ class GrokAdapter(BackendAdapter):
         self._prompt_running: Set[str] = set()
         self._prompt_result: Dict[str, Any] = {}
         self._prompt_content: Dict[str, str] = {}
+        # Creation order of every prompt this adapter sent (initial + steers).
+        self._prompt_order: List[str] = []
         self._prompt_merged_into: Dict[str, str] = {}
         self._prompt_cancelled_pending: Dict[str, int] = {}
         self._queue_change_seq = 0
@@ -569,6 +571,8 @@ class GrokAdapter(BackendAdapter):
         }
         with self._lock:
             self._prompt_content[prompt_id] = text
+            if prompt_id not in self._prompt_order:
+                self._prompt_order.append(prompt_id)
         rid, q = self.rpc.start_request("session/prompt", params)
         with self._lock:
             self._in_flight[prompt_id] = (rid, q)
@@ -1092,17 +1096,33 @@ class GrokAdapter(BackendAdapter):
                     self._exit_code = 130
 
     def final_text(self) -> str:
-        """Assemble final answer from the authoritative lineage.
+        """Assemble the final answer from the authoritative lineage.
 
-        Prefer the final prompt id (initial task, or last interrupt/sendNow).
-        queue/auto followers do not become the sole lineage, so a tiny follower
-        answer cannot replace a full primary result.
+        The lineage starts at the final prompt id (initial task, or last
+        interrupt/sendNow) and runs to the end of the prompt creation order.
+        Grok answers a queue/auto steer in a NEW prompt turn — and cancels the
+        running turn itself (cancelTrigger=send_now) whenever it is blocked
+        waiting on a tool — so everything the agent produced after the steer
+        carries the steer's promptId. Concatenating the tail of the order keeps
+        that work in the final answer instead of returning the pre-steer stub.
 
-        After interrupt/sendNow, an empty successor lineage must not resurrect
-        superseded initial or concatenated all-text fragments.
+        After interrupt/sendNow, prompts before the successor stay excluded, and
+        an empty successor lineage must not resurrect superseded initial or
+        concatenated all-text fragments.
         """
         with self._lock:
             lineage = self._final_prompt_id or self._initial_prompt_id
+            if lineage and lineage in self._prompt_order:
+                start = self._prompt_order.index(lineage)
+                parts: List[str] = []
+                for pid in self._prompt_order[start:]:
+                    parts.extend(self._text_by_prompt.get(pid, []))
+                text = "".join(parts)
+                # An interrupt successor owns the answer even when empty; for the
+                # initial lineage an empty result falls through to the
+                # unattributed-chunk fallback below.
+                if text.strip() or lineage != self._initial_prompt_id:
+                    return text
             if lineage and lineage in self._text_by_prompt:
                 text = "".join(self._text_by_prompt[lineage])
                 if text.strip():

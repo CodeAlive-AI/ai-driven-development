@@ -98,6 +98,22 @@ task explicitly defines those artifacts as checkpoints.
 
 For Grok, `auto`/`queue` is the productive default for additive guidance. Use `interrupt` only to replace direction because each later interrupt supersedes the prompt currently running, including an earlier steer.
 
+### What Grok actually does with a steer
+
+Verified against grok 1.0.0 over real ACP runs:
+
+- `auto`/`queue` never lands inside the running turn. The prompt enters the session FIFO and Grok answers it in a **new turn** with the full session history. If the running turn is mid-generation, it finishes first (`end_turn`) and the steer runs afterwards. If the running turn is blocked waiting on a tool — a long shell command, a background command poll — Grok itself promotes the queued prompt and cancels the running turn with `cancelTrigger=send_now`, so guidance can land within seconds.
+- Because of that promotion, the **original task prompt can end as `cancelled`/`superseded` in `auto` mode too**, with no client interrupt involved. That is normal Grok behavior, not a failed run: the steer turn continues the remaining work in the same session.
+- `interrupt` cancels the running turn immediately (`cancelTrigger=send_now`) and the steer prompt takes over.
+- In both modes every message the agent produces after the steer is attributed to the steer's `promptId`, and the final answer is assembled from the steer turn onward. Expect the final answer to read as the continuation, not as the original plan.
+
+Practical consequences for the calling agent:
+
+- Steering a Grok run that is only thinking or streaming text has **delayed effect**: nothing changes until the current turn ends. Do not send the same guidance again; check `status --json` for the steer's `prompt_id` and its lifecycle instead.
+- Steering a Grok run that is executing long tool calls has near-immediate effect.
+- Make guidance self-contained. The steer runs as its own turn, so state it as an instruction that stands on its own ("from now on … ; continue the remaining steps"), not as a fragment that only makes sense inline.
+- Verify semantics through task artifacts, never through the steer status alone.
+
 ## Mailbox lifecycle
 
 | `mailbox_status` | Meaning |
@@ -113,7 +129,7 @@ For Grok, `auto`/`queue` is the productive default for additive guidance. Use `i
 | `incomplete` | Steer stopped at an output/token limit |
 | `applied` | Backend directly acknowledged replay/injection; still verify task effects |
 | `cancelled` | Steer started but was cancelled |
-| `superseded` | A later Grok interrupt replaced it |
+| `superseded` | A later Grok `sendNow` prompt replaced it — a client `interrupt`, or Grok's own promotion of a queued steer over a turn blocked in a tool wait |
 | `dropped` | A never-running Grok prompt was absent from later merge evidence |
 | `abandoned` | Overall run ended before steer reached a protocol terminal state |
 | `failed` / `rejected` | Steer did not complete normally; inspect backend evidence |
@@ -150,4 +166,4 @@ Steerable runs always retain the private service registry and protocol artifacts
 
 OpenCode's server is loopback-only with redirect revalidation and per-run Basic auth; the password is never logged or stored. Claude's authoritative `result` completes the adapter even while stdin remains open; user replay proves transport acknowledgement, not semantic compliance. Codex interrupt uses a bounded local protocol handshake, not a run deadline.
 
-Grok attribution uses prompt ids and queue snapshots. Combined followers move through `awaiting_queue_resolution` to `merged` or `dropped`; stop reasons map to `completed`, `incomplete`, `rejected`, `cancelled`, `superseded`, or `failed`. The adapter never claims `applied` because transport events cannot prove semantic compliance. Only agent message chunks contribute to final text; thoughts and replayed user messages do not.
+Grok attribution uses prompt ids and queue snapshots. Combined followers move through `awaiting_queue_resolution` to `merged` or `dropped`; stop reasons map to `completed`, `incomplete`, `rejected`, `cancelled`, `superseded`, or `failed`. The adapter never claims `applied` because transport events cannot prove semantic compliance. Only agent message chunks contribute to final text; thoughts and replayed user messages do not. The final answer covers the lineage from the current final prompt to the end of the prompt order, so `auto`/`queue` steer turns are included and an `interrupt` still discards the superseded prefix.

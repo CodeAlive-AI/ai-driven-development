@@ -989,6 +989,86 @@ def test_grok_message_type_filter_unit(tmp: Path) -> None:
     )
 
 
+def test_grok_queue_steer_text_in_final_unit(tmp: Path) -> None:
+    """queue/auto steer: Grok answers in a new prompt turn — keep it in final.
+
+    Real wire (verified against grok 1.0.0): a queued prompt becomes a separate
+    turn, and Grok cancels the running turn itself (cancelTrigger=send_now) when
+    it is blocked waiting on a tool. Everything after the steer therefore carries
+    the steer's promptId; pinning final text to the initial prompt would return
+    only the pre-steer stub. interrupt/sendNow keeps replacing the lineage.
+    """
+    print("=== unit: grok queue steer text reaches final ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.grok import GrokAdapter  # type: ignore
+
+    art = tmp / "art-grok-queue-final"
+    art.mkdir(parents=True)
+    (art / "raw").mkdir(parents=True)
+
+    def build() -> "GrokAdapter":
+        return GrokAdapter(
+            binary="false",
+            model="m",
+            effort="",
+            cwd=str(tmp),
+            artifacts_dir=str(art),
+            agent_id="grok",
+        )
+
+    def chunk(adapter, prompt_id: str, text: str) -> None:
+        adapter._on_notification(
+            {
+                "jsonrpc": "2.0",
+                "method": "session/update",
+                "params": {
+                    "sessionId": "s1",
+                    "_meta": {"promptId": prompt_id},
+                    "update": {
+                        "sessionUpdate": "agent_message_chunk",
+                        "content": {"type": "text", "text": text},
+                    },
+                },
+            }
+        )
+
+    # queue/auto: lineage stays on the initial prompt, follower text still counts
+    a = build()
+    a._initial_prompt_id = "init"
+    a._final_prompt_id = "init"
+    a._prompt_order = ["init", "steer1"]
+    chunk(a, "init", "PRE_STEER.")
+    chunk(a, "steer1", "POST_STEER.")
+    final = a.final_text()
+    assert_true("queue steer text in final", final == "PRE_STEER.POST_STEER.", final)
+
+    # interrupt/sendNow: superseded prefix stays out of the answer
+    b = build()
+    b._initial_prompt_id = "init"
+    b._final_prompt_id = "steer1"
+    b._prompt_order = ["init", "steer1"]
+    chunk(b, "init", "SUPERSEDED.")
+    chunk(b, "steer1", "REPLACEMENT.")
+    final_b = b.final_text()
+    assert_true("interrupt keeps successor only", final_b == "REPLACEMENT.", final_b)
+
+    # empty interrupt successor must not resurrect the superseded prefix
+    c = build()
+    c._initial_prompt_id = "init"
+    c._final_prompt_id = "steer1"
+    c._prompt_order = ["init", "steer1"]
+    chunk(c, "init", "SUPERSEDED.")
+    assert_true("empty successor stays empty", c.final_text() == "", repr(c.final_text()))
+
+    # unattributed chunks (no promptId meta) still fall back to all-text
+    d = build()
+    d._initial_prompt_id = "init"
+    d._final_prompt_id = "init"
+    d._prompt_order = ["init"]
+    chunk(d, "", "NO_PROMPT_ID_TEXT")
+    assert_true("fallback to all_text", d.final_text() == "NO_PROMPT_ID_TEXT", d.final_text())
+
+
 def test_grok_late_ack_reconcile_unit(tmp: Path) -> None:
     """Late steer_ack advances queued → running → completed without claiming applied."""
     print("=== unit: late ack reconciliation ===")
@@ -2908,6 +2988,7 @@ def main() -> int:
         test_grok_queue_and_send_now(tmp)
         test_grok_ack_not_delivered_on_write(tmp)
         test_grok_message_type_filter_unit(tmp)
+        test_grok_queue_steer_text_in_final_unit(tmp)
         test_grok_cancelled_and_dropped_outcomes_unit(tmp)
         test_grok_all_cancelled_queue_drop_terminates(tmp)
         test_grok_cancel_exit_130_no_duplicate_done(tmp)
