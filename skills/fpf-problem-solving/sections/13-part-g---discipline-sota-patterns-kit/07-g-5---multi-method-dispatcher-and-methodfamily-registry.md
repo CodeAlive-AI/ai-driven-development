@@ -6,47 +6,55 @@
 
 **Plain-name.** Multi-method dispatcher and method-family registry.
 
-**Intent.** Govern the dispatcher and registry object set for rival method families and publish selector-facing retained-set outcomes without collapsing plurality into one hidden scalar winner.
+**Intent.** Help an engineer use a dispatcher and registry for rival method families and state selector-facing set outcomes. The outcome distinction covers retained alternatives and members jointly included for one named use without collapsing plurality into one hidden scalar winner.
+
+**Primary working reader and object.** An engineer or framework author who already has a set of identified candidates or members and must state the selector-facing result—outcome kind, members, ordering, named use when required, and basis pins—for a named downstream use, without also claiming a choice, Work, or publication occurrence that has not happened.
 
 ### G.5:0 - Use this when
-When loop-engineering work retains several loop candidates, harness variants, method families, workflow-store entries, or DPF framework candidates for downstream use, use `G.5` only when the live claim is selector-facing publication of that retained set. The published result states the outcome kind, retained members, ordering status if any, and basis pins. It does not prove that any member improved, that work occurred, or that a local choice has been made.
+When loop-engineering work retains several already identified candidates for downstream use—for example, loop candidates, harness variants, method families, workflow-store entries, or DPF framework candidates—or when several already identified values are all included for one named use, use `G.5` only when the live claim is the selector-facing declaration of that set result. The declared result states the outcome kind, members or keyed member entries, ordering status, named use when applicable, and basis pins. It does not prove that any member improved, that work occurred, that a local choice has been made, or that the result is available to an audience.
 
-For ordinary method-family dispatch, open `G.5` when two or more already admitted Methods are live under grounded selector rows for the same declared task and the current question is the selector-facing set result: which candidates remain admissible, whether the emitted result may truthfully order them, or whether it must be a shortlist, narrowed handoff, abstain, or escalation. If the live question is still one local choice among available options, route it through `C.11` first. Reuse already grounded method-family rows when they exist; do not rebuild a registry on every run. Create a new reusable row only when the grouping itself must recur, carry family-level policy, be versioned, or be published. Crossing, evidence/reliance, assurance, stable public identity, and actual publication are conditional branches, not an entry fee.
+Use `Shortlist` or `RankedShortlist` for alternatives retained for later choice. Use `JointUseSet` only when every named member is included for one bounded use. This joint-use branch consumes exact member identities under their own rules; it does not require `MethodRef`, a method-family registry row, or Method classification for framework editions or other non-Method values.
+
+When an earlier choice or other current inclusion basis has already fixed the exact members, use `G.5-6 DeclareSetResult` with those member refs, the named use, inclusion conditions, ordering, and sufficient basis pins. This branch declares selector-facing result content without running method-family registration or `G.5-3 Select`; non-Method members never enter those method-family operations.
+
+For ordinary method-family dispatch, open `G.5` when two or more already admitted Methods are live under grounded selector rows for the same declared task and the current question is the selector-facing set result: which candidates remain admissible, whether the emitted result may truthfully order them, or whether it must be a shortlist, narrowed handoff, abstain, or escalation. If the live question is still one local choice among available options, first constitute the exact C.11 choice assertion under its predicate. Reuse already grounded method-family rows when they exist; do not rebuild a registry on every run. Create a new reusable row only when the grouping itself must recur, carry family-level policy, be versioned, or be published. Crossing, evidence/reliance, assurance, stable public identity, and actual publication are conditional branches, not an entry fee.
 
 
 
-Before opening G.5 for method dispatch, resolve every selectable `MethodRef` to an exact `U.Method` already admitted under A.3.1. A `MethodFamilyId` is a selector-facing registry designator for a declared grouping: its row must cite the exact Methods it groups and the independently governed classification claim, membership relation, or local grouping criterion used for this selector. Neither the row, its label, a family card, a `U.MethodDescription`, an eligibility or maturity record, a policy, an evidence pin, a shortlist, nor a publication makes a candidate a Method or makes family membership obtain. Where no direct pattern admits an ontic family or membership relation, keep the row as a project-local selector grouping under its declared criterion. If only labels, descriptions, cards, or unresolved references are available, return to A.3.1, C.2.1, or the direct family-relation owner and stop before selection.
+Before opening G.5 for Method dispatch, resolve every selectable `MethodRef` to an exact `U.Method` already admitted under A.3.1. A `MethodFamilyId` is a selector-facing registry designator for a declared grouping: its row must cite the exact Methods it groups and the independently established classification claim, membership relation, or local grouping criterion used for this selector. Neither the row, its label, a family card, a `U.MethodDescription`, an eligibility or maturity record, a policy, an evidence pin, a shortlist, nor a publication makes a candidate a Method or makes family membership obtain. Where no exact ontic-family or membership predicate is defined, keep the row as a project-local selector grouping under its declared criterion. If only labels, descriptions, cards, or unresolved references are available, state the blocker and use A.3.1, C.2.1, or the exact family-relation subject pattern only as a locator before selection.
 
 Also say whether the current claim is only a reusable registry, selector, policy, template, or result-content declaration, or whether an actual selection and publication occurred. An actual selection requires its exact acting system, dated A.15.1 Work, and actual A.6.1 `Select` application with effective argument and `SelectionSlot` bindings under A.19.SelectorMechanism. Any persisted result episteme, A.10 evidence-provenance relation, B.3 assurance claim, authorization, and E.24.PUB publication occurrence remain separate. A row, declaration, record, telemetry pin, or selected-set label supplies none of them by appearance.
 
 
 
 - several method families or generator families can admissibly act on the same declared task family or work target
-- you need one selector to return a `Shortlist`, `RankedShortlist`, one `SpecialistHandoff`, one other narrowed handoff plan, or one abstain outcome without pretending that there is always one scalar winner
-- the published result must carry enough basis pins for later comparison, handoff, or escalation without changing its declared outcome kind or any applicable public selected-set label
+- you need one selector to return a `Shortlist`, `RankedShortlist`, `JointUseSet`, one `SpecialistHandoff`, one other narrowed handoff plan, or one abstain outcome without pretending that there is always one scalar winner or that all set results are alternatives
+- the declared result must carry enough basis pins for its named downstream use—for example, later comparison, handoff, or escalation—without changing its declared outcome kind or any applicable public selected-set label
 
 ### G.5:0.1 - What goes wrong if missed
 
 - rival families are compared under silent comparator drift, hidden baseline changes, or unspoken crossing costs
 - the selector hides one dogmatic winner even when only a partial order is admissible
-- selected-set publication gets hidden inside `C.11`, `C.19`, or `C.24`, so the published result no longer makes clear whether it carries local choice, pool policy, enactment, or publication
+- selector-facing result content stays hidden inside `C.11`, `C.19`, or `C.24`, so the G.5 result no longer states which upstream choice, pool treatment, or enactment result it consumes and what set result it declares
 - exploration, open-ended, or specialization pressure leaks in as one architecture convenience rather than one explicit policy-bound choice
 
 ### G.5:0.2 - What this buys
 
 - one registry that keeps rival method families disjoint but dispatchable
-- one selector result form that can publish candidate sets, `Shortlist`, `RankedShortlist`, one `SpecialistHandoff`, narrowed handoff plans, or abstain outcomes honestly
+- one selector result form that uses the closed `SelectorOutcomeKind` rules in §4.4b and the closed `SetResultFamily` set when the result is set-shaped
 - one trace addressable by DRR and SCR records with explicit basis pins instead of one hidden selector rationale
-- one explicit publication closure so the declared outcome kind, any applicable public selected-set label, retained members or handoff content, ordering status, and basis pins are stated directly in the emitted result
+- one explicit selected-set result that states the outcome kind, applicable public label, retained members or keyed joint-use entries, ordering, named use where required, handoff content, and basis pins instead of leaving them implicit upstream
 
-Registry and dispatch remain the primary selector question here; selected-set publication is the explicit closure record for that selector question, not a replacement for it.
+Registry and dispatch remain the primary selector question here; the explicit selected-set result closes that question without replacing registry or dispatch.
 
 ### G.5:0.3 - First-minute questions
 
-- What selector outcome kind is this result actually emitting: one set-result outcome such as `Shortlist` or `RankedShortlist`, one `SpecialistHandoff` or other narrowed handoff, or one abstain outcome?
+- What selector outcome kind is this result actually emitting: one set-result outcome such as `Shortlist`, `RankedShortlist`, or `JointUseSet`, one `SpecialistHandoff` or other narrowed handoff, or one abstain outcome?
 - Which members are being retained or excluded now?
-- Does order materially belong to the published result?
-- Which basis pins or policy pins must the published result carry?
+- Are these alternatives retained for later choice, or is every named member included for one bounded use?
+- For `JointUseSet`, what named use, unique member refs, inclusion conditions, and sufficient top-level basis pins make the result complete?
+- Does the result order the retained alternatives?
+- Which basis pins or policy pins must the declared result carry?
 - Which exact A.3.1 `MethodRef` values does every method-family row resolve to?
 - What independently governed classification, membership relation, or local grouping criterion justifies placing those Methods in that row for this selector use?
 - Is the current organization only a composition template, one B.1.5-qualified composite Method, or an independently selected A.22 Structure with all four identity discriminators?
@@ -61,24 +69,26 @@ Registry and dispatch remain the primary selector question here; selected-set pu
 
 ### G.5:0.4 - First output
 
-The first useful output from this dispatcher and registry question is one published selector outcome: one set-result outcome such as `Shortlist` or `RankedShortlist`, one `SpecialistHandoff` or other narrowed handoff plan, or one abstain or escalation result, with the outcome kind, any public selected-set label, retained members or handoff content, ordering status when relevant, and basis pins stated in one place.
+The first useful output from this dispatcher and registry question is one declared `SelectorOutcome` admitted by the closed `SelectorOutcomeKind` set in §4.4b. For `SetResultOutcome`, use the closed `SetResultFamily` rule to distinguish `Shortlist`, `RankedShortlist`, and `JointUseSet`; for another outcome kind, state its admitted handoff, abstain, or escalation content. In every case, state the applicable members or keyed member entries, ordering, named use and inclusion conditions when applicable, and basis pins in one place.
 
 For an ordinary run over already grounded rows, that selector-facing result content is enough. The basis pins may be direct references to the declared grouping, eligibility, and comparison basis, and the same compact record may carry the DRR/SCR-addressable audit refs required by S3. Do not require a fresh registry build, `CrossingAllowance`, evidence graph, assurance claim, stable public id, separate audit package, or E.24.PUB occurrence unless the current use actually needs that stronger object or claim.
 
 
 
-Here “published selector outcome” first means complete selector-facing result content and, when needed, a stable public designator. It is not evidence that selection Work or an actual `Select` application occurred, and it is not an E.24.PUB availability occurrence. Claim actual publication only through the exact selected C.2.1 episteme edition, audience declaration, bounded-use declaration, publication form, presentation carrier, and obtaining `EpistemePublicationRelation`; rendering or uploading Work remains another occurrence.
+Here a selector outcome means complete selector-facing result content. A stable public designator is an additional field only when a named use needs it. Neither the result content nor its designator is evidence that selection Work or an actual `Select` application occurred, and neither is an E.24.PUB availability occurrence. Claim actual publication only through the exact selected C.2.1 episteme edition, audience declaration, bounded-use declaration, publication form, presentation carrier, and obtaining `EpistemePublicationRelation`; rendering or uploading Work remains another occurrence.
 
 
-If that first output still cannot be written honestly, the current publication result is not finished `G.5` publication yet.
+If that first output cannot yet be stated honestly, the `G.5` result is incomplete.
 
 G.5 keeps the dispatcher and registry object set here and leaves universal Part-G invariants to `G.Core`; method-specific and generator-specific semantics stay in their named source patterns and arrive here only through explicit pins.
 
-When `C.11` has already emitted one local choice result, `C.19` one pool-policy result, or `C.24` one enactment-facing next action, `G.5` begins where the question becomes selector-facing publication of the retained set or narrowed handoff result rather than one more explanation of why the result looked reasonable. A conformant `G.5` pass should therefore publish the retained set, narrowed handoff, or abstain result directly, with its declared outcome kind, any applicable public selected-set label, and basis pins explicit in the result itself.
+When `C.11` has already emitted one local choice result, `C.19` one pool-policy result, or `C.24` one enactment-facing next action, `G.5` applies when the question becomes declaring selector-facing result content for retained alternatives, all-member joint use, or a narrowed handoff rather than one more explanation of why the upstream result looked reasonable. The `G.5` result states its outcome kind, applicable public label, membership form, and basis pins directly.
 
-A publication result remains unfinished if the declared outcome kind, any applicable public selected-set label, retained members or handoff content, ordering status, abstain or escalation condition, or basis pins are still only implicit in upstream notes.
+The `G.5` result is incomplete if its outcome kind, applicable public label, retained members or keyed joint-use member entries, ordering, named use where required, handoff content, abstain or escalation condition, or basis pins are still only implicit in upstream notes.
 
-When a framework publishes a selected pattern set, use `G.5` only for the selected-set publication claim: scope, selection conditions, included pattern refs, excluded candidate refs when relevant, publication status, and basis pins. This selected-set claim does not define pattern-use relations, architecture decisions, or framework edition dependencies.
+When a framework needs a selector-facing result for a selected pattern set, use `G.5` only to declare that result: scope, selection or inclusion conditions, included pattern refs, excluded candidate refs when relevant, and basis pins. Use `JointUseSet` only when every exact ref is included for the named use; otherwise retain shortlist semantics. Add a stable public identity and its UTS obligation only when a named use needs them. If audience availability is current, use E.17 for a source-backed face and return to source and E.24.PUB for the publication occurrence and availability. This selected-set result does not define pattern-use relations, architecture decisions, or framework edition dependencies.
+
+When exact framework editions are the members, preserve their existing edition identities and use E.4.PFR for any direct dependency or compatibility claim. G.5 creates no `MethodRef`, method-family row, publication occurrence, access claim, or actual selection Work for those editions.
 
 ### G.5:0.5 - Minimum ordinary slice and bounded non-use
 
@@ -120,7 +130,7 @@ This is a positive `G.5` slice because the exact Methods, rows, grouping bases, 
 
 **Near misses and non-use.** Do not use `G.5` merely because several names appear in one list.
 
-- If the candidates are only labels, descriptions, cards, or unresolved references, return to A.3.1 and C.2.1 before dispatch.
+- If the candidates are only labels, descriptions, cards, or unresolved references, require A.3.1 and C.2.1 before dispatch.
 - If the current question is one local choice among already available options, use `C.11`; if it is the policy for retaining or retiring live candidate lines, use `C.19`; if it is enactment planning after choice, use `C.24` and the applicable A.15/A.6 occurrence owners.
 - If the current object is only a composition sketch, keep the S4 template; use B.1.5 only for a qualified composite Method and A.22 only for an independently selected Structure.
 - If no rival candidate set, selector result, narrowed handoff, abstain, or escalation is current, do not open `G.5`.
@@ -137,7 +147,7 @@ You need a **notation‑independent** way to:
 
 1. register method families and generator families as *auditable, versioned* entries,
 2. select, compose, or fall back among them at run time for a concrete task instance,
-3. publish stable selected-set results and stable identities to UTS, and
+3. declare stable selected-set results, including retained-alternative and all-member results, and publish stable identities to UTS when required, and
 4. emit RSCR‑relevant triggers and pins without inventing new “shadow specs”.
 
 ### G.5:2 - Problem
@@ -148,10 +158,10 @@ How to design a **general, auditable dispatcher** that:
 * does **not embed algorithmic dogma** in the core selector kernel;
 * respects semantic-context boundaries through the complete current crossing path—exact local senses, an obtaining F.9 Bridge, a separate bounded-use proposition, and the appropriate reliance or assurance branch—while treating pins as audit references rather than as the crossing facts;
 
-* produces **set‑valued outcomes** when only partial orders are admissible;
+* produces **set-valued outcomes** when only partial orders are admissible or when every named member is included for one bounded use, without confusing those meanings; when exact non-Method members already have a current inclusion basis, it declares that result without routing them through method-family selection;
 * cleanly separates:
 
-  * **selector object set and components** (registry, selector boundary, and publication records),
+  * **selector object set and components** (registry, selector boundary, and result-declaration records),
   * **universal Part‑G invariants** (carried by `G.Core`),
   * **method-specific and generator-specific semantics** (carried only through `Extensions` blocks).
 
@@ -198,7 +208,7 @@ MethodFamily.causalUseDispatchSpec? {
 
 What changes in practice: a selector must not compare "methods that improve outcome" unless each causal method declares the causality-ladder rung, causal method-use classification, and `C.28` support record and verdict when causal-use support is being consumed.
 
-What this does not authorize: `G.5` does not identify causal effects, decide fairness, certify off-policy causal evaluation, or compare cross-rung causal methods as one undifferentiated improvement set; it keeps method dispatch and selected-set publication while `C.28` governs causal-use support.
+Do not use `G.5` for causal-use support. This excludes, for example, identifying causal effects, deciding fairness, certifying off-policy causal evaluation, or comparing cross-rung causal methods as one undifferentiated improvement set. Use `G.5` for method dispatch and selector-facing result declaration and `C.28` for causal-use support.
 
 #### G.5:4.1 - G.Core linkage (normative)
 
@@ -257,7 +267,7 @@ A registry row represents *a family*, not a single implementation. Minimal field
 * `EvidencePins`: citations to `G.6` (`PathId`, `PathSliceId`) for claims or guarantees where such claims are asserted.
 * `CrossingAllowance`: references to the exact F.17 endpoint senses, one obtaining F.9 Bridge, the separate C.2.1 bounded-use proposition, and the current A.10 or B.3 reliance basis, plus CL or observed-loss evidence when material, **only** if cross-semantic-context operation is claimed. These are audit references; the field makes none of the referenced facts obtain.
 
-For an actual crossing, first resolve both exact F.17 `SchemeSenseCell` endpoints and establish the two-participant F.9 Bridge under its own predicate profile. Then identify a separate C.2.1 episteme whose exact `EntityOfConcern` is that Bridge and whose ClaimGraph states the proposed use `u`, direction `d`, use-specific rule `r`, tolerated loss `t`, and polarity. For ordinary reliance require the matching current A.10 evidence-provenance relation and local `RelianceDisposition`; when an assurance claim or B.3 material-reliance threshold is current, use B.3's separate assurance branch instead. Observed loss and CL are evidence, defeater or assurance-policy material, not Bridge participants or permission. Authorization and the actual `Select` application remain with their direct owners. A Bridge id, `CrossingAllowance`, registry row, policy pin, `CrossingBundle`, DRR or SCR entry cannot substitute for any step.
+For an actual crossing, first resolve both exact F.17 `SchemeSenseCell` endpoints and establish the two-participant F.9 Bridge under its own predicate profile. Then identify a separate C.2.1 episteme whose exact `EntityOfConcern` is that Bridge and whose ClaimGraph states the proposed use `u`, direction `d`, use-specific rule `r`, tolerated loss `t`, and polarity. For ordinary reliance require the matching current A.10 evidence-provenance relation and local `RelianceDisposition`; when an assurance claim or B.3 material-reliance threshold is current, use B.3's separate assurance branch instead. Observed loss and CL are evidence, defeater or assurance-policy material, not Bridge participants or permission. Authorization and the actual `Select` application remain with their subject patterns. A Bridge id, `CrossingAllowance`, registry row, policy pin, `CrossingBundle`, DRR or SCR entry cannot substitute for any step.
 
 * `PolicyHooksRef?`: optional pointers to policy records (not defined here; wired via Extensions).
 
@@ -283,7 +293,7 @@ A notation‑independent selector that:
 * consumes `TaskSignatureRef`, registry entries, and pinned spec refs,
 * applies eligibility and assurance gating (tri-state),
 * computes an admissible (possibly partial) order,
-* returns one declared selector outcome: most often one set-result outcome such as `Shortlist` or `RankedShortlist`, but sometimes one `SpecialistHandoff`, one other narrowed handoff, one abstain outcome, or one escalation outcome (per `DefaultId.PortfolioMode` and explicit overrides),
+* returns one declared selector outcome over the exact Method candidates admitted through this kernel: most often `Shortlist` or `RankedShortlist`, and `JointUseSet` only when every returned Method candidate is included for one named use; otherwise it returns one `SpecialistHandoff`, one other narrowed handoff, one abstain outcome, or one escalation outcome (per `DefaultId.PortfolioMode` and explicit overrides),
 * emits audit records with pins addressable by DRR and SCR records.
 
 For every `MethodFamilyId` consumed here, dereference the row to its exact A.3.1 `MethodRef[]` and grouping basis before admitting the candidate. The selector may compare or return registry rows as auditable selector-facing addresses, but row selection neither creates its Methods nor proves that every listed Method belongs, is admissible, is selected, or will be enacted. An unresolved Method reference or missing grouping basis blocks that row's method-bearing use; it is not repaired by a label, description, UTS identity, policy, or evidence pin.
@@ -296,13 +306,13 @@ S3 states reusable selector behavior. It does not itself perform selection. For 
 
 
 **S3.A — `TaskFamilySpecializationProfile@Context` (run‑time; conditional).**
-When the real selector question is acquisition of usable specialization on a declared task family, the selector may publish one `TaskFamilySpecializationProfile@Context` for each candidate, one `SpecialistHandoff`, or one narrowed handoff plan. Here `profile` means one selector-time comparison record for bounded specialization, not a new U-kind and not a generic narrative profile. `G.5` carries this selector-time specialization question here; it does not re-govern the adaptation-signature field vocabulary from `C.22.1`.
+When the real selector question is acquisition of usable specialization on a declared task family, the selector may emit one `TaskFamilySpecializationProfile@Context` for each candidate, one `SpecialistHandoff`, or one narrowed handoff plan. Here `profile` means one selector-time comparison record for bounded specialization, not a new U-kind and not a generic narrative profile. `G.5` carries this selector-time specialization question here; it does not redefine the adaptation-signature field vocabulary from `C.22.1`.
 
 The profile should therefore cite one `AdaptationSignatureRef` or equivalent pinned field set carrying the declared `TaskFamilyRef` or `TaskSignature`, the work-measure threshold target, prior exposure declaration, time-to-threshold, budget-to-threshold, post-threshold efficiency when relevant, any declared transfer or retention claim, any downside cost or downside on adjacent tasks, and any specialization-entry baseline, specialization-entry evidence, or stepping-stone evidence item that materially affects comparison.
 
-Admission rule for `SpecialistHandoff`: use that handoff kind only when the truthful published result is one heterogeneous handoff bundle whose members occupy different specialization positions that still need to travel together. Do not use it when one ordinary `Shortlist`, `RankedShortlist`, `ExplorationArchive`, or another narrower named result kind already states the result more precisely.
+Admission rule for `SpecialistHandoff`: use that handoff kind only when the truthful declared result is one heterogeneous handoff bundle whose members occupy different specialization positions that still need to travel together. Do not use it when a `SetResultOutcome` with `Shortlist`, `RankedShortlist`, or `JointUseSet`, or a `HandoffOutcome` with another admitted handoff kind, already states the result more precisely.
 
-When the declared task family is heterogeneous, the selector may return one `SpecialistHandoff`, one other narrowed handoff plan, or one small admissible set that preserves rival specialists rather than collapsing them into a fake single winner. Low-human-overlap candidates remain admissible only when the profile, evidence basis, and policy constraints are explicit.
+When the declared task family is heterogeneous, the selector may return one `SpecialistHandoff`, one other narrowed handoff plan, or one `SetResultOutcome` with an admitted `SetResultFamily` that preserves rival specialists rather than collapsing them into a fake single winner. Low-human-overlap candidates remain admissible only when the profile, evidence basis, and policy constraints are explicit.
 
 **S4 — `Composition and fallbacks` templates (design‑time).**
 A library of composition shapes—`preconditioner -> solver -> verifier`, cascades, and meta-selectors—remains available **as design-time templates**, admissibility-checked and pinned. A template is a description or policy-bound arrangement for possible composition; its existence, diagram order, registry placement, or selection does not create a Method, `methodPartOf` occurrence, obtaining relation, or selected Structure.
@@ -314,17 +324,17 @@ A C.2.1 episteme may describe either governed object. A.3.2 applies only when th
 Algebraic, graph, matrix, embedding, or neural selector notation remains a mathematical or representation lens when that representation is current; use C.29 for its correspondence and preserved-or-lost structure rather than reading notation as composition or selection.
 
 
-**S5 — `Publication and telemetry` record boundary (run-time).**
-A standard publication boundary publishes:
+**S5 — `Result, public identity, and telemetry` record boundary (run-time).**
+A standard result-content boundary emits:
 
 * `DRR` (decision rationale) and `SCR` (evidence and confidence citation) with explicit pins,
-* declared selector and selected-set records,
+* declared selector and selected-set records produced either by method-family `G.5-3 Select` or by the already-grounded-member `G.5-6 DeclareSetResult` branch,
 * telemetry pins to refresh orchestration (`G.11`), without governing orchestration.
 
 S5 governs the selector-facing record boundary, not truth or actuality by record existence. A DRR, SCR, selected-set record, shortlist id, telemetry event, refresh cue, policy pin, or result label does not create dated Work, an actual operation application, the selected-set binding, a domain result, an evidence-provenance relation, assurance, authorization, or publication availability. Persist a selector-result claim as its own C.2.1 episteme when another use must rely on it; connect evidence through A.10, assurance through B.3, authorization through its direct governor, and actual availability through E.24.PUB only when each relation independently obtains.
 
 
-When the current publication question is selected-set publication rather than one generic registry trace, `Shortlist` is the public selected-set label, `RankedShortlist` is the ordered specialization when order materially belongs to the published result, `ShortlistId` is the emitted public identity, and `ChoiceSet` stays one mathematical gloss rather than the public selected-set label.
+When the current question is selector-facing set-result declaration rather than one generic registry trace, `Shortlist` names retained alternatives, `RankedShortlist` names those alternatives when the result orders them, `JointUseSet` names all members included for one named use, and `ChoiceSet` stays one mathematical gloss rather than a public result kind. `ShortlistId` is specific to a shortlist result; use a generic `publicId` for another result only when one stable public identity is needed.
 
 **S6 — `Governance and evolution` declaration boundary (design-time).**
 Versioning, deprecation, and registry evolution discipline (UTS publication; continuity), without minting new Part‑G‑wide types.
@@ -339,53 +349,61 @@ Method- and generator-specific pressures such as `QD` archives, open-ended decla
 
 | Selector relation                 | Consumes                                                                                                                                                     | Produces                                                                                                                                                                                                                                                   |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **G.5‑1 RegisterFamily**          | `SoTA` family card (from `G.2`), non-empty exact already admitted A.3.1 `MethodRef[]`, exact independently governed classification or membership-relation ref or explicit project-local grouping criterion, CHR and CAL pins (from `G.3` and `G.4`), `CNSpecRef.edition`, `CGSpecRef.edition`, `ContextId` | A `MethodFamily` registry row (`MethodFamilyId`, `MethodRef[]`, `GroupingBasisRefOrCriterion`, `EligibilityStandardRef`, `AssuranceProfileRef`, `UTSRowId`, pinned refs). The G.2 card and CHR/CAL/spec/context pins are metadata or evidence inputs and cannot supply either the exact Methods or the grouping fact. |
-| **G.5‑2 RegisterGeneratorFamily** | `SoTA` generator family cards (from `G.2`), `ContextId`, pinned refs (including `TransferRulesRef.edition` when applicable)                                  | A `GeneratorFamily` registry row (`GeneratorFamilyId`, `GeneratorSignatureRef`, `UTSRowId`, pinned refs)                                                                                                                                                   |
+| **G.5-1 RegisterFamily**          | `SoTA` family card (from `G.2`), non-empty exact already admitted A.3.1 `MethodRef[]`, exact independently governed classification or membership-relation ref or explicit project-local grouping criterion, CHR and CAL pins (from `G.3` and `G.4`), `CNSpecRef.edition`, `CGSpecRef.edition`, `ContextId` | A `MethodFamily` registry row (`MethodFamilyId`, `MethodRef[]`, `GroupingBasisRefOrCriterion`, `EligibilityStandardRef`, `AssuranceProfileRef`, `UTSRowId`, pinned refs). The G.2 card and CHR/CAL/spec/context pins are metadata or evidence inputs and cannot supply either the exact Methods or the grouping fact. |
+| **G.5-2 RegisterGeneratorFamily** | `SoTA` generator family cards (from `G.2`), `ContextId`, pinned refs (including `TransferRulesRef.edition` when applicable)                                  | A `GeneratorFamily` registry row (`GeneratorFamilyId`, `GeneratorSignatureRef`, `UTSRowId`, pinned refs)                                                                                                                                                   |
 | **G.5-3 Select**                  | `TaskSignatureRef`, `MethodFamilyId[]` in scope whose rows dereference to non-empty exact A.3.1 `MethodRef[]` and exact grouping bases, pinned `CNSpecRef` and `CGSpecRef` editions, policy refs if any, audit citation pins (`PathId` and `PathSliceId`) | `CandidateSet` (set-returning), declared selector result with `PortfolioMode` recorded, `DRR` and `SCR` pins; if no admissible candidate exists: return `CandidateSet = EMPTY` plus an escalation hint (`ActionHint`) and the pins required to plan next steps (P2W split applies) |
 | **G.5-4 Compose**                 | `CandidateSet`, composition template refs, pinned admissibility constraints                                                                                       | Composite strategy template (template-level; admissibility-checked; pinned)                                                                                                                                                                                      |
-| **G.5‑5 Telemetry**               | run outcomes, citations, and policy or edition pins                                                                                                               | refresh cues (typed RSCR causes and payload pins), parity deltas (if parity harness is in use), telemetry pins (selector‑side; orchestration governing definition is `G.11`)                                                                                              |
+| **G.5-5 Telemetry**               | run outcomes, citations, and policy or edition pins                                                                                                               | refresh cues (typed RSCR causes and payload pins), parity deltas (if parity harness is in use), telemetry pins (selector-side; orchestration governing definition is `G.11`)                                                                                              |
+| **G.5-6 DeclareSetResult**        | one exact `SetResultFamily`; exact already identified `memberRef[]`; `namedUse` for `JointUseSet`; ordering; inclusion or selection conditions; and sufficient `basisPins` to the already current choice, pool treatment, accepted decision, or other governed inclusion basis | one `SelectorOutcome` with `SelectorOutcomeKind = SetResultOutcome` and the exact membership form required by that family. For `JointUseSet`, it emits keyed unique `memberEntries`, `ordering = unordered`, the named use, inclusion conditions, and basis pins without a method-family row or `Select` pass. |
 
 `RegisterFamily` produces only the registry row described in S1. It does not produce any A.3.1 Method or independently governed membership fact. `Select` may address candidates through those rows only after their exact Methods and grouping bases resolve; its returned candidate or selected-set value does not retroactively ground a row member.
 
 `Compose` produces only the pinned template named in its output column. It neither qualifies one composite Method under B.1.5 nor selects one A.22 Structure. When a later selector use consumes either governed object, the exact Method or Structure reference is an independently grounded input rather than a result inferred from this template.
 
-
+`DeclareSetResult` begins only after its exact members and inclusion or selection basis are current. An upstream C.11 `ChoiceResult`, C.19 pool treatment, accepted decision, or another governed basis may appear among `basisPins`; the G.5 branch does not repeat or perform that decision. It declares the selector-facing set-result content and stops. It creates no member identity or relation, method-family row, `Select` application, dated selection Work, persisted C.2.1 result episteme, assurance or authority claim, or E.24.PUB availability occurrence.
 
 #### G.5:4.4a - Worked selector slice
 
 - A catalyst-search team is choosing among three method families for the same declared `TaskSignature` and `C.22.1` adaptation signature.
 - The shared profile pins one work-measure threshold target, one freshness window, one prior-exposure declaration, and one adaptation budget. One family reaches threshold quickly but carries high downside on adjacent tasks. One family is slower but transfers cleanly. One family never clears `MinimalEvidence` and must abstain.
-- An admissible `G.5` result therefore publishes a set-return shortlist or a narrowed handoff plan, with DRR and SCR records citing why the third family was excluded and why the first two remain non-dominated. The selector does not invent one scalar winner and does not hide the specialization profile in auxiliary side notes.
+- An admissible `G.5` result therefore declares a set-return shortlist or a narrowed handoff plan, with DRR and SCR records citing why the third family was excluded and why the first two remain non-dominated. The selector does not invent one scalar winner and does not hide the specialization profile in auxiliary side notes.
 - If the project also claims that this selection actually occurred, it separately identifies the acting system, dated selection Work, actual `Select` application, effective candidate and criteria bindings, and the `SelectionSlot` binding. A persisted shortlist assertion is a separate C.2.1 episteme; its DRR or SCR references do not by themselves prove the exclusion facts, warrant the result, authorize downstream action, or make that episteme available to an audience.
 
-- When one upstream `C.19` pass has already narrowed the live pool to one internal retained subset over registered families, `G.5` may publish that result as one `Shortlist` with one `ShortlistId` and explicit basis pins only when selector-facing publication is now the question. Until that emission occurs, the internal retained subset is not yet one public shortlist result.
-- When one upstream `C.11` pass has already fixed one local choice over one declared source set, or one `C.24` pass has already produced one enactment-facing narrowed handoff, `G.5` may publish the selected-set or narrowed-handoff result only when selector-facing publication is now the question. Until this `G.5` emission occurs, the `ChoiceResult`, `CallPlan`, or `CheckpointReturn` is not itself one public `Shortlist`, `RankedShortlist`, or `ShortlistId`-bearing result.
+- When one upstream `C.19` pass has already narrowed the live pool to one internal retained subset over registered families, `G.5-6 DeclareSetResult` may declare that result as one `Shortlist` with one `ShortlistId` and explicit basis pins only when selector-facing result declaration is now the question. Until that declaration occurs, the internal retained subset is not yet one G.5 shortlist result.
+- When one upstream `C.11` pass has already fixed one local choice over one declared source set, `C.19` has fixed one retained pool treatment, an accepted decision has fixed all-member inclusion, or `C.24` has produced one enactment-facing narrowed handoff, use `G.5-6 DeclareSetResult` when selector-facing set-result content is now the question. Until that declaration occurs, the `ChoiceResult`, `PoolPolicyResult`, accepted inclusion basis, `CallPlan`, or `CheckpointReturn` is not itself that G.5 result. Non-Method members do not pass through `RegisterFamily` or `G.5-3 Select`.
 
-#### G.5:4.4b - Published selected-set result and closure rule
+#### G.5:4.4b - Declared selected-set result and closure rule
 
-A finished `G.5` pass should publish one explicit selected-set result from the dispatcher and registry question rather than one selector trace that leaves the public result implicit.
+When the current question is selector-facing result declaration, state one explicit selected-set result rather than leave it implicit in a selector trace, comparison note, or local choice.
 
-Publication here is the closure record for selector work over registered families. It does not replace registry maintenance, dispatcher comparison rules, or the upstream pool-policy and local-choice pattern authorities that supplied the retained members.
+For method dispatch, that result closes selector work over grounded rows. For a `JointUseSet`, it records already identified members that are all included for one named use. It does not replace registry maintenance, comparison rules, the upstream choice or inclusion basis, or the patterns that identify the members and their relations.
 
 The admissible selector outcome families here are:
 
-- `SelectorOutcomeKind = SetResultOutcome`, with `SetResultFamily = Shortlist` when one retained set is published without one material internal order and `SetResultFamily = RankedShortlist` when ordering materially belongs to the result;
+- `SelectorOutcomeKind = SetResultOutcome`, whose closed `SetResultFamily` value set is `Shortlist` when alternatives are retained for later choice and the result does not order them, `RankedShortlist` when the result orders those retained alternatives, and `JointUseSet` when every named member participates in one named use;
 - `SelectorOutcomeKind = HandoffOutcome`, with `HandoffKind = SpecialistHandoff` or one other narrowed handoff plan when heterogeneity is the truthful downstream result;
-- `SelectorOutcomeKind = AbstainOutcome` when no admissible candidate exists and the truthful result is one abstain;
+- `SelectorOutcomeKind = AbstainOutcome` when no admissible candidate exists and the truthful result is one abstain; and
 - `SelectorOutcomeKind = EscalationOutcome` when no admissible candidate exists and the truthful result is one escalation.
 
-`SetResultFamily` belongs only inside `SetResultOutcome`. `Shortlist` and `RankedShortlist` are public selector results over registered rows. They are not merely one upstream internal retained subset copied forward under one prettier label. `G.5` is the governing pattern that turns selector state into one public result with one explicit outcome kind, one explicit selected-set label when applicable, one explicit member set or handoff content, and one explicit basis-pin set.
+`G.5-3 Select` may emit this family only over the exact Method candidates admitted through its kernel; `G.5-6 DeclareSetResult` emits it from exact already identified members and a current inclusion basis. Neither branch performs an upstream choice, makes a member relation obtain, or proves actual selection Work.
 
-A publication result should state at least these fields:
+A `JointUseSet` uses this bounded representation:
 
-- the selector outcome kind being emitted;
-- the public selected-set label when the outcome is one set-result outcome;
-- retained members, or the narrowed handoff content, or the abstain or escalation condition;
-- ordering status when ordering matters;
-- basis pins and policy pins sufficient to justify the result;
-- one explicit next downstream use boundary when the result is a handoff rather than one terminal publication.
+- `namedUse` states the one joint use;
+- `memberEntries` contains one keyed entry per included member;
+- every entry has one exact `memberRef`; the membership result adds no per-member contribution or basis field;
+- each exact `memberRef` occurs at most once, and entry order has no semantic effect;
+- if a serialization also emits top-level `members`, it is only the unique set projection of `memberRef` values from `memberEntries`, never a second maintained list;
+- `ordering`, inclusion conditions, and sufficient top-level `basisPins` remain explicit; and
+- candidate-pool membership and excluded candidates stay separate from emitted joint-use membership.
 
-A compact result may therefore look like:
+Exact content, claims, roles, and direct relations keep their own governed records. When one supports the membership result, cite that existing record among `basisPins`; `memberEntries` creates neither the cited content nor a new contribution relation.
+
+For framework use, `memberRef` may name an exact already identified edition under its existing identity rules. Do not populate `MethodRef`, create a registry row, or classify that edition as a Method merely to emit the result.
+
+Every outcome still states its `SelectorOutcomeKind`, public result kind when applicable, members, keyed entries, handoff content, or blocking condition, ordering, and sufficient basis pins. A handoff also states its next downstream use boundary.
+
+A compact retained-alternative result may look like:
 
 ```text
 SelectorOutcome(
@@ -399,60 +417,64 @@ SelectorOutcome(
 )
 ```
 
-or:
+A compact joint-use result may look like:
 
 ```text
 SelectorOutcome(
   selectorOutcomeKind = SetResultOutcome,
-  setResultFamily = RankedShortlist,
-  members = [family_B, family_A],
-  shortlistId = shortlist_23,
-  ordering = ranked,
-  basisPins = [pathSlice_77, scr_44],
-  nextUse = specialist_handoff
+  setResultFamily = JointUseSet,
+  namedUse = cohort_review,
+  memberEntries = [
+    { memberRef = Core@C },
+    { memberRef = Domain@D },
+    { memberRef = Local@L }
+  ],
+  ordering = unordered,
+  inclusionConditions = [all_three_editions_required_for_cohort_review],
+  basisPins = [choice_result_12, edition_basis_7]
 )
 ```
-
-Close as `SelectorOutcomeKind = SetResultOutcome` with `SetResultFamily = Shortlist` when several retained members survive admissibly but no public internal order belongs to the result. Close as `SelectorOutcomeKind = SetResultOutcome` with `SetResultFamily = RankedShortlist` when order materially belongs to the published result. Close as `SelectorOutcomeKind = HandoffOutcome` with `HandoffKind = SpecialistHandoff` or one other narrowed handoff when heterogeneity itself is the truthful downstream result. Close as `SelectorOutcomeKind = AbstainOutcome` or `EscalationOutcome` when no admissible candidate exists under the pinned constraints.
-
-If the publication still does not state what public result was emitted, who remained in it, whether order belongs to it, and which pins justify it, then the selector has not yet published one finished `G.5` result.
+Close with `Shortlist` or `RankedShortlist` when the result retains alternatives. Close with `JointUseSet` only when every member is included for the named use and its keyed membership can be stated truthfully. Close with a handoff, abstain, or escalation outcome when that is the actual result. If the result omits its result family, members or member entries, ordering, named use where required, or basis pins, it is not a complete `G.5` result.
 
 #### G.5:4.4bb - Public labels over archive, front, and style source sets
 
-When a selector-facing publication uses labels such as `Shortlist`, `RankedShortlist`, declared `ExplorationArchive`, `Archive`, `Front`, `Q-front`, `SpecialistHandoff`, `StyleShortlist`, `TraditionShortlist`, abstain, or escalation, the G.5 question is the public selector outcome being emitted.
+When a selector consumes a declared `ExplorationArchive`, `Archive`, `Front`, or `Q-front`, keep that object as a source-set family or source-set reference; it is not the emitted G.5 outcome. The emitted result states one admitted `SelectorOutcomeKind` and, for a set result, one admitted `SetResultFamily`. `StyleShortlist` and `TraditionShortlist` may be public domain labels over an admitted set-result family after their term bridges and cultural meaning are clear; they do not extend either closed set.
 
 ```text
-SelectedSetPublicationLabelLine@Context:
+SelectedSetResultLabelLine@Context:
   selectorOutcomeKind:
   setResultFamily?:
   sourceSetFamily:
   publicSelectedSetLabel?:
+  namedUse?:
+  memberEntries?:
+  membersOrHandoff?:
   derivedViewKind?:
   basePaletteOrArchiveRef?:
-  membersOrHandoff:
   ordering:
   basisPins:
   nextUse:
 ```
 
-`sourceSetFamily` may name a declared `Front`, `Q-front`, `ExplorationArchive`, `Archive`, current pool subset, or derived tradition view. `publicSelectedSetLabel` names the emitted selected-set label, normally `Shortlist` or `RankedShortlist`, and may use a domain label such as `StyleShortlist` or `TraditionShortlist` only when the term bridge is already clear. G.5 does not create the archive, compute the comparison, govern the pool policy, decide the cultural-evolution case, or repair the term bridge. Use `C.18`, `A.19.CPM`, `C.19`, `C.36`, `F.17`, `F.18`, and `F.9` for those relations.
+Earlier records may keep `membersOrHandoff`. Read it as `members` for `Shortlist` or `RankedShortlist` and as `handoffContent` for a `HandoffOutcome`. It cannot replace keyed `memberEntries` in a `JointUseSet`; if it also lists joint-use members for compatibility, that list is only the unique set projection of the entry keys.
 
-#### G.5:4.4c - Publication quick card
+`sourceSetFamily` may name a declared `Front`, `Q-front`, `ExplorationArchive`, `Archive`, current pool subset, or derived tradition view. For retained alternatives, `publicSelectedSetLabel` normally names `Shortlist` or `RankedShortlist` and may use a domain label such as `StyleShortlist` or `TraditionShortlist` only when the term bridge is already clear. `JointUseSet` is not a shortlist label: it names an all-member result and therefore uses `namedUse` plus keyed `memberEntries`. G.5 does not create the archive, compute the comparison, govern the pool policy, decide the cultural-evolution case, establish member identity or relations, or repair the term bridge. Use `C.18`, `A.19.CPM`, `C.19`, `C.36`, `F.17`, `F.18`, and `F.9` for those distinct questions.
 
+#### G.5:4.4c - Result-declaration quick card
 
-
-The smallest useful `G.5` publication card usually states:
+The smallest useful `G.5` result card usually states:
 
 - `selectorOutcomeKind = SetResultOutcome | HandoffOutcome | AbstainOutcome | EscalationOutcome`
-- `setResultFamily = Shortlist | RankedShortlist` when `selectorOutcomeKind = SetResultOutcome`
-- `handoffKind = SpecialistHandoff | NarrowedHandoff` when `selectorOutcomeKind = HandoffOutcome`
-- `membersOrHandoff = ...`
+- `setResultFamily = Shortlist | RankedShortlist | JointUseSet` when `selectorOutcomeKind = SetResultOutcome`
+- `members = ...` for `Shortlist` or `RankedShortlist`
+- `namedUse = ...` and keyed `memberEntries = ...` for `JointUseSet`
+- `handoffKind = SpecialistHandoff | NarrowedHandoff` and `handoffContent = ...` when `selectorOutcomeKind = HandoffOutcome`
 - `ordering = ranked | unordered | not applicable`
 - `publicId = ...` when one public identity is emitted
-- `basisPins = ...`
+- the applicable inclusion conditions and `basisPins = ...`
 - `nextUse = downstream comparison | specialist handoff | escalation | none`
 
-A short conforming card may therefore read:
+A short retained-alternative card may read:
 
 ```text
 selectorOutcomeKind = SetResultOutcome
@@ -464,22 +486,38 @@ basisPins = [pathSlice_41, scr_22]
 nextUse = downstream_comparison
 ```
 
-If the card does not already state what was published, who survived, whether order belongs to the result, and which pins justify it, the publication is still unfinished `G.5` work.
+A short all-member card may read:
 
-#### G.5:4.4ca - Derived tradition-view publication stays derived over one declared palette
+```text
+selectorOutcomeKind = SetResultOutcome
+setResultFamily = JointUseSet
+namedUse = cohort_review
+memberEntries = [
+  { memberRef = Core@C },
+  { memberRef = Domain@D },
+  { memberRef = Local@L }
+]
+ordering = unordered
+inclusionConditions = [all_named_editions_required]
+basisPins = [choice_result_12, edition_basis_7]
+nextUse = cohort_material_preparation
+```
+If the card does not state the result kind, applicable members or keyed member entries, whether order belongs to the result, the named use for joint inclusion, and the basis pins, it does not yet state a complete `G.5` result.
+
+#### G.5:4.4ca - Derived tradition-view result stays derived over one declared palette
 
 - If selector work consumes one declared source set such as `Front`, `Archive`, or one source-set composition through one derived tradition view such as `TraditionFront` or `TraditionArchive`, treat that derived view as one interpretation view over one declared `SoTAPaletteDescription`, not as the default meaning of `Tradition` or of the palette itself.
-- When `SelectorOutcomeKind = SetResultOutcome`, the public selected-set label still closes as `Shortlist` or `RankedShortlist`; when `SelectorOutcomeKind = HandoffOutcome`, the result closes as one `SpecialistHandoff` or one other narrowed handoff. The derived tradition view disciplines the source, not the emitted outcome family.
-- When such a derived tradition view is active, publish `SourceSetFamily`, use `DerivedViewKind` when the distinction matters to interpretation or later shipping, use `SourceSetComposition` only when several source-set families were genuinely composed, and keep `BasePaletteRef=SoTAPaletteDescriptionId` recoverable alongside the emitted result.
+- When `SelectorOutcomeKind = SetResultOutcome`, close with `Shortlist` or `RankedShortlist` for retained alternatives and with `JointUseSet` for all-member use; when `SelectorOutcomeKind = HandoffOutcome`, close with one `SpecialistHandoff` or another narrowed handoff. The derived tradition view disciplines the source, not the emitted outcome family.
+- When such a derived tradition view is active, state `SourceSetFamily`, use `DerivedViewKind` when the distinction matters to interpretation or later shipping, use `SourceSetComposition` only when several source-set families were genuinely composed, and keep `BasePaletteRef=SoTAPaletteDescriptionId` recoverable alongside the emitted result.
 - If the derivation depends on one declared `Q` or one reachability or coverage rule, cite that declared basis directly in DRR and SCR records or equivalent basis pins rather than leaving the derivation implicit.
 - If no derived tradition view is active, stay with the declared palette, front, archive, or shortlist families already named by the selector record.
 
-#### G.5:4.4d - Worked publication closure slice
+#### G.5:4.4d - Worked result-declaration closure slice
 
-Three short contrasts keep the publication closure rule practical.
+Four short contrasts keep the result-declaration closure rule practical.
 
-**Several survivors, no public order belongs to the result.**
-When the selector has retained more than one admissible family but no downstream public order belongs to the published result, `G.5` should close as one `Shortlist` over the registered surviving rows:
+**Several alternatives survive, and the result does not order them.**
+When the selector retains more than one admissible family for later choice and the declared result does not order them, `G.5` should close as one `Shortlist` over the registered surviving rows:
 
 ```text
 Shortlist(
@@ -491,7 +529,7 @@ Shortlist(
 )
 ```
 
-**Order now materially belongs to the published result.**
+**The result orders the retained alternatives.**
 When one ordered public handoff is required, `G.5` should say so directly instead of leaving order implicit:
 
 ```text
@@ -504,6 +542,25 @@ RankedShortlist(
 )
 ```
 
+**Every named member is included for one use.**
+A cohort needs three already identified framework editions together. The result is not a shortlist of alternatives:
+
+```text
+JointUseSet(
+  namedUse = cohort_review,
+  memberEntries = [
+    { memberRef = Core@C },
+    { memberRef = Domain@D },
+    { memberRef = Local@L }
+  ],
+  ordering = unordered,
+  inclusionConditions = [all_three_roles_required],
+  basisPins = [choice_result_12, edition_basis_7]
+)
+```
+
+The edition refs keep their existing identities; G.5 creates no Method, registry row, dependency, compatibility, publication, access, content, claim, or contribution relation. Any content or claim that supports inclusion remains in its own governed record and may be cited among the top-level `basisPins`.
+
 **No admissible candidate survives.**
 When no family clears the pinned admissibility or evidence gates, `G.5` should close as one abstain or escalation result rather than as one empty shortlist pretending to be progress:
 
@@ -515,7 +572,7 @@ Abstain(
 )
 ```
 
-The practical distinction is simple: an internal retained subset can remain real upstream without yet being one public selector result. `G.5` begins only when that selector-facing publication question starts, and it closes only after the declared outcome kind, any applicable public selected-set label, surviving members or handoff content, and basis pins are emitted directly.
+The practical distinction is simple: an internal retained subset can exist upstream without yet being a public selector result. When the current question is to state that result for downstream use, `G.5` requires the result family, applicable members or keyed member entries, ordering, named use where required, and basis pins directly in the result.
 
 Most selector-side use can stop after `G.5:4.4d`. The blocks below are extension declarations used only when the corresponding mode is actually active.
 
@@ -603,6 +660,8 @@ All blocks below are extension declarations: they declare `Uses` and required pi
   * This block enables declared sets of `{Environment, MethodFamily}` pairs without redefining generator semantics in G.5.
   * Post‑2015 examples typically referenced via `G.2` family cards: POET‑class and later open‑ended and co‑evolutionary regimes, including enhanced variants where transfer policies and validity gates must be edition‑pinned.
 
+
+
 #### G.5:4.4e - Selector-facing outcome kinds
 
 - `SelectionSlot` returns one selector outcome, not one forced single winner.
@@ -611,12 +670,13 @@ All blocks below are extension declarations: they declare `Uses` and required pi
 - `HandoffKind` is required only when `SelectorOutcomeKind = HandoffOutcome`; `SpecialistHandoff` is one handoff kind, not one set-result family head.
 - `Front` names the non-dominated source set under the declared `DominanceSet`.
 - `Archive` names the retained exploration archive under the declared retention policy.
-- `Shortlist` names the lens-declared selected set emitted from `SelectionSlot`.
-- `RankedShortlist` names one ordered specialization of that shortlist result.
-- `ShortlistId` is the emitted public token when the shortlist publication must be carried or cited.
-- `ChoiceSet` may be used only as the mathematical set gloss for that shortlist when the set object itself is under analysis; it does not replace the public shortlist head.
+- `Shortlist` names alternatives retained for later choice and does not order them.
+- `RankedShortlist` names an ordered result over such retained alternatives.
+- `JointUseSet` names a result whose every keyed member is included for one named use; it is not a shortlist and has no semantic entry order.
+- `ShortlistId` is the emitted public token when a stable shortlist identity must be carried or cited; another set result may use its own generic `publicId` when a stable public identity is actually needed.
+- `ChoiceSet` may be used only as a mathematical set gloss when the set object itself is under analysis; it does not replace `Shortlist`, `RankedShortlist`, or `JointUseSet` as the public result kind.
 - `PortfolioMode` states how the selector operated; it does not rename the emitted set result.
-- The default `PortfolioMode=Archive` means that an unspecified selector or generator operating mode must preserve retained exploration evidence rather than pretending one current front or selected shortlist has already been emitted. It does not make every returned object an `Archive`, does not override `SetResultFamily`, and does not change the declared `DominanceSet`.
+- The default `PortfolioMode=Archive` means that an unspecified selector or generator operating mode must preserve retained exploration evidence rather than pretending one current front or selected set has already been emitted. It does not make every returned object an `Archive`, override `SetResultFamily`, or change the declared `DominanceSet`.
 - If one selector consumes both a front and an archive, say so explicitly rather than blurring them into one generic portfolio.
 - If one selector consumes one derived tradition view, keep that derived view explicit rather than silently treating it as the default meaning of `Tradition`.
 - `SetResultFamily`, `SourceSetFamily`, `SourceSetComposition`, `SubjectKind`, `DerivedViewKind`, `BasePaletteRef`, `PromotionPolicy`, and `RetentionIntent=steppingStone` are declaration fields, refs, or policy pins around the returned outcome; they are not additional emitted set results.
@@ -624,31 +684,37 @@ All blocks below are extension declarations: they declare `Uses` and required pi
 - `SourceSetComposition` is used only when the selector genuinely consumed more than one source-set family such as `Front` and `Archive`.
 - If that source set is one derived tradition view, keep the base palette recoverable alongside it.
 - `DerivedViewKind` may name which derived tradition view is active when that distinction matters to interpretation or later publication.
-- `DerivedViewKind` does not replace `SourceSetFamily`, `SetResultFamily`, or `Shortlist`.
+- `DerivedViewKind` does not replace `SourceSetFamily`, `SetResultFamily`, or the emitted result kind.
 - `BasePaletteRef` is one cited ref or id, not one kind.
-- If one selected result comes from one declared source set, publish that `SourceSetFamily` rather than asking the reader to infer it from one mode flag.
+- If one selected result comes from one declared source set, state that `SourceSetFamily` rather than asking the reader to infer it from one mode flag.
 - `PromotionPolicy` is required when tie-break or telemetry signals are promoted into dominance.
 - The selector may consume one declared source set and one declared choice lens without trying to explain the whole reason why another probe was worth its cost.
 - When `CostToProbe`, `ValueOfInformation`, `ValueOfComputation`, `explore_share`, `backstop_confidence`, or sequencing pressures matter, keep them explicit in the surrounding choice doctrine instead of smuggling them into set-result declaration fields.
-- Selector-facing results should name the set-result kind, source-set kind, derived-view declaration when needed, the emitted shortlist family, and promotion or default declaration.
+- A `JointUseSet` uses keyed `memberEntries`; every exact `memberRef` is unique, no per-member contribution or basis field is added, and any top-level `members` is only the derived unique set projection of those keys.
+- **Well-formedness constraint:** every exact framework-edition or other non-Method `memberRef` resolves under its existing identity; joint-use membership adds no `MethodRef` value or registry row for that member.
+- Candidate-pool and excluded-candidate records remain separate from the emitted `JointUseSet`; actual choice and selection Work remain with C.11 and the applicable A.6/A.15 occurrence patterns.
+- Selector-facing results should name the set-result kind, source-set kind when applicable, derived-view declaration when needed, membership form, and promotion or default declaration.
 - Those selector-facing field values should use controlled tokens, cited ids, or already-declared head labels rather than selector-local prose values.
 
 ### G.5:5 - Archetypal Grounding
 
 **Tell (archetype).**
-**System** must choose among rival families without lying about measurement admissibility, crossings, or evidence. **Episteme** insists that what is chosen must remain comparable, auditable, and stable under refresh.
+The selector-bearing **System** must choose among rival families without lying about measurement admissibility, crossings, or evidence. The result **Episteme** keeps the comparison basis, audit pins, and refresh conditions recoverable. When the current result instead includes several already identified members together, the same result-content boundary must not disguise that all-member meaning as retained alternatives.
 
 **Show 1 (multi-Tradition dispatch; unordered shortlist).**
 A `CG-Frame` includes multiple decision-theoretic families with different admissibility assumptions. Evidence for some CHR traits is incomplete.
-System registers families (S1), then runs `Select` (S3) on a pinned `TaskSignatureRef`. Eligibility is tri-state; some families **abstain** due to missing minimal-evidence pins. Among remaining candidates, only a partial order is admissible, so the selector publishes one `Shortlist` with explicit `basisPins` instead of inventing one scalar winner. No shadow acceptance logic appears in the selector; it consumes pinned acceptance and admissibility records.
+System registers families (S1), then runs `Select` (S3) on a pinned `TaskSignatureRef`. Eligibility is tri-state; some families **abstain** due to missing minimal-evidence pins. Among remaining candidates, only a partial order is admissible, so the selector emits one `Shortlist` with explicit `basisPins` instead of inventing one scalar winner. No shadow acceptance logic appears in the selector; it consumes pinned acceptance and admissibility records.
 
-**Show 2 (specialist handoff; ranked publication).**
+**Show 2 (specialist handoff; ranked result).**
 A bounded-specialization comparison keeps two method families live, but downstream handoff now requires one ordered public result rather than one merely unordered retained set.
-The admissible `G.5` result is therefore one `RankedShortlist` with explicit ordering, `ShortlistId`, and handoff-facing `nextUse`, so the publication itself states whether the order is public.
+The admissible `G.5` result is therefore one `RankedShortlist` with explicit ordering, `ShortlistId`, and handoff-facing `nextUse`, so the result makes its ordering explicit.
 
 **Show 3 (no admissible survivor; abstain or escalation).**
 A frame fails one admissibility gate and one minimal-evidence gate at the same time.
-The truthful `G.5` result is one abstain or escalation publication that names the blocking pins and the next downstream use boundary, not one empty shortlist that leaves downstream users unsure whether selection silently failed or admissibly stopped.
+The truthful `G.5` result is one abstain or escalation result that names the blocking pins and the next downstream use boundary, not one empty shortlist that leaves downstream users unsure whether selection silently failed or admissibly stopped.
+
+**Show 4 (complementary framework editions; unordered joint use).**
+A training cohort needs `Core@C`, `Domain@D`, and `Local@L` together. The editions are already identified under their own edition rules; they are not Method candidates or registry rows. An accepted cohort decision supplies the exact members and basis. `G.5-6 DeclareSetResult` emits one unordered `JointUseSet` with one keyed entry per edition, the named cohort-review use, inclusion conditions, and sufficient top-level basis pins. Direct dependencies and pairwise compatibility claims remain with E.4.PFR; publication and access remain with E.17/E.24.PUB and the applicable access-carrier pattern. The G.5 result declares membership but does not perform the choice, make those neighboring claims obtain, or create a contribution relation.
 
 ### G.5:6 - Bias-Annotation
 
@@ -686,7 +752,7 @@ Potential biases and failure modes this pattern explicitly guards against:
 | `CC‑G5.16`      | Hidden thresholds are forbidden. Thresholds live in explicitly pinned acceptance or eligibility policy records, not in selector prose, LOG shells, or code.  |
 | `CC‑G5.17`      | ReferencePlane **MUST** be declared (pinned) for any claim that is used in dispatch, and the selector’s audit records must cite it (including plane‑crossing pins when applicable). |
 | `CC-G5.18`      | Numeric comparisons and aggregations used by dispatch **MUST** cite an admissible, edition-pinned comparator or spec publication (as provided by the constraint-bearing spec refs); inadmissible mixes of scale types are forbidden. |
-| `CC-G5.19`      | **Conditional (QD).** If `G.5:Ext.NQD` is present, the required QD telemetry triple (quality, diversity, and QD summary) **MUST** be computable and publishable under the pinned descriptor and distance definitions and archive policy, without redefining their semantics in G.5. |
+| `CC-G5.19`      | **Conditional (QD).** If `G.5:Ext.NQD` is present, the required QD telemetry triple (quality, diversity, and QD summary) **MUST** be computable and ready for emission under the pinned descriptor and distance definitions and archive policy, without redefining their semantics in G.5. If actual publication is current, use E.17 for a source-backed face and return to source and E.24.PUB for the publication occurrence and audience availability. |
 | `CC‑G5.20`      | **Conditional (QD).** QD and illumination summaries are treated as telemetry unless explicitly promoted by a pinned acceptance or policy record; the selector must record the promoting policy id in audit pins. |
 | `CC-G5.21`      | **Conditional (Archive and QD).** Any use of archives **MUST** declare `InsertionPolicyRef` and pin the required editions for reproducibility, including descriptor and distance definitions and any method editions they depend on. |
 | `CC‑G5.22`      | **Conditional (QD).** Twin‑naming discipline for descriptor vs plain space (if used) must be respected (distinct objects; no aliasing).  |
@@ -702,23 +768,21 @@ Potential biases and failure modes this pattern explicitly guards against:
 | `CC‑G5.30`      | **No Strategy minting.** Within `G.5`, “strategy” is a policy‑bound composition template; the pattern **SHALL NOT** mint a durable U-kind named `Strategy` (E.10 and E.24.UK discipline). If a stable reference is needed, publish composition and policy ids (e.g., UTS entries) rather than minting a universal kind. |
 | `CC-G5.31`      | **Strategy hint on non-admissible sets.** If selection yields `CandidateSet = EMPTY`, the selector **SHALL** emit an explicit escalation hint (`ActionHint`) that is compatible with DRR and SCR records and auditable: include at minimum the top three blocking constraints as cited ids and pins, and where applicable include the relevant edition pins, for example `TransferRulesRef.edition` in Open-Ended mode, to guide exploration under explicitly pinned lenses such as the exploration and exploitation log policy. |
 | `CC‑G5.32`      | **Parity‑run publication and admissible roll-ups.** If parity harness is in use, parity publication is required per `CC‑G5.23a` (ID‑continuity). Any scalar roll-up or summary view **MUST** be admissible under **CG‑Spec** (no mixed‑scale sums), and published views must preserve set‑return semantics (no single‑score leaderboards as authoritative outputs without an explicit, admissible comparator publication). |
-| `CC‑G5.33`      | **Conditional (bounded specialization).** When the selection question is acquisition of usable specialization on a declared `TaskFamilyRef` or `TaskSignature`, selector outputs **SHALL** either publish `TaskFamilySpecializationProfile@Context` or cite equivalent pins carrying the `C.22.1` adaptation-signature fields needed for comparison: work-measure threshold target, prior exposure declaration, time-to-threshold, budget-to-threshold, post-threshold efficiency when relevant, and any declared transfer, retention, downside, or specialization-entry notes. |
-| `CC‑G5.34`      | **Selected-set publication label.** When `SelectorOutcomeKind = SetResultOutcome`, the published selected-set label **MUST** be explicit. Use `Shortlist` as the public selected-set label, `RankedShortlist` only when ordering materially belongs to the result, publish `ShortlistId` when one public identifier is emitted, and do not silently let `ChoiceSet` replace that public label. |
-| `CC‑G5.34a`     | **Selector outcome typing.** Published selector results **MUST** declare `SelectorOutcomeKind`. `SetResultFamily` is required only when `SelectorOutcomeKind = SetResultOutcome`; `HandoffKind` is required only when `SelectorOutcomeKind = HandoffOutcome`. Non-set outcomes **MUST NOT** masquerade as one public selected-set label. |
-| `CC‑G5.35`      | **Publication closure.** Any published selector result **MUST** state the declared `SelectorOutcomeKind`, any applicable public selected-set label, retained members or narrowed handoff content, ordering status (when applicable), and basis pins directly in the emitted result rather than relying on upstream `C.11`, `C.19`, or `C.24` notes. |
-| `CC‑G5.36`      | **Neighboring-pattern boundary.** If the current question is still local choice among already-available options, pool policy over still-live candidate lines, or enactment planning after choice, `G.5` **MUST** consume the published result from `C.11`, `C.19`, or `C.24` rather than restating those patterns as if publication itself decided the matter. |
-| `CC‑G5.37`      | **Derived tradition-view publication discipline.** If the selector publishes one result through a derived tradition view such as `TraditionFront` or `TraditionArchive`, it **MUST** keep the declared base `SourceSetFamily` explicit, keep `SoTAPaletteDescription` recoverable through `BasePaletteRef`, and **MUST NOT** let the derived view become the default meaning of `Tradition`, `TraditionPalette`, or the base palette. |
+| `CC‑G5.33`      | **Conditional (bounded specialization).** When the selection question is acquisition of usable specialization on a declared `TaskFamilyRef` or `TaskSignature`, selector outputs **SHALL** either emit `TaskFamilySpecializationProfile@Context` or cite equivalent pins carrying the `C.22.1` adaptation-signature fields needed for comparison: work-measure threshold target, prior exposure declaration, time-to-threshold, budget-to-threshold, post-threshold efficiency when relevant, and any declared transfer, retention, downside, or specialization-entry notes. |
+| `CC‑G5.34`      | **Selected-set result kind.** When `SelectorOutcomeKind = SetResultOutcome`, the public result kind **MUST** be explicit. Use `Shortlist` for unordered alternatives retained for later choice, `RankedShortlist` only when the result orders those alternatives, and `JointUseSet` only when every named member is included for one named use. `ChoiceSet` **MUST NOT** silently replace the public result kind. |
+| `CC‑G5.34a`     | **Selector outcome typing.** Declared selector results **MUST** state `SelectorOutcomeKind`. `SetResultFamily` is required only when `SelectorOutcomeKind = SetResultOutcome`; `HandoffKind` is required only when `SelectorOutcomeKind = HandoffOutcome`. Non-set outcomes **MUST NOT** masquerade as one public selected-set label. |
+| `CC‑G5.35`      | **Result-content closure.** Any declared selector result **MUST** state the `SelectorOutcomeKind`, applicable public result kind, retained members or keyed joint-use entries, ordering, named use and inclusion conditions when required, and basis pins directly in the emitted result rather than relying on upstream `C.11`, `C.19`, or `C.24` notes. |
+| `CC‑G5.36`      | **Neighboring-pattern boundary.** If the current question is still local choice among already-available options, pool policy over still-live candidate lines, or enactment planning after choice, a `G.5` use **MUST** consume the result produced by applying `C.11`, `C.19`, or `C.24` rather than restating those patterns as if declaring selector-facing content decided the upstream matter. |
+| `CC‑G5.37`      | **Derived tradition-view result discipline.** If the selector emits one result through a derived tradition view such as `TraditionFront` or `TraditionArchive`, it **MUST** keep the declared base `SourceSetFamily` explicit, keep `SoTAPaletteDescription` recoverable through `BasePaletteRef`, and **MUST NOT** let the derived view become the default meaning of `Tradition`, `TraditionPalette`, or the base palette. |
 | `CC‑G5.38`      | **Causal method dispatch declarations.** If method selection involves causal methods, each compared method **MUST** declare `causalMethodUseClassification` as observational predictor, intervention optimizer, counterfactual strategy, causal fairness estimator, causal-RL policy, or simulation-only method, and **MUST** carry `causalUseSupportRecordRef` and `causalUseSupportVerdict` when it consumes `C.28` causal-use support rather than treating method dispatch as causal certification. |
 | `CC-G5.39`      | **Method grounding and grouping boundary.** Every method-bearing registry row **MUST** resolve its non-empty `MethodRef[]` to exact A.3.1 Methods and cite the independently governed classification, membership relation, or explicit project-local grouping criterion used by this selector. A row, id, label, description, family card, eligibility or maturity record, policy, evidence pin, shortlist, or publication **MUST NOT** create a Method or membership fact. Missing grounding blocks that row's method-bearing use. |
 | `CC-G5.40`      | **Composition and selected-structure boundary.** A composition shape **MUST** remain a template unless one already identified A.3.1 Method separately passes B.1.5's complete composite-method qualification. An organization that does not constitute one Method **MUST** be consumed as an A.22 `U.Structure` only after all four A.22 identity discriminators are present. A template, A.3.2 description, registry row, selector outcome, diagram, label, or notation **MUST NOT** create either governed object or its underlying relations. |
-| `CC-G5.41`      | **Declaration, actuality, result and publication boundary.** A registry, selector, policy, template, shortlist, DRR, SCR, telemetry or publication-content declaration **MUST NOT** be treated as dated Work, an actual A.6.1 `Select` application or binding, a domain-result truth, C.2.1 result episteme, A.10 evidence relation, B.3 assurance claim, authorization, or E.24.PUB publication occurrence. Every claimed actual object or relation **MUST** be recovered under its direct owner; missing actuality blocks only that stronger claim. |
+| `CC-G5.41`      | **Declaration, actuality, result and publication boundary.** A registry, selector, policy, template, shortlist, DRR, SCR, telemetry or publication-content declaration **MUST NOT** be treated as dated Work, an actual A.6.1 `Select` application or binding, a domain-result truth, C.2.1 result episteme, A.10 evidence relation, B.3 assurance claim, authorization, or E.24.PUB publication occurrence. Every claimed actual object or relation **MUST** be recovered under its subject pattern; missing actuality blocks only that stronger claim. |
 | `CC-G5.42`      | **Crossing completeness.** A cross-semantic-context selector use **MUST NOT** proceed from Bridge, CL, loss, registry, policy, `CrossingAllowance`, `GateCrossing`, `CrossingBundle`, DRR or SCR pins alone. It requires exact F.17 endpoint senses, an obtaining F.9 Bridge, a separate C.2.1 bounded-use proposition and the matching A.10 reliance disposition or B.3 assurance branch; authorization and the actual selector application remain separate. |
 | `CC-G5.43`      | **Ordinary-use proportionality.** A bounded selector run over already grounded rows **MUST** be usable from the exact task, Methods and grouping bases, declared eligibility or comparison basis, truthful outcome, members, ordering status, basis refs and next use. It **MUST NOT** demand a fresh registry build, crossing branch, A.10/B.3 claim, stable public identity or E.24.PUB occurrence unless that stronger object or claim is current. Missing conditional apparatus blocks only the stronger claim. |
-
-
-
-
-
+| `CC-G5.44`      | **Joint-use membership integrity.** A declared selector-result record with `SetResultFamily = JointUseSet` **MUST** name one bounded use, set `ordering = unordered`, and use keyed `memberEntries` with each exact `memberRef` present at most once. Entry order has no semantic effect; the result **MUST NOT** add an undefined per-member contribution or basis field; and any top-level `members` **MUST** be only the unique set projection of the entry keys, never an independently maintained list. Exact supporting content or claims remain in their own records and may be cited only among sufficient top-level `basisPins`. |
+| `CC-G5.45`      | **Joint-use ontic and actuality boundary.** A declared selector-result record with `SetResultFamily = JointUseSet` is well formed only if every exact framework-edition or other non-Method `memberRef` resolves under its existing identity and the record adds no `MethodRef` value or registry row merely for membership. Candidate-pool and excluded-candidate records, direct member relations, local choice, actual selection Work, publication availability, and access remain separate. |
+| `CC-G5.46`      | **Operation-path integrity.** A `JointUseSet` over non-Method members **MUST** be emitted through `G.5-6 DeclareSetResult` from exact already identified `memberRef` values and a current inclusion basis; it **MUST NOT** use `RegisterFamily` or `G.5-3 Select`. `DeclareSetResult` **MUST NOT** be treated as the upstream choice, an actual `Select` application, dated Work, persisted result episteme, or E.24.PUB availability occurrence. |
 
 ### G.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -743,13 +807,17 @@ Potential biases and failure modes this pattern explicitly guards against:
   *Symptom:* registry entries are “renamed” to reflect updated interpretation, breaking continuity.
   *Avoid:* publish a new edition or deprecate; keep stable ids; use explicit edition pins and deprecation notices.
 
-* **Anti‑pattern: “Publication hidden in upstream reasoning.”**
-  *Symptom:* the retained set exists only as one implication inside `C.11`, `C.19`, or `C.24`, while `G.5` never names the published selected-set label.
-  *Avoid:* publish the selected-set result directly, with explicit label, members, and basis pins, instead of leaving the shortlist implicit in upstream doctrine.
+* **Anti‑pattern: “Result declaration hidden in upstream reasoning.”**
+  *Symptom:* the retained alternatives or all-member result exist only as one implication inside `C.11`, `C.19`, or `C.24`, while `G.5` never names the declared result kind.
+  *Avoid:* declare the selected-set result directly, with its result kind, applicable members or keyed entries, ordering, named use where required, and basis pins instead of leaving it implicit upstream.
 
-* **Anti‑pattern: “Published result without closure record.”**
-  *Symptom:* a `Shortlist`, narrowed handoff, or abstain result is named, but the emitted result still does not state its members, ordering status, or basis pins.
-  *Avoid:* publish the head, retained members, ordering status, abstain or escalation condition, and basis pins directly in `G.5`.
+* **Anti-pattern: “Shortlist used for complementary members.”**
+  *Symptom:* every named member is needed for one use, but the result calls them alternatives in a `Shortlist`.
+  *Avoid:* use `JointUseSet`, name the joint use, and key one entry per exact member; keep direct member relations and actual selection separate.
+
+* **Anti‑pattern: “Declared result missing required content.”**
+  *Symptom:* a `Shortlist`, `JointUseSet`, narrowed handoff, or abstain result is named, but the emitted result still omits its members or keyed member entries, ordering, named use where required, or basis pins.
+  *Avoid:* state the result kind, retained members or keyed joint-use entries, ordering, named use where required, abstain or escalation condition, and basis pins directly in `G.5`.
 
 ### G.5:9 - Consequences
 
@@ -757,7 +825,7 @@ Potential biases and failure modes this pattern explicitly guards against:
 * **Core stability.** Universal invariants are pinned through `G.Core`; method innovation and generator innovation do not churn the selector head.
 * **Evolvability.** Registries allow growth, retirement, and refresh with typed RSCR causes and explicit payload pins.
 * **Composability.** Strategy templates and fallbacks remain admissibility-checked and portable across implementations.
-* **Recoverable publication.** Selected-set results can now travel downstream as explicit shortlist-family, ranked-shortlist, or abstain or escalation results rather than one hidden implication inside upstream reasoning.
+* **Recoverable result content.** Selected-set results can travel downstream as explicit shortlist-family, joint-use, handoff, abstain, or escalation results rather than one hidden implication inside upstream reasoning.
 
 ### G.5:10 - Rationale
 
@@ -765,19 +833,21 @@ Potential biases and failure modes this pattern explicitly guards against:
 * **Why separation via Extensions?** QD, OEE, preference-learning, and similar families are fast-moving and method-specific; making them part of the selector head would force a universal semantics and violate strict distinction.
 * **Why set-return?** Partial orders are common and often the only admissible representation under heterogeneous scales; set-return preserves semantics and makes tie criteria explicit.
 * **Why explicit defaults with one declared source?** Defaults are unavoidable; single-source indexing prevents competing defaults from silently diverging across patterns.
-* **Why selected-set publication here?** Once the current question is to publish one retained set for downstream use, the selector should publish that result directly instead of leaving it implicit in local choice, pool-policy, or enactment notes written for other purposes.
+* **Why selected-set result declaration here?** Once the current question is to state retained alternatives or an all-member result for downstream use, the selector should declare that result directly instead of leaving it implicit in local choice, pool-policy, or enactment notes written for other purposes.
+* **Why `JointUseSet`?** A shortlist preserves alternatives for later choice; an all-member result says that removing one member changes the result for the named use. G.5 mints `JointUseSet` only as a local `SetResultFamily` value and reuses the existing outcome schema and member identities. `G.5-3 Select` may emit it only over exact Method candidates admitted through that kernel; `G.5-6 DeclareSetResult` covers exact already grounded members without retyping them as Methods. Neither branch mints a new U-kind, Method kind, relation kind, or registry kind. `CoUseSet` is less plain, `ComplementarySet` would imply a relation among the members, and `Bundle` would misname a package form.
 
 ### G.5:11 - SoTA-Echoing
 
 This pattern is designed to carry extension declarations for, not redefine, post-2015 SoTA families through `Uses` plus edition and policy pins:
 
-* **Quality-Diversity survey currentness (2026 DOI `10.1016/j.swevo.2025.102240`, ScienceDirect `S2210650225003979`).** Survey support keeps approaches, applications, archives, diversity use, and challenges visible, but it does not replace FPF governing loci. The practical implication for G.5 is publication closure only: if the selected result is a `Shortlist`, `RankedShortlist`, declared `ExplorationArchive`, `Front`, `Q-front`, abstain, or escalation, publish the declared outcome kind, source-set family, ordering status, and basis pins instead of letting survey taxonomy name the result.
-* **QD-as-MOO and archive-centric QD lines.** Current QD work can return fronts, archives, and set-shaped outcomes under descriptor, distance, dominance, and comparator editions. The practical implication is that G.5 publishes the selector-facing result without redefining archive and front relations; `C.18` and `A.19.CPM` keep descriptor, archive, front, and comparator meaning.
-* **Cultural and style selected-set labels.** Music, dance, and cultural-market source rows motivate labels such as `StyleShortlist` or `TraditionShortlist` only after term bridges and cultural-evolution case meaning are clear. The practical implication is to keep `DerivedViewKind`, `BasePaletteRef`, and `SourceSetFamily` visible; G.5 does not define style, tradition, canon, or platform semantics.
-* **Quality-Diversity and illumination (post-2015 refinements).** Archive-centric QD families fit naturally as `G.5:Ext.NQD` extension declarations with explicit descriptor, distance, and insertion pins. The practical implication is to keep publication honest about whether the selector is returning one admissible set, one ranked result, or no admissible survivor at all.
-* **Open-Endedness (post-2015 line; POET `arXiv:1901.01753`, AlphaEvolve `arXiv:2506.13131`).** POET-class and later open-ended or co-evolutionary families use generator registries plus `TransferRulesRef.edition` pins. The practical implication is to publish pair- or retained-set-shaped results explicitly rather than silently squeezing them into one false single-family winner.
+* **Quality-Diversity survey currentness (2026 DOI `10.1016/j.swevo.2025.102240`, ScienceDirect `S2210650225003979`).** Survey support keeps, for example, approaches, applications, archives, diversity use, and challenges visible, but it does not replace FPF rules. If the current result is the archive or front relation itself, stop at `C.18`. If a later selector consumes that archive or front and uses G.5 to declare its result, keep the archive or front as the source set and emit only an admitted `SelectorOutcomeKind`, with an admitted `SetResultFamily` for a set result; state the ordering and basis pins directly instead of letting survey taxonomy rename the result.
+* **QD-as-MOO and archive-centric QD lines.** Current QD work can produce fronts and archives under declared descriptor, distance, dominance, and comparator editions. `C.18` and `A.19.CPM` carry those meanings. Use G.5 only when a later selector-facing declaration is current. The G.5 record cites the front or archive as its source and states one admitted selector outcome.
+* **Complementary portfolio and ensemble construction (Kostovska et al., 2023, PMLR 224:11/1–17; Chen et al., 2024, PMLR 235:7568–7585).** Current algorithm-portfolio work selects a diverse, representative, non-redundant portfolio for a named downstream selection task, while complementary-ensemble work gives distinct members explicit roles in one combined use. G.5 adopts only the result distinction: a `JointUseSet` states the named use, keyed members, inclusion conditions, and sufficient top-level basis pins. It does not import portfolio or ensemble semantics, imply that members are Methods, or establish compatibility, contribution, co-enactment, or actual selection Work.
+* **Cultural and style selected-set labels.** Music, dance, and cultural-market source rows motivate labels such as `StyleShortlist` or `TraditionShortlist` only after term bridges and cultural-evolution case meaning are clear. Such a label remains a recoverable public label over an admitted `SetResultFamily`; it is not another outcome family. Keep `DerivedViewKind`, `BasePaletteRef`, and `SourceSetFamily` visible. G.5 does not define style, tradition, canon, or platform semantics.
+* **Quality-Diversity and illumination (post-2015 refinements).** Archive-centric QD families fit naturally as `G.5:Ext.NQD` extension declarations with explicit descriptor, distance, and insertion pins. The practical implication is to emit one admitted selector outcome and, for a set result, to say whether its family is `Shortlist`, `RankedShortlist`, or `JointUseSet`.
+* **Open-Endedness (post-2015 line; POET `arXiv:1901.01753`, AlphaEvolve `arXiv:2506.13131`).** POET-class and later open-ended or co-evolutionary families use generator registries plus `TransferRulesRef.edition` pins. The practical implication is to keep pair-valued or retained members explicit inside the applicable admitted set-result family rather than silently squeezing them into one false single-family winner.
 
-* **Algorithm selection and meta-selection (Thompson sampling tutorial `arXiv:1707.02038`; Bayesian optimization tutorial `arXiv:1807.02811`).** Modern selection under uncertainty, robust evaluation, and policy-driven probing use explicit policy records and typed telemetry pins, rather than hard-coded scoring rules. The practical safeguard is that the publication label and basis pins must still remain explicit after those policies have acted.
+* **Algorithm selection and meta-selection (Thompson sampling tutorial `arXiv:1707.02038`; Bayesian optimization tutorial `arXiv:1807.02811`).** Modern selection under uncertainty, robust evaluation, and policy-driven probing use explicit policy records and typed telemetry pins, rather than hard-coded scoring rules. The practical safeguard is that the result label and basis pins must still remain explicit after those policies have acted.
 * **Budgeted specialist acquisition (current agentic-search source-pack pressure via `G.2`).** Current agentic search lines compete on time or budget to threshold plus truthful selected-set return when heterogeneous specialists remain non-dominated. Treat those rows as source-pack pressure until cited by `G.2`; `G.5` keeps specialization profiles and set-return semantics explicit instead of forcing one static breadth winner.
 * **Preference-learning comparators.** Interactive and learned-preference regimes are treated as comparator or policy records with explicit editions when they are actually declared.
 
@@ -800,16 +870,19 @@ Evidence-source clarification: peer-reviewed source references carry the most di
 
 * Planning and enactment boundary: `A.15.3 (SlotFillingsPlanItem)` as the plannedBaselineRef (cited, not redefined).
 * Actual selector use and result availability: `A.19.SelectorMechanism` and A.6.1 for the actual `Select` application and bindings; `A.15.1` for dated selection Work by an admitted system under an obtaining assignment; C.2.1 for any persisted result episteme; `A.10` and `B.3` for evidence reliance and assurance; the direct authority pattern for authorization; and `E.24.PUB` for an actual publication occurrence. G.5 declarations and records create none of those neighboring facts.
+* Joint-use members outside Method dispatch: the direct identity pattern identifies every `memberRef`; `C.11` supplies a local choice result when one is current; another accepted decision or governed inclusion basis may establish all-member inclusion; E.4.PFR states framework-edition dependency or pairwise compatibility separately; `G.11` supplies currentness; and E.17/E.24.PUB plus the applicable access-carrier pattern supply exposure and source return. `G.5-6 DeclareSetResult` consumes the exact members and sufficient basis pins and emits only the selector-facing membership result.
 
 * Causal-use method dispatch: `C.28` when method selection involves causal effect, counterfactual comparison, causal fairness, causal policy, causal RL, or simulation-only causal-use claims.
-* Optional method or generator extensions through `G.5:Ext.*`: `C.18`, `C.19`, `C.23`, plus extension-bearing patterns admitted by a governing Part G relation when they add extra selector pins.
-* Mathematical-lens use: apply `C.29` when a selector input depends on a claim-relevant comparator, distance, descriptor geometry, embedding, normalization, surrogate model, learned representation, QD archive descriptor, model-family label, or model-selection basis whose mathematical object, mapping mode, preserved or lost structure, or stop condition is not yet recoverable. `C.29` may return no math-lens use, a lens-candidate note, a one-line note, a mini-card, a full card, or a note naming the direct governing pattern for the stated selector use. It does not publish the selected set, selector policy, registry row, shortlist, ranked shortlist, or selector evidence pins; those stay in `G.5` and its governing refs.
+* Optional Method or generator extensions through `G.5:Ext.*`: `C.18`, `C.19`, `C.23`, plus extension-bearing patterns whose exact Part G admission relation is established when they add extra selector pins.
+* Mathematical-lens use: apply `C.29` when a selector input depends on a mathematical object or mapping whose use is not yet recoverable—for example, a comparator, distance, descriptor geometry, embedding, normalization, surrogate model, learned representation, QD archive descriptor, model-family label, or model-selection basis. Recover that object's mapping mode, preserved or lost structure, and stop condition. The recorded result is a C.29 lens-use result; non-exhaustive examples include no lens use, a lens-candidate note, a one-line note, a mini-card, a full card, or a note naming the applicable pattern for the stated selector use. That result does not declare a selector result or its supporting records, such as the selected set, selector policy, registry row, shortlist, ranked shortlist, or selector evidence pins; use `G.5` for those objects and cite the exact references used.
 
-**Publishes to:** `UTS` (family ids, selector policy records, and selected-set identities such as `ShortlistId` when one public result is emitted), `G.6` (audit citations), RSCR emission records (typed triggers and payload pins), and downstream packs through `G.10` shipping publications.
+**Provides to:** downstream uses such as `G.6` audit citations, RSCR emission records with typed triggers and payload pins, and packs shipped through `G.10`. When a named use needs stable public identity, publish the required family ids, selector policy records, or selected-set identities—such as `ShortlistId`—to `UTS` under the applicable identity rule.
 
-**Coordinates with:** `C.11` for local choice results, `C.19` for pool-policy records, `C.32.P2S` when publication of a selected set is one stage in architecture problem-to-structure carry-through, `C.35` when discovered or generated structure-bearing outputs are not yet selected-set publications, `C.24` for enactment-facing next-action records, and the accepted Q-Front shortlist-family continuity line when the published selected-set label is one shortlist-family result.
+**Coordinates with:** `C.11` for local choice results; E.4.PFR for direct framework-edition dependency and pairwise compatibility claims; G.11 for edition currentness; E.17 for a source-backed publication face and return to source; E.24.PUB for a publication occurrence and audience availability; `C.19` for pool-policy records; `C.32.P2S` when a selected-set result declaration feeds architecture problem-to-structure carry-through; `C.35` when a generated or discovered structure-bearing output is not yet a selector-facing result; `C.24` for enactment-facing next-action records; and `C.18` when a `Front` or `Q-front` is the source set for a G.5 use.
 
-Architecture discovery boundary: when a generated or discovered structure-bearing output is only a carrier, description, query result, graph, cluster, or search trace, use `C.35` before G.5. Use G.5 only when the live claim is publication of a selected set with selector-policy and selected-set identity.
+A `Q-front` stays a C.18 source set; it is not the emitted G.5 outcome or a `SetResultFamily`. The G.5 result states one admitted `SelectorOutcomeKind`; a set result also states `Shortlist`, `RankedShortlist`, or `JointUseSet`, and any public selected-set label resolves to that family.
+
+Architecture discovery boundary: when a generated or discovered structure-bearing output is only a representation or carrier—for example, a description, query result, graph, cluster, or search trace—use `C.35` before G.5. Use G.5 only when the live claim is declaration of selected-set result content with selector-policy and selected-set identity; stable public identity and actual publication remain conditional neighboring branches.
 
 ### G.5:End
 

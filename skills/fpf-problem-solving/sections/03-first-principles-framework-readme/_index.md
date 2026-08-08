@@ -3,7 +3,7 @@
 > First Principles Framework (FPF) is a standards-style pattern language for turning difficult engineering, research, management, and mixed human and AI work into explicit, reviewable, improvable reasoning.
 
 - **Author:** Anatoly Levenchuk, with AI-agent assistance
-- **Version:** July 2026
+- **Version:** August 2026
 - **Status:** Normative kernel, eternal alpha: already used in working projects and development programs, while still evolving.
 
 FPF helps when a project has outgrown one clever conversation. It is useful when meanings, claims, options, evidence, architecture, work decisions, publication forms, and improvement criteria need to stay coherent across people, teams, tools, time, or AI agents.
@@ -19,7 +19,7 @@ Begin with the project object at stake and the current question about it. FPF of
 
 - [Decide Whether FPF Fits](01-decide-whether-fpf-fits.md) (49 lines) — Use FPF when ordinary discussion is no longer enough to keep work coherent. Typical signs:
 - [When Several Transformation Flows Form One Network](02-when-several-transformation-flows-form-one-network.md) (9 lines) — Inspect E.18.NET when the current question joins independently identified transformation-flow structures through exact direct relation occurrences. Several stages, several paths, or several...
-- [Practical-Use Cards](03-practical-use-cards.md) (214 lines) — Start with the current project question, not an ordinal route through FPF. The sixteen semantic keys below are stable navigation identifiers, not steps, kinds, relations, records, or result names....
+- [Practical-Use Cards](03-practical-use-cards.md) (226 lines) — Start with the current project question, not an ordinal route through FPF. The sixteen semantic keys below are stable navigation identifiers, not steps, kinds, relations, records, or result names....
 - [Recover a lost path from outside use to recursive builders](04-recover-a-lost-path-from-outside-use-to-recursive-builders.md) (6 lines) — Use this guide when the team has recovered or is explicitly proposing one project system-of-interest but can no longer show how a local result supports the expected outside change, release or runtime...
 - [One-Minute Example](05-one-minute-example.md) (21 lines) — A platform team asks:
 - [What FPF Is](06-what-fpf-is.md) (17 lines) — FPF is a pattern language for disciplined thinking in projects where ordinary prose, local expert judgment, or one-off AI output is not enough.

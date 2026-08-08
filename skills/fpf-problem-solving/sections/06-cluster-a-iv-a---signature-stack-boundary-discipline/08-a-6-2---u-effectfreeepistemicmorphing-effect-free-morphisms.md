@@ -86,34 +86,31 @@ The result: engineers and tool builders can no longer tell **when they are allow
 > * are **functorial** (identities and composition behave as expected on the category of epistemes);
 > * declare an explicit **EntityOfConcernChangeMode ∈ {preserve, retarget}**, controlling how `EntityOfConcernSlot` behaves, and how source `subjectRef` decodes through `DescriptionContext` when that wiring name is present.
 
-The category-theory **objects** of the EFEM universe are epistemes of some `U.EpistemeKind` (typically realised as `U.EpistemeCard` / `U.EpistemeView` / `U.EpistemePublication`). The **arrows** are EFEM morphisms `f : X → Y` satisfying the P0–P5 laws below.
+The category-theory **objects** of the EFEM universe are exact `U.Episteme` values of governed dependent kinds; an episteme may also be the same individual as a `U.View` when E.17.0 conformance obtains. Publication form, carrier, and `EpistemePublicationRelation` occurrence remain separate from that episteme. The **arrows** are EFEM morphisms `f : X → Y` satisfying the P0-P5 laws below.
 
 Specialisations:
 
 * `U.EpistemicViewing` (A.6.3) — EFEM with `EntityOfConcernChangeMode = preserve`.
 * `U.EpistemicRetargeting` (A.6.4) — EFEM with `EntityOfConcernChangeMode = retarget`, tied to KindBridges/ReferencePlanes.
 
-#### A.6.2:4.2 - Signature Block (A.6.0 alignment)
+#### A.6.2:4.2 - Direct signature components (A.6.0 alignment)
 
-As a `U.Signature`, EFEM publishes the following **SubjectBlock** and the standard four‑row block (“SubjectBlock / Vocabulary / Laws / Applicability”) from A.6.0, specialised to episteme→episteme morphisms.
-
-**SubjectBlock**
+As a `U.Signature`, EFEM declares the following direct A.6.0 components, specialised to episteme-to-episteme morphisms. They are declaration content, not fields of an additional container kind.
 
 ```
-SubjectBlock
-  SubjectKind   = U.EffectFreeEpistemicMorphing
-  RangedValueKind = ⟨X : U.Episteme, Y : U.Episteme⟩        // episteme pair (domain,codomain)
-  Quantification= SliceSet:=ContextSliceSet;
-  ExtentRule:=admissibleEpistemeMorphisms // Context slices & admissible EFEM per slice
-  ResultKind?   = EpMorphism                               // local typed arrow f : X->Y in the Ep category
+SubjectKind     = U.EffectFreeEpistemicMorphing
+RangedValueKind = pair of U.Episteme values <X, Y>
+ResultKind      = EpMorphism
+SliceSet        = ContextSliceSet
+ExtentRule      = admissible EFEM morphisms in each selected slice
 ```
 
-This says: EFEM is “about” **morphisms between epistemes**, indexed by Context slices; its results are local `EpMorphism` arrow values in the `Ep` category.
+`X` and `Y` are respectively the domain and codomain epistemes. `EpMorphism` is the local mathematical-lens arrow value `f : X -> Y` in the `Ep` category. `SliceSet` and `ExtentRule` are current here because later viewing and retargeting declarations rely on the admitted morphism family varying by selected slice; they are not mandatory signature filler.
 
 **Vocabulary (core operators & kinds)**
 
 * **Types**
-  * `U.Episteme` (as holon; realised via species `U.EpistemeCard`, `U.EpistemeView`, `U.EpistemePublication` under C.2.1).
+  * `U.Episteme` (as holon, including any same-individual admitted dependent episteme kind or `U.View` membership); publication is contingent participation in exact E.24.PUB relations, not an episteme species.
   * `U.EpistemeKind` (episteme n‑ary relation signature; slots per A.6.5 / C.2.1).
   * `SubjectRef` (source wiring name only; for Description epistemes, including Description epistemes admitted for specification use, it decodes to `DescriptionContext = ⟨EntityOfConcernRef, BoundedContextRef, ViewpointRef⟩` per C.2.1 §6.1 / E.10.D2). It does not define another EntityOfConcern family.
   * `EpMorphism` (local arrow value in `Ep`, governed by this morphism pattern and C.29 when the mathematical lens is current).
@@ -434,7 +431,7 @@ EFEM does *not* prescribe a specific calculus (deductive, probabilistic, latent�
 
 * **Specialises / is specialised by.**
 
-  * Builds on A.6.0 `U.Signature` and A.6.1 `U.Mechanism` for the uniform SubjectBlock/vocabulary/laws/applicability structure.
+  * Builds on A.6.0 `U.Signature` for direct subject, range, optional result, slice, and extent components together with Vocabulary, Laws, and Applicability; coordinates with A.6.1 `U.Mechanism` without making mechanism application part of EFEM.
   * Specialised by A.6.3 `U.EpistemicViewing` (entityOfConcern‑preserving EFEM) and A.6.4 `U.EpistemicRetargeting` (entityOfConcern-retargeting EFEM).
 
 * **Constrained by.**

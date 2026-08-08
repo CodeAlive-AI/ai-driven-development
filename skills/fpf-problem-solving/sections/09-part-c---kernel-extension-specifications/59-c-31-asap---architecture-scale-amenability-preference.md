@@ -108,7 +108,7 @@ When architecture alternatives satisfy the same safety boundary, law-domain boun
 
 This is not a selector result. If an alternative set, shortlist, selected set, local choice, gate, or decision is being claimed, use `G.5`, `G.9`, `C.11`, `A.21`, or the governing pattern. C.31.ASAP governs only the scale-preference claim and its boundary.
 
-A scale-preference claim may inform `C.32` candidate generation or supply one input to an `A.19.CPM` comparison by naming the scale variable, scale window, expected stable or improving structure, exception-growth risk, and source-return condition for candidate alternatives. It does not itself compare, select, publish, authorize, or prove an architecture. `C.32` carries the candidate architecture palette; `A.19.CPM` governs explicit comparison, `G.5` governs selected-set publication, `C.11` governs final local choice, `C.32.PAD` governs project architecture decision, and evidence, assurance, gate, and release patterns govern those claims when current.
+A scale-preference claim may inform `C.32` candidate generation or supply one input to an `A.19.CPM` comparison by naming the scale variable, scale window, expected stable or improving structure, exception-growth risk, and source-return condition for candidate alternatives. It does not itself compare, select, declare a selected-set result, publish, authorize, or prove an architecture. Use `C.32` to construct the candidate architecture palette, `A.19.CPM` to compare alternatives, `G.5` to declare a selected-set result, `C.11` to make a final local choice, and `C.32.PAD` to record a project architecture decision. When audience availability is current, use `E.17` for a source-backed publication face and return to source and `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability. Apply the relevant evidence, assurance, gate, or release definition and test only when that claim is current.
 
 When the same scale-sensitive pressure must also become a project criterion, `C.32.ACS` creates a separate row for the exact characteristic or Q-Bundle slot, bearer, scale form, and use class. That row may supply declared input to an ASAP preference, but it does not assert that one alternative is preferable under the scale window; conversely, an ASAP preference record is not an ACS row and does not classify the row as an optimization indicator, guardrail, or context-only row.
 
@@ -170,7 +170,7 @@ For `ArchitectureScaleAuditRecord@Project` and `BespokeResidueRegister@Project`,
 | `ScaleWindow` | Declared range where the preference claim holds. |
 | `SourceReturnCondition` | Condition for returning from a compressed, coarse, extracted, indexed, or accounting representation to source-side structural evidence, source records, or a related source or evidence record with higher declared validation boundary. |
 
-`ArchitectureScaleAuditRecord@Project` is a project-side triage record governed by this pattern. It is not an assurance proof, gate record, selected-set publication, local decision, or work plan.
+`ArchitectureScaleAuditRecord@Project` is a project-side record for triaging an architecture scale-preference claim. It is not an assurance proof, gate record, selected-set result declaration, publication occurrence, local decision, or work plan.
 
 #### C.31.ASAP:4.6 - Waiver discipline
 

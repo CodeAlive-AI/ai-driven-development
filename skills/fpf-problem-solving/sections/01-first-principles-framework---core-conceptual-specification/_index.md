@@ -3,7 +3,7 @@
 > A standards-style pattern language for turning difficult engineering, research, management, and mixed human/AI work into explicit, reviewable, improvable reasoning.
 
 - **Author:** Anatoly Levenchuk, with AI-agent assistance
-- **Version:** July 2026
+- **Version:** August 2026
 - **Status:** Normative kernel, eternal alpha: already used in working projects and development programs, while still evolving.
 
 This monolith is the AI-agent and tool-assisted working specification for FPF.

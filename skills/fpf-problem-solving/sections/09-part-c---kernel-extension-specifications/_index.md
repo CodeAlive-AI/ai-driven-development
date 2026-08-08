@@ -10,7 +10,7 @@
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate‑neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their motion and equivalence. Exports: (i) three point‑characteristics—Formality F,...
 - [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (535 lines) — Normativity: Normative except where a section is explicitly marked informative
-- [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (659 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
+- [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (662 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (375 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). Cross-context reuse is Bridge-only: scope may be re-expressed via...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (264 lines) — Type: Architectural (A)
 - [C.2.3 - Unified Formality Characteristic F](06-c-2-3---unified-formality-characteristic-f.md) (312 lines) — Type: Definitional (D)
@@ -33,7 +33,7 @@
 - [C.16.P - Characteristic and Scale Precision Restoration](23-c-16-p---characteristic-and-scale-precision-restoration.md) (250 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](24-c-16-q---quality-term-precision-restoration.md) (848 lines) — Type: Characterization precision-restoration pattern
 - [C.17 - Characterising Generative Novelty & Value (Creativity‑CHR)](25-c-17---characterising-generative-novelty-value.md) (720 lines) — Status. Mechanism specification (CHR) — normative where stated.
-- [C.18 - Open-Ended Search Archive and Front Stewardship](26-c-18---open-ended-search-archive-and-front-stewardship.md) (276 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
+- [C.18 - Open-Ended Search Archive and Front Stewardship](26-c-18---open-ended-search-archive-and-front-stewardship.md) (279 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
 - [C.18.1 - Scaling‑Law Lens Binding (SLL)](27-c-18-1---scaling-law-lens-binding.md) (135 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale, budget, data, model capacity, iteration budget, freedom...
 - [C.19 - Explore-Exploit Live-Pool Governor](28-c-19---explore-exploit-live-pool-governor.md) (376 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](29-c-19-1---bitter-lesson-preference.md) (141 lines) — One‑screen purpose (manager‑first).
@@ -60,7 +60,7 @@
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](50-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (262 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Architecture and Structure Precision Restoration](51-c-30-p---architecture-and-structure-precision-restoration.md) (248 lines) — Type: Architectural pattern
 - [C.30.STRAT - Stratification Wording Precision Restoration](52-c-30-strat---stratification-wording-precision-restoration.md) (270 lines) — Type: Architectural precision-restoration subpattern under C.30
-- [C.30.ASV - Architecture Structural View Adequacy (ASV)](53-c-30-asv---architecture-structural-view-adequacy.md) (774 lines) — Type: Architectural pattern
+- [C.30.ASV - Architecture Structural View Adequacy (ASV)](53-c-30-asv---architecture-structural-view-adequacy.md) (797 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](54-c-30-lca---control-structure-view-adequacy.md) (300 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](55-c-30-ilc---cross-scope-architecture-residual-triage.md) (252 lines) — Type: Architectural subpattern under C.30
 - [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](56-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (420 lines) — Type: Architectural pattern
@@ -82,4 +82,4 @@
 - [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](72-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
 - [C.35 - Structural Synthesis and Discovery Adequacy](73-c-35---structural-synthesis-and-discovery-adequacy.md) (207 lines) — Type: Architectural pattern
 - [C.36 - Cultural Evolution and Cultural-Evolution Engineering](74-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (318 lines) — Tech-name: CulturalEvolutionEngineering
-- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](75-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (146 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
+- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](75-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (148 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

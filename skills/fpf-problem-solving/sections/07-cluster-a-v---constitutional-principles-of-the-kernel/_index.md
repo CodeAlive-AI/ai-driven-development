@@ -22,8 +22,8 @@
 - [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](17-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (214 lines) — Type: Architectural (A)
 - [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](18-a-15-6---project-process-and-case-recovery-through-work-meth.md) (324 lines) — Type: Architectural (A)
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](19-a-15-prod---production-work-entity-identity-inception-and-pr.md) (415 lines) — Type: Architectural (A)
-- [A.16 - Language-State Move Coordination](20-a-16---language-state-move-coordination.md) (349 lines) — Type: Architectural (A)
-- [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](21-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (258 lines) — Type: Architectural (A)
+- [A.16 - Language-State Move Coordination](20-a-16---language-state-move-coordination.md) (357 lines) — Type: Architectural (A)
+- [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](21-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
 - [A.16.1 - U.PreArticulationCuePack](22-a-16-1---u-prearticulationcuepack.md) (295 lines) — Type: Definitional (D)
 - [A.16.2 - Reopen / SketchBackoff / Respecify](23-a-16-2---reopen-sketchbackoff-respecify.md) (225 lines) — Type: Architectural (A)
 - [A.17 - Canonical “Characteristic” (A.CHR‑NORM)](24-a-17---canonical-characteristic.md) (136 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...

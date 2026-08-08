@@ -36,7 +36,7 @@
 
 **First useful move.** For each planned call, name the exact `methodRef` first, then cite an edition-pinned `methodDescriptionRef` only if its route description is needed. State order, budget, stop/replan condition and next action without claiming that Work occurred.
 
-**Not this pattern when.** If the surviving option or pool policy is unresolved, use C.11 or C.19; if selector-facing publication is current, use G.5. If the question is only what a callable MethodDescription says, use A.3.2/C.2.1. If the question is whether a call actually occurred or what Method it enacted, use A.15.1; if work-entry readiness is the question, use A.15.5.
+**Not this pattern when.** If the surviving option or pool policy is unresolved, use `C.11` or `C.19`. If selector-facing result declaration is current, use `G.5`. If that result already exists and actual audience availability is current, use `E.17` for its source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and availability. If the question is only what a callable MethodDescription says, use `A.3.2` for its content and `C.2.1` for its episteme identity. If the question is whether a call actually occurred or what Method it enacted, use `A.15.1`; if work-entry readiness is the question, use `A.15.5`.
 
 ### C.24:0.3 - First-minute questions
 
@@ -71,7 +71,7 @@ Immediate failure indicators for this pattern:
 * the budget being burned is still only probing-before-choice budget rather than enactment or tool-call budget, or
 * the next admissible output is still undefined as one enactment-facing plan, one `CheckpointReturn`, or one neighbouring-pattern exit.
 
-If the question under repair is still which fixed option should survive now, apply `C.11`. If it is still pool policy over several still-live candidate lines, apply `C.19`. If it is already public selected-set publication, apply `G.5`.
+If the question under repair is still which fixed option should survive now, apply `C.11`. If it is still pool policy over several still-live candidate lines, apply `C.19`. If it is already selector-facing result declaration, apply `G.5`. If that result already exists and must be presented or made available to an audience, use `E.17` for its source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and availability.
 
 ### C.24:2 - Problem
 We need a **tool-agnostic** way to (i) identify exact admissible `U.Method` values and any auxiliary route descriptions, (ii) compose one **call work plan** whose steps select those Methods, (iii) allocate an **explore/exploit** share, (iv) enforce **budget & harm** gates, and (v) **replan** on signals—**without** baking domain-specific heuristics into the core and **without** collapsing `U.Method`, `U.MethodDescription`, `U.WorkPlan`, and `U.Work` into one object.
@@ -126,7 +126,7 @@ That `CheckpointReturn` should state the declared utility objective and current 
 
 A successful probe does not by itself justify a larger burn or a committed rollout. `C.24` carries the `CheckpointReturn` record and call-plan semantics for this probe loop; `A.15` carries the DesignRunTag split and `E.16` carries the budget partition plus guard and ledger enforcement. Low-human-overlap approaches remain sound only while they stay tied to the declared utility objective, budget boundaries, and evidence locus explicitly.
 
-**Bridge to neighboring patterns.** `ProbeBudget` belongs to `C.11` while it means epistemic budget for further probing before choice. `C.24` carries budgets once they are enactment, tool-call, or rollout budgets. If the question is still which option survives now, apply `C.11`; if it is now pool policy over several still-live candidate lines, apply `C.19`; if it is selector-facing publication of the selected result, apply `G.5`.
+**Bridge to neighboring patterns.** `ProbeBudget` belongs to `C.11` while it means epistemic budget for further probing before choice. `C.24` carries budgets once they are enactment, tool-call, or rollout budgets. If the question is still which option survives now, apply `C.11`; if it is pool policy over several still-live candidate lines, apply `C.19`; if it is selector-facing declaration of the selected result, apply `G.5`. If that declared result must be presented or made available to an audience, use `E.17` for its source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and availability.
 
 **Explicit enactment result.** A conformant `C.24` pass should therefore leave either one enactment-facing `CallPlan` that states the current objective, each planned exact Method ref and any separate route-description ref, planned call order, planned budget envelope, stop or replan condition, and next planned action, or one `CheckpointReturn` that states the current objective or task family, tested Methods and descriptions when recovered, burned and residual actual budget, evidence locus, commit trigger, and recommended next action.
 
@@ -139,7 +139,7 @@ A successful probe does not by itself justify a larger burn or a committed rollo
 * **ATC-3 (Budget & Harm Gates).** Plans **SHALL** declare ceilings on compute, cost, wall-time, and risk; execution **MUST** abort or replan on breach. Actual burned or residual budget belongs in `CheckpointReturn`, `CallGraph`, or other work-side reporting, not inside the `CallPlan` field set.
 * **ATC-4 (Explore-Share Discipline).** Plans **MUST** declare `explore_share`; defaults **inherit from E/E-LOG profiles**. **Informative defaults**: `0` for safety-critical or deterministic tasks; `approx 0.2-0.4` for ambiguous tasks with heterogeneous tool families. Promotion of illumination telemetry into dominance **requires explicit policy**.
 * **ATC-5 (Provenance & Replay).** Every actual call **MUST** emit a **CallGraph** row with its exact Work ref, exact enacted Method ref, performer System, obtaining assignment, Service id, optional cited MethodDescription edition, inputs and outputs (redacted per privacy), `CallPlan` ref, **EmitterPolicyRef**, actual interval, and budget deltas. The graph records these facts; it creates none of them. (NQD/E/E provenance fields apply when used.)
-* **ATC-6 (Assurance-First Decisions).** Selection **MUST** respect B.3: WLNK minima on F/R (weakest-link floors), CL penalties on integration, and **no** chimera scores across design-time and run-time scopes. Publish **<F,G,R>** for the typed claim `this plan is admissible under K,S`.
+* **ATC-6 (Assurance-First Decisions).** Selection **MUST** respect B.3: WLNK minima on the F and R dimensions (weakest-link floors), CL penalties on integration, and **no** chimera scores across design-time and run-time scopes. State **<F,G,R>** for the typed claim `this plan is admissible under K,S`.
 * **ATC-7 (Notation/Vendor Independence).** Core pattern text **MUST NOT** encode vendor-specific tokens; bindings occur in Context via Bridges/Profiles. (Lexical guard-rails.)
 
 #### C.24:4.1a - Planning under budget must consume the same declared doctrine
@@ -177,10 +177,10 @@ What this does not establish: `C.24` does not estimate effects, prove identifica
 
 - Planning should reuse the declared source set, decision lens, probe budget, and stopping condition rather than creating one planning-only choice semantics.
 - Budgeted sequencing may mix exploitation and exploration, but the declared source set and the declared reason for the next probe must stay recoverable.
-- Use planning language such as `probe next`, `hold as archive`, `apply G.5 for shortlist publication`, or `stop for now` only when the relevant lens-side reason is stated directly.
+- Use planning language such as `probe next`, `hold as archive`, `apply G.5 for shortlist declaration`, or `stop for now` only when the relevant lens-side reason is stated directly.
 - `explore_share`, `backstop_confidence`, probe budgets, and replan triggers are planning harmonization terms for that same declared choice doctrine.
 - They may regulate sequence and stopping; they do not redefine `Front`, `Archive`, `Shortlist`, or `SelectionSlot`.
-- If the next planned output is one public `Shortlist` or `RankedShortlist`, `C.24` should name that as a neighbouring-pattern exit to `G.5`, not emit the selector artifact itself.
+- If the next planned output is one public `Shortlist` or `RankedShortlist`, `C.24` should identify a neighboring result-declaration question and apply `G.5`, not emit the selector artifact itself.
 
 #### C.24:4.2 - Policy profile and BLP precedence
 
@@ -196,7 +196,7 @@ What this does not establish: `C.24` does not estimate effects, prove identifica
 
 #### C.24:4.4 - Explicit enactment outputs and closure rule
 
-A finished `C.24` pass should publish one enactment result rather than one vague statement that the system now has a plan.
+A finished `C.24` pass should emit one enactment result rather than one vague statement that the system now has a plan.
 
 Two output shapes are admissible here:
 
@@ -252,7 +252,7 @@ CheckpointReturn(
 )
 ```
 
-Close as one enactment-facing `CallPlan` when the choice result is already fixed enough that execution order, gating, and replanning are now the call-planning question. Close as one `CheckpointReturn` when bounded scout/probe work is still admissible inside enactment planning. Return to the neighbouring pattern when the result has actually fallen back into local choice, pool policy, or selector-facing publication.
+Close as one enactment-facing `CallPlan` when the choice result is already fixed enough that execution order, gating, and replanning are now the call-planning question. Close as one `CheckpointReturn` when bounded scout or probe work is still admissible inside enactment planning. Apply the neighboring pattern when the result has fallen back into local choice, pool policy, selector-facing result declaration, or publication availability.
 
 If the result still does not state what should execute now, what budget is planned or already burned, and what event stops or replans the route, it is still unfinished `C.24` work.
 
@@ -319,14 +319,14 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 1. **CC-ATC-1 - Declared separation.** Every planned call step selects an exact independently admitted `U.Method`; `ATC.CallRouteDescription` is a separate `U.MethodDescription` episteme; `ATC.CallPlan` is a `U.WorkPlan`; each execution is exact dated `U.Work` with actual `enactsMethod`; acceptance is via separate `U.PromiseContent`. No description, service promise, CallGraph row, method-side route logic, or actual burn is smuggled into another object.
 2. **CC-ATC-2 - Budgets on record.** Time budget, compute budget, cost ceiling, and risk limit exist ex ante; stop conditions are listed.
 3. **CC-ATC-3 - E/E policy.** `EmitterPolicyRef` (or equivalent) and `explore_share` are editioned and logged.
-4. **CC-ATC-4 - Assurance tuple.** Publish the typed claim `Plan admissible under K,S` with `<F,G,R>` and CL penalties traceable in the `CallGraph` SCR. Design-time and run-time never merged.
+4. **CC-ATC-4 - Assurance tuple.** State the typed claim `Plan admissible under K,S` with `<F,G,R>` and CL penalties traceable in the `CallGraph` SCR. Design-time and run-time never merged.
 5. **CC-ATC-5 - BLP waiver discipline.** Any heuristic override against a general method includes expiry and re-evaluation date.
 6. **CC-ATC-6 - Provenance minimum.** For every actual call record `{WorkRef, PerformerSystemRef, RoleAssignmentRef, MethodRef, MethodDescriptionRef? and edition when cited, PromiseContentRef?, CallPlanRef, EmitterPolicyRef, TimeWindow, budget deltas, DescriptorMapRef? (if NQD), DistanceDefRef? (if NQD), Seeds?, Dedup?}`; each ref resolves its direct object and the record creates none of them.
 7. **CC-ATC-7 - Notation independence.** No vendor tokens in conceptual text; bindings via Bridges or Profiles only.
 8. **CC-ATC-8 - BLP tolerances declared.** `alpha/delta` tolerances are present in `ATC.Policy` or referenced via the active `E/E-LOG` profile.
-9. **CC-ATC-9 - `CheckpointReturn` for bounded specialization.** When one route still uses scout/probe discipline on a new task family, it SHALL publish one `CheckpointReturn` with candidate routes, evidence, burned/residual actual budget, next action, and commit trigger; a successful probe alone never counts as committed rollout.
-10. **CC-ATC-10 - Recoverable enactment closure.** When `C.24` returns one enactment-facing call plan or one `CheckpointReturn`, the `CallPlan` SHALL state current objective, ordered exact Method refs, separate route-description refs when current, planned budget envelope, stop or replan condition, and `nextPlannedAction`, while `CheckpointReturn` SHALL state burned/residual actual budget plus next action and commit trigger.
-11. **CC-ATC-11 - Neighboring-pattern boundary.** If the question under repair is still fixed-option choice, pool policy over several live lines, or selector-facing publication, `C.24` SHALL apply `C.11`, `C.19`, or `G.5` rather than restating those patterns.
+9. **CC-ATC-9 - `CheckpointReturn` for bounded specialization.** When one route still uses scout or probe discipline on a new task family, it SHALL emit one `CheckpointReturn` with candidate routes, evidence, actual budget spent and remaining, next action, and commit trigger; a successful probe alone never counts as committed rollout.
+10. **CC-ATC-10 - Recoverable enactment closure.** When `C.24` returns one enactment-facing call plan or one `CheckpointReturn`, the `CallPlan` SHALL state current objective, ordered exact Method refs, separate route-description refs when current, planned budget envelope, stop or replan condition, and `nextPlannedAction`, while `CheckpointReturn` SHALL state actual budget spent and remaining plus next action and commit trigger.
+11. **CC-ATC-11 - Neighboring-pattern boundary.** If the question under repair is still fixed-option choice, pool policy over several live lines, selector-facing result declaration, or publication availability, `C.24` SHALL apply `C.11`, `C.19`, or `G.5` as appropriate; when publication is current, it SHALL apply `E.17` for the face and source return and `E.24.PUB` for the publication occurrence and availability. It SHALL NOT restate those patterns.
 12. **CC-ATC-12 - Role discipline.** User-facing prose and emitted artifacts SHALL speak about systems in agential roles or equivalent typed performers, not one generic `agent` head, when that generic head would blur the holder kind.
 13. **CC-ATC-13 - Causal action-use spec.** If one `CallPlan` selects observation, intervention, counterfactual-rung evidence collection, counterfactual policy conditioning, or off-policy causal evaluation for a causal purpose, it SHALL carry `CallPlan.causalActionUseSpec?` with `targetCausalityLadderRung`, `causalUseClaimKind: CausalUseClaimKind`, supported use, unsupported use, and a `C.28` causal-use support reference rather than letting call-planning vocabulary certify the causal claim.
 
@@ -335,9 +335,9 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 - **Treating route description as plan.** Avoid by keeping callable logic in `ATC.CallRouteDescription` and keeping `ATC.CallPlan` as one `U.WorkPlan` whose steps select exact Methods and cite descriptions separately.
 - **Treating MethodDescription as enacted Method.** A route document, schema or endpoint description is an episteme, not the world-side way of doing and not what a call enacts. Recover the exact `methodRef`; otherwise keep the candidate in probe state or exit with a missing Method relation.
 - **Treating CallGraph or service response as Work.** A graph row and response carrier may evidence a call but do not establish its occurrence, performer, assignment, interval or `enactsMethod`; recover those A.15.1 facts independently.
-- **Treating planning as execution.** Avoid by publishing actual burn only through `CheckpointReturn`, `Work`, and `CallGraph`, not inside the `CallPlan` field set.
+- **Treating planning as execution.** Avoid by recording actual burn only through `CheckpointReturn`, `Work`, and `CallGraph`, not inside the `CallPlan` field set.
 - **Burning enactment budget while the question under repair is still upstream choice or pool policy.** Avoid by rerouting unresolved fixed-option choice to `C.11` and unresolved live-pool governance to `C.19` before building one call plan.
-- **Counting a successful probe as committed rollout.** Avoid by publishing one `CheckpointReturn` with a visible commit trigger instead of smuggling rollout through a positive scout result.
+- **Counting a successful probe as committed rollout.** Avoid by emitting one `CheckpointReturn` with a visible commit trigger instead of smuggling rollout through a positive scout result.
 - **Hiding stop conditions or replan triggers.** Avoid by making them part of the public `CallPlan` field set rather than one private implementer intuition.
 
 ### C.24:9 - Consequences
@@ -352,7 +352,7 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 
 Source-use relation and source-currentness for this rationale: these rows are current-practice pressure and BLP-neighbour alignment, not a standalone `SoTA-Echoing` table. A current tool-use or agentic-loop source becomes load-bearing only when it changes one `CallPlan`, `CheckpointReturn`, budget, stop or replan condition, BLP waiver, or relation row.
 
-- Contemporary tool-use systems in agential roles work best when planning, feedback, and replanning stay explicit rather than collapsing into one brittle script. The practical implication is to publish one `U.WorkPlan` whose planned steps select exact Methods, cite route-description epistemes separately when current, and carry stop or replan triggers before execution.
+- Contemporary tool-use systems in agential roles work best when planning, feedback, and replanning stay explicit rather than collapsing into one brittle script. The practical implication is to state one `U.WorkPlan` whose planned steps select exact Methods, cite route-description epistemes separately when current, and carry stop or replan triggers before execution.
 - Post-2015 search, optimization, and agentic systems also show that bounded probing is useful but dangerous when it silently becomes commitment. The safeguard here is the explicit `CheckpointReturn` plus visible commit trigger and one explicit split between planned budget envelope and burned actual budget.
 - Scaling-first practice favors general, learnable methods over fragile hand-tuned tactics when assurance and cost remain comparable. The practical implication is not blind optimism but disciplined BLP: when a narrow heuristic wins, record the waiver, expiry, and re-evaluation window.
 ### C.24:12 - Relations

@@ -6,9 +6,9 @@
 
 ### C.32.HCS:1 - Problem frame
 
-Use this pattern when a practitioner must begin architecture-characteristic narrowing for a described holon, or for adjacent method-side, role-side, work-side, evidence-side, or cultural-evolution material after the governing pattern has been recovered, and the available source catalogues are too broad to choose the first project criteria rows.
+Use this pattern when a practitioner must choose a few architecture-characteristic starter heads for a described holon or for method, role-assignment, work, evidence, or cultural-evolution structures recovered from a source label, and the available catalogues are too broad to choose the first project criteria rows.
 
-Primary working reader: an architect or architecture-responsible practitioner choosing a small first set of architecture-characteristic heads for an admitted holon family, or for a recovered architecture-bearing family whose described holon, source-bearing episteme or publication context, and governing pattern are already named.
+Primary working reader: an architect or architecture-responsible practitioner choosing a small first set of architecture-characteristic heads for an admitted holon family or another recovered architecture-bearing family, after naming the described holon or source-bearing episteme or publication context and any recovery patterns actually used.
 
 Typical entry phrases:
 
@@ -18,9 +18,9 @@ Typical entry phrases:
 "A role assignment, organization, built asset, or evidence workflow has reliability-like pressure, but the bearer and scale are unclear."
 ```
 
-**First-minute use slice.** A review lead sees a long quality catalogue and a software-oriented checklist, while the source wording calls the object a reusable review practice. Using C.32.HCS, the practitioner first restores the source label: the live holon is the review organization-as-system or bounded review-work context; the adjacent governed structures include a method relation structure, method descriptions, role assignments for role-holding systems, work-product structures, and evidence records. Only then does the practitioner inspect repeatability, transferability, evidence reuse, exception growth, and role-assignment substitutability, record teachability as a likely C.25 Q-Bundle, and carry only those starter heads and first project questions to `C.32.ACS`. The project starts from a small recovered architecture-bearing set instead of copying hundreds of names or admitting "practice" as a holon kind.
+**First-minute use slice.** A review lead sees a long quality catalogue and a software-oriented checklist, while the source wording calls the object a reusable review practice. Using C.32.HCS, the practitioner first resolves that label: the live holon is the review organization-as-system or bounded review-work context; the relevant structures include a method relation structure, method descriptions, role assignments for role-holding systems, work-product structures, and evidence records. Only then does the practitioner inspect repeatability, transferability, evidence reuse, exception growth, and role-assignment substitutability, record teachability as a likely C.25 Q-Bundle, and carry only those starter heads and first project questions to `C.32.ACS`. The project starts from a small recovered architecture-bearing set instead of copying hundreds of names or admitting "practice" as a holon kind.
 
-The primary `EntityOfConcern` is one architecture-bearing family starter pack for beginning to turn broad architecture-characteristic names into project criteria rows. A starter head is only a possible characteristic head before project bearer, scale, use class, proxy risk, and protected counter-characteristics are bound. HCS hands starter heads to ACS; Q-Bundles, measurements, eval programs, candidate palettes, comparison rules, G.5 publications, and architecture decisions stay with their receiving patterns.
+The primary `EntityOfConcern` is one architecture-bearing family starter pack for beginning to turn broad architecture-characteristic names into project criteria rows. A starter head is only a possible characteristic head before project bearer, scale, use class, proxy risk, and protected counter-characteristics are bound. Carry admitted starter heads to ACS. Keep Q-Bundles, measurements, eval programs, candidate palettes, comparison rules, G.5 result declarations, actual publications, and architecture decisions as separate objects handled by their applicable patterns.
 
 Ordinary working move: choose the starter pack for the admitted holon family or recovered architecture-bearing family, keep only the heads that plausibly fit the project, ask the first project question for each head, then hand those heads to `C.32.ACS` for bearer, scale, and use-class binding.
 
@@ -30,25 +30,25 @@ The first useful output is an `ArchitectureBearingFamilyCharacteristicStarterPac
 ArchitectureBearingFamilyCharacteristicStarterPack@FPF:
   architectureBearingFamilyRef:
   describedHolonOrCarrierContextRef?:
-  governingRecoveryPatternRefs?:
+  recoveryPatternRefs?:
   typicalSelectedStructureRefs:
   starterCharacteristicHeads:
     - architectureCharacteristicHead:
       usualBearerOrSelectedStructureRefs:
       likelyQBundleBoundary?:
       firstProjectQuestion:
-      usualReceivingPatternRef:
+      usualNextQuestionPatternRef:
   nonUniversalCaution:
   criteriaRowPatternRef: C.32.ACS
 ```
 
-What goes wrong if C.32.HCS is missed: the team faces hundreds of `-ility` or quality names, copies a catalogue, or starts from a software-module list even when the source object is called a method, role, culture, practice, built asset, or evidence workflow and still needs owner recovery.
+What goes wrong if C.32.HCS is missed: the team faces hundreds of `-ility` or quality names, copies a catalogue, or starts from a software-module list even when a source label such as method, role, culture, practice, built asset, or evidence workflow still hides what actually bears the characteristic.
 
 What C.32.HCS buys in practice: the practitioner has a short architecture-bearing starting point before `C.32.ACS` turns starter heads into project criteria rows, three to five optimization indicators, and monitored guardrails.
 
 Adoption test: after using C.32.HCS, the project has a short starter set and first project questions; it has not copied a catalogue and has not yet claimed bearer, scale, use class, or optimization status.
 
-Not this pattern when the project already has admitted architecture-characteristic rows with bearers, scales, and use classes. Also not this pattern when the current work is composite-quality modeling, measurement, eval design, candidate synthesis, comparison, publication of a selected set, local choice, or project architecture decision.
+Not this pattern when the project already has admitted architecture-characteristic rows with bearers, scales, and use classes. Also not this pattern when the current work is composite-quality modeling, measurement, eval design, candidate synthesis, comparison, selected-set result declaration, actual publication, local choice, or project architecture decision.
 
 Common exits by claim kind:
 
@@ -58,13 +58,13 @@ Common exits by claim kind:
 - `E.13` when a source-looking cue, score, benchmark, or dashboard starts replacing the architecture concern.
 - `C.32` for candidate synthesis after project criteria rows exist.
 - `A.19.CPM` for explicit comparison and `A.19.SelectorMechanism` for set-returning selection.
-- `G.5` for publication of a selected set, `C.11` for local choice, and `C.32.PAD` for project decision.
+- `G.5` for selected-set result declaration, `C.11` for local choice, and `C.32.PAD` for a project decision. For publication, use `E.17` for a source-backed face and source return and `E.24.PUB` for the publication occurrence and audience availability.
 
 ### C.32.HCS:2 - Problem
 
-Architecture characteristics recur more than functions do. Reliability, substitutability, change reach, evidence reuse, control separation, or coordination load can appear across admitted holons and across adjacent governed method-side, role-side, work-side, evidence-side, and cultural-evolution structures. The recurrence does not mean that the bearer, scale, governing pattern, or use is identical, and it does not make `U.Method`, `U.Role`, practice, or culture an admitted holon kind.
+Architecture characteristics recur more than functions do. Reliability, substitutability, change reach, evidence reuse, control separation, or coordination load can appear across admitted holons and across method, role-assignment, work, evidence, or cultural-evolution structures. The same head may require a different bearer, scale, use, or pattern definition or test, and the recurrence does not make `U.Method`, `U.Role`, practice, or culture an admitted holon kind.
 
-Functions and functional demands depend on the bearer and owner. A saw-as-system can cut, a system holding a role assignment can carry responsibility, a method description can guide work, an enacted work family can be repeatable, an organization-as-system can coordinate, and a culture or practice label must be restored into systems, disciplines, method and work families, role assignments, canon or memory epistemes, recognition and selection regimes, and mediation systems before architecture-characteristic reuse. A project therefore needs starter packs that suggest common architecture-characteristic heads while forcing owner, bearer, and scale rebinding before optimization.
+A function depends on what performs it, while a functional demand may also depend on the holon that needs that performance. A saw-as-system can cut, a system holding a role assignment can carry responsibility, a method description can guide work, an enacted work family can be repeatable, and an organization-as-system can coordinate. A culture or practice label must first be resolved into systems, disciplines, method and work families, role assignments, canon or memory epistemes, recognition and selection regimes, or mediation systems. A project therefore needs starter packs that suggest common heads while requiring the practitioner to re-identify the bearer, any separate demand holder, and the scale before optimization.
 
 ### C.32.HCS:3 - Forces
 
@@ -72,7 +72,7 @@ Functions and functional demands depend on the bearer and owner. A saw-as-system
 |---|---|
 | Broad catalogues | Standards, textbooks, and local sources offer many possible quality names. |
 | Project attention | A project needs a small first set of draft criteria rows, not a catalogue. |
-| Bearer recovery | The same head can recur across admitted holon families and adjacent governed structures, but the governing pattern, bearer, and scale change. |
+| Bearer recovery | The same head can recur across admitted holon families and adjacent structures, but the family, bearer, scale, and any needed source-label recovery can change. |
 | Software-source overfit | Mature software sources are useful but overfit to code modules, services, and operations if copied. |
 | Q-Bundle boundary | Many `-ility` heads are composite quality families, not one architecture characteristic. |
 
@@ -84,7 +84,7 @@ Choose a starter pack by the described holon's declared family. Use the pack onl
 
 Build or use a starter pack in this order:
 
-1. Name the admitted holon family. If the source label is method, role, practice, culture, tradition, style, or evidence practice, first name the described holon, or name the source-bearing episteme or publication context when the label is only a description-side family, and then name the governing patterns that recover the label.
+1. Name the admitted holon family. If the source label is method, role, practice, culture, tradition, style, or evidence practice, first name the described holon, or name the source-bearing episteme or publication context when the label is only a description-side family, and record only the recovery-pattern references actually used.
 2. List a small set of starter characteristic heads that often matter for that family.
 3. For each head, name likely bearers or selected structures, not only a quality word.
 4. Record likely C.25 Q-Bundle boundaries when a head is usually composite.
@@ -102,7 +102,7 @@ Build or use a starter pack in this order:
 | AI-agent setup, model-supported workflow, or information system | model boundary, tool boundary, retrieval service, supervisor relation, evidence refresh relation, deployment placement, action interface | function-bearer fit, observability, evidence refresh, policy controllability, latency, resource load, interface grammar burden, rollback, benchmark transfer risk | safety, trustworthiness, robustness, usefulness |
 | Evidence-bearing assurance or certification work arrangement after A.10/A.15 recovery | evidence packages, claim scopes, audit trails, inspection work, certification mechanisms, evidence-provenance entries, source-currentness relation records, method descriptions, responsible role assignments | evidence reuse, traceability, source-return cost, inspection latency, certification burden, scope stability, mechanism visibility, change reach | assurance-case quality, certification-work quality, compliance-work quality |
 
-In HCS, `source-return cost` is a starter head only when a holon family repeatedly pays effort, latency, or risk to move from a derivative, coarsened, extracted, rendered, or reused publication or evidence carrier back to the named source expression, source `U.EpistemePublication`, source-bearing relation, evidence-provenance entry, evidence relation, transform record, or direct governing-pattern handoff needed before stronger reliance. It is not a generic source-quality name. If the project is only asking whether a catalogue term is useful, keep the wording as source catalogue wording; if recoverability itself is the concern, carry `source-return cost` to `C.32.ACS`.
+In HCS, `source-return cost` is a starter head only when a holon family repeatedly pays effort, latency, or risk to move from a derivative, coarsened, extracted, rendered, or reused publication or evidence carrier back to the named source expression, selected source `U.Episteme`, `EpistemePublicationRelation` occurrence when availability matters, source-bearing relation, evidence-provenance entry, evidence relation, transform record, or defining ClaimGraph needed for stronger reliance. It is not a generic source-quality name. If the project is only asking whether a catalogue term is useful, keep the wording as source catalogue wording; if recoverability itself is the concern, carry `source-return cost` to `C.32.ACS` and bind its bearer, scale, and use.
 
 #### C.32.HCS:4.3 - Rebinding rule
 
@@ -110,7 +110,7 @@ When a starter head is reused at another admitted holon family, declared holon l
 
 Example: `availability` for an engineered service may use time-window and service-scope measures. A method-family analogue may concern whether a method step and evidence relation are available to a role in the work situation. A role-family analogue may concern substitutable responsibility coverage. These are different bearers and scales.
 
-Refresh the starter pack when its starting assumptions no longer hold: the admitted holon family changes, source-label recovery changes the governing-pattern selection, a B.2 whole reidentification changes the bearer or scale, a source catalogue changes the available vocabulary, repeated ACS project-row uses show that a head never survives project binding, or repeated ACS project-row uses reveal a missing head for that family. Refresh only starter-pack fields and blocked overreads. Existing project criteria rows remain with `C.32.ACS`; measurements remain with `C.16`; eval programs remain with `C.32.ACE`.
+Refresh the starter pack when its starting assumptions no longer hold: the admitted holon family changes, source-label recovery changes the recovered family or bearer, a B.2 whole reidentification changes the bearer or scale, a source catalogue changes the available vocabulary, repeated ACS project-row uses show that a head never survives project binding, or repeated ACS project-row uses reveal a missing head for that family. Refresh only starter-pack fields and blocked overreads. Existing project criteria rows remain with `C.32.ACS`; measurements remain with `C.16`; eval programs remain with `C.32.ACE`.
 
 #### C.32.HCS:4.4 - ACS Criteria-Row Use
 
@@ -119,36 +119,36 @@ HCS stops with starter heads and first project questions. The next `C.32.ACS` us
 - whether C.32.ACS admits the head as a draft project criteria row;
 - whether it is one characteristic or a C.25 Q-Bundle;
 - whether the project uses it as an optimization indicator, monitored guardrail, or context-only row;
-- which scale, reading, and receiving pattern apply.
+- which scale, reading, and pattern for the next question apply.
 
-Before ACS criteria-row use, ask one proxy-resistance question for each carried starter head: what architecture concern would worsen or disappear if the visible catalogue entry, domain term, benchmark row, or dashboard value looked better? Such visible catalogue, benchmark, dashboard, or publication material is not yet an architecture-characteristic starter head. Carry it forward only when the holon family, likely bearer, likely scale, Q-Bundle boundary, first project question, source catalogue entry, source `U.EpistemePublication` ref, benchmark row, dashboard row, publication row, source-to-use path from that catalogue, benchmark, dashboard, or publication row, and reopen condition for stronger use remain recoverable. If no worsening or lost concern can be named, keep the wording as source catalogue wording or remove it from the starter pack.
+Before ACS criteria-row use, ask one proxy-resistance question for each carried starter head: what architecture concern would worsen or disappear if the visible catalogue entry, domain term, benchmark row, or dashboard value looked better? Such visible material is not yet an architecture-characteristic starter head. Carry it forward only when the holon family, likely bearer, likely scale, Q-Bundle boundary, first project question, source catalogue entry, benchmark row, dashboard row, or publication row, source-to-use path, and reopen condition remain recoverable. Also name the selected source `U.Episteme` and an `EpistemePublicationRelation` occurrence when availability matters. If no worsening or lost concern can be named, keep the wording as source catalogue wording or remove it from the starter pack.
 
 **Stop condition.** Stop C.32.HCS when the starter pack names the described holon family, starter heads, likely bearers or selected structures, likely composite-quality boundaries, first ACS questions, and any blocked overread. The next project criteria-row work belongs to `C.32.ACS`.
 
-**Lowering condition.** Lower a starter head to source catalogue wording or remove it from the starter pack when the holon family is not declared, the likely bearer or likely scale is missing, the composite-quality boundary is still unresolved, the first ACS question is absent, repeated ACS uses reject the head for that holon family, or the item is being used to smuggle measurement, eval, comparison, publication, local choice, or decision work into HCS. Use `C.25` when the head is composite, `C.32.ACS` when the project criteria-row question is ready, and the named receiving pattern when the stronger claim is current.
+**Lowering condition.** Lower a starter head to source catalogue wording or remove it from the starter pack when the holon family is not declared, the likely bearer or likely scale is missing, the composite-quality boundary is still unresolved, the first ACS question is absent, repeated ACS uses reject the head for that holon family, or the item is being used to smuggle measurement, eval, comparison, publication, local choice, or decision work into HCS. Use `C.25` when the head is composite, `C.32.ACS` when the project criteria-row question is ready, and the named pattern for the next question when the stronger claim is current.
 
 ### C.32.HCS:5 - Worked slices
 
 **Engineered-system family.** A field-device project starts from reliability, maintainability, substitutability, evidence reuse, locality, and source-return cost. `C.32.ACS` later marks only maintainability, substitutability, and evidence reuse as optimization indicators; safety and availability remain guardrails.
 
-**Method-side family.** A source calls a reusable review method "the practice." HCS restores the described review organization-as-system or bounded review-work context, then treats method relation structure, method descriptions, work products, role assignments, and evidence records as adjacent governed structures. The starter heads are repeatability of enactment, transferability, evidence reuse, exception growth, and role-assignment substitutability. Teachability belongs to C.25 because it combines learner scope, measures, mechanisms, and evidence.
+**Method-side family.** A source calls a reusable review method "the practice." HCS resolves the label to the described review organization-as-system or bounded review-work context, then keeps the method relation structure, method descriptions, work products, role assignments, and evidence records separate. The starter heads are repeatability of enactment, transferability, evidence reuse, exception growth, and role-assignment substitutability. Teachability belongs to C.25 because it combines learner scope, measures, mechanisms, and evidence.
 
 **AI-agent workflow.** A retrieval-action setup starts from evidence refresh, policy controllability, latency, observability, and rollback. Benchmark performance stays a benchmark signal or comparison input until an architecture bearer and scale row are named.
 
-**Starter-pack proxy near-miss.** A review team copies availability, throughput, and testability from a software quality catalogue because the list looks mature. The copied heads make the starter pack look complete, but they hide exception growth, evidence reuse, and role-assignment substitutability, which are the architecture concerns that will later govern review work. C.32.HCS keeps the catalogue terms as source catalogue wording, restores the method-side and role-side governing patterns, and carries only rebound questions to `C.32.ACS`.
+**Starter-pack proxy near-miss.** A review team copies availability, throughput, and testability from a software quality catalogue because the list looks mature. The copied heads make the starter pack look complete, but they hide exception growth, evidence reuse, and role-assignment substitutability, which are the architecture concerns that matter to review work. C.32.HCS keeps the catalogue terms as source wording; A.3.1 and A.15 separate the Method, descriptions, assignments, and Work, while A.2.7 supplies the role-relation structure. HCS carries only the rebound questions to `C.32.ACS`.
 
 ### C.32.HCS:6 - Receiving-Claim Boundary
 
-C.32.HCS governs architecture-bearing family starter packs. It does not govern project scale rows, Q-Bundles, measurements, eval programs, candidate synthesis, comparison, selection, publication of a selected set, local choices, or project architecture decisions. It also does not admit `U.Method`, `U.Role`, practice, culture, tradition, or style as holon kinds. Use `C.32.ACS`, `C.25`, `C.16`, `C.32.ACE`, `C.32`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, `C.11`, or `C.32.PAD` when those claims are being made.
+Use C.32.HCS only to build architecture-bearing family starter packs. Use `C.32.ACS` for project scale rows, `C.25` for Q-Bundles, `C.16` for measurements, `C.32.ACE` for eval programs, `C.32` for candidate synthesis, `A.19.CPM` for comparison, `A.19.SelectorMechanism` for selection, `G.5` for selected-set result declaration, `C.11` for local choices, and `C.32.PAD` for project architecture decisions. For publication, use `E.17` for a source-backed face and source return and `E.24.PUB` for the publication occurrence and audience availability. C.32.HCS also does not admit `U.Method`, `U.Role`, practice, culture, tradition, or style as holon kinds.
 
 ### C.32.HCS:7 - Conformance checklist
 
 | Check | Required result |
 |---|---|
-| `CC-HCS-1` | The architecture-bearing family is named; when it is not itself an admitted holon family, the described holon, or the source-bearing episteme or publication context for a description-side family, and governing pattern refs are named. |
+| `CC-HCS-1` | The architecture-bearing family is named; when it is not itself an admitted holon family, the described holon or the source-bearing episteme or publication context for a description-side family is named, together with any recovery-pattern refs actually used. |
 | `CC-HCS-2` | Starter heads are paired with likely bearers or selected structures. |
 | `CC-HCS-3` | Q-Bundle boundaries are marked when the head is composite. |
-| `CC-HCS-4` | Software-derived heads are generalized only after the bearer, scale, and governing pattern are recoverable. |
+| `CC-HCS-4` | Software-derived heads are generalized only after the source label is resolved to an architecture-bearing family and the bearer and scale are recoverable. |
 | `CC-HCS-5` | Before project optimization, measurement, comparison, or selection, starter heads are either handed to `C.32.ACS` for project-row admission or kept as source catalogue wording. |
 | `CC-HCS-6` | Catalogue, benchmark, or dashboard cues that look mature answer the proxy-resistance question or remain source catalogue wording. |
 
@@ -157,7 +157,7 @@ C.32.HCS governs architecture-bearing family starter packs. It does not govern p
 | Failure | Symptom | Repair |
 |---|---|---|
 | `CatalogueAsStarterPack` | Hundreds of terms are copied into the project. | Choose the holon family and keep only first heads that can change the next narrowing into project criteria rows. |
-| `SoftwarePackOverfit` | Code-module terms are used for a method, role, practice, culture, or tradition named by source wording without governing-pattern recovery and rebinding. | Recover the described holon, or the source-bearing episteme or publication context for a description-side family, plus governing pattern, bearer, and scale, or demote the head to source catalogue wording. |
+| `SoftwarePackOverfit` | Code-module terms are used for a method, role, practice, culture, or tradition without resolving the source label and rebinding bearer and scale. | Recover the described holon or the source-bearing episteme or publication context for a description-side family; name any recovery pattern actually used, then rebind bearer and scale or demote the head to source catalogue wording. |
 | `FunctionalHeadAsArchitectureHead` | A domain function is used as the starter architecture characteristic. | Keep the function as functional demand; name the architecture characteristic that makes it sustainable. |
 | `QBundleHeadAsScalar` | Maintainability, trustworthiness, or teachability is treated as one row. | Composite quality family work belongs to `C.25` before ACS chooses any slot. |
 | `CatalogueCueAsStarterHead` | Catalogue maturity, benchmark performance, or dashboard cleanliness is used to admit a starter head without a rebound bearer, likely scale, Q-Bundle boundary, or first ACS question. | Keep the signal as source-looking catalogue, benchmark, or dashboard cue, ask what architecture concern worsened or disappeared, and carry the head forward only with a rebound bearer, likely scale, Q-Bundle boundary, and first ACS question. |
@@ -167,12 +167,12 @@ C.32.HCS governs architecture-bearing family starter packs. It does not govern p
 | Consequence | Benefit | Cost |
 |---|---|---|
 | Criteria-row narrowing starts from architecture-bearing family. | The practitioner is not forced to read a giant catalogue first. | Starter packs must be maintained as FPF architecture practice grows. |
-| Cross-family generalization is disciplined. | Software sources can inform starter packs without importing software ontology or admitting source labels as holon kinds. | Every reuse requires governing-pattern, bearer, and scale rebinding. |
+| Cross-family generalization is disciplined. | Software sources can inform starter packs without importing software ontology or admitting source labels as holon kinds. | Every reuse must re-identify the family, bearer, and scale; record a recovery pattern only when a source label needed recovery. |
 | ACS remains project-specific. | HCS does not overload project criteria construction. | The project still must do ACS work before optimization. |
 
 ### C.32.HCS:10 - Rationale
 
-The 300-to-3 problem needs a middle step. A project cannot optimize from a catalogue, but it also should not invent criteria from scratch. Architecture-bearing starter packs give a small, recognizable entry while project criteria-row construction, measurement, eval, comparison, selection, publication of a selected set, local choice, and project architecture decision work stays with its receiving pattern.
+The 300-to-3 problem needs a middle step. A project cannot optimize from a catalogue, but it also should not invent criteria from scratch. Architecture-bearing starter packs give a small, recognizable entry. Criteria-row construction, measurement, eval, comparison, selection, selected-set result declaration, actual publication, local choice, and project architecture decisions then use their applicable patterns.
 
 ### C.32.HCS:11 - SoTA-Echoing
 
@@ -180,12 +180,12 @@ These rows document transfers from source practice into C.32.HCS. Keep a source 
 
 | Source to inspect | Why this source is load-bearing here | Transfer into HCS | Concrete HCS mutation | Blocked overread |
 |---|---|---|---|---|
-| ISO/IEC 25010:2023 (`https://www.iso.org/standard/78176.html`) and SQuaRE quality-model practice | Current standard source for ICT product quality vocabulary; useful as a stable catalogue reference, not as FPF ontology. | Use quality-model terms as source catalogue wording that must be rebound to the admitted holon family or recovered architecture-bearing family. | Starter-pack rows now separate starter heads, likely bearers or selected structures, governing-pattern recovery, and likely C.25 boundaries. | An ICT product quality-model characteristic is not automatically a project criterion, holon ontology, scale row, eval program, or admission of a source label as a holon kind. |
-| Richards and Ford, `Fundamentals of Software Architecture`, 2nd ed. (`https://www.oreilly.com/library/view/fundamentals-of-software/9781098175504/`) | Current practitioner source for architectural characteristics, trade-offs, scope, and limiting the working set before measurement or governance. | Keep the recurring-head idea, but generalize it only through governing-pattern, bearer, and scale rebinding. | HCS requires the architecture-bearing family, likely bearers, likely selected structures, governing-pattern recovery when needed, and first project questions before ACS criteria-row construction. | Software architecture characteristic groupings cannot be copied into methods, roles, cultures, practices, built assets, or evidence workflows named by source wording without recovery and rebinding. |
+| ISO/IEC 25010:2023 (`https://www.iso.org/standard/78176.html`) and SQuaRE quality-model practice | Current standard source for ICT product quality vocabulary; useful as a stable catalogue reference, not as FPF ontology. | Use quality-model terms as source catalogue wording that must be rebound to the admitted holon family or recovered architecture-bearing family. | Starter-pack rows separate starter heads, likely bearers or selected structures, any source-label recovery actually needed, and likely C.25 boundaries. | An ICT product quality-model characteristic is not automatically a project criterion, holon ontology, scale row, eval program, or admission of a source label as a holon kind. |
+| Richards and Ford, `Fundamentals of Software Architecture`, 2nd ed. (`https://www.oreilly.com/library/view/fundamentals-of-software/9781098175504/`) | Current practitioner source for architectural characteristics, trade-offs, scope, and limiting the working set before measurement or governance. | Keep the recurring-head idea, but generalize it only by rebinding family, bearer, and scale. | HCS requires the architecture-bearing family, likely bearers, likely selected structures, a recovery-pattern ref only when needed, and first project questions before ACS criteria-row construction. | Software architecture characteristic groupings cannot be copied into methods, roles, cultures, practices, built assets, or evidence workflows named by source wording without recovery and rebinding. |
 | Ford, Parsons, Kua, and Sadalage, `Building Evolutionary Architectures`, 2nd ed. (`https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/`) and `Software Architecture Metrics` (`https://www.oreilly.com/library/view/software-architecture-metrics/9781098112226/`) | Current practitioner line for guided change, architecture characteristics, and metric or eval work after quality goals are named. | Put HCS before metrics and eval programs: it supplies starter heads, then ACS chooses project rows and ACE defines eval programs when needed. | HCS stop condition explicitly ends at starter heads, likely bearers, likely Q-Bundle boundaries, and first project questions for ACS. | A metric, dashboard, imported fitness-function name, or imported eval-program name is not a starter pack, project criterion, architecture-characteristic eval program, or architecture decision. |
-| Current FPF `C.25`, `C.30`, `C.32.ACS`, `C.32.ACE`, and `C.16` | Local receiving-pattern law for Q-Bundles, grounded architecture, project criteria rows, eval programs, and measurement. | Keep HCS as the starter-pack governing pattern; stronger claims belong to their receiving patterns. | HCS relations and conformance rows name C.25 for composite quality families, C.30 for selected-structure recovery, ACS for criteria rows, ACE for eval programs, and C.16 for measurement. | A starter head is not a Q-Bundle, selected structure, measurement method, eval result, comparison rule, published selected set, local choice, or project architecture decision. |
+| Current FPF `C.25`, `C.30`, `C.32.ACS`, `C.32.ACE`, and `C.16` | Local rules for Q-Bundles, grounded architecture, project criteria rows, eval programs, and measurement. | Use HCS only for starter packs; use the named pattern for each stronger claim. | HCS relations and conformance rows name C.25 for composite quality families, C.30 for selected-structure recovery, ACS for criteria rows, ACE for eval programs, and C.16 for measurement. | A starter head is not a Q-Bundle, selected structure, measurement method, eval result, comparison rule, declared selected-set result, published selected set, local choice, or project architecture decision. |
 
-**Source-currentness boundary.** Use ISO/IEC 25010:2023 as ICT product-quality vocabulary, not as holon-family ontology. Use the O'Reilly architecture-characteristic and evolutionary-architecture sources for recurring starter heads and for later metric or eval work after the heads are named. Use an FPF row only for the claim governed by the named receiving pattern. Reopen HCS when a named source edition changes starter-head guidance, when a receiving pattern changes how it handles that source family, when repeated `C.32.ACS` uses show that a starter head never survives project binding, when repeated project uses reveal a missing head for the admitted holon family or recovered architecture-bearing family, or when governing-pattern recovery for source labels changes.
+**Source-currentness boundary.** Use ISO/IEC 25010:2023 as ICT product-quality vocabulary, not as holon-family ontology. Use the O'Reilly architecture-characteristic and evolutionary-architecture sources for recurring starter heads and for later metric or eval work after the heads are named. Use an FPF row only for the claim it defines, constrains, or tests. Reopen HCS when a named source edition changes starter-head guidance, when the pattern for a next question changes how it handles that source family, when repeated `C.32.ACS` uses show that a starter head never survives project binding, when repeated project uses reveal a missing head for the admitted holon family or recovered architecture-bearing family, or when source-label recovery changes the recovered family or bearer.
 
 ### C.32.HCS:12 - Relations
 
@@ -195,7 +195,7 @@ These rows document transfers from source practice into C.32.HCS. Keep a source 
 
 ### C.32.HCS:13 - Footer marker
 
-C.32.HCS closes when the practitioner can name an architecture-bearing starter pack, any needed described holon, source-bearing episteme or publication context, governing pattern refs, starter architecture-characteristic heads, likely bearers, likely Q-Bundle boundaries, and first project questions for `C.32.ACS`.
+C.32.HCS closes when the practitioner can name an architecture-bearing starter pack, any needed described holon, source-bearing episteme or publication context, any recovery-pattern refs actually used, starter architecture-characteristic heads, likely bearers, likely Q-Bundle boundaries, and first project questions for `C.32.ACS`.
 
 ### C.32.HCS:End
 

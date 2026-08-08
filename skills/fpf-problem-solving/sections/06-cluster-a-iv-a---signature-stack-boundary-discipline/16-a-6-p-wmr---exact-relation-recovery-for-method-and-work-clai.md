@@ -12,7 +12,7 @@
 
 The primary EntityOfConcern is one relation-bearing claim in an episteme. The trigger word helps a practitioner notice the problem; it is not the governed object, a participant kind, a relation kind, or a universal family of inputs and results.
 
-**Primary working reader, concern, and viewpoint.** The primary reader is a practitioner or engineer whose current task is to make one boundary-word claim safe for a named receiving use. Their concern is which exact relation and claim dimensions can be stated safely for that use now; the viewpoint is the receiving use, while the direct subject-pattern owner supplies or rejects any missing governor.
+**Primary working reader, concern, and viewpoint.** The primary reader is a practitioner or engineer whose current task is to make one boundary-word claim safe for a named use. Their concern is which exact relation and claim dimensions can be stated safely for that use now; the viewpoint is that use. The `SubjectPatternLocator` identifies the pattern description containing the defining or constraining ClaimGraph, while current case facts determine whether the relation obtains.
 
 **First useful result.** Start at the boundary-word sentence and answer three ordinary questions: what exact thing is being named, relative to what exact method, plan, work, operation application, transformation, delivery, or receiving use, and what direct verb can safely be said now—or why can it not yet be said.
 
@@ -58,7 +58,7 @@ The repair preserves ordinary readability without manufacturing a universal work
 
 **Stable WMR lens.** Treat the boundary wording as one use-specific claim about an exact thing relative to an exact object. Recover the direct verb or reason-specific stop first. Keep claim subject, time, polarity, and assertability independently recoverable when any of them can change the answer; do not turn the wording into a participant kind, relation kind, or universal input or result family.
 
-The method handles one relation-bearing claim at a time. The trigger word stays in view only until the exact thing, related object, and safe direct verb or stop are recoverable. The result replaces the compressed phrase with the shortest ordinary sentence and continues under the direct owner.
+The method handles one relation-bearing claim at a time. The trigger word stays in view only until the exact thing, related object, and safe direct verb or stop are recoverable. The result replaces the compressed phrase with the shortest ordinary sentence. If a neighboring claim is still needed, apply the pattern whose Solution answers that exact question.
 
 #### A.6.P.WMR:4.0 - Thin recovery core and conditional interfaces
 
@@ -68,7 +68,7 @@ Claim subject, modality and temporal extent, polarity, and recovery or support s
 
 | Conditional interface | Minimum condition for opening it | Direct return consumed here |
 | --- | --- | --- |
-| direct subject pattern or `A.6.1` | the exact relation or one declared operation application is already the receiver's current question | one readable direct subject-relation claim, one exact declaration-local application binding, or its exact non-assertability result |
+| pattern whose Solution answers the exact direct-relation question, or `A.6.1` | the exact relation or one declared operation application is already the receiver's current question | one readable direct subject-relation claim, one exact declaration-local application binding, or its exact non-assertability result |
 | `A.6.RCD` | no direct relation closes the named receiving use, and a substrate-admitted compound claim, repeated predicate semantics, or relation-kind question is current | that owner's lightest local claim, reusable-definition or conditional kind-admission continuation, or exact blocker; WMR does not reproduce its derivation or disposition algorithm |
 | `A.15.PROD` | production-work participation, entity-identity inception, or production completion is explicitly the current receiving question | one local production claim or that branch's exact blocker; WMR does not reproduce the branch basis |
 | `A.15.1`, then `F.18` when naming is needed | an action nominal or plan-like label is being relied on as one performed occurrence | one exact Work occurrence admitted under `U.Work` at the required granularity or the exact lowered neighboring object or blocker; durable naming opens only after that result |
@@ -104,7 +104,7 @@ The four dimensions remain independent. Make a dimension explicit when two plaus
 
 `Factually unsupported` applies when an applicable governor is known but the available facts fail to support the proposed assertion; no opposite polarity follows without its own basis. `Missing-information` applies when the governor is known but one named fact needed for the answer is unavailable. `Missing-governor` applies when the exact participants and question are known but no current direct predicate, condition, or owner closes it.
 
-A current commitment is expressible without collapsing fulfilment only when its exact commitment `RelationKind`, participant meanings, extent, obtaining predicate, and direct owner are named; a local id such as `COM-17` is not that settlement. The promised delivery remains intended and unfulfilled until its own exact token, owner, and facts establish fulfilment. A separately stated past case fact remains positive at its governed extent after its named participants satisfy the governor's predicate; it need not obtain now to remain historically true.
+A current commitment is expressible without collapsing fulfilment only when its exact commitment `RelationKind`, participant meanings, extent, obtaining predicate, and the `SubjectPatternLocator` for its defining or constraining content are named; a local id such as `COM-17` is not that settlement. The promised delivery remains intended and unfulfilled until its own exact token, owner, and facts establish fulfilment. A separately stated past case fact remains positive at its governed extent after its named participants satisfy the governor's predicate; it need not obtain now to remain historically true.
 
 A change in any dimension is substantive. A plan does not become an actually obtaining relation because its date arrives; a later observation does not retroactively manufacture a missing relation; and stronger support does not substitute for the subject relation's own facts.
 
@@ -156,14 +156,14 @@ Historically obtained:
 
 Governed negative:
   During <exact extent>, <exact entity> did not <direct relation in ordinary words> <exact related object>
-  under <RelationKind token and direct owner>; <separate case facts> satisfy
+  under <RelationKind token>, with defining or constraining content at <SubjectPatternLocator>; <separate case facts> satisfy
   <the owner's explicit negative or non-obtaining criterion or closure basis>,
   and no relation occurrence is individuated.
 
 Obtaining commitment, promised relation separate:
   <accountable subject> is committed to <promised relation> for <promisee>
   during <commitment extent>; the promised relation remains <intended | unfulfilled | fulfilled at exact extent>
-  under its own <RelationKind token and direct owner>.
+  under its own <RelationKind token>, with defining or constraining content at <SubjectPatternLocator>.
 
 Factually unsupported:
   The <positive or negative> claim that <exact relation sentence> is not assertable
@@ -176,8 +176,8 @@ Missing information:
 Missing governor:
   Whether <exact entity> <candidate direct relation> <exact related object> obtains
   is unresolved because <exact governor> is absent;
-  the unresolved question names <accountable subject-pattern owner> as the future owner
-  for supply, rejection, or reframing of that relation for <receiving use>.
+  the unresolved question cites <SubjectPatternLocator> and <missing ClaimGraph or case fact>
+  as the exact gap to supply, reject, or reframe for <named use>.
 ```
 
 For example, `CF-17 was not consumed by W-204` does not follow merely because the positive consumption fact fails or is unavailable. It closes as a governed negative sentence only if the machining-work owner supplies an applicable non-consumption criterion or complete closure basis for the exact quantity, work, and extent and separate case facts satisfy it. Otherwise the proposed positive claim remains `factually unsupported` or `missing-information`, or the relation question remains `missing-governor`, according to the independently recovered deficit.
@@ -209,8 +209,8 @@ When the trigger is `result`, use the deciding fact before any catalogue:
 - if one operation application returned a value, state only its A.6.1 result binding;
 - if the referent is a measured characteristic value, keep that exact value and its direct measurement relation; if it is a comparison, diagnosis, or evaluation claim, identify that exact C.2.1 episteme and its direct basis;
 - if an entity was delivered or transferred, use the direct delivery or transfer occurrence;
-- if the claim is a downstream effect, use the subject pattern that defines that effect relation;
-- if `result` names a `C.11` `ChoiceResult`, an acceptance verdict, a decision occurrence or record, an enduring condition, or another value, entity, fact, or claim already identified by its direct owner, keep that exact kind and write only the direct relation current for this use.
+- if the claim is a downstream effect, apply the pattern whose Solution answers that exact effect-relation question;
+- if `result` names a `C.11` `ChoiceResult`, an acceptance verdict, a decision occurrence or record, an enduring condition, or another value, entity, fact, or claim already identified under its applicable identity or occurrence rule, keep that exact kind and write only the direct relation current for this use.
 
 If no row has its deciding fact and governor, `result` remains unresolved and the answer is the reason-specific non-assertability result. These readings share no result kind or relation family.
 
@@ -233,19 +233,19 @@ When no direct governor closes a selected row, name the exact participants, prop
 
 An action nominal such as `testing`, `assembly`, `maintenance`, `evaluation`, or `inspection` is a morphology cue, not an occurrence identification or recovered kind. Placement in function- or flow-structure prose does not identify a `U.Function` or any other object by itself. When the use remains function-like and claim-bearing while its exact FPF object or relation is hidden, `A.6.F` is the next owner. When the object is already recoverable, the label resolves to the exact `U.Method`, `U.MethodDescription`, required-transformation or required-effect claim, actual `U.Transformation`, `TransformationFlowStructure` locus, `FunctionalElement@Context` or other functional-view record, plan content, performed Work occurrence admitted under `U.Work`, or other governed value under its direct pattern. In a WBS element, activity, or Work Package the nominal ordinarily names plan or assignment content about intended work; none of these uses identifies an already performed Work occurrence.
 
-A use that needs only the recovered method, method description, plan, structure, or other already governed value closes under that direct pattern. Only reliance on the label as one performed occurrence routes the candidate designation and required granularity to `A.15.1`.
+A use that needs only the recovered method, method description, plan, structure, or other already governed value closes under that direct pattern. Only reliance on the label as one performed occurrence handles the candidate designation and required granularity under `A.15.1`.
 
 WMR consumes only the direct A.15.1 return: one exact Work occurrence admitted under `U.Work` at the granularity needed by the receiver, an exact lowering to the neighboring method, description, plan, evidence, telemetry, temporal, or other object actually supported, or an exact blocker. A materially needed `workContinuityPolicyRef` remains part of the A.15.1 identity judgment rather than a WMR field. When one occurrence is established and needs a durable name, `F.18` opens after that result.
 
 Any output, result, outcome, production, delivery, or acceptance wording is a separate WMR claim only while its direct relation or claim dimensions remain hidden. Once readable, it proceeds under its own pattern and does not become part of work identity.
 
-The preceding action-nominal routing is an FPF-scoped synthesis from recurring morphology-and-owner ambiguity, not a rule imported from PMI, PRINCE2, IDEF0, or IDEF3. A domain may conventionally use an action nominal as the durable name of an already grounded method, plan item, functional-view record, or dated work occurrence; that direct identity and governor win over morphology. The synthesis reopens if repeated practice shows that the cue routes a directly grounded value to the wrong owner, or if a trigger case cannot close through `A.6.F`, the direct owner, or `A.15.1` without new ontology.
+The preceding action-nominal classification is an FPF-scoped synthesis from recurring morphology-and-subject ambiguity, not a rule imported from PMI, PRINCE2, IDEF0, or IDEF3. A domain may conventionally use an action nominal as the durable name of an already grounded method, plan item, functional-view record, or dated work occurrence; that direct identity and exact predicate win over morphology. The synthesis reopens if repeated practice shows that the cue classifies a directly grounded value under the wrong predicate family, or if a trigger case cannot close through `A.6.F`, the exact subject predicate, or `A.15.1` without new ontology.
 
 | Planning or description lineage | Bounded use here | Prohibited inference |
 | --- | --- | --- |
 | PMBOK WBS practice | Its deliverable-oriented naming pressure is used only to recognize that WBS elements and Work Packages are often named from expected deliverables. | The named plan element proves no dated occurrence, enacted method, actual participant, produced entity, result, or outcome. |
 | PRINCE2 7 public Foundation page | The page is used only as currentness evidence that PeopleCert presents Version 7 and describes seven recurring project-management practices. It does not expose detailed product, product-description, activity, or Work Package distinctions, so those distinctions are not source authority here. | Neither the page nor PRINCE2 terminology supplies occurrence identity, a positive FPF kind inference, or any production, delivery, or acceptance claim. |
-| IDEF0 historical recognition lineage (non-authoritative here) | A box label remains source-side function-model wording. A still-hidden FPF claim routes to `A.6.F`; otherwise the label names the already recovered required-transformation or required-effect claim, actual `U.Transformation`, functional-view record, method description, `TransformationFlowStructure` locus, or other exact governed value under its direct pattern. | This lineage supplies no positive FPF kind inference: neither box form nor function wording identifies `U.Function` or supplies identity evidence for a performed Work occurrence admitted under `U.Work`. |
+| IDEF0 historical recognition lineage (non-authoritative here) | A box label remains source-side function-model wording. A still-hidden FPF claim requires `A.6.F`; otherwise the label names the already recovered required-transformation or required-effect claim, actual `U.Transformation`, functional-view record, method description, `TransformationFlowStructure` locus, or other exact governed value under its direct pattern. | This lineage supplies no positive FPF kind inference: neither box form nor function wording identifies `U.Function` or supplies identity evidence for a performed Work occurrence admitted under `U.Work`. |
 | IDEF3 Units-of-Behavior historical recognition lineage (non-authoritative here) | The terminology remains only as wording that may occur in inherited process descriptions. | This lineage supplies no positive FPF kind or relation inference; a Unit-of-Behavior description or label is never identity evidence for a dated Work occurrence admitted under `U.Work`. |
 
 **Inspection contrast.** `inspection method` names the way of doing. `planned Pump-14 inspection work` is intended-work content. `Pump-14 inspection on 2026-07-15 09:10-09:34` becomes an exact performed occurrence only when A.15.1 returns that result at the required granularity; otherwise retain its lowered object or blocker. If the receiver asks whether the work first constituted an inspection-report episteme, A.15.PROD returns either its local entity-identity-inception claim or the exact branch blocker. A measured or diagnostic result remains with its direct result pattern, and a pass/fail verdict remains a separately governed evaluation-result episteme rather than the inspected entity or a downstream effect.
@@ -283,7 +283,7 @@ An ETL note says, `RawOrders is the source input and WarehouseOrders is the deli
 
 Write: `RawOrders_0811 participated as the source dataset in ETL_Nightly_0811`, and `WarehouseOrders_0811 participated as the destination dataset in ETL_Nightly_0811.` Those facts establish neither delivery nor use by analytics. If decision Work `D-0811` is now claimed to use `WarehouseOrders_0811` as a premise but no premise-use, reference-use, or application-binding governor is available, stop with `missing-governor` and name the analytics-decision owner. This case demonstrates a positive direct relation followed by a distinct blocked receiving use.
 
-Before calling `WarehouseOrders_0811` a new output, decide which dataset continues. If the ETL job updates the same dataset in place, identify that dataset's bounded change under A.3.4. If a derived dataset begins, apply its dataset-identity rule and use A.15.PROD only when the exact inception basis closes. When a catalog entry, lineage view, or publication is the source from which a reader reaches either dataset, use C.2.P to identify the exact source expression, source-to-use path, allowed use, and reopen condition. An E.17 face or form, or an E.24.PUB publication or availability occurrence, neither creates the dataset nor proves that analytics used it. Row-count, quality, latency, and drift results remain separate measurement or evaluation objects; each evaluation names its own criterion, predicate, and direct owner.
+Before calling `WarehouseOrders_0811` a new output, decide which dataset continues. If the ETL job updates the same dataset in place, identify that dataset's bounded change under A.3.4. If a derived dataset begins, apply its dataset-identity rule and use A.15.PROD only when the exact inception basis closes. When a catalog entry, lineage view, or publication is the source from which a reader reaches either dataset, use C.2.P to identify the exact source expression, source-to-use path, allowed use, and reopen condition. An E.17 face or form, or an E.24.PUB publication or availability occurrence, neither creates the dataset nor proves that analytics used it. Row-count, quality, latency, and drift results remain separate measurement or evaluation objects; each evaluation names its own criterion and predicate and cites the `SubjectPatternLocator` for their defining or constraining content.
 
 #### A.6.P.WMR:5.3 - Clinical work: administration is not a health outcome
 
@@ -293,7 +293,7 @@ Write: `Appendectomy_Case_8472 administered MedicineDose_8472 to Patient_8472 du
 
 Administration is only one possible relation for `MedicineDose_8472`. The same medicine quantity may instead be a constituent of an administered preparation or compound therapy, or a resource consumed by the clinical Work; each alternative needs its own exact direct governor and case fact, and the positive administration sentence proves neither. If a patient-state change is current, first identify that exact transformation under A.3.4. Then ask separately whether a declared work-to-patient-change predicate with the exact Work, transformation, applicability, and a satisfying case fact obtains. Administration alone proves neither the change nor that the clinical Work caused it.
 
-Keep a measured value, diagnostic finding, evaluation verdict, and claimed health effect as four different objects or claims. A discharge summary may cite any of them without becoming them. Each current claim names its own participants, temporal extent, predicate, criterion when applicable, and direct owner; a measurement or diagnosis does not establish a verdict, and a verdict does not establish the patient's later health effect.
+Keep a measured value, diagnostic finding, evaluation verdict, and claimed health effect as four different objects or claims. A discharge summary may cite any of them without becoming them. Each current claim names its own participants, temporal extent, predicate, criterion when applicable, and the content that supplies that predicate or criterion; a measurement or diagnosis does not establish a verdict, and a verdict does not establish the patient's later health effect.
 
 #### A.6.P.WMR:5.4 - Pump 14: continuing entity and later decision use
 
@@ -341,7 +341,7 @@ If ordinary `handed off` wording already names one exact transfer relation, appl
 
 Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Limited to recovering one method-or-work boundary claim after A.6.P has isolated it; not Universal governance for all relation ambiguity, work identity, production, evidence, publication, transfer, or receiving use.**
 
-The pattern deliberately weights **Onto/Epist** toward exact entities, relation kinds, claim distinctions, and non-invention, and **Prag** toward the shortest usable result from the four-exit architecture. **Did** puts ordinary wording and heterogeneous cases before heavier assurance. The **Arch** cost is coordination with several direct owners rather than one convenient input, output, or result architecture. The **Gov** boundary is that the accountable subject owner supplies, rejects, or reframes a missing governor; WMR cannot admit it. Mitigation is the three-question ordinary core, two conditional assurance questions, four truthful exits, and independent `factually unsupported`, `missing-information`, and `missing-governor` reasons, with future-owner routing only for the last. The following domain-bias rows are informative risk cues; they add no duties beyond the checklist.
+The pattern deliberately weights **Onto/Epist** toward exact entities, relation kinds, claim distinctions, and non-invention, and **Prag** toward the shortest usable result from the four-exit architecture. **Did** puts ordinary wording and heterogeneous cases before heavier assurance. The **Arch** cost is coordinating the defining content and predicates for several exact claims rather than one convenient input, output, or result architecture. The **Gov** boundary is that the accountable subject owner supplies, rejects, or reframes a missing governor; WMR cannot admit it. Mitigation is the three-question ordinary core, two conditional assurance questions, four truthful exits, and independent `factually unsupported`, `missing-information`, and `missing-governor` reasons, with future-owner routing only for the last. The following domain-bias rows are informative risk cues; they add no duties beyond the checklist.
 
 | Bias | Countermeasure |
 | --- | --- |
@@ -380,7 +380,7 @@ The pattern deliberately weights **Onto/Epist** toward exact entities, relation 
 | Plan as actuality | A planned filling, work-package row, or intended deliverable is treated as an actual participant or result. | Intended relation content stays under the plan; actuality opens only from direct obtaining facts. |
 | Binding as production | An operation result binding is treated as proof that work produced or constituted the bound entity. | The repaired claim states only the binding; `A.15.PROD` opens separately when exact production facts make that question current. |
 | Result record as result relation | A report, log, or evaluation-result episteme is treated as the changed entity, work, or direct subject relation. | The repaired claim identifies the episteme and its claim content, then keeps any work, change, measurement, or evaluation relation separate. |
-| Local id used as ontology | A project id or assertion id is cited where the `RelationKind`, obtaining predicate, relation-declaration episteme, or direct owner is needed. | Name the token and resolving owner; keep any occurrence, assertion episteme, and local id separate. Without a governor, return the exact missing-governor result. |
+| Local id used as ontology | A project id or assertion id is cited where the `RelationKind`, obtaining predicate, relation-declaration episteme, or `SubjectPatternLocator` is needed. | Name the token and its exact reference scheme or resolver; keep any occurrence, assertion episteme, and local id separate. When no current exact predicate source exists, return the established `missing-governor` result. |
 | Missing governor hidden by hypernym | A broad word makes an unresolved relation look complete. | The repaired result records exact participants, obtaining question, missing governor, affected use, and future owner. |
 | Composition by proximity | Shared work, time, flow, or referent is treated as transformation composition. | The repaired result keeps independently identified transformations and returns the exact composition blocker. |
 
@@ -393,7 +393,7 @@ The pattern deliberately weights **Onto/Epist** toward exact entities, relation 
 
 ### A.6.P.WMR:10 - Rationale
 
-Boundary words describe a relation position only relative to an exact object. Treating them as entity kinds or universal relations erases the subject pattern that decides obtaining. The three-question ordinary route restores the thing, related object, and direct verb or stop first; two conditional assurance questions expose claim dimensions and the formal governor only when those distinctions can change or check the answer.
+Boundary words describe a relation position only relative to an exact object. Treating them as entity kinds or universal relations erases the exact predicate, current facts, and subject assertion that determine obtaining. The three-question ordinary method restores the thing, related object, and direct verb or stop first; two conditional assurance questions expose claim dimensions and the formal predicate definition only when those distinctions can change or check the answer.
 
 **Mint vs reuse.** `A.6.P.WMR` introduces only this pattern id and its Tech and Plain labels; it mints no `U`-kind, relation kind, boundary-word family, result record, or work occurrence. The worked-case `RelationKind` tokens are explicitly assumed to have been published by named project relation-declaration owners; naming them in a case neither admits them into FPF nor republishes their declarations. It reuses each exact subject kind, direct relation, local `A.6.RCD` claim, and blocker under its own governor. Any durable name for a recovered entity, relation, or performed-work occurrence starts under `F.18` only after this recovery closes.
 
@@ -425,7 +425,7 @@ Currentness checked on 2026-07-21. PMI version 5.0 is the January 2026 Lexicon; 
 - **Uses:** `A.6.RCD` when exact participants are known but no direct relation closes the receiving claim; `C.2.P` for epistemic source expression and source-to-use recovery before the exact relation involving a Work occurrence is recovered.
 - **Coordinates with:** `A.3.1` method identity and generic participant meanings; `A.3.2` method descriptions; `A.6.1` actual operation applications and declaration-local bindings; `A.15.1` dated work; `A.15.2` intended work and plans; `A.15.3` planned fillings; `A.3.4` actual bounded change; and `A.15.PROD` production-work, entity-identity-inception, and production-completion recovery.
 - **Hands naming to:** `F.18` only after the exact governed value from a direct subject relation, exact `A.6.1` application binding, or exact local `A.15.PROD` or `A.6.RCD` claim, together with its receiving use, is recovered. The fourth family—an exact non-assertability result independently reasoned as `factually unsupported`, `missing-information`, or `missing-governor`—does not authorize durable naming; only `missing-governor` is an ontology blocker that names the affected use and future owner. A durable performed-work name additionally requires the `A.15.1` occurrence basis.
-- **Returns to:** the direct measurement, evaluation, commitment, delivery, acceptance, transfer, resource, premise, source-use, transformation, evidence, assurance, publication, gate, decision, or receiving-work pattern that owns the recovered claim.
+- **Neighboring assertions:** state the recovered measurement, evaluation, commitment, delivery, acceptance, transfer, resource, premise, source-use, Transformation, evidence, assurance, publication, gate, decision, or Work claim under its exact predicate; cite its `SubjectPatternLocator` only when the locator is needed.
 - **Boundary:** A.6.P.WMR owns the recovery method and ordinary direct sentence. It does not own direct subject ontics, create the work occurrence, make an operation binding obtain, admit a relation kind, supply evidence or warrant, or decide downstream reliance.
 
 ### A.6.P.WMR:End
