@@ -129,17 +129,6 @@ if [[ "$PROMPT_SOURCE" == "positional" ]]; then
 fi
 
 export CONSILIUM_MODE="review-ask"
-# A single provider that never emits a first event must not hold the whole
-# independent panel forever. Ordinary backend_run/delegate calls remain
-# unlimited by default; public review fan-out gets a generous bounded default.
-_REVIEW_TIMEOUT="${CONSILIUM_REVIEW_TIMEOUT:-600}"
-if ! [[ "$_REVIEW_TIMEOUT" =~ ^[0-9]+$ ]]; then
-    echo -e "${RED}Error: CONSILIUM_REVIEW_TIMEOUT must be a non-negative integer${NC}" >&2
-    exit $EXIT_USAGE
-fi
-if [[ "${AGENT_TIMEOUT:-0}" -eq 0 && "$_REVIEW_TIMEOUT" -gt 0 ]]; then
-    export AGENT_TIMEOUT="$_REVIEW_TIMEOUT"
-fi
 artifacts_init_run "ask"
 
 ALL_AGENTS=()

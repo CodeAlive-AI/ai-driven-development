@@ -95,8 +95,8 @@ Usage:
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
-  consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
-  consilium delegate watch RUN_ID [--timeout SEC] [--heartbeat SEC] [--json]
+  consilium delegate wait RUN_ID [--json] [--quiet]
+  consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate list [--active|--all] [--reap] [--json]
 
 Full-YOLO delegation to exactly one agent in the current working directory.
@@ -110,9 +110,8 @@ The supervisor becomes its own session leader, so the run survives the caller
 exiting. Collect the answer later with `delegate wait RUN_ID`.
 
 wait blocks until the run is terminal and prints the full final answer.
-Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 your --timeout expired
-(the run keeps going — re-run wait), 74 completed but no answer text, otherwise
-the agent's own failure code.
+Exit: 0 completed, 130 cancelled, 70 supervisor died, 74 completed but no
+answer text, otherwise the agent's own failure code.
 
 watch streams lifecycle changes and heartbeats, not tool/file/text progress,
 and exits with the same codes. Use wait to print the final answer.
@@ -248,7 +247,6 @@ if [[ "$STEERABLE" -eq 1 ]]; then
         # create_run, and our EXIT trap deletes that file the moment this script
         # returns. The log cannot serve as the handshake — the supervisor moves
         # it under the run dir as soon as the run id exists.
-        _det_deadline=$(( $(date +%s) + ${CONSILIUM_DETACH_START_TIMEOUT:-30} ))
         _det_run_id=""
         while [[ -z "$_det_run_id" ]]; do
             _det_run_id="$(head -1 "$_det_idf" 2>/dev/null | tr -d '[:space:]' || true)"
@@ -259,14 +257,6 @@ if [[ "$STEERABLE" -eq 1 ]]; then
                 _det_run_id="$(head -1 "$_det_idf" 2>/dev/null | tr -d '[:space:]' || true)"
                 [[ -n "$_det_run_id" ]] && break
                 echo "Error: detached supervisor exited before reporting a run id" >&2
-                _det_log_kept=1
-                tail -n 40 "$_det_log" >&2 2>/dev/null || true
-                rm -f "$_det_log"
-                exit $EXIT_GENERIC
-            fi
-            if [[ $(date +%s) -ge $_det_deadline ]]; then
-                kill "$_det_pid" 2>/dev/null || true
-                echo "Error: detached supervisor did not report a run id in time" >&2
                 _det_log_kept=1
                 tail -n 40 "$_det_log" >&2 2>/dev/null || true
                 rm -f "$_det_log"

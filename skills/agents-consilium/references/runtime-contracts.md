@@ -93,12 +93,6 @@ mechanical read-only boundary is required for untrusted repositories.
 
 `scripts/lib/workflow_plans.py` describes ask, basic/specialist, super, and ultra stages as data. `workflow_runner.sh` executes reusable fan-out with optional backpressure.
 
-Review modes bound each otherwise-unlimited provider invocation to 600 seconds
-by default so a profile that never emits an event cannot block an ask or code
-review fan-out forever. Set `CONSILIUM_REVIEW_TIMEOUT=0` to disable this review
-watchdog or set a larger value for unusually deep reviews. An explicit positive
-`AGENT_TIMEOUT` still takes precedence.
-
 | Setting | Meaning |
 |---|---|
 | `CONSILIUM_MAX_PARALLEL=0` | Unlimited jobs; default and historical behavior |
@@ -157,7 +151,8 @@ Run ids are human-readable word pairs with a four-hex uniqueness suffix, for exa
 
 Consilium is unlimited by default: no wrapper timeout, step/token/response budget, or fan-out cap. Prompts use stdin or private temporary files; delegate reads file/stdin sources exactly once; raw/normalized/final outputs stream to disk without truncation. Only the opt-in debug tape is bounded, with explicit overflow reporting.
 
-Provider/harness limits still apply. Set a positive `AGENT_TIMEOUT` only for an explicit watchdog on ordinary review or one-shot delegation. Steerable runs have no wrapper deadline; observe them and cancel explicitly.
+Provider/harness limits still apply. Consilium itself never imposes an execution
+deadline; observe long-running work and cancel it explicitly when needed.
 
 ## Native Grok one-shot contract
 

@@ -204,7 +204,7 @@ Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EF
 - Remote exploration blocks unsafe transports, does not fetch submodules or LFS payloads, and treats repository instructions as untrusted data.
 - Live progress goes to stderr; the final answer goes to stdout. Normalized events use a closed ConsiliumEvent schema; unknown types are not persisted.
 - Complete run artifacts are saved under `CONSILIUM_OUTPUT_DIR` unless `CONSILIUM_SAVE_OUTPUTS=0`.
-- There is no timeout, token budget, or fan-out concurrency limit by default. Set `AGENT_TIMEOUT` for a one-shot watchdog, or `CONSILIUM_MAX_PARALLEL=N` to bound review fan-out. Opt-in `CONSILIUM_DEBUG_EVENTS=1` writes a bounded RAW→FINAL event tape.
+- There is no Consilium execution timeout, token budget, or fan-out concurrency limit. Set `CONSILIUM_MAX_PARALLEL=N` to bound review fan-out. Opt-in `CONSILIUM_DEBUG_EVENTS=1` writes a bounded RAW→FINAL event tape.
 
 ## Command map
 

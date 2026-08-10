@@ -15,8 +15,6 @@ from .registry import Registry, RegistryError, TERMINAL_STATUSES
 from .util import preview_text, progress, utc_now_iso
 from .waiter import (
     EXIT_NO_FINAL_TEXT,
-    EXIT_WAIT_TIMEOUT,
-    WaitTimeout,
     derive_exit_code,
     poll_once,
     read_final_text,
@@ -217,8 +215,8 @@ class _Interrupted(Exception):
 def _install_observer_signals() -> None:
     """Ctrl-C on a watcher must never be mistaken for cancelling the run.
 
-    wait/watch exit with the timeout code, leaving the supervisor untouched;
-    `delegate cancel` remains the only way to stop actual work.
+    wait/watch leave the supervisor untouched; `delegate cancel` remains the
+    only way to stop actual work.
     """
 
     def _handler(signum, _frame):
@@ -280,21 +278,15 @@ def cmd_wait(args: argparse.Namespace) -> int:
         snap = wait_for_terminal(
             reg,
             args.run_id,
-            timeout=args.timeout,
             poll_interval=args.poll_interval,
             on_event=_heartbeat,
         )
-    except WaitTimeout as e:
-        sys.stderr.write(
-            f"Error: {e}. Resume with: consilium delegate wait {args.run_id}\n"
-        )
-        return EXIT_WAIT_TIMEOUT
     except _Interrupted:
         sys.stderr.write(
             f"Error: interrupted; run {args.run_id} is untouched. "
             f"Resume with: consilium delegate wait {args.run_id}\n"
         )
-        return EXIT_WAIT_TIMEOUT
+        return 130
     except RegistryError as e:
         sys.stderr.write(f"Error: {e}\n")
         return e.exit_code
@@ -497,16 +489,12 @@ def cmd_watch(args: argparse.Namespace) -> int:
         snap = wait_for_terminal(
             reg,
             args.run_id,
-            timeout=args.timeout,
             poll_interval=args.poll_interval,
             on_event=on_event,
         )
-    except WaitTimeout as e:
-        emit("timeout", status=e.status, elapsed=f"{int(e.elapsed)}s")
-        return EXIT_WAIT_TIMEOUT
     except _Interrupted:
         emit("detached", elapsed=f"{int(time.time() - started)}s")
-        return EXIT_WAIT_TIMEOUT
+        return 130
     except RegistryError as e:
         sys.stderr.write(f"Error: {e}\n")
         return e.exit_code
@@ -627,7 +615,6 @@ def main(argv: Optional[list] = None) -> int:
         ),
     )
     w.add_argument("run_id")
-    w.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
     w.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
     w.add_argument("--json", action="store_true")
     w.add_argument("--quiet", action="store_true")
@@ -642,7 +629,6 @@ def main(argv: Optional[list] = None) -> int:
         ),
     )
     wt.add_argument("run_id")
-    wt.add_argument("--timeout", type=float, default=0.0, help="seconds; 0 = unlimited")
     wt.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
     wt.add_argument("--heartbeat", type=float, default=60.0, help="seconds between alive lines")
     wt.add_argument("--json", action="store_true")

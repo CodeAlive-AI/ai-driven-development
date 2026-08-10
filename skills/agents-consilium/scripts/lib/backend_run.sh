@@ -33,7 +33,7 @@
 #     • each raw stdout line is persisted immediately (--raw-out, flushed)
 #     • each event is normalized and written immediately (stdout → NORM_STREAM)
 #     • compact semantic progress reaches stderr before process completion
-#   PIPESTATUS preserves backend exit (timeout/signal) and normalizer validation
+#   PIPESTATUS preserves backend exit/signal and normalizer validation
 #   independently of pipefail rightmost-status semantics.
 #
 set -euo pipefail
@@ -109,25 +109,6 @@ MODE_CAP_FILESYSTEM="$(
     MODE_CAPS_JSON="$MODE_CAPS_JSON" python3 -c 'import json,os; print(json.loads(os.environ["MODE_CAPS_JSON"]).get("filesystem") or "read")'
 )"
 [[ -n "$AGENT_ID" ]] || { echo "Error: --agent-id required" >&2; exit $EXIT_USAGE; }
-
-# Bound every review-family backend, not only `review ask`: code-review fan-out
-# can be held just as easily by a provider that never emits its first event.
-# Delegate and explore retain their existing timeout semantics.
-if [[ "$ACCESS_POLICY" == "readonly" && "$MODE" != "explore" && "$AGENT_TIMEOUT" -eq 0 ]]; then
-    _REVIEW_TIMEOUT="${CONSILIUM_REVIEW_TIMEOUT:-600}"
-    if ! [[ "$_REVIEW_TIMEOUT" =~ ^[0-9]+$ ]]; then
-        echo "Error: CONSILIUM_REVIEW_TIMEOUT must be a non-negative integer" >&2
-        exit $EXIT_USAGE
-    fi
-    if [[ "$_REVIEW_TIMEOUT" -gt 0 ]]; then
-        AGENT_TIMEOUT="$_REVIEW_TIMEOUT"
-        if command -v timeout &>/dev/null; then
-            TIMEOUT_CMD="timeout"
-        elif command -v gtimeout &>/dev/null; then
-            TIMEOUT_CMD="gtimeout"
-        fi
-    fi
-fi
 
 config_validate || exit $EXIT_CONFIG_ERROR
 
@@ -668,26 +649,14 @@ run_streamed() {
     # command (including `fi`) overwrites it.
     set +o pipefail
     local -a _ps
-    if [[ -n "$TIMEOUT_CMD" ]]; then
-        if [[ -n "$stdin_file" ]]; then
-            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" "${run_argv[@]}" <"$stdin_file" 2>"$BACKEND_ERR" \
-                | "${norm_argv[@]}" >"$NORM_STREAM"
-            _ps=("${PIPESTATUS[@]}")
-        else
-            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" "${run_argv[@]}" 2>"$BACKEND_ERR" \
-                | "${norm_argv[@]}" >"$NORM_STREAM"
-            _ps=("${PIPESTATUS[@]}")
-        fi
+    if [[ -n "$stdin_file" ]]; then
+        "${run_argv[@]}" <"$stdin_file" 2>"$BACKEND_ERR" \
+            | "${norm_argv[@]}" >"$NORM_STREAM"
+        _ps=("${PIPESTATUS[@]}")
     else
-        if [[ -n "$stdin_file" ]]; then
-            "${run_argv[@]}" <"$stdin_file" 2>"$BACKEND_ERR" \
-                | "${norm_argv[@]}" >"$NORM_STREAM"
-            _ps=("${PIPESTATUS[@]}")
-        else
-            "${run_argv[@]}" 2>"$BACKEND_ERR" \
-                | "${norm_argv[@]}" >"$NORM_STREAM"
-            _ps=("${PIPESTATUS[@]}")
-        fi
+        "${run_argv[@]}" 2>"$BACKEND_ERR" \
+            | "${norm_argv[@]}" >"$NORM_STREAM"
+        _ps=("${PIPESTATUS[@]}")
     fi
     BACKEND_RC=${_ps[0]:-1}
     NORM_RC=${_ps[1]:-0}
@@ -695,7 +664,7 @@ run_streamed() {
     set -e
 
     # Preserve backend PIPESTATUS when the normalizer also fails. Prefer the
-    # backend non-zero (timeout/signal/crash) over a normalizer-only failure so
+    # backend non-zero (signal/crash) over a normalizer-only failure so
     # callers see the true process outcome. Grok contract additionally requires
     # end present / no error: if backend exited 0 but normalizer failed, surface 1.
     if [[ "${NORM_RC:-0}" -ne 0 && "${BACKEND_RC:-0}" -eq 0 ]]; then

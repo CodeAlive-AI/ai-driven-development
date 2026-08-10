@@ -34,17 +34,7 @@ _MAX_POLL_SECONDS = 2.0
 # supervisor uses 130 for cancelled, so these come from the sysexits band.
 EXIT_SUPERVISOR_DEAD = 70
 EXIT_NO_FINAL_TEXT = 74
-EXIT_WAIT_TIMEOUT = 75
 EXIT_CANCELLED = 130
-
-
-class WaitTimeout(Exception):
-    """The caller's deadline expired. The run itself is untouched."""
-
-    def __init__(self, status: str, elapsed: float):
-        super().__init__(f"timeout after {elapsed:.1f}s; run is still {status}")
-        self.status = status
-        self.elapsed = elapsed
 
 
 @dataclass
@@ -96,14 +86,12 @@ def wait_for_terminal(
     reg: Registry,
     run_id: str,
     *,
-    timeout: float = 0.0,
     poll_interval: float = 0.0,
     on_event: Optional[Callable[[Snapshot], None]] = None,
 ) -> Snapshot:
-    """Block until the run reaches a terminal status. Never blocks forever.
+    """Block until the run reaches a terminal status.
 
-    Progress is guaranteed by three exits: terminal meta, a live supervisor
-    (which heartbeats its meta every couple of seconds), or the dead-pid reap.
+    A dead supervisor is reaped so observers can return a terminal failure.
     """
     started = time.time()
     while True:
@@ -132,17 +120,12 @@ def wait_for_terminal(
             on_event(snap)
 
         elapsed = time.time() - started
-        if timeout and elapsed >= timeout:
-            raise WaitTimeout(snap.status, elapsed)
-
         if poll_interval > 0:
             step = poll_interval
         elif elapsed < _FAST_POLL_WINDOW:
             step = _FAST_POLL_SECONDS
         else:
             step = min(_SLOW_POLL_SECONDS * (1 + elapsed / 60.0), _MAX_POLL_SECONDS)
-        if timeout:
-            step = min(step, max(timeout - elapsed, 0.01))
         time.sleep(step)
 
 

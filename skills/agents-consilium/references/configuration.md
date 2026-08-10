@@ -61,13 +61,11 @@ The shell-interpolation warning applies only to positional prompts that still co
 | `CONSILIUM_OUTPUT_DIR`, `CONSILIUM_RUN_DIR` | Artifact locations |
 | `CONSILIUM_SAVE_OUTPUTS` | Disable ordinary archival with `0`; steerable service artifacts remain |
 | `CONSILIUM_STEER_DIR` | Steerable registry; reuse the same value for every control command |
-| `CONSILIUM_DETACH_START_TIMEOUT` | Seconds detach waits for supervisor startup; default `30` |
 | `CONSILIUM_MAX_PARALLEL` | Fan-out concurrency; `0` means unlimited/default |
 | `CONSILIUM_DEBUG_EVENTS*` | Opt-in bounded event tape and its path/record/byte limits |
 | `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` | Permit `file://` sources for offline tests only |
 | `CONSILIUM_EXPLORE_ALLOW_INSECURE=1` | Permit plain HTTP clone URLs |
-| `AGENT_TIMEOUT` | Positive watchdog seconds for ordinary review/one-shot delegate; unset/`0` is unlimited |
-| `CONSILIUM_REVIEW_TIMEOUT` | Per-agent watchdog for review modes (`ask`, code depths, direct review backend); defaults to `600`, `0` disables it. An explicit positive `AGENT_TIMEOUT` takes precedence |
 | `GEMINI_API_KEY` | Gemini CLI authentication when required |
 
-Steerable runs intentionally ignore wrapper deadlines. Provider context/output limits and managed harness settings still apply.
+Consilium imposes no execution deadline in any mode. Provider context/output
+limits and managed harness settings still apply.

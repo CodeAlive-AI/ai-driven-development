@@ -11,26 +11,6 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-# Find timeout command (GNU coreutils on macOS is gtimeout). It is used only
-# when the caller explicitly sets a positive AGENT_TIMEOUT.
-if command -v timeout &> /dev/null; then
-    TIMEOUT_CMD="timeout"
-elif command -v gtimeout &> /dev/null; then
-    TIMEOUT_CMD="gtimeout"
-else
-    TIMEOUT_CMD=""
-fi
-
-# Unlimited by default. A positive integer enables an explicit opt-in watchdog.
-AGENT_TIMEOUT="${AGENT_TIMEOUT:-0}"
-if ! [[ "$AGENT_TIMEOUT" =~ ^[0-9]+$ ]]; then
-    echo "Error: AGENT_TIMEOUT must be a non-negative integer (0 = unlimited)" >&2
-    exit 5
-fi
-if [[ "$AGENT_TIMEOUT" -eq 0 ]]; then
-    TIMEOUT_CMD=""
-fi
-
 # Full stdout archive for every backend call. This protects expensive long-form
 # answers from being lost when a terminal, parent agent, or UI truncates displayed
 # output. Override the directory with CONSILIUM_OUTPUT_DIR, or set
@@ -330,63 +310,4 @@ warn_shell_special_in_prompt() {
         echo -e "${YELLOW}  Use --prompt-file, stdin, or a single-quoted heredoc instead.${NC}" >&2
         echo -e "${YELLOW}  See SKILL.md § Shell escaping. Set CONSILIUM_SUPPRESS_SHELL_WARN=1 to silence.${NC}" >&2
     fi
-}
-
-# Run a command with an explicitly requested optional timeout.
-#
-# Important: stream stdout directly instead of capturing it in a shell variable.
-# Large LLM responses must remain available to the caller/redirect target even
-# when the terminal or parent tool truncates displayed output. Command
-# substitution would buffer the whole response in memory, strip trailing
-# newlines, and leave no independent raw artifact after display truncation.
-# Usage: run_with_timeout "agent_name" callback_function
-run_with_timeout() {
-    local agent_name="$1"
-    local fn_name="$2"
-    local save_file=""
-    if [[ "${CONSILIUM_SAVE_OUTPUTS:-1}" != "0" ]]; then
-        mkdir -p "$CONSILIUM_OUTPUT_DIR"
-        local safe_agent
-        safe_agent="$(printf '%s' "$agent_name" | LC_ALL=C tr -c 'A-Za-z0-9._-' '_')"
-        save_file="$(mktemp "${CONSILIUM_OUTPUT_DIR%/}/${safe_agent}.out.XXXXXX")"
-        echo -e "${YELLOW}[${agent_name}] Full stdout will be saved to: ${save_file}${NC}" >&2
-    fi
-
-    local exit_code=0
-    if [[ -n "$TIMEOUT_CMD" ]]; then
-        if [[ -n "$save_file" ]]; then
-            set +e
-            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" bash -c "$(declare -f "$fn_name"); $fn_name" | tee "$save_file"
-            exit_code="${PIPESTATUS[0]}"
-            set -e
-        else
-            set +e
-            $TIMEOUT_CMD "${AGENT_TIMEOUT}s" bash -c "$(declare -f "$fn_name"); $fn_name"
-            exit_code=$?
-            set -e
-        fi
-    else
-        if [[ -n "$save_file" ]]; then
-            set +e
-            $fn_name | tee "$save_file"
-            exit_code="${PIPESTATUS[0]}"
-            set -e
-        else
-            set +e
-            $fn_name
-            exit_code=$?
-            set -e
-        fi
-    fi
-
-    if [[ $exit_code -ne 0 ]]; then
-        if [[ $exit_code -eq 124 ]]; then
-            echo -e "${RED}[${agent_name}] Timeout after ${AGENT_TIMEOUT}s${NC}" >&2
-            exit 124
-        fi
-        echo -e "${RED}[${agent_name}] Error (exit code: $exit_code)${NC}" >&2
-        exit $exit_code
-    fi
-
-    echo -e "${GREEN}[${agent_name}] Response received${NC}" >&2
 }

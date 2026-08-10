@@ -18,7 +18,6 @@ export CONSILIUM_BIN_OPENCODE="$FAKES/fake-opencode"
 export CONSILIUM_BIN_GROK="$FAKES/fake-grok"
 export CONSILIUM_BIN_GEMINI="$FAKES/fake-gemini"
 export CONSILIUM_SUPPRESS_SHELL_WARN=1
-export AGENT_TIMEOUT=30
 # Parent shells (prior delegate runs, harnesses) must not leak mode wrappers
 # into the offline suite.
 unset CONSILIUM_RAW_PROMPT CONSILIUM_SKIP_OUTPUT_TEMPLATE CONSILIUM_MODE \
@@ -91,11 +90,6 @@ assert_contains "list-agents has grok-build backend" "$out" 'backend="grok-build
 
 out=$(env -u CONSILIUM_CONFIG "$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "default config resolves from skill root" "$out" 'id="grok"'
-
-timeout_state=$(env -u AGENT_TIMEOUT bash -c \
-  'source "$1"; printf "%s|%s" "$AGENT_TIMEOUT" "$TIMEOUT_CMD"' \
-  _ "$LIB_DIR/common.sh")
-assert_eq "default execution has no timeout" "$timeout_state" "0|"
 
 # Unknown command
 set +e
@@ -395,7 +389,7 @@ assert_contains "delegate help mentions list" "$out" "delegate list"
 assert_contains "delegate help mentions detach" "$out" "--detach"
 assert_contains "delegate help mentions one-shot escape hatch" "$out" "--one-shot"
 assert_contains "delegate help documents steerable default" "$out" "by default"
-assert_contains "delegate help documents wait exit codes" "$out" "75 your --timeout expired"
+assert_not_contains "delegate help has no timeout option" "$out" "--timeout"
 
 set +e
 "$CONSILIUM" delegate -a grok --one-shot --steerable "x" \
@@ -585,16 +579,6 @@ assert_contains "ask has codex answer" "$out" "FAKE_CODEX_OK"
 assert_contains "ask has grok answer" "$out" "FAKE_GROK_OK"
 assert_contains "ask progress stderr" "$(cat "$TMP/ask2.err")" "[consilium]"
 assert_not_contains "ask stdout clean" "$out" "[consilium]"
-
-set +e
-CONSILIUM_REVIEW_TIMEOUT=not-a-number \
-  "$CONSILIUM" review ask --progress none -a codex "timeout validation" \
-  >"$TMP/ask-timeout-invalid.out" 2>"$TMP/ask-timeout-invalid.err"
-ask_timeout_invalid_rc=$?
-set -e
-assert_eq "ask rejects invalid review timeout" "$ask_timeout_invalid_rc" "5"
-assert_contains "ask invalid review timeout is explained" \
-  "$(cat "$TMP/ask-timeout-invalid.err")" "CONSILIUM_REVIEW_TIMEOUT"
 
 # A prompt file is transport only in public review: even an inherited raw-mode
 # environment must not strip the read-only/work-alone/blast-radius framework.

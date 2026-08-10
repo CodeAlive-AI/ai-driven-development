@@ -59,7 +59,6 @@ def env_base(reg_root: Path, art: Path) -> dict:
     e["CONSILIUM_BIN_CODEX"] = str(FAKES / "fake-codex-steer")
     e["CONSILIUM_BIN_OPENCODE"] = str(FAKES / "fake-opencode-steer")
     e["CONSILIUM_BIN_GROK"] = str(FAKES / "fake-grok-steer")
-    e["AGENT_TIMEOUT"] = "0"
     return e
 
 
@@ -2804,26 +2803,6 @@ def test_wait_cancelled(tmp: Path) -> None:
     wait_proc(proc, timeout=20)
 
 
-def test_wait_timeout(tmp: Path) -> None:
-    print("=== e2e: wait --timeout does not touch the run ===")
-    env, reg_root, cwd = _wait_env(tmp, "wait-timeout", CONSILIUM_FAKE_CLAUDE_STEER_MODE="hang")
-    proc, run_id, _ = start_steerable("claude-code", "long task", env, cwd)
-    started = time.time()
-    r = run_cmd([str(CONSILIUM), "delegate", "wait", run_id, "--timeout", "1"], env, timeout=20)
-    elapsed = time.time() - started
-    assert_true("wait/timeout exit 75", r.returncode == 75, f"rc={r.returncode} err={r.stderr[-200:]}")
-    assert_true("wait/timeout returns promptly", elapsed < 6, f"{elapsed:.2f}s")
-    assert_true("wait/timeout suggests resuming", "delegate wait" in r.stderr, r.stderr[-200:])
-    st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
-    assert_true(
-        "wait/timeout leaves the run alive",
-        st.get("status") not in ("cancelled", "failed"),
-        str(st.get("status")),
-    )
-    run_cmd([str(CONSILIUM), "delegate", "cancel", run_id], env, timeout=10)
-    wait_proc(proc, timeout=25)
-
-
 def test_wait_supervisor_killed(tmp: Path) -> None:
     print("=== e2e: wait never hangs on a dead supervisor ===")
     env, reg_root, cwd = _wait_env(tmp, "wait-killed", CONSILIUM_FAKE_CLAUDE_STEER_MODE="hang")
@@ -3005,7 +2984,6 @@ def main() -> int:
         test_wait_running_to_completed(tmp)
         test_wait_failed(tmp)
         test_wait_cancelled(tmp)
-        test_wait_timeout(tmp)
         test_wait_supervisor_killed(tmp)
         test_list(tmp)
         test_watch_terminates(tmp)

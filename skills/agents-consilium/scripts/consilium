@@ -38,8 +38,8 @@ Usage:
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
-  consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
-  consilium delegate watch RUN_ID [--timeout SEC] [--heartbeat SEC] [--json]
+  consilium delegate wait RUN_ID [--json] [--quiet]
+  consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate list [--active|--all] [--reap] [--json]
   consilium --list-agents
   consilium -h | --help
@@ -86,15 +86,15 @@ delegate
   direct run. --detach prints run_id and returns immediately; the
   supervisor becomes its own session leader and outlives the caller.
   wait blocks until the run is terminal and prints the full final answer.
-    Exit: 0 completed, 130 cancelled, 70 supervisor died, 75 --timeout expired
-    (run continues — re-run wait), 74 completed without an answer.
+    Exit: 0 completed, 130 cancelled, 70 supervisor died, 74 completed without
+    an answer.
   watch emits lifecycle changes and heartbeats, not tool/file/text progress,
   and exits with the same codes. Use wait to print the final answer.
   list finds runs again after the run id was lost.
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
-  CONSILIUM_STEER_DIR, AGENT_TIMEOUT (review/one-shot only; opt-in), and per-backend
+  CONSILIUM_STEER_DIR and per-backend
   model/effort overrides — see SKILL.md.
 EOF
 }

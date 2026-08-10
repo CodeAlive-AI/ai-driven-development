@@ -67,8 +67,8 @@ Keep these concepts separate:
 
 For an observed detached run, use `watch RUN_ID`, then `wait RUN_ID` after
 `watch` reaches terminal state. If only completion and the answer matter, call
-`wait` directly. A `watch --timeout` exit of `75` means only that the observer
-stopped; the worker continues and either command can be reattached later.
+`wait` directly. Both observers run until the worker reaches a terminal state
+or the observer is interrupted; either command can be reattached later.
 
 Do not tail or parse the private registry, `audit.jsonl`, `supervisor.log`, or
 raw/normalized cache artifacts for routine progress. They are implementation
@@ -84,7 +84,6 @@ task explicitly defines those artifacts as checkpoints.
 | `0` | Completed |
 | `130` | Cancelled |
 | `70` | Supervisor died without finishing |
-| `75` | Caller-specified timeout expired; the run continues and `wait` may be run again |
 | `74` | Completed without answer text |
 | other non-zero | Agent/backend failure |
 
