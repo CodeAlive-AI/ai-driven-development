@@ -149,8 +149,6 @@ OpenCode uses a `permission` key with three outcomes per rule: `"allow"`, `"ask"
 
 **Defaults:** Most permissions default to `"allow"`. `doom_loop` and `external_directory` default to `"ask"`. `.env` files are denied by default.
 
-**Per-agent overrides:** see [opencode-agents.md in subagents-management](../../subagents-management/references/opencode-agents.md).
-
 ## Provider Configuration
 
 ```json

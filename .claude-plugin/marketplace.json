@@ -7,13 +7,13 @@
   },
   "metadata": {
     "description": "Practices, protocols, and skills for AI-driven software development — for any agent that supports the Agent Skills standard (Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity, and more).",
-    "version": "7.2.3"
+    "version": "8.0.0"
   },
   "plugins": [
     {
       "name": "ai-driven-development",
-      "description": "An umbrella collection of 24 skills + 1 hook for AI-driven development: agent self-configuration (MCP / hooks / settings / subagents / skills / plugins / cross-agent repository readiness / safe CLI installation), engineering practices (maintainable complexity, prompt engineering, FPF problem solving, bug-fix protocol, planning gate, repository-history investigation, repository activity summary, C# refactoring), research & docs (Semantic Scholar deep research, URL-to-Markdown, ubiquitous-language thesaurus), multi-agent orchestration (consilium: review, repository exploration, delegation), macOS & Windows health & cleanup, and niche utilities (clipboard, Windows QA). Plus a Claude Code Bash safety hook.",
-      "version": "7.2.3",
+      "description": "An umbrella collection of 23 skills + 1 hook for AI-driven development: agent self-configuration (MCP / hooks / settings / skills / plugins / cross-agent repository readiness / safe CLI installation), engineering practices (maintainable complexity, prompt engineering, FPF problem solving, bug-fix protocol, planning gate, repository-history investigation, repository activity summary, C# refactoring), research & docs (Semantic Scholar deep research, URL-to-Markdown, ubiquitous-language thesaurus), multi-agent orchestration (consilium: review, repository exploration, delegation), macOS & Windows health & cleanup, and niche utilities (clipboard, Windows QA). Plus a Claude Code Bash safety hook.",
+      "version": "8.0.0",
       "author": {
         "name": "CodeAlive-AI",
         "email": "contact@codealive.ai"
@@ -32,7 +32,6 @@
         "multi-agent",
         "mcp",
         "hooks",
-        "subagents",
         "plugins",
         "settings",
         "prompt-engineering",
@@ -65,7 +64,6 @@
         "research",
         "mcp",
         "hooks",
-        "subagents",
         "plugins"
       ]
     }
