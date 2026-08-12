@@ -46,7 +46,7 @@ Live stderr keeps the human vocabulary `thought`, `text`, `end`, and `error`. Fi
 The opt-in tape records bounded, sequence-numbered JSONL across RAW → PARSED → NORMALIZED → RENDERED → FINAL without leaking event bodies onto normal stderr.
 
 ```bash
-CONSILIUM_DEBUG_EVENTS=1 scripts/consilium review ask "Q"
+CONSILIUM_DEBUG_EVENTS=1 "$CONSILIUM" review ask "Q"
 CONSILIUM_DEBUG_EVENTS_PATH=/tmp/tape.jsonl
 CONSILIUM_DEBUG_EVENTS_MAX=10000
 CONSILIUM_DEBUG_EVENTS_MAX_BYTES=33554432
@@ -60,9 +60,9 @@ One-shot normalization records all stages; the steerable supervisor records norm
 
 ## Mode capability policy
 
-`scripts/lib/mode_policy.py` derives access from an explicit capability matrix covering filesystem, shell, web, memory, subagents, steering, and interrupt. Review/explore are read-only; delegate/delegate-steerable are YOLO. Unknown modes fail closed. Backend safety flags layer on top.
+`scripts/lib/mode_policy.py` derives access from an explicit capability matrix covering filesystem, shell, web, memory, subagents, steering, and interrupt. Review is read-only; delegate/delegate-steerable are YOLO. Unknown modes fail closed. Backend safety flags layer on top.
 
-| Backend | Review / explore | Delegate |
+| Backend | Review | Delegate |
 |---|---|---|
 | Codex CLI | `--search`, `exec --sandbox read-only`, ask-for-approval never, multi-agent disabled | `--dangerously-bypass-approvals-and-sandbox` |
 | Claude Code | `dontAsk`, safe mode, no session/Chrome, Edit/Write/Agent/Task denied, Bash + web enabled | `--dangerously-skip-permissions` |
@@ -70,7 +70,7 @@ One-shot normalization records all stages; the steerable supervisor records norm
 | Grok Build | `--no-plan`, read-only sandbox, terminal enabled, subagents disabled | `--always-approve`, no sandbox |
 | Gemini CLI | `--approval-mode yolo`, extensions/MCP/subagents disabled; report-only prompt contract | unsupported |
 
-Web research is available in read-only modes. No review backend uses a planning workflow. Claude pre-approves `Bash,WebSearch,WebFetch`; OpenCode uses a dedicated primary review agent with Bash/search enabled; Grok enables its terminal inside the read-only sandbox; and Gemini uses its normal full tool loop. The trusted review policy explicitly forbids file or external-state changes, saving plans/reports, subagents, agent teams, other models, and delegation. Where supported, subagent tools are also disabled mechanically. Explore adds Grok-specific isolation for remote sources.
+Web research is available in review mode. No review backend uses a planning workflow. Claude pre-approves `Bash,WebSearch,WebFetch`; OpenCode uses a dedicated primary review agent with Bash/search enabled; Grok enables its terminal inside the read-only sandbox; and Gemini uses its normal full tool loop. The trusted review policy explicitly forbids file or external-state changes, saving plans/reports, subagents, agent teams, other models, and delegation. Where supported, subagent tools are also disabled mechanically.
 
 Grok `tool_call` / `tool_call_update` events normalize to tool lifecycle and
 content-free compact heartbeats. Long terminal commands therefore remain visibly
@@ -108,8 +108,7 @@ Stage order, partial/all-failed exit semantics, artifact keys, live progress, an
 framework_policy → mode_contract → role → output_schema → repository_facts → user_input → framework_recap
 ```
 
-Explore never loads review principles, roles, or review schemas. Raw delegate
-tasks remain raw except for optional trusted metadata. In review mode,
+Raw delegate tasks remain raw except for optional trusted metadata. In review mode,
 `--prompt-file` is only an input transport: the read-only, work-alone, and
 blast-radius policies are still layered around its contents. The shell
 `build_prompt` path remains a fallback.
@@ -132,7 +131,7 @@ repository requested it.
 
 ## Progress and run identifiers
 
-Review uses `full`, `compact`, or `none`; explore uses content-free `compact`, `verbose`, or `none`. Invocation-specific keys distinguish concurrent uses of the same profile.
+Review uses `full`, `compact`, or `none`. Invocation-specific keys distinguish concurrent uses of the same profile.
 
 Steerable delegation has a narrower public observation contract. `delegate watch`
 filters registry state and lifecycle-bearing audit events into attach,

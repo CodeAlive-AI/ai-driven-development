@@ -4,11 +4,11 @@
 
 Use other coding agents as subagents — even when your primary agent does not support their models.
 
-Most coding agents can only spawn copies of themselves or a small built-in model set. `agents-consilium` removes that boundary. Any coding agent that can run the skill can call a different coding-agent CLI to research, plan, review, or implement work.
+Most coding agents can only spawn copies of themselves or a small built-in model set. `agents-consilium` removes that boundary. Any coding agent that can run the skill can call a different coding-agent CLI to research, review, or implement work.
 
 For example:
 
-- send repository exploration to Grok 4.5 as a fast, cost-effective researcher;
+- send repository research to a stateful Grok 4.5 worker that can be steered and continued;
 - ask Claude Fable to produce an independent plan;
 - delegate an implementation to Codex, Claude, Grok, or OpenCode;
 - review the same change with several unrelated model families and compare what they find.
@@ -17,20 +17,18 @@ Each worker runs through its real coding-agent harness, with access to the tools
 
 **Steering support:** long-running delegated agents are not fire-and-forget. You can send new guidance while they work, redirect the next turn, inspect status, watch progress, cancel a run, or detach and collect the result later.
 
-## Three ways to use it
+## Two ways to use it
 
 | Mode | What it does | Repository access |
 |---|---|---|
 | `review` | Gets independent opinions or reviews code with multiple agents | Read-only |
-| `explore` | Lets one agent investigate a local or remote repository and answer from cited evidence | Read-only |
 | `delegate` | Gives one exact agent a task, with optional live steering and detached execution | Full read/write access |
 
 In short:
 
 ```text
 Need several opinions?         review
-Need to understand a repo?     explore
-Need another agent to do it?   delegate
+Need research or execution?    delegate
 ```
 
 ## Install
@@ -43,10 +41,10 @@ You also need Python 3 and at least one supported coding-agent CLI:
 
 | Agent harness | Command | Supported modes |
 |---|---|---|
-| [Codex CLI](https://github.com/openai/codex) | `codex` | all |
-| [Claude Code](https://docs.claude.com/claude-code) | `claude` | all |
-| [OpenCode](https://opencode.ai) | `opencode` | all |
-| [Grok Build](https://grok.x.ai) | `grok` | all |
+| [Codex CLI](https://github.com/openai/codex) | `codex` | review, delegate |
+| [Claude Code](https://docs.claude.com/claude-code) | `claude` | review, delegate |
+| [OpenCode](https://opencode.ai) | `opencode` | review, delegate |
+| [Grok Build](https://grok.x.ai) | `grok` | review, delegate |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | review only |
 
 Authentication stays with each CLI. If it already works in your terminal, Consilium can use it.
@@ -64,25 +62,31 @@ scripts/consilium --list-agents
 ### Ask several model families
 
 ```bash
-scripts/consilium review ask -a codex,grok,claude-fable \
+scripts/consilium review ask -a grok,claude-fable,opencode-go-kimi-k3 \
   "Propose a migration plan from REST to event-driven processing."
 ```
 
 The agents work independently. Their answers are returned under separate headings so your primary agent — or you — can compare them without an artificial consensus.
 
-### Use Grok as a repository researcher
+### Use Grok as a stateful repository researcher
 
 ```bash
-# Explore the current repository
-scripts/consilium explore \
-  "Trace authentication from the HTTP entry point to authorization checks."
-
-# Explore a remote GitHub repository
-scripts/consilium explore --repo owner/repository --ref main \
-  "How are plugins discovered and loaded?"
+scripts/consilium delegate -a grok \
+  "Read-only investigation: trace authentication from the HTTP entry point to authorization checks. Cite repository-relative files and do not edit anything."
 ```
 
-`explore` uses Grok 4.5 by default. It returns a direct answer, repository-relative evidence, a small context map, and any gaps it could not verify. Remote repositories are cloned into an isolated temporary workspace and removed afterwards.
+Run the command from the repository Grok should inspect. The worker keeps a real session, so an incomplete investigation can continue through `delegate steer` and its final answer can be collected with `delegate wait`. Delegation is still a full-access runtime: a read-only research task is an instruction to the worker, not a sandbox guarantee, so the caller must verify that no files changed.
+
+For a remote repository, check it out into a user-approved working directory first and run Consilium there. Consilium no longer owns a separate clone-and-cleanup path.
+
+### Ask Codex Sol for a difficult second opinion
+
+Codex Sol is disabled in the default review pool. Select it explicitly when a difficult specification or optimization plan benefits from an independent second view:
+
+```bash
+scripts/consilium review ask --progress compact -a codex \
+  "Verify SPEC.md against the implementation and identify mismatches."
+```
 
 ### Ask Claude Fable for a plan
 
@@ -136,7 +140,7 @@ registry files and `audit.jsonl` are diagnostic internals, not monitoring APIs.
 Every normal delegate is steerable, so the caller can add guidance or change direction while the worker is running:
 
 ```bash
-scripts/consilium delegate -a codex \
+scripts/consilium delegate -a grok \
   "Refactor the storage layer."
 
 # From another process, using the run_id printed at startup
@@ -153,13 +157,13 @@ scripts/consilium delegate cancel run_<id>
 After installing the skill, ask your agent naturally:
 
 ```text
-Use agents-consilium to have Grok explore this repository and explain
-how background jobs are retried. Cite the relevant files.
+Use agents-consilium to delegate a read-only repository investigation to Grok.
+Explain how background jobs are retried, cite the relevant files, and do not edit anything.
 ```
 
 ```text
-Ask Claude Fable and Codex for independent plans, compare the trade-offs,
-then recommend one. Do not modify the repository.
+Ask Codex Sol to verify this difficult optimization plan as a second opinion.
+Do not modify the repository.
 ```
 
 ```text
@@ -199,9 +203,9 @@ Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EF
 
 ## Safety and output
 
-- `review` and `explore` are read-only and use each harness's sandbox or tool restrictions (mode capability matrix → `readonly`; unknown modes fail closed).
+- `review` is read-only and uses each harness's sandbox or tool restrictions (mode capability matrix → `readonly`; unknown modes fail closed).
 - `delegate` is intentionally full-access and requires an exact agent id; its execution mode defaults to steerable, while the agent id has no default and there is no multi-agent fan-out.
-- Remote exploration blocks unsafe transports, does not fetch submodules or LFS payloads, and treats repository instructions as untrusted data.
+- A delegate asked to research read-only still runs with full access. The caller must scope the working directory, state the no-edit constraint, and verify the tree afterwards.
 - Live progress goes to stderr; the final answer goes to stdout. Normalized events use a closed ConsiliumEvent schema; unknown types are not persisted.
 - Complete run artifacts are saved under `CONSILIUM_OUTPUT_DIR` unless `CONSILIUM_SAVE_OUTPUTS=0`.
 - There is no Consilium execution timeout, token budget, or fan-out concurrency limit. Set `CONSILIUM_MAX_PARALLEL=N` to bound review fan-out. Opt-in `CONSILIUM_DEBUG_EVENTS=1` writes a bounded RAW→FINAL event tape.
@@ -211,7 +215,6 @@ Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EF
 ```bash
 scripts/consilium review ask [...]
 scripts/consilium review code --depth basic|specialists|super|ultra [...]
-scripts/consilium explore [--repo SOURCE] [--ref REF] [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
 scripts/consilium delegate -a <exact-agent-id> --steerable|--one-shot|--detach [...]
 scripts/consilium delegate steer|status|cancel|wait|watch|list [...]

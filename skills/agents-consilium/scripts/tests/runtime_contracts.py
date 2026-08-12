@@ -47,7 +47,6 @@ def main() -> int:
     from prompt_pipeline import (
         build_prompt,
         assert_layer_order,
-        assert_mode_isolation,
         assert_raw_purity,
         FRAMEWORK_POLICY_REVIEW,
         FRAMEWORK_RECAP_REVIEW,
@@ -366,16 +365,6 @@ def main() -> int:
             encoding="utf-8"
         ),
     )
-    exp = build_prompt(
-        mode="explore",
-        user_input="How is auth wired?",
-        repository_facts="- files: a.py",
-    )
-    assert_layer_order(exp)
-    assert_mode_isolation(exp)
-    ok("explore no review principles", "INDEPENDENT ADVISORY MODE" not in exp.text)
-    ok("explore no assessment pair", not ("## Assessment" in exp.text and "## Blind Spots" in exp.text))
-    ok("explore has facts", "a.py" in exp.text)
     raw = build_prompt(mode="raw", user_input="implement foo", raw=True)
     assert_raw_purity(raw)
     ok("raw is pure", raw.text == "implement foo")
@@ -418,15 +407,12 @@ def main() -> int:
     print("=== Mode capability policy ===")
     validate_matrix()
     ok("review readonly", access_policy_for("review") == "readonly")
-    ok("explore readonly", access_policy_for("explore") == "readonly")
     ok("delegate yolo", access_policy_for("delegate") == "yolo")
     ok("review-ask aliases review", access_policy_for("review-ask") == "readonly")
     rcaps = get_mode_capabilities("review")
     ok("review has diagnostic shell", rcaps.shell is True and rcaps.filesystem == "read")
     ok("review web on", rcaps.web is True)
     ok("review no steer", rcaps.steer is False)
-    ecaps = get_mode_capabilities("explore")
-    ok("explore does not claim unavailable shell", ecaps.shell is False)
     dcaps = get_mode_capabilities("delegate")
     ok("delegate write+shell", dcaps.filesystem == "write" and dcaps.shell is True)
     scaps = get_mode_capabilities("delegate-steerable")
@@ -436,8 +422,12 @@ def main() -> int:
         ok("unknown mode fails closed", False)
     except UnknownModeError:
         ok("unknown mode fails closed", True)
+    try:
+        access_policy_for("explore")
+        ok("removed explore mode fails closed", False)
+    except UnknownModeError:
+        ok("removed explore mode fails closed", True)
     assert_no_yolo_leak("review")
-    assert_no_yolo_leak("explore")
     ok("no yolo leak on readonly", True)
     # New readonly mode cannot appear without matrix entry → no silent YOLO
     try:

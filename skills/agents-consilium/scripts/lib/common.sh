@@ -24,7 +24,6 @@ EXIT_PARTIAL=2             # consensus: some agents failed, some succeeded
 EXIT_ALL_FAILED=3          # consensus: every queried agent failed
 EXIT_CONFIG_ERROR=4        # missing CLI, missing/invalid config, unknown role/id
 EXIT_USAGE=5               # bad CLI args: missing prompt, unknown flag
-EXIT_SOURCE_ERROR=6        # explore: unresolvable/blocked source, clone or ref failure
 
 # XML-escape stdin → stdout (&, <, >, ", ').
 xml_escape() {

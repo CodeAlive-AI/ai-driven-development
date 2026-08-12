@@ -1,7 +1,7 @@
 {
   "agents": {
     "codex": {
-      "enabled": true,
+      "enabled": false,
       "backend": "codex-cli",
       "model": "gpt-5.6-sol",
       "effort": "high",

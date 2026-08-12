@@ -91,7 +91,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
-| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code), single-agent **explore** (read-only context exploration of a local or remote repo, Grok 4.5 by default), and single-agent **delegate** (full YOLO, optionally steerable or detached, with `wait` / `watch` / `list` to block on, follow, or rediscover a run) via `scripts/consilium`. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only). Independent opinions, structured specialists, super/ultra judge pipelines |
+| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code) and single-agent **delegate** (full YOLO, steerable or detached, with `wait` / `watch` / `list` to block on, follow, or rediscover a run) via `scripts/consilium`. Stateful Grok 4.5 workers handle repository research; Codex Sol is an explicit second opinion for difficult spec verification or optimization planning. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only). Independent opinions, structured specialists, super/ultra judge pipelines |
 
 ### macOS & Windows system health (2)
 

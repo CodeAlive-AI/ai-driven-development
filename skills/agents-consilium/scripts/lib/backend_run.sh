@@ -3,13 +3,12 @@
 # Unified backend runner for agents-consilium v5.
 #
 # Usage:
-#   backend_run.sh --mode review|explore|delegate --agent-id <id> [options] ["prompt"]
+#   backend_run.sh --mode review|delegate --agent-id <id> [options] ["prompt"]
 #   backend_run.sh --mode review --agent-id codex --prompt-file path.txt
 #   echo "prompt" | backend_run.sh --mode review --agent-id codex
 #
 # Options:
-#   --mode review|explore|delegate
-#                            Required. review/explore = read-only; delegate = full YOLO.
+#   --mode review|delegate  Required. review = read-only; delegate = full YOLO.
 #   --agent-id <id>          Required. Exact config agent id.
 #   --role <role>            Override role from config.
 #   --prompt-file <path>     Raw prompt from file (implies CONSILIUM_RAW_PROMPT=1).
@@ -79,7 +78,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-[[ -n "$MODE" ]] || { echo "Error: --mode required (review|explore|delegate)" >&2; exit $EXIT_USAGE; }
+[[ -n "$MODE" ]] || { echo "Error: --mode required (review|delegate)" >&2; exit $EXIT_USAGE; }
 # Explicit mode→capability matrix (fail closed for unknown modes).
 # access_class is the coarse readonly|yolo switch; full matrix fields
 # (filesystem/shell/web/memory/subagents) also drive backend-specific argv
@@ -87,7 +86,7 @@ done
 MODE_CAPS_JSON="$(
     python3 "$LIB_DIR/mode_policy.py" "$MODE" --json 2>/dev/null
 )" || {
-    echo "Error: --mode must be a known Consilium mode (review|explore|delegate|…); got: $MODE" >&2
+    echo "Error: --mode must be a known Consilium mode (review|delegate|…); got: $MODE" >&2
     exit $EXIT_USAGE
 }
 ACCESS_POLICY="$(
@@ -457,32 +456,7 @@ build_cmd_grok() {
     # Mode capability fields memory/subagents/shell/filesystem/web drive argv
     # where Grok Build exposes matching flags.
     CMD=("$BIN")
-    if [[ "$MODE" == "explore" ]]; then
-        # Exploration may run over a repository nobody has vetted, so it keeps a
-        # read-only posture and removes the channels through which that
-        # repository could act rather than be read: no shell, no write tools, no
-        # subagents, no cross-session memory. --cwd points at a neutral parent
-        # for remote sources so the clone's own agent config is never discovered.
-        #
-        # Web search/fetch ARE granted: understanding a codebase routinely means
-        # reading the docs, RFCs, and upstream issues it is built against. The
-        # residual risk (repository text talking the model into fetching a URL)
-        # is handled in prompts/explore.txt, which forbids acting on in-repo
-        # instructions and forbids sending repository content to any URL the
-        # repository itself supplied.
-        CMD+=(--sandbox "${CONSILIUM_EXPLORE_SANDBOX:-read-only}")
-        if [[ "${MODE_CAP_WEB:-true}" == "true" ]]; then
-            CMD+=(--tools "read_file,grep,list_dir,web_search,web_fetch")
-        else
-            CMD+=(--tools "read_file,grep,list_dir")
-        fi
-        CMD+=(--disallowed-tools "search_replace,write,run_terminal_cmd,Agent")
-        # mode_policy: explore memory=false, subagents=false
-        CMD+=(--no-subagents --no-memory)
-        if [[ -n "${CONSILIUM_EXPLORE_CWD:-}" ]]; then
-            CMD+=(--cwd "$CONSILIUM_EXPLORE_CWD")
-        fi
-    elif [[ "$ACCESS_POLICY" == "readonly" ]]; then
+    if [[ "$ACCESS_POLICY" == "readonly" ]]; then
         # Kernel sandbox + strict tool allowlist (plan mode alone is NOT read-only).
         # The allowlist is exhaustive, so web tools must be named explicitly —
         # verified against Grok Build 0.2.112: without them the model reports it
@@ -622,9 +596,7 @@ run_streamed() {
         --progress
         --progress-id "$PROGRESS_ID"
     )
-    # Every mode may pick a style: review defaults to full previews, explore uses
-    # a content-free style so neither chain-of-thought nor the incrementally
-    # streamed answer body can reach stderr, and none silences the stream.
+    # Callers may choose full previews, content-free compact counters, or silence.
     if [[ -n "${CONSILIUM_PROGRESS_STYLE:-}" ]]; then
         norm_argv+=(--progress-style "$CONSILIUM_PROGRESS_STYLE")
     fi

@@ -5,11 +5,11 @@ Use review for independent opinions or defect finding. Review is always read-onl
 ## Ask
 
 ```bash
-scripts/consilium review ask "Should we use Postgres or SQLite?"
-scripts/consilium review ask --xml --prompt-file prompt.md
-scripts/consilium review ask -a codex,grok "Review this approach"
-scripts/consilium review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
-scripts/consilium review ask --progress compact -a codex,grok "Q"
+"$CONSILIUM" review ask "Should we use Postgres or SQLite?"
+"$CONSILIUM" review ask --xml --prompt-file prompt.md
+"$CONSILIUM" review ask -a codex,grok "Review this approach"
+"$CONSILIUM" review ask -a 'opencode-go-*' -x opencode-go-minimax "Q"
+"$CONSILIUM" review ask --progress compact -a codex,grok "Q"
 ```
 
 Each agent's answer is returned under its own heading.
@@ -27,12 +27,12 @@ files where relevant.
 ## Code review depths
 
 ```bash
-scripts/consilium review code path/to/file.py
-scripts/consilium review code --related config/app.yml --related tests/test_app.py path/to/file.py
-scripts/consilium review code --depth specialists --xml path/to/file.py
-git diff HEAD | scripts/consilium review code --diff
-scripts/consilium review code --depth super path/to/file.cs
-scripts/consilium review code --depth ultra --dry-run path/to/file.cs
+"$CONSILIUM" review code path/to/file.py
+"$CONSILIUM" review code --related config/app.yml --related tests/test_app.py path/to/file.py
+"$CONSILIUM" review code --depth specialists --xml path/to/file.py
+git diff HEAD | "$CONSILIUM" review code --diff
+"$CONSILIUM" review code --depth super path/to/file.cs
+"$CONSILIUM" review code --depth ultra --dry-run path/to/file.cs
 ```
 
 | Depth | Use when | Work performed |
@@ -72,7 +72,7 @@ Do not invoke Grok's `/review` slash command. Consilium owns review semantics.
 `--list-agents` shows configured profiles, not every model/effort combination. Select an exact profile and use a backend environment override when its model is right but its effort is not. Prompt wording such as “medium-depth review” does not change backend reasoning effort.
 
 ```bash
-CLAUDE_EFFORT=medium scripts/consilium review ask \
+CLAUDE_EFFORT=medium "$CONSILIUM" review ask \
   -a claude-fable --prompt-file prompt.md
 ```
 

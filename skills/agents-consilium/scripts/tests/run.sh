@@ -4,6 +4,7 @@ set -euo pipefail
 
 TESTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SCRIPTS_DIR="$(cd "$TESTS_DIR/.." && pwd)"
+SKILL_DIR="$(cd "$SCRIPTS_DIR/.." && pwd)"
 LIB_DIR="$SCRIPTS_DIR/lib"
 FAKES="$TESTS_DIR/fakes"
 FIX="$TESTS_DIR/fixtures"
@@ -79,10 +80,31 @@ assert_le() {
   fi
 }
 
+echo "=== Agent-facing entrypoint documentation ==="
+if grep -R -n --include='*.md' 'scripts/consilium' \
+    "$SKILL_DIR/SKILL.md" "$SKILL_DIR/references" >/dev/null; then
+  echo "  FAIL  agent-facing docs contain cwd-dependent scripts/consilium"
+  FAIL=$((FAIL+1))
+else
+  echo "  PASS  agent-facing docs use the resolved CONSILIUM entrypoint"
+  PASS=$((PASS+1))
+fi
+assert_contains "skill documents entrypoint verification" \
+  "$(cat "$SKILL_DIR/SKILL.md")" 'test -x "$CONSILIUM"'
+
 echo "=== CLI dispatch ==="
 out=$("$CONSILIUM" --help 2>&1) || true
 assert_contains "help mentions review" "$out" "review"
 assert_contains "help mentions delegate" "$out" "delegate"
+assert_not_contains "help omits removed explore mode" "$out" "consilium explore"
+
+set +e
+removed_explore_err=$("$CONSILIUM" explore "q" 2>&1 >/dev/null)
+rc=$?
+set -e
+assert_eq "removed explore command exits with usage error" "$rc" "5"
+assert_contains "removed explore command names supported modes" \
+  "$removed_explore_err" "expected review|delegate"
 
 out=$("$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "list-agents has grok" "$out" 'id="grok"'
@@ -90,6 +112,8 @@ assert_contains "list-agents has grok-build backend" "$out" 'backend="grok-build
 
 out=$(env -u CONSILIUM_CONFIG "$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "default config resolves from skill root" "$out" 'id="grok"'
+assert_contains "Codex Sol remains selectable but disabled by default" "$out" \
+  'id="codex" label="Codex GPT-5.6 Sol" backend="codex-cli" model="gpt-5.6-sol" role="analyst" enabled="false"'
 
 # Unknown command
 set +e
@@ -1530,9 +1554,6 @@ assert_contains "delegate help mentions steerable" "$help_out" "steerable"
 assert_contains "delegate help mentions steer" "$help_out" "steer"
 assert_contains "delegate help mentions status" "$help_out" "status"
 assert_contains "delegate help mentions cancel" "$help_out" "cancel"
-
-# shellcheck source=explore.sh
-source "$TESTS_DIR/explore.sh"
 
 # shellcheck source=progress.sh
 source "$TESTS_DIR/progress.sh"

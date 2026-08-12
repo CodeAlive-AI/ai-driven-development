@@ -26,7 +26,7 @@ Profiles live in `config.json`; set `CONSILIUM_CONFIG` to use another file.
 List effective profiles with:
 
 ```bash
-scripts/consilium --list-agents
+"$CONSILIUM" --list-agents
 ```
 
 Non-empty environment values override profile model/effort for one invocation:
@@ -42,8 +42,8 @@ Non-empty environment values override profile model/effort for one invocation:
 Prefer `--prompt-file`, stdin, or a single-quoted heredoc for prompts containing backticks, `$`, `!`, or quotes. Double-quoted positional prompts are shell-expanded and may accidentally execute substitutions or leave a backend waiting on stdin.
 
 ```bash
-scripts/consilium review ask --prompt-file prompt.md
-scripts/consilium review ask "$(cat <<'EOF'
+"$CONSILIUM" review ask --prompt-file prompt.md
+"$CONSILIUM" review ask "$(cat <<'EOF'
 Explain `foo` and $PATH handling.
 EOF
 )"
@@ -63,8 +63,6 @@ The shell-interpolation warning applies only to positional prompts that still co
 | `CONSILIUM_STEER_DIR` | Steerable registry; reuse the same value for every control command |
 | `CONSILIUM_MAX_PARALLEL` | Fan-out concurrency; `0` means unlimited/default |
 | `CONSILIUM_DEBUG_EVENTS*` | Opt-in bounded event tape and its path/record/byte limits |
-| `CONSILIUM_EXPLORE_ALLOW_LOCAL_REMOTE=1` | Permit `file://` sources for offline tests only |
-| `CONSILIUM_EXPLORE_ALLOW_INSECURE=1` | Permit plain HTTP clone URLs |
 | `GEMINI_API_KEY` | Gemini CLI authentication when required |
 
 Consilium imposes no execution deadline in any mode. Provider context/output

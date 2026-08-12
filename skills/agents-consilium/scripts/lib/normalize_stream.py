@@ -544,8 +544,8 @@ def main() -> int:
     ap.add_argument("--progress", action="store_true",
                     help="Emit compact semantic progress to stderr as events arrive")
     ap.add_argument("--progress-style", default="full", choices=["full", "compact", "none"],
-                    help="full: preview text/thought content (review, delegate). "
-                         "compact: counters only, never model content (explore). "
+                    help="full: preview text/thought content. "
+                         "compact: counters only, never model content. "
                          "none: no progress at all.")
     ap.add_argument("--progress-id", default="",
                     help="Identity used in progress lines only (defaults to --agent-id).")

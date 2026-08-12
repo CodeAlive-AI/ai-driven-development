@@ -2,7 +2,7 @@
   "_comment": "Example consilium config (v5). Copy over config.json or set CONSILIUM_CONFIG. JSON ignores _comment.",
   "agents": {
     "codex": {
-      "enabled": true,
+      "enabled": false,
       "backend": "codex-cli",
       "model": "gpt-5.6-sol",
       "effort": "high",

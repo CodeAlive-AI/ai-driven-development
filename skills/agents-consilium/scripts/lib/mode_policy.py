@@ -98,17 +98,6 @@ _MODE_MATRIX: Dict[str, ModeCapabilities] = {
         interrupt=False,
         access_class="readonly",
     ),
-    "explore": ModeCapabilities(
-        mode="explore",
-        filesystem="read",
-        shell=False,
-        web=True,  # docs/RFCs; prompt forbids acting on in-repo URLs
-        memory=False,
-        subagents=False,
-        steer=False,
-        interrupt=False,
-        access_class="readonly",
-    ),
     "delegate": ModeCapabilities(
         mode="delegate",
         filesystem="write",
@@ -241,9 +230,8 @@ def _main() -> int:
     if args.check:
         validate_matrix()
         # Explicit regression: inventing a readonly mode must not get yolo.
-        for m in ("review", "explore"):
-            assert_no_yolo_leak(m)
-            assert access_policy_for(m) == "readonly"
+        assert_no_yolo_leak("review")
+        assert access_policy_for("review") == "readonly"
         assert access_policy_for("delegate") == "yolo"
         print("ok")
         return 0
