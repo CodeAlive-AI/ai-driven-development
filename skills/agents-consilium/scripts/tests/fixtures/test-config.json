@@ -36,10 +36,18 @@
     "grok": {
       "enabled": true,
       "backend": "grok-build",
-      "model": "grok-4.5",
+      "model": "grok-4.6",
       "effort": "high",
       "role": "analyst",
       "label": "Grok Test"
+    },
+    "grok-fast": {
+      "enabled": false,
+      "backend": "grok-build",
+      "model": "grok-4.5",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok Fast Test"
     },
     "gemini-cli": {
       "enabled": false,

@@ -109,9 +109,15 @@ assert_contains "removed explore command names supported modes" \
 out=$("$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "list-agents has grok" "$out" 'id="grok"'
 assert_contains "list-agents has grok-build backend" "$out" 'backend="grok-build"'
+assert_contains "default grok profile uses Grok 4.6" "$out" \
+  'id="grok" label="Grok Test" backend="grok-build" model="grok-4.6" role="analyst" enabled="true"'
+assert_contains "Grok 4.5 remains selectable as fast context model" "$out" \
+  'id="grok-fast" label="Grok Fast Test" backend="grok-build" model="grok-4.5" role="analyst" enabled="false"'
 
 out=$(env -u CONSILIUM_CONFIG "$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "default config resolves from skill root" "$out" 'id="grok"'
+assert_contains "skill-root default grok profile uses Grok 4.6" "$out" \
+  'id="grok" label="Grok 4.6 (native)" backend="grok-build" model="grok-4.6" role="analyst" enabled="true"'
 assert_contains "Codex Sol remains selectable but disabled by default" "$out" \
   'id="codex" label="Codex GPT-5.6 Sol" backend="codex-cli" model="gpt-5.6-sol" role="analyst" enabled="false"'
 

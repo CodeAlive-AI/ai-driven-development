@@ -29,6 +29,7 @@ Use these unless the user asks for a different tradeoff:
 - High-risk or release-blocking review: `review code --depth super --progress compact`.
 - Use `specialists` only for a broader mid-cost review without an LLM judge. Use `ultra` only when the user explicitly prioritizes maximum coverage over cost and latency.
 - Repository research: `delegate -a grok` from the target repository root. Tell the worker whether the task is read-only, keep the default steerable session, and use `steer`/`wait` to continue incomplete work.
+- The `grok` profile is Grok 4.6 and is the default native Grok Build worker. Use the disabled-by-default `grok-fast` profile explicitly for fast context research with Grok 4.5.
 - Codex Sol is an explicit second opinion for difficult specification verification or optimization planning. Select it with `-a codex`; do not add it to routine research or the default review pool.
 
 Choose one review depth; do not run `basic`, `specialists`, `super`, and `ultra` sequentially. Do not call `--list-agents` routinely: enabled profiles are already the default pool for `review ask`, and code-review pass count is fixed by depth.

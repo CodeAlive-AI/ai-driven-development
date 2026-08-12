@@ -8,7 +8,7 @@ Most coding agents can only spawn copies of themselves or a small built-in model
 
 For example:
 
-- send repository research to a stateful Grok 4.5 worker that can be steered and continued;
+- send repository research to a stateful Grok 4.6 worker that can be steered and continued, with Grok 4.5 available as a fast context-research profile;
 - ask Claude Fable to produce an independent plan;
 - delegate an implementation to Codex, Claude, Grok, or OpenCode;
 - review the same change with several unrelated model families and compare what they find.
@@ -183,10 +183,18 @@ Agent profiles live in `config.json`. A profile chooses the harness, model, reas
     "grok": {
       "enabled": true,
       "backend": "grok-build",
+      "model": "grok-4.6",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok 4.6 (native, high)"
+    },
+    "grok-fast": {
+      "enabled": false,
+      "backend": "grok-build",
       "model": "grok-4.5",
       "effort": "high",
       "role": "analyst",
-      "label": "Grok 4.5 (native, high)"
+      "label": "Grok 4.5 (fast context research)"
     }
   }
 }

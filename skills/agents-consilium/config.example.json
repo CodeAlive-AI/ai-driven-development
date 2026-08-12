@@ -52,10 +52,18 @@
     "grok": {
       "enabled": true,
       "backend": "grok-build",
+      "model": "grok-4.6",
+      "effort": "high",
+      "role": "analyst",
+      "label": "Grok 4.6 (native, high)"
+    },
+    "grok-fast": {
+      "enabled": false,
+      "backend": "grok-build",
       "model": "grok-4.5",
       "effort": "high",
       "role": "analyst",
-      "label": "Grok 4.5 (native, high)"
+      "label": "Grok 4.5 (fast context research, disabled)"
     },
     "opencode-xai-grok45": {
       "enabled": false,
