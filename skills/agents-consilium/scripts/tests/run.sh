@@ -588,6 +588,32 @@ export CONSILIUM_FAKE_GROK_MODE=ok
 echo "=== Review ask with fakes (stdout/stderr split) ==="
 export CONSILIUM_RUN_DIR="$TMP/run-ask"
 mkdir -p "$CONSILIUM_RUN_DIR"
+
+# A generated prompt is not implicitly connected to a shell command. Make the
+# usage failure tell agent callers exactly how to transport it in the same
+# invocation, before any backend is selected or started.
+set +e
+"$CONSILIUM" review ask --progress compact -a claude-fable </dev/null \
+  >"$TMP/ask-missing-prompt.out" 2>"$TMP/ask-missing-prompt.err"
+missing_prompt_rc=$?
+set -e
+assert_eq "review ask without prompt exits 5" "$missing_prompt_rc" "5"
+assert_contains "missing prompt explains accepted transports" \
+  "$(cat "$TMP/ask-missing-prompt.err")" \
+  "pass it as a positional argument, pipe it to stdin, or use --prompt-file FILE"
+
+set +e
+printf '  \n\t\n' | "$CONSILIUM" review ask --progress compact -a claude-fable \
+  >"$TMP/ask-blank-prompt.out" 2>"$TMP/ask-blank-prompt.err"
+blank_prompt_rc=$?
+set -e
+assert_eq "review ask with blank stdin exits 5" "$blank_prompt_rc" "5"
+assert_contains "blank stdin explains accepted transports" \
+  "$(cat "$TMP/ask-blank-prompt.err")" \
+  "pass it as a positional argument, pipe it to stdin, or use --prompt-file FILE"
+assert_not_contains "blank stdin is not accepted as prompt transport" \
+  "$(cat "$TMP/ask-blank-prompt.err")" "using stdin as the prompt"
+
 set +e
 out=$("$CONSILIUM" review ask -a codex,grok --raw 2>"$TMP/ask.err" <<'EOF'
 What is 2+2?

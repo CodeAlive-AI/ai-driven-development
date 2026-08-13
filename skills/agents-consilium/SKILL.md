@@ -20,6 +20,17 @@ Resolve this from the loaded skill path, never from the caller's working directo
 root, or `PATH`. Do not execute the entrypoint as a relative path. Keep the shell in the
 repository the external agent should inspect or change.
 
+## Prompt transport is part of the launch
+
+Every `review ask` invocation must visibly transport a non-empty prompt in the
+same shell command: as the positional argument, through an explicit stdin pipe
+or heredoc, or with `--prompt-file FILE`. Never run a bare `review ask` command
+with only options and assume that prompt text from commentary, planning, or the
+surrounding agent context becomes stdin; shell execution has no such implicit
+connection. For a generated multiline repository review, prefer an explicit
+heredoc or prompt file so the complete problem statement and context seed are
+delivered atomically.
+
 ## Recommended review defaults
 
 Use these unless the user asks for a different tradeoff:
@@ -104,6 +115,15 @@ Keep the default steerable session. If the answer is incomplete, send one self-c
 ```bash
 # Independent opinions: all enabled profiles
 "$CONSILIUM" review ask --progress compact "Should we use Postgres or SQLite?"
+
+# Generated multiline prompt: stdin must be attached in this same invocation
+"$CONSILIUM" review ask --progress compact -a claude-fable <<'PROMPT'
+Review the proposed change and independently establish its full blast radius.
+<initial_relevant_files completeness="likely-partial">
+  <file path="src/example.ts">primary implementation</file>
+</initial_relevant_files>
+<context_seed_note>This seed is not an allowlist or scope boundary.</context_seed_note>
+PROMPT
 
 # Explicit profile selection only when requested
 "$CONSILIUM" review ask --progress compact \

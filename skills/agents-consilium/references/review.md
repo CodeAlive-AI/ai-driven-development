@@ -14,6 +14,12 @@ Use review for independent opinions or defect finding. Review is always read-onl
 
 Each agent's answer is returned under its own heading.
 
+The prompt transport must be present in the same shell invocation. Use a
+positional prompt, an explicit stdin pipe/heredoc, or `--prompt-file FILE`.
+Commentary and surrounding agent context are not implicitly connected to the
+command's stdin; a bare `review ask` with only options is always a usage error
+and starts no reviewer.
+
 For a repository-backed question, the calling agent must first do a short
 read-only triage and include an `<initial_relevant_files
 completeness="likely-partial">` block. List only paths actually identified and

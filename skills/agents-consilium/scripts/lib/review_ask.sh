@@ -112,14 +112,14 @@ STDIN_CONTENT=""
 if [[ ! -t 0 ]]; then
     STDIN_CONTENT=$(cat)
 fi
-if [[ -z "$PROMPT" && -n "$STDIN_CONTENT" ]]; then
+if [[ -z "$PROMPT" && -n "${STDIN_CONTENT//[[:space:]]/}" ]]; then
     PROMPT="$STDIN_CONTENT"
     STDIN_CONTENT=""
     PROMPT_SOURCE="stdin"
     progress_info "note" "using stdin as the prompt"
 fi
-if [[ -z "$PROMPT" ]]; then
-    echo -e "${RED}Error: No prompt provided${NC}" >&2
+if [[ -z "${PROMPT//[[:space:]]/}" ]]; then
+    echo -e "${RED}Error: No prompt provided; pass it as a positional argument, pipe it to stdin, or use --prompt-file FILE${NC}" >&2
     exit $EXIT_USAGE
 fi
 
