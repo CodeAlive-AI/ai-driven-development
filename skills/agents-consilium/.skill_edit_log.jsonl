@@ -1,1 +1,0 @@
-{"timestamp": "2026-08-11T18:48:53.102349+00:00", "sha_before": null, "sha_after": "2d4ee90a90ad0cf80d4e15ae7e4d55fb7e4eece0d3daee371731e254fddbe3f8", "body_lines": 148, "body_tokens": 2211, "delta_tokens": null, "reason": "resolve consilium entrypoint independently of caller cwd", "source": "from-bug", "ref": null, "user": "rodio"}

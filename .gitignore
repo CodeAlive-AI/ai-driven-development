@@ -45,6 +45,11 @@ env/
 # Logs
 *.log
 
+# Generated skill snapshots
+.skill_snapshots/
+.snapshots/
+.skill_edit_log.jsonl
+
 # .NET
 **/bin/
 **/obj/
