@@ -183,6 +183,50 @@ public IEnumerable<TimeSlot>                       Schedule   ( /* new */ );
 
 ---
 
+## Pattern: Expand-Contract (Database and Schema Migration)
+
+### Intent
+
+Change a live database schema (or any durable store contract) without a single-step destructive migration. Expand the schema, migrate readers and writers, then contract away the old shape — each stage separately deployable and reversible.
+
+### When to Use
+
+- Adding, renaming, splitting, or removing a column, table, field, or index on a production schema.
+- Any schema change where a mixed fleet of old and new application versions may run concurrently.
+- Backfills that must complete before the old representation can be removed.
+
+### Structure
+
+Three stages, each its own deployable unit:
+
+1. **Expand** — add the new representation (nullable column, new table, new field) without removing the old. Dual-write or backfill so both shapes hold the data.
+2. **Migrate readers** — point all readers (and eventually writers) at the new representation; verify with a migration rehearsal against a production-like copy.
+3. **Contract** — remove the old column, path, or dual-write once nothing depends on it.
+
+Never combine expand and contract into one destructive step on a live schema.
+
+### Walkthrough
+
+1. Ship the expand migration: new nullable column / table / field. Application still reads the old path; optionally dual-writes.
+2. Backfill historical rows; monitor dual-write consistency.
+3. Deploy readers that prefer the new field (with fallback if needed), then writers that only write the new field.
+4. Confirm no remaining readers of the old path (search, metrics, dual-write lag at zero).
+5. Ship the contract migration: drop the old column/path. Keep each step reversible until the contract is proven.
+
+### Benefits
+
+- Old and new application versions can coexist during rollout.
+- Each stage is a recovery point; a bad reader deploy rolls back without schema loss.
+- Backfill pressure is visible and measurable before the old shape disappears.
+
+### Considerations
+
+- Dual-write windows are temporary debt — record an owner and exit condition.
+- Rehearse against a production-like copy before the expand or contract that cannot be trivially undone.
+- Coordinate with Expand-Contract at the API layer when external clients also see the shape change.
+
+---
+
 ## Pattern Selection Guide
 
 | Situation | Recommended Pattern |
@@ -192,4 +236,5 @@ public IEnumerable<TimeSlot>                       Schedule   ( /* new */ );
 | Changing a single method signature | Method-Level Strangler |
 | Replacing one class with another | Class-Level Strangler |
 | Replacing a subsystem or legacy module | Strangler at architectural scale |
+| Changing a live database schema | Expand-Contract |
 | Removing a public API | Deprecate first, then Strangler-style removal at next major version |

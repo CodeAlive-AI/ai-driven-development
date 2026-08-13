@@ -72,6 +72,8 @@ End-to-end process for reviewing a pull request or a diff, grounded in the book'
 
 **Goal**: Verify each unit fits in a head.
 
+Measure, don't estimate: complexity/cycle/duplication commands in `../references/tooling/commands.md`.
+
 - [ ] Cyclomatic complexity > 15 anywhere, or lower complexity with opaque path interaction?
 - [ ] Any method mixes unrelated responsibilities, effects, or abstraction levels?
 - [ ] Too many unrelated values, mutable states, or dependencies interact at once?

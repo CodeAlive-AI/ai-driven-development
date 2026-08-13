@@ -7,6 +7,8 @@ description: Software-engineering heuristics based on Mark Seemann's Code That F
 
 Engineering heuristics for sustainable software, based on Mark Seemann's 2021 book and clearly labelled agent-era amendments.
 
+Code examples are C#-first; every rule and the tooling tables are language-neutral.
+
 ## Philosophy (Why This Skill Exists)
 
 Software development is principally a **design activity**, not construction. An agent may produce most of the text, but people still review, operate, extend, and own the resulting system. These heuristics make software sustainable: understandable, resistant to architectural erosion, and cheap to change after thousands of decisions.
@@ -38,6 +40,7 @@ See `references/foundations/` for more on sustainability, readability, and brain
 2. Read `guidelines.md` — it maps tasks and symptoms to specific reference files
 3. Load only the reference files relevant to the current task (progressive disclosure)
 4. Apply the rules; when in doubt, consult `references/practices-glossary/` for cross-references
+5. When a rule proves repeatedly useful in a repository, operationalize it (`workflows/operationalize-finding.md`) so it persists as a gate and in project agent instructions.
 
 ## Chapter Index
 
@@ -55,6 +58,7 @@ See `references/foundations/` for more on sustainability, readability, and brain
 | `references/troubleshooting/` | Debugging a defect; scientific method, rubber ducking, reproduce-as-test, bisection, non-deterministic defects |
 | `references/security/` | Threat modelling; STRIDE (spoofing, tampering, repudiation, info disclosure, DoS, elevation) |
 | `references/code-navigation/` | Onboarding to a code base; big picture, file organisation, cycles, property-based testing, behavioural code analysis |
+| `references/tooling/` | Executable measurement commands: complexity, cycles, duplication, dead code, hotspots, mutation testing |
 | `references/practices-glossary/` | Looking up a named book practice and its current status |
 
 ### ⚠️ Editorial amendments (NOT from the book)
@@ -75,5 +79,6 @@ Composite step-by-step processes live in `workflows/`:
 | Add a new feature from scratch | `workflows/add-feature-outside-in.md` |
 | Investigate and fix a defect | `workflows/debug-defect.md` |
 | Threat-model a new endpoint | `workflows/threat-model.md` |
+| Turn a recurring finding into an executable gate and persist it in project memory | `workflows/operationalize-finding.md` |
 
-See `guidelines.md` for the full routing layer (task → file, symptom → file, decision tree).
+See `guidelines.md` for the full routing layer (task → file, symptom → file).

@@ -87,7 +87,7 @@ Use the strictest practical checks that produce useful signal. Disable rules tha
 
 ### 8. Use Devil's Advocate to Decide When You Need Another Test
 
-After a test passes, ask: can I write a deliberately stupid implementation that still passes? If yes, that's a signal to add a test case — often just another `[InlineData]` line — that would reject the stupid version. If no, your test set is strong enough for now.
+After a test passes, ask: can I write a deliberately stupid implementation that still passes? If yes, that's a signal to add a test case — often just another `[InlineData]` line — that would reject the stupid version. If no, your test set is strong enough for now. To automate this heuristic on a touched module, run mutation testing (Stryker, mutmut, PIT, cargo-mutants — see `../tooling/commands.md`); surviving mutants are the missing test cases.
 
 ### 9. Switch from Devil's Advocate to Red-Green-Refactor Once Structure Exists
 
@@ -136,4 +136,4 @@ If either is high, add the test. Any defect that reaches production has tautolog
 
 ## Editorial Amendment (2026) — Not from the Book
 
-An agent can write implementation and tests from the same mistaken interpretation. For material behavior, pair self-authored tests with an independent oracle and never weaken verification merely to get green output. See `../agent-native/verification-loops.md`.
+Pairing self-authored tests with an independent oracle and never weakening verification are covered canonically in `../agent-native/verification-loops.md`.

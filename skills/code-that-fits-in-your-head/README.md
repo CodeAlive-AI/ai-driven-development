@@ -19,9 +19,11 @@ Large tasks are not rejected because they are large. Agents can successfully imp
 
 ## How It Works
 
-`SKILL.md` contains the trigger description and top-level index. `guidelines.md` is the routing layer: it maps tasks, symptoms, code elements, and named practices to the smallest useful reference files.
+`SKILL.md` contains the trigger description and top-level index. `guidelines.md` is the routing layer: it maps tasks, symptoms, and named practices to the smallest useful reference files.
 
-The skill uses progressive disclosure. Load one primary file and at most one or two secondary files for the current task instead of reading the whole skill.
+Code examples are C#-first; every rule and the tooling tables are language-neutral.
+
+The skill uses progressive disclosure. Load one primary file and at most one or two secondary files for the current task instead of reading the whole skill. When a rule proves repeatedly useful in a repository, operationalize it (`workflows/operationalize-finding.md`) so it persists as a gate and in project agent instructions.
 
 ## Structure
 
@@ -30,9 +32,10 @@ SKILL.md                 # Trigger, philosophy, chapter index
 guidelines.md            # Task/symptom/practice routing
 workflows/               # Step-by-step workflows for common engineering tasks
 references/              # Focused reference packs by theme
+references/tooling/      # Executable measurement commands (complexity, cycles, dead code, …)
 ```
 
-Core themes include decomposition, encapsulation, API design, outside-in TDD, separation of concerns, teamwork and Git discipline, software evolution, troubleshooting, and security.
+Core themes include decomposition, encapsulation, API design, outside-in TDD, separation of concerns, teamwork and Git discipline, software evolution, troubleshooting, security, and measurement tooling. Workflows cover review, outside-in features, debugging, threat modelling, and operationalizing findings into gates.
 
 ## Source Boundaries
 

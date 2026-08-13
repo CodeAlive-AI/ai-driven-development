@@ -1,78 +1,58 @@
 # STRIDE Threat-Model Checklist
 
-Use this when adding a new endpoint, feature, or service. Walk every STRIDE letter. For each threat, answer three questions: did we consider it, what is the mitigation, and does the mitigation live in code or in infra?
-
-## Before You Start
-
-- [ ] I can describe the feature in one sentence (what it does, who calls it, what data it touches).
-- [ ] I have identified the sensitive data in scope: PII, credentials, money, capability URLs.
-- [ ] I know whether the caller is authenticated and, if so, what identity provider issues the token.
-- [ ] I have a stakeholder I can ask if a mitigation is business-acceptable.
+Use this when adding a new endpoint, feature, or service. Walk every STRIDE letter. For each threat, answer: did we consider it, what is the mitigation, and does it live in code or infra? Process steps live in `workflows/threat-model.md`.
 
 ## S - Spoofing
 
-- [ ] Did we consider whether a caller could claim a false identity?
 - [ ] Is authentication required? If not, is that an explicit, documented decision?
-- [ ] Are we using an established identity provider (OAuth / OIDC / JWT) rather than a hand-rolled password check?
-- [ ] Is token validation complete (signature, issuer, audience, expiry)?
-- [ ] Is there an integration test that unauthenticated calls get `401`?
+- [ ] Established identity provider (OAuth / OIDC / JWT), not a hand-rolled password check?
+- [ ] Token validation complete (signature, issuer, audience, expiry)?
+- [ ] Integration test: unauthenticated calls get `401`?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 
 ## T - Tampering
 
-- [ ] Did we consider whether data in transit could be modified?
-- [ ] Is HTTPS mandatory for this endpoint (no plaintext fallback)?
-- [ ] Did we consider whether data at rest could be modified by an unauthorised party?
-- [ ] Are all SQL queries parameterised (no string concatenation of user input)?
-- [ ] Do we re-validate every client-supplied value on the server (no blind trust in request bodies)?
-- [ ] If resource URLs are capability tokens, are the IDs unguessable (GUIDs / 128-bit)?
+- [ ] HTTPS mandatory (no plaintext fallback)?
+- [ ] All SQL queries parameterised (no string concatenation of user input)?
+- [ ] Server re-validates every client-supplied value (no blind trust in request bodies)?
+- [ ] If resource URLs are capability tokens, are IDs unguessable (GUIDs / 128-bit)?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 
 ## R - Repudiation
 
-- [ ] Did we consider whether a user could later deny performing an action here?
-- [ ] Does every state-changing operation write an audit log entry (who, what, when, before/after)?
-- [ ] Is the caller's identity actually attributable in the log (not just "anonymous")?
-- [ ] Are audit logs append-only and shipped to a store the service cannot rewrite?
-- [ ] If the action carries real-world consequences (payment, contract), do we need a stronger signal (signed submission, pre-authorisation)?
-- [ ] Have we balanced friction against UX with a stakeholder?
+- [ ] Every state-changing operation writes an audit log (who, what, when, before/after)?
+- [ ] Caller's identity attributable in the log (not just "anonymous")?
+- [ ] Audit logs append-only / shipped to a store the service cannot rewrite?
+- [ ] Real-world consequences (payment, contract) → stronger signal needed (signed submission, pre-auth)?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 
 ## I - Information Disclosure
 
-- [ ] Did we inventory what the response contains? Is any of it PII, credentials, financial, or capability data?
-- [ ] Is the response the minimum projection the caller needs (no extra fields "just in case")?
-- [ ] Is authentication + authorisation required for PII or sensitive endpoints? Integration test covering `403` for wrong-role callers?
-- [ ] Is HTTPS mandatory to prevent MITM reads?
-- [ ] Have we confirmed that secrets (passwords, tokens, API keys, raw JWTs) never get logged?
-- [ ] Have we marked PII fields explicitly and applied retention/encryption rules?
-- [ ] Are sensitive URLs kept out of logs, referer headers, and error messages?
+- [ ] Response is the minimum projection the caller needs (no extra PII "just in case")?
+- [ ] Authn + authz required for PII/sensitive endpoints (`403` test for wrong-role)?
+- [ ] Secrets (passwords, tokens, API keys, raw JWTs) never logged?
+- [ ] Sensitive URLs kept out of logs, referer headers, and error messages?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 
 ## D - Denial of Service
 
-- [ ] Did we consider what happens under 10x, 100x, or malicious traffic?
-- [ ] Is there a rate limit on this endpoint (per IP, per token, or per account)?
-- [ ] Does every outbound call (DB, HTTP, queue) have a bounded timeout?
-- [ ] Is there a maximum payload size? A maximum array length for bulk operations?
-- [ ] For spike workloads, have we considered a queue + materialised view architecture?
-- [ ] Is the platform/runtime patched (so we are not carrying unfixed platform-level DoS bugs)?
-- [ ] For fully distributed DoS: have we raised this with IT / the infra team?
+- [ ] Rate limit on this endpoint (per IP, per token, or per account)?
+- [ ] Every outbound call (DB, HTTP, queue) has a bounded timeout?
+- [ ] Maximum payload size / maximum array length for bulk operations?
+- [ ] Fully distributed DoS raised with IT / infra when applicable?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 
 ## E - Elevation of Privilege
 
-- [ ] Did we consider whether a regular user could acquire permissions they were not granted?
-- [ ] Does this service run with the minimum privileges it needs (non-root / non-admin DB user)?
-- [ ] Are authentication and authorisation separate, explicit steps?
-- [ ] Have we closed SQL injection paths (see Tampering)?
-- [ ] Are dangerous database features (e.g. `xp_cmdshell`) disabled?
-- [ ] If a request carries a role/scope claim, is it read only from a signed, validated token - never from a body field or header the client controls?
+- [ ] Service runs with minimum privileges (non-root / non-admin DB user)?
+- [ ] Authentication and authorisation are separate, explicit steps?
+- [ ] Role/scope claims read only from a signed, validated token — never from body/header the client controls?
+- [ ] Dangerous database features (e.g. `xp_cmdshell`) disabled; SQL injection paths closed?
 - [ ] **Mitigation:** ______________________________________
 - [ ] **Lives in:** [ ] code  [ ] infra  [ ] both
 

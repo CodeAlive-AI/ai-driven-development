@@ -67,6 +67,31 @@ Agents can produce large changes quickly. Artificially slowing generation is not
 - Prefer written, versioned rationale over transient conversation for important decisions.
 - Keep terminology consistent across code, tests, documentation, and product language.
 
+## Default Thresholds (unless project policy overrides)
+
+These are defaults to act on. A repository may override them; when it does, record the override in project agent instructions (`CLAUDE.md` / `AGENTS.md`) so every session uses the same numbers. Measurement commands live in `../tooling/commands.md`.
+
+| Signal | Default |
+|--------|---------|
+| Cyclomatic complexity review trigger | 15 (review above this; project may set stricter) |
+| Inner-loop tests for the touched behaviour | Seconds, not minutes (project-configurable; no universal stopwatch) |
+| Integration with mainline | Integrate/rebase against mainline at least daily when others change the same area |
+| Before writing a new helper | Search for an existing implementation (`rg` by domain term) |
+
+## Recording Debt
+
+Every deliberate compromise gets a greppable marker at the site:
+
+```text
+TODO(owner: X, exit: <condition or date>, ref: <issue-link>)
+```
+
+Or the repository's tracker equivalent with the same three fields (owner, exit condition, reference).
+
+- A TODO without owner **and** exit condition is a review blocker.
+- Sweep markers when touching a file (Boy Scout Rule): close those whose exit condition is met; re-home or escalate the rest.
+- Temporary debt without a marker becomes invisible default — see Core Rule 5.
+
 ## Exceptions
 
 - **Exploratory spike**: readability may be relaxed only when the spike is isolated and will be discarded or deliberately rewritten.

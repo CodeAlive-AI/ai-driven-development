@@ -1,6 +1,6 @@
 # Decomposition Smells
 
-> **Source note:** D1–D7 derive from the book theme; system-wide sprawl and current thresholds are 2026 editorial adaptations.
+> **Source note:** D1–D7 derive from the book theme; D8 (system-wide sprawl), D9 (orphaned generated code), and current thresholds are 2026 editorial adaptations.
 
 Code smells that signal a block needs to be decomposed, with how to detect and fix each. Use during code review and when responding to "this code feels off — what's wrong?"
 
@@ -12,7 +12,7 @@ Code smells that signal a block needs to be decomposed, with how to detect and f
 
 **How to detect**:
 - Count: start at 1, add 1 for every `if`, `for`, `foreach`, `while`, `do`, `case`, and `??`.
-- Run Visual Studio's built-in metrics calculator (or equivalent).
+- Run a complexity tool (`lizard -C 15`, `radon`, ESLint `complexity`, Roslyn CA1502) — see `../tooling/commands.md`.
 - Use the project's configured metric when it has one; otherwise use 15 as a review trigger.
 
 **Why it's bad**:
@@ -197,6 +197,7 @@ internal bool IsValid
 - Search for equivalent rules or abstractions before adding another.
 - Review change history for files repeatedly modified together.
 - Identify flags, adapters, and parallel implementations without a removal condition.
+- Cycle detection, hotspot, and change-coupling commands: `../tooling/commands.md`.
 
 **Why it's bad**:
 - Local method metrics can stay green while the architecture becomes a Big Ball of Mud.
@@ -207,6 +208,26 @@ internal bool IsValid
 - Consolidate duplicated rules.
 - Complete or remove stale migration paths.
 - Add an architecture check when the constraint is stable and mechanically expressible.
+
+---
+
+## D9: Orphaned Generated Code
+
+**What it is**: Unused helpers, exports, parallel implementations, and stale scaffolding left behind by abandoned implementation attempts. Agents produce these at high rate.
+
+**How to detect**:
+- Dead-code tools per ecosystem — see `../tooling/commands.md` (`knip`, `vulture`, Roslyn unused-member rules, `cargo-udeps`, etc.).
+- For a single symbol: `rg 'SymbolName'` returning only the definition means it is dead.
+- Parallel implementations: two modules that claim the same responsibility, only one of which is wired in.
+
+**Why it's bad**:
+- Inflates the codebase readers and tools must process.
+- Duplicates rules and invites divergent edits to the wrong copy.
+- Hides the real ownership boundary under abandoned scaffolding.
+
+**How to fix**:
+- Delete — deletion is a feature.
+- If kept deliberately, it needs an owner and exit condition (see `foundations/rules.md`, Recording Debt).
 
 ---
 
@@ -222,3 +243,4 @@ internal bool IsValid
 | D6 | Nested side-effect Query | Predicate-shaped signature that secretly writes |
 | D7 | Low-cohesion block | Section uses no class fields |
 | D8 | System-wide sprawl | Cycles, duplicated rules, broad change surface, stale migration paths |
+| D9 | Orphaned generated code | Unused helpers/exports; `rg` hits only the definition |

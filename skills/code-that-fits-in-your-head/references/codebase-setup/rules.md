@@ -99,9 +99,4 @@ When these rules may be relaxed:
 
 ## Editorial Amendment (2026) — Not from the Book
 
-For agent-authored codebases:
-
-- Commit toolchain versions and dependency lockfiles where the ecosystem supports them.
-- Verify dependency provenance before adding a package; see `../agent-native/hallucination-debugging.md`.
-- Never weaken tests, warnings, analysers, permissions, or CI merely to make generated code pass; see `../agent-native/verification-loops.md`.
-- Prefer hermetic or reproducible environments where practical, especially for migrations and generated artifacts.
+Commit toolchain versions and lockfiles; prefer reproducible environments. Dependency provenance and gate integrity are canonical in `../agent-native/hallucination-debugging.md` and `../agent-native/verification-loops.md`.

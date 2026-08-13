@@ -6,6 +6,7 @@ Build a new feature from the outside (HTTP / CLI boundary) inward to the domain,
 
 - [When to Use](#when-to-use)
 - [Prerequisites](#prerequisites)
+- [Step 0: Choose the Loop Granularity](#step-0-choose-the-loop-granularity)
 - [Step 1: Clarify the Boundary](#step-1-clarify-the-boundary)
 - [Step 2: Write the Boundary Test First](#step-2-write-the-boundary-test-first)
 - [Step 3: Make the Boundary Test Pass with the Thinnest Possible Slice](#step-3-make-the-boundary-test-pass-with-the-thinnest-possible-slice)
@@ -39,6 +40,27 @@ For large features or migrations, define the target architecture, dependency dir
 ---
 
 ## Workflow Steps
+
+### Step 0: Choose the Loop Granularity
+
+**Goal**: Resolve how fine-grained the red-green loop should be for *this* change — not every change needs fake-it theatre.
+
+- [ ] Prefer the **fine-grained** fake-it / triangulate loop (Steps 3–4 as written) when:
+  - requirements are ambiguous,
+  - the domain is unfamiliar, or
+  - the oracle is weak (few executable constraints).
+  The micro-loop exists to *discover* the specification.
+- [ ] Prefer **direct implementation with coherent checkpoints** when:
+  - the contract is explicit, and
+  - executable constraints (types, schemas, acceptance tests) are strong.
+  Write the full implementation, verify at coherent checkpoints (see `../references/agent-native/verification-loops.md`), and do **not** perform fake-it theatre for a fully specified change.
+- [ ] Record the choice briefly (fine-grained vs checkpointed) so review knows which loop you ran.
+
+**Ask**: "Am I discovering the spec, or executing a known one?"
+
+**Reference**: `../references/agent-native/verification-loops.md`, `../references/outside-in-tdd/rules.md`
+
+---
 
 ### Step 1: Clarify the Boundary
 
@@ -173,10 +195,11 @@ For large features or migrations, define the target architecture, dependency dir
 ## Quick Checklist
 
 ```
+[ ] Step 0: Loop granularity chosen (fine-grained discovery vs checkpointed direct)
 [ ] Step 1: Boundary identified
 [ ] Step 2: Boundary test fails
-[ ] Step 3: Thinnest slice makes it pass
-[ ] Step 4: Triangulated with Devil's Advocate
+[ ] Step 3: Thinnest slice makes it pass (if fine-grained)
+[ ] Step 4: Triangulated with Devil's Advocate (if fine-grained)
 [ ] Step 5: Domain types with invariants
 [ ] Step 6: Domain unit-tested
 [ ] Step 7: Decomposition OK
