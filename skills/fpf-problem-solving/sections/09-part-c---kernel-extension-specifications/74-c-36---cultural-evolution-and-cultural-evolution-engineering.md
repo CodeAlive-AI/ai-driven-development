@@ -18,7 +18,7 @@ Typical first-use situations:
 - an engineering group treats its product family, toolchain, platform family, research program, or AI-agent framework as an evolving set of variants rather than one fixed system;
 - a scientific, medical, pedagogical, engineering, music, dance, organizational, or AI-agent discipline is changing through related methods, work products, training forms, memory epistemes, recognition regimes, and selected variants;
 - a music or dance steward needs to compare style, genre, technique, scene, canon, platform, or tradition labels without assuming that the label names one root kind;
-- a project lead wants an intervention that changes generation, transmission, selection, recognition, memory, method-family, work-family, role-assignment, mediation, architecture, measurement, or refresh relations.
+- a project lead wants an intervention that changes generation, transmission, selection, recognition, memory, method-family, work-family, system-role-assignment, mediation, architecture, measurement, or refresh relations.
 
 #### C.36:0.1 - What Goes Wrong If Missed
 
@@ -26,7 +26,7 @@ The team treats culture as shared vocabulary, treats style as a genre tree, trea
 
 #### C.36:0.2 - What This Buys
 
-The practitioner gets one small cultural-evolution case that names the collective holons, role assignments, work families, method families, canon or memory epistemes, recognition and selection regimes, mediation systems or architectures, variant sets, term bridges, current intervention, measurement, and refresh relation. After that, the project can apply the direct governing FPF pattern for the next governed use.
+The practitioner gets one small cultural-evolution case that names the collective holons, exact local system-role kinds and any obtaining assignments that matter, work families, method families, canon or memory epistemes, recognition and selection regimes, mediation systems or architectures, variant sets, term bridges, current intervention, measurement, and refresh relation. After that, the project can apply the subject pattern for the next claim.
 
 #### C.36:0.3 - First Useful Move
 
@@ -37,8 +37,12 @@ CulturalEvolutionCaseCard@Context:
   CaseRef:
   BoundedContext:
   CollectiveHolonRefs:
-  RoleValueRefs?:
-  RoleAssignmentRefs?:
+  RoleWordRecoveryRefs?: E.10.ROLE results for every role-like source label used by the case
+  DirectParticipationOrPositionRelationRefs?: obtaining direct relations when a label resolves to a participant or organization or representation position
+  SystemRoleKindRefs?: U.KindRef, each resolving to one exact local system-role kind
+  SystemRoleClassificationJudgmentRefs?: U.RelationRef, each resolving a separate judgment about an admitted System
+  SystemRoleAssignmentSpeciesRefs?: U.RelationKindRef, each resolving to one directly declared species under U.SystemRoleAssignment
+  SystemRoleAssignmentOccurrenceRefs?: U.RelationRef, each resolving to one obtaining occurrence of a cited species
   WorkFamilyRefs:
   MethodFamilyRefs:
   MethodRelationStructureRefs?:
@@ -74,7 +78,7 @@ The card is optional and thin. It is not a root U-kind, lifecycle step, evidence
 
 Many current projects no longer develop one isolated object. They shape evolving sets, for example product families, methods, research directions, medical and pedagogical practices, AI-agent frameworks, artistic styles, engineering traditions, canons, archives, frontiers, and recognition regimes. The project often generates variants cheaply, while the hard work shifts to the relations that determine what is produced, recognized, retained, selected, used, changed, or kept current. That work can include, for example, problem production, characterization, archive stewardship, comparison, selected-set result declaration, actual publication, local choice, performed Work, effect measurement, and refresh.
 
-Cultural evolution is current when the changing set is collective-holon or discipline-facing: admitted holder Systems may perform independently identified dated Work under exact obtaining `U.RoleAssignment` occurrences and F.6 attribution, and those Work occurrences may enact exact Methods; memory or canon epistemes preserve what can be recognized and transmitted; recognition, selection, comparison, platform mediation, or algorithmic mediation can affect which variants survive or spread; and method families can evolve. A role value, assignment, Work occurrence, Method, effect claim, and family description remain different objects.
+Cultural evolution is current when the changing set is collective-holon or discipline-facing: admitted Systems may perform independently identified dated Work; those Work occurrences enact exact Methods; memory or canon epistemes preserve what can be recognized and transmitted; recognition, selection, comparison, platform mediation, or algorithmic mediation can affect which variants survive or spread; and method families can evolve. Keep all facts required by A.15.1, A.2.1, and F.6 recoverable for each Work occurrence. A local system-role kind, separate System-classification judgment, assignment species, assignment occurrence, Work occurrence, Method, effect claim, responsibility relation, and family description remain different objects.
 
 This pattern gives FPF a first-use cultural-evolution object without adding a new top-level part or a root ontology of culture. The same pattern can serve engineering product families, scientific research programs, medical disciplines, pedagogy, music styles, dance styles, organizational cultures, and AI-agent framework evolution because it starts from values governed by existing FPF patterns rather than from domain labels.
 
@@ -84,7 +88,7 @@ Culture, style, tradition, genre, scene, practice, platform, regime, technique, 
 
 - a method family or method relation structure;
 - a work family or family of performed works;
-- a role value or role assignment;
+- an exact local system-role kind, its classification judgment, or a separately obtaining system-role-assignment occurrence;
 - a discipline or collective holon;
 - a canon or memory episteme;
 - a recognition, selection, measurement, or visibility relation;
@@ -92,7 +96,7 @@ Culture, style, tradition, genre, scene, practice, platform, regime, technique, 
 - an archive, front, current pool, selected set, lineage, or edition set;
 - a publication label or cross-context term bridge.
 
-If the project accepts the word as ontology, FPF grows a second ontology beside method, work, role, discipline, episteme, architecture, selection, publication, and refresh. If the project hides the case as an example inside open-ended search, the cultural-evolution question becomes invisible and the first useful move is lost.
+If the project accepts the word as ontology, FPF grows a second ontology beside method, Work, system-role kind and assignment, discipline, episteme, architecture, selection, publication, and refresh. If the project hides the case as an example inside open-ended search, the cultural-evolution question becomes invisible and the first useful move is lost.
 
 ### C.36:3 - Forces
 
@@ -101,7 +105,7 @@ If the project accepts the word as ontology, FPF grows a second ontology beside 
 | Domain recognizability | Music, dance, medicine, science, engineering, and organizations need familiar words such as style, tradition, technique, school, canon, platform, and regime. |
 | Ontological parsimony | Those words often name slot positions or bridges over existing FPF values rather than new root kinds. |
 | Variant-set usefulness | Open-ended search, archives, fronts, pools, and selected sets help keep evolving alternatives visible. |
-| Cultural-evolution specificity | Variant generation and retention alone do not name transmission, recognition, memory, canon, role assignment, method-family evolution, or mediation. |
+| Cultural-evolution specificity | Variant generation and retention alone do not name transmission, recognition, memory, canon, system-role assignment, method-family evolution, or mediation. |
 | Intervention value | A project needs to change something: a generation relation, transmission relation, recognition relation, selection relation, memory relation, method family, work family, mediation architecture, measurement relation, work plan, performed work, or refresh relation. |
 | Didactic economy | The first-use pattern must be readable without becoming a cultural-evolution textbook or a list of every possible overread. |
 
@@ -109,9 +113,9 @@ If the project accepts the word as ontology, FPF grows a second ontology beside 
 
 Recover the cultural-evolution case first, then identify the governing FPF pattern for each current value.
 
-A cultural-evolution case is a collective-holon and discipline-facing situation in which admitted Systems may perform exact dated Work under exact obtaining role assignments, those Work occurrences may enact exact Methods, and separately identified work and method families may organize comparison, while memory or canon epistemes, recognition and selection regimes, mediation systems or architectures, measurement or visibility relations, and publication forms preserve, transmit, select, suppress, or refresh variants. The case card records the constellation without making a family, assignment, Method, episteme, or selected structure act.
+A cultural-evolution case is a collective-holon and discipline-facing situation. Admitted Systems may perform independently identified dated Work, and those Work occurrences may enact exact Methods. Separately identified work and method families may organize comparison. Memory or canon epistemes, recognition and selection regimes, mediation systems or architectures, measurement or visibility relations, and publication forms preserve, transmit, select, suppress, or refresh variants. Keep all facts required by A.15.1, A.2.1, and F.6 recoverable for each Work occurrence. The case card records the constellation without making a family, assignment, Method, episteme, or selected structure act.
 
-Cultural-evolution engineering proposes or performs deliberate intervention concerning one or more of those relations. The intended intervention may target generation, transmission, selection, recognition, memory, method-family, work-family, role-assignment, mediation, architecture, work-plan, performed-work, measurement, or refresh relations. A card or intention establishes none of the performed Work, actual transformation, effect, measurement, or selected structure; each positive claim needs its direct governor.
+Cultural-evolution engineering proposes or performs deliberate intervention concerning one or more of those relations. The intended intervention may target generation, transmission, selection, recognition, memory, method-family, work-family, system-role-assignment, mediation, architecture, work-plan, performed-Work, measurement, or refresh relations. A card or intention establishes none of the performed Work, actual transformation, effect, measurement, selected structure, responsibility, or authority; each positive claim needs its direct predicate or the exact missing-governor result.
 
 Keep three record forms available:
 
@@ -144,7 +148,7 @@ For music and dance, a label such as `prog`, `post-prog`, `contemporary`, `hip-h
 
 #### C.36:4.2 - Intervention Card
 
-Use an intervention card when one project proposes or performs a deliberate intervention concerning part of the cultural-evolution case. If actual performance or effect is claimed, name the exact performer System, obtaining role assignment, dated Work, F.6 attribution, actual change, and direct Work-to-change or effect claim that make that branch true.
+Use an intervention card when one project proposes or performs a deliberate intervention concerning part of the cultural-evolution case. Keep proposal and performance separate. If actual performance is claimed, name the `U.Work` occurrence and keep all facts required by A.15.1, A.2.1, and F.6 recoverable; add actual change and a direct Work-to-change relation only when each independently obtains. If only an effect is claimed, use its own direct predicate and participants without manufacturing a performer, assignment, or Work. Recover unresolved claim-bearing *role* wording through `E.10.ROLE`; keep a local system-role kind and any separate System-classification judgment independently optional.
 
 ```text
 CulturalEvolutionInterventionCard@Project:
@@ -156,7 +160,8 @@ CulturalEvolutionInterventionCard@Project:
   TargetedRelation:
   AffectedMethodFamilyRefs?:
   AffectedWorkFamilyRefs?:
-  AffectedRoleAssignmentRefs?:
+  AffectedAssignmentSpeciesRefs?: U.RelationKindRef, each constrained under U.SystemRoleAssignment
+  AffectedAssignmentOccurrenceRefs?: U.RelationRef, each constrained to U.SystemRoleAssignment and paired with its species
   AffectedCanonOrMemoryEpistemeRefs?:
   AffectedSelectionOrRecognitionRegimeRefs?:
   AffectedMediationSystemOrArchitectureRefs?:
@@ -164,10 +169,11 @@ CulturalEvolutionInterventionCard@Project:
   TransformationFlowStructureRef?: exact independently selected E.18 TransformationFlowStructure
   P2WCarryThroughRef?:
   WorkPlanRef?:
-  InterventionPerformerSystemRef?:
-  InterventionRoleAssignmentRef?:
-  PerformedInterventionWorkOccurrenceRef?: U.EntityRef constrained to one independently admitted U.Work
-  InterventionWorkAttributionRef?: U.RelationRef constrained to the exact F.6 performedUnderAssignment occurrence
+  InterventionSystemRoleKindRef?: U.KindRef resolving to one exact local system-role kind
+  InterventionSystemRoleClassificationJudgmentRef?: U.RelationRef
+  InterventionAssignmentSpeciesRef?: U.RelationKindRef constrained under U.SystemRoleAssignment
+  InterventionAssignmentOccurrenceRef?: U.RelationRef constrained to U.SystemRoleAssignment
+  PerformedInterventionWorkRef?: U.EntityRef constrained to U.Work
   ActualTransformationRefs?:
   WorkToTransformationOrEffectClaimRefs?:
   MeasurementRefs?:
@@ -177,9 +183,11 @@ CulturalEvolutionInterventionCard@Project:
 
 Here `@Project` is a compatibility and retrieval cue only. It establishes no project entity, composite-work identity, context, authority, viewpoint, or parthood. When the intervention card is genuinely used in one actual project, `ProjectWorkOccurrenceRef` identifies the exact composite `U.Work` and `InterventionCardProjectUseRelationRef` identifies the direct relation by which that exact project Work uses the card. The suffix or either reference alone establishes no project locality. The intended intervention, card, and composite project Work remain separately identifiable.
 
-When performed intervention Work is current, `PerformedInterventionWorkOccurrenceRef` identifies one independently admitted dated `U.Work`; the performer System, exact obtaining assignment, F.6 attribution, enacted Method, extent, and containing System remain governed by A.15.1, A.2.1, and F.6. `ActualTransformationRefs` may cite only exact A.3.4 bounded changes. `TransformationFlowStructureRef` instead cites one independently selected E.18/A.22 structure; adjacency or membership in it proves neither actual change nor Work-to-change. Any positive link from intervention Work to an actual transformation or other effect must cite its exact direct predicate, an admitted A.6.RCD local claim, or the relevant A.15.PROD branch; otherwise return the exact `missing-governor`. Measurement refs and effect claims remain separate: observing a value neither creates nor proves the effect.
+When performed intervention Work is current, `PerformedInterventionWorkRef` names the independently identified `U.Work` occurrence. All facts required by A.15.1, A.2.1, and F.6 remain recoverable. A short card may omit only an unused assignment identifier. The local system-role kind and any System-classification judgment remain separate optional facts. Assignment establishes no Work, capability, functioning, authority, or responsibility.
 
-The intervention card does not authorize Work, and its targeted relation is not an obtaining-effect claim. It names the proposed intervention, the relation being targeted, and the next applicable pattern. Use `E.18.1` for P2W carry-through, `A.15.2` for work planning, `A.15.1` and `F.6` for performed Work, `A.3.4` for actual change, `A.15.PROD` or an exact direct local claim for production or Work-to-change, `C.18` or `C.19` for archive and pool treatment, `G.5` for selected-set result declaration, `C.11` for local choice, `C.35` when a generated or discovered structure-bearing carrier needs admission before architecture use, `C.30` for a direct architecture question, or `G.11` for refresh. If audience availability is current, use `E.17` for a source-backed publication face and return to source and `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability.
+A positive responsibility claim uses an admitted domain predicate through `TargetedRelation` or `EffectClaimOrRelationRefs`; without one, return the A.6.RCD missing-governor result. `ActualTransformationRefs` may cite only independently identified A.3.4 bounded changes. `TransformationFlowStructureRef` instead cites one E.18 transformation-flow structure selected under A.22; adjacency or membership in it proves neither actual change nor Work-to-change. Any positive link from intervention Work to an actual transformation or other effect must cite its declared predicate, an admitted A.6.RCD local claim, or the relevant A.15.PROD branch; otherwise return `missing-governor`. An effect that does not require Work stays on its own direct relation; observing a value neither creates nor proves it.
+
+The intervention card does not authorize Work, and its targeted relation is not an obtaining-effect claim. It names the proposed intervention, the relation being targeted, and the next applicable pattern. Use `E.18.1` for P2W carry-through, `A.15.2` for work planning, `A.15.1` and `F.6` for performed Work, `A.3.4` for actual change, `A.15.PROD` or a direct local claim for production or Work-to-change, `C.18` or `C.19` for archive and pool treatment, `G.5` for selected-set result declaration, `C.11` for local choice, `C.35` when a generated or discovered structure-bearing carrier needs admission before architecture use, `C.30` for a direct architecture question, or `G.11` for refresh. If audience availability is current, use `E.17` for a source-backed publication face and return to source and `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability.
 
 #### C.36:4.3 - Evolution Sense Split
 
@@ -190,7 +198,7 @@ Use this split before applying the pattern:
 | A bounded entity changes under conditions. | `A.3.4 U.Transformation`. |
 | A temporal aspect, currentness window, rhythm, cadence, or authored temporal claim is current. | `C.27.TA`, `C.27`, or `A.3.3` according to the claim. |
 | An engineering project manages an evolving archive, front, current pool, selected set, edition lineage, or family of variants. | `C.18`, `C.19`, `G.5`, `G.11`, and `E.18.1`. |
-| A collective-holon or discipline-facing method, work, role, canon, memory, recognition, selection, mediation, style, tradition, or intervention relation is current. | `C.36`. |
+| A collective-holon or discipline-facing method, Work, system-role kind or assignment, canon, memory, recognition, selection, mediation, style, tradition, or intervention relation is current. | `C.36`. |
 
 An engineering development loop may use C.36, but it does not automatically become cultural evolution. It becomes C.36 work only when the collective-holon or discipline-facing cultural-evolution relations above are current.
 
@@ -198,7 +206,7 @@ An engineering development loop may use C.36, but it does not automatically beco
 
 Recover the current object before accepting platform, regime, or attractor wording.
 
-- Platform, recommendation environment, visibility infrastructure, algorithmic mediator, or platform-regime wording may name a system, holon-in-role value, system architecture, product architecture, recognition regime, selection regime, measurement relation, visibility relation, publication relation, bounded context, or source-currentness relation.
+- Platform, recommendation environment, visibility infrastructure, algorithmic mediator, or platform-regime wording may name a system, a system classified under an exact local system-role kind, another governed relation participant, a system architecture, product architecture, recognition regime, selection regime, measurement relation, visibility relation, publication relation, bounded context, or source-currentness relation.
 - Measurement regime wording may name a characteristic space, measurement relation, visibility relation, publication relation, dashboard relation, source-currentness relation, or comparison setup.
 - Attractor, basin, stable-dynamics, state-transition-law, and mathematical-model wording uses `A.3.3`, `C.27`, and `C.29` when that claim is current. Loose style metaphor remains term and bridge work through `F.17`, `F.18`, and `F.9`.
 
@@ -206,7 +214,7 @@ Recover the current object before accepting platform, regime, or attractor wordi
 
 #### C.36:5.1 - Engineering Product Family
 
-An engineering lead has an archive of candidate cooling-module designs, a Q-front over energy use and maintainability, competitor product families, and a roadmap pressure to keep more than one line current. The first C.36 question is not "which module is best?" but whether the project is shaping a product-family culture: shared methods, work products, review criteria, memory epistemes, role assignments, architecture-candidate generation, selection regimes, and refresh rhythm.
+An engineering lead has an archive of candidate cooling-module designs, a Q-front over energy use and maintainability, competitor product families, and a roadmap pressure to keep more than one line current. The first C.36 question is not "which module is best?" but whether the project is shaping a product-family culture: shared methods, work products, review criteria, memory epistemes, exact local system-role kinds and any obtaining assignments needed for Work attribution, architecture-candidate generation, selection regimes, and refresh rhythm.
 
 If the question is only archive or front treatment, use `C.18` and `C.19`. If the team is changing how the engineering organization generates, recognizes, retains, compares, and learns from module variants, write a `CulturalEvolutionCaseCard@Context` and then use `E.18.1` to carry the accepted problem-side distinction into the next governed use. When that work yields a generated or discovered carrier that carries or describes selected structure and may enter architecturing, use `C.35` for carrier admission before `C.32`; the cultural-evolution case remains governed here.
 
@@ -232,8 +240,12 @@ CulturalEvolutionCaseCard@Context:
   CaseRef: festival-contemporary-2026
   BoundedContext: festival choreography lab and its short-video circulation context
   CollectiveHolonRefs: choreographer collective, dancers, teachers, judges, platform-mediated audience
-  RoleValueRefs: dancer, choreographer, teacher, judge, recommender-mediated viewer
-  RoleAssignmentRefs: omitted in this family-level card; add only exact obtaining assignments when a performed-Work attribution is current
+  RoleWordRecoveryRefs: E.10.ROLE recovery for dancer, choreographer, teacher, judge, and viewer in this festival case
+  DirectParticipationOrPositionRelationRefs: festival-performance, choreography-contribution, teaching, judging, and mediated-viewing relations when their domain predicates obtain; otherwise the corresponding row is missing-governor
+  SystemRoleKindRefs: omitted — the familiar dance labels do not establish local kinds without criteria
+  SystemRoleClassificationJudgmentRefs: omitted — the familiar dance labels establish no classification judgment
+  SystemRoleAssignmentSpeciesRefs: omitted — this family-level card asserts no assignment species
+  SystemRoleAssignmentOccurrenceRefs: omitted — this family-level card asserts no assignment occurrence or performed Work; any later Work claim names the `U.Work` occurrence and keeps all facts required by A.15.1, A.2.1, and F.6 recoverable
   WorkFamilyRefs: performance, rehearsal, teaching, judging, remixing, platform publication
   MethodFamilyRefs: floorwork method family, improvisation method family, duet-lift method family
   CanonOrMemoryEpistemeRefs: festival archive, teaching syllabus, exemplar video set
@@ -282,7 +294,7 @@ A team develops several AI-agent framework variants and notices that evaluation 
 | Czaplicka, Baumann, and Rahwan, algorithmic mediation and cumulative culture, arXiv:2410.00780; DOI `10.1098/rsif.2024.0686`. | Recover platform or algorithmic mediation through systems, roles, recognition or selection regimes, measurement or visibility relations, and contexts. | `platform regime` becomes a root ontology or a mere publication label. | `MediationSystemOrArchitectureRefs`, `RecognitionOrSelectionRegimeRefs`, and `CurrentPatternLocators` must name the subject pattern before platform wording is used. |
 | Yaman, Tian, and Lindstrom, semantic knowledge and cultural evolution, arXiv:2510.12837; DOI `10.1073/pnas.2530750123`. | Keep method families, work families, characteristic spaces, canon or memory epistemes, and recognition regimes explicit. | Culture is shared vocabulary, random variation alone, or a genre tree. | `MethodFamilyRefs`, `WorkFamilyRefs`, `CanonOrMemoryEpistemeRefs`, and `CharacteristicSpaceRefs` are not optional decoration when semantic knowledge is the live claim. |
 | Tchernichovski et al., editing constraints in cultural evolution, arXiv:2502.16694. | Treat editing constraints as constraints on variant sets, characteristic spaces, and effect measurement. | Style engineering is unconstrained idea generation or one scalar taste score. | `VariantSetRefs`, `CharacteristicSpaceRefs`, and measurement or refresh exits must be named when a style intervention targets constraints; any claim that constraints actually changed still cites its exact A.3.4 and Work-to-change basis. |
-| Marjieh et al., cultural-evolution mechanisms in experimental social networks, arXiv:2502.12847. | Keep topology, selection, reproduction, social-learning, and mediation relations recoverable. | Cultural evolution is one isolated innovation channel. | `CollectiveHolonRefs`, `RoleAssignmentRefs`, `RecognitionOrSelectionRegimeRefs`, and mediation refs are kept together in the case card. |
+| Marjieh et al., cultural-evolution mechanisms in experimental social networks, arXiv:2502.12847. | Keep topology, selection, reproduction, social-learning, and mediation relations recoverable. | Cultural evolution is one isolated innovation channel. | `CollectiveHolonRefs`, local-kind and separate classification refs, any assignment-species and assignment-occurrence refs, `RecognitionOrSelectionRegimeRefs`, and mediation refs are kept together in the case card. |
 | Lee et al., melody and rhythm coevolution, arXiv:2605.05982. | Allow several feature-specific characteristic spaces inside one style or tradition case. | A style label proves one monolithic trajectory. | `CharacteristicSpaceRefs` may carry several feature spaces before selected-set or bridge claims rely on the label. |
 | Gautheron et al., popularity feedback in cultural markets, arXiv:2602.09997. | Keep popularity feedback, visibility, recognition, selection, and measurement relations explicit. | Popularity or platform metrics are neutral evidence of value. | `RecognitionOrSelectionRegimeRefs`, measurement refs, and `CurrentPatternLocators` decide whether to use `C.36`, `C.18`, `G.5`, `G.11`, or an evidence pattern. |
 | Current QD and open-ended-engineering rows, including the 2026 Quality-Diversity survey DOI `10.1016/j.swevo.2025.102240`. | Keep archives, fronts, current pools, selected-set result declaration, evaluator relations, generalization pressure, and refresh distinct from the cultural-evolution case. When publication is current, also keep the source-backed face and source return distinct from the publication occurrence and audience availability. | C.36 absorbs archive, front, pool, selected-set, publication, or refresh semantics. | Use `C.18` for archive and front relations, `C.19` for current-pool treatment, `G.5` for selected-set result declaration, `G.11` for currentness and refresh, `E.17` for a source-backed publication face and return to source, and `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability. Use C.36 only for the cultural-evolution case. |
@@ -306,7 +318,7 @@ Costs:
 
 ### C.36:9 - Rationale
 
-C.36 follows the same ontological economy as the episteme and transformation settlements: a complex practical situation is made usable by naming a small relation bundle over existing FPF values rather than by minting a root kind for every source word. This preserves the working gain from cultural-evolution and open-ended-engineering sources while keeping method, work, role, discipline, episteme, selection, architecture, publication, and refresh authority with their subject patterns.
+C.36 follows the same ontological economy as the episteme and transformation settlements: a complex practical situation is made usable by naming a small relation bundle over existing FPF values rather than by minting a root kind for every source word. This preserves the working gain from cultural-evolution and open-ended-engineering sources while keeping method, Work, system-role kind and assignment, discipline, episteme, selection, architecture, publication, and refresh questions with their subject patterns.
 
 ### C.36:10 - Relations
 

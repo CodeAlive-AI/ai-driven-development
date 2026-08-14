@@ -11,7 +11,7 @@
 > **Used by:** plans that must remember a chosen future relation participant, operation argument, expected result, or another value tied to an already declared member before work begins
 > **One-line purpose:** record inside one `U.WorkPlan` which value is intended for one already declared member; the declaration defines how later actual use is judged, while A.15.3 records only the intention and makes nothing actual.
 
-**At a glance.** Use `SlotFillingsPlanItem` when a plan must preserve a concrete choice before work begins—for example, `Robot_8_Ref` as the planned holder in a future role assignment or `Pump_37_Ref` as the planned `candidate` in a recognition operation. Point to the declaration member that already defines that position, record the planned value and conditions, and later compare them with what actually happened without rewriting the plan. A field name, compatible type, method phrase, form position, or plan label is not such a declaration.
+**At a glance.** Use `SlotFillingsPlanItem` when a plan must preserve a concrete choice before Work begins—for example, `Robot_8_Ref` as the planned holder for a future system-role assignment, with the assignment species named separately, or `Pump_37_Ref` as the planned `candidate` in a recognition operation. Point to the declaration member that already defines that position, record the planned value and conditions, and later compare them with what actually happened without rewriting the plan. A field name, compatible type, Method phrase, form position, or plan label is not such a declaration.
 
 **Use this when.** Use this pattern only when the choice points to a member already defined in a `RelationSignature`, an A.6.1 `OperationDeclaration`, or another declaration whose own pattern states both the member's meaning and the rule for its later actual use. If the plan merely says *use this method*, *reserve this resource*, or *meet this threshold* without reusing such a member, keep ordinary A.15.2 plan content. A planned row establishes no dated work, relation participant, operation application, returned value, change, delivery, or outcome.
 
@@ -35,13 +35,13 @@
 
 **What this buys.** The team can later say what it intended, what actually happened, and whether the two differ, while the declaration, plan, work, and actual participation remain separate objects.
 
-**Not this pattern when.** Use the declaration's own pattern (`A.6.5`, `A.6.1`, or another declared-member owner) when defining the member; use A.15.2 for ordinary intended work without a planned filling; use A.15.1 for dated work; and use the applicable pattern for actual relation participation, operation bindings, methods, evidence, assurance, gates, acceptance, results, publication, or representation.
+**Not this pattern when.** Use the exact declaration predicate and ClaimGraph located through `A.6.5`, `A.6.1`, or another declared-member source when defining the member; use A.15.2 for ordinary intended work without a planned filling; use A.15.1 for dated work; and use the exact applicable predicates for actual relation participation, operation bindings, methods, evidence, assurance, gates, acceptance, results, publication, or representation.
 
 ### A.15.3:1 - Context
 
-A work plan may need more precision than *use this method* or *perform this task*. An inspection plan may need to remember that `Robot_8_Ref` is intended for `HolderSystemSlot` in a cited `RoleAssignmentRelationSignature` edition. A recognition plan may need to remember that `Pump_37_Ref` is intended for the declaration-local `candidate` argument.
+A WorkPlan may need more precision than *use this Method* or *perform this task*. An inspection plan may need to remember that `Robot_8_Ref` is intended for `HolderSystemSlot` in the cited `InspectionRobotSystemRoleAssignmentSignature` edition. A recognition plan may need to remember that `Pump_37_Ref` is intended for the declaration-local `candidate` argument.
 
-The declaration already owns the participant, argument, or result meaning. The WorkPlan owns the intention. A.15.3 joins them only as plan content. It neither changes the declaration nor makes the planned value participate.
+The declaration already states the participant, argument, or result meaning. The WorkPlan states the intention. A.15.3 joins them only as plan content. It neither changes the declaration nor makes the planned value participate.
 
 ### A.15.3:2 - Problem
 
@@ -171,11 +171,11 @@ A card, table, view, index, or generated summary may show selected WorkPlan cont
 
 ### A.15.3:5 - Archetypal Grounding
 
-#### A.15.3:5.1 - Planned holder designation against the admitted role-assignment declaration
+#### A.15.3:5.1 - Planned holder designation against one direct system-role-assignment species
 
-An inspection team plans a later role assignment and chooses `Robot_8_Ref` as the holder system. **Plan result:** one row points to the cited `RoleAssignmentRelationSignature` edition and its `HolderSystemSlot`; `Robot_8_Ref : U.EntityRef` resolves to admitted `Robot_8 : U.System`. A.2.1 defines the assignment predicate and occurrence identity, while A.6.5 defines the declaration-local SlotKind, ValueKind, and reference mode.
+An inspection team plans a future assignment of `Robot_8`. It names `InspectionRobotSystemRoleAssignment` as the species and `Robot_8_Ref` as the intended holder. **Plan result:** one row points to the cited `InspectionRobotSystemRoleAssignmentSignature` edition and its `HolderSystemSlot`; `Robot_8_Ref : U.EntityRef` resolves to admitted `Robot_8 : U.System`. That species under `U.SystemRoleAssignment` gives its declaration-local assigned-kind slot the domain `InspectionRobotSystemRole`. A.2.1 defines the species predicate and occurrence identity, while A.6.5 defines the declaration-local SlotKinds, ValueKinds, and reference modes.
 
-The row establishes neither a `U.RoleAssignment` nor actual participation. Later, an affirmative assignment assertion is available only when all four participants are designated and the A.2.1 predicate holds continuously for them. A type-compatible planned holder can therefore remain the baseline while that predicate either fails under a stated negative criterion or cannot yet be resolved.
+The row establishes neither a `U.SystemRoleAssignment` occurrence nor actual participation. Later, an affirmative assignment assertion is available only when the direct species predicate holds for its complete real participant set and its occurrence law is satisfied. A type-compatible planned holder can therefore remain the baseline while that predicate either fails under a stated negative criterion or cannot yet be resolved; taxonomy, reference scheme, or generic context is not added as a world-side participant.
 
 **Blocked near-miss:** `Bearing_C isPartOf Pump_P` cannot supply a relation row. A.6.5:5.2 keeps `PartHolonSlot` and `WholeHolonSlot` hypothetical until a part-relation pattern defines their meanings, predicate, applicability, and occurrence identity. Return `missing-governor: planned part-relation participant designation for <Bearing_C, Pump_P>` or keep the choice as ordinary A.15.2 plan content; do not present the sketch as an admitted `RelationSignature`.
 

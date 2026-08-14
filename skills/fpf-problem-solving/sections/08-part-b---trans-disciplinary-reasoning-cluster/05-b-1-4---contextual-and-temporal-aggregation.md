@@ -4,25 +4,25 @@
 > **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 
-**Use this when.** Use this pattern when the current claim aggregates already recovered relations across a bounded context, ordered situation, phase set, or time window, and the question is not just ordinary part-whole construction. Typical cues are ordered steps, order-sensitive argument chains, asset histories, proper temporal restrictions of one enduring carrier, rolling windows, context-scoped roll-ups, time-sliced evidence, or a bounded chronology over exact C.2.1 episteme identities and already obtaining edition relations.
+**Use this when.** Use this pattern when the current claim aggregates already recovered relations over an exact set of ordered positions, phases, or a time window, and the question is not just ordinary part-whole construction. Typical cues are ordered steps, order-sensitive argument chains, asset histories, proper temporal restrictions of one enduring carrier, rolling windows, use-bounded roll-ups, time-sliced evidence, or a bounded chronology over exact C.2.1 episteme identities and already obtaining edition relations.
 
-**Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the subject's direct identity/change owner; if a new whole must be reidentified, use `B.2` through `B.2.P`. If the question is temporal adequacy of a claim, use `C.27`.
+**Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the pattern that defines the subject's identity or change; if a new whole must be reidentified, use `B.2` through `B.2.P`. If the question is temporal adequacy of a claim, use `C.27`.
 
 **What goes wrong if missed.** Order, phase, context, or time-window wording becomes ordinary parthood, method order, performed work, evidence currentness, or whole reidentification by label.
 
-**What this buys.** The practitioner can aggregate context-sensitive and temporal material while returning method, work, transformation, work-resource, temporal-adequacy, and MHT claims to their direct owners.
+**What this buys.** The practitioner can aggregate order-sensitive and temporal material while keeping method, work, transformation, work-resource, temporal-adequacy, and MHT claims with the patterns that define or test them.
 
 ### B.1.4:1 - Problem Frame
 
-Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another directly governed enduring individual may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. In these cases the aggregation is about contextual order or temporal coverage over already recovered relations, not about a new level, a generic boundary, or a hidden interaction kind.
+Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another enduring individual with a stated identity rule may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. In these cases the aggregation is about order or temporal coverage over already recovered relations, not about a new level, a generic boundary, or a hidden interaction kind.
 
-`B.1.4` governs the aggregation claim. It asks which EntityOfConcern is being aggregated, which context or time window bounds the claim, which ordered or phase relation is being used, what the aggregate may be used for, and which neighboring owner must carry stronger claims.
+`B.1.4` defines the aggregation claim. It asks which EntityOfConcern is being aggregated, which positions or phases are included, which scope and time window qualify the claim, which ordered or phase relation is being used, what the aggregate may be used for, and which neighboring pattern carries any stronger claim.
 
 ### B.1.4:1.1 - Problem
 
-Without this pattern, four errors recur. First, `SerialStepOf` or another ordered relation is read as ordinary parthood, so changing the order looks harmless even when the aggregate meaning changes. Second, a phase label is read as a new holon level or a new whole, so identity change is hidden instead of handled by whole reidentification. Third, design-time plans, possible method order, run-time histories, and evidence windows are folded together as one sequence. Fourth, mathematical order, graph, or operator notation starts to govern the in-life object instead of expressing a recovered relation for one bounded use.
+Without this pattern, four errors recur. First, `SerialStepOf` or another ordered relation is read as ordinary parthood, so changing the order looks harmless even when the aggregate meaning changes. Second, a phase label is read as a new holon level or a new whole, so identity change is hidden instead of handled by whole reidentification. Third, design-time plans, possible method order, run-time histories, and evidence windows are folded together as one sequence. Fourth, mathematical order, graph, or operator notation starts to stand for the in-life object instead of expressing a recovered relation for one bounded use.
 
-The practical failure is not a missing diagram. It is an inadmissible aggregate: the user cannot tell which carrier is being followed, which relation is ordered, which time window is covered, whether gaps or overlaps matter, and which stronger owner must carry work, resource, transformation, evidence, or whole-reidentification claims.
+The practical failure is not a missing diagram. It is an inadmissible aggregate: the user cannot tell which carrier is being followed, which positions or phases are included, which relation is ordered, which time window is covered, whether gaps or overlaps matter, or which pattern must carry a stronger work, resource, transformation, evidence, or whole-reidentification claim.
 
 ### B.1.4:1.2 - Forces
 
@@ -42,7 +42,9 @@ Recover a `ContextTemporalAggregation@Context` before using the aggregate:
 ContextTemporalAggregation@Context:
   aggregationConcernRef
   aggregatedEntityOfConcernRef
-  boundedContextRef
+  includedPositionRefs?
+  includedPhaseRefs?
+  claimScopeRef?: U.ClaimScope
   aggregationMode: contextualOrder | temporalPhase | declaredMixedUse
   orderedRelationRefs?
   phaseRelationRefs?
@@ -70,14 +72,14 @@ Use the record as a small typed relation, not as a new durable `U.Level`, `U.Bou
 
 | Mode | Current object | Required relation discipline | Typical use |
 | --- | --- | --- | --- |
-| Contextual order aggregation | A bounded set of relation positions whose order, partial order, or join structure changes meaning. | `OrderSpec`, ordered relation refs, join or independence conditions, and a bounded context. | Ordered method relation, order-bound argument chain, staged construction description, controlled sequence. |
-| Temporal phase aggregation | One directly governed enduring carrier considered through proper phases or time slices. | Carrier identity, `PhaseOf` or another direct phase relation, `TimeWindow`, coverage, and non-overlap conditions. For an unchanged episteme, the complete C.2.1 identity triple stays fixed. | Asset history, proper restriction of one unchanged episteme, experimental-carrier phases, dated evidence window. Distinct episteme editions first require C.2.1 identities and an independently obtaining edition relation. |
+| Contextual order aggregation | An exact set of relation positions whose order, partial order, or join structure changes meaning for the stated use. | Included positions, `OrderSpec`, ordered relation refs, join or independence conditions, and ClaimScope when needed. | Ordered method relation, order-bound argument chain, staged construction description, controlled sequence. |
+| Temporal phase aggregation | One enduring carrier considered through exact proper phases or time slices. | Carrier identity rule, included phases, `PhaseOf` or another direct phase relation, `TimeWindow`, coverage, and non-overlap conditions. For an unchanged episteme, the complete C.2.1 identity triple stays fixed. | Asset history, proper restriction of one unchanged episteme, experimental-carrier phases, dated evidence window. Distinct episteme editions first require C.2.1 identities and an independently obtaining edition relation. |
 
 If one source phrase mixes both modes, split the record. A method may have an ordered relation structure; the Work that enacts it may have exact A.15.1 temporal parts, episodes, operational parts, overlaps, or separate occurrences whose already recovered relations a receiving use aggregates. Those are different claims, and generic `PhaseOf` does not replace the Work relations.
 
-#### B.1.4:2.2 - Direct Owner Map
+#### B.1.4:2.2 - Where Stronger Claims Go
 
-| Current claim | Direct owner |
+| Current claim | Pattern to use |
 | --- | --- |
 | Method as semantic way of doing | `A.3.1` |
 | Method description, SOP, algorithm text, simulator configuration, or formal expression | `A.3.2`, with publication owners when publication use is current |
@@ -86,10 +88,10 @@ If one source phrase mixes both modes, split the record. A method may have an or
 | Work-resource roll-up, spent resource, cost, effort, energy, material, or comparable ledger | `B.1.6` |
 | Episteme identity and historical continuity between distinct epistemes | `C.2.1`; aggregate only exact identities and an already obtaining `EpistemeEditionRelation` when the bounded use needs their chronology |
 | Proper `PhaseOf`, portion, membership, or other parthood relation for a non-Work carrier | `A.14`, `B.1`, and `C.13` as appropriate; Work temporal and part relations remain with `A.15.1` |
-| Holon delimitation or boundary-crossing relation | `A.1`, `B.1`, `A.12`, `A.3.4`, or the direct relation owner named by value |
+| Holon delimitation or boundary-crossing relation | `A.1`, `B.1`, `A.12`, `A.3.4`, or the pattern that defines the exact relation |
 | Bounded change under conditions | `A.3.4` |
 | Whole reidentification, emergence-family wording, MHT, MET, MFT, synergy, or metric-mirage wording | Use `B.2.P` to test whether a whole-reidentification problem is current. If it remains current, use `B.2`, `B.2.2`, `B.2.3`, `B.2.4`, or `B.2.5` according to the recovered whole, emergence, autonomy, capability, or supervisor relation claim. |
-| Architecture structural view or selected structure | `C.30.ASV`, `A.22`, or the architecture owner named by value |
+| Architecture structural view or selected structure | `C.30.ASV`, `A.22`, or the pattern that defines or tests the architecture claim |
 | Mathematical order, graph, algebraic notation, graph path, or morphism used as expression | Use `C.29` when mathematical-lens adequacy, preserved structure, lost structure, payoff, or stop condition is being evaluated. Use `E.18` when the selected transformation-flow structure is current. Use `E.18.2` when the mathematical expression of that selected structure is current. |
 
 ### B.1.4:3 - Optional Operator Notation
@@ -106,7 +108,7 @@ Gamma_time(temporalAggregationRecord, timeWindow, coverageAndNonOverlapCondition
 
 The notation does not create a holon, transformation, method, work occurrence, or whole reidentification by itself. It records how the selected relation set is combined for the current use.
 
-If the source says a system actually sequences, combines, transforms, measures, or audits something, name that acting-side relation separately through `A.12`, `A.3.4`, `A.15.1`, `B.1.6`, `A.10`, or the direct owner. The person, team, controller, or tool that writes an aggregation record is not automatically the in-world transformer for the EntityOfConcern being aggregated.
+If the source says a system actually sequences, combines, transforms, measures, or audits something, name that acting-side relation separately through `A.12`, `A.3.4`, `A.15.1`, `B.1.6`, `A.10`, or the pattern that defines the exact relation. The person, team, controller, or tool that writes an aggregation record is not automatically the in-world transformer for the EntityOfConcern being aggregated.
 
 ### B.1.4:4 - Admissible Checks
 
@@ -115,8 +117,8 @@ For contextual order aggregation:
 - the ordered relation refs are named by value;
 - the `OrderSpec` is declared as total order, partial order, or another named relation;
 - independence, branch, or join conditions are named when parallel factors are used;
-- all claims stay within one bounded context unless a boundary-crossing relation is named;
-- method, method-description, work, transformation, and resource claims use their direct owners.
+- the record names its included positions, ClaimScope when needed, and admissible use; any holon-boundary crossing is named by an exact relation;
+- method, method-description, work, transformation, and resource claims use the patterns that define or test them.
 
 For temporal phase aggregation:
 
@@ -146,33 +148,33 @@ For temporal phase aggregation:
 
 **Paper edition history.** When draft, reviewed, and camera-ready texts change claim content, EntityOfConcern, or effective ReferenceScheme, C.2.1 identifies distinct epistemes and tests each claimed `EpistemeEditionRelation` independently. `B.1.4` may record a bounded chronology over those already recovered identities, relations, applicability windows, or publication windows; it does not turn the editions into phases of one episteme. If one unchanged episteme is genuinely needed over a proper interval, A.14 `PhaseOf` may state only that restriction. Source-currentness and publication-use claims use `A.10`, `G.11`, and `E.17`; chronology establishes none of them.
 
-**Cross-context evidence window.** A dashboard aggregates observations from two operating contexts. `B.1.4` records the bounded contexts and the admissible aggregation window. If one context has a different measurement basis, use `C.16` or `C.29` for comparability before relying on the aggregate.
+**Cross-regime evidence window.** A dashboard aggregates observations from two operating regimes. `B.1.4` records the exact observation sets, their subject populations or carriers, the aggregation window, and the admissible use. If the regimes use different measurement bases, use `C.16` or `C.29` for comparability before relying on the aggregate.
 
 ### B.1.4:5.1 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
-| Notation becomes ontology | `Gamma_ctx`, `Gamma_time`, graph, or algebra wording is treated as the governed object. | Recover the ordered or temporal relation first, then treat notation as a selected expression. |
-| Sequence becomes work | A method order, plan order, document order, or performed-work history is treated as the same thing. | Name the direct owner: method, method description, work plan, dated work occurrence, or evidence window. |
+| Notation becomes ontology | `Gamma_ctx`, `Gamma_time`, graph, or algebra wording is treated as the in-life object or relation. | Recover the ordered or temporal relation first, then treat notation as a selected expression. |
+| Sequence becomes work | A method order, plan order, document order, or performed-work history is treated as the same thing. | Name the exact claim and use the applicable method, description, work-plan, dated-Work, or evidence pattern. |
 | Phase becomes level | A phase label is used as a new system level or a new whole. | Recover the exact subject first: C.2.1 identity/edition law for an episteme, A.15.1 for Work, or the carrier's direct identity rule and proper `PhaseOf` for another enduring individual. Open whole reidentification only when that question remains current. |
-| Coverage becomes authority | A complete-looking timeline is treated as sufficient evidence or currentness. | Use evidence, source-currentness, and temporal-adequacy owners when those claims are current. |
+| Coverage becomes authority | A complete-looking timeline is treated as sufficient evidence or currentness. | Use the applicable evidence, source-currentness, and temporal-adequacy patterns when those claims are current. |
 
 ### B.1.4:6 - Conformance Checklist
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-B1.4-1 | The aggregate names the EntityOfConcern, bounded context, aggregation mode, and admissible use. | Prevents a context or time label from acting as ontology. |
+| CC-B1.4-1 | The aggregate names the EntityOfConcern, included positions or phases, aggregation mode, ClaimScope when needed, time window when temporal qualification matters, and admissible use. | Prevents a generic context or time label from standing in for the aggregation boundary. |
 | CC-B1.4-2 | Contextual aggregation names ordered relation refs and an `OrderSpec`; temporal aggregation names carrier identity, phase refs, and `TimeWindow`. | Keeps order and time as different relations. |
 | CC-B1.4-3 | Independence, join, coverage, and non-overlap conditions are present when the claim uses them. | Keeps local composition reviewable. |
-| CC-B1.4-4 | Method, method-description, work-plan, work-occurrence, work-resource, transformation, and whole-reidentification claims are assigned to their direct owners. | Prevents B.1.4 from absorbing neighboring objects. |
-| CC-B1.4-5 | Mathematical notation is treated as a selected lens or expression, not as the governed object. | Keeps `Gamma_ctx`, `Gamma_time`, graph, and algebra language bounded. |
-| CC-B1.4-6 | If identity changes, coverage breaks, or a new whole is claimed, the record narrows use or names the stronger owner. | Prevents temporal aggregation from becoming hidden MHT or transformation. |
+| CC-B1.4-4 | Method, method-description, work-plan, work-occurrence, work-resource, transformation, and whole-reidentification claims use the patterns that define or test them. | Prevents B.1.4 from absorbing neighboring objects. |
+| CC-B1.4-5 | Mathematical notation is treated as a selected lens or expression, not as the in-life object or relation. | Keeps `Gamma_ctx`, `Gamma_time`, graph, and algebra language bounded. |
+| CC-B1.4-6 | If identity changes, coverage breaks, or a new whole is claimed, the record narrows use or names the pattern for the stronger claim. | Prevents temporal aggregation from becoming hidden MHT or transformation. |
 
 ### B.1.4:7 - Common Anti-Patterns and How to Avoid Them
 
 | Overread | Repair |
 | --- | --- |
-| A sequence is treated as physical parthood. | Recover ordered relation refs and use contextual aggregation; use part-whole owners only for part-whole claims. |
+| A sequence is treated as physical parthood. | Recover ordered relation refs and use contextual aggregation; use part-whole patterns only for part-whole claims. |
 | A phase label is treated as a new system level. | Recover the carrier identity and phase relation; use whole reidentification only if B.2.P keeps that claim current. |
 | A planning order is treated as performed work. | Use `A.15.2` for work plan and `A.15.1` for dated work occurrence. |
 | A resource total is placed inside temporal aggregation. | Use `B.1.6` for the work-resource ledger. |
@@ -186,7 +188,7 @@ The cost is that the practitioner must name the relation being aggregated. The g
 
 ### B.1.4:8.1 - Rationale
 
-`B.1.4` exists because contextual order and temporal phase aggregation are neither ordinary part-whole construction nor generic process talk. One directly governed enduring carrier can be considered through proper temporal restrictions; a selected relation set can be order-sensitive; and both cases need admissible aggregation without inventing a new holon kind. The pattern therefore keeps relation discipline explicit: `PhaseOf` and the carrier's direct identity rule for legitimate phase aggregation; C.2.1 identity and independently obtaining edition relations for distinct episteme history; A.15.1 relations for Work; ordered relation refs and `OrderSpec` for contextual aggregation; and direct-owner return for resource, transformation, evidence, and whole reidentification.
+`B.1.4` exists because contextual order and temporal phase aggregation are neither ordinary part-whole construction nor generic process talk. One enduring carrier with a stated identity rule can be considered through proper temporal restrictions; a selected relation set can be order-sensitive; and both cases need admissible aggregation without inventing a new holon kind. The pattern therefore keeps relation discipline explicit: `PhaseOf` and the carrier's identity rule for legitimate phase aggregation; C.2.1 identity and independently obtaining edition relations for distinct episteme history; A.15.1 relations for Work; ordered relation refs and `OrderSpec` for contextual aggregation; and separate patterns for resource, transformation, evidence, and whole reidentification.
 
 The old `DesignRunTag` warning is preserved as a rule rather than a label: do not fold design-time possible order and run-time history into one aggregate. If both are needed, make two records and relate them by value.
 
@@ -195,7 +197,7 @@ The old `DesignRunTag` warning is preserved as a rule rather than a label: do no
 | Source line | Practical implication for this pattern |
 | --- | --- |
 | Constructive and mereological treatment of phases and parts | Phase aggregation must preserve carrier identity and coverage conditions; it cannot borrow ordinary parthood when the current relation is temporal. |
-| Engineering process and ordered-method notations | Ordered relations may be useful expressions of method or plan structure, but performed work and resource accounting need their direct owners. |
+| Engineering process and ordered-method notations | Ordered relations may be useful expressions of method or plan structure, but performed work and resource accounting use their own patterns. |
 | Temporal modeling and evidence-currentness practice | A time window or complete phase list does not by itself prove source currentness, admissible evidence, or causal support. |
 | Mathematical-lens discipline in FPF | Graph, order, and algebra notation are selected expressions over recovered relations, not ontology by spelling. |
 
@@ -204,8 +206,8 @@ The old `DesignRunTag` warning is preserved as a rule rather than a label: do no
 - Builds on `B.1`, `A.14`, and `C.13` for part-whole, phase, and constructive grounding discipline.
 - Coordinates with `C.2.1` for exact episteme identities and independently obtaining edition relations; with `A.3.1`, `A.3.2`, `A.15.2`, and `A.15.1` for method, method description, work plan, dated work occurrence, and exact Work-temporal relations.
 - Coordinates with `B.1.6` for work-resource aggregation.
-- Coordinates with `A.3.4` for transformation. When whole reidentification or emergence-family wording is current, `B.2.P` tests the problem and the relevant B.2-family pattern governs the recovered claim.
-- Coordinates with `C.27` for temporal-claim adequacy. When mathematical expression is selected, `C.29` governs lens-use adequacy, `E.18` governs selected transformation-flow structure, and `E.18.2` governs mathematical description of that selected structure.
+- Coordinates with `A.3.4` for transformation. When whole reidentification or emergence-family wording is current, `B.2.P` tests the problem and the relevant B.2-family pattern defines or constrains the recovered claim.
+- Coordinates with `C.27` for temporal-claim adequacy. When mathematical expression is selected, `C.29` tests lens-use adequacy, `E.18` defines the selected transformation-flow structure, and `E.18.2` defines its mathematical description.
 
 ### B.1.4:End
 

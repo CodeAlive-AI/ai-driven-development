@@ -135,7 +135,7 @@ Typical next-use patterns include:
 
 Name the next pattern and what its content defines, constrains, or tests. The account already identifies the selected episteme edition; add a project record, particular publication form, or publication occurrence only when that distinction changes the next use. This is next-use docking, not a transfer of responsibility, and a pattern reference alone does not prove endpoint admission.
 
-**Separate responsibility-handoff branch.** Open this branch only when responsibility, commitment, permission, or authority actually changes. Name the giving and receiving admitted systems and, when roles are relevant, the exact role assignments through which they participate; the exact relation before and after the change under its applicable pattern; the governed object or action, scope, and effective interval; and any assigning, instituting, revoking, or superseding act that the relation requires. The trajectory account cites that relation and its history; episteme lineage, publication form, publication occurrence, endpoint admission, and next-use docking neither create nor prove it.
+**Separate responsibility-handoff branch.** Open this branch only when responsibility, commitment, permission, or authority actually changes. Name the giving and receiving admitted systems and, when their system-role classification matters, the exact system-role kinds and assignments through which they participate; name the exact relation before and after the change under its applicable pattern, its governed object or action, scope, and effective interval, and any assigning, instituting, revoking, or superseding act that the relation requires. The trajectory account cites that relation and its history; episteme lineage, publication form, publication occurrence, endpoint admission, and next-use docking neither create nor prove it.
 
 After docking to a next use, monitoring, maintenance, revisit, or later re-entry may continue through new lineage entries or later trajectories. Keep lineage continuity separate from the current endpoint use and from any separately established responsibility or authority relation.
 
@@ -163,7 +163,7 @@ The word `move` remains inherited from `A.16` and means a typed language-state p
 A trajectory may later cross a viewpoint or context boundary. When that happens:
 
 - bridge substitution licence remains with `F.9`;
-- stance overlays remain with `F.9.1`;
+- stance notes remain with `F.9.1`;
 - viewpoint reuse remains with `E.17.1`;
 - endpoint-local semantics remain in the rules defined or tested by the named endpoint patterns; publication availability remains a separate `E.24.PUB` relation.
 

@@ -15,9 +15,16 @@ The first useful move is `ReusableStructureTriage`:
 ```text
 ReusableStructureTriage:
   describedHolonRef:
-  boundedContextRef:
+  reuseQuestion:
+  deploymentBoundary?:
+  intendedAccountingUse:
+  claimScopeRef?: U.ClaimScope
+  qualificationWindowRef?:
   architectureClaimRef?:
-  structureRefs or structuralAspectRefs:
+  structureRefs:
+  structuralAspectRefs?:
+  accountingRelationRefs:
+  evidenceRefs:
   whereReusableStructureCurrentlyLives:
   whereBespokeResidueCurrentlyGrows:
   residueRefactoredInto:
@@ -25,7 +32,7 @@ ReusableStructureTriage:
     workStructure | evidencePackage | assuranceArgumentStructure | otherDeclared
   residueAcceptedAsBoundedException:
   sourceReturnCondition?:
-  relatedClaimGovernanceIfClaimed:
+  relatedClaimPatternsIfClaimed:
   stopCondition:
 ```
 
@@ -217,13 +224,21 @@ Each customer delivery still repeats approval work and bespoke integration excep
 
 ```text
 describedHolonRef: product-line delivery system
-boundedContextRef: regulated customer deployments, current qualification window
-architectureClaimRef: ArchitectureOf@Context(product-line delivery)
-structureRefs or structuralAspectRefs:
+reuseQuestion: which selected structures are reused and where does bespoke residue grow?
+deploymentBoundary: regulated customer deployments
+intendedAccountingUse: decide the next reusable-structure repair
+claimScopeRef: reusable-structure accounting for regulated delivery
+qualificationWindowRef: 2026Q3 regulated-delivery review window
+architectureClaimRef: C.30 architecture claim for the product-line delivery system and its selected delivery structures
+structureRefs:
   component template structure
   interface grammar structure
   evidence package structure
   delivery work structure
+accountingRelationRefs:
+  reuse, exception, and bespoke-residue relations for the named deployments
+evidenceRefs:
+  deployment, approval, integration-exception, and reusable-test-package records
 whereReusableStructureCurrentlyLives:
   component template structure
   reusable test package
@@ -238,7 +253,7 @@ residueAcceptedAsBoundedException:
   customer-specific regulatory clause with declared non-admissible reuse
 sourceReturnCondition:
   return to deployment evidence and regulatory exception record before assurance or gate use
-relatedClaimGovernanceIfClaimed:
+relatedClaimPatternsIfClaimed:
   `A.10` and `G.6` for evidence validity; `B.3` for assurance reliance; `A.6.M` for interface grammar; `C.16` if comparison is being made
 stopCondition:
   report-only accounting unless comparator admission, evidence validity, and assurance validity are declared
@@ -355,9 +370,9 @@ The pattern also keeps residue ethically and practically neutral until interpret
 | GSN Community Standard v3 and assurance-case reuse and safety-case reuse practice (`https://scsc.uk/gsn`; `https://arxiv.org/abs/2506.11023`) | Current assurance-case standard family plus current formalization work for this source-use decision; assurance validity remains context-sensitive. | Adopt the distinction between reusable assurance argument structure, reusable evidence structure, and context-specific validity witnesses. In C.31.RSA this changes evidence and assurance reuse: reuse remains accounting until evidence validity, safety-case use, or assurance reliance is governed by its own pattern. | Evidence reuse share or assurance-argument template reuse does not infer assurance, safety-case success, gate passage, or release permission. | Apply `A.10` and `G.6` for evidence validity and safety-case use, and `B.3` for assurance reliance; add source-return condition and validity-window check before reliance. |
 | Architecture-operation language, with neural-network and software-system discussions as source examples, including the GonzoML architecture-operation intake | Current practitioner-language source for structural substitution, gating, memory placement, cache placement, routing, ablation, pruning, distillation, and architecture search; not used as a current standard by itself. | Adopt the recognition that replacement and search expose reusable and bespoke structural loci. In C.31.RSA this changes architecture-operation use: source labels such as block, layer, expert, cache, router, gate, or pruning mask remain source labels until `C.30.STRAT` and the governing pattern for the claim being made recover `structureRefs`, aspect refs, accounting basis, repair actions, and source-return conditions. | Block, layer, expert, cache, router, gate, benchmark, ablation, pruning mask, or distillation success is not RSA slot ontology, architecture decision, evidence sufficiency, gate passage, assurance, or architecture adequacy by itself. | Apply `C.30.STRAT` first where source-label recovery is needed, then `C.30` or `C.30.ASV` for architecture claim and structural view, `C.30.TFS-REL` for flow changes, `C.29` for mathematical-lens or compression claims, `A.10` or `G.6` for benchmark or evidence use, and `C.28` for causal claims. |
 
-**Source-currentness front.** Use the table's `Currentness or lineage use` cell as the source-use boundary. Rows named current, such as ISO/IEC/IEEE 42010:2022, MOSA guidance, current product-line or variability work, GSN Community Standard v3, current safety-case reuse work, and the architecture-operation corpus material used as current practitioner language, require source refresh before outside-RSA use when the named standard, guide, practice family, or corpus role changes. Rows named lineage, such as DSM or product-architecture lineage, Eppinger and Browning lineage, Goodhart and Campbell proxy-pressure lineage, system-evolution and information-hiding lineage, and Pohl, Boeckle, and van der Linden lineage, stay lineage unless a current source relation is explicitly recovered.
+**Source-currentness front.** Use the table's `Currentness or lineage use` cell as the source-use boundary. Rows named current, such as ISO/IEC/IEEE 42010:2022, MOSA guidance, current product-line or variability work, GSN Community Standard v3, current safety-case reuse work, and the architecture-operation corpus material used as current practitioner language, require source refresh before outside-RSA use when the named standard, guide, practice family, or corpus use changes. Rows named lineage, such as DSM or product-architecture lineage, Eppinger and Browning lineage, Goodhart and Campbell proxy-pressure lineage, system-evolution and information-hiding lineage, and Pohl, Boeckle, and van der Linden lineage, stay lineage unless a current source relation is explicitly recovered.
 
-Refresh or lower the RSA result when a source-role change alters the reusable locus, bespoke-residue locus, accounting basis, source-return condition, comparator admission, evidence-validity relation, assurance or safety-case reliance, architecture scale-preference relation, or any outside-RSA use. A source row may explain why an accounting distinction matters, but it does not make an RSA share current for comparison, decision, assurance, gate, or publication without the governing pattern for that outside-RSA use.
+Refresh or lower the RSA result when a source-use change alters the reusable locus, bespoke-residue locus, accounting basis, source-return condition, comparator admission, evidence-validity relation, assurance or safety-case reliance, architecture scale-preference relation, or any outside-RSA use. A source row may explain why an accounting distinction matters, but it does not make an RSA share current for comparison, decision, assurance, gate, or publication without the applicable pattern for that outside-RSA use.
 
 Older or local sources may serve as lineage or worked examples only when the row says so. They do not stand in for current competitive source, and they do not make an RSA share admissible for outside-RSA use without the governing pattern for that use.
 

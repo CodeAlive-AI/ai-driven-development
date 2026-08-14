@@ -165,7 +165,7 @@ Architecture-synthesis routing note:
 - Use `C.32`, `C.32.MLAO`, `C.32.CONWAY`, or `C.32.FAIL` when the recovered claim is a candidate palette, residual-reducing multilevel frame, transformer and transformed correspondence frame, or architecture-synthesis repair cue.
 - Use `A.19.CPM`, `A.19.SelectorMechanism`, `C.11`, or `G.5` when the recovered claim is comparison-policy use, selector-policy use, local choice, or selected-set result declaration. When publication is current, use `E.17` for a source-backed face and source return and `E.24.PUB` for the publication occurrence and audience availability.
 - Use `C.18` or `C.19` when the recovered claim is archive, front, or pool policy.
-- For transformation-flow, function, module, transformer, mathematical-lens, relation-signature, affordance, architecture role, or move-like wording, recover that claim kind first and use its subject pattern by value.
+- For transformation-flow, function, module, transformer, mathematical-lens, relation-signature, affordance, architecture-use, or move-like wording, recover that claim kind first and use its subject pattern by value.
 
 ### C.30.P:5a - Refresh and reopen conditions
 

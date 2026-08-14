@@ -6,17 +6,17 @@
 
 **Plain-name.** Language-state anchoring mode.
 
-**Use this pattern when.** Use C.2.6 when a governed `U.Episteme` publication needs to say whether its current position is anchored in bodily enactment, traces, model state, document mediation, operator loop, or an explicit mixed regime.
+**Use this pattern when.** Use C.2.6 when a `U.Episteme` publication needs to say whether its current position is anchored in bodily enactment, traces, model state, document mediation, operator loop, or an explicit mixed regime.
 
 **What goes wrong if missed.** A prose note hides an embodied, trace-based, model-latent, or operator-loop cue; bridge-loss notes disappear; and the final publication face is mistaken for the original anchoring regime.
 
 **What this buys.** A nominal anchoring-mode characteristic that keeps source anchoring, publication face, carrier, bridge loss, evidence, and reliance claims separate while still letting teams compare language-state positions.
 
 ### C.2.6:1 - Problem frame
-Published position claims in the declared language-state chart over `U.CharacteristicSpace` differ not only by articulation and closure, but by how the governed `U.Episteme` in that claim is anchored to bodies, traces, model states, documents, or operator loops.
+Published position claims in the declared language-state chart over `U.CharacteristicSpace` differ not only by articulation and closure, but by how the `U.Episteme` named in that claim is anchored to bodies, traces, model states, documents, or operator loops.
 
 ### C.2.6:2 - Problem
-Without an explicit anchoring-mode declaration, embodiment and source anchoring are smuggled into informal prose or folded into representation terms. That undercuts cue comparison, undercuts bridge loss notes, and turns operator-facing language-state work into a special case with no explicit governing-pattern relation.
+Without an explicit anchoring-mode declaration, embodiment and source anchoring are smuggled into informal prose or folded into representation terms. That makes cues harder to compare, hides bridge-loss notes, and leaves operator-facing language-state work without an explicit anchoring rule.
 
 ### C.2.6:3 - Forces
 | Force | Tension |
@@ -26,11 +26,11 @@ Without an explicit anchoring-mode declaration, embodiment and source anchoring 
 | **Comparability vs oversimplification** | Compare anchoring regimes without flattening them into text-vs-nontext slogans. |
 
 ### C.2.6:4 - Solution
-`U.LanguageStateAnchoringMode` is a nominal characteristic that states the primary anchoring regime of the governed `U.Episteme` named by the current position claim: bodily enactment, trace, model state, document, operator loop, or an explicit mixed regime. If source anchoring and current publication-face anchoring differ, both shall be distinguished rather than collapsed.
+`U.LanguageStateAnchoringMode` is a nominal characteristic that states the primary anchoring regime of the `U.Episteme` named by the current position claim: bodily enactment, trace, model state, document, operator loop, or an explicit mixed regime. If source anchoring and current publication-face anchoring differ, both shall be distinguished rather than collapsed.
 
 #### C.2.6:4.0a - Kind and characteristic boundary
 
-`U.LanguageStateAnchoringMode` is a dependent durable characteristic value under the declared `U.LanguageStateSpace` / `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the anchoring-mode basis slot and nominal family for governed episteme publication positions. Evidence, source-currentness, publication face, carrier, work, gate, and reliance claims remain with their direct governing patterns.
+`U.LanguageStateAnchoringMode` is a dependent durable characteristic value under the declared `U.LanguageStateSpace` / `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the anchoring-mode basis slot and nominal family for episteme publication positions. This characteristic does not decide evidence, source-currentness, publication-face, carrier, Work, gate, or reliance claims; those claims retain their own definitions and tests.
 
 #### C.2.6:4.1 - Starter family
 | Mode | Reading | Typical evidence anchor |
@@ -42,9 +42,9 @@ Without an explicit anchoring-mode declaration, embodiment and source anchoring 
 | `AM.OperatorLoop` | the episteme is directly tied to operator intervention or console control | operator witness, console event, policy hook |
 | `AM.Mixed` | more than one anchoring mode matters substantively | explicit component list and why the mix matters |
 
-#### C.2.6:4.2 - Governing boundary
+#### C.2.6:4.2 - Contribution boundary
 
-`U.LanguageStateAnchoringMode` is an anchoring-mode characteristic for one governed `U.Episteme` claim. It is not a representation factor bundle, closure state, truth status, evidence relation, source-currentness relation, work claim, gate claim, or reliance permission by itself. Model-latent, operator-loop, embodied, trace, and document-mediated cases name where the episteme is anchored for the current claim; any publication face, carrier, source-currentness, bridge-loss, work, evidence, or gate claim stays with the direct governing pattern.
+`U.LanguageStateAnchoringMode` is an anchoring-mode characteristic for one `U.Episteme` position claim. It is not a representation factor bundle, closure state, truth status, evidence relation, source-currentness relation, Work claim, gate claim, or reliance permission by itself. Model-latent, operator-loop, embodied, trace, and document-mediated cases name where the episteme is anchored for the current claim. A publication-face, carrier, source-currentness, bridge-loss, Work, evidence, or gate claim needs its applicable definition or test; anchoring mode alone does not decide it.
 
 If embodiment matters, it shall be declared here or immediately beside this characteristic rather than being hidden inside representation talk.
 
@@ -52,7 +52,7 @@ If embodiment matters, it shall be declared here or immediately beside this char
 `AM.Mixed` is admissible only when the component modes are named explicitly. "Mixed" shall not be a lazy escape from deciding whether the key anchor is bodily, trace-based, model-latent, document-mediated, or operator-loop based.
 
 #### C.2.6:4.4 - Bridge implications
-Bridge work over governed `U.Episteme` publications in the declared language-state chart should pay attention to anchoring shifts. A translation from `AM.EmbodiedFelt` to `AM.DocumentMediated`, or from `AM.ModelLatent` to prose, often requires explicit loss notes in `F.9` and may require a bridge-use note in `F.9.1`.
+An anchoring shift can matter when a published `U.Episteme` is translated across semantic contexts. A translation from `AM.EmbodiedFelt` to `AM.DocumentMediated`, or from `AM.ModelLatent` to prose, may provide evidence about an F.9 Bridge or bounded-use claim. Use F.9 to state the Bridge, claim, evidence, and loss account. Use F.9.1 only for a separate optional stance note about that claim.
 
 ### C.2.6:5 - Archetypal Grounding
 **Tell.** A felt cue, a controller-side probe score, and a textual design note may all be early cues, but they are anchored differently.
@@ -113,7 +113,7 @@ When declaring anchoring mode, ask:
 An assurance reader should watch for the common mistake where prose formatting tricks authors into forgetting the original anchoring mode.
 
 #### C.2.6:14.3 - Bridge note
-If anchoring changes across publication or translation, `F.9` and `F.9.1` should often carry explicit loss or stance notes rather than silent equivalence language.
+If anchoring changes across publication or translation, use F.9 for the Bridge, bounded-use claim, and its evidence and loss account. Use F.9.1 only when a separate stance note about that claim helps replace silent equivalence language with a bounded reading.
 
 ### C.2.6:15 - Extension and Migration Notes
 
@@ -148,8 +148,8 @@ Distinguish the anchoring mode of the source cue from the anchoring mode of the 
 #### C.2.6:17.1 - Shift declaration rule
 When an episteme crosses from one anchoring mode to another, state whether the shift is merely publication-level or whether it changes what can be preserved, compared, or trusted. A move from operator-loop enactment to report prose, for example, often drops timing, bodily load, and enactment friction.
 
-#### C.2.6:17.2 - Bridge-loss governing relation
-If an anchoring shift matters across contexts, `F.9` or `F.9.1` should govern the loss or stance note. `C.2.6` only requires the shift to be noticed and not misrepresented as lossless.
+#### C.2.6:17.2 - Bridge-loss rule
+If an anchoring shift matters across semantic contexts, use F.9 to state the Bridge, bounded-use claim, and loss account; add an F.9.1 stance note only when it helps explain that claim. `C.2.6` only requires the shift to be noticed and not misrepresented as lossless.
 
 #### C.2.6:17.3 - Same-content illusion test
 Two cues may be paraphrased into the same sentence while remaining differently anchored. If the anchoring regime differs, the cues are not automatically substitutable.
@@ -169,7 +169,7 @@ An assurance reader should ask:
 A new local anchoring mode is justified only when it answers a distinct anchoring question that the starter family cannot express without distortion.
 
 #### C.2.6:18.3 - Cross-facet reminder
-Anchoring mode often correlates with representation and articulation changes, but it does not govern them. Reject prose that uses `AM.ModelLatent`, `AM.EmbodiedFelt`, or `AM.OperatorLoop` as shorthand for being vague, early, trustworthy, or closed.
+Anchoring mode often correlates with representation and articulation changes, but it does not define or test them. Reject prose that uses `AM.ModelLatent`, `AM.EmbodiedFelt`, or `AM.OperatorLoop` as shorthand for being vague, early, trustworthy, or closed.
 
 ### C.2.6:End
 

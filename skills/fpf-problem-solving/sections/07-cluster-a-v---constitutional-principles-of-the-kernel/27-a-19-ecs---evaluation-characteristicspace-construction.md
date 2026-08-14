@@ -66,7 +66,7 @@ Construct an evaluation `CharacteristicSpace` by declaring the evaluated object 
 
 #### A.19.ECS:4.1 - Local names and kind settlement
 
-| Local name | Role | Non-use boundary |
+| Local name | Use | Non-use boundary |
 |---|---|---|
 | `EvaluationCharacteristicSpaceSpec` | Local specification for constructing one evaluation `CharacteristicSpace`. | Not a score sheet, review packet, work plan, gate, evidence record, or project approval. |
 | `EvaluatedObjectKindRef` | Exact kind of object the evaluation evaluates. | Not a vague artifact, file bundle, campaign, chat, or source collection. |
@@ -114,7 +114,7 @@ A.19.ECS does not prescribe a publication or record form. It states which evalua
 |---|---|
 | `Evaluation problem frame` | Evaluated object kind, declared use, first useful move, existing-evaluation boundary, and what goes wrong if no evaluation exists. |
 | `Non-use boundary` | Boundaries to single-characteristic, measurement, Q-Bundle, naming, evidence, assurance, gate, work, decision, publication, and loop-method patterns. |
-| `Local names and kind settlement` | Local field names, role named by values, and non-use boundaries. |
+| `Local names and kind settlement` | Local field names, use named by values, and non-use boundaries. |
 | `Evaluation record shape` | The local record or bundle shape used by the evaluation. |
 | `Object-kind fit rule` | Admissible evaluated object, below-floor evaluated object, and outside-declared-object-kind boundary handling before and after invocation. |
 | `Evaluation evidence basis` | Loci named by value that must be checked or named when a value depends on object version, corpus projection, source currentness, mature comparator, worked case, retrieval, or other external evidence. |
@@ -206,7 +206,7 @@ It also corrects evaluation-reuse bias. A reusable evaluation is useful only whe
 | **Hidden value drift.** | The evaluation changes while old evaluations are compared as if nothing changed. | Version the evaluation and state comparability, bridge, or retirement. |
 | **Evaluation theft.** | The new evaluation starts asserting evidence, assurance, gate, work, decision, or publication truth without the corresponding predicate and case facts. | State each neighboring subject assertion under its exact predicate or constraint and leave only the value evaluation here. |
 | **Result prose as evaluation.** | An evaluator returns a narrative, two-column table, checklist count, or value list without evidence basis and short rationales. | Define the result-row shape, require short rationales and evidence basis, and lower any coordinate whose needed evidence is missing or unchecked. |
-| **Evidence basis as evaluated-object method.** | Corpus projection, retrieval, currentness, comparator, monolith-parity, quality-status evidence, or role-turn correspondence is written in the evaluated object as if it were what the evaluated-object user does. | Move the evidence to the evaluation result, evidence basis, projection carrier, or selected publication carrier; keep only the user action or boundary that the evidence justifies. |
+| **Evidence basis as evaluated-object method.** | Corpus projection, retrieval, currentness, comparator, monolith-parity, quality-status evidence, or author or reviewer turn correspondence is written in the evaluated object as if it were what the evaluated-object user does. | Move the evidence to the evaluation result, evidence basis, projection carrier, or selected publication carrier; keep only the user action or boundary that the evidence justifies. |
 | **Coordinate wording as ontology change.** | A coordinate or repair name sounds cleaner, but changes the evaluated object kind, characteristic kind, relation or claim kind, admissible use, or scope. | Treat it as a changed evaluation decision, recover the pre/post kind relation, and repair or reopen the evaluation rather than accepting lexical cleanup. |
 
 ### A.19.ECS:8 - Consequences

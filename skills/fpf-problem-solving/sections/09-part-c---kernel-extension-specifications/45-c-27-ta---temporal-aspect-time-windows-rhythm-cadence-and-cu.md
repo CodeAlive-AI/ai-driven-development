@@ -39,7 +39,7 @@ Use it when the working question is:
 
 C.27 previously carried two different concerns. One concern is temporal-claim adequacy: whether an authored claim about speed, rhythm, rate-change, recovery, or stabilization can carry a named use. The other concern is positive temporal subject matter: windows, duration, cadence, synchronization, freshness, currentness, inertia, effort over time, recovery, stabilization, and trajectory as aspects of objects or claims.
 
-This pattern carries the second concern. It lets FPF say "what temporal aspect is in play?" without immediately opening an adequacy card, a dynamics model, a work plan, a causal-use record, or a transformation statement.
+The rule content located here addresses the second concern. It lets FPF say "what temporal aspect is in play?" without immediately opening an adequacy card, a dynamics model, a work plan, a causal-use record, or a transformation statement.
 
 ### C.27.TA:2 - Problem
 
@@ -206,9 +206,9 @@ TemporalAspectStatement:
 
 #### C.27.TA:5.4 - Work Rhythm
 
-A review practice depends on a two-day response rhythm across several roles.
+A review practice depends on a two-day response rhythm across several review positions and participants. This is ordinary readable wording; it does not by itself admit Systems, classify local system-role kinds, create assignments, establish responsibility, or prove that response Work occurred.
 
-C.27.TA names the rhythm bearer, timing reference, rhythm window, and coupling relation when cross-bearer coordination matters. Work planning, role assignment, and method-description patterns carry their own claims.
+C.27.TA names the rhythm bearer, timing reference, rhythm window, and coupling relation when cross-bearer coordination matters. If an assignment claim is independently needed, recover its directly declared species and obtaining occurrence with actual participant values, holder, applicability, and extent under A.2.1. Add a local system-role kind and a separate System-classification judgment only when each is current. Only when dated response Work is claimed, point to its complete A.15.1/F.6 basis. An assignment may be current in a plan or availability statement before any response Work occurs; it does not imply completed Work.
 
 ### C.27.TA:6 - Bias-Annotation
 
@@ -252,7 +252,7 @@ Resisted distortions:
 | David Deutsch and Chiara Marletto, "Constructor theory of time" (`arXiv:2505.08692v3`), version-specific source posture. | A task or transformation specification need not itself specify duration or the internal course of performance; duration and dynamics can be recovered through timer and clock relations among attributes. Reopen this row if a later version changes the task/duration/timer/clock separation used here. | Require C.27.TA temporal aspects to name bearer and temporal reference. Use `A.3.4` for the transformation, `A.3.3` for dynamics episteme, and C.27 only when an authored temporal claim uses the aspect for a practical use. |
 | Dynamic treatment regimes and policy evaluation | Intervention timing, follow-up interval, policy window, and outcome window must be separated before causal or policy claims are made. | Use C.27.TA for temporal windows; use `C.28` and evidence patterns for causal-use and policy claims. |
 | Object-centric process and event-log practice | A scalar throughput or latency can hide multiple bearers, event types, and interaction windows. | Name temporal bearer and temporal reference before using a rate, cadence, or trajectory across objects. |
-| Rhythm and synchronization research | Rhythm requires bearer, timing reference, interval structure, and coupling only when cross-bearer coordination matters. | Keep rhythm/cadence as temporal aspects; use C.27 temporal-claim adequacy or another governing pattern only for the use that pattern carries. |
+| Rhythm and synchronization research | Rhythm requires bearer, timing reference, interval structure, and coupling only when cross-bearer coordination matters. | Keep rhythm/cadence as temporal aspects; state a separate temporal-adequacy or other subject assertion only for its current use, and resolve the defining or constraining `ClaimGraph` through C.27 or the relevant pattern locator. |
 
 ### C.27.TA:10 - Consequences
 

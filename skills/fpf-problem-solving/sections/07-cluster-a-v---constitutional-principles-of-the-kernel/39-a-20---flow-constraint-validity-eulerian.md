@@ -93,7 +93,7 @@ Under this pattern, CV is evaluated **inside** transformations. **If** a check d
 
 **Species binding (E.18 transformation-flow family).** The above classes bind to the E.18 locus baseline `{Transformation, Signature, Mechanism, WorkPlanning, Work, Check, StructuralReinterpretation}` with **`OperationalGate = Check locus`**; no additional CV classes are introduced here. Species-specific examples and broader flow specializations stay outside this CV core; `StructuralReinterpretation` semantics are received through `E.18`, `A.6.4`, and this pattern when the CV claim is present.
 
-**Out-of-scope (CV):** declaring or translating `ReferencePlane`, `Units`, or `ComparatorSet`; CSLC comparability beyond internal step preservation; Freshness; Role and Channel; Regulated-X; `DesignRunTagConsistency`. These leave CV and use `E.18`, `A.21`, or the named comparator, selector, archive, refresh, evidence, work, safety, or temporal locus when that relation is being claimed.
+**Out-of-scope (CV):** declaring or translating `ReferencePlane`, `Units`, or `ComparatorSet`; CSLC comparability beyond internal step preservation; Freshness; fit of an actual System to a local system-role kind or exact assignment; channel fit; Regulated-X; and `DesignRunTagConsistency`. These leave CV and use `E.18`, `A.21`, or the named comparator, selector, archive, refresh, evidence, Work, safety, or temporal locus when that relation is being claimed.
 
 #### A.20:4.2 - Primary EntityOfConcern and CV classes
 
@@ -129,7 +129,7 @@ Minimum pins on faces that carry CV outcomes (**Lean publication** under the sel
 #### A.20:4.4 - GateChecks (table) — CV only
 
 **Activation predicate (in `E.18` transformation-flow structures).** *Until aggregated `CV.Status=pass`, all GateFit checks return `abstain` (CV=>GF).*
-**Role and channel fit guard (GateFit scope).** GateFit checks that involve roles SHALL use **Kernel `U.Role` tokens** (domain = `U.System`) and SHALL NOT consume `TypicalEnactorRoleName` strings from alias tables.
+**System-role and channel fit guard (GateFit scope).** A GateFit check must say which claim it consumes. Classification fit names an admitted System, one local system-role kind, and the applicable C.3.2 judgment. Assignment fit names one assignment occurrence, its declared `U.SystemRoleAssignment` species, and its holder System. Channel fit is a separate claim under the rule selected for that channel relation. None may be inferred from an alias-table string such as `TypicalEnactorRoleName`, and neither a kind nor an assignment acts.
 
 | CV class | Applies when | Publication minimum |
 | --- | --- | --- |
@@ -139,7 +139,7 @@ Minimum pins on faces that carry CV outcomes (**Lean publication** under the sel
 | `MechanismUnitsCoherence` | Quantities, scales, units, or reference planes are actually used. | `CV.Status + quantity, unit, and plane refs`; CV may check coherence against already-governed unit and plane refs, but may not author, translate, bridge, or change units or planes. |
 | `LipschitzBounds` for stability claims | A perturbation, sensitivity, robustness, continuity, safety-envelope, or stability claim changes the CV use. | Bound or certificate ref under declared assumptions; no universal Lipschitz certificate demand. |
 | `ReinterpretationEquivalence` | The step is `StructuralReinterpretation`. | `CV.Status + ReinterpWitness` scoped to the addressed `PathSliceId`. |
-| `ReferencePlaneCrossing`, CSLC, Freshness, Role and Channel, Regulated-X, `DesignRunTagConsistency` | A gate, crossing, comparator, freshness, role, work, safety, or DesignRunTag relation is being claimed. | Not CV-only; use GateFit, `A.21`, or the named neighboring locus. |
+| `ReferencePlaneCrossing`, CSLC, Freshness, system-role classification or assignment fit, channel fit, Regulated-X, `DesignRunTagConsistency` | A gate, crossing, comparator, freshness, system-role, assignment, channel, Work, safety, or DesignRunTag relation is being claimed. | Not CV-only; use GateFit, `A.21`, or the named neighboring locus. |
 CV **SHALL NOT** declare or translate `Units`, `ReferencePlane`, or `ComparatorSet`. Gate-mediated crossings and gate-consumed CSLC checks use `E.18` or `A.21` with UNM declaration and bridge discipline. Comparator use, ranking, selection, set-return, archive semantics, and refresh remain with `A.19.SelectorMechanism`, `C.18`, `C.19`, `G.5`, `G.11`, or `A.21` only when those claims are present.
 
 #### A.20:4.5 - SWP matrix (declaration-locus discipline)
@@ -252,7 +252,7 @@ A mechanism emits a **set** (`Front`, `Archive`, or another declared set result)
 
 ### A.20:6 - Bias-Annotation
 
-The pattern constrains *how* CV status and witnesses are carried; it does not encode `GateProfile`-bound thresholds or role and channel fit — those sit in GateFit. This separation keeps GateFit criteria out of mechanism semantics.
+The pattern constrains *how* CV status and witnesses are carried; it does not encode `GateProfile`-bound thresholds, system-role classification or assignment fit, or channel fit. Those questions sit in GateFit under their direct neighboring governors. This separation keeps GateFit criteria out of mechanism semantics.
 
 ### A.20:7 - Conformance Checklist - Constraint-validity checks
 

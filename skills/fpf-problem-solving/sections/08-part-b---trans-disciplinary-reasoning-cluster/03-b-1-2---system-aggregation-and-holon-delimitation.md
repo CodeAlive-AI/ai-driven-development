@@ -16,33 +16,33 @@ Typical moments:
 - a functional element must be distinguished from and allocated to physical, organizational, software, or operational bearers;
 - a named decision needs one recoverable view of the system boundary, exact crossings, and compatibility choices without turning that view into the system.
 
-**First useful move.** Name the exact whole and its A.1 recognition status, the decision being made, and each load-bearing claim. For every claim, select its direct owner and either recover the exact result or state the exact missing governor or information. Only then ask whether their joint organization itself changes the named decision.
+**First useful move.** Name the exact whole and its A.1 recognition status, the decision being made, and each load-bearing claim. For every claim, select its subject pattern and either recover the exact result or state the exact missing governor or information. Only then ask whether their joint organization itself changes the named decision.
 
 **What goes wrong if missed.** System aggregation becomes a drawing exercise. Ports, suppliers, documents, digital twins, dashboards, source records, and measuring instruments become components by placement. Functional elements become physical parts by label. External change or measurement is read as containment. One convenient record then appears to establish all those unrelated facts.
 
-**What this buys.** B.1.2 coordinates one engineering aggregation decision while leaving system recognition, exact parthood, assembly, delimitation, crossing, function, bearer, characteristic, evidence, description, representation, and decision claims with their direct owners.
+**What this buys.** B.1.2 coordinates one engineering aggregation decision while leaving system recognition, exact parthood, assembly, delimitation, crossing, function, bearer, characteristic, evidence, description, representation, and decision claims with their subject patterns.
 
 **Not this pattern when.**
 
 - If the exact entity has not yet been evaluated under the already admitted `U.System` kind, use `A.1`; do not promote the proposal into a durable kind-like label.
 - If one exact part-whole relation is the question, use `A.14` and its direct specialization.
 - If constructive assembly grounding is the question, use `C.13`.
-- If functional behavior or a functional element is the question, use `A.6.F` and the exact architecture structural-view owner.
-- If module or bearer allocation is the question, use `A.6.M` and the exact architecture or part-relation owner.
+- If functional behavior or a functional element is the question, use `A.6.F` and the exact architecture structural-view pattern.
+- If module or bearer allocation is the question, use `A.6.M` and the exact architecture or part-relation pattern.
 - If a mathematical aggregation lens is the question, use `C.29`.
-- If the question is project system-of-interest designation, role assignment, Work, transformation, service/access, evidence, description, or publication, use that direct owner; B.1.2 neither identifies nor owns those relations.
+- If the question is project system-of-interest designation, system-role assignment, Work, transformation, service or access, evidence, description, or publication, use that subject pattern; B.1.2 neither identifies nor defines those relations.
 
 ### B.1.2:1 - Problem Frame
 
-B.1.2 specializes B.1 for system holons, but it is a coordination method rather than the owner of one omnibus system-aggregation relation. The useful engineering question is which exact independently governed facts must be considered together for one aggregation or delimitation decision.
+B.1.2 specializes B.1 for system holons, but it is a coordination method rather than the source of one omnibus system-aggregation relation. The useful engineering question is which exact independently governed facts must be considered together for one aggregation or delimitation decision.
 
 Keep five frequently collapsed objects distinct:
 
 1. **The exact system whole.** It is independently recognized under A.1 and its direct identity rule.
 2. **Its environment.** In this pattern, `environment` means the exact external referents and exact crossing relations made relevant by a stated delimitation and use. It is not a generic surrounding object; an exact medium is named separately when that medium is itself the subject.
 3. **An actual containing system.** The larger system of which `S` is an admitted part exists for this claim only when an exact part-whole relation independently obtains. Interaction or spatial surrounding is not enough.
-4. **The project system-of-interest.** Project designation or selection is a separate claim from `U.System` identity, environment, parthood, role, and architecture. B.1.2 does not derive it from a box or aggregation decision.
-5. **Use qualification and neighboring relations.** `Context` is not one world-side container supplied by B.1.2. When claim scope, effective reference scheme, or a bounded model-use structure qualifies a use, recover that exact qualifier under its direct owner. Recover any role assignment or other neighboring relation separately. None delimits the system, identifies its environment, or establishes containment by itself.
+4. **The project system-of-interest.** Project designation or selection is a separate claim from `U.System` identity, environment, parthood, system-role kind or assignment, and architecture. B.1.2 does not derive it from a box or aggregation decision.
+5. **Use qualification and neighboring relations.** `Context` is not one world-side container supplied by B.1.2. When claim scope, effective reference scheme, or a bounded model-use structure qualifies a use, recover that exact qualifier under its subject pattern. Recover any system-role assignment or other neighboring relation separately. None delimits the system, identifies its environment, or establishes containment by itself.
 
 B.1.2 does not make `Gamma_sys` the pattern head, create generic boundary or interaction U-kinds, or infer a part-whole relation from transformation, coordination, responsibility, or representation.
 
@@ -52,7 +52,7 @@ Without B.1.2:
 
 1. **Boundary by drawing.** A box in a diagram is accepted as system delimitation.
 2. **External relations become parts.** Suppliers, grids, sensors, controllers, teachers, measuring instruments, or digital twins are placed inside the system because they interact with it.
-3. **Functional and physical structures collapse.** A resistor symbol, control function, chassis function, or service role is treated as a physical component by label.
+3. **Functional and physical structures collapse.** A resistor symbol, control function, chassis function, or service label is treated as a physical component by name alone.
 4. **Whole-level characteristics lack grounding.** Mass, capacity, reliability, safety, throughput, assurance, or agency-like characteristics are rolled up without saying which bearers, relations, and scales support the claim.
 5. **Transformation becomes containment.** A tool, teacher, actuator, script, or controller changes a holon and is then treated as its part or containing whole.
 6. **Coordination record becomes ontology.** One aggregate-shaped record silently creates systemhood, parts, boundary, crossings, allocation, evidence, and representation instead of pointing to independently governed facts.
@@ -66,7 +66,7 @@ Without B.1.2:
 | Component structure vs functional structure | Physical or organizational bearers may realize several functions, and one function may require several bearers. |
 | Conservative roll-up vs redundancy | Weakest-link and conservation checks are useful, but redundancy or substitution may require B.2 whole reidentification. |
 | Description vs in-life system | Diagrams, BIM models, digital twins, and dashboards describe systems; they are not the system by appearance. |
-| Coordination vs ownership | One decision may need many direct facts, but the coordinating pattern must not become their universal relation owner. |
+| Coordination vs ownership | One decision may need many direct facts, but the coordinating pattern must not become the source of all those relations. |
 
 ### B.1.2:4 - Solution
 
@@ -74,15 +74,15 @@ Use B.1.2 to coordinate one named system-aggregation or delimitation decision ac
 
 #### B.1.2:4.1 - Recover Each Direct Result Or Blocker
 
-| Working question | Direct owner | Exact result or stop |
+| Working question | Subject pattern | Exact result or stop |
 | --- | --- | --- |
-| Which exact whole is being considered? | `A.1` and the kind-specific owner | One exact entity recognized under the already admitted `U.System` kind; or the exact entity, six constructive components, kind-specific condition, and `true | false | unknown` evaluation needed for recognition; otherwise the missing recognition basis. |
+| Which exact whole is being considered? | `A.1` and the kind-specific recognition pattern | One exact entity recognized under the already admitted `U.System` kind; or the exact entity, six constructive components, kind-specific condition, and `true | false | unknown` evaluation needed for recognition; otherwise the missing recognition basis. |
 | Which constituents are parts, portions, phases, or members, and how do they assemble? | `A.14`, the exact part-relation specialization, and `C.13` for constructive assembly grounding | Exact obtaining part-relation occurrences and the assembly they support; otherwise the missing direct governor, participant identity, obtaining fact, or assembly basis. |
-| Which facts and selected boundary-use claim delimit the system for this decision? | `A.1` for system identity; `A.14`, the exact part-relation specialization, and `C.13` for parthood and assembly; every exact crossing-relation owner for external participants; `C.11` for a local choice among already available boundary readings; `C.32.PAD` for a post-synthesis architecture decision concerning exact project Work; `C.2.1` only for a separately persistent claim | First return exact identity, obtaining parthood and assembly, and crossing facts. If those facts answer the question, stop. If the named use additionally selects a boundary reading, return the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that makes its inclusion, exclusion, identity-preservation, and use claim current. Another choice branch passes only after its admitted direct decision owner and result are named; otherwise return the exact missing owner, participant, obtaining fact, decision governor, or information blocker. When durable reliance is needed, one separate C.2.1 episteme states that claim and cites its basis; it creates none of the world facts. A selected `U.Structure` remains a separate B.1.2:4.2 branch. |
-| Which relation crosses the selected boundary? | The direct source, supply, flow, coupling, control, measurement, evidence, publication, transformation, commitment, or other relation owner; `F.9` only for the current crossing or bridge wording claim | One exact obtaining relation occurrence with its participant bindings and direct predicate; otherwise the missing governor, endpoint, binding, or obtaining fact. |
-| Which function is realized by which bearer? | `A.6.F`, `A.6.M`, and the exact architecture, allocation, or parthood owner | Separate exact function, bearer, allocation or correspondence, and any obtaining parthood claims; otherwise the missing bearer, allocation, or relation owner. |
+| Which facts and selected boundary-use claim delimit the system for this decision? | `A.1` for system identity; `A.14`, the exact part-relation specialization, and `C.13` for parthood and assembly; every exact crossing-relation pattern for external participants; `C.11` for a local choice among already available boundary readings; `C.32.PAD` for a post-synthesis architecture decision concerning exact project Work; `C.2.1` only for a separately persistent claim | First return exact identity, obtaining parthood and assembly, and crossing facts. If those facts answer the question, stop. If the named use additionally selects a boundary reading, return the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that makes its inclusion, exclusion, identity-preservation, and use claim current. Another choice branch passes only after its admitted direct decision predicate, source, and result are named; otherwise return the exact missing predicate or defining pattern, participant, obtaining fact, decision governor, or information blocker. When durable reliance is needed, one separate C.2.1 episteme states that claim and cites its basis; it creates none of the world facts. A selected `U.Structure` remains a separate B.1.2:4.2 branch. |
+| Which relation crosses the selected boundary? | The direct source, supply, flow, coupling, control, measurement, evidence, publication, transformation, commitment, or other relation pattern; `F.9` only for the current crossing or bridge wording claim | One exact obtaining relation occurrence with its participant bindings and direct predicate; otherwise the missing governor, endpoint, binding, or obtaining fact. |
+| Which function is realized by which bearer? | `A.6.F`, `A.6.M`, and the exact architecture, allocation, or parthood pattern | Separate exact function, bearer, allocation or correspondence, and any obtaining parthood claims; otherwise the missing bearer, allocation, predicate, or defining source. |
 | Which whole-level characteristic is claimed? | `C.16`, `A.19`, and `C.29` when a mathematical lens is used | Exact bearer, characteristic, assignment or value, scale, threshold or aggregation relation, and lens-use boundary; otherwise the missing bearer, scale, relation, or evidence. |
-| Which evidence, description, representation, or publication supports inspection? | `A.10`, `B.3`, `C.2.1`, `C.29`, `E.17`, and the exact source or architecture-description owner | The exact episteme and exact evidence, assurance, description, representation, source-use, or publication relation; otherwise the missing identity, relation, applicability, or reliance basis. |
+| Which evidence, description, representation, or publication supports inspection? | `A.10`, `B.3`, `C.2.1`, `C.29`, `E.17`, and the exact source or architecture-description pattern | The exact episteme and exact evidence, assurance, description, representation, source-use, or publication relation; otherwise the missing identity, relation, applicability, or reliance basis. |
 
 Naming those results together does not create a further world-side relation. Stop at the first direct blocker that prevents the named decision; do not weaken it into an aggregate-shaped placeholder.
 
@@ -94,13 +94,13 @@ The selected structure is non-agentive. It creates no system, part, crossing, al
 
 #### B.1.2:4.3 - Make Interface Choices About Exact Crossing Relations
 
-When the aggregate exposes, namespaces, internalizes, excludes, or leaves a crossing with its direct owner, make that choice about one exact crossing-relation occurrence and one named use. These words are ordinary decision options, not a closed FPF enumeration and not another relation kind.
+When the aggregate exposes, namespaces, internalizes, excludes, or leaves a crossing with its subject pattern, make that choice about one exact crossing-relation occurrence and one named use. These words are ordinary decision options, not a closed FPF enumeration and not another relation kind.
 
-Name the direct world facts, affected endpoints, crossing-relation owner, preserved obligation or information, evidence if relied on, and the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that chooses among the ordinary interface options when either owner applies. A different choice passes only after its admitted direct owner and result are named; otherwise stop with the missing-governor blocker. If a later use must inspect the choice, identify a separate C.2.1 episteme whose claim content describes it and cites that direct result; the episteme does not make the crossing, parthood, compatibility, or decision fact obtain. This preserves interface accountability without an omnibus compatibility-check object. Without that account, an apparent simplification can silently drop an external obligation or proliferate unmanaged endpoints.
+Name the direct world facts, affected endpoints, exact crossing predicate and occurrence, preserved obligation or information, evidence if relied on, and the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that chooses among the ordinary interface options when its exact predicate applies. A different choice passes only after its exact subject assertion, predicate, and result are named; otherwise stop with the established `missing-governor` blocker, whose content identifies the absent exact predicate source. If a later use must inspect the choice, identify a separate C.2.1 episteme whose claim content describes it and cites that direct result; the episteme does not make the crossing, parthood, compatibility, or decision fact obtain. This preserves interface accountability without an omnibus compatibility-check object. Without that account, an apparent simplification can silently drop an external obligation or proliferate unmanaged endpoints.
 
 #### B.1.2:4.4 - Whole-Level Characteristics
 
-Roll up system-level characteristics only after the exact bearer, characteristic relation or assignment, scale, and aggregation or inference rule are selected under their direct owners.
+Roll up system-level characteristics only after the exact bearer, characteristic relation or assignment, scale, and aggregation or inference rule are selected under their subject patterns.
 
 Useful families include:
 
@@ -118,7 +118,7 @@ A functional element in a functional view is not automatically a system part.
 Recover separately:
 
 - functional behavior or functional element under `A.6.F`;
-- physical, organizational, software, or operational bearer under `A.6.M`, A.14, C.13, and architecture owners;
+- physical, organizational, software, or operational bearer under `A.6.M`, A.14, C.13, and architecture patterns;
 - allocation or correspondence between function and bearer;
 - system aggregation only when bearer parthood is independently admitted.
 
@@ -138,30 +138,30 @@ A resistor symbol in a circuit diagram is a functional or design-description ele
 
 #### B.1.2:5.3 - Digital Twin Of A Building Asset
 
-A BIM model, asset register, dashboard, or digital twin may describe the built asset and its systems. It is not the asset's part by being linked in a model. Use architecture-description, publication, evidence, source-use, representation, and designation owners for the description side; use exact part-relation owners only for admitted system parts of the built asset.
+A BIM model, asset register, dashboard, or digital twin may describe the built asset and its systems. It is not the asset's part by being linked in a model. Use architecture-description, publication, evidence, source-use, representation, and naming patterns for the description side; use exact part-relation patterns only for admitted system parts of the built asset.
 
 #### B.1.2:5.4 - Lathe And Workpiece
 
-The lathe can change the workpiece through a bounded transformation and work occurrence. Those facts do not make the workpiece a lathe component or make the lathe the larger whole containing it. Use A.3.4, A.15.1, A.12, and the exact crossing or participation owner; use part-whole only when an exact relation independently obtains.
+The lathe can change the workpiece through a bounded transformation and work occurrence. Those facts do not make the workpiece a lathe component or make the lathe the larger whole containing it. Use A.3.4, A.15.1, A.12, and the exact crossing or participation pattern; use part-whole only when an exact relation independently obtains.
 
 ### B.1.2:5.5 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
 | Box as ontology | A diagram boundary becomes system delimitation by appearance. | Name the exact system and obtaining part and crossing relations. Stop if they answer the question. If a distinct use-relative boundary choice remains, name the C.11 `ChoiceResult`, C.32.PAD `ArchitectureDecisionRelation@Project`, or another explicitly admitted direct result; otherwise stop with the missing-governor blocker. Use an A.22 selected structure only when its four discriminators are independently grounded. |
-| Interface as part | Supply, signal, measurement, control, publication, or evidence relation becomes a component. | Recover the exact crossing occurrence under its direct owner and keep it separate from parthood. |
+| Interface as part | Supply, signal, measurement, control, publication, or evidence relation becomes a component. | Recover the exact crossing occurrence under its subject pattern and keep it separate from parthood. |
 | Function as bearer | A functional block or symbol is treated as a physical or organizational component. | Recover function, bearer, allocation or correspondence, and any parthood claim separately. |
-| Description as system | BIM model, dashboard, digital twin, register, or source record is treated as the system. | Use description, representation, publication, evidence, source-use, and designation owners for the description side. |
-| Transformation as containment | A tool or teacher changes a holon and is read as its part or containing whole. | Use A.3.4, A.15.1, A.12, and the exact participation or crossing owner; require a separately obtaining part-whole relation for containment. |
-| Coordination as ownership | A convenient B.1.2 record is treated as the source of all named facts. | Return every row to its direct owner; select an A.22 `U.Structure` only when the organization itself changes the decision. |
+| Description as system | BIM model, dashboard, digital twin, register, or source record is treated as the system. | Use description, representation, publication, evidence, source-use, and naming patterns for the description side. |
+| Transformation as containment | A tool or teacher changes a holon and is read as its part or containing whole. | Use A.3.4, A.15.1, A.12, and the exact participation or crossing pattern; require a separately obtaining part-whole relation for containment. |
+| Coordination as ownership | A convenient B.1.2 record is treated as the source of all named facts. | Use its subject pattern for every row; select an A.22 `U.Structure` only when the organization itself changes the decision. |
 
 ### B.1.2:6 - Conformance Checklist
 
 | Check | Requirement |
 | --- | --- |
 | `CC-B1.2-1` | The exact whole is already recognized under the admitted `U.System` kind, or the exact entity and unresolved A.1 recognition result or blocker are stated without promoting the proposal into a kind-like label. |
-| `CC-B1.2-2` | The named decision, exact system identity, and exact obtaining part and crossing relations are recoverable under their direct owners. When a distinct use-relative inclusion/exclusion choice is claimed, it cites the applicable C.11 `ChoiceResult`, C.32.PAD `ArchitectureDecisionRelation@Project`, or another explicitly admitted direct result; absent that owner it returns a missing-governor blocker. Any durable C.2.1 episteme states but does not create those facts. An optional selected structure separately satisfies all four A.22 discriminators. |
-| `CC-B1.2-3` | External supply, signal, control, measurement, source, publication, evidence, transformation, or coupling claims retain exact participant bindings and direct relation owners; none becomes parthood by crossing or importance. |
+| `CC-B1.2-2` | The named decision, exact system identity, and exact obtaining part and crossing relations are recoverable under their subject patterns. When a distinct use-relative inclusion/exclusion choice is claimed, it cites the applicable C.11 `ChoiceResult`, C.32.PAD `ArchitectureDecisionRelation@Project`, or another explicitly admitted direct result; without that predicate, source, and result it returns a missing-governor blocker. Any durable C.2.1 episteme states but does not create those facts. An optional selected structure separately satisfies all four A.22 discriminators. |
+| `CC-B1.2-3` | External supply, signal, control, measurement, source, publication, evidence, transformation, or coupling claims retain exact participant bindings and direct relation patterns; none becomes parthood by crossing or importance. |
 | `CC-B1.2-4` | Functional elements, bearers, allocation or correspondence, and any physical or organizational parthood are identified separately. |
 | `CC-B1.2-5` | A whole-level characteristic names its exact bearer, characteristic relation or assignment, scale, aggregation or inference rule, evidence, and mathematical-lens boundary when current. |
 | `CC-B1.2-6` | Changing, controlling, teaching, measuring, or repairing another holon does not make that holon a part of the acting system; any containing-whole claim has its own exact part-whole relation. |
@@ -174,9 +174,9 @@ The lathe can change the workpiece through a bounded transformation and work occ
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | Box as boundary | A diagram rectangle determines system membership. | Recover system identity and every obtaining part and crossing relation; stop if those facts answer the question. If a distinct use-relative boundary choice remains, name the applicable C.11 `ChoiceResult`, C.32.PAD `ArchitectureDecisionRelation@Project`, or another explicitly admitted direct result; otherwise stop with the missing-governor blocker. Add a C.2.1 episteme only when that claim must persist; use an A.22 selected structure only when its four discriminators are independently grounded. |
-| Supplier as component | External supplier or grid is treated as part of the system. | Recover the exact supply, commitment, evidence, source-use, or other crossing relation under its direct owner; infer no parthood. |
+| Supplier as component | External supplier or grid is treated as part of the system. | Recover the exact supply, commitment, evidence, source-use, or other crossing relation under its subject pattern; infer no parthood. |
 | Function block as module | A functional block is treated as a physical component. | Recover the exact functional element, proposed bearer, allocation or correspondence, and any obtaining part relation separately. |
-| Digital twin as part | A model or dashboard appears inside the system aggregate. | Use description, representation, publication, evidence, source-use, and designation owners; add parthood only if its direct predicate independently obtains. |
+| Digital twin as part | A model or dashboard appears inside the system aggregate. | Use description, representation, publication, evidence, source-use, and naming patterns; add parthood only if its direct predicate independently obtains. |
 | Redundancy as arithmetic | Redundancy is averaged into a better system score. | Check characteristic scale and existing-whole explanation; use B.2 when the whole must be reidentified. |
 
 ### B.1.2:8 - Consequences
@@ -184,13 +184,13 @@ The lathe can change the workpiece through a bounded transformation and work occ
 Positive consequences:
 
 - System aggregation remains practical for engineering systems and organizations.
-- Boundary and interface concerns become explicit direct-owner work without omnibus relation or check objects.
+- Boundary and interface concerns become explicit subject-pattern work without omnibus relation or check objects.
 - Functional architecture, module allocation, and physical parthood stop collapsing into one diagram.
-- Digital-twin and publication artifacts stay on the description side unless another direct pattern admits a stronger relation.
+- Digital-twin and publication artifacts stay on the description side unless an exact stronger relation predicate is defined and current facts satisfy it.
 
 Costs:
 
-- Engineering diagrams need relation-owner annotations when used for decisions.
+- Engineering diagrams used for decisions need annotations that name the exact relation and its defining pattern or declaration.
 - Some familiar component lists must be split into physical parts, functional elements, external systems, sources, and descriptions.
 - Whole-level characteristic claims need scale and relation discipline.
 
@@ -198,20 +198,20 @@ Costs:
 
 System aggregation is the place where holonic thinking is most tempting and most useful. It is also where false parthood is easy: anything connected, measured, represented, or controlled can be drawn inside a system box.
 
-B.1.2 preserves the engineering payoff by coordinating exact direct-owner results for recognition, parthood, assembly, delimitation, crossings, function, bearer, characteristic, evidence, and description. It selects one ordinary A.22 structure only when their joint organization changes the named decision.
+B.1.2 preserves the engineering payoff by coordinating exact subject-pattern results for recognition, parthood, assembly, delimitation, crossings, function, bearer, characteristic, evidence, and description. It selects one ordinary A.22 structure only when their joint organization changes the named decision.
 
 ### B.1.2:10 - SoTA-Echoing
 
 | Source family | Current lesson for B.1.2 | FPF decision |
 | --- | --- | --- |
-| Systems engineering and digital engineering practice | System breakdowns, interfaces, allocations, views, and digital twins must be coordinated but not identified with one another. | B.1.2 coordinates their exact direct-owner results and uses A.22 only when one selected organization changes the decision. |
-| Reliability and safety engineering | System-level claims need conservative relation and scale discipline. | Whole-level characteristic roll-up returns to C.16, A.19, and C.29 when those claims are relied on for the current use. |
+| Systems engineering and digital engineering practice | System breakdowns, interfaces, allocations, views, and digital twins must be coordinated but not identified with one another. | B.1.2 coordinates their exact subject-pattern results and uses A.22 only when one selected organization changes the decision. |
+| Reliability and safety engineering | System-level claims need conservative relation and scale discipline. | Whole-level characteristic roll-up requires C.16, A.19, and C.29 when those claims are relied on for the current use. |
 | Applied ontology and constructional mereology | External dependence and part-whole construction are different relations. | Crossing relations do not become parthood; A.14 and its direct specializations govern exact part relations, while C.13 may ground the assembly they support. |
-| Holonic and cyber-physical systems practice | Coordination and closure can create useful whole-level objects. | B.2 owns whole reidentification when existing system aggregation is insufficient. |
+| Holonic and cyber-physical systems practice | Coordination and closure can create useful whole-level objects. | B.2 is the pattern for whole reidentification when existing system aggregation is insufficient. |
 
 ### B.1.2:11 - Relations
 
-- **Builds on:** `B.1`, `A.1`, `A.14`, `C.13`, `A.22`, and the direct relation owners selected for the current decision.
+- **Builds on:** `B.1`, `A.1`, `A.14`, `C.13`, `A.22`, and the direct relation patterns selected for the current decision.
 - **Coordinates with:** `A.6.F` for functional elements, `A.6.M` for module and bearer allocation, `A.22` and `C.30` for selected structure and architecture, `C.16` and `A.19` for characteristics, `C.29` for mathematical lenses, `A.3.4` and `A.12` for transformation and acting-side externalization, and `C.30.AD` or `C.30.AD.BA` for architecture-description cases.
 - **Can contribute evidence to:** `B.2` when system aggregation no longer explains the whole-level claim and whole reidentification is needed.
 

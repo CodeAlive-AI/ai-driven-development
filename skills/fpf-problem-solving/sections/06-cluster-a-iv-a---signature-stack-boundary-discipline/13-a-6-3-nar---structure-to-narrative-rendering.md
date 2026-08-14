@@ -23,7 +23,7 @@ Plain starting vocabulary:
 | `ordering and connective account` | The chosen event, causal, discovery, didactic, tension, traversal, or other order, plus the links that explain why one step follows another. |
 | `narrative rendering` | The receiving sequential account. A page, audio file, slide, or publication carrier can express or make it available without being the account's claim-bearing identity. |
 | `loss and return` | What the narrative omits, weakens, rearranges, or cannot support, and where the reader returns when that missing structure matters. |
-| `narrating or rendering worker` | The person, team, or system doing the narrative-construction work. Doing that work grants no authority over the source claims. Recover the exact worker, role assignment, method, and dated Work only when actual production history matters. |
+| `narrating or rendering worker` | The person, team, or system doing the narrative-construction work. Doing that work grants no authority over the source claims. Recover the exact worker, system-role assignment, method, and dated Work only when actual production history matters. |
 | `epiplexity question` | “How much selected source structure did this narrative pull into an inspectable description for this observer and use?” NAR supplies the relation inputs; structural-information and evaluation patterns answer the value claim. |
 
 **First useful move.** Write the shortest useful narrative and place a compact narrative note beside it: reader/use; source material; selected structures and why they matter; ordering/connective account; what is preserved and foregrounded; what is omitted, weakened, or newly asserted without support; admissible and non-admissible use; and the return trigger. This note is a reading aid, not a new U-kind or mandatory work record.
@@ -118,8 +118,12 @@ StructureToNarrativeRenderingCase:
   sourceStructureDefinitionClaimEpistemeRefs?:
   sourceStructureConstraintClaimEpistemeRefs?:
   narrativeConstructionWorkRef?:
-  narratingOrRenderingSystemAndRoleRef?:
-  readerOrListenerRoleRefs:
+  narratingOrRenderingSystemRef?: U.EntityRef resolving to an admitted U.System
+  narratingOrRenderingSystemRoleKindRef?: U.KindRef resolving to one exact local system-role kind
+  narratingOrRenderingSystemRoleAssignmentRef?: U.RelationRef constrained to U.SystemRoleAssignment
+  readerOrListenerSystemRefs[]?: U.EntityRef values resolving to admitted systems
+  readerOrListenerSystemRoleKindRefs[]?: U.KindRef values resolving to exact local system-role kinds
+  readerOrListenerSystemRoleAssignmentRefs[]?: U.RelationRef values constrained to U.SystemRoleAssignment
   readerInterestOrUseHypothesis:
   intendedReaderOrListenerUse:
   orderingRationaleOrTraversalRule:
@@ -138,7 +142,7 @@ StructureToNarrativeRenderingCase:
 
 `selectedSourceStructureRefs` identifies the selected structures. A PatternID mentioned in `sourceStructureSelectionRationale` or surrounding prose only locates the content used to recognize or test them; it is not another structure reference. Include `sourceStructureDefinitionClaimEpistemeRefs` or `sourceStructureConstraintClaimEpistemeRefs` only when the exact identity of one or more definition or constraint claims changes reconstruction, comparison, dispute, or reliance. Both lists may be present and each resolves only to claim-bearing C.2.1 epistemes of the named kind.
 
-The references to `X` and `Y` resolve to their complete C.2.1 identities; this record does not add identity slots, and completing its fields does not itself authorize reliance. A system performs dated narrative-construction Work under A.15.1 when actual production history matters; `n`, `X`, and `Y` do not act. Source epistemes, parameters, methods, tools, and `Y` participate through exact direct relations or A.6.1 bindings. If the Work first constitutes `Y` and that inception claim matters, use A.15.PROD to test that separate local claim.
+The references to `X` and `Y` resolve to their complete C.2.1 identities; this record does not add identity slots, and completing its fields does not itself authorize reliance. A system performs dated narrative-construction Work under A.15.1 when actual production history matters; `n`, `X`, and `Y` do not act. A reader-or-listener hypothesis establishes none of the optional system, system-role-kind, or assignment fields: include each only when its exact referent and direct claim obtain independently. Source epistemes, parameters, methods, tools, and `Y` participate through exact direct relations or A.6.1 bindings. If the Work first constitutes `Y` and that inception claim matters, use A.15.PROD to test that separate local claim.
 
 Publication also remains separate. E.24.PUB identifies any occurrence that makes selected episteme `Y` available to an audience and bounded use through a publication form and `U.PresentationCarrier`. The occurrence, form, carrier, audience, and readable sequence neither constitute `Y` nor establish `n`. E.17.0 independently decides whether `Y` has `U.View` membership.
 
@@ -251,7 +255,7 @@ C.33 carries captured and lost architecture-relevant structures: preserve the ol
 
 #### A.6.3.NAR:5.2.2 - Live unfolding event narrative
 
-A commentator narrates a football match while it unfolds. The ordinary narrative selects score state, possession changes, tactical shape, player roles, momentum, and uncertainty, then uses event and tension order for live orientation. It does not turn provisional interpretation into settled event evidence.
+A commentator narrates a football match while it unfolds. The ordinary narrative selects score state, possession changes, tactical shape, player roles and positions, momentum, and uncertainty, then uses event and tension order for live orientation. Here *player roles* is ordinary football language for tactical contribution and behaviour—such as pressing, covering, marking, playmaking, or providing width—not an asserted FPF system-role kind or assignment. The narrative does not turn provisional interpretation into settled event evidence.
 
 Later analysis, statistics, rule disputes, injuries, or official-result use returns to the event record and official sources. If the commentary itself must be replayed, cited, or disputed, an exact case identifies the live event-record episteme `MatchState-X`, commentary episteme `LiveNarrative-Y`, and `LiveNarrativization : MatchState-X -> LiveNarrative-Y`; the match and event stream are not `X`, and audio is a form or carrier rather than `Y`.
 
@@ -305,7 +309,7 @@ Generated prose is not an admitted narrative episteme merely because it is fluen
 | `CC-NAR-8` | The exact branch is opened only when an identified receiving use makes claim identity material, such as independent travel, citation, dispute, material cross-scheme reuse, identity-bearing admission, consequential reliance, or an explicit named-receiver requirement; publicness alone is not a trigger. |
 | `CC-NAR-9` | In that branch, exact `X` and `Y` are independently identified by claim content, exact EntityOfConcern, and effective `U.ReferenceScheme`; source objects, forms, carriers, and readable prose do not substitute for them. |
 | `CC-NAR-10` | Exact `n : X -> Y` states same EntityOfConcern, claim construction, endpoint scheme relation, ordering, preservation, loss, prohibited strengthening, applicability, and return. |
-| `CC-NAR-11` | Additional source epistemes and correspondence dependencies are exact when used; actual Work, system, role, method, publication, carrier, evidence, assurance, and `U.View` membership remain separately identified and must satisfy their own definitions or tests. Completing the exact record does not itself authorize reliance. |
+| `CC-NAR-11` | Additional source epistemes and correspondence dependencies are exact when used; actual Work, system, system-role kind or assignment, method, publication, carrier, evidence, assurance, and `U.View` membership remain separately identified and must satisfy their own definitions or tests. Completing the exact record does not itself authorize reliance. |
 | `CC-NAR-12` | Reuse is lowered or locally repaired when the source, selected structure, order, loss, use, exact identity, depended-on relation, or return changes. |
 
 Counterexample replay:

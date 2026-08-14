@@ -10,7 +10,7 @@ FPF is closer to the architecture of a professional kitchen. It gives places, in
 
 In FPF terms:
 
-- roles separate who can act, review, evidence, decide, or publish;
+- system-role kinds distinguish recurring work-facing contributions, while system-role assignments identify which systems are assigned to them;
 - methods and method descriptions separate how action can be performed from the document describing it;
 - work patterns keep actual change distinct from plans;
 - evidence and assurance keep proof and reliance inspectable;

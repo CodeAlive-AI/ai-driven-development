@@ -6,7 +6,7 @@
 
 **Not this pattern when.** Use C.2.1 for episteme identity and edition continuity, A.14 for a proper temporal restriction of one unchanged episteme, A.15.1 for Work parts or occurrences, B.1.4 for a bounded aggregation of already recovered order or temporal relations, and B.3 for the assurance claim that consumes the aggregate.
 
-**What changes in practice.** Identify every input episteme and mapping before folding; preserve provenance and conflicts; and return identity, edition, temporal restriction, Work, publication, and assurance questions to their direct owners.
+**What changes in practice.** Identify every input episteme and mapping before folding; preserve provenance and conflicts; and return identity, edition, temporal restriction, Work, publication, and assurance questions to their subject patterns.
 
 > **► decided‑by: A.14 Advanced Mereology**
 **A.14/C.2.1 compliance —** Use **ConstituentOf** for semantic parts and **PortionOf** only for quantitative splits of texts/data with declared μ. Use `PhaseOf` only for a proper interval of one unchanged C.2.1 episteme. When a MethodDescription or document episteme's claim content, EntityOfConcern, or effective ReferenceScheme changes, identify another episteme and assert `EpistemeEditionRelation` only when its historical-continuation predicate obtains. Work segmentation uses A.15.1; no **ComponentOf** is used here.
@@ -20,7 +20,7 @@
 * **Strict Distinction (A.15).** We separate:
   **structure** (what the episteme comprises), **order** (argument flow), **identity and history** (C.2.1 identities and edition relations), **proper temporal restriction** (A.14), **work** (what was spent to produce/validate it), and **values** (objectives/criteria). Γ\_epist stays in the **structure/semantics** lane and calls out to Γ\_ctx/Γ\_time/Γ\_work only after their direct inputs are recovered.
 * **Mereology (A.14).** For knowledge composition we primarily use **ConstituentOf** (logical/semantic parts), **UsageOf/ReferenceTo** (external reliance), and **MemberOf** for **collections** (anthologies, corpora). We do **not** use **ComponentOf** (physical) in Γ\_epist.
-  `PhaseOf` may restrict the **same unchanged episteme** to a proper interval when its complete C.2.1 identity triple remains fixed. Distinct labelled versions or revisions require distinct C.2.1 identities when a discriminator changes and an independently obtaining `EpistemeEditionRelation` for any claimed historical continuation. **RoleBearerOf** is irrelevant here because knowledge **does not play a role**—it is **used** by a holon‑in‑role (Transformer) at run‑time (A.12).
+  `PhaseOf` may restrict the **same unchanged episteme** to a proper interval when its complete C.2.1 identity triple remains fixed. Distinct labelled versions or revisions require distinct C.2.1 identities when a discriminator changes and an independently obtaining `EpistemeEditionRelation` for any claimed historical continuation. `RoleBearerOf` is irrelevant here because knowledge does not act and acquires neither a work-facing system-role kind nor an assignment. An admitted system uses the episteme while performing Work under one exact transformer-system-role assignment.
 * **Assurance (B.3).** Knowledge carries **F**, **G**, **R** (Formality, ClaimScope, Reliability). Integration edges carry **CL** (congruence level) that penalizes poor fit. Γ\_epist **must** preserve provenance and apply **conservative** bounds: no “truth averaging,” no silent context hops. **Obligations here are mode/assurance‑gated per C.2.1.**  # [M‑0]
 * **Order/time flavours.** Argument sequences may need **Γ\_ctx** (non‑commutative ordering of premises to conclusion). Knowledge evolution first uses C.2.1 to identify exact epistemes and any obtaining edition relations; B.1.4/**Γ\_time** may then aggregate already recovered temporal restrictions, relation order, deprecation, or update windows for a bounded use. The aggregation creates neither identity nor continuity. When composition produces **new closure or supervision** (e.g., explanatory theory emerges), we declare **MHT** (B.2).
 
@@ -64,11 +64,15 @@ Naive aggregation of knowledge holons causes recurring failures:
 
 To keep **design vs run** clean (A.15), Γ\_epist has two companion flavours that share the same algebra but serve different moments:
 
+Each application first binds `TAKind` to one admitted `U.SystemRoleAssignment` species whose assigned-kind position uses the local domain for `TransformerSystemRole`. A separately identified occurrence supplies the holder System. If the species is not admitted for the receiving context or no occurrence is established for the case, `TA` is unresolved and the operator is not applied; a filtered value of the assignment family cannot substitute.
+
 1. **Synthesis (design‑time)** — fold epistemes into a **draft aggregate**
 
 ```
-Γ_epist^synth : ( D_know : DependencyGraph< U.Episteme >,
-                  TA     : U.RoleAssignment[roleRef = TransformerRole@Context] ) → U.Episteme
+Γ_epist^synth[TAKind] : ( D_know : DependencyGraph< U.Episteme >,
+                          TA     : TAKind ) → U.Episteme
+
+where TAKind is the exact admitted direct assignment species bound for this application
 ```
 
 * **Domain.** `D_know` uses **ConstituentOf**, **UsageOf/ReferenceTo**, **evidences/derivesFrom**, optional **MemberOf** for collections.
@@ -77,9 +81,11 @@ To keep **design vs run** clean (A.15), Γ\_epist has two companion flavours tha
 2. **Compile (run‑time)** — produce the **released artifact** in a bounded context
 
 ```
-Γ_epist^compile : ( E_synth : U.Episteme,
-                    Ctx     : BoundedContext,
-                    TA      : U.RoleAssignment[roleRef = TransformerRole@Context] ) → U.Episteme
+Γ_epist^compile[TAKind] : ( E_synth : U.Episteme,
+                            Ctx     : BoundedContext,
+                            TA      : TAKind ) → U.Episteme
+
+where TAKind is the exact admitted direct assignment species bound for this application
 ```
 
 * **Domain.** A synthesized episteme and a **target context** (journal, standard, program spec).
@@ -283,7 +289,7 @@ When computing **Γ\_epist^compile(E\_synth, Ctx, T)**:
 
 ### B.1.3:11 - Relations
 
-* **Builds on:** A.12 (Transformer Role—compilers/editors enact), A.14 (ConstituentOf/MemberOf and proper temporal restriction of one unchanged carrier), C.2.1 (episteme identity and independently obtaining edition relations), and A.15/A.15.1 (Strict Distinction and Work-temporal law).
+* **Builds on:** A.12 (transformer system-role kinds and the admitted systems that perform compilation or editing Work), A.14 (ConstituentOf and MemberOf and proper temporal restriction of one unchanged carrier), C.2.1 (episteme identity and independently obtaining edition relations), and A.15/A.15.1 (Strict Distinction and Work-temporal law).
 * **Coordinates with:** B.1.1 dependency-structure and relation-grounding checks, B.1.4 (Γ\_ctx/Γ\_time inside knowledge folds), B.1.6 (Γ\_work for compute/collection spend).
 * **Triggers/Complements:** B.2 (MHT) when explanatory closure or context re‑base creates a **new whole** (theory, standard).
 * **Used by:** B.3 assurance uses `F/G/R` and **CL** baselines computed here as inputs to trust calculations.

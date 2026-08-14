@@ -54,7 +54,7 @@ Without one unified `F` characteristic:
 
 `F` states **how strictly the content is expressed**. It does not state whether the content is true, well evidenced, widely applicable, or organizationally accepted.
 
-#### C.2.3:4.2 - Role in the typed `F-G-R` tuple
+#### C.2.3:4.2 - Place in the typed `F-G-R` tuple
 
 `F` is the formality coordinate in the assurance tuple. Its interaction rules are strict:
 

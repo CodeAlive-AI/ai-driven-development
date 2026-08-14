@@ -21,7 +21,7 @@ Use this pattern when a project situation contains a cross-scope architecture re
 
 The first useful move is `CrossScopeArchitectureResidualTriageRecord@Context`: name the affected declared holon levels or declared scopes, the selected structure in which those levels or scopes are recoverable, residual-bearing locus, local repair already attempted, why local repair is insufficient, and the first admissible architecture move or subject-pattern application.
 
-The primary `EntityOfConcern` is the cross-scope or interlevel architecture residual in the described holon or holon family under a bounded context. The described holon may be an admitted system, organization-as-system, episteme, work occurrence, bounded context, discipline, or another admitted holon kind. Publication-family material enters through episteme and publication owners; method descriptions enter as epistemes; method values enter through their method owner and relation slots. A phrase in a description, a diagram label, or a mathematical-lens output may make the residual visible, but it is not the residual itself and does not become the center of this pattern.
+The primary `EntityOfConcern` is the cross-scope or interlevel architecture residual in the described holon or holon family for a named architecture concern and intended use. The described holon may be an admitted system, organization-as-system, episteme, work occurrence, discipline, or another admitted holon kind. Publication-family material uses the episteme and publication patterns. A MethodDescription is an episteme; a Method uses `A.3.1` and the relations claimed for it. A phrase in a description, a diagram label, or a mathematical-lens output may make the residual visible, but it is not the residual itself and does not become the center of this pattern.
 
 `InterlevelConflict@Context` applies when two or more declared holon levels, declared scopes, or level-bearing structure relations of the same described holon or holon family impose incompatible or tensioned constraints, objectives, admissibility conditions, tempos, resource allocations, information-transfer relations, or assurance requirements. Examples include declared system levels, declared episteme levels, aggregation scopes, typed control layers, declared organizational scopes, work scopes, evidence scopes, system scopes, environment scopes, description-use scopes, publication-use scopes, or other declared scopes. A selected structure matters here only when it carries, separates, or relates the declared levels or scopes. A conflict between structures belongs in C.30.ILC only when those structures are assigned to different declared holon levels, declared scopes, scale windows, or coarse-graining steps; a same-level, same-scope, or unassigned conflict between structures belongs elsewhere until a level, scope, scale-window, or coarse-graining assignment is recovered.
 
@@ -68,8 +68,11 @@ Create a `CrossScopeArchitectureResidualTriageRecord@Context` when an architectu
 ```text
 CrossScopeArchitectureResidualTriageRecord@Context ::= {
   describedHolonRef,
-  boundedContextRef,
   architectureConcernCue,
+  intendedArchitectureUse,
+  claimScopeRef?: U.ClaimScope,
+  qualificationWindowRef?,
+  boundedModelUseStructureRef?,
 
   declaredHolonLevelRefs?: FinSet(DeclaredHolonLevelRef),
   declaredScopeRefs: FinSet(AggregationScopeRef | DeclaredSystemLevelRef |
@@ -187,7 +190,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 
 | ID | Check | Why it matters |
 |---|---|---|
-| CC-ILC-1 | A conforming use names `describedHolonRef`, `boundedContextRef`, and the architecture concern cue. | Keeps the triage grounded without narrowing architecture to systems. |
+| CC-ILC-1 | A conforming use names `describedHolonRef`, the architecture concern, intended use, ClaimScope or qualification window when each changes the result, and any independently selected bounded model-use structure actually relied on. | Keeps the triage grounded without narrowing architecture to systems or making a generic context field supply locality. |
 | CC-ILC-2 | A conforming use names declared holon levels or declared scopes, not only `level`, `layer`, `scope`, or `scale` prose. | Prevents pseudo-level and pseudo-scope reasoning. |
 | CC-ILC-3 | A conforming use names the selected structure or structure kind that carries, separates, or relates the declared levels or scopes affected by the residual. | Keeps the residual interlevel rather than merely a same-level, same-scope, or unassigned conflict between structures. |
 | CC-ILC-4 | A conforming use records conflict carriers, local repair attempted, and why local repair was insufficient when a conflict or local repair is claimed. | Prevents premature synthesis and repeated local fixes. |

@@ -8,7 +8,7 @@ The point is simple: complex reasoning usually needs several capability families
 | --- | --- | --- |
 | Structure and reality | What exists, how is it bounded, and what structure matters? | Holons, contexts, architecture, selected structures, signatures, and discipline about the project entity under concern. |
 | Knowledge and reasoning | Why should this claim be trusted, and what would change that trust? | Evidence, assurance, source-use, publication, views, explanations, and refresh. |
-| Action and work | How does intent become change, and what work actually happened? | Roles, methods, method descriptions, plans, performed work, design-run linking records, and P2W. |
+| Action and work | How does intent become change, and what work actually happened? | System-role kinds and assignments, methods, method descriptions, plans, performed work, design-run linking records, and P2W. |
 | Strategy and choice | Which option is better under uncertainty and for whom? | Characteristics, comparison, local decision, selected options, portfolios, and current-option publications. |
 | Purpose and governance | Why act, which outcomes are inadmissible, and what counts as success? | Objectives, constraints, gates, ethics, assurance, budgets, and improvement loops. |
 

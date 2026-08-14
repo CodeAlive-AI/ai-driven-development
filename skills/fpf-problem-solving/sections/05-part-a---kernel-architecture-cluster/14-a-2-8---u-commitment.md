@@ -1,344 +1,311 @@
-## A.2.8 - `U.Commitment` (Deontic Commitment Object)
+## A.2.8 - `U.Commitment` (Deontic Commitment Relation)
 
 > **Status:** Stable
 > **Type:** Definitional ontic pattern
 
-### A.2.8:0.1 - Kind Settlement
-
-`U.Commitment` is a durable deontic-relation value for an accountable obligation, recommendation-as-duty, or prohibition. Its source may cite speech acts and descriptions, but the commitment is not the utterance description, carrier, gate, performed work, strong permission, permission exercise, or weak non-prohibition/non-violation finding. Positive permission and its conflict semantics are governed by `A.2.8.PER`.
-
 ### A.2.8:0 - Use This When
 
-Use this pattern when a project needs to state who is accountable for what, under which modality, scope, and time window, without pretending that the words in a specification, contract, ticket, API description, or standard are themselves the accountable actor.
+Use this pattern when you need to decide whether one actual system or party is obliged, required as a duty, recommended as a duty, or prohibited from doing something in a stated scope and time.
 
-**What goes wrong if missed.** A specification, interface, dashboard, contract text, or ticket is treated as the accountable party; evidence, gate admission, performed work, and commitment content collapse into one deontic-looking sentence.
+Start with the ordinary question: **does this actual bearer have this duty now?** Name the bearer and the duty content. Then find the policy or prescription, the rule by which it creates an individual duty, and the actual event or other basis that the rule requires. The first useful result is one obtaining `U.Commitment`, a demonstrated non-obtaining result, `unknown`, or `missing-governor[individual commitment institution]`.
 
-**What this buys.** The accountable subject, modality, referent, scope, time window, and adjudication hooks become inspectable without turning publications, evidence, gates, or work occurrences into commitment holders.
+**What goes wrong if missed.** A policy sentence, system-role kind, assignment, publication, ticket, interface description, or complete-looking record is treated as the duty itself. A named office is called responsible without a responsibility predicate. Evidence is made constitutive merely because the duty is auditable.
 
-Typical moments:
+**What this buys.** The actual duty bearer, content, modality, scope, validity, constitutive rule, and instituting basis remain inspectable. Generic prescriptions stay usable without inventing an individual relation, while evidence and records can support a claim without becoming the commitment.
 
-- a promise content, policy clause, requirement, SLA, protocol rule, or standard clause must become an accountable commitment;
-- source wording says "MUST", "SHALL", "guarantees", "is responsible for", or "legally binding", and the project must recover the deontic relation rather than normalize keywords by themselves;
-- evidence or gates are being attached to a duty and the model must keep commitment content, adjudication evidence, and performed work distinct.
+**Not this pattern when.** Use `A.2.3` for promise content, `A.2.9` for the communicative Work that may institute a duty, and `A.2.8.PER` for permission or authorization. For responsibility, use an admitted domain responsibility predicate; if none exists, return its exact `A.6.RCD` missing governor. Use a gate pattern for admissibility and `A.15.1` for performed Work. If no current subject pattern defines how the proposed individual duty is instituted, return `missing-governor[individual commitment institution]` instead of completing a record by convention.
 
-**Primary EntityOfConcern.** The EntityOfConcern is `U.Commitment`: a deontic relation linking an accountable subject to referents under explicit modality, scope, validity window, and optional adjudication hooks.
+### A.2.8:0.1 - Kind Settlement and Wording Boundary
 
-**First useful move.** Name the accountable subject and the referents first. Then state modality, scope, validity window, and adjudication only if the commitment is meant to be checked or enforced.
+`U.Commitment` is an enduring individual deontic relation. It covers obligation, recommendation-as-duty, and prohibition. It is not a policy episteme, normative prescription, system-role kind, assignment, speech act, record, gate, permission, responsibility relation, performed Work, evidence item, or compliance result.
 
-**Not this pattern when.** If the current EntityOfConcern is the promised content, use `A.2.3`; if it is the communicative act that instituted or revoked the commitment, use `A.2.9`; if it is a gate or admissibility claim, use the gate or boundary pattern; if it is performed work, use `A.15.1`.
+The words *bind* and *binding* already denote technical bindings in FPF; they do not name this relation. Source phrases such as *binding promise*, *must*, *shall*, *guarantees*, *is responsible for*, or *legally required* are recognition cues. Recover their exact claim before selecting `U.Commitment`; the words alone institute nothing.
 
-> **Type:** Definitional (D)
-> **Normativity:** Normative (unless explicitly marked informative)
-> **Placement:** Part A → **A.2 Roles & Agency Kernel**
-> **Refines:** A.2 (Role Taxonomy)
-> **Builds on:** E.8 (authoring template), A.2.1 (RoleAssignment), A.2.6 (Scope & `Γ_time`), A.7 (EntityOfConcern / Description episteme / carrier), A.2.3 (`U.PromiseContent` as promise), A.15.1 (`U.Work`)
-> **Purpose (one line):** Provide a minimal, reusable kernel object for deontic commitments (who is accountable, under what modality, in what scope/window, with respect to which referents, with which adjudication hooks), **explicitly separating the commitment object from its utterance descriptions** (A.7), so deontics stop “living” in naming patterns and become stable across A.6 and governance patterns.
+### A.2.8:1 - Problem Frame
 
-### A.2.8:0.1 - Terminology: “binding” is overloaded (normative)
+FPF needs both generic normative content and actual individual duties:
 
-The word family “bind/binding” is used throughout FPF for **technical binding** (name/slot binding, parameter binding, etc.). This pattern introduces a narrower lexical constraint: **do not use “binding” as the Tech-level term for deontic governance relations.** Use **commitment** and model it as `U.Commitment`. If source wording uses “binding contract/promise” rhetoric, rewrite it into explicit `U.Commitment` fields (`subject`, `modality`, `scope/window`, `referents`, and—when auditable—`adjudication`).
+- a policy can say what would apply to systems of a stated kind;
+- one constitutive rule can say when that content creates an individual duty;
+- actual world-side facts can satisfy or fail that rule;
+- one assertion or record can describe the resulting relation for reliance or audit.
 
-This pattern therefore treats **commitment** as the canonical Tech-level term and uses `U.Commitment` as the kernel object.
-
-If source wording uses “binding” rhetoric (e.g., “binding contract”, “legally binding promise”), treat it as Plain-level phrasing that must be recovered into explicit `U.Commitment` fields (`subject`, `modality`, `scope/window`, `referents`, and, when auditable, `adjudication`). Deontic keywords are cues for the modality field after the deontic relation is recovered; they are not the governed object of this pattern.
-
-### A.2.8:1 - Problem frame
-
-FPF needs to express boundary governance and socio-technical obligations in a way that is:
-
-* **grounded in an accountable role, role assignment, or party** (someone is accountable),
-* **scope-and-window explicit** (where/when the commitment holds),
-* **reference-based** (no paraphrase drift; refer to claim IDs),
-* **adjudicable** (if intended to be checkable, it has an evidence story).
-
-In practice, texts use “MUST/SHALL/should”, “commits to”, “guarantees”, “SLA”, “contract”, etc. Without a stable kernel object for the deontic commitment relation, authors either:
-
-* assign agency to descriptions (“the API guarantees…”),
-* smuggle admissibility gates into deontics (or vice versa),
-* treat evidence as semantic truth,
-* or create multiple inconsistent “contracts” across faces.
-
-A.6.B provides L/A/D/E claim-classification discipline, and A.6.C provides contract-language unpacking, but both benefit from a **kernel-level** object that pins down what a `U.Commitment` is structurally (so “contract/binding” rhetoric does not leak back in as ontology).
+Those are different objects. If a generic policy and an individual relation share one record-shaped ontology, an assignment row or published clause can appear to create a duty by being filled in. If the actual bearer is replaced by a system-role kind or assignment, the model cannot say who is obliged. If responsibility is inferred from the duty, another independent relation disappears.
 
 ### A.2.8:2 - Problem
 
-How can FPF represent a deontic commitment relation so that:
+How can a practitioner state an individual deontic relation so that:
 
-1. **The accountable subject is explicit** (role or role-enactor; not “the spec/interface/service”),
-2. **Modality is explicit and lintable** (obligation, recommendation-as-duty, prohibition, and strength),
-3. **Scope and validity window are explicit** (bounded context + time + conditions),
-4. **The content is referenceable** via stable referent claim IDs (promise contents, gates, evidence targets, etc.),
-5. **Adjudication hooks exist** when the commitment is meant to be testable/auditable (links to evidence claims and carrier expectations),
-6. **Conflicts can be represented** (without requiring this pattern to solve them).
+1. the actual duty bearer is explicit;
+2. the duty referents, modality, scope, and validity are exact;
+3. one applicable constitutive rule and its required actual basis make institution testable;
+4. a generic prescription remains generic until the rule is satisfied;
+5. relation identity survives compatible description changes but not a changed bearer, content, rule, or interrupted validity;
+6. records and evidence support the claim without constituting the relation; and
+7. responsibility, permission, authority, assignment, Work, and compliance remain separately governed?
 
 ### A.2.8:3 - Forces
 
-| Force                          | Tension                                                                                                                                             |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Minimality                     | The object must be small enough to use routinely, not a full legal-contract model.                                                                  |
-| Generality                     | It must work for software specs, protocols, hardware boundaries, and socio-technical governance.                                                    |
-| Layering discipline            | It must not collapse law, gate, duty, and evidence; it should make the neighboring governing pattern explicit without replacing it.                  |
-| Local meaning                  | Defaults should be bounded-context local; cross-context commitments must be explicit.                                                               |
-| Auditability                   | Some commitments are aspirational; others are auditable. The representation must support both, without implying auditability by default.            |
-| Multi-issuer governance reality | People, organizations, and states can issue incompatible commitments; the model must represent issuer, authority relation, and priority without “solving politics” inside Part A. |
+| Force | Tension |
+| --- | --- |
+| Direct bearer vs generic policy | Policy often speaks about a system-role kind, while an individual commitment needs an actual system or party. |
+| Minimal use vs truthful institution | Routine prose should stay short, but a positive world-side relation cannot omit the rule and actual instituting basis that make it obtain. |
+| Stable identity vs changing records | A correction or compatible policy edition need not create another duty, while a changed bearer, content, constitutive rule, or interrupted validity does. |
+| Auditability vs constitution | Evidence is needed for reliance, but evidence and publication do not create the duty. |
+| Local meaning vs cross-context reuse | Modality and policy interpretation are local; a similar label or Bridge does not transfer an individual relation. |
+| Duty vs neighboring governance | Commitment, responsibility, permission, authority, assignment, Work, gate result, and compliance can co-occur without becoming one object. |
 
 ### A.2.8:4 - Solution
 
-`U.Commitment` is the **kernel object** representing a **deontic commitment relation**: it links an accountable subject (role or role-enactor) to one or more referents via an explicit modality within an explicit scope/window, optionally with adjudication hooks.
+#### A.2.8:4.1 - Direct Participants and Predicate Parameters
 
-This pattern defines:
+One `U.Commitment` occurrence has:
 
-* a **normative minimal structure** for `U.Commitment`,
-* how `U.Commitment` relates to `U.PromiseContent`, `U.Work`, and evidence,
-* how it is used as the canonical payload for **D-quadrant** obligation, recommendation-as-duty, and prohibition claims (A.6.B), while permission claims route to the exact `A.2.8.PER` result,
-* and what must be stated for a commitment to be considered **auditable**.
+- exactly one actual duty bearer, expressed by either `dutyBearerSystemRef : U.EntityRef constrained to an admitted U.System` or a separately governed local `dutyBearerPartyRef : PartyRef`;
+- a non-empty exact set of duty referents stating the action, avoidance, outcome, promise content, claim, or other governed object to which the duty applies; and
+- optional actual counterparties or beneficiaries when the duty is owed to someone.
 
-#### A.2.8:4.1 - Normative definition
+Exactly one duty-bearer branch is filled. A system-role kind, classification judgment, assignment occurrence, organizational-position label, publication, policy, or claim record is not the bearer.
 
-A **`U.Commitment`** is a **governance object** representing a **deontic relation** that constrains an **accountable subject** (role or role-enactor) with respect to one or more **referents** under an explicit **modality** and explicit **scope/window**, optionally with explicit **adjudication hooks**.
-
-Per A.7, a `U.Commitment` is **not** the text that states it: it is an object that is typically **instituted by** (and recorded via) one or more **speech acts and utterance descriptions** and may be carried by utterance carriers or publication carriers.
-
-#### A.2.8:4.2 - Minimal structure (normative)
-
-A conforming `U.Commitment` **SHALL** be representable by the following minimal record (field names are illustrative; the presence/meaning constraints are normative). **Required fields** are: `id`, `subject`, `modality`, `scope`, `validityWindow`, `referents`. `adjudication` and `source` are optional (but may become required by other patterns when auditability or authority must be made explicit).
+The normalized modality is a by-value predicate parameter:
 
 ```text
-U.Commitment ::=
-  {
-    id: CommitmentId,                  // stable identifier; can align with D-* claim ID
-    subject: CommitmentSubject,         // accountable role or role-enactor (not an episteme)
-    owedTo: optional<set<CounterpartyRef>>, // who the commitment is owed to / intended beneficiary (optional; governance-facing, not required)
-    modality: DeonticModalityToken,     // deontic modality (normalized; lintable)
-    scope: U.ClaimScope,               // bounded context for applicability + non-temporal delimiters (same primitive as claim scopes; commitments are not epistemes)
-    validityWindow: QualificationWindowPolicy, // Γ_time slice + conditions under which it applies / is in force
-    referents: set<ReferentRef>,        // what is being bound (by reference, not paraphrase)
-    adjudication: optional<AdjudicationHooks>, // evidence hooks if auditable
-    source: optional<CommitmentSource>, // what instituted/authorized it (issuer + instituting act + utterance description), when provenance matters
-    notes: optional<InformativeText>    // explicitly informative; not part of the commitment relation
-  }
-
-CommitmentSubject ::=
-  RoleRef | RoleAssignmentRef | PartyRef
-  // At minimum: a RoleRef that denotes an accountable role kind in a bounded context.
-  // If a concrete party/holder is known, prefer RoleAssignmentRef or PartyRef.
-  // If multiple subjects are independently accountable, authors SHOULD model separate commitments (one per subject),
-  // unless a joint obligation is explicitly modeled as a single PartyRef.
-
-CounterpartyRef ::=
-  PartyRef | RoleRef | RoleAssignmentRef
-  // Optional “to whom”/beneficiary/counterparty handle. Keep minimal: do not treat it as a full legal-party model.
-
-DeonticModalityToken ::=
-  MUST | MUST_NOT | SHOULD | SHOULD_NOT
-  // FPF deontic-modality values for the `modality` slot.
-  // RFC words and their synonyms are source expressions; map them only after the commitment relation is recovered.
-  //
-  // **Normalization mapping (normative; illustrative table):**
-  // - SHALL, REQUIRED        -> MUST
-  // - SHALL NOT, PROHIBITED  -> MUST_NOT
-  // - RECOMMENDED            -> SHOULD
-  // - NOT RECOMMENDED        -> SHOULD_NOT
-  // MAY and OPTIONAL do not normalize into U.Commitment. Recover their actual claim: strong or weak permission under A.2.8.PER, an A-* entry predicate, or informative prose.
-
-ReferentRef ::=
-  ClaimIdRef | PromiseContentRef | MethodDescriptionRef | WorkRef
-  // Prefer ClaimIdRef when an L/A/D/E claim ID exists (L-*, A-*, D-*, E-*).
-  // Use PromiseContentRef when the commitment is about satisfying a promise-content clause (`U.PromiseContent`).
-  // Use MethodDescriptionRef (preferred) when the commitment is about performing/avoiding a work-kind (work-to-be-done).
-  // Use WorkRef only when the commitment is about an already executed/ongoing Work occurrence (rare).
-
-PromiseContentRef ::=
-  ObjectIdRef
-  // MUST resolve to a `U.PromiseContent` object (A.2.3). (Some chapters may call this a “promise content”.)
-
-AdjudicationHooks ::=
-  {
-    evidenceRefs: set<ClaimIdRef>,      // typically E-* claim IDs
-    carrierRefs: optional<set<CarrierClassRef>>,  // if evidence carriers are part of the hook
-    evaluationNotes: optional<InformativeText>    // how adjudication is done; informative unless normed elsewhere
-  }
-
-DescriptionRef ::=
-  ClaimIdRef | EpistemeRef
-  // A pointer to an utterance description that states/records the commitment (e.g., spec clause, policy text).
-
-SpeechActRef ::=
-  ObjectIdRef
-  // MUST resolve to a `U.SpeechAct` Work occurrence (A.2.9).
-
-CommitmentSource ::=
-  {
-    issuer: optional<PartyRef>,         // who issued/authorized the commitment (can be distinct from subject)
-    speechActRef: optional<SpeechActRef>, // instituting communicative act, when available
-    descriptionRef: optional<DescriptionRef>, // where it is stated/recorded (utterance description)
-    authorityClass: optional<AuthorityTag>, // e.g., policy, contract, statute, standard (informative tag)
-    precedence: optional<PriorityTag>   // used for conflict handling elsewhere; not a truth claim
-  }
+DeonticModalityToken ::= MUST | MUST_NOT | SHOULD | SHOULD_NOT
 ```
 
-**Normative constraints:**
+`SHALL` and `REQUIRED` map to `MUST`; `SHALL NOT` and `PROHIBITED` map to `MUST_NOT`; `RECOMMENDED` maps to `SHOULD`; and `NOT RECOMMENDED` maps to `SHOULD_NOT` only after the source claim has been recovered as a duty. `MAY` and `OPTIONAL` do not normalize into `U.Commitment`; route their current meaning to A.2.8.PER, an admissibility predicate, or ordinary prose.
 
-* **(C1) Subject must be accountable.** `subject` **MUST** resolve to an accountable role or party; it **MUST NOT** be “the interface, spec, service, or system” as an episteme.
-* **(C2) Modality must be explicit and normalized.** `modality` **MUST** be present for normative commitments and **MUST** be normalized to `DeonticModalityToken`.
-* **(C3) Scope + validity must be explicit.** `scope` and `validityWindow` **MUST** be present. Defaults are allowed only when an explicit context policy is cited as the source of those defaults (do not rely on “implied defaults”). `validityWindow` expresses *in-force* conditions; per-action admissibility gates belong in referenced `A-*` predicates.
-* **(C4) Referents must be non-empty.** `referents` **MUST** contain at least one referent (what is being obligated, recommended as a duty, or prohibited).
-* **(C5) Referents must be by reference when possible.** If the bound content already exists as claim IDs, `referents` **SHOULD** cite those IDs rather than restating them.
-* **(C6) Auditable commitments must have adjudication hooks.** If a commitment is intended to be audited/adjudicated by observation, `adjudication.evidenceRefs` **SHALL** include the evidence claim IDs (typically `E-*`) that carry the adjudication substrate.
-* **(C7) Evidence belongs in adjudication by default.** If an `E-*` claim is referenced **only** to define *how to measure/verify* a commitment, it **SHALL** be listed in `adjudication.evidenceRefs` (not in `referents`). An `E-*` claim **MAY** appear in `referents` only when the commitment’s content is itself an evidence-producing/retaining duty (e.g., “MUST retain traces”).
-* **(C8) Default auditability stance is explicit.** If `adjudication` is absent, the commitment SHALL be treated as **non-auditable by default** (aspirational / governance-only), unless another pattern or Context policy explicitly supplies adjudication hooks by reference.
+Scope and validity delimit applicability. Duty referents are cited by exact identifiers when they already exist. Useful referent kinds include a claim ID, `U.PromiseContent`, an action or outcome specification, an admitted Method, or an already identified Work occurrence when the duty concerns that occurrence. A MethodDescription is cited only when the duty depends on claims in that exact episteme edition; description is not mandatory indirection to the Method.
 
-#### A.2.8:4.3 - Interaction rules (normative)
+The current normative policy or prescription, its constitutive rule, the actual instituting basis, provenance, and adjudication evidence are grounds or qualifiers. They are not extra duty bearers and do not become deontic participants by appearing in a record.
 
-1. **`U.PromiseContent` is promise content; `U.Commitment` is the governance relation.**
-   A service promise clause (what is promised) is not, by itself, an accountable commitment. A `U.Commitment` makes an accountable subject responsible for providing/satisfying the service promise (or for satisfying other governance clauses).
+#### A.2.8:4.2 - When the Relation Obtains
 
-2. **`U.Commitment` is not `U.Work`.**
-   Work is execution; commitment is governance. A commitment may reference evidence targets, but it does not “contain” evidence.
+For proposed occurrence `C`, the direct predicate `C : U.Commitment` obtains only when all of the following hold:
 
-3. **Commitments may reference admissibility predicates; they must not become predicates.**
-   If compliance requires satisfying a gate predicate, the commitment should reference the gate (`A-*`) as a referent, rather than rewriting the predicate as prose inside the commitment.
+1. the actual duty bearer and any actual counterparties are admitted, and the duty referents are identified;
+2. one identified normative policy or prescription is current and applies to those participants, referents, scope, and time;
+3. that policy contains or cites one exact constitutive rule for an individual commitment rather than only generic content about a system-role kind;
+4. the rule's required instituting basis and world-side facts obtain;
+5. modality, scope, validity window, and every rule-required condition are satisfied; and
+6. no valid revocation, defeat, expiry, or supersession has ended the relation.
 
-4. **A `U.Commitment` is a governance object, not a law.**
-   Commitments are not truth-conditional invariants. If something is intended to be an invariant, it belongs as law/definition (L), and a commitment can reference it.
+For the current A.2.9 path, the instituting basis is an actual `U.SpeechAct` Work occurrence recognized by the current policy, with the actual performer and exact covering system-role assignment independently established. Another basis is usable only when a subject pattern admits it and gives its occurrence rule.
 
-5. **Commitment changes are explicit (no silent mutation).**
-   When a commitment is updated, narrowed, broadened, superseded, or revoked, the change **SHOULD** be represented as a new `U.Commitment` (new ID) and an instituting `U.SpeechAct` (A.2.9) that references the affected commitment IDs (e.g., via `U.Commitment.source.speechActRef` and a status/supersession claim), rather than editing a published commitment in place without an auditable change record.
+If the corpus lacks the constitutive rule or the required instituting-relation predicate, return `missing-governor[individual commitment institution]`. If an applicable rule is false, the proposed commitment does not obtain. If a required evidence dependency is unavailable, reliance on the assertion is `unknown`; do not invent the relation or infer its negation.
 
-#### A.2.8:4.4 - Canonical use in boundary claim registers (recommended)
+#### A.2.8:4.3 - Occurrence Identity and Continuity
 
-When using the A.6 stack, represent each **D-quadrant** atomic claim that states an accountable obligation, recommendation-as-duty, or prohibition as a `U.Commitment` payload with the fields below. A `D-*` strong/weak permission, exercise, non-violation, or conflict claim instead cites the exact `A.2.8.PER` result and does not acquire a `U.Commitment` payload:
+One occurrence is identified by:
 
-* `id = D-*`,
-* `subject = accountable role or party`,
-* `modality = DeonticModalityToken` (normalized from RFC-keyword family usage),
-* `referents = {PromiseContentRef, MethodDescriptionRef, L-*, A-* … as needed}` (content/targets),
-* `adjudication.evidenceRefs = {E-* …}` when the commitment is meant to be checkable.
+- the actual duty bearer;
+- exact duty referents and counterparties;
+- normalized modality and scope;
+- constitutive policy and rule;
+- actual instituting basis; and
+- one maximal continuous validity interval.
 
-### A.2.8:5 - Archetypal Grounding (Tell–Show–Show)
+A compatible policy edition or record correction preserves the occurrence only through an explicit continuity decision showing that these identity-bearing facts and the rule's deontic effect continue. A changed bearer, modality, referent set, constitutive rule, instituting basis where the rule makes it identity-bearing, or interrupted validity yields another occurrence. The commitment ID and its describing claim do not decide sameness.
 
-#### A.2.8:5.1 - Tell (universal rule)
+When a rule makes a duty end with a system-role assignment, an assignment boundary ends that commitment. When the rule makes the duty persist for the same actual system across a replacement assignment, state that continuity explicitly. A different actual bearer always requires another commitment occurrence.
 
-A deontic statement becomes stable and reviewable when it is represented as a `U.Commitment` with an accountable subject, an explicit modality, explicit scope/window, referent claim IDs, and—if auditable—explicit evidence hooks.
+#### A.2.8:4.4 - Generic Prescriptions and Assignment-Mediated Rules
 
-#### A.2.8:5.2 - Show #1 (system archetype: incident response SLO discipline, post‑2015 SRE practice)
+A policy can concern `ProviderSystemRole` or another exact local system-role kind. Its `systemRoleKindRef : U.KindRef` can appear in the rule's antecedent, but the policy episteme is not an individual `U.Commitment`.
 
-A production org states: “Severity‑1 incidents must be responded to within 4 hours.”
+An exact `systemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment` can show that an actual system satisfies one applicability condition for a time. The assignment is still not the duty bearer or the commitment relation. The only valid direction is:
 
-A commitment with explicit references:
+```text
+current policy or prescription
++ exact constitutive rule
++ actual admitted system
++ obtaining exact system-role assignment or other rule-required facts
++ actual instituting basis required by that rule
+-> one separately identified U.Commitment whose duty bearer is that actual system
+```
 
-* `subject`: `RoleAssignmentRef(OpsTeam as ProviderRole)` (or at least `RoleRef(ProviderRole)`),
-* `modality`: `MUST`,
-* `scope`: bounded context `IncidentManagement`,
-* `validityWindow`: `calendarYear2026` (or “while contract edition X is active”),
-* `referents`: `{PromiseContentRef(SVC-SLO-RESP-4H), A-SEV1-CLASS-1}`
-   where `A-SEV1-CLASS-1` is the admissibility predicate for “counts as Sev‑1”.
-* `adjudication.evidenceRefs`: `{E-SLO-RESP-1}`
-   where `E-SLO-RESP-1` defines the measurement substrate and evidence carriers (tickets + timestamps + clock source).
+Classification or assignment alone never completes the implication. The rule states whether the duty starts, continues, and ends with the assignment.
 
-This makes the statement auditable by construction and keeps “classification gate” separate from “duty”.
+#### A.2.8:4.5 - Assertion, Record, and Adjudication
 
-#### A.2.8:5.3 - Show #2 (episteme archetype: protocol specification with behavioural typing motif)
+An assertion or record about a commitment is a separately identified claim-bearing episteme. A compact reliance record can expose:
 
-A protocol spec states: “Participants MUST follow the state machine; violations are rejected; traces are retained for audit.”
+```text
+CommitmentAssertion:
+  entityOfConcernRef: U.RelationRef constrained to one exact U.Commitment occurrence
+  dutyBearerSystemRef? | dutyBearerPartyRef?: the actual bearer stated by the relation
+  dutyReferentRefs: non-empty exact set
+  counterpartyRefs?: actual counterparties or beneficiaries
+  modality: normalized by-value token
+  scopeRef:
+  validityWindowRef:
+  constitutivePolicyRef: exact current normative episteme edition
+  constitutiveRuleRef: exact rule claim
+  institutingBasisRef: exact actual basis required by that rule
+  evidenceClaimRefs?: exact support used for reliance or adjudication
+  carrierRefs?: carriers used as evidence or source
+  assertionStatus: affirmed | denied | unresolved
+```
 
-Model as:
+The record is not the relation. `evidenceClaimRefs` and carriers support reliance; they are not participants or instituting facts unless the identified constitutive rule makes one such fact current and the pattern for that subject supplies its test. If adjudication is intended, cite the exact evidence claims, criteria, and carriers. If no adjudication is claimed, do not invent an audit apparatus.
 
-* A set of `L-*` claims defining the state machine and safety/progress properties within the model,
-* `A-*` claims defining what runtime checks count as “admissible trace”,
-* `D-*` commitments instantiated as `U.Commitment` with:
+Evidence used only to measure or verify the duty belongs to the support for the assertion. An evidence-producing or evidence-retaining duty instead names that production or retention content among its duty referents.
 
-  * `subject = RoleRef(ParticipantImplementer)`
-  * `modality = MUST`
-  * `referents = {L-STATE-MACHINE-1, A-TRACE-VALID-1, MethodDescriptionRef(TraceRetentionProcedure_v1)}`
-  * `adjudication.evidenceRefs = {E-TRACE-LOG-1}`
+#### A.2.8:4.6 - Direct Neighboring Relations
 
-This mirrors common post‑2015 “protocols as types” practice: semantics and progress live in the model; compliance is agent governance; evidence is trace-based.
+| Current question | Direct result | Commitment does not establish |
+| --- | --- | --- |
+| What does a generic policy prescribe? | one normative claim episteme and its applicable rule content | an individual duty |
+| Which System holds a local system-role assignment? | one A.2.1 assignment occurrence and its declared species | a duty or responsibility |
+| Did a communicative act occur? | one A.2.9 `U.SpeechAct` Work occurrence | its institutional effect without the constitutive rule |
+| Is the bearer responsible? | one admitted domain responsibility predicate and occurrence; otherwise the exact missing governor | responsibility from duty, assignment, position, or “owner” wording |
+| Is an action permitted or authorized? | the exact A.2.8.PER grant, exercise, non-prohibition, non-violation, or conflict result | permission from commitment or assignment |
+| Did access occur? | an exact domain access relation; otherwise `missing-governor` | access from permission, duty, or assignment |
+| Did the bearer perform Work? | one dated `U.Work` plus F.6 attribution when under assignment | Work from the duty alone |
+| Was the duty satisfied or violated? | a separately governed evaluation or compliance result using actual Work and evidence | compliance from publication or record completeness |
+| What resulted? | the separately identified result and its direct result relation, or A.15.PROD for production and inception | a generic result relation from duty or Work |
 
-### A.2.8:6 - Bias-Annotation
+`U.Commitment` establishes only its own deontic relation. The common corpus has no universal responsibility predicate. `VP.AllocationResponsibility` can help a reader recognize the concern but cannot make a responsibility relation obtain.
 
-Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Kernel universal** (any place FPF needs deontic commitment relations).
+#### A.2.8:4.7 - Boundary Claim Use
 
-* **Gov bias:** prioritizes accountable subjects and adjudication hooks; may increase authoring overhead.
-* **Arch bias:** pushes reference-by-ID and explicit scope/window to preserve evolvability and reduce drift.
-* **Onto/Epist bias:** enforces “descriptions don’t promise”; commitments name accountable subjects.
-* **Prag bias:** aligns with common spec-language practice (RFC keywords) but makes the structure explicit.
-* **Did bias:** favors a small record that can be taught and linted.
+An A.6.B D-quadrant claim about an obtaining individual obligation, recommendation-as-duty, or prohibition cites the exact `U.Commitment` occurrence. It does not become that occurrence. A D-claim about generic policy content remains a claim about that content until the individual predicate above is satisfied.
 
-### A.2.8:7 - Conformance Checklist (normative)
+Strong or weak permission, exercise, non-violation, and permission-conflict claims cite their exact A.2.8.PER result and do not acquire a `U.Commitment` payload. Gates remain A-claims, laws and definitions remain L-claims, and Work and evidence effects remain E-claims.
 
-1. **CC‑A.2.8‑1 (Accountable subject).** A normative `U.Commitment` **MUST** name an accountable `subject` (role assignment, role enactor, or party) and **MUST NOT** use a specification episteme, interface-description episteme, or document-carried episteme as subject.
+### A.2.8:5 - Archetypal Grounding
 
-2. **CC‑A.2.8‑2 (Explicit modality).** A normative `U.Commitment` **MUST** specify `modality` as `DeonticModalityToken` (with any RFC-keyword synonyms normalized to it).
+#### A.2.8:5.1 - Incident Response
 
-3. **CC‑A.2.8‑3 (Scope & validity explicit).** A normative `U.Commitment` **MUST** specify `scope` (`U.ClaimScope`) and `validityWindow` (qualification-window policy), or explicitly cite the context policy that supplies defaults (do not rely on “implied defaults”).
+Current `IncidentResponsePolicy-2026` says that systems assigned to `ProviderSystemRole` are subject to a four-hour incident-response prescription. That policy and its kind reference remain generic content.
 
-4. **CC‑A.2.8‑4 (Referents present and by ID).** `referents` **MUST** be non‑empty. If the bound content exists as claim IDs, the commitment **SHOULD** reference those IDs in `referents` rather than restating their content.
+`OpsTeamProviderAssignment-2026` is an assignment occurrence with admitted System `OpsTeam` as holder; its species is declared under `U.SystemRoleAssignment`. If the policy contains the holder-application rule, speech act `SA-Issue-IncidentDuty-2026 : U.SpeechAct` is the policy-recognized instituting Work, and the predicate is satisfied, then `IncidentResponseCommitment-2026 : U.Commitment` obtains with `OpsTeam` as duty bearer. Its modality is `MUST`; its referents include `SVC-SLO-RESP-4H` and the Sev-1 applicability claim; its scope is `IncidentManagement`; and its validity window is the interval established by the rule. The assignment and `ProviderSystemRole` are not the bearer.
 
-5. **CC‑A.2.8‑5 (Auditable commitments have hooks).** If the commitment is intended to be auditable, it **SHALL** include `adjudication.evidenceRefs` referencing the evidence claims (typically `E-*`) that make adjudication possible.
-6. **CC‑A.2.8‑6 (Evidence separation).** If an `E-*` claim is referenced only for measurement/verification, it **SHALL** appear in `adjudication.evidenceRefs` (not in `referents`).
+The commitment assertion may cite `E-SLO-RESP-1`, incident tickets, timestamps, and the selected clock source for adjudication. Those values make reliance testable; they do not institute the duty.
 
-### A.2.8:8 - Common Anti-Patterns and How to Avoid Them
+If `OpsTeamProviderAssignment-2026` ends and `RecoveryTeamProviderAssignment-2026` begins, the assignment edge does not transfer one commitment. When the rule ties duty continuity to the assignment, the OpsTeam commitment ends and a RecoveryTeam commitment begins only after its own required basis and facts obtain. If the rule instead preserves the duty for the same system across a replacement assignment, the continuity decision says so. A different bearer always means another occurrence.
 
-| Anti-pattern                                        | Why it fails                                               | Repair                                                                                |
-| --------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Episteme-as-subject** (“the API SHALL…”)          | assigns agency to descriptions                             | use an accountable role or party as `subject`; keep the spec as `source.descriptionRef`  |
-| **Missing scope/window**                            | commitments become unreviewable (“always/never” ambiguity) | declare `scope` + `validityWindow`; if global, say so explicitly via a policy/default |
-| **Paraphrase drift**                                | drift across faces and docs                                | reference via `referents` using claim IDs; avoid restating the same constraint        |
-| **Auditable rhetoric** (“guaranteed”) without hooks | not adjudicable                                            | add `adjudication.evidenceRefs` pointing to `E-*` claims and carrier expectations     |
-| **Gate-as-duty**                                    | confuses admissibility with obligation                     | put predicate in `A-*`; make commitment reference it (`D→A`)                          |
+A policy-recognized speech act can also institute `ShutdownNoticeCommitment-7` directly for admitted system `PlantController-7`. No system-role kind or assignment is manufactured merely to carry that duty.
 
-### A.2.8:9 - Consequences
+`IncidentResponseCommitment-2026` can obtain while no incident-ownership responsibility relation exists. Conversely, an admitted `MaintenanceActionResponsibilityRelation@Plant` can obtain while no `U.Commitment` obtains. Both can obtain for the same system and interval only as separately identified relations with separate predicates, participants, bases, and occurrence identities.
+
+Without an applicable individualizing rule, required basis, or subject pattern, the outcome is `missing-governor[individual commitment institution]`. A speech act, assignment, policy publication, or D-claim supplies only the facts it actually establishes.
+
+#### A.2.8:5.2 - Protocol Rule
+
+A protocol description says: “Participants MUST follow the state machine; invalid traces are rejected; traces are retained for audit.” Recover separate claims:
+
+- L-claims define the state machine and its safety or progress properties;
+- A-claims define which runtime traces are admissible;
+- one generic normative claim states the participant prescription;
+- one actual `U.Commitment` is asserted only for an admitted bearer after an applicable constitutive rule and its required basis obtain;
+- the duty referents cite the state-machine, admissibility, and trace-retention content by exact identifiers; and
+- evidence claims and trace carriers support later adjudication.
+
+The protocol episteme does not bear the duty. A `ParticipantImplementerSystemRole` reference in the policy does not identify an actual bearer. A visible `MUST` does not complete institution.
+
+### A.2.8:6 - Invariants and Reasoning Primitives
+
+1. Every positive `U.Commitment` has one actual system or party as duty bearer.
+2. A system-role kind or assignment can be a rule ground but never the duty bearer.
+3. Generic normative content, individual relation, and describing assertion remain separate.
+4. The direct predicate includes an applicable constitutive rule and the actual basis that rule requires.
+5. Modality, scope, validity, and referents are explicit.
+6. Missing evidence makes reliance unresolved; it does not invent or negate the relation.
+7. Assignment turnover does not transfer a duty automatically.
+8. Responsibility, permission, authority, access, Work, result, and compliance remain separately governed.
+9. Compatible record correction does not decide world-side continuity.
+10. A Bridge or similar wording in another context creates no local commitment.
+
+```text
+applicable current policy and exact constitutive rule
+  and admitted actual bearer and referents
+  and required instituting basis and facts obtain
+  and modality, scope, validity, and continuation conditions hold
+  and no defeat, revocation, expiry, or supersession applies
+  -> one U.Commitment occurrence obtains.
+```
+
+```text
+policy mentions one system-role kind
+  or one system-role assignment obtains
+  -> no individual U.Commitment follows without the exact rule, bearer, and basis.
+```
+
+### A.2.8:7 - Bias Annotation
+
+| Bias risk | Failure | Repair |
+| --- | --- | --- |
+| Record-first bias | A filled form is treated as an obtaining relation. | Test the direct predicate; keep the record as an assertion. |
+| Office-label bias | A role, office, or assignment becomes the bearer. | Recover the actual system or party and use the kind or assignment only as a rule ground. |
+| Legal-form bias | A maximal legal-policy schema is imposed on every duty. | Keep the direct participants minimal and add grounds or assurance only when the current claim needs them. |
+| Evidence-as-constitution | An audit trail is treated as what creates the duty. | Keep support and institution separate. |
+| Responsibility overreach | Duty is read as ownership or accountability. | Apply the direct responsibility predicate or return its missing governor. |
+| Keyword bias | `MUST`, `SHALL`, `MAY`, or `responsible` selects an ontology by spelling. | Recover the claim first, then select the exact relation or ordinary non-use. |
+
+### A.2.8:8 - Conformance Checklist
+
+| ID | Requirement |
+| --- | --- |
+| `CC-A2.8-1` | Exactly one actual admitted system or separately governed party is the duty bearer. |
+| `CC-A2.8-2` | Duty referents are non-empty and exact; existing claim or object identifiers are cited rather than paraphrased. |
+| `CC-A2.8-3` | Modality, scope, and validity are explicit. |
+| `CC-A2.8-4` | One current policy or prescription and its exact individualizing constitutive rule are identified. |
+| `CC-A2.8-5` | The actual instituting basis required by that rule obtains under the pattern that defines that basis. |
+| `CC-A2.8-6` | The occurrence identity and continuity decision distinguish changed bearers, content, rules, and interrupted intervals. |
+| `CC-A2.8-7` | System-role kind, classification, assignment, policy, publication, assertion, and evidence are not commitment participants or duty bearers by form. |
+| `CC-A2.8-8` | Responsibility, permission, authority, access, Work, result, and compliance are separately asserted or left unresolved. |
+| `CC-A2.8-9` | A reliance or audit record names its exact `U.Commitment` EntityOfConcern and does not claim to create it. |
+| `CC-A2.8-10` | Missing rules, governors, or information return the exact non-obtaining, `missing-governor`, or `unknown` result rather than a completed placeholder relation. |
+
+### A.2.8:9 - Common Anti-Patterns and How to Avoid Them
+
+| Anti-pattern | Why it fails | Repair |
+| --- | --- | --- |
+| “The API shall…” as duty-bearer structure | An interface description is an episteme, not the actual bearer. | Identify the policy claim and actual system or party; test institution. |
+| `CommitmentSubject ::= RoleRef | RoleAssignmentRef | PartyRef` | It merges a kind, relation occurrence, and actual bearer. | Use one actual bearer branch; keep kind and assignment in the rule's grounds. |
+| Optional institution source | A published sentence appears sufficient to create the relation. | Require the applicable rule and its actual instituting basis. |
+| Assignment-as-duty | Staffing becomes obligation. | Treat the assignment only as a rule fact and identify a separate commitment. |
+| Duty-as-responsibility | One deontic relation silently creates ownership. | State the independent responsibility predicate or return `missing-governor`. |
+| Gate-as-duty | Entry conditions become obligations. | Keep the A-claim and let an independently instituted commitment cite it when required. |
+| Auditable rhetoric without support | “Guaranteed” cannot be adjudicated. | Cite exact evidence claims and carriers only when reliance or adjudication is current. |
+| Silent mutation | Changed bearer or rule is hidden under one ID. | Apply occurrence identity and create another relation when identity-bearing facts change. |
+
+### A.2.8:10 - Consequences
 
 **Benefits**
 
-* Makes deontic statements **first-class and lintable** (subject/modality/scope/referents/hooks).
-* Enables clean integration with boundary claim classification (A.6.B) and contract unpacking (A.6.C) without embedding ontology in naming patterns.
-* Improves auditability by making evidence expectations explicit *only when intended*.
+- Generic policy content and actual duty no longer collapse.
+- Actual bearers are directly recoverable.
+- Modality, scope, referents, and validity remain lintable.
+- Assignment and responsibility independence is explicit.
+- Assurance can be added proportionately without becoming universal process overhead.
 
-**Trade-offs / mitigations**
+**Costs and mitigations**
 
-* Adds structure to authoring; mitigated by allowing conceptual evidence hooks and default scope policies.
-* Does not resolve conflicts between commitments; mitigated by capturing `source/precedence` tags and delegating resolution to governance patterns (Part D) and context policy.
+- A positive individual-duty claim needs more than a policy sentence. This is the necessary cost of claiming a world-side relation; generic policy content remains cheap to state.
+- Domains with another instituting basis need the pattern that defines that basis. Until then, `missing-governor` is an honest usable result.
+- Conflict resolution remains outside this pattern; record the current relations and use the applicable governance or decision pattern.
 
-### A.2.8:10 - Rationale
+### A.2.8:11 - Rationale
 
-The triad “promise, utterance, and commitment” is useful for language discipline, but deontic ontology should not be anchored in a naming-focused pattern. A kernel object:
+An individual duty is not whatever a normative-looking record names. Requiring an actual bearer, constitutive rule, and actual basis prevents description, assignment, and publication from becoming causes by form. Keeping assertion and evidence separate preserves both ontology and auditability. Keeping responsibility separate avoids replacing one ambiguous word with an equally ambiguous omnibus governance object.
 
-* stabilizes what a “commitment” structurally is,
-* ensures “MUST/SHALL” talk is representable without category mistakes,
-* and provides the bridge between governance claims and adjudication (via explicit hooks), which is essential for boundary engineering and ethics/governance work.
+### A.2.8:12 - SoTA-Echoing
 
-### A.2.8:11 - SoTA-Echoing (informative; post‑2015 alignment)
+> **Informative.** These comparisons motivate the distinctions; they do not govern local claims.
 
-> **Informative.** Alignment notes; not normative requirements.
+- **BCP 14 (RFC 2119 and RFC 8174).** Controlled normative keywords support explicit modality, but keywords do not identify an individual bearer or institute a duty. **Adapt.**
+- **W3C ODRL 2.2.** Duties, permissions, assignees, actions, constraints, and policy provenance motivate explicit participants and qualifiers. FPF keeps individual commitment, permission, policy episteme, and evidence separate. **Adapt.**
+- **Institutional and constitutive-rule approaches.** Their distinction between rule content, institutional conditions, and resulting relations supports the required constitutive rule and actual basis. **Adopt the separation.**
+- **Policy-as-code practice.** Admission predicates and policy evaluation should not be confused with individual obligation or performed Work. **Adapt.**
+- **Trace-based compliance and supply-chain attestations.** Evidence and carriers can support adjudication while remaining distinct from relation obtaining. **Adopt.**
 
-* **BCP 14 (RFC 2119 + RFC 8174) / modern spec-language discipline (2017+).** Treating modality tokens as a controlled family is standard; `U.Commitment.modality` makes this family explicit and lintable.
-* **Policy-as-code ecosystems (2016+).** Modern governance stacks often encode gates as code (e.g., Kubernetes admission controls, OPA/Rego-style policy evaluation) and obligations as process controls; the `U.Commitment` structure helps keep “gate predicates” separate from “actor duties”, while still linking them by reference.
-* **ODRL-style duty, permission, and prohibition modeling (W3C ODRL 2.2, 2018).** The minimal subject/assignee, action/target, constraint/window, and policy shape is widely used, and its source separation is useful. FPF adapts that shape without forcing unlike deontic effects into one modality record: `U.Commitment` keeps accountable duty/recommendation/prohibition, while `A.2.8.PER` owns strong/weak permission and exercise. Both retain explicit subject or beneficiary, action/referent, constraint/window, policy provenance, FPF boundary-claim classification, and evidence discipline.
-* **Trace-based compliance and audit (2018+ supply-chain / reproducibility practice).** “Compliance is evidenced by evidence carriers and records” is mainstream; `adjudication.evidenceRefs` captures this without turning evidence into semantics.
-* **Supply-chain attestations (2021+).** Attestation-oriented schemes (e.g., SLSA-style provenance, transparency logs) operationalize “claims + evidence carriers”; `adjudication.evidenceRefs` is the bridge point without collapsing evidence into truth.
+### A.2.8:13 - Relations
 
-### A.2.8:12 - Relations
-
-**Uses / builds on**
-
-* A.2.1 for identifying accountable roles vs role-enactors (role assignments).
-* A.2.6 for expressing scope and time/window (`U.ClaimScope`, qualification-window policy).
-* A.7 for keeping source “binding” wording distinct from utterance descriptions and carriers.
-
-**Used by**
-
-* A.6.B (Quadrant D) as the canonical payload shape only for obligation, recommendation-as-duty, and prohibition statements; strong or weak permission, exercise, non-violation, and conflict claims cite the exact `A.2.8.PER` result instead.
-* A.6.C (Contract Unpacking) as the formal governing pattern for the “Commitment” component of the bundle.
-* Part D governance/ethics patterns, when current, for expressing layered, conflicting, multi-authority commitments.
-
-**Coordinates with**
-
-* A.2.3 (`U.PromiseContent`): services are promise clauses; commitments assign accountable subjects to those clauses.
-* **A.2.9 (`U.SpeechAct`)**: `U.Commitment.source.speechActRef` points to the instituting communicative work occurrence when provenance matters.
-* A.15.1 (`U.Work`) and evidence patterns: adjudication hooks refer to evidence in work, not to text.
-* **A.2.8.PER:** strong grants, permission exercise, weak non-prohibition/non-violation findings, and permission conflicts remain separate from `U.Commitment`; a visible `MAY` or `OPTIONAL` token does not choose between those objects and an `A-*` entry predicate.
+- **Builds on:** A.2 and C.3 for system-role kinds and classification; A.2.1 for declared system-role-assignment species and their obtaining occurrences; A.2.6 for scope and temporal qualification; A.2.9 for communicative Work; A.6.RCD for missing governors; A.7 for episteme and world separation.
+- **Coordinates with:** A.2.3 for promise content; A.2.8.PER for permission; F.6 and A.15.1 for Work attribution; A.6.B and A.6.C for claim classification and boundary wording; A.10 for evidence and source reliance.
+- **Does not define:** a universal responsibility, authority, access, compliance, or result relation; a system-role kind; a system-role assignment; a policy language; or a legal-party model.
 
 ### A.2.8:End
 

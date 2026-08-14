@@ -3,7 +3,7 @@
 
 ## Contents
 
-- [A.7 - Strict Distinction (Clarity Lattice)](01-a-7---strict-distinction.md) (453 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before...
+- [A.7 - Strict Distinction (Clarity Lattice)](01-a-7---strict-distinction.md) (453 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before checking...
 - [A.7.1 - Consequence-Guided Ontological Problem Solving](02-a-7-1---consequence-guided-ontological-problem-solving.md) (161 lines) — Type: Architectural (A)
 - [A.7.2 - FPF Ontology-Premise Reconciliation](03-a-7-2---fpf-ontology-premise-reconciliation.md) (212 lines) — Type: Architectural (A)
 - [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use](04-a-7-cp---constructive-premise-compact-and-reasoning-basis-us.md) (195 lines) — Type: Architectural (A)
@@ -12,15 +12,15 @@
 - [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (375 lines) — Normativity: Normative
 - [A.11 - Ontological Parsimony](08-a-11---ontological-parsimony.md) (146 lines) — Type: Kernel parsimony and admission discipline pattern
 - [A.12 - Acting-Side Externalization and Reflexive Split](09-a-12---acting-side-externalization-and-reflexive-split.md) (294 lines) — Type: Part A architectural ontology pattern
-- [A.13 - The Agential Role & Agency Spectrum](10-a-13---the-agential-role-agency-spectrum.md) (151 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
+- [A.13 - The Agential Role & Agency Spectrum](10-a-13---the-agential-role-agency-spectrum.md) (147 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
 - [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](11-a-14---advanced-mereology-components-portions-aspects-phases.md) (292 lines) — Type: Kernel mereology and part-whole relation discipline pattern
-- [A.15 - Role–Method–Work Alignment](12-a-15---role-method-work-alignment.md) (467 lines) — Type: Architectural (A)
-- [A.15.1 - U.Work](13-a-15-1---u-work.md) (545 lines) — Type: Architectural (A)
+- [A.15 - System-Role–Method–Work Alignment](12-a-15---system-role-method-work-alignment.md) (410 lines) — Type: Architectural (A)
+- [A.15.1 - U.Work](13-a-15-1---u-work.md) (547 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan](14-a-15-2---u-workplan.md) (300 lines) — Type: Architectural (A)
 - [A.15.3 - SlotFillingsPlanItem](15-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](16-a-15-4---work-relevant-appearance-based-reliance-repair.md) (471 lines) — Type: Architectural (A)
 - [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](17-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (214 lines) — Type: Architectural (A)
-- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](18-a-15-6---project-process-and-case-recovery-through-work-meth.md) (324 lines) — Type: Architectural (A)
+- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](18-a-15-6---project-process-and-case-recovery-through-work-meth.md) (328 lines) — Type: Architectural (A)
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](19-a-15-prod---production-work-entity-identity-inception-and-pr.md) (415 lines) — Type: Architectural (A)
 - [A.16 - Language-State Move Coordination](20-a-16---language-state-move-coordination.md) (357 lines) — Type: Architectural (A)
 - [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](21-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
@@ -43,5 +43,5 @@
 - [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](38-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (421 lines) — Type: Architectural (A)
 - [A.20 - Flow Constraint Validity — Eulerian](39-a-20---flow-constraint-validity-eulerian.md) (363 lines) — Type: Architectural (A)
 - [A.21 — GateProfilization: OperationalGate(profile) (GateFit core)](40-a-21-gateprofilization-operationalgate.md) (425 lines) — Type: Architectural (A)
-- [A.22 - Structure and Structural Views (STRUCT-CAL)](41-a-22---structure-and-structural-views.md) (461 lines) — Type: Architectural pattern
+- [A.22 - Structure and Structural Views (STRUCT-CAL)](41-a-22---structure-and-structural-views.md) (479 lines) — Type: Architectural pattern
 - [A.22.CGUS - Constraint-Governed Unfolding Structure](42-a-22-cgus---constraint-governed-unfolding-structure.md) (464 lines) — Type: A.22 specialization of U.Structure

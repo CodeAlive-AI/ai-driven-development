@@ -1,7 +1,7 @@
 ## C.19.1 - Bitter‑Lesson Preference (BLP)
 
 **One‑screen purpose (manager‑first).**
-Establish, at **governing policy** level, the empirical **Bitter Lesson**: **prefer general, scale‑amenable solution bearers for work on admitted holons**. A scale-amenable bearer may be a method family, module relation, platform, system, agent substrate, organization design, evidence-bearing episteme/work arrangement, or selected structure of an admitted holon that improves with more data, compute, capacity, usable resources, reuse, or freedom of action. The bearer kind and governing owner must be named; a method family, role label, practice label, or culture label is not made a holon merely because it is compared as a bearer. Prefer the general bearer over bespoke narrow heuristics when safety, guard-rail fit, and admissibility are comparable. Exceptions require a transparent **Scale‑Audit** under the parity harness.
+Establish, at **governing policy** level, the empirical **Bitter Lesson**: **prefer general, scale‑amenable solution bearers for work on admitted holons**. A scale-amenable bearer may be a method family, module relation, platform, system, agent substrate, organization design, evidence-bearing episteme/work arrangement, or selected structure of an admitted holon that improves with more data, compute, capacity, usable resources, reuse, or freedom of action. The bearer kind and the pattern that defines or tests the bearer claim must be named; a method family, role label, practice label, or culture label is not made a holon merely because it is compared as a bearer. Prefer the general bearer over bespoke narrow heuristics when safety, guard-rail fit, and admissibility are comparable. Exceptions require a transparent **Scale‑Audit** under the parity harness.
 
 **Builds on.** C.19 (E and E‑LOG), C.24 (Agent‑Tools‑CAL; **ATC‑2**), B.3 (Assurance), E.3 (Precedence), E.5 (Guard‑Rails).
 **Coordinates with.** G.5 (Selector), G.8 (SoS‑LOG Bundles), G.9 (Parity), G.11 (Refresh‑Telemetry), A.0 (On‑Ramp).
@@ -52,7 +52,7 @@ Among admissible options with comparable assurance within **delta** and budget w
 > • **Admissibility override:** guard rails, ethics, or precedence make the general bearer inadmissible (`E.5`, `E.3`).
 > • **Scale‑probe overturn:** under **iso‑scale parity** in the declared **ScaleWindow**, the heuristic **sustainedly outperforms** with uncertainty accounted for.
 > • **Complementary bias:** the heuristic is an **inductive bias** that **improves** the general method **without blocking scale** (graceful degradation as `S` grows).
-> All overrides record a **BLP‑waiver** with rationale, responsible role, and expiry or review in the DRR.
+> All overrides record a **BLP-waiver** with rationale, admitted review System, direct waiver-review responsibility relation or exact A.6.RCD missing governor, and expiry or review in the DRR. Any system-role kind or assignment needed by the review Work is cited separately.
 
 **BLP‑2.2 — Task-family specialization compatibility.**
 A bounded specialization remains **BLP-compatible** when it is produced by a **general, scale-amenable substrate**, acts as a complementary bias that does not block scale, or survives the ordinary **BLP** comparison discipline on the same declared task family and work target. The specialization may be any narrower bearer relevant to that task family—for example, a method, module, platform variant, system form, organization form, agent behavior, evidence-bearing episteme, or work arrangement. If the user is not claiming scale advantage or overriding a general bearer, a bounded specialization may be used with explicit task family, work target, budget guard rails, and evidence source or evidence locus. A full **Scale-Audit** is required when any of these claims is current: scale advantage, override, selector-facing result declaration, publication-facing superiority, or durable reusable-bearer status. Mere specialization does not trigger it. Apply `BLP` to test whether the narrower current bearer was generated, compared, audited, waived, and overridden admissibly; do **not** require the final local behavior at every moment to look maximally generic.
@@ -62,7 +62,7 @@ Low-human-overlap or newly discovered approaches remain admissible when the task
 Author **rules‑as‑prohibitions** (negative constraints) instead of stepwise scripts; encode limits in **Φ policy tables** and **Φ_plane** and allow agents to **sequence autonomously** within those constraints. Scripts are permissible only when mandated by safety or regulation, or with compelling DRR evidence reviewed under E.3 and E.5.
 
 **BLP‑4 — Heuristic‑Debt register (mandatory).**
-Record **Heuristic Debt** only when an admitted heuristic functions as reusable solution-family policy, selector-facing preference, durable override of a general scale-amenable alternative, DRR-backed scale waiver, or project-side choice that claims scale advantage or BLP override. Ordinary local bounded tactics that make no reusable-bearer, scale-advantage, selector-facing, or override claim may remain local and bounded without Heuristic Debt publication. `BLP.HeuristicDebtEntry` is a `C.19.1`-local or `G.11`-linked policy and debt entry; it is not a universal `U.*` record kind unless separately admitted through `F.18`, `C.3`, and `E.9`. For a live debt entry, record scope, responsible role, expiry or review window, and a de-hardening plan; track in **CalibrationLedger** or **BCT** and cite in SCR.
+Record **Heuristic Debt** only when an admitted heuristic functions as reusable solution-family policy, selector-facing preference, durable override of a general scale-amenable alternative, DRR-backed scale waiver, or project-side choice that claims scale advantage or BLP override. Ordinary local bounded tactics that make no reusable-bearer, scale-advantage, selector-facing, or override claim may remain local and bounded without Heuristic Debt publication. `BLP.HeuristicDebtEntry` is a `C.19.1`-local or `G.11`-linked policy and debt entry; it is not a universal `U.*` record kind unless separately admitted through `F.18`, `C.3`, and `E.9`. For a live debt entry, record scope, admitted review System, direct debt-review responsibility relation or exact A.6.RCD missing governor, expiry or review window, and a de-hardening plan; any exact system-role kind or assignment needed by review Work remains separate. Track the entry in **CalibrationLedger** or **BCT** and cite it in SCR.
 
 **BLP‑5 — Continuous-learning discipline.**
 Where product policy allows, enable **feedback‑driven adaptation** (preference learning, critique loops) within Guard‑Rails and privacy controls; disabling adaptation requires DRR justification and review date.
@@ -78,7 +78,7 @@ Scale‑Audit artefacts **SHALL** be exported to **G.11** with edition pins, CI 
 1. **Alpha and delta tolerances** declared in DRR or via policy profile, with CI level stated.
 2. DRR includes a **Scale‑Audit** (BLP‑1a through BLP‑1g) with slopes, confidence intervals, edition pins, policy pins, planned-budget basis under **A.15.2**, and dated resource-account basis under **A.15.1**, **B.1.6**, **C.16**, and **A.10**.
 3. Selection cites **BLP‑2** and precedence checks.
-4. Any heuristic that meets the BLP‑4 trigger is recorded as a `BLP.HeuristicDebtEntry` with scope, responsible role, expiry or review window, and de‑hardening plan; ordinary local bounded tactics do not create a debt entry.
+4. Any heuristic that meets the BLP-4 trigger is recorded as a `BLP.HeuristicDebtEntry` with scope, admitted review System, direct debt-review responsibility relation or exact missing governor, expiry or review window, and de-hardening plan; ordinary local bounded tactics do not create a debt entry.
 5. Authoring defaults to **rules‑as‑prohibitions**; deviations are DRR‑justified and safety-bounded.
 6. Planned budget values under **A.15.2**, dated resource accounts under **A.15.1**, **B.1.6**, **C.16**, and **A.10**, and assurance deltas under **B.3** are reported.
 7. **Replicate counts, seed records, and confidence intervals** recorded for slope estimates; heteroscedasticity handling disclosed.
@@ -112,10 +112,10 @@ Source-use relation and source-currentness: this section is informative groundin
 ### C.19.1:6 - Payload — exports
 
 `BLP.Policy@Context` (UTS row; editioned):
-`<PreferenceDefault, alpha and delta tolerances plus CI, Scale-Audit recipe (G.9 link; DoE), WaiverRegister{reason, responsibleRoleRef, expiry}, E-LOG lens policy-ids, ATC.PolicyRef? (agentic), G.11.TelemetryPins>`.
+`<PreferenceDefault, alpha and delta tolerances plus CI, Scale-Audit recipe (G.9 link; DoE), WaiverRegister{reason, reviewSystemRef, waiverReviewResponsibilityRelationRef or responsibilityMissingGovernor, expiry}, E-LOG lens policy-ids, ATC.PolicyRef? (agentic), G.11.TelemetryPins>`.
 
 **UTS row template (conceptual; pencil‑ready).**
-`BLP.Policy@Context := PreferenceDefault=(prefer-general or neutral), tolerances=(alpha=..., delta=..., CI=...), Scale-Audit=(parity=G.9; sweep=S={...}; DoE=factorial or LHD; kneeTest=policy-tau), WaiverRegister=[{reason=..., responsibleRoleRef=..., expiry=...}], E-LOG=(policyIds=...), ATC.PolicyRef=(...), TelemetryPins=(edition=..., seeds=..., comparatorSet=...)`.
+`BLP.Policy@Context := PreferenceDefault=(prefer-general or neutral), tolerances=(alpha=..., delta=..., CI=...), Scale-Audit=(parity=G.9; sweep=S={...}; DoE=factorial or LHD; kneeTest=policy-tau), WaiverRegister=[{reason=..., reviewSystemRef=..., waiverReviewResponsibilityRelationRef=... or responsibilityMissingGovernor=..., expiry=...}], E-LOG=(policyIds=...), ATC.PolicyRef=(...), TelemetryPins=(edition=..., seeds=..., comparatorSet=...)`.
 
 ### C.19.1:7 - Relations
 

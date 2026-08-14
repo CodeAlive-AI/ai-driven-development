@@ -70,7 +70,7 @@ This pattern is **about the semantics of what is published** (and how it compose
 #### A.21:1.2 - Primary EntityOfConcern and gate-profile value family
 
 * **`OperationalGate(profile)`** — a gate/check locus in an `E.18` `TransformationFlowStructure` that mediates any **GateCrossing**: any change in `CtxState = ⟨L,P,E⃗,D⟩` or entry to performed `U.Work` through `LaunchGate`.
-* **`GateProfile`** — the profile-bound constraint of the partial function `CtxState_from -> CtxState_to`; this pattern carries the current binding and minimum profile semantics. Fuller project-local profile matrices are auxiliary material unless a current governing pattern includes them by value.
+* **`GateProfile`** — the profile-bound constraint of the partial function `CtxState_from -> CtxState_to`; the defining `ClaimGraph` located here states the current binding and minimum profile semantics. Fuller project-local profile matrices are auxiliary material unless an exact current subject assertion includes them by value under its own defining or constraining `ClaimGraph`.
 * **`GateCheckRef`** — the publication lexeme that binds a check to `(aspect, kind, edition, scope)`.
 * **`GateDecision`, `GateDecisionRationale`, and `GateDecisionExplanation`** — decision value, structured rationale, and optional narrative (non-decision).
 * **`DecisionLog`** — append-only audit record linking decisions to check refs, rule references, and (where applicable) SquareLaw mismatches.
@@ -78,12 +78,12 @@ This pattern is **about the semantics of what is published** (and how it compose
 #### A.21:1.3 - CV vs GF boundary (what “activation” means)
 
 * **ConstraintValidity (CV)** evaluates *internal step validity*;
-* **GateFit (GF)** is an aspect label on `GateCheckRef` for checks that evaluate *fit to the current `GateProfile`*: plane fit, crossing fit, freshness, evidence, role-channel fit, regulator conformance, and similar profile-fit claims. It is not a durable U-kind, graph node, record family, module, queue, or stage in the flow.
+* **GateFit (GF)** is an aspect label on `GateCheckRef` for checks that evaluate *fit to the current `GateProfile`*: plane fit, crossing fit, freshness, evidence, System-to-system-role-kind or exact-assignment fit, channel fit, regulator conformance, and similar profile-fit claims. It is not a durable U-kind, graph node, record family, module, queue, or stage in the flow.
 * **Ordering & activation.** CV is evaluated before GateFit; **while `CV.Status != pass`, all GateFit checks return `abstain`.**
 
 #### A.21:1.4 - Failure cases (diagnostic lens)
 
-* **CV ✔, GF ✖**: the transformation has passing internal CV, but the gate, profile, role, timing, or evidence fit is wrong.
+* **CV ✔, GF ✖**: the transformation has passing internal CV, but the gate, profile, System-to-system-role-kind or assignment fit, timing, channel, or evidence fit is wrong.
 * **CV ✖, GF ?**: fix the internal constraint-validity failure first; GF is inactive.
 * **CV ✔, GF ✔**: the gate publishes a `GateDecision` for the declared crossing; for `LaunchGate`, this is the gate decision for crossing into performed `U.Work`, not actual work occurrence.
 
@@ -99,7 +99,7 @@ This pattern is **about the semantics of what is published** (and how it compose
 Without a unified GateFit core:
 
 * Gate decisions become ad hoc, **order-dependent**, and hard to audit (especially with multiple independent checks).
-* Gate logic enters CV: plane claims, comparator claims, freshness claims, or role-channel claims appear “inside steps”, collapsing the CV and GF separation.
+* Gate logic enters CV: plane claims, comparator claims, freshness claims, system-role classification or assignment claims, or channel-fit claims appear “inside steps”, collapsing the CV and GF separation.
 * “Unknown”, “timeout”, or “error” behavior becomes implicit and inconsistent across cases, undermining reproducibility and safety.
 * Publication faces drift into “extra semantics” (computed scalars or tool encodings) rather than pins and references, breaking MVPK discipline.
 
@@ -187,7 +187,7 @@ Where a `GateCheck` declares an evidence-scoped `unknown` strategy, that strateg
 
 #### A.21:4.6 - GateProfiles: current binding and minimum profile semantics
 
-A.21 binds the following *functional role* of `GateProfile`:
+A.21 binds the following function of `GateProfile`:
 
 > **Terminology (avoid confusing `Lite` and `Lean`).** `GateProfile=Lite|Core|SafetyCritical|RegulatedX` is the **GateProfile value** that determines the effective GateCheck set and fold policies. `PublishMode=Lite` is a **publication-face reduction mode** (AssuranceLane‑Lite or TechCard‑Lite) and is not interpreted as a reduced-obligation `GateProfile`.
 
@@ -270,12 +270,12 @@ The gate publishes faces to record **what is declared**, not "how it executes". 
 * `EvidenceCompleteness`
 * `SafetyEnvelope`
 * `RegulatedConformance(X)` (X identity plus edition and rule refs are recorded in `DecisionLog`)
-* `RoleChannelFit` (roles are Kernel `U.Role` tokens; channel fit is a separate check component, not an alias string)
+* `SystemRoleFit` and `ChannelFit` are separate GateFit check kinds. `SystemRoleFit` must declare whether it consumes (a) an admitted System, one local system-role kind, and an applicable C.3.2 classification judgment, or (b) one assignment occurrence, its declared `U.SystemRoleAssignment` species, and its holder System. `ChannelFit` consumes the channel relation or condition selected under its rule. A visible label, alias-table string, kind, or assignment establishes neither fit claim; neither the kind nor the assignment acts.
 * `EquivalencePreservation`
 * `OutflowAudit`
 * `SnapshotConsistency`
 
-**Neighboring-governance truth examples (informative).** A.21 names and aggregates the check; it does not decide the domain truth condition. `EvidenceCompleteness` is governed by `A.10`, `G.6`, or `B.3`; `RoleChannelFit` is governed by `A.2`, `A.15`, or `A.2.6`; `ReferencePlaneCrossing` is governed by `E.18`, `F.9`, `F.17`, and UNM; `ComparatorConstraintRules` is governed by `A.19`, `G.0`, `G.5`, `C.18`, `C.19`, `G.9`, or `G.11` where comparator, archive, parity, set-return, or refresh claims are present; `SafetyEnvelope` and `RegulatedConformance(X)` are governed by the safety or regulatory pattern that governs the envelope or rule.
+**Neighboring-governance truth examples (informative).** A.21 names and aggregates the check; it does not decide the domain truth condition. `EvidenceCompleteness` is governed by `A.10`, `G.6`, or `B.3`. `SystemRoleFit` uses A.2/C.3.2 for classification or A.2.1/F.6 for an exact obtaining assignment and its holder; any Work claim stays under A.15. `ChannelFit` uses A.2.6 or the direct channel governor. `ReferencePlaneCrossing` is governed by `E.18`, `F.9`, `F.17`, and UNM. `ComparatorConstraintRules` is governed by `A.19`, `G.0`, `G.5`, `C.18`, `C.19`, `G.9`, or `G.11` where comparator, archive, parity, set-return, or refresh claims are present. `SafetyEnvelope` and `RegulatedConformance(X)` are governed by the safety or regulatory pattern that governs the envelope or rule.
 
 **Forbidden (hard boundary).**
 
@@ -319,7 +319,7 @@ A gate publication can include a `LexicalResolutionRef` or `LexicalView` for tra
 
 The built-in biases of this pattern are stated across the five Principle-Taxonomy lenses (Gov, Arch, Onto-Epist, Prag, Did).
 
-* **Gov.** Bias toward auditability and explicit responsibility (DecisionLog + profile-bound folds). Risk: gate-stewardship roles become de facto governors; mitigation: keep profiles explicit, inheritable, and pinned to `PathSliceId` for reviewable replay.
+* **Gov.** Bias toward auditability and explicit decision records. Risk: a gate steward or profile label is treated as if it supplied authority or responsibility. Mitigation: keep profiles explicit, inheritable, and pinned to `PathSliceId`; state any authority or responsibility only through its independently obtaining direct relation.
 * **Arch.** Bias toward a microkernel of checks (pluggable GateChecks + join aggregation). Risk: “check sprawl”; mitigation: scope discipline + forbidden LEX pseudo-checking + CC-based profile minima.
 * **Onto-Epist.** Bias toward a 4-value `GateDecision` lattice and explicit “does not apply” boundaries. Risk: oversimplifying nuanced epistemic uncertainty; mitigation: preserve structured rationales and check-scoped `unknown` policies rather than inventing new global decision values.
 * **Prag.** Bias toward determinism and replayability (cache invalidation by pinned vectors). Risk: higher publication overhead; mitigation: PublishMode=Lite for faces (never for weakening checks).

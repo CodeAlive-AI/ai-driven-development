@@ -1,8 +1,8 @@
 ## C.17 - Characterising Generative Novelty & Value (Creativity‑CHR)
 
 **Status.** Mechanism specification (**CHR**) — normative where stated.
-**Depends on.** A‑kernel (A.1–A.15), **A.17/A.18/A.19** characteristic-space discipline, **MM‑CHR** measurement infrastructure (C.16), **KD‑CAL** and **Sys‑CAL** for carriers and holons, **Decsn‑CAL** (utility), and declared must-constraint owners such as E.5, D.1-D.5, or service-acceptance patterns.
-**Coordinates with.** **B.5.2.1 NQD** (abductive generator) for search instrumentation, A.13 for agential participation and the A.17/A.18/A.19/C.16/A.10 stack for measured characteristics and evidence, planned **C.9 Agency Characteristic Profile** only as future consolidation, B-cluster trust/assurance (B.3), Canonical Evolution Loop (B.4), Role Assignment & Enactment Cycle (Six-Step) (F.6), and Naming Discipline for U-kinds, role names, and local term sheets (F.5).
+**Depends on.** A‑kernel (A.1–A.15), **A.17/A.18/A.19** characteristic-space discipline, **MM‑CHR** measurement infrastructure (C.16), **KD‑CAL** and **Sys‑CAL** for carriers and holons, **Decsn‑CAL** (utility), and declared must-constraint predicates and their source patterns, such as E.5, D.1-D.5, or service-acceptance patterns.
+**Coordinates with.** **B.5.2.1 NQD** (abductive generator) for search instrumentation, A.13 for agential participation and the A.17/A.18/A.19/C.16/A.10 stack for measured characteristics and evidence, planned **C.9 Agency Characteristic Profile** only as future consolidation, B-cluster trust and assurance (B.3), Canonical Evolution Loop (B.4), SystemRoleAssignment and Performed-Work Attribution Check (F.6), and Naming Discipline for U-kind Names and SystemRoleKindDescription Labels (F.5).
 **Guard‑rails.** Obeys E‑cluster authoring rules (Notational Independence; DevOps Lexical Firewall; Unidirectional Dependency).
 
 **What this pattern provides (exports):**
@@ -11,18 +11,20 @@ This pattern exports **Characteristics** and measurement templates **only**. It 
 
 * **`U.CreativitySpace`** — a **CharacteristicSpace** (CHR) with named **Characteristics** and scale metadata for evaluating creative work/outcomes **inside a `U.BoundedContext`**.
 * **`U.CreativityProfile`** — a vector of coordinates in `U.CreativitySpace` attached by a **`U.Evaluation`** to a specific **Outcome** (usually an `U.Episteme` produced by `U.Work`).
-* **Core Characteristics (kernel nucleus; Context‑extensible):**
+* **Core Characteristics (kernel nucleus; Context-extensible):**
 1. **`Novelty@context`** — distance from a **`ReferenceBase`** in the current Context/time window; ∈ \[0, 1].
-2. **`Use‑Value`** *(alias: `ValueGain`)* — measured or predicted improvement against a **declared objective**; interval/ratio scale per Context.
-3. **`Surprise`** — negative log‑likelihood under a **GenerativePrior**; bits or nats.
-4. **`ConstraintFit`** — degree of **must‑constraint** satisfaction under the declared constraint owner or service-acceptance policy; ∈ \[0, 1].
+2. **`Use-Value`** *(alias: `ValueGain`)* — measured or predicted improvement against a **declared objective**; interval/ratio scale per Context.
+3. **`Surprise`** — negative log-likelihood under a **GenerativePrior**; bits or nats.
+4. **`ConstraintFit`** — degree of **must-constraint** satisfaction under the declared constraint predicate and source or service-acceptance policy; ∈ \[0, 1].
 5. **Diversity_P (declared retained-set / portfolio-level)** — coverage/dispersion (set-level). **Illumination** is a **report-metric over Diversity_P** (coverage/QD-score summaries). It is **report-only** and **never** part of the primary dominance test.
 6. **`AttributionIntegrity`** — provenance/licensing discipline for lawful, transparent recombination; ∈ \[0, 1].
-7. **`FamilyCoverage`** — (count, polarity ↑, scope=declared retained set or portfolio, unit=families, provenance: F1‑Card)
-8. **`MinInterFamilyDistance`** — (ratio [0,1] or metric units, polarity ↑, scope=declared retained set or portfolio, DistanceDef@F1‑Card)
-9. **`AliasRisk`** —  (ratio [0,1], polarity ↓, diagnostic; drop if dSig ≥3/5 characteristics collide)
-10. **`U.DomainDiversitySignature (dSig)`** — 5‑tuple over discrete characteristics **[Sector, Function, Archetype, Regime, MetricFamily]**  attached to each `U.BoundedContext`. Used for **Near‑Duplicate** diagnostics and `AliasRisk`. Policy: flag as Near‑Duplicate when ≥3 characteristics match; see F.1 invariants and SCR‑F1‑S08..S09.
-11. **Note (AliasRisk binding).** `AliasRisk` MAY be computed using `dSig` collision diagnostics; a Context MUST declare the collision rule and policy id in DescriptorMap provenance when AliasRisk is reported.
+
+* **Optional local retained-set Characteristics:**
+7. **`FamilyCoverage`** — count or other declared coverage reading over one retained set, under a named `RetainedSetMeasurementPolicyRef` and `ScaleRef`.
+8. **`MinInterFamilyDistance`** — minimum inter-family distance for one retained set, under a named `DescriptorMapRef.edition`, `DistanceDefRef.edition`, measurement policy, and scale.
+9. **`AliasRisk`** — a context-local near-duplicate or alias diagnostic under a named `CollisionPolicyRef`, measurement policy, and scale.
+10. **`DescriptorVector`** — an optional local descriptor record used by the named measurement policy; its dimensions and taxonomy or corpus edition are explicit.
+11. **Admission boundary.** These Characteristics describe one retained set or portfolio. They do not admit or exclude sources, widen a method's applicability, establish universality, or replace the selection rule that produced the set.
 
 * **Supporting types (linking points):**
 
@@ -69,7 +71,7 @@ This pattern exports **Characteristics** and measurement templates **only**. It 
 
 **Objects in play (A‑kernel alignment):**
 
-* A **system** (person, team, service) performs **`U.Work`** under a role (A.2).
+* A **system** (person, team, or service) performs **`U.Work`**. F.6 identifies the assignment under which each performer acted; a short creativity account may omit an assignment identifier that no later claim uses.
 * That work yields a **carrier** (doc/model/design/code), i.e., an **`U.Episteme`**.
 * We apply a **`U.CreativeEvaluation`** to that episteme (and linked work) to produce a **`U.CreativityProfile`** with evidence.
 
@@ -84,7 +86,7 @@ with **scale**/**unit** metadata from **MM‑CHR** (C.16), and Context‑specifi
 
 ### C.17:4 - Vocabulary (CHR terms & D‑stubs)
 
-> Names are **context‑local**; below are kernel terms. Roles like “Designer/Reviewer” are contextual (A.2). **Documents don’t act** (A.7/A.12); they are **evaluated**.
+> Names are **context‑local**; below are kernel terms. System-role kinds are context-local (A.2); for example, a context may define `DesignerSystemRole` or `ReviewerSystemRole`, and their names follow F.5. **Documents don’t act** (A.7/A.12); they are **evaluated**.
 
 1. **`U.ReferenceBase`** *(D).* A curated, versioned **set of artifacts** (epistemes) and/or behaviours that define “what exists already” **in this Context and time window**.
    **Conformance (RB‑1):** must declare **inclusion criteria**, **time span (`TimeWindow`)**, and **coverage notes**.
@@ -166,9 +168,9 @@ Each characteristic is specified per **MM‑CHR (C.16)** with: **name**, **inten
 * **Carrier.** Outcome + Work evidence.
 * **Polarity.** Higher is **better** (1 = all mandatory satisfied).
 * **Scale.** **\[0, 1]**, ratio or pass/fail.
-* **Measurement template:** declare **set `C_must`** under its governing constraint owner or service-acceptance policy, compute **`ConstraintFit := |{c∈C_must : pass(c)}| / |C_must|`**; optionally weight per criticality.
-* **Evidence.** Checklists, tests, audits; Who/Role performed the **SpeechActs** (approvals/waivers).
-* **Scope.** Constraints are **context‑local**; Cross‑context requires **Bridge**; waivers are **SpeechAct Work** with RSG gates (A.2.5).
+* **Measurement template:** declare **set `C_must`** under its governing constraint predicates and sources or service-acceptance policy, compute **`ConstraintFit := |{c∈C_must : pass(c)}| / |C_must|`**; optionally weight per criticality.
+* **Evidence.** Checklists, tests, and audits; identify every System that actually performed approval or waiver **SpeechAct Work**, and use F.6 to identify the assignment under which it acted. A short constraint-fit account may omit an unused assignment identifier.
+* **Scope.** Constraints are **context‑local**; Cross‑context requires a **Bridge**. A waiver request, approval, or declaration can be **SpeechAct Work**, but that occurrence does not itself create a valid exception. The current constitutive rule and the exact direct waiver-effect relation or decision result recognized by the receiving constraint or decision pattern must independently obtain. Without them, report `missing-governor` and keep the failed must-constraint ineligible.
 * **Interpretation note.** Low `ConstraintFit` signals tension with declared **must‑constraints** and warrants reframing or redesign; **this pattern does not prescribe go/no‑go rules**.
 
 #### C.17:5.5 - `Diversity_P` *(declared retained-set / portfolio-level)* — “Are we exploring the space?”
@@ -183,10 +185,14 @@ Each characteristic is specified per **MM‑CHR (C.16)** with: **name**, **inten
 * **Didactic cue.** Use **Diversity\_P** to **shape portfolios**, not to pick single winners.
 * **Marginal gain (for generators)** — normative. For a candidate h and current set S, ΔDiversity_P(h | S) := Diversity_P(S ∪ {h}) − Diversity_P(S). Contexts using NQD SHALL compute D as this marginal and publish the Diversity_P definition alongside the CharacteristicSpace/kernel and TimeWindow.
 
-**Heterogeneity Characterisation**
-* FamilyCoverage  (polarity ↑) — count of distinct domain‑families covered by a declared retained set, portfolio, or triad; unit: families; window: declared.
-* MinInterFamilyDistance (polarity ↑) — min distance between selected families in DescriptorMap for that declared retained set, portfolio, or triad; unit: per DistanceDef; window: declared.
-* AliasRisk (polarity ↓) — collinearity/near‑duplicate risk indicator for contextual signatures; unit: score (0–1) with policy id.
+**Optional local retained-set characterisation**
+
+* `FamilyCoverage` (polarity ↑ when the local policy says broader is preferable) — coverage of locally defined families in one declared retained set; its unit and scale come from `RetainedSetMeasurementPolicyRef` and `ScaleRef`.
+* `MinInterFamilyDistance` (polarity set by the local policy) — the smallest distance among the locally defined families in that set; cite `DescriptorMapRef.edition`, `DistanceDefRef.edition`, the scale, and the family representation rule.
+* `AliasRisk` (polarity ↓ when higher means more risk) — a near-duplicate or alias diagnostic; cite `CollisionPolicyRef`, the descriptor source edition, and the scale.
+* `DescriptorVector` — optional per-member or per-Context descriptors whose dimensions and interpretation are declared by the same local policy.
+
+These readings characterize the retained set for a named use. They do not admit sources, establish wider applicability, or prove that the set is universal. A changed measurement policy, descriptor map, distance definition, scale, or collision policy creates a new comparison basis.
 
 **Lexical special case (F.18 naming).**
 For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be computed over head-term families, not over raw strings**. Variants that share the same lexical head (e.g., “Reference plane”, “Plane of reference”, “Planar reference”) **MUST** be treated as one family for coverage and distance; only candidates with distinct heads contribute to lexical Diversity_P. This aligns lexical use of Diversity_P with `FamilyCoverage` / `AliasRisk` and prevents inflating diversity by near-synonyms of a single head.
@@ -200,8 +206,8 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 * **Template.** Trace graph coverage against Context policy; licence constraints as declared must-constraint rules.
 * **Evidence.** PROV‑style links; licence scans; acknowledgements.
 * **Didactic cue.** High `AttributionIntegrity` signals lawful and transparent recombination; low values indicate unacceptable practice in most Contexts.
-* **Default role.** `AttributionIntegrity` is **measurable but non‑dominant**. It MAY serve as a **policy filter/tie‑break** (C.19). If certain attribution duties are **must‑constraints**, they belong to **ConstraintFit** under the declared constraint owner and act as **eligibility gates**. It is **not** part of the default dominance set.
-* **Dominance & gating note (normative).** `AttributionIntegrity` is a measurable **Characteristic**; it is **not** in the default dominance set. Contexts MAY use it as a **filter** or **tie‑break** via policy (C.19). Legal/ethical **must‑fit** checks live in **ConstraintFit** under the declared constraint owner; failing those blocks eligibility **before** dominance.
+* **Default treatment.** `AttributionIntegrity` is **measurable but non‑dominant**. It MAY serve as a **policy filter or tie‑break** (C.19). If certain attribution duties are **must‑constraints**, they belong to **ConstraintFit** under the declared constraint predicate and source and become **eligibility conditions**. It is **not** part of the default dominance set.
+* **Dominance & gating note (normative).** `AttributionIntegrity` is a measurable **Characteristic**; it is **not** in the default dominance set. Contexts MAY use it as a **filter** or **tie‑break** via policy (C.19). Legal/ethical **must‑fit** checks live in **ConstraintFit** under the declared constraint predicate and source; failing those blocks eligibility **before** dominance.
 
 #### C.17:5.7 - `EffortCost` *(advisory)* — “What did it take?”
 
@@ -220,11 +226,12 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 | **CC‑CR‑1 (context‑locality)**               | Every **CreativityProfile** **MUST** name the **`U.BoundedContext`** and the **edition** of `U.CreativitySpace`.                                                                         | Prevents Cross‑context slippage.                                 |
 | **CC‑CR‑2 (Declared bases)**              | **Novelty@context** claims **MUST** declare `ReferenceBase`, `SimilarityKernel`, and `TimeWindow`; **Surprise** claims **MUST** declare `GenerativePrior` and its training slice.                 | Makes “new to whom?” and “unexpected under what?” explicit.   |
 | **CC‑CR‑3 (Objective anchor)**            | **ValueGain** **MUST** reference the **objective** (KPI/utility) and **counterfactual method** (if predicted, the model).                                                                | Stops free‑form value stories.                                |
-| **CC‑CR‑4 (Must‑fit)**                    | If **must** constraints exist, **ConstraintFit** **MUST** be present; enactment decisions **SHALL** treat `ConstraintFit<1` as **fail**, unless an explicit **waiver SpeechAct** exists. | Keeps safety & ethics non‑negotiable.                         |
+| **CC‑CR‑4 (Must‑fit)**                    | If **must** constraints exist, **ConstraintFit** **MUST** be present; enactment decisions **SHALL** treat `ConstraintFit<1` as **fail** unless the current constitutive rule and an independently obtaining direct waiver-effect relation or decision result make that exact exception valid for the receiving constraint. A waiver SpeechAct occurrence alone is insufficient; without the governor, return `missing-governor` and keep the option ineligible. | Keeps safety and ethics non‑negotiable without mistaking communication for institutional effect. |
 | **CC‑CR‑5 (Evidence)**                    | Each coordinate **MUST** have Evidence Graph Ref (neighbours, tests, logs, model cards).                                                                                                   | Enables audit & replication.                                  |
 | **CC‑CR‑6 (Scopes)**                      | Profiles **MUST** include **USM scopes** (ClaimScope/WorkScope) relevant to measurement; off‑scope claims are advisory.                                                                  | Ties numbers to where they hold.                              |
 | **CC‑CR‑7 (No scalarisation by default)** | The pattern **SHALL NOT** force a single scalar “creativity score.” If a Context defines one, it **MUST** publish the weighting and its drift policy.                                   | Keeps decisions on a Pareto frontier unless a policy opts‑in. |
-| **CC‑CR‑8 (Bridge discipline)**           | Cross‑context comparisons **MUST** use a **Bridge** with **CL** and recorded **losses**; any mapped coordinate **MUST** note penalties in the **R** lane, not silently alter the value.     | Honest portability.                                           |
+| **CC‑CR‑8 (Bridge discipline)**           | Cross-context comparisons **MUST** use a **Bridge** with **CL** and recorded **losses**; any mapped coordinate **MUST** note penalties in the **R** lane, not silently alter the value.     | Honest portability. |
+| **CC‑CR‑9 (Local retained-set measures)** | Every reported `FamilyCoverage`, `MinInterFamilyDistance`, `AliasRisk`, or `DescriptorVector` **MUST** cite its `RetainedSetMeasurementPolicyRef` and `ScaleRef`, plus the applicable `DescriptorMapRef.edition`, `DistanceDefRef.edition`, and `CollisionPolicyRef`. The result **MUST** identify the retained set and **MUST NOT** be used as source-admission or universality evidence. | Keeps optional set characteristics reproducible and separate from selection. |
 
 ### C.17:7 - Manager’s Quick‑Start (apply in 5 steps)
 
@@ -263,7 +270,7 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 *Novelty\_G.* 0.66 (formula kernel vs literature base).
 *ValueGain.* Predicted: explains 12 prior anomalies (model check).
 *Surprise.* 3.7 bits (strongly unexpected under prior).
-*ConstraintFit.* 1.0 (ethics N/A; evidence roles bound with decay windows).
+*ConstraintFit.* 1.0 (ethics N/A; the relevant evidence uses name their sources and decay windows).
 *Decision.* Fund **replication Work**; track **R** decay per policy.
 
 ### C.17:9 - Anti‑Patterns (fast fixes)
@@ -278,11 +285,11 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 
 ### C.17:10 - Relations
 
-* **A.2 Role & A.15 Run‑alignment.** Creative **Work** is performed by **systems in roles**; outcomes are **epistemes**. Creativity is **measured by `U.Evaluation`**, not “done by a document.”
+* **System-role assignment and Work alignment (A.2, F.6, A.15).** Systems perform creative **Work**; F.6 identifies the assignment under which each performer acted. A short creativity account may omit an assignment identifier that no later claim uses. Outcomes are **epistemes**; creativity is **measured by `U.Evaluation`**, not “done by a document.”
 * **B.3 Trust/Assurance.** Coordinates carry **confidence bands**; Bridges lower **R** by **CL**. A.2.4 evidence-use relations bind datasets and benchmarks used in measurements.
 * **Agency characterization.** A.13 identifies agential participation and the domain profile; A.17/A.18/A.19/C.16/A.10 govern measured characteristics and evidence. Planned C.9 may later consolidate the profile but supplies no current governing force. A high-agency system may still output low-creativity outcomes (and vice versa with strong scaffolding).
 * **A.2.6 USM (Scope).** All measurements sit on **ContextSlices**; `G‑ladder` is explicitly **not** used (C.17 follows A.2.6’s set‑valued scopes).
-* **D‑cluster ethics.** **ConstraintFit** is where **must** constraints, ethics, and safety bind the evaluation; waivers are explicit **SpeechActs**.
+* **D‑cluster ethics.** **ConstraintFit** is where **must** constraints, ethics, and safety bind the evaluation. A waiver SpeechAct is only the communicative Work; the receiving constraint or decision pattern must also recognize an independently obtaining waiver-effect relation or result under a current constitutive rule.
 
 ### C.17:11 - Authoring Aids (didactic cards)
 
@@ -290,16 +297,16 @@ For **lexical CandidateSets** used by Name Cards (F.18), **Diversity_P SHALL be 
 * **Name the base & kernel.** Without them, `Novelty@context` is undefined.
 * **State the objective.** Value without a KPI is a story.
 * **Publish priors.** Surprise needs a trained model with cards.
-* **Gate by musts.** `ConstraintFit` < 1 blocks enactment unless waived.
+* **Gate by musts.** `ConstraintFit` < 1 blocks enactment unless a current constitutive rule and independently obtaining direct waiver effect make the exact exception valid. A waiver SpeechAct alone does not do so; otherwise return `missing-governor`.
 * **Prefer frontiers.** Identify non-dominated options on the declared `Front`; emit a `Shortlist` only through one named lens or policy when publication needs that head.
 * **Bridge explicitly.** Cross‑context talk needs CL and loss notes.
 
 ### C.17:12 - CSLC recap and the Creativity CharacteristicSpace
 
-**Purpose.** Ground “creativity” as a **measurable family of characteristics** (CHR) rather than a role, capability, or virtue. Each characteristic is scoped to a **`U.BoundedContext`**, evaluated on **`U.Work`** episodes, **`U.Episteme`** values such as design sketches or models, or **holders** (systems/teams) via **MM‑CHR** exports (`U.DHCMethodRef`, `U.Measure`, `U.Unit`, `U.EvidenceStub`), using the **CSLC** discipline (*Characteristic / Scale / Level / Coordinate*).
+**Purpose.** Ground “creativity” as a **measurable family of characteristics** (CHR) rather than a system-role kind, capability, or virtue. Each characteristic is scoped to a **`U.BoundedContext`**, evaluated on **`U.Work`** episodes, **`U.Episteme`** values such as design sketches or models, or **holders** (systems or teams) via **MM‑CHR** exports (`U.DHCMethodRef`, `U.Measure`, `U.Unit`, `U.EvidenceStub`), using the **CSLC** discipline (*Characteristic / Scale / Level / Coordinate*).
 
 > **Strict Distinction (A.7) reminders.**
-> *Creativity is not a Role* (no one “plays CreativityRole”). It’s a **characterisation** of outcomes/process.
+> *Creativity is not a system-role kind*; do not mint `CreativitySystemRole` or retain the legacy `CreativityRole`. It is a **characterisation** of outcomes or processes.
 > *Creativity is not Work* (no resource deltas). Work **produces** work results or publications that we later characterise.
 > *Creativity is not a service promise clause* (no external promise). Promise clauses are judged from Work; creativity may correlate with value.
 
@@ -312,7 +319,7 @@ The core **characteristics** below are **kernel‑portable** names; Contexts **s
 | **Novelty\@context**        | Distance from known ideas **in this Context**                   | `U.Episteme` value or `U.Work` set | Ratio or bounded \[0..1] via *similarity→distance* | `KD‑CAL` corpus + `U.BoundedContext` |
 | **Use‑Value**            | Benefit vs a **declared objective**                          | `U.Episteme` value or `U.Evaluation` | Ordinal (Fail/Partial/Pass) or scalar KPI          | `B.3` Evidence & `U.Evaluation`      |
 | **Surprise**             | Unexpectedness under the Context’s **GenerativePrior**          | `U.Episteme` value | bits or nats (−log‑likelihood)                     | Prior cards & calibration            |
-| **ConstraintFit**        | Degree of **must‑constraints** satisfied while exploring     | `U.Work` or `U.Episteme` value | % satisfied (0–100)                                | Declared constraint owner + step guards |
+| **ConstraintFit**        | Degree of **must‑constraints** satisfied while exploring     | `U.Work` or `U.Episteme` value | % satisfied (0–100)                                | Declared constraint predicates and sources + step guards |
 | **Diversity_P**          | Declared retained-set **coverage/dispersion** (incl. coverage map view)  | Set of `U.Episteme` values | Set‑functional; coverage index                     | `Γ_ctx` fold + USM ClaimScopes       |
 | **AttributionIntegrity** | Lawful and transparent **provenance/licensing**                | `U.Episteme` value plus provenance | \[0,1]                                              | PROV + declared constraint policy |
 
@@ -327,8 +334,8 @@ The following **context‑local** characteristics remain available but are **not
 * **Transferability\@X** — portability to **Context X** via a Bridge (`U.Episteme` value; ordinal + CL penalty).
 * **DiversityOfSearch** — breadth of **approach classes tried** (work set; count/rate).
 * **Time‑to‑First‑Viable** — elapsed time to first **Use‑Value = Pass** (work; duration).
-* **Risk‑BudgetedExperimentation** — planned vs realized exploration share (workplan vs work; ratio; policy gate).
-
+* **Risk-BudgetedExperimentation** — planned vs realized exploration share (workplan vs work; ratio; policy gate).
+* **FamilyCoverage**, **MinInterFamilyDistance**, **AliasRisk**, and an optional **DescriptorVector** — characteristics of one declared retained set under a named local measurement policy, scale, descriptor and distance editions, and collision policy. They characterize the set; they do not select its members or establish wider applicability.
 > **Compatibility note.** This split removes duplicate “core lists” and aligns C.17 with **B.5.2.1 NQD** and **C.16/A.17–A.18**: the **kernel nucleus** captures creativity *qualities*; the items above instrument Work, policy, or declared retained-set shaping without renaming `Front`, `Archive`, or `Shortlist`.
 
 #### C.17:12.3 - Scale choices (CSLC discipline)
@@ -437,7 +444,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 #### C.17:14.1 - Guard‑rails (normative)
 
 * **G‑1 Paired appraisal.** **Never** assess **Novelty** in isolation; pair it with **Use‑Value** or **ConstraintFit** to avoid proxy myopia
-* **G‑2 Frozen references.** Novelty requires **frozen corpus + encoder**; changes create a **new edition** and **RSCR** rerun. Portfolio-publication heuristics and selection heuristics are **policy-level** (see **C.19**); do not “reward” Illumination beyond its role as a report-metric.
+* **G‑2 Frozen references.** Novelty requires **frozen corpus + encoder**; changes create a **new edition** and **RSCR** rerun. Portfolio-publication heuristics and selection heuristics are **policy-level** (see **C.19**); do not “reward” Illumination beyond its use as a report metric.
 * **G‑3 Time‑lag sanity.** Include a **post‑fact check** (e.g., 30–90‑day retention or cost‑to‑serve delta) before celebrating “creative wins.”
 * **G‑4 Exploration budget.** Tie **DiversityOfSearch** to **Risk‑BudgetedExperimentation**; flag overspend.
 * **G‑5 No ordinal averaging.** Do not average **ordinal** scales; use distributions/medians or convert only under declared models.
@@ -464,7 +471,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 * **MethodDescription.** “Morphological matrix ideation v2.”
 * **Work.** 1‑day sprint, 6 sessions.
 * **Metrics.** `Novelty@context` (encoder: CAD‑graph v1; ReferenceSet: in‑house assemblies), `ConstraintFit` (no‑tooling‑change), `Use‑Value` (acceptance: Pass if sim shows ≤ +5 % assembly time).
-* **Roles.** Performers = design cell (#TransformerRole); Observer = methods coach (#ObserverRole ⊥).
+* **Participants and Work.** The design cell performs the ideation sprint; the methods coach separately performs observation Work.
 * **Outcome.** 22 candidates; 4 **Pass** usefulness; best `Novelty`=0.41 with **100 %** constraints respected; `Time‑to‑First‑Viable` = 3 h 40 m.
 * **Evidence.** Scorecard episteme holds metrics; links to Work ids; acceptance tied to internal **promise content** “Design‑for‑Assembly Simulation”.
 
@@ -476,7 +483,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 * **Objective.** Find a new risk factor candidate for readmission (< 30 days).
 * **MethodDescription.** “Causal discovery v3 + clinician review.”
 * **Metrics.** `DiversityOfSearch` (approach classes: feature ablation, IVs, DAG‑learners), `Novelty@context` (text encoder over prior hypotheses), `Use‑Value` (AUROC uplift ≥ 0.03 on hold‑out), `Transferability@Hospital_B` (Bridge CL=2).
-* **Roles.** SRE pipeline (#ObserverRole) computes metrics; clinicians (#ReviewerRole) set acceptance; data squad (#TransformerRole) performs experiments.
+* **Participants and Work.** The SRE pipeline computes metrics; clinicians set acceptance criteria; the data squad performs the experiments.
 * **Outcome.** Two candidates; one meets AUROC uplift; **Transferability** requires follow‑up (CL penalty).
 * **Evidence.** Episteme bundle: model cards, hold‑out plots, Bridge note.
 
@@ -488,7 +495,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 * **Objective.** Reduce time‑to‑value (TTV) by 20 %.
 * **MethodDescription.** “JTBD interviews + onboarding flow experiments.”
 * **Metrics.** `ReframeDelta` (BoundaryShift: split onboarding into ‘job setup’ and ‘first result’), `Use‑Value` (TTV ‑22 % on A/B), `Risk‑BudgetedExperimentation` (within cap), `Compositionality` (reuse of existing workflow widgets).
-* **Roles.** UX researcher (#ObserverRole), squad (#TransformerRole), product ops (#ReviewerRole).
+* **Participants and Work.** The UX researcher conducts interviews; the squad performs the flow experiments; product operations reviews the evidence.
 * **Outcome.** Frame changed; TTV target passed; experiments within budget.
 * **Evidence.** Reframing episteme with Scope diff + A/B report.
 
@@ -498,7 +505,7 @@ For each characteristic, **declare the scale** explicitly (nominal / ordinal / i
 
 * **Locality.** All novelty/usefulness claims are **Context‑tagged**; Cross‑context steps use **Bridges** with **CL**.
 * **Dual‑gate.** Novelty never acts alone; usefulness/constraints co‑gate decisions.
-* **SoD & Evidence.** Observers are **separate** from performers; metrics live on **epistemes** with **frozen hooks**; Work proves fulfillment.
+* **SoD & Evidence.** The systems performing observation Work are **separate** from the systems performing the Work being evaluated; metrics live on **epistemes** with **frozen hooks**; Work proves fulfillment.
 
 ### C.17:16 - Working examples
 
@@ -510,7 +517,7 @@ Novelty↑ (algorithmic / compositional), Use‑Value↑ (targeted user/job metr
 **Priors.**
 
 * Novelty prior **skeptical** beyond nearest known family (discount by conceptual distance).
-* Evidence prior at **L0** (B.3) until benchmarks exist; regression tests act as **ObserverRole** evidence.
+* Evidence prior at **L0** (B.3) until benchmarks exist; regression-test results supply bounded evidence and are not an observer system or system-role kind.
 
 **Context card (one screen).**
 
@@ -565,7 +572,7 @@ Novelty↑ (institutional), Use‑Value↑ (measurable social/operational effect
 ### C.17:18 - Relations
 
 * **Builds on**: B.1 Γ‑algebra (WLNK/COMM/IDEM/MONO), B.3 Trust & Assurance (F–G–R, CL), A.2.6 USM (Claim/Work scopes), A.10 Evidence Graph Referring.
-* **Coordinates with**: A.2 Role suite (Observer/Evidence roles for probes), A.15 (Work & plans for probes), C.16 MM‑CHR (scale polarity & units). **C.18 NQD-CAL** (generation/illumination operators Γ_nqd.\*) and **C.19 E/E-LOG** (policies, selection, and declared retained-set rules). This CHR remains measurement-only.
+* **Coordinates with**: A.2 and F.6 when a probe needs an exact system-role kind, assignment occurrence, or performed-Work attribution; A.15 (Work & plans for probes), C.16 MM‑CHR (scale polarity & units). **C.18 NQD-CAL** (generation and illumination operators Γ_nqd.\*) and **C.19 E/E-LOG** (policies, selection, and declared retained-set rules). This CHR remains measurement-only.
 * **Defers to**: F.9 Bridges for Cross‑context transfers; D‑cluster for ethical/speech‑act gates.
 
 ### C.17:19 - Quick reference cards (tear‑out)

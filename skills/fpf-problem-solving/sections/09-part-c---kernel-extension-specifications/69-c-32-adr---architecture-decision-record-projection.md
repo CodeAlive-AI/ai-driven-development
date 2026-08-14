@@ -122,7 +122,7 @@ The following section functions are required unless the decision relation states
 | Rationale | Why this outcome is acceptable now, including accepted losses and protected guardrails. |
 | Consequences | Expected effects on structures, methods, teams, costs, risks, evidence, operation, and later change. |
 | Method-use instruction | Required style, pattern use, method description, or work practice, when the decision changes developer work. |
-| Work split | Architect-owned selected structures, developer-owned refinement, readiness or gate exits, and source-return condition. |
+| Work split | Prospective allocation or instruction content through the plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that actually states it; otherwise the exact missing governor. Also show readiness or gate exits and the source-return condition. Professional titles are audience cues, not ownership predicates. |
 | Confirmation or eval exit | How the decision can be checked, evaluated, monitored, or found violated. |
 | Publication boundary | Links to architecture descriptions, views, evidence, assurance, and source material without making the ADR the source object. |
 
@@ -140,7 +140,7 @@ When one decision changes another, use explicit supersession or amendment links.
 
 **Certification rationale.** A regulated product records a safety-architecture decision in a certification rationale. The record carries the decision outcome, rationale, evidence refs, architecture-description refs, and confirmation path, while evidence and assurance claims stay in `A.10` and `B.3`.
 
-**Method-governance record.** A method family decides that reviewers must use an evidence handoff pattern before final review. The ADR-like record cites the method description and expected evidence-structure effect; it does not become the method itself or the performed review work.
+**Method-use record.** A project decision requires reviewers to use an evidence handoff pattern before final review. The ADR-like record cites the Method description and expected evidence-structure effect; the Method family does not decide, and the instruction does not by itself establish performed review Work.
 
 ### C.32.ADR:6 - Bias-Annotation
 
@@ -172,7 +172,7 @@ When one decision changes another, use explicit supersession or amendment links.
 | `BlankTemplateADR` | A template is filled with plausible prose but no PAD relation can be cited. | Draft or recover `ArchitectureDecisionRelation@Project` with `C.32.PAD`; then project it into the record. |
 | `ArchitectureDescriptionDump` | The ADR copies diagrams, views, or model text and the decision outcome is hard to find. | Keep the record small; cite architecture-description refs and restore decision outcome, rationale, consequences, and work effects. |
 | `OptionsInventedInRecord` | The ADR lists options that were not part of candidate synthesis or accepted decision basis. | Use `C.32`, `A.19.CPM`, or PAD; update the decision relation before updating the record. |
-| `MethodInstructionHiddenInRationale` | Developers are expected to change work, but the instruction is buried in rationale prose. | Add a method-use section function with method refs, responsible roles, expected structure effect, and readiness or gate exit. |
+| `MethodInstructionHiddenInRationale` | A decision requires developers to change their practice, but the instruction is buried in rationale prose. | Record the prospective content through the exact plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that states it, with Method refs, intended Systems, expected structure effect, and readiness or gate exit; otherwise return its exact missing governor. Do not manufacture a current assignment or performed Work. If performance later occurs, point to its complete A.15.1/F.6 basis and add only the other direct relations that independently obtain. |
 | `NoConfirmationPath` | Future teams cannot tell whether the decision still holds or has been violated. | Add confirmation, eval, guardrail, source-return, or supersession condition; use the receiving evaluation or governance pattern. |
 | `PackageOrderAsGovernance` | The latest file by number is treated as active without explicit status or supersession. | Add package map or status fields; make active, proposed, superseded, and related relations explicit. |
 

@@ -8,13 +8,13 @@
 
 Use this pattern when B.2 has identified one exact candidate new whole and that same individual must be recognized under the already admitted `U.System` kind: a swarm, production cell, cloud platform, regulated control system, organizational unit, or another physical or operational whole that can act in work or transformation while remaining itself.
 
-The first useful question is not "is there emergence?" First test the exact candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the direct `U.System` criterion. After those two tests, recover only the additional facts used by the concrete case, such as delimitation, an objective or commitment, coordination, capability, role, method, work, transformation, functioning, architecture, evidence, assurance, or time, and state each such fact or claim under its direct owner. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
+The first useful question is not "is there emergence?" First test the exact candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the direct `U.System` criterion. After those two tests, recover only the additional facts used by the concrete case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
 
 Use `B.2` first to decide whether whole reidentification is needed and to identify the one candidate new whole. Use `B.2.2` only when that candidate's already admitted kind is `U.System`.
 
 **What goes wrong if missed.** A real operating whole is still managed through old component claims, or a mere collection is declared a new system without system participation evidence.
 
-**What this buys.** The system MHT keeps the useful meta-system-transition intuition while preserving FPF's direct owners for system participation, architecture, capability, transformation, work, evidence, and assurance.
+**What this buys.** The system MHT keeps the useful meta-system-transition intuition while preserving FPF's subject patterns for system participation, architecture, capability, transformation, work, evidence, and assurance.
 
 **Not this pattern when.**
 
@@ -65,40 +65,40 @@ Before calling the candidate a system result:
 1. execute the complete A.1 criterion over the candidate's exact constituents, obtaining constructive relations, governed assembly, reidentification rule, and composition-grounded whole characteristic;
 2. show that its actual boundary, interfaces, relevant characteristics, and identity-preservation conditions satisfy at least one applicable governed larger-assembly construction method or rule under which it can remain a constituent;
 3. apply the direct `U.System` criterion to that same individual: its actual physical or operational organization must make it eligible to act causally in work or transformation while preserving its identity;
-4. recover only the additional system facts used by the concrete case—including any delimitation, objective, commitments, coordination, capability, role, method, work, transformation, functioning, architecture, evidence, assurance, or temporal claim—and keep each with its direct owner; and
+4. recover only the additional system facts used by the concrete case—including any delimitation, objective, commitments, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or temporal claim—and state each through the pattern that defines its object or relation; and
 5. keep the classification judgment, evidence or assurance, currentness, and receiving reliance separate from those world-side facts.
 
 If a required A.1 component or the acting-eligibility criterion fails, do not identify the candidate as the system result. If an additional system fact needed for another claim is absent, withhold that claim rather than treating its absence as failure of the `U.System` criterion. If missing evidence or an unavailable dependency prevents a determination, report `unknown`; neither a filled reference nor an optional record changes that result.
 
-#### B.2.2:4.2 - Carry Result-System Claims Through Direct Owners
+#### B.2.2:4.2 - Carry Result-System Claims Through Subject Patterns
 
-When the candidate is recognized as `U.System`, state every changed result-system fact or claim under its direct owner:
+When the candidate is recognized as `U.System`, state every changed result-system fact or claim under its subject pattern:
 
-- role assignments through `A.2.1` and role-relation owners;
+- system-role assignments through `A.2.1`, relations among system-role kinds through `A.2.7`, and other relations through the patterns that define them;
 - capabilities through `A.2.2` and `C.16`;
-- methods and mechanisms through `A.15`, `A.6.1`, and their current direct owners;
+- methods and mechanisms through `A.15`, `A.6.1`, and any other applicable method or mechanism pattern;
 - transformations through `A.3.4`;
 - work occurrences through `A.15.1`;
 - functioning and functional structure through `A.6.F` and `C.30.TFS-REL`;
 - architecture through `C.30`, `A.22`, and `C.30.ASV`;
 - evidence and assurance through `A.10`, `B.3`, and `B.3.5`;
-- temporal and dynamics claims through `C.27`, `A.19`, and the direct temporal owners.
+- temporal and dynamics claims through `C.27`, `A.19`, and the direct temporal patterns.
 
-Do not reuse old component evidence as if it automatically covered the proposed new whole after recognition under `U.System`. Carry an unchanged component claim only through its exact continuing relation; establish each changed result-system fact under its direct owner and support the associated claim through a separate evidence or assurance relation.
+Do not reuse old component evidence as if it automatically covered the proposed new whole after recognition under `U.System`. Carry an unchanged component claim only through its exact continuing relation; establish each changed result-system fact under its subject pattern and support the associated claim through a separate evidence or assurance relation.
 
 #### B.2.2:4.3 - System Trigger Interpretation
 
 When a receiving use has materialized B.2's optional `MHTTriggerProfile`, read its cues for a system case as follows:
 
-| Cue recorded in `MHTTriggerProfile` | System-case reading | Direct owner kept visible |
+| Cue recorded in `MHTTriggerProfile` | System-case reading | Subject pattern kept visible |
 | --- | --- | --- |
 | Delimitation change | The operating whole now has an external delimitation and crossing relations that differ from the old aggregate. | `A.1`, `B.1.2`, `A.14`, `C.13` |
-| Objective or evaluation change | The whole is now evaluated by a system-level objective, mission, SLO, safety case, or viability claim. | `C.16`, `E.13`, `A.10`, decision or assurance owners |
+| Objective or evaluation change | The whole is now evaluated by a system-level objective, mission, SLO, safety case, or viability claim. | `C.16`, `E.13`, `A.10`, decision or assurance patterns |
 | Supervision or coordination change | A controller, protocol, governance relation, or distributed coordination relation regulates constituent behavior for the result whole. | `B.2.5`, `A.12`, `A.3.4`, `A.15.1` |
 | Capability or closure claim | Recover the exact capability envelope and closure relations of the proposed new whole after recognition under `U.System`; keep supporting evidence separate. | `A.2.2`, `C.16`, `A.10` for evidence use, and `B.2.4` when whole reidentification is current |
 | Agency threshold | The result whole crosses a concern-specific agency threshold in characteristic space. | `A.13`, `A.19`, `C.16` |
-| Temporal consolidation | A commissioning, phase, release, or operating-time consolidation changes the current system identity claim. | `C.27`, `A.15.1`, temporal owners |
-| Context reframe | The relevant bounded context changes the operating whole under concern. | `A.1`, bounded-context owners, architecture owners |
+| Temporal consolidation | A commissioning, phase, release, or operating-time consolidation changes the current system identity claim. | `C.27`, `A.15.1`, temporal patterns |
+| Context reframe | The relevant bounded context changes the operating whole under concern. | `A.1`, bounded-context patterns, architecture patterns |
 
 No cue is enough by itself. Each row points to facts and claims to inspect; B.2's direct existing-whole/new-whole comparison, complete A.1 recognition, and the system-kind criterion decide the result.
 
@@ -111,7 +111,7 @@ For system-result MHT, distinguish:
 - an environment or resource that participates in work;
 - a description, dashboard, twin, model, diagram, or publication about the result system.
 
-A lathe making a workpiece, a controller steering a plant, or a teacher changing a learner does not thereby become a part of the changed holon or the larger whole containing it. Use `A.12`, `A.3.4`, and `A.15.1` for acting side, transformation, and work. Use part-whole owners only when parthood itself is admitted.
+A lathe making a workpiece, a controller steering a plant, or a teacher changing a learner does not thereby become a part of the changed holon or the larger whole containing it. Use `A.12`, `A.3.4`, and `A.15.1` for acting side, transformation, and work. Use part-whole patterns only when parthood itself is admitted.
 
 #### B.2.2:4.5 - Assurance Re-Basing
 
@@ -122,7 +122,7 @@ Ask:
 - Which component evidence still applies unchanged?
 - Which evidence applies only through explicit correspondence or source-use relation?
 - Which assurance claims must be rewritten for the result system?
-- Which architecture, capability, functioning, work, temporal, or evidence claims now have different owners?
+- Which architecture, capability, functioning, work, temporal, or evidence claims now have different subject patterns?
 
 A claim about the recognized result system may reuse component evidence only through an exact correspondence or source-use relation and a fresh evaluation of applicability. That system does not inherit safety, reliability, responsibility, or performance claims by label.
 
@@ -143,7 +143,7 @@ The old drone evidence remains relevant, but it is not enough for the swarm-leve
 
 Independent services become a platform only if the current claim concerns a result system: a shared control plane, system-level SLO, deployment and rollback coordination, platform-level evidence, and external commitments.
 
-If the only change is a better dashboard or one more service, use architecture-description, publication, measurement, or component owners. Use B.2.2 only when B.2 identifies the operating platform itself as the exact candidate new whole and that candidate passes A.1 plus the direct `U.System` criterion.
+If the only change is a better dashboard or one more service, use architecture-description, publication, measurement, or component patterns. Use B.2.2 only when B.2 identifies the operating platform itself as the exact candidate new whole and that candidate passes A.1 plus the direct `U.System` criterion.
 
 #### B.2.2:5.3 - Production Cell
 
@@ -158,8 +158,8 @@ The fixture being manufactured is not part of the machine merely because the mac
 | Named aggregate as system | A fleet, platform, or cell name is treated as system recognition. | Apply B.2 to one exact candidate; require the complete A.1 criterion and the direct `U.System` criterion. |
 | Component evidence transfer | Component certificates are read as assurance for the proposed new whole after its recognition under `U.System`. | Re-test each claim against that exact recognized system and use exact evidence or assurance relations; do not transfer support by label. |
 | Coordination as whole | A controller, protocol, or coordination relation is treated as automatic system MHT. | Recover the obtaining relation, then require B.2 whole reidentification plus complete A.1 and `U.System` recognition; keep any support separate. |
-| Description as system | Dashboard, simulation, model, twin, or bill is treated as the operating system. | Use episteme, publication, source-use, and architecture-description owners for description objects. |
-| Transformation as containment | An external system changes a holon and is treated as its part or containing whole without a separately obtaining part-whole relation. | Use A.12, A.3.4, A.15.1, B.2.5, and part-whole owners separately. |
+| Description as system | Dashboard, simulation, model, twin, or bill is treated as the operating system. | Use episteme, publication, source-use, and architecture-description patterns for description objects. |
+| Transformation as containment | An external system changes a holon and is treated as its part or containing whole without a separately obtaining part-whole relation. | Use A.12, A.3.4, A.15.1, B.2.5, and part-whole patterns separately. |
 
 ### B.2.2:6 - Conformance Checklist
 
@@ -179,18 +179,18 @@ The fixture being manufactured is not part of the machine merely because the mac
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | Named aggregate as system | "The platform" or "the fleet" is treated as a system because it has a name. | Identify one exact candidate and apply the complete A.1 and direct `U.System` criteria; return to the old whole if either fails. |
-| Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence owners. |
-| Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole owners separately. |
-| Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description owners. |
-| Capability jump as system MHT | A metric improves and the result is called a new system. | Use B.2's `ExistingWholeExplanationCheck`; return to capability, characteristic, method, work, or architecture owners if the existing whole remains sufficient. |
+| Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence-use patterns. |
+| Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole patterns separately. |
+| Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description patterns. |
+| Capability jump as system MHT | A metric improves and the result is called a new system. | Use B.2's `ExistingWholeExplanationCheck`; return to capability, characteristic, method, work, or architecture patterns if the existing whole remains sufficient. |
 
 ### B.2.2:8 - Consequences
 
 Positive consequences:
 
 - Meta-system transition remains usable for engineering and organizational systems without making B.2 system-only.
-- System ontic preservation becomes explicit: the same exact candidate is recognized under A.1 and `U.System`, while each system fact and claim stays with its direct owner.
-- Assurance, responsibility, architecture, work, and evidence claims are kept with their direct owners.
+- System ontic preservation becomes explicit: the same exact candidate is recognized under A.1 and `U.System`, while each system fact and claim stays with its subject pattern.
+- Assurance, responsibility, architecture, work, and evidence claims are kept with their subject patterns.
 
 Costs:
 
@@ -202,16 +202,16 @@ Costs:
 
 Valentin Turchin's meta-system transition remains a useful intuition for the system case: components can become a higher operating whole when coordination and control create a new object of management and assurance. FPF generalizes that intuition in B.2, then uses B.2.2 to keep the classical system case precise.
 
-The key distinction is ontological, not lexical. A whole proposed for recognition under the admitted `U.System` kind is not a trigger profile, coordination mechanism, graph, description, dashboard, or process label. It is one exact candidate new whole that satisfies A.1 and the direct `U.System` criterion; every changed system fact and claim stays with its direct owner.
+The key distinction is ontological, not lexical. A whole proposed for recognition under the admitted `U.System` kind is not a trigger profile, coordination mechanism, graph, description, dashboard, or process label. It is one exact candidate new whole that satisfies A.1 and the direct `U.System` criterion; every changed system fact and claim stays with its subject pattern.
 
 ### B.2.2:10 - SoTA-Echoing
 
 | Source family | Lesson for B.2.2 | FPF decision |
 | --- | --- | --- |
-| Meta-system transition and holonic systems lineage | A new coordinated whole can become the relevant operating object. | B.2 owns whole reidentification; B.2.2 applies complete A.1 and `U.System` recognition to the same exact candidate. |
-| Systems-of-systems and cyber-physical systems practice | Operational closure, coordination, external commitments, and assurance often change at the level of the exact new whole proposed for and then recognized under `U.System`. | B.2.2 keeps the direct facts with their owners and tests each assurance claim against that exact recognized system instead of transferring component support. |
-| Constructional and part-whole ontology | Acting on an object and being part of it are different relations. | A.12, A.3.4, A.15.1, A.14, and C.13 remain separate owners. |
-| Digital-twin and architecture-description practice | Rich descriptions can track a system without being the system. | Dashboards, models, twins, and publications use episteme and description owners unless the operating system is recovered as EoC. |
+| Meta-system transition and holonic systems lineage | A new coordinated whole can become the relevant operating object. | Use B.2 for whole reidentification, then apply complete A.1 and `U.System` recognition to the same candidate as required by B.2.2. |
+| Systems-of-systems and cyber-physical systems practice | Operational closure, coordination, external commitments, and assurance often change at the level of the exact new whole proposed for and then recognized under `U.System`. | B.2.2 keeps the direct facts with their subject patterns and tests each assurance claim against that exact recognized system instead of transferring component support. |
+| Constructional and part-whole ontology | Acting on an object and being part of it are different relations. | A.12, A.3.4, A.15.1, A.14, and C.13 remain separate subject patterns. |
+| Digital-twin and architecture-description practice | Rich descriptions can track a system without being the system. | Dashboards, models, twins, and publications use episteme and description patterns unless the operating system is recovered as EoC. |
 
 ### B.2.2:11 - Relations
 

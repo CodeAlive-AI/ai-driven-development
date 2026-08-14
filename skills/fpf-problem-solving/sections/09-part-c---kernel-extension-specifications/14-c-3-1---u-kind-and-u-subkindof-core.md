@@ -6,25 +6,25 @@
 
 ### C.3.1:0 - Use This When
 
-Use this pattern when one typed-reasoning use needs a context-local kind, a subkind order, or a decision about whether the same local kind continues across editions of its declaration.
+Use this pattern when one typed-reasoning use needs a locally constituted kind, a subkind order, or a decision about whether the same local kind continues across editions of its declaration.
 
 **What goes wrong if missed.** `U.SubkindOf` starts carrying dependency, construction, scope, public kind admission, or extension-table maintenance. A changed declaration is mistaken either for a new kind automatically or for a harmless rewrite automatically, and old classifications are silently reinterpreted.
 
-**What this buys.** The user gets a small local partial order, a judgment-level monotonicity law, and an explicit kind-continuity decision while durable U-kind admission, classification, declaration identity, and cross-context bridging stay with their own governors.
+**What this buys.** The user gets a small local partial order, a judgment-level monotonicity law, and an explicit kind-continuity decision while durable U-kind admission, classification, declaration identity, and cross-local bridging remain separate and use their own definitions and checks.
 
-**Primary EntityOfConcern.** One context-local `U.Kind` identity, its bounded context and local identity basis, and any `U.SubkindOf` order interpreted through the exact `U.ReferenceScheme` named by the aligned declaration editions.
+**Primary EntityOfConcern.** One local `U.Kind` identity, its explicit practice or source boundary and stable subject distinction, and any `U.SubkindOf` order interpreted through the exact `U.ReferenceScheme` named by the aligned declaration editions.
 
-**First useful move.** Write the ordinary order claim first: `CoolingPumpKind is a subkind of PumpKind in the Plant-7 bounded context, interpreted through PlantScheme-7.` Then identify the declaration editions used to evaluate candidates and test whether the order is monotone for the same candidate and slice.
+**First useful move.** Write the ordinary order claim first: `CoolingPumpKind is a subkind of PumpKind for the Plant-7 practice, interpreted through PlantScheme-7.` Then identify the declaration editions used to evaluate candidates and test whether the order is monotone for the same candidate and slice.
 
-**Not this pattern when.** Use C.3.2 for the declaration, one candidate classification, or an extension representation; C.3.3 for use across contexts; and `E.24.UK` when a local kind is proposed as a durable public FPF U-kind.
+**Not this pattern when.** Use C.3.2 for the declaration, one candidate classification, or an extension representation; C.3.3 for use across local practice or source boundaries; and `E.24.UK` when a local kind is proposed as a durable public FPF U-kind.
 
 ### C.3.1:1 - Problem Frame
 
-FPF needs kind compatibility without making every project category part of its durable ontology. `U.Kind` therefore supplies a typed-reasoning value identified within one bounded context by a local identity basis, and `U.SubkindOf` orders those values. The effective reference scheme is claim content of the aligned `KindSignature` editions and qualifies interpretation of the order; it is not stored on either kind. A `KindSignature` edition can declare how one kind is evaluated, but the declaration episteme is not the kind. Candidate state, a context slice, a declaration edition, and the kind's own continuity can change independently.
+FPF needs kind compatibility without making every project category part of its durable ontology. `U.Kind` therefore supplies a typed-reasoning value identified by an explicit local practice or source boundary together with a stable subject distinction, and `U.SubkindOf` orders those values. The effective reference scheme is claim content of the aligned `KindSignature` editions and qualifies interpretation of the order; it is not stored on either kind. A `KindSignature` edition can declare how one kind is evaluated, but the declaration episteme is not the kind. Candidate state, a context slice, a declaration edition, and the kind's own continuity can change independently.
 
 ### C.3.1:2 - Problem
 
-The statement `cooling pump is a pump` is useful only if candidate classifications respect it. Yet an extension table can hide a bad subkind link, two declaration editions can use incompatible criteria, and same spelling can conceal a cross-context change. Conversely, every editorial or formalization change need not create a new kind. The core needs both a monotonicity check and an explicit continuity decision without absorbing the declaration or extension into the kind.
+The statement `cooling pump is a pump` is useful only if candidate classifications respect it. Yet an extension table can hide a bad subkind link, two declaration editions can use incompatible criteria, and same spelling can conceal a change of practice boundary or subject distinction. Conversely, every editorial or formalization change need not create a new kind. The core needs both a monotonicity check and an explicit continuity decision without absorbing the declaration or extension into the kind.
 
 ### C.3.1:3 - Forces
 
@@ -34,14 +34,14 @@ The statement `cooling pump is a pump` is useful only if candidate classificatio
 | Partial order vs actual classification | An order over kind values must constrain judgments, not merely arrange labels or extension rows. |
 | Stable kind vs changing declaration | A kind may continue across a corrected or strengthened declaration, but an incompatible redefinition must not inherit identity silently. |
 | Current extension vs kind identity | Candidate state and context slices can change current true members without changing either the kind or its signature. |
-| Local use vs cross-context reuse | Same spelling does not carry a kind across bounded contexts. Within one context, a changed reference-scheme edition creates another `KindSignature` and requires an explicit continuity decision, but does not by itself create a context bridge. |
+| Local use vs cross-local reuse | Same spelling does not carry a kind across different constituting practices or sources. Within the same local identity basis, a changed reference-scheme edition creates another `KindSignature` and requires an explicit continuity decision, but does not by itself create a kind bridge. |
 
 ### C.3.1:4 - Core Objects
 
 | Object | Meaning | Boundary |
 | --- | --- | --- |
-| `U.Kind` | A kind value identified within one bounded context by a local identity basis; typed claims use `KindSignature` editions whose content names the effective `U.ReferenceScheme`. | It is not automatically a durable public FPF U-kind, and the scheme is not stored on the kind. |
-| `U.SubkindOf` | The admitted direct relation kind that orders two local `U.Kind` values under one effective reference scheme. Its participants are the narrower kind and the broader kind. | It is not a predicate expression, assertion episteme, dependency, part-whole, slot-filling, construction, role-assignment, or admission relation. |
+| `U.Kind` | A kind value identified by an explicit local practice or source boundary together with a stable subject distinction; typed claims use `KindSignature` editions whose content names the effective `U.ReferenceScheme`. | It is not automatically a durable public FPF U-kind, and the scheme is not stored on the kind. |
+| `U.SubkindOf` | The admitted direct relation kind that orders two local `U.Kind` values under one effective reference scheme. Its participants are the narrower kind and the broader kind. | It is not a predicate expression, assertion episteme, dependency, part-whole, slot-filling, construction, system-role assignment, or admission relation. |
 | `SubkindOfObtains(k1, k2; RS)` | The relation-obtaining predicate: under exact reference-scheme edition `RS`, the aligned kind interpretations make every defined `true` judgment for `k1` imply `true` for `k2` over the declared candidate domain and applicable slices. | The predicate is rule content; it is not the obtaining occurrence. An unresolved required judgment leaves an assertion about obtaining unresolved rather than making the relation false. |
 | `R_sub : U.SubkindOf` | One obtaining direct relation occurrence between exact narrower kind `k1` and broader kind `k2` under `RS`. | Expose an occurrence designator only when a named receiver needs to distinguish or refer to the occurrence. Participant identities plus the exact effective reference-scheme edition determine its identity. |
 | subkind assertion episteme | A C.2.1 episteme whose content affirms, denies, or leaves unresolved `SubkindOfObtains(k1, k2; RS)` and cites the aligned signature editions and support used. | The assertion neither makes the relation obtain nor creates `R_sub`; a negative or unresolved assertion designates no obtaining occurrence. |
@@ -58,13 +58,13 @@ When a named receiving assertion, description, or relation needs one occurrence 
 
 ### C.3.1:5 - Solution
 
-1. **Bound the typed-reasoning use.** Name the bounded context, the local identity basis, the local kind values, the exact effective `U.ReferenceScheme` edition in the aligned `KindSignature`s, and the applicability in which the order is asserted. Do not infer a public `U.*` name or store the scheme on either kind.
+1. **Bound the typed-reasoning use.** Name the local practice or source boundary, stable subject distinction, local kind values, exact effective `U.ReferenceScheme` edition in the aligned `KindSignature`s, and applicability in which the order is asserted. Do not infer a public `U.*` name or store the scheme on either kind.
 2. **State the direct order relation.** Use `U.SubkindOf` only for an obtaining relation whose narrower-kind and broader-kind participants satisfy `SubkindOfObtains` under that scheme. Keep the predicate, any `R_sub` occurrence designator, and any C.2.1 assertion episteme separate.
 3. **Keep a partial order over obtaining facts.** Reflexivity, transitivity, and antisymmetry constrain the obtaining `U.SubkindOf` relations among local kind values; they do not make a diagram edge or affirmative assertion true by form.
 4. **Test the obtaining predicate over judgments.** For the aligned signature editions, if both C.3.2 judgments are defined for the same candidate and context slice and the judgment for `k1` is `true`, then the judgment for `k2` must be `true`. A universal proof or adequate domain basis establishes the implication; `unknown` remains non-settlement.
-5. **Diagnose counterexamples at their owner.** A counterexample indicates that the proposed relation does not obtain, that the signature editions are incompatible, or that a context bridge is undeclared. Do not repair it by silently adding or deleting a row in `KindExtension`.
-6. **Separate signature change from kind continuity.** A changed criterion, evaluation domain, `EntityOfConcern` referent, or effective reference scheme creates another `U.Signature` episteme edition under A.6.0 and C.2.1. C.3.1 then decides independently whether the same local kind continues.
-7. **Record the continuity consequence.** If the local identity basis is preserved, the same kind may continue while every classification still cites the edition actually used; the new edition does not retroactively rewrite old judgments. If the identity basis is not preserved, identify a different local kind and state any genuinely obtaining `U.SubkindOf` relation or C.3.3 bridge separately.
+5. **Diagnose counterexamples against the actual rules.** Use C.3.2 judgments to test the proposed `U.SubkindOf` relation and C.3.3 when a relation across local boundaries is needed. A counterexample indicates that the proposed relation does not obtain, that the signature editions are incompatible, or that a required cross-local relation is undeclared. Do not repair it by silently adding or deleting a row in `KindExtension`.
+6. **Separate signature change from kind continuity.** A changed criterion, evaluation domain, `EntityOfConcern` referent, or effective reference scheme creates another `U.Signature` episteme edition under A.6.0 and C.2.1. Apply the C.3.1 continuity test independently to determine whether the same local kind continues.
+7. **Record the continuity consequence.** If both the explicit local practice or source boundary and the stable subject distinction are preserved, the same kind may continue while every classification still cites the edition actually used; the new edition does not retroactively rewrite old judgments. If either identity component is not preserved, identify a different local kind and state any genuinely obtaining `U.SubkindOf` relation or C.3.3 bridge separately.
 8. **Do not infer change from the extension alone.** A changed candidate state or later `U.ContextSlice` can change `KindExtension(k, slice)` without changing the signature, kind, or a still-obtaining subkind relation.
 9. **Keep scope and Work outside the kind.** A kind carries no claim scope. `U.Work` is the admitted U-kind, whereas `W : U.Work` is one independently grounded, world-side, dated 4D work occurrence; a plan, log, card, or row about W is a separate episteme and does not establish either W or a local subkind classification.
 
@@ -77,8 +77,8 @@ Ask these questions in order:
 | Is this another edition of the declaration episteme rather than merely a publication form? | Continue to the kind-identity question. | Publication-form change leaves both signature edition and kind untouched. |
 | Does the new edition preserve the locally declared kind identity despite its explicit content change? | Keep the local kind identity; cite the actual edition in every later judgment. | Identify another local kind. |
 | Are judgments under the editions compared in one subkind argument? | Declare the edition alignment and rerun monotonicity. | Do not compare their extensions as if one criterion were current throughout. |
-| Does the use cross a `U.BoundedContext` boundary? | Use C.3.3 and declare preservation or loss between the exact source and target local kinds. | Continue within the same local context. |
-| Within that context, did the effective `U.ReferenceScheme` change? | Create another `KindSignature` edition, decide kind continuity here, and rerun monotonicity under an explicit edition alignment when the order remains claimed. | Keep the current scheme alignment; a slice-only change creates no bridge. |
+| Does the use cross into another local practice or source boundary? | Use C.3.3 and declare preservation or loss between the exact source and target local kinds. | Continue within the same local kind boundary. |
+| Within the same local identity basis, did the effective `U.ReferenceScheme` change? | Create another `KindSignature` edition, decide kind continuity here, and rerun monotonicity under an explicit edition alignment when the order remains claimed. | Keep the current scheme alignment; a slice-only change creates no bridge. |
 
 A higher `U.Formality` value alone does not prove kind continuity or discontinuity. It characterizes the declaration episteme. The content and the local identity decision do the work.
 
@@ -92,7 +92,7 @@ A higher `U.Formality` value alone does not prove kind continuity or discontinui
 | Pump #14 changes state in a later plant slice. | Re-evaluate the candidate and allow the represented extension to change. | Candidate-state change alone does not create a new kind or signature. |
 | `InspectionWorkKind` is used locally. | Classify only an independently identified `W : U.Work`. | `U.Work`, a work plan, or a log row cannot occupy W's candidate position. |
 | `WorkPlan` depends on Work. | Use the governing work or E.24.UK relation. | Do not encode dependency as `U.SubkindOf` unless a real kind partial order is being claimed. |
-| Safety-critical function is a kind of function. | Use a local `U.Kind` and subkind order for the current typed claim. | Intent and candidate judgment go to C.3.2; public FPF naming follows governed U-kind admission. |
+| Safety-critical function is a kind of function. | Use a local `U.Kind` and subkind order for the current typed claim. | Use C.3.2 for intent and candidate judgment; public FPF naming follows governed U-kind admission. |
 | A project proposes public `U.CoolingPump`. | Take the recovered local kind to `E.24.UK`, then use `A.11`, `A.8`, and the applicable Part F naming pattern as needed. | Local `U.SubkindOf` does not admit or publish the durable kind. |
 
 ### C.3.1:8 - Bias-Annotation
@@ -103,10 +103,10 @@ C.3.1 counters hierarchy bias, assertion-as-world bias, label continuity bias, a
 
 | Check | Requirement |
 | --- | --- |
-| `CC-C31-1` | Each local `U.Kind` names its bounded context and local identity basis. Each `U.SubkindOf` obtaining claim names the exact effective reference-scheme edition and aligned signatures used to interpret the order; cross-context use goes through C.3.3. |
+| `CC-C31-1` | Each local `U.Kind` names its explicit practice or source boundary and stable subject distinction. Each `U.SubkindOf` obtaining claim names the exact effective reference-scheme edition and aligned signatures used to interpret the order; cross-local use goes through C.3.3. |
 | `CC-C31-2` | `U.SubkindOf` is an admitted direct relation kind with narrower-kind and broader-kind participants, a recoverable obtaining predicate and applicability, and participant-plus-reference-scheme occurrence identity. |
 | `CC-C31-2a` | A predicate expression, C.2.1 assertion episteme, evidence item, representation edge, and optional `R_sub` occurrence designator are kept distinct; none makes the relation obtain. |
-| `CC-C31-2b` | Reflexivity, transitivity, and antisymmetry constrain obtaining relation facts and are not overloaded with dependency, construction, role, slot, or admission relations. |
+| `CC-C31-2b` | Reflexivity, transitivity, and antisymmetry constrain obtaining relation facts and are not overloaded with dependency, construction, system-role assignment, declaration-slot, or admission relations. |
 | `CC-C31-3` | The judgment-level monotonicity implication is checked for the same candidate and slice under explicit compatible signature editions; `unknown` neither refutes nor establishes the universal relation predicate. |
 | `CC-C31-4` | A monotonicity counterexample diagnoses a non-obtaining link, incompatible editions, or missing bridge; no extension row is silently changed. |
 | `CC-C31-5` | Signature-edition identity and kind continuity are decided separately, and old judgments retain their cited edition. |
@@ -116,7 +116,7 @@ C.3.1 counters hierarchy bias, assertion-as-world bias, label continuity bias, a
 
 ### C.3.1:10 - Common Anti-Patterns and How to Avoid Them
 
-* Encoding dependency, part-whole, slot filling, construction, role assignment, or admission as `U.SubkindOf`, or treating a predicate expression, assertion, diagram edge, or table row as the obtaining relation occurrence.
+* Encoding dependency, part-whole, slot filling, construction, system-role assignment, or admission as `U.SubkindOf`, or treating a predicate expression, assertion, diagram edge, or table row as the obtaining relation occurrence.
 * Treating a source hierarchy or public-looking spelling as durable FPF ontology.
 * Treating `KindSignature` as the kind or its formality as a property of the kind.
 * Assuming every signature edit makes a new kind, or that no signature edit can make one.
@@ -138,13 +138,13 @@ Kind identity, direct `U.SubkindOf` obtaining, assertion identity, declaration i
 
 ### C.3.1:13 - SoTA-Echoing
 
-Type theory, ontology engineering, and versioned schema practice distinguish partial-order laws, intensional declarations, interpretation editions, and their extensions. C.3.1 keeps the useful order law but grounds its practical consequence in C.3.2 judgments and leaves declaration identity to A.6.0/C.2.1, cross-context use to C.3.3, and public U-kind admission to `E.24.UK`. That admission remains separate because it carries ontic identity, membership criteria, construction, naming, and parsimony obligations that a local subkind order does not.
+Type theory, ontology engineering, and versioned schema practice distinguish partial-order laws, intensional declarations, interpretation editions, and their extensions. C.3.1 keeps the useful order law but grounds its practical consequence in C.3.2 judgments and leaves declaration identity to A.6.0 and C.2.1, cross-local use to C.3.3, and public U-kind admission to `E.24.UK`. That admission remains separate because it carries ontic identity, membership criteria, construction, naming, and parsimony obligations that a local subkind order does not.
 
 ### C.3.1:14 - Relations
 
 - **Specializes:** `A.6.REL` for the direct `U.SubkindOf` relation settlement: exact kind participants, obtaining predicate, applicability, lightweight occurrence use, and participant-plus-reference-scheme identity.
 - **Builds on:** `C.3`, A.6.0 declaration identity, C.2.1 episteme and assertion identity, A.2.6/USM context-slice and scope discipline, F-G-R, and C.2.3 formality.
-- **Coordinates with:** `C.3.2` judgments and extensions, `C.3.3` cross-context bridges, `A.6.5` declaration-slot uses that consume an already obtaining subkind relation, `C.29` representations, `E.24.UK` durable U-kind admission, and `A.8`, `A.11`, `F.8`, and `F.5` when public kind governance is current.
+- **Coordinates with:** `C.3.2` judgments and extensions, `C.3.3` bridges between exact local kinds, `A.2` when one local kind is a system-role kind, `A.6.5` declaration-slot uses that consume an already obtaining subkind relation, `C.29` representations, `E.24.UK` durable U-kind admission, and `A.8`, `A.11`, `F.8`, and `F.5` when public kind governance is current.
 - **Does not replace:** C.2.1 governance of affirmative, negative, or unresolved subkind assertions; a direct candidate-feature governor; classification assertion; kind declaration; context bridge; or public naming decision.
 
 ### C.3.1:End

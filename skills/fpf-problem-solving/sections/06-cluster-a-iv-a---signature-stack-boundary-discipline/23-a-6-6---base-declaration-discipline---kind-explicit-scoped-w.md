@@ -10,30 +10,30 @@
 
 **What this buys.** The project gets a scoped witnessed base declaration with typed dependent and base slots, explicit baseRelation, scope and time condition, witnesses or pins, and named change classes for rebasing, retiming, or withdrawing the declaration.
 
-**E.24.UK settlement.** A.6.6 does not admit `U.BaseDeclarationDiscipline` as a durable U-kind. The pattern governs base-declaration discipline. It retains `U.ScopedWitnessedBaseDeclaration` only as a dependent durable declaration value under the A.6 signature and slot-relation settlement: a scoped declaration that relates dependent content to an explicit base through a declared base relation, scope and time condition, and witnesses. Local support wording, anchor wording, source pointers, publication records, and witness carriers do not become U-kinds by appearing in this discipline.
+**E.24.UK settlement.** A.6.6 does not admit `U.BaseDeclarationDiscipline` as a durable U-kind. The pattern defines or constrains base-declaration discipline. It retains `U.ScopedWitnessedBaseDeclaration` only as a dependent durable declaration value under the A.6 signature and slot-relation settlement: a scoped declaration that relates dependent content to an explicit base through a declared base relation, scope and time condition, and witnesses. Local support wording, anchor wording, source pointers, publication records, and witness carriers do not become U-kinds by appearing in this discipline.
 
 **Status.** Normative (Core).
 
-**Placement.** Part A, cluster A.IV “Signature Stack & Boundary Discipline”; adjacent to A.6.5 `U.RelationSlotDiscipline`.
+**Placement.** Part A, cluster A.IV “Signature Stack & Boundary Discipline”; adjacent to A.6.5 relation-declaration slot discipline.
 
 **Depends on.**
 – A.6.0 `U.Signature` (universal signature carrier).
-– A.6.5 `U.RelationSlotDiscipline` (SlotKind/ValueKind/RefKind stratification + slot-operation lexicon).
+– A.6.5 relation-declaration slot discipline (SlotKind, ValueKind, and RefKind stratification plus the slot-operation lexicon).
 – A.2.6 (Scope discipline; explicit `Γ_time`; implicit “latest/current” is forbidden).
 – A.2.4 evidence-use and status-use relation discipline for decision-relevant witness sets, including timespan, provenance, scope, polarity, and freshness constraints.
 - A.7 (Strict Distinction; EntityOfConcern vs Description-episteme and specification-use cases vs publication face, form, unit, carrier, and rendering lanes).
 – E.8 (pattern authoring order & SoTA discipline).
-– E.10 (LEX‑BUNDLE discipline; D.CTX lexical guardrails).
+– E.10 and E.10.D1 for wording-use recovery, with F.0.1 and F.17 for source-local meaning and its optional durable address.
 
 **Coordinates with.**
 – A.10 Evidence–Provenance DAG discipline (`verifiedBy`, `validatedBy`).
 – A.14 per-edge constructive grounding (`tv:groundedBy`) and `validationMode` discipline.
-– C.2.1 `U.EpistemeSlotRelation` grounding slots (`GroundingHolonSlot`, `EntityOfConcernSlot`).
+- C.2.1 episteme constitution through exact claim content, EntityOfConcern, and effective ReferenceScheme, plus the separately obtaining `EpistemeEmpiricalGroundingRelation` between an exact episteme and grounding holon.
 – A.6.3 `U.EpistemicViewing` (`EntityOfConcernRef`-preserving view operators; base-relative “how” without retargeting).
 – A.6.4 `U.EpistemicRetargeting` (base-change along `KindBridge`; retargeting lexicon and continuity rules).
-– C.3.3 `U.KindBridge` & `CL^k` (explicit repair/translation when endpoint kinds or Contexts differ; no silent re-typing).
+– C.3.3 `U.KindBridge`, including the `CL^k` value declared for that bridge (explicit repair or translation when exact endpoint kinds differ; no silent re-typing).
 – E.18 assurance-operations on `U.Transfer` (`CalibrateTo`, `CiteEvidence`, `AttributeTo`, `ConstrainTo`, …).
-– F.9 Bridges & CL (cross-context and cross-plane base declarations cite Bridge ids + CL policy).
+– F.9 Bridge relations and the `CL` value declared for each relation when the declaration actually consumes a relation between distinct F.17 local-sense cells or ReferencePlanes; cite the exact relation and its admitted use.
 – F.15 F-Suite validation harness (carrier/source-currentness, provenance, and refresh governance).
 - F.18 naming governance (Tech/Plain twins and publication-lane naming boundaries).
 
@@ -65,9 +65,9 @@ In drafts, authors often reach for a single umbrella metaphor (frequently “anc
 
 > **Deconfliction note (lexical).** This pattern is about *base-dependence in content* (“X is usable relative to B”). It is not about E.10’s **Domain Anchoring** (MG-DA), where “anchoring” is a *lexical* primitive for binding token morphology to the term's selected EntityOfConcern. When you see `anchor*` in a basedness sentence, treat it as a defect unless an explicit baseRelation token is present.
 >
-> **Deconfliction note (context/meaning).** This pattern is also not a license to reintroduce “anchor” as a surrogate for **Context**, **SenseCell**, or “where meaning lives”. Any such use is an *anchor‑relapse* and SHALL be rewritten into explicit Context/SenseCell/ConceptSet lane constructs (E.10 D.CTX), not into SWBD.
+> **Deconfliction note (source-local meaning).** This pattern is not a license to use “anchor” for a source, meaning, or the thing that supposedly makes a word mean something. Recover the exact source and edition, effective `ReferenceScheme`, local expression, local-sense claim, and exact supporting passage under F.0.1. Create an F.17 `SchemeSenseCell` or obtaining `LocalSenseBasisRelation` only when a later use needs that durable address or support claim. A small source note or Card may represent an already constituted episteme; its form supplies no meaning and is not an SWBD.
 >
-> **Deconfliction note (support wording).** This pattern governs support wording only when the claim being made is base-dependence: `dependent` is usable, admissible, interpretable, comparable, publishable, or actionable relative to `base` via a declared `baseRelation`. It does not govern support as ordinary help, source discovery, reader navigation, work enablement, evidence-use polarity, assurance calculus, causal-use support basis, mathematical-lens use, or publication companion use. Those readings use their ontology of the governing pattern for that claim: source-description, evidence, assurance, causal-use, mathematical-lens, work/resource, publication/navigation, or publication-companion patterns as live. A support phrase that cannot select one support reading remains a cue, not a base declaration.
+> **Deconfliction note (support wording).** This pattern defines or constrains support wording only when the claim being made is base-dependence: `dependent` is usable, admissible, interpretable, comparable, publishable, or actionable relative to `base` via a declared `baseRelation`. It does not govern support as ordinary help, source discovery, reader navigation, work enablement, evidence-use polarity, assurance calculus, causal-use support basis, mathematical-lens use, or publication companion use. Those readings use their ontology of the subject pattern for that claim: source-description, evidence, assurance, causal-use, mathematical-lens, work/resource, publication/navigation, or publication-companion patterns as live. A support phrase that cannot select one support reading remains a cue, not a base declaration.
 
 Like A.6.5, this family also triggers **typing conflicts across viewpoints**: an endpoint may be spoken about in its self-kind while the baseRelation declaration expects a different ValueKind (or a different `refMode`). If that mismatch is not made explicit (SlotSpec + relation-specific constraints), authors “solve” it by renaming ends or flipping direction, and the ontological obligation (bridge / narrowing / retargeting) is lost.
 
@@ -111,13 +111,13 @@ Typical failure modes this pattern is designed to eliminate:
    “Grounding” is used as if it were one relation, while FPF already distinguishes at least:
    * constructive grounding of a model-edge by a trace (`tv:groundedBy`),
    * situational/empirical grounding of an episteme via a grounding holon (C.2.1),
-   * semantic meaning assignment (SenseCell/ConceptSet lane; not a base declaration).
+   * source-local meaning recovery and, when needed, an F.17 `SchemeSenseCell` and `LocalSenseBasisRelation` (not a base declaration).
 
 8. **Slot/basing conflation.**
    A.6.5 disambiguates positions in n-ary relations (SlotKind) vs fillers (ValueKind) vs stored references (RefKind). Umbrella basing language reintroduces confusion at the next layer: “why this link exists” (BaseRelation) is missing, and slot-edit operations are conflated with base-declaration edits.
 
-9. **Anchor relapse (Context/meaning surrogate).**
-   “Anchor/anchoring” is used to mean “the context”, “the meaning”, “the global reference”, or “the thing that makes this true”. This collapses D.CTX + SenseCell/ConceptSet lanes into a metaphor and makes review/tooling impossible.
+9. **Anchor relapse (source or meaning surrogate).**
+   “Anchor/anchoring” is used to mean “the source”, “the meaning”, “the global reference”, or “the thing that makes this true”. This hides the exact source, scheme, expression, local claim, and any obtaining basis relation behind a metaphor and makes review impossible.
 
 10. **Support bucket relapse.**
     “Support”, “support basis”, “support relation”, or “support record” is used as a generic container for unlike relations. Some cases are SWBD basedness; others are evidence polarity, assurance input, causal-use support basis, mathematical-lens use, work enablement, source-description, publication companion, or ordinary help. Treating all of them as one undifferentiated support relation recreates the same under-described dependence that A.6.6 exists to repair.
@@ -128,10 +128,10 @@ Typical failure modes this pattern is designed to eliminate:
 | --- | --- |
 | **Universality vs precision** | One discipline must cover calibration, evidence linking, reference selection, attribution, gating, etc., without collapsing them into one pseudo-relation. |
 | **Minimal kernel vs decision auditability** | Few primitives are preferred, but decision-relevant declarations must carry witnesses/pins and explicit time selectors where needed. |
-| **Two perspectives, one reality** | Dependent-view and base-view must both be expressible without renaming roles or flipping meaning. |
+| **Two perspectives, one reality** | Dependent-view and base-view must both be expressible without renaming relation-end meanings or flipping meaning. |
 | **Compatibility with A.6.5** | Base declarations introduce slots and edits; they must remain SlotKind/ValueKind/RefKind disciplined and must not collapse slot edits with semantic re-declarations. |
 | **Lexical guardrails** | Without strict wording rules, umbrella metaphors will return and erase the structure. |
-| **Cross-context integrity** | When dependent and base cross Contexts or planes, the declaration must remain explicit and reviewable; no silent semantic drift. |
+| **Cross-local integrity** | When a declaration actually depends on a relation between different local kinds, local senses, scopes, or planes, that exact relation must remain explicit and reviewable; different sources alone do not create a Bridge. |
 
 ### A.6.6:4 - Solution — The `U.ScopedWitnessedBaseDeclaration` object and its lexicon
 
@@ -160,7 +160,7 @@ Where:
 
 **Notation.** `SlotContent(VK, refMode)` is a compact shorthand for “a slot whose SlotSpec declares `ValueKind=VK` and `refMode ∈ {ByValue | RefKind}` (A.6.5)”.
 
-**SlotSpec note.** `VK_*` / `RK_*` / `refMode_*` above are **not** “anything goes”: they are fixed by the chosen `BaseRelationSlot` vocabulary entry and must be declared as SlotSpecs (A.6.5). In other words, SWBD is a reusable *shape*, but each Context’s declared `baseRelation` vocabulary entry makes it a concrete, typed signature.
+**SlotSpec note.** `VK_*`, `RK_*`, and `refMode_*` above are **not** “anything goes”: they are fixed by the selected `BaseRelationSlot` vocabulary entry and must be declared as SlotSpecs (A.6.5). In other words, SWBD is a reusable *shape*, but the selected local `baseRelation` declaration makes it a concrete, typed signature.
 
 **Instance/prose notation note (convention).** In the prose and examples below, the slot fillers are written as `dependent`, `base`, `baseRelation`, `scope`, `Γ_time`, `witnesses` (no `*Slot` suffix). The `*Slot` suffix is reserved for SlotKinds/positions only (A.6.5 / E.10).
 
@@ -170,7 +170,7 @@ Where:
 * **WF‑BD‑3 (Time explicit when time matters).** If the declaration’s interpretation depends on time, `GammaTimeSlot` is explicit; “latest/current” is not a substitute.
 * **WF‑BD‑4 (Decision use requires witnesses).** If the declaration is used for assurance, gating, or admissibility decisions, `WitnessSetSlot` is non-empty and resolvable.
 * **WF‑BD‑5 (Edition fence for decision/publication).** An SWBD that is cited by PublicationScope or used for decision is immutable per edition: any permitted change class is represented as a new declaration linked via explicit continuity/withdrawal, not as an in-place rewrite.
-* **WF‑BD‑6 (No silent cross-context reuse).** An SWBD that relates dependent and base across Contexts/planes (or requires scope translation) is admissible only if it cites the Bridge ids + CL policy that make the reuse admissible (F.9). No informal “it is the same entity anyway” prose is an admissible substitute.
+* **WF‑BD‑6 (No silent cross-local reuse).** If an SWBD consumes a relation between different exact local kinds, distinct F.17 cells, translated scopes, or ReferencePlanes, it cites the applicable C.3.3, F.9, scope, or plane relation and the limits of the receiving use. Merely drawing dependent and base from different sources does not create a Bridge. No informal “it is the same entity anyway” prose is an admissible substitute.
 
 This is the discipline-level analogue of A.6.5’s move: disambiguation is achieved by making the missing structural component explicit and non-optional in decision-relevant contexts.
 
@@ -208,24 +208,34 @@ Recommended canonical SlotKinds for SWBD:
 * **Invariant (Time gating).** If time-dependent assumptions exist, the SWBD includes `GammaTimeSlot` carrying a `GammaTimePolicy` (WF‑BD‑3).
 * **Invariant (Witness gating).** If the declaration participates in assurance/gating/admissibility decisions, the SWBD includes a non-empty, resolvable `WitnessSetSlot` (WF‑BD‑4).
 
-**Field naming guard (implementation; informative).** When materialising SWBD as a record/card, implementations SHOULD avoid naming data fields with the `*Slot` suffix. Prefer `dependentRef`, `baseRef`, `baseRelationRef`, `scope`, `gammaTime`, `witnesses` (or Context‑local equivalents). `*Slot` remains reserved for SlotKinds/SlotSpecs (A.6.5).
+**Field naming guard (implementation; informative).** When materialising SWBD as a record or representation, implementations SHOULD avoid naming data fields with the `*Slot` suffix. Prefer `dependentRef`, `baseRef`, `baseRelationRef`, `scope`, `gammaTime`, and `witnesses`, or the corresponding terms in the selected local declaration. `*Slot` remains reserved for SlotKinds and SlotSpecs (A.6.5).
 
 #### A.6.6:4.4 - BaseRelation declaration
 
-A `baseRelation` token is not “just a label”. For each baseRelation declared in a Context, its definition SHALL include:
+A `baseRelation` token is not “just a label”. For each selected local baseRelation declaration, its definition SHALL include:
 
-* **Role polarity.** Which end is dependent and which end is base (or declare symmetry explicitly).
+* **Relation-end polarity.** Which end is dependent and which end is base (or declare symmetry explicitly).
 * **Typing expectations.** Admissible ValueKinds and `refMode` for `DependentSlot` and `BaseSlot`.
 * **Token discipline (LEX).** The token SHALL satisfy E.10 token-class morphology for relations/verbs; it SHALL NOT use metaphor heads (`Anchor*`, `Ground*`, `Attach*`) as a meaning-surrogate. If a source phrase must be retained for traceability, record it as source wording through F.18 naming discipline while keeping the relation-specific token specific.
 * **Repair path for mismatches.** If an endpoint’s self-kind does not match the expected ValueKind, the allowed repairs are declared (KindBridge, explicit narrowing, or explicit retargeting); “renaming the endpoint” is not a repair.
 * **Parameter placement.** Any additional qualifiers required by the relation kind (ranges, metrics, reference planes, policies) SHALL be represented either inside `scope` (preferred) or as explicit additional slots in an extended base-declaration signature; they MUST NOT be smuggled as adjectives on the endpoints.
 * **Scope class.** Whether the declaration is claim-scoped (**G**), work-scoped, or publication-scoped.
 * **Time discipline.** Whether `Γ_time` is required, optional, or forbidden for this relation kind.
-* **Witness discipline.** Whether witnesses are always required versus required only for decision use, and what witness-use relations or pinned witness records are admissible: evidence-use relations, edition pins, calibration certificate pins, proof-bearing publications, or policy pins named by direct governing patterns.
+* **Witness discipline.** Whether witnesses are always required versus required only for decision use, and what witness-use relations or pinned witness records are admissible: evidence-use relations, edition pins, calibration certificate pins, proof-bearing publications, or policy pins named by subject patterns.
 * **Admissible change classes.** Which base-change operations are permitted (below) and what continuity requirements apply.
-* **Cross-context / cross-plane policy.** Whether this declared `baseRelation` may cross Contexts/planes at all; if yes, what Bridge ids/CL thresholds must be cited and what loss notes are required (F.9 / C.3.3).
+* **Cross-local and cross-plane policy.** State whether the relation may connect different exact local kinds, distinct F.17 cells, translated scopes, or ReferencePlanes. When it may, name the applicable C.3.3, F.9, scope, or plane relation, admitted use, and loss or limit; source difference alone is insufficient.
 
 This mirrors A.6.5: a SlotKind without ValueKind/RefMode is underspecified; a baseRelation without its vocabulary entry is equally underspecified.
+
+#### A.6.6:4.4a - Claim-scoped non-kind predicate-base branch
+
+When one identified derivation or criterion-selection claim uses exact claim content as its base, reuse A.6.6's endpoint, scope, time, witness, Bridge/loss, change, and overread discipline without pretending that a base relation kind or SWBD occurrence has been admitted. Identify the exact dependent `U.ClaimGraph`, exact nonempty selected base subgraph by value, the `derive` or `evaluate` mode, exact derivation or evaluation-and-selection claim identity, bounded receiving use, and effective reference scheme. Add an exact A.2.6 ClaimScope, temporal policy/domain, source or witness qualification, or cross-scheme Bridge and loss account only when that independently varying fact changes the assertion.
+
+The assertion is ordinary C.2.1 claim content under `derivedUsingRuleContent` or `evaluatedAgainstRuleContent`. The dependent and base are A.6.0 predicate parameters, not A.6.5 SlotSpecs, participants of a `BaseRelation`, or an intrinsic `rule-bearing` classification. Same-scheme use adds no Bridge. A source edition, designation, acceptance/currentness fact, trace, or witness qualifies the assertion but does not enter semantic-base identity. Equal graphs under the same scheme count as one semantic base with multiple qualifications; a changed graph is another base.
+
+Change only the fact that changed: declare or withdraw a selected base, repoint the dependent, rescope, retime, refresh witnesses, or change the predicate relation. A changed subject, content, mode, bounded use, actual-use claim, scope extension, temporal policy, or interpreted endpoint creates the appropriate successor C.2.1 assertion. Do not infer a new relation kind, occurrence, evidence result, Work, authority, or reliance from that change.
+
+A basis-family analysis is a separate, optional C.2.1 episteme opened only for a named comparison, replay, material-conflict, or reliance receiver. Its candidate universe, evaluations, pairwise compatibility, temporal partition, established family, and disposition neither edit this reusable predicate declaration nor become fields of each actual-use assertion.
 
 #### A.6.6:4.4.1 - Perspective/voice discipline (dependent-view vs base-view)
 
@@ -254,12 +264,12 @@ Instead:
 1) Name the **BaseRelation token** (declared vocabulary element), and
 2) Use a **relation-specific verb phrase** that corresponds to that token.
 
-**Lane guard for meaning.** If the intent is “attach meaning to a term”, do not introduce a baseRelation named `Anchor…` or `Ground…`. Use SenseCell/ConceptSet discipline; semantic meaning assignment is not expressed by SWBD.
+**Lane guard for meaning.** If the intent is “say what this expression means in this source”, do not introduce a baseRelation named `Anchor…` or `Ground…`. Recover the source-local claim under F.0.1; use F.17 only when a durable `SchemeSenseCell` or obtaining `LocalSenseBasisRelation` is actually needed. Semantic meaning assignment is not expressed by SWBD.
 
 **Grounding disambiguation rule.** If the prose says “grounded”, it MUST be rewritten into one of:
 * constructive grounding (`tv:groundedBy`, base is a trace),
 * situational/empirical grounding (base is a grounding holon or experimental setup),
-* meaning lane (SenseCell/ConceptSet; not SWBD).
+* source-local meaning lane (exact source, scheme, expression, local claim, and optional F.17 cell or basis relation; not SWBD).
 
 **Bind deconfliction note.** Authors MUST NOT use the verb “bind/binding” as a synonym for declaring/refreshing/changing a base declaration. “bind/binding” is reserved for **name binding** (LEX discipline). For SWBD edits, authors SHALL use the base‑change lexicon (below) instead.
 
@@ -282,7 +292,7 @@ These names denote **semantic change classes**. In decision/publication lanes, i
 
 **Relation to A.6.5 slot operations (non-normative mapping).** These are *semantic change classes*; an implementation may realise them using A.6.5 slot operations on the SWBD record fields. Example: a **rebase** may be implemented as a `retarget` of `baseRef` on a *new* SWBD edition. The point of A.6.6 is that “we retargeted a ref” is not the semantic story; “we rebased the declaration” is.
 
-**Relation to E.18 assurance ops (informative).** On `U.Transfer`, the allowed ops (`ConstrainTo/CalibrateTo/CiteEvidence/AttributeTo`) can be viewed as Context-approved specialisations of `declareBase/rescope/rebase/refreshWitnesses` for specific declared `baseRelation` readings, with stricter declared constraints and lintability.
+**Relation to E.18 assurance ops (informative).** On `U.Transfer`, the allowed ops—`ConstrainTo`, `CalibrateTo`, `CiteEvidence`, and `AttributeTo`—can be viewed as pattern-defined specialisations of `declareBase`, `rescope`, `rebase`, and `refreshWitnesses` for specific declared `baseRelation` readings, with stricter declared constraints and lintability.
 
 #### A.6.6:4.7 - Disambiguation guide for selecting a baseRelation
 
@@ -297,7 +307,7 @@ When a draft uses an umbrella phrase (“anchored”, “attached”, “grounde
 | “This description is about X under a view” | **Viewing / retargeting (specialised)** (`viewedVia`, `retargetedAlong`) | episteme/view | selected EntityOfConcern | view operator pins, Bridge ids (if retargeting) |
 | “Allowed only under policy P” | **Constraint / policy** (`constrainedBy`, `permittedUnder`) | work-step / publication item | policy/rule | policy pin, waiver/work ref |
 | “Property belongs to object” | **Attribution / aboutness** (`attributedTo`, `aboutEntity`, `characterises`) | property/abstraction | object | observation/derivation witnesses |
-| “Meaning of this term is …” | **Meaning lane** (SenseCell/ConceptSet) | term occurrence | SenseCell/Concept row | definition/usage witnesses |
+| “This expression means … in this source” | **Source-local meaning lane** (F.0.1; F.17 only when a durable address or basis relation is needed) | local expression | local-sense claim | exact source passage and, when current, an obtaining basis relation |
 
 This table is illustrative; the discipline requirement is that the chosen baseRelation be explicit, declared, and relation-specific. The “Meaning lane” row is included only as a **do-not-model-with-SWBD** reminder.
 
@@ -320,14 +330,14 @@ admissibleUse:
 nonAdmissibleUse:
 ```
 
-If these fields can be stated, rewrite the phrase as `baseRelation(dependent, base)` or `dependent --baseRelation--> base` and use an SWBD or a Context-local SWBD specialization. Examples include `validatedBy(claim, evidenceCarrier)`, `calibratedTo(measurementOutput, standard)`, `normalisedTo(metric, datum)`, `attributedTo(propertyClaim, selectedEntity)`, `aboutEntity(description, entityOfConcern)`, and `permittedUnder(workStep, policy)`.
+If these fields can be stated, rewrite the phrase as `baseRelation(dependent, base)` or `dependent --baseRelation--> base` and use an SWBD or a selected local SWBD specialization. Examples include `validatedBy(claim, evidenceCarrier)`, `calibratedTo(measurementOutput, standard)`, `normalisedTo(metric, datum)`, `attributedTo(propertyClaim, selectedEntity)`, `aboutEntity(description, entityOfConcern)`, and `permittedUnder(workStep, policy)`.
 
 If these fields cannot be stated, do not create a `SupportRelation`, `SupportBasis`, `SupportRecord`, or local support-headed type. Classify by reading and apply the matching ontology:
 
 | Support wording means... | Governing ontology to apply |
 | --- | --- |
 | a source, model, diagram, publication, or view describes, constrains, or exposes something | source-description, specification-use, and publication patterns (`A.7`, `A.6.3`, `A.6.2`, `C.2.3`, `E.17`, local source rules) |
-| an observation, test, proof, role, or carrier bears on a claim | evidence patterns (`A.10`, `A.2.4`, `G.6`) |
+| an observation, test, proof, carrier, or source phrase such as *evidence role* says that an episteme bears on a claim | recover the exact bounded evidence-use, status-use, provenance, or support relation through `A.2.4`, `A.10`, or `G.6`; a separately obtaining system-role classification or assignment may itself be evidence only through another evidence-use fact |
 | a claim is acceptable in an assurance or trust calculus | assurance patterns (`B.3`) plus evidence ontology named by value when evidence is live |
 | a causal, intervention, counterfactual, off-policy, or simulation-only use is admissible | causal-use pattern (`C.28`) |
 | a mathematical lens, mapping, or model makes a use admissible or exposes preserved/lost structure | mathematical-lens patterns (`C.29`, `C.26`, `F.9`) |
@@ -433,10 +443,10 @@ A carrier (pattern, spec, schema, code carrier, or publication) conforms to A.6.
    Changing `baseRelation` SHALL be treated as a semantic change: it SHALL be represented as a new declaration plus explicit continuity, not as an edit-in-place.
 
 7. **CC‑BD‑7 — Grounding is disambiguated.**
-   Any use of “grounding/grounded” SHALL be disambiguated to a specific declared relation kind or moved to the meaning lane (SenseCell/ConceptSet).
+   Any use of “grounding/grounded” SHALL be disambiguated to a specific declared relation kind or moved to source-local meaning recovery under F.0.1 and, when needed, F.17.
 
-8. **CC‑BD‑8 — Cross-context use is explicit.**
-   If dependent and base reside in different Contexts (or scope translation is required), the declaration’s reuse SHALL cite Bridge ids plus CL policy (no silent reuse across Contexts/planes).
+8. **CC‑BD‑8 — Actual cross-local use is explicit.**
+   If the declaration consumes a relation between different exact local kinds, distinct F.17 cells, translated scopes, or ReferencePlanes, it SHALL cite the applicable C.3.3, F.9, scope, or plane relation and its admitted-use limits. Different sources alone do not require or establish a Bridge.
 
 9. **CC‑BD‑9 — `Γ_time` is not treated as freshness.**
    When witness freshness/decay matters, it SHALL be expressed explicitly through evidence-use timespans, witness qualification windows, or explicit freshness predicates, not by treating `Γ_time` as a proxy.
@@ -448,34 +458,34 @@ A carrier (pattern, spec, schema, code carrier, or publication) conforms to A.6.
    The `*Slot` suffix SHALL be used only for SlotKinds/positions, never for endpoint values or references.
 
 12. **CC‑BD‑12 — No “anchor” relapse.**
-   `anchor*` / `ground*` / `attach*` SHALL NOT be used as surrogates for Context/SenseCell/ConceptSet or for an unnamed dependence kind. Authors SHALL either use the reserved primitive sense (where explicitly defined elsewhere) or rewrite into explicit `baseRelation(dependent, base)` form. Metaphor-head tokens SHALL NOT be minted as new relation-specific `baseRelation` vocabulary entries; if quoted source wording must be retained, record it as source wording against the specific non-metaphor token.
+   `anchor*` / `ground*` / `attach*` SHALL NOT be used as surrogates for a source, local meaning, F.17 cell, local-sense basis relation, or unnamed dependence kind. Authors SHALL either use the reserved primitive sense (where explicitly defined elsewhere) or rewrite into explicit `baseRelation(dependent, base)` form. Metaphor-head tokens SHALL NOT be minted as new relation-specific `baseRelation` vocabulary entries; if quoted source wording must be retained, record it as source wording against the specific non-metaphor token.
 
 13. **CC‑BD‑13 — BaseRelation declarations are explicit.**
-    Every `baseRelation` token used in an SWBD SHALL resolve to a vocabulary entry whose vocabulary entry declares (at minimum): polarity; typing expectations (ValueKind + `refMode`) for `DependentSlot` and `BaseSlot`; admissible repair options (KindBridge, narrowing, or explicit retargeting); scope class; time discipline (`Γ_time` required, optional, or forbidden); witness discipline; admissible change classes; and cross-context and cross-plane policy (Bridge ids + CL threshold + loss notes where applicable).
+    Every `baseRelation` token used in an SWBD SHALL resolve to a vocabulary entry that declares at least polarity; typing expectations (ValueKind + `refMode`) for `DependentSlot` and `BaseSlot`; admissible repair options (KindBridge, narrowing, or explicit retargeting); scope class; time discipline (`Γ_time` required, optional, or forbidden); witness discipline; admissible change classes; and any cross-local or cross-plane policy with the exact applicable relation, admitted use, and loss or limit.
 
 14. **CC‑BD‑14 — Authoring voice is explicit.**
     In Tech / normative prose, based declarations SHALL be written as `baseRelation(dependent, base)` or `dependent --baseRelation--> base`. Base-view prose SHALL be used only if polarity is preserved via explicit inverse-token use; implicit polarity flips SHALL NOT be used.
 
 15. **CC‑BD‑15 — Meaning lane separation.**
-    Semantic meaning assignment SHALL be modeled via SenseCell/ConceptSet lane constructs (E.10 D.CTX), not via SWBD. SWBD SHALL be used only for non-semantic base-dependence (admissibility, calibration, attribution, policy gating, constructive grounding, viewing/retargeting specialisations).
+    Semantic meaning assignment SHALL begin with the exact source, edition, effective ReferenceScheme, local expression, and local-sense claim under F.0.1; an F.17 cell or basis relation is added only when that stronger use is current. It SHALL NOT be modeled as SWBD. SWBD SHALL be used only for non-semantic base-dependence (admissibility, calibration, attribution, policy gating, constructive grounding, and viewing and retargeting specialisations).
 
 16. **CC‑BD‑16 — Reserved “bind” discipline.**
     `bind/binding` SHALL be reserved for **name binding** (LEX discipline) and SHALL NOT be used as a synonym for declaring/refreshing/changing a base declaration. Authors SHALL use the base‑change lexicon (`declareBase`, `rebase`, `rescope`, `retime`, `refreshWitnesses`, …) and explicit continuity/withdrawal relations instead.
 
 17. **CC‑BD‑17 — Support wording is classified before base declaration.**
-    A support-looking statement SHALL pass the support wording selection test before it is modeled as SWBD. If the reading is not base-dependence, the text SHALL name the ontology of the governing pattern for that claim or keep the phrase as ordinary help/orientation; it SHALL NOT mint a support-headed baseRelation or record as a generic container.
+    A support-looking statement SHALL pass the support wording selection test before it is modeled as SWBD. If the reading is not base-dependence, the text SHALL name the ontology of the subject pattern for that claim or keep the phrase as ordinary help/orientation; it SHALL NOT mint a support-headed baseRelation or record as a generic container.
 
 ### A.6.6:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| **Generic support bucket** | Hides whether support means base-dependence, evidence polarity, assurance input, causal-use basis, mathematical-lens use, work enablement, source-description, publication companion, or ordinary help | Apply the support wording selection test; use SWBD only for genuine basedness and apply every other reading's ontology of the governing pattern for that claim |
+| **Generic support bucket** | Hides whether support means base-dependence, evidence polarity, assurance input, causal-use basis, mathematical-lens use, work enablement, source-description, publication companion, or ordinary help | Apply the support wording selection test; use SWBD only for genuine basedness and apply every other reading's ontology of the subject pattern for that claim |
 | **Umbrella “anchored/attached/grounded” with no baseRelation** | Hides relation kind; cannot state invariants | Introduce a declared baseRelation token and rewrite prose to use it |
 | **Perspective flip without endpoint-position names** | Directionality and typing become ambiguous | Use `dependent`/`base` endpoint positions consistently; declare polarity in baseRelation declaration |
 | **Treating evidence as “the base”** | Confuses base with witnesses | Make evidence/pins witnesses unless the relation kind’s base is explicitly an evidence carrier |
 | **Implicit “current/latest”** | Violates explicit time discipline | Declare `Γ_time` explicitly and use witness timespans for freshness where needed |
-| **Decision gating without witnesses** | Becomes folklore; not reviewable | Add resolvable witnesses through evidence-use relations, A.10/G.6 carrier, source-currentness, or provenance records, certificate pins, or proof-bearing publications named by the direct governing pattern |
-| **Semantic meaning expressed as a base declaration** | Confuses meaning lane with admissibility lane | Use SenseCell/ConceptSet; keep SWBD for non-semantic basedness |
+| **Decision gating without witnesses** | Becomes folklore; not reviewable | Add resolvable witnesses through evidence-use relations, A.10/G.6 carrier, source-currentness, or provenance records, certificate pins, or proof-bearing publications named by the subject pattern |
+| **Semantic meaning expressed as a base declaration** | Confuses source-local meaning with admissibility | Recover the exact source-local claim under F.0.1 and add an F.17 cell or basis relation only when needed; keep SWBD for non-semantic basedness |
 | **Change baseRelation in place** | Semantic shift masquerades as update | Mint a new declaration and connect via continuity |
 | **Using `*Slot` to name an endpoint/value** | Confuses SlotKind with ValueKind/RefKind; breaks substitution and tooling | Keep `*Slot` for positions; use `base`/`dependent` for values and `*Ref` for stored references |
 | **Typing `baseRelation` as a `publication-side object*` carrier** | Confuses a relation-specific relation token with a publication-lane object; invites “free text as relation kind” | Store `baseRelation` as a declared `NameToken` that resolves to a vocabulary entry with an explicit signature and relation-specific constraints |
@@ -489,7 +499,7 @@ A carrier (pattern, spec, schema, code carrier, or publication) conforms to A.6.
 * Reduced “grounding” confusion: multiple grounding senses become distinguishable relation kinds.
 
 **Trade-offs / mitigations**
-* More explicit metadata and vocabulary: mitigated by defining declared `baseRelation` vocabulary entries once per Context and reusing them.
+* More explicit metadata and vocabulary: mitigated by defining each selected local `baseRelation` vocabulary entry once and reusing it.
 * Authoring overhead for witnesses in decision contexts: mitigated by pointing to already-existing `U.Work` refs and witness pins instead of creating new documents.
 
 **Adoption test (informative).**
@@ -544,20 +554,20 @@ Without explicit change classes, prose collapses distinct edits (rebase vs retim
 **Specialises A.6.P Relational Precision Restoration (RPR).**
 A.6.6 is the RPR specialisation for “basedness / relative‑to” claims: it makes the relation kind explicit via `baseRelation`, qualifies it with scope/`Γ_time`/witnesses, and standardises evolution via a base‑change lexicon plus lexical red‑flags (`anchor*`).
 
-**Builds on A.6.5 `U.RelationSlotDiscipline`.**
+**Builds on A.6.5 relation-declaration slot discipline.**
 SWBD introduces a structured record with slots; those slots must be SlotKind/ValueKind/RefKind disciplined, and its change classes must not be confused with slot-edit operations (A.6.5) or name-binding terminology (E.10 / L‑BIND).
 
 **Constrains A.10 evidence admissibility links.**
 `verifiedBy` and `validatedBy` are treated as baseRelation tokens; their scope/time and witnesses become explicit when used for decisions.
 
 **Aligns with A.2.4 evidence-use relation discipline.**
-Decision-relevant witness sets should be represented through evidence-use relations or pinned witness records with explicit timespans and provenance discipline, not as ad-hoc prose references and not as roles held by epistemes.
+Decision-relevant witness sets should be represented through evidence-use relations or pinned witness records with explicit timespans and provenance discipline, not as ad-hoc prose references and not as system-role kinds or assignments attributed to epistemes.
 
 **Aligns with A.14 constructive grounding (`tv:groundedBy`).**
 Constructive grounding is one specific declared `baseRelation` reading: dependent is a model edge, base is a constructor trace; witnesses pin the trace and `U.Work` records.
 
 **Coordinates with C.2.1 grounding holons.**
-Situational/empirical grounding via `GroundingHolonSlot` is treated as a distinct declared `baseRelation` reading; it must not be collapsed with `tv:groundedBy` or with semantic meaning assignment.
+When a base declaration depends on situational or empirical grounding, name the exact episteme, covered claims, grounding holon, and obtaining C.2.1 `EpistemeEmpiricalGroundingRelation`. Treat that relation as a distinct `baseRelation` reading; do not substitute its declaration-local `GroundingHolonSlot`, collapse it with `tv:groundedBy`, or use it as semantic meaning assignment.
 
 **Coordinates with A.6.3–A.6.4 viewing/retargeting.**
 Viewing and retargeting are specialised “relative-to-base” moves (preserve `EntityOfConcernRef` vs retarget it along a declared bridge). They should reuse SWBD vocabulary where an explicit base declaration is required (scope/time/witness), without collapsing into generic “anchoring” prose.
@@ -566,10 +576,10 @@ Viewing and retargeting are specialised “relative-to-base” moves (preserve `
 Base declarations inherit the rule that time-dependent assumptions require explicit `Γ_time`; “current/latest” is not admissible.
 
 **Feeds E.10 / F.18 lexical governance.**
-Umbrella metaphors are disallowed as substitutes for baseRelation tokens; prose must name explicit relation kinds and keep the meaning lane separate (SenseCell/ConceptSet).
+Umbrella metaphors are disallowed as substitutes for baseRelation tokens; prose must name explicit relation kinds and keep source-local meaning, its optional F.17 cell, and any obtaining basis relation separate.
 
 **Constrains support wording in A.6.P/E.10.**
-Support-looking phrases that mean base-dependence are governed here: select a declared `baseRelation`, name `dependent` and `base`, add scope/time/witnesses as live, and preserve polarity. Support-looking phrases that do not mean base-dependence use the ontology of the governing pattern for that claim rather than becoming `SupportRelation`, `SupportBasis`, or `SupportRecord` buckets.
+Support-looking phrases that mean base-dependence are governed here: select a declared `baseRelation`, name `dependent` and `base`, add scope/time/witnesses as live, and preserve polarity. Support-looking phrases that do not mean base-dependence use the ontology of the subject pattern for that claim rather than becoming `SupportRelation`, `SupportBasis`, or `SupportRecord` buckets.
 
 ### A.6.6:End
 

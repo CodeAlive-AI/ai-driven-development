@@ -10,7 +10,7 @@
 
 **Instantiates and refines Pillars.** `E.2` `P-3` Scalable Formality, `P-7` Pragmatic Utility, `P-10` Open-Ended Evolution, `P-11` SoTA Alignment, and the Bitter-Lesson Preference: prefer scalable, general methods that benefit from more data or compute over fragile hand-tuned heuristics when assurance and cost stay comparable.
 
-**Depends on.** A-kernel (`A.1–A.15`) for holonic basics and Role-Method-Work separation; `B.3` Trust & Assurance (`F–G–R` with CL penalties); `E.3/E.5` (precedence and Guard-Rails); `A.15.1`, `A.15.2`, `B.1.6`, `C.16`, and `A.10` for dated work, resource aggregation, measurement, cost, and provenance; planned `C.5` `Resrc-CAL` only as a future consolidation; `C.18` `NQD-CAL` (candidate generation and declared set results); `C.19` `E/E-LOG` (explore-exploit policies); optional `Compose-CAL` and `KD-CAL` where available.
+**Depends on.** A-kernel (`A.1–A.15`) for holonic basics and the separation of admitted Systems, local system-role kinds or assignments when current, Methods, and Work; `B.3` Trust & Assurance (`F–G–R` with CL penalties); `E.3` and `E.5` for precedence and Guard-Rails; `A.15.1`, `A.15.2`, `B.1.6`, `C.16`, and `A.10` for dated work, resource aggregation, measurement, cost, and provenance; planned `C.5` `Resrc-CAL` only as a future consolidation; `C.18` `NQD-CAL` for candidate generation and declared set results; `C.19` `E/E-LOG` for explore-exploit policies; optional `Compose-CAL` and `KD-CAL` where available.
 
 **Coordinates with.** `U.WorkPlan` and `U.PromiseContent` bindings (acceptance gates), Working-Model publication discipline per `B.3`, and evidence or provenance (`G.6`).
 
@@ -55,14 +55,14 @@ If that first output still cannot be written honestly, the current planning resu
 
 ### C.24:1 - Problem frame
 
-Modern systems in agential roles increasingly rely on tool-call planning: selecting admissible tool-service routes, arranging intended call work, and replanning under uncertainty. Without a calculus:
+Modern tool-using Systems increasingly rely on tool-call planning: selecting admissible tool-service routes, arranging intended call Work, and replanning under uncertainty. A local agential-system-role classification or assignment is included only when the current claim needs that separate fact. Without a calculus:
 
 * calls are scheduled by **ad-hoc heuristics**,
 * **budgets** (compute, cost, wall-time) are implicit,
 * **assurance** and **policy provenance** are lost, and
-* systems in agential roles either over-constrain themselves with brittle scripts or wander without guard-rails.
+* tool-using Systems either over-constrain their plans with brittle scripts or wander without guard-rails.
 
-This CAL provides the **conceptual API for thought** that lets any implementation (LLM-based, search-based, code-based, robotic) plan calls **admissibly**, **auditably**, and **scalably**. (Role-Method-Work alignment; didactic primacy.)
+This CAL provides the **conceptual API for thought** that lets any implementation (LLM-based, search-based, code-based, robotic) plan calls **admissibly**, **auditably**, and **scalably**. It keeps the planning System, any separately current classification or assignment, selected Methods, intended plan, and actual Work distinct.
 
 Immediate failure indicators for this pattern:
 
@@ -93,25 +93,25 @@ We need a **tool-agnostic** way to (i) identify exact admissible `U.Method` valu
 *`ATC.CallGraph`* is an evidence or provenance graph over a ledger of exact actual `U.Work` call occurrences. A graph entry cites the Work occurrence and exact Method; an optional route-description edition helps interpretation but creates neither occurrence nor `enactsMethod`;
 *`ATC.Policy`* references `U.EmitterPolicyRef` (E/E-LOG) and local call gates **including BLP tolerances (alpha, delta)**.
 
-**Roles.**
-A **System in AgentialRole** prepares or revises one **CallPlan** whose planned steps select exact Methods and may cite separate **CallRouteDescription** editions. Upon enactment, an admitted performer `U.System` performs each actual call as a dated `U.Work` occurrence under an exact obtaining `U.RoleAssignment`; A.15.1 owns the actual `enactsMethod` relation. **Observers** record observations with acceptance checks. Route descriptions stay design-time epistemes; the call plan stays schedule-of-intent; actual call Work stays run-time; service promise content remains a separate acceptance object. None establishes another by record inclusion.
+**Systems, plans, and Work.**
+An admitted planning System may perform planning or revision Work that prepares or revises one **CallPlan** whose planned steps select exact Methods and may cite separate **CallRouteDescription** editions. When planning, revision, a call, or observation is claimed as actual Work, name the `U.Work` occurrence and keep all facts required by A.15.1, A.2.1, and F.6 recoverable. A short C.24 sentence may omit only an assignment identifier unused by its call-planning claim. A local kind and a separate System-classification judgment remain optional facts; the assignment occurrence and F.6 attribution do not become optional once actual Work is asserted. Route descriptions stay design-time epistemes; the call plan stays schedule-of-intent; actual call Work stays run-time; service promise content remains a separate acceptance object. None establishes another by record inclusion.
 
 **Operators (Gamma_agential; CAL, conceptual):**
 
-1. `Gamma_agential.eligible(tool, TaskSignature, K_ctx) -> {true|false, notes}`
-   *Eligibility gate* based on capability fit, policy allow-list or deny-list, and context K (including safety constraints).
+1. `Gamma_agential.eligible(tool, TaskSignature, PolicyEdition, IntendedUse, ClaimScope?, ValidityWindow?) -> {true|false, notes}`
+   *Eligibility gate* based on capability fit, the cited policy edition and its allow-list or deny-list, intended use, any action-changing ClaimScope or validity window, and the applicable safety constraints.
 
-2. `Gamma_agential.enumerate(TaskSignature, K_ctx) -> CandidateSet<ATC.CallRouteDescription>`
+2. `Gamma_agential.enumerate(TaskSignature, PolicyEdition, IntendedUse, ClaimScope?, ValidityWindow?) -> CandidateSet<ATC.CallRouteDescription>`
    Returns admissible callable route descriptions. It **MAY** delegate to **NQD-CAL** for heterogeneous route families and **MUST** apply the current **E/E-LOG lens** (objectives & telemetry) to tag candidates. Before a candidate enters an enactment-facing plan, its C.2.1 episteme must resolve under the effective reference scheme and identify the exact independently admitted Method; an unresolved route label remains probe material, not a planned enactment.
 
 3. `Gamma_agential.plan(Objective, CandidateSet, Budget, ATC.Policy) -> ATC.CallPlan`
    Produces one **call plan** whose ordered planned-call steps select exact `U.Method` refs and may separately cite selected route-description epistemes. It declares one planned budget envelope (compute, cost, time, risk), one intended call order, and one stop or replan policy. Internal route logic may remain in the cited descriptions; the plan is a `U.WorkPlan`, not a Method, not a MethodDescription, and not yet Work.
 
 4. `Gamma_agential.execute(ATC.CallPlan) -> {ATC.CallGraph, Observations}`
-   Executes with **hard gates** (budget, risk, constraint-fit). Each actual call is independently identified as dated `U.Work`, performed by an admitted System under an exact obtaining assignment and related by actual `enactsMethod` to the planned exact Method under A.15.1. The operator logs provenance suitable for B.3 assurance reporting while keeping plan, description, Work, Method and service promise separate.
+   Executes with **hard gates** (budget, risk, constraint-fit). For each actual call, name its `U.Work` occurrence and keep all facts required by A.15.1, A.2.1, and F.6 recoverable, including the admitted performer System and the Method enacted by the dated Work. The operator logs provenance suitable for B.3 assurance reporting while keeping plan, description, Work, Method and service promise separate.
 
 5. `Gamma_agential.replan(Signals, ATC.CallPlan, BudgetPrime) -> ATC.CallPlanPrime`
-   Triggered by sentinel breaches, assurance drops, or policy events; preserves or explicitly revises the ordered exact Method refs, separately cited route descriptions, editioned policy, effective planning context, and other plan content. Changing a description reference does not silently change either the Method or any actual Work history.
+   Triggered by sentinel breaches, assurance drops, or policy events; preserves or explicitly revises the ordered exact Method refs, separately cited route descriptions, policy edition, intended use, ClaimScope, validity and re-evaluation windows, safety constraints, and other plan content. Changing a description reference does not silently change either the Method or any actual Work history.
 
 6. `Gamma_agential.score(Route or PlanAlternative) -> <ValueProxies, Cost, Risk, FGR_floor>`
    Computes selection signals **without** illegal scalarisation across mixed scales; **uses Pareto comparison under the C.19 E/E-LOG lens** and leaves final dominance to declared policies.
@@ -139,8 +139,8 @@ A successful probe does not by itself justify a larger burn or a committed rollo
 * **ATC-3 (Budget & Harm Gates).** Plans **SHALL** declare ceilings on compute, cost, wall-time, and risk; execution **MUST** abort or replan on breach. Actual burned or residual budget belongs in `CheckpointReturn`, `CallGraph`, or other work-side reporting, not inside the `CallPlan` field set.
 * **ATC-4 (Explore-Share Discipline).** Plans **MUST** declare `explore_share`; defaults **inherit from E/E-LOG profiles**. **Informative defaults**: `0` for safety-critical or deterministic tasks; `approx 0.2-0.4` for ambiguous tasks with heterogeneous tool families. Promotion of illumination telemetry into dominance **requires explicit policy**.
 * **ATC-5 (Provenance & Replay).** Every actual call **MUST** emit a **CallGraph** row with its exact Work ref, exact enacted Method ref, performer System, obtaining assignment, Service id, optional cited MethodDescription edition, inputs and outputs (redacted per privacy), `CallPlan` ref, **EmitterPolicyRef**, actual interval, and budget deltas. The graph records these facts; it creates none of them. (NQD/E/E provenance fields apply when used.)
-* **ATC-6 (Assurance-First Decisions).** Selection **MUST** respect B.3: WLNK minima on the F and R dimensions (weakest-link floors), CL penalties on integration, and **no** chimera scores across design-time and run-time scopes. State **<F,G,R>** for the typed claim `this plan is admissible under K,S`.
-* **ATC-7 (Notation/Vendor Independence).** Core pattern text **MUST NOT** encode vendor-specific tokens; bindings occur in Context via Bridges/Profiles. (Lexical guard-rails.)
+* **ATC-6 (Assurance-First Decisions).** Selection **MUST** respect B.3: WLNK minima on the F and R dimensions (weakest-link floors), CL penalties on integration, and **no** chimera scores across design-time and run-time scopes. State **<F,G,R>** for the typed claim that this plan is admissible for the cited policy edition, intended use, ClaimScope, and qualification window.
+* **ATC-7 (Notation and Vendor Independence).** Core pattern text **MUST NOT** encode vendor-specific tokens. Keep a vendor binding in its separate adapter or profile description and state the exact source scheme, intended use, and relation to the selected Method. (Lexical guard-rails.)
 
 #### C.24:4.1a - Planning under budget must consume the same declared doctrine
 #### C.24:4.1b - Causal action-use spec for call plans
@@ -187,12 +187,20 @@ What this does not establish: `C.24` does not estimate effects, prove identifica
 **ATC-Policy fields (conceptual).**
 `{ backstop_confidence, explore_share, risk_bound, cost_ceiling, time_ceiling, tie_breakers, novelty_quota?, wild_bet_quota?, stop_conditions, BLP_delta_alpha, BLP_delta_delta }` - realised by referencing an `E/E-LOG` `EmitterPolicy` and adding Bitter-Lesson-Preference clauses. Defaults inherit from `C.19`; any deviation is editioned.
 
-**BLP precedence.** In conflicts with tactics that hard-code narrow scripts, the Bitter-Lesson Preference applies subject to `E.3/E.5` precedence. Where scripts encode safety-critical gating or regulatory compliance, scripts prevail unless the governing context publishes the override rationale, expiry, measured hazard avoided, and planned re-evaluation window.
+**BLP precedence.** In conflicts with tactics that hard-code narrow scripts, the Bitter-Lesson Preference applies subject to the precedence rules in `E.3` and `E.5`. Where a script encodes safety-critical gating or regulatory compliance, it prevails unless a named rule or policy is current for the case, permits an override, and a decision or waiver is issued under the required authority relation. Record that relation, the decision or waiver, the rationale, the measured hazard avoided, the expiry, and the planned re-evaluation window.
 
 #### C.24:4.3 - Didactic quick card
 
 **Agentic Call Plan (public field set).**
-`Objective - Context(K) - PlannedCallsInOrder[{MethodRef, MethodDescriptionRef?[edition-pinned]}] - BudgetEnvelope{time_budget, compute_budget, cost_budget, risk_limit} - PolicyRef - Explore-share - StopConditions - ReplanConditions - BLP tolerances - BLP waiver (if any) - Assurance<F,G,R|K,S> - Provenance ids`
+
+Record:
+
+- the objective and ordered planned calls, with exact Method refs and edition-pinned MethodDescription refs only when needed;
+- the time, compute, cost, and risk budget, the policy edition, and `explore_share`, using `0` when no exploration is planned;
+- stop and replan conditions and any BLP tolerances; and
+- the assurance and provenance refs required by this plan.
+
+If a waiver is used, also state its authority relation, decision or waiver, rationale, measured-hazard evidence, expiry, and re-evaluation window. Add ClaimScope, intended use, or a validity window only when it changes planning or validity.
 
 #### C.24:4.4 - Explicit enactment outputs and closure rule
 
@@ -277,7 +285,7 @@ CallPlan(
 )
 ```
 
-The plan does not claim that any call happened. If the first call is then performed, identify `ToolCallWork-903 : U.Work`, admitted performer System `RepoAutomationSystem-2`, obtaining assignment `RepoAutomationInspectorAssignment-2`, actual interval `[10:02Z, 10:04Z]`, containing system `RepairRun-81`, and independently obtaining `enactsMethod(ToolCallWork-903, InspectRepositoryMethod_4)`. Its CallGraph row may cite `inspect_repo_route_v3` as `methodDescriptionRef`; neither that description nor the row is the Work occurrence or the enacted Method. The service's `U.PromiseContent` and any acceptance result remain separate.
+The plan does not claim that any call happened. If the first call is then performed, identify `ToolCallWork-903 : U.Work`, admitted performer System `RepoAutomationSystem-2`, directly declared assignment species `RepoAutomationInspectorAssignment`, its obtaining occurrence `RepoAutomationInspectorAssignment-2`, and the F.6 relation saying that the System performed this Work under that occurrence. The Work runs during `[10:02Z, 10:04Z]`, occurs within `RepairRun-81`, and enacts `InspectRepositoryMethod_4`. Its CallGraph row may cite `inspect_repo_route_v3` as `methodDescriptionRef`; neither that description nor the row is the Work occurrence or the enacted Method. The service's `U.PromiseContent` and any acceptance result remain separate.
 
 **Recognizable near misses.** `inspect_repo_route_v3` with no recovered exact `InspectRepositoryMethod_4` cannot support an enactment-facing plan. A `CallPlan` with no actual Work occurrence is still only intent. A tool log row with no independently grounded Work, performer, assignment and Method is evidence material, not execution. A successful response does not by itself prove the service promise was accepted.
 
@@ -297,16 +305,16 @@ CheckpointReturn(
 
 The practical distinction is simple: if route order and budgeted execution are already the call-planning question, emit one `CallPlan`; if bounded scout work is still the call-planning question inside planning, emit one `CheckpointReturn`.
 
-1. **Research-assistance system in agential role.**
+1. **Research-assistance tool-using System.**
    Task: answer a novel technical question. Candidate tools: retrieval, structured web search, code runner, table or plot generator.
    **Plan:** select exact `SearchMethod`, `RetrievalMethod`, `SynthesisMethod`, and `CodeCheckMethod` refs in order; separately cite current route descriptions for `search`, `retrieve`, `synthesize`, and `code_check`; declare `explore_share approx 0.4`; replan on sentinel `low_R`.
    The admissible structure here is one declared budget envelope, one explicit route order, and one visible replan trigger.
 
-2. **Program-repair system in agential role.**
+2. **Program-repair tool-using System.**
    Task: propose a patch against a failing test suite. Candidate tools: repo introspection, static analyzer, unit runner.
    **Plan:** select exact repo-introspection, patch-application, and targeted-test Methods; keep their optional route-description epistemes distinct; use scout quota across patch families before committed rollout.
 
-3. **Lab-automation system in agential role.**
+3. **Lab-automation tool-using System.**
    Task: adjust a wet-lab protocol under drift. Candidate tools: planner, pipetting controller, spectrometer, Bayesian optimizer.
    **Plan:** a bounded probe or pilot can inform the route, but committed rollout waits for the declared commit trigger and assurance floor.
 
@@ -319,15 +327,15 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 1. **CC-ATC-1 - Declared separation.** Every planned call step selects an exact independently admitted `U.Method`; `ATC.CallRouteDescription` is a separate `U.MethodDescription` episteme; `ATC.CallPlan` is a `U.WorkPlan`; each execution is exact dated `U.Work` with actual `enactsMethod`; acceptance is via separate `U.PromiseContent`. No description, service promise, CallGraph row, method-side route logic, or actual burn is smuggled into another object.
 2. **CC-ATC-2 - Budgets on record.** Time budget, compute budget, cost ceiling, and risk limit exist ex ante; stop conditions are listed.
 3. **CC-ATC-3 - E/E policy.** `EmitterPolicyRef` (or equivalent) and `explore_share` are editioned and logged.
-4. **CC-ATC-4 - Assurance tuple.** State the typed claim `Plan admissible under K,S` with `<F,G,R>` and CL penalties traceable in the `CallGraph` SCR. Design-time and run-time never merged.
-5. **CC-ATC-5 - BLP waiver discipline.** Any heuristic override against a general method includes expiry and re-evaluation date.
-6. **CC-ATC-6 - Provenance minimum.** For every actual call record `{WorkRef, PerformerSystemRef, RoleAssignmentRef, MethodRef, MethodDescriptionRef? and edition when cited, PromiseContentRef?, CallPlanRef, EmitterPolicyRef, TimeWindow, budget deltas, DescriptorMapRef? (if NQD), DistanceDefRef? (if NQD), Seeds?, Dedup?}`; each ref resolves its direct object and the record creates none of them.
+4. **CC-ATC-4 - Assurance tuple.** State the typed claim that the plan is admissible for its cited policy edition, intended use, ClaimScope, and qualification window, with `<F,G,R>` and CL penalties traceable in the `CallGraph` SCR. Design-time and run-time are never merged.
+5. **CC-ATC-5 - BLP waiver discipline.** Any heuristic override against a general method names the permitting rule or policy that is current for the case and cites the authority relation, decision or waiver issued under it, rationale, measured-hazard evidence, expiry, and re-evaluation date.
+6. **CC-ATC-6 - Provenance minimum.** Every actual call record includes `{WorkRef, MethodDescriptionRef? and edition when cited, PromiseContentRef?, CallPlanRef, EmitterPolicyRef, budget deltas, DescriptorMapRef? (if NQD), DistanceDefRef? (if NQD), Seeds?, Dedup?}`. `WorkRef` names the independently identified `U.Work` occurrence. Its Method, interval, containing System, and every performer's assignment species, obtaining occurrence, and F.6 relation remain recoverable under A.15.1, A.2.1, and F.6. Each ref resolves its direct object; the record creates none of them.
 7. **CC-ATC-7 - Notation independence.** No vendor tokens in conceptual text; bindings via Bridges or Profiles only.
 8. **CC-ATC-8 - BLP tolerances declared.** `alpha/delta` tolerances are present in `ATC.Policy` or referenced via the active `E/E-LOG` profile.
 9. **CC-ATC-9 - `CheckpointReturn` for bounded specialization.** When one route still uses scout or probe discipline on a new task family, it SHALL emit one `CheckpointReturn` with candidate routes, evidence, actual budget spent and remaining, next action, and commit trigger; a successful probe alone never counts as committed rollout.
 10. **CC-ATC-10 - Recoverable enactment closure.** When `C.24` returns one enactment-facing call plan or one `CheckpointReturn`, the `CallPlan` SHALL state current objective, ordered exact Method refs, separate route-description refs when current, planned budget envelope, stop or replan condition, and `nextPlannedAction`, while `CheckpointReturn` SHALL state actual budget spent and remaining plus next action and commit trigger.
 11. **CC-ATC-11 - Neighboring-pattern boundary.** If the question under repair is still fixed-option choice, pool policy over several live lines, selector-facing result declaration, or publication availability, `C.24` SHALL apply `C.11`, `C.19`, or `G.5` as appropriate; when publication is current, it SHALL apply `E.17` for the face and source return and `E.24.PUB` for the publication occurrence and availability. It SHALL NOT restate those patterns.
-12. **CC-ATC-12 - Role discipline.** User-facing prose and emitted artifacts SHALL speak about systems in agential roles or equivalent typed performers, not one generic `agent` head, when that generic head would blur the holder kind.
+12. **CC-ATC-12 - Performer discipline.** User-facing prose and emitted artifacts SHALL identify every admitted System that actually performs planning, revision, call, or observation Work, name the corresponding `U.Work` occurrences, and keep all facts required by A.15.1, A.2.1, and F.6 recoverable. A local system-role kind and a separate System-classification judgment are optional only when independently current. A label, kind, classification judgment, assignment species, or assignment occurrence does not perform the Work.
 13. **CC-ATC-13 - Causal action-use spec.** If one `CallPlan` selects observation, intervention, counterfactual-rung evidence collection, counterfactual policy conditioning, or off-policy causal evaluation for a causal purpose, it SHALL carry `CallPlan.causalActionUseSpec?` with `targetCausalityLadderRung`, `causalUseClaimKind: CausalUseClaimKind`, supported use, unsupported use, and a `C.28` causal-use support reference rather than letting call-planning vocabulary certify the causal claim.
 
 ### C.24:8 - Common Anti-Patterns and How to Avoid Them
@@ -342,7 +350,7 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 
 ### C.24:9 - Consequences
 
-- tool use under systems in agential roles becomes inspectable as one admissible plan, not one opaque sequence of calls
+- tool use by admitted Systems becomes inspectable as one admissible plan, not one opaque sequence of calls
 - downstream work receives one explicit enactment-facing plan with objective, exact Method refs, separate route-description refs when current, budget envelope, stop conditions, and `nextPlannedAction`; actual Work is recorded only after it occurs
 - the cost is stricter discipline around exact Method versus route-description versus plan versus work separation, explicit budgets, and visible policy state before execution begins
 
@@ -352,7 +360,7 @@ Lexical firewall and notation independence apply; no vendor tokens; mixed-scale 
 
 Source-use relation and source-currentness for this rationale: these rows are current-practice pressure and BLP-neighbour alignment, not a standalone `SoTA-Echoing` table. A current tool-use or agentic-loop source becomes load-bearing only when it changes one `CallPlan`, `CheckpointReturn`, budget, stop or replan condition, BLP waiver, or relation row.
 
-- Contemporary tool-use systems in agential roles work best when planning, feedback, and replanning stay explicit rather than collapsing into one brittle script. The practical implication is to state one `U.WorkPlan` whose planned steps select exact Methods, cite route-description epistemes separately when current, and carry stop or replan triggers before execution.
+- Contemporary tool-using Systems work best when planning, feedback, and replanning stay explicit rather than collapsing into one brittle script. The practical implication is to state one `U.WorkPlan` whose planned steps select exact Methods, cite route-description epistemes separately when current, and carry stop or replan triggers before execution.
 - Post-2015 search, optimization, and agentic systems also show that bounded probing is useful but dangerous when it silently becomes commitment. The safeguard here is the explicit `CheckpointReturn` plus visible commit trigger and one explicit split between planned budget envelope and burned actual budget.
 - Scaling-first practice favors general, learnable methods over fragile hand-tuned tactics when assurance and cost remain comparable. The practical implication is not blind optimism but disciplined BLP: when a narrow heuristic wins, record the waiver, expiry, and re-evaluation window.
 ### C.24:12 - Relations
@@ -361,11 +369,11 @@ Source-use relation and source-currentness for this rationale: these rows are cu
 
 - C.27 may flag: a tool-use plan claiming that tool use changes debugging, learning, search, repair, rollout, narrowing, uncertainty reduction, stabilization, or stop/replan rate.
 - This pattern keeps: call planning, tool-use sequence, budget, stop/replan, and work trace.
-- Non-admissible use: tool-call count, more context, or faster narrowing is effort evidence or input evidence at most; it is not task-success, reasoning-quality, evidence-quality, repair-success, cost, or validity-window evidence by itself.
+- Non-admissible use: tool-call count, a larger prompt or input window, or faster narrowing is effort evidence or input evidence at most; it is not task-success, reasoning-quality, evidence-quality, repair-success, cost, or validity-window evidence by itself.
 
 - Exit: a speed-up claim names task outcome, evaluation harness, repair-success evidence locus when claimed, cost or budget condition, validity window, stop or replan condition, and non-admissible use as a benchmark claim; C.24 remains the tool-use pattern.
 
-Builds on: `A.15` Role-Method-Work alignment (planning vs execution vs service), `B.3` Trust and Assurance (`F-G-R` with `CL`), and `A.15.1`, `A.15.2`, `B.1.6`, `C.16`, and `A.10` for dated work, resource aggregation, measurement, cost, and provenance; planned `C.5 Resrc-CAL` is a future consolidation only. It also builds on `C.18 NQD-CAL` (candidate generation and declared set results) and `C.19 E/E-LOG` (policies). Coordinates with `C.28` when a call plan is used to observe, intervene, collect counterfactual-rung evidence, condition a counterfactual policy, or evaluate a policy for causal-use support. Coordinates with `E.23` when a repeated quality-improvement loop is enacted through tool-using agents: `C.24` carries call plans, checkpoint returns, tool-call budgets, stop or replan conditions, and the separation among exact Method, `CallRouteDescription`, call plan, executed work, CallGraph evidence, and service promise; it does not restate the `E.23` loop method, BLP comparison and cost discipline, or other object-under-improvement evaluations governed by their direct patterns. Coordinates with `E.10.MOVE`, `E.11.PUR`, and `A.15.5` when source wording about a move is not plan-local `nextPlannedAction` or `recommendedNextAction`. Constrains: any `U.PromiseContent` used as a tool MUST expose acceptance conditions and observation hooks sufficient for `B.3` reporting. Enables: human-facing Working-Model publication forms with policy and assurance disclosures while keeping design-time and run-time separated.
+Builds on: `A.15` for the separation of Systems, any separately current classification or assignment, Method, plan, Work, and service; `B.3` Trust and Assurance (`F-G-R` with `CL`); and `A.15.1`, `A.15.2`, `B.1.6`, `C.16`, and `A.10` for dated Work, resource aggregation, measurement, cost, and provenance; planned `C.5 Resrc-CAL` is a future consolidation only. It also builds on `C.18 NQD-CAL` (candidate generation and declared set results) and `C.19 E/E-LOG` (policies). Coordinates with `C.28` when a call plan is used to observe, intervene, collect counterfactual-rung evidence, condition a counterfactual policy, or evaluate a policy for causal-use support. Coordinates with `E.23` when a repeated quality-improvement loop is enacted through tool-using Systems: `C.24` carries call plans, checkpoint returns, tool-call budgets, stop or replan conditions, and the separation among exact Method, `CallRouteDescription`, call plan, executed Work, CallGraph evidence, and service promise; it does not restate the `E.23` loop method, BLP comparison and cost discipline, or other object-under-improvement evaluations carried by their direct patterns. Coordinates with `E.10.MOVE`, `E.11.PUR`, and `A.15.5` when source wording about a move is not plan-local `nextPlannedAction` or `recommendedNextAction`. Constrains: any `U.PromiseContent` used as a tool MUST expose acceptance conditions and observation hooks sufficient for `B.3` reporting. Enables: human-facing Working-Model publication forms with policy and assurance disclosures while keeping design-time and run-time separated.
 
 ### C.24:End
 

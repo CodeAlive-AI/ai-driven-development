@@ -254,7 +254,7 @@ The pattern also biases authors against overusing QL. It keeps ordinary interven
 | Every interaction is QL | Any message, meeting, or API call is called probe-coupled. | Require a false passive-read, export, comparison, or optimization use. |
 | Causal action mistaken for probe | A deployment or command changes the world, and QL is invoked. | Use intervention or work-governing patterns unless the action is being used as a readout of the state it changes. |
 | Bridge loss alone | Export loses local meaning, but no state-changing probe is live. | Use `F.9` with loss notes. |
-| Context-word drift | `context` means probe frame in one sentence and `U.BoundedContext` in the next. | Use `U.BoundedContext` only for semantic context; otherwise say probe frame, model frame, or measurement setup. |
+| Context-word drift | *Context* hides source-local meaning, a selected model-use organization, ClaimScope, a probe frame, or a measurement setup. | Name the actual value. Retain *bounded context* only when using the established DDD term. |
 | Relation token leakage | `coupledBy(...)` appears as if already ratified. | Keep it as local drafting form or apply `A.6.P` and `F.18`. |
 
 ### C.26.1:9 - Consequences

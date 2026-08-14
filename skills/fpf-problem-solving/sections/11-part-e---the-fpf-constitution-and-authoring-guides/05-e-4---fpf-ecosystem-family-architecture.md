@@ -8,7 +8,7 @@
 
 Use this pattern when an FPF user, framework author, or steward needs to create, extend, or use an FPF-grounded pattern ecosystem and must know what belongs to FPF itself, what belongs to the FPF Core, what belongs to a domain or local framework, which records carry relation and edition claims, and which neighboring patterns contain the defining content for publication, access, naming, source, currentness, and quality work.
 
-Primary `EntityOfConcern`: the FPF-grounded pattern ecosystem in one bounded context. The first useful output is a family-and-structure map that names the framework family members, selected architecture-relevant structures, recurring problem-situation structures, reusable solution-move structures, dependency direction, edition boundary, publication/access carriers, and receiving owners for source, currentness, quality, and decision claims.
+Primary `EntityOfConcern`: the FPF-grounded pattern ecosystem for one named ecosystem question and intended map use. The first useful output is a family-and-structure map that names the framework family members, selected architecture-relevant structures, recurring problem-situation structures, reusable solution-move structures, dependency direction, edition boundary, publication carriers, access carriers, and patterns to use for source, currentness, quality, and decision claims.
 
 This pattern buys a practical distinction: a reader can tell whether a claim changes FPF itself as a first-principles framework edition, changes the FPF Core, creates a domain principle framework, creates a local practice framework, publishes or teaches existing content, exposes a skill or MCP access carrier, or records a dependency on another framework edition. Use `E.4.FPF` when the work is the form of FPF itself; use `E.11` and `E.17` for first-entry and publication questions; use `E.4.DPF` when the work is to author a domain or local framework.
 
@@ -22,14 +22,14 @@ FPF has grown from a single core pattern set into an ecosystem of core rules, to
 - a dependency on a framework edition is treated as a specialization relation;
 - a source or generated carrier is treated as architecture evidence without source-return and preservation claims.
 
-The result is a framework that may look organized but cannot answer ordinary architecture questions: what structure is selected, what depends on what, what can change independently, what is preserved by a projection, and what must return to a stronger owner before it is used.
+The result is a framework that may look organized but cannot answer ordinary architecture questions: what structure is selected, what depends on what, what can change independently, what is preserved by a projection, and which stronger claim requires another pattern before it is used.
 
 ### E.4:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Core stability | The FPF Core must stay stable enough to govern other frameworks, while domain and local frameworks need faster evolution. |
-| Reuse and bounded context | Domain and local frameworks should reuse FPF Core distinctions, but they must not silently redefine Core meaning. |
+| Core stability | The FPF Core must stay stable enough to supply dependable constraints to downstream frameworks, while domain and local frameworks need faster evolution. |
+| Reuse and source-local meaning | Domain and local frameworks should reuse FPF Core distinctions, but they must not silently redefine Core meaning or treat a local label as a universal premise. |
 | Publication pressure | Readers need all-in-one carriers, tables of contents, cards, examples, and first-entry material, but those carriers do not by themselves settle architecture. |
 | Relation richness | Pattern ecosystems need recommendation, specialization, dependency, publication, preservation, evaluation, and source-use relations, but a single "related patterns" list hides the relation function. |
 | Source and generation pressure | Source summaries, relation graphs, and generated candidate sets speed work, but their losses and admissible use must be declared before architecture work relies on them. |
@@ -45,7 +45,13 @@ Create a family-and-structure map with these fields:
 ```text
 FPFFamilyAndStructureMap@Context:
   ecosystemScopeRef
-  boundedContextRef
+  intendedMapUse
+  claimScopeRef?
+  sourceRefs?
+  patternHostRefs?
+  selectedArchitectureStructureRefs?
+  publicationRelationRefs?
+  boundedModelUseStructureRef?
   frameworkFamilyMembers
   selectedPatternSetRefs
   selectedProblemSituationStructureRefs
@@ -64,13 +70,13 @@ FPFFamilyAndStructureMap@Context:
   dependentUsePatternLocators
 ```
 
-This map is a context record. It is not a new root kind and not a substitute for the exact subject assertions and defining or constraining ClaimGraphs it references.
+This map answers the declared ecosystem question for its intended use. It is not a new root kind, a source of semantic locality, or a substitute for the subject claims and patterns it cites.
 
 Classify the family members as follows:
 
 `Conceptual Core` is the legacy authority and publication-family partition. `First Principles Framework edition` is the whole scoped FPF framework edition as a transdisciplinary first-principles framework. `FPF Core pattern set` is the framework-edition view of the general FPF Core used for dependency, relation, and edition reasoning. These are related views and scopes, not competing core objects.
 
-| Family member | Architecture role | Authoritative content loci |
+| Family member | Architecture contribution | Authoritative content loci |
 | --- | --- | --- |
 | Conceptual Core | Core FPF distinctions, rules, and patterns that other FPF-grounded frameworks depend on. | `E.4`, `E.5.3`, and the exact subject patterns containing the defining ClaimGraphs |
 | Tooling Reference | Optional tools, schemas, scripts, machine checks, or helper publications that inspect or support FPF use. | Use `E.17` for a source-backed publication face and return to source, `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability, and relevant tool patterns for their declared tool functions; use `G.5` only for a selector-facing selected-tool-set result declaration. |
@@ -79,11 +85,11 @@ Classify the family members as follows:
 | First Principles Framework edition | The scoped FPF framework edition as a transdisciplinary first-principles framework with Core pattern set, publication/access carriers, relation records, and whole-FPF adequacy route. | `E.4.FPF`, `E.2.DA`, `E.4.PFR`, `E.11`, `E.17`, `G.11` |
 | FPF Core pattern set | The current general FPF pattern core as a framework edition. | `E.4`, `E.5.3`, and the current Core subject-pattern descriptions and defining ClaimGraphs |
 | Domain principle framework | A domain-bounded framework grounded in FPF and in domain SoTA. | `E.4.DPF`, `G.2`, `E.4.PFAD`, `E.4.PFR` |
-| Local practice framework | A project, organization, or role-context framework grounded in FPF and often in a domain framework. | `E.4.DPF`, `E.4.PFAD`, `E.4.PFR`, `G.11` |
+| Local practice framework | A framework for one bounded local practice setting—for example a project, organization, workflow, tool, practitioner position, or audience—grounded in FPF and often in a domain framework. Add a local system-role kind, a separate System-classification judgment, or an exact assignment occurrence only when the framework claim independently uses it; recover ambiguous *role* wording through `E.10.ROLE`. | `E.4.DPF`, `E.4.PFAD`, `E.4.PFR`, `G.11` |
 
 The ordinary method is:
 
-1. Declare the ecosystem scope and bounded context.
+1. Declare the ecosystem scope and intended map use. Cite the exact source, pattern host, selected architecture structure, publication relation, or bounded model-use structure only when the map actually relies on it.
 2. Name the family member being created, used, or changed.
 3. List the selected structures that matter for the architecture claim: recurring problem-situation structures, known failure modes, reusable SoTA solution-move structures, pattern set, pattern-use relations, pattern-framework relations, decision records, dependency and edition records, publication/access carriers, source packs, quality records, and currentness records. For PF work, the pattern-language publication carrier exposes a reader-facing expression of that problem-and-solution architecture, not a neutral list of topics.
 4. If the family member is FPF itself as a framework edition, open `E.4.FPF` for form, publication/access carriers, and whole-FPF adequacy routing.
@@ -103,15 +109,16 @@ Use this routing table when a proposed change is ambiguous:
 | Proposed work | Route to | Blocked overread |
 | --- | --- | --- |
 | The form of FPF itself changes: README, Preface, ToC, monolith, host set, skill pack, MCP-backed access, or whole-FPF publication/access route. | `E.4.FPF`, with `E.2.DA` for whole-FPF adequacy and `E.4.PFR` for relation or edition records. | Do not treat FPF as a DPF, do not use `E.4.DPF.DA` for whole-FPF adequacy, and do not treat a carrier as the framework edition. |
+| Accepted changes are being assembled into an FPF, DPF, or LPF publication, or continuity with a predecessor publication is claimed. | `E.4.PFIP` for the accepted-source and predecessor-preservation comparisons. | Require both PFIP conclusions when both claims are made. Source parity, build success, carrier continuity, and package adequacy answer narrower questions. |
 | A distinction or rule is intended to constrain ordinary FPF use across many domains and downstream frameworks depend on it. | FPF Core amendment through the current campaign and the exact subject patterns containing the changed assertions. | Do not promote a local checklist or domain technique to Core merely because it is useful. |
 | A reusable principle supports FPF-grounded work but is not a general Core rule for all domains. | Foundational principle pattern set or other named framework edition, with `E.4.PFR` dependency records. | Do not hide a new framework edition inside the Core table of contents. |
 | A source tradition or professional domain needs FPF-shaped patterns. | Domain principle framework through `E.4.DPF`, `G.2`, `E.4.PFAD`, and `E.4.PFR`. | Do not treat a literature summary as the framework. |
-| One project, organization, role, or tool setting needs local practice guidance. | Local practice framework through `E.4.DPF`, with local source, owner, publication, quality, and refresh records. | Do not make local policy a general FPF rule. |
+| One bounded local practice setting—for example a project, organization, workflow, tool, practitioner position, or audience—needs guidance. | Local practice framework through `E.4.DPF`; keep local source, publication, quality, and refresh records, and state separately any direct relation used for maintenance, responsibility, authority, assignment, or contact. If a load-bearing owner label has no current direct relation, return `missing-governor` instead of inventing one. | Do not make local policy a general FPF rule. |
 | Existing material is hard to find, teach, or publish. | Use `E.11` for discovery, the relevant didactic pattern for teaching, `E.17` for a source-backed publication face and return to source, and `E.24.PUB` for the publication occurrence, form, carrier, audience, bounded use, and availability. Use `G.5` only when the missing value is a selected-set result declaration. | Do not call publication repair architecture repair. |
 | A cross-reference claims use, specialization, dependency, publication, source reuse, preservation, quality, deprecation, or supersession. | `E.4.PFR` for the relation function and edition effect. | Do not let a link label decide the relation meaning. |
 | A framework split, dependency boundary, publication/access carrier, or adoption consequence must be decided. | Record one selected answer in an `E.9` DRR, using `E.4.PFAD` for its framework-specific content. Use `C.32.PAD` only when the decision is an exact project architecture decision and `C.32.ADR` only for its ADR-like projection. | Do not replace the answer with a diagram, folder, manifest, PFAD relation, or project-specific decision pattern used as the default framework route. |
 | A source, search result, transformed view, or generated carrier supplies candidate material. | `G.2`, `C.33`, `C.34`, or `C.35` before architecture use. | Do not treat a carrier as authoritative because it has plausible names. |
-| Whole-FPF adequacy, DPF package adequacy, individual pattern quality, repeated improvement, admission gating, or currentness is the live problem. | `E.2.DA`, `E.4.DPF.DA`, `E.21`, `E.23`, `E.19`, and `G.11` according to the claim. | Do not average pattern scores into package adequacy or whole-FPF adequacy, and do not run all quality gates when only one evaluation or refresh owner is live. |
+| Whole-FPF adequacy, DPF package adequacy, individual pattern quality, repeated improvement, admission gating, or currentness is the live problem. | `E.2.DA`, `E.4.DPF.DA`, `E.21`, `E.23`, `E.19`, and `G.11` according to the claim. | Do not average pattern scores into package adequacy or whole-FPF adequacy, and do not run all quality gates when only one evaluation or refresh question is live. |
 
 This pattern should leave the reader with one architecture sentence: "This framework edition belongs to this family member, expresses this selected architecture of recurring problems and solution moves in pattern-language form, depends on these stable editions, publishes or gives access through these carriers, preserves these selected structures, and states each neighboring claim under its exact predicate or constraint with the subject pattern available as a locator."
 
@@ -124,6 +131,11 @@ Mini-example:
 | Map field | Filled slice |
 | --- | --- |
 | `ecosystemScopeRef` | `HydroponicCucumberPrincipleFramework@GreenhouseCropDomain` |
+| `intendedMapUse` | choose the framework-family, dependency, and publication architecture for the hydroponic-cucumber framework edition |
+| `sourceRefs?` | source entries cited by `GreenhouseControlSourcePack@2026Q2` and `CropProductionSourcePack@2026Q2` |
+| `patternHostRefs?` | `DPF.GROW.NutrientSolutionMonitoring` and `DPF.GROW.ClimateControlInterpretation` |
+| `selectedArchitectureStructureRefs?` | recurring crop-growing problem situations, solution moves, dependency direction, and source-return structure used by this map |
+| `publicationRelationRefs?` | the publication relations from `HydroponicCucumberPF@2026Q3` to `GrowerCarrier@2026Q3` and `GrowerReadme@2026Q3` |
 | `frameworkFamilyMembers` | domain principle framework; local grower practice framework as a later dependent edition |
 | `selectedPatternSetRefs` | crop-growth problem framing, nutrient-solution monitoring, climate-control interpretation, harvest-quality feedback patterns |
 | `selectedRelationRecordRefs` | source or decision reuse from horticulture source pack; specialization from general FPF authoring patterns; publication relation to all-in-one carrier |
@@ -142,18 +154,18 @@ Show: A generated relation graph over pattern names can help inspect missing rel
 
 The recurrent drift is publication-first architecture: the visible file, all-in-one carrier, card deck, table of contents, or graph is treated as the architecture because it is what a reader sees first. The repair is to name the selected structures and dependency direction first, then use publication patterns to expose them.
 
-Another recurrent drift is Core absorption: useful domain or local material is pulled into the Core because it is well written or broadly reusable. The repair is to ask which bounded context owns the claim and which framework edition should depend on which more stable edition.
+Another recurrent drift is Core absorption: useful domain or local material is pulled into the Core because it is well written or broadly reusable. The repair is to ask which domain or local situation the claim addresses and which framework edition should depend on which more stable edition.
 
 ### E.4:7 - Conformance Checklist
 
 | Check | Passing condition |
 | --- | --- |
 | CC-E4.1 Family member named | The work names whether it concerns Core, Tooling Reference, Pedagogical Companion, foundational principle pattern set, First Principles Framework edition, FPF Core, domain principle framework, or local practice framework. |
-| CC-E4.2 Selected structures named | The family-and-structure map names the selected problem-situation, known-failure, SoTA solution-move, pattern-set, relation, decision, publication/access, source, quality, dependency, and currentness structures that matter for the claim. |
+| CC-E4.2 Selected structures named | The family-and-structure map names its intended use and the problem-situation, known-failure, SoTA solution-move, pattern-set, relation, decision, publication, access, source, quality, dependency, and currentness structures that matter for the claim. Cite a source, pattern host, publication relation, or bounded model-use structure only when the map uses that independently established value. |
 | CC-E4.3 E.5.3 respected | Dependency direction points toward more stable framework editions, and Core does not depend on domain or local frameworks. |
-| CC-E4.4 Publication/access separated | All-in-one carriers, tables of contents, cards, readmes, skill packs, MCP-backed routes, retrieval routes, assistant integrations, and views are publication, access, or discoverability records with their own owners. |
+| CC-E4.4 Publication/access separated | All-in-one carriers, tables of contents, cards, readmes, skill packs, MCP-backed routes, retrieval routes, assistant integrations, and views are distinct publication, access, or discoverability records; apply the relevant pattern to each claim about them. |
 | CC-E4.5 Exact predicate and assertion named | Pattern-use, relation, dependency, decision, naming, source, currentness, quality, and preservation claims each name their exact predicate and subject assertion; a pattern identifier is only the locator for the next question's defining or constraining ClaimGraph. |
-| CC-E4.6 Source-return present | Any carrier used as architecture evidence states captured structure, lost structure, admissible use, and return owner. |
+| CC-E4.6 Source-return present | Any carrier used as architecture evidence states captured structure, lost structure, admissible use, and the source to return to. |
 | CC-E4.7 Framework carrier structure-account explicit | README, Preface, ToC, all-in-one carrier, skill pack, MCP route, or other framework carrier states which framework structures its publication or access expression exposes for whom; missing form or adequacy content is repaired as an exact assertion using `E.4.FPF`, `E.4.DPF`, or `E.4.DPF.DA` before adoption or adequacy claims are made. |
 
 ### E.4:8 - Common Anti-Patterns and How to Avoid Them
@@ -169,13 +181,13 @@ Another recurrent drift is Core absorption: useful domain or local material is p
 
 ### E.4:9 - Consequences
 
-This pattern makes FPF ecosystem work slower at the beginning because a framework author must name family membership, dependency direction, selected structures, and receiving owners. The gain is that later work can evolve without hidden Core changes, hidden publication substitutions, or hidden source loss.
+This pattern makes FPF ecosystem work slower at the beginning because a framework author must name family membership, dependency direction, selected structures, and the patterns needed for neighbouring claims. The gain is that later work can evolve without hidden Core changes, hidden publication substitutions, or hidden source loss.
 
-It also makes some attractive names and short labels provisional until `F.18` settles them. That cost is intentional: short names are useful only after the governed value and bounded context are stable.
+It also makes some attractive names and short labels provisional until `F.18` settles them. That cost is intentional: short names are useful only after the value being named, its source-local meaning, and its intended use are explicit.
 
 ### E.4:10 - Rationale
 
-The ecosystem needs architecture because FPF patterns, frameworks, source packs, publication carriers, access carriers, quality records, and decisions are not one kind of object. A file tree cannot preserve the differences among those objects. A relation graph cannot preserve decision rationale or dependency compatibility. An all-in-one publication carrier or callable access carrier cannot preserve all source-return and currentness obligations by itself. Architecture work must therefore name the selected structures and route non-owned claims to their owners.
+The ecosystem needs architecture because FPF patterns, frameworks, source packs, publication carriers, access carriers, quality records, and decisions are not one kind of object. A file tree cannot preserve the differences among those objects. A relation graph cannot preserve decision rationale or dependency compatibility. An all-in-one publication carrier or callable access carrier cannot preserve all source-return and currentness obligations by itself. Architecture work must therefore name the selected structures and apply the relevant pattern to claims outside this pattern's scope.
 
 The old Core, Tooling Reference, and Pedagogical Companion distinction remains valuable, but it is only one family partition. Domain and local principle frameworks need their own framework editions so they can depend on Core without redefining it.
 

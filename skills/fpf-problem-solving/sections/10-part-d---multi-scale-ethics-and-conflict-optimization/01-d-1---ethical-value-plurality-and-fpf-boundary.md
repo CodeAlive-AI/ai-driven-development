@@ -10,7 +10,7 @@
 
 **What goes wrong if missed.** FPF looks ethically neutral because it names evidence, method, architecture, or work but leaves the value frame and affected EntityOfConcern implicit.
 
-**What this buys.** The ethical concern becomes a bounded FPF claim with value frame, affected EntityOfConcern, evidence, admissible use, and direct next owner.
+**What this buys.** The ethical concern becomes a bounded FPF claim with value frame, affected EntityOfConcern, evidence, admissible use, and direct next subject pattern.
 
 ### D.1:1 - Problem Frame
 
@@ -30,7 +30,7 @@ Ethically loaded FPF claims often arrive as ordinary technical, architectural, m
 | Technical adequacy vs. ethical force | Evidence, assurance, method, architecture, or work quality may be strong while the value concern remains implicit. |
 | Local usefulness vs. overreach | A bounded ethical claim can guide work, but it must not become universal moral permission. |
 | Plain language vs. hidden doctrine | Words such as responsible, safe, fair, aligned, or humane are useful only after the valued object and affected parties are named. |
-| Boundary entry vs. conflict handling | D.1 should surface the value frame, while D.3, D.4, and D.5 own conflict structure, mediation, bias audit, and assurance use. |
+| Boundary entry vs. conflict handling | Use D.1 to surface the value frame, D.3 for conflict structure, D.4 for mediation, and D.5 for bias audit and assurance use. |
 
 ### D.1:2 - Solution
 
@@ -40,12 +40,17 @@ Recover an `EthicalValueFrame@Context` before treating the claim as ethically ad
 EthicalValueFrame@Context:
   ethicalClaimRef
   affectedEntityOfConcernRef
-  boundedContextRef
+  intendedEthicalUse
+  claimScopeRef?: U.ClaimScope
+  qualificationWindowRef?
   valueConcernRefs
+  valueFrameEditionRefs?
   ethicalTheoryOrTraditionRefs?
   affectedHolonRefs?
+  affectedSystemRefs?
   affectedEpistemeRefs?
-  roleAssignmentRefs?
+  directResponsibilityRelationRefs?
+  systemRoleAssignmentRefs?: FinSet(U.RelationRef constrained to U.SystemRoleAssignment)
   methodOrWorkRefs?
   transformationRefs?
   evidenceRefs
@@ -61,7 +66,7 @@ This frame does not settle the ethical question. It makes the value frame inspec
 
 `D.1` keeps value plurality and FPF boundary discipline. It does not replace:
 
-| Question | Direct owner |
+| Question | Subject pattern |
 | --- | --- |
 | Which levels, scopes, holons, interests, responsibilities, methods, work, and consequences are in ethical tension? | `D.3` |
 | How should a mapped ethical conflict be mediated, refused, escalated, or used in a decision? | `D.4` |
@@ -81,17 +86,17 @@ A team says that a triage model is "ethical because it maximizes total benefit."
 | --- | --- | --- |
 | Ethical label as permission | A word such as responsible or fair is treated as enough to act. | Name the value concern, affected EntityOfConcern, evidence, and admissible use. |
 | One doctrine by default | The local text silently assumes one ethical theory while claiming neutrality. | Name the ethical theory, tradition, or project value frame when it changes the claim. |
-| Technical proof substitutes for value frame | Evidence, model quality, or architecture adequacy is read as ethical adequacy. | Keep evidence and assurance owners separate from the ethical value frame. |
-| Ethics becomes universal owner | Every difficult concern is assigned to D.1. | Use D.1 only for value-frame boundary; return conflict, mediation, bias, causal, assurance, and architecture claims to their owners. |
+| Technical proof substitutes for value frame | Evidence, model quality, or architecture adequacy is read as ethical adequacy. | Keep evidence-use and assurance patterns separate from the ethical value frame. |
+| Ethics becomes universal owner | Every difficult concern is assigned to D.1. | Use D.1 only for value-frame boundary; return conflict, mediation, bias, causal, assurance, and architecture claims to their subject patterns. |
 
 ### D.1:5 - Conformance Checklist
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D1-1 | The value concern, affected EntityOfConcern, bounded context, and evidence refs are named. | Keeps "ethical" from becoming a label without content. |
+| CC-D1-1 | The ethical claim, affected EntityOfConcern, value concern, intended use, and evidence are named. Value-frame editions, ClaimScope, qualification window, affected Systems, and direct responsibility relations are added when they change the claim or its admissible use. | Keeps "ethical" from becoming a label without content or a generic context premise. |
 | CC-D1-2 | The text states admissible use and non-admissible overread for the ethical claim. | Prevents value wording from authorizing action by itself. |
 | CC-D1-3 | Ethical theory, tradition, or project-specific value frame is named when it changes the claim. | Keeps plural value frames inspectable. |
-| CC-D1-4 | Multilevel conflict, mediation, bias or fairness audit, causal use, evidence, assurance, and architecture residuals use their direct owners. | Keeps D.1 as boundary pattern rather than universal ethics owner. |
+| CC-D1-4 | Multilevel conflict, mediation, bias or fairness audit, causal use, evidence, assurance, and architecture residuals use their subject patterns. | Keeps D.1 as boundary pattern rather than universal ethics owner. |
 
 ### D.1:7 - Common Anti-Patterns and How to Avoid Them
 
@@ -99,8 +104,8 @@ A team says that a triage model is "ethical because it maximizes total benefit."
 | --- | --- | --- |
 | Neutrality theater | The work claims to avoid ethics by naming only technical evidence or method quality. | Recover the value concern or explicitly state that no ethical claim is being made. |
 | Slogan ethics | Responsible, safe, humane, aligned, fair, or beneficial is used without affected parties and admissible use. | Fill `EthicalValueFrame@Context`. |
-| Doctrine smuggling | A utilitarian, rights, duty, care, virtue, professional, or project-specific value frame is treated as obvious. | Name the value frame and the stronger owner for any conflict. |
-| Universal D.1 | D.1 is used to decide mediation, bias, causal fairness, or assurance. | Return to D.3, D.4, D.5, C.28, A.10, B.3, or the direct owner. |
+| Doctrine smuggling | A utilitarian, rights, duty, care, virtue, professional, or project-specific value frame is treated as obvious. | Name the value frame and the pattern for the stronger claim for any conflict. |
+| Universal D.1 | D.1 is used to decide mediation, bias, causal fairness, or assurance. | Use D.3, D.4, D.5, C.28, A.10, B.3, or the subject pattern. |
 
 ### D.1:6 - Consequences
 
@@ -121,7 +126,7 @@ This keeps FPF usable in engineering, research, organizational, public, and AI-e
 | Value pluralism and applied ethics practice | FPF should not pretend that one ethical doctrine resolves every project claim; it should name the current value frame, affected EntityOfConcern, excluded concerns, evidence, and admissible use before an ethical claim guides work. |
 | Engineering ethics and assurance practice | A method, work plan, architecture move, recommendation, system, or holon can be technically adequate while shifting harm, benefit, responsibility, or coercion elsewhere; technical verification does not settle the ethical claim. |
 | Human-impact, AI governance, and dual-use practice | Fairness, responsibility, alignment, safety, and misuse words need affected parties, context, consequence horizon, evidence, and admissible use before they guide action. |
-| FPF direct-owner discipline | Ethical entry does not absorb evidence, causality, assurance, architecture, or bias-audit owners. |
+| FPF subject-pattern discipline | Ethical entry does not absorb evidence, causality, assurance, architecture, or bias-audit owners. |
 
 ### D.1:10 - Relations
 

@@ -16,7 +16,7 @@
 
 **What this buys.** A team can decide the next bounded move—start no work yet, prepare an exact missing input, recheck, or submit declared checks to a gate—without turning a plan, green label, commitment, reservation, permission fact, or preparation activity into target Work or into one all-purpose readiness object.
 
-**Not this pattern when.** Use `A.15.2` for the work plan itself, `A.15.3` for planned slot fillers, `A.15.1` for dated performed work, `A.21` for gate decisions, `A.15.4` only when a reliance appearance is already being used as a reason for work or reliance before the governing pattern slot, relation, or project-side reference is named, `B.1.6` for resource aggregation after work, `E.18` for transformation-flow structure, and `E.18.1` for P2W carry-through from accepted problem-side material.
+**Not this pattern when.** Use `A.15.2` for the work plan itself, `A.15.3` for planned slot fillers, `A.15.1` for dated performed work, `A.21` for gate decisions, `A.15.4` only when a reliance appearance is already being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named, `B.1.6` for resource aggregation after work, `E.18` for transformation-flow structure, and `E.18.1` for P2W carry-through from accepted problem-side material.
 
 ### A.15.5:1 - Problem Frame
 
@@ -48,7 +48,7 @@ Without one explicit local work-entry readiness claim and result semantics:
 
 Represent readiness as one domain-local result claim about exact plan content, not as a root U-kind, imported management object, generic container, or default relation occurrence. When persistence matters, C.2.1 identifies the result episteme; A.15.5 supplies the readiness-specific criterion and result-value semantics only.
 
-**E.24.UK settlement.** This pattern introduces no root `U.Readiness`, root `U.Move`, imported TameFlow `MOVE` kind, `FullKitCondition` object, independent readiness entity, or default readiness relation. Exact plans, plan components, methods, performed Work, resources, assignments, commitments, permission results, gate decisions, evidence, provenance, and assurance retain their direct owners.
+**E.24.UK settlement.** This pattern introduces no root `U.Readiness`, root `U.Move`, imported TameFlow `MOVE` kind, `FullKitCondition` object, independent readiness entity, or default readiness relation. Exact plans, plan components, methods, performed Work, resources, assignments, commitments, permission results, gate decisions, evidence, provenance, and assurance retain their subject patterns.
 
 #### A.15.5:4.1 - One work-entry readiness claim
 
@@ -81,37 +81,37 @@ Use one exact readiness criterion when the entry question depends on what must b
 Full-kit thinking supplies a recognition palette for inputs; it is not a `FullKitCondition` object or a field bundle. Open only the input claims that C actually consumes:
 
 1. exact A.15.2 plan content and any A.15.3 planned fillings, with the declaration member and conditions that give each filling meaning;
-2. current information, source-currentness, publication, measurement, evidence, or assurance claims under their direct owners;
-3. exact resource-availability or reservation claims, intended holder and role conditions, any already obtaining `U.RoleAssignment`, capability threshold or fit result, and exact commitment claims when C uses them; plus any exact current work-in-progress or load and flow-policy claims under the pattern that defines their counted work, boundary, threshold, and qualification window;
+2. current information, source-currentness, publication, measurement, evidence, or assurance claims under their subject patterns;
+3. exact resource-availability or reservation claims, intended holder and role conditions, any already obtaining `U.SystemRoleAssignment`, capability threshold or fit result, and exact commitment claims when C uses them; plus any exact current work-in-progress or load and flow-policy claims under the pattern that defines their counted work, boundary, threshold, and qualification window;
 4. separately performed preparation Work and readiness-checking Work, each with its exact performer system, obtaining assignment, enacted method, temporal extent, and actual direct participants or A.6.1 bindings;
 5. exact prospective A.2.8.PER grant, non-prohibition, or conflict facts and their qualification windows when permission is current; and
 6. an exact A.21 `GateDecision` only when a current `OperationalGate(profile)` actually consumes declared checks and publishes it. The gate decision remains a separate result.
 
-An exact post-launch variance or recheck result may enter only after the target Work is actual and only through the measurement, comparison, evaluation, resource, temporal, acceptance, or other pattern that defines that exact result. Name the target Work, comparison or evaluation rule, local result, qualification window, and direct owner. It may trigger or inform an explicitly marked recheck; it neither proves that readiness held before entry nor rewrites the earlier readiness result.
-For each input, name the direct owner, exact proposition or relation occurrence, and the interval or currentness result on which this readiness check relies. A generic input, evidence, context, resource, assignment, or policy reference supplies none of those facts. Omission says only that the current criterion did not consume that input; it does not prove absence.
+An exact post-launch variance or recheck result may enter only after the target Work is actual and only through the measurement, comparison, evaluation, resource, temporal, acceptance, or other pattern that defines that exact result. Name the target Work, comparison or evaluation rule, local result, qualification window, and subject pattern. It may trigger or inform an explicitly marked recheck; it neither proves that readiness held before entry nor rewrites the earlier readiness result.
+For each input, name the subject pattern, exact proposition or relation occurrence, and the interval or currentness result on which this readiness check relies. A generic input, evidence, context, resource, assignment, or policy reference supplies none of those facts. Omission says only that the current criterion did not consume that input; it does not prove absence.
 
 Full-kit preparation can include gathering information, coordinating roles, producing a missing source `U.Episteme` or source publication, reserving a resource, pinning a planned filling, or creating shared understanding. Those activities are `U.Work` only when actually performed. The plan can state them before occurrence; the readiness claim may cite them after occurrence; neither object becomes the other.
 
-For every cited preparation or readiness-checking Work occurrence, identify the exact dated `U.Work`, each admitted performer `U.System`, the exact obtaining `U.RoleAssignment` under which that system performed it for the attributed extent, its actual `enactsMethod` relation, temporal extent, and only those direct participant relations or A.6.1 bindings used by the readiness claim. The system performs the work; an assignment, plan, method description, checklist, criterion, readiness result, evidence path, or dashboard does not. A planned preparation task remains A.15.2 content until those occurrence facts obtain.
+For every cited preparation or readiness-checking Work occurrence, identify the exact dated `U.Work`, each admitted performer `U.System`, the exact obtaining `U.SystemRoleAssignment` under which that system performed it for the attributed extent, its actual `enactsMethod` relation, temporal extent, and only those direct participant relations or A.6.1 bindings used by the readiness claim. The system performs the work; an assignment, plan, method description, checklist, criterion, readiness result, evidence path, or dashboard does not. A planned preparation task remains A.15.2 content until those occurrence facts obtain.
 
-**Boundary with planned fillers and appearance-based reliance.** A missing planned value stays with A.15.3 as a planned-filling baseline or with the direct governing pattern when an evidence, currentness, publication, gate, permission, or assurance relation is already known. Use A.15.4 only when a reliance appearance, such as a dashboard label, copied approval, publication face, or credential view, is being used as the reason to treat the readiness or work-reliance claim as carried before that governing pattern relation has been recovered.
+**Boundary with planned fillers and appearance-based reliance.** A missing planned value stays with A.15.3 as a planned-filling baseline or with the subject pattern when an evidence, currentness, publication, gate, permission, or assurance relation is already known. Use A.15.4 only when a reliance appearance, such as a dashboard label, copied approval, publication face, or credential view, is being used as the reason to treat the readiness or work-reliance claim as carried before that subject pattern relation has been recovered.
 
 #### A.15.5:4.3 - Commitment and Launch Boundary
 
 Keep commitment facts separate from the readiness value. The criterion may consume exact current commitment claims and their qualification intervals, but `ready`, `readyWithKnownGaps`, `notReady`, or `unknown` does not mean `committed`, institute a commitment, discharge one, or authorize entry. State the practical next move—stop, prepare, probe, seek a separately governed commitment, submit to a gate, launch only under its separately satisfied entry conditions, or recheck—as the result's bounded use and return condition, not as another ontic status family. The older labels `readyForProbe`, `readyForCommitment`, `committed`, `blocked`, and `requiresGateDecision` therefore resolve to a local readiness value plus an explicit next move, commitment claim, stop, or gate question; they are not additional `ReadinessResultValue` members.
 
-Use `A.2.8.PER` when a pre-entry readiness criterion consumes permission material. Name each exact value and its own qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow`, disposition, and, when settled, the direct owner's resolution result and `effectiveWindow`. Non-prohibition is not a grant, a grant does not resolve conflict, and an unresolved current conflict blocks or degrades the readiness use under the criterion. `PermissionExerciseRelation@Context` and `NonViolationFinding@Context` require already dated actual work: cite either only as evidence about a different exact Work occurrence, or in an explicitly marked post-launch recheck after the target Work is actual, with its own `exerciseInterval` or `evaluationWindow`. Neither retrospective result proves current grant, capability, future exercise or non-violation, readiness, gate passage, or target-work performance. The readiness result institutes no permission, exercises none, resolves no conflict, and turns no non-prohibition finding into a grant. Use A.21 only when a current `OperationalGate(profile)` consumes declared checks and publishes a distinct `GateDecision`, `DecisionLogRef`, scope, currentness result, and effective window. A readiness badge, green tile, full-kit label, or commitment board position is not gate passage; gate passage creates none of the permission objects.
+Use `A.2.8.PER` when a pre-entry readiness criterion consumes permission material. Name each exact value and its own qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow`, disposition, and, when settled, the subject pattern's resolution result and `effectiveWindow`. Non-prohibition is not a grant, a grant does not resolve conflict, and an unresolved current conflict blocks or degrades the readiness use under the criterion. `PermissionExerciseRelation@Context` and `NonViolationFinding@Context` require already dated actual work: cite either only as evidence about a different exact Work occurrence, or in an explicitly marked post-launch recheck after the target Work is actual, with its own `exerciseInterval` or `evaluationWindow`. Neither retrospective result proves current grant, capability, future exercise or non-violation, readiness, gate passage, or target-work performance. The readiness result institutes no permission, exercises none, resolves no conflict, and turns no non-prohibition finding into a grant. Use A.21 only when a current `OperationalGate(profile)` consumes declared checks and publishes a distinct `GateDecision`, `DecisionLogRef`, scope, currentness result, and effective window. A readiness badge, green tile, full-kit label, or commitment board position is not gate passage; gate passage creates none of the permission objects.
 
 #### A.15.5:4.4 - Relation to A.15 Family
 
-| Current claim | Governing pattern |
+| Current claim | Subject pattern |
 | --- | --- |
 | Intended target work and horizon | `A.15.2 U.WorkPlan`. |
 | Planned slot fillers before work | `A.15.3 SlotFillingsPlanItem`. |
 | Preparation activity that actually happened | `A.15.1 U.Work`. |
 | Target work that actually happened | `A.15.1 U.Work`. |
 | Readiness before work entry | `A.15.5` local result claim, persisted as a C.2.1 episteme when needed. |
-| Resource budgets or reservations before work | `A.15.2` plan content plus the exact resource-availability or reservation owner; A.15.5 cites the current claim only when the criterion consumes it. |
+| Resource budgets or reservations before work | `A.15.2` plan content plus the exact predicate and source for the current resource-availability or reservation claim; A.15.5 cites the current claim only when the criterion consumes it. |
 | Resource consumption by work | `B.1.6` plus `A.15.1`. |
 
 #### A.15.5:4.5 - Relation to P2W and Pattern Use
@@ -151,7 +151,7 @@ If a dashboard shows green but the exact readiness result or its reliance window
 ### A.15.5:6 - Bias-Annotation
 
 - **Ready-label bias.** A green tile, ready label, release screen, or commitment board position can look stronger than the recoverable claim. Recover whether the current object is readiness, appearance-based reliance repair under `A.15.4`, gate decision, work authorization, or performed work.
-- **Full-kit umbrella bias.** Full-kit preparation is useful, but it can hide planned baselines, performed preparation work, resource readiness, source currentness, and target work. Keep each current value in its governing pattern.
+- **Full-kit umbrella bias.** Full-kit preparation is useful, but it can hide planned baselines, performed preparation work, resource readiness, source currentness, and target work. Keep each current value in its subject pattern.
 - **Baseline-as-actuals bias.** Planned fillers and readiness references do not prove launch values, performed values, variance, or results.
 
 ### A.15.5:7 - Conformance Checklist
@@ -164,15 +164,15 @@ If a dashboard shows green but the exact readiness result or its reliance window
 | `CC-A15.5-4` | cites planned baselines without rewriting them. | `SlotFillingsPlanItem` remains a plan-item baseline under A.15.3. |
 | `CC-A15.5-5` | keeps gate decisions in A.21. | Readiness labels do not create `GateDecision` without A.21 fields. |
 | `CC-A15.5-6` | keeps resource readiness and resource aggregation distinct. | Planned reservations and actual consumption are not merged. |
-| `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can tell whether to stop, probe, commit, launch, or return to a missing governing pattern value. |
-| `CC-A15.5-8` | keeps prospective and retrospective permission inputs temporally typed and non-productive. | A current grant uses its `validityWindow`; non-prohibition uses its `evaluationWindow`; conflict uses its `overlapWindow` and any direct-owner resolution `effectiveWindow`. Exercise and non-violation appear only for different dated Work or an explicit post-launch recheck, with their own intervals. None proves another permission value, readiness, gate passage, capability, or target-work performance. |
-| `CC-A15.5-9` | keeps the readiness result, domain-local inputs, provenance, assurance, and any inception claim under their direct owners. | C.2.1 identifies the readiness-result episteme; each measurement, evaluation, resource, permission, gate, or other input keeps its own result algebra; A.10 owns provenance, B.3 owns assurance, and A.15.PROD is opened only for a separately current local entity-identity inception claim. |
+| `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can tell whether to stop, probe, commit, launch, or name a missing value under its subject pattern. |
+| `CC-A15.5-8` | keeps prospective and retrospective permission inputs temporally typed and non-productive. | A current grant uses its `validityWindow`; non-prohibition uses its `evaluationWindow`; conflict uses its `overlapWindow` and any subject-pattern resolution `effectiveWindow`. Exercise and non-violation appear only for different dated Work or an explicit post-launch recheck, with their own intervals. None proves another permission value, readiness, gate passage, capability, or target-work performance. |
+| `CC-A15.5-9` | keeps the readiness result, domain-local inputs, provenance, assurance, and any inception claim under their subject patterns. | C.2.1 identifies the readiness-result episteme; each measurement, evaluation, resource, permission, gate, or other input keeps its own result algebra; use A.10 for provenance and state any assurance result separately under B.3, and A.15.PROD is opened only for a separately current local entity-identity inception claim. |
 
 ### A.15.5:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Better use |
 | --- | --- | --- |
-| Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the exact permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the governing pattern slot, relation, or project-side reference is named. |
+| Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the exact permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named. |
 | Full kit as work done | Prepared inputs are treated as target work completion. | Record preparation work separately and target work only when it occurs. |
 | Baseline as actuals | Planned slot fillers are treated as launch or performed values. | Keep planned fillers in A.15.3 and record variance after work. |
 | MOVE imported as kind | TameFlow source wording becomes an FPF object. | Recover intended work, commitment, readiness, gate, preparation work, or performed work under FPF patterns. |
@@ -188,19 +188,19 @@ Benefits:
 Costs:
 
 - Some "ready" claims become incomplete until the target work, missing inputs, and stop condition are named.
-- A full-kit check may expose missing preparation Work or inputs that need their own plan, direct-owner currentness, evidence-provenance, publication, resource, or assignment claims.
+- A full-kit check may expose missing preparation Work or inputs that need their own plan, subject-pattern currentness, evidence-provenance, publication, resource, or assignment claims.
 
 ### A.15.5:10 - Rationale
 
 The readiness question is practical and recurrent: should this intended work enter the work boundary now? FPF already has the kinds needed to answer it. One local criterion and result claim keep the answer inspectable without collapsing the plan, its inputs, the checking Work, gate, permission, or target Work into one object.
 
-The local result is deliberately dependent on exact direct-owned inputs. It preserves `U.WorkPlan`, `SlotFillingsPlanItem`, `U.Work`, A.21 gate decisions, resource claims, and A.15.4 appearance-based reliance repair as distinct values while giving the practitioner one inspectable answer. It may cite an A.15.4 repair result when that result is current; it does not turn every missing input into a source problem or package cited inputs into its own identity.
+The local result is deliberately dependent on exact inputs defined in their subject patterns. It preserves `U.WorkPlan`, `SlotFillingsPlanItem`, `U.Work`, A.21 gate decisions, resource claims, and A.15.4 appearance-based reliance repair as distinct values while giving the practitioner one inspectable answer. It may cite an A.15.4 repair result when that result is current; it does not turn every missing input into a source problem or package cited inputs into its own identity.
 
 ### A.15.5:11 - SoTA-Echoing
 
 | Source family | Use in this pattern | Local adoption |
 | --- | --- | --- |
-| TameFlow `MOVE` and Full-Kitting material | Supplies minimal outcome-value effort, target scope, commitment, WIP pressure, and pre-entry full-kit criteria. | Adopt the useful distinctions as inputs to an FPF-local readiness criterion and result; keep WorkPlan, PlanItem, gate, preparation Work, resource, assignment, permission, and performed-work claims under their direct owners. |
+| TameFlow `MOVE` and Full-Kitting material | Supplies minimal outcome-value effort, target scope, commitment, WIP pressure, and pre-entry full-kit criteria. | Adopt the useful distinctions as inputs to an FPF-local readiness criterion and result; keep WorkPlan, PlanItem, gate, preparation Work, resource, assignment, permission, and performed-work claims under their subject patterns. |
 | Current A.15 work-family settlement | Separates intended work, planned baseline, and dated performed work. | Reuse the split directly; readiness cites but does not replace those values. |
 | Current A.21 gate-publication discipline | Separates readiness-looking displays from gate decisions. | Readiness may feed a gate, but gate passage belongs to A.21. |
 

@@ -4,9 +4,9 @@
 
 **Use this when.** Use this pattern when a `U.System` or `U.Episteme` changes across design-time and run-time scopes and the project must keep observation, refinement, evidence, and renewed operation connected.
 
-**What goes wrong if missed.** Teams treat drift, learning, release, and improvement as separate events; specifications become stale, operational surprises lose their evidence relation, and changes appear without a responsible transformer or a recoverable basis.
+**What goes wrong if missed.** Teams treat drift, learning, release, and improvement as separate events; specifications become stale, operational surprises lose their evidence relation, and changes appear without identifying the System that performed the relevant Work or the basis for the change. A responsibility claim, when needed, can also lose its direct predicate, participants, or applicability basis.
 
-**What this buys.** A compact evolution loop that keeps the holon under change, the acting-side transformer, the design-time episteme, the run-time occurrence, and the evidence relation in one reviewable structure.
+**What this buys.** A compact evolution loop that keeps the holon under change, the Systems and dated Work through which it is changed, the design-time episteme, the run-time occurrence, and the evidence relation in one reviewable structure.
 
 **Not this pattern when.** Not this pattern when the current question is only relation grounding (`B.3.5`), early cue stabilization (`B.4.1`), abductive hypothesis work (`B.5.2.0`), temporal status (`C.27`), or method/work alignment without a holon-evolution claim (`A.15`).
 
@@ -34,29 +34,29 @@ Without a canonical, shared model for evolution, projects fall into predictable 
 
 FPF defines the **Canonical Evolution Loop**, a four-phase cycle that serves as the universal engine for all principled, open-ended evolution. This loop is a direct implementation of the **Explore → Shape → Evidence → Operate** state machine (Pattern B.5.1) and is powered by the **Canonical Reasoning Cycle** (Pattern B.5).
 
-The loop creates a closed, auditable circuit between the two temporal scopes. Crucially, transitions between phases are performed by an external acting-side holder under `TransformerRole@Context` (Pattern A.12). A holon does not evolve itself; it is evolved by an external holder acting upon it.
+The loop creates a closed, auditable circuit between the two temporal scopes. Its phase changes are realized by dated Work performed by an admitted external acting System. Use F.6 to identify the assignment under which each performer acted; classify the System under `TransformerSystemRole@Context` only when that local distinction matters. A short loop account may omit an unused assignment identifier. The kind and assignment do not act: the admitted System performs the Work that changes the holon.
 
-*A diagram showing a cycle: Operate (Run-time) → Observe (Run-time to Design-time bridge, performed by a Transformer) → Refine (Design-time) → Deploy (Design-time to Run-time bridge, performed by a Transformer) → Operate.*
+*A diagram showing a cycle: Operate (run-time) → observation Work performed by an admitted System (run-time to design-time bridge) → refinement Work performed by an admitted System (design-time) → deployment Work performed by an admitted System (design-time to run-time bridge) → Operate.*
 
 **The Four Phases of the Loop:**
 
-| Phase | Core Activity | Role of the External `Transformer` | Key FPF Patterns Used |
+| Phase | Core activity | Work and performing System | Key FPF Patterns Used |
 | :--- | :--- | :--- | :--- |
-| **1. Operate** | The holon exists in its `run-time` context, fulfilling its purpose. | **The `Transformer` observes the holon.** It does not act *on* it, but gathers data about its performance or state. For a `U.System`, this could be a sensor. For a `U.Episteme`, this could be a researcher applying the theory and noting its predictions. | `A.4 Temporal Duality` |
-| **2. Observe** | The `Transformer` compares the observed reality with an expected model, identifying an **anomaly** or an **opportunity**. This is the bridge from `run-time` back to `design-time`. | **The `Transformer` generates a new insight.** Based on the observation, the `Transformer` (e.g., the research team, an automated analysis system) formulates a new hypothesis about how to improve the holon. | `B.5.2 Abductive Loop`, `A.10 Evidence Graph Referring` |
-| **3. Refine** | The `design-time` model of the holon is updated by the `Transformer`. A new hypothesis is shaped (Deduction) and tested against evidence (Induction). | **The `Transformer` modifies the blueprint.** It alters the `design-time` episteme—the specification, the theory, the source code—to incorporate the new insight. | `B.5 Canonical Reasoning Cycle`, `B.3 Trust & Assurance Calculus` |
-| **4. Deploy** | The `Transformer` instantiates the refined `design-time` model as a new `run-time` version of the holon. This is the bridge that carries improvements from the blueprint back into the real world. | **The `Transformer` builds and releases the new version.** This could be a compiler building new software, a 3D printer creating a new physical part, or an editor publishing a revised version of a scientific paper. | `A.3 Transformer Constitution`, `A.4 Temporal Duality` |
+| **1. Operate** | The holon exists in its `run-time` context, fulfilling its purpose. | An admitted external System performs observation Work and records relevant performance or state. It may be, for example, a sensor System observing an operating `U.System`, or a researcher System applying a theory and recording its predictions. | `A.4 Temporal Duality` |
+| **2. Observe** | Observation and comparison Work relates run-time records to an expected model and may identify an anomaly or opportunity. This is the bridge from `run-time` back to `design-time`. | A named research team or automated analysis System performs the comparison and hypothesis Work; the resulting insight or hypothesis is an episteme, not an act by a role label. | `B.5.2 Abductive Loop`, `A.10 Evidence Graph Referring` |
+| **3. Refine** | Revision and testing Work changes the `design-time` episteme in response to the observed basis. | An admitted System performs the Work that changes the specification, theory, source code, or other design-time description. | `B.5 Canonical Reasoning Cycle`, `B.3 Trust & Assurance Calculus` |
+| **4. Deploy** | Build, release, installation, or publication Work carries the refined design-time content toward renewed run-time use. | An admitted System performs that Work. The resulting version, its acceptance or admission, and later use remain separate facts rather than actions by a `Transformer` label. | `A.3 Transformer Constitution`, `A.4 Temporal Duality` |
 
 > **Didactic Note: The "Learn and Adapt" engine**
 >
 > The Canonical Evolution Loop is a formal account of repeated adaptation. It keeps four durable questions explicit:
 >
 > 1.  **Operate:** "What is the holon doing in use or in the field?"
-> 2.  **Observe:** "What anomaly, opportunity, or mismatch is now visible to a responsible `Transformer`?"
+2.  **Observe:** "What anomaly, opportunity, or mismatch is now visible through observation Work performed by an admitted external System?"
 > 3.  **Refine:** "What design-time change would better fit what has been observed?"
 > 4.  **Deploy:** "How is that refined design-time content instantiated back into run-time reality?"
 >
-> The point is not managerial uplift. The point is to keep adaptation legible: every refinement has an observed basis, an external `Transformer`, and an auditable return from design-time into run-time.
+> The point is not managerial uplift. The point is to keep adaptation legible: every refinement has an observed basis, named Systems and dated Work, and an auditable return from design-time into run-time.
 
 ### B.4:5 - **Archetypal Grounding**
 
@@ -66,27 +66,27 @@ The Canonical Evolution Loop is universal. It applies identically to the evoluti
     *   **Context:** A fleet of autonomous delivery drones (`U.System`) is in operation, and operators begin to notice that winter deliveries feel "off" before a clean anomaly statement exists.
     *   **Loop Example:**
         1.  **Operate:** The drones perform deliveries.
-        2.  **Observe:** A monitoring service (`Transformer`) and operators notice recurring cold-weather battery strain, but the evidence still has low articulation.
-        3.  **Stabilize:** The team publishes a `U.PreArticulationCuePack` that preserves the cue nucleus, the primary witness traces, and the current language-state position without pretending that a final anomaly or action record already exists.
-        4.  **Route:** The team publishes a `RoutedCueSet` that keeps multiple admissible continuations visible (for example, battery-chemistry investigation versus route-planning adjustment) so that endpoint governing patterns can take over without losing the early signal.
+        2.  **Observe:** A monitoring-service System and named operator Systems perform observation Work and notice recurring cold-weather battery strain, but the evidence still has low articulation.
+        3.  **Stabilize:** A named team System performs stabilization and publication Work, producing a `U.PreArticulationCuePack` that preserves the cue nucleus, the primary witness traces, and the current language-state position without pretending that a final anomaly or action record already exists.
+        4.  **Route:** The same or another admitted System performs routing and publication Work, producing a `RoutedCueSet` that keeps multiple admissible continuations visible (for example, battery-chemistry investigation versus route-planning adjustment) so that endpoint patterns can take over without losing the early signal.
 
 *   **Knowledge-instantiation slice (theory refinement loop):**
     *   **Context:** A scientific theory of protein folding (`U.Episteme`) is being used to predict structures.
     *   **Loop Example:**
-        1.  **Operate:** The theory exists and is applied by researchers.
-        2.  **Observe:** A research lab (`Transformer`) discovers a new class of proteins whose structure the theory fails to predict (an anomaly). They publish this finding.
-        3.  **Refine:** Another research team (`Transformer`) revises the original theory, adding a new term to its equations (`design-time` model) that accounts for the new protein class.
-        4.  **Deploy:** The team (`Transformer`) publishes the revised theory in a journal. The scientific community begins to use the new version. **Note.** The *chart* and any CG‑frame readings derived from this episteme MUST cite the updated `MethodDescription` (per A.19.CN CC‑A19.D1‑3) to keep comparability auditable.
+        1.  **Operate:** Named researcher Systems perform theory-application Work.
+        2.  **Observe:** An admitted research-lab System performs observation and publication Work, producing a finding about a new class of proteins whose structure the theory fails to predict.
+        3.  **Refine:** Another admitted research-team System performs revision Work, changing the theory's design-time description by adding a term that accounts for the new protein class.
+        4.  **Deploy:** The team System performs publication Work for the revised theory. Its acceptance by the journal, admission into any configured knowledge base, and later use by members of the scientific community are separate relations. **Note.** The *chart* and any CG‑frame readings derived from this episteme MUST cite the updated `MethodDescription` (per A.19.CN CC‑A19.D1‑3) to keep comparability auditable.
 
       **Adaptive-specialization note.** Knowledge instantiation for one declared task family **SHALL** name the prior basis being refined from, the named work-measure threshold being pursued, the adaptation budget being spent, and the freshness or provenance basis for claiming the specialization is reusable. If the refinement is claimed as one specialization step, it **SHALL** also cite the declared `TaskFamily` or `TaskSignature` anchor consumed by `C.22.1`, `G.5`, and `G.9`. This keeps the refinement legible as contextual task-family specialization rather than vague general capability growth.
 
 *   **Method-instantiation slice (adaptive method loop):**
     *   **Context:** A field-maintenance organization uses a declared inspection-and-repair method (`U.Method`).
     *   **Loop Example:**
-        1.  **Operate:** Teams execute the current method during each maintenance cycle.
-        2.  **Observe:** A review lead (`Transformer`) notes that the time from fault detection to safe restoration is repeatedly exceeding the allowed window (an anomaly).
-        3.  **Refine:** The method stewards (`Transformer`) revise the design-time method description by adding an earlier isolation step and a clearer classification checkpoint.
-        4.  **Deploy:** The revised method description is adopted for the next maintenance cycle. **Note.** Method evolution MUST be recorded as `Γ_method` composition over `U.Method` (design‑time) and separated from `U.Work` (run‑time), with design-rationale references attached (per A.4/B.1.5).
+        1.  **Operate:** Admitted maintenance-team Systems perform maintenance Work that enacts the current Method.
+        2.  **Observe:** A named reviewer System performs review Work and records that the time from fault detection to safe restoration repeatedly exceeds the allowed window.
+        3.  **Refine:** Named method-maintainer Systems perform revision Work, changing the design-time `MethodDescription` by adding an earlier isolation step and a clearer classification checkpoint. Any responsibility or authority they bear is stated through a separately obtaining direct relation.
+        4.  **Deploy:** A named System performs publication and release Work for the revised `MethodDescription`. Another named System may perform decision Work. State any authority or permission through its independently obtaining direct relation; the Work itself supplies neither. Keep the decision-result episteme produced by that Work separate from acceptance or admission, and assert acceptance, admission, or later use only through the direct relation and actual participants that establish it. **Note.** Method evolution MUST be recorded as `Γ_method` composition over `U.Method` (design‑time) and separated from `U.Work` (run‑time), with design-rationale references attached (per A.4/B.1.5).
 
       **Adaptive-specialization note.** Method instantiation for one declared task family **SHALL** name the narrower higher-fit specialist method or specialist portfolio being activated, the refinement budget being spent, the escalation or commit checkpoints, and the fallback when that method fails. If the method update is being used as evidence of specialization, the note **SHALL** keep the bearer of that specialization explicit: the holder, dyad, team, or scoped portfolio carries the claim; the method is only one selected vehicle. This keeps method evolution reviewable as bounded specialist acquisition rather than as hidden budget inflation.
 
@@ -94,7 +94,7 @@ The Canonical Evolution Loop is universal. It applies identically to the evoluti
 
 | Bias | Symptom | Correction |
 | :--- | :--- | :--- |
-| Self-evolution bias | The holon is said to observe, refine, or deploy itself, so the acting-side transformer disappears. | Name the external holder acting under `TransformerRole@Context`, even when that holder is an automated system. |
+| Self-evolution bias | The holon is said to observe, refine, or deploy itself, so the acting System and its Work disappear. | Name the external acting System and dated Work, and use F.6 to identify the assignment under which it acted. Add the local `TransformerSystemRole` classification only when that distinction matters; a short account may omit an unused assignment identifier. |
 | Design-time/run-time smear | A live operational change is treated as if it had already updated the design-time episteme, or a design-time edit is treated as if it had already changed the holon in operation. | Keep the design-time episteme, run-time holon occurrence, deploy relation, and evidence relation distinct. |
 | Method-as-holon shortcut | A method update is described as if the method itself were the evolving holon. | Treat the method through `U.Method`, method description, work use, and evidence relations; use B.4 only when a holon-evolution claim is live. |
 
@@ -102,7 +102,7 @@ The Canonical Evolution Loop is universal. It applies identically to the evoluti
 
 *   **CC-B4.1 (Loop Integrity):** Any evolutionary change to a holon **MUST** be documented as a full traversal of the four-phase loop. Ad-hoc changes that bypass a phase (e.g., deploying a refinement without a documented observation and evidence phase) are a process violation.
 *   **CC-B4.2 (Temporal Scope Mandate):** The *Refine* phase **MUST** operate on `design-time` epistemes such as specifications, theories, source code, or method descriptions, while the *Operate* phase involves the `run-time` holon-in-operation. The *Observe* and *Deploy* phases are the only permissible bridges between these scopes.
-*   **CC-B4.3 (Transformer Mandate):** The *Observe*, *Refine*, and *Deploy* transitions **MUST** be performed by an explicitly identified external `Transformer` (Pattern A.12). A holon cannot observe, refine, or deploy itself.
+*   **CC-B4.3 (Transformer Mandate):** The *Observe*, *Refine*, and *Deploy* transitions admitted as dated Work **MUST** be performed by an explicitly identified external System (Pattern A.12). Use F.6 to identify the assignment under which each performer acted; a short loop account may omit an unused assignment identifier. A holon cannot observe, refine, or deploy itself.
 *   **CC-B4.4 (Adaptive-specialization anchoring):** When the knowledge-instantiation or method-instantiation slice carries a bounded-specialization claim, that claim **MUST** name the declared `TaskFamily` or `TaskSignature`, the work-measure threshold target, the adaptation budget, and the freshness or provenance basis for reuse.
 *   **CC-B4.5 (Adaptive-specialization boundary):** The knowledge-instantiation and method-instantiation slices **SHALL NOT** silently re-govern selector or parity semantics. If transfer, retention, downstream exploitation efficiency, corridor entry, or downside cost are comparison-relevant, the pattern-local note **MUST** leave those fields recoverable by the downstream `C.22.1`, `G.5`, and `G.9` governing patterns.
 
@@ -110,27 +110,27 @@ The Canonical Evolution Loop is universal. It applies identically to the evoluti
 
 | Anti-Pattern | Observable symptom | How FPF Prevents It (Conceptually) |
 | :--- | :--- | :--- |
-| **The "Immaculate Conception"** | A new feature or design "just appears" in the specification, with no record of the problem it was meant to solve. | **CC-B4.1** and **CC-B4.3** mandate that every refinement must start with an *Observe* phase, performed by a named `Transformer`. There is no change without a documented observation and an agent who made it. |
-| **The "Self-Healing Illusion"** | The model claims "the system automatically improves itself" without specifying the mechanism. | **CC-B4.3** forbids self-evolution. The model must explicitly show an *external* `Transformer` (which could be an automated control loop, but is still modeled as external to the holon being changed) that performs the Observe-Refine-Deploy cycle. |
+| **The "Immaculate Conception"** | A new feature or design "just appears" in the specification, with no record of the problem it was meant to solve. | **CC-B4.1** and **CC-B4.3** require an observed basis and the named Systems and dated Work through which the refinement was made. |
+| **The "Self-Healing Illusion"** | The model claims "the system automatically improves itself" without specifying the mechanism. | **CC-B4.3** forbids self-evolution. The model must identify the external admitted System or Systems and the observation, refinement, and deployment Work they performed. An automated control loop can be such a System only when it is admitted independently of the holon being changed. |
 | **The "Run-time Edit"** | An engineer makes a "quick fix" directly on a live system without updating the official design documents. | **CC-B4.2** enforces that all refinements happen in `design-time`. A "hotfix" is conceptually an emergency, accelerated run through the entire loop: the fix is observed, designed, and then deployed. |
 
 ### B.4:9 - **Consequences**
 
 | Benefits | Trade-offs / Mitigations |
 | :--- | :--- |
-| **Creates a "Learning Architecture":** The loop provides a formal, repeatable structure for continuous improvement and adaptation, making the organization's learning process explicit. | **Record overhead:** Documenting each phase of the loop can feel bureaucratic for small, rapid changes. *Mitigation:* keep the local evolution note lightweight. The key is to capture the changed holon, observed basis, acting-side transformer, design-time refinement, deploy relation, and renewed run-time scope. |
+| **Creates a "Learning Architecture":** The loop provides a formal, repeatable structure for continuous improvement and adaptation, making the organization's learning process explicit. | **Record overhead:** Documenting each phase of the loop can feel bureaucratic for small, rapid changes. *Mitigation:* keep the local evolution note lightweight. The key is to capture the changed holon, observed basis, performing Systems and Work, design-time refinement, deploy relation, and renewed run-time scope. |
 | **Ensures Design-Reality Sync:** The loop guarantees that `design-time` specifications and `run-time` realities are continuously reconciled, preventing divergence and maintaining a "living" assurance case. | - |
-| **Makes Evolution Auditable:** The evolution history of a holon, including every refinement and the rationale behind it, becomes a traceable, auditable record performed by named `Transformers`. | - |
+| **Makes Evolution Auditable:** The evolution history of a holon, including every refinement and the rationale behind it, becomes traceable through named Systems, dated Work, and the resulting changes. | - |
 
 ### B.4:10 - **Rationale**
 
-This pattern operationalizes the **Open-Ended Evolution Principle (P-10)** by providing its core engine. It keeps design-time refinement, run-time observation, the acting-side `Transformer`, and the changed holon distinct, so adaptation does not become a vague story that the system or theory "evolved by itself."
+This pattern operationalizes the **Open-Ended Evolution Principle (P-10)** by providing its core engine. It keeps design-time refinement, run-time observation, the performing Systems and dated Work, and the changed holon distinct, so adaptation does not become a vague story that the system or theory “evolved by itself.”
 
 ### B.4:10.1 - **SoTA-Echoing**
 
-The loop echoes proven iterative cycles like the Deming Cycle (Plan-Do-Check-Act) and the OODA Loop (Observe-Orient-Decide-Act), but it enriches them with the strong semantic distinctions of the FPF, such as `design-time` vs. `run-time` and the formal role of the external `Transformer`.
+The loop echoes proven iterative cycles like the Deming Cycle (Plan-Do-Check-Act) and the OODA Loop (Observe-Orient-Decide-Act), but it enriches them with the FPF distinction between `design-time` and `run-time`, explicit external acting Systems and their dated Work, F.6 attribution, and separately current local system-role kinds.
 
-By making the `Transformer`'s role explicit in every phase, the pattern avoids the common conceptual error of treating systems or theories as if they evolve on their own. Evolution is always an *action* performed by an agent on a holon. This rigorous, externalist stance is critical for clear causal reasoning and auditable accountability. By making this loop canonical, FPF ensures that all holons within its ecosystem are not just designed and built, but are designed *to be evolved* in a principled, traceable manner.
+By making the admitted acting System and its Work explicit in every phase, the pattern avoids treating systems or theories as if they evolve on their own. Evolution occurs through Work performed by a System on a holon. This externalist stance supports clear causal reasoning and auditable Work attribution. By making the loop canonical, FPF keeps holon evolution principled and traceable.
 
 ### B.4:11 - **Relations**
 

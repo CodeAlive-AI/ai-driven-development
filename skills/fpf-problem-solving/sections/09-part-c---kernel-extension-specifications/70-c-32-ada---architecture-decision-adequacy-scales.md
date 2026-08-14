@@ -20,7 +20,7 @@ Typical entry phrases:
 "Do not average the decision; tell us what must be repaired."
 ```
 
-**First-minute use slice.** `ArchitectureReviewService-4`, the admitted System holding `ArchitectureReviewerAssignment-6`, performs dated `DecisionAdequacyEvaluationWork-12` over one PAD decision relation and ADR projection for a modularization decision. One separate result episteme states the declared use, `ready for developer work and ADR publication`, and the coordinate outcomes: candidate traceability `4 wellExpressedForDeclaredUse`, architecture-characteristic trade-off `3 sufficientlyExpressedForDeclaredUse`, method docking `2 partiallyExpressedForDeclaredUse`, and publication projection `4 wellExpressedForDeclaredUse`. The result does not approve the decision. It directs repair to the method-use instruction, responsible assignments, readiness exit, and expected structure effect before the decision can guide developer work.
+**First-minute use slice.** `ArchitectureReviewService-4` performs `DecisionAdequacyEvaluationWork-12` from 10:00 to 10:20 on 2026-08-12. `ArchitectureReviewerAssignment` is the directly declared assignment species; `ArchitectureReviewerAssignment-6` is its obtaining occurrence, held by that admitted System and covering the Work. The Work enacts `DecisionAdequacyEvaluationMethod-2` and occurs within `ProjectArchitectureReviewService-4`. One separate result episteme states the declared use, `ready for developer work and ADR publication`, and the coordinate outcomes: candidate traceability `4 wellExpressedForDeclaredUse`, architecture-characteristic trade-off `3 sufficientlyExpressedForDeclaredUse`, method docking `2 partiallyExpressedForDeclaredUse`, and publication projection `4 wellExpressedForDeclaredUse`. The result does not approve the decision. It directs repair to the method-use instruction, the exact acting Systems and assignments needed for later Work, any independently claimed responsibility relation, readiness exit, and expected structure effect before the decision can guide developer Work.
 
 The primary governed object is `ArchitectureDecisionAdequacyEvaluation@Project`: a C.32.ADA-local evaluation record over one `ArchitectureDecisionRelation@Project`, optional `ArchitectureDecisionRecordProjection@Project`, and declared use. It is not the evaluated decision, evaluation Work, or result episteme.
 
@@ -50,8 +50,11 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   evaluationWindow:
   decisionQuestionInputProjectionRef:
   evaluatorSystemRef?: U.EntityRef constrained to U.System
-  evaluatorRoleAssignmentRef?: U.RelationRef constrained to U.RoleAssignment
-  evaluationWorkOccurrenceRef?: U.EntityRef constrained to U.Work
+  evaluatorSystemRoleKindRef?: U.KindRef
+  evaluatorSystemRoleClassificationJudgmentRef?: U.RelationRef
+  evaluatorAssignmentSpeciesRef?: U.RelationKindRef constrained under U.SystemRoleAssignment
+  evaluatorAssignmentOccurrenceRef?: U.RelationRef constrained to U.SystemRoleAssignment
+  evaluationWorkRef?: U.EntityRef constrained to U.Work
   evaluationOperationApplicationRefs?: subject-pattern relation or A.6.1 application references
   adequacyResultEpistemeRef?: U.EpistemeRef
   declaredUse:
@@ -71,7 +74,7 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   reevaluationTrigger:
 ```
 
-Here `@Project` is a compatibility and retrieval cue only. A project-local ADA record names both the exact composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining direct record-use relation in `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's own project relation, the suffix, or either field alone is insufficient. When actual evaluation is claimed, name the admitted evaluator System, exact `U.RoleAssignment`, dated evaluation `U.Work`, F.6 `performedUnderAssignment(W, RA)`, and any enacted Method or subject-pattern/A.6.1 operation application separately. The result episteme is a separately identified C.2.1 claim-bearing object; the record, Work, operation application, and result do not substitute for one another, and no generic work-to-result relation is inferred.
+Here `@Project` is a compatibility and retrieval cue only. A project-local ADA record names both the composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining record-use relation in `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's own project relation, the suffix, or either field alone is insufficient. `evaluatorSystemRoleKindRef` names the local kind when current; `evaluatorSystemRoleClassificationJudgmentRef` separately names a judgment classifying the evaluator System under that kind. An assignment claim needs both its directly declared species and obtaining occurrence. When actual evaluation is claimed, `evaluationWorkRef` names the independently identified `U.Work` occurrence, and all facts required by A.15.1, A.2.1, and F.6 remain recoverable; any operation application is additional. The result episteme is a separately identified C.2.1 claim-bearing object. Kind, classification judgment, assignment, Work, operation application, responsibility relation, and result do not substitute for one another, and no generic Work-to-result relation is inferred.
 
 ### C.32.ADA:2 - Problem
 
@@ -129,7 +132,7 @@ Evaluate every coordinate. If a coordinate is not live, mark it `notTriggered` o
 | `CandidateBasisAndSelectionTraceability` | Candidate palette, residual frame, comparison, selection, selected set, or reason no candidate-set question is live is recoverable. | Repair the missing candidate, comparison, or selection assertion using the exact applicable content in `C.32`, `C.32.MLAO`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, or `C.11`. |
 | `AffectedStructureAndDescriptionAdequacy` | Affected selected structures, views, architecture descriptions, correspondence, structural-information lens uses, and source-return are recoverable. | Repair the exact missing structure, description, correspondence, or lens-use assertion using `C.30`, `C.30.ASV`, `C.30.AD`, `A.6.F`, `A.6.M`, or `C.29`. |
 | `ArchitectureCharacteristicTradeoffAdequacy` | Architecture characteristics, criteria rows, Q-Bundles, eval readings, accepted losses, and guardrails are explicit. | Repair the exact missing characteristic, criterion, reading, loss, or guardrail assertion using `C.32.ACS`, `C.32.HCS`, `C.25`, `C.32.ACE`, `C.16`, `C.31`, or `C.31.ASAP`. |
-| `MethodAndWorkDockingAdequacy` | Method-use instructions, responsible roles, work boundaries, readiness, and expected structure effects are usable. | Repair the exact missing MethodDescription, Method, role-assignment, Work, readiness, or expected-effect assertion using `A.15`, `A.15.1`, `A.15.2`, `A.15.5`, `E.8`, `E.11.PUR`, or `C.24`. |
+| `MethodAndWorkDockingAdequacy` | Method-use instructions, acting systems and exact system-role assignments needed for Work, independently claimed responsibility relations, Work boundaries, readiness, and expected structure effects are usable. | Repair the exact missing MethodDescription, Method, direct assignment species, F.6 Work attribution, responsibility predicate or missing governor, readiness, or expected-effect assertion using `A.15`, `A.15.1`, `A.15.2`, `A.15.5`, `E.8`, `E.11.PUR`, `A.6.RCD`, or `C.24`. |
 | `ArchitectDeveloperSplitAdequacy` | Architect-owned structures, developer-owned refinement, holon-transition or BOSC-triggered boundary refs, and source-return condition are explicit. | Repair the exact split or claim-kind assertion using `C.32.PAD`, `A.15`, or `B.2.P`; use `B.2` only when whole reidentification is triggered. |
 | `PublicationProjectionAdequacy` | ADR-like or other publication projection carries the needed section functions for the declared readers. | Use `C.32.ADR` for the exact projection, `E.17` for a source-backed publication face and source return, and `E.24.PUB` for the publication occurrence, form, carrier bearing, audience, and availability. |
 | `EvidenceEvalAndGateExitAdequacy` | Eval, evidence, assurance, gate, or institutional-governance assertions are named only when live, with their exact predicates and subject-pattern locators. | Repair the exact assertion using `C.32.ACE`, `C.16`, `A.10`, `B.3`, `A.21`, or the named institutional-governance content. |
@@ -144,11 +147,11 @@ Declare the use before scoring. Common uses:
 
 | Declared use | Ordinary stop condition |
 |---|---|
-| Internal architecture discussion | Every triggered coordinate is evaluated; `0 absent` coordinates block reliance, and values below `3 sufficientlyExpressedForDeclaredUse` carry repair owners. |
+| Internal architecture discussion | Every triggered coordinate is evaluated; `0 absent` coordinates block reliance, and values below `3 sufficientlyExpressedForDeclaredUse` name the patterns or sources that must be repaired. |
 | Ready for architecture review | No triggered coordinate below `3 sufficientlyExpressedForDeclaredUse`; candidate basis, trade-off, affected structures, work split, and reopen condition are strong enough for reviewers to inspect by value. |
 | Ready for developer work or implementation commitment | Every triggered coordinate is at least `4 wellExpressedForDeclaredUse` unless a governing project decision explicitly declares a lower diagnostic floor and says the result is not an implementation commitment. |
 | Ready for ADR-like publication | Publication projection, section functions, status, source-return, and supersession are at least `4 wellExpressedForDeclaredUse`; if the record will guide developer work, use the developer-work floor too. |
-| Ready for governance enforcement | Every triggered coordinate is at least `4 wellExpressedForDeclaredUse`; the gate, evidence, assurance, or governance pattern still owns enforcement status. |
+| Ready for governance enforcement | Every triggered coordinate is at least `4 wellExpressedForDeclaredUse`; enforcement status requires a separate current gate, evidence-use, assurance, or governance result. |
 
 Use these as ordinary defaults. A project can declare stricter stop conditions. It must not weaken a triggered coordinate by hiding it under an average, and it must not call a diagnostic result ready for developer work or governance enforcement.
 
@@ -164,8 +167,9 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
   evaluationWindow: review session 2026-07-31
   decisionQuestionInputProjectionRef: PAD decision relation plus its declared-use and source-return fields
   evaluatorSystemRef: ArchitectureReviewService-4
-  evaluatorRoleAssignmentRef: ArchitectureReviewerAssignment-6
-  evaluationWorkOccurrenceRef: DecisionAdequacyEvaluationWork-12
+  evaluatorAssignmentSpeciesRef: ArchitectureReviewerAssignment
+  evaluatorAssignmentOccurrenceRef: ArchitectureReviewerAssignment-6
+  evaluationWorkRef: DecisionAdequacyEvaluationWork-12
   adequacyResultEpistemeRef: DecisionAdequacyResult-12
   architectureDecisionRelationRef: PAD:order-flow-event-integration
   architectureDecisionRecordProjectionRef: ADR:order-flow-event-integration
@@ -183,13 +187,13 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `CandidateBasisAndSelectionTraceability` | `4` | `wellExpressedForDeclaredUse` | Candidate palette and selected option are cited; `5` would need another team to replay the selection without local recovery. |
 | `AffectedStructureAndDescriptionAdequacy` | `4` | `wellExpressedForDeclaredUse` | Module and information structures plus C.30.ASV refs are usable; `5` would need a worked cross-team source-return case. |
 | `ArchitectureCharacteristicTradeoffAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | Substitutability gain and latency loss are named, but guardrail eval rows are incomplete; repair through `C.32.ACS`, `C.32.ACE`, `C.25`, and `C.16`. |
-| `MethodAndWorkDockingAdequacy` | `2` | `partiallyExpressedForDeclaredUse` | The ADR says "use events" but lacks method description, responsible role, readiness boundary, and expected structure effect; repair the exact PAD decision assertion and A.15 Method/Work assertions. |
-| `ArchitectDeveloperSplitAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | The architect's responsibility for the event boundary is clear, but the developer's responsibility for schema refinement lacks a source-return threshold; repair the exact PAD assertion and, if level pressure is real, the exact B.2.P or B.2 assertion. |
+| `MethodAndWorkDockingAdequacy` | `2` | `partiallyExpressedForDeclaredUse` | The ADR says “use events” but lacks a method description, acting system, exact assignment and F.6 attribution, readiness boundary, and expected structure effect; any responsibility claim also lacks its direct predicate or exact missing governor. Repair the exact PAD decision assertion and the A.15 assertions about Method and Work. |
+| `ArchitectDeveloperSplitAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | The acting systems and their Work split are clear, but the developer-side schema-refinement instruction lacks a source-return threshold. If responsibility is part of the decision, cite its admitted direct predicate, participants, applicability, and identity or return its exact missing governor; repair the exact PAD assertion and, if level pressure is real, the exact B.2.P or B.2 assertion. |
 | `PublicationProjectionAdequacy` | `4` | `wellExpressedForDeclaredUse` | ADR section functions are mapped; `5` would need a replayed package-update or supersession case. |
 | `EvidenceEvalAndGateExitAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | Evaluation and gate continuation conditions are named but not replayable enough for developer commitment; repair the exact predicates and assertions located through `C.32.ACE`, `C.16`, `A.10`, `B.3`, or `A.21` as triggered. |
 | `EvolutionAndReopenConditionAdequacy` | `4` | `wellExpressedForDeclaredUse` | Reopen triggers cover latency and schema-version pressure; `5` would need an executed supersession slice. |
 | `TransformerTransformedCorrespondenceAdequacy` | `3` | `sufficientlyExpressedForDeclaredUse` | Toolchain and product-structure correspondence is locally stated; repair through `C.32.CONWAY` if it becomes load-bearing for work organization. |
-| `NonOverreadAndReceivingPatternAdequacy` | `4` | `wellExpressedForDeclaredUse` | Decision, ADR, method, eval, and gate claims are routed to owners; `5` would need a near-miss showing avoided overread. |
+| `NonOverreadAndReceivingPatternAdequacy` | `4` | `wellExpressedForDeclaredUse` | Decision, ADR, method, eval, and gate claims are handled under their subject patterns; `5` would need a near-miss showing avoided overread. |
 | `ConsequenceAndRepairGuidanceAdequacy` | `4` | `wellExpressedForDeclaredUse` | Consequences and repair loci are actionable; `5` would need transfer evidence across another holon kind. |
 
 **PAD adequate, ADR weak.** A fixture architecture decision relation can reach `4 wellExpressedForDeclaredUse` on every triggered PAD, Method, work-split, trade-off, and reopen coordinate while the trade-study memo omits status and supersession. ADA identifies only the missing publication-projection assertion and cites `C.32.ADR`; it does not rewrite the PAD relation.
@@ -198,7 +202,7 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 
 ### C.32.ADA:5 - Archetypal Grounding
 
-**Developer-work readiness.** A service architecture decision has strong candidate traceability and trade-off rationale, but the ADR only says "teams should use events." ADA gives `MethodAndWorkDockingAdequacy = 2 partiallyExpressedForDeclaredUse` because responsible roles, MethodDescription, expected structure effect, and readiness condition are not recoverable. The repair states those exact assertions using PAD and A.15 before developers are instructed.
+**Developer-work readiness.** A service architecture decision has strong candidate traceability and trade-off rationale, but the ADR only says “teams should use events.” ADA gives `MethodAndWorkDockingAdequacy = 2 partiallyExpressedForDeclaredUse` because the acting systems, exact system-role assignments and F.6 attribution, MethodDescription, expected structure effect, and readiness condition are not recoverable. Any responsibility claim must also cite its direct domain predicate or exact missing governor. The repair states only those exact assertions using PAD, A.15, and A.6.RCD before developers are instructed.
 
 **ADR-publication readiness.** A manufacturing architecture decision is clear, but the trade-study memo omits status and supersession. ADA gives `PublicationProjectionAdequacy = 2 partiallyExpressedForDeclaredUse` and `EvolutionAndReopenConditionAdequacy = 3 sufficientlyExpressedForDeclaredUse`. The repair states the missing record-status and supersession assertions using C.32.ADR.
 
@@ -229,7 +233,7 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `CC-ADA-6` | Weak coordinates name repair pattern refs and repair instructions. |
 | `CC-ADA-7` | Evidence, assurance, gate, measurement, eval, publication, Method, Work, and pattern-quality claims remain distinct subject assertions and cite their exact defining or constraining ClaimGraphs. |
 | `CC-ADA-8` | A project-local ADA record names both `projectWorkOccurrenceRef` and `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's relation, the suffix, or either field alone asserts no locality. |
-| `CC-ADA-9` | An evaluator-role claim names an exact `U.RoleAssignment`; actual evaluation names the admitted holder System, dated `U.Work`, F.6 attribution, and any Method or operation application, while the result remains a separate C.2.1 episteme. |
+| `CC-ADA-9` | A local evaluator kind and a System-classification judgment use separate refs and neither requires an assignment. An assignment claim names both its declared species and obtaining occurrence with actual participants, holder, applicability, and extent. Actual evaluation names its `U.Work` occurrence and keeps all facts required by A.15.1, A.2.1, and F.6 recoverable; an operation application is additional, and the result episteme remains separate. Kind, classification, assignment, Work, and responsibility imply none of the others. |
 | `CC-ADA-10` | Every evaluation binds one exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, evaluation window, and input projection; the declared-use label and coordinate table do not replace them. |
 
 ### C.32.ADA:8 - Common Anti-Patterns and How to Avoid Them
@@ -242,7 +246,7 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `GateByScale` | A value of `4` or `5` is treated as approval or certification. | Keep ADA as evaluation; use `A.21`, `A.10`, `B.3`, or governance patterns for gate, evidence, assurance, and enforcement claims. |
 | `NotTriggeredAsConvenience` | A difficult coordinate is marked not triggered to close the review. | Require a declared-use reason and receiving-pattern boundary; otherwise score it and repair. |
 | `MethodDockingSkipped` | The decision is adequate for architecture discussion but then used to direct developer work. | Re-declare use as developer-work readiness and evaluate method docking, work split, and publication handoff. |
-| `RoleLabelAsEvaluator` | A reviewer-role label or the ADA record is treated as the performer of evaluation. | Name the admitted evaluator System, exact `U.RoleAssignment`, dated evaluation Work and F.6 attribution; keep the result episteme and operation application separate. |
+| `SystemRoleLabelAsEvaluator` | A reviewer system-role kind, assignment, or ADA record is treated as the performer of evaluation. | Name the admitted evaluator system, exact direct `U.SystemRoleAssignment` species, dated evaluation Work, and F.6 attribution; keep any responsibility relation, result episteme, and operation application separate. |
 | `ContextLabelAsEvaluationScope` | A project, domain, or bounded-context label stands in for the evaluation boundary. | Bind the exact `U.ClaimScope`, selected context slices, scheme and plane, evaluation window, and decision-question input projection. |
 
 ### C.32.ADA:9 - Consequences
@@ -288,7 +292,7 @@ These rows document transfers from source practice into C.32.ADA. Keep a source 
 
 ### C.32.ADA:13 - Footer marker
 
-C.32.ADA closes when `ArchitectureDecisionAdequacyEvaluation@Project` declares the use and stop condition; binds the exact claim scope and selected context slices, reference scheme and plane, evaluation window, and decision-question input projection; cites the evaluated decision relation and optional projection; evaluates every coordinate with an E.21 value label and rationale or grounded not-triggered status; names weakest blocking coordinates, repair patterns, and repair instructions; avoids average-score replacement; and, when actual evaluation is claimed, keeps the evaluator assignment, dated Work, operation application, and result episteme separately identified.
+C.32.ADA closes when `ArchitectureDecisionAdequacyEvaluation@Project` declares the use and stop condition; binds the exact claim scope and selected context slices, reference scheme and plane, evaluation window, and decision-question input projection; cites the evaluated decision relation and optional projection; evaluates every coordinate with an E.21 value label and rationale or grounded not-triggered status; names weakest blocking coordinates, repair patterns, and repair instructions; avoids average-score replacement; and, when actual evaluation is claimed, keeps the evaluator system, direct system-role assignment species, dated Work, F.6 attribution, operation application, any responsibility relation, and result episteme separately identified.
 
 ### C.32.ADA:End
 

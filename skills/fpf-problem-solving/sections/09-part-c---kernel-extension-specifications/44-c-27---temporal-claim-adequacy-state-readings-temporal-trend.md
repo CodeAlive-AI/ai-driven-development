@@ -108,7 +108,7 @@ record, recover:
 
 - what rate, rhythm, trajectory, regime, or stability claim is in play;
 - whether the text is reading state, reading rate, or claiming rate-change;
-- what effort, input, policy, method, intervention actor reference, role assignment, or resource envelope is supposed
+- what effort, input, policy, method, claimed intervention applier, exact assignment, or resource envelope is supposed
   to change the temporal behavior;
 - what resists, delays, stores momentum, introduces lag, or makes reversal
   costly;
@@ -246,7 +246,7 @@ Do not use C.27 when:
   only naming the temporal-claim adequacy question if scale change is used as the scale-variable relation for
   rate-change, learning, recovery, throughput, or stabilization;
 - the question under repair is a work plan, tool-use plan, method description, or authorized
-  intervention actor reference or role assignment: the planning pattern carries the plan, with C.27 only active
+  claimed intervention applier or exact assignment: the planning pattern carries the plan, with C.27 only active
   when the plan's supported use depends on rate-change, recovery, stabilization,
   or braking;
 - the question under repair is task-family specialization: C.22.1 carries adaptation
@@ -515,7 +515,7 @@ Dyn2TemporalClaimProfile {
 
   activeBlocks:
     c16RateMeasurementRelationRef? // if rate or rate-change measurement evidence is FPF-governed
-    dyn2EffortWorkBlock? // if effort, resource, work, intervention actor, or authority relation is FPF-governed
+    dyn2EffortWorkBlock? // if effort, resource, Work, a claimed intervention applier, or authority is FPF-governed
     dyn2ResistanceInertiaBlock? // if resistance, delay, residue, reversibility, or cost is FPF-governed
     dyn2RhythmClaimBlock? // if rhythm or cadence changes supported use
     dyn2CoastingClaimBlock? // if boundary-crossing use depends on continued movement or stability after effort changes or stops
@@ -594,10 +594,7 @@ c16RateMeasurementRelationRef? {
 }
 ```
 
-C.27 effort and work block: when a rate-change claim depends on effort, resource,
-method, intervention actor, role-assignment availability, or performer eligibility, C.27 separates planned
-effort, method description, resource envelope, actual work trace, and
-authority relation, proposed-work plan, hypothetical-use note, and `U.Capability` reference when a capability claim is being made. It does not turn work evidence into a dynamics law.
+C.27 effort and work block: when a rate-change claim depends on effort, resources, a method, a claimed intervention applier, an assignment, or performer eligibility, C.27 keeps the plan, method description, resource envelope, actual Work trace, applier record, authority, proposed WorkPlan, hypothetical-use note, and capability claim separate. It does not turn an assignment into an actor or work evidence into a dynamics law.
 
 ```text
 dyn2EffortWorkBlock? {
@@ -605,8 +602,19 @@ dyn2EffortWorkBlock? {
   plannedEffortRef?        // WorkPlan, MethodDescription, or resource envelope
   actualEffortTraceRef?    // U.Work or Gamma_work evidence
   effortWindowRef?
-  interventionActorRef? {
-    actorOrRoleAssignmentRef
+  claimedInterventionApplier? {
+    branch: systemActor | assignmentReferencedActor | otherClaimedApplier
+    systemActorRef?: U.EntityRef constrained to U.System
+    assignmentReferencedActor?: {
+      actorSystemRef: U.EntityRef constrained to U.System
+      actorSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
+    }
+    otherClaimedApplier?: {
+      applierRef: value typed by applierRefKind
+      applierRefKind: one existing RefKind admitted for the recovered kind
+      recoveredKindRef: U.KindRef
+      subjectPatternLocator: PatternID
+    }
     authorityRelationRef?
     proposedWorkPlanRef?
     hypotheticalUseNote?
@@ -617,9 +625,7 @@ dyn2EffortWorkBlock? {
 }
 ```
 
-`interventionActorRef` means the actor, role assignment, tool, system, policy
-rule, or human work arrangement claimed to apply the intervention, plus an
-authority relation, proposed-work plan, hypothetical-use note, and `U.Capability` reference when a capability claim is being made. If a planning claim says "add review capacity", C.27 should make visible whether there is a role assignment, work plan, authority relation, or `U.Capability` reference that can carry the intervention claim, while leaving role, method, work-plan, and work-occurrence alignment to A.15 and work patterns.
+Exactly one applier branch is selected. `systemActor` names an admitted system directly. `assignmentReferencedActor` still names the actual holder system as the actor and cites the exact assignment separately; the assignment neither acts nor supplies authority. `otherClaimedApplier` first recovers the object's kind and subject pattern, then uses an existing RefKind; if none exists, the referent remains unresolved instead of minting an actor or applier union kind here. Authority, a WorkPlan, hypothetical use, capability, performed Work, and intervention effect remain separately governed. The record reports what is claimed to apply the intervention; any stronger claim uses its direct relation or returns the exact missing governor.
 
 C.27 resistance and inertia block: `dyn2ResistanceInertiaBlock?` is present when supported use depends on what resists, delays, stores momentum, creates residue, or makes the change costly. This is core C.27 content because it prevents effort-free acceleration claims. The `Dyn2TemporalClaimAdequacyCard` asks the question locally; the `Dyn2TemporalClaimProfile` uses a separate active profile block only when that answer matters beyond the local working context.
 
@@ -907,7 +913,7 @@ relation change.
 | timeToThresholdRef | The time window or time-to-threshold reference for reaching the declared adaptation target. | C.27 may type the temporal-claim question; C.22.1 carries adaptation-signature meaning. |
 | budgetToThresholdRef | The effort, resource, exposure, or budget reference needed to reach the declared adaptation target. | Use C.22.1 and work or resource patterns for FPF-governed budget or exposure detail. |
 | C22_1TaskFamilyAdaptationRelationRef | Cited pattern relation for C.22.1 task-family adaptation signature reference. | Mandatory when `dyn2TaskFamilyAdaptationRelation?` is active. |
-| viabilityBearerRef | The system, collective system, delivery system, role configuration, organism-as-system, service situation, or declared bearer whose viability is being discussed. | C.26.3 carries viability-envelope discipline; C.27 only names the temporal move when that move changes supported use. |
+| viabilityBearerRef | The System, admitted collective System, delivery System, organism-as-System, service situation, or other declared bearer whose viability is being discussed. | C.26.3 carries viability-envelope discipline; C.27 only names the temporal move when that move changes supported use. If source wording says “role configuration,” use `E.10.ROLE` and recover the local system-role kinds, classifications, assignments, their configuration relation, or another structure established by its direct pattern before use; that configuration does not become the viability bearer by wording alone. |
 | protectedPromiseOrFunctionRef | The promise, function, or operating regime that the viability envelope is meant to preserve. | Uses C.26.3 and promise, boundary, or service patterns when FPF-governed. |
 | C26_3ViabilityEnvelopeRelationRef | Cited pattern relation for C.26.3 viability-envelope boundary regulation when temporal change is used to preserve viable bounds. | Mandatory when `dyn2ViabilityEnvelopeRelation?` is active; C.27 does not define viability envelopes. |
 | timeBase | Time base of an underlying dynamics model, if a model is being used. | Do not use it as a catch-all for every claim, sampling, effort, or rhythm window. |
@@ -930,11 +936,11 @@ relation change.
 | actualEffortTraceRef | Reference to observed work, resource burn, time burn, or trace. | Cites `U.Work` or `Gamma_work`, not `U.Dynamics`. |
 | inputCharacteristicRefs | Characteristics treated as inputs to a dynamics or intervention claim. | Existing characteristic or model discipline. |
 | effortProfile | Mapping from time window to effort or input condition. | Pattern-local description of effort timing; not a new law. |
-| interventionActorRef | The actor, role assignment, tool, system, policy rule, or work arrangement claimed to apply the intervention. | Resolves through A.15, planning, role, method, work, or agentic-action patterns; not a new physical-mechanism kind. |
-| authorityRelationRef | Authority relation or gate decision record that carries an authorization claim for the intervention actor reference or role assignment, when authorization is claimed. | Absence bounds supported use rather than creating proof of executable work. Proposed and hypothetical intervention uses need `proposedWorkPlanRef` or `hypotheticalUseNote`, not a fake authority field. |
-| proposedWorkPlanRef | Work-plan reference when the intervention is proposed but not authorized or performed. | Planning claim, not actual `U.Work`. |
-| hypotheticalUseNote | Short note when the intervention actor reference or role assignment is hypothetical or unknown. | Blocks executable-work and authority overread. |
-| actorCapabilityRef | `U.Capability` reference for the actor, tool, or system only when an actual capability claim is being made. | If no `U.Capability` claim is being made, use role, method, work-plan, or work-occurrence references instead of capability wording. |
+| claimedInterventionApplier | Three-branch record for the system actor, the actual holder system reached through an exact system-role assignment, or another applier whose kind, existing RefKind, and subject pattern are recovered. | The record is not a RefKind or union kind and establishes no agency, Work, authority, policy application, or effect. |
+| authorityRelationRef | Independently obtaining authority relation needed by the current claim. | An assignment or applier label supplies no authority by form; absence bounds supported use. |
+| proposedWorkPlanRef | WorkPlan reference when the intervention is proposed but not performed. | Planning claim, not actual `U.Work` or authority. |
+| hypotheticalUseNote | Short note when the claimed applier remains hypothetical or unresolved. | Blocks executable-Work and authority overread. |
+| actorCapabilityRef | `U.Capability` reference only when an actual capability claim is being made. | Capability establishes neither agency, Work, assignment, authority, nor effect. |
 | resistanceOrInertiaProxy | Domain-local reason that changing the rate is hard, delayed, sticky, or costly. | Proxy with explicit evidence, measurement, model assumption, planning assumption, or unknown marker; not literal mass. |
 | resistanceProxyFamily | Pattern-local grouping of resistance and inertia proxy: lag, queue, habit, constraint, coordination cost, technical debt, operations-service demand, physical inertia, or domain-local family. | Plain-to-Tech mapping must stay explicit; this is not a `U.Kind`. |
 | resistanceProxyEvidenceOrAssumption | Qualitative judgement, measurement reference, model assumption reference, planning assumption, or unknown marker for the resistance or inertia proxy. | Prevents assumptions from being treated as evidence relations or measurement relations. |
@@ -1010,7 +1016,7 @@ intervention relation that changes supported use, no entry here applies.
 | --- | --- |
 | Formal dynamics | Reusable law, simulation, prediction, control, or calibrated dynamics is carried by `A.3.3 U.Dynamics`, `C.16`, work evidence, `G.9`, and assurance patterns. |
 | C.16 rate measurement relation | Rate and rate-change readings used as evidence, benchmark, gate, control, or C.27 profile use include `c16RateMeasurementRelationRef?`; C.27 cites `C16MeasurementRelationRef` and does not define measurement construction or comparability. |
-| C.27 effort and work block | `dyn2EffortWorkBlock?` separates planned effort, method description, resource envelope, actual `U.Work` trace or `Gamma_work` aggregation trace, effort window, intervention actor reference, role assignment, authority relation, proposed-work plan, hypothetical-use note, and `U.Capability` reference when a capability claim is being made; A.15 and work patterns carry role, method, work-plan, and work-occurrence alignment. |
+| C.27 effort and Work block | `dyn2EffortWorkBlock?` separates planned effort, method description, resource envelope, actual `U.Work` or `Gamma_work` trace, effort window, the kind-discriminated `claimedInterventionApplier`, any exact system-role assignment used to recover its holder system, independently obtaining authority, proposed WorkPlan, hypothetical-use note, and `U.Capability` reference when a capability claim is current. A.15 and F.6 carry assignment, method, planning, and Work attribution. |
 | C.27 resistance and inertia block | `dyn2ResistanceInertiaBlock?` names resistance proxy family, the evidence relation, measurement relation, model assumption, planning assumption, or unknown result for that proxy, and unsupported downstream claim, effect, or use; `resistanceProxyEvidenceOrAssumption = unknown` may carry local diagnostic use but blocks durable acceleration, causal, benchmark, promise-like, or assurance use. |
 | C.27 rhythm claim block | `dyn2RhythmClaimBlock?` names bearer, timing reference, window, proxy relation, evidence relation, and supported use; coupling, phase, synchronization, or entrainment-like details appear only when the supported use depends on a relation between bearers. |
 | C.27 causal-use relation | `dyn2CausalUseRelation?` is present only when a rate-change or intervention claim is used to make a causal-use claim; it requires `causalInterventionSpecRef`, contrast or counterfactual, timing, outcome, assumptions, rival causes, supported causal use, unsupported causal use, and `C.28` causal-use relation. |
@@ -1058,7 +1064,7 @@ actual FPF kind and reference or the applicable FPF pattern.
 | --- | --- |
 | speed | rate, throughput, tempo, or trajectory reading with C.16 measurement relation when FPF-governed |
 | acceleration | rate-change, regime transition, policy effect, or finite-difference reading |
-| effort or force | planned effort, input characteristic, intervention actor reference, role assignment, actual work trace, resource trace, or resource envelope |
+| effort or force | planned effort, input characteristic, claimed intervention applier, exact system-role assignment when used, actual Work trace, resource trace, or resource envelope |
 | mass or inertia | domain-local resistance or inertia proxy: lag, switching cost, coordination cost, queue pressure, habit persistence, physical inertia, or constraint |
 | rhythm or cadence | interval-structured bearer, timing reference, window, and evidence relation; coupling only for cross-bearer claims |
 | agility | braking, redirection, acceleration, stabilization, recovery, and constraint handling |
@@ -1076,7 +1082,7 @@ Prefer: `DynOrder`, `Dyn2TemporalClaimAdequacyCard`, `Dyn2TemporalClaimProfile`,
 `baseCharacteristicRef`, `MeasureRef`, `DHCMethodRef`, `claimWindowRef`,
 `samplingWindowRef`, `effortWindowRef`, `rhythmWindowRef`,
 `plannedEffortRef`, `actualEffortTraceRef`, `inputCharacteristicRefs`,
-`interventionActorRef`, `authorityRelationRef`, `proposedWorkPlanRef`,
+`claimedInterventionApplier`, `authorityRelationRef`, `proposedWorkPlanRef`,
 `hypotheticalUseNote`, `actorCapabilityRef`, `resistanceOrInertiaProxy`,
 `resistanceProxyEvidenceOrAssumption`,
 `dyn2MetricTargetEffectBlock?`, `dyn2ObjectCentricTraceBlock?`,
@@ -1106,7 +1112,7 @@ content, not the actual work, process, law, practice, or system being discussed.
 A.7 EntityOfConcern, Description episteme, and publication-carrier split: `Dyn2TemporalClaimAdequacyCard` and
 `Dyn2TemporalClaimProfile` are authored descriptions of temporal-claim adequacy.
 They are not the dynamic system, not the work trace, not the measure, not the
-service promise, not the intervention actor reference or role assignment, not the dynamics law, and not identical to the
+service promise, not the claimed intervention applier or cited system-role assignment, not the dynamics law, and not identical to the
 document, card, or page that carries them.
 
 The EntityOfConcern, temporal bearer, and carrier split is:
@@ -1353,7 +1359,7 @@ Minimum useful note:
 - rate being changed: bug localization, evidence confirmation, repair
   iteration, uncertainty reduction, or rollout stabilization;
 - effort or input: extra tool calls, broader search, or deeper context retrieval;
-- intervention actor: agent, tool runner, or human operator capable of making the calls;
+- `claimedInterventionApplier`: select the branch that is actually supported. For a tool-using System, name that admitted System; if an assignment is cited, name the holder System and exact assignment but do not make the assignment the applier; for another applier, name its admitted kind and subject pattern. Keep any capability claim, proposed WorkPlan, authority relation, actual Work and F.6 attribution, claimed effect, and evidence separate; if only a plan or capability is known, do not report performed Work or an effect;
 - resistance proxy: noisy output, context overload, search branching, cost, or
   stale evidence;
 - outcome and evaluation evidence: task success, repair success, evidence quality,
@@ -1569,7 +1575,7 @@ extended bank and should not become a first-screen checklist.
 | Core anti-pattern | What it looks like | Repair |
 | --- | --- | --- |
 | Rate -> intervention laundering | "We measured throughput, therefore we know how to accelerate it." | Ask whether the claim is Dyn0 state, Dyn1 rate, or Dyn2 rate-change under effort, resistance, and window; add only the least-committing C.27 record that changes supported use. |
-| Effort-free acceleration | "Velocity will double" with no effort, input, intervention actor reference, role assignment, resistance proxy, window, evidence, or supported use. | Add a `Dyn2TemporalClaimAdequacyCard` or downgrade to Dyn1 measurement. |
+| Effort-free acceleration | “Velocity will double” with no effort, input, claimed intervention applier, exact assignment when relied on, resistance proxy, window, evidence, or supported use. | Add a `Dyn2TemporalClaimAdequacyCard` or downgrade to Dyn1 measurement. |
 | Past slope as control model | A historical trend is treated as a future intervention law. | Separate observed Dyn1 trend from Dyn2 intervention claim and formal-model relation. |
 | C.27 as `C.28`-governed causal-use claim | Rate changed after effort, therefore effort caused it. | Keep it as a planning assumption or diagnostic reading, or include `dyn2CausalUseRelation?` with `causalInterventionSpecRef`, contrast or counterfactual, timing, outcome, assumptions, rival causes, supported causal use and unsupported causal use, and `C.28` causal-use relation. |
 | Rhythm as decoration | Rhythm names vibe or cadence with no bearer, timing reference, window, proxy, evidence, or supported use. | Name bearer, timing reference, window, instrument or evidence proxy, and supported use; add coupling, phase, or entrainment only when the claim depends on a cross-bearer relation. |
@@ -1632,7 +1638,7 @@ Part G, benchmark, SoTA, or public method claim:
 
 - sampling window, cadence, or time base changes;
 - effort envelope or resource budget changes;
-- intervention actor reference, role-assignment availability, performer eligibility, authority, or holder availability changes;
+- claimed intervention applier, exact system-role-assignment availability, performer eligibility, independently obtaining authority, or holder availability changes;
 - inertia or resistance proxy changes: new tooling, team, queue topology, domain,
   work mix, constraints, or service environment;
 - metric becomes a target, incentive, gate, dashboard, or public comparison;

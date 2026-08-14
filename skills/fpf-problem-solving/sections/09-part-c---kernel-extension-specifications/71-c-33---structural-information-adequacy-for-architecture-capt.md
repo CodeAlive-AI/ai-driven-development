@@ -30,7 +30,10 @@ For the first pass, fill only the fields that prevent the next wrong use:
 StructuralInformationAdequacyNote@Context:
   architectureClaimRef?:
   describedHolonRef:
-  boundedContextRef:
+  architectureConcern:
+  intendedArchitectureUse:
+  claimScopeRef?: U.ClaimScope
+  qualificationWindowRef?:
   selectedStructureRefs:
   selectedSourceStructureRefs?:
   sourceDescriptionOrViewRefs?:
@@ -49,6 +52,7 @@ StructuralInformationAdequacyNote@Context:
   sourceLabelRecoveryRef?:
   mathematicalLensUseOutputRef?:
   measurementOrEvalRefs?:
+  adequacyEvidenceRefs:
   admissibleUse:
   nonAdmissibleUse:
   missingStructureReturnCondition:
@@ -97,7 +101,7 @@ Read the note as a small missing-structure return tool, not as a new documentati
 
 Work in this order:
 
-1. Name the architecture claim or pre-claim described holon and bounded context.
+1. Name the architecture claim or pre-claim, described holon, architecture concern, intended use, and any ClaimScope or qualification window that changes the adequacy judgment.
 2. Name the selected structure refs or structure kinds being relied on. If they are not recoverable, stop and use `C.30`, `C.30.ASV`, `A.22`, or `C.32.P2S`.
 3. Name the carrier, selected source structure, description, view, narrative rendering, decision record, eval report, method handoff, generated relation graph, or realized observation being used.
 4. State the captured selected structure in relation terms: relations, constraints, invariants, allocations, compositions, variation classes, operations, dynamics refs, or preserved organization.
@@ -140,7 +144,7 @@ The small working form is enough when it blocks a wrong next use. It is not enou
 
 | Check | Pass condition |
 | --- | --- |
-| `CC-C33-1` | The note names described holon, bounded context, selected structure refs or structure kinds, and the carrier or observation being used. |
+| `CC-C33-1` | The note names the described holon, architecture concern and intended use, selected structure refs or structure kinds, carrier or observation being used, any evidence supporting an adequacy or insufficiency conclusion, and any material ClaimScope or qualification window. |
 | `CC-C33-2` | Captured selected structure is stated as relations, constraints, invariants, allocations, compositions, variation classes, operations, dynamics refs, or preserved organization. |
 | `CC-C33-3` | Expected but uncaptured structure and lost or hidden structure are stated when the next use depends on them. |
 | `CC-C33-4` | Observer or budget boundary is present for agent-produced, learned, probed, epiplexity-style, or maps derived from a named source publication, source model, or source codebase. |

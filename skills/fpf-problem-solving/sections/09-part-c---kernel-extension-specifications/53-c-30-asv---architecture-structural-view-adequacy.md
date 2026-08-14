@@ -237,7 +237,7 @@ Flow -> TransformationFlowStructure
 Control -> ControlStructure
 Module -> ModuleInterfaceStructure
 Method and work -> WorkMethodStructure
-Role -> AllocationResponsibilityStructure
+Allocation and responsibility -> AllocationResponsibilityStructure
 Evidence -> EvidenceAssuranceStructure
 Scale -> ScaleEvolutionStructure
 Security -> SecurityTrustBoundaryStructure
@@ -343,7 +343,7 @@ The initial set is a seed for first architecture moves, not an atlas. Use the ta
 | PlacementDeploymentStructure | PlacementDeploymentStructureView | allocation-to-site refs or environment refs, network locality or physical locality, jurisdiction constraints or safety constraints | Use temporal, evidence, law-domain, regulatory, or safety patterns when claims of those non-placement kinds are being made. |
 | `InformationDataStructure` | `InformationDataStructureView` | state bearer and residence refs, schema refs, semantic refs, persistence locus, provenance relation, custody relation, source-return conditions, privacy constraints | Use evidence, privacy, or source-return patterns when those claims are being made. |
 | `SecurityTrustBoundaryStructure` | `SecurityTrustBoundaryStructureView` | protected asset or effect refs, trust boundary refs, untrusted input refs, privilege or authority refs, data-flow and control-flow refs, attack exposure refs, abuse or misuse path refs, secure-default or hardening boundary, supply-chain or update-channel refs, detection-response boundary refs when the corresponding claim is being made | Gives a first security-architecture move before evidence, assurance, gate, risk-score, or compliance proof. |
-| `ControlStructure` | `ControlStructureView` | control role refs, declared control-rate refs, observer, estimator, controller, planner, and supervisor relations, feedback refs | Use `C.30.LCA`, dynamics, temporal, causal, evidence, and assurance patterns when those claims are being made. |
+| `ControlStructure` | `ControlStructureView` | control-participant refs, declared control-rate refs, observer, estimator, controller, planner, and supervisor relations, feedback refs | Use `C.30.LCA`, dynamics, temporal, causal, evidence, and assurance patterns when those claims are being made. |
 | `ConstraintRequirementStructure` | `ConstraintRequirementStructureView` | requirement refs, constraint refs, and invariant refs, affected structure refs, admissibility conditions | Requirements shape structures; use the applicable requirement, gate, evidence, causal, or decision pattern for those claims. |
 | `MaterialSpatialStructure` | `MaterialSpatialStructureView` | geometry, adjacency, containment, energy flow or material flow, safety separation | Physical separation is not safety proof; use the applicable safety, evidence, dynamics, or causal pattern for those claims. |
 | `DeclaredLogicalStructure` | `LogicalStructureView` | local logical relation class, relation constraints, correspondence to functional structures, module structures, runtime structures, and data structures | Covers `logical architecture` without making `logical` a universal ontology token. |
@@ -353,7 +353,7 @@ Classifier values defined outside C.30.ASV remain admissible when they are the a
 | Classifier value defined outside C.30.ASV | ASV use | Full semantics and applicable patterns |
 | --- | --- | --- |
 | `WorkMethodStructure` | Method arrangement or work arrangement changes the architecture move. | `A.15` keeps `MethodDescription`, `WorkPlan`, and `WorkEnactment` separate; use the applicable pattern for any exception-handling, launch, or gate claim. Do not turn a work-method diagram into work authority. |
-| `AllocationResponsibilityStructure` | Responsibility or enactor allocation changes the architecture move. | Use role, enactor, organization, work, and stakeholder patterns when those claim kinds are being made; do not treat an org chart as architecture truth. |
+| `AllocationResponsibilityStructure` | Exact responsibility relations or enactor-allocation relations change the architecture move. | Preserve each admitted direct responsibility predicate and occurrence through the view. Keep the System, local system-role kind, separate System-classification judgment, assignment, enactor relation, organization relation, actual Work basis, concern or affected-party relation, authority, ownership, stewardship, and responsibility distinct. Recover `owner`, `steward`, and `stakeholder` from the claim they make and use the corresponding direct ownership, governance, stewardship, concern, affected-party, participation, responsibility, authority, or ordinary-label route. Use `E.10.ROLE` only when the source wording actually uses unresolved claim-bearing *role*. Return the exact `missing-governor` for a required relation rather than treating an org chart, title, assignment, or Work as that relation. |
 | `EvidenceAssuranceStructure` | Evidence reuse or assurance arrangement changes affected structure or source return. | Use `A.10`, `G.6`, or `B.3` for evidence sufficiency or assurance verdict; ASV only names the structure and loss boundary. |
 | `ScaleEvolutionStructure` | Scale window, replacement or change policy, trajectory reference, or coarse-graining changes the architecture move. | Use `C.29`, `C.16`, temporal, source-return, or decision patterns for scale, characterization, or selection claims. |
 | `OtherDeclaredStructureKind` | A local structure kind is declared because none of the seed or externally defined values fits. | Name its definition, selected-structure admission test, relation families, applicable patterns, and effective reference scheme when local meaning depends on one; do not mint a root kind by label alone. |
@@ -440,7 +440,7 @@ Keep three branches explicit:
 - one or more required or desired behavior/effect claim refs;
 - actual transformation refs only when the complete A.3.4 basis independently obtains;
 - selected transformation-flow structure refs for compound flow organization;
-- a bearer or candidate-bearer locus, normally a `U.System` or candidate system for a separately established transformer-role claim;
+- a bearer or candidate-bearer locus, normally a `U.System` or candidate system for a separately established transformer system-role-kind claim;
 - capability, input/output condition, functional-port, dependency, allocation, and correspondence refs only when the applicable pattern defines or tests that relation or claim.
 
 If no bearer or candidate allocation is current, do not claim a filled functional element. Record a required-behavior gap, required-effect gap, capability gap, functional-behavior slot, or candidate allocation question. This preserves the practical architecture move without pretending that a module, component, diagram row, function word, requirement, or selected flow structure has already supplied the bearer or actual change.
@@ -604,12 +604,13 @@ stop condition:
   evidence, or gate proof by appearance
 ```
 
-**Organization or operating-model architecture.** An org chart or work-method diagram can be architecture-relevant only after the work, role, information, and evidence records are separated:
+**Organization or operating-model architecture.** An org chart or Work-Method diagram can be architecture-relevant only after Systems, local system-role kinds, separate System-classification judgments, assignments, enactor relations, complete actual-Work bases, direct responsibility relations, concern or affected-party relations, information, and evidence are separated:
 
 ```text
 Organization and operating-model architecture first recovery:
   AllocationResponsibilityStructure:
-    responsibility allocation and enactment boundary
+    direct responsibility relation occurrences and enactor-allocation boundary;
+    if the responsibility predicate is unavailable, exact missing-governor
   WorkMethodStructure:
     repeatable work method and exception-handling relation
   InformationDataStructure:
@@ -617,11 +618,14 @@ Organization and operating-model architecture first recovery:
   EvidenceAssuranceStructure:
     evidence reuse, approval, audit trail, source return
 first architecture move:
-  relate responsibility allocation, work repeatability,
+  relate the exact responsibility and enactor-allocation relations, work repeatability,
   information custody, and evidence reuse
 correspondenceOrLossLine:
-  record the preserved relation among role, work, information, and evidence
-  structures, plus any org-chart or work-method-diagram loss
+  preserve the direct responsibility relation and its actual participants;
+  record separately any local system-role kind and any System-classification judgment,
+  assignment, enactor relation, complete actual-Work basis, concern or affected-party relation,
+  information, and evidence structures,
+  plus any org-chart or work-method-diagram loss
 stop condition:
   no org chart or work-method diagram is treated as the architecture, decision,
   evidence sufficiency, or assurance verdict
@@ -654,7 +658,10 @@ Organization service architecture first recovery:
     WorkMethodStructure:
       method arrangement, work-plan boundaries, exception handling, and performed-work records
     AllocationResponsibilityStructure:
-      role assignments, responsibility split, enactor availability, and escalation relation
+      admitted direct responsibility relations and their participant split, enactor-allocation relations,
+      escalation relations, and separately any local system-role kind,
+      System-classification judgment, and obtaining assignment;
+      use missing-governor when the source says responsibility but no direct predicate is admitted
     InformationDataStructure:
       ticket state, customer record custody, dashboard source, and source-return condition
     EvidenceAssuranceStructure:

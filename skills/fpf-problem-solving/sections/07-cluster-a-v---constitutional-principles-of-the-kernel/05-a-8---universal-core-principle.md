@@ -82,13 +82,13 @@ Three records are the minimum evidence. They are not an analogy. They are a fals
 
 ### A.8:3.1 - Archetypal Grounding - Diversity Evidence
 
-For busy readers: one idea, three worlds. A candidate that cannot keep the same abstract contribution across three different domain families should stay local, dependent, or subject-pattern governed.
+For busy readers: one idea, three worlds. A candidate that cannot keep the same abstract contribution across three different domain families should stay local, dependent, or constrained by a subject-specific predicate located through its subject pattern.
 
 | Candidate under test | Domain-family projections | What must stay the same | What may differ |
 | --- | --- | --- | --- |
 | `U.System` | thermodynamic control volume; biological cell or organism; cyber-physical system | bounded interacting whole that can be treated as acting or being affected under conditions | boundary physics, substrate, observability, and control style |
 | `U.Episteme` | theorem or proof text; clinical guideline; model card or safety case | claim-bearing non-agentive knowledge object that can be used, cited, revised, or published | carrier, notation, authority source, and assurance regime |
-| `U.Work` | machining run; lab assay; review or approval act | performed occurrence under a method, role assignment, context, and time window | physical medium, institutional form, measurement trace, and evidence carrier |
+| `U.Work` | machining run; lab assay; review or approval act | performed occurrence under a method, system-role assignment, context, and time window | physical medium, institutional form, measurement trace, and evidence carrier |
 
 These rows are grounding examples, not automatic admissions. The projection record still needs an `E.24.UK` basis and must state losses and bridge risks.
 
@@ -107,20 +107,20 @@ A.8 intentionally biases against kernel growth by name familiarity. This is usef
 | `CC-A8-3` | At least three domain-family projections are recorded. |
 | `CC-A8-4` | Each projection states the same abstract contribution in that domain. |
 | `CC-A8-5` | Differences and losses are explicit; same-word evidence alone is insufficient. |
-| `CC-A8-6` | A failed A.8 test lowers the candidate to local use, dependent value, Concept-Set row, C.3 `U.Kind`, or direct governing pattern rather than preserving a universal U-kind by name. |
+| `CC-A8-6` | A failed A.8 test lowers the candidate to local use, dependent value, Concept-Set row, C.3 `U.Kind`, or subject pattern rather than preserving a universal U-kind by name. |
 
 ### A.8:4.1 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Correct action |
 |---|---|---|
 | Same-word admission | A term is admitted because many domains use the same word. | Require three domain-family projection records that show the same abstract contribution. |
-| Prestige admission | A famous source or standard is treated as universal-core evidence by itself. | Record the candidate's role in multiple domain families and state difference/loss. |
+| Prestige admission | A famous source or standard is treated as universal-core evidence by itself. | Record how the candidate is used in multiple domain families and state difference and loss. |
 | Local success as kernel status | A local pattern works well and is therefore promoted to universal primitive. | Try dependent value, Concept-Set row, C.3 `U.Kind`, or direct subject-pattern value first. |
 | False demotion by vocabulary mismatch | A universal candidate is rejected because domains use different names. | Compare abstract contribution, not spelling; use bridges and F.18 naming only after the ontic test. |
 
 ### A.8:4.2 - Consequences
 
-A passed A.8 test strengthens the case for kernel placement but does not bypass E.24.UK, A.11 parsimony, or direct pattern ownership. A failed test is still useful: it tells the project where to keep the candidate local, dependent, or subject-pattern governed. The cost is evidence work across at least three domain families.
+A passed A.8 test strengthens the case for kernel placement but does not bypass E.24.UK admission predicates, A.11 parsimony, or the exact subject assertion. A failed test is still useful: it tells the project where to keep the candidate local, dependent, or constrained by a subject-specific predicate. The cost is evidence work across at least three domain families.
 
 ### A.8:4.3 - Rationale
 

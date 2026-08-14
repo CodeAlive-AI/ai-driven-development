@@ -391,7 +391,7 @@ Minimum viability-envelope note:
 
 | Field | Required content |
 | --- | --- |
-| Bearer | System, service, organization, team, model, process, or role configuration whose viability is at stake |
+| Bearer | System, service, organization, team, model, process, or configuration of system-role kinds and assignments whose viability is at stake |
 | Protected promise / function | The promise, function, use, operating regime, or stakeholder value the envelope protects |
 | Variables | Which qualities, constraints, resources, risks, or state descriptors define the envelope |
 | Viable region / bounds | What counts as inside, near edge, degraded, or outside the envelope for this use |

@@ -3,19 +3,19 @@
 
 ## Contents
 
-- [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (234 lines) — Type: Part B holonic construction pattern
-- [B.1.1 - Dependency Structure and Relation Grounding](02-b-1-1---dependency-structure-and-relation-grounding.md) (210 lines) — Type: Part B holonic construction pattern
+- [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (236 lines) — Type: Part B holonic construction pattern
+- [B.1.1 - Dependency Structure and Relation Grounding](02-b-1-1---dependency-structure-and-relation-grounding.md) (215 lines) — Type: Part B holonic construction pattern
 - [B.1.2 - System Aggregation and Holon Delimitation](03-b-1-2---system-aggregation-and-holon-delimitation.md) (219 lines) — Type: Part B holonic construction pattern
-- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation](04-b-1-3---epist---knowledge-specific-aggregation.md) (295 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and conservative assurance bounds.
-- [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (211 lines) — Type: B-family aggregation pattern
+- [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation](04-b-1-3---epist---knowledge-specific-aggregation.md) (301 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and conservative assurance bounds.
+- [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (213 lines) — Type: B-family aggregation pattern
 - [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (397 lines) — Type: Part B composition and grounding pattern
-- [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (234 lines) — Type: B-family aggregation pattern
-- [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (307 lines) — Type: Part B holonic construction pattern
+- [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (237 lines) — Type: B-family aggregation pattern
+- [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (309 lines) — Type: Part B holonic construction pattern
 - [B.2.P - Emergence and MHT Precision Restoration](09-b-2-p---emergence-and-mht-precision-restoration.md) (257 lines) — Type: Part B precision-restoration pattern
 - [B.2.2 - Meta-System Transition - System Specialization of MHT](10-b-2-2---meta-system-transition---system-specialization-of-mh.md) (225 lines) — Type: Part B holonic construction pattern
 - [B.2.3 - Meta-Holon Transition With Episteme Result](11-b-2-3---meta-holon-transition-with-episteme-result.md) (208 lines) — Type: Part B holonic construction pattern
 - [B.2.4 - Capability and Functioning Whole Reidentification](12-b-2-4---capability-and-functioning-whole-reidentification.md) (198 lines) — Type: Part B holonic construction pattern
-- [B.2.5 - Supervisor-Subholon Feedback Relation](13-b-2-5---supervisor-subholon-feedback-relation.md) (214 lines) — Type: Part B holonic construction pattern
+- [B.2.5 - Supervisor-Subholon Feedback Relation](13-b-2-5---supervisor-subholon-feedback-relation.md) (218 lines) — Type: Part B holonic construction pattern
 - [B.3 - Trust and Assurance Calculus (F-G-R with Congruence)](14-b-3---trust-and-assurance-calculus.md) (666 lines) — Type: Foundational (B)
 - [B.3.3 — Assurance Subtypes & Levels](15-b-3-3-assurance-subtypes-levels.md) (84 lines) — A complex project may generate hundreds of assurance targets and evidence carriers: design specifications, simulation models, test suites, and operational logs. While the Trust & Assurance Calculus...
 - [B.3.4 - Evidence Decay & Epistemic Debt](16-b-3-4---evidence-decay-epistemic-debt.md) (118 lines) — The FPF assurance model (Pattern B.3.3) provides a robust framework for building trust in holons by anchoring claims to a rich body of evidence. However, it implicitly treats this evidence as...
@@ -27,4 +27,4 @@
 - [B.5.2 - Abductive Loop](22-b-5-2---abductive-loop.md) (321 lines) — Type: Architectural (A)
 - [B.5.2.0 - U.AbductivePrompt](23-b-5-2-0---u-abductiveprompt.md) (193 lines) — Type: Definitional (D)
 - [B.5.2.1 - Creative Abduction with NQD](24-b-5-2-1---creative-abduction-with-nqd.md) (174 lines) — Status. Normative binding to B.5.2 Abductive Loop that delegates candidate generation to Γ_nqd.generate (C.18 NQD-CAL) and exploration/exploitation policy to E/E-LOG (C.19); the kernel remains...
-- [B.5.3 - Domain-Concept Bridge](25-b-5-3---domain-concept-bridge.md) (97 lines) — FPF keeps a small set of admitted U-kinds, ontics, slot relations, mechanisms, characteristics, methods, work values, epistemes, and publication-use relations. Working domains use their own words. A...
+- [B.5.3 - Domain-Concept Bridge](25-b-5-3---domain-concept-bridge.md) (94 lines) — FPF keeps a small set of admitted U-kinds, ontics, slot relations, mechanisms, characteristics, methods, work values, epistemes, and publication-use relations. Working domains use their own words. A...

@@ -2,22 +2,22 @@
 > **Status:** Stable
 > **Type:** Definitional ontic pattern
 
-**One‑line summary.** `U.EpistemicRetargeting` is the **EntityOfConcern retargeting** species of `U.EffectFreeEpistemicMorphing`: an effect‑free episteme→episteme morphism that **intentionally changes what the episteme is about** (the value filling `EntityOfConcernSlot` in C.2.1) under a declared `KindBridge` and invariant, while remaining conservative with respect to that invariant.
+**One-line summary.** `U.EpistemicRetargeting` is the EntityOfConcern-retargeting species of `U.EffectFreeEpistemicMorphing`: an effect-free episteme-to-episteme morphism that intentionally changes the exact C.2.1 EntityOfConcern under a declared `KindBridge` and invariant while remaining conservative with respect to that invariant.
 **EntityOfConcern retargeting discipline.** A.6.4 names the retarget branch of the C.2.1 EntityOfConcern retargeting law: `entityOfConcernRef(Y) != entityOfConcernRef(X)` only under a declared `KindBridge`, invariant, loss boundary, and admissible use. Source-side spellings are source wording only; conformant text normalizes them to `EntityOfConcern*` before use.
 
-**Placement.** After **A.6.3 `U.EpistemicViewing`**, before **A.6.5 `U.RelationSlotDiscipline`**.
+**Placement.** After **A.6.3 `U.EpistemicViewing`**, before **A.6.5 relation-declaration slot discipline**.
 
 **Builds on.**
-A.6.0 `U.Signature`; A.6.2 `U.EffectFreeEpistemicMorphing`; A.6.3 `U.EpistemicViewing`; A.6.5 `U.RelationSlotDiscipline`; A.7 and E.10.D2 (EntityOfConcern and Description-episteme boundary and specification use/refinement discipline, `DescriptionContext`); C.2.1 `U.Episteme — Epistemes and their slot relation`; C.2/C.3 (KD‑CAL/LOG‑CAL, ReferencePlane, Kind‑level reasoning); F.9 (Bridges, `KindBridge`, CL/CL^plane, SquareLaw witnesses).
+A.6.0 `U.Signature`; A.6.2 `U.EffectFreeEpistemicMorphing`; A.6.3 `U.EpistemicViewing`; A.6.5 relation-declaration SlotSpec discipline; A.7 and E.10.D2 for the EntityOfConcern, Description-episteme, describing-use, and specification-use boundary; C.2.1 for episteme identity and direct constitution, empirical-grounding, and edition relations; C.2 and C.3 for KD-CAL, LOG-CAL, ReferencePlane, and kind-level reasoning; and F.9 for exact Bridge, `KindBridge`, CL, and SquareLaw witnesses.
 
 **Used by.**
 E.18 (`StructuralReinterpretation` loci and other transformation-flow reinterpretation loci); discipline packs for signal/spectrum transforms, data↔model retargetings, abstraction/refinement under kind‑invariants; KD‑CAL/LOG‑CAL retargeting rules; additional species for architecture and governance reinterpretations.
 
-**Body-level U-kind settlement.** `U.EpistemicRetargeting` is the governed durable value in this pattern. It reuses `U.EffectFreeEpistemicMorphing`, `U.EpistemicViewing`, and `U.Episteme`; episteme card, view, and publication names are dependent C.2.1/E.17 values when those patterns define or constrain them. `ClaimGraph`, `Viewpoint`, `ReferenceScheme`, and `RepresentationScheme` are C.2.1/A.6.5 slot fillers or ValueKinds. `SubjectRef` is source wiring through `DescriptionContext`. `EpMorphism` is the local mathematical-lens arrow value for retargeting, not a root U-kind.
+**Body-level U-kind settlement.** `U.EpistemicRetargeting` is the durable value defined here. It reuses `U.EffectFreeEpistemicMorphing`, `U.EpistemicViewing`, and `U.Episteme`; episteme card, view, and publication names are dependent values under C.2.1 or E.17, as applicable. `ClaimGraph`, `ReferenceScheme`, and representation values retain their separate definitions and constraints. `SubjectRef` is only legacy source wiring: recover the exact episteme and EntityOfConcern, then name any material scheme, grounding, scope, operating condition, or selected describing-use viewpoint separately. `EpMorphism` is the local mathematical-lens arrow value for retargeting, not a root U-kind.
 
-**Retargeting in plain terms.** One effect-free episteme-to-episteme retargeting where the source episteme and receiving episteme intentionally describe different but bridge-related values of `EntityOfConcernSlot`.
+**Retargeting in plain terms.** One effect-free episteme-to-episteme retargeting in which the source and receiving epistemes intentionally concern different entities whose kinds are related by a declared `KindBridge`.
 
-**First retargeting move in plain terms.** Change the value filling `EntityOfConcernSlot` under a declared `KindBridge` and invariant, while making preserved commitments, withdrawn commitments, admissible predicate changes, and source-bearing reopen conditions visible.
+**First retargeting move in plain terms.** Change the exact EntityOfConcern under a declared `KindBridge` and invariant while making preserved commitments, withdrawn commitments, admissible predicate changes, and source-bearing reopen conditions visible.
 
 **Use this when.** Use this pattern when a representation, view, functional description, model, diagram, `StructuralReinterpretation`, or other episteme-facing item no longer preserves `entityOfConcernRef`, but a declared bridge and invariant make a controlled retargeting admissible.
 
@@ -25,7 +25,7 @@ E.18 (`StructuralReinterpretation` loci and other transformation-flow reinterpre
 
 **What this buys.** One honest retargeting relation: the reader can see the source entity, receiving entity, bridge, invariant, preserved commitments, lost or new commitments, and the specific admissible use that remains.
 
-**Not this pattern when.** Not this pattern when the EntityOfConcern is preserved and the main change is wording (`A.6.3.CR`), representation scheme or reasoning medium (`A.6.3.RT`), controlled coarsening (`A.6.3.CSC`), explanation mode (`E.17.EFP`), bridge-only comparison without retargeting (`F.9` or `F.9.1`), work (`A.15`), evidence (`A.10`), assurance (`B.3`), gate decision (`A.21`), temporal adequacy (`C.27`), or dynamics/control law (`A.3.3`).
+**Not this pattern when.** Not this pattern when the EntityOfConcern is preserved and the main change is wording (`A.6.3.CR`), representation scheme or reasoning medium (`A.6.3.RT`), controlled coarsening (`A.6.3.CSC`), explanation mode (`E.17.EFP`), an F.9 Bridge or bounded-use claim without retargeting, an optional F.9.1 stance note about such a claim, work (`A.15`), evidence (`A.10`), assurance (`B.3`), gate decision (`A.21`), temporal adequacy (`C.27`), or dynamics/control law (`A.3.3`).
 
 ### A.6.4:1 - Problem frame
 
@@ -43,7 +43,7 @@ Many important operations on descriptions **change the EntityOfConcern** while p
 All of these are **Ep→Ep transforms** that:
 * operate on Description epistemes, including Description epistemes admitted for specification use rather than mutating the EntityOfConcern itself,
 * do **not** merely slice or re-express an episteme with the same EntityOfConcern (that would be EpistemicViewing, A.6.3),
-* but **do change** the **EntityOfConcern/grounding bundle** (`EntityOfConcernSlot` and usually `GroundingHolonSlot`) under a formal bridge between kinds.
+* but **do change** the exact EntityOfConcern under a formal bridge between its source and receiving kinds, while stating separately whether any current empirical-grounding relation or use qualification is preserved or changed.
 
 We need a single, reusable notion of **“epistemic retargeting”** that captures these operations as:
 * **effect‑free** at the level of Work/Mechanism (EFEM discipline),
@@ -70,13 +70,13 @@ Without a dedicated pattern for EpistemicRetargeting:
    * nothing connects these moves to `KindBridge` and ReferencePlane policies.
 
 4. **StructuralReinterpretation is ad‑hoc.**
-   `E.18` positions `StructuralReinterpretation` as a transformation-flow locus, but its retargeting semantics are the generic “retargeting under a bridge” relation governed here, not a special graph-position ontology. Without a core pattern:
+   `E.18` positions `StructuralReinterpretation` as a transformation-flow locus, but its retargeting semantics use the generic “retargeting under a bridge” discipline defined here, not a special graph-position ontology. Without a core pattern:
 
    * StructuralReinterpretation risks duplicating retargeting logic,
    * other discipline packs may reinvent their own ad‑hoc re‑targetings.
 
 5. **EntityOfConcern and Description-episteme boundary and specification-use discipline is left underspecified.**
-   For Description epistemes and Description epistemes admitted for specification use (`...Description` and `...Spec`), retargeting **changes `EntityOfConcernRef` in `DescriptionContext = ⟨EntityOfConcernRef, BoundedContextRef, ViewpointRef⟩`** (E.10.D2), but must say what happens to context and viewpoint. Without an explicit pattern, these decisions get scattered across different E‑patterns instead of being governed centrally.
+   For Description epistemes, including those admitted for specification use, retargeting changes the exact EntityOfConcern between independently identified source and receiving epistemes. It must also state what happens to every material effective scheme, grounding, scope, operating condition, and viewpoint selected for a named describing use. Without this explicit split, unrelated decisions are hidden in one context record and scattered across E-patterns.
 
 ### A.6.4:3 - Forces
 
@@ -101,7 +101,7 @@ Without a dedicated pattern for EpistemicRetargeting:
   * align with `KindBridge` and plane Bridges used for those base reference arrows.
 
 * **Slot discipline and modularity.**
-  C.2.1 and A.6.5 give epistemes a precise `SlotKind`/`ValueKind`/`RefKind` structure, including `EntityOfConcernSlot` and `GroundingHolonSlot`. Retargeting laws must be stated **at the slot level**, not on ad‑hoc “fields”, so they can be reused across `E.18`, MVPK, and discipline packs.
+  C.2.1 and A.6.5 give episteme constitution and direct relations precise participant and SlotSpec rules. Retargeting laws name the exact episteme values they change and keep grounding, scope, viewpoint selection, and other neighboring relations separate, so the laws can be reused across `E.18`, MVPK, and discipline packs.
 
 ### A.6.4:4 - Solution — `U.EpistemicRetargeting` as EFEM profile (`entityOfConcernChangeMode = retarget`)
 
@@ -112,13 +112,13 @@ Without a dedicated pattern for EpistemicRetargeting:
 > A `U.EpistemicRetargeting r : X->Y`:
 >
 > * takes an input episteme `X` and produces an output episteme `Y`,
-> * **changes** the value filling `EntityOfConcernSlot` (`entityOfConcernRef(Y) != entityOfConcernRef(X)`),
+> * **changes** the exact EntityOfConcern (`entityOfConcernRef(Y) != entityOfConcernRef(X)`),
 > * relates the kinds of the source and receiving EntityOfConcern values via an explicit `KindBridge` in the appropriate ReferencePlane,
 > * preserves a declared **invariant** across the pair of entities (e.g. energy, behaviour, sufficient statistics),
 > * is **effect-free** at the level of Work/Mechanism (EFEM discipline),
 > * and composes functorially with other retargetings and viewings.
 
-In C.2.1 terms, `U.EpistemicRetargeting` **re-indexes** an episteme along a base-level bridge: it moves the `EntityOfConcernSlot` (and often the `<EntityOfConcernSlot, GroundingHolonSlot>` bundle) along a `KindBridge`, while re-expressing `content : U.ClaimGraph` and `referenceScheme` so that the declared invariant continues to hold at the receiving EntityOfConcern.
+In C.2.1 terms, `U.EpistemicRetargeting` changes an episteme's exact EntityOfConcern along a `KindBridge` and re-expresses claim content and the effective ReferenceScheme so that the declared invariant continues to hold at the receiving EntityOfConcern. Any grounding change remains an independently stated empirical-grounding-relation change.
 
 #### A.6.4:4.1.a - Retargeting witness decision block
 
@@ -131,7 +131,7 @@ When a retargeting claim has FPF-governed use, the receiving text makes these de
 | `sourceEntityOfConcern` | The EntityOfConcern before retargeting. |
 | `receivingEntityOfConcern` | The EntityOfConcern after retargeting. |
 | `kindBridgeAndInvariant` | The `KindBridge`, reference-plane relation, and invariant that make the retargeting admissible. |
-| `groundingAndContext` | Grounding holon, bounded context, reference plane, reference scheme, viewpoint, and view as far as the intended use needs. |
+| `groundingAndUse` | Exact grounding relation and holon, reference plane, effective scheme, scope, operating conditions, and any named-use viewpoint selection needed by the intended use. |
 | `claimOrCommitmentUnderTest` | The claim, invariant, commitment, relation, or project-side use whose retargeted admissibility is being judged. |
 | `preservedCommitments` | What the receiving item still carries from the source under the declared invariant. |
 | `withdrawnOrNewCommitments` | What the receiving item drops, narrows, adds, widens, or changes. |
@@ -174,27 +174,19 @@ ExtentRule      = admissible epistemic-retargeting morphisms in each selected sl
   * `apply(r, x:U.Episteme) : U.Episteme`
   * `dom(r), cod(r) : U.Episteme`
   * `subjectRef(-) : SubjectRef`
-* **Slot‑level discipline.**
-  Domain and codomain are exact `U.Episteme` values of governed dependent kinds; either may also be the same individual as a `U.View` when E.17.0 conformance obtains. Publication form, carrier, and availability occurrence do not define an episteme species. Their episteme kinds each provide SlotSpecs (A.6.5) including at least:
+* **Value and relation discipline.**
+  Domain and codomain are exact `U.Episteme` values of admitted dependent kinds; either may also be the same individual as a `U.View` when E.17.0 conformance obtains. Publication form, carrier, and availability occurrence do not define an episteme species. For each input and output episteme, the retargeting declaration names exact claim content, EntityOfConcern, and effective ReferenceScheme and states which values it reads or changes. When it uses an empirical-grounding relation, representation relation, view-conformance claim, or viewpoint selected for a named describing use, it names that relation or use separately. A reusable relation declaration may have A.6.5 SlotSpecs, but those SlotKinds remain local to that `RelationSignature` and are not fields of the episteme.
 
-  * `EntityOfConcernSlot` (ValueKind `U.Entity`, RefKind `U.EntityRef`, usually restricted to an `EntityOfConcernClass ⊑ U.Entity`),
-  * `GroundingHolonSlot?` (ValueKind `U.Holon`, RefKind `U.HolonRef`),
-  * `ClaimGraphSlot` (ValueKind `U.ClaimGraph`, by‑value),
-  * `ViewpointSlot?` (ValueKind `U.Viewpoint`, RefKind `U.ViewpointRef`),
-  * `ReferenceSchemeSlot` (ValueKind `U.ReferenceScheme`, by‑value),
-  * and, where C.2.1+ is in use, `RepresentationSchemeSlot`, `ViewSlot` and related slots.
-
-The pattern only requires **SlotSpec compatibility** between domain and codomain kinds (in the sense of A.6.5); they need not be literally the same kind.
-
+  A named describing use may separately select exact viewpoint P through `U.ViewpointRef`. That selection is not an episteme identity discriminator; the retargeting declaration states whether it is preserved or changed only when the use depends on it. Domain and codomain need not have literally the same dependent episteme kind, but every claimed compatibility must be stated over the actual values and relations used.
 **Relation to EFEM and Viewing.**
 
 * Every `U.EpistemicRetargeting` is an **EFEM morphism** with `entityOfConcernChangeMode = retarget` in the sense of A.6.2/C.2.1.
 * It **inherits** EFEM laws P0–P5 and adds retargeting‑specific obligations ER‑0…ER‑6 below.
 * `U.EpistemicViewing` (A.6.3) covers the complementary case `entityOfConcernChangeMode = preserve`, where the EntityOfConcern does not change.
 
-#### A.6.4:4.3 - Laws (ER‑0…ER‑6, over C.2.1 components)
+#### A.6.4:4.3 - Laws (ER-0...ER-6, over C.2.1 identity values and neighboring relations)
 
-All laws below are **in addition** to A.6.2’s EFEM laws P0–P5 and SHALL be read directly against C.2.1 components and A.6.5 SlotSpecs.
+All laws below are in addition to A.6.2's EFEM laws P0-P5 and SHALL be read against the exact C.2.1 identity values and any separately current relations. A.6.5 SlotSpecs are used only when an exact reusable relation declaration is current.
 
 **ER‑0 - Species & EntityOfConcernChangeMode.**
 
@@ -202,57 +194,43 @@ All laws below are **in addition** to A.6.2’s EFEM laws P0–P5 and SHALL be r
   * be a species of `U.EffectFreeEpistemicMorphing` (A.6.2), and
   * declare `entityOfConcernChangeMode(r) = retarget`.
 * Consequently:
- * the pair `<EntityOfConcernSlot, GroundingHolonSlot>` is the **retargeted EoC/grounding bundle** for the change (as in C.2.1 §7.3: EntityOfConcern‑bundle retargeting),
- * `EntityOfConcernSlot` is **write‑enabled** (unlike Viewing) but only under the constraints below,
+  * the exact EntityOfConcern changes, unlike in Viewing, but only under the constraints below;
   * there exist entities `T₁, T₂ : U.Entity` such that:
     * `entityOfConcernRef(X) = T₁`,
     * `entityOfConcernRef(Y) = T₂`,
     * `T₁ ≠ T₂` (as Ref/identity), and
     * `Kind(T₁)` and `Kind(T₂)` are related by a `KindBridge` in Part F’s sense (with declared CL^k).
 
-**ER‑1 - Typed domain/codomain & EntityOfConcern‑bundle behaviour.**
+**ER-1 - Typed domain and codomain; EntityOfConcern and neighboring-relation behavior.**
 
-For any `r:X→Y` in `U.EpistemicRetargeting`:
+For any `r:X->Y` in `U.EpistemicRetargeting`:
 
-1. `X` and `Y` are instances of `U.Episteme` species whose episteme kinds both realise at least the core C.2.1 slots (`EntityOfConcernSlot`, `GroundingHolonSlot?`, `ClaimGraphSlot`, `ViewpointSlot?`, `ReferenceSchemeSlot`) and obey A.6.5.
+1. X and Y are exact `U.Episteme` values identified under C.2.1. The retargeting declaration names the values it reads or changes: claim content, exact EntityOfConcern, and effective `U.ReferenceScheme`, plus any separately obtaining empirical-grounding or other neighboring relation. A selected viewpoint belongs to a named describing use, not to episteme identity.
 
-2. At the SlotKind level:
+2. The exact EntityOfConcern MUST change: `entityOfConcernRef(Y) != entityOfConcernRef(X)`. The source and receiving EntityOfConcern kinds must be covered by the declared `KindBridge`, for example `PhysicalModule` to `FunctionHolon`, `Signal` to `Spectrum`, or `Dataset` to `StatisticalModel`.
 
-   * `EntityOfConcernSlot`:
-     * **MUST change** (`entityOfConcernRef(Y) ≠ entityOfConcernRef(X)`),
-     * the ValueKinds for the slot in the domain and codomain kinds **MUST** be related via an `EntityOfConcernClass` pair that the `KindBridge` covers (e.g. `PhysicalModule` ↔ `FunctionHolon`, `Signal` ↔ `Spectrum`, `Dataset` ↔ `StatisticalModel`).
+3. Grounding, when current, is either preserved by exact reference or changed through the exact grounding or plane relation required by the receiving use. Name the source and receiving values and the effect on admissible claims; do not hide the change in a generic context field.
 
-   * `GroundingHolonSlot`, if present:
-     * is either preserved by reference equality (`groundingHolonRef(Y) = groundingHolonRef(X)`), or
-     * changed only along a declared holon‑Bridge in the same ReferencePlane (for example, moving from one runtime to another under a deployment bridge) with CL^plane penalties recorded in Part F.
+4. For a Description episteme, including one admitted for specification use, identify X and Y, their exact EntitiesOfConcern, and each effective scheme separately. State which claim content, grounding, scheme, scope, operating condition, and other material use qualification is preserved or changed. If a named source or receiving describing use selects a viewpoint, name that use and resolve its exact `U.ViewpointRef` to P. The selection is either preserved or changed explicitly. When a local family declaration bounds the eligible references, recover the exact catalogue edition, retained subset, both reference-to-P resolutions, and the separate retargeting or correspondence witness; catalogue provenance alone does not preserve the invariant.
 
-   * `ViewpointSlot`, if present:
-     * is either preserved, or
-     * changed only after exact `sourceViewpointRef` and `receivingViewpointRef` are recovered as members of the retained subset of one local family declaration inside one exact catalogue episteme L, each resolving under `R_L` to exact `P_source` and `P_receiving`. Catalogue and family provenance only bound the eligible references; the exact retargeting or correspondence witness separately explains how the invariant is maintained under the receiving viewpoint.
+5. If the retargeting also relies on a relation between distinct F.17 local senses, cite the actual F.9 Bridge occurrence. Different sources, scopes, operating conditions, schemes, or viewpoint selections do not create a universal context object or an automatic Bridge.
 
-1. For any episteme that is a `…Description`/`…Spec` (E.10.D2), `subjectRef` decodes to `DescriptionContext = ⟨EntityOfConcernRef, BoundedContextRef, ViewpointRef⟩`. Under EpistemicRetargeting:
-   * `EntityOfConcernRef` **MUST** change from `T₁` to `T₂` as in ER‑0,
-   * `BoundedContextRef` is:
-     * either preserved, or
-     * changed along an explicit Context‑Bridge (E.10.D1, Part F),
-   * `ViewpointRef` is treated as in (2) above: preserved, or changed between exact source and receiving references resolved from the same exact catalogue edition and local family declaration, and any resulting change in admissible claims is governed by ER‑2.
+When grounding changes with the EntityOfConcern, record the exact source and receiving grounding relations and holons beside the retargeting. They are not a compound identity bundle; the named describing use and its viewpoint remain separate as well.
 
-The pair `<EntityOfConcernSlot, GroundingHolonSlot>` is treated as a **retargeted EoC/grounding bundle**: many practical retargetings work at the level of this bundle rather than EntityOfConcern alone, especially where `E.18` `StructuralReinterpretation` is used.
-
-**ER‑2 - Invariant-based conservativity (lossy but admissible).**
+**ER-2 - Invariant-based conservativity (lossy but admissible).**
 
 Let `X` and `Y = apply(r,X)` with:
 * `entityOfConcernRef(X) = T₁`, `entityOfConcernRef(Y) = T₂`,
 * `KindBridge(T₁,T₂)` and associated invariant `Inv` declared for this species (e.g. energy, behavioural relation, likelihood),
 * `content_X`, `referenceScheme_X`,
 * `content_Y`, `referenceScheme_Y`,
-* `groundingHolonRef_X`, `groundingHolonRef_Y`.
+* the exact source and receiving grounding holons only when the invariant depends on them.
 
 Then:
 1. There MUST exist a KD‑CAL/LOG‑CAL expression of `Inv` such that:
-   * all claims about `Inv` that can be derived by interpreting `content_Y` through `referenceScheme_Y` relative to `<T₂, groundingHolonRef_Y>`
+   * all claims about `Inv` that can be derived by interpreting `content_Y` through `referenceScheme_Y` relative to T₂ and any named receiving grounding relation
      **are entailed by**
-     claims about `Inv` derivable from `content_X` through `referenceScheme_X` relative to `<T₁, groundingHolonRef_X>`.
+     claims about `Inv` derivable from `content_X` through `referenceScheme_X` relative to T₁ and any named source grounding relation.
 
 2. Retargeting, as an EFEM instance, **may**:
    * discard information not needed to maintain `Inv` (lossy summarisation),
@@ -310,7 +288,7 @@ the following MUST hold:
 Each species of `U.EpistemicRetargeting` MUST declare an **Applicability profile** (A.6.0) that includes:
 
 1. **EntityOfConcernClass pairs.**
-   Admissible pairs of `EntityOfConcernClass`es (ValueKinds of `EntityOfConcernSlot` for domain and codomain), for example:
+   Admissible pairs of EntityOfConcern classes for source and receiving epistemes, for example:
    * `(PhysicalModule, FunctionHolon)`,
    * `(Signal, Spectrum)`,
    * `(Dataset, StatisticalModel)`.
@@ -318,12 +296,12 @@ Each species of `U.EpistemicRetargeting` MUST declare an **Applicability profile
    For each such pair, the pattern MUST reference the appropriate `KindBridge` species in Part F.
 
 2. **Grounding constraints.**
-   Permitted classes of `groundingHolonRef` and ReferencePlanes, including whether:
+   Permitted grounding holons, grounding relations, and ReferencePlanes, including whether:
    * grounding must stay within the same holon,
    * or may move along specific holon Bridges with CL^plane penalties.
 
-3. **Viewpoint/context constraints.**
-   Whether retargeting is allowed for all exact viewpoint epistemes or only between exact source and receiving `U.ViewpointRef` members resolved from a named local family declaration in one exact catalogue L; state `<G_L, K_L, R_L>`, the ordinary family designator, the retained subset, both reference-to-P resolutions, and any requirements on `BoundedContextRef`.
+3. **Describing-use and applicability constraints.**
+   State the effective schemes, scopes, grounding, operating conditions, and optional describing-use viewpoint selections that bound the retargeting. When eligible viewpoints are restricted to a named local family declaration, state `<G_L, K_L, R_L>`, the retained subset, and both exact reference-to-P resolutions. If distinct local senses are related, name the actual F.9 Bridge; do not require a `BoundedContextRef` or infer a context bridge.
 
 4. **CL‑discipline.**
    Minimum CL^k and CL^plane required for the Bridges used, aligning with F.9 and the `E.18` `StructuralReinterpretation` rules.
@@ -344,7 +322,7 @@ Any attempt to apply a retargeting outside this Applicability profile is **ill�
 2. **Separation from Mechanisms.**
 
    * Retargeting MAY depend on outputs produced by `U.Mechanism` (e.g., computing a Fourier transform, fitting a model), but those are separate Work/Mechanism steps.
-   * `U.EpistemicRetargeting` itself remains **effect‑free**: it rearranges epistemes, slots and ClaimGraphs, but does not perform measurements or actuation.
+   * `U.EpistemicRetargeting` itself remains effect-free: it constructs a receiving episteme and its ClaimGraph but does not perform measurements or actuation.
 
 #### A.6.4:4.4 - Boundary with representation, explanation, transformation-flow structure, and neighboring claims
 
@@ -353,14 +331,14 @@ Any attempt to apply a retargeting outside this Applicability profile is **ill�
 Boundary rules:
 - if the EntityOfConcern is preserved and the main change is representation scheme or reasoning medium, use `A.6.3.RT`;
 - if the EntityOfConcern is preserved and the main change is explanation mode, explanatory stance, or explanation-facing publication, use `E.17.EFP`;
-- if the source and receiving items are only bridge-only comparison, analogy, equivalence, or substitution relation, use `F.9` or `F.9.1` instead of interpreting the bridge as identity;
+- if the source and receiving items need only a Bridge or a judgment about one bounded use, use `F.9`; use `F.9.1` only for an optional stance note about that already constituted use claim, and do not interpret either as identity;
 - if the receiving item is useful only under narrower declared use with visible loss and source-bearing reopen, use `A.6.3.CSC`;
 - if decoded or latent output is interpretable but not tied to source claim, access relation, recoverability evidence, admissible-use value, and remaining reader action, keep it report-only, exploratory, source-bearing reopen, or in the named neighboring pattern;
 - if a `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is present, use `E.18`, `A.20`, or `A.21` for graph, path, constraint, and gate relations. Those references do not prove semantic continuity or retargeting admissibility by themselves;
 - if changed problem formulation changes abductive prompt, candidate generation, rival-set formation, selected prime hypothesis, plausibility filtering, or abductive reopen, use `B.5.2`;
 - if the receiving item is used as work, evidence, assurance, gate passage, temporal claim, dynamics law, or control relation, use `A.15`, `A.10`, `B.3`, `A.21`, `C.27`, `A.3.3`, or another pattern that defines or tests the current claim.
 
-`StructuralReinterpretation` in `E.18` receives retargeting semantics from this pattern. It is not an `E.18`-local retargeting kind and not proof that the source and receiving items preserve the same `entityOfConcernRef`.
+A.6.4 defines the retargeting conditions used for `StructuralReinterpretation` in `E.18`. It is not an `E.18`-local retargeting kind and not proof that the source and receiving items preserve the same `entityOfConcernRef`.
 
 ### A.6.4:5 - Archetypal Grounding (Tell-Show-Show)
 
@@ -377,7 +355,7 @@ In each case, what remains stable is an **invariant** (behaviour, energy, likeli
 * `X` describes a physical module holon `S_phys`.
 * `Y` describes a function holon `S_func`.
 * A `KindBridge(S_phys, S_func)` expresses “this module realises that function”.
-* An `E.18` `StructuralReinterpretation` locus can be governed as an instance of `U.EpistemicRetargeting` when its invariant is the behaviour relation between `S_phys` and `S_func`.
+* An E.18 `StructuralReinterpretation` locus is an instance of `U.EpistemicRetargeting` when its invariant is the behaviour relation between `S_phys` and `S_func`.
 
 **Show 2 — Signal↔Spectrum.**
 * `X` describes a time‑domain signal `s(t)`; `EntityOfConcernRef(X) = S_time`.
@@ -402,14 +380,14 @@ Any pattern that claims to define `U.EpistemicRetargeting` **SHALL**:
 
 * declare itself a species of `U.EffectFreeEpistemicMorphing` (A.6.2),
 * fix `entityOfConcernChangeMode = retarget`,
-* and state its Applicability profile (EntityOfConcernClass pairs, contexts, viewpoints, representation schemes, invariants).
+* and state the EntityOfConcern kind pair, invariant, and any grounding, scheme, scope, operating condition, describing-use viewpoint, or representation relation that constrains its applicability.
 
-**CC‑A.6.4‑2 - Slot‑level read/write discipline.**
+**CC-A.6.4-2 - Value-and-relation read/change discipline.**
 Each species of EpistemicRetargeting **MUST**:
-* list the SlotKinds it **reads** (at least `EntityOfConcernSlot`, `GroundingHolonSlot`, `ClaimGraphSlot`, `ViewpointSlot`, `ReferenceSchemeSlot`, plus any C.2.1+ slots used),
-* list the SlotKinds it **writes** (at least `EntityOfConcernSlot`, typically also `ClaimGraphSlot`, `ReferenceSchemeSlot`, and `meta`),
-* state explicitly how `GroundingHolonSlot` and `ViewpointSlot` behave (preserved vs bridged),
-* reference A.6.5 to show that SlotSpecs remain consistent across domain/codomain kinds.
+* list the C.2.1 values it reads or changes: at least EntityOfConcern, claim content, and effective ReferenceScheme;
+* state that the exact EntityOfConcern changes and whether claim content, effective ReferenceScheme, or separately identified edition or metadata values also change;
+* state explicitly how grounding behaves and, separately, how any viewpoint selected for a named describing use is preserved or changed,
+* use A.6.5 SlotSpecs only when an exact reusable relation declaration is current, keeping those SlotKinds local to that `RelationSignature`.
 
 **CC‑A.6.4‑3 - Bridge & invariant declaration.**
 Each species SHALL:
@@ -422,25 +400,25 @@ Retargeting species that interact with `E.18` transformation-flow structures or 
 * describe the commutative squares (or more general diagrams) that express “evaluate then retarget = retarget then evaluate” up to equivalence,
 * identify the corresponding SquareLaw‑retargeting witnesses and how they are represented as epistemes.
 
-**CC-A.6.4-5 - DescriptionContext behaviour for Description-episteme and specification-use cases.**
-For retargetings over `…Description`/`…Spec` epistemes:
-* laws MUST be phrased in terms of `DescriptionContext = ⟨EntityOfConcernRef, BoundedContextRef, ViewpointRef⟩`,
-* `EntityOfConcernRef` MUST change in a way consistent with the declared `KindBridge`,
-* `BoundedContextRef` MUST either be preserved or changed only via explicit Context‑Bridges,
-* `ViewpointRef` MUST either be preserved or change from one exact source reference to one exact receiving reference in the retained subset of a named local declaration inside one exact catalogue L; both references MUST resolve exact P editions under `R_L`, while the retargeting or correspondence witness remains separately identified.
-
+**CC-A.6.4-5 - Description-episteme and describing-use behaviour.**
+For retargetings over `...Description` or `...Spec` epistemes:
+* X and Y MUST each be identified through their exact C.2.1 claim content, EntityOfConcern, and effective scheme;
+* the EntityOfConcern MUST change consistently with the declared `KindBridge`;
+* every material change to grounding, effective scheme, claim scope, model-use structure, operating condition, or specification-use basis MUST be stated separately;
+* when a named describing use selects a viewpoint, the source and receiving selections MUST be preserved or changed explicitly through exact references resolving exact P editions; any catalogue-family restriction bounds eligible references but does not replace the retargeting witness; and
+* an F.9 Bridge is required only for an actual relation between distinct local senses. No generic context reference or universal context bridge is introduced.
 **CC‑A.6.4‑6 - Separation from Viewing and Mechanisms.**
 * Any species that leaves `entityOfConcernRef` unchanged is **not** a conformant EpistemicRetargeting; it belongs to `U.EpistemicViewing` (A.6.3) or another EFEM species.
-* Any species that performs measurements, actuation, or other side‑effects MUST be declared as `U.Mechanism`, performed `U.Work`, or another directly governed work/effect value and cannot be an EpistemicRetargeting.
+* Any species that performs measurement, actuation, or another world-side effect is not an EpistemicRetargeting. Identify a mechanism and its application through A.6.1 and E.20, dated Work through A.15.1, and an actual changed referent through A.3.4 whenever those claims are current.
 
 **CC-A.6.4-7 - Retargeting witness and reopen discipline.**
 For every FPF-governed retargeting use, the source EntityOfConcern, receiving EntityOfConcern, `KindBridge`, invariant, preserved commitments, withdrawn or new commitments, admissible predicate changes, admissibility value, retargeting witness, and source-bearing reopen condition are recoverable. If bridge or invariant witnessing is insufficient for the intended use, the case records source-bearing reopen, bridge-only comparison, controlled coarsening, report-only use, exploratory use, or named neighboring-pattern handoff.
 
 **CC-A.6.4-8 - Neighboring-pattern handoff.**
-Retargeting wording does not carry work authority, evidence force, assurance force, gate passage, abductive selection, temporal adequacy, dynamics law, control relation, bridge substitution, or transformation-flow path currentness unless the governing FPF pattern and project-side FPF kind or reference named by value are named.
+Retargeting wording carries no work authority, evidence force, assurance force, gate passage, abductive selection, temporal adequacy, dynamics law, control relation, bridge substitution, or transformation-flow path currentness unless the pattern that defines or constrains that claim and the project-side FPF kind or reference are named by value.
 
 **CC-A.6.4-9 - StructuralReinterpretation boundary.**
-When `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is used, the graph, path, constraint, and gate relations stay with `E.18`, `A.20`, or `A.21`. `StructuralReinterpretation` receives retargeting semantics from `A.6.4`; it is not proof of `entityOfConcernRef` continuity and not an `E.18`-local retargeting kind.
+When `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is used, the graph, path, constraint, and gate relations stay with `E.18`, `A.20`, or `A.21`. A.6.4 defines the retargeting conditions used for `StructuralReinterpretation`; it is not proof of `entityOfConcernRef` continuity and not an `E.18`-local retargeting kind.
 
 ### A.6.4:5.2 - Common Anti-Patterns and How to Avoid Them
 
@@ -459,7 +437,7 @@ When `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLog
   * **retargetings**: different `EntityOfConcernRef` under `KindBridge` and invariants.
 
 * **Retargeting semantics for StructuralReinterpretation.**
-  `E.18` `StructuralReinterpretation` receives semantics from `U.EpistemicRetargeting`, not from an ad-hoc special graph-position kind. This reduces duplication and clarifies how CL penalties and Bridges are used.
+  For E.18, the A.6.4 `U.EpistemicRetargeting` conditions define when a case may be called `StructuralReinterpretation`; an ad-hoc graph-position kind does not. This reduces duplication and clarifies how CL penalties and Bridges are used.
 
 * **Invariants become first‑class.**
   Retargeting makes invariants explicit and type‑checked: every such morphism must state what it preserves and how that is expressed in KD‑CAL/LOG‑CAL.
@@ -468,7 +446,7 @@ When `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLog
   ReferencePlane crossings and kind‑level moves are handled via existing Bridges (Part F), with CL^plane/CL^k penalties and SquareLaw witnesses, instead of hidden in implementation details.
 
 * **Better integration with EntityOfConcern and Description-episteme boundary and specification-use gate.**
-  For `…Description`/`…Spec` epistemes, retargeting is the only place where `EntityOfConcernRef` in `DescriptionContext` is allowed to change; all other EntityOfConcern and Description-episteme boundary and specification-use operations (Describe, specification-use refinement, Viewing) keep it fixed.
+  For `...Description` or `...Spec` epistemes, A.6.4 is the place to state a controlled EntityOfConcern change between exact source and receiving epistemes. Describe, specification-use refinement, and Viewing preserve that value; any material scheme, grounding, scope, operating-condition, or describing-use viewpoint change remains separately visible.
 
 ### A.6.4:7 - Rationale
 
@@ -503,7 +481,7 @@ When you think you need "retargeting" in FPF, ask:
 3. **What invariant are you preserving?**
    Write it down in KD-CAL/LOG-CAL terms. If you cannot, retargeting is underspecified.
 
-4. **How do `GroundingHolonRef`, context, and viewpoint behave?**
+4. **How do grounding, effective scheme, scope or operating conditions, and any selected describing-use viewpoint behave?**
    State whether they stay the same, move along Bridges, or are out of scope.
 
 5. **Can the operation be factored as Mechanism + pure retargeting?**
@@ -519,9 +497,9 @@ When you think you need "retargeting" in FPF, ask:
   * Complements A.6.3 `U.EpistemicViewing` (EntityOfConcern-preserving EFEM) as the “retargeting” counterpart.
 
 * **Constrained by.**
-  * A.6.5 `U.RelationSlotDiscipline` for SlotKind/ValueKind/RefKind discipline.
-  * C.2.1 `U.EpistemeSlotRelation` for episteme components and `EntityOfConcernSlot`/`GroundingHolonSlot`.
-  * E.10.D2 (EntityOfConcern and Description-episteme boundary and specification use/refinement discipline; `DescriptionContext`).
+  * A.6.5 relation-declaration slot discipline for SlotKind, ValueKind, and RefKind rules.
+  * C.2.1 for exact claim content, EntityOfConcern, and effective ReferenceScheme, plus any separately current empirical-grounding relation.
+  * E.10.D2 (EntityOfConcern, Description-episteme, describing-use, and specification-use discipline).
   * Part F (Bridges, `KindBridge`, ReferencePlane crossings, CL/CL^plane).
   * E.10 (LEX‑BUNDLE naming rules, especially on `…Slot`/`…Ref` and ban on Subject/Object in episteme tech names).
 
