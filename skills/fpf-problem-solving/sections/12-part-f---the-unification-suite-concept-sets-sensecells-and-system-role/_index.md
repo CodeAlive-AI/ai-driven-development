@@ -9,9 +9,9 @@
 - [F.3 - Source-Local Sense Clustering](04-f-3---source-local-sense-clustering.md) (247 lines) — “Under one explicit interpretation basis, merge aliases that make the same local claim and split uses that do not.”
 - [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind](05-f-4---systemrolekinddescription-describing-an-exact-system-r.md) (328 lines) — Type: Definitional (D)
 - [F.5 - Naming Discipline for U-kind Names and SystemRoleKindDescription Labels](06-f-5---naming-discipline-for-u-kind-names-and-systemrolekindd.md) (286 lines) — Type: Definitional (D)
-- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check](07-f-6---systemroleassignment-and-performed-work-attribution-ch.md) (355 lines) — Type: Boundary and use pattern
+- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check](07-f-6---systemroleassignment-and-performed-work-attribution-ch.md) (360 lines) — Type: Boundary and use pattern
 - [F.7 - Concept-Set Table](08-f-7---concept-set-table.md) (225 lines) — “Put exact local meanings and already established relations side by side; let the table display the argument, never create it.”
-- [F.8 - Mint-or-Reuse Decision](09-f-8---mint-or-reuse-decision.md) (474 lines) — Type: Architectural pattern
+- [F.8 - Mint-or-Reuse Decision](09-f-8---mint-or-reuse-decision.md) (444 lines) — Type: Architectural pattern
 - [F.9 - Alignment and Bridge across Contexts](10-f-9---alignment-and-bridge-across-contexts.md) (593 lines) — "Translate across contexts; never collapse them."
 - [F.9.1 - Bridge Stance Note](11-f-9-1---bridge-stance-note.md) (205 lines) — Type: Architectural (A)
 - [F.10 - Status Families Mapping: Evidence, Standard, and Requirement Status](12-f-10---status-families-mapping-evidence-standard-and-require.md) (301 lines) — Type: Boundary and relation-use pattern

@@ -33,12 +33,12 @@
 - [A.19.SPR - State-Family Precision Restoration](28-a-19-spr---state-family-precision-restoration.md) (208 lines) — Type: State-family precision-restoration pattern
 - [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate](29-a-19-source-set-space-substrate---source-set-and-search-outc.md) (537 lines) — Type: Architectural (A)
 - [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Declared-Substrate Interpretive View](30-a-19-declared-substrate-interpretive-view---declared-substra.md) (495 lines) — Type: Architectural (A)
-- [A.19.CN - CN‑frame (comparability & normalization)](31-a-19-cn---cn-frame.md) (378 lines) — Scope. This CN‑frame Algebra & Normalization Discipline extends A.19 by fixing the governance Standard for CN‑frames, defining a conformance checklist and regression harness, and providing didactic...
+- [A.19.CN - CN‑frame (comparability & normalization)](31-a-19-cn---cn-frame.md) (390 lines) — Scope. This CN‑frame Algebra & Normalization Discipline extends A.19 by fixing the governance Standard for CN‑frames, defining a conformance checklist and regression harness, and providing didactic...
 - [A.19.CHR - CHRMechanismSuite](32-a-19-chr---chrmechanismsuite.md) (683 lines) — Type: Architectural (A)
-- [A.19.UNM - Unified Normalization Mechanism (UNM)](33-a-19-unm---unified-normalization-mechanism.md) (422 lines) — Type: Architectural (A)
-- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM)](34-a-19-uindm---unified-indicatorization-mechanism.md) (289 lines) — Type: Architectural (A)
-- [A.19.USCM - Unified Scoring Mechanism, USCM](35-a-19-uscm---unified-scoring-mechanism-uscm.md) (328 lines) — Type: Architectural (A)
-- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](36-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (295 lines) — Type: Architectural (A)
+- [A.19.UNM - Unified Normalization Mechanism (UNM)](33-a-19-unm---unified-normalization-mechanism.md) (417 lines) — Type: Architectural (A)
+- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM)](34-a-19-uindm---unified-indicatorization-mechanism.md) (288 lines) — Type: Architectural (A)
+- [A.19.USCM - Unified Scoring Mechanism, USCM](35-a-19-uscm---unified-scoring-mechanism-uscm.md) (329 lines) — Type: Architectural (A)
+- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](36-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (296 lines) — Type: Architectural (A)
 - [A.19.CPM - Unified Comparison Mechanism (CPM)](37-a-19-cpm---unified-comparison-mechanism.md) (379 lines) — Type: Architectural (A)
 - [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](38-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (421 lines) — Type: Architectural (A)
 - [A.20 - Flow Constraint Validity — Eulerian](39-a-20---flow-constraint-validity-eulerian.md) (363 lines) — Type: Architectural (A)

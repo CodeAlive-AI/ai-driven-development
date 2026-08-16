@@ -14,12 +14,12 @@
 
 A.19 established a substrate‑neutral picture:
 
-* a **CN‑frame** = *(Context‑local)* **CharacteristicSpace (CS)** + **chart** (coordinate patch + units) + a referenced **Normalization mechanism (UNM)** pinned from `CN‑Spec.normalization`. Any semantics of admissibility, invariants, and `≡_UNM` is governed by the A.19.UNM governing pattern (see **A.19.UNM**);
+* a **CN‑frame** = a selected **CharacteristicSpace (CS)** + **chart** (coordinate patch + units) + a referenced **Normalization mechanism (UNM)** for one named bearer, comparison basis, scope/window, and intended use. A.19.UNM defines the admissibility, invariants, and `≡_UNM` semantics;
 * **operators** (subspace, product, pullback/pushforward) and **comparability** (coordinatewise vs **normalization‑based (normalize‑then‑compare)**);
 * **RSG touch‑points**: role readiness (**RSG** states) are **certified** against CS via **checklists** over observable characteristics;
 * **entity/relational mixtures** across CN‑frames via minimal schemas and bridges.
 
-**Terminology guard.** *CN‑frame* is the **lens** (I); *CN‑Spec* is the **governance card** (S) that fixes admissible charts/normalization *references*/comparability/Γ‑fold for that lens **in one `U.BoundedContext`**; *CN‑Description* is the didactic surface (D) with worked examples and anti‑patterns. Mechanism‑level term cards (e.g., `NormalizationMethod`, `NormalizationMethodInstance`, `NCV`, `≡_UNM`, `IndicatorChoicePolicy`) are governed by the corresponding **A.19.<MechId>** patterns and are only **cited** here.
+**Terminology guard.** *CN‑frame* is the **lens** (I); *CN‑Spec* is the specification (S) that fixes the bearer, characteristic and scale editions, chart, comparison basis, scope/window, normalization references, comparability rule, aggregation choice, and intended use; *CN‑Description* is the didactic surface (D) with worked examples and anti-patterns. Mechanism-level term cards such as `NormalizationMethod`, `NormalizationMethodInstance`, `NCV`, `≡_UNM`, and `IndicatorChoicePolicy` remain defined by the corresponding **A.19.<MechId>** patterns and are only cited here.
 
 **Lexical guard (map/Map, by reference).** Follow the lexical discipline governed by **A.19.UNM**: avoid introducing new normalization tokens that use “map/Map/mapping” (because `…Map` is a Part‑G method‑type kind). In normalization contexts prefer **normalize / transform / re‑parameterize**. Legacy tokens (including retired κ‑notation) are handled via **alias docking** (F.18); A.19.CN applies this rule and does not redefine it.
 
@@ -38,84 +38,93 @@ Absent a governance layer, four failure modes recur:
 
 | Force                         | Tension we must balance                                                              |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
-| **Universality vs nuance**    | One Standard for robotics, safety, finance — yet leave each context’s idioms intact. |
+| **Universality vs nuance**    | One Standard for robotics, safety, and finance, while each named source scheme retains its own exact meanings. |
 | **Speed vs audit**            | Light ceremony for on‑ramp; hard guarantees for assurance and SoD.                   |
-| **Local truth vs federation** | Keep CN‑frames meaning‑local; still enable **explicit** bridging across Contexts.          |
+| **Local truth vs federation** | Keep meanings tied to their exact schemes and claims; still allow explicit relations and bounded receiving uses. |
 | **Minimalism vs safety**      | Few mandatory slots; enough structure to forbid silent normalization drift.                  |
 
 ### A.19.CN:4 - Solution — **The CN‑Spec** (CN‑Spec) + **Registry** + **Bridges**
 
-#### A.19.CN:4.1 - The **CN‑Spec** (comparability & normalization specification per CN‑frame, in one `U.BoundedContext`)
+#### A.19.CN:4.1 - The **CN‑Spec** (comparability and normalization specification)
 
-A **CN‑frame** is governed by a compact, notation‑free card:
+A **CN‑frame** is described by a compact, notation-free specification. The specification names the bearer and the exact boundary within which its readings may be compared:
 
 ```
 CN‑Spec {
-  name              : CN‑frameName                  // local to Context
-  context           : U.BoundedContext              // edition/version included
+  name              : CN‑frameName
+  edition           : <edition>
+  bearer_ref        : <evaluated bearer or bearer kind>
+  characteristic_space_ref : <CharacteristicSpaceRef>
+  scope_ref?        : <ClaimScopeRef>
+  window?           : <qualification interval>
+  reference_or_comparison_basis : <corpus, baseline, reference state, or declared comparison set>
   cs_basis          : [{
-    slot_id         : <tech-token>,                 // stable slot id (basis name)
-    characteristic  : <U.Characteristic>,          // per A.17 / A.18
-    scale           : { type: nominal|ordinal|interval|ratio, unit?: <U.Unit>, bounds?: <… > },
-    polarity        : up|down|target-range,        // comparison orientation
-    // if needed: missingness?, admissible_domain? (MM‑CHR‑consistent metadata)
+    slot_id         : <tech-token>,
+    characteristic  : <U.Characteristic>,
+    scale           : { type: nominal|ordinal|interval|ratio, unit?: <U.Unit>, bounds?: <…> },
+    polarity        : up|down|target-range,
+    // if needed: missingness?, admissible_domain? (MM‑CHR-consistent metadata)
   }]
   chart             : { reference_state, coordinate_patch, measurement_protocol_ref }
   normalization     : {
-   UNM_id?,                                      // reference to the UNM mechanism; canonical Intension: A.19.UNM
-   methods: [NormalizationMethodId],              // A.19.UNM-governed tokens; semantics are governed by A.19.UNM
-   instances?: [NormalizationMethodInstanceId],   // A.19.UNM-governed tokens; evidence/backing lives in C.16
-   method_descriptions: [NormalizationMethodDescriptionRef], // refs only; semantics and corpus live with A.19.UNM
-   admissible_reparameterizations,                // A.19.UNM-governed declarations (opaque here; see A.19.UNM)
-   invariants,                                    // A.19.UNM-governed invariant tokens (opaque here; see A.19.UNM)
-   fix?: <NormalizationFixSpec>                   // A.19.UNM-governed fix spec (opaque here; see A.19.UNM)
-   }
-  comparability     : { mode ∈ {coordinatewise, normalization-based}, minimal_evidence }  // `minimal_evidence` is a gate reference (default: CG‑Spec.MinimalEvidence; see G.0 and C.16)
-  indicator_policy? : { IndicatorChoicePolicyRef, scope, edition }  // policy ref only; semantics governed by A.19.UINDM
-  acceptance        : { checklist_for_admission, window, evidence_anchors } // gates RSG state checks
-  aggregation       : { Γ_fold, WLNK/COMM/LOC/MONO choices, time_policy }   // fold tokens only; semantics governed by B.3 and G.0 (and the folding mechanism card, if cited)
-  alignment?        : { bridges_to_other_contexts, CL_levels, loss_notes }  // optional
-  maintenance       : { source_maintenance_role_assignment, DRR_links, deprecation_plan }
+    UNM_id?,
+    methods: [NormalizationMethodId],
+    instances?: [NormalizationMethodInstanceId],
+    method_descriptions: [NormalizationMethodDescriptionRef],
+    admissible_reparameterizations,
+    invariants,
+    fix?: <NormalizationFixSpec>
+  }
+  comparability     : { mode ∈ {coordinatewise, normalization-based}, minimal_evidence }
+  intended_use      : <claim, comparison, admission, or aggregation use>
+  indicator_policy? : { IndicatorChoicePolicyRef, scope, edition }
+  acceptance        : { checklist_for_admission, window, evidence_anchors }
+  aggregation       : { Γ_fold, WLNK/COMM/LOC/MONO choices, time_policy }
+  alignment?        : [{ bridge_ref, direction, correspondence_rule, tolerated_loss, reliance_ref? }]
+  maintenance       : { source_maintenance_assignment, DRR_links, deprecation_plan }
 }
 ```
 
-**Reading:** *A CN‑frame is a context‑local lens with declared characteristics and a chart to read them. `CN‑Spec` pins the **references and governance choices** needed to make admission, comparability, and safe roll‑ups auditable: the UNM reference for normalization‑based comparability, an optional `IndicatorChoicePolicyRef`, an explicit `Γ_fold`, and the admission checklist. Any mechanism semantics, such as what `≡_UNM` means or what counts as an Indicator, is governed by the corresponding mechanism-governing pattern and is only cited from here.*
+**Reading:** the CN-frame is the selected characteristic space and chart for one named bearer and use. `CN‑Spec` pins the editions, comparison basis, scope and window, normalization references, aggregation choice, and admission evidence that make that use auditable. A.19.UNM still defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies admissibility gates. CN‑Spec records the values used; it does not make a source, scope, or Bridge into a universal container.
 
-**Governing-pattern assignment note.** CN-Spec stores only the **governance references and declarations**. The semantics and term cards for `NormalizationMethod*`, `≡_UNM`, `NCV`, `IndicatorChoicePolicy`, and any other CHR-mechanism vocabulary are governed by the corresponding mechanism-governing patterns such as **A.19.UNM** and **A.19.UINDM**; evidence backing lives in **C.16**. (Kernel reminder: per **A19‑CS‑5**, `U.CharacteristicSpace` carries no hidden normalizations or aggregations.) In A.6.1 terms, `UNM_id` points to a canonical **`U.Mechanism.Intension`** card; the CN‑Spec **references** that mechanism and does **not** introduce implicit **Transport**.
+**Mechanism-reference note.** `UNM_id` identifies the admitted normalization mechanism. `NormalizationMethodId` and `NormalizationMethodInstanceId` retain the meanings declared by A.19.UNM, and evidence for a relied-on instance remains with C.16. CN‑Spec neither redefines those terms nor implies transport or a cross-local relation.
 
-**L‑CN‑Spec‑NORM‑IDs (by reference).** When CN‑Spec (or its audit trail) needs stable normalization tokens, use **NormalizationMethodId**/**NormalizationMethodInstanceId** as specified by A.19.UNM. Avoid generic “map” nouns and retired κ‑notation (see the **A.19.UNM** lexical guard); preserve retired tokens only via **F.18 alias docking**. If you introduce reference‑typed fields, obey **A.6.5** (`*Ref` reserved for reference fields; `*Slot` reserved for SlotKinds).
+**L‑CN‑Spec‑NORM‑IDs (by reference).** Use the stable normalization identifiers specified by A.19.UNM. Avoid generic “map” nouns and retired κ-notation except through F.18 alias docking. Reference fields follow A.6.5: `*Ref` names a reference field and `*Slot` names a SlotKind.
 
-#### A.19.CN:4.2 - **CN‑frame Registry** (per Context)
+#### A.19.CN:4.2 - **CN‑frame Registry**
 
-Each `U.BoundedContext` keeps a **CN‑frame Registry** (VR):
+One named registry and edition may publish:
 
-* **canonical names** and **editions**;
-* **SoD hooks** (who can edit CN‑Spec, who can certify admission);
-* **deprecation map** (what replaces what, when).
+* canonical CN-frame names and editions together with their characteristic-space and bearer references;
+* the source-maintenance and certification assignments, including their non-overlapping windows where separation of duties is required; and
+* the deprecation relation: what replaces an edition and from when.
 
-#### A.19.CN:4.3 - **Bridges** (across contexts)
+The registry aids discovery and currentness. It does not supply the characteristic meanings, comparison basis, scope, or evidence recorded by each CN‑Spec.
 
-Cross‑context reuse occurs **only** via explicit **Alignment Bridges** (F.9) between CN‑Specs:
+#### A.19.CN:4.3 - **Bridges between exact local meanings**
+
+When two CN-frame uses rely on different exact F.17 local senses, cite an obtaining F.9 Bridge between those cells. A compact record can expose the information needed by the receiving use:
 
 ```
-Bridge CN‑frameA@Context1  →  CN‑frameB@Context2
-  channel: {Scope|Kind}                 // F.9 (and A.6.1 Transport)
-  planes: ReferencePlane(src,tgt)       // C.2.1 (must be recorded)
-  CL: {3|2|1|0}
-  CL_plane?: {3|2|1|0}                  // only when planes differ
+Bridge <source F.17 cell> → <target F.17 cell>
+  direction: <source-to-target use>
+  correspondence_rule: <how the local claims correspond>
+  applicable_use: <the receiving comparison or aggregation>
   kept_characteristics: [… ]
   lost_characteristics: [… ]
-  transform: {pullback | pushforward | re-scaling | re-binning | … }  // illustrative; use the operator vocabulary governed by A.19 and F.9
-  extra_guards: {additional evidence, review role, or waiver speech act}
+  tolerated_loss: <declared limit>
+  transform: {pullback | pushforward | re-scaling | re-binning | … }
+  plane_relation_ref?: <only when a separately defined plane relation obtains>
+  extra_guards: {additional evidence, review assignment, or waiver speech act}
 ```
 
-**CL policy (reference).** **CL levels and the penalty Φ(CL) are defined in B.3** (CL is **ordinal**; do not average). In A.6.1 terms, any cross‑context (or cross‑plane) reuse is declared **only** via a mechanism’s **Transport** clause: **name the BridgeId and channel** (`Scope|Kind`) and **record** `ReferencePlane(src,tgt)`; if planes differ, declare the `CL^plane` regime. **Transport is declarative** (it does not introduce a `U.Transfer` edge and does not restate CL ladders or Φ tables). When both scope and *entityOfConcern* change, apply the **two‑bridge rule** (Scope bridge + **KindBridge (CL^k)**). Penalties from scope/kind/plane **route to `R/R_eff` only** (never to **F/G**). This CN‑Spec may **add operational guards** per level (e.g., “extra reviewer at CL=1”, “waiver at CL=2”), but it **does not redefine** the scale or Φ. For episteme‑specific frames, see also **B.1.3**.
+The Bridge establishes only the exact sense relation. A claim that uses it for comparison, admission, or aggregation remains a separate C.2.1 use claim with its direction, rule, and tolerated loss, together with the current A.10 evidence-use or B.3 assurance reliance required for that use. No Bridge follows from matching names, and no reverse direction follows automatically. B.3 supplies any current loss effect on assurance; CN‑Spec may add operational guards but does not redefine that calculus.
 
 ### A.19.CN:5 - Conformance Checklist (normative)
 
 > **Pass these and your CN‑frames are fit for assurance and cross‑team composition.**
 
-**CC‑A19.D1‑1 (Local scope).** Every CN‑frame **MUST** live inside a declared `U.BoundedContext` (with edition). Names are **local**; same label in another Context ≠ same CN‑frame.
+**CC‑A19.D1‑1 (Local identity and scope).** Every CN-frame **MUST** identify its name and edition, bearer, characteristic space, reference or comparison basis, intended use, and any scope/window that qualifies the readings. The same label under another scheme or edition is not evidence of the same frame.
 
 **CC‑A19.D1‑2 (Units & polarity).** Each characteristic in `cs_basis` **MUST** declare **unit and scale** and **polarity** (↑ better, ↓ better, or target range). No unlabeled magnitudes.
 
@@ -129,9 +138,9 @@ Bridge CN‑frameA@Context1  →  CN‑frameB@Context2
 
 **CC‑A19.D1‑7 (Aggregation discipline).** `aggregation.Γ_fold` **MUST** specify WLNK/COMM/LOC/MONO choices and the **time policy** (e.g., average of rates vs integral of counts). **No free‑hand averages.** Folding admissibility and semantics are governed by **B.3** and **G.0** (and, when a folding mechanism is cited, by its mechanism-governing pattern); CN‑Spec only stores the governance pins.
 
-**CC‑A19.D1‑8 (Bridge‑only reuse).** Cross‑context consumption **MUST** cite a **Bridge** with: (i) `channel ∈ {Scope|Kind}`, (ii) recorded `ReferencePlane(src,tgt)`, (iii) CL (and `CL^plane` when planes differ), and (iv) **loss notes**; coordinate‑by‑name without a Bridge **fails**. If the data participate in **gating/assurance**, apply **Φ(CL) per B.3**; this CN‑Spec does not restate Φ.
+**CC‑A19.D1‑8 (Relation and use discipline).** When reuse depends on different exact F.17 local senses, the receiving claim **MUST** cite an obtaining F.9 Bridge with exact endpoints, direction, correspondence rule, applicable use, and tolerated loss. The comparison or aggregation remains a separate C.2.1 use claim, with the current A.10 evidence-use or B.3 assurance reliance required by that use. Coordinate-by-name without that relation and use account fails.
 
-**CC‑A19.D1‑9 (SoD & roles).** Editing CN‑Spec and admitting data **MUST** be performed by **different** roles (⊥ enforced): `CN‑frameStewardRole ⊥ CN‑frameCertifierRole` inside the same context.
+**CC‑A19.D1‑9 (Separation of duties).** Editing CN-Spec and admitting data **MUST** be performed under distinct system-role assignments whose relevant windows do not overlap: `CN‑frameStewardAssignment ⊥ CN‑frameCertifierAssignment`.
 
 **CC‑A19.D1‑10 (Maintenance, deprecation, and DRR).** Every CN-Spec **MUST** carry a **source-maintenance role assignment**, a **deprecation plan**, and links to **DRR** entries for rationale and changes (Part E.9).
 
@@ -197,83 +206,83 @@ The CN‑Spec aligns A.19.CN with **Part E**: it packages Tell‑Show‑Show, Co
 * `aggregation`: LOC on subcohorts; WLNK on safety outcomes
 * **RSG hook**: evidence-use validation of an admission requires CN‑frame acceptance; **Assurance** pulls CL from any Bridge used.
 
-#### A.19.CN:8.4 - Worked mini-schemas (entity/relational mixtures across CN‑frames, informative)
+#### A.19.CN:8.4 - Worked mini-schemas (entity and relation mixtures across CN-frames, informative)
 
-To illustrate how CharacteristicSpace is used in practice, below are simplified schema snippets for three typical **CN‑frames**: an **Operations** view (run-time state and action gating), an **Assurance** view (evidence and cross-context comparison), and an **Alignment** view (design-time consistency across contexts). These examples mix entity-based and relational Characteristics and demonstrate how normalization and bridge *references* may appear in a model.
+The three small schemas below show an operations use, an assurance use, and an alignment use. They are explanatory representations, not storage requirements. Each keeps the bearer, system-role kind and assignment, measurement or evaluation result, source-local relation, and evidence use distinct.
 
-**Didactic-only note (no data governance).** The “schema/table” shapes below are purely explanatory: they show which **references must be cite-able** for audit and reproducibility. They are **not** storage requirements, do not prescribe file formats, and do not define the semantics of `NormalizationMethod*` tokens (see A.19.UNM / C.16).
-
-##### A.19.CN:8.4.1 - Operations CN‑frame — Run-time gating & enactment
+##### A.19.CN:8.4.1 - Operations CN‑frame — runtime gating and enactment
 
 _Entity graph view:_
 
-Holder (System) ── playsRoleOf ──> Role@Context ── has ──> RCS (slots…)
-RSG (Role@Context) ── lists ──> State (◉ status)
-Checklist (of State) ── testedBy ──> Evaluation ── yields ──> StateAssertion
-Work ── performedBy ──> RoleAssignment
-Work ── isExecutionOf ──> MethodDescription
+```
+System ── classifiedAs ──> SystemRoleKind
+System + SystemRoleKind + scope/window ── assignment ──> SystemRoleAssignment
+Role-state graph ── lists ──> State
+Checklist ── tested by evaluation Work ──> StateAssertion
+Work ── performedBy ──> assigned System
+Work ── enacts ──> Method
+```
 
-In the above, a **Holder** (a system instance) plays a **Role** in some Context, which has an attached **RCS** (a set of slots defining its characteristic space). That Role’s **RSG** lists various possible **State** entries (each state could be, e.g., Ready, Waiting, Degraded, etc.). Each State has a **Checklist** which is **tested by** an Evaluation process, resulting in a **StateAssertion** (pass/fail) at runtime. Meanwhile, **Work** instances (concrete operations) are performed by the RoleAssignment and correspond to some MethodDescription (procedure). The “gate” for Work is that a StateAssertion for an enactable state must exist.
-
-_Relational stub:_ (illustrating how information might be recorded)
-
-| Table | Key Columns (essential) |
-| --- | --- |
-| **ROLE\_ASSIGNMENT** | `RA_ID` (PK); `HOLDER_ID`; `ROLE_ID`; `CONTEXT_ID`; `WINDOW_FROM`, `WINDOW_TO` |
-| **RCS\_SNAPSHOT** | `SNAP_ID` (PK); `RA_ID` (FK to ROLE\_ASSIGNMENT); `WINDOW_FROM`, `WINDOW_TO`; `CHAR_ID`; `VALUE`; `UNIT`; `SCALE_TYPE` |
-| **RSG\_STATE** | `STATE_ID` (PK); `ROLE_ID`; `CONTEXT_ID`; `NAME`; `ENACTABLE` (bool) |
-| **CHECKLIST** | `CHK_ID` (PK); `STATE_ID` (FK to RSG\_STATE); `PREDICATE_TYPE`; `PREDICATE_SPEC` |
-| **STATE\_ASSERTION** | `SA_ID` (PK); `RA_ID` (FK); `STATE_ID` (FK); `CHK_ID` (FK); `WINDOW_FROM`, `WINDOW_TO`; `VERDICT` (pass/fail); `NORMALIZATION_INSTANCE_ID`?; `BRIDGE_ID`? |
-| **WORK** | `WORK_ID` (PK); `RA_ID` (FK); `METHODDESC_ID` (FK to MethodDescription); `WINDOW_FROM`, `WINDOW_TO`; _(other fields like results or references)_ |
-
-In this schema: an RCS snapshot table might log individual coordinate values (`VALUE`) for each Characteristic (`CHAR_ID`) in a given RoleAssignment, with their units and scale type noted (to ensure we know what the number means). The StateAssertion ties a RoleAssignment to a state checklist and says whether it passed, including references to any **NormalizationMethodInstance** or **Bridge** if cross-context or cross-scale comparisons were involved. The gate logic for enactment can then be a query like: “Is Work W admissible now?” – which joins through ROLE\_ASSIGNMENT to find the latest StateAssertion for that RA where `ENACTABLE=true` and `VERDICT=pass`.
-
-##### A.19.CN:8.4.2 - Assurance CN‑frame — Evidence freshness & mapped comparisons
-
-_Entity graph view:_
-
-NormalizationMethodInstance ── appliesTo ──> Characteristic   (each instance is a scale‑appropriate, monotone transform within UNM)
-Bridge (ContextB → ContextA)   (Alignment Bridge between contexts, with CL and loss notes)
-StateAssertion ── uses ──> {NormalizationMethodInstance, Bridge}   (if a state comparison crossed contexts)
-
-This view highlights that in the assurance context, we keep track of how we mapped or compared states:
-
-* A **NormalizationMethodInstance** reference records that an admitted comparison/assertion relied on a declared normalization instance. The admissibility conditions, monotonicity constraints and evidence semantics are governed by **A.19.UNM** and **C.16**.
-* A **Bridge** between Context B and Context A (for corresponding roles or states) carries a CL rating and possibly notes on what is “lost in translation.”
-* A **StateAssertion** may **use** a NormalizationMethodInstance or a Bridge, meaning that assertion was reached by translating data via that instance or comparing across that bridge.
+The System is classified under one exact local system-role kind and participates in an obtaining assignment for the stated scope and window. A role-state graph lists states such as Ready, Waiting, or Degraded. Evaluation Work applies the state checklist and supports a StateAssertion. Operational Work may proceed only when the relied-on assertion says that an enactable state obtains; the Work, Method, assignment, and result remain different objects.
 
 _Relational stub:_
 
-| Table                | Key Columns (essential)                                                                                                               |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **NORMALIZATION\_METHOD** | `NORMALIZATION_METHOD_ID` (PK); `KIND` (token; see A.19.UNM); `DESCRIPTION_REF` |
-| **NORMALIZATION\_INSTANCE** | `NORMALIZATION_INSTANCE_ID` (PK); `NORMALIZATION_METHOD_ID` (FK); `SRC_CHAR_ID`; `TGT_CHAR_ID`; `FORMULA_SPEC|LUT_REF` (illustrative); `VALIDITY_WINDOW` (illustrative); `EVIDENCE_REF` (pin/ref; see C.16) |
-| **BRIDGE**           | `BRIDGE_ID` (PK); `FROM_ROLE@CTX`; `TO_ROLE@CTX`; `CL` (congruence-loss level, e.g. 0–3); `NOTES` (description of losses/adjustments) |
-| **ASSURANCE\_EVENT** | `AE_ID` (PK); `SA_ID` (FK to StateAssertion); `EFFECT` (enum: penalty\_applied, evidence\_refreshed, etc.); `DETAILS`                 |
+| Table | Key columns (essential) |
+|---|---|
+| **ROLE_ASSIGNMENT** | `RA_ID`; `HOLDER_SYSTEM_ID`; `SYSTEM_ROLE_KIND_ID`; `REFERENCE_SCHEME_ID`; `SCOPE_REF?`; `WINDOW_FROM`; `WINDOW_TO` |
+| **RCS_SNAPSHOT** | `SNAP_ID`; `RA_ID`; `WINDOW_FROM`; `WINDOW_TO`; `CHAR_ID`; `VALUE`; `UNIT`; `SCALE_TYPE`; `RESULT_REF` |
+| **RSG_STATE** | `STATE_ID`; `SYSTEM_ROLE_KIND_ID`; `NAME`; `ENACTABLE` |
+| **CHECKLIST** | `CHK_ID`; `STATE_ID`; `PREDICATE_TYPE`; `PREDICATE_SPEC` |
+| **STATE_ASSERTION** | `SA_ID`; `RA_ID`; `STATE_ID`; `CHK_ID`; `WINDOW_FROM`; `WINDOW_TO`; `VERDICT`; `NORMALIZATION_INSTANCE_ID?`; `BRIDGE_USE_CLAIM_REF?` |
+| **WORK** | `WORK_ID`; `PERFORMER_SYSTEM_ID`; `METHOD_ID`; `WINDOW_FROM`; `WINDOW_TO`; result and evidence refs as needed |
 
-In this stub, **NORMALIZATION\_INSTANCE** records a mapping instance that has to be accounted for when reconstructing an assertion or comparison. The exact meaning of `FORMULA_SPEC`/`VALIDITY_WINDOW`/evidence pins is governed by the UNM and evidence patterns (A.19.UNM / C.16); the point here is that the instance is **referenceable** so audits can follow it. The Bridge table enumerates official Bridges between contexts (for example, bridging a “Ready” state in an engineering context to “Ready” in an operations context, with CL indicating how fully comparable they are). An ASSURANCE\_EVENT log could record when a penalty was applied due to a low-CL Bridge or when an assertion was refreshed or invalidated due to new evidence or time lapse.
+The RCS snapshot keeps the characteristic, value, unit, scale, window, and result identity visible. A StateAssertion separately identifies any normalization instance and any claim that uses a Bridge. An enactment query can therefore ask whether the latest admissible assertion for this assignment has an enactable state and a passing verdict without treating a role label, CN-frame, or Bridge as the acting System.
 
-##### A.19.CN:8.4.3 Alignment CN‑frame — Design-time reuse of states across Contexts
+##### A.19.CN:8.4.2 - Assurance CN‑frame — evidence freshness and related local meanings
 
 _Entity graph view:_
 
-Checklist(ContextA.State)   ← pull(N) —   Checklist’(ContextB.State’)   (pull a checklist via **NormalizationMethodInstance** N)
-Refinement π : RSG(Role' ≤ Role)   (RSG refinement mapping, e.g. Role' is a subtype of Role)
+```
+NormalizationMethodInstance ── used for ──> characteristic re-expression
+F.9 Bridge ── relates ──> exact source and target F.17 cells
+ComparisonClaim ── cites ──> normalization instance and/or Bridge-use claim
+RelianceClaim ── cites ──> evidence status and assurance limits
+```
 
-This view covers how _design-time_ alignment happens:
+The normalization instance identifies the declared re-expression and its validity window. The Bridge identifies only an obtaining relation between two exact local senses. A comparison that relies on either one says so in its own use claim; its evidence and assurance limits remain explicit.
 
--   A **Checklist’** for a state in Context B can be **pulled** via a **NormalizationMethodInstance** into Context A to become a derived Checklist for a state in Context A. This is effectively what we described in the pull operation: using another context’s criteria in your own space.
+_Relational stub:_
 
--   A **Refinement π** is shown between RSGs indicating Role’ is a specialized role of Role (e.g. a sub-role or a scenario-specific role) and how their states relate (Role’ might have extra states or more granular distinctions). This refinement should maintain that for each state in Role’ that maps to a state in Role, the entails/implication relation holds for enactability.
+| Table | Key columns (essential) |
+|---|---|
+| **NORMALIZATION_METHOD** | `NORMALIZATION_METHOD_ID`; `KIND`; `DESCRIPTION_REF` |
+| **NORMALIZATION_INSTANCE** | `NORMALIZATION_INSTANCE_ID`; `NORMALIZATION_METHOD_ID`; `SRC_CHAR_ID`; `TGT_CHAR_ID`; `FORMULA_SPEC_OR_LUT_REF`; `VALIDITY_WINDOW`; `EVIDENCE_REF` |
+| **BRIDGE** | `BRIDGE_ID`; `SOURCE_CELL_REF`; `TARGET_CELL_REF`; `DIRECTION`; `CORRESPONDENCE_RULE`; `APPLICABLE_USE`; `TOLERATED_LOSS` |
+| **COMPARISON_USE** | `USE_CLAIM_ID`; `RESULT_REF`; `NORMALIZATION_INSTANCE_ID?`; `BRIDGE_ID?`; `EVIDENCE_USE_REF`; `ASSURANCE_REF?` |
+| **ASSURANCE_EVENT** | `AE_ID`; `USE_CLAIM_ID`; `EFFECT`; `DETAILS`; `WINDOW` |
 
-_Relational stub:_ (illustrating how information might be recorded)
+The tables make an audit path possible without assigning meaning to the table itself. A low-assurance relation, stale normalization instance, or refreshed evidence can be recorded as a distinct event and can reopen only the comparisons that rely on it.
 
-| Table               | Key Columns                                                                                                                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **RSG\_REFINEMENT** | `MAP_ID` (PK); `ROLEPRIME_ID` (FK to Role' in Context B); `ROLE_ID` (FK to Role in Context A); `STATEPRIME_ID` (FK to state in Role' RSG); `STATE_ID` (FK to state in Role RSG); `ENTAILS` (bool) |
-| **CHECKLIST\_PULL** | `PULL_ID` (PK); `SRC_STATE_ID`; `TGT_STATE_ID`; `NORMALIZATION_INSTANCE_ID` (FK to NormalizationMethodInstance used); `VERSION`? /\* and perhaps timestamp \*/                                     |
+##### A.19.CN:8.4.3 - Alignment CN‑frame — design-time reuse across local schemes
 
-In this stub, RSG\_REFINEMENT maps states of a sub-role to states of a super-role, with an `ENTAILS` flag indicating if being in the sub-state guarantees being in the super-state. **Every refinement mapping should ensure at least one enactable state in the sub-role corresponds to an enactable state in the super-role** (or else the sub-role would allow something the super-role doesn’t – that’s an alignment lint check). The CHECKLIST\_PULL table records that a state from one context has had its checklist pulled into another context via a **NormalizationMethodInstance** (identified by `NORMALIZATION_INSTANCE_ID`). This is a design-time description saying “State X in context A is defined by applying normalization instance N to State Y in context B’s criteria.” A version or validity field might ensure we know which edition of the checklist or normalization instance was used.
+_Entity graph view:_
+
+```
+Checklist for target state ← re-expressed by N ─ Checklist for source state
+source F.17 cell ── Bridge with direction and loss ──> target F.17 cell
+SystemRoleKind' ── stated refinement relation ──> SystemRoleKind
+```
+
+A checklist from one source scheme may be re-expressed for another only through the named normalization instance and, when its local meaning changes, an obtaining F.9 Bridge plus a separate use claim. A stated refinement between system-role kinds records how their state distinctions correspond; it must preserve the entailment needed for enactability rather than relying on similar role names.
+
+_Relational stub:_
+
+| Table | Key columns (essential) |
+|---|---|
+| **RSG_REFINEMENT** | `REFINEMENT_ID`; `SOURCE_SYSTEM_ROLE_KIND_ID`; `TARGET_SYSTEM_ROLE_KIND_ID`; `SOURCE_STATE_ID`; `TARGET_STATE_ID`; `ENTAILMENT_RULE`; `EVIDENCE_REF` |
+| **CHECKLIST_REEXPRESSION** | `REEXPRESSION_ID`; `SRC_STATE_ID`; `TGT_STATE_ID`; `NORMALIZATION_INSTANCE_ID`; `BRIDGE_USE_CLAIM_REF?`; `SOURCE_EDITION`; `TARGET_EDITION`; `VALIDITY_WINDOW` |
+
+At least one enactable source state must correspond under the stated rule to an enactable target state when that is the promised refinement. The re-expression record fixes the two editions and validity window so later changes can reopen the affected alignment rather than silently changing an old checklist.
 
 ### A.19.CN:9 - Anti‑patterns (and the fix)
 
@@ -281,18 +290,18 @@ In this stub, RSG\_REFINEMENT maps states of a sub-role to states of a super-rol
 | ----------------------- | ----------------------------------------- | ---------------------------- | --------------------------------------- |
 | **Chartless number**    | “Latency = 120”                           | No unit/vantage → untestable | Fill `cs_basis` + `chart`                          |
 | **Normalization smuggling**     | Quiet “per‑unit” normalisation mid‑stream | Trend reversal               | Declare UNM normalization references (`NormalizationMethodId` / `NormalizationMethodInstanceId`) + named invariants (see A.19.UNM)        |
-| **Bridge‑by‑name**      | Reusing labels across Contexts               | False comparability          | Author **Bridge** with CL + loss        |
+| **Bridge-by-name**      | Reusing equal labels under different schemes | False comparability | Establish the exact F.9 relation and state the separate receiving use and tolerated loss |
 | **Free‑hand averaging** | Arithmetic mean on bounded risks          | Violates WLNK                | Declare `Γ_fold` with WLNK              |
 | **CN‑frame sprawl**        | Ten nearly‑identical CN‑frames               | Cognitive debt               | Use Registry + DRR; prefer reuse        |
 | **Role conflation**     | Same person edits CN‑Spec & certifies data     | SoD breach                   | Enforce `CN‑frameSteward ⊥ CN‑frameCertifier` |
 
 ### A.19.CN:10 - Didactic quick cards (one‑liners teams reuse)
 
-1. **Numbers travel with their Context.** Always cite `Context@Edition`.
+1. **Numbers travel with their basis.** Cite the characteristic and scale editions, bearer, reference or comparison basis, scope/window, and result.
 2. **If the normalization is not declared, the trend is fiction.**
 3. **WLNK beats wishful means.** Use weakest‑link folds for safety.
 4. **Admit → Assert → Act.** (CN‑frame admission → RSG StateAssertion → Method step).
-5. **Bridge or bust.** Cross‑context = Bridge with CL and loss notes.
+5. **Relate before reuse.** When local meanings differ, establish the exact Bridge, then state the separate receiving use, direction, rule, and tolerated loss.
 6. **Steward writes, Certifier admits.** (SoD by design.)
 7. **Charts are recipes.** Name the `MethodDescription` that made the number.
 8. **Deprecate in the open.** CN‑frame cards carry DRR & retirement plans.
@@ -311,15 +320,15 @@ In this stub, RSG\_REFINEMENT maps states of a sub-role to states of a super-rol
 * **SCR‑A19.4‑S03 (Comparability test).** Provide one worked example showing **coordinatewise** or **normalization‑based** comparison end‑to‑end (with Evidence Graph Ref).
 * **SCR‑A19.4‑S04 (Γ‑fold audit).** Aggregation rule spells out WLNK/COMM/LOC/MONO choices; reviewer reconstructs result on a toy set.
 * **SCR‑A19.4‑S05 (SoD).** Distinct `RoleAssignments` for `CN‑frameStewardRole` and `CN‑frameCertifierRole` exist; windows do not overlap.
-* **SCR‑A19.4‑S06 (entityOfConcern & anchors surfaced).** For each CN‑Spec characteristic used in the worked example, cite the corresponding CHR Characteristic name and the evidence anchor(s) (A.10) that make the reading observable in this Context.
+* **SCR‑A19.4‑S06 (bearer and anchors surfaced).** For each CN-Spec characteristic used in the worked example, cite its bearer, Characteristic and Scale editions, reference/comparison basis, scope/window, and the A.10 evidence anchors that support the reading.
 
 #### A.19.CN:11.2 - **RSCR — Regression (on change)**
 
-* **RSCR‑A19.4‑R01 (UNM edit).** On changing `normalization` (UNM/NormalizationMethod), flag **all** downstream Bridges for CL re‑assessment; re‑run example comparisons.
+* **RSCR‑A19.4‑R01 (UNM edit).** When `normalization` changes, flag every comparison and Bridge-use claim that cites that normalization for affected-only reassessment, then rerun the corresponding worked comparisons.
 * **RSCR‑A19.4‑R02 (Slot surgery/Basis surgery).** Adding/removing/renaming slot/basis requires a **new edition**; old data remain valid **for their edition**.
 * **RSCR‑A19.4‑R03 (Chart drift).** Updating measurement protocol bumps edition; **historic Work** keeps old edition link.
 * **RSCR‑A19.4‑R04 (Fold change).** Any change to `Γ_fold` invalidates cached roll‑ups; re‑compute or mark as superseded.
-* **RSCR‑A19.4‑R05 (Bridge health).** After either side’s edition change, **re‑validate** Bridge CL and loss notes before accepting Cross‑context data.
+* **RSCR‑A19.4‑R05 (Bridge health).** After either endpoint's scheme, claim, or edition changes, revalidate the Bridge direction, correspondence, and loss before relying on it again; reopen only the claims that use it.
 * **RSCR‑A19.4‑R06 (Deprecation rule).** On deprecating a CN‑frame, Registry lists its successor; bridges re‑targeted or retired.
 
 ### A.19.CN:12 - Interaction summary (wiring to the rest of the kernel)
@@ -334,7 +343,10 @@ In this stub, RSG\_REFINEMENT maps states of a sub-role to states of a super-rol
 **Template note (refs-only).** This template shows *slot placement* for governance. Token semantics for normalization belong to the A.19.UNM governing pattern (A.19.UNM); indicatorization semantics belong to the indicatorization governing pattern (e.g., A.19.UINDM); evidence/backing semantics belong to C.16; admissibility/evidence gates belong to G.0.
 
 ```
-CN‑frame: <Name>      Context: <Context/Edition>
+CN‑frame: <Name>      Edition: <edition>      Bearer: <bearer ref>
+ComparisonBasis: <corpus, baseline, reference state, or declared comparison set>
+ScopeAndWindow: <scope ref and qualification interval, when used>
+IntendedUse: <claim, comparison, admission, or aggregation use>
 characteristics:
   - <CharacteristicName> : <Unit/Scale>  [Polarity: up|down|target-range]
 Chart:
@@ -372,7 +384,7 @@ MaintenanceAndDeprecation:
 
 ### A.19.CN:Close
 
-A.19.CN gives A.19 some **teeth**: a *CN‑Spec* you can put on one page, a **Registry** that stops sprawl, **Bridges** that carry explicit loss, and a **checklist + harness** that make comparability **auditable**. It obeys the **mandatory pattern structure** of Part E (style, checklists, DRR, guard‑rails) while remaining tool‑agnostic and context‑local.
+A.19.CN makes comparability operational: a one-page *CN-Spec*, a registry for edition, status, supersession, and deprecation records, explicit relations and receiving-use claims for cross-local reuse, and a checklist plus harness for audit. It remains tool-agnostic and keeps every reading tied to its characteristic and scale editions, bearer, comparison basis, scope/window, evidence, and intended use.
 
 ### A.19.CN:End
 

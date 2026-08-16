@@ -122,10 +122,12 @@ An assertion can state the exact pair, and evidence can support reliance on that
 
 Before checking or relying on attribution, recover RA's declared species and occurrence. This distinguishes the assignment even when the final practitioner sentence omits its full declaration. Every species declares:
 
-- a `HolderSystemSlot` whose value domain is `U.System`;
-- a declaration-local `AssignedSystemRoleKindSlot` whose value domain is the exact local system-role kind;
-- every additional participant meaning and value domain;
+- a `HolderSystemSlot` whose `ValueKind` is `U.System`;
+- a declaration-local `AssignedSystemRoleKindSlot` whose `ValueKind` is the exact local system-role-kind domain admitted for that species;
+- every additional participant meaning and its `ValueKind`;
 - the rule, applicability, and maximal uninterrupted occurrence identity.
+
+An assignment occurrence supplies one participant value for each slot. In particular, it supplies one local system-role-kind value from the `AssignedSystemRoleKindSlot` domain; the value does not replace or narrow that declared domain.
 
 A simple assignment may have only holder and kind. A project appointment may also have `ReviewCommissionSlot`. F.6 accepts both through the family ValueKind and holder projection while retaining the declared species and all participants that distinguish the assignment occurrence. Those participants and the assignment rule still do not establish that the Work was performed under the assignment; the case must establish that link separately. F.6 never creates a two-participant generic assignment beside the appointment.
 
@@ -274,7 +276,7 @@ An access directory says Alice has `DB-Admin`. That entry describes an access or
 
 1. `WorkOccurrenceSlot` names one admitted dated `U.Work` occurrence.
 2. `SystemRoleAssignmentSlot` names one assignment occurrence of a declared species under `U.SystemRoleAssignment` through `U.RelationRef`.
-3. The assignment's declared species, all identity-bearing participants, rule, applicability, and uninterrupted occurrence identity remain recoverable.
+3. The assignment's declared species, all identity-bearing participants, rule, applicability, and uninterrupted occurrence identity remain recoverable. Each species keeps its SlotSpec `ValueKind` domains distinct from the participant values supplied by the occurrence; `AssignedSystemRoleKindSlot` takes one kind value from its declared local system-role-kind domain.
 4. The case establishes that W was performed under RA; the assignment's existence, matching holder, and temporal overlap do not establish that link.
 5. The assignment holder is the System that actually performed W.
 6. The assignment predicate covers the selected Work interval; attribution to a Work part first identifies that part as `U.Work`.
@@ -326,14 +328,17 @@ Making a log, status, decision, or evidence item a participant would confuse att
 
 ### F.6:13 - SoTA-Echoing and Source Use
 
-| Source line | Contribution | FPF use |
-| --- | --- | --- |
-| FPF A.2.1, A.2.5, and A.15.1 | Separate assignment occurrence, assignment-state relation, and dated Work. | `performedUnderAssignment` relates exact Work and assignment occurrences without importing state or evidence as participants. |
-| Almeida, Guizzardi, Sales, and Fonseca, [gUFO](https://arxiv.org/abs/2603.20948), 2026 preprint | Current comparator separates role-like classification, relation aspects, and explicit relation occurrences. | Keep system-role kind, declared assignment species, assignment occurrence, and attribution distinct under FPF holder and identity laws. |
-| W3C [PROV-O](https://www.w3.org/TR/prov-o/), 2013 Recommendation; representation lineage | Qualified association distinguishes activity, agent, role, and plan in provenance. | Preserve the separation while keeping provenance epistemes distinct from Work, assignment, and attribution obtaining. |
-| [OCEL 2.0 Specification](https://www.ocel-standard.org/specification/overview/), 2024 event-log practice | Represents events, objects, and qualified relations explicitly. | Treat log rows as assertions or evidence after Work and assignment identities are recovered. |
+**Internal basis, not an external SoTA claim.** A.2.1 and A.6.5 supply the declaration-local slot, domain, and participant-value discipline. A.2.5 keeps assignment state distinct from the assignment occurrence. A.6.REL supplies relation obtaining and occurrence identity. A.15.1 supplies dated Work and the actual-performer basis. F.6 uses these as its governing FPF neighbours; they do not replace comparison with external work.
 
-These sources discipline the examples rather than supply a foreign ontology.
+| Source and status | Decision for F.6 | What F.6 uses and does not import | Affected loci and smallest source-driven revisit |
+| --- | --- | --- | --- |
+| Almeida, Guizzardi, Sales, and Fonseca, [gUFO](https://arxiv.org/abs/2603.20948), 2026 preprint — current ontology comparator for this narrow question | **Adapt.** Use its separation of classification, relational aspects, and relation occurrences to test whether F.6 keeps a system-role kind, an assignment species, an assignment occurrence, and Work–assignment attribution distinct. | Keep the distinctions. Do not import gUFO's category hierarchy, OWL commitments, reified-aspect design, or a direct identity between a gUFO category and an FPF kind. | §§4.1–4.3 and the assignment examples. Revisit them if this source materially changes the distinctions used here or a better direct Work–assignment account preserves more of FPF's identity and use requirements without greater practitioner burden. |
+| W3C [PROV-O](https://www.w3.org/TR/prov-o/), 2013 Recommendation — representation lineage | **Adapt as a representation contrast.** Its qualified association keeps activity, agent, role, and plan separately addressable. | Use the separation when checking reports and provenance. Do not treat a PROV association as an FPF assignment occurrence, its role as a system-role kind, its activity as dated Work, or a provenance record as proof that attribution obtains. | §§4.2, 4.5, and §7.3. Revisit only if the qualified-association meaning used in this contrast changes materially. |
+| [OCEL 2.0 Specification](https://www.ocel-standard.org/2.0/ocel20_specification.pdf), 2023 — event-log stress test | **Adapt as a logging stress test.** Its separate events, objects, and qualified relations test whether an exported log can preserve the identities F.6 needs. | Use the separation, not the log's identities as the world-side ontology. An event is not thereby FPF Work, a qualifier is not thereby an assignment or system-role kind, and a row does not establish that attribution obtains. | §§4.2, 7.2, and 7.3. Revisit only if the event/object/qualified-relation structure used by this test changes materially. |
+
+The comparison is qualified on 2026-08-15 for this question and these source editions. gUFO is the current comparator because it directly addresses the classification–relational-aspect–occurrence separation at issue; PROV-O and OCEL answer narrower representation and logging questions and therefore serve as lineage and stress tests. A new edition number, publication status, or harmless wording change does not reopen the comparison. A material change to a distinction used above, or a competitor that offers a better direct Work–assignment attribution solution with at least the same exactness, readability, and use cost, reopens only the affected row and F.6 loci.
+
+**Refresh by meaning, not by publication.** If A.2.1 or A.6.5 changes how an assignment species declares slot domains or how an occurrence supplies participant values, revisit §§4.3, 5, 7.1, and 9. If A.6.REL changes relation obtaining or occurrence identity, revisit §§4.1–4.2, 5, 7, and 9. If A.15.1 changes the actual-performer or covering-assignment basis, revisit §§4.4–4.6, 7, and 9. If a better direct Work–assignment solution changes the source decision, revisit §13 and only the solution or examples that depend on it. Wording or publication changes that leave these meanings intact require no refresh.
 
 ### F.6:14 - Relations
 

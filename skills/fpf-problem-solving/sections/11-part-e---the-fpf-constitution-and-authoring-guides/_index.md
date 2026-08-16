@@ -21,9 +21,9 @@
 - [E.6 - Didactic Architecture of the Specification](16-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
 - [E.7 - Archetypal Grounding Principle](17-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
 - [E.8 - FPF Authoring Conventions & Style Guide](18-e-8---fpf-authoring-conventions-style-guide.md) (654 lines) — Type: Architectural (A)
-- [E.8.ECSPF - Evaluation CharacteristicSpace FPF Pattern Publication Form](19-e-8-ecspf---evaluation-characteristicspace-fpf-pattern-publi.md) (180 lines) — Type: Authoring method pattern
+- [E.8.ECSPF - FPF Pattern Publication Form for Evaluation Guidance](19-e-8-ecspf---fpf-pattern-publication-form-for-evaluation-guid.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](20-e-9---design-rationale-record-method.md) (360 lines) — Type: Governance and authoring pattern
-- [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](21-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (383 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
+- [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](21-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (431 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
 - [E.10 - Unified Lexical Rules for FPF](22-e-10---unified-lexical-rules-for-fpf.md) (1836 lines) — Type: Part E lexical-governance pattern
 - [E.10.MOVE - Move and Readiness Wording Precision Restoration](23-e-10-move---move-and-readiness-wording-precision-restoration.md) (268 lines) — Type: Part E precision-restoration pattern
 - [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](24-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (428 lines) — Type: Architectural (E)

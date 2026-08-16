@@ -32,10 +32,10 @@
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](22-c-16---measurement-metrics-characterization.md) (296 lines) — Use this pattern when. Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic,...
 - [C.16.P - Characteristic and Scale Precision Restoration](23-c-16-p---characteristic-and-scale-precision-restoration.md) (251 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](24-c-16-q---quality-term-precision-restoration.md) (851 lines) — Type: Characterization precision-restoration pattern
-- [C.17 - Characterising Generative Novelty & Value (Creativity‑CHR)](25-c-17---characterising-generative-novelty-value.md) (727 lines) — Status. Mechanism specification (CHR) — normative where stated.
+- [C.17 - Characterising Generative Novelty and Value](25-c-17---characterising-generative-novelty-and-value.md) (403 lines) — Status. Evaluation and measurement-use pattern; normative where stated.
 - [C.18 - Open-Ended Search Archive and Front Stewardship](26-c-18---open-ended-search-archive-and-front-stewardship.md) (279 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
 - [C.18.1 - Scaling‑Law Lens Binding (SLL)](27-c-18-1---scaling-law-lens-binding.md) (135 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale, budget, data, model capacity, iteration budget, freedom...
-- [C.19 - Explore-Exploit Live-Pool Governor](28-c-19---explore-exploit-live-pool-governor.md) (376 lines) — Normativity: Normative
+- [C.19 - Explore-Exploit Live-Pool Governor](28-c-19---explore-exploit-live-pool-governor.md) (379 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](29-c-19-1---bitter-lesson-preference.md) (141 lines) — One‑screen purpose (manager‑first).
 - [C.19.2 - Use-Bounded Apparatus Application](30-c-19-2---use-bounded-apparatus-application.md) (169 lines) — Type: Architectural (A)
 - [C.20 - Composition of U.Discipline (Discipline-CAL)](31-c-20---composition-of-u-discipline.md) (358 lines) — U.Discipline is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate...
