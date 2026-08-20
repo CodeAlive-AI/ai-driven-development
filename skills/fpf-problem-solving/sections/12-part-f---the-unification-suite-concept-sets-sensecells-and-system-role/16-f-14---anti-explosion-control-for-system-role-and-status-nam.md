@@ -1,5 +1,4 @@
 ## F.14 - Anti-Explosion Control for System-Role and Status Name Families
-> **Status:** Stable in the current FPF
 
 **"Name less; recover the governed values first."**
 
@@ -92,7 +91,10 @@ AntiExplosionControlRecord:
   CandidateExpressionRefs:
   RecoveredGovernedValueRefs:
   GovernedValueKindRefs:
-  SubjectPatternLocators:
+  PatternContributionByClaimOrValue:
+    - ClaimOrValueRef:
+      PatternRef:
+      Contribution: defines | constrains | tests
   ExistingDesignationOrAliasRefs:
   LocalSenseRefsOrCellRefs?:
   LocalSenseBasisRelationRefs?:
@@ -121,7 +123,7 @@ The record describes the control result. It creates no governed value, naming de
 | `SeniorReviewer` | a proposed system-role-kind name that may hide a qualifier, assignment-state condition, capability, or assurance claim | A.2, A.2.2, A.2.5, B.3, F.18 |
 | `RequestApproverSystemRole` | system-role-kind bundle expression or forbidden fused kind | A.2.7, F.8 |
 | `AtRisk`, `Grace`, `PreValidated` | status value, window, confidence, or presentation label | F.10 or direct status pattern |
-| `EvidenceRole`, `RequirementRole`, `AccessRole` | evidence use, requirement use, access or policy use, or source use | A.10, E.10.D2, and the exact access, policy, or source pattern |
+| `EvidenceRole`, `RequirementRole`, `AccessRole` | first recover the exact claim: evidence reliance, an actual assurance claim, ambiguous description use, publication occurrence or form, or a requirement, standard, source, access, or policy use | A.10 for evidence reliance; B.3 only for an actual assurance claim; E.10.D2 only to recover description-use ambiguity; E.24.PUB for publication occurrence, form, or carrier; otherwise the pattern that directly defines, constrains, or tests the recovered claim, or `missing-governor` |
 | same spelling under two local-sense bases | two designations or an exact F.9 relation question | F.18, F.9; F.17 only at its public-row threshold |
 
 #### F.14:7.2 - Reuse before minting
@@ -136,9 +138,9 @@ If two system-role kinds travel together, recover the exact A.2.7 bundle or qual
 
 If the proposed name marks evaluation, active use, grace, archival state, confidence, or presentation, keep the status family and use F.10 windows, values, or direct status-use relations. A new status family needs a recovered governed difference, not another adjective.
 
-#### F.14:7.5 - Keep qualifiers with their subject patterns
+#### F.14:7.5 - Keep qualifiers with the claims they qualify
 
-Time, location, object type, seniority, permission, Method, capability, evidence, source, and publication are not system-role-kind or status identity by suffix. Keep each qualifier with its direct pattern. Retain it in a durable name only when the already governed value and the named use genuinely require that designation.
+Time, location, object type, seniority, permission, Method, capability, evidence, source, and publication are not system-role-kind or status identity by suffix. Keep a qualifier with the claim it qualifies and use the pattern that defines, constrains, or tests that claim. Retain the qualifier in a durable name only when the already governed value and named use genuinely require that designation.
 
 #### F.14:7.6 - Stop before a naming-object cascade
 
@@ -146,7 +148,7 @@ A candidate can justify one object without justifying all later objects. A durab
 
 ### F.14:8 - Invariants
 
-1. **Governed value first.** No durable naming object is added until the exact value or relation, kind, subject pattern, and proposed use are recoverable.
+1. **Governed value first.** No durable naming object is added until the exact value or relation, kind, proposed use, and the pattern contribution that defines, constrains, or tests each needed claim are recoverable.
 2. **Lightest sufficient disposition.** Prefer the dispositions `no durable name`, existing designation, alias, or local expression whenever one supports the use without hiding a distinction.
 3. **No status roles.** Status, evidence, requirement, source, publication, and access uses do not become system-role kinds by suffix.
 4. **No assignment by name.** A designation, `SystemRoleKindDescription`, system-role-kind relation expression, card, cell, or row assigns no system and proves no Work.
@@ -176,7 +178,7 @@ systemRoleKindBundleRelation(K1, K2) obtains
 
 ```text
 statusVariant(S, windowOrValue)
-  -> keep status family S unless its subject pattern establishes a different family.
+  -> keep status family S unless the pattern that defines the status claim establishes a different family.
 ```
 
 ```text
@@ -197,9 +199,11 @@ These are stopping and dispatch rules. They create no values or relation occurre
 
 Candidate family: `RequesterSystemRole`, `ApproverSystemRole`, `RequestApproverSystemRole`, `SeniorApprover`.
 
-Result:
+Premise: the local practice has already admitted `RequesterSystemRole` and `ApproverSystemRole` as exact local system-role kinds under A.2 with C.3. If that independent basis is absent, the case returns two candidates whose kind status is unresolved; the spellings do not admit them.
 
-* `RequesterSystemRole` and `ApproverSystemRole` are exact local system-role kinds with separate `SystemRoleKindDescription` epistemes when descriptions are needed.
+Result after that premise:
+
+* Reuse the two admitted kinds and keep separate `SystemRoleKindDescription` epistemes only when descriptions are needed.
 * `RequestApproverSystemRole` is blocked as a fused kind. Use an A.2.7 bundle relation when the two kinds travel together.
 * If the same holder must not carry both assignments in the same change window, use the A.2.7 incompatibility relation. Recover the two assignment occurrences through A.2.1 and any applicable A.2.5 currentness condition. Use F.6 only if a separate claim says that dated Work was performed under one of them.
 * `SeniorApprover` is not proof of independence or assurance. Recover the intended local system-role kind, exact assignment-state predicate or relation, capability, assurance, or policy claim before durable naming.
@@ -208,10 +212,12 @@ Result:
 
 Candidate family: `OperatorSystemRole`, `NightOperatorSystemRole`, `RemoteOperatorSystemRole`, `OnCallOperatorSystemRole`.
 
-Result:
+Premise: A.2 with C.3 has independently admitted `OperatorSystemRole` as an exact local system-role kind. Without that basis, `OperatorSystemRole` is still a candidate name and the case makes no kind claim.
 
-* `OperatorSystemRole` is the exact local system-role kind.
-* `night`, `remote`, and `on-call` are source qualifiers whose governed conditions must be recovered—for example, a schedule, location relation, `SystemRoleAssignmentStatePredicate`, WorkPlan, or policy condition.
+Result after that premise:
+
+* Reuse the admitted `OperatorSystemRole` kind.
+* `night`, `remote`, and `on-call` are qualifiers in the proposed wording. Recover the claim each qualifies—for example, a schedule, location relation, `SystemRoleAssignmentStatePredicate`, WorkPlan, or policy condition—and use the pattern that defines, constrains, or tests that claim.
 * A new system-role kind is blocked unless A.2 with C.3 independently admits a distinct local kind from its bounded work-facing contribution identity and a non-circular `KindSignature`. Its criterion may use, for example, a capability, Work, or an assignment established separately, but assignment conditions, a Method, and Work implications are not universal requirements. The naming ReferenceScheme does not create the kind or its difference.
 
 #### F.14:10.3 - SLO compliance labels
@@ -231,7 +237,7 @@ Candidate family: `EvidenceRole`, `RequirementRole`, `StandardRole`, `SourceRole
 Result:
 
 * No work-facing system-role kind is recovered from suffix alone.
-* Evidence, requirement, standard, source, and publication uses go to A.10, B.3, E.10.D2, E.24.PUB, or the direct requirement or source pattern.
+* Route each recovered claim separately: bounded evidence reliance goes to A.10; an actual named assurance claim goes to B.3; description-use ambiguity goes to E.10.D2 for recovery only; and publication occurrence, form, or carrier goes to E.24.PUB. A requirement, standard, source, access, or policy use goes to the pattern that directly defines, constrains, or tests that exact claim. If none exists, return `missing-governor`.
 * A durable name may be admitted for the recovered relation, but not as a local system-role kind.
 
 #### F.14:10.5 - Same spelling across two local-sense bases
@@ -257,7 +263,7 @@ Result:
 | --- | --- | --- | --- |
 | AP-1 | Hybrid-system-role minting | `RequestApproverSystemRole` becomes one kind. | Use exact A.2.7 relations; admit a new kind only under A.2 with C.3 and later naming gates. |
 | AP-2 | Modifier-as-system-role | Every circumstance yields `NightOperatorSystemRole` or `RemoteOperatorSystemRole`. | Recover schedule, location, state, plan, or policy qualifier. |
-| AP-3 | Status or evidence role | `ReadyReviewerSystemRole` or `EvidenceRole` becomes a system-role family. | Use F.10 for status, A.10 or B.3 for evidence use, E.10.D2 for description use, or the pattern that defines, constrains, or tests the recovered claim. |
+| AP-3 | Status or evidence role | `ReadyReviewerSystemRole` or `EvidenceRole` becomes a system-role family. | Use F.10 for the recovered status claim. Route bounded evidence reliance to A.10, an actual assurance claim to B.3, description-use ambiguity to E.10.D2 for recovery only, and publication occurrence, form, or carrier to E.24.PUB. Route every other recovered requirement, standard, source, access, or policy claim to its direct pattern, or return `missing-governor`. |
 | AP-4 | Prestige bypass | `SeniorReviewer` substitutes for assurance or separation. | Keep the system-role kind fixed and recover capability, state, assurance, policy, or assignment checks. |
 | AP-5 | Row duplication | Another row is added for an already admitted name and use. | Reuse the exact row within its admitted use; retain old wording as lineage when useful. |
 | AP-6 | Assignment hidden in a name | `AliceReviewerSystemRole` looks like a kind but encodes one assigned system. | Use A.2.1 to recover the exact assignment occurrence. Use F.6 only when a separate claim attributes dated Work to that assignment; keep the local system-role kind separate. |
@@ -296,15 +302,16 @@ Reopen only the affected naming use when candidate expressions grow faster than 
 
 ### F.14:15 - SoTA-Echoing
 
-F.14 does not import access-control, terminology, or status taxonomies as FPF ontology. It adopts their shared practical discipline: separate the governed value, designation, assignment, permission, status, evidence, publication, and currentness before making a durable name.
+F.14 does not import access-control, terminology, credential, or modeling-language taxonomies as FPF ontology. It uses the sources below only where they change the anti-explosion rule.
 
-| Current pressure | Practice line | F.14 adoption |
-| --- | --- | --- |
-| System-role-kind labels are too weak for authorization, Work attribution, or capability. | RBAC, ABAC, zero-trust, and policy-as-code separate attributes, policy decision, resource action, and evidence. | Keep the kind name separate from the assigned system, capability, permission, policy, and Work. |
-| Terminology practice distinguishes values or concepts, designations, local senses, records, and mappings. | Shared spelling is insufficient for identity or semantic equivalence. | Recover the value first; prefer light dispositions; use F.9, F.17, or F.18 only at their exact triggers. |
-| Status dashboards often hide criteria. | Monitoring and assurance separate indicator, threshold, time window, status, evidence, decision, and display. | Keep status and presentation objects separate and use its subject pattern for each claim. |
+| Anti-explosion question | Exact source and source-use status | Adoption or rejection in F.14 | Currentness and reopen condition |
+|---|---|---|---|
+| Why is a system-role-kind label insufficient for authorization? | Rose et al., NIST [SP 800-207, *Zero Trust Architecture*](https://doi.org/10.6028/NIST.SP.800-207) (2020), is a **current security-architecture reference** that separates a subject's access to a resource, policy decision, policy administration, and policy enforcement. | **Adapt the separation.** Keep the kind name, assigned System, request, requested resource and action, policy decision, permission, and Work distinct. Reject authorization, capability, or trust inferred from a system-role-kind label. | Reopen when NIST replaces SP 800-207 or a stronger authorization architecture changes the separation among subject, policy, decision, and enforcement used by this rule. |
+| Why should role-like convenience names not replace an explicit policy relation? | Cutler et al., [*Cedar: A New Language for Expressive, Fast, Safe, and Analyzable Authorization*](https://arxiv.org/abs/2403.04651) (OOPSLA 2024 extended version), is a **current primary policy-language source** separating principal, action, resource, context, policy, and authorization decision while supporting role-, attribute-, and relation-based policies. | **Adapt only the explicit-policy lesson.** Recover the direct policy relation and its participants instead of minting a hybrid system-role kind. Reject importing Cedar entities, schema, or evaluator as FPF ontology. | Reopen if current policy-language practice shows that the explicit boundary between participants and policy no longer prevents the name explosion addressed here. |
+| Why must a governed value be recovered before a durable designation or family is minted? | [ISO 704:2022](https://www.iso.org/standard/79077.html) is a **current terminology standard** connecting objects, concepts, definitions, and designations. | **Adopt.** Recover the value and use first; then choose no durable name, an existing designation, a local expression, a NameCard, or a public row only at its own trigger. Reject shared spelling as value identity or semantic equivalence. | Reopen when ISO 704 or F.17 and F.18 change the distinction between a value and its designation or the publication threshold used here. |
+| Why are credential presentation, status, and relying use different from the governed value? | W3C [Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/) (2025) is a **current W3C Recommendation** separating issuer, subject, holder, verifier, credential, presentation, and credential status, and leaving authorization decisions outside the data model. | **Adapt.** Keep status, evidence, credential, view, verifier action, and relying decision distinct. Reject a suffix, badge, credential view, or dashboard row as a system-role kind, assignment, permission, assurance, or decision. | Reopen when the VC Recommendation or its status family changes the boundaries among presentation, status, and relying use applied in the worked cases. |
 
-SysML is intentionally not used as naming or ontology authority here. Its familiar role vocabulary does not establish a local system-role kind, assignment, capability, permission, Method, or Work.
+SysML is intentionally excluded from the positive SoTA basis and from lineage for this pattern. The official [OMG SysML 2.0 specification](https://www.omg.org/spec/SysML/2.0) (September 2025) is recorded only as a **rejected-popular comparison**: a modeling-language role spelling does not independently establish FPF's local system-role kind, classification, assignment, capability, permission, Method, or Work. Official status and popularity are not evidence for this anti-explosion question. Reopen that rejection only if demonstrated practice supplies a directly relevant, lower-cost kind-admission and assignment boundary that improves the F.14 cases.
 
 ### F.14:16 - Didactic distillation
 

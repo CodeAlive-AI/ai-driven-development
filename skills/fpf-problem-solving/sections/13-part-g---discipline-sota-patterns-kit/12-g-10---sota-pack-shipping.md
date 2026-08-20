@@ -242,20 +242,18 @@ All method‑/generator‑/interop‑specific shipping extension declarations li
 **GPatternExtensionId:** `QDArchiveShippingPins`
 **GPatternExtensionKind:** `MethodSpecific`
 **GoverningPatternId:** `C.18`
-**Uses:** `{C.18, G.5, G.8, G.11}`
+**Uses:** `{C.18, C.21, G.5, G.8, G.11}`
 **⊑/⊑⁺:** `∅`
 **RequiredPins/EditionPins/PolicyPins (minimum):**
 
 * `DescriptorMapRef.edition`
 * `DistanceDefRef.edition`
-* `DHCMethodRef.edition?`
-* `DHCMethodSpecRef.edition?`
+* active fields from C.21's DHC replay basis *(only when shipped archive telemetry consumes a C.21 DHC coordinate; carry exactly the fields used rather than a generic method-spec or metric-edition pin)*
 * `EmitterPolicyRef` *(policy‑id / ref)*
 * `InsertionPolicyRef` *(policy‑id / ref)*
 * `CharacteristicSpaceRef` *(id/ref; iff archive partitioning is declared)*
 * `CharacteristicSpaceRef.edition?` *(iff partitioning depends on an editioned space definition)*
 * `PathSliceId[]` *(to bind telemetry/refresh scope when archive behaviour is present)*
-
 **RSCRTriggerSetIds:** `∅` *(covered by `G.10` core linkage via `GCoreTriggerSetId.RefreshOrchestration`)*
 **Notes (shipping-pin discipline):**
 * This block never redefines archive semantics; it only states which pins must be present in the shipped pack when QD archive fields are present.
@@ -365,7 +363,7 @@ This pattern inherits order/illumination, evidence, and bridge/penalty legality 
 | --- | ----------- | -------------------------------- |
 | **CC‑G10‑CoreRef** | The pattern satisfies the **effective** `G.Core` obligations declared by `G.10:4.1` (after profile/set/pin‑set expansion under `Nil‑elision`). | Check that the linkage manifest is present and that the expanded obligations are not contradicted. |
 | **CC‑G10.1 (Notation‑independent).** | The pack MUST NOT rely on any specific file syntax; cards/tables are conceptual; tool serialisations are informative only. | Look for format‑free conceptual fields; any serialisation is explicitly non‑normative. |
-| **CC‑G10.2 (Pack parity pins).** | If QD/OEE fields are present, pin `DescriptorMapRef.edition`, `DistanceDefRef.edition`, (optional) `DHCMethodRef.edition` / `DHCMethodSpecRef.edition` when used, and (OEE) `TransferRulesRef.edition`; include `CharacteristicSpaceRef` (+ `CharacteristicSpaceRef.edition` when it affects partitioning reproducibility); for QD archive semantics also pin `EmitterPolicyRef` and `InsertionPolicyRef`. | Verify the corresponding `G.10:Ext.*` block is present and the pins appear in AuditPins and (when relevant) in telemetry pins. |
+| **CC‑G10.2 (Pack parity pins).** | If QD/OEE fields are present, pin `DescriptorMapRef.edition`, `DistanceDefRef.edition`, and (OEE) `TransferRulesRef.edition`; when a shipped field actually consumes a C.21 DHC coordinate, carry every active field of that coordinate's `DHCReplayBasis` instead of a generic method-spec or metric-edition pin. Include `CharacteristicSpaceRef` (+ `CharacteristicSpaceRef.edition` when it affects partitioning reproducibility); for QD archive semantics also pin `EmitterPolicyRef` and `InsertionPolicyRef`. | Verify the corresponding `G.10:Ext.*` block is present and the pins appear in AuditPins and (when relevant) in telemetry pins. |
 | **CC‑G10.3 (Telemetry discipline).** | Any illumination increase or archive edit SHALL log `PathSliceId`, the active `policy‑id`, the active editions of the pinned `…Ref` fields (incl. OEE `TransferRulesRef.edition`), and the active `EmitterPolicyRef`/`InsertionPolicyRef` when applicable. | Verify emitted telemetry is PathSlice‑keyed and carries the required pins; ensure causes are recorded using canonical trigger kinds (alias labels optional only). |
 | **CC‑G10.4 (UTS publication & twins).** | All shipped heads appear on UTS with Tech/Plain twins **per delegated UTS discipline**; cross‑Context identity (when present) is routed via Bridges with CL and loss notes **per delegated crossing discipline**. | Verify UTS rows exist and that any cross‑Context identity is routed via Bridge artefacts with visible CL/loss notes. |
 | **CC‑G10.5 (MOO surfaced in shipping).** | For every declared selector set-result or archive published, the pack SHALL list the applicable generation/parity mechanism ids (e.g., QD `EmitterPolicyRef`/`InsertionPolicyRef`, parity harness ids, method refs where the method definition is generative) and the active policy‑id(s) in SCR‑visible bindings and telemetry pins (ids only; governing-definition delegating). | Verify `MOOManifestId` is present when outcomes are intended for downstream use and does not redefine semantics. |

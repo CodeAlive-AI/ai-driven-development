@@ -18,9 +18,9 @@
 - [F.11 - Method Quartet Harmonisation](13-f-11---method-quartet-harmonisation.md) (226 lines) — “Ask separately about the way, its description, the Work that occurred, and any control output produced during that Work.”
 - [F.12 — Service Acceptance–Work Evidence Link](14-f-12-service-acceptance-work-evidence-link.md) (251 lines) — “Judge a promise from what happened, in a stated window, with evidence that actually bears on the promised outcome.”
 - [F.13 - Lexical Continuity & Deprecation](15-f-13---lexical-continuity-deprecation.md) (298 lines) — “Change names without changing history.”
-- [F.14 - Anti-Explosion Control for System-Role and Status Name Families](16-f-14---anti-explosion-control-for-system-role-and-status-nam.md) (314 lines) — Status: Stable in the current FPF
+- [F.14 - Anti-Explosion Control for System-Role and Status Name Families](16-f-14---anti-explosion-control-for-system-role-and-status-nam.md) (321 lines) — "Name less; recover the governed values first."
 - [F.15 - Static and Regression Conformance Harness for Unification](17-f-15---static-and-regression-conformance-harness-for-unifica.md) (476 lines) — "Prove locality and parsimony first; only then prove composition."
 - [F.16 - Worked-Example Template (Cross-Domain)](18-f-16---worked-example-template.md) (238 lines) — “Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”
 - [F.17 - Unified Term Sheet](19-f-17---unified-term-sheet.md) (1213 lines) — Type: Lexical row pattern (F)
 - [F.18 - Local-First Unification Naming Protocol](20-f-18---local-first-unification-naming-protocol.md) (837 lines) — Pattern state: stable pattern. Audience: engineer-managers, lead architects, ontology editors, and authors who must make one name reusable without turning that name into a hidden ontology.
-- [F.19 - Ontology-First Plain Technical Rewriting](21-f-19---ontology-first-plain-technical-rewriting.md) (255 lines) — Type: Plain-technical precision-restoration pattern
+- [F.19 - Ontology-First Plain Technical Rewriting](21-f-19---ontology-first-plain-technical-rewriting.md) (261 lines) — Type: Plain-technical precision-restoration pattern
