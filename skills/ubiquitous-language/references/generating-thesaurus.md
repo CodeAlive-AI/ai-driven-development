@@ -76,6 +76,10 @@ how many files are affected, and possible resolutions if obvious.
 ### Step 4: Write the thesaurus
 
 Write `THESAURUS.md` in the grep-first layout (Bootstrap Template below):
+- YAML frontmatter first: `thesaurus-format: "2.0"`, `skill: ubiquitous-language`
+- Keep the template's "Reconstructed, not authored" line in the header — this document
+  was mined from code, not written by domain experts; names are evidence, definitions are
+  reconstruction, and readers must know the difference
 - Active terms → one `## Index` line each **and** one `### Term` entry under `## Terms`
 - Synonyms, abbreviations, competing names → the `avoid:` list of their concept's line
 - Weasel words and jargon you actually saw in the code → `## Forbidden` lines
@@ -180,10 +184,21 @@ a module, not a bounded context.
 ### Bootstrap Template
 
 ```markdown
+---
+thesaurus-format: "2.0"
+skill: ubiquitous-language
+---
+
 # Project Thesaurus
 
 > Domain glossary following DDD ubiquitous language. Every name in code, APIs, docs,
 > and conversations comes from here. Add the term here BEFORE using it in code.
+>
+> **Reconstructed, not authored.** An AI agent mined this vocabulary from the codebase —
+> the names are evidence found in code and are binding; the definitions are a
+> reconstruction of what the code seems to mean and may be wrong until a domain expert
+> confirms them. Maintained by the `ubiquitous-language` skill
+> (https://github.com/CodeAlive-AI/ai-driven-development/tree/main/skills/ubiquitous-language).
 >
 > **How to use (grep-first):** `rg -n -i '<word>' THESAURUS.md` — the shape of the hit
 > line tells you what to do:
@@ -255,10 +270,16 @@ a module, not a bounded context.
 
 ## Migrating an Existing Thesaurus
 
-A file with `### Term` entries carrying `**Synonyms to AVOID**` lines but **no
-`## Index`** uses the pre-index layout; a file whose `## Index` is a Markdown table uses
-the first index layout. Migrate either in one pass — the content is the same, only the
-shape changes:
+Read the format stamp first: `rg -n '^thesaurus-format:' THESAURUS.md`. No stamp, or
+`1.x`, means **format 1.0** — `### Term` entries carrying `**Synonyms to AVOID**` lines,
+no `## Index`. An unstamped file that already has ``- **Term** `Id` kind: `` Index lines was
+written by plugin 9.2.0 — it is format 2.0, only step 0 applies. (An unstamped file whose
+`## Index` is a Markdown table is an interim pre-2.0 draft; migrate it like 1.0.) Migrate in one pass — the content is the same,
+only the shape changes:
+
+0. **Stamp** the result: YAML frontmatter at the top of the file —
+   `thesaurus-format: "2.0"`, `skill: ubiquitous-language`
+   (replace an older stamp if present; merge into existing frontmatter if the file has any).
 
 1. **Build the Index lines** from the entries (or table rows): Term = header text;
    Identifier = PascalCase of the term (or the name the code actually uses — grep to
@@ -274,6 +295,17 @@ shape changes:
    `ctx:X` on the Index lines; a Bridges table → one line per bridge with a SKOS mapping.
 6. **Check the registry invariant** (see the audit's Check 0) and show the user the
    diff before writing — migration must not change a single definition.
+
+### Format history
+
+| Format | Skill | What changed |
+|--------|-------|--------------|
+| 1.0 | ≤ 1.x (plugin ≤ 9.1.1) | Prose entries with `Synonyms to AVOID`, `## Legacy Terms` entries, `## Forbidden Lexicon` table; no stamp |
+| 2.0 | 2.0.0 (plugin 9.3.0) | Grep-first: `## Index` lines (`kind:` `ctx:` `avoid:`), `use:` Forbidden lines, `→` Legacy lines, SKOS bridge mappings, format stamp |
+
+Bump the format **major** only when 1.x readers would misparse the file (a changed line
+grammar or section set). Adding an optional token is a **minor** bump: stamp `2.1`, keep
+every 2.0 line valid.
 
 ## Polysemy Unpacking
 

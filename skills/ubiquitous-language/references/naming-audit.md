@@ -51,8 +51,13 @@ a broken registry makes every later check lie.
   `Broader` chains have no cycles (A broader B broader A).
 - **Bridges vocabulary**: every bridge's mapping is one of
   `exactMatch` `closeMatch` `broadMatch` `narrowMatch` `relatedMatch` `distinct`.
-- **Old layout**: no `## Index`, or an Index written as a Markdown table → stop and offer
-  migration (see generating-thesaurus.md "Migrating an Existing Thesaurus").
+- **Format stamp**: `rg -n '^thesaurus-format:'` must return exactly one line, inside the
+  YAML frontmatter at the top of the file, with a quoted `2.x` version. Missing/`1.x` → stop and offer migration (see
+  generating-thesaurus.md "Migrating an Existing Thesaurus"); missing but the Index is
+  already in 2.0 line grammar → just add the stamp and continue. Stamp says `2.x` but the
+  file still has `Synonyms to AVOID` lines or a table Index → stamp lies; report it.
+  A stamp newer than this skill's `thesaurus-format` → read-only audit; tell the user to
+  update the skill.
 
 **Severity: HIGH** — thesaurus cannot be trusted until fixed.
 

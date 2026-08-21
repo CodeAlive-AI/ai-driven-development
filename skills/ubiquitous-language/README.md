@@ -24,8 +24,8 @@ Three modes:
 
 | Mode | When | What loads |
 |------|------|-----------|
-| **Naming consultation** | Every time the agent names anything | `SKILL.md` (~495 lines) |
-| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (~470 lines) |
+| **Naming consultation** | Every time the agent names anything | `SKILL.md` (~525 lines) |
+| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (~485 lines) |
 | **Naming audit** | User asks to check naming consistency | `references/naming-audit.md` (~270 lines) |
 
 ### Naming consultation (frequent)
@@ -148,6 +148,14 @@ The layout is a plain-Markdown projection of a SKOS concept scheme (ISO 25964-co
 | Unresolved → Index → Legacy | concept status: candidate → approved → deprecated |
 
 Deliberately not borrowed: `ConceptScheme`/`Collection`, facets, OWL axioms, RDF serialisation — `kind:`/`ctx:` and prose `NOT` cover the need without the weight.
+
+## Versioning
+
+- **Skill**: `metadata.version` in `SKILL.md` frontmatter (semver). Current: **2.0.0**.
+- **Thesaurus format**: stamped in every `THESAURUS.md` as YAML frontmatter —
+  `thesaurus-format: "2.0"`, `skill: ubiquitous-language`. One `rg '^thesaurus-format:'` tells an agent which grammar to expect; a missing key means format 1.0 (the pre-index prose layout).
+- Format major = skill major. The skill reads any format ≤ its own and writes only the current one; a major gap triggers the one-pass migration, a minor gap only adds optional tokens.
+- Format history lives in `references/generating-thesaurus.md` → "Format history".
 
 ## File structure
 

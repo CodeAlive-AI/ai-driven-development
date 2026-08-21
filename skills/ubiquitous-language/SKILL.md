@@ -10,6 +10,9 @@ description: |
   the codebase are consistent, descriptive, and aligned with the shared domain
   vocabulary. Not for general code style or linting — only for domain term
   consistency.
+metadata:
+  version: "2.0.0"
+  thesaurus-format: "2.0"
 allowed-tools:
   - Read
   - Write
@@ -67,6 +70,42 @@ exists only in experts' heads, not in any artifact.
 3. Default: `docs/THESAURUS.md`
 
 Single source of truth for domain vocabulary.
+
+### Versioning
+
+The thesaurus declares its **format version** and the skill that maintains it in YAML
+frontmatter — machine-readable, outside the body, still one grep away:
+
+```markdown
+---
+thesaurus-format: "2.0"
+skill: ubiquitous-language
+---
+
+# Project Thesaurus
+```
+
+Quote the version — unquoted `2.10` is the YAML float `2.1`.
+
+- `rg -n '^thesaurus-format:' THESAURUS.md` → the version in one hit. **No key = 1.0**
+  (the pre-index prose layout shipped before skill 2.0) — unless the file already has
+  ``- **Term** `Id` kind: `` Index lines: that is an unstamped 2.0 file from plugin 9.2.0;
+  just add the stamp.
+- Format major = skill major (`metadata.version` in this file's frontmatter). Skill
+  minor/patch releases never change the format.
+- **Read** any format ≤ your own; **write** only the current one. A major gap means
+  migration first (see generating-thesaurus.md); a minor gap means new optional tokens —
+  older readers keep working, you may add the tokens as you touch lines.
+- A thesaurus with a format **newer** than yours: read it, don't rewrite it — tell the user
+  to update the skill.
+- Only the format is versioned in the file. The skill's own version is not recorded there —
+  it would go stale on every edit and `git log` already answers "who wrote this". `skill:`
+  is a pointer, so an agent without the skill knows what to install.
+
+| Format | Layout | Skill |
+|--------|--------|-------|
+| 1.0 | `### Term` entries with `Synonyms to AVOID`; `## Legacy Terms` entries; `## Forbidden Lexicon` table | ≤ 1.x (plugin ≤ 9.1.1) |
+| 2.0 | grep-first: `## Index` lines with `kind:`/`ctx:`/`avoid:`, `use:` Forbidden lines, `→` Legacy lines, SKOS bridges | 2.x |
 
 ### Layout: grep-first
 
@@ -193,6 +232,8 @@ actually speak. The **Identifier** carries the code form:
 don't need a new term — the right name is already there.
 
 1. **Locate** the thesaurus (see above). If absent, tell the user and offer generation.
+   Check `rg -n '^thesaurus-format:'` — no key or `1.x` means the old layout: the
+   protocol below still works by plain text search, but offer migration once, up front.
 2. **Read the Index** if it has ≤ ~60 lines — it is the entire vocabulary at one line
    per concept, cheaper than any search. For larger files, search instead.
 3. **Search every candidate name** you are considering, plus whatever the surrounding
@@ -475,8 +516,8 @@ When changing terms, use the **least strong** relation that tells the truth (fro
 likely encounter in old code. **Registry invariant** still holds after every edit: a name
 is under `avoid:` *or* in Legacy, never both.
 
-**Old layout?** If the file has `### Term` entries with `Synonyms to AVOID` lines but no
-`## Index`, it predates this layout — see "Migrating an existing thesaurus" in
+**Old layout?** No `thesaurus-format` frontmatter key (or `1.x`) means the pre-index prose layout —
+see "Migrating an Existing Thesaurus" in
 [references/generating-thesaurus.md](references/generating-thesaurus.md).
 
 ## Quick Checklist Before Naming Anything
