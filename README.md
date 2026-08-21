@@ -85,7 +85,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 |-------|--------------|
 | [semantic-scholar-deep](skills/semantic-scholar-deep/) | Deep research over the Semantic Scholar Graph API — backward references, recommendations, batch lookup (up to 500 IDs), multi-hop citation-graph BFS, snippet search. Ships with an optional paired subagent for token-isolated literature reviews |
 | [fetch-url-as-markdown](skills/fetch-url-as-markdown/) | URL → clean Markdown via local trafilatura (real-browser UA, anti-stub guards, structured exit codes), with Exa MCP as a fallback for JS-rendered or anti-bot pages. Drop-in replacement for built-in WebFetch |
-| [ubiquitous-language](skills/ubiquitous-language/) | Domain thesaurus manager — DDD naming consistency, thesaurus generation, naming audit |
+| [ubiquitous-language](skills/ubiquitous-language/) | Domain thesaurus manager — DDD naming consistency, thesaurus generation, naming audit, git-history mining for naming ambiguities |
 
 ### Multi-agent orchestration (1)
 

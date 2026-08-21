@@ -16,17 +16,19 @@ After installing, try these in your project:
 > Create a domain thesaurus for this project
 > What should I call the entity that tracks user payments?
 > Audit naming consistency in this codebase
+> Resolve the unresolved naming issues using the git history
 ```
 
 ## What it does
 
-Three modes:
+Four modes:
 
 | Mode | When | What loads |
 |------|------|-----------|
-| **Naming consultation** | Every time the agent names anything | `SKILL.md` (~525 lines) |
-| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (~485 lines) |
-| **Naming audit** | User asks to check naming consistency | `references/naming-audit.md` (~270 lines) |
+| **Naming consultation** | Every time the agent names anything | `SKILL.md` (~590 lines) |
+| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (~540 lines) |
+| **Naming audit** | User asks to check naming consistency | `references/naming-audit.md` (~280 lines) |
+| **History mining** (optional) | Unresolved naming ambiguities need evidence | `references/git-history-mining.md` (~425 lines) + `scripts/git_term_index.py` (~1310 lines) |
 
 ### Naming consultation (frequent)
 
@@ -65,6 +67,95 @@ rg -n '^### Order( \(|$)'    # the entry itself
 
 Scans high-signal structural files (DB schemas, API contracts, domain layer, directory structure) to extract domain terms. Separates active from legacy/obsolete terms. Collects ambiguities into an `## Unresolved` section, then surfaces them to the user for resolution. Updates agent instruction files (`CLAUDE.md`, `GEMINI.md`, etc.) so the thesaurus is used even without the skill installed.
 
+### History mining (optional, offered at the end of generation)
+
+The `## Unresolved` section is the honest part of a mined thesaurus — the questions the
+current tree cannot answer. Git history often can. After generation (and after an audit),
+the skill **offers** to build a throwaway index of the repository's history and come back
+with evidence-backed proposals per unresolved item.
+
+```bash
+python3 scripts/git_term_index.py build --repo-dir . --content
+python3 scripts/git_term_index.py query Account Customer
+python3 scripts/git_term_index.py pair User Customer
+python3 scripts/git_term_index.py contexts Account
+python3 scripts/git_term_index.py search 'rename account'
+python3 scripts/git_term_index.py clean
+```
+
+The index is dependency-free Python 3.9+ (stdlib `sqlite3`, only `git` required) and lives
+as a single SQLite file in `$TMPDIR`, **never in the working tree**. Commit messages go into
+an FTS5 table so message search is ranked by **BM25 relevance**, not recency; identifiers
+from every added/removed diff line go into an `identifier × commit × file` table with
+add/delete counts. Each identifier carries a casing-independent normal form, so
+`OrderLineItem`, `order_line_item` and `ORDER_LINE_ITEM` are one concept — which is what
+makes a PascalCase thesaurus Identifier findable in a snake_case codebase.
+
+**Per-file granularity is what makes the common case answerable.** One commit touches many
+files, so commit-level co-occurrence cannot localise a name (measured: one identifier's
+directory distribution was 74% "wherever the code is"). With per-file rows the tool answers
+the flagship `## Unresolved` question — `Account` in `billing/` vs `auth/` — directly:
+`contexts Account` shows the directory split, and `pair` reports `files: A in N, B in M,
+both in K`. `both in 0` is evidence for two bounded contexts; shared files mean synonym
+drift. It also sharpens renames: an exchange **inside one file** outranks "both names
+appear somewhere in one commit".
+
+**The whole diff history is indexed, not a recent window** — that is the difference between
+"born" and "first seen in the last N commits". Measured: git.git's full 21-year history
+builds in 111 s (232 MB), kubernetes' 12 years / 82 704 commits in 249 s (1 040 MB); queries
+then run in 0.1–1.3 s. Walking history per-term with `git log -S` instead costs 4 s per term on
+git.git and 84–98 s per term on kubernetes.
+
+What that buys per ambiguity: **birth** (which spelling is the incumbent, and what the
+introducing commit said), **dormancy** (nothing has touched this name in years → retired
+vocabulary), **trajectory** (deletions ≫ additions = being phased out), **ranked swap
+commits** (the commits that remove one name while adding the other, strongest exchange
+first — these are the renames), **the path split** (do any files contain
+both names? which directories does each occupy? — the bounded-context signal), and **stated
+intent** from BM25-ranked messages and PR references.
+
+`pair` ends in one labelled verdict — **RENAME (strong / probable / possible)**, **DRIFT**,
+**NOT A RENAME**, or **COEXISTENCE** — with the direction inferred from the evidence rather
+than from argument order.
+
+**The thresholds behind those labels were set by falsification, not taste.** Every one was
+added after a measured false positive on a real repository:
+
+| Rule | The false positive that forced it |
+|------|-----------------------------------|
+| A swap needs a **net** exchange (≥3 each way), not any deletion + any addition | 105 of 174 commits touching two unrelated integrations were labelled rename candidates — including commits where *both* names were net-removed |
+| Identifiers carry a casing-independent **normal form** | `query OrderLineItem` returned "never appears" on a snake_case repo — a false negative on the skill's own canonical input, since thesaurus Identifiers are PascalCase |
+| Comparing two names uses **concepts, not families** | the `Account` set contained `BillingAccount`, so its additions cancelled `Account`'s deletions and masked the exchange |
+| Exchanges must clear a **noise floor** (≥2 commits and ≥5% of shared commits) | `bisect`/`rebase` in git.git: 2 exchanges in 145 shared commits read as "drift" |
+| Same-file exchanges clear a lower bar, but still a bar | making any same-file swap sufficient put `bisect`/`rebase` straight back to RENAME on 2 swaps in 111 commits |
+| A rename announcement must name **both** sides | "Rename Telegram meeting wrapper" certified `club` → `meeting` |
+| Dormancy measured from **last growth**, not last touch | git.git's `get_sha1` was last *touched* in 2026 by a commit deleting a stale comment; last *grown* in 2017 |
+| Locale and changelog files excluded | `.po` files made "l10n: zh_CN …" the top rename candidate for unrelated terms |
+
+Measured after those fixes: **18 negative controls across three repositories → zero false
+rename verdicts** (the worst of them reaches 6 same-file exchanges in 1 193 shared commits
+and no naming subject), while every known rename — including kubernetes' `Minion`→`Node`,
+which lands with 35 same-file swaps and 6 announcing subjects — still lands as RENAME — strong.
+
+Other defaults from measurement: HEAD only (side branches carry release notes and imported
+trees — on git.git, `--all` dated `oid_array` to a status email three days before the actual
+rename commit), vendored/generated/minified paths excluded, merges excluded. Shallow clones,
+truncated windows, and names present in the oldest indexed commit are each flagged in every
+report rather than silently producing a confident wrong date.
+
+**Known limits, stated in the skill:** `pair` compares identifiers, so a rename that only
+moved files surfaces in `query`'s file-renames section instead; and polysemy — one word
+meaning two things in two modules, the most common real `## Unresolved` entry — is the
+weakest case for history mining, which will honestly return COEXISTENCE and leave the
+decision to the user.
+
+Findings are reported in one batch with a confidence level and the commits behind each
+proposal; nothing is applied until the user approves, and each applied decision cites its
+commit (`— renamed in a41f2c9` on the Legacy line, or a `- **History**:` entry line).
+History is treated as evidence of what happened, never as authority on what a term should
+be — it ranks candidates, the user decides. Squashed imports, shallow clones, bulk
+reformatting commits, and vendored code are called out as the failure modes they are.
+
 ### Naming audit (periodic)
 
 9-check protocol: thesaurus integrity (registry invariant, Index ↔ Terms), synonym violations, forbidden words, technical jargon leaks, synonym drift, polysemy, translation chains, abbreviation inconsistency, orphan terms. The Index is the audit's work-list. Produces a structured report grouped by severity (Critical / Warning / Info) with recommended fix priority.
@@ -77,6 +168,7 @@ Scans high-signal structural files (DB schemas, API contracts, domain layer, dir
 - **Forbidden list** (lexical firewall) — maintained list of words banned from the domain layer (weasel words, implementation details)
 - **Polysemy unpacking** — detects overloaded terms and forces disambiguation into explicit facets
 - **Cross-context bridges** — when bounded contexts exist, one line per bridge with a SKOS mapping (`exactMatch` … `relatedMatch`, `distinct`) and loss notes
+- **Git-history mining for ambiguities** — a throwaway SQLite index (built outside the repo, deleted after) over the *full* diff history: BM25-ranked commit messages, renames, and every identifier's birth, dormancy and swap commits; proposes rename / deprecate / two-concepts / drift verdicts with citations and confidence, never silently
 - **Legacy term tracking** — continuity relations (rename/split/merge/retire/deprecate) with alias parsimony
 - **Framework-aware** — doesn't fight Active Record patterns; distinguishes domain noun from framework coupling
 - **Language-agnostic** — works with any programming language, no framework-specific rules
@@ -130,6 +222,8 @@ The skill was reviewed by external AI agents (OpenAI Codex CLI / GPT-5.4 and Goo
 - **Flat-first thesaurus**: bounded contexts are opt-in, not default — the agent cannot reliably determine context boundaries, so it surfaces evidence and asks the user
 - **Unresolved section**: ambiguities collected during scanning, surfaced as a batch after file creation — no blocking questions during generation
 - **Agent instruction updates**: after creating the thesaurus, the skill updates CLAUDE.md/GEMINI.md/etc. so the thesaurus works even without the skill installed
+- **History as evidence, not authority**: mining is an *offer* made after the Unresolved list is shown, not an automatic step, and it produces ranked hypotheses with commit citations — the user still makes every call. The index is deliberately throwaway (temp dir, one command to delete) rather than a committed artifact: it is derived data, it goes stale on the next commit, and nothing in a repository should be generated into the working tree
+- **No format change**: history provenance rides in existing free-text — the note tail of a `## Legacy` line, or an optional `- **History**:` entry line — so `thesaurus-format` stays `2.0` and no migration is needed
 
 ## Standards alignment
 
@@ -151,7 +245,7 @@ Deliberately not borrowed: `ConceptScheme`/`Collection`, facets, OWL axioms, RDF
 
 ## Versioning
 
-- **Skill**: `metadata.version` in `SKILL.md` frontmatter (semver). Current: **2.0.0**.
+- **Skill**: `metadata.version` in `SKILL.md` frontmatter (semver). Current: **2.1.0**.
 - **Thesaurus format**: stamped in every `THESAURUS.md` as YAML frontmatter —
   `thesaurus-format: "2.0"`, `skill: ubiquitous-language`. One `rg '^thesaurus-format:'` tells an agent which grammar to expect; a missing key means format 1.0 (the pre-index prose layout).
 - Format major = skill major. The skill reads any format ≤ its own and writes only the current one; a major gap triggers the one-pass migration, a minor gap only adds optional tokens.
@@ -163,9 +257,12 @@ Deliberately not borrowed: `ConceptScheme`/`Collection`, facets, OWL axioms, RDF
 ubiquitous-language/
 ├── SKILL.md                         # Naming consultation (loaded on every trigger)
 ├── README.md                        # This file
-└── references/
-    ├── generating-thesaurus.md      # Thesaurus generation workflow
-    └── naming-audit.md             # 9-check naming audit protocol
+├── references/
+│   ├── generating-thesaurus.md      # Thesaurus generation workflow
+│   ├── naming-audit.md              # 9-check naming audit protocol
+│   └── git-history-mining.md        # Resolving `## Unresolved` items from git history
+└── scripts/
+    └── git_term_index.py            # Throwaway SQLite/FTS5 history index (build/query/pair/contexts/search/clean)
 ```
 
 ## License

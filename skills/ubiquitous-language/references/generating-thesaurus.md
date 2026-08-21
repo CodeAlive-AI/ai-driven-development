@@ -93,8 +93,8 @@ line — Index line, Forbidden line, Legacy line, or Unresolved header. A name t
 under `avoid:` and in Legacy, or has an entry but no Index line, is a defect.
 
 **Start with a flat thesaurus** — no `ctx:` tokens, no context sections. Most
-projects don't need context separation. Only introduce bounded contexts later if Step 5
-reveals genuine polysemy.
+projects don't need context separation. Only introduce bounded contexts later if Step 6
+or Step 8 reveals genuine polysemy.
 
 ### Step 5: Surface unresolved issues
 
@@ -121,7 +121,45 @@ Which would you like to resolve first?
 As the user resolves each item, promote it from `## Unresolved` to an Index line + entry
 (or a `## Legacy` line). Items the user defers stay as documented naming debt.
 
-### Step 6: Update project instructions
+**Then offer Step 6** — before the user starts answering item by item, offer to mine the
+git history first. Offer it once, as an option, never as a blocking question.
+
+### Step 6 (optional): Resolve ambiguities from git history
+
+**Offer this whenever `## Unresolved` is non-empty and the repo has real history.**
+It is the one step that can answer unresolved items *without* the user answering them:
+git history records which name came first, which one replaced which, and which is dying.
+
+Ask, don't assume:
+
+```
+5 unresolved naming issues remain. Before you answer them one by one, I can mine the
+git history — when each name was born, which replaced which, which is growing vs dying.
+It builds a temporary index outside the repo (~1-3 min here, deleted afterwards) and
+comes back with evidence-backed proposals per item. Want me to try that first?
+```
+
+Skip the offer when the repo has < ~50 commits, has no `.git`, starts from a squashed
+import, or when the unresolved items are `[WHITE-SPOT]` tags (a concept nobody has named
+yet leaves no trace in history).
+
+If the user accepts, read [git-history-mining.md](git-history-mining.md) and follow its
+protocol. In short:
+
+1. `python3 scripts/git_term_index.py build --repo-dir . --content` — a throwaway index of
+   commit messages, paths, renames, and diff-level identifiers, written to `$TMPDIR`,
+   never into the working tree.
+2. `query` each candidate name and `pair` the competing ones; confirm the few decisive
+   commits with `git show` / `git log -S`.
+3. Report one batch of **proposals with citations and confidence** — never silent edits.
+4. Apply only what the user approves; cite the commit in the Legacy note or an entry
+   `- **History**:` line; leave the rest in `## Unresolved` with what was ruled out.
+5. `python3 scripts/git_term_index.py clean` and say the index is gone.
+
+History is evidence of what happened, not authority on what the term *should* be. It
+ranks candidates; the user decides.
+
+### Step 7: Update project instructions
 
 **This step is mandatory** — the thesaurus is only useful if the agent knows about it.
 
@@ -156,7 +194,7 @@ one `## Index` line per concept — ``- **Term** `Identifier` kind:… avoid: `s
 This ensures every agent session — even without the ubiquitous-language skill installed —
 knows the thesaurus exists and should consult it.
 
-### Step 7 (optional): Detect polysemy
+### Step 8 (optional): Detect polysemy
 
 **Do NOT pre-assign bounded contexts.** The agent cannot reliably determine context
 boundaries — this is an architectural decision that requires deep domain knowledge.

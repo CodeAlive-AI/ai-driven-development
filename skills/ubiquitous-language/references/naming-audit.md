@@ -271,3 +271,8 @@ After running all 9 checks, present findings grouped by severity:
   registry invariant (a name lives under `avoid:` *or* Legacy *or* Forbidden, never two)
 - **If no thesaurus existed**: the audit findings ARE the input for thesaurus generation —
   feed them into the generating-thesaurus.md workflow
+- **Offer history mining** for the findings the code alone can't settle — synonym drift
+  clusters (Check 5), polysemy candidates (Check 6), and anything you had to file under
+  `## Unresolved`. Git history says which spelling came first, which commit replaced which,
+  and which one is dying: see [git-history-mining.md](git-history-mining.md). Offer it once,
+  as an option; skip it when the repo has no usable history
