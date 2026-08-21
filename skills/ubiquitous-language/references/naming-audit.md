@@ -14,32 +14,73 @@ This is a systematic protocol — run it top to bottom, report findings at the e
 
 - `THESAURUS.md` must exist. If it doesn't, run thesaurus generation first
   (see [generating-thesaurus.md](generating-thesaurus.md))
-- Read `THESAURUS.md` before starting
+- Read the `## Index` of `THESAURUS.md` before starting — it is the audit's work-list
 
 ## Audit Protocol
 
-Run all 8 checks. Collect findings without stopping. Present the full report at the end.
+Run all 9 checks. Collect findings without stopping. Present the full report at the end.
+
+The thesaurus's `## Index` is the work-list for most checks: each line gives the
+Identifier to look for and the `avoid:` names to look against. Extract it once:
+
+```bash
+# Index lines only
+awk '/^## Index/{f=1;next} /^## /{f=0} f && /^- \*\*/' docs/THESAURUS.md
+# one avoid-name per line, paired with its canonical Identifier
+awk '/^## Index/{f=1;next} /^## /{f=0} f && /avoid:/' docs/THESAURUS.md \
+  | sed -E 's/^- \*\*[^*]+\*\* `([^`]+)`.*avoid: (.*)$/\1\t\2/'
+```
+
+### Check 0: Thesaurus Integrity
+
+Before auditing code against the thesaurus, check the thesaurus against itself —
+a broken registry makes every later check lie.
+
+- **Index ↔ Terms**: every Index line has exactly one `### Term` header and vice versa.
+  Header count inside `## Terms` (not `## Unresolved`) must equal the Index line count:
+  `awk '/^## Terms/{f=1;next} /^## [^T]/{f=0} f && /^### /' THESAURUS.md | wc -l`
+- **Line grammar**: every Index line matches
+  ``^- \*\*[^*]+\*\* `[A-Z][A-Za-z0-9]*` kind:[a-z]+( ctx:[A-Za-z]+)?( avoid: .+)?$``;
+  Forbidden lines contain `` use: ``; Legacy lines contain `` → ``.
+- **Registry invariant**: no name appears in two registry lines. Collect all backticked
+  names from Index `avoid:` lists, `## Forbidden`, `## Legacy`; sort; report duplicates.
+  Also: no `avoid:` name equals another line's Identifier (SKOS: an altLabel is never
+  anyone's prefLabel).
+- **Anchor grammar**: every header under `## Terms` matches `^### [^(]+( \([^)]+\))?$`.
+- **Hierarchy sanity** (SKOS): the same pair is never both `Broader` and `Related`;
+  `Broader` chains have no cycles (A broader B broader A).
+- **Bridges vocabulary**: every bridge's mapping is one of
+  `exactMatch` `closeMatch` `broadMatch` `narrowMatch` `relatedMatch` `distinct`.
+- **Old layout**: no `## Index`, or an Index written as a Markdown table → stop and offer
+  migration (see generating-thesaurus.md "Migrating an Existing Thesaurus").
+
+**Severity: HIGH** — thesaurus cannot be trusted until fixed.
 
 ### Check 1: Synonym Violations
 
-For each term in the thesaurus, grep the codebase for its "Synonyms to AVOID":
+For each Index line, grep the codebase for every name in its `avoid:` list:
 
 ```
-For "Order" with AVOID: [Purchase, Transaction, Buy]
-→ grep -rn "purchase\|transaction\|buy" src/ --include="*.{ts,cs,py,java,go,rb}"
+Line: - **Order** `Order` kind:aggregate avoid: `Purchase`, `Transaction`, `Buy`
+→ rg -n -i -w 'purchase|transaction|buy' src/ -t ts -t cs -t py -t java -t go -t ruby
 → filter: only class names, method names, variable names, DB columns (not comments/strings)
 ```
 
+Report as: `<avoid name>` in `<file:line>` — Index says `<Identifier>`.
+
 **Severity: HIGH** — direct contradiction of the thesaurus.
 
-### Check 2: Weasel Words in Domain Layer
+### Check 2: Forbidden Words in Domain Layer
 
-Scan domain-layer code for forbidden terms from the Forbidden Lexicon:
+For each `## Forbidden` line, scan domain-layer code for the word:
 
 ```
-Scan for: Manager, Handler, Service (bare), Info, Data, Base, Util, Helper, Object, Obj, Record, Model
+Work-list: the backticked words of ## Forbidden (project-specific), plus the baseline
+  Manager, Handler, Service (bare), Info, Data, Base, Util, Helper, Object, Obj, Record, Model
 In: domain layer classes, interfaces, method names (NOT infrastructure layer)
 ```
+
+If a baseline word is hit but missing from `## Forbidden`, propose adding the line.
 
 **Severity: MEDIUM** — vague naming that hides domain concepts.
 
@@ -137,20 +178,25 @@ Scan for inconsistent forms of the same term:
 
 ### Check 8: Orphan Terms
 
-Check for terms in the thesaurus that no longer appear in code:
+Check for Index terms that no longer appear in code, and code concepts missing from the Index:
 
 ```
-For each thesaurus term → grep codebase
-If zero matches → term may be obsolete
+For each Index line → grep the codebase for the Identifier (also its snake_case form)
+If zero matches → term may be obsolete, or not yet implemented — ask
+
+For each `## Legacy` line → grep for the legacy name
+If zero matches → the legacy line is done; propose removing it
 ```
 
-Also check reverse: domain-relevant class names NOT in the thesaurus.
+Reverse direction: grep type/class/interface declarations in the domain layer, strip
+technical suffixes, and list names that hit neither an Index Identifier, an Avoid
+name, nor a Legacy name — candidates for new Index lines.
 
 **Severity: LOW** — thesaurus drift from codebase.
 
 ## Report Format
 
-After running all 8 checks, present findings grouped by severity:
+After running all 9 checks, present findings grouped by severity:
 
 ```
 ## Ubiquitous Language Audit Report
@@ -190,8 +236,9 @@ After running all 8 checks, present findings grouped by severity:
 
 | Check | Findings |
 |-------|----------|
+| Thesaurus integrity | 0 |
 | Synonym violations | 3 |
-| Weasel words | 5 |
+| Forbidden words | 5 |
 | Technical leaks | 2 |
 | Synonym drift | 4 clusters |
 | Polysemy | 1 |
@@ -214,7 +261,8 @@ After running all 8 checks, present findings grouped by severity:
 - **Critical findings**: suggest immediate fixes or add to `## Unresolved` in thesaurus
 - **Warnings**: create tech debt tickets or note in thesaurus
 - **Info**: note for next audit cycle
-- **Update the thesaurus**: add missing terms, remove orphans, update "Synonyms to AVOID"
-  lists based on what you found in the wild
+- **Update the thesaurus**: add missing Index lines + entries, remove finished Legacy
+  lines, extend `avoid:` lists with the synonyms you found in the wild — keeping the
+  registry invariant (a name lives under `avoid:` *or* Legacy *or* Forbidden, never two)
 - **If no thesaurus existed**: the audit findings ARE the input for thesaurus generation —
   feed them into the generating-thesaurus.md workflow

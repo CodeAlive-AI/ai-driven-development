@@ -24,13 +24,42 @@ Three modes:
 
 | Mode | When | What loads |
 |------|------|-----------|
-| **Naming consultation** | Every time the agent names anything | `SKILL.md` (389 lines) |
-| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (416 lines) |
-| **Naming audit** | User asks to check naming consistency | `references/naming-audit.md` (220 lines) |
+| **Naming consultation** | Every time the agent names anything | `SKILL.md` (~495 lines) |
+| **Thesaurus generation** | User asks to create/update the thesaurus | `references/generating-thesaurus.md` (~470 lines) |
+| **Naming audit** | User asks to check naming consistency | `references/naming-audit.md` (~270 lines) |
 
 ### Naming consultation (frequent)
 
-Before proposing any name, the agent reads the project's `THESAURUS.md` and uses the existing canonical term. If the concept is new, it tries four levers before minting a new term: Reuse, Compose, Qualify, Ask. Includes DDD naming rules for aggregates, entities, value objects, events, commands, queries, services, and repositories.
+Before proposing any name, the agent greps the project's `THESAURUS.md` for every candidate name and acts on the shape of the hit line (Index, Forbidden, Legacy, Unresolved, or nothing). If the concept is new, it tries four levers before minting a new term: Reuse, Compose, Qualify, Ask. Includes DDD naming rules for aggregates, entities, value objects, events, commands, queries, services, and repositories.
+
+### The grep-first thesaurus layout
+
+`THESAURUS.md` is shaped so that **one `rg` for any name answers "what do I do with this name?"**. Registry sections are one-line-per-item bullet lists with labelled tokens — not Markdown tables, because `|` is an alternation in ripgrep (the Grep tool of most agents), tables match by column position, and formatters re-pad them.
+
+```markdown
+## Index                      ← one line per concept, every name for it
+- **Order** `Order` kind:aggregate avoid: `Purchase`, `Transaction`, `Buy`
+- **Account** `Account` kind:aggregate ctx:Billing avoid: `Wallet`, `Balance`
+
+## Terms                      ← `### Term` entries: Definition / NOT / Related
+## Forbidden                  ← - `Manager` use: `OrderFulfillment` — hides responsibility
+## Legacy                     ← - `Basket` → `Cart` in: `api/v1/basket.ts` — renamed v2
+## Unresolved                 ← `### Term — problem` entries awaiting a decision
+```
+
+```bash
+rg -n -i 'basket'            # any role — the shape of the hit line tells you the section
+rg -n 'avoid:.*`Purchase`'   # banned synonym → the canonical Identifier is at line start
+rg -n 'kind:event'           # all events;  rg 'ctx:Billing' → everything one context owns
+rg -n -F '**Order**'         # exact Term, not "Order Line Item"
+rg -n '^### Order( \(|$)'    # the entry itself
+```
+
+- **Registry invariant**: every name appears in exactly one registry line, so the *shape* of a hit gives its status and the *line* gives the canonical name — no `-B`/`-A` context reading.
+- `Identifier` is the PascalCase code form — what agents actually see in code and grep for; `Term` stays in the domain's own language (``**Счёт-фактура** `Invoice` ``).
+- Backticks around every name make `` rg '`Order`' `` an exact match that skips `OrderLineItem`.
+- `kind:` selects the DDD naming rule; `ctx:` appears only once bounded contexts are confirmed.
+- Existing thesauri (prose-only or table-index) are migrated in one pass without changing a definition.
 
 ### Thesaurus generation (rare)
 
@@ -38,15 +67,16 @@ Scans high-signal structural files (DB schemas, API contracts, domain layer, dir
 
 ### Naming audit (periodic)
 
-8-check protocol: synonym violations, weasel words, technical jargon leaks, synonym drift, polysemy, translation chains, abbreviation inconsistency, orphan terms. Produces a structured report grouped by severity (Critical / Warning / Info) with recommended fix priority.
+9-check protocol: thesaurus integrity (registry invariant, Index ↔ Terms), synonym violations, forbidden words, technical jargon leaks, synonym drift, polysemy, translation chains, abbreviation inconsistency, orphan terms. The Index is the audit's work-list. Produces a structured report grouped by severity (Critical / Warning / Info) with recommended fix priority.
 
 ## Key features
 
+- **Grep-first thesaurus** — one labelled line per concept, registry invariant, exact-match backticks; built for agents that navigate by `rg`, not by reading whole files
 - **Codebase is primary evidence, not automatic authority** — supports both "as-is" (document current naming) and "to-be" (define target vocabulary) modes
 - **Flat-first thesaurus** — no bounded contexts by default; only introduced when polysemy is confirmed by the user with the invariant test
-- **Forbidden Lexicon** — maintained list of terms banned from the domain layer (weasel words, implementation details)
+- **Forbidden list** (lexical firewall) — maintained list of words banned from the domain layer (weasel words, implementation details)
 - **Polysemy unpacking** — detects overloaded terms and forces disambiguation into explicit facets
-- **Cross-context bridges** — when bounded contexts exist, documents the relationship and loss notes between shared terms
+- **Cross-context bridges** — when bounded contexts exist, one line per bridge with a SKOS mapping (`exactMatch` … `relatedMatch`, `distinct`) and loss notes
 - **Legacy term tracking** — continuity relations (rename/split/merge/retire/deprecate) with alias parsimony
 - **Framework-aware** — doesn't fight Active Record patterns; distinguishes domain noun from framework coupling
 - **Language-agnostic** — works with any programming language, no framework-specific rules
@@ -69,7 +99,7 @@ This skill was built through a structured research and review process:
    - F.5 Naming Discipline — "name what the invariants make true", minimal generality
    - F.13 Lexical Continuity & Deprecation — five continuity relations (rename/alias/split/merge/retire)
    - F.14 Anti-Explosion Control — "four levers before minting a new name"
-4. **ISO 25964 / SKOS** — thesaurus relationship types (broader, narrower, part-of, related, synonym)
+4. **ISO 25964 / SKOS** — label model (prefLabel / altLabel / notation), BT/NT/RT relations and their integrity rules, mapping vocabulary for cross-context bridges — see Standards alignment
 5. **Martin Fowler**, **Vaughn Vernon** — bounded context maps, anti-corruption layers, context boundaries as language boundaries
 
 ### Web research
@@ -93,10 +123,31 @@ The skill was reviewed by external AI agents (OpenAI Codex CLI / GPT-5.4 and Goo
 
 ### Design decisions
 
-- **Progressive disclosure**: SKILL.md (naming consultation) loads on every trigger; references load only on demand — saves ~600 lines of context on the common path
+- **Progressive disclosure**: SKILL.md (naming consultation) loads on every trigger; references load only on demand — saves ~700 lines of context on the common path
+- **Grep-first over read-everything**: agents consult the thesaurus on every naming task, so lookup cost matters more than prose quality. The Index (one line per concept) is cheap to read whole; everything else is reached by a single `rg` whose hit is self-describing. Avoid lists live only in the Index so there is one place to drift from — none
+- **Labelled lines, not tables, for registry data**: Index, Forbidden (`use:`) and Legacy (`→`, `in:`) are one-line facts with position-free tokens — greppable without escaping `|`, immune to formatter re-padding, and each line's shape reveals its section. Definitions and open questions stay as prose entries
+- **Non-English domains get two columns, not a compromise**: `Term` holds the experts' word, `Identifier` the code form, so the thesaurus is greppable from either side
 - **Flat-first thesaurus**: bounded contexts are opt-in, not default — the agent cannot reliably determine context boundaries, so it surfaces evidence and asks the user
 - **Unresolved section**: ambiguities collected during scanning, surfaced as a batch after file creation — no blocking questions during generation
 - **Agent instruction updates**: after creating the thesaurus, the skill updates CLAUDE.md/GEMINI.md/etc. so the thesaurus works even without the skill installed
+
+## Standards alignment
+
+The layout is a plain-Markdown projection of a SKOS concept scheme (ISO 25964-compatible) — exportable to RDF/JSON-LD if ever needed, without being written in it.
+
+| Thesaurus | SKOS / ISO 25964 |
+|-----------|------------------|
+| `**Term**` | `skos:prefLabel` — one per concept and context |
+| `` `Identifier` `` | `skos:notation` — machine code, distinct from the label |
+| `avoid:` | `skos:altLabel` + `skos:hiddenLabel` (ISO 25964: `UF`, use-for) |
+| `Definition` / `NOT` | `skos:definition` / `skos:scopeNote` |
+| `Broader` / `Narrower` / `Related` | `BT` / `NT` / `RT` — written on one side only, `rg` gives the inverse |
+| `### Term (Context)` | ISO 25964 homograph qualifier |
+| Legacy `` `Old` → `New` `` | `owl:deprecated` + `skos:historyNote`; `A + B` = compound equivalence |
+| Bridge mapping | `skos:exactMatch` … `relatedMatch` (+ explicit `distinct`); never `owl:sameAs` |
+| Unresolved → Index → Legacy | concept status: candidate → approved → deprecated |
+
+Deliberately not borrowed: `ConceptScheme`/`Collection`, facets, OWL axioms, RDF serialisation — `kind:`/`ctx:` and prose `NOT` cover the need without the weight.
 
 ## File structure
 
@@ -106,7 +157,7 @@ ubiquitous-language/
 ├── README.md                        # This file
 └── references/
     ├── generating-thesaurus.md      # Thesaurus generation workflow
-    └── naming-audit.md             # 8-check naming audit protocol
+    └── naming-audit.md             # 9-check naming audit protocol
 ```
 
 ## License

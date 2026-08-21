@@ -75,14 +75,22 @@ how many files are affected, and possible resolutions if obvious.
 
 ### Step 4: Write the thesaurus
 
-Write `THESAURUS.md` with what you know:
-- Active terms go to `## Terms`
-- Deprecated terms go to `## Legacy Terms`
-- All ambiguities go to `## Unresolved`
+Write `THESAURUS.md` in the grep-first layout (Bootstrap Template below):
+- Active terms → one `## Index` line each **and** one `### Term` entry under `## Terms`
+- Synonyms, abbreviations, competing names → the `avoid:` list of their concept's line
+- Weasel words and jargon you actually saw in the code → `## Forbidden` lines
+- Deprecated names → `## Legacy` lines (one line each; no prose entries)
+- All ambiguities → `## Unresolved` entries
 
-**Start with a flat thesaurus** — just a single list of terms without bounded contexts.
-Most projects don't need context separation. Only introduce bounded contexts later
-if Step 5 reveals genuine polysemy.
+**Write the Index first**, then the entries in the same alphabetical order. The Index is
+what agents read on every naming task; the entries are what they grep into. Before
+finishing, confirm the registry invariant: every name appears in exactly one registry
+line — Index line, Forbidden line, Legacy line, or Unresolved header. A name that is both
+under `avoid:` and in Legacy, or has an entry but no Index line, is a defect.
+
+**Start with a flat thesaurus** — no `ctx:` tokens, no context sections. Most
+projects don't need context separation. Only introduce bounded contexts later if Step 5
+reveals genuine polysemy.
 
 ### Step 5: Surface unresolved issues
 
@@ -106,8 +114,8 @@ THESAURUS.md created with 24 terms, 3 legacy terms, and 5 unresolved issues:
 Which would you like to resolve first?
 ```
 
-As the user resolves each item, promote it from `## Unresolved` to `## Terms`
-(or `## Legacy Terms`). Items the user defers stay as documented naming debt.
+As the user resolves each item, promote it from `## Unresolved` to an Index line + entry
+(or a `## Legacy` line). Items the user defers stay as documented naming debt.
 
 ### Step 6: Update project instructions
 
@@ -127,13 +135,18 @@ Propose adding a section like (use the resolved path from Step 0):
 ```markdown
 ## Domain Language
 
-This project maintains a domain thesaurus at `docs/THESAURUS.md`.
+This project maintains a domain thesaurus at `docs/THESAURUS.md`. It is grep-first:
+one `## Index` line per concept — ``- **Term** `Identifier` kind:… avoid: `synonyms` ``.
 
-- **Before naming any new entity** (class, method, variable, DB table, API endpoint),
-  read `docs/THESAURUS.md` first. If the concept already has a canonical term — use it.
-- **Before introducing a new domain term**, add it to `docs/THESAURUS.md` first.
-- Terms in the "Synonyms to AVOID" lists must never appear in new code.
-- See the "Forbidden Lexicon" section for terms banned from the domain layer.
+- **Before naming anything** (class, method, variable, DB table, API endpoint, file),
+  search `rg -n -i '<word>' docs/THESAURUS.md` for each name you are considering.
+  - Hit in an Index line → use that line's `Identifier`, even if your word was under `avoid:`.
+  - Hit in a `` - `word` use: `` (Forbidden) or `` - `word` → `` (Legacy) line → do not use it;
+    the line names the replacement.
+  - Hit in `## Unresolved` → open question; ask before deciding.
+  - No hit → new concept: add an Index line and a `### Term` entry **before** using it in code.
+- Useful: `rg 'kind:event'` · ``rg 'avoid:.*`Word`'`` · `rg -F '**Term**'` · `rg '^### Term( \(|$)'`.
+- Never introduce a synonym for an existing Index term.
 ```
 
 This ensures every agent session — even without the ubiquitous-language skill installed —
@@ -155,8 +168,8 @@ Instead, look for **evidence of polysemy** — the same word meaning different t
 and as a user identity in `auth/`. Should these be separate bounded contexts, or is
 one of them a legacy naming mistake?"
 
-Only add `## Bounded Context:` sections to the thesaurus after the user confirms
-the separation. A wrong context boundary is worse than no boundary.
+Only add `ctx:` tokens and context sections to the thesaurus after the user
+confirms the separation. A wrong context boundary is worse than no boundary.
 
 **The invariant test** (from FPF A.1.1): A bounded context is justified only when you
 can name **at least one rule (invariant)** that is true inside the context but not
@@ -170,76 +183,97 @@ a module, not a bounded context.
 # Project Thesaurus
 
 > Domain glossary following DDD ubiquitous language. Every name in code, APIs, docs,
-> and conversations must use terms from this thesaurus. Update this file BEFORE
-> introducing new concepts.
+> and conversations comes from here. Add the term here BEFORE using it in code.
 >
-> **Rules:**
-> 1. One canonical term per concept — no synonyms in code
-> 2. New concepts must be added here before being used in code
-> 3. "Avoid" terms must never appear in new code
-> 4. When renaming, update all references (code, docs, API, DB)
+> **How to use (grep-first):** `rg -n -i '<word>' THESAURUS.md` — the shape of the hit
+> line tells you what to do:
+> - ``- **Term** `Identifier` kind:… avoid: … `` (Index) → use the Identifier, even if
+>   your word was under `avoid:`
+> - ``- `Word` use: `X` `` (Forbidden) → banned; use `X`
+> - ``- `Old` → `New` in: … `` (Legacy) → use `New` in new code
+> - `### Term — …` under Unresolved → open question; ask before deciding
+> - no hit → new concept: add an Index line + `### Term` entry first
+> Handy: `rg 'kind:event'` · `rg 'ctx:Billing'` · `rg -F '**Term**'` · `rg '^### Term( \(|$)'`
+>
+> **Rules:** one canonical Identifier per concept; every name lives in exactly one
+> registry line; `avoid:`/Forbidden/Legacy names never appear in new code; on rename,
+> update code, docs, API, DB — and add a Legacy line.
 
-## Forbidden Lexicon
+## Index
 
-> Terms that MUST NOT appear in the domain layer. These are implementation details,
-> weasel words, or ambiguous terms that must always be replaced with a specific
-> domain term from this thesaurus.
-
-| Forbidden Term | Why | Use Instead |
-|---------------|-----|-------------|
-| Manager | Vague, hides responsibility | [specific domain activity] |
-| Handler | Generic | [what it handles] |
-| Service | Overloaded — see Polysemy section | [specific facet] |
-| Info / Data | Meaningless suffix | [the domain term itself] |
+- **[Term]** `[PascalCase]` kind:[aggregate|entity|value|event|command|query|service|role|process|state|policy|concept] avoid: `[synonym]`, `[abbrev]`
 
 ## Terms
 
 ### [Term]
-- **Definition**: [What this means in the business domain]
-- **NOT**: [What this does NOT mean — other concepts it could be confused with]
-- **Synonyms to AVOID**: [Words that mean the same but must not be used]
-- **Related terms**: [Other thesaurus entries this connects to]
+- **Definition**: [What this means in the business domain — one sentence]
+- **NOT**: [What this does NOT mean — the neighbouring term it is confused with]
+- **Related**: [Other Index Terms, written exactly as in the Term field]
 
-## Legacy Terms
+## Forbidden
 
-> Terms still present in the codebase but deprecated or being phased out.
-> New code MUST use the replacement term. Legacy terms are kept here to help
-> developers reading old code understand what they mean.
+> Words that MUST NOT appear in domain-layer names: implementation details, weasel
+> words, bundle-collapse terms. `use:` always points at an Index Identifier.
 
-### [Legacy Term] `[LEGACY]`
-- **Definition**: [What this meant]
-- **Status**: Deprecated since [date/version]. Being replaced by [new term]
-- **Still found in**: [modules/files where it persists]
-- **Replacement**: [canonical term from active thesaurus]
+- `Manager` use: [specific activity] — vague, hides responsibility
+- `Handler` use: [what it handles] — generic
+- `Service` use: [specific facet] — overloaded, see Polysemy Unpacking
+- `Info`, `Data` use: [the term itself] — meaningless suffix
+
+## Legacy
+
+> Names still present in the codebase but deprecated. New code MUST use the name after
+> `→`. `A + B` = the old name was split; `→ —` = retired with no single successor.
+
+- `[OldName]` → `[Identifier]` in: [modules/files] — [what it meant; since when]
 
 ## Unresolved
 
-> Naming ambiguities, contradictions, and open questions found during thesaurus
-> generation. Each entry needs a human decision before the term can be added to
-> the active thesaurus. Resolve these top-down by impact.
+> Naming ambiguities, contradictions, and open questions. Each needs a human decision
+> before the name can enter the Index. Resolve top-down by impact.
 
-### `[Term]` — [short description of the problem]
-- **Found in**: [where in code this term appears with different meanings/usage]
+### [Term] — [short description of the problem]
+- **Found in**: [where this name appears with different meanings/usage]
 - **Question**: [what needs to be decided]
 - **Impact**: [how many files/modules are affected]
 - **Options**: [possible resolutions, if known]
 
-<!-- Add these sections ONLY when confirmed polysemy requires them:
-
-## Bounded Context: [Context Name]
-
-### [Term]
-- **Definition**: [What this means in THIS context]
-- **NOT**: [What it means in other contexts]
-- **Synonyms to AVOID**: [list]
+<!-- ONLY when confirmed polysemy requires bounded contexts:
+  1. Add `ctx:<Context>` to every Index line that belongs to a context (after kind:)
+  2. Headers become `### Term (Context)`; group entries under `## Terms: [Context]`
+  3. Add the bridges section (one line per bridge, SKOS mapping vocabulary):
 
 ## Cross-Context Bridges
 
-| Term | Context A meaning | Context B meaning | Relationship | Loss Notes |
-|------|-------------------|-------------------|-------------|------------|
+- **Account** Billing ↔ Identity: distinct — service accounts have no ledger; guest checkout has a ledger but no login
+- **Customer** Sales ↔ Identity: closeMatch — one Customer may own several Identity Accounts; never join on spelling
 
+  Mapping is one of: exactMatch · closeMatch · broadMatch · narrowMatch · relatedMatch · distinct
+  (SKOS mapping properties + explicit `distinct` for homonyms). Never `sameAs`.
 -->
 ```
+
+## Migrating an Existing Thesaurus
+
+A file with `### Term` entries carrying `**Synonyms to AVOID**` lines but **no
+`## Index`** uses the pre-index layout; a file whose `## Index` is a Markdown table uses
+the first index layout. Migrate either in one pass — the content is the same, only the
+shape changes:
+
+1. **Build the Index lines** from the entries (or table rows): Term = header text;
+   Identifier = PascalCase of the term (or the name the code actually uses — grep to
+   confirm); `kind:` = infer from the definition, default `concept`; `avoid:` = the
+   `Synonyms to AVOID` list (or Avoid column), each in backticks.
+2. **Strip** `**Synonyms to AVOID**` lines from the entries; rename `**Related terms**`
+   to `**Related**`.
+3. **Convert `## Legacy Terms` entries (or Legacy table rows) to `## Legacy` lines**:
+   `` `Old` → `Replacement` in: <still found in> — <note> ``.
+4. **Rename** `## Forbidden Lexicon` → `## Forbidden`; one `` `Word` use: `X` — why ``
+   line per word.
+5. **Contexts**: `## Bounded Context: X` sections → `## Terms: X`, headers `### Term (X)`,
+   `ctx:X` on the Index lines; a Bridges table → one line per bridge with a SKOS mapping.
+6. **Check the registry invariant** (see the audit's Check 0) and show the user the
+   diff before writing — migration must not change a single definition.
 
 ## Polysemy Unpacking
 
@@ -251,7 +285,7 @@ an endpoint, a commitment, a delivery method, or a work episode — all at once.
 
 1. **Identify the facets** — what distinct things does this word refer to?
 2. **Create separate thesaurus entries** for each facet with qualified names
-3. **Add the bare word to the Forbidden Lexicon** — it must always be qualified
+3. **Add the bare word to `## Forbidden`** — it must always be qualified
 4. **Document which facet is meant** in each code location
 
 ### Example: Unpacking "Service"
@@ -298,7 +332,7 @@ Example: "Account" across three contexts:
 
 **Rules:**
 - Each context owns its own definition in the thesaurus
-- Organize the thesaurus by bounded context, not alphabetically
+- One Index line per (Term, Context) pair; group entries by context, alphabetical within
 - If code has `if` statements checking "which context am I in?" — the boundary is wrong
 - Use Anti-Corruption Layers at context boundaries for term translation
 - **Never assume sameness from spelling** — "Account" in Payment and "Account" in Customer are different concepts that happen to share a label
@@ -313,36 +347,50 @@ You've found a boundary when:
 
 ### Cross-Context Bridges
 
-When terms appear in multiple contexts, document the **bridge** explicitly in the
-Cross-Context Bridges table of the thesaurus. Every bridge must state:
+When terms appear in multiple contexts, document the **bridge** explicitly — one line
+per bridge under `## Cross-Context Bridges`:
 
-- **Which contexts** the term appears in
-- **The relationship**: overlap (shared subset), distinct (different concepts), narrower/broader
-- **Loss notes**: what breaks if you treat them as the same — this is the most important field
-- **Direction**: can you safely substitute A for B? B for A? Neither?
+```
+- **<Term>** <Context A> ↔ <Context B>: <mapping> — <loss notes>
+```
+
+- **mapping** uses the SKOS mapping vocabulary, plus an explicit `distinct` for homonyms:
+  `exactMatch` (interchangeable in practice) · `closeMatch` (interchangeable in some
+  uses) · `broadMatch` / `narrowMatch` (A is more general / more specific than B) ·
+  `relatedMatch` (associated, neither subsumes) · `distinct` (same spelling, different
+  concept). Never `sameAs` — cross-context identity is never inferred from spelling.
+- **loss notes** — what breaks if you treat them as the same. The most important field.
 
 ```markdown
 ## Cross-Context Bridges
 
-| Term | Context A meaning | Context B meaning | Relationship | Loss notes |
-|------|-------------------|-------------------|-------------|------------|
-| Account | Financial balance (Payment) | Login identity (Customer) | Distinct | Service accounts have no Customer; leads have no Account |
-| Order | Customer purchase (Sales) | Kitchen ticket (Fulfillment) | Narrower | Kitchen Order adds prep steps, timing; loses pricing |
+- **Account** Billing ↔ Identity: distinct — service accounts have no ledger; guest checkout has a ledger but no login
+- **Order** Sales ↔ Fulfillment: narrowMatch — Fulfillment Order adds prep steps and timing, loses pricing
 ```
 
 ### Documenting Cross-Context Terms
 
 ```markdown
-### Account (Payment Context)
-- **Definition**: Financial account with balance, used for charging and refunds
-- **NOT**: User identity or login credentials (that's Account in Customer Context)
-- **Synonyms to AVOID**: Wallet, Purse, Balance
+## Index
 
-### Account (Customer Context)
+- **Account** `Account` kind:aggregate ctx:Billing avoid: `Wallet`, `Purse`, `Balance`
+- **Account** `Account` kind:aggregate ctx:Identity avoid: `User`, `Profile`, `Login`
+
+## Terms: Billing
+
+### Account (Billing)
+- **Definition**: Financial account with balance, used for charging and refunds
+- **NOT**: User identity or login credentials (that's Account in Identity)
+
+## Terms: Identity
+
+### Account (Identity)
 - **Definition**: User's login identity — email, password, profile
-- **NOT**: Financial balance (that's Account in Payment Context)
-- **Synonyms to AVOID**: User, Profile, Login
+- **NOT**: Financial balance (that's Account in Billing)
 ```
+
+`rg -n '^### Account( \(|$)'` returns both entries with their context in the header;
+`rg -n 'ctx:Billing'` lists everything one context owns.
 
 ## Term Relationships
 
@@ -356,20 +404,24 @@ Use these relationship types to connect terms (based on ISO 25964 / SKOS):
 | **Related** | Associated, not hierarchical | Repository is related to Branch |
 | **Synonym** | Same concept, different word (pick one, avoid the other) | Codebase = Repository (avoid Codebase) |
 
-In thesaurus entries:
+Synonyms go to the Index `avoid:` list; the hierarchical relations are optional entry
+lines, added only when they carry real information. Write each relation on one side
+only — `rg` gives the inverse; mirrored copies drift. SKOS rule: a pair is never both
+`Broader` and `Related`, and `Broader` chains never cycle.
 ```markdown
 ### Repository
 - **Definition**: A version-controlled code storage location
-- **Broader**: VersionControlSystem
-- **Narrower**: GitHubRepository, GitLabRepository, Monorepo
-- **Part-of**: —
+- **Broader**: Version Control System
+- **Narrower**: GitHub Repository, GitLab Repository, Monorepo
 - **Has parts**: Branch, Commit, File
-- **Related**: CodeSource, IndexedAnalysis
+- **Related**: Code Source, Indexed Analysis
 ```
+Write related names exactly as in the Index Term field, so `grep -n 'Branch'` finds
+both the Branch Index line and every entry that points at it.
 
 ## Consistency Audit
 
-For a full naming audit protocol (8 checks, severity levels, report format), see
+For a full naming audit protocol (9 checks, severity levels, report format), see
 [naming-audit.md](naming-audit.md).
 
 ## Brownfield Language Adoption
@@ -385,7 +437,7 @@ When introducing ubiquitous language to a project that already has an establishe
    PRs, spoken language shifts gradually. This takes weeks, not days.
 4. **Watch for technical terms masquerading as domain language.** Stakeholders using
    DB table names as domain terms ("the users table" instead of "Customer") is a
-   common brownfield pattern. Map these in `## Legacy Terms`.
+   common brownfield pattern. Map these as `## Legacy` lines.
 5. **Pick battles by frequency.** Fix terms used 200 times across the codebase before
    terms used in 3 files.
 
