@@ -3,7 +3,7 @@
 # delegate — full-YOLO single-agent task execution in the caller's CWD.
 # Invoked by: scripts/consilium delegate -a <exact-agent-id> ...
 #             scripts/consilium delegate --one-shot -a <id> ...
-#             scripts/consilium delegate steer|status|cancel ...
+#             scripts/consilium delegate steer|status|cancel|events ...
 #
 # No sandbox, no approval prompts, no extra confirmation flag.
 # Exact agent id only — no globs, no defaults.
@@ -27,7 +27,7 @@ export PYTHONPATH="${LIB_DIR}${PYTHONPATH:+:$PYTHONPATH}"
 # `list` takes no run id. There is no ambiguity with a start invocation —
 # starting always requires -a <agent-id>, so an agent id never lands here.
 case "${1:-}" in
-    steer|status|cancel|wait|watch|list)
+    steer|status|cancel|wait|watch|events|list)
         sub="$1"
         shift
         exec python3 -m steer.control "$sub" "$@"
@@ -97,6 +97,7 @@ Usage:
   consilium delegate cancel RUN_ID
   consilium delegate wait RUN_ID [--json] [--quiet]
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
+  consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
 
 Full-YOLO delegation to exactly one agent in the current working directory.
@@ -115,6 +116,8 @@ answer text, otherwise the agent's own failure code.
 
 watch streams lifecycle changes and heartbeats, not tool/file/text progress,
 and exits with the same codes. Use wait to print the final answer.
+events returns one bounded JSON page of normalized progress and exits. Pass its
+next_cursor back as --cursor to retrieve only later events.
 list finds runs again when the run id was lost.
 
 Options:

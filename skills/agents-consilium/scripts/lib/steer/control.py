@@ -1,4 +1,4 @@
-"""Client-side steer / status / cancel / wait / watch / list against the mailbox."""
+"""Client-side steer / status / cancel / wait / watch / events / list."""
 from __future__ import annotations
 
 import argparse
@@ -155,6 +155,13 @@ def cmd_status(args: argparse.Namespace) -> int:
         "mailbox_closed": mb.is_closed(),
         "steers": steers,
         "state": state,
+        "progress_observation": {
+            "argv": ["delegate", "events", args.run_id, "--max-events", "50"],
+            "warning": (
+                "Lifecycle state is not work progress. No file changes, sleeping/0% CPU, "
+                "active_turn=null, or a dropped steer do not prove that the delegate is idle."
+            ),
+        },
     }
     if meta.get("status") in TERMINAL_STATUSES:
         final = run_dir / "final.txt"
@@ -175,6 +182,10 @@ def cmd_status(args: argparse.Namespace) -> int:
         print(f"agent={meta.get('agent_id')} pid={meta.get('pid')} child={meta.get('child_pid')}")
         if meta.get("error"):
             print(f"error={meta.get('error')}")
+        print(
+            "note=lifecycle state is not work progress; inspect bounded progress with "
+            f"delegate events {args.run_id} --max-events 50 before diagnosing a stall"
+        )
         for s in steers:
             print(
                 f"  steer seq={s.get('seq')} client_id={s.get('client_id')} "
@@ -512,6 +523,143 @@ def cmd_watch(args: argparse.Namespace) -> int:
     return code
 
 
+_EVENT_DATA_LIMIT = 2000
+_COALESCE_EVENT_TYPES = frozenset({"thinking_delta", "answer_delta"})
+
+
+def _public_event(record: Dict[str, Any]) -> Dict[str, Any]:
+    """Return the bounded public projection of a normalized event."""
+    keep = (
+        "ts",
+        "type",
+        "backend",
+        "agent_id",
+        "tool_name",
+        "tool_id",
+        "steer_client_id",
+        "steer_status",
+        "delivery_class",
+        "seq",
+    )
+    event = {key: record[key] for key in keep if record.get(key) not in (None, "")}
+    data = record.get("data")
+    if data is not None:
+        if not isinstance(data, str):
+            data = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+        if len(data) > _EVENT_DATA_LIMIT:
+            event["data"] = data[:_EVENT_DATA_LIMIT]
+            event["data_truncated"] = True
+        else:
+            event["data"] = data
+            event["data_truncated"] = False
+    return event
+
+
+def _event_groups(lines: list[str], start: int = 0) -> list[Dict[str, Any]]:
+    """Parse and coalesce complete normalized lines, retaining raw-line cursors."""
+    groups: list[Dict[str, Any]] = []
+    for index in range(start, len(lines)):
+        try:
+            record = json.loads(lines[index])
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(record, dict) or not record.get("type"):
+            continue
+        event = _public_event(record)
+        typ = event.get("type")
+        if (
+            typ in _COALESCE_EVENT_TYPES
+            and groups
+            and groups[-1]["event"].get("type") == typ
+            and groups[-1]["raw_end"] == index
+        ):
+            previous = groups[-1]["event"]
+            combined = str(previous.get("data") or "") + str(event.get("data") or "")
+            previous["coalesced"] = int(previous.get("coalesced") or 1) + 1
+            if len(combined) > _EVENT_DATA_LIMIT:
+                # For progress observation, the newest end of a long delta run
+                # is more useful than its already-seen beginning.
+                previous["data"] = combined[-_EVENT_DATA_LIMIT:]
+                previous["data_truncated"] = True
+            else:
+                previous["data"] = combined
+                previous["data_truncated"] = bool(
+                    previous.get("data_truncated") or event.get("data_truncated")
+                )
+            groups[-1]["raw_end"] = index + 1
+            continue
+        if typ in _COALESCE_EVENT_TYPES:
+            event["coalesced"] = 1
+        groups.append({"raw_start": index, "raw_end": index + 1, "event": event})
+    return groups
+
+
+def cmd_events(args: argparse.Namespace) -> int:
+    """Print one bounded, non-blocking page of normalized delegate events."""
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    try:
+        meta = reg.load_meta(args.run_id)
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+
+    artifacts_dir = Path(str(meta.get("artifacts_dir") or ""))
+    event_path = artifacts_dir / "normalized" / f"{meta.get('agent_id')}.jsonl"
+    complete_lines: list[str] = []
+    try:
+        body = event_path.read_text(encoding="utf-8", errors="replace")
+        parts = body.split("\n")
+        if parts and parts[-1] == "":
+            parts.pop()
+        elif parts:
+            # A concurrent writer may have left the final JSON line incomplete.
+            parts.pop()
+        complete_lines = parts
+    except FileNotFoundError:
+        pass
+    except OSError as e:
+        sys.stderr.write(f"Error: cannot read delegate events: {e}\n")
+        return 1
+
+    total_raw = len(complete_lines)
+    cursor_reset = False
+    if args.cursor is None:
+        all_groups = _event_groups(complete_lines)
+        selected = all_groups[-args.max_events :]
+        start_cursor = selected[0]["raw_start"] if selected else total_raw
+        next_cursor = total_raw
+        remaining = 0
+    else:
+        start_cursor = args.cursor
+        if start_cursor > total_raw:
+            start_cursor = 0
+            cursor_reset = True
+        groups = _event_groups(complete_lines, start_cursor)
+        selected = groups[: args.max_events]
+        remaining = max(0, len(groups) - len(selected))
+        if selected and remaining:
+            next_cursor = selected[-1]["raw_end"]
+        else:
+            # Consume trailing invalid lines as well when this page reaches EOF.
+            next_cursor = total_raw
+
+    status = str(meta.get("status") or "")
+    payload: Dict[str, Any] = {
+        "run_id": args.run_id,
+        "status": status,
+        "terminal": status in TERMINAL_STATUSES,
+        "exit_code": meta.get("exit_code"),
+        "cursor": start_cursor,
+        "next_cursor": next_cursor,
+        "remaining": remaining,
+        "events": [group["event"] for group in selected],
+    }
+    if cursor_reset:
+        payload["cursor_reset"] = True
+    print(json.dumps(payload, ensure_ascii=False))
+    return 0
+
+
 def cmd_list(args: argparse.Namespace) -> int:
     reg = Registry(Path(args.registry_root) if args.registry_root else None)
     try:
@@ -583,6 +731,23 @@ def cmd_list(args: argparse.Namespace) -> int:
     return 0
 
 
+def _nonnegative_int(value: str, flag: str) -> int:
+    try:
+        parsed = int(value)
+    except ValueError as e:
+        raise argparse.ArgumentTypeError(f"{flag} must be an integer") from e
+    if parsed < 0:
+        raise argparse.ArgumentTypeError(f"{flag} must be >= 0")
+    return parsed
+
+
+def _positive_int(value: str, flag: str) -> int:
+    parsed = _nonnegative_int(value, flag)
+    if parsed == 0:
+        raise argparse.ArgumentTypeError(f"{flag} must be > 0")
+    return parsed
+
+
 def main(argv: Optional[list] = None) -> int:
     p = argparse.ArgumentParser(prog="consilium-steer-control")
     p.add_argument("--registry-root", default=os.environ.get("CONSILIUM_STEER_DIR", ""))
@@ -633,6 +798,22 @@ def main(argv: Optional[list] = None) -> int:
     wt.add_argument("--heartbeat", type=float, default=60.0, help="seconds between alive lines")
     wt.add_argument("--json", action="store_true")
     wt.set_defaults(func=cmd_watch)
+
+    ev = sub.add_parser(
+        "events",
+        description=(
+            "Return one bounded JSON page of normalized progress events without blocking. "
+            "Reuse next_cursor with --cursor on the next observation."
+        ),
+    )
+    ev.add_argument("run_id")
+    ev.add_argument("--cursor", type=lambda value: _nonnegative_int(value, "--cursor"))
+    ev.add_argument(
+        "--max-events",
+        type=lambda value: _positive_int(value, "--max-events"),
+        default=50,
+    )
+    ev.set_defaults(func=cmd_events)
 
     ls = sub.add_parser("list")
     scope = ls.add_mutually_exclusive_group()

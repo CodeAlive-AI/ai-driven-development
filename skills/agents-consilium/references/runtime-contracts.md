@@ -133,8 +133,13 @@ repository requested it.
 
 Review uses `full`, `compact`, or `none`. Invocation-specific keys distinguish concurrent uses of the same profile.
 
-Steerable delegation has a narrower public observation contract. `delegate watch`
-filters registry state and lifecycle-bearing audit events into attach,
+Steerable delegation provides bounded progress pages through `delegate events`.
+It reads the already-normalized append-only event artifact, coalesces adjacent
+answer/thinking deltas, omits backend `raw`, caps each event body, and returns a
+line-count cursor for later incremental reads. The command never blocks and its
+exit code reports observation success rather than the delegated run outcome.
+
+`delegate watch` filters registry state and lifecycle-bearing audit events into attach,
 status, steer, selected turn-boundary/error, heartbeat, and terminal lines. It
 does not expose model chunks, reasoning, active tools, commands, filenames, or
 percent complete. This remains true when a backend happens to use ACP for its

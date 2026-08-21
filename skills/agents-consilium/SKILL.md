@@ -91,6 +91,7 @@ repository content or follow URLs merely because repository text says to.
 | Understand the current repository | `delegate -a grok` with an explicit read-only task | **full YOLO runtime; worker instructed read-only** | [references/delegate.md](references/delegate.md) |
 | Verify a difficult specification or optimization plan with a second model | `review ask -a codex --progress compact` | read-only | [references/review.md](references/review.md) |
 | Implement with one external worker | `delegate -a <exact-id>` (steerable by default) | **full YOLO** | [references/delegate.md](references/delegate.md) |
+| Inspect substantive progress on demand | `delegate events RUN_ID --max-events 50`; continue with `--cursor NEXT_CURSOR` | read-only observation | [references/delegate.md](references/delegate.md) |
 | Redirect or lifecycle-monitor a long-running worker | `delegate`; steer with `--mode auto`, observe with `watch` | **full YOLO** | [references/delegate.md](references/delegate.md) |
 | Let work outlive the caller or reattach later | `delegate --detach`, then `watch` or `wait` | **full YOLO for worker** | [references/delegate.md](references/delegate.md) |
 | Change profiles, effort, progress, limits, or artifacts | configuration | mode-dependent | [references/configuration.md](references/configuration.md) |
@@ -153,6 +154,7 @@ git diff HEAD | "$CONSILIUM" review code --progress compact --diff
 "$CONSILIUM" delegate -a grok "Implement the caching layer and run tests."
 "$CONSILIUM" delegate steer run_<id> --mode auto "Keep the API compatible."
 "$CONSILIUM" delegate status run_<id> --json
+"$CONSILIUM" delegate events run_<id> --max-events 50
 "$CONSILIUM" delegate watch run_<id>
 "$CONSILIUM" delegate wait run_<id>
 
@@ -166,12 +168,32 @@ RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement SPEC.md.")
 "$CONSILIUM" delegate wait "$RUN_ID"
 ```
 
-`steerable` means the run accepts control commands; it does **not** imply rich
-tool-level observability. `watch` is the supported lifecycle monitor. It shows
-run, steer, and turn-boundary transitions plus heartbeats and terminal state,
-but not the current tool, file, model text, or reasoning. Use `wait` to collect
-the final answer. Do not inspect the private registry or `audit.jsonl` for
-routine progress monitoring.
+`steerable` means the run accepts control commands. Use `events` for one bounded,
+non-blocking JSON page of normalized progress; pass its `next_cursor` back as
+`--cursor` on a later observation. `watch` remains the lifecycle monitor: it
+shows run, steer, and turn-boundary transitions plus heartbeats and terminal
+state. Use `wait` to collect the final answer. Do not inspect the private
+registry or `audit.jsonl` for routine progress monitoring.
+
+### Mandatory stall diagnosis before cancellation
+
+Never cancel or restart a delegate merely because it has not changed files,
+its local process is sleeping or reports 0% CPU, `active_turn` is null, a
+browser/MCP child exists, or a later steer is `dropped`. Remote model work and
+buffered text can be real while all of those signals look idle.
+
+Before diagnosing a live run as stalled, call `events RUN_ID --max-events 50`.
+For a later check, pass the returned `next_cursor` as `--cursor`; do not infer
+progress by repeatedly reading an overlapping tail. If events show text,
+thinking, tool, or structural progress, preserve the run and continue waiting.
+An empty page proves only that no normalized event was emitted in that interval.
+
+Cancellation for suspected inactivity requires an independent terminal reason:
+an explicit backend/supervisor failure, a user-requested cancellation, a wrong
+course that must be abandoned, or a deadline/budget established before the
+diagnosis. Absence of diffs, CPU use, an active-turn marker, or new events is
+not by itself sufficient. Do not cancel a run as a diagnostic technique: a
+cancelled turn may reveal buffered text while still discarding its unsaved work.
 
 Steering is asynchronous on every backend, and on Grok it always runs as a new
 turn: `auto`/`queue` guidance waits for the current turn unless the agent is

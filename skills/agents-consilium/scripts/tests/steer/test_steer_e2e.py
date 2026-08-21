@@ -399,6 +399,18 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
             st.get("effort") == expected_effort,
             str(st.get("effort")),
         )
+        observation = st.get("progress_observation") or {}
+        assert_true(
+            f"{label} status routes progress inspection to events",
+            observation.get("argv")
+            == ["delegate", "events", run_id, "--max-events", "50"],
+            str(observation),
+        )
+        assert_true(
+            f"{label} status rejects idle inference from lifecycle",
+            "do not prove" in str(observation.get("warning") or ""),
+            str(observation),
+        )
     except json.JSONDecodeError as e:
         bad(f"{label} status json parse", str(e))
 
@@ -2863,6 +2875,96 @@ def test_list(tmp: Path) -> None:
     wait_proc(live_proc, timeout=15)
 
 
+def test_events_bounded_cursor_reader(tmp: Path) -> None:
+    print("=== unit/e2e: bounded delegate events reader ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.registry import Registry  # type: ignore
+
+    root = tmp / "events-reader"
+    reg_root = root / "registry"
+    artifacts = root / "artifacts"
+    reg = Registry(reg_root)
+    run_id = reg.create_run(
+        agent_id="grok",
+        backend="grok-build",
+        model="grok-4.6",
+        cwd=str(root),
+        artifacts_dir=str(artifacts),
+    )
+    reg.update_meta(run_id, status="running")
+    normalized = artifacts / "normalized"
+    normalized.mkdir(parents=True)
+    event_path = normalized / "grok.jsonl"
+    rows = [
+        {"ts": "1", "type": "answer_delta", "data": "a", "raw": {"secret": "x"}},
+        {"ts": "2", "type": "answer_delta", "data": "b", "raw": {"secret": "y"}},
+        {"ts": "3", "type": "tool_started", "tool_name": "shell", "data": "pytest"},
+        {"ts": "4", "type": "thinking_delta", "data": "x" * 2501},
+        {"ts": "5", "type": "progress", "data": "turn"},
+    ]
+    complete = "\n".join(json.dumps(row) for row in rows[:4])
+    # The malformed line is complete and cursor-consuming; the last JSON line
+    # is deliberately partial and must remain invisible until its newline lands.
+    event_path.write_text(complete + "\n{bad json}\n" + json.dumps(rows[4])[:-2], encoding="utf-8")
+
+    env = env_base(reg_root, artifacts)
+    first = run_cmd(
+        [str(CONSILIUM), "delegate", "events", run_id, "--cursor", "0", "--max-events", "1"],
+        env,
+    )
+    assert_true("events first page exits 0", first.returncode == 0, first.stderr)
+    page1 = json.loads(first.stdout)
+    assert_true("events coalesces adjacent answer deltas", page1["events"][0].get("data") == "ab", str(page1))
+    assert_true("events records coalesced count", page1["events"][0].get("coalesced") == 2, str(page1))
+    assert_true("events omits raw payload", "raw" not in page1["events"][0], str(page1))
+    assert_true("events cursor advances by raw lines", page1.get("next_cursor") == 2, str(page1))
+    assert_true("events reports remaining groups", page1.get("remaining") == 2, str(page1))
+
+    second = run_cmd(
+        [
+            str(CONSILIUM),
+            "delegate",
+            "events",
+            run_id,
+            "--cursor",
+            str(page1["next_cursor"]),
+            "--max-events",
+            "10",
+        ],
+        env,
+    )
+    page2 = json.loads(second.stdout)
+    assert_true("events continuation has no duplicate", [e["type"] for e in page2["events"]] == ["tool_started", "thinking_delta"], str(page2))
+    assert_true("events consumes complete malformed line", page2.get("next_cursor") == 5, str(page2))
+    thought = page2["events"][1]
+    assert_true("events caps data", len(thought.get("data", "")) == 2000 and thought.get("data_truncated") is True, str(thought))
+
+    tail = json.loads(
+        run_cmd([str(CONSILIUM), "delegate", "events", run_id, "--max-events", "1"], env).stdout
+    )
+    assert_true("events default returns latest complete group", tail["events"][0]["type"] == "thinking_delta", str(tail))
+    assert_true("events ignores incomplete final line", tail.get("next_cursor") == 5, str(tail))
+
+    reg.update_meta(run_id, status="failed", exit_code=9)
+    terminal = run_cmd([str(CONSILIUM), "delegate", "events", run_id], env)
+    terminal_body = json.loads(terminal.stdout)
+    assert_true("events read success is independent of run failure", terminal.returncode == 0, terminal.stderr)
+    assert_true("events reports terminal run outcome", terminal_body.get("terminal") is True and terminal_body.get("exit_code") == 9, str(terminal_body))
+
+    empty_id = reg.create_run(
+        agent_id="grok",
+        backend="grok-build",
+        model="grok-4.6",
+        cwd=str(root),
+        artifacts_dir=str(root / "empty-artifacts"),
+    )
+    empty = json.loads(run_cmd([str(CONSILIUM), "delegate", "events", empty_id], env).stdout)
+    assert_true("events missing artifact is empty success", empty.get("events") == [] and empty.get("next_cursor") == 0, str(empty))
+
+    bad_run = run_cmd([str(CONSILIUM), "delegate", "events", "run_missing"], env)
+    assert_true("events unknown run is an error", bad_run.returncode != 0, bad_run.stderr)
+
+
 def test_watch_terminates(tmp: Path) -> None:
     print("=== e2e: watch streams changes and stops at terminal ===")
     env, reg_root, cwd = _wait_env(tmp, "watch", CONSILIUM_FAKE_STEER_SLOW="1.0")
@@ -2986,6 +3088,7 @@ def main() -> int:
         test_wait_cancelled(tmp)
         test_wait_supervisor_killed(tmp)
         test_list(tmp)
+        test_events_bounded_cursor_reader(tmp)
         test_watch_terminates(tmp)
         test_detach_lifecycle(tmp)
     except Exception:

@@ -6,7 +6,7 @@
 #   consilium review ask  [...]
 #   consilium review code --depth basic|specialists|super|ultra [...]
 #   consilium delegate -a <exact-agent-id> [...]
-#   consilium delegate wait|watch|list [...]
+#   consilium delegate wait|watch|events|list [...]
 #
 # Observability contract:
 #   compact semantic live progress → stderr
@@ -38,6 +38,7 @@ Usage:
   consilium delegate cancel RUN_ID
   consilium delegate wait RUN_ID [--json] [--quiet]
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
+  consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
   consilium --list-agents
   consilium -h | --help
@@ -81,6 +82,8 @@ delegate
     an answer.
   watch emits lifecycle changes and heartbeats, not tool/file/text progress,
   and exits with the same codes. Use wait to print the final answer.
+  events returns one bounded JSON page of normalized progress and exits. Reuse
+  next_cursor as --cursor on the next observation.
   list finds runs again after the run id was lost.
 
 Environment:
