@@ -69,7 +69,7 @@ Do not add a fourth constructor merely to carry time, execution order, paralleli
 * **C13-N4 — Mereological discipline.** Direct part patterns and A.14 govern acyclicity, antisymmetry, transitivity where applicable, recurrence, and occurrence identity. C.13 does not strengthen a direct relation by calculus convention.
 * **C13-N5 — Trace separation.** A materialized trace is a C.2.1 episteme. It creates none of the following: the whole, collection, or aspect it describes; the inputs; the relation occurrences; the construction rule; the identity conditions; or holonhood.
 * **C13-N6 — Member is not component.** `set` supports a collection account; it does not imply integrated assembly, `ComponentOf`, system agency, or A.1 recognition. Use `sum` only when exact constructive part relations and assembly are independently grounded.
-* **C13-N7 — Published-edge grounding stays with B.3.5.** When a structural Working-Model edge is published, follow B.3.5 for its required `tv:groundedBy` link and declared `validationMode`; C.13 supplies the reconstructible trace content. Evidence, warrant, currentness, and reliance remain separate, and neither the link nor the mode replaces the direct construction or identity facts.
+* **C13-N7 — Elected assurance grounding stays with B.3.5.** A direct structural Working-Model edge may be published without a C.13 trace. When that publication elects B.3.5 or a named current requirement demands the profile, follow B.3.5 for the required `tv:groundedBy` link and declared `validationMode`; C.13 supplies the reconstructible trace content. Evidence, warrant, currentness, and reliance remain separate, and neither the link nor the mode replaces the direct construction or identity facts.
 * **C13-N8 — Subject owners remain authoritative.** Method, work, and discipline construction may use C.13 only after their direct patterns identify actual parts and whole-forming relations. A selected dependent `U.Structure` does not become a whole, collection, aspect, or holon by selection or name.
 * **C13-N9 — Transformation composition stays fail-closed.** A C.13 entity-construction trace, method decomposition, work decomposition, common changed referent, or temporal subdivision establishes neither transformation parthood nor a composite transformation. Without a direct transformation-composition governor, retain the independently identified changes and the exact blocker; infer neither composition nor atomism.
 
@@ -161,7 +161,7 @@ The following regulate a C.13 use.
 | **CC-C13-8 — Member is not component.** | A `set` construction establishes no integrated assembly, acting eligibility, or holonhood. | Prevent collection-to-system drift. |
 | **CC-C13-9 — Facet explicitness.** | A `slice` use names the exact aspect, bearer, governed facet, direct relation, and identity rule; a temporal window is not a structural facet here. | Prevent arbitrary slicing. |
 | **CC-C13-10 — Subject owner.** | Apply C.13 to method, work, or discipline holons only after their direct patterns identify exact parts and whole-forming relations. | Permit accepted holon construction without generic decomposition. |
-| **CC-C13-11 — Published-edge boundary.** | A published structural Working-Model edge follows B.3.5 for its required trace link and validation mode; C.13 does not treat that publication apparatus as the world-side relation, assembly, or identity rule. | Keep construction and publication assurance distinct. |
+| **CC-C13-11 — Published-edge boundary.** | A direct structural Working-Model edge remains usable without a trace. If its publication elects B.3.5 or a named current requirement demands that profile, the edge follows B.3.5 for the required trace link and validation mode; C.13 does not treat that publication apparatus as the world-side relation, assembly, or identity rule. | Keep direct use, construction, and elected publication assurance distinct. |
 | **CC-C13-12 — Dependent structure stop.** | A selected `U.Structure` is not a holon, agent, or a new whole named by an MHT claim merely by selection, label, or diagram. | Preserve the dependent-structure boundary. |
 | **CC-C13-13 — Transformation stop.** | Do not infer transformation composition, parthood, holonhood, or atomism from entity construction, method or work decomposition, timing, or missing part facts. | Preserve the missing-governor boundary. |
 
@@ -189,7 +189,7 @@ The following regulate a C.13 use.
 **Costs and mitigations**
 
 - A truthful trace needs more than a parts list: exact relations, assembly, and identity conditions must be named. Reuse a direct pattern's existing facts rather than duplicating them.
-- A world-side construction can obtain before anyone writes a trace. When a structural Working-Model edge is published, however, B.3.5 requires the trace link and validation mode; materialize the account without treating publication as the cause of construction.
+- A world-side construction can obtain before anyone writes a trace, and its direct relation claim can remain usable without an assurance profile. When its publication elects B.3.5 or a named current requirement demands it, materialize the required trace and validation mode without treating publication as the cause of construction.
 - The same inputs can support different assemblies, and one whole can survive permitted replacements. Always carry the direct reidentification rule.
 
 > **One-line takeaway.** `sum`, `set`, and `slice` explain an already grounded construction; they do not create its entities, relations, identity, evidence, or holonhood.
@@ -225,7 +225,7 @@ Model-based engineering likewise separates a readable structural model from the 
 
 **Coordinates with**
 
-- **B.3.5.** Governs the required trace link and validation mode for a published structural Working-Model edge. Its publication and assurance apparatus does not create the construction or decide whole identity.
+- **B.3.5.** Governs the required trace link and validation mode only for a structural Working-Model edge covered by an elected profile or named current requirement. Its publication and assurance apparatus does not create the construction or decide whole identity.
 - **A.1 and B.2.** A.1 consumes constructive assembly as one component of holon recognition; B.2 consumes exact construction and direct reidentification facts when the question is whether the existing whole continues or a new whole must be identified. C.13 decides neither public-kind recognition nor whole reidentification.
 - **B.1.5 and direct method-composition patterns.** Supply exact submethods, whole-forming relations, constraints, and whole-method reidentification before a method construction is narrated.
 - **A.15 and direct work-mereology patterns.** Supply exact work parts and whole-forming relations before a dated work construction is narrated.

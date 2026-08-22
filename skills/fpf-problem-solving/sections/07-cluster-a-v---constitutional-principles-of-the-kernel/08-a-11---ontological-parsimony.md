@@ -62,7 +62,7 @@ Use this compact record:
 ParsimonyAdmissionRecord:
   Candidate:
   RecoveredGovernedObject:
-  E24UKDecisionRef:
+  E24FamilySettlementDecisionRef: exact shared decision governed by E.24:4.0a; do not fill another E.24.UK decision form.
   ExistingExpressionAttempt:
   MaterialLossIfComposed:
   OverlapWithExistingValues:
@@ -83,7 +83,7 @@ Possible dispositions:
 
 | Candidate claim | Parsimony result | Why |
 | --- | --- | --- |
-| `CoolingPump` as a new root U-kind | Express it as an admitted `U.System` classified under the context-local `CoolingCirculatorSystemRole@Context`; add an exact `U.SystemRoleAssignment` species only when an assignment occurrence matters, and add capability, Method, and Work claims only when current. | The useful distinctions are the System, its local system-role kind and classification, any obtaining assignment, capability, Method, and Work—not a new universal kind. |
+| `CoolingPump` as a new root U-kind | Express it as an admitted `U.System` classified under an exact local `CoolingCirculatorSystemRole` recovered through C.3. A context or source name may locate the definition but does not identify the kind. Add an exact `U.SystemRoleAssignment` species only when an assignment occurrence matters, and add capability, Method, and Work claims only when current. | The useful distinctions are the System, its local system-role kind and classification, any obtaining assignment, capability, Method, and Work—not a new universal kind. |
 | `Actuator` or another transformer-like noun | Recover the system or holon that participates as transformer in a `U.Transformation`; admit a durable value only if `E.24.UK` shows irreducible action-facing gain. | The bearer of change and the transformation relation are already governed; the noun alone does not create a kind. |
 | Provenance-chain wording | Try G.6 evidence-graph and provenance addressing first; admit a new durable value only if the direct evidence or provenance patterns cannot express the needed claim without material loss. | Parsimony tries subject patterns before minting a kernel addition. |
 | `SmallPart` or similar vague size class | Reject or keep local. | The boundary depends on private scale expectations unless a direct measurement or classification pattern supplies a crisp rule. |

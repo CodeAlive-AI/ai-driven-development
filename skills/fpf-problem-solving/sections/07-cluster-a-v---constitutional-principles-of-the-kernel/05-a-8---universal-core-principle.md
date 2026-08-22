@@ -69,7 +69,7 @@ Use this compact record:
 ```text
 UniversalCoreProjection:
   CandidateUKind:
-  E24UKDecisionRef:
+  UKindAdmissionResultRef: exact accepted E.24.UK output; follow it to the shared decision only when common inputs or decision mode are needed.
   DomainFamily:
   DomainTerm:
   LocalEoC:

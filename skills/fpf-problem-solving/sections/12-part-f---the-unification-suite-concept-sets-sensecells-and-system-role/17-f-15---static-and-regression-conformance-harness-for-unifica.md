@@ -15,7 +15,7 @@
 
 ### F.15:1 - Intent and applicability
 
-**Intent.** Give one compact harness for checking whether a finite naming and unification slice is locally sound now and remains sound across exact changes. F.15 does not define schemes, local senses, cells, values, relation occurrences, descriptions, rows, system-role kinds or assignments, status families, aliases, names, evidence, or publication. Its application checks exact already-defined objects under their direct patterns and records result claims without duplicating F.18 naming settlement.
+**Intent.** Give one compact harness for checking whether a finite naming and unification slice is locally sound now and remains sound across exact changes. F.15 does not define schemes, local senses, cells, values, relation occurrences, descriptions, rows, system-role kinds or assignments, status families, aliases, names, evidence, or publication. Its application checks exact objects already recovered through their defining or testing rules and records result claims without duplicating F.18 naming settlement.
 
 **Applicability.** Use F.15 when one receiving use depends on several already recovered items: effective ReferenceSchemes, F.17 `SchemeSenseCell` values, F.18 NameCards and selected designations, F.17 rows, local system-role kinds or status values, actual F.9 Bridge occurrences, or exact prior and later editions. Include a selected bounded-model-use Structure and its description only when that structure's organization changes this check or receiving use.
 
@@ -43,7 +43,7 @@
 
 ### F.15:2 - Problem frame
 
-Unification work fails when composition is claimed before locality, subject patternship, and continuity are checked:
+Unification work fails when composition is claimed before local meaning, exact object recovery, and continuity are checked:
 
 1. **Locality leak.** Same spelling is treated as one meaning without comparing exact `<ReferenceScheme, LocalSenseClaim>` projections.
 2. **Row sprawl.** F.17 rows or F.18 NameCards multiply although an existing governed value and admitted naming use already suffice.
@@ -67,7 +67,7 @@ A slice can look stable because labels, cards, rows, descriptions, relation reco
 | Locality versus reuse | Interpret each local sense under an exact scheme while allowing a separately established Bridge and bounded-use claim when cross-local use is current. |
 | Stability versus change | Recover exact earlier and later objects without treating spelling, ids, table position, or edition labels as continuity evidence. |
 | Clarity versus ontology | Keep the harness teachable without minting universal scope, frame, check, result, evidence, or context kinds. |
-| Composition versus subject patterns | Check a combined slice without replacing F.4, F.9, F.10, F.17, F.18, C.2.1, A.10, A.15.1, or E.24.PUB. |
+| Composition versus defining rules | Check a combined slice without replacing the rules in F.4, F.9, F.10, F.17, F.18, C.2.1, A.10, A.15.1, or E.24.PUB that define or test its members. |
 
 ### F.15:4 - Solution
 
@@ -100,12 +100,12 @@ A practitioner applying F.15 may check these exact objects together but redefine
 
 1. effective `U.ReferenceScheme` values and exact prior/later editions;
 2. independently governed local-sense claims and F.17 `SchemeSenseCell` coordinates;
-3. exact governed values and relation occurrences under their direct patterns;
+3. exact governed values and relation occurrences together with the rules that identify each value or say when each relation obtains, and the PatternIDs that locate those rules;
 4. F.4 `SystemRoleKindDescription` epistemes and their exact local system-role kinds;
 5. F.18 NameCard epistemes, selected Tech/Plain designations, aliases, and lineage;
 6. F.17 UnifiedTermRow epistemes and exact row editions, including admissible one-cell rows;
 7. actual F.9 Bridge occurrences, with Bridge descriptions or Cards referenced separately when current;
-8. subject-pattern status-family/value/use/window objects;
+8. status families, values, targets, scopes, windows, source conditions, and uses recovered through F.10 or another applicable status rule;
 9. selected bounded-model-use Structures and their separate descriptions only when structural organization changes the checked use;
 10. exact source, evidence, currentness, and publication relation occurrences needed by the result's receiving use.
 
@@ -180,7 +180,7 @@ Another expression under the same `<ReferenceScheme, LocalSenseClaim>` projectio
 ### F.15:9 - Static conformance rules for composed material
 
 **SCR-F15-S7 (`SystemRoleKindDescription` boundary).**
-An F.4 `SystemRoleKindDescription` is one C.2.1 episteme about one exact local system-role kind under one effective ReferenceScheme. It names the practice or source boundary in which the kind is constituted, its stable work-facing contribution distinction, and current `KindSignature`; a taxonomy episteme may support recovery but does not identify the kind. The description is not the kind, NameCard, `SchemeSenseCell`, assignment, status, evidence template, method, or work; a cell is cited only when the naming use needs one.
+An F.4 `SystemRoleKindDescription` is one C.2.1 episteme about one exact local system-role kind under one effective ReferenceScheme. It makes the C.3 candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, and current `KindSignature` recoverable. Practice or source provenance may locate the definition but does not identify the kind. The description is not the kind, NameCard, `SchemeSenseCell`, assignment, status, evidence template, method, or work; a cell is cited only when the naming use needs one.
 
 **SCR-F15-S8 (Name discipline without F.18 duplication).**
 Every candidate or selected name cites the recovered governed value and the pattern containing its defining or constraining rule. Apply the F.14 and F.8 criteria to decide whether naming work continues; use F.18 to form the NameCard and choose designations; use F.17 to constitute an admitted row. In an F.15 check, verify those exact references; do not choose a name.
@@ -201,12 +201,12 @@ A cited F.9 Bridge has two exact endpoint cells, one exact relation-semantic pro
 Use F.9 only for different `<ReferenceScheme, LocalSenseClaim>` projections and one named current correspondence use. Same-projection expression reuse stays with designation; different projections do not themselves establish a relation; when no current correspondence use exists, add no Bridge or bounded-use claim.
 
 **SCR-F15-S14 (Status honesty).**
-A status-shaped item resolves to the exact subject-pattern status family/value, target, scope, window, source condition, and intended use. Adjective, time/scale/phase/confidence variation, row presence, or display label creates no status family, value, assurance, gate decision, or evidence use.
+A status-shaped item resolves through F.10 or another applicable status rule to the exact family and value definitions, target, scope, window, source condition, and intended use. Adjective, time, scale, phase, confidence, row presence, or display label creates no status family, value, assurance, gate decision, or evidence use.
 
 **SCR-F15-S15 (System-role-kind relation preservation).**
 Every exact incompatibility, monotonic kind order, residual qualification, bundle, requirement, or selected `SystemRoleKindRelationStructure` remains an independently identified relation occurrence or selected structure. A description or convenient fused name creates neither another system-role kind nor an assignment or performed Work.
 
-**SCR-F15-S16 (Direct-pattern boundary for non-naming claims).**
+**SCR-F15-S16 (Rule and locator boundary for non-naming claims).**
 Assignment, work, result, evidence, source, publication, currentness, assurance, gate, decision, method, capability, policy, structure, and subject-relation claims cite the rule that defines or tests each exact claim and the PatternID that locates it. When a rule fails, re-evaluate that subject claim under the rule; an F.15 result neither decides nor absorbs the claim.
 
 **SCR-F15-S17 (Public naming and publication separation).**
@@ -238,7 +238,7 @@ The RSCR family compares exact earlier and later refs for each changed member. E
 #### F.15:11.1 - Schemes, versions, and known confusions
 
 **RSCR-F15-E1 (Exact before/after and no silent replacement).**
-For each changed member, resolve exact `@t0` and `@t1` refs and versions. A changed effective ReferenceScheme changes interpretation-bearing content; an unchanged label or shared designator does not prove continuity. State the subject-pattern identity, continuity, split, retirement, or replacement claim explicitly.
+For each changed member, resolve exact `@t0` and `@t1` refs and versions. A changed effective ReferenceScheme changes interpretation-bearing content; an unchanged label or shared designator does not prove continuity. State the exact identity, continuity, split, retirement, or replacement claim and cite the rule that defines or tests it.
 
 **RSCR-F15-E2 (Known confusion check).**
 Recheck or explicitly retire every prior confusion, blocked use, and nearest counterexample affected by the change. A new edition does not erase an old trap.
@@ -262,10 +262,10 @@ When a changed value, sense, or use alters row support, preserve the exact earli
 #### F.15:11.4 - SystemRoleKindDescriptions and names
 
 **RSCR-F15-E7 (`SystemRoleKindDescription` continuity).**
-Compare exact F.4 description epistemes, described local system-role kinds, their named practice or source boundaries and stable work-facing contribution distinctions, current `KindSignature` editions, effective schemes, and claim content. A label-only change cannot prove that the described kind or description episteme stayed the same.
+Compare exact F.4 description epistemes and the described kinds' candidate domains, operative membership conditions, intended member/non-member boundaries, continuity rules, current `KindSignature` editions, effective schemes, and claim content. Source or practice provenance is a cue to compare those definitions, not an identity key. A label-only change cannot prove that the described kind or description episteme stayed the same.
 
 **RSCR-F15-E8 (Alias for expression change; direct recovery for meaning change).**
-If only a selected expression changes while the exact value, scheme, sense, and use are preserved, F.13 and F.18 may record an alias or rename. A changed described system-role kind, constituting practice or source boundary, stable contribution distinction, current criterion, scheme, local sense, or description claim requires the corresponding new object or episteme and a fresh naming settlement.
+If only a selected expression changes while the exact value, scheme, sense, and use are preserved, F.13 and F.18 may record an alias or rename. A changed described kind, candidate domain, operative membership distinction, member/non-member boundary, continuity rule, scheme, local sense, or description claim requires the corresponding new object or episteme and a fresh naming settlement. A practice or source change by itself triggers comparison; it proves neither continuity nor a split.
 
 #### F.15:11.5 - Bridges and bounded uses
 
@@ -278,7 +278,7 @@ A later equivalence claim requires an exact Equivalence profile, true predicate,
 #### F.15:11.6 - Status and system-role-kind relation structure
 
 **RSCR-F15-E11 (Status-window and status-use stability).**
-Compare the exact subject-pattern family/value, target, scope, window, source condition, and intended use at `@t0` and `@t1`. Changed time, scale, confidence, or edition does not create a new family or preserve an old result automatically.
+Compare the exact status family and value definitions, target, scope, window, source condition, and intended use at `@t0` and `@t1`. Changed time, scale, confidence, or edition does not create a new family or preserve an old result automatically.
 
 **RSCR-F15-E12 (System-role-kind relation stability).**
 Preserve, retire, or restate each exact incompatibility, monotonic kind order, residual qualification, bundle, requirement, or selected `SystemRoleKindRelationStructure` before using it in a naming, assignment, or Work claim. No later description or fused label substitutes for the relation occurrence.
@@ -350,7 +350,7 @@ F.15 result:
 
 #### F.15:13.3 - Rename a SystemRoleKindDescription without changing the described kind
 
-`IncidentReviewerSystemRoleKindDescription@t0` and `ServiceIncidentReviewerSystemRoleKindDescription@t1` describe the same exact `IncidentReviewerSystemRole` only if F.4's named practice or source boundary, stable work-facing contribution distinction, current `KindSignature`, effective scheme, and description claims support that continuity. The names alone do not.
+`IncidentReviewerSystemRoleKindDescription@t0` and `ServiceIncidentReviewerSystemRoleKindDescription@t1` describe the same exact `IncidentReviewerSystemRole` only if F.4's candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, current `KindSignature`, effective scheme, and description claims support that continuity. A changed source, practice, or name alone decides neither sameness nor difference.
 
 F.15 result:
 
@@ -376,7 +376,7 @@ A team proposes `PeakHoursAvailabilityStatus` as a new family because one existi
 
 F.15 result:
 
-* SCR-F15-S14 fails if exact subject-pattern recovery shows only a changed window or use.
+* SCR-F15-S14 fails if F.10 or the applicable status rule shows only a changed window or use.
 * RSCR-F15-E11 compares the exact family/value, target, scope, window, source condition, and use rather than the suffix.
 * Use F.10 or the applicable status pattern for the status claim; F.14/F.8/F.18 block a new durable name until a distinct governed value is independently recovered.
 
@@ -424,7 +424,7 @@ A finite slice is locally admissible for its named receiving use only when:
 1. every scope member and exact version resolves under its identity rule and PatternID locator;
 2. every triggered static rule has one exact current C.2.1 result claim;
 3. every changed member has an exact prior/later pair and RSCR result naming continuity/change, losses, evidence, and use;
-4. every failed subject claim names and reaches its direct governor before reuse;
+4. every failed subject claim is re-evaluated under its defining or testing rule before reuse;
 5. witness refs and any relied-on A.10/B.3 path are current for the exact result and use, without becoming the result;
 6. the optional record cites, but does not replace, applications/work, result claims, evidence, Bridge occurrences, descriptions, publication, or currentness;
 7. tempting non-admitted uses—system-role assignment, performed work, source or publication authority, status transfer, evidence use, equivalence, assurance, gate passage, and authorization—are explicit; and

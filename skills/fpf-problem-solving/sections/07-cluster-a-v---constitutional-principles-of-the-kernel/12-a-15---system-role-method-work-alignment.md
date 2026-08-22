@@ -6,11 +6,11 @@
 
 **At a glance.** Use this pattern when a team must say which system performed which Work, under which system-role assignment, which Method the Work enacted, and which plan applied without confusing any of those values with a description, capability, record, or result.
 
-**Use this when.** Separate a local system-role kind, an assignment occurrence that obtains, its holder system, a `U.Method`, any `U.MethodDescription`, a `U.WorkPlan`, a holder `U.Capability` instance and its support, and dated Work before a schedule, display, document, or familiar label is treated as if it established the whole chain.
+**Use this when.** Separate a local system-role kind, an assignment occurrence that obtains, its holder system, a `U.Method`, any `U.MethodDescription`, a `U.WorkPlan`, a holder `U.Capability` instance, the capability-fit and evidence claims actually relied on, and dated Work before a schedule, display, document, or familiar label is treated as if it established the whole chain.
 
 **Start here when.** The team is mixing system classification or assignment with recipe, schedule, capability, or performed Work, often under an ambiguous source word such as *role*, *process*, *workflow*, or *activity*.
 
-**First output.** The smallest inspectable alignment needed by the receiving use: one exact Work occurrence `W`, one exact assignment occurrence `RA` belonging to a direct species under `U.SystemRoleAssignment`, the holder system `RA.HolderSystemSlot`, and one Method `M`, with `performedUnderAssignment(W, RA)` and `enactsMethod(W, M)` stated only when they obtain. Keep the local system-role kind, MethodDescription, WorkPlan, capability, assertions, records, and results separate.
+**First output.** If the team is planning, name the intended `U.WorkPlan`, intended performer System, local system-role kind, and Method needed by the next decision; do not invent Work or an obtaining assignment. If performance has occurred, establish the complete A.15.1 and F.6 basis for the named Work. Then name the assignment occurrence, its declared species, its holder System, and the Method relevant to this decision. Say plainly that the Work was performed under that assignment and enacted that Method only when both relations obtain. Keep the local system-role kind, MethodDescription, WorkPlan, capability, assertions, records, and results separate in either branch.
 
 **Working enactment-alignment sequence.** Recover the holder system and local system-role kind -> recover the assignment occurrence and its declared species -> separate Method from MethodDescription, WorkPlan from Work, and capability from performance -> state only the relations needed by the next use -> proceed, plan, probe, narrow, use the pattern for another claim, or stop.
 
@@ -20,15 +20,15 @@
 2. Name the declared assignment species and the occurrence that actually obtains. The species defines the holder and assigned-kind positions; the occurrence supplies their actual values. Add another participant only when it changes the assignment.
 3. Name the Method and keep any MethodDescription separate. Name either the intended `U.WorkPlan` or the actual dated Work occurrence, never one as proof of the other.
 4. State `performedUnderAssignment` and `enactsMethod` only when their predicates obtain. The holder system performs the Work; neither the kind, assignment, Method, description, plan, nor capability acts.
-5. If a visible item is being relied on for a Work, approval, evidence, gate, or release claim before its supporting relation is known, use `A.15.4`; keep only the alignment part here.
+5. If a visible item is being relied on for a Work, approval, evidence, gate, or release claim before the relation required by that claim is known, use `A.15.4`; keep only the alignment part here.
 
 **Action-pattern protection.** This pattern does not classify encountered publications, displays, or cues. It keeps system-role kind, assignment, Method, MethodDescription, plan, capability, performed Work, and records distinct so an engineer-manager can choose the next admissible action. Use `A.15.4` for work-relevant appearance-based reliance repair.
 
-**Minimum sufficient use.** Recover only the values and relations needed by the receiving use. Ordinary orientation can stop at one clear sentence. A reliance-bearing claim may need exact occurrence identity, source, extent, and support.
+**Minimum sufficient use.** Recover only the values and relations needed by the receiving use. Ordinary orientation can stop at one clear sentence. A reliance-bearing claim may also need exact occurrence identity and extent, the selected source and its currentness, a capability-fit claim, and the evidence or assurance claim actually relied on.
 
 **Recovered-reference sufficiency condition.** Proceed when every project-side value on which the claim relies is identified by its admitted kind, exact referent, scope, and current window. Otherwise narrow the claim, run a bounded reversible probe, recover the missing relation, or create only the smallest repair request, decision request, prospective WorkPlan entry, or missing-source note needed for the next use.
 
-**Ordinary use.** “Robot-7 performed InspectionWork-17 under InspectionAssignment-17 using TurbineInspectionMethod” can be enough when those three relations and identities are already current.
+**Ordinary use.** “Robot-7 holds InspectionAssignment-17; InspectionWork-17 was performed under that assignment; and the Work enacted TurbineInspectionMethod” can be enough when the assignment occurrence and both Work relations obtain and are current for this use.
 
 **Reliance-bearing use.** Use the fuller frame when assignment identity, assignment state, Method edition, capability fit, plan baseline, approval, evidence, release, or disputed responsibility changes the decision. Responsibility and authority remain separate direct relations; neither follows from a system-role kind or assignment.
 
@@ -48,13 +48,13 @@
 
 **Not this pattern when.** Use `A.15.1` for one dated Work occurrence, `A.15.2` for planning or schedule baselines, `A.15.5` for work-entry readiness, `A.16` or `A.16.1` for a cue that has not become an alignment question, `A.6` or `A.6.B` for boundary or policy wording, `E.10.ROLE` when *role* is still unresolved, and `A.15.4` when a visible item is being relied on by appearance.
 
-**Related pattern contributions.** Use `A.2` and C.3 to identify exact local system-role kinds, `A.2.1` for direct `U.SystemRoleAssignment` species, `F.6` for performed-Work attribution, `A.15.1` for dated Work, `A.15.2` for WorkPlan epistemes, `A.15.3` for slot-filling plan items, `A.15.4` for work-relevant reliance by appearance, `A.15.5` for work-entry readiness, `F.11` to align Method and Work vocabulary across contexts, and `F.17` for the human-facing work sheet.
+**Related pattern contributions.** Use `A.2` and C.3 to identify exact local system-role kinds, `A.2.1` for direct `U.SystemRoleAssignment` species, `F.6` for performed-Work attribution, `A.15.1` for dated Work, `A.15.2` for WorkPlan epistemes, `A.15.3` for declaration-local planned-filling content inside a WorkPlan, `A.15.4` for work-relevant reliance by appearance, `A.15.5` for work-entry readiness, `F.11` to align Method and Work vocabulary across contexts, and `F.17` for the human-facing work sheet.
 
-**Causal-use work boundary.** Counterfactual sampling, randomization, intervention assignment, target-trial emulation, and causal evidence collection can be represented here as Methods, MethodDescriptions, WorkPlans, dated Work occurrences, and their exact assignment and Method relations. A.15 does not make the resulting causal use admissible. Use `C.28` for the causal-use question, `CausalityLadderRung`, causal estimand, `CausalEvidenceSupportBasis`, counterfactual-sampling realizability, `CausalUseSupportVerdict`, and its supported and unsupported uses.
+**Causal-use work boundary.** Counterfactual sampling, randomization, intervention assignment, target-trial emulation, and causal evidence collection can be represented here as Methods, MethodDescriptions, WorkPlans, dated Work occurrences, and their exact assignment and Method relations. A.15 does not make the resulting causal use admissible. Use `C.28` for the causal-use question, rung, estimand, separate evidence/identification/estimate/sampling/simulation components, counterfactual-sampling result, support result, and supported and unsupported uses.
 
-**Related-record mistakes.** A cue, publication, plan, record, result, evidence item, or approval can help locate a value without becoming that value. Recover the dated Work under `A.15.1`; state production or result relations under their direct patterns; and use `A.15.4` only when reliance on an encountered appearance is the problem.
+**Related-record mistakes.** A cue, publication, plan, record, result, evidence item, or approval can help locate a value without becoming that value. Recover the dated Work under `A.15.1`. State a subject-specific production or result relation only under its direct pattern; for a production-work, entity-inception, or production-completion question, A.15.PROD may instead return one local claim or exact blocker. Use `A.15.4` only when reliance on an encountered appearance is the problem.
 
-**Boundary to coarsened renderings.** A briefing, summary, redacted note, or coarsened rendering may orient work. It supports execution, approval, gate, or evidence use only when the required sources and relations remain explicit and reopenable. Use `A.6.3.CSC` when coarsening itself changes what may be relied on.
+**Boundary to coarsened renderings.** A briefing, summary, redacted note, or coarsened rendering may orient work. Rely on it for an execution, approval, gate, or evidence question only when the exact sources and relations required by that use remain explicit and reopenable. Use `A.6.3.CSC` when coarsening itself changes what may be relied on.
 
 **Use boundary.** A.15 supplies only the system-role–Method–Work alignment needed by the current project question. Send a single occurrence, wording, assurance, evidence, result, or reliance question to the pattern that defines or tests that claim.
 
@@ -69,7 +69,7 @@ A.15 brings these already defined values together without creating a new process
 * **F.6** relates one dated Work occurrence to one exact assignment occurrence through `performedUnderAssignment` and projects the actual performer from `RA.HolderSystemSlot`.
 * **A.3.1 and A.3.2** keep `U.Method` distinct from `U.MethodDescription`.
 * **A.15.1 and A.15.2** keep actual dated Work distinct from intended WorkPlan and from every record about either.
-* **A.2.2, A.10, and neighboring direct patterns** keep capability, capability support, evidence, source use, publication, responsibility, authority, access, result, and currentness outside assignment and Work identity.
+* **A.2.2, A.10, and neighboring direct patterns** keep capability-fit claims, evidence use, source currentness, publication, responsibility, authority, access, results, and assurance outside assignment and Work identity.
 
 Use `E.10`, `E.10.ARCH`, and `E.10.ROLE` when source wording such as *process*, *workflow*, *action*, *activity*, *schedule*, or *role* has not yet been resolved. The wording chooses no FPF object by itself. Recover the exact Method, MethodDescription, WorkPlan, Work, Transformation, Dynamics, evidence, gate, source, publication use, participation relation, declaration slot, or ordinary non-technical use that the claim actually needs.
 
@@ -93,7 +93,7 @@ Without this alignment, several category errors recur:
 | Structure and enactment | Stable structural decomposition must remain distinct from system classification, assignment, Method, plan, capability, and dated Work. |
 | Simple and specialized assignments | A simple assignment should remain light, while a real commission, position, or locus must retain the participant that distinguishes its species and occurrence. |
 | Method, plan, and occurrence | A reusable Method, its description, intended Work, and performed Work must stay connected without becoming one record. |
-| Clarity and precision | Practitioners need ordinary readable claims, while reliance-bearing use may need exact occurrence identity and support. |
+| Clarity and precision | Practitioners need ordinary readable claims, while reliance-bearing use may need exact occurrence identity, evidence use, source currentness, or assurance. |
 | Accountability and proportionality | Auditability may require a full trace, but ordinary orientation should stop at the shortest sufficient relation chain. |
 
 ### A.15:4 - Solution
@@ -104,13 +104,13 @@ When source wording points to changing, producing, selecting, deriving, controll
 
 #### A.15:4.1 - Core entities kept distinct
 
-* **Exact local system-role kind.** A value such as `InspectorSystemRole : U.Kind` is admitted under A.2 with C.3 for one bounded contribution identity. It is not a system, assignment, relation slot, capability, Method, Work, responsibility, or authority. A system classification judgment and an assignment occurrence are separate claims.
+* **Exact local system-role kind.** A value such as `InspectorSystemRole : U.Kind` is admitted under A.2 with C.3 through its `U.System` candidate domain, operative work-facing membership condition, member/non-member boundary, and continuity rule. It is not a system, assignment, relation slot, capability, Method, Work, responsibility, or authority. A system classification judgment and an assignment occurrence are separate claims.
 * **`U.SystemRoleAssignment`.** This is the relation family consumed by A.15 and F.6. It has no permissive root `RelationSignature`. Each direct species declares `HolderSystemSlot : U.System`, a declaration-local `AssignedSystemRoleKindSlot` whose ValueKind is one exact local system-role-kind domain, its predicate and applicability, every real additional participant, and its occurrence-identity rule.
 * **`U.Method`.** The run-independent semantic way of doing. A Work occurrence can stand in `enactsMethod(W, M)`; the Method does not act.
 * **`U.MethodDescription`.** An already identified `U.Episteme` whose exact `EntityOfConcern` is an admitted Method and whose substantive claims say how that Method is done, as judged by A.3.2. Wording, file form, or publication alone establishes no membership.
 * **`U.Capability`.** The A.2.2 holder-dependent ability instance. Capability statements, evidence, currentness assessments, and fit conditions are separate. Capability proves neither assignment nor performance.
 * **`U.WorkPlan`.** A `U.Episteme` about possible future Work, including intended windows, dependencies, performers, and budgets. It does not bring a future Work occurrence into existence.
-* **`U.Work`.** The admitted kind for concrete dated Work occurrences. One Work individual has its own temporal extent and may stand in actual performer, Method, containing-system, affected-referent, binding, resource-use, production, and result relations when those predicates obtain. Any log, ticket, assertion, description, or performed-work record is a separate episteme.
+* **`U.Work`.** The admitted kind for concrete dated Work occurrences. One Work individual has its own temporal extent, at least one obtaining A.15.1 `enactsMethod` relation, and at least one obtaining locally declared containing-system relation. It may stand in further enactment, affected-referent, binding, resource-use, production, and result relations when the receiving use needs those independently obtaining facts. Any log, ticket, assertion, description, or performed-work record is a separate episteme.
 
 **Work occurrence and record boundary.** Do not add a universal `primaryTarget` field, a local `kind` field, or an Operational, Communicative, and Epistemic enumeration to Work identity. Recover the exact affected-referent, transformation, speech-act effect, commitment effect, production, delivery, acceptance, or other relation under its direct pattern. Those adjectives can remain recognition cues; they do not define Work subkinds by enumeration.
 
@@ -148,7 +148,7 @@ The diagram shows a simple direct assignment species. A stronger appointment can
 
 * **Capability fit.** A MethodDescription, WorkPlan, or work-admission assertion may require a holder capability threshold. The fit condition tests the holder's `U.Capability` instance and may cite declared measures, `U.Characteristic` values, Q-Bundle slots, or architecture-characteristic criteria. It is neither an assignment participant nor a second capability kind.
 * **MethodDescription membership.** `D` is a `U.MethodDescription` only when A.3.2 recovers Method `M` as its exact EntityOfConcern and at least one substantive way-of-doing claim. “D describes M” is shorthand for that constitution and membership result, not another binary relation.
-* **`enactsMethod(W : U.Work, M : U.Method)`.** This relation states which exact Method the dated Work enacts. It neither attributes a performer nor turns a description into the Method.
+* **`enactsMethod(W : U.Work, M : U.Method)`.** This relation states which exact Method the dated Work enacts. A.15.1 defines its participant order, predicate, occurrence identity, and multiplicity. It neither attributes a performer nor turns a description into the Method.
 * **`performedUnderAssignment(W : U.Work, RA : U.SystemRoleAssignment)`.** F.6 defines this relation. `RA` must be an occurrence of a declared assignment species; it must cover the Work interval while the species predicate obtains, and the performer is `RA.HolderSystemSlot`. The assignment is the attribution ground, not the actor. A record may state the relation without constituting it. Read an existing `performedBy(W, RA)` claim only through the F.6 compatibility boundary after resolving the holder System; do not author new claims with that spelling.
 
 One assignment occurrence continues through the maximal uninterrupted interval in which its direct species predicate obtains for fixed participants. A declared interval, taxonomy, scheme, KindSignature, assertion, evidence item, or selected model-use structure can describe or interpret the claim but does not create the occurrence or become a generic participant.
@@ -178,57 +178,36 @@ Low-human-overlap approaches remain admissible here only while they stay tied to
 
 Use `A.15.4` when an encountered episteme, carrier, display, credential view, generated explanation, copied statement, provenance mark, dashboard tile, schema wording, API wording, or source-relation chain is being relied on by appearance for Work, assignment currentness, assignment state, source currentness, approval, authorization, gate passage, evidence, engineering justification, release, or another reliance-bearing claim.
 
-A.15 itself keeps the exact local system-role kind, holder system, direct assignment occurrence, Method, MethodDescription, WorkPlan, dated Work occurrence, and every separate episteme distinct. A.15.4 recovers the project-side value and relation required before the visible item can support the claim.
+A.15 itself keeps the exact local system-role kind, holder system, direct assignment occurrence, Method, MethodDescription, WorkPlan, dated Work occurrence, and every separate episteme distinct. A.15.4 recovers the project-side value and relation that must hold before the visible item can warrant the attempted use.
 
 A principle scheme, functional diagram, scenario, screen, or explanation that exposes an `E.18.1` P2W carry-through structure may help a team plan Work or find a source. It does not become the selected Method, plan, Work occurrence, result, evidence, or authority by publication.
 
-#### A.15:4.4a - Method-Work Unfolding Linkage
+#### A.15:4.4a - Inspecting Method–Work Alignment Across an Unfolding Structure
 
-Use `MethodWorkUnfoldingLinkage@Context` only when a constraint-dependent unfolding structure needs Method and Work relations to remain inspectable across A.3 and the A.15 family. It is a dependent linkage record, not a root U-kind, Method, Work, authorization, evidence, or gate passage.
+Do not create a linkage record merely because one unfolding structure mentions several Method- and Work-related values. Keep each direct relation under the pattern that defines it. When a receiving use must preserve an inspectable explanation across those relations, write one bounded `C.2.1` episteme whose EntityOfConcern is the exact selected unfolding `U.Structure`. Its ClaimGraph may cite, as separate claims, the selected Method and Method-relation structure, MethodDescription epistemes, relevant local system-role kinds and assignment occurrences, the Work that enacts the Method, Work-part relations, independently identified transformations and their direct Work-to-change claims, intended WorkPlans, readiness results, capability-fit conditions, evidence, assurance, and gate decisions. Include only claims needed by that receiving use.
 
-```text
-MethodWorkUnfoldingLinkage@Context:
-  declaration: dependent linkage under A.15 and the adjacent Method, evidence, assurance, and gate patterns
-  unfoldingStructureRef:
-  methodRef?:
-  methodRelationStructureRef?:
-  methodDescriptionRefs[]:
-  applicableSystemRoleKindRefs[]:
-  capabilityFitConditionRefs[]:
-  transformationKindRefs[]:
-  workPlanRefs[]:
-  workEntryReadinessRefs[]:
-  performedWorkRefs[]:
-  evidenceRefs[]:
-  assuranceRefs[]:
-  gateRefs[]:
-  stopOrReturnCondition:
-```
+Call this episteme a *Method–Work alignment account* in ordinary prose. Its identity comes from its EntityOfConcern and ClaimGraph, not from a new `MethodWorkUnfoldingLinkage@Context` kind or a field bundle. Each claim in the account remains defined or tested by its own pattern: A.3 for Method or MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work and Work relations, A.10 for evidence, B.3 for assurance, and A.20 or A.21 for gates. If the useful account would need several unrelated entities of concern, split it instead of using one umbrella record.
 
-`applicableSystemRoleKindRefs[]` uses `U.KindRef` and identifies local system-role kinds. It records no assignment. When an assignment matters, use a context field ending in `...SystemRoleAssignmentRef`, typed by `U.RelationRef constrained to U.SystemRoleAssignment`, and resolve the assignment occurrence and its declared species.
-
-`capabilityFitConditionRefs[]` points to A.2.2 capability-fit conditions for the Method or Work use. It is not a vague ability bucket, Q-Bundle by name, measured characteristic, or assignment participant unless the corresponding direct pattern establishes that value.
-
-When another structure, for example a CGUS, P2W, P2S, improvement-loop, or transformation-flow slice, cites `methodWorkLinkageRef?`, the reference means only that Method and Work relations must remain visible. Every direct claim keeps its own basis. If one direct claim is current, use its pattern: A.3 for Method or MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work, A.10 for evidence, B.3 for assurance, and A.20 or A.21 for gates.
+Another structure, such as CGUS, P2W, P2S, an improvement-loop slice, or a transformation-flow slice, may cite the exact episteme only when its receiving use needs this alignment explanation. The citation creates none of the cited relations and cannot replace their sources, currentness checks, or criteria.
 
 #### A.15:4.5 - Boundary to A.15.5 Work-Entry Readiness
 
 Use `A.15.5` when the current question is whether intended Work is ready to enter its boundary. A.15 keeps system-role kind, assignment, Method, plan, and Work distinct; A.15.5 carries `WorkEntryReadiness@Context`, `FullKitCondition`, commitment disposition, resource-readiness references, WIP or flow-policy references, planned baselines, and launch-gate references when those values are current.
 
-Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5, but the readiness relation is admitted only when its target WorkPlan or plan item, missing inputs, any performed preparation Work, planned baseline, and stop or degraded-use condition can be named.
+Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5, but a readiness result needs the WorkPlan being judged, the PlanItem content used by the criterion, missing inputs, any performed preparation Work, the planned baseline, and the stop or degraded-use condition. Address the PlanItem content through that WorkPlan; it is not another readiness target.
 
 ### A.15:5 - Archetypal Grounding
 
 Use this alignment whenever the live question joins a holder system, exact local system-role kind, assignment occurrence, Method, plan, capability, or performed Work. Physical engineering, knowledge work, and socio-technical work can use the same distinctions without turning A.15 into a universal process ontology.
 
-**Boundary case — possessed algorithm versus enacted Method.** `Robot-7 : U.System` is classified under `InspectorSystemRole` and holds `InspectionAssignment-17`, an occurrence of a direct maintenance-assignment species. A capability claim may say that Robot-7 can inspect turbines, and source prose may say it “possesses inspection algorithm A”. Neither claim is dated performance, and neither makes `TurbineInspectionProcedure-v3` a `U.MethodDescription`. If `InspectionWork-17` occurs, use F.6 to establish `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)`, while a separate relation can establish `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`. Use A.3.2 to decide whether the procedure episteme is a MethodDescription. Robot-7 acts; the kind, assignment, capability, algorithm wording, Method, and description do not.
+**Boundary case — possessed algorithm versus enacted Method.** `Robot-7 : U.System` is classified under `InspectorSystemRole` and is the holder of `InspectionAssignment-17`, an occurrence of a direct maintenance-assignment species. A capability claim may say that Robot-7 can inspect turbines, and source prose may say it “possesses inspection algorithm A”. Neither claim is dated performance, and neither makes `TurbineInspectionProcedure-v3` a `U.MethodDescription`. If `InspectionWork-17` occurs, first establish its complete A.15.1 and F.6 basis. For this alignment, the Work was performed under `InspectionAssignment-17` and enacted `TurbineInspection@Maintenance-2026`. Use A.3.2 to decide whether the procedure episteme is a MethodDescription. Robot-7 acts; the kind, assignment, capability, algorithm wording, Method, and description do not.
 
 | Alignment position | Manufacturing | Scientific peer review |
 | --- | --- | --- |
 | Exact local system-role kind | `WeldingRobotSystemRole` | `PeerReviewerSystemRole` |
 | Holder system | `ABB_Robot_Model_IRB_6700` | `Dr_Alice_Smith`, modeled as an admitted `U.System` |
 | Direct assignment species and occurrence | `FactoryWeldingAssignment` with the robot and `WeldingRobotSystemRole`; include another participant, for example a factory line or work order, only if that species predicate depends on it | `JournalReviewAssignment` with Alice and `PeerReviewerSystemRole`; a commission-sensitive appointment species also carries the exact review commission |
-| Separate semantic sources when used | `FactoryProductionSystemRoles-2026` and `Factory-Line-B-Scheme` may support classification or interpretation claims | `PhysicsPeerReviewSystemRoles-2026` and `PhysicsLetters-A-Review-Scheme` may support classification or interpretation claims |
+| Separate semantic sources when used | `FactoryProductionSystemRoles-2026` and `Factory-Line-B-Scheme` may be used as sources for classification or interpretation claims under the applicable source and evidence relations | `PhysicsPeerReviewSystemRoles-2026` and `PhysicsLetters-A-Review-Scheme` may be used as sources for classification or interpretation claims under the applicable source and evidence relations |
 | Selected model-use structure, only when current | Cited by the receiving factory interpretation claim, never inserted as a participant of every assignment species | Cited by the receiving journal interpretation claim, never inserted as a participant of every assignment species |
 | `U.MethodDescription` episteme | `Welding_Procedure_WP-28A.pdf`, with `WeldingMethod` as exact EntityOfConcern and substantive way-of-doing claims | `Peer_Review_Guidelines_v3.docx`, with `PeerReviewMethod` as exact EntityOfConcern and substantive way-of-doing claims |
 | Holder capability, when relied on | ability to execute a 3F welding seam within a declared envelope and current window | ability to evaluate a quantum-optics manuscript within a declared envelope and current window |
@@ -277,24 +256,24 @@ Lenses tested: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**. Scope: 
 | ID | Check | Why |
 | --- | --- | --- |
 | **CC-A15-1** | Keep exact local system-role kind, `U.SystemRoleAssignment`, `U.Method`, `U.MethodDescription`, `U.Capability`, `U.WorkPlan`, `U.Work`, and every record or result distinct. | Prevents one alignment frame from becoming one object. |
-| **CC-A15-1a** | Treat a dated Work individual as world-side; keep assertions, descriptions, logs, tickets, and performed-work records as separate epistemes. Actual performer, Method, temporal, containing-system, affected-referent, binding, and resource-use relations obtain independently and are not stored fields of the occurrence. | Blocks record fields from constituting Work. |
+| **CC-A15-1a** | Treat a dated Work individual as world-side; keep assertions, descriptions, logs, tickets, and performed-work records as separate epistemes. Actual performer, Method, temporal, locally declared containing-system, affected-referent, binding, and resource-use relations obtain independently and are not stored fields of the occurrence. | Blocks record fields from constituting Work. |
 | **CC-A15-2** | Keep the reusable Method, its description, intended Work, and performed Work distinct. Operational events do not mutate a MethodDescription or WorkPlan. | Prevents recipe, schedule, and execution collapse. |
 | **CC-A15-3** | Attribute Work through one exact occurrence of a directly declared species under `U.SystemRoleAssignment`. Confirm that `RA.HolderSystemSlot` is the actual performer and that the assignment predicate covers the Work interval. | Gives the Work a recoverable performer without a universal assignment signature. |
 | **CC-A15-4** | Trace `W -performedUnderAssignment-> RA`, `RA.HolderSystemSlot -> H`, and `W -enactsMethod-> M`. Cite MethodDescription, plan, capability, source, and evidence separately only when relied on. | Preserves an inspectable chain without turning interpretation metadata into participants. |
-| **CC-A15-5** | Keep system-role kinds, capabilities, fit predicates, Methods, and support records out of `partOf` hierarchies unless another direct pattern admits a structural relation. | Blocks classification and support as parts. |
+| **CC-A15-5** | Keep system-role kinds, capabilities, fit predicates, Methods, and evidence or assurance records out of `partOf` hierarchies unless another direct pattern admits a structural relation. | Blocks classification, evidence, and assurance as parts. |
 | **CC-A15-6** | Attribute resource use to dated Work through exact obtaining relations, not to a MethodDescription, WorkPlan, capability, assignment, or fit predicate. | Keeps costs with performance. |
 | **CC-A15-7** | Use `U.WorkPlan` for intended Work and identify actual Work independently. | Stops schedule-as-performance drift. |
 | **CC-A15-8** | Resolve unqualified *process*, *workflow*, *activity*, *schedule*, and *role* wording through `E.10.ARCH` or `E.10.ROLE`. | Prevents wording cues from choosing ontology. |
 | **CC-A15-9** | State `enactsMethod` and `performedUnderAssignment` separately. Only the admitted holder system performs Work. A capability or algorithm-possession phrase proves neither performance nor MethodDescription membership. Spontaneous physical evolution without this alignment remains `U.Dynamics`, not Work. | Prevents kind, assignment, capability, Method, description, plan, dynamics, and records from becoming actors. |
 | **CC-A15-10** | Treat a speech act that institutes an assignment, authorization, or gate-relevant effect as its own Work occurrence only when A.15.1 admission and the exact effect relation obtain. | Keeps the communicative Work distinct from later operational Work. |
 | **CC-A15-11** | Recover the assignment's direct species, exact local assigned-kind domain, real participants, predicate, and occurrence. Taxonomy, scheme, signature, context, and source are cited separately when the receiving claim uses them. An approver or deployer label neither creates a Work subkind nor proves performance. | Prevents a permissive assignment record and kind-by-label. |
-| **CC-A15-12** | Represent causal intervention and sampling work only through exact Methods, MethodDescriptions, WorkPlans, Work occurrences, assignment attribution, and Method enactment. Use `C.28` for the causal-use question, `CausalityLadderRung`, causal estimand, `CausalEvidenceSupportBasis`, `CausalUseSupportVerdict`, supported use, and unsupported use. | Keeps work alignment from becoming causal authority. |
+| **CC-A15-12** | Represent causal intervention and sampling work only through exact Methods, MethodDescriptions, WorkPlans, Work occurrences, assignment attribution, and Method enactment. Use `C.28` for the causal-use question, rung, estimand, separate support components, causal-use support result, supported use, and unsupported use. | Keeps work alignment from becoming causal authority. |
 | **CC-A15-13** | Use A.15.4 when a visible item is relied on by appearance; retain only the system-role–Method–Work separation here. | Keeps reliance repair out of the alignment kernel. |
 | **CC-A15-14** | Keep an E.18.1 P2W structure, its publication, selected Method, WorkPlan, Work, result record, and measurement distinct. | Publication alone establishes none of the project-side values. |
 
 ### A.15:8 - Common Anti-Patterns and How to Avoid Them
 
-- **System-role-kind as part.** Do not place `InspectorSystemRole`, a capability, fit condition, or support record in structural decomposition merely because it appears on an architecture diagram.
+- **System-role-kind as part.** Do not place `InspectorSystemRole`, a capability, fit condition, or evidence or assurance record in structural decomposition merely because it appears on an architecture diagram.
 - **Universal assignment signature.** Do not give `U.SystemRoleAssignment` one permissive root signature. Recover the direct species and its exact local assigned-kind domain.
 - **Generic assignment beside an appointment.** Let the specialized appointment occurrence itself belong to `U.SystemRoleAssignment`; F.6 uses its common holder projection.
 - **Recipe as evidence.** A MethodDescription can identify or constrain a Method but does not prove performed Work.
@@ -346,7 +325,7 @@ For visible credential, provenance, dashboard, explanation, or composed-source c
 
 * **Architecture-work boundary:** C.32.P2S and C.32.PAD may cite MethodDescriptions, pattern-use references, exact system-role assignments, separate responsibility or authority relations, readiness exits, and expected structure effects. C.32.ADR may publish those references. A.15 supplies only Method, description, plan, readiness, performed Work, and attribution distinctions.
 * **Uses:** `A.7` for strict distinction among system-role kind, assignment, Method, MethodDescription, plan, Work, and records.
-* **Builds on:** `A.2` and C.3 for exact local system-role kinds and classification; `A.2.1` for direct `U.SystemRoleAssignment` species; `A.2.2` for capability; `A.2.5` for `SystemRoleAssignmentStateRelation`; `A.2.7` for relations among system-role kinds; `A.6.5` for relation-slot discipline; A.3 for Method, MethodDescription, Dynamics, and Transformation; `A.15.1` for Work; `A.15.2` for WorkPlan; `A.15.3` for plan items; `A.15.5` for readiness; and F.6 for `performedUnderAssignment` and the actual-performer projection.
+* **Builds on:** `A.2` and C.3 for exact local system-role kinds and classification; `A.2.1` for direct `U.SystemRoleAssignment` species; `A.2.2` for capability; `A.2.5` for `SystemRoleAssignmentStateRelation`; `A.2.7` for relations among system-role kinds; `A.6.5` for relation-slot discipline; A.3 for Method, MethodDescription, Dynamics, and Transformation; `A.15.1` for Work; `A.15.2` for WorkPlan; `A.15.3` for declaration-local planned-filling content inside that WorkPlan; `A.15.5` for readiness; and F.6 for `performedUnderAssignment` and the actual-performer projection.
 * **Coordinates with:** A.15.4 for work-relevant reliance repair; E.10, E.10.ARCH, and E.10.ROLE for wording recovery; A.6 for boundary and policy claims; A.10 for evidence and provenance; B.3 for assurance; A.20 and A.21 for constraints and gates; C.28 for causal-use admissibility; C.29 for mathematical-lens use; E.18.1 for P2W carry-through; C.32.P2S for architecturing-flow references; and E.17.EFP for generated-explanation faithfulness.
 * **Used in:** claims that must keep systems, local system-role kinds, assignments, Methods, WorkPlans, Work occurrences, result records, and reliance repairs distinct. A.15 is not a generic process ontology, workflow engine, evidence graph, gate pattern, or publication pattern.
 
@@ -378,13 +357,13 @@ Useful outputs are an A.15 alignment claim when assignments and Work explain the
 
 ### A.15:12b - C.29 mathematical-lens use relation
 
-When a mathematical lens helps select a Method, compare Method families, shape a WorkPlan, or diagnose Work, use C.29 only for the fit of that diagnostic or selection reason. The next concrete value remains under its direct pattern: `ChoiceResult` or another local choice record when a choice is made, the selected Method when Method selection is claimed, `U.WorkPlan` for intent, dated Work for execution, a separate result record for a result claim, and A.15.4 when a reliance appearance is being used as the reason before its supporting relation is known. A mathematical lens may explain why a distinction is useful; it does not make a plan into performed Work or a Method explanation into execution evidence.
+When a mathematical lens helps select a Method, compare Method families, shape a WorkPlan, or diagnose Work, use C.29 only for the fit of that diagnostic or selection reason. The next concrete value remains under its direct pattern: `ChoiceResult` or another local choice record when a choice is made, the selected Method when Method selection is claimed, `U.WorkPlan` for intent, dated Work for execution, a separate result record for a result claim, and A.15.4 when a reliance appearance is being used as the reason before the required relation is known. A mathematical lens may explain why a distinction is useful; it does not make a plan into performed Work or a Method explanation into execution evidence.
 
 ### A.15:12c - P2W Work-Family Split
 
-When an E.18.1 P2W use reaches `WorkPlanning` or work-entry readiness, keep the selected Method, `U.WorkPlan`, `SlotFillingsPlanItem`, `WorkEntryReadiness@Context`, dated Work occurrence, and separate result records distinct. A principle scheme, functional diagram, or scenario may guide Method inspection and planning only after the current work-family value is named.
+When an E.18.1 P2W use reaches work planning or work-entry readiness, keep the selected Method, one `U.WorkPlan` with any declaration-local `SlotFillingsPlanItem` content, `WorkEntryReadiness@Context`, dated Work occurrence, and separate result records distinct. A planned-filling row is addressable only through that WorkPlan and gains no independent identity. A principle scheme, functional diagram, or scenario may guide Method inspection and planning only after the current work-family value is named.
 
-Work planning may cite evidence and currentness requests for the direct relation under repair. A.15.5 may cite WorkPlan and plan-item baselines when readiness is current. Name evidence, gate passage, performed Work, result measurement, assurance, or refresh before relying on a planning or readiness record for that stronger claim.
+Work planning may cite evidence and currentness requests for the direct relation under repair. A.15.5 may cite the exact WorkPlan and designate declaration-local PlanItem content when its readiness criterion uses that content. Name evidence, gate passage, performed Work, result measurement, assurance, or refresh before relying on a planning or readiness record for that stronger claim.
 
 ### A.15:12d - P2W Performed-Work Relation
 

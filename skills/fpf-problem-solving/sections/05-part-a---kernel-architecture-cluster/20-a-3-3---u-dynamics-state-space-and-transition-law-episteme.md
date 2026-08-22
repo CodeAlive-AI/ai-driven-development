@@ -38,7 +38,7 @@ Without a first-class `U.Dynamics`, state-change claims collapse into nearby but
 1. **Recipe becomes law.** Teams put procedure text, a control diagram, a workflow diagram, or a method description where a state-transition law should be.
 2. **Trace becomes law.** Dated work logs, telemetry, and incident sequences are treated as if past events defined what must happen.
 3. **Dashboard becomes state space.** Metric lists appear without characteristics, units, scales, topology, geometry, invariants, or operating region.
-4. **Prediction becomes authority.** A model output is used for a gate, release, safety, or work decision without freshness, non-expansiveness, commutation, observation, or assurance conditions.
+4. **Prediction becomes authority.** A model output is used for a gate, release, safety, or work decision without a use-specific account of applicability, horizon, error or uncertainty, currentness, observation, and assurance.
 5. **Domain vocabulary blocks transfer.** Physics, control, finance, reliability, operations, knowledge dynamics, and architecture all talk about change differently; FPF needs one kernel pattern that preserves their differences without inventing separate ontologies.
 
 ### A.3.3:3 - Forces
@@ -162,14 +162,9 @@ Calibration Work and its domain result may support a later dynamics episteme who
 
 #### A.3.3:4.6 - Prediction use in comparison or gating
 
-When predicted coordinates from `U.Dynamics` are used for comparison, release, gate, assurance, or work-preparation use, one of these conditions must hold:
+A prediction used for comparison, release, gate, assurance, or work preparation states the exact dynamics edition, predicted Coordinates, operating region, horizon, time step, parameter regime, source-currentness condition, and relevant error or uncertainty. The direct consumer's policy then states which observation, validation, sensitivity, robustness, stability, or normalization-composition conditions that use requires.
 
-1. a fresh observation is available for the gate or comparison window; or
-2. the applied transition map `Phi_dt` is declared non-expansive under the declared distance structure, and the transition commutes with the invariantization or quotient step on the domain of use.
-
-If neither condition is satisfied, prediction does not carry the gate or comparison claim. Use observation, state currentness through `C.27.TA`, use `C.27` when authored temporal-claim adequacy is the concern, or move the gate claim to `A.20`, `A.21`, or the direct authority pattern.
-
-Every use of `Phi_dt` states its applicability window: operating region, horizon, scale band, time step, parameter regime, and source-currentness condition.
+A fresh observation may replace or check the prediction when the policy calls for it. A non-expansive bound, another sensitivity bound, or commutation with a normalization step is required only when the named use relies on that property. None of those properties is by itself sufficient for a gate or comparison claim. If the required conditions are absent or fail, the prediction cannot carry that use; state currentness through `C.27.TA`, use `C.27` for authored temporal-claim adequacy, and use A.20, A.21, G.4, or the direct authority pattern for the actual decision.
 
 #### A.3.3:4.7 - A.3.4, C.27.TA, C.27, and C.29 boundaries
 
@@ -259,7 +254,7 @@ Typical biases:
 
 **CC-A3.3-9 (No actuals on dynamics).** Resource actuals, timestamps, Work occurrences, work logs, and telemetry remain claims about their exact Work, record, evidence use, measurement, or source use under the applicable subject patterns. Calibration Work and its domain result may support a later dynamics episteme with its own C.2.1 identity; a continuing edition relation obtains only when C.2.1's separate predicate does.
 
-**CC-A3.3-10 (Prediction use).** Predicted coordinates used for comparison or gating require fresh observation or a declared non-expansive, invariant-commuting transition map over the domain of use.
+**CC-A3.3-10 (Prediction use).** Predicted Coordinates used for comparison or gating state the exact model edition, domain, horizon, currentness, error or uncertainty, and every observation, validation, sensitivity, stability, or normalization-composition condition required by that consumer's policy. No universal non-expansiveness or commutation test substitutes for the direct decision rule.
 
 **CC-A3.3-11 (Temporal boundary).** Positive temporal aspects stay with `C.27.TA`; temporal-claim adequacy, freshness-use, delay-use, rhythm-use, inertia-use, and currentness-use claims stay with `C.27`; reusable transition laws stay with `A.3.3`.
 

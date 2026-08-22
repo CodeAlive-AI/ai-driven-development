@@ -17,7 +17,7 @@ A.6.9 admits neither `U.CrossContextSamenessDisambiguation` nor a semantic-conte
 > **Normativity:** Normative
 > **Placement:** A.6 cluster; follows the A.6.P relation-precision route for cross-context wording.
 > **Builds on:** A.6.P for relational prose repair; F.17 for exact scheme-based SenseCells; F.18 for designation; F.9 for the direct Bridge relation, profile, bounded-use boundary, and card boundary; C.2.1 for claim and description identity; F.0.1, F.7, and F.8 for sense-family and downstream naming discipline; A.7 and A.6.6 for lane and identifier dispatch; E.19 for normative precision
-> **Coordinates with:** A.10 for evidence-provenance relations and local reliance dispositions; B.3 for assurance; E.17.0 for View membership; E.24.PUB for publication occurrence, form, and carrier; C.3.3 for kind transfer and for separate classification-judgment transfer; A.2.6 for scope operations; A.6.3.RT for representation transition; A.22 for structure; A.2.1, F.6, and A.15.1 for system-role-kind, assignment, and Work claims
+> **Coordinates with:** A.10 for evidence-provenance relations and local reliance dispositions; B.3 for assurance; E.17.0 for View membership; E.24.PUB for publication occurrence, form, and carrier; C.3.3 for the exact `KindBridge` relation and C.3.2 for a fresh target classification judgment; A.2.6 for scope operations; A.6.3.RT for representation transition; A.22 for structure; A.2.1, F.6, and A.15.1 for system-role-kind, assignment, and Work claims
 
 Use this pattern when umbrella sameness wording could hide which exact local senses, designation, lane, identifier, scope operation, representation transition, structure relation, or proposed use is current. The trigger starts a dispatch; it does not oblige the author to assert a Bridge or complete a card.
 
@@ -94,7 +94,7 @@ Resolve the actual endpoints before choosing the semantic branch. Each candidate
 
 Pin the endpoint reference-scheme and local-sense-claim editions, or an exact as-of basis, when the correspondence can change with a canon or model edition. `Γ_time` may be used as a compact card label for that basis. It is not a participant. It contributes to profile identity only when it states the profile's exact applicability or as-of basis.
 
-Before testing a Bridge, check ontological strata. Kind transfer and separate classification-judgment transfer remain with C.3.3; value normalization with the pattern that defines the measurement claim; system-role assignment with A.2.1; performed-Work attribution with F.6; publication occurrence, form, and carrier with E.24.PUB; representation transition with A.6.3.RT. F.9 can supply a semantic premise needed by one of those claims but cannot make that neighboring object obtain.
+Before testing a Bridge, check ontological strata. C.3.3 establishes only the exact `KindBridge` between source and target local kinds. C.3.2 makes a fresh target classification judgment under the target `KindSignature` edition and slice. Use the pattern that defines the measurement claim for value normalization, A.2.1 for system-role assignment, F.6 for performed-Work attribution, E.24.PUB for publication occurrence, form, and carrier, and A.6.3.RT for representation transition. F.9 can supply a semantic premise needed by one of those claims but cannot make that neighboring object obtain.
 
 #### A.6.9:4.1 - Stable lens: relation, use claim, reliance, and receiving object
 
@@ -129,7 +129,7 @@ Changing `u`, `d`, `r`, or `t` changes the bounded-use claim, not the Bridge. Ch
 | tolerance `t` | every proposed use | Which semantic loss is acceptable for this action; observed loss remains evidence. |
 | polarity and effective ReferenceScheme | every bounded-use claim | Whether the claim is affirmative or negative and how its designations are interpreted. |
 | A.10 or B.3 branch | when someone will rely on the claim | The exact evidence-provenance relation plus local disposition, or the B.3 claim or explicit disposition selected by its trigger. |
-| authorization claim | only when permission is required | Separate policy or deontic governor; semantic suitability and assurance are insufficient. |
+| permission result | only when permission is required | Cite the exact A.2.8.PER result the use needs: an obtaining strong grant, weak non-prohibition finding, exercise relation, or conflict result. Policy and predicates supply grounds; they are not that result. |
 | receiving-object ref | only when the use is said to have happened | Exact Work, assertion, publication, relation, application, or other object under its subject pattern. |
 | `ClaimMode` and card EntityOfConcern | only when a card pays | Actual card concerns the obtaining Bridge; candidate or negative card concerns the admitted F.9 Bridge relation kind and carries proposed endpoints and profile in its ClaimGraph. |
 
@@ -206,10 +206,10 @@ Keep the witness in the A.10 evidence path or optional card. Test the F.9 predic
 - **Viewpoint:** E.17.0 governs the direct `EpistemeViewpointConformanceRelation`; one `U.ViewpointRef` resolves exact viewpoint episteme P. The viewpoint, its reference, candidate/View episteme, and evaluator remain distinct.
 - **Evidence and assurance:** A.10 is the pattern for evidence provenance and local reliance; B.3 is the pattern for assurance claims, records, and explicit dispositions.
 - **Representations and publications:** E.17.0 is the pattern for conformance-dependent View membership, E.24.PUB is the pattern for publication occurrence/form/carrier, and C.29 is the pattern for mathematical-representation objects. A.6.3.RT starts an ordinary same-concern representation move with content to survive, source comparison, loss, use, and return; its triggered exact construction independently identifies `X`, `Y`, and `v`; actual representation-transformation Work is required only for the later-specific six-participant occurrence.
-- **Kinds and classifications:** C.3.3 is the pattern for classification transfer; F.9 supplies only local-sense correspondence needed by that use.
+- **Kinds and classifications:** C.3.3 establishes the exact `KindBridge` between source and target local kinds. It moves neither kind nor classification. C.3.2 separately judges the candidate under the target kind, target `KindSignature` edition, and target slice; the result may be `true`, `false`, or `unknown`. F.9 supplies only local-sense correspondence needed by that use.
 - **Structures:** A.1.1/A.22 independently select each exact `BoundedModelUseStructure`; §4.8 applies the descriptive A.22 conditional cross-structure rule only after exact governed crossings and all four structure discriminators are recoverable. A SenseCell Bridge cannot substitute for that architecture.
 - **Direct subject relations, Work, and system-role claims:** every world-side relation has its own exact predicate, participant bindings, and assertion. A.2.1, F.6, A.15.1, and A.15.6 define assignment and exact performed or composite Work predicates; semantic relation, context wording, and use claim have no enactment effect.
-- **Authorization:** the applicable policy or deontic predicate establishes permission. Neither semantic suitability nor assurance grants it.
+- **Permission:** apply A.2.8.PER and cite the exact result the proposed use needs—an obtaining strong grant, weak non-prohibition finding, exercise relation, or conflict result. Policy and direct predicates supply conditions or grounds but are not the permission result. Any required authority relation remains separate.
 
 #### A.6.9:4.8 - Structure comparison and conditional cross-structure selection
 
@@ -306,7 +306,7 @@ A repaired sentence or boundary statement conforms iff:
 | `AP-XCTX-7` | Symmetry grants two use directions | One symmetric occurrence is read as two licences. | State each direction in its own use claim. |
 | `AP-XCTX-8` | Loss note becomes tolerance | An observed difference is assumed acceptable. | Keep it in evidence and name accepted loss as `t`. |
 | `AP-XCTX-9` | Confidence laundering | Higher `CL` or reviewer approval grants a use. | Treat `CL` as evidence shorthand and recover claim polarity plus reliance. |
-| `AP-XCTX-10` | Suitability becomes permission | An affirmative semantic claim is read as authorization. | Open the exact policy or deontic governor, or state no authorization. |
+| `AP-XCTX-10` | Suitability becomes permission | An affirmative semantic claim is read as authorization. | Apply A.2.8.PER and cite the needed grant, non-prohibition, exercise, or conflict result; if it is absent or unresolved, state that exact result. |
 | `AP-XCTX-11` | Named use becomes occurrence | “Publication use” is treated as a publication. | Recover the exact publication occurrence under E.24.PUB, or recover another receiving object and cite the pattern that defines it. |
 | `AP-XCTX-12` | Chain upgrade | A-to-B and B-to-C become direct A-to-C equivalence. | Test a direct A-to-C Bridge and composite use independently. |
 | `AP-XCTX-13` | Timeless or facetless claim | Edition or compared facet stays hidden. | State applicability and refine endpoint readings. |
@@ -354,7 +354,7 @@ The repair sequence is therefore: **name the action; route the object; test the 
 
 * **Specialises:** A.6.P by restoring the concrete object and action hidden by cross-context sameness wording.
 * **Uses:** F.17 exact `SchemeSenseCell` identity; F.9 Bridge participants, relation-only profile, obtaining, occurrence identity, bounded-use boundary, and card boundary; C.2.1 claim identity and polarity; A.10 or B.3 for reliance.
-* **Coordinates with:** F.18 and F.5 for designators; A.6.6 for identifiers; C.2.1 for effective reference scheme, episteme edition, and empirical grounding; A.2.6 for scope operations; A.15.6/A.15.1 for exact composite project Work; the patterns that define the temporal and direct predicates for their qualification windows; E.17.0 for viewpoint conformance and View membership; E.24.PUB for publication occurrence, form, and carrier; C.29 for mathematical representation; A.6.3.RT for the ordinary same-concern representation note, triggered exact construction, and later-specific occurrence only when actual Work is current; C.3.3 for classification transfer; A.1.1/A.22 and the pattern that defines each selected structure crossing; direct policy or deontic patterns for authorization.
+* **Coordinates with:** F.18 and F.5 for designators; A.6.6 for identifiers; C.2.1 for effective reference scheme, episteme edition, and empirical grounding; A.2.6 for scope operations; A.15.6/A.15.1 for exact composite project Work; the patterns that define the temporal and direct predicates for their qualification windows; E.17.0 for viewpoint conformance and View membership; E.24.PUB for publication occurrence, form, and carrier; C.29 for mathematical representation; A.6.3.RT for the ordinary same-concern representation note, triggered exact construction, and later-specific occurrence only when actual Work is current; C.3.3 for the exact cross-local `KindBridge` and C.3.2 for the fresh target judgment; A.1.1/A.22 and the pattern that defines each selected structure crossing; A.2.8.PER for the exact permission result and any direct pattern needed for a separate authority relation.
 * **Constrains:** every dependent use to cite an obtaining Bridge, state a separate C.2.1 claim for its exact direction, rule, tolerance, and polarity, recover current reliance, and state any claim about the actual receiving object using the rule that defines its predicate.
 
 ### A.6.9:End

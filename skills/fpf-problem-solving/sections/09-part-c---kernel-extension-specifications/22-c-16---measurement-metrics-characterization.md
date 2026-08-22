@@ -84,7 +84,7 @@ If any noun in that sentence cannot be grounded, return that exact gap rather th
 
 **M‑CAL‑1.** Name the calibration basis required for the use: reference standard or comparison basis, dated calibration work and result when current, calibration coefficients or corrections, applicable interval, and uncertainty contribution. A calibration certificate or ledger row cites these facts; it does not establish them by being stored.
 
-**M‑WORK‑1.** `MeasurementWork` is one exact dated `U.Work` with an occurrence designator, temporal extent, performer through `U.SystemRoleAssignment`, `enactsMethod`, exact measurand or affected referent, actual resources, and concrete participants through direct subject relations or A.6.1 operation-application bindings. A plan, compatible signature, method description, instrument type, or retained reference establishes none of those actual bindings.
+**M‑WORK‑1.** `MeasurementWork` is one exact dated `U.Work` with a complete A.15.1/F.6 basis: occurrence designator, temporal extent, every performer and its covering assignment and attribution, at least one obtaining `enactsMethod` relation, and at least one obtaining locally declared containing-system relation. Name the exact measurand through its direct subject relation or an A.6.1 operation-application binding. Name another enacted Method, resource, or concrete participant only when the measurement claim uses its independently obtaining relation or binding. A plan, compatible signature, method description, instrument type, or retained reference establishes none of those actual facts.
 
 #### C.16:5.4 - Recover input quantities, output quantity, and uncertainty
 
@@ -195,7 +195,7 @@ The carrier, dashboard, ledger, criterion clause, and evidence path may represen
 2. **CSLC:** Characteristic, Scale, Level or Coordinate, Unit when current, polarity, and time stance are explicit.
 3. **Method/model:** the exact `U.Method`, MethodDescription boundary, measurement model edition, inputs, output quantity, assumptions, and validity domain are recoverable.
 4. **Calibration:** applicable calibration work/result, reference basis, coefficients or corrections, validity interval, and uncertainty contribution are cited when required.
-5. **Work:** dated `U.Work`, performer `U.System`, obtaining `U.SystemRoleAssignment`, `enactsMethod`, resources, measurand, and actual direct or A.6.1 bindings are present.
+5. **Work:** the dated `U.Work` has one complete A.15.1/F.6 basis; the exact measurand relation or A.6.1 binding is present; further enacted Methods, resources, or participant bindings are present only when the measurement claim uses them.
 6. **Result:** one C.16 measurement result attributes value or values to the measurand with uncertainty and relevant information; one C.2.1 episteme states it.
 7. **Separation:** raw output, indication, actual subject state, result, result episteme, diagnosis, verdict, and decision are not collapsed.
 8. **Comparability:** direct or transformed comparison names its exact basis and does not upgrade the Scale or mint a common scale.

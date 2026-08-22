@@ -128,7 +128,7 @@ SysML v2 is deliberately excluded from the positive SoTA basis and from useful l
 
 ### C.2.LS:12 - Relations
 - Builds on: `A.18`, `A.19`, `C.2.2a`, `C.2.3`.
-- Coordinates with: `C.2.4`, `C.2.5`, `C.2.6`, `C.2.7`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `E.18`, `F.9.1`.
+- Coordinates with: `C.2.4`, `C.2.5`, `C.2.6`, `C.2.7`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `E.18`, `F.9` for any Bridge and bounded-use claim, and `F.9.1` only for an optional stance note about that claim.
 - Constrains: language-state threshold publication and profile composition.
 ### C.2.LS:13 - Worked Examples and Composition Notes
 

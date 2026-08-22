@@ -519,7 +519,7 @@ A conformance check is kept only if it changes the next bounded use of the publi
 ### E.17:10 - Common Anti-Patterns and How to Avoid Them
 
 1. **“Presentation logic” as semantics.**
-    *Fix:* Move any logic to `Describe_EoC_DescEp`, an exact specification-use or episteme-refinement gate, CG‑Spec, or KD‑CAL; keep views declarative; publication adds **zero** claims.
+    *Fix:* Keep every claim in the source ClaimGraph. When a reader needs to know how a claim arose, name the exact authoring, measurement, observation, model, source-use, representation, or refinement relation. Use an exact specification-use gate, CG-Spec, or KD-CAL when it owns the requirement; keep views declarative; publication adds **zero** claims.
 2. **Publishing only view objects.**
     *Fix:* The optional formal profile constructs faces for `g o f`, not only endpoint faces for `FaceObj_s(X)`, `FaceObj_s(Y)`, and `FaceObj_s(Z)`. A system performs the construction work; MVPK does not act.
 3. **Unpinned numbers.**

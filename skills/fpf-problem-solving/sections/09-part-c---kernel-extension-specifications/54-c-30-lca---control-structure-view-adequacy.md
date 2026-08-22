@@ -6,9 +6,11 @@
 
 ### C.30.LCA:1 - Problem frame
 
-Use this pattern when a selected control structure or an exact control relation changes the next architecture move: source prose says that a controller regulates a plant, an observer or estimator changes what can be known, a planner provides references to lower-rate control, a supervisor constrains a subsystem, or a policy loop changes allowed behavior. Treat those labels as cues to recover the direct relation and participant meanings first. A participating System, local system-role kind, separate System-classification judgment, assignment, Method, or Work is a separate fact included only when it independently obtains.
+Use this pattern when a control diagram, control-language source, or selected control structure changes the next architecture move. Start with an ordinary question: what actually controls what, through which observation, command, reference, supervision, or feedback relation? A label such as controller, plant, observer, planner, supervisor, or policy loop is only a cue; identify the relation and what each participant does in it before relying on the diagram.
 
-The first-minute working situation is ordinary engineering talk: a diagram says the supervisor watches a subsystem, a controller regulates a plant, an observer estimates state, a planner gives references to a lower-rate controller, or a policy or control relation changes allowed controller behavior. The useful first move is to recover a `ControlStructureViewNote`: which holon, architecture relation or bounded architecture claim is current; which selected control structure and obtaining control relations are present; what each participant means in those relations; which rate bands or recovered control-layer relations are claimed; which feedback or externality boundaries are named; and which subject assertion and defining or constraining `ClaimGraph` state each additional claim. Then add an admitted System, optional local kind, separate optional System-classification judgment, optional obtaining assignment, Method, and complete Work-attribution basis only when each is separately current. If the source only says `layer`, `level`, `tier`, or `stack` without a control-specific relation, use `C.30.STRAT` first.
+A participating System, local system-role kind, System-classification judgment, assignment, Method, or Work is a separate fact. Add it only when it independently obtains and changes the use of the control-structure result.
+
+The first useful result can be one sentence: “Supervisor S sends allowed-mode commands to controller C and receives status feedback; this diagram does not yet establish stability or safety.” The small note below retains that result and the next action. If the source says only `layer`, `level`, `tier`, or `stack` without a control-specific relation, use `C.30.STRAT` first.
 
 What goes wrong if C.30.LCA is missed: a control diagram becomes the control structure, `U.View`, or proof; stratification labels bypass `C.30.STRAT` and carry undeclared scope; and `B.2.5`, E.18 transformation-flow prose, or Layered Control Architecture prose is overread as control adequacy.
 
@@ -16,35 +18,23 @@ What C.30.LCA buys in practice: the practitioner can keep useful controller, pla
 
 Not this pattern when the issue under repair is generic stratification or source-label repair, only an E.18 transformation-flow path slice, function description, module boundary, measurement head, causal intervention, or safety case. Use `C.30.STRAT`, `C.30.TFS-REL`, `A.6.F`, `A.6.M`, `C.16`, `C.28`, or the applicable assurance or evidence pattern to state or test the current claim.
 
-The primary EntityOfConcern for a full C.30.LCA description or view is one exact selected control `U.Structure`. The description, selected structure, controlled holon, actual architecture relation, bounded architecture claim, exact viewpoint, conformance occurrence, direct control relations and participant meanings, any participating Systems, local classifications, assignments, Methods or Work, diagram, representation, proof claims, and publication remain separate. Ordinary use may stop with a typed note:
+The primary EntityOfConcern for a full C.30.LCA description or view is one exact selected control `U.Structure`. The description, selected structure, controlled holon, architecture relation, architecture claim, viewpoint, conformance occurrence, control relations and their participants, any participating Systems, classifications, assignments, Methods or Work, diagram, representation, proof claims, and publication remain separate. Start with the smallest useful note:
 
 ```text
 ControlStructureViewNote ordinary minimum:
-  architectureRelationOccurrenceRef?: ArchitectureRelationRef
-  architectureClaimRef?: U.EpistemeRef constrained to ArchitectureClaim
-  describedHolonRef?: U.HolonRef
-  selectedControlStructureRef?:
   controlledHolonRef:
-  candidateViewEpistemeRef?: U.EpistemeRef
-  exactViewpointRef?: U.ViewpointRef
-  viewpointConformanceRelationRef?: EpistemeViewpointConformanceRelationRef
+  selectedControlStructureRef?:
+  structureGap?:
   selectedControlRelationRef:
-  selectedControlParticipantRefs:
-  controllerSystemRef?: U.EntityRef constrained to U.System
-  controllerSystemRoleKindRef?: U.KindRef
-  controllerSystemRoleClassificationJudgmentRef?: U.RelationRef
-  controllerAssignmentSpeciesRef?: U.RelationKindRef constrained under U.SystemRoleAssignment
-  controllerAssignmentOccurrenceRef?: U.RelationRef constrained to an obtaining occurrence of controllerAssignmentSpeciesRef
-  actualControlWorkRef?: U.EntityRef constrained to U.Work
+  controlRelationParticipantRefs:
   feedbackClosureState: closed | oneWay | unclear
-  controlLayerRelationRef?:
-  rateBandRef?:
-  stratificationRepairRef?:
   nextPatternUseRef?:
   stopCondition:
 ```
 
-The ordinary note requires an exact described or controlled holon plus one selected control structure or honest structure gap and at least one direct control relation when a positive relation claim is made. `architectureRelationOccurrenceRef` is filled only when that direct C.30 occurrence obtains; `architectureClaimRef` remains optional claim content or trace. The note does not become a C.2.1 episteme or `U.View` by its field names.
+Use either `selectedControlStructureRef` or an honest `structureGap`. A positive control claim also names at least one obtaining control relation and its participants. This note is enough when those values make the next action clear; its fields do not turn it into a C.2.1 episteme or `U.View`.
+
+Add a described holon, an architecture-relation occurrence or claim, rate bands, control-layer relations, boundaries, view and viewpoint-conformance facts, source return, representation, or publication only when they change the intended use. Add participating Systems, local classifications, assignments, Methods, Work, and F.6 attribution only when those neighboring facts are independently current.
 
 When either form includes actual control Work, each Work ref names an independently identified `U.Work` occurrence. All facts required by A.15.1, A.2.1, and F.6 remain recoverable; the note or view creates none of them.
 
@@ -71,7 +61,7 @@ Treat LCA-like source descriptions as possible inputs to a control-structure des
 
 Add participating Systems, local kinds, separate System-classification judgments, assignment species and obtaining occurrences, Methods, and actual Work only when each independently obtains. Use A.22 to identify the selected structure from its constituents, selected obtaining relation occurrences, applied constraint claims, and receiving-use frame; a note, diagram, list, description, kind, or assignment creates none of them. If a source label is not yet control-specific, apply `C.30.STRAT` first. Then state admissible use and the next pattern to use.
 
-The ordinary minimum may stop with a compact `ControlStructureViewNote`:
+When the result must retain boundary, admissible-use, or handoff detail, expand the same `ControlStructureViewNote`:
 
 ```text
 ControlStructureViewNote:
@@ -79,8 +69,10 @@ ControlStructureViewNote:
   architectureClaimRef?: U.EpistemeRef constrained to ArchitectureClaim
   describedHolonRef?: U.HolonRef
   selectedControlStructureRef?:
+  structureGap?:
   controlledHolonRef:
   selectedControlRelationRef:
+  controlRelationParticipantRefs:
   feedbackClosureState: closed | oneWay | unclear
   controlLayerRelationRef?:
   rateBandRef?:
@@ -112,7 +104,7 @@ InterLayerControlRelationNote:
   nonAdmissibleUse:
 ```
 
-Use this note only when a recovered control-layer relation is used for decomposition, substitution, safety or stability claim, or architecture decision claim. It is not proof and does not make the relation obtain. Otherwise keep C.30.LCA at the small note or ordinary description form, or use `C.30.STRAT for the source label`.
+Use this note only when a recovered control-layer relation is used for decomposition, substitution, a safety or stability claim, or an architecture decision. It is not proof and does not make the relation obtain. Otherwise keep C.30.LCA at the small note or ordinary description form, or use `C.30.STRAT` to recover the source label.
 
 ```text
 ControlStructureView ::= ArchitectureDescription & U.View & {
@@ -178,7 +170,9 @@ The full view is the same C.2.1 episteme identified by its exact claim graph, se
 
 `controlledHolonRef` names the holon whose state is observed or changed by independently obtaining control relations and may be the described holon or one of its exact parts. Architecture claims, `ClaimScope`, model-use structure, concern, and empirical grounding remain optional neighboring objects or relations. `modelUseStructureRef` appears only when an independently selected DDD-style bounded-model-use structure changes interpretation or selection.
 
-For every positive control-relation reference, identify the actual occurrence and use the relevant pattern to recover the participant meanings. Any participating System, local kind classification, assignment, Method, Work, and F.6 attribution reference also identifies its own independently admitted fact. A classification or assignment establishes neither control nor action. The description, control note, view record, or diagram creates none of these occurrences and does not act. Representation, publication occurrence, form, and carrier likewise remain separate from the selected structure and view episteme.
+For every positive control-relation reference, identify the actual occurrence and use the relevant pattern to recover what its participants mean. Any participating System, local classification, assignment, Method, Work, or F.6 attribution also identifies its own independently admitted fact. A classification or assignment establishes neither control nor action.
+
+The description, control note, view record, and diagram create none of these occurrences and do not act. Representation, publication occurrence, form, and carrier likewise remain separate from the selected structure and view episteme.
 
 #### C.30.LCA:4.0a - Safety-loss control-structure note
 
@@ -235,7 +229,7 @@ The note gives a positive safety-triggered architecture move: find the loss-cont
 
 **Worked slice C - supervisor-subholon loop.** A subsystem is supervised by an external controller System. The C.30.LCA note records the supervisor-subholon relation and may reference `B.2.5`. If that System performs mode-change Work, name the Work, enacted Method, assignment occurrence and its declared species, and F.6 attribution. Authority, responsibility, gate passage, safety, stability, and policy-constraint results remain separate claims under their own patterns; the supervisor relation establishes none of them.
 
-**Currentness and smallest reopen.** When a decisive input changes, reopen only the control-structure locus and use conclusion that depend on it. A changed selected control structure or controlled holon reopens the affected `ControlStructureViewNote` or full description and view; a changed direct control relation or participant meaning reopens that occurrence and its dependent structure selection; a changed classification, assignment, Method, Work, or F.6 attribution reopens only that neighboring fact and any view use that relied on it. Changed feedback, rate, or control-layer relations reopen only their matching relation or boundary fields; changed view conformance reopens only the E.17.0 admission; and a changed source edition reopens its source-to-use and source-return locus. A changed authority, responsibility, safety, proof, evidence, assurance, or gate claim reopens only that neighboring claim unless a control-structure input also changed. Update the affected locus, demote full view use to a note or orientation, narrow use, or reopen the control-structure question; unrelated structures and claims stay closed.
+**Currentness and smallest reopen.** When a decisive input changes, reopen only the control-structure locus and the use conclusions that depend on it. A changed selected control structure or controlled holon reopens the affected `ControlStructureViewNote` or full description and view; a changed direct control relation or participant meaning reopens that occurrence and its dependent structure selection; a changed classification, assignment, Method, Work, or F.6 attribution reopens only that neighboring fact and any view use that relied on it. Changed feedback, rate, or control-layer relations reopen only their matching relation or boundary fields; changed view conformance reopens only the E.17.0 admission; and a changed source edition reopens its source-to-use and source-return locus. A changed authority, responsibility, safety, proof, evidence, assurance, or gate claim reopens only that neighboring claim unless a control-structure input also changed. Update the affected locus, demote full view use to a note or orientation, narrow use, or reopen the control-structure question; unrelated structures and claims stay closed.
 
 ### C.30.LCA:5 - Archetypal Grounding
 
@@ -249,7 +243,7 @@ The note gives a positive safety-triggered architecture move: find the loss-cont
 * **Diagram authority bias.** A neat feedback diagram can look more persuasive than the structure, source-to-use path, work-reliance relation, or claim it actually supports. Repair by naming each object or relation and the pattern used to state or test the claim.
 * **Stratification-label bias.** A `layer`, `level`, `tier`, or `stack` label can hide whether it names a control relation, rate band, aggregation, scale, organization, Work scope, evidence scope, deployment, or publication section. Repair with `C.30.STRAT`; C.30.LCA applies only to the recovered control-specific case.
 * **Supervisor anthropomorphism.** A supervisor label can make an episteme, policy, assignment, or dashboard sound agentive. Repair by recovering the supervision relation first. If action is claimed, name the performer System, dated Work, enacted Method, assignment occurrence and its declared species, and F.6 attribution; recover authority, responsibility, gate, safety, and evidence separately.
-* **Transformation-flow and LCA conflation.** A transformation-flow graph expression and a control description/view can inform each other, but neither replaces the other. Repair by naming the exact EntityOfConcern, structure kind, and direct relations for each.
+* **Transformation-flow and LCA conflation.** A transformation-flow graph expression and a control description or view can inform each other, but neither replaces the other. Repair by naming the EntityOfConcern, structure kind, and direct relations for each.
 
 This checklist verifies the preceding guidance after the practitioner has chosen the selected repair action; it is not a required project control form and not a substitute for the note, description episteme, conformance occurrence, direct control relation, or repair guidance above.
 
@@ -257,7 +251,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 
 | ID | Check | Why it matters |
 |---|---|---|
-| CC-LCA-1 | A conforming full description/view has one exact C.2.1 identity whose EntityOfConcern is one exact selected control structure; the described and controlled holons and any actual `ArchitectureRelation` remain separately recoverable. | Prevents a free-floating diagram, claim, or unspecified relation set from becoming structure or episteme identity. |
+| CC-LCA-1 | A conforming full description or view has one C.2.1 identity whose EntityOfConcern is one exact selected control structure; the described and controlled holons and any actual `ArchitectureRelation` remain separately recoverable. | Prevents a free-floating diagram, claim, or unspecified relation set from becoming structure or episteme identity. |
 | CC-LCA-2 | A conforming use records the direct control relations and participant meanings present: for example, reference provision, regulation or control, observation or estimation, plant or controlled-holon participation, or supervision. Systems, classifications, assignments, Methods, Work, and F.6 attribution are separate optional facts. | Keeps the view useful without making a label, kind, assignment, or description act. |
 | CC-LCA-3 | `Layer`, `level`, `tier`, or `stack` wording enters only with a recovered direct control relation, inter-layer relation, rate band, or `B.2.5` supervisor-subholon relation. An assignment alone is insufficient. | Prevents generic stratification wording from standing in for control structure. |
 | CC-LCA-4 | A claimed `U.View` names the exact viewpoint episteme and independently obtaining `EpistemeViewpointConformanceRelation`; bundle membership, viewpoint label, authoring, query, diagram, and publication are insufficient. | Keeps structural description and view membership distinct. |
@@ -265,7 +259,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | CC-LCA-6 | Use `B.2.5` only to state or test the supervisor-subholon feedback relation it defines. | Keeps a cited feedback relation distinct from stability, safety, evidence, gate, and assurance claims. |
 | CC-LCA-7 | Use E.18 to identify and test any transformation-flow path slice used by the control view. The slice is not the control structure or actual transformation itself. | Keeps transformation-flow and LCA relations distinct. |
 | CC-LCA-8 | C.29 or mathematical-lens use is opened when LCA is transferred across domains or used for prediction, reusable explanation, or assurance input. | Preserves mathematical-lens use and representation boundaries. |
-| CC-LCA-9 | The record states admissible use, non-admissible use, and source-return condition; representation and E.24.PUB occurrence/form/carrier remain separate. | Prevents narrowed recognition or publication from becoming unchecked reliance. |
+| CC-LCA-9 | The record states admissible use, non-admissible use, and source-return condition; representation, E.24.PUB publication occurrence, publication form, and carrier remain separate. | Prevents narrowed recognition or publication from becoming unchecked reliance. |
 
 ### C.30.LCA:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -279,7 +273,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 
 ### C.30.LCA:9 - Consequences
 
-The gain is a small, usable control-structure output that preserves common architecture language while blocking structure, view, and proof overread. Practitioners can still say `controller`, `plant`, `supervisor`, `feedback`, and `control layer`, but the record shows the exact selected structure, description/view boundary, and direct relations those words carry; generic stratification labels use `C.30.STRAT` first.
+The gain is a small, usable control-structure output that preserves common architecture language while blocking structure, view, and proof overread. Practitioners can still say `controller`, `plant`, `supervisor`, `feedback`, and `control layer`, but the record shows the selected structure, the boundary between description and view, and the direct relations those words carry; generic stratification labels use `C.30.STRAT` first.
 
 The cost is an extra relation or conformance note before downstream reliance. When the claim is only recognition, that cost is small. When it is view membership, safety, stability, evidence, assurance, or gate passage, the cost is appropriate because none was carried by the diagram alone.
 
@@ -301,7 +295,7 @@ This protects subject, structure, episteme, View, representation, and publicatio
 
 ### C.30.LCA:12 - Relations
 
-* Builds on `C.30` for direct architecture relation and selected-structure adequacy, `C.30.AD` for description identity/use, `E.17.0` for direct viewpoint conformance, and `C.30.ASV` for structural-view adequacy.
+* Builds on `C.30` for direct architecture relations and selected-structure adequacy, `C.30.AD` for description identity and use, `E.17.0` for direct viewpoint conformance, and `C.30.ASV` for structural-view adequacy.
 * Uses `A.22` for exact structure identity and structure-kind discipline.
 * Coordinates with `C.30.STRAT` when layer, level, tier, stack, ladder, rung, block, expert, cache, router, gate, or similar source labels must be recovered before control-specific use.
 * Coordinates with `B.2.5` for supervisor-subholon feedback relation recognition.

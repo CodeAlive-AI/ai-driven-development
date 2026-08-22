@@ -6,14 +6,16 @@
 
 ### C.30.ASV:1 - Problem frame
 
-Use this pattern when an architecture discussion needs a structural description of one exact selected architecture-relevant `U.Structure`, and the receiving use must decide whether that description is also a `U.View` under one exact viewpoint.
+Use this pattern when you have a structural description of one selected architecture-relevant `U.Structure` and need to decide whether that same description is also a `U.View` under one exact viewpoint.
 
-The first useful move is `ArchitectureStructureKindTriage@Project`: name the exact described holon or actual `ArchitectureRelation` occurrence when known, the smallest useful `ArchitectureStructureKindRef` set, the selected structure under consideration, the use qualifiers that actually change interpretation, and the next admissible architecture move.
+The first useful move is small. In ordinary prose, name the described holon or actual `ArchitectureRelation` when known, the selected structure, the smallest useful structure-kind set, any qualifier that changes interpretation, and the next architecture move. If one or two sentences make those values clear, stop.
+
+For example: “The failover diagram describes runtime-interaction and control structures, but it hides the actual failover relation. Recover that relation before relying on the diagram as a view.” This is already a usable triage result. Use `ArchitectureStructureKindTriage@Project` only when the result must be retained, compared, or handed on.
 
 ```text
 ArchitectureStructureKindTriage@Project:
   projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
-  architectureStructuralViewProjectUseRelationRef?: U.RelationRef defined by the applicable triage-use or view-use pattern
+  architectureStructuralViewProjectUseRelationRef?: U.RelationRef, only when a named pattern defines this project-use relation and the occurrence obtains
   architectureClaimRef?: U.EpistemeRef constrained to ArchitectureClaim
   architectureRelationOccurrenceRef?: ArchitectureRelationRef
   describedHolonRef?: U.HolonRef
@@ -26,20 +28,20 @@ ArchitectureStructureKindTriage@Project:
   candidateStructureKindRefs: FinSet(ArchitectureStructureKindRef)
   smallestUsefulStructureKindRefs: FinSet(ArchitectureStructureKindRef)
   selectedStructureRefs?: FinSet(U.StructureRef)
-  primaryGoverningPatternApplicationRef:
+  claimPatternRefs?: FinSet(PatternRef), if another claim is being made
   admissibleArchitectureMove:
   stopCondition:
 ```
 
-`@Project` is a compatibility and retrieval cue for a project-side use record. It supplies no project identity, authority, context, viewpoint, parthood, or Work occurrence. When one actual project matters to this triage, `projectWorkOccurrenceRef` identifies the composite `U.Work` recovered under `A.15.6`, and `architectureStructuralViewProjectUseRelationRef` identifies the exact obtaining relation by which the triage or structural-view use concerns that work. A Work reference without that direct relation does not establish project locality.
+`@Project` is a compatibility and retrieval cue for a project-side use record. It supplies no project identity, authority, context, viewpoint, parthood, or Work occurrence. When one actual project matters to this triage, `projectWorkOccurrenceRef` identifies the composite `U.Work` recovered under `A.15.6`. Include `architectureStructuralViewProjectUseRelationRef` only when a named pattern defines the relation by which this use concerns that Work and an occurrence of the relation obtains. A Work reference alone does not establish project locality. If locality matters but that relation is not yet defined, use A.6.RCD before filling the field; otherwise omit both project-local fields. `claimPatternRefs` points only to patterns that define or test separate claims; it does not identify a pattern-application occurrence.
 
 Start with `C.30` when the actual architecture relation, exact selected structure, or architecture claim is unclear. Use C.30.ASV only when a structural description over selected architecture-relevant structure changes the next architecture use. Use the full `ArchitectureStructuralView` record only when one exact description episteme passes E.17.0 conformance to an exact viewpoint and the view changes action, selected reliance relation, correspondence, source return, publication, comparison, or another non-ASV claim or use.
 
 What goes wrong if C.30.ASV is missed: one favored diagram, module view, TEVB viewpoint, generated relation graph, control sketch, or neural-network block diagram is treated as the architecture, selected structure, `U.View`, or proof without naming the exact description episteme, selected structure kind, viewpoint-conformance occurrence, hidden or lost structure, correspondence, and next architecture use.
 
-What C.30.ASV buys in practice: the practitioner can keep description identity, selected structure kind, exact viewpoint conformance, construction history, selected relations, hidden or lost structure, correspondence, source-return condition, representation, publication, and admissible use separately inspectable before relying on the view.
+What C.30.ASV buys in practice: the practitioner can distinguish description identity, selected structure and structure kind, exact viewpoint conformance, representation, and publication before relying on a view. Construction history, hidden or lost structure, correspondence, source return, and admissible use remain separately inspectable.
 
-Not this pattern when the question under repair is only the general architecture claim, subject-side `ArchitectureRelation`, structure as such, selected transformation-flow relation, mathematical graph description, transformation-flow path relation, or crossing relation. Use `C.30`, `A.22`, `E.18`, `E.18.2`, `C.29`, or `C.30.TFS-REL` as appropriate. If the view is used for another claim, use the applicable pattern for that claim and keep C.30.ASV only to the view portion.
+Do not use C.30.ASV when the question is only about a general architecture claim, subject-side `ArchitectureRelation`, structure as such, selected transformation-flow relation, mathematical graph description, transformation-flow path relation, or crossing relation. Use `C.30`, `A.22`, `E.18`, `E.18.2`, `C.29`, or `C.30.TFS-REL` as appropriate. If the view is used for another claim, use the applicable pattern for that claim and keep C.30.ASV only for the view portion.
 
 Thin precision-restoration pointer: if the issue under repair is still whether *view*, *architecture view*, *architecture structural view*, *diagram*, *model*, *graph*, *layer*, or *functional architecture* names a structural description, a `U.View`, an architecture description, a representation, a publication occurrence, a publication form, a source relation, or another claim or relation named by value, use `C.30.P` first. Do not copy the `C.30.P` trigger table here; apply C.30.ASV only after the architecture structural-view claim or non-ASV claim named by value is recoverable.
 
@@ -136,7 +138,7 @@ ArchitectureStructuralView ::= ArchitectureDescription & U.View & {
 
 `recordPatternLocator` identifies the pattern whose record form is being used. It is a locator, not an actor or a substitute for any rule needed by a current claim.
 
-The selected `U.Structure` is the one EntityOfConcern. Before that field can be filled, A.22 identifies the structure from exact constituents, selected independently obtaining relation occurrences, applied constraint claims, and one exact receiving-use frame. A description, query, diagram, family declaration, file, representation, or publication creates none of those discriminators. `relatedStructureRefs` may name structures needed to interpret correspondence, allocation, or crossing, but they do not create a union-valued EntityOfConcern. When another selected structure becomes primary, identify another description episteme or use exact C.2.1 edition/retargeting semantics; do not overwrite identity through a view field.
+The selected `U.Structure` is the one EntityOfConcern. Before that field can be filled, A.22 identifies the structure from exact constituents, selected independently obtaining relation occurrences, applied constraint claims, and one exact receiving-use frame. A description, query, diagram, family declaration, file, representation, or publication creates none of those discriminators. `relatedStructureRefs` may name structures needed to interpret correspondence, allocation, or crossing, but they do not create a union-valued EntityOfConcern. When another selected structure becomes primary, identify another description episteme or use exact C.2.1 edition or retargeting semantics; do not overwrite identity through a view field.
 
 The direct conformance occurrence has exactly two participants: `viewEpistemeRef` as candidate E and `viewpointRef` as exact P. Its fixed E.17.0 predicate requires: (1) independently identified E and admitted P; (2) exact `EntityOfConcern(E)` recovered; (3) P's fixed EntityOfConcern-kind criterion succeeds for that exact object; (4) E has an independently admitted episteme kind accepted by P without circular `U.View` use; and (5) E's fixed claim content under its effective scheme satisfies P's concern-coverage, semantic-form, completeness, and admitted-omission rules. The occurrence is participant-determined by `<E,P>`.
 
@@ -198,7 +200,7 @@ Use `ArchitectureStructureKindTriage@Project` before a full view record when the
 ```text
 ArchitectureStructureKindTriage@Project ::= {
   projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work,
-  architectureStructuralViewProjectUseRelationRef?: U.RelationRef defined by the applicable triage-use or view-use pattern,
+  architectureStructuralViewProjectUseRelationRef?: U.RelationRef, only when a named pattern defines this project-use relation and the occurrence obtains,
   architectureClaimRef?: U.EpistemeRef constrained to ArchitectureClaim,
   architectureRelationOccurrenceRef?: ArchitectureRelationRef,
   describedHolonRef?: U.HolonRef,
@@ -215,21 +217,21 @@ ArchitectureStructureKindTriage@Project ::= {
   smallestUsefulStructureKindRefs: FinSet(ArchitectureStructureKindRef),
   selectedStructureRefs?: FinSet(U.StructureRef),
   hiddenOrLostStructureCueRefs?,
-  primaryGoverningPatternApplicationRef?,
+
   admissibleArchitectureMove:
-    inspect | split | relate | downgrade | assignGoverningPattern | stop |
+    inspect | split | relate | downgrade | nameApplicablePattern | stop |
     otherDeclared,
-  governingPatternApplicationRefs?,
+  claimPatternRefs?: FinSet(PatternRef),
   nonAdmissibleOverread?,
   stopCondition
 }
 ```
 
-`architectureConcernCue?` and `sourcePhrase?` are recognition wording. `inspectedDescriptionOrViewRef?` and `candidateViewEpistemeRef?` name actual epistemes only when identified under C.2.1. None creates an `ArchitectureStructureKindRef`, selected structure, architecture relation, or `U.View`. Fill `exactViewpointRef` and `viewpointConformanceRelationRef` only when the same candidate episteme actually qualifies as a view.
+`architectureConcernCue?` and `sourcePhrase?` are recognition wording. `claimPatternRefs?` names only patterns that define or test separate claims; it does not assert that a pattern-application occurrence exists. `inspectedDescriptionOrViewRef?` and `candidateViewEpistemeRef?` name actual epistemes only when identified under C.2.1. None creates an `ArchitectureStructureKindRef`, selected structure, architecture relation, or `U.View`. Fill `exactViewpointRef` and `viewpointConformanceRelationRef` only when the same candidate episteme actually qualifies as a view.
 
 When `architectureClaimRef` is absent, `describedHolonRef`, `architectureRelationOccurrenceRef`, or at least one exact candidate selected structure must keep the subject recoverable for the intended triage. `claimScope`, `effectiveReferenceScheme`, and `modelUseStructureRef` are present only when they change this use. The card publishes no architecture claim and creates no subject relation. A full `ArchitectureStructuralView` requires the candidate episteme's exact C.2.1 identity plus obtaining E.17.0 conformance; it does not require an architecture-claim record when the exact selected-structure EntityOfConcern and subject trace are otherwise recoverable.
 
-Practitioner prompt labels are first-entry cues, not `ArchitectureStructureKindRef` values. FPF-governed records use the Tech values below:
+Practitioner prompt labels are first-entry cues, not `ArchitectureStructureKindRef` values. When the triage is retained as a record, use the technical values below:
 
 ```text
 Functional -> FunctionalStructure
@@ -316,7 +318,7 @@ ArchitectureStructureKindViewRecordBinding ::= {
   requiredConformanceRuleRefs,
   requiredCorrespondenceClaimOrRelationRefs?,
   sourceReturnRequirement?,
-  governingPatternApplicationRefs
+  claimPatternRefs: FinSet(PatternRef)
 }
 ```
 
@@ -336,7 +338,7 @@ The initial set is a seed for first architecture moves, not an atlas. Use the ta
 
 | Seed structure kind | Structural view | Minimum record fields beyond common ASV fields | First boundary |
 | --- | --- | --- | --- |
-| `FunctionalStructure` | `FunctionalStructureView` | `functionalBehaviorClaimRefs`, `requiredOrDesiredEffectClaimRefs?`, `actualTransformationRefs?`, `selectedTransformationFlowStructureRefs?`, `functionalElementClaimRefs?`, `transformerSideFillerRefs?`, `candidateBearerRefs?`, input-condition refs, output-condition refs, functional-port refs, capability refs, dependency refs, allocation refs, correspondence refs | Required/desired content stays a claim; use `A.3.4` only for independently actual transformations, and use capability, work, module-allocation, or requirement patterns when those claims are being made. |
+| `FunctionalStructure` | `FunctionalStructureView` | `functionalBehaviorClaimRefs`, `requiredOrDesiredEffectClaimRefs?`, `actualTransformationRefs?`, `selectedTransformationFlowStructureRefs?`, `functionalElementClaimRefs?`, `transformerSideFillerRefs?`, `candidateBearerRefs?`, input-condition refs, output-condition refs, functional-port refs, capability refs, dependency refs, allocation refs, correspondence refs | Required or desired content stays a claim; use `A.3.4` only for independently actual transformations, and use capability, work, module-allocation, or requirement patterns when those claims are being made. |
 | `TransformationFlowStructure` | `TransformationFlowStructureView` | `transformationFlowStructureRef`, `pathSliceRefs`, `crossingRefs`, `valuationRefs`, `mathematicalDescriptionRefs?` | Use `E.18` and `C.30.TFS-REL` for selected transformation-flow structure, transformation-flow path, or crossing input; use `E.18.2` and `C.29` for mathematical graph descriptions; use `C.28` for causal claims. |
 | `RuntimeInteractionStructure` | `RuntimeInteractionStructureView` | runtime elements, connectors and protocols, event topology and message topology, failure boundaries and latency boundaries | Use temporal, failure, evidence, or assurance patterns when runtime claims exceed structure. |
 | `ModuleInterfaceStructure` | `ModuleInterfaceStructureView` | module claim or admitted relation refs, interface specs, admissibility conditions, substitutability policy or change policy | Use `A.6.M` to repair the module claim and identify the admitted interface or relation separately when those claims are being made. |
@@ -352,7 +354,7 @@ Classifier values defined outside C.30.ASV remain admissible when they are the a
 
 | Classifier value defined outside C.30.ASV | ASV use | Full semantics and applicable patterns |
 | --- | --- | --- |
-| `WorkMethodStructure` | Method arrangement or work arrangement changes the architecture move. | `A.15` keeps `MethodDescription`, `WorkPlan`, and `WorkEnactment` separate; use the applicable pattern for any exception-handling, launch, or gate claim. Do not turn a work-method diagram into work authority. |
+| `WorkMethodStructure` | Method arrangement or work arrangement changes the architecture move. | `A.15` keeps `MethodDescription`, one exact `U.WorkPlan`, and dated `U.Work` occurrences separate; use the applicable pattern for any exception-handling, launch, or gate claim. Do not turn a work-method diagram into work authority. |
 | `AllocationResponsibilityStructure` | Exact responsibility relations or enactor-allocation relations change the architecture move. | Preserve each admitted direct responsibility predicate and occurrence through the view. Keep the System, local system-role kind, separate System-classification judgment, assignment, enactor relation, organization relation, actual Work basis, concern or affected-party relation, authority, ownership, stewardship, and responsibility distinct. Recover `owner`, `steward`, and `stakeholder` from the claim they make and use the corresponding direct ownership, governance, stewardship, concern, affected-party, participation, responsibility, authority, or ordinary-label route. Use `E.10.ROLE` only when the source wording actually uses unresolved claim-bearing *role*. Return the exact `missing-governor` for a required relation rather than treating an org chart, title, assignment, or Work as that relation. |
 | `EvidenceAssuranceStructure` | Evidence reuse or assurance arrangement changes affected structure or source return. | Use `A.10`, `G.6`, or `B.3` for evidence sufficiency or assurance verdict; ASV only names the structure and loss boundary. |
 | `ScaleEvolutionStructure` | Scale window, replacement or change policy, trajectory reference, or coarse-graining changes the architecture move. | Use `C.29`, `C.16`, temporal, source-return, or decision patterns for scale, characterization, or selection claims. |
@@ -385,7 +387,7 @@ SecurityTrustBoundaryStructureView ::= {
   secureDefaultOrHardeningBoundary:
   updateOrSupplyChainChannelRefs:
   detectionResponseBoundaryRefs?:
-  governingPatternApplicationRefs:
+  claimPatternRefs:
     A.10 | G.6 | B.3 | C.28 | A.20 | A.21 |
     C.16 | C.25 | C.24 agentic tool-use relation or call-planning relation when tool authority is being claimed | C.30.LCA when a control relation is being claimed
   admissibleUse:
@@ -415,7 +417,7 @@ SafetyLossControlStructureNote:
     ControlStructure | ConstraintRequirementStructure |
     SecurityTrustBoundaryStructure | InformationDataStructure |
     EvidenceAssuranceStructure
-  governingPatternApplicationRefs:
+  claimPatternRefs:
     A.3.3 dynamics, C.27 temporal or rate,
     C.28 causal-use, A.10 or G.6 evidence,
     B.3 assurance, A.20 or A.21 gate
@@ -427,21 +429,21 @@ The note gives a positive first architecture move: find the loss-control structu
 
 #### C.30.ASV:4.6 - Functional structure view boundary
 
-A `FunctionalStructureView` under C.30.ASV does not mint `U.Function`, `U.Transformation`, or a bearer relation. It is the same `ArchitectureStructuralView` episteme whose EntityOfConcern is one selected functional `U.Structure` and whose exact viewpoint conformance obtains. It may carry `FunctionalElementClaim` epistemes when the claim graph relates that selected functional structure to required or desired behavior/effect content and to a bearer or candidate-bearer locus. The claim is not identical with any actual behavior occurrence, bearer, capability, port, allocation, or relation.
+A `FunctionalStructureView` under C.30.ASV does not mint `U.Function`, `U.Transformation`, or a bearer relation. It is the same `ArchitectureStructuralView` episteme whose EntityOfConcern is one selected functional `U.Structure` and whose exact viewpoint conformance obtains. It may carry `FunctionalElementClaim` epistemes when the claim graph relates that selected functional structure to required or desired behavior or effect content and to a bearer or candidate-bearer locus. The claim is not identical with any actual behavior occurrence, bearer, capability, port, allocation, or relation.
 
 Keep three branches explicit:
 
-- **required or desired behavior/effect:** a C.2.1 claim; use the applicable requirement, architecture, capability, method, or functional-view pattern for that claim;
-- **actual transformation:** an independently identified `U.Transformation` only after A.3.4 recovers the changed referent, extent or boundary, boundary conditions, actual before/during/after facts, and continuity or reidentification basis;
+- **required or desired behavior or effect:** a C.2.1 claim; use the applicable requirement, architecture, capability, method, or functional-view pattern for that claim;
+- **actual transformation:** an independently identified `U.Transformation` only after A.3.4 recovers the changed referent, extent or boundary, boundary conditions, actual before, during, and after facts, and continuity or reidentification basis;
 - **compound flow organization:** an exact selected `TransformationFlowStructure` under E.18, whose constituents and selected obtaining relations are independently identified; the structure is not itself an actual transformation.
 
 `FunctionalElementClaim` has ordinary C.2.1 identity `<exact ClaimGraph, one exact EntityOfConcern, effective U.ReferenceScheme>`. For this use its EntityOfConcern is the selected functional structure. Its claim content may name:
 
-- one or more required or desired behavior/effect claim refs;
+- one or more required or desired behavior or effect claim refs;
 - actual transformation refs only when the complete A.3.4 basis independently obtains;
 - selected transformation-flow structure refs for compound flow organization;
 - a bearer or candidate-bearer locus, normally a `U.System` or candidate system for a separately established transformer system-role-kind claim;
-- capability, input/output condition, functional-port, dependency, allocation, and correspondence refs only when the applicable pattern defines or tests that relation or claim.
+- capability, input and output condition, functional-port, dependency, allocation, and correspondence refs only when the applicable pattern defines or tests that relation or claim.
 
 If no bearer or candidate allocation is current, do not claim a filled functional element. Record a required-behavior gap, required-effect gap, capability gap, functional-behavior slot, or candidate allocation question. This preserves the practical architecture move without pretending that a module, component, diagram row, function word, requirement, or selected flow structure has already supplied the bearer or actual change.
 
@@ -471,7 +473,7 @@ FunctionalStructureViewUse ::= {
 }
 ```
 
-**Required-cooling-effect / later-actual-cooling countercase.** Requirement episteme `RequiredCoolingEffect-1` says that Rack 7 should be brought below 30 °C during declared operation. Before the rack or cooling loop has changed, that is required effect claim content: there is no actual `U.Transformation`, even if a functional-view row, flow diagram, or selected `TransformationFlowStructure` cites it. Later, `Rack7CoolingTransformation-42` may be identified under A.3.4 when the exact changed referent and boundary are fixed, operating and ambient boundary conditions are stated, actual before facts show 38 °C, actual during facts recover heat removal, actual after facts show 27 °C, and continuity or reidentification keeps the same referent recoverable. A separate satisfaction or realization predicate is still needed before claiming that the later transformation satisfies `RequiredCoolingEffect-1`; temporal succession or matching labels alone is insufficient.
+**Required cooling effect followed by actual cooling.** Requirement episteme `RequiredCoolingEffect-1` says that Rack 7 should be brought below 30 °C during declared operation. Before the rack or cooling loop has changed, that is required effect claim content: there is no actual `U.Transformation`, even if a functional-view row, flow diagram, or selected `TransformationFlowStructure` cites it. Later, `Rack7CoolingTransformation-42` may be identified under A.3.4 when the exact changed referent and boundary are fixed, operating and ambient boundary conditions are stated, actual before facts show 38 °C, actual during facts recover heat removal, actual after facts show 27 °C, and continuity or reidentification keeps the same referent recoverable. A separate satisfaction or realization predicate is still needed before claiming that the later transformation satisfies `RequiredCoolingEffect-1`; temporal succession or matching labels alone is insufficient.
 
 A selected transformation-flow structure, mathematical graph description, transformation-flow path slice, crossing, or flow valuation is not a functional element or actual transformation by default. When a transformation-flow relation is being used, connect the functional view to the exact `TransformationFlowStructure` through `C.30.TFS-REL`. When a mathematical graph description is being used, connect it through `E.18.2`; when math-lens use is being claimed, connect it through `C.29`. When module allocation is being claimed, use `A.6.M` to repair the module claim and identify the admitted allocation or interface relation separately rather than treating function and module as one kind. Functional ports and module interfaces can both use `U.Signature` discipline, but functional ports specify behavior input and output slots while module interfaces specify substitution, compatibility, boundary, and change-policy claims.
 
@@ -532,7 +534,7 @@ Do not make source return mandatory for ordinary local recognition when no hidde
 
 Model cards, system cards, and evaluation harness reports may publish or substantiate an architecture structural view only when the structural-view claim is recoverable. The view must name the relevant structure kind, such as `RuntimeInteractionStructure`, `InformationDataStructure`, `SecurityTrustBoundaryStructure`, `EvidenceAssuranceStructure`, `ModuleInterfaceStructure`, or another declared structure kind; it must also state intended-use scope, evaluation scope and known loss when evaluation is used, deployment-context mismatch when that mismatch is being claimed, and the applicable evidence or assurance pattern when the publication is used beyond transparency. A card or harness is not architecture adequacy, safety proof, or release claim or gate claim by publication alone.
 
-**Currentness and smallest reopen.** When a decisive input changes, reopen only the `ArchitectureStructuralView` locus and use conclusion that depend on it. A changed selected structure or structure kind reopens its exact structure fields and, when another structure becomes the EntityOfConcern, requires a separately identified description episteme; a changed description identity reopens only that episteme's view admission; a changed viewpoint or conformance occurrence reopens only the E.17.0 predicate; changed construction or knowledge state, correspondence, source edition or lost structure reopens the matching provenance, correspondence, source-to-use, hidden/lost-structure, or source-return locus; and a changed admissible-use boundary or applicable rule reopens only its dependent use or claim. Update that locus, demote the episteme to a structural description or `ArchitectureStructureKindTriage@Project`, narrow use, return to the named source, or stop; unrelated structures, views, and claims stay closed.
+**Currentness and smallest reopen.** When a decisive input changes, reopen only the `ArchitectureStructuralView` locus and use conclusions that depend on it. A changed selected structure or structure kind reopens its exact structure fields and, when another structure becomes the EntityOfConcern, requires a separately identified description episteme; a changed description identity reopens only that episteme's view admission; a changed viewpoint or conformance occurrence reopens only the E.17.0 predicate; changed construction or knowledge state, correspondence, source edition or lost structure reopens the matching provenance, correspondence, source-to-use, hidden or lost structure, or source-return locus; and a changed admissible-use boundary or applicable rule reopens only its dependent use or claim. Update that locus, demote the episteme to a structural description or `ArchitectureStructureKindTriage@Project`, narrow use, return to the named source, or stop; unrelated structures, views, and claims stay closed.
 
 #### C.30.ASV:4.8 - Worked slices
 
@@ -643,7 +645,7 @@ Evidence reuse across product variants:
   architectureMove:
     name affected structures, variant boundary, hidden view losses,
     and source-return condition
-  governingPatternApplicationRefs:
+  claimPatternRefs:
     A.10, G.6, or B.3 for evidence sufficiency or assurance verdict
   nonAdmissibleUse:
     evidence-structure view as assurance verdict
@@ -693,7 +695,7 @@ correspondenceOrLossLine:
   record the preserved relation among runtime topology, information custody,
   security boundary, module-interface, and evidence-assurance structures,
   plus any diagram or evaluation-harness loss
-governingPatternApplicationRefs:
+claimPatternRefs:
   C.30.TFS-REL when an E.18 flow relation is being used,
   A.6.M module-relation repair for tool, API, or interface relation claims,
   A.10, G.6, or B.3 when evidence or assurance reliance is being claimed,
@@ -740,7 +742,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | **CC-ASV-4 Viewpoint conformance.** | The candidate episteme and exact viewpoint episteme satisfy the fixed five-part E.17.0 predicate, and `viewpointConformanceRelationRef` names the participant-determined obtaining occurrence. A bundle or viewpoint label is only discovery support. | Apply E.17.0. If the predicate does not obtain, keep a structural description or triage result and do not call it `U.View`. |
 | **CC-ASV-5 Lost structure.** | The view names hidden or lost structure, especially for query, extraction, coarsening, or publication uses. | Add a one-line hidden-structure note or lost-structure note, or narrow the admissible use so omitted structure is not relied on. |
 | **CC-ASV-6 Correspondence.** | Cross-view claims are carried by exact correspondence claims or independently established obtaining relations, not by prose, shared packaging, or graph adjacency alone. | Add a correspondence claim or direct relation, or stop at a single-view statement without a cross-view consistency claim. |
-| **CC-ASV-7 No representation/publication collapse.** | A diagram, model, table, dashboard, generated relation graph, ADR, publication occurrence, form, or carrier is kept separate from the view episteme and selected structure. | Name the exact description episteme, any C.29 representation, and the E.24.PUB occurrence/form/carrier separately; claim `U.View` only when E.17.0 conformance obtains. |
+| **CC-ASV-7 No representation or publication collapse.** | A diagram, model, table, dashboard, generated relation graph, ADR, publication occurrence, form, or carrier is kept separate from the view episteme and selected structure. | Name the exact description episteme, any C.29 representation, and the E.24.PUB occurrence, form, and carrier separately; claim `U.View` only when E.17.0 conformance obtains. |
 | **CC-ASV-8 No single-view architecture.** | If a decision uses an architecture view, it names the affected structures and views, not only one favored diagram. | Add affected structure and view refs, or narrow the decision to the single view's admissible use. |
 | **CC-ASV-9 No proof overread.** | The view does not stand in for empirical grounding, evidence, safety proof, causal proof, gate decision, or work record; each such claim needs its own obtaining relation and applicable pattern. | Use `EpistemeEmpiricalGroundingRelation`, `A.10`, `G.6`, `B.3`, `A.20`, `A.21`, or `C.28` for the applicable claim, or mark it unsupported; do not add more ASV fields as a substitute. |
 | **CC-ASV-10 Relation or correspondence record named by value.** | Every cross-reference names the exact kind, claim, relation, or record: selected structure, structure kind, viewpoint, conformance occurrence, correspondence claim or relation, allocation record, bridge record, evidence relation, publication relation when publication is current, interface specification, or applicable record kind named by value. | Replace the ambiguous reference with the object that actually carries the claim, or split the sentence into separate objects. |
@@ -755,7 +757,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | **Module diagram as architecture view** | One module-interface diagram is treated as the whole architecture or as a `U.View` by appearance. | Use structure-kind triage; keep module-interface as one structure kind and apply exact E.17.0 conformance only when view membership matters. |
 | **Viewpoint as structure kind** | `VP.Functional`, `VP.ModuleInterface`, or another viewpoint is used as if it were the selected structure kind. | Recover `ArchitectureStructureKindRef`; keep its binding to an exact viewpoint episteme separate. |
 | **Structure kind as viewpoint** | `FunctionalStructure` or `ControlStructure` is treated as if it were already an admitted viewpoint P. | Keep structure-kind classification separate; when viewpoint reuse is needed, resolve one exact `U.ViewpointRef` from a materialized local catalogue declaration to exact P and test E.17.0 conformance. |
-| **Publication-face collapse** | A diagram, model, table, dashboard, generated relation graph, ADR, or C4 view is treated as the view episteme. | Recover description episteme, representation, and E.24.PUB occurrence/form/carrier separately; use `ArchitectureStructuralView` only if exact conformance obtains and the view changes action. |
+| **Publication-face collapse** | A diagram, model, table, dashboard, generated relation graph, ADR, or C4 view is treated as the view episteme. | Recover description episteme, representation, and E.24.PUB occurrence, form, and carrier separately; use `ArchitectureStructuralView` only if exact conformance obtains and the view changes action. |
 | **Single-view decision** | A decision uses one architecture view as if it covered all affected structures. | Name affected structures and view refs, or narrow the decision to the single view's admissible use. |
 | **Lost-structure silence** | Extracted, generated, coarsened, or compressed views hide distinctions but still justify action. | Add hidden structure and lost structure and source-return condition, or narrow admissible use. |
 | **Proof overread** | The structural view is used as evidence sufficiency, safety proof, causal proof, gate decision, or work record. | Use the applicable evidence, assurance, causal, gate, or work pattern and keep ASV only to view adequacy. |
@@ -798,7 +800,7 @@ Builds on: `C.30.P`, `C.30`, `A.1`, `A.22`, `C.2.1`, `E.24.PUB`, `A.6.3`, `E.17.
 
 Coordinates with: `A.6.F`, `A.6.M`, `C.30.TFS-REL`, `C.30.LCA`, `C.30.ILC`, `E.18`, `C.29`, `C.16`, `C.25`, `C.28`, `A.10`, `G.6`, `B.3`, `A.20`, `A.21`, `A.15`, `C.11`, `C.32.P2S`, `C.32`, `C.32.PAD`, `C.32.ADR`, `C.32.ADA`, `C.33`, `C.34`, and `C.35` when problem-to-structure carry-through, candidate-set, architecture-decision, ADR-projection, decision-adequacy, capture, preservation, or generated-carrier claim kinds are being made. Use `A.6.M` when a module-interface claim is being made, and separately identify the admitted module or allocation relation required by that claim.
 
-Use these patterns for the other claims: `C.30` for direct architecture relations, bounded architecture claims, and selected-structure adequacy; `A.1` for the exact described holon; `A.22` for selected-structure identity; `C.2.1` for description episteme identity; `E.17.0` for exact Viewpoint/View conformance; `E.24.PUB` for publication occurrence, form, and carrier; `C.29` for representation and mathematical-lens use; `C.33` for captured and lost selected structure in a view; `C.34` for preservation or correspondence between a view and another structure-bearing object; `C.35` for generated or discovered carriers before candidate admission; `E.18` for selected transformation-flow structure, transformation-flow path, and crossing discipline; `E.18.2` for mathematical graph descriptions; `C.16` for characterization; `C.25` for Q-Bundles; `C.28` for causal use; `A.10` and `G.6` for evidence; `B.3` for assurance; `A.20` and `A.21` for gate or release records; `A.15` for Work and project-use relations; `C.11` for decisions; and `C.32.P2S` for problem-to-structure carry-through when the view is one captured or lost-structure stage. `C.30.ASV` covers structural-view adequacy for the selected structure being viewed.
+Use these patterns for the other claims: `C.30` for direct architecture relations, bounded architecture claims, and selected-structure adequacy; `A.1` for the exact described holon; `A.22` for selected-structure identity; `C.2.1` for description episteme identity; `E.17.0` for exact viewpoint conformance; `E.24.PUB` for publication occurrence, form, and carrier; `C.29` for representation and mathematical-lens use; `C.33` for captured and lost selected structure in a view; `C.34` for preservation or correspondence between a view and another structure-bearing object; `C.35` for generated or discovered carriers before candidate admission; `E.18` for selected transformation-flow structure, transformation-flow path, and crossing discipline; `E.18.2` for mathematical graph descriptions; `C.16` for characterization; `C.25` for Q-Bundles; `C.28` for causal use; `A.10` and `G.6` for evidence; `B.3` for assurance; `A.20` and `A.21` for gate or release records; `A.15` for Work and project-use relations; `C.11` for decisions; and `C.32.P2S` for problem-to-structure carry-through when the view is one captured or lost-structure stage. `C.30.ASV` covers structural-view adequacy for the selected structure being viewed.
 
 ### C.30.ASV:End
 

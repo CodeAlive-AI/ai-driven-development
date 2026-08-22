@@ -11,15 +11,21 @@ Use `F.18` when a name must become stable, public, Core-facing, reusable under m
 - one tempting head word is useful under one recovered local meaning but misleading under another;
 - a system-role-derived, method-derived, status-like, evidence-like, interface-like, or slot-like name risks creating a second ontology by wording alone.
 
-First useful move: recover the exact governed object or governed value before choosing the name. When relation-facing wording is current, distinguish a predicate-definition episteme, an admitted relation kind, an obtaining relation occurrence, a representation element, and a designator or reference; for a residual relation claim, cite the `A.6.RCD` settlement before naming. Other candidates—such as a system-role kind, assignment occurrence, method, work, characteristic, status value, architecture element, or claim-bearing episteme—stay under their direct patterns rather than being forced into that relation-facing list. When bare claim-bearing *role* still hides the object, use `E.10.ROLE` first. Then ask: under which effective by-value `U.ReferenceScheme`, by which direct pattern, for which use, and with which exact local sense is this object named? Only then decide whether a local expression is enough or a `NameCard` is needed. A public row is a later step: create one only when public, Core-facing, durable-across-context, or cross-context reuse is current and the `F.17` entry and result gate in section 4 passes.
+**First useful move.**
 
-Do not use `F.18` for one-off wording repair. If the phrase is local and not becoming a reusable name, use `E.10`, `E.10.ARCH`, `A.6.P`, `A.6.RSIR`, `C.2.P`, or the subject pattern for the object being named. In particular, say in ordinary words whether one exact Bridge is suitable for one named use; do not create a `NameCard`, public claim kind, or durable CamelCase head merely to abbreviate that C.2.1 claim. Reopen F.18 for that claim only when an independent later use actually needs a reusable name beyond the local statement.
+1. Recover the exact value and the pattern containing its defining or testing rule.
+2. Decide whether ordinary local wording is enough or later use really needs a durable name.
+3. If a durable name is needed, compare the plausible names and record one Tech label, one Plain explanation, the selection reason, and the reopen condition in a `NameCard`.
+
+If bare claim-bearing *role* still hides the object, use `E.10.ROLE`; if relation, slot, interface, port, or signature wording hides it, use section 5.6. Open section 4.4 only for a genuinely public, Core-facing, durable-across-context, or cross-context use. A public row is a later result, never part of the first naming move.
+
+Do not use `F.18` for one-off wording repair. If the phrase is local and not becoming a reusable name, use `E.10`, `E.10.ARCH`, `A.6.P`, `A.6.RSIR`, `C.2.P`, or the pattern containing the rule for the object being named. In particular, say in ordinary words whether one exact Bridge is suitable for one named use; do not create a `NameCard`, public claim kind, or durable CamelCase head merely to abbreviate that C.2.1 claim. Reopen F.18 for that claim only when an independent later use actually needs a reusable name beyond the local statement.
 
 ### F.18:1 - Context
 
 Names are handles for use, not creators of ontology. A good name lets people talk about a governed value without smuggling in an extra system-role kind, assignment, capability, method, work, status, evidence, interface, or cross-context claim.
 
-`FPFCoreReferenceScheme` is the by-value `U.ReferenceScheme` used to interpret current FPF Core Tech labels and relation names. A NameCard that uses it carries that reference-scheme value by value, consistent with `C.2.1`; F.18 does not introduce `U.ReferenceSchemeRef`. A name interpreted under another reference scheme carries that scheme by value. When a naming use must align two exact local senses, compare their `<ReferenceScheme, LocalSenseClaim>` projections. The same projection plus another expression is a designation question and gets no Bridge. Different projections—including the same scheme with different `LocalSenseClaim` values—open the F.9 question; a different scheme is only one such case and proves no Bridge. Test the exact F.17 cells and cite a Bridge only when its predicate actually obtains. State the proposed naming use separately in an exact current C.2.1 claim with that Bridge as EntityOfConcern and affirmative polarity; name the direction, correspondence rule, and tolerated loss. For ordinary bounded reliance below B.3's threshold and with no assurance claim, require the exact A.10 evidence-provenance graph relation plus `RelianceDisposition=pass` for that use. When an assurance claim is made or the threshold is met, follow B.3's first-claim decision and require either a current positive claim carrying that use with its sufficient record or an exact disposition that stops or narrows it; the threshold alone creates no positive claim. The named use is still claim content. Neither reliance route authorizes it or proves that it occurred. If it did occur, recover the actual Work under A.15.1, assertion episteme under C.2.1, publication occurrence under E.17, direct relation under its exact domain predicate and pattern locator, operation application under A.6.1, or another exact result or relation under its own predicate. Name a `BoundedModelUseStructure` only when that selected structure changes the sense or naming use. Until the Bridge, separate claim, and required reliance are current, keep the names local or record the unresolved alignment. When no semantic-correspondence use is current, create no Bridge or use claim regardless of scheme count. A reference-scheme or model-use-structure difference alone supplies neither premise, governed-value identity, nor `U.BoundedContext`.
+`FPFCoreReferenceScheme` is the by-value `U.ReferenceScheme` used to interpret current FPF Core Tech labels and relation names; a name under another scheme carries that scheme by value. Most naming work stays within one `<ReferenceScheme, LocalSenseClaim>` projection and needs no Bridge. If one named use must relate different projections, follow the later cross-projection branch in section 4.4.1. Shared spelling, another scheme, or a selected model-use structure alone creates no Bridge, use claim, reliance, governed-value identity, or `U.BoundedContext`.
 
 `F.18` supplies the naming discipline for Part F and for any FPF pattern that needs a durable public term. It coordinates with:
 
@@ -132,7 +138,7 @@ Names such as "foundational principle pattern set", "FPF Core", "domain principl
 
 #### F.18:4.2a - Current Bounded-Model-Use NameCards
 
-The four expanded cards below are the current `FPFCoreReferenceScheme` naming settlements consumed by F.17:12.4d-12.4e. Each resolves to one exact current scheme-based F.17 cell and its separately governed local-sense basis relation. They publish designations for already governed values; they create no kind, structure, relation occurrence, assertion, Work, Bridge, use, reliance, row-availability occurrence, or other receiving action.
+The four expanded cards below are the current `FPFCoreReferenceScheme` naming settlements consumed by F.17:12.4d-12.4e. Each resolves to one exact current scheme-based F.17 cell and its separately governed local-sense basis relation. They select, record, and make recoverable designations for already governed values; they create no kind, structure, relation occurrence, assertion, Work, Bridge, use, reliance, row-availability occurrence, or other receiving action.
 
 ```text
 NameCard:
@@ -408,9 +414,15 @@ NameCard:
 
 Each card has one exact governed value and one selected Tech/Plain pair. No card is created for the `SystemRole` morphology, `J_kindUse`, a declaration-local slot, or a context field.
 
-#### F.18:4.2c - Pending R7 rule-content NameCard candidates
+#### F.18:4.2c - Demonstrative wording without a fabricated value or scheme
 
+A.22.CGUS:4.4 permits one exact C.2.1 episteme to show a traversal through an already qualified CGUS. It does not define a demonstrative-slice `U.Kind`, and `DemonstrativeUnfoldingSlice@Context` does not identify an exact slice by itself. The current sources also do not constitute `FPFSeminarTeachingReferenceScheme-2026-07-11` as a second by-value scheme whose interpretation differs from `FPFCoreReferenceScheme`.
 
+Keep *demonstrative walkthrough* as ordinary readable wording when a sentence already makes the exact shown slice clear. Keep *mantra* as bounded seminar or pattern-local recall wording when repetition and attention are the point. Do not manufacture two NameCards, SenseCells, a Bridge, a bounded-use claim, or current F.17 rows from those phrases. No naming settlement or public-row status is current here.
+
+If a later use needs stable citation of one exact slice, first recover that C.2.1 episteme from its claim content, the qualified CGUS it concerns, and its effective scheme. Then make one NameCard only if durable naming is useful. Add another card and a Bridge only if a second exact scheme-and-sense projection materially changes interpretation and one named correspondence use is current. Availability remains a separate E.24.PUB operation. `mantra move` stays E.10.MOVE Plain wording for a shown E.11.PUA continuation description; it is not a durable value or a second scheme.
+
+#### F.18:4.2d - Pending R7 rule-content NameCard candidates
 The following are candidate inputs, not current `NameCard` epistemes. Each uses the exact by-value `FPFCoreReferenceScheme`, keeps the governed `U.NameToken` separate from the R7 predicate or designation value it names, and creates no Bridge because the current comparison is within one scheme. E.10's exact TokenClass, reserved-name, and allowed-scope prerequisites remain unresolved, so `PublicRowStatus = pending` for all three and no `UnifiedTermRowRef` exists.
 
 | Candidate expression | Exact local sense and governed value | Covered head families and rejected overread | Three-arena invariance | Reopen/close condition |
@@ -437,22 +449,27 @@ One candidate can win even when it is not perfect, but the `SelectionRationale` 
 
 #### F.18:4.4 - Public Term Rows
 
-A durable local name needs no row. When public, Core-facing, durable-across-context, or cross-context reuse is current, test the then-current F.17 entry with the exact objects already recovered here. Public or durable reuse alone creates no Bridge. The entry must accept separate references to the governed value and its kind, direct pattern, NameCard episteme, selected Tech and Plain designations, effective by-value reference scheme, exact F.17 scheme-based SenseCell, any separate local-sense basis relation, and any actual F.9 Bridge. When the row use relates different `<ReferenceScheme, LocalSenseClaim>` projections, its rationale or notes must separately cite the affirmative C.2.1 claim for the row's exact action, direction, rule, and tolerance and that claim's current A.10 or B.3 reliance. Its result must contain one row for one naming decision with the supported and blocked citation uses visible. If it cannot, keep the durable name and NameCard local and mark the public row pending. Do not repair or emulate the missing row inside F.18.
+A durable local name needs no row. When public, Core-facing, durable-across-context, or cross-context reuse is current, test the then-current F.17 entry with the exact objects already recovered here. Public or durable reuse alone creates no Bridge.
 
-When that gate passes, keep these positions distinct:
+The F.17 entry must be able to recover:
 
-- `GovernedValueRef`: the exact already-governed value;
-- `GovernedValueKindRef`: its exact kind, never an alternative to the value reference;
-- subject pattern;
-- NameCard episteme and selected designation expressions;
-- exact local-sense and basis-relation references;
-- any actual Bridge occurrence;
-- for reuse between different semantic-context projections, the separate affirmative C.2.1 claim about that Bridge and its current A.10 or B.3 reliance, cited in the row rationale or notes rather than absorbed into the NameCard;
-- the row or row episteme, its edition, supported citation use, blocked use, and currentness condition.
+- the governed value and its kind;
+- the locator for the pattern containing its defining or testing rule;
+- the NameCard episteme and selected Tech and Plain designations;
+- the effective by-value reference scheme, exact F.17 scheme-based SenseCell, and any separate local-sense basis relation;
+- any F.9 Bridge that actually obtains.
 
-The row is neither the governed value nor an agent of publication. When availability is needed, an `E.24.PUB` `EpistemePublicationRelation` occurrence makes the exact row-episteme edition available to a declared audience for a bounded use through a distinct publication form and presentation carrier. The form does not publish itself, and the row's currentness claim or relation remains separate from the availability occurrence.
+If the row use relates different `<ReferenceScheme, LocalSenseClaim>` projections, its rationale or notes must cite the separate affirmative C.2.1 claim for the exact action, direction, rule, and tolerance, plus that claim's current A.10 or B.3 reliance. The result must contain one row for one naming decision and show both supported and blocked citation uses. If the entry cannot do this, keep the durable name and NameCard local and mark the public row pending. Do not repair or emulate the missing row inside F.18.
 
-A row for `ReviewerSystemRole` points to one exact local system-role kind and its selected names; it neither admits the kind nor makes an assignment obtain. A row for `EvidenceUseRelation` points to the admitted relation kind or other exact governed object; it does not make an episteme into a system-role holder or make the relation obtain. A row for `SlotKind` or `EndpointSlot` carries or designates selected vocabulary only after the exact slot object is governed; it neither makes that row edition available nor creates a generic interface ontology.
+#### F.18:4.4.1 - Cross-Projection Use and Reliance
+
+Open this branch only when one named reuse must relate different `<ReferenceScheme, LocalSenseClaim>` projections. Compare the exact F.17 cells. Another expression under the same projection is a designation question and gets no Bridge. Different projections open the F.9 question; a different scheme is only one way projections can differ and proves no relation. Test the F.9 predicate and cite a Bridge only when it actually obtains. With no current correspondence use, create no Bridge or use claim regardless of scheme count.
+
+State the proposed naming use in a separate current C.2.1 claim whose EntityOfConcern is that Bridge. Record the action, direction, correspondence rule, tolerated loss, and polarity.
+
+Then choose the reliance route. For ordinary bounded reliance below B.3's threshold and with no assurance claim, use the exact A.10 evidence-provenance relation and `RelianceDisposition=pass`. When an assurance claim is made or the B.3 threshold is met, follow B.3's first-claim decision: require a current positive claim with sufficient record or a disposition that stops or narrows the use. The threshold creates no positive claim. Neither route authorizes the use or proves that it occurred.
+
+If the reuse did occur, recover its actual Work under A.15.1, assertion episteme under C.2.1, publication occurrence under E.24.PUB, direct relation under its own predicate, operation application under A.6.1, or other exact result under its direct rule. Name a `BoundedModelUseStructure` only when that selected structure changes the sense or naming use. Until the Bridge, separate claim, and required reliance are current, keep the names local or record the unresolved alignment. A reference-scheme or model-use-structure difference alone supplies neither a premise nor governed-value identity.
 
 ### F.18:5 - System-Role-Kind, Assignment, Slot, and Status Naming Settlement
 
@@ -460,7 +477,7 @@ This settlement keeps naming aligned with the object already recovered. Bare *ro
 
 #### F.18:5.1 - System-Role-Kind Names
 
-A durable system-role-kind name designates one exact local kind admitted through C.3 and A.2 and identified by its named practice or source boundary plus stable assignable contribution. Its candidates are entities already admitted under A.1 as `U.System`, including a person, team, organization, or non-human technical object. The Tech designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`, `ShipbuilderSystemRole`, or `ServiceProviderSystemRole`. `SystemRole` is compound morphology, not a universal governed value. The name creates no system admission, kind membership, assignment, agency, capability, or Work.
+A durable system-role-kind name designates one exact local kind admitted through C.3 and A.2. Recover that kind through its candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. A practice or source reference can locate the definition or signal that two definitions should be compared; it does not identify the kind. Candidates are entities already admitted under A.1 as `U.System`, including a person, team, organization, or non-human technical object. The Tech designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`, `ShipbuilderSystemRole`, or `ServiceProviderSystemRole`. `SystemRole` is compound morphology, not a universal governed value. The name creates no system admission, kind membership, assignment, agency, capability, or Work.
 
 A system-role-kind name must not include:
 
@@ -520,7 +537,7 @@ First recover what the name is for:
 | `R1 incompatibleWith R2` | one exact symmetric incompatibility relation occurrence between two independently admitted local system-role kinds, identified by the unordered pair, same- or different-holder rule, Work identity, overlap test, applicability, and only meaning-changing semantic basis | Name or cite the exact relation occurrence or a selected `SystemRoleKindRelationStructure`, not another system-role kind. Exact assignments and the receiving Work remain separate inputs and do not replace the two kind participants. |
 | `R1 and R2` | two independently admitted system-role kinds; any assignment occurrences are separate and are required only when the receiving sentence also claims them | Use “and” in ordinary prose. Keep the two kind claims recoverable, and do not infer assignments or make a compound kind by hyphenating the labels. |
 | `R1 bundle R2`, or quoted source shorthand `RoleBundle := R1 and R2` | one order-insensitive finite-set relation among exact system-role kinds, with a joint-admission and holder-allocation predicate | Keep it as a bundle relation. A convenient bundle name does not admit a compound system-role kind; such a kind would need its own independent C.3 identity and use. |
-| `R1` qualified by a domain, practice, Method family, or ordinary work field | either one independently admitted local system-role kind or a residual A.2.7 qualification relation between two kinds | Before naming a kind, state its stable assignable contribution distinction and apply the current C.3 criterion to features of the candidate system established under their own patterns. A domain, practice, ordinary work field, Method, Work family, or performed Work occurrence remains a separate value. Keep a non-monotonic restriction as its exact relation and do not infer admission substitution. |
+| `R1` qualified by a domain, practice, Method family, or ordinary work field | either one independently admitted local system-role kind or a residual A.2.7 qualification relation between two kinds | Before naming a kind, recover its C.3 candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. A domain, practice, ordinary work field, Method, Work family, or performed Work occurrence remains a separate value or comparison cue. Keep a non-monotonic restriction as its exact relation and do not infer admission substitution. |
 | Method-like phrase derived from a system-role label | Method, Method family, MethodDescription, WorkPlan, or Work occurrence | Name the recovered object through `A.3.1`, `A.3.2`, or `A.15`; cite the exact system-role-kind relation separately when it constrains admission or performance. |
 | algebraic, graph, matrix, embedding, distributed, or neural representation of system-role kinds or their relations | mathematical or representation description of a selected `SystemRoleKindRelationStructure` | Name the lens only when the representation itself is the object being named; otherwise name the recovered kind, relation occurrence, selected structure, Method, assignment, or Work. |
 | Method algebra, Method graph, Method matrix, process calculus, selector calculus, or Method embedding | mathematical or representation description of exact method-side relations or their selected `MethodRelationStructure` | Name the lens only when the representation itself is the object being named; otherwise name the exact relation, selected structure, Method family, MethodDescription, WorkPlan, Work occurrence, or neighboring relation. |
@@ -600,7 +617,7 @@ A shipyard team wants one reusable name for the local system-role kind used in s
 
 Recovered values:
 
-- `ShipbuilderSystemRole@ShipyardProduction`, one local C.3 kind identified by the shipyard's stable assignable shipbuilding contribution; a system counts under it only when the features established under their own patterns satisfy the current `KindSignature`;
+- `ShipbuilderSystemRole`, one local C.3 kind whose admitted-system candidates count when they satisfy the current shipbuilding condition; the member/non-member probes and continuity rule expose the boundary, while the ShipyardProduction source only locates the definition;
 - one direct assignment occurrence under A.2.1 whose admitted holder system and assigned `ShipbuilderSystemRole` kind are explicit, while any work area, schedule, interpretation, or reference scheme remains separate unless that direct species needs it for occurrence identity;
 - `ShipbuildingCapability` with envelope and measures under the capability pattern;
 - `ShipbuildingMethod` or a method family under A.3.1; if a separately identified `ShipbuildingMethodDescription : U.MethodDescription` episteme is current, name it separately under A.3.2 only when its exact `EntityOfConcern` is that Method;
@@ -613,19 +630,19 @@ The local card is:
 ```text
 NameCard:
   NameCardId: NameCard.ShipbuilderSystemRole.ShipyardProduction.2026
-  GovernedValueRef: ShipbuilderSystemRole@ShipyardProduction
+  GovernedValueRef: ShipbuilderSystemRole
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.2 with C.3
   ReferenceScheme: Shipyard-Production-Scheme
   ClaimContent: NameCard.ShipbuilderSystemRole.ShipyardProduction.2026.ClaimGraph
-  LocalSenseRef: local expression `shipbuilder (system role)`; sense claim: the ShipyardProduction local kind identified by the stable shipbuilding contribution, with current membership decided by its `KindSignature` from system features established under their own patterns
+  LocalSenseRef: local expression `shipbuilder (system role)`; sense claim: the C.3 kind whose admitted-system candidates satisfy the current shipbuilding condition, member/non-member boundary, and continuity rule; ShipyardProduction provenance locates this settlement but does not identify the kind
   LocalSenseBasisRelationRef: absent; no independent local-sense basis relation is current
   TechLabel: ShipbuilderSystemRole
   PlainLabel: shipbuilder (system role)
   CandidateSet: ShipbuilderSystemRole; ShipbuilderRole; ShipbuilderSystemRoleKind; ShipbuildingCapability; HullAssemblyWorker; CertifiedShipbuilder
   CandidateCoverage: system-role-kind head; ambiguous role head; redundant kind suffix; capability head; holder-or-work head; certification-or-status head
   RejectedCandidates: ShipbuilderRole; ShipbuilderSystemRoleKind; ShipbuildingCapability; HullAssemblyWorker; CertifiedShipbuilder
-  SelectionRationale: the selected label identifies one local kind without claiming admission, assignment, capability, performed Work, or certification
+  SelectionRationale: the selected label designates the already recovered local kind without claiming admission, assignment, capability, performed Work, or certification
   BridgeRefs: absent; this local settlement makes no semantic-correspondence claim
   PublicRowStatus: localOnly
   UnifiedTermRowRef: absent
@@ -637,17 +654,17 @@ The candidates execute the section 4.3 stopping rule: each live head family is r
 
 #### F.18:7.1a - Reviewer in a Journal Context
 
-`ReviewerSystemRole@JournalReview-2026` is the local kind identified by the stable contribution of supplying a substantive review judgment that meets the current JournalReview acceptance conditions. A system counts under it only when its features, established under their own patterns, satisfy the current `KindSignature`. A review assignment, responsibility, authority, capability, permission, and performed review Work remain separate claims.
+`ReviewerSystemRole` designates the local kind whose admitted-system candidates count when they supply a substantive review judgment that meets the current JournalReview acceptance conditions. The candidate range, operative condition, member/non-member probes, and continuity rule recover the kind; JournalReview-2026 provenance only locates the definition. A review assignment, responsibility, authority, capability, permission, and performed review Work remain separate claims.
 
 ```text
 NameCard:
   NameCardId: NameCard.ReviewerSystemRole.JournalReview.2026
-  GovernedValueRef: ReviewerSystemRole@JournalReview-2026
+  GovernedValueRef: ReviewerSystemRole
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.2 with C.3
   ReferenceScheme: FPFCoreReferenceScheme
   ClaimContent: NameCard.ReviewerSystemRole.JournalReview.2026.ClaimGraph
-  LocalSenseRef: local expression `reviewer (system role)`; sense claim: the JournalReview-2026 local kind identified by the substantive-review contribution, with current membership decided by its `KindSignature` from system features established under their own patterns
+  LocalSenseRef: local expression `reviewer (system role)`; sense claim: the C.3 kind whose admitted-system candidates satisfy the current substantive-review condition, member/non-member boundary, and continuity rule; JournalReview-2026 provenance locates this settlement but does not identify the kind
   TechLabel: ReviewerSystemRole
   PlainLabel: reviewer (system role)
   CandidateSet: ReviewerSystemRole; ReviewerRole; ReviewerSystemRoleKind; ReviewerSystemWorkRole; reviewer
@@ -669,9 +686,9 @@ A lab says: “Vasya is an engineer, does robot engineering, is therefore an eng
 Recovered values:
 
 - Vasya as an admitted system; `MusicalRobotLab_2026` is the lab and Work locus in its direct relations, not a generic assignment participant;
-- `RoboticsEngineerSystemRole@MusicalRobotLab`, one local system-role kind identified by the stable assignable contribution of engineering robotic systems in the lab; a system counts under it only when the features established under their own patterns satisfy the current C.3 criterion;
+- `RoboticsEngineerSystemRole`, one local system-role kind whose admitted-system candidates count when they satisfy the current robotics-engineering condition, boundary probes, and continuity rule; MusicalRobotLab provenance locates the definition but does not identify the kind;
 - robotics as the qualification that distinguishes this local engineering kind, with any non-monotonic restriction retained as a separate A.2.7 relation;
-- `MusicianSystemRole@MusicalRobotLab` as another exact local kind when music performance matters separately;
+- `MusicianSystemRole` as another exact local kind when its own music-performance condition and boundary matter separately;
 - any current engineering or musician assignments as occurrences of their declared A.2.1 species;
 - robot-engineering Method or Work, music-performance Work, and robot-music-teaching Method or Work under their direct patterns;
 - an optional algebraic, graph, matrix, embedding, or neural representation only if the project actually uses that lens to describe the selected system-role-kind relation structure.
@@ -681,12 +698,12 @@ If the exact robotics-qualified local kind has been admitted, its local naming s
 ```text
 NameCard:
   NameCardId: NameCard.RoboticsEngineerSystemRole.MusicalRobotLab.2026
-  GovernedValueRef: RoboticsEngineerSystemRole@MusicalRobotLab
+  GovernedValueRef: RoboticsEngineerSystemRole
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.2 with C.3 and A.2.7 for the separately current qualification relation
   ReferenceScheme: MusicalRobotLab-Scheme
   ClaimContent: NameCard.RoboticsEngineerSystemRole.MusicalRobotLab.2026.ClaimGraph
-  LocalSenseRef: local expression `engineer-roboticist`; sense claim: the MusicalRobotLab local engineering system-role kind identified by the stable contribution of engineering robotic systems, with current membership decided by its `KindSignature` from system features established under their own patterns
+  LocalSenseRef: local expression `engineer-roboticist`; sense claim: the C.3 kind whose admitted-system candidates satisfy the current robotics-engineering condition, member/non-member boundary, and continuity rule; MusicalRobotLab provenance locates this settlement but does not identify the kind
   LocalSenseBasisRelationRef: absent; no separate source-bearing basis relation is current for this use
   TechLabel: RoboticsEngineerSystemRole
   PlainLabel: engineer-roboticist
@@ -781,7 +798,7 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | --- | --- |
 | Governed value | The named value is recoverable and belongs to a subject pattern. |
 | Interpretation | The effective `U.ReferenceScheme` is carried by value and the local sense is named; model-use structure, claim scope, project work, and other locality relations remain separate. |
-| Kind | The kind is stated as governed value kind, not inferred from spelling. |
+| Kind | The kind is not inferred from spelling, source, or practice. A system-role kind is already recoverable through its candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. |
 | Candidate set | The smallest set covers at least two live head families and every plausible neighbouring-object reading; any forced untested exception is explicit in `CandidateCoverage` and `RefreshCondition`. |
 | System-role boundary | System-role kind, classification, assignment, holder, capability, Method, Work, evidence, status, participant meaning, declaration place, and representation position are not collapsed. |
 | Relation-object boundary | Predicate-definition episteme, admitted relation kind, obtaining occurrence, representation element, and designator are named only after their separate settlements; relation slot, interface, port, and signature names cite the applicable direct patterns. |
@@ -795,13 +812,13 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 Regression checks:
 
 - When either the effective reference-scheme edition or the `LocalSenseClaim` changes, compare the resulting semantic-context projections. Re-check any obtaining Bridge, the separate claim about the named use between different projections, and that claim's current reliance; same-projection expression changes stay with designation, and no current correspondence use creates no Bridge or use claim.
-- When a system-role-kind description changes, re-check the local kind name and any assignment name that actually depends on that description edition.
+- When a system-role-kind description changes in a way that may alter the C.3 candidate domain, membership distinction, member/non-member boundary, continuity, or the naming settlement's reader meaning, re-check the local kind name and any assignment name that depends on it. A provenance-only edit does not split the kind.
 - When a method, capability, work, evidence, or status pattern changes, re-check any name that borrowed morphology from that area.
 - When repeated reader errors occur, reopen candidate comparison instead of adding aliases indefinitely.
 
 ### F.18:10 - SoTA-Echoing
 
-Source use was checked on 2026-07-23. F.18 uses only the following lines in this decision; source prestige does not select an FPF value or name.
+Source use was checked on 2026-08-20. F.18 uses only the following lines in this decision; source prestige does not select an FPF value or name.
 
 | Current source and status | Adopted or adapted move | Exact F.18 effect | Limitation and smallest reopen condition |
 | --- | --- | --- | --- |
@@ -810,7 +827,7 @@ Source use was checked on 2026-07-23. F.18 uses only the following lines in this
 | Zhu, Reinecke, and Mitra, [*Language Scent: Exploring Cross-Language Information Navigation*](https://arxiv.org/abs/2604.03604), arXiv:2604.03604, 2026 preprint | Adapt contextual cues and in-situ recognizability as evidence for reader ergonomics; reject any inference from recognizability to cross-context equivalence. | Changes the reader-ergonomics probe in 4.3 and supports the conditional local labels in 7.2 and 7.5 while leaving exact value, local sense, and Bridge recovery mandatory. | The study is small, cross-language, and navigation-focused. Reopen only those probes and examples if stronger reader evidence reverses the observed value of contextual cues or exposes a new loss. |
 | Current FPF `C.18` front and archive discipline | Keep non-dominated candidates, archive members, and selection reasons distinct; expose dimensions and dominance when those methods are actually used. | Supplies the optional ordinal-comparison rule in 4.3; it does not require QD apparatus for an ordinary four-candidate naming decision. | This is comparison discipline, not proof that a label is ontologically correct. Reopen only 4.3 if the FPF front, dominance, or protected-dimension rule changes. |
 
-Currentness rule: when a direct value subject pattern, `C.2.1`, `F.9`, `A.10`, `B.3`, or `E.24.PUB` changes the value, card, sense, Bridge, bounded-use claim, reliance, or publication boundary, reopen only the affected invariant, field, case, or check. A future F.17 edition is consumed only through section 4.4; its change does not reopen local NameCards unless their supported public citation use or object references change.
+Currentness rule: when the pattern containing a value's direct rule, `C.2.1`, `F.9`, `A.10`, `B.3`, or `E.24.PUB` changes the value, card, sense, Bridge, bounded-use claim, reliance, or publication boundary, reopen only the affected invariant, field, case, or check. A future F.17 edition is consumed only through section 4.4; its change does not reopen local NameCards unless their supported public citation use or object references change.
 
 ### F.18:11 - Relations
 

@@ -4,41 +4,41 @@
 > **Status:** Stable
 > **Pattern role:** This compact pattern contains the defining content for the ethical use of an already mapped conflict: mediation, refusal, evidence demand, bounded decision use, and residual handling.
 
-**Use this when.** Use this pattern when an interlevel ethical conflict structure from `D.3` must be used for mediation, refusal, decision, evidence demand, causal return, assurance return, or architecture return.
+**Use this when.** Use this pattern when an `InterlevelEthicalConflictDescription` from `D.3` must support mediation, refusal, a decision, an evidence demand, or a return to causal, assurance, or architecture work.
 
-**Not this pattern when.** If the conflict structure is not yet mapped, use `D.3`. If the issue is only value plurality, use `D.1`. If the issue is only entry recognition, use `D.2`. If the current work is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
+**Not this pattern when.** If the conflict has not yet been described, use `D.3`. If the issue is only value plurality, use `D.1`. If the issue is only entry recognition, use `D.2`. If the current work is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** A mapped ethical conflict is treated as solved, blocked, or decision-ready without naming mediation, refusal, evidence demand, return, accepted residual, or bounded decision use.
 
-**What this buys.** The practitioner can use a `D.3` conflict structure for one admissible mediation action or bounded decision use while keeping evidence, causality, assurance, architecture, and bias-audit claims with their subject patterns.
+**What this buys.** The practitioner can use one exact `D.3` conflict-description episteme for an admissible mediation action or bounded decision use while keeping evidence, causality, assurance, architecture, and bias-audit claims with their subject patterns.
 
 ### D.4:1 - Problem Frame
 
 Once an interlevel ethical conflict is visible, the next risk is premature closure. A team may declare a compromise before evidence is sufficient, turn an assurance input into ethical permission, use one level's value as a trump card, or hide a refusal behind technical language.
 
-`D.4` governs the use of the mapped conflict. It does not make FPF a final moral authority. It asks what move is admissible from the current conflict structure and what must return to evidence, causality, assurance, architecture, decision, or value framing before action is justified.
+`D.4` guides one use of the conflict described by D.3. It does not make FPF a final moral authority. It asks what move is admissible from the current description and what must return to evidence, causality, assurance, architecture, decision, or value framing before action is justified.
 
 ### D.4:1.0 - Problem
 
-A mapped ethical conflict can still be used badly. The failure is to treat a conflict structure, assurance input, formula, or architecture return as if it already selected a compromise, refusal, evidence demand, accepted residual, or bounded decision use.
+A described ethical conflict can still be used badly. The failure is to treat its description, an assurance input, a formula, or an architecture return as if it already selected a compromise, refusal, evidence demand, accepted residual, or bounded decision use.
 
 ### D.4:1.1 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Mapped conflict vs. premature closure | A conflict structure makes action discussable, but does not by itself decide compromise, refusal, or permission. |
+| Described conflict vs. premature closure | A conflict description makes action discussable, but does not by itself decide compromise, refusal, or permission. |
 | Evidence demand vs. decision pressure | Work may need a decision, while the ethical claim still needs stronger evidence, causal analysis, assurance, or architecture return. |
-| Mediation vs. universal authority | D.4 can govern one bounded use of a mapped conflict, but cannot become a general decision theory. |
+| Mediation vs. universal authority | D.4 can guide one bounded use of a described conflict, but cannot become a general decision theory. |
 | Residual acceptance vs. hidden harm | Proceeding under residual harm can be admissible only when residuals, the admitted Systems involved, prospective plans or assignment requirements, direct responsibility relations or exact missing governors, and return conditions are explicit. If performance has occurred, its complete Work chain is mandatory. |
 | Mathematical allocation vs. ethical decision | A formula or optimization can inform a decision, but it is not the ethical decision by itself. |
 
 ### D.4:2 - Solution
 
-Record an `EthicalMediationDecisionUse@Context`:
+Record an `EthicalMediationDecisionUse`:
 
 ```text
-EthicalMediationDecisionUse@Context:
-  conflictStructureRef
+EthicalMediationDecisionUse:
+  conflictDescriptionRef: exact C.2.1 U.Episteme identified through D.3
   affectedEntityOfConcernRef
   affectedSystemRefs?
   valueFrameEditionRefs
@@ -58,7 +58,7 @@ EthicalMediationDecisionUse@Context:
   decisionRecordRefs?
   decisionOrRepairSystemRefs?: independently admitted U.System refs
   localSystemRoleKindRefs?: exact local U.Kind refs
-  systemRoleClassificationJudgmentRefs?: exact direct classification refs
+  systemRoleClassificationAssertionRefs?: FinSet(U.EpistemeRef)
   intendedWorkPlanOrCommitmentRefs?: prospective plan or commitment content
   intendedAssignmentRequirementRefs?: prospective requirement content; creates no assignment occurrence
   performedWorkRows?:
@@ -92,22 +92,22 @@ Name the affected EntityOfConcern and any affected Systems, the value-frame edit
 
 | Current situation | Admissible D.4 move | Neighboring subject pattern |
 | --- | --- | --- |
-| A compromise is proposed but the conflict structure has missing levels, scopes, or affected holons. | Use `D.3` and complete the conflict structure. | `D.3` |
+| A compromise is proposed but the D.3 description omits a side, affected entity, scope, value frame, consequence, or horizon. | Return to `D.3` and complete the affected side or tension. | `D.3` |
 | Harm claim depends on causal effect. | Demand the C.28 causal-use evidence value and verdict before ethical decision use. | `C.28` |
 | Evidence is too weak or outdated. | Demand stronger or fresher evidence before mediation. | `A.10`, `C.27` |
 | Assurance claim is being used as ethical permission. | Keep assurance as an assurance or evidence relation, not moral authorization. | `B.3`, `D.5` |
 | Architecture move reduces one residual but creates ethical conflict elsewhere. | Return the architecture residual and keep the ethical conflict distinct. | `C.30.ILC`, `D.3` |
-| A decision must proceed with residual harm. | Record the accepted residual, admitted decision or repair Systems, prospective plan, commitment, permission, authority, or assignment requirements, direct responsibility relations or exact missing governors, evidence limits, and return condition. If Work has actually occurred, add its complete A.15.1/F.6 basis. | `C.11`, `B.3`, `D.5`, A.2.1, A.15.1, and F.6 as applicable |
+| A decision must proceed with residual harm. | Record the accepted residual, admitted decision or repair Systems, prospective plan, commitment, permission, authority, or assignment requirements, direct responsibility relations or exact missing governors, evidence limits, and return condition. If Work has actually occurred, add its complete A.15.1 and F.6 basis. | `C.11`, `B.3`, `D.5`, A.2.1, A.15.1, and F.6 as applicable |
 
 ### D.4:4 - Archetypal Grounding (Worked Slices)
 
-**Fair-share case.** A service outage plan can protect hospitals, households, or industrial customers, but not all at once. `D.3` maps affected scopes and value concerns. `D.4` records the mediation use: options, accepted residuals, evidence demand, admitted decision Systems, prospective assignment requirements or commitments, direct decision-responsibility relations or exact missing governors, and return conditions. No assignment or Work is asserted merely because the plan names intended action. If execution occurs, the record adds the complete Work row. A mathematical allocation Method may have a separate C.29 representation or lens-use assertion, but the allocation formula is not the ethical decision, assignment, or responsibility relation.
+**Fair-share case.** A service outage plan can protect hospitals, households, or industrial customers, but not all at once. The `D.3` conflict description connects each affected scope and value concern to its consequence and horizon. `D.4` records the mediation use: options, accepted residuals, evidence demand, admitted decision Systems, prospective assignment requirements or commitments, direct decision-responsibility relations or exact missing governors, and return conditions. No assignment or Work is asserted merely because the plan names intended action. If execution occurs, the record adds the complete Work row. A mathematical allocation Method may have a separate C.29 representation or lens-use assertion, but the allocation formula is not the ethical decision, assignment, or responsibility relation.
 
-**Override case.** An assurance review says a release has the required technical assurance relation, but `D.3` shows unresolved harm for a subgroup. `D.4` does not let assurance override the ethical conflict. It records whether release is refused, conditioned, delayed for evidence, handled under C.28 causal-use analysis, or allowed with explicit residual and responsibility.
+**Override case.** An assurance review says a release has the required technical assurance relation, but the `D.3` description shows unresolved harm for a subgroup. `D.4` does not let assurance override that conflict. It records whether release is refused, conditioned, delayed for evidence, handled under C.28 causal-use analysis, or allowed with an explicit residual and an independently obtaining responsibility relation or exact missing governor.
 
 ### D.4:5 - Boundaries
 
-`D.4` does not define conflict structure, bias audit, ethical assurance, architecture residual, causal identification, evidence provenance, or decision theory in general. It defines the ethical use of a mapped interlevel conflict.
+`D.4` does not define the conflict description, bias audit, ethical assurance, architecture residual, causal identification, evidence provenance, or decision theory in general. It defines one ethical use of a conflict already described by D.3.
 
 Do not name a mediation move "calculus" unless a mathematical lens is selected and the lens is actually doing work. Do not name a mediation move "operator" unless the current pattern explicitly governs an operation. Most D.4 use is a bounded decision-use record, not a mathematical object.
 
@@ -115,7 +115,7 @@ Do not name a mediation move "calculus" unless a mathematical lens is selected a
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
-| Conflict map becomes decision | A D.3 structure is treated as if it already selected an action. | Name the D.4 move and its admissible use. |
+| Conflict description becomes decision | A D.3 description is treated as if it already selected an action. | Name the D.4 move and its admissible use. |
 | Assurance becomes permission | Technical assurance is read as ethical authorization. | Keep assurance as an assurance or evidence relation and record the ethical use separately. |
 | Formula becomes ethics | Allocation, optimization, or scoring is treated as the ethical decision. | Use `C.29` for the mathematical lens; use D.4 to record the bounded ethical use without making the pattern an agent or responsible party. |
 | Residual harm disappears | Action proceeds while residuals, admitted decision or repair Systems, and direct responsibility relations stay unnamed. | Name accepted residuals, prospective plans, commitments, permissions, authority and assignment requirements, the admitted direct responsibility predicates or exact missing governors, evidence limits, and return condition. Add the complete Work-attribution basis only when performance has occurred. |
@@ -124,10 +124,10 @@ Do not name a mediation move "calculus" unless a mathematical lens is selected a
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D4-1 | A `conflictStructureRef` from D.3 is present or the use requires D.3. | Prevents mediation without mapped conflict. |
+| CC-D4-1 | An exact `conflictDescriptionRef` identifies one C.2.1 episteme through D.3, or the use returns to D.3. | Prevents mediation without a reidentifiable conflict description. |
 | CC-D4-2 | The record names the affected EntityOfConcern, any affected Systems, value-frame editions, decision question and options, intended decision or Work use, and the current admissible move. ClaimScope and qualification window are explicit when they delimit that use. | Keeps ethical use explicit without relying on a generic context premise. |
 | CC-D4-3 | Evidence, causality, assurance, architecture, and decision claims use their subject patterns. | Prevents D.4 from becoming universal decision authority. |
-| CC-D4-4 | When proceeding under residual harm, name accepted residuals and admitted Systems; keep any local kind, separate System-classification judgment, prospective plan or assignment requirement, and actual relation distinct. Every responsibility, authority, permission, or commitment claim has its independently obtaining direct relation or exact A.6.RCD missing governor. Every actual Work row separates the assignment species from its obtaining occurrence and carries the complete A.15.1/F.6 basis. | Keeps bounded decision use reviewable without deriving responsibility or performance from an assignment or decision. |
+| CC-D4-4 | When proceeding under residual harm, name accepted residuals and admitted Systems; keep any local kind, C.2.1 System-classification assertion episteme, prospective plan or assignment requirement, and actual relation distinct. Every responsibility, authority, permission, or commitment claim has its independently obtaining direct relation or exact A.6.RCD missing governor. Every actual Work row separates the assignment species from its obtaining occurrence and carries the complete A.15.1 and F.6 basis. | Keeps bounded decision use reviewable without deriving responsibility or performance from an assignment or decision. |
 
 ### D.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -153,13 +153,13 @@ The pattern keeps refusal, evidence demand, and residual acceptance visible as o
 | Source line | Practical implication for this pattern |
 | --- | --- |
 | Decision analysis and applied ethics | Mediation and decision use need options, refusal, condition, evidence-demand choices, accepted residuals, responsibility, and return conditions, not only a value slogan. |
-| Safety and assurance practice | Assurance can inform bounded ethical decision use, but does not authorize action under unresolved harm or replace D.3 conflict structure. |
+| Safety and assurance practice | Assurance can inform bounded ethical decision use, but does not authorize action under unresolved harm or replace the D.3 conflict description. |
 | Causal and evidence governance | Harm, benefit, and fairness claims depending on causal effect or weak evidence must use `C.28`, `A.10`, or `B.3` before ethical decision use. |
 | FPF mathematical-lens discipline | Optimization, allocation, scoring, Pareto, and threshold reasoning are selected lenses or measurement claims; they do not replace the D.4 ethical-use record or create a universal optimizer. |
 
 ### D.4:11 - Relations
 
-- Builds on `D.3` for the mapped conflict structure.
+- Builds on `D.3` for the exact conflict-description episteme used by this mediation or decision.
 - Coordinates with `D.1` and `D.2` when value frame or multilevel entry is incomplete.
 - Coordinates with `D.5` when bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance is current.
 - Coordinates with `A.10`, `B.3`, `C.11`, `C.28`, `C.29`, and `C.30.ILC` when evidence, assurance, decision, causal, mathematical-lens, or architecture-residual claims are current.

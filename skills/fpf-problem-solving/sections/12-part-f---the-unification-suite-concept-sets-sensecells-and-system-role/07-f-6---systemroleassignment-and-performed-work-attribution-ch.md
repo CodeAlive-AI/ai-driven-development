@@ -187,7 +187,7 @@ InspectionWork-17 was performed by Robot-7 under InspectionAssignment-17.
 
 Expose declarations and occurrence keys only when a dependent use must distinguish occurrences, cite one as a participant, compare assertions, or preserve provenance. If the assignment cannot be recovered, lower the claim to “Robot-7 is named as performer in record R” and state the source, reliance, and evidence claims under their direct predicates.
 
-Another pattern may require a **complete A.15.1/F.6 basis** and point here instead of repeating this declaration and check sequence. Its local prose then names only the Work or attribution distinctions that its own reader uses. The complete basis still recovers the Work's Method, extent, and containing System and, for every performer, the exact assignment species, obtaining occurrence, actual participant values, coverage, and F.6 relation.
+Another pattern may require a **complete A.15.1/F.6 basis** and point here instead of repeating this declaration and check sequence. Its local prose then names only the Work or attribution distinctions that its own reader uses. The complete basis still recovers at least one obtaining `enactsMethod` relation, the Work extent, at least one obtaining locally declared A.15.1 Work-to-System containment relation, and, for every performer, the exact assignment species, obtaining occurrence, actual participant values, coverage, and F.6 relation. Another enactment or containing-system relation is named only when the receiving use relies on it.
 
 ### F.6:5 - Invariants
 

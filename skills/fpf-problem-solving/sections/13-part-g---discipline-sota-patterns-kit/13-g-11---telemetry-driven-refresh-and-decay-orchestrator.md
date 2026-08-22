@@ -6,9 +6,9 @@
 
 **Stage.** run-time and maintenance-time (selective re-computation, republication, and controlled deprecation)
 
-**Primary outputs (kit publication units and records).** `RefreshQueue`, `RefreshPlan@Context` (WorkPlanning plan item), `RefreshReport@Context` (Work or Audit record), `DeprecationNotice@Context`, `EditionBumpLog@Context`.
+**Primary outputs (kit publication units and records).** `RefreshQueue`, `RefreshPlan@Context` (a local application name for one exact `U.WorkPlan`, not a new kind), `RefreshReport@Context` (Work or Audit record), `DeprecationNotice@Context`, `EditionBumpLog@Context`.
 
-**Primary hooks.** `G.Core` (RSCR trigger catalogue, alias docking, and Default Governing Definition Index), `G.6` (EvidenceGraph; `PathId` and `PathSliceId`), `G.7` (Bridge Sentinels; CL, Φ, and plane policy pins), `G.5` (set-returning selection and dispatch), `G.8` (SoS-LOGBundle telemetry hooks), `G.9` (parity reruns), `G.10` (shipping hooks and pack-level telemetry pins), `G.12` (dashboard telemetry pins), `B.3.4` (freshness and decay), `E.18` (GateCrossing and CrossingBundle visibility), `C.18` and `C.19` archive, front, and live-pool policy pins, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support records whose SoTA-sensitive fields can change downstream causal-use results).
+**Primary hooks.** `G.Core` (RSCR trigger catalogue, alias docking, and Default Governing Definition Index), `G.6` (EvidenceGraph; `PathId` and `PathSliceId`), `G.7` (Bridge Sentinels; CL, Φ, and plane policy pins), `G.5` (set-returning selection and dispatch), `G.8` (SoS-LOGBundle telemetry hooks), `G.9` (parity reruns), `G.10` (shipping hooks and pack-level telemetry pins), `G.12` (dashboard telemetry pins), `B.3.4` (freshness and decay), `E.18` (GateCrossing and CrossingBundle visibility), `C.18` and `C.19` archive, front, and live-pool policy pins, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support results whose SoTA-sensitive fields can change downstream causal-use results).
 
 **Non-duplication note.**
 `G.11` cites `G.Core` for RSCR trigger-kind meaning, CN and CG admissibility, tri-state guards, penalties, set-return semantics, shipping or harvesting delegation, `RSCRTriggerKindId` values, and default governing definitions.
@@ -99,7 +99,7 @@ A refresh loop fails (conceptually) when any of the following happens:
     DeprecationNoticeId?,
     EditionBumpLogId?,
 
-    SlotFillingsPlanItemRef[]?
+    WorkPlanRef[]?
   },
 
   DefaultsConsumed := ∅,
@@ -118,34 +118,32 @@ By the `G.Core` **Expansion rule**, the **effective** conformance ids, trigger k
    A queue of refresh candidates keyed by scope (`PathSliceId` preferred; `PatternScopeId` permitted).
    Ordering, prioritization, and batching are policy-bound (and therefore extension-scoped), but every queue item carries canonical trigger kind ids.
 
-2. **`RefreshPlan@Context` (WorkPlanning plan item).**
-   A planned refresh is a WorkPlanning object that **does not execute Work** and **does not embed gate decisions**. It declares:
+2. **`RefreshPlan@Context` (one exact `U.WorkPlan`).**
+   A planned refresh is one `U.WorkPlan` episteme under A.15.2. It **does not execute Work** and **does not embed gate decisions**. `RefreshPlan@Context` is only this pattern's application name for the plan; it declares:
 
-* `RefreshPlanId` (UTS-published id; editioned)
-* `EntityOfConcernRef` and `ReferencePlane` pins (by ref; no implicit widening)
-* `TargetScope := PathSliceId[] | PatternScopeId[]`
-* `PlannedTriggers := RSCRTrigger[]` (canonical trigger kind ids, scope, and payload pins)
-* `PlannedActions := RefreshAction[]` (each action delegates to a subject pattern)
-* `RequiredPins := {EditionPins, PolicyPins, UTS pins, Path pins}` for replayability
-* `PlanItemRefs := SlotFillingsPlanItemRef[]` (when planning baselines or reruns requires explicit planned slot fillings)
-
+   * `RefreshPlanId` (UTS-published id; editioned)
+   * `EntityOfConcernRef` and `ReferencePlane` pins (by ref; no implicit widening)
+   * `TargetScope := PathSliceId[] | PatternScopeId[]`
+   * `PlannedTriggers := RSCRTrigger[]` (canonical trigger kind ids, scope, and payload pins)
+   * `PlannedActions := RefreshAction[]` (each action delegates to a subject pattern)
+   * `RequiredPins := {EditionPins, PolicyPins, UTS pins, Path pins}` for replayability
+   * `PlannedFillingRows[]?` as ClaimGraph content kept inside the WorkPlan under A.15.3 when a value must be pinned against a declaration member defined by its own pattern. A row is addressed only through the WorkPlan and has no separate reference or identity.
 3. **`RefreshReport@Context` (Work or audit artefact).**
    An execution report (Work or Audit artefact) that records:
 
-* `RefreshReportId` (UTS-published id; editioned)
-* `ExecutedActions[]` with links to cited artefacts governed by cited patterns (e.g., new parity report id, new pack id)
-* `ObservedDeltas` (telemetry deltas, admissibility changes, evidence-relation or source-relation changes) as refs and pins, not as untyped prose
-* `RSCRRefs[]` (any RSCR or regression harness artefacts invoked)
-* `EmittedNotices[] := DeprecationNoticeId[]` and `EditionBumpLogId[]`
-* the canonical trigger kinds actually applied (not only aliases)
-
+   * `RefreshReportId` (UTS-published id; editioned)
+   * `ExecutedActions[]` with links to cited artefacts governed by cited patterns (e.g., new parity report id, new pack id)
+   * `ObservedDeltas` (telemetry deltas, admissibility changes, evidence-relation or source-relation changes) as refs and pins, not as untyped prose
+   * `RSCRRefs[]` (any RSCR or regression harness artefacts invoked)
+   * `EmittedNotices[] := DeprecationNoticeId[]` and `EditionBumpLogId[]`
+   * the canonical trigger kinds actually applied (not only aliases)
 4. **`DeprecationNotice@Context` and `EditionBumpLog@Context`.**
    Controlled evolution artefacts that preserve ID-continuity:
 
-* **DeprecationNotice** explains scope, reason class (canonical trigger kind ids), and successor refs.
-* **EditionBumpLog** records edition increments and the pins that justify them.
+   * **DeprecationNotice** explains scope, reason class (canonical trigger kind ids), and successor refs.
+   * **EditionBumpLog** records edition increments and the pins that justify them.
 
-> *Note (normative by delegation).* ID continuity and alias discipline are governed by `G.Core` (do not restate as local rules here).
+   > *Note (normative by delegation).* ID continuity and alias discipline are governed by `G.Core` (do not restate as local rules here).
 
 #### G.11:4.2a - Selected-set, archive, and cultural-variant currentness
 
@@ -212,23 +210,26 @@ Gating outcomes (admit, degrade, or abstain) follow `G.Core` tri-state semantics
 
 #### G.11:4.3a - Causal-use refresh sentinels
 
-When a shipped pack, parity report, evidence relation, source relation, dashboard slice, fairness audit, policy evaluation, or selector output consumes `C.28`, refresh planning includes causal-use sentinel causes when they can change supported use, unsupported use, support verdict, or downstream assurance:
+When a shipped result consumes C.28, refresh planning watches the causes that can change a supported use, unsupported use, support-result verdict, limits, or downstream decision basis:
 
-| Causal-use sentinel | Typical affected C.28 result or related claim | Refresh payload pins |
+| Sentinel | Affected result | Refresh pins |
 | --- | --- | --- |
-| counterfactual-realizability shift | `CounterfactualSamplingRealizabilityProfile`, `realizedCounterfactualSampleSupportBasis`, causal evidence design | profile refs, action-primitive refs, work-plan refs, physical, ethical, and operational constraint refs, target counterfactual distribution refs, admissible-use refs, and unadmissible-use refs |
-| counterfactual-data identification and bounding shift | `CausalIdentificationProfile`, `identifiedCounterfactualEstimateSupportBasis`, bounds or partial-identification result | available data regime set refs, realized counterfactual data refs, counterfactual-data identification method refs, counterfactual-data bound refs, assumption refs |
-| target-trial reporting shift | `TargetTrialProtocolRecord`, `TargetTrialEmulationMappingRecord`, applied intervention-effect support verdict | protocol refs, observational data source refs, eligibility, treatment, time-zero, and assignment mappings, follow-up and outcome mappings, emulation-gap refs, residual-confounding and sensitivity refs and additional-analysis refs |
-| causal-fairness shift | `CausalFairnessUseAuditCard`, causal fairness support verdict, fairness assurance | protected-variable refs, decision-variable refs, and outcome-variable refs, permitted-path refs and prohibited-path refs, fairness estimand refs, causal-use question refs, support basis refs, support record refs and verdict refs |
-| causal-representation-validation shift | `CausalVariableRepresentationRecord`, learned causal-variable admissible use | intervention-validity, mechanism-invariance, abstraction-fidelity, counterfactual-query-preservation, representation-shift refs, OOD refs, supported-causal-variable-use refs, and unsupported-causal-variable-use refs |
-| off-policy or causal-RL evaluation shift | `OffPolicyCausalEvaluationProfile`, causal action-policy admissible use, policy parity | behavior-policy refs and evaluation-policy refs, sequential horizon refs, adaptive policy class refs, unit-history conditioning refs, overlap refs and support-basis refs, policy transportability refs, estimator and uncertainty refs |
-| simulation-validation shift | `simulationOnlyCounterfactualOutputBasis`, bounded model-supported counterfactual use | counterfactual model assumption refs, simulation validation refs, `CausalUseSupportStatement` and `CausalUseUnsupportedStatement` refs, sensitivity and rival-cause refs |
+| sampling-realizability shift | `CounterfactualSamplingRealizabilityResult` | target distribution, decision Method and any derivation, physical, ethical, operational, and history constraints, required construction, bound, or obstruction, status, supported use, and unsupported use |
+| performed sampling or resulting-data shift | dated sampling Work plus A.10 evidence path and empirical data regime | WorkPlan when used; performer, Method, window, attribution, resulting sample or data, provenance, and currentness; a realizability result cannot substitute |
+| identification or bound shift | `CausalIdentificationResult` | data-regime refs, assumptions, identifying derivation, bound or failure witness, sensitivity |
+| estimate shift | `CausalEstimateResult` | identification or design basis, data, estimator Method, diagnostics, uncertainty, sensitivity, and any live estimation-consistency result |
+| target-trial practice shift | `TargetTrialMappingResult` | question/estimand, protocol-to-data mapping, assumptions, estimate/precision, sensitivity and reporting source edition |
+| causal-fairness shift | C.28 support result plus D.5 `BiasAuditReport@Context` | fairness estimand, extra counterfactual-identification assumptions, estimate and consistency result when used, support components and result, affected population, audit limits, and decision |
+| causal-representation shift | `CausalVariableRepresentationRecord` | intervention validity, invariance, abstraction fidelity, query preservation, shift and use limits |
+| off-policy or causal-RL shift | `OffPolicyCausalEvaluationResult` | behaviour/evaluation policies, horizon/history, confounding, overlap, endpoints, estimator and uncertainty |
+| simulation-validation shift | `simulationResultRef` in `CausalSupportComponentRefs` | model assumptions, validation, sensitivity, supported model use and unsupported realized/interventional use |
+| transport-endpoint shift | `CausalTransportabilityResult` | source/target population, domain, environment and data-generating regime, assumptions, windows, formula and unresolved limits |
 
-These sentinels do not mint new `RSCRTriggerKindId` values. They are domain-facing payload distinctions carried under the canonical trigger kinds governed by `G.Core`, usually evidence-publication edit, edition-pin change, policy-pin change, telemetry delta, freshness or decay event, or tokenization or name change.
+These are payload distinctions under existing G.Core trigger kinds, not new trigger kinds. Reopen only the affected result and downstream uses that consumed it.
 
 #### G.11:4.4 - Extensions (pattern-scoped; non-core)
 
-Discipline-specific refresh strategies and generator-specific wiring live as `GPatternExtension` blocks. Scheduling, ordering, priority, and budget policy for the refresh queue are not separate extension semantics: `G.11` governs the required policy pins on `RefreshQueue` and `RefreshPlan@Context`, while `A.15` keeps WorkPlanning separate from executed Work.
+Discipline-specific refresh strategies and generator-specific wiring live as `GPatternExtension` blocks. Scheduling, ordering, priority, and budget policy for the refresh queue are not separate extension semantics: `G.11` defines the required policy pins on `RefreshQueue` and `RefreshPlan@Context`, while A.15.2 and A.15.3 keep the WorkPlan and its local content separate from dated Work.
 
 ##### G.11:Ext.TriggerAliases
 
@@ -308,7 +309,7 @@ Scheduling strategies (bandit-style allocation, queueing, cadence policies, earl
 * `RefreshPriorityPolicyIdRef` names the policy used to order or prioritize queue items.
 * `BudgetDeclRef` names the time, compute, cost, risk, or cadence boundary for the planned refresh.
 * `RSCRTriggerKindId[]` still comes from `G.Core`; scheduling policy does not mint trigger kinds.
-* planned refresh remains `RefreshPlan@Context` under WorkPlanning; executed refresh remains `RefreshReport@Context` or Work-bound audit.
+* planned refresh remains the exact `U.WorkPlan` locally called `RefreshPlan@Context`; executed refresh remains `RefreshReport@Context` or Work-bound audit.
 
 If no priority or budget policy is declared, no scheduling heuristic is admissible by appearance; the plan must either use the ordinary queue order or state the missing policy pin as a blocker.
 
@@ -370,20 +371,20 @@ Lenses tested: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**.
 `G.11` is intentionally a **thin orchestration governing definition**:
 
 * The refresh loop is powerful enough to coordinate reruns and republishing, but **too thin to become a second spec**. That is why trigger semantics, invariants, and defaults are delegated to `G.Core`.
-* The kit is split across the **P2W planning-to-work boundary** so that WorkPlanning plan items remain planning references and executed work remains auditably executed work.
+* The kit is split across the **P2W planning-to-work boundary** so that the exact `U.WorkPlan` and its declaration-local planned-filling rows remain planning content while dated Work remains independently established.
 * Alias stability is maintained by allowing trigger aliases (`T0…T7`) while prohibiting them from becoming semantic authorities.
 
 ### G.11:11 - SoTA-Echoing — Post‑2015 practices aligned (informative)
 
 Each entry follows: **claim → practice → source → alignment → adoption status**.
 
-0. **Queue-7 QD currentness requires visible survey support.**
+**0. Queue-7 QD currentness requires visible survey support.**
    Practice: current QD work is surveyed as approaches, applications, and challenges, with archive, diversity, descriptor, and evaluator-currentness concerns still live.
    Source: `A survey on Quality-Diversity optimization: Approaches, applications, and challenges`, Swarm and Evolutionary Computation 2026, DOI `10.1016/j.swevo.2025.102240`.
    Alignment: `RefreshCurrentnessLine@Context` may name selected set, `Front`, `Q-front`, `ExplorationArchive`, `Archive`, portfolio lineage, descriptor or distance edition, and path-slice scope, while `C.18`, `C.19`, and `G.5` keep archive, pool, and selected-set meanings.
    Adoption: **Adopt and bound** (survey support changes refresh currentness fields and boundaries; it is not the governing ontology source).
 
-0a. **Open-ended engineering outputs need source and evaluator currentness.**
+**0a. Open-ended engineering outputs need source and evaluator currentness.**
    Practice: self-improving-agent, AlphaEvolve-style, and DeepEvolve-style lines use generated variants, external knowledge, evaluators, tests, archives, and empirical validation.
    Source: Darwin Godel Machine `arXiv:2505.22954`, AlphaEvolve `arXiv:2506.13131`, and DeepEvolve-style deep-research augmentation `arXiv:2510.06056`.
    Alignment: G.11 refresh records carry source, evaluator, descriptor, policy, edition, lineage, and report refs; generated method text, evaluator success, and archive update keep their subject patterns.
@@ -416,13 +417,13 @@ Each entry follows: **claim → practice → source → alignment → adoption s
 5. **Efficient orchestration benefits from bandit and early-stopping scheduling, but it must not become semantics.**
    Practice: modern hyperparameter and experiment scheduling uses bandit-style resource allocation and asynchronous early stopping.
    Source: ASHA (`arXiv:1810.05934`) and BOHB (`arXiv:1807.01774`) as representative post-2015 scheduling practice.
-   Alignment: scheduling is expressed as `RefreshQueue` and `RefreshPlan@Context` policy pins (`RefreshPriorityPolicyIdRef`, `BudgetDeclRef`) so core semantics remain stable and WorkPlanning stays separate from executed Work.
+   Alignment: scheduling is expressed as `RefreshQueue` and `RefreshPlan@Context` policy pins (`RefreshPriorityPolicyIdRef`, `BudgetDeclRef`) so core semantics remain stable and the exact `U.WorkPlan` stays separate from dated Work.
    Adoption: **Adapt** (useful practice, but quarantined outside core norms).
 
 ### G.11:12 - Relations
 
 **Builds on:** `G.Core` (Part‑G invariants; RSCR trigger catalogue; alias docking; Default Governing Definition Index), `G.6` (EvidenceGraph, `PathId` and `PathSliceId`), `G.7` (Bridge sentinels; CL, Φ, and plane pins), `G.5` (selector and set-return), `G.8` (bundle telemetry hooks), `G.9` (parity), `G.10` (shipping hooks), `B.3.4` (freshness and decay), `E.18` (GateCrossing visibility).
-**Coordinates with:** `G.12` (dashboard telemetry pins), `A.6.RCD` for reopening reused predicate definitions and derived relation kinds when their base definitions, named substrate edition, authorized derivation operation, or applicability changes, `C.18` and `C.19` archive, front, and live-pool policy pins, `C.32.P2S` when telemetry, decay, or freshness reopens architecture problem-to-structure carry-through, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support records, support verdicts, supported-use values, unsupported-use values, and SoTA-sensitive causal-use sentinel payloads), `F.15` (RSCR harness publications, when present).
+**Coordinates with:** `G.12` (dashboard telemetry pins), `A.6.RCD` for reopening reused predicate definitions and derived relation kinds when their base definitions, named substrate edition, authorized derivation operation, or applicability changes, `C.18` and `C.19` archive, front, and live-pool policy pins, `C.32.P2S` when telemetry, decay, or freshness reopens architecture problem-to-structure carry-through, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support results, verdicts, supported-use values, unsupported-use values, and SoTA-sensitive causal-use sentinel payloads), `F.15` (RSCR harness publications, when present).
 **Publishes to:** UTS (refresh plan, refresh report, deprecations, edition bumps), and to the relevant subject patterns’ publication faces, forms, or units through delegated actions.
 
 ### G.11:End

@@ -12,7 +12,7 @@ Use it when the working question is:
 
 * which episteme is being used;
 * which claim, theory statement, status assertion, use, or causal-use question the episteme is being used for;
-* which effective source scheme when interpretation matters, claim scope, grounding holon, polarity, relevance window, assurance use, weight model, and provenance constraints are current;
+* which effective source scheme (when interpretation depends on it), ClaimScope, grounding holon, polarity, relevance window, assurance use, weight model, and provenance constraints are current;
 * whether source wording such as "evidence role", "status role", "standard role", or "the report plays a role" hides an evidence-use, status-use, source-use, publication-use, assurance-use, gate-use, or causal-use relation;
 * whether the evidence-use or status-use relation is sufficiently specified for the intended reliance, or only enough for orientation, source-finding, a reversible probe, or a narrowed use.
 
@@ -153,7 +153,7 @@ Source labels such as `AxiomaticProofRole`, `ObservationEvidenceRole`, `Measurem
 
 **Empirical and measurement line.** Classify the exact dataset, observation episteme, C.16 measurement-result episteme, replication result, calibration result, benchmark result, or model-fit result episteme against one named claim. The producing or evaluating occurrence remains dated `U.Work` under A.15.1 with direct relations or A.6.1 bindings; each local result remains with C.16 or its exact domain governor; A.10/G.6 retain provenance; G.11 retains currentness.
 
-**Causal line.** C.28 is the pattern for the causal-use question, estimand, support basis, identification, realizability, verdict, supported use, and unsupported use. A.2.4 may classify the exact C.2.1 episteme used at first contact; evidence wording cannot turn simulation-only output into interventional or realized-counterfactual evidence.
+**Causal line.** C.28 is the pattern for the causal-use question, estimand, separate evidence/identification/estimate/sampling/simulation components, realizability, support result, supported use, and unsupported use. A.2.4 may classify the exact C.2.1 episteme used at first contact; evidence wording cannot turn simulator output into interventional or realized-counterfactual evidence.
 
 **Status line.** A visible status carrier is classified separately from the governed status assertion. F.10 or the exact status pattern contains the defining content for the status value, G.11 is the pattern for edition currentness, and a gate, permission, commitment, system-role-kind, assignment, Work, assurance, or decision pattern contains the defining content for its own result. Display presence establishes none of them.
 
@@ -196,7 +196,7 @@ A release dashboard displays `Ready`. A.2.4 may classify the cell as a status-us
 
 #### A.2.4:5.4 - Simulation-only output
 
-A simulation-output episteme is classified for one bounded C.28 claim. C.28 retains `simulationOnlyCounterfactualOutputBasis`, model assumptions, validation basis, causal-use verdict, supported use, and unsupported use. A.2.4 cannot relabel the episteme as realized-counterfactual or interventional evidence; producing simulation work, local simulator result, result episteme, provenance, and later reliance remain separate.
+A simulation-output episteme is classified for one bounded C.28 claim. C.28 retains `simulationResultRef`, model assumptions, validation, the causal-use support result, supported use, and unsupported use. A.2.4 cannot relabel the episteme as realized-counterfactual or interventional evidence; simulation Work, simulator result, result episteme, provenance, and later reliance remain separate.
 
 ### A.2.4:6 - Bias-Annotation
 
@@ -225,7 +225,7 @@ The repair is to recover the episteme first, then recover the evidence-use, stat
 | `CC-A2.4-8` Receiving use | The later dated work and exact premise/reference/decision-use/operation-argument relation are named; citation or availability does not establish actual use. |
 | `CC-A2.4-9` Reliance/assurance | A.10 defines the bounded `RelianceDisposition`; use B.3 only for an assurance claim or material reliance. |
 | `CC-A2.4-10` Publication/display | Publication face, generated explanation, credential view, evidence profile, ledger edge, or dashboard cell does not establish status, result, work, gate, permission, or decision by presence. |
-| `CC-A2.4-11` Causal boundary | C.28 is the pattern for causal-support classes and verdicts; source wording cannot promote simulation-only or observational evidence. |
+| `CC-A2.4-11` Causal boundary | C.28 is the pattern for causal-support components and results; source wording cannot promote simulation or observational evidence. |
 | `CC-A2.4-12` Unsupported overread | The stronger claim not carried by this first-use classification and its reopen condition are stated. |
 
 ### A.2.4:8 - Common Anti-Patterns and How to Avoid Them
@@ -236,7 +236,7 @@ The repair is to recover the episteme first, then recover the evidence-use, stat
 | "Dataset X proves safety." | Treats dataset presence as proof, assurance, and safety claim. | Use `A.10` for evidence, `B.3` for assurance or safety assurance, and name unsupported attempted use. |
 | "The standard has normative role." | Role word hides standard-use, requirement-use, source-use, or publication-use. | Recover the relation governed by the current claim and apply `E.10.D2`, `E.17`, `F.10`, or the direct requirement pattern. |
 | "The badge is current, so release is allowed." | Status display becomes gate passage or permission. | Use status-use relation plus gate or release subject pattern; dashboard display alone is not a decision. |
-| "Simulation output is counterfactual evidence." | Simulation-only output is promoted to realized or interventional causal evidence. | Use `C.28`; keep `simulationOnlyCounterfactualOutputBasis` distinct unless an exact causal-use predicate and current assertion establish another value. |
+| "Simulation output is counterfactual evidence." | Simulator output is promoted to realized or interventional causal evidence. | Use `C.28`; keep `simulationResultRef`, model assumptions, validation, and bounded supported/unsupported use distinct from empirical, identification, estimate, and direct-sampling results. |
 | "The work run is the evidence role." | Work occurrence, local result, result episteme, and later evidence-use are collapsed. | Use A.15.1/A.6.1 for dated work and bindings, the domain pattern for the local result, C.2.1 for its episteme, A.10/G.6 for provenance, and A.2.4 only for first-use classification. |
 
 ### A.2.4:9 - Consequences

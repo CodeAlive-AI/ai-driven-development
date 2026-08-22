@@ -156,7 +156,7 @@ When a selected row edition must be made available, E.24.PUB supplies three sepa
 
 `BridgeRefs` cites only actual F.9 occurrences between exact cells. Direction, use-specific rule, loss tolerance, polarity, evidence, reliance, permission, and receiving action remain in their own claims and relations. Local senses do not globalize; same spelling or a different scheme provides neither governed-value identity nor Bridge obtaining.
 
-The quoted tokens `DemonstrativeUnfoldingSlice@Context` and `DemonstratedPatternUseRow@Context` in F.17:12.4c retain the spelling fixed in A.22.CGUS. Their suffix is lineage in those governed tokens, not an F.17 identity constructor or permission to mint another `...@Context` value. New F.17 relation and row identities use the exact objects above.
+A.22.CGUS:4.4 permits a separately constituted demonstrative-slice episteme after CGUS qualification. The token `DemonstrativeUnfoldingSlice@Context` is neither a `U.Kind` nor an exact slice by itself. F.17 records a row only after one exact C.2.1 slice episteme and its current F.18 naming settlement are recoverable; a local phrase or seminar expression alone creates neither.
 
 `UnifiedTermSheet` is the reader-facing collection or layout through which rows are found. A selected table layout, optional block plan, or carrier is not the row episteme and does not prove that every needed decision is present.
 
@@ -281,237 +281,35 @@ The UTS row does not declare one universal reviewer kind. It creates two rows. O
 
 #### F.17:12.2 - Status label looks like a system-role-kind name
 
-A team proposes `BlockedReviewer` as a public label. F.17 does not accept it as a row until the two governed values are separated. `ReviewerSystemRole` is a local system-role kind; `blocked` is a status-family or status-window value. The sheet may publish a system-role-kind row and a status row, with a note that a local UI may render their labels together. The table creates neither a `BlockedReviewerSystemRole` kind nor an assignment.
+A team proposes `BlockedReviewer` as a public label. F.17 does not accept it as a row until the two governed values are separated. `ReviewerSystemRole` is a local system-role kind; `blocked` is a status-family or status-window value. The sheet may record one system-role-kind row and one status row, with a note that a local UI may render their labels together. The table creates neither a `BlockedReviewerSystemRole` kind nor an assignment. If either exact row edition must later be made available, use a separate E.24.PUB publication package.
 
 #### F.17:12.3 - Relation and slot names become reusable
 
-An architecture pattern needs public names for `interfaceSlot`, `providedPort`, and `requiredPort`. The UTS row cites `A.6.5` for slot discipline, `A.6.RSIR` when the relation-signature-interface boundary is current, and `F.18` for durable names. The row does not treat a slot name as a component, system-role kind, assignment, or capability. If a project context uses `port` differently, the UTS row keeps the local sense and Bridge explicit.
+An architecture pattern needs public names for `interfaceSlot`, `providedPort`, and `requiredPort`. The UTS row cites `A.6.5` for slot discipline, `A.6.RSIR` when the relation-signature-interface boundary is current, and `F.18` for durable names. The row does not treat a slot name as a component, system-role kind, assignment, or capability. If a project context uses `port` differently, keep the two local senses explicit. Cite an F.9 Bridge only when its direct predicate between the exact F.17 cells obtains; keep the proposed naming use and any reliance separate.
 
 #### F.17:12.4 - Misleading evidence-role row
 
-A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover any exact local system-role kind with `A.2`, a separately obtaining assignment with `A.2.1`, performed Work with `A.15.1`, and Work attribution with `F.6`. The UTS may publish names for those distinct values; a generic evidence-role row that fuses them is not admitted.
+A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover any exact local system-role kind with `A.2`, a separately obtaining assignment with `A.2.1`, performed Work with `A.15.1`, and Work attribution with `F.6`. The UTS may record selected names for those distinct values; a generic evidence-role row that fuses them is not admitted.
 
 #### F.17:12.4a - Manufacturing batch across material and planning contexts
 
-A furnace team uses `batch` for one physically handled set of shafts that shares a heat-treatment run and traceability basis. A planning dashboard uses `batch` for a grouping of intended PlanItems. Spelling does not make these one governed value. Recover the physical batch under the material or production DPF pattern that supplies its identity and part-whole rules when the proposed comparison relies on either; recover the planning grouping and its relation to intended PlanItems under A.15.2. Publish separate rows unless an obtaining F.9 Bridge states the exact semantic relation and a separate affirmative C.2.1 claim names the proposed comparison direction, correspondence rule, and tolerated loss with current A.10 or B.3 reliance. A `batch` row cannot turn a PlanItem grouping into a physical holon or make the physical batch a WorkPlan.
+A furnace team uses `batch` for one physically handled set of shafts that shares a heat-treatment run and traceability basis. A planning dashboard uses `batch` for a grouping of intended PlanItems. Spelling does not make these one governed value. Recover the physical batch under the material or production DPF pattern that supplies its identity and part-whole rules when the proposed comparison relies on either; recover the planning grouping and its relation to intended PlanItems under A.15.2. Record separate rows unless an obtaining F.9 Bridge states the exact semantic relation and a separate affirmative C.2.1 claim names the proposed comparison direction, correspondence rule, and tolerated loss with current A.10 or B.3 reliance. If either selected row edition must be made available, apply E.24.PUB separately. A `batch` row cannot turn a PlanItem grouping into a physical holon or make the physical batch a WorkPlan.
 
 #### F.17:12.4b - Clinical discharge wording
 
-A clinical publication proposes one row for `discharge` and `discharge-ready`. First separate the governed values. A patient-state classification uses A.19.SPR plus the clinical DPF pattern for its bearer, state frame, evidence, qualification window, and use. An accountable discharge decision remains a decision relation under the pattern that defines or tests that decision. A completed discharge is dated Work under A.15.1. Publish distinct rows and connect them only through relations actually governed in the clinical context. One familiar label does not make state, decision, and Work interchangeable.
+A clinical publication proposes one row for `discharge` and `discharge-ready`. First separate the governed values. A patient-state classification uses A.19.SPR plus the clinical DPF pattern for its bearer, state frame, evidence, qualification window, and use. An accountable discharge decision remains a decision relation under the pattern that defines or tests that decision. A completed discharge is dated Work under A.15.1. Record distinct rows and connect them only through relations that actually obtain in the clinical use. A later publication operation uses E.24.PUB for each row edition that must be made available. One familiar label does not make state, decision, and Work interchangeable.
 
-#### F.17:12.4c - Demonstrative walkthrough, mantra, and mantra move
+#### F.17:12.4c - Demonstrative walkthrough and bounded mantra
 
-These rows publish naming decisions already governed and named in A.22.CGUS. They cover only the admitted CGUS-demonstrative senses of `mantra` and `mantra move`; they define neither the Plain local mantra that recalls one bounded result nor the Plain long mantra that keeps a distant result dependency visible across several patterns. Ordinary long and local mantras receive no F.17 row. F.17 publishes the bounded terms; it does not govern the demonstrated structures, rows, or Plain attention aids.
+A.22.CGUS:4.4 permits a separate C.2.1 episteme that shows one traversal through an already qualified CGUS for a declared teaching or comparison use. It does not define a demonstrative-slice `U.Kind`, and the token `DemonstrativeUnfoldingSlice@Context` does not identify one exact slice. The current sources also do not constitute `FPFSeminarTeachingReferenceScheme-2026-07-11` as a second by-value reference scheme. F.17 therefore records no demonstrative-slice row, seminar SenseCell, Bridge, bounded-use claim, or current public-row result from those tokens.
 
-```text
-UTSRowId: UTS.DemonstrativeUnfoldingSlice.FPFPublic
-ReferenceScheme: FPFCoreReferenceScheme
-UnificationThreadId: DemonstrativeExplanationTerminology.2026-07-11
-Block: Pattern use and teaching
-GovernedValueRef: DemonstrativeUnfoldingSlice@Context
-GovernedValueKindRef: U.Kind
-SubjectPatternLocator: A.22.CGUS
-UnifiedTechName: DemonstrativeUnfoldingSlice@Context
-UnifiedPlainName: demonstrative walkthrough
-NameCardRef: NameCard.DemonstrativeUnfoldingSlice.FPFPublic
-SenseCellRefs: SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
-BridgeRefs: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11; relation=Narrower-than with SeminarTeaching source narrower than FPFPublic receiving
-RowRationale: this row names one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure for a cold public reader
-AdmissibleUse: public naming of the governed demonstrative episteme under affirmative claim Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-BlockedUse: actual traversal, method order, work order, performed work, or teaching-medium identity
-Notes: reliance basis is EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11 with RelianceDisposition=pass for this naming use only
-RowEditionId: 2026-07-11
-CurrentnessCondition: review when the governed value, FPFCoreReferenceScheme, NameCard, local-sense basis relation, Bridge endpoint or profile, bounded-use claim, A.10 reliance basis, or reader evidence changes
+Use *demonstrative walkthrough* as ordinary readable wording for a shown traversal when the sentence makes the exact slice clear. Keep *mantra* as bounded seminar or pattern-local recall wording when repetition and attention are the point. Neither expression creates a kind, episteme, scheme, cell, Bridge, row, or publication occurrence. `mantra move` remains E.10.MOVE Plain wording for an E.11.PUA practice-continuation description when such a description is actually shown; ordinary long and local mantras receive no F.17 row.
 
-UTSRowId: UTS.DemonstrativeUnfoldingSlice.SeminarTeaching
-ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-UnificationThreadId: DemonstrativeExplanationTerminology.2026-07-11
-Block: Pattern use and teaching
-GovernedValueRef: DemonstrativeUnfoldingSlice@Context
-GovernedValueKindRef: U.Kind
-SubjectPatternLocator: A.22.CGUS
-UnifiedTechName: DemonstrativeUnfoldingSlice@Context
-UnifiedPlainName: mantra
-NameCardRef: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching
-SenseCellRefs: SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
-BridgeRefs: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11; relation=Narrower-than with SeminarTeaching source narrower than FPFPublic receiving
-RowRationale: the bounded teaching alias adds repeated speech and attentional use while naming the same governed demonstrative episteme
-AdmissibleUse: repeated English-language FPF seminar speech that points to the public term under affirmative claim Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-BlockedUse: ritual authority, slogan, method, plan, work, fixed order, or reverse substitution from every public walkthrough
-Notes: reliance basis is EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11 with RelianceDisposition=pass for this naming use only
-RowEditionId: 2026-07-11
-CurrentnessCondition: review when FPFSeminarTeachingReferenceScheme-2026-07-11, the governed value, NameCard, local-sense basis relation, Bridge endpoint or profile, bounded-use claim, A.10 reliance basis, dictionary evidence, or reader evidence changes
-
-UTSRowId: UTS.DemonstratedPatternUseRow.SeminarTeaching
-ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-UnificationThreadId: DemonstrativeExplanationTerminology.2026-07-11
-Block: Pattern use and teaching
-GovernedValueRef: DemonstratedPatternUseRow@Context
-GovernedValueKindRef: U.Kind
-SubjectPatternLocator: A.22.CGUS
-UnifiedTechName: DemonstratedPatternUseRow@Context
-UnifiedPlainName: mantra move
-NameCardRef: NameCard.DemonstratedPatternUseRow.SeminarTeaching
-SenseCellRefs: SenseCell.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
-BridgeRefs: none; expression and governed-row use are interpreted under the same seminar-teaching scheme
-RowRationale: this row names one shown conditional pattern use with its Solution, expected result, and current condition inside a mantra
-AdmissibleUse: bounded seminar reference to one demonstrated result-bearing continuation
-BlockedUse: root Move, physical movement, operation, fixed serial step, PlanItem, performed Work, or continuation detached from its slice
-RowEditionId: 2026-07-11
-CurrentnessCondition: review when the demonstrated-row schema, NameCard, local-sense basis relation, seminar-teaching scheme, or reader interpretation changes
-```
-
-The two senses of the same demonstrative value remain distinct:
-
-```text
-SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
-  ReferenceScheme: FPFCoreReferenceScheme
-  LocalSenseId: DemonstrativeUnfoldingSlice-public
-  LocalExpression: demonstrative walkthrough
-  LocalSenseClaim: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
-  senseFamily: DemonstrativeExplanation
-  NameCardRef: NameCard.DemonstrativeUnfoldingSlice.FPFPublic
-  LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
-
-SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
-  ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-  LocalSenseId: DemonstrativeUnfoldingSlice-mantra
-  LocalExpression: mantra
-  LocalSenseClaim: a short repeatable explanatory walkthrough used to hold the whole solution structure in attention
-  senseFamily: DemonstrativeExplanation
-  NameCardRef: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching
-  LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
-
-SenseCell.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
-  ReferenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-  LocalSenseId: DemonstratedPatternUseRow-mantra-move
-  LocalExpression: mantra move
-  LocalSenseClaim: one shown pattern-use continuation with its Solution, expected result, and current condition inside a mantra
-  senseFamily: DemonstratedPatternUseContinuation
-  NameCardRef: NameCard.DemonstratedPatternUseRow.SeminarTeaching
-  LocalSenseBasisRelationRefs: LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
-
-LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
-  localSenseCellRef: SenseCell(FPFCoreReferenceScheme, DemonstrativeUnfoldingSlice-public)
-  basisEpistemeRef: A.22.CGUS
-
-LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11:
-  entityOfConcernRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
-  entityOfConcernKindRef: LocalSenseBasisRelation
-  basisPublicationUnitRef: A.22.CGUS:4.3.3-Ordinary-bounded-use
-  viewpointRef: FPFPublicReaderViewpoint
-  claimGraph:
-    supportedSenseClaim: one readable demonstration of admissible continuations through a wider constraint-governed unfolding structure
-    admittedUseClaim: support the public local-sense line for this scheme-based coordinate
-    nonAdmittedUseClaim: no evidence, authority, work-order, or naming decision follows from this relation
-  referenceScheme: FPFCoreReferenceScheme
-  editionId: 2026-07-11
-
-LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
-  localSenseCellRef: SenseCell(FPFSeminarTeachingReferenceScheme-2026-07-11, DemonstrativeUnfoldingSlice-mantra)
-  basisEpistemeRef: SeminarExpression.FPFPracticalUse.2026-07-11
-
-LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11:
-  entityOfConcernRef: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
-  entityOfConcernKindRef: LocalSenseBasisRelation
-  basisPublicationUnitRef: SeminarExpression.FPFPracticalUse.2026-07-11.Slides8-10
-  viewpointRef: FPF Seminar Participant Viewpoint
-  claimGraph:
-    supportedSenseClaim: a short repeatable explanatory walkthrough used to hold the whole solution structure in attention
-    admittedUseClaim: support the bounded teaching sense from the seminar expression
-    nonAdmittedUseClaim: the slide carrier does not become the sense, naming settlement, method, plan, or work
-  referenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-  editionId: 2026-07-11
-
-LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
-  localSenseCellRef: SenseCell(FPFSeminarTeachingReferenceScheme-2026-07-11, DemonstratedPatternUseRow-mantra-move)
-  basisEpistemeRef: SeminarExpression.FPFPracticalUse.2026-07-11
-
-LocalSenseBasisRelationDescription.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11:
-  entityOfConcernRef: LocalSenseBasisRelation.DemonstratedPatternUseRow.SeminarTeaching.2026-07-11
-  entityOfConcernKindRef: LocalSenseBasisRelation
-  basisPublicationUnitRef: SeminarExpression.FPFPracticalUse.2026-07-11.Slides61-62
-  viewpointRef: FPF Seminar Participant Viewpoint
-  claimGraph:
-    supportedSenseClaim: one shown pattern-use continuation with its Solution, expected result, and current condition inside a mantra
-    admittedUseClaim: support the bounded teaching sense of mantra move
-    nonAdmittedUseClaim: the slide carrier does not become the row, pattern use, plan, or performed work
-  referenceScheme: FPFSeminarTeachingReferenceScheme-2026-07-11
-  editionId: 2026-07-11
-```
-
-`SeminarExpression.FPFPracticalUse.2026-07-11` names the seminar-content episteme; the publication occurrence that makes an edition available and the `.pptx` and extracted Markdown carriers remain separate. The public basis relation instead relies on the current A.22.CGUS pattern episteme and narrows that reliance to the ordinary-use publication unit.
-
-This worked case is cross-scheme because its endpoint `ReferenceScheme` values differ. The obtaining relation and the row's named use are recorded separately:
-
-```text
-BridgeOccurrence:
-  BridgeOccurrenceRef: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
-  SourceSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11
-  ReceivingSenseCellRef: SenseCell.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11
-  BridgePredicateProfile:
-    BridgeKind: Narrower-than
-    RelationOrientation: source SeminarTeaching sense is narrower than receiving FPFPublic sense
-    EndpointSenseReadings: both are DemonstrativeExplanation senses of the governed A.22.CGUS value; the seminar sense additionally requires repetition and attentional use
-    RelationSpecificCondition: every demonstrative episteme classified by the seminar sense is also classified by the public walkthrough sense, while some public walkthroughs are not seminar mantras
-    ApplicabilityOrAsOfBasis: FPFCoreReferenceScheme and FPFSeminarTeachingReferenceScheme-2026-07-11 at the named sense editions
-    BooleanTruthCondition: true only while the proper-specialization condition holds for those endpoint editions
-    RequiredDependencies: both F.17 SchemeSenseCells resolve, their cited local-sense basis claims hold, and the A.22.CGUS governed-value identity remains unchanged
-
-C.2.1 claim about this named use:
-  ClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-  EntityOfConcern: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
-  EffectiveReferenceScheme: FPFCoreReferenceScheme
-  ClaimGraph:
-    ProposedUse: a seminar use of "mantra" points to the public demonstrative-walkthrough term and its governed value
-    Direction: SeminarTeaching sense -> FPFPublic sense
-    CorrespondenceRule: preserve reference to the same governed A.22.CGUS value and do not infer that every public walkthrough is a mantra
-    PermittedLossTolerance: repetition, remembered replay, and attentional function may be omitted; no method, plan, order, authority, Work, or teaching-medium claim may be carried
-    Polarity: affirmative
-
-A.10 evidence reliance for this claim:
-  EvidenceProvenanceRelationRef: EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-  TargetClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-  BoundedEvidenceUse: use the seminar word "mantra" to point to the public demonstrative-walkthrough term and the same governed A.22.CGUS value
-  EvidencePaths:
-    PublicSenseBasisRecord: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11 --basisEpistemeRef--> A.22.CGUS; LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.FPFPublic.2026-07-11 --basisPublicationUnitRef--> A.22.CGUS:4.3.3-Ordinary-bounded-use; A.22.CGUS --carriedBy--> _current-pattern-hosts/A.22.CGUS-Constraint-Governed-Unfolding-Structure.md
-    SeminarSenseBasisRecord: LocalSenseBasisRelation.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11 --basisEpistemeRef--> SeminarExpression.FPFPracticalUse.2026-07-11; LocalSenseBasisRelationDescription.DemonstrativeUnfoldingSlice.SeminarTeaching.2026-07-11 --basisPublicationUnitRef--> SeminarExpression.FPFPracticalUse.2026-07-11.Slides8-10; SeminarExpression.FPFPracticalUse.2026-07-11 --carriedBy--> FPF_first_seminar_reworked_slidement.pptx@sha256:325B50C5D062479434ECCABFF0B8B3E316825CAA5E1646A61D25183B90B9CA89 (Git blob e990847d37ddca59d15a9cc434fad15381a2122d) and fpf_first_seminar_slides.content.md@sha256:B38C6F5FBC85CAF9986D2141095C90DAFFAB6F3FEA607ACE7FA6CE60EB18228D (Git blob 34fd989b646aa4dc9f2879cab40d2e6dde989b1b)
-    NameSettlementRecord: NameCard.DemonstrativeUnfoldingSlice.SeminarTeaching --carriedBy--> _current-pattern-hosts/A.22.CGUS-Constraint-Governed-Unfolding-Structure.md
-    DictionaryEvidenceRecord-MW: Merriam-Webster "mantra" entry, accessed 2026-07-11 --derivedFrom--> https://www.merriam-webster.com/dictionary/mantra
-    DictionaryEvidenceRecord-OALD: Oxford Advanced Learner's Dictionary "mantra" entry, accessed 2026-07-11 --derivedFrom--> https://www.oxfordlearnersdictionaries.com/definition/english/mantra
-    ReaderCueEvidenceRecord: Zhu, Reinecke, and Mitra, Language Scent, arXiv:2604.03604 (2026) --derivedFrom--> https://arxiv.org/abs/2604.03604; supports contextual cues, not equivalence or fitness for every reader
-  EvidenceProducingOrInterpretingWork: absent from this fixture; no Work occurrence is used as a premise
-  CurrentSystemRoleAssignment: absent from this fixture
-  MethodTrace: absent from this fixture
-  CurrentnessAndWindow: applies to the named 2026-07-11 sense as evidenced by the exact current seminar carrier editions above; both Git blobs must resolve, both carrier paths must retain the cited raw-SHA-256 bytes, and the cited NameCard and A.22.CGUS governed value must remain current
-  UnsupportedAttemptedUse: reverse substitution, structural inference, or any method, plan, authority, Work, teaching-medium identity, publication occurrence, or other receiving occurrence
-  ReopenOrStop: stop this naming use and reopen its A.10 classification if either cited Git blob does not resolve, either carrier path no longer contains its cited raw-SHA-256 bytes, any other cited item or provenance edge is missing or stale, either sense, NameCard, or governed value changes, or reader evidence shows that "mantra" obscures rather than locates the public value
-  RelianceDisposition: pass only for the named bounded naming use while every path and currentness condition above holds
-  B.3 branch: no assurance claim is made and this reversible naming use does not meet the material-reliance threshold
-BridgeCard:
-  EntityOfConcern: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11
-  EffectiveReferenceScheme: FPFCoreReferenceScheme
-  ClaimGraph:
-    ClaimMode: actual
-    BridgeClaim: Bridge.DemonstrativeUnfoldingSlice.SeminarTeaching-To-FPFPublic.2026-07-11 obtains under the BridgePredicateProfile above
-    BoundedUseClaimRef: Claim.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-    EvidenceProvenanceRelationRef: EvidenceUse.DemonstrativeUnfoldingSlice.SeminarToPublic.Naming.2026-07-11
-    RelianceDispositionClaim: pass only for the named SeminarTeaching-to-FPFPublic naming use
-    ObservedLossClaim: the broader public sense does not require repeated speech, remembered replay, or the seminar attentional function
-    CounterExampleClaim: a public demonstrative walkthrough may be read once and understood without being repeated or used as a mnemonic
-    CurrentnessClaim: use this card only while the named Bridge, bounded-use claim, evidence-provenance relation, local reliance disposition, 2026-07-11 sense editions, and current A.22.CGUS governed value remain current
-    NearestNonUseClaim: do not use it for FPFPublic-to-SeminarTeaching substitution or to infer a method, plan, order, authority, Work, teaching-medium identity, publication occurrence, or other receiving occurrence
-```
-
-The Bridge is `Narrower-than` because the seminar sense adds repetition and attentional use. That relation orientation does not grant a use. The separate affirmative claim states the exact SeminarTeaching-to-FPFPublic naming use, rule, and tolerance; the A.10 relation and `RelianceDisposition=pass` support reliance only on that claim. Changing reader evidence may reopen the claim or reliance while leaving the Bridge fixed. Neither the card nor the passing disposition authorizes publication or proves that publication Work occurred.
-
-The seminar deck and its textual extraction establish the teaching problem and observed concept use. They do not establish English lexical suitability by themselves. Current English dictionary evidence supports the repeated-formula and watchword senses of `mantra`, while its Sanskrit analysis as an instrument of thought supplies the attentional rationale. F.18 and reader-use evidence decide whether that English candidate fits this bounded FPF use. This row does not claim that every local pattern mantra is a `DemonstrativeUnfoldingSlice@Context`; a pattern-local formula is interpreted from that pattern's Solution unless a stronger governed value is claimed. This row makes no cross-language sameness claim. If the term is independently published under another semantic-context projection—including the same scheme with a different `LocalSenseClaim` or another scheme—that publication needs its own F.18 NameCard, exact F.17 SenseCell, and naming evidence. Only when a named current use relates the two projections must that use also cite an obtaining F.9 Bridge, a separate affirmative C.2.1 bounded-use claim for its exact action, direction, rule, and tolerance, and the claim's current A.10 or B.3 reliance. Without that use, publication alone adds no Bridge or use claim.
-
-No F.17 row is published for `working product`. The phrase has no single governed value across physical entities, changed states, capabilities, relations, and epistemes. Technical text uses the exact subject-governed result name; ordinary explanation may say `result produced by work`, or `first useful result` when firstness and receiving-use value have been established.
+If a later use needs a durable public name, first recover one exact slice episteme under C.2.1 from its claim content, the qualified CGUS it concerns, and its effective scheme. F.18 may then record one naming settlement and F.17 may record one row after the ordinary gate. A second cell and F.9 Bridge are justified only when another exact scheme-and-sense projection and a named current correspondence use both exist. Availability of any selected row edition still requires a separate exact E.24.PUB publication package.
 
 #### F.17:12.4d - Bounded model-use structure public row
 
-This row publishes the already selected A.1.1/F.18 naming decision for the dependent `U.Structure` specialization. It does not make A.1.1 Stable, create a structure individual, or make any relation obtain.
+This row records and exposes the already selected A.1.1/F.18 naming decision for the dependent `U.Structure` specialization. It does not make A.1.1 Stable, create a structure individual, make any relation obtain, or make the row edition available.
 
 ```text
 UTSRowId: UTS.BoundedModelUseStructure.FPFCore.2026-07-25
@@ -557,11 +355,11 @@ LocalSenseBasisRelationDescription.BoundedModelUseStructure.FPFCore.2026-07-25:
   editionId: 2026-07-25
 ```
 
-This row makes only `BoundedModelUseStructure` current for public reuse. A.22's separate cross-structure NameCard remains local and pending: without an independently governed obtaining crossing and an exact positive membership basis, no public row is available for that label.
+This row makes only `BoundedModelUseStructure` current for public reuse; that currentness does not make its row edition available without an exact E.24.PUB publication package. A.22's separate cross-structure NameCard remains local and pending: without an independently governed obtaining crossing and an exact positive membership basis, no public row is admitted or current for that label.
 
 #### F.17:12.4e - Three bounded-model-use direct relation-kind rows
 
-These rows publish the three already governed A.1.1 relation-kind names used by E.24.UK. Each row publishes a designation only. A.1.1 defines the obtaining and reidentification tests for each such relation occurrence. The naming objects and the separately governed local-sense basis occurrences make none of the three A.1.1 relations obtain, and they create no assertion, temporal extent, Work, or structure.
+These rows record the three already governed A.1.1 relation-kind names used by E.24.UK. Each row makes one naming decision recoverable; it does not make that row edition available. A.1.1 defines the obtaining and reidentification tests for each such relation occurrence. The naming objects and the separately governed local-sense basis occurrences make none of the three A.1.1 relations obtain, and they create no assertion, temporal extent, Work, or structure.
 
 ```text
 UTSRowId: UTS.ModelApplicabilityRelation.FPFCore.2026-07-25
@@ -693,7 +491,7 @@ LocalSenseBasisRelationDescription.ModelExpressionCoherenceRelation.FPFCore.2026
   claimGraph:
     supportedSenseClaim: ModelExpressionCoherenceRelation names the exact A.1.1 relation kind rather than its predicate value, maintenance, transformation, evaluation, result, evidence, or assertion
     admittedUseClaim: Core-facing designation and citation of that governed relation kind
-    nonAdmittedUseClaim: the name or row makes no coherence occurrence obtain, publishes no predicate-value name, and grants no selected-structure membership
+    nonAdmittedUseClaim: the name or row makes no coherence occurrence obtain, makes no predicate-value name available, and grants no selected-structure membership
   referenceScheme: FPFCoreReferenceScheme
   editionId: 2026-07-25
 ```
@@ -902,11 +700,11 @@ LocalSenseBasisRelationDescription.EpistemeViewpointConformanceRelation.FPFCore.
 
 The three row epistemes, their `UTSRowId` designators, external references, selected designations, governed values, NameCards, cells, basis relations, admission-result refs, conformance RelationSignature, and every obtaining relation occurrence remain independently recoverable. If availability for an audience later becomes current, exact E.24.PUB expression, bearing, and publication occurrences must be added outside these rows; file inclusion or this displayed block is not publication.
 
-#### F.17:12.4g - Publish a row only when its naming inputs are settled
+#### F.17:12.4g - Make a settled row available only through a separate publication operation
 
-Do not publish a `UnifiedTermRow` as a placeholder. Publish it only when the governed value, its lexical classification, the reference scheme's selected name and permitted scope, and the intended public use are settled enough to pass F.18 and the ordinary F.17 row gate. If any of these inputs is unresolved, keep it as naming work rather than representing it as a public row.
+Do not perform an E.24.PUB publication operation on a placeholder. First require the governed value, its lexical classification, the reference scheme's selected name and permitted scope, and the intended reader use to pass F.18 and the ordinary F.17 row gate. If any input is unresolved, keep it as naming work rather than representing it as a current row. Only when an exact audience and bounded availability use are current should E.24.PUB make the selected row edition available through a distinct form and carrier.
 
-A NameCard, scheme-sense cell, basis relation, row reference, or publication occurrence is not a substitute for those decisions. Keep predicate definition, actual use, basis analysis, naming settlement, row publication, and availability separate.
+A NameCard, scheme-sense cell, basis relation, row reference, or E.24.PUB occurrence substitutes for none of those decisions. Keep predicate definition, actual use, basis analysis, naming settlement, row admission, and downstream availability separate.
 
 #### F.17:12.4h - Role-Precision Core Rows
 
@@ -1185,15 +983,18 @@ No other row needs to be filled before this one can close. A sheet's row count o
 
 Terms travel farther than the reasoning that produced them. F.17 carries only the reopening hooks needed for that travel. The pattern that defines or constrains the governed value, together with F.18, F.9, C.2.1, A.10/B.3, and E.24.PUB, supplies the separate rules to which those hooks lead.
 
-### F.17:16 - SoTA-Echoing
+### F.17:16 - SoTA Decision for One Reader-Facing Term Row
 
-| Current source and status | Adopted or adapted move | Effect in F.17 | Limitation and reopen condition |
+Source use was checked on 2026-08-20. The bounded question is: **at the effort of settling one reusable term, what must a reader-facing row preserve beyond a familiar label, and what apparatus can be left out?** Source status is evidence about currentness, not a reason to select an architecture.
+
+| Current line | Strong contribution | Limit at comparable one-row effort | FPF decision and receiving locus |
 | --- | --- | --- | --- |
-| Current FPF naming and unification set: `F.14`, `F.18`, `F.9`, `C.2.1`, `E.24.PUB`, and the patterns that define or constrain governed values | Recover the value first; choose the lightest naming disposition; distinguish card, cell, basis relation, row episteme, edition relation, and publication package; use F.9 only for an actual relation. | Determines the one-decision row, exact object references, optional block plan, admitted/blocked use, and downstream publication boundary. | Internal architecture is not external proof that a label works for readers. Reopen only the affected row when one exact dependency changes. |
-| Zhu, Reinecke, and Mitra, ["Language Scent: Exploring Cross-Language Information Navigation"](https://arxiv.org/abs/2604.03604), arXiv:2604.03604, 2026 preprint | Treat recognizability as scheme- and situation-sensitive navigation support rather than equivalence evidence. Preserve in-situ cues while keeping the governed value and sense boundary recoverable. | Supports contextual Plain labels, reader-use checks, blocked substitution, and exact local-sense cells—for example the bounded `mantra` use—rather than one global label. | The study is small and cross-language; it establishes neither FPF ontology nor fitness for every reader. Reopen when stronger reader evidence changes the observed cue value or loss. |
-| W3C, [*SKOS Simple Knowledge Organization System Reference*](https://www.w3.org/TR/skos-reference/), W3C Recommendation 2009, current stable reference accessed 2026-07-11 | Keep concepts, lexical labels, documentation notes, collections, and typed mapping relations distinct; infer neither transitivity nor equivalence from a generic related label. | Supplies a stable external reference for label, note, collection, and mapping separation. F.17 strengthens it with exact FPF values, NameCards, cells, direct Bridges, admitted/blocked uses, and explicit publication objects. | SKOS is a vocabulary model, not FPF authoring methodology or a source of FPF kinds. Reopen if a superseding standard changes the selected distinction. |
+| [ISO 704:2022](https://www.iso.org/standard/79077.html), current published terminology-work standard | Separates objects, concepts, definitions, and designations and gives a disciplined route for concept systems, definitions, and term choice. | It does not identify an FPF governed value, exact episteme edition, local-sense basis relation, obtaining Bridge, bounded reuse claim, or publication occurrence. | **Adopt** value-before-label and one-decision terminology discipline in sections 4, 6, and 7. **Reject** a definition or designation as admission, identity, reuse authority, or availability. |
+| W3C Ontology-Lexica Community Group, [*Lexicon Model for Ontologies: Community Report*](https://www.w3.org/2016/04/ontolex/), 2016, maintained community model rather than a W3C Standard | Separates lexical entry, form, lexical sense, and ontology reference; supports morphology, usage conditions, and explicit sense relations through semantics by reference. | A full ontology-lexicon and syntax graph is heavier than one FPF row, and the model does not decide FPF value admission, Bridge obtaining, reliance, or publication. | **Adapt** form/sense/reference separation in section 5.1 and the row schema. **Reject** mandatory full lexicon modeling and keep the exact FPF value, NameCard, cell, basis relation, and any Bridge as separate references. |
+| W3C, [*SKOS Simple Knowledge Organization System Reference*](https://www.w3.org/TR/skos-reference/), Recommendation 2009, checked current on 2026-08-20 | Keeps concepts, preferred and alternative labels, notes, collections, semantic relations, and mapping relations distinct. | SKOS is a stable vocabulary baseline, but its compact label and mapping model does not carry FPF object identity, rich morphology, use-specific reliance, or publication boundaries. | **Retain as lineage** for label, note, collection, and mapping separation in sections 7, 10, and 13. Do not turn a generic mapping or shared label into an F.9 Bridge. |
+| Zhu, Reinecke, and Mitra, [*Language Scent: Exploring Cross-Language Information Navigation*](https://arxiv.org/abs/2604.03604), 2026 preprint | Shows why contextual cues and recognizable local wording can help readers navigate. | The study is small, cross-language, and navigation-focused; recognizability proves neither referent identity nor cross-local equivalence. | **Adapt** its reader cue in worked wording and reader-use checks. **Reject** any inference from recognition to a second scheme, cell, Bridge, row, or publication occurrence. |
 
-The current best problem-solving line is the direct FPF value, naming, local-sense, relation, episteme-edition, and publication architecture. The language-scent study refines contextual cue handling within its evidence limits; SKOS remains a stable reference for label and mapping separation.
+**Selected non-dominated contribution.** A plain glossary row costs less but loses the exact value, local sense, admitted and blocked uses, and reopen path. A full OntoLex graph preserves richer linguistic structure but normally costs more than the one-row reader-recovery use needs. F.17 keeps one row that refers separately to the already recovered value, NameCard, exact scheme-and-sense cell, any basis relation or obtaining Bridge, and a separate E.24.PUB availability package only when required. At this application effort, that separation gives more replayable reader recovery than a glossary without requiring a full ontology lexicon. This is a local effort/traceability result, not a claim that FPF supersedes terminology standards or OntoLex.
 
 Currentness rule: when `F.2`, `F.3`, `F.5`, `F.7`, `F.8`, `F.9`, `F.10`, `F.14`, `F.15`, `F.18`, `C.2.1`, `E.17.0`, `E.24.UK`, `E.24.PUB`, `A.1.1`, `A.2`, `A.2.1`, `A.2.7`, `A.6.5`, `A.10`, `B.3`, `E.10.D2`, or the pattern that defines or constrains the governed value changes the value, kind, membership or obtaining rule, designation, scheme, cell, basis relation, Bridge, bounded-use claim, reliance, status and system-role boundary, edition relation, reference typing, or publication boundary, recheck only the affected rows and worked examples.
 

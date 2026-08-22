@@ -86,7 +86,7 @@ The facet is motivated by embodied cognition, operator-facing interaction practi
 
 ### C.2.6:12 - Relations
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
-- Coordinates with: `A.7`, `A.16.0`, `A.16`, `A.16.1`, `B.4.1`, `B.5.2.0`, `C.2.7`, `F.9.1`.
+- Coordinates with: `A.7`, `A.16.0`, `A.16`, `A.16.1`, `B.4.1`, `B.5.2.0`, `C.2.7`, `F.9` for any Bridge and bounded-use claim, and `F.9.1` only for an optional stance note about that claim.
 - Constrains: cue publication and bridge loss notes.
 ### C.2.6:13 - Worked Examples and Bridge-Loss Cases
 

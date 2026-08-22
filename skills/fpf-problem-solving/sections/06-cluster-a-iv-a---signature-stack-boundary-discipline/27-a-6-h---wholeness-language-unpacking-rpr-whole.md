@@ -6,15 +6,15 @@
 
 **At a glance.** Use A.6.H when words such as *whole*, *part*, *integrity*, *complete*, *turnkey*, or *end-to-end* hide the exact object or relation on which a decision depends.
 
-**Use this when.** Enter after A.6.P:4.11 has recovered the concrete candidate objects and the sentence needed by the receiving use, and that sentence genuinely asks about a whole, part, structure, integrity, coverage, or completion. A.6.H helps the practitioner expose the candidate whole or other bearer, its boundary when relevant, the independently identified parts or constituents, and the exact direct claim that must be handled under its subject pattern.
+**Use this when.** Enter after A.6.P:4.11 has recovered the concrete candidate objects and the sentence needed by the receiving use, and that sentence genuinely asks about a whole, part, structure, integrity, coverage, or completion. A.6.H helps the practitioner expose the candidate whole or other bearer, its boundary when relevant, the independently identified parts or constituents, and the exact direct claim together with the rule that defines, constrains, or tests it.
 
-**Not this pattern when.** Do not enter merely because a source contains a trigger word. A characteristic or measurement claim goes to `C.16.P`/`C.16`; an evidence or assurance claim goes to `A.10`/`B.3`; an episteme identity or edition claim goes to `C.2.1`; a publication claim goes to `E.17`/`E.24.PUB`; a Method, WorkPlan, or Work claim goes to its direct A.3/A.15 subject pattern. Stay in A.6.P when the candidate objects or the receiving sentence are still unknown.
+**Not this pattern when.** Do not enter merely because a source contains a trigger word. Apply `C.16.P`/`C.16` when the current question is characteristic or measurement, `A.10`/`B.3` for evidence use or assurance, `C.2.1` for episteme identity or edition, `E.17`/`E.24.PUB` for publication, and the applicable A.3/A.15 rule for Method, WorkPlan, or Work. Keep using A.6.P when the candidate objects or the receiving sentence are still unknown.
 
 **What goes wrong if missed.** A situation record, diagram, bundle, adjective, phase label, or coverage slogan becomes the supposed whole or relation. Parts, members, portions, phases, method factors, Work parts, evidence, and measured characteristics are then silently treated as one generic “part of” claim.
 
-**What this buys.** A short identity-first route from overloaded prose to one or more direct claims with exact participants and subject patterns, or to an explicit blocker when a needed predicate is absent.
+**What this buys.** A short identity-first repair from overloaded prose to one or more direct claims with exact participants and, when needed, PatternID locators for their definitions or tests—or to an explicit blocker when a needed predicate is absent.
 
-**What changes in practice.** The practitioner stops annotating a wholeness bundle and instead writes the few direct sentences the next decision consumes: which entity, which relation and participants, which subject pattern, and which stronger inference remains blocked.
+**What changes in practice.** The practitioner stops annotating a wholeness bundle and instead writes the few direct sentences the next decision consumes: which entity, which relation and participants, which rule defines or tests that claim, and which stronger inference remains blocked.
 
 ### A.6.H:1 - Problem frame
 
@@ -69,13 +69,13 @@ Enter with:
 - one exact sentence or decision that depends on wholeness-family wording;
 - the concrete candidate objects recovered under A.6.P:4.11;
 - the receiving use that would change if the wording were read differently; and
-- any already known subject pattern.
+- any already known definition, constraint, or test and its PatternID locator when that reference must travel.
 
 Return one of:
 
-1. one or more readable direct claims, each naming the predicate or claim family, ordered participants, material qualification, and subject pattern;
-2. an explicit subject-pattern return when a measurement, evidence-use, episteme, publication, Method, plan, Work, production, or completion pattern already defines or tests the question; or
-3. an A.6.RCD `missing-governor[...]` result after the exact participants and needed sentence are known but no current direct predicate closes the use.
+1. one or more readable direct claims, each naming the predicate or claim family, ordered participants, material qualification, and the PatternID locator when its defining or testing content must be cited;
+2. one concrete next action for a still-current measurement, evidence-use, episteme, publication, Method, plan, Work, production, or completion question: apply the named rule when its entry holds, or stop when no such question remains; or
+3. an A.6.RCD `missing-governor[...]` result naming the exact participants, proposed predicate, affected use, and absent definition, applicability, or occurrence-identity rule. Name a future pattern or declaration need only when one is actually identifiable.
 
 When evidence cannot yet select among several readings, keep the candidate objects, discriminating questions, and blocked receiving use explicit in ordinary prose. Do not turn that temporary uncertainty into a `wholenessSituation`, card, bundle, lifecycle record, or new U-kind.
 
@@ -86,12 +86,12 @@ Use the following sequence only as far as the current sentence requires:
 1. **Recover the working question.** State what a reader must decide, do, accept, measure, rely on, start, continue, or stop. The cue word selects no branch.
 2. **Name the subject and reference level.** Distinguish the referent entity, claim-bearing episteme, publication occurrence, publication form, presentation carrier, Method, MethodDescription, WorkPlan, performed Work, and evidence carrier. Keep only the subjects current in this case.
 3. **Recover a candidate whole only for an actual whole claim.** Identify the candidate individual, its direct identity pattern, relevant boundary or delimitation, environment, and at least one interaction, dependency, or constraint across that boundary when the use needs it.
-4. **Identify the alleged parts independently.** A label, location, list, graph node, file section, timestamp, or common name does not identify a part. Recover each component, constituent, member, portion, temporal restriction, Method factor, Work part, or other object under its own subject pattern.
+4. **Identify the alleged parts independently.** A label, location, list, graph node, file section, timestamp, or common name does not identify a part. Recover each component, constituent, member, portion, temporal restriction, Method factor, Work part, or other object using the rule that defines or tests that claim.
 5. **State every direct relation occurrence separately.** Name exact participants and test the direct predicate. A relation obtains neither because the whole was recognized nor because a trace, view, or record lists it.
 6. **Add construction or selected structure only when the receiving use consumes it.** `C.13` may report already recovered parts, relations, constraints, and a construction rule. `A.22` may identify one selected structure when its selection basis and identity discriminators are current. Neither creates the direct facts.
 7. **Recognize or reidentify the whole only when that question is current.** Use `A.1` for holon recognition and `B.2` for a remaining whole-reidentification question after direct existing-whole explanations have been tested. A changed adjective or part list alone decides neither.
-8. **Separate coverage, completion, and performed Work.** Name what is covered, under which scope and criterion, by which exact relation, and whether the claim concerns a MethodDescription, capability, plan, Work occurrence, production result, evidence set, or another subject. Use A.15.1/A.15.PROD or the exact subject pattern; do not treat a plan as performed Work.
-9. **Stop after unpacking.** Use A.6.H to unpack the overloaded wholeness wording, then take each recovered whole, relation, characteristic, Work, evidence, or verdict to its applicable pattern.
+8. **Separate coverage, completion, and performed Work.** Name what is covered, under which scope and criterion, by which exact relation, and whether the claim concerns a MethodDescription, capability, plan, Work occurrence, production result, evidence set, or another subject. Apply A.15.1/A.15.PROD or the rule for that exact subject; do not treat a plan as performed Work.
+9. **Stop after unpacking.** State each recovered whole, relation, characteristic, Work, evidence use, or verdict directly. Apply another named rule only when one exact question remains and its entry holds; otherwise stop with the completed claims or exact blocker.
 
 #### A.6.H:4.3 - Classify `integrity` by the claim it carries
 
@@ -146,18 +146,18 @@ The following recurring expressions are useful review cues, not a second trigger
 - *collection*, *group*, *team*, *set* — distinguish membership, acting system, system-role assignments, and selected collection structure;
 - *context*, *environment*, *discipline as a whole* — name the actual bounded context, episteme family, community, organization, or other subject before making a boundary or nesting claim.
 
-When a cue occurs inside a defined term of art, retain the definition and subject pattern. Open A.6.H only if the sentence also makes an unresolved whole, part, structure, coverage, or completion claim.
+When a cue occurs inside a defined term of art, retain the definition and its PatternID locator when needed. Open A.6.H only if the sentence also makes an unresolved whole, part, structure, coverage, or completion claim.
 
 #### A.6.H:4.7 - Describe change through the object that changed
 
 When a wholeness-looking story changes, name the exact object and direct relation:
 
-- a different boundary or interaction claim returns to the boundary or delimitation pattern;
-- an added, removed, or differently related part returns to the direct parthood, membership, portion, or structure pattern;
-- changed episteme content, EntityOfConcern, or effective ReferenceScheme identifies another episteme under C.2.1, with edition continuity tested separately;
-- a different publication form, occurrence, or carrier stays with publication and carrier patterns;
-- a changed Method, MethodDescription, WorkPlan, Work history, production result, or completion claim stays with its own subject pattern;
-- a changed coverage scope, criterion, evidence set, or assurance use repairs that direct claim rather than a generic completeness status.
+- for a different boundary or interaction claim, state the changed object and apply the applicable boundary or delimitation rule;
+- for an added, removed, or differently related part, test the exact parthood, membership, portion, or selected-structure claim;
+- for changed episteme content, EntityOfConcern, or effective ReferenceScheme, compare C.2.1 identity and test edition continuity separately;
+- for a different publication form, occurrence, or carrier, state that publication or carrier claim and apply its rule;
+- for a changed Method, MethodDescription, WorkPlan, Work history, production result, or completion claim, state that object and apply its rule;
+- for a changed coverage scope, criterion, evidence set, or assurance use, repair that direct claim rather than inventing a generic completeness status.
 
 Do not substitute a generic change lexicon for those objects and predicates. A readable verb is welcome when the exact direct claim remains recoverable.
 
@@ -196,8 +196,10 @@ The repair produces several claims:
 - the reusable procedure is one exact Method or composite Method under A.3.1/B.1.5, with exact joins and exposed interactions;
 - its procedure document is a separate `U.MethodDescription` episteme under C.2.1/A.3.2;
 - “turnkey” becomes the exact specification, capability, Work, or evidence coverage claim needed by the receiving use;
-- identify the chemist under the admission required by the current claim, then name only the independently obtaining relations and their actual participant meanings: assignment holder, commitment bearer, permission beneficiary, or participant in a direct responsibility relation; none of these relations creates a generic holder, and commitment or permission alone does not admit a System; and
+- treat *owns* as a local wording cue. First state the decision that depends on it and the exact proposed sentence. Candidate readings include, for example, property or title, possession or custody, operational control, decision authority, stewardship or responsibility, assignment, commitment, and permission; they have different participants and predicates. Apply the direct rule when one exists, or return A.6.RCD `missing-governor[...]` naming the participants, proposed predicate, affected use, and absent definition; and
 - an actual laboratory run is dated Work under A.15.1.
+
+Thus “the laboratory owns the instrument,” “the chemist has custody during the run,” “the chemist may authorize disposal,” and “the chemist is responsible for calibration” are four different claims. None follows from team membership, classification, assignment, commitment, or permission merely by form.
 
 No one claim is a component relation merely because the source uses *pipeline* or *whole*.
 
@@ -241,7 +243,7 @@ Evidence can make an assertion inspectable without becoming constitutive of the 
 - **Governance bias.** The pattern favors reviewable direct claims over rhetorically satisfying wholeness language. Ordinary prose and explicit unresolved alternatives mitigate this when a decision is not yet due.
 - **Architecture bias.** Use the applicable patterns and small typed vocabularies instead of one reusable wholeness schema. The minimum-current-object rule mitigates unnecessary apparatus.
 - **Ontological/epistemic bias.** It insists on separating referent, episteme, publication, Method, plan, Work, and evidence. This cost is paid only when the distinction changes the receiving use.
-- **Pragmatic bias.** It favors early disambiguation to avoid downstream refactoring. A local direct sentence is sufficient; reusable declarations or structures are added only for a named receiver.
+- **Pragmatic bias.** It favors early disambiguation to avoid downstream refactoring. A local direct sentence is sufficient; reusable declarations or structures are added only for a named later use.
 - **Didactic bias.** It uses recurring cue words and worked cases to teach the route, while `E.10` remains the shared wording-use pattern and the cue list creates no second registry.
 
 ### A.6.H:7 - Conformance Checklist
@@ -255,11 +257,11 @@ Evidence can make an assertion inspectable without becoming constitutive of the 
 | `CC-A6H-5` | `PortionOf` names an extensive measure μ, compatible unit, and additivity/non-overlap basis. |
 | `CC-A6H-6` | `PhaseOf` is used only for a proper temporal restriction of one unchanged directly governed individual; changed epistemes use C.2.1 and Work uses A.15.1. |
 | `CC-A6H-7` | Method factors, description constituents, plan items, and performed Work parts remain separate and use their subject patterns. |
-| `CC-A6H-8` | `integrity` is classified as a characteristic/measurement, evidence/assurance, actual structural-whole claim, or another defined term before routing. |
-| `CC-A6H-9` | `complete`, `turnkey`, and `end-to-end` name the exact covered objects, scope, criterion, predicate, gaps, and subject pattern. |
+| `CC-A6H-8` | `integrity` is classified as a characteristic/measurement, evidence/assurance, actual structural-whole claim, or another defined term before another rule is applied. |
+| `CC-A6H-9` | `complete`, `turnkey`, and `end-to-end` name the exact covered objects, scope, criterion, predicate, gaps, and applicable defining or testing rule. |
 | `CC-A6H-10` | C.13 construction and A.22 selected structure are added only for a named use and create no direct part or relation occurrence. |
 | `CC-A6H-11` | A.1 recognition and B.2 reidentification are opened only for their actual questions; an adjective, list, or changed label decides neither. |
-| `CC-A6H-12` | The result is one or more subject-qualified assertions or exact blockers with subject-pattern locators, never a wholeness record, bundle, or new kind. |
+| `CC-A6H-12` | The result is one or more subject-qualified assertions or exact blockers, never a wholeness record, bundle, or new kind. A PatternID appears only as a locator for current defining or testing content, or for an identifiable future definition need. |
 
 ### A.6.H:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -293,7 +295,7 @@ The practical test is simple: **if “whole” matters, name the thing, the rela
 
 Wholeness language is useful because it compresses boundary, identity, relation, construction, coverage, and assurance into ordinary speech. The same compression becomes dangerous only when downstream work relies on one particular reading.
 
-The minimal repair is therefore not a richer wholeness schema. It is an exact-object sequence that starts with the working decision, recovers only the objects that decision consumes, and exits to their subject patterns. This preserves conversational economy while preventing a representation, record, label, or adjective from replacing an in-world object or relation.
+The minimal repair is therefore not a richer wholeness schema. It is an exact-object sequence that starts with the working decision, recovers only the objects that decision consumes, and applies another rule only for a still-current concrete question. This preserves conversational economy while preventing a representation, record, label, or adjective from replacing an in-world object or relation.
 
 The sequence also preserves two positive uses often lost in blanket cleanup. `PhaseOf` remains valid for a proper restriction of one unchanged enduring individual, including one unchanged episteme when its C.2.1 identity triple is fixed. And ordinary whole recognition remains useful when an exact candidate entity, boundary, parts, relations, and direct identity rule are genuinely current.
 
@@ -304,9 +306,9 @@ The sequence also preserves two positive uses often lost in blanket cleanup. `Ph
 | [ISO/IEC/IEEE 42010:2022](https://www.iso.org/standard/74393.html), architecture-description practice | Distinguish the entity of interest from its description and make concerns, viewpoints, environment, and boundary explicit. | Recover the candidate referent and boundary before treating a description or publication as evidence about it. | A view, diagram, or architecture document is the system whole or establishes its parts. |
 | [ISO/IEC 21838-2:2021](https://www.iso.org/standard/74572.html), upper-ontology discipline | Keep continuants, temporal parts, occurrents, and relation types explicit. | Preserve direct identity and relation tests, including proper temporal restriction without using it as episteme-edition or Work shorthand. | One universal part edge or lifecycle object covers components, versions, and Work. |
 | [ArchiMate 3.2](https://www.opengroup.org/sites/default/files/docs/downloads/n221p.pdf), enterprise-architecture relation practice | Different structural and behavioral relations answer different questions. | Use the source vocabulary as a comparison aid while retaining FPF subject patterns and occurrence rules. | A modelling-language edge label establishes the in-world FPF relation. |
-| [Team Topologies](https://teamtopologies.com/), sociotechnical boundary practice | Team boundaries, interaction modes, and cognitive load affect organization and flow. | Treat team and ownership wording as cues to recover collective, system-role kind, assignment, interaction, and Work claims separately. | A team membership list is structural assembly or responsibility by itself. |
+| [Team Topologies](https://teamtopologies.com/), sociotechnical boundary practice | Team boundaries, interaction modes, and cognitive load affect organization and flow. | Treat team and ownership wording as cues. Recover the exact claim first—for example property or title, custody, control, authority, responsibility, assignment, commitment, permission, interaction, or Work—and use A.6.RCD when its predicate lacks a current definition. | A team boundary or membership list establishes ownership, responsibility, assignment, or Work by itself. |
 | ISO/IEC/IEEE 29148:2018, requirements quality | Requirements should identify the item, condition, and verifiable claim without referent/document ambiguity. | Require exact subjects, scopes, predicates, and blocked overreads on load-bearing surfaces. | A specification sentence becomes true or complete because the document is complete-looking. |
-| [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final), security and privacy controls | Integrity claims depend on exact information, constraints, threats, controls, assessment, and evidence. | Route data/security integrity to its characteristic, measurement, evaluation, and assurance patterns before any structural-whole reading. | Every occurrence of *integrity* means wholeness or mereological coherence. |
+| [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final), security and privacy controls | Integrity claims depend on exact information, constraints, threats, controls, assessment, and evidence. | Recover the data/security integrity characteristic, measurement, evaluation, or assurance question and apply its rule before any structural-whole reading. | Every occurrence of *integrity* means wholeness or mereological coherence. |
 
 Whenever *fraction*, *percentage*, or *share* is used as a part claim, recover the extensive measure μ and additivity basis before `PortionOf`; otherwise keep the value with its measurement, allocation, membership, or other subject pattern.
 

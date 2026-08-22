@@ -237,7 +237,7 @@ The dominant bias is substitution by the most visible object: a reader sees a fi
 |---|---|---|
 | **Entity-description collapse** | “The method is the document”; “the architecture is the diagram”; “the role contains the checklist.” | Recover the exact EntityOfConcern and C.2.1 description episteme; handle every subject-side claim under its subject pattern. |
 | **Filled-card ontology** | A completed tuple, record, table, or schema is treated as what makes the episteme or relation exist. | Recover the governed object and obtaining relation first; treat the record as an episteme, form, carrier, or representation only when its own recognition conditions hold. |
-| **Spec by name** | Any detailed, approved, or formal-looking write-up is called `...Spec`. | Use `...Description` until checkable claims, the describing-use qualification, and an exact harness or validation relation are all recoverable. |
+| **Spec by name** | Any detailed, approved, or formal-looking write-up is called `...Spec`. | Use `...Description` until the named receiving use, checkable claims, and an exact harness or validation relation are recoverable. Add an exact selected viewpoint only when it changes what that use reads or checks or what a relying use may conclude; otherwise omit it. |
 | **Context as identity** | A project, viewpoint selection, or model-use setting is copied into episteme identity. | Keep the C.2.1 identity triple fixed; state only the exact use qualification or neighboring relation the receiver needs. |
 | **Describing-use erasure** | A description is read as globally viewpoint-free, or a prior use's selected viewpoint is silently reused. | Name the current receiving use and its exact selected viewpoint when that selection affects the reading; changing the selection alone does not reidentify the episteme. |
 | **View by appearance or construction** | A generated table, diagram, query result, or published face is called a `U.View`. | Apply E.17.0 conformance for view membership; use A.6.3 only for actual source-to-receiving construction and E.24.PUB/C.29 for form or representation uses. |
@@ -252,9 +252,9 @@ Each example begins with a receiving use and stops after the smallest sufficient
 
 #### E.10.D2:11.1 - Description of a system-role kind
 
-A method author needs readers to recognize work-facing `ChangeAuthoritySystemRole@OperationsReview` before checking any assignment. `ChangeAuthoritySystemRoleKindDescription` is a C.2.1 episteme whose exact EntityOfConcern is that independently admitted local system-role kind, whose ClaimGraph describes its work-facing sense, and whose effective scheme is the selected operations-review reference scheme.
+A method author needs readers to recognize the local kind currently named `ChangeAuthoritySystemRole` before checking any assignment. The kind is recovered through its system-candidate domain, work-facing membership condition, member/non-member boundary, and continuity rule; OperationsReview provenance locates that definition but does not identify the kind. `ChangeAuthoritySystemRoleKindDescription` is a C.2.1 episteme whose exact EntityOfConcern is that independently admitted kind, whose ClaimGraph describes the distinction in readable terms, and whose effective scheme is the selected operations-review reference scheme.
 
-For the named operations-review use, state that it selects the exact operations viewpoint. The ClaimGraph may cite credential criteria, a mandate window, separation-of-duty constraints, capability expectations, and a direct `SystemRoleAssignmentStateRelation` when those neighbors are current. The system-role-kind description contains none of the assignment, checklist, graph, criteria, or relation occurrence. The description admits no holder and creates no `U.SystemRoleAssignment`.
+For the named operations-review use, record the exact operations viewpoint only if it changes which work-facing claims the review reads or checks; otherwise name the use and omit viewpoint selection. The ClaimGraph may cite credential criteria, a mandate window, separation-of-duty constraints, capability expectations, and a direct `SystemRoleAssignmentStateRelation` when those neighbors are current. The system-role-kind description contains none of the assignment, checklist, graph, criteria, or relation occurrence. The description admits no holder and creates no `U.SystemRoleAssignment`.
 
 The receiving use needs recognizability, not specification force, so the practitioner stops with the description. A specification use opens only if exact checkable system-role-kind claims and their checking harness are named.
 
@@ -266,13 +266,13 @@ A practice card's claim-bearing content may be that episteme; its reusable layou
 
 #### E.10.D2:11.3 - Architecture description and view
 
-An architecture review asks how one exact `ArchitectureOf@Context(PaymentService)` addresses the operations concern. An architecture-description episteme carries claims about that architecture under its effective scheme. The named review use selects the exact operations viewpoint.
+An architecture review asks how one exact `ArchitectureOf@Context(PaymentService)` addresses the operations concern. An architecture-description episteme carries claims about that architecture under its effective scheme. The named review use selects the exact operations viewpoint because that concern changes which claims it reads and checks. If it did not change the reading, checking, or permitted conclusion, the use would remain named and the viewpoint selection would be omitted.
 
 The episteme is a `U.View` only if the E.17.0 conformance relation to an exact viewpoint obtains. A structural graph can be part of its interpreted claim content, a C.29 representation, or a publication form according to the named use; no visual branch makes the graph the architecture. An ADR or dashboard creates no permission, assurance, or work relevance without the corresponding direct claim. If work uses the description, state the exact premise, reference, decision-use, or operation-argument relation through which the performed work actually consumes it.
 
 #### E.10.D2:11.4 - Specification use
 
-An integration team needs to decide whether a service-interface description is fit to drive a conformance test. The exact interface is the EntityOfConcern of `PaymentInterfaceDescription`; its ClaimGraph states message, ordering, error, and tolerance claims under the effective interface scheme. The current describing use selects one exact integration viewpoint.
+An integration team needs to decide whether a service-interface description is fit to drive a conformance test. The exact interface is the EntityOfConcern of `PaymentInterfaceDescription`; its ClaimGraph states message, ordering, error, and tolerance claims under the effective interface scheme. Name the current integration-test use. Record an exact integration viewpoint only if it changes which interface claims are read or checked or what the team may conclude from the test; otherwise omit viewpoint selection.
 
 The team may call the episteme `PaymentInterfaceSpec` for this use only after the relevant claims are checkable and the exact conformance harness or validation relation is named. If viewpoint selection affects reliance, the named describing use and its exact selected viewpoint are preserved or explicitly updated. Formal notation or an approval signature can help interpret or constrain a neighboring claim, but neither substitutes for those conditions. A changed test result changes the result or reliance claim; it does not reidentify the interface or the episteme.
 
@@ -297,7 +297,7 @@ If the training use adds another publication occurrence with another form or car
 A project note says, “The architecture dashboard approves the deployment role.” The immediate receiving use is an operations discussion of the release candidate. Recover the smallest truthful result:
 
 * `PaymentServiceArchitectureDescription` is the C.2.1 episteme about exact `ArchitectureOf@Context(PaymentService)`;
-* one describing-use qualification selects the exact operations viewpoint;
+* the receiving use is the operations discussion; record the exact operations viewpoint only if it changes what that discussion reads or checks or may conclude, and otherwise omit viewpoint selection;
 * the dashboard may be a publication form, carrier, representation, or view only under the recognition rule for that exact use;
 * no checkable-claims-plus-harness basis has been named, so specification force is not admitted;
 * no gate verdict, permission relation, acting system, system-role assignment, or performed deployment work has been established.

@@ -20,18 +20,28 @@ ModuleRelationRepairNote:
   moduleInterfaceViewpointRef?: VP.ModuleInterface
   selectedDependencyStructureRef?: U.StructureRef
   boundaryRef:
-  interfaceSpecificationRef or interfaceSpecificationGap:
+  interfaceSpecificationRef?: U.EpistemeRef constrained to InterfaceSpecification
+  interfaceSpecificationGap?: exact missing-specification result
   admissibilityConditions:
   substitutabilityPolicyRef?:
   changePolicyRef?:
   directModuleRelationDisposition:
-    claimOnly | admittedDirectOwnerAndOccurrenceRef | directOwnerStillNeeded
+    noDirectRelationClaimed | admittedRelationAndOccurrence | missingGovernor
+  admittedRelationKindOrDeclarationRef?:
+  obtainingRelationOccurrenceRef?: U.RelationRef
+  missingRelationParticipantRefs?:
+  proposedPredicate?:
+  affectedUse?:
+  futureDefinitionNeed?:
+  definingPatternLocator?: PatternID used only as a locator
   claimBoundary:
   notAModuleBecause:
   governedNonModuleClaimPatternRefs:
   stopCondition:
 ```
-Ordinary use stops when the whole, candidate module, boundary, interface specification, admissibility conditions, substitutability policy, change policy, blocked false interpretation, relation disposition, and neighboring work, procedural, role, or enactor subject-pattern choice are clear enough to choose the next architecture move. Use the fuller `moduleIn(...)` claim record only when substitutability, conformance, publication, evidence, assurance, change policy, repeated reuse, or cross-team coordination requires durable claim content.
+Exactly one of `interfaceSpecificationRef` and `interfaceSpecificationGap` is current. `noDirectRelationClaimed` leaves every direct-relation field empty. `admittedRelationAndOccurrence` requires an exact admitted relation kind or defining declaration plus one separately obtaining occurrence. `missingGovernor` names the actual participants, proposed predicate, affected use, and missing definition or declaration; a PatternID may locate an applicable rule but cannot fill any of those positions.
+
+Ordinary use stops when the whole, candidate module, boundary, interface specification, admissibility conditions, substitutability policy, change policy, blocked false interpretation, relation disposition, and neighboring work, procedural, role, or enactor subject-pattern choice are clear enough to choose the next architecture move. Use the fuller `ModuleInterfaceClaim` record only when substitutability, conformance, publication, evidence, assurance, change policy, repeated reuse, or cross-team coordination requires durable claim content.
 
 What goes wrong if A.6.M is missed: a functional link becomes a module interface; a signature becomes an implemented interface; a port label becomes proof of integration; "open" becomes a decoration; a platform label hides the actual extension rules; a stratification or architecture-operation source label bypasses `C.30.STRAT` and mints a false local kind; autonomy-like wording is confused with separate module change policy; and a module diagram starts being used for claims governed elsewhere.
 
@@ -63,7 +73,7 @@ The practical question is: does this phrase name a module relation, component re
 | Force | Tension |
 | --- | --- |
 | Engineering convenience vs relation precision | Practitioners need short words such as module and interface, but claim-bearing use must recover both holons, the boundary, interface specification, admissible use, and whether an independently admitted direct relation is actually current. |
-| Module claim vs root or relation kind | A candidate module keeps its direct holon kind. Neither the source word nor `moduleIn(...)` admits `U.Module` or a general direct module relation; a reusable relation needs its own A.6.RCD settlement. |
+| Module claim vs root or relation kind | A candidate module keeps its direct holon kind. Neither the source word nor a `ModuleInterfaceClaim` record admits `U.Module` or a general direct module relation; a reusable relation needs its own A.6.RCD settlement. |
 | Interface label vs interface specification | An API name, port label, connector label, or signature may substantiate an interface claim, but it is not by itself substitutability or conformance. |
 | Function-flow-module proximity vs false identity | Functions, E.18 flow relations, control relations, mechanisms, and module interfaces often meet at the same artifact, but each has a different subject pattern. |
 | Open architecture payoff vs open label overread | MOSA and open-system practice make open interfaces useful only with standards, conformance expectations, replacement or change policy, and data or access constraints when those conditions are part of the claim being made. |
@@ -81,64 +91,77 @@ Functional ports and module interfaces may both use `U.Signature` discipline, bu
 
 For modular synthesis, A.6.M supplies only the module-interface claim slice. A synthesis action may align required functional claims under `VP.Functional`, transformation-flow topology under `E.18` and `C.30.TFS-REL`, control structure under `C.30.LCA`, procedures and work packages under `VP.Procedural`, and module and interface claims under `VP.ModuleInterface`. `VP.AllocationResponsibility` is only a recognition cue for allocation or responsibility concerns: a positive responsibility claim needs its admitted direct domain predicate, actual participants, applicability, and occurrence identity, or the exact A.6.RCD missing-governor result. Use A.6.M to repair claims about modules and their interfaces; non-module candidate generation, allocation, responsibility, evidence, assurance, decision, Work, and characteristic claims remain with their direct patterns.
 
-#### A.6.M:4.1 - `moduleIn(...)` claim record
+#### A.6.M:4.1 - `ModuleInterfaceClaim` record
 
-Use `moduleIn(...)` only when the light repair note is not enough and a durable claim about module use is needed:
+Use `ModuleInterfaceClaim` only when the light repair note is not enough and durable claim content is needed. Its Plain reading is *claim about a module and its interface in a larger whole*.
+
+The F.18 comparison also covered `ModuleUseClaim`, `ModuleInWholeClaim`, and `ModuleRelationClaim`. The selected pair keeps the claim and interface visible without predicate syntax. `ModuleUseClaim` can suggest operational use, `ModuleInWholeClaim` can suggest a spatial or part-whole predicate, and `ModuleRelationClaim` can suggest that a direct relation has already been admitted. Reopen the naming choice only if the governed content changes or repeated reader error shows that this distinction is still not recoverable.
 
 ```text
-moduleIn(
-  claimEpistemeRef: U.EpistemeRef,
+ModuleInterfaceClaim:
+  claimEpistemeRef: U.EpistemeRef
   entityOfConcernRef:
     moduleHolonRef | selectedDependencyStructureRef |
-    admittedDirectModuleRelationOccurrenceRef,
-  effectiveReferenceScheme: U.ReferenceScheme, byValue,
-  claimScope?: U.ClaimScope, byValue,
-  modelUseStructureRef?: U.StructureRef,
-  moduleHolonRef: U.HolonRef,
-  wholeHolonRef: U.HolonRef,
-  viewpointRef?: U.ViewpointRef = VP.ModuleInterface,
-  selectedDependencyStructureRef?: U.StructureRef,
-  boundaryRef: BoundaryRef,
-  interfaceSpecRef: InterfaceSpecificationRef,
-  functionalCorrespondenceRelationRefs?: FinSet(U.RelationRef),
-  transformationFlowStructureRefs?: FinSet(U.StructureRef),
-  transformationFlowRelationOccurrenceRefs?: FinSet(U.RelationRef),
-  mechanismRefs?: FinSet(U.EntityRef constrained by the selected mechanism pattern),
-  dependencyRelationOccurrenceRefs?: FinSet(U.RelationRef),
-  substitutabilityPolicyRef?: U.EpistemeRef,
-  changePolicyRef?: U.EpistemeRef,
-  variabilitySlotRefs?: FinSet(SlotSpecRef),
-  evidenceOrSourceRelianceRelationRefs?: FinSet(U.RelationRef),
-  admissibleUse,
+    admittedDirectModuleRelationOccurrenceRef
+  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  claimScope?: U.ClaimScope, byValue
+  modelUseStructureRef?: U.StructureRef
+  moduleHolonRef: U.HolonRef
+  wholeHolonRef: U.HolonRef
+  viewpointRef?: U.ViewpointRef = VP.ModuleInterface
+  selectedDependencyStructureRef?: U.StructureRef
+  boundaryRef: BoundaryRef
+  interfaceSpecificationRef?: U.EpistemeRef constrained to InterfaceSpecification
+  interfaceSpecificationGap?: exact missing-specification result
+  functionalCorrespondenceRelationRefs?: FinSet(U.RelationRef)
+  transformationFlowStructureRefs?: FinSet(U.StructureRef)
+  transformationFlowRelationOccurrenceRefs?: FinSet(U.RelationRef)
+  mechanismRefs?: FinSet(U.EntityRef constrained by the selected mechanism pattern)
+  dependencyRelationOccurrenceRefs?: FinSet(U.RelationRef)
+  substitutabilityPolicyRef?: U.EpistemeRef
+  changePolicyRef?: U.EpistemeRef
+  variabilitySlotRefs?: FinSet(SlotSpecRef)
+  evidenceOrSourceRelianceRelationRefs?: FinSet(U.RelationRef)
+  directModuleRelationDisposition:
+    noDirectRelationClaimed | admittedRelationAndOccurrence | missingGovernor
+  admittedRelationKindOrDeclarationRef?:
+  obtainingRelationOccurrenceRef?: U.RelationRef
+  missingRelationParticipantRefs?:
+  proposedPredicate?:
+  affectedUse?:
+  futureDefinitionNeed?:
+  definingPatternLocator?: PatternID used only as a locator
+  admissibleUse
   nonAdmissibleUse
-)
 ```
 
-This form is claim content in one C.2.1 episteme. Its identity uses that content, the one exact `entityOfConcernRef`, and the effective `U.ReferenceScheme`. `claimScope` qualifies the claim when its coverage matters. `modelUseStructureRef` is present only when one independently selected model-use structure changes the meaning of *module* for this claim; it is not a module participant, whole, boundary, or source of relation obtaining. `VP.ModuleInterface` is a reference to the exact viewpoint episteme when viewpoint use matters; citing it does not make this claim a `U.View`.
+This form is claim content in one C.2.1 episteme. Its identity uses that content, the one exact `entityOfConcernRef`, and the effective `U.ReferenceScheme`. `claimScope` qualifies the claim when its coverage matters. `modelUseStructureRef` is present only when one independently selected model-use structure changes the meaning of *module* for this claim; it is not a module participant, whole, boundary, or source of relation obtaining. `VP.ModuleInterface` is a reference to the exact viewpoint episteme when viewpoint use matters; citing it does not make this claim a `U.View`. The interface-specification and direct-relation fields obey the same exclusive branches as `ModuleRelationRepairNote`. If `entityOfConcernRef` names an admitted direct module-relation occurrence, the disposition is `admittedRelationAndOccurrence` and `obtainingRelationOccurrenceRef` resolves that same occurrence. Under the other two dispositions, `entityOfConcernRef` stays with the module holon or selected dependency structure.
 
-`moduleIn(...)` syntax, a package path, file boundary, graph edge, list position, common name, or publication does not make a world-side module relation obtain. Current A.6.M admits no general direct `moduleIn` relation kind. If repeated engineering use genuinely needs one direct module relation occurrence, first use the subject pattern and `A.6.RCD` to recover the exact module and whole participant meanings, obtaining predicate, applicability, recurrence rule, and occurrence-identity rule. Use `A.6.REL` only after the resulting subject pattern has admitted that relation and a later use must distinguish one obtaining occurrence from another. A separately constituted `RelationSignature` may then declare reusable SlotSpecs; neither the signature nor this claim creates the occurrence.
+A `ModuleInterfaceClaim` record, package path, file boundary, graph edge, list position, common name, or publication does not make a world-side module relation obtain. Current A.6.M admits no general direct module relation kind. If repeated engineering use genuinely needs one direct module relation occurrence, first use the applicable subject rule and `A.6.RCD` to recover the exact module and whole participant meanings, obtaining predicate, applicability, recurrence rule, and occurrence-identity rule. Use `A.6.REL` only after that relation is admitted and a later use must distinguish one obtaining occurrence from another. A separately constituted `RelationSignature` may then declare reusable SlotSpecs; neither the signature nor this claim creates the occurrence.
 
-Well-formedness: the claim names both holons, one exact EntityOfConcern, an effective reference scheme, one boundary, and an interface specification or explicit interface-specification gap. Optional structure, relation, evidence, mechanism, policy, conformance, source, and reliance references are used only when those exact objects and claims are current under their direct governors.
+Well-formedness: the claim names both holons, one exact EntityOfConcern, an effective reference scheme, one boundary, and exactly one of an interface-specification reference and an explicit interface-specification gap. Its direct-relation disposition has exactly the fields required by the selected branch. Optional structure, relation, evidence, mechanism, policy, conformance, source, and reliance references are used only when those exact objects and claims are current under their direct rules.
 
 #### A.6.M:4.2 - Interface specification is not a label
 
-`InterfaceSpecificationRef` is the local specification reference for an interface specification. It may include:
+A.6.M calls the independently identified specification episteme an `InterfaceSpecification`. It is one `U.Episteme` under C.2.1 whose `EntityOfConcern` is the exact boundary named by the module claim. Its identity is `<exact ClaimGraph, that one EntityOfConcern, effective U.ReferenceScheme>`. Its claim content may include:
 
 ```text
-InterfaceSpecificationRef:
+InterfaceSpecification claim content:
   signatureRefs?: FinSet(SignatureRef)
   slotSpecSetRefs?: FinSet(SlotSpecSetRef)
   portEndpointSpecRefs?: FinSet(PortEndpointSpecRef)
   protocolRefs?: FinSet(EpistemeRef)
   schemaRefs?: FinSet(EpistemeRef)
-  admissibilityConditions:
-  semanticConditions:
-  versionPolicyRef?:
-  changePolicyRef?:
-  conformanceExpectationRefs?:
-  evidenceOrSourceRelianceRefs?:
-  nonAdmissibleUse:
+  admissibilityConditions
+  semanticConditions
+  versionPolicyRef?
+  changePolicyRef?
+  conformanceExpectationRefs?
+  evidenceOrSourceRelianceRefs?
+  nonAdmissibleUse
 ```
+
+`interfaceSpecificationRef` is one `U.EpistemeRef` constrained to that specification form. Under the effective reference scheme it resolves one already identified `InterfaceSpecification`; it carries none of the specification content itself. Two spellings or serialized references may resolve the same unchanged specification. Retargeting the reference selects another already identified specification without changing the previous one. Changing identity-bearing specification content, its `EntityOfConcern`, or its effective reference scheme yields another episteme. When no complete specification is established, keep an explicit `interfaceSpecificationGap` rather than a partly filled reference.
 
 A signature declares vocabulary, laws, and applicability. A slot or endpoint record names positions and field structure. A protocol or schema constrains interaction. A mechanism reference can substantiate a realization relation. Evidence relations, source relations, reliance relations, and conformance expectations substantiate reliance only when the corresponding evidence, source-use, assurance, or conformance claim is being made. None of these, alone, is the module interface.
 
@@ -147,11 +170,11 @@ A signature declares vocabulary, laws, and applicability. A slot or endpoint rec
 | Source wording | Governing repair application |
 | --- | --- |
 | `component` | First recover an `A.14` relation such as `ComponentOf`, `ConstituentOf`, `PortionOf`, `MemberOf`, or `PhaseOf`. Apply A.6.M only when a module-interface relation is being claimed. |
-| `module` | Recover a `moduleIn(...)` claim or `ModuleRelationRepairNote` over exact `U.Holon` refs under the exact `VP.ModuleInterface` viewpoint episteme when needed. Do not infer a direct relation occurrence; use the admitted subject pattern only when one exists and its predicate obtains. |
+| `module` | Recover a `ModuleInterfaceClaim` or `ModuleRelationRepairNote` over exact `U.Holon` refs under the exact `VP.ModuleInterface` viewpoint episteme when needed. Do not infer a direct relation occurrence; use an admitted direct relation only when its defining rule exists and current facts make its predicate obtain. |
 | `functional element` | Keep it as `FunctionalElementClaim` inside a functional structural-view episteme; use `A.6.F` to repair wording and connect it to module-interface structure only through an exact allocation or correspondence relation. Keep required or desired behaviour as claim content. Cite an actual `U.Transformation` only when A.3.4 independently supplies its changed referent, boundary, conditions, actual before/during/after facts, and continuity basis. |
 | `work package`, `delivery unit`, or `team boundary` | Keep Work, Method, WorkPlan, exact system-role kind and assignment, and responsibility claims separate. Use `A.15`, `A.2`, and `VP.Procedural` for their own objects; treat `VP.AllocationResponsibility` only as a cue, then cite the direct allocation or responsibility predicate or the exact missing governor. Relate those facts to module-interface structure only through a declared correspondence, allocation, or boundary relation. |
 | `deployment scope` or `placement` | Recover a deployment or placement structure under `C.30` or `C.30.ASV` when that deployment or placement structure is being claimed. Relate it to module-interface structure only through declared correspondence or boundary relation. |
-| `interface` | Recover `InterfaceSpecificationRef`, not a wire, API label, port label, E.18 transformation-flow relation, or function by itself. |
+| `interface` | Recover the independently identified `InterfaceSpecification` episteme and an `interfaceSpecificationRef` that resolves it, not a wire, API label, port label, E.18 transformation-flow relation, or function by itself. |
 | `signature` | Keep as A.6.0 declaration. It is not an implemented interface, mechanism, gate, evidence row, or substitution policy. |
 | `port` or `endpoint` | Recover `SlotSpec`, endpoint field, or interface-specification field when the claim is being made. It is not a module, graph edge, transformation-flow crossing, or proof of integration. |
 | `functional link` | Keep it as claim content in a functional structural-view episteme; relate it to module claims only through an exact correspondence, allocation, or retargeting relation. |
@@ -183,9 +206,9 @@ ModuleRelationRepairNote:
   candidateModuleHolonRef: BrakeControllerPackage
   effectiveReferenceScheme: VehicleControlInterfaceScheme-2026Q2
   claimScope: BrakeControllerReleaseUse-2026Q2
-  directModuleRelationDisposition: claimOnly; no admitted subject pattern or obtaining occurrence asserted
+  directModuleRelationDisposition: noDirectRelationClaimed
   boundaryRef: BrakeControlBoundary
-  interfaceSpecificationRef or gap: endpoint names present; protocol and semantic conditions missing
+  interfaceSpecificationGap: endpoint names are present, but protocol and semantic conditions are still missing
   admissibilityConditions: not yet declared
   substitutabilityPolicyRef: missing
   changePolicyRef: missing
@@ -229,9 +252,9 @@ ModuleRelationRepairNote:
   candidateModuleHolonRef: SettlementService
   effectiveReferenceScheme: PaymentsPlatformInterfaceScheme-2026Q2
   claimScope: SettlementServiceProductLineUse-2026Q2
-  directModuleRelationDisposition: claimOnly; team/module correspondence remains diagnostic
+  directModuleRelationDisposition: noDirectRelationClaimed; team/module correspondence remains diagnostic
   boundaryRef: SettlementServiceBoundary
-  interfaceSpecificationRef or gap: service API exists; semantic versioning, data schema, and semantic-constraint conditions incomplete
+  interfaceSpecificationGap: the service API exists, but semantic versioning, data schema, and semantic conditions are incomplete
   admissibilityConditions: admitted team-delivery and on-call responsibility predicates obtain for their actual Systems, scopes, and intervals; otherwise record the exact missing governor; substitutability not established
   substitutabilityPolicyRef: missing
   changePolicyRef: missing
@@ -261,7 +284,7 @@ If the reopened material is no longer a module-interface relation, A.6.M keeps o
 
 **Show.** A port label, API endpoint label, source-local route label, flow edge, or function name may be a useful clue. It can substantiate a module-interface claim only after the relevant signature, slot, protocol, semantic condition, correspondence, mechanism, evidence relation, conformance expectation, source relation, or reliance relation named by value is declared.
 
-Holon, relation, and episteme: the candidate module and whole retain their admitted holon kinds. A `moduleIn(...)` record is a C.2.1 claim episteme whose content may concern the module holon, one selected dependency structure, or an independently admitted direct module relation occurrence; it is not that relation. Framework and module-description epistemes, authoring Work, publication occurrence, publication form, carrier, effective reference scheme, ClaimScope, and optional model-use structure retain separate identities and direct relations. Method descriptions enter as epistemes; method values enter through their Method pattern. Stratification and architecture-operation labels named by `C.30.STRAT` remain source labels unless `C.30.STRAT` recovers module-interface claim content that A.6.M can repair.
+Holon, relation, and episteme: the candidate module and whole retain their admitted holon kinds. A `ModuleInterfaceClaim` is content in a C.2.1 claim episteme and may concern the module holon, one selected dependency structure, or an independently admitted direct module relation occurrence; it is not that relation. The `InterfaceSpecification` is another independently identified episteme, and `interfaceSpecificationRef` only resolves it. Framework and module-description epistemes, authoring Work, publication occurrence, publication form, carrier, effective reference scheme, ClaimScope, and optional model-use structure retain separate identities and direct relations. Method descriptions enter as epistemes; method values enter through their Method pattern. Stratification and architecture-operation labels named by `C.30.STRAT` remain source labels unless `C.30.STRAT` recovers module-interface claim content that A.6.M can repair.
 
 ### A.6.M:6 - Bias-Annotation
 
@@ -270,7 +293,7 @@ Holon, relation, and episteme: the candidate module and whole retain their admit
 | Box bias | Do not treat a diagram box as a module. Recover holon, whole, boundary, and interface specification. |
 | Open-label bias | Do not treat "open" as substitutability. Recover standards, conformance expectations, data or access constraints, and change policy when those conditions are part of the claim being made. |
 | Component bias | Do not treat every part as a module. Apply A.14 to component wording unless a module-interface relation is being claimed. |
-| Interface-label bias | Do not treat API, port, endpoint, or signature labels as implemented compatibility. Recover `InterfaceSpecificationRef`. |
+| Interface-label bias | Do not treat API, port, endpoint, or signature labels as implemented compatibility. Recover the independently identified `InterfaceSpecification` episteme and a governed reference that resolves it, or record an exact specification gap. |
 | Team-boundary bias | Do not treat Conway-like mirroring, a responsibility label, team communication boundary, or delivery-unit label as a module boundary. Recover the admitted Systems, exact system-role kinds and assignments needed for Work, Work and procedural relations, and direct responsibility predicate or exact missing governor first; add module-interface correspondence only when the boundary and interface specification are declared. |
 | Parallelism bias | Do not treat decomposition into more modules, teams, services, or transformation-flow paths as performance or evolvability improvement. Recover serial work, synchronization, communication overhead, shared resources, and bottleneck claims through `E.18`, `C.30.TFS-REL`, C.29, C.31, or neighboring characteristic patterns when those claims are being made. |
 | Platform bias | Do not treat a platform name as architecture quality. Recover platform grammar and the claim named by value it can substantiate. |
@@ -281,8 +304,8 @@ Holon, relation, and episteme: the candidate module and whole retain their admit
 | --- | --- |
 | `CC-A6M-1` | The text names the whole holon, candidate module holon, effective reference scheme, claim coverage when it matters, and exact module-interface viewpoint episteme when used, or explicitly stops at ordinary non-claim-bearing wording. No context suffix or optional model-use structure supplies those objects. |
 | `CC-A6M-2` | The repair states whether the phrase is a module relation, component relation, function allocation, procedural or work-package relation, exact system-role-assignment occurrence, direct responsibility relation, deployment or placement structure, interface specification, signature, port or endpoint, transformation-flow crossing, mechanism realization, platform grammar, control relation, autonomy-like operation claim, `C.30.STRAT` source-label case, or open-architecture claim. |
-| `CC-A6M-3` | No root kind is minted for module, interface, platform, or open architecture, and `moduleIn(...)` is not treated as an independently admitted direct relation. A needed reusable relation requires its subject pattern and `A.6.RCD`; occurrence identity uses `A.6.REL` only after that relation is admitted and obtains. |
-| `CC-A6M-4` | `InterfaceSpecificationRef` is recoverable when interface compatibility, substitutability, or conformance is being claimed. |
+| `CC-A6M-3` | No root kind is created for module, interface, platform, or open architecture, and `ModuleInterfaceClaim` is not treated as an independently admitted direct relation. The three direct-relation dispositions remain distinct. A needed reusable relation requires its defining rule and `A.6.RCD`; occurrence identity uses `A.6.REL` only after that relation is admitted and obtains. |
+| `CC-A6M-4` | The independently identified `InterfaceSpecification` episteme, its exact C.2.1 identity, and an `interfaceSpecificationRef` that resolves it are recoverable when interface compatibility, substitutability, or conformance is claimed. A missing specification remains an explicit gap. |
 | `CC-A6M-5` | Substitution or change policy is declared when replaceability, alternate supplier, upgrade, or platform extension is being claimed. Substitutability not established by the repair is marked as not established, not implied by wording. |
 | `CC-A6M-6` | Function, transformation-flow, control, work, evidence, assurance, gate, decision, causal, and mechanism claims use their subject patterns. |
 | `CC-A6M-7` | A failed check gives a repair action or subject-pattern application, not only a rejection. |
@@ -331,7 +354,7 @@ The pattern deliberately keeps measurement out of the first move. A module relat
 
 | Source or practice | Currentness or lineage use | Adopt | Adapt for FPF | Reject or boundary | Practitioner implication |
 | --- | --- | --- | --- | --- | --- |
-| DoD OUSD(R&E) MOSA guidance and implementation guidebook (`https://www.cto.mil/sea/mosa/`; `https://www.cto.mil/wp-content/uploads/2025/03/MOSA-Implementation-Guidebook-27Feb2025-Cleared.pdf`) | Current official acquisition and engineering practice family for open modular systems; used as current practice guidance, not as a complete FPF ontology. | Modular design, interface standards, conformance verification, replacement policy, change policy, and competitive reuse are real conformance and substitution expectations. | Recover them as `InterfaceSpecificationRef`, `PlatformGrammarRef`, `substitutabilityPolicyRef`, `changePolicyRef`, conformance expectation, source relation, and evidence relation only where the recovered claim needs them. Non-module selection, procurement, policy, evidence, assurance, gate, decision, Work, system-role-assignment, responsibility, and mechanism claims keep their own direct patterns; a responsibility claim names its predicate or exact missing governor. | Do not treat `open`, interface publication, or modular-looking structure as substitutability, assurance, procurement suitability, supplier-set selection, policy authorization, quality proof, or decision authority. | A practitioner asking whether something is open first repairs the relation and interface specification; other claims remain with the patterns named in `A.6.M:12`. |
+| DoD OUSD(R&E) MOSA guidance and implementation guidebook (`https://www.cto.mil/sea/mosa/`; `https://www.cto.mil/wp-content/uploads/2025/03/MOSA-Implementation-Guidebook-27Feb2025-Cleared.pdf`) | Current official acquisition and engineering practice family for open modular systems; used as current practice guidance, not as a complete FPF ontology. | Modular design, interface standards, conformance verification, replacement policy, change policy, and competitive reuse are real conformance and substitution expectations. | Recover them as an independently identified `InterfaceSpecification` episteme plus an `interfaceSpecificationRef` that resolves it, `PlatformGrammarRef`, `substitutabilityPolicyRef`, `changePolicyRef`, conformance expectation, source relation, and evidence relation only where the recovered claim needs them. Non-module selection, procurement, policy, evidence, assurance, gate, decision, Work, system-role-assignment, responsibility, and mechanism claims keep their own direct patterns; a responsibility claim names its predicate or exact missing governor. | Do not treat `open`, interface publication, or modular-looking structure as substitutability, assurance, procurement suitability, supplier-set selection, policy authorization, quality proof, or decision authority. | A practitioner asking whether something is open first repairs the relation and interface specification; other claims remain with the patterns named in `A.6.M:12`. |
 | Conway's law, the mirroring hypothesis, and Team Topologies and inverse Conway practice (`https://www.melconway.com/Home/Committees_Paper.html`; `https://doi.org/10.1016/j.respol.2012.04.011`; `https://itrevolution.com/wp-content/uploads/2022/06/TTOP_excerpt.pdf`) | Mature socio-technical law and empirical lineage plus current organization-design practice; used as diagnostic pressure, not as a proof rule. | Team communication structure, boundary placement, and delivery-responsibility relations can create real pressure on module and interface boundaries and useful correspondence clues. | Recover admitted Systems, exact system-role kinds and assignments, and Work through `A.15` and `A.2`; use `VP.AllocationResponsibility` only as a viewpoint cue, then cite the direct responsibility predicate or exact missing governor. Connect that material to `ModuleInterfaceStructure` only through declared correspondence, allocation, boundary relation, and preserved and lost structure note. Use `C.29` for a homomorphism-like claim. | Do not treat Conway's law, an org chart, assignment, responsibility label, or delivery unit as proof of module interface, substitutability, modularity quality, evidence, gate passage, or architecture decision. | A practitioner may use team-boundary mismatch as a diagnostic prompt, then repair each exact relation before deciding what architecture change is warranted. |
 | Amdahl's law and communication and synchronization extensions (`https://www.cs.cmu.edu/~18742/papers/Amdahl1967.pdf`; `https://arxiv.org/abs/1306.3302`; `https://arxiv.org/abs/2603.20654`) | Mature mathematical law plus current extension sources for communication, synchronization, and scalable-workload-fraction limits. | Serial work, synchronization, communication overhead, shared resources, and changing scalable workload fractions can limit the payoff of decomposition, parallelization, or specialization. | Use `C.29` for mathematical speedup or value-scalable-fraction reasoning, `E.18` for transformation-flow structure, `C.30.TFS-REL` when the module claim uses an architecture-to-transformation-flow relation, and `C.31` and `C.16` for modularity and characteristic tradeoffs. | Do not treat module count, team count, service count, transformation-flow path count, or accelerator count as improvement, scalability, throughput, or evolvability by itself. | A practitioner considering a module split names the serial part, shared bottleneck, synchronization or communication overhead, and characteristic tradeoff before claiming improvement. |
 | SEI Views and Beyond, ISO/IEC/IEEE 42010:2022, and multi-view architecture practice | Mature architecture-description lineage plus current international view-description discipline; not used as a current module-quality source. | Module and component-and-connector views are distinct architecture descriptions. | Use `ModuleInterfaceStructure` and `RuntimeInteractionStructure` as structure-kind signals under `C.30.ASV`. | Do not reduce architecture to a module diagram. | Module repair stays one architecture-structure concern, not the whole architecture ontology. |
@@ -347,7 +370,7 @@ Older or local sources may serve as lineage or worked examples only when the row
 | `A.6.P` | A.6.M is an RPR specialization for module-interface claim and interface-specification language; its record forms do not create a direct relation occurrence. |
 | `A.6.RSIR` | Bare interface-like wording is recovered before A.6.M is applied; A.6.M governs only recovered module-interface claim content, interface specification, platform grammar, substitutability policy, change policy, or open-architecture slice. |
 | `A.6.RCD` and `A.6.REL` | A needed reusable direct module relation requires its subject pattern and A.6.RCD for participants, obtaining, applicability, recurrence, and identity. A.6.REL applies only after the direct relation is admitted and a later use must distinguish obtaining occurrences. |
-| `C.2.1`, `A.2.6`, and `A.22` | Govern the `moduleIn(...)` claim episteme, effective reference scheme, ClaimScope, and any independently selected dependency or model-use structure. None creates a module relation. |
+| `C.2.1`, `A.2.6`, and `A.22` | Govern the `ModuleInterfaceClaim` episteme, the separate `InterfaceSpecification` episteme, effective reference scheme, ClaimScope, and any independently selected dependency or model-use structure. None creates a module relation. |
 | `C.30.STRAT` | Recovers stratification and architecture-operation source labels before A.6.M governs only recovered module-interface relation cases. |
 | `E.16` | Governs autonomy-budget, autonomous operation, independent acting, unsupervised decision or action, and freedom-of-action claims when those description or view uses are being made; A.6.M keeps only the module-interface relation, boundary, interface specification, and substitution or change-policy slice. |
 | `A.14` | Component and part-whole wording uses A.14 first unless a module-interface relation is being claimed. |

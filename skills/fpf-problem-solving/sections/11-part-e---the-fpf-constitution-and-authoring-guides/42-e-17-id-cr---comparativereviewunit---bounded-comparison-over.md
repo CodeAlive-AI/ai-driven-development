@@ -113,7 +113,7 @@ This pattern uses a small local vocabulary for review.
 - **Compared alternative** = one distinct option, method, bulletin, strategy, note, view, source episteme, source publication, or project-side FPF kind and reference named by value kept separate under the shared review frame.
 - **Same `EntityOfConcernRef` case** = the special case where the compared sources describe the same entity. This is common, but it is not required when distinct alternatives remain under one shared review frame.
 - **Interpretive lift** = the bounded comparative or asymmetry-bearing comparison added on top of already available source epistemes or source publications; in a small comparison sheet, each row has its own declared comparison criterion while the unit keeps one shared blocked downstream claim or effect and boundary trigger.
-- **Bridge references** = required `bridgeOccurrenceRef` and `boundedUseClaimRef` when the case depends on bridge-mediated correspondence rather than ordinary source interpretation alone; optional `bridgeCardRef` cites reusable packaging, and optional `bridgeStanceRef` cites a separate F.9.1 episteme whose `EntityOfConcern` is that exact use claim.
+- **Bridge references** = required `bridgeOccurrenceRef` and `boundedUseClaimRef` when the case depends on bridge-mediated correspondence rather than ordinary source interpretation alone. The use-claim reference resolves a claim whose `EntityOfConcern` is that Bridge occurrence and whose proposed use, direction, correspondence rule, tolerated loss, and polarity match this comparative unit. Optional `bridgeCardRef` cites reusable packaging, and optional `bridgeStanceRef` cites a separate F.9.1 episteme whose `EntityOfConcern` is that exact use claim.
 - **Bounded comparative use** = what this review unit can be used for while it remains only a bounded comparative review unit.
 - **Overread risk** = how the review unit is most likely to be overread into a bridge, action-selection, ontology, or authority claim that it does not carry.
 - **Prompt boundary** = the explicit `U.AbductivePrompt` publication that becomes the governing publication when an abductive-prompt or action-selection claim governs the next action.
@@ -160,7 +160,7 @@ Name the base source relation or work question before adding bounded comparison.
 Most working users do not have to start with a long declaration block.
 This pattern therefore follows `E.14`'s working-model-first discipline: the first usable block is a small set of plain questions that helps an engineer-manager keep the review unit bounded to the work it can honestly carry.
 The ordinary minimum block comes next for ordinary use: it lets the reader turn the working comparison into the seven-row card before touching the fuller declaration block.
-The full declaration block remains available as an assurance record that carries source, boundary, and downstream-claim fields by value.
+The fuller declaration block remains available as a reviewable declaration extension that carries source, boundary, and downstream-claim fields by value. If a real assurance or B.3 threshold is current, cite the separately constituted B.3 claim or record; do not turn this declaration extension into that assurance record.
 
 #### E.17.ID.CR:4.3.a - Five plain working questions
 
@@ -228,7 +228,7 @@ When the heavier declaration weight really stays here, the unit still makes at l
 - `comparativeRelationClass = sameEntityComparisonClass | sharedFrameDistinctAlternativeClass | readerFitComparativeClass`;
 - `comparisonBasis`;
 - `addedClaimPolicy`;
-- required `bridgeOccurrenceRef` and `boundedUseClaimRef` when the case depends on bridge-mediated comparative relation;
+- required `bridgeOccurrenceRef` and `boundedUseClaimRef` when the case depends on bridge-mediated comparative relation; the use-claim reference resolves an exact claim whose `EntityOfConcern` is that Bridge occurrence and whose proposed use, direction, correspondence rule, tolerated loss, and polarity match the current comparative unit;
 - optional `bridgeCardRef` when a reusable Card exists;
 - optional `bridgeStanceRef` when it resolves the separate F.9.1 episteme whose `EntityOfConcern` is that exact use claim;
 - `targetUserModel` when reader-fit is materially shaping the comparison unit;
@@ -243,7 +243,7 @@ When the heavier declaration weight really stays here, the unit still makes at l
 - `baseCasePattern` when the review unit is a mixed case layered over `A.6.3.*` or `E.17.EFP`.
 
 `sourceRelationClass` is only the source-relation or bounded-claim class for the local claim or use. `comparativeRelationClass` is only the comparative-relation class of this review unit. Neither field is a neighboring object or claim such as a relation kind, Bridge occurrence, bounded-use claim, Card, stance note, semantic identity, evidence relation, gate, assurance, work relation, speech act, commitment, authority reference, or decision record. The `sameEntityComparisonClass` value is a special case for comparisons where the compared sources really describe the same entity; it does not assert semantic identity. When the unit compares distinct alternatives, use `sharedFrameDistinctAlternativeClass` plus distinct alternative refs, and do not treat the alternatives as equivalent or substitutable without an obtaining Bridge and the required bounded-use claim.
-`readerFitComparativeClass` by itself does not create an interpretation claim. When bounded correspondence wording implies a cross-context Bridge, first apply F.9 and cite the exact `bridgeOccurrenceRef` and `boundedUseClaimRef`. A `bridgeCardRef` is optional packaging. A `bridgeStanceRef` is also optional and is admissible only when it resolves a separate F.9.1 episteme whose `EntityOfConcern` is that same bounded-use claim. None of these references can substitute for another.
+`readerFitComparativeClass` by itself does not create an interpretation claim. When bounded correspondence wording implies a cross-context Bridge, first apply F.9. The `boundedUseClaimRef` must resolve a claim whose `EntityOfConcern` is the exact `bridgeOccurrenceRef`, and its proposed use, direction, correspondence rule, tolerated loss, and polarity must match this comparative unit. A positive proposed use requires affirmative polarity; when A.10 or B.3 is triggered, current reliance must support that exact use. A degraded reliance result narrows the use. Negative, abstaining, reopened, evidence-needed, blocked, or mismatched results stop this bridge-mediated use. The pattern that directly constrains the proposed comparison decides authorization, and evidence of the comparative-review Work says whether it occurred. A `bridgeCardRef` remains optional packaging. A `bridgeStanceRef` is also optional and is admissible only when it resolves a separate F.9.1 episteme whose `EntityOfConcern` is that same bounded-use claim. None of these references can substitute for another.
 The main comparison question plus the neighboring pattern boundaries still decide the selected FPF pattern or project-side FPF kind and reference named by value.
 
 #### E.17.ID.CR:4.3.e - Interpretant-side block
@@ -311,7 +311,7 @@ This section is the compact governing-rule summary for `ComparativeReviewUnit` i
 3. **Name the crossed claim instead of repeating exclusions.**
    When the case stops being bounded comparison, name the claim that crossed the boundary and apply the pattern that governs that claim: source transformation, bridge, explanation face, abductive prompt or action selection, ontology or changed `EntityOfConcern`, decision, work or reliance, gate, assurance, adjudication, or reduced-use source rendering.
 4. **Keep neighboring-pattern authority explicit.**
-   Bridge-mediated comparison requires an exact `bridgeOccurrenceRef` and `boundedUseClaimRef`; a Card and F.9.1 stance note remain optional and separate. Prompt-worthy cases publish `U.AbductivePrompt`; ontology-shift claims apply `OntologicalReframing` or `A.6.4`. For action, gate, adjudication, work, reliance, or assurance, use the FPF pattern for that claim and cite the project-side kind and reference that record it.
+   Bridge-mediated comparison requires an exact `bridgeOccurrenceRef` and a tuple-matched `boundedUseClaimRef` whose `EntityOfConcern` is that Bridge. Positive use requires affirmative polarity and, when A.10 or B.3 is triggered, current reliance for that exact use. Degraded reliance narrows the use; a negative, abstaining, reopened, evidence-needed, blocked, or mismatched result stops it. A Card and F.9.1 stance note remain optional and separate. Authorization and evidence that comparative-review Work occurred remain with their own patterns and records.
 5. **Keep reader-fit bounded.**
    `targetUserModel`, `interactionMode`, `contrastiveQuestion`, `boundedComparativeUse`, and `overreadRisk` can be stated when they change actual review use, but they do not create authority that the unit does not carry.
 
@@ -587,11 +587,11 @@ Why it is invalid here:
 - bridge-mediated comparison is being implied without an explicit obtaining Bridge and bounded-use claim;
 - blocked substitution and authority claims are being smuggled in through soft phrasing.
 
-**Minimal repair.** `Under Bridge B-12 and bounded-use claim UC-12, both notes foreground the same operator-timing concern for this review task, but they are not substitution-equivalent and the source episteme or source publication set remains primary. Card BC-12 may be cited when that optional package is useful.`
+**Minimal repair.** `Under Bridge B-12, bounded-use claim UC-12 has B-12 as its EntityOfConcern and says, with affirmative polarity, that the source-note-to-receiving-note direction is suitable for comparing only the operator-timing concern in this review task; the remaining source distinctions are tolerated loss, not substitution. A current A.10 result supports relying on UC-12 for that exact use. Both notes foreground the concern, but they are not substitution-equivalent and the source episteme or source publication set remains primary. The pattern for the proposed review decides authorization, and evidence of the review Work says whether it occurred. Card BC-12 may be cited when that optional package is useful.`
 
 What the repair does:
-- restores the source references, `bridgeOccurrenceRef`, and `boundedUseClaimRef`, while keeping any `bridgeCardRef` optional;
-- narrows the claim back to bounded comparison;
+- restores the source references and verifies `bridgeOccurrenceRef`, the bounded-use claim's `EntityOfConcern`, its use/direction/rule/loss/polarity tuple, and current A.10 reliance for that exact positive use, while keeping any `bridgeCardRef` optional;
+- narrows the claim back to bounded comparison and leaves authorization and the occurrence of comparative-review Work to their own patterns and evidence;
 - reasserts the blocked downstream claim or effect.
 
 ### E.17.ID.CR:6 - Bias-Annotation
@@ -629,7 +629,7 @@ Use ID.CR-Core for ordinary comparison notes. Conditional rows apply only when t
 1. **CC-ID-4 - Base-case governing-pattern relation is explicit.**
    A reviewer can tell why the case does not really belong to `A.6.3.*`, an F.9 Bridge or bounded-use branch, an F.9.1 stance-note branch, `E.17.EFP`, `B.5.2(.0)`, `OntologicalReframing`, or `A.6.4`.
 2. **CC-ID-5 - Bridge declaration does not hide.**
-   If the case depends on bridge-mediated comparison, `bridgeOccurrenceRef` and `boundedUseClaimRef` are required. Optional `bridgeCardRef` remains packaging; optional `bridgeStanceRef` resolves a separate F.9.1 episteme whose `EntityOfConcern` is that claim.
+   If the case depends on bridge-mediated comparison, `bridgeOccurrenceRef` and `boundedUseClaimRef` are required. The latter resolves a claim whose `EntityOfConcern` is that Bridge and whose use/direction/rule/loss/polarity tuple matches the comparative unit. Positive use requires affirmative polarity and, when A.10 or B.3 is triggered, current reliance for that exact use; degraded reliance narrows it, while a negative, abstaining, reopened, evidence-needed, blocked, or mismatched result stops it. Authorization and actual comparative-review Work remain separate. Optional `bridgeCardRef` remains packaging; optional `bridgeStanceRef` resolves a separate F.9.1 episteme whose `EntityOfConcern` is that claim.
 3. **CC-ID-7 - Reader-fit stays bounded.**
    `targetUserModel`, `interactionMode`, `contrastiveQuestion`, `boundedComparativeUse`, and `overreadRisk` are visible when needed, but they do not create an authority claim that the unit does not carry.
 
@@ -678,7 +678,7 @@ This pattern exists to protect that everyday bounded-comparison use.
 It keeps a comparative review unit usable by making five entries visible enough to inspect: the bounded comparative review unit, the source references, the bounded comparative lift, the blocked downstream claim or effect, and the boundary trigger that would end interpretation.
 The gain is practical: a team can compare available source epistemes or source publications honestly without pretending that a helpful review unit already carries more authority than it really does.
 
-### E.17.ID.CR:11 - SoTA Alignment: Adopted And Adapted Invariants And Rejected Shortcuts
+### E.17.ID.CR:11 - SoTA-Echoing: Adopted and Adapted Invariants and Rejected Shortcuts
 
 **SoTA alignment rule.** Use each row here as source idea -> local FPF invariant -> practical local test -> popular shortcut rejected. A source citation governs nothing by reputation; it counts only when the cited idea is translated into the Solution, conformance checks, boundary rules, worked slices, and Relations of this pattern.
 **Assurance recovery note.** Use each row here as a heavier confirmation of one already-declared ComparativeReviewUnit governing rule. If a row cannot be recovered through the ordinary card, the interpretant-side block, the quick boundary corridor, or the nearest worked slices, do not let the citation carry the pattern by itself.

@@ -16,9 +16,9 @@ The primary reader is an author or reviewer who must make one load-bearing const
 
 ### A.7.CP:1 - Problem frame
 
-Dated work applying an FPF method can rely on broad claims such as “a publication does not create world-side obtaining” or “a method episteme does not perform work”. A method episteme may separately state or cite one of those claims as a declared premise or branch condition in its own episteme or declaration. `ClaimUsedAsReasoningBasisRelation@Context` instead records only the claim on which one actual inference, comparison, or choice in dated work relies. Copying the claim into every method makes it drift; leaving the dated reliance implicit hides whether a particular result used an adopted premise, a conditional branch, or no common claim at all.
+Dated work applying an FPF method can rely on broad claims such as “a publication does not create world-side obtaining” or “a MethodDescription episteme does not perform Work”. A `U.MethodDescription` episteme may state or cite one of those claims as a declared premise or branch condition for its described `U.Method`. `ClaimUsedAsReasoningBasisRelation@Context` instead records only the claim on which one actual inference, comparison, or choice in dated Work relies. Copying the claim into every method description makes it drift; leaving the dated reliance implicit hides whether a particular result used an adopted premise, a conditional branch, or no common claim at all.
 
-The compact publishes twelve stable claim contents once. A method description can declare an intrinsic premise or a branch condition in its own episteme or declaration; a dated application records only the compact claims actually used in its reasoning. Ordinary work therefore does not acquire a foundation checklist.
+The compact publishes twelve stable claim contents once. A `U.MethodDescription` episteme can declare an intrinsic premise or a branch condition for its described Method; a dated application records only the compact claims actually used in its reasoning. Ordinary Work therefore does not acquire a foundation checklist.
 
 ### A.7.CP:2 - Problem
 
@@ -51,7 +51,7 @@ The compact carries these stable claim contents:
 3. **`A7CP-03 Constitution and social objects`.** Constituting acts, admitted systems, and the relations they institute remain distinct from descriptions of those acts and relations.
 4. **`A7CP-04 Epistemic openness and fallibility`.** Evidence and reliance may remain unresolved without turning unresolved evidence into a third world-side obtaining mode.
 5. **`A7CP-05 Representation boundary`.** Descriptions, logical forms, database rows, graphs, and publications represent or carry claims under exact relations; their form does not prove the represented ontic.
-6. **`A7CP-06 Agency and work attribution`.** A method episteme describes a way of working; an admitted system under a role assignment performs dated work and produces results.
+6. **`A7CP-06 Agency and work attribution`.** A `U.MethodDescription` episteme describes an admitted `U.Method`; an admitted `U.System` performs dated `U.Work`. When an actual assignment occurrence and an F.6 attribution obtain for that Work, they identify the assignment under which the System acted; neither the system-role kind nor the assignment acts. A result follows only through its own separately established relation—for example, a production, operation-result, measurement, evaluation, decision, delivery, or acceptance relation—not from Work in general.
 7. **`A7CP-07 Kind discipline`.** Use direct existing kinds and local admission before proposing a universal kind, root relation, or role-like surrogate.
 8. **`A7CP-08 Scoped pluralism`.** Different source traditions or apparatuses may be useful for different receiving claims; compatibility is tested by consequences, not achieved through prestige hierarchy.
 9. **`A7CP-09 Structure and wholeness`.** A description of structure is not the structure; not every construction is mereology, and `C.13` alone defines constructional mereology.
@@ -87,7 +87,7 @@ semanticDirection: BasisClaimSlot -> ReceivingReasoningResultSlot
 ReasoningBasisPostureValue ::= adoptedPremise | conditionalAssumption
 
 RelationOccurrenceQualifiers:
-  basisClaimIdRef: ClaimIdRef
+  basisClaimAddress: ClaimAddress
   posture: ReasoningBasisPostureValue
   reasoningUseScope?: U.ClaimScope
   modelUseStructureRef?: U.StructureRef
@@ -101,7 +101,7 @@ OccurrenceIdentity:
    maximalContinuousRelianceInterval>
 ```
 
-`BasisClaimSlot` is the exact claim-bearing episteme and compact claim ID used. `ReasoningWorkSlot` is the dated reasoning, choice, ontology-analysis, or reconciliation `U.Work` that relies on it. `ReceivingReasoningResultSlot` is the claim, comparison, decision, or other claim-bearing result episteme whose content that work forms or revises using the basis claim. If the practical result is world-side, use the direct result claim that bears on it; the world-side object retains its subject pattern. The already admitted holder `U.System` performs the Work under one identified occurrence of a directly declared `U.SystemRoleAssignment` species that currently obtains. When the F.6 Work-attribution relation is cited, the assignment holder must be that same System. The assignment neither supplies the System nor performs the Work. Claim episteme, Work occurrence, use posture, receiving result, and any world-side result remain distinct; the words “premise” and “assumption” are not relation participants.
+`BasisClaimSlot` is the exact claim-bearing episteme used, and `basisClaimAddress` is a `C.2.1 ClaimAddress` selecting the exact claim inside that same edition by its intrinsic ClaimGraph identity. `ReasoningWorkSlot` is the dated reasoning, choice, ontology-analysis, or reconciliation `U.Work` that relies on it. `ReceivingReasoningResultSlot` is the claim, comparison, decision, or other claim-bearing result episteme whose content that Work forms or revises using the basis claim. If the practical result is world-side, use the direct result claim that bears on it; the world-side object retains its subject pattern. An admitted `U.System` performs the Work. If the case relies on an assignment, recover one actual occurrence of a separately declared `U.SystemRoleAssignment` species and the obtaining F.6 attribution for that exact Work-assignment pair; its holder must be the same System. The assignment's existence, holder, or interval does not establish that attribution, and the assignment neither supplies the System nor performs the Work. Claim episteme, described Method when one is used, Work occurrence, assignment occurrence, attribution, use posture, receiving result, and any world-side result remain distinct. The words “premise” and “assumption” are not relation participants.
 
 The relation obtains during the maximal continuous interval in which the named work actually relies on the exact basis claim to form or revise the exact receiving result. Access, citation, publication, co-location, or use of the claim elsewhere in the same work is insufficient. `reasoningUseScope` appears only when this premise use is narrower than or otherwise differs from the receiving result's declared claim scope; `modelUseStructureRef` appears only when an independently selected `BoundedModelUseStructure` changes interpretation. Source currentness, evidence, publication, work method, and the receiving result's own governance remain with their subject patterns.
 
@@ -147,7 +147,7 @@ The main biases are foundation maximalism, premise-kind inflation, and trace-by-
 | `CC-A7CP-3` | `adoptedPremise` and `conditionalAssumption` are use postures, not intrinsic claim kinds. |
 | `CC-A7CP-4` | A posture or identity change splits only the affected result-specific relation occurrence and reopens that receiving result and its dependents. |
 | `CC-A7CP-5` | Consumers cite only load-bearing claim IDs and do not copy the compact. |
-| `CC-A7CP-6` | The support pattern is not a method, performer, work plan, result, or mandatory catalogue traversal. Actual dated reliance belongs to reasoning work; any premise or branch condition declared by a method episteme stays under that episteme's declaration. |
+| `CC-A7CP-6` | The support pattern is not a Method, performer, work plan, result, or mandatory catalogue traversal. A `U.MethodDescription` episteme may declare a premise or branch condition for its described Method, but only an admitted `U.System` performs dated reasoning Work. Any assignment, F.6 attribution, and result relation used by the case must obtain separately. |
 | `CC-A7CP-7` | Evidence, currentness, source use, subject construction, kind admission, and work method remain with subject patterns. |
 | `CC-A7CP-8` | The twelve compact claims retain their stable IDs and contents as one closed support set. |
 
@@ -158,7 +158,7 @@ The main biases are foundation maximalism, premise-kind inflation, and trace-by-
 | Require every ontology use to check all twelve claims. | Cite only actual load-bearing claims; unused entries remain latent. |
 | Treat a citation or work-wide claim use as a premise-use occurrence for every result. | Name the dated work, exact receiving result, and inference or comparison that actually relies on the basis claim; use separate relation occurrences for independent results. |
 | Define “premise” and “assumption” as separate episteme kinds. | Keep one exact claim episteme and record the context-local posture. |
-| Let the compact, method episteme, or assignment perform or govern consuming work. | Name the admitted holder `U.System` that performs the dated reasoning `U.Work` under one identified `U.SystemRoleAssignment` occurrence that currently obtains; keep the method and attribution under the pattern for the consuming Work. |
+| Let the compact, a MethodDescription episteme, its described Method, a system-role kind, or an assignment perform the consuming Work or bring about its result. | Name the admitted `U.System` that performs the dated reasoning `U.Work`. When the case relies on an assignment, name its actual occurrence and the obtaining F.6 attribution. State any result only through the direct result relation that the case independently establishes. |
 | Copy the compact into `A.7`, `A.7.1`, or `A.7.2`. | Keep one authoritative source and use exact claim-ID references. |
 | Hide evidence or currentness inside the relation. | Cite direct evidence/currentness results without turning them into relation fields. |
 
@@ -186,7 +186,7 @@ The current-practice implication is practical: exact claim use and subject-patte
 ### A.7.CP:12 - Relations
 
 - **Defines:** the twelve `A7CP-*` constructive claim contents and `ClaimUsedAsReasoningBasisRelation@Context`, whose direct result-specific edge states that dated reasoning work used one exact basis claim to form or revise one exact receiving result episteme.
-- **Is consumed by:** dated work applying `A.7.1` or `A.7.2`, which cites exact compact claims and exposes relation occurrences only for load-bearing actual reliance. The A.7.1 and A.7.2 method epistemes may separately declare premises or branch conditions under their exact episteme or declaration; neither method description is made a participant of `ClaimUsedAsReasoningBasisRelation@Context`.
+- **Is consumed by:** dated Work applying the Methods described by `A.7.1` or `A.7.2`, which cites exact compact claims and exposes relation occurrences only for load-bearing actual reliance. The A.7.1 and A.7.2 `U.MethodDescription` epistemes may separately declare premises or branch conditions for their described Methods; neither MethodDescription nor Method is a participant of `ClaimUsedAsReasoningBasisRelation@Context`.
 - **Coordinates with:** current `A.7` for its existing strict distinctions without broadening its EntityOfConcern, first move, Solution, or cases.
 - **Preserves subject patternship in:** `A.10` and `G.11` for evidence/currentness, `E.24`/`E.24.UK` for ontology admission, subject construction patterns for constructive settlement, and `A.7.2` for ontology source-use relations.
 - **Does not define:** a premise method, source authority, evidence relation, work plan, performer kind, common realism checklist, or universal foundation ontology.

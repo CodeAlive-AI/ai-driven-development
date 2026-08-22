@@ -4,16 +4,16 @@
 
 **At a glance.** Use B.3.5 when a human-facing Working-Model relation such as `ut:ComponentOf`, `ut:MemberOf`, `ut:PortionOf`, or `ut:AspectOf` needs an assurance grounding relation without exposing constructive machinery as the public vocabulary.
 
-**Use this when.** Use this pattern when a structural edge must remain readable to engineers and managers while its publication claim also carries an author-declared `validationMode` and a `tv:groundedBy` link to a current C.2.1 construction-trace episteme. The trace reports independently grounded construction facts for inspection; it creates neither the relation occurrence nor the identity of the whole.
+**Use this when.** Use this assurance profile when a publication has elected CT2R-LOG for a structural edge, or a named current requirement demands it, so the readable claim must also carry an author-declared `validationMode` and a `tv:groundedBy` link to a current C.2.1 construction-trace episteme. The trace reports independently grounded construction facts for inspection; it creates neither the relation occurrence nor the identity of the whole.
 
 **What goes wrong if missed.** The readable relation layer and the constructive proof layer collapse into each other: either authors lose usable relation names, or reviewers cannot reconstruct why a structural edge should be trusted.
 
 **What this buys.** The alias-plus-grounding split: Working-Model relations stay canonical for communication, while CT2R-LOG carries the grounding channel and validation stance that E.24.UK can cite for structural U-kind admission.
 
-**Not this pattern when.** Not this pattern when the current question is how to construct the trace (`C.13`), which mereology relation kind is intended (`A.14`), whether a new holon exists (`B.2`), or whether a candidate name deserves durable U-kindhood (`E.24.UK`).
+**Not this pattern when.** Not this pattern when a direct relation claim is sufficient and no publication choice or current requirement elects this assurance profile. Also not this pattern when the current question is how to construct the trace (`C.13`), which mereology relation kind is intended (`A.14`), whether a new holon exists (`B.2`), or whether a candidate name deserves durable U-kindhood (`E.24.UK`).
 
 > **One‑line summary.**
-> CT2R-LOG treats the everyday **Working-Model relations**— **ut:ComponentOf**, **ut:MemberOf**, **ut:PortionOf**, **ut:AspectOf** —as the **public relation layer** for structure, while linking each published structural claim to a **construction-trace episteme** and a declared `tv:validationMode`. Authors keep using a short list of relations; reviewers can inspect the direct facts, construction rule, and identity conditions reported by the trace without treating that account as their cause.
+> CT2R-LOG treats the everyday **Working-Model relations**— **ut:ComponentOf**, **ut:MemberOf**, **ut:PortionOf**, **ut:AspectOf** —as the **public relation layer** for structure. When this assurance profile is elected, each covered structural claim also links to a **construction-trace episteme** and declares `tv:validationMode`. Authors keep using a short list of relations; reviewers can inspect the direct facts, construction rule, and identity conditions reported by the trace without treating that account as their cause.
 
 ### B.3.5:1 - Intent
 
@@ -22,8 +22,8 @@
 **What you get (manager/engineer view).**
  The same relations you already know (e.g., **ComponentOf**) remain the **public relation vocabulary**.
 
-**What changes (auditor/ontologist view).**
-* Each published edge carries two additional commitments:
+**What changes when the profile is elected (auditor/ontologist view).**
+* Each covered published edge carries two additional commitments:
 
   1. **`tv:groundedBy`** → points to a **reconstructible trace** (e.g., `Γ_m.sum`) whenever the edge is *structural*.
   2. **`validationMode ∈ {axiomatic, inferential, postulate}`** → declares how the author justifies the assertion.
@@ -38,7 +38,7 @@ B.3.5 exists where a readable Working-Model relation must remain usable by pract
 
 Declared sub-relations of `ut:PartOf` (e.g., **ComponentOf**, **MemberOf**) are easy to use but **not self-justifying**: their declaration alone does not show which exact participants and direct relation occurrences obtain, which construction rule applies, or which identity or reidentification rule governs the whole. Conversely, exposing construction traces everywhere makes the graph unreadable to non-specialists.
 
-**We need**: a stable **public relation layer** for relations *and* a mandatory, **reconstructible** **grounding channel**—plus a visible **validation intent** that downstream assurance can reason about.
+**We need**: a stable **public relation layer** for relations and, where this profile is elected, a required, **reconstructible** **grounding channel** plus a visible **validation intent** that downstream assurance can reason about. The direct relation layer does not depend on electing the profile.
 
 ### B.3.5:3.1 - Forces
 
@@ -54,13 +54,13 @@ CT2R‑LOG introduces a **two‑link discipline** around each canonical edge:
    **Working-Model relations** (e.g., `ut:ComponentOf`) are the public names for their exact direct relation principles. **`tv:AliasOf`** may point from the public relation kind to that principle for comparison and reuse; the alias defines neither an occurrence nor a whole.
 
 2. **Grounding link (evidence‑level).**
-   Each **edge instance** carries **`tv:groundedBy`**:
+   Each **edge instance covered by this elected profile** carries **`tv:groundedBy`**:
 
-   * **MANDATORY** for **all published structural edges** (sub-properties of `ut:StructPartOf`): the target is one current C.2.1 construction-trace episteme in the `sum`, `set`, or `slice` form. It names the exact participants, direct relation occurrences, applicable construction rule, and identity or reidentification conditions already grounded under their direct patterns. **Set** `validationMode=axiomatic`; **`postulate` SHALL NOT be used for structural edges**. Neither the link nor the mode makes those facts obtain.
+   * **REQUIRED** for each **published structural edge covered by the profile** (a sub-property of `ut:StructPartOf`): the target is one current C.2.1 construction-trace episteme in the `sum`, `set`, or `slice` form. It names the exact participants, direct relation occurrences, applicable construction rule, and identity or reidentification conditions already grounded under their direct patterns. **Set** `validationMode=axiomatic`; **`postulate` SHALL NOT be used for a structural edge within this profile**. Neither the link nor the mode makes those facts obtain.
    * **Optional** for **epistemic edges** (e.g., `ConstituentOf`, `RepresentationOf`): if no `Γ_m` trace is appropriate, attach an **evidence object** whose admissibility is governed by the declared **`validationMode ∈ {inferential, postulate}`** (assurance rules).
 
 2. **Validation flag (author intent).**
-   Every declared edge or aggregation rule carries **`tv:validationMode`** with one of:
+   Every edge or aggregation rule covered by this profile carries **`tv:validationMode`** with one of:
    * **`postulate`** — pragmatic working claim backed by observations;
    * **`inferential`** — reasoned consequence (proof outline);
    * **`axiomatic`** — the author declares that one inspectable construction account is the assurance basis for the assertion. This is an assurance posture, not a species of world-side relation and not an identity or timelessness guarantee.
@@ -104,13 +104,13 @@ When an inadequate working account requires general diagnostic recovery of the e
   `tv:AliasOf` links a **public relation type** to the exact direct relation principle whose reading it carries (for example, `ComponentOf` points to the direct structural-component principle). The alias supports comparison; it neither defines an occurrence nor says that a `sum` expression produced the relation.
 
 * **Grounding (per‑edge).**
- `tv:groundedBy` on a published structural relation assertion **MUST** point to one current C.2.1 construction-trace episteme in the `sum`, `set`, or `slice` form (**set** `validationMode=axiomatic`). For epistemic assertions it **MAY** point to an evidence object or a logical proof under `validationMode ∈ {inferential, postulate}`. The target supports replay of the assertion's basis; it creates neither the direct relation occurrence nor whole identity.
+ When this profile is elected for a published structural relation assertion, `tv:groundedBy` **MUST** point to one current C.2.1 construction-trace episteme in the `sum`, `set`, or `slice` form (**set** `validationMode=axiomatic`). For epistemic assertions covered by the profile it **MAY** point to an evidence object or a logical proof under `validationMode ∈ {inferential, postulate}`. The target supports replay of the assertion's basis; it creates neither the direct relation occurrence nor whole identity.
 
 * **Trace family.**
   `Γ_m.sum`, `Γ_m.set`, and `Γ_m.slice` are the only C.13 narrative forms used for structural grounding accounts here. Their claim content reports assembly, collection, or aspect facts already governed elsewhere; no temporal or workflow form is added.
 
 * **Validation flag.**
- `tv:validationMode ∈ {postulate, inferential, axiomatic}` is **required** on every declared edge or aggregation rule; **for structural edges `postulate` is disallowed**.
+ `tv:validationMode ∈ {postulate, inferential, axiomatic}` is **required** on every edge or aggregation rule covered by this profile; **for structural edges in the profile `postulate` is disallowed**. A direct relation claim outside the profile has no B.3.5 field obligation.
 
 ### B.3.5:6 - Archetypal Grounding - Running example
 
@@ -134,16 +134,16 @@ Result: **one** visible relation for engineers, **two** assurance references for
 
 When you add or import a relation edge:
 
-1. **Pick a Working‑Model relation** (ComponentOf/MemberOf/…); avoid raw `ut:PartOf` unless you are drafting meta‑level axioms.
+1. **Pick a Working‑Model relation** (ComponentOf/MemberOf/…); avoid raw `ut:PartOf` unless you are drafting meta‑level axioms. If no current publication choice or requirement elects CT2R-LOG, publish that direct claim and stop.
 
-2. **Attach `tv:groundedBy`**:
+2. **When CT2R-LOG is elected, attach `tv:groundedBy`**:
 
-   * Structural? → **must** be a `Γ_m` trace ID.
+   * Structural and covered by the profile? → **must** be a `Γ_m` trace ID.
    * Epistemic? → `Γ_m` trace *or* evidence object.
-3. **Declare `tv:validationMode`** (**postulate** / **inferential** / **axiomatic**).
+3. **For a covered claim, declare `tv:validationMode`** (**postulate** / **inferential** / **axiomatic**).
 
 > **What managers see:** nothing new in the graph picture.
-> **What auditors get:** a reliable trail from every published edge back to a principled constructor or an evidence pack.
+> **What auditors get:** a reliable trail from every edge covered by the elected profile back to its inspectable construction or evidence account.
 
 ### B.3.5:8 - Compatibility & cross‑references
 
@@ -153,7 +153,7 @@ When you add or import a relation edge:
 
 ### B.3.5:9 - Rule‑set — CT2R‑LOG (conceptual, human‑first)
 
-**Intent (one line).** Make **Working-Model** relations the canonical relation vocabulary for authors, while providing a clean, purpose-selected bridge to assurance through aliasing and grounding semantics; the bridge is required for published structural assertions under this pattern.
+**Intent (one line).** Make **Working-Model** relations the canonical relation vocabulary for authors, while providing a clean, purpose-selected bridge to assurance through aliasing and grounding semantics; the bridge is required only for the published assertions covered by an elected B.3.5 profile or named current requirement.
 
 #### B.3.5:9.1 - Vocabulary and meanings in this pattern
 
@@ -184,13 +184,13 @@ When you add or import a relation edge:
 #### B.3.5:9.2 - Normative rules (MUST/SHALL clauses for thinking‑and‑writing)
 
 **S‑1 (Working-Model first).**
-Authors **SHALL** publish structural claims in the **Working-Model** form (`ut:*Of` relations). This is the canonical relation vocabulary for human readers and cross-disciplinary teams. Assurance accounts remain below that public layer; this pattern separately requires a trace link for published structural assertions.
+Authors **SHALL** state structural claims in the **Working-Model** form (`ut:*Of` relations). This is the canonical relation vocabulary for human readers and cross-disciplinary teams. Assurance accounts remain below that public layer. Electing this profile adds its trace and mode obligations to the covered assertions; it is not a precondition for direct relation use.
 
 **S‑2 (Alias declaration).**
 If a Working‑Model relation follows a known general principle, the author **SHOULD** declare `tv:AliasOf <Principle>`, thereby making the intended *use‑pattern* explicit for reviewers and future readers. (This improves comparability without introducing extra formality.)
 
 **S‑3 (Grounding by mode).**
-For every relation instance the author **MUST** set `validationMode` and follow the corresponding grounding stance:
+For every relation instance covered by an elected B.3.5 profile, the author **MUST** set `validationMode` and follow the corresponding grounding stance:
 
 * **S‑3.a `postulate`.** The author **MAY** omit `Γ_m` grounding; the relation stands as a pragmatic working claim within a stated scope. The author **SHOULD** supply brief empirical cues (where the claim tends to hold) to ease later validation. (Empirical Validation is tracked in B.3.)
 
@@ -198,10 +198,10 @@ For every relation instance the author **MUST** set `validationMode` and follow 
 
 * **S‑3.c `axiomatic`.** The author **SHALL** provide a constructive grounding account in one of the `Γ_m.sum | Γ_m.set | Γ_m.slice` forms and **SHALL** link the published assertion to its current C.2.1 trace episteme with `tv:groundedBy`. A competent peer must be able to recover the exact participants, direct relation occurrences, applicable construction rule, and identity or reidentification conditions without introducing new primitives. The account supports inspection; it creates none of those facts.
 
-* **S-3.d Structural constraint.** For **published structural assertions**, `tv:groundedBy → Γ_m.*` is **REQUIRED** and `postulate` **MUST NOT** be used. This is an assurance-publication requirement, not a rule that the trace or mode makes the direct relation obtain.
+* **S-3.d Structural constraint.** For **published structural assertions covered by this profile**, `tv:groundedBy → Γ_m.*` is **REQUIRED** and `postulate` **MUST NOT** be used. This is an assurance-publication requirement inside the elected profile, not a rule that the trace or mode makes the direct relation obtain.
 
 **S-4 (Relation-kind sense-making).**
-* For **structural** subtypes of `ut:StructPartOf` (Component/Portion/Aspect), a published assertion requires one linked construction account and cannot use `postulate` (see S-3.d). The direct relation pattern still governs whether the occurrence obtains and how it is identified.
+* For **structural** subtypes of `ut:StructPartOf` (Component/Portion/Aspect), an assertion covered by the elected profile requires one linked construction account and cannot use `postulate` (see S-3.d). A direct assertion outside the profile remains usable without those assurance fields. In either case, the direct relation pattern governs whether the occurrence obtains and how it is identified.
 
 * For **epistemic/constitutive** links (e.g., representation, usage), constructive grounding is **OPTIONAL** in all stances; authors prefer *inferential* or *postulate* with empirical cues.
 
@@ -231,7 +231,7 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 #### B.3.5:9.4 - Author’s working moves (micro‑playbook, notation‑free)
 
 **M‑1.** State the relation in **Working‑Model** form (e.g., “Impeller `ComponentOf` Pump”).
-**M‑2.** Pick `validationMode`:
+**M‑2.** If a publication choice or named current requirement elects this profile, pick `validationMode`; otherwise keep the direct relation claim and stop:
 
 * For a **non-structural** claim that is still exploratory → choose **postulate**; add one-sentence scope and the empirical cues that would challenge it.
 * If you’re justifying from known statements → choose **inferential**; list the 2–4 steps in plain language.
@@ -248,7 +248,7 @@ The purpose of this section is to make **typical cognitive slips** visible and n
 | Bias (name)                     | Symptom in the model                                                                                                          | Cognitive counter‑move (conceptual only)                                                                                                                                                                          | Where to check                                                       |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **Formalism capture** | A trace, constructor expression, or `validationMode` is treated as the source of the direct relation or whole identity. | Recover the exact participants, direct relation occurrences, construction rule, and identity or reidentification rule first. Treat the trace as a current C.2.1 account and the mode as the author's assurance posture. | CC‑CT2R‑1, CC‑CT2R‑2, CC‑CT2R‑3; C.13 trace separation. |
-| **Canonical inversion**         | Demanding a constructive grounding for **epistemic** claims by default. *(For **structural** claims, Constructive grounding is mandatory; epistemic remains progressive.)*                    | Keep **progressive assurance**: declare `validationMode ∈ {postulate, inferential, axiomatic}`; reserve *axiomatic* with **Constructive** grounding for structural; use **Logical/Mapping**/**Empirical** where appropriate. Express formality via **F** (C.2.3), not tiers. | CC-CT2R-2; B.3.3 relation-kind discipline & validation modes.         |
+| **Canonical inversion**         | Demanding B.3.5 fields before a direct relation can be used, or demanding constructive grounding for epistemic claims by default. | Keep **progressive assurance**: use the direct relation first. When B.3.5 is elected, declare `validationMode ∈ {postulate, inferential, axiomatic}`; reserve *axiomatic* with **Constructive** grounding for structural claims covered by the profile, and use **Logical/Mapping**/**Empirical** where appropriate. Express formality via **F** (C.2.3), not tiers. | CC-CT2R-2; B.3.3 relation-kind discipline & validation modes. |
 | **Order/time leakage**          | Encoding sequence or phase as part‑whole edges.                                                                               | Apply **Strict Distinction**: order/time belong to Γ\_method and Γ\_time, not to mereology or CT2R relations.                                                                                                       | B.3 “keep order/time in their own lanes”; cross‑ref Γ\_ctx/Γ\_time.  |
 | **Notation lock‑in**            | Letting a diagram or syntax define the meaning (“it’s true because the diagram says so”).                                     | Enforce **Notational Independence**: meaning is defined in prose/maths; renderings are illustrative only.                                                                                                         | Part E guard‑rail on notational independence.                        |
 | **Congruence blindness**        | Composing strong parts through weak mappings without acknowledging the fit penalty.                                           | Make **edge‑fit first‑class**: reason about Congruence Level (CL) on connections; penalise low fit conceptually.                                                                                                  | B.3 universal aggregation skeleton (Φ(CL)); anti‑patterns list.      |
@@ -264,8 +264,8 @@ The following obligations regulate **how to think and write** CT2R content. They
 | ID                                              | Requirement                                                                                                                                                                                                                                   | Purpose                                                                   |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **CC-CT2R-1 (Canonical-first).**                | A relation published for readers **SHALL** be stated in Working-Model terms (`ut:*Of`) as the canonical form; any constructive or logical justification is recorded as **grounding** (not as the definition).                                         | Preserve human-first canon and didactic primacy.                          |
-| **CC‑CT2R‑2 (Mode declaration).**               | For every declarative relation or rule, the author **SHALL** declare `tv:validationMode ∈ {postulate, inferential, axiomatic}` in prose (no silent defaults).                                                                                | Make assurance intent explicit and auditable by reading.                  |
-| **CC‑CT2R‑3 (Structural axiomatic grounding).** | A published structural assertion **SHALL** link to one current C.2.1 construction-trace episteme in a `sum`, `set`, or `slice` form. The account names independently grounded participants, direct relation occurrences, construction rule, and identity or reidentification conditions; it creates none of them. | Tie the declared axiomatic assurance posture to an inspectable account without making assurance apparatus a truth-maker. |
+| **CC‑CT2R‑2 (Mode declaration).**               | For every relation or rule covered by an elected B.3.5 profile, the author **SHALL** declare `tv:validationMode ∈ {postulate, inferential, axiomatic}` in prose. A direct relation outside the profile needs no B.3.5 mode. | Make elected assurance intent explicit without taxing ordinary direct use. |
+| **CC‑CT2R‑3 (Structural axiomatic grounding).** | A published structural assertion covered by the profile **SHALL** link to one current C.2.1 construction-trace episteme in a `sum`, `set`, or `slice` form. The account names independently grounded participants, direct relation occurrences, construction rule, and identity or reidentification conditions; it creates none of them. | Tie the elected axiomatic assurance posture to an inspectable account without making assurance apparatus a truth-maker. |
 | **CC‑CT2R‑4 (No order/time in parts).**         | Authors **SHALL NOT** encode order (`Serial/Parallel`) or phase/time as part‑whole relations; handle them via `Γ_method` / `Γ_time` when relevant to the claim.                                                                               | Maintain the structure/order/time firewall.                               |
 | **CC‑CT2R‑5 (Collection vs part).**             | Authors **SHALL** keep **MemberOf** (collections) distinct from **PartOf** (structure) and refrain from carrying reliability as if membership implied structural composition.                                                                 | Prevent category errors flagged in B.3 anti‑patterns.                     |
 | **CC‑CT2R‑6 (Fit is explicit).**                | Where mappings or alignments matter, the author **SHALL** reason about **fit** explicitly (Congruence Level, conceptually) and acknowledge that weak fit reduces the effective reliability of any composed claim.                             | Keep integration quality first‑class.                                     |
@@ -278,7 +278,7 @@ The following obligations regulate **how to think and write** CT2R content. They
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
 | Trace as relation or truth-maker | A `Gamma_m` trace is treated as the public relation, as proof that the relation obtains, or as the source of whole identity. | Keep the Working-Model relation canonical; recover the direct relation facts and reidentification rule independently; attach the trace only as their inspectable C.2.1 account. |
-| Unchecked relation label or mode | A familiar part-whole label or `axiomatic` flag is published as though either settled relation obtaining or identity. | State the direct relation claim, the author-declared mode, the linked construction account, and the direct identity or reidentification test; stop when any required world-side fact is missing. |
+| Unchecked relation label or mode | A familiar part-whole label or `axiomatic` flag is published as though either settled relation obtaining or identity. | State and test the direct relation claim first. When B.3.5 is elected, add the author-declared mode and linked construction account. Stop when any required world-side fact is missing. |
 | Order/time leakage | Assembly sequence, phase, or parallel work is encoded as a part-whole edge. | Keep order, method, and temporal claims adjacent to the structural edge; do not turn them into mereology. |
 | Assurance by notation | A diagram, graph display, or data format is treated as if it made the relation true. | Treat representations as publication forms; keep the relation claim, grounding relation, and validation mode explicit. |
 
@@ -286,7 +286,7 @@ The following obligations regulate **how to think and write** CT2R content. They
 
 **Benefits**
 
-* **Cognitive clarity for authors and readers.** Working-Model relations remain canonical while assurance accounts stay beneath them; published structural assertions carry the required account without exposing it as the working vocabulary. CT2R preserves a path to higher assurance while keeping order and time outside structure.
+* **Cognitive clarity for authors and readers.** Working-Model relations remain canonical while assurance accounts stay beneath them. Structural assertions covered by an elected profile carry the required account without exposing it as the working vocabulary; ordinary direct claims remain lightweight. CT2R preserves a path to higher assurance while keeping order and time outside structure.
 * **Progressive assurance without tooling commitments.** The *postulate → inferential → axiomatic* assurance-posture progression lets teams raise assurance deliberately, matching their context and risk, in line with B.3.3’s maturity logic.
 * **Explicit fit management.** Treating edge‑fit (CL) as a first‑class concern prevents silent over‑confidence: weak mappings visibly cap reliability of composed claims.
 * **Cleaner separation of concerns.** Distinguishing collections from compositions and keeping sequence/time in Γ\_method and Γ\_time prevents recurrent category errors and preserves Γ‑algebra reviewability.

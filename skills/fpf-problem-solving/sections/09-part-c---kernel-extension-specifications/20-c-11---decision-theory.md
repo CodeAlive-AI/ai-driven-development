@@ -66,32 +66,22 @@ Without one explicit place for choice calculus, search, candidate-pool policy, a
 ### C.11:4 - Solution
 #### C.11:4.1a - Causal-use hook for choice records
 
-When the admissible choice among an existing `OptionSet` depends on an effect claim, intervention claim, counterfactual comparison, causal policy claim, or off-policy causal evaluation, the `ChoiceResult` keeps the decision-theory question local and cites `C.28` for the causal-use question and support basis.
-
-Optional `ChoiceResult.causalUseSpec?`:
+When a choice depends on an effect, intervention, counterfactual, causal-policy, or off-policy claim, the `ChoiceResult` keeps the decision question local and cites the C.28 support result as one basis.
 
 ```text
-ChoiceResult.causalUseSpec? {
-  causalUseQuestionRef?: U.CausalUseQuestion
+ChoiceResult.causalUseSpec?:
+  causalUseQuestionRef?: CausalUseQuestionRef
   targetCausalityLadderRung: CausalityLadderRung
   causalUseClaimKind: CausalUseClaimKind
   causalActionPolicyClass?: CausalActionPolicyClass
-  causalEvidenceSupportBasis?: CausalEvidenceSupportBasis
-  causalIdentificationProfileRef?
-  counterfactualSamplingRealizabilityProfileRef?
+  causalSupportComponentRefs?: CausalSupportComponentRefs
   causalUseEvidenceDesignRef?
-  causalUseSupportRecordRef?: CausalUseSupportRecordRef
-  causalUseSupportVerdict?: CausalUseSupportVerdict
-  supportedUse: CausalUseSupportStatement
-  unsupportedUse: CausalUseUnsupportedStatement
-}
+  causalUseSupportResultRef?: CausalUseSupportResultRef
+  supportedUse
+  unsupportedUse
 ```
 
-The causal-use tail may be omitted only when the choice result does not reach `CausalUseActivation`: it is not decision-bearing on the causal claim, not publication-bearing, not assurance-bearing, and not reused as support for deployment, fairness, benchmark, or downstream selection. If causal wording changes the admissible choice result, the tail is present or the causal wording is downgraded.
-
-What changes in practice: a decision record that says "choose this because it improves outcome", "choose this because it would have prevented harm", or "choose this policy because replay shows it is better" must state whether the claim is observational association, interventional action/effect, or counterfactual comparison before the `ChoiceResult` is treated as supported.
-
-What this does not authorize: `C.11` does not identify causal effects, certify target-trial emulation, validate off-policy causal evaluation, or decide counterfactual sampling realizability; it emits one `ChoiceResult` and redirects the causal-use question to `C.28`.
+Omit the tail when causal support changes neither the comparison nor the chosen result. If causal wording changes the result, include the tail or downgrade the wording. A C.28 result does not choose, permit, or deploy an option; C.11 uses it with the other decision premises and may still select, defer, or abstain.
 
 #### C.11:4.1 - Primary EntityOfConcern and admissible choice result
 
@@ -590,7 +580,7 @@ The family map also remains plural: causal, success-first, active-inference, and
 | `CC-C11.12` | When one heavier dependence layer or neighboring family line is activated, the text **SHALL** state what limitation of the simpler comparison it repairs and what changes in the actual comparison once that line is in play. | Prevents branch-name citation from replacing use-time doctrine. |
 | `CC-C11.13` | The text **SHALL** make the closure rule explicit enough to justify why the lawful result is `choose now`, `reject current set`, `probe again`, or `reroute` rather than some softer holding-pattern output, and **SHALL** treat vaguer endings as unfinished rather than as lawful results. | Prevents the decision record from ending in one sophisticated but operationally empty result. |
 | `CC-C11.14` | The decision record **SHALL** make one minimal decision-record shape explicit: chooser, option set, comparison basis, one explicit `ChoiceRule`, probe decision value, and one emitted `ChoiceResult`; `choose now`, `reject current set`, `probe again`, and `reroute` outputs **SHALL** each state their mandatory fields explicitly enough to determine the lawful choice result without reopening surrounding rationale. | Keeps the pattern usable as one working decision record rather than one doctrinal memo. |
-| `CC-C11.15` | If a `ChoiceResult` is supported by a causal effect, counterfactual comparison, causal policy, or off-policy causal evaluation claim, it **SHALL** carry `ChoiceResult.causalUseSpec?` with `targetCausalityLadderRung`, `causalUseClaimKind: CausalUseClaimKind`, supported use and unsupported use, and the relevant `C.28` support refs. | Prevents decision-theory vocabulary from certifying causal-use support. |
+| `CC-C11.15` | If a `ChoiceResult` is supported by a causal effect, counterfactual comparison, causal policy, or off-policy causal evaluation claim, it **SHALL** carry `ChoiceResult.causalUseSpec?` with the target rung, claim kind, relevant support-component refs, support-result ref when consumed, supported use, and unsupported use. | Prevents decision-theory vocabulary from certifying causal-use support. |
 
 ### C.11:8 - Common Anti-Patterns and How to Avoid Them
 

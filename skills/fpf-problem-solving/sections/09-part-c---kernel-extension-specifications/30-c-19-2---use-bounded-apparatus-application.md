@@ -12,7 +12,7 @@ The first useful move is to name the practical use, result kind, claimed guarant
 
 **Not this pattern when.** If candidate material does not yet exist, use `C.18` to generate or reframe it. If the live question is a local choice over an existing option set, `C.11` is the pattern for that choice. If the real blocker is an ontology conflation, use `A.7.1`; if it is a material conflict among FPF premises, use `A.7.2`.
 
-The primary working reader is an engineer, method or model selector, or technical lead. That reader position is not a system-role kind or assignment. The pattern describes a Method; an admitted `U.System` performs the dated configuration and application `U.Work`. Name the assignment occurrence that covers the Work and its declared species. The occurrence's holder is the performing System, and F.6 states that the System performed the Work under that assignment. The problem-facing result remains with the pattern that defines or tests it.
+The primary working reader is an engineer, method or model selector, or technical lead. That reader position is not a system-role kind or assignment. This pattern is a `U.MethodDescription` episteme whose claims describe one admitted `U.Method`. An admitted `U.System` performs dated configuration and application `U.Work` using that Method. The complete A.15.1/F.6 basis, including a covering assignment occurrence and attribution, must obtain. Show its assignment identifier, species, participants, and attribution detail only when the present use relies on them, attribution is ambiguous, or the source wording must be repaired. The problem-facing result remains with the pattern that defines or tests it.
 
 ### C.19.2:1 - Problem frame
 
@@ -34,7 +34,7 @@ The failure is not merely excess documentation. It obscures who performs the wor
 | One current path vs live alternatives | Inventing rivals creates bureaucracy; ignoring genuine alternatives can lock in avoidable cost or loss. |
 | Local economy vs reuse | One-off work favors a small path; repeated work can amortize configuration and improve transfer. |
 | Direct kinds vs shared comparison | Unlike candidates must retain their kinds while being compared against one declared use and guarantee. |
-| Method guidance vs actual work | A method episteme can guide action but cannot configure or apply itself. |
+| Method guidance vs actual work | A practitioner can use a `U.MethodDescription` episteme as guidance; that episteme cannot configure or apply itself. |
 
 ### C.19.2:4 - Solution
 
@@ -44,11 +44,11 @@ Use this minimal lens before taking a branch:
 
 1. **Declared use:** the practical question, direct result kind, claimed guarantee, non-negotiable constraints, and horizon.
 2. **Selected or candidate direct-kind object:** the method description, model, ontology module, formal technique, or other governed object being considered.
-3. **Application method episteme:** this pattern's `U.MethodDescription`, which guides the work but does not perform it.
-4. **Performer and work:** an admitted `U.System` performs dated configuration and application `U.Work`. Name the assignment occurrence that covers the Work and its declared species; the occurrence's holder is that System, and F.6 states that the System performed the Work under the assignment.
+3. **Application MethodDescription:** this pattern's `U.MethodDescription` episteme and the admitted `U.Method` it describes. A practitioner uses its claims to guide the Work; neither the episteme nor the Method performs it.
+4. **Performer and work:** an admitted `U.System` performs dated configuration and application `U.Work` using the described Method. The complete A.15.1/F.6 assignment and attribution basis must obtain. In the short account, point to that basis and show assignment identity, species, participants, or attribution detail only when the present use relies on it, attribution is ambiguous, or source wording must be repaired.
 5. **Problem-facing result:** the domain, engineering, assurance, architecture, or other subject-pattern result inspected after the work.
 
-The intended reader may also be the person-system that performs the work, but reader position and performer relation remain different. A plan, checklist, method episteme, option row, or publication cannot occupy the performer position.
+The intended reader may also be the person-system that performs the Work, but reader position and performer relation remain different. A plan, checklist, `U.MethodDescription` episteme, described Method, option row, or publication cannot occupy the performer position.
 
 #### C.19.2:4.2 - Select the truthful application branch
 
@@ -98,10 +98,9 @@ A short branch presentation may show one-apparatus, candidate-generation, choose
 
 **Repeated audited handoffs.** A fleet has 400 maintenance handoffs each year. The required result is an audited maintenance-decision episteme with a fixed safety and interoperability guarantee. Candidate generation is complete: an ontology-backed method description and a lighter local decision method are eligible; a spreadsheet macro is excluded because it cannot preserve required relation-occurrence identity. `C.11` returns `choose now` for the ontology-backed method because recurrence amortizes configuration.
 
-An admitted maintenance-information System performs the planned application Work. `MaintenanceInformationApplicationAssignment-1` is an occurrence of declared species `MaintenanceInformationApplicationSystemRoleAssignment`; the occurrence's holder is that System, and F.6 states that the System performed the application Work under this assignment.
+An admitted maintenance-information System performs the dated configuration and application Work using the selected ontology-backed Method. The account cites its complete A.15.1/F.6 basis. Because the current question is whether the setup cost is repaid across the handoffs, the example does not expand the assignment identifier, species, participants, and attribution. Expand that basis only if a later claim relies on it or attribution becomes ambiguous.
 
-An admitted maintenance-decision System uses the selected ontology-backed Method in separate decision Work, with its own assignment occurrence, declared species, and F.6 attribution. Under `A.6.1`, application `MaintenanceDecisionApplication-1` of operation `DecideMaintenance`, declared by `MaintenanceDecisionMechanism-E1`, returns `AuditedMaintenanceDecision-1` under result declaration `DecisionResult`; no Work-to-result or production claim is made. If repair or audit cost does not fall after the declared sample, reopen the application.
-
+A separately admitted maintenance-decision System then performs decision Work using the selected Method, again with its complete A.15.1/F.6 basis available by reference. Under `A.6.1`, application `MaintenanceDecisionApplication-1` of operation `DecideMaintenance`, declared by `MaintenanceDecisionMechanism-E1`, returns `AuditedMaintenanceDecision-1` under result declaration `DecisionResult`; no Work-to-result or production claim is made. If repair or audit cost does not fall after the declared sample, reopen the apparatus application.
 **One-off naming repair.** A team already has the direct typed-relation method for one local, reversible naming decision. No rival is live and the current method has a credible small path, so no option set or choice result is created. The team performs the minimal wording and typing work and returns a scoped terminology decision. Recurrence, integration, a failed result, or a stronger guarantee may later open candidate generation and choice.
 
 **Non-use.** If the blocked result comes from missing telemetry while the method, state kinds, and action distinctions are already clear, return to measurement and evidence work. Apparatus selection cannot manufacture the missing observation.
@@ -121,7 +120,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | `CC-C19.2-3` | Candidate generation, local choice, planning, tool-call planning, dated work, and direct result retain their subject patterns. |
 | `CC-C19.2-4` | Every candidate retains its direct kind and satisfies one explicit eligibility predicate for the same use and guarantee. |
 | `CC-C19.2-5` | Any `C.11` result is exactly `choose now`, `reject current set`, `probe again`, or `reroute`. |
-| `CC-C19.2-6` | The intended-reader position, Method episteme, admitted performing `U.System`, assignment occurrence and its declared species, F.6 attribution, dated `U.Work`, and problem-facing result are distinct. The assignment holder is the performing System. A short projection may omit only an assignment identifier unused by later claims; the world-side assignment and attribution still obtain. |
+| `CC-C19.2-6` | The intended-reader position, `U.MethodDescription` episteme, described `U.Method`, admitted performing `U.System`, dated `U.Work`, and problem-facing result remain distinct. The complete A.15.1/F.6 assignment and attribution basis must obtain. A short projection may cite that basis without repeating assignment identity, species, participants, or attribution detail unless the receiving use relies on them, attribution is ambiguous, or source wording must be repaired. |
 | `CC-C19.2-7` | The first useful result and stop are practical, and every reopen condition changes a named next action. |
 | `CC-C19.2-8` | No generic apparatus U-kind, hidden scalar, or unadmitted CGUS is introduced. |
 
@@ -133,7 +132,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | Invent a rival to make the method look comparative. | Use the one-apparatus path until candidate or choice work is genuinely current. |
 | Call candidate generation a choice. | Use `C.18 for generation/reframing`; let `C.11` operate only on an existing eligible set. |
 | Treat `ChoiceResult` as a plan or result. | Keep selected object, plan, dated work, application note, and domain result separate. |
-| Let a Method description or reader position perform Work. | Name the admitted System and dated `U.Work`, the assignment occurrence and its declared species, and the F.6 attribution. |
+| Let a `U.MethodDescription` episteme, its described Method, a plan, option row, publication, or reader position perform Work. | State in ordinary language that an admitted System performs dated Work using the Method, and point to the complete A.15.1/F.6 basis. Expand assignment and attribution detail only when the present use needs it, attribution is ambiguous, or the source wording must be repaired. |
 | Rank heterogeneous candidates under one hidden “depth” score. | Preserve direct kinds and compare only declared use-bearing dimensions without hidden scalarization. |
 
 ### C.19.2:9 - Consequences

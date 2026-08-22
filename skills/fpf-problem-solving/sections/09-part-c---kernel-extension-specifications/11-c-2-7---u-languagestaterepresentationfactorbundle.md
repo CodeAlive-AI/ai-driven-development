@@ -91,7 +91,7 @@ This factorization fits current work on sparse distributed representations, hybr
 
 ### C.2.7:12 - Relations
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
-- Coordinates with: `C.2.6`, `A.16.0`, `A.16`, `A.16.1`, `B.4.1`, `B.5.2.0`, `F.9.1`.
+- Coordinates with: `C.2.6`, `A.16.0`, `A.16`, `A.16.1`, `B.4.1`, `B.5.2.0`, `F.9` for any Bridge and bounded-use claim, and `F.9.1` only for an optional stance note about that claim.
 - Constrains: language-state position publication and bridge loss notes around representation shifts.
 ### C.2.7:13 - Worked Examples and Factor Interaction Notes
 

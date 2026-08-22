@@ -71,7 +71,7 @@ The C.2.1 claim content, exact `EntityOfConcern`, and effective `U.ReferenceSche
 
 If someone claims empirical grounding, state the C.2.1 `EpistemeEmpiricalGroundingRelation`. If a proposed use depends on a test, write the tested claim, criterion, evidence path, and result under the evaluation, evidence, or assurance pattern that defines them. Do not add these as method-description fields or let a test change membership.
 
-An assertion or description episteme about one dated Work occurrence may cite `methodDescriptionRef` when its claim depends on that description edition. The holder `U.System` performs the Work under an obtaining `U.SystemRoleAssignment`; F.6 `performedUnderAssignment(W, RA)` attributes the Work to that assignment, and A.15.1 `enactsMethod(W, M)` relates it to the Method. The description itself neither performs Work nor is enacted.
+An assertion or description episteme about one dated Work occurrence may cite `methodDescriptionRef` when its claim depends on that description edition. An admitted `U.System` performs the Work. When an assignment is part of the claim, name one actual occurrence of a separately declared species under `U.SystemRoleAssignment`; an obtaining F.6 `performedUnderAssignment` relation attributes that Work to the assignment, and the A.15.1 `enactsMethod` relation relates it to the Method. The MethodDescription itself neither performs Work nor is enacted.
 
 #### A.3.2:4.2 - Representation-agnostic stance
 
@@ -111,7 +111,7 @@ Then inspect the claim concerns that matter for that named use:
 | Preconditions | Under which states, guards, invariants, participant conditions, or environmental conditions can the method be used? |
 | Intended effects | Which postconditions, intended effects, preserved conditions, and failure semantics are claimed for the method, without asserting an actual result? |
 | Bounds | Which latency, precision, cost, safety, reliability, uncertainty, or other local bounds constrain the method? |
-| Roles and capabilities | Which role kinds and capability thresholds matter for enactment? |
+| System-role kinds and capabilities | Which local system-role kinds and capability thresholds matter for enactment? |
 | Parameters | Which values may vary between work occurrences, over which ranges, and when are they bound? |
 | Evaluation conditions | Which criterion compares which concrete Work occurrence, referent, measurement, or result, and which pattern contains the defining content for that comparison? |
 | Internal composition | Which admitted methods are parts of one composite method, and what organization constructs that whole? |
@@ -130,7 +130,7 @@ When a method description is used to prepare or enact work, keep the chain expli
 
 1. C.2.1 identifies one episteme through its claim content, exact `EntityOfConcern`, and effective `U.ReferenceScheme`; A.3.2 judges that same episteme to be `U.MethodDescription`. Plainly saying that the method description describes the method is shorthand for this constitution and membership judgment, not another binary relation occurrence.
 2. `U.WorkPlan` may cite that episteme when preparing dated work.
-3. The holder `U.System` performs dated Work under an obtaining `U.SystemRoleAssignment`; F.6 `performedUnderAssignment(W, RA)` attributes it to the assignment, and A.15.1 `enactsMethod(W, M)` relates it to the Method. A separate assertion cites `methodDescriptionRef` only when its claim depends on that edition.
+3. An admitted `U.System` performs dated Work. When an assignment is current, name one actual occurrence of a separately declared species under `U.SystemRoleAssignment`; an obtaining F.6 `performedUnderAssignment` relation attributes the Work to that occurrence, and the A.15.1 `enactsMethod` relation relates the Work to the Method. A separate assertion cites `methodDescriptionRef` only when its claim depends on that edition.
 4. The word *result* is only a cue. Ask which claim is being made: an A.6.1 application returned a value, a referent changed under A.3.4, Work produced something under A.15.PROD, or a measurement, evaluation, delivery, or acceptance occurred. If the use needs a Work-to-result relation and no exact predicate is defined for it, keep Work and result separate and state `missing-predicate[work-to-result]`. A log, trace, measurement, or result episteme supports another claim only through its evidence relation.
 
 #### A.3.2:4.5 - Method, mechanism, and formal-substrate boundary
@@ -145,10 +145,10 @@ Use these claim checks instead of forcing distinct claims into one generic relat
 * A **method claim** states the reusable way of doing, its participant meanings, applicability, conditions, intended result or preserved condition, and bounds.
 * A **formal-substrate claim** concerns the selected formal object, structure, invariant, or mathematical declaration used for reasoning.
 * A **mechanism-declaration claim** concerns the law-governed operation family, direct subject and range fields, operation algebra, law set, admissibility predicates, and applicability. Transport, audit, realization, evaluation, and evidence-use relations remain separately governed neighboring claims.
-* A **work claim** concerns one dated occurrence: the holder system that performs it, the covering assignment and F.6 attribution, enacted method, temporal extent, and containing system. Add participant, resource, or work-to-referent claims only through relations that actually obtain; otherwise return the corresponding missing-governor result.
+* A **work claim** concerns one dated occurrence: the System that performs it, any separately declared assignment species and actual assignment occurrence used by the claim, the obtaining F.6 attribution when asserted, the enacted Method, temporal extent, and containing System. Add participant, resource, or work-to-referent claims only through relations that actually obtain; otherwise return the corresponding missing-governor result.
 
 Connect these claims only through an admitted relation whose predicate and participants are present. If no pattern or declaration defines the needed relation, keep the objects separate rather than inferring dual typing or turning a method description into Work.
-Example: a scheduling-method episteme can meet the membership rule while a MILP file represents some of its claims. Another episteme may describe the mathematical formulation; a selector mechanism may declare operations over candidate methods; a dated solver run is Work; and an issued production-schedule episteme is a separate result. Use that result as evidence only through a current A.10 path and its bounded disposition. Without that path, keep the result available but do not rely on it as evidence for another claim.
+Example: a `U.MethodDescription` episteme for a scheduling Method can meet the membership rule while a MILP file represents some of its claims. Another episteme may describe the mathematical formulation; a selector mechanism may declare operations over candidate Methods; a dated solver run is Work; and an issued production-schedule episteme is a separate result. Use that result as evidence only through a current A.10 path and its bounded disposition. Without that path, keep the result available but do not rely on it as evidence for another claim.
 
 #### A.3.2:4.6 - Constructor and process-theory note
 
@@ -190,7 +190,7 @@ Across the slices below, recognize the claim-bearing episteme before examining h
 
 #### A.3.2:5.1 - Industrial procedure
 
-A procedure episteme about `EtchAl2O3@FabA` qualifies when its claims state how the etching method is done: gas-feed participant meanings, temperature bounds, chamber preconditions, intended etch profile, failure conditions, operator role kind, calibration capability threshold, or admitted parameter ranges.
+A procedure episteme about `EtchAl2O3@FabA` qualifies when its claims state how the etching Method is done: gas-feed participant meanings, temperature bounds, chamber preconditions, intended etch profile, failure conditions, operator system-role kind, calibration capability threshold, or admitted parameter ranges.
 
 A PDF publication form may express one edition of those claims, and a PLC ladder representation may correspond to some of them. Their visible forms do not establish membership. The scheduled maintenance-window preparation is a `U.WorkPlan`; tool run `W-143` is Work. A metrology result supports another claim only through the evidence relation for that claim.
 
@@ -200,7 +200,7 @@ A PDF publication form may express one edition of those claims, and a PLC ladder
 
 #### A.3.2:5.2 - Optimization model
 
-A scheduling-method episteme qualifies when its exact `EntityOfConcern` is `JSScheduleV4@Plant2026` and its claims state how a production schedule is produced or evaluated. A MILP representation and an explicitly recovered solver-configuration representation can stand in declared correspondence to those claims.
+A `U.MethodDescription` episteme for the scheduling Method qualifies when its exact `EntityOfConcern` is `JSScheduleV4@Plant2026` and its claims state how a production schedule is produced or evaluated. A MILP representation and an explicitly recovered solver-configuration representation can stand in declared correspondence to those claims.
 
 A separate formal-substrate episteme can make claims about variables, constraints, objective, admissible solution set, or invariants. A publication form expressing that episteme may be borne by the same presentation carrier, but the carrier does not make the claims or establish their truth. A timestamped solver run is work. A selector mechanism, if declared, is governed by `A.6.1` and `E.20`. Solver search order does not by itself state the project work sequence.
 
@@ -212,7 +212,7 @@ A concrete proof-checking session is work. Claims about a formal substrate, a th
 
 #### A.3.2:5.4 - Clinical guideline
 
-A guideline episteme qualifies when its exact `EntityOfConcern` is `AcuteAppendicitisTriage@HospitalContext` and its claims state the triage method through patient-information and resource participant meanings, exclusions, decision criteria, relevant role kinds and capabilities, intended effects, or failure response. A publication form expresses one selected edition, and a publication occurrence can make that edition available; approval status remains a separate claim.
+A guideline episteme qualifies when its exact `EntityOfConcern` is `AcuteAppendicitisTriage@HospitalContext` and its claims state the triage Method through patient-information and resource participant meanings, exclusions, decision criteria, relevant local system-role kinds and capabilities, intended effects, or failure response. A publication form expresses one selected edition, and a publication occurrence can make that edition available; approval status remains a separate claim.
 
 Patient-specific dated enactment is a Work individual admitted under `U.Work`. If a causal claim relies on a triage disposition, diagnostic finding, or measurement result, name that premise and apply `C.28`. Merely using the guideline during Work establishes neither a causal effect nor a causal-use result.
 
@@ -243,7 +243,7 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 
 **CC-A3.2-3 (No automatic trigger repair).** Wording such as `algorithm`, `program`, `proof`, `solver`, `workflow`, `process`, `procedure`, `recipe`, or `model` is only a cue. Classify the episteme as `U.MethodDescription` only after its claim and admitted Method pass CC-A3.2-1 and CC-A3.2-2.
 
-**CC-A3.2-4 (Description not work).** Executable-looking material is not a Work occurrence. A program run, proof-checking session, solver run, lab run, or clinical application is Work only after A.15.1 identifies the world-side occurrence, holder system, covering assignment and F.6 attribution, enacted Method, temporal extent, and containing system. Any participant, resource-use, or work-to-referent claim needs its own admitted relation; if none exists, return the corresponding missing-governor result.
+**CC-A3.2-4 (Description not work).** Executable-looking material is not a Work occurrence. A program run, proof-checking session, solver run, lab run, or clinical application is Work only after A.15.1 identifies the world-side occurrence, performing System, any separately declared assignment species and actual assignment occurrence used by the claim, obtaining F.6 attribution, enacted Method, temporal extent, and containing System. Any participant, resource-use, or work-to-referent claim needs its own admitted relation; if none exists, return the corresponding missing-governor result.
 
 **CC-A3.2-5 (Description not plan or authority).** A method description is not a work plan, gate decision, permission, approval, external-rule authorization, or evidence relation. Those claims may cite the description but require their own subject patterns.
 
@@ -251,7 +251,7 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 
 **CC-A3.2-7 (Description not formal substrate).** A method description does not close a formal-substrate or mathematical-lens claim. If variables, equations, invariants, structure, substrate, or mathematical payoff are current, use `A.6.0`, `C.29`, or the direct mathematical pattern.
 
-**CC-A3.2-8 (No people or calendars inside the description claim).** A method description may state role kinds and capability thresholds that bound admissible enactment. Named people, dates, schedules, launch values, and work witnesses belong to work planning, role assignment, or work occurrence claims.
+**CC-A3.2-8 (No people or calendars inside the description claim).** A method description may state local system-role kinds and capability thresholds that bound admissible enactment. A claim that a particular System belongs to one of those kinds is a separate System-classification judgment. Named people or Systems, dates, schedules, launch values, assignment species and obtaining assignment occurrences, F.6 attributions, and Work witnesses belong to their planning, classification, assignment, or Work patterns.
 
 **CC-A3.2-9 (Parameters and use time).** A method description may state parameter meanings and ranges. A `U.WorkPlan` names planned values against the declaration that gives them meaning. An actual participant or operation value requires an obtaining subject relation or A.6.1 application binding; otherwise keep it planned and return `missing-governor[actual-use]`.
 
@@ -319,7 +319,7 @@ Refresh this pattern when current work on process theory, effect systems, execut
 ### A.3.2:12 - Relations
 
 * **Builds on:** `C.2.1` for the identity, grounding, and edition relations of the same claim-bearing episteme; `A.3.1` for the exact `U.Method`; and `E.24.UK` for admission of the dependent U-kind.
-* **Coordinates with:** `A.3.1` and `B.1.5` for actual method parts, method identity, and composite-method organization; `A.22` for an independently selected structure among several methods; `A.1.1` only when an independently selected `BoundedModelUseStructure` changes the proposed use; `F.9` only for cross-context `SchemeSenseCell` correspondence; `C.2.1` for the separate claim that one obtaining Bridge suits one bounded use; `A.10` for ordinary evidence reliance on that claim and `B.3` only for the assurance or material-threshold branch; `C.29` for representation correspondence; `E.24.PUB` for publication occurrence and form; `A.15.2 U.WorkPlan`; `A.15.1 U.Work`; `A.2` and `A.2.1` for role and role-assignment claims; `A.2.2` for capability thresholds; `C.28` for causal-use claims.
+* **Coordinates with:** `A.3.1` and `B.1.5` for actual Method parts, Method identity, and composite-Method organization; `A.22` for an independently selected structure among several Methods; `A.1.1` only when an independently selected `BoundedModelUseStructure` changes the proposed use; `F.9` only for cross-context `SchemeSenseCell` correspondence; `C.2.1` for the separate claim that one obtaining Bridge suits one bounded use; `A.10` for ordinary evidence reliance on that claim and `B.3` only for the assurance or material-threshold branch; `C.29` for representation correspondence; `E.24.PUB` for publication occurrence and form; `A.15.2` for `U.WorkPlan`; `A.15.1` for `U.Work`; `A.2` for local system-role kinds and System-classification judgments; `A.2.1` for assignment species and obtaining assignment occurrences; F.6 for Work–assignment attribution; `A.2.2` for capability thresholds; and `C.28` for causal-use claims.
 * **Separates from:** `A.6.0` formal-substrate declarations; `C.29` mathematical-lens use; `A.6.1 U.Mechanism`; `E.20` mechanism-meaning introduction and revision.
 * **Uses for precision restoration:** `E.10`, `E.10.ARCH`, `F.18`, and `C.2.P.DR` when source wording leaves unclear what claim is made, what object it concerns, or whether a visible route is merely representational.
 

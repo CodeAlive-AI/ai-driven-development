@@ -24,7 +24,7 @@ Typical working moments include these:
 
 **First useful result.** Write the readable direct relation or `U.SubkindOf` claim needed by the receiving use. Recover its exact predicate. Stop there unless another claim needs one relation occurrence as an identifiable object or needs several obtaining relations selected into one structure.
 
-**Primary EntityOfConcern.** For one direct question, the EntityOfConcern is the exact relation occurrence or exact `C.3.1 U.SubkindOf` occurrence. When several such occurrences must be selected together, it is one `SystemRoleKindRelationStructure`: a dependent `U.Structure` whose substrate is an exact finite set of local system-role kinds and whose selected organization consists only of exact obtaining relations among those kinds.
+**Primary EntityOfConcern.** For one direct question, the EntityOfConcern is the exact relation occurrence or exact `C.3.1 U.SubkindOf` occurrence. When several such occurrences must be selected together, it is one `SystemRoleKindRelationStructure`: a dependent `U.Structure` selected from exact local system-role-kind constituents and exact obtaining relations under the exact applied constraints and one named selection-use frame.
 
 The structure contains neither holder systems nor system-role-assignment occurrences. A graph, taxonomy table, policy file, or organization chart may describe it but does not become the structure or any selected relation by form.
 
@@ -79,14 +79,18 @@ Build a structure only when several exact relation occurrences must be selected 
 ```text
 SystemRoleKindRelationStructure : U.Structure
   systemRoleKindSubstrate:
-    exact finite set of context-local system-role kinds, by value
+    exact finite set of independently identified context-local system-role kinds, by value
   selectedSystemRoleKindRelationOccurrenceRefs:
     finite set of references to exact obtaining relation occurrences
-  admissibleUse:
-  nonAdmissibleUse:
+  appliedConstraintClaimRefs:
+    exact constraint claims applied in this selection; an empty set is stated explicitly
+  namedSelectionUseFrame:
+    question:
+    admissibleAction:
+    stopOrNonAdmissibleOverread:
 ```
 
-The structure's identity is the exact system-role-kind substrate plus the exact identities of its selected obtaining relations. A changed rendering, identifier, publication, table, or graph changes no structure. A change that changes one selected `C.3.1 U.SubkindOf` occurrence or another selected relation does change the structure.
+The structure specializes A.22's four-part identity: the exact system-role-kind constituents, the exact selected obtaining relation occurrences, the exact constraint claims applied, and one named selection-use frame stating the question, admissible action, and stop or non-admissible overread. A changed rendering, identifier, selecting Work, publication, table, or graph changes no structure while all four values remain unchanged. Replacing a constituent, selected relation occurrence, applied constraint, or use frame identifies another structure. Without a required constraint or named frame, the material is still an arrangement or description rather than an admitted `SystemRoleKindRelationStructure`.
 
 #### A.2.7:4.1 - Direct Relation and Declaration Discipline
 
@@ -206,7 +210,7 @@ An affirmative assertion or occurrence description may state the known `systemRo
 
 For `U.SubkindOf`, use C.3.1's own obtaining and identity law, including its exact effective-reference-scheme edition. Do not replace it with the generic A.2.7 interval rule.
 
-`SystemRoleKindRelationStructure` identity follows the exact substrate and selected relation identities. A scheme change that changes one selected relation changes the structure. No blanket scheme-insensitive continuity is asserted.
+`SystemRoleKindRelationStructure` identity follows all four A.22 discriminators: exact kind constituents, exact selected relation occurrences, exact applied constraint claims, and the named selection-use frame. A scheme change that changes a constituent, selected relation, applied constraint, or use frame changes the structure; selecting System, Method, Work, result episteme, and publication remain outside identity. No blanket scheme-insensitive continuity is asserted.
 
 #### A.2.7:4.7 - Assertion and Receiving Check
 
@@ -258,7 +262,7 @@ A graph, table, matrix, algebra, embedding, policy file, taxonomy, or organizati
 
 Reference an independently selected `BoundedModelUseStructure` only when interpretation depends on that model-use organization. Keep it with the receiving assertion or use unless one direct relation predicate truly depends on its exact edition; only then does that edition enter the predicate's semantic basis. It never becomes a generic participant merely for context.
 
-When a comparison, translation, or reuse crosses schemes, first recover the exact F.17 sense cells and exact obtaining F.9 Bridge. Then state a separate C.2.1 bounded-use assertion naming direction, correspondence rule, tolerated loss, polarity, use, and effective scheme. Below B.3's material-reliance threshold and with no assurance claim, use A.10 and require the exact current evidence-provenance relation and a passing reliance disposition for that same use. When an assurance claim is made or the threshold is met, B.3 requires a current positive assurance claim carrying that use and a sufficient reliance-safety assurance record; otherwise narrow, reject, abstain from, or block the use. Neither branch supplies authorization.
+When a comparison, translation, or reuse crosses schemes, first recover the exact F.17 sense cells and obtaining F.9 Bridge. Then state a separate C.2.1 bounded-use assertion naming direction, correspondence rule, tolerated loss, polarity, use, and effective scheme. Ordinary reliance requires the current A.10 evidence-provenance relation and a passing disposition for that use. Use B.3 only when an actual named assurance claim is current; require its result for the same bounded assurance use. Neither branch supplies authorization.
 
 A Bridge, profile, or card alone establishes neither bounded-use suitability nor an A.2.7 relation, assignment, authorization, receiving-check outcome, or performed Work. A local relation that obtains keeps the participant set and identity declared here.
 
@@ -271,7 +275,7 @@ For pump pressure-test Work, an assignment to SeniorHydraulicsTechnicianSystemRo
 may satisfy the condition written for HydraulicsTechnicianSystemRole.
 ```
 
-Add an exact direct-species `RelationSignature` when reusable participant typing matters. Individuate an occurrence only when another claim depends on its identity. Assign a stable reference only when another episteme needs it. Build a `SystemRoleKindRelationStructure` only when several selected relations must be used together. Completeness is not a reason to materialize every layer.
+Add an exact direct-species `RelationSignature` when reusable participant typing matters. Individuate an occurrence only when another claim depends on its identity. Assign a stable reference only when another episteme needs it. Build a `SystemRoleKindRelationStructure` only when several selected relations must be used together and all four A.22 discriminators are recoverable. Completeness is not a reason to materialize every layer.
 
 ### A.2.7:5 - Worked Slices and Archetypal Grounding
 
@@ -404,7 +408,7 @@ Vasya may separately hold assignments to `RoboticsEngineerSystemRole` and `Music
 
 | Check | Question |
 |---|---|
-| `CC-A2.7-01` | Is the current object one exact relation among system-role kinds, one `C.3.1 U.SubkindOf` occurrence, or one dependent `SystemRoleKindRelationStructure` selecting exact occurrences? |
+| `CC-A2.7-01` | Is the current object one exact relation among system-role kinds, one `C.3.1 U.SubkindOf` occurrence, or one dependent `SystemRoleKindRelationStructure` whose exact kind constituents, selected obtaining relation occurrences, applied constraint claims, and named selection-use frame are all recoverable? |
 | `CC-A2.7-02` | Are all participants exact context-local system-role kinds rather than systems, assignments, labels, taxonomy rows, or scheme values? |
 | `CC-A2.7-03` | Does each direct context-local species declare exact SlotSpec ValueKinds and one by-value predicate? |
 | `CC-A2.7-04` | Does the predicate state the actual receiving, incompatibility, allocation, or residual-restriction rule, applicability, and only meaning-changing semantic basis? |
@@ -435,7 +439,7 @@ Vasya may separately hold assignments to `RoboticsEngineerSystemRole` and `Music
 | Taxonomy or scheme made a permanent participant | Interpretation support is turned into world-side relation identity even when meaning does not change. | Keep only kind participants and predicate; include an edition in semantic basis only when the rule depends on it. |
 | Positive assertion reference used to create an occurrence | A reference and interval appear before predicate truth and individuation. | Establish truth, apply the identity rule when needed, then designate the occurrence. |
 | Structure produces a decision | A non-agentive organization is made to act. | Name the system, Method, checking Work, and outcome pattern. |
-| Graph treated as the relation structure | Representation identity replaces selected relation identity. | Name the exact substrate and selected occurrences; use C.29 for preserved and lost structure. |
+| Graph treated as the relation structure | Representation identity replaces selected relation identity. | Recover the exact kind constituents, selected obtaining occurrences, applied constraints, and named selection-use frame; use C.29 for the graph and its preserved and lost structure. |
 | Bridge used as substitution licence | Correspondence is overread as suitability, assignment, authorization, or outcome. | Keep Bridge, bounded use, reliance, local relation, and receiving Work separate. |
 | Evaluation window declared as a participant | The receiver's target interval is confused with the world-side relation's derived extent. | Remove the temporal SlotSpec; keep `systemRoleKindRelationExtent` in an affirmative assertion or occurrence description and the target window in the receiving assertion or check. |
 

@@ -86,7 +86,7 @@ Plain `situation`, `incident`, `current configuration`, `operating <system>`, an
 | Words such as `relation`, `slot`, `field`, `interface`, bare *role*, `function`, or `endpoint` still leave the object or claim unclear. | Use E.10.ROLE first for bare *role*; continue to A.6.RSIR when it denotes relation participation, a declaration place, an interface place, or a representation position. Use A.6.F for function wording and A.6.P or the pattern for the recovered relation. Then stop at that pattern. | An engineering word creates no subject kind, relation kind, participant, declaration, system-role kind, or assignment. |
 | The subject and governing claim are already clear, but a word or phrase compresses them. | Repair the bounded wording through `E.10`, `E.10.ARCH`, or the applicable precision-restoration pattern. | A clearer name does not create a new subject, relation, or kind. |
 | An already governed value needs a stable reusable name rather than a repaired sentence. | Use `F.18` after recovering the value, its kind and subject pattern, its effective reference scheme, and the local sense to be named. For relation-facing wording, settle any missing direct relation through `A.6.RCD` first. | A label or `NameCard` neither admits the value or a public kind nor makes a relation obtain. |
-| Several named dependent patterns genuinely need one reusable subject identity and the same minimal set of direct relation rules. | Open `E.24` and apply its existing-governor, identity, relation, dependent-use, and non-duplication checks. | E.24.CD establishes only that `E.24` is the applicable next pattern. `E.24` decides whether a durable ontic is admitted. |
+| One blocked use concerns an independently recoverable candidate, proposal, or source construct; named consumers show concrete cross-pattern duplication or disagreement pressure; and one obvious direct route does not close it. | Open `E.24` and transfer only those detection facts. Let E.24 test identity, the minimal relation set, dependent reliance, non-duplication, and non-use. | E.24.CD neither requires those settlement results nor admits or rejects the ontic. A still-missing identity or relation rule can reach E.24's unresolved branch. |
 | The subject, needed claim, or subject pattern cannot yet be recovered. | Keep the inquiry attached to the source expression or blocked work and name what is missing. | Do not hide non-settlement inside a candidate record, score, provisional `U.*` name, or “future ontology” list. |
 
 When a durable public `U.*` kind is also proposed, `E.24.UK` returns its separate admission result. If the ontic and kind are both new, use the atomic co-decision already defined by E.24 and E.24.UK; neither result proves the other.
@@ -104,21 +104,19 @@ For a project card, row, schema, or diagram, inspect only what the current work 
 
 A field label is not a `SlotSpec`. `A.6.5` governs the declaration: a reusable `SlotSpec` appears only inside a `RelationSignature` for an already recovered direct relation and only when a named later use needs that declaration. A row value is not an actual relation participant merely because it occupies a column.
 
-#### E.24.CD:4.3 - Apply E.24 only when several patterns need the same subject rules
+#### E.24.CD:4.3 - Open E.24 when cross-pattern pressure is concrete
 
-Applying E.24 is warranted only when all of these are recoverable:
+Open E.24 when these detection facts are recoverable:
 
-- one primary governed subject kind;
-- its direct identity, constitution, or recognition rule;
-- two or more named dependent patterns whose work depends on the same subject identity or relation rule;
-- the smallest set of independently governed direct relations those uses must keep coherent;
-- how a changed participant or direct-relation fact would change what those uses may claim, compare, rely on, repair, or stop;
-- confirmation that every already governed value keeps its own kind, identity, direct relations, and subject pattern;
-- the practical difference that this reusable coordination makes;
-- why direct-pattern use, a bounded episteme, local typed projection, publication handling, and wording repair do not close the case; and
-- the nearest case that must remain outside the proposed ontic.
+- one blocked use or decision;
+- one independently recoverable candidate entity, proposal episteme, or source-construct entity that carries the inquiry without presupposing a durable ontic;
+- concrete duplication or disagreement pressure in more than one current pattern description;
+- the named consumers that make shared coordination plausible; and
+- why one obvious direct-pattern route does not already close the blocked use.
 
-These facts tell the author to open E.24; they do not admit an ontic. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but none substitutes for those facts.
+Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, and nearest non-use boundary. If one of those facts cannot be established, E.24 may return its unresolved result. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
+
+A plainly direct case still stops at its subject pattern. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but without a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers, and failure of an obvious direct route, they do not open E.24.
 
 #### E.24.CD:4.4 - State one result and stop
 
@@ -174,7 +172,7 @@ Treat the schema as source material, not as an ontology. A proposal episteme, me
 
 | Field cue | Object and relation to recover |
 | --- | --- |
-| `owner` | Treat *owner* as a cue, not a kind. If it denotes an established architectural owner—for example, the module designated for one functional-architecture object—recover that direct architecture relation and its participants. Otherwise identify the admitted System and name the assignment occurrence and its declared `U.SystemRoleAssignment` species, or state the responsibility, commitment, or authority relation that actually obtains. The field assigns no System, creates no responsibility, grants no authority, and invents no architectural ownership relation. |
+| `owner` | Apply E.10's bounded `owner` recovery, then name the exact recovered relation and participants, ordinary or quoted non-use, or blocker. An established architectural owner—for example, the module designated for one functional-architecture object—keeps that direct architecture relation. Organizational, policy, source-maintenance or stewardship, legal ownership, responsibility, authority, and commitment uses keep their own recovered relations. Only a claim actually recovered as work-facing local classification or assignment proceeds through E.10.ROLE to A.2 or A.2.1. The field alone creates no System, kind, assignment, ownership occurrence, responsibility, or authority. |
 | `status` | Name the exact bearer and the governed state or status value, claim, gate disposition, decision result, or other current relation. Field presence implies no readiness, validity, gate passage, work authorization, or release. |
 | `method` and `mechanism` | Keep an admitted `U.Method` and any qualifying `U.MethodDescription` distinct from the A.6.1 `U.Mechanism` declaration episteme and its declared operation family. If the field concerns one use, identify the exact operation application and only its declaration-local argument or result bindings that obtain. If it concerns realization, identify the realizing entity and the obtaining mechanism-realization relation. Apply `A.6.1` when the row does not yet distinguish these readings. Shared wording identifies none of them. |
 | plan, intended work, and actual work | Keep a `U.WorkPlan` or intended-work claim under `A.15.2`. Add a `U.Work` under `A.15.1` only for an independently grounded performed occurrence, whether ongoing with an open end or completed. A proposal, row, trace, or completion label does not make work occur. |
@@ -254,7 +252,7 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | `CC-E24CD-5` | One C.2.1 episteme requires one exact ClaimGraph, one truthful exact EntityOfConcern, and one effective ReferenceScheme. Otherwise epistemes remain separate, and co-use or co-publication supplies no shared identity. |
 | `CC-E24CD-6` | Local classification uses C.3.2's kind, signature, judgment, and optional extension distinction and does not imply a public `U.*` kind or direct classification relation. |
 | `CC-E24CD-7` | Episteme, view membership, publication form, representation, carrier, and publication occurrence remain separate and use their subject patterns only when current. |
-| `CC-E24CD-8` | Applying E.24 requires one primary subject kind, identity rule, dependent uses, minimal direct-relation set, practical gain, rejected simpler applications, and nearest non-use. |
+| `CC-E24CD-8` | E.24 opens from a blocked use, an independently recoverable candidate, proposal, or source construct, concrete duplication or disagreement pressure across named patterns, named plausible consumers, and failure of one obvious direct route. E.24.CD does not require the identity rule, minimal relation set, dependent-use proof, non-duplication result, practical gain, or nearest non-use; E.24 owns those judgments and may return unresolved. |
 | `CC-E24CD-9` | Any public U-kind question is handled by E.24.UK as a separate admission result; E.24.CD admits neither ontic nor kind. |
 | `CC-E24CD-10` | No candidate cluster, registry, scorecard, or mandatory disposition form is created. |
 | `CC-E24CD-11` | The result names the exact pattern applied to the exact subject or claim, or a precise unresolved stop, and blocks the strongest tempting overread. |

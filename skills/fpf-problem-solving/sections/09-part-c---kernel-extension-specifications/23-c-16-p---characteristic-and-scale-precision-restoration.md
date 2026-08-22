@@ -13,7 +13,7 @@ This pattern is not a metrics-only pattern, not a measurement-method replacement
 
 **Builds on.** `E.10`, `E.10.ARCH`, `A.17`, `A.18`, `C.16`, `A.19`, `C.25`, `C.29`, `E.21`, `F.18`, and `A.6.P`.
 
-**Coordinates with.** `C.16.Q`, `A.19.ECS`, CHR mechanism patterns, `G.0`, `G.5`, `G.9`, `C.11`, `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `A.15`, evidence, assurance, gate, decision, causal-use, release, work, benchmark, and publication patterns define or constraining those claims.
+**Coordinates with.** `C.16.Q`, `A.19.ECS`, CHR mechanism patterns, `G.0`, `G.5`, `G.9`, `C.11`, `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `A.15`, and the evidence, assurance, gate, decision, causal-use, release, work, benchmark, and publication patterns that define or constrain those claims.
 
 **E.10.ARCH relation-function boundary.** When `E.10` encounters `metric`, `score`, `axis`, `dimension`, `feature`, `property`, `indicator`, `strong`, `weak`, `robust`, `level`, `coordinate`, `threshold`, `benchmark`, or scalar-quality wording whose characteristic and scale construction is hidden, `E.10.ARCH` selects `C.16.P` only until bearer, characteristic, scale, value or score construction, comparison reference or comparator set, threshold rule or reference, proxy relation, admissible use, and subject-pattern locator are recovered. After that recovery, state the subject assertion under its exact invariant or predicate.
 
@@ -51,7 +51,7 @@ The recoverable item may be:
 - quality-term or evaluative characterization under `C.16.Q`;
 - pattern-quality coordinate use under `E.21`;
 - mathematical-lens use under `C.29`;
-- comparison, threshold, indicator, proxy, benchmark, gate, evidence, decision, or work claim under neighboring patterns define or constraining those claims;
+- a comparison, threshold, indicator, proxy, benchmark, gate, evidence, decision, or work claim under a neighboring pattern that defines or constrains it;
 - ordinary prose with no FPF-governed use.
 
 ### C.16.P:2 - Problem

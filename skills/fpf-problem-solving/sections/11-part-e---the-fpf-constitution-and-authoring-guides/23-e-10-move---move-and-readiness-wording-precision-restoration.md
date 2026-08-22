@@ -6,7 +6,7 @@
 
 **At a glance.** `E.10.MOVE` restores the exact FPF value or relation hidden by move-like, movement-like, and readiness-like wording. It distinguishes an A.22.CGUS demonstrated row from a Plain local-mantra result and a Plain long-mantra map location, restores evaluation-result change wording to an E.23 prediction, and requires its subject pattern for every stronger claim.
 
-**Use this when.** Use this pattern when wording such as move, movement, step, action, readiness, route, workflow, or process is doing more than ordinary prose and a reader could mistake a demonstrated continuation, recommendation, prediction, transformation, readiness relation, gate decision, publication relation, or performed work for another kind.
+**Use this when.** Use this pattern when wording such as move, movement, step, action, readiness, route, workflow, or process is doing more than ordinary prose and a reader could mistake a demonstrated continuation, recommendation, prediction, transformation, readiness claim or result, gate decision, publication relation, or performed Work for another kind.
 
 **Primary EntityOfConcern.** One wording-use restoration over a bounded text span whose move-like or readiness-like wording has an FPF-governed use.
 
@@ -48,10 +48,10 @@ Restore the governed target before choosing replacement wording:
 
 1. Name the exact `GovernedTextSpan`, the `ClaimBeingMade`, and the `ObjectUnderWordingRepair`.
 2. Decide whether the wording is ordinary prose, a quotation, or wording relied on for an FPF-governed claim. Ordinary and quotation uses can close without inventing a technical target.
-3. When the phrase is `mantra move`, first ask which use is present. For an A.22.CGUS-admitted `DemonstrativeUnfoldingSlice@Context`, recover one complete `DemonstratedPatternUseRow@Context`; keep the phrase only when its enclosing slice, question, subject-pattern locator, expected result, and continuation condition are recoverable. For a Plain local mantra, name the bounded result and restore the move-like wording through that result's exact predicate or constraint. For a Plain long mantra, name the intended final result and the particular map location whose answer or stop is current, then state the exact answer or blocker and use the subject pattern only as a locator. Do not invent a demonstrated row, collapse the long map into one pattern's Solution, or treat any branch as Work order.
+3. When the phrase is `mantra move`, first ask which use is present. In a post-qualification A.22.CGUS demonstrative slice that shows pattern use, recover the exact E.11.PUA `PatternUsePracticeContinuationDescription@Context`: its proposed use, expected result and kind, PatternID and name, current condition, and continuation disposition. Keep `mantra move` only as bounded Plain wording for that shown continuation. A.22.CGUS supplies the structure and slice boundary; it does not create a universal displayed-row kind. For a Plain local mantra, name the bounded result and restore the move-like wording through that result's exact predicate or constraint. For a Plain long mantra, name the intended final result and the particular map location whose answer or stop is current, then state the exact answer or blocker and use the subject pattern only as a locator. Do not invent a demonstrated row, collapse the long map into one pattern's Solution, or treat any branch as Work order.
 4. When `move`, `movement`, `direction`, or similar wording predicts a later evaluation result, recover `ExpectedEvaluationResultChange@Context` under `E.23`. That value is a coordinate-and-scale-qualified prediction episteme, not an operation, transition, movement, work occurrence, or proof of improvement.
 5. For every other governed use, name the exact recovered value or relation, its kind, and its subject pattern. For a relation claim, name the admitted direct predicate and actual participants. Add a `RelationSignature` reference only when an admitted reusable typed declaration is current and the receiving use needs that declaration. If the governed value is already clear, use its pattern directly.
-6. Split the text when one phrase carries more than one governed value. A recommendation, method, transformation, readiness relation, gate decision, publication relation, and performed work do not become one value because the same word was used for them.
+6. Split the text when one phrase carries more than one governed value. A recommendation, method, transformation, readiness claim or result, gate decision, publication relation, and performed Work do not become one value because the same word was used for them.
 7. Preserve `RemainingReaderUse`: the repair is complete only when a practitioner can still tell what can be inspected, selected, evaluated, planned, performed, or returned to next.
 
 #### E.10.MOVE:4.1 - MoveAndReadinessWordingRepairNote
@@ -91,6 +91,20 @@ Run this restoration when one of these wording groups carries an FPF-governed us
 
 The trigger group only opens the repair. It does not supply a replacement vocabulary or choose the governed-value kind.
 
+##### E.10.MOVE:4.2.1 - Readiness exits
+
+Stay in E.10.MOVE only while `readiness`, `ready`, `full kit`, `work entry`, or a similar cue still hides which governed value is meant. Once that value is recovered, use the direct pattern:
+
+| Recovered claim | Direct pattern |
+| --- | --- |
+| A patient, system, or other subject has a value in a still-hidden state frame | `A.19.SPR`, then the subject pattern that defines or tests the recovered value. |
+| An exact system-role assignment satisfies a by-value assignment-state condition | `A.2.5`; keep its predicate, world-side relation occurrence, and assertion episteme distinct. |
+| One intended performance satisfies a work-entry criterion | `A.15.5`; its local readiness result is not a gate decision or performed target Work. |
+| A distinct `OperationalGate(profile)` consumes declared checks and publishes a decision | `A.21`; a ready label or readiness result alone is not gate passage. |
+| A publication use, permission claim, preparation Work, or target Work is meant | `E.17`, the direct permission pattern, or `A.15.1` as applicable. Keep each claim separate. |
+
+If the direct pattern and value were already clear, bypass this table and use that pattern immediately.
+
 #### E.10.MOVE:4.2a - No synonym closure
 
 Replacing `move` with `step`, `action`, `use`, or `application` does not close the repair. Close only after recovering the governed value and its subject pattern. When responsibility is claimed, name the admitted System, direct domain predicate, actual participants, and applicability, or return the exact A.6.RCD missing governor; an assignment is not a responsibility result. Individuate the responsibility-relation occurrence separately only when a named receiving use needs to distinguish that occurrence. Ordinary-prose or quote-only use closes only when no FPF-governed value is claimed.
@@ -101,7 +115,7 @@ Replacing `move` with `step`, `action`, `use`, or `application` does not close t
 
 | `WordingUseDispositionValue` | Selected recovery |
 | --- | --- |
-| `boundedDemonstratedContinuation` | One `DemonstratedPatternUseRow@Context` governed by A.22.CGUS; for Plain `mantra move`, retain the complete bounded CGUS-demonstrative context and exit stronger claims to their direct patterns. |
+| `boundedDemonstratedContinuation` | One E.11.PUA `PatternUsePracticeContinuationDescription@Context` shown inside a post-qualification demonstrative slice. A.22.CGUS supplies the structure and slice boundary, not a wrapper-row kind. Retain the complete bounded use and send stronger claims to their direct patterns. |
 | `evaluationResultChangePrediction` | One E.23 `ExpectedEvaluationResultChange@Context` with evaluation pattern, coordinate, scale, current result, one expected value, range, or closed direction, proposal basis, and protected tradeoffs. |
 | `directGovernedUse` | The exact governed value or relation, its kind, and its subject pattern. For a relation claim, name the admitted direct predicate and actual participants; include a `RelationSignature` reference only when an admitted reusable typed declaration is current and the receiving use needs it. The wording disposition itself contributes no project ontology. |
 | `importedSourceWording` | Preserve the source expression only as source wording; recover every FPF use under its direct pattern. |
@@ -131,19 +145,19 @@ These are repair demonstrations, not a global replacement table.
 
 Source sentence: "The next mantra move is to compare the two patterns."
 
-Keep `mantra move` only when the sentence presents one row inside a named `DemonstrativeUnfoldingSlice@Context`. The row names its public template or project candidate, direct PatternID and name, Solution, expected result, result-flow position, and continuation condition. That PatternID is a locator; neither it nor the referenced Solution establishes a `U.Method` or `U.MethodDescription`. If the pattern choice is unresolved, the row points to a separate nested pattern-selection slice. The phrase does not claim a recommendation, method, work plan, performed work, or operation merely by being readable.
+Keep `mantra move` only when the sentence presents one E.11.PUA practice-continuation description inside a named post-qualification demonstrative slice. The description states its proposed use, expected result and kind, direct PatternID and name, current condition, and continuation disposition. That PatternID is a locator; neither it nor the referenced Solution establishes a `U.Method` or `U.MethodDescription`. If the pattern choice is unresolved, the description may point to a separate nested selection question. The phrase does not claim a recommendation, method, work plan, performed work, or operation merely by being readable.
 
 ```text
 WordingUseDispositionValue: boundedDemonstratedContinuation
-SubjectPatternLocator: A.22.CGUS
-RecoveredGovernedValueRef: DemonstratedPatternUseRow@SeminarArchitectureUse
-RecoveredGovernedValueKindRef: DemonstratedPatternUseRow@Context
+SubjectPatternLocator: E.11.PUA
+RecoveredGovernedValueRef: PatternUsePracticeContinuationDescription@SeminarArchitectureUse
+RecoveredGovernedValueKindRef: PatternUsePracticeContinuationDescription@Context
 RetainedPlainWording: mantra move, only in the bounded CGUS-demonstrative context
 BlockedOverread: no U.Move; no actual work or universal sequence
 RemainingReaderUse: inspect the shown candidate, Solution, expected result, and condition
-QualificationWindow: published A.22.CGUS and E.10.MOVE pattern editions dated 2026-07-11
-CurrentnessBasis: A.22.CGUS admits this named seminar slice and row; E.10.MOVE admits the bounded Plain wording
-ReopenCondition: the enclosing slice loses CGUS admission, the demonstrated-row schema changes, or readers use the phrase as Work, recommendation, or universal sequence
+QualificationWindow: the current E.11.PUA continuation description and the named A.22.CGUS demonstrative slice
+CurrentnessBasis: the enclosing structure qualifies under A.22.CGUS, the slice shows this E.11.PUA description, and E.10.MOVE admits the bounded Plain wording
+ReopenCondition: the enclosing structure or slice boundary changes, the E.11.PUA description changes, or readers use the phrase as Work, recommendation, or universal sequence
 ```
 
 #### E.10.MOVE:5.2 - Expected evaluation-result change
@@ -162,7 +176,7 @@ If this is a project-local recommendation, restore `PatternUseRecommendation@Con
 
 Source sentence: "The MOVE is full-kitted and ready."
 
-Preserve `MOVE` as imported source wording. Restore the target WorkPlan or PlanItem, full-kit condition, work-entry readiness relation, and any actual gate decision under their direct patterns. Do not claim target work occurred unless a dated A.15.1 occurrence is current.
+Preserve `MOVE` as imported source wording. Restore the target WorkPlan or PlanItem, full-kit criterion, A.15.5 work-entry readiness result, and any actual gate decision under their direct patterns. Do not claim target Work occurred unless a dated A.15.1 occurrence is current.
 
 #### E.10.MOVE:5.5 - Workflow diagram
 
@@ -192,9 +206,9 @@ When `ready` hides a patient-state claim, use A.19.SPR to recover the patient as
 
 Initial sentence: "The next mantra move is: name the thing."
 
-An initial repair classified the phrase as `boundedDemonstratedContinuation`. Inspection then shows that the enclosing text is A.6.P's local RPR mantra: a short rendering of the A.6.P Solution. It has no named wider `ConstraintGovernedUnfoldingStructure@Context`, no admitted `DemonstrativeUnfoldingSlice@Context`, and no complete `DemonstratedPatternUseRow@Context`.
+An initial repair classified the phrase as `boundedDemonstratedContinuation`. Inspection then shows that the enclosing text is A.6.P's local RPR mantra: a short rendering of the A.6.P Solution. It has no qualifying wider `ConstraintGovernedUnfoldingStructure@Context`, no post-qualification `DemonstrativeUnfoldingSlice@Context`, and no E.11.PUA practice-continuation description with the required proposed use, expected result, pattern, condition, and disposition.
 
-That evidence overturns the initial disposition. Remove the demonstrated-row claim, retain the local RPR mantra as Plain didactic wording, use the A.6.P Solution and its direct relation-recovery guidance, and write: "Apply the first clause of the local RPR mantra: name the thing; then recover the relation or comparison." The `A.6.P` locator and Solution establish neither a `U.Method` nor a `U.MethodDescription`. Establish a separate `U.Method`, a qualifying `U.MethodDescription` episteme, and any Method-use relation only if A.3.1 and A.3.2 independently admit them and the receiving claim depends on those identities. Reopen CGUS admission only if a later demonstration supplies the enclosing slice and complete row positions.
+That evidence overturns the initial disposition. Remove the demonstrated-continuation claim, retain the local RPR mantra as Plain didactic wording, use the A.6.P Solution and its direct relation-recovery guidance, and write: "Apply the first clause of the local RPR mantra: name the thing; then recover the relation or comparison." The `A.6.P` locator and Solution establish neither a `U.Method` nor a `U.MethodDescription`. Establish a separate `U.Method`, a qualifying `U.MethodDescription` episteme, and any Method-use relation only if A.3.1 and A.3.2 independently admit them and the receiving claim depends on those identities. Reopen the demonstrative-slice question only if a later qualified structure and slice actually show a complete E.11.PUA practice-continuation description.
 
 ### E.10.MOVE:6 - Bias-Annotation
 
@@ -227,7 +241,7 @@ Lower, block, or reopen the repair when the governed text span, claim being made
 | Imported MOVE kind | TameFlow source wording becomes FPF ontology. | Recover intended work, readiness, gate, preparation work, or performed work. |
 | Readiness as gate passage | A ready label becomes `GateDecision=pass`. | Use A.21 only when gate fields are present. |
 | Path as work-authorization route | Evidence path or source-reference path becomes a way to authorize work by resemblance. | Recover evidence relation, source relation, graph path, gate relation, work authorization, or deontic permission separately. |
-| Local expression generalized | A bounded local phrase is generalized to unrelated project work. | Keep `mantra move` bound to one `DemonstratedPatternUseRow@Context`; restore every other phrase through its own governed value and direct pattern. |
+| Local expression generalized | A bounded local phrase is generalized to unrelated project work. | Keep `mantra move` bound to one E.11.PUA practice-continuation description shown inside a post-qualification demonstrative slice; restore every other phrase through its own governed value and direct pattern. |
 
 ### E.10.MOVE:9 - Consequences
 

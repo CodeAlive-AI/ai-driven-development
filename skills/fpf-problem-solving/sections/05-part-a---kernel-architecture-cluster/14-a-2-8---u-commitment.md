@@ -102,16 +102,18 @@ One occurrence is identified by:
 - exact duty referents and counterparties;
 - normalized modality and scope;
 - constitutive policy and rule;
-- actual instituting basis; and
+- the actual instituting basis, only when that rule makes the basis identity-bearing; and
 - one maximal continuous validity interval.
 
-A compatible policy edition or record correction preserves the occurrence only through an explicit continuity decision showing that these identity-bearing facts and the rule's deontic effect continue. A changed bearer, modality, referent set, constitutive rule, instituting basis where the rule makes it identity-bearing, or interrupted validity yields another occurrence. The commitment ID and its describing claim do not decide sameness.
+The actual instituting basis is always required for obtaining. It is part of occurrence identity only when the exact constitutive rule says that reinstitution identifies another duty. A compatible policy edition, new record, or later instituting act preserves the occurrence only through an explicit continuity decision showing that every identity-bearing fact and the rule's deontic effect continue. A changed bearer, modality, referent set, constitutive rule, identity-bearing basis, or interrupted validity yields another occurrence. The commitment ID and its describing claim do not decide sameness.
 
 When a rule makes a duty end with a system-role assignment, an assignment boundary ends that commitment. When the rule makes the duty persist for the same actual system across a replacement assignment, state that continuity explicitly. A different actual bearer always requires another commitment occurrence.
 
 #### A.2.8:4.4 - Generic Prescriptions and Assignment-Mediated Rules
 
-A policy can concern `ProviderSystemRole` or another exact local system-role kind. Its `systemRoleKindRef : U.KindRef` can appear in the rule's antecedent, but the policy episteme is not an individual `U.Commitment`.
+A generic prescription states what one exact policy or other normative episteme requires; it does not create an individual duty bearer or commitment occurrence. A claim that one actual System or separately governed party has that duty instead cites one separately obtaining A.2.8 `U.Commitment`.
+
+For example, a policy can concern `ProviderSystemRole` or another exact local system-role kind. Its `systemRoleKindRef : U.KindRef` can appear in the rule's antecedent, but the policy episteme is not an individual `U.Commitment`.
 
 An exact `systemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment` can show that an actual system satisfies one applicability condition for a time. The assignment is still not the duty bearer or the commitment relation. The only valid direction is:
 
@@ -149,6 +151,22 @@ CommitmentAssertion:
 
 The record is not the relation. `evidenceClaimRefs` and carriers support reliance; they are not participants or instituting facts unless the identified constitutive rule makes one such fact current and the pattern for that subject supplies its test. If adjudication is intended, cite the exact evidence claims, criteria, and carriers. If no adjudication is claimed, do not invent an audit apparatus.
 
+When a later use must compare incompatible commitments, keep the commitments unchanged and carry the needed conflict inputs in one local claim:
+
+```text
+CommitmentConflictInputClaim:
+  selectionUseRef: exact conflict or choice question
+  commitmentRows: non-empty set of
+    commitmentRef: U.RelationRef constrained to one exact U.Commitment occurrence
+    institutingBasisRef: exact actual basis required by its constitutive rule
+    issuingSystemRef | issuingPartyRef: exactly one actual issuer recoverable from that basis
+    authorityRelationRef?: U.RelationRef constrained by the direct authority predicate used by selectionUseRef
+  selectingRuleRef?: exact priority or choice rule required by selectionUseRef
+  unresolvedInputRefs?: exact missing-information or missing-governor results
+```
+
+This claim creates no issuer, authority, priority, or resolution and adds none of them to commitment identity by default. Each authority relation must already obtain under its own predicate, and each selecting rule must be current and applicable to this selection use under the pattern that defines it. If this selection use requires an authority relation or selecting rule and that input is unavailable or no current pattern defines it, put its exact unresolved result in `unresolvedInputRefs`, such as `missing-governor[commitment conflict authority relation]` or `missing-governor[commitment conflict selecting rule]`. An optional field means that the input is not required for this use; it never licenses dropping a required input. For an interlevel ethical conflict, use D.3 to map the conflict and D.4 for mediation or decision use. When an explicit choice among already available options is current, C.11 supplies the `ChoiceRule` and `ChoiceResult`. Otherwise apply the direct pattern for the claimed conflict result; if none exists, return `missing-governor[commitment conflict resolution]`.
+
 Evidence used only to measure or verify the duty belongs to the support for the assertion. An evidence-producing or evidence-retaining duty instead names that production or retention content among its duty referents.
 
 #### A.2.8:4.6 - Direct Neighboring Relations
@@ -183,7 +201,7 @@ Current `IncidentResponsePolicy-2026` says that systems assigned to `ProviderSys
 
 The commitment assertion may cite `E-SLO-RESP-1`, incident tickets, timestamps, and the selected clock source for adjudication. Those values make reliance testable; they do not institute the duty.
 
-If `OpsTeamProviderAssignment-2026` ends and `RecoveryTeamProviderAssignment-2026` begins, the assignment edge does not transfer one commitment. When the rule ties duty continuity to the assignment, the OpsTeam commitment ends and a RecoveryTeam commitment begins only after its own required basis and facts obtain. If the rule instead preserves the duty for the same system across a replacement assignment, the continuity decision says so. A different bearer always means another occurrence.
+If `OpsTeamProviderAssignment-2026` ends and `RecoveryTeamProviderAssignment-2026` begins, the assignment edge does not transfer one commitment. When the rule ties duty continuity to the assignment, the OpsTeam commitment ends and a RecoveryTeam commitment begins only after its own required basis and facts obtain. If the rule instead preserves the duty for the same system across a replacement assignment, the continuity decision says so. A different bearer always means another occurrence. Likewise, a second policy-recognized act reissuing the same uninterrupted duty identifies another commitment only when the constitutive rule makes that instituting basis identity-bearing; otherwise the new act is a new ground or record for the continuing occurrence.
 
 A policy-recognized speech act can also institute `ShutdownNoticeCommitment-7` directly for admitted system `PlantController-7`. No system-role kind or assignment is manufactured merely to carry that duty.
 
@@ -252,7 +270,7 @@ policy mentions one system-role kind
 | `CC-A2.8-3` | Modality, scope, and validity are explicit. |
 | `CC-A2.8-4` | One current policy or prescription and its exact individualizing constitutive rule are identified. |
 | `CC-A2.8-5` | The actual instituting basis required by that rule obtains under the pattern that defines that basis. |
-| `CC-A2.8-6` | The occurrence identity and continuity decision distinguish changed bearers, content, rules, and interrupted intervals. |
+| `CC-A2.8-6` | The occurrence identity and continuity decision distinguish changed bearers, content, rules, and interrupted intervals, and treat a changed instituting basis as identity-bearing exactly when the constitutive rule says so. |
 | `CC-A2.8-7` | System-role kind, classification, assignment, policy, publication, assertion, and evidence are not commitment participants or duty bearers by form. |
 | `CC-A2.8-8` | Responsibility, permission, authority, access, Work, result, and compliance are separately asserted or left unresolved. |
 | `CC-A2.8-9` | A reliance or audit record names its exact `U.Commitment` EntityOfConcern and does not claim to create it. |
@@ -285,7 +303,7 @@ policy mentions one system-role kind
 
 - A positive individual-duty claim needs more than a policy sentence. This is the necessary cost of claiming a world-side relation; generic policy content remains cheap to state.
 - Domains with another instituting basis need the pattern that defines that basis. Until then, `missing-governor` is an honest usable result.
-- Conflict resolution remains outside this pattern; record the current relations and use the applicable governance or decision pattern.
+- Conflict resolution remains outside this pattern. Preserve each current commitment plus the exact source, independently obtaining authority relation, and selecting rule required by the named conflict or choice use; apply D.3/D.4 for an interlevel ethical conflict, C.11 for an explicit choice among available options, or return `missing-governor[commitment conflict resolution]` when no direct result rule exists.
 
 ### A.2.8:11 - Rationale
 

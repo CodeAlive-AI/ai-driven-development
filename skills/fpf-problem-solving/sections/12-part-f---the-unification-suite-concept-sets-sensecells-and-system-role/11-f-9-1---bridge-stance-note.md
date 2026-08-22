@@ -12,7 +12,7 @@
 
 **Start here when.** You already have the Bridge and its bounded-use claim, but a reader may still overread a phrase such as “operationalizes”, “projection”, or “roughly analogous”.
 
-**First useful move.** Point to the exact bounded-use claim and write one ordinary sentence: “For this named use, read the relation as ___; do not infer ___.” Choose a stance word only if it makes that sentence shorter and clearer.
+**First useful move.** Point to the exact bounded-use claim and write one ordinary sentence: “For this named use, read the relation as `___`; do not infer `___`.” Choose a stance word only if it makes that sentence shorter and clearer.
 
 **What goes wrong if missed.** A friendly gloss starts acting like proof of equivalence, permission to substitute, or evidence that a use happened. The opposite failure also occurs: authors build a second bridge taxonomy merely to explain how one already warranted use should be read.
 
@@ -20,7 +20,7 @@
 
 **Not this pattern when.** Use F.9 when the Bridge or suitability of a proposed use is still unsettled. Use A.6.3.CSC when a shortened or coarsened rendering needs a source tether, a narrower admissible use, blocked downstream uses, or a return trigger. Do not create a stance note merely because a comparison sounds informal.
 
-### F.9.1:1 - Problem frame
+### F.9.1:1 - Problem
 
 People often need one short gloss after they have established a cross-local semantic relation and judged one bounded use of it. “Operationalizes”, “partial analogy”, and “projection” can be helpful, but each can also sound stronger than the underlying claim. The task is to make the intended reading explicit without making the gloss a Bridge kind, a use licence, or a substitute for evidence.
 
@@ -92,7 +92,7 @@ A stance word carries no direction by itself. Direction belongs to the bounded-u
 - The bounded-use claim says whether that Bridge suits one named use.
 - A practitioner uses A.10 or B.3 to judge whether current evidence or assurance supports relying on that claim.
 - The stance note says how to read that one claim.
-- Evidence about a comparison, translation, publication, Work occurrence, or other downstream act says whether that act occurred; the stance note does not.
+- The pattern that directly constrains a proposed comparison, translation, publication, Work occurrence, or other downstream act decides its authorization; evidence about that act says whether it occurred. The stance note does neither.
 
 A Bridge Card is optional claim-bearing packaging. A Card may publish the Bridge description, bounded-use claim, evidence references, reliance result, and stance note together, but the Card is not a prerequisite for any of them. The Card's layout and edition, and any publication occurrence or file carrying it, remain separate from the objects it brings together.
 
@@ -104,31 +104,31 @@ A `projection` or `nonEquivalent` stance can highlight loss, but it does not pro
 
 Publication does not cure a missing source. If a reader must return to a source episteme or source publication before the Bridge or bounded-use claim can be checked, perform that return first.
 
-### F.9.1:5 - Worked cases
+### F.9.1:5 - Archetypal Grounding
 
 #### F.9.1:5.1 - Local rename inside one bounded use
 
-An obtaining Bridge and an affirmative bounded-use claim permit one operational label to be read as a near-renaming of another inside a named glossary use. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use.
+An obtaining Bridge and a separate affirmative bounded-use claim say that one operational label is suitable as a near-renaming of another in one proposed glossary use. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use. The claim says nothing by itself about authorization or whether anyone actually changed or used the glossary.
 
 #### F.9.1:5.2 - Operational reading of a control cue
 
-An F.9 `Partial-overlap` Bridge obtains between one exact operator-alarm sense and one broader control-cue sense. A separate affirmative claim says that the alarm term may be used in one training explanation, in the alarm-to-control direction, under a rule that preserves the response trigger but not the complete control model, with zero tolerance for treating the term as implementation authority. Current evidence supports that narrow claim.
+An F.9 `Partial-overlap` Bridge obtains between one exact operator-alarm sense and one broader control-cue sense. A separate affirmative bounded-use claim says that this Bridge is suitable for using the alarm term in one training explanation, in the alarm-to-control direction, under a rule that preserves the response trigger but not the complete control model, with zero tolerance for treating the term as implementation authority. A current A.10 reliance judgment says the available evidence supports relying on that narrow claim.
 
-A stance note may now say: “For this training explanation, read the alarm term as operationalizing the response-trigger part of the control cue; do not read it as the complete control model or as permission to change the controller.” The stance is `operationalizes`. No Card is required; a Card may package the already separate objects if durable reuse pays.
+A stance note may now say: “For this training explanation, read the alarm term as operationalizing the response-trigger part of the control cue; do not read it as the complete control model or as permission to change the controller.” The stance is `operationalizes`. Whether an instructor is authorized to use that wording and whether any training Work actually uses it remain separate. No Card is required; a Card may package the already separate objects if durable reuse pays.
 
 #### F.9.1:5.3 - Projection into a report
 
-An obtaining Bridge and a bounded-use claim support showing one aspect of a rich operations concept in a weekly report. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions.
+An obtaining Bridge and a bounded-use claim say that the Bridge is suitable for showing one aspect of a rich operations concept in one proposed weekly-report use. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions. Any authority to publish the report and evidence that a report actually showed that aspect remain separate.
 
 If readers must return to the source account before making a staffing or release decision, follow A.6.3.CSC: return to the source and do not use the report for those decisions. The stance note alone cannot set that boundary.
 
 #### F.9.1:5.4 - Partial analogy without substitution
 
-Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim permits one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It neither makes the methods equivalent nor proves that the comparison was used in Work.
+Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim says that the Bridge is suitable for one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It neither makes the methods equivalent nor authorizes or proves a teaching act.
 
 #### F.9.1:5.5 - `nonEquivalent` is a warning, not a verdict generator
 
-A bounded-use claim permits two senses to appear in the same comparison table but denies substitution. A `nonEquivalent` stance may make that limit easy to see. The label does not by itself make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
+An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table but not suitable for substitution. A `nonEquivalent` stance may make that limit easy to see. The label does not authorize a table or show that one was produced; nor does it make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
 
 #### F.9.1:5.6 - Anti-case: the gloss comes first
 
@@ -147,7 +147,7 @@ A bounded-use claim permits two senses to appear in the same comparison table bu
 9. Reusing a stance label for another claim requires a new local justification; equal labels do not identify the claims or their losses.
 10. A coarsened rendering that needs source return, narrowed use, or blocked downstream use applies A.6.3.CSC.
 
-### F.9.1:7 - Common failures and repairs
+### F.9.1:7 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Why it fails | Repair |
 | --- | --- | --- |
@@ -170,27 +170,27 @@ A bounded-use claim permits two senses to appear in the same comparison table bu
 
 ### F.9.1:9 - Rationale
 
-The stance vocabulary is useful because practitioners already write short interpretive glosses. The ontology stays small by treating each gloss as ordinary claim-bearing content rather than a new relation kind or universal classification. Making the bounded-use claim the EntityOfConcern also keeps a Card as optional publication packaging rather than the subject or source of the relation and use claims.
+The stance vocabulary is useful because practitioners already write short interpretive glosses. The ontology stays small by treating each gloss as ordinary claim-bearing content rather than a new relation kind or universal classification. Making the bounded-use claim the EntityOfConcern also keeps a Card as optional publication packaging rather than the subject or source of the relation and use claims. One primary stance per claim is a readability default, not a new cardinality law. The real criterion is whether the note makes the claim easier to understand without hiding a materially different reading; when one ordinary sentence does that better, the sentence wins.
 
-One primary stance per claim is a readability default, not a new cardinality law. The real criterion is whether the note makes the claim easier to understand without hiding a materially different reading. When one ordinary sentence does that better, the sentence wins.
+### F.9.1:10 - Bias-Annotation
 
-### F.9.1:10 - SoTA echoing and source-use boundary
+**Favored reading.** Prefer disciplined, claim-local comparative reading to sweeping synonym claims. **Counter-risk.** Do not turn harmless comparison into a Bridge, bounded-use claim, reliance judgment, and stance note when that machinery changes no action. Apply the four checks in 4.1; when item 4 has no reader benefit, stop.
 
-| Source line | Useful contribution | FPF use |
-| --- | --- | --- |
-| ISO 704:2022 and ISO 1087:2019 terminology practice | Concepts, designations, definitions, and relations remain distinguishable. | Keep a stance label as a designation inside a claim-bearing episteme; do not treat the label as the Bridge or bounded-use claim. |
-| OpenTelemetry Semantic Conventions, cited predecessor edition 2025 | Reusable short names can improve recognition while their meaning remains tied to an explicit subject and scope. | Reuse a small stance vocabulary only as a reading aid; common spelling supplies no equivalence or use authority. |
-| W3C SHACL 2017 and DCAT v3 2024 | Validation and metadata remain distinguishable from the data or resource they describe. | Keep the stance note and any Card inspectable without making either the Bridge, evidence, or downstream act. |
+### F.9.1:11 - SoTA-Echoing
+
+| Claim/practice | Source | Alignment | Adopt / adapt / reject effect |
+| --- | --- | --- | --- |
+| Keep concepts, designations, definitions, and relations distinguishable. | ISO 704:2022; ISO 1087:2019. | A stance label remains a designation inside one claim-bearing episteme, not the Bridge or bounded-use claim. | **Adopt** the distinction; **reject** treating the label as relation or use truth. |
+| Tie reusable short names to an explicit subject and scope. | OpenTelemetry Semantic Conventions, cited predecessor edition 2025. | A small stance vocabulary aids recognition only inside one exact bounded-use claim. | **Adapt** the naming move; **reject** equivalence or use authority from common spelling. |
+| Keep validation and metadata distinct from the data or resource described. | W3C SHACL 2017; DCAT v3 2024. | A stance note and optional Card remain inspectable without becoming the Bridge, evidence, or downstream act. | **Adopt** the separation; **reject** packaging as truth or occurrence. |
 
 SysML v2 is deliberately not used here as SoTA or lineage evidence. Its predecessor citation changed no F.9.1 rule or worked case and did not answer the present relation–claim–use separation problem. No replacement source is added merely to fill the removed row; add one only when an exact current source changes a rule or example.
 
-### F.9.1:11 - Relations
-
-- **Builds on:** F.9 for the obtaining Bridge and bounded-use claim; C.2.1 for the stance episteme and its identity.
-- **Coordinates with:** A.10 and B.3 for reliance; A.6.3.CSC for controlled coarsening and source return; E.17.ID.CR for bounded comparative review; C.16.Q for quality-term repair; E.24.PUB for publication; F.17 for local sense; and F.18 for naming when that question is live.
+### F.9.1:12 - Relations
+- **Builds on and coordinates with:** F.9 for the obtaining Bridge and bounded-use claim; C.2.1 for the stance episteme and its identity; A.10 and B.3 for reliance; A.6.3.CSC for controlled coarsening and source return; E.17.ID.CR for bounded comparative review; C.16.Q for quality-term repair; E.24.PUB for publication; F.17 for local sense; and F.18 for naming when that question is live.
 - **Does not replace:** the pattern that defines or constrains an actual comparison, translation, publication, Work, decision, permission, or other downstream object.
 
-### F.9.1:12 - Migration rule
+#### F.9.1:12.1 - Migration rule
 
 For each legacy stance passage, ask in order:
 

@@ -151,7 +151,7 @@ A machine, robot, fixture, workpiece carrier, and inspection station can become 
 
 The fixture being manufactured is not part of the machine merely because the machine changes it. The production cell claim needs a result system; the manufacturing relation remains transformation and work.
 
-### B.2.2:5.1 - Bias-Annotation
+### B.2.2:5.4 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
@@ -182,7 +182,7 @@ The fixture being manufactured is not part of the machine merely because the mac
 | Component certificate transfer | Individual part certificates are used as result-system assurance. | Re-base assurance through B.2.2:4.5 and evidence-use patterns. |
 | Controller as containing whole | A controller or external system is treated as the new whole because it changes the parts. | Use A.12, A.3.4, B.2.5, and part-whole patterns separately. |
 | Dashboard as system | A monitoring model is treated as the operating system. | Use episteme, publication, source-use, C.30.AD, or digital-twin description patterns. |
-| Capability jump as system MHT | A metric improves and the result is called a new system. | Use B.2's `ExistingWholeExplanationCheck`; return to capability, characteristic, method, work, or architecture patterns if the existing whole remains sufficient. |
+| Capability jump as system MHT | A metric improves and the result is called a new system. | Perform B.2's ordinary existing-whole comparison; return to capability, characteristic, Method, Work, or architecture patterns if the existing whole remains sufficient. |
 
 ### B.2.2:8 - Consequences
 

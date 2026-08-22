@@ -331,7 +331,7 @@ that acts as the **planned baseline** for all suite‑level pinned refs/editions
 
 This is the mandatory bridge between:
 
-* *selection* (G.* set‑return choice of candidates/policies), and
+* *selection* (`G.*` set‑return choice of candidates/policies), and
 * *WorkEnactment* (FinalizeLaunchValues witness + gate execution + logs).
 
 #### A.19.CHR:4.7 - Canonical concept card fragments
@@ -436,7 +436,7 @@ Downstream continuation (outside `suite_protocols`): publication/telemetry via `
 
 **Show.**
 
-* The same CHR suite is used, but the selected `SelectorMechanism` specialization (via G.* extension) returns an **Archive** retained set.
+* The same CHR suite is used, but the selected `SelectorMechanism` specialization (via `G.*` extension) returns an **Archive** retained set.
 * WorkPlanning plan item additionally pins:
 
   * `DescriptorMapRef@edition(…)` and `DistanceDefRef@edition(…)` (QD/illumination configuration),

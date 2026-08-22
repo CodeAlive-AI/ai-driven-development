@@ -8,21 +8,21 @@
 - [A.1.1 - Bounded Model-Use Structure and DDD Bounded-Context Recovery](03-a-1-1---bounded-model-use-structure-and-ddd-bounded-context.md) (436 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](04-a-1-scr---finding-the-acting-or-changed-system.md) (256 lines) — Type: Part A practitioner application pattern
 - [A.1.STM - Using the System-Thinking Long Mantra](05-a-1-stm---using-the-system-thinking-long-mantra.md) (170 lines) — Type: Part A practitioner application pattern
-- [A.2 - System-Role Kinds and Assignments](06-a-2---system-role-kinds-and-assignments.md) (416 lines) — Type: Architectural (A)
+- [A.2 - System-Role Kinds and Assignments](06-a-2---system-role-kinds-and-assignments.md) (421 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](07-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (348 lines) — Type: Definitional (D)
 - [A.2.2 - U.Capability - System Ability Envelope and Measures](08-a-2-2---u-capability---system-ability-envelope-and-measures.md) (361 lines) — U.Capability is the FPF object for "can do within bounds".
-- [A.2.3 - U.PromiseContent (Promise Content)](09-a-2-3---u-promisecontent.md) (485 lines) — Type: Definitional promise-content episteme pattern
+- [A.2.3 - U.PromiseContent (Promise Content)](09-a-2-3---u-promisecontent.md) (492 lines) — Type: Definitional promise-content episteme pattern
 - [A.2.4 - Episteme Evidence-Use and Status-Use Relations](10-a-2-4---episteme-evidence-use-and-status-use-relations.md) (283 lines) — Type: Boundary and relation-use pattern
 - [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition and Work Admission](11-a-2-5---systemroleassignmentstaterelation---assignment-state.md) (351 lines) — Type: Definitional (D)
 - [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes](12-a-2-6---unified-scope-mechanism-context-slices-scopes.md) (939 lines) — U.ContextSlice and U.Scope are the durable USM values for scope work. U.ClaimScope, U.WorkScope, and U.PublicationScope are C.3-governed scope specializations under U.Scope, not independent root...
-- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds](13-a-2-7---systemrolekindrelationstructure---relations-among-sy.md) (493 lines) — Type: Architectural (A)
-- [A.2.8 - U.Commitment (Deontic Commitment Relation)](14-a-2-8---u-commitment.md) (311 lines) — Type: Definitional ontic pattern
-- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](15-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (308 lines) — Type: Definitional ontic support pattern
-- [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](16-a-2-9-u-speechact.md) (376 lines) — Type: Definitional work-ontic pattern
+- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds](13-a-2-7---systemrolekindrelationstructure---relations-among-sy.md) (497 lines) — Type: Architectural (A)
+- [A.2.8 - U.Commitment (Deontic Commitment Relation)](14-a-2-8---u-commitment.md) (329 lines) — Type: Definitional ontic pattern
+- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](15-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (310 lines) — Type: Definitional ontic support pattern
+- [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](16-a-2-9-u-speechact.md) (380 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Constitution (Quartet)](17-a-3---transformer-constitution.md) (220 lines) — Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence, under which exact U.RoleAssignment, by enacting which U.Method, and which separately governed...
 - [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](18-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (439 lines) — Type: Definitional pattern
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](19-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (327 lines) — Type: Definitional pattern
-- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](20-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (329 lines) — Type: Definitional pattern
+- [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](20-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (324 lines) — Type: Definitional pattern
 - [A.3.4 - U.Transformation: Bounded Change Under Conditions](21-a-3-4---u-transformation-bounded-change-under-conditions.md) (393 lines) — Type: Definitional pattern
 - [A.3.4.P - Transformation Ontic Precision Restoration](22-a-3-4-p---transformation-ontic-precision-restoration.md) (262 lines) — Type: A.3.4 precision-restoration child pattern
 - [A.4 - Temporal Duality & Open‑Ended Evolution Principle](23-a-4---temporal-duality-open-ended-evolution-principle.md) (128 lines) — “A holon is born in design‑time, lives in run‑time,

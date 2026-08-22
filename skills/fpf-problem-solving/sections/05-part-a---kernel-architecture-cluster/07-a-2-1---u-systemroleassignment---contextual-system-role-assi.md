@@ -248,7 +248,7 @@ Alice is independently admitted as `U.System`. `Commission-A` and `Commission-B`
 
 #### A.2.1:5.6 - Reviewer and Review Report
 
-`ReviewService-4` holds an exact review assignment and performs `ReviewWork-82` under it through F.6. `ReviewReport-82` is a separately identified `U.Episteme`. When the Work first constitutes that episteme and the inception claim matters, A.15.PROD recovers the relation among Work, change, and identity. A later evidence relation can use the report; the report never fills `HolderSystemSlot` merely because it is useful.
+`ReviewService-4` holds an exact review assignment and performs `ReviewWork-82` under it through F.6. `ReviewReport-82` is a separately identified `U.Episteme`. When the Work first constitutes that episteme and the inception claim matters, A.15.PROD recovers one local entity-inception claim from the exact Work, change, and identity bases. A later evidence relation can use the report; the report never fills `HolderSystemSlot` merely because it is useful.
 
 ### A.2.1:6 - Bias Annotation
 

@@ -162,12 +162,12 @@ The word `move` remains inherited from `A.16` and means a typed language-state p
 #### A.16.0:4.9 - Bridge and viewpoint entry
 A trajectory may later cross a viewpoint or context boundary. When that happens:
 
-- bridge substitution licence remains with `F.9`;
+- the trajectory establishes neither an F.9 Bridge nor the suitability of any bounded cross-context use; exact relation and use claims remain with `F.9`;
 - stance notes remain with `F.9.1`;
 - viewpoint reuse remains with `E.17.1`;
 - endpoint-local semantics remain in the rules defined or tested by the named endpoint patterns; publication availability remains a separate `E.24.PUB` relation.
 
-`A.16.0` only makes those entry points explicit so that later attachments do not float without an upstream history account.
+`A.16.0` only makes those entry points explicit. It establishes no current reliance, authorization, or receiving use. When those questions are live, apply triggered `A.10` or `B.3` for reliance, the pattern that directly constrains the receiving action for authorization, and evidence of the receiving Work or publication for occurrence. No bundled record is required when those questions are not live.
 
 ### A.16.0:5 - Archetypal Grounding
 **Tell.** A language-state trajectory account is not `we kept refining the note`. It is an optional, lineage-aware account of episteme editions and their publication history, with declared position claims, move kinds, losses, and the next applicable pattern or use.

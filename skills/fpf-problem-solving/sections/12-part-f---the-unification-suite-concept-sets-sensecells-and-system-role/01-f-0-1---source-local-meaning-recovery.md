@@ -56,7 +56,7 @@ When a source fixes a designed-versus-performed distinction or another time stan
 
 A shared label, close paraphrase, common superclass, table row, embedding score, or family membership does not establish identity or another relation. First recover each source-local meaning separately. Then use F.9 when a receiving use needs an actual relation between the two F.17 cells.
 
-The F.9 result states the exact endpoints, relation kind, direction, comparison basis, limits or losses, and intended use. A relation does not by itself permit translation, substitution, row membership, or reliance. A chain of relations does not silently create a direct endpoint relation.
+The F.9 result states which two cells are related, what kind of relation obtains, how its endpoints are oriented, and what relation profile makes it true. When a receiving use is current, state a separate C.2.1 claim: what action is proposed, in which direction, under which correspondence rule, how much loss it tolerates, and whether the Bridge is suitable for that use. Changing this use claim does not change the Bridge. Neither the relation nor the claim by itself permits translation, substitution, or row membership, establishes reliance or authorization, or shows that the action occurred. A chain of relations does not silently create a direct endpoint relation.
 
 #### F.0.1:4.4 - Recover old Context-shaped artifacts only for a current reliance
 
@@ -71,7 +71,7 @@ When a current claim or action actually relies on it, recover only the values th
 | Source-backed meaning statement | A plain answer tied to one exact source passage. | A new kind, container, relation, or assurance result. |
 | `SchemeSenseCell` | F.17's durable address for one expression and local sense claim under one effective ReferenceScheme. | The ordinary first result or a container of source doctrine. |
 | `LocalSenseBasisRelation` | A current direct support relation from an exact basis episteme to the cell. | Automatic provenance, reliance, or assurance. |
-| F.9 relation | An actual stated relation between distinct recovered cells for a named use. | Identity by wording, a search score, or a universal substitution licence. |
+| F.9 Bridge | An actual semantic relation between distinct recovered cells under its applicable relation profile. | A proposed use, a bounded-use claim, permission, reliance, authorization, or evidence that an action occurred. |
 | Short source note | An optional readable representation of already recovered source information. | A form whose presence establishes meaning or admission. |
 
 #### F.0.1:4.6 - Invariants
@@ -90,7 +90,7 @@ When a current claim or action actually relies on it, recover only the values th
 - **Local reading.** “This source passage uses *t* to mean *m*.”
 - **Durable address.** “This receiver will reuse that reading, so record it as an F.17 cell under the effective source scheme.”
 - **Basis.** “This exact source episteme supports the cell through a current `LocalSenseBasisRelation`.”
-- **Cross-source relation.** “The two recovered cells stand in this stated F.9 relation, under these limits, for this use.”
+- **Cross-source relation.** “The two recovered cells stand in this stated F.9 relation under this relation profile.” When a receiving use is current: “A separate C.2.1 claim says whether that Bridge is suitable for this action, direction, correspondence rule, and tolerated loss.”
 - **No transitive shortcut.** Two established relations through an intermediate meaning do not establish a direct third relation.
 - **Affected-only reopening.** A changed source premise reopens the claims that used it, not every claim that cites the edition.
 
@@ -187,7 +187,7 @@ The verified permission reading is not the unresolved role reading. A later acce
 - **SCR-F03 (Conditional cell).** A `SchemeSenseCell` appears only for a named reuse, claim, receiver, or relation need and keeps ReferenceScheme, LocalExpression, and LocalSenseClaim distinct.
 - **SCR-F04 (Separate support).** A `LocalSenseBasisRelation` is asserted only when current; source identification, reliance, and assurance are not inferred from it.
 - **SCR-F05 (No string identity).** Shared wording, family, score, or row does not establish a relation between local senses.
-- **SCR-F06 (Explicit relation).** Every claimed cross-local relation uses exact F.17 endpoints and the applicable F.9 relation, direction, basis, limits, and use.
+- **SCR-F06 (Explicit relation and use).** Every claimed cross-local relation uses exact F.17 endpoints and the applicable F.9 relation profile. When a receiving use is current, a separate C.2.1 claim names the proposed action, use direction, correspondence rule, tolerated loss, and polarity.
 - **SCR-F07 (Temporal honesty).** Designed descriptions and performed occurrences remain distinct wherever the source fixes that difference.
 - **SCR-F08 (No subject capture).** The local gloss does not redefine the subject's behaviour, deontics, measurement, kind, proof, or work rules.
 
@@ -227,12 +227,12 @@ The proportional split also protects practical use: one identified source can yi
 
 ### F.0.1:11 - SoTA-Echoing
 
-| Current practice line and sources | Adopted or adapted move | Limit kept visible |
+| Current practice line and exact sources | Decision and effect in `F.0.1` | Limit kept visible |
 | --- | --- | --- |
-| ISO 1087:2019 and ISO 704:2022 distinguish objects, concepts, definitions, and designations. | Recover the source-local designation and concept contribution before comparison. | Standard status establishes neither one universal vocabulary nor the receiving claim. |
-| Kapferer and Zimmermann, *Context Mapper* (2021), keep a software-domain model and language within a named DDD boundary and make inter-boundary relations explicit. | Retain this as a bounded software-domain example when a DDD bounded context is the actual subject. | It does not warrant a transdisciplinary `U.BoundedContext` or make that object the source of all meaning. |
-| OAEI 2025 and current ontology-matching work propose correspondences across heterogeneous ontologies. | Treat lexical, structural, or model-produced matches as candidates for inspection. | Benchmark performance or an LLM answer establishes neither semantic identity nor suitability for a receiving use. |
-| W3C SHACL (2017) and DCAT 3 (2024) separate constraints, validation, catalog metadata, versions, and provenance from described subject claims. | Keep source and edition metadata recoverable and allow a compact source note when useful. | Metadata form, validation, or provenance does not establish meaning, truth, reliance, or assurance. |
+| ISO 1087:2019 and ISO 704:2022 distinguish objects, concepts, definitions, and designations. | **Adopt, with a boundary.** Recover the source-local designation and concept contribution before comparison. | Standard status establishes neither one universal vocabulary nor the receiving claim. |
+| Kapferer and Zimmermann, *Domain-driven Architecture Modeling and Rapid Prototyping with Context Mapper* (2021), keep a software-domain model and language within a named DDD boundary and make inter-boundary relations explicit. | **Adapt as a software-domain example.** Use that boundary only when a DDD bounded context is the actual subject. | It does not warrant a transdisciplinary `U.BoundedContext` or make that object the source of all meaning. |
+| Abd Nikooie Pour et al., *Results of the Ontology Alignment Evaluation Initiative 2025* (2025); Giglou et al., *LLMs4OM* (2024); Hu and Ichise, *From Matching to Retrieval: A New Role for LLMs in Ontology Alignment* (2025); and Qiang et al., *OAEI-LLM* (2024). | **Adapt.** Use lexical, structural, retrieved, or model-produced correspondences to find candidates worth inspecting; establish an F.9 relation only from the exact recovered senses and its relation profile. | A benchmark result, similarity score, or model answer establishes neither semantic identity nor the separate C.2.1 claim that a Bridge suits a receiving use. |
+| W3C SHACL (2017) and DCAT 3 (2024) separate constraints, validation, catalog metadata, versions, and provenance from described subject claims. | **Adapt.** Keep source and edition metadata recoverable and use a compact source note when useful. | Metadata form, validation, or provenance establishes neither meaning, truth, reliance, nor assurance. |
 
 The non-dominated combination is a plain local answer first, an exact durable address only for reuse, an inspectable relation only when current, and receiving-use judgment separately.
 

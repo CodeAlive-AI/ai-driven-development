@@ -65,7 +65,7 @@ Say what answer is needed, what later use it serves, and which source difference
 Use identified sources whose relevant claims can be inspected. A discipline or domain-family label may help discovery but is not a source.
 
 **Step 3 — Inspect the answer-changing role of each candidate.**
-Ask what claim or limit from that edition can change the answer. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
+Ask what claim or limit from that edition can change the answer. If that role depends on a disputed expression, pause selection only long enough to use F.0.1's ordinary branch: name the exact source, edition, and passage, and say in plain language what the expression means there. Then return to source selection. Do not run this branch for every candidate. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
 
 **Step 4 — Take the smallest sufficient cut.**
 Retain sources that cover distinct answer-changing roles. Exclude a candidate when no inspected claim from it changes the stated question or use. Do not optimize for a fixed count, diversity score, canonical status, or exhaustive appearance.
@@ -76,7 +76,7 @@ Name deliberate exclusions and why they do not change this answer. State a load-
 **Step 6 — Return one `SourceCutNote`.**
 Identify it under C.2.1 by three values: the ClaimGraph produced by Steps 1–5, the exact receiving question from Step 1 as EntityOfConcern, and the named effective ReferenceScheme that resolves the question, cited editions, and role claims. Keep the intended use in the ClaimGraph. Use a one-screen representation when it helps the receiver hold the result in view. Detailed source analysis stays with the receiving comparison, synthesis, or evidence method.
 **Step 7 — Recover only the meanings the work needs.**
-After the cut is stable, use F.0.1 and F.17 only for expressions whose readings affect the work. Do not manufacture a local-sense cell for every retained source.
+After the cut is stable, create an F.17 local-sense cell only for a retained expression that later reuse, a claim, a named receiver, or an actual relation needs. Do not postpone a meaning needed by Step 3 to this stage, and do not manufacture a cell for every retained source.
 
 #### F.1:4.3 - The `SourceCutNote`
 
@@ -118,7 +118,7 @@ Inspect the underlying source claims before changing the cut. A descriptor match
 - **Answer-change test.** What can each retained source change in the answer or action? If nothing, exclude it or state the missing role.
 - **Rival-and-limit test.** Is a known rival explanation, counterexample, or transfer limit still hidden? Add the source that makes it inspectable or return the source gap.
 - **One-source test.** Does one already identified source close the question? If yes, stop without using additional F.1 steps.
-- **Locality test.** Have two sources been treated as saying the same thing merely because they use the same word? Recover their meanings separately.
+- **Locality test.** Have two sources been treated as saying the same thing merely because they use the same word? If so, use the ordinary F.0.1 branch on the exact passages before deciding their roles, then return to selection.
 - **Search-policy test.** Did a score decide membership before source claims were inspected? Undo that decision.
 - **Memory test.** Can the receiver hold the cut and each source's role in view? Remove non-changing material or split genuinely different questions.
 - **Reopen test.** Can the note say what future change would require selection again?
@@ -161,7 +161,7 @@ Reopen if: the use adds physical transformation or service commitments, a relied
 Search policy: none needed for this bounded question.
 ```
 
-The resulting `SourceCutNote` is identified by that ClaimGraph, the stated receiving question, and the named reading scheme. F.0.1 or F.17 recovers local meanings only where later work needs them.
+The resulting `SourceCutNote` is identified by that ClaimGraph, the stated receiving question, and the named reading scheme. Because this cut turns on the difference between a designed workflow and a performed occurrence, the project recovers any disputed *process* reading through ordinary F.0.1 while inspecting source roles, before stabilizing the cut. It adds an F.17 cell afterward only if later reuse, a claim, a named receiver, or an actual relation needs one.
 
 #### F.1:5.3 - Portable first-hour case — function-to-module allocation
 
@@ -247,7 +247,7 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 | Search score as gate | Rank, distance, threshold, or model answer admits or excludes a source. | Use the reading to prioritize inspection; decide from the source's contribution. |
 | Exhaustive pretense | A small cut is reported as complete literature coverage or saturation. | State its question-relative limits and use the domain review method when needed. |
 | Compact-note inflation | The one-screen representation grows into a second source analysis. | Keep the ClaimGraph concise and place detailed analysis with the receiving work. |
-| Context container revival | Sources or meanings are treated as members of a universal Context object. | Identify exact sources and roles; recover meanings later through F.0.1 and F.17. |
+| Context container revival | Sources or meanings are treated as members of a universal Context object. | Identify the exact sources. When a source-role decision depends on a disputed expression, recover its plain local meaning through F.0.1 before selection; create an F.17 cell only for a later durable need. |
 
 ### F.1:9 - Consequences
 
@@ -275,13 +275,13 @@ This keeps the useful part of purposive and iterative sampling—selection for a
 
 ### F.1:11 - SoTA-Echoing
 
-| Current method line | Useful move adopted or adapted | Limit retained |
+| Current method line and exact sources | Decision and effect in `F.1` | Limit retained |
 | --- | --- | --- |
-| Page et al., *PRISMA 2020 statement* (2021), and Rethlefsen et al., *PRISMA-S* (2021) | Make eligibility, sources, searches, updates, and reporting recoverable when a systematic review is actually required. | PRISMA is reporting guidance for systematic reviews, not a universal source-selection rule. |
-| Ames, Glenton, and Lewin, *Purposive sampling in a qualitative evidence synthesis* (2019) | Fit a manageable selection to an explicit synthesis objective while keeping variation and omissions visible. | The health-review frame and richness scale are not imported as FPF admission rules. |
-| Dixon-Woods et al., *Conducting a critical interpretive synthesis* (2006), with Perlman, Ben-Sheleg, and Ellen (2026; online 2025) | Let a compass question and emerging explanation reopen iterative source selection across heterogeneous evidence. | F.1 stops with the source cut; it does not perform synthesis or claim saturation. |
-| Malterud, Siersma, and Guassora, *Information Power* (2016) | Support rejecting a universal count and making sufficiency purpose-relative. | Interview samples and source selections are different objects. |
-| van de Schoot et al., active-learning support for systematic reviews (2021) | Use active learning to prioritize candidate inspection under a named policy. | Ranking efficiency establishes neither relevance, truth, nor completeness. |
+| Page et al., *The PRISMA 2020 statement: an updated guideline for reporting systematic reviews* (2021), and Rethlefsen et al., *PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews* (2021). | **Adapt as a boundary source.** When a systematic review is actually required, keep its eligibility, information sources, searches, updates, and reporting recoverable and continue with that domain method. | Reporting guidance does not select sources for an ordinary F.1 question or establish conceptual relevance. |
+| Ames, Glenton, and Lewin, *Purposive sampling in a qualitative evidence synthesis: a worked example from a synthesis on parental perceptions of vaccination communication* (2019), DOI 10.1186/s12874-019-0665-4. | **Adapt.** Fit a manageable selection to the stated objective while keeping variation and deliberate omissions visible; in F.1, retain sources only for inspected answer-changing roles. | The health-review frame and richness scale are not FPF admission rules. |
+| Dixon-Woods et al., *Conducting a critical interpretive synthesis of the literature on access to healthcare by vulnerable groups* (2006), read with Perlman, Ben-Sheleg, and Ellen, *Making sense of conducting a critical interpretive synthesis: A scoping review* (2026; online 2025). | **Adapt and bound.** Let a compass question and an emerging explanation reopen iterative selection across heterogeneous evidence. | F.1 stops with the source cut; it performs neither synthesis nor a saturation claim. |
+| Malterud, Siersma, and Guassora, *Sample Size in Qualitative Interview Studies: Guided by Information Power* (2016), DOI 10.1177/1049732315617444. | **Adapt only as a bounded analogy.** Reject a universal source quota and make sufficiency relative to the receiving question and use. | Interview samples and source selections are different objects; F.1 imports neither the information-power model nor a saturation rule. |
+| van de Schoot et al., *An open source machine learning framework for efficient and transparent systematic reviews* (2021), DOI 10.1038/s42256-020-00287-7. | **Adapt as optional search assistance.** Use active learning to prioritize candidate inspection under a named local search policy; decide membership only after inspecting source claims. | Ranking efficiency establishes neither relevance, truth, nor completeness. |
 
 The method remains question-relative, claim-inspecting, finite, and explicit about limits. Reopen the comparison when current source-selection practice offers a cheaper way to expose answer-changing omissions without turning a search proxy into a selection verdict.
 
@@ -290,8 +290,8 @@ The method remains question-relative, claim-inspecting, finite, and explicit abo
 **Builds on.**
 
 - `C.2.1` identifies the `SourceCutNote` from its ClaimGraph, the exact receiving question as EntityOfConcern, and its effective ReferenceScheme, and distinguishes that episteme from its representation.
-- `F.0.1` recovers one source-local meaning after the source is selected.
-- `F.17` supplies a durable local-sense cell only when the receiving work needs one.
+- `F.0.1` supplies a plain local reading during selection when a candidate's answer-changing role depends on a disputed expression.
+- `F.17` supplies a durable local-sense cell after selection only when later reuse, a claim, a named receiver, or an actual relation needs one.
 - `A.11` supplies the parsimony test; finiteness does not replace relevance with a fixed count.
 - `E.15` supplies affected-premise reopening across source editions.
 

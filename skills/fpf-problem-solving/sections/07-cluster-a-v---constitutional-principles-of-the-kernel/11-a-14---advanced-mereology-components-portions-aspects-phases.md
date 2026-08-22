@@ -27,7 +27,7 @@ This section introduces two **normative** sub‑relations of `partOf` that close
 
 It also restates guard-rails that keep local system-role kinds outside holon mereology by kind identity and keep **method values** outside A.14 structural component mereology, while allowing method holarchy through method patterns such as `A.3.1` and `B.1.5`. Describing epistemes such as `U.MethodDescription` and `U.WorkPlan` keep their C.2.1 identity: content or publication-unit inclusion may use ordinary episteme parthood, a proper interval of one unchanged episteme may use `PhaseOf`, and changed C.2.1 identity discriminators identify another episteme whose historical continuation is tested separately through `EpistemeEditionRelation`. It also clarifies how **MemberOf** fits: membership and collection-as-whole grounding start with A.14, C.13, and B.3.5 as appropriate; acting collective systems require `U.System` admission plus system-role assignment, method, work, and evidence patterns; whole reidentification uses B.2 only when existing-whole explanations fail.
 
-**Publication note (Working-Model first).** Read A.14 together with **E.14 Human-Centric Working-Model** and **B.3.5 CT2R-LOG**: publish the direct relation claim in the **Working-Model** layer and, when assurance is sought for a structural claim, link that assertion downward to one current C.2.1 construction-trace episteme in the **Compose-CAL Γ_m** `sum`, `set`, or `slice` form. The trace reports exact participants, direct relation occurrences, the applicable construction rule, and identity or reidentification conditions. It creates none of them; order and time remain outside mereology.
+**Publication note (Working-Model first).** Read A.14 together with **E.14 Human-Centric Working-Model**. Publish the direct relation claim in the **Working-Model** layer; it remains usable without an assurance profile. Only when the publication elects **B.3.5 CT2R-LOG** or a named current requirement demands that profile does the assertion also link to one current C.2.1 construction-trace episteme in the **Compose-CAL Γ_m** `sum`, `set`, or `slice` form and declare that profile's `validationMode`. The trace reports exact participants, direct relation occurrences, the applicable construction rule, and identity or reidentification conditions. It creates none of them; order and time remain outside mereology.
 
 ### A.14:2 - Problem — what breaks without these distinctions?
 
@@ -76,12 +76,13 @@ The classical pair **ComponentOf** (structural, discrete) and **ConstituentOf** 
 
 * **POR‑1 (Partial order).** PortionOf is reflexive, antisymmetric, transitive on its domain.
 * **POR‑2 (Metrical dominance).** If `x ProperPortionOf y` then `0 < μ(x) < μ(y)` for the agreed μ.
-* **POR‑3 (Additivity on disjoint portions).** If `x ⟂ y` (no overlap) and both PortionOf y, then `μ(x ⊔ y) = μ(x)+μ(y)` and `x ⊔ y PortionOf y`.
+* **POR‑3 (Additivity on disjoint portions).** If `PortionOf(x,y)`, `PortionOf(z,y)`, and `x ⟂ z` (the two portions do not overlap), and their join is admitted under the same measure and boundary rule, then `μ(x ⊔ z) = μ(x)+μ(z)` and `PortionOf(x ⊔ z,y)`. `ProperPortionOf` additionally requires the joined measure to remain strictly below `μ(y)`; a join equal to the whole is `PortionOf` but not `ProperPortionOf`.
 * **POR‑4 (Kind integrity).** x and y must share the same **measure kind** and **unit** (or a declared conversion).
 * **POR‑5 (Boundary compatibility).** For physical wholes, the whole’s boundary encloses the union of its portions; cross‑boundary “leaks” are interactions, not portions.
 
 **Didactic tests.**
 ✔ “5 kg from a 20 kg billet” — PortionOf.
+✔ Two disjoint 5 kg cuts from the same 20 kg billet have a 10 kg join under the same mass unit and boundary rule; that join is still a ProperPortionOf the billet.
 ✔ “Pages 1–10 of the report” — PortionOf (μ = page or token count).
 ✘ “The pump module of the plant” — **ComponentOf**, not PortionOf.
 ✘ “The Methods section of the paper” — **ConstituentOf**, not PortionOf.
@@ -96,22 +97,24 @@ The classical pair **ComponentOf** (structural, discrete) and **ConstituentOf** 
 
 **Axioms (A14‑PHA‑\*)**
 
-* **PHA‑1 (Strict partial order).** `PhaseOf` is irreflexive, asymmetric, and transitive on proper temporal restrictions of one unchanged carrier. In particular, `PhaseOf(y,y)` is false: a whole-lifetime or self-reference is not a proper temporal part.
-* **PHA‑2 (Coverage).** The whole is the union of its maximal, non‑overlapping phases over its lifetime interval.
-* **PHA‑3 (No paradoxical overlap).** Phases of the **same carrier** do not overlap in time; overlapping variants require `PhaseOf` on *aspects* or different carriers.
-* **PHA‑4 (Identity through change).** Properties may vary between phases, but the carrier’s identity criteria hold continuously (e.g., same serial number, same legal identity, same theorem statement).
-* **PHA‑5 (Escalation to MHT).** If identity criteria break (e.g., metamorphosis with new objectives), **declare a Meta‑Holon Transition (B.2)** rather than a PhaseOf.
+* **PHA‑1 (Strict temporal parthood).** `PhaseOf` is irreflexive, asymmetric, and transitive on proper temporal restrictions of one unchanged carrier. In particular, `PhaseOf(y,y)` is false: a whole-lifetime or self-reference is not a proper temporal part.
+* **PHA‑2 (Proper interval and same carrier).** `PhaseOf(x,y)` requires the interval of x to be a proper sub-interval of y's interval and the carrier-identity rule to hold throughout both. It does not require x to be a maximal cell of a partition.
+* **PHA‑3 (Nesting and overlap are allowed).** Temporal restrictions of the same carrier may nest or overlap. A week may be part of a year-long phase, and a diagnostic window may overlap a calibration window. Those facts are not contradictions and do not by themselves select an aspect or partition.
+* **PHA‑4 (Selected partition is an additional claim).** When a use needs exhaustive non-overlapping cells, declare one carrier, one interval to be covered, one analysis aspect or partition rule, and the selected family of `PhaseOf` values. Only cells of that same explicitly selected partition must be pairwise non-overlapping and jointly cover the declared interval. Another aspect or rule may select a different, overlapping family.
+* **PHA‑5 (Identity through change).** Properties may vary between phases, but the carrier’s identity criteria hold continuously (e.g., same serial number, same legal identity, same theorem statement).
+* **PHA‑6 (Escalation to MHT).** If identity criteria break (e.g., metamorphosis with new objectives), **declare a Meta‑Holon Transition (B.2)** rather than a PhaseOf.
 
 **Didactic tests.**
 ✔ “PumpUnit\#3 **before** calibration” — PhaseOf(Pump\#3\_pre, Pump\#3).
+✔ If `PhaseOf(Pump#3@week-32, Pump#3@2026)` and `PhaseOf(Pump#3@2026, Pump#3)`, transitivity also gives `PhaseOf(Pump#3@week-32, Pump#3)`. A high-vibration diagnostic window may overlap a calibration window for the same pump; neither is thereby a cell of one selected partition.
 ✔ “Specification episteme E during τ₂”, with the C.2.1 identity triple unchanged and a proper interval current — PhaseOf(E@τ₂, E). ✘ “Spec v2” — if a C.2.1 discriminator changed, identify another episteme and test `EpistemeEditionRelation(E_v1,E_v2)` separately; the label proves neither identity nor continuity.
 ✘ “Shift 1 of the same batch run” — use A.15.1 `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, or another exact Work-part or occurrence relation whose predicate obtains.
 ✘ “Prototype vs. production unit” — likely **different carriers**; use ComponentOf/ConstituentOf or MHT per criteria.
 
 #### A.14:5.3 - CT2R‑LOG & Compose‑CAL handshake *(normative link)*
 
-* A **structural relation claim** published in the Working-Model layer **SHALL**, when assurance is required, link through `tv:groundedBy` to one current C.2.1 construction-trace episteme in the `Γ_m.sum | Γ_m.set | Γ_m.slice` form (see **B.3.5** and **C.13**). The exact relation predicate, current facts, and occurrence-identity rule determine whether the occurrence obtains and how it is identified; the candidate's direct identity or reidentification rule determines continuity. The trace only reports that basis.
-* **PhaseOf** is **temporal parthood**; it **SHALL NOT** be grounded through `Γ_m`. Its assurance follows identity-through-time criteria (CC-PHA-1..3) and `Γ_time` ordering (B.1.4).
+* A direct **structural relation claim** is usable without this assurance handshake. When the publication elects B.3.5 or a named current requirement demands it, the published claim **SHALL** link through `tv:groundedBy` to one current C.2.1 construction-trace episteme in the `Γ_m.sum | Γ_m.set | Γ_m.slice` form (see **B.3.5** and **C.13**) and carry the profile's declared `validationMode`. The exact relation predicate, current facts, and occurrence-identity rule determine whether the occurrence obtains and how it is identified; the candidate's direct identity or reidentification rule determines continuity. The trace only reports that basis.
+* **PhaseOf** is **temporal parthood**; it **SHALL NOT** be grounded through `Γ_m`. Its assurance follows the same-carrier and proper-interval criteria, the separately declared selected-partition rule when one is claimed, and `Γ_time` ordering (B.1.4).
 * **MemberOf** remains **non-mereological** (CC-MEM-2). A `set` trace is truthful only after one exact collection, its identity rule, and the exact direct membership occurrences are grounded; no **ComponentOf** inference follows.
 
 Two quick identity tests apply before relying on a trace. The same listed constituents can form a different whole when their direct assembly relations or rule differ. Conversely, a permitted constituent replacement can preserve the same whole. An equal input list, a repeated trace, or `validationMode=axiomatic` decides neither case.
@@ -170,9 +173,9 @@ It also corrects representation bias. A BoM row, figure, graph edge, table row, 
 
 | ID                                    | Requirement                                                                                                                                                      | Purpose                                |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| **CC‑PHA‑1 (Proper interval & carrier identity)** | `PhaseOf(x,y)` requires `x ≠ y`, a proper sub-interval of y's lifetime, and an explicit identity criterion for y valid over the union of phases (e.g., serial number, legal identity, theorem statement). | Excludes self/whole-lifetime phasing and prevents re-identification by stealth. |
-| **CC‑PHA‑2 (Coverage & non‑overlap)** | The lifetime of y equals the union of its maximal, non‑overlapping phases (on the same aspect).                                                                  | Enables Γ\_time composition and audit. |
-| **CC‑PHA‑3 (Aspect clarity)**         | If two temporal slices of y overlap, they **MUST** be phases of **different aspects** (e.g., mechanical‑state vs software‑state), or else be different carriers. | Avoids paradoxical overlaps.           |
+| **CC‑PHA‑1 (Proper interval & carrier identity)** | `PhaseOf(x,y)` requires `x ≠ y`, a proper sub-interval of y's interval, and an explicit identity criterion for y valid throughout both restrictions (e.g., serial number, legal identity, theorem statement). | Excludes self/whole-lifetime phasing and prevents re-identification by stealth. |
+| **CC‑PHA‑2 (Nesting & overlap)** | Nested or overlapping `PhaseOf` values for one carrier **MAY** obtain. Do not infer a partition, aspect difference, or carrier difference merely from overlap. | Keeps universal temporal parthood consistent and permits ordinary windows. |
+| **CC‑PHA‑3 (Selected partition)** | If a claim selects an exhaustive partition, it **MUST** name one carrier, covered interval, aspect or partition rule, and family of phase cells. Only cells of that same selected partition are required to be pairwise non-overlapping and jointly cover the declared interval. | Makes coverage and non-overlap local to the claim that needs them. |
 | **CC‑PHA‑4 (Escalation)**             | If identity criteria fail during change, declare a **Meta‑Holon Transition** (B.2) instead of PhaseOf.                                                           | Makes re‑identification explicit.      |
 | **CC-PHA-5 (Episteme & Work boundary)** | `PhaseOf` **MAY** restrict one unchanged `U.MethodDescription` episteme to a proper interval only after its C.2.1 identity triple remains fixed. Changed description epistemes use `EpistemeEditionRelation` only when C.2.1's historical-continuation predicate obtains. Work intervals, episodes, performed parts, retries, resumptions, and later occurrences **SHALL** use A.15.1's exact relations; generic `PhaseOf` is not their substitute. `PhaseOf` never applies to a local system-role kind by kind identity or to `U.Method`. | Keeps episteme identity, edition continuity, and Work-temporal law with their subject patterns. |
 
@@ -180,7 +183,7 @@ It also corrects representation bias. A BoM row, figure, graph edge, table row, 
 
 | ID              | Requirement                                                                                                      | Purpose                                           |
 | ----------------| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| **CC-GND-1**   | Every published `ut:StructPartOf` assertion **MUST**, when this assurance policy applies, carry a `tv:groundedBy` link to one current C.2.1 construction-trace episteme in a C.13 `sum`, `set`, or `slice` form. The trace names independently grounded participants, direct relation occurrences, construction rule, and identity or reidentification conditions. | Makes the assertion's basis inspectable without making the trace its truth-maker. |
+| **CC-GND-1**   | A direct `ut:StructPartOf` assertion is usable without this assurance profile. When its publication elects B.3.5 or a named current requirement demands that profile, the assertion **MUST** carry a `tv:groundedBy` link to one current C.2.1 construction-trace episteme in a C.13 `sum`, `set`, or `slice` form and the profile's declared `validationMode`. The trace names independently grounded participants, direct relation occurrences, construction rule, and identity or reidentification conditions. | Makes an elected assurance basis inspectable without making it the relation's truth-maker. |
 | **CC-GND-2**   | For **epistemic** edges (`ut:EpiPartOf` and its sub-types), `tv:groundedBy` is **OPTIONAL**; instead supply **`ev:evidence`** and set **`validationMode in {axiomatic, postulate, inferential}`**. | Harmonises evidence treatment for epistemic edges. |
 | **CC-GND-3**   | The public query Standard remains `?x ut:PartOf+ ?y`; each returned occurrence still depends on its direct relation semantics and identity. `tv:AliasOf`, a construction trace, or `validationMode` may make the publication inspectable but **MUST NOT** create or reidentify the occurrence. | Preserves the one-query experience without moving relation authority into assurance apparatus. |
 
@@ -198,8 +201,8 @@ It also corrects representation bias. A BoM row, figure, graph edge, table row, 
 
 | ID                 | Requirement                                                                                                                                                              | Purpose                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| **CC-A14-10**      | A published structural Working-Model assertion **SHALL** set the author-declared assurance posture `validationMode=axiomatic` and link to one current C.2.1 construction-trace episteme with `tv:groundedBy -> Γ_m.sum\|set\|slice`. The direct relation and reidentification tests remain decisive; the trace and mode create neither occurrence nor identity and guarantee no timelessness. | Aligns A.14 with B.3.5 and C.13 while keeping ontology, identity, assurance posture, and currentness distinct. |
-| **CC‑A14‑11**      | **PhaseOf** edges **SHALL NOT** use Γ_m for grounding. The relation record **SHALL** provide identity criteria and non‑overlap per **CC‑PHA‑1..3** and reference **Γ_time** when ordering matters. | Keeps temporal parthood distinct from construction; preserves the plane firewall.       |
+| **CC-A14-10**      | A published structural Working-Model assertion **MAY** remain a direct relation claim without B.3.5 fields. When its publication elects B.3.5 or a named current requirement demands that profile, it **SHALL** declare the profile's `validationMode` and link to one current C.2.1 construction-trace episteme with `tv:groundedBy -> Γ_m.sum\|set\|slice`. The direct relation and reidentification tests remain decisive; the trace and mode create neither occurrence nor identity and guarantee no timelessness. | Keeps direct use lightweight while making an elected assurance posture inspectable. |
+| **CC‑A14‑11**      | **PhaseOf** edges **SHALL NOT** use Γ_m for grounding. The relation record **SHALL** provide identity and proper-interval criteria per **CC‑PHA‑1/2**; a selected exhaustive partition additionally follows **CC‑PHA‑3** and references **Γ_time** when ordering matters. | Keeps temporal parthood distinct from construction and partition-specific constraints.       |
 
 ### A.14:9.1 - Relation-use decision procedure
 
@@ -213,7 +216,7 @@ If yes, pick **PortionOf**. Confirm μ is declared (CC‑POR‑1/2). Test additi
 If yes, pick **ComponentOf** (physical) or **ConstituentOf** (conceptual). Do **not** use PortionOf here.
 
 **Step 3 — Is it the same carrier restricted to a proper time slice?**
-If yes, pick **PhaseOf**. Verify that the proposed part is not the whole carrier, its interval is a proper sub-interval, and identity and non-overlap conditions hold (CC‑PHA‑1/2/3). A whole-lifetime or self-reference needs no phase object. If identity criteria break, escalate to **B.2** (CC‑PHA‑4).
+If yes, pick **PhaseOf**. Verify that the proposed part is not the whole carrier, its interval is a proper sub-interval, and carrier identity holds (CC‑PHA‑1/2). Nested and overlapping restrictions are allowed. Only when the use selects an exhaustive partition must its cells follow the one declared aspect or partition rule, pairwise non-overlap, and coverage condition (CC‑PHA‑3). A whole-lifetime or self-reference needs no phase object. If identity criteria break, escalate to **B.2** (CC‑PHA‑4).
 
 **Step 4 — Is it a membership statement?**
 Use **MemberOf** only; avoid any part-inferences (CC-MEM-2). If you need a **collection as a whole**, use **C.13** (`Γ_m.set`) and **B.3.5** when assurance grounding is current. If you need **collective action**, first admit an acting collective `U.System`, then use the system-role-kind, assignment, method, work, and evidence patterns.
@@ -233,7 +236,7 @@ Use **MemberOf** only; avoid any part-inferences (CC-MEM-2). If you need a **col
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
 | **Γ\_sys (B.1.2)**          | Treat **PortionOf** as Σ‑additive stocks; **ComponentOf** must respect boundary integration; **PhaseOf** is not aggregated here.                       | Conserves extensive measures and keeps structural WLNK (weakest‑link) on components.          |
 | **Γ\_epist (B.1.3)** | **PortionOf** of texts/data uses μ = token/byte count; **ConstituentOf** composes arguments/sections; `PhaseOf` may restrict one unchanged episteme to a proper interval. Distinct MethodDescription or document epistemes use C.2.1 identity and `EpistemeEditionRelation` only when its predicate obtains. | Preserves provenance and avoids both trust inflation and label-based identity or continuity. |
-| **Γ\_ctx / Γ\_time (B.1.4)** | **PhaseOf** provides the legal slicing for time; order/dependencies live in **Γ\_ctx** and method graphs (A.15/B.1.5). **PortionOf** is orthogonal (quantities inside steps/runs).                                      | Ensures chronological consistency and monotone coverage.                                      |
+| **Γ\_ctx / Γ\_time (B.1.4)** | **PhaseOf** supplies proper temporal restrictions, including nested or overlapping windows. A separately selected partition supplies non-overlap and coverage only for its own cells. Order/dependencies live in **Γ\_ctx** and method graphs (A.15/B.1.5). **PortionOf** is orthogonal (quantities inside steps/runs). | Ensures chronological consistency without turning every temporal restriction into one partition. |
 | **Γ\_method (B.1.5)**          | Γ\_method composes Methods rather than A.14 structural parts. A recipe-labelled claim-bearing episteme is a **MethodDescription** only when its exact `EntityOfConcern` is one admitted `U.Method` and at least one substantive way-of-doing claim obtains under A.3.2; any graph form is a C.29-governed representation, not membership evidence. When a recipe refers to stuff‑like inputs, those are **PortionOf** statements on resources. | Separates recipe composition from structure.                                                  |
 | **Γ\_work (B.1.6)**          | Only **Work** carries resource deltas; when logging “consumed 5 kg from Tank A”, model it as **PortionOf** relation to the stock prior to consumption. | Makes Σ‑balance explicit; aligns with CC‑POR‑3/4.                                             |
 
@@ -252,15 +255,15 @@ Use **MemberOf** only; avoid any part-inferences (CC-MEM-2). If you need a **col
 
 1. Do I see "process", "procedure", "policy", or "script" used to mean enactment? — then **A.15/A.15.1**. If it names an episteme, use A.14 only for its content parthood or a proper interval of the unchanged C.2.1 identity; use C.2.1 for another episteme and any edition-continuity claim.
 2. Does every PortionOf have a declared μ and unit?
-3. Do phases cover a lifetime without overlap for the same aspect?
+3. Is this an ordinary proper temporal restriction, where nesting or overlap is allowed, or one explicitly selected exhaustive partition, whose cells alone must not overlap and must cover the declared interval?
 4. Are any roles/recipes appearing as parts? If yes, stop and refactor.
 
 ### A.14:12 - Consequences
 
 **Benefits**
 
-* **Predictable composition.** Σ‑additivity for portions and identity‑through‑time for phases make Γ‑proofs straightforward.
-* **History without confusion.** Temporal slicing is explicit and audit‑ready; no paradoxical overlaps.
+* **Predictable composition.** Σ‑additivity for portions, same-carrier temporal parthood, and explicit partition rules make Γ‑proofs inspectable.
+* **History without confusion.** Temporal slicing is explicit; nested and overlapping windows remain legal, while non-overlap and coverage are claimed only for a selected partition.
 * **Cleaner integration with roles and recipes.** The firewall prevents “functional object” creep into structure.
 * **Compatibility with engineering practice.** Mirrors *product breakdown* (components) vs *functional breakdown* (roles) vs *material stocks* (portions) vs proper temporal restrictions of one enduring carrier (phases), while leaving episteme editions and Work segmentation to their subject patterns.
 
@@ -277,7 +280,7 @@ A.14 exists because part-whole words carry identity, aggregation, measure, time,
 ### A.14:14 - SoTA-Echoing
 
 * **Metrical mereology** advances (e.g., recent work on quantity‑based parthood and additivity) motivate **PortionOf** with explicit μ and Σ‑laws, preventing the classic “stuff as components” fallacy.
-* **Temporal parts & identity through change** (renewed treatments in analytic metaphysics and formal ontology) motivate **PhaseOf** with coverage/non‑overlap and escalation when identity criteria fail.
+* **Temporal parts & identity through change** (renewed treatments in analytic metaphysics and formal ontology) motivate **PhaseOf** as transitive proper temporal parthood, with nesting and overlap allowed, partition-specific coverage/non-overlap, and escalation when identity criteria fail.
 * **Engineering ontologies (BORO lineage, Core Constructional practice, ISO 15926 family)** keep a strict separation between **functional breakdowns** (our Roles) and **product breakdowns** (our Components), with **stock/consumable** modelling (our Portions) handled by quantities, not by component trees.
 * **Knowledge-episteme edition histories** in contemporary MBSE and open-science practice motivate explicit endpoint identities and provenance-preserving composition. FPF uses the C.2.1 identity triple and independently obtaining `EpistemeEditionRelation` for distinct editions; A.14 retains `PhaseOf` only for a proper temporal restriction of one unchanged episteme.
 * The net effect is a **minimal‑sufficient** catalogue: two added sub‑relations close real modelling gaps while preserving **parsimony**, **didactic clarity**, and **Γ‑compatibility** across domains.

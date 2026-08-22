@@ -96,7 +96,7 @@ This pattern defines the `RelationSignature` for `SystemRoleAssignmentStateRelat
 
 | SlotKind | ValueKind | refMode | Meaning |
 |---|---|---|---|
-| `SystemRoleAssignmentSlot` | `U.SystemRoleAssignment` | `U.EntityRef` | The assignment occurrence being evaluated; its declared species remains recoverable. |
+| `SystemRoleAssignmentSlot` | `U.SystemRoleAssignment` | `U.RelationRef` constrained to `U.SystemRoleAssignment` | The exact assignment occurrence being evaluated; its declared species remains recoverable. |
 | `StatePredicateSlot` | `SystemRoleAssignmentStatePredicate` | `ByValue` | The exact predicate value identified under section 0.1. |
 
 These are the only two generic participants. `SystemRoleAssignmentStateRelation` obtains exactly while the assignment obtains and the fixed by-value predicate is true under its temporal reading. Its actual extent is the maximal continuous interval of that obtaining. An affirmative assertion or occurrence description may state the known extent as `systemRoleAssignmentStateExtent` only for an independently established occurrence; a receiving evaluation may state a separate `declaredSystemRoleAssignmentStateEvaluationWindow`. Neither temporal value, assertion polarity, reliance posture, taxonomy episteme, reference scheme, bridge, nor model-use structure is another relation participant.
@@ -209,7 +209,7 @@ The bearing-inspection method description declares `InspectionReady`, whose clau
 ```text
 SystemRoleAssignmentStateAssertion:
   directClaimFamilyRef: A.2.5 SystemRoleAssignmentStateRelation
-  SystemRoleAssignmentSlot: Robot7InspectionShiftAssignment-17
+  SystemRoleAssignmentSlot: U.RelationRef(Robot7InspectionShiftAssignment-17)
   StatePredicateSlot:
     systemRoleKindRef: U.KindRef(InspectorSystemRole)
     NormalizedTruthConditionClaimGraph:
@@ -267,7 +267,7 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 | Check | Question |
 |---|---|
 | `CC-A2.5-01` | Is the current object one `SystemRoleAssignmentStateRelation : U.Relation`, rather than a system-role kind, assignment, capability, assertion episteme, evidence relation, diagram, gate outcome, or Work occurrence? |
-| `CC-A2.5-02` | Does `SystemRoleAssignmentSlot` resolve to the assignment occurrence being evaluated and its declared `U.SystemRoleAssignment` species, with the holder and extent established under A.2.1? |
+| `CC-A2.5-02` | Does `SystemRoleAssignmentSlot` use a `U.RelationRef` constrained to `U.SystemRoleAssignment` and resolve to the exact assignment occurrence being evaluated, with its declared species, holder, and extent established under A.2.1? |
 | `CC-A2.5-03` | Is `StatePredicateSlot` present by value with exact system-role-kind domain, normalized truth clauses, temporal reading, applicability, and only meaning-bearing semantic-basis refs? |
 | `CC-A2.5-04` | Is actual state extent derived from uninterrupted predicate truth while the assignment obtains, with any target evaluation window kept separate? |
 | `CC-A2.5-05` | When occurrence identity is needed, does it use the fixed assignment, fixed predicate value, and maximal continuous truth interval rather than a representation key? |

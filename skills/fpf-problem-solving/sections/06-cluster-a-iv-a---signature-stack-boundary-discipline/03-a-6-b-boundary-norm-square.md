@@ -26,17 +26,17 @@ These labels are **claim-classification labels for statements**, not MVPK face k
 
 **Atomic claim.** An **atomic claim** is a sentence (or bullet) that performs exactly one logical role and is classifiable under exactly one quadrant. If a sentence mixes roles, it is **not atomic** and **MUST** be split before it can be classified.
 
-**Adjudication substrate (for classification).** For the purposes of this square, an atomic claim is classified by where its own truth condition or governance content is settled. This tells you how to classify the sentence; it does not make a commitment, grant, or finding exist.
+**Adjudication substrate (for classification).** For the purposes of this square, an atomic claim is classified by where its own truth condition or governance content is settled. This tells you how to classify the sentence; it does not make an individual commitment, grant, or finding exist.
 
-* **In-description or in-theory**: an `L-*` truth condition is settled by inspecting, proving, or type-validating the description; for a `D-*` claim, the description fixes the normative content and names the duty, commitment, or grant that the claim concerns.
+* **In-description or in-theory**: an `L-*` truth condition is settled by inspecting, proving, or type-validating the description; a generic `D-*` claim states exact normative content, while an individual `D-*` claim names the commitment or grant it concerns.
 * **In-work or in-execution**: deciding satisfaction requires observing executed work, inspecting carriers produced in work, or both.
 
-**Note (important).** Writing a `D-*` claim records what the boundary says; it does not make the named duty, commitment, or grant exist or establish compliance. When the wording is about permission, use the permission-word branch in §8.4.1 to recover the exact object, what makes it obtain, and the evidence needed before reliance.
+**Note (important).** Writing a `D-*` claim records either generic normative content or a claim about an individual duty, commitment, or grant; it does not institute an individual relation or establish compliance. When the wording is about permission, use the permission-word branch in §8.4.1 to recover the exact object, what makes it obtain, and the evidence needed before reliance.
 
 **Modality family.** A claim is either:
 
 * **Truth‑conditional**: definitions, invariants, typing rules (“is”, “iff”, “∀”).
-* **Governance**: governance conditions, obligations, commitments, and exclusions (the RFC keywords `MUST`, `SHOULD`, and `MAY`, “is admissible”, “is blocked”, “commits to”).
+* **Governance**: prescriptions, individual obligations or commitments, grants, and exclusions (the RFC keywords `MUST`, `SHOULD`, and `MAY`, “is admissible”, “is blocked”, “commits to”).
 
 ### A.6.B:1 — Problem frame
 
@@ -85,7 +85,7 @@ The square yields four quadrants that are *mutually exclusive for atomic claims*
 | **In-description or in-theory** | **L — Laws & Definitions**                       | **D — Deontics & Commitments**             |
 | **In-work or in-execution**     | **E — Work‑Effects & Evidence**                  | **A — Admissibility & Gates**              |
 
-**Clarification (classify the claim, not its claim family).**
+**Clarification (classify the claim by its job, not by its subject pattern).**
 
 * Classify the exact atomic claim by what its sentence states and by the conditions that let a reader decide it.
 * The exact ClaimGraph located through the subject pattern supplies the referenced object's predicate and obtaining conditions; it does not choose the claim's quadrant.
@@ -101,7 +101,7 @@ The quadrants have canonical placements in the boundary stack:
 
 * **L → Signature layer:** `U.Signature.Laws` (and mechanism‑local semantic laws if present).
 * **A → Mechanism layer:** `U.Mechanism.AdmissibilityConditions` (entry gates / runtime admissibility predicates).
-* **D → Deontics & Commitments layer:** atomic governance claims that state a duty, recommendation-as-duty, prohibition, or commitment for one actual bearer. When permission wording is live, §8.4.1 decides whether its claim also belongs here.
+* **D → Deontics & Commitments layer:** atomic claims about a generic prescription or about one separately obtaining individual duty, recommendation-as-duty, prohibition, or commitment. When permission wording is live, §8.4.1 decides whether its claim also belongs here.
 * **E → Work-Effects & Evidence layer:** truth-conditional claims whose satisfaction requires actual work, evaluation, observation, or produced carriers.
 
 A published view **MUST NOT** introduce new semantic claims outside this L/A/D/E-classified claim set. **E.17 (MVPK)** is a specialization that enforces this rule for a fixed set of publication face kinds.
@@ -132,7 +132,7 @@ This section is the normative “API” of the square: what each quadrant is for
 
 **Intent.** Specify when a mechanism application is admissible: runtime entry predicates, validity gates, and applicability checks that require context or execution environment. An `A-*` predicate may consume a separately established result as one input, but it does not create or settle that result. If the sentence uses permission wording, choose its job with the branch in §8.4.1.
 
-**Common mistake #0 — Applicability ≠ Admissibility (informative).** Signature `Applicability` scopes *intended use and bounded context*; it is not a runtime entry gate. Runtime entry checks and admissibility predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If your prose reads like “clients must satisfy the applicability”, you almost certainly want a `D-*` duty + an `A-*` gate (linked by ID) instead.
+**Common mistake #0 — Applicability ≠ Admissibility (informative).** Signature `Applicability` scopes *intended use and bounded context*; it is not a runtime entry gate. Runtime entry checks and admissibility predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. If prose reads “clients must satisfy the applicability”, separate the `A-*` gate from either a generic `D-*` prescription or, when independently instituted, an individual duty linked to that gate.
 
 **Adjudication.** In‑work: evaluated at mechanism entry (or operationally at the point the mechanism is applied).
 
@@ -153,17 +153,16 @@ This section is the normative “API” of the square: what each quadrant is for
 
 #### A.6.B:5.3 — Quadrant D: Deontics & Commitments
 
-**Intent.** State one atomic governance claim: an obligation, recommendation-as-duty, prohibition, commitment, publication duty, or operational duty for one actual bearer. When a sentence sounds permissive, use §8.4.1; only its **Grant or norm** row enters D. Writing the `D-*` sentence states a claim about the named duty, commitment, or grant; it neither institutes that relation nor establishes that it obtains or is met.
+**Intent.** State one atomic deontic claim. A generic prescription states what one exact policy or other normative episteme requires; it does not create an individual duty bearer or commitment occurrence. A claim that one actual System or separately governed party has that duty instead cites one separately obtaining A.2.8 `U.Commitment`. When a sentence sounds permissive, use §8.4.1; only its **Grant or norm** row enters D. Writing the `D-*` sentence neither institutes a relation nor establishes compliance.
 
-**Adjudication.** In-description for claim classification: the text fixes the governance content. To decide whether the named duty, commitment, or grant exists or whether actors complied, use its subject pattern and inspect the required actual ground and evidence. The wording itself cannot decide either question.
+**Adjudication.** For a generic prescription, inspect the exact normative source, its applicable rule content, scope, and current edition. For an individual duty, apply A.2.8 to the separately obtaining commitment and its actual basis. The wording itself decides neither obtaining nor compliance.
 
-**Canonical form.** For an obligation, recommendation-as-duty, prohibition, or commitment, name the actual duty bearer and use `A.2.8` to test the separately identified `U.Commitment` relation. A system-role kind or assignment may be a rule ground but is neither the bearer nor the duty. If the sentence instead claims responsibility, name an admitted domain responsibility predicate and its actual participants, or return its exact missing governor. A permissive-looking word does not by itself select D; use the permission-word branch in §8.4.1, whose **Grant or norm** row supplies the different participant and ground test for a grant. Commitment examples:
+**Canonical form.** First choose the route. A generic D claim names the normative episteme and the rule content being stated, without inventing an individual bearer. An individual-duty D claim names the actual bearer and exact `U.Commitment`; a system-role kind or assignment may be a rule ground but is neither bearer nor duty. A responsibility claim uses an admitted domain responsibility predicate and its actual participants, or returns its exact missing governor. A permissive-looking word does not by itself select D; use §8.4.1 for the grant route. Examples:
 
-* “Actual bearer `ClientIntegrator-A` **MUST** satisfy `A-…`.”
-* “Actual bearer `TelemetryOperations-A` **SHALL** retain carriers …”
-* “Actual bearer `ProviderSystem-A` **SHALL** meet `E-…` under exclusions …”
+* Generic: “`APIEntryPolicy-v4` requires covered clients to satisfy `A-…`.” No individual commitment is asserted.
+* Individual: “Actual bearer `ClientIntegrator-A` has commitment `COM-17` to satisfy `A-…`.”
 
-**Canonical assertion (recommended; lintable).** When the claim must be reused or audited, represent it as a `CommitmentAssertion` about one exact separately obtaining `U.Commitment`, not as the relation itself. Make explicit:
+**Canonical assertion (recommended; lintable).** Use a `CommitmentAssertion` only when an individual-duty claim must be reused or audited. It concerns one exact separately obtaining `U.Commitment` and makes explicit:
 
 * `entityOfConcernRef`, resolving to one exact `U.Commitment` occurrence, and the `D-*` claim ID;
 * exactly one actual bearer branch: `dutyBearerSystemRef` or `dutyBearerPartyRef`;
@@ -176,11 +175,11 @@ The assertion states and supports a claim about the relation. Its fields, public
 
 **Prohibitions.**
 
-* A `D-*` statement **MUST NOT** use “the system, service, interface, or specification” as a vague grammatical subject. Name the actual duty-bearing system or separately governed party and the exact `U.Commitment`; cite a system-role assignment only when the constitutive rule uses it as an applicability ground. Use `A.6.C` when promise, utterance, approval, guarantee, or agreement-like boundary language is live.
+* A generic `D-*` statement **MUST NOT** invent an individual bearer or commitment; name its exact normative source and rule content. An individual-duty `D-*` statement **MUST NOT** use “the system, service, interface, or specification” as a vague subject; name the actual duty-bearing system or separately governed party and exact `U.Commitment`, with an assignment only when the constitutive rule uses it as a ground. Use `A.6.C` when promise, utterance, approval, guarantee, or agreement-like boundary language is live.
 * A `D-*` statement **MUST NOT** restate `L-*` or `A-*` predicates in new words when an ID exists; it **SHOULD** reference the ID.
 * A `D-*` statement **MUST NOT** pretend that a duty, commitment, or grant is a law or that writing the claim makes it obtain.
 
-**A.7 EntityOfConcern binding.** A `D-*` claim episteme concerns the exact duty, commitment, or grant named by its content; it does not substitute for that object. When permission wording is live, the branch in §8.4.1 names the subject pattern and the obtaining or non-obtaining test.
+**A.7 EntityOfConcern binding.** A generic `D-*` claim episteme concerns the exact normative rule content it states. An individual `D-*` claim concerns the exact duty, commitment, or grant named by its content and does not substitute for that object. When permission wording is live, the branch in §8.4.1 names the subject pattern and the obtaining or non-obtaining test.
 
 **Required references (explicit).**
 
@@ -229,13 +228,14 @@ If a claim’s meaning materially depends on another L/A/D/E-classified claim, t
 
 These patterns are valid (and common). The square becomes operational when these links are used systematically.
 
-##### A.6.B:6.2.1 - (D → A) Duty-to-gate linkage
+##### A.6.B:6.2.1 - (D → A) Prescription-or-duty-to-gate linkage
 
-When governance requires someone to comply with a gate:
+When governance says that a gate must be satisfied or enforced:
 
-* `D-*`: “Actual bearer **MUST** satisfy or enforce `A-*`.”
+* generic `D-*`: “`Policy-P` requires covered subjects to satisfy or enforce `A-*`”; or
+* individual `D-*`: “Actual bearer `S` has commitment `C` to satisfy or enforce `A-*`.”
 
-This separates **what is admissible** (A) from the separately instituted duty (D). If responsibility is also claimed, state its admitted direct domain predicate or exact missing governor rather than inferring it from the duty.
+This separates **what is admissible** (A) from generic normative content and any separately instituted individual duty (D). If responsibility is also claimed, state its admitted direct domain predicate or exact missing governor rather than inferring it from the duty.
 
 ##### A.6.B:6.2.2 - (E → A) Evidence-for-gate linkage
 
@@ -245,14 +245,14 @@ When gate decisions must be observable:
 
 This separates **gate semantics** (A) from **evidence semantics** (E).
 
-##### A.6.B:6.2.3 - (D → E) Duty-to-evidence linkage
+##### A.6.B:6.2.3 - (D → E) Prescription-or-duty-to-evidence linkage
 
-When governance requires evidence production, retention, or exposure or commits to measured properties:
+When governance prescribes evidence production, retention, exposure, or a measured property:
 
-* `D-*`: “Actual bearer **MUST** retain or expose carrier class `C` used by `E-*` …”
-* `D-*`: “Provider **SHALL** meet `E-*` under exclusions …”
+* generic `D-*`: “`Policy-P` requires covered subjects to retain or expose carrier class `C` used by `E-*` …”; or
+* individual `D-*`: “Actual bearer `S` has commitment `CMT` to meet `E-*` under exclusions …”
 
-This separates **obligation or commitment** (D) from **adjudication** (E).
+This separates a **generic prescription or individual duty** (D) from its **adjudication** (E).
 
 ##### A.6.B:6.2.4 - (A/E → L) Semantic grounding linkage
 
@@ -264,7 +264,7 @@ This prevents “metric drift” and “definition drift” across views.
 
 ##### A.6.B:6.2.5 - (D → L) Governance-to-definition linkage
 
-When an obligation or commitment relies on precise term or metric meanings:
+When a generic prescription or individual obligation relies on precise term or metric meanings:
 
 * `D-*` references `L-*` that define the terms or metrics it uses.
 
@@ -272,11 +272,11 @@ This keeps governance text from accidentally redefining semantics in prose.
 
 #### A.6.B:6.3 — The “triangle decomposition” for mixed sentences
 
-**Normative rule (decomposition).** A conforming boundary text **SHALL** decompose any mixed sentence that expresses (i) an entry condition, (ii) an obligation to satisfy or enforce it, and (iii) an observability expectation into the three quadrants:
+**Normative rule (decomposition).** A conforming boundary text **SHALL** decompose any mixed sentence that expresses (i) an entry condition, (ii) a generic prescription or individual obligation to satisfy or enforce it, and (iii) an observability expectation into the three quadrants:
 
 * **A:** admissibility predicate (`A-*`)
-* **D:** duty or commitment referencing the gate (`D-* → A-*`)
-* **E:** evidence binding referencing the gate (and carriers) (`E-* → A-*`)
+* **D:** generic prescription or individual-duty claim referencing the gate (`D-* → A-*`)
+* **E:** evidence binding referencing the gate and carriers (`E-* → A-*`)
 
 This is the canonical repair for “contract soup” around validity, authorization, compliance, audit, and security boundaries.
 
@@ -361,24 +361,24 @@ Convert a boundary-ish sentence that mixes “laws / gates / duties / evidence�
 * **A** if it is an *in‑work* **gate predicate**: what the mechanism admits at application time (“admissible iff …”). It is not a duty and MUST NOT be phrased as one.
   **Guardrails:** `A-*` SHOULD be written in predicate form and MUST NOT (i) use RFC deontic keywords as if it were an agent obligation, (ii) claim that evidence carriers exist (that is `E-*`), or (iii) assign responsibility or enforcement (that is `D-*`).
   *(Do not confuse this with `Signature.Applicability`: applicability scopes intended meaning and intended use; it is not a runtime entry gate.)*
-* **D** if the exact atomic statement states a duty, recommendation-as-duty, prohibition, or commitment for one actual bearer. A permissive sentence enters D only through the **Grant or norm** row below.
-  **Guardrails:** a duty or commitment claim names its actual duty bearer and satisfies the direct A.2.8 predicate; a grant claim instead follows the participant and ground test in the **Grant or norm** row. A system-role kind or assignment may be a rule ground but is neither bearer nor deontic relation. Writing either claim does not make its object obtain.
+* **D** if the exact atomic statement states either a generic prescription or an individual duty, recommendation-as-duty, prohibition, or commitment. A permissive sentence enters D only through the **Grant or norm** row below.
+  **Guardrails:** a generic claim names the exact normative episteme and applicable rule content without inventing an individual relation. An individual-duty claim names its actual bearer and exact separately obtaining A.2.8 commitment. A grant claim instead follows the participant and ground test in the **Grant or norm** row. A system-role kind or assignment may be a rule ground but is neither bearer nor deontic relation. Writing any claim does not make its object obtain.
 * **E** if it is an *in-work* truth-conditional claim whose satisfaction requires actual work, evaluation, observation, or produced carriers.
   **Predicate-specific minimum:** name the exact `E-*` predicate and object, then the actual work, evaluation, or observation, scope/window, comparison frame, and other settling conditions that this predicate needs. Add an evidence or source-use relation, carrier/schema, viewpoint, or consumer only when the receiving gate, plan, audit, assurance, or other reliance decision depends on that support.
   **Guardrails:** `E-*` SHOULD NOT use RFC deontic keywords, MUST NOT hide a gate predicate (that is `A-*`), and MUST NOT cite `D-*`.
-  *(If the source sentence is “Role SHALL measure, retain, or expose …”, recover the actual bearer and classify the obligation to **D**, even if it is about evidence.)*
+  *(If the source sentence is “Role SHALL measure, retain, or expose …”, first decide whether it is a generic prescription about an exact system-role kind or a claim about one actual bearer. Classify either as **D**, but assert an individual commitment only on the second route.)*
 
-**Step 3 — Triangle decomposition.** If the original sentence mixes (i) an entry condition, (ii) an obligation or commitment for an actual bearer, and (iii) an observability expectation (a common failure mode with “guarantee, ensure, approved, or aligned”), decompose it into:
+**Step 3 — Triangle decomposition.** If the original sentence mixes (i) an entry condition, (ii) a generic prescription or an individual obligation or commitment, and (iii) an observability expectation (a common failure mode with “guarantee, ensure, approved, or aligned”), decompose it into:
 
 * **A**: the admissibility predicate (what must be true to treat the claim as applicable),
-* **D → A**: which actual bearer has a duty to keep or enforce the predicate; any responsibility relation is stated separately under its direct domain predicate
+* **D → A**: which exact policy prescribes keeping or enforcing the predicate, or which actual bearer has that separately instituted duty; any responsibility relation is stated separately under its direct domain predicate
 * **E → A**: what evidence or traces are used to adjudicate the predicate.
 
 **Permission-word branch (use only when the sentence sounds permissive).** Choose the row by the job the sentence performs, not by the word *may*, *approved*, *authorized*, or *permitted*.
 
 | Branch | Ask this plain question | Square result | Subject pattern and what closes the row |
 |---|---|---|---|
-| **Grant or norm** | Does the sentence tell a named subject what it must or must not do, or tell a named beneficiary which action it is permitted to perform and under what conditions? | **D** | Use `A.2.8` for the duty/prohibition/commitment. For a grant use `A.2.8.PER`: name the exact grant occurrence, beneficiary, action, scope/window, and the policy-valid `A.2.9` act with its performer and assignment; confirm that the policy conditions still hold, and that no valid revocation or supersession ended the grant; cite the evidence needed before reliance. |
+| **Grant or norm** | Does the sentence state a generic prescription, claim that one actual bearer has an individual duty, or tell a named beneficiary which action is permitted and under what conditions? | **D** | Use `A.2.8` for the generic-prescription or individual-duty route; only the individual route cites one separately obtaining commitment. For a grant use `A.2.8.PER`: name the exact grant occurrence, beneficiary, action, scope/window, and policy-valid A.2.9 act with its performer and assignment; confirm current policy conditions and absence of valid revocation or supersession; cite evidence needed before reliance. |
 | **Gate** | Is a mechanism deciding whether this application may enter by checking the grant, finding, or conflict named by another row? | **A** | Use the mechanism or gate pattern and name its entry predicate. The named object is an input; the gate neither creates nor resolves it. |
 | **Actual exercise** | Did this dated Work match the named grant's action and beneficiary while that grant was in force? | **E** | Use `A.2.8.PER PermissionExerciseRelation@Context`: name the exact Work, grant occurrence, performer/assignment or on-behalf-of ground, scope, and interval. A failed match means that exercise relation does not obtain. |
 | **Weak evaluation or non-violation** | Did an evaluation of a current, sufficiently complete normative frame find no applicable prohibition before action, or no violation in the actual Work? | **E** | Use the exact `NonProhibitionFinding@Context` or `NonViolationFinding@Context`, its evaluation Work, frame, subject/action or Work, scope, and window. A stale or incomplete frame returns `unresolved`. |
@@ -401,7 +401,7 @@ Choose one row. If one sentence answers two questions, split it before classific
 **Step 5 — Bind references (minimal A.7 discipline).**
 
 * Place **L** claims in `Signature.Laws` (and mechanism-local semantic laws if present), and **A** claims in `Mechanism.AdmissibilityConditions`.
-* Bind each **D** claim to its actual duty-bearing System or separately governed party and exact `U.Commitment`; cite an exact system-role assignment only when the constitutive rule uses it as an applicability ground. State responsibility and authority, when claimed, through their own admitted direct relations or exact missing governors. Prefer ID references rather than restating `L-*` or `A-*` content.
+* Bind a generic **D** claim to its exact normative episteme and applicable rule content. Bind an individual-duty **D** claim to its actual duty-bearing System or separately governed party and exact `U.Commitment`; cite an assignment only when the constitutive rule uses it as a ground. State responsibility and authority, when claimed, through their own admitted direct relations or exact missing governors. Prefer ID references rather than restating `L-*` or `A-*` content.
 * Bind each **E** claim first to its exact predicate/object and to the actual work, evaluation, observation, scope/window, comparison frame, and other conditions that settle that predicate. Add a carrier/schema, evidence or source-use relation, viewpoint, and consumer only when a receiving reliance decision depends on them; a claim about a carrier's own existence or condition names the carrier as its object.
 
 **Optional drift-control.** Add each L/A/D/E-classified claim verbatim to a Claim Register row (A.6.B:7) with canonical location + references so faces can cite by ID without paraphrase.
@@ -580,7 +580,7 @@ As of `Γ_time=snapshot(t)`, a resolvable gate-status carrier (e.g., `GateCheckl
 
 ###### A.6.B:8.4.5.4 - Filled permission case (each sentence classified)
 
-**E-CAL-01 (Instituting communicative Work).** Admitted system `MaintenanceCoordinator-A` performed dated `CalibrationGrantAct-17 : U.SpeechAct` under `MaintenanceCoordinator-A@DayShift`; that obtaining assignment has the system as holder and covers the act. Separately obtaining `PlantCalibrationGrantAuthority-17` authorizes `MaintenanceCoordinator-A` to issue this grant in the stated context. The assignment supplies no authority and performs no act. `CalibrationGrantAct-17` satisfies `CalibrationGrantPolicy-v4` in `PlantCalibrationContext` and is the actual instituting Work, not a document or assignment acting in its place.
+**E-CAL-01 (Instituting communicative Work).** Admitted system `MaintenanceCoordinator-A` performed dated `CalibrationGrantAct-17 : U.SpeechAct` under `MaintenanceCoordinator-A@DayShift`; that obtaining assignment has the system as holder and covers the act. In this filled case, `CalibrationGrantPolicy-v4` does not require a separate authority relation, so none is asserted. The assignment supplies no authority and performs no act. `CalibrationGrantAct-17` satisfies the policy in `PlantCalibrationContext` and is the actual instituting Work. A policy variant that does require grant authority must cite one exact obtaining authority relation under its direct predicate or stop at `missing-governor[grant authority]`.
 
 **D-CAL-01 (Grant position).** `MaintenanceCalibrationGrant-17 : GrantedPermissionRelation@Context`, instituted by `CalibrationGrantAct-17`—the actual speech act stated in `E-CAL-01`—permits beneficiary `MaintenanceTechnicianSystemRole` to run `CalibrationProcedure-v3` in Zone 8 during `ServiceWindow-17`. `CalibrationGrantPolicy-v4` remains current, the grant still covers that system-role kind, procedure, zone, and window, and no valid revocation or supersession has ended this occurrence; this `D-*` claim records the grant but does not institute it.
 
@@ -588,9 +588,9 @@ As of `Γ_time=snapshot(t)`, a resolvable gate-status carrier (e.g., `GateCheckl
 
 **E-CAL-02 (Actual Work and actor).** During the early part of `ServiceWindow-17`, admitted system `Tech-17` performed dated `CalibrationWork-17B : U.Work` under obtaining assignment `Tech-17@Shift-B`, whose holder is `Tech-17` and whose extent covers the Work. `Tech-17` performed the Work; the assignment only grounds F.6 Work attribution.
 
-**E-CAL-03 (Optional exercise claim).** Because this case asks whether the grant was used, `CalibrationExercise-17B : PermissionExerciseRelation@Context` connects `CalibrationWork-17B` to `MaintenanceCalibrationGrant-17`: the Work instantiates `CalibrationProcedure-v3`; `Tech-17@Shift-B` is an assignment occurrence whose declared species uses `MaintenanceTechnicianSystemRole` as its assigned-kind domain; and the Work occurs in Zone 8 within `ServiceWindow-17` while the grant is current. If the action or beneficiary test failed, this exercise relation would not obtain.
+**E-CAL-03 (Optional exercise claim).** Because this case asks whether the grant was used, `CalibrationExercise-17B : PermissionExerciseRelation@Context` connects `CalibrationWork-17B` to `MaintenanceCalibrationGrant-17`: the Work instantiates `CalibrationProcedure-v3`; `Tech-17@Shift-B` is an assignment occurrence whose declared species uses `MaintenanceTechnicianSystemRoleKindDomain` as its assigned-kind domain, and the occurrence supplies `MaintenanceTechnicianSystemRole` as the value admitted by that domain; and the Work occurs in Zone 8 within `ServiceWindow-17` while the grant is current. If the action or beneficiary test failed, this exercise relation would not obtain.
 
-**D-CAL-02 (Exercise non-use boundary).** The boundary author **SHOULD** add `E-CAL-03` only when the reader needs to know whether the grant was exercised; otherwise the author stops with the separately named grant and Work rather than asserting an exercise relation by habit.
+**D-CAL-02 (Exercise non-use boundary).** The authoring rule says to add `E-CAL-03` only when the reader needs to know whether the grant was exercised; otherwise stop with the separately named grant and Work. This is a generic prescription for boundary text, not a claim that one particular author bears an individual `U.Commitment`.
 
 **E-CAL-04 (Later non-violation finding).** Admitted system `ComplianceEvaluator-4` performed dated `CalibrationComplianceEvaluation-17B : U.Work` under covering assignment `ComplianceEvaluator-4@QualityShift`; that Work checked `CalibrationWork-17B` against current `PlantCalibrationNormativeFrame-17`, explicitly complete enough for this technician, procedure, zone, and evaluation window, and returned `CalibrationNonViolation-17B : NonViolationFinding@Context(result=nonViolating)`. A stale or insufficient frame would return `unresolved`, even though the grant and exercise remain separately inspectable.
 
@@ -608,11 +608,11 @@ As of `Γ_time=snapshot(t)`, a resolvable gate-status carrier (e.g., `GateCheckl
 
 ###### A.6.B:8.4.6.1 - Tech register (2–5 lines)
 
-> “This boundary claim is defined by **L-…**, is applicable only under **A-…**, names its actual duty bearer and duty under **D-…**, and is adjudicated using evidence carriers **E-…**. Observed status or value is **E-…** for `Γ_time=…`.”
+> “This boundary claim is defined by **L-…** and applies only under **A-…**. **D-…** states either the exact generic prescription or the separately instituted duty of **[actual bearer]**. **E-…** states the evidence and observed status or value for `Γ_time=…`.”
 
 ###### A.6.B:8.4.6.2 - Plain register (1 paragraph)
 
-> “We mean **[short label]** in the sense of **L-…**. It is meant to be used only when **A-…** holds. **[Actual duty bearer]** has the stated duty to maintain that condition under **D-…**. Whether the condition holds is checked using **E-…**, and the latest recorded status or value is **E-…**. If responsibility is also claimed, cite its direct relation separately.”
+> “We mean **[short label]** in the sense of **L-…**, and use it only when **A-…** holds. **D-…** either states what the named policy requires or, when an individual duty was separately instituted, names its actual bearer. **E-…** states how the condition is checked and the latest status or value. If responsibility is also claimed, cite its direct relation separately.”
 
 ### A.6.B:9 — Bias‑Annotation
 
@@ -628,7 +628,7 @@ Lenses tested: **Gov**, **Arch**, **Ontological and Epistemic**, **Prag**, **Did
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | **CC‑A.6.B.1 (Atomicity).**              | A conforming boundary text **SHALL** decompose mixed sentences into **atomic claims** such that each atomic claim belongs to exactly one quadrant **L/A/D/E**.                                                    | Makes L/A/D/E classification unambiguous; prevents contract soup.       |
 | **CC‑A.6.B.2 (Quadrant classification).** | Each atomic claim **MUST** be classified by its own modality and adjudication position, not by its subject-pattern family. When permission wording is present, the single branch in §8.4.1 **MUST** select the claim's job before assigning L/A/D/E. | Prevents one pattern catalogue from replacing the square's decision. |
-| **CC‑A.6.B.3 (Form and obtaining constraints).** | `L-*` and `A-*` claims **MUST NOT** use RFC deontic keywords as operators; a duty or commitment `D-*` claim **MUST** name its actual bearer and exact separately obtaining `U.Commitment`, while a grant `D-*` claim **MUST** satisfy the participant and ground test in §8.4.1; neither claim text makes its relation obtain. A responsibility claim names its direct domain predicate or exact missing governor. An `E-*` claim **MUST** name the work, evaluation, or observation that settles it and any evidence used for reliance. | Keeps claim text, institutional obtaining, responsibility, and evaluated results distinct. |
+| **CC‑A.6.B.3 (Form and obtaining constraints).** | `L-*` and `A-*` claims **MUST NOT** use RFC deontic keywords as operators. A generic-prescription `D-*` claim **MUST** name its exact normative source and applicable rule content without inventing an individual occurrence; an individual-duty `D-*` claim **MUST** name its actual bearer and exact separately obtaining `U.Commitment`; a grant `D-*` claim **MUST** satisfy §8.4.1. No claim text makes its relation obtain. Responsibility uses its direct predicate or exact missing governor. An `E-*` claim **MUST** name the work, evaluation, or observation that settles it and any evidence used for reliance. | Keeps normative content, individual institution, responsibility, and evaluated results distinct. |
 | **CC‑A.6.B.4 (Explicit references).**    | Where a claim depends on another L/A/D/E-classified claim, that dependency **MUST** be expressed by explicit ID reference rather than restating the other claim in new words.                                                | Prevents paraphrase drift across layers and faces.           |
 | **CC‑A.6.B.5 (E‑claim adjudicability).** | Each `E-*` claim names its exact predicate and object plus the actual work, evaluation, or observation, scope/window, comparison frame, and other conditions required to settle that predicate. It adds an evidence/source-use relation, carrier/schema, viewpoint, and consumer only when the receiving reliance decision depends on that support. | Makes work-effects adjudicable without forcing unrelated carrier apparatus into every result claim. |
 | **CC‑A.6.B.6 (No gate smuggling).**      | Operational admissibility predicates **MUST NOT** appear as `L-*` laws in the signature layer; they **MUST** be `A-*` claims in the mechanism layer.                                                             | Preserves substitution and signature stability.          |
@@ -639,9 +639,9 @@ Lenses tested: **Gov**, **Arch**, **Ontological and Epistemic**, **Prag**, **Did
 | Anti‑pattern                 | Symptom                                            | Why it fails                                                | Repair (square‑consistent)                                                                  |
 | ---------------------------- | -------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | **Gate‑as‑law**              | Preconditions written as “laws”                    | Collapses signature or mechanism boundary; breaks substitution | Move to `A-*` in Mechanism.AdmissibilityConditions; reference `L-*` terms.                  |
-| **Deontics in predicates**   | “MUST” inside definitions or gates                 | Confuses governance with truth or admissibility                | Rewrite as `L-*`/`A-*` predicate; add `D-*` duty referencing it.                            |
-| **Interface‑as‑promiser**    | “The API promises or guarantees …”                    | Category error: interface descriptions do not commit              | Identify the actual duty bearer, exact separately obtaining `U.Commitment`, measured property (`E-*`), and metric definition (`L-*`); cite an assignment only as a rule ground when current, and use `A.6.C` when promise-content or agreement-like boundary wording is live. |
-| **Evidence‑free guarantees** | “Guaranteed p95 latency” with no measurement story | Unadjudicable; turns into marketing                         | Create `E-*` with carriers + conditions; link commitment as `D-* → E-*`.                    |
+| **Deontics in predicates**   | “MUST” inside definitions or gates                 | Confuses governance with truth or admissibility                | Rewrite the definition or gate as `L-*`/`A-*`; add a generic `D-*` prescription or an independently established individual-duty claim when current. |
+| **Interface‑as‑promiser**    | “The API promises or guarantees …”                    | Category error: interface descriptions do not commit              | Recover the exact policy and generic prescription, or the actual bearer and separately obtaining `U.Commitment` when an individual duty is claimed; keep measured property (`E-*`) and metric definition (`L-*`) separate, and use `A.6.C` for promise-content or agreement-like wording. |
+| **Evidence‑free guarantees** | “Guaranteed p95 latency” with no measurement story | Unadjudicable; turns into marketing | Create `E-*` with carriers and conditions; link the exact generic prescription or individual-duty claim as `D-* → E-*`. |
 | **Paraphrase drift**         | Same rule restated across faces                    | Divergence becomes invisible                                | Use IDs; faces cite IDs; optional Claim Register.                                           |
 | **View‑fork semantics**      | A face introduces new L/A/D/E content              | Violates “no new semantics” publication discipline          | Move new claim into canonical layer (L/A/D/E) or mark as informative only.                  |
 
@@ -671,7 +671,7 @@ By requiring atomicity and explicit cross‑quadrant references, the square conv
 * Leijen (2017) / Hillerström & Lindley (2018) (effects & handlers).
 * OpenTelemetry Specification (v1.0+, 2021–) (evidence carriers as traces, logs, and metrics).
 
-* **Effect systems & handlers:** clear separation between operation signature (L), handler and runtime behavior (A/E), and governance duties (D) whose actual bearer is an admitted operating or implementing System.
+* **Effect systems & handlers:** clear separation between operation signature (L), handler and runtime behavior (A/E), and generic prescriptions or separately instituted duties (D); only the latter name an actual operating or implementing System as bearer.
 * **Behavioural and session typing:** protocol laws (L) and admissibility (A) remain distinct from commitments (D) and runtime traces (E), improving interpretability of “progress and safety” style boundary guarantees.
 * **SRE and observability discipline:** treating traces, logs, and metrics as evidence carriers (E) and separating evidence semantics from retention and exposure duties (D) mirrors contemporary operational practice while staying tool‑agnostic.
 
@@ -690,7 +690,7 @@ Probe-coupled boundary language does not create a fifth quadrant. A boundary sen
 Action classification:
 
 1. Copy the boundary sentence being used for a decision.
-2. Split it into atomic claims before judging it: definition or law claim, admissibility or use-condition claim, individual duty claim, and work-and-evidence effect claim.
+2. Split it into atomic claims before judging it: definition or law claim, admissibility or use-condition claim, generic prescription or individual-duty claim, and work-and-evidence effect claim.
 3. Give each atomic claim its quadrant and identifier.
 4. Put the state, probe, update, or export part in the quadrant where it belongs rather than treating "quantum-like boundary" as one claim.
 5. Apply `A.6.P` to reusable relation words; use `F.18` only when recovered terms need durable names; apply `A.10` to evidence; apply `B.3` to assurance; apply `C.16` to measurement; apply `C.26.1` to any remaining probe-coupled state-reading claim.
@@ -702,7 +702,7 @@ For a local working note, the lighter action is enough: atomize the sentence men
 | --- | --- | --- |
 | The term, variable, state, frame, or relation being defined | `L-*` law or definition claim | Definition or invariant, without agent obligation language |
 | When a probe, metric, question, or bridge use is usable for the intended decision | `A-*` admissibility or use claim | Use condition, admissible use, non-admissible use, and neighboring-pattern continuation |
-| Who has a duty to apply, retain, expose, or avoid overusing the probe result; and, if separately claimed, who bears responsibility | `D-*` claim about one exact `U.Commitment`; separate direct responsibility claim or missing governor | Actual duty bearer and referenced L/A/E claim IDs; responsibility predicate, participants, scope, and identity only when that relation independently obtains |
+| What exact policy prescribes about applying, retaining, exposing, or avoiding overuse of the probe result; or which actual bearer has that individually instituted duty; and, if separately claimed, who bears responsibility | generic `D-*` prescription or individual `D-*` claim about one exact `U.Commitment`; separate direct responsibility claim or missing governor | Exact normative source and rule content for the generic branch; actual duty bearer and referenced L/A/E claim IDs for the individual branch; responsibility predicate and participants only when that relation independently obtains |
 | What work effect, carrier, trace, report, metric, or observed before-state or after-state supports the claim | `E-*` work-effect and evidence claim | Carrier, observation condition, time window, and evidence reference |
 
 Useful outputs:

@@ -64,7 +64,7 @@ It is not the text, code, diagram, model, plan, run, system-role kind, classific
 * **assignment-independent**: Method admission conditions may name local system-role kinds or capability-fit conditions, but named holders and obtaining assignments belong elsewhere;
 * **participant-semantic**: it may state generic participant meanings and method-side applicability without declaring `RelationSignature` SlotSpecs, `OperationAlgebra` argument or result positions, planned fillers, or actual participants.
 
-Do not begin by replacing *method* or *practice* with a preferred technical word. First finish the ordinary sentence, "Here the text is trying to name or assert ___." Then use this one routing map:
+Do not begin by replacing *method* or *practice* with a preferred technical word. First finish the ordinary sentence, "Here the text is trying to name or assert `___`." Then use this one routing map:
 
 | If the text is really about... | Govern it as... |
 | --- | --- |
@@ -209,7 +209,7 @@ When a method concerns change, its statement says what change a future enactment
 
 The constructor-theory and process-theory source line supports this separation but does not supply a universal method ontology. FPF uses it as follows:
 
-* An admitted `U.System` performs dated Work; A.15.1 identifies the Work, Method, time, and containing System, while F.6 identifies the assignment under which each performer acted. The assignment neither acts nor enacts the Method. A short Method explanation may omit an assignment identifier that no later claim uses.
+* An admitted `U.System` performs dated Work; A.15.1 identifies the Work, at least one obtaining `enactsMethod` relation, time, and at least one obtaining locally declared containing-system relation; another enactment relation is named only when the receiving claim relies on it, while F.6 identifies the assignment under which each performer acted. The assignment neither acts nor enacts the Method. A short Method explanation may omit an assignment identifier or further valid boundary that no later claim uses.
 * The `U.Method` is the reusable way under stated participant meanings, applicability, conditions, intended result or preserved condition, and bounds. A `U.MethodDescription` is an episteme that describes it.
 * A formal substrate or mathematical lens can make the method analyzable, and a `U.Mechanism` can declare the relevant operation family and laws. Neither becomes the method by providing a formula or implementation.
 * A cross-context Bridge, changed reference or model-use relation, mechanism realization, evaluation, or evidence-use claim remains a separately stated relation with its own participants.
@@ -253,7 +253,7 @@ First decide whether the question is about one reusable way, a composite way, or
 
 * **Independently identified constituents.** `InspectPumpSeal@PumpMaintenance-2026` and `ClassifyPumpSealCondition@PumpMaintenance-2026` are two `U.Method` values. `Pump37SealInspectionWork-2026-07-25T0900-0908` and `Pump37SealClassificationWork-2026-07-25T0910-0916` are two admitted A.15.1 Work occurrences.
 
-  `PumpDiagnosticAssignment` is a declared `U.SystemRoleAssignment` species. It defines the holder and assigned-kind participant meanings and uses `PumpDiagnosticSystemRole` as the local assigned-kind domain. Occurrence `Pump37DiagnosticAssignment-2026-07-25` has `PumpDiagnosticService-A : U.System` as holder and covers both Work occurrences. That System performs each Work under the assignment and within `Pump37MaintenanceCell-A`.
+  `PumpDiagnosticAssignment` is a declared `U.SystemRoleAssignment` species. Under A.2.1 it defines the holder and assigned-kind participant meanings and uses `PumpDiagnosticSystemRoleKindDomain` as the local assigned-kind domain. Occurrence `Pump37DiagnosticAssignment-2026-07-25` has `PumpDiagnosticService-A : U.System` as holder, `PumpDiagnosticSystemRole` as the assigned-kind value admitted by that domain, and an extent covering both Work occurrences. That System performs each Work under the assignment and within `Pump37MaintenanceCell-A`.
 
   The fixture states no Work-to-`Pump_37` predicate, so neither Work is said to affect or concern the pump merely because its designator contains `Pump37`.
 * **Selected obtaining relations.** `enactsMethod(Pump37SealInspectionWork-2026-07-25T0900-0908, InspectPumpSeal@PumpMaintenance-2026)` and `enactsMethod(Pump37SealClassificationWork-2026-07-25T0910-0916, ClassifyPumpSealCondition@PumpMaintenance-2026)` obtain under A.15.1. Their labels, times, or adjacency would not make them obtain.

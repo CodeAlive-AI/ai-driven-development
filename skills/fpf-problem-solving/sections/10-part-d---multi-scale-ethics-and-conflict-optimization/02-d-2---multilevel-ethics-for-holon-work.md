@@ -6,7 +6,7 @@
 
 **Use this when.** Use this pattern when a system, holon, method, work plan, work occurrence, policy, recommendation, architecture move, or publication use may improve one declared level or scope while harming another, or when responsibility is assigned across levels.
 
-**Not this pattern when.** If only the value frame is missing, use `D.1`. If the conflict structure is already current, use `D.3`. If the conflict has to be mediated or used in a decision, use `D.4`. If the current concern is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
+**Not this pattern when.** If only the value frame is missing, use `D.1`. If `D.3` has already described the conflict, use that result. If the conflict has to be mediated or used in a decision, use `D.4`. If the current concern is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** A local improvement is treated as ethically sufficient while another declared level, scope, or affected holon carries the harm.
 
@@ -29,7 +29,7 @@ A change can be beneficial at one declared level or scope while imposing harm, e
 | Local benefit vs. cross-level harm | A change can improve one declared scope while imposing cost, risk, or exclusion elsewhere. |
 | Situation-defined levels vs. fixed ladders | Multilevel ethics needs declared levels and scopes from the case, not a universal moral hierarchy. |
 | Holons in life vs. descriptions | The affected object may be a system, episteme, publication use, policy, or architecture move; the entry must not collapse these into one document concern. |
-| Early recognition vs. premature mediation | Use D.2 to make the conflict visible, D.3 for its structure, and D.4 for mediation. |
+| Early recognition vs. premature mediation | Use D.2 to make the conflict visible, D.3 to describe its sides and tension, and D.4 for mediation. |
 | Ethical concern vs. architecture residual | Cross-scope residuals can be architectural, ethical, or both; the next pattern to apply must be named by value. |
 
 ### D.2:2 - Solution
@@ -48,7 +48,7 @@ MultilevelEthicsEntry@Context:
   affectedEpistemeRefs?
   roleWordRecoveryRefs?: E.10.ROLE results when role wording occurs
   localSystemRoleKindRefs?: FinSet(U.KindRef)
-  systemRoleClassificationJudgmentRefs?: FinSet(U.RelationRef)
+  systemRoleClassificationAssertionRefs?: FinSet(U.EpistemeRef)
   systemRoleAssignmentRows?: FinSet({
     assignmentSpeciesRef: U.RelationKindRef constrained under U.SystemRoleAssignment
     assignmentOccurrenceRef: U.RelationRef constrained to an obtaining occurrence of assignmentSpeciesRef, with actual participants, holder, applicability, and extent recoverable
@@ -82,8 +82,8 @@ For this pattern, holon work includes material systems and epistemes when they a
 
 | Working situation | What to recover | Next pattern to apply |
 | --- | --- | --- |
-| A Method helps one team meet its target while increasing risk for another team or for users. | Affected holons, any independently current assignment, Method, actual Work when present, expected consequences, evidence, and each responsibility, commitment, permission, authority, or participation relation that the concern relies on. | `D.3` conflict structure |
-| A public policy helps a city-level goal while making one neighborhood or profession worse off. | Declared scopes, value concerns, responsibility claims, evidence, uncertainty. | `D.3` conflict structure |
+| A Method helps one team meet its target while increasing risk for another team or for users. | Affected holons, any independently current assignment, Method, actual Work when present, expected consequences, evidence, and each responsibility, commitment, permission, authority, or participation relation that the concern relies on. | `D.3` conflict description |
+| A public policy helps a city-level goal while making one neighborhood or profession worse off. | Declared scopes, value concerns, responsibility claims, evidence, uncertainty. | `D.3` conflict description |
 | A technical standard improves interoperability but excludes a minority device, language, publication form, or data source. | Standard or episteme whole, affected systems, publication and use relations, consequence horizon. | `D.3`, with `C.2.1` and `E.17` as needed |
 | A model or metric looks fair at one aggregate level but hides subgroup harm. | Metric, affected groups, causal claim, evidence set, audit condition. | `D.5`, with `C.28` when causal fairness is claimed |
 | An architecture move reduces residual at one holon level while creating cross-scope residual elsewhere. | Architecture structure, selected scopes, residual, affected value concerns. | `C.30.ILC`; use `D.3` if ethical conflict is live |
@@ -96,7 +96,7 @@ For this pattern, holon work includes material systems and epistemes when they a
 
 ### D.2:5 - Archetypal Grounding (Worked Slice)
 
-A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. The move may improve manufacturer quality control and reduce liability risk, but harm patients in regions where authorized service is unavailable. `D.2` opens the entry: manufacturer, patients, service organizations, and device fleet are named as affected holons; the applicable regulatory and project value-frame editions delimit the claim; the regional and service scopes are explicit; value concerns include safety, access, responsibility, and maintainability; and the work plan and expected consequences are named. `D.3` then maps the conflict; `D.4` handles mediation or decision use.
+A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. The move may improve manufacturer quality control and reduce liability risk, but harm patients in regions where authorized service is unavailable. `D.2` opens the entry: manufacturer, patients, service organizations, and device fleet are named as affected holons; the applicable regulatory and project value-frame editions delimit the claim; the regional and service scopes are explicit; value concerns include safety, access, responsibility, and maintainability; and the work plan and expected consequences are named. The team then uses `D.3` to record the conflict description and `D.4` for mediation or decision use.
 
 ### D.2:5.1 - Bias-Annotation
 
@@ -112,7 +112,7 @@ A product team wants to reduce service cost by making a medical device harder to
 | ID | Requirement | Purpose |
 | --- | --- | --- |
 | CC-D2-1 | Declared levels or scopes come from the situation and are named by value. | Prevents fixed moral ladders and false `U.Level`. |
-| CC-D2-2 | Affected holons, epistemes, Methods, actual Work, and consequences are named when current. Role wording is recovered through `E.10.ROLE`; a local kind and a System-classification judgment remain separate. Every assignment recovers its directly declared species and obtaining occurrence. Participation or affected-party status, responsibility, commitment, permission, and authority each use their own direct relation or exact `missing-governor`. | Keeps the entry usable without making assignment imply participation or responsibility. |
+| CC-D2-2 | Affected holons, epistemes, Methods, actual Work, and consequences are named when current. Role wording is recovered through `E.10.ROLE`; a local kind and a C.2.1 System-classification assertion episteme remain separate. Every assignment recovers its directly declared species and obtaining occurrence. Participation or affected-party status, responsibility, commitment, permission, and authority each use their own direct relation or exact `missing-governor`. | Keeps the entry usable without making assignment imply participation or responsibility. |
 | CC-D2-3 | `nextSubjectPatternLocator` is `D.3`, `D.5`, `C.30.ILC`, or another subject pattern named by value. | Keeps D.2 as entry recognition, not conflict solver. |
 | CC-D2-4 | Mathematical scale, threshold, optimization, or Pareto reasoning uses `C.29` or the direct measurement pattern. | Prevents math wording from becoming ethics ontology. |
 
@@ -142,13 +142,13 @@ The pattern deliberately avoids a fixed ladder. It asks for declared levels and 
 | Multilevel selection and holonic systems thinking | Ethical effects often appear across nested, overlapping, or situation-defined scopes; the case must declare the levels or scopes it uses instead of importing a fixed moral ladder. |
 | Applied ethics and responsibility practice | Responsibility and harm cannot be assigned only at the most local level when a method, work plan, policy, standard, architecture move, or recommendation moves consequences across scopes. |
 | FPF holon and episteme ontology | Affected systems, collections, work occurrences, disciplines, and epistemes may be current; value-frame editions, ClaimScope, and qualification windows delimit the ethical claim, while descriptions and publication use remain separate from the affected in-life object. |
-| Architecture residual discipline | A cross-scope residual can require architecture repair, ethical conflict structure, or both; D.2 names the next pattern to apply instead of treating architecture shape as ethical proof or ethics as architecture by default. |
+| Architecture residual discipline | A cross-scope residual can require architecture repair, a D.3 conflict description, or both; D.2 names the next pattern to apply instead of treating architecture shape as ethical proof or ethics as architecture by default. |
 
 ### D.2:11 - Relations
 
 - Builds on `D.1` for ethical value frame boundary.
 - Builds on `A.1`, `B.1`, and `C.13` for holon, level, scope, and part-whole grounding.
-- Coordinates with `D.3` for interlevel ethical conflict structure and with `D.4` for mediation or decision use.
+- Coordinates with `D.3` for the interlevel ethical conflict description and with `D.4` for mediation or decision use.
 - Coordinates with `D.5` for bias, fairness, impact audit, causal-fairness audit consumption, and ethical assurance.
 - Coordinates with `A.15`, `A.3.4`, `C.16`, `C.29`, and `C.30.ILC` when method, work, transformation, measurement, mathematical lens, or architecture residual claims are current.
 
