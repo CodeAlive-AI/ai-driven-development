@@ -919,9 +919,6 @@ SenseCell.SystemRoleKindRelationStructure.FPFCore.2026-08-09:
 
 ### F.17:12.5 - Bias-Annotation
 
-
-
-
 F.17 blocks table-bias: a row does not make the named object real, global, reusable, equivalent, or authoritative. It also blocks label-bias: the public name is a designation for a governed value, relation, slot, or local concept, not a substitute for the rules that define or constrain it, the scheme-based local-sense coordinate, Bridge, admissible-use statement, or currentness condition.
 
 ### F.17:13.5 - Conformance Checklist

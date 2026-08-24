@@ -196,7 +196,7 @@ Planning is the act of making the parity run *reproducible by construction*:
 3. **Define baseline-set reference.** Declare what counts as the baseline and how it applies to the selected subject in `BaselineBindingRef` (for example, through an EvidenceGraph path slice or an upstream shipped package or publication-record id). If `BaselineSet` also supplies the exact compared targets, say so and use the same refs by value; otherwise keep baseline and subject refs distinct.
 4. **Equalise window (and budget, if pinned).** Declare a single `FreshnessWindows` and apply it across all baselines; if `Budgeting` is used/pinned, it MUST be shared/pinned across baselines as well.
 
-When specialization is part of the parity claim, the same plan should also hold constant the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and freshness window; if transfer, retention, downstream exploitation efficiency, downside field, or corridor entry are part of the claim, those pins should be explicit as well, including the baseline relative to which corridor entry is being claimed.
+   When specialization is part of the parity claim, the same plan should also hold constant the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and freshness window; if transfer, retention, downstream exploitation efficiency, downside field, or corridor entry are part of the claim, those pins should be explicit as well, including the baseline relative to which corridor entry is being claimed.
 
 5. **Pin governance, CSLC comparability and admissibility references, and comparator references.** `CNSpecRef`, `CGSpecRef`, and `ComparatorSpecRef` are referenced with explicit edition pins.
 6. **Pin measurement/comparator definitions (conditional).** Where parity depends on mode‑specific definition records (e.g., DHC/QD/OEE), pin the relevant definition ids/editions/policies. The minimum required pins are declared by the applicable `Extensions` blocks (e.g., `G.9:Ext.DHCParityPins`, `G.9:Ext.QDArchiveParity`, `G.9:Ext.OEEParity`) and the referenced records they cite.
@@ -212,7 +212,7 @@ Execution is **one run** under the pinned plan:
 1. **Validate CSLC references and pins.** Validate the cited CSLC comparability and admissibility references, active pins, and witnesses; run eligibility or acceptance checks under the plan’s `TaskSignature (S2)` and refuse or abstain on non-admissible operations (record trace; no “fourth status”). If a live `A.21` gate consumes this check, cite its `GateDecisionRef`/`DecisionLogRef`; do not create a `G.9`-local CSLC gate.
 2. **Invoke selection/dispatch.** Apply **G.5** under the plan’s pinned refs and emit selector outputs in a form consistent with G.5’s `PortfolioMode` and selected-set semantics.
 
-When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so readers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside field, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
+   When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so readers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside field, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
 
 3. **Record the comparability mapping when used.** If `UNM_id?`, `NormalizationMethodId[]?`, or `NormalizationMethodInstanceId[]?` was declared, echo it in `ParityReport` or its explicit pins delta. Record the ids and any scoped notes required by the cited specification in the audit pins and SCR; cite the applicable `PathId` values.
 4. **Publish trace.** Emit `ParityReport` with the exact `ParityPlanRef`, its `BaselineBindingRef`, EvidenceGraph citations, and all active edition and policy-id pins, so the run can be checked and run again.
@@ -452,7 +452,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
    `ParityPlan` and `ParityReport` **SHALL** either pin the applicable dominance regime and portfolio mode through explicit references and policy ids, or cite their corresponding defaults in `G.Core.DefaultGoverningDefinitionIndex`. Any non-default promotion behaviour must be bound to a policy and recorded through its policy-id pin.
    `IlluminationSummary`, coverage, and regret **SHALL** be treated as telemetry (report-only by default); any promotion into dominance is an explicitly pinned CAL policy and **MUST** be recorded in the audit pins and SCR.
 
-5a. **CC‑G9.5a — Adaptation parity disclosure (local; conditional).**
+   5a. **CC‑G9.5a — Adaptation parity disclosure (local; conditional).**
    When the parity claim concerns bounded specialization, the ParityPlan and ParityReport **SHALL** pin the declared task family or target scope cut, the work-measure threshold target, adaptation budget, prior exposure declaration, and any transfer, retention, downstream exploitation efficiency, downside field, or corridor-entry baseline/evidence note that materially affects comparison.
 
 6. **CC‑G9.6 — Epsilon‑front thinning (local; conditional).**
@@ -470,7 +470,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
    Mode‑specific definition pins **SHALL** be included as declared by the active `Extensions` blocks (e.g., `G.9:Ext.QDArchiveParity`, `G.9:Ext.OEEParity`, including `EnvironmentValidityRegionId` when OEE parity is in scope).
 
 10. **CC‑G9.10 — RSCR parity tests are published (local).**
-   Parity publication **SHALL** include RSCR parity tests (via `F.15` harness refs) that cover negative/refusal paths relevant to this plan (missing pins, edition drift, missing bridge calibration refs, etc.).
+    Parity publication **SHALL** include RSCR parity tests (via `F.15` harness refs) that cover negative/refusal paths relevant to this plan (missing pins, edition drift, missing bridge calibration refs, etc.).
 
 11. **CC‑G9.11 — GateCrossing visibility (delegation point).**
     Delegated to `CC‑GCORE‑CROSS‑1` and the applicable GateCrossing/CrossingBundle harness checks (`E.18`, `A.21`, `F.9`, and relevant Part G bridge or crossing wiring). This remains a stable delegation point.

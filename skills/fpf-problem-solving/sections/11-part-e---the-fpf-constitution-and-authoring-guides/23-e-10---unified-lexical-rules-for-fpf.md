@@ -1273,9 +1273,9 @@ IDs and instances: **flat with delimiters** chosen by the exact local naming sch
 | **edition selector** | Reference selector defined by its direct pattern | Optional only on a governed reference whose referent is one exact `U.Episteme` and whose direct reference pattern defines the selector; it selects an already recoverable edition and establishes neither episteme identity nor historical continuity | Direct reference pattern and C.2.1 | `signatureRef.edition` is admissible where A.6.0 defines that narrow selector. Do not infer a universal `<Thing>Ref.edition` property. |
 
 **Notes.**
-• **Kernel‑only ban list** remains in § 8.3.
-• **CHR guard:** the only token that may use the word *plane* is **CHR:ReferencePlane**.
-• **Axis and dimension metaphors** are not selected FPF heads; use **Characteristic** only for one declared measured aspect. For an enumeration, name its closed value set, classified kind, and classification rule; use **CharacteristicSpace** only when that enumeration is the declared CSLC scale of the named Characteristic (see § 7).
+- **Kernel‑only ban list** remains in § 8.3.
+- **CHR guard:** the only token that may use the word *plane* is **CHR:ReferencePlane**.
+- **Axis and dimension metaphors** are not selected FPF heads; use **Characteristic** only for one declared measured aspect. For an enumeration, name its closed value set, classified kind, and classification rule; use **CharacteristicSpace** only when that enumeration is the declared CSLC scale of the named Characteristic (see § 7).
 
 **Not only suffix guard**
 * Suffixes are closely related to kinds and **should** be clearly guarded by MG-DA.
@@ -1443,17 +1443,17 @@ Example: use of a `KernelToken` in a locally scoped constraint is admitted only 
 **Rule L-CHR-S3 (Status).** Episteme statuses, `SystemRoleAssignmentStateRelation` occurrences or assertions, deontic statuses, and epistemic statuses are not Characteristics by label alone; each remains governed by its direct pattern.
 **Rule L-CHR-S4 (Lexical classifiers).** Keep a lexical classifier or tag under its classification rule: a local classification function and value set, source wording, C.29 representation element, example or alternative set, status or state-frame value set, local kind or classifier, or another construction defined for that classifier. Call it a `U.Characteristic` only when that characteristic and one CSLC scale are declared. Do not default the residue to `Facet`, attribute, or another umbrella kind.
 **Checks.**
-— **CC-L-CHR-1.** `scope characteristic(s)` is banned in Kernel and local-use Tech wording.
-— **CC-L-CHR-2.** `CharacteristicSpace` near `Scope` — error.
-— **CC-L-CHR-3.** Kind-preserving repair: `F–G–R characteristics` → `F–G–R components` only when the recovered kind is component rather than characteristic.
+- **CC-L-CHR-1.** `scope characteristic(s)` is banned in Kernel and local-use Tech wording.
+- **CC-L-CHR-2.** `CharacteristicSpace` near `Scope` — error.
+- **CC-L-CHR-3.** Kind-preserving repair: `F–G–R characteristics` → `F–G–R components` only when the recovered kind is component rather than characteristic.
 
 #### E.10:8.10 - LEX-QA-1 - Using terms with the `-ility` and `-ilities` suffixes
 
 **Rule.** Tokens ending with **-ility** or **-ilities** or widely used quality names (**Availability, Reliability, Security, Safety, Scalability, Maintainability, Usability**, …) are **Quality‑Family labels**, not automatically CHR **Characteristics**.
 
 **Authoring choice:**
-— To use such a term as a **CHR** characteristic, **bind** it to a **named `U.Characteristic` with one CSLC Scale** (A.18) and refer to that Characteristic in guards and UTS;
-— Otherwise **publish a Q‑Bundle** (see **C.25**) that includes named **Measures (CHR)** for the selected measurable Characteristics and, where relevant, **Scope** (USM set over `U.ContextSlice`) plus window, mechanism, and status fields.
+- To use such a term as a **CHR** characteristic, **bind** it to a **named `U.Characteristic` with one CSLC Scale** (A.18) and refer to that Characteristic in guards and UTS;
+- Otherwise **publish a Q‑Bundle** (see **C.25**) that includes named **Measures (CHR)** for the selected measurable Characteristics and, where relevant, **Scope** (USM set over `U.ContextSlice`) plus window, mechanism, and status fields.
 
 **Rationale.** Scope is **set-valued** (USM) and **not** a CHR measurement. Q-Bundle mechanism and status fields carry mechanism references, control presences, certification states, or other status values admitted by their specific patterns; they are not generic governance records or measurements. Claim scope, work scope, CHR measures, qualification window, mechanisms, status values, and evidence keep their own kinds even when one Q-Bundle authoring structure coordinates them. (A.2.6 § 6.2; A.6.1; C.16, A.18, and C.25).
 
@@ -1774,9 +1774,9 @@ Re-review your prose when any of these happen:
 
 **Name forms (allowed morphology):**
 * **System-role kinds and other local kinds:** use `<Noun>SystemRole` only for a local system-role kind admitted under A.2 and C.3, and `<Noun><Kind>` for another local kind (`IncidentCommanderSystemRole`, `ShiftOperatorSystemRole`, `WorkItemKind`). Standards, evidence, requirements, statuses, relation participants, declaration places, and representation positions do not become system roles by suffix.
-• **Statuses:** name them only under the exact state or status pattern (`ApprovedStatus` when that pattern admits it); a status is not a system-role kind and is not enactable by label.
-• **No suitcase nouns:** avoid `and`, `plus`, and `&` in names; recover one kind, explicit alternatives, relation, or bundle instead of creating a composite system-role-kind name.
-• **Acronyms:** first expansion + register; short‑form registered per **§ 7.7**.
+- **Statuses:** name them only under the exact state or status pattern (`ApprovedStatus` when that pattern admits it); a status is not a system-role kind and is not enactable by label.
+- **No suitcase nouns:** avoid `and`, `plus`, and `&` in names; recover one kind, explicit alternatives, relation, or bundle instead of creating a composite system-role-kind name.
+- **Acronyms:** first expansion + register; short‑form registered per **§ 7.7**.
 
 ### E.10:21 - Closing notes *(governance and purity)*
 

@@ -179,14 +179,14 @@ UNM‑specific slots (must be alias‑docked into the CHR SlotKind lexicon if us
 
 **OperationAlgebra (conceptual)**
 1) `apply`
-- Preconditions: `UNM_Eligibility(…) ∈ {pass, degrade}` (fail‑closed; `abstain` ⇒ no NCV output).
-- Inputs: `NormalizationMethodInstanceSlot`, `CoordinateValueSlot`, `CharacteristicSpaceSlot`, `CNSpecSlot`; the selected CN-Spec supplies the exact bearer, scope/window, basis, evidence requirements, and intended comparison.
-- Outputs: `NCVSlot` (+ availability of `UNMCongruenceSlot` for the same method instance)
+   - Preconditions: `UNM_Eligibility(…) ∈ {pass, degrade}` (fail‑closed; `abstain` ⇒ no NCV output).
+   - Inputs: `NormalizationMethodInstanceSlot`, `CoordinateValueSlot`, `CharacteristicSpaceSlot`, `CNSpecSlot`; the selected CN-Spec supplies the exact bearer, scope/window, basis, evidence requirements, and intended comparison.
+   - Outputs: `NCVSlot` (+ availability of `UNMCongruenceSlot` for the same method instance)
 
 2) `compose`
-- Purpose: build a composed method (only when explicitly declared lawful).
-- Inputs: `NormalizationMethodInstancePairSlot` (roles = {inner, outer}), `CharacteristicSpaceSlot`, `CNSpecSlot`; both instances must be admitted for the same declared bearer, scope/window, basis, and intended use.
-- Output: `NormalizationMethodInstanceSlot` (new composed `NormalizationMethodInstanceId`), with an explicit validity window and evidence pins.
+   - Purpose: build a composed method (only when explicitly declared lawful).
+   - Inputs: `NormalizationMethodInstancePairSlot` (roles = {inner, outer}), `CharacteristicSpaceSlot`, `CNSpecSlot`; both instances must be admitted for the same declared bearer, scope/window, basis, and intended use.
+   - Output: `NormalizationMethodInstanceSlot` (new composed `NormalizationMethodInstanceId`), with an explicit validity window and evidence pins.
 
 3) `quotient(≡_UNM)`
 - Inputs: `CharacteristicSpaceSlot` (or chart view), `NormalizationMethodInstanceSlot`

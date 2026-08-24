@@ -1285,6 +1285,8 @@ SoTA materials are not nameless background. Decision grounds and governing inher
 | `ROBUST-GBOED-2025` | Barlas, Sloman, and Kaski, **Robust Experimental Design via Generalised Bayesian Inference**, arXiv:2511.07671. | Contributes robustness prompts for model misspecification, outliers, and incorrect noise assumptions through generalized Bayesian OED or Gibbs Bayesian OED and Gibbs expected information gain. | **Adapt as robustness source.** If model misspecification is plausible, the C.29 output records the robustness note; it does not turn robustness into evidence or assurance by itself. |
 | `VVUQ-UQ-PREDICTION-2010/2012/2007` | Oberkampf and Roy, **Verification and Validation in Scientific Computing**; National Research Council, **Assessing the Reliability of Complex Models**; Gneiting and Raftery, **Strictly Proper Scoring Rules, Prediction, and Estimation**. | Contributes validation, uncertainty, prediction scoring, calibration caution, sensitivity or robustness notes, and domain-of-applicability boundaries. | **Adapt.** Prediction, publication-as-model, benchmark, model-selection, or assurance-input uses need validation or uncertainty fields; source prestige does not supply those fields. |
 
+**Source locators and recoverability.**
+
 | Source id | Locator(s) | Recoverability and use in `C.29` |
 |---|---|---|
 | `SAND-THREAD-X-2026-05-12` | Original X post locator: `https://x.com/anderssandberg/status/2053757849918939364` | **Source identity locator.** Keep the X link because the source being mirrored matters. Do not rely on direct X content as proof text unless the post content is actually retrievable in the checking environment. |

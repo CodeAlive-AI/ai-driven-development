@@ -19,7 +19,8 @@ ARCHITECTURE, WORKING-DOCUMENTS, OPTION-COMPARISON,
 PROBLEM-SHAPING, IMPROVEMENT, COSTLY-ACTION, TIME,
 CAUSAL-USE, DESCRIPTION-USE, NAMING, WORDING,
 MATHEMATICAL-MODELING, SOTA-PORTFOLIO, DPF-AUTHORING,
-SYSTEM-RECOGNITION, or SYSTEM-DELIMITATION.
+DPF-SUITE-GUIDE, SYSTEM-RECOGNITION, or SYSTEM-DELIMITATION.
+
 Then inspect the selected pattern and its `Solution`.
 Answer in this order:
 - one useful result for the current situation, or an honest stop if no truthful result can yet be given;

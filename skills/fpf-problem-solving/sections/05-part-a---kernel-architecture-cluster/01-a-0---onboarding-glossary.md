@@ -108,13 +108,13 @@ Co‑evolve declared `{environment, method}` sets; publish **coverage/regret** a
 ### A.0:8 - Consequences
 
 **Benefits.**
-• **Immediate usability** for engineer‑managers (plain one‑liners) with **formal anchors** for auditors.
-• **Declared-set-first / typed portfolio-publication** culture (typed set results & illumination) instead of brittle leaderboards.
-• **Edition‑aware comparability**; parity/refresh is routine, not ad‑hoc.
+- **Immediate usability** for engineer‑managers (plain one‑liners) with **formal anchors** for auditors.
+- **Declared-set-first / typed portfolio-publication** culture (typed set results & illumination) instead of brittle leaderboards.
+- **Edition‑aware comparability**; parity/refresh is routine, not ad‑hoc.
 
 **Trade‑offs & mitigations.**
-• Slightly longer UTS rows → mitigated by consistent schema and copy‑paste snippets.
-• Requires discipline on units and scales → mitigated by CG‑frame templates.
+- Slightly longer UTS rows → mitigated by consistent schema and copy‑paste snippets.
+- Requires discipline on units and scales → mitigated by CG‑frame templates.
 
 ### A.0:9 - Rationale
 

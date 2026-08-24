@@ -326,6 +326,8 @@ E.21 result:
 |---|---|---|---|---|---|
 | `<word, head, and use; phrase-apparatus; repetition-and-distribution; ontic-slot; description-publication-source; pattern-application profile>` | `<clean | boundedLocal | lowersCoordinates | repairBeforeUse>` | `<pre-repair and post-repair kind, relation, current ontic slot, relation position, use relation, or claim kind, and not-triggered, ordinary, preserved, split, changed, or blocker disposition>` | `<by-value loci or absence scope>` | `<affected coordinates or none>` | `<repair, no-repair disposition with loci, or locus to repair>` |
 
+**Coordinate values.**
+
 | Coordinate | Value | ShortRationale |
 |---|---:|---|
 | `<all RequiredPatternQualityCoordinates rows>` | `<0..5>` | `<assigned-value basis; why not lower; why not higher or what would lower or reopen>` |

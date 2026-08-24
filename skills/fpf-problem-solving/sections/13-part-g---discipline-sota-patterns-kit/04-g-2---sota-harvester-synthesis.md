@@ -111,9 +111,9 @@ Each named component is addressable via a stable **pack‑local identifier** (e.
 2. **`G.2b ClaimSheets[Tradition]`**
    Typed Claim Sheets per `Tradition`, each with:
 
-* exact source and edition, claim region, effective ReferenceScheme where meaning matters, EntityOfConcern, and comparison basis for the stated use,
-* explicit evidence anchors/citations (A.10 and/or EvidenceGraph refs when available),
-* explicit freshness window notes and risk/trust cues *(cite `B.3` governing definitions when using trust/decay language)*.
+   * exact source and edition, claim region, effective ReferenceScheme where meaning matters, EntityOfConcern, and comparison basis for the stated use,
+   * explicit evidence anchors/citations (A.10 and/or EvidenceGraph refs when available),
+   * explicit freshness window notes and risk/trust cues *(cite `B.3` governing definitions when using trust/decay language)*.
 
 3. **`G.2c OperatorAndObjectInventory`**
    Inventory of candidate CHR terms (characteristics/scales/coordinates) and candidate CAL operators/flows *as stubs* for downstream authoring.
@@ -171,9 +171,9 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 2. **Discover and triage sources (ledger‑first).**
    Populate `CorpusLedger` via:
 
-* seed sources,
-* expansion via citation chaining and keyword family exploration,
-* pruning using load‑bearing relevance tests tied to the declared CG‑Frame scope.
+   * seed sources,
+   * expansion via citation chaining and keyword family exploration,
+   * pruning using load‑bearing relevance tests tied to the declared CG‑Frame scope.
 
 3. **Distill claims per `Tradition`.**
    For each `Tradition`, author a Claim Sheet that preserves internal commitments and cites evidence anchors. Do not fuse cross‑`Tradition` claims at this stage.

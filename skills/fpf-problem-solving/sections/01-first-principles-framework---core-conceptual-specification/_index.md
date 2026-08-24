@@ -2,11 +2,11 @@
 
 > A standards-style pattern language for turning difficult engineering, research, management, and mixed human/AI work into explicit, reviewable, improvable reasoning.
 
-- **Author:** Anatoly Levenchuk, with AI-agent assistance
+- **Author:** Anatoly Levenchuk, with AI-assisted development and review
 - **Version:** August 2026
 - **Status:** Normative kernel, eternal alpha: already used in working projects and development programs, while still evolving.
 
-This monolith is the AI-agent and tool-assisted working specification for FPF.
+Begin with the working question in your project; FPF helps make the reasoning explicit enough to review and improve.
 
 Use the Table of Contents below to find pattern ids that match the project question. For any substantive answer, open the relevant pattern and apply its Problem frame, Solution, worked slices, and checklist to the project claim or object.
 

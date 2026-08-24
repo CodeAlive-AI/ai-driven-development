@@ -6,7 +6,7 @@
 - [A.6 - Signature Stack & Boundary Discipline](01-a-6---signature-stack-boundary-discipline.md) (569 lines) — Type: Architectural (A)
 - [A.6.RSIG - Recognition Signatures for Descriptions](02-a-6-rsig---recognition-signatures-for-descriptions.md) (424 lines) — Type: Architectural pattern
 - [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)](03-a-6-b-boundary-norm-square.md) (719 lines) — Type: Architectural (A)
-- [A.6.C — Contract Unpacking for Boundaries](04-a-6-c-contract-unpacking-for-boundaries.md) (345 lines) — Type: Architectural (A)
+- [A.6.C — Contract Unpacking for Boundaries](04-a-6-c-contract-unpacking-for-boundaries.md) (347 lines) — Type: Architectural (A)
 - [A.6.REL - Relation Obtaining and Individuated Relation Occurrences](05-a-6-rel---relation-obtaining-and-individuated-relation-occur.md) (393 lines) — Type: Architectural (A)
 - [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme](06-a-6-0---u-signature---reusable-law-governed-declaration-epis.md) (417 lines) — Type: Architectural (A)
 - [A.6.1 - U.Mechanism - Reusable Law-Governed Operation Declaration](07-a-6-1---u-mechanism---reusable-law-governed-operation-declar.md) (521 lines) — Pattern kind. Ontic declaration pattern.

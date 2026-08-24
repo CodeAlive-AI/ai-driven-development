@@ -124,9 +124,9 @@ Publish one editioned **`MaturityCardDescription`** for the exact evaluated `Met
 *S2 excerpt.* `DataShape=ODE; stiff?=unknown; Size≈10^3; Objective={↓error@ratio, ↑throughput@ratio}; Constraints={safety_gate@ordinal}; Jacobian_sparsity=high; Missingness=MAR`.
 *Families.* `Implicit‑BDF` vs `Explicit‑RK` vs `Symplectic`.
 *Rules.*
-— `Implicit‑BDF`: **Eligibility** tolerates `stiff?=unknown` if `Jacobian_sparsity=high` (guarded precondition); **MaturityCard**=`L3` (replicated & benchmarked). Outcome: `Admit`.
-— `Explicit‑RK`: requires `stiff?=false`; with `unknown` ⇒ `Degrade(sandbox)` (probe).
-— `Symplectic`: eligible only when `Hamiltonian=true`; here ⇒ `Abstain`.
+- `Implicit‑BDF`: **Eligibility** tolerates `stiff?=unknown` if `Jacobian_sparsity=high` (guarded precondition); **MaturityCard**=`L3` (replicated & benchmarked). Outcome: `Admit`.
+- `Explicit‑RK`: requires `stiff?=false`; with `unknown` ⇒ `Degrade(sandbox)` (probe).
+- `Symplectic`: eligible only when `Hamiltonian=true`; here ⇒ `Abstain`.
 *Didactic anchor.* This mirrors C.22’s typed‑signature discipline and CHR legality (no ordinal means; unit alignment for **ratio**).
 
 > Contemporary ecosystem examples of these families (post‑2015) are organised in **DifferentialEquations.jl**, which exposes multiple solver **families** under one call surface—precisely the pattern G.5 expects. ([Journal of Open Research Software][17])
@@ -135,16 +135,16 @@ Publish one editioned **`MaturityCardDescription`** for the exact evaluated `Met
 *S2 excerpt.* `DataShape=MIP; NoiseModel=deterministic; Objective={↓cost@ratio, ↑service_level@ordinal}; Size≈10^5 vars; convex_relaxation=available`.
 *Families.* `MILP (branch‑and‑bound)`, `Constraint‑Programming`, `Heuristic meta‑search`.
 *Rules.*
-— `MILP`: **Eligibility** requires `convex_relaxation=available`; the cited L3 MaturityCard edition names the registered family, evidence profile, benchmark basis, claim scope, qualification window, and intended selector use ⇒ `Admit`.
-— `Constraint‑Programming`: **MaturityCard**=`L2`; Acceptance demands `service_level≥B` (ordinal predicate). With `B` met but baseline parity unknown ⇒ `Degrade(scope‑narrow)`.
-— `Heuristic meta‑search`: **MaturityCard**=`L1` ⇒ `Degrade(sandbox)` or `Abstain` depending on RSCR parity policy.
+- `MILP`: **Eligibility** requires `convex_relaxation=available`; the cited L3 MaturityCard edition names the registered family, evidence profile, benchmark basis, claim scope, qualification window, and intended selector use ⇒ `Admit`.
+- `Constraint‑Programming`: **MaturityCard**=`L2`; Acceptance demands `service_level≥B` (ordinal predicate). With `B` met but baseline parity unknown ⇒ `Degrade(scope‑narrow)`.
+- `Heuristic meta‑search`: **MaturityCard**=`L1` ⇒ `Degrade(sandbox)` or `Abstain` depending on RSCR parity policy.
 *Didactic anchor.* Selector returns a **Pareto set** (no cross‑ordinal weighting), as required by G.5.
 
 > Contemporary “single call / many solvers” packaging that motivates MethodFamily rows is exemplified by **JuMP** (2017–2022), which cleanly separates **model description** from solver choice. ([Miles Lubin][18])
 
-— *DifferentialEquations.jl* illustrates **family‑based** solver packaging (multi‑method under one interface), 2017–2024 ecosystem. ([Journal of Open Research Software][17])
-— *JuMP* illustrates **model/solver separation** and registry‑like selection (2021–2022 papers, site). ([Miles Lubin][18])
-— *Science of Science* review (2018) supports the emphasis on replication/benchmarks in maturity assessment. ([Science][19])
+- *DifferentialEquations.jl* illustrates **family‑based** solver packaging (multi‑method under one interface), 2017–2024 ecosystem. ([Journal of Open Research Software][17])
+- *JuMP* illustrates **model/solver separation** and registry‑like selection (2021–2022 papers, site). ([Miles Lubin][18])
+- *Science of Science* review (2018) supports the emphasis on replication/benchmarks in maturity assessment. ([Science][19])
 
 **Show‑3 - QD archive (policy search).**
 *S2 excerpt.* `PortfolioMode=Archive; CharacteristicSpaceRef(d=2); ArchiveConfig(CVT, res=1k cells, K=1, DistanceDefRef.edition=v2, InsertionPolicyRef=dyn‑elite); EmitterPolicyRef=v3; DominanceRegime=ParetoOnly`.

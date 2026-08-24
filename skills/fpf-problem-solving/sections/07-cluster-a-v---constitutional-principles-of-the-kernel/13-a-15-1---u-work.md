@@ -197,6 +197,17 @@ Work identity is occurrence-grounded and 4D. Start from the actual performance h
 
 **Manager's tip:** cite the exact `B.1.4` or `B.1.6` aggregation result and policy beside the KPI. A Work-part list, shared parent, or operator spelling supplies neither the aggregate nor its policy.
 
+#### A.15.1:5.3a - Before A Timetable Becomes Architecture Evidence
+
+A timetable, workflow row, or architecture table can help locate candidate Work. It does not establish a Work occurrence, whole, part, overlap, or order. Before relying on such rows in an architecture decision:
+
+1. identify each Work occurrence from its actual performer System, covering assignment and F.6 attribution, enacted Method, actual interval, and an obtaining relation to a containing System;
+2. if several rows are claimed as parts of one Work whole, identify that whole and every part independently, then state the exact Work-part relation that holds;
+3. if two occurrences are claimed to overlap or follow one another, state their actual intervals and the exact C.27.TA temporal relation; and
+4. state coordination, participation, resource use, result, or acceptance only through its own obtaining relation when the architecture decision needs it.
+
+Two activities with similar names or one planned time window can still be distinct Work, and a schedule row may remain only plan content. If the actual occurrence or required relation is missing, preserve the plan, description, interval, or separately grounded Work that is available and stop the stronger architecture claim.
+
 #### A.15.1:5.4 - Identity and reidentification of Work
 
 Two descriptions, assertions, records, or traces resolve to the same Work occurrence only when they designate the same actual world-side performance history, not merely the same name, policy label, similar policy content, or later date. First compare the direct facts at the selected grain:
@@ -433,6 +444,9 @@ Do not create a durable named work part for every interval, telemetry segment, p
 **CC-A15.1-31 (Method and work granularity are coupled but not isomorphic).**
 A work part may enact a recovered submethod, but the correspondence is not automatic. A temporal work part usually enacts the same whole method during a slice. An episode records continuity under one method or mode and may span several operational parts, repeat the same method fragment, or be split by evidence policy without changing method identity. An operational work part corresponds to a method factor only when that factor is recovered as `U.Method` under `A.3.1` and `B.1.5`; otherwise keep it as the work part, method-description node, evidence segment, mechanism material, or system-component behavior actually identified.
 
+**CC-A15.1-32 (Work rows do not create architecture).**
+Before a timetable, workflow, or architecture row supports a Work whole, part, overlap, or order claim, every Work occurrence has its actual performer System, covering assignment and attribution, enacted Method, actual interval, and required containing-System relation; every whole, part, and temporal relation is then established separately. Similar labels, shared rows, or planned co-occurrence establish none of these facts.
+
 ### A.15.1:9 - Work-to-aggregation interface
 
 `A.15.1` makes the occurrence-side inputs recoverable without storing them in the occurrence: a separate assertion or description episteme designates exact Work individuals or work parts and states their temporal extents and the separately obtaining resource-use relations selected for aggregation. `B.1.4` identifies the temporal-aggregation claim and result; `B.1.6` identifies the resource-aggregation claim, ledger, and result. Neither becomes a Work field.
@@ -485,6 +499,7 @@ These checks tell the reader which description, assignment, criterion, evaluatio
 * **Description-change-as-occurrence-change.** Selecting another MethodDescription episteme is treated as automatically splitting or preserving Work -> State the description-selection change separately. Only when an accompanying actual history change creates an identity question for a named use should its continuity-policy criterion be applied; the policy revises the judgment, not the occurrence. Call the descriptions editions only when their exact C.2.1 relation obtains.
 * **Budget on the method or system-role object.** Charging costs to a Method, local system-role kind, or assignment -> Attribute performed resource use only through exact relations involving Work individuals; keep estimates in Method descriptions or plans.
 * **Part ambiguity.** Mixing retries, episodes, and operational parts with no declared relation → Choose and declare the part relation.
+* **Timetable-as-Work-architecture.** Rows with similar labels or one planned window are treated as one Work whole, its parts, or overlapping Work → Recover every actual Work occurrence first; then establish each Work-part and temporal relation separately. Keep an unperformed or ungrounded row as plan or description content.
 * **Slice-as-episode.** A monitoring interval, telemetry window, crank-angle segment, or one-second reception trace is called an episode only because it has timestamps -> Keep it as a C.27.TA temporal aspect, evidence relation, or telemetry relation. Use `TemporalPartOf_work` or `EpisodeOf_work` only after the first participant is independently admitted as Work and the corresponding §4.1a predicate passes; add a continuity policy only if direct boundary facts leave its grouping ambiguous.
 * **Episode-as-new-work by habit.** A pause, retune, or interruption is always recorded as either a new occurrence or the same one -> Preserve the boundary events first. Apply exact `workContinuityPolicyRef` only when a named use must decide the grouping; otherwise return unresolved segmentation rather than forcing either answer.
 * **Method-factor-as-work-part by label.** A step, stroke, receiver component, graph node, or method-description section is treated as a work part or submethod by name -> Recover the current object: `U.Method` factor, `U.MethodDescription` constituent, `TemporalPartOf_work`, `OperationalPartOf_work`, evidence segment, mechanism material, system-component behavior, or missing-source-relation note.

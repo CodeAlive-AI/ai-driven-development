@@ -8,7 +8,7 @@
 - [B.1.2 - System Aggregation and Holon Delimitation](03-b-1-2---system-aggregation-and-holon-delimitation.md) (219 lines) — Type: Part B holonic construction pattern
 - [B.1.3 - Γ_epist - Knowledge‑Specific Aggregation](04-b-1-3---epist---knowledge-specific-aggregation.md) (294 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and conservative assurance bounds.
 - [B.1.4 - Contextual and Temporal Aggregation](05-b-1-4---contextual-and-temporal-aggregation.md) (213 lines) — Type: B-family aggregation pattern
-- [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (397 lines) — Type: Part B composition and grounding pattern
+- [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (419 lines) — Type: Part B composition and grounding pattern
 - [B.1.6 - Work-Resource Aggregation](07-b-1-6---work-resource-aggregation.md) (237 lines) — Type: B-family aggregation pattern
 - [B.2 - Meta-Holon Transition - Whole Reidentification](08-b-2---meta-holon-transition---whole-reidentification.md) (311 lines) — Type: Part B holonic construction pattern
 - [B.2.P - Emergence and MHT Precision Restoration](09-b-2-p---emergence-and-mht-precision-restoration.md) (257 lines) — Type: Part B precision-restoration pattern

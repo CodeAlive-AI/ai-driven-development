@@ -15,6 +15,7 @@ Typical moments:
 - a diagram or code file looks like a method, but it may be only a method description, a work plan, a dated work trace, a selector registry, or a mathematical lens;
 - a larger method must expose some interactions at its boundary while hiding internal steps;
 - assurance needs to know which joins, adapters, cutsets, or exposed interfaces make the composite method reliable enough to enact.
+- a source presents Methods as a first–then list even though representative Work may also require several of them to contribute at the same time.
 
 **Primary EntityOfConcern.** The EntityOfConcern is one exact candidate or composite `U.Method`, already identified under A.3.1. The proposition that exact part Methods and whole-forming facts qualify it as composite is separately governed claim content. A separately identified C.2.1 episteme may carry that proposition in its ClaimGraph; the episteme then has the exact candidate Method as its EntityOfConcern under its effective ReferenceScheme. The proposition does not become the episteme.
 
@@ -60,6 +61,8 @@ Without B.1.5:
 5. **Interface exposure is hidden.** Callers rely on internal interactions that should be encapsulated, or fail to see interactions that the composite method must expose.
 6. **Run-time leakage.** Resources, timestamps, telemetry, performed values, and results are baked into the method instead of remaining occurrence-side facts and separately governed resource, result, and evidence relations.
 7. **False whole method.** A method-family registry, fallback table, selector rule, or A.22-selected relation organization is treated as one whole method although no construction or whole identity has been recovered.
+8. **Sequence becomes level.** A source list, vertical diagram, curriculum, or first–then account is treated as a subject hierarchy or level structure without an independently established level relation.
+9. **Simultaneous contributions become stages.** Methods that contribute during the same bounded Work situation are forced into one before-after chain because the source, presentation, or review visits them one at a time.
 
 ### B.1.5:3 - Forces
 
@@ -67,6 +70,7 @@ Without B.1.5:
 | --- | --- |
 | Method reuse vs source concreteness | Teams need a reusable way of doing, while sources often show only one description, run, or plan. |
 | Order fidelity vs compact modeling | Important sequences and joins must remain explicit without turning every diagram edge into ontology. |
+| Order vs simultaneous contribution | A real first–then condition must survive, while Methods that contribute together must not be invented as stages merely because they are described in sequence. |
 | Whole-method identity vs relation usefulness | Some method-side relations are useful without asserting one composite method whole. |
 | Interface exposure vs encapsulation | A composite method must state which interactions callers may rely on and which remain internal. |
 | Assurance vs execution | Assurance needs joins, adapters, cutsets, and failure conditions; dated enactment, result, and evidence-use claims stay with their subject patterns. |
@@ -150,6 +154,13 @@ State each whole-forming fact in ordinary domain language before choosing its re
 | refinement or substitution | which Method may replace which other Method, for which use, and which whole semantics, joins, and exposed interactions must remain invariant |
 | fallback or dispatch | which primary and alternative Methods are involved, the exact trigger for using the alternative, and whether the statement belongs to this whole or only to a selector registry |
 | adapter or typed join | which exact adapter `U.Method`, upstream result meaning, downstream precondition, conversion condition, and failure route make the join admissible |
+
+Before using a first–then or vertical list as Method architecture, make both checks.
+
+1. **Preserve real order.** Ask what must finish or become true before another Method can start or continue. Name the Methods, the required result or condition, any join or adapter, and the failure or stop route. Keep a genuine first–then result as an unfolding or order claim; its position does not make it a subject level.
+2. **Test simultaneous contribution.** Choose one bounded Work situation and ask whether several Methods contribute during it without all of them falling into one before-after chain. One Work whole may enact several Methods through separate A.15.1 relations. Alternatively, separately identified Work occurrences may overlap while enacting different Methods. State the Work identities and relations that actually obtain. Co-occurrence alone establishes no Method part, composite Method, Work part, or level.
+
+Both answers may be true. A Method can contain a real ordered segment while other Methods contribute during the same broader Work. The source's reading order and the fact that several Methods are used together decide neither which Methods are parts of one whole nor whether any level exists.
 
 Then use A.6.RCD. Reuse an existing direct predicate when one already governs the needed claim. Otherwise stop at a local compound claim when it closes this use, or publish a reusable predicate-definition episteme when several uses need the same rule. Continue to a relation-kind candidate only when a named receiver needs stable occurrence semantics that claim content cannot supply; E.24 and E.24.UK decide admission. A label such as `precedesInMethod` is readable claim language, not admission evidence, and an ordinary composition claim needs no invented occurrence.
 
@@ -301,6 +312,14 @@ A paper draft, workflow diagram, repository, or notebook may be a claim-bearing 
 
 `PublicationFormExpressionRelation(EvidenceSynthesisInterfaceDescription-v3, SubmissionReleaseBoundaryAccountForm-v3, SubmissionAndArtifactReleaseUse)` must obtain for that form use, and `PublicationFormBearingRelation(EvidenceSynthesisMethodsPage-2026-07, SubmissionReleaseBoundaryAccountForm-v3)` must obtain for that bearing claim. `ResearchPublicationSystem` performs the separate `EvidenceSynthesisInterfacePublicationWork-2026-07 : U.Work`, which may establish or restore availability. The distinct `EvidenceSynthesisInterfacePublication-2026-07` occurrence of `EpistemePublicationRelation` has the five fixed participants `<EvidenceSynthesisInterfaceDescription-v3, SubmittingResearchersAudienceDeclaration-v1, SubmissionAndArtifactReleaseUse, SubmissionReleaseBoundaryAccountForm-v3, EvidenceSynthesisMethodsPage-2026-07>` and carries the description edition's enduring availability to the audience selected by the audience declaration for the bounded use. Publication Work is not a participant of that occurrence. None of these description, declaration, form, carrier, Work, or publication-relation objects creates an interaction, `SlotSpec`, Method part, or composition fact.
 
+#### B.1.5:5.5 - Ordered Preparation And Simultaneous Performance
+
+A music-and-dance performance can contain both kinds of fact. Venue setup, safety checks, and interface checks may need a real order before the public performance starts; a failed safety check may stop the unfolding. Preserve that order when the exact Methods and conditions support it. It is not a level structure.
+
+During the performance, dancing, music making, sound mixing, lighting, and stage coordination may contribute at the same time. If the project identifies one performance Work whole, it may enact several exact Methods through separate relations. If it identifies several Work occurrences, state which overlap. Do not rewrite these contributions as five stages merely because a production plan or review lists them one by one. Conversely, do not erase real setup, cue, or handoff order merely because the overall performance is simultaneous.
+
+The same two-way check applies elsewhere. In engineering Work, a lifecycle or product order does not prove that architecture, realization, integration, assurance, and feedback form one sequence. In operating Work, a workflow line does not serialize queues, commitments, resources, measures, and improvement. In capability development, preparation Work may precede the target Work while several target Methods contribute together during the transfer check. Preserve every real continuation condition, but do not invent order among concurrent contributions.
+
 ### B.1.5:6 - Bias-Annotation
 
 Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: cross-domain order-sensitive composition of already identified `U.Method` values. It does not cover sole-Method identification, description-only organization, dated Work decomposition, structural mereology, or transformation composition without a direct governor.
@@ -309,7 +328,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: cros
 - **Arch:** the whole is qualified from exact part Methods and construction facts; order aggregation, a selected A.22 Structure, and a separate higher-level reidentification claim remain distinct architectural objects.
 - **Onto/Epist:** Methods and obtaining relation occurrences remain distinct from MethodDescription claims, boundary-account presentation, carriers, publication Work, and publication occurrences.
 - **Prag:** ordinary use may stop at readable local claims; reusable definitions, relation kinds, declarations, publication, and assurance are added only when a named receiving use needs them.
-- **Did:** the manufacturing, emergency-intake, learned-pipeline, and evidence-synthesis slices show both positive composition and useful non-composite stopping results across different domains.
+- **Did:** the manufacturing, emergency-intake, learned-pipeline, evidence-synthesis, and performance slices show positive composition, useful non-composite stopping results, and the difference between real order and simultaneous contribution across domains.
 
 The pattern intentionally biases toward explicit construction and boundary accounts when joins or outside reliance are load-bearing. The lightweight local-claim lane and subject-pattern exits mitigate that bias so inspectability does not become ritual apparatus.
 
@@ -333,6 +352,7 @@ The pattern intentionally biases toward explicit construction and boundary accou
 | `CC-B1.5-14` | Assurance hooks name cutsets, fragile joins, adapter points, CL-sensitive mappings, and the exact envelope or claim scope consumed by B.3; no performance or quality claim follows from composition alone. |
 | `CC-B1.5-15` | A direct method-composition claim establishes no A.14 structural-component relation, work-part relation, or selected-structure identity unless the corresponding direct predicate separately obtains. |
 | `CC-B1.5-16` | Method parts, Work parts, common referents, method order, and temporal adjacency establish neither transformation parthood nor a composite transformation; missing transformation-composition governance returns `missing-governor[transformation-composition]` for the proposed whole and independently identified changes, without an atomism inference. |
+| `CC-B1.5-17` | A first–then or vertical account receives both checks: preserve every real continuation condition as order or unfolding, and test whether several Methods contribute during the same bounded Work situation without one total sequence. Source order creates no level; simultaneous use creates no Method part, composite Method, Work part, or level. |
 
 ### B.1.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -341,6 +361,7 @@ The pattern intentionally biases toward explicit construction and boundary accou
 | "The workflow diagram is the composite Method." | First govern the diagram as `U.MethodDescription` or another representation; identify the exact candidate and part Methods under A.3.1, then test `methodPartOf`, whole-forming claims at their A.6.RCD dispositions, whole semantics, boundary, and reidentification. |
 | "Step A is part of the Method because it is a box." | Recover whether the box denotes an exact `U.Method`, description node, plan item, Work occurrence, claim, or lens expression; test `methodPartOf` only for an independently identified Method. |
 | "Parallel branches can join because the picture rejoins." | State the independence, downstream precondition, exact join, any adapter or correspondence, and failure route in ordinary language; use A.6.RCD's lightest sufficient disposition and open a relation kind only for an independently accepted occurrence-semantics need. |
+| "The production plan lists five Methods, so the practice has five stages." | Preserve any real setup, handoff, or continuation order. Then test the representative Work: Methods may contribute together in one Work whole or in overlapping Work occurrences. The plan's row order establishes neither a total sequence nor a subject level. |
 | "The selector table is the Method." | Use `G.5` for the selector. Use A.22 only when an actual selection basis and all four structure discriminators are present; otherwise keep a one-off comparison without asserting a selected `U.Structure`. A composite Method still needs its own exact construction and whole-level commitments. |
 | "The run proved the method structure." | Record the run as `U.Work`; relate it to the method through `enactsMethod` and use evidence only through its governing relation. A successful run neither creates method parts nor settles reidentification. |
 | "The phase is a method step." | Recover the subject: use the carrier's direct identity rule plus proper A.14 `PhaseOf` for one unchanged non-Work individual, C.2.1 for distinct MethodDescription epistemes and any obtaining edition relation, or A.15.1 for Work temporal parts and occurrences. None is a Method part unless an exact `U.Method` and `methodPartOf` independently obtain; use B.2 only for a separately current whole-reidentification, supervision, or closure claim. |
@@ -381,6 +402,7 @@ These rows answer the B.1.5 practice question: how to decide and expose order-se
 - Uses `C.2.1` to identify predicate-definition, signature, and MethodDescription epistemes and any later episteme with changed identity-bearing content. Uses `EpistemeEditionRelation` only when C.2.1's exact historical-continuation predicate obtains; otherwise the later episteme is a non-continuing replacement. A predicate definition may satisfy ordinary A.6.0 `U.Signature` membership; only an admitted relation kind can have a `RelationSignature`.
 - Uses `B.1.4` only when a receiving use needs an explicit aggregation of already admitted, obtaining order relations, an `OrderSpec`, and join or independence conditions.
 - Uses `A.3.2` for each exact claim-bearing `U.MethodDescription` and `E.24.PUB` only when a named use requires publication detail: independently identified bounded-use- and audience-declaration epistemes, boundary-account form and `U.PresentationCarrier`; exact `PublicationFormExpressionRelation` and `PublicationFormBearingRelation`; separate publication Work performed by a system; and the five-participant `EpistemePublicationRelation` occurrence that makes the edition available. Raw audience and designation content remain separately governed.
+- Uses `A.22.CGUS` when a real first–then, guarded, branching, or returning unfolding is the useful result; an unfolding position is not a subject level or evidence that all contributions are sequential.
 - Uses `A.15`, `A.15.1`, and `A.15.2` for exact dated `U.Work`, `enactsMethod`, and plans; uses `A.2`, `A.2.1`, and F.6 for local system-role-kind and Method alignment, separately declared assignment species, actual assignment occurrences, and obtaining Work–assignment attributions. The Method does not act, Work is not a relying reader, and neither a system-role kind nor an assignment performs Work.
 - Uses `B.1.6` and `Gamma_work` only for occurrence-side work-resource aggregation after the Work and resource relations are recovered.
 - Uses `B.3` for cutset, weakest-link, CL-sensitive mapping, and assurance claims; composition alone supplies no assurance verdict.
