@@ -1,0 +1,126 @@
+{
+  "data": {
+    "id": "acme/test-model",
+    "name": "Test Model",
+    "endpoints": [
+      {
+        "name": "Provider A",
+        "provider_name": "Provider A",
+        "tag": "provider-a",
+        "status": 0,
+        "context_length": 131072,
+        "max_prompt_tokens": 120000,
+        "max_completion_tokens": 16384,
+        "quantization": "bf16",
+        "supported_parameters": ["tools", "tool_choice", "response_format", "max_tokens", "temperature"],
+        "supports_implicit_caching": true,
+        "pricing": {
+          "prompt": "0.00000020",
+          "completion": "0.00000070",
+          "request": "0",
+          "input_cache_read": "0.00000005",
+          "input_cache_write": "0.00000025"
+        },
+        "latency_last_30m": {"p50": 0.55, "p75": 0.75, "p90": 1.10, "p99": 2.40},
+        "throughput_last_30m": {"p50": 92, "p75": 80, "p90": 65, "p99": 40},
+        "uptime_last_1d": 99.95,
+        "uptime_last_30m": 99.90,
+        "uptime_last_5m": 100
+      },
+      {
+        "name": "Provider B",
+        "provider_name": "Provider B",
+        "tag": "provider-b",
+        "status": 0,
+        "context_length": 131072,
+        "max_prompt_tokens": 120000,
+        "max_completion_tokens": 16384,
+        "quantization": "fp8",
+        "supported_parameters": ["tools", "tool_choice", "response_format", "max_tokens", "temperature"],
+        "supports_implicit_caching": false,
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.00000060",
+          "request": "0"
+        },
+        "latency_last_30m": {"p50": 0.40, "p75": 0.55, "p90": 0.72, "p99": 1.80},
+        "throughput_last_30m": {"p50": 70, "p75": 61, "p90": 50, "p99": 31},
+        "uptime_last_1d": 99.80,
+        "uptime_last_30m": 99.70,
+        "uptime_last_5m": 99.50
+      },
+      {
+        "name": "Provider C",
+        "provider_name": "Provider C",
+        "tag": "provider-c",
+        "status": 0,
+        "context_length": 131072,
+        "max_prompt_tokens": 120000,
+        "max_completion_tokens": 16384,
+        "quantization": "mxfp8",
+        "supported_parameters": ["tools", "tool_choice", "response_format", "max_tokens", "temperature"],
+        "supports_implicit_caching": true,
+        "pricing": {
+          "prompt": "0.00000035",
+          "completion": "0.00000100",
+          "request": "0",
+          "input_cache_read": "0.00000010",
+          "input_cache_write": "0.00000040"
+        },
+        "latency_last_30m": {"p50": 0.25, "p75": 0.35, "p90": 0.50, "p99": 1.20},
+        "throughput_last_30m": {"p50": 145, "p75": 128, "p90": 110, "p99": 74},
+        "uptime_last_1d": 99.90,
+        "uptime_last_30m": 99.85,
+        "uptime_last_5m": 99.90
+      },
+      {
+        "name": "Provider D without tools",
+        "provider_name": "Provider D",
+        "tag": "provider-d",
+        "status": 0,
+        "context_length": 131072,
+        "max_prompt_tokens": 120000,
+        "max_completion_tokens": 16384,
+        "quantization": "bf16",
+        "supported_parameters": ["max_tokens", "temperature"],
+        "supports_implicit_caching": true,
+        "pricing": {
+          "prompt": "0.00000010",
+          "completion": "0.00000045",
+          "request": "0",
+          "input_cache_read": "0.00000003",
+          "input_cache_write": "0.00000012"
+        },
+        "latency_last_30m": {"p50": 0.20, "p75": 0.30, "p90": 0.45, "p99": 1.10},
+        "throughput_last_30m": {"p50": 160, "p75": 140, "p90": 120, "p99": 80},
+        "uptime_last_1d": 99.99,
+        "uptime_last_30m": 99.99,
+        "uptime_last_5m": 100
+      },
+      {
+        "name": "Provider A Priority Tier",
+        "provider_name": "Provider A",
+        "tag": "provider-a/fast",
+        "status": 0,
+        "context_length": 131072,
+        "max_prompt_tokens": 120000,
+        "max_completion_tokens": 16384,
+        "quantization": "bf16",
+        "supported_parameters": ["tools", "tool_choice", "response_format", "max_tokens", "temperature"],
+        "supports_implicit_caching": true,
+        "pricing": {
+          "prompt": "0.00000040",
+          "completion": "0.00000120",
+          "request": "0",
+          "input_cache_read": "0.00000010",
+          "input_cache_write": "0.00000050"
+        },
+        "latency_last_30m": {"p50": 0.16, "p75": 0.22, "p90": 0.30, "p99": 0.75},
+        "throughput_last_30m": {"p50": 190, "p75": 170, "p90": 145, "p99": 100},
+        "uptime_last_1d": 99.95,
+        "uptime_last_30m": 99.90,
+        "uptime_last_5m": 100
+      }
+    ]
+  }
+}

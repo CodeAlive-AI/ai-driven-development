@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Составь приоритетный provider.order для deepseek/deepseek-v4-flash-0731 по TPS, цене, uptime и Exacto.",
+    "should_trigger": true
+  },
+  {
+    "query": "Какого провайдера OpenRouter первым ставить для tool-calling агента, если важны cache hit и надежность?",
+    "should_trigger": true
+  },
+  {
+    "query": "Rank OpenRouter endpoints for this model using p90 throughput, TTFT, cache pricing, and tool-call success telemetry.",
+    "should_trigger": true
+  },
+  {
+    "query": "Сгенерируй provider.only и provider.order на основе JSON из /api/v1/models/.../endpoints.",
+    "should_trigger": true
+  },
+  {
+    "query": "Should I use :exacto or a manual provider order for a multi-turn agent with prompt caching?",
+    "should_trigger": true
+  },
+  {
+    "query": "У меня 20k input, 2k output и 60% cached tokens. Посчитай effective cost каждого endpoint и отсортируй.",
+    "should_trigger": true
+  },
+  {
+    "query": "Проверь, почему OpenRouter постоянно прыгает между провайдерами, и сделай устойчивый fallback chain без дребезга.",
+    "should_trigger": true
+  },
+  {
+    "query": "Build a production routing policy for one OpenRouter model with ZDR, quantization, p90 latency SLO, and fallback diversity.",
+    "should_trigger": true
+  },
+  {
+    "query": "Сравни CoreWeave, DeepInfra и NScale на performance tab одной модели и выбери порядок для агента.",
+    "should_trigger": true
+  },
+  {
+    "query": "Проранжируй OpenRouter providers по successful-task cost, используя мои generation logs и cached_tokens.",
+    "should_trigger": true
+  },
+  {
+    "query": "Какая LLM сейчас лучше для написания React-кода?",
+    "should_trigger": false
+  },
+  {
+    "query": "Сравни Claude и Gemini по качеству перевода.",
+    "should_trigger": false
+  },
+  {
+    "query": "Напиши Python-функцию сортировки списка чисел.",
+    "should_trigger": false
+  },
+  {
+    "query": "Объясни, что такое tokens per second.",
+    "should_trigger": false
+  },
+  {
+    "query": "Как включить prompt caching в Anthropic API напрямую?",
+    "should_trigger": false
+  },
+  {
+    "query": "Подбери самый дешевый VPS для inference.",
+    "should_trigger": false
+  },
+  {
+    "query": "Сделай роутер между разными семействами моделей: GPT, Claude и DeepSeek.",
+    "should_trigger": false
+  },
+  {
+    "query": "Посчитай среднее и p90 по этой CSV-таблице latency.",
+    "should_trigger": false
+  },
+  {
+    "query": "Что означает ZDR в политике хранения данных?",
+    "should_trigger": false
+  },
+  {
+    "query": "Проверь мой OpenAI API request на синтаксис.",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "providers": {
+    "provider-a": {
+      "requests": 500,
+      "request_attempts": 500,
+      "request_successes": 496,
+      "tool_attempts": 240,
+      "tool_successes": 226,
+      "observed_tps": 74.2,
+      "observed_ttft_seconds": 0.91,
+      "prompt_tokens": 12000000,
+      "cached_tokens": 6900000,
+      "cache_write_tokens": 900000,
+      "exacto_score": 83.4,
+      "tau_bench": 76.2,
+      "gpqa_diamond": 85.1
+    },
+    "provider-b": {
+      "requests": 420,
+      "request_attempts": 420,
+      "request_successes": 413,
+      "tool_attempts": 205,
+      "tool_successes": 181,
+      "observed_tps": 55.0,
+      "observed_ttft_seconds": 0.72,
+      "prompt_tokens": 10100000,
+      "cached_tokens": 2300000,
+      "cache_write_tokens": 600000,
+      "exacto_score": 75.8,
+      "tau_bench": 70.1,
+      "gpqa_diamond": 82.0
+    }
+  }
+}

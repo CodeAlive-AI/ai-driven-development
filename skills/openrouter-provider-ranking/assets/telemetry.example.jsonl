@@ -1,0 +1,3 @@
+{"provider_tag":"provider-a","success":true,"tool_success":true,"usage":{"prompt_tokens":24000,"completion_tokens":1800,"prompt_tokens_details":{"cached_tokens":16000,"cache_write_tokens":0}},"ttft_ms":820,"generation_time_seconds":18.4,"total_cost":0.0061}
+{"provider_tag":"provider-a","success":true,"tool_success":true,"usage":{"prompt_tokens":25000,"completion_tokens":1700,"prompt_tokens_details":{"cached_tokens":17000,"cache_write_tokens":0}},"ttft_ms":900,"generation_time_seconds":17.8,"total_cost":0.0060}
+{"provider_tag":"provider-b","success":true,"tool_success":false,"usage":{"prompt_tokens":24000,"completion_tokens":1800,"prompt_tokens_details":{"cached_tokens":4000,"cache_write_tokens":12000}},"ttft_ms":650,"generation_time_seconds":26.0,"total_cost":0.0054}

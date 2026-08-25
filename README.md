@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-23-blue?style=for-the-badge" alt="23 Skills">
+  <img src="https://img.shields.io/badge/Skills-24-blue?style=for-the-badge" alt="24 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -79,6 +79,12 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [refactoring-csharp](skills/refactoring-csharp/) | One-shot Roslyn contract for renaming C# symbols from `file + 1-based line + oldName`, with dry-run preview, safe file moves for supported named types, and explicit error codes |
 | [repo-activity-summary](skills/repo-activity-summary/) | Summarize what a repository has *been doing* from local `git log` — technologies, work types, churn hotspots, contributor patterns, velocity, and health signals. Stdlib-only Python, no network or API keys. Benchmarked at **−42% cost / −37% wall clock** versus the same agent answering the same question unaided, at equal factual accuracy; flags its own low-confidence classification instead of asserting it |
 
+### AI infrastructure (1)
+
+| Skill | What It Does |
+|-------|--------------|
+| [openrouter-provider-ranking](skills/openrouter-provider-ranking/) | Rank the provider endpoints behind one OpenRouter model for a specific workload using hard compatibility filters, workload-aware cost, TPS/TTFT/uptime, cache behavior, production telemetry, quality confidence, and diverse failover; generates `:exacto`, `provider.order`, or native-sort routing fragments |
+
 ### Research & docs (3)
 
 | Skill | What It Does |
@@ -149,6 +155,7 @@ ai-driven-development/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/
 │   ├── mcp-management/
+│   ├── openrouter-provider-ranking/
 │   ├── agentic-readiness/
 │   ├── plan-mode/
 │   ├── plugins-management/

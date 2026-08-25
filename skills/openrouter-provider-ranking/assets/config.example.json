@@ -1,0 +1,56 @@
+{
+  "profile": "agentic-balanced",
+  "routing_mode": "auto",
+  "deterministic_order": false,
+  "max_ranked_providers": 5,
+  "workload": {
+    "uses_tools": true,
+    "streaming": true,
+    "expected_prompt_tokens": 24000,
+    "expected_completion_tokens": 1800,
+    "required_context_tokens": 30000,
+    "required_completion_tokens": 4000,
+    "required_parameters": ["tools", "tool_choice", "response_format"],
+    "expected_requests_per_session": 8,
+    "session_id_available": true,
+    "cacheable_prompt_fraction": 0.75,
+    "assumed_cache_token_hit_rate": 0.0,
+    "assumed_cache_write_token_rate": 0.0,
+    "assumed_response_cache_hit_rate": 0.0,
+    "cache_ttl": "5m"
+  },
+  "constraints": {
+    "only": [],
+    "ignore": [],
+    "allowed_quantizations": ["bf16", "fp16", "fp8"],
+    "allowed_service_tiers": ["default"],
+    "require_caching": false,
+    "require_unmoderated": false,
+    "min_uptime_1d": 0.99,
+    "min_uptime_30m": 0.98,
+    "min_uptime_5m": 0.95,
+    "hard_min_throughput_tps": null,
+    "hard_max_latency_seconds": null,
+    "max_effective_cost_usd": null,
+    "max_prompt_price_per_million": 0.50,
+    "max_completion_price_per_million": 1.50,
+    "max_request_price": 0,
+    "data_collection": "deny",
+    "zdr": false,
+    "preferred_min_throughput": {"p90": 30},
+    "preferred_max_latency": {"p90": 3.0}
+  },
+  "stability": {
+    "previous_order": [],
+    "switch_margin": 0.03
+  },
+  "diversity": {
+    "enabled": true,
+    "max_score_gap": 0.12
+  },
+  "routing": {
+    "allow_fallbacks": true,
+    "strict_hard_constraints": true,
+    "include_session_id_placeholder": true
+  }
+}
