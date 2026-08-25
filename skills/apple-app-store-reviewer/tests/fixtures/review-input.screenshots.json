@@ -1,0 +1,24 @@
+{
+  "app": {
+    "name": "Screenshot Fixture",
+    "bundle_id": "com.example.fixture",
+    "version": "1.0",
+    "build": "1",
+    "platforms": [
+      "ios"
+    ],
+    "device_families": [
+      "iphone"
+    ],
+    "locales": [
+      "en-US"
+    ],
+    "primary_locale": "en-US"
+  },
+  "paths": {
+    "screenshots": "./screenshots"
+  },
+  "features": {
+    "permissions": []
+  }
+}

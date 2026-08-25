@@ -1,0 +1,175 @@
+{
+  "$schema": "./assets/review-input.schema.json",
+  "app": {
+    "name": "Example AI Studio",
+    "bundle_id": "com.example.aistudio",
+    "version": "1.0.0",
+    "build": "100",
+    "new_app": true,
+    "platforms": [
+      "ios",
+      "ipados"
+    ],
+    "device_families": [
+      "iphone",
+      "ipad"
+    ],
+    "storefronts": [
+      "US",
+      "CA",
+      "GB",
+      "DE"
+    ],
+    "locales": [
+      "en-US"
+    ],
+    "primary_locale": "en-US",
+    "category": "Productivity",
+    "minimum_user_age": 13,
+    "price_model": "subscription",
+    "company_name": "Example, Inc.",
+    "competitor_names": []
+  },
+  "paths": {
+    "project": null,
+    "archive": null,
+    "metadata": "./metadata.example.json",
+    "screenshots": null,
+    "privacy_export": null,
+    "iap_export": null,
+    "review_notes": null,
+    "runtime_results": null,
+    "ai_results": null,
+    "visual_results": null,
+    "native_value_dossier": null,
+    "package_json": null,
+    "javascript_lockfile": null,
+    "capacitor_config": null,
+    "web_build": null,
+    "ios_project": null,
+    "native_web_assets": null,
+    "package_resolved": null,
+    "podfile_lock": null,
+    "live_update_manifest": null
+  },
+  "frameworks": {
+    "capacitor": {
+      "mode": "auto",
+      "minimum_version": "8.5.0",
+      "tested_version_range": ">=8.5.0 <9.0.0",
+      "native_project_policy": "auto",
+      "package_manager": "auto",
+      "trusted_cli": false,
+      "release_environment": "production",
+      "expected_plugins": [],
+      "custom_bridge": false,
+      "custom_view_controller": false,
+      "live_updates": {
+        "enabled": false,
+        "provider": "none"
+      }
+    }
+  },
+  "features": {
+    "accounts": {
+      "creation": true,
+      "login_required": true,
+      "deletion_in_app": true,
+      "social_logins": [
+        "google"
+      ],
+      "privacy_preserving_login": true,
+      "login_exception": null
+    },
+    "ai": {
+      "enabled": true,
+      "providers": [
+        "OpenAI"
+      ],
+      "third_party": true,
+      "on_device": false,
+      "foundation_models": false,
+      "chatbot": true,
+      "personal_data_types": [
+        "user-entered text",
+        "uploaded photos"
+      ],
+      "explicit_consent_before_transmission": true,
+      "provider_named_in_consent": true,
+      "training_opt_in": false,
+      "retention_documented": true,
+      "high_impact_domain": null,
+      "outputs_publicly_shared": false,
+      "safety_controls": [
+        "input moderation",
+        "output moderation",
+        "report feedback"
+      ]
+    },
+    "ugc": {
+      "enabled": false,
+      "public_feed": false,
+      "chat_or_messaging": false,
+      "filter": false,
+      "report": false,
+      "block": false,
+      "support_contact": true,
+      "creator_content": false,
+      "age_restriction": false
+    },
+    "commerce": {
+      "digital_goods": true,
+      "physical_goods": false,
+      "person_to_person_real_time": false,
+      "enterprise_only": false,
+      "reader_app": false,
+      "multiplatform": true,
+      "iap": true,
+      "subscriptions": true,
+      "credits": false,
+      "external_purchase_links": false,
+      "restore_purchases": true,
+      "manage_subscriptions": true
+    },
+    "ads_tracking": {
+      "ads": false,
+      "tracking": false,
+      "att": false,
+      "marketing_push": false,
+      "marketing_push_opt_in": false
+    },
+    "permissions": [
+      "camera",
+      "photo-library"
+    ],
+    "specialized": []
+  },
+  "review": {
+    "notes": "AI consent appears before the first third-party AI request. See the exact navigation in the final review notes.",
+    "demo_account": {
+      "username_env": "APP_REVIEW_USERNAME",
+      "password_env": "APP_REVIEW_PASSWORD",
+      "non_expiring": true,
+      "two_factor_bypass": "Review account is exempt from 2FA."
+    },
+    "backend_live": true,
+    "hardware": [],
+    "attachments": []
+  },
+  "runtime": {
+    "workspace": "./ExampleAIStudio.xcworkspace",
+    "project": null,
+    "scheme": "ExampleAIStudio",
+    "test_plan": null,
+    "destination": "platform=iOS Simulator,name=iPhone 17 Pro Max,OS=latest",
+    "configuration": "Release",
+    "result_bundle": null,
+    "extra_xcodebuild_args": [],
+    "reviewer_journey_tests": [
+      "ExampleAIStudioUITests/AppReviewUITests/testReviewerJourney",
+      "ExampleAIStudioUITests/AppReviewUITests/testAIConsentDeniedSendsNoData",
+      "ExampleAIStudioUITests/AppReviewUITests/testAccountDeletionEntryPoint"
+    ]
+  },
+  "exceptions": {}
+}

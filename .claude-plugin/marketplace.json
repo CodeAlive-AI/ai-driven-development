@@ -12,8 +12,8 @@
   "plugins": [
     {
       "name": "ai-driven-development",
-      "description": "An umbrella collection of 24 skills + 1 hook for AI-driven development: agent self-configuration (MCP / hooks / settings / skills / plugins / cross-agent repository readiness / safe CLI installation), engineering practices (maintainable complexity, prompt engineering, FPF problem solving, bug-fix protocol, planning gate, repository-history investigation, repository activity summary, C# refactoring), AI infrastructure (OpenRouter endpoint ranking and routing), research & docs (Semantic Scholar deep research, URL-to-Markdown, ubiquitous-language thesaurus), multi-agent orchestration (consilium: review and stateful delegation), macOS & Windows health & cleanup, and niche utilities (clipboard, Windows QA). Plus a Claude Code Bash safety hook.",
-      "version": "9.5.0",
+      "description": "An umbrella collection of 25 skills + 1 hook for AI-driven development: agent self-configuration (MCP / hooks / settings / skills / plugins / cross-agent repository readiness / safe CLI installation), engineering practices (maintainable complexity, prompt engineering, FPF problem solving, bug-fix protocol, planning gate, repository-history investigation, repository activity summary, C# refactoring, Apple App Store submission review), AI infrastructure (OpenRouter endpoint ranking and routing), research & docs (Semantic Scholar deep research, URL-to-Markdown, ubiquitous-language thesaurus), multi-agent orchestration (consilium: review and stateful delegation), macOS & Windows health & cleanup, and niche utilities (clipboard, Windows QA). Plus a Claude Code Bash safety hook.",
+      "version": "9.7.0",
       "author": {
         "name": "CodeAlive-AI",
         "email": "contact@codealive.ai"

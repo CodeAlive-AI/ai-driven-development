@@ -1,0 +1,90 @@
+name: app-store-preflight
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check -r path/to/apple-app-store-reviewer/requirements.txt
+      - name: Validate skill package and regression fixtures
+        run: |
+          python path/to/apple-app-store-reviewer/scripts/validate_skill.py path/to/apple-app-store-reviewer
+          python -m compileall -q path/to/apple-app-store-reviewer/scripts
+          python -m unittest discover -s path/to/apple-app-store-reviewer/tests -p 'test_*.py' -v
+      - name: Static preflight without network
+        env:
+          APP_REVIEW_USERNAME: ${{ secrets.APP_REVIEW_USERNAME }}
+          APP_REVIEW_PASSWORD: ${{ secrets.APP_REVIEW_PASSWORD }}
+        run: |
+          python path/to/apple-app-store-reviewer/scripts/review_app.py \
+            --config review-input.json \
+            --output-dir review-output-static \
+            --strict \
+            --always-zero
+          python path/to/apple-app-store-reviewer/scripts/validate_report.py \
+            review-output-static/report.json --strict
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-store-preflight-static
+          path: review-output-static
+          if-no-files-found: error
+          retention-days: 14
+
+  macos-release-runtime:
+    runs-on: macos-26
+    timeout-minutes: 60
+    needs: deterministic-static
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check -r path/to/apple-app-store-reviewer/requirements.txt
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Build/archive release candidate
+        run: ./ci/build-app-store-archive.sh
+      - name: Full preflight with controlled policy/URL network checks and XCUITest
+        env:
+          APP_REVIEW_USERNAME: ${{ secrets.APP_REVIEW_USERNAME }}
+          APP_REVIEW_PASSWORD: ${{ secrets.APP_REVIEW_PASSWORD }}
+        run: |
+          python path/to/apple-app-store-reviewer/scripts/review_app.py \
+            --config review-input.json \
+            --output-dir review-output \
+            --network \
+            --run-runtime \
+            --strict \
+            --always-zero
+          python path/to/apple-app-store-reviewer/scripts/validate_report.py \
+            review-output/report.json --strict
+      - name: Enforce final gate
+        run: |
+          python - <<'PY'
+          import json, sys
+          report = json.load(open('review-output/report.json'))
+          state = report['gate']['state']
+          print('gate:', state)
+          sys.exit(0 if state == 'READY FOR SUBMISSION' else 1)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-store-preflight-macos
+          path: review-output
+          if-no-files-found: error
+          retention-days: 30

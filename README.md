@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-24-blue?style=for-the-badge" alt="24 Skills">
+  <img src="https://img.shields.io/badge/Skills-25-blue?style=for-the-badge" alt="25 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 24 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 25 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -29,7 +29,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 24 skills
+# Install all 25 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -64,7 +64,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (8)
+### Engineering practices (9)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
@@ -78,6 +78,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [investigating-repository-history](skills/investigating-repository-history/) | Reconstruct historical intent before risky edits. Local `git blame`/`log` + GitHub PR/review evidence (via `gh`, never direct API), with squash/rebase/cherry-pick/rename/revert anomaly handling, decision-atom extraction, and confidence-scored output — produces a cited history note instead of guessing |
 | [refactoring-csharp](skills/refactoring-csharp/) | One-shot Roslyn contract for renaming C# symbols from `file + 1-based line + oldName`, with dry-run preview, safe file moves for supported named types, and explicit error codes |
 | [repo-activity-summary](skills/repo-activity-summary/) | Summarize what a repository has *been doing* from local `git log` — technologies, work types, churn hotspots, contributor patterns, velocity, and health signals. Stdlib-only Python, no network or API keys. Benchmarked at **−42% cost / −37% wall clock** versus the same agent answering the same question unaided, at equal factual accuracy; flags its own low-confidence classification instead of asserting it |
+| [apple-app-store-reviewer](skills/apple-app-store-reviewer/) | Audit Apple-platform apps before App Store submission or resubmission with deterministic preflight checks, evidence-backed findings, screenshot and runtime review plans, AI/privacy/payment overlays, remediation steps, and a submission-readiness gate |
 
 ### AI infrastructure (1)
 
@@ -143,6 +144,7 @@ ai-driven-development/
 │   └── plugin.json               ← umbrella plugin manifest
 ├── skills/                       ← canonical agent-skills layout
 │   ├── agents-consilium/
+│   ├── apple-app-store-reviewer/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
 │   ├── code-that-fits-in-your-head/

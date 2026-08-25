@@ -1,0 +1,89 @@
+{
+  "skill_name": "apple-app-store-reviewer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review this release candidate as if it were about to be submitted. It is an iPhone AI assistant that sends user-entered text to a third-party model, has Google login, and creates accounts. Run every deterministic check supported by the supplied files, separate direct failures from heuristics, and write the structured readiness report plus prioritized fixes. Never invent runtime evidence.",
+      "expected_output": "A NOT READY evidence-backed report that identifies the embedded API key, generic camera purpose string, broad ATS exception, invalid required-reason API declaration, missing AI consent evidence, missing in-app account deletion evidence, login-equivalence risk, and dynamic-code/private-API review signals. Unobserved runtime, screenshot, and semantic AI paths remain unverified rather than passed.",
+      "files": [
+        "tests/fixtures/project-bad/App.swift",
+        "tests/fixtures/project-bad/Info.plist",
+        "tests/fixtures/project-bad/PrivacyInfo.xcprivacy",
+        "tests/fixtures/review-input.bad-project.json"
+      ],
+      "assertions": [
+        "The output contains a machine-readable report with a readiness gate",
+        "The gate is NOT READY because at least one direct blocker is unresolved",
+        "The report flags the hardcoded OpenAI-shaped credential without reproducing the full credential",
+        "The report distinguishes deterministic findings from heuristic NEEDS_REVIEW findings",
+        "The report does not mark screenshots.visual, runtime.reviewer-journey, or AI semantic review as PASS without evidence",
+        "Each major finding includes evidence, Apple guideline mapping, remediation, and verification steps"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Audit the supplied App Store screenshot set for an iPhone-only app. Validate exact dimensions, encoding, alpha, count, device-family coverage, duplicate risk, and then perform the required visual review. Produce a contact sheet and immutable visual evidence. Do not treat image metrics or OCR as proof that the screenshot is accurate.",
+      "expected_output": "Deterministic validation passes for the supplied opaque 1320 x 2868 PNG and iPhone coverage. A contact sheet and visual-review queue are produced. The final visual PASS, when claimed, references the original by relative path and matching SHA-256 and explicitly confirms every original and locale was reviewed.",
+      "files": [
+        "tests/fixtures/screenshots/en-US/iphone-6.9/01-home.png",
+        "tests/fixtures/review-input.screenshots.json"
+      ],
+      "assertions": [
+        "The deterministic screenshot result recognizes the file as an accepted iPhone 6.9-inch size",
+        "The result reports no alpha channel and no BLOCKER or HIGH screenshot-format finding",
+        "A visual-review queue and contact sheet are produced",
+        "The visual evidence contains the exact screenshots.visual check",
+        "A screenshots.visual PASS is accepted only when the original file hash matches and all-originals/all-locales facts are true",
+        "The output states that contact sheets and deterministic metrics do not replace full-resolution visual inspection"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Apple rejected my thin AI web-wrapper under 4.2. It is a subscription chatbot and I only have the rejection text, metadata, and screenshots—no archive yet. Decide whether to fix or appeal, tell me what evidence is missing, and draft a reviewer-facing recovery plan. Incorporate recent community experience but do not present Reddit or X posts as Apple policy and do not promise approval.",
+      "expected_output": "A partial, conditionally gated review that treats official Guideline 4.2/4.3 requirements as authority, labels community reports as anecdotal, requests or builds a native-value dossier, checks subscription/IAP/AI-consent/privacy/age-rating implications, and gives a concrete fix-versus-appeal decision framework with reviewer-note evidence requirements.",
+      "files": [],
+      "assertions": [
+        "The output explicitly labels the audit partial because the exact binary and runtime paths were not observed",
+        "Official Apple requirements are separated from anecdotal community signals",
+        "The plan requires a native-value dossier covering unique workflows, differentiation, rights, and native utility",
+        "The plan includes AI consent/privacy, subscription/IAP, screenshot accuracy, and worst-case age-rating checks",
+        "The appeal path is recommended only for a demonstrable factual or guideline-application error",
+        "The output does not state or imply guaranteed first-attempt approval"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Using the supplied X community compilation, prepare an App Store preflight addendum for a new AI image and subscription app. Cover thin-wrapper risk, third-party AI consent, release completeness, a possible Guideline 2.1 information request, generative-content promotion, and storefront-specific claims. Separate official requirements from anecdotes and vendor claims.",
+      "expected_output": "An evidence-request and test plan that uses X only as low-confidence signals, maps each concern to current official authority and direct app evidence, prepares recording/device/external-service artifacts without claiming a universal requirement, tests consent denial and clean release flags, checks paywall/permissions and worst-case content and promotions, and refuses to reproduce unsupported percentages or an unverified China terminology blacklist.",
+      "files": [],
+      "assertions": [
+        "X posts and vendor claims are explicitly labeled low reliability rather than Apple policy",
+        "Unsupported rejection percentages and benchmark-accuracy figures are not repeated as facts",
+        "The output does not promise approval or present screens, settings, or offline behavior as a formula for clearing Guidelines 4.2 or 4.3",
+        "A physical-device recording is prepared as a readiness artifact for a possible information request, not described as a universal Guideline 2.1 requirement",
+        "The plan tests the named AI provider, transmitted data, explicit consent, denial, withdrawal, and observed network behavior",
+        "The plan tests release completeness, subscription and restore disclosures, permission prompts, reviewer access, and production feature flags",
+        "Worst-case generative output, age rating, safety controls, advertising, landing pages, and social promotion are reconciled with the submitted app",
+        "Storefront-specific AI claims require current official or qualified legal evidence; no social-media-derived China terminology blacklist is invented"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Audit a Capacitor 8.5 AI app whose source config is clean, generated iOS config contains server.url, source webDir differs from native public, the final archive was not supplied, a camera plugin sends images through CapacitorHttp, UIScene is partially migrated, and a live-update vendor claims App Store compliance. Decide the gate and evidence plan.",
+      "expected_output": "A NOT READY or explicitly partial fail-closed report that treats Capacitor as architecture rather than thin-wrapper proof, gives generated state precedence over source, requires source/generated/submitted hashes and the exact archive, joins plugin permission/privacy/AI-consent evidence across browser and native HTTP, requires cold/warm link and lifecycle proof, and independently reviews live updates under 2.5.2/4.7 without accepting vendor marketing.",
+      "files": [],
+      "assertions": [
+        "The qualified framework range is stated as >=8.5.0 <9.0.0 and future majors require requalification",
+        "Capacitor or WKWebView presence alone does not trigger a Guideline 4.2 or 4.3 finding",
+        "Generated and submitted state outrank clean source declarations",
+        "Missing final archive evidence prevents config, asset, plugin, and privacy parity from passing",
+        "The plan requires paths and SHA-256 manifests for source webDir, generated native public, and final bundle assets",
+        "The plan compares declared, lockfile-resolved, natively integrated, and finally embedded plugins",
+        "TS or JS Capacitor config is not executed by default and cap sync is never run in the user's working tree",
+        "Camera data through CapacitorHttp is joined to purpose strings, privacy labels, named-provider consent, retention, withdrawal, and zero-transmission denial evidence",
+        "Partial UIScene migration requires bridge, lifecycle, cold/warm custom URL, getLaunchUrl, appUrlOpen, and universal-link runtime evidence",
+        "The live-update vendor claim is treated as non-authoritative and policy, integrity, fallback, and rollback checks remain mandatory"
+      ]
+    }
+  ]
+}

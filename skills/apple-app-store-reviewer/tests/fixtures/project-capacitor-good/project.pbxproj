@@ -1,0 +1,2 @@
+/* Minimal scanner fixture, not a buildable Xcode project. */
+SceneDelegate.swift in Sources

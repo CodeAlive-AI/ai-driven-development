@@ -1,0 +1,13 @@
+{
+  "name": "capacitor-review-fixture",
+  "private": true,
+  "dependencies": {
+    "@capacitor/core": "8.5.1",
+    "@capacitor/ios": "8.4.2",
+    "@capacitor/preferences": "8.0.0",
+    "@capacitor/live-updates": "0.4.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.1"
+  }
+}

@@ -1,0 +1,2 @@
+claim_id,category,claim,source_behavior,runtime_evidence,metadata_evidence,screenshot_evidence,privacy_policy_evidence,app_privacy_evidence,age_rating_evidence,payment_evidence,review_notes_evidence,verdict,finding_id,owner
+CLAIM-001,feature,[material feature claim],[file:line],[test/log/screenshot],[locale/field],[image/hash],[section],[ASC answer],[question/answer],[product/paywall],[notes section],NEEDS_REVIEW,,

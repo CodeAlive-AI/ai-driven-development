@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0",
+  "baseline_date": "2026-08-25",
+  "guidelines_last_updated": "2026-06-08",
+  "official_sources": [
+    {
+      "id": "apple-app-review-guidelines",
+      "title": "App Review Guidelines",
+      "url": "https://developer.apple.com/app-store/review/guidelines/",
+      "required": true,
+      "kind": "policy",
+      "expected_date": "2026-06-08",
+      "date_regex": "Last Updated:?\\s*([A-Za-z]+\\s+\\d{1,2},\\s+\\d{4})",
+      "markers_any": [
+        "App Review Guidelines"
+      ],
+      "notes": "Primary authority. A newer Last Updated date invalidates the pinned baseline until reviewed.",
+      "markers_all": [
+        "third-party artificial intelligence",
+        "Login Services"
+      ]
+    },
+    {
+      "id": "apple-upcoming-requirements",
+      "title": "Upcoming Requirements",
+      "url": "https://developer.apple.com/news/upcoming-requirements/",
+      "required": true,
+      "kind": "submission-requirements",
+      "markers_all": [
+        "April 28, 2026",
+        "Xcode 26"
+      ],
+      "notes": "Pinned upload-toolchain minimum at the 2026-08-25 baseline."
+    },
+    {
+      "id": "apple-screenshot-specifications",
+      "title": "Screenshot specifications",
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications",
+      "required": true,
+      "kind": "metadata-specification",
+      "markers_any": [
+        "1320 x 2868",
+        "1260 x 2736"
+      ],
+      "markers_all": [
+        "alpha",
+        "JPEG"
+      ],
+      "notes": "Exact sizes are also pinned in scripts/catalogs.py."
+    },
+    {
+      "id": "apple-age-rating",
+      "title": "Set an app age rating",
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating",
+      "required": true,
+      "kind": "metadata-specification",
+      "markers_any": [
+        "4+",
+        "9+",
+        "13+",
+        "16+",
+        "18+"
+      ],
+      "notes": "Validate the 2026 age-rating scale and questionnaire answers against worst reachable content."
+    },
+    {
+      "id": "apple-third-party-sdk-requirements",
+      "title": "Privacy manifest and signatures for third-party SDKs",
+      "url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+      "required": true,
+      "kind": "privacy",
+      "markers_all": [
+        "privacy manifest",
+        "signature"
+      ],
+      "notes": "List of SDKs that require manifests and signatures."
+    },
+    {
+      "id": "apple-required-reason-api",
+      "title": "Describing use of required reason API",
+      "url": "https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api",
+      "required": false,
+      "kind": "privacy",
+      "markers_any": [
+        "required reason API",
+        "approved reason"
+      ],
+      "notes": "Reason identifiers are pinned in scripts/catalogs.py and should be refreshed from the current API catalog."
+    },
+    {
+      "id": "apple-account-deletion",
+      "title": "Offering account deletion in your app",
+      "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+      "required": false,
+      "kind": "accounts",
+      "markers_any": [
+        "account deletion",
+        "delete their account"
+      ]
+    },
+    {
+      "id": "apple-hig-generative-ai",
+      "title": "Human Interface Guidelines: Generative AI",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/generative-ai",
+      "required": false,
+      "kind": "design-ai",
+      "markers_any": [
+        "Generative AI",
+        "transparency"
+      ]
+    },
+    {
+      "id": "apple-foundation-models-aup",
+      "title": "Foundation Models framework acceptable-use requirements",
+      "url": "https://developer.apple.com/apple-intelligence/acceptable-use-requirements-for-the-foundation-models-framework/",
+      "required": false,
+      "kind": "ai-safety",
+      "markers_any": [
+        "Foundation Models framework",
+        "Acceptable Use"
+      ]
+    },
+    {
+      "id": "apple-subscriptions",
+      "title": "Auto-renewable subscriptions",
+      "url": "https://developer.apple.com/app-store/subscriptions/",
+      "required": false,
+      "kind": "commerce",
+      "markers_any": [
+        "auto-renewable subscriptions",
+        "subscription"
+      ]
+    }
+  ],
+  "framework_sources": [
+    {
+      "id": "capacitor-v8-docs",
+      "title": "Capacitor v8 documentation",
+      "url": "https://capacitorjs.com/docs",
+      "kind": "framework-baseline",
+      "qualified_range": ">=8.5.0 <9.0.0",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-updating-8-0",
+      "title": "Updating Capacitor from 7 to 8",
+      "url": "https://capacitorjs.com/docs/updating/8-0",
+      "kind": "framework-upgrade",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-updating-8-5",
+      "title": "Updating Capacitor from 8.4 to 8.5",
+      "url": "https://capacitorjs.com/docs/updating/8-5",
+      "kind": "framework-upgrade",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-config",
+      "title": "Capacitor configuration",
+      "url": "https://capacitorjs.com/docs/config",
+      "kind": "framework-config",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-ios-spm",
+      "title": "Capacitor Swift Package Manager guide",
+      "url": "https://capacitorjs.com/docs/ios/spm",
+      "kind": "framework-dependencies",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-ios-privacy-manifest",
+      "title": "Capacitor iOS privacy manifest guide",
+      "url": "https://capacitorjs.com/docs/ios/privacy-manifest",
+      "kind": "framework-privacy",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-security",
+      "title": "Capacitor security guide",
+      "url": "https://capacitorjs.com/docs/guides/security",
+      "kind": "framework-security",
+      "last_verified": "2026-08-26"
+    },
+    {
+      "id": "capacitor-deep-links",
+      "title": "Capacitor deep links guide",
+      "url": "https://capacitorjs.com/docs/guides/deep-links",
+      "kind": "framework-runtime",
+      "last_verified": "2026-08-26"
+    }
+  ],
+  "standards_sources": [
+    {
+      "id": "agent-skills-best-practices",
+      "title": "Agent Skills: Best practices",
+      "url": "https://agentskills.io/skill-creation/best-practices",
+      "kind": "skill-authoring"
+    },
+    {
+      "id": "agent-skills-specification",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "kind": "skill-authoring"
+    }
+  ],
+  "community_sources": [
+    {
+      "id": "forum-face-photo-ai-review",
+      "title": "Apple Developer Forums: review rejections for face photo / AI",
+      "url": "https://developer.apple.com/forums/tags/privacy",
+      "observed": "2026-08-25",
+      "reliability": "medium",
+      "signal": "Reviewers requested exact face-data collection, use, storage, retention, deletion, third-party sharing, and policy wording; screenshots and business model were also questioned.",
+      "use": "Add evidence requests and reviewer-note tests; do not turn forum questions into policy."
+    },
+    {
+      "id": "forum-ai-consent-recipient",
+      "title": "Apple Developer Forums: third-party AI disclosure/consent reports",
+      "url": "https://developer.apple.com/forums/tags/privacy",
+      "observed": "2026-08-25",
+      "reliability": "medium",
+      "signal": "Developers report rejections where the pre-transmission disclosure did not explain what data was shared or identify the third-party AI recipient.",
+      "use": "Conservative informed-consent test tied to the official privacy rule."
+    },
+    {
+      "id": "reddit-minimum-functionality-2026",
+      "title": "Reddit: repeated Guideline 4.2.2 rejection",
+      "url": "https://www.reddit.com/r/iOSProgramming/comments/1ppwejy/four_rejections_of_my_app_incredibly_frustrated/",
+      "observed": "2026-08-25",
+      "reliability": "low",
+      "signal": "A developer reports repeated minimum-functionality rejection for an app Apple characterized as links/images/aggregated internet content.",
+      "use": "Trigger native-value dossier and a manual 4.2 review."
+    },
+    {
+      "id": "reddit-webview-value-2026",
+      "title": "Reddit: WebView and native-value lessons",
+      "url": "https://www.reddit.com/r/iOSProgramming/comments/1r97gce/webviews_instead_of_native_lessons_learned_case/",
+      "observed": "2026-08-25",
+      "reliability": "low",
+      "signal": "Community advice emphasizes functionality beyond a website wrapper.",
+      "use": "Heuristic only; evaluate against Guidelines 4.2 and 4.3."
+    },
+    {
+      "id": "x-ai-consent-2026",
+      "title": "X: developer commentary on third-party AI opt-in",
+      "url": "https://x.com/seraleev/status/2025927666818298133",
+      "observed": "2026-08-25",
+      "reliability": "low",
+      "signal": "Commentary says AI features should remain disabled after consent is declined and reports missing consent screens as a rejection pattern.",
+      "use": "Test denial-state coherence; never use as authority."
+    },
+    {
+      "id": "x-submission-hygiene-2026",
+      "title": "X: IAP and submission hygiene reports",
+      "url": "https://x.com/celal_dev",
+      "observed": "2026-08-25",
+      "reliability": "low",
+      "signal": "Reported rejection reasons include IAP products not submitted and unclear subscription benefits.",
+      "use": "Add deterministic evidence checks tied to official IAP rules."
+    },
+    {
+      "id": "x-ai-wrapper-spam-2026",
+      "title": "X: thin AI wrapper and Guideline 4.3 commentary",
+      "url": "https://x.com/kingwilliam_",
+      "observed": "2026-08-22",
+      "reliability": "low",
+      "signal": "Developer commentary describes one-screen prompt forwarders and generic AI concepts as recurring 4.3/spam risks and recommends substantial workflows, differentiation, and offline value.",
+      "use": "Trigger native-value and sibling/template comparison; profile URL only because the supplied compilation did not include the exact post URL. Do not treat suggested product features as an approval formula."
+    },
+    {
+      "id": "x-release-completeness-2026",
+      "title": "X: release completeness and reviewer-path rejection reports",
+      "url": "https://x.com/molaerga",
+      "observed": "2026-08-20",
+      "reliability": "low",
+      "signal": "A developer compilation reports ATT, subscription metadata, duplicated promotional images, permission pre-prompts, premium review state, HealthKit presentation, naming, restore, terms, screenshot, placeholder, and broken-flow problems.",
+      "use": "Expand clean-install, metadata, paywall, permission, and production-flag checks; profile URL only because exact post URLs were not supplied."
+    },
+    {
+      "id": "x-guideline-21-evidence-request-2026",
+      "title": "X: Guideline 2.1 screen-recording and information-request reports",
+      "url": "https://x.com/maxupsidehq",
+      "observed": "2026-08-24",
+      "reliability": "low",
+      "signal": "Developers report requests for a physical-device recording, tested device/OS list, external services, IAP flow, feature purpose, and access instructions on new submissions.",
+      "use": "Prepare an evidence package for difficult-to-reproduce apps; profile URL only because the exact post URL was not supplied. Do not claim a universal video requirement."
+    },
+    {
+      "id": "x-generative-content-enforcement-2026",
+      "title": "X: generative-content removal and off-store promotion report",
+      "url": "https://x.com/xburak",
+      "observed": "2026-08-19",
+      "reliability": "low",
+      "signal": "A developer report links app removal to nudification or explicit generative behavior promoted outside the store but not candidly represented during review.",
+      "use": "Test worst reachable output and reconcile ads/social promotion with the binary, metadata, age rating, filters, and review notes; profile URL only because the exact post URL was not supplied."
+    },
+    {
+      "id": "x-app-store-preflight-tool-2026",
+      "title": "X: open-source App Store Preflight tool announcement",
+      "url": "https://x.com/truongduy2611",
+      "observed": "2026-03-19",
+      "reliability": "low",
+      "signal": "The author claims checks for privacy manifests, unused entitlements, competitor terms, subscription pricing, app-type branches, and China-specific AI terminology.",
+      "use": "Compare product-pattern coverage only. Do not adopt a storefront blacklist or guideline claim without the tool source and current official authority."
+    },
+    {
+      "id": "x-rork-reviewer-marketing-2026",
+      "title": "X: Rork AI App Store Reviewer launch claims",
+      "url": "https://x.com/rork",
+      "observed": "2026-08-20",
+      "reliability": "low",
+      "signal": "Vendor commentary cites submission/rejection statistics, performance-related rejection prevalence, and an internal reviewer benchmark.",
+      "use": "Treat all percentages and accuracy claims as commercial marketing until an independently reproducible dataset and protocol are available."
+    },
+    {
+      "id": "ionic-forum-capacitor-privacy-manifest",
+      "title": "Ionic Forum: Capacitor privacy-manifest submission reports",
+      "url": "https://forum.ionicframework.com/t/ios-itms-91061-missing-privacy-manifest/245709",
+      "observed": "2026-08-26",
+      "reliability": "low",
+      "signal": "Developers report manifest problems becoming visible during full submission despite earlier development or TestFlight success.",
+      "use": "Trigger final-archive and embedded-SDK manifest inspection; never treat TestFlight success as submission proof."
+    },
+    {
+      "id": "capacitor-external-site-issue",
+      "title": "Capacitor issue: external website as primary WebView",
+      "url": "https://github.com/ionic-team/capacitor/issues/8242",
+      "observed": "2026-08-26",
+      "reliability": "low",
+      "signal": "Maintainer discussion discourages an external site as the production Capacitor origin and notes possible store-review risk.",
+      "use": "Operational context for final server.url/origin inspection; Apple policy and final app evidence control."
+    },
+    {
+      "id": "capacitor-9-alpha-nested-framework-issue",
+      "title": "Capacitor issue: nested framework and duplicate identifier in a 9 alpha",
+      "url": "https://github.com/ionic-team/capacitor/issues/8560",
+      "observed": "2026-08-26",
+      "reliability": "low",
+      "signal": "An issue reports upload validation failure from nested frameworks and duplicate bundle identifiers and describes 8.5.0 as unaffected.",
+      "use": "Trigger framework-neutral final-bundle invariants; do not turn an alpha defect into a warning against Capacitor 8.5."
+    },
+    {
+      "id": "forum-review-delays-aug-2026",
+      "title": "Apple Developer Forums: August 2026 review delays",
+      "url": "https://developer.apple.com/forums/tags/app-review?page=5",
+      "observed": "2026-08-25",
+      "reliability": "low",
+      "signal": "Multiple developers reported prolonged Waiting for Review periods in August 2026.",
+      "use": "Operational planning only; never score compliance or invent expected review times."
+    }
+  ],
+  "next_scheduled_refresh": "2026-09-01"
+}

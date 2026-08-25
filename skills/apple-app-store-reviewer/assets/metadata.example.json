@@ -1,0 +1,68 @@
+{
+  "primary_locale": "en-US",
+  "locales": {
+    "en-US": {
+      "name": "Example AI Studio",
+      "subtitle": "Create with guided AI",
+      "promotional_text": "Build, revise, and export original work with transparent AI assistance.",
+      "description": "Example AI Studio helps you create and refine projects with guided AI tools. You control what is sent for processing and can use non-AI project management features without granting AI data-sharing permission.",
+      "keywords": "writing,projects,editor,assistant,productivity",
+      "whats_new": "Initial release.",
+      "support_url": "https://example.com/support",
+      "marketing_url": "https://example.com/app",
+      "privacy_policy_url": "https://example.com/privacy",
+      "terms_url": "https://example.com/terms"
+    }
+  },
+  "review": {
+    "notes": "Use the non-expiring review account. Open a project, tap AI Assist, review the disclosure naming OpenAI and the data categories, then tap Allow to run the request. Account deletion is Settings > Account > Delete Account.",
+    "demo_account": {
+      "username_env": "APP_REVIEW_USERNAME",
+      "password_env": "APP_REVIEW_PASSWORD",
+      "non_expiring": true
+    }
+  },
+  "app_privacy": {
+    "completed": true,
+    "tracking": false,
+    "data_types": [
+      {
+        "type": "User Content",
+        "linked_to_user": true,
+        "used_for_tracking": false,
+        "purposes": ["App Functionality"],
+        "third_parties": ["OpenAI"]
+      }
+    ]
+  },
+  "age_rating": {
+    "completed": true,
+    "declared_rating": "13+",
+    "ai_or_chatbot_considered": true,
+    "social_media_capability": false
+  },
+  "iap": [
+    {
+      "product_id": "com.example.aistudio.pro.monthly",
+      "type": "auto_renewable_subscription",
+      "display_name": "Pro Monthly",
+      "description": "Unlimited AI-assisted projects and export tools.",
+      "submitted_for_review": true,
+      "review_screenshot": "./iap-review/pro-monthly.png",
+      "duration": "P1M",
+      "trial": "P7D"
+    }
+  ],
+  "subscription_ui": {
+    "product_name_visible": true,
+    "duration_visible": true,
+    "localized_price_visible": true,
+    "trial_and_post_trial_price_visible": true,
+    "auto_renewal_visible": true,
+    "restore_visible": true,
+    "manage_visible": true,
+    "privacy_link_visible": true,
+    "terms_link_visible": true
+  },
+  "eula": "custom"
+}
