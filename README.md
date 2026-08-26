@@ -84,7 +84,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
-| [openrouter-provider-ranking](skills/openrouter-provider-ranking/) | Rank the provider endpoints behind one OpenRouter model for a specific workload using hard compatibility filters, workload-aware cost, TPS/TTFT/uptime, cache behavior, production telemetry, quality confidence, and diverse failover; generates `:exacto`, `provider.order`, or native-sort routing fragments |
+| [openrouter-provider-ranking](skills/openrouter-provider-ranking/) | Rank and verify the provider endpoints behind one OpenRouter model using hard compatibility filters, workload-aware cost, TPS/TTFT/uptime, cache behavior, production telemetry, quality confidence, and diverse failover; generates `:exacto`, `provider.order`, or native-sort routing fragments |
 
 ### Research & docs (3)
 

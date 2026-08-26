@@ -18,6 +18,7 @@ Use this skill when you need to:
 - create a deterministic `provider.order` failover chain;
 - decide between native `:exacto`, a manual ranking, and OpenRouter's built-in `provider.sort` modes;
 - combine OpenRouter endpoint data with provider-tagged production telemetry;
+- verify the top candidates with real requests before treating a catalogue-based ranking as a production decision;
 - explain which endpoints were excluded and which signals are missing or uncertain.
 
 It is not a general model-selection skill. Its scope is endpoint-level routing after the OpenRouter model slug is known.
@@ -47,7 +48,20 @@ python3 scripts/rank_providers.py \
   --output result.json
 ```
 
-The output includes the selected routing mode, eligible and excluded endpoints, score components, workload-level expected cost, coverage warnings, and a ready-to-use OpenRouter request fragment.
+The output includes the selected routing mode, eligible and excluded endpoints, score components, workload-level expected cost, coverage warnings, and a ready-to-use OpenRouter request fragment. The ranking is a hypothesis until the top candidates have been checked on the workload profile that will ship.
+
+Verify candidates with real requests when a decision depends on catalogue fields such as caching, TTFT, throughput, or contract compliance:
+
+```bash
+python3 scripts/probe_endpoints.py \
+  --model deepseek/deepseek-v4-flash-0731 \
+  --providers coreweave/fp8,fireworks,siliconflow/fp8 \
+  --prompt-file real-prompt.txt \
+  --max-tokens 600 --runs 3 \
+  --min-tps 50 --max-ttft 6 --require-cache --require-max-tokens
+```
+
+The probe reports measured TTFT, TPS, cost, cache hit share, completion-token compliance, and error class against the thresholds you provide.
 
 ## Routing modes
 
@@ -62,6 +76,7 @@ The skill treats hard compatibility requirements as filters, never as score pena
 ## Bundled resources
 
 - `scripts/rank_providers.py` — stdlib-only endpoint ranker and routing-fragment generator.
+- `scripts/probe_endpoints.py` — real-request verification for TTFT, TPS, cost, cache hit, `max_tokens` compliance, and error class.
 - `scripts/validate_skill.py` — package, syntax, JSON, and unit-test validation.
 - `assets/config.example.json` — example tool-using agent workload.
 - `assets/observations.example.json` — aggregated provider observations.
@@ -69,6 +84,7 @@ The skill treats hard compatibility requirements as filters, never as score pena
 - `references/scoring.md` — scoring formula, normalization, and workload profiles.
 - `references/input-formats.md` — configuration and telemetry formats.
 - `references/openrouter-routing.md` — OpenRouter routing and caching semantics.
+- `references/storefront-traps.md` — reproduced cases where catalogue fields disagree with endpoint behavior.
 - `tests/trigger-evals.json` — positive and negative activation examples.
 
 ## Validate

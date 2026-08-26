@@ -1,10 +1,10 @@
 [
   {
-    "query": "Составь приоритетный provider.order для deepseek/deepseek-v4-flash-0731 по TPS, цене, uptime и Exacto.",
+    "query": "Create a prioritized provider.order for deepseek/deepseek-v4-flash-0731 by TPS, price, uptime, and Exacto.",
     "should_trigger": true
   },
   {
-    "query": "Какого провайдера OpenRouter первым ставить для tool-calling агента, если важны cache hit и надежность?",
+    "query": "Which OpenRouter provider should come first for a tool-calling agent when cache hit and reliability matter?",
     "should_trigger": true
   },
   {
@@ -12,7 +12,7 @@
     "should_trigger": true
   },
   {
-    "query": "Сгенерируй provider.only и provider.order на основе JSON из /api/v1/models/.../endpoints.",
+    "query": "Generate provider.only and provider.order from JSON returned by /api/v1/models/.../endpoints.",
     "should_trigger": true
   },
   {
@@ -20,11 +20,11 @@
     "should_trigger": true
   },
   {
-    "query": "У меня 20k input, 2k output и 60% cached tokens. Посчитай effective cost каждого endpoint и отсортируй.",
+    "query": "I have 20k input, 2k output, and 60% cached tokens. Calculate each endpoint's effective cost and sort them.",
     "should_trigger": true
   },
   {
-    "query": "Проверь, почему OpenRouter постоянно прыгает между провайдерами, и сделай устойчивый fallback chain без дребезга.",
+    "query": "Check why OpenRouter keeps switching between providers and build a stable fallback chain without flapping.",
     "should_trigger": true
   },
   {
@@ -32,51 +32,51 @@
     "should_trigger": true
   },
   {
-    "query": "Сравни CoreWeave, DeepInfra и NScale на performance tab одной модели и выбери порядок для агента.",
+    "query": "Compare CoreWeave, DeepInfra, and NScale on one model's performance tab and choose the order for an agent.",
     "should_trigger": true
   },
   {
-    "query": "Проранжируй OpenRouter providers по successful-task cost, используя мои generation logs и cached_tokens.",
+    "query": "Rank OpenRouter providers by successful-task cost using my generation logs and cached_tokens.",
     "should_trigger": true
   },
   {
-    "query": "Какая LLM сейчас лучше для написания React-кода?",
+    "query": "Which LLM is currently best for writing React code?",
     "should_trigger": false
   },
   {
-    "query": "Сравни Claude и Gemini по качеству перевода.",
+    "query": "Compare Claude and Gemini for translation quality.",
     "should_trigger": false
   },
   {
-    "query": "Напиши Python-функцию сортировки списка чисел.",
+    "query": "Write a Python function to sort a list of numbers.",
     "should_trigger": false
   },
   {
-    "query": "Объясни, что такое tokens per second.",
+    "query": "Explain what tokens per second means.",
     "should_trigger": false
   },
   {
-    "query": "Как включить prompt caching в Anthropic API напрямую?",
+    "query": "How do I enable prompt caching directly in the Anthropic API?",
     "should_trigger": false
   },
   {
-    "query": "Подбери самый дешевый VPS для inference.",
+    "query": "Find the cheapest VPS for inference.",
     "should_trigger": false
   },
   {
-    "query": "Сделай роутер между разными семействами моделей: GPT, Claude и DeepSeek.",
+    "query": "Build a router between different model families: GPT, Claude, and DeepSeek.",
     "should_trigger": false
   },
   {
-    "query": "Посчитай среднее и p90 по этой CSV-таблице latency.",
+    "query": "Calculate the average and p90 from this CSV latency table.",
     "should_trigger": false
   },
   {
-    "query": "Что означает ZDR в политике хранения данных?",
+    "query": "What does ZDR mean in a data retention policy?",
     "should_trigger": false
   },
   {
-    "query": "Проверь мой OpenAI API request на синтаксис.",
+    "query": "Check my OpenAI API request for syntax.",
     "should_trigger": false
   }
 ]
