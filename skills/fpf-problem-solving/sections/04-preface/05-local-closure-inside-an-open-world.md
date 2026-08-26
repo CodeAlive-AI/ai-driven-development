@@ -8,7 +8,7 @@ The old open-world versus closed-world distinction is a useful didactic picture.
 
 FPF does not transform the open world into a closed one. It lets a project build small closed worlds for declared purposes:
 
-- the exact source, scope, model-use organization, working situation, comparison basis, or other subject-defined boundary states what is current for this decision;
+- a bounded context states which meanings and invariants are current;
 - an EntityOfConcern states what project entity the reasoning is about;
 - a description states what can be relied on and under what relation;
 - evidence and assurance state what claim is credible enough for the local use;

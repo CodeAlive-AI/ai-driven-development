@@ -6,17 +6,20 @@
 
 **Plain-name.** Agentic tool-use and call planning.
 
-**Intent.** Help a practitioner turn one fixed choice into a budgeted call plan, then revise that plan or return a bounded checkpoint without confusing planning with selection or execution.
+**Intent.** Help a practitioner turn an already fixed action or option into a budgeted call plan, then revise that plan or return a bounded checkpoint without confusing planning with selection or execution.
 
 **Instantiates and refines Pillars.** `E.2` `P-3` Scalable Formality, `P-7` Pragmatic Utility, `P-10` Open-Ended Evolution, `P-11` SoTA Alignment, and `C.19.1` Bitter-Lesson Preference when a real scale comparison is current.
 
-**Depends on.** `A.15` and its planning and Work patterns for Methods, descriptions, plans, performed Work, and attribution; `C.18` for candidate generation; `C.19` for live-pool policy; `C.19.1` for a scale-based comparison or waiver; `C.11` for the fixed choice consumed here; `C.16` for measured comparison inputs; `G.6` for call-trace representation; and `B.3` only when a named assurance use needs one bounded assurance result.
+**Depends on.** `A.15` and its planning and Work patterns for Methods, descriptions, plans, performed Work, and attribution; `A.15.7` for a situation-responsive next-action decision; `C.11` for a fixed choice among a current `OptionSet`; `C.2.1` when the relied-on decision or checkpoint needs a persistent episteme; `C.18` for candidate generation; `C.19` for live-pool policy; `C.19.1` for a scale-based comparison or waiver; `C.16` for measured comparison inputs; `G.6` for call-trace representation; and `B.3` only when a named assurance use needs one bounded assurance result.
 
 **Coordinates with.** `U.PromiseContent` for service acceptance conditions, `C.28` when a planned call is intended to support a causal use, and `E.17`/`E.24.PUB` when an already obtained result is being published or made available.
 
 ### C.24:0 - Use this when
 
-Use `C.24` when one choice has already been fixed and the practical question is now:
+Use `A.15.7` first when ongoing Work still needs the next action to be chosen from current facts within a domain Method. Enter `C.24` only after that action is fixed and tool or service calls must be planned. A call plan is neither the situation-responsive decision nor proof that the chosen action was performed.
+
+
+Use `C.24` when a decision has already fixed the action or option and the practical question is now:
 
 - which admitted Methods to call, in what order;
 - which time, compute, cost, and risk budget to reserve;
@@ -34,20 +37,20 @@ Do not use it to generate candidates, keep a live pool, choose among unresolved 
 
 ### C.24:0.2 - What this buys
 
-- one small, tool-neutral plan that cites the accepted upstream result;
+- one small, tool-neutral plan that cites the accepted decision basis;
 - visible budgets, stop conditions, and replan triggers before calls are made;
 - one replayable call-trace reference after Work occurs; and
 - one bounded checkpoint when more route probing is justified but commitment is not.
 
 **Primary working object.** One `ATC.CallPlan : U.WorkPlan`. Each step selects a `U.Method`. A route description may help locate or constrain that Method, but remains a separate `U.MethodDescription`. Actual calls are dated `U.Work` and remain outside this planning result.
 
-**First useful move.** Cite `upstreamChoiceResultRef`, then write the ordered Method refs, budget, stop or replan condition, and next planned action. Add route-description refs only where the route cannot be understood without them.
+**First useful move.** Say whether the fixed action came from A.15.7 or C.11 and cite exactly one corresponding reference in `decisionBasis`. Then write the ordered Method refs, budget, stop or replan condition, and next planned action. Add route-description refs only where the route cannot be understood without them.
 
 **Not this pattern when.** Use `C.11` while fixed-option choice is unresolved, `C.19` while treatment of a live pool is unresolved, `G.5` when the current task is selector-facing result declaration, `A.15.5` for work-entry readiness, and `A.15.1` when the question is what Work actually occurred or which Method it enacted.
 
 ### C.24:0.3 - First-minute questions
 
-1. Which accepted result fixed the option or route now being planned?
+1. Which accepted A.15.7 decision or C.11 `ChoiceResult` fixed the action or option now being planned?
 2. Does every planned step name an admitted Method, rather than only a vendor route or endpoint label?
 3. Which budget is current: a still-upstream probe budget or an enactment/call budget?
 4. What event stops or replans the route?
@@ -59,7 +62,9 @@ The first useful output is one of these:
 
 ```text
 CallPlan:
-  upstreamChoiceResultRef
+  decisionBasis:
+    situationResponsiveDecisionEpistemeRef?  # A.15.7; only when this plan relies on the retained decision
+    fixedOptionChoiceResultRef?               # C.11; only a choose-now result
   objective
   plannedCallsInOrder:
     - methodRef
@@ -73,7 +78,9 @@ CallPlan:
 
 ```text
 CheckpointReturn:
-  upstreamChoiceResultRef
+  decisionBasis:
+    situationResponsiveDecisionEpistemeRef?  # A.15.7
+    fixedOptionChoiceResultRef?               # C.11 choose-now result
   objectiveOrTaskFamily
   testedMethodRefs
   testedMethodDescriptionRefs?
@@ -84,19 +91,20 @@ CheckpointReturn:
   commitTrigger
 ```
 
-`nextPlannedAction` and `recommendedNextAction` are local fields, not claims that Work has occurred. Add one of the branch-specific refs in C.24:4.4 only when that exact constraint still affects the plan. A plan with no current policy branch needs no policy placeholder. If neither output can cite the accepted upstream result and state what happens next, the C.24 work is unfinished.
 
-If that upstream result changes, is withdrawn, or no longer fixes the option or route, reopen the plan and return to `C.11` or `C.19` as applicable. Do not revise the route as though the choice were still settled.
+`nextPlannedAction` and `recommendedNextAction` are local fields, not claims that Work has occurred. Exactly one decision-basis reference is present. Add one of the branch-specific refs in C.24:4.4 only when that constraint still affects the plan. A plan with no current policy branch needs no policy placeholder. If neither output can cite its accepted decision basis and state what happens next, the C.24 work is unfinished.
+
+If the A.15.7 decision changes, is withdrawn, or no longer fixes the action, reopen the plan and return to A.15.7. If the C.11 `ChoiceResult` changes or no longer says `choose now`, return to C.11. A changed live-pool branch returns separately to C.19. Do not revise the call plan as though its decision basis were still settled.
 
 ### C.24:1 - Problem frame
 
-Tool-using Systems may plan across web services, local programs, instruments, robots, or human-operated routes. The implementation may be an LLM agent, a search system, a conventional planner, or a fixed program. The planning problem is the same: turn one settled choice into an ordered and bounded route without hiding route grounding, budget, or stop logic.
+Tool-using Systems may plan across web services, local programs, instruments, robots, or human-operated routes. The implementation may be an LLM agent, a search system, a conventional planner, or a fixed program. The planning problem is the same: turn a fixed action or option into an ordered and bounded route without hiding route grounding, budget, or stop logic.
 
 A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as performed Work, the admitted System, dated Work, Method, interval, and applicable attribution facts remain recoverable through `A.15.1`, `A.2.1`, and `F.6`.
 
 ### C.24:2 - Problem
 
-We need a tool-neutral way to produce or revise one call plan under explicit budgets and policy while keeping Method, route description, plan, performed Work, service promise, trace representation, upstream choice, and assurance result distinct.
+We need a tool-neutral way to produce or revise one call plan under explicit budgets and policy while keeping Method, route description, plan, performed Work, service promise, trace representation, the decision basis that fixed the action, and any assurance result distinct.
 
 ### C.24:3 - Forces
 
@@ -116,6 +124,8 @@ We need a tool-neutral way to produce or revise one call plan under explicit bud
 - `ATC.CheckpointReturn` is a C.2.1 result episteme stating what was tested, what budget was burned, and what route action is recommended next. It is not the tested Work.
 - `ATC.CallGraphRef` cites the applicable `G.6` trace representation over actual call Work. The representation records or points to facts; it creates none of them.
 
+`decisionBasis` contains exactly one of two references. `situationResponsiveDecisionEpistemeRef` refers to an episteme identified under C.2.1 because this plan relies on an A.15.7 decision; the episteme states the selected action, deciding System, intended performer, action-changing fact, relevant Method limit, and stop or feedback condition. `fixedOptionChoiceResultRef` refers to a C.11 `ChoiceResult` whose result is `choose now`. The first is not a `ChoiceResult`, and the second does not become a situation-responsive decision by being consumed here.
+
 There is no catch-all `ATC.PolicyRef`. When a constraint branch is current, cite its actual object: C.19 `PoolPolicyResult` or `EmitterPolicy`, a C.19.1 probe, comparison, local-policy, or waiver result, or a domain constraint whose kind and defining pattern are named. Time, compute, cost, risk, stop, and replan ceilings remain fields of this plan.
 
 State the distinction among Method, route description, plan, and Work here and apply it throughout. Repeat a qualifier only when it changes identity, action, stop, or reliance at that locus.
@@ -126,7 +136,7 @@ C.24 owns only planning and replanning:
 
 ```text
 planCalls(
-  upstreamChoiceResultRef,
+  decisionBasis,
   objective,
   admittedMethodRefs,
   routeDescriptionRefs?,
@@ -140,13 +150,14 @@ revisePlan(
 ) -> CallPlan | CheckpointReturn | neighborExit
 ```
 
-`A.3.1` supplies exact Method admission, and the fixed C.11 choice result supplies the Method refs accepted by this plan. C.18 may supply generated candidate or front material, and C.19 may supply a live-pool treatment that informed the upstream choice; neither record admits a Method. Comparison comes from the selected evaluation Method and, when scale preference is claimed, `C.19.1`. Actual execution, observations, and provenance rows come from dated Work and `G.6`. C.24 only constrains what the plan or checkpoint must retain for those later uses.
+`A.3.1` supplies Method admission. The decision basis fixes the action or option being planned; it does not admit the Methods chosen for plan steps. An A.15.7 basis keeps the selected action, deciding System, intended performer, action-changing fact, relevant domain-Method limit, and stop or feedback condition. A C.11 basis is a `ChoiceResult` whose lawful result is `choose now`; `probe again`, `reject current set`, and `reroute` do not fix an action for C.24. C.18 may supply generated candidate or front material, and C.19 may supply a live-pool treatment that informed the decision; neither record admits a Method. Comparison comes from the selected evaluation Method and, when scale preference is claimed, `C.19.1`. Actual execution, observations, and provenance rows come from dated Work and `G.6`. C.24 only constrains what the plan or checkpoint must retain for those later uses.
+
 
 #### C.24:4.2 - Bounded scout or probe cycle
 
-When the accepted choice permits enactment planning but the usable route is still unfamiliar, the admitted System may perform a bounded scout pass and return a `CheckpointReturn`.
+When the accepted decision basis permits enactment planning but the usable route is still unfamiliar, the admitted System may perform a bounded scout pass and return a `CheckpointReturn`.
 
-If another probe could still change which option survives the `OptionSet`, the budget remains a `C.11` probe budget and planning returns upstream. If the option is fixed and only route shape or rollout order is uncertain, the probe uses enactment budget and its checkpoint belongs here.
+If another probe could still change which option survives the `OptionSet`, the budget remains a C.11 probe budget and planning returns there. If changed live facts or domain-Method limits could change an A.15.7 action, return there instead. If the action or option remains fixed and only route shape or rollout order is uncertain, the probe uses enactment budget and its checkpoint belongs here.
 
 A successful probe is not a commitment. Commitment needs the named `commitTrigger`, enough residual budget, and any separately required safety or assurance condition.
 
@@ -158,7 +169,7 @@ A successful probe is not a commitment. Commitment needs the named `commitTrigge
 
 **ATC-3 — Make budgets and harm limits visible.** A `CallPlan` states its planned ceilings. A `CheckpointReturn` or Work-side record states actual burn. The admitted System stops or replans when a named ceiling or safety condition is breached.
 
-**ATC-4 — Keep live-pool exploration declared.** Cite a C.19 `PoolPolicyResult` only while treatment of that still-live pool constrains this plan. Cite its exact `EmitterPolicy` only when the plan actually uses that profile; then record `explore_share`, including `0` when the current profile explicitly plans none. Do not fabricate either ref after the fixed choice has made pool treatment irrelevant, and do not silently turn illumination or novelty telemetry into a decision criterion.
+**ATC-4 — Keep live-pool exploration declared.** Cite a C.19 `PoolPolicyResult` only while treatment of that still-live pool constrains this plan. Cite its exact `EmitterPolicy` only when the plan actually uses that profile; then record `explore_share`, including `0` when the current profile explicitly plans none. Do not fabricate either ref after the fixed action or option has made pool treatment irrelevant, and do not silently turn illumination or novelty telemetry into a decision criterion.
 
 **ATC-5 — Preserve replay after execution.** Each actual call is recovered as dated Work with its performer, enacted Method, interval, containing system when material, plan ref, actual budget delta, inputs and outputs subject to privacy, and any route-description edition used. Cite the applicable G.6 trace representation. The plan and trace do not establish these facts by themselves.
 
@@ -214,7 +225,7 @@ The field states the planned causal use and any support already consumed. It doe
 
 Record:
 
-- `upstreamChoiceResultRef`, objective, and ordered Method refs;
+- exactly one decision-basis reference—an A.15.7 decision episteme or a C.11 `choose now` `ChoiceResult`—plus the objective and ordered Method refs;
 - route-description refs only when needed, with their source scheme, exact edition, intended use, and selected Method binding;
 - dependencies or safe parallelism only when they change the route;
 - time, compute, cost, and risk budgets plus stop and replan conditions;
@@ -225,13 +236,16 @@ This is enough for an ordinary plan. Do not fill the heavier branches merely to 
 
 #### C.24:4.7 - Closure and worked cases
 
-Close as a `CallPlan` when route order and budgeted enactment are the current question. Close as a `CheckpointReturn` when one bounded route probe remains justified. Return upstream or sideways when choice, pool treatment, selector declaration, readiness, execution, or publication becomes the current question.
+Close as a `CallPlan` when route order and budgeted enactment are the current question. Close as a `CheckpointReturn` when one bounded route probe remains justified. Return to A.15.7 or C.11 when the corresponding decision basis reopens; return to the applicable neighboring pattern when pool treatment, selector declaration, readiness, execution, or publication becomes the current question.
 
-**Known route.**
+**A.15.7 decision into a known route.**
+
+During ongoing repository-repair Work, changed source facts make `produce_patch_and_verify` the next action under the current repair Method. Using the steering Method in A.15.7, the responsible maintainer makes that decision. The retained decision names the repair agent as intended performer, the changed-source fact, and test failure as the stop and feedback condition. Because the call plan relies on the decision later, the team retains it in one episteme identified under C.2.1. The episteme describes the situation-responsive decision; it is not a C.11 `ChoiceResult`.
 
 ```text
 CallPlan:
-  upstreamChoiceResultRef = patch_route_choice_17
+  decisionBasis:
+    situationResponsiveDecisionEpistemeRef = patch_action_decision_17
   objective = produce_patch_and_verify
   plannedCallsInOrder =
     - methodRef = InspectRepositoryMethod_4
@@ -247,11 +261,13 @@ CallPlan:
 
 The plan claims no call occurred. If the first call is performed, recover its dated Work, performer, assignment where current, Method, interval, plan ref, and trace representation through the direct patterns.
 
+
 **Unfamiliar route.**
 
 ```text
 CheckpointReturn:
-  upstreamChoiceResultRef = ci_route_choice_09
+  decisionBasis:
+    fixedOptionChoiceResultRef = ci_route_choice_09
   objectiveOrTaskFamily = unfamiliar_ci_failure
   testedMethodRefs = [LogTraceMethod_2, MinimalReproductionMethod_5]
   evidenceRefs = [trace_result_1, reproduction_result_1]
@@ -275,10 +291,10 @@ Keep notation and vendors out of the conceptual contract. Do not average unlike 
 
 ### C.24:7 - Conformance Checklist
 
-1. Every result cites the accepted upstream choice or decision basis that made planning current.
-2. Every planned step names an A.3.1-admitted Method fixed by the upstream C.11 result; route-description refs remain separate and optional.
+1. Every result cites exactly one accepted decision basis: the A.15.7 decision episteme or the C.11 `ChoiceResult` that made planning current.
+2. Every planned step names an A.3.1-admitted Method that realizes or supports the fixed action. The decision basis fixes the action or option; selecting it does not establish Method identity. Route-description refs remain separate and optional.
 3. The plan records time, compute, cost, and risk ceilings plus stop or replan conditions.
-4. C.18 candidates or front material and C.19 live-pool treatment may inform the upstream choice but do not admit Methods; C.24 owns only planning and replanning results.
+4. C.18 candidates or front material and C.19 live-pool treatment may inform the decision basis but do not admit Methods; C.24 owns only planning and replanning results.
 5. A scale branch first cites one actual C.19.1 probe result, then any selected comparison or Scale-Audit result; a `BLP-waiver` remains separate from evidence.
 6. Every vendor-bound `ATC.CallRouteDescription` identifies source scheme, exact edition, intended use, and selected Method; an arbitrary profile, adapter, or Bridge cannot substitute.
 7. Each current policy or constraint ref resolves to its actual C.19, C.19.1, B.3, or domain-defined object; a plan with no such branch remains valid.
@@ -300,7 +316,7 @@ Keep notation and vendors out of the conceptual contract. Do not average unlike 
 
 ### C.24:9 - Consequences
 
-Tool use becomes inspectable before execution: the result shows which accepted choice is being enacted, which Methods are planned, what budget is reserved, and what changes the route. Identical vendor tokens remain distinguishable by source scheme, edition, intended use, and selected Method. The cost is explicit Method grounding and branch-specific constraint refs. Heavy assurance, causal, or scale-comparison records appear only when their use justifies them.
+Tool use becomes inspectable before execution: the result shows which accepted decision fixed the action or option, which Methods are planned, what budget is reserved, and what changes the route. Identical vendor tokens remain distinguishable by source scheme, edition, intended use, and selected Method. The cost is explicit Method grounding and branch-specific constraint refs. Heavy assurance, causal, or scale-comparison records appear only when their use justifies them.
 
 ### C.24:10 - Rationale and current practice
 
@@ -319,7 +335,9 @@ This set is non-dominated for C.24's declared use because it keeps the smallest 
 
 ### C.24:12 - Relations
 
-- `A.3.1` supplies admitted Method identity; `C.11` supplies the fixed choice consumed through `upstreamChoiceResultRef`.
+- `A.3.1` supplies admitted Method identity; neither decision branch admits a Method merely by selecting an action.
+- The steering Method in `A.15.7` is used to reach the situation-responsive decision cited through `situationResponsiveDecisionEpistemeRef`; when this plan relies on the decision, its episteme has the identity conditions defined in C.2.1.
+- A C.11 `ChoiceResult` whose result is `choose now` is cited through `fixedOptionChoiceResultRef`.
 - `C.18` supplies generated candidate or front material, and `C.19` supplies `PoolPolicyResult` or `EmitterPolicy` only when live-pool treatment still constrains the plan. Neither admits a Method.
 - `C.19.1` supplies the scale-claim probe, any selected comparison or Scale-Audit result, and any separate local policy or `BLP-waiver`; C.24 invents none of them.
 - `A.15`, `A.15.1`, `A.15.2`, `A.2.1`, and `F.6` keep Method, description, plan, Work, performer, and attribution distinct.

@@ -1,34 +1,169 @@
 ## Practical entries
 
-### PUBLICATION-FORM — Assemble or check a public framework publication form
+The entries below are examples, not a catalogue or a boundary around FPF, a DPF, or an LPF. Bring the actual difficulty from your project. If no example fits, search the Table of Contents or ask an assisting agent to compare a small plausible set of direct patterns. These pattern languages can help with many more questions than a short Readme can show.
 
-- **Situation:** A public FPF, DPF, or LPF edition has useful content, but readers or tools cannot reliably find its identity, logical pattern index, practical entries, bodies, and maintenance material.
-- **Question:** Does this edition use the common publication form while retaining its product-specific body and reference sections?
-- **First useful result or honest blocker:** A publication-form application that names the required units and any missing, reordered, duplicated, or mismatched unit.
-- **Start with:** `E.11.PFP`; continue to `E.4.FPF` or `E.4.DPF` for product-specific assembly.
-- **Stop or return:** Stop when the common form is satisfied and the edition's product-specific content remains in its body or reference units. Return to the framework architecture decision when the public field, selected patterns, dependencies, or first use are still unsettled.
+The ordinary examples show difficulties that one direct pattern use can usually answer. They need no mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
 
-### DPF-SUITE-GUIDE — Find the needed results when several DPFs may apply
+### LIVE-WORK-STEERING — Choose the next action while Work is changing
 
-- **Situation:** One working question may need results from several independently maintained DPFs, or the applicable DPF is not yet clear.
-- **Question:** Which exact resources answer the question now, what does each contribute, and where is the honest gap?
-- **First useful result or honest blocker:** A short answer that identifies each available maintained result, maintained MethodDescription, or direct source and says what it contributes; if a needed result is unavailable, it names the blocker and retry condition.
-- **Start with:** `E.11.DSG - DPF Suite Guide`.
-- **Stop or return:** Stop when the named contributions answer the question. Return to the exact DPF or source for substance, or to `E.4:4.2` and `E.4.PFAD` when suite membership, maintenance responsibility, edition continuity, or exposure must be decided.
+- **Situation:** Ongoing Work has an applicable domain Method, but a current fact can change what should happen next.
+- **Question:** What should the deciding System choose now, who will perform it, and when must they stop or look again?
+- **First useful result or honest blocker:** One bounded decision, intended performer, and feedback condition—or a named blocker due to missing or outdated action-guiding information, authority, capability, safety, applicability, or no current Work.
+- **Start with:** `A.15.7`.
+- **Stop or return:** Stop when the action, performer, and nearest return condition are clear. If Work has not begun, use `A.15.2` for intended-work content, `A.15.5` for work-entry readiness, or `C.11` only when a known chooser must compare an already formed `OptionSet`.
 
-### PRACTICE-ARCHITECTURE — Reconcile several structures of one practice
+### METHOD-RECOVERY — Explain what reusable way several performances may show
 
-- **Situation:** A source or project organizes the same practice through several structures—for example, Methods, Work, subjects, descriptions, capabilities, providers, or cultural processes—and those structures do not line up one-for-one.
-- **Question:** Which structures and relations actually matter to the current architecture decision?
-- **First useful result or honest blocker:** One readable synthesis naming the representative Work, selected structures, correspondences, conflicts, and the alternative that changes the decision—or the exact relation or case fact still missing.
-- **Start with:** `C.32.MWA`.
-- **Stop or return:** Stop when the synthesis answers the architecture question. Return to the relevant Method, Work, structure, description, or cultural-change pattern when one of those claims remains unresolved.
+- **Situation:** Several observations or records suggest a reusable way, but no Method has been established.
+- **Question:** What candidate explanation is supported, what rival still fits, and what observation would distinguish them?
+- **First useful result or honest blocker:** One source-traceable account per candidate with gaps and a distinguishing question—or an honest record-only result.
+- **Start with:** `A.3.1.MR`.
+- **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1` or specialist `ME.18` only when that later use is current.
 
-### CAPABILITY-DEVELOPMENT — Develop capability for named Work
+### NAMING — Give one identified thing a usable name
 
-- **Situation:** One admitted holder System—for example, a person, team, or organization—must become able to perform a named Work family, and success must transfer beyond an exercise.
-- **Question:** What limits this System's capability now, what intervention addresses it, and how will transfer be checked in representative Work?
-- **First useful result or honest blocker:** A bounded development action naming the holder System, Work family, limiting contribution, intervention, protected conditions, transfer check, and reopen condition.
-- **Start with:** `E.23.CDI`.
-- **Stop or return:** Stop after the representative-Work transfer result answers the current decision. Return to `C.32.MWA` when practice architecture is unclear, to the member-distribution question when capabilities differ across members, or to `C.36` when change across a cultural population is current.
+
+- **Situation:** One already identified thing or value needs a name that intended readers can understand without changing what it is.
+- **Question:** Which name is accurate, clear for this use, and distinct from misleading alternatives?
+- **First useful result or honest blocker:** One local `NameCard`, or the exact missing thing, use, reader group, scheme, sense, or candidate evidence.
+- **Start with:** `F.18`.
+- **Stop or return:** Stop when the name and local sense support the stated use. Return when the thing, use, readers, scheme, or likely misunderstanding changes.
+
+### SYSTEM-RECOGNITION — Test systemhood only when it changes the decision
+
+- **Situation:** A decision may change if one exact entity is a System, while the same noun may instead name Work, a Method, capability, episteme, structure, or another subject.
+- **Question:** What decision depends on treating that entity as a System?
+- **First useful result or honest blocker:** Return to the direct non-system claim; recognize or reject the System reading; or name the missing construction fact or test.
+- **Start with:** `A.1.SCR`.
+- **Stop or return:** Stop at that direct result or exact blocker. A noun, assignment, capability, plan, or project label does not establish systemhood.
+
+### TIME — Decide what a timing claim lets you do
+
+- **Situation:** A trend, deadline, cadence, or stale result is being used to decide what to do next.
+- **Question:** Which moment, rate, rhythm, or freshness relation matters, and does it support continuing, refreshing, waiting, synchronizing, or changing rhythm?
+- **First useful result or honest blocker:** A bounded temporal claim and supported continuation, or the exact missing window, evidence, effort, resistance, or currentness basis.
+- **Start with:** `C.27`; use `G.11` only when an affected result may need scoped refresh because its basis is stale.
+- **Stop or return:** Stop at a state or rate reading when it supports no stronger claim. Return when the window, evidence, currentness, or intended use changes.
+
+### CAUSAL-USE — Keep a causal-looking result within its support
+
+- **Situation:** A correlation, estimate, simulation, or comparison is being used to say that an action will cause an outcome.
+- **Question:** What causal statement may the evidence support, and what stronger statement must not guide intervention or investigation?
+- **First useful result or honest blocker:** A supported statement and its limit, or the missing alternative, intervention, comparator, evidence path, identification result, or transport basis.
+- **Start with:** `C.28`.
+- **Stop or return:** Stop, narrow the claim, or abstain when support is insufficient. The causal-use result does not choose, deploy, publish, or certify by itself.
+
+### MEASUREMENT — Make a number interpretable before relying on it
+
+- **Situation:** A reading, score, rating, sensor value, or dashboard number is being compared or used in a decision.
+- **Question:** What exact subject and characteristic were measured, on what scale and unit, by what method, and under what calibration and time stance?
+- **First useful result or honest blocker:** An interpretable attributed value with uncertainty and a use boundary, or the missing subject, scale, method, calibration, evidence, or validity window.
+- **Start with:** `C.16`.
+- **Stop or return:** Stop when the value supports the present comparison. Return when the subject, method, calibration, time stance, uncertainty, or use changes.
+
+### MATHEMATICAL-MODELING — Use a mathematical lens only when it changes action
+
+- **Situation:** A formula, formalism, simulation object, or learned representation is proposed to clarify a project question.
+- **Question:** What is mapped to what, which structure is kept or lost, how is the lens calibrated, what rival or ordinary fallback exists, and what decision changes?
+- **First useful result or honest blocker:** A bounded lens use with its mapping, retained and lost structure, calibration, rival, practical payoff, and no-lens exit, or the exact missing basis.
+- **Start with:** `C.29`.
+- **Stop or return:** Stop without the lens when no decision changes. Return when the mapped subject, preserved structure, calibration, evidence, rival, or use changes.
+
+When the route is already known, go straight to its pattern rather than forcing the question into an example: `E.11.PFP` for framework publication, `E.11.DSG` for a question spanning several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation. These are locators, not more selectable examples.
+
+### Practical-Use Cards
+
+These cards are selected examples of extended work with a pattern language. They are not a list of all useful FPF questions, a prescribed project sequence, or proof that every case needs every cited pattern.
+
+The keys only help navigation. Compare cards by the situation and intended result, then open the direct patterns needed in the actual case. Skip a contribution whose question is not current, and stop at the first useful result or honest blocker.
+
+#### ARCHITECTURE — Carry an outside need through structure and feedback
+
+- **Situation:** A system or another architecture subject must produce an outside result, but its pressure, options, decision, or realized feedback is unclear.
+- **Question:** What missing architecture result prevents the next useful decision or action?
+- **First useful result or honest blocker:** One clear architecture question, candidate comparison, decision, or exact missing fact or constraint.
+- **Mantra:** Start with the outside change and who relies on it. Name the subject and pressure; separate facts from intended constraints; compare plausible structures; choose what the current decision needs; check what the realized structure produces; reopen when use, evidence, or structure changes.
+- **Start with:** `C.32.P2S`, then the pattern for the current question in `C.30`, `C.32`, `C.32.PAD`, or `C.30.AD`.
+- **Stop or return:** Stop when the first result makes the architecture work reviewable. The card is not a compulsory lifecycle.
+
+#### PRACTICE-ARCHITECTURE — Develop a practice without collapsing its structures
+
+- **Situation:** Methods, Work, capabilities, providers, descriptions, tools, and cultural change do not align one-for-one in a practice.
+- **Question:** Which relations must be reconciled for the practice to become usable or improve in representative Work?
+- **First useful result or honest blocker:** One readable synthesis, one bounded development action, or the exact missing Work case, relation, or transfer evidence.
+- **Mantra:** Start from representative Work and its needed result. Keep Methods, Work, capabilities, providers, descriptions, tools, and cultural processes distinct; compare the structures that conflict; develop the limiting capability; test transfer in real Work; return when practice, provider, evidence, or style changes.
+- **Start with:** `C.32.MWA`; use `E.23.CDI`, `E.23`, or `C.36` only for the question actually opened.
+- **Stop or return:** Stop when the synthesis or transfer result answers the decision. A practice description is not the practice or performed Work.
+
+#### WORKING-DOCUMENTS — Make a document answer one use
+
+- **Situation:** A document is requested, but its label does not reveal the use it must support.
+- **Question:** Do you need to check one view, reuse related views, show the same subject differently, see enough structure, compare named sources, or use an architecture description in a decision?
+- **First useful result or honest blocker:** A checked view, a reusable viewing approach, another presentation of the subject, an account of sufficient or missing structure, a source comparison, the architecture-description result needed now, or the exact blocker.
+- **Mantra:** Name who will use the document and what it must support. Check one view; prepare recurring views; show the subject another way; expose enough structure; compare sources; or use a description in architecture work. Keep document, subject, decision, and performed Work distinct. Stop when the needed result exists; return when its use or content changes.
+- **Start with:** `E.17.0` for one viewpoint; `E.17.1`/`E.17.2` for recurring use; `A.6.3.RT` for representation change; `C.33` for structural information; `E.17.ID.CR` for source comparison; `C.30.AD` for architecture-description use; otherwise use the document result's direct owner.
+- **Stop or return:** Stop when that result answers the use. One file may carry several results without merging them.
+
+#### OPTION-COMPARISON — Keep unlike option results distinct
+
+- **Situation:** Several possibilities exist, or one unresolved question makes a costly commitment unsafe.
+- **Question:** Do you need to compare possibilities, keep worthwhile variants, keep only the best trade-offs found so far, control what stays under consideration, prepare options for a later chooser, choose now, or resolve the uncertainty blocking commitment?
+- **First useful result or honest blocker:** A comparison basis, retained variant set, best-known trade-off set, active-membership rule, set for a later chooser, local choice, answer to the blocking question, or the exact blocker.
+- **Mantra:** Name the decision and cost of error. Compare before choosing. Keep worthwhile variants for history; keep the best trade-offs when clearly worse variants should drop out; set a rule for what stays under consideration; prepare a set when another chooser acts later; choose only when choice is current. For costly action, resolve only the uncertainty blocking commitment. Return when basis, rule, evidence, or use changes.
+- **Start with:** `A.19.ECS` (comparison), `C.18` (archive/front), `C.19` (pool), `G.5` (set result), or `C.11` (choice). For costly action choose only the current check: `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11`, or `A.15.5`.
+- **Stop or return:** Stop at the result answering the present question. It neither chooses by implication nor performs later Work.
+
+#### RESULT-TO-NEXT-MOVE — Decide whether an interesting result changes the next probe or option
+
+- **Situation:** A DPF or project mentions information gain, learning progress, novelty, or an articulated former cue, and the team wants to use it to change the next probe or option.
+- **Question:** What exact result exists, and which reliance, characterization, possibility-space, finite-comparison, or choice question—if any—is current now?
+- **First useful result or honest blocker:** The exact direct result and the first downstream result actually needed: a bounded reliance disposition, novelty or possibility-space claim, configuration-relative comparison, `ChoiceResult`, or the precise missing basis.
+- **Mantra:** Name what was actually obtained. Recover ambiguous learning wording and split unlike claims. Keep each result with its direct owner. Qualify reliance only when it is actually used. Characterize novelty or a changed possibility space only when that is the live question. Compare a realizable finite change with the current configuration only when that comparison is missing. Return to the chooser only when an option or probe must be selected. Stop at the first result that answers the question.
+- **Start with:** `E.10.LRN` only while *learning* wording hides the result; otherwise start with the direct result owner. Continue conditionally to `A.10` only when an evidence-bearing or source-bearing claim is actually relied on, `C.17` or `C.18` when characterization or possibility-space change is current, `C.11.CRC` when a finite configuration comparison is missing, and `C.11` for the live option or probe choice.
+- **Stop or return:** Stop at every boundary whose next question is not current. An observation, objective, articulated former cue, or characterization keeps its own identity; this card creates no generic signal, cue, premise-qualification result, or choice.
+
+#### PROBLEM-SHAPING — Stop at the earliest honest problem-side result
+
+- **Situation:** Something matters, but the team may have only signals worth preserving, a direction for inquiry, a question about competing explanations, or enough clarity to accept a problem statement.
+- **Question:** What can you honestly produce now: preserved signals, a routed direction for inquiry, an explicit question that contrasts possible explanations, or a problem statement ready for acceptance?
+- **First useful result or honest blocker:** A preserved set of signals, a clear inquiry route, a question about plausible explanations, an accepted problem statement, or the exact missing anchor, route, subject, constraint, or acceptance basis.
+- **Mantra:** Keep what was noticed before declaring a problem. Route the inquiry only when the signal has a stable anchor. Ask about explanations only when the open question and contrast are clear. Accept a problem statement only when the subject, constraints, unresolved relations, important distinctions, and basis can be stated. Stop at the earliest useful truth; return when its basis changes.
+- **Start with:** `A.16.1` for a cue pack, `B.4.1` for routed cues, `B.5.2.0` for an abductive prompt, and `C.22.2` for an accepted `ProblemCard`.
+- **Stop or return:** Do not force a cue into a problem. Open `C.22.PFR` only when whether the adverse relation obtains changes the next use.
+
+#### IMPROVEMENT — Define better before repeating change
+
+- **Situation:** A team wants to improve something but has not agreed what better means or how the changed version will be checked.
+- **Question:** Which evaluation question, characteristics, scales, changes, and comparison make improvement reviewable?
+- **First useful result or honest blocker:** One evaluation question, current assessment, bounded change, before-after comparison, or exact missing use, evidence, scale, or trade-off.
+- **Mantra:** Name the entity, current state, and use that better must serve. Frame the question before choosing metrics; select characteristics, scales, and protected trade-offs; assess the current state; compare candidate changes; make only the supported change; evaluate it on the same basis; continue, stop, or change direction from that result.
+- **Start with:** `E.22`, `A.19.ECS`, `C.16`, and `E.23` as their questions become current.
+- **Stop or return:** Stop at the first missing prerequisite or useful comparison. Reopen when the entity, use, evidence, or scale changes.
+
+#### WORDING — Repair language without replacing the project question
+
+- **Situation:** A load-bearing sentence hides the subject, relation, kind, use, or nearby false inference.
+- **Question:** What should the reader understand and do, and which distinctions matter for that use?
+- **First useful result or honest blocker:** One plain repaired sentence, direct clarification, local naming result, or exact missing subject, sense, test, or reader use.
+- **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth or action; choose a durable name only when later use needs one; rewrite in plain technical language; test a cold reader and the nearest false inference; return to the domain task.
+- **Start with:** `E.10` and `F.19`; use `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
+- **Stop or return:** Stop when the reader can act without the false inference. Do not continue ontology work after the language problem is solved.
+
+#### SOTA-PORTFOLIO — Move from a plural field to the cheapest useful result
+
+- **Situation:** A project needs the modern field of approaches rather than one popular answer and may later need maintained domain guidance.
+- **Question:** What plural view is adequate now, and does the remaining problem call for reuse, a contribution, another product, a DPF or LPF, or no maintained result?
+- **First useful result or honest blocker:** One source-linked SoTA view, live option set, reuse route, framework decision, or exact missing scope or maintenance basis.
+- **Mantra:** Name the practical question, scope, freshness need, and rival traditions. Build a source-linked plural view; preserve disagreement and source-use limits; compare useful approaches; try cheaper reuse or contribution first; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
+- **Start with:** `G.2`; add `C.18`, `C.19`, or `G.5` for the set and the E.4/E.9 authoring route only if a framework is selected.
+- **Stop or return:** Stop at the first adequate maintained or one-off result. A source pack or proposal is not a framework by appearance.
+
+#### SYSTEM-DELIMITATION — Separate parts, selected boundary, and crossings
+
+- **Situation:** One System is recognized, but a decision mixes its parts and assembly with a chosen boundary, external participants, and relations that cross it.
+- **Question:** Which facts, use-relative choice, crossings, and selected structure answer the decision?
+- **First useful result or honest blocker:** One exact part or assembly fact, boundary choice, crossing relation, selected structure, or missing participant, predicate, constraint, or use.
+- **Mantra:** Start with the recognized System and decision. Recover parts and assembly as facts; keep external participants outside the part list; choose a boundary only when alternatives matter; name every crossing by its own relation; select a joint structure only when organization changes the decision; reopen when identity, facts, use, crossings, or constraints change.
+- **Start with:** `B.1.2`, `A.14`, and `C.13`; use `C.11`, `C.32.PAD`, the direct relation pattern, or `A.22` only when needed.
+- **Stop or return:** Stop at the smallest result answering the decision. If system recognition is unresolved, return to `A.1.SCR`.
 

@@ -88,6 +88,19 @@ The canonical local `RelianceDisposition` member set is exactly: `pass`, `degrad
 
 When an actual named assurance claim is current, use B.3 for that assurance question. A.10 continues to supply the exact source and provenance paths but does not issue the assurance result. Consequential evidence use without such a claim stays with the direct safety, access, status, gate, permission, release, responsibility, or controlled-action pattern.
 
+#### A.10:4.5a - Route unlike exploratory inputs without changing their kind
+
+When an observation, objective, former cue, novelty characterization, or similarly interesting item is proposed as a premise for an exploratory or creative move, recover the item under its direct owner before applying this bounded reliance classification. Do not rename every item `signal` or `cue`, and do not create a second premise-disposition vocabulary.
+
+| Incoming item | Source/result recovery | A.10 use | Receiving choice |
+| --- | --- | --- | --- |
+| Evidence-bearing measurement, assessment, experiment, inference, or capability result | The exact C.2.1 claim and its measurement, capability, experiment, inference, or other direct result owner. | State the relied-on claim, evidence-provenance path, bounded premise use, unsupported attempted use, and existing `RelianceDisposition`. | `C.11` compares the already-available move or probe and emits its `ChoiceResult`. |
+| Objective, reward, utility term, loss, preference, or heuristic that is not evidence | The exact objective, evaluation, preference, Method, or source-local construction. | Apply A.10 only to a separate evidence or source-reliance claim about that construction or its bounded transfer; the numeric objective is not self-authenticating evidence. | Enter the term as the declared `EvaluativeMeasure`, `PreferenceOrder`, or `ChoiceRule` input that it actually supplies, with assumptions and limits visible. |
+| A former pre-articulation cue that has now been articulated | `A.16.1` no longer owns the articulated result. Use `B.4.1`, `B.5.2`, or the direct endpoint claim owner selected by the articulation. | Qualify reliance only when that articulated claim is actually used as a premise. | `C.11` owns any current option/probe comparison; the earlier cue pack neither selects nor evidences the move. |
+| A non-evidential `C.17` novelty, surprise, use, or creativity characterization | `C.17` owns the characteristic claim, its scale/basis, and its limitations. | Apply A.10 only when evidence or source reliance for that characteristic claim is current; characterization is not evidence merely by being decision-relevant. | `C.11` may consume the bounded characteristic together with other premises and still choose, reject, probe, or reroute. |
+
+The composition produces only the direct source result, one existing `RelianceDisposition` when bounded reliance is current, and one later `ChoiceResult`. If the source claim is already qualified and the current `C.11` record can use it directly, stop; no intermediate premise record is required.
+
 #### A.10:4.6 - Currentness, actual use, and graph limits
 
 Source availability and source currentness are distinct. Record issue/effective windows, supersession, revocation, source-order rules, and the G.11 currentness result when a use depends on them.

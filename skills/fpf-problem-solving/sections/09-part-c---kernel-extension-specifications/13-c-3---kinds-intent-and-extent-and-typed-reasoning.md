@@ -116,7 +116,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 | `CC-C3-5` | The governed condition named by the criterion decides membership. Evidentiary use alone does not constitute an independent condition, while directly criterion-bearing epistemes, statuses, and relations keep their own governors. |
 | `CC-C3-6` | Subkind facts follow C.3.1's criterion-entailment or exhaustive closed-domain branch and form a preorder; classification equivalence does not merge kind identities. |
 | `CC-C3-7` | Kind scope is absent; declaration and assertion scopes remain on their epistemes, and the slice remains an evaluation input. |
-| `CC-C3-8` | An extension is a representation of admissible true candidates, not `U.EntitySet`, A.14 `MemberOf`, a collection holon, or a direct relation occurrence. |
+| `CC-C3-8` | An extension is a representation of admissible true candidates, not `U.EntitySet`, a world-side collection-belonging claim, a collection holon, or a direct relation occurrence. |
 | `CC-C3-9` | C.3.3 is used only after distinct kinds and a proposed correspondence are independently established; same-kind reuse still gets a fresh receiving judgment. |
 | `CC-C3-10` | `U.Work`, exact `W : U.Work`, and any episteme about W remain distinct. |
 
@@ -124,7 +124,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 
 * Treating a programming type, schema class, source ontology class, regulatory category, or ordinary noun as a durable public FPF U-kind.
 * Treating a `KindSignature` as the kind, or attaching its formality and claim scope to the kind.
-* Using A.14 `MemberOf` or minting a classification relation merely to state one judgment.
+* Using a world-side belongs-to predicate or minting a classification relation merely to state one judgment.
 * Treating evidence availability, a schema row, or a publication form as the fact that makes classification true.
 * Returning `false` when the criterion cannot be evaluated.
 * Treating `KindExtension` or mathematical set notation as ontology.
