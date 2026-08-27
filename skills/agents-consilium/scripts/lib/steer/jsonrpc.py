@@ -10,6 +10,8 @@ import threading
 import time
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
+from .util import detached_popen_kwargs
+
 
 def _resolve_argv(argv: List[str]) -> List[str]:
     """Resolve argv[0] to an actually-executable path.
@@ -80,13 +82,9 @@ class JsonRpcProcess:
             env=self.env,
             text=True,
             encoding="utf-8",
-            errors="replace",
             bufsize=1,
         )
-        if os.name == "nt":
-            popen_kwargs["creationflags"] = subprocess.CREATE_NEW_PROCESS_GROUP
-        else:
-            popen_kwargs["start_new_session"] = True
+        popen_kwargs.update(detached_popen_kwargs())
         self.proc = subprocess.Popen(_resolve_argv(self.argv), **popen_kwargs)
         self._reader = threading.Thread(target=self._read_stdout, daemon=True)
         self._reader.start()

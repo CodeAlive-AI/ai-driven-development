@@ -52,13 +52,67 @@ def is_terminal(line: bytes, backend: str) -> bool:
     return isinstance(event, dict) and str(event.get("type") or "") in OPENCODE_TERMINAL_TYPES
 
 
+IS_WINDOWS = os.name == "nt"
+
+
+def detached_popen_kwargs() -> dict[str, Any]:
+    """Detach the child from the caller's signal delivery.
+
+    POSIX uses a new session; Windows has no sessions, and start_new_session
+    raises there, so the equivalent is a new process group.
+    """
+    if IS_WINDOWS:
+        return {"creationflags": subprocess.CREATE_NEW_PROCESS_GROUP}
+    return {"start_new_session": True}
+
+
+def _taskkill(pid: int, force: bool) -> None:
+    """Terminate a whole Windows process tree.
+
+    Absolute path: resolving "taskkill" through the executable search order
+    would let a taskkill.exe in the working directory run instead.
+    """
+    system_root = os.environ.get("SystemRoot", r"C:\Windows")
+    exe = os.path.join(system_root, "System32", "taskkill.exe")
+    if not os.path.isfile(exe):
+        exe = "taskkill"
+    argv = [exe, "/T", "/PID", str(pid)]
+    if force:
+        argv.insert(1, "/F")
+    subprocess.run(argv, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def signal_tree(proc: subprocess.Popen[bytes], *, force: bool) -> None:
+    """Signal the child's whole process tree, best effort.
+
+    Windows has no process groups in the POSIX sense and no SIGTERM/SIGKILL
+    distinction for another process, so both levels map onto taskkill; only
+    /F differs.
+    """
+    if IS_WINDOWS:
+        _taskkill(proc.pid, force=force)
+        return
+    try:
+        os.killpg(proc.pid, signal.SIGKILL if force else signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+
+
+def termination_signals() -> tuple[int, ...]:
+    """Signals that mean "shut down" on this platform.
+
+    SIGHUP does not exist on Windows; SIGBREAK is its closest analogue.
+    """
+    if IS_WINDOWS:
+        extra = getattr(signal, "SIGBREAK", None)
+        return (signal.SIGTERM,) + ((extra,) if extra is not None else ())
+    return (signal.SIGTERM, signal.SIGHUP)
+
+
 def stop_process_group(proc: subprocess.Popen[bytes]) -> None:
     if proc.poll() is not None:
         return
-    try:
-        os.killpg(proc.pid, signal.SIGTERM)
-    except ProcessLookupError:
-        return
+    signal_tree(proc, force=False)
 
 
 def terminate_and_reap(proc: subprocess.Popen[bytes], timeout: float = 1.0) -> None:
@@ -72,10 +126,7 @@ def terminate_and_reap(proc: subprocess.Popen[bytes], timeout: float = 1.0) -> N
         return
     except subprocess.TimeoutExpired:
         pass
-    try:
-        os.killpg(proc.pid, signal.SIGKILL)
-    except ProcessLookupError:
-        pass
+    signal_tree(proc, force=True)
     proc.wait()
 
 
@@ -102,7 +153,7 @@ def main() -> int:
         stdin=sys.stdin.buffer,
         stdout=subprocess.PIPE,
         stderr=None,
-        start_new_session=True,
+        **detached_popen_kwargs(),
     )
     assert proc.stdout is not None
 
@@ -110,7 +161,7 @@ def main() -> int:
         raise TerminationRequested(signum)
 
     previous_handlers: dict[int, Any] = {}
-    for signum in (signal.SIGTERM, signal.SIGHUP):
+    for signum in termination_signals():
         previous_handlers[signum] = signal.signal(signum, request_termination)
     forced_shutdown = threading.Event()
     terminal_timer: threading.Timer | None = None
@@ -118,10 +169,7 @@ def main() -> int:
 
     def kill_if_still_running() -> None:
         if proc.poll() is None:
-            try:
-                os.killpg(proc.pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
+            signal_tree(proc, force=True)
 
     def expire_terminal_grace() -> None:
         nonlocal kill_timer
