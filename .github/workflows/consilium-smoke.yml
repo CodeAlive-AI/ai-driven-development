@@ -1,0 +1,83 @@
+name: agents-consilium smoke
+
+on:
+  pull_request:
+    paths:
+      - 'skills/agents-consilium/**'
+      - '.github/workflows/consilium-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/agents-consilium/**'
+      - '.github/workflows/consilium-smoke.yml'
+
+jobs:
+  smoke:
+    name: smoke (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Import every steer module
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, '.')
+          import steer.util, steer.mailbox, steer.registry
+          import steer.jsonrpc, steer.control, steer.supervisor
+          from steer.adapters import claude, opencode
+          print('steer imports OK:', steer.registry.default_registry_root())
+          "
+
+      - name: pid_alive must probe, not kill
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python -c "
+          import subprocess, sys, time
+          sys.path.insert(0, '.')
+          from steer.util import pid_alive
+          p = subprocess.Popen([sys.executable, '-c', 'import time; time.sleep(30)'])
+          assert pid_alive(p.pid), 'live child reported dead'
+          time.sleep(0.5)
+          assert p.poll() is None, 'pid_alive() terminated the process it probed'
+          assert not pid_alive(9999999), 'bogus pid reported alive'
+          p.kill()
+          print('pid_alive OK')
+          "
+
+      - name: Config helpers emit LF-only agent ids
+        working-directory: skills/agents-consilium
+        run: |
+          source scripts/lib/common.sh
+          source scripts/lib/config.sh
+          config_validate
+          config_enabled_agents > agents.txt
+          test -s agents.txt || { echo 'no enabled agents parsed'; exit 1; }
+          if grep -q $'\r' agents.txt; then
+            echo 'CR found in config_enabled_agents output:'
+            cat -A agents.txt
+            exit 1
+          fi
+          while IFS= read -r agent; do
+            backend="$(config_get_field "$agent" backend)" || { echo "backend lookup failed: [$agent]"; exit 1; }
+            test -n "$backend" || { echo "empty backend for: [$agent]"; exit 1; }
+            echo "$agent -> $backend"
+          done < agents.txt
+          rm -f agents.txt
+          echo 'config helpers OK'
+
+      - name: consilium --help
+        working-directory: skills/agents-consilium
+        run: bash scripts/consilium --help
