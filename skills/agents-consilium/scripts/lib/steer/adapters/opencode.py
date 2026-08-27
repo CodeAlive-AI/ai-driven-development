@@ -139,6 +139,8 @@ class OpenCodeAdapter(BackendAdapter):
             cwd=self.cwd,
             env=self._child_env(),
             text=True,
+            encoding="utf-8",
+            errors="replace",
             bufsize=1,
             start_new_session=True,
         )

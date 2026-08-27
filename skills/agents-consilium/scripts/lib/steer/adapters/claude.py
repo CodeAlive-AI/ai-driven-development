@@ -65,6 +65,8 @@ class ClaudeAdapter(BackendAdapter):
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             bufsize=1,
             start_new_session=True,
         )

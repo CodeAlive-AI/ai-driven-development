@@ -1,7 +1,6 @@
 """Atomic filesystem mailbox with portable locking and monotonic ordering."""
 from __future__ import annotations
 
-import fcntl
 import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -11,8 +10,10 @@ from .util import (
     atomic_write_json,
     content_hash,
     ensure_dir,
+    lock_exclusive,
     new_id,
     safe_client_filename,
+    unlock,
     secure_touch,
     utc_now_iso,
 )
@@ -78,7 +79,7 @@ class Mailbox:
             raise MailboxError("client_id must be a non-empty string")
         chash = content_hash(content) if content else content_hash("")
         with self._with_lock() as lf:
-            fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+            lock_exclusive(lf)
             try:
                 if self.is_closed() and not allow_when_closed:
                     raise MailboxError(
@@ -135,7 +136,7 @@ class Mailbox:
                 atomic_write_json(self.seq_path, {"next": seq + 1})
                 return msg
             finally:
-                fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
+                unlock(lf)
 
     def _steer_path_for(self, client_id: str) -> Path:
         return self.run_dir / "steers" / f"{safe_client_filename(client_id)}.json"
@@ -160,11 +161,11 @@ class Mailbox:
 
     def _find_by_client_id(self, client_id: str) -> Optional[Dict[str, Any]]:
         with self._with_lock() as lf:
-            fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+            lock_exclusive(lf)
             try:
                 return self._find_by_client_id_unlocked(client_id)
             finally:
-                fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
+                unlock(lf)
 
     def list_messages(self, *, after_seq: int = 0) -> List[Dict[str, Any]]:
         out: List[Dict[str, Any]] = []
@@ -192,7 +193,7 @@ class Mailbox:
 
     def update_message(self, seq: int, **fields: Any) -> Dict[str, Any]:
         with self._with_lock() as lf:
-            fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+            lock_exclusive(lf)
             try:
                 path = self.dir / f"msg-{seq:06d}.json"
                 if not path.is_file():
@@ -209,7 +210,7 @@ class Mailbox:
                     atomic_write_json(self._steer_path_for(cid), msg)
                 return msg
             finally:
-                fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
+                unlock(lf)
 
     def get_by_client_id(self, client_id: str) -> Optional[Dict[str, Any]]:
         return self._find_by_client_id(client_id)
@@ -221,7 +222,7 @@ class Mailbox:
         """
         updated: List[Dict[str, Any]] = []
         with self._with_lock() as lf:
-            fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+            lock_exclusive(lf)
             try:
                 for p in sorted(self.dir.glob("msg-*.json")):
                     try:
@@ -240,5 +241,5 @@ class Mailbox:
                         atomic_write_json(self._steer_path_for(cid), msg)
                     updated.append(msg)
             finally:
-                fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
+                unlock(lf)
         return updated

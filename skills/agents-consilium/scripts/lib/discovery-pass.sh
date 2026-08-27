@@ -83,13 +83,16 @@ fi
 CONSILIUM_CONFIG="${CONSILIUM_CONFIG:-$SKILL_DIR/config.json}"
 [[ -f "$CONSILIUM_CONFIG" ]] || { echo -e "${RED}Error: config not found: $CONSILIUM_CONFIG${NC}" >&2; exit 4; }
 
-BACKEND="$(python3 -c "
-import json, sys
-d = json.load(open('$CONSILIUM_CONFIG'))['agents']
-if '$AGENT' not in d:
-    sys.stderr.write('agent not in config: $AGENT\n'); sys.exit(1)
-print(d['$AGENT']['backend'])
-")" || exit 4
+BACKEND="$(CONSILIUM_CONFIG_PATH="$CONSILIUM_CONFIG" AGENT_ID="$AGENT" python3 -c '
+import json, os, sys
+sys.stdout.reconfigure(newline="\n")
+path = os.environ["CONSILIUM_CONFIG_PATH"]
+agent = os.environ["AGENT_ID"]
+d = json.load(open(path))["agents"]
+if agent not in d:
+    sys.stderr.write(f"agent not in config: {agent}\n"); sys.exit(1)
+print(d[agent]["backend"])
+')" || exit 4
 
 BACKEND_SCRIPT="$LIB_DIR/backend_run.sh"
 [[ -x "$BACKEND_SCRIPT" || -f "$BACKEND_SCRIPT" ]] || {
