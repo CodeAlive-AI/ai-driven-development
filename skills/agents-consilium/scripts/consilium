@@ -7,6 +7,7 @@
 #   consilium review code --depth basic|specialists|super|ultra [...]
 #   consilium delegate -a <exact-agent-id> [...]
 #   consilium delegate wait|watch|events|list [...]
+#   consilium quota [all|codex|grok]
 #
 # Observability contract:
 #   compact semantic live progress → stderr
@@ -40,6 +41,7 @@ Usage:
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
+  consilium quota [all|codex|grok]
   consilium --list-agents
   consilium -h | --help
 
@@ -85,6 +87,12 @@ delegate
   events returns one bounded JSON page of normalized progress and exits. Reuse
   next_cursor as --cursor on the next observation.
   list finds runs again after the run id was lost.
+
+quota
+  Return machine-readable remaining subscription quota for Codex, Grok, or
+  both. Codex uses its typed app-server API. Grok uses the official /usage TUI
+  command on the SSH host (default: grok-aws). A partial result exits 2; all
+  requested providers failing exits 3.
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
@@ -174,8 +182,12 @@ case "$1" in
         shift
         exec bash "$LIB_DIR/delegate.sh" "$@"
         ;;
+    quota)
+        shift
+        exec python3 "$LIB_DIR/quota.py" "$@"
+        ;;
     *)
-        echo "Error: unknown command: $1 (expected review|delegate)" >&2
+        echo "Error: unknown command: $1 (expected review|delegate|quota)" >&2
         usage >&2
         exit $EXIT_USAGE
         ;;
