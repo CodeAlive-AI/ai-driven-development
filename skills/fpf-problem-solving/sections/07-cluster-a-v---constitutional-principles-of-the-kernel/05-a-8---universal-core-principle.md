@@ -88,7 +88,7 @@ For busy readers: one idea, three worlds. A candidate that cannot keep the same 
 | --- | --- | --- | --- |
 | `U.System` | thermodynamic control volume; biological cell or organism; cyber-physical system | bounded interacting whole that can be treated as acting or being affected under conditions | boundary physics, substrate, observability, and control style |
 | `U.Episteme` | theorem or proof text; clinical guideline; model card or safety case | claim-bearing non-agentive knowledge object that can be used, cited, revised, or published | carrier, notation, authority source, and assurance regime |
-| `U.Work` | machining run; lab assay; review or approval act | performed occurrence under a method, system-role assignment, context, and time window | physical medium, institutional form, measurement trace, and evidence carrier |
+| `U.Work` | machining run; lab assay; review or approval act | dated performed occurrence: A.13 identifies the actual performer and A.15.1 admits the Work independently from its Method, history, extent, and containing System; F.6 adds an assignment check only when the current use must also say under which assignment the Work was performed | physical medium, institutional form, measurement trace, and evidence carrier |
 
 These rows are grounding examples, not automatic admissions. The projection record still needs an `E.24.UK` basis and must state losses and bridge risks.
 

@@ -166,7 +166,7 @@ Assignment does not prove classification unless the kind's signature uses that i
 | Capability | `A.2.2` | holder, capability instance, envelope, measures, currentness, and fit predicate |
 | Relations among system-role kinds | `A.2.7`, `C.3.1` | exact kind participants and substitution, incompatibility, bundle, or monotonic qualification relation |
 | Description and naming | `F.4`, `F.5`, `F.18` | kind, `SystemRoleKindDescription`, names, and publication or access carrier |
-| Method and Work | `A.3`, `A.15`, `F.6` | Method, MethodDescription, performer system, assignment, Work occurrence, and attribution |
+| Method and Work | `A.3`, `A.13`, `A.15.1`, `F.6` | Method and MethodDescription; exact actual performer recovered through A.13; independently admitted Work occurrence; assignment and F.6 attribution only when precise assignment-bound attribution is expressly consumed |
 | Responsibility, commitment, permission, or authority | direct domain pattern, `A.2.8`, `A.2.8.PER`, or `missing-governor` | actual bearer, exact relation participants, predicate, and instituting or permission basis |
 | Evidence, reliance, or publication | `A.10`, `A.15.4`, `B.3`, `C.2.1`, `E.17`, `F.10` | episteme, evidenced claim, reliance, provenance, currentness, and publication relation |
 
@@ -293,7 +293,7 @@ An engineering team uses RFC 9110 while designing an HTTP service. Keep these cl
 1. `DesignTeam-2` independently counts under `ProtocolDesignerSystemRole` in the current slice when its signature criterion is satisfied.
 2. One design-assignment occurrence may obtain as an instance of a declared `U.SystemRoleAssignment` species.
 3. The RFC publication is the source episteme in the direct source-use or external-rule relation selected by the design claim.
-4. Dated design Work is performed by `DesignTeam-2` under the exact assignment through F.6 and may produce a MethodDescription or SystemDescription.
+4. Recover `DesignTeam-2` as the exact actual performer through A.13, then let A.15.1 independently admit the dated design Work. Because this case expressly says the Work was performed under the exact design assignment, F.6 afterward establishes that relation through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and failed attribution would leave the Work intact. The Work may separately produce a MethodDescription or SystemDescription only through the applicable production claim.
 
 The publication neither counts under the system-role kind nor performs the Work.
 

@@ -47,7 +47,7 @@ Without that choice, two opposite failures recur:
 3. semantic changes hide behind generic edit language instead of a new episteme edition and its actual continuity or reference change; and
 4. publication views acquire claims not present in the described signature.
 
-An episteme does not act. An admitted `U.System` may apply a described operation and perform Work. Identify an F.6 assignment only when a receiving attribution claim needs the exact assignment under which that System acted; the assignment itself does not act.
+An episteme does not act. When precise performed Work is current, recover each exact actual performer `U.System` through A.13 and let A.15.1 independently admit the dated occurrence; a System may separately apply a described operation. Add the exact A.2.1 assignment and F.6 Work-assignment relation only when a receiving claim expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and the assignment itself does not act.
 
 ### A.6.S:2 - Problem
 
@@ -62,7 +62,7 @@ FPF needs a pattern for **engineering signatures as boundary epistemes**: a disc
 
 * **Stability vs evolution.** TargetSignatures must be stable enough to coordinate, yet change as understanding improves.
 * **Explicitness vs overhead.** Unpacking slots/bases/views increases clarity but also increases authoring effort.
-* **Arrow law vs enacted work.** An A.6.2 arrow may state the effect-free relation between source and successor signature epistemes. Applying a described constructor operation, creating the successor, and writing a carrier are separately identified operation application and Work performed by an admitted System. F.6 identifies the assignment when a later claim uses it.
+* **Arrow law vs enacted work.** An A.6.2 arrow may state the effect-free relation between source and successor signature epistemes. Applying a described constructor operation, creating the successor, and writing a carrier are separately identified operation application and Work performed by an admitted System. For performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the occurrence. Add F.6 only when a later claim expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 checks that exact Work-assignment link and identifies neither the assignment nor the performer. Missing or failed F.6 leaves the Work intact.
 
 * **Multi‑view richness vs semantic coherence.** Views help stakeholders, but they risk becoming divergent “versions of truth”.
 * **Local meaning vs cross-local reuse.** Signature claim content pins its effective ReferenceScheme where interpretation matters. The local kind and any source-local meaning remain separate values; an actual relation between distinct F.17 cells uses F.9 with its declared limits.
@@ -79,7 +79,7 @@ A **ConstructorSignature** is optional. When used, it is a `U.Signature` whose r
 
 If a constructor family also uses an A.6.2 mathematical arrow, identify that arrow separately. The arrow relates exact source and receiving epistemes. Its rule states how their claim content, EntityOfConcern, and effective ReferenceScheme compare. When it reads a neighboring grounding, representation, conformance, edition, or provenance occurrence, name that occurrence and the endpoint facts compared; the arrow neither changes the occurrence nor makes it obtain. A.6.3 and A.6.4 apply only to their exact viewing or EntityOfConcern-retargeting cases.
 
-When a System actually authors, derives, materializes, validates, stores, or publishes an episteme, identify only the objects current for the claim: the operation application and bindings when used, the admitted System, the dated Work, the resulting episteme, and any carrier or publication relation. A local system-role classification and an F.6 assignment remain separate and are added only when a later inference needs them.
+When a System actually authors, derives, materializes, validates, stores, or publishes an episteme, identify only the objects current for the claim: the operation application and bindings when used, the admitted System, the dated Work, the resulting episteme, and any carrier or publication relation. A local system-role classification, exact A.2.1 assignment, and separate F.6 Work-assignment relation remain optional and distinct; add each only when a later inference needs that claim.
 
 #### A.6.S:4.1 - Decide whether a second signature is needed
 
@@ -150,7 +150,7 @@ If a receiving use needs stable claim identifiers or A.6.B quadrant classificati
 If a team represents actual signature-construction Work as an E.18 `TransformationFlowStructure`, reference only the A.6.S objects and direct relations that the flow uses; do not convert them into a second graph ontology:
 
 * Declared constructor arrows may appear at transformation-flow loci as independently defined A.6.2 values over signature epistemes. An actual operation application and any performed Work remain separately identified.
-* Concrete carrier writes (commits, releases, registry writes, and carrier and source-currentness pinning) are performed-Work loci or Work occurrences identified with A.15 and A.15.1. Use A.2 for any separate local system-role classification and A.2.1 and F.6 for the assignment under which each performer acted; a short flow account may omit an unused assignment identifier. Use A.10 for evidence and provenance, E.17 for publication, and the relevant carrier patterns for carriers. None of these values is a constructor operation.
+* Concrete carrier writes (commits, releases, registry writes, and carrier and source-currentness pinning) are performed-Work loci or Work occurrences identified with A.15 and A.15.1 after each exact actual performer is recovered through A.13. Use A.2 for any separate local system-role classification. Add A.2.1 and F.6 only when the receiving flow account expressly consumes the assignment under which a performer acted; missing or failed attribution leaves the carrier-write Work intact. Use A.10 for evidence and provenance, E.17 for publication, and the relevant carrier patterns for carriers. None of these values is a constructor operation.
 * Validation and admission checks are gate/check loci governed by A.21, with `OperationalGate(profile)`, `GateProfile`, `GateCheckRef`, `GateDecision`, and `DecisionLogRef` named when a gate-decision relation is present.
 * Any `EntityOfConcernRef` change routes to A.6.4: identify the exact arrow r and separate q, then let E.18 place them only when a transformation-flow use is current. A kind change without that basis supplies no positive claim, and any actual operation application remains separate.
 
@@ -183,7 +183,7 @@ Where state-change policy is normative, express it as a status or state-transiti
 * a direct calibration, provenance, or other relation assertion under its own pattern, with an A.6.6 declaration-change label only when a receiver tracks its represented history; and
 * an E.17 view-producing operation for the repeated Plain, Tech, and interoperability publications.
 
-`PaymentSignatureEngineeringPipeline`, if admitted as a System, may apply those descriptions and perform dated authoring or publication Work. The ConstructorSignature does not act. State a local system-role classification, F.6 assignment, application binding, carrier, or evidence relation only when the receiving claim uses it.
+`PaymentSignatureEngineeringPipeline`, if admitted as a System, may apply those descriptions and perform dated authoring or publication Work. The ConstructorSignature does not act. State a local system-role classification, exact A.2.1 assignment, separate F.6 Work-assignment relation, application binding, carrier, or evidence relation only when the receiving claim uses it.
 
 The sentence `Charges are recorded in Ledger L for the external API` must first name and test its actual direct relation. Do not replace it with `declareBase`, a generic `baseRelation`, or a witness package. If later comparison needs a stable representation of that assertion and its scope, A.6.6 may add the optional declaration history.
 
@@ -222,7 +222,7 @@ Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: sign
 | **CC-A.6.S-5** | A meaning change identifies a new TargetSignature episteme when a C.2.1 discriminator changes. State edition, continuity, and reference-retargeting claims only under their actual predicates; use A.6.4 only when the exact EntityOfConcern-retargeting arrow and separate use claim are current. | Separates episteme change, editioning, reference change, and retargeting. |
 | **CC-A.6.S-6** | If an A.6.2-A.6.4 arrow is declared, keep the arrow, its use assertion, operation description, application, and Work distinct. Name the endpoint values and neighboring facts read or compared; the arrow changes no neighboring relation occurrence. | Preserves the accepted arrow/application/Work boundary. |
 | **CC-A.6.S-7** | If E.17 publication is used, each face remains a view of the exact source episteme and adds no new claim. The publication occurrence, carrier, viewpoint use, conformance, and Work remain separate. | Prevents publication drift. |
-| **CC-A.6.S-8** | A System, not a signature, assignment, or local system-role kind, performs actual Work. Add the application, performer, Work, F.6 assignment, carrier, provenance, or evidence relation only when the receiving claim needs that distinction. | Preserves agency without mandatory attribution paperwork. |
+| **CC-A.6.S-8** | A System, not a signature, assignment, or local system-role kind, performs actual Work. Recover each exact actual performer through A.13 and let A.15.1 independently admit the Work; add the exact A.2.1 assignment and separate F.6 Work-assignment relation only when the receiving claim expressly consumes precise assignment-bound attribution. Add application, carrier, provenance, or evidence relations only when their own distinctions are needed. | Preserves agency without mandatory attribution paperwork. |
 | **CC-A.6.S-9** | Laws, operational admissibility, deontic commitments, evidence use, and Work remain under their direct patterns. The TargetSignature and ConstructorSignature do not become all-purpose containers. | Preserves A.6.B and direct-relation boundaries. |
 | **CC-A.6.S-10** | The account begins with an ordinary sentence naming what changed or was reused and what visible result follows. Formal vocabulary is added only where it changes a receiving inference. | Keeps the pattern usable by a cold reader. |
 
@@ -279,7 +279,7 @@ The result keeps viewing, declaration edits, episteme succession, reference reta
   * A.6 — Signature Stack & Boundary Discipline
   * A.6.0 — `U.Signature`
   * A.6.2 — effect-free episteme-arrow discipline, only when a constructor operation uses a mathematical arrow; endpoint facts are read or compared, not changed by the arrow
-  * A.2, A.2.1, and F.6 — local system-role kinds and the assignment under which each System performed the Work; classification, assignment, performer System, and proportional reporting remain separate
+  * A.13 and A.15.1 — exact actual-performer recovery and independent dated-Work admission; A.2 and A.2.1/F.6 enter separately only when the receiving use consumes local-kind classification or precise assignment-bound attribution
   * C.2.1 — episteme identity through claim content, exact EntityOfConcern, and effective ReferenceScheme, with empirical grounding and edition continuity kept as separate direct relations
   * (optional) E.18 — TransformationFlowStructure, when signature-construction work is represented as a transformation-flow structure
   * E.10 and LEX discipline — if the publication uses Plain twins (“SoI”) or shorthands, keep their exact Tech readings recoverable and keep Plain twins out of normative register
@@ -304,7 +304,7 @@ Grounding pointers in the current FPF draft (for alignment while integrating):
 * A.6.2 effect-free arrow boundary: the arrow relates epistemes; the operation description, application, and Work remain separate.
 * A.3.1/A.3.2/A.15/A.15.1/A.15.2 method, method-description, work-plan, and work separation for “constructor described vs enacted”.
 * A.7 strict distinction and Face/Surface separation (no object–description–carrier soup).
-* A.1 System admission, A.2 local system-role classification, A.2.1/F.6 exact system-role-assignment attribution, A.3.4 transformation, and A.15 Work discipline: an admitted System performs Work; epistemes, local kinds, and assignments do not act.
+* A.1 System admission, A.13 exact actual-performer recovery, and A.15 Work discipline establish the actor and independently admitted Work. A.2 local system-role classification and A.2.1/F.6 assignment-bound attribution enter only when those separate claims are current. An episteme, local kind, or assignment does not act.
 * Slot operation lexicon and naming guidance (A.6.5).
 * A.6.6 direct-first base-dependence discipline and its optional declaration-history labels.
 * MVPK faces as fixed view kinds with “no new semantics” intent (E.17).

@@ -178,7 +178,7 @@ Expose an occurrence identifier only when a receiver must distinguish episodes, 
 | Can the holder do the Work? | `A.2.2` capability and fit | Assignment does not create ability. |
 | Does the assignment satisfy a state predicate? | `A.2.5` | State has its own predicate, relation occurrence, and truth interval. |
 | Which Method admits or organizes the Work? | `A.3`, `A.15` | Method and MethodDescription do not assign a holder. |
-| Was Work performed under this assignment? | `A.15.1`, `F.6` | Work is a dated occurrence and attribution is another relation. |
+| Was Work performed under this assignment? | `A.13`, `A.15.1`, `F.6` | Use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. Because this question explicitly asks under which assignment the Work was performed, F.6 then checks that separate relation against the assignment already used by A.13. |
 | Does a decision or installation help constitute this species? | the direct domain relation and species predicate | It matters only when the admitted species says so; an episteme is not a generic participant. |
 | Is the holder responsible, committed, permitted, authorized, or able to access something? | the admitted direct domain predicate, `A.2.8`, `A.2.8.PER`, or `missing-governor` | The assignment can be an applicability ground without being the result or bearer. |
 | What supports use of the assignment claim? | evidence, reliance, provenance, source-use, or publication pattern | Support concerns the assertion; it does not make the relation obtain. |
@@ -188,16 +188,17 @@ Assignment-establishing world-side relations and epistemic support are not inter
 
 #### A.2.1:4.8 - Performed-Work Attribution
 
-F.6 retains one direct attribution with the renamed family:
+F.6 retains one direct attribution with a comparison-only projection:
 
 ```text
 performedUnderAssignment(W : U.Work, RA : U.SystemRoleAssignment)
-actualPerformerSystem(W, RA) = RA.HolderSystemSlot
+attributedPerformerSystem(W, RA) := RA.HolderSystemSlot
 ```
 
-`SystemRoleAssignmentSlot` in F.6 accepts any admitted assignment species because its `ValueKind` is the family `U.SystemRoleAssignment`. It is not a union of a generic relation and stronger non-assignment values. `ReviewWork-A` can be attributed to `ReviewAssignment-A`, and `ReviewWork-B` to `ReviewAssignment-B`, without creating generic duplicates.
+A.13 first identifies the actual performer `S`, and A.15.1 independently admits `W : U.Work` from its performance history, enacted Method, temporal extent, and containing-System relation. F.6 is needed only for a **precise assignment-bound attribution**—when the current use must also say exactly under which assignment `W` was performed. It then establishes `performedUnderAssignment(W, RA)` against the same assignment already used by A.13 and requires `S = attributedPerformerSystem(W, RA) = RA.HolderSystemSlot`. The projection exposes the assignment holder only for comparison with `S`; it identifies neither assignment nor performer, and a missing or failed F.6 check leaves the Work intact.
 
-Assignment does not prove that Work occurred. Work does not alter assignment identity. Source wording such as `RoleEnactment` is recovered as the dated Work occurrence, exact assignment, admitted performer system, and `performedUnderAssignment` relation; no duplicate run-time kind or occurrence is introduced.
+`SystemRoleAssignmentSlot` in F.6 accepts any admitted assignment species because its `ValueKind` is the family `U.SystemRoleAssignment`. It is not a union of a generic relation and stronger non-assignment values. `ReviewWork-A` can be attributed to `ReviewAssignment-A`, and `ReviewWork-B` to `ReviewAssignment-B`, without creating generic duplicates.
+Assignment does not prove that Work occurred. Work does not alter assignment identity. For source wording such as `RoleEnactment`, first use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. If the current use also needs to say exactly under which assignment the Work was performed, add that assignment and the separate F.6 `performedUnderAssignment` check. Do not create a duplicate run-time kind or occurrence.
 
 #### A.2.1:4.9 - Source Context Shorthand
 
@@ -248,7 +249,7 @@ Alice is independently admitted as `U.System`. `Commission-A` and `Commission-B`
 
 #### A.2.1:5.6 - Reviewer and Review Report
 
-`ReviewService-4` holds an exact review assignment and performs `ReviewWork-82` under it through F.6. `ReviewReport-82` is a separately identified `U.Episteme`. When the Work first constitutes that episteme and the inception claim matters, A.15.PROD recovers one local entity-inception claim from the exact Work, change, and identity bases. A later evidence relation can use the report; the report never fills `HolderSystemSlot` merely because it is useful.
+A.13 first recovers `ReviewService-4` as the exact actual performer through its obtaining review assignment, and A.15.1 independently admits `ReviewWork-82`. Because this example expressly distinguishes which assignment covered the review, F.6 afterward establishes that Work-assignment relation through the same assignment. F.6 identifies neither assignment nor performer, and failed attribution would leave the Work intact. `ReviewReport-82` is a separately identified `U.Episteme`. When the Work first constitutes that episteme and the inception claim matters, A.15.PROD recovers one local entity-inception claim from the exact Work, change, and identity bases. A later evidence relation can use the report; the report never fills `HolderSystemSlot` merely because it is useful.
 
 ### A.2.1:6 - Bias Annotation
 
@@ -259,7 +260,7 @@ Alice is independently admitted as `U.System`. `Commission-A` and `Commission-B`
 | Generic-duplicate bias | A stronger appointment is accompanied by a weaker assignment occurrence. | Let the specialized occurrence itself satisfy `U.SystemRoleAssignment` and use its common holder projection. |
 | Universal-context bias | Every assignment receives a context or optional model-use participant. | Keep context-denoted objects in their direct relation; declare a required participant only in a genuinely dependent species. |
 | Assignment-as-classification drift | Assignment is used as proof of kind membership. | Evaluate the C.3.2 judgment; use assignment only if the signature names its independently obtaining predicate. |
-| Assignment-as-Work drift | Current assignment is treated as completed Work. | Name `W : U.Work`, exact `RA`, and `performedUnderAssignment(W, RA)`. |
+| Assignment-as-Work drift | Current assignment is treated as completed Work. | Use A.13 to identify the actual performer and A.15.1 to admit `W : U.Work` independently. Name `RA` and run the separate F.6 check only if the current use must also say exactly under which assignment `W` was performed. |
 | Episteme-as-holder drift | A standard, report, model, or dataset fills `HolderSystemSlot`. | Keep the episteme in its evidence, reliance, external-rule, source-use, or publication relation. |
 | Responsibility or authority drift | The kind or assignment is treated as the responsibility or authority result. | Cite the direct admitted predicate and actual bearer, or return `missing-governor`. |
 
@@ -287,9 +288,9 @@ Alice is independently admitted as `U.System`. `Commission-A` and `Commission-B`
 | `CC-A2.1-6` | `assignmentInterval` describes known extent and is not a participant or proof of obtaining. Ordinary interval content stays local; a relied-on positive temporal aspect uses `C.27.TA`, while temporal-claim adequacy uses `C.27`. |
 | `CC-A2.1-7` | Taxonomy, scheme, signature, assertion, evidence, publication, and model-use structure are not generic assignment participants. |
 | `CC-A2.1-8` | A specialized occurrence is itself a `U.SystemRoleAssignment`; no weaker generic duplicate is created. |
-| `CC-A2.1-9` | Every species declares the common holder slot by which F.6 projects the actual holder from an occurrence, without erasing additional participants. |
+| `CC-A2.1-9` | Every species declares the common holder slot that F.6 may use to compare an assignment's holder with an already recovered performer. The comparison erases no additional participants and discovers no performer. |
 | `CC-A2.1-10` | Classification and assignment remain independent; assignment is a criterion feature only when the signature explicitly says so. |
-| `CC-A2.1-11` | Performed Work uses `performedUnderAssignment(W, RA)` and the actual performer is `RA.HolderSystemSlot`. |
+| `CC-A2.1-11` | A.13 identifies the actual performer and A.15.1 independently admits the dated Work. F.6 checks the same assignment only if the current use must also say exactly under which assignment the Work was performed; a missing or failed check leaves the Work intact. |
 | `CC-A2.1-12` | A `...SystemRoleAssignmentRef` field is typed by `U.RelationRef constrained to U.SystemRoleAssignment`, resolves to one exact occurrence, and keeps its declared species recoverable. |
 | `CC-A2.1-13` | Missing evidence yields unresolved or `unknown`; only demonstrated predicate failure ends the occurrence. |
 | `CC-A2.1-14` | Reduced use stops before explicit individuation when no receiver needs an assignment reference. |
@@ -302,8 +303,8 @@ Alice is independently admitted as `U.System`. `Commission-A` and `Commission-B`
 | One universal binary assignment relation over `U.Kind` | It admits arbitrary kinds and hides stronger participant laws. | Use one exact local assigned-kind domain in every direct species. |
 | Generic assignment plus appointment occurrence | One world-side episode receives two competing identities. | Make the appointment species a subtype of `U.SystemRoleAssignment`; use its holder projection. |
 | One assignment row reused for every shift | Storage identity collapses repeated occurrences. | Distinguish maximal uninterrupted predicate-true intervals. |
-| Assignment proves Work | Holding is confused with dated performance. | Name exact Work and the F.6 relation. |
-| Durable `RoleEnactment` object | It duplicates Work and attribution. | Recover the source wording to Work, assignment, performer, and `performedUnderAssignment`. |
+| Assignment proves Work | Holding is confused with dated performance. | Use A.13 to identify each actual performer and A.15.1 to admit the Work independently. Add F.6 only if the current use also needs the exact assignment under which that Work was performed; a missing or failed check leaves the Work intact. |
+| Durable `RoleEnactment` object | It duplicates Work and attribution. | Use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. Add the exact assignment and F.6 only if the current use must also say under which assignment the Work was performed; do not mint a duplicate occurrence. |
 | Report holds a system-role assignment | An episteme is made a holder by usefulness. | Use its direct evidence, result, source-use, or publication relation. |
 | Optional `ContextSlot` everywhere | Unrelated locality, scope, structure, and locus meanings collapse. | Recover the denoted object and declare it only when a direct species truly depends on it. |
 

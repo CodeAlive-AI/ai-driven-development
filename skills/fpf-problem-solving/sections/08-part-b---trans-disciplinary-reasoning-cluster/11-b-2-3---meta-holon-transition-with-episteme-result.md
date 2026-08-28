@@ -75,7 +75,7 @@ The exact ClaimGraph, EntityOfConcern, and effective ReferenceScheme are the thr
 - empirical grounding uses `EpistemeEmpiricalGroundingRelation` only when designated empirical claims have current claim-to-world mappings involving the exact grounding holon;
 - viewpoint selection and `U.View` recognition use their description-context and conformance patterns;
 - publication occurrence, publication form, carrier, source use, and C.29 representation remain distinct from the episteme and its constitution;
-- an admitted acting System performs the synthesis Work under a Method; F.6 identifies the assignment under which that System acted, while any actual transformation remains a separate claim; and
+- an exact acting System first has the A.13 core and A.15.1 independently admits its synthesis Work under a Method; F.6 enters only if the receiving transition account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment, while any actual transformation remains a separate claim; and
 - evidence and assurance support or challenge exact claims but do not enter episteme identity or establish constitution.
 
 Add only the neighboring object or relation required by the receiving use. Do not infer any of them from a publication set, and do not turn them into extra identity positions.
@@ -90,7 +90,7 @@ When a receiving use has materialized B.2's optional `MHTTriggerProfile`, interp
 | Objective or evaluation change | The result episteme answers or evaluates a question that the collection did not answer as one claim-bearing whole. | `C.2.1`, `C.16`, `E.21` or relevant evaluation pattern |
 | Supervision or coordination change | Principles, axioms, invariants, reference schemes, or claim-graph constraints organize how constituent claims are interpreted. | `C.2.1`, `A.6.0`, `A.6.1`, `C.29` when formal lens is current |
 | Capability or closure claim | The candidate episteme supports a new explanatory, predictive, specification, or coordination use; evidence for that claim remains separate. | `C.2.1`, `C.16`, `A.10` for evidence use, and the pattern for that use |
-| Agency threshold | Usually not applicable to the episteme itself. If agency is claimed, recover the acting System and test the agency characteristic independently; an agency characteristic does not require an assignment. If dated Work is also claimed, A.15.1 admits the Work and F.6 identifies the assignment under which each performer acted. | `A.12`, `A.2.1`, `A.13`, `A.19`, `C.16`, `A.15.1`, `F.6` |
+| Agency threshold | Usually not applicable to the episteme itself. If agency is claimed, recover the acting System and test the agency characteristic independently; an agency characteristic does not require an assignment. If dated Work is also claimed, recover each exact performer through A.13 and let A.15.1 independently admit the Work. Add F.6 only when the receiving claim expressly consumes precise assignment-bound attribution; missing or failed F.6 leaves the Work intact. | `A.12`, `A.2.1`, `A.13`, `A.19`, `C.16`, `A.15.1`, `F.6` |
 | Temporal consolidation | A field, standard, or theory becomes one current knowledge body after phase consolidation or source-currentness change. | `C.27`, `E.17`, source-use patterns |
 | Context reframe | New terms, reference schemes, or EntityOfConcern mapping reframe the knowledge body. | `C.2.1`, `A.6.3`, `A.6.4`, `F.18` |
 
@@ -133,7 +133,7 @@ If the change is only a new model publication or benchmark score, use publicatio
 
 A set of clauses, examples, and annexes can become a standard episteme when the result is one claim-bearing whole with terms, references, scope, conformance claims, and publication forms.
 
-The standard is not the committee, the PDF, or the Work of enforcement. The committee may be an acting System. If committee or enforcement Work is claimed, admit it under A.15.1 and use F.6 to identify the assignment under which each performer acted; a short account may omit unused assignment identifiers. The PDF is a publication form.
+The standard is not the committee, the PDF, or the Work of enforcement. The committee may be an acting System. If committee or enforcement Work is claimed, recover each exact performer through A.13 and admit the Work independently under A.15.1. Add F.6 only if the account expressly consumes precise assignment-bound attribution; a missing or failed relation leaves the Work intact. The PDF is a publication form.
 
 ### B.2.3:5.4 - Bias-Annotation
 
@@ -141,7 +141,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | --- | --- | --- |
 | Library as theory | A repository, dashboard, or reading list is treated as one claim-bearing episteme. | Identify B.2's exact candidate, execute A.1, and test its C.2.1 ClaimGraph/EntityOfConcern/ReferenceScheme constitution. |
 | Publication as episteme | A PDF, report, standard document, model card, or dashboard is treated as the episteme itself. | Keep publication forms with E.17 and source-use patterns. |
-| Episteme agency | A theory, standard, or doctrine is described as performing Work or enforcement. | Recover every acting System and the admitted Work separately; use F.6 to identify the assignment under which each performer acted. A short account may omit unused assignment identifiers. |
+| Episteme agency | A theory, standard, or doctrine is described as performing Work or enforcement. | Recover every exact acting System through A.13 and let A.15.1 independently admit the Work. Add F.6 only when the receiving account expressly consumes precise assignment-bound attribution; a missing or failed attribution does not demote the Work. |
 | Morphing as MHT | View, translation, coarsening, or retargeting is called a new episteme whole. | Use A.6 episteme-morphism patterns unless B.2 whole reidentification remains current. |
 | Source trust transfer | Trust in constituent sources becomes assurance for the result episteme. | Rebuild assurance and source-use relations for the result episteme. |
 
@@ -153,7 +153,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | `CC-B2.3-2` | B.2's one exact candidate new whole passes the complete A.1 criterion and is independently recognized under the already admitted `U.Episteme` kind through current C.2.1 constitution. |
 | `CC-B2.3-3` | No episteme-specific result reference, context-shaped slice, second result schema, or extra episteme identity positions are introduced. |
 | `CC-B2.3-4` | Publication, source-use, view, viewpoint, claim-bearing, and representation questions require C.2.1, E.17, C.2.P, C.2.P.DR, and direct episteme-family patterns. |
-| `CC-B2.3-5` | The episteme is non-agentive. Acting Systems, synthesis Work, and enforcement Work use A.12, A.2, A.15, and A.15.1; F.6 identifies the assignment under which each actual performer acted, although a short account may omit an unused assignment identifier. Agency-characteristic evaluation remains independent of assignment. |
+| `CC-B2.3-5` | The episteme is non-agentive. Acting Systems first satisfy A.13, and synthesis or enforcement Work is independently admitted through A.15.1. F.6 enters only for an expressly consumed precise assignment-bound attribution; missing or failed F.6 leaves the Work intact. Agency-characteristic evaluation remains independent of assignment. |
 | `CC-B2.3-6` | Assurance for the result episteme is not silently inherited from constituent epistemes or publications. |
 | `CC-B2.3-7` | Effect-free morphing, viewing, retargeting, and controlled coarsening are not treated as B.2.3 unless whole reidentification is current. |
 
@@ -163,7 +163,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | --- | --- | --- |
 | Library as theory | A repository or reading list is treated as one episteme. | Recover one exact candidate and test A.1 plus the C.2.1 constitution relation; keep the collection if either test fails. |
 | PDF as episteme | A publication form is used as the theory itself. | Use publication patterns for the PDF and keep B.2's `resultHolonRef` for the independently constituted episteme. |
-| Doctrine receives agency | “The standard enforces...” or “the theory decides...” | Recover the acting System, Method, and admitted Work; use F.6 to identify the assignment under which each performer acted. Keep any system-role kind, evidence, or decision claim separate. |
+| Doctrine receives agency | "The standard enforces..." or "the theory decides..." | Recover the exact acting System through A.13, then let A.15.1 independently admit the dated Work and enacted Method. Add F.6 only when the receiving use expressly consumes precise assignment-bound attribution. Keep any system-role kind, evidence, or decision claim separate. |
 | Morphism as MHT | A view, translation, coarsening, or retargeting is called a new episteme whole. | Use A.6.2, A.6.3, A.6.4, or A.6.3.CSC unless B.2 whole reidentification is current. |
 | Synthesis as high trust | A new theory inherits trust because its sources were reliable. | Rebuild assurance for the result episteme through A.10, B.3, B.3.5, C.2.1, and source-use patterns. |
 

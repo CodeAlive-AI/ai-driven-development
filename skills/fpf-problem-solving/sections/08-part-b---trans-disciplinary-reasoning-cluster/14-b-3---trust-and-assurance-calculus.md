@@ -143,7 +143,7 @@ Several independent evidence lines may strengthen an argument only through the r
 
 **Calculated or model-bearing path.** Add the characteristic results, dependency structure, assumptions, aggregation rule, rival, calculation trace, and sensitivity or failure condition actually used.
 
-**Replay path.** Add Work, System, Method, assignment, application bindings, witnesses, and a reusable note only when the named assurance use depends on those identities. The System performs the assessment Work. The Work, Method, assignment, result, witness, note, and publication remain separate.
+**Replay path.** Add Work, performer, Method, application bindings, witnesses, and a reusable note only when those identities change the named assurance use. For any assessment Work, use A.13 to identify the actual performer and A.15.1 to admit the dated occurrence independently. Add F.6 only if the replay must also say exactly under which assignment the Work was performed. The Work, performer, Method, optional assignment check, result, witness, note, and publication remain separate.
 
 Do not select the replay path merely because the use is important. Importance may make more basis necessary, but every added field must change inspectability, contestability, or the decision.
 
@@ -195,7 +195,7 @@ A calculated result also names every bearer, characteristic, scale, unit, depend
 
 #### B.3:5.3 - Additional obligations for replay
 
-A replayable result adds only the Work and performance facts needed by the receiving use. Identify the assessment Work, the System that performed it, and any Method, assignment, application binding, witness, or timing fact on which competence, independence, reproducibility, contest, or redress actually depends. No record field stands in for an obtaining relation.
+A replayable result adds only the Work and performance facts needed by the receiving use. Follow the §4.5 replay route for each assessment Work. Add its Method, application binding, witness, timing fact, or separate F.6 assignment check only when competence, independence, reproducibility, contest, or redress actually depends on that fact. No record field stands in for an obtaining relation.
 
 ### B.3:6 - Worked cases
 
@@ -255,7 +255,7 @@ An assurance argument relies on a manufacturing sequence whose result changes wh
 | `CC-B3-8` | A label, dashboard, card, provenance mark, attestation, or publication contributes only the exact property established through a cited relation. |
 | `CC-B3-9` | Safety, rights, access, responsibility, contest, redress, status, permission, release, and controlled action remain with their direct patterns. |
 | `CC-B3-10` | A causal-use premise cites the exact C.28 result; a Method-organization premise cites an A.22-selected structure only when that structure matters. |
-| `CC-B3-11` | Work, System, Method, assignment, bindings, witnesses, and reusable notes are added only for an actual replay, competence, independence, timing, contest, or redress need. |
+| `CC-B3-11` | Work, performer, Method, bindings, witnesses, reusable notes, and an optional F.6 assignment check are added only for an actual replay, competence, independence, timing, contest, or redress need. Every Work follows the §4.5 A.13 then independent A.15.1 route. |
 | `CC-B3-12` | A positive result states the unsupported stronger use and exact reopen condition. |
 
 ### B.3:8 - Common anti-patterns and repairs

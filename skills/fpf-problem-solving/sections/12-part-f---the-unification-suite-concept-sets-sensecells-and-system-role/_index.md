@@ -10,7 +10,7 @@
 - [F.3 - Source-Local Sense Clustering](05-f-3---source-local-sense-clustering.md) (247 lines) — “Under one explicit interpretation basis, merge aliases that make the same local claim and split uses that do not.”
 - [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind](06-f-4---systemrolekinddescription-describing-an-exact-system-r.md) (331 lines) — Type: Definitional (D)
 - [F.5 - Naming Discipline for U-kind Names and SystemRoleKindDescription Labels](07-f-5---naming-discipline-for-u-kind-names-and-systemrolekindd.md) (289 lines) — Type: Definitional (D)
-- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check](08-f-6---systemroleassignment-and-performed-work-attribution-ch.md) (360 lines) — Type: Boundary and use pattern
+- [F.6 - SystemRoleAssignment and Performed-Work Attribution Check](08-f-6---systemroleassignment-and-performed-work-attribution-ch.md) (362 lines) — Type: Boundary and use pattern
 - [F.7 - Concept-Set Table](09-f-7---concept-set-table.md) (225 lines) — “Put exact local meanings and already established relations side by side; let the table display the argument, never create it.”
 - [F.8 - Mint-or-Reuse Decision](10-f-8---mint-or-reuse-decision.md) (444 lines) — Type: Architectural pattern
 - [F.9 - Alignment and Bridge across Contexts](11-f-9---alignment-and-bridge-across-contexts.md) (592 lines) — "Translate across contexts; never collapse them."

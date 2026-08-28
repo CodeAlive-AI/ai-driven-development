@@ -62,26 +62,26 @@
 - [C.30.P - Architecture and Structure Precision Restoration](52-c-30-p---architecture-and-structure-precision-restoration.md) (248 lines) — Type: Architectural pattern
 - [C.30.STRAT - Stratification Wording Precision Restoration](53-c-30-strat---stratification-wording-precision-restoration.md) (260 lines) — Type: Architectural precision-restoration subpattern under C.30
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](54-c-30-asv---architecture-structural-view-adequacy.md) (806 lines) — Type: Architectural pattern
-- [C.30.LCA - Control Structure View Adequacy (LCA)](55-c-30-lca---control-structure-view-adequacy.md) (308 lines) — Type: Architectural subpattern under C.30
+- [C.30.LCA - Control Structure View Adequacy (LCA)](55-c-30-lca---control-structure-view-adequacy.md) (309 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](56-c-30-ilc---cross-scope-architecture-residual-triage.md) (255 lines) — Type: Architectural subpattern under C.30
 - [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](57-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (420 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](58-c-31---modularity-and-reusable-structure-characteristics.md) (382 lines) — Type: Characterization pattern
 - [C.31.RSA - Reusable Structure Accounting](59-c-31-rsa---reusable-structure-accounting.md) (396 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](60-c-31-asap---architecture-scale-amenability-preference.md) (323 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](61-c-32---architecture-candidate-synthesis.md) (354 lines) — Type: Architectural pattern
-- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (354 lines) — Type: Architectural process pattern under C.32
+- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (355 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](63-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (205 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](64-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (288 lines) — Type: Architecture characterization pattern under C.32
-- [C.32.ACE - Architecture Characteristic Eval Programs](65-c-32-ace---architecture-characteristic-eval-programs.md) (218 lines) — Type: Architecture eval-support subpattern under C.32
-- [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](66-c-32-conway---architecture-influence-and-transformed-archite.md) (428 lines) — Type: Architectural subpattern under C.32
+- [C.32.ACE - Architecture Characteristic Eval Programs](65-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32
+- [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](66-c-32-conway---architecture-influence-and-transformed-archite.md) (432 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Multilevel Architecture Residual Optimization](67-c-32-mlao---multilevel-architecture-residual-optimization.md) (275 lines) — Type: Architectural subpattern under C.32
 - [C.32.MWA - Practice Architecture Synthesis from Several Structures](68-c-32-mwa---practice-architecture-synthesis-from-several-stru.md) (202 lines) — Tech-name: PracticeArchitectureSynthesisFromSeveralStructures
 - [C.32.FAIL - Architecture Failure Recognition and Repair](69-c-32-fail---architecture-failure-recognition-and-repair.md) (245 lines) — Type: Architectural subpattern under C.32
-- [C.32.PAD - Project Architecture Decision After Candidate Synthesis](70-c-32-pad---project-architecture-decision-after-candidate-syn.md) (361 lines) — Type: Architecture decision pattern under C.32
+- [C.32.PAD - Project Architecture Decision After Candidate Synthesis](70-c-32-pad---project-architecture-decision-after-candidate-syn.md) (362 lines) — Type: Architecture decision pattern under C.32
 - [C.32.ADR - Architecture Decision Record Projection](71-c-32-adr---architecture-decision-record-projection.md) (228 lines) — Type: Architecture publication pattern under C.32
-- [C.32.ADA - Architecture Decision Adequacy Scales](72-c-32-ada---architecture-decision-adequacy-scales.md) (298 lines) — Type: Architecture evaluation pattern under C.32
+- [C.32.ADA - Architecture Decision Adequacy Scales](72-c-32-ada---architecture-decision-adequacy-scales.md) (300 lines) — Type: Architecture evaluation pattern under C.32
 - [C.33 - Structural Information Adequacy for Architecture Capture and Missing-Structure Return](73-c-33---structural-information-adequacy-for-architecture-capt.md) (207 lines) — Type: Architectural pattern
 - [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](74-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
-- [C.35 - Structural Synthesis and Discovery Adequacy](75-c-35---structural-synthesis-and-discovery-adequacy.md) (247 lines) — Type: Architectural pattern
-- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](76-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (383 lines) — Tech-name: CulturalEvolutionEngineering
+- [C.35 - Structural Synthesis and Discovery Adequacy](75-c-35---structural-synthesis-and-discovery-adequacy.md) (248 lines) — Type: Architectural pattern
+- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](76-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (387 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](77-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (168 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

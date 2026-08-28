@@ -57,7 +57,7 @@ That result may remain readable prose. It needs no assessment-work record, appli
 
 Use the complete coordinate table when a complete reusable evaluation was explicitly requested or when a named later reliance needs stable coordinate values. Materialize the exact characteristic-space configuration, semantic evaluation Method, A.6.1 application, result episteme, witnesses, or evidence-use relations only when that receiving use depends on their identities.
 
-The semantic Method, A.6.1 application, and dated Work are independently conditional. A reusable coordinate result can exist without any of them. A receiving claim may use a semantic Method without asserting Work, and it may use an exact application and its actual bindings without asserting Work. If dated `U.Work` is asserted, the Method and application become required parts of that branch, together with the complete A.15.1 and F.6 facts.
+The semantic Method, A.6.1 application, and dated Work are independently conditional. A reusable coordinate result can exist without any of them. A receiving claim may use a semantic Method without asserting Work, and it may use an exact application and its actual bindings without asserting Work. If dated `U.Work` is asserted, the Method and application become required parts of that E.9.DA branch; every precise performer first has an A.13 core and A.15.1 independently admits the Work. F.6 follows only when the result also needs precise assignment-bound attribution.
 
 Before assigning coordinates, make one bounded content-first search for an important question the DRR omitted. Inspect the governed problem, the problem-owning practice, current sources, the strongest live alternative, failure and recovery cases, and true direct consumers. If an omitted question would change the answer, architecture, source use, consumer obligation, first drafting action, or stop, return it as a substantive finding before completing the coordinate judgement.
 
@@ -82,7 +82,7 @@ The following names support only the complete reusable-result branch. An ordinar
 | `DRREffectiveCoordinateFloorMap` | E.9.DA's default floor of `3` for every required coordinate plus any higher floor declared before evaluation, with the default or exact raising source recorded for each value. It is not a score target or permission to narrow the use after seeing values. |
 | `DRRDecisionAdequacyCoordinateSet` | The required coordinates in this pattern, each bound to the ordinal scale and its local evidence rule. |
 | `DRRDecisionAdequacyEvaluationConfiguration` | Local input tuple binding the exact checked DRR, required use and source, scope, characteristic space/specification, selected-locus map, evidence basis, qualification window, effective floor, and the semantic Method only when a receiving claim uses that identity. It is neither a new U-kind nor performed Work. |
-| `DRRDecisionAdequacyAssessmentWorkRef` | Exact dated A.15.1 `U.Work`, when that identity is needed. The evaluator `U.System` performs it using the semantic evaluation Method during the named interval and within the named containing System; the exact assignment species, obtaining occurrence, and F.6 attribution are named separately in the Work-admission branch. |
+| `DRRDecisionAdequacyAssessmentWorkRef` | Exact dated A.15.1 `U.Work`, when that identity is needed. Every precise evaluator-performer first has an A.13 core; A.15.1 independently admits the Work from its performance history, semantic evaluation Method, interval, and containing System. The exact assignment species and obtaining occurrence remain part of the A.13 core. F.6 attribution is named separately only when the receiving result also needs precise assignment-bound attribution. |
 | `DRRDecisionAdequacyApplicationRef` | Exact A.6.1 application and actual bindings, when a receiving claim uses them. Its inputs and outputs are only the values named by its declaration and obtaining bindings. It implies no Work; relate it to Work only through a separately defined relation whose predicate obtains. |
 | `DRRDecisionAdequacyEvidenceBasis` | Checked DRR, source, accepted-decision, selected-locus, architecture, currentness, neighbour, and bounded omitted-question-search loci named by value when the receiving reliance needs them; inclusion is not evidence use by itself. |
 | `DRRCoordinateValueRationales` | Required result claims: coordinate, value, adjacent-value rationale, and evidence locus named by value. |
@@ -129,26 +129,34 @@ DRRDecisionAdequacyAssessmentApplication?:
   AggregateResultRef:
 
 AssessmentWorkAdmission?: <omit when no dated U.Work is asserted;
-  when present, every field below is required>
+  when present, every non-optional field below is required>
   AssessmentApplicationRef: <same exact A.6.1 application>
-  AssessmentWorkRef: <one dated U.Work>
+  AssessmentWorkRef: <one dated U.Work independently admitted under A.15.1>
   AssessmentWorkInterval:
   AssessmentContainingSystemRef: <exact U.System>
   SemanticEvaluationMethodRef: <exact U.Method>
   EnactedMethodRef: <same SemanticEvaluationMethodRef>
   EvaluatorSystemRef: <the admitted U.System that actually performs the Work>
-  EvaluatorSystemRoleAssignmentSpeciesRef: <the declared assignment species; includes its
-    holder slot, assigned-kind slot with a local system-role-kind domain, rule, applicability,
-    every identity-bearing participant, and occurrence-identity rule>
-  EvaluatorSystemRoleAssignmentRef: <a covering occurrence of that species with all
+  EvaluatorA13CoreBasisRef: <exact local agential kind and criterion, classification,
+    obtaining assignment, scope, working situation, window, and adequate core evidence;
+    add a characteristic profile only when its own receiving use consumes it>
+  EvaluatorSystemRoleAssignmentSpeciesRef: <the declared assignment species and all
+    identity-bearing participant positions used by EvaluatorA13CoreBasisRef>
+  EvaluatorSystemRoleAssignmentRef: <the same obtaining assignment occurrence with all
     declared participant values>
   AssignmentHolderCheck: <the occurrence holder is EvaluatorSystemRef>
+  AssignmentPredicateCheck: <the declared assignment predicate obtains for all declared
+    participant values>
   AssignmentInterval: <the uninterrupted interval in which the species predicate obtains>
-  AssignmentCoverageCheck: <AssignmentInterval covers AssessmentWorkInterval>
-  PerformedUnderAssignmentRef: <the F.6 relation linking AssessmentWorkRef to
-    EvaluatorSystemRoleAssignmentRef>
-  EvaluatorSystemRoleClassificationRef?: <optional neighbouring A.2 and C.3.2 claim;
-    neither the assignment nor Work establishes it>
+  AssignmentCoverageCheck: <AssessmentWorkInterval is covered by AssignmentInterval>
+  PerformedUnderAssignmentRef?: <include only when precise assignment-bound attribution is
+    current; cite the direct case fact that EvaluatorSystemRef performed AssessmentWorkRef
+    under the same EvaluatorSystemRoleAssignmentRef, then use F.6 after holder equality,
+    the declared species and participants, the assignment predicate, and interval coverage
+    above obtain>
+  AdditionalEvaluatorSystemRoleClassificationRef?: <optional additional neighbouring A.2
+    and C.3.2 claim, not the classification already required by the A.13 core; neither the
+    assignment nor Work establishes it>
 
 DRRDecisionAdequacyResultEpisteme:
   EntityOfConcern: <same exact DRRVersionRef>
@@ -285,7 +293,8 @@ E.9.DA reliance-bearing result:
   CharacteristicSpace and evaluation-spec refs:
   Semantic evaluation Method ref, only when used by the receiving claim:
   A.6.1 assessment application and actual binding refs, only when used:
-  A.15.1 and F.6 Work-chain refs, only when dated U.Work is asserted:
+  A.13 performer-core and A.15.1 Work refs, only when dated U.Work is asserted:
+  F.6 attribution refs, only when precise assignment-bound attribution is asserted:
   Evidence basis checked, including the bounded omitted-question search:
   Coordinate table: <Coordinate | Value | ShortRationale | EvidenceLocus>
   Precision-restoration reading and triggered exact checks:
@@ -293,7 +302,7 @@ E.9.DA reliance-bearing result:
   Status, first action or repair, bounded overread, and reopen condition:
 ```
 
-Only this reliance-bearing branch requires every coordinate and the exact identities its receiving use consumes. Method, application, and Work refs remain independently conditional; asserting dated `U.Work` requires all three and the complete branch in 4.2. A downstream status use, assurance, E.19 admission, authority, or drafting permission remains a separate claim with its own defining or constraining pattern.
+Only this reliance-bearing branch requires every coordinate and the exact identities its receiving use consumes. Method, application, and Work refs remain independently conditional; asserting dated `U.Work` requires the Method, application, every precise performer's A.13 core, and independent A.15.1 admission from the branch in 4.2. F.6 is additionally required only when the result asserts precise assignment-bound attribution. A downstream status use, assurance, E.19 admission, authority, or drafting permission remains a separate claim with its own defining or constraining pattern.
 
 #### E.9.DA:4.7 - Structured finding row when reuse needs it
 
@@ -343,11 +352,11 @@ The bias is bounded. Small editorial decisions can use `E.9` directly. Ordinary 
 | `CC-E9DA-0` | Make the semantic judgement first. For an ordinary bounded review, name the exact DRR, required authoring use and its source, effective floor and its source, substantive findings, repaired text, or unchanged checked DRR when clean, first action or repair, bounded overread, and stop or reopen; do not require a formal dossier. |
 | `CC-E9DA-0a` | When a broad language, ontology, or authoring rule is selected, use one dependency-aware actual predecessor/proposed host replay. Evaluate recognizable entry, inputs, first action, vocabulary, formality and assurance burden, first result, stop, preserved ideas, and true direct consumers at comparable effort. A proxy does not substitute. |
 | `CC-E9DA-0b` | Before coordinate closure, make one bounded content-first search across the governed problem, problem-owning practice, current sources, strongest live alternative, failure and recovery cases, and true direct consumers for an important question the DRR omitted. Return an answer-changing question as a substantive finding and lower every affected coordinate. A clean ordinary review needs no separate search ledger; a reusable result records only the basis its receiving reliance needs. |
-| `CC-E9DA-1` | Keep the exact DRR, required authoring use and its source, selected-locus map, qualification window, and effective floor recoverable. Method, A.6.1 application, and dated Work are independently conditional. Add each identity only when the receiving claim uses it; if dated `U.Work` is asserted, the complete Method, application, A.15.1, and F.6 chain in 4.2 must obtain. |
+| `CC-E9DA-1` | Keep the exact DRR, required authoring use and its source, selected-locus map, qualification window, and effective floor recoverable. Method, A.6.1 application, and dated Work are independently conditional. Add each identity only when the receiving claim uses it. If dated `U.Work` is asserted, the Method and application branch, every precise performer's A.13 core, and independent A.15.1 admission in 4.2 must obtain; add F.6 only when precise assignment-bound attribution is also current. |
 | `CC-E9DA-2` | When a complete reusable coordinate evaluation is explicitly required, evaluate every coordinate with value, adjacent-value rationale, and evidence locus. Otherwise perform the focused content review actually requested and return its findings or repairs without manufacturing unused coordinate records. |
 | `CC-E9DA-3` | Justify values from `DRR` decision content, accepted source-use payload, and the bounded omitted-question search, not administrative state, source reputation, official status, recency alone, or popularity. |
 | `CC-E9DA-4` | Derive the local status noncompensatorily from the required use, effective floor, coordinate values, and architecture or split blockers. Constitute an aggregate result episteme only when the requested reusable result or named later reliance requires it; keep any receiving status use or authority separate. |
-| `CC-E9DA-5` | Keep the adequacy judgement distinct from the checked DRR, pattern quality, E.19 admission, review or release state, assurance, gate, project work, and later repair. In the reliance-bearing branch, also keep Method, assessment application, Work, witnesses, evidence use, result episteme, and optional record distinct. When assessment `U.Work` is admitted, keep every component of the complete A.15.1 and F.6 chain in 4.2 distinct and recoverable. |
+| `CC-E9DA-5` | Keep the adequacy judgement distinct from the checked DRR, pattern quality, E.19 admission, review or release state, assurance, gate, project work, and later repair. In the reliance-bearing branch, also keep Method, assessment application, Work, witnesses, evidence use, result episteme, and optional record distinct. When assessment `U.Work` is admitted, keep every precise performer's A.13 core and the independent A.15.1 Work account in 4.2 distinct and recoverable; keep any current F.6 attribution as a separate later relation. |
 | `CC-E9DA-6` | Apply `E.10` to decision-governing names, coordinates, status values, examples, stop conditions, and finding wording introduced or repaired by the evaluation. |
 | `CC-E9DA-6a` | Check the precision-restoration effect before accepting values: ordinary meaning and first action, word-use precision, phrase apparatus, repetition/distribution, ontic-slot clarity, description/publication/source separation, and pattern-use wording. Record a profile only when the requested reusable result or named reliance consumes it. |
 | `CC-E9DA-6b` | For proposed wording or naming repair, compare the actual pre/post object, relation or claim, slot, use, admissible scope, and practitioner action. If a live distinction changes without an accepted semantic decision and the concrete defining or constraining pattern, return repair rather than treating the wording as clean. |
@@ -364,7 +373,7 @@ The bias is bounded. Small editorial decisions can use `E.9` directly. Ordinary 
 | Anti-pattern | Repair |
 |---|---|
 | **Specification or record as evaluator.** A filled coordinate table, published record, or E.9.DA pattern is said to have assessed the DRR, issued assurance, accepted it, or authorized drafting. | Name the actual evaluator `U.System`; do not replace it with an evaluator-role label. Leave an ordinary review outside Work admission. Add Method, application, or Work identity only when the receiving claim uses it. If dated `U.Work` is asserted, use the complete branch in 4.2. An optional local system-role classification is separate, and neither an assignment nor the record acts. |
-| **Conditional branch collapsed into Work.** A reusable result is said to require assessment Work, or a Method or A.6.1 application is described as Work merely because all three can occur in one stronger case. | Keep Method, application, and Work independently conditional. Work requires the complete Method/application/A.15.1/F.6 account; Method or application alone implies no Work, and an application is related to Work only through a separately defined obtaining relation. |
+| **Conditional branch collapsed into Work.** A reusable result is said to require assessment Work, or a Method or A.6.1 application is described as Work merely because all three can occur in one stronger case. | Keep Method, application, and Work independently conditional. The Work branch requires the Method and application used here, every precise performer's A.13 core, and independent A.15.1 admission. Add F.6 only when precise assignment-bound attribution is also current. Method or application alone implies no Work, and an application is related to Work only through a separately defined obtaining relation. |
 | **Heading-complete DRR.** Headings exist but authors cannot tell what to write. | Return the missing selected answer, selected-locus obligation, and first drafting action for repair; in a complete reusable evaluation, lower the corresponding coordinates. |
 | **Question-complete around the wrong frame.** Every named question is answered, but the DRR omitted a question that changes the answer, architecture, source use, consumer obligation, first action, or stop. | Run the one bounded content-first omitted-question search before coordinate closure. Return the question as a finding and lower the coordinates whose claims it changes; do not narrow the frame to preserve the values. |
 | **Source packet in DRR clothing.** Sources are preserved but FPF decisions are absent. | State selected payload, rejected payload, and selected-locus obligations. |
@@ -413,7 +422,7 @@ The current-best source set spans empirical decision-document use, rationale-com
 |---|---|
 | `E.9` | Defines the DRR decision method and ordinary minimum form, with optional exact work/result and C.2.1 identity when a current claim or named reliance needs them. E.9.DA checks one exact DRR; it is not a second DRR method or form. |
 | `A.19`, `A.19.ECS`, `A.17`, `A.18`, `C.16`, `C.16.Q`, `C.25` | Define or constrain the characteristic space, evaluation specification, characteristics, scales, measurement boundary, quality-ascription precision, declared-use floor, noncompensatory status meaning, and any separately selected Q-Bundle consumed here. E.9.DA supplies the DRR-specific coordinates and result rules. |
-| `A.15.1`, `F.6`, `A.6.1`, `A.2`, `A.2.1`, `C.3.2` | `A.15.1` and `F.6` define the full System-Method-Work and Work-attribution chain; `A.6.1` defines an exact application and its actual bindings; `A.2` and `A.2.1` supply the assignment species and occurrence; `C.3.2` is relevant only to an independently asserted local system-role classification. Method, application, and Work are independently conditional here. An asserted Work branch requires all of its defined facts; neither an application nor Method alone implies Work, and the E.9.DA specification and optional record perform none of them. |
+| `A.13`, `A.15.1`, `F.6`, `A.6.1`, `A.2`, `A.2.1`, `C.3.2` | `A.13` supplies every precise evaluator-performer's core and same obtaining assignment; `A.15.1` independently admits dated Work; `F.6` supplies a separate later relation only when precise assignment-bound attribution is current. `A.6.1` defines an exact application and its actual bindings; `A.2` and `A.2.1` supply the assignment species and occurrence; `C.3.2` is relevant only to an independently asserted local system-role classification. Method, application, Work, and attribution are independently conditional here. Neither an application nor Method alone implies Work, and the E.9.DA specification and optional record perform none of them. |
 | `C.2.1` | Constitutes an exact checked DRR or reusable coordinate/result/record episteme when that identity is current. An ordinary bounded review need not create those objects. |
 | `A.10`, `B.3` | Govern exact evidence use/provenance and any assurance or reliance on the result. Witness presence and a favorable value create neither relation. |
 | `F.10`, `G.11` | Govern any downstream status use/interpretation and currentness. A local E.9.DA status value does not authorize drafting by itself. |

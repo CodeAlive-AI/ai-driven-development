@@ -121,7 +121,7 @@ The six SlotSpecs and direction are the exact `RelationSignature`. `X` and `Y` h
 A positive occurrence obtains only when all of the following hold together:
 
 1. all six participants resolve exactly, and the `BoundedModelUseStructure` was independently selected because its model-use organization changes this transition use;
-2. one system under an exact system-role assignment performs exact dated representation-transformation Work whose governed inputs, result, references, or A.6.1 bindings use all six participant values;
+2. A.13 identifies the actual performer, and A.15.1 independently admits the dated representation-transformation Work. If the current use also needs to say exactly which assignment covered that Work, F.6 checks that separate relation against the same A.13 assignment; F.6 identifies neither performer nor assignment, and a missing or failed attribution leaves the Work intact. The Work's governed inputs, result, references, or A.6.1 bindings use all six participant values;
 3. exact `v : X -> Y` states claim construction, endpoint-scheme relation, same EntityOfConcern, preservation, loss or recoverability, prohibited strengthening, applicability, use, and return; and
 4. every depended-on correspondence is an exact separately governed relation or claim.
 

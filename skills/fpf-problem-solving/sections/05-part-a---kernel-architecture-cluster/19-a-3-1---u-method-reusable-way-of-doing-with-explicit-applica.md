@@ -149,7 +149,7 @@ Do not decide from words such as *method*, *algorithm*, *process*, or *mechanism
 | --- | --- |
 | What reusable way of observing, deciding, deriving, changing, or preserving is meant? | State the `U.Method` under A.3.1: participants, applicability, conditions, intended result or preserved condition, and boundary. |
 | What reusable family of operations and laws is declared? | State the separate `U.Mechanism` declaration under A.6.1: its concern, subject and range meanings, operation algebra, laws, admissibility conditions, and Applicability. |
-| What happened on this dated occasion? | Identify the Work occurrence under A.15.1. Its performer system, covering assignment, enacted method, extent, containing system, bindings, and resources are occurrence-side facts, not method or mechanism fields. |
+| What happened on this dated occasion? | Recover every exact actual performer through A.13 and identify the dated Work occurrence independently under A.15.1. Its enacted Method, extent, containing System, bindings, and resources are occurrence-side facts. Add a covering assignment and F.6 attribution only when the receiving claim expressly consumes precise assignment-bound attribution; their absence or failure does not erase the Work. |
 | What correspondence, realization, or support claim is being made around those objects? | Name the relation, its participants, exact predicate, current facts, and subject-pattern locator. If no such predicate is defined, keep the objects separate and stop rather than implying the relation. |
 
 A method statement may cite a mechanism episteme whose content declares operations used by that method. A shared concern or operation name does not make the two values identical. A selector may choose a method, and an A.6.1 application may bind a method as an actual value. State that use only when the selector outcome, application binding, or another admitted direct relation is present; otherwise keep the method and neighboring object separate. None authorizes Work merely by being named.
@@ -213,7 +213,7 @@ When a method concerns change, its statement says what change a future enactment
 
 The constructor-theory and process-theory source line supports this separation but does not supply a universal method ontology. FPF uses it as follows:
 
-* An admitted `U.System` performs dated Work; A.15.1 identifies the Work, at least one obtaining `enactsMethod` relation, time, and at least one obtaining locally declared containing-system relation; another enactment relation is named only when the receiving claim relies on it, while F.6 identifies the assignment under which each performer acted. The assignment neither acts nor enacts the Method. A short Method explanation may omit an assignment identifier or further valid boundary that no later claim uses.
+* An exact actual performer first has the A.13 core; A.15.1 then independently identifies the dated Work, at least one obtaining `enactsMethod` relation, time, and at least one obtaining locally declared containing-system relation. Another enactment relation is named only when the receiving claim relies on it. F.6 enters only when that claim also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. The assignment neither classifies the System, acts, nor enacts the Method.
 * The `U.Method` is the reusable way under stated participant meanings, applicability, conditions, intended result or preserved condition, and bounds. A `U.MethodDescription` is an episteme that describes it.
 * A formal substrate or mathematical lens can make the method analyzable, and a `U.Mechanism` can declare the relevant operation family and laws. Neither becomes the method by providing a formula or implementation.
 * A cross-context Bridge, changed reference or model-use relation, mechanism realization, evaluation, or evidence-use claim remains a separately stated relation with its own participants.
@@ -243,15 +243,33 @@ Keep one method across parameter ranges, equipment envelopes, or representation 
 
 **No-extra-locality replay.** `EuclideanGCD` over positive integers closes as one method when the integer meanings, division-with-remainder rule, positivity precondition, decreasing-remainder invariant, and greatest-common-divisor result are stated. If those facts answer the comparison, add no claim scope, context slice, model-use structure, or other locality object.
 
-#### A.3.1:4.8 - Method relation structure, composition, and work enactment
+#### A.3.1:4.8 - Method relations, composition, and Work enactment
 
-First decide whether the question is about one reusable way, a composite way, or relations among already identified objects:
+Start with the practical question, not a graph or the umbrella word *specialization*. Ask what must be decided now.
 
-* one reusable way is a `U.Method`;
-* submethods assembled into a whole remain a `U.Method`, with B.1.5 used when order-sensitive composition is claimed;
-* relations among methods, descriptions, selectors, or Work occurrences remain those exact relations; select a `U.Structure` under A.22 only when their organization changes the next question or action.
+| Current question | First useful result |
+| --- | --- |
+| Does this reusable way meet one or more Method-kind criteria? | Use `C.3.2` for the admissibility check and a `true`, `false`, or `unknown` judgment. An out-of-scope request is `not-applicable` and forms no judgment. |
+| Does one Method kind have several broader kinds? | Check each broader-kind claim under `C.3.1`. Several broader kinds create no Method part or unique parent. |
+| Does one Method contribute to several larger Methods? | Use `B.1.5` for every part–whole pair and every whole construction. Each whole keeps its own action, boundary, interfaces, and reidentification rule. |
+| Are two Methods being compared for refinement or replacement? | First identify both Methods and the use that needs the comparison. State the direction, what remains, what changes, and the material guards or losses. A sentence or local claim is often enough for one use. |
+| Is this another question—for example, parameter variation, family grouping, fallback, dispatch, a description, a selected structure, performed Work, capability, provider contribution, or cultural change? | Use the pattern that defines or tests that claim. The label alone establishes no Method kind, Method part, or relation occurrence. |
 
-`MethodRelationStructure` is only a local designator for such an already selected A.22 `U.Structure`. It is not a durable U-kind, method holon, or relation type, and the label contributes nothing to identity. Candidate relation families—composition such as serial, parallel, choice, or iteration; method change such as refinement, substitution, decomposition, or parameterization; and selection or use such as family membership, fallback, or enactment—are recognition cues. Method-description membership is not one of those relations: A.3.2 judges the episteme itself. Every selected relation occurrence must already obtain under its direct pattern.
+Before claiming refinement or replacement, decide whether the changed account still identifies the same Method. If it does, state what was preserved and what changed; do not invent a relation between two Methods. If two Methods are identified, a refinement comparison states its direction and use, the semantics retained from the first Method, what the second narrows or strengthens, and the action or result that changes.
+
+A replacement comparison says which Method may replace which other Method, for what use, under which preconditions, with which intended result or preserved condition, and which bounds, interfaces, losses, and guards must remain visible. Do not infer the reverse direction. Shared kind criteria or similar descriptions do not prove replacement.
+
+A parameter change inside the Method's declared applicability and identity rule is variation of the same Method. A change to a participant meaning, result, bound, interface, or acceptance condition that matters to identity identifies another Method or leaves the identity question unresolved. The word *parameterization* creates no relation.
+
+A `G.5` family row cites already identified Methods and states why they are grouped for the current use. A fallback can belong to a `B.1.5` whole construction, a `G.5` selector rule or result, or a local relation-bearing claim. A dispatch rule says which selector branch applies; state the current branch and its basis. A family row or selector result creates no Method kind, Method part, refinement, or replacement relation.
+
+When FPF has no admitted predicate for refinement, replacement, fallback, or another relation-bearing claim, use `A.6.RCD` to choose the lightest sufficient result. For one use, a local claim may be enough; repeated use of the same rule may justify a reusable predicate definition. Continue through `E.24` and `E.24.UK` only when a named later use must treat the relation occurrences themselves as stable objects. A local claim or predicate definition cannot become an `A.22` edge.
+
+**Short positive.** `ChangeImpactReview` can meet two Method-kind criteria and also be required by the independent constructions of `ApproveControlSoftwareRelease` and `InvestigateFieldIncident`. Those judgments and two `methodPartOf` facts remain separate. Using the Methods together in dated Work creates none of them.
+
+**Selector anti-case.** A `RapidRecoveryMethods` row groups `RollbackRelease`, `DisableFeatureFlag`, and `ShiftTraffic` for one selector. Its stated grouping basis and fallback policy may support a `G.5` result, but they do not establish a Method kind, one composite Method, or a refinement or replacement relation. If the fallback condition is incomplete, return the missing fact instead of drawing an edge.
+
+`MethodRelationStructure` is only a local name for an `A.22` structure selected from independently identified constituents and relations that already obtain. It is not a durable kind, Method holon, or relation type. Composition, refinement, replacement, parameter variation, family grouping, fallback, dispatch, and enactment are recognition cues; the cue does not decide the claim.
 
 **Filled A.22 basis — enacted-method review.** For this one-off review, a practitioner selects only two A.15.1 `enactsMethod` occurrences. No durable selection judgment is asserted, and no composition, fallback, selector, or work-to-pump relation is created.
 
@@ -361,7 +379,7 @@ Use one concrete test in every case: can the reader state the reusable action, i
 
 **CC-A3.1-4 (Assignment-free Method).** A Method may state local system-role-kind admission conditions or capability-fit conditions. These are Method-side admissibility conditions, not deontic obligations by default. The Method does not bind named people, teams, organizations, or calendar allocations.
 
-**CC-A3.1-5 (Runtime-free method).** A dated run is a Work individual under `U.Work`, not a method field. A.15.1 separately grounds its performer system, covering assignment and attribution, enacted method, extent, containing system, and every participation or resource relation used by the claim. Telemetry, logs, measurements, evaluations, production, delivery, acceptance, and result records remain separate claims.
+**CC-A3.1-5 (Runtime-free method).** A dated run is a Work individual under `U.Work`, not a method field. Recover each exact actual performer through A.13; A.15.1 independently grounds the Work, enacted Method, extent, containing System, and every participation or resource relation used by the claim. Add a covering assignment and F.6 attribution only when the receiving use expressly represents precise assignment-bound attribution. Telemetry, logs, measurements, evaluations, production, delivery, acceptance, and result records remain separate claims.
 
 **CC-A3.1-6 (Plan-free method).** Work preparation, schedule, go or no-go date, work authorization, and planned work relation belong to `U.WorkPlan`, gate, authority, or commitment patterns.
 

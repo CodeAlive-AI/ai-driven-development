@@ -10,7 +10,7 @@ FPF is a **thinking amplifier** — it helps you plan deeper and make better dec
 
 ## How it works
 
-This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (15 directories, 349 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a practical entry, applying a pattern to its first useful result, recovering candidate Methods from Work evidence, steering ongoing Work, comparing finite configuration changes, clarifying learning claims, navigating a DPF suite, assembling framework publication forms, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causality, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
+This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (15 directories, 351 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a practical entry, applying a pattern to its first useful result, discovering Systems that may bear consequences, recovering candidate Methods from Work evidence, steering ongoing Work, recovery-testing Work-performance configurations, comparing finite configuration changes, clarifying learning claims, navigating a DPF suite, assembling framework publication forms, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causality, actual temporal structure, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
 
 ## Install
 
@@ -26,7 +26,7 @@ sections/
     _index.md                          # TOC with descriptions of all sub-sections
     01-a-0---onboarding-glossary.md    # 248 lines
     02-a-1---holon-ontic-foundation.md # 356 lines
-    ...                                # 25 sub-sections total
+    ...                                # 26 sub-sections total
   09-part-c---kernel-extension-specifications/
     _index.md
     ...                                # 77 sub-sections
@@ -43,9 +43,9 @@ The agent reads `_index.md` first, picks the right sub-section file, and loads o
 | 02 | Table of Contents | 0 |
 | 03 | FPF Readme | 9 |
 | 04 | Preface | 21 |
-| 05 | Part A — Kernel Architecture | 25 |
+| 05 | Part A — Kernel Architecture | 26 |
 | 06 | A.IV.A — Signature Stack & Boundary | 27 |
-| 07 | A.V — Constitutional Principles | 43 |
+| 07 | A.V — Constitutional Principles | 44 |
 | 08 | Part B — Trans-disciplinary Reasoning | 25 |
 | 09 | Part C — Kernel Extensions | 77 |
 | 10 | Part D — Ethics & Conflict | 5 |

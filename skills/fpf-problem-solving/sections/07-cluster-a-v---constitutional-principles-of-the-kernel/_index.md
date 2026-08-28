@@ -11,38 +11,39 @@
 - [A.9 - Cross‑Scale Consistency (C‑3)](06-a-9---cross-scale-consistency.md) (114 lines) — “The logic of a bolt must still be the logic of the bridge.”
 - [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (374 lines) — Normativity: Normative
 - [A.11 - Ontological Parsimony](08-a-11---ontological-parsimony.md) (146 lines) — Type: Kernel parsimony and admission discipline pattern
-- [A.12 - Acting-Side Externalization and Reflexive Split](09-a-12---acting-side-externalization-and-reflexive-split.md) (294 lines) — Type: Part A architectural ontology pattern
+- [A.12 - Acting-Side Externalization and Reflexive Split](09-a-12---acting-side-externalization-and-reflexive-split.md) (297 lines) — Type: Part A architectural ontology pattern
 - [A.13 - The Agential Role & Agency Spectrum](10-a-13---the-agential-role-agency-spectrum.md) (147 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
 - [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](11-a-14---advanced-mereology-components-portions-aspects-phases.md) (360 lines) — Type: Kernel mereology and part-whole relation discipline pattern
 - [A.15 - System-Role–Method–Work Alignment](12-a-15---system-role-method-work-alignment.md) (395 lines) — Type: Architectural (A)
-- [A.15.1 - U.Work](13-a-15-1---u-work.md) (582 lines) — Type: Architectural (A)
+- [A.15.1 - U.Work](13-a-15-1---u-work.md) (595 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan](14-a-15-2---u-workplan.md) (312 lines) — Type: Architectural (A)
 - [A.15.3 - SlotFillingsPlanItem](15-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](16-a-15-4---work-relevant-appearance-based-reliance-repair.md) (480 lines) — Type: Architectural (A)
-- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](17-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (214 lines) — Type: Architectural (A)
-- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](18-a-15-6---project-process-and-case-recovery-through-work-meth.md) (339 lines) — Type: Architectural (A)
-- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](19-a-15-7---situation-responsive-work-steering-and-next-action.md) (198 lines) — Type: Architectural (A)
-- [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](20-a-15-prod---production-work-entity-identity-inception-and-pr.md) (572 lines) — Type: Architectural (A)
-- [A.16 - Language-State Move Coordination](21-a-16---language-state-move-coordination.md) (239 lines) — Type: Architectural (A)
-- [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](22-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
-- [A.16.1 - U.PreArticulationCuePack](23-a-16-1---u-prearticulationcuepack.md) (295 lines) — Type: Definitional (D)
-- [A.16.2 - Reopen / SketchBackoff / Respecify](24-a-16-2---reopen-sketchbackoff-respecify.md) (225 lines) — Type: Architectural (A)
-- [A.17 - Canonical “Characteristic” (A.CHR‑NORM)](25-a-17---canonical-characteristic.md) (136 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...
-- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](26-a-18---minimal-cslc-in-kernel.md) (152 lines) — Aliases (for narrative use only): _“Axis”_ (≈ Characteristic), _“Point”_ (≈ Coordinate). _(These colloquial aliases may be used in Plain language explanations, but never in formal identifiers or...
-- [A.19 - CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE)](27-a-19---characteristicspace-dynamics-hook.md) (406 lines) — Type: Kernel characteristic-space and dynamics-typing pattern
-- [A.19.ECS - Evaluation CharacteristicSpace Construction](28-a-19-ecs---evaluation-characteristicspace-construction.md) (252 lines) — Normativity: Normative
-- [A.19.SPR - State-Family Precision Restoration](29-a-19-spr---state-family-precision-restoration.md) (255 lines) — Type: State-family precision-restoration pattern
-- [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate](30-a-19-source-set-space-substrate---source-set-and-search-outc.md) (537 lines) — Type: Architectural (A)
-- [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Declared-Substrate Interpretive View](31-a-19-declared-substrate-interpretive-view---declared-substra.md) (495 lines) — Type: Architectural (A)
-- [A.19.CN - CN‑frame (comparability & normalization)](32-a-19-cn---cn-frame.md) (390 lines) — Scope. This CN‑frame Algebra & Normalization Discipline extends A.19 by fixing the governance Standard for CN‑frames, defining a conformance checklist and regression harness, and providing didactic...
-- [A.19.CHR - CHRMechanismSuite](33-a-19-chr---chrmechanismsuite.md) (683 lines) — Type: Architectural (A)
-- [A.19.UNM - Unified Normalization Mechanism (UNM)](34-a-19-unm---unified-normalization-mechanism.md) (417 lines) — Type: Architectural (A)
-- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM)](35-a-19-uindm---unified-indicatorization-mechanism.md) (288 lines) — Type: Architectural (A)
-- [A.19.USCM - Unified Scoring Mechanism, USCM](36-a-19-uscm---unified-scoring-mechanism-uscm.md) (329 lines) — Type: Architectural (A)
-- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](37-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (296 lines) — Type: Architectural (A)
-- [A.19.CPM - Unified Comparison Mechanism (CPM)](38-a-19-cpm---unified-comparison-mechanism.md) (379 lines) — Type: Architectural (A)
-- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](39-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (421 lines) — Type: Architectural (A)
-- [A.20 - Constraint Validity for Transformation Steps](40-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
-- [A.21 - Gate Decisions from Independent Check Results](41-a-21---gate-decisions-from-independent-check-results.md) (294 lines) — Type: Architectural (A)
-- [A.22 - Structure and Structural Views (STRUCT-CAL)](42-a-22---structure-and-structural-views.md) (479 lines) — Type: Architectural pattern
-- [A.22.CGUS - Constraint-Governed Unfolding Structure](43-a-22-cgus---constraint-governed-unfolding-structure.md) (332 lines) — Type: A.22 specialization of U.Structure
+- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](17-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (218 lines) — Type: Architectural (A)
+- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](18-a-15-6---project-process-and-case-recovery-through-work-meth.md) (396 lines) — Type: Architectural (A)
+- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](19-a-15-7---situation-responsive-work-steering-and-next-action.md) (199 lines) — Type: Architectural (A)
+- [A.15.8 - Work-Performance Configuration and Recovery Testing](20-a-15-8---work-performance-configuration-and-recovery-testing.md) (225 lines) — Type: Architectural (A)
+- [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](21-a-15-prod---production-work-entity-identity-inception-and-pr.md) (562 lines) — Type: Architectural (A)
+- [A.16 - Language-State Move Coordination](22-a-16---language-state-move-coordination.md) (239 lines) — Type: Architectural (A)
+- [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](23-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
+- [A.16.1 - U.PreArticulationCuePack](24-a-16-1---u-prearticulationcuepack.md) (295 lines) — Type: Definitional (D)
+- [A.16.2 - Reopen / SketchBackoff / Respecify](25-a-16-2---reopen-sketchbackoff-respecify.md) (225 lines) — Type: Architectural (A)
+- [A.17 - Canonical “Characteristic” (A.CHR‑NORM)](26-a-17---canonical-characteristic.md) (136 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...
+- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](27-a-18---minimal-cslc-in-kernel.md) (152 lines) — Aliases (for narrative use only): _“Axis”_ (≈ Characteristic), _“Point”_ (≈ Coordinate). _(These colloquial aliases may be used in Plain language explanations, but never in formal identifiers or...
+- [A.19 - CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE)](28-a-19---characteristicspace-dynamics-hook.md) (406 lines) — Type: Kernel characteristic-space and dynamics-typing pattern
+- [A.19.ECS - Evaluation CharacteristicSpace Construction](29-a-19-ecs---evaluation-characteristicspace-construction.md) (252 lines) — Normativity: Normative
+- [A.19.SPR - State-Family Precision Restoration](30-a-19-spr---state-family-precision-restoration.md) (255 lines) — Type: State-family precision-restoration pattern
+- [A.19.SOURCE-SET-SPACE-SUBSTRATE - Source-Set and Search/Outcome-Space Substrate](31-a-19-source-set-space-substrate---source-set-and-search-outc.md) (537 lines) — Type: Architectural (A)
+- [A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW - Declared-Substrate Interpretive View](32-a-19-declared-substrate-interpretive-view---declared-substra.md) (495 lines) — Type: Architectural (A)
+- [A.19.CN - CN‑frame (comparability & normalization)](33-a-19-cn---cn-frame.md) (390 lines) — Scope. This CN‑frame Algebra & Normalization Discipline extends A.19 by fixing the governance Standard for CN‑frames, defining a conformance checklist and regression harness, and providing didactic...
+- [A.19.CHR - CHRMechanismSuite](34-a-19-chr---chrmechanismsuite.md) (683 lines) — Type: Architectural (A)
+- [A.19.UNM - Unified Normalization Mechanism (UNM)](35-a-19-unm---unified-normalization-mechanism.md) (417 lines) — Type: Architectural (A)
+- [A.19.UINDM - Unified Indicatorization Mechanism (UINDM)](36-a-19-uindm---unified-indicatorization-mechanism.md) (288 lines) — Type: Architectural (A)
+- [A.19.USCM - Unified Scoring Mechanism, USCM](37-a-19-uscm---unified-scoring-mechanism-uscm.md) (329 lines) — Type: Architectural (A)
+- [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](38-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (296 lines) — Type: Architectural (A)
+- [A.19.CPM - Unified Comparison Mechanism (CPM)](39-a-19-cpm---unified-comparison-mechanism.md) (379 lines) — Type: Architectural (A)
+- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](40-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (421 lines) — Type: Architectural (A)
+- [A.20 - Constraint Validity for Transformation Steps](41-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
+- [A.21 - Gate Decisions from Independent Check Results](42-a-21---gate-decisions-from-independent-check-results.md) (294 lines) — Type: Architectural (A)
+- [A.22 - Structure and Structural Views (STRUCT-CAL)](43-a-22---structure-and-structural-views.md) (479 lines) — Type: Architectural pattern
+- [A.22.CGUS - Constraint-Governed Unfolding Structure](44-a-22-cgus---constraint-governed-unfolding-structure.md) (332 lines) — Type: A.22 specialization of U.Structure

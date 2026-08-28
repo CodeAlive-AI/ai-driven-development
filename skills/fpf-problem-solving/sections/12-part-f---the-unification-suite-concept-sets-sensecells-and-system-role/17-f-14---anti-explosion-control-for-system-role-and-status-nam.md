@@ -27,7 +27,7 @@
 
 **What this buys.** A smaller vocabulary with stronger type separation and a short stopping path: no durable name, an existing designation, an alias, or a local expression whenever one suffices; only then the smallest justified durable naming object.
 
-**Not this pattern when.** Use F.8 to make the final naming disposition for one candidate expression only after its governed value or relation, exact kind, direct pattern, and proposed use have been recovered; F.14 supplies the preceding anti-explosion stop rather than a second decision record. Assignment and performed-Work claims go to A.2.1, F.6, and A.15.1. Status, evidence, authorization, publication, and other relation claims require exact predicates in their direct patterns. Add a reader-facing F.17 row only after kind recovery, the F.14 stop, any needed F.8 or F.18 naming decision, and satisfaction of the public-row threshold; treat publication availability as a separate E.24.PUB question.
+**Not this pattern when.** Use F.8 to make the final naming disposition for one candidate expression only after its governed value or relation, exact kind, direct pattern, and proposed use have been recovered; F.14 supplies the preceding anti-explosion stop rather than a second decision record. Assignment claims go to A.2.1. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the dated occurrence; F.6 is added only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. Status, evidence, authorization, publication, and other relation claims require exact predicates in their direct patterns. Add a reader-facing F.17 row only after kind recovery, the F.14 stop, any needed F.8 or F.18 naming decision, and satisfaction of the public-row threshold; treat publication availability as a separate E.24.PUB question.
 
 **Recognition versus assurance.** Recognition is the visible name-growth pressure plus the first kind-and-use recovery. Assurance is the optional record, invariants, worked countercases, and conformance tests. Neither turns F.14 into naming authority or ontology.
 
@@ -63,7 +63,7 @@ Use this sequence before minting a durable name or any supporting naming object:
 2. **Name one proposed use and its interpretation basis.** State what the reader will do with the expression and the effective naming `U.ReferenceScheme`. An independently selected `BoundedModelUseStructure` appears only when that organization changes this exact naming use; it is never a generic locality field.
 3. **Try the light dispositions in order.** Prefer no durable name, an existing designation, a recorded alias, a local expression, an existing direct-pattern name, or an existing public row. Stop as soon as the proposed use works without hiding a governed distinction.
 4. **Create only the next object that pays for itself.** A local `SchemeSenseCell` is useful only when the exact local sense needs a stable address; a NameCard only when the naming settlement itself must endure; an F.17 row only for public, Core-facing, durable, or cross-local reuse; E.24.PUB only when the selected row edition must actually be made available. None implies the next.
-5. **Use exact relations instead of fused names.** Bundles and incompatibilities among system-role kinds remain A.2.7 relations; assignment and Work claims remain A.2.1, F.6, and A.15.1; status families and windows remain F.10; qualifiers remain with their direct patterns.
+5. **Use exact relations instead of fused names.** Bundles and incompatibilities among system-role kinds remain A.2.7 relations; assignment claims remain A.2.1. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the dated occurrence; F.6 follows only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. Status families and windows remain F.10; qualifiers remain with their direct patterns.
 6. **Treat cross-local wording as a relation question only when one is current.** Resolve the exact local senses first. Same spelling proves nothing; different local-sense projections only open F.9. Cite a Bridge only when its predicate obtains, then state the proposed use and reliance separately. A Bridge does not merge governed values or require a public row.
 
 The result is the smallest naming disposition that preserves the exact governed value and supports the named use. It is not a claim that any value, relation, assignment, Work, evidence, status, authority, or publication exists.
@@ -119,7 +119,7 @@ The record describes the control result. It creates no governed value, naming de
 | Candidate shape | Likely recovery | Direct pattern |
 | --- | --- | --- |
 | `ReviewerSystemRole`, `OperatorSystemRole` | exact local system-role kind or its separate `SystemRoleKindDescription` episteme | A.2, F.4, F.5, F.18 |
-| `AliceAsReviewer` | ordinary wording for a candidate classification, system-role assignment, or performed-Work attribution | A.2 with C.3, A.2.1, F.6, A.15.1 |
+| `AliceAsReviewer` | ordinary wording for a candidate classification, system-role assignment, or precise performed-Work attribution | A.2 with C.3 for classification; A.2.1 for assignment; A.13 then independent A.15.1 for performer and Work; F.6 only for an expressly consumed precise assignment-bound attribution |
 | `SeniorReviewer` | a proposed system-role-kind name that may hide a qualifier, assignment-state condition, capability, or assurance claim | A.2, A.2.2, A.2.5, B.3, F.18 |
 | `RequestApproverSystemRole` | system-role-kind bundle expression or forbidden fused kind | A.2.7, F.8 |
 | `AtRisk`, `Grace`, `PreValidated` | status value, window, confidence, or presentation label | F.10 or direct status pattern |
@@ -218,7 +218,7 @@ Result after that premise:
 
 * Reuse the admitted `OperatorSystemRole` kind.
 * `night`, `remote`, and `on-call` are qualifiers in the proposed wording. Recover the claim each qualifies—for example, a schedule, location relation, `SystemRoleAssignmentStatePredicate`, WorkPlan, or policy condition—and use the pattern that defines, constrains, or tests that claim.
-* A new system-role kind is blocked unless A.2 with C.3 independently admits a distinct local kind from its bounded work-facing contribution identity and a non-circular `KindSignature`. Its criterion may use, for example, a capability, Work, or an assignment established separately, but assignment conditions, a Method, and Work implications are not universal requirements. The naming ReferenceScheme does not create the kind or its difference.
+* A new system-role kind is blocked unless A.2 with C.3 independently recovers a distinct local kind through its `U.System` candidate domain, operative work-facing membership condition, useful member/non-member boundary, and continuity rule. Its criterion may use, for example, a capability, Work, or an assignment established separately, but assignment conditions, a Method, and Work implications are not universal requirements. A practice, source, suffix, or naming ReferenceScheme does not create the kind or its difference.
 
 #### F.14:10.3 - SLO compliance labels
 
@@ -255,7 +255,7 @@ Result:
 * Ordinary prose may remain `robotics engineer and musician` or `engineer-musician` when the sentence is clear and no FPF claim relies on either noun as an exact classification. Create no Tech kind merely to explain the phrase, and do not require a `SystemRole` suffix in ordinary prose.
 * If the sentence supports a load-bearing FPF claim, apply E.10.ROLE and recover only the supported branch: for example, a local system-role kind and classification, an assignment occurrence, a capability, a participation or contribution relation, a Method or Work claim, or a finding that no pattern yet defines the needed claim. Do not infer two kinds from the two nouns.
 * Any claim about an engineering or music-teaching Method, robot-training Work, or performed music Work stays under its direct pattern and remains separate from the ordinary phrase. Such a claim does not by itself justify a system-role-kind name.
-* A durable qualified system-role-kind name becomes a candidate only after A.2 with C.3 independently admits that exact local kind and its bounded contribution identity. Differences in, for example, assignment conditions, capability expectations, incompatibilities, or Method or Work implications matter only when the `KindSignature` or named use actually consumes them. A readable suffix does not perform that admission.
+* A durable qualified system-role-kind name becomes a candidate only after A.2 with C.3 independently admits that exact local kind through its candidate domain, operative work-facing membership condition, member/non-member boundary, and continuity rule. Differences in, for example, assignment conditions, capability expectations, incompatibilities, or Method or Work implications matter only when the `KindSignature` or named use actually consumes them. A readable suffix does not perform that admission.
 
 ### F.14:11 - Anti-patterns and repairs
 
@@ -293,7 +293,7 @@ Reopen only the affected naming use when candidate expressions grow faster than 
 
 ### F.14:14 - Relations
 
-* **A.2, A.2.1, A.2.5, A.2.7, F.6, and A.15.1** define or constrain system-role kinds, assignments, assignment-state predicates and direct state relations, relations among system-role kinds, Work attribution, and Work. F.14 only blocks names that hide them.
+* **A.2, A.2.1, A.2.5, and A.2.7** define or constrain system-role kinds, assignments, assignment-state predicates and direct state relations, and relations among system-role kinds. For precise performed Work, **A.13** first recovers each exact actual performer and **A.15.1** independently admits the dated occurrence; **F.6** defines only the later assignment-bound attribution when that relation is expressly consumed. F.14 only blocks names that hide these distinctions.
 * Use **F.8** to make one candidate's smallest mint-or-reuse disposition after the F.14 stop test.
 * **F.9** defines only an actual relation between exact local senses. Shared spelling and cell presence establish none.
 * **F.17** defines the public term-row form and its entry threshold; **F.18** defines the durable naming-settlement NameCard form; neither defines the governed value.

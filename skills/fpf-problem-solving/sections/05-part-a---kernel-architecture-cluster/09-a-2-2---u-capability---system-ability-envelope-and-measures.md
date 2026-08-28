@@ -175,7 +175,7 @@ The checks are separate:
 - one exact `U.Method` supplies the method-side condition, while an independently admitted `U.MethodDescription` or work-admission episteme may state the capability threshold used by the check;
 - capability names the holder system's ability within the envelope, measure set, and window;
 - capability-fit condition tests whether that instance meets the current threshold or gate need;
-- after execution, A.15.1 identifies the dated Work occurrence, F.6 `performedUnderAssignment(W, RA)` attributes it to the exact assignment whose holder system actually performed it, and actual `enactsMethod(W, M)` relates the Work to the exact Method.
+- after execution, A.13 first recovers the exact actual performer and A.15.1 independently admits the dated Work occurrence; F.6 `performedUnderAssignment(W, RA)` is added only when this capability account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment, while actual `enactsMethod(W, M)` separately relates the Work to the exact Method;
 
 Do not put the threshold into the local system-role-kind name. Do not treat a system-role classification or assignment as proof of ability or action. Do not let a local kind, assignment, capability instance, Method, or MethodDescription perform the Work. Do not treat a fit predicate, Q-Bundle, architecture-characteristic row, evidence relation, or currentness assessment as the capability instance. An algorithm-possession phrase is only a dispatch cue; it establishes neither dated performance nor `U.MethodDescription` membership.
 
@@ -207,7 +207,7 @@ If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind
 
 Dispatch the phrase by claim: use A.2.2 only for the bounded ability; A.3.1 for the Method; a deployed-software or possession relation when that is the claim; and A.3.2 for candidate episteme `TurbineInspectionProcedure-v3` only after its `EntityOfConcern` resolves to that Method and one substantive claim says how it is done.
 
-Assignment and capability still do not prove execution. If `InspectionWork-17` actually occurs, admitted System `Robot-7` performs it under `InspectionAssignment-17` through F.6 `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)`; the Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`. `InspectorSystemRole`, the assignment, capability instance, possession phrase, Method, and `TurbineInspectionProcedure-v3` do not act or perform the inspection.
+Assignment and capability still do not prove execution. If `InspectionWork-17` actually occurs, A.13 first recovers `Robot-7` as the exact actual performer through obtaining `InspectionAssignment-17`, and A.15.1 independently admits the Work. Because this example expressly states assignment-bound attribution, F.6 afterward establishes `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)` through that same assignment; F.6 identifies neither assignment nor performer, and failed attribution leaves the Work intact. The Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`. `InspectorSystemRole`, the assignment, capability instance, possession phrase, Method, and `TurbineInspectionProcedure-v3` do not act or perform the inspection.
 
 #### A.2.2:6.2 - Software Service as Deployed System
 

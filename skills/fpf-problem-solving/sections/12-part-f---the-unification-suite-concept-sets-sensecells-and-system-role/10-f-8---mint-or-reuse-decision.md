@@ -32,7 +32,7 @@ Typical triggers include:
 
 - For one-off wording repair, use the applicable wording rule—E.10, E.10.ARCH, or A.6.P—or the subject pattern.
 - If the governed subject or relation is not yet known, recover it first. For an unsettled U-kind proposal, use E.24.CD when the object is unclear and E.24.UK for admission.
-- To constitute a `SystemRoleKindDescription`, use F.4. To assign a system or attribute Work, use A.2.1, F.6, and A.15.1.
+- To constitute a `SystemRoleKindDescription`, use F.4. To assign a system, use A.2.1. For precise performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated occurrence; add F.6 only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment.
 - For an obtaining relation between different local-sense projections, use F.9. Use F.17 when a public, Core-facing, durable, or cross-local row is needed.
 - For a status, evidence use, policy, Method, Work, publication, or any other governed subject, use its subject pattern before naming it.
 - After F.8 has selected a name family, use F.5 for its naming discipline and F.18 only for a durable naming settlement.
@@ -119,7 +119,7 @@ Use this order and stop at the first disposition that supports the proposed use 
 4. **Apply F.14 and try a local phrase.** If ordinary local wording supports the use, choose `localPhraseOnly` and stop.
 5. **Try an existing designation.** Reuse it only when the value, kind, scope, occurrence identity, local sense, and proposed use match.
 6. **Try an alias.** Use `aliasOnly` when the governed meaning is unchanged and lineage can expose the wording variation. An alias may not change kind, scope, occurrence identity, use, or authority.
-7. **Try the subject's existing name.** Use the name supplied for the governed subject. A.2 and C.3 govern a local system-role kind and F.5 governs its designation; use F.18 only for a durable settlement and F.4 only for a separately needed `SystemRoleKindDescription`. A.2.1, F.6, and A.15.1 continue to govern assignment and performed Work.
+7. **Try the subject's existing name.** Use the name supplied for the governed subject. A.2 and C.3 govern a local system-role kind and F.5 governs its designation; use F.18 only for a durable settlement and F.4 only for a separately needed `SystemRoleKindDescription`. A.2.1 continues to govern any assignment. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the occurrence; F.6 follows only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment.
 8. **Try one admitted F.17 row.** Reuse only the row's declared `AdmissibleUse`. Local-sense reuse does not imply cross-local sameness; a row and equal spelling create no F.9 Bridge.
 9. **Open only the next naming object that pays for itself.** A stable local address may justify a cell; an enduring naming settlement may justify a NameCard; a public/Core/durable/cross-local need may justify an F.17 row. None implies the next object.
 10. **Introduce a policy identifier only for a recovered policy specification.** A local identifier can stop with that specification and its scope. If the mint history is cited, replayed, normative, cross-local, or accountable, recover its decision or choice occurrence through the subject pattern; otherwise return `missing-governor` for that stronger history claim. Keep any C.11 result, decision-making Work, result episteme, and record separate.
@@ -149,7 +149,7 @@ After A.2 and C.3 have recovered `K`, apply the naming ladder. Keep a one-off ex
 | `EvidenceRole` | An episteme used as evidence | Use the evidence-use pattern; only then consider a name for the governed relation |
 | `AccessRole` | Permission or policy grouping | Use access, policy, status, or deontic pattern; do not mint a local system-role kind by suffix |
 | `ProviderRole` in a signature | Relation position | Use `A.6.5` SlotSpec discipline; name a slot only if needed |
-| `RoleEnactment` in source prose | Source wording around a `U.SystemRoleAssignment` plus a Work occurrence | Use `F.6`; do not mint `U.RoleEnactment` |
+| `RoleEnactment` in source prose | Source wording around a `U.SystemRoleAssignment` plus a Work occurrence | Recover the exact actual performer through A.13 and let A.15.1 independently admit the Work; use F.6 only when the naming case expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment, and do not mint `U.RoleEnactment` |
 
 #### F.8:4.4 - F.17 Row-Scope Consumption
 
@@ -235,7 +235,7 @@ Use these as reading checks, not as a required notation or record.
 | A local phrase or existing designation is sufficient. | Stay local or reuse it; create no cell, NameCard, row, or identifier. |
 | An alias is proposed. | Preserve the governed kind, scope, occurrence identity, admitted use, and lineage to the selected designation. |
 | The same spelling appears under another ReferenceScheme or local-sense claim. | Infer neither sameness nor an F.9 Bridge. Use a Bridge only when its predicate obtains between the relevant F.17 cells. |
-| `L` is proposed for a local system-role kind `K`. | A.2 and C.3 govern `K`; F.5 governs `L`; F.18 opens only for a durable settlement. F.4 is used only for a separately needed description `D`, while A.2.1 governs any assignment `A` and A.15.1 with F.6 governs performed Work. |
+| `L` is proposed for a local system-role kind `K`. | A.2 and C.3 govern `K`; F.5 governs `L`; F.18 opens only for a durable settlement. F.4 is used only for a separately needed description `D`, while A.2.1 governs any assignment `A`. For precise performed Work, A.13 first recovers the exact actual performer and A.15.1 independently admits the Work; F.6 is added only when this naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. |
 | A role-like expression is actually about another governed use—for example, evidence, status, policy, source, publication, or a relation position. | Recover that subject through its pattern before selecting a durable designation. |
 | An F.17 row is proposed for reuse. | Reuse it only for its `AdmissibleUse`; the row supplies neither equivalence nor a wider use. |
 | A receiving claim needs the decision occurrence itself. | Use §4.5. Recover the decision or choice pattern, predicate, participants, applicability, and identity basis. If no such governor is available, return `missing-governor`; keep any C.11 result and decision-making Work separate. |
@@ -284,7 +284,7 @@ The `ReviewerRole` case closes with one readable result. The recovered kind is a
 
 > Under `PatternReviewReferenceScheme-2026`, use `ReviewerRole` as the Plain designation of `ReviewerSystemRole` for local review-method prose. No existing designation or alias supports that use, so select `openDurableNamingSettlement`: A.2 and C.3 continue to govern the kind, F.5 governs its designation, and F.18 supplies the durable settlement. This result creates no `SystemRoleKindDescription`, assignment, review Work, evidence use, or publication. Reopen it if the proposed use becomes evidential, status-bearing, access-related, source-facing, published, or cross-local.
 
-That sentence is the F.8 result. It needs no decision occurrence or result episteme. If a later claim must cite, replay, or assign accountability to the decision, use §4.5. No naming-decision governor is available in this case, so that branch returns `missing-governor` rather than inventing `ReviewerSystemRoleNamingDecision-2026-07-31`. C.11 applies only to a genuine local choice among available options; decision-making Work remains under A.15.1 and F.6.
+That sentence is the F.8 result. It needs no decision occurrence or result episteme. If a later claim must cite, replay, or assign accountability to the decision, use §4.5. No naming-decision governor is available in this case, so that branch returns `missing-governor` rather than inventing `ReviewerSystemRoleNamingDecision-2026-07-31`. C.11 applies only to a genuine local choice among available options. For any precise decision-making Work, A.13 first recovers the exact actual performer and A.15.1 independently admits the dated Work; F.6 follows only when the later claim expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment.
 
 `EvidenceRole` stops earlier and does not enter F.8. The known subject is `ReviewReport-82 : U.Episteme`, proposed for evidence use concerning an adequacy claim. Still missing are the target claim and polarity, the evidence-use relation and relation kind, the provenance and any assurance or reliance use and validity window, and one subject pattern that defines the relation. Apply that pattern and keep the wording local until those facts are recovered. `PatternReviewReferenceScheme-2026` may interpret the source wording, but the review label creates no evidence relation, system-role kind, description, assignment, authority, or publication. No `SchemeSenseCell`, `LocalSenseBasisRelation`, or selected Structure is needed merely to record this stop.
 
@@ -335,7 +335,7 @@ Rules:
 | `CC-F8-04` | Local phrase, existing designation, alias, subject-pattern name, and admitted F.17 row were tried before a stronger naming object. |
 | `CC-F8-05` | Reuse preserves kind, scope, occurrence identity, local-sense claim, admitted use, authority, and lineage. |
 | `CC-F8-06` | A system-role-kind designation follows A.2 and C.3 recovery of the kind and does not require an F.4 description. If the description is separately needed, its label remains distinct from the kind designation. |
-| `CC-F8-07` | Classification, assignment, and performed Work remain under C.3, A.2.1, F.6, and A.15.1 rather than being inferred from a name. |
+| `CC-F8-07` | Classification and assignment remain under C.3 and A.2.1. Any precise performed Work begins with the exact actual performer recovered through A.13 and independent A.15.1 admission; F.6 appears only for an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment. None is inferred from a name. |
 | `CC-F8-08` | Any other governed subject—for example, a status, evidence use, access value, policy, publication use, or relation position—returns to its subject pattern before naming. |
 | `CC-F8-09` | F.17 row reuse stays within `AdmissibleUse`; spelling or local-sense reuse implies neither an F.9 Bridge nor equivalence. |
 | `CC-F8-10` | Ordinary use creates no decision object. The accountable branch resolves the decision or choice occurrence through the pattern that admits it or returns `missing-governor`, while any C.11 result, Work, result episteme, record, and naming object stays separate. |
@@ -380,7 +380,7 @@ Costs:
 **Refresh by meaning, not by neighbour edition.**
 
 - If F.14, F.5, F.17, or F.18 changes the lightest-sufficient naming ladder, row-entry threshold, `AdmissibleUse`, or escalation to a stronger naming object, revisit §§0 and 4.1–4.4, case 7.2, checks 03–09, and the compact corpus entry.
-- If A.2, C.3, F.4, A.2.1, F.6, or A.15.1 changes how a local system-role kind is recovered, how `L`, `K`, `D`, and `A` relate, or where assignment and performed Work begin, revisit the corresponding target rows, step 7, §4.3, cases 7.1, 7.3, and 7.6, invariant 4, and checks 06–08.
+- If A.2, C.3, F.4, A.2.1, A.13, A.15.1, or F.6 changes how a local system-role kind is recovered, how `L`, `K`, `D`, and `A` relate, how an exact actual performer and Work are admitted, or when precise assignment-bound attribution enters, revisit the corresponding target rows, step 7, §4.3, cases 7.1, 7.3, and 7.6, invariant 4, and checks 06–08.
 - If A.6.RCD, C.11, C.2.1, or A.15.1 changes how a decision or choice occurrence, result, result episteme, decision-making Work, or missing governor is established, revisit §4.5, the accountable stop in 7.6, invariant 6, and check 10.
 - If E.24.CD, E.24.UK, A.8, or A.11 changes object recovery, admission dispositions, or the admission-before-naming order, revisit the entry and non-use boundary, the pre-admission target and step 11, case 7.5, invariant 8, and check 12.
 - If the policy subject pattern, E.9, A.6.RCD, C.11, or C.2.1 changes the policy specification–identifier distinction or the support required for mint history, revisit the policy target, step 10, case 7.4, §8.1, invariant 9, and checks 10 and 13.
@@ -412,7 +412,7 @@ The accountable branch follows the same rule. A decision occurrence, C.2.1 resul
 **Internal FPF basis, not external SoTA.**
 
 - F.14, F.5, F.17, and F.18 supply the local-phrase, designation, alias, row-use, and durable-naming ladder.
-- A.2, C.3, F.4, A.2.1, F.6, and A.15.1 keep designation `L`, local system-role kind `K`, optional description `D`, assignment `A`, and performed Work distinct.
+- A.2, C.3, and F.4 keep designation `L`, local system-role kind `K`, and optional description `D` distinct; A.2.1 governs assignment `A`. For precise performed Work, A.13 recovers each exact actual performer and A.15.1 independently admits the dated occurrence; F.6 is a later separate relation only when precise assignment-bound attribution is expressly consumed.
 - E.24.CD, E.24.UK, A.8, and A.11 recover an unclear object and decide kind admission before F.8 names the result.
 - A.6.RCD, C.11, C.2.1, and E.9 govern any accountable decision occurrence, separate result, result episteme, and policy-history record.
 - F.1–F.3 and F.9 govern local-sense discovery and an obtaining Bridge; A.1.1 and A.22 govern any selected bounded-model-use Structure. F.8 cites those objects only when the naming use needs them.

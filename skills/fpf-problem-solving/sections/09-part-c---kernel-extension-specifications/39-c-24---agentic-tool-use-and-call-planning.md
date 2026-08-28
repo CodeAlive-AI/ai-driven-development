@@ -100,7 +100,7 @@ If the A.15.7 decision changes, is withdrawn, or no longer fixes the action, reo
 
 Tool-using Systems may plan across web services, local programs, instruments, robots, or human-operated routes. The implementation may be an LLM agent, a search system, a conventional planner, or a fixed program. The planning problem is the same: turn a fixed action or option into an ordered and bounded route without hiding route grounding, budget, or stop logic.
 
-A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as performed Work, the admitted System, dated Work, Method, interval, and applicable attribution facts remain recoverable through `A.15.1`, `A.2.1`, and `F.6`.
+A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as precise performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work from its performer, Method, interval, and containment facts. Add the exact A.2.1 assignment reference and F.6 only when the plan or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact.
 
 ### C.24:2 - Problem
 

@@ -14,6 +14,8 @@
 
 **Ordinary route.** Name the exact WorkPlan, PlanItem, intended performance, any current intended-work kind, criterion, and evaluation time. Perform and identify the checking Work when the check actually occurs; apply the criterion only to its named current inputs; return `ready`, `readyWithKnownGaps`, `notReady`, or `unknown` with the reliance window and stop or recheck condition. Stop there unless a separate receiver actually needs a persisted result episteme, gate decision, permission result, performed target Work, provenance path, or assurance claim.
 
+When degraded support, handoff, or continuation-state evidence can change work entry, use the present-WorkPlan branch of `A.15.8` to test the proposed performer, support, and state configuration, then return here with its bounded result. Ordinary full-kit checking does not require `A.15.8`.
+
 **What this buys.** A team can decide the next bounded move—start no work yet, prepare an exact missing input, recheck, or submit declared checks to a gate—without turning a plan, green label, commitment, reservation, permission fact, or preparation activity into target Work or into one all-purpose readiness object.
 
 **Not this pattern when.** Use `A.15.2` for the work plan itself, `A.15.3` for planned slot fillers, `A.15.1` for dated performed work, `A.21` for gate decisions, `A.15.4` only when a reliance appearance is already being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named, `B.1.6` for resource aggregation after work, `E.18` for transformation-flow structure, and `E.18.1` for P2W carry-through from accepted problem-side material.
@@ -92,7 +94,7 @@ For each input, name the subject pattern, exact proposition or relation occurren
 
 Full-kit preparation can include gathering information, coordinating intended performer Systems and local system-role-kind conditions, producing a missing source `U.Episteme` or source publication, reserving a resource, pinning a planned filling, or creating shared understanding. Those activities are `U.Work` only when actually performed. The plan can state them before occurrence; the readiness claim may cite them after occurrence; neither object becomes the other.
 
-For every cited preparation or readiness-checking Work occurrence, establish its complete A.15.1/F.6 basis once: the exact dated `U.Work`, each admitted performer `U.System`, the exact obtaining assignment and attribution under which that system performed it for the covered extent, at least one actual `enactsMethod` relation, temporal extent, and at least one obtaining locally declared containing-system relation. Name another enacted Method, boundary, direct participant relation, or A.6.1 binding only when the readiness claim uses it. The system performs the work; an assignment, plan, method description, checklist, criterion, readiness result, evidence path, or dashboard does not. A planned preparation task remains A.15.2 content until those occurrence facts obtain.
+For every cited preparation or readiness-checking Work occurrence, first recover each actual performer's A.13 core for the action and independently admit the exact dated `U.Work` under A.15.1 from its performance history, at least one actual `enactsMethod` relation, temporal extent, and at least one obtaining locally declared containing-system relation. Only when the readiness claim also needs precise assignment-bound attribution, establish F.6 afterward through the same obtaining A.13 assignment and keep its declared species, participants, holder, coverage, and exact Work-assignment link recoverable. Name another enacted Method, boundary, direct participant relation, or A.6.1 binding only when the readiness claim uses it. The system performs the work; an assignment, plan, method description, checklist, criterion, readiness result, evidence path, or dashboard does not. A planned preparation task remains A.15.2 content until the occurrence facts obtain.
 
 **Boundary with planned fillers and appearance-based reliance.** A missing planned value stays with A.15.3 as a planned-filling baseline or with the subject pattern when an evidence, currentness, publication, gate, permission, or assurance relation is already known. Use A.15.4 only when a reliance appearance, such as a dashboard label, copied approval, publication face, or credential view, is being used as the reason to treat the readiness or work-reliance claim as carried before that subject pattern relation has been recovered.
 
@@ -136,7 +138,7 @@ The C.2.1 episteme `FixtureTestEntryReadinessResult-E1`, whose exact EntityOfCon
 
 Situation: an assisting agent can run a reversible documentation probe to find source-currentness gaps.
 
-For the probe itself, apply one exact readiness criterion to its WorkPlan, using the designated declaration-local PlanItem content that the criterion needs, and return the local readiness value with its relied-on inputs, window, and recheck condition. If the probe is actually run, identify that dated occurrence as `U.Work` under `A.15.1`, with its performer System, an obtaining occurrence of an exact directly declared `U.SystemRoleAssignment` species, F.6 attribution, enacted Method, extent, and actual bindings; then run a separate readiness check for the target repair. The probe plan, probe readiness result, performed probe, and target-repair readiness result are four distinct claims.
+For the probe itself, apply one exact readiness criterion to its WorkPlan, using the designated declaration-local PlanItem content that the criterion needs, and return the local readiness value with its relied-on inputs, window, and recheck condition. If the probe is actually run, first recover the precise performer System's A.13 core for that action and independently admit the dated occurrence as `U.Work` under A.15.1 from its performance history, enacted Method, extent, and containing-System relation. Add F.6 afterward only when the target repair-readiness account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; otherwise leave F.6 unopened. Then run a separate readiness check for the target repair. The probe plan, probe readiness result, performed probe, and target-repair readiness result are four distinct claims.
 
 #### A.15.5:5.3 - Release screen with separate readiness, gate, and permission windows
 
@@ -182,7 +184,7 @@ If a dashboard shows green but the exact readiness result or its reliance window
 Benefits:
 
 - Teams can inspect work-entry readiness without flattening plan, preparation, gate, resource, and performed-work claims.
-- TameFlow full-kitting contributes useful criteria without importing TameFlow `MOVE` as an FPF kind.
+- The adapted pre-entry Full-Kitting distinctions supply a recognition palette for a local readiness criterion; neither TameFlow nor its source vocabulary governs FPF readiness.
 - Gate and work evidence remain auditable because readiness only cites them when they are current.
 
 Costs:
@@ -198,11 +200,13 @@ The local result is deliberately dependent on exact inputs defined in their subj
 
 ### A.15.5:11 - SoTA-Echoing
 
-| Source family | Use in this pattern | Local adoption |
+| Source family | Currentness and bounded source use | Local adoption |
 | --- | --- | --- |
-| TameFlow `MOVE` and Full-Kitting material | Supplies minimal outcome-value effort, target scope, commitment, WIP pressure, and pre-entry full-kit criteria. | Adopt the useful distinctions as inputs to an FPF-local readiness criterion and result; keep WorkPlan, PlanItem, gate, preparation Work, resource, assignment, permission, and performed-work claims under their subject patterns. |
-| Current A.15 work-family settlement | Separates intended work, planned baseline, and dated performed work. | Reuse the split directly; readiness cites but does not replace those values. |
-| Current A.21 gate-publication discipline | Separates readiness-looking displays from gate decisions. | Readiness may feed a gate, but gate passage belongs to A.21. |
+| Steve Tendon, [*The Book of TameFlow: Theory of Constraints Applied to Knowledge-Work Management*](https://leanpub.com/tameflow), current Leanpub edition accessed 2026-08-27 | Adapt only the pre-entry Full-Kitting distinctions used to recognize minimum outcome or value, target scope, commitment, WIP pressure, and preparation inputs. Reject source `MOVE` or Full-Kitting as an FPF kind or universal readiness ontology; the source remains scoped to knowledge-work management. | Use the adapted distinctions only as inputs to an FPF-local readiness criterion and result; keep WorkPlan, PlanItem, gate, preparation Work, resource, assignment, permission, and performed-Work claims under their subject patterns. |
+| Current A.15 work-family settlement | Current internal governing basis for intended work, planned baseline, dated performed Work, and readiness boundaries. | Reuse the split directly; readiness cites but does not replace those values. |
+| Current A.21 gate-publication discipline | Current internal governing basis for gate decisions and their publication. | Readiness may feed a gate, but gate passage belongs to A.21. |
+
+Correct a factual citation or publication-status label in its row without reopening the readiness action when the used distinction and limit are unchanged. Reopen only the TameFlow row and its Full-Kitting-dependent recognition and action passages in §§4.2 and 9 if a source-edition change alters a used distinction. Reopen the affected A.15.5 boundary if the current FPF A.15 or A.21 work/readiness settlement changes it. Another example, prestige change, or unused source-edition change does not reopen the whole pattern.
 
 ### A.15.5:12 - Relations
 

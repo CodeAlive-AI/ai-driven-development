@@ -52,7 +52,7 @@ Without an explicit configuration-relative comparison, practitioners make at lea
 Construct the smallest finite counterfactual comparison that can change one named decision.
 
 1. **Name the receiving decision.** State the deciding System, current `DecisionSubject`, decision deadline, current `OptionSet` or the option-set question that this comparison will inform, and which result could change the decision.
-2. **Freeze the current configuration.** Name the actual or currently relied-on configuration `S0`, system boundary, affected Systems, holder or beneficiary, relevant environment, and what is held fixed only for this comparison. A historical, empty, or ideal configuration is not the default baseline.
+2. **Freeze the current configuration.** Name the actual or currently relied-on configuration `S0`, system boundary, affected Systems, holder or beneficiary, relevant environment, and what is held fixed only for this comparison. If the affected-System coordinate is missing and could change the comparison, use `A.1.CSD` first; bring back only consequence claims compatible with this `S0`/`Δ`/`S1`, horizon, evidence window, and receiving decision. A historical, empty, or ideal configuration is not the default baseline.
 3. **Name the finite change.** State the addition, replacement, removal, intervention, or probe `Δ`, the realizable candidate configuration `S1`, admissibility conditions, implementation capability, transition Work, reversibility, and excluded variants.
 4. **Fix horizon and scenarios.** State the interval, relevant states or scenarios, timing assumptions, and any decision or evidence window. Do not combine results from incompatible horizons without an explicit mapping.
 5. **Declare result coordinates.** Name the result vector whose coordinates can change the decision and the protected coordinates that may not be silently scalarized. Include affected-System consequences and distributional differences when current.
@@ -141,7 +141,7 @@ A project is compared with the current portfolio and financing/operating configu
 
 1. Is one receiving decision named?
 2. Are `S0`, finite `Δ`, and realizable `S1` explicit?
-3. Are system boundary, affected Systems, horizon, scenarios, and evidence window compatible?
+3. Are system boundary, affected Systems, horizon, scenarios, and evidence window compatible—and, when a missing bearer could change the comparison, was `A.1.CSD` used before freezing this coordinate?
 4. Are result and resource coordinates explicit, with protected coordinates not silently scalarized?
 5. Are implementation capability, transition Work, reversibility, and excluded variants recoverable?
 6. Are constraints, interactions, overlap, thresholds, congestion, and downstream effects considered where material?
@@ -194,7 +194,7 @@ Refresh only the affected source-use row when a newer result changes one Solutio
 
 - **Builds on:** `C.2.1`, `A.10`, `A.19`, `C.16`, `C.27`, `C.28`, and `C.29`.
 - **Supplies:** one finite comparison claim to `C.11`; it can also supply an input to a field-specific portfolio, programme, intervention, architecture, or experiment decision.
-- **Coordinates with:** `C.18` when the candidate changes the possibility space, `C.19` for pool governance, `B.3` for assurance, A.15 for transition Work, and the direct field practice for calculation and validation.
+- **Coordinates with:** `A.1.CSD` when affected-System consequence coordinates are missing; `C.18` when the candidate changes the possibility space; `C.19` for pool governance; `B.3` for assurance; A.15 for transition Work; and the direct field practice for calculation and validation.
 - **Keeps outside:** universal marginal value, a new delta kind, domain formulas and thresholds, causal proof, assurance, permission, selected-set declaration, and `ChoiceResult`.
 
 ### C.11.CRC:End

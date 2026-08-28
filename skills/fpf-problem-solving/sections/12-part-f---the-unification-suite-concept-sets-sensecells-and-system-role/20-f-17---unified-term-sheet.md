@@ -295,7 +295,7 @@ An architecture pattern needs public names for `interfaceSlot`, `providedPort`, 
 
 #### F.17:12.4 - Misleading evidence-role row
 
-A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover any exact local system-role kind with `A.2`, a separately obtaining assignment with `A.2.1`, performed Work with `A.15.1`, and Work attribution with `F.6`. The UTS may record selected names for those distinct values; a generic evidence-role row that fuses them is not admitted.
+A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover the exact actual performer through A.13 and admit the Work independently through A.15.1. Add a local system-role kind with A.2, an obtaining assignment with A.2.1, and Work attribution with F.6 only when the sheet or receiving use expressly represents those separate claims. The UTS may record selected names for those distinct values; a generic evidence-role row that fuses them is not admitted.
 
 #### F.17:12.4a - Manufacturing batch across material and planning contexts
 
@@ -429,7 +429,7 @@ RowRationale: the governed value is the A.1.1 relation-kind token; its admitted 
 AdmissibleUse: Core-facing designation of the A.1.1 relation kind and its use in the E.24.UK bounded-model-use membership test
 BlockedUse: no use occurrence from availability, access, mention, assignment alone, Work alone, method application, assertion, publication, or structure membership
 RowEditionId: 2026-07-25
-CurrentnessCondition: reopen when A.1.1 changes the participant kinds, F.6 prerequisite, actual-use predicate, actor derivation, maximal-continuous-use identity, NameCard, or named Core use
+CurrentnessCondition: reopen when A.1.1 changes the participant kinds, the F.6 attribution condition for a row that expressly consumes it, actual-use predicate, actor derivation, maximal-continuous-use identity, NameCard, or named Core use
 
 SenseCell.ModelUseRelation.FPFCore.2026-07-25:
   ReferenceScheme: FPFCoreReferenceScheme

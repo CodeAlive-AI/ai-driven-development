@@ -265,13 +265,13 @@ No production or entity-inception claim is current because `Housing_42` already 
 
 **Disposition and stop.** Stop at disposition 1 under A.2.3. No new compound-law episteme, predicate definition, relation kind, or `RelationSignature` is needed. Use A.6.REL only if a later use must distinguish this fulfilment occurrence from another occurrence of the same admitted relation.
 
-#### A.6.RCD:5.2 - System-role assignment and performed Work: use A.2.1 and F.6 directly
+#### A.6.RCD:5.2 - System-role assignment and performed Work: recover A.13 and A.15.1 first, then use F.6 directly when attribution is current
 
 **Situation.** A work record needs the readable claim that one actual system performed one exact Work occurrence under one exact assignment to a system role.
 
-**Base and direct result.** Recover `RA`, one obtaining occurrence of a declared direct species under `U.SystemRoleAssignment`; recover its holder `S : U.System = RA.HolderSystemSlot`; and recover exact `W : U.Work`. Apply F.6 to the direct predicate `performedUnderAssignment(W, RA)` and verify that `S` is the actual performer of `W`. A C.2.1 episteme may assert that result for the receiving use. The system performs the Work; the assignment supplies the holder and assigned-kind projection but neither acts nor creates another participation relation.
+**Base and direct result.** Recover `S : U.System` as the exact actual performer through A.13 and let A.15.1 independently admit exact `W : U.Work`. When the work record expressly needs the under-assignment claim, reuse the same obtaining A.13 assignment `RA`, apply F.6 to the direct predicate `performedUnderAssignment(W, RA)`, and compare `RA.HolderSystemSlot` with the already recovered `S`. F.6 identifies neither assignment nor performer. A C.2.1 episteme may assert that result for the receiving use. The system performs the Work; the assignment supplies its holder and assigned-kind projection but neither acts nor creates another participation relation. If F.6 is missing or fails, retain the Work and remove only the under-assignment claim.
 
-**Positive case.** `RA` obtains and covers `W`, `RA.HolderSystemSlot = S`, and F.6's Work-attribution predicate holds for `W` and `RA`. The readable result is “S performed W under RA.” No generic enactment object is needed.
+**Positive case.** A.13 has already recovered `S` through the same obtaining `RA`, A.15.1 has independently admitted `W`, `RA` covers `W`, `RA.HolderSystemSlot = S`, and F.6's direct Work-attribution predicate holds for the exact pair. The readable result is “S performed W under RA.” No generic enactment object is needed.
 
 **Discriminating failure.** The assignment obtains, but another system performs the Work, or `S` performs Work outside the assignment's extent. Assignment plus nearby Work is insufficient; capability, responsibility, authority, and a result also remain separate claims.
 

@@ -347,7 +347,7 @@ CounterfactualSamplingRealizabilityResult:
 
 A `realizable` result cites the sampling construction that the decision Method accepts. A `bounded` result cites its bound. A `nonrealizable` result exposes the obstruction or failure witness. `unclear` names what remains unresolved. “Realized counterfactual sampling” never means observing incompatible outcomes for one unit in one realized world.
 
-If the team plans to draw samples, use a separate A.15.2 WorkPlan. If sampling occurs, cite the dated Work and A.15.1/F.6 attribution. If the samples are used as evidence, cite the resulting data through an A.10 evidence path. Actual sampling support requires both the dated Work and resulting data or evidence ref; neither `realizable` nor a WorkPlan can stand in for them. Identification from those data, when claimed, is another `CausalIdentificationResult`.
+If the team plans to draw samples, use a separate A.15.2 WorkPlan. If sampling occurs, recover every precise performer's A.13 core and independently admit the dated Work under A.15.1. Add F.6 only when the sampling claim also needs precise assignment-bound attribution. If the samples are used as evidence, cite the resulting data through an A.10 evidence path. Actual sampling support requires both the dated Work and resulting data or evidence ref; neither `realizable` nor a WorkPlan can stand in for them. Identification from those data, when claimed, is another `CausalIdentificationResult`.
 
 #### C.28:4.6 - Applied profiles
 
@@ -547,7 +547,7 @@ CausalUseEvidenceDesignRecord:
   unsupportedUseWithoutFurtherEvidence
 ```
 
-The three optional specialist refs are included only when an existing target-trial mapping, off-policy evaluation, or causal-variable representation result shows what additional evidence could change the support boundary. Before execution, cite a MethodDescription or WorkPlan only when used. After execution, cite dated Work and the applicable attribution results from A.15.1 and F.6. If performed counterfactual sampling is used as evidence, also cite the resulting sample or data through `evidencePathRefs`; Work without output data and data without its Work and provenance path each remain incomplete for that claim. Do not copy performer species, holder equalities, assignment participants, or occurrence mechanics into this record unless one of those facts changes causal validity, safety, authorization, or supported use.
+The three optional specialist refs are included only when an existing target-trial mapping, off-policy evaluation, or causal-variable representation result shows what additional evidence could change the support boundary. Before execution, cite a MethodDescription or WorkPlan only when used. After execution, cite every precise performer's A.13 core and the independent A.15.1 Work admission; cite F.6 only when precise assignment-bound attribution is also current. If performed counterfactual sampling is used as evidence, also cite the resulting sample or data through `evidencePathRefs`; Work without output data and data without its Work and provenance path each remain incomplete for that claim. Do not copy performer-kind, assignment, or occurrence mechanics into this record unless one of those facts changes causal validity, safety, authorization, or supported use.
 
 Additional evidence is worth planning only when it can change a material causal statement or downstream decision enough to justify cost, risk, and delay, or when safety or release rules independently require it.
 
@@ -676,8 +676,8 @@ Watch for causal prestige, simulation laundering, metric proxy substitution, gra
 7. The common threat screen routes every live ordinary threat or lowers the result; it is not a mandatory dossier.
 8. Non-causal simulator reporting and simulation-supported causal use take different routes at first entry.
 9. A sampling-realizability result cites its decision Method, any derivation used, and the construction, bound, or obstruction required by its status; it claims no Work or data.
-10. Performed counterfactual-sampling support cites dated Work, attribution, and resulting data or evidence; a WorkPlan or `realizable` label cannot satisfy this branch.
-11. Evidence design cites A.15.1/F.6 results instead of copying their assignment schema.
+10. Performed counterfactual-sampling support cites independently admitted dated Work and resulting data or evidence; it cites exact assignment-bound attribution only when the receiving support claim uses it. A WorkPlan or `realizable` label cannot satisfy this branch.
+11. Evidence design cites each precise performer's A.13 core and the independent A.15.1 Work result; it cites F.6 only when exact assignment-bound attribution is current, rather than copying assignment mechanics.
 12. Transport identifies every changed population/domain/environment/data-generating-regime endpoint separately from semantic schemes.
 13. A counterfactual-fairness escalation exposes its additional identification assumptions and, when an estimate is used, estimation consistency before D.5 consumes it.
 14. `CausalActionPolicyClass` has the same four members in definition, examples, and consumers; unresolved classification is not a member.
