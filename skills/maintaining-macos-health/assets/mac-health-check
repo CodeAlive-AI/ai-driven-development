@@ -51,6 +51,7 @@ CONFIG="${MAC_HEALTH_CONFIG:-$HOME/.config/mac-health/config.sh}"
 : "${CPU_INCIDENT_RETENTION_DAYS:=30}"
 : "${CPU_ACTIONS_ENABLED:=1}"
 : "${CPU_ACTION_HANDLER:=$HOME/bin/mac-health-action}"
+: "${DISK_RESPONSE_HANDLER:=$HOME/bin/mac-health-disk}"
 
 # Test hooks. Production config should leave these empty.
 : "${CPU_PS_FIXTURE:=}"
@@ -777,6 +778,11 @@ check_jetsam() {
 main() {
   log "=== run start (calibration=$IN_CALIBRATION, days=$DAYS_SINCE_INSTALL) ==="
   check_disk || log "ERROR check_disk: $?"
+  # Consent is checked inside the controller; an absent helper is normal for
+  # older installations. Slow work/UI belongs to independent worker processes.
+  if [ -x "$DISK_RESPONSE_HANDLER" ]; then
+    "$DISK_RESPONSE_HANDLER" tick || log "ERROR optional disk response; inspect controller status"
+  fi
   check_memory || log "ERROR check_memory: $?"
   check_cpu || log "ERROR check_cpu: $?"
   check_jetsam || log "ERROR check_jetsam: $?"

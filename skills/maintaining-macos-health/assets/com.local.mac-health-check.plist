@@ -36,6 +36,10 @@
     <key>RunAtLoad</key>
     <true/>
 
+    <!-- Opt-in workers and selection pages outlive the short monitor tick. -->
+    <key>AbandonProcessGroup</key>
+    <true/>
+
     <!-- LaunchAgent inherits no PATH from user shell; set explicitly -->
     <key>EnvironmentVariables</key>
     <dict>

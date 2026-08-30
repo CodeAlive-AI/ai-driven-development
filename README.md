@@ -104,7 +104,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
-| [maintaining-macos-health](skills/maintaining-macos-health/) | Disk cleanup + dev-machine optimisation + proactive health alerting. Triage flow for kernel panic / watchdog timeout / `vm-compressor-space-shortage` / Jetsam events. Tiered cleanup playbook (zero-risk → discuss-first), Mole-style safety guards, and a noise-resistant LaunchAgent alerter (3 CRITICAL-only triggers, hysteresis, calibration window). Apple Silicon focus |
+| [maintaining-macos-health](skills/maintaining-macos-health/) | Disk cleanup + dev-machine optimisation + proactive health alerting. Triage for kernel panic / watchdog timeout / `vm-compressor-space-shortage` / Jetsam events. Tiered cleanup, Mole safety guards, and a noise-resistant LaunchAgent alerter. Independent first-use opt-ins for bounded emergency package-cache cleanup (< 2%) and a Codex cleanup plan/page (<= 5%), with exact-session continuation and separate deletion confirmation. Both default off. Apple Silicon focus |
 | [maintaining-windows-health](skills/maintaining-windows-health/) | Windows 11 port of the macOS health skill. Triage flow for BSOD / Kernel-Power 41 / crash dumps / commit-memory pressure. Ten-tier cleanup playbook (Storage Sense → discuss-first) using native Microsoft tooling (cleanmgr / DISM / pnputil / vssadmin / wevtutil / powercfg), a drift-protected HTML cleanup UI with an NTFS-hardened apply validator, and a Task Scheduler + BurntToast alerter (interactive-session, hysteresis, calibration). Heavy AI/Docker/WSL focus |
 
 ### Niche utilities (2)

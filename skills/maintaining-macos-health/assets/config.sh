@@ -9,6 +9,13 @@ COOLDOWN_MINUTES=30         # min minutes between repeat alerts of same key
 HYSTERESIS_READINGS=3       # consecutive readings before alert (5min × 3 = 15min)
 CALIBRATION_DAYS=7          # initial silent period (logs only, no alerts)
 
+# Optional disk responses are independently authorized by `mac-health-disk
+# configure`, after the skill's first-use offer. They are OFF without explicit
+# consent in ~/.config/mac-health/disk-response-consent.json; installing or
+# changing this config does not grant consent. Fixed triggers: emergency <2%,
+# agent plan <=5% on /System/Volumes/Data. See references/optional-disk-responses.md.
+# DISK_RESPONSE_HANDLER="$HOME/bin/mac-health-disk"
+
 # CPU monitoring for a developer workstation. The LaunchAgent runs every
 # 5 minutes, so reading counts below also define the sustained duration.
 CPU_ENABLED=1
