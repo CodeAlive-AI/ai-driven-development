@@ -20,14 +20,21 @@ The ordinary examples show difficulties that one direct pattern use can usually 
 - **Start with:** `A.3.1.MR`.
 - **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1` or specialist `ME.18` only when that later use is current.
 
+### PROFESSIONAL-RESULT — Use one result from another practice without transferring the decision
+
+- **Situation:** A decision needs a legal, safety, tax, privacy, engineering, scientific, or other outside-practice result, but the available source or request names only a title, department, document, approval, provider, or tool.
+- **Question:** What smallest result can change this decision, and is an already-available result current and qualified for that exact use?
+- **First useful result or honest blocker:** A bounded decision to reuse the existing result, a request for the smallest missing result, or the exact source, Method, capability, authority, access, evidence, or applicability blocker.
+- **Start with:** `A.15.9`.
+- **Stop or return:** Stop before requesting new Work when the existing result is enough. The supplier keeps its Method and professional authority; the receiver keeps the receiving decision. A title, document, delivery, provider label, or tool output transfers neither.
+
 ### NAMING — Give one identified thing a usable name
 
-
-- **Situation:** One already identified thing or value needs a name that intended readers can understand without changing what it is.
-- **Question:** Which name is accurate, clear for this use, and distinct from misleading alternatives?
-- **First useful result or honest blocker:** One local `NameCard`, or the exact missing thing, use, reader group, scheme, sense, or candidate evidence.
-- **Start with:** `F.18`.
-- **Stop or return:** Stop when the name and local sense support the stated use. Return when the thing, use, readers, scheme, or likely misunderstanding changes.
+- **Situation:** One already identified thing needs understandable wording; later use may also require a stable, reusable name.
+- **Question:** Does ordinary wording suffice, or which durable name preserves the thing and avoids misleading alternatives?
+- **First useful result or honest blocker:** Sufficient ordinary wording; only when reuse needs a durable settlement, one local `NameCard`; otherwise the exact missing thing, use, reader group, scheme, sense, or candidate evidence.
+- **Start with:** `F.18` when the name must become durable. For one-off wording, keep the ordinary phrase and use the thing's direct pattern only if its meaning is unclear.
+- **Stop or return:** Stop without a card when ordinary wording answers the need; otherwise stop at the local naming settlement. Return when the thing, use, readers, scheme, or likely misunderstanding changes.
 
 ### SYSTEM-RECOGNITION — Test systemhood only when it changes the decision
 
@@ -69,7 +76,7 @@ The ordinary examples show difficulties that one direct pattern use can usually 
 - **Start with:** `C.29`.
 - **Stop or return:** Stop without the lens when no decision changes. Return when the mapped subject, preserved structure, calibration, evidence, rival, or use changes.
 
-When the direct pattern is already known, open it rather than forcing the question into an example: `E.11.PFP` for framework publication, `E.11.DSG` for a question spanning several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation. These are locators, not more selectable examples.
+When the direct pattern is already known, open it rather than forcing the question into an example: `E.11.PFP` for framework publication, `E.11.DSG` for the DPF Suite Reference when a question spans several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation. These are locators, not more selectable examples.
 
 ### Practical-Use Cards
 
@@ -115,12 +122,12 @@ The keys only help navigation. Compare cards by the situation and intended resul
 
 #### OPTION-COMPARISON — Keep unlike option results distinct
 
-- **Situation:** Several possibilities exist, or one unresolved question makes a costly commitment unsafe.
-- **Question:** Do you need to compare possibilities, keep worthwhile variants, keep only the best trade-offs found so far, control what stays under consideration, prepare options for a later chooser, choose now, or resolve the uncertainty blocking commitment?
-- **First useful result or honest blocker:** A comparison basis, retained variant set, best-known trade-off set, active-membership rule, set for a later chooser, local choice, answer to the blocking question, or the exact blocker.
-- **Mantra:** Name the decision and cost of error. Compare before choosing. Keep worthwhile variants for history; keep the best trade-offs when clearly worse variants should drop out; set a rule for what stays under consideration; prepare a set when another chooser acts later; choose only when choice is current. For costly action, resolve only the uncertainty blocking commitment. Return when basis, rule, evidence, or use changes.
-- **Start with:** `A.19.ECS` (comparison), `C.18` (archive/front), `C.19` (pool), `G.5` (set result), or `C.11` (choice). For costly action choose only the current check: `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11`, or `A.15.5`.
-- **Stop or return:** Stop at the result answering the present question. It neither chooses by implication nor performs later Work.
+- **Situation:** A candidate list mixes labels such as *build*, *buy*, *reuse*, *provider*, *internal*, *outsource*, or *AI*; or one unresolved question makes a costly commitment unsafe.
+- **Question:** Must you form complete ways to obtain one result, compare or retain them, govern a pool, prepare a set for another chooser, choose now, or resolve the uncertainty blocking commitment?
+- **First useful result or honest blocker:** A complete-enough same-result way set, comparison or retained set, pool rule, prepared `OptionSet`, `ChoiceResult`, answer to the blocking question, or exact gap.
+- **Mantra:** Name one result, use, situation, horizon, and acceptance basis. Turn labels into complete ways on one parity basis, keeping supported, proposed, and unknown premises visible. Compare or choose only when current; preserve worthwhile variants and gaps. For costly action, resolve only the uncertainty blocking commitment. Return when the result, basis, evidence, or use changes.
+- **Start with:** `C.38` when labels or fragments need complete ways; otherwise open only the current branch in `A.19.ECS`, `C.18`, `C.19`, `G.5`, or `C.11`. For costly action, use only the current check in `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11`, or `A.15.5`.
+- **Stop or return:** Stop at the result for the present question. An option description does not choose or establish capability, authority, Work, provision, delivery, acceptance, or use.
 
 #### RESULT-TO-NEXT-MOVE — Route an obtained result to the next probe or option
 

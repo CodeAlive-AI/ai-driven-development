@@ -58,6 +58,8 @@
 
 **Use boundary.** A.15 supplies only the system-role–Method–Work alignment needed by the current project question. Send a single occurrence, wording, assurance, evidence, result, or reliance question to the pattern that defines or tests that claim.
 
+**Outside-practice result boundary.** When one receiving decision or piece of Work needs a bounded result governed by another practice, use `A.15.9` to inspect an already-available result before requesting anything new, ask only for the remaining gap, and preserve supplier Method and authority separately from the receiving decision. A.15 keeps the underlying Method, Work, performer, assignment, communication, result, and record distinctions unchanged.
+
 ### A.15:1 - Problem frame
 
 When the alignment is already clear and ongoing Work still needs one next action chosen from current facts within an applicable domain Method, use `A.15.7`. It keeps the domain Method, steering Method, deciding System, intended performer, and any later WorkPlan or performed-action claim separate.
@@ -325,6 +327,8 @@ SysML v2 is deliberately excluded from A.15's SoTA basis and is not retained as 
 For visible credential, provenance, dashboard, explanation, or composed-source cases that require a project-side value and relation before reliance, use A.15.4. If a source row cannot be recovered in the local solution and checks, do not let the citation stand in for an A.15 rule.
 
 ### A.15:12 - Relations
+
+* `A.15.9` coordinates one receiving decision or piece of Work with one bounded result governed by another practice. It first tests an already-available result, requests only a remaining gap, and preserves supplier Method and authority separately from receiver decision authority; it creates no new alignment object or result kind.
 
 * `A.15.7` supplies the situation-responsive steering Method after current Work, its domain Method, and relevant facts are known; it returns the selected action, intended performer, and stop or feedback condition without making the answer into Work.
 

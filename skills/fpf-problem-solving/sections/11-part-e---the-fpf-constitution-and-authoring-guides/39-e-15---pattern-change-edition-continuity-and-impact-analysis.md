@@ -240,6 +240,7 @@ The non-dominated contribution is therefore not a new authoring trace or scoring
 
 **Coordinates with:**
 
+* **A.10.1** for the general move from a changed source claim to bounded actual uses when cross-use discovery is needed. E.15 is the FPF-pattern-edition specialization of that move: its primary object remains one exact existing FPF pattern edition and its successor, and its Delta-Class, predecessor-function continuity, proportionate pattern checks, and candidate-plus-change-account result remain intact.
 * **E.19** for pattern review, **E.21/E.22** for quality evaluation, and **E.23** for repeated improvement.
 * **C.18 and C.19** for optional candidate generation and explore/exploit control when a real alternative-search branch is open.
 * **F.15** for applicable regression checks and **F.9** only when the changed use actually relates distinct local senses.

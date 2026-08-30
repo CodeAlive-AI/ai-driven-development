@@ -26,7 +26,10 @@ The team either rebuilds everything after every small change or keeps using a sh
 
 The practitioner gets a small refresh kit: name the affected object, currentness object kind, source record, edition or lineage pins, affected scope, subject pattern, planned refresh action, and report. The refresh can stay local while still preserving comparability, selected-set meaning, archive and front meaning, and source-currentness evidence.
 
+When a later or replacement source may change a claim and the actual receiving uses must first be found and revalidated, use `A.10.1` for the bounded search frame, discovery coverage and gaps, exact-use test, action-changing reach, application of the direct subject guidance, and the independently obtained subject result. `G.11` continues to govern source currentness, decay, refresh planning, and refresh reporting. A practitioner or admitted System may use a separately established currentness result or independently obtained subject result to plan later refresh without changing either result or the governing patterns.
+
 #### G.11:0.3 - First output
+
 For loop, harness, workflow-store, or DPF seed artifacts, a refresh line names the currentness object directly: source pack, evaluator, benchmark, harness edition, workflow edition, pattern seed, PFAD and PFR dependency, selected set, archive, front, or publication carrier. `G.11` records currentness, source decay, edition change, telemetry, scoped refresh action, and report refs; it does not create a local "reopen and refresh" pair and does not decide whether the artifact improved.
 
 Write one `RefreshCurrentnessLine@Context` or one `RefreshPlan@Context` with the affected scope and the applicable pattern named. If the current claim concerns selected-set result declaration, archive or front stewardship, cultural evolution, term bridges, evidence, a dashboard, or shipping, use the pattern that defines and tests that claim rather than defining it inside the refresh record. For publication, use `E.17` for a source-backed face and return to source and `E.24.PUB` for the occurrence, form, carrier, audience, bounded use, and availability.

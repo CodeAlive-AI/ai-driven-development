@@ -10,7 +10,7 @@ FPF is a **thinking amplifier** — it helps you plan deeper and make better dec
 
 ## How it works
 
-This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (15 directories, 351 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a practical entry, applying a pattern to its first useful result, discovering Systems that may bear consequences, recovering candidate Methods from Work evidence, steering ongoing Work, recovery-testing Work-performance configurations, comparing finite configuration changes, clarifying learning claims, navigating a DPF suite, assembling framework publication forms, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causality, actual temporal structure, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
+This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (15 directories, 355 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a practical entry, applying a pattern to its first useful result, discovering Systems that may bear consequences, recovering candidate Methods from Work evidence, steering ongoing Work, recovery-testing Work-performance configurations, comparing finite configuration changes, clarifying learning claims, navigating a DPF Suite Reference, revalidating affected uses after source changes, requesting bounded specialist results, selecting representations for one use, constructing comparable ways to obtain one result, assembling framework publication forms, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causality, actual temporal structure, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
 
 ## Install
 
@@ -29,7 +29,7 @@ sections/
     ...                                # 26 sub-sections total
   09-part-c---kernel-extension-specifications/
     _index.md
-    ...                                # 77 sub-sections
+    ...                                # 79 sub-sections
   ...                                  # 15 directories total
 ```
 
@@ -45,9 +45,9 @@ The agent reads `_index.md` first, picks the right sub-section file, and loads o
 | 04 | Preface | 21 |
 | 05 | Part A — Kernel Architecture | 26 |
 | 06 | A.IV.A — Signature Stack & Boundary | 27 |
-| 07 | A.V — Constitutional Principles | 44 |
+| 07 | A.V — Constitutional Principles | 46 |
 | 08 | Part B — Trans-disciplinary Reasoning | 25 |
-| 09 | Part C — Kernel Extensions | 77 |
+| 09 | Part C — Kernel Extensions | 79 |
 | 10 | Part D — Ethics & Conflict | 5 |
 | 11 | Part E — Constitution & Authoring | 64 |
 | 12 | Part F — Unification Suite | 22 |

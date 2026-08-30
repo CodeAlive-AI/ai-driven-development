@@ -122,6 +122,8 @@ Open a row below only when its first column names the reader's next sentence or 
 | A reader must assert that a later episteme revises, refines, or supersedes an earlier one. | one exact `EpistemeEditionRelation` occurrence | C.2.1:4.5 |
 | A publisher must make one selected episteme edition available to a declared audience for a bounded use. | the publication occurrence, publication form, and `U.PresentationCarrier` as distinct objects | `E.17` and `E.24.PUB` |
 | A user will calculate, infer, navigate, or inspect through a notation, diagram, mathematical structure, or tool representation whose available operations matter. | the exact C.29 representation, correspondence, representation scheme, and any current transition relation | `C.29` and the selected representation-transition pattern |
+| One receiving System must select, decline, or co-use candidate results of different kinds as representations for the same exact action or decision. | one C.37 use-bounded representation-selection account; keep each direct subject result, optional A.2.4 first-use classification, A.10 reliance path when material, and receiving result separately governed | `C.37`; the direct subject and receiving-result patterns remain authoritative |
+
 
 Stop when no row describes the next sentence or action. A readable sentence naming the claims, EntityOfConcern, and effective reference scheme is then enough. Do not complete the table as a record. Use section 4.10 only when a later sentence or action actually needs the full relation and neighboring-object reference.
 

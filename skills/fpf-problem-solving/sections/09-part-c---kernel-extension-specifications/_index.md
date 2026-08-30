@@ -9,7 +9,7 @@
 ## Contents
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate-neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their change and equivalence. Exports: (i) three point-characteristics—Formality F,...
-- [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (591 lines) — Normativity: Normative except where a section is explicitly marked informative
+- [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (593 lines) — Normativity: Normative except where a section is explicitly marked informative
 - [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (524 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (359 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). When reuse changes scope, kind, reference plane, notation, source-local meaning,...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (260 lines) — Type: Architectural (A)
@@ -27,7 +27,7 @@
 - [C.3.4 - KindUseAdaptationDeclaration — Contextual Adaptation of Kinds without Cloning](17-c-3-4---kinduseadaptationdeclaration-contextual-adaptation-o.md) (211 lines) — One-line summary. Use a KindUseAdaptationDeclaration when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base...
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](18-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (159 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](19-c-3-a---typed-guard-macros-for-kinds-usm.md) (461 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
-- [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (718 lines) — Normativity: Normative unless marked informative
+- [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (720 lines) — Normativity: Normative unless marked informative
 - [C.11.CRC - Configuration-Relative Contribution Comparison](21-c-11-crc---configuration-relative-contribution-comparison.md) (201 lines) — Tech name: ConfigurationRelativeContributionComparison
 - [C.13 — Constructional Mereology (Compose‑CAL)](22-c-13-constructional-mereology.md) (253 lines) — At a glance. Use C.13 when a practitioner must show how identified entities and relations that obtain form one whole, collection, or aspect. The account explains how those facts support the whole,...
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](23-c-16---measurement-metrics-characterization.md) (296 lines) — Use this pattern when. Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic,...
@@ -84,4 +84,6 @@
 - [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](74-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
 - [C.35 - Structural Synthesis and Discovery Adequacy](75-c-35---structural-synthesis-and-discovery-adequacy.md) (248 lines) — Type: Architectural pattern
 - [C.36 - Cultural Evolution and Cultural-Evolution Engineering](76-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (387 lines) — Tech-name: CulturalEvolutionEngineering
-- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](77-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (168 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
+- [C.37 - Use-Bounded Representation Selection and Co-Use](77-c-37---use-bounded-representation-selection-and-co-use.md) (267 lines) — Normativity: Normative unless explicitly marked informative
+- [C.38 - Construct Comparable Ways to Obtain One Result](78-c-38---construct-comparable-ways-to-obtain-one-result.md) (200 lines) — Normativity: Normative unless explicitly marked informative
+- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](79-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (168 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

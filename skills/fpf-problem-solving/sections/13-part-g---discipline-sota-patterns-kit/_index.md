@@ -15,6 +15,6 @@
 - [G.8 - SoS‑LOG Bundles & Maturity Ladders](10-g-8---sos-log-bundles-maturity-ladders.md) (469 lines) — Tag. Architectural pattern (packaging kit).
 - [G.9 — Parity and Benchmark Harness](11-g-9-parity-and-benchmark-harness.md) (547 lines) — - rival method families, method sets, or adaptation paths must be compared under one declared baseline set and freshness window
 - [G.10 - SoTA Pack Shipping](12-g-10---sota-pack-shipping.md) (402 lines) — Tag: Architectural pattern (conceptual; notation‑independent; pack‑boundary governing definition)
-- [G.11 - Telemetry-Driven Refresh and Decay Orchestrator](13-g-11---telemetry-driven-refresh-and-decay-orchestrator.md) (430 lines) — Tag. Architectural pattern (architectural; notation-independent)
+- [G.11 - Telemetry-Driven Refresh and Decay Orchestrator](13-g-11---telemetry-driven-refresh-and-decay-orchestrator.md) (433 lines) — Tag. Architectural pattern (architectural; notation-independent)
 - [G.12 — DHC Dashboards (Discipline-Health Time Series and Views)](14-g-12-dhc-dashboards.md) (262 lines) — Tag: Architectural kit pattern; notation-independent.
 - [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual)](15-g-13---external-interop-hooks-for-sota-discipline-packs.md) (342 lines) — Tag. Architectural kit pattern (conceptual interop kit; notation‑independent; normative when used)
