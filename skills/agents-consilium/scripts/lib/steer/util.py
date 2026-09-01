@@ -1,11 +1,12 @@
 """Shared utilities: atomic IO, hashing, process groups, secure modes, time helpers."""
 from __future__ import annotations
 
-import fcntl
+import errno
 import hashlib
 import json
 import os
 import signal
+import subprocess
 import sys
 import tempfile
 import time
@@ -13,6 +14,37 @@ import uuid
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Dict, Iterator, Optional
+
+try:
+    import fcntl
+except ImportError:
+    fcntl = None
+    import msvcrt
+
+if os.name == "nt":
+    import ctypes
+    import ctypes.wintypes
+
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    STILL_ACTIVE = 259
+    ERROR_ACCESS_DENIED = 5
+
+    # Declare signatures explicitly: without argtypes/restype ctypes defaults to
+    # c_int, which truncates a 64-bit HANDLE.
+    _k32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    _k32.OpenProcess.argtypes = (
+        ctypes.wintypes.DWORD,
+        ctypes.wintypes.BOOL,
+        ctypes.wintypes.DWORD,
+    )
+    _k32.OpenProcess.restype = ctypes.wintypes.HANDLE
+    _k32.GetExitCodeProcess.argtypes = (
+        ctypes.wintypes.HANDLE,
+        ctypes.POINTER(ctypes.wintypes.DWORD),
+    )
+    _k32.GetExitCodeProcess.restype = ctypes.wintypes.BOOL
+    _k32.CloseHandle.argtypes = (ctypes.wintypes.HANDLE,)
+    _k32.CloseHandle.restype = ctypes.wintypes.BOOL
 
 # Private-by-default modes for steerable registry state.
 DIR_MODE = 0o700
@@ -187,9 +219,34 @@ def preview_text(s: Optional[str], n: int) -> str:
     return s[: max(0, n - 1)] + "…"
 
 
+def detached_popen_kwargs() -> Dict[str, Any]:
+    """Popen kwargs that detach a child from the caller's signal delivery.
+
+    POSIX uses a new session; Windows has no sessions, so the equivalent is a
+    new process group (start_new_session raises there).
+    """
+    if os.name == "nt":
+        return {"creationflags": subprocess.CREATE_NEW_PROCESS_GROUP}
+    return {"start_new_session": True}
+
+
 def pid_alive(pid: int) -> bool:
     if pid <= 0:
         return False
+    if os.name == "nt":
+        ctypes.set_last_error(0)
+        handle = _k32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
+        if not handle:
+            # A live process owned by another user denies the query; only an
+            # absent pid is evidence of death.
+            return ctypes.get_last_error() == ERROR_ACCESS_DENIED
+        try:
+            code = ctypes.wintypes.DWORD()
+            if not _k32.GetExitCodeProcess(handle, ctypes.byref(code)):
+                return True  # indeterminate: do not report a live pid as dead
+            return code.value == STILL_ACTIVE
+        finally:
+            _k32.CloseHandle(handle)
     try:
         os.kill(pid, 0)
         return True
@@ -200,6 +257,26 @@ def pid_alive(pid: int) -> bool:
 def kill_process_group(pid: int, timeout: float = 5.0) -> None:
     """Deterministic process-group cancellation. Best-effort, no orphans preferred."""
     if pid <= 0:
+        return
+    if os.name == "nt":
+        import subprocess
+
+        # Absolute path: resolving "taskkill" through the executable search
+        # order would let a taskkill.exe in the working directory run instead.
+        system_root = os.environ.get("SystemRoot", r"C:\Windows")
+        taskkill = os.path.join(system_root, "System32", "taskkill.exe")
+        if not os.path.isfile(taskkill):
+            taskkill = "taskkill"
+        deadline = time.time() + timeout
+        subprocess.run(
+            [taskkill, "/F", "/T", "/PID", str(pid)],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        while time.time() < deadline:
+            if not pid_alive(pid):
+                return
+            time.sleep(0.05)
         return
     try:
         pgid = os.getpgid(pid)
@@ -294,17 +371,58 @@ def is_loopback_url(url: str) -> bool:
         return False
 
 
+# msvcrt.locking() locks a byte range starting at the *current* file offset,
+# unlike flock() which locks the whole file. Both helpers therefore seek to 0
+# first so that lock and unlock always name the same byte.
+LOCK_TIMEOUT = 30.0
+_LOCK_POLL = 0.05
+
+
+def lock_exclusive(fileobj, timeout: float = LOCK_TIMEOUT) -> None:
+    """Portable exclusive lock on an open file object (blocking, bounded)."""
+    if fcntl is not None:
+        fcntl.flock(fileobj.fileno(), fcntl.LOCK_EX)
+        return
+    fileobj.seek(0)
+    deadline = time.time() + timeout
+    while True:
+        try:
+            # LK_NBLCK, not LK_LOCK: LK_LOCK blocks with its own retry policy
+            # and raises after ~10 attempts, which we cannot distinguish from
+            # a permanent failure.
+            msvcrt.locking(fileobj.fileno(), msvcrt.LK_NBLCK, 1)
+            return
+        except OSError as e:
+            if e.errno != errno.EACCES:
+                raise  # permanent failure: bad handle, closed file, ...
+            if time.time() >= deadline:
+                raise TimeoutError(
+                    f"could not acquire lock within {timeout:.1f}s"
+                ) from e
+            time.sleep(_LOCK_POLL)
+            fileobj.seek(0)
+
+
+def unlock(fileobj) -> None:
+    """Release a lock taken with lock_exclusive()."""
+    if fcntl is not None:
+        fcntl.flock(fileobj.fileno(), fcntl.LOCK_UN)
+        return
+    fileobj.seek(0)
+    msvcrt.locking(fileobj.fileno(), msvcrt.LK_UNLCK, 1)
+
+
 @contextmanager
 def flock_exclusive(lock_path: Path) -> Iterator[None]:
     """Exclusive flock around a run-level critical section."""
     ensure_dir(lock_path.parent)
     secure_touch(lock_path)
     with open(lock_path, "a+", encoding="utf-8") as lf:
-        fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+        lock_exclusive(lf)
         try:
             yield
         finally:
-            fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
+            unlock(lf)
 
 
 def eprint(msg: str) -> None:

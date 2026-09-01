@@ -3,6 +3,8 @@
 # Shared utilities for consilium multi-agent scripts
 #
 
+export PYTHONIOENCODING="${PYTHONIOENCODING:-utf-8}"
+
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'

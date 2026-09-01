@@ -2,11 +2,40 @@
 from __future__ import annotations
 
 import json
+import os
 import queue
+import shutil
 import subprocess
 import threading
 import time
 from typing import Any, Callable, Dict, List, Optional, Tuple
+
+from .util import detached_popen_kwargs
+
+
+def _resolve_argv(argv: List[str]) -> List[str]:
+    """Resolve argv[0] to an actually-executable path.
+
+    Native Windows Python's subprocess.Popen requires a real PE executable —
+    it cannot exec a shebang script directly, and does not consult PATHEXT
+    the way cmd.exe does. shutil.which() honors PATHEXT (finds .cmd/.bat/.exe
+    shims npm-style CLIs install); a plain-text script found that way still
+    needs a bash launcher to run its shebang line.
+    """
+    if os.name != "nt" or not argv:
+        return argv
+    resolved = shutil.which(argv[0]) or argv[0]
+    if resolved.lower().endswith((".cmd", ".bat", ".exe", ".com")):
+        return [resolved] + argv[1:]
+    try:
+        with open(resolved, "rb") as f:
+            head = f.read(2)
+        if head == b"#!":
+            bash = shutil.which("bash.exe") or shutil.which("bash") or "bash"
+            return [bash, resolved] + argv[1:]
+    except OSError:
+        pass
+    return [resolved] + argv[1:]
 
 
 class JsonRpcProcess:
@@ -45,17 +74,18 @@ class JsonRpcProcess:
         self._exit_code: Optional[int] = None
 
     def start(self) -> None:
-        self.proc = subprocess.Popen(
-            self.argv,
+        popen_kwargs: Dict[str, Any] = dict(
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             env=self.env,
             text=True,
+            encoding="utf-8",
             bufsize=1,
-            start_new_session=True,
         )
+        popen_kwargs.update(detached_popen_kwargs())
+        self.proc = subprocess.Popen(_resolve_argv(self.argv), **popen_kwargs)
         self._reader = threading.Thread(target=self._read_stdout, daemon=True)
         self._reader.start()
         self._stderr_thread = threading.Thread(target=self._read_stderr, daemon=True)

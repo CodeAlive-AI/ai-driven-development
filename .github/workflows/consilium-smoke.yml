@@ -1,0 +1,141 @@
+name: agents-consilium smoke
+
+on:
+  pull_request:
+    paths:
+      - 'skills/agents-consilium/**'
+      - '.github/workflows/consilium-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/agents-consilium/**'
+      - '.github/workflows/consilium-smoke.yml'
+
+jobs:
+  smoke:
+    name: smoke (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    defaults:
+      run:
+        shell: bash
+        working-directory: skills/agents-consilium
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Import every steer module
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, '.')
+          import steer.util, steer.mailbox, steer.registry
+          import steer.jsonrpc, steer.control, steer.supervisor
+          from steer.adapters import claude, opencode
+          import terminal_guard
+          print('imports OK:', steer.registry.default_registry_root())
+          PY
+
+      - name: pid_alive probes without terminating
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python - <<'PY'
+          import subprocess, sys, time
+          sys.path.insert(0, '.')
+          from steer.util import pid_alive
+          child = subprocess.Popen([sys.executable, '-c', 'import time; time.sleep(30)'])
+          assert pid_alive(child.pid), 'live child reported dead'
+          time.sleep(0.5)
+          assert child.poll() is None, 'pid_alive() terminated the process it probed'
+          assert not pid_alive(9999999), 'bogus pid reported alive'
+          child.kill()
+          child.wait()
+          assert not pid_alive(child.pid), 'reaped child still reported alive'
+          print('pid_alive OK')
+          PY
+
+      - name: Lock helpers round-trip on a non-empty lock file
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python - <<'PY'
+          import sys, tempfile
+          from pathlib import Path
+          sys.path.insert(0, '.')
+          from steer.util import flock_exclusive, lock_exclusive, unlock
+          lock = Path(tempfile.mkdtemp()) / 'x.lock'
+          # Non-empty on purpose: msvcrt.locking() locks a byte range from the
+          # CURRENT offset, so a lock/unlock pair that disagrees on the offset
+          # leaks the lock and the next acquisition deadlocks.
+          lock.write_text('noise noise noise\n', encoding='utf-8')
+          for _ in range(3):
+              with flock_exclusive(lock):
+                  pass
+          with open(lock, 'a+', encoding='utf-8') as fh:
+              lock_exclusive(fh); unlock(fh)
+              lock_exclusive(fh); unlock(fh)
+          print('lock round-trip OK')
+          PY
+
+      - name: Detach kwargs are valid for this platform
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python - <<'PY'
+          import subprocess, sys
+          sys.path.insert(0, '.')
+          from steer.util import detached_popen_kwargs
+          kwargs = detached_popen_kwargs()
+          print('detach kwargs:', kwargs)
+          child = subprocess.Popen([sys.executable, '-c', 'pass'], **kwargs)
+          assert child.wait() == 0
+          print('detached spawn OK')
+          PY
+
+      - name: terminal_guard stops a completed backend
+        working-directory: skills/agents-consilium/scripts/lib
+        run: |
+          python - <<'PY'
+          import subprocess, sys, time
+          event = '{"type":"session.complete"}'
+          backend = f'import time; print({event!r}, flush=True); time.sleep(60)'
+          started = time.monotonic()
+          done = subprocess.run(
+              [sys.executable, 'terminal_guard.py', '--backend', 'opencode',
+               '--terminal-grace', '1', '--', sys.executable, '-c', backend],
+              stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=45,
+          )
+          elapsed = time.monotonic() - started
+          print(done.stdout, done.stderr, sep='\n')
+          assert event in done.stdout, 'terminal event was not forwarded'
+          assert elapsed < 30, f'guard did not stop the completed backend ({elapsed:.1f}s)'
+          print(f'terminal_guard OK ({elapsed:.1f}s)')
+          PY
+
+      - name: Config helpers emit LF-only agent ids
+        run: |
+          source scripts/lib/common.sh
+          source scripts/lib/config.sh
+          config_validate
+          config_enabled_agents > agents.txt
+          test -s agents.txt || { echo 'no enabled agents parsed'; exit 1; }
+          if grep -q $'\r' agents.txt; then
+            echo 'CR found in config_enabled_agents output:'
+            cat -A agents.txt
+            exit 1
+          fi
+          while IFS= read -r agent; do
+            backend="$(config_get_field "$agent" backend)" || { echo "backend lookup failed: [$agent]"; exit 1; }
+            test -n "$backend" || { echo "empty backend for: [$agent]"; exit 1; }
+            echo "$agent -> $backend"
+          done < agents.txt
+          rm -f agents.txt
+          echo 'config helpers OK'
+
+      - name: consilium --help
+        run: bash scripts/consilium --help

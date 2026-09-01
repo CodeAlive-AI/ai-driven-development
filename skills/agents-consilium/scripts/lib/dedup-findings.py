@@ -101,14 +101,14 @@ def main() -> int:
             sys.stderr.write(f"[dedup] skip empty/missing {p}\n")
             continue
         agent, role = parse_filename(p)
-        text = p.read_text(errors="replace")
+        text = p.read_text(encoding="utf-8", errors="replace")
         for f in extract_findings(text):
             all_findings.append(attach_source_attrs(f, agent, role))
 
     all_findings.sort(key=sort_key)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    with out_path.open("w") as fh:
+    with out_path.open("w", encoding="utf-8", newline="\n") as fh:
         fh.write(f'<code-review-report total="{len(all_findings)}">\n')
         for i, f in enumerate(all_findings, start=1):
             fh.write(reindex(f, i))

@@ -1070,6 +1070,8 @@ def main(argv: Optional[list] = None) -> int:
         # can never signal the caller's shell.
         try:
             os.setsid()
+        except AttributeError:
+            pass  # os.setsid does not exist on Windows; CREATE_NEW_PROCESS_GROUP covers it
         except OSError:
             pass  # already a session leader
     task = Path(args.task_file).read_text(encoding="utf-8")

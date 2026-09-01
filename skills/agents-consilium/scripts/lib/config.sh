@@ -20,7 +20,10 @@ CONSILIUM_CONFIG="${CONSILIUM_CONFIG:-$SKILL_ROOT/config.json}"
 # Internal: read JSON via python3.
 # Usage: _cfg_python "script body that reads CONSILIUM_CONFIG"
 _cfg_python() {
-    CONSILIUM_CONFIG_PATH="$CONSILIUM_CONFIG" python3 -c "$1"
+    CONSILIUM_CONFIG_PATH="$CONSILIUM_CONFIG" python3 -c "
+import sys
+sys.stdout.reconfigure(newline='\n')
+$1"
 }
 
 # Validate config file exists and parses as JSON.

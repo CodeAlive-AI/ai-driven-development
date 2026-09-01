@@ -9,7 +9,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional
 
-from ..util import kill_process_group
+from ..util import detached_popen_kwargs, kill_process_group
 from .base import AdapterEvent, BackendAdapter, DeliveryClass, SteerResult
 
 
@@ -65,8 +65,9 @@ class ClaudeAdapter(BackendAdapter):
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             text=True,
+            encoding="utf-8",
             bufsize=1,
-            start_new_session=True,
+            **detached_popen_kwargs(),
         )
         self._reader = threading.Thread(target=self._read_loop, daemon=True)
         self._reader.start()
