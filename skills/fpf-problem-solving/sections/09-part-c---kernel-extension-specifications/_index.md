@@ -60,16 +60,16 @@
 - [C.30.AD - Architecture Description Adequacy](50-c-30-ad---architecture-description-adequacy.md) (466 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](51-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (262 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Architecture and Structure Precision Restoration](52-c-30-p---architecture-and-structure-precision-restoration.md) (248 lines) — Type: Architectural pattern
-- [C.30.STRAT - Stratification Wording Precision Restoration](53-c-30-strat---stratification-wording-precision-restoration.md) (260 lines) — Type: Architectural precision-restoration subpattern under C.30
+- [C.30.STRAT - Stratification Wording Precision Restoration](53-c-30-strat---stratification-wording-precision-restoration.md) (262 lines) — Type: Architectural precision-restoration subpattern under C.30
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](54-c-30-asv---architecture-structural-view-adequacy.md) (806 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](55-c-30-lca---control-structure-view-adequacy.md) (309 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](56-c-30-ilc---cross-scope-architecture-residual-triage.md) (255 lines) — Type: Architectural subpattern under C.30
-- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](57-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (420 lines) — Type: Architectural pattern
+- [C.30.TFS-REL - Architecture Transformation-Flow Structure Relation](57-c-30-tfs-rel---architecture-transformation-flow-structure-re.md) (418 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](58-c-31---modularity-and-reusable-structure-characteristics.md) (382 lines) — Type: Characterization pattern
 - [C.31.RSA - Reusable Structure Accounting](59-c-31-rsa---reusable-structure-accounting.md) (396 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](60-c-31-asap---architecture-scale-amenability-preference.md) (323 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](61-c-32---architecture-candidate-synthesis.md) (354 lines) — Type: Architectural pattern
-- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (355 lines) — Type: Architectural process pattern under C.32
+- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (357 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](63-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (205 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](64-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (288 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](65-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32
@@ -83,7 +83,7 @@
 - [C.33 - Structural Information Adequacy for Architecture Capture and Missing-Structure Return](73-c-33---structural-information-adequacy-for-architecture-capt.md) (207 lines) — Type: Architectural pattern
 - [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](74-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
 - [C.35 - Structural Synthesis and Discovery Adequacy](75-c-35---structural-synthesis-and-discovery-adequacy.md) (248 lines) — Type: Architectural pattern
-- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](76-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (387 lines) — Tech-name: CulturalEvolutionEngineering
+- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](76-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (390 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.37 - Use-Bounded Representation Selection and Co-Use](77-c-37---use-bounded-representation-selection-and-co-use.md) (267 lines) — Normativity: Normative unless explicitly marked informative
 - [C.38 - Construct Comparable Ways to Obtain One Result](78-c-38---construct-comparable-ways-to-obtain-one-result.md) (200 lines) — Normativity: Normative unless explicitly marked informative
-- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](79-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (168 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
+- [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](79-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

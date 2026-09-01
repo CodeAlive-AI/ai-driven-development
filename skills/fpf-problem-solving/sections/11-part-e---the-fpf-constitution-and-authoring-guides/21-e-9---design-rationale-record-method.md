@@ -129,7 +129,7 @@ substantive DRR adequacy rather than later review-only hardening.
 | **Impact, practical gains, and remaining validation evidence obligation** | Affected patterns and selected non-pattern FPF kind-reference pairs, practical gains/costs, authority or release consequences when they follow from the content decision, and the remaining validation evidence obligation that still constrains later authoring or landing. | Consequences. |
 | **SoTA and competitive-positioning account when load-bearing** | Current best-known problem-solving source anchors and source-derived moves under E.8 that discipline the decision, what problem-owning domain or practice they answer to, which official, popular, or legacy alternatives they reject or bound when relevant, and what unresolved uncertainty would materially change the selected answer. | Problem frame, Rationale, and Consequences. |
 | **Actual-host predecessor/proposed replay when a broad authoring rule is selected** | One dependency-aware real host comparison at comparable effort: recognizable entry, inputs, first action, vocabulary, formality and assurance burden, first useful result, stop or return, preserved useful ideas, and true direct consumers. The proposed wording passes E.8 and F.19; a proxy or promised later review does not substitute. | Decision and Rationale, with the selected rule and pilot effect carried into the locus obligations. |
-| **Campaign problem-solution unfolding carry-through when triggered** | For campaigns changing README entries, path-shaped patterns, pattern families, DPF entries, or first-practical routes: the map from admitted problem-side record refs or cues, accepted starting records, current starting structures, and entry cues to selected solution architecture, affected unfolding families, loci added or changed, governing-pattern map, blocked overreads, and what must not remain only in DRR or README. | Decision, selected-locus map, and Consequences. |
+| **Campaign problem-solution unfolding carry-through when triggered** | For campaigns changing README entries, path-shaped patterns, pattern families, DPF entries, or first-practical routes: the map from admitted problem-side record refs or cues, accepted starting records, current starting structures, and entry cues to selected solution architecture, affected unfolding families, loci added or changed, governing-pattern map, content assigned from DRR or README into patterns or unfolding structures, and any independently grounded overread that a plausible intended reader could make. | Decision, selected-locus map, and Consequences. |
 These decision-inspection content blocks are not separate process paperwork. A DRR that keeps
 only the four labels while leaving decision grounds, first-minute use question, naming,
 selected content distribution, pattern or selected non-pattern FPF kind-reference pair sufficiency or necessity, overlap handling, impact,
@@ -207,7 +207,7 @@ CampaignProblemSolutionUnfoldingCheck:
   patternPlacements:
   whatStayedOnlyInDRRAndMustMoveToPatternOrUnfoldingStructure:
   whatStayedOnlyInReadmeAndMustMoveToPatternOrUnfoldingStructure:
-  blockedOverreads:
+  blockedOverreads?: [only exact readings admitted by `F.19`'s grounded-contribution test]
   rejectedUnfoldingAlternatives:
   unfoldingCarryThroughResidueAfterContentUpdate:
   refreshOrReopenTrigger:
@@ -345,7 +345,7 @@ content answer that FPF is selecting.
 
 The practical gain is content-selection quality under semantic load: decision work selects the answer, alternatives, losses, boundary, and loci; the DRR episteme makes that result replayable before pattern drafting. Any durable rule, example, or obligation useful after realization belongs in the selected FPF pattern or non-pattern kind-reference pair, not in the DRR as permanent shadow canon.
 
-When a source document, workstream plan, queue, review packet, standard, article, ADR-like note, or prior decision shapes the answer, the DRR records how it is used and which payload is selected or left behind, including any material loss, locus, non-use boundary, and reopen condition. Name the exact source episteme, publication, and source-use relation when the decision or a named later reliance depends on those identities. Citation alone creates no doctrine, child DRR, review result, gate, evidence sufficiency, or landing source.
+When an identified source shapes the answer—for example a prior decision, standard, plan, or review packet—the DRR records how it is used and which payload is selected or left behind, including any material loss, destination locus, stop or return, reopen condition, and non-use boundary admitted by `F.19`'s grounded-contribution test. Name the exact source episteme, publication, and source-use relation when the decision or a named later reliance depends on those identities. A citation supplies traceability; every stronger receiving claim needs its direct result or relation.
 
 ### E.9:12 - Relations
 

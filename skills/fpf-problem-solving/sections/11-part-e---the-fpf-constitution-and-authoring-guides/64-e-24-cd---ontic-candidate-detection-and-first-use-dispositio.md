@@ -100,7 +100,7 @@ For a project card, row, schema, or diagram, inspect only what the current work 
 3. Which direct predicates are asserted, what are their actual participants, and which independently established facts satisfy their obtaining conditions?
 4. Is the visible arrangement a publication form, a C.29 representation, a carrier, or merely a local layout?
 5. Does the work need local classification of a candidate, or only a claim about an already governed feature?
-6. What stronger reading must be blocked—for example, record existence creates performed work, a row creates membership, or a field name admits a kind?
+6. If one specific stronger reading has an independent local ground and is plausible for the intended reader, what is the smallest correction? Otherwise leave the question out.
 
 A field label is not a `SlotSpec`. `A.6.5` governs the declaration: a reusable `SlotSpec` appears only inside a `RelationSignature` for an already recovered direct relation and only when a named later use needs that declaration. A row value is not an actual relation participant merely because it occupies a column.
 
@@ -114,7 +114,7 @@ Open E.24 when these detection facts are recoverable:
 - the named consumers that make shared coordination plausible; and
 - why one obvious direct-pattern route does not already close the blocked use.
 
-Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, and nearest non-use boundary. If one of those facts cannot be established, E.24 may return its unresolved result. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
+Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, declared use, and any independently grounded non-use boundary. If one of the entry facts cannot be established, E.24 may return its unresolved result. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
 
 A plainly direct case still stops at its subject pattern. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but without a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers, and failure of an obvious direct route, they do not open E.24.
 
@@ -122,13 +122,13 @@ A plainly direct case still stops at its subject pattern. Repeated words, severa
 
 Most cases need only one sentence:
 
-> For `<work or decision>`, apply `<subject pattern>` to `<exact subject or claim>` because `<decisive fact>`; `<blocked stronger reading>` does not follow.
+> For `<work or decision>`, apply `<subject pattern>` to `<exact subject or claim>` because `<decisive fact>`; next, `<action or stop>`.
 
 When no pattern can yet apply truthfully, say:
 
-> For `<work or decision>`, leave `<exact subject or claim question>` unresolved because `<missing subject, predicate, or subject pattern>`; `<blocked stronger reading>` does not follow.
+> For `<work or decision>`, leave `<exact subject or claim question>` unresolved because `<missing subject, predicate, or subject pattern>`; return when `<missing fact becomes recoverable>`.
 
-Use a longer explanation only when another author must understand a disputed disposition. Do not create an `OnticCandidateCluster`, candidate registry, scorecard, or mandatory disposition form. Once the applicable pattern or unresolved stop is stated, continue there; reopen E.24.CD only if the recovered subject or practical use changes.
+Add one short denied reading only when it has an independent local ground and a plausible intended reader could take it here. Otherwise stop after the positive disposition. Use a longer explanation only when another author must understand a disputed disposition. Do not create an `OnticCandidateCluster`, candidate registry, scorecard, or mandatory disposition form. Continue at the applicable pattern or unresolved return; reopen E.24.CD only if the recovered subject or practical use changes.
 
 ### E.24.CD:5 - Archetypal Grounding
 
@@ -239,7 +239,7 @@ This pattern intentionally biases toward early recovery of the real subject and 
 - **scoring bias:** rating a candidate before its subject, identity rule, direct relations, and practical use are known;
 - **semio-bias:** discussing forms and labels while the governed subject and claim disappear.
 
-The mitigation is concrete: name the work, subject, needed claim, pattern that states it, applicable disposition, and blocked stronger reading. Open E.24 only when several named patterns need the same subject identity or relation rules.
+The mitigation is concrete: name the work, subject, needed claim, pattern that states it, applicable disposition, next action, and stop or return. Add a denied stronger reading only when an independent local ground makes it plausible. Open E.24 only when several named patterns need the same subject identity or relation rules.
 
 ### E.24.CD:7 - Conformance Checklist
 
@@ -252,10 +252,10 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | `CC-E24CD-5` | One C.2.1 episteme requires one exact ClaimGraph, one truthful exact EntityOfConcern, and one effective ReferenceScheme. Otherwise epistemes remain separate, and co-use or co-publication supplies no shared identity. |
 | `CC-E24CD-6` | Local classification uses C.3.2's kind, signature, judgment, and optional extension distinction and does not imply a public `U.*` kind or direct classification relation. |
 | `CC-E24CD-7` | Episteme, view membership, publication form, representation, carrier, and publication occurrence remain separate and use their subject patterns only when current. |
-| `CC-E24CD-8` | E.24 opens from a blocked use, an independently recoverable candidate, proposal, or source construct, concrete duplication or disagreement pressure across named patterns, named plausible consumers, and failure of one obvious direct route. E.24.CD does not require the identity rule, minimal relation set, dependent-use proof, non-duplication result, practical gain, or nearest non-use; E.24 owns those judgments and may return unresolved. |
+| `CC-E24CD-8` | E.24 opens from a blocked use, an independently recoverable candidate, proposal, or source construct, concrete duplication or disagreement pressure across named patterns, named plausible consumers, and failure of one obvious direct route. E.24.CD supplies those entry facts; E.24 owns the identity rule, minimal relation set, dependent-use judgement, non-duplication result, practical gain, declared use, and any grounded non-use boundary, and may return unresolved. |
 | `CC-E24CD-9` | Any public U-kind question is handled by E.24.UK as a separate admission result; E.24.CD admits neither ontic nor kind. |
 | `CC-E24CD-10` | No candidate cluster, registry, scorecard, or mandatory disposition form is created. |
-| `CC-E24CD-11` | The result names the exact pattern applied to the exact subject or claim, or a precise unresolved stop, and blocks the strongest tempting overread. |
+| `CC-E24CD-11` | The result names the exact pattern applied to the exact subject or claim, or a precise unresolved stop, and gives the next action or return condition. It denies a stronger reading only when that reading has an independent local ground and is plausible for the intended reader. |
 | `CC-E24CD-12` | A record-shaped false candidate keeps holder, status bearer and value, method, mechanism, plan, work, evidence item and use, result and relation, target and subject relation, and source and source-use relation distinct; absent fields and row shape establish none of them. |
 | `CC-E24CD-13` | Bare *role* uses E.10.ROLE and then the recovered branch; ambiguous relation, slot, interface, function, and endpoint wording uses its matching precision-restoration pattern. None becomes ontology by wording alone. |
 | `CC-E24CD-14` | Declarative-form agency is blocked through C.2.P.DR, and reusable naming starts in F.18 only after the governed value and any needed relation settlement are available. |
@@ -276,7 +276,7 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | Registry trap | The author keeps a list of possible ontics without deciding the blocked case. | State the work, apply one truthful subject pattern or name one precise unresolved stop, and stop. |
 | Scoring before identity | A score form is filled before the subject and direct relation gap are known. | Recover the subject, identity rule, dependent uses, and missing coordination; use A.19.ECS only for an actual comparison. |
 | Repetition-as-admission | Several forms or patterns share a label, so an ontic is inferred. | Require the E.24 entry facts: one subject identity and minimal relation set reused by named dependent patterns. |
-| Negative-catalogue repair | The text lists only what the candidate is not. | State the positive subject, claim, governor, next action, and one blocked stronger reading. |
+| Negative-catalogue repair | The text lists only what the candidate is not. | State the positive subject, claim, direct pattern, and next action. Add one denied reading only when it is independently grounded and changes use. |
 
 ### E.24.CD:9 - Consequences
 
@@ -300,7 +300,7 @@ Ontic candidates rarely arrive as pure ontology. They appear through the forms p
 
 The pattern therefore asks for one first-use disposition instead of a candidate record. Keep direct claims in their direct patterns; use C.2.1 only when one exact ClaimGraph, one truthful EntityOfConcern, and one effective ReferenceScheme constitute an episteme; and use C.3.2 for local classification. Keep publication in E.24.PUB and representation in C.29. Use C.2.P.DR to block action inferred from declarative form; resolve ambiguous wording through A.6.RSIR, A.6.F, A.6.P, or E.10; and name only an already governed value through F.18. Open E.24 only when named dependent patterns need one stable subject identity and minimal relation set that those simpler applications cannot preserve.
 
-This order keeps the first move affordable and falsifiable. Another author can see which fact selected the applicable pattern or unresolved stop and which stronger reading was blocked. A list of candidate fields or scores would make the form look authoritative and invite optimization of the record instead of settlement of the subject.
+This order keeps the first move affordable and falsifiable. Another author can see which fact selected the applicable pattern or unresolved stop and what to do next. When a specific stronger reading is independently grounded, one short correction makes that boundary visible. A list of candidate fields or scores would make the form look authoritative and invite optimization of the record instead of settlement of the subject.
 
 ### E.24.CD:11 - SoTA-Echoing
 

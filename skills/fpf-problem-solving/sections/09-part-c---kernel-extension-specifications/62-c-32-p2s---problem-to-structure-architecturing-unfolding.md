@@ -196,16 +196,18 @@ P2SUnfoldingStructureBlock:
   actualStructureFeedbackRef?:
   e18TransformationFlowUnfoldingRefs[]?:
   descriptionRefs[]?:
-  blockedOverread: not architecture decision, not ADR, not work plan by itself
+  nextReceivingAction: exact decision, description, Work, transformation, or feedback pattern when that claim is current
+  stopOrReturnCondition: reopen when the problem, constraints, candidate structure, or actual feedback changes
+  groundedArtifactConfusion?: exact currently observed confusion between this block and one named downstream artifact
 ```
 
-The block is useful when the architecture work has to show how problem pressure constrains candidate, selected, expected, or actual structures without hiding the rule for the next claim or the pattern that contains it. `unfoldingStructureRef` names the current CGUS record or local architecture-facing structure block; an A.22-level narrower-specialization relation, when needed, remains `specializedStructureRef?` on the A.22.CGUS record. `decisionLinkageRef` points to `C.32.PAD` only when a project architecture decision is current. `descriptionRefs[]` point to `C.30.AD`, `C.30.ASV`, `C.32.ADR`, `A.6.3.NAR`, or publication patterns only when a description, view, ADR projection, narrative rendering, or publication claim is current. `realizationWorkLinkageRef` points to the A.15-family work relation; use `A.3.4` for actual transformations. The Work-to-change fields keep the obtaining relation separate from the cited pattern or local claim used to check it. The three production-ref groups point only to separate local `A.15.PROD` claims. The P2S block neither authorizes nor records performed work and does not make selected or expected structure actual.
+The block shows how problem pressure constrains candidate, selected, expected, or actual structures while keeping the next claim and its governing pattern visible. `unfoldingStructureRef` names the current CGUS record or local architecture-facing structure block; use the decision, description, Work, transformation, production, and feedback refs only when their direct predicates are current. Otherwise the block ends with the problem-to-structure result, next receiving action, and stop or return condition.
 
 Use `e18TransformationFlowUnfoldingRefs[]` only for slices whose substrate is transformation-flow structure. P2S itself is broader: it can carry, for example, module, functional, placement, control, method, evidence, scale, and information structures through architecture synthesis and feedback. Any role-like source wording first resolves to the independently relevant local kind, classification judgment, assignment occurrence, direct-relation or representation position, function claim, organization position, responsibility or authority relation, or ordinary label; P2S has no generic role-structure carrier.
 
 #### C.32.P2S:4.2 - Architecture Unfolding Structure Use
 
-Use `ArchitectureUnfoldingStructureUse@Project` when a named constraint-governed unfolding structure is being used as architecture-relevant structure inside problem-to-structure architecturing. This dependent architecture-use relation record is defined here; use it with the relevant C.30 or C.32 pattern. It is not a root U-kind, not an architecture decision, not an architecture description, not an ADR projection, and not realization work.
+Use `ArchitectureUnfoldingStructureUse@Project` when a named constraint-governed unfolding structure is used as architecture-relevant structure inside problem-to-structure architecturing. This dependent record describes that use relation. Record any architecture decision, description, ADR projection, or realization Work through its direct pattern when that claim is current.
 
 ```text
 ArchitectureUnfoldingStructureUse@Project:

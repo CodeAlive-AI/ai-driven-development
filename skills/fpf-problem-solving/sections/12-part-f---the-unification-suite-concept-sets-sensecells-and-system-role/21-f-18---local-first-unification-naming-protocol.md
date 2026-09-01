@@ -451,8 +451,8 @@ NameCard:
   PlainLabel: DPF Suite Reference
   CandidateSet: Reference; Handbook; Overview; Companion; Manual; Guide; Using the DPF Suite; registry; index; catalogue
   CandidateCoverage: publication-form, instructional-publication, activity-name, and registry-or-finding-aid readings were compared; no plausible current head family remains open for this use
-  RejectedCandidates: Handbook and Manual imply broad instruction or completeness; Overview and Companion understate the maintained answer-and-return function; Guide suggests instructional procedure; Using the DPF Suite names reader activity; registry, index, and catalogue hide the problem-led answer
-  SelectionRationale: Reference is the smallest head that fits a maintained non-framework publication readers consult for a bounded cross-DPF answer, exact source returns, and honest gaps; the E.11.DSG opening prevents the residual citation-list overread
+  RejectedCandidates: Handbook and Manual imply broad instruction or completeness; Overview and Companion understate the problem-led answer-and-return function; Guide suggests instructional procedure; Using the DPF Suite names reader activity; registry, index, and catalogue hide the problem-led answer
+  SelectionRationale: Reference is the smallest head that fits an editioned non-framework publication readers consult for a bounded cross-DPF answer, source returns, and honest gaps; the E.11.DSG opening prevents the residual citation-list overread
   DeclaredUse: Core-facing designation of the E.11.DSG product form and readable title component for one exact continuing DPF Suite Reference series or admitted edition
   NonAdmissibleUse: no Suite, product series, edition, admission, Suite inclusion, currentness, availability, source authority, answer, lookup Work, or publication occurrence follows from the name, card, or row; the Reference is neither a framework nor an instructional Guide
   BridgeRefs: none

@@ -68,7 +68,7 @@ Use the four A.22 discriminators to identify one `U.Structure`:
 - its constituent references;
 - the obtaining relation occurrences it selects;
 - the applied constraint claims;
-- the named selection-use frame: the question or action and the overread it forbids.
+- the named selection-use frame: the question or action and the stop or return condition; add a grounded forbidden overread only when the visible structure supplies that exact inference.
 
 CGUS membership adds locally declared loci and bindings that expose how those constituents matter to the unfolding question. The selected relations and constraints must define at least two potential continuation candidates across allowed cases. The current continuation result, a description, or a publication field adds no structure-identity discriminator.
 
@@ -80,7 +80,8 @@ A22IdentityBasis:
   appliedConstraintClaimRefs[]
   namedSelectionUseFrame:
     questionOrAction
-    forbiddenOverread
+    stopOrReturnCondition
+    groundedForbiddenOverread?
 constraintGovernedProfileBasis:
   locusBindingRows[]:
     locusRef: <selectedCGUSRef, locusId>
@@ -215,7 +216,7 @@ A22IdentityBasis:
     RepairIfAnyCheckViolatedAndProposalTargetsCandidate
   namedSelectionUseFrame:
     questionOrAction: which review continuation is available now?
-    forbiddenOverread: the display is not performed Work or authorization
+    groundedForbiddenOverread?: because the displayed order can look executable, require the direct Work or authority predicate before using it as work history or authorization
 constraintGovernedProfileBasis:
   locusBindingRows[]:
     - <DesignReviewAlternatives@DR-27, candidate, design under review, DesignCandidate-A>
@@ -281,7 +282,7 @@ If a later thermal check passes while the service check still passes, acceptance
 | **CC-CGUS-3 Explanation and description separation.** | An ordinary or persisted provisional explanation concerns the domain question or proposed alternatives. Post-qualification descriptions and slices concern the CGUS. None is the structure or a membership condition. | Restore the right `EntityOfConcern` or keep the explanation ordinary. |
 | **CC-CGUS-4 Current continuation result.** | Each judgement retains its test or obtaining-relation basis, applicability, inputs, facts, polarity, dependent occurrences, window, outcome, and reason. The enabled set may contain zero, one, or several alternatives. | Mark the affected candidate unknown or stop on the missing value. |
 | **CC-CGUS-5 Separate decisions.** | Identity and membership, case result, description adequacy, and each neighboring claim are judged separately. | Reopen only the affected decision. |
-| **CC-CGUS-6 Non-workflow boundary.** | The structure and display do not prescribe or perform Work by themselves. | Move a justified work-order claim to the Method or work-plan pattern. |
+| **CC-CGUS-6 Work-order boundary.** | The selected structure and display expose branches and conditions. | Put any prescribed or performed Work order under the Method, work-plan, or Work pattern that establishes it. |
 | **CC-CGUS-7 Graph-shaped coverage.** | Branches, joins, cycles, partial order, and live alternatives are preserved or explicitly omitted for the declared use. | Keep a chain provisional or state what its demonstrative slice omits. |
 
 ### A.22.CGUS:8 - Common Anti-Patterns And Repairs

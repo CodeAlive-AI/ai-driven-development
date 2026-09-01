@@ -7,7 +7,7 @@
 **Plain-name.** Ontology-first plain rewriting.
 
 **Intent.**
-Repair technical prose whose object, claim, relation, action, role- or function-shaped wording, or flow is buried under extra apparatus. The repair is not cosmetic plain-language editing. It first separates content from apparatus by ontology, then writes the remaining content in the shortest plain technical form that preserves FPF kinds, slots, claim boundaries, and admissible use. Repair any remaining word, head, name, or wording-use problem with `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, or the specific pattern that defines, constrains, or tests the remaining claim.
+Repair technical prose that is grammatically plausible or locally true yet makes the reader supply an unsupported relation, participant, alternative, list meaning, or rhetorical branch. First recover the governing object, claim, action, required operands, referents, and kinds; then remove apparatus and other structure that contributes nothing to the intended use. The normal result is repaired text, not an audit form. Preserve every technical distinction and operational detail that changes truth or action, and route only genuinely unresolved FPF wording to `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, or the subject pattern that defines it.
 
 **Builds on.** `E.8`, `E.10`, `E.10.ARCH`, `F.18`, `A.6.P`, `A.7`, `E.18`, `E.21`, and source-use, evidence, assurance, gate, work, decision, publication, architecture, characteristic, state-family, and relation patterns when those objects carry the repaired span's claim.
 
@@ -15,119 +15,108 @@ Repair technical prose whose object, claim, relation, action, role- or function-
 
 ### F.19:0 - Use this when
 
-Use `F.19` when a bounded piece of technical prose is trying to say something precise, but the reader must pass through role labels, container words, status words, process traces, quality proof, repeated negative catalogues, reference boilerplate, or pattern-application metaphors before the object and action are visible.
+Use `F.19` when a bounded piece of technical prose is harder to understand or use than its intended claim requires. The sentence may be grammatical and every isolated statement may be true, yet the reader still has to invent a missing operand, accept an implausible relation, guess what a pronoun or relational noun refers to, interpret a list with no stated purpose, or wait through caveats and ornament before reaching the governing message.
 
-Typical in-scope prose includes:
+Common signs are:
 
-- FPF pattern prose;
-- `DRR` text and architecture notes;
-- review findings and quality-loop records;
-- project-facing FPF guidance;
-- source prose being rewritten for FPF use;
-- other technical prose whose accepted ontology, domain model, controlled vocabulary, or role model must survive simplification.
+- a verb or relational noun whose needed participant is not cheaply recoverable;
+- a grammatical subject that cannot bear the asserted predicate, even when that predicate appears inside a denial;
+- a contrast, warning, or guard against a reading that no plausible intended reader has reason to make;
+- one head or predicate imposed on unlike members;
+- examples presented as a classification, or a catalogue presented instead of a proposition; and
+- coordination repeated inside phrases and across clauses, or stacked modifiers, when one governing statement would do.
 
-**What goes wrong if missed.** Authors replace one official-sounding phrase with another. The text becomes smoother or shorter while the hidden kind error remains, or it becomes easy to read by losing the FPF kind, slot, relation position, system-role-kind or assignment distinction, function or functioning claim, claim boundary, or admissible-use boundary.
+Item count is only a cue. Two coordinated members can already be needless, while a long inventory can be exact and useful when its kind, membership rule, and closure matter. Matching kinds and individually relevant members do not by themselves justify a series: the reader must need to distinguish or retain the members together for the intended use.
 
-**What this buys.** Plain technical wording becomes an ontological discipline with less apparatus: fewer words, clearer objects, fewer repeated negative catalogues, and no loss of technical semantics.
+Apply the same method to FPF pattern prose and to other technical prose whose accepted domain terms, relations, claim boundaries, or use conditions must survive simplification.
 
-**First useful move.** Mark the span under repair. Split it into content candidates and apparatus candidates before rewriting either side.
+**What goes wrong if missed.** The prose looks careful while introducing relations, alternatives, or branches that the work does not need. A later author or generator may then copy that shape as an acceptable technical style.
+
+**What this buys.** The reader reaches the supported object, claim, and action sooner. Required technical distinctions remain; invented foils, false agency, reference puzzles, and catalogue rhetoric do not.
+
+**First useful move.** State in one plain sentence what the intended reader must recognize, understand, decide, or do. Then read the whole natural span against that sentence before changing individual words.
 
 **Not this pattern when.**
 
-- If the problem is only one overloaded word or head after the content is visible, apply `E.10`.
-- If the problem is a durable reusable name, apply `F.18`.
-- If the span already names the content-bearing relation, source-use relation, state-family value, architecture label, characteristic, quality term, function wording, evidence claim, gate claim, work claim, decision claim, or other FPF object named by value, use the specific pattern that defines, constrains, or tests that claim and say what it contributes.
-- If the source text is only being observed and not admitted into FPF-governed prose, keep the observation source-side.
+- If only one already-visible FPF word or head has an unresolved technical use, take the exact `E.10` route for it.
+- If the question is a durable reusable name, use `F.18`.
+- If source prose is only being observed and not admitted into governed technical prose, keep the observation source-side.
+- If evocation, rhythm, ambiguity, or parallelism is the declared work of a poem, quotation, ceremonial passage, or other expressive genre, do not flatten it into technical instruction. Apply `F.19` only to the technical claim or action that must remain recoverable.
+- If a language-specific grammar or idiom remains after the common semantic repair, use the applicable language profile.
 
-**Primary EntityOfConcern in plain terms.** One phrase-level, sentence-level, row-level, paragraph-level, or small-section technical-prose repair whose goal is kind-preserving plain expression.
+**Primary EntityOfConcern in plain terms.** One sentence, row, paragraph, list, or small coherent section being repaired into precise plain technical prose.
 
 ### F.19:1 - Problem frame
 
-Mature technical languages accumulate enough ontology that many bad sentences are not bad because the terms are unknown. They are bad because a simple technical claim is wrapped in process language, role language, status language, quality-proof evidence, pattern-reference boilerplate, or repeated negative distinctions.
+Local truth is necessary but not sufficient for useful technical prose. “A mouse is not the Eiffel Tower” is true, but it introduces an Eiffel-Tower reading that the reader had no reason to construct. “The evidence does not notice the error” is also locally true, yet the denial makes *evidence* the subject of an impossible noticing relation. “The result is not a final scheme of the world” invents a grand alternative before the sentence reaches its actual result.
 
-The repair question is:
+The same failure appears without negation. “Then pour” can omit the thing or destination that determines the operation. “Bearer” can leave the reader asking bearer of what. A grammatical series can give examples, methods, activities, and outcomes one false common head. Several individually valid pairs can create catalogue rhythm while never stating the proposition they are meant to support. Scenic or defensive detail can delay an urgent event or requested action.
 
-> What content remains when words that add no object, kind, relation, claim, system-role or function distinction, flow, evidence value, or user-facing action are removed?
+One connected repair therefore answers two questions:
 
-Examples inside FPF:
+1. **Semantic completeness:** can the reader recover the predicate, its required participants or operands, local referents, member kinds, and the relation actually asserted?
+2. **Pragmatic contribution:** does each explicit alternative, modifier, guard, list member, and extra proposition change what the plausible intended reader can recognize, understand, decide, or do?
 
-- "`A.15` handles the claim" when the text needs to say that `A.15` applies to a work-planning claim;
-- "pattern text" when the text means "the pattern" or "the pattern of concern";
-- "governing relation" when the named object is a pattern, not a relation;
-- long "not X, not Y, not Z" paragraphs when the text needs a positive object, action, and one stop condition;
-- corpus-projection proof written inside a pattern whose own user-facing action is not corpus projection.
-
-The same defect appears outside pattern prose. A system note may hide an evaluation claim inside process language; a project note may treat a dashboard as evidence authority when it is a publication form; an architecture memo may replace a scale-preference claim over alternatives with a platform label.
-
-These failures confuse coupled transformation flows. A pattern under development, a pattern being applied, a quality evaluation of that pattern, a project work occurrence, a source publication, and a projection record are different objects. They may influence one another; they do not become one another by being mentioned in the same paragraph.
+The defect is not a word class or a forbidden syntax. Negative polarity can be the claim. A documented anti-pattern can quote the real error. A visible diagram feature can make one overreading plausible. Ordinary metonymy and ellipsis can be clearer than formal expansion. Judge the supported relation and the receiving use, not the presence of `not`, a comma, or a particular verb.
 
 ### F.19:2 - Problem
 
-How can FPF make technical prose plain without:
-
-- treating plain language as a synonym-replacement exercise;
-- deleting content-bearing technical terms as "jargon";
-- replacing established terms with colourful synonyms or role nicknames;
-- letting process, review, projection, or quality proof become pattern content;
-- repeating the same boundary doctrine in every local pattern;
-- hiding current ontic slot, relation-position, use-relation, or claim-kind changes under a shorter phrase;
-- turning every phrase repair into a new local mini-ontology?
+How can a practitioner repair technically plausible prose that asserts unsupported relations or makes the reader invent missing structure, while preserving the kinds, claim boundaries, operational detail, and established terms that the intended use actually needs—without building a controlled language, a universal ontology of speech, a prohibited-word list, or a form for every correction?
 
 ### F.19:3 - Forces
 
 | Force | Tension |
 |---|---|
-| Plain wording vs ontology | Short prose helps readers, but careless simplification erases kinds, slots, relation positions, use relations, system-role kinds, classification judgments, assignment occurrences, function or functioning claims, ordinary meanings, or claim boundaries. |
-| Precision vs apparatus | Technical precision needs kind recovery, but extra role, record, card, table, schema, data-structure wrapping, locus, flow, status, and process words can bury the claim. |
-| Local repair vs semantic change | Some extra words are boilerplate; others carry a hidden kind, relation, current ontic slot, relation position, use relation, evidence-use relation, or admissible-use boundary. |
-| Flow separation vs readable prose | Development, evaluation, projection, and use flows must stay distinct without making every sentence narrate those flows. |
-| Reuse vs repetition | References to related patterns matter, but repeated "if X, apply Y" prose can become reference fanout. |
-| Plainness vs synonym churn | Plain prose should reduce apparatus, not create a new set of loose paraphrases for established FPF terms. |
+| Plain wording vs technical meaning | Shorter prose helps only if object kinds, relations, uses, claim boundaries, and action-changing detail survive. |
+| Local truth vs useful contribution | A clause can be true and type-compatible while answering no live question and displacing the positive path. |
+| Explicitness vs ordinary recovery | Missing operands and referents can make a puzzle, but repeating every complement or formal identity makes ordinary prose harder to think with. |
+| Guarding vs invented foils | A grounded warning or non-use boundary can prevent harm; an imaginable but unsupported mistake creates noise and teaches defensive style. |
+| Enumeration vs governing message | Lists can encode required membership or alternatives; accumulation can also replace the proposition or postpone the action. |
+| Portability vs local language needs | Predicate, participant, kind, referent, contribution, and list questions travel across languages; morphology and idiom remain local. |
+| Reviewability vs bureaucracy | A disputed or high-risk rewrite may need comparison evidence; ordinary correction should produce repaired text, not a ledger. |
 
 ### F.19:4 - Solution
 
-Use `OntologyFirstPlainRewrite` as a five-step repair over one bounded span.
+Use `OntologyFirstPlainRewrite` as one connected reading and repair over a natural sentence, row, paragraph, list, or small coherent section. Take the intended reader and use from the surrounding work; do not invent an adversarial reader or a persona form.
 
-1. **Bound the span.** Name the sentence, row, paragraph, or small section under repair. Name visible apparatus candidates: pattern-application drift, role label, container word, status word, process trace, quality proof, negative catalogue, reference boilerplate, record, card, table, schema, data-structure wrapping, or other overwrap.
-2. **Separate content from apparatus by ontology.** For each phrase part, ask what object, head kind, claim or relation, current slot or relation position, use or publication relation, admissible use, participant, and relevant flow position it carries. A trigger-shaped phrase remains content until its actual claim is recovered. Use `E.10.ROLE` once for role-shaped wording: for example, *reviewer role* may name a local system-role kind or participation in a review relation. Use `A.6.F` once for function-shaped wording: for example, *pump function* may name an expected transformation, while *the pump is functioning* states a condition. Infer neither branch from the trigger word. If a phrase part changes a live value, keep it as content; if it only restates process, a label, negative catalogue, reference boilerplate, record, form, or quality proof, classify it as apparatus.
-3. **Remove or move apparatus.** Delete the apparatus or move it to the document, record, note, or publication relation where it belongs: `DRR`, review record, quality result, architecture note, README, ToC, `E.11`, or `I.2` entry locus, projection record, release or landing evidence document, or source-side note. Do not replace it with a smoother synonym, role label, container word, status word, record, card, table, schema, data-structure wrapper, or publication-form word.
-4. **Restore remaining content precision.** Restore every complement needed to determine the claim: what was selected, changed, compared, transformed, published, evaluated, or relied on. Use `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, or the specific pattern that defines, constrains, or tests the remaining word, head, relation, claim, slot, use, name, or admissible-use boundary.
-5. **Rewrite and check loss.** Write the shortest plain technical sentence that preserves the repaired object, kind, claim, relation, action, current slot, relation position, use relation, any live system-role, function, ordinary-wording or flow distinction, established term, and admissible use. Also preserve only the action-guiding claim details consumed by the declared use: exact predicate and participants, polarity, quantity or threshold, temporal boundary and order, criterion, tolerance, exception, applicability condition, and other explicit operational detail. The rewrite fails if it changes a live value without an accepted semantic decision or becomes harder for the declared reader to use.
+#### F.19:4.1 - One connected reading and repair
 
-Keep ontology visible only where it carries the sentence. A term-source or type annotation is needed only when it changes how the reader identifies the object, kind, relation, slot, use, publication boundary, admissible use, or applicable rule. A record, card, table, schema, data structure, dashboard, or named form remains apparatus unless it carries one of those values. If ordinary domain wording already preserves them, keep the ordinary sentence. "The aircraft flies" is better than a typed expansion unless the flight function, system kind, or slot relation is under repair.
+1. **State the governing message.** Say what object, claim, action, event, or distinction the span needs to convey. Mark process traces, status language, reference boilerplate, quality proof, defensive caveats, ornamental detail, and other apparatus that may be displacing it. Apparatus receives no protection merely because it is true or polished.
+2. **Recover the predicate and its participants.** Identify the operation and every participant that changes it. This may be an actor, object, source, target, result, or another required operand. Apply the same question to verbal and relational nouns: recover *of what*, *for what*, *between what*, or another required participant. Leave an argument implicit only when one intended value is cheaply and uniquely recoverable from the local span.
+3. **Check predicate compatibility.** The grammatical subject must be able to bear the asserted predicate under the intended literal or metonymic reading. Check inside negation, modality, conditions, examples, and the author's own quoted formulation: denying that evidence notices an error still introduces an evidence-noticing relation. Keep ordinary metonymy when the relation is established and the capable participant or work remains recoverable: a diagram may show, a framework may help, a reminder may cue, and a constraint may limit.
+4. **Resolve referents and kinds.** Pronouns, demonstratives, omitted heads, and repeated labels must select one locally appropriate referent. Preserve the object kind, claim or relation kind, slot or relation position, use and publication boundary, and flow distinction whenever one changes the claim. A shared grammatical position does not make different FPF kinds interchangeable.
+5. **Test contribution.** Try deleting every optional contrast, guard, modifier, example, coordinated member, and extra proposition. Remove it when the plausible intended reader can still recognize, understand, decide, and act in the same way. Local truth and grammatical fit do not earn a phrase a place by themselves.
+6. **Resolve coordination and lists on two axes.** First ask whether the receiving use needs a series at all. A list or parallel construction earns its form only when the reader must distinguish or retain its members together; otherwise select the governing claim, relation, or representative case. If a series is needed, determine its membership semantics. State the proposition or action it serves; use one kind or predicate only when it fits every member; distinguish a closed set, illustrative examples, alternatives, a sequence, several direct relations, and a failed ontology. A closed set needs its kind, membership rule, and closure. Illustrative examples need the proposition or kind first and a non-exhaustive cue when a plausible reader could mistake them for a classification. Then test discourse load: keep a member only when it adds a distinct consequence; reduce coordination repeated at several grammatical levels and modifier chains that make the reader retain needless branches or postpone the governing message. Length is evidence to inspect, not a verdict.
+7. **Foreground, rewrite, and compare.** Put the governing event, claim, requested action, or decision before optional atmosphere, examples, caveats, and catalogues. A prerequisite may come first when it is needed for safe interpretation or action. Write the shortest ordinary technical sentence that preserves every live predicate and participant, established term, polarity, and action-changing detail. Such detail can include quantity or threshold, sequence or timing, criterion or tolerance, exception, and applicability. Compare before and after: any unsupported change of kind, relation, scope, use, currentness, or operational effect is a loss and blocks the rewrite unless another accepted decision authorizes it.
 
-Treat `exact`, `direct`, `current`, `governed`, `subject`, `owner`, `defining`, and similar qualifiers as content only when they distinguish live alternatives. Remove them when no such contrast changes the truth, action, stop, or reliance. A PatternID may remain an ordinary citation; expand it into a claim-bearing episteme, `ClaimGraph`, `U.MethodDescription`, `U.Method`, actor, assignment, `U.Work`, or another formal identity only when the current claim or a named later use depends on that distinction.
+Keep ordinary domain wording ordinary. A qualifier such as `exact`, `direct`, `current`, `governed`, or `defining` remains only when it distinguishes a live alternative. A PatternID may remain an ordinary citation; open a formal identity branch only when the current claim or a named later use consumes it. Treat a pattern episteme as a `U.MethodDescription` only after `A.3.2` establishes the described Method. For an actual dated Work claim, recover its basis through the applicable `A.13`, `A.15.1`, and `F.6` route. Use `E.10.ROLE` or `A.6.F` once when role- or function-shaped wording remains genuinely unresolved.
 
-Keep ordinary practitioner action and instrumental pattern-use wording ordinary when it does not assert a particular dated Work occurrence. “Use `E.9` to record the decision” and “the framework maintainer compares the editions” need no invented Method, MethodDescription, performer, assignment, or Work identity.
+#### F.19:4.2 - Plausible-reader guards and cold-reader recovery
 
-Open the identity-bearing branch only when the sentence deliberately asserts a particular dated `U.Work` occurrence. Then point to its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution. Add a local system-role kind or a separate System-classification judgment only when that neighboring claim matters. Treat a pattern episteme as a `U.MethodDescription` only after `A.3.2` establishes that it has an already admitted Method as its `EntityOfConcern` and explains how that Method is performed. Otherwise cite the applicable pattern content as guidance and use `A.3.1` for the Method itself.
+Use two reader tests for different decisions.
 
-When one sentence joins unlike claims and no genuine common head covers them, split the claims and use `E.10:0.2c.17` for the resulting list. Do not invent an umbrella object merely to preserve one grammatical subject.
+- The **plausible intended reader** has the knowledge and task presupposed by the text. Use this reader to decide whether a foil, guard, warning, or contrast deserves mention. Do not substitute an adversarial reader who can imagine any false inference, or the author who already knows the answer.
+- The **cold intended reader** lacks the author's private context and unpublished notes. Use this reader after the rewrite: they can recover the object, predicate, participants, relevant kind or ordinary status, relation, action-changing detail, and next useful action.
 
-Use the full result form when the repair must be inspectable; otherwise a local rewrite plus the kind-preservation check is enough.
+Retain a negative alternative, denied consequence, warning, or non-use statement only when the exact rejected reading has an independent local ground; the reading is coherent and type-compatible; a plausible intended reader could take it here; and the distinction changes truth, understanding, selection, safety, stop, reliance, or action. An earlier or source claim, an observed recurring mistake, a serious competing position, a visible representation feature, or an applicable safety risk can supply the ground. The guard itself cannot.
 
-#### F.19:4.1 - Result form
+Even a grounded guard should be the smallest clear correction. When actor allocation is the useful content, state it positively: “On receiving new evidence, the reader decides whether to reopen checking or revision.” When currentness is the useful content, state the direct use: “This guide conveys the seminar of 1 February 2026; check current rules against the current FPF edition.” Keep material negation, documented anti-patterns, fair disputes, and safety stops when their polarity or boundary is itself the claim.
 
-| Field | Meaning |
-|---|---|
-| `TextSpanRef` | Bounded span under repair. |
-| `ApparatusCandidateSet` | Visible pattern-application, role, record, card, table, schema, data-structure wrapping, locus, flow, status, process, negative-catalogue, reference, or quality-proof apparatus candidates. |
-| `ContentCandidateSet` | Phrase parts that carry an object, claim, relation, value in `KindAndClaimMap`, action-guiding claim detail, flow position, evidence-use value, or user-facing action. |
-| `ObjectOfConcern` | Object the span is about. |
-| `KindAndClaimMap` | Head kind, claim kind, relation kind, current slot, relation position, use relation, publication relation when it changes admissible use, scope, and—when another pattern contributes—the pattern id plus what its content defines, constrains, or tests. |
-| `ActionGuidingClaimDetails` | Only details consumed by the declared use: exact predicate and participants, polarity, quantity or threshold, temporal boundary and order, criterion, tolerance, exception, applicability condition, or another explicit operational distinction. Empty when none is current. |
-| `FlowPosition` | Design, run, or coupled-flow position only when that position changes the claim or use. |
-| `ApparatusDisposition` | Removed, moved, retained as content, or blocker when separation is not yet possible. |
-| `RemainingContentPrecisionRestoration` | `not needed`, `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, a named pattern plus its concrete contribution, or blocker. |
-| `PlainRewrite` | Short rewrite after apparatus removal and remaining-content precision restoration. |
-| `KindPreservationCheck` | Pre-rewrite and post-rewrite object kind, relation or claim kind, current slot, relation position, use relation, admissible use, scope, and every `ActionGuidingClaimDetails` value; disposition is `preserved`, `split`, `intentionally changed by accepted decision`, or `blocker`. |
-| `LossCheck` | What became false, less actionable, less local, less current, less recoverable, or less usable—including lost quantity, threshold, polarity, order, timing, criterion, tolerance, exception, or applicability condition—if the rewrite is accepted. |
+#### F.19:4.3 - Result and local revalidation
 
-#### F.19:4.2 - Pattern-prose specialization
+The ordinary result is the repaired text, or a blocker naming the unresolved meaning. Do not require a separate result form, card, table, progress row, or recorded answer for each facet of the reading.
 
-When the repaired prose is an FPF pattern, apply the same algorithm with one purpose test:
+After changing words or syntax, reread the changed sentence and only the nearby text needed to determine its referents, predicate, participants, contrast, modality, support, action, and result. The earlier semantic verdict does not transfer to new wording. Unchanged spans and conclusions remain reusable; a local edit does not trigger an automatic whole-document pass.
 
-> Does this sentence address the pattern's intended user, or does it record development, review, projection, landing, quality, or source-management evidence about the pattern version?
+When a named high-risk or disputed decision needs inspectable evidence, show only the before text, repaired text, live values that had to survive, and any unresolved blocker. Use the receiving decision's existing comparison or review result rather than inventing an `F.19` ledger.
+
+If ordinary reading settles the issue, stop. Open `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, or an exact subject pattern only for a genuinely unresolved FPF word, kind, relation, role, function, name, source-use, or admissible-use question. A trigger helps find a candidate; it neither bans the wording nor closes the judgement.
+
+#### F.19:4.4 - Pattern-prose specialization
+
+When the repaired prose is an FPF pattern, apply the same method with one purpose test:
+
+> Does this sentence help the pattern's intended user recognize and perform the pattern, or does it record development, review, projection, landing, quality, or source-management evidence about this version?
 
 If it records evidence about the pattern version, keep that evidence outside the pattern unless the pattern's own primary `EntityOfConcern` is that evaluation or projection object. The evidence can cause edits to the pattern; it is not automatically pattern content.
 
@@ -136,97 +125,94 @@ Pattern prose keeps:
 - the pattern's own primary `EntityOfConcern`;
 - the first useful move;
 - the practical delta and cost of missing it;
-- local boundary prose only for a documented local confusion and named stop condition;
-- short declarative references to related patterns after the pattern's own content is visible.
+- a local boundary only for a documented confusion or action-changing stop; and
+- short references to related patterns after the pattern's own content is visible.
 
 Pattern prose moves out:
 
 - package-placement rationale;
-- correspondence about producing the draft rather than using the pattern;
-- quality-status proof;
-- README, ToC, `E.11`, `I.2`, retrieval, card, monolith-parity, or landing evidence;
+- correspondence about producing or reviewing the draft rather than using the pattern;
+- quality, projection, monolith-parity, landing, and source-management evidence; and
 - repeated boundary doctrine already carried by another pattern.
 
 ### F.19:5 - Archetypal Grounding
 
-| Grounding slice | Before | F.19 repair |
+This bounded regression set keeps one distinct semantic or use boundary per row. It is not a vocabulary of prohibited forms.
+
+
+| Case | Before | Repair or disposition |
 |---|---|---|
-| Pattern use, ordinary | "`A.15` handles the work-planning claim." | "Use `A.15` to plan the work." |
-| Pattern use, identity-bearing | "The pattern performed the planning." | "Engineer E performed planning Work W. Point to W's basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution; use `A.3.2` only if a named episteme describes the enacted Method." |
-| Pattern and relation, ordinary | "The governing relation is `C.29`." | "Use `C.29` to test whether the mathematical lens is admissible for this task." |
-| Pattern and relation, identity-bearing | "`C.29` says so." | "If a comparison depends on the rule edition, cite the claim-bearing episteme and `ClaimGraph` that contain the admissibility rule." |
-| Pattern-text purpose | "Pattern text must not contain corpus projection evidence." | "A pattern must not contain projection evidence about itself." |
-| Evaluation scope | "The evaluation has pre-landing host-set use." | "This is a host-only evaluation; corpus-entry values need corpus-projection evidence." |
-| Negative catalogue | "This pattern is not proof, not work, not a gate, not a decision." | "This result evaluates pattern quality. Use `A.10` for any separate project-evidence claim." |
-| Role-shaped label | "The platform owns scale." | "This scale compares platform and non-platform alternatives." |
-| Publication and evidence mix | "The dashboard is the evidence gate." | "The dashboard presents evidence. Use `A.10` for the evidence claim and `A.21` for any gate decision." |
-| Comparison, carrier, and publication mix | "E.4.PFIP preserves expression, carrier, and publication." | "The framework maintainer compares the predecessor and candidate publication expressions for the declared use. Use `E.10:0.2c.17` to separate the expression comparison from carrier-bearing and publication-occurrence claims." |
-| Operational-detail loss | "Rewrite 'Boil for five minutes after simmer begins' as 'Cook until ready'." | "Reject the rewrite. It keeps a broad cooking action but loses the five-minute duration, start condition, and usable stop criterion." |
+| Ordinary versus identity-bearing pattern use | “`A.15` handles the work-planning claim” or “the pattern performed the planning.” | For ordinary guidance write “Use `A.15` to plan the work.” If the sentence deliberately asserts a dated Work occurrence, name its capable participant and recover the Work basis before attribution. |
+| Publication and evidence kind | “The dashboard is the evidence gate.” | “The dashboard presents evidence. Use `A.10` for the evidence claim and `A.21` for any gate decision.” |
+| Operational-detail loss | “Rewrite ‘Boil for five minutes after simmer begins’ as ‘Cook until ready’.” | Reject the rewrite. It loses the duration, start condition, and usable stop criterion. |
+| Invented foil | “The concluding practical result is not a final scheme of the world, but the ability to problematize again.” | No live world-scheme reading is grounded. Write: “The concluding practical result is the ability to problematize again and choose the next move deliberately.” |
+| Denied impossible agency | “The evidence does not notice the error and does not begin a new cycle.” | Evidence supplies grounds; a reader or system evaluates them. Write: “New evidence gives the reader grounds to check or revise the first distinction and decide whether to reopen the work.” |
+| Unsupported currentness guard | “Historical modality does not turn the seminar claims into the current FPF norm.” | State the dated source and current-use action: “This guide conveys the seminar of 1 February 2026; check current rules against the current FPF edition.” |
+| Missing operation operand | “Take the mixture and then pour.” | If the object or destination is not uniquely recoverable, restore it: “Pour the mixture into the flask.” |
+| Incomplete relational noun | “Give the bearer to the next stage.” | Name what is borne and the transfer relation, or use the ordinary domain noun. |
+| False common head | “The method selects, publishes, and evaluates the alternatives.” | Split the claims and name the capable actors or exact relations. Do not invent one subject merely to keep the sentence symmetrical. |
+| Catalogue instead of proposition | “Goals and objectives, forms and methods, quality and efficiency are supported.” | State the actual capability or decision. Keep only members with distinct consequences. |
+| Illustrative list read as classification | A bare plural head is followed by many instances with no signal that the list is partial. | Put the proposition or kind first, mark the cases as examples when completeness is plausibly ambiguous, and retain only representative cases. |
+| Delayed governing event | An emergency report describes birds, wind, birches, heat, mist, and animals before saying that a house-museum is burning and a fire engine is no longer needed. | Put the event, location, safety consequence, and requested response first. Keep only detail that changes dispatch, safety, evidence, or identification. |
+| Material negation | “Do not energize the unit while the cover is open.” | Retain when the open-cover state creates the named risk and the stop changes action. The polarity is the instruction. |
+| Ordinary metonymy | “The diagram shows the dependency.” | Retain when the diagram depicts it and the reader can recover the represented relation; do not expand a clear sentence into a Method and Work trace. |
+| Recoverable ellipsis | “Take the solution, mix, and pour it into the flask.” | Retain when `it` has one local antecedent and the destination is stated. The reader need not solve a reference puzzle. |
+| Required long set | A legal set, interface signature, inventory, or safety checklist has many members. | Retain the full series when its kind, membership or governing rule, and closure are declared and each member changes use. |
+| Expressive parallelism | “Расцветали яблони и груши...” in a song, quotation, or discussion of poetic form. | Retain only where evocation or rhythm is the declared work. In a technical message, rhythm does not earn repeated pairs or a delayed governing claim. |
 
 ### F.19:6 - Bias-Annotation
 
-`F.19` deliberately biases toward shorter, reader-facing prose. The protected value is kind-preserving clarity, not brevity by itself. A rewrite that removes terms while losing object kind, relation kind, current ontic slot, relation position, use relation, source-use relation, or admissible-use boundary is worse than the original.
+`F.19` deliberately biases toward direct, reader-usable technical prose. The protected value is kind-preserving clarity, not brevity by itself. A longer rewrite is better when it restores a participant, relation, boundary, or operational detail that the declared use needs.
 
-`F.19` also protects against two common reviewer biases:
-
-- **negative-catalogue bias:** explaining a class by long lists of what it is not;
-- **apparatus-preservation bias:** replacing one process, role, record, card, table, schema, data-structure wrapper, locus, flow, status, or quality-proof phrase with another phrase that still hides the object.
+| Likely bias | Failure | Countermove |
+|---|---|---|
+| Formal-completeness bias | Symmetrical contrasts, caveats, and lists look rigorous although they add no supported distinction. | Apply the contribution test and state the positive path first. |
+| Adversarial-reader bias | Any imaginable mistake is treated as a reason for a guard. | Require an independent ground and a plausible intended reader. |
+| Apparatus-preservation bias | A process, status, record, card, schema, or quality-proof phrase is replaced by another wrapper. | Recover the object and action, then remove or move the wrapper. |
+| Overformalization bias | Clear metonymy, ellipsis, or a PatternID citation expands into type labels and Work machinery. | Formalize only a live distinction or unresolved relation. |
+| Genre-flattening bias | Useful rhythm, evocation, or deliberate ambiguity is treated as defective technical accumulation. | Apply `F.19` only where precise technical recognition or action is the declared use. |
 
 ### F.19:7 - Conformance checklist
 
-| Check | Requirement |
+These are acceptance questions for one repaired span. They are not separate attention steps or separately recorded results.
+
+| Check | Passing condition |
 |---|---|
-| `CC-F19-1` | The repair names the text span and visible apparatus candidates before rewriting. |
-| `CC-F19-2` | The repair separates apparatus from content by the values named in `KindAndClaimMap`, `ActionGuidingClaimDetails`, and `FlowPosition`; lexical dislike is not enough. Role- and function-shaped wording remains content until `E.10.ROLE` or `A.6.F` recovers the actual claim. |
-| `CC-F19-3` | Apparatus is removed or moved before wording-use precision restoration is applied to the remaining content. |
-| `CC-F19-4` | Content-bearing wording remains content and is repaired by `E.10`, `E.10.ARCH`, `F.18`, or the specific pattern that defines, constrains, or tests the remaining claim rather than deleted as style. |
-| `CC-F19-5` | A removed apparatus word is not replaced by a synonym, metonymy, role label, container word, or status word that carries the same hidden apparatus. |
-| `CC-F19-6` | Established FPF terms are preserved unless a named precision-restoration or naming pattern changes them. |
-| `CC-F19-7` | Every accepted rewrite includes a `KindPreservationCheck`; a change to object kind, relation or claim kind, current slot, relation position, use, scope, or a live action-guiding discriminant without an accepted decision remains a blocker. |
-| `CC-F19-8` | Development, evaluation, projection, landing, use-found, repair, and source-management evidence stay in the evidence, projection, release, or publication loci that carry them unless the text is about that flow object. |
-| `CC-F19-9` | The accepted rewrite is shorter or clearer without losing technical semantics or action-guiding detail. A longer rewrite is admissible only when it recovers a hidden kind, relation, role or assignment distinction, function claim, slot, claim boundary, quantity, threshold, polarity, order, timing, criterion, tolerance, exception, or applicability condition needed by the declared use. |
-| `CC-F19-10` | The repair records any loss of truth, action, stop criterion, value, usability, locality, currentness, kind recoverability, or explicit operational detail used by the declared reader. |
-| `CC-F19-11` | Term-source or type annotation is used only when it changes the object, kind, relation, slot, use, publication boundary, admissible use, or rule the reader must apply; stable ordinary prose is not expanded into type labels. |
-| `CC-F19-12` | The accepted plain rewrite passes MG-DA cold-reader recovery: a reader without the `DRR`, campaign notes, or author memory can state the content-bearing object, kind or ordinary status, relation or claim position, admissible use, next practical action, and every quantity, threshold, ordering, timing, criterion, exception, or applicability condition that changes that action. When another pattern contributes, the reader can recover its id and contribution. Broad heads such as `object`, `item`, `value`, `relation`, `record`, `condition`, `basis`, `material`, and unqualified `specialization` are not plain enough when they hide what the practitioner must recognize. |
-| `CC-F19-13` | Every added qualifier or formal identity has a named live contrast: it changes truth, action, stop, migration, publication, reuse, or reliance. An ordinary PatternID citation does not by itself require a `ClaimGraph`, `U.MethodDescription`, `U.Method`, actor, assignment, or `U.Work` expansion. |
-| `CC-F19-14` | After apparatus removal, the sentence names every complement and live discriminant needed to determine what was selected, changed, compared, transformed, published, evaluated, relied on, started, stopped, ordered, limited, or excepted. |
-| `CC-F19-15` | Ordinary practitioner action and instrumental “use pattern X” wording stays ordinary when it does not assert identity-bearing dated Work. When it does, point to the basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution. Use one thin `E.10.ROLE` or `A.6.F` route for a role- or function-shaped trigger; do not copy either recovery taxonomy. `U.MethodDescription` appears only after the `A.3.2` test passes. |
-| `CC-F19-16` | A heterogeneous list is split when its members need different heads or predicates; the rewrite uses `E.10:0.2c.17` instead of inventing one umbrella head. |
+| `CC-F19-1` Governing message | The intended reader and use are clear, and the governing object, claim, event, action, or distinction appears before optional apparatus. |
+| `CC-F19-2` Semantic completeness | The predicate, required participants or operands, relational-noun complements, and local referents are recoverable without author memory or a reference puzzle. |
+| `CC-F19-3` Predicate and kind fit | Each subject can bear its predicate under the intended literal or metonymic reading; object kind, claim or relation kind, slot, relation position, use, and publication boundary remain distinct where they change meaning. The test includes negation and modality. |
+| `CC-F19-4` Meaning and loss preservation | The rewrite preserves every live term, polarity, quantity, threshold, temporal or ordering condition, criterion, tolerance, exception, applicability boundary, and other action-changing detail. Any accepted change of kind, relation, scope, currentness, or use has its own decision. |
+| `CC-F19-5` Grounded contribution | Every optional guard, contrast, modifier, example, and coordinated member changes recognition, understanding, evidence, decision, safety, stop, reliance, or action for a plausible intended reader. A negative alternative has an independent local ground and is the smallest clear correction. |
+| `CC-F19-6` Coordination and foregrounding | A list states the proposition or action it serves; its kind, predicate, membership semantics, and closure are not fabricated; illustrative status is clear when needed; and coordination or modifiers do not postpone the governing message. |
+| `CC-F19-7` Plain result | A cold intended reader can recover the repaired claim and next useful action. The ordinary output is repaired text or a blocker, not a mandatory form or ledger. |
+| `CC-F19-8` Local revalidation | Any changed wording or syntax has been reread with only its meaning-dependent neighbours. An older semantic verdict is reused only for unchanged text. |
 
 ### F.19:8 - Common anti-patterns and how to avoid them
 
-| Anti-pattern | Symptom | Repair |
+| Anti-pattern | What fails | Repair |
 |---|---|---|
-| Lexical paint | One umbrella word is replaced by another while the object kind stays hidden. | Recover the object kind and rewrite in the object's technical name. |
-| Hypergeneric repair | The rewrite uses `object`, `item`, `value`, `relation`, `record`, `condition`, `basis`, `material`, or `specialization` to sound precise while hiding the actual object, relation, rule, or action. | Restore the practitioner-recognizable object and relation; for specialization, say what specializes what and which inherited or changed slots or uses matter. |
-| Plain-language drift | Smooth prose drops the kind named by value or admissible-use boundary. | Remove apparatus first, then restore remaining wording precision before shortening. |
-| Flow smuggling | Development, projection, landing, or evaluation evidence is written as user-facing guidance. | Move the evidence to the review record, quality result, projection record, release document, or other appropriate evidence document and keep only the resulting user-facing action or boundary. |
-| Role-shaped label as ontology | The word *role* is treated as one technical value or replaces the object kind. | Keep the phrase as content until `E.10.ROLE` recovers the actual claim; do not infer a branch from the word alone. |
-| Function-shaped label as ontology | The word *function* is treated as one technical value or as proof of functioning, capability, assignment, or Work. | Keep the phrase as content until `A.6.F` recovers the claim; allow metonymy or several simultaneous readings without copying its dispatch here. |
-| False common head | One grammatical subject is made to select, compare, carry, publish, and evaluate unlike things. | Split the claims and use `E.10:0.2c.17`; retain only heads that fit every listed member. |
-| Slot label as ontology | A slot, field, relation-position, or use-relation label replaces the object kind, or the same object in several slots or relation positions is treated as several kinds. | Preserve object kind, slot, relation position, and use separately; cite the specific pattern only when its definition, constraint, or test is needed. |
-| Apparatus-looking data structure | A record, card, table, schema, dashboard, or data-structure word is kept because it sounds precise, but it does not carry the EntityOfConcern, slot relation, publication boundary, admissible use, or next action. | Remove it, or use `E.24.CD`, `E.24.PUB`, or the specific content pattern when the structure really carries a candidate-ontic, publication, or domain relation. |
-| Negative catalogue | The sentence defines an object by listing what it is not. | Lead with the positive object and action; keep only local documented confusion and named stop condition. |
-| Over-annotation as precision | The rewrite replaces a clear domain sentence with type labels, source-ontology tags, or slot names that do not change the claim. | Keep the domain sentence and annotate only the term or relation under repair. |
-| Triggerless formal expansion | A PatternID citation becomes an “exact direct current subject owner”, `ClaimGraph`, Method, actor, assignment, or Work claim even though no alternative identity changes the result. | Keep the ordinary citation and action. Open the formal branch only after naming the contrast or later use that consumes it. |
-| Overformalized precision | The rewrite preserves all terms but makes the sentence harder to think with or generalize from. | Keep the content-bearing kind and claim, drop apparatus that changes neither, and use a plain technical sentence plus a reference named by value where needed. |
-| Apparatus-preserving paraphrase | A rewrite changes wording but keeps the same status, process, or quality-proof apparatus. | Return to the apparatus-and-content split and repair by value. |
+| Lexical paint | One official-sounding word replaces another while the object or relation remains hidden. | Recover the practitioner-recognizable object, predicate, and participants before choosing words. |
+| Truthful noise | A true denial or caveat answers an implausible question introduced by the sentence itself. | Remove the invented question and state the positive claim or action. |
+| Impossible agency under denial | An incapable subject receives a predicate only so the prose can deny it. | Name the capable participant and allocate the action positively. |
+| Missing operand as elegance | A verb or relational noun omits the value that determines the operation or relation. | Restore the participant unless one intended value is cheaply and uniquely local. |
+| False common head | One subject or umbrella kind is made to govern unlike predicates or members. | Split the claims or state their several direct relations. |
+| Enumeration as coverage | Examples, near-synonyms, abstract pairs, or several kinds simulate breadth but do not state a usable proposition. | Put the proposition first; mark examples; retain only independently consequential members. |
+| Locally valid accumulation | Every pair or modifier passes alone, but nested coordination creates a catalogue and delays the message. | Summarize, subordinate, split, or delete by contribution and foreground the governing clause. |
+| Apparatus-preserving paraphrase | Process, status, quality proof, record, card, table, or schema survives under smoother wording. | Move evidence to its proper locus and keep only user-facing content. |
+| Trigger as verdict | A word list bans normal metonymy, negation, long sets, or expressive prose, or its silence is treated as clearance. | Use triggers only to locate candidates; decide from the whole span and declared use. |
+| Checklist explosion | One semantic reading becomes separate forms or progress items for valency, agency, kind, referent, lists, and style. | Perform one connected repair and return the repaired text; use external attention methods only when the surrounding work needs them. |
 
 ### F.19:9 - Consequences
 
-`F.19` makes technical prose easier to read because it removes apparatus before shortening the sentence. It also makes reviews stricter: a pleasant paraphrase does not count unless the pre-rewrite and post-rewrite kind, relation, current ontic slot, relation position, use relation, admissible use, and scope are preserved or deliberately changed by accepted decision.
+Technical prose becomes easier to trust and use because every asserted relation has supported participants, every retained guard answers a plausible question, and lists serve a visible proposition or action. The pattern also removes a source of stylistic copying: authors no longer see defensive truth, false symmetry, and exhaustive-looking catalogues presented as the normal shape of precision.
 
-The cost is that some edits need a short repair note before they look simple. That cost is intentional. Without the note, agents tend to do lexical replacement, narrow a graph into a sequence, widen a work occurrence into a method, turn a publication into evidence, or hide a pattern application under a route-like metaphor.
+The cost is one semantic reread of the changed wording and its meaning-dependent neighbours. That cost stays local. Ordinary correction produces repaired text; only a named high-risk or disputed decision needs comparison evidence.
 
 ### F.19:10 - Rationale
 
-Plain technical style in FPF is not a separate aesthetic layer. It is the visible result of ontology-first repair with less apparatus. The order matters:
+Precise plain language has two obligations. The sentence must be semantically complete enough to recover its predicates, participants, referents, kinds, and operational detail. Every additional structure must also earn its place by changing understanding or use for the intended reader. Either obligation alone is insufficient: a fully typed sentence can still be noise, and a short sentence can still hide its object.
 
-1. remove or move boilerplate;
-2. restore remaining wording, names, relations, slots, and uses through the specific pattern contribution needed by the claim;
-3. write the shortest sentence that keeps the recovered meaning.
-
-Putting `F.19` beside wording-use restoration keeps `E.10` from becoming a phrase-style super-pattern. `E.10` catches words and heads whose kind or use is hidden; `E.10.ROLE` and `A.6.F` recover the actual role- or function-shaped claim. `F.19` catches the earlier phrase-level problem: content may not be visible until process, label, status, reference, quality, or negative-catalogue apparatus is removed.
+The order of repair therefore matters: recover the governing message and relations, remove unsupported structure and displaced apparatus, then write the shortest ordinary sentence that preserves the live meaning. `E.10` remains a cue and a route for unresolved FPF wording; it is not a rival normal-pass algorithm. Attention management remains outside the language pattern.
 
 ### F.19:11 - SoTA-Echoing
 
@@ -234,28 +220,27 @@ Putting `F.19` beside wording-use restoration keeps `E.10` from becoming a phras
 
 | Practice question | Exact source and status | Selected payload and limit | Source-use decision, receiving locus, qualification, and reopen |
 |---|---|---|---|
-| How should ordinary technical prose help its intended reader act without being "dumbed down"? | ISO 24495-1:2023, *Plain language — Part 1: Governing principles and guidelines*, current published foundation (`https://www.iso.org/standard/78907.html`); Digital.gov, *Principles of plain language* and *Writing for understanding*, current living US-government practice guide (`https://digital.gov/guides/plain-language/principles`, `https://digital.gov/guides/plain-language/writing`), checked 2026-08-19. | Declare the reader and task; put the usable object and action first; organize for finding, understanding, and use; keep terms the intended reader needs. Neither source defines FPF ontology or requires expert prose to use general-public vocabulary. | **Adapt — reason:** these moves improve F.19's ordinary path without changing its semantic boundary. **Receiving loci:** F.19:0 first useful move; F.19:4 steps 1 and 5; `CC-F19-9` and `CC-F19-12`. **Qualification/currentness:** current standard and current practice guide, not FPF semantic authority. **Reopen:** a new edition changes a used principle, or cold-reader evidence shows that these moves no longer support the declared use. |
-| How should plain prose address readers outside the author's specialty while retaining scientific content? | ISO 24495-3:2026, *Plain language — Part 3: Science writing*, Edition 1, current published standard (`https://www.iso.org/standard/86938.html`). | It extends the reader-sensitive principles of Part 1 to science writing for people with different backgrounds and interests. It expressly does not govern specialist scientific writing, and it supplies no test for FPF kinds or terms. | **Adapt — reason:** the cross-specialty reader boundary sharpens the cold-reader check without authorizing loss of technical content. **Receiving loci:** F.19:4 step 5 and `CC-F19-12`. **Qualification/currentness:** current for plain science communication, not proof that a specialist FPF distinction is dispensable. **Reopen:** the standard changes materially, or an F.19 case needs a different expert-to-expert boundary. |
-| When is controlled technical language worth its added restriction and maintenance cost? | ASD-STE100, *Simplified Technical English: Standard for Technical Documentation*, Issue 9 (2025-01-15), current issue (`https://www.asd-ste100.org/`). | Its controlled vocabulary and writing rules reduce lexical and syntactic ambiguity in multilingual, safety-sensitive maintenance documentation. That setting does not show that a controlled dictionary, one-word/one-meaning rule, or compliance apparatus improves ordinary FPF prose. | **Reject as the default FPF language; adapt only as a comparison probe — reason:** F.19's cheap ordinary path remains better unless a declared high-risk multilingual use shows otherwise at comparable effort. **Receiving loci:** F.19:4 step 5 and `CC-F19-9`/`CC-F19-12`; no controlled-language machinery is imported. **Qualification/currentness:** current controlled-language practice with an aerospace-maintenance origin. **Reopen:** an F.19 case demonstrates that bounded restrictions outperform the ordinary path for its declared reader and risk. |
-| What action-guiding detail must survive when the prose tells someone what to do? | IEC/IEEE 82079-1:2019, *Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements*, Edition 2, published and marked for revision (`https://www.iso.org/standard/71620.html`). | It distinguishes step-by-step instructions within information for use and treats usable instructions as purpose- and user-sensitive. Its full information-management process, competency scheme, and evaluation apparatus are much broader than a bounded F.19 rewrite. | **Adapt the action-preservation branch; reject the surrounding documentation process — reason:** sequence, condition, quantity, warning, and stop detail improve the worked case and checks, while the larger apparatus does not improve them at comparable effort. **Receiving loci:** F.19:4 step 5, `ActionGuidingClaimDetails`, the operational-detail case, and `CC-F19-9`/`CC-F19-10`/`CC-F19-14`. **Qualification/currentness:** current published product-information reference, already marked for revision. **Reopen:** its successor changes a used principle, or an F.19 case requires a further action detail. |
-| Can legally constrained prose become clearer without losing controlled terms or obligations? | ISO 24495-2:2025, *Plain language — Part 2: Legal communication*, current published standard (`https://www.iso.org/standard/85774.html`); US SEC, *A Plain English Handbook: How to Create Clear SEC Disclosure Documents* (1998; SEC page 1999), retained lineage (`https://www.sec.gov/about/reports-publications/newsextrahandbook`). | The current standard shows that reader access can coexist with nuanced concepts, required structures, rights, and obligations. The SEC handbook is lineage for concrete, direct presentation. Neither source makes legal drafting or disclosure compliance part of ordinary FPF authoring. | **Adapt the meaning-preservation lesson; reject legal-process transfer — reason:** the branch supports necessary terms without importing a legal-document method. **Receiving loci:** F.19:4 step 5 and the plain-language-drift and synonym-churn boundaries. **Qualification/currentness:** ISO 24495-2 is current legal-communication guidance; the SEC handbook is lineage only. **Reopen:** F.19 acquires a legal-use case, or a later source changes the retained lesson. |
-| What prevents a plain rewrite from changing an FPF claim while removing apparatus? | Current FPF patterns `E.8`, `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, `A.6.P`, and `E.21`, internal governing dependencies. | They recover the actual word, head, role- or function-shaped claim, relation, name, use, and quality loss before the sentence is shortened. They are not external evidence that F.19 is SoTA. | **Adopt as internal dependencies — reason:** they define, constrain, or test the meaning that F.19 must preserve. **Receiving loci:** F.19:4 steps 2–5, the result form, conformance checks, and Relations. **Qualification/currentness:** current FPF dependencies, kept thin rather than copied here. **Reopen:** a dependency changes a distinction or check used by F.19. |
+| How should ordinary technical prose help its intended reader act without being "dumbed down"? | ISO 24495-1:2023, *Plain language — Part 1: Governing principles and guidelines*, current published foundation (`https://www.iso.org/standard/78907.html`); Digital.gov, *Principles of plain language* and *Writing for understanding*, current living US-government practice guide (`https://digital.gov/guides/plain-language/principles`, `https://digital.gov/guides/plain-language/writing`), checked 2026-08-19. | Declare the reader and task; put the usable object and action first; organize for finding, understanding, and use; keep terms the intended reader needs. Neither source defines FPF ontology or requires expert prose to use general-public vocabulary. | **Adapt — reason:** these moves improve F.19's ordinary path without changing its semantic boundary. **Receiving loci:** F.19:0 first useful move; F.19:4.1 steps 1 and 7; `CC-F19-1` and `CC-F19-7`. **Qualification/currentness:** current standard and current practice guide, not FPF semantic authority. **Reopen:** a new edition changes a used principle, or cold-reader evidence shows that these moves no longer support the declared use. |
+| How should plain prose address readers outside the author's specialty while retaining scientific content? | ISO 24495-3:2026, *Plain language — Part 3: Science writing*, Edition 1, current published standard (`https://www.iso.org/standard/86938.html`). | It extends the reader-sensitive principles of Part 1 to science writing for people with different backgrounds and interests. It expressly does not govern specialist scientific writing, and it supplies no test for FPF kinds or terms. | **Adapt — reason:** the cross-specialty reader boundary sharpens the cold-reader check without authorizing loss of technical content. **Receiving loci:** F.19:4.1 step 7 and `CC-F19-7`. **Qualification/currentness:** current for plain science communication, not proof that a specialist FPF distinction is dispensable. **Reopen:** the standard changes materially, or an F.19 case needs a different expert-to-expert boundary. |
+| When is controlled technical language worth its added restriction and maintenance cost? | ASD-STE100, *Simplified Technical English: Standard for Technical Documentation*, Issue 9 (2025-01-15), current issue (`https://www.asd-ste100.org/`). | Its controlled vocabulary and writing rules reduce lexical and syntactic ambiguity in multilingual, safety-sensitive maintenance documentation. That setting does not show that a controlled dictionary, one-word/one-meaning rule, or compliance apparatus improves ordinary FPF prose. | **Reject as the default FPF language; adapt only as a comparison probe — reason:** F.19's cheap ordinary path remains better unless a declared high-risk multilingual use shows otherwise at comparable effort. **Receiving loci:** F.19:4.1 step 7 and `CC-F19-7`; no controlled-language machinery is imported. **Qualification/currentness:** current controlled-language practice with an aerospace-maintenance origin. **Reopen:** an F.19 case demonstrates that bounded restrictions outperform the ordinary path for its declared reader and risk. |
+| What action-guiding detail must survive when the prose tells someone what to do? | IEC/IEEE 82079-1:2019, *Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements*, Edition 2, published and marked for revision (`https://www.iso.org/standard/71620.html`). | It distinguishes step-by-step instructions within information for use and treats usable instructions as purpose- and user-sensitive. Its full information-management process, competency scheme, and evaluation apparatus are much broader than a bounded F.19 rewrite. | **Adapt the action-preservation branch; reject the surrounding documentation process — reason:** sequence, condition, quantity, warning, and stop detail improve the worked case and checks, while the larger apparatus does not improve them at comparable effort. **Receiving loci:** F.19:4.1 steps 2 and 7, the operational-detail grounding case, and `CC-F19-2`/`CC-F19-4`/`CC-F19-7`. **Qualification/currentness:** current published product-information reference, already marked for revision. **Reopen:** its successor changes a used principle, or an F.19 case requires a further action detail. |
+| Can legally constrained prose become clearer without losing controlled terms or obligations? | ISO 24495-2:2025, *Plain language — Part 2: Legal communication*, current published standard (`https://www.iso.org/standard/85774.html`); US SEC, *A Plain English Handbook: How to Create Clear SEC Disclosure Documents* (1998; SEC page 1999), retained lineage (`https://www.sec.gov/about/reports-publications/newsextrahandbook`). | The current standard shows that reader access can coexist with nuanced concepts, required structures, rights, and obligations. The SEC handbook is lineage for concrete, direct presentation. Neither source makes legal drafting or disclosure compliance part of ordinary FPF authoring. | **Adapt the meaning-preservation lesson; reject legal-process transfer — reason:** the branch supports necessary terms without importing a legal-document method. **Receiving loci:** F.19:4.1 step 7 and the kind-and-loss-preservation boundary. **Qualification/currentness:** ISO 24495-2 is current legal-communication guidance; the SEC handbook is lineage only. **Reopen:** F.19 acquires a legal-use case, or a later source changes the retained lesson. |
+| What prevents a plain rewrite from changing an FPF claim while removing apparatus? | Current FPF patterns `E.8`, `E.10`, `E.10.ARCH`, `E.10.ROLE`, `A.6.F`, `F.18`, `A.6.P`, and `E.21`, internal governing dependencies. | They recover the actual word, head, role- or function-shaped claim, relation, name, use, and quality loss before the sentence is shortened. They are not external evidence that F.19 is SoTA. | **Adopt as internal dependencies — reason:** they define, constrain, or test the meaning that F.19 must preserve. **Receiving loci:** F.19:4.1 steps 2–7, the ordinary-result boundary in F.19:4.3, conformance checks, and Relations. **Qualification/currentness:** current FPF dependencies, kept thin rather than copied here. **Reopen:** a dependency changes a distinction or check used by F.19. |
 
 ### F.19:12 - Relations
 
 | Related pattern | Relation |
 |---|---|
-| `E.8` | In FPF pattern authoring under `E.8`, use `F.19` to keep pattern bodies addressed to their intended users. |
-| `E.10` | After apparatus removal, use `E.10` for remaining wording whose kind, relation, or admissible use is hidden; use `E.10:0.2c.17` when a heterogeneous list needs different heads or predicates. |
-| `E.10.ARCH` | Use its shared wording-use recovery architecture for the remaining content. |
-| `E.10.ROLE` | Route role-shaped wording there once to recover the actual claim; F.19 does not copy its distinctions. |
-| `A.6.F` | Route function-shaped wording there once to recover the actual claim, including metonymic or multiple readings; F.19 does not copy its dispatch. |
+| `E.8` | In FPF authoring, keep positive practitioner-facing content and pattern form there; use `F.19` for the shared sentence, coordination, list, and foregrounding repair rather than maintaining a second algorithm. |
+| `E.10` | Use its compact cues to notice likely candidates and its exact rows only for unresolved FPF wording. The final ordinary semantic disposition belongs to `F.19` or the subject pattern. |
+| `E.10.ARCH` | Use the shared wording-use architecture only when subject, predicate, relation, representation, or another ontological value remains unresolved after ordinary reading. |
+| `E.10.ROLE` and `A.6.F` | Route a genuinely unresolved role- or function-shaped claim once; `F.19` keeps the capable-subject and metonymy boundary without copying either taxonomy. |
 | `F.18` | Use it for durable reusable names after kind and use are known. |
-| `A.6.P` | Use it when the remaining content hides relation kind, endpoint, basedness, anchoring, current ontic slot, relation position, or use relation. |
-| `A.19.SPR`, `C.2.P`, `C.16.P`, `C.30.P` | For remaining state-family, source or publication, characteristic or scale, and architecture or structure wording, use the corresponding pattern. |
-| `E.21` | An `E.21` evaluation may use `F.19` findings through `PrecisionRestorationProfile` and lower affected quality coordinates without creating one coordinate per apparatus symptom. |
-| `E.19`, `E.22`, `E.23` | During review, framing, or improvement-loop work, use `F.19` while keeping quality-loop records out of pattern prose. |
-| `E.11` and `I.2` | Use their first-entry cues and expanded entry-disambiguation cases for phrase-level apparatus repair. |
+| `A.6.P` | Use it when the remaining content hides relation kind, endpoint, basedness, anchoring, slot, relation position, or use relation. |
+| `A.19.SPR`, `C.2.P`, `C.16.P`, `C.30.P` | Use the applicable pattern for unresolved state-family, source or publication, characteristic or scale, and architecture or structure claims. |
+| `E.17.EFP` | Reuse its reader-fit boundary only when a reader distinction changes explanation use; `F.19` does not require a persona record. |
+| `E.21`, `E.19`, `E.22`, and `E.23` | Reviews and improvement work may use `F.19` findings while keeping their records and attention state outside practitioner prose. |
+| `E.11` and `I.2` | First-entry and publication loci may use the same repair while returning semantic authority to the subject patterns. |
 
 ### F.19:End
 

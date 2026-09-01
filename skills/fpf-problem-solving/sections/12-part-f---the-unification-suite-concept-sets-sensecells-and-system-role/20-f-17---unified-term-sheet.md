@@ -940,7 +940,7 @@ UnifiedPlainName: DPF Suite Reference
 NameCardRef: NC-DPF-SUITE-REFERENCE
 SenseCellRefs: SenseCell.DPFSuiteReference.FPFCore.2026-08-28
 BridgeRefs: none
-RowRationale: both designations name the maintained non-framework product form that starts from a cross-DPF working question, returns a bounded answer or blocker, and points back to the exact Suite collection, product series, editions, results, states, and sources that change the answer
+RowRationale: both designations name the editioned non-framework product form that starts from a cross-DPF working question, returns a bounded answer or blocker, and points back to the Suite collection, product series, editions, results, states, and sources that change the answer; maintenance is a separate claim
 AdmissibleUse: Core-facing designation of the E.11.DSG product form and readable title component for one exact continuing DPF Suite Reference series or admitted edition
 BlockedUse: no Suite, product series, edition, admission, Suite inclusion, currentness, availability, source authority, answer, lookup Work, framework status, instructional Guide, or publication occurrence follows from this row
 LineageEntries: DPF Suite Guide is the predecessor Plain designation only; DSG remains stable PatternID lineage residue and is not a current public expansion; no DSR or synonym family is admitted
@@ -951,7 +951,7 @@ SenseCell.DPFSuiteReference.FPFCore.2026-08-28:
   ReferenceScheme: FPFCoreReferenceScheme
   LocalSenseId: DPFSuiteReference-core
   LocalExpression: DPFSuiteReference
-  LocalSenseClaim: the E.11.DSG relation-defined product form for a maintained non-framework publication that answers bounded cross-DPF questions, returns exact sources and honest gaps, and leaves Suite constitution, product-series and edition identity, lookup Work, publication, availability, authority, and currentness to their direct claims
+  LocalSenseClaim: the E.11.DSG relation-defined product form for an editioned non-framework publication that answers bounded cross-DPF questions, returns sources and honest gaps, and leaves Suite constitution, product-series and edition identity, lookup Work, publication, availability, authority, currentness, and any maintenance claim to their direct rules
   NameCardRef: NC-DPF-SUITE-REFERENCE
 ```
 

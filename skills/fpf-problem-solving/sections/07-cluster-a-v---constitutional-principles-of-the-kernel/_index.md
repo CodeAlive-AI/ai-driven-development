@@ -47,5 +47,5 @@
 - [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](42-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (421 lines) — Type: Architectural (A)
 - [A.20 - Constraint Validity for Transformation Steps](43-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
 - [A.21 - Gate Decisions from Independent Check Results](44-a-21---gate-decisions-from-independent-check-results.md) (294 lines) — Type: Architectural (A)
-- [A.22 - Structure and Structural Views (STRUCT-CAL)](45-a-22---structure-and-structural-views.md) (479 lines) — Type: Architectural pattern
-- [A.22.CGUS - Constraint-Governed Unfolding Structure](46-a-22-cgus---constraint-governed-unfolding-structure.md) (332 lines) — Type: A.22 specialization of U.Structure
+- [A.22 - Structure and Structural Views (STRUCT-CAL)](45-a-22---structure-and-structural-views.md) (481 lines) — Type: Architectural pattern
+- [A.22.CGUS - Constraint-Governed Unfolding Structure](46-a-22-cgus---constraint-governed-unfolding-structure.md) (333 lines) — Type: A.22 specialization of U.Structure

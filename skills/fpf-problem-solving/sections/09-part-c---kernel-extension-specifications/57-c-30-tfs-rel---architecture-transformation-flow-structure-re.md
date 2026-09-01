@@ -67,16 +67,17 @@ relationObservationClassRef?:
 unexploredRegionRefs?:
 hiddenRelationStructureReturnCondition?:
 admissibleUse:
-nonAdmissibleUse:
+stopOrReturnCondition:
+groundedNonAdmissibleUse?:
 ```
 
-This is a use/trace record, not a universal direct `U.Relation` declaration and not an obtaining-condition shortcut. Each positive `architectureRelationOccurrenceRef`, flow relation, cross-member relation, correspondence relation, empirical-grounding relation, publication occurrence, or project/work relation is admitted and made actual only by its direct owner. The record, diagram, description, or list creates none of them.
+This use/trace record connects an exact architecture-side reference to an exact flow-structure reference. Admit every positive architecture, flow, correspondence, grounding, publication, or project relation through its direct pattern before recording it here.
 
-Ordinary minimum: name at least one exact architecture-side reference (`architectureRelationOccurrenceRefs`, `selectedArchitectureStructureRefs`, `architectureStructuralViewRefs`, `architectureDescriptionRefs`, or a bounded `architectureClaimRefs` entry) and at least one flow-structure reference (`transformationFlowStructureRef`, `transformationFlowStructureNetworkRef`, `transformationFlowUnfoldingStructureRef`, `selectedPathOrSliceRefs`, `crossingBundleRefs`, or `flowValuationRefs`), one blocked overread, and one stop or governing-pattern application. A network use also selects exactly one network architecture-use branch and supplies its required exact holon and relation/claim refs. Use the remaining fields only when they change the next architecture move; otherwise mark them `not used`.
+Ordinary minimum: name one exact architecture-side reference, one exact flow-structure reference, the admissible use, and one stop or governing-pattern application. A network use also selects one network architecture-use branch with its required holon and relation or claim refs. Add a grounded non-admissible use only when the current representation or wording makes that exact architecture/TFS confusion live.
 
-Use this record only when an actual architecture relation, selected architecture-relevant structure, exact structural-view episteme, functional-structure view, transformation-flow-structure claim, or conditional architecture-description use depends on an E.18 TFS, an E.18.NET network, or one of the selected TFS's paths, crossings, or valuations. Stop when that architecture-to-flow-structure use and its non-admissible overreads are clear. If another claim is being made, apply its governing pattern and keep this record to the architecture/flow boundary.
+Use this record when an actual architecture relation, selected structure, structural-view episteme, functional-structure view, transformation-flow claim, or conditional architecture-description use depends on an E.18 TFS, E.18.NET network, or one of its selected paths, crossings, or valuations. Stop when the architecture-to-flow use and its return condition are clear; route any other current claim to its direct pattern.
 
-What goes wrong if this pattern is missed: a transformation-flow diagram, graph-shaped mathematical description, path slice, flow valuation, requirement, or functional-view row becomes functional architecture, whole architecture ontology, actual `U.Transformation`, performed Work, work-result record, evidence, gate passage, or project decision by appearance.
+What goes wrong if this pattern is missed: a visible flow representation is reused as an architecture, Work, evidence, gate, or decision claim solely by appearance, so the reader can no longer recover the direct predicate that would support that claim.
 
 What this buys in practice: the practitioner can use E.18 for one TFS or E.18.NET for one network while C.30 remains the direct architecture-relation and selected-structure adequacy locus and C.30.ASV remains the architecture-structural-view locus.
 
@@ -116,7 +117,8 @@ ArchitectureTransformationFlowStructureRelation minimum:
   actualTransformationRefs?: only with complete A.3.4 basis
   networkArchitectureUseBranch?: one complete branch from section 4.4a
   admissibleUse:
-  nonAdmissibleUse:
+  stopOrReturnCondition:
+  groundedNonAdmissibleUse?:
 ```
 
 At least one architecture-side field and at least one E.18 or E.18.NET field must be named by value. Network branch fields obey `C.30.TFS-REL:4.4a`; other optional fields stay `not used` unless they change inspection, correspondence, hidden relation-structure return, governing-pattern application, or stop.
@@ -177,7 +179,8 @@ relationObservationClassRef?:
 unexploredRegionRefs?:
 hiddenRelationStructureReturnCondition?:
 admissibleUse:
-nonAdmissibleUse:
+stopOrReturnCondition:
+groundedNonAdmissibleUse?:
 ```
 
 **Required-cooling-effect / later-actual-cooling countercase.** `RequiredCoolingEffect-1` can require exact Rack 7 to be below 30 °C and can correspond to a selected cooling-flow structure before any change occurs. In that first use, fill `requiredOrDesiredEffectClaimRefs` and the selected TFS fields; leave `actualTransformationRefs` empty. A later `Rack7CoolingTransformation-42` is actual only when A.3.4 fixes Rack 7 as the changed referent, its thermal boundary and operating/ambient conditions, actual 38 °C before facts, actual heat-removal during facts, actual 27 °C after facts, and continuity or reidentification of Rack 7. Even then, a separate satisfaction or realization predicate is needed before claiming that the actual transformation satisfies the earlier requirement.
@@ -203,7 +206,7 @@ When several transformation-flow variants are kept or compared as candidate arch
 | Interface, signature, or module compatibility | `A.6.M` module-and-interface repair plus `A.6.5` slot discipline, with `A.6.0` only when a signature declaration is being made |
 | Architecture decision | the project-side architecture decision pattern when the corresponding claim is being made |
 
-This table is the single boundary for generic non-flow claims. Elsewhere in this pattern, keep only blocked local overreads that the transformation-flow relation itself makes tempting: structure-as-architecture, graph-description-as-architecture, flow-as-work-log, crossing-as-gate, valuation-as-score, generated relation-graph proof, and prompt-data-tool flow as authority proof.
+Use this table as the single boundary for generic non-flow claims. Elsewhere retain a local guard only when the current representation or wording supplies one exact flow-to-architecture inference that changes use.
 
 #### C.30.TFS-REL:4.4 - E.18 selected-structure boundary statement
 
@@ -254,13 +257,8 @@ transformationFlowStructureViewRef: exact description/view episteme about the se
 transformationFlowStructureRef: TransformationFlowStructure@PaymentAuthorization
 selectedPathOrSliceRefs: path slices used for the architecture claim
 correspondenceClaimOrRelationRefs: bounded claim that the required effect corresponds to the flow path
-nonAdmissibleUse:
-  required effect as actual U.Transformation,
-  flow diagram as functional architecture itself,
-  selected transformation-flow structure as Work occurrence,
-  mathematical graph description as evidence sufficiency,
-  crossing as gate result,
-  flow relation as project decision
+stopOrReturnCondition: stop at the bounded correspondence claim; open actual transformation, Work, evidence, gate, or decision use only through its direct predicate
+groundedNonAdmissibleUse?: the phrase “required effect corresponds to the flow path” can invite identity with an actual transformation; keep it as correspondence until A.3.4 and the realization predicate obtain
 ```
 
 Filled use record:
@@ -296,7 +294,7 @@ relationObservationClassRef: observed, inferred, or unknown relation class when 
 unexploredRegionRefs: not used
 hiddenRelationStructureReturnCondition: reopen if mathematical-description edition, path slice, relation observation class, or required-effect declaration changes
 admissibleUse: inspect whether the functional structure view depends on the E.18 path slice and whether an architecture split or correspondence claim is needed
-nonAdmissibleUse: required effect as actual transformation; flow diagram as functional architecture itself; selected transformation-flow structure as Work occurrence; mathematical graph description as evidence sufficiency; crossing as gate result; flow relation as project decision
+stopOrReturnCondition: stop at the bounded architecture-to-flow correspondence and reopen when its source, path, observation class, or required-effect declaration changes
 ```
 
 Cooling countercase: a selected cooling-flow TFS and `RequiredCoolingEffect-1` may fill the required-effect and correspondence fields while `actualTransformationRefs` stays empty. Only a later A.3.4 occurrence with Rack 7 as exact changed referent, fixed thermal boundary and conditions, actual 38 °C before / heat-removal during / 27 °C after facts, and Rack 7 continuity can fill that field. A separate realization predicate is still needed to relate the actual cooling to the requirement.
@@ -360,8 +358,8 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | **CC-C30TFR-4a Network architecture branch.** | A network use selects exactly one branch. The containing branch has one exact holon and actual architecture relation whose selected structure is the exact network. The inter-holon branch has at least two exact holons, exactly the actual architecture relations and bounded claims this question uses, no containing fields, and `noNetworkBearerHolonAsserted=true`; a singular participant ref never implies a containing architecture. | Complete one branch, remove or reroute a conflicting architecture-side ref, add a participant only when the current question relies on it, or keep the network claim under E.18.NET without architecture use. |
 | **CC-C30TFR-4b Named characteristic bearer and representation boundary.** | Every architecture characteristic claimed or used remains on an exact named holon, actual architecture relation, selected structure, view/description episteme, bounded claim, or other governed bearer; no graph, representation, mathematical description, publication, or network record becomes that bearer. | Name the exact bearer under C.30 or its direct owner; demote the visible object to representation, description, or publication use. |
 | **CC-C30TFR-4c Member-local, unfolding, and row-reference boundary.** | Every path, slice, crossing, valuation, required effect, or actual transformation named with a network remains bound to its exact owning member TFS and local positions, participants, or bindings; a network-aware unfolding selects the same network through its E.18.3 locator; every `NetworkCrossFlowRelationRowRef` resolves exactly one row in a current record for that network without replacing the obtaining relation occurrence. | Restore the member-local binding or network-locator match; repair or remove a row locator that resolves zero or several rows or points to another network; keep occurrence truth with its direct governor. |
-| **CC-C30TFR-5 No Work overread.** | A selected TFS, network, path, or slice is not treated as Work occurrence or work result. | Assign the Work claim to A.15 or the governing work-result pattern. |
-| **CC-C30TFR-6 No evidence, assurance, or gate overread.** | The record is not used as evidence sufficiency, assurance claim, gate decision, or release permission without the direct governing application. | Assign the claim being made to A.10, G.6, B.3, A.20, A.21, or the release locus named by value. |
+| **CC-C30TFR-5 Work boundary.** | Any Work occurrence or work-result claim names its direct A.15 or work-result predicate. | Keep the selected TFS, network, path, or slice as the flow-structure reference used by that claim. |
+| **CC-C30TFR-6 Evidence, assurance, and gate boundary.** | Any evidence, assurance, gate, or release claim names its direct application and result. | Apply A.10, G.6, B.3, A.20, A.21, or the release locus named by value. |
 | **CC-C30TFR-7 Causal and mathematical boundaries.** | Causal or intervention claims and mathematical-lens claims are assigned to C.28 and C.29. | Apply those governing patterns or narrow the record's admissible use. |
 | **CC-C30TFR-8 Pin and scalarization boundary.** | Edition, context, and plane pins plus no-hidden-scalarization claims remain E.18-governed. | Add E.18 pin and set-return references or remove the comparison or selection claim. |
 | **CC-C30TFR-9 Hidden relation return.** | Extracted, generated, coarsened, or partial relation graphs or flow diagrams state the source publication or edition, extraction or probe locus, relation observation class, unexplored regions, and hidden relation-structure return condition when hidden distinctions affect action. | Add the missing relation-structure fields or narrow the admissible use. |

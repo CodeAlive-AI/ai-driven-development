@@ -80,7 +80,7 @@ When the direct pattern is already known, open it rather than forcing the questi
 
 ### Practical-Use Cards
 
-These cards are selected examples of extended work with a pattern language. They are not a list of all useful FPF questions, a prescribed project sequence, or proof that every case needs every cited pattern.
+These cards offer a non-exhaustive set of optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
 
 The keys only help navigation. Compare cards by the situation and intended result, then open the direct patterns needed in the actual case. Skip a contribution whose question is not current, and stop at the first useful result or honest blocker.
 
