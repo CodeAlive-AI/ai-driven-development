@@ -67,3 +67,23 @@ The shell-interpolation warning applies only to positional prompts that still co
 
 Consilium imposes no execution deadline in any mode. Provider context/output
 limits and managed harness settings still apply.
+
+# Quota inspection
+
+Use the read-only quota command to make scheduling decisions without starting a
+review or delegate turn:
+
+```bash
+"$CONSILIUM" quota [all|codex|grok]
+```
+
+The output is a versioned JSON envelope. Codex is queried through
+`account/rateLimits/read` on `codex app-server`; this does not consume an
+available reset credit. Grok is queried through the official `/usage` command
+in a temporary tmux session on `grok-aws`. Override the safe SSH alias with
+`CONSILIUM_GROK_QUOTA_SSH_HOST` and the absolute remote working directory with
+`CONSILIUM_GROK_QUOTA_CWD`.
+
+When both providers are requested, one failure does not discard the successful
+result. Exit `0` means all requested providers succeeded, `2` means partial
+success, and `3` means all requested providers failed.

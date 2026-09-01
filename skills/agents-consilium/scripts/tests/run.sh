@@ -96,6 +96,7 @@ echo "=== CLI dispatch ==="
 out=$("$CONSILIUM" --help 2>&1) || true
 assert_contains "help mentions review" "$out" "review"
 assert_contains "help mentions delegate" "$out" "delegate"
+assert_contains "help mentions quota" "$out" "quota"
 assert_not_contains "help omits removed explore mode" "$out" "consilium explore"
 
 set +e
@@ -104,7 +105,7 @@ rc=$?
 set -e
 assert_eq "removed explore command exits with usage error" "$rc" "5"
 assert_contains "removed explore command names supported modes" \
-  "$removed_explore_err" "expected review|delegate"
+  "$removed_explore_err" "expected review|delegate|quota"
 
 out=$("$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "list-agents has grok" "$out" 'id="grok"'
@@ -127,6 +128,12 @@ set +e
 rc=$?
 set -e
 assert_eq "unknown command exit 5" "$rc" "5"
+
+set +e
+"$CONSILIUM" quota unknown >/dev/null 2>&1
+rc=$?
+set -e
+assert_eq "quota unknown provider exit 5" "$rc" "5"
 
 echo "=== Argv safety (CONSILIUM_DUMP_ARGV) ==="
 dump_review() {
@@ -1557,6 +1564,20 @@ PASS=$((PASS + c_pass))
 FAIL=$((FAIL + c_fail))
 if [[ $CONTRACT_RC -ne 0 && $c_fail -eq 0 ]]; then
   echo "  FAIL  runtime contracts non-zero exit without fail count"
+  FAIL=$((FAIL + 1))
+fi
+
+echo "=== Quota parsing (offline) ==="
+set +e
+QUOTA_OUT=$(python3 "$TESTS_DIR/quota_test.py" 2>&1)
+QUOTA_RC=$?
+set -e
+printf '%s\n' "$QUOTA_OUT"
+quota_count=$(printf '%s\n' "$QUOTA_OUT" | sed -n 's/^Ran \([0-9][0-9]*\) tests.*/\1/p' | tail -1)
+quota_count=${quota_count:-0}
+if [[ $QUOTA_RC -eq 0 && $quota_count -gt 0 ]]; then
+  PASS=$((PASS + quota_count))
+else
   FAIL=$((FAIL + 1))
 fi
 

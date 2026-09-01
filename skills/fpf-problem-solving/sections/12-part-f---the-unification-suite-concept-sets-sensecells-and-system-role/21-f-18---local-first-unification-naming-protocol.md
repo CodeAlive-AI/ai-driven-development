@@ -203,7 +203,7 @@ NameCard:
   PublicRowStatus: current
   UnifiedTermRowRef: UTS.ModelUseRelation.FPFCore.2026-07-25
   LineageEntries: retains the A.1.1 relation-kind label; availability, mention, method application, performed Work, system-role assignment, and use-claim readings remain separate and are not aliases
-  RefreshCondition: reopen when A.1.1 changes the participant kinds, F.6 performed-under-assignment prerequisite, actual-use predicate, actor derivation, maximal-continuous-use identity, FPFCoreReferenceScheme, the current F.17 cell or row, or the public receiving use
+  RefreshCondition: reopen when A.1.1 changes the participant kinds, an expressly consumed F.6 performed-under-assignment attribution condition, actual-use predicate, actor derivation, maximal-continuous-use identity, FPFCoreReferenceScheme, the current F.17 cell or row, or the public receiving use
 ```
 
 ```text
@@ -392,7 +392,7 @@ NameCard:
 NameCard:
   NameCardId: NC-SYSTEM-ROLE-KIND-RELATION-STRUCTURE
   GovernedValueRef: SystemRoleKindRelationStructure
-  GovernedValueKindRef: U.Structure
+  GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.2.7
   ReferenceScheme: FPFCoreReferenceScheme
   ClaimContent: NC-SYSTEM-ROLE-KIND-RELATION-STRUCTURE.ClaimGraph
@@ -401,9 +401,9 @@ NameCard:
   PlainLabel: structure of relations among system-role kinds
   CandidateSet: RoleRelationStructure; SystemRoleRelationStructure; SystemRoleKindRelationStructure; SystemRoleAssignmentRelationStructure
   RejectedCandidates: RoleRelationStructure is ambiguous; SystemRoleRelationStructure loses the kind substrate; SystemRoleAssignmentRelationStructure names the wrong substrate
-  SelectionRationale: Kind identifies the substrate and Structure identifies the selected organization of exact obtaining relations
-  DeclaredUse: Core-facing citation of the selected A.2.7 U.Structure construction
-  NonAdmissibleUse: no assignment configuration, taxonomy episteme, graph, table, system collection, or structure occurrence follows from the name or card
+  SelectionRationale: the designation names A.2.7's relation-defined structure kind; Kind in the compound identifies its system-role-kind constituents, not one selected instance
+  DeclaredUse: Core-facing designation of the relation-defined kind specified by A.2.7; citing one member still requires its exact constituents, selected obtaining relation occurrences, applied constraints, and named selection-use frame
+  NonAdmissibleUse: no new root kind, selected structure instance, assignment configuration, taxonomy episteme, graph, table, or system collection follows from the name or card
   LexicalPrerequisiteRefs: E.10:7.5b KernelToken classification and allowed-use rule for SystemRoleKindRelationStructure; E.10:7.5a reserved-name collision rule
   BridgeRefs: none
   PublicRowStatus: current
@@ -433,6 +433,36 @@ The following are candidate inputs, not current `NameCard` epistemes. Each uses 
 | `evaluatedAgainstRuleContent` | predicate true only when an identified criterion-selection claim selected exact base content for one bounded evaluation claim concerning exact dependent content; governed node `evaluatedAgainstRuleContent@RuleContentBasisFindingDefinition-R7` | evaluated-against, assessed-under, governed-by, and checked-with families were compared; reject `governedBy` and generic `checkedWith` because they hide criterion selection and can imply authority, Work, or tool use | manufactured configuration evaluation; healthcare protocol-conformance evaluation; cloud release evaluation against deployment policy while operational Work stays separate | same lexical prerequisites as above, plus exact R7 predicate identity |
 
 A collision-free text search is useful evidence but does not substitute for the missing governed lexical values. Until closure, authors may quote these candidate spellings when discussing the R7 declaration, but must not cite a current NameCard or public term row.
+
+#### F.18:4.2e - Current DPF Suite Reference NameCard
+
+This card settles the public name of the relation-defined product form already governed by `E.11.DSG`. Its governed value is that product form, not a particular Suite, product series, edition, answer, lookup activity, or publication occurrence. The card and its row create none of those objects.
+
+```text
+NameCard:
+  NameCardId: NC-DPF-SUITE-REFERENCE
+  GovernedValueRef: E.11.DSG DPF Suite Reference product form
+  GovernedValueKindRef: U.Kind
+  SubjectPatternLocator: E.11.DSG
+  ReferenceScheme: FPFCoreReferenceScheme
+  ClaimContent: NC-DPF-SUITE-REFERENCE.ClaimGraph
+  LocalSenseCellRef: SenseCell.DPFSuiteReference.FPFCore.2026-08-28
+  TechLabel: DPFSuiteReference
+  PlainLabel: DPF Suite Reference
+  CandidateSet: Reference; Handbook; Overview; Companion; Manual; Guide; Using the DPF Suite; registry; index; catalogue
+  CandidateCoverage: publication-form, instructional-publication, activity-name, and registry-or-finding-aid readings were compared; no plausible current head family remains open for this use
+  RejectedCandidates: Handbook and Manual imply broad instruction or completeness; Overview and Companion understate the maintained answer-and-return function; Guide suggests instructional procedure; Using the DPF Suite names reader activity; registry, index, and catalogue hide the problem-led answer
+  SelectionRationale: Reference is the smallest head that fits a maintained non-framework publication readers consult for a bounded cross-DPF answer, exact source returns, and honest gaps; the E.11.DSG opening prevents the residual citation-list overread
+  DeclaredUse: Core-facing designation of the E.11.DSG product form and readable title component for one exact continuing DPF Suite Reference series or admitted edition
+  NonAdmissibleUse: no Suite, product series, edition, admission, Suite inclusion, currentness, availability, source authority, answer, lookup Work, or publication occurrence follows from the name, card, or row; the Reference is neither a framework nor an instructional Guide
+  BridgeRefs: none
+  PublicRowStatus: current
+  UnifiedTermRowRef: UTS.DPFSuiteReference.FPFCore.2026-08-28
+  LineageEntries: DPF Suite Guide is the predecessor Plain designation only; DSG remains stable PatternID lineage residue and is not a current public expansion; no DSR or synonym family is admitted
+  RefreshCondition: reopen if readers still classify the product as instruction, a design record, a registry, citation list, or lookup Work; if Reference hides the problem-led use; if the E.11.DSG product boundary or identity rule changes; if FPFCoreReferenceScheme, the exact F.17 sense cell or row, or the cited use changes; or if a better established product-form name proves clearer without losing the selected function
+```
+
+One `FPFCoreReferenceScheme` cell is sufficient, so this settlement adds no F.9 Bridge or separate correspondence-use claim. A qualified product title such as *Engineering DPF Suite Reference* identifies its exact series or edition through that product's own claims; the qualifier does not change this Core product-form card.
 
 #### F.18:4.3 - Candidate Selection
 
@@ -514,7 +544,7 @@ Treat an action nominal such as `testing`, `assembly`, `maintenance`, `evaluatio
 
 A durable name for performed Work points to one dated occurrence already grounded under `A.15.1`. An action word, plan row, local work-family label, or `U.WorkPlan` does not create that occurrence or an assignment.
 
-Every system claimed as a performer must already be admitted as a `U.System`. For each performer, a current assignment covers the Work interval, names that system as its holder, and retains every participant required by its declared `U.SystemRoleAssignment` species. F.6 links the Work to that assignment. The Method actually used, temporal extent, containing system, affected referent, and material bindings and resource-use facts are also recoverable. A compact naming account cites only the identities needed by its receiving use; leaving an identity out of the account does not make the underlying fact optional. Add a continuity policy only when interruption, retry, a changed Method or binding, or competing designators make occurrence identity material.
+Every System claimed as an actual performer must already have its A.13 core, and A.15.1 must independently admit the dated Work from its Method, temporal extent, containing System, and other required direct facts. Add an assignment occurrence and F.6 only when the naming account or receiving use expressly represents precise assignment-bound attribution; then the assignment covers the Work interval, names that already recovered performer as holder, and retains every participant required by its declared `U.SystemRoleAssignment` species. Missing or failed F.6 leaves the Work and its durable name intact. A compact naming account cites only the identities needed by its receiving use. Add a continuity policy only when interruption, retry, a changed Method or binding, or competing designators make occurrence identity material.
 
 Keep neighbouring direct subject and resource-use claims, `A.15.PROD` production claims, measurement-result epistemes, evaluation results, `C.11` choices or decisions, delivery occurrences, acceptance verdicts, and downstream-effect claims separately named under their direct patterns.
 When the underlying boundary wording still hides the relation, apply `A.6.P.WMR`. Use `F.18` only after an exact governed value and its use are recovered through a direct subject relation, an exact `A.6.1` application binding, or an exact local `A.15.PROD`/`A.6.RCD` claim. An exact non-assertability result independently records `factually unsupported`, `missing-information`, or `missing-governor`; none authorizes durable naming, and only `missing-governor` is an ontology blocker that names the affected use and future subject pattern or relation declaration. This section selects and tests a name. It does not define a second work-occurrence or work-result recovery algorithm.
@@ -628,7 +658,7 @@ Recovered values:
 - `ShipbuildingMethod` or a method family under A.3.1; if a separately identified `ShipbuildingMethodDescription : U.MethodDescription` episteme is current, name it separately under A.3.2 only when its exact `EntityOfConcern` is that Method;
 - `HullAssemblyWork` under the Work patterns.
 
-Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work only when the record recovers the complete occurrence. Every named performer is an admitted system. For each performer, a current assignment covers the Work interval, names that system as its holder, and retains every participant required by its declared `U.SystemRoleAssignment` species. F.6 links the Work to that assignment. The record also recovers the Method actually used, temporal extent, containing system, affected hull referent, material bindings and resource-use facts, plus an applicable continuity policy when disambiguation is current. The compact naming account may cite only identities needed by the current use, but the omitted facts must still be true. A changed hull state, measurement result, evaluation verdict, delivery occurrence, or acceptance verdict remains a separately defined and separately named value.
+Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work only when each exact actual performer has its A.13 core and A.15.1 independently admits the occurrence from the Method actually used, temporal extent, containing System, affected hull referent, material bindings, resource-use facts, and any current continuity policy. If the naming record also expressly represents which assignment covered that Work, it adds the exact A.2.1 occurrence and F.6 relation through the same A.13 assignment; missing or failed F.6 leaves the Work name intact. A changed hull state, measurement result, evaluation verdict, delivery occurrence, or acceptance verdict remains a separately defined and separately named value.
 
 The local card is:
 
@@ -812,7 +842,7 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | Local-plain non-use | A one-off claim about whether an exact Bridge suits a named use stays in ordinary wording. No `NameCard`, public claim kind, or durable CamelCase name is created unless an independent later reuse need reopens F.18. |
 | Lineage and reopen | Rename, alias, split, merge, and retirement history is recorded under `F.13`, and the card names the smallest value, scheme, sense, subject pattern, use, or reader-error change that reopens this settlement. |
 | Reader use | A practitioner can tell what to say, what not to infer, and where to go if the name is not enough. |
-| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered Method, MethodDescription, required-transformation or required-effect claim, actual `U.Transformation`, `TransformationFlowStructure` locus, functional-view record, plan content, or other value is named only under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one occurrence grounded under A.15.1 and attributed under F.6 as stated in section 5.3; a compact naming account may omit unused references, not the facts. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
+| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered Method, MethodDescription, required-transformation or required-effect claim, actual `U.Transformation`, `TransformationFlowStructure` locus, functional-view record, plan content, or other value is named only under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one occurrence whose exact actual performers have A.13 cores and which A.15.1 independently grounds. Add assignment and F.6 refs only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed F.6 leaves the Work name intact. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
 
 Regression checks:
 
@@ -823,14 +853,17 @@ Regression checks:
 
 ### F.18:10 - SoTA-Echoing
 
-Source use was checked on 2026-08-20. F.18 uses only the following lines in this decision; source prestige does not select an FPF value or name.
+**Question and selected answer.** How should one already identified value receive a durable name without turning a convenient word into a different object or making every local phrase into a maintained record? Under `E.8:11`, the best-known answer for this bounded use is a local-first settlement: stop at sufficient ordinary wording; otherwise compare plausible head-term families against the same value and reader situation, keep one Tech/Plain pair, and record why it was chosen and what would reopen it.
 
-| Current source and status | Adopted or adapted move | Exact F.18 effect | Limitation and smallest reopen condition |
-| --- | --- | --- | --- |
-| [ISO 704:2022](https://www.iso.org/standard/79077.html), published International Standard, and [ISO 1087:2019](https://www.iso.org/standard/62330.html), confirmed current in 2025 | Distinguish objects, concepts, definitions, and designations; make term formation and terminology decisions inspectable. | Supplies the value-before-label rule in 0 and 4.1, the separate value, kind, and designation fields in 4.2, and the rejection of dictionary substitution in 8. | The standards guide terminology work, not FPF ontic identity. Reopen only 4.1-4.3 and affected cases if a superseding ISO edition changes the selected concept and designation or term-formation distinction. |
-| W3C, [*SKOS Simple Knowledge Organization System Reference*](https://www.w3.org/TR/skos-reference/), W3C Recommendation 2009, latest Recommendation checked 2026-07-23 | Keep concepts, preferred or alternative lexical labels, notes, collections, semantic relations, and mapping relations distinct. | Strengthens 4.2, 7.5, 8, and 9: a label, card, row, shared spelling, or generic mapping does not become the governed value or an F.9 Bridge. | SKOS is a stable web-vocabulary model, not the FPF naming method or a source of FPF kinds. Reopen those four loci if W3C supersedes the Recommendation or changes the label/mapping distinction used here. |
-| Zhu, Reinecke, and Mitra, [*Language Scent: Exploring Cross-Language Information Navigation*](https://arxiv.org/abs/2604.03604), arXiv:2604.03604, 2026 preprint | Adapt contextual cues and in-situ recognizability as evidence for reader ergonomics; reject any inference from recognizability to cross-context equivalence. | Changes the reader-ergonomics probe in 4.3 and supports the conditional local labels in 7.2 and 7.5 while leaving exact value, local sense, and Bridge recovery mandatory. | The study is small, cross-language, and navigation-focused. Reopen only those probes and examples if stronger reader evidence reverses the observed value of contextual cues or exposes a new loss. |
-| Current FPF `C.18` front and archive discipline | Keep non-dominated candidates, archive members, and selection reasons distinct; expose dimensions and dominance when those methods are actually used. | Supplies the optional ordinal-comparison rule in 4.3; it does not require QD apparatus for an ordinary four-candidate naming decision. | This is comparison discipline, not proof that a label is ontologically correct. Reopen only 4.3 if the FPF front, dominance, or protected-dimension rule changes. |
+**Serious alternative.** A compact preferred-label entry with alternatives and a scope note is a real low-cost rival, not a careless dictionary substitution. [SKOS Reference, lexical labels, documentation, and mapping properties](https://www.w3.org/TR/skos-reference/), supplies that comparator and the useful separation of labels, concepts, notes, and mappings. It can carry a careful explanation and does not claim that a shared label proves identity. F.18 does not reject it for lacking FPF field names or require a different storage format.
+
+The remaining choice is about the naming decision. A preferred label and scope note can state what a term means while leaving unclear why a neighbouring head was rejected, whether ordinary wording would suffice, and which later use needs a durable settlement. At the effort of one naming discussion and one short note, F.18 spends attention on those distinctions rather than accumulating more synonyms. The trade-off is a slightly longer decision note, needed only for a reusable name. When a terminology entry already carries the same value, candidate comparison, use boundary, and reopen reason, reuse that content; neither a second naming decision nor corpus-wide normalization is warranted.
+
+**Adapt and reject by value.** Section `0` and steps 1–3 of section `4` keep the value and ordinary-wording exit before the card. Sections `4.1–4.3` require semantic fidelity before reader familiarity and make candidate coverage and the remaining risk inspectable. Cases `7.1` and `7.2` expose the concrete cost of a short head that confuses a system-role kind with an assignment, capability, Method, or Work; `4.2e` compares Reference with instructional and registry readings for one product form. These are semantic countercases, not measured gains in naming speed. Section `7.5` and the public-use branch in `4.4/4.4.1` preserve local wording and test a needed correspondence separately; a label or generic mapping is not authority for that use. **Reject** choosing by familiarity alone, adding a card for every phrase, or treating a source's preferred label as the identity or admission rule for the named thing.
+
+Reader ergonomics in `4.3` is therefore a probe on the actual candidate and readers, not a claim that a navigation study has selected an FPF name. A shorter label wins when it preserves the same recovered object and admitted use. `C.18` supplies comparison discipline only if Pareto or quality-diversity methods are actually used; it is not independent evidence that this name wins.
+
+**Reopen.** Compare again if a lighter naming procedure preserves the same object distinctions and later reuse with less effort; if readers still infer the wrong object from the chosen head; or if the actual use needs linguistic or multilingual modeling that the simple settlement does not support. No current catalogue entry, later edition, popularity, or publisher status can discharge that comparison.
 
 Currentness rule: when the pattern containing a value's direct rule, `C.2.1`, `F.9`, `A.10`, `B.3`, or `E.24.PUB` changes the value, card, sense, Bridge, bounded-use claim, reliance, or publication boundary, reopen only the affected invariant, field, case, or check. A future F.17 edition is consumed only through section 4.4; its change does not reopen local NameCards unless their supported public citation use or object references change.
 

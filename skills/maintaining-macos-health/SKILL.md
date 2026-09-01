@@ -1,6 +1,6 @@
 ---
 name: maintaining-macos-health
-version: 1.2.0
+version: 1.3.0
 description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a process persistently burns CPU, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory/CPU alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, or broken app installs.
 ---
 
@@ -14,6 +14,7 @@ Recovery and prevention playbook for macOS disk and memory crises. Validated aga
 - [Skill layout](#skill-layout)
 - [Core mental model](#core-mental-model)
 - [Standard workflows](#standard-workflows)
+  - [First interactive use: optional disk responses](#first-interactive-use-optional-disk-responses)
   - [A. "Free space NOW" (incident response)](#a-free-space-now-incident-response)
   - [B. "Set up alerting" (new machine or first time)](#b-set-up-alerting-new-machine-or-first-time)
   - [C. Alerter stopped working / making noise](#c-already-have-alerter-but-it-stopped-working--making-noise)
@@ -44,6 +45,9 @@ Trigger on any of:
 | `references/never-touch.md` | Categories that **must not** be deleted even under sudo (Mole-derived blacklist + incident-derived additions) |
 | `references/mole-techniques.md` | What Mole does that we borrow: marker→target map for `mo purge`, safe-path validators, age thresholds |
 | `references/alerting.md` | Full alerter design: disk/memory/Jetsam critical triggers plus sustained CPU anomaly detection, incident lifecycle, hysteresis, notifier choices, install/restore commands |
+| `references/optional-disk-responses.md` | First-use offer, installation and operation of two independent opt-ins: emergency Mole cache cleanup below 2%, and a Codex cleanup plan/page at or below 5% with exact-session continuation. |
+| `assets/mac-health-disk`, `assets/disk_*.py` | Consent-gated disk controller, deterministic inventory, restricted Codex runner and authenticated local selection/confirmation page. Both modes default off. |
+| `assets/mole-exact-file.sh`, `assets/mole-core-1.39.0.json` | Compatibility-pinned exact-file adapter to Mole; no general `mo clean`, sudo, or shell commands from the agent. |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
 | `assets/mac-health-action` | Background action dispatcher for read-only Codex/Claude investigations and explicitly confirmed graceful process stopping |
 | `assets/com.local.mac-health-check.plist` | LaunchAgent plist with `StartCalendarInterval` (StartInterval is broken on laptops) |
@@ -61,6 +65,17 @@ Read the relevant reference before acting. Do NOT operate from memory of these f
 4. **Mole is the safety floor** — even when running shell commands by hand, follow Mole's path-validation rules: never delete inside `/System`, `/bin`, `/usr`, `/etc`, `/var/db` outside specific allowlisted subpaths; bin/ only under .NET; vendor/ only under PHP; protect AI/password/VPN/keychain bundle IDs.
 
 ## Standard workflows
+
+### First interactive use: optional disk responses
+
+On the first **operational, interactive** use on a Mac (including an existing installation upgraded to this skill), read `references/optional-disk-responses.md` and offer both options separately in the user's language. Do this before routine setup; during an incident, do not delay immediate triage. A request to edit or review this skill is not consent to activate it on the development machine. Background invocations must never prompt for enrollment.
+
+- **Emergency cleanup, free space < 2%:** permission for a bounded Mole cleanup of explicitly approved regenerable caches without another question at incident time. Explain the exact profile, irreversible deletion, possible cache rebuild/download cost, and exclusions before accepting consent. This is not permission for general `mo clean`, project purge, Trash emptying, sudo, or process termination.
+- **Agent cleanup plan, free space <= 5%:** permission to launch the chosen agent automatically, inspect non-secret storage metadata, and open the local selection page in the default browser. Explain provider usage/cost and what metadata leaves the Mac. The agent may propose deletion but may not perform it; Submit is a selection, and applying still requires a separate confirmation.
+
+Record each explicit answer independently; silence, a generic "set up monitoring", or approval of one option does not authorize the other. Keep declined choices across sessions and upgrades. Ask again only on user request, a new machine, or a material change to the consent scope. Existing monitoring continues without either option.
+
+**Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with a local browser page. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Planning adds old installer/archive files directly in Downloads; it is not a full-disk audit. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
 
 ### A. "Free space NOW" (incident response)
 
@@ -85,6 +100,8 @@ Read the relevant reference before acting. Do NOT operate from memory of these f
 The Python script is bash-3.2-friendly, uses only stdlib, and is safe to run from inside the agent's shell. Hard-protected items (per `references/never-touch.md`) must always appear in the UI with `"protected": true` + a concrete `warning` string — the UI dims them and requires a per-item confirm dialog before they can be checked. **Never** omit a protected item that user data depends on (Telegram tdata, Bear database, password-manager containers, etc.) — visibility teaches the user the surrounding risk.
 
 ### B. "Set up alerting" (new machine or first time)
+
+Complete the first-use offer above; preserve existing choices when restoring monitoring. For the optional disk responses, also follow `references/optional-disk-responses.md` to install the bundled helper and dependencies without enabling either mode. Record activation only after independent explicit consent.
 
 1. Copy `assets/mac-health-check` and `assets/mac-health-action` to `~/bin/` (mkdir first; chmod +x).
 2. Copy `assets/com.local.mac-health-check.plist` to `~/Library/LaunchAgents/`.
@@ -118,10 +135,12 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 3. **`mo purge` and `mo clean` always with `--dry-run` first.** Show estimated reclaim, get confirm.
 4. **For Time Machine backups: `tmutil delete <path>`, never `rm`.** TM-tagged paths require the `tmutil` API.
 5. **For sudo cleanup of `/Library`, `/private/var/db/*`**: only the allowlisted subpaths from `references/never-touch.md` § Sudo allowlist.
-6. **No auto-cleanup hooks tied to alerts.** Alerts notify; user decides. Documented anti-pattern (Google SRE, also confirmed by community 2025-2026 — see `references/alerting.md`).
+6. **No unrestricted auto-cleanup hooks tied to alerts.** The only exception is the independently approved, bounded emergency Mole cache profile below 2% in `references/optional-disk-responses.md`. Its exact-file dry-run is mandatory; prior profile consent replaces the incident-time confirmation only for that profile. Planning at <= 5% never grants deletion permission. Emergency consent cannot authorize ordinary cleanup tiers or protected paths.
 7. **No auto-kill hooks tied to CPU alerts.** A CPU advisory may offer `Stop Process…`, but only as an explicit user action. Revalidate PID/executable identity and ownership, confirm, send SIGTERM first, and require a separate confirmation before SIGKILL.
 8. **Don't delete swap files.** `rm /private/var/vm/swapfile*` while running = guaranteed kernel panic.
 9. **Apply phase reads only the selection JSON.** Never hand-roll `rm` blocks or hard-code paths from the earlier scan when applying. Real incident: agent applied the default-selected recordings list from the original scan, ignoring that the user had unchecked them in the UI before submitting. The fix is structural — use `assets/apply-cleanup-selection.py` which iterates `selected_items` from the selection JSON only.
+
+Automated planning uses the helper's typed `format_version: 2` branch, with a separate confirmation on the local page bound to that exact selection. The emergency executor is the sole separate profile-consent path described in rule 6; it cannot reuse or broaden a user's interactive selection.
 
 ## Domain quirks captured
 

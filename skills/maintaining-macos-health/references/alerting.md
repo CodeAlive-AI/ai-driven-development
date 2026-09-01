@@ -28,7 +28,7 @@ Design and operations of the `mac-health-check` LaunchAgent — the active compl
 5. **Cooldown**: 30 min between repeats of the original disk/memory/Jetsam alerts.
 6. **Calibration window**: first 7 days log only for the original resource sensors. CPU starts immediately with conservative defaults and silent per-process advisories.
 7. **Suppress-flag**: `touch ~/.config/mac-health/silent` disables all alerts during heavy work. No need to unload the LaunchAgent.
-8. **No automatic cleanup or process termination**. CPU notifications expose investigation and stop actions, but the human must select them. Investigation is read-only; stopping is identity-checked, confirm-first, and SIGTERM-first.
+8. **No unrestricted automatic cleanup or process termination**. CPU notifications expose investigation and stop actions, but the human must select them. Investigation is read-only; stopping is identity-checked, confirm-first, and SIGTERM-first. Two independent [optional disk responses](optional-disk-responses.md) are available through the bundled `mac-health-disk` helper: a bounded emergency Mole cache profile below 2%, and a Codex plan/page at <= 5%. They require separate explicit enrollment and compatibility checks; neither is enabled by installation. Planning never authorizes deletion. Approved disk responses bypass calibration and use their own pause flag; the existing `silent` flag mutes notifications only.
 
 This design follows Google SRE alert-fatigue principles plus practitioner consensus from incident.io and Netdata Academy.
 

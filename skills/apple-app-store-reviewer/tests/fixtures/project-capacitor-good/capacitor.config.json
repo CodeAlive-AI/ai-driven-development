@@ -1,9 +1,0 @@
-{
-  "appId": "com.example.capacitorreleasefixture",
-  "appName": "Capacitor Release Fixture",
-  "webDir": "dist",
-  "loggingBehavior": "debug",
-  "ios": {
-    "webContentsDebuggingEnabled": false
-  }
-}

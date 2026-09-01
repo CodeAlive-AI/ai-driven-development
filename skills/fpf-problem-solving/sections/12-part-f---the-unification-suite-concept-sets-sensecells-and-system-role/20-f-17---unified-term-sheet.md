@@ -295,7 +295,7 @@ An architecture pattern needs public names for `interfaceSlot`, `providedPort`, 
 
 #### F.17:12.4 - Misleading evidence-role row
 
-A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover any exact local system-role kind with `A.2`, a separately obtaining assignment with `A.2.1`, performed Work with `A.15.1`, and Work attribution with `F.6`. The UTS may record selected names for those distinct values; a generic evidence-role row that fuses them is not admitted.
+A sheet has a row labelled `Evidence role`. F.17 treats that wording as a trigger and recovers the governed object instead of admitting a U-kind. If an episteme is used as evidence for another claim, use `A.10`, `B.3`, or `A.2.4` for the evidence relation. If an admitted System performs evidence-producing Work, recover the exact actual performer through A.13 and admit the Work independently through A.15.1. Add a local system-role kind with A.2, an obtaining assignment with A.2.1, and Work attribution with F.6 only when the sheet or receiving use expressly represents those separate claims. The UTS may record selected names for those distinct values; a generic evidence-role row that fuses them is not admitted.
 
 #### F.17:12.4a - Manufacturing batch across material and planning contexts
 
@@ -429,7 +429,7 @@ RowRationale: the governed value is the A.1.1 relation-kind token; its admitted 
 AdmissibleUse: Core-facing designation of the A.1.1 relation kind and its use in the E.24.UK bounded-model-use membership test
 BlockedUse: no use occurrence from availability, access, mention, assignment alone, Work alone, method application, assertion, publication, or structure membership
 RowEditionId: 2026-07-25
-CurrentnessCondition: reopen when A.1.1 changes the participant kinds, F.6 prerequisite, actual-use predicate, actor derivation, maximal-continuous-use identity, NameCard, or named Core use
+CurrentnessCondition: reopen when A.1.1 changes the participant kinds, the F.6 attribution condition for a row that expressly consumes it, actual-use predicate, actor derivation, maximal-continuous-use identity, NameCard, or named Core use
 
 SenseCell.ModelUseRelation.FPFCore.2026-07-25:
   ReferenceScheme: FPFCoreReferenceScheme
@@ -849,16 +849,16 @@ ReferenceScheme: FPFCoreReferenceScheme
 UnificationThreadId: RoleOntologyAndWordingPrecision.2026-08-09
 Block: System-role assignments and kind-use precision
 GovernedValueRef: SystemRoleKindRelationStructure
-GovernedValueKindRef: U.Structure
+GovernedValueKindRef: U.Kind
 SubjectPatternLocator: A.2.7
 UnifiedTechName: SystemRoleKindRelationStructure
 UnifiedPlainName: structure of relations among system-role kinds
 NameCardRef: NC-SYSTEM-ROLE-KIND-RELATION-STRUCTURE
 SenseCellRefs: SenseCell.SystemRoleKindRelationStructure.FPFCore.2026-08-09
 BridgeRefs: none
-RowRationale: both designations name the selected U.Structure over exact local system-role kinds and exact admitted relations among those kinds
-AdmissibleUse: Core-facing citation of the A.2.7 selected structure construction
-BlockedUse: no assignment configuration, taxonomy episteme, graph, table, system collection, or structure occurrence follows from this row
+RowRationale: both designations name the relation-defined kind specified by A.2.7; each member is a selected U.Structure, not the kind itself
+AdmissibleUse: Core-facing designation of that A.2.7 kind; one selected member must instead be identified by its exact kind constituents, selected obtaining relation occurrences, applied constraints, and named selection-use frame
+BlockedUse: no new root kind, selected structure instance, assignment configuration, taxonomy episteme, graph, table, or system collection follows from this row
 RowEditionId: 2026-08-09
 CurrentnessCondition: reopen when A.2.7, the exact NameCard, FPFCoreReferenceScheme or sense cell, E.10:7.5b classification or allowed-use rule for SystemRoleKindRelationStructure, or the cited use changes
 ```
@@ -919,9 +919,43 @@ SenseCell.SystemRoleKindRelationStructure.FPFCore.2026-08-09:
   ReferenceScheme: FPFCoreReferenceScheme
   LocalSenseId: SystemRoleKindRelationStructure-core
   LocalExpression: SystemRoleKindRelationStructure
-  LocalSenseClaim: a selected U.Structure over exact local system-role kinds and admitted relations among those kinds; it is not an assignment configuration, taxonomy episteme, or system collection
+  LocalSenseClaim: the A.2.7 relation-defined kind of selected structures; each member is a U.Structure with exact system-role-kind constituents, selected obtaining relation occurrences, applied constraints, and one named selection-use frame; this cell names the kind, not one member, assignment configuration, taxonomy episteme, or system collection
   NameCardRef: NC-SYSTEM-ROLE-KIND-RELATION-STRUCTURE
 ```
+
+#### F.17:12.4i - DPF Suite Reference public row
+
+This row projects the current F.18 settlement for the product form already governed by `E.11.DSG`. The governed kind remains the relation-defined product form, not a newly minted root kind. The row makes the name reusable under `FPFCoreReferenceScheme`; it is neither the Reference product nor the operation that publishes one.
+
+```text
+UTSRowId: UTS.DPFSuiteReference.FPFCore.2026-08-28
+ReferenceScheme: FPFCoreReferenceScheme
+UnificationThreadId: DPFSuiteReferenceNaming.2026-08-28
+Block: DPF Suite public reference product form
+GovernedValueRef: E.11.DSG DPF Suite Reference product form
+GovernedValueKindRef: U.Kind
+SubjectPatternLocator: E.11.DSG
+UnifiedTechName: DPFSuiteReference
+UnifiedPlainName: DPF Suite Reference
+NameCardRef: NC-DPF-SUITE-REFERENCE
+SenseCellRefs: SenseCell.DPFSuiteReference.FPFCore.2026-08-28
+BridgeRefs: none
+RowRationale: both designations name the maintained non-framework product form that starts from a cross-DPF working question, returns a bounded answer or blocker, and points back to the exact Suite collection, product series, editions, results, states, and sources that change the answer
+AdmissibleUse: Core-facing designation of the E.11.DSG product form and readable title component for one exact continuing DPF Suite Reference series or admitted edition
+BlockedUse: no Suite, product series, edition, admission, Suite inclusion, currentness, availability, source authority, answer, lookup Work, framework status, instructional Guide, or publication occurrence follows from this row
+LineageEntries: DPF Suite Guide is the predecessor Plain designation only; DSG remains stable PatternID lineage residue and is not a current public expansion; no DSR or synonym family is admitted
+RowEditionId: 2026-08-28
+CurrentnessCondition: reopen when the E.11.DSG product function, boundary, or identity rule; the exact NameCard; FPFCoreReferenceScheme or sense cell; the selected public use; or repeated reader classification changes
+
+SenseCell.DPFSuiteReference.FPFCore.2026-08-28:
+  ReferenceScheme: FPFCoreReferenceScheme
+  LocalSenseId: DPFSuiteReference-core
+  LocalExpression: DPFSuiteReference
+  LocalSenseClaim: the E.11.DSG relation-defined product form for a maintained non-framework publication that answers bounded cross-DPF questions, returns exact sources and honest gaps, and leaves Suite constitution, product-series and edition identity, lookup Work, publication, availability, authority, and currentness to their direct claims
+  NameCardRef: NC-DPF-SUITE-REFERENCE
+```
+
+A product-specific title may qualify the Plain designation, for example *Engineering DPF Suite Reference*. That use still needs the exact product-series or edition claim; this row supplies only the shared product-form designation.
 
 ### F.17:12.5 - Bias-Annotation
 
@@ -988,16 +1022,17 @@ Terms travel farther than the reasoning that produced them. F.17 carries only th
 
 ### F.17:16 - SoTA Decision for One Reader-Facing Term Row
 
-Source use was checked on 2026-08-20. The bounded question is: **at the effort of settling one reusable term, what must a reader-facing row preserve beyond a familiar label, and what apparatus can be left out?** Source status is evidence about currentness, not a reason to select an architecture.
+**Question and selected answer.** At the effort of settling one reusable term, what must a reader recover beyond a familiar label, and what apparatus can be left out? Applying `E.8:11`, the selected answer is one readable row that returns separately to the named value, naming decision, exact local sense, permitted and blocked citation uses, and the condition that reopens the row. Create it only when that reader-facing route is needed.
 
-| Current line | Strong contribution | Limit at comparable one-row effort | FPF decision and receiving locus |
-| --- | --- | --- | --- |
-| [ISO 704:2022](https://www.iso.org/standard/79077.html), current published terminology-work standard | Separates objects, concepts, definitions, and designations and gives a disciplined route for concept systems, definitions, and term choice. | It does not identify an FPF governed value, exact episteme edition, local-sense basis relation, obtaining Bridge, bounded reuse claim, or publication occurrence. | **Adopt** value-before-label and one-decision terminology discipline in sections 4, 6, and 7. **Reject** a definition or designation as admission, identity, reuse authority, or availability. |
-| W3C Ontology-Lexica Community Group, [*Lexicon Model for Ontologies: Community Report*](https://www.w3.org/2016/04/ontolex/), 2016, maintained community model rather than a W3C Standard | Separates lexical entry, form, lexical sense, and ontology reference; supports morphology, usage conditions, and explicit sense relations through semantics by reference. | A full ontology-lexicon and syntax graph is heavier than one FPF row, and the model does not decide FPF value admission, Bridge obtaining, reliance, or publication. | **Adapt** form/sense/reference separation in section 5.1 and the row schema. **Reject** mandatory full lexicon modeling and keep the exact FPF value, NameCard, cell, basis relation, and any Bridge as separate references. |
-| W3C, [*SKOS Simple Knowledge Organization System Reference*](https://www.w3.org/TR/skos-reference/), Recommendation 2009, checked current on 2026-08-20 | Keeps concepts, preferred and alternative labels, notes, collections, semantic relations, and mapping relations distinct. | SKOS is a stable vocabulary baseline, but its compact label and mapping model does not carry FPF object identity, rich morphology, use-specific reliance, or publication boundaries. | **Retain as lineage** for label, note, collection, and mapping separation in sections 7, 10, and 13. Do not turn a generic mapping or shared label into an F.9 Bridge. |
-| Zhu, Reinecke, and Mitra, [*Language Scent: Exploring Cross-Language Information Navigation*](https://arxiv.org/abs/2604.03604), 2026 preprint | Shows why contextual cues and recognizable local wording can help readers navigate. | The study is small, cross-language, and navigation-focused; recognizability proves neither referent identity nor cross-local equivalence. | **Adapt** its reader cue in worked wording and reader-use checks. **Reject** any inference from recognition to a second scheme, cell, Bridge, row, or publication occurrence. |
+**The lightweight serious rival.** The [OntoLex Community Report, Overview, Purpose, Core, and Semantics](https://www.w3.org/2016/04/ontolex/), permits the core module alone. A fair one-term comparator is a lexical entry with a form, a sense and a reference to the already defined ontology entity, plus only the usage notes this application needs. It does not require a full lexicon, morphology or syntax graph; it is not intended to define the ontology itself. **Adapt** its expression/sense/reference separation in `5.1` and `7`. Its extensibility also permits notes or a view to expose the same decision content as an F.17 row.
 
-**Selected non-dominated contribution.** A plain glossary row costs less but loses the exact value, local sense, admitted and blocked uses, and reopen path. A full OntoLex graph preserves richer linguistic structure but normally costs more than the one-row reader-recovery use needs. F.17 keeps one row that refers separately to the already recovered value, NameCard, exact scheme-and-sense cell, any basis relation or obtaining Bridge, and a separate E.24.PUB availability package only when required. At this application effort, that separation gives more replayable reader recovery than a glossary without requiring a full ontology lexicon. This is a local effort/traceability result, not a claim that FPF supersedes terminology standards or OntoLex.
+The choice is therefore not between a cheap row and an unnecessarily large graph. Hold the term, target, use conditions, and maintenance obligation fixed. A bare label or bare form/sense/reference chain lets the reader find the expression and target, but leaves the naming choice, blocked use, and reason to revisit it unstated. Adding those statements to the lightweight rival closes that gap; a generated readable view of those same statements is an acceptable way to express the F.17 row. A different vocabulary or file format is not, by itself, an improvement or a second naming result.
+
+For an ordinary reader inspecting one term, select the explicit row because the decision and return are visible together. The deliberate trade-off is maintaining a truthful reader-facing projection instead of asking that reader to reconstruct it from linked lexical statements. When lexical tooling already produces that projection, keep it and avoid a second editable source. Conversely, when morphology, translation, or machine lexicon exchange is the actual use, the core model and only its needed extensions may be the better carrier. No measured speed advantage, blanket cost superiority, or replacement of OntoLex is claimed.
+
+**Exact effect and countercases.** Steps 1–5 of section `4`, together with sections `6` and `14`, stop at ordinary wording, a local card, or a cell when no row is needed; steps 7–8 of section `4`, together with sections `5.1` and `7`, make the row's returns explicit and keep later publication separate. The countercase in `12.2` prevents a state label from becoming a system-role kind, `12.4c` leaves ordinary mantra wording without rows, `12.4h` distinguishes a reusable structure kind from one selected instance, and `12.4i` returns the Reference name to its product-form rule without creating a product or lookup Work. These cases supply the FPF-local reason for the added decision content; the OntoLex report supplies the rival's lexical modeling capability, not validation of FPF ontology. **Reject** mandatory full-lexicon modeling, raw label familiarity as sufficient reader recovery, and the inference that a row makes its referent or publication real.
+
+**Reopen.** Recompare when an equally small lexical entry or other presentation exposes the same decision, blocked uses, and exact returns with less reader and maintenance effort; when a generated view drifts from its source; or when the current use needs linguistic distinctions or machine exchange omitted by the row. If the added reader projection no longer changes use, retain the simpler expression of the same content.
 
 Currentness rule: when `F.2`, `F.3`, `F.5`, `F.7`, `F.8`, `F.9`, `F.10`, `F.14`, `F.15`, `F.18`, `C.2.1`, `E.17.0`, `E.24.UK`, `E.24.PUB`, `A.1.1`, `A.2`, `A.2.1`, `A.2.7`, `A.6.5`, `A.10`, `B.3`, `E.10.D2`, or the pattern that defines or constrains the governed value changes the value, kind, membership or obtaining rule, designation, scheme, cell, basis relation, Bridge, bounded-use claim, reliance, status and system-role boundary, edition relation, reference typing, or publication boundary, recheck only the affected rows and worked examples.
 

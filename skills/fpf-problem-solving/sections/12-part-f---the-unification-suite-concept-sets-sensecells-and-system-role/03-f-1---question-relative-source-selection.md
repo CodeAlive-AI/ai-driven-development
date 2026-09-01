@@ -78,6 +78,17 @@ Identify it under C.2.1 by three values: the ClaimGraph produced by Steps 1–5,
 **Step 7 — Recover only the meanings the work needs.**
 After the cut is stable, create an F.17 local-sense cell only for a retained expression that later reuse, a claim, a named receiver, or an actual relation needs. Do not postpone a meaning needed by Step 3 to this stage, and do not manufacture a cell for every retained source.
 
+#### F.1:4.2.1 - When the cut will support a SoTA claim
+
+A source cut used to claim SoTA has a stricter role test because source relevance and source currentness do not establish the best-known answer. `E.8:11` owns the FPF definition of SoTA and the meanings of its comparison roles; F.1 neither redefines SoTA nor selects the winning line. For each retained source, record one of those roles in plain wording: **best-known-line candidate**, **serious current rival**, **failure or counterexample evidence**, **official or popular comparator**, **lineage only**, or **identity/currentness only**.
+
+The first three roles can supply answer-changing evidence. An official or popular comparator may stay only when its named defect is necessary to the comparison. Roles are assigned by contribution, not institution: an official standard or widely used practice may instead be a best-known-line candidate when its substantive answer wins against the serious alternatives. Officiality, prevalence, maintenance, citation, freshness, or academic praise contributes nothing to that rank. An official catalogue, publisher page, or registry entry may verify the source's identity, edition, publication date, or maintenance state; it establishes neither truth, adequacy, nor SoTA rank.
+
+For a SoTA claim, disable the generic one-source cheap exit unless the one source is itself a current critical synthesis that compares the serious alternatives for the named question and the author can state why no known action-changing rival or counterexample remains hidden. Otherwise retain the necessary rival and failure evidence or return an unresolved source gap. Do not manufacture confidence from a one-source cut.
+
+The `SourceCutNote` records the `E.8:11` roles and the missing comparison, but it does not itself select the best-known line. Use `F.0.2` when an actual cross-source synthesis claim is required. Use `G.2` only when a broader refreshable evidence pack is justified; a bounded comparison does not require that apparatus by default.
+
+
 #### F.1:4.3 - The `SourceCutNote`
 
 The note's exact EntityOfConcern is the independently identified receiving question from Step 1. It is not the note, its file or one-screen form, the retained-source list, or a question-and-use bundle. The intended use remains part of what the note claims. Name the effective ReferenceScheme explicitly and make sure it resolves the question, every exact source-edition reference, and every answer-changing role statement. If either the question or scheme is unresolved, return that gap and keep the text as an ordinary working note.
@@ -87,6 +98,7 @@ Its ClaimGraph states:
 - the receiving question and intended use;
 - every retained source and exact edition;
 - the answer-changing role of each retained source;
+- for a SoTA-supporting cut, each retained source's plain role and any unresolved rival, counterexample, or synthesis gap;
 - deliberate exclusions and their reasons;
 - known limits and load-bearing source gaps;
 - the distinction between designed and performed material when it affects the answer; and
@@ -110,14 +122,17 @@ Inspect the underlying source claims before changing the cut. A descriptor match
 6. Domain families and search readings guide discovery only.
 7. Designed descriptions and performed occurrences stay distinct when that source difference matters.
 8. A changed relied premise reopens the affected cut claims; an unrelated edition-number change does not.
-9. One already identified sufficient source is the cheap exit.
+9. One already identified sufficient source is the ordinary cheap exit; for a SoTA claim, the stricter critical-synthesis condition in `F.1:4.2.1` applies.
 10. A protocol-defined evidence review continues to follow its domain method.
 
 #### F.1:4.6 - Self-checks
 
 - **Answer-change test.** What can each retained source change in the answer or action? If nothing, exclude it or state the missing role.
 - **Rival-and-limit test.** Is a known rival explanation, counterexample, or transfer limit still hidden? Add the source that makes it inspectable or return the source gap.
-- **One-source test.** Does one already identified source close the question? If yes, stop without using additional F.1 steps.
+- **One-source test.** Does one already identified source close the ordinary question? If yes, stop without additional F.1 steps. If the cut will support a SoTA claim, take this exit only when that source is a current critical synthesis of the serious alternatives and no known action-changing rival or counterexample remains hidden.
+- **SoTA-role test.** Has each retained source been classified under one of the comparison roles defined in `E.8:11`? If not, classify it there before using the cut for a SoTA claim; do not recreate the role meanings in F.1.
+- **Rank test.** Did official status, popularity, maintenance state, date, or a catalogue check raise a source's SoTA role? Remove that inference; keep the check only as source identity/currentness evidence.
+- **Gap test.** If the best-known line cannot be established, does the note return the missing rival, counterexample, or synthesis need as a source gap rather than naming the newest available source?
 - **Locality test.** Have two sources been treated as saying the same thing merely because they use the same word? If so, use the ordinary F.0.1 branch on the exact passages before deciding their roles, then return to selection.
 - **Search-policy test.** Did a score decide membership before source claims were inspected? Undo that decision.
 - **Memory test.** Can the receiver hold the cut and each source's role in view? Remove non-changing material or split genuinely different questions.
@@ -225,6 +240,9 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 - **SCR-F1-S10 (No algorithmic gate).** A search reading changes the cut only after inspection of source claims.
 - **SCR-F1-S11 (Reopen conditions).** The result says which question, use, edition, rival, counterexample, or transfer-boundary change reopens it.
 - **SCR-F1-S12 (Domain-method boundary).** A required systematic or appraisal-bearing review remains with its domain method.
+- **SCR-F1-S13 (SoTA source roles).** A cut used for a SoTA claim assigns every retained source one of the comparison roles defined in `E.8:11`, records it in plain wording, and says which retained contributions can change the answer. F.1 does not restate or supersede the E.8 definition.
+- **SCR-F1-S14 (No authority or currentness laundering).** Official status, popularity, maintained status, citation count, publication date, freshness, or academic praise does not promote a source into the best-known line. An official or widespread source may still earn that role from its substantive comparison. Catalogue and publisher pages support identity/currentness only unless their substantive claims independently enter the comparison.
+- **SCR-F1-S15 (SoTA one-source guard and gap).** A one-source SoTA cut is used only when that source critically synthesizes the serious alternatives and no known action-changing rival or counterexample remains hidden. Otherwise the cut retains the necessary comparison or returns a source gap.
 
 #### F.1:7.2 - Regression checks
 
@@ -238,7 +256,9 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| One-book domain | One influential source is treated as the whole answer despite a known rival or transfer limit. | State the question and add each source whose inspected claims change it. |
+| One-book domain | One influential source is treated as the whole answer despite a known rival or transfer limit. | State the question and add each source whose inspected claims change it. For a SoTA claim, the one source must itself critically compare the serious alternatives. |
+| Currentness laundering | A registry entry, official status, maintained label, citation count, or recent date promotes a source into the best-known line. | Record identity and currentness separately. Select rank only from the answer-changing comparison, or return the unresolved source gap. |
+| Source-role collapse | A lineage anchor, popular default, failure case, and best-known-line candidate are all reported as equivalent support. | Classify each retained source by its answer-changing role and prevent the last three non-positive roles from carrying SoTA rank. |
 | Reading-list cut | Many sources are retained without distinct roles. | Keep only answer-changing roles and record deliberate exclusions. |
 | Edition blur | A source is named without the edition that fixes the relied claim. | Identify the edition and reopen only affected claims when it changes. |
 | Domain-family inference | A shelf label is treated as evidence of meaning, relation, or relevance. | Use the label only to find sources; inspect their claims. |
@@ -275,17 +295,16 @@ This keeps the useful part of purposive and iterative sampling—selection for a
 
 ### F.1:11 - SoTA-Echoing
 
-| Current method line and exact sources | Decision and effect in `F.1` | Limit retained |
-| --- | --- | --- |
-| Page et al., *The PRISMA 2020 statement: an updated guideline for reporting systematic reviews* (2021), and Rethlefsen et al., *PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews* (2021). | **Adapt as a boundary source.** When a systematic review is actually required, keep its eligibility, information sources, searches, updates, and reporting recoverable and continue with that domain method. | Reporting guidance does not select sources for an ordinary F.1 question or establish conceptual relevance. |
-| Ames, Glenton, and Lewin, *Purposive sampling in a qualitative evidence synthesis: a worked example from a synthesis on parental perceptions of vaccination communication* (2019), DOI 10.1186/s12874-019-0665-4. | **Adapt.** Fit a manageable selection to the stated objective while keeping variation and deliberate omissions visible; in F.1, retain sources only for inspected answer-changing roles. | The health-review frame and richness scale are not FPF admission rules. |
-| Dixon-Woods et al., *Conducting a critical interpretive synthesis of the literature on access to healthcare by vulnerable groups* (2006), read with Perlman, Ben-Sheleg, and Ellen, *Making sense of conducting a critical interpretive synthesis: A scoping review* (2026; online 2025). | **Adapt and bound.** Let a compass question and an emerging explanation reopen iterative selection across heterogeneous evidence. | F.1 stops with the source cut; it performs neither synthesis nor a saturation claim. |
-| Malterud, Siersma, and Guassora, *Sample Size in Qualitative Interview Studies: Guided by Information Power* (2016), DOI 10.1177/1049732315617444. | **Adapt only as a bounded analogy.** Reject a universal source quota and make sufficiency relative to the receiving question and use. | Interview samples and source selections are different objects; F.1 imports neither the information-power model nor a saturation rule. |
-| van de Schoot et al., *An open source machine learning framework for efficient and transparent systematic reviews* (2021), DOI 10.1038/s42256-020-00287-7. | **Adapt as optional search assistance.** Use active learning to prioritize candidate inspection under a named local search policy; decide membership only after inspecting source claims. | Ranking efficiency establishes neither relevance, truth, nor completeness. |
+| Practice question | Best-known line | Serious alternative or default | Defect overcome and F.1 mutation | Source roles and limits | Reopen condition |
+| --- | --- | --- | --- | --- | --- |
+| How should a small source cut remain question-led while exposing decisive heterogeneous rivals and limits? | Critical interpretive synthesis is the best-known-line candidate for this bounded comparison because it begins from a compass question, uses purposive iterative selection, critiques assumptions, and can synthesize heterogeneous evidence. Perlman, Ben-Sheleg, and Ellen's 2026 scoping review makes the method's recurring phases, variation, and gaps inspectable. | Protocol-first systematic-review reporting and one-canon selection are the serious defaults. PRISMA and PRISMA-S are retained only as an official/popular comparator when a protocol-defined review is actually required. | Fixed eligibility and reporting can preserve search history without deciding which conceptual claim changes the answer; one-canon selection hides rivals and transfer failure. **Adapt:** F.1 uses a stated question, inspected roles, iterative reopen, explicit gaps, and a separate `F.0.2` synthesis boundary. **Reject:** a saturation claim, health-domain appraisal rules, and an exhaustive protocol for every bounded question. | Perlman, Ben-Sheleg, and Ellen, [*Making sense of conducting a critical interpretive synthesis: A scoping review*](https://doi.org/10.1017/rsm.2025.10041) (2026), is the current critical synthesis; Dixon-Woods et al. (2006) is method lineage, not rank by age; PRISMA/PRISMA-S are the explicit protocol comparator; purposive-sampling studies support the variation problem but set no FPF quota. | Reopen if a stronger current source-selection synthesis offers a cheaper method that exposes the same action-changing rivals, counterexamples, limits, and gaps. |
+| How may search automation reduce effort without deciding the source cut? | Transparent active-learning screening is the best-known-line candidate for prioritizing inspection in a large candidate set when its corpus, model, and stopping interpretation remain recoverable. | Ranking, similarity, citation count, or an LLM answer used directly as the membership gate is the serious default. | The default converts an attention proxy into relevance, truth, or completeness. **Adapt:** `F.1:4.4`, invariants, self-checks, and regression checks let search readings order inspection but require the underlying claim before membership changes. | van de Schoot et al., [*An open source machine learning framework for efficient and transparent systematic reviews*](https://doi.org/10.1038/s42256-020-00287-7) (2021), supplies an efficient transparent-screening branch, not evidence that a retained source is relevant or sufficient. Search-tool documentation and latest-model status are identity/currentness only. | Reopen if a current method demonstrates lower inspection effort while preserving claim-level membership decisions and explicit omission risk. |
 
-The method remains question-relative, claim-inspecting, finite, and explicit about limits. Reopen the comparison when current source-selection practice offers a cheaper way to expose answer-changing omissions without turning a search proxy into a selection verdict.
+These comparisons change the source-selection method and its stops; they do not make a `SourceCutNote` a synthesis result or assurance claim.
 
 ### F.1:12 - Relations
+
+- `E.8:11` owns the canonical SoTA definition, comparison-role meanings, and positive comparison contract. F.1 prepares only the question-relative source cut and records those roles for the receiving comparison.
 
 **Builds on.**
 

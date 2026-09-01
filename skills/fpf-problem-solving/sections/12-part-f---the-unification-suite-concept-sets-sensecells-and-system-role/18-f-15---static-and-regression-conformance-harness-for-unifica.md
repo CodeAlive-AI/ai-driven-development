@@ -9,7 +9,7 @@
 **Normativity:** Normative.
 **Builds on:** F.17 for exact `SchemeSenseCell`, local-sense basis, and row epistemes; F.18 for naming-settlement `NameCard` epistemes and selected designation expressions; F.14 and F.8 for anti-explosion and mint-or-reuse decisions; F.13 for lineage; F.9 for actual cross-local Bridge occurrences and separate bounded-use claims; F.4 for system-role-kind-description epistemes; F.10 or the current pattern that defines the status values and windows; C.2.1 for exact claim and record epistemes; A.2.6 for ClaimScope; A.1.1 and A.22 only when a selected bounded-model-use Structure actually changes the checked use; and E.24.PUB for publication.
 
-**Coordinates with:** A.6.1 for exact check-application bindings; A.15.1 and F.6 for dated assessment Work and its attribution when that claim is present; A.10 and B.3 for evidence reliance and assurance; G.11 for currentness; A.2, A.2.1, A.2.5, and A.2.7 for system-role kinds, assignments, assignment-state predicates and direct state relations, and relations among system-role kinds; E.17 and E.10.D2 for view, description, and source-use claims; A.6.5 for relation declaration; and the pattern that defines each non-naming object included in the selected slice.
+**Coordinates with:** A.6.1 for exact check-application bindings; A.13 for every precise performer's local core, A.15.1 for independent dated assessment-Work admission, and F.6 only for a current precise assignment-bound attribution; A.10 and B.3 for evidence reliance and assurance; G.11 for currentness; A.2, A.2.1, A.2.5, and A.2.7 for system-role kinds, assignments, assignment-state predicates and direct state relations, and relations among system-role kinds; E.17 and E.10.D2 for view, description, and source-use claims; A.6.5 for relation declaration; and the pattern that defines each non-naming object included in the selected slice.
 
 **Plain entry cues (informative).** Static or regression check over a finite naming slice; selected-name regression; exact before/after naming continuity check.
 
@@ -78,7 +78,7 @@ The harness has two rule families:
 
 Both families are F.15-local check declarations over already defined objects. A practitioner may apply their questions and obtain a local result without naming the checking activity as Tech `U.Work`. An exact rule application, when its identity is needed, uses A.6.1.
 
-If a replayable result or example asserts dated assessment `U.Work`, point to its complete A.15.1/F.6 basis. A short record may omit only an assignment identifier unused by its receiving claim. Name the A.6.1 application and bindings when that application is also asserted.
+If a replayable result or example asserts dated assessment `U.Work`, recover each actual performer's A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the result also needs precise assignment-bound attribution. A short record may omit an assignment identifier unused by its receiving claim only when every relation it consumes remains recoverable. Name the A.6.1 application and bindings when that application is also asserted.
 
 C.2.1 separately constitutes the result claims and optional conformance-record episteme. A.10 and B.3 supply evidence-reliance and assurance rules; E.24.PUB supplies publication rules; G.11 supplies currentness rules.
 
@@ -88,7 +88,7 @@ C.2.1 separately constitutes the result claims and optional conformance-record e
 * **Static Conformance Rule (SCR)** - an F.15-local declared predicate over exact current inputs.
 * **Regression and Stability Conformance Rule (RSCR)** - an F.15-local declared predicate over exact earlier/later inputs plus the continuity or change claim and receiving use.
 * **Check application** - an actual A.6.1 operation application with exact rule and object bindings, when current.
-* **Dated assessment Work** - a specific `U.Work` occurrence used only for a replayable performance claim. Its complete A.15.1/F.6 basis must already be established.
+* **Dated assessment Work** - a specific `U.Work` occurrence used only for a replayable performance claim. Each performer must already have the A.13 core and the Work must already be independently admitted under A.15.1. F.6 is additionally required only when the receiving claim needs precise assignment-bound attribution.
 * **Result claim** - one C.2.1 episteme asserting `pass`, `fail`, or `undetermined` for one exact rule application, scope version, and use; not a general status value.
 * **Witness** - an exact example, counterexample, invariant, trace, or edition note cited by the result claim; its presence is not the result or an evidence-use relation.
 * **Conformance record** - an optional C.2.1 episteme that packages refs to the scope, applications/work, result claims, witnesses/evidence paths, non-admitted uses, and reopen conditions; it performs no check.
@@ -333,7 +333,7 @@ F.15 result:
 * An `ExecutionSystemRoleKindDescription` remains an F.4 episteme about one exact local `ExecutionSystemRole` under one scheme; it does not describe both cells, assign a system, or prove work.
 * If a later `task` sense becomes cyclic while the `activity` sense remains non-periodic, RSCR-F15-E4 and E9 compare exact later cells and Bridge candidates; evidence may change the use claim or reliance without silently rewriting the prior Bridge.
 
-Suppose `CheckRun-17` is admitted dated assessment `U.Work`, `CheckMethod-17` is its semantic `U.Method`, `CheckInterval-17` is the Work interval, and `HarnessSystem-17` is the containing System. `Evaluator-17` is the admitted `U.System` that performs the Work using that Method during `CheckInterval-17`. `EvaluatorAssignmentSpecies-17` is a declared `U.SystemRoleAssignment` species; `EvaluatorAssignment-17` is one occurrence with every required participant value, is held by `Evaluator-17`, and covers `CheckInterval-17`. F.6 links `CheckRun-17` to that assignment.
+Suppose `CheckRun-17` is dated assessment `U.Work`, `CheckMethod-17` is its semantic `U.Method`, `CheckInterval-17` is the Work interval, and `HarnessSystem-17` is the containing System. `Evaluator-17` is the admitted `U.System` that performs the Work using that Method during `CheckInterval-17`. First recover Evaluator-17's A.13 core for this action, including declared assignment species `EvaluatorAssignmentSpecies-17` and one obtaining occurrence `EvaluatorAssignment-17` with every required participant value, Evaluator-17 as holder, and interval coverage. A.15.1 then independently admits `CheckRun-17` from its performance history, enacted Method, interval, and containing-System relation. Because this example also claims performance under `EvaluatorAssignment-17`, F.6 afterward links the already admitted Work to that same assignment.
 
 `ApplySCR-S12-17` is the exact A.6.1 rule application and bindings. `BridgeRuleResult-17` is a separate C.2.1 result claim; `WitnessTrace-17` and its A.10 path are separate again. `UnificationConformanceRecord-17` merely cites those admitted refs. Publishing the record requires its own E.24.PUB occurrence, form, and carrier.
 
@@ -413,7 +413,7 @@ F.15 blocks unification bias: shared spelling, table membership, a stable id, an
 | H8 | `CL` or witness optimism | Evidence shorthand silently strengthens relation or use authority | Confuses evidence, relation truth, and bounded use | RSCR-F15-E9/E10 re-test the exact occurrence and separate use claim |
 | H9 | Plain label drift | Plain expression suggests another kind or claim | Reader imports a wrong prototype | SCR-F15-T1-T4 require the current F.18 settlement |
 | H10 | Scope membership as evidence | A member is considered supported because it is listed | Selection has no evidential force | CC-F15-3/9 require exact result and evidence refs |
-| H11 | Record performs check | Filling `StaticRuleResults` is treated as an application or Work | Erases occurrence and result identity | Keep ordinary checking outside Work admission. If dated assessment Work is asserted, cite the complete A.15.1 and F.6 facts stated in the Solution, the A.6.1 application, and the separate C.2.1 result. |
+| H11 | Record performs check | Filling `StaticRuleResults` is treated as an application or Work | Erases occurrence and result identity | Keep ordinary checking outside Work admission. If dated assessment Work is asserted, cite each performer's A.13 core and the independent A.15.1 Work facts stated in the Solution; add F.6 only when precise assignment-bound attribution is also current. Keep any A.6.1 application and the separate C.2.1 result distinct. |
 | H12 | Witness is result | A trace, example, or report is labelled `pass` | Carrier presence establishes no claim | Cite the result episteme and A.10 path separately |
 | H13 | Description replaces occurrence | Bridge, Structure, status, or row description is checked as the subject itself | Confuses description truth with world-side or governed object | Resolve the exact occurrence/value and keep its description as a neighbor |
 
@@ -464,7 +464,7 @@ Currentness rule: when the defining or testing rule for a value—or F.17/F.18, 
 * **F.9, C.2.1, A.10, and B.3.** Govern actual Bridge occurrences, separate bounded-use claims, evidence reliance, and assurance. Descriptions, Cards, `CL`, and witnesses are not relation truth or use authority.
 * **F.10 or the applicable status pattern.** Use it for status family, value, target, scope, window, source, and use claims.
 * **A.1.1 and A.22.** Supply an optional independently selected bounded-model-use Structure only when its organization changes the checked use; description and membership remain separate.
-* **A.15.1, F.6, and A.6.1.** Define the System–Method–Work facts, Work attribution, and exact rule application required only when those identities are asserted. Ordinary checking need not be admitted as `U.Work`.
+* **A.13, A.15.1, F.6, and A.6.1.** A.13 recovers each exact actual performer and A.15.1 independently admits dated Work; F.6 adds only an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment, and A.6.1 governs exact rule application. Ordinary checking need not be admitted as `U.Work`, and missing or failed F.6 leaves any independently admitted Work intact.
 * **E.24.PUB and G.11.** Govern publication occurrence/form/carrier and currentness separately from the checked record.
 * **C.34.** Supplies architecture-specific preservation or equivalence adequacy when exact selected architecture structures and losses are the live subject; F.15 carries only the finite regression check and result refs.
 

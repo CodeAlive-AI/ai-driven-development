@@ -127,7 +127,7 @@ Unknown resistance can support a local diagnosis or planning discussion. It cann
 
 Ordinary practitioner prose may say, for example, “the engineer slowed the rollout” when it recognizably names the System acting in the situation.
 
-If the receiving claim relies on performed Work, identify the actual System actor and use the complete A.15.1 and F.6 Work basis. If it relies on a local system-role kind, System classification, or assignment, add each distinction separately. An assignment does not act and does not supply authority; cite its directly declared relation species and exact obtaining occurrence while still naming the holder System.
+If the receiving claim relies on performed Work, identify the actual System actor, recover its A.13 core, and independently admit the dated Work under A.15.1. Add F.6 afterward only when the temporal claim also needs precise assignment-bound attribution. If the claim relies on a local system-role kind, System classification, or assignment, add each distinction separately. An assignment does not act and does not supply authority; cite its directly declared relation species and exact obtaining occurrence while still naming the holder System.
 
 A Method, policy episteme, tool, setting, physical condition, resource input, assignment, capability, or record is not another actor merely because it affects the situation. Name its actual direct relation to the temporal behavior, or keep it as an unresolved or source-side intervention claim. Keep authority, WorkPlan, capability, performed Work, and claimed effect separate.
 
@@ -360,7 +360,7 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 | C27-5 | Dyn0, Dyn1, and Dyn2 classify claims, not Systems or other world objects. |
 | C27-6 | The local result is the one-screen card; a boundary-crossing profile contains only the small header and exact direct-result references. |
 | C27-7 | The card names claimed input, resistance or cost, reason for the reading, supported use, unsupported use, and reopen condition without implying causal effect, Work, authority, value, promise, or assurance. |
-| C27-8 | Performed Work names the actual System actor and complete A.15.1 and F.6 basis. An assignment remains a separate obtaining relation and never acts. |
+| C27-8 | Performed Work names the actual System actor, whose A.13 core precedes independent A.15.1 Work admission. F.6 follows only when precise assignment-bound attribution is current. An assignment remains a separate obtaining relation and never acts. |
 | C27-9 | A non-system input uses its actual direct relation or remains an unresolved or source-side intervention claim; no generic applier branch is created. |
 | C27-10 | A viability use cites an exact C.26.3 claim episteme or ClaimAddress and an exact System or A.22 Structure bearer; no generic viability or configuration relation is invented. |
 | C27-11 | Measurement, dynamics, Work, causality, benchmark, promise, value, quality, viability, scaling, adaptation, search, publication, assurance, and residual QL stay with their direct patterns. |

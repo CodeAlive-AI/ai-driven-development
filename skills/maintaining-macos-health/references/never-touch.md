@@ -307,7 +307,7 @@ When in doubt for an Application Support folder: only Cache/CodeCache/GPUCache/S
 - `rm /private/var/vm/sleepimage` — only safe if hibernation is disabled first via `sudo pmset -a hibernatemode 0 standby 0`. Otherwise corrupts sleep/wake.
 - Force-killing live processes for "memory pressure" — corrupts open file handles. Docker volumes, databases, in-flight git operations, unsaved files. Suggest user close gracefully.
 - Auto-emptying Trash — user may still want recent items.
-- Auto-cleanup tied to alerts — anti-pattern (Google SRE consensus). Alert notifies; human decides.
+- Unrestricted auto-cleanup tied to alerts — prohibited. The only exception is the independently approved, bounded emergency cache profile below 2% in [optional-disk-responses.md](optional-disk-responses.md), through the pinned Mole adapter. None of this file's protected data becomes eligible. Agent-assisted planning at <= 5% never permits deletion without a separate exact-selection confirmation.
 - Disabling SIP for "deeper monitoring access" — CVE-2024-44243 demonstrated kernel attack surface. Not justified for personal monitoring.
 - Modifying TCC database (`tccutil reset` is fine, direct SQLite edits are not).
 - `rm` inside `~/Library/CloudStorage/<vendor>/` — File Provider treats every local entry as a handle to the cloud original, including dehydrated stubs. Shell `rm` propagates the deletion to the cloud and bypasses Trash; in Safe Mode it bypasses the File Provider protection entirely (MacRumors, ianbetteridge.com).

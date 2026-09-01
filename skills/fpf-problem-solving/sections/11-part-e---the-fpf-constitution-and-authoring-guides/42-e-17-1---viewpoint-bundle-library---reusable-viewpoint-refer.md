@@ -96,7 +96,7 @@ Open the complete constitution below for the affected catalogue edition when aut
 - the exact `U.ViewpointRef` members and target-kind compatibility claim for each declaration; and
 - only maintenance claims currently needed, using the branch that matches the present claim:
   - for a current maintenance-System claim, cite the admitted maintenance `U.System`; cite an exact local system-role kind and its independently evaluated classification only when that classification is current;
-  - for actual maintenance Work, cite the dated `U.Work` and its performer, and use F.6 to identify the assignment under which that System acted; a short catalogue claim may omit identifiers its bounded use does not need;
+  - for actual maintenance Work, recover the exact actual performer through A.13 and let A.15.1 independently admit the dated `U.Work`; add F.6 only when the catalogue claim or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, missing or failed F.6 leaves the Work intact, and a short catalogue claim may omit identifiers its bounded use does not need;
   - for current maintenance responsibility, cite its direct admitted predicate and actual participants or return the exact missing governor; assignment establishes no responsibility; and
   - for prospective maintenance guidance, retain only the change-control note, intended maintenance condition or `U.WorkPlan`, and scope tag; this content asserts no performed Work, current assignment, or responsibility.
 

@@ -157,6 +157,26 @@ def main(argv: list[str]) -> int:
         print(f"invalid selection JSON: {exc}", file=sys.stderr)
         return 1
 
+    # Automated plans use typed operations and a durable, hash-bound UI
+    # confirmation. They never enter the legacy shell-command executor below.
+    if sel.get("format_version") == 2:
+        from disk_responses import Context, apply_confirmed, set_status
+        from disk_safety import read_json
+        context = Context()
+        try:
+            incident = context.incident(sel_path.parent.name)
+            if sel_path.resolve() != incident / "selection.json":
+                raise ValueError("selection outside the incident directory")
+            read_json(sel_path)
+            if args.dry_run:
+                print(json.dumps(sel["selected_items"], indent=2))
+            else:
+                apply_confirmed(context, incident)
+            return 0
+        except Exception as exc:
+            print(f"typed selection refused: {exc}", file=sys.stderr)
+            return 1
+
     items = sel.get("selected_items", []) or []
     if not items:
         print("selected_items is empty — nothing to do", file=sys.stderr)
