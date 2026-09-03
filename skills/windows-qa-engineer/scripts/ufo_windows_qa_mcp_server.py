@@ -1,7 +1,7 @@
 """
 ufo_windows_qa_mcp_server.py
 
-Stdio MCP server that exposes UFO's real Windows automation tools to Claude Code.
+Stdio MCP server that exposes UFO's real Windows automation tools to an MCP client.
 
 Composes UFO's UICollector, HostUIExecutor, AppUIExecutor into ONE server
 via FastMCP.mount(). No mocks, no re-implementation.
@@ -11,10 +11,19 @@ Requires: UFO installed (pip install from repo), fastmcp, pydantic
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
+import os
+import sys
 import time
 from typing import Annotated, Any, Dict, List, Optional
+
+ufo_root = os.environ.get("UFO_ROOT")
+if ufo_root:
+    os.chdir(ufo_root)
+    if ufo_root not in sys.path:
+        sys.path.insert(0, ufo_root)
 
 from fastmcp import FastMCP
 from pydantic import Field
@@ -48,42 +57,62 @@ mcp.mount(_get_ufo_server("AppUIExecutor"))
 
 def _parse_tool_result(result: Any) -> Any:
     """Return structured FastMCP results when possible."""
+    def to_plain(value: Any) -> Any:
+        root = getattr(value, "root", None)
+        if root is not None:
+            return to_plain(root)
+        if hasattr(value, "model_dump"):
+            return to_plain(value.model_dump())
+        if isinstance(value, dict):
+            return {str(key): to_plain(item) for key, item in value.items()}
+        if isinstance(value, (list, tuple)):
+            return [to_plain(item) for item in value]
+        return value
+
     structured = getattr(result, "structured_content", None)
     if structured is not None:
         if isinstance(structured, dict) and set(structured.keys()) == {"result"}:
-            return structured["result"]
-        return structured
+            return to_plain(structured["result"])
+        return to_plain(structured)
 
     content = getattr(result, "content", None)
     if content:
         text = getattr(content[0], "text", None)
         if text is not None:
             try:
-                return json.loads(text)
+                return to_plain(json.loads(text))
             except json.JSONDecodeError:
                 return text
 
-    return result
+    return to_plain(result)
+
+
+async def _call_mounted_tool(name: str, arguments: Dict[str, Any]) -> Any:
+    """Call one of the mounted UFO tools through FastMCP's public Tool API."""
+    tool = await mcp.get_tool(name)
+    return await tool.run(arguments)
 
 
 @mcp.tool()
-def qa_refresh_and_list_windows(
+async def qa_refresh_and_list_windows(
     remove_empty: Annotated[bool, Field(description="Drop empty/ghost windows.")] = True
 ) -> Annotated[List[Dict[str, Any]], Field(description="Window list.")]:
     """Refresh + list windows in one call. Wraps UICollector.get_desktop_app_info."""
-    return mcp.call_tool_sync(
+    result = await _call_mounted_tool(
         "get_desktop_app_info",
         {"remove_empty": remove_empty, "refresh_app_windows": True},
     )
+    parsed = _parse_tool_result(result)
+    return parsed if isinstance(parsed, list) else []
 
 
 @mcp.tool()
-def qa_refresh_controls(
+async def qa_refresh_controls(
     field_list: Annotated[List[str], Field(description="Fields to fetch per control.")],
 ) -> Annotated[List[Dict[str, Any]], Field(description="Controls for selected window.")]:
     """Refresh control map for the selected window. Wraps UICollector.get_app_window_controls_info."""
     try:
-        result = mcp.call_tool_sync(
+        result = await _call_mounted_tool(
             "get_app_window_controls_info", {"field_list": field_list}
         )
         parsed = _parse_tool_result(result)
@@ -94,7 +123,7 @@ def qa_refresh_controls(
 
 
 @mcp.tool()
-def qa_wait_for_text_contains(
+async def qa_wait_for_text_contains(
     id: Annotated[str, Field(description="Control id.")],
     name: Annotated[str, Field(description="Control name.")],
     expected_substring: Annotated[str, Field(description="Substring that must appear.")],
@@ -106,11 +135,12 @@ def qa_wait_for_text_contains(
     last_text: Optional[str] = None
 
     while time.time() < deadline:
-        res = mcp.call_tool_sync("texts", {"id": id, "name": name})
+        raw = await _call_mounted_tool("texts", {"id": id, "name": name})
+        res = _parse_tool_result(raw)
         last_text = res if isinstance(res, str) else str(res)
         if expected_substring in last_text:
             return {"ok": True, "text": last_text, "matched": expected_substring}
-        time.sleep(max(0.05, poll_s))
+        await asyncio.sleep(max(0.05, poll_s))
 
     return {
         "ok": False,

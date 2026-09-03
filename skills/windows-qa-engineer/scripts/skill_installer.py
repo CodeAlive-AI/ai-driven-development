@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-skill_installer.py — General-purpose installer for Claude Code skills.
+skill_installer.py — General-purpose installer for agent skills.
 
 Reads install.yaml from a skill directory and executes the declared steps:
 platform check, python check, git clone, venv, pip install, MCP config, verify.
@@ -171,10 +171,41 @@ def _parse_simple_yaml(path: Path) -> dict[str, Any]:
             k, v = stripped.split(":", 1)
             v = v.strip()
             if v == "|":
-                block_scalar_key = k.strip()
-                block_scalar_indent = indent + 2
-                block_scalar_lines = []
                 i += 1
+                scalar_lines = []
+                scalar_indent = indent + 2
+                while i < len(lines):
+                    scalar_line = lines[i]
+                    scalar_line_indent = len(scalar_line) - len(scalar_line.lstrip())
+                    if scalar_line.strip() == "" or scalar_line_indent >= scalar_indent:
+                        scalar_lines.append(
+                            scalar_line[scalar_indent:]
+                            if scalar_line_indent >= scalar_indent
+                            else ""
+                        )
+                        i += 1
+                    else:
+                        break
+                current_map[k.strip()] = "\n".join(scalar_lines).rstrip("\n") + "\n"
+                continue
+            if v == "" or v.startswith("#"):
+                i += 1
+                nested_map = {}
+                nested_indent = indent + 2
+                while i < len(lines):
+                    nested_line = lines[i]
+                    nested_stripped = nested_line.strip()
+                    nested_line_indent = len(nested_line) - len(nested_line.lstrip())
+                    if nested_stripped == "" or nested_stripped.startswith("#"):
+                        i += 1
+                        continue
+                    if nested_line_indent < nested_indent:
+                        break
+                    if nested_line_indent == nested_indent and ":" in nested_stripped:
+                        nested_key, nested_value = nested_stripped.split(":", 1)
+                        nested_map[nested_key.strip()] = _yaml_val(nested_value.strip())
+                    i += 1
+                current_map[k.strip()] = nested_map
                 continue
             current_map[k.strip()] = _yaml_val(v)
             i += 1
@@ -287,31 +318,38 @@ def check_python(manifest: dict) -> dict:
         return {"step": "python", "status": "ok", "detail": platform.python_version()}
 
     import re
-    match = re.match(r"([><=!]+)([\d.]+)", constraint)
-    if not match:
-        return {"step": "python", "status": "ok", "detail": f"Unparsed constraint: {constraint}"}
 
-    op, ver_str = match.groups()
-    required = tuple(int(x) for x in ver_str.split("."))
-    current = sys.version_info[:len(required)]
+    for clause in (part.strip() for part in constraint.split(",")):
+        match = re.fullmatch(r"([><=!]+)([\d.]+)", clause)
+        if not match:
+            return {
+                "step": "python",
+                "status": "failed",
+                "detail": f"Unsupported Python constraint: {constraint}",
+            }
 
-    ops = {
-        ">=": current >= required,
-        ">": current > required,
-        "<=": current <= required,
-        "<": current < required,
-        "==": current == required,
-        "!=": current != required,
-    }
+        op, ver_str = match.groups()
+        required = tuple(int(x) for x in ver_str.split("."))
+        current = sys.version_info[:len(required)]
+        comparisons = {
+            ">=": current >= required,
+            ">": current > required,
+            "<=": current <= required,
+            "<": current < required,
+            "==": current == required,
+            "!=": current != required,
+        }
+        if op not in comparisons or not comparisons[op]:
+            return {
+                "step": "python",
+                "status": "failed",
+                "detail": (
+                    f"Requires Python {constraint} but running "
+                    f"{platform.python_version()}"
+                ),
+            }
 
-    if ops.get(op, True):
-        return {"step": "python", "status": "ok", "detail": platform.python_version()}
-
-    return {
-        "step": "python",
-        "status": "failed",
-        "detail": f"Requires Python {constraint} but running {platform.python_version()}",
-    }
+    return {"step": "python", "status": "ok", "detail": platform.python_version()}
 
 
 def process_repos(manifest: dict) -> tuple[list[dict], Path | None]:
@@ -405,7 +443,12 @@ def configure_mcp(
 
     # Merge env from manifest
     if mcp_conf.get("env"):
-        env.update(mcp_conf["env"])
+        env.update(
+            {
+                key: os.path.expanduser(str(value))
+                for key, value in mcp_conf["env"].items()
+            }
+        )
 
     # Build server entry
     entry: dict[str, Any] = {
@@ -457,6 +500,7 @@ def run_verify(manifest: dict, venv_python: Path | None) -> dict | None:
         capture_output=True,
         text=True,
         env=env,
+        cwd=pythonpaths[0] if pythonpaths else None,
     )
 
     if result.returncode == 0:

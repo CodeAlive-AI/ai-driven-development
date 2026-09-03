@@ -11,7 +11,7 @@ Skill that turns the agent into a manual QA operator for Windows 11 desktop apps
 | **MCP Servers** | UFO `UICollector` + `HostUIExecutor` + `AppUIExecutor` | UFO's built-in MCP servers (`ufo/client/mcp/local_servers/ui_mcp_server.py`) registered via `MCPRegistry`. Provide tools: `get_desktop_app_info`, `select_application_window`, `get_app_window_controls_info`, `click_input`, `set_edit_text`, `texts`, `capture_window_screenshot`, etc. |
 | **Server Composition** | [FastMCP](https://github.com/jlowin/fastmcp) `mount()` | Composes UFO's 3 MCP servers into a single stdio endpoint so Claude Code needs only one `.mcp.json` entry |
 | **Protocol** | [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) over stdio | Standard protocol connecting Claude Code to UFO's automation tools |
-| **Target Apps** | WinForms, WPF, UWP, Win32 | Any Windows desktop app exposing an accessibility tree |
+| **Target Apps** | WinForms, WPF, UWP, Win32 | Any Windows desktop app exposing an accessibility tree in the same interactive session |
 
 ## How It Works
 
@@ -46,8 +46,8 @@ The skill's MCP server (`scripts/ufo_windows_qa_mcp_server.py`) imports UFO's se
 
 ## Requirements
 
-- Windows 11
-- Python 3.10+ (3.11 recommended)
+- Windows 11 or Windows Server 2025 with Desktop Experience
+- Python 3.10.x (required by the currently pinned pandas/faiss Windows wheels)
 - [Microsoft UFO](https://github.com/microsoft/UFO) — `git clone` + `pip install -r requirements.txt`
 - [FastMCP](https://pypi.org/project/fastmcp/) — `pip install fastmcp`
 - [Pydantic](https://pypi.org/project/pydantic/) — comes with FastMCP
@@ -71,9 +71,11 @@ npx skills add CodeAlive-AI/ai-driven-development@windows-qa-engineer -g -y
   "mcpServers": {
     "ufo-windows-qa": {
       "type": "stdio",
-      "command": "python",
-      "args": [".claude/skills/windows-qa-engineer/scripts/ufo_windows_qa_mcp_server.py"],
+      "command": "C:\\Users\\<you>\\UFO\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\path\\to\\windows-qa-engineer\\scripts\\ufo_windows_qa_mcp_server.py"],
       "env": {
+        "UFO_ROOT": "C:\\Users\\<you>\\UFO",
+        "PYTHONPATH": "C:\\Users\\<you>\\UFO",
         "CONTROL_BACKEND": "uia",
         "SHOW_VISUAL_OUTLINE_ON_SCREEN": "true"
       }
@@ -82,7 +84,11 @@ npx skills add CodeAlive-AI/ai-driven-development@windows-qa-engineer -g -y
 }
 ```
 
-4. Restart Claude Code, run `/mcp` to verify tools appear
+4. Restart the MCP client and verify that the tools appear
+
+Run the MCP client and the application under test in the same logged-in interactive Windows desktop session. A process started through SSH, WinRM, CI, or a Windows service runs headlessly and cannot provide a usable UIA window tree or screenshot.
+
+For an end-to-end environment check, run `scripts/interactive_smoke_test.py` with UFO's venv Python from an interactive terminal. It launches Notepad, discovers and selects its window through the MCP server, captures a PNG, and writes a machine-readable report in the user's temporary directory.
 
 ## Usage
 

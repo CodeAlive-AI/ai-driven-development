@@ -2,7 +2,7 @@
 # A general installer reads this and handles clone/pip/mcp/verify steps.
 
 platform: windows           # Required platform (windows|macos|linux|any)
-python: ">=3.10"            # Python version constraint
+python: ">=3.10,<3.11"      # Pinned pandas/faiss wheels require Python 3.10 on Windows
 
 repos:                      # Git repos to clone
   - url: https://github.com/microsoft/UFO.git
@@ -19,6 +19,7 @@ mcp:                        # MCP server to register in .mcp.json
   name: ufo-windows-qa
   script: scripts/ufo_windows_qa_mcp_server.py   # Relative to skill dir
   env:                      # Environment variables for the MCP server process
+    UFO_ROOT: ~/UFO
     CONTROL_BACKEND: uia
     MAXIMIZE_WINDOW: "false"
     SHOW_VISUAL_OUTLINE_ON_SCREEN: "true"

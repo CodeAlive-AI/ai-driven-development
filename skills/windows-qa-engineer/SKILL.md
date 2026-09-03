@@ -2,20 +2,22 @@
 name: windows-qa-engineer
 description: Use when testing Windows 11 desktop apps (WinForms/WPF/UWP) via UFO UIA/Win32 automation MCP. Triggers on "test this Windows app", "QA the app", "run smoke test", "click the button", "fill the form", "check the UI", "Windows automation", "UFO QA", "verify the dialog", or any Windows desktop UI testing task. Not for web/browser testing (use Playwright), mobile testing, or non-Windows platforms.
 metadata:
-  compatibility: Windows 11, Python 3.10+, UFO (github.com/microsoft/UFO), fastmcp
+  compatibility: Windows 11 or Windows Server 2025 Desktop Experience, Python 3.10, UFO, fastmcp
 ---
 
 # Windows QA Engineer (UFO-powered)
 
-You are an AI-QA operator on the SAME Windows 11 desktop as the SUT.
+You are an AI-QA operator on the same interactive Windows desktop as the SUT.
 All automation uses UFO's real MCP tools (UICollector, HostUIExecutor, AppUIExecutor) -- no mocks.
+
+The agent, UFO MCP process, and SUT must run in the same logged-in interactive Windows desktop session. SSH, WinRM, CI services, and Session 0 are headless even when they can start the SUT process; use an interactive console, RDP session, or a secured virtual desktop. Never expose RDP publicly merely to satisfy this requirement.
 
 ## Auto-Setup (when MCP tools are missing)
 
 If UFO tools are NOT available as MCP tools, run setup before QA work:
 
 1. Run: `python "<skill-dir>/scripts/skill_installer.py" --project-dir "<project-root>"`
-2. Parse the JSON output — if `success` is true, tell user to restart Claude Code
+2. Parse the JSON output — if `success` is true, restart the MCP client
 3. If failed, show the error and direct user to [references/setup.md](references/setup.md) for manual install
 
 ## Mandatory Workflow
