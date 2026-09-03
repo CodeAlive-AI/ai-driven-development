@@ -16,7 +16,7 @@
 
 **First-minute recognized case.** A maintenance decision asks whether `Pump-37` or the larger pumping assembly must be isolated before repair. The exact pump has identified constituents, obtaining part relations and assembly, a reidentification rule across seal replacement, a composition-grounded pumping characteristic, and governed boundary/interface facts. Its organization can causally participate in pumping and maintenance Work while preserving identity. The first result is: **`Pump-37` is the acting `U.System` whose boundary controls this isolation decision.**
 
-**Subject-pattern and proposed-system readings.** “We develop the surgeon's mastery” ordinarily names the person, one holder-dependent `U.Capability`, training Work, or evaluation. Keep those subject-pattern readings. If the source instead proposes the physically or operationally realized whole `SutureControl-M17`, identify that exact `U.Entity` and evaluate it—not a substituted surgeon or capability—under the already admitted `U.System` kind. The current decision chooses which reading is load-bearing; the noun chooses none.
+**Subject-pattern and proposed-system readings.** “We develop the surgeon's mastery” ordinarily names the person, one holder-dependent `U.Capability`, training Work, or evaluation. Keep those subject-pattern readings. If the source instead proposes the physically or operationally realized whole `SutureControl-M17`, identify that exact `U.Entity` and evaluate it—not a substituted surgeon or capability—under the already admitted `U.System` kind. Choose the reading on which the current decision depends.
 
 **Near-identical non-system case.** `PumpKit-37` contains parts of the same types and carries the same product label, but its constituents are not assembled by the required part relations, it has no composition-grounded pumping characteristic, and it cannot participate in the plant installation while preserving pump identity. The first result is: **the kit is not the pump system; the current subjects are the material collection and its description.**
 
@@ -64,7 +64,7 @@ Start with four plain statements:
 3. the decision or action that would differ if this entity were or were not a system; and
 4. the observation, boundary fact, or construction fact that would settle that difference.
 
-Do not use bare *system candidate* as a working noun. Before referent recovery say *the proposed system reading of the phrase*. Once an actual referent is identified, say *the exact `U.Entity` being evaluated under the already admitted `U.System` kind*. Say *an alternative being considered for designation as the project system-of-interest* only when one named project plan or decision compares possible referents. None of these expressions creates a status kind or a pre-system lifecycle state.
+Do not use bare *system candidate* as a working noun. Before referent recovery say *the proposed system reading of the phrase*. Once an actual referent is identified, say *the exact `U.Entity` being evaluated under the already admitted `U.System` kind*. Say *an alternative being considered for designation as the project system-of-interest* only when one named project plan or decision compares possible referents.
 
 #### A.1.SCR:4.2 - Take the subject-pattern exit first
 
@@ -100,7 +100,7 @@ When the decision still depends on systemhood, recover all six A.1 constructive 
 | Composition-grounded whole-level characteristic | Which characteristic follows from the actual assembly rather than from a label, plan, measurement, or one constituent? |
 | Possible participation in a larger constructive assembly | Which boundary, interfaces, relevant characteristics, and identity-preservation conditions satisfy the applicable governed construction rule? |
 
-Then apply the already admitted `U.System` condition: the whole has an actual physical or operational organization through which it can causally participate in Work or transformation while preserving identity. A system-role assignment, capability, Work occurrence, plan, codebase, or description may provide evidence but does not create the system.
+Then apply the already admitted `U.System` condition: the whole has an actual physical or operational organization through which it can causally participate in Work or transformation while preserving identity. A system-role assignment, capability, Work occurrence, plan, codebase, or description may provide evidence for these conditions.
 
 #### A.1.SCR:4.4 - Return one decision-bearing result
 
@@ -118,7 +118,7 @@ These are response forms, not a schema.
 
 #### A.1.SCR:4.5 - Add only the neighbors used now
 
-After the first result, add only claims consumed by the decision. Shared extent, one carrier, a common label, or co-occurrence establishes none of their identities or relations. The system does not become its system-role assignment, capability, Work, transformation, Method, plan, evidence, or description.
+After the first result, add only claims consumed by the decision. Shared extent, one carrier, a common label, or co-occurrence establishes none of their identities or relations.
 
 #### A.1.SCR:4.6 - Keep service/access recovery independent
 
@@ -128,7 +128,7 @@ When service or access wording is the unresolved phrase, start in A.6.P §4.11a.
 
 #### A.1.SCR:4.7 - Preserve the project system-of-interest bridge
 
-The primary expression is **project system-of-interest**, inherited from systems engineering without adding target, aim, or goal semantics. `systemOfConcern` may serve as a historical systems-engineering Plain synonym; it creates no U-kind, system-role kind or assignment, relation, or second designation.
+The primary expression is **project system-of-interest**, inherited from systems engineering without adding target, aim, or goal semantics. `systemOfConcern` may serve as a historical systems-engineering Plain synonym for that same designation.
 
 A project plan or decision may designate one system as the project system-of-interest. Keep six questions separate:
 
@@ -147,7 +147,7 @@ Ask what physically or operationally exists, where its boundary lies, and what p
 
 ### A.1.SCR:5 - Archetypal Grounding — Seven Heterogeneous Worked Cases
 
-Each row states whether the A.1.SCR trigger actually fires. The rows are examples, not members of a kind or values of an enumeration.
+Each row states whether the A.1.SCR trigger actually fires. The rows are examples.
 
 | Source phrase | First useful result and route | Next move and governed additions | Near miss or stop |
 | --- | --- | --- | --- |
@@ -155,11 +155,11 @@ Each row states whether the A.1.SCR trigger actually fires. The rows are example
 | “We release a game session.” | Keep composite dated Work, interval, and session record under their subject patterns. If the phrase instead proposes `GameSessionWhole-GS204`, identify that exact operational whole and use A.1 when its boundary, persistence, or acting eligibility matters. | Recover every actual performer's A.13 core and admit Work only with the full independent A.15.1 basis and exact work-part relations; add F.6 afterward only when this claim also needs precise assignment-bound attribution. Evaluate the operational whole through its constituents, assembly, authoritative-state continuity, larger-game compatibility, and acting eligibility. Keep player systems, deployed installation, rule episteme, interval, activities, and records separate. | A label, shared interval, lobby record, or rules document establishes neither systemhood, Work, parthood, nor identity between the Work and the operational whole. |
 | “We sell internet access.” | Start in A.6.P with promise, permission, state, bearer, commercial relation, or other subject-pattern readings. If the phrase instead proposes `InternetAccessArrangement-CA17`, preserve that exact entity and use A.1 only when the arrangement's systemhood matters. | Add Method or MethodDescription, WorkPlan, permission, provisioning Work, system-role assignment, commitment, status, evidence and evaluation, fulfilment, and acceptance only when the named decision needs those claims; evaluate the arrangement separately from its gateway and status. | No `U.Access` or generic `AccessRelation`; credentials, system-role labels or assignments, endpoints, promises, plans, evidence, connections, states, and bearers remain distinct and cannot replace the exact arrangement before A.1 evaluation. |
 | “We develop a program.” | Distinguish code/episteme, computational Method, intended designator, deployed realization, and run. Use A.1.SCR only when a decision depends on the deployed realization acting, persisting, or changing as a system. | Add MethodDescription, planned or actual Work, transformations, and project system-of-interest designation only when the named decision separately asserts them. | Code, algorithm, deployed system, run, and project designation are not one object. |
-| “The salon creates a hairstyle.” | Name the client whose hair is affected and the selected hair structure/characteristics. Use A.1.SCR only if the client-as-changed-system boundary matters. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts, and acceptance only when the named decision needs them. | Hairstyle creates no system, result kind, or project system-of-interest designation. |
+| “The salon creates a hairstyle.” | Name the client whose hair is affected and the selected hair structure/characteristics. Use A.1.SCR only if the client-as-changed-system boundary matters. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts, and acceptance only when the named decision needs them. | Stop at the selected hair structure and characteristics when they answer the decision. |
 | “The surface needs a grind.” | Name the workpiece or containing holon and the surface state, structure, and characteristics. Usually leave through those subject patterns without A.1.SCR. | Add grinding Method, treatment Work, transformation, measurement, and acceptance only when the named decision needs them. | A finish label is not an independent system, Work, or transformation. |
-| “The batch moves through the flow.” | Name the material batch under its collection or holon rule and separately the selected `TransformationFlowStructure` or `FlowValuation`. Use A.1.SCR only if a decision asserts that the batch acts as a system. | Add movement/treatment Work, transformations, transfer relations, path/valuation, and evidence under their subject patterns. | A list, diagram, structure membership, or moving wording does not create an acting collective system or make the TFS perform Work. |
+| “The batch moves through the flow.” | Name the material batch under its collection or holon rule and separately the selected `TransformationFlowStructure` or `FlowValuation`. Use A.1.SCR only if a decision asserts that the batch acts as a system. | Add movement/treatment Work, transformations, transfer relations, path/valuation, and evidence under their subject patterns. | Recover an acting collective under A.1 only if that claim is current; for a claim that Work was performed, name its actual performer. |
 
-**Enumeration-integrity rule.** The seven rows have different subjects, kinds, relations, entry decisions, and exits. They define no superclass, closed enum, membership predicate, or exhaustive list. Add a later example by showing its exact decision, subject, subject pattern, route, and stop.
+**Enumeration-integrity rule.** The seven rows have different subjects, kinds, relations, entry decisions, and exits. Add a later example by showing its exact decision, subject, subject pattern, route, and stop.
 
 #### A.1.SCR:5.1 - Scale-free and difficult-noun recognition stress
 
@@ -232,7 +232,7 @@ Extent-sensitive identity remains useful because it forces the practitioner to s
 
 ### A.1.SCR:11 - SoTA-Echoing
 
-> **Informative.** These sources provide bounded pressure on the practitioner route. A.1 and the named subject-pattern patterns remain authoritative for kinds, relations, and pass conditions.
+> **Informative.** These sources provide bounded pressure on the practitioner route. A.1 and the named subject patterns remain authoritative for kinds, relations, and pass conditions.
 
 | Source | Useful pressure for this pattern | Disposition | A.1.SCR action, stop, or limit affected |
 | --- | --- | --- | --- |
@@ -252,7 +252,7 @@ The conditional method assembled here—state the decision, close with an exact 
 - **Service/access first use:** A.6.P §4.11a; A.1.SCR applies only to a separate system-dependent claim about the exact entity recovered there—an exact bearer or access-providing arrangement.
 - **Uses for projects:** A.15.6 for the actual and intended system distinction, plan or decision designation of the project system-of-interest, separate tests of the system-role kind and assignment, project-relevant network selection, and `missing-substrate[project-selection-conjunction]`; A.1.STM only when the returned recognition result must re-enter the system-thinking long map.
 - **Uses for missing relations:** A.6.RCD with exact participants, receiving use, and `missing-governor[...]`.
-- **Coordinates with:** A.1.CSD when a returned bearer result opens the separate question of which other Systems may undergo relevant changes; A.1.STM for the separate long-map use after recognition; and E.10 for lexical triggers. None classifies a world-side subject.
+- **Coordinates with:** A.1.CSD when a returned bearer result opens the separate question of which other Systems may undergo relevant changes; A.1.STM for the separate long-map use after recognition; and E.10 for lexical triggers.
 - **Does not replace:** A.1, direct kind patterns, relation patterns, A.6.P, or F.18 designation recovery.
 
 ### A.1.SCR:End

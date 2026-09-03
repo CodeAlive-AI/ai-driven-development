@@ -65,8 +65,10 @@ WorkResourceAggregation@Context:
   provenancePathRefs
   admissibleUse
   stopOrReturnCondition
-  groundedNonAdmissibleOverread?
+  nonAdmissibleOverread?
 ```
+
+`stopOrReturnCondition` states when to stop or return to another pattern. Include `nonAdmissibleOverread?` only when it passes F.19's plausible-reader test. `groundedNonAdmissibleOverread?` is an alias for that same optional value.
 
 Recover each of these objects and claims independently:
 
@@ -105,7 +107,7 @@ Gamma_work(workResourceAggregationRecord, resourceBasis, aggregationPolicy)
   -> aggregationResultRef, aggregationResultEpistemeRef
 ```
 
-Use the notation only after naming the resource Characteristics, C.16 measurement Work and results, dated Work set and relevant A.15.1 Work-part relations, any C.27.TA overlap fact, any current non-Work carrier identity and `PhaseOf` relation, accounting boundary and time window, aggregation policy, and dated aggregation Work. The notation then summarizes that recovered aggregation record; each object, relation, method, Work, and emergence claim remains under its direct pattern.
+The notation applies only after the resource Characteristics, C.16 measurement Work and result epistemes, dated Work set, every A.15.1 Work-part relation used by the aggregation, any C.27.TA overlap fact used by it, any separately current non-Work carrier identity and `PhaseOf` relation, accounting boundary and time window, aggregation policy, and dated aggregation Work have been named. The notation then summarizes that recovered aggregation record.
 
 ### B.1.6:4 - Ledger Discipline
 
@@ -119,7 +121,7 @@ The ledger is a replay surface, not the source of the aggregation claim. For eve
 - conversions, normalizations, imputations, and their declared method/policy refs;
 - the aggregation policy edition and actual aggregation work occurrence;
 - aggregation result and distinct C.2.1 result episteme; and
-- A.10/G.6 source and provenance refs, G.11 currentness when current, admissible use, stop or reopen condition, and one grounded source-use guard only when an actual source or ledger feature makes that error live.
+- A.10/G.6 source and provenance refs, G.11 currentness when current, admissible use, stop or reopen condition, and any guard justified by F.19's plausible-reader test.
 
 Measured, estimated, normalized, converted, allocated, and planned values remain visibly different. A planned value does not become a measurement result or performed-work resource use. A citation to a meter or invoice does not establish the measurement work; a ledger row does not establish work parthood or overlap.
 
@@ -139,7 +141,7 @@ Use `PortionOf` only for a resource portion with its A.14 measure and additivity
 
 **Aggregation work and result.** Use A.13 to identify the actual performer and A.15.1 to admit the dated aggregation Work independently. If the aggregation account must also identify the assignment under which the Work was performed, check that relation separately through F.6. Keep the Method, actual bindings, resources, and time separate. State the B.1.6 result as a typed total, vector, interval, or bounded estimate under the named policy and Work set; then state it in a distinct C.2.1 episteme.
 
-**Uncertainty and provenance.** Propagate measurement and model or conversion uncertainty through the exact aggregation policy. Use A.10/G.6 paths to record the established Work, measurements, policy application, transformations, result, and sources.
+**Uncertainty and provenance.** Propagate measurement uncertainty and model/conversion uncertainty according to the exact aggregation policy. Use A.10/G.6 paths to record the established work, measurements, policy application, transformations, result, and sources.
 
 **Plan/result separation.** Keep expected use from a method description or WorkPlan as planned and resource readiness under A.15.5. Use A.15.1 and the measurement or aggregation predicates for performed Work and measured results.
 
@@ -161,7 +163,7 @@ Use `PortionOf` only for a resource portion with its A.14 measure and additivity
 
 **Engine test programme.** C.16 measurement Work attributes fuel mass, electrical energy, operator time, and emissions values to exact subjects under their Scales, models, calibration bases, windows, and uncertainties. Each has its own result episteme. Exact test-run occurrences and obtaining A.15.1 Work-part relations define the included Work set; independently declared C.27.TA overlap facts state shared timing. A test-cell or engine phase enters only through the carrier's identity rule and proper phase relation. Shared warm-up energy is recorded under the exact temporal and resource-use facts. Dated aggregation Work applies `ProgrammeResourcePolicy-v3`, which allocates warm-up energy once and propagates input uncertainty. The B.1.6 result is a typed resource vector plus qualifications; a C.2.1 episteme states it. A later emissions verdict remains separate evaluation Work and result.
 
-**Manufacturing cell.** Welding and painting are two dated Work occurrences. Electricity, gas, consumables, and labor time are separate resource Characteristics with measurement-result epistemes. A shared extraction fan and overlapping operator time require direct shared-use facts and an allocation policy. The resource ledger represents the established facts; recover Work, parts, overlap, measurements, aggregation, and any frame transformation through their direct patterns.
+**Manufacturing cell.** Welding and painting are two dated work occurrences. Electricity, gas, consumables, and labor time are separate resource Characteristics with measurement-result epistemes. A shared extraction fan and overlapping operator time require direct shared-use facts and an allocation policy. The resource ledger represents those facts. Establish any separately claimed Work-part relation or frame transformation through its direct pattern.
 
 **Model training.** Epoch labels alone do not establish work parts. Ground the training work and exact slices, then recover C.16 measurements for compute energy, storage traffic, and operator time. Aggregation work applies an edition-pinned policy to those result epistemes. The algorithm remains a method description; trained-model identity, fairness result, provenance, assurance, and deployment decision stay with their subject patterns.
 
@@ -207,7 +209,7 @@ The cost is explicit accounting discipline. The gain is that resource roll-ups b
 
 ### B.1.6:9.1 - Rationale
 
-`B.1.6` exists because a convenient total can hide several ontically different chains. Admit its result after exact resource measurement, Work-set and overlap grounding, an edition-pinned aggregation policy, and dated aggregation Work. The ledger represents that recovered account.
+`B.1.6` exists because a convenient total can hide several ontically different chains. Its result is obtained only after exact resource measurement, work-set and overlap grounding, an edition-pinned aggregation policy, and dated aggregation work. The ledger represents that recovered account.
 
 The pattern keeps the useful old `Gamma_work` notation, but only as notation over a recovered aggregation record. It also preserves the old planned-versus-measured warning: a method description or work plan can declare expected yield or expected resource use, but measured aggregation depends on dated work evidence.
 

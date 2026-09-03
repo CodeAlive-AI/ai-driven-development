@@ -13,7 +13,7 @@ Use this pattern when one admitted `U.System` can contribute to different work o
 - which exact work-facing kind the system counts under now; or
 - which system-role assignment actually obtains.
 
-A system here is any individual independently admitted by A.1. It can be a person, team, organization, service, organism, or non-human technical object. The `SystemRole` head in a name such as `ReviewerSystemRole` says that candidates are systems; it does not admit the candidate, create an assignment, imply agency or capability, prove that Work occurred, or name a relation slot.
+A system here is any individual independently admitted by A.1. It can be a person, team, organization, service, organism, or non-human technical object. The `SystemRole` head in a name such as `ReviewerSystemRole` says that candidates are systems.
 
 Typical moments:
 
@@ -170,9 +170,9 @@ Assignment does not prove classification unless the kind's signature uses that i
 | Responsibility, commitment, permission, or authority | direct domain pattern, `A.2.8`, `A.2.8.PER`, or `missing-governor` | actual bearer, exact relation participants, predicate, and instituting or permission basis |
 | Evidence, reliance, or publication | `A.10`, `A.15.4`, `B.3`, `C.2.1`, `E.17`, `F.10` | episteme, evidenced claim, reliance, provenance, currentness, and publication relation |
 
-Select only the objects needed by the current claim. A large neighborhood is not a larger kind, and none of these values is a “part of the role”.
+Select only the objects needed by the current claim. None of these values is a “part of the role”.
 
-`SystemRoleKindDescription` is an F.4 description episteme whose exact EntityOfConcern is one system-role kind. An episteme about an assignment or a relation among kinds has that assignment or relation as its EntityOfConcern instead. Teaching from, storing, or publishing any such description does not make it the described kind or occurrence.
+`SystemRoleKindDescription` is an F.4 description episteme whose exact EntityOfConcern is one system-role kind. An episteme about an assignment or a relation among kinds has that assignment or relation as its EntityOfConcern instead.
 
 #### A.2:4.7 - Recover Contribution Wording before Formalizing It
 
@@ -185,11 +185,11 @@ The phrase “the role of X” often means that X contributes to a use. Apply `E
 | `this parameter has the control role` | Recover the Method or model parameter, or an A.6.5 participant slot, from the direct declaration. |
 | `this interface plays the integration role` | Recover the selected module-interface, port, signature, or protocol relation under its governor. |
 
-The alternatives are recognition probes, not a union kind. If no direct relation can yet be named, return the exact `missing-governor` rather than minting a system-role kind.
+Use these recognition probes to identify the relation in the current claim. If no direct relation can yet be named, return the exact `missing-governor` rather than minting a system-role kind.
 
 #### A.2:4.8 - System-Role Vocabularies and Relations among Kinds
 
-A system-role-vocabulary or taxonomy episteme may state local kind names, declarations, and selected relation claims under an effective reference scheme. Those statements create no kind, membership result, or assignment, and making the episteme available creates none either. Each live kind still needs the C.3 distinction that lets readers recover it; each judgment cites its actual signature edition.
+A system-role-vocabulary or taxonomy episteme may state local kind names, declarations, and selected relation claims under an effective reference scheme. Each live kind needs the C.3 distinction that lets readers recover it; each judgment cites its actual signature edition. An assignment claim separately requires an obtaining A.2.1 relation.
 
 Use `A.2.7` to state one selected `SystemRoleKindRelationStructure` over exact local system-role kinds and admitted relations among them. A receiving use can cite an assertion about substitution, incompatibility, bundle, qualification, or another residual relation alongside separately stated assignments, state, capability, and Work. Systems and assignments are not participants of the kind-relation structure.
 
@@ -200,7 +200,7 @@ Algebraic, graph, matrix, embedding, or neural representations are mathematical 
 | `CoolingCirculatorSystemRole` | A pump supplies a circulation contribution in plant operation. | Capability, assignment, functioning, and performed Work remain separate. |
 | `TestArticleSystemRole` | The same pump is selected for qualification use. | The classification or assignment does not change pump identity. |
 | `VerifierSystemRole` | A person, team, organization, service, or non-human technical system supplies verification contribution under its local criterion. | A verification report is an episteme, not the classified system. |
-| `TransformerSystemRole` | A system is classified for a transformation-facing contribution. | The system performs Work; the kind and assignment do not act. |
+| `TransformerSystemRole` | A system is classified for a transformation-facing contribution. | For performed Work, name the performer system. |
 
 #### A.2:4.9 - Reduced Use and Stronger Claims
 
@@ -295,7 +295,6 @@ An engineering team uses RFC 9110 while designing an HTTP service. Keep these cl
 3. The RFC publication is the source episteme in the direct source-use or external-rule relation selected by the design claim.
 4. Recover `DesignTeam-2` as the exact actual performer through A.13, then let A.15.1 independently admit the dated design Work. Because this case expressly says the Work was performed under the exact design assignment, F.6 afterward establishes that relation through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and failed attribution would leave the Work intact. The Work may separately produce a MethodDescription or SystemDescription only through the applicable production claim.
 
-The publication neither counts under the system-role kind nor performs the Work.
 
 #### A.2:5.4 - The Same Label in Two Local Practices
 
@@ -392,7 +391,7 @@ The architecture therefore keeps these levels separate:
 3. any directly declared `U.SystemRoleAssignment` occurrence;
 4. direct neighboring relations for state, capability, Method, Work, responsibility, commitment, permission, authority, evidence, reliance, description, and publication.
 
-A system-role kind is not a holon merely because its description has internal fields. Proposed “parts” repeatedly resolve into other kinds, relation predicates, assignments, Method or Work structures, or parts of description epistemes. The useful structure is the exact relation structure governed by A.2.7, not role mereology.
+Fields in a `SystemRoleKindDescription` belong to the description episteme. Proposed “parts” repeatedly resolve into other kinds, relation predicates, assignments, Method or Work structures, or parts of description epistemes. The useful structure is the exact relation structure governed by A.2.7, not role mereology.
 
 Semantic locality needs no universal context participant. C.3's candidate domain, operative membership distinction, boundary probes, and continuity rule recover the kind. A practice or source reference locates the definition and warns where comparison may be needed; it is not an identity participant. An assignment species declares only its real participants. A receiving assertion or use can cite a selected model-use structure when that structure actually changes interpretation.
 

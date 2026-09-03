@@ -18,11 +18,11 @@
 
 > Start with the change needed outside the system the project is about. Choose that system and its boundary by that use; only then choose its inside. Ask how it will be made or changed, who or what can do that work, and what must make or change those builders. Read backward to the first unsupported answer. Follow real work and changes forward; for each local result, name the supported next fact that connects it to production or change, release, runtime use, or the outside change—or stop where that fact is missing.
 
-This reminder is the Plain long mantra, not this pattern's `Solution`. It creates no Method, WorkPlan, Work, transformation, system, network, relation, evidence, assurance, or authority.
+This reminder is the Plain long mantra. Section 4 gives the working steps for using it.
 
 **Not this pattern when.** If the current question is already one system-recognition, project designation, service/access, architecture, Method, Work, transformation, TFS/network, causal-use, evidence, or assurance question, use that direct pattern and stop there. Do not traverse the long map merely because a project mentions a project system-of-interest.
 
-**What this buys.** The practitioner returns one located gap, one subject pattern, and one next question or action—or a truthful stop. The result is not a completed project model or a claim that the project is solved.
+**What this buys.** The practitioner returns one located gap, one subject pattern, and one next question or action—or a truthful stop.
 
 ### A.1.STM:1 - Problem
 
@@ -89,8 +89,8 @@ If later operation shows that reliable water delivery depends on an upstream res
 | Current question | Leave through | Near miss blocked here |
 | --- | --- | --- |
 | Is this exact existing entity a system? | A.1 and A.1.SCR | A noun, diagram box, plan, system-role label or assignment, or capability does not establish systemhood. |
-| Which omitted Systems may undergo relevant changes that alter the current decision or investigation? | A.1.CSD | A long-map position, participant list, or diagram edge neither discovers all bearers nor makes a possible path obtain. |
-| Which system is this project about? | A.15.6 | Project designation does not create system identity, a system-role kind, or a system-role assignment. |
+| Which omitted Systems may undergo relevant changes that alter the current decision or investigation? | A.1.CSD | Use the current frame as a starting point for A.1.CSD's bounded search; keep possible paths modal until their direct predicates are supported. |
+| Which system is this project about? | A.15.6 | Keep system identity, project designation, system-role-kind interpretation, and any system-role assignment distinct. |
 | What is promised, provided, connected, permitted, or stopped? | A.6.P §4.11a, then its subject pattern | *Service* or *access* does not select a system or one service bundle. |
 | Which inside could support the outside use? | C.32.P2S and C.30 family | Architecture chosen before a stated outside-use hypothesis must return to that missing basis. |
 | What actual runtime change and system participation obtain? | A.3.4 and the exact dynamics, interaction, causality, participation, assignment, Method, or Work pattern needed by the claim | An expected effect, required behaviour, observed output, or project designation proves neither an actual change nor an actor-side or Work claim. |
@@ -135,7 +135,7 @@ A.1.STM consumes only the returned recognition result. It does not repeat the si
 
 ### A.1.STM:10 - Consequences
 
-**Benefits.** Teams can locate a missing long-range dependency without replaying a fictitious project sequence. Local results remain usable, builder recursion remains visible, and a missing relation stays an explicit stop rather than becoming a convenient arrow.
+**Benefits.** Teams can locate a missing long-range dependency. Local results remain usable, builder recursion remains visible, and a missing relation stays an explicit stop rather than becoming a convenient arrow.
 
 **Costs.** Practitioners must name the final result, keep several kinds of order apart, and return to subject patterns for local truth. A provisional map may remain incomplete for a long time.
 
@@ -143,7 +143,7 @@ A.1.STM consumes only the returned recognition result. It does not repeat the si
 
 ### A.1.STM:11 - SoTA-Echoing
 
-> **Informative.** These sources provide bounded pressure on use of the long attention map. The named subject-pattern patterns remain authoritative for kinds, relations, participants, and pass conditions.
+> **Informative.** These sources provide bounded pressure on use of the long attention map. The named subject patterns remain authoritative for kinds, relations, participants, and pass conditions.
 
 | Source | Useful pressure for this pattern | Disposition | A.1.STM action, stop, or limit affected |
 | --- | --- | --- | --- |

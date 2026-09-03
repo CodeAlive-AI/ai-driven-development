@@ -63,9 +63,11 @@ ContextTemporalAggregation@Context:
   evidenceOrSourceRefs
   admissibleUse
   stopOrReturnCondition
-  groundedNonAdmissibleOverread?
+  nonAdmissibleOverread?
   strongerSourceReturnCondition
 ```
+
+`stopOrReturnCondition` states when to stop aggregating or apply another pattern; `strongerSourceReturnCondition` states the condition for a stronger claim. Include `nonAdmissibleOverread?` only when it passes F.19's plausible-reader test. `groundedNonAdmissibleOverread?` is an alias for that same optional value.
 
 Use the record as a small typed relation, not as a new durable `U.Level`, `U.Boundary`, `U.Interaction`, or generic process object.
 

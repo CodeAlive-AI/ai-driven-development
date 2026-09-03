@@ -3,7 +3,7 @@
 > **Tech-name:** `CapabilityAccessAndExpressionDifferentialProbeMethod`
 > **Plain-name:** test whether a capability is unavailable, unrecognized, unexpressed, unadapted, unenacted, or changed
 > **Type:** Method-description pattern for an observation-first differential probe; coordinated with `E.23` and `E.23.CDI`
-> **Status:** Candidate
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### E.23.CAE:1 - Problem frame

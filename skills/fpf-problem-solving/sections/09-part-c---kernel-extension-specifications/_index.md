@@ -28,7 +28,7 @@
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](18-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (159 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](19-c-3-a---typed-guard-macros-for-kinds-usm.md) (461 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
 - [C.11 - Decision Theory (Decsn-CAL)](20-c-11---decision-theory.md) (720 lines) — Normativity: Normative unless marked informative
-- [C.11.CRC - Configuration-Relative Contribution Comparison](21-c-11-crc---configuration-relative-contribution-comparison.md) (201 lines) — Tech name: ConfigurationRelativeContributionComparison
+- [C.11.CRC - Configuration-Relative Contribution Comparison](21-c-11-crc---configuration-relative-contribution-comparison.md) (203 lines) — Tech name: ConfigurationRelativeContributionComparison
 - [C.13 — Constructional Mereology (Compose‑CAL)](22-c-13-constructional-mereology.md) (253 lines) — At a glance. Use C.13 when a practitioner must show how identified entities and relations that obtain form one whole, collection, or aspect. The account explains how those facts support the whole,...
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](23-c-16---measurement-metrics-characterization.md) (296 lines) — Use this pattern when. Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic,...
 - [C.16.P - Characteristic and Scale Precision Restoration](24-c-16-p---characteristic-and-scale-precision-restoration.md) (251 lines) — Type: Characterization precision-restoration pattern
@@ -55,12 +55,12 @@
 - [C.27 - Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Change](45-c-27---temporal-claim-adequacy-state-readings-temporal-trend.md) (477 lines) — Type: Claim-adequacy pattern
 - [C.27.TA - Temporal Aspect: Time Windows, Rhythm, Cadence, and Currentness](46-c-27-ta---temporal-aspect-time-windows-rhythm-cadence-and-cu.md) (282 lines) — Type: Definitional pattern
 - [C.28 - CausalUse-CAL: Causal-Use Questions, Identification, and Realizability](47-c-28---causaluse-cal-causal-use-questions-identification-and.md) (757 lines) — Normativity: Normative unless explicitly marked informative
-- [C.29 - Mathematical Lens Use](48-c-29---mathematical-lens-use.md) (1368 lines) — Type: Architectural pattern
+- [C.29 - Mathematical Lens Use](48-c-29---mathematical-lens-use.md) (1367 lines) — Type: Architectural pattern
 - [C.30 - Grounded Architecture and Selected-Structure Adequacy](49-c-30---grounded-architecture-and-selected-structure-adequacy.md) (708 lines) — Type: Architectural pattern
 - [C.30.AD - Architecture Description Adequacy](50-c-30-ad---architecture-description-adequacy.md) (466 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](51-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (262 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Architecture and Structure Precision Restoration](52-c-30-p---architecture-and-structure-precision-restoration.md) (248 lines) — Type: Architectural pattern
-- [C.30.STRAT - Stratification Wording Precision Restoration](53-c-30-strat---stratification-wording-precision-restoration.md) (262 lines) — Type: Architectural precision-restoration subpattern under C.30
+- [C.30.STRAT - Stratification Wording Precision Restoration](53-c-30-strat---stratification-wording-precision-restoration.md) (264 lines) — Type: Architectural precision-restoration subpattern under C.30
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](54-c-30-asv---architecture-structural-view-adequacy.md) (806 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](55-c-30-lca---control-structure-view-adequacy.md) (309 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](56-c-30-ilc---cross-scope-architecture-residual-triage.md) (255 lines) — Type: Architectural subpattern under C.30
@@ -69,7 +69,7 @@
 - [C.31.RSA - Reusable Structure Accounting](59-c-31-rsa---reusable-structure-accounting.md) (396 lines) — Type: Characterization pattern
 - [C.31.ASAP - Architecture Scale-Amenability Preference](60-c-31-asap---architecture-scale-amenability-preference.md) (323 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](61-c-32---architecture-candidate-synthesis.md) (354 lines) — Type: Architectural pattern
-- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (357 lines) — Type: Architectural process pattern under C.32
+- [C.32.P2S - Problem-to-Structure Architecturing Unfolding](62-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (359 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](63-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (205 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set for Improvement Cycles](64-c-32-acs---architecture-characteristic-criteria-set-for-impr.md) (288 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](65-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32

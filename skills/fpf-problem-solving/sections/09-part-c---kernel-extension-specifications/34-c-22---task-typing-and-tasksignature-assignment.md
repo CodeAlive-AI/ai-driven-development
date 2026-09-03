@@ -29,7 +29,7 @@ Operationalise No-Free-Lunch discipline in selection by making each selector dec
 #### C.22:1.1 - Term split used in this pattern
 
 - `TaskSignature` assignment means one obtaining `TaskSignatureAssignmentRelation` among an exact problem-side episteme, exact TaskSignature, and exact receiving-use episteme; it does not pre-bind a method.
-- `ScopeSlice(G)` means the exact A.2.6 claim-scope relation used by this declaration; it is not an evidence-path slice, baseline-set slice, container, or assignment participant.
+- `ScopeSlice(G)` means the exact A.2.6 `U.ClaimScope` value used by this declaration; it is not an evidence-path slice, baseline-set slice, container, or assignment participant.
 - `threshold` is not one undifferentiated family here:
   - articulation and closure thresholds stay with cue or prompt subject patterns such as `B.4.1` and `B.5.2.0`;
   - acceptance-gate thresholds stay with `G.4`;
@@ -44,7 +44,7 @@ Operationalise No-Free-Lunch discipline in selection by making each selector dec
 | `TaskKind` | TaskSignature position filled by one exact C.3 `U.Kind` value that types the current task or work target | C.3 governs the kind value; the field does not mint `U.Task`. |
 | `TaskFamilyRef` | Optional reference position for the comparison-relevant task family | C.22 and C.22.1 govern task-family anchoring; the reference is not the family or a selected method. |
 | `ProblemProfile` | C.2.1-conformant `U.Episteme` that describes the stabilized problem and may reference the TaskSignature assignment | It is not the actual Problem, TaskSignature, assignment relation, method, plan, or Work occurrence. |
-| `ScopeSlice(G)` | Local position whose filler is the current A.2.6 claim-scope relation over the exact `EntityOfConcernRef` | A.2.6 governs membership; the position is not an E.18 path slice or a new slice kind. |
+| `ScopeSlice(G)` | Local position whose filler is the exact A.2.6 `U.ClaimScope` value that bounds claims about the exact `EntityOfConcernRef` | A.2.6 governs membership; the position is not an E.18 path slice or a new slice kind. |
 | CHR field heads in `5.1` | TaskSignature positions filled by characteristics, scales, units, polarity values, scope values, evidence relations, and currentness conditions | C.16 and each subject-pattern locator identify the exact definitions and constraints for the fillers; C.22 states why the selector-facing use needs them. |
 | QD and OEE extension heads in `5.1` | Optional TaskSignature positions filled by exact characteristic-space, archive, policy, telemetry, generator-family, validity-region, and transfer-rule values or references | C.18, C.19, G.5, G.11, and the named direct patterns keep authority over those fillers. `ArchiveConfig`, `TelemetryHooks`, and `GeneratorIntent` do not become root kinds here. |
 
@@ -124,7 +124,7 @@ More fields, publication packaging, name cards, or telemetry do not make the pro
 * **`Constraints`** — explicit hard and soft constraint classes (feasibility predicates; **ResourceEnvelope** and **RiskEnvelope**). **Acceptance-gate thresholds live in `G.4` only; never inside CHR or code paths.**
 * `ShiftClass` and stationarity — CHR‑typed claims about regime stability (iid | covariate‑shift | concept‑drift | adversarial). Default=`unknown`. The cited acceptance or selector policy governs the consequence of that unknown for its receiving use.
 * **Evidence and assurance (conditional).** Include an exact **A.10** evidence-use or provenance relation only when the receiving use relies on it. State source edition, currentness, or freshness only to the degree that reliance requires. Open **B.3** only for a named assurance claim or material-reliance threshold, and use only the assurance lanes and fold that its declared policy requires. A TaskSignature by itself requires neither all TA/VA/LA lanes nor a Gamma-fold.
-* `ScopeSlice(G)` — the **USM claim-bounding scope cut** over **EntityOfConcernRef and scope** (discipline governance in **CG‑Spec**; Domain is a catalog mark only).
+* `ScopeSlice(G)` — the A.2.6 **`U.ClaimScope` value** that bounds this declaration's claims about **`EntityOfConcernRef`** (discipline governance in **CG‑Spec**; Domain is a catalog mark only).
 * `SizeAndConditionProfile` — size and condition proxies (**n, m, kappa, sparsity**) with **declared units**; a unit mismatch makes the current comparison unsupported until the direct acceptance or selector policy supplies its governed result.
 * **`Freshness` (conditional)** — the validity window for a descriptor only when the receiving use relies on its currentness.
 * `Missingness` — **MCAR, MAR, or MNAR** (or mapped equivalents) per **CHR.Missingness**; Acceptance and flow use preserve the declared missingness semantics.

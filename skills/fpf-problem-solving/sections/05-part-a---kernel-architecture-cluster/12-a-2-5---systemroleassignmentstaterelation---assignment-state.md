@@ -24,7 +24,7 @@ Typical working moments include these:
 
 **Primary working reader.** The first reader is an engineer, operator, method designer, safety checker, or manager deciding whether a current assignment can support the next method or Work claim without confusing assignment, capability, state, evidence, gate outcome, and performed Work.
 
-**What goes wrong if missed.** A system-role label is treated as current readiness. A dashboard value is substituted for the world-side state relation. Missing evidence is read as proof that the predicate is false. Capability is mistaken for Work admission. A state-machine diagram silently becomes both the ontology and the method order.
+**What goes wrong if missed.** A system-role label is treated as current readiness. A dashboard value is substituted for the world-side state relation. Missing evidence is read as proof that the predicate is false. Capability is mistaken for Work admission. A state-machine diagram is used as both the ontology and the method order.
 
 **What this buys.** The reader can identify repeated state episodes inside one continuing assignment, keep evidence and world-side obtaining distinct, combine simultaneous conditions, and pass the exact state claim to the direct pattern governing the next decision or Work use.
 
@@ -32,7 +32,7 @@ Typical working moments include these:
 
 ### A.2.5:0.1 - Kind Settlement
 
-`SystemRoleAssignmentStateRelation` is admitted as a direct relation kind under `U.Relation`. It is not a new root kind, a system-role kind, an assignment, a displayed state value, or a state graph.
+`SystemRoleAssignmentStateRelation` is admitted as a direct relation kind under `U.Relation`.
 
 `SystemRoleAssignmentStatePredicate` is a local ValueKind declared by this pattern, not another root U-kind. One predicate value is identified by:
 
@@ -48,7 +48,7 @@ A compatible semantic-basis edition preserves the predicate only through an expl
 
 A `SystemRoleAssignmentStateAssertion` is a `U.Episteme` whose EntityOfConcern is the exact assignment or an explicitly individuated state-relation occurrence, according to the claim. Its ClaimGraph names the predicate, direct claim family, and `assertionPolarity: affirmative | negative`. An affirmative claim may state a known actual extent only after A.2.5 independently establishes obtaining. A receiving evaluation may separately state its target window. Supported, refuted, or unresolved reliance belongs to `A.10` or a separately constituted evaluation result or reliance assertion. Assertion, reliance posture, evidence episteme, evidence-use relation, and world-side occurrence remain different objects.
 
-A representation episteme may describe predicates, possible configurations, and possible changes. A statechart or state-machine display is a mathematical or representational lens; neither the episteme nor its graph becomes a `SystemRoleAssignmentStateRelation` occurrence by displaying one.
+A representation episteme may describe predicates, possible configurations, and possible changes. A statechart or state-machine display is a mathematical or representational lens.
 
 ### A.2.5:1 - Problem Frame
 
@@ -58,7 +58,7 @@ An occurrence of a declared `U.SystemRoleAssignment` species assigns an admitted
 
 The same distinction appears in social and computational Work. An on-call person can remain assigned while conflicted or fatigued. A service can remain assigned to `ApproverSystemRole` while one predicate concerns fulfilment approval and another concerns payment authorization. A tool-using agent can expose a capability while a concrete action remains inadmissible for the current task and inputs.
 
-The engineering problem is therefore to identify the exact assignment, predicate, and interval; distinguish affirmative or negative assertion polarity from reliance posture; recognize an occurrence only while the direct predicate is true; and connect an assertion to evidence only when a consequence-bearing use needs that support. A universal list of state labels solves none of those tasks.
+The engineering problem is therefore to identify the exact assignment, predicate, and interval; distinguish affirmative or negative assertion polarity from reliance posture; recognize an occurrence only while the direct predicate is true; and connect an assertion to evidence only when a consequence-bearing use needs that support.
 
 ### A.2.5:2 - Problem
 
@@ -101,7 +101,7 @@ This pattern defines the `RelationSignature` for `SystemRoleAssignmentStateRelat
 
 These are the only two generic participants. `SystemRoleAssignmentStateRelation` obtains exactly while the assignment obtains and the fixed by-value predicate is true under its temporal reading. Its actual extent is the maximal continuous interval of that obtaining. An affirmative assertion or occurrence description may state the known extent as `systemRoleAssignmentStateExtent` only for an independently established occurrence; a receiving evaluation may state a separate `declaredSystemRoleAssignmentStateEvaluationWindow`. Neither temporal value, assertion polarity, reliance posture, taxonomy episteme, reference scheme, bridge, nor model-use structure is another relation participant.
 
-Evidence is not a participant that makes the relation obtain. A relied-on assertion uses a direct evidence-use relation. Another world-side occurrence affects predicate truth only when an exact truth-condition clause cites that occurrence through its subject pattern.
+A relied-on assertion uses a direct evidence-use relation. Another world-side occurrence affects predicate truth only when an exact truth-condition clause cites that occurrence through its subject pattern.
 
 #### A.2.5:4.2 - Predicate Meaning and Semantic Basis
 
@@ -113,7 +113,7 @@ One `SystemRoleAssignmentStatePredicate` value names:
 - applicability conditions; and
 - only the semantic-basis references whose editions can change those clauses or their interpretation.
 
-This content defines one predicate value; it is not a union kind. The direct qualities and relations keep their own kinds and subject patterns.
+This content defines one predicate value. The direct qualities and relations keep their own kinds and subject patterns.
 
 Predicates need not be mutually exclusive. `Calibrated`, `Synchronized`, and `InRange` can hold simultaneously; `InspectionReady` may be a conjunction over them. Use an exclusive state configuration only when the subject-domain model actually needs one.
 
@@ -144,7 +144,7 @@ The actual state extent, target evaluation window, and evidence-relevance interv
 
 #### A.2.5:4.5 - Work-Admission Use
 
-A.2.5 supplies the state relation and exact assertion form. It does not select a Method, create a gate decision, provide authority, or assert that Work occurred.
+A.2.5 supplies the state relation and exact assertion form. Use the direct subject patterns when Method selection, a gate decision, authority, or a claim that Work occurred is needed.
 
 For a consequence-bearing admission use, the system performing the consumer's evaluation or decision Work applies that consumer's direct pattern and checks:
 
@@ -154,7 +154,7 @@ For a consequence-bearing admission use, the system performing the consumer's ev
 4. the assertion has the evidence relation and currentness that this consumer requires; and
 5. every other admission condition is separately established under its subject pattern.
 
-The consumer's direct pattern, not A.2.5, defines any admit, deny, defer, or unresolved outcome. A.2.5 contributes only the exact state relation on which that decision Work may rely.
+The consumer's direct pattern defines any admit, deny, defer, or unresolved outcome. A.2.5 contributes only the exact state relation on which that decision Work may rely.
 
 #### A.2.5:4.6 - System-Role-Kind Relation Use
 
@@ -170,7 +170,7 @@ A conjunction for one Work claim creates no composite system-role kind, assignme
 
 Use statecharts or state machines when mutually exclusive configurations, orthogonal regions, guarded changes, or event handling improve the subject-domain model. The notation describes possible configurations and changes; it does not replace the direct relation occurrence.
 
-A change arrow represents a proposed or observed change in predicate truth; it is not the world-side change by form. Recover the exact changed object or relation, then use the direct pattern governing that change. The statechart neither supplies a common world-side kind nor prescribes Method order by itself.
+A change arrow represents a proposed or observed change in predicate truth; it is not the world-side change by form. Recover the exact changed object or relation, then use the direct pattern governing that change. Use the Method description for any prescribed Method order.
 
 When the model needs continuous coordinates rather than discrete labels, use `A.19` for the characteristic space and let the by-value state predicate select a region, band, ordering condition, or other exact condition. Measurement and evaluation stay with `C.16` and their direct patterns.
 
@@ -178,14 +178,14 @@ When the model needs continuous coordinates rather than discrete labels, use `A.
 
 Most state claims need no bridge, reference scheme, or bounded-model-use structure. Directly governed truth-condition clauses are enough.
 
-When a `KindSignature`, reference scheme, bridge, or `BoundedModelUseStructure` changes the meaning of a predicate clause, include its exact edition in `SystemRoleAssignmentStatePredicate` semantic basis and therefore in predicate identity. When it changes only how a separate receiving assertion, comparison, or Work use presents or consumes an unchanged predicate, cite it in that receiving use instead. In neither case does it become a generic relation participant, hold the system-role kind, evaluate the predicate, make the relation obtain, or admit Work.
+When a `KindSignature`, reference scheme, bridge, or `BoundedModelUseStructure` changes the meaning of a predicate clause, include its exact edition in `SystemRoleAssignmentStatePredicate` semantic basis and therefore in predicate identity. When it changes only how a separate receiving assertion, comparison, or Work use presents or consumes an unchanged predicate, cite it in that receiving use instead. The generic relation signature remains the two-participant declaration in §4.1.
 
 ### A.2.5:5 - Working Guidance
 
 1. Write the readable sentence naming the current assignment and state condition; name the receiving-use window only when the current check selects one.
 2. Recover the predicate by value: exact system-role kind, normalized truth-condition clauses, temporal reading, applicability, and only meaning-bearing semantic-basis editions.
 3. Derive the maximal continuous extent from assignment obtaining and predicate truth; separately check any receiving-use window against that extent.
-4. Ask whether the receiving use needs occurrence identity. If not, keep the readable assertion and stop.
+4. Ask whether the receiving use needs occurrence identity and whether it relies on the state claim. If both answers are no, keep the readable assertion and stop.
 5. For relied-on use, make the assertion episteme, polarity, direct claim-family reference, and required evidence-use relation explicit. Record supported, refuted, or unresolved reliance separately; absent evidence is neither negative polarity nor world-side non-obtaining.
 6. Leave capability fit, Method selection, gate outcome, authority, assurance, and performed Work with their subject patterns.
 7. Put a meaning-changing semantic basis in predicate identity and a merely use-qualifying selection in the receiving use, never in the generic relation signature.
@@ -224,13 +224,13 @@ SystemRoleAssignmentStateAssertion:
   systemRoleAssignmentStateExtent: [2026-08-10T09:20, 2026-08-10T12:00]
 ```
 
-The assertion does not create the occurrence. A calibration report is a separate `U.Episteme`; an A.2.4 evidence-use relation can support reliance on this assertion. At noon calibration validity ends and the predicate becomes false, so the first state occurrence ends while the assignment continues. Recalibration at 12:30 can make the same predicate true again and begins a second occurrence under that assignment.
+A calibration report is a separate `U.Episteme`; an A.2.4 evidence-use relation can support reliance on this assertion. At noon calibration validity ends and the predicate becomes false, so the first state occurrence ends while the assignment continues. Recalibration at 12:30 can make the same predicate true again and begins a second occurrence under that assignment.
 
 #### A.2.5:6.2 - Drive Motor in a Pump Assembly
 
 `Motor-M1` is the holder of an exact pump-maintenance assignment whose assigned local kind is `DriveMotorSystemRole`. The current Work claim needs `DriveReady`, whose predicate names the exact supply relation, torque capability-fit relation, thermal band, and installed-connection relation.
 
-The pump assembly grounds those direct claims; it is not a mandatory context slot. No scheme or `BoundedModelUseStructure` is required because the direct predicate clauses determine the state. Torque capability can remain while a missing supply relation makes `DriveReady` false. Conversely, an affirmative `DriveReady` assertion says neither that pumping Work occurred nor that an unmodeled universal motor-functioning relation obtains.
+The pump assembly grounds those direct claims; it is not a mandatory context slot. No scheme or `BoundedModelUseStructure` is required because the direct predicate clauses determine the state. Torque capability can remain while a missing supply relation makes `DriveReady` false. An affirmative `DriveReady` assertion states the assignment's condition; use A.15.1 for any claim that pumping Work occurred.
 
 #### A.2.5:6.3 - Socially Constituted Credential State
 
@@ -242,13 +242,13 @@ The accepted decision relation helps constitute the predicate because the creden
 
 `ApprovalService-2` holds an exact assignment to `ApproverSystemRole`. `FulfilmentApprovalReady` concerns fulfilment-state change; `PaymentApprovalReady` concerns payment authorization. Their truth clauses and applicability differ, so they are different `SystemRoleAssignmentStatePredicate` values even if one interface displays both as `Ready`.
 
-If an independently selected model-use structure changes the meaning of one predicate's clauses, its exact edition belongs in that predicate's semantic basis. If it only selects which already identified predicate a view presents, it remains a receiving-use qualification. The structure neither evaluates the predicate nor performs approval Work.
+If an independently selected model-use structure changes the meaning of one predicate's clauses, its exact edition belongs in that predicate's semantic basis. If it only selects which already identified predicate a view presents, it remains a receiving-use qualification.
 
 #### A.2.5:6.5 - Approved Standard or Evidence Dataset Is a Different Relation
 
 Suppose a project says, “Standard S is approved.” The standard is an episteme, not a system under a work-facing assignment. Recover the direct status-use, decision, source-use, or publication-use relation.
 
-Likewise, a dataset or report that “plays a role” remains an episteme used through direct evidence, source, measurement, freshness, provenance, or assurance relations. Apply A.2.5 only if an admitted system's exact assignment is being tested by a `SystemRoleAssignmentStatePredicate` that depends on one of those relations. The standard or dataset becomes neither holder, assignment, predicate, nor state occurrence.
+Likewise, a dataset or report that “plays a role” remains an episteme used through direct evidence, source, measurement, freshness, provenance, or assurance relations. Apply A.2.5 only if an admitted system's exact assignment is being tested by a `SystemRoleAssignmentStatePredicate` that depends on one of those relations.
 
 ### A.2.5:7 - Archetypal Grounding and Bias Control
 
@@ -258,7 +258,7 @@ Likewise, a dataset or report that “plays a role” remains an episteme used t
 
 **Computational system.** A service or agent can expose a capability while each concrete action still needs current assignment, state predicate, task relation, and direct authorization or gate evaluation. This is one specialization, not the universal meaning of assignment state.
 
-**Episteme boundary.** A representation or evidence episteme can describe or support a state claim. It does not become the holder, assignment, predicate, or world-side occurrence by being visible.
+**Episteme boundary.** A representation or evidence episteme can describe or support a state claim.
 
 The main bias risk is label-first reasoning. A familiar state word invites the reader to skip predicate recovery. Repair it by recovering the assignment, predicate by value, actual state extent, and only the assertion and evidence-use relation needed by the receiving use.
 
@@ -266,7 +266,7 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 
 | Check | Question |
 |---|---|
-| `CC-A2.5-01` | Is the current object one `SystemRoleAssignmentStateRelation : U.Relation`, rather than a system-role kind, assignment, capability, assertion episteme, evidence relation, diagram, gate outcome, or Work occurrence? |
+| `CC-A2.5-01` | Is the current object one `SystemRoleAssignmentStateRelation : U.Relation`? |
 | `CC-A2.5-02` | Does `SystemRoleAssignmentSlot` use a `U.RelationRef` constrained to `U.SystemRoleAssignment` and resolve to the exact assignment occurrence being evaluated, with its declared species, holder, and extent established under A.2.1? |
 | `CC-A2.5-03` | Is `StatePredicateSlot` present by value with exact system-role-kind domain, normalized truth clauses, temporal reading, applicability, and only meaning-bearing semantic-basis refs? |
 | `CC-A2.5-04` | Is actual state extent derived from uninterrupted predicate truth while the assignment obtains, with any target evaluation window kept separate? |
@@ -296,7 +296,7 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 Benefits:
 
 - one assignment can support several separately identifiable state episodes;
-- simultaneous predicates remain expressible without pretending every case is a single-state automaton;
+- simultaneous predicates remain expressible;
 - predicate truth, assertion, evidence use, and Work admission can change independently and be repaired locally;
 - Method and gate assertions cite an exact current relation instead of a status label; and
 - physical, social, organizational, and computational cases use the same relation discipline.
@@ -312,11 +312,11 @@ Reopen or lower only the affected claim when the assignment, predicate identity,
 
 ### A.2.5:11 - Rationale
 
-The pattern starts from the world-side relation because state truth can matter before a record exists. A robot can cease to satisfy its inspection predicate before a dashboard refreshes. A credential decision can constitute an institutional condition before a certificate is published. A supported assertion is needed for some reliance uses but is not the world's truth-maker by default.
+The pattern starts from the world-side relation because state truth can matter before a record exists. A robot can cease to satisfy its inspection predicate before a dashboard refreshes. A credential decision can constitute an institutional condition before a certificate is published. A supported assertion is needed for some reliance uses.
 
 Using uninterrupted predicate truth as the identity boundary distinguishes repeated episodes even when assignment and predicate stay the same. A description may refine an open interval's end without creating another occurrence; a genuine false gap does create a boundary.
 
-Assignment state is neither capability nor Work. Capability says what operations a system can perform in an envelope. `SystemRoleAssignmentStateRelation` says whether one current assignment satisfies one predicate over an interval. Work says what was actually performed. A Method, gate, or Work pattern may depend on all three, but none proves the others.
+Assignment state is neither capability nor Work. Capability says what operations a system can perform in an envelope. `SystemRoleAssignmentStateRelation` says whether one current assignment satisfies one predicate over an interval. A Work claim states what was actually performed. A Method, gate, or Work pattern may depend on all three, but none proves the others.
 
 ### A.2.5:12 - SoTA-Echoing
 
@@ -329,7 +329,7 @@ Assignment state is neither capability nor Work. Capability says what operations
 | Liu et al., [A Framework for Formalizing LLM Agent Security](https://arxiv.org/abs/2603.19469), 2026 preprint | Task alignment, action alignment, source authorization, and data isolation require runtime checks over the current task and action. | In agentic cases, require the consumer's governing claim to name the current task and action relations; A.2.5 supplies only the exact state relation and assertion form, while A.10 supplies only the evidence-use relation; the applicable evaluation or assurance pattern separately establishes any reliance posture. |
 | `A.6.REL`, `A.2.1`, `A.19`, `A.2.4`, and `A.10` | FPF already separates relation obtaining, occurrence identity, assignment episodes, characteristic-space predicates, assertions, and evidence use. | Give A.2.5 an occurrence identity rule, preserve the lightweight assertion path, and keep evidence outside generic state identity. |
 
-These sources do not turn A.2.5 into an IT access-control pattern. Their transferable contribution is narrower: current action decisions need exact participants and predicates; temporal monitoring can remain unresolved; capability and action admission differ; and state-machine notation is optional modeling machinery.
+The sources' transferable contribution is bounded: current action decisions need exact participants and predicates; temporal monitoring can remain unresolved; capability and action admission differ; and state-machine notation is optional modeling machinery.
 
 ### A.2.5:13 - Relations
 

@@ -6,6 +6,8 @@
 >
 > **Type:** C-pattern
 >
+> **Status:** Stable
+>
 > **Placement:** a narrow companion used before `C.11` when its comparison basis is not yet available
 
 ### C.11.CRC:0 - Use This When

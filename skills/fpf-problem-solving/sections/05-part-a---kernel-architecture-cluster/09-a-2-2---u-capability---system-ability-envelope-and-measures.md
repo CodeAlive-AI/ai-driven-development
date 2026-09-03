@@ -30,7 +30,7 @@ Use this pattern when a project claim says that a person, team, machine, softwar
 
 ### A.2.2:1 - Problem Frame
 
-In ordinary work, the same sentence often carries several typed values:
+These ordinary sentences make different claims about welding:
 
 - "The welding robot is the welder on this line."
 - "The welding robot can weld seam type W at 12 seams per minute."
@@ -41,7 +41,7 @@ In ordinary work, the same sentence often carries several typed values:
 Only the second sentence can support a `U.Capability` instance when the holder, Work family, envelope, measures, and currentness conditions are recoverable. The sentence itself is a statement about the capability instance. The others may state a local system-role assignment, MethodDescription, performed Work, or promise content. When FPF collapses them, project reasoning becomes brittle:
 
 1. **System-role assignment becomes fake ability.** “Assigned as verifier” is treated as “able to verify”.
-2. **Method description becomes fake ability.** A recipe or algorithm is treated as if it can execute itself.
+2. **Method description becomes fake ability.** A recipe or algorithm is treated as sufficient evidence of the holder's ability.
 3. **Past work becomes fake ability.** One successful work occurrence is treated as stable capacity.
 4. **Promise content becomes fake ability.** A service promise hides the real system envelope and measured bounds.
 5. **Description becomes fake holder.** A standard, report, model card, or dashboard is said to "have capability" because it is useful in a capability argument.
@@ -82,9 +82,9 @@ SupportAndUseReferencesAroundCapability:
   CapabilityFitConditionRefs?: admission predicates or gate relations that test this instance for a use
 ```
 
-**CapabilityHolderRef.** The holder is an admitted `U.System`: a physical, cyber, socio-technical, organizational, team, composite-cell, deployed-software, or other System satisfying A.1 for this claim. A local system-role kind, assignment, Method, MethodDescription, Work record, episteme, publication, standard, or dashboard is not the capability holder merely because it appears in the sentence.
+**CapabilityHolderRef.** The holder is an admitted `U.System`: a physical, cyber, socio-technical, organizational, team, composite-cell, deployed-software, or other System satisfying A.1 for this claim.
 
-**WorkFamilyOrResultClassRef.** The ability is about a class of work the holder system can perform or a result class it can produce. The envelope may cite the exact `U.Method` that prospective Work occurrences would enact, or a separately identified `U.MethodDescription` whose claims constrain the capability use. Those references do not turn the Method or description into the holder, do not make the holder enact the Method, and do not establish that any candidate episteme is `U.MethodDescription`.
+**WorkFamilyOrResultClassRef.** The ability is about a class of work the holder system can perform or a result class it can produce. The envelope may cite the exact `U.Method` that prospective Work occurrences would enact, or a separately identified `U.MethodDescription` whose claims constrain the capability use. For a candidate episteme, apply A.3.2 before calling it a `U.MethodDescription`.
 
 **CapabilityEnvelope.** The envelope states the bounded conditions under which the ability holds: input range, environment, resources, configuration, system version, calibration state, staffing composition, access constraints, safety limits, or other current conditions.
 
@@ -92,11 +92,11 @@ SupportAndUseReferencesAroundCapability:
 
 **QualificationWindow.** Capability is stable enough to plan with but not timeless. The instance may depend on software version, calibration horizon, team training state, wear, operating season, regulatory state, or other temporal currentness relation.
 
-**CapabilityStatementRefs.** A `CapabilityStatement` is a governed episteme or publication-side record that says a capability instance exists, describes its holder, envelope, measures, and window, or cites it for planning. It is not `U.Capability`, but it is still a governed record under its own episteme or publication pattern.
+**CapabilityStatementRefs.** A `CapabilityStatement` is a governed episteme or publication-side record that says a capability instance exists, describes its holder, envelope, measures, and window, or cites it for planning.
 
-**EvidenceRelationRefs and SourceUseRelationRefs.** Evidence, tests, certifications, prior work summaries, simulations, audit records, standards, and model results can justify a capability statement through direct evidence or source-use relations. These are governed relations or records. They do not become the capability and do not become its holder.
+**EvidenceRelationRefs and SourceUseRelationRefs.** Evidence, tests, certifications, prior work summaries, simulations, audit records, standards, and model results can justify a capability statement through direct evidence or source-use relations.
 
-**CurrentnessAssessmentRefs.** A currentness assessment is a dated assessment relation saying whether the capability instance remains usable under its qualification window and current conditions. It is not the capability instance, but it is still a governed assessment relation. `CapabilityCurrentnessCondition` states what must remain true; an assessment evaluates that condition.
+**CurrentnessAssessmentRefs.** A currentness assessment is a dated assessment relation saying whether the capability instance remains usable under its qualification window and current conditions. `CapabilityCurrentnessCondition` states what must remain true; an assessment evaluates that condition.
 
 **CapabilityFitConditionRefs.** A capability-fit condition is an admission predicate, threshold, or gate relation that tests a holder capability and any declared characteristic, Q-Bundle, or architecture-characteristic inputs against a current local system-role-kind classification, exact assignment, Method step, WorkPlan, Work occurrence, ClaimScope, qualification window, or gate need. Unless a separate E.24.UK admission is written, it is not a `U.*` kind.
 
@@ -130,17 +130,25 @@ CapabilityStatementRecord:
   currentnessAssessmentRefs?:
 ```
 
-Plain sentence form:
+Plain sentence forms (choose one for the current claim):
 
 ```text
-<System> can perform <work family or result class>
+<System> can perform <work family>
 within <envelope>
 at <measures>
 during <qualification window>,
 with <evidence or source-use relation>.
 ```
 
-This sentence form is a publication or statement about the capability instance. It is deliberately not a MethodDescription. It does not list the step order or algorithm. It also does not classify the holder under a system-role kind, assign the holder, assert that a Work occurrence happened, prove an architecture characteristic, or make the evidence relation into the capability.
+```text
+<System> can produce <result class>
+within <envelope>
+at <measures>
+during <qualification window>,
+with <evidence or source-use relation>.
+```
+
+Either sentence form is a publication or statement about the capability instance.
 
 ### A.2.2:4 - Separation From Neighboring Values
 
@@ -177,7 +185,7 @@ The checks are separate:
 - capability-fit condition tests whether that instance meets the current threshold or gate need;
 - after execution, A.13 first recovers the exact actual performer and A.15.1 independently admits the dated Work occurrence; F.6 `performedUnderAssignment(W, RA)` is added only when this capability account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment, while actual `enactsMethod(W, M)` separately relates the Work to the exact Method;
 
-Do not put the threshold into the local system-role-kind name. Do not treat a system-role classification or assignment as proof of ability or action. Do not let a local kind, assignment, capability instance, Method, or MethodDescription perform the Work. Do not treat a fit predicate, Q-Bundle, architecture-characteristic row, evidence relation, or currentness assessment as the capability instance. An algorithm-possession phrase is only a dispatch cue; it establishes neither dated performance nor `U.MethodDescription` membership.
+Do not put the threshold into the local system-role-kind name. Do not treat a system-role classification or assignment as proof of ability or action. For performed Work, name the actual performer system. Do not treat a fit predicate, Q-Bundle, architecture-characteristic row, evidence relation, or currentness assessment as the capability instance. An algorithm-possession phrase is only a dispatch cue; it establishes neither dated performance nor `U.MethodDescription` membership.
 
 ### A.2.2:6 - Worked Cases
 
@@ -207,7 +215,7 @@ If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind
 
 Dispatch the phrase by claim: use A.2.2 only for the bounded ability; A.3.1 for the Method; a deployed-software or possession relation when that is the claim; and A.3.2 for candidate episteme `TurbineInspectionProcedure-v3` only after its `EntityOfConcern` resolves to that Method and one substantive claim says how it is done.
 
-Assignment and capability still do not prove execution. If `InspectionWork-17` actually occurs, A.13 first recovers `Robot-7` as the exact actual performer through obtaining `InspectionAssignment-17`, and A.15.1 independently admits the Work. Because this example expressly states assignment-bound attribution, F.6 afterward establishes `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)` through that same assignment; F.6 identifies neither assignment nor performer, and failed attribution leaves the Work intact. The Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`. `InspectorSystemRole`, the assignment, capability instance, possession phrase, Method, and `TurbineInspectionProcedure-v3` do not act or perform the inspection.
+Assignment and capability still do not prove execution. If `InspectionWork-17` actually occurs, A.13 first recovers `Robot-7` as the exact actual performer through obtaining `InspectionAssignment-17`, and A.15.1 independently admits the Work. Because this example expressly states assignment-bound attribution, F.6 afterward establishes `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)` through that same assignment; F.6 identifies neither assignment nor performer, and failed attribution leaves the Work intact. The Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`.
 
 #### A.2.2:6.2 - Software Service as Deployed System
 
@@ -254,7 +262,7 @@ ConcreteCapabilityInstance:
   dependencyNotes: feeder and vision subsystem conditions
 ```
 
-The concrete capability instance is asserted for `Cell_3`, not for every part and not for the method description. Dependencies may be named, but the bounded capability claim is about the composite holder.
+The concrete capability instance is asserted for `Cell_3`, not for every part. Dependencies may be named, but the bounded capability claim is about the composite holder.
 
 ### A.2.2:9 - Checklist
 
@@ -295,7 +303,7 @@ The concrete capability instance is asserted for `Cell_3`, not for every part an
 - Planning separates "can do" from "is assigned now".
 - Method steps can name capability thresholds without putting extra meaning into system-role-kind names.
 - Work records can be judged against the capability instance and fit predicate current at the time of work.
-- Promise content becomes less magical because the internal ability and measured envelope are explicit.
+- The internal ability and measured envelope supporting a promise are explicit.
 - Composite-system ability can be stated at the right holder instead of scattered across parts.
 
 **Costs.**
@@ -310,7 +318,7 @@ The cost is intentional: without it, FPF cannot distinguish authorization, abili
 
 | Current practice or research line | What FPF takes | Practical implication |
 |---|---|---|
-| Capability-based planning in defense and enterprise architecture keeps ability, mission need, activities, Systems, and portfolio planning separate. | The `U.Capability` name governs holder-dependent capability instances with envelope and measures; each instance is not a system-role kind, assignment, Method, Work record, promise, statement, evidence record, or quality bundle. | A capability instance can be compared across candidate Systems without selecting the implementation too early. |
+| Capability-based planning in defense and enterprise architecture keeps ability, mission need, activities, Systems, and portfolio planning separate. | The `U.Capability` name governs holder-dependent capability instances with envelope and measures. | A capability instance can be compared across candidate Systems without selecting the implementation too early. |
 | Analyzable architecture and capability-planning practice separates the system whose ability is claimed from architecture descriptions, requirements, measures, and evidence. | Capability instances name holder, result class, envelope, measures, and qualification window; descriptions, statements, evidence, and currentness assessments remain separate values. | The reader can see which object changed when a requirement, holder, measure, source, or operating condition changes. |
 | Current uncertainty and verification work for cyber-physical and autonomous systems treats operating conditions and currentness as first-class modeling concerns. | Qualification windows and lowering triggers are part of the capability instance boundary; evidence, source-use refs, and currentness assessments support or lower reliance without becoming capability. | A stale calibration, changed version, or out-of-envelope input lowers the currentness assessment or capability instance locally. |
 | Modern access-control and zero-trust practice separates the acting system, assignment, current assignment-state relation, policy decision, and resource action. | An assignment or assignment-state relation may satisfy an entry condition, but neither grants capability. | “Allowed to act” and “able to achieve the measured result” remain separate checks. |
@@ -333,7 +341,7 @@ Source-currentness note: DoDAF and TOGAF are used here as stable capability-plan
 | `A.6.5` | Supplies SlotSpec discipline for capability relation fields and capability-use relations. |
 | `A.6.F` | Repairs function and functionality wording that may hide capability, method, work, math function, or functional-architecture claims. |
 | `A.6.RSIR` | Use it to recover relation, signature, interface, system-role, participation, declaration-position, and slot wording before capability repair when the source sentence is mixed; use E.10.ROLE to select the branch for bare *role*. |
-| `C.27` | Governs temporal currentness, windows, rhythm, and drift when capability timing is material. |
+| `C.27.TA`, `C.27` | Use C.27.TA when a positive temporal aspect of capability—currentness, window, rhythm, or drift—is itself relied on; use C.27 for temporal-claim adequacy. |
 | `C.2.1`, `A.10`, `B.3`, `C.28`, `F.10`, `E.17` | Govern episteme, evidence, assurance, counterfactual, status, and publication-use relations that may justify or qualify a statement or reliance use about a capability instance. |
 | `C.16.P`, `A.19` | Govern characteristic, scale, and characteristic-space recovery when capability measures depend on declared measured aspects. |
 | `C.25` | Governs composite quality families and Q-Bundles that may supply slots for capability-fit checks. |
@@ -355,7 +363,7 @@ Do not use `U.Capability` as the current object for:
 - capability-fit predicate, gate, admission relation, or work-entry readiness record;
 - structural part, module, interface, port, or functional structure unless the current claim is the ability of a holder system expressed through that structure.
 
-These values may be related to a capability instance, a statement about it, or a fit check over it. They do not become the capability by adjacency. Name the neighboring value, record, relation, or predicate through its own governing pattern when that neighboring claim is current.
+These values may be related to a capability instance, a statement about it, or a fit check over it. Name the neighboring value, record, relation, or predicate through its own governing pattern when that neighboring claim is current.
 
 ### A.2.2:End
 

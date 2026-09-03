@@ -2,7 +2,7 @@
 
 **Pattern type.** Method pattern.
 
-**Status.** Candidate.
+**Status.** Stable.
 
 **Normativity.** Normative unless a passage is marked informative.
 

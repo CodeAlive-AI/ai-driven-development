@@ -1,7 +1,7 @@
 ## A.15.8 - Work-Performance Configuration and Recovery Testing
 
 > **Type:** Architectural (A)
-> **Status:** Candidate
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 **Plain name.** Test whether the exact performer, support, and continuation-state configuration for Work can continue or recover when something important changes.

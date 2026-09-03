@@ -17,3 +17,5 @@ FPF does not transform the open world into a closed one. It lets a project build
 
 This is why FPF patterns often look strict. The strictness is local. It lets a project act while keeping the wider world open. A local closure is not a claim that nothing else exists. It is a declared scope for responsible action.
 
+Local closure also does not license ceremony. Before a method, route, or review makes an action mandatory, ask whether a materially plausible result can change a named substantive decision within the nearest substantive horizon, whether the action realizes an already selected result, or whether removing it changes an assurance or recovery condition on which the use relies. Hypothetical future usefulness is not enough; use `A.11.OP` for the exact operational-parsimony rule and its boundary with direct duties and assurance.
+

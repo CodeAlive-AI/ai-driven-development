@@ -10,26 +10,26 @@ Use this pattern when a project needs one reusable claim about **how the state o
 
 Use it when the working question is:
 
-* which exact admitted System, obtaining assignment occurrence, separately identified A.2.5 assignment-state relation, holon, episteme, claim, service, resource bundle, architecture, or other EntityOfConcern has changing state;
+* which EntityOfConcern has changing state, distinguishing an obtaining assignment occurrence from a separately identified A.2.5 assignment-state relation when that distinction is current;
 * which characteristics and local meanings define the state space;
 * which transition law states how those coordinates evolve;
 * which observations or work-derived traces can be compared with the law;
 * over which operating region, claim scope, qualification window, parameter regime, or scale band the claim applies; and
 * whether a prediction can be used for comparison, gating, assurance, planning, or control.
 
-Do not add acting, dated Work, or F.6 attribution merely because a System or assignment is changing. State those facts only when their own basis is independently established; a passive System can be the changing entity.
+A passive System can be the changing entity. When an agency, dated Work, or F.6 attribution claim is current, establish its basis independently.
 
-**Primary governed object.** A.3.3 examines one already identified claim-bearing `U.Episteme` candidate and judges whether that same individual belongs to the dependent kind `U.Dynamics`. Positive membership requires its exact C.2.1 `EntityOfConcern` to be the thing whose state is modelled and its ClaimGraph, interpreted under its effective `U.ReferenceScheme`, to declare both a state space and a state-transition law for that subject. C.2.1 keeps the episteme's identity; A.3.3 adds no second identity and no generic locality participant.
+**Primary governed object.** A.3.3 examines one already identified claim-bearing `U.Episteme` candidate and judges whether that same individual belongs to the dependent kind `U.Dynamics`. Positive membership requires its exact C.2.1 `EntityOfConcern` to be the thing whose state is modelled and its ClaimGraph, interpreted under its effective `U.ReferenceScheme`, to declare both a state space and a state-transition law for that subject. The same episteme retains its C.2.1 identity.
 
-**E.24.UK settlement.** `U.Dynamics` remains a dependent durable U-kind under `U.Episteme`. It is the reusable state-space and transition-law episteme, not a root change kind, the changed EntityOfConcern, a selected `U.Structure`, a method or method description, a work occurrence, an actual transformation, or a flow structure. Components such as `stateSpace`, `transitionLaw`, `observationRelation`, and `calibrationOrParameterSource` remain ClaimGraph content or references inside the dynamics episteme unless another governing pattern independently identifies one of them.
+**E.24.UK settlement.** `U.Dynamics` remains a dependent durable U-kind under `U.Episteme`. It is the reusable state-space and transition-law episteme. Components such as `stateSpace`, `transitionLaw`, `observationRelation`, and `calibrationOrParameterSource` remain ClaimGraph content or references inside the dynamics episteme unless another governing pattern independently identifies one of them.
 
-**First useful move.** In one ordinary sentence, name the exact changing subject, the state coordinates and their meanings, the rule that relates earlier and later state, where that rule applies, and the nearest condition that stops its use. If that is enough for the current comparison, stop. Add observation, calibration, evidence, temporal, mathematical-lens, assurance, or gate machinery only when the proposed receiving use needs it. Before making a prediction, conformance, or gate-use claim, name the observation relation and exact applicability window; if either is unavailable, stop that stronger use.
+**First useful move.** In one ordinary sentence, name the exact changing subject, the state coordinates and their meanings, the rule that relates earlier and later state, where that rule applies, and the applicable stop conditions. If that is enough for the current comparison, stop. Add observation, calibration, evidence, temporal, mathematical-lens, assurance, or gate machinery only when the proposed receiving use needs it. Before making a prediction, conformance, or gate-use claim, name the observation relation and exact applicability window; if either is unavailable, stop that stronger use.
 
 **What goes wrong if missed.** Procedure text becomes "the dynamics", telemetry becomes a law, one observed run becomes a prediction, a dashboard becomes a state space, a description or selected graph is mistaken for the dynamics episteme, or a simulation becomes permission to act.
 
 **What this buys in practice.** Practitioners can compare predictions with traces, decide whether stale predictions may still be used, separate Methods and MethodDescriptions from laws of change, and decide where characteristic, scope, temporal, mathematical-lens, evidence, assurance, or gate patterns must take over.
 
-**Not this pattern when.** If the source only states a semantic way of doing, use `A.3.1`. If one episteme substantively describes that admitted Method, use `A.3.2`; A.3.2 neither identifies a dynamics episteme nor defines or selects an organization among several Methods. If the question is an independently selected organization of exact constituents and obtaining relations, use `A.22`. If the source states one actual bounded change established by the exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification, use `A.3.4`; a possible, predicted, simulated, or probable transition remains claim content and supplies no work, gate, release, or permission authority. If it states planned work or dated work, use `A.15.2` or `A.15.1`. If it states a mechanism algebra, use `A.6.1` and `E.20`. If it states only freshness, rhythm, inertia, delay, window, or currentness as a positive temporal aspect, use `C.27.TA`; if it states adequacy or supported use of an authored temporal claim, use `C.27`. If it states only evidence or assurance, use `A.10` or `B.3`.
+**Not this pattern when.** If the source only states a semantic way of doing, use `A.3.1`. If one episteme substantively describes that admitted Method, use `A.3.2`. If the question is an independently selected organization of exact constituents and obtaining relations, use `A.22`. If the source states one actual bounded change established by the exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification, use `A.3.4`. A possible, predicted, simulated, or probable transition remains claim content. If it states planned work or dated work, use `A.15.2` or `A.15.1`. If it states a mechanism algebra, use `A.6.1` and `E.20`. If it states only freshness, rhythm, inertia, delay, window, or currentness as a positive temporal aspect, use `C.27.TA`; if it states adequacy or supported use of an authored temporal claim, use `C.27`. If it states only evidence or assurance, use `A.10` or `B.3`.
 
 ### A.3.3:2 - Problem
 
@@ -60,9 +60,9 @@ Without a first-class `U.Dynamics`, state-change claims collapse into nearby but
 
 The C.2.1 ClaimGraph, exact `EntityOfConcern`, and effective `U.ReferenceScheme` remain the episteme's identity discriminators. A.3.3 adds no context field or second dynamics identity. A `U.ClaimScope`, operating region, applicability window, qualification interval, parameter regime, or scale band enters only through the exact claim that uses it and its subject pattern; changing one can change claim content without becoming an ambient container.
 
-`U.Dynamics` can be deterministic or stochastic, continuous, discrete, or hybrid. It can make state-change claims about physical systems, software services, organizations, epistemes, claim portfolios, resource states, architecture characteristics, or another exact EntityOfConcern. If several subjects are jointly modelled, the exact C.2.1 EntityOfConcern must itself be an independently identified collection, system, or other admitted subject; list proximity does not create one.
+`U.Dynamics` can be deterministic or stochastic, continuous, discrete, or hybrid. It can make state-change claims about physical systems, software services, organizations, epistemes, claim portfolios, resource states, architecture characteristics, or another exact EntityOfConcern. If several subjects are jointly modelled, the exact C.2.1 EntityOfConcern must itself be an independently identified collection, system, or other admitted subject.
 
-It does not prescribe what an agent should do. A semantic way of doing belongs to `U.Method`; an episteme describing one admitted Method belongs to `U.MethodDescription`; a dated occurrence belongs to `U.Work`; a planned occurrence belongs to `U.WorkPlan`; an actual bounded change belongs to `U.Transformation`; a mechanism law belongs to `U.Mechanism`; a selected organization belongs to A.22 `U.Structure`; and evidence, publication, result, reliance, assurance, gate, and authorization claims remain with their subject patterns. None of those objects establishes dynamics membership by being cited, adjacent, displayed, or used.
+A semantic way of doing belongs to `U.Method`; an episteme describing one admitted Method belongs to `U.MethodDescription`; a dated occurrence belongs to `U.Work`; a planned occurrence belongs to `U.WorkPlan`; an actual bounded change belongs to `U.Transformation`; a mechanism law belongs to `U.Mechanism`; a selected organization belongs to A.22 `U.Structure`; and evidence, publication, result, reliance, assurance, gate, and authorization claims remain with their subject patterns.
 
 If empirical grounding is claimed, state the exact C.2.1 `EpistemeEmpiricalGroundingRelation`. A calibration source, observation record, dated calibration Work, evaluation result, A.10 evidence-provenance path, or B.3 assurance claim remains separately identified and does not become an intrinsic grounding field of `U.Dynamics`.
 
@@ -90,7 +90,7 @@ Dynamics statement:
   StopCondition:
 ```
 
-This aid is not an instruction sequence, identity schema, record kind, method description, selected structure, or second carrier. C.2.1 identifies the candidate episteme. The rows expose the minimum claim content and separately governed references needed to keep a law of change distinct from Method, MethodDescription, Structure, Work, actual transformation, result, publication, evidence, reliance, assurance, and authority.
+These rows are an optional aid for the minimum claim content and separately governed references needed by the current use. C.2.1 identifies the candidate episteme.
 
 #### A.3.3:4.3 - Working distinction table
 
@@ -112,7 +112,7 @@ This aid is not an instruction sequence, identity schema, record kind, method de
 
 #### A.3.3:4.4 - State-space and transition-law fields
 
-The following is a claim-content view of one C.2.1 episteme, not another object identity or mandatory serialization:
+The following optional view groups the claim content of one C.2.1 episteme:
 
 ```text
 U.Dynamics membership view {
@@ -138,13 +138,13 @@ U.Dynamics membership view {
 
 `transitionLaw` is paradigm-agnostic. It can be an equation, relation, kernel, finite-state transition, queueing model, Bayesian update, Petri-net firing relation, simulation rule, learned predictor, or hybrid model, provided the state space, semantic basis, and applicability boundary are declared.
 
-`transitionLaw`, `observationRelation`, `constraintsOrInvariants`, and `calibrationOrParameterSourceIfReliedOn` are ClaimGraph content or exact references inside the `U.Dynamics` episteme unless another governing pattern independently identifies one as an episteme, source, relation, or structure. Naming or displaying one component does not split `U.Dynamics`, create a MethodDescription, or make a relation obtain.
+`transitionLaw`, `observationRelation`, `constraintsOrInvariants`, and `calibrationOrParameterSourceIfReliedOn` are ClaimGraph content or exact references inside the `U.Dynamics` episteme unless another governing pattern independently identifies one as an episteme, source, relation, or structure.
 
 `observationRelation` separates state from what can be measured, sampled, logged, estimated, or inferred. Identity observation is allowed only when the claim says the state coordinate is directly observed. Any exact measurement result, observation record, dated Work, provenance path, empirical-grounding relation, or assurance claim remains under its subject pattern.
 
 #### A.3.3:4.5 - Evidence, prediction, conformance, drift, and calibration
 
-Let `D` be a `U.Dynamics` about exact EntityOfConcern `E`. Let `W` denote only exact dated `U.Work` occurrences when Work is current, and let `O` denote separately identified observation, telemetry, source, or measurement records. Neither a record nor a Work occurrence is part of `D` merely because a trace cites it.
+Let `D` be a `U.Dynamics` about exact EntityOfConcern `E`. Let `W` denote only exact dated `U.Work` occurrences when Work is current, and let `O` denote separately identified observation, telemetry, source, or measurement records.
 
 | Derived value | Meaning |
 | --- | --- |
@@ -156,19 +156,19 @@ Let `D` be a `U.Dynamics` about exact EntityOfConcern `E`. Let `W` denote only e
 | `fits(D, trace, tolerancePolicy)` | conformance verdict under a declared tolerance, likelihood, interval, or distributional policy |
 | `drift(D1, D2, domain)` | divergence between two dynamics versions over a declared operating domain |
 
-These expressions name claim-side calculations or questions. A calculated value does not by itself establish an observation, conformance, drift, measurement, evaluation, gate, or assurance result. When such a result is claimed, the applicable evaluation or measurement declaration states the criterion and result semantics, and the actual application and result are identified separately; C.2.1 identifies any persisted result episteme, and use A.10 or B.3 only for the separately claimed reliance or assurance use.
+These expressions name claim-side calculations or questions. When an observation, conformance, drift, measurement, evaluation, gate, or assurance result is claimed, the applicable evaluation or measurement declaration states the criterion and result semantics, and the actual application and result are identified separately; C.2.1 identifies any persisted result episteme, and use A.10 or B.3 only for the separately claimed reliance or assurance use.
 
-Calibration Work and its domain result may support a later dynamics episteme whose changed ClaimGraph receives its own C.2.1 identity; an `EpistemeEditionRelation` obtains only when C.2.1's exact continuation predicate is separately established. Calibration does not mutate the earlier episteme into Work, identify the result as dynamics, supply intrinsic grounding, or make the later law authoritative for a gate.
+Calibration Work and its domain result may support a later dynamics episteme whose changed ClaimGraph receives its own C.2.1 identity; an `EpistemeEditionRelation` obtains only when C.2.1's exact continuation predicate is separately established.
 
 #### A.3.3:4.6 - Prediction use in comparison or gating
 
 A prediction used for comparison, release, gate, assurance, or work preparation states the exact dynamics edition, predicted Coordinates, operating region, horizon, time step, parameter regime, source-currentness condition, and relevant error or uncertainty. The direct consumer's policy then states which observation, validation, sensitivity, robustness, stability, or normalization-composition conditions that use requires.
 
-A fresh observation may replace or check the prediction when the policy calls for it. A non-expansive bound, another sensitivity bound, or commutation with a normalization step is required only when the named use relies on that property. None of those properties is by itself sufficient for a gate or comparison claim. If the required conditions are absent or fail, the prediction cannot carry that use; state currentness through `C.27.TA`, use `C.27` for authored temporal-claim adequacy, and use A.20, A.21, G.4, or the direct authority pattern for the actual decision.
+A fresh observation may replace or check the prediction when the policy calls for it. A non-expansive bound, another sensitivity bound, or commutation with a normalization step is required only when the named use relies on that property. If the required conditions are absent or fail, the prediction cannot carry that use; state currentness through `C.27.TA`, use `C.27` for authored temporal-claim adequacy, and use A.20, A.21, G.4, or the direct authority pattern for the actual decision.
 
 #### A.3.3:4.7 - A.3.4, C.27.TA, C.27, and C.29 boundaries
 
-`A.3.4` governs one actual bounded change identified by the exact changed referent, maximal continuous temporal extent or exact formal ordering boundary, boundary conditions, actual characteristic-state and obtaining direct-relation facts, and continuity or reidentification. A dynamics episteme can model a possible change, predict a probable transition, simulate a trajectory, constrain a candidate, or assert that change is expected; none becomes an actual `U.Transformation` until that subject-side occurrence basis obtains. Prediction supplies no dated work, transformation participation, gate passage, release, permission, or other authority.
+`A.3.4` governs one actual bounded change identified by the exact changed referent, maximal continuous temporal extent or exact formal ordering boundary, boundary conditions, actual characteristic-state and obtaining direct-relation facts, and continuity or reidentification. A dynamics episteme can model a possible change, predict a probable transition, simulate a trajectory, constrain a candidate, or assert that change is expected; none becomes an actual `U.Transformation` until that subject-side occurrence basis obtains.
 
 `C.27.TA` names positive temporal aspects: freshness, delay, rhythm, currentness, inertia, cadence, trajectory, recovery timing, stabilization timing, and validity window. `C.27` judges adequacy or supported use of authored temporal claims that use those aspects. A `Dyn2TemporalClaimAdequacyCard` or temporal classification is not itself a law of change.
 
@@ -178,7 +178,7 @@ Use `C.29` when the law depends on contested transfer, cross-domain analogy, lea
 
 #### A.3.3:4.8 - Method, mechanism, and governing-pattern constellation boundary
 
-A source label such as `process`, `algorithm`, `dynamics`, `workflow`, `model`, `controller`, or `simulator` may point to linked slot positions under `E.10.ARCH`, not to one typed value. Recover the relevant slots first, then split the linked values:
+A source label such as `process`, `algorithm`, `dynamics`, `workflow`, `model`, `controller`, or `simulator` may point to linked slot positions under `E.10.ARCH`. Recover the relevant slots first, then split the linked values:
 
 * `U.Method` for the semantic way of doing;
 * `U.MethodDescription` for the claim-bearing episteme that substantively describes one admitted Method, while C.29 and publication patterns keep its representation, form, carrier, and availability separate;
@@ -188,9 +188,9 @@ A source label such as `process`, `algorithm`, `dynamics`, `workflow`, `model`, 
 * `TransformationFlowStructure` for selected flow structure when the source is describing a flow-shaped arrangement of transformations;
 * evidence, gate, authority, and assurance values when those claims are current.
 
-A transition graph, ordering, shared label, dynamics equation, MethodDescription node, selector row, or predicted trajectory also establishes no B.1.5 `methodPartOf` occurrence or composite Method. B.1.5 must independently recover exact part Methods, obtaining part relations, whole-forming claims and constraints, whole semantics, boundary and reidentification.
+For a composite-Method claim, B.1.5 must independently recover exact part Methods, obtaining `methodPartOf` relations, whole-forming claims and constraints, whole semantics, boundary and reidentification.
 
-The linkage among relation positions does not become a process, method, mechanism, dynamics model, plan, work occurrence, or evidence object. Do not infer dual typing from a shared source or label. One episteme can meet A.3.2 only by describing one admitted Method, and one episteme can meet A.3.3 only by carrying the state-space and transition-law claims above; neither membership establishes the other, identifies the Method, selects an A.22 Structure, or supplies actual Work or transformation. No current FPF governor admits one individual as both the A.3.1 semantic way of doing and the A.3.3 state-change episteme; reopen that question only if a later direct admission rule states both memberships without letting either classification supply the other's facts.
+Do not infer dual typing from a shared source or label. One episteme can meet A.3.2 only by describing one admitted Method, and one episteme can meet A.3.3 only by carrying the state-space and transition-law claims above; neither membership establishes the other. No current FPF governor admits one individual as both the A.3.1 semantic way of doing and the A.3.3 state-change episteme; reopen that question only if a later direct admission rule states both memberships without letting either classification supply the other's facts.
 
 ### A.3.3:5 - Archetypal Grounding
 
@@ -204,7 +204,7 @@ Side-by-side split:
 | --- | --- | --- |
 | EntityOfConcern | exact reactor temperature-and-concentration state subject interpreted under the declared scheme and operating-region claim | the exact catalyst bed as changed referent for one actual regeneration occurrence |
 | Core relation | state-space coordinates plus nonlinear transition-law claim graph, observation relation, disturbances, operating region, and applicability window | exact catalyst bed; maintenance temporal extent and regeneration boundary; boundary conditions; actual fouling, flow, pressure, and catalyst-condition facts before, during, and after that boundary; continuity or reidentification rule for the bed and this one occurrence |
-| Use | possible, predicted, simulated, or probable state change; conformance, drift, and gate input only when freshness or mathematical conditions are satisfied, with no work or gate authority supplied by the prediction | actual bounded-change claim on the recovered subject-side occurrence basis; a cited dynamics model remains a neighboring episteme and does not establish actuality |
+| Use | possible, predicted, simulated, or probable state change; conformance, drift, and gate input only when the receiving use's required conditions are satisfied (§4.6) | actual bounded-change claim on the recovered subject-side occurrence basis |
 | Kept outside | method, controller code, dated runs, evidence, and gate authority | reusable law of state change, method description, work occurrence, evidence relation, and permission to act |
 
 #### A.3.3:5.2 - Reliability and operations
@@ -213,15 +213,15 @@ A service platform models backlog, arrival rate, and incident recovery with a qu
 
 #### A.3.3:5.3 - Evolutionary architecture
 
-An architecture group tracks latency, coupling, operational cost, and change lead time across releases. A discrete-time transition map over those characteristics can be `U.Dynamics`. Architecture moves, selected structures, and views stay with architecture patterns; work occurrences and measurements stay with work and evidence patterns.
+An architecture group tracks latency, coupling, operational cost, and change lead time across releases. An episteme about that architecture can be `U.Dynamics` when its `ClaimGraph` declares a state space over those characteristics and a discrete-time transition map as the transition law. Architecture moves, selected structures, and views stay with architecture patterns; work occurrences and measurements stay with work and evidence patterns.
 
 #### A.3.3:5.4 - Knowledge dynamics
 
-A claim portfolio uses belief, evidence weight, source currentness, and contestability as state coordinates. A Bayesian or likelihood update is a dynamics episteme over claim state. The studies, reviews, and source records are evidence values; the dynamics model does not make a claim true by itself.
+A claim portfolio uses belief, evidence weight, source currentness, and contestability as state coordinates. An episteme declaring a Bayesian or likelihood update as the transition law over that claim-state space is `U.Dynamics`. The studies, reviews, and source records are evidence values.
 
 #### A.3.3:5.5 - Natural physical evolution
 
-The Moon orbiting Earth can be modeled as `U.Dynamics` without pretending that the Moon enacts a method or performs governed work. A classification such as satellite classification may be well-formed, but it does not create method-work alignment.
+A `U.Dynamics` episteme can model the Moon's motion around Earth using an orbital state space and transition law.
 
 ### A.3.3:6 - Bias-Annotation
 
@@ -232,21 +232,21 @@ Typical biases:
 * **dashboard-as-state-space bias**: visible metrics substitute for declared characteristics, units, scales, and comparability relations;
 * **prediction-as-authority bias**: model output is treated as permission, gate passage, or safety proof;
 * **mathematical-prestige bias**: equations, learned predictors, and simulations are accepted without applicability window, observation relation, and transfer boundary;
-* **semio-bias**: the pattern drifts into arguments about descriptions of dynamics while losing the state-space and transition-law EntityOfConcern.
+* **semio-bias**: the pattern drifts into arguments about descriptions of dynamics while losing the modelled subject, state space, and transition law.
 
 ### A.3.3:7 - Conformance Checklist
 
-**CC-A3.3-1 (Membership and identity).** A.3.3 judges one already identified `U.Episteme`. That same individual is `U.Dynamics` only when its exact C.2.1 `EntityOfConcern` is the changing subject and its ClaimGraph, under its effective `U.ReferenceScheme`, declares both a state space and a transition law. A.3.3 adds no second identity. It is not thereby `U.Method`, `U.MethodDescription`, `U.Structure`, `U.WorkPlan`, `U.Work`, `U.Transformation`, `U.Mechanism`, result, publication, evidence, assurance, gate, or authority.
+**CC-A3.3-1 (Membership and identity).** A.3.3 judges one already identified `U.Episteme`. That same individual is `U.Dynamics` only when its exact C.2.1 `EntityOfConcern` is the changing subject and its ClaimGraph, under its effective `U.ReferenceScheme`, declares both a state space and a transition law. A.3.3 adds no second identity.
 
-**CC-A3.3-2 (Semantic locality without a container).** Local meanings and characteristic names are interpreted under the effective `U.ReferenceScheme`; units, operating region, time base, approximation regime, claim scope when needed, qualification window and source-currentness condition remain explicit claim content or separately governed values. No `U.BoundedContext`, generic context field, selected structure, description, carrier, or intrinsic-grounding slot identifies or contains the dynamics episteme.
+**CC-A3.3-2 (Semantic locality without a container).** Local meanings and characteristic names are interpreted under the effective `U.ReferenceScheme`; units, operating region, time base, approximation regime, claim scope when needed, qualification window and source-currentness condition remain explicit claim content or separately governed values. Its C.2.1 identity is determined by ClaimGraph, EntityOfConcern, and effective U.ReferenceScheme.
 
-**CC-A3.3-3 (EntityOfConcern).** The changing EntityOfConcern is named. It may be a physical holon, service, organization, episteme, claim portfolio, architecture, resource bundle, or other holon with modeled state.
+**CC-A3.3-3 (EntityOfConcern).** The changing EntityOfConcern is named. It may, for example, be a physical holon, service, organization, episteme, claim portfolio, architecture, resource bundle, or other EntityOfConcern with modeled state.
 
 **CC-A3.3-4 (State space).** The state space enumerates characteristics with units, scales, comparability rules, and any needed topology, geometry, aggregation policy, or invariantization rule.
 
 **CC-A3.3-5 (Transition law).** The transition law states a relation, map, kernel, equation, rule, learned predictor, or simulation rule suitable for the declared time base and stochasticity.
 
-**CC-A3.3-6 (Observation relation).** Evidence use states how exact Work-side facts when present and separately identified work records, telemetry, measurements, observation records, or source records become observed coordinates. A record is not the Work it describes, and direct observation is declared rather than assumed.
+**CC-A3.3-6 (Observation relation).** Evidence use states how exact Work-side facts when present and separately identified work records, telemetry, measurements, observation records, or source records become observed coordinates. Direct observation is declared rather than assumed.
 
 **CC-A3.3-7 (Constraints and applicability).** Constraints, invariants, operating region, approximation regime, parameter range, horizon, and scale window are stated before prediction or gate use.
 
@@ -256,25 +256,25 @@ Typical biases:
 
 **CC-A3.3-10 (Prediction use).** Predicted Coordinates used for comparison or gating state the exact model edition, domain, horizon, currentness, error or uncertainty, and every observation, validation, sensitivity, stability, or normalization-composition condition required by that consumer's policy. No universal non-expansiveness or commutation test substitutes for the direct decision rule.
 
-**CC-A3.3-11 (Temporal boundary).** Positive temporal aspects stay with `C.27.TA`; temporal-claim adequacy, freshness-use, delay-use, rhythm-use, inertia-use, and currentness-use claims stay with `C.27`; reusable transition laws stay with `A.3.3`.
+**CC-A3.3-11 (Temporal boundary).** Positive temporal aspects stay with `C.27.TA`; adequacy or supported use of authored temporal claims stays with `C.27`; reusable transition laws stay with `A.3.3`.
 
 **CC-A3.3-12 (C.29 boundary).** Contested, cross-domain, learned, speculative, scale-changing, or transferable mathematical-lens use is assigned to `C.29`; `A.3.3` keeps the dynamics semantics.
 
 **CC-A3.3-13 (Source-label repair).** `Process`, `workflow`, `algorithm`, `model`, `controller`, `simulator`, and `dynamics` wording must not be repaired to `U.Dynamics` until the current slot is recovered: method, method description, work plan, dated work, selected transformation-flow structure, transition-law claim graph, evidence relation, or another governed value.
 
-**CC-A3.3-14 (Actual-transformation boundary).** Possible, predicted, simulated, or probable change remains claim content. An actual `U.Transformation` requires the exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification; dynamics and prediction supply no dated work, transformation participation, gate passage, release, permission, or other authority.
+**CC-A3.3-14 (Actual-transformation boundary).** Possible, predicted, simulated, or probable change remains claim content. An actual `U.Transformation` requires the exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification.
 
 ### A.3.3:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Repair |
 | --- | --- |
-| "The procedure is the dynamics." | Put the semantic way of doing in `U.Method`; identify the claim-bearing episteme that the procedure text represents as `U.MethodDescription` only when it passes A.3.2; keep representation and publication separate; and put the state-space/law episteme in `U.Dynamics`. |
-| "Telemetry is the dynamics." | Keep telemetry as a separately identified observation or source record `O`; include exact Work-side facts `W` only when Work is actually current, then derive `trace(W, O, D)` through the declared observation relation and compare it with the law. |
-| "The dashboard is our state space." | Recover characteristics, units, scales, comparability relations, operating region, and invariants. |
-| "The simulation approved the release." | Keep simulation as prediction; use `A.20`, `A.21`, `A.10`, or `B.3` for gate, evidence, and assurance claims. |
-| "The model works everywhere." | State the applicability window and lowering condition; use `C.27.TA` for currentness and `C.29` for transfer. |
-| "A workflow diagram proves the dynamics." | Recover whether the diagram describes a method, method description, work plan, dated work occurrence, selected transformation-flow structure, evidence relation, mechanism, or transition-law claim graph. |
-| "A learned predictor is the law." | State training domain, observation relation, uncertainty, error policy, and applicability window before using prediction. |
+| Inferring a transition law from procedural form alone | Put the semantic way of doing in `U.Method`; identify the claim-bearing episteme that the procedure text represents as `U.MethodDescription` only when it passes A.3.2; keep representation and publication separate; and put the state-space/law episteme in `U.Dynamics`. |
+| Telemetry used as a law without a declared state space and transition rule | Keep telemetry as a separately identified observation or source record `O`; include exact Work-side facts `W` only when Work is actually current, then derive `trace(W, O, D)` through the declared observation relation and compare it with the law. |
+| Using dashboard labels in place of declared state characteristics | Recover characteristics, units, scales, comparability relations, operating region, and invariants. |
+| Using a simulation result as release approval without the gate decision | Keep simulation as prediction; use `A.20`, `A.21`, `A.10`, or `B.3` for gate, evidence, and assurance claims. |
+| Using a model beyond its established applicability | State the applicability window and lowering condition; use `C.27.TA` for currentness and `C.29` for transfer. |
+| Inferring dynamics from a workflow diagram's layout alone | Recover whether the diagram describes a method, method description, work plan, dated work occurrence, selected transformation-flow structure, evidence relation, mechanism, or transition-law claim graph. |
+| Relying on a learned prediction without its domain and error conditions | State training domain, observation relation, uncertainty, error policy, and applicability window before using prediction. |
 
 ### A.3.3:9 - Consequences
 
@@ -282,24 +282,24 @@ Typical biases:
 | --- | --- |
 | Prediction, simulation, conformance, drift, and calibration claims become reviewable. | The project must name state-space characteristics and observation relations rather than relying on dashboard labels. |
 | Methods, method descriptions, mechanisms, work, flow structures, and dynamics stop substituting for each other. | Source labels like `process`, `workflow`, and `model` often need `E.10.ARCH` recovery before typed assignment. |
-| Gate and release use becomes safer because prediction needs freshness or a stated mathematical condition. | Some attractive predictions become inadmissible until observation or proof is supplied. |
+| Gate and release use becomes safer because prediction must satisfy the conditions specified for that use, including required freshness and mathematical conditions. | Some attractive predictions become inadmissible until observation or proof is supplied. |
 | Dynamics can cover physical, organizational, epistemic, software, architectural, and resource examples under one FPF kind. | Domain-specific laws still need their own notation, assumptions, and evidence disciplines. |
 | Mathematical-lens transfer is visible rather than hidden inside equations. | `C.29` may be needed when the dynamics model crosses contexts, scales, or representation regimes. |
 
 #### A.3.3:9.1 - Quick use cards
 
 * **Dynamics predicts.** It is a state-space and transition-law episteme.
-* **Work reveals.** Measurements, logs, and actuals belong to work, evidence, or source values.
-* **Method guides.** A method may use dynamics, but dynamics is not the method.
-* **State space first.** No state-space characteristics, no reviewable dynamics claim.
+* **Observations support comparison.** Compare predictions with separately identified measurements, logs, and actuals through the declared observation relation.
+* **Method guides.** A method may use dynamics.
+* **State space first.** Declare state-space characteristics to make the dynamics claim reviewable.
 * **Observation matters.** A law without observation relation cannot be compared with traces.
 * **Prediction is not authority.** Gate and release claims need their governing patterns.
 
 ### A.3.3:10 - Rationale
 
-FPF needs `U.Dynamics` because many practical questions are not about what an agent should do, but about how a state changes when the world evolves, a model is simulated, evidence arrives, a resource pool fluctuates, or an architecture changes. Those questions need a law of change, not a procedure, not a work log, and not a promise.
+FPF needs `U.Dynamics` for practical questions about how a state changes when the world evolves, a model is simulated, evidence arrives, a resource pool fluctuates, or an architecture changes. Those questions need a law of change.
 
-The pattern is deliberately broad because state-change reasoning appears in physics, control, software operations, reliability, strategy, architecture, and knowledge work. The shared kernel is not a universal notation. It is the distinction between state-space, transition law, observation relation, applicability window, and related governed claim families such as method, work, evidence, assurance, and gate use. An actual transformation remains a different world-side occurrence: its exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification are governed by `A.3.4`, not supplied by the dynamics episteme.
+The pattern is deliberately broad because state-change reasoning appears in physics, control, software operations, reliability, strategy, architecture, and knowledge work. The shared kernel is the distinction between state-space, transition law, observation relation, applicability window, and related governed claim families such as method, work, evidence, assurance, and gate use. An actual transformation remains a different world-side occurrence: its exact changed referent, temporal or formal boundary, boundary conditions, actual subject facts, and continuity or reidentification are governed by `A.3.4`.
 
 ### A.3.3:11 - SoTA-Echoing
 
@@ -318,7 +318,7 @@ Lower current use of this pattern when current work on process theory, predictiv
 * **Builds on:** `C.2.1` for the same episteme's identity and any exact empirical-grounding or edition relation; `A.19` and `C.16` for characteristics, units and measurement meanings when current; `A.2.6` for an exact `U.ClaimScope`; and direct source or publication machinery only when those claims are current.
 * **Coordinates with:** `A.3.1 U.Method`; `A.3.2 U.MethodDescription`; `B.1.5` for composite Method construction; `A.22` for an independently selected Structure; `A.1.1` only when an independently selected bounded-model-use structure or obtaining model-use relation changes the receiving use; `A.3.4 U.Transformation`; `A.15.2 U.WorkPlan`; `A.15.1 U.Work`; `A.6.1 U.Mechanism`; `E.20`; `C.27.TA`; `C.27`; `C.29`; `A.10`; `B.3`; `A.20`; `A.21`; and architecture patterns when dynamics describes architecture-characteristic change.
 * **Separates from:** services and promise content; PBS and SBS structural breakdowns; causal-use claims; gate authority; assurance arguments; publication-use claims.
-* **Uses for precision restoration:** `E.10`, `E.10.ARCH`, `F.18`, and `C.2.P.DR` when source labels hide whether the claim is law, method, method description, mechanism, work, evidence, authority, or dynamics.
+* **Uses for precision restoration:** `F.19` for a connected wording repair. If source labels still hide whether the claim is law, method, method description, mechanism, work, evidence, authority, or dynamics, use the applicable `E.10`, `E.10.ARCH`, or `C.2.P.DR` pattern; use `F.18` for a durable reusable name.
 
 ### A.3.3:End
 

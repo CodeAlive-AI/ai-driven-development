@@ -5,13 +5,13 @@
 
 - [E.1 - Vision & Mission: “Operating System for Thought”](01-e-1---vision-mission-operating-system-for-thought.md) (61 lines) — Modern engineering, science, and strategy all suffer from conceptual overload: dozens of domain tools, drifting vocabularies, and disconnected “best practices” splinter ideas as they travel from...
 - [E.2 - The Eleven Pillars](02-e-2---the-eleven-pillars.md) (124 lines) — Pattern E.1 set the FPF mission as an operating system for thought. To turn that mission into a durable architecture, FPF needs a small, explicit constitution - principles that remain stable while...
-- [E.2.DA - FPF Pillar-Adequacy Evaluation CharacteristicSpace](03-e-2-da---fpf-pillar-adequacy-evaluation-characteristicspace.md) (274 lines) — Use E.2.DA when the object under improvement is an FPF-level object and the question is whether it realizes the E.2 Pillars adequately for a declared use. The object can be a monolith edition,...
+- [E.2.DA - FPF Pillar-Adequacy Evaluation CharacteristicSpace](03-e-2-da---fpf-pillar-adequacy-evaluation-characteristicspace.md) (277 lines) — Use E.2.DA when the object under improvement is an FPF-level object and the question is whether it realizes the E.2 Pillars adequately for a declared use. The object can be a monolith edition,...
 - [E.3 - Principle Taxonomy & Precedence Model](04-e-3---principle-taxonomy-precedence-model.md) (154 lines) — Pattern E.2 supplies eleven immutable pillars, yet experience shows that a flat list of principles invites ambiguity: reviewers cannot decide which pillar overrules another  and “dead‑letter” rules...
-- [E.4 - FPF Ecosystem Family Architecture](05-e-4---fpf-ecosystem-family-architecture.md) (316 lines) — Type: Architectural (A)
-- [E.4.FPF - First Principles Framework Form and Publication-or-Access Carrier Assembly](06-e-4-fpf---first-principles-framework-form-and-publication-or.md) (257 lines) — Type: Architectural (A)
+- [E.4 - FPF Ecosystem Family Architecture](05-e-4---fpf-ecosystem-family-architecture.md) (315 lines) — Type: Architectural (A)
+- [E.4.FPF - First Principles Framework Form and Publication-or-Access Carrier Assembly](06-e-4-fpf---first-principles-framework-form-and-publication-or.md) (269 lines) — Type: Architectural (A)
 - [E.4.PFAD - Principle-Framework Architecture Decision](07-e-4-pfad---principle-framework-architecture-decision.md) (284 lines) — Type: Architectural (A)
-- [E.4.DPF - Domain Principle Framework Authoring and Publication-or-Access Carrier Assembly](08-e-4-dpf---domain-principle-framework-authoring-and-publicati.md) (635 lines) — Type: Architectural (A)
-- [E.4.DPF.DA - Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace](09-e-4-dpf-da---domain-principle-framework-package-adequacy-eva.md) (370 lines) — Normativity: Normative unless marked informative.
+- [E.4.DPF - Domain Principle Framework Authoring and Publication-or-Access Carrier Assembly](08-e-4-dpf---domain-principle-framework-authoring-and-publicati.md) (623 lines) — Type: Architectural (A)
+- [E.4.DPF.DA - Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace](09-e-4-dpf-da---domain-principle-framework-package-adequacy-eva.md) (374 lines) — Normativity: Normative unless marked informative.
 - [E.4.PFR - Pattern-Framework Relation and Edition Discipline](10-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (336 lines) — Type: Architectural (A)
 - [E.4.PFIP - Principle-Framework Publication Integration and Preservation](11-e-4-pfip---principle-framework-publication-integration-and-p.md) (250 lines) — Normativity: Normative unless explicitly marked informative
 - [E.5 - Four Guard‑Rails of FPF](12-e-5---four-guard-rails-of-fpf.md) (101 lines) — FPF positions itself as a timeless, universal “operating system for
@@ -21,15 +21,15 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](16-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the Specification](17-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
 - [E.7 - Archetypal Grounding Principle](18-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (661 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (663 lines) — Type: Architectural (A)
 - [E.8.ECSPF - FPF Pattern Publication Form for Evaluation Guidance](20-e-8-ecspf---fpf-pattern-publication-form-for-evaluation-guid.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](21-e-9---design-rationale-record-method.md) (360 lines) — Type: Governance and authoring pattern
-- [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](22-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (440 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
-- [E.10 - Unified Lexical Rules for FPF](23-e-10---unified-lexical-rules-for-fpf.md) (1522 lines) — Type: Part E lexical-governance pattern
-- [E.10.LRN - Recovering What “Learning” Means in the Current Claim](24-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (213 lines) — Type: lexical and ontological precision restoration (E)
-- [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](25-e-10-dev---recovering-what-development-or-evolution-means-in.md) (222 lines) — Type: Part E precision-restoration pattern
-- [E.10.MOVE - Move and Readiness Wording Precision Restoration](26-e-10-move---move-and-readiness-wording-precision-restoration.md) (338 lines) — Type: Part E precision-restoration pattern
-- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](27-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (445 lines) — Type: Architectural (E)
+- [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](22-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (442 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
+- [E.10 - Unified Lexical Rules for FPF](23-e-10---unified-lexical-rules-for-fpf.md) (1568 lines) — Type: Part E lexical-governance pattern
+- [E.10.LRN - Recovering What “Learning” Means in the Current Claim](24-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
+- [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](25-e-10-dev---recovering-what-development-or-evolution-means-in.md) (223 lines) — Type: Part E precision-restoration pattern
+- [E.10.MOVE - Move and Readiness Wording Precision Restoration](26-e-10-move---move-and-readiness-wording-precision-restoration.md) (344 lines) — Type: Part E precision-restoration pattern
+- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](27-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (439 lines) — Type: Architectural (E)
 - [E.10.ROLE - Recovering What “Role” Means in the Current Claim](28-e-10-role---recovering-what-role-means-in-the-current-claim.md) (180 lines) — Type: Lexical and ontological precision restoration (E)
 - [E.10.P - Conceptual Prefixes policy & registry](29-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Recovering What “Context” Means in Use](30-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
@@ -57,10 +57,10 @@
 - [E.18.1 - P2W Problem-to-Work Carry-Through](52-e-18-1---p2w-problem-to-work-carry-through.md) (560 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](53-e-18-2---transformation-flow-mathematical-description.md) (239 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](54-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (469 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
-- [E.18.NET - Network of Transformation-Flow Structures](55-e-18-net---network-of-transformation-flow-structures.md) (414 lines) — Tech-name: TransformationFlowStructureNetwork
-- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](56-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (807 lines) — Type: Architectural pattern
+- [E.18.NET - Network of Transformation-Flow Structures](55-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork
+- [E.19 - Pattern Quality Gates: Review and Refresh Profiles](56-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (791 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](57-e-20---mechanism-introduction-protocol.md) (403 lines) — Type: Architectural pattern
-- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](58-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (598 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
+- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](58-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (602 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](59-e-22---improvement-oriented-quality-evaluation-question-fram.md) (350 lines) — Use E.22 when someone is about to ask for a quality evaluation, quality review, returned-finding absorption, improvement proposal, or follow-up hypothesis over an object version named by value, and...
 - [E.23 - Quality Improvement Loop Method](60-e-23---quality-improvement-loop-method.md) (453 lines) — Type: Method-description pattern
 - [E.23.CDI - Developing Capability for a Named Work Family](61-e-23-cdi---developing-capability-for-a-named-work-family.md) (180 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod

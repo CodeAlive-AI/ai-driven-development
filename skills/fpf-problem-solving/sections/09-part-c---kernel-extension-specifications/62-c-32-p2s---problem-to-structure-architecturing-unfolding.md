@@ -179,7 +179,7 @@ When the P2S card must remain reusable across patterns for decision, description
 
 ```text
 P2SUnfoldingStructureBlock:
-  unfoldingStructureRef: current architecture-facing ConstraintGovernedUnfoldingStructure record
+  unfoldingStructureRef: U.StructureRef resolving to the selected CGUS or local architecture-facing structure block
   problemPressureRef: U.EpistemeRef resolving to a C.22.2 ProblemCard or another architecture-pressure episteme whose claim has been checked with the cited pattern
   selectedOrUnknownStructureRefs[]:
   architectureContentLoci[]:
@@ -196,18 +196,20 @@ P2SUnfoldingStructureBlock:
   actualStructureFeedbackRef?:
   e18TransformationFlowUnfoldingRefs[]?:
   descriptionRefs[]?:
-  nextReceivingAction: exact decision, description, Work, transformation, or feedback pattern when that claim is current
+  nextReceivingAction: next action supported by the problem-to-structure result; apply a decision, description, Work, transformation, production, or feedback pattern when its claim is current
   stopOrReturnCondition: reopen when the problem, constraints, candidate structure, or actual feedback changes
-  groundedArtifactConfusion?: exact currently observed confusion between this block and one named downstream artifact
+  blockedOverread?: include only when F.19's plausible-reader test justifies this exact blocked reading
 ```
 
-The block shows how problem pressure constrains candidate, selected, expected, or actual structures while keeping the next claim and its governing pattern visible. `unfoldingStructureRef` names the current CGUS record or local architecture-facing structure block; use the decision, description, Work, transformation, production, and feedback refs only when their direct predicates are current. Otherwise the block ends with the problem-to-structure result, next receiving action, and stop or return condition.
+The block is useful when the architecture work has to show how problem pressure constrains candidate, selected, expected, or actual structures without hiding the rule for the next claim or the pattern that contains it. `unfoldingStructureRef` names the selected CGUS or local architecture-facing `U.Structure` block. When a narrower-specialization relation is needed, name and test it under the pattern that defines its predicate; use A.6.RCD if that predicate is missing. `decisionLinkageRef` points to `C.32.PAD` only when a project architecture decision is current. `descriptionRefs[]` point to `C.30.AD`, `C.30.ASV`, `C.32.ADR`, `A.6.3.NAR`, or publication patterns only when a description, view, ADR projection, narrative rendering, or publication claim is current. `realizationWorkLinkageRef` points to the A.15-family work relation; use `A.3.4` for actual transformations. The Work-to-change fields keep the obtaining relation separate from the cited pattern or local claim used to check it. The three production-ref groups point only to separate local `A.15.PROD` claims. Establish any Work-authorization, performed-Work, or selected/expected-to-actual claim through its direct pattern. Otherwise stop with the problem-to-structure result, next receiving action, and stop or return condition.
+
+`groundedArtifactConfusion?` is an alias for the same optional `blockedOverread?` value.
 
 Use `e18TransformationFlowUnfoldingRefs[]` only for slices whose substrate is transformation-flow structure. P2S itself is broader: it can carry, for example, module, functional, placement, control, method, evidence, scale, and information structures through architecture synthesis and feedback. Any role-like source wording first resolves to the independently relevant local kind, classification judgment, assignment occurrence, direct-relation or representation position, function claim, organization position, responsibility or authority relation, or ordinary label; P2S has no generic role-structure carrier.
 
 #### C.32.P2S:4.2 - Architecture Unfolding Structure Use
 
-Use `ArchitectureUnfoldingStructureUse@Project` when a named constraint-governed unfolding structure is used as architecture-relevant structure inside problem-to-structure architecturing. This dependent record describes that use relation. Record any architecture decision, description, ADR projection, or realization Work through its direct pattern when that claim is current.
+Use `ArchitectureUnfoldingStructureUse@Project` when a named constraint-governed unfolding structure is being used as architecture-relevant structure inside problem-to-structure architecturing. This dependent architecture-use relation record is defined here; use it with the relevant C.30 or C.32 pattern. Record any architecture decision, description, ADR projection, or realization Work through its direct pattern when that claim is current.
 
 ```text
 ArchitectureUnfoldingStructureUse@Project:

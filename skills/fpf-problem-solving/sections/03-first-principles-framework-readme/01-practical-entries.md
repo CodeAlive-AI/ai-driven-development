@@ -170,9 +170,9 @@ The keys only help navigation. Compare cards by the situation and intended resul
 - **Situation:** A load-bearing sentence hides the subject, relation, kind, use, or nearby false inference.
 - **Question:** What should the reader understand and do, and which distinctions matter for that use?
 - **First useful result or honest blocker:** One plain repaired sentence, direct clarification, local naming result, or exact missing subject, sense, test, or reader use.
-- **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth or action; choose a durable name only when later use needs one; rewrite in plain technical language; test a cold reader and the nearest false inference; return to the domain task.
-- **Start with:** `E.10` and `F.19`; use `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
-- **Stop or return:** Stop when the reader can act without the false inference. Do not continue ontology work after the language problem is solved.
+- **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth, understanding, or action; choose a durable name only when later use needs one; rewrite in plain technical language; check the result with a cold reader; retain a guard only under F.19's full grounded-contribution test; return to the domain task.
+- **Start with:** `F.19`; use `E.10` for unresolved FPF wording, and `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
+- **Stop or return:** Stop when the reader can understand the claim and carry out its intended use. Do not continue ontology work after the language problem is solved.
 
 #### SOTA-PORTFOLIO — Move from a plural field to the cheapest useful result
 

@@ -1,7 +1,7 @@
 ## F.1 - Question-Relative Source Selection
 
 > **Type:** Architectural (A)
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 
 > **One-sentence summary.** Select the smallest inspectable set of exact sources whose claims, limits, rivals, or counterexamples can change one stated answer or use.

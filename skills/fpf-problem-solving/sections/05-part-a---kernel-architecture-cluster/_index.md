@@ -5,27 +5,27 @@
 
 - [A.0 - Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---onboarding-glossary.md) (248 lines) — One‑screen purpose (manager‑first). This pattern gives newcomers a plain‑language starter kit for FPF’s generative engine so they can run an admissible problem-solving or search loop on day one. It...
 - [A.1 - Holon Ontic Foundation (U.Holon and Admitted Holon Kinds)](02-a-1---holon-ontic-foundation.md) (361 lines) — Type: Part A architectural ontology pattern
-- [A.1.1 - Bounded Model-Use Structure and DDD Bounded-Context Recovery](03-a-1-1---bounded-model-use-structure-and-ddd-bounded-context.md) (437 lines) — Type: Part A architectural ontology pattern
+- [A.1.1 - Bounded Model-Use Structure and DDD Bounded-Context Recovery](03-a-1-1---bounded-model-use-structure-and-ddd-bounded-context.md) (438 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](04-a-1-scr---finding-the-acting-or-changed-system.md) (259 lines) — Type: Part A practitioner application pattern
 - [A.1.CSD - Discovering Systems That May Bear Consequences](05-a-1-csd---discovering-systems-that-may-bear-consequences.md) (267 lines) — Type: Part A practitioner discovery pattern
 - [A.1.STM - Using the System-Thinking Long Mantra](06-a-1-stm---using-the-system-thinking-long-mantra.md) (171 lines) — Type: Part A practitioner application pattern
-- [A.2 - System-Role Kinds and Assignments](07-a-2---system-role-kinds-and-assignments.md) (421 lines) — Type: Architectural (A)
+- [A.2 - System-Role Kinds and Assignments](07-a-2---system-role-kinds-and-assignments.md) (420 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](08-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (349 lines) — Type: Definitional (D)
-- [A.2.2 - U.Capability - System Ability Envelope and Measures](09-a-2-2---u-capability---system-ability-envelope-and-measures.md) (361 lines) — U.Capability is the FPF object for "can do within bounds".
+- [A.2.2 - U.Capability - System Ability Envelope and Measures](09-a-2-2---u-capability---system-ability-envelope-and-measures.md) (369 lines) — U.Capability is the FPF object for "can do within bounds".
 - [A.2.3 - U.PromiseContent (Promise Content)](10-a-2-3---u-promisecontent.md) (492 lines) — Type: Definitional promise-content episteme pattern
 - [A.2.4 - Episteme Evidence-Use and Status-Use Relations](11-a-2-4---episteme-evidence-use-and-status-use-relations.md) (283 lines) — Type: Boundary and relation-use pattern
 - [A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition and Work Admission](12-a-2-5---systemroleassignmentstaterelation---assignment-state.md) (351 lines) — Type: Definitional (D)
 - [A.2.6 - Unified Scope Mechanism (USM): Context Slices & Scopes](13-a-2-6---unified-scope-mechanism-context-slices-scopes.md) (939 lines) — U.ContextSlice and U.Scope are the durable USM values for scope work. U.ClaimScope, U.WorkScope, and U.PublicationScope are C.3-governed scope specializations under U.Scope, not independent root...
-- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds](14-a-2-7---systemrolekindrelationstructure---relations-among-sy.md) (498 lines) — Type: Architectural (A)
+- [A.2.7 - SystemRoleKindRelationStructure - Relations among System-Role Kinds](14-a-2-7---systemrolekindrelationstructure---relations-among-sy.md) (501 lines) — Type: Architectural (A)
 - [A.2.8 - U.Commitment (Deontic Commitment Relation)](15-a-2-8---u-commitment.md) (329 lines) — Type: Definitional ontic pattern
-- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](16-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (310 lines) — Type: Definitional ontic support pattern
-- [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](17-a-2-9-u-speechact.md) (405 lines) — Type: Definitional work-ontic pattern
+- [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](16-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (316 lines) — Type: Definitional ontic support pattern
+- [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](17-a-2-9-u-speechact.md) (401 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Constitution (Quartet)](18-a-3---transformer-constitution.md) (220 lines) — Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence, under which exact U.RoleAssignment, by enacting which U.Method, and which separately governed...
-- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](19-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (461 lines) — Type: Definitional pattern
+- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](19-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (459 lines) — Type: Definitional pattern
 - [A.3.1.MR - Candidate-Method Recovery from Work Evidence](20-a-3-1-mr---candidate-method-recovery-from-work-evidence.md) (206 lines) — Type: Architectural (A)
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](21-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (332 lines) — Type: Definitional pattern
 - [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](22-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (324 lines) — Type: Definitional pattern
-- [A.3.4 - U.Transformation: Bounded Change Under Conditions](23-a-3-4---u-transformation-bounded-change-under-conditions.md) (393 lines) — Type: Definitional pattern
+- [A.3.4 - U.Transformation: Bounded Change Under Conditions](23-a-3-4---u-transformation-bounded-change-under-conditions.md) (391 lines) — Type: Definitional pattern
 - [A.3.4.P - Transformation Ontic Precision Restoration](24-a-3-4-p---transformation-ontic-precision-restoration.md) (263 lines) — Type: A.3.4 precision-restoration child pattern
 - [A.4 - Temporal Duality & Open‑Ended Evolution Principle](25-a-4---temporal-duality-open-ended-evolution-principle.md) (128 lines) — “A holon is born in design‑time, lives in run‑time,
 - [A.5 - Open‑Ended Kernel & Extension Layering](26-a-5---open-ended-kernel-extension-layering.md) (49 lines) — Status. Transitional stub (informative). This section defines no dedicated “module” subsystem. Enforceable boundary discipline lives in A.6.0 U.Signature and A.6.1 U.Mechanism, with guard‑rails in...

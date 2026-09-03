@@ -1,7 +1,7 @@
 ## E.11.PFP - Framework Publication Form Profile
 
 > **Type:** Specialization of E.11
-> **Status:** Candidate
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative.
 
 ### E.11.PFP:1 - Problem frame

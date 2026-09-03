@@ -2,6 +2,8 @@
 
 > **Type:** lexical and ontological precision restoration (E)
 >
+> **Status:** Stable
+>
 > **Plain name:** recover what “learning” means here
 >
 > **Placement:** Part E, under `E.10` and `E.10.ARCH`
