@@ -1,7 +1,7 @@
 """Loopback-only selection + confirmation. Submit never authorizes deletion."""
 from __future__ import annotations
 
-import html
+import importlib.util
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 import os
@@ -17,73 +17,67 @@ from disk_safety import ASSETS, digest, read_json, write_json
 from disk_responses import review_selection, set_status
 
 
+def _renderer():
+    path = ASSETS / "render-cleanup-plan.py"
+    spec = importlib.util.spec_from_file_location("mac_health_cleanup_plan", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def page(plan, token):
-    rows = []
+    """Render the automatic incident through the skill's canonical plan UI."""
+    free, total = plan.get("free_bytes", 0), plan.get("total_bytes", 1)
+    grouped = {}
     for item in plan["items"]:
-        value = html.escape(item["id"], quote=True)
-        rows.append(f'<label class="item"><input type="checkbox" value="{value}">'
-                    f'<span><strong>{html.escape(item["label"])}</strong>'
-                    f'<small>{html.escape(item["path"])}</small>'
-                    f'<p>{html.escape(item["description"])}</p>'
-                    f'<small>{html.escape(item["warning"])} · {item["age_days"]} days old</small></span>'
-                    f'<b>{item["size_bytes"] / 1024**3:.2f} GiB</b></label>')
-    document = '''<!doctype html><html lang="en"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Disk cleanup review</title><style>
-body{font:16px system-ui;background:#f5f4f0;color:#202922;max-width:1000px;margin:40px auto;padding:0 24px}
-h1{font-size:36px;margin-bottom:12px}p{line-height:1.5}.item{display:flex;gap:18px;padding:20px 0;border-top:1px solid #ccd0c9}
-.item span{flex:1;min-width:0}small{display:block;overflow-wrap:anywhere;color:#58605a;margin:6px 0}
-input{width:20px;height:20px}button{font:inherit;padding:12px 18px;margin:8px 8px 8px 0;cursor:pointer}
-#confirm{background:#84322e;color:white;border:0}#summary{white-space:pre-wrap;background:white;padding:20px}
-.note{border-left:4px solid #aa7c2e;padding-left:16px}#state{font-weight:600}button:disabled{opacity:.5;cursor:default}
-</style><h1>Review disk cleanup</h1><p class="note">Nothing is selected by default. Submit sends your selection for review; it does not delete files.
-Only the later “Confirm permanent deletion” button authorizes deletion. Unchecked files will be preserved.</p>
-<p>Scope: package download caches and old installer/archive files directly in Downloads. This is not a full-disk audit.</p>
-<p id="state" role="status">Awaiting selection</p><div id="summary">__SUMMARY__</div>
-<section id="items">__ITEMS__</section><p id="total">0 selected</p>
-<button id="submit">Submit selection for review</button><button id="cancel">Cancel</button>
-<button id="confirm" hidden>Confirm permanent deletion</button>
+        root = item.get("root", "Other")
+        grouped.setdefault(root, []).append(item)
+    categories = []
+    for root, items in grouped.items():
+        downloads = root == "Downloads"
+        audit = root == "Storage audit"
+        categories.append({
+            "id": "storage-audit" if audit else ("downloads" if downloads else "safe-package-caches"),
+            "title": "Storage map (read-only)" if audit else ("Protected downloads" if downloads else "Regenerable package caches"),
+            "subtitle": ("Largest folders found by the skill; open them for a deeper manual plan."
+                         if audit else ("Shown for context only; automatic deletion is disabled for possible unique data."
+                         if downloads else "Controller-verified files removed one at a time through Mole.")),
+            "tier": "P" if downloads or audit else "1-3",
+            "default_open": True,
+            "items": [{**item, "kind": "archive" if downloads else "cache",
+                       "protected": downloads or audit,
+                       "selectable": item.get("operation") == "mole-remove-file" and not downloads,
+                       "default_selected": False} for item in items],
+        })
+    data = {"baseline": {"container_free_gb": free / 1024**3,
+                           "container_total_gb": total / 1024**3,
+                           "container_used_gb": (total-free) / 1024**3},
+            "categories": categories}
+    document = _renderer().render_html(data)
+    safe_token = json.dumps(token).replace("<", "\\u003c")
+    document = document.replace("const allItems =", f"const CLEANUP_TOKEN = {safe_token};\n    const allItems =")
+    document = document.replace("headers: { 'Content-Type': 'application/json' }",
+        "headers: { 'Content-Type': 'application/json', 'X-Cleanup-Token': CLEANUP_TOKEN }")
+    document = document.replace("await fetch('/cancel', { method: 'POST' })",
+        "await fetch('/cancel', { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Cleanup-Token': CLEANUP_TOKEN }, body: '{}' })")
+    controls = '''<button id="confirm-automatic" class="primary" type="button" hidden>Confirm permanent deletion</button>
 <script>
-const token=__TOKEN__, checkboxes=[...document.querySelectorAll('input[type=checkbox]')];
-const sizes=__SIZES__; let status='awaiting_selection';
-function selected(){return checkboxes.filter(x=>x.checked).map(x=>x.value)}
-function totals(){const ids=selected();document.querySelector('#total').textContent=
-  ids.length+' selected · '+(ids.reduce((s,id)=>s+sizes[id],0)/1024**3).toFixed(2)+' GiB';}
-checkboxes.forEach(x=>x.addEventListener('change',totals));
-async function request(action,payload={}){
- const response=await fetch('/'+action,{method:'POST',headers:{'Content-Type':'application/json','X-Cleanup-Token':token},body:JSON.stringify(payload)});
- const body=await response.json(); if(!response.ok)throw Error(body.error||response.status);return body;
+const confirmAutomatic=document.getElementById('confirm-automatic');
+document.querySelector('#done-screen').appendChild(confirmAutomatic);
+async function automaticStatus(){
+ const response=await fetch('/status',{headers:{'X-Cleanup-Token':CLEANUP_TOKEN}});const data=await response.json();
+ const title=document.querySelector('#done-screen h2'),summary=document.querySelector('#done-summary');
+ if(data.status==='reviewing'){title.textContent='Agent reviewing selection…';summary.textContent='The same Codex session is checking the exact selection.'}
+ if(data.status==='awaiting_confirmation'){title.textContent='Review complete';summary.textContent=data.review||'Review the exact selection before deletion.';confirmAutomatic.hidden=false}
+ if(['completed','partial'].includes(data.status)){title.textContent='Cleanup complete';summary.textContent=data.review||'Only the confirmed files were processed.';confirmAutomatic.hidden=true}
+ if(['failed','expired','cancelled'].includes(data.status)){title.textContent=data.status;summary.textContent=data.error||'No further action will run.';confirmAutomatic.hidden=true}
 }
-function error(e){document.querySelector('#state').textContent=e.message}
-document.querySelector('#submit').onclick=async()=>{
- const ids=selected();if(!ids.length)return;document.querySelector('#submit').disabled=true;
- try{await request('submit',{selected_ids:ids});await refresh()}catch(e){error(e);document.querySelector('#submit').disabled=false;}
-};
-document.querySelector('#cancel').onclick=async()=>{try{await request('cancel');await refresh()}catch(e){error(e)}};
-document.querySelector('#confirm').onclick=async()=>{
- if(!window.confirm('Permanently delete ONLY the selected files? This cannot be undone.'))return;
- document.querySelector('#confirm').disabled=true;
- try{await request('confirm');await refresh()}catch(e){error(e)}
-};
-async function refresh(){
- const response=await fetch('/status',{headers:{'X-Cleanup-Token':token}}); const data=await response.json();
- if(!response.ok)throw Error(data.error||response.status);
- status=data.status;document.querySelector('#state').textContent=status+(data.error?' — '+data.error:'');
- if(data.review)document.querySelector('#summary').textContent=data.review;
- if(data.selected_ids){checkboxes.forEach(x=>x.checked=data.selected_ids.includes(x.value));totals()}
- checkboxes.forEach(x=>x.disabled=status!=='awaiting_selection');
- document.querySelector('#submit').disabled=status!=='awaiting_selection';
- document.querySelector('#confirm').hidden=status!=='awaiting_confirmation';
- document.querySelector('#cancel').disabled=['applying','completed','cancelled','failed','expired'].includes(status);
- if(data.before&&data.after)document.querySelector('#summary').textContent+='\\nMeasured free space: '+
- (data.before[0]/1024**3).toFixed(2)+' → '+(data.after[0]/1024**3).toFixed(2)+' GiB';
-}
-setInterval(()=>refresh().catch(error),1500);refresh().catch(error);
-</script></html>'''
-    # JSON cannot break out of the script element, even with hostile filenames.
-    return document.replace("__SUMMARY__", html.escape(plan["summary"])).replace("__ITEMS__", "".join(rows)).replace(
-        "__TOKEN__", json.dumps(token)).replace("__SIZES__", json.dumps({row["id"]: row["size_bytes"]
-        for row in plan["items"]}).replace("<", "\\u003c"))
+confirmAutomatic.onclick=async()=>{if(!confirm('Permanently delete ONLY the selected files? This cannot be undone.'))return;
+ confirmAutomatic.disabled=true;const response=await fetch('/confirm',{method:'POST',headers:{'Content-Type':'application/json','X-Cleanup-Token':CLEANUP_TOKEN},body:'{}'});
+ if(!response.ok){confirmAutomatic.disabled=false;throw Error('Confirmation failed')}await automaticStatus()};
+setInterval(()=>automaticStatus().catch(()=>{}),1500);
+</script>'''
+    return document.replace("</body>", controls + "</body>")
 
 
 class ReviewServer(ThreadingHTTPServer):
@@ -192,13 +186,16 @@ class Handler(BaseHTTPRequestHandler):
             raise ValueError("plan expired; rescan before applying")
         status = read_json(incident / "status.json")["status"]
         if self.path == "/submit":
-            if set(payload) != {"selected_ids"}:
-                raise ValueError("only selected_ids accepted")
+            if set(payload) not in ({"selected_ids"}, {"selected_ids", "protected_overrides", "totals"}):
+                raise ValueError("unexpected selection fields")
             ids = payload["selected_ids"]
             indexed = {row["id"]: row for row in self.server.plan["items"]}
             if (not isinstance(ids, list) or not ids or any(not isinstance(i, str) for i in ids)
                     or len(set(ids)) != len(ids) or any(i not in indexed for i in ids)):
                 raise ValueError("unknown/duplicate/empty selected IDs")
+            if any(indexed[i].get("operation") != "mole-remove-file"
+                   or indexed[i].get("root") == "Downloads" for i in ids):
+                raise ValueError("informational/protected items cannot be selected in automatic mode")
             if (incident / "selection.json").exists():
                 if read_json(incident / "selection.json")["selected_ids"] != ids:
                     raise ValueError("a different selection was already submitted")

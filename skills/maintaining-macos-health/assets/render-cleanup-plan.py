@@ -133,6 +133,7 @@ def render_html(data: dict[str, Any]) -> str:
             kind = html.escape(item.get("kind", ""))
             command = item.get("command")
             protected = bool(item.get("protected", False))
+            selectable = bool(item.get("selectable", True))
             warning = item.get("warning")
             default_selected = bool(item.get("default_selected", not protected))
 
@@ -147,7 +148,8 @@ def render_html(data: dict[str, Any]) -> str:
             row_classes = ["item-row"]
             if protected:
                 row_classes.append("protected")
-            checked = "checked" if default_selected else ""
+            checked = "checked" if default_selected and selectable else ""
+            disabled = "" if selectable else "disabled"
             data_attrs = (
                 f'data-id="{item_id}" '
                 f'data-size="{size_bytes}" '
@@ -182,7 +184,7 @@ def render_html(data: dict[str, Any]) -> str:
             items_html.append(
                 f'''
                 <label class="{' '.join(row_classes)}" data-tooltip="{tooltip_attr}"{warning_attr}>
-                  <input type="checkbox" class="item-cb" {checked} {data_attrs}>
+                  <input type="checkbox" class="item-cb" {checked} {disabled} {data_attrs}>
                   <span class="size {sz_cls}">{sz_label}</span>
                   <span class="age">{age_label}</span>
                   <span class="kind">{kind}</span>

@@ -12,6 +12,7 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import stat
 import subprocess
 import tempfile
@@ -153,6 +154,52 @@ def inventory(home, allow_downloads=False, limit=2000, seconds=30):
                 except (ValueError, OSError):
                     continue
     return rows, truncated
+
+
+def skill_audit(home):
+    """Run Workflow A's fixed read-only scans without giving the model a shell."""
+    home = Path(home)
+    reports = {}
+    approved = ["Desktop", "Documents", "Downloads", "Movies", "Music", "Pictures",
+                "Library/Caches", "Library/Application Support", "Library/Developer",
+                "Library/Containers", ".cache", ".local/share", "my-projects",
+                "Projects", "Developer", "Code", "Workspace", "Repos"]
+    rows = []
+    paths = [home / relative for relative in approved
+             if (home / relative).exists() and not (home / relative).is_symlink()]
+    try:
+        if not paths:
+            raise ValueError("no approved audit paths exist")
+        result = subprocess.run(["/usr/bin/du", "-sk", *map(str, paths)], capture_output=True,
+                                text=True, timeout=120, env={"PATH": "/usr/bin:/bin"})
+        for line in result.stdout.splitlines():
+            blocks, raw_path = line.split(maxsplit=1)
+            path, size = Path(raw_path), int(blocks) * 1024
+            relative = str(path.relative_to(home))
+            rows.append({"id": digest(["audit", str(path), size])[:24], "path": str(path),
+                         "size_bytes": size, "age_days": None, "root": "Storage audit",
+                         "label": relative, "operation": "informational", "protected": True,
+                         "selectable": False, "default_selected": False,
+                         "description": "Aggregate folder size from the skill's read-only du audit.",
+                         "warning": "Informational only; inspect contents before any cleanup."})
+    except (OSError, subprocess.SubprocessError, ValueError):
+        pass
+
+    def capture(name, command, timeout):
+        try:
+            result = subprocess.run(command, capture_output=True, text=True, timeout=timeout,
+                                    stdin=subprocess.DEVNULL)
+            reports[name] = {"command": command, "returncode": result.returncode,
+                             "output": (result.stdout + "\n" + result.stderr)[-30000:]}
+        except (OSError, subprocess.SubprocessError) as exc:
+            reports[name] = {"command": command, "error": str(exc)}
+
+    capture("mole_clean_dry_run", ["/opt/homebrew/bin/mo", "clean", "--dry-run"], 180)
+    capture("mole_purge_dry_run", ["/opt/homebrew/bin/mo", "purge", "--dry-run", "--debug"], 300)
+    docker = shutil.which("docker")
+    if docker:
+        capture("docker_system_df", [docker, "system", "df", "-v"], 45)
+    return rows, reports
 
 
 def package_tools_idle():

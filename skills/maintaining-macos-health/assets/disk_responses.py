@@ -14,7 +14,7 @@ import time
 import uuid
 
 from disk_safety import (ASSETS, PROFILE, PROFILE_HASH, Mole, candidate, digest,
-                         inventory, measure, no_links, private_dir, read_json,
+                         inventory, skill_audit, measure, no_links, private_dir, read_json,
                          remove_files, write_json)
 from disk_agent import capabilities, run_codex
 
@@ -185,8 +185,11 @@ def run_worker(context, mode, incident_id):
             return
         set_status(incident, "scanning")
         rows, truncated = inventory(context.home, allow_downloads=True, limit=250)
+        audit_rows, reports = skill_audit(context.home)
+        rows.extend(audit_rows)
         payload = {"free_bytes": free, "total_bytes": total, "items": rows,
-                   "truncated": truncated, "scope": "Package caches and top-level Downloads archives only"}
+                   "truncated": truncated, "scope": "Workflow A read-only audit",
+                   "reports": reports}
         write_json(incident / "inventory.json", payload)
         answer, session_id = run_codex(settings, incident, "scan", payload)
         descriptions = {item["id"]: item["description"] for item in answer["items"]}

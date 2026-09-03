@@ -1,6 +1,6 @@
 ---
 name: maintaining-macos-health
-version: 1.3.0
+version: 1.3.1
 description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a process persistently burns CPU, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory/CPU alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, or broken app installs.
 ---
 
@@ -75,7 +75,7 @@ On the first **operational, interactive** use on a Mac (including an existing in
 
 Record each explicit answer independently; silence, a generic "set up monitoring", or approval of one option does not authorize the other. Keep declined choices across sessions and upgrades. Ask again only on user request, a new machine, or a material change to the consent scope. Existing monitoring continues without either option.
 
-**Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with a local browser page. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Planning adds old installer/archive files directly in Downloads; it is not a full-disk audit. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
+**Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with the same cleanup-plan UI used by Workflow A. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Automated planning runs Workflow A's fixed read-only `du`, Mole clean/purge preview, Docker inventory and Downloads audit. The automatic executor remains narrower: it can delete only controller-verified regenerable cache files; storage-map and possible user-data findings are visible but disabled and require a later interactive Workflow A session. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
 
 ### A. "Free space NOW" (incident response)
 

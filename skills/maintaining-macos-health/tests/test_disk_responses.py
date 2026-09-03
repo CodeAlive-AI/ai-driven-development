@@ -352,7 +352,16 @@ class ReviewTests(Fixture):
         self.plan["items"][0]["label"] = '</script><script>alert(1)</script>'
         document = page(self.plan, self.server.token)
         self.assertNotIn('</script><script>alert(1)', document)
-        self.assertNotIn(' checked', document)
+        self.assertNotRegex(document, r'<input[^>]+\\schecked(?:\\s|>)')
+        self.assertIn('macOS cleanup plan', document)
+        self.assertNotIn('Scope: package download caches', document)
+
+    def test_downloads_are_visible_but_not_selectable_in_automatic_ui(self):
+        self.plan.update(free_bytes=5, total_bytes=100)
+        self.plan["items"][0]["root"] = "Downloads"
+        document = page(self.plan, self.server.token)
+        self.assertIn('Protected downloads', document)
+        self.assertIn('disabled', document)
 
     def test_confirmation_hash_and_unchecked_item_survives_real_pipeline(self):
         selection = {"format_version": 2, "plan_sha256": digest(self.plan),
