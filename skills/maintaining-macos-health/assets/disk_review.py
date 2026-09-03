@@ -49,7 +49,8 @@ def page(plan, token):
                        "selectable": item.get("operation") == "mole-remove-file" and not downloads,
                        "default_selected": False} for item in items],
         })
-    data = {"baseline": {"container_free_gb": free / 1024**3,
+    data = {"summary": plan.get("summary", ""),
+            "baseline": {"container_free_gb": free / 1024**3,
                            "container_total_gb": total / 1024**3,
                            "container_used_gb": (total-free) / 1024**3},
             "categories": categories}

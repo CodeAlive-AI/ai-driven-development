@@ -354,6 +354,8 @@ class ReviewTests(Fixture):
         self.assertNotIn('</script><script>alert(1)', document)
         self.assertNotRegex(document, r'<input[^>]+\\schecked(?:\\s|>)')
         self.assertIn('macOS cleanup plan', document)
+        self.assertIn('Agent assessment', document)
+        self.assertIn('Review these fixture files', document)
         self.assertNotIn('Scope: package download caches', document)
 
     def test_downloads_are_visible_but_not_selectable_in_automatic_ui(self):

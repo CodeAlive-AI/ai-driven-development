@@ -236,6 +236,9 @@ def render_html(data: dict[str, Any]) -> str:
     categories_html = "\n".join(categories_html_parts)
     total_candidates_label = human_size(total_candidates_bytes)
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    summary = data.get("summary")
+    summary_html = (f'<section class="plan-summary"><strong>Agent assessment</strong>'
+                    f'<p>{html.escape(summary)}</p></section>') if summary else ""
 
     container_free_bytes = int((container_free_gb or 0) * (1024 ** 3))
     container_total_bytes = int((container_total_gb or 0) * (1024 ** 3))
@@ -249,6 +252,7 @@ def render_html(data: dict[str, Any]) -> str:
         total_candidates_label=total_candidates_label,
         total_items_count=total_items_count,
         categories_html=categories_html,
+        summary_html=summary_html,
         generated_at=generated_at,
     )
 
@@ -328,6 +332,11 @@ HTML_TEMPLATE = r"""<!doctype html>
     }}
     header .meta strong {{ color: var(--fg); font-weight: 600; }}
     .container {{ max-width: 1100px; margin: 0 auto; padding: 24px; }}
+    .plan-summary {{
+      background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+      border-radius: 10px; margin-bottom: 18px; padding: 14px 18px; box-shadow: var(--shadow);
+    }}
+    .plan-summary p {{ margin: 6px 0 0; color: var(--muted); white-space: pre-wrap; }}
     .category {{
       background: var(--card);
       border: 1px solid var(--border);
@@ -782,6 +791,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   </header>
 
   <main class="container">
+    {summary_html}
     {categories_html}
   </main>
 
