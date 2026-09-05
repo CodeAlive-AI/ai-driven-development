@@ -75,7 +75,7 @@ FPF provides the default anchor ladder `F0...F9`. A context may define sub-ancho
 
 - Every normative episteme shall declare one `F` value.
 - Thresholds that depend on rigor should be written explicitly as `F >= Fk` conditions.
-- Any raise or lowering of `F` is a content change, not a status-only change.
+- Any actual raise or lowering of expression rigor is a content change, not a status-only change. Correcting an erroneous `F` attribution changes the assessment, not necessarily the assessed episteme.
 - `F` remains declaration and reasoning infrastructure; it is not itself a governance process.
 
 ### C.2.3:5 - Archetypal Grounding
@@ -100,7 +100,7 @@ The pattern biases FPF toward one explicit rigor characteristic and against stor
 - `CC-F-6` The episteme-level `F` of a composite episteme **SHALL** be bounded by the least-formal essential support on the relevant support path.
 - `CC-F-7` Implementations **MUST NOT** average `F` values numerically.
 - `CC-F-8` Changes in `G`, `R`, or `CL` **SHALL NOT** change `F` unless the expression form itself changes.
-- `CC-F-9` Cross-context transport **SHALL** preserve the attributed `F`; if the receiving context rewrites the claim materially, it becomes a new episteme with its own `F`.
+- `CC-F-9` Cross-context transport **SHALL** preserve the attributed `F` when formal content is preserved. If the receiving rewrite changes claim content, EntityOfConcern, or the effective reference scheme under `C.2.1`, the result is a new episteme with its own `F`.
 - `CC-F-10` Translation loss, bridge loss, and plane crossings **SHALL** affect `R` rather than being hidden as `F` changes.
 - `CC-F-11` Assigned `F` values **SHALL** be justifiable by observable content such as explicit predicates, executable semantics, or machine-checked proofs.
 - `CC-F-12` Declaring a tool or notation **SHALL NOT** by itself justify a higher `F` unless the content satisfies the target anchor semantics.
@@ -204,7 +204,7 @@ Higher-equality foundations are load-bearing. The expression relies on a frontie
    If yes, the expression is at least `F4`.
 3. **Does the expression have declared executable semantics?**
    If yes, it is likely in the `F5-F6` region.
-4. **Would a logic kernel or type checker reject an incorrect change to a core claim?**
+4. **Are proofs of the core claims checked by a logic kernel or a dependent type checker?**
    If yes, the expression is likely `F7-F8`, or `F9` if higher-equality machinery is essential.
 
 #### C.2.3:14.2 - Quick rubric
@@ -243,7 +243,7 @@ Higher `F` often makes evidence easier to formulate, test, or prove, but it does
 
 #### C.2.3:15.4 - Relation to `CL` and Bridges
 
-A bridge may expose loss or mismatch across contexts. Those losses affect `R`; they do not silently lower or raise the attributed `F`. If the receiving context must materially rewrite the claim, it should publish a new episteme with its own `F`.
+A bridge may expose loss or mismatch across contexts. Those losses affect `R`; they do not silently lower or raise the attributed `F`. A receiving rewrite that changes claim content, EntityOfConcern, or the effective reference scheme identifies a new episteme under `C.2.1`; that episteme should be published with its own `F`.
 
 ### C.2.3:16 - Worked Examples
 
@@ -302,7 +302,7 @@ This pattern supersedes deprecated wording that speaks about alternate formality
 
 #### C.2.3:19.2 - Migration guidance
 
-When refreshing legacy material, assign an initial `F` from observable content, rewrite local maturity labels into explicit `F` declarations, and keep provenance notes only as historical annotations rather than live rigor surrogates.
+When refreshing legacy material, assign an initial `F` from observable content, replace local maturity labels used as rigor surrogates with explicit `F` declarations, and keep provenance notes only as historical annotations rather than live rigor surrogates.
 
 #### C.2.3:19.3 - Boundary to language-state facets
 

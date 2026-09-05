@@ -1,6 +1,6 @@
 ## FPF As An Evolutionary Architecture For Thought
 
-A method of thinking is itself a system. It can be brittle, ad hoc, and dependent on the memory of a few people. Or it can be architected so that reasoning can grow, change, and remain reviewable.
+A team can organize its reasoning so that a changed model, new finding, or departing colleague leaves other useful results recoverable. Its participants, reusable Methods, shared descriptions, and actual Work each have a structure and a different way of changing. FPF helps the team keep those differences visible while improving the arrangement.
 
 FPF is an evolutionary architecture for thought. It is not a static inventory of concepts. It is an architecture of patterns, relations, checks, publication units, and improvement loops that can evolve as new problems, domains, AI tools, and state-of-the-art lines appear.
 

@@ -14,48 +14,13 @@
 
 **Not this pattern when.** If the direct relation and its participants are already clear, use its direct pattern. If *support* means evidence use, assurance, ordinary help, work enablement, navigation, source description, or another non-basedness reading, use that reading's direct pattern instead.
 
-**E.24.UK settlement.** A.6.6 admits neither `U.BaseDeclarationDiscipline` nor `U.ScopedWitnessedBaseDeclaration`. The retired `U.ScopedWitnessedBaseDeclaration` spelling must not be used as a kind or as a world-side relation occurrence. When a named receiver needs a reviewable scoped assertion, the phrase *scoped witnessed base declaration* denotes an optional representation of one C.2.1 assertion or description episteme. Its ClaimGraph states a separately governed direct relation and any current qualifiers; the record makes none of those facts obtain. An already admitted relation kind may separately have a reusable `RelationSignature` under A.6.0.
-**Status.** Normative (Core).
-
-**Placement.** Part A, cluster A.IV “Signature Stack & Boundary Discipline”; adjacent to A.6.5 relation-declaration slot discipline.
-
-**Depends on.**
-- A.6.0 `U.Signature` (universal signature carrier).
-- A.6.5 relation-declaration slot discipline (SlotKind, ValueKind, and RefKind stratification plus the slot-operation lexicon).
-- A.2.6 (Scope discipline; explicit `Γ_time`; implicit “latest/current” is forbidden).
-- A.2.4 evidence-use and status-use relation discipline for decision-relevant witness sets, including timespan, provenance, scope, polarity, and freshness constraints.
-- A.7 (Strict Distinction; EntityOfConcern vs Description-episteme and specification-use cases vs publication face, form, unit, carrier, and rendering lanes).
-- E.8 (pattern authoring order & SoTA discipline).
-- E.10 and E.10.D1 for wording-use recovery, with F.0.1 and F.17 for source-local meaning and its optional durable address.
-
-**Coordinates with.**
-- A.10 evidence-provenance and bounded-reliance discipline; its graph cites independently obtaining direct relations and admits no generic `verifiedBy` or `validatedBy` fallback edge.
-- A.14 per-edge constructive grounding (`tv:groundedBy`) and `validationMode` discipline.
-- C.2.1 episteme constitution through exact claim content, EntityOfConcern, and effective ReferenceScheme, plus the separately obtaining `EpistemeEmpiricalGroundingRelation` between an exact episteme and grounding holon.
-- A.6.3 `U.EpistemicViewing` (`EntityOfConcernRef`-preserving view operators; base-relative “how” without retargeting).
-- A.6.4 EntityOfConcern retargeting: one local arrow between exact epistemes with different EntitiesOfConcern, plus a separate use assertion for invariant, visible loss, bounded use, conditions, support, and polarity.
-- C.3.3 `U.KindBridge`, including the `CL^k` value declared for that bridge (explicit repair or translation when exact endpoint kinds differ; no silent re-typing).
-- E.18 assurance-operations on `U.Transfer` (`CalibrateTo`, `CiteEvidence`, `AttributeTo`, `ConstrainTo`, …).
-- F.9 only when the declaration consumes an obtaining Bridge between two exact F.17 local senses. Cite the Bridge and its separate bounded-use claim; `CL` is optional evidence shorthand. A ReferencePlane difference uses its applicable plane relation and does not create an F.9 Bridge.
-- F.15 F-Suite validation harness (carrier/source-currentness, provenance, and refresh governance).
-- F.18 naming governance (Tech/Plain twins and publication-lane naming boundaries).
-
-**Source phrases and red-flag cues (informative; not normative vocabulary).**
-- “anchoring / anchor” (source umbrella colloquial; a red-flag cue for *under-described dependence*). In Tech register, replace it with the ordinary sentence and relation-specific verb that name the actual participants and direct relation. Keep it only for an already reserved primitive (for example, E.10 MG-DA *Domain Anchoring*), or in quoted source text followed immediately by the direct rewrite.
-- “Qualified statement / attributed edge” (knowledge-graph colloquial).
-- “support / supported by / support basis / support relation” (ordinary umbrella support wording). Diagnostic for possible basedness only when the phrase asserts that a dependent content is admissible, usable, interpretable, comparable, publishable, or actionable relative to an explicit base. Otherwise classify the live reading and apply the governing ontology named by value: source-description, evidence, assurance, causal-use, mathematical-lens, work/resource, publication/navigation, or ordinary help.
-- “Pinning” (when witnesses are edition pins).
-
-**Mint-or-reuse note (informative).**
-A.6.6 mints no public kind. It reuses the direct relation kind and predicate selected for the claim. A reusable definition uses that relation kind's existing or newly justified A.6.0 `RelationSignature`; one scoped assertion remains a C.2.1 episteme. The local labels `declareBase`, `rebase`, `retime`, and related terms may classify edits to such an assertion or declaration when a named receiver needs that history. They neither make the world-side relation obtain nor require a record for an ordinary sentence.
-
 ### A.6.6:1 - Problem frame
 
 FPF repeatedly needs to express a family of situations of the form:
 
 > **A dependent content is admissible, usable, or interpretable only relative to an explicit base.**
 
-This family appears across disciplines:
+Examples occur across several disciplines:
 
 * reference selection and identification (IDs, handles, pointers, registries),
 * scale/datums/calibration (measurement traceability, baselines, normalisation),
@@ -64,12 +29,6 @@ This family appears across disciplines:
 * publication discipline (what a statement is fit to be used for, where, and when).
 
 In drafts, authors often reach for a single umbrella metaphor (frequently “anchor/anchoring”). That metaphor collapses **different ontological situations** and **different operation classes**, blocking precise invariants and making perspective-flips inevitable.
-
-> **Deconfliction note (lexical).** This pattern is about *base-dependence in content* (“X is usable relative to B”). It is not about E.10’s **Domain Anchoring** (MG-DA), where “anchoring” is a lexical primitive. In a basedness sentence, `anchor*` is a defect until the actual participants, relation-specific verb, and direct predicate are recoverable.
->
-> **Deconfliction note (source-local meaning).** This pattern is not a license to use “anchor” for a source, meaning, or the thing that supposedly makes a word mean something. Recover the exact source and edition, effective `ReferenceScheme`, local expression, local-sense claim, and exact supporting passage under F.0.1. Create an F.17 `SchemeSenseCell` or obtaining `LocalSenseBasisRelation` only when a later use needs that durable address or support claim. A small source note or Card may represent an already constituted episteme; its form supplies no meaning and is not a special base-declaration object.
->
-> **Deconfliction note (support wording).** This pattern constrains *support* only when the claim is base-dependence: one identified dependent is usable, admissible, interpretable, comparable, publishable, or actionable relative to one identified base through a named direct relation. Ordinary help, source discovery, reader navigation, work enablement, evidence use, assurance, causal use, mathematical-lens use, and publication companionship keep their own direct accounts. A support phrase that cannot select one reading remains a cue, not a declaration.
 
 Like A.6.5, this family can expose **typing conflicts across viewpoints**: an endpoint may be named by its self-kind while the selected direct relation expects another participant kind or reference mode. Make that mismatch explicit only when it is current; do not hide it by renaming ends or flipping direction. Use SlotSpecs only when a reusable relation declaration actually needs them.
 
@@ -149,7 +108,7 @@ Add a qualifier only when it changes the direct assertion or a named receiving u
 - name time when the predicate or the use is time-dependent;
 - cite an evidence-use or provenance relation when a claim about the relation is relied on;
 - open occurrence identity only when another claim must refer to the same occurrence, compare it, qualify it, or record its history; and
-- open a reusable declaration only when at least two named consumers need the same participant meanings, predicate, laws, and applicability.
+- open a reusable declaration only when the reuse test in A.6.6:4.3 is met.
 
 The assertion episteme, reusable declaration, world-side relation occurrence, evidence, and any Work remain different objects.
 
@@ -169,6 +128,8 @@ scoped witnessed base declaration :=
 ```
 
 This is a representation of claim content, not a public kind, `RelationSignature`, or world-side occurrence. `directRelationKind` resolves to an already governed relation kind; the assertion is true only when that relation's predicate is satisfied for the actual participants. `scope` and `gammaTime` are present only when the direct relation or named use needs them. `evidenceUseRefs`, when present, resolve to exact A.2.4 evidence-use relations for this assertion. The evidence epistemes, producing Work, operation result, carrier, provenance, currentness, and later reliance remain separately identified under A.2.4 and A.10.
+
+A.6.6 admits neither `U.BaseDeclarationDiscipline` nor `U.ScopedWitnessedBaseDeclaration`. The latter is a retired spelling and must not be used as a kind or as a world-side relation occurrence.
 
 The record's C.2.1 identity follows its complete ClaimGraph, exact EntityOfConcern, and effective ReferenceScheme. Revising the record changes an episteme. It does not by itself begin, end, or alter the world-side relation it describes.
 
@@ -263,14 +224,14 @@ When a draft uses an umbrella phrase (“anchored”, “attached”, “grounde
 | “Make measurements comparable” | **Calibration and datum** (`calibratedTo`, `datumOf`, `normalisedTo`) | instrument, model, or output | standard or datum | calibration work plus certificate pin |
 | “This result bears on that claim” | **Evidence use** under A.2.4, with A.10 only when replayable provenance or reliance is needed | result or other evidence episteme | target claim | exact evidence-use relation; producing Work, result binding, carrier, provenance, currentness, and reliance remain separate |
 | “This edge is grounded in construction” | **Constructive grounding** (`tv:groundedBy`) | WM edge | constructor trace (`Γ_m`) | trace pins, edition pins |
-| “This description is about X under a view” | **Viewing / retargeting (specialised)** (`viewedVia`, `retargetedAlong`) | episteme/view | exact source and receiving episteme and EntityOfConcern values | viewing pins, or the exact A.6.4 arrow r and separate use assertion q |
+| “This description is about X under a view” | **Viewing / retargeting (specialised)** (`viewedVia`, `retargetedAlong`) | episteme/view | exact source and receiving episteme and EntityOfConcern values | viewing pins, or the exact A.6.4 arrow `r`, bounded-use assertion `q`, and separate current-case judgement when that case is evaluated |
 | “Allowed only under policy P” | **Constraint / policy** (`constrainedBy`, `permittedUnder`) | work-step / publication item | policy/rule | policy pin, waiver/work ref |
 | “Property belongs to object” | **Attribution / aboutness** (`attributedTo`, `aboutEntity`, `characterises`) | property/abstraction | object | observation/derivation witnesses |
 | “This expression means … in this source” | **Source-local meaning lane** (F.0.1; F.17 only when a durable address or basis relation is needed) | local expression | local-sense claim | exact source passage and, when current, an obtaining basis relation |
 
 This table is illustrative. Each row keeps its own direct relation and governor; it is not a list of species of one universal base relation or record. The meaning row remains only a do-not-model-as-basedness reminder.
 
-*Note.* A.6.3 and A.6.4 define the viewing or retargeting arrow and any separate use claim. This table only classifies their references as relative-to-base cases; it defines no second operator, arrow, application, or use assertion.
+*Note.* A.6.3 defines the viewing arrow. A.6.4 keeps the retargeting arrow `r`, bounded-use assertion `q`, and current-case judgement separate: `q`'s ClaimGraph contains the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity; the judgement compares exact facts with `q` and returns exactly `satisfies`, `fails`, or `cannot decide`. A `cannot decide` judgement names the missing fact and reopen condition. This table only classifies their references as relative-to-base cases; it defines no second operator, arrow, assertion, judgement, application, or Work.
 
 #### A.6.6:4.7a - Support wording selection test
 
@@ -359,11 +320,11 @@ The exact trace reference names the relevant constructor trace. If another use r
 
 ### A.6.6:7 - Conformance Checklist
 
-A carrier conforms to A.6.6 when the checks relevant to its actual use pass:
+An A.6.6 use conforms when the checks for its selected branch pass:
 
 1. **CC-BD-1 - Direct assertion first.** The actual dependent, base, direct relation, and readable affirmative or negative assertion are recoverable. The direct pattern supplies the predicate; a record or label does not.
 2. **CC-BD-2 - Ordinary stop.** If that assertion answers the receiving question, no SlotSpecs, declaration record, witnesses, edition, occurrence identity, or assurance package is required.
-3. **CC-BD-3 - Reusable declaration is demand-driven.** A `RelationSignature` appears only for an already admitted relation kind and at least two named consumers of the same participant meanings, predicate, laws, and applicability.
+3. **CC-BD-3 - Reusable declaration is demand-driven.** A `RelationSignature` satisfies the reuse test in A.6.6:4.3 and applies only to an already admitted relation kind.
 4. **CC-BD-4 - Assertion and occurrence stay separate.** A scoped witnessed record, when used, is a C.2.1 assertion or description episteme. It neither is nor creates the world-side relation occurrence.
 5. **CC-BD-5 - Qualifiers are local.** Scope and time are explicit when the selected predicate or named receiving use depends on them; they are not a universal field kit. `Gamma_time` is not used as a proxy for evidence freshness.
 6. **CC-BD-6 - Evidence ontology is direct.** Evidence use follows A.2.4 and A.10. Work, operation result, result episteme, carrier, provenance, evidence-use relation, and reliance remain separate; no generic `verifiedBy` or `validatedBy` edge is minted.
@@ -449,6 +410,8 @@ Without explicit change classes, prose collapses distinct edits (rebase vs retim
 
 ### A.6.6:12 - Relations
 
+**Placement.** Part A, cluster A.IV “Signature Stack & Boundary Discipline”; adjacent to A.6.5 relation-declaration slot discipline.
+
 **Specialises A.6.P Relational Precision Restoration.** A.6.6 handles basedness wording by recovering the actual dependent, base, and direct relation, then stopping or opening only the additional object required by a named use.
 
 **Builds on A.6.REL and `A.6.0`.** The direct pattern supplies relation obtaining and occurrence identity. A reusable `RelationSignature` is justified only for an already admitted relation kind and shared declaration content; it creates no occurrence.
@@ -459,11 +422,17 @@ Without explicit change classes, prose collapses distinct edits (rebase vs retim
 
 **Coordinates with A.14 and C.2.1.** Constructive grounding and empirical grounding retain their exact direct predicates and participants. Their assertion epistemes and evidence remain separate from the world-side relations.
 
-**Coordinates with A.6.3 and `A.6.4`.** Viewing and retargeting arrows, any use assertion, operation application, and Work remain distinct. A.6.6 adds no second arrow or universal relative-to object.
+**Coordinates with A.6.3 and `A.6.4`.** The A.6.3 viewing arrow remains distinct. In A.6.4, the retargeting arrow `r`, bounded-use assertion `q`, current-case judgement, operation application, and Work remain distinct. A.6.6 adds no second arrow or universal relative-to object.
 
 **Coordinates with F.9 and ReferencePlane rules conditionally.** F.9 applies only to an obtaining Bridge between two exact F.17 cells and keeps its bounded-use claim separate. A ReferencePlane crossing uses its applicable plane relation. If both are current, state both; if only one is current, introduce no object from the other branch.
 
-**Feeds E.10 and F.18 lexical governance.** Umbrella words trigger recovery of the direct relation. Ordinary relation-specific prose remains valid; notation and durable public names are added only for a named use.
+**Coordinates with A.2.6, A.7, and E.24.UK:** A.2.6 governs scope and explicit `Γ_time`; implicit “latest/current” remains inadmissible. A.7 keeps EntityOfConcern, Description-episteme, specification use, and publication face, form, unit, carrier, and rendering distinct. E.24.UK supplies the kind-admission boundary applied in A.6.6:4.1.
+
+**Coordinates with C.3.3 and E.18.** C.3.3 supplies `U.KindBridge`, including its declared `CL^k`, when exact endpoint kinds differ; no silent re-typing follows. E.18 retains the meanings of its assurance operations on `U.Transfer`, including `CalibrateTo`, `CiteEvidence`, `AttributeTo`, and `ConstrainTo`; A.6.6's declaration-change labels do not replace them.
+
+**Coordinates with E.8, F.0.1, F.15, and F.17:** E.8 governs pattern-authoring order and SoTA discipline. F.0.1 recovers exact source-local meaning; F.17 supplies an optional durable sense address or basis relation. F.15 supplies the carrier/source-currentness, provenance, and refresh validation harness when that validation is current.
+
+**Feeds E.10, E.10.D1, and F.18 lexical governance.** Umbrella words trigger recovery of the direct relation. Ordinary relation-specific prose remains valid; notation and durable public names are added only for a named use.
 
 ### A.6.6:End
 

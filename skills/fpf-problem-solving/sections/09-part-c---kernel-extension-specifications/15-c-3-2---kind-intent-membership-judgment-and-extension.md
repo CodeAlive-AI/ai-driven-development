@@ -22,7 +22,7 @@ Use this pattern when repeated typed reasoning needs one explicit kind criterion
 
 A kind can support useful typed reasoning without acquiring its own public `U.*` label. Its intent may need a reusable declaration, one candidate may need a current judgment, and a query may need a set representation. These are different objects. Before a judgment exists, the candidate must satisfy the declared candidate `ValueKind` and the slice must lie within declared applicability. Once admissible, the governed condition named by the criterion settles `true` or `false` when known; missing support or an unavailable dependency yields `unknown`.
 
-The rule about evidence is conditional, not lexical. An observation used merely to support a claim does not create an independently governed quality or relation. But a criterion may directly concern an episteme, an obtaining registration or certification relation, a publication occurrence, legal status, or another governed fact. In that case its direct pattern decides whether that very condition obtains; calling the same object evidence in another use does not erase its criterion role. This concept-level rule requires no particular ontology language, schema technology, rule engine, or programming type system.
+The rule about evidence is conditional, not lexical. An observation used merely to support a claim does not create an independently governed quality or relation. But a criterion may directly concern an episteme, an obtaining registration or certification relation, a publication occurrence, legal status, or another governed fact. In that case, determine whether that very condition obtains under its direct pattern; calling the same object evidence in another use does not erase its criterion role. This concept-level rule requires no particular ontology language, schema technology, rule engine, or programming type system.
 
 ### C.3.2:2 - Problem
 
@@ -66,7 +66,7 @@ Author a reusable `KindSignature` only when a named receiving use needs the crit
 - its `U.Formality`; and
 - an optional `ExtentRule` for a named extension-consuming use.
 
-In A.6.0 terms, `SubjectKind` is the broad candidate kind and `RangedValueKind` is `{true, false, unknown}`. `not-applicable` is returned before this ranged evaluation. `ExtentRule` is declaration content, not a new ontic relation. Formality characterizes the declaration episteme, not the kind, candidate, truth, or extension. A changed membership condition, candidate-domain declaration, `EntityOfConcern`, applicability, or effective scheme identifies another signature edition; C.3.1 separately decides kind continuity.
+In A.6.0 terms, `SubjectKind` is the broad candidate kind and `RangedValueKind` is `{true, false, unknown}`. `not-applicable` is returned before this ranged evaluation. `ExtentRule` is declaration content, not a new ontic relation. Formality characterizes the declaration episteme, not the kind, candidate, truth, or extension. A changed membership condition, candidate-domain declaration, `EntityOfConcern`, applicability, or effective scheme identifies another episteme. Recheck its signature membership under A.6.0 and its `KindSignature` content under this section; claim an edition relation under C.2.1 only when that relation obtains. C.3.1 separately decides kind continuity.
 
 ### C.3.2:6 - Admissibility and One Candidate Judgment
 
@@ -78,14 +78,14 @@ and, only when `A = admissible`:
 
 `J(candidate, kind, signatureEdition, slice) ∈ {true, false, unknown}`
 
-These are local result notations, not newly admitted kinds, A.14 membership occurrences, direct classification relations, or evidence relations. For a fixed candidate, kind, signature edition, and slice, unchanged governed conditions yield the same result; the slice resolves concrete versions and an explicit temporal selector rather than implicit `latest` or `current`.
+These are local result notations, not newly admitted kinds, A.14 membership occurrences, direct classification relations, or evidence relations. For a fixed candidate, kind, signature edition, and slice, unchanged governed conditions and the same available support and declared dependencies yield the same result; the slice resolves concrete versions and an explicit temporal selector rather than implicit `latest` or `current`.
 
 1. **Recover the candidate first.** An entity is already individuated under its direct pattern. A non-entity value keeps the identity, unit, scale, and interpretation supplied by its governor.
 2. **Pin the inputs.** Name candidate, kind, exact signature edition, and exact slice; avoid implicit `latest` or `current`.
 3. **Check admissibility.** If the candidate does not satisfy the declared candidate `ValueKind` or interpretation, or the slice is outside declared applicability, return `not-applicable` and stop. Do not form `J`.
 4. **Evaluate the governed condition.** For an admissible candidate, a satisfied criterion gives `true`; a known failed criterion gives `false`.
 5. **Keep non-settlement visible.** Missing support or an unavailable declared dependency gives `unknown`, not `false`.
-6. **Distinguish condition from evidentiary use.** A measurement result, source episteme, certification, registration, publication occurrence, legal-status relation, or record may itself be a criterion condition only when the signature says so and its direct pattern makes that condition obtain. Its mere use as evidence for some other condition creates neither that condition nor membership.
+6. **Distinguish condition from evidentiary use.** A measurement result, source episteme, certification, registration, publication occurrence, legal-status relation, or record may itself be a criterion condition only when the signature says so and that condition obtains under its direct pattern. Its mere use as evidence for some other condition creates neither that condition nor membership.
 7. **Separate guard disposition.** A guard checks admissibility, scope coverage, and any judgment as separate predicates. It may decline use on `not-applicable` or `unknown` without converting either to `false`.
 
 When a separate claim-bearing classification assertion is current, it is a C.2.1 episteme. Its content designates the candidate, kind, signature edition, slice, admissibility, any judgment, and relied-on support. Its exact `EntityOfConcern` is the governed entity about which classification matters; a value classification may stay in another claim's content rather than fabricating a value-shaped entity. The assertion creates neither candidate nor kind.
@@ -118,7 +118,7 @@ Keep these changes distinct:
 | --- | --- | --- |
 | practice, source, team, or locality changes | compare the exact kind definitions and declaration meanings | another kind or `KindBridge` |
 | two distinct kinds and a directional correspondence are current | test C.3.3 obtaining and evaluate the receiving candidate afresh | transferred source truth |
-| criterion, candidate domain, applicability, `EntityOfConcern`, or scheme changes | another `KindSignature` edition; C.3.1 decides kind continuity | another kind merely by edition |
+| criterion, candidate domain, applicability, `EntityOfConcern`, or scheme changes | another declaration episteme; `KindSignature` qualification and any edition relation are checked separately as in section 5; C.3.1 decides kind continuity | another kind merely by edition |
 | candidate fails ValueKind or slice applicability | `not-applicable`; no judgment | `unknown` or `false` |
 | candidate state changes | reevaluate in the relevant slice when admissible | a new signature or kind |
 | support or dependency becomes unavailable | `unknown` for an admissible request | `not-applicable` or known `false` |
@@ -152,7 +152,7 @@ The value `87 °C` is submitted to `CoolingPumpSignature-2`, whose candidate Val
 
 #### C.3.2:9.7 - Registration-defined membership
 
-`RegisteredSupplierKind` declares supplier candidates and requires an exact obtaining registration-status relation under the current register rule. Supplier #27 is admissible. If that governed relation obtains, it is part of the membership condition even though a registration episteme may also be used as evidence. A copied row or certificate image alone does not create the relation. This preserves legitimate institutional kinds without treating every record as a world-side fact.
+A `KindSignature` for `RegisteredSupplierKind` declares supplier candidates and requires an exact obtaining registration-status relation under the current register rule. Supplier #27 is admissible. If that governed relation obtains, it is part of the membership condition even though a registration episteme may also be used as evidence. A copied row or certificate image alone does not create the relation. This preserves legitimate institutional kinds without treating every record as a world-side fact.
 
 ### C.3.2:10 - Additional Transfer Cases
 
@@ -164,11 +164,11 @@ The value `87 °C` is submitted to `CoolingPumpSignature-2`, whose candidate Val
 
 ### C.3.2:11 - Work Boundary
 
-Classification does not weaken the work ontology:
+For a Work classification, keep these distinctions:
 
 - `U.Work` is the admitted kind;
-- `W : U.Work` is one independently grounded dated 4D work occurrence under its direct pattern;
-- a plan, expected-work item, log, card, database row, assertion, or description about W is a separate episteme; and
+- `W : U.Work` is one independently grounded dated 4D work occurrence under `A.15.1`;
+- a plan, expected-work item, log, card, database row, assertion, or description about W remains distinct from W; identify any claim-bearing episteme through C.2.1, separately from its publication form or carrier; and
 - performer assignment, enacted method, temporal extent, containing system, affected referent, material binding, resource use, transformation, production, result, delivery, and acceptance remain separately governed.
 
 A kind may classify an already identified W. A kind symbol, work label, plan, or record never occupies W's individual position, and record existence does not make planned Work actual.

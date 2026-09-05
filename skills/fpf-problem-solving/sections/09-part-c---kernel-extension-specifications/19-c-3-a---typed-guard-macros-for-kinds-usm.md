@@ -1,6 +1,6 @@
 ## C.3.A - Typed Guard Macros for Kinds + USM (Annex)
 
-> **One-line summary.** These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and A.2.6 Scope without collapsing them. A claim quantified over a kind can be checked at declaration level; applying that claim or a capability to one candidate additionally requires `J(candidate, kind, signatureEdition, slice)`. `true`, `false`, and `unknown` remain classification values, while allow/refuse remains a separate guard disposition. KindAT never appears in a guard.
+> **One-line summary.** These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and A.2.6 Scope without collapsing them. A claim quantified over a kind can be checked at declaration level; applying that claim or a capability to one candidate additionally requires an admissibility check and, for an admissible request, `J(candidate, kind, signatureEdition, slice)`. `true`, `false`, and `unknown` remain classification values, while allow/refuse remains a separate guard disposition. KindAT never appears in a guard.
 
 **Status.** Normative for macro obligations, evaluation order, three-valued/fail-closed discipline, and the conformance checklist; informative for decision trees, examples, and implementation-like skeletons.
 
@@ -10,7 +10,7 @@
 
 - **A.2.6 USM:** exact `U.ContextSlice`, Claim/Work scope, `Gamma_time`, scope bridges, and SpanUnion.
 - **C.3/C.3.1:** exact local kinds and obtaining `U.SubkindOf` relations.
-- **C.3.2:** `KindSignature` declaration epistemes, `J(candidate, kind, signatureEdition, slice)`, `true`/`false`/`unknown`, and optional extension representations.
+- **C.3.2:** `KindSignature` declaration epistemes, candidate/slice admissibility, `J(candidate, kind, signatureEdition, slice)`, `true`/`false`/`unknown`, and optional extension representations.
 - **C.3.3:** obtaining `KindBridge` relations and separate bridge-assertion epistemes carrying `CL^k`, loss, evidence, definedness, and admitted use.
 - **C.3.4:** `RoleMask` and `MaskAdapter` declaration epistemes and `J_mask(candidate, kind, kindSignatureEdition, roleMaskEdition, slice)`.
 - **C.3.5:** KindAT as an editorial facet forbidden in guards.
@@ -36,19 +36,19 @@ Older guard shorthand used one two-valued “membership defined” question for 
 
 C.3.A restores two levels:
 
-- **declaration level:** which exact local kind and `KindSignature` edition a claim quantifies over, and whether that kind is compatible with the receiver's expected kind under same-context order or an obtaining KindBridge; and
-- **candidate-use level:** whether one exact target-side candidate satisfies the receiver's exact declaration in that exact slice, with the claim-kind consequence supplied only by the already established same-context order or cross-context bridge.
+- **declaration level:** which exact local kind and `KindSignature` edition a claim quantifies over, and whether that kind is compatible with the receiver's expected kind under C.3.1 order or an obtaining KindBridge; and
+- **candidate-use level:** whether one exact target-side candidate satisfies the receiver's exact declaration in that exact slice, with the claim-kind consequence supplied only by the already established C.3.1 order or obtaining KindBridge.
 
 ### C.3.A:3 - Shared outcome model
 
 All guards obey these invariants.
 
 1. **Exact declarations.** A kind designator never substitutes for the exact `KindSignature` edition needed by the use.
-2. **Candidate only when current.** A universally quantified claim or proof can be checked for declaration compatibility without inventing a wildcard candidate. Actual application, test attachment, capability input/output use, or other candidate-bearing action pins the candidate and evaluates the four-input judgment.
-3. **Three classification values.** `true` means the criterion is known to hold; `false` means it is known to fail; `unknown` means the evaluation cannot settle because evidence or a declared dependency is unavailable or the candidate is outside the evaluation domain.
-4. **Separate guard disposition.** A guard returns an action disposition such as allow or refuse. Both `false` and `unknown` normally cause fail-closed refusal, but the guard MUST preserve which classification value it consumed.
-5. **Scope separation.** Scope coverage is a USM predicate over a named slice. It does not classify the candidate or repair kind compatibility.
-6. **Bridge separation.** An obtaining KindBridge relation connects exact source and target kinds. Its separate bridge assertion supplies mapping, `CL^k`, loss, evidence, definedness, and admitted use; neither object creates a target kind, signature, or judgment.
+2. **Candidate only when current.** A universally quantified claim or proof can be checked for declaration compatibility without inventing a wildcard candidate. Actual application, test attachment, capability input/output use, or other candidate-bearing action pins the candidate, checks admissibility, and evaluates the four-input judgment only for an admissible request.
+3. **Admissibility, then three classification values.** Check candidate and slice admissibility under the pinned declarations before any C.3.2 or C.3.4 judgment below. An inadmissible request gives `not-applicable`; no judgment is formed. For admissible inputs, `true` means the criterion is known to hold; `false` means it is known to fail; `unknown` means the evaluation cannot settle because evidence or a declared dependency is unavailable.
+4. **Separate guard disposition.** A guard returns an action disposition such as allow or refuse. An inadmissible request causes refusal without a classification judgment. Both `false` and `unknown` normally cause fail-closed refusal, but the guard MUST preserve which classification value it consumed.
+5. **Scope separation.** Scope coverage is a USM predicate over a named slice. It does not classify the candidate or repair kind compatibility. Scope translation enters only when exact local senses require it under A.2.6; a changed locality or scheme alone does not trigger it. The Scope Bridge shorthand below denotes the obtaining F.9 Bridge, while a separate affirmative C.2.1 claim states this translation's direction, rule, and permitted loss. Reliance uses the current A.10 disposition or, when a named assurance claim is current, a B.3 result supporting this same use.
+6. **Bridge separation.** An obtaining KindBridge relation connects exact, independently identified distinct source and target kinds when its directional correspondence predicate holds under C.3.3. Its separate bridge assertion supplies mapping, `CL^k`, loss, evidence, definedness, and admitted use; neither object creates a target kind, signature, or judgment. A locality change alone supplies no such relation. Same-kind reuse selects the receiving declaration edition and, when a candidate is current, a fresh receiving judgment.
 7. **R-only consequences.** Justified scope- and kind-bridge consequences affect R only. They do not change F, G, or classification truth.
 
 ### C.3.A:4 - Normative guard macros
@@ -63,14 +63,14 @@ Names such as `Guard_TypedClaim` are editorial handles. A context may alias them
 
 1. recover the exact `KindSignature` declaration episteme editions whose respective `EntityOfConcern` values are `k_claim` and `k_receive`, and whose evaluation domains and effective reference schemes cover the declared use; when both roles use the same kind and edition, state that identity rather than duplicating the declaration;
 2. establish declaration-level kind compatibility:
-   - in one context, the kinds are identical or `SubkindOfObtains(k_receive, k_claim; effectiveReferenceScheme)` holds under C.3.1, with an identified `R_sub : U.SubkindOf` occurrence only when occurrence identity is needed; or
-   - across contexts, an obtaining KindBridge relates exact source `k_claim` and target `k_receive` under the paired source and target `KindSignature` editions, and a separate current bridge assertion states the mapping, applicability, loss, `CL^k`, evidence, and admitted receiving use;
+   - the kinds are identical or `SubkindOfObtains(k_receive, k_claim; effectiveReferenceScheme)` holds under C.3.1, with an identified `R_sub : U.SubkindOf` occurrence only when occurrence identity is needed; or
+   - for a required directional correspondence between independently identified distinct kinds, an obtaining KindBridge relates exact source `k_claim` and target `k_receive` under the paired source and target `KindSignature` editions, and a separate current bridge assertion states the mapping, applicability, loss, `CL^k`, evidence, and admitted receiving use;
 3. require `U.ClaimScope(C)` to cover the exact `TargetSlice` and require an explicit `Gamma_time` selector;
 4. apply only the justified bridge consequences to R;
 5. check evidence freshness separately when the admission implies reliance; and
 6. check a policy-required formality threshold on the exact claim or declaration episteme that owns the value.
 
-The same-context direction above is contravariant only for restricting a universally quantified claim: a claim over `Vehicle` may enter a `PassengerCar`-restricted use when `PassengerCar` is a subkind of `Vehicle`. It is not a generic compatibility direction for producer outputs, operation arguments, mutable positions, or arbitrary typed slots; each such use states its own variance rule. This guard MUST NOT invent an anonymous candidate or infer a candidate classification from declaration compatibility.
+The subkind direction above is contravariant only for restricting a universally quantified claim: a claim over `Vehicle` may enter a `PassengerCar`-restricted use when `PassengerCar` is a subkind of `Vehicle`. It is not a generic compatibility direction for producer outputs, operation arguments, mutable positions, or arbitrary typed slots; each such use states its own variance rule. This guard MUST NOT invent an anonymous candidate or infer a candidate classification from declaration compatibility.
 
 #### C.3.A:4.2 - Guard_CandidateUse — apply a typed claim to an exact candidate
 
@@ -81,9 +81,9 @@ The same-context direction above is contravariant only for restricting a univers
 1. identify the candidate under its direct governor before classification;
 2. satisfy `Guard_TypedClaim` for the same claim-kind and receiving-kind editions and slice;
 3. evaluate `J(candidate, k_receive, receiveSignatureEdition, TargetSlice)`;
-4. continue candidate-bearing use only on `true`: for a same-context proper subkind, the already established `SubkindOfObtains(k_receive, k_claim; RS)` supplies the monotone claim-kind consequence; for a cross-context use, rely only through the obtaining KindBridge and its current assertion, without inventing a source-context candidate judgment;
+4. continue candidate-bearing use only on `true`: for a proper subkind, the already established `SubkindOfObtains(k_receive, k_claim; RS)` supplies the monotone claim-kind consequence; for a bridged use, rely only through the obtaining KindBridge and its current assertion, without inventing a source-context candidate judgment;
 5. refuse on known `false` while retaining that value; and
-6. refuse on `unknown` while retaining the missing dependency, unavailable support, or out-of-domain reason.
+6. refuse on `unknown` while retaining the missing dependency or unavailable support reason.
 
 Evidence may support a classification assertion, but record presence, bridge presence, or guard invocation MUST NOT make the candidate satisfy the receiving criterion. When `k_claim` and `k_receive` are identical under one declaration edition, record that identity and evaluate the candidate once.
 
@@ -95,8 +95,8 @@ Evidence may support a classification assertion, but record presence, bridge pre
 
 1. pin both declaration episteme editions;
 2. establish output-to-input compatibility in the covariant flow direction:
-   - in one context, the kinds are identical or `SubkindOfObtains(k_A, k_B; effectiveReferenceScheme)` holds; or
-   - across contexts, an obtaining KindBridge maps `k_A` to exact target-side kind `k_A'`, its separate assertion carries the current mapping and loss basis, and `k_A'` is identical to `k_B` or `SubkindOfObtains(k_A', k_B; targetReferenceScheme)` holds;
+   - the kinds are identical or `SubkindOfObtains(k_A, k_B; effectiveReferenceScheme)` holds; or
+   - for a bridged flow, an obtaining KindBridge maps `k_A` to exact, independently identified distinct target-side kind `k_A'`, its separate assertion carries the current mapping and loss basis, and `k_A'` is identical to `k_B` or `SubkindOfObtains(k_A', k_B; targetReferenceScheme)` holds;
 3. compute serial scope as the intersection of the two governed scopes and require coverage of `TargetSlice`;
 4. route bridge consequences to R and check freshness separately; and
 5. when an actual produced candidate enters B, evaluate `J(candidate, k_B, edition_B, TargetSlice)` and continue only on `true`, preserving `false` and `unknown` separately from refusal.
@@ -114,7 +114,7 @@ Declaration compatibility alone MUST NOT classify a future or actual output. Sco
 3. evaluate `J_mask(candidate, kind, kindSignatureEdition, roleMaskEdition, TargetSlice)`;
 4. continue only on `true`, refuse while preserving known `false`, and fail closed while preserving `unknown`;
 5. keep context predicates out of the candidate-feature criterion; and
-6. for cross-context use, establish the KindBridge relation and assertion, target declarations, and any separate `MaskAdapter` declaration episteme before evaluating the target masked judgment.
+6. for cross-context use, compare base-kind identity and recover target declarations; when this use requires a correspondence between distinct kinds, establish the KindBridge relation and assertion under C.3.3; recover any separate `MaskAdapter` declaration episteme before evaluating the target masked judgment.
 
 A mask name is not a kind synonym. Repeated mask use can trigger review for a separately identified local kind and independently obtaining `U.SubkindOf` relation; no guard or catalog action performs that admission.
 
@@ -139,10 +139,10 @@ If lines quantify over genuinely different kinds, normalize through separately j
 
 `Guard_XContext_Typed(C, sourceKind, sourceSignatureEdition, targetKind, targetSignatureEdition, TargetSlice, candidate?)` SHALL:
 
-1. recover an obtaining Scope Bridge and its applicable congruence assessment when Claim scope crosses context;
-2. recover an obtaining KindBridge relation with exact source/target kind participants and its separate bridge assertion with pinned scheme/signature editions, mapping rule, definedness, `CL^k`, loss, evidence, and admitted use;
-3. recover the independently authored target `KindSignature` edition;
-4. require translated Claim scope to cover `TargetSlice`;
+1. when the receiving claim requires Scope translation, recover the obtaining Scope Bridge and its applicable congruence assessment, the separate affirmative translation-use claim, and the current reliance branch under A.2.6;
+2. compare source and target kind identity and establish the receiving use's declaration-level compatibility under §4.1; if that compatibility relies on a directional correspondence between distinct kinds, recover an obtaining KindBridge relation with exact source/target kind participants and its separate bridge assertion with pinned scheme/signature editions, mapping rule, definedness, `CL^k`, loss, evidence, and admitted use;
+3. recover the independently identified target `KindSignature` edition;
+4. require Claim scope, translated when needed, to cover `TargetSlice`;
 5. when an actual candidate is current, evaluate the fresh target judgment `J(candidate, targetKind, targetSignatureEdition, TargetSlice)` and preserve all three values;
 6. apply the justified scope- and kind-bridge consequences to R only; and
 7. make the separate allow/refuse decision.
@@ -151,28 +151,28 @@ A source judgment may support reliance but MUST NOT be copied as target truth. I
 
 ### C.3.A:5 - Evaluation semantics and order (normative)
 
-**E-01 (Order).** Recover exact declarations and kind compatibility first; check Scope coverage second; evaluate an exact candidate only when the receiving action is candidate-bearing; then apply R consequences, freshness, and policy thresholds before the separate action disposition.
+**E-01 (Order).** Recover exact declarations and kind compatibility first; check Scope coverage second; when the receiving action is candidate-bearing, check admissibility and evaluate the exact candidate judgment only for an admissible request; then apply R consequences, freshness, and policy thresholds before the separate action disposition.
 
 **E-02 (Determinism).** With fixed candidates when any, kind/signature editions, slices, bridge/assertion editions, dependencies, and time selectors, the judgments and guard predicates MUST be reproducible. Implicit “latest” is forbidden.
 
-**E-03 (Three values).** Every current C.3.2 or C.3.4 classification consumed by a guard MUST retain `true`, `false`, or `unknown`. Missing evidence, unavailable declared dependency, or out-of-domain input MUST NOT be coerced to `false`.
+**E-03 (Admissibility and three values).** Every current C.3.2 or C.3.4 classification consumed by a guard MUST retain `true`, `false`, or `unknown`. Keep `not-applicable` outside the classification range. Missing evidence or an unavailable declared dependency in an admissible evaluation MUST NOT be coerced to `false`.
 
-**E-04 (Fail-closed without truth rewrite).** A required `false`, `unknown`, missing declaration, non-obtaining relation, unavailable bridge assertion, or uncovered Scope causes refusal. The refusal is not itself a classification value or an assertion that the relevant world-side relation fails to obtain.
+**E-04 (Fail-closed without truth rewrite).** A required check returning `false`, `unknown`, or `not-applicable`, a missing declaration, non-obtaining relation, unavailable bridge assertion, or uncovered Scope causes refusal. The refusal is not itself a classification value or an assertion that the relevant world-side relation fails to obtain.
 
 **E-05 (Weakest link and bridge consequence).** Chained bridge assessments use the governed weakest-link rule. The receiving R path records each relied-on bridge/assertion; neither F nor G nor a judgment value is modified.
 
-**E-06 (Predicate separation).** Declaration compatibility, candidate classification, Scope coverage, evidence freshness, bridge applicability, capability fit, and action disposition SHALL remain separately inspectable predicates.
+**E-06 (Predicate separation).** Declaration compatibility, candidate admissibility, candidate classification, Scope coverage, evidence freshness, bridge applicability, capability fit, and action disposition SHALL remain separately inspectable predicates.
 
 ### C.3.A:6 - Conformance checklist (normative)
 
 | ID | Requirement |
 | --- | --- |
-| **GC-01** | A universally quantified claim pins both claim-kind and receiving-kind declaration editions; same-context restriction requires the receiving kind to be identical to or a subkind of the claim kind, while producer/output positions use their own direction. No candidate is invented. |
-| **GC-02** | Every claim-to-candidate use pins candidate, claim kind, receiving kind, both needed signature editions, and slice; it evaluates the target receiving judgment and consumes `true`/`false`/`unknown`. |
-| **GC-03** | `unknown` and known `false` remain distinct from each other and from guard refusal. |
+| **GC-01** | A universally quantified claim pins both claim-kind and receiving-kind declaration editions; the non-bridged restriction requires the receiving kind to be identical to or a subkind of the claim kind, while producer/output positions use their own direction. No candidate is invented. |
+| **GC-02** | Every claim-to-candidate use pins candidate, claim kind, receiving kind, both needed signature editions, and slice; it checks admissibility before evaluating the target receiving judgment and consuming `true`/`false`/`unknown`. An inadmissible request retains `not-applicable` without a judgment. |
+| **GC-03** | `not-applicable`, `unknown`, and known `false` remain distinct from each other and from guard refusal. |
 | **GC-04** | RoleMask use recovers the declaration episteme and exact masked judgment; any MaskAdapter remains a separate declaration. |
-| **GC-05** | Cross-context use recovers both bridge channels, the exact target declaration, and a fresh target judgment when a candidate is current; penalties route to R only. |
-| **GC-06** | Scope, `Gamma_time`, freshness, type compatibility, classification, and disposition remain separate. |
+| **GC-05** | Cross-context use compares kind identity and recovers each bridge channel required by its own applicability, the exact target declaration, and a fresh target judgment when a candidate is current; penalties route to R only. |
+| **GC-06** | Scope, `Gamma_time`, freshness, type compatibility, admissibility, classification, and disposition remain separate. |
 | **GC-07** | SpanUnion preserves one typed claim and line independence; candidate-specific evidence names exact candidates and judgments. |
 | **GC-08** | KindAT appears in no guard, and no plan, row, card, log, or slice substitutes for an actual candidate or Work occurrence. |
 
@@ -189,7 +189,7 @@ A context-specific guard alias is equivalent only when all required objects, inp
 **D1 — Admit a quantified claim.**
 
 1. Pin the quantified claim kind, receiving kind, and both exact signature editions.
-2. In one context, require the receiving kind to be identical to or a subkind of the claim kind; across contexts, recover the exact source-claim to target-receiving KindBridge relation and assertion.
+2. Require the receiving kind to be identical to or a subkind of the claim kind, or establish the receiving use's required correspondence between distinct kinds through the exact source-claim to target-receiving KindBridge relation and assertion.
 3. Check Claim scope against the exact TargetSlice and `Gamma_time`.
 4. Apply R consequences and freshness/threshold checks.
 5. Return the separate action disposition. Do not ask for a candidate unless the receiving use applies the claim to one.
@@ -204,7 +204,7 @@ A context-specific guard alias is equivalent only when all required objects, inp
 **D3 — Compose or cross a context.**
 
 1. Pin source and target declarations.
-2. Recover the obtaining kind relation/bridge and separate assertion; recover Scope Bridge separately.
+2. Recover declaration compatibility through identity, the required subkind relation, or an obtaining KindBridge with its separate assertion; recover Scope Bridge separately when Scope translation is required.
 3. Check the serial or translated scope.
 4. If an actual output/candidate is current, evaluate it under the target declaration.
 5. Apply R consequences and decide separately.
@@ -251,7 +251,7 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 **C-REG-1 (Regulatory declarations).** Each used regulatory category SHALL be an exact authority-context local kind with a separately identified `KindSignature` declaration episteme edition. Any F value characterizes that episteme, not the kind.
 
-**C-REG-2 (Kind correspondence).** Cross-context category use SHALL recover an obtaining KindBridge relation between exact authority and local kinds plus a separate bridge assertion with mapping, pinned editions, preservation/loss, `CL^k`, evidence, definedness, and admitted use.
+**C-REG-2 (Kind correspondence).** Cross-context category use SHALL first compare authority and local kind definitions. If the receiving policy relies on a directional correspondence between distinct kinds, it SHALL recover an obtaining KindBridge relation between exact authority and local kinds plus a separate bridge assertion with mapping, pinned editions, preservation/loss, `CL^k`, evidence, definedness, and admitted use.
 
 **C-REG-3 (Scope).** Jurisdiction, effective dates, grace periods, and other genuinely contextual applicability conditions SHALL be Claim scope over exact context slices with explicit `Gamma_time`. A product-family or platform distinction belongs in Scope only when it is genuinely a context-slice dimension of the claim; when it classifies the target entity, recover it as an exact kind and, for candidate-bearing use, an exact candidate judgment. A direct candidate feature remains with its own governor and SHALL NOT be smuggled into Scope.
 
@@ -261,7 +261,7 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 **C-REG-6 (Consequences).** Justified kind- and scope-bridge consequences SHALL affect R only. They SHALL NOT alter F, G, or the candidate judgment.
 
-**C-REG-7 (Editioning).** A change in law that changes the criterion creates another signature episteme edition; a change in applicability changes Scope. C.3.1 decides kind continuity. Guards SHALL pin editions and time and SHALL NOT rely on “latest”.
+**C-REG-7 (Editioning).** For a law change that changes the criterion, identify the new declaration episteme and check its signature qualification and any edition relation under C.3.2:5. A change in claim applicability changes Scope. C.3.1 decides kind continuity. Guards SHALL pin editions and time and SHALL NOT rely on “latest”.
 
 **C-REG-8 (Local adaptation).** A local nuance MAY use a RoleMask declaration. If it becomes a stable conceptual distinction, the context SHALL separately identify any new local kind and establish its obtaining subkind relation; mask reuse does not perform that change.
 
@@ -270,8 +270,8 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 **Guard_RegAdopt(P, candidate, authorityKind, authoritySignatureEdition, localKind, localSignatureEdition, S_local).**
 
 1. Check P's governed scope and explicit time against `S_local`.
-2. Recover the exact authority/local declarations, KindBridge relation, and bridge assertion.
-3. Check bridge applicability and route its consequence to R.
+2. Recover the exact authority/local declarations and establish their declaration-level compatibility under §4.1; recover the KindBridge relation and bridge assertion when the use requires a correspondence between distinct kinds.
+3. For any required bridge, check applicability and route its consequence to R.
 4. Evaluate `J(candidate, localKind, localSignatureEdition, S_local)`.
 5. Continue only on `true`; retain known `false` or `unknown` before refusing.
 6. Check freshness of relied-on regulatory and candidate support separately.
@@ -279,9 +279,9 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 **Guard_RegChange(change, impactedDeclarations, impactedScopes).**
 
 1. Decide whether the change alters criterion, reference scheme, applicability, or more than one.
-2. Author the required signature episteme edition and let C.3.1 settle kind continuity.
+2. Author the required declaration episteme, check its signature qualification and any edition relation under C.3.2:5, and let C.3.1 settle kind continuity.
 3. Update Scope independently when jurisdiction/version/time coverage changes.
-4. Reassess the bridge assertion's mapping, loss, `CL^k`, evidence, and admitted use.
+4. Reassess whether the receiving use now requires a correspondence between distinct kinds, and, when it does, the obtaining KindBridge relation and its assertion's mapping, loss, `CL^k`, evidence, and admitted use.
 5. Evaluate affected exact candidates for the new receiving use under the new declaration edition while preserving every prior judgment indexed to its prior edition and slice; do not edit a set representation or rewrite historical judgments as a substitute.
 
 **Guard_RegXContextUse(P, candidate, sourceKind, targetKind, targetSignatureEdition, S_target).** Apply `Guard_XContext_Typed` and then the exact target candidate judgment. A missing target dependency yields `unknown`; it is not cured by a high bridge assessment.
@@ -300,7 +300,7 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 1. Inventory regulatory claims, exact category declarations, and applicability slices.
 2. Recover or author target `KindSignature` declaration editions; keep F on those epistemes.
-3. Establish KindBridge relations and separate assertions with loss and admitted use.
+3. Compare kind identity; establish KindBridge relations and separate assertions with loss and admitted use only for required correspondences between distinct kinds.
 4. Rewrite candidate-bearing guards to pin candidate, local kind, signature edition, and slice.
 5. Preserve `unknown` and record refusal separately.
 6. Route Scope through USM and bridge consequences through R.
@@ -309,7 +309,7 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 ##### C.3.A:A.6 Manager's compact pattern [I]
 
 - **Where and when?** Claim scope over exact context slices.
-- **About what?** Exact local kind and signature declaration; KindBridge relation/assertion if foreign.
+- **About what?** Exact local kind and signature declaration; KindBridge relation/assertion for a required correspondence between distinct kinds.
 - **Which exact thing?** Fresh target `J(candidate, kind, signatureEdition, slice)`.
 - **Can we act?** A separate guard disposition after scope, judgment, bridge, freshness, and policy checks.
 
@@ -329,7 +329,7 @@ VA can prove a claim quantified over an exact declared kind; LA can exercise exa
 
 **EA-4 (Independent unions).** SpanUnion SHALL include a support-line independence account and preserve per-line candidate judgments and bridge consequences.
 
-**EA-5 (Bridges).** Cross-context evidence use SHALL recover Scope Bridge separately from KindBridge relation/assertion, use the independently authored target declaration, and evaluate target candidates afresh. Consequences affect R only.
+**EA-5 (Bridges).** Cross-context evidence use SHALL recover a Scope Bridge when the receiving claim requires Scope translation and a KindBridge relation/assertion when it relies on a correspondence between distinct kinds. It SHALL use the independently identified target declaration and evaluate target candidates afresh. Consequences affect R only.
 
 **EA-6 (Freshness).** Evidence windows and tool/declaration editions SHALL be explicit and tied to the governed slice. Expiry causes refusal or `unknown` at the predicate it disables; it does not widen Scope.
 
@@ -349,10 +349,10 @@ Rows plan declared distinctions; they do not classify every candidate. A proof-o
 
 - **VA-1.** A proof carrier SHALL cite the exact claim, quantified kind, `KindSignature` edition, and assumed scope slices.
 - **VA-2.** A proof of a universal claim need not invent a candidate; application to an actual candidate uses `Guard_CandidateUse` separately.
-- **VA-3.** Cross-context proof reliance SHALL recover both bridge channels, the target declaration, loss, and R consequences.
+- **VA-3.** Cross-context proof reliance SHALL recover the target declaration and any required bridge channels, with their loss and R consequences.
 - **VA-4.** Tool-kernel qualification belongs to TA and does not raise the declaration's F or candidate truth.
 
-Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse at Plant-B requires bridge/scope settlement. Application to VIN-17 then uses the Plant-B target signature and exact target judgment.
+Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse at Plant-B requires kind-identity and scope settlement, with bridges only where required. Application to VIN-17 then uses the Plant-B target signature and exact target judgment.
 
 ##### C.3.A:B.5 LA lane [A/I]
 
@@ -388,7 +388,7 @@ Qualify provers, checkers, measurement pipelines, and classifiers separately. A 
 
 ##### C.3.A:B.9 End-to-end example [I]
 
-A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope. VA proves the quantified claim over that declaration. LA tests exact VINs in dry/wet slices and records their judgments. TA identifies tool versions. Plant-B reuse recovers both bridges, the target declaration, loss and R consequences; each Plant-B candidate is evaluated afresh before evidence is attached.
+A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope. VA proves the quantified claim over that declaration. LA tests exact VINs in dry/wet slices and records their judgments. TA identifies tool versions. Plant-B reuse recovers the target declaration and any required bridges with their loss and R consequences; each Plant-B candidate is evaluated afresh before evidence is attached.
 
 #### C.3.A:Annex C - ESG and Method–Work guards
 
@@ -397,7 +397,7 @@ A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope.
 When a state transition publishes or relies on a claim quantified over kinds, the ESG guard SHALL:
 
 1. pin the claim, exact quantified claim kind, receiving kind, and both needed `KindSignature` editions;
-2. establish the correct same-context restriction direction or the exact source-claim to target-receiving KindBridge relation and separate assertion;
+2. establish the correct subkind restriction direction or, for a required correspondence between distinct kinds, the exact source-claim to target-receiving KindBridge relation and separate assertion;
 3. check Claim scope and explicit `Gamma_time`;
 4. when one or more actual candidates are part of the transition, evaluate each exact four-input target receiving-kind judgment and preserve all three values;
 5. when a RoleMask is used, recover its declaration edition and evaluate the exact masked judgment;
@@ -409,13 +409,13 @@ ESG MUST NOT widen G to hide incompatibility, treat a label as a candidate judgm
 
 ##### C.3.A:C.2 Method–Work obligations (normative)
 
-This Method–Work slice is conditional; it is not a definition that makes every actual change agentic, capability-held, planned, method-mediated, or Work. Open its capability/method/WorkPlan entry checks only when those objects and an A.15.1 Work use are current. A natural, spontaneous, formal, jointly caused, or non-separable `U.Transformation` remains under A.3/A.3.4 and does not acquire a fictive performer, role assignment, method, capability, plan, or Work to satisfy this guard. A broader scale-free-agency or Work decision remains with A.13 and A.15.1; planned C.9 may later consolidate an agency-characteristic profile but supplies no current governing force. This annex neither settles nor forbids that decision. Reflexive cases require separately grounded acting and affected positions, while joint or non-separable cases keep their direct dynamics, interaction, or causality governors rather than forcing one arbitrary actor-target split.
+This Method–Work slice is conditional; it is not a definition that makes every actual change agentic, capability-held, planned, method-mediated, or Work. Open its capability/method/WorkPlan entry checks only when those objects and an A.15.1 Work use are current. A natural, spontaneous, formal, jointly caused, or non-separable `U.Transformation` remains under A.3/A.3.4 and does not acquire a fictive performer, role assignment, method, capability, plan, or Work to satisfy this guard. A broader scale-free-agency or Work decision remains with A.13 and A.15.1. This annex neither settles nor forbids that decision. Reflexive cases require separately grounded acting and affected positions, while joint or non-separable cases keep their direct dynamics, interaction, or causality governors rather than forcing one arbitrary actor-target split.
 
 When the Method–Work use is current, it has two different boundaries.
 
 **Prospective entry.** Before execution, a guard may decide that a holder capability, method, intended `U.WorkPlan`, JobSlice, and candidate inputs are sufficient to start. That decision SHALL NOT claim that Work already occurred. The capability instance, capability statements or currentness assessments, fit predicates, WorkPlan, JobSlice, and entry record remain distinct.
 
-**Actual result or acceptance.** When performed Work is current, the guard SHALL identify exact `W : U.Work` as an independently grounded, world-side, dated 4D Work occurrence under A.15.1. `W` is not the `U.Work` kind, JobSlice, capability, plan item, log, card, row, or assertion. Any plan, log, result record, or assurance record about W is a separate episteme that designates W.
+**Actual result or acceptance.** When performed Work is current, the guard SHALL identify exact `W : U.Work` as an independently grounded, world-side, dated 4D Work occurrence under A.15.1. `W` is not the `U.Work` kind, JobSlice, capability, plan item, log, card, row, or assertion. A plan, log, result record, or assurance record about W remains distinct from W; when that object is a claim-bearing episteme, its content designates W.
 
 A conforming Method–Work check SHALL:
 
@@ -424,7 +424,7 @@ A conforming Method–Work check SHALL:
 3. pin every expected input/output local kind and signature edition;
 4. for every actual input candidate, evaluate `J(inputCandidate, expectedInputKind, inputSignatureEdition, JobSlice)` and preserve all three values;
 5. use exact RoleMask declarations and masked judgments when procedural tailoring is current;
-6. establish exact target bridges/declarations and fresh target judgments for cross-context candidates;
+6. for cross-context candidates, compare kind identity, recover exact target declarations and any required bridges, and evaluate fresh target judgments;
 7. before execution, return only an entry disposition and keep W absent;
 8. after execution, identify W independently and, for every actual output candidate relied on, evaluate the exact output judgment;
 9. keep W, inputs, outputs, JobSlice, capability, plan, logs, and assertions distinct; and
@@ -436,7 +436,7 @@ A conforming Method–Work check SHALL:
 
 **MethodWork_EntryGate(Capability, WorkPlanRef, JobSlice, inputCandidates, inputDeclarations).** Check Work scope, capability/qualification/fit predicates, exact input judgments, masks, bridges, and freshness. Return “entry allowed/refused”. Do not create or identify W.
 
-**MethodWork_ResultGate(W, JobSlice, actualInputs, actualOutputs, declarations, ResultRecordRef?).** First recover the independently grounded dated W under A.15.1. Then evaluate exact input/output candidate judgments, check scope and any acceptance predicates, and keep any ResultRecordRef as a separate episteme designating W.
+**MethodWork_ResultGate(W, JobSlice, actualInputs, actualOutputs, declarations, ResultRecordRef?).** First recover the independently grounded dated W under A.15.1. Then evaluate exact input/output candidate judgments, check scope and any acceptance predicates, and keep any ResultRecordRef as a reference to a separate episteme whose content designates W.
 
 ##### C.3.A:C.4 Worked examples [I]
 
@@ -452,7 +452,7 @@ A conforming Method–Work check SHALL:
 | --- | --- |
 | widening Work scope to hide an input mismatch | repair declaration compatibility, adapter, mask, or bridge; otherwise refuse |
 | calling JobSlice or WorkPlan the work | before execution keep W absent; after execution identify the independently grounded dated W |
-| treating a log or result row as W | keep it as a separate episteme that designates W |
+| treating a log or result row as W | keep it distinct from W; when it is a claim-bearing episteme, its content designates W |
 | omitting the exact candidate or signature edition | pin all four judgment inputs |
 | converting unavailable support to `false` | retain `unknown` and refuse separately |
 | treating bridge or adapter records as target truth | recover target declarations and evaluate candidates afresh |

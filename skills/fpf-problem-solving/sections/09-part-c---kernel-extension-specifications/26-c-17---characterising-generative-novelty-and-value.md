@@ -2,7 +2,7 @@
 
 **Status.** Evaluation and measurement-use pattern; normative where stated.
 
-**Depends on.** `A.17`, `A.18`, and `A.19` for Characteristics, Scales, and CharacteristicSpaces; `A.19.ECS` for the evaluation-space specification; `C.16` for measurement; `C.2.1` and `A.1.1` for claim-bearing results and models; `A.10` and `B.3` for evidence, reliance, and assurance; and the patterns that define the current objective, acceptance criterion, and must-constraints.
+**Depends on.** `A.17`, `A.18`, and `A.19` for Characteristics, Scales, and CharacteristicSpaces; `A.19.ECS` for the evaluation-space specification; `C.16` for measurement; `C.2.1` for claim-bearing results and model epistemes; `A.1.1` for model applicability, use, and expression coherence when those relations matter; `A.10` and `B.3` for evidence, reliance, and assurance; and the patterns that define the current objective, acceptance criterion, and must-constraints.
 
 **Coordinates with.** `E.10.LRN` when *learning progress* or related wording still hides the bearer or result; `C.18` for generation, Archive, Front, and possibility-space change; `C.19` for pool policy and tie-break use; `G.5` for selector-facing declarations; `C.11.CRC` for a missing finite configuration-relative comparison; `C.11` for choice; `F.9` for an actual cross-reference-scheme Bridge; `F.18` for naming-candidate diversity; `B.4` and `G.11` for evolution and refresh; `A.13` and `A.15.1` for exact evaluator recovery and independently admitted dated overall-assessment Work; `A.2.1` and `F.6` only when exact assignment-bound attribution is expressly consumed; `A.3.1` for the enacted Method; `A.3.2` when a relied-on MethodDescription matters; and `A.6.1` only when the assessment also uses one exact operation declared by a separately admitted `U.Mechanism` and a claim needs that operation's application or bindings.
 
@@ -54,7 +54,7 @@ Return only the missing premise that blocks the current coordinate or conclusion
 
 #### C.17:1.3 - Dated overall-assessment branch
 
-Open this branch only when the claim says that an overall assessment actually occurred and later reliance needs that fact. Recover the evaluator System through A.13, then let A.15.1 independently admit the dated Work and enacted Method. Add the exact A.2.1 assignment occurrence and F.6 relation only when later reliance expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the assessment Work intact. Only the evaluator System performs the Work. A separate MethodDescription may explain the reusable Method; it is not enacted. Coordinate-measurement Work remains its own `C.16` Work, and the aggregate result states claims.
+Open this branch only when the claim says that an overall assessment actually occurred and later reliance needs that fact. Recover the evaluator System through A.13 and the admitted Method through A.3.1, then use A.15.1 to independently admit the dated Work that enacts that Method. Add the exact A.2.1 assignment occurrence and F.6 relation only when later reliance expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the assessment Work intact. Only the evaluator System performs the Work. A separate MethodDescription may explain the reusable Method; it is not enacted. Coordinate-measurement Work remains its own `C.16` Work, and the aggregate result states claims.
 
 Do not infer an A.6.1 operation application from the Method, Work, configuration, or result. If a receiving claim separately asserts an exact operation application or binding, satisfy the current A.6.1 application account and cite that application. Otherwise retain only the C.17-local evaluator System, assignment, Method enactment, dated assessment Work, coordinate results, and aggregate result that the claim actually needs.
 
@@ -108,7 +108,7 @@ The configuration must make these questions answerable:
 
 For each objective, criterion, or constraint on which the result depends, keep its EntityOfConcern, effective ReferenceScheme, edition or currentness basis, and subject-defined predicate recoverable. Do not use a generic container label to answer several of these questions at once. Add only the source, scheme, scope, model-use, comparison, or evidence relation the current claim needs.
 
-Keep prospective and observed readings distinct. A prospective reading may use a surrogate model and stated assumptions to compare designs before use; an observed reading uses later Work, service, or other outcome evidence. Do not overwrite the prediction as though it had been an observation. Preserve both result editions when the comparison matters, and reopen only the coordinates and conclusions that relied on the superseded prediction.
+Keep prospective and observed readings distinct. A prospective reading may use a surrogate model and stated assumptions to compare designs before use; an observed reading uses later Work, service, or other outcome evidence. Do not overwrite the prediction as though it had been an observation. Preserve both results when the comparison matters, and reopen only the coordinates and conclusions that relied on the superseded prediction.
 
 ### C.17:4 - Core characteristics
 
@@ -204,7 +204,7 @@ These examples do not create another universal characteristic family. Readings a
 
 The six applied readings above are examples, not the extension boundary. A configuration may select other Characteristics already established for the current use—for example, time or cost to probe, evidence sufficiency, safety or ethical risk, option value, or regret risk. Keep each selected Characteristic's bearer, Scale, polarity, defining source, Method, and evidence. A safety or ethical must remains an eligibility condition through ConstraintFit; evidence sufficiency does not become creativity; and scope does not become another coordinate merely because every claim needs one.
 
-When one comparison covers several components, attempts, or Work occurrences, identify the lawful aggregation separately for each Characteristic. For example, compatible costs may sum, all declared must-constraints may have to pass, a domain risk rule may use its own conservative combination, and evidence may follow an applicable `B.3` relation. These are examples, not C.17 defaults. If no declared aggregation supports the combined reading, keep the component results separate.
+When one comparison covers several components, attempts, or Work occurrences, identify the lawful aggregation separately for each Characteristic. For example, compatible costs may sum, all declared must-constraints may have to pass, a domain risk rule may use its own conservative combination, and evidence may be combined for a named assurance claim under `B.3`. These are examples, not C.17 defaults. If no declared aggregation supports the combined reading, keep the component results separate.
 
 Any prior or default used for Novelty, evidence, risk, or another selected reading remains a separately supported model or policy claim with its source and edition. C.17 does not publish domain priors merely because a reusable configuration is convenient.
 
@@ -214,7 +214,7 @@ Any prior or default used for Novelty, evidence, risk, or another selected readi
 
 For each selected characteristic, choose one truthful route:
 
-- cite an already constituted `C.16` measurement-result episteme and its complete measurand, Characteristic, Scale, Method, application, dated measurement Work, bindings, time, uncertainty, and evidence chain;
+- cite an already constituted `C.16` measurement-result episteme and its complete measurand, Characteristic, Scale, Method, dated measurement Work, measurand relation or A.6.1 binding, any further bindings required by the claim, time, uncertainty, and evidence chain;
 - if the current action measures the coordinate, constitute that complete C.16 chain before using the value;
 - if the claim applies a declared criterion without measuring, state a `C.2.1` ascription and its rule.
 
@@ -258,7 +258,7 @@ When a corpus, inclusion rule, model, encoder, Scale, criterion, window, or cros
 
 Goodhart's law is a useful historical warning, not evidence for any result. The safeguards above do the operational work.
 
-Evidence can support a result without establishing assurance. Ordinary use stops with proportionate evidence. Enter `B.3` only when the receiving assurance claim or material-reliance threshold requires it.
+Evidence can support a result without establishing assurance. Ordinary use stops with proportionate evidence. Enter `B.3` only when an actual named assurance claim is current.
 
 When that receiving use requires independent assessment or segregation of duties, name the Systems that performed any bearer-producing, coordinate-measurement, or overall-assessment Work and the assignments relevant to the independence claim. State the relevant conflict or independence evidence. Do not impose this assurance arrangement on an ordinary qualitative discussion that makes no independence claim.
 
@@ -308,7 +308,7 @@ For `Cardio-Readmit-H4`, the held-out AUROC is `0.79` against a `0.75` baseline 
 2. State the smallest supported difference and consequence; stop if that answers the question.
 3. When numbers matter, select the space and specification and build each coordinate through C.16 or C.2.1.
 4. Compare with declared gates and a partial order; keep incomparability visible. When a retained set matters, report its declared `Diversity_P` or other needed set reading without turning that reading into selection policy.
-5. Pass any generation, retention, policy, or choice question to C.18, C.19, G.5, or C.11 with the result references they need.
+5. Pass generation or retention questions to C.18, pool-policy questions to C.19, selector-facing declarations to G.5, and choice questions to C.11, with the result references each needs.
 
 #### C.17:10.1 - Optional one-page comparison brief
 
@@ -372,7 +372,7 @@ This brief is a representation of the selected configuration and results. It doe
 
 ### C.17:14 - SoTA-Echoing and source use
 
-**Source-currentness boundary (reviewed through 2026-08-15).** The sources below were selected because they change what a C.17 user inspects or reports. They do not install one creativity theory, automated judge, metric, or search algorithm as the FPF default. Reopen this source-use judgement when a cited source is corrected, retracted, or materially superseded; when new cross-domain evidence overturns one of the stated consequences; or when a proposal would make one automated metric, corpus, encoder, QD descriptor, or proxy score normative. Use `G.11` for that refresh.
+**Source-use boundary.** The sources below change what a C.17 user inspects or reports. They do not install one creativity theory, automated judge, metric, or search algorithm as the FPF default. Reopen this source-use judgement when a cited source is corrected, retracted, or materially superseded; when new cross-domain evidence overturns one of the stated consequences; or when a proposal would make one automated metric, corpus, encoder, QD descriptor, or proxy score normative. Use `G.11` for that refresh.
 
 | Current practice and source | Source-use decision | Concrete C.17 consequence |
 | --- | --- | --- |
@@ -381,7 +381,7 @@ This brief is a representation of the selected configuration and results. It doe
 | Test whether a result survives reasonable corpus, metric, and representation choices. Lu et al., `Rethinking Creativity Evaluation: A Critical Analysis of Existing Creativity Evaluations`, EACL 2026, DOI `10.18653/v1/2026.eacl-long.297`; Stein et al., `Exposing Flaws of Generative Model Evaluation Metrics and Their Unfair Treatment of Diffusion Models`, NeurIPS 2023, DOI `10.52202/075280-0165`. | **Adopt** sensitivity checking and comparison with evidence suited to the receiving domain. **Adapt** it by making the corpus, inclusion rule, Method, model or encoder, distance, calibration, and uncertainty part of the claim. **Reject** transfer of one metric across domains, minor prompt or implementation stability as validity, and leaderboard standing as evidence of the bearer characteristic. | For a load-bearing value, inspect neighbours and run the applicable corpus/Method sensitivity or invariance probe. If the conclusion changes, report that dependence or incomparability instead of hiding it in one score; `CC-C17-4` and `CC-C17-11` make this visible. |
 | Check whether optimizing a proxy stops improving the result that matters. Gao, Schulman, and Hilton, `Scaling Laws for Reward Model Overoptimization`, ICML 2023, PMLR 202:10835-10866, `https://proceedings.mlr.press/v202/gao23h.html`. | **Adopt** the warning that further proxy optimization can reduce performance under a separate target judgement. **Adapt** it by retaining primitive coordinates, gates, evidence, and held-out or delayed observations and by giving the local result a stop or reopen condition. **Reject** the reward-model setting or its fitted scaling law as a universal degradation model, and reject a rising proxy score as evidence that the bearer improved. | The design and policy cases keep tooling and legal or equity gates visible even when another value improves. Scalarization never erases the primitive coordinates; later target evidence can reopen only the claims that relied on the proxy. |
 
-These decisions reinforce the existing route rather than add another assurance layer. In the pump case, inspect the admitted design set and tooling constraint; in the hospital case, keep the held-out result separate from unsupported transfer; in the policy case, keep the missing subgroup evidence as an eligibility gap. The source record therefore changes the comparison and robustness work already required by the cases and checklist, not the practitioner-first entry.
+These decisions reinforce the existing route rather than add another assurance layer. In the pump case, inspect the admitted design set and tooling constraint; in the hospital case, keep the held-out result separate from unsupported transfer; in the policy case, keep the missing subgroup evidence as an eligibility gap. The source-use decisions therefore change the comparison and robustness work already required by the cases and checklist, not the practitioner-first entry.
 
 ### C.17:15 - Open questions
 

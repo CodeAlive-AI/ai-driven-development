@@ -22,11 +22,11 @@ Use this pattern when a claim needs a reusable kind, a subkind comparison, a jud
 
 `U.Kind` is the admitted meta-kind whose individuals are reusable intensional classification distinctions. One kind individual is recovered by its declared candidate domain, the membership condition that distinguishes intended members from non-members, and the continuity rule for a material declaration change. A `KindSignature` states that content for repeated use but is not the kind itself. A current extension can change while the kind continues, and two different intensional kinds can happen to classify the same current candidates.
 
-A practice, source, team, or locality tells a reviewer where meaning may have changed. It does not decide kind identity. When a typed use moves, compare the exact membership distinctions. Reuse the same kind when the candidate domain and operative distinction continue. If they differ, identify two kinds; only then can C.3.3 ask whether an exact directional `KindBridge` obtains. When local wording or interpretation also differs, F.9 may relate the corresponding F.17 cells, but it neither creates the kinds nor maps a `U.ReferenceScheme` as a whole. A changed scheme creates another `KindSignature` edition; C.3.1 separately decides kind continuity. A changed `U.ContextSlice` alone creates neither a kind nor a bridge.
+A practice, source, team, or locality tells a reviewer where meaning may have changed. It does not decide kind identity. When a typed use moves, compare the exact membership distinctions. Reuse the same kind when the candidate domain and operative distinction continue. If they differ, identify two kinds; only then can C.3.3 ask whether an exact directional `KindBridge` obtains. When local wording or interpretation also differs, F.9 may relate the corresponding F.17 cells, but it neither creates the kinds nor maps a `U.ReferenceScheme` as a whole. A change to the declaration's effective `U.ReferenceScheme` identifies another episteme under C.2.1. Judge its `U.Signature` membership under A.6.0 and its `KindSignature` qualification under C.3.2 separately; call it another edition only when the C.2.1 `EpistemeEditionRelation` obtains. C.3.1 separately decides kind continuity. A changed `U.ContextSlice` alone creates neither a kind nor a bridge.
 
 ### C.3:2 - Problem
 
-A project often needs classification before it needs another public ontology name. If the kind, its definition, the classified candidate, a record about the candidate, and a displayed set of current members are treated as one object, a label classifies by itself, evidence creates its subject, missing information proves non-membership, a table becomes an entity set, or a plan row becomes actual Work. If locality is made an identity key, the same kind also fragments across teams and sources. C.3 keeps each conclusion at its direct pattern.
+A project often needs classification before it needs another public ontology name. If the kind, its definition, the classified candidate, a record about the candidate, and a displayed set of current members are treated as one object, a label classifies by itself, evidence availability is mistaken for criterion satisfaction, missing information proves non-membership, a table becomes an entity set, or a plan row becomes actual Work. If locality is made an identity key, the same kind also fragments across teams and sources. C.3 keeps each conclusion at its direct pattern.
 
 ### C.3:3 - Forces
 
@@ -79,9 +79,9 @@ Typed reasoning composes with F-G-R and USM in this order: recover kind compatib
 | May this candidate be evaluated under this declaration and slice? | `C.3.2` admissibility; `not-applicable` forms no three-valued judgment |
 | Does this admissible candidate satisfy this kind under this declaration edition and slice? | `C.3.2` returns `true`, `false`, or `unknown` |
 | Does a receiving use need the represented set of true members? | `C.3.2`; `C.29` when the representation itself changes a claim-bearing use |
-| Does the assertion hold in a target slice? | `A.2.6` for its `U.ClaimScope`; do not attach that scope to the kind |
+| Does the target slice belong to the assertion's declared claim scope? | `A.2.6` for its `U.ClaimScope`; do not attach that scope to the kind |
 | Did the practice, source, team, or other locality change? | Compare exact kind definitions. Reuse the same kind when its distinction continues. Use `C.3.3` only after two distinct kinds and a proposed correspondence are independently present |
-| Did only the reference-scheme edition change? | `C.3.2` for another `KindSignature` edition and `C.3.1` for continuity and any renewed subkind test; the scheme is not a kind or relation-occurrence identity key |
+| Did only the declaration's effective reference scheme change? | `C.2.1` for another episteme and the separate edition-continuity test; `A.6.0` and `C.3.2` for signature qualification; `C.3.1` for kind continuity and any renewed subkind test; the scheme is not a kind or relation-occurrence identity key |
 | Did only the context slice change? | `C.3.2` for another applicability check, judgment input, and possible extension; the slice alone creates no bridge |
 | Is this kind proposed as another durable public FPF `U.*` kind? | `E.24.UK`, followed by applicable naming patterns |
 | Is a candidate, quality, relation, construction, episteme, status, publication occurrence, or Work being identified? | Its direct subject pattern; C.3 consumes that result and does not create it by classification notation |
@@ -95,7 +95,7 @@ The unfolding is admitted only when the block names the starting representation,
 | Situation | C.3 typed-reasoning move | Boundary |
 | --- | --- | --- |
 | Pump #14 is evaluated as a cooling pump. | Use one local kind, one declared criterion, one exact plant slice, and one `true`/`false`/`unknown` judgment. | The pump and its cooling, flow, and measured-state facts remain under direct physical and measurement governors. |
-| A maintenance episteme is classified while PDF and HTML forms circulate. | Judge the exact episteme against the local kind criterion. | Publication form and carrier do not decide membership. |
+| A maintenance episteme is classified by its instruction content while PDF and HTML forms circulate. | Judge the exact episteme against the local kind criterion. | Changing only publication form or carrier leaves this content-based judgment unchanged. |
 | A temperature value is classified into an interval. | Keep the value under its unit and measurement interpretation and judge the value directly. | Do not fabricate a value-shaped entity merely to classify it. |
 | A schema labels a row `Customer`. | Treat the label as a cue to recover the actual candidate and criterion. | Schema spelling alone yields neither `true` nor a public U-kind. |
 | A measurement required by a criterion is unavailable. | Return `unknown`; let a safety guard decline the use separately. | Do not coerce missing information to `false`. |
@@ -125,7 +125,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 * Treating a programming type, schema class, source ontology class, regulatory category, or ordinary noun as a durable public FPF U-kind.
 * Treating a `KindSignature` as the kind, or attaching its formality and claim scope to the kind.
 * Using a world-side belongs-to predicate or minting a classification relation merely to state one judgment.
-* Treating evidence availability, a schema row, or a publication form as the fact that makes classification true.
+* Treating evidence availability, a schema row, or a publication form as sufficient for classification when the criterion requires a different governed condition.
 * Returning `false` when the criterion cannot be evaluated.
 * Treating `KindExtension` or mathematical set notation as ontology.
 * Repairing a subkind counterexample by silently changing an extension table.
@@ -141,7 +141,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 
 ### C.3:12 - Rationale
 
-The kind, its declaration, pre-judgment admissibility, one classification judgment when admissible, and a representation of current true members answer different engineering questions and change for different reasons. Keeping them separate lets a kind continue across compatible declaration revisions, lets candidate state change an extension without changing the kind, and lets evidence or a guard change reliance without rewriting the world-side classification.
+The kind, its declaration, pre-judgment admissibility, one classification judgment when admissible, and a representation of current true members answer different engineering questions and change for different reasons. Keeping them separate lets a kind continue across compatible declaration revisions, lets candidate state change an extension without changing the kind, and lets evidence or a guard change reliance without changing what makes the criterion hold.
 
 ### C.3:13 - SoTA-Echoing
 

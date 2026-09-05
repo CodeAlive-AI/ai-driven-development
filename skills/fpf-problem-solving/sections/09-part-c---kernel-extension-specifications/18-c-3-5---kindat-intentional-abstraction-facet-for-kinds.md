@@ -11,7 +11,7 @@
 - **C.3/C.3.1:** the context-local `U.Kind`, obtaining `U.SubkindOf` relations, and kind continuity.
 - **C.3.2:** the separate `KindSignature` declaration episteme, exact four-input classification judgment, and optional pinned-edition extension representation.
 - **C.3.3:** the obtaining `KindBridge` relation and its separate bridge-assertion episteme carrying `CL^k`, loss, evidence, and admitted use.
-- **C.3.4:** the `RoleMask` declaration episteme and exact masked judgment.
+- **C.3.4:** the `KindUseAdaptationDeclaration` episteme and exact `KindUseAdaptationJudgment`.
 - **A.2.6, C.2.2, and C.2.3:** Claim/Work scope, F–G–R, and `U.Formality` on the episteme that owns it.
 - **MM-CHR:** the Facet-versus-Characteristic distinction.
 
@@ -25,9 +25,9 @@ KindAT gives that planning vocabulary while keeping the governing objects separa
 
 - the local kind and its order remain under C.3/C.3.1;
 - the `KindSignature` remains a declaration episteme whose own `U.Formality` may change;
-- `J(candidate, kind, signatureEdition, slice)` remains `true`, `false`, or `unknown`;
+- for an admissible request, `J(candidate, kind, signatureEdition, slice)` remains `true`, `false`, or `unknown`;
 - any `KindExtension` remains a pinned-edition representation of true candidates; and
-- bridge and mask objects retain the ontology assigned by C.3.3 and C.3.4.
+- bridge and kind-use adaptation objects retain the ontology assigned by C.3.3 and C.3.4.
 
 ### C.3.5:2 - Orthogonality and rationale
 
@@ -49,7 +49,7 @@ Calling KindAT a Characteristic would invite a second scope axis, an abstraction
 
 **Non-example.** A stable invariant-bearing distinction belongs nearer K2 even if few candidates are currently known.
 
-**Planning.** Prefer exact slice-bound judgments and assurance over the current candidate domain. Cross-context reuse is likely to need explicit instance correspondence and may have low `CL^k`.
+**Planning.** Prefer exact slice-bound judgments and assurance over the current candidate domain. Cross-context reuse is likely to need explicit instance correspondence. If the use relies on a KindBridge between distinct kinds, `CL^k` may be low.
 
 #### C.3.5:3.2 - K1 — Behavioral pattern
 
@@ -98,8 +98,8 @@ These are planning cues, not default F values, R values, classification results,
 - **“Gate on KindAT.”** Wrong: use the exact classification, scope, evidence, and policy predicates required by the receiving guard.
 - **“Depth in `U.SubkindOf` determines KindAT.”** Wrong: the facet concerns intentional stance, not graph depth.
 - **“KindAT belongs on the claim or signature.”** Wrong: the tag is on the local kind; a catalog may represent that assignment.
-- **“A reused RoleMask has been promoted automatically.”** Wrong: if the distinction is conceptual and stable, separately identify a local kind and establish any obtaining `U.SubkindOf` relation under C.3.1.
-- **“KindAT rates quality.”** Wrong: formality belongs to the relevant episteme and assurance belongs to the receiving support path.
+- **“A reused kind-use adaptation declaration has been promoted automatically.”** Wrong: if the distinction is conceptual and stable, separately identify a local kind and establish any obtaining `U.SubkindOf` relation under C.3.1.
+- **“KindAT rates quality.”** Wrong: formality belongs to the relevant episteme; assurance concerns an exact target claim and a named receiving use under B.3.
 
 ### C.3.5:6 - Usage rules (normative)
 
@@ -109,9 +109,9 @@ These are planning cues, not default F values, R values, classification results,
 
 **AT-03 (No F–G–R effect).** Editors SHALL NOT imply that a higher KindAT widens G, raises the signature episteme's F, increases R, or changes a classification value. Any such sentence MUST name the actual declaration, scope, evidence, or receiving-use change.
 
-**AT-04 (Bridge neutrality).** Neither an obtaining KindBridge relation nor its bridge-assertion episteme computes or alters KindAT. The assertion may record an informative anchor comparison, but `CL^k` remains a separate assessment of the admitted bridge use from demonstrated signature/order preservation and loss.
+**AT-04 (Bridge neutrality).** Editors assign KindAT from the kind's intentional stance. The bridge-assertion episteme may record an informative anchor comparison, but `CL^k` remains a separate assessment of the admitted bridge use from demonstrated signature/order preservation and loss.
 
-**AT-05 (Catalog representation).** When a context uses KindAT, its catalog SHOULD identify the local kind and effective reference scheme and reference, rather than collapse, the current `KindSignature` edition, obtaining subkind relations, RoleMask declaration editions, KindBridge occurrences/assertions, and optional extension representations. Absence of a tag means “not set”, not K0.
+**AT-05 (Catalog representation).** When KindAT is represented in a catalog, the catalog SHOULD identify the local kind and effective reference scheme and reference, rather than collapse, the current `KindSignature` edition, obtaining subkind relations, `KindUseAdaptationDeclaration` editions, KindBridge occurrences/assertions, and optional extension representations. Absence of a tag means “not set”, not K0.
 
 ### C.3.5:7 - Authoring and review guidance (informative)
 
@@ -127,14 +127,14 @@ These are planning cues, not default F values, R values, classification results,
 1. Is the tagged object the exact local kind rather than its signature, card, candidate, claim, or extension?
 2. Does the anchor describe the kind's intentional stance rather than the current number of candidates?
 3. Are proposed F and R changes stated as planning decisions over their actual owners rather than effects of KindAT?
-4. Does a stable mask distinction require a separately identified kind and independently obtaining subkind relation?
-5. Does cross-context use recover the exact KindBridge occurrence and separate bridge assertion instead of inferring congruence from the tag?
+4. Does a stable distinction expressed in an adaptation declaration require a separately identified kind and independently obtaining subkind relation?
+5. When cross-context use relies on a KindBridge, does it recover the exact occurrence and separate bridge assertion instead of inferring congruence from the tag?
 
 ### C.3.5:8 - Integration notes (informative)
 
 - **C.3.1/C.3.2.** KindAT may guide work on the signature declaration and assurance plan; it changes neither kind continuity nor the four-input judgment.
 - **C.3.3.** KindAT may suggest what preservation evidence to seek. The bridge assertion, not the tag, carries `CL^k`, loss, evidence, and admitted use.
-- **C.3.4.** Repeated mask use is a review cue only. A new local kind and any `U.SubkindOf` relation are established independently.
+- **C.3.4.** Repeated adaptation-declaration use is a review cue only. A new local kind and any `U.SubkindOf` relation are established independently.
 - **A.2.6.** Scope remains G on the claim or Work use. KindAT never supplies coverage.
 - **C.2.3.** The relevant declaration or claim episteme owns F. KindAT can motivate investment but cannot assign the value.
 
@@ -143,7 +143,7 @@ These are planning cues, not default F values, R values, classification results,
 - **K0.** `Account_US_GAAP_2025_Q1_Cohort`: use exact candidate judgments in the pinned quarter slice; do not infer a broad kind from one query result.
 - **K1.** `CacheableRequest`: make retry/idempotence behavior evaluable in a named signature edition and test diverse failure modes.
 - **K2.** `Account`: use explicit posting and balance invariants, test relevant subkinds, and evaluate each candidate with the exact signature edition and slice.
-- **K3.** `UndirectedGraph` up to node relabeling: state the equivalence notion and require bridge/evidence witnesses that preserve it.
+- **K3.** `UndirectedGraph` up to node relabeling: state the equivalence notion and require equivalence witnesses that preserve it. Any KindBridge use additionally needs the distinct-kind correspondence and preservation basis required by C.3.3.
 
 ### C.3.5:10 - Conformance checklist (normative)
 
@@ -153,7 +153,7 @@ These are planning cues, not default F values, R values, classification results,
 | **AT-02** | The tag designates one exact local kind; catalogs only represent that assignment and its references. |
 | **AT-03** | No text makes KindAT change F, G, R, classification truth, or extension contents. |
 | **AT-04** | KindBridge relation, bridge assertion, `CL^k`, and KindAT remain separate. |
-| **AT-05** | Catalog use references the separate signature, order, mask, bridge, and extension objects without collapsing them. |
+| **AT-05** | Catalog use references the separate signature, order, kind-use adaptation, bridge, and extension objects without collapsing them. |
 
 ### C.3.5:End
 

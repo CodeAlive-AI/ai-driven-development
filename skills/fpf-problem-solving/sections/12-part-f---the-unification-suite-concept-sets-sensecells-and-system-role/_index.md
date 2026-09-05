@@ -24,4 +24,4 @@
 - [F.16 - Worked-Example Template (Cross-Domain)](19-f-16---worked-example-template.md) (238 lines) — “Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”
 - [F.17 - Unified Term Sheet](20-f-17---unified-term-sheet.md) (1052 lines) — Type: Lexical row pattern (F)
 - [F.18 - Local-First Unification Naming Protocol](21-f-18---local-first-unification-naming-protocol.md) (892 lines) — Pattern state: stable pattern. Audience: engineer-managers, lead architects, ontology editors, and authors who must make one name reusable without turning that name into a hidden ontology.
-- [F.19 - Ontology-First Plain Technical Rewriting](22-f-19---ontology-first-plain-technical-rewriting.md) (318 lines) — Type: Plain-technical precision-restoration pattern
+- [F.19 - Ontology-First Plain Technical Rewriting](22-f-19---ontology-first-plain-technical-rewriting.md) (321 lines) — Type: Plain-technical precision-restoration pattern

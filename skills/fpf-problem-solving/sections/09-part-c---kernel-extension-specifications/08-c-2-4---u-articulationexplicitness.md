@@ -10,7 +10,7 @@
 
 **What goes wrong if missed.** A formal-looking sentence is treated as semantically ready, a real early cue is discarded as too vague, or every partly explicit note is forced through relation repair even when it is a plan, MethodDescription, Work claim, representation, question, characteristic, or ordinary domain statement.
 
-**What this buys.** One branch-neutral ordinal characteristic: a stable cue can grow into recoverable governed structure, a complete form for its actual semantic branch, and a stable receiving use without confusing articulation with formality, closure, truth, trust, or endpoint authority.
+**What this buys.** One branch-neutral ordinal characteristic: a stable cue can acquire recoverable governed structure and a complete form for its actual semantic branch, with meaning that remains stable in a receiving use, without confusing articulation with formality, closure, truth, trust, or endpoint authority.
 
 ### C.2.4:1 - Problem frame
 A governed `U.Episteme` can matter while its semantic shape is only partly explicit. The declared language-state chart over `U.CharacteristicSpace` therefore needs one basis-slot pattern for how much of that shape a reader can recover, without assuming in advance whether the direct branch is relational, planning, method, Work, representation, prompt, characteristic, or ordinary domain content.
@@ -48,12 +48,12 @@ When articulation explicitness stays implicit, authors either overstate readines
 | `AE2` | candidate anchors, participants, actions, fields, or meanings are visible, but the branch or structure remains partial | route candidates and missing pieces can be stated |
 | `AE3` | the governed claim structure is recoverable enough to choose its direct semantic branch | the relevant repair or authoring pattern may receive it if the local threshold is met |
 | `AE4` | a complete branch-appropriate form is publishable with the participants, conditions, and bounds needed by the current use | the direct subject pattern can check or use the publication |
-| `AE5` | the meaning remains stable in one named receiving use, and a later change can be reviewed without reconstructing it from the source | the receiving use is straightforward, though not automatically true, closed, trusted, or authorized |
+| `AE5` | the meaning remains stable in one named receiving use, and a later change can be reviewed without reconstructing it from the source | the receiving use is straightforward; the level alone does not settle truth, closure, trust, or use authorization |
 
 The anchors are a starter set. A local use may refine them, but it shall keep the common direction and the distinction from `F` intact. A refined anchor may be branch-relative; it may not make relation structure the universal measure of articulation.
 
 #### C.2.4:4.3 - Use discipline
-- `AE` may state an entry threshold for the direct semantic branch named by the current use.
+- An entry threshold may be stated in `AE` for the direct semantic branch named by the current use.
 - `A.6.P` is only the relational branch. A note does not enter it merely because a table, arrow, or sentence looks relation-shaped.
 - `AE` may justify why an episteme remains in `A.16.1` or `B.4.1` while its branch or required structure is still unresolved.
 - A local threshold shall name both the intended receiving pattern and the branch-appropriate structure it requires.
@@ -101,10 +101,10 @@ The distinction echoes work on sketching, focusing/TAE, embodied cue capture, an
 ### C.2.4:13 - Worked Examples and Edge Cases
 
 #### C.2.4:13.1 - High formality, low articulation
-A template may be syntactically precise and therefore high in `F`, yet still low in `AE` because the actual participants, field meanings, bearer, planned action, admitted Work occurrence, reliance move, evaluator, or ordinary domain meaning remains unclear. A local system-role kind, classification, or assignment is selected only after evidence supports that branch. Formal-looking language does not make its semantic route recoverable.
+A template may be syntactically precise and high in `F`, yet still low in `AE` because the actual participants, field meanings, bearer, planned action, admitted Work occurrence, reliance move, evaluator, or ordinary domain meaning remains unclear. A local system-role kind, classification, or assignment is selected only after evidence supports that branch. Formal-looking language does not make its semantic route recoverable.
 
 #### C.2.4:13.2 - Plain plan, high articulation
-The note `At 14:00, Maintenance Team 2 will isolate Pump P-17, replace Seal S-4, and restore service only after Leak Test LT-9 passes` uses ordinary language and little formal notation. It can still reach `AE4`: the planned actor, affected entity, ordered actions, time, and completion condition are explicit enough for the planning branch. It routes to `A.15`; it is not yet an `A.15.1` Work occurrence and needs no relation repair merely to count as explicit.
+The note `At 14:00, Maintenance Team 2 will isolate Pump P-17, replace Seal S-4, and restore service only after Leak Test LT-9 passes` uses ordinary language and little formal notation. It can still reach `AE4`: the planned actor, affected entity, ordered actions, time, and completion condition are explicit enough for the planning branch. It routes to `A.15`; the note describes planned actions, while `A.15.1` governs any admitted Work occurrence. The note needs no relation repair merely to count as explicit.
 
 #### C.2.4:13.3 - Relation-looking but wrongly routed
 A row `Maintenance Team 2 | Pump P-17 | isolate | 14:00` looks slot-shaped. If it records intended action, however, it is a compact plan row rather than proof of a durable relation. Its layout does not raise `AE` until the planning meaning and conditions are recoverable, and it does not select `A.6.P`.
@@ -135,14 +135,14 @@ If `AE` determines whether an episteme stays in `A.16.1`, passes through `B.4.1`
 Contexts may refine the starter anchor set with subanchors, but the refinement must preserve the ordinal direction and the distinction from `F` and `CD`.
 
 #### C.2.4:15.2 - Migration from vague articulation prose
-Statements such as "still vague", "more explicit now", or "ready for formalization" should be migrated into explicit `AE` claims plus the corresponding move or routing claim.
+When routing or use depends on articulation, statements such as "still vague", "more explicit now", or "ready for formalization" should be migrated into explicit `AE` claims plus the corresponding move or routing claim.
 
 #### C.2.4:15.3 - Boundary reminder
 `AE` does not govern closure, confidence, or warrant. If authors want those meanings, they must publish them through their own governing patterns.
 ### C.2.4:16 - Articulation Publication Package Discipline
 
 #### C.2.4:16.1 - Minimal articulation package
-An `AE` claim that changes routing or use should publish more than a level token. State:
+An `AE` claim that changes routing or use should be published with more than a level token. State:
 
 - the exact episteme publication being judged;
 - the stable cue, question, or contrast;
@@ -157,18 +157,18 @@ Unresolved claim-bearing `role` wording goes first to `E.10.ROLE`. A bare `AE3` 
 When `AE` controls a route change, publish the intended receiving pattern, its semantic branch, the minimum recoverable structure it requires, and the current evidence that the publication meets or misses that threshold. A relational route may name `A.6.P`; another branch names its own receiving pattern.
 
 #### C.2.4:16.3 - Evidence-limited rise rule
-`AE` may rise only as far as the published anchors, slots, and contrasts warrant. Stylistic polish, templates, or rhetorical confidence do not raise `AE` on their own.
+`AE` may rise only as far as the published branch-appropriate structure—including any relevant anchors, slots, or contrasts—warrants. Stylistic polish, templates, or rhetorical confidence do not raise `AE` on their own.
 
 ### C.2.4:17 - Threshold Crossing and Split Handling
 
 #### C.2.4:17.1 - Branch-aware high-articulation exits
 At `AE3+`, use the local threshold of the direct branch rather than one universal destination:
 
-- for an actual relation claim, use `A.6.P` to restore relation precision and then return the claim to its direct relation pattern;
+- for an actual relation claim, restore precision through `A.6.P` when needed, then use its direct relation pattern;
 - for a plan or intended activity, use `A.15`;
 - for a Method, use `A.3.1`, while its MethodDescription remains an episteme under `C.2.1`;
-- for an admitted dated Work occurrence, use `A.15.1`;
-- for a representation claim, use `C.2.P.DR`, adding `A.6.3.RT` only when a representation transition is current;
+- for a dated Work-occurrence claim, use `A.15.1` to test or recover admission;
+- for a representation claim, use its direct subject pattern; use `C.2.P.DR` when declarative form is being overread, adding `A.6.3.RT` only when a representation transition is current;
 - for an abductive prompt or explicit open question, use `B.5.2.0` or the direct question pattern;
 - for a Characteristic or Scale claim, use `A.17` and `A.18`, with `C.16.P` when its scalar wording hides the construction;
 - for an ordinary domain claim, keep the episteme publication under `C.2.1` and use the direct domain pattern that governs its subject.
@@ -191,13 +191,13 @@ A reviewer should ask:
 - is the direct semantic branch explicit, or is a relation route being inferred from presentation alone;
 - are the participants, actions, fields, meanings, conditions, bounds, or ordinary wording required by that branch still hidden;
 - has an intended activity or plan been mislabeled as Tech `Work` before an occurrence is admitted;
-- if `AE` justifies a route change, is the named receiving pattern actually ready to receive this publication?
+- if `AE` justifies a route change, does the publication meet the named receiving pattern's entry conditions?
 
 #### C.2.4:18.2 - Endpoint-boundary test
 High `AE` does not by itself authorize endpoint claims, gate claims, or quality ascriptions. If such consequences appear, show which downstream governing pattern takes over.
 
 #### C.2.4:18.3 - Migration note for false precision
-Rigid templates, capitalized labels, or tidy sentence rhythm can simulate articulation. Migration should therefore test whether anchors and slots are really present; if not, the articulation level should drop.
+Rigid templates, capitalized labels, or tidy sentence rhythm can simulate articulation. Migration should therefore test whether the claimed branch-appropriate structure, including any required anchors or slots, is really recoverable; if not, the articulation level should drop.
 
 ### C.2.4:End
 

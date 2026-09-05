@@ -34,7 +34,7 @@ The failure is not merely excess documentation. It obscures who performs the wor
 | One current path vs live alternatives | Inventing rivals creates bureaucracy; ignoring genuine alternatives can lock in avoidable cost or loss. |
 | Local economy vs reuse | One-off work favors a small path; repeated work can amortize configuration and improve transfer. |
 | Direct kinds vs shared comparison | Unlike candidates must retain their kinds while being compared against one declared use and guarantee. |
-| Method guidance vs actual work | A practitioner can use a `U.MethodDescription` episteme as guidance; that episteme cannot configure or apply itself. |
+| Method guidance vs actual work | A practitioner can use a `U.MethodDescription` episteme as guidance when performing the configuration or application work. |
 
 ### C.19.2:4 - Solution
 
@@ -44,11 +44,11 @@ Use this minimal lens before taking a branch:
 
 1. **Declared use:** the practical question, direct result kind, claimed guarantee, non-negotiable constraints, and horizon.
 2. **Selected or candidate direct-kind object:** the method description, model, ontology module, formal technique, or other governed object being considered.
-3. **Application MethodDescription:** this pattern's `U.MethodDescription` episteme and the admitted `U.Method` it describes. A practitioner uses its claims to guide the Work; neither the episteme nor the Method performs it.
+3. **Application MethodDescription and described Method:** this pattern's `U.MethodDescription` episteme and the admitted `U.Method` it describes. A practitioner uses its claims to guide the Work.
 4. **Performer and work:** when an admitted `U.System` performs dated configuration or application `U.Work` using the described Method, recover its A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the present use needs precise assignment-bound attribution. In a short account, expose assignment identity, species, participants, or attribution detail only when the use relies on them, attribution is ambiguous, or source wording must be repaired.
 5. **Problem-facing result:** the domain, engineering, assurance, architecture, or other subject-pattern result inspected after the work.
 
-The intended reader may also be the person-system that performs the Work, but reader position and performer relation remain different. A plan, checklist, `U.MethodDescription` episteme, described Method, option row, or publication cannot occupy the performer position.
+The intended reader may also be the person-system that performs the Work, but reader position and performer relation remain different.
 
 #### C.19.2:4.2 - Select the truthful application branch
 
@@ -56,9 +56,9 @@ The intended reader may also be the person-system that performs the Work, but re
 
 **Candidate generation or reframing.** When no adequate current object is available and the live question is to invent, expand, retain, or reframe candidates, use `C.18`. This pattern may supply the declared use and eligibility basis, but candidate-generation work is not a choice result.
 
-**Local choice.** Only when two or more already-available eligible alternatives, or another genuine local-choice question over a live set, are current use `C.11` for `OptionSet`, `ChoiceRule`, probing, and `ChoiceResult`.
+**Local choice.** Only when two or more already-available eligible alternatives, or another genuine local-choice question over a live set, are current, use `C.11` for `OptionSet`, `ChoiceRule`, probing, and `ChoiceResult`.
 
-**Post-choice enactment.** A singular selected direct-kind object enters `A.15.2` planning when a plan is needed and `A.15.1` dated work when applied. `C.24` is the pattern for sequencing, budgeting, checkpointing, and replanning only when the selected object is enacted through tool-call work.
+**Post-choice enactment.** For a singular selected direct-kind object, use `A.15.2` to plan its application when a plan is needed and `A.15.1` for the dated application Work. `C.24` is the pattern for sequencing, budgeting, checkpointing, and replanning only when the application involves tool-call work.
 
 #### C.19.2:4.3 - Admit candidates by one use-bounded predicate
 
@@ -81,7 +81,7 @@ These four dispositions form the complete current `C.11` result set. “Configur
 4. For each current path, state the smallest adaptation/configuration work and the useful-result threshold: what must be learned, evidenced, integrated, or reviewed before the path can improve the use.
 5. Compare available time and budget, prior exposure, post-threshold efficiency, transfer, retention, interoperability, downside, reversibility, and expected reuse using values supplied by their subject patterns. Do not compress them into an undeclared scalar.
 6. If choice is current, consume one lawful `C.11 ChoiceResult`; otherwise continue on the one-apparatus path.
-7. Prepare the needed `A.15.2` plan or, for tool-call enactment, `C.24` call plan. Have the admitted system perform `A.15.1` work.
+7. On a branch that proceeds to application, prepare the needed `A.15.2` plan or, for tool-call enactment, `C.24` call plan. Have the admitted system perform `A.15.1` work.
 8. Inspect the separately governed problem-facing result. Keep an application/configuration note only when reuse, dispute, automation, or consequence makes it useful.
 
 #### C.19.2:4.5 - Stop and reopen
@@ -92,7 +92,7 @@ Reopen when a consequential counterexample, failed result, changed use or guaran
 
 #### C.19.2:4.6 - Optional demonstration, not an admitted structure
 
-A short branch presentation may show one-apparatus, candidate-generation, choose, probe/reject, application, result, and reopen continuations as a `ProvisionalUnfoldingDemonstrationDescription@Context`. It is an episteme for teaching. It is not an admitted `U.Structure`, CGUS, work plan, work occurrence, or result; admission requires every `A.22.CGUS` coordinate independently.
+A short branch presentation may show one-apparatus, candidate-generation, choose, probe/reject, application, result, and reopen continuations as a `ProvisionalUnfoldingDemonstrationDescription@Context`. It is an episteme for teaching. The presentation alone establishes no admitted `U.Structure`, CGUS, work plan, work occurrence, or problem-facing result; CGUS admission requires every `A.22.CGUS` coordinate independently.
 
 ### C.19.2:5 - Archetypal Grounding
 
@@ -107,7 +107,7 @@ A separately admitted maintenance-decision System then performs decision Work us
 
 ### C.19.2:6 - Bias-Annotation
 
-Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: cross-domain bounded application work.
+Applicable bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: cross-domain bounded application work.
 
 The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar terminology is treated as practical superiority. The mitigation is one declared result and guarantee, direct-kind candidates, actual adaptation/work cost, and a positive one-apparatus path. A second bias is automation optimism; cheaper computation does not erase evidence, human attention, integration, or consequence review.
 
@@ -131,7 +131,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | Configure everything because the basis is rich. | Name the useful-result threshold and retain only setup work with expected return. |
 | Invent a rival to make the method look comparative. | Use the one-apparatus path until candidate or choice work is genuinely current. |
 | Call candidate generation a choice. | Use `C.18 for generation/reframing`; let `C.11` operate only on an existing eligible set. |
-| Treat `ChoiceResult` as a plan or result. | Keep selected object, plan, dated work, application note, and domain result separate. |
+| Treat the apparatus-choice `ChoiceResult` as an application plan or the problem-facing result. | Keep selected object, plan, dated work, application note, and domain result separate. |
 | Let a `U.MethodDescription` episteme, its described Method, a plan, option row, publication, or reader position perform Work. | State in ordinary language that an admitted System performs dated Work using the Method. Recover its A.13 core and independently admit the Work under A.15.1; add F.6 only when the present use needs precise assignment-bound attribution. Expand assignment and attribution detail only when that use needs it, attribution is ambiguous, or the source wording must be repaired. |
 | Rank heterogeneous candidates under one hidden “depth” score. | Preserve direct kinds and compare only declared use-bearing dimensions without hidden scalarization. |
 
@@ -158,7 +158,7 @@ These sources change the positive method: the user starts from a result, may obt
 
 ### C.19.2:12 - Relations
 
-- **Coordinates with:** `C.18` for candidate generation and reframing; `C.19` for candidate/front stewardship; `C.19.1` for scale-amenable bearer preference; `C.22.1` for adaptation signatures; `E.23` for repeated improvement; and `C.31.ASAP` for architecture-scale preference.
+- **Coordinates with:** `C.18` for candidate generation, reframing, and archive/front stewardship; `C.19` for explore/exploit policy over still-live candidate pools; `C.19.1` for scale-amenable bearer preference; `C.22.1` for adaptation signatures; `E.23` for repeated improvement; and `C.31.ASAP` for architecture-scale preference.
 - **Uses conditionally:** `C.11` only when an actual local-choice question over a live eligible set exists. It consumes, but does not extend, the four `ChoiceResult` dispositions.
 - **Hands off enactment to:** `A.15.2` for work plans, `A.15.1` for dated work, and `C.24` only for tool-call enactment planning. The direct domain pattern contains the defining content for the practical result.
 - **Description-level specialization:** `A.7.1` narrows the method claims stated here for consequence-guided ontology analysis. It retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among plan, Work, and result, stop, and reopen. It retains the candidate and choice branch only when that branch is actually triggered. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.

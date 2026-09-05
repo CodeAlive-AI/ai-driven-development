@@ -34,7 +34,7 @@ The sentence `cooling pump is a pump` is useful only when the membership conditi
 | --- | --- |
 | Small typed reasoning vs ontology growth | Projects need reusable kinds without a new public `U.*` name for each distinction. |
 | Preorder vs kind identity | Mutual subkind facts may hold for different intensional kinds; classification equivalence must not collapse their identities. |
-| Criterion entailment vs observed support | Exact rule entailment or an exhaustive closed domain can make the relation obtain; a non-exhaustive sample only supports an assertion. |
+| Criterion entailment vs observed support | Exact rule entailment or exhaustive evaluation of a closed domain can establish the obtaining condition; a non-exhaustive sample only supports an assertion. |
 | Stable kind vs changing declaration | A kind may continue across a compatible change, while a changed membership distinction must not inherit identity silently. |
 | Applicability vs uncertainty | A non-applicable classification request is not an `unknown` judgment and cannot establish or refute a subkind fact. |
 | Locality vs correspondence | A changed practice or source prompts comparison but does not establish another kind or a bridge. |
@@ -55,7 +55,7 @@ The sentence `cooling pump is a pump` is useful only when the membership conditi
 
 A readable sentence such as `CoolingPumpKind is a subkind of PumpKind for this declared plant use` states that the direct relation obtains. It needs no occurrence identifier when no receiver distinguishes or refers to the occurrence.
 
-The criterion-entailment branch obtains when the exact narrower membership condition entails the broader one under the aligned interpretation and applicability. The closed-domain branch obtains only when the candidate domain is deliberately finite and closed, every candidate's admissibility has been checked, and exhaustive evaluation leaves no narrower `true` without a broader `true`. A counterexample refutes either proposal. A missing dependency or `unknown` judgment cannot establish either branch; a `not-applicable` request is outside the comparison.
+The relation obtains under the criterion-entailment branch when the exact narrower membership condition entails the broader one under the aligned interpretation and applicability. Under the closed-domain branch, it obtains only when the candidate domain is deliberately finite and closed, every candidate's admissibility has been checked, and exhaustive evaluation leaves no narrower `true` without a broader `true`. A counterexample refutes either proposal. A missing dependency or `unknown` judgment cannot establish either branch; a `not-applicable` request is outside the comparison.
 
 When a receiver needs one occurrence, `R_sub` is participant-determined by the ordered pair of kind identities. The effective scheme, aligned signatures, and applicability qualify how obtaining is tested and asserted. A scheme-edition change therefore prompts an alignment and renewed test; it does not create another relation occurrence. If the same participants still satisfy the condition, the same relation continues to obtain. If they no longer do, the prior obtaining claim is no longer current; another assertion may record that change without inventing a scheme-keyed occurrence.
 
@@ -69,7 +69,7 @@ When a receiver needs one occurrence, `R_sub` is participant-determined by the o
 6. **Separate relation, predicate, and assertion.** Use the readable relation sentence first. Add `R_sub`, a C.2.1 assertion, evidence, or publication only when a named receiver consumes that object.
 7. **Diagnose counterexamples at the rule.** Repair a false relation proposal, incompatible declaration alignment, or missing distinct-kind bridge. Do not edit an extension row to make the order appear true.
 8. **Decide kind continuity independently.** Apply the before/after test in section 6 whenever criterion, candidate domain, assumptions, dependencies, effective scheme, or locality changes. Another `KindSignature` edition neither proves nor denies kind continuity.
-9. **Keep scope and Work outside the kind.** A kind carries no claim scope. An exact `W : U.Work` remains a dated work occurrence under its direct pattern; a plan, log, label, or classification record is a separate episteme.
+9. **Keep scope and Work outside the kind.** A kind carries no claim scope. An exact `W : U.Work` remains a dated work occurrence under its direct pattern; keep it distinct from a plan, log, label, classification record, or episteme about W.
 
 ### C.3.1:6 - Continuity Decision
 
@@ -94,7 +94,7 @@ Compare the old and proposed declarations in this order:
 | Situation | C.3.1 move | Boundary |
 | --- | --- | --- |
 | `CoolingPumpKind` is below `PumpKind`. | Use criterion entailment: the cooling-pump condition already requires the governed pump condition. State the readable relation and its applicability. | Do not infer a public `U.CoolingPump`, and do not use current extension rows as the truth-maker. |
-| A closed inspection lot has five cabinets. | If the declared candidate domain is exactly those five cabinets, check admissibility and evaluate every candidate. The domain-bounded `InspectedCabinetKind` subkind claim can obtain when every narrower `true` is broader `true`. | The same observations do not establish an open-ended order over all future cabinets. |
+| A closed inspection lot has five cabinets. | If the declared candidate domain is exactly those five cabinets, check admissibility and evaluate every candidate. The domain-bounded subkind relation from `InspectedCabinetKind` to the proposed broader kind can obtain when every narrower `true` is broader `true`. | The same observations do not establish an open-ended order over all future cabinets. |
 | `MorningShiftQualifiedOperatorKind` and `UnionRosteredOperatorKind` happen to select the same people in a closed current roster. | Mutual domain-bounded subkind facts may obtain, giving classification equivalence for this roster. | The kinds remain distinct because their operative membership conditions differ; antisymmetry does not merge them. |
 | A signature adds an aligned unit conversion. | Apply section 6, keep the kind, identify the new signature edition, and retain edition-specific judgments. | Do not rewrite earlier judgments as if the new edition had been used. |
 | A signature changes from physical cooling performance to a schema label. | The boundary probes expose a changed candidate domain and discriminator; identify another kind. | Do not hide the mismatch by editing the extension. |
@@ -154,7 +154,7 @@ Type theory, ontology engineering, and versioned schema practice distinguish int
 - **Specializes:** `A.6.REL` for `U.SubkindOf`: exact ordered kind participants, criterion-entailment or exhaustive closed-domain obtaining, applicability, lightweight occurrence use, and participant-determined identity; schemes and declaration editions qualify interpretation and assertion rather than occurrence identity.
 - **Builds on:** `C.3`, A.6.0 declaration identity, C.2.1 episteme and assertion identity, A.2.6/USM context-slice and scope discipline, F-G-R, and C.2.3 formality.
 - **Coordinates with:** `C.3.2` judgments and extensions, `C.3.3` correspondence between independently identified distinct kinds, `A.2` when one local kind is a system-role kind, `A.6.5` declaration-slot uses that consume an already obtaining subkind relation, `C.29` representations, `E.24.UK` durable U-kind admission, and `A.8`, `A.11`, `F.8`, and `F.5` when public kind governance is current.
-- **Does not replace:** C.2.1 governance of affirmative, negative, or unresolved subkind assertions; a direct candidate-feature governor; classification assertion; kind declaration; context bridge; or public naming decision.
+- **Other governing patterns:** Use C.2.1 for subkind-assertion epistemes, whether affirmative, negative, or unresolved; candidate features, classification assertions, kind declarations, context bridges, and public naming decisions retain their own governing patterns.
 
 ### C.3.1:End
 

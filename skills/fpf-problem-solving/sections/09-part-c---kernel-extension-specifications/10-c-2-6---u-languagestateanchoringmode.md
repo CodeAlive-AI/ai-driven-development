@@ -21,9 +21,9 @@ Without an explicit anchoring-mode declaration, embodiment and source anchoring 
 ### C.2.6:3 - Forces
 | Force | Tension |
 |---|---|
-| **Embodiment vs abstraction** | Preserve embodied and operator-facing cases without making them mystical exceptions. |
+| **Embodiment vs abstraction** | Preserve embodied and operator-facing cases while making their anchoring explicit. |
 | **Small core vs real diversity** | Keep the core compact while allowing multiple admissible anchoring regimes. |
-| **Comparability vs oversimplification** | Compare anchoring regimes without flattening them into text-vs-nontext slogans. |
+| **Comparability vs oversimplification** | Compare anchoring regimes while retaining distinctions that a text-vs-nontext split hides. |
 
 ### C.2.6:4 - Solution
 `U.LanguageStateAnchoringMode` is a nominal characteristic that states the primary anchoring regime of the `U.Episteme` named by the current position claim: bodily enactment, trace, model state, document, operator loop, or an explicit mixed regime. If source anchoring and current publication-face anchoring differ, both shall be distinguished rather than collapsed.
@@ -49,20 +49,20 @@ Without an explicit anchoring-mode declaration, embodiment and source anchoring 
 If embodiment matters, it shall be declared here or immediately beside this characteristic rather than being hidden inside representation talk.
 
 #### C.2.6:4.3 - Mixed-mode rule
-`AM.Mixed` is admissible only when the component modes are named explicitly. "Mixed" shall not be a lazy escape from deciding whether the key anchor is bodily, trace-based, model-latent, document-mediated, or operator-loop based.
+`AM.Mixed` is admissible only when the component modes are named explicitly. "Mixed" shall not stand in for an undetermined anchoring mode.
 
 #### C.2.6:4.4 - Bridge implications
-An anchoring shift can matter when a published `U.Episteme` is translated across semantic contexts. A translation from `AM.EmbodiedFelt` to `AM.DocumentMediated`, or from `AM.ModelLatent` to prose, may provide evidence about an F.9 Bridge or bounded-use claim. Use F.9 to state the Bridge, claim, evidence, and loss account. Use F.9.1 only for a separate optional stance note about that claim.
+An anchoring shift can matter when a receiving use needs a semantic relation between local senses from different semantic contexts. A shift from `AM.EmbodiedFelt` or `AM.ModelLatent` source anchoring to `AM.DocumentMediated` publication-face anchoring may provide evidence about an F.9 Bridge or bounded-use claim. Use F.9 to state and test the Bridge and the separate bounded-use claim, with its evidence and loss account. Use F.9.1 only for a separate optional stance note about that claim.
 
 ### C.2.6:5 - Archetypal Grounding
 **Tell.** A felt cue, a controller-side probe score, and a textual design note may all be early cues, but they are anchored differently.
 
-**Show (System).** An alert tied to an operator console is `AM.OperatorLoop`, not just "text".
+**Show (System).** An alert episteme directly tied to operator intervention or console control has mode `AM.OperatorLoop`, even when displayed as text.
 
-**Show (Episteme).** A model-probe cue grounded in latent state is `AM.ModelLatent` even when rendered into prose.
+**Show (Episteme).** An episteme published from a model-probe cue grounded in latent state has mode `AM.ModelLatent` even when rendered into prose.
 
 ### C.2.6:6 - Bias-Annotation
-The pattern pushes authors to declare anchoring rather than hide it in metaphors such as "the system wants" or "the note suggests".
+The pattern prompts authors to declare anchoring when wording such as "the system wants" or "the note suggests" leaves the anchor unclear.
 
 ### C.2.6:7 - Conformance Checklist
 - `CC-C.2.6-1` Anchoring mode **SHALL NOT** be inferred from publication phrasing alone when it matters for source use, reliance, or bridge interpretation.
@@ -76,7 +76,7 @@ The pattern pushes authors to declare anchoring rather than hide it in metaphors
 - **Embodiment mystification.** Treating bodily or operator-loop cues as beyond explicit publication.
 
 ### C.2.6:9 - Consequences
-The benefit is cleaner reasoning about embodied, operator-facing, trace-based, and model-latent cues. The trade-off is more explicit declaration work and more explicit bridge loss notes when modes shift.
+The benefit is cleaner reasoning about embodied, operator-facing, trace-based, and model-latent cues. The trade-off is more explicit declaration work and, for shifts involved in semantic Bridges, more explicit bridge loss notes.
 
 ### C.2.6:10 - Rationale
 The declared language-state chart over `U.CharacteristicSpace` needs one explicit anchoring basis slot so that `A.16.0`, `A.16.1`, `B.4.1`, and `F.9.1` can refer to anchoring regime without redefining it.
@@ -91,13 +91,13 @@ The facet is motivated by embodied cognition, operator-facing interaction practi
 ### C.2.6:13 - Worked Examples and Bridge-Loss Cases
 
 #### C.2.6:13.1 - Embodied-to-document shift
-A bodily felt cue published as prose usually changes from `AM.EmbodiedFelt` toward `AM.DocumentMediated`. That shift is not harmless; it often introduces bridge loss and should be treated as such when cross-context equivalence is claimed.
+A prose publication of an episteme grounded in a bodily felt cue may retain `AM.EmbodiedFelt` as source mode while using `AM.DocumentMediated` as publication-face mode. Such a shift may introduce bridge loss, which should be assessed when cross-context equivalence is claimed.
 
 #### C.2.6:13.2 - Model-latent to operator-loop case
-A latent probe score may first be `AM.ModelLatent`, then feed an operator-facing alert face where the working publication becomes `AM.OperatorLoop`. A conforming account should keep both anchoring modes visible rather than pretending the downstream publication wording fully captures the model-side cue.
+An episteme recording a latent probe score may first be `AM.ModelLatent`, then be published as an operator-facing alert with `AM.OperatorLoop` publication-face anchoring when the alert is directly tied to operator intervention or console control. A conforming account should keep both the model-side source mode and the operator-loop publication-face mode visible.
 
 #### C.2.6:13.3 - Mixed-mode publication
-An alert note may admissibly be `AM.Mixed` when it combines operator-loop anchoring, trace anchoring, and document mediation. But the mix must be named explicitly rather than used as a catch-all escape.
+An alert note may admissibly be `AM.Mixed` when it combines operator-loop anchoring, trace anchoring, and document mediation. The declaration must name each component mode explicitly.
 
 ### C.2.6:14 - Authoring and Review Guidance
 
@@ -113,7 +113,7 @@ When declaring anchoring mode, ask:
 An assurance reader should watch for the common mistake where prose formatting tricks authors into forgetting the original anchoring mode.
 
 #### C.2.6:14.3 - Bridge note
-If anchoring changes across publication or translation, use F.9 for the Bridge, bounded-use claim, and its evidence and loss account. Use F.9.1 only when a separate stance note about that claim helps replace silent equivalence language with a bounded reading.
+If anchoring changes across publication or translation and the receiving use needs a semantic relation between local senses from different contexts, use F.9 for the Bridge, bounded-use claim, and its evidence and loss account. Use F.9.1 only when a separate stance note about that claim helps replace silent equivalence language with a bounded reading.
 
 ### C.2.6:15 - Extension and Migration Notes
 
@@ -121,7 +121,7 @@ If anchoring changes across publication or translation, use F.9 for the Bridge, 
 Contexts may add local anchoring modes, but they should do so by extension of the starter family rather than by collapsing the family into a text-vs-world binary.
 
 #### C.2.6:15.2 - Migration from metaphorical prose
-Statements like "the system wants", "the note suggests", or "the operator-facing publication says" should be repaired by naming the actual anchoring mode and the actual detector/enactor or witness structure.
+When wording such as "the system wants", "the note suggests", or "the operator-facing publication says" leaves anchoring unclear, it should be repaired by naming the anchoring mode and any detector, enactor, or witness needed to explain it.
 
 #### C.2.6:15.3 - Boundary reminder
 `U.LanguageStateAnchoringMode` does not decide representation, articulation, closure, or trust by itself. It only names how the episteme is anchored.
@@ -141,7 +141,7 @@ This is especially important when the final wording is prose, because prose ofte
 Distinguish the anchoring mode of the source cue from the anchoring mode of the current publication face. A bodily cue written into a document may still require `AM.EmbodiedFelt` as source mode and `AM.DocumentMediated` as publication face.
 
 #### C.2.6:16.3 - Mixed-mode decomposition rule
-`AM.Mixed` is admissible only when its component modes are named and the reason for the mixture is operationally real. It must not become a convenience label for an episteme that has not yet been analyzed.
+`AM.Mixed` is admissible only when its component modes are named and the reason for the mixture is operationally real. The component modes must be determined before the mixed-mode declaration is used.
 
 ### C.2.6:17 - Anchoring Shift and Transport Discipline
 
@@ -149,7 +149,7 @@ Distinguish the anchoring mode of the source cue from the anchoring mode of the 
 When an episteme crosses from one anchoring mode to another, state whether the shift is merely publication-level or whether it changes what can be preserved, compared, or trusted. A move from operator-loop enactment to report prose, for example, often drops timing, bodily load, and enactment friction.
 
 #### C.2.6:17.2 - Bridge-loss rule
-If an anchoring shift matters across semantic contexts, use F.9 to state the Bridge, bounded-use claim, and loss account; add an F.9.1 stance note only when it helps explain that claim. `C.2.6` only requires the shift to be noticed and not misrepresented as lossless.
+If an anchoring shift raises a semantic-correspondence question between local senses from different contexts, use F.9 to state and test the Bridge and its bounded-use claim, with the loss account; add an F.9.1 stance note only when it helps explain that claim. `C.2.6` only requires the shift to be noticed and not misrepresented as lossless.
 
 #### C.2.6:17.3 - Same-content illusion test
 Two cues may be paraphrased into the same sentence while remaining differently anchored. If the anchoring regime differs, the cues are not automatically substitutable.

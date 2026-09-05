@@ -13,15 +13,15 @@
 **What this buys.** A factor-bundle account of representation that keeps representation organization separate from anchoring, articulation, closure, evidence, carrier, and admissible-use claims.
 
 ### C.2.7:1 - Problem frame
-Published position claims in the declared language-state chart over `U.CharacteristicSpace` must distinguish representation factors such as locality, sparsity, and symbolicity without pretending they form one master factor.
+Published position claims in the declared language-state chart over `U.CharacteristicSpace` must keep representation factors such as locality, sparsity, and symbolicity distinct.
 
 ### C.2.7:2 - Problem
-Terms such as `EncodingBasis` collapse several independent choices. That makes comparison brittle and encourages one-factor stories such as distributed = informal or local = precise.
+Using `EncodingBasis` without its underlying factors collapses several independent choices. That makes comparison brittle and encourages one-factor stories such as distributed = informal or local = precise.
 
 ### C.2.7:3 - Forces
 | Force | Tension |
 |---|---|
-| **Comparability vs reductionism** | Allow comparison without compressing several factors into one slogan. |
+| **Comparability vs reductionism** | Allow comparison while preserving the distinctions among factors. |
 | **Compact core vs extensibility** | Keep a minimal starter bundle while leaving room for domain-specific refinements. |
 | **Representation vs anchoring** | Describe how the current episteme is represented without hiding what it is anchored to. |
 
@@ -32,7 +32,7 @@ Terms such as `EncodingBasis` collapse several independent choices. That makes c
 - `U.Sparsity`
 - `U.Symbolicity`
 
-A Context may publish a local alias such as `EncodingBasis`, but it shall dock back to the underlying factor bundle instead of replacing it.
+Authors may publish a local alias such as `EncodingBasis`, but it shall dock back to the underlying factor bundle instead of replacing it.
 
 #### C.2.7:4.0a - Kind and factor-bundle boundary
 
@@ -57,7 +57,7 @@ A Context may publish a local alias such as `EncodingBasis`, but it shall dock b
 A representation may be distributed yet have high trace anchoring; symbolic yet low-articulation; sparse yet low-closure. Those combinations shall remain visible. A model-state, embedding, vector-store relation, or operator-facing publication face may fill one or more representation factors, but the factor bundle does not decide the episteme, carrier, evidence, bridge, work, or gate relation by itself.
 
 #### C.2.7:4.3 - Extension rule
-Contexts may add extra representation factors only if the extension is published as a factor addition rather than as a new master factor that erases the core factor bundle.
+Authors may add extra local representation factors only if the extension is published as a factor addition rather than as a new master factor that erases the core factor bundle.
 
 ### C.2.7:5 - Archetypal Grounding
 **Tell.** A model-state cue can be highly distributed but still trace-anchored; a symbolic note can be low articulation if its semantics are still vague.
@@ -81,7 +81,7 @@ The pattern resists folk theories that try to line up one representation factor 
 - **Alias capture.** Letting `EncodingBasis` or a similar local alias erase the factor bundle.
 
 ### C.2.7:9 - Consequences
-The benefit is cleaner comparison across schools, substrates, and publication forms. The trade-off is that representation talk becomes more explicit and less slogan-friendly.
+The benefit is cleaner comparison across schools, substrates, and publication forms. The trade-off is the effort needed to make the relevant factor readings explicit.
 
 ### C.2.7:10 - Rationale
 The factor-bundle design keeps the representation basis-slot family in the declared language-state chart over `U.CharacteristicSpace` orthogonal to articulation, closure, and anchoring.
@@ -99,7 +99,7 @@ This factorization fits current work on sparse distributed representations, hybr
 A model-side summary may be representation-wise distributed and still highly explicit once published into a stable symbolic wrapper. This case matters because it blocks the folk myth that distributed implies vague.
 
 #### C.2.7:13.2 - Symbolic but still low-articulation
-A glossary-like note may be fully symbolic while still low in `AE` because the semantic anchors are not yet stabilized. This blocks the opposite myth: symbolic therefore explicit.
+A glossary-like note may be fully symbolic while still low in `AE` because the meaning needed by its receiving use remains unclear. This blocks the opposite myth: symbolic therefore explicit.
 
 #### C.2.7:13.3 - Mixed representation publication
 An operator-facing publication face may combine sparse alert codes, symbolic method-description text, and distributed back-end model summaries. The representation-factor bundle should make that mixture visible instead of compressing it into one label.
@@ -123,7 +123,7 @@ Assurance readers should also watch for silent replacement of `LanguageStateAnch
 ### C.2.7:15 - Extension and Migration Notes
 
 #### C.2.7:15.1 - Local extension rule
-Contexts may add extra factors, but each added factor should answer a distinct question rather than duplicating locality, sparsity, or symbolicity under another label.
+Authors may add extra local factors, but each added factor should answer a distinct question rather than duplicating locality, sparsity, or symbolicity under another label.
 
 #### C.2.7:15.2 - Migration from alias-heavy prose
 Aliases such as `EncodingBasis` or similar should be unfolded into explicit factor dockings before they are relied upon for comparison, bridge claims, or downstream use.
@@ -150,7 +150,7 @@ Representation factors may correlate, but they do not determine one another. Hig
 Representation talk must not silently replace `AE`, `CD`, or `LanguageStateAnchoringMode`. A shift from distributed to symbolic publication may change readability while leaving articulation low, closure open, or anchoring heavily operator-bound.
 
 #### C.2.7:17.3 - Bridge reminder
-If a representation shift matters in transport across contexts, note that the shift may alter what is preserved or salient. Use `F.9` for the Bridge and its bounded-use claim; use `F.9.1` only for a separate optional stance note about that claim.
+If a representation shift matters in transport across contexts, note that the shift may alter what is preserved or salient. Use `F.9` for the Bridge and its bounded-use claim when the receiving use needs a semantic relation between local senses from different contexts; use `F.9.1` only for a separate optional stance note about that claim.
 
 ### C.2.7:18 - Review Matrix and Extension Tests
 

@@ -211,6 +211,8 @@ A simulation-only Method cites `simulationResultRef` inside its support componen
 **GCoreLinkageManifest (normative; size-controlled via profiles and sets).**
 Effective obligations, pins, and triggers are computed by union expansion of the referenced ids (per `G.Core:4.2.1`). Profile and set expansion is combined with explicit deltas; `Nil‑elision` applies.
 
+For crossing-aware selection, `CorePinsRequired` below lists the crossing pins individually. Each conditional pin is mandatory when its stated condition holds. When consuming `G.7` calibration records or a named `B.3` assurance account, retain all pins, editions, and evidence required by that account, including `CC‑G7‑SCRLinkage‑1` for cited calibration evidence.
+
 * `CoreConformanceProfileIds :=`
 
   * `GCoreConformanceProfileId.PartG.AuthoringBase`
@@ -220,7 +222,6 @@ Effective obligations, pins, and triggers are computed by union expansion of the
 * `CorePinSetIds :=`
 
   * `GCorePinSetId.PartG.AuthoringMinimal`
-  * `GCorePinSetId.PartG.CrossingVisibilityPins` *(crossing‑aware use; pins from this set may be intentionally strengthened (optional→required) via `CorePinsRequired`)*
 * `CorePinsRequired :=` *(delta over PinSets; pins and refs are id-only; prefer strengthening optional-to-required over restating pins already covered by PinSets)*
 
   * `TaskSignatureRef` *(the C.22 TaskSignature edition; see `G.5:4.2`, S2)*
@@ -235,6 +236,11 @@ Effective obligations, pins, and triggers are computed by union expansion of the
   * `UTSRowId[]` *(published identities for selected families, registered families, and selector policy records)*
   * `FailureBehaviorPolicyId?` *(only when degrade or abstain behavior is explicitly policy‑bound)*
   * `SoSLogBranchId?` *(only when degrade or abstain behavior is explicitly policy‑bound)*
+  * `BridgeId/BridgeCardId?` *(the obtaining Bridge actually used by this selection; a Bridge Card is cited only when that Card is relied on)*
+  * `BridgeMatrixId?` *(when this selection uses a BridgeMatrix)*
+  * `CL/CL^k/CL^plane?` *(the applicable values when cited or required by the consumed calibration or named assurance account)*
+  * `Φ/Ψ/Φ_plane policy-ids?` *(the applicable policy ids and editions when required by the consumed calibration or named assurance account, or when crossing or plane penalties are applied)*
+  * `CrossingBundleId?` *(when the selector cites a CrossingBundle or its named downstream use requires one under `E.18` or `CC‑G5.27`)*
 * `DefaultsConsumed :=`
 
   * `DefaultId.GammaFoldForR_eff`

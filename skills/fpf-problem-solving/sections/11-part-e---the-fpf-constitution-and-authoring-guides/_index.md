@@ -21,7 +21,7 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](16-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the Specification](17-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers from at least two characteristics of diversity:
 - [E.7 - Archetypal Grounding Principle](18-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (663 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (670 lines) — Type: Architectural (A)
 - [E.8.ECSPF - FPF Pattern Publication Form for Evaluation Guidance](20-e-8-ecspf---fpf-pattern-publication-form-for-evaluation-guid.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](21-e-9---design-rationale-record-method.md) (360 lines) — Type: Governance and authoring pattern
 - [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](22-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (442 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
@@ -37,7 +37,7 @@
 - [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](32-e-11---first-practical-entry-and-pattern-use-discoverability.md) (508 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](33-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (545 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](34-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (289 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PFP - Framework Publication Form Profile](35-e-11-pfp---framework-publication-form-profile.md) (261 lines) — Type: Specialization of E.11
+- [E.11.PFP - Framework Publication Form Profile](35-e-11-pfp---framework-publication-form-profile.md) (316 lines) — Type: Specialization of E.11
 - [E.11.DSG - DPF Suite Reference](36-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](37-e-12---didactic-primacy-cognitive-ergonomics.md) (88 lines) — The FPF is designed as an "Operating System for Thought," a tool intended to augment and clarify human (and artificial) reasoning. This mission places a unique demand on its architecture: the...
 - [E.13 - Pragmatic Utility and Value Alignment](38-e-13---pragmatic-utility-and-value-alignment.md) (195 lines) — Type: Part E FPF evaluation and repair pattern

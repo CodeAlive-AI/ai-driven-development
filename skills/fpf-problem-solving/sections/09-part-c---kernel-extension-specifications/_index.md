@@ -11,12 +11,12 @@
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (109 lines) — Scope & exports. A substrate-neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their change and equivalence. Exports: (i) three point-characteristics—Formality F,...
 - [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (593 lines) — Normativity: Normative except where a section is explicitly marked informative
 - [C.2.P - Epistemic Precision Restoration](03-c-2-p---epistemic-precision-restoration.md) (524 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
-- [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (359 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). When reuse changes scope, kind, reference plane, notation, source-local meaning,...
+- [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (357 lines) — Reliability (R) is a conservative, evidence-bound warrant signal for a typed claim under an explicit claim scope (G). When reuse changes scope, kind, reference plane, notation, source-local meaning,...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (260 lines) — Type: Architectural (A)
 - [C.2.3 - Unified Formality Characteristic F](06-c-2-3---unified-formality-characteristic-f.md) (312 lines) — Type: Definitional (D)
 - [C.2.LS - U.LanguageStateFacetProfile - Thin profile bundle for language-state facets](07-c-2-ls---u-languagestatefacetprofile---thin-profile-bundle-f.md) (249 lines) — Type: Definitional (D)
 - [C.2.4 - U.ArticulationExplicitness](08-c-2-4---u-articulationexplicitness.md) (203 lines) — Type: Definitional (D)
-- [C.2.5 - U.LanguageStateClosureDegree](09-c-2-5---u-languagestateclosuredegree.md) (193 lines) — Type: Definitional (D)
+- [C.2.5 - U.LanguageStateClosureDegree](09-c-2-5---u-languagestateclosuredegree.md) (195 lines) — Type: Definitional (D)
 - [C.2.6 - U.LanguageStateAnchoringMode](10-c-2-6---u-languagestateanchoringmode.md) (175 lines) — Type: Definitional (D)
 - [C.2.7 - U.LanguageStateRepresentationFactorBundle](11-c-2-7---u-languagestaterepresentationfactorbundle.md) (175 lines) — Type: Definitional (D)
 - [C.2.P.DR - Declarative Representation Precision Restoration](12-c-2-p-dr---declarative-representation-precision-restoration.md) (344 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
@@ -32,23 +32,23 @@
 - [C.13 — Constructional Mereology (Compose‑CAL)](22-c-13-constructional-mereology.md) (253 lines) — At a glance. Use C.13 when a practitioner must show how identified entities and relations that obtain form one whole, collection, or aspect. The account explains how those facts support the whole,...
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](23-c-16---measurement-metrics-characterization.md) (296 lines) — Use this pattern when. Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic,...
 - [C.16.P - Characteristic and Scale Precision Restoration](24-c-16-p---characteristic-and-scale-precision-restoration.md) (251 lines) — Type: Characterization precision-restoration pattern
-- [C.16.Q - Quality-Term Precision Restoration](25-c-16-q---quality-term-precision-restoration.md) (851 lines) — Type: Characterization precision-restoration pattern
+- [C.16.Q - Quality-Term Precision Restoration](25-c-16-q---quality-term-precision-restoration.md) (849 lines) — Type: Characterization precision-restoration pattern
 - [C.17 - Characterising Generative Novelty and Value](26-c-17---characterising-generative-novelty-and-value.md) (404 lines) — Status. Evaluation and measurement-use pattern; normative where stated.
-- [C.18 - Open-Ended Search Archive and Front Stewardship](27-c-18---open-ended-search-archive-and-front-stewardship.md) (303 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
+- [C.18 - Open-Ended Search Archive and Front Stewardship](27-c-18---open-ended-search-archive-and-front-stewardship.md) (304 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
 - [C.18.1 - Scaling‑Law Lens Binding (SLL)](28-c-18-1---scaling-law-lens-binding.md) (135 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale, budget, data, model capacity, iteration budget, freedom...
 - [C.19 - Explore-Exploit Live-Pool Governor](29-c-19---explore-exploit-live-pool-governor.md) (394 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](30-c-19-1---bitter-lesson-preference.md) (156 lines) — One-screen purpose (manager-first).
 - [C.19.2 - Use-Bounded Apparatus Application](31-c-19-2---use-bounded-apparatus-application.md) (168 lines) — Type: Architectural (A)
-- [C.20 - Composition of U.Discipline (Discipline-CAL)](32-c-20---composition-of-u-discipline.md) (358 lines) — U.Discipline is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate...
+- [C.20 - Composition of U.Discipline (Discipline-CAL)](32-c-20---composition-of-u-discipline.md) (359 lines) — U.Discipline is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate...
 - [C.21 - Field Health & Structure (Discipline-CHR)](33-c-21---field-health-structure.md) (265 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline without collapsing the result into taste, anecdotes, a...
-- [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](34-c-22---task-typing-and-tasksignature-assignment.md) (384 lines) — Purpose. Give FPF an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
+- [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](34-c-22---task-typing-and-tasksignature-assignment.md) (384 lines) — Purpose. Declare an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
 - [C.22.1 - Task-family adaptation signature](35-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
 - [C.22.PFR - Problematic-For Relation](36-c-22-pfr---problematic-for-relation.md) (333 lines) — Normativity: Normative unless marked informative
 - [C.22.2 - ProblemCard](37-c-22-2---problemcard.md) (658 lines) — Normativity: Normative
 - [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](38-c-23---methodfamily-evidence-maturity.md) (203 lines) — LOG (logic) for deductive shells for admissibility
-- [C.24 - Agentic Tool-Use and Call Planning (C.Agent-Tools-CAL)](39-c-24---agentic-tool-use-and-call-planning.md) (352 lines) — Normativity: Normative
+- [C.24 - Agentic Tool-Use and Call Planning (C.Agent-Tools-CAL)](39-c-24---agentic-tool-use-and-call-planning.md) (350 lines) — Normativity: Normative
 - [C.25 - Q-Bundle: Authoring "-ilities" as Structured Quality Bundles](40-c-25---q-bundle-authoring--ilities-as-structured-quality-bun.md) (418 lines) — Type: Definitional (D)
-- [C.26 - Quantum-Like Modeling Lens](41-c-26---quantum-like-modeling-lens.md) (616 lines) — Type: Architectural pattern
+- [C.26 - Quantum-Like Modeling Lens](41-c-26---quantum-like-modeling-lens.md) (619 lines) — Type: Architectural pattern
 - [C.26.1 - Probe-Coupled Boundary Interaction](42-c-26-1---probe-coupled-boundary-interaction.md) (300 lines) — Type: Architectural pattern
 - [C.26.2 - Enacted Distributed State Evidence](43-c-26-2---enacted-distributed-state-evidence.md) (343 lines) — Type: Architectural pattern
 - [C.26.3 - Viability-Envelope Boundary Regulation](44-c-26-3---viability-envelope-boundary-regulation.md) (335 lines) — Type: Architectural pattern

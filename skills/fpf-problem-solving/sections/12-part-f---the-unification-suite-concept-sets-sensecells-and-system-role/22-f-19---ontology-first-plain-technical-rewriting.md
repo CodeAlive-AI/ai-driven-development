@@ -159,9 +159,12 @@ Pattern prose keeps:
 - a local boundary that passes F.19:4's full independent-ground, plausible-reader, contribution, and smallest-clear-correction test; and
 - short references to related patterns after the pattern's own content is visible.
 
+Public architectural reasons stay with the explanation when they help the intended user understand, select, combine, or adapt the Methods and profiles. Apply `E.8:4.2.3` to distinguish those reasons from the current version's development history.
+
 Pattern prose moves out:
 
-- package-placement rationale;
+
+- rationale for the current draft's placement or promotion as a development decision;
 - correspondence about producing or reviewing the draft rather than using the pattern;
 - quality, projection, monolith-parity, landing, and source-management evidence; and
 - repeated boundary doctrine already carried by another pattern.

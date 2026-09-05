@@ -9,7 +9,7 @@
 ### B.4.1:1 - Problem frame
 Observation rarely yields a ready anomaly, `A.6.A` invitation, or hypothesis in one step. Between low-articulation cue preservation and endpoint assertions under exact subject predicates, the cluster needs one explicit route-bearing seam that can publish route plurality or route selection without pretending that the cue already satisfies an endpoint predicate.
 
-That seam begins **after** `U.PreArticulationCuePack`. Cue preservation may exist before routing. `B.4.1` begins only when route publication itself becomes worth making explicit.
+That seam begins **after cue stabilization**, with `U.PreArticulationCuePack` or an equivalent early form under `A.16`. Cue preservation may exist before routing. `B.4.1` begins only when route publication itself becomes worth making explicit.
 
 ### B.4.1:2 - Problem
 Without a pre-abductive seam, early cue publications are either lost, prematurely forced into late forms such as `AnomalyStatement`, `Characteristic`, `ActionOption`, or requirement language, or they smuggle route selection into cue-pack prose with no explicit route-subject assertion, predicate, and pattern locator.
@@ -23,11 +23,25 @@ Without a pre-abductive seam, early cue publications are either lost, prematurel
 | **Form vs face precision** | Keep route-bearing publication form distinct from the MVPK face on which it is rendered. |
 
 ### B.4.1:4 - Solution
-Insert a pre-abductive route-bearing seam inside the language-state cluster, between observation/cue preservation and endpoint subject-pattern entries:
+Use this seam to make the candidate continuations and any selected route explicit after cue stabilization. The pre-abductive route-bearing seam sits inside the language-state cluster, between observation/cue preservation and endpoint subject-pattern entries:
 
 `Observe -> Notice -> Stabilize -> Route`
 
-The seam yields a `RoutedCueSet`, normally downstream of `U.PreArticulationCuePack`.
+Publish the route package as a `RoutedCueSet`, normally downstream of `U.PreArticulationCuePack`.
+
+A robust route package should identify:
+
+- the **originating cue pack**, if any, or the equivalent early form preserving the stabilized cue,
+- the **candidate route set**,
+- the **route decision state**,
+- the **selected route**, if any,
+- the **grounds for each live route**,
+- the **conditions that would change route ranking**,
+- and any **typed downstream publication** already published.
+
+This keeps later handoff reviewable while leaving downstream claims and results under their applicable subject patterns.
+
+For specialization-sensitive routes, the package should also make explicit the declared task family or utility target, the current budget window, the missing discriminator still needed, and the downstream subject pattern that would become applicable if that discriminator and that pattern's other entry conditions are satisfied.
 
 #### B.4.1:4.1 - `RoutedCueSet` shape
 A conforming routed cue set may publish:
@@ -47,11 +61,11 @@ A conforming routed cue set may publish:
 
 `RoutedCueSet` is not itself the late endpoint. `articulationThresholdStatus` and `closureStatus` report guard state only; their governance remains with `C.2.4` and `C.2.5`, and route discrimination may additionally cite `C.2.6` or `C.2.7` when anchoring or representation-factor differences are load-bearing.
 
-`candidateRouteSet` and `routeDecision` are the load-bearing core here. `selectedRoute`, `routeRationale`, and `routeSelectionStatus` belong here when route selection is explicit. They do **not** belong in `U.PreArticulationCuePack`. The status says only whether plurality remains open or a route has been selected; endpoint admission, publication availability, current use or retirement, and any actual authority relation remain separate claims under A.16 and their direct patterns.
+`candidateRouteSet` is the load-bearing core here. `routeDecision`, `selectedRoute`, `routeRationale`, and `routeSelectionStatus` belong here when route selection is explicit. They do **not** belong in `U.PreArticulationCuePack`. The status says only whether plurality remains open or a route has been selected; endpoint admission, publication availability, current use or retirement, and any actual authority relation remain separate claims under A.16 and their direct patterns. Use `sourceCuePackRef` when the originating early form is a cue pack; otherwise identify the equivalent early form and the stabilized cue it preserves.
 
 `publicationFaceRefs` names MVPK faces only when face typing matters for publication or review. Faces are renderings of the routed cue set or of later typed projection publications; they are not the route-bearing form itself.
 
-A multi-route `RoutedCueSet` is still one governed member. A lineage fork appears only after distinct successor publications are issued.
+A multi-route `RoutedCueSet` is still one governed member. A lineage fork requires distinct successor epistemes or project records under their applicable identity and lineage rules. Use `C.2.1` for episteme identity; publication availability remains separate under `E.24.PUB`.
 
 #### B.4.1:4.2 - Starter route family and conditional extension species
 The candidate route set may contain, among others:
@@ -76,15 +90,15 @@ Use `TaskFamilySpecializationRoute` when the cue points toward acquiring one nar
 Contexts may refine the route family locally, but they shall keep the distinction between early route publication and endpoint governance.
 
 #### B.4.1:4.3 - Projection discipline
-Here `projection` names route-bounded partialization, not a rival subject pattern and not a face kind. The resulting publication must be a **typed publication form** rendered, when needed, on an existing MVPK face.
+Here `projection` names route-bounded partialization. The resulting content must be published in a **typed publication form**, rendered, when needed, on an existing MVPK face. The applicable subject pattern governs the downstream claim.
 
-A routed cue set may therefore lead to:
+A routed cue set may support these continuations:
 
-- `U.AbductivePrompt` under `B.5.2.0`,
-- a later typed endpoint-entry publication under `A.6.P`, `A.6.A`, or `C.16.Q`,
-- or another explicitly typed upstream projection publication.
+- publish `U.AbductivePrompt` under `B.5.2.0`,
+- apply `A.6.P`, `A.6.A`, or `C.16.Q` under its own entry conditions and produce the sentence, record, or other result that the selected pattern calls for,
+- or publish another explicitly typed upstream projection.
 
-If no typed downstream publication form can yet be named honestly, stay in `RoutedCueSet` rather than hiding a pseudo-form behind face language.
+For a proposed downstream projection, if no typed publication form can yet be named honestly, keep the content in `RoutedCueSet`; an MVPK face alone supplies no such form.
 
 ### B.4.1:5 - Archetypal Grounding
 **Tell.** Observation alone is not yet routing. A route requires at least a stabilized cue plus a declared candidate route set.
@@ -101,8 +115,8 @@ The pattern favors preserving low-articulation cues and publishing route plurali
 - `CC-B.4.1-2` A routed cue set **SHALL** name its `candidateRouteSet`.
 - `CC-B.4.1-3` When route selection occurs, `routeDecision`, `selectedRoute`, and `routeRationale` **SHALL** be explicit.
 - `CC-B.4.1-4` `publicationFaceRefs` **MAY** be named, but route-bearing form and publication face **SHALL NOT** be collapsed.
-- `CC-B.4.1-5` `RoutedCueSet` **SHALL NOT** silently masquerade as a late endpoint subject pattern.
-- `CC-B.4.1-6` When a specialization-sensitive route is kept live, the route package **SHALL** name the declared task family or utility target, the current budget window if known, the missing discriminator still needed, and the downstream subject pattern that would become admissible if the discriminator is satisfied.
+- `CC-B.4.1-5` `RoutedCueSet` **SHALL NOT** be treated as establishing a late endpoint result.
+- `CC-B.4.1-6` When a specialization-sensitive route is kept live, the route package **SHALL** name the declared task family or utility target, the current budget window if known, the missing discriminator still needed, and the downstream subject pattern that would become applicable if the discriminator and that pattern's other entry conditions are satisfied.
 
 ### B.4.1:8 - Common Anti-Patterns and How to Avoid Them
 - **Anomaly inflation.** Treat every early cue as already an anomaly statement.
@@ -127,13 +141,13 @@ This matches practice in incident triage, exploratory design, model probing, and
 ### B.4.1:13 - Worked Route Sets
 
 #### B.4.1:13.1 - Multi-route operator case
-An operator alert note about a service disturbance may admissibly publish a route set containing:
+An operator alert note records a service-latency rise after a configuration change and a response-time clause whose applicability to this service is unresolved. The operator may admissibly publish a route set containing:
 
 - `ActionInvitationRoute`,
 - `ProblemAbductionRoute`,
 - and `RequirementCommitmentRoute`.
 
-At this stage the point is not to collapse the routes into one winner, but to keep the plurality explicit until a selected route is justified.
+Keep the plurality explicit until a selected route is justified. The missing discriminator for `RequirementCommitmentRoute` is whether the clause covers this service and incident window. If it does, use `A.2.8` for the question of an actual duty; the latency cue can still support intervention and explanatory inquiry.
 
 #### B.4.1:13.2 - Inquiry case
 A conceptual mismatch may route simultaneously toward:
@@ -145,35 +159,23 @@ A conceptual mismatch may route simultaneously toward:
 This is admissible only if the route rationale makes the plurality explicit rather than hiding it under vague prose.
 
 #### B.4.1:13.3 - Invalid direct jump
-It is invalid to treat a routed cue set as if it were already a hypothesis, a gate, or a work plan. It is a route-bearing publication form, not the endpoint subject pattern.
+It is invalid to treat a routed cue set as if it were already a hypothesis, a gate, or a work plan. The route-bearing publication form records candidate continuations; the applicable subject pattern governs the downstream result.
 
 #### B.4.1:13.4 - Specialization-route and nonhuman-utility split
 A routed cue set for a new task family may admissibly keep `ProblemAbductionRoute`, `TaskFamilySpecializationRoute`, and `NonHumanUtilityRoute` live together. The point is to preserve the declared task family, utility target, current budget window, missing discriminator, and possible corridor-entry load without laundering those routes into a premature prompt, selector, or policy choice.
 
 ### B.4.1:14 - Keeping route plurality useful
 
-A routed cue set stays useful only when route plurality, route grounds, selection status, and any current-use or retirement claim remain explicit without turning the seam into one hidden endpoint.
+A routed cue set stays useful only when route plurality, route grounds, selection status, and any current-use or retirement claim remain explicit.
 
 #### B.4.1:14.1 - Minimal route package
-A robust route package should identify:
-
-- the **originating cue pack**,
-- the **candidate route set**,
-- the **route decision state**,
-- the **selected route**, if any,
-- the **grounds for each live route**,
-- the **conditions that would change route ranking**,
-- and any **typed downstream publication** already published.
-
-This is enough to keep later handoff reviewable without collapsing the seam into an endpoint subject pattern.
-
-For specialization-sensitive routes, the package should also make explicit the declared task family or utility target, the current budget window, the missing discriminator still needed, and the downstream subject pattern that would become admissible if that discriminator is satisfied.
+Use the minimal route package in §4 (Solution).
 
 #### B.4.1:14.2 - Selected route is not endpoint governance
-Even when one route is selected, the routed cue set remains a seam publication form until a subject pattern is entered explicitly.
+Even when one route is selected, the routed cue set remains a seam publication form. Apply a downstream subject pattern when its entry conditions are met; that pattern governs the next claim or result.
 
 #### B.4.1:14.3 - Review prompt and threshold reminder
-A reviewer should check whether the selected route is justified by the published cue pack and whether suppressed alternative routes were genuinely considered rather than silently erased. If the articulation threshold is not yet met, keep the publication early rather than laundering it into a late prompt, requirement, or work subject pattern.
+A reviewer should check whether the selected route is justified by the published cue pack or equivalent early form and whether suppressed alternative routes were genuinely considered rather than silently erased. If the articulation threshold required for a proposed late prompt, requirement, or work claim is not yet met, keep the publication early.
 
 #### B.4.1:14.4 - Deferred selection and route splitting
 Deferral is admissible when route plurality and missing discriminators are published. It is not admissible when one route is silently assumed while the publication still speaks as if the question were open.
@@ -182,7 +184,7 @@ One cue cluster may also split into several routed cue sets if different sub-cue
 
 ### B.4.1:15 - Migration and worked continuation boundaries
 
-`B.4.1` governs route publication, not abductive reasoning, lexical repair, deontic commitment, or work execution. Those belong to subject patterns once the next publication is explicit enough to carry them.
+`B.4.1` governs route publication. Use the applicable subject patterns for abductive reasoning, lexical repair, deontic commitment, and work execution when their entry conditions are met.
 
 #### B.4.1:15.1 - Migration from anomaly-first prose
 Older anomaly-first language should be migrated into route publication when the publication does not yet meet anomaly-governance entry conditions.
@@ -193,35 +195,36 @@ An operator-facing disturbance may legitimately support both:
 - an immediate intervention-oriented route,
 - and a slower explanatory route.
 
-`B.4.1` preserves both without forcing one to swallow the other.
+`B.4.1` preserves both continuations with their own grounds and selection conditions.
 
 #### B.4.1:15.3 - Requirement-route overreach
-A route set that includes `RequirementCommitmentRoute` should not be read as if the requirement already exists. The route is only one admissible continuation unless a later requirement subject pattern is actually entered.
+A route set that includes `RequirementCommitmentRoute` should not be read as if the requirement already exists. The route is one admissible continuation; the requirement or commitment claim is decided under its own subject pattern.
 
 #### B.4.1:15.4 - Leaving the seam
-The routed cue set should leave this pattern only when one later publication is already explicit enough to own the next governed use, for example:
+Continue under a later subject pattern when its own entry conditions are met. Typical questions and entry requirements are:
 
-- explicit evaluative family selection for `C.16.Q`,
-- explicit `A.6.A` family selection,
-- explicit prompt question for `B.5.2.0`,
-- explicit requirement or commitment head for requirement-facing subject patterns,
-- or explicit `A.15` hook for method, work-plan, or work-occurrence use.
+- relation-bearing wording whose direct relation, participants, direction, or required detail remain unresolved: `A.6.P`;
+- evaluative wording with enough articulation to name the bearer, effective scheme, probe/model frame, comparison frame or `none`, ClaimScope, and at least one candidate evaluative family: `C.16.Q`;
+- action-invitation wording with enough `AE` to name site, enactor, and action structure, and enough `CD` for one invitation interpretation to be worth publishing: `A.6.A`;
+- a declared prompt species, stable open question, scope, and provenance, with the articulation and closure conditions for rival answers to remain live: `B.5.2.0`;
+- an explicit requirement or commitment claim over its actual subject: its requirement-facing pattern; use `A.2.8` for a question about an actual individual duty;
+- or an alignment question involving Method, intended WorkPlan, or actual Work: `A.15`; use `A.3.1`, `A.15.2`, or `A.15.1` directly when only the Method, WorkPlan, or dated Work is in question.
 
-If those next-subject-pattern conditions cannot yet be stated honestly, the governed publication still belongs in the seam and should keep its route plurality visible.
+If those next-use entry conditions cannot yet be established, keep the governed publication in this seam with its route plurality visible.
 
 ### B.4.1:20 - Route Evidence and Discrimination Package
 
 #### B.4.1:20.1 - Evidence-per-route rule
-Each live route in a routed cue set should cite the cue grounds that actually support it. If a route has no published grounds, it is not a live route; it is only a private guess.
+Each live route in a routed cue set should cite the cue grounds that actually support it. Where those grounds are not yet published, complete the route account so readers can assess the support.
 
 #### B.4.1:20.2 - Discriminator publication
-When a route set remains plural, authors should name the discriminator they are waiting for: a missing anchor, contrast, measurement, witness, articulation threshold, closure condition, or other explicit facet transition. Doing so makes deferred selection informative instead of merely indecisive.
+When a route set remains plural, authors should name the discriminator they are waiting for: a missing anchor, contrast, measurement, witness, articulation threshold, closure condition, or other explicit facet transition. This tells later readers which fact or facet change would justify reconsidering the route set.
 
 #### B.4.1:20.3 - Multi-route state is not yet a lineage fork
-One routed cue set may keep several candidate routes live without yet forking lineage. A fork occurs only when distinct successor epistemes or project records are identified and their preserved and lost content and any exact lineage relations are stated. Publication availability and any responsibility or authority handoff remain separate claims.
+One routed cue set may keep several candidate routes live without yet forking lineage. A fork occurs only when distinct successor epistemes or project records are identified under their own identity rules and their preserved and lost content and any exact lineage relations that obtain are stated. Publication availability and any responsibility or authority handoff remain separate claims.
 
 #### B.4.1:20.4 - Projection restraint
-A typed downstream projection publication or prompt may be shown as one admissible continuation, but it shall not dominate the routed cue set so much that the other routes become unreadable. Projection is guidance, not covert subject-pattern replacement.
+A typed downstream projection publication or prompt may be shown as one admissible continuation; the other live routes and their grounds and discriminators shall remain readable.
 
 #### B.4.1:20.5 - Review test for false single-route certainty
 Ask: if the selected route were denied, would the publication still contain enough information to explain the other live routes and the discriminator that would separate them? If not, the route set is under-published and has collapsed too early into one favored continuation.
