@@ -79,16 +79,16 @@ Run the command from the repository Grok should inspect. The worker keeps a real
 
 For a remote repository, check it out into a user-approved working directory first and run Consilium there. Consilium no longer owns a separate clone-and-cleanup path.
 
-### Ask Codex Sol for a difficult second opinion
+### Ask GPT-6 Astra for a difficult second opinion
 
-Codex Sol is disabled in the default review pool. Select it explicitly when a difficult specification or optimization plan benefits from an independent second view:
+GPT-6 Astra is disabled in the default review pool. Select it explicitly when a difficult specification or optimization plan benefits from an independent second view:
 
 ```bash
 scripts/consilium review ask --progress compact -a codex \
   "Verify SPEC.md against the implementation and identify mismatches."
 ```
 
-### Ask Claude Fable for a plan
+### Ask Claude Fable 5.1 for a plan
 
 ```bash
 scripts/consilium review ask -a claude-fable \

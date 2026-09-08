@@ -4,10 +4,10 @@
     "codex": {
       "enabled": false,
       "backend": "codex-cli",
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6-astra",
       "effort": "high",
       "role": "analyst",
-      "label": "Codex GPT-5.6 Sol"
+      "label": "Codex GPT-6 Astra"
     },
     "codex-gpt-5.6": {
       "enabled": false,
@@ -117,10 +117,10 @@
     "claude-fable": {
       "enabled": true,
       "backend": "claude-code",
-      "model": "claude-fable-5",
+      "model": "claude-fable-5-1",
       "effort": "low",
       "role": "analyst",
-      "label": "Claude Fable 5"
+      "label": "Claude Fable 5.1"
     },
     "claude-sonnet": {
       "enabled": false,

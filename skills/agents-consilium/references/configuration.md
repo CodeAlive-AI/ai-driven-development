@@ -37,6 +37,12 @@ Non-empty environment values override profile model/effort for one invocation:
 - `GROK_MODEL`, `GROK_EFFORT`
 - `GEMINI_MODEL`
 
+The built-in `codex` profile uses `gpt-6-astra` at `high` effort. Astra accepts
+`low`, `medium`, `high`, `xhigh`, and `max`; it does not accept `none`. The
+built-in `claude-fable` profile uses `claude-fable-5-1` at `low` effort and
+supports the same five effort levels. Start Fable 5.1 at `high` for the hardest
+long-horizon work, or retain `low` when it is one reviewer in a larger pool.
+
 ## Shell-safe prompts
 
 Prefer `--prompt-file`, stdin, or a single-quoted heredoc for prompts containing backticks, `$`, `!`, or quotes. Double-quoted positional prompts are shell-expanded and may accidentally execute substitutions or leave a backend waiting on stdin.

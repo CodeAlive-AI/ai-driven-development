@@ -119,8 +119,10 @@ out=$(env -u CONSILIUM_CONFIG "$CONSILIUM" --list-agents 2>/dev/null)
 assert_contains "default config resolves from skill root" "$out" 'id="grok"'
 assert_contains "skill-root default grok profile uses Grok 4.6" "$out" \
   'id="grok" label="Grok 4.6 (native)" backend="grok-build" model="grok-4.6" role="analyst" enabled="true"'
-assert_contains "Codex Sol remains selectable but disabled by default" "$out" \
-  'id="codex" label="Codex GPT-5.6 Sol" backend="codex-cli" model="gpt-5.6-sol" role="analyst" enabled="false"'
+assert_contains "Codex Astra remains selectable but disabled by default" "$out" \
+  'id="codex" label="Codex GPT-6 Astra" backend="codex-cli" model="gpt-6-astra" role="analyst" enabled="false"'
+assert_contains "Claude Fable profile uses Fable 5.1" "$out" \
+  'id="claude-fable" label="Claude Fable 5.1" backend="claude-code" model="claude-fable-5-1" role="analyst" enabled="true"'
 
 # Unknown command
 set +e
@@ -148,6 +150,20 @@ dump_delegate() {
 }
 
 TMP=$(mktemp -d)
+
+# Production profiles must reach their native harnesses with the exact current
+# model IDs, not merely appear correctly in --list-agents output.
+env -u CONSILIUM_CONFIG CONSILIUM_DUMP_ARGV="$TMP/astra-review.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id codex --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/astra-review.json"'"))["argv"]))')
+assert_contains "Codex production profile launches GPT-6 Astra" "$argv" "--model gpt-6-astra"
+assert_contains "Codex Astra production profile uses high effort" "$argv" 'model_reasoning_effort="high"'
+
+env -u CONSILIUM_CONFIG CONSILIUM_DUMP_ARGV="$TMP/fable51-review.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id claude-fable --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/fable51-review.json"'"))["argv"]))')
+assert_contains "Claude production profile launches Fable 5.1" "$argv" "--model claude-fable-5-1"
+assert_contains "Claude Fable 5.1 production profile uses low effort" "$argv" "--effort low"
 
 # Codex review: sandbox read-only, never full-bypass
 dump_review codex "$TMP/codex-review.json"

@@ -311,7 +311,9 @@ Three complementary layers — use the one matching your need:
 Each model family has unique parameters, gotchas, and patterns. Consult the reference for your target model:
 
 - **[Claude Family](references/claude-family-prompting.md)** — Claude 4.x family defaults, parameters, tools, and migration patterns
-- **[Claude Fable 5](references/claude-fable5-prompting.md)** — always-on adaptive thinking, effort calibration, lean instruction design, long-run progress grounding, action boundaries, subagents, memory, fresh-context verification, `reasoning_extraction` refusals, and Opus 4.8 fallback behavior
+- **[Claude Fable 5.1](references/claude-fable51-prompting.md)** — five-level effort calibration, progress-update blocks, parallel tools, append-only history, completion and scope control, targeted edits, long-output budgeting, subagents, vision, and refusal handling
+- **[Claude Fable 5](references/claude-fable5-prompting.md)** — always-on adaptive thinking, lean instruction design, long-run progress grounding, action boundaries, memory, and migration notes
+- **[GPT-6 Astra](references/gpt6-astra-prompting.md)** — initiative, instruction hierarchy, writing style, subagent calibration, verification scope, async tools, mid-turn steering, effort changes, and migration constraints
 - **[GPT-5 Family](references/gpt5-family-prompting.md)** — GPT-5 / 5.1 / 5.2 / 5.4 / 5.5: `reasoning_effort`, `text.verbosity`, named tools, agentic prompting, completeness/verification contracts, compaction, and migration paths
 - **[GPT-5.6 Sol](references/gpt56-sol-prompting.md)** — lean outcome-first prompts, autonomy boundaries, `max` effort and Pro mode, Programmatic Tool Calling, persisted reasoning, explicit caching, retrieval budgets, long-running state, frontend and visual verification, and migration workflow
 - **[Gemini 3 Family](references/gemini3-family-prompting.md)** — Gemini 2.5/3/3.1: temperature MUST be 1.0, `thinking_budget` vs `thinking_level`, constraint placement (end of prompt), persona priority, function calling, structured output, multimodal, image generation

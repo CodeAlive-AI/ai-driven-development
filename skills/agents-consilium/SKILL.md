@@ -41,7 +41,8 @@ Use these unless the user asks for a different tradeoff:
 - Use `specialists` only for a broader mid-cost review without an LLM judge. Use `ultra` only when the user explicitly prioritizes maximum coverage over cost and latency.
 - Repository research: `delegate -a grok` from the target repository root. Tell the worker whether the task is read-only, keep the default steerable session, and use `steer`/`wait` to continue incomplete work.
 - The `grok` profile is Grok 4.6 and is the default native Grok Build worker. Use the disabled-by-default `grok-fast` profile explicitly for fast context research with Grok 4.5.
-- Codex Sol is an explicit second opinion for difficult specification verification or optimization planning. Select it with `-a codex`; do not add it to routine research or the default review pool.
+- GPT-6 Astra is an explicit Codex second opinion for difficult specification verification or optimization planning. Select it with `-a codex`; do not add it to routine research or the default review pool.
+- The `claude-fable` profile runs Claude Fable 5.1 for demanding long-horizon review or delegation. Its default `low` effort is cost-conscious; override it with `CLAUDE_EFFORT=high`, `xhigh`, or `max` when capability matters more than latency and cost.
 
 Choose one review depth; do not run `basic`, `specialists`, `super`, and `ultra` sequentially. Do not call `--list-agents` routinely: enabled profiles are already the default pool for `review ask`, and code-review pass count is fixed by depth.
 
@@ -147,7 +148,7 @@ git diff HEAD | "$CONSILIUM" review code --progress compact --diff
 "$CONSILIUM" delegate -a grok \
   "Read-only investigation: trace authentication, cite repository-relative files, and report Answer/Evidence/Context map/Gaps. Do not edit files."
 
-# Explicit Sol second opinion for difficult work
+# Explicit GPT-6 Astra second opinion for difficult work
 "$CONSILIUM" review ask --progress compact -a codex \
   "Verify SPEC.md against the implementation and identify mismatches."
 
