@@ -132,12 +132,12 @@ The keys only help navigation. Compare cards by the situation and intended resul
 
 #### RESULT-TO-NEXT-MOVE — Route an obtained result to the next probe or option
 
-- **Situation:** A DPF or project calls something information gain, learning progress, novelty, or a former cue and wants it to change the next probe or option.
+- **Situation:** A DPF or project calls something information gain, learning progress, or novelty, or has articulated a result from an earlier cue, and wants to use it to choose the next probe or option.
 - **Question:** What result actually exists, and which downstream question, if any, is current?
 - **First useful result or honest blocker:** The direct result plus the first needed reliance disposition, characterization, possibility-space claim, configuration-relative comparison, `ChoiceResult`, or missing basis.
 - **Mantra:** Name the result; split ambiguous learning claims; keep each with its direct pattern. Move only to the current question: relied-on evidence, characterization or possibility space, realizable configuration comparison, or live choice. Stop when the present question is answered.
 - **Start with:** Use `E.10.LRN` only to recover a result hidden by *learning*; otherwise its direct pattern. Then use `A.10` only for actual reliance, `C.17`/`C.18` only for characterization/space change, `C.11.CRC` only for a missing finite configuration comparison, and `C.11` only for a live choice.
-- **Stop or return:** Stop before every non-current question. Observation, objective, former cue, and characterization retain their identities; this card creates no generic signal, cue, qualification, or choice.
+- **Stop or return:** Stop before every non-current question. Observations, objectives, and characterizations retain their identities. Route the result articulated from a cue through its direct pattern; if its `A.16.1` cue pack remains current as a source or provenance, retain it separately.
 
 #### ACTUAL-TEMPORAL-STRUCTURE — Recover what actually obtains before testing coordination
 
@@ -195,10 +195,10 @@ The keys only help navigation. Compare cards by the situation and intended resul
 
 #### CONSEQUENCE-BEARERS — Find omitted Systems before closing a decision
 
-- **Situation:** A change has one plausible receiver, but the list may omit other physical or operational wholes that can change.
-- **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what should the receiver do next?
+- **Situation:** A consequence account for a decision or investigation may omit physical or operational wholes beyond its candidate bearer.
+- **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what next step follows for the decision or investigation?
 - **First useful result or honest blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
-- **Mantra:** Name the focus and receiver; trace obtaining relations and modal paths separately; challenge the boundary; recover real holons; qualify each change; keep the sides distinct; return the useful answer and its limit. Select further inquiry by its individual and combined contribution and burden.
+- **Mantra:** Name the focus and receiving decision or investigation; trace obtaining relations and modal paths separately; challenge the boundary; recover real holons; qualify each change; keep each bearer's changes and conditions distinct; return the useful answer with its limit. Select further inquiry by individual and combined contribution and burden.
 - **Start with:** `A.1.CSD`; use `A.1.SCR` only when a candidate's systemhood is load-bearing, and leave through the direct evidence, causality, comparison, domain, or value pattern only when that stronger question is current.
 - **Stop or return:** Stop at the smallest account that changes or holds open the named decision or investigation. Return when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.
 

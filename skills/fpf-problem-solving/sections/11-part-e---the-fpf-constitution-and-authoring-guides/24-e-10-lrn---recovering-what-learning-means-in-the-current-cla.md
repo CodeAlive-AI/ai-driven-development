@@ -12,7 +12,7 @@
 
 Use this pattern when claim-bearing wording says *learn*, *learning*, *learned*, *taught*, or *trained*, and the sentence does not yet reveal which participant, changed subject, Work, Method, result, evidence, or receiving use is meant.
 
-**First useful result.** Rewrite or split the sentence so that each exact subject claim is recognizable, then continue with the direct pattern for that claim. A local repair normally ends with an exact capability claim, teaching-Work claim, training/model-result claim, inference result, information-acquisition result, representation claim, cultural-change claim, product claim, or ordinary non-use. It does not end with a generic `LearningResult`.
+**First useful result.** Rewrite or split the sentence so that each exact subject claim is recognizable, then continue with the direct pattern for that claim. A local repair normally ends with a recovered claim or ordinary non-use. It does not end with a generic `LearningResult`.
 
 **Cheap exit.** Keep ordinary wording when no FPF inference or action depends on which sense is meant. If the changed subject, operation, result, evidence, and direct pattern are already explicit, use that pattern directly.
 
@@ -60,7 +60,7 @@ Recover the current claim from its participants, subject, operation, result, and
 
 1. **Bound the wording use.** Quote or locate only the sentence or source expression whose interpretation changes a claim, inference, or action.
 2. **Recover the grammatical commitment.** Identify who or what is said to have taught, trained, learned, changed, produced, inferred, or acquired something. Grammar foregrounds a claim but does not fill missing causal participants or evidence.
-3. **Name the changed subject.** State whether the current bearer is a person's capability, an episteme, a model and parameters, a probability distribution, a representation relation, an organization or population, a product, a Work occurrence, or another exact subject.
+3. **Name the changed subject.** State whether the current claim concerns a person's capability, an episteme, a model and parameters, a probability distribution, a representation relation, an organization or population, a product, a Work occurrence, or another exact subject.
 4. **Separate Work, Method, and result.** Name inquiry, teaching, practice, training, optimization, inference, experiment, data acquisition, assessment, publication, or cultural-continuation Work only when it is current. Keep its performer, Method, inputs, and dated occurrence separate from the result attributed to another subject.
 5. **State the evidence and blocked transfer.** Name what was observed or assessed, for which task, population, configuration, window, support arrangement, and use. State the stronger nearby claim that this basis does not establish.
 6. **Select one direct branch.** Use the branch table below. When one sentence contains several branches, split it into several ordinary sentences and route each one separately.
@@ -74,7 +74,7 @@ Recover the current claim from its participants, subject, operation, result, and
 | A teacher, coach, peer, tool-using System, or environment performed teaching, demonstration, feedback, or practice-support Work | Use A.15 for dated Work, A.3 for the enacted Method, and direct responsibility/authority relations when current. The occurrence and intended result do not entail capability acquisition by the recipient. |
 | A person inquired, noticed, remembered, understood, or revised an episteme | Recover the exact episteme, representation, source use, inquiry Work, and claim change through `C.2.1`, `A.6.3.RT`, A.10, and the direct subject pattern. Do not infer a general capability from one reported insight. |
 | A statistical or machine-learning system was trained or fitted | Identify target function, distribution, or policy; data and data-generating assumptions; model family; objective or estimator; training/optimization Work; resulting model edition; evaluation conditions; and deployment use. Parameter change, a low training loss, a generated sample, and deployed-system capability remain different claims. |
-| A probabilistic inference Method returned a posterior or approximation | Identify the target model/distribution, observations, inference or approximation family, objective/divergence/bound, computation, diagnostics, and returned distribution. Variational inference is an inference/optimization branch, not human capability acquisition and not calculus-of-variations design by name. |
+| A probabilistic inference Method returned a posterior or approximation | Identify the target model/distribution, observations, inference or approximation family, objective/divergence/bound, computation, diagnostics, and returned distribution. Variational inference is an inference/optimization branch. |
 | Active learning, curiosity, exploration, question asking, or data mining selected or acquired information | Identify the query, observation, experiment, or data-acquisition option; current belief/model state; expected or observed information result; cost; and receiving decision. Information acquisition or uncertainty reduction does not by itself establish capability, transfer, useful action, or an evidence-qualified next choice. |
 | A probe found a “learned representation” | Distinguish the system-side phenomenon, training history when relevant, probe-training Work, decoded rendering, representation relation under `A.6.3.RT` and `C.29`, and any admitted episteme. Decodability or a readable label does not establish causal use, internal semantic identity, or general capability. |
 | An organization, community, or culture “learned” | Recover changed Methods, assignments, Work, carriers, population, transmission or reconstruction, selection, retention, loss, and consequences through their direct patterns and `C.36`. A report, policy, or lesson-learned entry does not establish changed enacted practice. |
@@ -111,7 +111,7 @@ recovered claims:
   - adversarial training Work optimized two parameterized models under a minimax objective
   - trained model edition G-17 generated samples evaluated under tests T1–T3
 direct routes: A.15, A.3, C.2.1, C.16, A.10, statistical-model-fitting practice
-blocked overreads: no human capability claim; no exact target-distribution identity; no generalization beyond T1–T3
+blocked overreads: no exact target-distribution identity; no generalization beyond T1–T3
 stop: deployment capability is a separate current question
 ```
 
@@ -129,7 +129,7 @@ A GAN training run is optimization Work over generator and discriminator paramet
 
 #### E.10.LRN:5.3 - Variational inference
 
-A variational-inference procedure selects an approximate distribution from a declared family by optimizing a divergence or bound against a target probabilistic model. It returns an inferential approximation and diagnostics. It does not establish capability acquisition, and its use of optimization does not make it a calculus-of-variations design of a physical trajectory or field.
+A variational-inference procedure selects an approximate distribution from a declared family by optimizing a divergence or bound against a target probabilistic model. It returns an inferential approximation and diagnostics. It does not establish capability acquisition.
 
 #### E.10.LRN:5.4 - Active learning
 

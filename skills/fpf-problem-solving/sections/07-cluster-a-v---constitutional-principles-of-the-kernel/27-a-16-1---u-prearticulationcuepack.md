@@ -16,7 +16,7 @@
 
 **First output.** One `U.PreArticulationCuePack` with an explicit cue nucleus, preservation rationale, primary witness or anchor when one is load-bearing, and any early lane candidates or route-candidate hints that are already visible.
 
-**Typical next patterns.** `B.4.1` when route plurality or route selection becomes publishable, `B.5.2.0` for cue-derived abductive prompting, `A.6.P`, `A.6.A`, or `C.16.Q` once the endpoint articulation threshold is actually met, and `A.16.2` when reopening or retirement becomes the truthful move.
+**Typical next patterns.** Use `B.4.1` when route plurality or route selection becomes publishable; `B.5.2.0` for cue-derived abductive prompting; `A.6.P` when a relation-bearing claim needs repair for a named receiving use and you can name at least one grounded candidate relation, its participants, and a discriminating check; `A.6.A` or `C.16.Q` under their own entry conditions; and `A.16.2` when reopening or retirement becomes the truthful move. Use `C.2.4` for any additional local articulation threshold declared for a receiving branch.
 
 **Common neighboring-pattern mistakes.** Do not publish a cue pack as a selected-route decision, anomaly statement, evaluative ascription, `A.6.A` invitation, or Work record; if route selection is already explicit, use `B.4.1`; if endpoint semantics are already stable, use the applicable endpoint pattern to test them and publish the corresponding form; if backoff or retirement is the active problem, use `A.16.2`.
 
@@ -76,7 +76,7 @@ A conforming cue pack may publish:
 
 The referenced facets keep their own definitions. `primaryAnchor`, `candidateAnchors`, contrasts, and exemplars commonly provide anchor material for `AE` under `C.2.4`; `languageStateClosureDegreeRef` docks to `C.2.5`; anchoring and representation-factor refs dock to `C.2.6` and `C.2.7`; `languageStateFacetProfileRef` may bundle them through `C.2.LS`.
 
-In this cluster, a cue is a salient epistemic nucleus extracted from witnesses, traces, felt tensions, model outputs, work-possibility hints, reliance-possibility hints, contrasts, or other grounds and made preservable as a pack. A raw signal-like trace counts as a cue only when that salience and preservability have been made explicit; otherwise it remains evidence, not yet a cue.
+In this cluster, a cue is a salient epistemic nucleus extracted from witnesses, traces, felt tensions, model outputs, work-possibility hints, reliance-possibility hints, contrasts, or other grounds and made preservable as a pack. A raw signal-like trace counts as a cue only when that salience and preservability have been made explicit; otherwise it remains a trace, not yet a cue. Any evidence use is separately qualified under A.10 for a named target claim.
 
 #### A.16.1:4.2 - Use boundary
 A cue pack may preserve:
@@ -102,8 +102,8 @@ A cue pack shall not silently serve as:
 A cue pack may admissibly feed:
 
 - `B.4.1` once route plurality or route selection deserves explicit publication;
-- `B.5.2.0` after a cue-derived abductive prompt is formed;
-- `A.6.P` only once articulation threshold and relation-like shape are met;
+- `B.5.2.0` to constitute and check a cue-derived abductive prompt;
+- `A.6.P` when a relation-bearing phrase needs its direct relation, participants, direction, or detail restored for a named receiving use;
 - `A.16.2` when prior stabilization must be reopened, backed off, respecified, or retired.
 
 ### A.16.1:5 - Archetypal Grounding
@@ -122,7 +122,7 @@ This pattern biases authors toward preserving low-articulation meaningful cues i
 - `CC-A.16.1-3` When preservation depends on privileged grounding, `primaryWitnessRef` or `primaryAnchor` **SHALL** be explicit.
 - `CC-A.16.1-4` `laneCandidates` and `routeCandidateHints` **MAY** be published early, but `selectedRoute`, `routeRationale`, and route-selection status **SHALL NOT** be smuggled into the cue pack.
 - `CC-A.16.1-5` If route-candidate hints are not yet nameable, publication is still admissible only when `preservationRationale` and grounding make the preservation need explicit.
-- `CC-A.16.1-6` Language-state, anchoring, and representation-factor details **MAY** be referenced; use `C.2.LS` for the facet profile, `C.2.4` and `C.2.6` for anchoring, `C.2.5` for closure degree, and `C.2.7` for representation factors.
+- `CC-A.16.1-6` Language-state, anchoring, and representation-factor details **MAY** be referenced; use `C.2.LS` for the facet profile, `C.2.4` for articulation explicitness (`AE`), `C.2.6` for anchoring mode, `C.2.5` for closure degree, and `C.2.7` for representation factors.
 - `CC-A.16.1-7` A cue pack **SHALL NOT** claim that an endpoint test passed or that a stronger use is admitted; use the applicable endpoint pattern to test and publish that later result.
 
 ### A.16.1:8 - Common Anti-Patterns and How to Avoid Them
@@ -160,7 +160,7 @@ A valid operator-facing cue pack might preserve:
 This is admissible because it preserves early significance without pretending the cue is already a route record, a gate, method, or work record.
 
 #### A.16.1:13.2 - Inquiry cue pack
-An inquiry cue pack may preserve exemplars, contrasts, a felt or trace-anchored discrepancy cue nucleus, and candidate anchor fragments. This is admissible even when the publication is still below both route publication and `A.6.P` threshold.
+An inquiry cue pack may preserve exemplars, contrasts, a felt or trace-anchored discrepancy cue nucleus, and candidate anchor fragments. This is admissible even before route publication is needed or an under-specified relation-bearing claim requires `A.6.P`.
 
 #### A.16.1:13.3 - Invalid publication to reject
 It is invalid to publish a cue pack and then cite it as if it were already an anomaly statement, a routed cue set, an explanatory bundle, or a control obligation. The cue pack is only the preservation form.
@@ -222,12 +222,12 @@ Valence, urgency, discomfort, promise, or attraction may explain why a cue is pr
 ### A.16.1:17 - Cue-Pack Continuations and Non-Continuations
 
 #### A.16.1:17.1 - Admissible continuations
-A cue pack may continue admissibly into:
+Depending on the next use, a practitioner may:
 
-- a routed cue set,
-- a cue-derived abductive prompt,
-- a later lexical-repair family once articulation threshold is met,
-- or a retreat / retirement move when prior stabilization over-committed or no longer deserves current publication.
+- publish a routed cue set under `B.4.1`,
+- constitute and check a cue-derived abductive prompt under `B.5.2.0`,
+- repair wording in a later claim under its applicable precision-restoration pattern once that claim is needed,
+- or use the appropriate `A.16` retreat or retirement move under `A.16.2` when the stabilized publication overstates what the available grounds support or is no longer current for the named use.
 
 #### A.16.1:17.2 - Non-continuations
 A cue pack should not be used directly as:
@@ -243,7 +243,7 @@ Those are not just later stages of the same text. They are different claims, dec
 #### A.16.1:17.3 - Multi-direction state versus lineage fork
 Several lane candidates or several low-articulation route-candidate hints may live inside one cue pack. That is still one cue-pack publication.
 
-A fork happens only after distinct successor epistemes or project records are identified, with their preserved and lost content and any exact lineage relations. Issuing their publication forms is a separate E.24.PUB claim. Practitioners should not treat pre-route plurality inside one cue pack as if it were already a forked lineage.
+A fork happens only after distinct successor epistemes or project records are identified, with their preserved and lost content and any exact lineage relations. Making those epistemes available through the forms to an audience for a bounded use is a separate E.24.PUB claim. Practitioners should not treat pre-route plurality inside one cue pack as if it were already a forked lineage.
 
 #### A.16.1:17.4 - Split and merge cases
 One cue pack may later split into several route-bearing continuations if its preserved cue nucleus actually contains several tensions. Several cue packs may also merge if later stabilization reveals that they were fragments of one more coherent cue complex. Both cases are admissible if the continuity and later successor-publication consequences are published explicitly.
@@ -254,7 +254,7 @@ One cue pack may later split into several route-bearing continuations if its pre
 A cue pack may combine trace refs, embodiment refs, model-state refs, and exemplar fragments. This is admissible provided the pack still identifies what unifies those grounds into one cue nucleus rather than using the pack as an unstructured container for unrelated fragments.
 
 #### A.16.1:18.2 - Practitioner test for under-specified packs
-A practitioner may ask: if all candidate anchors and witnesses were removed, would anything remain that justifies preserving this pack at all? If the answer is still unclear what is being preserved, the pack is under-specified and should be rewritten, retired, or not published yet.
+A practitioner may ask: if the candidate-anchor and witness references were hidden, could a reader still name the cue nucleus and understand the preservation rationale? If what is being preserved remains unclear, the pack is under-specified and should be rewritten, retired, or not published yet.
 
 #### A.16.1:18.3 - Practitioner test for covert endpoint capture
 A practitioner should also ask whether every sentence in the pack would remain true if no endpoint test had passed, no later publication were available, and no actual authority relation had been established. If not, use the applicable endpoint, publication, or authority pattern, or rewrite the sentence back into preservation language.
@@ -262,7 +262,7 @@ A practitioner should also ask whether every sentence in the pack would remain t
 ### A.16.1:19 - Cue-Pack Continuation and Comparative Preservation Rule
 
 #### A.16.1:19.1 - Continuation visibility
-A cue pack should make it visible whether the preserved cue nucleus is being kept open, route-published later, split, merged, or retired.
+A cue pack should make visible which continuations apply: keeping the cue open, later route publication, a split or merge of cue packs, or retirement of the exact cue, publication, or branch.
 
 #### A.16.1:19.2 - Preservation worthiness test
 Keep a cue pack only when its nucleus would likely be lost or distorted without it. If the same cue already lives stably in a later receiving form with more closure, a published route selection, and any needed endpoint-use disposition, the cue pack may have become redundant.
@@ -279,7 +279,7 @@ Not all witnesses play the same role. Authors should distinguish the witness tha
 A cue pack may cite traces, embodiment, model-state refs, or document fragments, but it should not absorb their full carrier semantics. When carrier analysis itself becomes central, use `A.7` or the applicable carrier pattern instead of embedding that analysis into the pack.
 
 #### A.16.1:20.3 - Early directional plurality rule
-Plural lane candidates or plural route-candidate hints are not a flaw. If the same cue nucleus points toward several downstream patterns, keep that plurality visible until `B.4.1` narrows it into explicit route publication. The error is not plurality; the error is hiding plurality under a single convenient gloss.
+Plural lane candidates or plural route-candidate hints are not a flaw. If the same cue nucleus points toward several downstream patterns, keep that plurality visible through `B.4.1` route publication, which makes the live routes and any selected route explicit. The error is not plurality; the error is hiding plurality under a single convenient gloss.
 
 ### A.16.1:21 - Practitioner Check Matrix and Migration Tests
 

@@ -21,7 +21,7 @@
 
 ### B.3:1 - Problem frame
 
-Assurance concerns a claim, not the world-side subject in isolation. Begin with one exact C.2.1 target-claim episteme and one named use of an assurance conclusion. The claim's EntityOfConcern remains the system, episteme, method, work occurrence, relation occurrence, or other exact subject identified by its direct pattern.
+Assurance concerns a claim, not the world-side subject in isolation. Begin with one exact target claim, identified by its C.2.1 episteme or `ClaimAddress` as specified in §4.2, and one named use of an assurance conclusion. The claim's EntityOfConcern remains the system, episteme, method, work occurrence, relation occurrence, or other exact subject identified by its direct pattern.
 
 For example:
 
@@ -229,7 +229,7 @@ The engineer cites the exact model claim, its empirical-validation result, the A
 
 #### B.3:6.4 - Order-sensitive Method case
 
-An assurance argument relies on a manufacturing sequence whose result changes when two steps are reversed. The practitioner uses the direct Method and Work patterns for the sequence and, only because organization among several Methods affects the argument, uses A.22 to select a `MethodRelationStructure` for that exact question. The assurance result cites the sequence result and selected structure; B.3 creates neither the Methods nor their order.
+An assurance argument relies on a manufacturing sequence whose result changes when two steps are reversed. The practitioner uses the direct Method and Work patterns for the sequence and, only because organization among several Methods affects the argument, uses A.22 to select a `MethodRelationStructure` for that exact question. The assurance result cites the sequence result and selected structure.
 
 ### B.3:6.5 - Bias annotation
 
@@ -283,8 +283,8 @@ An assurance argument relies on a manufacturing sequence whose result changes wh
 
 **Trade-offs**
 
-- B.3 no longer supplies a convenient universal number. A project must use the domain model that gives its inputs meaning.
-- Some assurance questions return `unresolved` until a dependency model, calibrated mapping, or direct domain requirement is supplied.
+- B.3 supplies no convenient universal number. A project must use the domain model that gives its inputs meaning.
+- Some assurance questions remain unresolved until a dependency model, calibrated mapping, or direct domain requirement is supplied.
 - Reusable replay records cost more than a compact result and therefore require an actual receiver.
 
 ### B.3:10 - Rationale

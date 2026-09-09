@@ -6,14 +6,14 @@
 
 **Plain-name.** Articulation explicitness.
 
-**Use this pattern when.** Use C.2.4 when the next move depends on how much of a governed `U.Episteme` publication's meaning a reader can already recover.
+**Use this pattern when.** Use C.2.4 when the next move depends on how explicitly a governed episteme's meaning is articulated for its semantic branch and receiving use.
 
 **What goes wrong if missed.** A formal-looking sentence is treated as semantically ready, a real early cue is discarded as too vague, or every partly explicit note is forced through relation repair even when it is a plan, MethodDescription, Work claim, representation, question, characteristic, or ordinary domain statement.
 
 **What this buys.** One branch-neutral ordinal characteristic: a stable cue can acquire recoverable governed structure and a complete form for its actual semantic branch, with meaning that remains stable in a receiving use, without confusing articulation with formality, closure, truth, trust, or endpoint authority.
 
 ### C.2.4:1 - Problem frame
-A governed `U.Episteme` can matter while its semantic shape is only partly explicit. The declared language-state chart over `U.CharacteristicSpace` therefore needs one basis-slot pattern for how much of that shape a reader can recover, without assuming in advance whether the direct branch is relational, planning, method, Work, representation, prompt, characteristic, or ordinary domain content.
+A governed `U.Episteme` can matter while its semantic shape is only partly explicit. The declared language-state chart over `U.CharacteristicSpace` therefore needs one basis-slot pattern for the degree to which that shape is explicitly articulated, without assuming in advance whether the direct branch is relational, planning, method, Work, representation, prompt, characteristic, or ordinary domain content.
 
 ### C.2.4:2 - Problem
 When articulation explicitness stays implicit, authors either overstate readiness for a receiving pattern or hide useful early structure. Reusing `F` for this judgement creates a category error: formality concerns rigor of expression, while articulation concerns whether the meaning needed by the actual receiving use is explicit. A relation-shaped ladder creates a second error by scoring other well-formed claim kinds as immature merely because they are not relations.
@@ -26,7 +26,7 @@ When articulation explicitness stays implicit, authors either overstate readines
 | **Branch readiness vs exploratory openness** | Say when a direct semantic branch can receive the episteme without forcing every cue through relation repair. |
 
 ### C.2.4:4 - Solution
-`U.ArticulationExplicitness` is an ordinal characteristic of how much of a governed episteme publication's semantic shape a reader can recover for publication, routing, repair, or direct use. The common direction is independent of the semantic branch.
+`U.ArticulationExplicitness` is an ordinal characteristic of the degree to which a governed episteme's semantic structure is explicitly articulated for its branch and receiving use. It orders progression from a cue to a complete branch-appropriate expression whose meaning remains stable in a named receiving use. The common direction is independent of the semantic branch.
 
 #### C.2.4:4.0a - Kind and characteristic boundary
 
@@ -39,6 +39,8 @@ When articulation explicitness stays implicit, authors either overstate readines
 - **What does not follow automatically:** truth, trust, closure, admissibility, or formality.
 
 `AE` is therefore independent from `F`, from `LanguageStateClosureDegree`, and from endpoint authority.
+
+Use `C.2.8` to compare how much selected structure a reader can correctly extract under stated preparation, access and budget, including when both expressions already meet the same `AE` threshold. Reader recovery supports an `AE` judgment about explicit articulation; it does not turn the `AE0`–`AE5` progression into a scale of extractable structural amount.
 
 #### C.2.4:4.2 - Starter anchor set
 | Anchor | Reading | Typical admissible publication state |
@@ -96,7 +98,7 @@ The distinction echoes work on sketching, focusing/TAE, embodied cue capture, an
 
 ### C.2.4:12 - Relations
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
-- Coordinates with: `C.2.1`, `C.2.5`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `A.3.1`, `A.6.P`, `A.6.3.RT`, `A.15`, `A.15.1`, `B.4.1`, `B.5.2.0`, `C.2.P.DR`, and `C.16.P`.
+- Coordinates with: `C.2.1`, `C.2.5`, `C.2.8`, `A.16.0`, `A.16`, `A.16.1`, `A.16.2`, `A.3.1`, `A.6.P`, `A.6.3.RT`, `A.15`, `A.15.1`, `B.4.1`, `B.5.2.0`, `C.2.P.DR`, and `C.16.P`.
 - Constrains: articulation thresholds for routing and repair.
 ### C.2.4:13 - Worked Examples and Edge Cases
 

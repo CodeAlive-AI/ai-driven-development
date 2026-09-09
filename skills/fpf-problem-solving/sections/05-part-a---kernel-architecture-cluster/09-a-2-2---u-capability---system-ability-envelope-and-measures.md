@@ -88,9 +88,9 @@ SupportAndUseReferencesAroundCapability:
 
 **CapabilityEnvelope.** The envelope states the bounded conditions under which the ability holds: input range, environment, resources, configuration, system version, calibration state, staffing composition, access constraints, safety limits, or other current conditions.
 
-**CapabilityMeasureSet.** The measures state achieved or required bounds with units, scales, tolerances, success predicates, reliability, throughput, latency, precision, defect rate, or other declared characteristics. A measure may cite a `U.Characteristic`, Q-Bundle slot, or architecture-characteristic criteria row as an input for a capability-fit check, but that characteristic, Q-Bundle, or architecture row does not become the capability.
+**CapabilityMeasureSet.** The measures state achieved or required bounds, with their units, scales, tolerances, and success predicates, for declared characteristics such as reliability, throughput, latency, precision, or defect rate. A measure may cite a `U.Characteristic`, Q-Bundle slot, or architecture-characteristic criteria row as an input for a capability-fit check, but that characteristic, Q-Bundle, or architecture row does not become the capability.
 
-**QualificationWindow.** Capability is stable enough to plan with but not timeless. The instance may depend on software version, calibration horizon, team training state, wear, operating season, regulatory state, or other temporal currentness relation.
+**QualificationWindow.** Capability is stable enough to plan with but not timeless. The instance may depend on software version, calibration horizon, team training state, wear, operating season, regulatory state, or other conditions affecting currentness.
 
 **CapabilityStatementRefs.** A `CapabilityStatement` is a governed episteme or publication-side record that says a capability instance exists, describes its holder, envelope, measures, and window, or cites it for planning.
 
@@ -98,9 +98,9 @@ SupportAndUseReferencesAroundCapability:
 
 **CurrentnessAssessmentRefs.** A currentness assessment is a dated assessment relation saying whether the capability instance remains usable under its qualification window and current conditions. `CapabilityCurrentnessCondition` states what must remain true; an assessment evaluates that condition.
 
-**CapabilityFitConditionRefs.** A capability-fit condition is an admission predicate, threshold, or gate relation that tests a holder capability and any declared characteristic, Q-Bundle, or architecture-characteristic inputs against a current local system-role-kind classification, exact assignment, Method step, WorkPlan, Work occurrence, ClaimScope, qualification window, or gate need. Unless a separate E.24.UK admission is written, it is not a `U.*` kind.
+**CapabilityFitConditionRefs.** A capability-fit condition is an admission predicate, threshold condition, or gate relation that tests a holder capability and any declared characteristic, Q-Bundle, or architecture-characteristic inputs against a current local system-role-kind classification, exact assignment, Method step, WorkPlan, Work occurrence, ClaimScope, qualification window, or gate need. Unless a separate E.24.UK admission is written, it is not a `U.*` kind.
 
-**Neighboring-term boundary.** When a neighboring pattern uses `U.WorkScope`, recover the set-valued condition part of `CapabilityEnvelope`: the inputs, environment, resources, configuration, and assumptions against which an intended work slice is checked. When it uses `U.WorkMeasures`, recover `CapabilityMeasureSet`. `JobSlice` names the intended work slice for a work-admission check. `QualificationWindow` names the temporal currentness relation for the capability instance. These are neighboring governed terms, not substitute names for `U.Capability`.
+**Neighboring-term boundary.** When a neighboring pattern uses `U.WorkScope`, recover the set-valued condition part of `CapabilityEnvelope`: the inputs, environment, resources, configuration, and assumptions against which an intended work slice is checked. When it uses `U.WorkMeasures`, recover `CapabilityMeasureSet`. `JobSlice` names the intended work slice for a work-admission check. `QualificationWindow` names the temporal window used to judge currentness of the capability instance. These are neighboring governed terms, not substitute names for `U.Capability`.
 
 
 
@@ -148,7 +148,7 @@ during <qualification window>,
 with <evidence or source-use relation>.
 ```
 
-Either sentence form is a publication or statement about the capability instance.
+A sentence in either form states the capability claim and may be published.
 
 ### A.2.2:4 - Separation From Neighboring Values
 
@@ -157,7 +157,7 @@ Either sentence form is a publication or statement about the capability instance
 | “Engineer role can approve the design.” | Treat bare *role* as an E.10.ROLE trigger. If it means classification, recover local kind `EngineerSystemRole` and a C.3.2 judgment for an admitted System. If assignment identity matters, name the assignment occurrence and its declared `U.SystemRoleAssignment` species. Do not infer permission, capability, action, responsibility, or approval Work from either claim; add `U.Capability` only for a measured and qualified ability of the holder System, and use the permission and performed-Work relations when those claims are made. |
 | “The robot is assigned as welder.” | Name an assignment occurrence with the robot as holder and its declared `U.SystemRoleAssignment` species, whose assigned-kind position has local domain `WelderSystemRoleKindDomain`; the occurrence supplies `WelderSystemRole` as the value admitted by that domain. Add `U.Capability` only if the claim also says that the robot can meet a welding envelope and measures. |
 | "The solver has the scheduling algorithm." | First identify what the possession phrase claims: a deployed-software relation, a capability statement about the solver system, a reference to exact `U.Method`, or a candidate claim-bearing episteme. Apply `A.3.2` only to the last candidate; it is `U.MethodDescription` only when its exact `EntityOfConcern` is one admitted Method and at least one substantive claim says how that Method is done. The phrase alone establishes none of these. |
-| "The report has evidence capability." | Evidence-use relation around an episteme; no capability holder unless a system can perform evidential work. |
+| "The report has evidence capability." | Recover the report's evidence-use relation. A separate capability claim needs a system that can perform evidential work. |
 | "The team did one successful run." | `U.Work` occurrence; capability only after a separate capability instance is established with envelope, measures, and currentness. |
 | "We promise five-day close." | Promise content and commitment; capability is the holder-dependent capability instance that makes the promise credible. |
 | "The architecture provides resilience capability." | Architecture-characteristic or Q-Bundle material under `C.30`, `C.32.HCS`, `C.32.ACS`, and `C.25`; add `U.Capability` only when a named holder system has a capability instance to produce or maintain a result class within a capability envelope. Resilience characteristics may constrain a capability-fit condition; they are not capability by name. |
@@ -191,9 +191,7 @@ Do not put the threshold into the local system-role-kind name. Do not treat a sy
 
 #### A.2.2:6.1 - Manufacturing Cell
 
-`WeldingShiftAssignment` is a declared species under `U.SystemRoleAssignment`. Under A.2.1 its signature defines the holder and assigned-kind participant meanings and uses `WelderSystemRoleKindDomain` as the local assigned-kind domain; it adds another participant only if that participant changes the assignment predicate or occurrence identity. One occurrence has `RobotArm_A` as holder, `WelderSystemRole` as the assigned-kind value admitted by that domain, and an extent lasting while the predicate obtains without interruption for the same participants. The assertion has exact claim content, EntityOfConcern, and effective ReferenceScheme; a ClaimScope, selected slice, interval, or qualification window is stated separately when it changes interpretation or validity. None of those values is another assignment participant. A separate Work or system-locus relation may place intended or performed welding at `AssemblyLine_2026` when that relation obtains. The assignment proves neither permission, ability, action, nor performed Work.
-
-The capability instance is separate; a statement or record may describe it:
+The capability instance is separate from the assignment; a statement or record may describe it:
 
 ```text
 ConcreteCapabilityInstance:
@@ -207,7 +205,9 @@ SupportAndUseReferencesAroundCapability:
   evidenceOrSourceUse: latest welding test report and calibration source relation
 ```
 
-If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind is `WelderSystemRole` and bead-width tolerance below 0.2 mm, the assignment and capability are both checked. The assignment does not supply the tolerance, and the capability does not assign the robot to the shift.
+`WeldingShiftAssignment` is a declared species under `U.SystemRoleAssignment`. Under A.2.1 its signature defines the holder and assigned-kind participant meanings and uses `WelderSystemRoleKindDomain` as the local assigned-kind domain; it adds another participant only if that participant changes the assignment predicate or occurrence identity. One occurrence has `RobotArm_A` as holder, `WelderSystemRole` as the assigned-kind value admitted by that domain, and an extent lasting while the predicate obtains without interruption for the same participants. The assertion has exact claim content, EntityOfConcern, and effective ReferenceScheme; a ClaimScope, selected slice, interval, or qualification window is stated separately when it changes interpretation or validity. None of those values is another assignment participant. A separate Work or system-locus relation may place intended or performed welding at `AssemblyLine_2026` when that relation obtains. The assignment proves neither permission, ability, action, nor performed Work.
+
+If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind is `WelderSystemRole` and bead-width tolerance below 0.2 mm, the assignment and capability are both checked. The declared ±0.2 mm bound does not establish the stricter tolerance, so this capability statement alone cannot support admission of the step. The assignment does not supply the tolerance, and the capability does not assign the robot to the shift.
 
 **Shared boundary case — Robot-7 possesses an inspection algorithm.** `InspectionReleaseAssignment` is a declared species under `U.SystemRoleAssignment`; under A.2.1 its signature defines the holder and assigned-kind participant meanings and uses `InspectorSystemRoleKindDomain` as the local assigned-kind domain. Occurrence `InspectionAssignment-17` has `Robot-7` as holder and `InspectorSystemRole` as the assigned-kind value admitted by that domain. This simple species declares no taxonomy, reference-scheme, generic-context, or interval participant. An assertion about the occurrence may cite `MaintenanceRoles-2026`, `Maintenance-Scheme-A`, and the candidate inspection interval as interpretation and description content.
 
@@ -243,7 +243,7 @@ Lower or reopen a capability instance, or lower reliance on a statement about it
 - the qualification window expires or becomes contested;
 - evidence, source-use, test, audit, or simulation relations become stale or are reclassified, lowering the support or currentness assessment rather than becoming the capability;
 - the method or method description changes the required capability threshold;
-- the system-role assignment or its state relation changes, causing a Work-admission claim to fail even while capability remains true;
+- the system-role assignment or its state relation changes, causing a Work-admission claim to fail even while the holder retains the capability;
 - a composite holder changes dependency conditions.
 
 Repair the smallest object that changed. A stale calibration window lowers the capability currentness assessment and may lower reliance on the capability instance; it does not rewrite the local system-role kind. A failed system-role assignment lowers Work admission; it does not by itself lower the holder's measured ability. A stale report lowers a statement or evidence relation before it lowers the capability instance itself.
@@ -312,7 +312,7 @@ The concrete capability instance is asserted for `Cell_3`, not for every part. D
 - Teams need to stop using system-role labels or assignments as shortcuts for ability.
 - Some old "function", "service", "process", and "algorithm" sentences need kind recovery before they can be used in FPF.
 
-The cost is intentional: without it, FPF cannot distinguish authorization, ability, method, and performance.
+These distinctions let practitioners check authorization, ability, method, and performance separately.
 
 ### A.2.2:12 - SoTA-Echoing
 
@@ -323,7 +323,7 @@ The cost is intentional: without it, FPF cannot distinguish authorization, abili
 | Current uncertainty and verification work for cyber-physical and autonomous systems treats operating conditions and currentness as first-class modeling concerns. | Qualification windows and lowering triggers are part of the capability instance boundary; evidence, source-use refs, and currentness assessments support or lower reliance without becoming capability. | A stale calibration, changed version, or out-of-envelope input lowers the currentness assessment or capability instance locally. |
 | Modern access-control and zero-trust practice separates the acting system, assignment, current assignment-state relation, policy decision, and resource action. | An assignment or assignment-state relation may satisfy an entry condition, but neither grants capability. | “Allowed to act” and “able to achieve the measured result” remain separate checks. |
 
-Source-currentness note: DoDAF and TOGAF are used here as stable capability-planning lineage, not as the full current frontier. Current pressure comes from analyzable architecture, uncertainty-aware engineering, stakeholder-context formalization, and model integration. The NIST zero-trust line is used only for the split between current authorization and measured ability. SysML 2.0 is intentionally excluded as a SoTA authority or lineage for this decision: its model-element vocabulary does not settle the identity of capability holder, system-role kind, assignment, Method, Work, evidence, or capability occurrence, and no claim here depends on it.
+Source-currentness note: DoDAF and TOGAF are used here as stable capability-planning lineage, not as the full current frontier. Current pressure comes from analyzable architecture, uncertainty-aware engineering, stakeholder-context formalization, and model integration. The NIST zero-trust line is used only for the split between current authorization and measured ability.
 
 ### A.2.2:13 - Relations
 

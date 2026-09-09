@@ -29,7 +29,7 @@ These pathologies derail safety cases and budget decisions across disciplines.
 
 #### A.9:4.1 - Invariant Quintet
 
-Any aggregation operator `Γ` that claims FPF conformance **MUST** preserve these five invariants :
+Any aggregation operator `Γ` that claims FPF conformance **MUST** preserve these five invariants:
 
 | Code     | Invariant             | One‑line Intuition                               |
 | -------- | --------------------- | ------------------------------------------------ |
@@ -42,7 +42,7 @@ Any aggregation operator `Γ` that claims FPF conformance **MUST** preserve thes
 *Mnemonic:* **S‑O‑L‑I‑D** (Same - Order‑free - Location‑free - Inferior cap - Don’t‑regress).
 
 **Inter‑Layer Standard note**
-When holons are composed as a Layered‑Control stack, each Planner ↔ Regulator pair MUST publish an inter‑layer Standard: {referenceSignal, guaranteedTrackingError, cycleTime}.  Matni 2024 (https://arxiv.org/abs/2401.15185) prove such Standards satisfy COMM + LOC invariants, giving a constructive instance of the Quintet.
+When holons are composed as a Layered‑Control stack, each Planner ↔ Regulator pair MUST publish an inter‑layer Standard: {referenceSignal, guaranteedTrackingError, cycleTime}.  Matni, Ames and Doyle (2024, https://arxiv.org/abs/2401.15185) prove such Standards satisfy COMM + LOC invariants, giving a constructive instance of the Quintet.
 
 #### A.9:4.2 - Meta‑Holon Transition (MHT)
 
@@ -91,11 +91,11 @@ Packaging these insights as one memorisable quintet → **Cognitive Elegance** w
 
 | Relation           | Linked Pattern                       | Contribution                                              |
 | ------------------ | ------------------------------------ | --------------------------------------------------------- |
-| **Builds on**      | A 1 Holonic Foundation               | Supplies part/whole semantics.                            |
-| **Reinforces**     | A 7 Strict Distinction               | Prevents layer‑mixing during folds.                       |
-| **Enabled by**     | A 8 Universal Core                   | Guarantees operands share truly universal meaning.        |
+| **Builds on**      | A.1 Holon Ontic Foundation (U.Holon and Admitted Holon Kinds)               | Supplies part/whole semantics.                            |
+| **Reinforces**     | A.7 Strict Distinction (Clarity Lattice)               | Prevents layer‑mixing during folds.                       |
+| **Enabled by**     | A.8 Universal Core Principle                   | Tests the universal-core claim for an operand kind proposed as a kernel primitive.        |
 | **Foundation for** | B.1 Holon Aggregation and Part-Whole Construction | B-section part-whole construction uses this universal-core discipline. |
-| **Triggers**       | B 2 Meta‑Holon Transition            | When invariants fail through synergy, an MHT is invoked.  |
+| **Triggers**       | B.2 Meta-Holon Transition - Whole Reidentification            | When invariants fail through synergy, an MHT is invoked.  |
 
 ### A.9:10 - Known Uses (2018‑2025)
 
@@ -105,7 +105,7 @@ Packaging these insights as one memorisable quintet → **Cognitive Elegance** w
 
 ### A.9:11 - Open Questions for expert panel
 
-1. **Order‑sensitive physics** – Should quantum‑circuit folds live in a Extention Patterns with a relaxed invariant set?
+1. **Order‑sensitive physics** – Should quantum‑circuit folds live in an Extension Pattern with a relaxed invariant set?
 2. **Synergistic redundancy** – Can WLNK be reframed using an “effective minimum” when true redundancy lifts the floor?
 3. **Didactic tooling** – Which visual cues best alert non‑formal audiences to an approaching Meta‑Holon Transition?
 4. **Layer depth** — In an LCA (layered control architectures, https://arxiv.org/abs/2401.15185) stack every Planner is external to its Regulator; should FPF limit the number of nested layers, or is indefinite chaining acceptable?

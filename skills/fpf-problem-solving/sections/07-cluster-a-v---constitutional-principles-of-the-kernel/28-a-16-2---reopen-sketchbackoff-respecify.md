@@ -45,12 +45,12 @@ Every retreat or retirement move shall name:
 - and whether a successor now exists or the branch is retired without successor.
 
 #### A.16.2:4.3 - Status and relation discipline
-A retreat or retirement move shall separately update any route selection, endpoint or gate result, publication availability, current-use or retirement claim that no longer holds. It normally changes no authority, responsibility, permission, or commitment relation. If one of those relations does change, name its exact predicate, participants, object or action, scope, interval, and ending or instituting act under its direct pattern.
+A retreat or retirement move shall separately update any route selection, endpoint or gate result, publication availability, current-use or retirement claim that no longer holds. The move does not by itself establish a change in authority, responsibility, permission, or commitment. If one of those relations does change, name its exact predicate, participants, object or action, scope, interval, and ending or instituting act under its direct pattern.
 
 ### A.16.2:5 - Archetypal Grounding
 **Tell.** Backoff is not regression; it is an admissible language-state move when the current publication form over-commits. Retirement is not erasure; it says that the exact cue, episteme, publication, or branch is no longer current for the named use while preserving its history.
 
-**Show (System).** A rollback cue may reopen a prior decision path instead of pretending the original operationalization still holds, or retire one branch once a better-supported successor line has taken over.
+**Show (System).** On a rollback cue, a practitioner may reopen a prior decision path instead of pretending the original operationalization still holds, or retire one branch once a better-supported successor line has taken over.
 
 **Show (Episteme).** A formalized hypothesis may sketch-backoff to a cue pack when its framing collapses under new exemplars, or it may respecify its route specification while leaving slot-explicit epistemic precision repair to governing patterns.
 
@@ -88,12 +88,12 @@ This fits iterative design, incident response, scientific reframing, embodied in
 ### A.16.2:13 - Worked Retreat Trajectories
 
 #### A.16.2:13.1 - Reopen within the same family
-A routed evaluative note may remain within the same family but move from high closure to lower closure when a rival frame reopens. This is `reopen`, not `sketchBackoff`.
+A routed evaluative note may remain within the same family but move from high closure to lower closure when a rival frame becomes a live alternative again. This is `reopen`, not `sketchBackoff`.
 
 #### A.16.2:13.2 - Sketch-backoff to cue pack
-An over-specified `A.6.A`-governed invitation may later prove premature. The admissible retreat is:
+An over-specified `A.6.A`-governed invitation may later prove premature. First select the identity case under A.16:4.3 and C.2.1, then record the publication-form change:
 
-`actionInvitation -> sketchBackoff -> U.PreArticulationCuePack`
+`source form: actionInvitation; move: sketchBackoff; target form: U.PreArticulationCuePack`
 
 with explicit withdrawal of the route selection and endpoint-use claim that no longer hold. Any actual authority relation is updated separately only if its own predicate changes.
 
@@ -148,7 +148,7 @@ A retreat note should make explicit:
 Retreat preserves continuity: a high-closure formulation or one that had passed a named endpoint test for a stronger use was adopted, then shown to over-commit in stated respects, and therefore backed off or withdrawn admissibly.
 
 #### A.16.2:16.3 - Partial retreat
-Some retreats withdraw only one route claim, scope assumption, framing scaffold, or operational hook. In those cases name the surviving core rather than resetting everything.
+Some retreats withdraw only one route claim or scope assumption, or remove one framing scaffold or operational hook from the current use. In those cases name the surviving core rather than resetting everything.
 
 ### A.16.2:17 - What each retreat preserves and withdraws
 
@@ -167,7 +167,7 @@ Some retreats withdraw only one route claim, scope assumption, framing scaffold,
 ### A.16.2:18 - Worked Recovery Cases
 
 #### A.16.2:18.1 - Reopening a routed evaluative note
-An evaluative note may have reached a high closure state under one route, but new contrasts reopen a serious rival. `reopen` is admissible when the bearer, family, and witness base remain largely intact but the closure claim must be relaxed.
+An evaluative note may have reached a high closure state under one route, but new contrasts give the reviewer grounds to reconsider a serious rival. `reopen` is admissible when the bearer, family, and witness base remain largely intact but the closure claim must be relaxed.
 
 #### A.16.2:18.2 - Sketch-backoff from prompt to cue pack
 An abductive prompt may later prove over-committed because its open question was formulated before the cue anchors had stabilized. The admissible recovery is to sketch-backoff to `U.PreArticulationCuePack`, preserving the cue carriers while withdrawing the prompt-readiness and current-use claims.
@@ -186,7 +186,7 @@ A reviewer can test retreat integrity with five questions:
 2. **Were the affected claims updated?** If the earlier route selection, endpoint admission, gate result, publication availability, current-use claim, evidence-use basis, or actual authority relation no longer applies, revise that exact dependent claim under its direct pattern.
 3. **Did valid witnesses survive?** If all earlier grounding disappeared without reason, the retreat probably became erasure.
 4. **Was the move kind correctly named?** Reopen, sketch-backoff, respecify, and retire solve different problems; confusing them obscures what actually changed.
-5. **If a branch was retired, was successor / no-successor status explicit?** If not, retirement may be hiding silent laundering.
+5. **If a branch was retired, was successor / no-successor status explicit?** If not, the retirement record leaves unclear whether a successor exists.
 
 The matrix is intentionally small: `A.16.2` should keep retreat legible, not surround it with decorative procedure.
 
@@ -207,7 +207,7 @@ Where several revisions exist, the retreat note should make clear which earlier 
 `reopen`, `sketchBackoff`, `respecify`, and `retire` solve different problems. Comparing them as if they all meant "we stepped back" erases the particular closure, framing, route, endpoint-use, publication, or current-use change each one makes.
 
 #### A.16.2:21.2 - Honest recovery over softening prose
-A context may prefer softening language such as "refined further" or "adjusted slightly" even when a real retreat or retirement occurred. `A.16.2` rejects that habit. If closure dropped, framing was withdrawn, route selection or endpoint use changed, or a branch was retired, name the move directly.
+Authors in a context may prefer softening language such as "refined further" or "adjusted slightly" even when a real retreat or retirement occurred. `A.16.2` rejects that habit. If closure dropped, framing was withdrawn, route selection or endpoint use changed, or a branch was retired, name the move directly.
 
 #### A.16.2:21.3 - Boundary to silent editing
 If a publication is simply rewritten and no continuity account is preserved, that is editing, not `A.16.2`. Retreat is a reviewable move only when the earlier high-closure form or the form that had passed a named endpoint test remains part of the visible history.

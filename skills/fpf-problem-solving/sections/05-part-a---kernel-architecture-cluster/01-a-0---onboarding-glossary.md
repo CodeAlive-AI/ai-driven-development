@@ -35,10 +35,10 @@ FPF needs a **short, normative glossary** that names the generative primitives i
 
 | Term                      | Plain definition (on‑ramp)                                                                                                                                   | See        |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| **Novelty (N)**           | *How unlike the known set in your declared **CharacteristicSpace**. **Compute admissibly** (declared `DescriptorMapRef` + `DistanceDefRef`; no ad-hoc normalisation). | C.17, C.18 |
-| **Use‑Value (U / ValueGain)** | *What it helps you achieve now under your **CG‑Frame**; tie to acceptance/tests; **publish units, scale kind, polarity, ReferencePlane**.                   | C.17, C.18 |
+| **Novelty (N)**           | How unlike the known set a candidate is in your declared **CharacteristicSpace**. **Compute admissibly** (declared `DescriptorMapRef` + `DistanceDefRef`; no ad-hoc normalisation). | C.17, C.18 |
+| **Use‑Value (U / ValueGain)** | What the candidate helps you achieve now under your **CG‑Frame**; tie to acceptance/tests; **publish units, scale kind, polarity, ReferencePlane**.                   | C.17, C.18 |
 | **Constraint‑Fit (C)**    | *Satisfies must‑constraints (Resource/Risk/Ethics)*; legality via **CG‑Spec**; **unknowns propagate** (never coerce to zero).                                | C.18, G.4  |
-| **Diversity_P (declared retained set)** | *Adds a new niche to the declared retained set or portfolio-publication surface; measured against the **active archive/grid**, not a single list; declare **ReferencePlane** for each head.          | C.17, C.18 |
+| **Diversity_P (declared retained set)** | Adds a new niche to the declared retained set or portfolio-publication surface; measured against the **active archive/grid**, not a single list; declare **ReferencePlane** for each head.          | C.17, C.18 |
 | **E/E‑LOG**               | *Named, versioned **explore↔exploit** policy*; governs when to widen space vs refine candidates; **policy‑id is published**.                                   | C.19       |
 | **ReferencePlane**        | *Where a value lives:* **world** (system), **concept** (definition), **episteme** (about a claim). **Plane‑crossings add CL^plane** (penalties to **R only**); cite policy‑id. | F.9, G.6   |
 | **Scale Variables (S)**  | *The **monotone knobs** along which improvement is expected* (e.g., parameterisation breadth, data exposure, iteration budget, resolution). **Declare S** for any generator/selector claimed to scale. | C.18.1       |
@@ -62,7 +62,7 @@ FPF needs a **short, normative glossary** that names the generative primitives i
 5) **Publish to UTS** + **PathIds/PathSliceId**; **Illumination Map** is **report‑only telemetry** by default.
 
 ### A.0:5 - Archetypal Grounding
-*Informative; manager‑first (E.7/E.8 Tell‑Show‑Show).*  <!-- exact heading per CC‑AG.1 -->
+*Informative; manager‑first (E.7/E.8 Tell‑Show‑Show).*
 
 **Show‑A - SRE capacity plan (selector returns a set).**
 *Frame.* We must raise service commitment headroom for Q4 without breaking latency SLOs.
@@ -82,7 +82,7 @@ Co‑evolve declared `{environment, method}` sets; publish **coverage/regret** a
 
 ### A.0:6 - Bias-Annotation
 
-**Scope.** Trans‑disciplinary; glossary applies to both **System** and **Episteme** work.
+**Scope.** Trans‑disciplinary; glossary applies to work concerning both **Systems** and **Epistemes**.
 **Known risks & mitigations.**
 *Over‑aggregation:* forbid mixed‑scale sums; use **CG‑frame** and **MM‑CHR**.
 *Terminology drift:* enforce **LEX‑BUNDLE** registers; ban tool jargon in Core.
@@ -122,11 +122,11 @@ This pattern **instantiates P‑10 Open‑Ended Evolution** by making *generatio
 
 ### A.0:10 - Relations
 
-**Builds on.** **E.2 Pillars** (P-10, P-2, P-6), **A.5** (Open-Ended Kernel), **B.5/B.5.2.1** (Abductive loops + NQD integration), **C.17–C.19** (Creativity-CHR, NQD-CAL, E/E-LOG).
+**Builds on.** **E.2 Pillars** (P-10, P-2, P-6), **A.5** (Open-Ended Kernel), **B.5/B.5.2.1** (Abductive loops + NQD integration), **C.17–C.19** (Creativity-CHR, open-ended search archive/front stewardship, E/E-LOG).
 
 **Coordinates with.** **E.7/E.8** (Archetypal Grounding; Authoring template), **E.10** (LEX‑BUNDLE), **F.17** (UTS), **G.5/G.9–G.12** (set‑returning selectors, **iso‑scale** parity, shipping & refresh).
 **Constrains.** Any generator/selector/typed portfolio publication on the Core surface: **N‑U‑C‑Diversity_P + policy‑ids; S/Scale‑probe where applicable; parity pins; lawful scales; declared-set publication where mandated**. (Ties into UTS rows and parity records.)
-**Editor’s cross‑reference.** For agentic orchestration of scalable tool‑calls under **BLP**/**SLL**, see **C.24 (Agent‑Tools‑CAL)**.
+For agentic orchestration of scalable tool‑calls under **BLP**/**SLL**, see **C.24 (Agent‑Tools‑CAL)**.
 
 ### A.0:QF.0a - Scope of this glossary
 
@@ -167,8 +167,8 @@ This pattern is an **on‑ramp**: it **does not replace** C.17–C.19. It binds 
 - `SteppingStoneSet` is one narrow retained-subset head only when that subset itself is the visible published surface; do not treat it as the ordinary public head for retained exploration.
 - `ShortlistId` is the stable public token or id companion for one emitted shortlist; it is not a set-result family head.
 - `ChoiceSet` is only the mathematical set gloss for a shortlist when that object itself must be named.
-- `SetResultFamily` is a declaration field naming which public set-result family is being emitted; it is not another public head, not a publication face, not a publication form, not an interop publication form, and not a carrier kind.
-- `SourceSetFamily` is a declaration field naming the immediate source-set family acted on by a lens, such as `Q-Front`, `ExplorationArchive`, `Front`, `Archive`, or `TraditionPalette`; it does not carry derivation, composition, or object-id load, it does not rename the emitted `Shortlist` or `RankedShortlist`, and it is not a publication face kind, publication form kind, interop publication form kind, or carrier kind.
+- `SetResultFamily` is a declaration field naming which public set-result family is being emitted; it is not another public head.
+- `SourceSetFamily` is a declaration field naming the immediate source-set family acted on by a lens, such as `Q-Front`, `ExplorationArchive`, `Front`, `Archive`, or `TraditionPalette`; it does not carry derivation, composition, or object-id load, and it does not rename the emitted `Shortlist` or `RankedShortlist`.
 - `SourceSetComposition` is an optional declaration field naming a multi-source composition such as `Front+Archive` when one lens genuinely acts over more than one declared source-set family; it is not itself a kind.
 - `SubjectKind` is a declaration field naming what the members are, such as traditions, methods, hypotheses, environment-method pairs, candidate explanations, or other subject-kinded alternatives.
 - `EligibilitySet`, `DominanceSet`, `TieBreakerSet`, and `TelemetrySet` are the comparison-bundle sets behind the published set result, not rival publication heads: `EligibilitySet` says what may enter, `DominanceSet` says what counts for current non-domination, `TieBreakerSet` says what may order or choose among survivors, and `TelemetrySet` says what may be reported without changing dominance.
@@ -187,7 +187,7 @@ This pattern is an **on‑ramp**: it **does not replace** C.17–C.19. It binds 
 - Use `choice set underlying that shortlist` only when the mathematical set object itself is the point of the sentence.
 - A reader should be able to recover on first pass what source set was acted on, what shortlist came out, and whether the text is naming the published set result, the token, or the mathematical set object.
 
-### A.0:QF.2a - Set/space reading reading glosses
+### A.0:QF.2a - Set/space reading glosses
 
 The current set/space reading terms should read plainly as follows:
 
@@ -207,7 +207,7 @@ The current set/space reading terms should read plainly as follows:
   - one explicit list of which declared set-view heads the current atlas/support reading is holding together
   - use it when several declared views must stay visible together; it does not create one new set result and should not hide the active source set or active set result
 - `OutcomeMapRef`
-  - one explicit `OutcomeMapRef` or named map ref that shows how one declared source or set result bears on into one outcome-side or effect-side declared space/ref when that map materially matters
+  - one explicit map reference showing how one declared source or set result bears on a declared outcome-side or effect-side space when that map materially matters
   - it qualifies the reading; it does not rename the source set into the outcome-side declared space/ref
 - `SpaceMetricRef`
   - one explicit metric-ref qualifier for the metric, neighborhood, distance, density, or reachability discipline being used inside one declared space

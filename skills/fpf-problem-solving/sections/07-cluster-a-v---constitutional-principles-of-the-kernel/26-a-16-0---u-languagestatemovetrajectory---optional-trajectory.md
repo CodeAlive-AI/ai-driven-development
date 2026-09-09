@@ -14,7 +14,7 @@
 
 **Use this when.** Use this pattern when one local language-state move is no longer enough because a reviewable history must keep episteme editions, publication forms, branches, retirements, or losses visible, or because an actual responsibility handoff depends on that history.
 
-**What goes wrong if missed.** Readers treat cue packs, routed cue sets, endpoint-bound publications, and next-use dockings as one thing magically moving; forks, losses, authority changes, and work-requiring crossings become implicit, and an actual responsibility change may be mistaken for semantic docking.
+**What goes wrong if missed.** Readers treat cue packs, routed cue sets, endpoint-bound publications, and next-use dockings as successive states of one unchanged episteme; forks, losses, authority changes, and work-requiring crossings become implicit, and an actual responsibility change may be mistaken for semantic docking.
 
 **What this buys.** One optional trajectory account that records lineage, position claims, move kinds, publication forms, losses, and the next use and authority boundary without wrapping every local `A.16` move in heavy history machinery.
 
@@ -23,7 +23,7 @@ In engineering, inquiry, operator, and management practice, teams sometimes need
 
 Cue packs, routed cue sets, abductive prompts, typed route-bounded projection forms, partial normal forms, and endpoint-bound records may appear in that history as publication forms or published records. They are not the disturbances, telemetry traces, model outputs, bodily tensions, or carrier documents that ground it.
 
-The account must not pretend that one unchanged episteme or publication literally moves. It records the selected episteme edition at each load-bearing step, the form and publication occurrence when availability matters, and links to successor editions when claims change.
+The trajectory account records the selected episteme edition at each load-bearing step, the form and publication occurrence when availability matters, and links to successor editions when claims change.
 
 ### A.16.0:2 - Problem
 Without an explicit trajectory-account pattern for those heavier cases:
@@ -69,12 +69,12 @@ A form, face, carrier, or publication-occurrence change can leave the selected e
 
 Several live routes for one selected edition are **not** yet a lineage fork. A fork requires separately identified successor editions with explicit links, authority, and losses; publishing the same edition through two forms is not enough.
 
-A trajectory step may reuse one edition in another form, add a successor edition, or relate several editions through fork, merge, supersession, or retirement. It does **not** mean that the source phenomenon moved through the language-state chart.
+A trajectory step may reuse one edition in another form, add a successor edition, or relate several editions through fork, merge, supersession, or retirement. It does **not** describe a trajectory of the source phenomenon.
 
 Here `route` names an `A.16` move-family label or a typed upstream publication-form cue. It is not an action route, work sequence, workflow, or transformation-flow path.
 
 #### A.16.0:4.2 - Position-account discipline
-The position read by this pattern is the slot-explicit claim defined in `C.2.2a`: a partial coordinate publication in the declared language-state `U.CharacteristicSpace`, where each basis slot publishes a `ValueSet(slot)`, interval, or other admissible set-valued claim.
+The position read by this pattern is the slot-explicit claim defined in `C.2.2a`: a partial coordinate publication in the declared language-state `U.CharacteristicSpace`, where each basis-slot reading is published as a `ValueSet(slot)`, interval, or other admissible set-valued claim.
 
 Early seam publications may leave some slots unknown or wide. That uncertainty is admissible only if it is explicit. A trajectory account therefore records the position claim for the current episteme edition and, when needed, for predecessor or sibling editions that justify the move reading.
 
@@ -128,21 +128,21 @@ Typical next-use patterns include:
 
 - `A.6.P` for relation precision or repair;
 - `A.6.A` for an action invitation;
-- `C.16.Q` for evaluative precision or repair;
+- `C.16.Q` for quality or evaluative-characterization wording repair;
 - `B.5.2` for abductive inquiry;
-- `A.15` for method-facing or work-facing planning;
-- `C.25` for endpoint bundle structure.
+- `A.15.2` for planning future Work, including its target Method;
+- `C.25` for quality-family decomposition and Q-Bundle structure.
 
 Name the next pattern and what its content defines, constrains, or tests. The account already identifies the selected episteme edition; add a project record, particular publication form, or publication occurrence only when that distinction changes the next use. This is next-use docking, not a transfer of responsibility, and a pattern reference alone does not prove endpoint admission.
 
-**Separate responsibility-handoff branch.** Open this branch only when responsibility, commitment, permission, or authority actually changes. Name the giving and receiving admitted systems and, when their system-role classification matters, the exact system-role kinds and assignments through which they participate; name the exact relation before and after the change under its applicable pattern, its governed object or action, scope, and effective interval, and any assigning, instituting, revoking, or superseding act that the relation requires. The trajectory account cites that relation and its history; episteme lineage, publication form, publication occurrence, endpoint admission, and next-use docking neither create nor prove it.
+**Separate responsibility-handoff branch.** Open this branch only when responsibility, commitment, permission, or authority actually changes. Name the exact relation before and after the change under its applicable pattern, then the participants in that relation's own roles. Include giving and receiving admitted systems when its predicate requires them and, when their system-role classification matters, the exact system-role kinds and assignments through which they participate. State its governed object or action, scope, effective interval, and any assigning, instituting, revoking, or superseding act that the relation requires. The trajectory account cites that relation and its history; episteme lineage, publication form, publication occurrence, endpoint admission, and next-use docking neither create nor prove it.
 
 After docking to a next use, monitoring, maintenance, revisit, or later re-entry may continue through new lineage entries or later trajectories. Keep lineage continuity separate from the current endpoint use and from any separately established responsibility or authority relation.
 
-#### A.16.0:4.7 - Effect-free moves versus work-requiring crossings
-Some `formalize` and `operationalize` steps are effect-free epistemic changes: rewriting, slot-explicit articulation, route-bounded partialization, view retargeting, or normal-form repair over already available grounds.
+#### A.16.0:4.7 - Re-expression and additional world-facing Work
+Some `formalize` and `operationalize` steps re-express already available grounds through rewriting, slot-explicit articulation, route-bounded partialization, view retargeting, or normal-form repair. Performing those activities can itself be dated Work under A.15.1; the distinction here is whether new world-side measurements or interventions are needed.
 
-Other steps require new measurements, experiments, instrumentation, execution, or other `U.Work`. When that happens, the trajectory account shall expose the work-boundary crossing instead of pretending that world-facing work occurred inside the language layer. The account records why the crossing was required; use the relevant work, gate, or endpoint pattern to describe or test the world step. Add a particular Work, assertion, or `ClaimGraph` identity only when the claim or later reliance depends on it.
+Some steps additionally require new measurements, experiments, installation or use of instrumentation, execution, or other `U.Work`. When that happens, the trajectory account shall expose the work-boundary crossing. The account records why the crossing was required; use the relevant work, gate, or endpoint pattern to describe or test the world step. Add a particular Work, assertion, or `ClaimGraph` identity only when the claim or later reliance depends on it.
 
 A work-boundary crossing does not by itself transfer responsibility or authority. If a separate actual responsibility handoff occurs, use the triggered branch in `A.16.0:4.6` and keep its relation distinct from the Work, episteme lineage, publication, and endpoint use.
 
@@ -177,7 +177,7 @@ A trajectory may later cross a viewpoint or context boundary. When that happens:
 **Show (Episteme).** A model-vs-observation discrepancy is a witness-lane tension, not the positioned episteme edition or its lineage. Once the discrepancy is preserved in a cue pack, one branch may express the selected edition in a typed prompt form and later formalize it; if the claims change, identify a successor edition. Another branch may reopen or retire if the provisional route proves unsupported.
 
 ### A.16.0:6 - Bias-Annotation
-The pattern biases authors toward lineage-aware history accounts rather than stage stories about one magically maturing episteme or publication. That bias is intentional when branch, loss, next-use, actual responsibility, or authority semantics matter. The counter-bias is equally intentional: do **not** publish a trajectory account when a local move note already suffices.
+The pattern biases authors toward lineage-aware history accounts rather than stage stories that conflate re-expression with changed claims. That bias is intentional when branch, loss, next-use, actual responsibility, or authority semantics matter. The counter-bias is equally intentional: do **not** publish a trajectory account when a local move note already suffices.
 
 ### A.16.0:7 - Conformance Checklist
 - `CC-A.16.0-1` `U.LanguageStateMoveTrajectory` **SHALL NOT** be treated as mandatory wrapper syntax around every `A.16` move.
@@ -186,12 +186,12 @@ The pattern biases authors toward lineage-aware history accounts rather than sta
 - `CC-A.16.0-4` Fork, merge, supersession, derivation, and retirement **SHALL** be made explicit whenever the account depends on them.
 - `CC-A.16.0-5` Publication form and MVPK face **SHALL NOT** be collapsed, and untyped seam placeholders **SHALL NOT** substitute for typed publication forms.
 - `CC-A.16.0-6` `projection` **SHALL** be read as route-bounded partialization with visible loss notes and an admissible reopen condition.
-- `CC-A.16.0-7` Work-requiring `formalize` or `operationalize` steps **SHALL** expose the work-boundary crossing rather than pretending that `U.Work` occurred inside the language layer; they **SHALL NOT** call that crossing a responsibility handoff unless the separate `A.16.0:4.6` branch is satisfied.
+- `CC-A.16.0-7` Work-requiring `formalize` or `operationalize` steps **SHALL** expose the work-boundary crossing; they **SHALL NOT** call that crossing a responsibility handoff unless the separate `A.16.0:4.6` branch is satisfied.
 - `CC-A.16.0-8` When graph publication of paths is needed, authors **SHOULD** reuse `E.18` rather than inventing a rival path calculus here.
 
 ### A.16.0:8 - Common Anti-Patterns and How to Avoid Them
 - **Meta-wrapper inflation.** Treat `A.16.0` as obligatory around every move. Repair by publishing a local `A.16` move note unless a later use depends on the history.
-- **One-publication myth.** Treat one frozen episteme as literally moving unchanged. Repair by publishing lineage members and their links.
+- **One-publication myth.** Record a changed claim discriminator under the same episteme edition. Repair by identifying the successor editions and their links.
 - **Pattern and form collapse.** Treat a pattern reference as if it were a publication form. Repair by naming the form and the cited pattern's concrete definition, constraint, or test separately.
 - **Form and face collapse.** Treat seam publications as if they minted a second MVPK face family. Repair by naming form and face separately.
 - **Multi-route and fork collapse.** Treat several live routes for one selected episteme edition as if they were already several successor editions.
@@ -229,7 +229,7 @@ An operator alert note about a service disturbance may move:
 
 `notice -> stabilize -> route -> projection -> operationalize`
 
-If later evidence no longer supports one route, the admissible continuation may include explicit retirement of that branch rather than silent disappearance. The retirement does not erase the prior branch; it withdraws authority and preserves continuity explicitly.
+If later evidence no longer supports one route, the admissible continuation may include explicit retirement of that branch rather than silent disappearance. The retirement does not erase the prior branch; it ends the retired branch's current use and preserves continuity explicitly. Any authority change still requires the separate relation in §4.6.
 
 #### A.16.0:13.4 - Bridge-sensitive trajectory
 A route-bearing comparative note may move through a seam publication and only later dock to a bridge overlay or viewpoint bundle. The bridge or viewpoint attachment does not replace the trajectory account; it annotates or re-expresses a lineage that already exists.

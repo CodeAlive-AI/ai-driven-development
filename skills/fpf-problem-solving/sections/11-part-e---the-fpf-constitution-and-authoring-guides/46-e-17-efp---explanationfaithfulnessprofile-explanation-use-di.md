@@ -220,6 +220,8 @@ When reader fit materially changes the explanation class, bounded use, blocked u
 
 These names are optional prompts, not a five-field publication block. They only expose the reader-fit difference that changes the present use.
 
+When the bounded use depends on how much selected structure the reader can recover, use `C.2.8` with the relevant preparation, access and budget. Compare recovered structure separately from explanation faithfulness. Keep the exact episteme identified by the first screen: a content change requires its own target, even if the revised explanation is easier to use. The ordinary source-linked note remains sufficient whenever it meets EFP's non-use condition.
+
 #### E.17.EFP:4.3 - Explanation class set
 
 The explanation-class set used in this profile is:
@@ -531,6 +533,7 @@ Generated and model-facing explanation can hide source drift; ordinary human exp
 
 ### E.17.EFP:12 - Relations
 
+- **Uses when current:** `C.2.8` for the extractable structural amount consumed by a bounded explanation use; its comparison retains the identified episteme, expressing form and qualified observer, while EFP retains explanation-use classification.
 - **Builds on:** `E.17.0`, `E.17`, `A.7`, `E.10.D2`, `A.6.B`, `F.9`, `F.18`
 - **Coordinates with:** `ConservativeRetextualization`, `RepresentationSchemeTransition`, `A.6.3.CSC Controlled Semantic Coarsening`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `A.15`, `A.15.4`, `B.3`, `A.20`, `A.21`
 - **Profile basis and main neighboring-pattern boundaries:** E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material. A shift toward new semantics, a coarsened narrower-use target, or a gate-bearing claim or effect leaves the profile.

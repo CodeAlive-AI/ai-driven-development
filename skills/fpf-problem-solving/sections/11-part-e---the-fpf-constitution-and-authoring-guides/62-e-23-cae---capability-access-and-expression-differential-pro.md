@@ -21,9 +21,9 @@
 
 **First useful move.** State the case in ordinary language:
 
-> This holder previously obtained this result for this Work family under these conditions. The result now fails under this changed demand. Before more training, redesign, rehearsal, or parameter updating, return once to a qualified reference condition without further development, vary the smallest decision-bearing condition, and record which observable distinction changes first.
+> This holder previously obtained this result for this Work family under these conditions. The holder now fails to obtain that result under the changed demand. Before more training, redesign, rehearsal, or parameter updating, return once to a qualified reference condition without further development, vary the smallest decision-bearing condition, and record which observable distinction changes first.
 
-**First useful result.** Return the controlled observations, one or more qualified differential dispositions, the strongest surviving rival, the limits of the result, and candidate routes to the patterns or domain Methods that could receive it. The result is not a choice, authorization, selected next Work, performed Work, hidden memory, or causal mechanism.
+**First useful result.** Return the controlled observations, one or more qualified differential dispositions, the strongest surviving rival, the limits of the result, and candidate routes to the patterns or domain Methods that could receive it. The result is not a choice, authorization, selected next Work, or performed Work; it does not establish hidden memory or a causal mechanism.
 
 **What changes in practice.** A practitioner no longer treats one failed performance as proof that the capability or memory disappeared. They first ask whether the claimed demand, configuration, cue or routing, applicability selection, response access, adaptation, and enactment can be separated by a safe contrast. Development or redesign begins only after a separate steering or choice result uses that evidence.
 
@@ -93,7 +93,7 @@ CapabilityAccessExpressionProbe@Use:
   candidateRoutes:
 ```
 
-This card is a local Method result, not a new FPF kind. Its fields create no capability, context, memory, choice, authorization, Work, or causal relation.
+This card is a local Method result, not a new FPF kind.
 
 #### E.23.CAE:4.2 - Run the differential probe
 
@@ -232,7 +232,7 @@ Revisit this pattern when a current FPF neighbor supplies the whole differential
 
 ### E.23.CAE:10 - Rationale
 
-A capability is bounded by holder, Work family, envelope, measures, evidence, and currentness. One failed occurrence does not rewrite that claim automatically. A controlled return to a qualified condition can cheaply distinguish global change from availability under at least one condition, while separate applicability, access, adaptation, and enactment observations prevent a later-stage failure from being projected backward.
+A capability claim is bounded by holder, Work family, envelope, measures, evidence, and currentness. One failed occurrence does not rewrite that claim automatically. A controlled return to a qualified condition can cheaply distinguish global change from availability under at least one condition, while separate applicability, access, adaptation, and enactment observations prevent a later-stage failure from being projected backward.
 
 The method stays transdisciplinary only by refusing a common hidden mechanism. Its common result is the smallest one that the unlike cases can honestly share: observation, disposition, surviving rival, limit, and candidate routes.
 
@@ -262,8 +262,8 @@ Reopen this comparison when a direct-source correction removes a load-bearing co
 | `A.15.8` | Governs an exact Work or WorkPlan performance configuration and recovery. Its observation may support a configuration disposition here; this pattern does not absorb its relation tests. |
 | `E.23.CDI` | Receives the result only after a separate applicable steering or choice result selects capability development. It retains limiting-contribution diagnosis, intervention, protected conditions, and representative transfer. |
 | `E.23` | Uses this pattern first only when the proposed object under improvement remains ambiguous because a capability may be available but inaccessible, unexpressed, unadapted, or unenacted. It retains the repeated object-improvement loop. |
-| `A.15.7` | May use the disposition as current information for a light next action during ongoing Work. It retains chooser, performer, authority, action, and feedback; no amendment is required. |
-| `C.11` | May use the disposition as a premise when a current chooser and `OptionSet` exist and comparison or another probe can change the choice. It alone emits the `ChoiceResult`; no amendment is required. |
+| `A.15.7` | May use the disposition as current information for a light next action during ongoing Work. It retains chooser, performer, authority, action, and feedback. |
+| `C.11` | May use the disposition as a premise when a current chooser and `OptionSet` exist and comparison or another probe can change the choice. It alone emits the `ChoiceResult`. |
 | `E.22`, `A.10`, `B.3` | Govern an explicit evaluation frame, evidence reliance, and assurance when a receiving use needs them. The probe record is not evidence or assurance by form. |
 | `E.10.LRN` | Repairs ambiguous learning wording; it supplies no substantive differential probe or holder-specific learning Method. |
 | `C.36` | Governs cultural generation, transmission, reconstruction, recognition, selection, retention, and loss across a population. Cultural continuation is not one holder's capability or response availability. |

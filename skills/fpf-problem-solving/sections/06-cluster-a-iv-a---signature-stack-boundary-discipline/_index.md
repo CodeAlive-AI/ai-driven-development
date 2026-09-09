@@ -15,7 +15,7 @@
 - [A.6.3.CSC - Controlled Semantic Coarsening](10-a-6-3-csc---controlled-semantic-coarsening.md) (356 lines) — Type: Architectural (A)
 - [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression](11-a-6-3-cr---conservativeretextualization-entityofconcern-pres.md) (348 lines) — Type: Specialization pattern
 - [A.6.3.RT - Representation-Scheme Transition: EntityOfConcern-Preserving Representation-Scheme Transition](12-a-6-3-rt---representation-scheme-transition-entityofconcern.md) (458 lines) — Type: Specialization pattern
-- [A.6.3.NAR - Structure-to-Narrative Rendering](13-a-6-3-nar---structure-to-narrative-rendering.md) (389 lines) — Type: Specialization pattern
+- [A.6.3.NAR - Structure-to-Narrative Rendering](13-a-6-3-nar---structure-to-narrative-rendering.md) (392 lines) — Type: Specialization pattern
 - [A.6.4 - EntityOfConcern retargeting](14-a-6-4---entityofconcern-retargeting.md) (250 lines) — Type: Definitional pattern
 - [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims](15-a-6-p---relational-precision-restoration---recovering-direct.md) (562 lines) — Type: Architectural (A)
 - [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](16-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (431 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording

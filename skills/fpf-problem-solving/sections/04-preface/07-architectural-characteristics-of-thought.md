@@ -19,7 +19,7 @@ If FPF is an architecture for thought, then thought has architecture characteris
 | Change-impact visibility | A reader or evaluator can see what a change affects and what it leaves untouched. | DRRs, relations, source-basis or missing-structure return conditions, architecture characteristics, and improvement records. |
 | Exploration health | A project can see whether it has explored enough of the option space before selecting. | Novelty-diversity, option portfolios, current-option publications, Pareto-like fronts, archives, and publications ready for option selection. |
 | Didactic clarity | The working reader can see why a distinction matters and what changes in practice. | `E.2` pillars, `E.8` pattern form, `E.11` discoverability, `E.12`, `E.19`, and plain explanation paired with technical fields. |
-| Epiplexity control | The structural entanglement that makes a holon hard to understand, change, reuse, or improve is not hidden by a simple diagram. | Architecture patterns, structural views, module and interface patterns, scale patterns, and architectural-characteristic evaluation. |
+| Understandability and changeability | Structural dependencies remain visible in a simplified diagram, so a practitioner can judge their effect on understanding, changing, reusing, or improving the holon. | Architecture patterns, structural views, module and interface patterns, scale patterns, and architectural-characteristic evaluation. |
 
 The table is not a checklist for every project. It shows the kind of quality FPF is trying to preserve in reasoning itself. A project may enter through architecture, naming, evidence, mathematics, or comparison, but the deeper benefit is that the reasoning becomes more auditable, evolvable, and usable.
 

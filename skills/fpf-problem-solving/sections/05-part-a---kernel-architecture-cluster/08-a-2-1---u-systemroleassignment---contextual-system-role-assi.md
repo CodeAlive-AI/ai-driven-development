@@ -132,7 +132,7 @@ An occurrence of a declared species begins when that species' direct predicate s
 
 A context field ending in `...SystemRoleAssignmentRef` uses `U.RelationRef constrained to U.SystemRoleAssignment` and resolves to the exact occurrence while keeping its declared species recoverable.
 
-An assignment assertion or occurrence description can state `assignmentInterval` with a temporal reference, start, end or explicit open end, and continuity claim. Closing an open interval later refines the same description when world-side obtaining was uninterrupted. Missing evidence yields `unknown`; it does not split the occurrence. A demonstrated non-assignment interval ends it.
+An assignment assertion or occurrence description can state `assignmentInterval` with a temporal reference, start, end or explicit open end, and continuity claim. Closing an open interval later refines the same description when world-side obtaining was uninterrupted. When evidence is missing, whether the assignment obtained remains `unknown`; the evidence gap by itself establishes neither continuity nor a split. The occurrence ends when its predicate ceases to obtain; evidence of cessation supports a conclusion about when it ended.
 
 Keep ordinary interval content here. When a positive temporal aspect itself becomes a relied-on object—its temporal reference, validity or currentness window, duration, cadence, rhythm, or interval structure—use `C.27.TA` for that aspect and keep the assignment occurrence separate. Use `C.27` only for the different question of whether a temporal claim is adequate.
 
@@ -157,7 +157,7 @@ The projection does not erase additional participants or assert that another occ
 
 A C.3.2 judgment classifies one system under one local system-role kind for one signature edition and slice. An assignment occurrence relates participants under its species predicate. Either can be current without the other.
 
-An assignment can be one membership feature only when the exact local `KindSignature` explicitly cites that independently obtaining predicate. `RoboticsAssignment-1` alone makes neither `RoboticsEngineerSystemRole` nor `EngineerSystemRole` true. A later `U.SubkindOf` result records monotonic implication among independently evaluated judgments; it creates no broader assignment.
+An assignment can be one membership feature only when the exact local `KindSignature` explicitly cites that independently obtaining predicate. `RoboticsAssignment-1` alone establishes neither a `RoboticsEngineerSystemRole` nor an `EngineerSystemRole` membership judgment. A later `U.SubkindOf` result records monotonic implication among independently evaluated judgments; it creates no broader assignment.
 
 #### A.2.1:4.6 - Demand-Driven Materialization
 
@@ -210,7 +210,7 @@ If one assignment species genuinely depends on a structure or locus, its direct 
 
 #### A.2.1:5.1 - Robot Assigned for One Inspection Shift
 
-The maintenance domain declares a simple species and an occurrence:
+The maintenance domain declares a simple species. Its participant slots and one occurrence are shown below:
 
 ```text
 MaintenanceInspectionAssignment <: U.SystemRoleAssignment
@@ -284,7 +284,7 @@ A.13 first recovers `ReviewService-4` as the exact actual performer through its 
 | `CC-A2.1-2` | Every species declares `HolderSystemSlot : U.System` and one declaration-local `AssignedSystemRoleKindSlot` with an exact local system-role-kind domain. |
 | `CC-A2.1-3` | Every additional participant changes the predicate or occurrence identity and has an admitted kind and complete SlotSpec. |
 | `CC-A2.1-4` | The direct predicate, applicability, and occurrence-identity rule are explicit. |
-| `CC-A2.1-5` | One occurrence is the maximal uninterrupted predicate-true interval for fixed participant values; a demonstrated gap creates another occurrence. |
+| `CC-A2.1-5` | One occurrence spans the maximal uninterrupted predicate-true interval for fixed participant values; after a demonstrated gap, a later resumption is another occurrence. |
 | `CC-A2.1-6` | `assignmentInterval` describes known extent and is not a participant or proof of obtaining. Ordinary interval content stays local; a relied-on positive temporal aspect uses `C.27.TA`, while temporal-claim adequacy uses `C.27`. |
 | `CC-A2.1-7` | Taxonomy, scheme, signature, assertion, evidence, publication, and model-use structure are not generic assignment participants. |
 | `CC-A2.1-8` | A specialized occurrence is itself a `U.SystemRoleAssignment`; no weaker generic duplicate is created. |
@@ -292,7 +292,7 @@ A.13 first recovers `ReviewService-4` as the exact actual performer through its 
 | `CC-A2.1-10` | Classification and assignment remain independent; assignment is a criterion feature only when the signature explicitly says so. |
 | `CC-A2.1-11` | A.13 identifies the actual performer and A.15.1 independently admits the dated Work. F.6 checks the same assignment only if the current use must also say exactly under which assignment the Work was performed; a missing or failed check leaves the Work intact. |
 | `CC-A2.1-12` | A `...SystemRoleAssignmentRef` field is typed by `U.RelationRef constrained to U.SystemRoleAssignment`, resolves to one exact occurrence, and keeps its declared species recoverable. |
-| `CC-A2.1-13` | Missing evidence yields unresolved or `unknown`; only demonstrated predicate failure ends the occurrence. |
+| `CC-A2.1-13` | Missing evidence leaves whether the assignment obtained unresolved or `unknown`. Actual predicate cessation or participant change ends the occurrence; evidence supports a conclusion about its boundary. |
 | `CC-A2.1-14` | Reduced use stops before explicit individuation when no receiver needs an assignment reference. |
 
 ### A.2.1:9 - Common Anti-Patterns

@@ -63,7 +63,7 @@ These are reconciliation-result dispositions, not new U-kinds. Compatible co-use
 
 #### A.7.2:4.3 - Record claim-relative source use
 
-`OntologyClaimSourceUseRelation@Context` records how one dated ontology-decision or reconciliation work occurrence actually consumes one source episteme for one receiving ontology claim. It is local to this use and does not create a universal source-authority relation.
+`OntologyClaimSourceUseRelation@Context` relates one source episteme, one receiving ontology claim, and the dated ontology-decision or reconciliation work occurrence that actually consumes that source for that claim. It is local to this use and does not create a universal source-authority relation.
 
 ```text
 OntologySourceUseFunctionValue ::=
@@ -121,7 +121,7 @@ OccurrenceIdentity:
    sourceUseScope,
    maximalContinuousUseInterval>
 ```
-The source participant is the source episteme and edition consumed. The receiving participant is the ontology-claim episteme and edition being formulated, constrained, tested, interpreted, compared, or traced. For the Work participant, use A.13 to identify the actual performer and A.15.1 to admit the dated ontology-decision `U.Work` independently. If the case must also identify the assignment under which that Work was performed, F.6 checks the assignment used by A.13 and compares its holder with the already identified performer. The assignment neither supplies the System nor performs the Work, and an unused assignment check need not obtain.
+The source participant is the source episteme and edition consumed. The receiving participant is the ontology-claim episteme and edition being formulated, constrained, tested, interpreted, compared, or traced. For the Work participant, use A.13 to identify the actual performer and A.15.1 to admit the dated ontology-decision `U.Work` independently. If the case must also identify the assignment under which that Work was performed, F.6 checks the assignment used by A.13 and compares its holder with the already identified performer. The assignment relates the independently identified System to its assigned-kind value; that System performs the Work.
 
 The minimal occurrence needs only those three exact participants, `useFunction`, `sourceUseScope`, and the derived maximal continuous interval during which the named work actually consumes content from that source episteme for that receiving claim. Citation, access, bibliography membership, prestige, publication status, or co-location alone is insufficient. If the work consumes only a separately identified claim or content episteme inside the source, `sourceContentSliceRef` names that slice; it does not duplicate the source participant under a bundle alias. Changing a source or receiving-claim edition, work occurrence, function, scope, or demonstrated actual-use interval identifies another occurrence. A changed optional qualifier identifies another occurrence only when it changes the content or direct use predicate; a later review record alone does not.
 
@@ -159,7 +159,7 @@ The dominant biases are prestige hierarchy, forced convergence, and formal-shape
 |---|---|
 | `CC-A7.2-1` | The conflict names exact receiving claims, practical consequences, contexts, scopes, and current editions. |
 | `CC-A7.2-2` | Vocabulary difference or unlike source function alone does not trigger reconciliation. |
-| `CC-A7.2-3` | The reader, `U.MethodDescription` episteme, described `U.Method`, actual performer identified through A.13, independently admitted dated reconciliation `U.Work`, source uses, and returned result are distinct. A separately declared assignment species, obtaining occurrence, and F.6 check appear only when the case must also identify the assignment under which the Work was performed. A short result may omit unused identifiers without presuming those facts. |
+| `CC-A7.2-3` | The reader, `U.MethodDescription` episteme, described `U.Method`, actual performer identified through A.13, independently admitted dated reconciliation `U.Work`, source uses, and returned result are distinct. For a precise actual-Work claim, retain the separately declared assignment species and obtaining occurrence used by A.13; add the F.6 check only when the case must also identify the assignment under which the Work was performed. A short result may omit unused identifiers without presuming those facts. |
 | `CC-A7.2-4` | Every load-bearing common claim is cited from `A.7.CP` through an actual reasoning-basis occurrence. |
 | `CC-A7.2-5` | Every source-use occurrence has the three exact participants, source and receiving-claim editions, function, claim scope, and maximal continuous actual-use interval. It includes only content-slice, model-use, currentness, evidence, disposition, blocked-overread, or claim-change qualifiers actually used or asserted in this reconciliation. |
 | `CC-A7.2-6` | Evidence, publication, formal semantics, and currentness remain with subject patterns. |
@@ -175,7 +175,7 @@ The dominant biases are prestige hierarchy, forced convergence, and formal-shape
 | Rewrite a premise list while dated applications keep yielding conflicting results. | Repair the smallest method clause or subject-pattern decision that causes the incompatible result, then check the affected application result. |
 | Force one ontology because shared terminology looks desirable. | Permit `contextSplit` or `doNotCompose` when constructions or uses differ. |
 | Treat citation, publication, or a completed review dossier as an obtaining source-use relation. | Require actual consumption by dated decision work for one receiving claim; keep optional content-slice, model-use, currentness, evidence, and disposition records only when this reconciliation uses them. |
-| Let a pattern, source, reader label, system-role kind, or assignment perform reconciliation. | Use A.13 to identify the actual performer and A.15.1 to admit the dated reconciliation Work independently. Add the separately declared assignment species, actual occurrence, and F.6 only if the result must also identify the assignment under which that Work was performed. Neither the kind nor the assignment acts. |
+| Let a pattern, source, reader label, system-role kind, or assignment perform reconciliation. | Use A.13 to identify the actual performer and A.15.1 to admit the dated reconciliation Work independently. Retain the separately declared assignment species and obtaining occurrence used by A.13; add F.6 only if the result must also identify the assignment under which that Work was performed. Neither the kind nor the assignment acts. |
 | Copy the common compact into this method. | Cite exact `A7CP-*` claims; keep `A.7.CP` as the authoritative source for the claim content and relation definition. |
 
 ### A.7.2:9 - Consequences
@@ -204,7 +204,7 @@ Each row changes a source-use or comparison boundary in the Solution and cases. 
 - **Coordinates with:** `A.7.1`. `A.7.2` is neither its parent nor child; it handles material cross-pattern premise conflict and can return repaired subject-pattern decisions to it.
 - **Consumes:** exact claim contents from `A.7.CP` through actual `ClaimUsedAsReasoningBasisRelation@Context` occurrences; it does not copy or own the compact. Pattern epistemes and `U.MethodDescription` epistemes supply clauses or declared premises; their described Methods remain distinct, while dated application Work and its separately governed result claims supply the reconciliation inputs.
 - **Defines:** `OntologyClaimSourceUseRelation@Context` and `OntologySourceUseConflictFinding@Context` for bounded ontology-decision and reconciliation source use only.
-- **Coordinates with:** `A.10` for evidence use, `G.11` for currentness, `C.29` and direct formal patterns for formal semantics, `C.2.1`/`E.17` for source epistemes and publications, and subject patterns for the receiving ontology claim.
+- **Coordinates with:** `A.10` for evidence use, `G.11` for currentness, `C.29` and direct formal patterns for formal semantics, `C.2.1` for source epistemes, `E.24.PUB` for publication-occurrence, form, and carrier questions, `E.17` for multi-view publication, and subject patterns for the receiving ontology claim.
 - **Preserves:** current landed FPF decisions as default internal basis while allowing grounded, claim-specific reopen. It does not replace `E.9.DA` review or DRR discharge.
 - **Does not define:** a universal source-authority kind, source role, prestige ranking, evidence relation, publication relation, or source-currentness relation.
 

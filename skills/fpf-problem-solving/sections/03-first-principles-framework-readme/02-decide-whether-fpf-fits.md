@@ -25,11 +25,11 @@ There are three common ways to use FPF:
 2. Mixed team: use it to keep specialists, managers, safety leads, and AI assistants aligned around the same work.
 3. AI-assisted: attach or index the specification, ask for plain-language project help first, and use pattern names only when they make the answer easier to check.
 
-Stronger AI does not remove the need for FPF. AI can generate fluent options quickly, but projects still need to decide what counts as evidence, which option is being compared, who may rely on an answer, when a claim is stale, what remains only a guess, and what work is actually authorized. FPF helps make those boundaries explicit before a confident answer becomes an expensive mistake.
+FPF can help with the evidence and decision questions that remain as AI becomes more capable. AI can generate fluent options quickly, but projects still need to decide what counts as evidence, which option is being compared, who may rely on an answer, when a claim is stale, what remains only a guess, and what work is actually authorized. FPF helps make those boundaries explicit before a confident answer becomes an expensive mistake.
 
 Core ideas in plain language:
 
-- first name the project object under concern; when it is treated as a whole with parts, FPF calls it a holon;
+- first name the project object under concern; FPF calls it a holon when its actual construction supports treatment as a whole with parts and as a possible part of a larger whole; use `A.1` to check a particular candidate;
 - local teams may use local meanings; boundary-crossing work makes the translation relation explicit;
 - the project object itself, its description, a dashboard about it, a decision about it, and the work done to change it are not the same;
 - architecture is structure of that holon or project object in a context, not the diagram, document, approval, or plan about it;

@@ -9,7 +9,7 @@
 - [A.1.SCR - Finding the Acting or Changed System](04-a-1-scr---finding-the-acting-or-changed-system.md) (259 lines) — Type: Part A practitioner application pattern
 - [A.1.CSD - Discovering Systems That May Bear Consequences](05-a-1-csd---discovering-systems-that-may-bear-consequences.md) (272 lines) — Type: Part A practitioner discovery pattern
 - [A.1.STM - Using the System-Thinking Long Mantra](06-a-1-stm---using-the-system-thinking-long-mantra.md) (171 lines) — Type: Part A practitioner application pattern
-- [A.2 - System-Role Kinds and Assignments](07-a-2---system-role-kinds-and-assignments.md) (420 lines) — Type: Architectural (A)
+- [A.2 - System-Role Kinds and Assignments](07-a-2---system-role-kinds-and-assignments.md) (418 lines) — Type: Architectural (A)
 - [A.2.1 - U.SystemRoleAssignment - Contextual System-Role Assignment](08-a-2-1---u-systemroleassignment---contextual-system-role-assi.md) (349 lines) — Type: Definitional (D)
 - [A.2.2 - U.Capability - System Ability Envelope and Measures](09-a-2-2---u-capability---system-ability-envelope-and-measures.md) (369 lines) — U.Capability is the FPF object for "can do within bounds".
 - [A.2.3 - U.PromiseContent (Promise Content)](10-a-2-3---u-promisecontent.md) (492 lines) — Type: Definitional promise-content episteme pattern

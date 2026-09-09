@@ -22,7 +22,7 @@
 - [A.15.3 - SlotFillingsPlanItem](17-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (480 lines) — Type: Architectural (A)
 - [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](19-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (218 lines) — Type: Architectural (A)
-- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](20-a-15-6---project-process-and-case-recovery-through-work-meth.md) (396 lines) — Type: Architectural (A)
+- [A.15.6 - Project, Process, and Case Recovery through Work, Method, and Transformation](20-a-15-6---project-process-and-case-recovery-through-work-meth.md) (398 lines) — Type: Architectural (A)
 - [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (201 lines) — Type: Architectural (A)
 - [A.15.8 - Work-Performance Configuration and Recovery Testing](22-a-15-8---work-performance-configuration-and-recovery-testing.md) (225 lines) — Type: Architectural (A)
 - [A.15.9 - Request and Use a Bounded Result from Another Practice](23-a-15-9---request-and-use-a-bounded-result-from-another-pract.md) (178 lines) — Normativity: Normative unless explicitly marked informative

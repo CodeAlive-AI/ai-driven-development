@@ -14,7 +14,7 @@ what description is seen, where it is encountered, what it applies to, what
 excludes it, which `definitionEpistemeRef` identifies its defining `U.Episteme`, and which nearby reading or
 wrong defining `U.Episteme` must be rejected.
 
-**Plain recognition line.** Do not let the first wording you see define itself; ask which defining `U.Episteme` gives it meaning and which nearby reading it rejects.
+**Plain recognition line.** Find the defining `U.Episteme` for the encountered description and name the plausible nearby reading to reject.
 
 Use this pattern when the live entry load is still first-contact recognition over
 one encountered description carrier or projection.
@@ -81,7 +81,7 @@ When first-contact recognition is under-governed, several defects recur:
 
 ### A.6.RSIG:4 - Solution
 
-#### A.6.RSIG:4.1 - Relation-signature object and non-goals
+#### A.6.RSIG:4.1 - Recognition-cue discipline and non-goals
 
 `A.6.RSIG` governs description-recognition signatures in general: the
 first-contact cue structure by which one reader can recover what encountered
@@ -97,10 +97,10 @@ Description object by default, not a `U.*` kind, and not a specialization of
 The encountered carrier or projection may help recognition; it does not become
 authoritative merely by being encountered. When this pattern talks about an
 encountered publication or projection, that wording does not mint a new surface
-kind; use an existing publication face, publication form, interop publication form,
-`U.View`, card, or lane kind only when that kind is actually being made.
+kind; identify the actual publication face, publication form, interop publication form,
+`U.View`, card, or lane under the conditions governing that object and use.
 
-Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is available only through one publication, cite the `U.EpistemePublication` that publishes it separately; the publication, projection, or carrier does not become the defining episteme merely because it exposed the definition to the reader.
+Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is available only through one publication, cite separately the exact E.24.PUB publication occurrence that makes it available; the publication, projection, or carrier does not become the defining episteme merely because it exposed the definition to the reader.
 
 `A.6.RSIG` does not govern:
 
@@ -190,22 +190,22 @@ Neighbor boundaries remain explicit:
 
 - `A.6.B` governs routed `L/A/D/E` claim structure when the boundary
   description is already in routed-claim territory;
-- `E.17.0 / E.17` govern admissible view and publication-face projection when the
-  same recognition entry load is carried through published views;
-- `E.10.D2` and the `E.10 / F.18 / A.6.P` lane govern lexical repair,
-  collision checks, and naming survival;
-- `C.25 / C.16.Q` govern formal quality treatment when the discoverability or
-  recognition claim becomes explicitly evaluative;
+- `E.17.0` tests viewpoint/view membership; `E.17` publishes reader-facing forms of an already accepted engineering account;
+  use `E.24.PUB` when publication occurrence, form, or carrier identity affects the recognition use;
+- `E.10.D2` recovers description-episteme and specification-use distinctions;
+  use `E.10` cues within `F.19` for wording, `A.6.P` for under-specified direct relations, and `F.18` for durable naming and its collision checks;
+- `C.16.Q` repairs overloaded recognition or discoverability quality wording;
+  `C.25` applies when the quality-family claim depends on several differently typed contributors; a single-Characteristic claim stays with its direct Characteristic pattern;
 - the relevant authoritative pattern body governs pattern semantics when the
   encountered description is one pattern-local opening.
 
 The four-part split for pattern-local recognition is:
 
-| Recognition concern | Governing FPF pattern or source-maintenance role assignment | What it governs |
+| Recognition concern | Governing FPF pattern or source | What it governs |
 | --- | --- | --- |
 | Generic first-contact description recognition | `A.6.RSIG` | The neutral cue shape: description, carrier or projection, definitionEpistemeRef, exclusions, false neighbor. |
 | Local placement and form | `E.8` | How the pattern's `Problem frame` carries the first-reading role. |
-| Actual local semantics | The pattern itself | The pattern's relation-signature object, solution, consequences, and conformance law. |
+| Actual local semantics | The pattern itself | The pattern's governed object, solution, consequences, and conformance law. |
 | Cross-pattern comparison | `E.11` and `I.2` | Candidate patterns, tempting wrong patterns, entry-load reclassification, and expanded entry-disambiguation cases. |
 
 #### A.6.RSIG:4.5 - No-minting rule
@@ -234,7 +234,7 @@ Draft cue:
 
 Why the cue is not enough yet:
 
-- the reader can tell this is important, but not whether they are reading one
+- the reader cannot tell whether they are reading one
   law, admissibility gate, duty, work effect, or evidence statement;
 - one summary page or local paraphrase can be mistaken for the governing
   boundary description;
@@ -246,7 +246,7 @@ Recognition repair:
 1. `description_seen` = one boundary-presented admissibility description.
 2. `encountered_carrier_or_projection` = one clause or excerpt where the
    description is seen.
-3. `reader_viewpoint` = one practitioner or reviewer deciding whether this is
+3. `reader_viewpoint` = the perspective of a practitioner or reviewer deciding whether this is
    the right boundary description to inspect first.
 4. `applies_to` = requests presented at the boundary under the declared
    admissibility conditions.
@@ -254,9 +254,9 @@ Recognition repair:
    not actually stated by this description.
 6. `definitionEpistemeRef` = the governing boundary description, not one local
    paraphrase or summary note.
-7. `nearby_false_description_or_wrong_definition_episteme` = one evidence/work claim or one
-   routed quadrant statement that only becomes admissible after the reader has
-   stabilized the admissibility description.
+7. `nearby_false_description_or_wrong_definition_episteme` = an evidence/work claim or
+   a different routed-quadrant statement mistaken for the governing admissibility
+   description.
 8. `first_admissible_entry_stop_or_reroute` = the reader can now say "this is the
    admissibility description to inspect first"; if the entry load becomes routed
    claim structure, inspect `A.6.B`.
@@ -279,8 +279,8 @@ Recognition repair:
 3. `applies_to` = request accessibility and invocation form.
 4. `excludes` = success, completion, rollout, or downstream effect guarantees
    not present in the access description itself.
-5. `definitionEpistemeRef` = the specification or pattern that actually governs
-   downstream effect, if that entry load is live.
+5. `definitionEpistemeRef` = the defining episteme for the access description;
+   inspect the specification or pattern governing downstream effect separately if that question is current.
 6. `first_admissible_entry_stop_or_reroute` = "this is the access description to
    inspect first, not the promise of the whole deployment result."
 
@@ -340,9 +340,9 @@ This pattern counters:
   defining `U.Episteme`, and projection role when those distinctions are
   load-bearing. The encountered carrier or projection may help recognition,
   but it does not become authoritative merely by being encountered.
-- **CC-RSIG-3 Neighbor boundaries explicit.** The text states when entry loads go
-  to `A.6.B`, `E.17`, `E.10 / F.18 / A.6.P`, `C.25 / C.16.Q`, or the relevant
-  authoritative pattern body.
+- **CC-RSIG-3 Neighbor boundaries explicit.** The text states the conditions
+  under which the recognition question calls for each relevant neighboring
+  pattern in §4.4; use only the patterns that govern the current questions.
 - **CC-RSIG-4 No kind inflation.** Recognition signatures are not silently
   promoted into `U.Signature`, Signature Stack objects, publication face kinds, publication form kinds, carrier kinds,
   graph objects, workflow objects, or new `U.*` kinds.
@@ -362,7 +362,7 @@ This pattern counters:
   fragment is treated as the defining `U.Episteme`. Repair by naming the
   encountered carrier or projection and the defining `U.Episteme` separately.
 - **Boundary-routing collapse.** A boundary-description cue tries to absorb
-  L/A/D/E-classified claim structure. Repair by classifying quadrant work under `A.6.B`.
+  L/A/D/E-classified claim structure. Repair by classifying the boundary claims under `A.6.B`.
 - **Pattern-language collapse.** Pattern-entry comparison is written as if it
   were just another description cue. Repair by routing cross-pattern selection
   to `E.11`.
@@ -385,7 +385,7 @@ or risk-triggered, not a required card for ordinary prose.
 
 ### A.6.RSIG:10 - Rationale
 
-This pattern lands in the `A.6` cluster because the entry load is still one
+This pattern belongs in the `A.6` cluster because the entry load is still one
 description/signature entry load: a reader is recovering what one description is
 for, what it applies to, and which defining `U.Episteme` to inspect first. That
 sits closer to signature and boundary discipline than to pattern-language
@@ -409,9 +409,9 @@ and its tempting false neighbor before relation precision or epistemic precision
 | First-contact recognition is narrower than general information architecture or documentation UX. | Jorge Arango (2018), *Living in Information: Responsible Design for Digital Places*; ISO/IEC/IEEE 26514:2022, *Systems and software engineering - Design and development of information for users*. | These sources support purposeful information places and user information shaped around what the user needs. `A.6.RSIG` narrows that to one encountered description: what it is for, what applies, what excludes, what carrier exposed it, and which `definitionEpistemeRef` identifies the defining episteme. | **Adopt or narrow.** Adopt the recognition and information-need concern; reject a universal UX or layout pattern. In the boundary sentence slice, the first repair is not "what does the complete Contract Bundle mean?" but "what description is this, what does it apply to, and which definitionEpistemeRef applies?" |
 | Information scent helps first-contact cue economy but is not the defining episteme. | Raluca Budiu (2020), "Information Scent: How Users Decide Where to Go Next", Nielsen Norman Group. | Information scent treats visible labels, context, and prior knowledge as imperfect estimates of source value. `A.6.RSIG` adopts the cue-economy insight and adds definition-episteme, exclusion, and false-neighbor discipline. | **Adopt and add definition-episteme discipline.** Adopt first-contact cue economy; reject treating familiar wording, link scent, or local projection as the defining `U.Episteme`. In the API slice, a good endpoint label can attract attention while still failing to promise deployment success. |
 | Description-recognition signatures help human and AI-assisted readers manage applicability and limitation expectations. | Amershi et al. (2019), "Guidelines for Human-AI Interaction", CHI 2019. | Human-AI guidance emphasizes making capabilities and limits clear enough for users to calibrate trust. `A.6.RSIG` adapts that pressure into `applies_to`, `excludes`, `definitionEpistemeRef`, and admissible entry stop for human and AI-assisted readers. | **Adapt.** Adopt expectation management; reject making this an AI-interface pattern. In the method-note slice, the reader learns what the note can and cannot settle before using it for a decision. |
-| Description-recognition cues need controlled wording without becoming synonym or alias governance. | Helen Lippell, ed. (2022), *Taxonomies: Practical Approaches to Developing and Managing Vocabularies for Digital Information*. | Taxonomy practice supports governed terms, validation, and maintenance for search and browse. `A.6.RSIG` adopts stable cue language while leaving naming, alias, bridge, and collision repair to `F.18 / E.10 / A.6.P`. | **Adapt.** Adopt controlled-lexeme discipline; reject synonym stuffing inside description-recognition signatures. The worked slices state definitionEpistemeRef, exclusions, and false neighbor instead of adding more query phrases. |
+| Description-recognition cues need controlled wording without becoming synonym or alias governance. | Helen Lippell, ed. (2022), *Taxonomies: Practical Approaches to Developing and Managing Vocabularies for Digital Information*. | Taxonomy practice supports governed terms, validation, and maintenance for search and browse. `A.6.RSIG` adopts stable cue language while leaving wording repair to `E.10` cues within `F.19`, durable naming, aliases, and collision checks to `F.18`, actual Bridge claims to `F.9`, and under-specified relation claims to `A.6.P`. | **Adapt.** Adopt controlled-lexeme discipline; reject synonym stuffing inside description-recognition signatures. The worked slices state definitionEpistemeRef, exclusions, and false neighbor instead of adding more query phrases. |
 | Thin echoes and projection snippets need definition-episteme anchors before a reader or retrieval system treats them as the defining episteme. | Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"; Liu, Zhang, and Liang (2023), "Evaluating Verifiability in Generative Search Engines"; Gao et al. (2023), "Enabling Large Language Models to Generate Text with Citations". | Retrieval and citation work makes source context, support, and verifiability load-bearing. `A.6.RSIG` adapts this as recognition hygiene: retrieved fragments, public projections, or local examples remain useful only when their defining `U.Episteme` and projection role are recoverable. | **Adapt / narrow.** Adopt source anchoring and citation-support pressure; reject a retrieval benchmark or graph-native authority. A retrieved method note is safe only when it remains a method-applicability cue, not the defining episteme for selection semantics. |
-| Description-recognition-signature adequacy is reviewable through small, case-linked checks rather than folklore or heavy empirical machinery. | Riehle, Harutyunyan, and Barcomb (2020), *Pattern Discovery and Validation Using Scientific Research Methods*, Technical Report CS-2020-01. | Pattern-validation practice supports explicit evidence and case adequacy. `A.6.RSIG` keeps that pressure lightweight: use the first-contact shape, false-neighbor rejection, and worked slices before escalating to `C.25`, `C.16.Q`, or empirical evidence. | **Adopt / lightweight.** Adopt accountable validation; reject mandatory benchmark machinery for ordinary recognition repairs. |
+| Description-recognition-signature adequacy is reviewable through small, case-linked checks rather than folklore or heavy empirical machinery. | Riehle, Harutyunyan, and Barcomb (2020), *Pattern Discovery and Validation Using Scientific Research Methods*, Technical Report CS-2020-01. | Pattern-validation practice supports explicit evidence and case adequacy. `A.6.RSIG` keeps that pressure lightweight: use the first-contact shape, false-neighbor rejection, and worked slices first; add `C.25` only for a composite quality-family claim, `C.16.Q` only for overloaded evaluative wording, and empirical evidence when the recognition claim requires it. | **Adopt / lightweight.** Adopt accountable validation; reject mandatory benchmark machinery for ordinary recognition repairs. |
 
 ### A.6.RSIG:12 - Relations
 
