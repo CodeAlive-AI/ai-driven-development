@@ -33,6 +33,22 @@
       "label": "OC-Go Kimi K3 Test",
       "review_instructions": "KIMI_K3_ADVERSARIAL_REVIEW_MARKER"
     },
+    "opencode-go-muse-spark-1.3-contributor": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "xhigh",
+      "role": "lateral",
+      "label": "OC-Go Muse Spark 1.3 Contributor Test"
+    },
+    "opencode-go-deepseek-v4.1-flash": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "effort": "max",
+      "role": "analyst",
+      "label": "OC-Go DeepSeek V4.1 Flash Test"
+    },
     "grok": {
       "enabled": true,
       "backend": "grok-build",

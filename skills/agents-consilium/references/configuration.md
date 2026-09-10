@@ -42,6 +42,16 @@ The built-in `codex` profile uses `gpt-6-astra` at `high` effort. Astra accepts
 built-in `claude-fable` profile uses `claude-fable-5-1` at `low` effort and
 supports the same five effort levels. Start Fable 5.1 at `high` for the hardest
 long-horizon work, or retain `low` when it is one reviewer in a larger pool.
+The disabled-by-default `opencode-go-muse-spark-1.3-contributor` and
+`opencode-go-deepseek-v4.1-flash` profiles use the OpenCode Go catalog at
+their maximum effort (`xhigh` for Muse and `max` for DeepSeek). Select either
+explicitly with `-a`; keeping them disabled avoids changing the default review
+pool. Muse supports `minimal`, `low`, `medium`, `high`, and `xhigh`; DeepSeek
+supports `low`, `high`, and `max`. OpenCode Go's
+privacy terms state that Muse Spark Contributor prompts and completions may be
+used for model training, the service is not zero-data-retention, and availability
+is region-limited. Check the current OpenCode Go terms before reviewing sensitive
+repositories because catalog and privacy terms can change.
 
 ## Shell-safe prompts
 

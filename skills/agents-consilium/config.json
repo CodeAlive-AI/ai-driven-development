@@ -89,6 +89,22 @@
       "label": "OC-Go Kimi K3",
       "review_instructions": "Treat every review as an adversarial audit. Assume defects exist until repository evidence disproves them; never default to 'looks fine'. Inspect the changed and affected code exhaustively: callers, tests, error and cancellation paths, concurrency, data boundaries, configuration, and operational failure modes. Do not stop after the first issue and do not praise the implementation. Seek the maximum number of concrete, consequential defects — but never invent findings. Report only evidence-validated issues, and conclude 'no findings' only after completing this inspection."
     },
+    "opencode-go-muse-spark-1.3-contributor": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "opencode-go/muse-spark-1.3-contributor",
+      "effort": "xhigh",
+      "role": "lateral",
+      "label": "OC-Go Muse Spark 1.3 Contributor"
+    },
+    "opencode-go-deepseek-v4.1-flash": {
+      "enabled": false,
+      "backend": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "effort": "max",
+      "role": "analyst",
+      "label": "OC-Go DeepSeek V4.1 Flash"
+    },
     "opencode-synthetic-kimi-k3": {
       "enabled": false,
       "backend": "opencode",

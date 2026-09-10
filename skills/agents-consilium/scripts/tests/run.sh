@@ -123,6 +123,10 @@ assert_contains "Codex Astra remains selectable but disabled by default" "$out" 
   'id="codex" label="Codex GPT-6 Astra" backend="codex-cli" model="gpt-6-astra" role="analyst" enabled="false"'
 assert_contains "Claude Fable profile uses Fable 5.1" "$out" \
   'id="claude-fable" label="Claude Fable 5.1" backend="claude-code" model="claude-fable-5-1" role="analyst" enabled="true"'
+assert_contains "Muse Spark 1.3 Contributor is selectable but disabled by default" "$out" \
+  'id="opencode-go-muse-spark-1.3-contributor" label="OC-Go Muse Spark 1.3 Contributor" backend="opencode" model="opencode-go/muse-spark-1.3-contributor" role="lateral" enabled="false"'
+assert_contains "DeepSeek V4.1 Flash is selectable but disabled by default" "$out" \
+  'id="opencode-go-deepseek-v4.1-flash" label="OC-Go DeepSeek V4.1 Flash" backend="opencode" model="opencode-go/deepseek-v4.1-flash" role="analyst" enabled="false"'
 
 # Unknown command
 set +e
@@ -164,6 +168,18 @@ env -u CONSILIUM_CONFIG CONSILIUM_DUMP_ARGV="$TMP/fable51-review.json" \
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/fable51-review.json"'"))["argv"]))')
 assert_contains "Claude production profile launches Fable 5.1" "$argv" "--model claude-fable-5-1"
 assert_contains "Claude Fable 5.1 production profile uses low effort" "$argv" "--effort low"
+
+env -u CONSILIUM_CONFIG CONSILIUM_DUMP_ARGV="$TMP/muse-spark-review.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id opencode-go-muse-spark-1.3-contributor --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/muse-spark-review.json"'"))["argv"]))')
+assert_contains "Muse Spark production profile uses exact model" "$argv" "-m opencode-go/muse-spark-1.3-contributor"
+assert_contains "Muse Spark production profile uses maximum effort" "$argv" "--variant xhigh"
+
+env -u CONSILIUM_CONFIG CONSILIUM_DUMP_ARGV="$TMP/deepseek-v41-flash-review.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id opencode-go-deepseek-v4.1-flash --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/deepseek-v41-flash-review.json"'"))["argv"]))')
+assert_contains "DeepSeek V4.1 Flash production profile uses exact model" "$argv" "-m opencode-go/deepseek-v4.1-flash"
+assert_contains "DeepSeek V4.1 Flash production profile uses maximum effort" "$argv" "--variant max"
 
 # Codex review: sandbox read-only, never full-bypass
 dump_review codex "$TMP/codex-review.json"
@@ -240,6 +256,17 @@ dump_review opencode-go-kimi-k3 "$TMP/oc-go-kimi-k3-review.json"
 argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-go-kimi-k3-review.json"'"))["argv"]))')
 assert_contains "OpenCode Go Kimi K3 exact model" "$argv" "-m opencode-go/kimi-k3"
 assert_contains "OpenCode Go Kimi K3 uses max reasoning" "$argv" "--variant max"
+
+# New OpenCode Go profiles: exact catalog model ids and supported reasoning variants.
+dump_review opencode-go-muse-spark-1.3-contributor "$TMP/oc-go-muse-spark-review.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-go-muse-spark-review.json"'"))["argv"]))')
+assert_contains "OpenCode Go Muse Spark 1.3 Contributor exact model" "$argv" "-m opencode-go/muse-spark-1.3-contributor"
+assert_contains "OpenCode Go Muse Spark 1.3 Contributor uses maximum reasoning" "$argv" "--variant xhigh"
+
+dump_review opencode-go-deepseek-v4.1-flash "$TMP/oc-go-deepseek-v41-flash-review.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/oc-go-deepseek-v41-flash-review.json"'"))["argv"]))')
+assert_contains "OpenCode Go DeepSeek V4.1 Flash exact model" "$argv" "-m opencode-go/deepseek-v4.1-flash"
+assert_contains "OpenCode Go DeepSeek V4.1 Flash uses maximum reasoning" "$argv" "--variant max"
 
 CONSILIUM_FAKE_ARGV_LOG="$TMP/oc-go-kimi-k3-prompt.jsonl" \
   "$LIB_DIR/backend_run.sh" --mode review --agent-id opencode-go-kimi-k3 "review this" >/dev/null
