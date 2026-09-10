@@ -97,6 +97,82 @@ def size_class(num_bytes: int) -> str:
     return "size-sm"
 
 
+def render_compact_tree(scan: dict[str, Any]) -> str:
+    rows = scan["folder_tree"]
+    if scan.get("folder_tree_version") != 1 or not rows:
+        raise ValueError("unsupported or empty folder tree")
+    for i, row in enumerate(rows):
+        if not isinstance(row, list) or len(row) != 6:
+            raise ValueError("invalid folder tree record")
+        parent, name, *values = row
+        if type(parent) is not int or (parent != 0 if i == 0 else not 0 <= parent < i):
+            raise ValueError("folder parent must precede child")
+        if not isinstance(name, str) or not name or (i and ("/" in name or name in (".", ".."))):
+            raise ValueError("invalid folder name")
+        if any(type(v) is not int or v < 0 or v > 2**53 - 1 for v in values):
+            raise ValueError("folder values exceed the supported exact integer range")
+    payload = json.dumps({"rows": rows}, ensure_ascii=True, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    script = Path(__file__).with_name("storage-tree.js").read_text()
+    return ('<p>All discovered folders; expand a folder to load its children. Up to 100 children per page.</p>'
+            '<ul id="folder-tree"></ul><noscript>Enable JavaScript to explore the folder tree.</noscript>'
+            '<script type="application/json" id="folder-tree-data">' + payload + '</script><script>' + script + '</script>')
+
+
+def render_storage_scan(scan: dict[str, Any] | None) -> str:
+    """Render measured inventory only; never create cleanup selection controls."""
+    if scan is None:
+        return ""
+    def size(row):
+        value = row.get("allocated_bytes")
+        if value is None:
+            return "Not measured"
+        if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+            raise ValueError("allocated_bytes must be a nonnegative integer")
+        label = human_size(value)
+        for unit in ("KB", "MB", "GB", "TB", "PB"):
+            label = label.replace(unit, unit[0] + "iB")
+        return label
+
+    folders = {}
+    for row in scan.get("folders", []):
+        path = row["path"]
+        if not path.startswith("/") or ".." in Path(path).parts:
+            raise ValueError("storage paths must be absolute and normalized")
+        if path in folders:
+            raise ValueError("duplicate storage folder")
+        folders[path] = row
+    children = {path: [] for path in folders}
+    children[None] = []
+    for path in folders:
+        parent = next((str(p) for p in Path(path).parents if str(p) in folders), None)
+        children[parent].append(path)
+
+    def branch(parent):
+        rows = []
+        for path in sorted(children[parent], key=lambda p: (-(folders[p].get("allocated_bytes") or 0), p)):
+            label = str(Path(path).relative_to(parent)) if parent else path
+            heading = f'<span class="storage-size">{size(folders[path])}</span> <code>{html.escape(label)}</code>'
+            if children[path]:
+                rows.append(f'<li><details open><summary>{heading}</summary>{branch(path)}</details></li>')
+            else:
+                rows.append(f'<li>{heading}</li>')
+        return '<ul>' + ''.join(rows) + '</ul>'
+
+    tree_html = render_compact_tree(scan) if "folder_tree" in scan else (branch(None) if folders else "<p>No folder measurements supplied.</p>")
+    files = sorted(scan.get("files", []), key=lambda r: (-(r.get("allocated_bytes") or 0), r["path"]))
+    file_rows = ''.join(f'<tr><td>{size(row)}</td><td><code>{html.escape(row["path"])}</code></td></tr>' for row in files)
+    coverage = html.escape(str(scan.get("coverage", "Partial inventory; only supplied paths are shown.")))
+    failures_html = "".join("<li>" + html.escape(str(item.get("path", "")) + ": " + str(item.get("error", ""))) + "</li>" for item in scan.get("failures", []))
+    metadata = html.escape(f"Root: {scan.get('root', 'Not recorded')} · Scan: {scan.get('seconds', 'Not recorded')} s · Errors: {scan.get('errors', 'Not recorded')} · Excluded directories: {scan.get('excluded_directories', 'Not recorded')}")
+    return f'''<section class="storage-report" aria-label="Disk inventory">
+      <h2>Disk inventory</h2><p>{metadata}</p><p>{coverage}</p><ul>{failures_html}</ul>
+      <p>Allocated space, not guaranteed reclaimable space. Folder totals include descendants; do not add parent and child sizes. Only measured folders are shown; intermediate paths may be omitted.</p>
+      <h3>Folders by size</h3>{tree_html}
+      <h3>Largest files</h3><table><thead><tr><th>Allocated</th><th>Path</th></tr></thead><tbody>{file_rows}</tbody></table>
+      {'' if files else '<p>No file measurements supplied.</p>'}
+    </section>'''
+
+
 def render_html(data: dict[str, Any]) -> str:
     baseline = data.get("baseline", {})
     container_free_gb = baseline.get("container_free_gb")
@@ -252,6 +328,7 @@ def render_html(data: dict[str, Any]) -> str:
         total_candidates_label=total_candidates_label,
         total_items_count=total_items_count,
         categories_html=categories_html,
+        storage_html=render_storage_scan(data.get("storage_scan")),
         summary_html=summary_html,
         generated_at=generated_at,
     )
@@ -332,6 +409,16 @@ HTML_TEMPLATE = r"""<!doctype html>
     }}
     header .meta strong {{ color: var(--fg); font-weight: 600; }}
     .container {{ max-width: 1100px; margin: 0 auto; padding: 24px; }}
+    .storage-report {{ margin-top: 32px; padding: 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); }}
+    .storage-report p {{ color: var(--muted); }}
+    .storage-report ul {{ padding-left: 22px; list-style: none; }}
+    .storage-report li {{ margin: 8px 0; }}
+    .storage-report summary {{ cursor: pointer; }}
+    .storage-report code {{ overflow-wrap: anywhere; white-space: pre-wrap; }}
+    .storage-size {{ display: inline-block; min-width: 85px; font-variant-numeric: tabular-nums; font-weight: 600; }}
+    .storage-report table {{ width: 100%; border-collapse: collapse; text-align: left; }}
+    .storage-report td, .storage-report th {{ padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }}
+    .storage-report td:first-child {{ white-space: nowrap; }}
     .plan-summary {{
       background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent);
       border-radius: 10px; margin-bottom: 18px; padding: 14px 18px; box-shadow: var(--shadow);
@@ -793,6 +880,7 @@ HTML_TEMPLATE = r"""<!doctype html>
   <main class="container">
     {summary_html}
     {categories_html}
+    {storage_html}
   </main>
 
   <footer>

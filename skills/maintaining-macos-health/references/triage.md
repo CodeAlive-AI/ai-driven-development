@@ -52,7 +52,7 @@ Symptoms: `df` shows < 20 % free, user complains "out of space".
 
 - **`pct_free < 10 %`** → CRITICAL. Run Tier 1–4 from `cleanup-tiers.md` immediately. swap extension may already be blocked.
 - **`pct_free 10–20 %`** → HIGH. Run Tier 1–3, propose Tier 4. Probably manageable.
-- **`pct_free > 20 %`** → user perception issue. Check `du -d1 -h ~ | sort -h | tail -15` and address specifically.
+- **`pct_free > 20 %`** → user perception issue. Run the scoped bulk metadata inventory in `storage-report.md` and address the largest measured folders.
 
 The canonical incident hit ~8 % free, well below the 10 % critical threshold. APFS purgeable can lag — `diskutil info` "Container Free" is the real number.
 
@@ -148,7 +148,7 @@ ALERT or USER REPORT
        │
        no
        ▼
-   user perception → du audit, propose targeted cleanup
+   user perception → bulk metadata audit, propose targeted cleanup
 ```
 
 ## What to NOT do at triage

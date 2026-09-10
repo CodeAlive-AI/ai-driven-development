@@ -167,23 +167,48 @@ def skill_audit(home):
     rows = []
     paths = [home / relative for relative in approved
              if (home / relative).exists() and not (home / relative).is_symlink()]
-    try:
-        if not paths:
-            raise ValueError("no approved audit paths exist")
-        result = subprocess.run(["/usr/bin/du", "-sk", *map(str, paths)], capture_output=True,
-                                text=True, timeout=120, env={"PATH": "/usr/bin:/bin"})
-        for line in result.stdout.splitlines():
-            blocks, raw_path = line.split(maxsplit=1)
-            path, size = Path(raw_path), int(blocks) * 1024
-            relative = str(path.relative_to(home))
+    scanner = ASSETS / "space-scan" / "space_scan"
+    deadline = time.monotonic() + 120
+    scans = []
+    failures = []
+    for path in paths:
+        try:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise TimeoutError("storage audit exceeded its 120-second budget")
+            result = subprocess.run([str(scanner), "--json", "--workers", "4", "--top", "20", str(path)],
+                                    capture_output=True, text=True, timeout=remaining,
+                                    stdin=subprocess.DEVNULL)
+            if result.returncode not in (0, 2):
+                raise ValueError("scanner failed: " + result.stderr[-1000:])
+            scan = json.loads(result.stdout)
+            if not all(key in scan for key in ("root", "allocated_bytes", "errors", "folders", "files")):
+                raise ValueError("invalid scanner result")
+            scans.append(scan)
+            size = scan["allocated_bytes"]
             rows.append({"id": digest(["audit", str(path), size])[:24], "path": str(path),
                          "size_bytes": size, "age_days": None, "root": "Storage audit",
-                         "label": relative, "operation": "informational", "protected": True,
+                         "label": str(path.relative_to(home)), "operation": "informational", "protected": True,
                          "selectable": False, "default_selected": False,
-                         "description": "Aggregate folder size from the skill's read-only du audit.",
-                         "warning": "Informational only; inspect contents before any cleanup."})
-    except (OSError, subprocess.SubprocessError, ValueError):
-        pass
+                         "description": "Allocated regular-file bytes from the bulk metadata scanner; "
+                                        f"errors: {scan['errors']}, exclusions: {scan.get('excluded_directories', 0)}.",
+                         "warning": "Informational only; partial coverage and shared APFS storage may affect totals."})
+        except (OSError, subprocess.SubprocessError, ValueError) as exc:
+            failures.append({"path": str(path), "error": str(exc)})
+            if isinstance(exc, (FileNotFoundError, TimeoutError, subprocess.TimeoutExpired)):
+                break
+    reports["storage_scan"] = {
+        "root": str(home), "errors": sum(s["errors"] for s in scans),
+        "excluded_directories": sum(s.get("excluded_directories", 0) for s in scans),
+        "seconds": max(0, 120 - (deadline - time.monotonic())),
+        "coverage": f"Scoped audit: {len(scans)} of {len(paths)} approved roots scanned; "
+                    f"{len(failures)} failed runs. Top 20 folders/files per root; not a full-volume scan.",
+        "failures": failures,
+        "folders": [{"path": s["root"], "allocated_bytes": s["allocated_bytes"]} for s in scans]
+                   + [row for s in scans for row in s["folders"]],
+        "files": sorted([row for s in scans for row in s["files"]],
+                        key=lambda row: -row["allocated_bytes"])[:50],
+    }
 
     def capture(name, command, timeout):
         try:

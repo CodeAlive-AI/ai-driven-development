@@ -1,6 +1,6 @@
 ---
 name: maintaining-macos-health
-version: 1.3.2
+version: 1.4.0
 description: Hands-on playbook for macOS disk cleanup, dev-machine optimization, and proactive health alerting. Use when the Mac is full or slow, when a process persistently burns CPU, when a kernel panic / watchdog timeout / vm-compressor-space-shortage / Jetsam event happened, when the user asks to free disk space, audit storage, set up disk/memory/CPU alerts, or restore the same monitoring on a new Mac. Built around Mole (`mo` CLI) for safety guards plus a custom LaunchAgent-based alerter for active warnings. Covers Apple Silicon laptops with heavy AI/Docker workloads. Not for general macOS support, hardware diagnostics, networking issues, GUI / window-manager bugs, Time Machine recovery, or broken app installs.
 ---
 
@@ -48,6 +48,8 @@ Trigger on any of:
 | `references/optional-disk-responses.md` | First-use offer, installation and operation of two independent opt-ins: emergency Mole cache cleanup below 2%, and a Codex cleanup plan/page at or below 5% with exact-session continuation. |
 | `assets/mac-health-disk`, `assets/disk_*.py` | Consent-gated disk controller, deterministic inventory, restricted Codex runner and authenticated local selection/confirmation page. Both modes default off. |
 | `assets/mole-exact-file.sh`, `assets/mole-core-1.39.0.json` | Compatibility-pinned exact-file adapter to Mole; no general `mo clean`, sudo, or shell commands from the agent. |
+| `assets/space-scan/`, `assets/build-space-scan.sh` | Read-only bulk metadata scanner with explicit directory exclusions and a compact full folder tree; see `references/storage-report.md` for manual inventory |
+| `assets/render-storage-report.py`, `assets/storage-tree.js` | Append scanner output to the report; lazily expand folders and show largest files |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
 | `assets/mac-health-action` | Background action dispatcher for read-only Codex/Claude investigations and explicitly confirmed graceful process stopping |
 | `assets/com.local.mac-health-check.plist` | LaunchAgent plist with `StartCalendarInterval` (StartInterval is broken on laptops) |
@@ -75,15 +77,16 @@ On the first **operational, interactive** use on a Mac (including an existing in
 
 Record each explicit answer independently; silence, a generic "set up monitoring", or approval of one option does not authorize the other. Keep declined choices across sessions and upgrades. Ask again only on user request, a new machine, or a material change to the consent scope. Existing monitoring continues without either option.
 
-**Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with the same cleanup-plan UI used by Workflow A. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Automated planning runs Workflow A's fixed read-only `du`, Mole clean/purge preview, Docker inventory and Downloads audit. The automatic executor remains narrower: it can delete only controller-verified regenerable cache files; storage-map and possible user-data findings are visible but disabled and require a later interactive Workflow A session. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
+**Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with the same cleanup-plan UI used by Workflow A. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Automated planning runs Workflow A's fixed read-only bulk metadata scan, Mole clean/purge preview, Docker inventory and Downloads audit. The automatic executor remains narrower: it can delete only controller-verified regenerable cache files; storage-map and possible user-data findings are visible but disabled and require a later interactive Workflow A session. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
 
 ### A. "Free space NOW" (incident response)
 
 1. **Triage** — read `references/triage.md`, identify which signal fired and how urgent.
 2. **Snapshot baseline** — `df -h /System/Volumes/Data` and write down free GB.
-3. **Run all scans, don't delete yet** — `du` audit of `$HOME` subdirs, `mo clean --dry-run`, `mo purge --dry-run --debug`, `docker system df -v`, `~/Downloads` audit. Capture everything; **deletion comes only after user picks via the UI**.
+3. **Run all scans, don't delete yet** — for a large local disk inventory, use the bundled bulk scanner and full folder tree described in `references/storage-report.md`; build the scanner before use and report build or scan failures explicitly; do not silently substitute another scan method. Also run `mo clean --dry-run`, `mo purge --dry-run --debug`, `docker system df -v`, `~/Downloads` audit. Capture everything; **deletion comes only after user picks via the UI**.
 4. **Resolve unknown items before building JSON** — for every candidate > 500 MB whose purpose you cannot explain in one sentence (unfamiliar app, unfamiliar bundle ID, unfamiliar dotfolder, vendor-specific cache, ML model weights, VM image, etc.), **research it first**: check `references/never-touch.md` for a known entry, then delegate a quick lookup to the `web-searcher` subagent ("what is `<path or bundle id>` on macOS, is it safe to delete in 2026"). Wait for the answer, then write a concrete `description` (1-3 sentences in the user's language) into the item — *what it is*, *who created it*, *what feature uses it*, *what breaks if deleted*, *whether it auto-recreates*. **Never show the report with vague placeholders like "unknown" or "ML data"** — that defeats the point of the UI. If a web lookup contradicts `never-touch.md`, prefer the web answer (it's fresher) and propose an update to the reference file.
 5. **Build the data JSON** — every candidate becomes a structured `item` (id, label, path, size_bytes, age_days, kind, command, **mandatory `description`**, optional `protected` + `warning`). Write to `/tmp/cleanup-data-<ts>.json`. Use schema from `assets/render-cleanup-plan.py` docstring.
+   Append a read-only disk inventory at the bottom of the report: a collapsible folder-size hierarchy followed by the largest files in descending allocated size. Follow `references/storage-report.md` for the `storage_scan` input, coverage labels, and size semantics. These rows are informational and must not become deletion candidates automatically.
 6. **Render and open the cleanup UI**:
    ```bash
    python3 .../assets/render-cleanup-plan.py /tmp/cleanup-data-<ts>.json

@@ -53,7 +53,7 @@ def page(plan, token):
             "baseline": {"container_free_gb": free / 1024**3,
                            "container_total_gb": total / 1024**3,
                            "container_used_gb": (total-free) / 1024**3},
-            "categories": categories}
+            "categories": categories, "storage_scan": plan.get("storage_scan", plan.get("reports", {}).get("storage_scan"))}
     document = _renderer().render_html(data)
     safe_token = json.dumps(token).replace("<", "\\u003c")
     document = document.replace("const allItems =", f"const CLEANUP_TOKEN = {safe_token};\n    const allItems =")

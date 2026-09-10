@@ -202,7 +202,7 @@ rm -f ~/Library/LaunchAgents/com.jetbrains.toolbox.plist
 Largest variable category. Show user the breakdown first.
 
 ```bash
-du -d1 -h ~/Downloads | sort -h | tail -15
+/tmp/space-scan --json --tree --top 15 "$HOME/Downloads"
 find ~/Downloads -maxdepth 1 -type f -size +50M -exec stat -f "%z %Sm %N" -t "%Y-%m-%d" {} \; | sort -rn | head -30
 ```
 
@@ -364,7 +364,7 @@ rustup toolchain list
 # rm -rf ~/.cache/codex-runtimes
 
 # Homebrew large formulae review
-du -shx /opt/homebrew/Cellar/* 2>/dev/null | sort -h | tail -10
+/tmp/space-scan --json --tree --top 10 /opt/homebrew/Cellar
 # brew uninstall <formula>  if not needed
 
 # Yandex.Disk / iCloud Drive / Dropbox local — switch to selective sync, don't rm
@@ -403,6 +403,9 @@ echo 'alias docker-tidy="docker container prune -f && docker image prune -f && d
 ## After cleanup
 
 1. Run final `df -h /System/Volumes/Data` and report delta.
-2. If free space changed less than `du` reported deleted, wait — APFS purgeable lags.
+2. If free space changed less than the inventory estimated, wait — APFS purgeable lags.
 3. Recommend installing the alerter (`alerting.md`) to prevent recurrence.
 4. Recommend installing Stats (`brew install --cask stats`) for passive monitoring.
+
+The `/tmp/space-scan` commands above require the build step in `storage-report.md`.
+Preserve exit-2 results and display their errors; do not suppress coverage failures.

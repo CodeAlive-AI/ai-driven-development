@@ -7,7 +7,7 @@ Implemented in the bundled `mac-health-disk` controller. Both modes are **off wi
 Offer these independently, in the user's language, on the first operational use, including upgrades of an existing monitor. During an incident, finish immediate triage before enrollment. Do not enroll from a background tick or a request to develop this skill.
 
 1. **Emergency cleanup, < 2% free:** ask whether Mole may permanently remove old package downloads from exactly `~/Library/Caches/Homebrew/downloads` and `~/.npm/_cacache/content-v2` without another incident-time question. Show these roots, the seven-day age rule, 5 GiB/120-second ceilings, and the possibility of later downloads. It does not clean whole cache directories, installed packages, projects, Trash, applications, models, VMs, databases, backups or credentials. No sudo or process termination.
-2. **Agent plan, <= 5% free:** ask whether Codex may analyze a bounded metadata inventory and automatically open the canonical cleanup-plan page. File paths, sizes, ages, bounded outputs from Workflow A's read-only scans and the skill's instructions are sent to the user's Codex provider. This can consume paid usage: at most one scan call and one review continuation per incident, each limited to ten minutes, with no automatic paid retry. The scan runs the fixed home-directory `du` audit, `mo clean --dry-run`, `mo purge --dry-run --debug`, `docker system df -v`, and the Downloads audit. Only controller-verified regenerable cache files are selectable in this automatic mode; aggregates and possible user data remain visible but disabled. Confirm the chosen model (or Codex CLI default). Submit does not permit deletion; the page asks separately after the agent's review.
+2. **Agent plan, <= 5% free:** ask whether Codex may analyze a bounded metadata inventory and automatically open the canonical cleanup-plan page. File paths, sizes, ages, bounded outputs from Workflow A's read-only scans and the skill's instructions are sent to the user's Codex provider. This can consume paid usage: at most one scan call and one review continuation per incident, each limited to ten minutes, with no automatic paid retry. The scan runs the fixed home-directory bulk metadata audit, `mo clean --dry-run`, `mo purge --dry-run --debug`, `docker system df -v`, and the Downloads audit. Only controller-verified regenerable cache files are selectable in this automatic mode; aggregates and possible user data remain visible but disabled. Confirm the chosen model (or Codex CLI default). Submit does not permit deletion; the page asks separately after the agent's review.
 
 A generic request to set up monitoring, silence, or approval of one mode does not approve the other. Persist explicit refusals and do not nag on subsequent runs. Existing choices live in `~/.config/mac-health/disk-response-consent.json`; inspect with `mac-health-disk status`. Missing consent, `requested`, `declined`, `revoked`, malformed state, or a pause flag permits no automatic action. Scope changes require new consent. A new Mac requires fresh consent; never migrate approval files.
 
@@ -39,7 +39,7 @@ Omit `--model` only if the user accepts the CLI's default. The metadata-only run
 
 ## Installation without activation
 
-Requires macOS, Python 3.10+, the audited Mole 1.39.0 modules, and a Codex CLI supporting the checked flags. No extra Python packages are needed. Run these only as part of an authorized monitoring installation/update; they do not start a cleanup or enroll the features.
+Requires macOS, Xcode Command Line Tools (for the scanner build), Python 3.10+, the audited Mole 1.39.0 modules, and a Codex CLI supporting the checked flags. No extra Python packages are needed. Run these only as part of an authorized monitoring installation/update; they do not start a cleanup or enroll the features.
 
 ```bash
 # SKILL is the exact absolute directory containing this SKILL.md.
@@ -47,6 +47,7 @@ mkdir -p "$HOME/.local/share/mac-health" "$HOME/bin"
 # First installation; for upgrades replace only this dedicated skill copy,
 # preserving ~/.config/mac-health and ~/.local/state/mac-health.
 cp -R "$SKILL" "$HOME/.local/share/mac-health/skill"
+sh "$HOME/.local/share/mac-health/skill/assets/build-space-scan.sh" "$HOME/.local/share/mac-health/skill/assets/space-scan/space_scan"
 chmod +x "$HOME/.local/share/mac-health/skill/assets/mac-health-disk"
 ln -sfn "$HOME/.local/share/mac-health/skill/assets/mac-health-disk" "$HOME/bin/mac-health-disk"
 ```
