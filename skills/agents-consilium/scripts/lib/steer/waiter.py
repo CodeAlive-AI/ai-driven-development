@@ -35,6 +35,7 @@ _MAX_POLL_SECONDS = 2.0
 EXIT_SUPERVISOR_DEAD = 70
 EXIT_NO_FINAL_TEXT = 74
 EXIT_CANCELLED = 130
+EXIT_WAIT_TIMEOUT = 124
 
 
 @dataclass
@@ -82,51 +83,65 @@ def _reap_dead(reg: Registry, run_id: str) -> Snapshot:
     return snap
 
 
+def wait_for_any(
+    reg: Registry,
+    run_ids: list[str],
+    *,
+    timeout: Optional[float] = None,
+    poll_interval: float = 0.0,
+    on_event: Optional[Callable[[Snapshot], None]] = None,
+) -> Tuple[Dict[str, Snapshot], bool]:
+    """Observe all targets until any is terminal; timeout never cancels work.
+
+    Validate every target before accepting a ready result. Liveness grace is
+    tracked per target without sleeping inside the scan, so a slow/dead first
+    worker cannot hide a later completion. A zero timeout is a pure snapshot.
+    """
+    if not run_ids:
+        raise ValueError("at least one run is required")
+    started = time.monotonic()
+    deadline = None if timeout is None else started + timeout
+    dead_since: Dict[str, float] = {}
+    while True:
+        snapshots = {rid: poll_once(reg, rid) for rid in run_ids}
+        now = time.monotonic()
+        for rid, snap in snapshots.items():
+            if not snap.terminal and not pid_alive(snap.pid):
+                first = dead_since.setdefault(rid, now)
+                if now - first >= DEAD_PID_GRACE_SECONDS:
+                    snapshots[rid] = _reap_dead(reg, rid)
+            else:
+                dead_since.pop(rid, None)
+        if on_event:
+            for snap in snapshots.values():
+                on_event(snap)
+        if any(s.terminal for s in snapshots.values()):
+            return snapshots, False
+        if deadline is not None and now >= deadline:
+            return snapshots, True
+        elapsed = now - started
+        step = poll_interval if poll_interval > 0 else (
+            _FAST_POLL_SECONDS if elapsed < _FAST_POLL_WINDOW else
+            min(_SLOW_POLL_SECONDS * (1 + elapsed / 60.0), _MAX_POLL_SECONDS)
+        )
+        if deadline is not None:
+            step = min(step, max(0.0, deadline - time.monotonic()))
+        time.sleep(step)
+
+
 def wait_for_terminal(
     reg: Registry,
     run_id: str,
     *,
     poll_interval: float = 0.0,
+    timeout: Optional[float] = None,
     on_event: Optional[Callable[[Snapshot], None]] = None,
 ) -> Snapshot:
-    """Block until the run reaches a terminal status.
-
-    A dead supervisor is reaped so observers can return a terminal failure.
-    """
-    started = time.time()
-    while True:
-        snap = poll_once(reg, run_id)
-        if snap.terminal:
-            if on_event:
-                on_event(snap)
-            return snap
-
-        if not pid_alive(snap.pid):
-            # Do not trust a single observation: _finalize may be mid-flight
-            # between the child exiting and the terminal meta landing.
-            time.sleep(DEAD_PID_GRACE_SECONDS)
-            snap = poll_once(reg, run_id)
-            if snap.terminal:
-                if on_event:
-                    on_event(snap)
-                return snap
-            if not pid_alive(snap.pid):
-                snap = _reap_dead(reg, run_id)
-                if on_event:
-                    on_event(snap)
-                return snap
-
-        if on_event:
-            on_event(snap)
-
-        elapsed = time.time() - started
-        if poll_interval > 0:
-            step = poll_interval
-        elif elapsed < _FAST_POLL_WINDOW:
-            step = _FAST_POLL_SECONDS
-        else:
-            step = min(_SLOW_POLL_SECONDS * (1 + elapsed / 60.0), _MAX_POLL_SECONDS)
-        time.sleep(step)
+    """Return terminal state, or a still-active snapshot at the wait deadline."""
+    snapshots, _ = wait_for_any(
+        reg, [run_id], timeout=timeout, poll_interval=poll_interval, on_event=on_event
+    )
+    return snapshots[run_id]
 
 
 def final_text_candidates(reg: Registry, run_id: str, meta: Dict[str, Any]) -> list:

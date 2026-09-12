@@ -30,6 +30,9 @@ class CodexAdapter(BackendAdapter):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.persist_session = False
+        self.resume_thread_id = ""
+        self.on_session_ready = None
         self.rpc: Optional[JsonRpcProcess] = None
         self._events: "queue.Queue[AdapterEvent]" = queue.Queue()
         self._thread_id: Optional[str] = None
@@ -228,13 +231,23 @@ class CodexAdapter(BackendAdapter):
             "model": self.model,
             "sandbox": "danger-full-access",
             "approvalPolicy": "never",
-            "ephemeral": True,
+            "ephemeral": not self.persist_session,
         }
-        result = self.rpc.request("thread/start", thread_params, timeout=60.0)
+        method = "thread/start"
+        if self.resume_thread_id:
+            method = "thread/resume"
+            thread_params.pop("ephemeral")
+            thread_params["threadId"] = self.resume_thread_id
+        # Failure is explicit: never fall back to thread/start or replay the old task.
+        result = self.rpc.request(method, thread_params, timeout=60.0)
         thread = (result or {}).get("thread") or result or {}
         self._thread_id = thread.get("id") or (result or {}).get("threadId")
         if not self._thread_id:
-            raise RuntimeError(f"codex thread/start missing thread id: {result}")
+            raise RuntimeError(f"codex {method} missing thread id: {result}")
+        if self.resume_thread_id and self._thread_id != self.resume_thread_id:
+            raise RuntimeError("Codex resumed a different thread; no task sent")
+        if self.on_session_ready:
+            self.on_session_ready(self._thread_id)
         # turn/start with initial task (schema: TurnStartParams — threadId + input required)
         turn_params: Dict[str, Any] = {
             "threadId": self._thread_id,

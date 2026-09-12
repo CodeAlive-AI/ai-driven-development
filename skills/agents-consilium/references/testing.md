@@ -14,6 +14,13 @@ after a transient Grok transport failure.
 
 The shared-runtime checks include the closed event schema and protocol-drift rejection, backend capability resolution, declarative workflow plans and concurrency defaults, prompt-layer purity, fail-closed mode policy, and debug tape bounds.
 
+Orchestration regressions also cover observer timeouts and interruption without
+worker cancellation, wait-any readiness and dead-process handling, failed-abort
+replacement rejection, durable Codex native resume, preserved original records,
+profile/root mismatches, concurrent continuations, and no replay after failure.
+Run this focused suite with `PYTHONPATH=scripts/lib python3
+scripts/tests/steer/test_orchestration.py` from the skill directory.
+
 Opt-in real smoke tests spend tokens:
 
 ```bash

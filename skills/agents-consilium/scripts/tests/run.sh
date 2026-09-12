@@ -469,7 +469,10 @@ assert_contains "delegate help mentions list" "$out" "delegate list"
 assert_contains "delegate help mentions detach" "$out" "--detach"
 assert_contains "delegate help mentions one-shot escape hatch" "$out" "--one-shot"
 assert_contains "delegate help documents steerable default" "$out" "by default"
-assert_not_contains "delegate help has no timeout option" "$out" "--timeout"
+assert_contains "delegate help documents observation timeout" "$out" "--timeout"
+assert_contains "delegate help documents wait-any" "$out" "wait-any"
+assert_contains "delegate help documents durable sessions" "$out" "--persist-session"
+assert_contains "delegate help documents continuation" "$out" "--continue-run"
 
 set +e
 "$CONSILIUM" delegate -a grok --one-shot --steerable "x" \
@@ -1641,6 +1644,13 @@ PASS=$((PASS + steer_pass))
 FAIL=$((FAIL + steer_fail))
 if [[ $STEER_RC -ne 0 && $steer_fail -eq 0 ]]; then
   echo "  FAIL  steerable suite non-zero exit without fail count"
+  FAIL=$((FAIL + 1))
+fi
+
+# Bounded observation, failed abort, and durable Codex continuation regressions.
+if PYTHONDONTWRITEBYTECODE=1 PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 "$TESTS_DIR/steer/test_orchestration.py"; then
+  PASS=$((PASS + 1))
+else
   FAIL=$((FAIL + 1))
 fi
 

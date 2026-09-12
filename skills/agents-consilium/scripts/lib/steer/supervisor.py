@@ -13,6 +13,7 @@ from .adapters import make_adapter
 from .config_loader import agent_settings
 from .mailbox import Mailbox, MailboxError
 from .registry import Registry, RegistryError, TERMINAL_STATUSES
+from .session import SessionLease
 from .util import (
     DIR_MODE,
     FILE_MODE,
@@ -105,7 +106,12 @@ class Supervisor:
         registry: Optional[Registry] = None,
         log_file: str = "",
         run_id_file: str = "",
+        persist_session: bool = False,
+        continue_run: str = "",
     ):
+        self.persist_session = persist_session or bool(continue_run)
+        self.continue_run = continue_run
+        self._session_lease = None
         self.run_id_file = run_id_file
         self.agent_id = agent_id
         self.task = task
@@ -133,6 +139,8 @@ class Supervisor:
     def run(self) -> int:
         agent, backend, model, binary = agent_settings(self.agent_id)
         effort = agent.get("effort") or ""
+        if self.persist_session and backend != "codex-cli":
+            raise RegistryError("durable sessions currently require the Codex backend")
 
         # Resolve protocol artifacts dir before create_run so meta is honest.
         # Never use project cwd when archival is disabled / path is empty/".".
@@ -145,7 +153,8 @@ class Supervisor:
             model=model,
             cwd=self.cwd,
             artifacts_dir=self.artifacts_dir,
-            extra={"task_hash_prefix": _prefix_hash(self.task), "effort": effort},
+            extra={"task_hash_prefix": _prefix_hash(self.task), "effort": effort,
+                   "persist_session": self.persist_session, "continued_from": self.continue_run or None},
         )
         self._registry_meta = self.registry.load_meta(self.run_id)
         progress("steer", f"run_id={self.run_id}", f"agent={self.agent_id}", f"backend={backend}")
@@ -222,6 +231,18 @@ class Supervisor:
                 artifacts_dir=self.artifacts_dir,
                 agent_id=self.agent_id,
             )
+            if self.persist_session:
+                self._session_lease = SessionLease(self.registry, self.run_id, self.continue_run)
+                self._session_lease.acquire()
+                self.adapter.persist_session = True
+                self.adapter.resume_thread_id = self._session_lease.handle.get("thread_id", "")
+
+                def save_handle(thread_id):
+                    handle = dict(self._session_lease.handle, thread_id=thread_id)
+                    if not self._update_registry_meta(session_handle=handle, continued_from=self.continue_run or None):
+                        raise RegistryError("cannot persist session handle; no task sent")
+
+                self.adapter.on_session_ready = save_handle
             self.adapter.start(self.task)
             child = self.adapter.child_pid()
             if child:
@@ -243,6 +264,8 @@ class Supervisor:
             return 1
         finally:
             self._cleanup_adapter()
+            if self._session_lease:
+                self._session_lease.close()
             try:
                 from debug_tape import close_global_tape
 
@@ -1049,6 +1072,8 @@ def main(argv: Optional[list] = None) -> int:
 
     p = argparse.ArgumentParser(prog="steer-supervisor")
     p.add_argument("--agent-id", required=True)
+    p.add_argument("--persist-session", action="store_true")
+    p.add_argument("--continue-run", default="")
     p.add_argument("--task-file", required=True)
     p.add_argument("--cwd", default=os.getcwd())
     # Empty string is allowed: supervisor relocates protocol artifacts under the
@@ -1082,6 +1107,8 @@ def main(argv: Optional[list] = None) -> int:
         registry=reg,
         log_file=args.log_file,
         run_id_file=args.run_id_file,
+        persist_session=args.persist_session,
+        continue_run=args.continue_run,
     )
     return sup.run()
 

@@ -130,6 +130,13 @@ For deeper, multi-stage reviews with a final judge, use `--depth super` or `--de
 
 ## Long-running delegation
 
+The parent agent must check substantive progress after 15 minutes and every 15
+minutes thereafter while the worker is running. It uses `delegate events` to
+compare the work with the task and sends a concrete `steer --mode auto` correction
+when it finds a wrong direction, an important omission, or a resolvable blocker.
+Healthy progress needs no steer. This supervision is a caller responsibility;
+the CLI does not schedule it automatically.
+
 Use `--detach` when work should continue after the calling session exits:
 
 ```bash
@@ -160,6 +167,24 @@ scripts/consilium delegate cancel run_<id>
 ```
 
 `list --active` recovers a lost run id. `wait` returns the full final answer and never cancels the worker.
+
+You can bound observation or wait for any of several workers:
+
+```bash
+scripts/consilium delegate wait "$RUN_ID" --timeout 60 --json
+scripts/consilium delegate wait-any "$RUN_A" "$RUN_B" --timeout 60
+```
+
+Exit 124 means the wait expired while workers continue. `wait-any` returns JSON
+with ready ids and recent progress; collect finals with `wait` and remove consumed
+ids before waiting again. Each worker is launched separately from its working root.
+
+For Codex work that will need follow-up, start with `--persist-session`. After
+reviewing its successful result, send a new instruction with
+`delegate -a codex --continue-run RUN_ID "Follow-up"` from the same directory and
+profile. It creates a new run using the saved native conversation. Only the latest
+successful turn can continue; failed or ambiguous work is never replayed, and
+unavailable resume does not silently start over. Ordinary runs remain ephemeral.
 
 ## Using it from a coding agent
 
@@ -234,7 +259,7 @@ scripts/consilium review ask [...]
 scripts/consilium review code --depth basic|specialists|super|ultra [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
 scripts/consilium delegate -a <exact-agent-id> --steerable|--one-shot|--detach [...]
-scripts/consilium delegate steer|status|cancel|wait|watch|list [...]
+scripts/consilium delegate steer|status|cancel|wait|wait-any|watch|events|list [...]
 scripts/consilium --list-agents
 ```
 

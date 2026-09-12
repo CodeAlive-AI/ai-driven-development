@@ -84,6 +84,7 @@ class OpenCodeAdapter(BackendAdapter):
         # Set around abort→replacement so an idle from the aborted turn cannot
         # permanently complete the run before the new prompt is accepted.
         self._replacement_pending = False
+        self._verify_interrupt_idle = False
         self._lock = threading.Lock()
         self._cancelled = False
         # Per-run Basic auth — generated here, passed only to child env.
@@ -318,11 +319,43 @@ class OpenCodeAdapter(BackendAdapter):
             return
         path = f"/session/{quote(self.session_id, safe='')}/abort"
         try:
-            self._http_json("POST", path, body={}, timeout=15.0, expect_empty=True)
+            result = self._http_json("POST", path, body={}, timeout=15.0)
+            if result is False:
+                raise RuntimeError("provider rejected abort")
         except Exception as e:
             self._log_raw({"abort_error": str(e)})
+            raise RuntimeError(f"OpenCode abort outcome unknown: {e}") from e
         # Abort ends the current turn but a replacement prompt may follow;
         # do not treat the session as permanently done here.
+
+    def _runner_is_idle(self, timeout: float = 5.0) -> bool:
+        path = "/session/status"
+        if self.cwd:
+            path += f"?directory={quote(self.cwd, safe='')}"
+        statuses = self._http_json("GET", path, timeout=timeout)
+        if not isinstance(statuses, dict) or any(
+            not isinstance(value, dict) or value.get("type") not in ("idle", "busy", "retry")
+            for value in statuses.values()
+        ):
+            raise RuntimeError("OpenCode returned an invalid session status map")
+        # The provider removes idle sessions from this map.
+        status = statuses.get(self.session_id)
+        return status is None or status.get("type") == "idle"
+
+    def _wait_for_abort_idle(self, timeout: float = 15.0) -> None:
+        """A settled abort and confirmed idle are both needed before replacement.
+
+        Abort does not guarantee a matching SSE event. Query the provider's
+        runner state rather than treating missing events as evidence of a stop.
+        """
+        deadline = time.monotonic() + timeout
+        while True:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise RuntimeError("OpenCode abort outcome unknown: runner did not become idle")
+            if self._runner_is_idle(timeout=min(5.0, remaining)):
+                return
+            time.sleep(min(.1, max(0.0, deadline - time.monotonic())))
 
     def _sse_loop(self) -> None:
         assert self.base_url
@@ -593,6 +626,20 @@ class OpenCodeAdapter(BackendAdapter):
                     # was accepted — observe the turn end, stay open for the
                     # successor prompt.
                     return
+                if self._verify_interrupt_idle:
+                    # An old idle event can arrive after replacement acceptance.
+                    # Reconcile against the current runner before declaring done.
+                    try:
+                        if not self._runner_is_idle():
+                            with self._lock:
+                                self._busy = True
+                            return
+                    except Exception as e:
+                        self._error = f"cannot confirm OpenCode completion: {e}"
+                        self._exit_code = 1
+                        self._done = True
+                        self._events.put(AdapterEvent(kind="error", data=self._error))
+                        return
                 if not self._done:
                     self._done = True
                     self._exit_code = 0
@@ -658,12 +705,19 @@ class OpenCodeAdapter(BackendAdapter):
             with self._lock:
                 self._replacement_pending = True
                 self._done = False
-            self._abort()
             try:
+                self._abort()
+                self._wait_for_abort_idle()
+                self._verify_interrupt_idle = True
                 self._prompt_async(content, client_id=client_id)
             except Exception as e:
                 with self._lock:
                     self._replacement_pending = False
+                    # A transport failure may have happened after delivery. Do
+                    # not report success or retry a possibly applied operation.
+                    self._error = str(e)
+                    self._exit_code = 1
+                    self._done = True
                 return SteerResult(
                     ok=False,
                     delivery_class=dclass,

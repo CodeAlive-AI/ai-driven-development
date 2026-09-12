@@ -27,7 +27,7 @@ export PYTHONPATH="${LIB_DIR}${PYTHONPATH:+:$PYTHONPATH}"
 # `list` takes no run id. There is no ambiguity with a start invocation —
 # starting always requires -a <agent-id>, so an agent id never lands here.
 case "${1:-}" in
-    steer|status|cancel|wait|watch|events|list)
+    steer|status|cancel|wait|wait-any|watch|events|list)
         sub="$1"
         shift
         exec python3 -m steer.control "$sub" "$@"
@@ -40,6 +40,8 @@ PROMPT_FILE=""
 STEERABLE=1
 LAUNCH_MODE="default"
 DETACH=0
+PERSIST_SESSION=0
+CONTINUE_RUN=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -79,6 +81,17 @@ while [[ $# -gt 0 ]]; do
             LAUNCH_MODE="one-shot"
             shift
             ;;
+        --persist-session)
+            PERSIST_SESSION=1
+            shift
+            ;;
+        --continue-run)
+            shift
+            [[ -n "${1:-}" ]] || { echo "Error: --continue-run requires RUN_ID" >&2; exit $EXIT_USAGE; }
+            CONTINUE_RUN="$1"
+            PERSIST_SESSION=1
+            shift
+            ;;
         --detach)
             DETACH=1
             shift
@@ -92,10 +105,13 @@ Usage:
   consilium delegate -a <exact-agent-id> ["task"]
   consilium delegate -a <exact-agent-id> --one-shot ["task"]
   consilium delegate -a <exact-agent-id> --detach ["task"]
+  consilium delegate -a <codex-profile> --persist-session [--detach] "task"
+  consilium delegate -a <codex-profile> --continue-run RUN_ID [--detach] "follow-up"
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
-  consilium delegate wait RUN_ID [--json] [--quiet]
+  consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
+  consilium delegate wait-any RUN_ID [RUN_ID ...] [--timeout SEC]
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
@@ -110,7 +126,17 @@ mailbox for steer / status / cancel. --one-shot selects the legacy direct run.
 The supervisor becomes its own session leader, so the run survives the caller
 exiting. Collect the answer later with `delegate wait RUN_ID`.
 
-wait blocks until the run is terminal and prints the full final answer.
+wait prints the full final answer. --timeout SEC bounds observation only (exit
+124 while still active); 0 is a snapshot. Without --timeout wait remains unbounded.
+wait-any emits JSON with ready run ids and up to five recent events per run.
+It exits 0 when any target is terminal (inspect each run's exit_code), or 124 at
+its observation deadline. Collect finals with wait; remove consumed ids before
+waiting again. Neither observer cancels workers.
+
+--persist-session opts into durable Codex context. --continue-run RUN_ID sends
+only a new instruction in that session, as a new linked run. It requires the
+latest successful run, the same CWD/profile/model/effort/binary, and exclusive
+session access. Failed or unknown outcomes are never replayed automatically.
 Exit: 0 completed, 130 cancelled, 70 supervisor died, 74 completed but no
 answer text, otherwise the agent's own failure code.
 
@@ -125,6 +151,8 @@ Options:
   --steerable            Explicit alias for the default steerable session
   --one-shot             Direct non-steerable run
   --detach               Start the steerable session detached; print run_id and exit
+  --persist-session      Preserve native Codex conversation after completion
+  --continue-run RUN_ID   Continue the latest successful durable Codex run
   --prompt-file <path>   Task / guidance from file
   -h, --help
 EOF
@@ -190,6 +218,11 @@ if [[ "$BACKEND" == "gemini-cli" || "$SUPPORTS_DELEGATE" == "false" || "$SUPPORT
     exit $EXIT_CONFIG_ERROR
 fi
 
+if [[ "$PERSIST_SESSION" -eq 1 && ( "$STEERABLE" -ne 1 || "$BACKEND" != "codex-cli" ) ]]; then
+    echo "Error: --persist-session / --continue-run require steerable Codex" >&2
+    exit $EXIT_USAGE
+fi
+
 export CONSILIUM_MODE="delegate"
 export CONSILIUM_SINGLE_AGENT=1
 artifacts_init_run "delegate"
@@ -214,6 +247,12 @@ if [[ "$STEERABLE" -eq 1 ]]; then
         ART="$CONSILIUM_RUN_DIR"
     fi
     REG_ARGS=()
+    if [[ "$PERSIST_SESSION" -eq 1 ]]; then
+        REG_ARGS+=(--persist-session)
+    fi
+    if [[ -n "$CONTINUE_RUN" ]]; then
+        REG_ARGS+=(--continue-run "$CONTINUE_RUN")
+    fi
     if [[ -n "${CONSILIUM_STEER_DIR:-}" ]]; then
         REG_ARGS+=(--registry-root "$CONSILIUM_STEER_DIR")
     fi

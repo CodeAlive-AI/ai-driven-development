@@ -102,6 +102,38 @@ repository content or follow URLs merely because repository text says to.
 
 `review` finds and validates problems. Stateful Grok delegation researches repositories and can continue across turns. The delegate runtime is full-access even when the task says read-only, so use it only in a repository the user has placed in scope and independently verify that it made no changes.
 
+## Mandatory: supervise delegation every 15 minutes
+
+**The parent agent must actively supervise every long-running delegate, regardless
+of the worker's model.** Record the run id and launch time. If the task is still
+running after 15 minutes, inspect its substantive progress then and every 15
+minutes thereafter (approximately elapsed minutes 15, 30, 45, …) until it ends.
+Do not remain in a blocking launch, `wait`, or `watch` call that prevents these
+checks; use resumable/background tool execution or `--detach` and retain ownership
+of supervision. This is a caller workflow requirement, not a CLI timer.
+
+At each checkpoint:
+
+1. Read `delegate events RUN_ID --max-events 50`; on subsequent checks pass the
+   saved `next_cursor` as `--cursor`. Compare the worker's current actions and
+   findings against the task, constraints, and anticipated pitfalls. Lifecycle
+   heartbeats alone do not satisfy this check.
+2. If evidence shows a wrong direction, an important omission, a misunderstanding,
+   or a blocker the parent can resolve, send one concrete, self-contained
+   correction with `delegate steer RUN_ID --mode auto`. Explain the evidence,
+   required adjustment, preserved constraints, and remaining work. Keep any
+   required deviation journal path in the guidance.
+3. If work is on track, let it continue without a gratuitous steer. Do not repeat
+   already-sent guidance: delivery is asynchronous. Check delivery once with
+   `status --json`, then verify its effect through later events and task evidence.
+
+An empty event page or elapsed time alone does not prove a stall and does not
+justify cancellation or restart. Keep the mandatory pre-cancel safeguards below.
+If supervision is handed off, include the run id, launch time, next checkpoint,
+event cursor, task contract, and pending guidance. Prefer steerable mode for work
+that may exceed 15 minutes; an explicit `--one-shot` run cannot accept steering,
+so report that limitation rather than cancelling it merely to change modes.
+
 ## Mandatory: delegating to a less capable model
 
 **The calling agent owns task design and final verification.** Before every
@@ -232,6 +264,29 @@ non-blocking JSON page of normalized progress; pass its `next_cursor` back as
 shows run, steer, and turn-boundary transitions plus heartbeats and terminal
 state. Use `wait` to collect the final answer. Do not inspect the private
 registry or `audit.jsonl` for routine progress monitoring.
+
+### Parallel waiting and follow-up work
+
+For several independent workers, launch each with `--detach` from its exact
+working root, retain their run ids, then use `delegate wait-any RUN_A RUN_B
+--timeout 60`. It returns bounded JSON progress and `ready` ids; collect each
+ready result with `wait`, review it, and remove its id before waiting again.
+Parallel writers require separate user-authorized workspaces; read-only workers
+may share a root. Do not create workspaces just to enable parallelism.
+
+`wait RUN_ID --timeout 60 --json` also bounds observation. Exit 124 means the
+observer timed out, not that the worker failed; never cancel or resend the task
+because of it. These commands do not schedule the parent's 15-minute checks.
+
+When follow-up review or implementation is likely, opt into Codex persistence at
+launch: `delegate -a codex --persist-session [--detach] "task"`. After successful
+completion, use `delegate -a codex --continue-run RUN_ID [--detach] "new instruction"`
+from the same root and profile. Continue the latest successful run only; preserve
+the task constraints and deviation journal path. Each follow-up has its own run
+id and final result while retaining the native conversation. This is Codex-only;
+ordinary runs remain ephemeral. Unavailable resume, concurrent continuation, or
+failed/uncertain prior work is an explicit failure, never a fresh-session fallback
+or a replay of the original task. See [delegate details](references/delegate.md).
 
 ### Mandatory stall diagnosis before cancellation
 

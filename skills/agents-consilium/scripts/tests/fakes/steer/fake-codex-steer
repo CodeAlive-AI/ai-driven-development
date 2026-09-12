@@ -107,6 +107,15 @@ def main() -> int:
         method = msg.get("method")
         params = msg.get("params") or {}
 
+        rpc_log = os.environ.get("CONSILIUM_FAKE_RPC_LOG")
+        if rpc_log:
+            with open(rpc_log, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"method": method, "params": params}) + "\n")
+        if method == "thread/resume":
+            if mode == "resume-error":
+                send({"jsonrpc": "2.0", "id": mid, "error": {"code": -32000, "message": "resume unavailable"}})
+                continue
+            thread_id = params["threadId"]
         if method == "initialize":
             send(
                 {
@@ -116,7 +125,7 @@ def main() -> int:
                 }
             )
             continue
-        if method == "thread/start":
+        if method in ("thread/start", "thread/resume"):
             send(
                 {
                     "jsonrpc": "2.0",

@@ -5,7 +5,9 @@ Delegate hands one task to exactly one explicitly selected coding-agent profile 
 ## Contents
 
 - Default steerable, explicit one-shot, and detached runs
+- Bounded/group waiting and durable Codex follow-ups
 - Required caller workflow and exit codes
+- Mandatory 15-minute parent supervision
 - Delegating to a less capable model
 - Steering modes and mailbox lifecycle
 - Retry safety, registry, and artifacts
@@ -46,6 +48,62 @@ RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement the task")
 
 `--detach` uses the default steerable path, creates the registry entry required for reattachment, prints the run id on stdout, and returns immediately. The supervisor becomes its own session leader; caller `SIGINT`/`SIGHUP` cannot reach it. Supervisor stdio is stored in a private `supervisor.log`, but `wait` is the authoritative result interface. `--detach` and `--one-shot` are mutually exclusive.
 
+## Bounded and group waiting
+
+```bash
+"$CONSILIUM" delegate wait "$RUN_ID" --timeout 60 --json
+"$CONSILIUM" delegate wait-any "$RUN_A" "$RUN_B" --timeout 60
+```
+
+`--timeout` is an observation deadline in seconds (finite, >= 0); `0` takes a
+snapshot. Omitting it preserves unbounded waiting. Exit 124 with `timed_out: true`
+means work is still active; it neither cancels nor restarts any worker. `wait`
+without `--json` reports a timeout on stderr; `--quiet` suppresses the payload.
+
+`wait-any` always emits JSON with `ready` run ids and `runs` snapshots. Exit 0
+means at least one target is terminal, including failures; inspect each run's
+`status`, `exit_code`, and `error`. Every supplied id must exist. Timeout snapshots
+and group results include at most five recent normalized events per run and a
+`next_cursor` for later `events` reads. This is a recent-activity sample, not a
+lossless delivery queue; retain your existing cursor when unread history matters.
+Collect complete final answers separately with `wait RUN_ID`. Remove consumed
+terminal ids before the next `wait-any` so they do not wake it repeatedly.
+
+Launch independent tasks with separate `--detach` commands from their exact
+working roots. Parallel writers need separate user-authorized workspaces; do not
+create workspaces implicitly. Save ids and per-run event cursors across caller
+handoffs. Bounded waiting enables supervision but does not schedule it.
+
+## Durable Codex follow-ups
+
+```bash
+RUN_ID=$("$CONSILIUM" delegate -a codex --persist-session --detach "Implement the task")
+"$CONSILIUM" delegate wait "$RUN_ID"
+# Review the code and deviation journal, then send only the follow-up:
+NEXT_ID=$("$CONSILIUM" delegate -a codex --continue-run "$RUN_ID" --detach "Fix the reviewed edge case; keep the original constraints and journal path")
+"$CONSILIUM" delegate wait "$NEXT_ID"
+```
+
+Persistence is opt-in, steerable Codex only. `--continue-run` implies persistence,
+uses native `thread/resume`, and creates a new run linked by `continued_from`;
+it does not reopen or change the old terminal run. Use `steer` for active work,
+`--continue-run` for the latest successfully completed durable turn. The exact
+agent profile, resolved model, effort, binary, and working root must match.
+Native conversation history persists in Codex storage beyond supervisor exit;
+private registry metadata holds its handle. Do not delete either while expecting
+to continue. If registry recovery lost session coordination state, continuation
+fails explicitly: reconstructing a latest-run claim could permit duplicate work.
+Conversation continuation does not restart terminated shell tools.
+
+One session admits only one continuation at a time. After a continuation claims
+the session, its predecessor cannot be reused: continue the successful successor.
+If it failed, was cancelled, or vanished mid-delivery, inspect its result and task
+effects. The runtime rejects continuation of that uncertain outcome and never
+replays a prompt automatically. A failed native resume likewise never starts a
+fresh session. Any recovery requiring a new worker must be a deliberate parent
+decision after reconciling what happened, with an explicit remaining-work prompt.
+Other providers and ordinary ephemeral Codex runs have no completed-run resume.
+
 ## Required caller workflow
 
 Before launch, assess the caller-to-worker capability gap and apply the protocol
@@ -53,12 +111,51 @@ below when delegating to a less capable model. This applies to default steerable
 one-shot, and detached runs alike.
 
 1. Start from the target project CWD. The default run is steerable and remains in the current session; use `--detach` when it may outlive the session. Recover a lost id with `delegate list --active`.
-2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same value to `steer`, `status`, `events`, `cancel`, `wait`, `watch`, and `list`.
+2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same value to `steer`, `status`, `events`, `cancel`, `wait`, `wait-any`, `watch`, and `list`.
 3. Steer only with new information or a genuine course correction. Do not repeat the original task. Prefer `--prompt-file` or stdin for long guidance and default to `--mode auto`.
 4. The immediate `accepted` response proves only mailbox persistence. Query `status --json` once and inspect the matching `client_id` fields: `mailbox_status`, `delivery_class`, `backend_ack`, and `error`.
 5. Use `events RUN_ID --max-events N` whenever the calling agent needs a bounded, non-blocking page of normalized progress. Save `next_cursor` and pass it back as `--cursor` on the next observation to avoid duplicates.
 6. Use `watch` for lifecycle monitoring. It emits attach/status, steer lifecycle, selected turn-boundary/error events, heartbeats, and terminal state. It deliberately does **not** show the current tool, file, command, model text, reasoning, or a semantic percent-complete estimate. A heartbeat proves only that the supervisor still sees a live run.
 7. Use `wait` to block and print the full final answer. `wait` never cancels work; only `cancel` does.
+
+### Mandatory 15-minute parent supervision
+
+For every delegate still running after 15 minutes, the parent must inspect
+substantive progress at elapsed minutes 15, 30, 45, and every 15 minutes after
+that until completion. This applies regardless of relative model capability,
+including read-only research and detached work. Record the launch time and run
+id; arrange resumable/background tool execution or use `--detach` so a blocking
+launch, `watch`, or `wait` cannot prevent the checkpoints. The CLI does not
+schedule these checks for the caller.
+
+At the first checkpoint, call `events RUN_ID --max-events 50`. Save `next_cursor`
+and use it as `--cursor` on subsequent checks. Assess the actual actions and
+findings against the task contract, required constraints, and known pitfalls;
+a lifecycle heartbeat is insufficient. When needed, read additional bounded
+event pages to understand the current direction, without repeatedly reading
+overlapping tails or private runtime artifacts.
+
+If the worker has taken a wrong direction, missed an important requirement,
+misunderstood the task, or encountered a blocker the parent can help resolve,
+send one self-contained `steer RUN_ID --mode auto` with the concrete evidence,
+required correction, constraints that still apply, and remaining work. Preserve
+the deviation journal path when one is required. Inspect delivery once using
+`status --json` and verify the semantic effect through subsequent events and
+task evidence. Do not resend guidance merely because asynchronous delivery has
+not yet taken effect. Use `interrupt` only under the existing rule for abandoning
+the current direction, not as the periodic supervision default.
+
+When progress is appropriate, continue without sending a steer. An empty page
+only means no normalized events were emitted in that interval; neither that nor
+15 minutes of elapsed time justifies cancellation or restart. Follow the
+mandatory pre-cancel stall check below. Collect the final answer with `wait` and
+perform the required result review when the run ends.
+
+For a caller handoff, preserve the run id, launch time, next checkpoint, event
+cursor, task contract, journal path, and pending guidance. Prefer the default
+steerable mode for potentially long tasks. An explicitly requested `--one-shot`
+run lacks the steerable control interface: report this limitation, observe using
+the available execution output, and do not cancel solely to change modes.
 
 ### Delegating to a less capable model
 
@@ -163,12 +260,14 @@ Keep these concepts separate:
 | `status --json` | One point-in-time state snapshot; use once after steering to verify delivery fields | Ongoing progress; do not poll it as a monitor |
 | `events` | One bounded JSON page of normalized progress; `next_cursor` supports a later incremental read | A subscription, semantic percent complete, or the final answer |
 | `watch` | Supported lifecycle transitions, liveness heartbeats, and terminal state | Which tool/file is active, substantive progress, or final answer text |
-| `wait` | Liveness heartbeats, terminal exit, and the complete final answer | Detailed lifecycle or substantive progress while the run is active |
+| `wait` | Complete final answer, or a bounded active snapshot with `--timeout --json` | A timer that cancels the worker |
+| `wait-any` | First terminal target(s), bounded recent progress for each run | Full final answers or automatic removal of consumed ids |
 
 For an observed detached run, use `watch RUN_ID`, then `wait RUN_ID` after
 `watch` reaches terminal state. If only completion and the answer matter, call
 `wait` directly. Both observers run until the worker reaches a terminal state
-or the observer is interrupted; either command can be reattached later.
+or the observer is interrupted; `wait --timeout` also returns at its observation
+deadline. Either command can be reattached later.
 
 Do not tail or parse the private registry, `audit.jsonl`, `supervisor.log`, or
 raw/normalized cache artifacts directly for routine progress. They are
@@ -199,10 +298,15 @@ itself failed; terminal status and the run exit code are fields in the JSON.
 | Exit | Meaning |
 |---|---|
 | `0` | Completed |
-| `130` | Cancelled |
+| `124` | `wait --timeout` observation expired; worker remains active |
+| `130` | Worker cancelled or observer interrupted |
 | `70` | Supervisor died without finishing |
 | `74` | Completed without answer text |
 | other non-zero | Agent/backend failure |
+
+`wait-any` uses observation exits: 0 for any terminal target, 124 for timeout,
+130 for interrupted observation, and non-zero errors for invalid/unreadable ids.
+Worker exit codes remain in its JSON.
 
 ## Steering modes
 
@@ -279,6 +383,11 @@ Steerable runs always retain the private service registry and protocol artifacts
 | Codex CLI | `same_turn` through `turn/steer` and expected turn id | Abort active turn, wait for its completion acknowledgement, then start a prompt |
 | OpenCode | `step_inject` through loopback HTTP/SSE `prompt_async` | Abort session then prompt |
 | Grok Build | `queue_next_turn` through concurrent ACP prompt FIFO | Cancel-and-send using `sendNow` and its own prompt id |
+
+OpenCode replacement requires both a successful abort and confirmation of idle
+through `/session/status`. An unsuccessful or unresolved stop fails the run and
+sends no replacement. Later idle events are checked against current runner status
+so a delayed old event cannot finish a busy replacement.
 
 OpenCode's server is loopback-only with redirect revalidation and per-run Basic auth; the password is never logged or stored. Claude's authoritative `result` completes the adapter even while stdin remains open; user replay proves transport acknowledgement, not semantic compliance. Codex interrupt uses a bounded local protocol handshake, not a run deadline.
 

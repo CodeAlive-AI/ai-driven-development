@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import signal
 import sys
@@ -15,6 +16,8 @@ from .registry import Registry, RegistryError, TERMINAL_STATUSES
 from .util import preview_text, progress, utc_now_iso
 from .waiter import (
     EXIT_NO_FINAL_TEXT,
+    EXIT_WAIT_TIMEOUT,
+    wait_for_any,
     derive_exit_code,
     poll_once,
     read_final_text,
@@ -142,6 +145,8 @@ def cmd_status(args: argparse.Namespace) -> int:
         "backend": meta.get("backend"),
         "model": meta.get("model"),
         "effort": meta.get("effort"),
+        "persist_session": bool(meta.get("persist_session")),
+        "continued_from": meta.get("continued_from"),
         "pid": meta.get("pid"),
         "child_pid": meta.get("child_pid"),
         "exit_code": meta.get("exit_code"),
@@ -291,6 +296,7 @@ def cmd_wait(args: argparse.Namespace) -> int:
             args.run_id,
             poll_interval=args.poll_interval,
             on_event=_heartbeat,
+            timeout=getattr(args, "timeout", None),
         )
     except _Interrupted:
         sys.stderr.write(
@@ -301,6 +307,16 @@ def cmd_wait(args: argparse.Namespace) -> int:
     except RegistryError as e:
         sys.stderr.write(f"Error: {e}\n")
         return e.exit_code
+
+    if not snap.terminal:
+        payload = _observation(reg, args.run_id, snap)
+        payload["timed_out"] = True
+        if not args.quiet:
+            if args.json:
+                print(json.dumps(payload, ensure_ascii=False))
+            else:
+                sys.stderr.write(f"Wait timed out; run {args.run_id} remains {snap.status}.\n")
+        return EXIT_WAIT_TIMEOUT
 
     meta = snap.meta
     code = derive_exit_code(meta)
@@ -341,6 +357,8 @@ def cmd_wait(args: argparse.Namespace) -> int:
             "started_at": meta.get("started_at"),
             "finished_at": meta.get("finished_at"),
             "duration_s": _duration_seconds(meta),
+            "persist_session": bool(meta.get("persist_session")),
+            "continued_from": meta.get("continued_from"),
             "final_path": final_path,
             # Deliberately the FULL body — this is what `status --json` truncates.
             "final_text": text,
@@ -594,15 +612,9 @@ def _event_groups(lines: list[str], start: int = 0) -> list[Dict[str, Any]]:
     return groups
 
 
-def cmd_events(args: argparse.Namespace) -> int:
-    """Print one bounded, non-blocking page of normalized delegate events."""
-    reg = Registry(Path(args.registry_root) if args.registry_root else None)
-    try:
-        meta = reg.load_meta(args.run_id)
-    except RegistryError as e:
-        sys.stderr.write(f"Error: {e}\n")
-        return e.exit_code
-
+def event_page(reg: Registry, run_id: str, cursor=None, max_events=50) -> Dict[str, Any]:
+    """Read a bounded page; retain the existing raw-line cursor contract."""
+    meta = reg.load_meta(run_id)
     artifacts_dir = Path(str(meta.get("artifacts_dir") or ""))
     event_path = artifacts_dir / "normalized" / f"{meta.get('agent_id')}.jsonl"
     complete_lines: list[str] = []
@@ -617,25 +629,24 @@ def cmd_events(args: argparse.Namespace) -> int:
         complete_lines = parts
     except FileNotFoundError:
         pass
-    except OSError as e:
-        sys.stderr.write(f"Error: cannot read delegate events: {e}\n")
-        return 1
+    except (OSError, ValueError) as e:
+        raise RegistryError(f"cannot read delegate events: {e}", exit_code=1) from e
 
     total_raw = len(complete_lines)
     cursor_reset = False
-    if args.cursor is None:
+    if cursor is None:
         all_groups = _event_groups(complete_lines)
-        selected = all_groups[-args.max_events :]
+        selected = all_groups[-max_events :]
         start_cursor = selected[0]["raw_start"] if selected else total_raw
         next_cursor = total_raw
         remaining = 0
     else:
-        start_cursor = args.cursor
+        start_cursor = cursor
         if start_cursor > total_raw:
             start_cursor = 0
             cursor_reset = True
         groups = _event_groups(complete_lines, start_cursor)
-        selected = groups[: args.max_events]
+        selected = groups[: max_events]
         remaining = max(0, len(groups) - len(selected))
         if selected and remaining:
             next_cursor = selected[-1]["raw_end"]
@@ -645,7 +656,7 @@ def cmd_events(args: argparse.Namespace) -> int:
 
     status = str(meta.get("status") or "")
     payload: Dict[str, Any] = {
-        "run_id": args.run_id,
+        "run_id": run_id,
         "status": status,
         "terminal": status in TERMINAL_STATUSES,
         "exit_code": meta.get("exit_code"),
@@ -656,8 +667,53 @@ def cmd_events(args: argparse.Namespace) -> int:
     }
     if cursor_reset:
         payload["cursor_reset"] = True
+    return payload
+
+
+def cmd_events(args: argparse.Namespace) -> int:
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    try:
+        payload = event_page(reg, args.run_id, args.cursor, args.max_events)
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
     print(json.dumps(payload, ensure_ascii=False))
     return 0
+
+
+def _observation(reg: Registry, run_id: str, snap) -> Dict[str, Any]:
+    try:
+        payload = event_page(reg, run_id, max_events=5)
+    except RegistryError as e:
+        # Progress is optional diagnostic evidence. Keep the authoritative
+        # readiness result and expose its read failure instead of hiding either.
+        payload = {"run_id": run_id, "events": [], "next_cursor": None, "events_error": str(e)}
+    # The wait's snapshot determines readiness, even if completion raced the
+    # progress read. The caller can observe that completion on the next wait.
+    payload.update(status=snap.status, terminal=snap.terminal,
+                   exit_code=derive_exit_code(snap.meta) if snap.terminal else None,
+                   error=snap.meta.get("error"), artifacts_dir=snap.meta.get("artifacts_dir"))
+    return payload
+
+
+def cmd_wait_any(args: argparse.Namespace) -> int:
+    reg = Registry(Path(args.registry_root) if args.registry_root else None)
+    _install_observer_signals()
+    try:
+        snapshots, timed_out = wait_for_any(reg, list(dict.fromkeys(args.run_ids)), timeout=args.timeout)
+        payload = {
+            "timed_out": timed_out,
+            "ready": [rid for rid, snap in snapshots.items() if snap.terminal],
+            "runs": [_observation(reg, rid, snap) for rid, snap in snapshots.items()],
+        }
+    except _Interrupted:
+        sys.stderr.write("Error: wait interrupted; all workers are untouched.\n")
+        return 130
+    except RegistryError as e:
+        sys.stderr.write(f"Error: {e}\n")
+        return e.exit_code
+    print(json.dumps(payload, ensure_ascii=False))
+    return EXIT_WAIT_TIMEOUT if timed_out else 0
 
 
 def cmd_list(args: argparse.Namespace) -> int:
@@ -699,6 +755,8 @@ def cmd_list(args: argparse.Namespace) -> int:
                 "agent_id": m.get("agent_id"),
                 "backend": m.get("backend"),
                 "model": m.get("model"),
+                "persist_session": bool(m.get("persist_session")),
+                "continued_from": m.get("continued_from"),
                 "cwd": m.get("cwd"),
                 "artifacts_dir": m.get("artifacts_dir"),
                 "detach_log": m.get("detach_log"),
@@ -748,6 +806,16 @@ def _positive_int(value: str, flag: str) -> int:
     return parsed
 
 
+def _timeout(value: str) -> float:
+    try:
+        parsed = float(value)
+    except ValueError as e:
+        raise argparse.ArgumentTypeError("timeout must be a finite number >= 0") from e
+    if not math.isfinite(parsed) or parsed < 0:
+        raise argparse.ArgumentTypeError("timeout must be a finite number >= 0")
+    return parsed
+
+
 def main(argv: Optional[list] = None) -> int:
     p = argparse.ArgumentParser(prog="consilium-steer-control")
     p.add_argument("--registry-root", default=os.environ.get("CONSILIUM_STEER_DIR", ""))
@@ -783,7 +851,13 @@ def main(argv: Optional[list] = None) -> int:
     w.add_argument("--poll-interval", type=float, default=0.0, help="seconds; 0 = adaptive")
     w.add_argument("--json", action="store_true")
     w.add_argument("--quiet", action="store_true")
+    w.add_argument("--timeout", type=_timeout, default=None, help="observation seconds; 0 = snapshot")
     w.set_defaults(func=cmd_wait)
+
+    wa = sub.add_parser("wait-any", description="Wait for any target; always emits bounded JSON progress.")
+    wa.add_argument("run_ids", nargs="+")
+    wa.add_argument("--timeout", type=_timeout, default=None)
+    wa.set_defaults(func=cmd_wait_any)
 
     wt = sub.add_parser(
         "watch",

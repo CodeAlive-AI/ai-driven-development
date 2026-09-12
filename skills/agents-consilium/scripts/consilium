@@ -34,10 +34,13 @@ Usage:
   consilium delegate -a <exact-agent-id> ["task"]
   consilium delegate -a <exact-agent-id> --one-shot ["task"]
   consilium delegate -a <exact-agent-id> --detach ["task"]
+  consilium delegate -a <codex-profile> --persist-session [--detach] "task"
+  consilium delegate -a <codex-profile> --continue-run RUN_ID [--detach] "follow-up"
   consilium delegate steer RUN_ID [--mode auto|queue|interrupt] [--prompt-file FILE] "guidance"
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
-  consilium delegate wait RUN_ID [--json] [--quiet]
+  consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
+  consilium delegate wait-any RUN_ID [RUN_ID ...] [--timeout SEC]
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]

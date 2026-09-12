@@ -78,6 +78,11 @@ class Handler(BaseHTTPRequestHandler):
         if not self._check_auth():
             return
         path = urlparse(self.path).path
+        if path == "/session/status":
+            with STATE.lock:
+                idle = STATE.done or STATE.aborted or not STATE.prompts
+            self._json(200, {} if idle else {STATE.session_id: {"type": "busy"}})
+            return
         if path == "/global/health":
             self._json(200, {"healthy": True})
             return
@@ -140,6 +145,7 @@ class Handler(BaseHTTPRequestHandler):
                     text += p.get("text") or ""
             client = (body.get("metadata") or {}).get("clientId") or ""
             with STATE.lock:
+                STATE.aborted = False
                 STATE.prompts.append({"text": text, "clientId": client, "t": time.time()})
             # Emit delta after short delay in background
             def work(prompt_index: int):
