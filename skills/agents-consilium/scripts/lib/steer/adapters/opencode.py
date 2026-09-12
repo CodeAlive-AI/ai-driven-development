@@ -3,7 +3,7 @@
 Contracts:
 - step_inject while session is busy (prompt_async accepted mid-run)
 - terminal when session goes idle for this delegate-run (not a permanent idle session)
-- SSE read uses buffered chunks (never byte-at-a-time) without frame loss
+- SSE read uses blocking buffered chunks (never byte-at-a-time) without frame loss
 - base_url must be loopback after URL parse (no external exfiltration)
 - HTTP redirects re-validated to loopback only (custom opener)
 - OPENCODE_SERVER_PASSWORD + Basic auth on every request (password never logged)
@@ -74,6 +74,10 @@ class OpenCodeAdapter(BackendAdapter):
         self._part_snapshots: Dict[str, str] = {}
         # Stable insertion order of part ids for final assembly.
         self._part_order: List[str] = []
+        # Global SSE sends user, assistant, and reasoning parts through the same
+        # message.part.* event types. Remember message roles so final output can
+        # include assistant text only.
+        self._message_roles: Dict[str, str] = {}
         # Turn liveness: session.idle is turn-idle. Do not require one idle per
         # prompt_async. Track busy + replacement so the latest accepted work can
         # terminalize on a single idle when no replacement is pending.
@@ -330,10 +334,6 @@ class OpenCodeAdapter(BackendAdapter):
         )
         try:
             resp: HTTPResponse = self._opener.open(req, timeout=30.0)  # type: ignore[assignment]
-            try:
-                resp.fp.raw._sock.settimeout(0.5)  # type: ignore[attr-defined]
-            except Exception:
-                pass
         except Exception as e:
             self._events.put(AdapterEvent(kind="error", data=f"sse_connect_failed: {e}"))
             return
@@ -478,6 +478,17 @@ class OpenCodeAdapter(BackendAdapter):
             # Non-prefix replacement of this part only.
             self._events.put(AdapterEvent(kind="text", data=text, raw=obj))
 
+    def _is_assistant_text_part(self, part: Dict[str, Any]) -> bool:
+        """Accept assistant text; reject user/reasoning/tool snapshots."""
+        if part.get("type") != "text":
+            return False
+        message_id = part.get("messageID") or part.get("messageId") or part.get("message_id")
+        if not message_id:
+            # Older transports and deterministic fakes omit message identity.
+            return True
+        role = self._message_roles.get(str(message_id))
+        return role == "assistant"
+
     def _handle_event(self, obj: Dict[str, Any]) -> None:
         # Real OpenCode 1.18 SSE wraps events as:
         #   { "directory": "...", "project": "...", "payload": { "type": "...", "properties": {...} } }
@@ -510,9 +521,19 @@ class OpenCodeAdapter(BackendAdapter):
         # Filter global SSE events to this session when a session id is present.
         if not self._session_matches(props, obj):
             return
+        if typ == "message.updated":
+            info = props.get("info") if isinstance(props.get("info"), dict) else props
+            message_id = info.get("id") if isinstance(info, dict) else None
+            role = info.get("role") if isinstance(info, dict) else None
+            if message_id and role:
+                self._message_roles[str(message_id)] = str(role)
+            self._events.put(AdapterEvent(kind="progress", data=typ, raw=obj))
+            return
         if typ == "message.part.delta":
             # Incremental append only (genuine deltas).
             part = props.get("part") or props
+            if not isinstance(part, dict) or not self._is_assistant_text_part(part):
+                return
             delta = props.get("delta") or ""
             text = ""
             if isinstance(delta, str) and delta:
@@ -531,6 +552,8 @@ class OpenCodeAdapter(BackendAdapter):
             part = props.get("part") if isinstance(props.get("part"), dict) else props
             if not isinstance(part, dict):
                 part = {}
+            if not self._is_assistant_text_part(part):
+                return
             # Delta-only updated: if text is missing but delta is present, treat
             # as incremental rather than a full snapshot.
             if not isinstance(part.get("text"), str) and isinstance(props.get("delta"), str):

@@ -492,6 +492,25 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
         extra_checks(env, run_id, reg_root, out, full_err, tmp)
 
 
+def test_opencode_sse_survives_quiet_gap(tmp: Path) -> None:
+    """A normal inference gap must not poison HTTPResponse.readline()."""
+    print("=== e2e: opencode SSE survives quiet inference gap ===")
+    reg_root = tmp / "reg-opencode-gap"
+    art = tmp / "art-opencode-gap"
+    cwd = tmp / "cwd-opencode-gap"
+    art.mkdir(parents=True)
+    reg_root.mkdir(parents=True)
+    cwd.mkdir()
+    env = env_base(reg_root, art)
+    # First model delta arrives after slow * 0.4 = 0.8 seconds. This exceeds
+    # the former 0.5-second socket timeout that poisoned buffered reads.
+    env["CONSILIUM_FAKE_STEER_SLOW"] = "2.0"
+    proc, _, _ = start_steerable("opencode", "quiet-gap task", env, cwd)
+    code, out, err = wait_proc(proc, timeout=20)
+    assert_true("opencode quiet-gap exit 0", code == 0, err[-500:])
+    assert_true("opencode quiet-gap receives delayed model text", "FAKE_OC" in out, out)
+
+
 def test_grok_queue_and_send_now(tmp: Path) -> None:
     print("=== e2e: grok concurrent queue + sendNow ===")
     reg_root = tmp / "reg-grok2"
@@ -2121,6 +2140,47 @@ def test_opencode_part_updated_cumulative(tmp: Path) -> None:
         adapter2.final_text(),
     )
 
+    # Production SSE includes user text and assistant reasoning on the same
+    # message.part.updated channel. Only assistant text belongs in final output.
+    adapter3 = OpenCodeAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="opencode",
+    )
+    for message_id, role in (("msg_user", "user"), ("msg_assistant", "assistant")):
+        adapter3._handle_event(
+            {
+                "type": "message.updated",
+                "properties": {"info": {"id": message_id, "role": role}},
+            }
+        )
+    for part in (
+        {"id": "part_user", "messageID": "msg_user", "type": "text", "text": "PROMPT"},
+        {
+            "id": "part_reasoning",
+            "messageID": "msg_assistant",
+            "type": "reasoning",
+            "text": "THOUGHT",
+        },
+        {
+            "id": "part_answer",
+            "messageID": "msg_assistant",
+            "type": "text",
+            "text": "ANSWER",
+        },
+    ):
+        adapter3._handle_event(
+            {"type": "message.part.updated", "properties": {"part": part}}
+        )
+    assert_true(
+        "opencode final excludes user echo and reasoning",
+        adapter3.final_text() == "ANSWER",
+        adapter3.final_text(),
+    )
+
 
 def test_opencode_abort_single_idle_completion(tmp: Path) -> None:
     """abort (no abort-idle) → replacement → single idle completes; no double-count."""
@@ -3062,6 +3122,7 @@ def main() -> int:
         test_backend_e2e("claude-code", "claude", tmp)
         test_backend_e2e("codex", "codex", tmp)
         test_backend_e2e("opencode", "opencode", tmp)
+        test_opencode_sse_survives_quiet_gap(tmp)
         test_backend_e2e("grok", "grok", tmp)
         test_opencode_auth_e2e_password_not_in_artifacts(tmp)
         test_registry_loss_does_not_lose_final(tmp)
