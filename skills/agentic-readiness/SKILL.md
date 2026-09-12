@@ -26,6 +26,19 @@ Add `--include-user-scope` only when the user explicitly wants personal Codex, C
    - [best-practices.md](references/best-practices.md) for settings, workflows, context, and safety beyond instruction files.
 5. Report evidence before recommendations.
 
+### Verify required commands and hooks actually work
+
+For required build/test/lint commands and hooks, confirm they execute the intended
+check in the current environment. A configuration entry, hook file, or successful
+commit alone is not proof: a missing runner such as `lefthook` can leave checks
+unexecuted. Use a safe local invocation or an existing test fixture; do not commit,
+push, deploy, or perform a destructive action merely to test a hook. For a blocking
+hook, verify that an allowed fixture passes and a violating fixture is rejected.
+Confirm test commands ran the intended tests rather than finding zero or skipping
+them. Report what ran and its result; label anything not exercised as **not
+verified**, distinguishing it from a confirmed failure. Consider existing CI
+coverage when assessing the impact of a local gap.
+
 ## Report shape
 
 Keep the report concise:

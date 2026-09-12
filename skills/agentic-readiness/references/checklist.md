@@ -56,6 +56,7 @@
 
 - [ ] Run `python scripts/audit_repo.py --root .`.
 - [ ] Validate documented commands against package/build files.
+- [ ] Confirm required commands and hooks actually run their intended checks; use safe fixtures for blocking hooks and label unexercised checks as not verified.
 - [ ] Run repository routing/link checks.
 - [ ] Start fresh Codex, Claude Code, and OpenCode sessions where supported.
 - [ ] Confirm active sources with Codex instruction listing/logs and Claude `/memory` or `InstructionsLoaded`.
