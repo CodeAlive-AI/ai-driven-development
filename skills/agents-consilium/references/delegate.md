@@ -7,7 +7,7 @@ Delegate hands one task to exactly one explicitly selected coding-agent profile 
 - Default steerable, explicit one-shot, and detached runs
 - Bounded/group waiting and durable Codex follow-ups
 - Required caller workflow and exit codes
-- Mandatory 15-minute parent supervision
+- First-minute check and adaptive parent supervision
 - Delegating to a less capable model
 - Steering modes and mailbox lifecycle
 - Retry safety, registry, and artifacts
@@ -118,15 +118,24 @@ one-shot, and detached runs alike.
 6. Use `watch` for lifecycle monitoring. It emits attach/status, steer lifecycle, selected turn-boundary/error events, heartbeats, and terminal state. It deliberately does **not** show the current tool, file, command, model text, reasoning, or a semantic percent-complete estimate. A heartbeat proves only that the supervisor still sees a live run.
 7. Use `wait` to block and print the full final answer. `wait` never cancels work; only `cancel` does.
 
-### Mandatory 15-minute parent supervision
+### First-minute check and adaptive parent supervision
 
-For every delegate still running after 15 minutes, the parent must inspect
-substantive progress at elapsed minutes 15, 30, 45, and every 15 minutes after
-that until completion. This applies regardless of relative model capability,
-including read-only research and detached work. Record the launch time and run
-id; arrange resumable/background tool execution or use `--detach` so a blocking
-launch, `watch`, or `wait` cannot prevent the checkpoints. The CLI does not
-schedule these checks for the caller.
+The parent must inspect every delegate within the first minute after launch,
+including read-only research and detached work, regardless of relative model
+capability. Check the worker's initial interpretation, plan, and actions against
+the task: did it understand the request, preserve the constraints, and start in
+the right direction? Correct mistakes promptly. If it finishes before that check,
+review the result immediately. If startup has not yet produced substantive
+evidence, the check cannot establish understanding: retain that uncertainty and
+inspect again when evidence appears. A heartbeat is not confirmation.
+
+After the initial check, use judgment to decide when to inspect again. Roughly
+every 15 minutes is a general recommendation for ongoing work, not a fixed
+requirement. Check sooner or more often when risk, new evidence, a blocker, or
+a previous correction warrants it; adjust the cadence as the work develops.
+Record the launch time and run id. Arrange resumable/background execution or
+use `--detach` so blocking calls cannot prevent the first-minute check or later
+supervision. The CLI does not schedule these checks for the caller.
 
 At the first checkpoint, call `events RUN_ID --max-events 50`. Save `next_cursor`
 and use it as `--cursor` on subsequent checks. Assess the actual actions and
@@ -151,8 +160,9 @@ only means no normalized events were emitted in that interval; neither that nor
 mandatory pre-cancel stall check below. Collect the final answer with `wait` and
 perform the required result review when the run ends.
 
-For a caller handoff, preserve the run id, launch time, next checkpoint, event
-cursor, task contract, journal path, and pending guidance. Prefer the default
+For a caller handoff, preserve the run id, launch time, whether the initial check is
+complete, next planned check, event cursor, task contract, journal path, and
+pending guidance. Prefer the default
 steerable mode for potentially long tasks. An explicitly requested `--one-shot`
 run lacks the steerable control interface: report this limitation, observe using
 the available execution output, and do not cancel solely to change modes.

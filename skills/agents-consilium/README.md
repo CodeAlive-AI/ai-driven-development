@@ -130,12 +130,13 @@ For deeper, multi-stage reviews with a final judge, use `--depth super` or `--de
 
 ## Long-running delegation
 
-The parent agent must check substantive progress after 15 minutes and every 15
-minutes thereafter while the worker is running. It uses `delegate events` to
-compare the work with the task and sends a concrete `steer --mode auto` correction
-when it finds a wrong direction, an important omission, or a resolvable blocker.
-Healthy progress needs no steer. This supervision is a caller responsibility;
-the CLI does not schedule it automatically.
+The parent must check the worker within the first minute after launch to verify
+its understanding and initial direction, and correct it when needed. Afterwards,
+the parent chooses when to check based on the task and observed progress;
+roughly every 15 minutes is a general recommendation, not a fixed schedule.
+It uses `delegate events` to inspect the work and sends a concrete
+`steer --mode auto` correction when needed. Healthy progress needs no steer.
+The CLI does not schedule supervision automatically.
 
 Use `--detach` when work should continue after the calling session exits:
 
