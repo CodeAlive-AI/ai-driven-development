@@ -47,6 +47,13 @@ The repo ships **English-only**. When you add or remove a skill, or change a ski
 - Update the skill's own `SKILL.md` (agent-facing) and `README.md` (human-facing, optional)
 - Update `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` versions
 
+## Generated skill artifacts
+
+Do not create or commit per-skill snapshots or edit-history artifacts, including
+`.skill_snapshots/`, `.snapshots/`, and `.skill_edit_log.jsonl`. Git history is
+the sole record of skill changes. These generated artifacts are ignored by the
+root `.gitignore` and must not be force-added.
+
 ## Versioning
 
 Follow semver:
