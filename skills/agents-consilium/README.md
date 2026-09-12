@@ -104,6 +104,15 @@ scripts/consilium delegate -a grok \
 
 `delegate` runs exactly one explicitly selected agent in the current directory and is steerable by default. It has no sandbox or approval prompts, so use it only when you intend to give that agent full control of the repository. Use `--one-shot` for the legacy direct execution path.
 
+When delegating to a less capable model, the calling agent must provide a precise
+task contract, anticipate task-specific pitfalls, and request a deviation journal
+at `docs/tmp/{yyyy.MM.dd}_{task-name}_deviations.md` with a concrete date and task
+name. After completion, the caller reviews the code itself, then reads and
+reconciles the journal before accepting the result. This is an agent workflow,
+not automatic model ranking by the CLI. See the
+[delegate protocol](references/delegate.md#delegating-to-a-less-capable-model),
+including the reporting rule for strictly read-only investigations.
+
 ### Review code with independent specialists
 
 ```bash

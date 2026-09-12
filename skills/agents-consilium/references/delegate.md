@@ -6,6 +6,7 @@ Delegate hands one task to exactly one explicitly selected coding-agent profile 
 
 - Default steerable, explicit one-shot, and detached runs
 - Required caller workflow and exit codes
+- Delegating to a less capable model
 - Steering modes and mailbox lifecycle
 - Retry safety, registry, and artifacts
 - Backend delivery differences
@@ -47,6 +48,10 @@ RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement the task")
 
 ## Required caller workflow
 
+Before launch, assess the caller-to-worker capability gap and apply the protocol
+below when delegating to a less capable model. This applies to default steerable,
+one-shot, and detached runs alike.
+
 1. Start from the target project CWD. The default run is steerable and remains in the current session; use `--detach` when it may outlive the session. Recover a lost id with `delegate list --active`.
 2. If `CONSILIUM_STEER_DIR` was overridden at start, pass the same value to `steer`, `status`, `events`, `cancel`, `wait`, `watch`, and `list`.
 3. Steer only with new information or a genuine course correction. Do not repeat the original task. Prefer `--prompt-file` or stdin for long guidance and default to `--mode auto`.
@@ -54,6 +59,78 @@ RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement the task")
 5. Use `events RUN_ID --max-events N` whenever the calling agent needs a bounded, non-blocking page of normalized progress. Save `next_cursor` and pass it back as `--cursor` on the next observation to avoid duplicates.
 6. Use `watch` for lifecycle monitoring. It emits attach/status, steer lifecycle, selected turn-boundary/error events, heartbeats, and terminal state. It deliberately does **not** show the current tool, file, command, model text, reasoning, or a semantic percent-complete estimate. A heartbeat proves only that the supervisor still sees a live run.
 7. Use `wait` to block and print the full final answer. `wait` never cancels work; only `cancel` does.
+
+### Delegating to a less capable model
+
+The caller owns task design and acceptance. A less capable worker may omit subtle
+requirements or introduce unrequested changes, so do not rely on it to fill in
+missing constraints or assess its own correctness.
+
+Apply this protocol when the user identifies a capability gap or the caller has
+reason to expect one for the actual task. User-provided examples include Fable →
+Opus, Opus → Sonnet, Astra → Muse Spark, and Astra → DeepSeek. These are delegation
+examples, not a permanent ranking of model families: consider the selected model
+version, effort, tools, and task. Do not infer capability from price or profile
+name alone. If the relationship is unknown, state that uncertainty and use the
+same explicit task contract and verification discipline without claiming a rank.
+This is a caller instruction; the CLI does not detect the caller's model.
+
+**Before launch:** inspect the relevant code and record repository status so
+existing work can be distinguished from the worker's changes. Write a
+self-contained prompt specifying:
+
+- The exact working root, intended behavior, and concrete acceptance criteria.
+- Relevant files and existing patterns, scope boundaries, non-goals, and behavior
+  that must remain compatible. Distinguish navigation hints from actual edit
+  restrictions; allow investigation of dependencies without authorizing unrelated edits.
+- A bounded implementation plan and task-specific pitfalls discovered during
+  triage: for example, callers depending on an API, empty inputs, retry semantics,
+  migrations, or generated files. Explain how each applicable pitfall should be
+  handled; do not substitute a generic checklist for reasoning about this task.
+- The checks to run and evidence to return, including failed or unavailable checks.
+- How to handle unexpected findings: record them promptly; do not silently expand
+  scope, invent requirements, add a fallback that hides a failure, or claim success
+  when blocked. Report a blocker for caller guidance before taking an out-of-scope
+  action; continue independent work within the agreed scope where possible.
+
+**Deviation journal:** the caller resolves the launch date in the user's timezone
+and a descriptive filesystem-safe task slug before sending the prompt. Pass one
+literal repo-relative path of the form
+`docs/tmp/{yyyy.MM.dd}_{task-name}_deviations.md`, with both placeholders replaced
+(for example, `docs/tmp/2026.09.13_cache-invalidation_deviations.md`). Keep this path
+through steering and reattachment. Choose a distinct task slug if a file already
+belongs to another run; never overwrite another task's journal.
+
+Include the following instruction in the worker prompt, replacing `JOURNAL_PATH`
+with that exact path:
+
+```text
+Create JOURNAL_PATH in the repository (create docs/tmp if needed). Record every
+unexpected finding and deviation from the supplied plan as it occurs. For each,
+include the expected behavior or step, what you observed with file/command
+evidence, why a change was needed, the action taken or proposed, and remaining
+risks or blockers. Keep resolved entries and note their resolution. The journal
+does not authorize changes outside the task scope. If there were no surprises or
+deviations, explicitly record "No deviations." In your final answer, provide the
+journal path, changed files, checks and their results, and unresolved issues.
+```
+
+For a strictly read-only investigation, do not authorize a repository write just
+to create this file. Instruct the worker to return the same journal content in a
+`Deviations` section of its final answer; review that section after independently
+checking its evidence and verifying repository status.
+
+**After completion:** inspect the actual diff and relevant surrounding code
+yourself against the original task, including missing requirements, unnecessary
+changes, and the anticipated pitfalls. Run or independently verify the relevant
+checks. Only then read the entire deviation journal and reconcile each entry
+against the code and check results; investigate discrepancies and unreported
+deviations. A missing journal is an incomplete deliverable, not evidence that
+there were no deviations. Obtain it before accepting the result. Fix or return
+defects for correction, then inspect the corrected code and reread the updated
+journal. Do not accept a worker's summary, passing tests, or exit code as a
+substitute for this review. For detached work, carry the task contract and journal
+path into the caller's handoff so the accepting agent performs the same checks.
 
 ### Mandatory pre-cancel stall check
 
