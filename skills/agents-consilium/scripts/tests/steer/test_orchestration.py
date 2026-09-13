@@ -71,6 +71,69 @@ class OrchestrationTests(unittest.TestCase):
         self.assertNotEqual(a.exit_code(), 0)
         self.assertFalse(a._replacement_pending)
 
+    def test_opencode_permission_wakes_parent_with_cause_and_command(self):
+        p = self.cli("-a", "opencode", "--detach", "PERMISSION_TEST",
+                     env=dict(self.env, CONSILIUM_FAKE_OC_PERMISSION="1", CONSILIUM_FAKE_OC_PERMISSION_DELAY="2"))
+        self.assertEqual(p.returncode, 0, p.stderr)
+        rid = p.stdout.strip()
+        try:
+            observed = self.cli("wait-any", rid, "--timeout", "0.4")
+            self.assertEqual(observed.returncode, 124, observed.stderr)
+            active = json.loads(observed.stdout)["runs"][0]["active_tools"]
+            self.assertIn("mkdir /tmp/example", active["call-permission"]["input_preview"])
+            status = json.loads(self.cli("status", rid, "--json").stdout)
+            self.assertEqual(status["state"]["active_tools"], active)
+            result = self.cli("wait-any", rid, "--timeout", "5")
+            self.assertEqual(result.returncode, 0, result.stderr)
+            data = json.loads(result.stdout)
+            self.assertEqual(data["ready"], [rid])
+            run = data["runs"][0]
+            self.assertEqual(run["status"], "failed")
+            self.assertEqual(run["active_tools"], {})
+            self.assertIn("permission_required", run["error"])
+            self.assertIn("external_directory", run["error"])
+            self.assertIn("mkdir /tmp/example", run["error"])
+            result = self.cli("wait", rid, "--json")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("permission_required", json.loads(result.stdout)["error"])
+            events = json.loads(self.cli("events", rid, "--cursor", "0", "--max-events", "100").stdout)
+            tools = [e for e in events["events"] if e["type"] == "tool_started"]
+            self.assertTrue(tools)
+            self.assertIn("mkdir /tmp/example", tools[0]["data"])
+        finally:
+            if self.reg.load_meta(rid)["status"] not in ("completed", "failed", "cancelled"):
+                self.cli("cancel", rid)
+
+    def test_opencode_ignores_foreign_nested_tool_and_permission(self):
+        a = OpenCodeAdapter(binary="fake", model="test", cwd=str(self.root), artifacts_dir=str(self.root))
+        a.session_id = "ours"
+        a._handle_event({"type": "message.part.updated", "properties": {"part": {
+            "sessionID": "other", "id": "tool", "type": "tool", "tool": "bash",
+            "state": {"status": "running", "input": {"command": "foreign"}}}}})
+        a._handle_event({"type": "permission.asked", "properties": {"sessionID": "other"}})
+        self.assertEqual(list(a.poll_events()), [])
+        self.assertFalse(a.is_done())
+
+    def test_opencode_long_sse_line_preserves_tool_completion(self):
+        a = OpenCodeAdapter(binary="fake", model="test", cwd=str(self.root), artifacts_dir=str(self.root))
+        a.session_id = "ours"
+        a.base_url = "http://127.0.0.1:1234"
+        frames = []
+        for status in ("running", "running", "completed"):
+            frames.append({"directory": str(self.root), "payload": {
+                "type": "message.part.updated", "properties": {"part": {
+                    "sessionID": "ours", "id": "tool-1", "callID": "call-1", "type": "tool", "tool": "bash",
+                    "state": {"status": status, "input": {"command": "dotnet test"}, "output": "Ж" * 70000}}}}})
+        frames.append({"type": "session.idle", "properties": {"sessionID": "ours"}})
+        raw = ''.join('data: '+json.dumps(f, ensure_ascii=False)+'\n\n' for f in frames).encode()
+        with patch.object(a._opener, "open", return_value=io.BytesIO(raw)):
+            a._sse_loop()
+        events = list(a.poll_events())
+        self.assertEqual([e.kind for e in events if e.kind.startswith("tool")], ["tool_started", "tool_completed"])
+        self.assertTrue(all('dotnet test' in e.data for e in events if e.kind.startswith("tool")))
+        self.assertFalse(any(e.kind == "raw" for e in events))
+        self.assertEqual(a.exit_code(), 0)
+
     def test_codex_progress_does_not_repeat_streamed_completion(self):
         a = CodexAdapter(binary="fake", model="test", cwd=str(self.root), artifacts_dir=str(self.root))
         def delta(item_id, text):

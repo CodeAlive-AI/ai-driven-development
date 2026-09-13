@@ -78,6 +78,7 @@ class OpenCodeAdapter(BackendAdapter):
         # message.part.* event types. Remember message roles so final output can
         # include assistant text only.
         self._message_roles: Dict[str, str] = {}
+        self._tool_status: Dict[str, str] = {}
         # Turn liveness: session.idle is turn-idle. Do not require one idle per
         # prompt_async. Track busy + replacement so the latest accepted work can
         # terminalize on a single idle when no replacement is pending.
@@ -379,7 +380,9 @@ class OpenCodeAdapter(BackendAdapter):
                 try:
                     # HTTPResponse is a binary/text file-like; prefer fp.readline
                     fp = getattr(resp, "fp", resp)
-                    raw_line = fp.readline(65536)
+                    # A size limit splits a single SSE data line into fragments;
+                    # treating those fragments as lines silently corrupts JSON.
+                    raw_line = fp.readline()
                 except Exception:
                     if self._done:
                         break
@@ -464,7 +467,8 @@ class OpenCodeAdapter(BackendAdapter):
         """Global SSE must filter to this session only (exact sessionID match)."""
         if not self.session_id:
             return True
-        for src in (props, obj):
+        sources = (props, obj, props.get("part"), props.get("info"))
+        for src in sources:
             if not isinstance(src, dict):
                 continue
             for key in ("sessionID", "sessionId", "session_id"):
@@ -479,7 +483,7 @@ class OpenCodeAdapter(BackendAdapter):
                         return True
         # If no session field is present, accept (some event types omit it).
         has_any = False
-        for src in (props, obj):
+        for src in sources:
             if isinstance(src, dict) and any(
                 k in src for k in ("sessionID", "sessionId", "session_id", "session")
             ):
@@ -554,6 +558,21 @@ class OpenCodeAdapter(BackendAdapter):
         # Filter global SSE events to this session when a session id is present.
         if not self._session_matches(props, obj):
             return
+        if typ == "permission.asked":
+            # This headless adapter has no permission-response UI. Do not leave
+            # a request waiting forever or silently grant additional access.
+            detail = {
+                "request_id": props.get("id"),
+                "permission": props.get("permission"),
+                "patterns": props.get("patterns"),
+                "command": (props.get("metadata") or {}).get("command"),
+            }
+            self._error = "permission_required: " + json.dumps(detail, ensure_ascii=False)
+            self._exit_code = 1
+            self._events.put(AdapterEvent(kind="error", data=self._error, raw=obj))
+            self._events.put(AdapterEvent(kind="done", data="permission_required", raw=obj))
+            self._done = True
+            return
         if typ == "message.updated":
             info = props.get("info") if isinstance(props.get("info"), dict) else props
             message_id = info.get("id") if isinstance(info, dict) else None
@@ -585,6 +604,19 @@ class OpenCodeAdapter(BackendAdapter):
             part = props.get("part") if isinstance(props.get("part"), dict) else props
             if not isinstance(part, dict):
                 part = {}
+            if part.get("type") == "tool":
+                state = part.get("state") or {}
+                status = str(state.get("status") or "unknown")
+                key = str(part.get("id") or part.get("callID") or "")
+                if key and self._tool_status.get(key) == status:
+                    return
+                if key:
+                    self._tool_status[key] = status
+                detail = {"tool": part.get("tool"), "call_id": part.get("callID"),
+                          "status": status, "input": state.get("input"), "time": state.get("time")}
+                kind = "tool_completed" if status in ("completed", "error") else "tool_started"
+                self._events.put(AdapterEvent(kind=kind, data=json.dumps(detail, ensure_ascii=False), raw=obj))
+                return
             if not self._is_assistant_text_part(part):
                 return
             # Delta-only updated: if text is missing but delta is present, treat

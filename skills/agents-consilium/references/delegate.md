@@ -466,6 +466,20 @@ the final text is missing: `final_available: false`, `final_text: null`, and
 parseable JSON as success. A held control lock on a dead run does not prevent
 `wait-any` from observing other targets or returning at its deadline.
 
+OpenCode permission requests are explicit blockers. This headless adapter cannot
+answer an interactive `permission.asked`; it fails the run with
+`permission_required`, including the request id, permission, paths, and command,
+so `wait-any` returns control to the parent. It does not grant additional access.
+Review the partial work and requested action before choosing an authorized
+recovery. A queued `auto` steer cannot resolve a permission request. Do not
+diagnose a hung test from heartbeat-only output: inspect tool events and errors.
+OpenCode tool snapshots expose the tool name, input command, state, and timings
+through `events`. Active calls remain in `status --json` under
+`state.active_tools` and in each wait snapshot's `active_tools`, even after later
+heartbeats; this is observed tool state, not proof that an OS command is executing
+(a permission request can block it first). Long SSE frames are preserved before
+public output is bounded.
+
 ## Steering modes
 
 | Mode | Use when | Consequence |

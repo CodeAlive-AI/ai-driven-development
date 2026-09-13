@@ -1,6 +1,7 @@
 """Steerable delegate supervisor: one adapter, mailbox consumer, durable state."""
 from __future__ import annotations
 
+import json
 import os
 import signal
 import sys
@@ -326,7 +327,8 @@ class Supervisor:
                     code = 130 if code == 0 else code
                 else:
                     status = "completed" if code == 0 else "failed"
-                self._finalize(status=status, exit_code=code, final_text=text)
+                self._finalize(status=status, exit_code=code, final_text=text,
+                               error=str(getattr(self.adapter, "_error", "") or ""))
                 return code
 
             # Registry health is independent of model output. A busy streaming
@@ -401,6 +403,20 @@ class Supervisor:
         # kind for progress/audit. Unknown kinds are not silently written to
         # normalized artifacts (protocol drift).
         backend = getattr(self.adapter, "backend_name", "") if self.adapter else ""
+        if backend == "opencode" and ev.kind in ("tool_started", "tool_completed"):
+            detail = json.loads(ev.data)
+            key = detail.get("call_id")
+            if key:
+                active_tools = dict(self._registry_state.get("active_tools") or {})
+                if ev.kind == "tool_completed":
+                    active_tools.pop(key, None)
+                else:
+                    active_tools[key] = {
+                        "tool": detail.get("tool"), "call_id": key,
+                        "status": detail.get("status"), "time": detail.get("time"),
+                        "input_preview": preview_text(json.dumps(detail.get("input"), ensure_ascii=False), 2000),
+                    }
+                self._update_registry_state(active_tools=active_tools)
         if backend == "codex-cli":
             if ev.kind == "turn_started" and ev.data:
                 self._update_registry_state(active_turn=ev.data)
@@ -827,7 +843,8 @@ class Supervisor:
                         recover=False,
                     ):
                         registry_ok = False
-                    if not self._update_registry_state(status=status, active_turn=None, recover=False):
+                    if not self._update_registry_state(status=status, active_turn=None,
+                                                       active_tools={}, recover=False):
                         registry_ok = False
             except Exception as e:
                 registry_ok = False

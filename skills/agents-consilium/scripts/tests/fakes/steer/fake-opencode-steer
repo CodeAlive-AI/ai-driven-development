@@ -150,6 +150,19 @@ class Handler(BaseHTTPRequestHandler):
             # Emit delta after short delay in background
             def work(prompt_index: int):
                 time.sleep(STATE.slow * 0.4)
+                if os.environ.get("CONSILIUM_FAKE_OC_PERMISSION"):
+                    broadcast({"type": "message.part.updated", "properties": {
+                        "sessionID": STATE.session_id, "part": {"id": "tool-permission",
+                        "type": "tool", "tool": "bash", "callID": "call-permission",
+                        "state": {"status": "running", "input": {"command": "mkdir /tmp/example"}}}}})
+                    for _ in range(6):
+                        broadcast({"type": "server.heartbeat", "properties": {}})
+                    time.sleep(float(os.environ.get("CONSILIUM_FAKE_OC_PERMISSION_DELAY", "0")))
+                    broadcast({"type": "permission.asked", "properties": {
+                        "sessionID": STATE.session_id, "id": "permission-example",
+                        "permission": "external_directory", "patterns": ["/tmp/example/*"],
+                        "metadata": {"command": "mkdir /tmp/example"}}})
+                    return  # Real backend waits for a permission response here.
                 chunk = "FAKE_OC"
                 if client and client != "initial":
                     chunk += f"+{client[:6]}"

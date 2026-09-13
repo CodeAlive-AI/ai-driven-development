@@ -706,6 +706,7 @@ def _observation(reg: Registry, run_id: str, snap) -> Dict[str, Any]:
                    error=snap.meta.get("error"), artifacts_dir=snap.meta.get("artifacts_dir"),
                    agent_id=snap.meta.get("agent_id"), model=snap.meta.get("model"),
                    started_at=snap.meta.get("started_at"), finished_at=snap.meta.get("finished_at"),
+                   active_tools={} if snap.terminal else (snap.state.get("active_tools") or {}),
                    elapsed_seconds=_duration_seconds(snap.meta, include_running=True))
     return payload
 

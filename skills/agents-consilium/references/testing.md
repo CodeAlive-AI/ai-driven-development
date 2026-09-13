@@ -31,6 +31,10 @@ success/failure/cancellation, lock contention during dead-supervisor observation
 structured results without final text, Codex active-turn status, and streamed
 message completion without duplicate progress text.
 
+OpenCode regressions exercise a permission-blocked fake server through detached
+launch and wait-any, retained failure details, tool command visibility, nested
+foreign-session filtering, and SSE lines larger than 64 KiB with Unicode content.
+
 Opt-in real smoke tests spend tokens:
 
 ```bash
