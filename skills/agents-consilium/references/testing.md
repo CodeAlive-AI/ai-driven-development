@@ -26,6 +26,11 @@ elapsed times, unrelated-run exclusion, and rejection of invalid acknowledgement
 Backend environment checks ensure nested delegation cannot inherit the parent's
 artifact destination while preserving registry and output-root routing.
 
+Edge cases include backend startup failure beside a healthy peer, simultaneous
+success/failure/cancellation, lock contention during dead-supervisor observation,
+structured results without final text, Codex active-turn status, and streamed
+message completion without duplicate progress text.
+
 Opt-in real smoke tests spend tokens:
 
 ```bash

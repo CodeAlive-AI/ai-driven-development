@@ -74,8 +74,12 @@ def _reap_dead(reg: Registry, run_id: str) -> Snapshot:
     legitimate `completed` overwritten by this reap.
     """
     try:
-        with reg.with_run_lock(run_id):
+        with reg.with_run_lock(run_id, blocking=False):
             reg.validate_active(run_id)
+    except BlockingIOError:
+        # Another control/finalization operation owns the lock. Retry on the
+        # next scan without holding up other targets or the observer deadline.
+        return poll_once(reg, run_id)
     except RegistryError:
         pass
     snap = poll_once(reg, run_id)

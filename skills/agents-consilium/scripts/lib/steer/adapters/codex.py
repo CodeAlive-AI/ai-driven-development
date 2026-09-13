@@ -44,6 +44,8 @@ class CodexAdapter(BackendAdapter):
         self._text_parts: List[str] = []
         # Per-turn full item text captured from item/completed (not mixed with deltas).
         self._item_text_parts: List[str] = []
+        self._streamed_item_text: Dict[str, str] = {}
+        self._completed_item_text: Dict[str, str] = {}
         self._pending_user_ids: Dict[str, bool] = {}
         self._lock = threading.Lock()
         self._cancelled = False
@@ -55,6 +57,8 @@ class CodexAdapter(BackendAdapter):
         """Clear per-turn text so a replacement turn cannot inherit partial OLD."""
         self._text_parts = []
         self._item_text_parts = []
+        self._streamed_item_text = {}
+        self._completed_item_text = {}
         # Never keep a frozen partial from an interrupted/cancelled turn.
         self._result_text = None
 
@@ -137,6 +141,9 @@ class CodexAdapter(BackendAdapter):
             delta = params.get("delta")
             if delta and isinstance(delta, str):
                 self._text_parts.append(delta)
+                item_id = params.get("itemId")
+                if item_id:
+                    self._streamed_item_text[item_id] = self._streamed_item_text.get(item_id, "") + delta
                 self._events.put(AdapterEvent(kind="text", data=delta, raw=msg))
             else:
                 # Full item events: track item text separately from deltas.
@@ -184,10 +191,20 @@ class CodexAdapter(BackendAdapter):
             return
         text = self._extract_agent_text(item)
         if text:
+            item_id = item.get("id") or item.get("itemId")
+            if item_id and self._completed_item_text.get(item_id) == text:
+                return
             # Store on the item channel only (not _text_parts) so completed can
             # choose items XOR deltas without doubling.
             self._item_text_parts.append(text)
-            self._events.put(AdapterEvent(kind="text", data=text, raw=item))
+            streamed = self._streamed_item_text.get(item_id, "")
+            if item_id:
+                self._completed_item_text[item_id] = text
+            # Completion repeats the already streamed body. Emit only a missing
+            # suffix; preserve genuinely changed text and distinct message ids.
+            remaining = text[len(streamed):] if streamed and text.startswith(streamed) else text
+            if remaining:
+                self._events.put(AdapterEvent(kind="text", data=remaining, raw=item))
 
     def _on_server_request(self, msg: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         # Auto-approve any approval requests (YOLO)

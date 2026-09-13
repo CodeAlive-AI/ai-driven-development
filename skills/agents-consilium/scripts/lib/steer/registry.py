@@ -329,6 +329,6 @@ class Registry:
     def cancel_requested(self, run_id: str) -> bool:
         return (self.run_path(run_id) / "control" / "cancel").is_file()
 
-    def with_run_lock(self, run_id: str):
+    def with_run_lock(self, run_id: str, *, blocking: bool = True):
         """Exclusive run-level lock (serialize terminal transition vs enqueue)."""
-        return flock_exclusive(self.run_lock_path(run_id))
+        return flock_exclusive(self.run_lock_path(run_id), blocking=blocking)

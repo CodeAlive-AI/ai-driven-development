@@ -460,6 +460,12 @@ itself failed; terminal status and the run exit code are fields in the JSON.
 130 for interrupted observation, and non-zero errors for invalid/unreadable ids.
 Worker exit codes remain in its JSON.
 
+For a known terminal run, `wait --json` also returns a structured result when
+the final text is missing: `final_available: false`, `final_text: null`, and
+`final_path: null`. Its nonzero exit still reports the failure; do not treat
+parseable JSON as success. A held control lock on a dead run does not prevent
+`wait-any` from observing other targets or returning at its deadline.
+
 ## Steering modes
 
 | Mode | Use when | Consequence |

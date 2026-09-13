@@ -401,6 +401,14 @@ class Supervisor:
         # kind for progress/audit. Unknown kinds are not silently written to
         # normalized artifacts (protocol drift).
         backend = getattr(self.adapter, "backend_name", "") if self.adapter else ""
+        if backend == "codex-cli":
+            if ev.kind == "turn_started" and ev.data:
+                self._update_registry_state(active_turn=ev.data)
+            elif ev.kind == "turn_completed":
+                raw = ev.raw if isinstance(ev.raw, dict) else {}
+                turn_id = (raw.get("params", {}).get("turn") or {}).get("id")
+                if turn_id and turn_id == self._registry_state.get("active_turn"):
+                    self._update_registry_state(active_turn=None)
         record: Dict[str, Any]
         try:
             from events import adapter_kind_to_event  # type: ignore
@@ -819,7 +827,7 @@ class Supervisor:
                         recover=False,
                     ):
                         registry_ok = False
-                    if not self._update_registry_state(status=status, recover=False):
+                    if not self._update_registry_state(status=status, active_turn=None, recover=False):
                         registry_ok = False
             except Exception as e:
                 registry_ok = False

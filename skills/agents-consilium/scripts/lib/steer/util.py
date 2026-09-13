@@ -295,12 +295,12 @@ def is_loopback_url(url: str) -> bool:
 
 
 @contextmanager
-def flock_exclusive(lock_path: Path) -> Iterator[None]:
+def flock_exclusive(lock_path: Path, *, blocking: bool = True) -> Iterator[None]:
     """Exclusive flock around a run-level critical section."""
     ensure_dir(lock_path.parent)
     secure_touch(lock_path)
     with open(lock_path, "a+", encoding="utf-8") as lf:
-        fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+        fcntl.flock(lf.fileno(), fcntl.LOCK_EX | (0 if blocking else fcntl.LOCK_NB))
         try:
             yield
         finally:

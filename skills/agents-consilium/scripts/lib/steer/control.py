@@ -342,8 +342,12 @@ def cmd_wait(args: argparse.Namespace) -> int:
         # A failed run has no answer by construction; its own code says more
         # than "no text". 74 is reserved for the surprising case: the run
         # claims success yet produced nothing.
-        return code or EXIT_NO_FINAL_TEXT
-    text, final_path = found
+        code = code or EXIT_NO_FINAL_TEXT
+        if not args.json or args.quiet:
+            return code
+        text, final_path = None, None
+    else:
+        text, final_path = found
 
     if args.quiet:
         return code
@@ -366,6 +370,7 @@ def cmd_wait(args: argparse.Namespace) -> int:
             "persist_session": bool(meta.get("persist_session")),
             "continued_from": meta.get("continued_from"),
             "final_path": final_path,
+            "final_available": found is not None,
             # Deliberately the FULL body — this is what `status --json` truncates.
             "final_text": text,
         }

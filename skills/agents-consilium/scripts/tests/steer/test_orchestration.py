@@ -15,6 +15,7 @@ from unittest.mock import patch
 
 from test_steer_e2e import CONSILIUM, env_base, extract_run_id
 from steer.adapters.opencode import OpenCodeAdapter
+from steer.adapters.codex import CodexAdapter
 from steer.control import _duration_seconds
 from steer.registry import Registry, RegistryError
 from steer.session import SessionLease
@@ -69,6 +70,26 @@ class OrchestrationTests(unittest.TestCase):
         self.assertTrue(a.is_done())
         self.assertNotEqual(a.exit_code(), 0)
         self.assertFalse(a._replacement_pending)
+
+    def test_codex_progress_does_not_repeat_streamed_completion(self):
+        a = CodexAdapter(binary="fake", model="test", cwd=str(self.root), artifacts_dir=str(self.root))
+        def delta(item_id, text):
+            a._on_notification({"method": "item/agentMessage/delta", "params": {"itemId": item_id, "delta": text}})
+        def complete(item_id, text):
+            a._on_notification({"method": "item/completed", "params": {"item": {"id": item_id, "type": "agentMessage", "text": text}}})
+        delta("a", "Hello")
+        complete("a", "Hello")
+        complete("a", "Hello")  # Duplicate completion notification.
+        delta("b", "Hello")  # Same words in a distinct message are legitimate.
+        complete("b", "Hello world")  # Missing suffix must remain visible.
+        complete("c", "No deltas")
+        delta("d", "Draft")
+        complete("d", "Correction")  # Do not discard a non-prefix correction.
+        texts = [ev.data for ev in a.poll_events() if ev.kind == "text"]
+        self.assertEqual(texts, ["Hello", "Hello", " world", "No deltas", "Draft", "Correction"])
+        a._reset_turn_text_buffers()
+        complete("a", "Hello")
+        self.assertEqual([ev.data for ev in a.poll_events() if ev.kind == "text"], ["Hello"])
 
     def test_abort_idle_then_failure_does_not_leave_wait_hanging(self):
         a = OpenCodeAdapter(binary="fake", model="test", cwd=str(self.root), artifacts_dir=str(self.root))
@@ -186,6 +207,123 @@ class OrchestrationTests(unittest.TestCase):
             snap = wait_for_terminal(self.reg, rid, timeout=1, poll_interval=.01)
         self.assertTrue(snap.terminal)
         self.assertEqual(snap.meta["error"], "supervisor_dead")
+
+    def test_busy_dead_run_lock_does_not_hide_another_completion(self):
+        dead, healthy = self.run_record(pid=99999999), self.run_record(pid=os.getpid())
+        locked, release = threading.Event(), threading.Event()
+        def holder():
+            with self.reg.with_run_lock(dead):
+                locked.set()
+                release.wait(3)
+        thread = threading.Thread(target=holder)
+        thread.start()
+        self.assertTrue(locked.wait(2))
+        timer = threading.Timer(.9, lambda: self.reg.update_meta(healthy, status="completed", exit_code=0))
+        timer.start()
+        try:
+            start = time.monotonic()
+            p = self.cli("wait-any", dead, healthy, "--timeout", "1.3")
+            self.assertLess(time.monotonic() - start, 2)
+            self.assertEqual(p.returncode, 0, p.stderr)
+            self.assertEqual(json.loads(p.stdout)["ready"], [healthy])
+            self.assertEqual(self.reg.load_meta(dead)["status"], "running")
+        finally:
+            release.set()
+            thread.join(4)
+            timer.join()
+
+    def test_busy_dead_run_lock_does_not_overrun_deadline(self):
+        dead = self.run_record(pid=99999999)
+        locked, release = threading.Event(), threading.Event()
+        def holder():
+            with self.reg.with_run_lock(dead):
+                locked.set()
+                release.wait(3)
+        thread = threading.Thread(target=holder)
+        thread.start()
+        self.assertTrue(locked.wait(2))
+        try:
+            start = time.monotonic()
+            p = self.cli("wait-any", dead, "--timeout", "1")
+            self.assertLess(time.monotonic() - start, 2)
+            self.assertEqual(p.returncode, 124, p.stderr)
+            self.assertEqual(json.loads(p.stdout)["ready"], [])
+        finally:
+            release.set()
+            thread.join(4)
+        # Lock release permits the next observation to diagnose the dead run.
+        p = self.cli("wait-any", dead, "--timeout", "2")
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertEqual(json.loads(p.stdout)["runs"][0]["error"], "supervisor_dead")
+
+    def test_simultaneous_terminal_results_are_all_reported(self):
+        done, failed, cancelled = (self.run_record(s) for s in ("completed", "failed", "cancelled"))
+        p = self.cli("wait-any", done, failed, cancelled, done, "--timeout", "0")
+        self.assertEqual(p.returncode, 0, p.stderr)
+        data = json.loads(p.stdout)
+        self.assertEqual(data["ready"], [done, failed, cancelled])
+        self.assertEqual([r["exit_code"] for r in data["runs"]], [0, 1, 130])
+
+    def test_missing_final_still_returns_structured_terminal_result(self):
+        for status, error, expected in (("failed", "supervisor_dead", 70), ("completed", None, 74)):
+            rid = self.run_record(status, error=error)
+            p = self.cli("wait", rid, "--json")
+            self.assertEqual(p.returncode, expected, p.stderr)
+            data = json.loads(p.stdout)
+            self.assertEqual(data["run_id"], rid)
+            self.assertEqual(data["status"], status)
+            self.assertEqual(data["exit_code"], expected)
+            self.assertEqual(data["error"], error)
+            self.assertFalse(data["final_available"])
+            self.assertIsNone(data["final_text"])
+            self.assertIsNone(data["final_path"])
+
+    def test_backend_startup_failure_does_not_discard_healthy_peer(self):
+        pending = []
+        try:
+            for binary, delay in (("/bin/false", "0.02"), (self.env["CONSILIUM_BIN_CODEX"], "1")):
+                p = self.cli("-a", "codex", "--detach", "STARTUP_TEST", env=dict(
+                    self.env, CONSILIUM_BIN_CODEX=binary, CONSILIUM_FAKE_STEER_SLOW=delay))
+                self.assertEqual(p.returncode, 0, p.stderr)
+                pending.append(p.stdout.strip())
+            failed, healthy = pending
+            p = self.cli("wait-any", *pending, "--timeout", "5")
+            self.assertEqual(p.returncode, 0, p.stderr)
+            data = json.loads(p.stdout)
+            self.assertIn(failed, data["ready"])
+            self.assertEqual(data["runs"][0]["status"], "failed")
+            self.assertNotEqual(self.cli("wait", failed, "--json").returncode, 0)
+            p = self.cli("wait-any", *pending, "--acknowledged", failed, "--timeout", "10")
+            self.assertEqual(p.returncode, 0, p.stderr)
+            self.assertEqual(json.loads(p.stdout)["ready"], [healthy])
+            self.assertEqual(self.cli("wait", healthy, "--json").returncode, 0)
+            pending.clear()
+        finally:
+            for rid in pending:
+                if self.reg.load_meta(rid)["status"] not in ("completed", "failed", "cancelled"):
+                    self.cli("cancel", rid)
+
+    def test_codex_status_reports_active_turn_and_clears_it_on_completion(self):
+        p = self.cli("-a", "codex", "--detach", "STATUS_TEST",
+                     env=dict(self.env, CONSILIUM_FAKE_STEER_SLOW="1"))
+        self.assertEqual(p.returncode, 0, p.stderr)
+        rid = p.stdout.strip()
+        try:
+            deadline = time.monotonic() + 1.5
+            active = None
+            while time.monotonic() < deadline:
+                state = json.loads(self.cli("status", rid, "--json").stdout)["state"]
+                active = state.get("active_turn")
+                if active:
+                    break
+                time.sleep(.05)
+            self.assertTrue(active)
+            self.assertEqual(self.cli("wait", rid, "--timeout", "5", "--json").returncode, 0)
+            state = json.loads(self.cli("status", rid, "--json").stdout)["state"]
+            self.assertIsNone(state["active_turn"])
+        finally:
+            if self.reg.load_meta(rid)["status"] not in ("completed", "failed", "cancelled"):
+                self.cli("cancel", rid)
 
     def test_wait_timeout_json_has_bounded_progress_and_cursor(self):
         rid = self.run_record()
