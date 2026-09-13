@@ -121,23 +121,27 @@ Record the run id and launch time. Use resumable/background execution or
 `--detach` so blocking calls do not prevent the first-minute check or later
 supervision. This is a caller responsibility, not a CLI timer.
 
-Before launch, choose a task-appropriate deadline for the first substantive
-checkpoint and a finite time/cost budget for the assignment; include them in the
-worker prompt. A checkpoint can be a finding with evidence, a relevant tool
-result, a patch, or a concrete blocker; it need not be a finished implementation.
-A heartbeat, repeated plan, or transport acknowledgement does not renew a budget.
+**The parent owns progress toward the user's acceptance criteria.** At each check,
+assess what was learned, which uncertainty was resolved, and what blocks the next
+step. A relevant finding, tool result, or concrete blocker can be progress without
+a patch. Heartbeats and repeated plans are not evidence of task progress.
 
-If a checkpoint is missed, inspect the available evidence and send one focused
-steer asking for the current finding or blocker and the next bounded step. Set
-the next decision time explicitly; do not wait indefinitely for evidence to
-appear. At the budget limit, stop the run using the pre-cancel safeguards and
-recover/reassign the remaining work, or explicitly extend the budget based on
-concrete evidence and expected value. Liveness alone never justifies extension.
-Do not launch an overlapping replacement writer until the old writer has stopped
-and its changes have been inspected. Preserve model and workspace restrictions.
-The parent owns throughput: report the missed checkpoint and corrective action,
-not merely that a model was slow. Apply this to built-in workers too, using their
-native observation and steering tools. Carry deadlines and budgets into handoffs.
+When progress is unclear, investigate: request an intermediate finding or blocker,
+clarify or narrow the task, or help with a dependency. Verify whether that action
+helped. Choose whether to keep waiting, steer, take over part of the work, or
+reassign independent parts. End each check with a reason for that choice and a
+concrete next check time; use earlier events as opportunities to reassess sooner.
+Do not repeat unchanged observations indefinitely. Deadlines and budgets are
+optional tools chosen for the task; honor user-imposed limits. Waiting requires
+a reason tied to the task, not merely a live process. Distinguish a worker problem
+from a backend or observation failure before attributing the delay to a model.
+
+Before replacing an overlapping writer, confirm it has stopped and inspect its
+partial changes. Preserve model and workspace restrictions. Review further only
+when a change, unresolved risk, or required check warrants it; more reviewers or
+larger correction batches are not automatic remedies for delay. Accept the work
+when the agreed criteria and required verification are satisfied. These principles
+also apply to built-in workers through their native observation and steering tools.
 
 At each checkpoint:
 
@@ -157,9 +161,9 @@ At each checkpoint:
 An empty event page or elapsed time alone does not prove a stall and does not
 justify cancellation or restart. Keep the mandatory pre-cancel safeguards below.
 If supervision is handed off, include the run id, launch time, whether the initial
-check is complete, next planned check, event cursor, task contract, and pending
-guidance. Prefer steerable mode for work
-that may need correction; an explicit `--one-shot` run cannot accept steering,
+check is complete, latest decision and its reason, next planned check, event
+cursor, task contract, any agreed limits, and pending guidance. Prefer steerable
+mode for work that may need correction; an explicit `--one-shot` run cannot accept steering,
 so report that limitation rather than cancelling it merely to change modes.
 
 ## Mandatory: delegating to a less capable model

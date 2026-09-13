@@ -154,22 +154,32 @@ task evidence. Do not resend guidance merely because asynchronous delivery has
 not yet taken effect. Use `interrupt` only under the existing rule for abandoning
 the current direction, not as the periodic supervision default.
 
-Before launch, include a first substantive checkpoint deadline and a finite
-assignment time/cost budget in the prompt. Choose them for the task rather than
-using the 15-minute observation recommendation as a universal timeout. Specify
-what evidence the checkpoint should return: for example, a relevant finding and
-file/command evidence, or the precise blocker. On a missed checkpoint, inspect
-events and send one focused request for the finding/blocker and next bounded step;
-record when the parent will decide again. Queued guidance is not a response.
-At budget expiry, use the pre-cancel checks, stop and recover/reassign the task,
-or explicitly justify a bounded extension with substantive evidence. Do not
-renew a budget because the process is alive or emits generic status text. For an
-existing run without a budget, establish a prospective bounded recovery window
-now; do not invent a retroactive deadline or continue open-ended waiting.
-Before replacing a writer, confirm it has stopped and inspect its partial changes.
-Preserve the user's model restrictions and workspace permissions. The parent
-owns the recovery decision; naming a slow provider is not a corrective action.
-Carry the checkpoint deadline, budget, and recovery decision into handoffs.
+Use supervision to decide how to advance the task. Ask what the worker has learned,
+what uncertainty it has removed, and what blocks its next step. If this is unclear,
+request an intermediate finding or concrete blocker, clarify or narrow the task,
+or resolve a dependency. Check whether the intervention helped; queued guidance
+alone is not a response. Distinguish provider execution from missing observation
+before blaming the model. If the cause remains unknown, say so.
+
+Choose the next action from the evidence: continue useful work, steer, take over a
+part, or redistribute independent work within the user's model and workspace
+permissions. Record why the choice is useful and a concrete next check time;
+reassess sooner when relevant evidence arrives. Repeated checks without new
+evidence or an effective intervention require a change of approach, not another
+identical wait. For example, a long-running test with a known completion window
+can justify waiting; heartbeat-only observations call for clarification or diagnosis.
+Deadlines and budgets are optional, task-specific tools, not launch requirements;
+honor explicit user limits and do not invent retroactive deadlines.
+
+A decision to abandon an unproductive approach must state the evidence, attempted
+intervention, and recovery plan; it need not claim that the process is hung.
+Follow the pre-cancel safeguards. Before replacing a writer, confirm it has stopped
+and inspect its partial changes. Do not duplicate work with unknown side effects.
+
+Keep review tied to acceptance: additional passes need a concrete change,
+unresolved risk, or required check. Verify real defects, then finish when the
+agreed criteria are met. Automatically adding reviewers or enlarging correction
+batches can prolong the loop without resolving its cause.
 
 When progress is appropriate, continue without sending a steer. An empty page
 only means no normalized events were emitted in that interval; neither that nor
@@ -178,8 +188,8 @@ mandatory pre-cancel stall check below. Collect the final answer with `wait` and
 perform the required result review when the run ends.
 
 For a caller handoff, preserve the run id, launch time, whether the initial check is
-complete, next planned check, event cursor, task contract, journal path, and
-pending guidance. Prefer the default
+complete, latest decision and its reason, next planned check, event cursor, task
+contract, journal path, any agreed limits, and pending guidance. Prefer the default
 steerable mode for potentially long tasks. An explicitly requested `--one-shot`
 run lacks the steerable control interface: report this limitation, observe using
 the available execution output, and do not cancel solely to change modes.
