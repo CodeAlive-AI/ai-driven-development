@@ -142,6 +142,13 @@ larger correction batches are not automatic remedies for delay. Accept the work
 when the agreed criteria and required verification are satisfied. These principles
 also apply to built-in workers through their native observation and steering tools.
 
+The parent may inspect Git diffs and, when JJ is initialized, change evolution
+to understand what the worker is actually changing. Use the exact assigned root,
+compare with the pre-launch state, and treat partial edits as provisional.
+JJ observation must not snapshot another writer's working copy; its saved history
+can lag behind files on disk. See [VCS observation](references/delegate.md#vcs-observation)
+for commands and attribution limits. Use this when informative, not at every check.
+
 At each checkpoint:
 
 1. Read `delegate events RUN_ID --max-events 50`; on subsequent checks pass the

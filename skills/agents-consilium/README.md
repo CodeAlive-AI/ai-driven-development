@@ -141,6 +141,8 @@ adjusts the approach, then verifies whether that helped. Heartbeats alone do not
 justify repeated waiting; changing approach does not require proving a hang. A replacement writer starts
 only after the old one has stopped and its changes have been inspected. Further
 reviews need a concrete change, unresolved risk, or required check.
+The parent can also inspect Git diffs or saved JJ change evolution when useful,
+without snapshotting a worker's working copy. See [VCS observation](references/delegate.md#vcs-observation).
 The CLI does not schedule supervision automatically.
 
 Use `--detach` when work should continue after the calling session exits:
