@@ -136,10 +136,9 @@ the parent chooses when to check based on the task and observed progress;
 roughly every 15 minutes is a general recommendation, not a fixed schedule.
 It uses `delegate events` to inspect the work and sends a concrete
 `steer --mode auto` correction when needed. Healthy progress needs no steer.
-Each check ends with a reasoned next action and next check time. When progress is
-unclear, the parent requests evidence, resolves a blocker, or adjusts the approach,
-then verifies whether that helped. Deadlines and budgets are optional tools;
-heartbeats alone do not justify repeated waiting. A replacement writer starts
+When progress is unclear, the parent requests evidence, resolves a blocker, or
+adjusts the approach, then verifies whether that helped. Heartbeats alone do not
+justify repeated waiting; changing approach does not require proving a hang. A replacement writer starts
 only after the old one has stopped and its changes have been inspected. Further
 reviews need a concrete change, unresolved risk, or required check.
 The CLI does not schedule supervision automatically.
@@ -150,8 +149,8 @@ Use `--detach` when work should continue after the calling session exits:
 RUN_ID=$(scripts/consilium delegate -a grok --detach \
   "Implement the task in SPEC.md and run the test suite.")
 
-scripts/consilium delegate watch "$RUN_ID"
-scripts/consilium delegate wait "$RUN_ID"
+scripts/consilium delegate events "$RUN_ID" --max-events 50
+scripts/consilium delegate wait "$RUN_ID" --timeout 60 --json
 ```
 
 `watch` is a lifecycle monitor, not a live tool or model-text stream. It reports
