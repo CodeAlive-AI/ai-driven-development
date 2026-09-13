@@ -15,6 +15,7 @@ from unittest.mock import patch
 
 from test_steer_e2e import CONSILIUM, env_base, extract_run_id
 from steer.adapters.opencode import OpenCodeAdapter
+from steer.control import _duration_seconds
 from steer.registry import Registry, RegistryError
 from steer.session import SessionLease
 from steer.util import atomic_write_json, atomic_write_text
@@ -225,6 +226,56 @@ class OrchestrationTests(unittest.TestCase):
             p = self.cli("wait-any", "missing", "--timeout", value)
             self.assertEqual(p.returncode, 2, p.stderr)
 
+    def test_group_retains_acknowledged_runs_without_repeated_wakeup(self):
+        done = self.run_record("completed", started_at="2026-01-01T00:00:00Z",
+                               finished_at="2026-01-01T00:01:30Z")
+        active = self.run_record(pid=os.getpid())
+        self.run_record("completed")  # Unrelated registry entry must be excluded.
+        p = self.cli("wait-any", done, active, "--acknowledged", done, "--timeout", "0.01")
+        self.assertEqual(p.returncode, 124, p.stderr)
+        data = json.loads(p.stdout)
+        self.assertEqual(data["ready"], [])
+        self.assertEqual([r["run_id"] for r in data["runs"]], [done, active])
+        self.assertEqual(data["runs"][0]["elapsed_seconds"], 90)
+        self.assertGreaterEqual(data["runs"][1]["elapsed_seconds"], 0)
+        self.assertEqual(data["runs"][1]["model"], "test")
+        self.reg.update_meta(active, status="failed", exit_code=7,
+                             finished_at="2026-09-13T12:00:00Z")
+        p = self.cli("wait-any", done, active, "--acknowledged", done, "--timeout", "900")
+        self.assertEqual(p.returncode, 0, p.stderr)
+        data = json.loads(p.stdout)
+        self.assertEqual(data["ready"], [active])
+        self.assertEqual(len(data["runs"]), 2)
+        self.assertEqual(data["runs"][1]["exit_code"], 7)
+
+    def test_invalid_acknowledgement_fails_explicitly(self):
+        active, done = self.run_record(), self.run_record("completed")
+        for group, acknowledged in (([active], active), ([done], "missing"), ([done], done)):
+            p = self.cli("wait-any", *group, "--acknowledged", acknowledged, "--timeout", "0")
+            self.assertEqual(p.returncode, 5, p.stderr)
+
+    def test_duration_uses_timezone_and_preserves_unknown_terminal_time(self):
+        meta = {"started_at": "2026-01-01T01:00:00+01:00",
+                "finished_at": "2026-01-01T00:00:30Z", "status": "completed"}
+        self.assertEqual(_duration_seconds(meta, include_running=True), 30)
+        for invalid in (None, "bad", 123):
+            self.assertIsNone(_duration_seconds(dict(meta, started_at=invalid), include_running=True))
+        self.assertIsNone(_duration_seconds(dict(meta, finished_at=None), include_running=True))
+
+    def test_backend_does_not_inherit_parent_artifact_destination(self):
+        log = self.root / "backend-env.json"
+        p = self.cli("-a", "codex", "ENV_CHECK", env=dict(self.env,
+                     CONSILIUM_SAVE_OUTPUTS="1", CONSILIUM_ARTIFACT_KEY="parent",
+                     CONSILIUM_FAKE_ARTIFACT_ENV_LOG=str(log)))
+        self.assertEqual(p.returncode, 0, p.stderr)
+        observed = json.loads(log.read_text())
+        self.assertIsNone(observed["CONSILIUM_RUN_DIR"])
+        self.assertIsNone(observed["CONSILIUM_ARTIFACT_KEY"])
+        self.assertEqual(observed["CONSILIUM_OUTPUT_DIR"], self.env["CONSILIUM_OUTPUT_DIR"])
+        self.assertEqual(observed["CONSILIUM_STEER_DIR"], self.env["CONSILIUM_STEER_DIR"])
+        rid = extract_run_id(p.stderr)
+        self.assertEqual(self.reg.load_meta(rid)["artifacts_dir"], self.env["CONSILIUM_RUN_DIR"])
+
     def test_detached_wait_loop_timeout_then_collects_every_result(self):
         pending = []
         try:
@@ -234,15 +285,20 @@ class OrchestrationTests(unittest.TestCase):
                 self.assertEqual(started.returncode, 0, started.stderr)
                 pending.append(started.stdout.strip())
             expected = set(pending)
+            group = list(pending)
             # A short observation deadline must leave both detached runs alive.
             observed = self.cli("wait-any", *pending, "--timeout", "0.01")
             self.assertEqual(observed.returncode, 124, observed.stderr)
             self.assertEqual(json.loads(observed.stdout)["ready"], [])
             collected = set()
             while pending:
-                observed = self.cli("wait-any", *pending, "--timeout", "900")
+                acknowledged = [arg for rid in collected for arg in ("--acknowledged", rid)]
+                observed = self.cli("wait-any", *group, *acknowledged, "--timeout", "900")
                 self.assertEqual(observed.returncode, 0, observed.stderr)
-                ready = json.loads(observed.stdout)["ready"]
+                data = json.loads(observed.stdout)
+                self.assertEqual({r["run_id"] for r in data["runs"]}, expected)
+                self.assertTrue(all(r["elapsed_seconds"] is not None for r in data["runs"]))
+                ready = data["ready"]
                 self.assertTrue(ready)
                 for rid in ready:
                     result = self.cli("wait", rid, "--timeout", "5", "--json")

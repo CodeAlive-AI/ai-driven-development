@@ -322,8 +322,12 @@ For several independent workers, launch each with `--detach` from its exact
 working root, retain their run ids, perform the first-minute checks, then use
 `delegate wait-any RUN_A RUN_B --timeout 900` when no useful parent work remains.
 Choose a shorter deadline when an earlier check is needed. It returns bounded
-JSON progress and `ready` ids; collect each
-ready result with `wait`, review it, and remove its id before waiting again.
+JSON progress and `ready` ids identifying terminal pending workers. Every result
+includes status and elapsed seconds for the whole supplied group. Collect each
+ready result with `wait` and review it. Keep all session group ids on subsequent
+calls and add `--acknowledged RUN_ID` for each collected terminal run so its
+status stays visible without waking the next wait again. Retain this group in
+handoffs; do not infer session membership from the global registry or shared CWD.
 Parallel writers require separate user-authorized workspaces; read-only workers
 may share a root. Do not create workspaces just to enable parallelism.
 

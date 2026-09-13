@@ -243,6 +243,11 @@ class Supervisor:
                         raise RegistryError("cannot persist session handle; no task sent")
 
                 self.adapter.on_session_ready = save_handle
+            # This supervisor already owns explicit artifact paths. Do not let
+            # a backend's nested consilium invocation reuse and overwrite them.
+            # Keep OUTPUT_DIR and registry/config routing for nested launches.
+            os.environ.pop("CONSILIUM_RUN_DIR", None)
+            os.environ.pop("CONSILIUM_ARTIFACT_KEY", None)
             self.adapter.start(self.task)
             child = self.adapter.child_pid()
             if child:

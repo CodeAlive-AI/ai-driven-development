@@ -111,7 +111,7 @@ Usage:
   consilium delegate status RUN_ID [--json]
   consilium delegate cancel RUN_ID
   consilium delegate wait RUN_ID [--timeout SEC] [--json] [--quiet]
-  consilium delegate wait-any RUN_ID [RUN_ID ...] [--timeout SEC]
+  consilium delegate wait-any RUN_ID [RUN_ID ...] [--acknowledged RUN_ID] [--timeout SEC]
   consilium delegate watch RUN_ID [--heartbeat SEC] [--json]
   consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
@@ -128,10 +128,13 @@ exiting. Collect the answer later with `delegate wait RUN_ID`.
 
 wait prints the full final answer. --timeout SEC bounds observation only (exit
 124 while still active); 0 is a snapshot. Without --timeout wait remains unbounded.
-wait-any emits JSON with ready run ids and up to five recent events per run.
+wait-any emits JSON with ready run ids, all supplied statuses and elapsed seconds,
+and up to five recent events per run. Keep the whole session group in the call;
+repeat --acknowledged RUN_ID for collected terminal runs to retain their status
+without waking again. Group membership is supplied explicitly by the caller.
 It exits 0 when any target is terminal (inspect each run's exit_code), or 124 at
-its observation deadline. Collect finals with wait; remove consumed ids before
-waiting again. Neither observer cancels workers.
+its observation deadline. Collect finals with wait; acknowledge consumed ids
+before waiting again. Neither observer cancels workers.
 
 --persist-session opts into durable Codex context. --continue-run RUN_ID sends
 only a new instruction in that session, as a new linked run. It requires the

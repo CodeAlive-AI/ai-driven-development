@@ -8,6 +8,7 @@ import os
 import signal
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -250,17 +251,22 @@ def _resolve_run(reg: Registry, run_id: str) -> Dict[str, Any]:
     return reg.load_meta(run_id)
 
 
-def _duration_seconds(meta: Dict[str, Any]) -> Optional[float]:
+def _duration_seconds(meta: Dict[str, Any], *, include_running: bool = False) -> Optional[float]:
     started, finished = meta.get("started_at"), meta.get("finished_at")
-    if not started or not finished:
+    if not started:
         return None
-    fmt = "%Y-%m-%dT%H:%M:%SZ"
     try:
-        return max(
-            0.0,
-            time.mktime(time.strptime(finished, fmt)) - time.mktime(time.strptime(started, fmt)),
-        )
-    except (ValueError, TypeError):
+        start = datetime.fromisoformat(started.replace("Z", "+00:00"))
+        if finished:
+            end = datetime.fromisoformat(finished.replace("Z", "+00:00"))
+        elif include_running and meta.get("status") not in TERMINAL_STATUSES:
+            end = datetime.now(timezone.utc)
+        else:
+            return None
+        if start.tzinfo is None or end.tzinfo is None:
+            return None
+        return max(0.0, (end - start).total_seconds())
+    except (ValueError, TypeError, AttributeError):
         return None
 
 
@@ -692,7 +698,10 @@ def _observation(reg: Registry, run_id: str, snap) -> Dict[str, Any]:
     # progress read. The caller can observe that completion on the next wait.
     payload.update(status=snap.status, terminal=snap.terminal,
                    exit_code=derive_exit_code(snap.meta) if snap.terminal else None,
-                   error=snap.meta.get("error"), artifacts_dir=snap.meta.get("artifacts_dir"))
+                   error=snap.meta.get("error"), artifacts_dir=snap.meta.get("artifacts_dir"),
+                   agent_id=snap.meta.get("agent_id"), model=snap.meta.get("model"),
+                   started_at=snap.meta.get("started_at"), finished_at=snap.meta.get("finished_at"),
+                   elapsed_seconds=_duration_seconds(snap.meta, include_running=True))
     return payload
 
 
@@ -700,11 +709,24 @@ def cmd_wait_any(args: argparse.Namespace) -> int:
     reg = Registry(Path(args.registry_root) if args.registry_root else None)
     _install_observer_signals()
     try:
-        snapshots, timed_out = wait_for_any(reg, list(dict.fromkeys(args.run_ids)), timeout=args.timeout)
+        run_ids = list(dict.fromkeys(args.run_ids))
+        acknowledged = set(args.acknowledged)
+        if not acknowledged.issubset(run_ids):
+            raise RegistryError("acknowledged ids must belong to the supplied group")
+        initial = {rid: poll_once(reg, rid) for rid in run_ids}
+        if any(not initial[rid].terminal for rid in acknowledged):
+            raise RegistryError("only terminal runs may be acknowledged")
+        pending = [rid for rid in run_ids if rid not in acknowledged]
+        if not pending:
+            raise RegistryError("at least one unacknowledged target is required")
+        snapshots, timed_out = wait_for_any(reg, pending, timeout=args.timeout)
+        ready = [rid for rid, snap in snapshots.items() if snap.terminal]
+        for rid in acknowledged:
+            snapshots[rid] = poll_once(reg, rid)
         payload = {
             "timed_out": timed_out,
-            "ready": [rid for rid, snap in snapshots.items() if snap.terminal],
-            "runs": [_observation(reg, rid, snap) for rid, snap in snapshots.items()],
+            "ready": ready,
+            "runs": [_observation(reg, rid, snapshots[rid]) for rid in run_ids],
         }
     except _Interrupted:
         sys.stderr.write("Error: wait interrupted; all workers are untouched.\n")
@@ -857,6 +879,8 @@ def main(argv: Optional[list] = None) -> int:
     wa = sub.add_parser("wait-any", description="Wait for any target; always emits bounded JSON progress.")
     wa.add_argument("run_ids", nargs="+")
     wa.add_argument("--timeout", type=_timeout, default=None)
+    wa.add_argument("--acknowledged", action="append", default=[], metavar="RUN_ID",
+                    help="already collected terminal run; retain its status without waking again (repeatable)")
     wa.set_defaults(func=cmd_wait_any)
 
     wt = sub.add_parser(

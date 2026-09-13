@@ -31,6 +31,11 @@ def main() -> int:
             f.write(json.dumps({"bin": "codex-steer", "argv": sys.argv[1:]}) + "\n")
 
     mode = os.environ.get("CONSILIUM_FAKE_CODEX_STEER_MODE", "ok")
+    env_log = os.environ.get("CONSILIUM_FAKE_ARTIFACT_ENV_LOG")
+    if env_log:
+        with open(env_log, "w", encoding="utf-8") as f:
+            json.dump({key: os.environ.get(key) for key in
+                       ("CONSILIUM_RUN_DIR", "CONSILIUM_ARTIFACT_KEY", "CONSILIUM_OUTPUT_DIR", "CONSILIUM_STEER_DIR")}, f)
     slow = float(os.environ.get("CONSILIUM_FAKE_STEER_SLOW", "0.4"))
     thread_id = "thread_" + uuid.uuid4().hex[:8]
     turn_counter = 0

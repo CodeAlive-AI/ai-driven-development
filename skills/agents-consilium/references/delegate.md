@@ -65,8 +65,25 @@ means at least one target is terminal, including failures; inspect each run's
 and group results include at most five recent normalized events per run and a
 `next_cursor` for later `events` reads. This is a recent-activity sample, not a
 lossless delivery queue; retain your existing cursor when unread history matters.
-Collect complete final answers separately with `wait RUN_ID`. Remove consumed
-terminal ids before the next `wait-any` so they do not wake it repeatedly.
+Every `runs` entry includes `agent_id`, `model`, `started_at`, `finished_at`, and
+`elapsed_seconds`: elapsed wall time since launch for active runs, fixed total
+time for terminal runs. Missing or invalid timestamps produce `null`, not a
+fabricated duration. `ready` explicitly names terminal pending targets, including
+failures and cancellation; it is not a claim that they succeeded.
+
+Collect complete final answers separately with `wait RUN_ID`. Keep all ids from
+this caller's session group in subsequent calls, including collected runs:
+
+```bash
+# A has been collected; return on B while still reporting both statuses/times.
+"$CONSILIUM" delegate wait-any "$RUN_A" "$RUN_B" --acknowledged "$RUN_A" --timeout 900
+```
+
+Repeat `--acknowledged` for each collected terminal id. Acknowledged runs remain
+in `runs` but cannot trigger `ready`; active, unknown, or out-of-group ids cannot
+be acknowledged. Stop waiting when all are collected. The caller owns the exact
+group membership; the CLI does not infer it from unrelated runs in the global
+registry or the same working directory.
 
 Launch independent tasks with separate `--detach` commands from their exact
 working roots. Parallel writers need separate user-authorized workspaces; do not
@@ -91,7 +108,8 @@ Other harnesses should use their equivalent process-wait tool.
 When the CLI returns:
 
 - Ready ids: collect each final answer with `wait`, inspect failures as well as
-  successes, review the work, and remove consumed ids from the pending set.
+  successes, review the work, and acknowledge consumed ids on subsequent calls
+  while retaining them in the full group.
 - Exit 124: inspect actual events and relevant artifacts, steer if needed, and
   wait again. This is a supervision opportunity, not worker failure.
 - Observation error or interruption: reconcile the pending runs before deciding

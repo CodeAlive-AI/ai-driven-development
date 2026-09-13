@@ -21,6 +21,11 @@ profile/root mismatches, concurrent continuations, and no replay after failure.
 Run this focused suite with `PYTHONPATH=scripts/lib python3
 scripts/tests/steer/test_orchestration.py` from the skill directory.
 
+Group-wait checks cover retained acknowledged statuses without repeated wakeups,
+elapsed times, unrelated-run exclusion, and rejection of invalid acknowledgements.
+Backend environment checks ensure nested delegation cannot inherit the parent's
+artifact destination while preserving registry and output-root routing.
+
 Opt-in real smoke tests spend tokens:
 
 ```bash
