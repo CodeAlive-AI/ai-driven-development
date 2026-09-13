@@ -136,7 +136,12 @@ the parent chooses when to check based on the task and observed progress;
 roughly every 15 minutes is a general recommendation, not a fixed schedule.
 It uses `delegate events` to inspect the work and sends a concrete
 `steer --mode auto` correction when needed. Healthy progress needs no steer.
-The CLI does not schedule supervision automatically.
+Before launch, the parent sets a substantive checkpoint deadline and finite task
+budget. A missed checkpoint triggers a focused request for evidence or a blocker;
+budget expiry requires stopping/reassigning or an evidence-based bounded extension.
+Heartbeats do not justify indefinite waiting. A replacement writer starts only
+after the old one has stopped and its changes have been inspected.
+The CLI does not schedule supervision or enforce these task budgets automatically.
 
 Use `--detach` when work should continue after the calling session exits:
 

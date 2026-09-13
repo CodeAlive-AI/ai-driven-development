@@ -127,7 +127,7 @@ the task: did it understand the request, preserve the constraints, and start in
 the right direction? Correct mistakes promptly. If it finishes before that check,
 review the result immediately. If startup has not yet produced substantive
 evidence, the check cannot establish understanding: retain that uncertainty and
-inspect again when evidence appears. A heartbeat is not confirmation.
+set a concrete near-term recheck. A heartbeat is not confirmation.
 
 After the initial check, use judgment to decide when to inspect again. Roughly
 every 15 minutes is a general recommendation for ongoing work, not a fixed
@@ -153,6 +153,23 @@ the deviation journal path when one is required. Inspect delivery once using
 task evidence. Do not resend guidance merely because asynchronous delivery has
 not yet taken effect. Use `interrupt` only under the existing rule for abandoning
 the current direction, not as the periodic supervision default.
+
+Before launch, include a first substantive checkpoint deadline and a finite
+assignment time/cost budget in the prompt. Choose them for the task rather than
+using the 15-minute observation recommendation as a universal timeout. Specify
+what evidence the checkpoint should return: for example, a relevant finding and
+file/command evidence, or the precise blocker. On a missed checkpoint, inspect
+events and send one focused request for the finding/blocker and next bounded step;
+record when the parent will decide again. Queued guidance is not a response.
+At budget expiry, use the pre-cancel checks, stop and recover/reassign the task,
+or explicitly justify a bounded extension with substantive evidence. Do not
+renew a budget because the process is alive or emits generic status text. For an
+existing run without a budget, establish a prospective bounded recovery window
+now; do not invent a retroactive deadline or continue open-ended waiting.
+Before replacing a writer, confirm it has stopped and inspect its partial changes.
+Preserve the user's model restrictions and workspace permissions. The parent
+owns the recovery decision; naming a slow provider is not a corrective action.
+Carry the checkpoint deadline, budget, and recovery decision into handoffs.
 
 When progress is appropriate, continue without sending a steer. An empty page
 only means no normalized events were emitted in that interval; neither that nor
@@ -250,7 +267,7 @@ Before cancelling or restarting a live run because it appears stalled:
 
 1. Read a bounded page with `events RUN_ID --max-events 50`.
 2. Save `next_cursor`; on a later observation use `events RUN_ID --cursor NEXT --max-events 50`.
-3. Treat any returned text, thinking, tool, or structural event as work worth preserving. Treat an empty page only as "no normalized event in this interval," never as proof of a hang.
+3. Inspect returned text, thinking, tool, or structural events for useful work to preserve. Their presence does not prove task progress or renew the budget. Treat an empty page only as "no normalized event in this interval," never as proof of a hang.
 4. Cancel only for an explicit backend/supervisor failure, a user request, a direction that must be abandoned, or a deadline/budget established independently of the apparent inactivity.
 
 Never cancel as a diagnostic probe. Cancellation can flush buffered model text

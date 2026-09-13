@@ -109,7 +109,7 @@ regardless of the worker's model. Inspect its initial interpretation, plan, and
 actions to verify that it understood the task and started in the right direction;
 correct misunderstandings or omissions promptly. If it finishes sooner, review
 its result immediately. If substantive evidence is not yet available, record
-that understanding is still unverified and check again when it becomes available;
+that understanding is still unverified and set a concrete near-term recheck;
 a successful launch or heartbeat alone does not confirm understanding.
 
 After this initial check, the parent is free to inspect the worker whenever
@@ -120,6 +120,24 @@ an earlier check. Adapt the frequency to the task's risk and observed progress.
 Record the run id and launch time. Use resumable/background execution or
 `--detach` so blocking calls do not prevent the first-minute check or later
 supervision. This is a caller responsibility, not a CLI timer.
+
+Before launch, choose a task-appropriate deadline for the first substantive
+checkpoint and a finite time/cost budget for the assignment; include them in the
+worker prompt. A checkpoint can be a finding with evidence, a relevant tool
+result, a patch, or a concrete blocker; it need not be a finished implementation.
+A heartbeat, repeated plan, or transport acknowledgement does not renew a budget.
+
+If a checkpoint is missed, inspect the available evidence and send one focused
+steer asking for the current finding or blocker and the next bounded step. Set
+the next decision time explicitly; do not wait indefinitely for evidence to
+appear. At the budget limit, stop the run using the pre-cancel safeguards and
+recover/reassign the remaining work, or explicitly extend the budget based on
+concrete evidence and expected value. Liveness alone never justifies extension.
+Do not launch an overlapping replacement writer until the old writer has stopped
+and its changes have been inspected. Preserve model and workspace restrictions.
+The parent owns throughput: report the missed checkpoint and corrective action,
+not merely that a model was slow. Apply this to built-in workers too, using their
+native observation and steering tools. Carry deadlines and budgets into handoffs.
 
 At each checkpoint:
 
@@ -308,7 +326,8 @@ buffered text can be real while all of those signals look idle.
 Before diagnosing a live run as stalled, call `events RUN_ID --max-events 50`.
 For a later check, pass the returned `next_cursor` as `--cursor`; do not infer
 progress by repeatedly reading an overlapping tail. If events show text,
-thinking, tool, or structural progress, preserve the run and continue waiting.
+thinking, tool, or structural activity, assess its relevance and preserve useful
+work. Activity is not a reason to extend a budget or keep waiting indefinitely.
 An empty page proves only that no normalized event was emitted in that interval.
 
 Cancellation for suspected inactivity requires an independent terminal reason:
