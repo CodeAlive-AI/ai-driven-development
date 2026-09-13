@@ -117,12 +117,31 @@ one-shot, and detached runs alike.
 6. Use `watch` for lifecycle monitoring. It emits attach/status, steer lifecycle, selected turn-boundary/error events, heartbeats, and terminal state. It deliberately does **not** show the current tool, file, command, model text, reasoning, or a semantic percent-complete estimate. A heartbeat proves only that the supervisor still sees a live run.
 7. Use `wait` to block and print the full final answer. `wait` never cancels work; only `cancel` does.
 
+### Context and intent
+
+Give every worker a short context-and-intent introduction before its task and
+scope. For example:
+
+```text
+Context and intent: We are preparing the MCP server for reliable Windows use.
+We are fixing lifecycle defects; another worker owns cursor behavior. Your result
+will let us verify that client disconnects do not leave shutdown hanging.
+Task and scope: Fix SSE shutdown and test disconnect scenarios. Preserve the
+public API; cursor behavior and other subsystems are outside this assignment.
+Use the overall goal to guide decisions within this scope. If a necessary fix
+falls outside it, report the evidence and proposed change to the parent; continue
+independent in-scope work where possible. Context does not authorize extra work.
+```
+
+Adapt this to the actual task and include the exact working root and concrete
+acceptance checks. Keep only facts that affect the worker's decisions.
+
 ### First-minute check and adaptive parent supervision
 
 The parent must inspect every delegate within the first minute after launch,
 including read-only research and detached work, regardless of relative model
 capability. Check the worker's initial interpretation, plan, and actions against
-the task: did it understand the request, preserve the constraints, and start in
+the task: did it understand the purpose, preserve the scope and constraints, and start in
 the right direction? Correct mistakes promptly. If it finishes before that check,
 review the result immediately. If startup has not yet produced substantive
 evidence, the check cannot establish understanding: retain that uncertainty and
@@ -209,7 +228,8 @@ This is a caller instruction; the CLI does not detect the caller's model.
 existing work can be distinguished from the worker's changes. Write a
 self-contained prompt specifying:
 
-- The exact working root, intended behavior, and concrete acceptance criteria.
+- The overall goal, relevant current context, and purpose of this contribution,
+  followed by the exact working root, intended behavior, and acceptance criteria.
 - Relevant files and existing patterns, scope boundaries, non-goals, and behavior
   that must remain compatible. Distinguish navigation hints from actual edit
   restrictions; allow investigation of dependencies without authorizing unrelated edits.
