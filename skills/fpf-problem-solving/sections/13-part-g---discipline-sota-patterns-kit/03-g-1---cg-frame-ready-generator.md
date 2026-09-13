@@ -433,4 +433,3 @@ This chassis is designed to stay compatible with modern (post‑2015) practice w
 **Publishes to / consumes from:** Part‑F publication surfaces (UTS, naming, RSCR tests, Role/Concept artefacts) as cited by their governing definitions.
 
 ### G.1:End
-

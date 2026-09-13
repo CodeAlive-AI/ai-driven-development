@@ -192,4 +192,3 @@ The current-practice implication is practical: exact claim use and subject-patte
 - **Does not define:** a premise method, source authority, evidence relation, work plan, performer kind, common realism checklist, or universal foundation ontology.
 
 ### A.7.CP:End
-

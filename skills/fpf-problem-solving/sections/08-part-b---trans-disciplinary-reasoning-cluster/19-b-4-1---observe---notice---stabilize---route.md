@@ -229,4 +229,3 @@ A typed downstream projection publication or prompt may be shown as one admissib
 #### B.4.1:20.5 - Review test for false single-route certainty
 Ask: if the selected route were denied, would the publication still contain enough information to explain the other live routes and the discriminator that would separate them? If not, the route set is under-published and has collapsed too early into one favored continuation.
 ### B.4.1:End
-

@@ -359,4 +359,3 @@ F.6 use is complete when the reader has one of these results:
 - a corrected route because the current claim concerns classification, assignment, state, capability, Method, evidence, source reliance, result, publication, permission, authority, responsibility, access, gate, or decision rather than performed-Work attribution.
 
 ### F.6:End
-

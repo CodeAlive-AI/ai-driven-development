@@ -240,4 +240,3 @@ Model-card literature and classic pattern-language literature remain historical 
 | `C.29` | Tests whether a mathematical lens is admissible, including which structure is preserved or lost and what stopping bounds follow. Use it only when such a lens actually supports the coordinate or comparison rule. |
 
 ### E.8.ECSPF:End
-

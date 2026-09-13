@@ -73,7 +73,7 @@ If the applicable pattern and the current object, direct relation and participan
 | Remaining unresolved question | Smallest next route |
 | --- | --- |
 | Local head, register, morphology, or already-settled token use | The applicable detailed `E.10` section. |
-| Meaning of `context`, learning-family wording, bare `role`, move or readiness wording, function-like wording, state-family wording, or characteristic wording | `E.10.D1`, `E.10.LRN`, `E.10.ROLE`, `E.10.MOVE`, `A.6.F`, `A.19.SPR`, or `C.16.P` respectively. |
+| Meaning of `context`, learning-family or interest-family wording, bare `role`, move or readiness wording, function-like wording, state-family wording, or characteristic wording | `E.10.D1`, `E.10.LRN`, `E.10.INT`, `E.10.ROLE`, `E.10.MOVE`, `A.6.F`, `A.19.SPR`, or `C.16.P` respectively. |
 | Development or evolution wording still hides the changed or represented subject, continuity or membership, posture, direction or value basis, direct owner, or receiving use | `E.10.DEV`; continue to `E.10.MOVE` only when an independent trajectory, route, path, ordering, posture, or representation ambiguity remains. |
 | Direct predicate or actual participant remains unclear | `A.6.P`; use `A.6.RCD` only after both are clear and no current pattern defines or constrains the predicate. |
 | Fact, reusable relation declaration, claim or report, and representation are still being confused | `E.10.ARCH`, followed by the exact subject pattern. |
@@ -671,7 +671,7 @@ Use these fields only when a receiving review or decision needs an inspectable w
 
 1. `BoundedTextSpan`: the exact sentence, row, section, pattern version, `DRR` slice, or project text deliberately using FPF-governed terms, pattern references, relation names, or conformance claims under repair.
 2. `TriggerSpan`: the word or phrase that carries possible FPF-governed use.
-3. `SelectedInterpretation`: one applicable repair-path classification from this closed value set—ordinary no FPF-governed use, local head repair, register repair, morphology repair, context-word recovery through `E.10.D1`, learning-word recovery through `E.10.LRN`, bare-role meaning recovery through `E.10.ROLE`, relation-like precision restoration, episteme precision restoration, publication precision restoration, source-use relation or source-ref target recovery, durable naming, or not-triggered false positive.
+3. `SelectedInterpretation`: one applicable repair-path classification from this closed value set—ordinary no FPF-governed use, local head repair, register repair, morphology repair, context-word recovery through `E.10.D1`, learning-word recovery through `E.10.LRN`, interest-or-curiosity recovery through `E.10.INT`, bare-role meaning recovery through `E.10.ROLE`, relation-like precision restoration, episteme precision restoration, publication precision restoration, source-use relation or source-ref target recovery, durable naming, or not-triggered false positive.
 4. `FinalWordingOrBlocker`: the accepted local wording, the result returned by the selected repair or pattern, or the blocker that remains.
 5. `StopBackToSubstance`: once the final wording or blocker is written, return to the domain question that made the phrase matter. Further lexical classification is non-use unless another phrase still hides an FPF-governed claim.
 
@@ -1565,4 +1565,3 @@ Re-review your prose when any of these happen:
 - **Use:** the concrete pattern for the recovered object, relation, evidence, authority, work, publication, or admissible-use claim whenever the issue is no longer wording precision.
 
 ### E.10:End
-

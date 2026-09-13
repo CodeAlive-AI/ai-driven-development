@@ -384,4 +384,3 @@ Scope: Universal for the bridge calibration kit; any method‑family or discipli
 **Constrains:** Any downstream consumer that relies on this kit's calibration claims or records must use the corresponding calibrated bridge artefacts/pins surfaced by this kit (governing G.Core crossing invariants apply).
 
 ### G.7:End
-

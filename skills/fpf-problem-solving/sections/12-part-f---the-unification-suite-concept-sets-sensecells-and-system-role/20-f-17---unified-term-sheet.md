@@ -1049,4 +1049,3 @@ Constrains: every public, Core-facing, durable, or cross-local term row that cit
 A row is a signpost, not the place it points to. Recover the value first, use the lightest sufficient name, and create a row only when a reader-facing durable route is needed. Keep card, cell, basis, Bridge, row, edition, publication, form, and carrier separate. The row may help a reader find the governed value; it cannot make that value, relation, use, authority, Work, or publication true.
 
 ### F.17:End
-

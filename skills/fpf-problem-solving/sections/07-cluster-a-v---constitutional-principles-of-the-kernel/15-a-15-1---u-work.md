@@ -592,4 +592,3 @@ Repair the Work assertion or description when a subsequent source changes the re
 Refresh before cross-context model use, aggregation, comparison, measurement, acceptance, release reliance, gate use, evidence use, assurance use, QD or OEE archive use, or P2W carry-through use. If the claim being made after refresh is no longer about performed work, use the direct pattern for that object or relation and retain a Work-occurrence reference only when the receiving claim actually depends on that occurrence.
 
 ### A.15.1:End
-

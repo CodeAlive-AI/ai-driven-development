@@ -205,4 +205,3 @@ This pattern is deliberately thin. B.2 is the pattern for whole reidentification
 - **Contrasts with:** `B.2.2` for system-result MHT and `B.2.4` for the capability and functioning decision bridge to whole reidentification.
 
 ### B.2.3:End
-

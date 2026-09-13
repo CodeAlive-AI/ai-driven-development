@@ -309,4 +309,3 @@ Do not rewrite an independently identified Work occurrence when only the plan ch
 Refresh the selected plan episteme before relying on it for cross-context coordination, budget reservation, release or gate preparation, work-entry readiness, evidence-reference use, performed-work entry, result measurement, or P2W carry-through. If the proposed reuse crosses the two named reference schemes, resolve both `SchemeSenseCell` values and test whether their exact F.9 Bridge obtains. Then apply checklist item 7 to the proposed use and its reliance result, and re-establish each value, criterion, commitment, or verdict mapping under the pattern that defines that claim. If the refreshed use claims readiness, performed work, actual participation, evidence, assurance, gate passage, result, publication use, representation, or appearance-based reliance repair, use that claim's governing pattern and retain only the intended-work claims here.
 
 ### A.15.2:End
-

@@ -209,4 +209,3 @@ Each row changes a source-use or comparison boundary in the Solution and cases. 
 - **Does not define:** a universal source-authority kind, source role, prestige ranking, evidence relation, publication relation, or source-currentness relation.
 
 ### A.7.2:End
-

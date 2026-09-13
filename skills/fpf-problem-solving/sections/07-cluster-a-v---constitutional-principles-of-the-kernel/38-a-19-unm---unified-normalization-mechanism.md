@@ -414,4 +414,3 @@ SoTA is connected as **wiring** (packs/extensions) while UNM’s surface remains
 - CHR suite protocols (normalize stage), when `comparability.mode` requires normalization-based comparability.
 
 ### A.19.UNM:End
-

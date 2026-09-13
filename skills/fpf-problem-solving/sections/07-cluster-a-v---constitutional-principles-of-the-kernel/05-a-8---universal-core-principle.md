@@ -61,7 +61,7 @@ The candidate passes A.8 only when all four conditions hold:
 
 1. **Distinct domain families.** At least three projections come from foundationally different domain families.
 2. **Same abstract contribution.** Each projection shows the same kernel contribution, not merely a similar word.
-3. **Non-trivial diversity.** Each projection adds a non-trivial signal or bridge evidence not subsumed by the other two.
+3. **Non-trivial diversity.** Each projection adds a non-trivial signal or bridge evidence not subsumed by the other projections.
 4. **Recorded losses.** Differences, losses, and bridge risks are visible enough that readers can tell what is shared and what is local.
 
 Use this compact record:
@@ -82,11 +82,11 @@ Three records are the minimum evidence. Use them for a falsification attempt: if
 
 ### A.8:3.1 - Archetypal Grounding - Diversity Evidence
 
-For busy readers: one idea, three worlds. A candidate that cannot keep the same abstract contribution across three different domain families should stay local, dependent, or constrained by a subject-specific predicate located through its subject pattern.
+For busy readers: one idea, three worlds. A candidate that cannot keep the same abstract contribution across three different domain families lacks support from this test for its proposed universal-core claim. Reconsider its useful content as local, dependent, or constrained by a subject-specific predicate only under the conditions supplied by E.24.UK, A.11 and the defining subject rule.
 
 | Candidate under test | Domain-family projections | What must stay the same | What may differ |
 | --- | --- | --- | --- |
-| `U.System` | thermodynamic control volume; biological cell or organism; cyber-physical system | bounded interacting whole that can be treated as acting or being affected under conditions | boundary physics, substrate, observability, and control style |
+| `U.System` | thermodynamic control volume; biological cell or organism; cyber-physical system | acting physical or operational holon satisfying all six constructive components and the applicable kind-specific condition in A.1:4.2–4.3 | boundary physics, substrate, observability, and control style |
 | `U.Episteme` | theorem or proof text; clinical guideline; model card or safety case | claim-bearing non-agentive knowledge object that can be used, cited, revised, or published | carrier, notation, authority source, and assurance regime |
 | `U.Work` | machining run; lab assay; review or approval act | dated performed occurrence: A.13 identifies the actual performer and A.15.1 independently admits the Work from that performer basis plus its Method, history, extent, and obtaining containing-System relation; F.6 adds an assignment check only when the current use must also say under which assignment the Work was performed | physical medium, institutional form, measurement trace, and evidence carrier |
 
@@ -107,7 +107,7 @@ A.8 intentionally biases against kernel growth by name familiarity. This is usef
 | `CC-A8-3` | At least three domain-family projections are recorded. |
 | `CC-A8-4` | Each projection states the same abstract contribution in that domain. |
 | `CC-A8-5` | Differences and losses are explicit; same-word evidence alone is insufficient. |
-| `CC-A8-6` | A failed A.8 test lowers the candidate to local use, dependent value, Concept-Set row, C.3 `U.Kind`, or subject pattern rather than preserving a universal U-kind by name. |
+| `CC-A8-6` | A failed A.8 test does not support the proposed universal-core claim. Reconsider local use, a dependent value, a Concept-Set row, C.3 `U.Kind`, or a subject-pattern expression under E.24.UK, A.11 and the defining subject rule; select an alternative only when its own conditions hold. Rejection or an unresolved proposal remains possible. |
 
 ### A.8:4.1 - Common Anti-Patterns and How to Avoid Them
 
@@ -116,11 +116,11 @@ A.8 intentionally biases against kernel growth by name familiarity. This is usef
 | Same-word admission | A term is admitted because many domains use the same word. | Require three domain-family projection records that show the same abstract contribution. |
 | Prestige admission | A famous source or standard is treated as universal-core evidence by itself. | Record how the candidate is used in multiple domain families and state difference and loss. |
 | Local success as kernel status | A local pattern works well and is therefore promoted to universal primitive. | Try dependent value, Concept-Set row, C.3 `U.Kind`, or direct subject-pattern value first. |
-| False demotion by vocabulary mismatch | A universal candidate is rejected because domains use different names. | Compare abstract contribution, not spelling; use bridges and F.18 naming only after the ontic test. |
+| False demotion by vocabulary mismatch | A universal candidate is rejected because domains use different names. | Compare abstract contribution, not spelling. After the ontic test, use F.18 for naming and F.9 only for a remaining cross-local semantic-correspondence claim. |
 
 ### A.8:4.2 - Consequences
 
-A passed A.8 test strengthens the case for kernel placement but does not bypass E.24.UK admission predicates, A.11 parsimony, or the exact subject assertion. A failed test is still useful: it tells the project where to keep the candidate local, dependent, or constrained by a subject-specific predicate. The cost is evidence work across at least three domain families.
+A passed A.8 test strengthens the case for kernel placement but does not bypass E.24.UK admission predicates, A.11 parsimony, or the exact subject assertion. A failed test does not support the proposed universal-core claim. Reconsider the useful content under E.24.UK, A.11 and the defining subject rule; a local, dependent, or subject-constrained alternative needs its own basis. The failed placement test does not invalidate an independently established admission. The cost is evidence work across at least three domain families.
 
 ### A.8:4.3 - Rationale
 
@@ -133,8 +133,7 @@ The pattern adapts three current practice lines. Ontology engineering distinguis
 ### A.8:5 - Relations
 
 - **Builds on:** `E.24.UK`, `A.11`, `C.3`, `C.3.1`, `F.8`, and `F.18`.
-- **Coordinates with:** Concept-Set and bridge patterns when domain-family projections require cross-context naming or translation.
+- **Coordinates with:** Concept-Set and F.18 for naming domain-family projections after the ontic question is settled. Use F.9 only for a cross-local semantic-correspondence claim in comparison, naming or translation: resolve two exact F.17 `SchemeSenseCell` values with different semantic-context projections and test the F.9 predicate under its profile, applicability and dependency conditions. State any proposed use of an obtaining Bridge in a separate bounded-use claim. Ordinary designation or an already shared meaning follows its direct rule.
 - **Does not replace:** `E.24.UK` for U-kind admission, `A.11` for parsimony, or `C.3` for typed claim quantification.
 
 ### A.8:End
-

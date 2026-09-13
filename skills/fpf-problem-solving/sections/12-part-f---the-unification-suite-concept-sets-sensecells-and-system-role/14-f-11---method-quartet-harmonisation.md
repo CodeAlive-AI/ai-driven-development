@@ -223,4 +223,3 @@ The Method is triage-first incident handling; the MethodDescription is the playb
 > “Ask four questions. What is the **Method**, the way of doing? Which **MethodDescription** has that one Method as its exact `EntityOfConcern`—plainly, describes it? What dated **Work** actually occurred? Which particular control or transformation output matters, if any? These are not four universal boxes. Work is the occurrence, not its record. MethodDescription membership adds no binary relation; Work may enact the Method only when that relation is supported. Name the actual performing System and assignment when agency matters. Use observations for outcome claims, and use F.9 only for a real relation between source-local meanings.”
 
 ### F.11:End
-

@@ -356,4 +356,3 @@ When an identified source shapes the answer—for example a prior decision, stan
 * **Coordinates with:** `E.23` for repeated improvement work on a DRR; C.2.1 for DRR and evaluation-result episteme identity; C.2.P/A.10/G.6 for exact source use and provenance; A.15.1 for performed decision, assessment, and realization Work; A.6.1 when a claim depends on an independently identified application of a declared mechanism operation; F.10/G.11 for status and currentness; E.24.PUB for publication; and C.29 for a mathematical-lens use when such a lens is used. None of these neighboring records or results changes the E.9 selected answer by implication.
 
 ### E.9:End
-

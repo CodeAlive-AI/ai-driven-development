@@ -250,4 +250,3 @@ Constraint truth, knowledge about that truth, and a policy response are differen
 - `C.2.1` supplies result-episteme identity.
 
 ### A.20:End
-

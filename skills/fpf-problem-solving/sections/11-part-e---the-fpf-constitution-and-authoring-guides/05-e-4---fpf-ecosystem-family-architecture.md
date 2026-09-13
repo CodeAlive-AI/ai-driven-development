@@ -312,4 +312,3 @@ Use official catalogues, vocabulary standards, current release pages, tool docum
 - **Coordinates with:** `G.2`, `G.11`, `C.33`, `C.34`, and `C.35` for source, currentness, preservation, and admission of generated or discovered results for architecture use.
 
 ### E.4:End
-

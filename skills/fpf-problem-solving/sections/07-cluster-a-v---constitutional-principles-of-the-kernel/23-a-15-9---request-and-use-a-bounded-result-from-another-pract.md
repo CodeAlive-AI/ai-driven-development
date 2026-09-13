@@ -175,4 +175,3 @@ This pattern does not select a professional standard, role framework, maturity m
 - **Keeps outside:** supplier-domain ontology and Methods, organization design, procurement and service arrangements, fixed role catalogues, universal approval workflows, the receiving choice, actual realization, and authority transfer.
 
 ### A.15.9:End
-

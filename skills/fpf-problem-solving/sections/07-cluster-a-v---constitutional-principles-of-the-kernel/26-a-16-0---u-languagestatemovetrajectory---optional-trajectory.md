@@ -266,4 +266,3 @@ A practitioner should ask:
 
 Its job is narrower: publish one intelligible history package where lineage, branch, loss, retreat, retirement, next-use docking, or a separately established responsibility handoff is load-bearing. It does not turn those different relations into one handoff relation.
 ### A.16.0:End
-

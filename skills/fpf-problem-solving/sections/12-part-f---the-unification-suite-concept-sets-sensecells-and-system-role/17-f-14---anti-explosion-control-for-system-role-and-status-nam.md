@@ -318,4 +318,3 @@ SysML is intentionally excluded from the positive SoTA basis and from lineage fo
 When names multiply, do not ask for a better name first. Recover the exact values and the proposed use. Try no durable name, an existing designation, an alias, or a local expression. Keep relations among system-role kinds, status windows, capability, Method, Work, evidence, source, policy, and publication under their direct patterns. Create a cell, NameCard, row, identifier, or publication only when that exact object buys a named use; none requires the next and none makes the governed value real.
 
 ### F.14:End
-

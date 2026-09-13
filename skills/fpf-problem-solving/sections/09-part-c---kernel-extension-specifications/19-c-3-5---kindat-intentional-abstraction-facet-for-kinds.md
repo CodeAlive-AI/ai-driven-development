@@ -156,4 +156,3 @@ These are planning cues, not default F values, R values, classification results,
 | **AT-05** | Catalog use references the separate signature, order, kind-use adaptation, bridge, and extension objects without collapsing them. |
 
 ### C.3.5:End
-

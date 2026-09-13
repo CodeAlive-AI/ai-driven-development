@@ -7,4 +7,3 @@ If you use FPF, please cite:
 Levenchuk, Anatoly. First Principles Framework (FPF).
 GitHub repository: https://github.com/ailev/FPF
 ```
-

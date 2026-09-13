@@ -14,4 +14,3 @@ It helps teams:
 - grow domain or local frameworks from FPF Core without silently changing Core meaning;
 - repair confusing wording by first asking what the wording is doing in the project, not by swapping synonyms;
 - leave each pass with one useful next result: a clearer question, a better name, a comparison note, an evidence gap, a safer document, or a reason to inspect a specific pattern.
-

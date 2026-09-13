@@ -249,4 +249,3 @@ Placing this method under `A.19` keeps the ontology clean. `A.19` governs the st
 | `A.10`, `B.3`, `A.20`, `A.21`, `A.15` | Govern evidence, assurance, local CV, gates, and work when an evaluation result is reused for those claims. |
 
 ### A.19.ECS:End
-

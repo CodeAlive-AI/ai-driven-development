@@ -101,4 +101,3 @@ B.3 supplies this claim-and-use structure and its source account. [ISO/IEC/IEEE 
 - **B.4 and Part D:** may consume a qualified assurance result in their actual transition or decision rules; this pattern supplies neither an automatic evolution gate nor risk-acceptance authority.
 
 ### B.3.3:End
-

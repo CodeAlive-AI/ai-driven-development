@@ -26,4 +26,3 @@ Add PatternIDs after the plain explanation so I can inspect the direct
 Solutions and checks. Stop when the current question is answered; do not
 turn the example or card into a whole-project plan.
 ```
-

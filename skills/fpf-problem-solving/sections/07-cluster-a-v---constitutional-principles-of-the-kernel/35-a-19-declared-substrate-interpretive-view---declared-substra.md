@@ -492,4 +492,3 @@ That is why `DeclaredSubstrateAtlasView` appears here as one richer interpretive
 ### A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW:End
 
 ---
-

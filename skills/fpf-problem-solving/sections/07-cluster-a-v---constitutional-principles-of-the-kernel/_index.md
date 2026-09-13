@@ -3,20 +3,20 @@
 
 ## Contents
 
-- [A.7 - Strict Distinction (Clarity Lattice)](01-a-7---strict-distinction.md) (363 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before checking...
+- [A.7 - Strict Distinction (Clarity Lattice)](01-a-7---strict-distinction.md) (366 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before checking...
 - [A.7.1 - Consequence-Guided Ontological Problem Solving](02-a-7-1---consequence-guided-ontological-problem-solving.md) (161 lines) — Type: Architectural (A)
 - [A.7.2 - FPF Ontology-Premise Reconciliation](03-a-7-2---fpf-ontology-premise-reconciliation.md) (212 lines) — Type: Architectural (A)
 - [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use](04-a-7-cp---constructive-premise-compact-and-reasoning-basis-us.md) (195 lines) — Type: Architectural (A)
 - [A.8 - Universal Core Principle](05-a-8---universal-core-principle.md) (140 lines) — Type: Kernel admission discipline pattern
 - [A.9 - Cross‑Scale Consistency (C‑3)](06-a-9---cross-scale-consistency.md) (114 lines) — “The logic of a bolt must still be the logic of the bridge.”
-- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (382 lines) — Normativity: Normative
+- [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (384 lines) — Normativity: Normative
 - [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (336 lines) — Pattern type. Method pattern.
-- [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (155 lines) — Type: Kernel parsimony and admission discipline pattern
+- [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (157 lines) — Type: Kernel parsimony and admission discipline pattern
 - [A.11.OP - Decision-Relevant Least Action and Operational Parsimony](10-a-11-op---decision-relevant-least-action-and-operational-par.md) (264 lines) — Type: Part A pragmatic principle pattern
-- [A.12 - Acting-Side Externalization and Reflexive Split](11-a-12---acting-side-externalization-and-reflexive-split.md) (297 lines) — Type: Part A architectural ontology pattern
-- [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (147 lines) — “Agency is not a kind of thing; it is a way some systems operate.”
-- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (360 lines) — Type: Kernel mereology and part-whole relation discipline pattern
-- [A.15 - System-Role–Method–Work Alignment](14-a-15---system-role-method-work-alignment.md) (399 lines) — Type: Architectural (A)
+- [A.12 - Acting-Side Externalization and Reflexive Split](11-a-12---acting-side-externalization-and-reflexive-split.md) (307 lines) — Type: Part A architectural ontology pattern
+- [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (160 lines) — Use this pattern when a precise claim of agency matters: which System qualifies for a local goal-directed system-role kind, and which assignment actually holds for the action in question? Start with...
+- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (363 lines) — Type: Kernel mereology and part-whole relation discipline pattern
+- [A.15 - System-Role–Method–Work Alignment](14-a-15---system-role-method-work-alignment.md) (398 lines) — Type: Architectural (A)
 - [A.15.1 - U.Work](15-a-15-1---u-work.md) (595 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan](16-a-15-2---u-workplan.md) (312 lines) — Type: Architectural (A)
 - [A.15.3 - SlotFillingsPlanItem](17-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
@@ -31,8 +31,8 @@
 - [A.16.0 - U.LanguageStateMoveTrajectory - Optional trajectory-account normal form over the language-state U.CharacteristicSpace](26-a-16-0---u-languagestatemovetrajectory---optional-trajectory.md) (269 lines) — Type: Architectural (A)
 - [A.16.1 - U.PreArticulationCuePack](27-a-16-1---u-prearticulationcuepack.md) (295 lines) — Type: Definitional (D)
 - [A.16.2 - Reopen / SketchBackoff / Respecify](28-a-16-2---reopen-sketchbackoff-respecify.md) (225 lines) — Type: Architectural (A)
-- [A.17 - Canonical “Characteristic” (A.CHR‑NORM)](29-a-17---canonical-characteristic.md) (136 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...
-- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](30-a-18---minimal-cslc-in-kernel.md) (152 lines) — Aliases (for narrative use only): _“Axis”_ (≈ Characteristic), _“Point”_ (≈ Coordinate). _(These colloquial aliases may be used in Plain language explanations, but never in formal identifiers or...
+- [A.17 - Canonical “Characteristic” (A.CHR‑NORM)](29-a-17---canonical-characteristic.md) (138 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...
+- [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](30-a-18---minimal-cslc-in-kernel.md) (160 lines) — Aliases (for narrative use only): _“Axis”_ (≈ Characteristic), _“Point”_ (≈ Coordinate). _(These colloquial aliases may be used in Plain language explanations, but never in formal identifiers or...
 - [A.19 - CharacteristicSpace & Dynamics Hook (A.CHR‑SPACE)](31-a-19---characteristicspace-dynamics-hook.md) (406 lines) — Type: Kernel characteristic-space and dynamics-typing pattern
 - [A.19.ECS - Evaluation CharacteristicSpace Construction](32-a-19-ecs---evaluation-characteristicspace-construction.md) (252 lines) — Normativity: Normative
 - [A.19.SPR - State-Family Precision Restoration](33-a-19-spr---state-family-precision-restoration.md) (255 lines) — Type: State-family precision-restoration pattern

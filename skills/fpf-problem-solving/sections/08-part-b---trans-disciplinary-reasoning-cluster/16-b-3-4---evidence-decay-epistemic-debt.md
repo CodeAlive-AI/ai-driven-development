@@ -125,4 +125,3 @@ B.3's source account and [ISO/IEC/IEEE 15026-2:2022](https://www.iso.org/standar
 - **Part D and applicable domain rules:** govern protected interests, authority and exceptions; an assurance status change does not decide them.
 
 ### B.3.4:End
-

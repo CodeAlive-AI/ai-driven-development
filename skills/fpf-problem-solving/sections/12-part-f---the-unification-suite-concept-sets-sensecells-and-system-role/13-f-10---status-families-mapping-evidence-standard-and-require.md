@@ -298,4 +298,3 @@ The small set of three status families—`EvidenceStatus`, `StandardStatus`, and
 **Precision-restoration exit.** When wording such as *status role*, *approved role*, *validated means compliant*, *green means ready*, or a family arrow hides target, result, value, scheme, window, source, interpretation rule, or actual use, recover those exact objects here and apply the pattern that defines each neighboring claim. Do not repair the phrase by minting a generic status, evidence, or result relation.
 
 ### F.10:End
-

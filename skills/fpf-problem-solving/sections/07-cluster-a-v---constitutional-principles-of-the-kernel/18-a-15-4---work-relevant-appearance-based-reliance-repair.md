@@ -477,4 +477,3 @@ Repair the local note or persisted claim when its appearance, source currentness
 Refresh before allowing the reliance appearance to guide release, safety, compliance, a delegated system-role-assignment or assignment-state claim, contested source relation, cross-context reuse, work-result reliance, external-impact reliance, or irreversible Work. Stop at the smallest changed prerequisite or source relation: reliance appearance, selected source `U.Episteme` for the current claim, exact `EpistemePublicationRelation` occurrence when availability is material, publication form or carrier when either changed, required relation or result, source-currentness relation, system-role-assignment-state assertion or its evidence or currentness relation, credential-status record, context-state record, revocation record, gate relation, evidence relation, assurance relation, copied-source relation, generated-source relation, or Work relation.
 
 ### A.15.4:End
-

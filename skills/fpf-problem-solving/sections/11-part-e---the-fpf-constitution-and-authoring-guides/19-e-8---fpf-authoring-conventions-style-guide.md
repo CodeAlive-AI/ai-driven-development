@@ -198,7 +198,7 @@ It is the only allowed heading *inside* a pattern whose section token is non‑n
 
 - `PatternRef` uses one PatternID to name a pattern that continues across editions of the framework identified by the surrounding text. In the assembled publication being checked, it resolves to one complete H2 body, one matching `:End`, and a truthful ToC status for that PatternID. A reference intended to select the body published in one edition also names that framework edition. A structural checker may verify and report publication conformance but does not establish the pattern's identity, status, or authority.
 - `PlannedCatalogEntry` names an explicit future catalogue commitment. It has no current pattern semantics, governing force, prerequisite force, or addressable body; a useful prose mention **MUST** say `planned` or `future`, and a current semantic dependency **MUST** cite existing content that supplies the needed definition, constraint, test, method, or other rule, or state the current gap.
-- `SectionRef` names one exact heading path inside one current pattern. Authors and tooling **MUST** read the complete section identifier before examining any substring.
+- `SectionRef` names one exact heading path inside one current pattern or one framework publication unit declared under `E.11.PFP`. Authors and tooling **MUST** read the complete section identifier and its declared scope before examining any substring. For example, `STR.Preface:1` returns to the Strategy Preface; it does not declare a pattern named `STR.Preface`.
 - `LocalDeclaredId` names an exact declaration within one pattern, such as a conformance clause, component, interface row, or predicate. Its scope is local unless an explicit stable anchor or a separate promotion decision establishes wider use.
 - `LocalAlias` names an explicitly declared compatibility alias and resolves to its declared canonical local target.
 - `PatternFamilySelector` selects a navigable pattern family using canonical spelling `<base>.*`. It requires a current base pattern and at least one current matching member and **MUST NOT** stand in for one exact governing target.
@@ -279,7 +279,7 @@ Use the twelve substantive functions in the canonical template as authoring ques
 
 The `Solution` explains the actual organization and use of the described Methods: their contributions, relations, and the results that make a next move possible. `Architectural Rationale` explains why that organization and those choices serve the declared use, which serious alternatives were considered, their trade-offs, and the conditions under which another choice becomes preferable. Preserve shared source explanations there when users need them to understand or adapt several patterns together.
 
-The pattern heading, header block, section grammar, and footer apply to each individually declared pattern. The whole-framework account uses the publication form in `E.11.PFP`; its content questions do not turn every publication unit or intermediate group into another pattern. Keep generality, specialization, Method composition, reuse, bounded-use projection, and publication grouping explicit under `E.8:4.2.2`. There is no prescribed maximum depth or exclusive-parent rule.
+The pattern heading, header block, section grammar, and footer apply to each individually declared pattern. The whole-framework account uses the publication form in `E.11.PFP`; its content questions do not turn every publication unit or intermediate group into another pattern. Its Preface subsection headings identify the framework, publication unit and ordinal path through `E.11.PFP:4.7.1`, so an isolated excerpt remains locatable without being classified as a pattern body. Keep generality, specialization, Method composition, reuse, bounded-use projection, and publication grouping explicit under `E.8:4.2.2`. There is no prescribed maximum depth or exclusive-parent rule.
 
 #### E.8:4.2 - Stylistic Principles (S-0 … S-19)
 
@@ -667,4 +667,3 @@ Mark material moves `adopt`, `adapt`, or `reject`. Explain which defect of the i
 * **Constrains:** All patterns. `E.9` defines the DRR decision kernel and decision-inspection content blocks.
 
 ### E.8:End
-

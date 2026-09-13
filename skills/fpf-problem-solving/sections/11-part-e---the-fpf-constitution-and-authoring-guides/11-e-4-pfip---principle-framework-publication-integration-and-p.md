@@ -247,4 +247,3 @@ Reopen this source use when current publication-preservation or structured-trans
 - **Later reliance:** Use `C.2.1` to identify the preservation conclusion as an episteme, `A.10` when another claim relies on it, and `G.11` when currentness needs qualification. Those later claims are not part of the comparison itself.
 
 ### E.4.PFIP:End
-

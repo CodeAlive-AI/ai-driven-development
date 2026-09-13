@@ -440,4 +440,3 @@ Although FPF is conceptual (not a data governance framework), `G.Core` aligns Pa
   * Part‑G authoring: no shadow specs, no silent scalarization, tri‑state guards, penalties routing, typed RSCR causes, defaults with one governing definition, and ID‑continuity refactors.
 
 ### G.Core:End
-

@@ -158,4 +158,3 @@ The pattern deliberately avoids a fixed ladder. It asks for declared levels and 
 - Coordinates with `A.15`, `A.3.4`, `C.16`, `C.29`, and `C.30.ILC` when method, work, transformation, measurement, mathematical lens, or architecture residual claims are current.
 
 ### D.2:End
-

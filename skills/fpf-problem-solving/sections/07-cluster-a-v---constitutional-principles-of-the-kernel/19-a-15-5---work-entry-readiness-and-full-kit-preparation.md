@@ -215,4 +215,3 @@ Correct a factual citation or publication-status label in its row without reopen
 - **Does not replace:** target `U.WorkPlan`, its declaration-local planned-filling content, `U.Work`, `GateDecisionResult`, the A.15.4 reliance question and note, resource aggregation, or transformation-flow structure.
 
 ### A.15.5:End
-

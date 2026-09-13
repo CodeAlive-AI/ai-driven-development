@@ -157,4 +157,3 @@ Type theory, ontology engineering, and versioned schema practice distinguish int
 - **Other governing patterns:** Use C.2.1 for subkind-assertion epistemes, whether affirmative, negative, or unresolved; candidate features, classification assertions, kind declarations, context bridges, and public naming decisions retain their own governing patterns.
 
 ### C.3.1:End
-

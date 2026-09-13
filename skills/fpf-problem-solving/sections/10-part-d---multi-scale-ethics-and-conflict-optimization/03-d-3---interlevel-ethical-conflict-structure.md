@@ -222,4 +222,3 @@ Side rows make the conflict inspectable because they preserve which claim affect
 - Coordinates with `C.30.ILC`, `A.10`, `B.3`, `C.28`, and `C.29` when architecture residual, evidence, assurance, causal, or mathematical-lens claims are current.
 
 ### D.3:End
-

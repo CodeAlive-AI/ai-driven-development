@@ -73,4 +73,3 @@ very decay it prevents.
 * **Instantiates pillars:** P‑1, P‑2, P‑5
 
 ### E.5.1:End
-

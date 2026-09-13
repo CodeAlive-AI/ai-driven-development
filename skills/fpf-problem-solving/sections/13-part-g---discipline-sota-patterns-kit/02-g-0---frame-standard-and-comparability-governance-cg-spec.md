@@ -342,4 +342,3 @@ This pattern aligns with post‑2015 best practice in evaluation and governance 
 **Publishes to:** `UTS` (Name Cards + editioned `CG‑Spec` segments).
 
 ### G.0:End
-

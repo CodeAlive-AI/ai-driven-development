@@ -323,4 +323,3 @@ These comparisons change the source-selection method and its stops; they do not 
 - An author of a subject pattern or DPF may use the source cut directly when an inspectable source basis is needed but no cross-source synthesis is current.
 
 ### F.1:End
-

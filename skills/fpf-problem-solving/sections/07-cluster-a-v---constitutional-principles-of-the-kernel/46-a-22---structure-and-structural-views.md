@@ -483,4 +483,3 @@ Does not replace: `C.30.P` or `C.30.STRAT` wording-use precision restoration, `C
 Use `F.19` for ordinary precise-plain-language repair and its plausible-reader test for optional guards; unresolved structure or architecture wording follows `C.30.P` or `C.30.STRAT`.
 
 ### A.22:End
-

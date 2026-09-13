@@ -191,4 +191,3 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 **Integration requirements with Part B.** Part B distinguishes the C.3.3 kind-correspondence channel from scope and F.9 sense channels, routes justified `CL^k` consequences to R, and retains weakest-link chaining. Templates designate exact relied-on relations and assertions; their fields create none of them.
 
 ### C.3.3:End
-

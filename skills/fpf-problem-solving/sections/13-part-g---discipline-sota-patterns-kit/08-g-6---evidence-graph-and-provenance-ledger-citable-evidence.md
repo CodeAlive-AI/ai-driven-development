@@ -235,7 +235,7 @@ A G.6 `PathSliceId` may cite that dependency chain for replication. The graph do
 
 #### G.6:5.4 - Dashboard status cue
 
-A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10 recovers the source, query work, provenance, currentness, bounded reliance, and rival explanation. G.6 is entered only when a downstream audit or release package needs a stable path through those already established relations. The visible cue, graph path, and ledger row establish neither gate passage nor release.
+A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10 recovers the source and provenance for bounded reliance, with query Work, currentness, and a live rival explanation when those facts affect the claim. G.6 is entered only when a downstream audit or release package needs a stable path through those already established relations. The visible cue, graph path, and ledger row establish neither gate passage nor release.
 
 ### G.6:6 - Bias-Annotation
 
@@ -323,4 +323,3 @@ Source refresh is local: replay the changed row's named record fields, rule or c
 * **Does not govern:** any represented work occurrence, participation, production, local result, result episteme, outcome, source publication, representation correspondence, currentness result, assurance, later use, or stronger conclusion named in `NotCarried`.
 
 ### G.6:End
-

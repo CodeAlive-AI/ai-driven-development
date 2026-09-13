@@ -151,4 +151,3 @@ This keeps FPF usable in engineering, research, organizational, public, and AI-e
 - Coordinates with `C.28` for causal fairness use and with `C.30.ILC` when an architecture residual is current.
 
 ### D.1:End
-

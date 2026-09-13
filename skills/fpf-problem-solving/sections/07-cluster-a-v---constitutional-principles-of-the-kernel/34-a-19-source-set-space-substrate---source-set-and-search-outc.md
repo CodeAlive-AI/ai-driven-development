@@ -534,4 +534,3 @@ That is why this pattern stops before interpretive views and before publication 
 ### A.19.SOURCE-SET-SPACE-SUBSTRATE:End
 
 ---
-

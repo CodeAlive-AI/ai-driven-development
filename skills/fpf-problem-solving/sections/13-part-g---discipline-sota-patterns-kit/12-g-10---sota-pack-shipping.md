@@ -399,4 +399,3 @@ This pattern inherits order/illumination, evidence, and bridge/penalty legality 
 ### G.10:End
 
 ---
-

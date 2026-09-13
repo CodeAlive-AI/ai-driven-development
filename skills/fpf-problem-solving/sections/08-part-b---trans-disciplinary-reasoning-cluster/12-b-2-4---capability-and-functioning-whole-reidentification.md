@@ -195,4 +195,3 @@ B.2.4 keeps this mixed situation disciplined. It does not rename the capability,
 - **Contrasts with:** `B.2.2` for system-result MHT and `B.2.3` for episteme-result MHT.
 
 ### B.2.4:End
-

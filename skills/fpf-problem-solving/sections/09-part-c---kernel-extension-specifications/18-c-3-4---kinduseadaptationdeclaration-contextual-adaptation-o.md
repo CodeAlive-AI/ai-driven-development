@@ -208,4 +208,3 @@ Reviewer questions:
 | **KUA-10** | Non-applicability forms no judgment; unavailable admissible dependencies yield `unknown`; correspondence failure blocks use without rewriting the receiving result. |
 
 ### C.3.4:End
-

@@ -248,4 +248,3 @@ Promise content: MTTR ≤ 60 minutes for each in-scope incident. Delivery Work: 
 > “Name the exact promise, the delivery Work it covers, the promised characteristic, the observations and measured values, and the window and population. First ask whether the measurement is direct; if another indicator stands in, name its exact relation or stop. Then name the System's evaluation Work, enacted Method, operation inputs and result, and the declared result scale. Map that result to RequirementStatus or EvidenceStatus only through the exact rule, and create a verdict episteme only when another use needs it. Plainly: met, not met, or cannot judge. Judge what happened—not the plan, the command, the word *proxy*, or the table.”
 
 ### F.12:End
-

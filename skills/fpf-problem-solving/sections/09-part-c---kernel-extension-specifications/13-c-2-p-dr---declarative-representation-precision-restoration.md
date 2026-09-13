@@ -341,4 +341,3 @@ This pattern uses external sources only for the representation-overread repair q
 | Robert Kowalski 1979; E. F. Codd 1970; Selinger et al. 1979; van der Aalst, Pesic, and Schonenberg 2009; Van Roy and Haridi 2004; Deutsch 2013; Deutsch and Marletto 2015. | Historical lineage or contrast only. | These sources explain why the overread is recognizable; they do not carry current SoTA weight for this pattern by age, fame, or popularity. |
 
 ### C.2.P.DR:End
-

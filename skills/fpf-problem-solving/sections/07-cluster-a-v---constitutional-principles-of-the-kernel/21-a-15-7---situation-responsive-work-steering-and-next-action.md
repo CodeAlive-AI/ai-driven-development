@@ -198,4 +198,3 @@ The pattern begins before late-stage option comparison and ends before tool-call
 - **Keeps separate:** chooser, intended performer, authority, capability, MethodDescription, plan, recommendation, performed action, result, and later Method or description change.
 
 ### A.15.7:End
-

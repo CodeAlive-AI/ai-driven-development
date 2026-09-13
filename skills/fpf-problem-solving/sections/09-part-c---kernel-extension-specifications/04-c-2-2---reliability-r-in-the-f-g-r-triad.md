@@ -317,4 +317,3 @@ The current methodological comparison is [Gutierrez, Glymour and Davey Smith, *E
 **Clarifies:** the KD-CAL meaning of reliability implicit in C.2:4.1 and the relation-specific reuse claims referenced across B.3 and C.3; it does not create a universal transport relation.
 
 ### C.2.2:End
-

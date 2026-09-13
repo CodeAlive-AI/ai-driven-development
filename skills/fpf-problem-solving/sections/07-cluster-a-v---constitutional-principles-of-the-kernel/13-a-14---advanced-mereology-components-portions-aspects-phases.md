@@ -18,7 +18,7 @@ Before choosing a relation, identify the candidate part and whole, or the entity
 
 Four recurring questions then matter:
 
-1. **Quantities vs. parts.** Engineers routinely need “some of the fuel”, “the first 10 pages”, or “a 30% subset of data”. This is not a component; it is a **portion** of a stuff-like whole, governed by measures and conservation.
+1. **Quantities vs. parts.** Engineers routinely need “some of the fuel”, “the first 10 pages”, or “a 30% subset of data”. These claims concern measured stuff or extent: use **PortionOf** when its measure and boundary conditions hold, and account for conservation. State any separately obtaining structural relation independently.
 
 2. **Selected concern vs. structural aspect.** Engineers also say “the thermal aspect”, “the safety view”, or “the inspection slice”. A Characteristic, viewpoint, representation, selected partition, or time window does not become a world-side part by that wording. `AspectOf` is used only for a bearer-dependent structural part distinguished under a named facet rule.
 
@@ -30,7 +30,7 @@ Four recurring questions then matter:
 
 If we only have “generic partOf” plus Component/Constituent, five classes of errors appear:
 
-1. **Conservation errors.** Treating “20 L of fuel from Tank A” as a component leads to nonsense: adding and removing such “components” does not respect quantities; Γ_sys proofs violate Σ-balance.
+1. **Conservation errors.** Counting “20 L of fuel from Tank A” as a component supplies no measure, additivity or conservation account for additions and removals. Γ_sys proofs still require Σ-balance.
 
 2. **Aspect creation by wording.** A selected Characteristic, view, projection, partition rule, dashboard slice, or concern label is turned into a world-side part without identifying the aspect, bearer, facet rule, or identity condition.
 
@@ -82,11 +82,14 @@ The classical pair **ComponentOf** (structural, discrete) and **ConstituentOf** 
 * **POR‑5 (Boundary compatibility).** For physical wholes, the whole’s boundary encloses the union of its portions; cross‑boundary “leaks” are interactions, not portions.
 
 **Didactic tests.**
-✔ “5 kg from a 20 kg billet” — PortionOf.
-✔ Two disjoint 5 kg cuts from the same 20 kg billet have a 10 kg join under the same mass unit and boundary rule; that join is still a ProperPortionOf the billet.
-✔ “Pages 1–10 of the report” — PortionOf (μ = page or token count).
-✘ “The pump module of the plant” — **ComponentOf**, not PortionOf.
-✘ “The Methods section of the paper” — **ConstituentOf**, not PortionOf.
+
+- ✔ “5 kg from a 20 kg billet” — PortionOf.
+- ✔ Two disjoint 5 kg cuts from the same 20 kg billet have a 10 kg join under the same mass unit and boundary rule; that join is still a ProperPortionOf the billet.
+- ✔ “Pages 1–10 of the report” — PortionOf (μ = page or token count).
+- ✘ “The pump module of the plant” as an integrated structural part — use **ComponentOf** for that claim, not PortionOf.
+- ✘ “The Methods section of the paper” as a conceptual part of its argument — use **ConstituentOf** for that claim, not PortionOf.
+
+Either object may also support a separate PortionOf claim when it satisfies the same-stuff/extent, measure and boundary conditions above.
 
 #### A.14:5.2 - PhaseOf — temporal part of the same carrier
 
@@ -106,11 +109,12 @@ The classical pair **ComponentOf** (structural, discrete) and **ConstituentOf** 
 * **PHA‑6 (Escalation to MHT).** If identity criteria break (e.g., metamorphosis with new objectives), **declare a Meta‑Holon Transition (B.2)** rather than a PhaseOf.
 
 **Didactic tests.**
-✔ “PumpUnit\#3 **before** calibration” — PhaseOf(Pump\#3\_pre, Pump\#3).
-✔ If `PhaseOf(Pump#3@week-32, Pump#3@2026)` and `PhaseOf(Pump#3@2026, Pump#3)`, transitivity also gives `PhaseOf(Pump#3@week-32, Pump#3)`. A high-vibration diagnostic window may overlap a calibration window for the same pump; neither is thereby a cell of one selected partition.
-✔ “Specification episteme E during τ₂”, with the C.2.1 identity triple unchanged and a proper interval current — PhaseOf(E@τ₂, E). ✘ “Spec v2” — if a C.2.1 discriminator changed, identify another episteme and test `EpistemeEditionRelation(E_v1,E_v2)` separately; the label proves neither identity nor continuity.
-✘ “Shift 1 of the same batch run” — use A.15.1 `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, or another exact Work-part or occurrence relation whose predicate obtains.
-✘ “Prototype vs. production unit” — likely **different carriers**; use ComponentOf/ConstituentOf or MHT per criteria.
+
+- ✔ “PumpUnit\#3 **before** calibration” — PhaseOf(Pump\#3\_pre, Pump\#3).
+- ✔ If `PhaseOf(Pump#3@week-32, Pump#3@2026)` and `PhaseOf(Pump#3@2026, Pump#3)`, transitivity also gives `PhaseOf(Pump#3@week-32, Pump#3)`. A high-vibration diagnostic window may overlap a calibration window for the same pump; neither is thereby a cell of one selected partition.
+- ✔ “Specification episteme E during τ₂”, with the C.2.1 identity triple unchanged and a proper interval current — PhaseOf(E@τ₂, E). ✘ “Spec v2” — if a C.2.1 discriminator changed, identify another episteme and test `EpistemeEditionRelation(E_v1,E_v2)` separately; the label proves neither identity nor continuity.
+- ✘ “Shift 1 of the same batch run” — use A.15.1 `TemporalPartOf_work`, `EpisodeOf_work`, `OperationalPartOf_work`, or another exact Work-part or occurrence relation whose predicate obtains.
+- ✘ “Prototype vs. production unit” — likely **different carriers**; use ComponentOf/ConstituentOf or MHT per criteria.
 
 #### A.14:5.3 - AspectOf — bearer-dependent structural part under one named facet rule
 
@@ -241,11 +245,11 @@ It also corrects analysis and representation bias. A Characteristic, viewpoint, 
 
 #### A.14:9.8 - Relation-use decision procedure
 
-**Step 0 — Recover the claim.** If the sentence concerns system-role-kind classification or assignment, Method, Work, evidence, a Characteristic, viewpoint, view, projection, partition, or temporal claim without parthood, use that direct pattern. A.14 is not selected merely because ordinary speech says *part* or *aspect*.
+**Step 0 — Recover the claim.** If the sentence concerns system-role-kind classification or assignment, Method, Work, evidence, a Characteristic, viewpoint, view, projection, partition, or temporal claim without parthood, use that direct pattern. A.14 is not selected merely because ordinary speech says *part* or *aspect*. State different obtaining relations as separate claims.
 
-**Step 1 — Is it measured stuff or extent?** If yes, use **PortionOf**. Declare μ, unit, boundary, and additivity conditions.
+**Step 1 — Does the claim concern measured stuff or extent?** If yes, use **PortionOf**. Declare μ, unit, boundary, and additivity conditions.
 
-**Step 2 — Is it a discrete integrated or conceptual part?** If yes, use **ComponentOf** or **ConstituentOf**. Do not use PortionOf merely because the part can also be measured.
+**Step 2 — Does the claim concern a discrete integrated or conceptual part?** If yes, use **ComponentOf** or **ConstituentOf**. Do not use PortionOf merely because the part can also be measured.
 
 **Step 3 — Is it the same carrier during a proper sub-interval?** If yes, use **PhaseOf** after the carrier-identity and interval tests. Another episteme or Work occurrence uses its own identity and relation patterns.
 
@@ -257,8 +261,8 @@ It also corrects analysis and representation bias. A Characteristic, viewpoint, 
 
 | Smell | Likely error | Fix |
 | --- | --- | --- |
-| “20% of the chassis” | Structure is treated as stuff. | Use ComponentOf for the chassis part; use PortionOf only for material stock under one measure. |
-| “Chapter 2 is 15% of the book” | Content assembly and text measure are collapsed. | Use ConstituentOf for the chapter and a separate PortionOf measurement statement. |
+| “20% of the chassis” | A percentage substitutes for the structural or measured-extent predicate. | Establish ComponentOf for an integrated part; state a separate PortionOf claim for same-stuff extent under its measure and boundary conditions. The percentage alone establishes neither. |
+| “Chapter 2 is 15% of the book” | Content assembly and text measure are collapsed. | State the chapter's conceptual contribution as ConstituentOf and its measured text share as a separate PortionOf claim when their respective conditions hold. |
 | “Safety is an aspect of the design.” | Characteristic, concern, viewpoint, or structural aspect remains unresolved. | Recover the actual claim. Use AspectOf only with an identified aspect, bearer, facet rule, occurrence, and identity condition. |
 | “The dashboard slice is an aspect of the reactor.” | A view or projection is made into a world-side part. | Use the view, publication, or representation pattern; add AspectOf only for an independently established reactor aspect. |
 | “Spec v2 overlaps v1.” | A version label is asked to decide identity and phase. | Compare C.2.1 identities and test edition continuity; use PhaseOf only for one unchanged episteme over a proper interval. |
@@ -271,7 +275,7 @@ It also corrects analysis and representation bias. A Characteristic, viewpoint, 
 | **Γ\_sys (B.1.2)** | Treat PortionOf as additive stocks; ComponentOf respects boundary integration; AspectOf remains facet-local structural parthood and is not a separate aggregation operator; PhaseOf is not aggregated here. | Conserves extensive measures and prevents facets from becoming system decompositions. |
 | **Γ\_epist (B.1.3)** | PortionOf of text or data uses a declared measure; ConstituentOf composes arguments or sections; AspectOf is available only for an independently admitted episteme-dependent structural aspect under a declared facet rule. A viewpoint, view, heading, or projection remains with E.17 or C.29. PhaseOf may restrict one unchanged episteme to a proper interval. | Preserves provenance and prevents description choices from creating episteme parts. |
 | **Γ\_ctx / Γ\_time (B.1.4)** | **PhaseOf** supplies proper temporal restrictions, including nested or overlapping windows. A separately selected partition supplies non-overlap and coverage only for its own cells. Order/dependencies live in **Γ\_ctx** and method graphs (A.15/B.1.5). **PortionOf** is orthogonal (quantities inside steps/runs). | Ensures chronological consistency without turning every temporal restriction into one partition. |
-| **Γ\_method (B.1.5)** | Γ\_method composes Methods rather than A.14 structural parts. A recipe-labelled claim-bearing episteme is a **MethodDescription** only when its `EntityOfConcern` is one admitted `U.Method` and at least one substantive way-of-doing claim obtains under A.3.2; any graph form is a representation handled by C.29, not evidence that the Method belongs to a collection. When a recipe refers to stuff-like inputs, those are **PortionOf** statements on resources. | Separates recipe composition from structure. |
+| **Γ\_method (B.1.5)** | Γ\_method composes Methods rather than A.14 structural parts. A recipe-labelled claim-bearing episteme is a **MethodDescription** only when its `EntityOfConcern` is one admitted `U.Method` and at least one substantive way-of-doing claim obtains under A.3.2; any graph form is a representation handled by C.29. When a recipe refers to stuff-like inputs, those are **PortionOf** statements on resources. | Separates recipe composition from structure. |
 | **Γ\_work (B.1.6)**          | Only **Work** carries resource deltas; when logging “consumed 5 kg from Tank A”, model it as **PortionOf** relation to the stock prior to consumption. | Makes Σ‑balance explicit; aligns with CC‑POR‑3/4.                                             |
 
 ### A.14:10 - Common Anti-Patterns and How to Avoid Them
@@ -286,7 +290,7 @@ It also corrects analysis and representation bias. A Characteristic, viewpoint, 
 
 ### A.14:11 - Pedagogy aids (non-normative)
 
-**Two-minute checklist for practitioners**
+**Practitioner checklist**
 
 1. What subject and relation does the sentence claim?
 2. Does every PortionOf have a declared extensive measure, unit, boundary, and additivity condition?
@@ -306,7 +310,7 @@ It also corrects analysis and representation bias. A Characteristic, viewpoint, 
 
 **Trade-offs and mitigations**
 
-- **More distinctions.** Authors must name a measure for PortionOf, a facet and identity rule for AspectOf, or a proper interval and carrier identity for PhaseOf. The decision table and two-minute checklist keep the first move short.
+- **More distinctions.** Authors must name a measure for PortionOf, a facet and identity rule for AspectOf, or a proper interval and carrier identity for PhaseOf. The decision table and practitioner checklist organize that first relation choice.
 - **Aspect judgement.** Distinguishing a structural aspect from a Characteristic, view, projection, or temporal claim requires judgement; neighboring patterns provide the stop and route.
 - **Optional assurance effort.** `sum`, `slice`, and `set` traces are added only when B.3.5 or another named current requirement elects them.
 - **Escalation discipline.** When bearer or carrier identity fails, use the direct reidentification pattern rather than preserving an AspectOf or PhaseOf occurrence by label.
@@ -328,16 +332,16 @@ This edition's collection-belonging rule follows the current constructional line
 
 #### Aspect branch application
 
-For AspectOf, the BORO and CCO rows above supply the constructor-sensitive question: which bearer, facet rule, dependent aspect, and identity conditions make this structural part? Fine's composition-first pressure blocks a bare *aspect* label from deciding parthood. A.14 adapts that line in `A.14:5.3`, the decision procedure, and `CC-ASP-1` through `CC-ASP-4`; `C.13 slice` remains an optional report, not the constructor of the aspect. The serious alternatives are routed rather than renamed: measured Characteristic (`C.16`/`A.19`), viewpoint or view (`E.17`), representation or projection (`C.29` or its direct pattern), selected partition, and temporal restriction (`PhaseOf`/`C.27.TA`). This route is no worse for correctness and cheaper for a cold reader than a universal *aspect* kind; its cost is that the author must identify the actual relation before reusing the word.
+For AspectOf, the BORO and CCO rows above supply the constructor-sensitive question: which bearer, facet rule, dependent aspect, and identity conditions make this structural part? Fine's composition-first pressure blocks a bare *aspect* label from deciding parthood. A.14 adapts that line in `A.14:5.3`, the decision procedure, and `CC-ASP-1` through `CC-ASP-4`; `C.13 slice` remains an optional report, not the constructor of the aspect. The serious alternatives are routed rather than renamed: measured Characteristic (`C.16`/`A.19`), viewpoint or view (`E.17`), representation or projection (`C.29` or its direct pattern), selected partition, and temporal restriction (`PhaseOf`/`C.27.TA`). The author must identify the actual relation before reusing the word *aspect*.
 
 The resulting collection alternatives are deliberately distinct:
 
 - **Selected:** an ordinary subject-specific belongs-to sentence plus the collection's own rule.
 - **Rejected:** one generic `MemberOf`, because it collapses formal inclusion, classification, participation, collection belonging, and constructive parthood.
-- **Rejected for present public use:** one qualified generic collection-belonging predicate, because its qualifiers must recreate every subject rule and make the first move harder.
+- **Rejected for present public use:** one qualified generic collection-belonging predicate, because its qualifiers must recreate every subject rule.
 - **Retained as a separate possible claim:** constructive parthood, but only when its direct relation obtains and all six `A.1` matters pass.
 
-At comparable correctness and temporal adequacy, the selected answer is no worse than the qualified or separately named alternatives and is cheaper for a cold reader and maintainer. A generic predicate looks cheaper only because it omits decisive conditions. The real cost is that A.14 supplies no immediate cross-domain query key for all belongs-to relations; use `F.18` to name a narrower relation when repeated query, comparison, or declaration use justifies that extra vocabulary.
+A.14 supplies no immediate cross-domain query key for all belongs-to relations; use `F.18` to name a narrower relation when repeated query, comparison, or declaration use justifies that extra vocabulary.
 
 The rest of the catalogue retains its own governing source lines:
 
@@ -346,9 +350,8 @@ The rest of the catalogue retains its own governing source lines:
 - **Engineering product models**, including the ISO 15926 family, pressure authors to keep functional classification, physical product breakdown, and stocks or consumables distinct; A.14 routes those claims to their direct relations instead of one part tree.
 - **Knowledge-episteme edition histories** in contemporary MBSE and open-science practice motivate explicit endpoint identities and provenance-preserving composition. FPF uses the C.2.1 identity triple and independently obtaining `EpistemeEditionRelation` for distinct editions; A.14 retains `PhaseOf` only for a proper temporal restriction of one unchanged episteme.
 
-The net effect is a minimal-sufficient catalogue: direct component, constituent, portion, bearer-dependent aspect, phase, and collection-belonging claims stay distinct, while a separately grounded constructive part claim remains possible without another universal relation vocabulary.
+The catalogue keeps direct component, constituent, portion, bearer-dependent aspect, phase, and collection-belonging claims distinct, while a separately grounded constructive part claim remains possible without another universal relation vocabulary.
 
-Treat this source account as current for this edition. Reopen only the affected A.14 rule if a cited constructional source changes a distinction used here, a newer relation architecture provides the same claim correctness and history at lower reader or maintenance cost, or a direct consumer needs a meaning that the current rule cannot express. Recheck `A.14:5.3` and `CC-ASP-1` through `CC-ASP-4` for an AspectOf change; recheck Solution item 5 and `CC-MEM-1` through `CC-MEM-3` for a collection-belonging or separately grounded parthood change. An ordinary change to a bearer, facet rule, aspect occurrence, collection rule, belonging occurrence, or optional trace reopens only that claim and its support, not this source decision.
 
 ### A.14:15 - Relations
 
@@ -357,4 +360,3 @@ Treat this source account as current for this edition. Reopen only the affected 
 - **Used by:** architecture, description, evidence, and U-kind admission patterns when their structural claim depends on a clean parthood relation.
 
 ### A.14:End
-

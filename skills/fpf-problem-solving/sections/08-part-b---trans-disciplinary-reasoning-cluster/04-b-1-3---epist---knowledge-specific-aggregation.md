@@ -275,4 +275,3 @@ For **Γ_epist^compile**, map the retained claims to the certification scheme. W
 > **Γ\_epist** preserves provenance, distinguishes what each source contributes, and combines support only as its meanings and dependencies warrant—returning a useful bounded synthesis when no common score is justified.
 
 ### B.1.3:End
-

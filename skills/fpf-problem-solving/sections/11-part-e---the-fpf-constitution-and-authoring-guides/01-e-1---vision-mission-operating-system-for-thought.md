@@ -58,4 +58,3 @@ Pattern E.1 governs **E.2 Eleven Pillars** and the Guard‑Rail set **E.5**; any
 *“Purpose without a scaffold is wishful thinking; a scaffold without purpose is cargo‑cult—FPF welds the two into disciplined imagination.”*
 
 ### E.1:End
-

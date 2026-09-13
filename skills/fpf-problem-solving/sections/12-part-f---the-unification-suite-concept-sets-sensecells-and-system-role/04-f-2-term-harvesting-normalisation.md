@@ -204,4 +204,3 @@ The notes do not turn an FCA concept into a root kind or a procedure description
 > “Name the exact source and edition, find the passage, and say under which reference scheme you are reading it. Keep the source’s own expression, add a faithful Tech label and a helpful Plain label, and state its local meaning in one sentence. Stop there. The same spelling elsewhere proves nothing. Use F.17 only if you need a stable address, and use F.9 only if a real relation between two local meanings must be tested.”
 
 ### F.2:End
-

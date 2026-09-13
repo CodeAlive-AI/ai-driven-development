@@ -293,4 +293,3 @@ SoTA here is treated as **method-family source publications and `G.2` claim shee
 [4]: https://arxiv.org/abs/1810.00825 "Lee et al., Set Transformer, 2019"
 
 ### A.19.ULSAM:End
-

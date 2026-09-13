@@ -308,4 +308,3 @@ These sources answer different questions. None supplies a universal emergence de
 - **Uses:** `B.2.P` when emergence-family, MHT, MET, MFT, synergy, or metric-mirage wording hides which claim kind is current before B.2 is applied.
 
 ### B.2:End
-

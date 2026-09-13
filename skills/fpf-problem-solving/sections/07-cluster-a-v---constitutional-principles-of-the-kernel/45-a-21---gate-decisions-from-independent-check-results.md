@@ -293,4 +293,3 @@ The join lattice gives a compact, deterministic aggregation after every source r
 - `F.19` keeps the ordinary decision path visible before algebra, publication, and assurance extensions.
 
 ### A.21:End
-

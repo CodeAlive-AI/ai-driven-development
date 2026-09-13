@@ -3,29 +3,29 @@
 > **Status:** Stable
 > **Type:** Pattern
 
-**Use this pattern when.** Use C.16 when a value, sensor indication, score, rating, dashboard reading, or comparison is being treated as a measurement without a recoverable measurand, Characteristic, Scale, method, model, calibration basis, dated work, attributed value, uncertainty, time stance, or comparability basis.
+**Use this pattern when.** Use C.16 to make a reading interpretable or to construct the model needed for a proposed measurement. Start with what is being measured and how the procedure relates it to an indication.
 
 **What goes wrong if missed.** Raw output, indication, actual subject state, measurement result, diagnosis, and criterion verdict collapse into one number; model and calibration assumptions disappear; uncertainty is laundered away; and a dashboard or evidence link is mistaken for work, result, assurance, or decision authority.
 
-**What this buys.** One executable measurement account: exact measurand or subject, Characteristic and Scale, Unit and polarity when current, method, model, calibration, input and output quantities, uncertainty propagation, dated work with actual bindings, one measurement result, one C.2.1 result episteme, and bounded provenance and later use.
+**What this buys.** A measurement model that connects indications to what is being measured, or a stated ambiguity that changes what to do next. For a performed measurement, the resulting account identifies the attributed values, uncertainty, conditions and work needed to interpret them.
 
 ### C.16:1 - Intent (Normative)
 
 **Name.** *Measurement & Metrics Characterization (MM‑CHR).*
 
-**Use this when.** Use C.16 when a reading, score, rating, sensor indication, dashboard value, or claimed comparison must be made interpretable as a measurement. The working question is: what exact subject or measurand was measured, for which Characteristic and Scale, by which method and model, under which calibration and time stance, with what attributed value and uncertainty?
+**Use this when.** A reading needs interpretation, or a proposed measurement needs a model. Ask what quantity or Characteristic is sought, how the procedure produces an indication, and what can be inferred from it under the measurement conditions.
 
-**What changes in practice.** Instead of carrying a number and a source link, the practitioner recovers a complete measurement chain: reusable specification, exact measurand, method, model, calibration basis, input and output quantities, dated measurement work, direct bindings, measurement result, one result episteme, and provenance. A reader can then tell what the reading supports and what still requires a diagnostic, criterion, assurance, causal, acceptance, or decision pattern.
+**What changes in practice.** The practitioner constructs or recovers the relation that makes a reading informative about the subject. This can reveal an influence to include, an ambiguity to preserve, or an arrangement to change. When reporting a performed measurement, connect the attributed values and their uncertainty to the method, model, calibration and work that obtained them. A later diagnosis or decision uses that interpreted result.
 
 **Not this pattern when.** Use A.17 for the Characteristic, A.18 for scale-operation legality, C.16.P while measurement wording is still ambiguous, A.19.CPM for comparison, A.19.SelectorMechanism for selection, C.28 for causal use, A.10/G.6 for provenance, B.3 for assurance, G.4 for an acceptance declaration, G.11 for currentness, and C.11 for a decision result. C.16 supplies none of those results by implication.
 
 **Local designators.** `MeasurementSpecification`, `MeasurementMethod`, `MeasurementModel`, `MeasurementWork`, `MeasurementResult`, and `MeasurementResultEpisteme` name exact objects in one case; they are not new public U-kinds or universal relation types. `MeasurementMethod` is one exact `U.Method`; `MeasurementWork` is one dated `U.Work`; `MeasurementResultEpisteme` is one C.2.1 episteme.
 
-**Compatibility with the retained measurement family.** `U.DHCMethod` remains the durable measurement-definition value that fixes the Characteristic, Scale, unit and polarity and cites the exact method and model. `U.Measure` remains the durable reading claim: when persisted, it is the C.2.1 result episteme that states the C.16 measurement result. `U.Unit` carries quantity-kind and conversion semantics when the Scale requires them. `U.EvidenceStub` is only a compact locator into A.10/G.6 provenance; it is not the measurement result, an evidence carrier, a work record, or a relation that establishes measurement.
+**Compatibility with the retained measurement family.** `U.DHCMethod` remains the durable measurement-definition value that fixes the Characteristic, Scale and applicable unit and cites the method and model. A preference rule belongs to the evaluation that uses the result, when one is being made. `U.Measure` remains the durable reading claim: when persisted, it is the C.2.1 result episteme that states the C.16 measurement result. `U.Unit` carries quantity-kind and conversion semantics when the Scale requires them. `U.EvidenceStub` is only a compact locator into A.10/G.6 provenance; it is not the measurement result, an evidence carrier, a work record, or a relation that establishes measurement.
 
 ### C.16:2 - Scope and result boundary (Normative)
 
-C.16 governs the measurement-specific result algebra:
+C.16 covers construction and use of measurement models. For a performed measurement, it keeps the following parts of the result account recoverable:
 
 - one measurand or otherwise exact measurement subject;
 - one Characteristic and one Scale, with Level or Coordinate and Unit when applicable;
@@ -50,13 +50,15 @@ The failure becomes visible when two readings are compared, when a detector outp
 - **Repeatability vs occurrence identity.** A reusable method and operation declaration do not establish that measurement work occurred or that actual participants were bound.
 - **Result vs later interpretation.** A value attributed to a measurand is not by itself a diagnosis, conformance verdict, causal conclusion, assurance claim, or decision.
 
-### C.16:5 - Solution — recover one complete measurement chain (Normative)
+### C.16:5 - Solution - Construct and interpret a measurement (Normative)
 
-Start with one ordinary direct sentence:
+To develop a measurement model, begin with §§5.1-5.4. A proposed relation can supply a conditional calculation or expose an ambiguity before any measurement is performed. An existing model that answers the question can be used directly.
+
+When interpreting a performed measurement, recover one ordinary direct sentence:
 
 > Dated measurement work `W` applied method `M` to measurand `x`, using model `f`, calibration basis `K`, and actual input bindings `X`, and obtained output quantity value `y` with stated uncertainty `u`; episteme `E` states that measurement result under its declared Characteristic, Scale, unit, time stance, and interpretation basis.
 
-If any noun in that sentence cannot be grounded, return that exact gap rather than filling it with a generic result or evidence relation.
+If a fact needed for that interpretation is unavailable, state which conclusion remains undetermined and what information could resolve it.
 
 #### C.16:5.1 - Name the measurand and measurement subject
 
@@ -66,13 +68,13 @@ If any noun in that sentence cannot be grounded, return that exact gap rather th
 
 **M‑SUB‑3.** Distinguish the measurand from the actual subject state. A measurement result attributes values under a method and model; it does not make the physical, social, architectural, or epistemic state identical to the result episteme.
 
-#### C.16:5.2 - Fix Characteristic, Scale, unit, polarity, and time stance
+#### C.16:5.2 - Fix Characteristic, Scale, unit and time stance
 
 **M‑CSLC‑1.** One `U.DHCMethod` binds exactly one Characteristic to exactly one Scale. A discrete reading names its Level; another reading names its Coordinate or value on that Scale.
 
 **M‑CSLC‑2.** When units apply, name the quantity kind and presentation Unit. Conversions are admissible only when they preserve the quantity kind and the Scale supports the operation. Nominal and ordinal labels do not acquire interval or ratio arithmetic by being encoded as numbers.
 
-**M‑CSLC‑3.** An ordered Scale declares polarity: higher-is-better, lower-is-better, or target-is-best. Polarity guides later interpretation; it is not an acceptance criterion or decision rule.
+**M‑CSLC‑3.** Use the Scale's order to interpret the Characteristic: a higher temperature value means hotter. When a later evaluation asks which value is preferable, state its preference under A.17/A.18. A measurement or magnitude comparison needs no preferred direction.
 
 **M‑CSLC‑4.** State the time stance: instantaneous or as-observed at `T`, aggregated over window `W`, or another exact temporal basis. A later value does not silently replace an earlier result.
 
@@ -80,11 +82,21 @@ If any noun in that sentence cannot be grounded, return that exact gap rather th
 
 **M‑METH‑1.** `MeasurementMethod` is one exact `U.Method`. Its `U.MethodDescription` may state generic participants, parameters, effects, and measurement conditions; it contains no actual-participant slots and does not claim that measurement occurred.
 
-**M‑MODEL‑1.** `MeasurementModel` states how input quantities and influence quantities determine or constrain the output quantity. It names the model edition, assumptions, corrections, and domain of validity. A formula, software function, or signature is only a representation or declaration of that model until its exact governed object is recovered.
+**M‑MODEL‑1.** `MeasurementModel` relates input values and relevant influences to the values attributed to the measurand. In quantity measurement, these are input, influence and output quantities. Identify the model version, assumptions, corrections and domain of validity. Recover what its formula, software function or other expression represents. Use C.16.MR to construct that relation from the indication-producing procedure when it is missing or unsuitable; :5.3.1 connects the construction to interpretation and its next use.
 
 **M‑CAL‑1.** Name the calibration basis required for the use: reference standard or comparison basis, dated calibration work and result when current, calibration coefficients or corrections, applicable interval, and uncertainty contribution. A calibration certificate or ledger row cites these facts; it does not establish them by being stored.
 
 **M‑WORK‑1.** `MeasurementWork` is one exact dated `U.Work`. First recover every actual performer's A.13 core for the measurement action, including the same obtaining assignment; then independently admit the Work under A.15.1 from its performance history, at least one obtaining `enactsMethod` relation, temporal extent, and at least one obtaining locally declared containing-system relation. Add F.6 afterward only when the measurement claim also needs precise assignment-bound attribution. Name the exact measurand through its direct subject relation or an A.6.1 operation-application binding. Name another enacted Method, resource, or concrete participant only when the measurement claim uses its independently obtaining relation or binding. A plan, compatible signature, method description, instrument type, or retained reference establishes none of those actual facts.
+
+##### C.16:5.3.1 - Construct the measurement relation
+
+1. **Start with what is being measured and why.** Specify the subject, Characteristic, conditions and required range of interpretation under §§5.1-5.2. Separate what is already known from values the proposed measurement must resolve.
+2. **Follow how the indication is produced.** Describe the procedure connecting the subject to the indication. Recover the measurement principle, applicable calibration relation, or combination of both that connects the quantities. Include intermediate conversions when they change the answer. Physical laws, assessment models and instrument-specific relations come from the relevant subject knowledge; B.5:4.2 helps recover their construction.
+3. **Include influential conditions.** Consider how the apparatus interacts with the subject, what it samples or averages, and its resolution and operating range. Include an influence when its omission could change the interpretation needed for this use. Explain a correction through the relation that gives its direction and magnitude. Retain an unknown influential quantity as unknown, using available bounds or distributions when justified.
+4. **Determine what the relation resolves.** With actual or proposed indications, derive the compatible sought values and their uncertainty under §5.4. If different sought values can produce the same indication, identify that ambiguity. Work a small case or limiting case to expose an omitted influence, inconsistent units or a failed inversion. C.16.IR constructs the joint cases and distinguishes feasible alternatives from bounds that may include unattainable values.
+5. **Choose the useful return.** Supply the interpreted value, interval or conditional result when it answers the question. Otherwise identify which change could resolve the remaining ambiguity: refine the relation, change the measurement arrangement, obtain an applicable calibration or narrow the conclusion. Choose further observation by the distinction it can resolve and the work it demands, using C.11.DUA when that choice needs deliberation. C.16.RM compares changes to models, arrangements and calculation, then carries the selected repair through the interpretation while retaining the wanted quantity.
+
+When an observed discrepancy matters, compare its plausible sources in the subject account, measurement relation and actual arrangement. Change the contribution that can alter the answer; sometimes removing an unwanted influence from the arrangement is more useful than modeling it in greater detail. A model-development result states the relation and what it would establish. A claim about a performed measurement also identifies the work and obtained result under §§5.3-5.5.
 
 #### C.16:5.4 - Recover input quantities, output quantity, and uncertainty
 
@@ -179,6 +191,24 @@ The carrier, dashboard, ledger, criterion clause, and evidence path may represen
 
 **Architecture coupling.** The measurand is the exact ordered module pair under a declared dependency census window, not either module alone. The Characteristic is Coupling on an ordinal Scale. The method description defines generic dependency classes; dated work binds the actual codebase edition and pair. The result episteme states the Level and basis. A later release decision may rely on it, but the dashboard tile and decision record do not establish the census work.
 
+#### C.16:8.3.1 - A voltmeter changes the voltage it reads
+
+The sought quantity is the open-circuit voltage E of a source. Model the source as an ideal voltage E in series with resistance R_s; the connected voltmeter has input resistance R_m. The meter closes the circuit. Ohm's law gives current I=E/(R_s+R_m), and the indication is V=I R_m. The measurement relation is therefore E=V(1+R_s/R_m).
+
+For E=10 V and R_s=R_m=1 megohm, the indication is 5 V. The known resistance ratio recovers the open-circuit value as 10 V. The difference comes from the measurement interaction.
+
+If both E and R_s are unknown, one indication leaves several pairs compatible with it. For V=5 V, R_m=1 megohm and an available bound 0.8≤R_s≤1.2 megohm, the conditional voltage interval is 9≤E≤11 V. That interval may answer the question. When a narrower answer is needed, a second indication with a different known input resistance supplies another equation, provided the source stays unchanged and the circuit model still applies. Repeating the original arrangement supplies the same relation and leaves this ambiguity.
+
+These calculations use an ideal circuit. For an obtained measurement result, include uncertainty in the indications and resistances and any model inadequacy that affects the use.
+
+#### C.16:8.3.2 - Interpreting an assessment of independent performance
+
+The sought quantity p is the fraction of a population able to perform a specified action independently under stated conditions. An applicable assessment calibration supplies a, the probability of a positive test when the capability is present, and b, the probability when it is absent. Partitioning the population by that capability gives the expected positive fraction q=ap+b(1-p).
+
+With a=0.9 and b=0.1, the relation is q=0.1+0.8p. An observed positive fraction 0.7 gives the estimate p=0.75 under this model. Sampling uncertainty, uncertainty in the calibrated rates and their applicability determine how precisely that estimate can be used. When a=b, the expected positive fraction is independent of p, so this test supplies no such distinction.
+
+Now allow hints during the assessment. The earlier a and b may no longer describe the procedure. With the changed rates unknown, the positive fraction alone no longer determines p. If the independent-performance claim is still needed, return to that performance condition or obtain a calibration applicable to the changed procedure. The model explains which inference is available; it uses the subject's account of the capability and its assessment.
+
 ### C.16:9 - Bias-Annotation
 
 | Bias | Symptom | Correction |
@@ -191,9 +221,11 @@ The carrier, dashboard, ledger, criterion clause, and evidence path may represen
 
 ### C.16:10 - Conformance Checklist (Normative)
 
+For a proposed model, apply the subject, scale, model and applicable calibration checks. Apply work and result checks when asserting a performed measurement, and later-use checks when making that later claim.
+
 1. **Subject:** one exact measurand or measurement subject is named, with correct entity or relation arity.
-2. **CSLC:** Characteristic, Scale, Level or Coordinate, Unit when current, polarity, and time stance are explicit.
-3. **Method/model:** the exact `U.Method`, MethodDescription boundary, measurement model edition, inputs, output quantity, assumptions, and validity domain are recoverable.
+2. **CSLC:** Characteristic, Scale, Level or Coordinate, applicable Unit and time stance are interpretable. Add a preference rule only for a use that judges which values are preferable.
+3. **Method/model:** the method, model version, inputs, output quantity, assumptions and validity domain are recoverable. When the relation had to be constructed, §5.3.1 explains how the procedure produces the indication and what sought values it can distinguish. Keep a proposed model separate from a claim of performed measurement.
 4. **Calibration:** applicable calibration work/result, reference basis, coefficients or corrections, validity interval, and uncertainty contribution are cited when required.
 5. **Work:** every actual performer has the A.13 core; the dated `U.Work` is independently admitted under A.15.1; F.6 is added afterward only when precise assignment-bound attribution is current. The exact measurand relation or A.6.1 binding is present; further enacted Methods, resources, or participant bindings are present only when the measurement claim uses them.
 6. **Result:** one C.16 measurement result attributes value or values to the measurand with uncertainty and relevant information; one C.2.1 episteme states it.
@@ -236,9 +268,20 @@ Recheck the affected source-use decision before relying on it after 2027-07-30 o
 | [QUDT Schema 3.4.0, June 2026 catalogue](https://www.qudt.org/catalog/qudt-catalog.html) — **Bridge-only** for citable quantity-kind, unit, dimension, and datatype identifiers. | A C.16 record may cite a QUDT identifier after the F-pattern Bridge establishes the correspondence; `M-CSLC-2` still governs admissible C.16 use. | A shared URI does not prove same measurand, Scale, model, calibration regime, or direct comparability. | Reopen only the cited Bridge mapping, `M-CSLC-2`, and checklist items 2 and 8 when the mapped QUDT graph or identifier changes. |
 | [W3C/OGC SOSA/SSN Recommendation 19 October 2017](https://www.w3.org/TR/vocab-ssn/) — **Bridge-only** for sensor, observation, procedure, feature-of-interest, and observed-property terms. The [2023 Edition First Public Working Draft of 16 September 2025](https://www.w3.org/TR/vocab-ssn-2023/) is watch-only until it reaches a governing publication status. | A Bridge may align an external observation/procedure record with C.16's measurand, method, work, indication, and result boundaries; it never replaces `M-WORK-1` or `M-RES-1/2`. | An SOSA/SSN observation graph does not by itself establish FPF work identity, actual bindings, measurement result, result episteme, or later use. | Reopen only the affected SOSA/SSN Bridge, `M-WORK-1`, the external-record case that uses it, and checklist items 5–7 when the Recommendation changes or the 2023 Edition advances with a conflicting normative separation. |
 
-Lineage and domain examples not listed here are informative comparators, not decision-governing sources. A source refresh is local: replay the row's named rule, case, and checklist items, then widen only if that replay reveals a contradiction elsewhere.
+**Constructing and revising the model.** GUM-6:2020, §§7, 9-10 and 12, supplies the distinction between the measurement principle, effects of implementation and adequacy for use. Section :5.3.1 turns that distinction into a construction and an ambiguity test. The circuit and assessment cases work this instruction using their stated subject models.
+
+[Dounas-Frazer and Lewandowski (2018), §2](https://arxiv.org/pdf/1805.10334), distinguishes models of the phenomenon and measurement equipment and allows revision of either model or either physical arrangement. C.16 adopts those different returns. Its stopping question is the intended use of the measurement: a sufficient interval can end the work, while a consequential discrepancy can require further investigation. B.5 and C.11.DUA supply the wider inquiry and choice.
+
+Other lineage and domain examples are informative comparators. A source change reopens the contribution that relies on it; extend that comparison when a changed premise also affects another use.
 
 ### C.16:15 - Relations - Placement *(Informative)*
+
+**Measurement-relation construction.** C.16.MR derives a relation from the sought property, measuring arrangement and consequential influences, and obtains a first conditional result. This construction can support a proposed measurement. For a result from an actual measurement, use the conditions above for the performed work and its interpretation.
+
+**Indication interpretation.** C.16.IR begins with an available measurement relation and determines which values or comparisons an indication supports. Use it when influential unknowns, lost distinctions or uncertainty can change the requested answer. It can return a sufficient bound while other quantities remain unknown.
+
+**Measurement repair.** C.16.RM begins when an existing measurement disagrees with an expectation or cannot resolve the distinction needed for use. It chooses which model, arrangement or calculation to change, recovers a result from the available observations when possible, and tests the changed contribution at the scope of the receiving question.
+
 **Architecture measurement boundary.** `C.32.P2S`, `C.32.PAD`, and `C.32.ADA` may cite C.16 readings only after the characteristic, bearer, scale, coordinate, value, unit when relevant, and admissible use are declared. C.16 readings do not become architecture characteristics, decision criteria, eval programs, evidence, gates, or decision authority by themselves.
 
 **Structural-information measurement boundary.** `C.33`, `C.34`, and `C.35` may name captured structure, lost structure, similarity, preservation, entropy, epiplexity estimate, compression, generated-carrier adequacy, or search-output context. When a claim about any of those uses a value, score, coordinate, threshold, dashboard reading, or eval result, state the measurement construction and admissible-use assertions under the exact C.16 and evaluation/criteria predicates, with their subject patterns used as locators.
@@ -267,7 +310,7 @@ Use C.16 first when the live object is a sensor reading, survey response, dashbo
 
 Recover the ordinary measurement chain first:
 
-1. name the exact measurand or subject, Characteristic, Scale, value or Level, Unit, polarity, and time stance;
+1. name the measurand or subject, Characteristic, Scale, value or Level, applicable Unit and time stance; identify preference only when the use evaluates the result;
 2. separate reusable method and model from dated work and actual bindings;
 3. name input quantities, output quantity, calibration basis, uncertainty propagation, and one measurement-result episteme;
 4. distinguish emitted output, indication, actual subject state, measurement result, result episteme, diagnosis, criterion verdict, and decision; and
@@ -293,4 +336,3 @@ Minimum probe note:
 If a mathematical lens depends on a measurement, recover the C.16 measurand, Scale, model, calibration, work, uncertainty, result episteme, and comparability basis first. C.29 may then state the lens-use admissibility claim; it does not construct the measurement, make values comparable, or provide provenance. A.10/G.6 retain provenance and B.3 retains assurance.
 
 ### C.16:End
-

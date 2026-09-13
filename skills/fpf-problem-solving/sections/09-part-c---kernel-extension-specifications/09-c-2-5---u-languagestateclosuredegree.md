@@ -192,4 +192,3 @@ Low `CD` does not imply low articulation, low anchoring, or poor representation.
 A publication may be closed enough for immediate local work use or reliance use while remaining open about broader explanation, long-horizon consequences, or alternative classification. Allow the split when locality is explicit; reject prose that advertises whole-case finality when only one language-state segment is fixed.
 
 ### C.2.5:End
-

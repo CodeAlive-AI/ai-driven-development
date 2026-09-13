@@ -18,4 +18,3 @@ With FPF, the first pass can become a small set of explicit project objects:
 - reader reliance: what engineering, management, and assurance readers may responsibly rely on.
 
 That same shape can be used for a factory modernization, laboratory protocol, construction design change, supply-chain decision, safety case, or research program. The point is not the AI topic; the point is one body of reasoning that can be reviewed, improved, and published without changing meaning on the way.
-

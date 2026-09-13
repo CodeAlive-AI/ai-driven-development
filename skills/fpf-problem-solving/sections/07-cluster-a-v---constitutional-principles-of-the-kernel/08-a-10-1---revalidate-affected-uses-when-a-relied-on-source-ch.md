@@ -333,4 +333,3 @@ The practical SoTA contribution is the combination of claim-sized comparison, bo
 **Constrains:** changed-source affected-use discovery and local closure only. A.10.1 creates no new source, relation, graph fact, subject verdict, assurance, authority, permission, release, Work occurrence, plan, or universal status.
 
 ### A.10.1:End
-

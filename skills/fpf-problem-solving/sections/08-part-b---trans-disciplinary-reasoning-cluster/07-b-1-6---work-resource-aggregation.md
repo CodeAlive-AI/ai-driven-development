@@ -237,4 +237,3 @@ Source refresh is local: replay the row's named rule, case, and checklist rows f
 - Coordinates with `C.16` for resource Characteristics and measurement results; `A.10` and `G.6` for provenance; `G.11` for currentness; `C.29` for representation or mathematical-lens claims; A.15.1 for Work relations; A.14 and B.1.4 for non-Work part or phase relations and their bounded aggregation; E.17 for publication; and the applicable comparison, assurance, transformation, reidentification, or decision pattern when those uses are current.
 
 ### B.1.6:End
-

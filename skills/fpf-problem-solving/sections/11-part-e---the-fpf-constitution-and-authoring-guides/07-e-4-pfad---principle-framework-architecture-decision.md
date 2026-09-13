@@ -281,4 +281,3 @@ The two comparison rows above are the selected external sources. The `E.9` DRR s
 - **Coordinates with:** `F.18`, `G.2`, `G.11`, `E.21`, `E.23`, and `E.19` only when naming, source synthesis, refresh, improvement, or admission is current for the selected answer.
 
 ### E.4.PFAD:End
-

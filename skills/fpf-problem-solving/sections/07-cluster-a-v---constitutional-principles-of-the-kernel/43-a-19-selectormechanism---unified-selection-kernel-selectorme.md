@@ -419,4 +419,3 @@ Concrete selector-family SoTA packages are cited through their current Part G pa
   * `E.20` governing-pattern discipline and `F.18` naming or alias handling when a source term needs a bridge.
 
 ### A.19.SelectorMechanism:End
-

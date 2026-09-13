@@ -376,4 +376,3 @@ Concrete comparator-family SoTA packages are cited through their current Part G 
 * `G.5` (selection conformance), `G.9` (parity and benchmark harness), `G.10` and PTM (publication and telemetry outside suite closure).
 
 ### A.19.CPM:End
-

@@ -168,4 +168,3 @@ Do not treat this compact head pattern as the whole C.3 discipline when a case n
 - **Does not replace:** direct candidate-feature ontology, A.14 collection membership, `A.2.6` scope, `C.29` representation use, ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
 
 ### C.3:End
-

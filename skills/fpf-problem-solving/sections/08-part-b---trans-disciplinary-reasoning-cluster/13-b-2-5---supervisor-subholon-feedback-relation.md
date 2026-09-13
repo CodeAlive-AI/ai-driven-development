@@ -215,4 +215,3 @@ The selected name is `SupervisorSubholonFeedbackRelation@Context` because the su
 - **Uses:** `B.2.P` when emergence or MHT wording hides the claim kind, including feedback or supervision invoked as an emergence claim. Ordinary feedback wording follows F.19/E.10 restoration and its direct subject pattern.
 
 ### B.2.5:End
-

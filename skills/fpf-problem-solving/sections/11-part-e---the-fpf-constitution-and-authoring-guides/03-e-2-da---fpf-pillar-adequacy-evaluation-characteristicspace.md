@@ -274,4 +274,3 @@ The instrument is still affordable because it asks for short rationales and evid
 | Local evaluation patterns keep their authority. | `E.21`, `E.9.DA`, and `E.10` are evidence or repair neighbours, not substitutes. | Users must choose the right object under improvement before evaluating. |
 
 ### E.2.DA:End
-

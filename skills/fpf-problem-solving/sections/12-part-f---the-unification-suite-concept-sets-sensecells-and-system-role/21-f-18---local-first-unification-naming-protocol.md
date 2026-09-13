@@ -889,4 +889,3 @@ Constrained non-use:
 - `F.18` does not turn a publication row, card, table, or glossary entry into the thing being named.
 
 ### F.18:End
-

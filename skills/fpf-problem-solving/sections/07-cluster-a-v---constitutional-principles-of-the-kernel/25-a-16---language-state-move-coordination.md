@@ -236,4 +236,3 @@ Use this one checklist for authoring and review:
 - **Constrained by:** A.2/A.2.1 and the applicable deontic or authority pattern for any actual relation change; A.13 followed by independent A.15.1 for precise performed Work, F.6 only afterward when precise assignment-bound attribution is current, A.15.PROD for production or inception, and the applicable domain predicate for result claims.
 
 ### A.16:End
-

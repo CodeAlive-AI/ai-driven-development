@@ -908,4 +908,3 @@ A `Q-front` stays a C.18 source set; it is not the emitted G.5 outcome or a `Set
 Architecture discovery boundary: when a generated or discovered structure-bearing output is only a representation or carrier—for example, a description, query result, graph, cluster, or search trace—use `C.35` before G.5. Use G.5 only when the live claim is declaration of selected-set result content with selector-policy and selected-set identity; stable public identity and actual publication remain conditional neighboring branches.
 
 ### G.5:End
-

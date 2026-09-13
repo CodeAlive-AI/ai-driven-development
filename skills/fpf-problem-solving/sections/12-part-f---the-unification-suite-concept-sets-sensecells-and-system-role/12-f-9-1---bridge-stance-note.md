@@ -202,4 +202,3 @@ For each legacy stance passage, ask in order:
 If question 2 or 3 has no answer, do not preserve the stance as if it supplied one. If all four answers exist, keep every useful legacy idea as the plain reading, stance, loss emphasis, example, or non-use boundary of the new C.2.1 episteme. A Card reference may remain as optional publication access, never as the stance's identity or prerequisite.
 
 ### F.9.1:End
-

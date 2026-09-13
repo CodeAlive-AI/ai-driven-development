@@ -395,4 +395,3 @@ Taken together, these sources support the Solution's actions: admit composite pr
 - `A.1.STM` receives a recovered project system-of-interest, network question, or case result only when the practitioner must restore the system-thinking long dependency; it changes none of these direct identities or relations. Use `E.10` to recover project, process, case, and situation wording when source expressions remain ambiguous.
 
 ### A.15.6:End
-

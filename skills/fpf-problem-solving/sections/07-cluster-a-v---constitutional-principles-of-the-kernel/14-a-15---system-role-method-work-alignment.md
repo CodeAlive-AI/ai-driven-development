@@ -22,7 +22,6 @@
 4. State `performedUnderAssignment` and `enactsMethod` only when their predicates obtain. The holder system performs the Work; neither the kind, assignment, Method, description, plan, nor capability acts.
 5. If a visible item is being relied on for a Work, approval, evidence, gate, or release claim before the relation required by that claim is known, use `A.15.4`; keep only the alignment part here.
 
-**Action-pattern protection.** This pattern does not classify encountered publications, displays, or cues. It keeps system-role kind, assignment, Method, MethodDescription, plan, capability, performed Work, and records distinct so an engineer-manager can choose the next admissible action. Use `A.15.4` for work-relevant appearance-based reliance repair.
 
 **Minimum sufficient use.** Recover only the values and relations needed by the receiving use. Ordinary orientation can stop at one clear sentence. A reliance-bearing claim may also need exact occurrence identity and extent, the selected source and its currentness, a capability-fit claim, and the evidence or assurance claim actually relied on.
 
@@ -56,7 +55,6 @@
 
 **Boundary to coarsened renderings.** A briefing, summary, redacted note, or coarsened rendering may orient work. Rely on it for an execution, approval, gate, or evidence question only when the exact sources and relations required by that use remain explicit and reopenable. Use `A.6.3.CSC` when coarsening itself changes what may be relied on.
 
-**Use boundary.** A.15 supplies only the system-role–Method–Work alignment needed by the current project question. Send a single occurrence, wording, assurance, evidence, result, or reliance question to the pattern that defines or tests that claim.
 
 **Outside-practice result boundary.** When one receiving decision or piece of Work needs a bounded result governed by another practice, use `A.15.9` to inspect an already-available result before requesting anything new, ask only for the remaining gap, and preserve supplier Method and authority separately from the receiving decision. A.15 keeps the underlying Method, Work, performer, assignment, communication, result, and record distinctions unchanged.
 
@@ -164,7 +162,9 @@ For a precise performed occurrence, first recover the A.13 core for the exact ac
 
 When one human-plus-AI pair faces a new task or solution family, identify each participating human or AI service as an admitted System before using this alignment. The pair may use four local system-role kinds for this bounded work: `OutcomeCriterionHolderSystemRole`, `AIScoutSystemRole`, `AISpecialistProbeSystemRole`, and `CommitAuthoritySystemRole`. Claim an assignment only by naming its occurrence and declared species under `U.SystemRoleAssignment`. The `CommitAuthoritySystemRole` name does not supply decision authority; any authority relation must obtain independently.
 
-The pair declares one outcome criterion, explores several different candidate approaches, spends a bounded scouting or probing budget before commitment, and returns one `CheckpointReturn` comparing the tested approaches. Use A.15 only for this dyadic assignment, Method, plan, and Work alignment; use C.24 for checkpoint-record semantics and E.16 for budget and guard enforcement.
+First distinguish the probe's question. If another probe could change which option survives the `OptionSet`, return to C.11. If changed live facts or domain-Method limits could change the next action during ongoing Work, return to A.15.7. Use the enactment checkpoint below only when the action or option is fixed, tool or service calls must be planned, and route shape or rollout order is uncertain.
+
+The pair declares one outcome criterion, explores several candidate routes for that fixed action or option, spends a bounded scouting or probing budget before commitment, and returns one `CheckpointReturn` comparing the tested routes. Keep scouting budget, probing budget, and commit checkpoint distinct. Use A.15 only for this dyadic assignment, Method, plan, and Work alignment; use C.24 for checkpoint-record semantics and E.16 for budget and guard enforcement.
 
 Every `CheckpointReturn` carries:
 
@@ -191,7 +191,7 @@ A principle scheme, functional diagram, scenario, screen, or explanation that ex
 
 Do not create a linkage record merely because one unfolding structure mentions several Method- and Work-related values. Keep each direct relation under the pattern that defines it. When a receiving use must preserve an inspectable explanation across those relations, write one bounded `C.2.1` episteme whose EntityOfConcern is the exact selected unfolding `U.Structure`. Its ClaimGraph may cite, as separate claims, the selected Method and Method-relation structure, MethodDescription epistemes, relevant local system-role kinds and assignment occurrences, the Work that enacts the Method, Work-part relations, independently identified transformations and their direct Work-to-change claims, intended WorkPlans, readiness results, capability-fit conditions, evidence, assurance, and gate decisions. Include only claims needed by that receiving use.
 
-Call this episteme a *Method–Work alignment account* in ordinary prose. Its identity comes from its EntityOfConcern, ClaimGraph, and effective ReferenceScheme, not from a new `MethodWorkUnfoldingLinkage@Context` kind or a field bundle. Each claim in the account remains defined or tested by its own pattern: A.3.1 for Method, A.3.2 for MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work and Work relations, A.10 for evidence, B.3 for assurance, A.20 for internal-constraint results, and A.21 for gate decisions. If the useful account would need several unrelated entities of concern, split it instead of using one umbrella record.
+Call this episteme a *Method–Work alignment account* in ordinary prose. Its identity comes from its EntityOfConcern, ClaimGraph, and effective ReferenceScheme, not from a field bundle. Each claim in the account remains defined or tested by its own pattern: A.3.1 for Method, A.3.2 for MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work and Work relations, A.10 for evidence, B.3 for assurance, A.20 for internal-constraint results, and A.21 for gate decisions. If the useful account would need several unrelated entities of concern, split it instead of using one umbrella record.
 
 Another structure, such as CGUS, P2W, P2S, an improvement-loop slice, or a transformation-flow slice, may cite the exact episteme only when its receiving use needs this alignment explanation. The citation creates none of the cited relations and cannot replace their sources, currentness checks, or criteria.
 
@@ -210,7 +210,7 @@ Use this alignment whenever the live question joins a holder system, exact local
 | Alignment position | Manufacturing | Scientific peer review |
 | --- | --- | --- |
 | Exact local system-role kind | `WeldingRobotSystemRole` | `PeerReviewerSystemRole` |
-| Holder system | `ABB_Robot_Model_IRB_6700` | `Dr_Alice_Smith`, modeled as an admitted `U.System` |
+| Holder system | `ABB_Robot_Model_IRB_6700`, designating one particular robot `U.System` in this hypothetical case; IRB 6700 is its model designation | `Dr_Alice_Smith`, modeled as an admitted `U.System` |
 | Direct assignment species and occurrence | `FactoryWeldingAssignment` with the robot and `WeldingRobotSystemRole`; include another participant, for example a factory line or work order, only if that species predicate depends on it | `JournalReviewAssignment` with Alice and `PeerReviewerSystemRole`; a commission-sensitive appointment species also carries the exact review commission |
 | Separate semantic sources when used | `FactoryProductionSystemRoles-2026` and `Factory-Line-B-Scheme` may be used as sources for classification or interpretation claims under the applicable source and evidence relations | `PhysicsPeerReviewSystemRoles-2026` and `PhysicsLetters-A-Review-Scheme` may be used as sources for classification or interpretation claims under the applicable source and evidence relations |
 | Selected model-use structure, only when current | Cited by the receiving factory interpretation claim, never inserted as a participant of every assignment species | Cited by the receiving journal interpretation claim, never inserted as a participant of every assignment species |
@@ -312,7 +312,6 @@ The distinction is operationally useful. When work fails, a team can ask whether
 
 ### A.15:11 - SoTA-Echoing: Adopted Invariants and Rejected Shortcuts
 
-**Source-use rule.** A citation does not decide an FPF relation. A source contributes only when its useful distinction is expressed in A.15's solution, cases, checks, and boundaries.
 
 | Practice need | Source line and status | FPF adaptation | Rejected shortcut |
 | --- | --- | --- | --- |
@@ -320,11 +319,11 @@ The distinction is operationally useful. When work fails, a team can ask whether
 | Keep system classification, relation occurrence, and dated Work distinct. | Almeida, Guizzardi, Sales, and Fonseca, gUFO (2026 preprint), is a current foundational-ontology comparator rather than imported hierarchy. | Retain FPF's exact local system-role kinds, direct assignment species, holder projection, and Work identity laws. | A foreign role hierarchy or relation model deciding FPF identity. |
 | Recover event, performer, qualified association, and records without making a log row the event. | OCEL 2.0 (2024) is current object-centric event-log practice; W3C PROV-O (2013) is representation lineage. | Identify dated Work and the exact assignment occurrence first; keep logs and provenance as separate epistemes and relations. | Anonymous Work, assignment by label, or record-as-occurrence. |
 | Keep authorization acts and the operations they permit distinct. | ITIL 4 Change Enablement (2023) and DMN 1.5 (2024) separate assessment, decision, authorization, scheduling, and realization. | Admit each communicative or operational Work occurrence independently and state its exact effect relation. | Approval collapsed into later operational Work, or label-defined Work subkinds. |
-| Keep bounded exploration separate from committed rollout. | Current agentic tool-use, self-correction, and human-in-the-loop work-control practice extends the ReAct, Toolformer, and Reflexion lines with explicit checkpoints and bounded tool use. | Use exact local system-role kinds and assignments for the participating systems, and return candidate evidence, budget, and a commit trigger in `CheckpointReturn`. | One successful probe silently becomes the selected Method, WorkPlan, or rollout. |
+| Keep bounded exploration separate from committed rollout. | Current agentic tool-use, self-correction, and human-in-the-loop work-control practice extends the ReAct, Toolformer, and Reflexion lines with explicit checkpoints and bounded tool use. | When an action or option is fixed, tool or service calls must be planned, and route shape or rollout order is uncertain, use exact local system-role kinds and assignments for the participating systems, and return candidate evidence, budget, and a commit trigger in `CheckpointReturn`. | One successful probe silently becomes the selected Method, WorkPlan, or rollout. |
 
-SysML v2 is deliberately excluded from A.15's SoTA basis and is not retained as useful lineage for this question. Its search prominence, systems-oriented name, diagram program, and prospective claims are not evidence that it supplies a working solution to system-role assignment, actual performer, Method, plan, and Work separation. For A.15 this is a historical dead end, not a comparator. ISO 42010 likewise supplies no needed A.15 ontology; architecture-description questions remain with the patterns that distinguish architecture from its descriptions.
+Use FPF's direct identity rules for alignment, not SysML v2 or ISO 42010. Use `C.30.AD` for architecture-description questions.
 
-For visible credential, provenance, dashboard, explanation, or composed-source cases that require a project-side value and relation before reliance, use A.15.4. If a source row cannot be recovered in the local solution and checks, do not let the citation stand in for an A.15 rule.
+For visible credential, provenance, dashboard, explanation, or composed-source cases that require a project-side value and relation before reliance, use A.15.4.
 
 ### A.15:12 - Relations
 
@@ -348,11 +347,11 @@ Application choices:
 1. Name the holder systems, local system-role kinds, exact assignments, Methods, Work occurrences, and separate results needed by the claim.
 2. State which Work occurrences and which separate C.2.1 assertions, traces, observations, reports, or metrics make the coordination visible.
 3. Ask whether ordinary system-role–Method–Work alignment explains the case. If yes, stop in A.15.
-4. Add a C.26.2 low-recoverability distributed-state reading only when no participant statement, local component report, single evidence record, dashboard, or exported representation carries the inferred state faithfully enough for its intended use.
+4. Add a C.26.2 low-recoverability distributed-state reading only after establishing its collective `U.System` bearer and boundary under C.26.2, and only when no participant statement, local component report, single evidence record, dashboard, or exported representation carries the inferred state faithfully enough for its intended use. Without that collective bearer, retain ordinary A.15 alignment of individual performers.
 5. State the weakest evidence-bound reading, its time window, rival explanations, and export loss.
-6. Use A.10 for evidence and B.3 for assurance when the reading will guide Work, reliance, audit, readiness, release, or compliance.
+6. Use A.10 for evidence provenance and bounded reliance, and C.26.2:4.11 to select the evidence posture and additional support for the intended use. Obtain a B.3 assurance result for the named target claim and receiving use when an actual assurance claim is current. QLP-3 use or a direct domain requirement for assurance requires that claim and result. Momentary, low-consequence local Work guidance does not by itself require B.3.
 
-The C.26.2 reading is a minimal evidence-bound `U.Episteme` claim. It is not a group mind, performed Work, evidence sufficiency, or assurance by itself.
+The C.26.2 reading is a minimal evidence-bound `U.Episteme` claim about that collective System. It is not a group mind, performed Work, evidence sufficiency, or assurance by itself.
 
 | Position | Required content |
 | --- | --- |
@@ -363,7 +362,7 @@ The C.26.2 reading is a minimal evidence-bound `U.Episteme` claim. It is not a g
 | Rival explanations | For example, routine compliance, policy, command, coincidence, incentive, documentation, or local skill |
 | Export loss | What is lost when the reading is summarized into one report, score, or statement |
 
-Useful outputs are an A.15 alignment claim when assignments and Work explain the case; a C.26.2 reading when the evidence survives ordinary rivals; an A.10 account of the evidence relation or B.3 assurance claim when the reading will be used that way; or no distributed-state reading when the sources, rivals, or time window cannot be named.
+Useful outputs are an A.15 alignment claim when assignments and Work explain the case; a C.26.2 reading about the declared collective System within its boundary when the evidence survives ordinary rivals; an A.10 account of the evidence relation; a B.3 assurance result for a current named assurance claim, including the claim required by QLP-3 use or a direct domain rule; or no distributed-state reading when the sources, rivals, or time window cannot be named.
 
 ### A.15:12b - C.29 mathematical-lens use relation
 
@@ -396,4 +395,3 @@ Repair only the relation that changed. A corrected assignment or `SystemRoleAssi
 Refresh before reliance when the exact local system-role kind or its criterion changes, the assignment species or predicate changes, another assignment occurrence is needed, the Method family or WorkPlan changes, the execution window changes, or a result, evidence, assurance, gate, reliance, or mathematical-lens relation is no longer current. A taxonomy, scheme, KindSignature, or selected model-use structure triggers refresh only when the receiving claim actually depends on the changed semantic basis. If the remaining question is no longer system-role–Method–Work alignment, use its direct pattern and keep only the A.15 separation still needed.
 
 ### A.15:End
-

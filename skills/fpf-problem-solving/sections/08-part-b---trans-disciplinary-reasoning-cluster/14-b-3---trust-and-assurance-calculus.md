@@ -318,4 +318,3 @@ Quantum-like wording does not require assurance by itself. If the wording only p
 When a C.29 mathematical-lens result is an input to an assurance claim, cite the exact lens-result claim, its interpretation and limits, the evidence-use and provenance relations relied on, and the named assurance use. Mathematical elegance or a structure-preserving mapping does not raise assurance by itself. Measurement construction and comparability remain with C.16.
 
 ### B.3:End
-

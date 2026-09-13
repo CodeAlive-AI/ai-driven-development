@@ -222,4 +222,3 @@ Use source traditions for the action they change and keep their scope limits. Th
 **Which branch?** Actual dated Work, or a present WorkPlan with intended performance only as plan content. **Who performs?** Only Systems with the direct actual attribution, or intended performers named only by the plan. **What supports?** Separately identified Systems and values through exact relations. **What must survive?** The minimum state, its carrier, update/use, currentness, and return condition. **What do we test?** Use an applicable direct domain Method to define one decision-changing loss, handoff, delay, or reconfiguration; when the probe occurs, an admitted System performs the dated probe Work. **What comes back?** The direct relation result or exact blocker and the next repair or stop—not a new performer whole.
 
 ### A.15.8:End
-

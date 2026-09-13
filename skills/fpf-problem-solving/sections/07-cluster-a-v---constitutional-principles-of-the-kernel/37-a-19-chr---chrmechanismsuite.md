@@ -680,4 +680,3 @@ This pattern aligns with several post‑2015 practice lines while adapting them 
 * P2W integration is performed uniformly via `CHRMechanismSuiteSlotFillingsPlanItem` planned baselines, preserving the rule that only WorkEnactment witnesses launch values.
 
 ### A.19.CHR:End
-

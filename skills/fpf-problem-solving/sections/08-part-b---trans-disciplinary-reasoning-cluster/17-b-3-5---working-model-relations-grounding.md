@@ -373,4 +373,3 @@ Reopen only the affected source row and rule if A.14 changes the construction/be
 **No introduction of order/time** — CT2R‑LOG does **not** define `SerialStepOf` / `ParallelFactorOf` / temporal **phases**; use `B.1.5` for Method-order claims, `A.14` and `B.1.4` for same-carrier temporal phases and their aggregation, and `A.15.1` for Work parts and occurrences.
 
 ### B.3.5:End
-

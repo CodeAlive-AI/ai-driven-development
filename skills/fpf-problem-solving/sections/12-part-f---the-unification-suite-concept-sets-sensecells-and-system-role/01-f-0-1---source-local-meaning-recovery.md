@@ -248,4 +248,3 @@ The non-dominated combination is a plain local answer first, an exact durable ad
 - Use `F.18` for term choice after the subject distinction is settled.
 
 ### F.0.1:End
-

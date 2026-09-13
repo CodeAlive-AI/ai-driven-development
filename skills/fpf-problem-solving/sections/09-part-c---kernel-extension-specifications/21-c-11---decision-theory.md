@@ -36,7 +36,7 @@ If that first output still cannot be stated, the local comparison is unfinished 
 
 **When advice still hides the decision.** Use `C.11.DUA` when a recommendation or evidence demand still needs its receiving question, demanded work or requirement merits recovered. Return here when a current chooser and options support a local choice. An already adequate choice uses this pattern directly.
 
-**Typical reroutes.** `C.38` when labels or fragments still need to become complete ways of obtaining the same result; `C.18` when the real question is open-ended invention or reframing; `C.19` when the working question is how broadly to explore or exploit the candidate pool; `C.24` when one option is already chosen and the work has become sequencing or enactment; `A.13` when the hard question is agenthood rather than choice; `A.18` for Scale and Coordinate bindings or `A.19` for a declared CharacteristicSpace or reusable predicate when that support question itself becomes primary.
+**Typical reroutes.** `C.38` when labels or fragments still need to become complete ways of obtaining the same result; `C.39` when a way to obtain the result still needs explanation; `C.40` when usable material needs feasible variation and examination; `C.18` when generation-account or archive/front claims are needed; `C.19` when the working question is how broadly to explore or exploit the candidate pool; `C.24` when one option is already chosen and the work has become sequencing or enactment; `A.13` when the hard question is agenthood rather than choice; `A.18` for Scale and Coordinate bindings or `A.19` for a declared CharacteristicSpace or reusable predicate when that support question itself becomes primary.
 
 **Common neighboring-pattern mistakes.** Do not use `C.11` to hide search work inside "decision", to hide candidate-pool policy inside one local choice, or to hide execution planning inside one generic rationality account. Do not treat declaring selector-facing set-result content, or later making that result available, as if either were the same question as deciding.
 
@@ -62,7 +62,7 @@ Without one explicit place for choice calculus, search, candidate-pool policy, a
 
 | Force | Tension |
 | --- | --- |
-| Choice doctrine versus candidate formation and generation | `C.11` must govern choice among already-available options without swallowing `C.38` formation of complete ways or `C.18` open-ended search and generation. |
+| Choice doctrine versus candidate formation and generation | `C.11` must govern choice among already-available options without taking over their formation or development. |
 | Evidential, causal, and subjunctive dependence | The pattern must stay usable with classical decision language while making room for causal and success-first repairs where correlation is not enough. |
 | Decide now versus probe more | The chooser may need to stop and choose now, or spend more effort on information and computation first. The theory must make that trade legible. |
 | Decision subject versus narrower agent language | The chooser may be one person, one team, one organization, or another collectivity-bearing system. The pattern must not silently force all cases into one narrow `Agent` reading. |
@@ -104,7 +104,7 @@ A conforming `C.11` pass does not stop at naming schools of decision theory. It 
 
 2. **Freeze the current option set.**
    State the already-available options being compared now as one `OptionSet`.
-   If the rows are only labels or fragments and the question is several complete ways to obtain the same result, stop here and apply `C.38`. If the hard work is open-ended invention, expansion, or reframing, apply `C.18`.
+   If the rows are only labels or fragments and the question is several complete ways to obtain the same result, stop here and apply `C.38`. Use `C.39` when a way to obtain the result still needs explanation, or `C.40` when usable material needs feasible variation and examination. Use `C.18` when generation-account or archive/front claims are needed.
 
 3. **Make the comparison basis explicit.**
    State one `PreferenceOrder` or one `EvaluativeMeasure`, plus one `BeliefState` and one `OutcomeModel`.
@@ -264,7 +264,9 @@ The comparison should close as `probe again` only when all of the following are 
 The comparison should close as `reroute` when the record shows that the decision question has changed:
 
 - to `C.38` when labels or fragments must first become complete-enough ways of obtaining the same result;
-- to `C.18` when the option set itself is under open-ended invention or reframing;
+- to `C.39` when a way to obtain the result still needs explanation;
+- to `C.40` when usable material needs feasible variation and examination;
+- to `C.18` when the question concerns the generation account or archive/front stewardship;
 - to `C.19` when the question is now how broadly to keep exploring or exploiting one candidate pool;
 - to `C.24` when one choice result already exists and the next task is now sequencing, enactment, or execution-path probe work;
 - to `G.5` when the next task is declaring or naming selector-facing selected-set content; when that result already exists, use `E.17` for its source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and audience availability.
@@ -406,7 +408,7 @@ Use `C.11` while the question remains: from this current `OptionSet`, what shoul
 Reroute immediately when the question changes:
 
 - If the current rows are labels or fragments and the hard question is how several complete ways could obtain the same result, leave this pattern and work in `C.38` first.
-- If the hard question is still what options should exist at all, or whether the current option set needs open-ended expansion or reframing, leave this pattern and work in `C.18` first.
+- If a way to obtain the result still needs explanation, use `C.39`. If usable material needs feasible variation and examination, use `C.40`. Use `C.18` when the question concerns the generation account or archive/front stewardship.
 - If the options already exist but the question is how broadly to keep exploring or exploiting the candidate pool, leave this pattern and work in `C.19`, where the next useful output is one explicit pool-policy result rather than one local `ChoiceResult`.
 - If one option is already chosen and the question is how to sequence, budget, or enact that choice, leave this pattern and work in `C.24`, where the next useful output is one enactment-facing call plan or `CheckpointReturn`.
 - If the question has shifted from deciding to declaring or naming selector-facing selected-set content, leave this pattern and work in `G.5`. Its next useful output may be a `Shortlist` or `RankedShortlist` when alternatives remain for later choice, a `JointUseSet` when every named member is included for one bounded use, a narrowed handoff, abstain, or escalation. None is one more local `ChoiceResult`. If that result already exists and the current question is presentation or availability to an audience, use `E.17` for the source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and availability.
@@ -536,7 +538,7 @@ If those conditions are still missing, the pattern has not yet answered the choi
 
 **Show.** A finished result here should therefore read like one decision record, not one research-theory aside: "Team-level chooser; three current plans; risk reduction preferred; calibration uncertainty still live; one extra calibration run remains feasible and could still overturn the current ranking; its expected gain justifies `CostToProbe`, including the one-day delay; `ChoiceResult = probe again with calibration run`." Or, after that probe is no longer worth doing: "`ChoiceResult = choose plan B now because the remaining calibration gain no longer justifies one more day of delay`."
 
-**Show.** `C.38` is the place for turning labels or fragments into complete ways of obtaining one result, `C.18` is the place for open-ended invention of new plans, `C.19` is the place for broader exploration policy over the plan pool, and `C.24` is the place for the run sheet and execution order after the choice is made.
+**Show.** Use `C.38` if the team must turn labels or fragments into complete ways of obtaining one result. Use `C.39` if a plan still lacks an explanation of how to obtain that result, or `C.40` if the team can vary a plan and needs to examine the difference. Use `C.18` when the team needs a generation account or archive/front claim; `C.19` for exploration policy over the plan pool; and `C.24` for the run sheet and execution order after choice.
 
 #### C.11:5.2 - Episteme grounding
 
@@ -582,9 +584,9 @@ The family map also remains plural: causal, success-first, active-inference, and
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| `CC-C11.1` | The pattern **SHALL** state that `C.11` governs choice among already-available options rather than formation of comparable ways or open-ended candidate generation. | Keeps `C.38` and `C.18` outside and prevents candidate-construction or search takeover. |
+| `CC-C11.1` | The pattern **SHALL** state that `C.11` governs choice among already-available options rather than formation of comparable ways or open-ended candidate generation. | Keeps candidate construction and development outside local choice. |
 | `CC-C11.2` | The pattern **SHALL** keep `DecisionSubject` as the default chooser term, and **SHALL NOT** use `Agent` as the generic chooser term unless one explicit agency claim is governed by `A.13`; measured characteristic and evidence claims use `A.17` for Characteristic identity and arity, `A.18` for Scale and Coordinate bindings, `A.19` for the declared space and reusable predicate, `C.16` for the measurement account, and `A.10` for bounded reliance on the evidence. | Prevents unwanted narrowing of the chooser. |
-| `CC-C11.3` | The pattern **SHALL** state the boundary among `C.11`, `C.38`, `C.18`, `C.19`, `C.24`, and `G.5` explicitly in the body. | Prevents collapse of choice doctrine, same-result way formation, open-ended generation, candidate-pool policy, planning, and selector-facing result declaration. |
+| `CC-C11.3` | The pattern **SHALL** state the boundary among `C.11`, `C.38`, `C.39`, `C.40`, `C.18`, `C.19`, `C.24`, and `G.5` explicitly in the body. | Separates choice from candidate construction and development, the generation or archive/front account, pool policy, planning, and selector-facing result declaration. |
 | `CC-C11.4` | `Solution` **SHALL** state one inspectable decision procedure from `DecisionSubject` and `OptionSet` through comparison basis, dependence layer, applicable probe-worthiness test, one explicit `ChoiceRule`, and one emitted `ChoiceResult`. | Keeps `C.11` as one operational answer to the choice question rather than one survey of schools. |
 | `CC-C11.5` | The pattern **SHALL** name one minimal decision inventory including `DecisionSubject`, `DecisionSubjectGranularity`, `OptionSet`, `PreferenceOrder`, `EvaluativeMeasure`, `BeliefState`, `OutcomeModel`, `ChoiceRule`, `ChoiceResult`, `ProbeActionSet`, `ProbeBudget`, `CostToProbe`, `ValueOfInformation`, and `ValueOfComputation`. | Keeps the calculus objectual rather than slogan-like. |
 | `CC-C11.6` | Load-bearing inventory terms used in the pattern text **SHALL** receive local plain glosses or equivalent operational clarification inside the body. | Prevents the core terminology from remaining implicit or displaced into outside basis carriers. |
@@ -604,7 +606,7 @@ One quick usability test helps here: if the closing line does not state one lawf
 
 | Anti-pattern | Symptom | Why it fails | How to avoid / repair |
 | --- | --- | --- | --- |
-| Candidate-formation or search takeover | The text starts constructing complete ways or generating options as if that work were already part of decision doctrine. | `C.11` loses its decision-theory EntityOfConcern and silently absorbs `C.38` or `C.18`. | State the option set as already existing; use `C.38` for same-result way formation and `C.18` for open-ended generation. |
+| Candidate-formation or search takeover | The text starts constructing complete ways or generating options as if that work were already part of decision doctrine. | The choice rule has no stable option set to compare. | State the existing option set. Use `C.38` for same-result way formation, `C.39` for a missing explanation of how to obtain the result, or `C.40` for feasible variation and examination. Add `C.18` when a generation account or archive/front claim is needed. |
 | Policy collapse | Exploration or exploitation governance over a candidate pool is written as if it were identical with choosing among current options. | Choice doctrine and candidate-pool policy become indistinguishable. | `C.19` remains explicit as the neighboring pattern for selection policy and exploration governance. |
 | Planning collapse | Sequencing, replanning, and enactment budgeting are written as if they were already part of the choice calculus. | Planning-side question moves out of `C.24` by accident. | Execution order and operational budgeting remain in `C.24`, even when `C.11` says more probing is rational. |
 | Inventory without decision rule | The current comparison names many objects and schools but never shows how to move from a live option set through one `ChoiceRule` to one `ChoiceResult`. | The pattern becomes one cleaned-up survey rather than one decision discipline. | State one explicit decision-record shape: chooser, option set, comparison basis, dependence layer, applicable probe-worthiness test, one explicit doctrine, and one emitted result. |
@@ -679,7 +681,8 @@ Worked-slice discipline from these rows:
 ### C.11:12 - Relations
 
 - **Builds on:** `A.6.P`, `A.6.5`, `A.10`, `A.13`, `A.18`, `A.19`; **coordinates with:** `E.10.LRN` for learning-word recovery, `C.11.CRC` for a missing finite configuration-relative comparison claim, `C.17` for bounded characterization
-- **Read next when this question leaves local choice:** `C.38` for forming complete ways of obtaining one result, `C.18` for open-ended candidate generation and reframing, `C.19` for one explicit pool-policy result over exploration or exploitation governance, `C.24` for one enactment-facing call plan or `CheckpointReturn`, `G.5` for the selector-facing result kind that is actually current—retained alternatives, all-member joint use, narrowed handoff, abstain, or escalation—and `C.28` when the choice result depends on causal-use support
+- **Read next when candidate work is needed:** `C.38` for forming complete ways of obtaining one result, `C.39` for a missing explanation of how to obtain it, or `C.40` for feasible variation and examination of usable material. Use `C.18` when generation-account or archive/front claims are needed.
+- **Other neighboring questions:** `C.19` for one explicit pool-policy result over exploration or exploitation governance; `C.24` for one enactment-facing call plan or `CheckpointReturn`; `G.5` for the selector-facing result kind that is actually current—retained alternatives, all-member joint use, narrowed handoff, abstain, or escalation; and `C.28` when the choice result depends on causal-use support
 - **Keeps outside:** candidate generation, pool-wide exploration or exploitation policy, selector-facing set-result declaration, publication availability, and execution sequencing
 - **Aligns with:** classical evidential decision theory, causal decision theory, success-first or subjunctive repair, bounded-resource metareasoning and probe-cost doctrine, `C.28` causal-use question/rung/support vocabulary, active-inference-adjacent decision work, quantum-like contextual repair where context or order effects are real, and multilevel mathematical-lens pressure at the minimal-floor level only
 
@@ -692,7 +695,7 @@ Decision repair sequence:
 1. State the current `DecisionSubject`, `OptionSet`, comparison basis, and `ChoiceRule`.
 2. Ask whether the apparent QL issue changes the local choice result: choose now, reject current set, probe again, or reroute.
 3. If the issue is question order, incompatible questions, response-replicability tension, non-shared comparison frames, or CbD-style variable identity / joint-availability trouble inside the current option set, keep the QL repair inside C.11.
-4. If the current option set itself is suspect, incomplete, generated by the wrong frame, or still needs expansion/reframing/search, leave C.11. Use `C.18` for option generation, reframing, and archive/front stewardship; `C.19` for live-pool policy; `A.19` for the declared CharacteristicSpace or reusable predicate; or `B.5.2` for abductive hypothesis formation, according to the question that needs repair.
+4. If the current option set itself is suspect, incomplete, generated by the wrong frame, or still needs expansion/reframing/search, leave C.11. Use `C.39` for a missing explanation of how to obtain the result or `C.40` for feasible variation and examination of usable material. Use `C.18` when a generation account or archive/front claim is needed; `C.19` for live-pool policy; `A.19` for the declared CharacteristicSpace or reusable predicate; or `B.5.2` for abductive hypothesis formation, according to the question that needs repair.
 5. If the issue changes boundary state, bridge/export faithfulness, coordinated-work evidence, measurement admissibility, or viability envelope, apply the pattern governing that claim.
 6. Emit one `ChoiceResult` and one next question; do not leave the QL branch as a theory label.
 
@@ -705,7 +708,7 @@ When the question leaves local choice, apply the subject pattern instead of stre
 | Coordinated work evidences a state no report faithfully carries | `A.15` plus evidence patterns, with `C.26.2` only for the remaining low-recoverability distributed-state reading |
 | Measurement, metric, survey, or score frame changes the represented state | `C.16` plus evidence patterns |
 | Viability envelope, adaptation cost, or boundary-maintenance decision is load-bearing | `C.25` for a quality bundle with several differently typed contributors; `C.26.3` for a multi-characteristic viability envelope under disturbance when a candidate intervention, boundary condition, adaptation cost, or failure mode matters. Add `C.26` for a remaining probe/export/frame/coarsening question only when an exact contextual-model obstruction still changes what may be inferred or done after the ordinary patterns have carried their part. |
-| Current option set is suspect, incomplete, frame-generated, or still being expanded/reframed/searched | Before applying C.11, use `C.18` for option generation, reframing, and archive/front stewardship; `C.19` for live-pool policy; `A.19` for the declared CharacteristicSpace or reusable predicate; or `B.5.2` for abductive hypothesis formation, according to the question that needs repair. |
+| Current option set is suspect, incomplete, frame-generated, or still being expanded/reframed/searched | Use `C.39` for a missing explanation of how to obtain the result or `C.40` for feasible variation and examination of usable material. Use `C.18` when a generation account or archive/front claim is needed; `C.19` for live-pool policy; `A.19` for the declared CharacteristicSpace or reusable predicate; or `B.5.2` for abductive hypothesis formation, according to the question that needs repair. |
 
 Useful outputs:
 
@@ -721,4 +724,3 @@ C.11 may cite `C.26` as the common quantum-like modeling lens only for the resid
 > `C.29` may supply a lens-supported prediction, distinction, obstruction, diagnostic boundary, or rival-lens note that a decision record can cite. If the output is a `ChoiceResult` or local choice record, use `C.11` to state and test the decision. Any `G.5` selector-result declaration and `G.9` benchmark result remain separate. When one of those results must be available to an audience, use `E.17` for its source-backed publication face and return to source and `E.24.PUB` for the publication occurrence and availability. `C.29` does not select the option by mathematical elegance.
 
 ### C.11:End
-

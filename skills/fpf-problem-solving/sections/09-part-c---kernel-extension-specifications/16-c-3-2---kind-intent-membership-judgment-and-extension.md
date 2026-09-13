@@ -237,4 +237,3 @@ Model theory and type systems distinguish intensional declarations, satisfaction
 - **Does not replace:** the direct subject pattern, evidence-use relation, collection membership, claim-scope governor, guard decision, public-kind admission, or a separately justified durable classification-relation pattern.
 
 ### C.3.2:End
-

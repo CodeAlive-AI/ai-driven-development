@@ -4,7 +4,7 @@
 ## Contents
 
 - [F.0.1 - Source-Local Meaning Recovery](01-f-0-1---source-local-meaning-recovery.md) (251 lines) — Type: Architectural (A)
-- [F.0.2 - Conceptual Synthesis across Source Ontologies](02-f-0-2---conceptual-synthesis-across-source-ontologies.md) (206 lines) — Type: Architectural (A)
+- [F.0.2 - Conceptual Synthesis across Source Ontologies](02-f-0-2---conceptual-synthesis-across-source-ontologies.md) (229 lines) — Type: Architectural (A)
 - [F.1 - Question-Relative Source Selection](03-f-1---question-relative-source-selection.md) (326 lines) — Type: Architectural (A)
 - [F.2 — Term Harvesting & Normalisation](04-f-2-term-harvesting-normalisation.md) (207 lines) — “Harvest the source’s own words, recover what they mean there, and stop before comparison.”
 - [F.3 - Source-Local Sense Clustering](05-f-3---source-local-sense-clustering.md) (247 lines) — “Under one explicit interpretation basis, merge aliases that make the same local claim and split uses that do not.”
@@ -24,4 +24,4 @@
 - [F.16 - Worked-Example Template (Cross-Domain)](19-f-16---worked-example-template.md) (238 lines) — “Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”
 - [F.17 - Unified Term Sheet](20-f-17---unified-term-sheet.md) (1052 lines) — Type: Lexical row pattern (F)
 - [F.18 - Local-First Unification Naming Protocol](21-f-18---local-first-unification-naming-protocol.md) (892 lines) — Pattern state: stable pattern. Audience: engineer-managers, lead architects, ontology editors, and authors who must make one name reusable without turning that name into a hidden ontology.
-- [F.19 - Ontology-First Plain Technical Rewriting](22-f-19---ontology-first-plain-technical-rewriting.md) (324 lines) — Type: Plain-technical precision-restoration pattern
+- [F.19 - Ontology-First Plain Technical Rewriting](22-f-19---ontology-first-plain-technical-rewriting.md) (346 lines) — Type: Plain-technical precision-restoration pattern

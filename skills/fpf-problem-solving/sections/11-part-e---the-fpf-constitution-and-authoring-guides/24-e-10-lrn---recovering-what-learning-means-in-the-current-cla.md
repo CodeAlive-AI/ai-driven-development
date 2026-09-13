@@ -212,4 +212,3 @@ Recheck a source line only when a newer edition changes a distinction used by th
 - **Keeps outside:** one generic Learning process, learner/teacher role kinds, teaching or training Method selection, capability assessment, model fitting, inference, experiment design, evidence qualification, causal explanation, and choice.
 
 ### E.10.LRN:End
-

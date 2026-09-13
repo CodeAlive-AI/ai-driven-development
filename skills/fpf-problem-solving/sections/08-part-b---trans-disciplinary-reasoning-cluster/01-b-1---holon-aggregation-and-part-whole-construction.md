@@ -233,4 +233,3 @@ Mathematical apparatus remains available. It becomes more useful after the gover
 - **Refined by:** `B.1.1`, `B.1.2`, `B.1.4`, and `B.1.6` for selected dependency, system aggregation, contextual-temporal aggregation, and work-resource aggregation cases.
 
 ### B.1:End
-

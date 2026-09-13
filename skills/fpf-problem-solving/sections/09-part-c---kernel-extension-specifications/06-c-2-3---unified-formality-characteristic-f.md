@@ -309,4 +309,3 @@ When refreshing legacy material, assign an initial `F` from observable content, 
 For the language-space extension, `F` does **not** govern `U.ArticulationExplicitness`, `U.LanguageStateClosureDegree`, `U.LanguageStateAnchoringMode`, or `U.LanguageStateRepresentationFactorBundle`. Contexts **MUST NOT** hide thresholds for those facets as pseudo-levels or submodes of `F`; those facets remain explicitly governed by `C.2.LS` and its subordinate patterns.
 
 ### C.2.3:End
-

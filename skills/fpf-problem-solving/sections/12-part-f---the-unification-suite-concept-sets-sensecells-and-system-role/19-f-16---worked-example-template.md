@@ -235,4 +235,3 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 > A useful worked example is one replayable argument: situation and gain → claim → actual subjects → direct relations → exact sources and evidence → result and limits → a few focused checks. Cells and tables are optional reading aids. They never replace the values, relations, evidence, or judgement that make the example true.
 
 ### F.16:End
-

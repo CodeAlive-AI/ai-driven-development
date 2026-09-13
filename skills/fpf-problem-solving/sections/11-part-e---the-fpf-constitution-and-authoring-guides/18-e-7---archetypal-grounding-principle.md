@@ -81,4 +81,3 @@ language out of the Core.
 * **Constrains:** Authoring template in `pat:authoring/pattern‑template` (E.8)
 
 ### E.7:End
-

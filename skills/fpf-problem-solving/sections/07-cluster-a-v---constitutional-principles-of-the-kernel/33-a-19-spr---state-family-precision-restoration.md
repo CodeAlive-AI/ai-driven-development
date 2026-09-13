@@ -252,4 +252,3 @@ The problem is not the word `state`. The problem is a sentence that hides what h
 Local fields such as `LensUseBoundaryValue` and `dynClaimPosture` remain useful when their object, possible values, and rule are clear. Broad phrases such as `source posture`, `evidence posture`, or `release posture` should instead become the direct sentence or project record the reader actually needs.
 
 ### A.19.SPR:End
-

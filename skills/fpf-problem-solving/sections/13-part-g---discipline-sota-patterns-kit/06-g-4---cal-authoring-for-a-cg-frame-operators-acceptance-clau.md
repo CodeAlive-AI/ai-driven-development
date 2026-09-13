@@ -448,4 +448,3 @@ G.4 is a design-time authoring pattern. It publishes a notation-independent `CAL
 **Constrains:** any run‑time LOG implementation that executes CAL operators/flows must treat CAL artifacts as citable specifications and must not re‑invent acceptance semantics.
 
 ### G.4:End
-

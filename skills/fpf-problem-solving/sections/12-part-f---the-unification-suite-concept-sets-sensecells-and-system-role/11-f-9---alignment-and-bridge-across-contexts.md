@@ -589,4 +589,3 @@ A reader can test bridge integrity with eight questions:
 Repair *same*, *equivalent*, *align*, and *map* prose in that order: recover the exact senses; test the Bridge; state the bounded-use claim; check reliance; recover authorization or the actual receiving object only when those questions are live. Do not start from a polished card or a score.
 
 ### F.9:End
-

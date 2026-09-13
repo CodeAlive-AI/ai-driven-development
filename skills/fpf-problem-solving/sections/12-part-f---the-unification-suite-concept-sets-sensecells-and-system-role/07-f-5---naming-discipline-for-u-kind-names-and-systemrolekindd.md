@@ -286,4 +286,3 @@ Source-use boundary: external labels, Concept-Set rows, and citations are eviden
 **Does not replace.** Direct evidence, status, requirement, source, publication, assurance, gate, decision, responsibility, relation-signature, Method, Work, or architecture patterns.
 
 ### F.5:End
-

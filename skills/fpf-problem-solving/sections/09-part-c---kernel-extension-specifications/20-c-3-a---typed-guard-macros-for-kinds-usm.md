@@ -458,4 +458,3 @@ A conforming Method–Work check SHALL:
 | treating bridge or adapter records as target truth | recover target declarations and evaluate candidates afresh |
 
 ### C.3.A:End
-

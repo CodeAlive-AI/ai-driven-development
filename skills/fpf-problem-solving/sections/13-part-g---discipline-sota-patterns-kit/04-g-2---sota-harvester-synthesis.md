@@ -506,4 +506,3 @@ This pattern aligns its *method options* (via Extensions and authoring practice)
 ### G.2:End
 
 ---
-

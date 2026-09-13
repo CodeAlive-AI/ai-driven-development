@@ -221,7 +221,7 @@ When a shipped result consumes C.28, refresh planning watches the causes that ca
 
 | Sentinel | Affected result | Refresh pins |
 | --- | --- | --- |
-| sampling-realizability shift | `CounterfactualSamplingRealizabilityResult` | target distribution, decision Method and any derivation, physical, ethical, operational, and history constraints, required construction, bound, or obstruction, status, supported use, and unsupported use |
+| sampling-realizability shift | `CounterfactualSamplingRealizabilityResult` | target distribution, decision Method and any derivation, physical, ethical, operational, and history constraints, required sampling construction or obstruction, unresolved questions, status, supported use, and unsupported use |
 | performed sampling or resulting-data shift | dated sampling Work plus A.10 evidence path and empirical data regime | WorkPlan when used; actual performer identified through A.13; dated Work independently admitted through A.15.1; Method and window; resulting sample or data; provenance and currentness. Add F.6 with the same A.13 assignment only if the refresh decision needs to say exactly under which assignment the Work was performed. F.6 identifies neither performer nor assignment; a missing or failed attribution leaves the Work intact. A realizability result cannot substitute. |
 | identification or bound shift | `CausalIdentificationResult` | data-regime refs, assumptions, identifying derivation, bound or failure witness, sensitivity |
 | estimate shift | `CausalEstimateResult` | identification or design basis, data, estimator Method, diagnostics, uncertainty, sensitivity, and any live estimation-consistency result |
@@ -436,4 +436,3 @@ Each entry follows: **claim → practice → source → alignment → adoption s
 **Publishes to:** UTS (refresh plan, refresh report, deprecations, edition bumps), and to the relevant subject patterns’ publication faces, forms, or units through delegated actions.
 
 ### G.11:End
-

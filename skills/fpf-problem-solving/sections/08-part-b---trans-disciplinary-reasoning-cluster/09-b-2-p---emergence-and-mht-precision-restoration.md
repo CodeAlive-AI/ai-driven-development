@@ -254,4 +254,3 @@ B.2.P follows F.19's whole-span reading with compact E.10 cues; E.10.ARCH or a d
 - **Coordinates with:** `A.2.2`, `C.16`, `A.6.F`, `A.3.4`, `C.30`, `A.22`, `A.1.1`, `C.30.ASV`, `C.30.TFS-REL`, `C.30.ILC`, `C.32.P2S`, `C.29`, `A.10`, `B.3`, `C.2.1`, `G.11`, `E.17`, and source-use patterns.
 
 ### B.2.P:End
-

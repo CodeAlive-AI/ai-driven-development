@@ -167,4 +167,3 @@ The pattern keeps refusal, evidence demand, and residual acceptance visible as o
 - Coordinates with `A.10`, `B.3`, `C.11`, `C.28`, `C.29`, and `C.30.ILC` when evidence, assurance, decision, causal, mathematical-lens, or architecture-residual claims are current.
 
 ### D.4:End
-

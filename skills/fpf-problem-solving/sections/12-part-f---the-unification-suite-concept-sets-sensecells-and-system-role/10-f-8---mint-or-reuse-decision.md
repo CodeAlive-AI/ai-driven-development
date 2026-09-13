@@ -441,4 +441,3 @@ The accountable branch follows the same rule. A decision occurrence, C.2.1 resul
 Name the subject and use before judging the word. Try the light naming ladder and stop at the first sufficient result. An unsettled U-kind goes to E.24.UK before naming; an accountable decision opens §4.5 only when the decision occurrence itself must be used. A name, card, row, identifier, publication, or record creates neither the subject nor any relation or authority it mentions.
 
 ### F.8:End
-

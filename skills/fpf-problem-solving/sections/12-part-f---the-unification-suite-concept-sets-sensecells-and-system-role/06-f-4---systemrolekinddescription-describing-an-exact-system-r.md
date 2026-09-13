@@ -328,4 +328,3 @@ Avoid as live Tech vocabulary:
 A `SystemRoleKindDescription` is the readable episteme that tells people what one exact local system-role kind means. It helps a reader classify, assign, name, or compare the kind. It does not admit the kind or a candidate system, produce the classification judgment, create an assignment, prove capability, define a Method, perform Work, grant permission, establish responsibility, carry evidence, publish itself, or turn every useful episteme into a system-role holder.
 
 ### F.4:End
-

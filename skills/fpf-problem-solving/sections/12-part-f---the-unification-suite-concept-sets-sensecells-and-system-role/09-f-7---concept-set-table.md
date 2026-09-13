@@ -222,4 +222,3 @@ Show NIST RBAC **role** as a permission grouping and a local system-role-kind cl
 > “A Concept-Set table is a comparison surface. Put the exact source-local claims in it, then list only relations that have already been established, with direction and loss. State separately what one named comparison or use may conclude and why. A shared row, a shared label, or a minimum score proves nothing. If no relation is known, show a contrast. The table makes the reasoning easier to read; it never supplies the reasoning.”
 
 ### F.7:End
-

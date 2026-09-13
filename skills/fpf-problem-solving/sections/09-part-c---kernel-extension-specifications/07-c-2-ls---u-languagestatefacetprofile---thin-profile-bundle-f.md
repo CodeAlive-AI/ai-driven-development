@@ -246,4 +246,3 @@ Source phrases such as "still immature", "not ready yet", or "already stable eno
 Compare profiles facetwise unless a Context has published an explicit local aggregation for reporting. Such an aggregation remains secondary and must not replace the profile in norms, thresholds, or bridge claims.
 
 ### C.2.LS:End
-

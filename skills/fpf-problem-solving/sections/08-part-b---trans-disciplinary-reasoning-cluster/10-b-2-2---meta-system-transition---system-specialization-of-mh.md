@@ -222,4 +222,3 @@ The key distinction is ontological, not lexical. A whole proposed for recognitio
 - **Contrasts with:** `B.2.3` for MHT-result holons admitted as `U.Episteme` and `B.2.4` for the capability and functioning decision bridge to whole reidentification.
 
 ### B.2.2:End
-

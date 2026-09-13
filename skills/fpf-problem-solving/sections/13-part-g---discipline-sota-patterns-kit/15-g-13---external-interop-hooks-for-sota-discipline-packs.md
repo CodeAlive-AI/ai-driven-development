@@ -339,4 +339,3 @@ FPF is a conceptual framework for disciplined creative work. An explicit interop
 6. Keep provider/tool specifics in `Extensions` (or Phase‑3 seed) and do not let formats redefine semantics.
 
 ### G.13:End
-

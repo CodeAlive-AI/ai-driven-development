@@ -473,4 +473,3 @@ Currentness rule: when the defining or testing rule for a value—or F.17/F.18, 
 Use F.15 as a small check over exact already-governed objects. First pin the finite scope, versions, rules, and receiving use. Then check locality and naming: schemes and cells are exact, the F.18 result records the selected names, an F.17 result records any admitted row, and actual Bridges remain separate from Cards and use claims. Next check execution and result: an application or dated Work is not its C.2.1 result, witnesses are not evidence use, and a record does not perform or publish anything. For change, compare exact prior/later refs and state continuity, loss, and use. When a rule fails, re-evaluate that subject claim under its defining or testing rule; do not patch the label or record field.
 
 ### F.15:End
-

@@ -172,4 +172,3 @@ Source vocabularies often use "symbolic", "distributed", or "encoding basis" as 
 Representation bundles may be compared across contexts only after the compared factors are explicit. If one context uses a compact local alias and another publishes the full factor bundle, require explicit docking before treating the two descriptions as commensurable.
 
 ### C.2.7:End
-

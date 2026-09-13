@@ -521,4 +521,3 @@ When the repair changes evidence, proof, witness, grounding, explanation, gate, 
 * **Does not replace:** `E.10` general lexical rules, `F.18` naming protocol, `A.6.P` relation precision, or local episteme and publication patterns. It says when those patterns must be applied to episteme-publication-heavy wording.
 
 ### C.2.P:End
-

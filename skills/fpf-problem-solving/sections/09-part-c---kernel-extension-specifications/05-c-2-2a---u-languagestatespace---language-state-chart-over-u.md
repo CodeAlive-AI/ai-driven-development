@@ -257,4 +257,3 @@ After the first useful row is understood, the wider `Language-State & Semantic R
 `A.16.1 / U.PreArticulationCuePack` is the earliest durable seam publication form in that corridor. `B.4.1` is the explicit route-bearing seam after cue preservation, and `B.5.2.0` is typed prompt entry. `C.16.Q`, `A.6.A`, `A.6.P`, `B.5.2`, `A.15`, and `C.25` are downstream subject patterns, not members of the language-state chart. The map explains navigation only; it relocates none of their semantics into C.2.2a.
 
 ### C.2.2a:End
-

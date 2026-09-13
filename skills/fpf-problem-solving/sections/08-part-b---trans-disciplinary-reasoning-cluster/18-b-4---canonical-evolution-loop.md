@@ -175,4 +175,3 @@ The result is a practical review language for repeated adaptation. It avoids bot
 For early language-state routing, Observe does not have to jump directly into anomaly or hypothesis forms. Observe may publish a `U.PreArticulationCuePack` and a `RoutedCueSet` through `B.4.1`; a selected route then enters Refine or another fitting pattern. A downstream loop consumes the routed cue publication directly or a later typed publication such as `U.AbductivePrompt`, as appropriate.
 
 ### B.4:End
-

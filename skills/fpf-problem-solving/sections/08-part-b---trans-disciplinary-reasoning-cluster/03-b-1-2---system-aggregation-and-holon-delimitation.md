@@ -216,4 +216,3 @@ B.1.2 preserves the engineering payoff by coordinating exact subject-pattern res
 - **Can contribute evidence to:** `B.2` when system aggregation no longer explains the whole-level claim and whole reidentification is needed.
 
 ### B.1.2:End
-
