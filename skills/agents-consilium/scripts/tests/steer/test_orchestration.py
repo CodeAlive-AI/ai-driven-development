@@ -225,6 +225,45 @@ class OrchestrationTests(unittest.TestCase):
             p = self.cli("wait-any", "missing", "--timeout", value)
             self.assertEqual(p.returncode, 2, p.stderr)
 
+    def test_detached_wait_loop_timeout_then_collects_every_result(self):
+        pending = []
+        try:
+            for delay in (2, .5):
+                started = self.cli("-a", "codex", "--detach", "WAIT_LOOP",
+                                   env=dict(self.env, CONSILIUM_FAKE_STEER_SLOW=str(delay)))
+                self.assertEqual(started.returncode, 0, started.stderr)
+                pending.append(started.stdout.strip())
+            expected = set(pending)
+            # A short observation deadline must leave both detached runs alive.
+            observed = self.cli("wait-any", *pending, "--timeout", "0.01")
+            self.assertEqual(observed.returncode, 124, observed.stderr)
+            self.assertEqual(json.loads(observed.stdout)["ready"], [])
+            collected = set()
+            while pending:
+                observed = self.cli("wait-any", *pending, "--timeout", "900")
+                self.assertEqual(observed.returncode, 0, observed.stderr)
+                ready = json.loads(observed.stdout)["ready"]
+                self.assertTrue(ready)
+                for rid in ready:
+                    result = self.cli("wait", rid, "--timeout", "5", "--json")
+                    self.assertEqual(result.returncode, 0, result.stderr)
+                    self.assertIn("FAKE_CODEX", result.stdout)
+                    collected.add(rid)
+                    pending.remove(rid)
+            self.assertEqual(collected, expected)
+        finally:
+            for rid in pending:
+                self.cli("cancel", rid)
+
+    def test_completion_between_observations_is_not_lost(self):
+        rid = self.run_record(pid=os.getpid())
+        first = self.cli("wait-any", rid, "--timeout", "0")
+        self.assertEqual(first.returncode, 124, first.stderr)
+        self.reg.update_meta(rid, status="completed", exit_code=0)
+        resumed = self.cli("wait-any", rid, "--timeout", "900")
+        self.assertEqual(resumed.returncode, 0, resumed.stderr)
+        self.assertEqual(json.loads(resumed.stdout)["ready"], [rid])
+
     def test_observer_interrupt_does_not_cancel_worker(self):
         rid = self.run_record()
         p = subprocess.Popen([str(CONSILIUM), "delegate", "wait-any", rid], cwd=self.root,

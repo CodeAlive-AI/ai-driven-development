@@ -73,6 +73,36 @@ working roots. Parallel writers need separate user-authorized workspaces; do not
 create workspaces implicitly. Save ids and per-run event cursors across caller
 handoffs. Bounded waiting enables supervision but does not schedule it.
 
+### Keeping the parent active
+
+After launching workers, check each within its first minute. Continue useful
+parent work where possible; otherwise invoke `delegate wait-any RUN_A RUN_B
+--timeout 900` for the remaining ids (one id is also supported). Shorten the
+deadline when evidence or risk warrants an earlier inspection.
+
+Keep this observation attached to the active parent turn. In Codex, if
+`exec_command` returns a `session_id`, call `write_stdin` with empty input on
+that same session until it exits. If a wrapping `functions.exec` yields a
+running cell, resume it with `functions.wait` first, then inspect the returned
+command result for a shell session id. Use tool waits of at most 60 seconds
+within the CLI's 900-second deadline; a tool yield does not end the CLI wait.
+Other harnesses should use their equivalent process-wait tool.
+
+When the CLI returns:
+
+- Ready ids: collect each final answer with `wait`, inspect failures as well as
+  successes, review the work, and remove consumed ids from the pending set.
+- Exit 124: inspect actual events and relevant artifacts, steer if needed, and
+  wait again. This is a supervision opportunity, not worker failure.
+- Observation error or interruption: reconcile the pending runs before deciding
+  how to continue; do not launch replacements merely because waiting failed.
+
+Repeat while required work remains, unless the user stops or redirects the task
+or a blocker requires their input. Do not send a final response merely because
+workers are detached or a tool returned a running handle. Neither `--detach`
+nor `wait-any` installs a wake-up trigger after the parent turn ends; this loop
+avoids ending that turn in the first place.
+
 ## Durable Codex follow-ups
 
 ```bash

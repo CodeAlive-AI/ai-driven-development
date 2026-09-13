@@ -319,15 +319,27 @@ registry or `audit.jsonl` for routine progress monitoring.
 ### Parallel waiting and follow-up work
 
 For several independent workers, launch each with `--detach` from its exact
-working root, retain their run ids, then use `delegate wait-any RUN_A RUN_B
---timeout 60`. It returns bounded JSON progress and `ready` ids; collect each
+working root, retain their run ids, perform the first-minute checks, then use
+`delegate wait-any RUN_A RUN_B --timeout 900` when no useful parent work remains.
+Choose a shorter deadline when an earlier check is needed. It returns bounded
+JSON progress and `ready` ids; collect each
 ready result with `wait`, review it, and remove its id before waiting again.
 Parallel writers require separate user-authorized workspaces; read-only workers
 may share a root. Do not create workspaces just to enable parallelism.
 
 `wait RUN_ID --timeout 60 --json` also bounds observation. Exit 124 means the
 observer timed out, not that the worker failed; never cancel or resend the task
-because of it. These commands do not schedule the parent's supervision checks.
+because of it. On timeout, inspect real progress, steer if needed, and wait again.
+
+**Keep the parent turn active while awaiting work needed for the user's task.**
+Detached workers and background shell processes do not themselves arrange a
+future parent turn. If the execution tool yields a running session/cell id,
+continue waiting on that same handle through its native wait tool; a yield is
+not completion. Use short tool waits within the longer CLI deadline so the
+parent can respond to new input. Do not end with a final "agents are running"
+message and assume completion will wake you. This preserves an active turn;
+it does not revive one that has already ended. See the
+[caller wait loop](references/delegate.md#keeping-the-parent-active).
 
 When follow-up review or implementation is likely, opt into Codex persistence at
 launch: `delegate -a codex --persist-session [--detach] "task"`. After successful
