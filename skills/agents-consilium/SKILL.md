@@ -128,9 +128,12 @@ a successful launch or heartbeat alone does not confirm understanding.
 
 After this initial check, the parent is free to inspect the worker whenever
 common sense warrants it: for example, after a risky decision, new evidence,
-a blocker, or corrective steering. Roughly every 15 minutes is a general
-recommendation for ongoing work, not a mandatory schedule or a reason to delay
-an earlier check. Adapt the frequency to the task's risk and observed progress.
+a blocker, or corrective steering. Every 5–15 minutes is the recommended
+interval after the initial check:
+closer to 5 minutes for smaller tasks and shorter feedback cycles, and closer to
+15 minutes for larger tasks making steady progress. This is guidance, not a
+mandatory schedule or a reason to delay an earlier check. Adapt to risk and
+observed progress.
 Record the run id and launch time. Use resumable/background execution or
 `--detach` so blocking calls do not prevent the first-minute check or later
 supervision. This is a caller responsibility, not a CLI timer.
@@ -292,7 +295,7 @@ git diff HEAD | "$CONSILIUM" review code --progress compact --diff
 "$CONSILIUM" delegate steer run_<id> --mode auto "Keep the API compatible."
 "$CONSILIUM" delegate status run_<id> --json
 "$CONSILIUM" delegate events run_<id> --max-events 50
-"$CONSILIUM" delegate wait run_<id> --timeout 60 --json
+"$CONSILIUM" delegate wait run_<id> --timeout 300 --json
 
 # Read both quotas as JSON (or select codex/grok)
 "$CONSILIUM" quota
@@ -306,7 +309,7 @@ git diff HEAD | "$CONSILIUM" review code --progress compact --diff
 RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement SPEC.md.")
 "$CONSILIUM" delegate list --active
 "$CONSILIUM" delegate events "$RUN_ID" --max-events 50
-"$CONSILIUM" delegate wait "$RUN_ID" --timeout 60 --json  # return for supervision
+"$CONSILIUM" delegate wait "$RUN_ID" --timeout 300 --json  # return for supervision
 ```
 
 `steerable` means the run accepts control commands. Use `events` for one bounded,
@@ -321,7 +324,8 @@ registry or `audit.jsonl` for routine progress monitoring.
 For several independent workers, launch each with `--detach` from its exact
 working root, retain their run ids, perform the first-minute checks, then use
 `delegate wait-any RUN_A RUN_B --timeout 900` when no useful parent work remains.
-Choose a shorter deadline when an earlier check is needed. It returns bounded
+Choose a deadline of 300–900 seconds to match the next intended check; shorten
+it when an earlier check is needed. It returns bounded
 JSON progress and `ready` ids identifying terminal pending workers. Every result
 includes status and elapsed seconds for the whole supplied group. Collect each
 ready result with `wait` and review it. Keep all session group ids on subsequent
@@ -331,7 +335,7 @@ handoffs; do not infer session membership from the global registry or shared CWD
 Parallel writers require separate user-authorized workspaces; read-only workers
 may share a root. Do not create workspaces just to enable parallelism.
 
-`wait RUN_ID --timeout 60 --json` also bounds observation. Exit 124 means the
+`wait RUN_ID --timeout 300 --json` also bounds observation. Exit 124 means the
 observer timed out, not that the worker failed; never cancel or resend the task
 because of it. On timeout, inspect real progress, steer if needed, and wait again.
 
@@ -340,7 +344,11 @@ Detached workers and background shell processes do not themselves arrange a
 future parent turn. If the execution tool yields a running session/cell id,
 continue waiting on that same handle through its native wait tool; a yield is
 not completion. Use short tool waits within the longer CLI deadline so the
-parent can respond to new input. Do not end with a final "agents are running"
+parent can respond to new input. These tool-level yields are not supervision
+checkpoints: keep waiting on the same process instead of restarting Consilium
+every 55–60 seconds. The CLI deadline should match the next intended check
+(normally 5–15 minutes after the mandatory first-minute check). Do not end
+with a final "agents are running"
 message and assume completion will wake you. This preserves an active turn;
 it does not revive one that has already ended. See the
 [caller wait loop](references/delegate.md#keeping-the-parent-active).

@@ -133,7 +133,9 @@ For deeper, multi-stage reviews with a final judge, use `--depth super` or `--de
 The parent must check the worker within the first minute after launch to verify
 its understanding and initial direction, and correct it when needed. Afterwards,
 the parent chooses when to check based on the task and observed progress;
-roughly every 15 minutes is a general recommendation, not a fixed schedule.
+every 5–15 minutes is recommended depending on task scale: closer to 5 for
+smaller tasks, closer to 15 for larger tasks making steady progress. This is
+guidance, not a fixed schedule.
 It uses `delegate events` to inspect the work and sends a concrete
 `steer --mode auto` correction when needed. Healthy progress needs no steer.
 When progress is unclear, the parent requests evidence, resolves a blocker, or
@@ -152,7 +154,7 @@ RUN_ID=$(scripts/consilium delegate -a grok --detach \
   "Implement the task in SPEC.md and run the test suite.")
 
 scripts/consilium delegate events "$RUN_ID" --max-events 50
-scripts/consilium delegate wait "$RUN_ID" --timeout 60 --json
+scripts/consilium delegate wait "$RUN_ID" --timeout 300 --json
 ```
 
 `watch` is a lifecycle monitor, not a live tool or model-text stream. It reports
@@ -179,8 +181,8 @@ scripts/consilium delegate cancel run_<id>
 You can bound observation or wait for any of several workers:
 
 ```bash
-scripts/consilium delegate wait "$RUN_ID" --timeout 60 --json
-scripts/consilium delegate wait-any "$RUN_A" "$RUN_B" --timeout 60
+scripts/consilium delegate wait "$RUN_ID" --timeout 300 --json
+scripts/consilium delegate wait-any "$RUN_A" "$RUN_B" --timeout 300
 ```
 
 Exit 124 means the wait expired while workers continue. `wait-any` returns JSON

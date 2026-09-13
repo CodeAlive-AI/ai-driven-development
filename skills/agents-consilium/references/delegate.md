@@ -33,7 +33,7 @@ Delegate starts a long-lived single-agent session with a private filesystem mail
 "$CONSILIUM" delegate steer run_<id> --mode auto "Prefer Redis"
 "$CONSILIUM" delegate status run_<id> --json
 "$CONSILIUM" delegate events run_<id> --max-events 50
-"$CONSILIUM" delegate wait run_<id> --timeout 60 --json
+"$CONSILIUM" delegate wait run_<id> --timeout 300 --json
 "$CONSILIUM" delegate cancel run_<id>
 ```
 
@@ -50,8 +50,8 @@ RUN_ID=$("$CONSILIUM" delegate -a grok --detach "Implement the task")
 ## Bounded and group waiting
 
 ```bash
-"$CONSILIUM" delegate wait "$RUN_ID" --timeout 60 --json
-"$CONSILIUM" delegate wait-any "$RUN_A" "$RUN_B" --timeout 60
+"$CONSILIUM" delegate wait "$RUN_ID" --timeout 300 --json
+"$CONSILIUM" delegate wait-any "$RUN_A" "$RUN_B" --timeout 300
 ```
 
 `--timeout` is an observation deadline in seconds (finite, >= 0); `0` takes a
@@ -95,14 +95,17 @@ handoffs. Bounded waiting enables supervision but does not schedule it.
 After launching workers, check each within its first minute. Continue useful
 parent work where possible; otherwise invoke `delegate wait-any RUN_A RUN_B
 --timeout 900` for the remaining ids (one id is also supported). Shorten the
-deadline when evidence or risk warrants an earlier inspection.
+deadline to 300–900 seconds according to task scale and the next intended check;
+use less when evidence or risk warrants an earlier inspection.
 
 Keep this observation attached to the active parent turn. In Codex, if
 `exec_command` returns a `session_id`, call `write_stdin` with empty input on
 that same session until it exits. If a wrapping `functions.exec` yields a
 running cell, resume it with `functions.wait` first, then inspect the returned
 command result for a shell session id. Use tool waits of at most 60 seconds
-within the CLI's 900-second deadline; a tool yield does not end the CLI wait.
+within the longer CLI deadline; a tool yield does not end the CLI wait and is
+not a supervision checkpoint. Resume the same process instead of launching a
+new Consilium wait every 55–60 seconds.
 Other harnesses should use their equivalent process-wait tool.
 
 When the CLI returns:
@@ -195,9 +198,10 @@ review the result immediately. If startup has not yet produced substantive
 evidence, the check cannot establish understanding: retain that uncertainty and
 set a concrete near-term recheck. A heartbeat is not confirmation.
 
-After the initial check, use judgment to decide when to inspect again. Roughly
-every 15 minutes is a general recommendation for ongoing work, not a fixed
-requirement. Check sooner or more often when risk, new evidence, a blocker, or
+After the initial check, use judgment to decide when to inspect again. Every
+5–15 minutes is recommended: closer to 5 for smaller tasks and shorter feedback
+cycles, and closer to 15 for larger tasks making steady progress. This is not a
+fixed requirement. Check sooner or more often when risk, new evidence, a blocker, or
 a previous correction warrants it; adjust the cadence as the work develops.
 Record the launch time and run id. Arrange resumable/background execution or
 use `--detach` so blocking calls cannot prevent the first-minute check or later
@@ -362,7 +366,7 @@ Keep these concepts separate:
 | `wait-any` | First terminal target(s), bounded recent progress for each run | Full final answers or automatic removal of consumed ids |
 
 For a detached run, use `events` to assess progress and bounded
-`wait RUN_ID --timeout 60 --json` calls to return control for supervision. The
+`wait RUN_ID --timeout 300 --json` calls to return control for supervision. The
 observation timeout does not stop the worker. `watch` and unbounded `wait` are
 appropriate when supervision continues independently; they must not prevent the
 first-minute check or later intervention. Collect the final answer with `wait`
