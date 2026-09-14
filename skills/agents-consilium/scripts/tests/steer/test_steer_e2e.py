@@ -102,6 +102,8 @@ def start_steerable(agent: str, task: str, env: dict, cwd: Path):
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True,
+        # Timeout cleanup must never signal the test runner/CI agent's group.
+        start_new_session=True,
     )
     # Read stderr until run_id appears
     run_id = ""
@@ -137,7 +139,7 @@ def wait_proc(proc, timeout=30):
         return proc.returncode, out, err
     except subprocess.TimeoutExpired:
         try:
-            os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+            os.killpg(proc.pid, signal.SIGKILL)
         except Exception:
             try:
                 proc.kill()

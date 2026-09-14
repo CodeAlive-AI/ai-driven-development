@@ -190,6 +190,27 @@ else:
             with self.assertRaises(FileNotFoundError):
                 util.system_executable("taskkill.exe")
 
+    @unittest.skipIf(os.name == "nt", "POSIX E2E harness cleanup")
+    def test_e2e_timeout_does_not_kill_harness(self):
+        launcher = self.root / "fake-consilium"
+        launcher.write_text("#!/bin/sh\nprintf 'run_id=run_test\\n' >&2\nsleep 60\n", encoding="utf-8")
+        launcher.chmod(0o755)
+        # Isolate the driver from this test runner: the old harness killed
+        # its own process group on timeout, including the driver itself.
+        result = self.python("""
+import os,sys
+from pathlib import Path
+sys.path.insert(0, sys.argv[1])
+import test_steer_e2e as harness
+harness.CONSILIUM = Path(sys.argv[2])
+proc, _, _ = harness.start_steerable('fake', 'task', os.environ.copy(), Path(sys.argv[3]))
+code, _, _ = harness.wait_proc(proc, timeout=0.1)
+assert code == 99
+print('harness survived timeout')
+""", Path(__file__).resolve().parent / "steer", launcher, self.root, start_new_session=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("harness survived timeout", result.stdout)
+
     def test_terminal_guard_stops_completed_backend(self):
         event = '{"type":"session.complete"}'
         result = subprocess.run(

@@ -1631,13 +1631,12 @@ echo "=== Steerable delegate (deterministic fakes) ==="
 # Subprocess suite with its own counters; fold into PASS/FAIL.
 chmod +x "$FAKES"/steer/* 2>/dev/null || true
 set +e
-STEER_OUT=$(PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 "$TESTS_DIR/steer/test_steer_e2e.py" 2>&1)
-STEER_RC=$?
+PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 -u "$TESTS_DIR/steer/test_steer_e2e.py" 2>&1 | tee "$TMP/steer-suite.log"
+STEER_RC=${PIPESTATUS[0]}
 set -e
-printf '%s\n' "$STEER_OUT"
 # Parse "steer tests: N passed, M failed"
-steer_pass=$(printf '%s\n' "$STEER_OUT" | sed -n 's/.*steer tests: \([0-9]*\) passed.*/\1/p' | tail -1)
-steer_fail=$(printf '%s\n' "$STEER_OUT" | sed -n 's/.*steer tests: [0-9]* passed, \([0-9]*\) failed.*/\1/p' | tail -1)
+steer_pass=$(sed -n 's/.*steer tests: \([0-9]*\) passed.*/\1/p' "$TMP/steer-suite.log" | tail -1)
+steer_fail=$(sed -n 's/.*steer tests: [0-9]* passed, \([0-9]*\) failed.*/\1/p' "$TMP/steer-suite.log" | tail -1)
 steer_pass=${steer_pass:-0}
 steer_fail=${steer_fail:-1}
 PASS=$((PASS + steer_pass))
