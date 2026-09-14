@@ -46,6 +46,20 @@ class PlatformTests(unittest.TestCase):
             importlib.import_module(module.name)
         importlib.import_module("terminal_guard")
 
+    def test_steer_guidance_after_flags_and_root_option(self):
+        from steer import control
+        for tail in (["guidance text", "--mode", "queue"],
+                     ["--mode", "queue", "guidance text"],
+                     ["--mode", "queue", "--", "--literal guidance"]):
+            captured = []
+            with patch.object(control, "cmd_steer", side_effect=lambda args: captured.append(args) or 0):
+                result = control.main(["--registry-root", str(self.root), "steer", "run_test", *tail])
+            self.assertEqual(result, 0)
+            self.assertEqual(captured[0].guidance, "--literal guidance" if "--" in tail else "guidance text")
+            self.assertEqual(captured[0].mode, "queue")
+            self.assertEqual(captured[0].registry_root, str(self.root))
+            self.assertEqual(captured[0].run_id, "run_test")
+
     def test_liveness_does_not_kill(self):
         child = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(30)"])
         try:

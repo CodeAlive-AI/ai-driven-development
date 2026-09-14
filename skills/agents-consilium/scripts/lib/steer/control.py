@@ -928,7 +928,23 @@ def main(argv: Optional[list] = None) -> int:
     ls.add_argument("--json", action="store_true")
     ls.set_defaults(func=cmd_list)
 
-    args = p.parse_args(argv)
+    # Python 3.11's ordinary subparser rejects optional positional guidance
+    # after flags (steer RUN --mode queue "text"). Intermixed parsing supports
+    # that public syntax, but cannot itself handle subparsers. Dispatch the
+    # command first, keeping its remaining arguments opaque, then parse them.
+    dispatch = argparse.ArgumentParser(prog=p.prog, add_help=False)
+    dispatch.add_argument("-h", "--help", action="store_true")
+    dispatch.add_argument("--registry-root", default=os.environ.get("CONSILIUM_STEER_DIR", ""))
+    dispatch.add_argument("cmd", nargs="?", choices=sub.choices)
+    dispatch.add_argument("command_args", nargs=argparse.REMAINDER)
+    header = dispatch.parse_args(argv)
+    if header.help or header.cmd is None:
+        # Preserve the complete top-level help and missing-command diagnostic.
+        args = p.parse_args(argv)
+    else:
+        args = sub.choices[header.cmd].parse_intermixed_args(header.command_args)
+        args.cmd = header.cmd
+        args.registry_root = header.registry_root
     if not args.registry_root:
         args.registry_root = ""
     # empty --client-id → None so mailbox generates one

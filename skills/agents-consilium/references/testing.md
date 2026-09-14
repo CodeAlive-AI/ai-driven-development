@@ -48,7 +48,8 @@ native Python (3.11+). These tests spend no model tokens and cover all steer
 imports, non-destructive PID probes, locks shared by two processes, nonblocking
 wait deadlines, exclusive session claims/no replay, process-tree cleanup,
 terminal-guard shutdown, and native supervisor Codex continuation. Windows also
-checks Python/shell/batch launcher argument handling. Symlink rejection is
+checks Python/shell/batch launcher argument handling. Steering guidance after
+options is tested on Python 3.11 as well as newer runtimes. Symlink rejection is
 checked where the OS permits creating symlinks.
 
 GitHub Actions runs these checks on Windows, Linux, and macOS, plus LF-only
