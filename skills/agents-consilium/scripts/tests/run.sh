@@ -1654,6 +1654,13 @@ else
   FAIL=$((FAIL + 1))
 fi
 
+# Portable locking, process lifetime, launchers, and native supervisor checks.
+if PYTHONDONTWRITEBYTECODE=1 python3 "$TESTS_DIR/platform_test.py"; then
+  PASS=$((PASS + 1))
+else
+  FAIL=$((FAIL + 1))
+fi
+
 # CLI surface for steerable modes
 help_out=$("$CONSILIUM" delegate -h 2>&1) || true
 assert_contains "delegate help mentions steerable" "$help_out" "steerable"

@@ -40,3 +40,17 @@ Opt-in real smoke tests spend tokens:
 ```bash
 CONSILIUM_STEER_SMOKE=1 bash scripts/tests/steer/smoke_real.sh -a grok
 ```
+
+## Cross-platform checks
+
+Run `python scripts/tests/platform_test.py -v` from the skill directory with
+native Python (3.11+). These tests spend no model tokens and cover all steer
+imports, non-destructive PID probes, locks shared by two processes, nonblocking
+wait deadlines, exclusive session claims/no replay, process-tree cleanup,
+terminal-guard shutdown, and native supervisor Codex continuation. Windows also
+checks Python/shell/batch launcher argument handling. Symlink rejection is
+checked where the OS permits creating symlinks.
+
+GitHub Actions runs these checks on Windows, Linux, and macOS, plus LF-only
+config output and CLI help. The full existing shell suite runs on Linux/macOS;
+its POSIX path and executable assumptions are not a Windows gate yet.

@@ -22,10 +22,19 @@ from .util import (
 TERMINAL_STATUSES = frozenset({"completed", "failed", "cancelled"})
 
 
+def current_uid() -> int:
+    """os.getuid() on POSIX; 0 on Windows to match path_owner_uid()'s st_uid."""
+    return os.getuid() if os.name != "nt" else 0
+
+
 def default_registry_root() -> Path:
     override = os.environ.get("CONSILIUM_STEER_DIR")
     if override:
         return Path(override).expanduser()
+    if os.name == "nt":
+        local_appdata = os.environ.get("LOCALAPPDATA")
+        base = Path(local_appdata) if local_appdata else Path.home() / "AppData" / "Local"
+        return base / "agents-consilium" / "steer"
     xdg = os.environ.get("XDG_CACHE_HOME")
     if xdg:
         return Path(xdg) / "agents-consilium" / "steer"
@@ -91,7 +100,7 @@ class Registry:
         ensure_dir(rdir, DIR_MODE)
         for sub in ("mailbox", "control", "steers", "turns"):
             ensure_dir(rdir / sub, DIR_MODE)
-        uid = owner_uid if owner_uid is not None else os.getuid()
+        uid = owner_uid if owner_uid is not None else current_uid()
         if uid is None:
             raise RegistryError("owner_uid is required", exit_code=5)
         meta = {
@@ -136,9 +145,9 @@ class Registry:
             dir_uid = path_owner_uid(rdir)
         except OSError as e:
             raise RegistryError(f"cannot stat run dir: {run_id}: {e}", exit_code=5) from e
-        if dir_uid != os.getuid():
+        if dir_uid != current_uid():
             raise RegistryError(
-                f"run dir owner uid {dir_uid} != current uid {os.getuid()}: {run_id}",
+                f"run dir owner uid {dir_uid} != current uid {current_uid()}: {run_id}",
                 exit_code=5,
             )
 
@@ -162,7 +171,7 @@ class Registry:
             raise RegistryError(
                 f"invalid owner_uid in meta for run: {run_id}", exit_code=5
             ) from e
-        if owner != os.getuid():
+        if owner != current_uid():
             raise RegistryError(f"run owned by different uid: {run_id}", exit_code=5)
         # Cross-check directory owner
         dir_uid = path_owner_uid(rdir)
@@ -179,7 +188,7 @@ class Registry:
         meta.update(fields)
         # Never drop owner_uid
         if meta.get("owner_uid") is None:
-            meta["owner_uid"] = os.getuid()
+            meta["owner_uid"] = current_uid()
         meta["updated_at"] = utc_now_iso()
         atomic_write_json(rdir / "meta.json", meta)
         return meta
@@ -211,7 +220,7 @@ class Registry:
         recovered.update(
             {
                 "run_id": run_id,
-                "owner_uid": os.getuid(),
+                "owner_uid": current_uid(),
                 "recovered_at": utc_now_iso(),
                 "recovery_reason": reason,
                 "updated_at": utc_now_iso(),

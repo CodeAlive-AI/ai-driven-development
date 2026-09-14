@@ -8,6 +8,8 @@ import threading
 import time
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
+from .util import detached_popen_kwargs, resolve_argv
+
 
 class JsonRpcProcess:
     """
@@ -45,17 +47,18 @@ class JsonRpcProcess:
         self._exit_code: Optional[int] = None
 
     def start(self) -> None:
-        self.proc = subprocess.Popen(
-            self.argv,
+        popen_kwargs: Dict[str, Any] = dict(
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             env=self.env,
             text=True,
+            encoding="utf-8",
             bufsize=1,
-            start_new_session=True,
         )
+        popen_kwargs.update(detached_popen_kwargs())
+        self.proc = subprocess.Popen(resolve_argv(self.argv, cwd=self.cwd, env=self.env), **popen_kwargs)
         self._reader = threading.Thread(target=self._read_stdout, daemon=True)
         self._reader.start()
         self._stderr_thread = threading.Thread(target=self._read_stderr, daemon=True)

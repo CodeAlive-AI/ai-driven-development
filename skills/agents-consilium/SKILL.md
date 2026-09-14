@@ -7,6 +7,14 @@ description: "Run external coding agents (Codex, Claude Code, OpenCode, native G
 
 Resolve the entrypoint below, then use only `"$CONSILIUM"`. Select the mode from the user's intent and load only the linked reference needed for that mode.
 
+## Platforms
+
+Linux/macOS use the full offline suite. Windows 11 + Git Bash/MSYS2 + native
+Python 3.11+ is experimental and community-supported; native supervisor and
+platform regressions run in CI. Use Git Bash for the shell entrypoint and a
+private per-user registry. See [README.md](README.md#platform-support) for the
+verified scope and launcher limitations.
+
 ## Entrypoint resolution
 
 Set `CONSILIUM` to the `consilium` executable in the `scripts` subdirectory of the exact

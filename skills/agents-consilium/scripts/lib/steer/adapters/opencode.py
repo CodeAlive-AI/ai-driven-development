@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional
 from urllib.parse import quote, urlparse
 
-from ..util import is_loopback_url, kill_process_group
+from ..util import detached_popen_kwargs, is_loopback_url, kill_process_group, resolve_argv
 from .base import AdapterEvent, BackendAdapter, DeliveryClass, SteerResult
 
 # Default OpenCode basic-auth username when OPENCODE_SERVER_USERNAME is unset.
@@ -138,15 +138,16 @@ class OpenCodeAdapter(BackendAdapter):
             }
         )
         self.proc = subprocess.Popen(
-            self._argv(),
+            resolve_argv(self._argv(), cwd=self.cwd),
             stdin=subprocess.DEVNULL,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             env=self._child_env(),
             text=True,
+            encoding="utf-8",
             bufsize=1,
-            start_new_session=True,
+            **detached_popen_kwargs(),
         )
         # Drain both pipes so a chatty serve process cannot block on a full buffer.
         self._stderr_thread = threading.Thread(

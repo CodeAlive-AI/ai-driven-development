@@ -13,11 +13,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import queue
 import signal
 import subprocess
 import sys
 import threading
 from typing import Any
+
+from steer.util import detached_popen_kwargs, resolve_argv, taskkill_tree
 
 
 OPENCODE_TERMINAL_TYPES = {
@@ -52,13 +55,39 @@ def is_terminal(line: bytes, backend: str) -> bool:
     return isinstance(event, dict) and str(event.get("type") or "") in OPENCODE_TERMINAL_TYPES
 
 
+IS_WINDOWS = os.name == "nt"
+
+
+def signal_tree(proc: subprocess.Popen[bytes], *, force: bool) -> None:
+    """Signal the child's whole process tree, best effort.
+
+    Windows has no process groups in the POSIX sense and no SIGTERM/SIGKILL
+    distinction for another process, so Windows uses forced taskkill /T.
+    """
+    if IS_WINDOWS:
+        taskkill_tree(proc.pid)
+        return
+    try:
+        os.killpg(proc.pid, signal.SIGKILL if force else signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+
+
+def termination_signals() -> tuple[int, ...]:
+    """Signals that mean "shut down" on this platform.
+
+    SIGHUP does not exist on Windows; SIGBREAK is its closest analogue.
+    """
+    if IS_WINDOWS:
+        extra = getattr(signal, "SIGBREAK", None)
+        return (signal.SIGTERM,) + ((extra,) if extra is not None else ())
+    return (signal.SIGTERM, signal.SIGHUP)
+
+
 def stop_process_group(proc: subprocess.Popen[bytes]) -> None:
     if proc.poll() is not None:
         return
-    try:
-        os.killpg(proc.pid, signal.SIGTERM)
-    except ProcessLookupError:
-        return
+    signal_tree(proc, force=False)
 
 
 def terminate_and_reap(proc: subprocess.Popen[bytes], timeout: float = 1.0) -> None:
@@ -72,10 +101,7 @@ def terminate_and_reap(proc: subprocess.Popen[bytes], timeout: float = 1.0) -> N
         return
     except subprocess.TimeoutExpired:
         pass
-    try:
-        os.killpg(proc.pid, signal.SIGKILL)
-    except ProcessLookupError:
-        pass
+    signal_tree(proc, force=True)
     proc.wait()
 
 
@@ -98,11 +124,11 @@ def main() -> int:
         parser.error("--terminal-grace must be non-negative")
 
     proc = subprocess.Popen(
-        command,
+        resolve_argv(command),
         stdin=sys.stdin.buffer,
         stdout=subprocess.PIPE,
         stderr=None,
-        start_new_session=True,
+        **detached_popen_kwargs(),
     )
     assert proc.stdout is not None
 
@@ -110,18 +136,19 @@ def main() -> int:
         raise TerminationRequested(signum)
 
     previous_handlers: dict[int, Any] = {}
-    for signum in (signal.SIGTERM, signal.SIGHUP):
+    for signum in termination_signals():
         previous_handlers[signum] = signal.signal(signum, request_termination)
     forced_shutdown = threading.Event()
     terminal_timer: threading.Timer | None = None
     kill_timer: threading.Timer | None = None
+    shutdown_errors: queue.Queue[Exception] = queue.Queue()
 
     def kill_if_still_running() -> None:
-        if proc.poll() is None:
-            try:
-                os.killpg(proc.pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
+        try:
+            if proc.poll() is None:
+                signal_tree(proc, force=True)
+        except Exception as exc:
+            shutdown_errors.put(exc)
 
     def expire_terminal_grace() -> None:
         nonlocal kill_timer
@@ -133,13 +160,45 @@ def main() -> int:
             "terminating the completed CLI process",
             file=sys.stderr,
         )
-        stop_process_group(proc)
+        try:
+            stop_process_group(proc)
+        except Exception as exc:
+            shutdown_errors.put(exc)
+            return
         kill_timer = threading.Timer(1.0, kill_if_still_running)
         kill_timer.daemon = True
         kill_timer.start()
 
+    # Reading in a daemon lets the main thread surface a failed timer cleanup
+    # even when the backend keeps stdout open. Bound queued output, not content.
+    lines: queue.Queue[Any] = queue.Queue(maxsize=256)
+
+    def read_stdout() -> None:
+        try:
+            for line in iter(proc.stdout.readline, b""):
+                lines.put(line)
+        except Exception as exc:
+            lines.put(exc)
+        finally:
+            lines.put(None)
+
+    threading.Thread(target=read_stdout, daemon=True).start()
     try:
-        for line in iter(proc.stdout.readline, b""):
+        while True:
+            try:
+                failure = shutdown_errors.get_nowait()
+            except queue.Empty:
+                pass
+            else:
+                raise RuntimeError("backend process-tree cleanup failed") from failure
+            try:
+                line = lines.get(timeout=0.1)
+            except queue.Empty:
+                continue
+            if line is None:
+                break
+            if isinstance(line, Exception):
+                raise line
             sys.stdout.buffer.write(line)
             sys.stdout.buffer.flush()
             if is_terminal(line, args.backend) and terminal_timer is None:
@@ -153,6 +212,14 @@ def main() -> int:
                 terminal_timer.daemon = True
                 terminal_timer.start()
         return_code = proc.wait()
+        # A running timer may still be checking taskkill's result after the
+        # process closes stdout. Wait for that result before declaring success.
+        for timer in (terminal_timer, kill_timer):
+            if timer is not None:
+                timer.cancel()
+                timer.join()
+        if not shutdown_errors.empty():
+            raise RuntimeError("backend process-tree cleanup failed") from shutdown_errors.get()
         return 0 if forced_shutdown.is_set() else return_code
     except KeyboardInterrupt:
         terminate_and_reap(proc)

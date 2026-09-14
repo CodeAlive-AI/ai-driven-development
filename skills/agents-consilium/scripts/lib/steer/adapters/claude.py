@@ -9,7 +9,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional
 
-from ..util import kill_process_group
+from ..util import detached_popen_kwargs, kill_process_group, resolve_argv
 from .base import AdapterEvent, BackendAdapter, DeliveryClass, SteerResult
 
 
@@ -59,14 +59,15 @@ class ClaudeAdapter(BackendAdapter):
         self._raw_path.parent.mkdir(parents=True, exist_ok=True)
         self._norm_path.parent.mkdir(parents=True, exist_ok=True)
         self.proc = subprocess.Popen(
-            self._argv(),
+            resolve_argv(self._argv(), cwd=self.cwd),
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd=self.cwd,
             text=True,
+            encoding="utf-8",
             bufsize=1,
-            start_new_session=True,
+            **detached_popen_kwargs(),
         )
         self._reader = threading.Thread(target=self._read_loop, daemon=True)
         self._reader.start()

@@ -1117,7 +1117,21 @@ def main(argv: Optional[list] = None) -> int:
         action="store_true",
         help="become a session leader so the caller's SIGINT/SIGHUP cannot reach this run",
     )
-    args = p.parse_args(argv)
+    raw_args = list(sys.argv[1:] if argv is None else argv)
+    args = p.parse_args(raw_args)
+    if args.detach_setsid and os.name == "nt":
+        # The shell launched THIS process without Windows creation flags.
+        # Detaching backend children alone would leave their supervisor tied
+        # to the caller's console. Re-exec it without a console, preserving
+        # redirected log handles and the run-id handshake.
+        import subprocess
+        child = subprocess.Popen(
+            [sys.executable, "-m", "steer.supervisor",
+             *[arg for arg in raw_args if arg != "--detach-setsid"]],
+            stdin=subprocess.DEVNULL, stdout=sys.stdout, stderr=sys.stderr,
+            creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP,
+        )
+        return child.wait()
     if args.detach_setsid:
         # Not cosmetic: without a new session a Ctrl-C or teardown aimed at the
         # caller's process group would tear down the delegated run and its whole

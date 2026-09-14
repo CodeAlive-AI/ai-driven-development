@@ -6,13 +6,12 @@ instead of making the previous successful turn available for blind redelivery.
 """
 from __future__ import annotations
 
-import fcntl
 import os
 from pathlib import Path
 from typing import Any, Dict
 
 from .registry import Registry, RegistryError
-from .util import atomic_write_json, read_json
+from .util import atomic_write_json, read_json, open_lock_fd, lock_exclusive
 
 
 class SessionLease:
@@ -45,9 +44,9 @@ class SessionLease:
                 raise RegistryError("continue requires the original working directory")
         anchor_dir = self.registry.run_path(anchor)
         lock_path = anchor_dir / "control" / "session.lock"
-        self._fd = os.open(lock_path, os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW, 0o600)
+        self._fd = open_lock_fd(lock_path)
         try:
-            fcntl.flock(self._fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            lock_exclusive(self._fd, blocking=False)
             state_path = anchor_dir / "session.json"
             if self.source:
                 if not state_path.is_file():

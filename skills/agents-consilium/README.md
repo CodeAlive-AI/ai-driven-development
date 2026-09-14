@@ -17,6 +17,28 @@ Each worker runs through its real coding-agent harness, with access to the tools
 
 **Steering support:** long-running delegated agents are not fire-and-forget. You can send new guidance while they work, redirect the next turn, inspect status, watch progress, cancel a run, or detach and collect the result later.
 
+## Platform support
+
+Linux and macOS are covered by the full offline regression suite. Windows 11
+with Git Bash/MSYS2 and native Python 3.11+ has experimental, community-supported
+compatibility. Run shell commands from Git Bash; native PowerShell/cmd invocation
+is not the shell interface.
+
+CI checks Windows imports, LF config output, cross-process locking, bounded
+observation, process-tree cancellation, CLI launchers, and a fake Codex durable
+session/follow-up through the native supervisor. The full POSIX shell harness
+and every real provider CLI are not yet Windows-certified.
+
+Native executables and sh/bash, Python, and Node shebang launchers are supported.
+For npm installs, the sibling shell launcher is preferred over a batch shim.
+Batch-only launchers reject shell metacharacters in arguments; use an executable
+or supported shebang launcher when those arguments are needed. Keep the Windows
+registry in the default per-user LocalAppData directory (or an equally private
+location): POSIX uid/mode checks do not implement Windows ACL isolation.
+
+Installed plugin updates replace vendored files. Submit fixes upstream; local
+edits inside an installation are not a persistent customization mechanism.
+
 ## Two ways to use it
 
 | Mode | What it does | Repository access |
