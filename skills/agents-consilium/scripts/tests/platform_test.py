@@ -211,6 +211,20 @@ print('harness survived timeout')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("harness survived timeout", result.stdout)
 
+    def test_fake_opencode_startup_does_not_depend_on_dns(self):
+        import contextlib
+        import io
+        import runpy
+        fake = Path(__file__).resolve().parent / "fakes/steer/fake-opencode-steer"
+        namespace = runpy.run_path(str(fake))
+        namespace["STATE"].done = True
+        output = io.StringIO()
+        with patch("socket.getfqdn", side_effect=AssertionError("offline fake attempted DNS")), \
+             patch.object(sys, "argv", [str(fake), "serve", "--hostname", "127.0.0.1", "--port", "0"]), \
+             contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):
+            self.assertEqual(namespace["main"](), 0)
+        self.assertIn("listening on http://127.0.0.1:", output.getvalue())
+
     def test_terminal_guard_stops_completed_backend(self):
         event = '{"type":"session.complete"}'
         result = subprocess.run(
