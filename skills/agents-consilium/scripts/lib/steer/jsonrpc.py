@@ -68,6 +68,10 @@ class JsonRpcProcess:
         self.raw_out_path = path
         self._raw_fp = open(path, "a", encoding="utf-8")
 
+    def set_raw_out_fp(self, fp) -> None:
+        """Attach an already-open file-like object for raw wire capture."""
+        self._raw_fp = fp
+
     def _write_raw(self, line: str) -> None:
         if self._raw_fp:
             self._raw_fp.write(line if line.endswith("\n") else line + "\n")
@@ -181,6 +185,11 @@ class JsonRpcProcess:
             err = resp["error"]
             raise RuntimeError(f"JSON-RPC error method={method}: {err}")
         return resp.get("result")
+
+    def drop_pending(self, rid: Any) -> None:
+        """Discard a pending request entry after a manual queue wait."""
+        with self._lock:
+            self._pending.pop(rid, None)
 
     def request(
         self,

@@ -76,7 +76,7 @@ Live progress (all review depths)
 delegate
   Full-YOLO: run exactly one agent in the current directory with no sandbox
   and no approval prompts. Requires -a <exact-agent-id> (no globs, no default).
-  Supported backends: codex-cli, claude-code, opencode, grok-build.
+  Supported backends: codex-cli, claude-code, opencode, grok-build, devin-cli.
   Gemini is review-only.
   Starts a long-lived session with mailbox steer/status/cancel by default.
   --steerable is an explicit alias for the default; --one-shot uses the legacy

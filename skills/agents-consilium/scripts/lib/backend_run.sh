@@ -18,7 +18,7 @@
 #
 # Env overrides (tests use these to inject fake CLIs):
 #   CONSILIUM_BIN_CODEX / CONSILIUM_BIN_CLAUDE / CONSILIUM_BIN_OPENCODE
-#   CONSILIUM_BIN_GEMINI / CONSILIUM_BIN_GROK
+#   CONSILIUM_BIN_GEMINI / CONSILIUM_BIN_GROK / CONSILIUM_BIN_DEVIN
 #   CONSILIUM_DUMP_ARGV=<path>  — if set, write the exact argv array as JSONL and exit 0
 #                                 without executing (used by argv safety tests).
 #
@@ -175,6 +175,9 @@ else
         gemini-cli)
             MODEL="${GEMINI_MODEL:-$MODEL}"
             ;;
+        devin-cli)
+            MODEL="${DEVIN_MODEL:-$MODEL}"
+            ;;
     esac
     BIN=""
 fi
@@ -278,6 +281,7 @@ bin_for() {
         opencode)    echo "${CONSILIUM_BIN_OPENCODE:-opencode}" ;;
         gemini-cli)  echo "${CONSILIUM_BIN_GEMINI:-gemini}" ;;
         grok-build)  echo "${CONSILIUM_BIN_GROK:-grok}" ;;
+        devin-cli)   echo "${CONSILIUM_BIN_DEVIN:-devin}" ;;
         *)           echo "" ;;
     esac
 }
@@ -489,12 +493,32 @@ build_cmd_grok() {
     PROMPT_VIA_FILE=1
 }
 
+build_cmd_devin() {
+    # Devin runs through `devin acp` (JSON-RPC over stdio) rather than print
+    # mode: in `devin -p` a denied or confirmation-required tool call cancels
+    # the whole session with no final text, so read-only review cannot be
+    # enforced with config deny rules. `devin acp --agent-type review` is a
+    # read-only + shell agent with no write/edit tools at all, so the boundary
+    # holds by construction; exec stays available and is trusted to the
+    # report-only prompt contract, same as claude-code. Delegate (yolo) uses
+    # the default agent type plus session/set_mode bypass. The ACP helper
+    # strips ACP_BACKEND from the child env — inside Devin Desktop it is
+    # inherited as windsurf and the CLI reports "Not logged in".
+    CMD=(
+        python3 "$LIB_DIR/devin_acp_oneshot.py"
+        --binary "$BIN" --model "$MODEL" --cwd "$PWD"
+        --access "$ACCESS_POLICY" --web "${MODE_CAP_WEB:-false}"
+    )
+    PROMPT_VIA_FILE=1
+}
+
 case "$BACKEND" in
     codex-cli)   build_cmd_codex ;;
     claude-code) build_cmd_claude ;;
     opencode)    build_cmd_opencode ;;
     gemini-cli)  build_cmd_gemini ;;
     grok-build)  build_cmd_grok ;;
+    devin-cli)   build_cmd_devin ;;
 esac
 
 # Argv dump mode for tests — exact safety properties without executing
@@ -846,6 +870,25 @@ if text: open(sys.argv[2],"w",encoding="utf-8").write(text)
             # --prompt-file is the large-prompt one-shot headless path (see grok --help)
             run_streamed "grok-build" "" "${CMD[@]}" --prompt-file "$PROMPT_PATH"
             exit_code=$BACKEND_RC
+            ;;
+        devin-cli)
+            # The ACP helper emits the raw JSON-RPC stream on stdout for
+            # normalization; --prompt-file keeps large prompts off argv.
+            if command -v "$BIN" &>/dev/null || [[ -x "$BIN" ]]; then
+                run_streamed "devin-cli" "" "${CMD[@]}" --prompt-file "$PROMPT_PATH"
+                exit_code=$BACKEND_RC
+            else
+                echo "devin CLI missing" >"$BACKEND_ERR"
+                exit_code=4
+            fi
+            # Raw stream is JSON-RPC, not answer text: fall back through the
+            # normalizer so only agent_message_chunk text becomes final.
+            if [[ ! -s "$FINAL_TEXT" && -s "$RAW_STREAM" ]]; then
+                python3 "$LIB_DIR/normalize_stream.py" \
+                    --backend devin-cli --agent-id "$AGENT_ID" \
+                    --input "$RAW_STREAM" --extract-text --text-out "$FINAL_TEXT" \
+                    --no-validate >/dev/null 2>/dev/null || true
+            fi
             ;;
     esac
     # Non-zero `return` under `set -e` aborts the whole script before the

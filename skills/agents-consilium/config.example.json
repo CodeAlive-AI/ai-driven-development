@@ -65,6 +65,13 @@
       "role": "analyst",
       "label": "Grok 4.5 (fast context research, disabled)"
     },
+    "devin": {
+      "enabled": false,
+      "backend": "devin-cli",
+      "model": "swe-2-high",
+      "role": "analyst",
+      "label": "Devin SWE-2"
+    },
     "opencode-xai-grok45": {
       "enabled": false,
       "backend": "opencode",

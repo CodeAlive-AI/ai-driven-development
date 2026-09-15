@@ -1,6 +1,6 @@
 ---
 name: agents-consilium
-description: "Run external coding agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini) as independent reviewers, stateful repository researchers, or single-agent implementers. Use for multi-model opinions and code review, steerable Grok research, full-access delegation, long-running work, or reattaching to delegated runs. Not for simple questions answerable directly from docs or the current codebase."
+description: "Run external coding agents (Codex, Claude Code, OpenCode, native Grok Build, Gemini, Devin CLI) as independent reviewers, stateful repository researchers, or single-agent implementers. Use for multi-model opinions and code review, steerable Grok research, full-access delegation, long-running work, or reattaching to delegated runs. Not for simple questions answerable directly from docs or the current codebase."
 ---
 
 # Agents Consilium
@@ -51,6 +51,7 @@ Use these unless the user asks for a different tradeoff:
 - The `grok` profile is Grok 4.6 and is the default native Grok Build worker. Use the disabled-by-default `grok-fast` profile explicitly for fast context research with Grok 4.5.
 - GPT-6 Astra is an explicit Codex second opinion for difficult specification verification or optimization planning. Select it with `-a codex`; do not add it to routine research or the default review pool.
 - The `claude-fable` profile runs Claude Fable 5.1 for demanding long-horizon review or delegation. Its default `low` effort is cost-conscious; override it with `CLAUDE_EFFORT=high`, `xhigh`, or `max` when capability matters more than latency and cost.
+- The `devin` profile runs Devin CLI SWE-2-high (`devin` on PATH, `devin auth login`) for review and delegate over `devin acp`. It is disabled by default and never joins the default review pool: select it with `-a devin` or enable the profile. Effort is versioned into the model id, so there is no effort override; `auto`/`queue` steer merges into the running turn and `interrupt` cancels and sends.
 
 Choose one review depth; do not run `basic`, `specialists`, `super`, and `ultra` sequentially. Do not call `--list-agents` routinely: enabled profiles are already the default pool for `review ask`, and code-review pass count is fixed by depth.
 
@@ -384,7 +385,9 @@ See [delegate details](references/delegate.md#changing-approach-and-preserving-w
 
 Steering is asynchronous on every backend, and on Grok it always runs as a new
 turn: `auto`/`queue` guidance waits for the current turn unless the agent is
-blocked in a tool call, so it can look ignored for minutes. Write each steer as
+blocked in a tool call, so it can look ignored for minutes. On Devin CLI
+`auto`/`queue` instead merge into the running turn, and `interrupt` cancels
+the in-flight prompt before sending. Write each steer as
 a self-contained instruction, avoid duplicate delivery, and verify the effect through
 task artifacts — see [references/delegate.md](references/delegate.md).
 

@@ -10,7 +10,7 @@ For example:
 
 - send repository research to a stateful Grok 4.6 worker that can be steered and continued, with Grok 4.5 available as a fast context-research profile;
 - ask Claude Fable to produce an independent plan;
-- delegate an implementation to Codex, Claude, Grok, or OpenCode;
+- delegate an implementation to Codex, Claude, Grok, OpenCode, or Devin;
 - review the same change with several unrelated model families and compare what they find.
 
 Each worker runs through its real coding-agent harness, with access to the tools and repository context appropriate for the selected mode. This is not role-play inside one model.
@@ -67,6 +67,7 @@ You also need Python 3 and at least one supported coding-agent CLI:
 | [Claude Code](https://docs.claude.com/claude-code) | `claude` | review, delegate |
 | [OpenCode](https://opencode.ai) | `opencode` | review, delegate |
 | [Grok Build](https://grok.x.ai) | `grok` | review, delegate |
+| [Devin CLI](https://devin.ai) | `devin` | review, delegate |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | review only |
 
 Authentication stays with each CLI. If it already works in your terminal, Consilium can use it.
@@ -273,7 +274,7 @@ CLAUDE_EFFORT=medium scripts/consilium review ask \
   -a claude-fable --prompt-file prompt.md
 ```
 
-Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, and `GEMINI_MODEL`.
+Available overrides: `CODEX_MODEL` / `CODEX_EFFORT`, `CLAUDE_MODEL` / `CLAUDE_EFFORT`, `OPENCODE_MODEL` / `OPENCODE_EFFORT`, `GROK_MODEL` / `GROK_EFFORT`, `GEMINI_MODEL`, and `DEVIN_MODEL`.
 
 ## Safety and output
 

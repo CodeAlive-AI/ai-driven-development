@@ -18,6 +18,7 @@ export CONSILIUM_BIN_CLAUDE="$FAKES/fake-claude"
 export CONSILIUM_BIN_OPENCODE="$FAKES/fake-opencode"
 export CONSILIUM_BIN_GROK="$FAKES/fake-grok"
 export CONSILIUM_BIN_GEMINI="$FAKES/fake-gemini"
+export CONSILIUM_BIN_DEVIN="$FAKES/fake-devin"
 export CONSILIUM_SUPPRESS_SHELL_WARN=1
 # Parent shells (prior delegate runs, harnesses) must not leak mode wrappers
 # into the offline suite.
@@ -375,6 +376,118 @@ assert_eq "gemini empty-answer exit 66" "$gem_empty_rc" "66"
 assert_contains "gemini empty message" "$(cat "$TMP/gem-empty.err")" "empty"
 export CONSILIUM_FAKE_GEMINI_MODE=ok
 
+# Devin CLI one-shot runs through `devin acp` (ACP JSON-RPC over stdio) via
+# the devin_acp_oneshot.py helper: readonly → --agent-type review (a read-only
+# + shell agent, no write/edit tools); yolo → session/set_mode bypass.
+dump_review devin "$TMP/devin-review.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/devin-review.json"'"))["argv"]))')
+assert_contains "devin review uses ACP one-shot driver" "$argv" "devin_acp_oneshot.py"
+assert_contains "devin review passes readonly access" "$argv" "--access readonly"
+assert_contains "devin review selects SWE-2" "$argv" "--model swe-2-high"
+assert_contains "devin review prompt-file placeholder" "$argv" "--prompt-file __PROMPT_FILE__"
+assert_not_contains "devin review no print-mode permission flag" "$argv" "--permission-mode"
+assert_not_contains "devin review no runtime config" "$argv" "--config"
+dump_delegate devin "$TMP/devin-delegate.json"
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/devin-delegate.json"'"))["argv"]))')
+assert_contains "devin delegate passes yolo access" "$argv" "--access yolo"
+
+DEVIN_MODEL="devin-override" CONSILIUM_DUMP_ARGV="$TMP/devin-overrides.json" \
+  "$LIB_DIR/backend_run.sh" --mode review --agent-id devin --raw "hello" >/dev/null
+argv=$(python3 -c 'import json; print(" ".join(json.load(open("'"$TMP/devin-overrides.json"'"))["argv"]))')
+assert_contains "devin shell runner honors DEVIN_MODEL" "$argv" "--model devin-override"
+
+# Devin happy path: stdout answer (thought excluded), artifacts, ACP env contract.
+# ACP_BACKEND=windsurf is exported to prove the helper strips it (real Devin
+# reports "Not logged in" when it leaks through from Devin Desktop).
+export CONSILIUM_RUN_DIR="$TMP/run-devin-ok"
+export CONSILIUM_SAVE_OUTPUTS=1
+export CONSILIUM_FAKE_DEVIN_MODE=ok
+export CONSILIUM_FAKE_ARGV_LOG="$TMP/devin-runtime-argv.jsonl"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+mkdir -p "$CONSILIUM_RUN_DIR"
+set +e
+dev_out=$(ACP_BACKEND=windsurf "$LIB_DIR/backend_run.sh" --mode review --agent-id devin --raw "devin q" 2>"$TMP/dev-ok.err")
+dev_rc=$?
+set -e
+assert_eq "devin happy-path exit 0" "$dev_rc" "0"
+assert_eq "devin happy-path stdout" "$dev_out" "FAKE_DEVIN_OK"
+assert_not_contains "devin thought excluded from stdout" "$dev_out" "FAKE_THOUGHT"
+assert_file "devin final artifact" "$CONSILIUM_RUN_DIR/final/devin.txt"
+assert_file "devin raw artifact" "$CONSILIUM_RUN_DIR/raw/devin.jsonl"
+devin_final=$(cat "$CONSILIUM_RUN_DIR/final/devin.txt")
+assert_eq "devin final is message chunks only" "$devin_final" "FAKE_DEVIN_OK"
+if [[ -f "$CONSILIUM_RUN_DIR/normalized/devin.jsonl" ]]; then
+  devin_norm=$(cat "$CONSILIUM_RUN_DIR/normalized/devin.jsonl")
+  assert_contains "devin normalized backend label" "$devin_norm" '"backend": "devin-cli"'
+  assert_contains "devin normalized has text event" "$devin_norm" '"type": "answer_delta"'
+else
+  echo "  FAIL  devin normalized artifact missing"
+  FAIL=$((FAIL+1))
+fi
+devin_acp_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+main = [r for r in rows if "argv" in r][-1]
+assert main["agent_type"] == "review", main
+assert main["has_ACP_BACKEND"] is False, main
+assert main["model"] == "swe-2-high", main
+assert "acp" in main["argv"], main
+assert any(r.get("event") == "prompt" for r in rows), rows
+print("ok")
+PY
+)
+assert_eq "devin review ACP env/argv contract" "$devin_acp_check" "ok"
+
+# Delegate --one-shot: yolo posture = default agent type + set_mode bypass.
+export CONSILIUM_RUN_DIR="$TMP/run-devin-del"
+mkdir -p "$CONSILIUM_RUN_DIR"
+: > "$CONSILIUM_FAKE_ARGV_LOG"
+set +e
+dev_del_out=$("$CONSILIUM" delegate -a devin --one-shot "implement x" 2>"$TMP/dev-del.err")
+dev_del_rc=$?
+set -e
+assert_eq "devin delegate --one-shot exit 0" "$dev_del_rc" "0"
+assert_eq "devin delegate --one-shot stdout" "$dev_del_out" "FAKE_DEVIN_OK"
+devin_del_check=$(python3 - "$CONSILIUM_FAKE_ARGV_LOG" <<'PY'
+import json, sys
+rows = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+main = [r for r in rows if "argv" in r][-1]
+assert main["agent_type"] is None, main
+assert "--agent-type" not in main["argv"], main
+set_mode = [r for r in rows if r.get("event") == "set_mode"]
+assert set_mode and set_mode[-1].get("modeId") == "bypass", rows
+print("ok")
+PY
+)
+assert_eq "devin delegate uses bypass mode" "$devin_del_check" "ok"
+
+# Explicit empty-answer exit 66 + backend failure surfaces stderr
+export CONSILIUM_RUN_DIR="$TMP/run-devin-empty"
+mkdir -p "$CONSILIUM_RUN_DIR"
+export CONSILIUM_FAKE_DEVIN_MODE=empty
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id devin --raw "empty" \
+  >/dev/null 2>"$TMP/dev-empty.err"
+dev_empty_rc=$?
+set -e
+assert_eq "devin empty-answer exit 66" "$dev_empty_rc" "66"
+export CONSILIUM_FAKE_DEVIN_MODE=fail
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id devin --raw "fail" \
+  >/dev/null 2>"$TMP/dev-fail.err"
+dev_fail_rc=$?
+set -e
+assert_eq "devin backend failure non-zero" "$dev_fail_rc" "1"
+assert_contains "devin failure surfaces stderr" "$(cat "$TMP/dev-fail.err")" "stopReason=refusal"
+export CONSILIUM_FAKE_DEVIN_MODE=crash
+set +e
+"$LIB_DIR/backend_run.sh" --mode review --agent-id devin --raw "crash" \
+  >/dev/null 2>"$TMP/dev-crash.err"
+dev_crash_rc=$?
+set -e
+assert_eq "devin backend crash non-zero" "$dev_crash_rc" "1"
+export CONSILIUM_FAKE_DEVIN_MODE=ok
+
 # Prompts must not be embedded in argv: large tasks are delivered over stdin
 # (or a temporary prompt file for Grok), avoiding the OS ARG_MAX ceiling.
 echo "=== Unbounded prompt transport ==="
@@ -388,7 +501,7 @@ export CONSILIUM_FAKE_ARGV_LOG="$TMP/large-prompt-argv.jsonl"
 : > "$CONSILIUM_FAKE_ARGV_LOG"
 # Parent shells may carry a leftover FULL_PROMPT; backend_run must not re-export it.
 unset FULL_PROMPT 2>/dev/null || true
-for agent in codex claude-code opencode gemini-cli grok; do
+for agent in codex claude-code opencode gemini-cli grok devin; do
   export CONSILIUM_RUN_DIR="$TMP/run-large-$agent"
   mkdir -p "$CONSILIUM_RUN_DIR"
   env -u FULL_PROMPT "$LIB_DIR/backend_run.sh" --mode review --agent-id "$agent" --raw \
@@ -399,9 +512,10 @@ import json
 import sys
 
 rows = [json.loads(line) for line in open(sys.argv[1]) if line.strip()]
-# Primary CLI rows only (ignore grok-prompt-meta helpers).
-primary = [r for r in rows if r.get("bin") in ("codex", "claude", "opencode", "gemini", "grok")]
-assert len(primary) == 5, primary
+# Primary CLI rows only (ignore grok-prompt-meta helpers and devin ACP event rows).
+primary = [r for r in rows if r.get("bin") in ("codex", "claude", "opencode", "gemini", "grok", "devin")
+           and "argv" in r]
+assert len(primary) == 6, primary
 for row in primary:
     argv = "\0".join(row["argv"])
     assert "BEGIN_LARGE_PROMPT" not in argv
@@ -417,6 +531,15 @@ for row in primary:
         assert forbidden not in row["argv"], (row["bin"], forbidden, row["argv"])
     if row["bin"] == "grok":
         assert "--prompt-file" in row["argv"]
+    elif row["bin"] == "devin":
+        # ACP path: prompt body travels as session/prompt text, never argv.
+        assert "acp" in row["argv"]
+        prompts = [r for r in rows if r.get("bin") == "devin" and r.get("event") == "prompt"]
+        assert prompts, "devin session/prompt event missing"
+        data = prompts[-1].get("text") or ""
+        assert data.startswith("BEGIN_LARGE_PROMPT\n"), row["bin"]
+        assert data.endswith("\nEND_LARGE_PROMPT"), row["bin"]
+        assert len(data) > 131072, row["bin"]
     else:
         data = row.get("stdin", "")
         assert data.startswith("BEGIN_LARGE_PROMPT\n"), row["bin"]

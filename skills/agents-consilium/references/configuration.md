@@ -5,6 +5,7 @@
 - Python 3
 - At least one supported harness: Codex CLI, OpenCode, Claude Code, or native Grok Build
 - Gemini CLI is optional and review-only
+- Devin CLI is optional and opt-in: `devin` v3000.x on PATH, authenticated via `devin auth login`
 
 Authentication stays with each harness.
 
@@ -15,7 +16,7 @@ Profiles live in `config.json`; set `CONSILIUM_CONFIG` to use another file.
 | Field | Purpose |
 |---|---|
 | `enabled` | Default participation in `review ask` and the basic review pool |
-| `backend` | `codex-cli`, `claude-code`, `opencode`, `grok-build`, or `gemini-cli` |
+| `backend` | `codex-cli`, `claude-code`, `opencode`, `grok-build`, `gemini-cli`, or `devin-cli` |
 | `model` | Backend model id |
 | `role` | Analyst, lateral, or specialist role |
 | `effort` | Backend reasoning effort/variant |
@@ -36,6 +37,7 @@ Non-empty environment values override profile model/effort for one invocation:
 - `OPENCODE_MODEL`, `OPENCODE_EFFORT` (`none` omits the variant)
 - `GROK_MODEL`, `GROK_EFFORT`
 - `GEMINI_MODEL`
+- `DEVIN_MODEL`; `CONSILIUM_BIN_DEVIN` overrides the `devin` binary
 
 The built-in `codex` profile uses `gpt-6-astra` at `high` effort. Astra accepts
 `low`, `medium`, `high`, `xhigh`, and `max`; it does not accept `none`. The
@@ -52,6 +54,15 @@ privacy terms state that Muse Spark Contributor prompts and completions may be
 used for model training, the service is not zero-data-retention, and availability
 is region-limited. Check the current OpenCode Go terms before reviewing sensitive
 repositories because catalog and privacy terms can change.
+
+The disabled-by-default `devin` profile uses Devin CLI's `swe-2-high` model;
+Devin versions effort into the model id, so there is no effort override. Both
+one-shot and steerable paths run over `devin acp` (JSON-RPC 2.0 NDJSON on
+stdio) — print mode `devin -p` is not used because a denied or
+confirmation-required tool call silently cancels the session without final
+text. Review runs `devin acp --agent-type review`, an agent with no write/edit
+tools; yolo delegate runs the default agent type under `session/set_mode
+bypass`. The helper strips inherited `ACP_BACKEND` from the child environment.
 
 ## Shell-safe prompts
 

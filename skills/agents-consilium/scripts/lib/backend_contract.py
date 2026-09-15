@@ -35,6 +35,7 @@ BACKEND_IDS = (
     "opencode",
     "grok-build",
     "gemini-cli",
+    "devin-cli",
 )
 
 BACKEND_BINS = {
@@ -43,6 +44,7 @@ BACKEND_BINS = {
     "opencode": "opencode",
     "grok-build": "grok",
     "gemini-cli": "gemini",
+    "devin-cli": "devin",
 }
 
 BIN_ENV = {
@@ -51,6 +53,7 @@ BIN_ENV = {
     "opencode": "CONSILIUM_BIN_OPENCODE",
     "grok-build": "CONSILIUM_BIN_GROK",
     "gemini-cli": "CONSILIUM_BIN_GEMINI",
+    "devin-cli": "CONSILIUM_BIN_DEVIN",
 }
 
 MODEL_ENV = {
@@ -59,6 +62,7 @@ MODEL_ENV = {
     "opencode": "OPENCODE_MODEL",
     "grok-build": "GROK_MODEL",
     "gemini-cli": "GEMINI_MODEL",
+    "devin-cli": "DEVIN_MODEL",
 }
 
 EFFORT_ENV = {
@@ -191,6 +195,32 @@ _BACKEND_CAPS: Dict[str, BackendCapabilities] = {
         supports_delegate=False,
         final_text_rule="plain_stdout",
         notes="Review-only; plain-text stdout behavior with backend identity gemini-cli.",
+    ),
+    "devin-cli": BackendCapabilities(
+        backend="devin-cli",
+        transport="acp-stdio",
+        oneshot_transport="acp-stdio",
+        steerable_transport="acp-stdio",
+        steerable=True,
+        steer_auto="same_turn",
+        steer_queue="same_turn",
+        steer_interrupt="cancel_and_send",
+        live_queue=False,
+        oneshot=True,
+        supports_delegate=True,
+        final_text_rule="devin_agent_message_chunks",
+        notes=(
+            "Both one-shot and steerable use devin acp (ACP JSON-RPC over "
+            "stdio). Review runs --agent-type review, a read-only + shell "
+            "agent with no write/edit tools (print mode cannot enforce "
+            "read-only: a denied or confirmation-required tool call cancels "
+            "the session with no final text). Delegate uses the default "
+            "agent plus session/set_mode bypass. Concurrent session/prompt "
+            "during a running turn is accepted and merged into the same "
+            "turn; interrupt is session/cancel then prompt. ACP_BACKEND is "
+            "stripped from the child env. Final text = agent_message_chunk "
+            "updates only."
+        ),
     ),
 }
 
@@ -357,7 +387,8 @@ def final_text_from_normalized(
     if rule == "grok_text_events_require_end":
         # Completeness is validated separately (end present, no error).
         return assemble_final_text(events)
-    if rule in ("opencode_text_parts", "opencode_part_snapshots", "plain_stdout"):
+    if rule in ("opencode_text_parts", "opencode_part_snapshots", "plain_stdout",
+                "devin_agent_message_chunks"):
         return assemble_final_text(events)
     return assemble_final_text(events)
 

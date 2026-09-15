@@ -162,7 +162,7 @@ def main() -> int:
 
     print("=== Backend contract ===")
     caps = list_backend_capabilities()
-    ok("all five backends", set(caps) >= {"codex-cli", "claude-code", "opencode", "grok-build", "gemini-cli"})
+    ok("all six backends", set(caps) >= {"codex-cli", "claude-code", "opencode", "grok-build", "gemini-cli", "devin-cli"})
     g = backend_capabilities("grok-build")
     ok("grok live_queue", g.live_queue is True)
     ok("grok steerable", g.steerable is True)
@@ -171,6 +171,13 @@ def main() -> int:
     gem = backend_capabilities("gemini-cli")
     ok("gemini not steerable", gem.steerable is False and gem.supports_delegate is False)
     ok("gemini final rule plain", gem.final_text_rule == "plain_stdout")
+    dev = backend_capabilities("devin-cli")
+    ok("devin steerable", dev.steerable is True and dev.supports_delegate is True)
+    ok("devin final rule agent chunks", dev.final_text_rule == "devin_agent_message_chunks")
+    ok("devin oneshot acp-stdio", dev.oneshot_transport == "acp-stdio")
+    ok("devin steerable acp-stdio", dev.steerable_transport == "acp-stdio")
+    ok("devin steer same-turn", dev.steer_auto == "same_turn" and dev.steer_queue == "same_turn")
+    ok("devin steer interrupt", dev.steer_interrupt == "cancel_and_send")
     # Distinct oneshot vs steerable transports where they differ
     codex = backend_capabilities("codex-cli")
     ok("codex oneshot transport exec-json", codex.oneshot_transport == "exec-json")

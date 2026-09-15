@@ -5,7 +5,7 @@
 #
 # Agent config schema (per agent id):
 #   enabled  : bool   — is agent active for consensus runs
-#   backend  : string — codex-cli | gemini-cli | opencode | claude-code | grok-build
+#   backend  : string — codex-cli | gemini-cli | opencode | claude-code | grok-build | devin-cli
 #   model    : string — model id passed to the backend
 #   role     : string — analyst (deep/precise) | lateral (broad/creative) | specialists...
 #   label    : string — display name in reports (optional)
@@ -134,6 +134,7 @@ BACKEND_CMDS = {
     "opencode": "opencode",
     "claude-code": "claude",
     "grok-build": "grok",
+    "devin-cli": "devin",
 }
 
 with open(os.environ["CONSILIUM_CONFIG_PATH"]) as f:

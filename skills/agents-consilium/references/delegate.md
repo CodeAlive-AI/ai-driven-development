@@ -510,6 +510,14 @@ Practical consequences for the calling agent:
 - Make guidance self-contained. The steer runs as its own turn, so state it as an instruction that stands on its own ("from now on … ; continue the remaining steps"), not as a fragment that only makes sense inline.
 - Verify semantics through task artifacts, never through the steer status alone.
 
+### What Devin actually does with a steer
+
+Verified against devin 3000.10.27 over real ACP runs:
+
+- `auto`/`queue` are `same_turn`: a second `session/prompt` merges into the running turn instead of entering a next-turn queue, so guidance can take effect without waiting for `end_turn`.
+- `interrupt` is `cancel_and_send`: `session/cancel` resolves in-flight prompts with stopReason `cancelled`; the session stays usable and the steer prompt takes over.
+- The ack ladder is the shared one — `request_sent` → `completed`/`cancelled`/`failed` by the request's own stopReason; it is never `applied`.
+
 ## Mailbox lifecycle
 
 | `mailbox_status` | Meaning |
@@ -559,6 +567,7 @@ Steerable runs always retain the private service registry and protocol artifacts
 | Codex CLI | `same_turn` through `turn/steer` and expected turn id | Abort active turn, wait for its completion acknowledgement, then start a prompt |
 | OpenCode | `step_inject` through loopback HTTP/SSE `prompt_async` | Abort session then prompt |
 | Grok Build | `queue_next_turn` through concurrent ACP prompt FIFO | Cancel-and-send using `sendNow` and its own prompt id |
+| Devin CLI | `same_turn` through concurrent ACP `session/prompt` merge | Cancel-and-send through `session/cancel` (stopReason `cancelled`) |
 
 OpenCode replacement requires both a successful abort and confirmation of idle
 through `/session/status`. An unsuccessful or unresolved stop fails the run and

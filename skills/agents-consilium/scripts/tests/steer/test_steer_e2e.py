@@ -59,6 +59,8 @@ def env_base(reg_root: Path, art: Path) -> dict:
     e["CONSILIUM_BIN_CODEX"] = str(FAKES / "fake-codex-steer")
     e["CONSILIUM_BIN_OPENCODE"] = str(FAKES / "fake-opencode-steer")
     e["CONSILIUM_BIN_GROK"] = str(FAKES / "fake-grok-steer")
+    # Devin's single ACP fake serves both one-shot and steerable paths.
+    e["CONSILIUM_BIN_DEVIN"] = str(TESTS_DIR / "fakes" / "fake-devin")
     return e
 
 
@@ -395,6 +397,7 @@ def test_backend_e2e(agent: str, label: str, tmp: Path, extra_checks=None) -> No
             "codex": "high",
             "opencode": "max",
             "grok": "high",
+            "devin": "",
         }[agent]
         assert_true(
             f"{label} status exposes resolved effort",
@@ -1773,6 +1776,119 @@ def test_grok_thought_not_in_stdout_e2e(tmp: Path) -> None:
         bad("normalized missing", str(art))
 
 
+def _devin_e2e_checks(env, run_id, reg_root, out, err, tmp) -> None:
+    assert_true("devin final has FAKE_DEVIN_OK", "FAKE_DEVIN_OK" in (out or ""), (out or "")[:300])
+    assert_true("devin merged steer text in final", "STEER:" in (out or ""), (out or "")[:300])
+    assert_true("devin thought never in final", "FAKE_THOUGHT_NOT_FINAL" not in (out or ""))
+    st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
+    steers = st.get("steers") or []
+    statuses = {s.get("mailbox_status") or s.get("status") for s in steers}
+    assert_true(
+        "devin steer reached completed via steer_ack",
+        "completed" in statuses,
+        str(steers),
+    )
+    classes = {s.get("delivery_class") for s in steers if s.get("delivery_class")}
+    assert_true("devin same_turn delivery class", "same_turn" in classes, str(steers))
+
+
+def test_devin_interrupt_steer(tmp: Path) -> None:
+    """interrupt = session/cancel then prompt; first turn cancelled, second completes."""
+    print("=== e2e: devin interrupt cancel_and_send ===")
+    reg_root = tmp / "reg-devint"
+    art = tmp / "art-devint"
+    art.mkdir(parents=True)
+    reg_root.mkdir(parents=True)
+    cwd = tmp / "cwd-devint"
+    cwd.mkdir()
+    env = env_base(reg_root, art)
+    env["CONSILIUM_FAKE_STEER_SLOW"] = "1.5"
+    proc, run_id, _ = start_steerable("devin", "LONG TASK", env, cwd)
+    time.sleep(0.3)
+    r = run_cmd(
+        [str(CONSILIUM), "delegate", "steer", run_id, "--mode", "interrupt", "STEER interrupt now"],
+        env,
+        timeout=15,
+    )
+    assert_true("devin interrupt steer accepted", r.returncode == 0, r.stderr)
+    code, out, err = wait_proc(proc, timeout=60)
+    assert_true("devin interrupt exit 0", code == 0, f"code={code} err={(err or '')[-400:]}")
+    assert_true("devin interrupt final has answer", "FAKE_DEVIN_OK" in (out or ""), (out or "")[:300])
+
+    st = json.loads(run_cmd([str(CONSILIUM), "delegate", "status", run_id, "--json"], env).stdout)
+    steers = st.get("steers") or []
+    classes = {s.get("delivery_class") for s in steers if s.get("delivery_class")}
+    assert_true("devin interrupt class cancel_and_send", "cancel_and_send" in classes, str(steers))
+
+    # Wire evidence in raw artifact: first prompt cancelled, successor end_turn.
+    raw = art / "raw" / "devin.jsonl"
+    assert_true("devin raw artifact exists", raw.is_file(), str(art))
+    if raw.is_file():
+        text = raw.read_text(encoding="utf-8")
+        assert_true("devin first prompt cancelled", '"stopReason": "cancelled"' in text)
+        assert_true("devin successor completed", '"stopReason": "end_turn"' in text)
+
+
+def test_devin_steer_reject_when_done(tmp: Path) -> None:
+    """After done with empty in-flight, all modes are rejected."""
+    print("=== unit: devin reject steer after done ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.devin import DevinAdapter  # type: ignore
+
+    art = tmp / "art-devin-done"
+    (art / "raw").mkdir(parents=True)
+    adapter = DevinAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="devin",
+    )
+    adapter.session_id = "s1"
+    adapter.rpc = object()  # type: ignore[assignment]
+    adapter._done = True
+    adapter._in_flight = {}
+    for mode in ("auto", "queue", "interrupt"):
+        r = adapter.steer("late", mode, f"cid-{mode}")
+        assert_true(
+            f"devin reject mode={mode} when done",
+            r.status == "rejected" and not r.ok,
+            f"status={r.status} err={r.error}",
+        )
+
+
+def test_devin_cancel_exit_130(tmp: Path) -> None:
+    """cancel() sends session/cancel, terminates, exit 130, single done event."""
+    print("=== unit: devin cancel exit 130 ===")
+    sys.path.insert(0, str(LIB_DIR))
+    from steer.adapters.devin import DevinAdapter  # type: ignore
+
+    art = tmp / "art-devin-cancel"
+    (art / "raw").mkdir(parents=True)
+    adapter = DevinAdapter(
+        binary="false",
+        model="m",
+        effort="",
+        cwd=str(tmp),
+        artifacts_dir=str(art),
+        agent_id="devin",
+    )
+    adapter.cancel()
+    events = list(adapter.poll_events())
+    done_events = [e for e in events if e.kind == "done"]
+    assert_true("devin cancel marks done", adapter.is_done())
+    assert_true("devin cancel exit 130", adapter.exit_code() == 130, str(adapter.exit_code()))
+    assert_true("devin single done event", len(done_events) == 1, str(done_events))
+    adapter.cancel()
+    more = list(adapter.poll_events())
+    assert_true(
+        "devin second cancel no duplicate done",
+        not any(e.kind == "done" for e in more),
+        str(more),
+    )
+
+
 def test_codex_interrupt_resets_result_text(tmp: Path) -> None:
     """Interrupted/cancelled must not freeze OLD; completed uses items XOR deltas."""
     print("=== unit: codex interrupt text buffers ===")
@@ -3126,6 +3242,10 @@ def main() -> int:
         test_backend_e2e("opencode", "opencode", tmp)
         test_opencode_sse_survives_quiet_gap(tmp)
         test_backend_e2e("grok", "grok", tmp)
+        test_backend_e2e("devin", "devin", tmp, extra_checks=_devin_e2e_checks)
+        test_devin_interrupt_steer(tmp)
+        test_devin_steer_reject_when_done(tmp)
+        test_devin_cancel_exit_130(tmp)
         test_opencode_auth_e2e_password_not_in_artifacts(tmp)
         test_registry_loss_does_not_lose_final(tmp)
         test_save_outputs_zero_no_cwd_artifacts(tmp)

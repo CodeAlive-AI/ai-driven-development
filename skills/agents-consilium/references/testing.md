@@ -6,7 +6,7 @@ The default suite uses fake backend CLIs, is offline, and spends no model tokens
 scripts/tests/run.sh
 ```
 
-It covers backend argv safety, exact profile selection, model/effort resolution, stdout/stderr separation, artifacts, Grok streaming success/failure, live progress, credential redaction, prompt purity, all review progress styles, invocation-specific keys, human-readable ids, steerable adapters/mailbox lifecycle, concurrent Grok queue/sendNow behavior, cancel/idempotency/cleanup, and shared runtime contracts.
+It covers backend argv safety, exact profile selection, model/effort resolution, stdout/stderr separation, artifacts, Grok streaming success/failure, live progress, credential redaction, prompt purity, all review progress styles, invocation-specific keys, human-readable ids, steerable adapters/mailbox lifecycle, concurrent Grok queue/sendNow behavior, a Devin ACP fake covering one-shot and steerable paths (same-turn merge, cancel), cancel/idempotency/cleanup, and shared runtime contracts.
 
 Quota parsing is tested offline for Codex multi-bucket limits, Grok `/usage`
 fields, fail-closed display drift, shell-safe remote paths, and one bounded retry

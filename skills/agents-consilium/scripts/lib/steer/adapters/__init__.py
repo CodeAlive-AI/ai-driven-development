@@ -1,12 +1,14 @@
 from .base import AdapterEvent, BackendAdapter, DeliveryClass, SteerResult
 from .claude import ClaudeAdapter
 from .codex import CodexAdapter
+from .devin import DevinAdapter
 from .grok import GrokAdapter
 from .opencode import OpenCodeAdapter
 
 ADAPTERS = {
     "claude-code": ClaudeAdapter,
     "codex-cli": CodexAdapter,
+    "devin-cli": DevinAdapter,
     "opencode": OpenCodeAdapter,
     "grok-build": GrokAdapter,
 }
@@ -28,6 +30,7 @@ __all__ = [
     "ADAPTERS",
     "ClaudeAdapter",
     "CodexAdapter",
+    "DevinAdapter",
     "OpenCodeAdapter",
     "GrokAdapter",
 ]

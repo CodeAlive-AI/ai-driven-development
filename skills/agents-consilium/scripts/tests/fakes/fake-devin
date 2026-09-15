@@ -1,0 +1,362 @@
+#!/usr/bin/env python3
+"""Fake `devin acp` (ACP JSON-RPC 2.0 NDJSON over stdio).
+
+Serves both the one-shot devin_acp_oneshot.py path and the steerable
+DevinAdapter path. Behavior modeled on verified devin 3000.10.27 wire facts:
+
+- initialize / session/new / session/set_mode / session/prompt lifecycle.
+- A prompt turn emits agent_thought_chunk (never final text), a tool_call
+  gated by a session/request_permission server request (an allow_* answer is
+  required; rejection ends the turn with stopReason refusal), tool_call_update
+  completed, then agent_message_chunk "FAKE_DEVIN_OK",
+  _cognition.ai/agent_stopped, and the prompt response end_turn.
+- A second session/prompt while a turn is running is accepted and merged into
+  the running turn: an agent_message_chunk "STEER:<text>" is emitted and all
+  in-flight request ids get their response at turn end, in request order.
+- session/cancel resolves in-flight prompts with stopReason cancelled plus
+  agent_stopped cause cancelled; the session stays alive.
+
+Modes (CONSILIUM_FAKE_DEVIN_MODE): ok | empty | fail | crash | slow
+Turn duration: CONSILIUM_FAKE_STEER_SLOW seconds (default 0.45).
+"""
+from __future__ import annotations
+
+import json
+import os
+import queue
+import sys
+import threading
+import time
+import uuid
+from typing import Any, Dict, List, Optional
+
+LOG = os.environ.get("CONSILIUM_FAKE_ARGV_LOG")
+MODE = os.environ.get("CONSILIUM_FAKE_DEVIN_MODE", "ok")
+SLOW = float(os.environ.get("CONSILIUM_FAKE_STEER_SLOW", "0.45"))
+
+_send_lock = threading.Lock()
+
+
+def send(obj: Dict[str, Any]) -> None:
+    with _send_lock:
+        sys.stdout.write(json.dumps(obj, ensure_ascii=False) + "\n")
+        sys.stdout.flush()
+
+
+def notify(method: str, params: Dict[str, Any]) -> None:
+    send({"jsonrpc": "2.0", "method": method, "params": params})
+
+
+def log_event(obj: Dict[str, Any]) -> None:
+    if not LOG:
+        return
+    with _send_lock:
+        try:
+            with open(LOG, "a", encoding="utf-8") as f:
+                f.write(json.dumps(obj) + "\n")
+        except OSError:
+            pass
+
+
+def prompt_text_of(params: Dict[str, Any]) -> str:
+    text = ""
+    for block in params.get("prompt") or []:
+        if isinstance(block, dict):
+            text += str(block.get("text") or "")
+    return text
+
+
+class Session:
+    def __init__(self) -> None:
+        self.session_id = "fake-devin-" + uuid.uuid4().hex[:8]
+        self.lock = threading.Lock()
+        self.turn_active = threading.Event()
+        self.cancel_flag = threading.Event()
+        self.active_rids: List[Any] = []
+        self.steer_texts: "queue.Queue[str]" = queue.Queue()
+        self.perm_responses: "queue.Queue[Dict[str, Any]]" = queue.Queue()
+        self.mode_id = "accept-edits"
+
+    def session_update(self, update: Dict[str, Any]) -> None:
+        notify("session/update", {"sessionId": self.session_id, "update": update})
+
+    def drain_steers(self) -> None:
+        while True:
+            try:
+                text = self.steer_texts.get_nowait()
+            except queue.Empty:
+                return
+            self.session_update(
+                {
+                    "sessionUpdate": "agent_message_chunk",
+                    "content": {"type": "text", "text": f"STEER:{text}"},
+                }
+            )
+
+    def add_prompt(self, rid: Any, text: str) -> None:
+        with self.lock:
+            already_running = self.turn_active.is_set()
+            self.active_rids.append(rid)
+            if already_running:
+                # Merged into the running turn — emitted as a STEER chunk.
+                self.steer_texts.put(text)
+            else:
+                self.turn_active.set()
+
+    def end_turn(self, stop_reason: str) -> None:
+        cause = "cancelled" if stop_reason in ("cancelled", "canceled") else "complete"
+        notify(
+            "_cognition.ai/agent_stopped",
+            {"cause": cause, "sessionId": self.session_id, "stats": {}},
+        )
+        with self.lock:
+            rids = list(self.active_rids)
+            self.active_rids.clear()
+            self.turn_active.clear()
+            self.cancel_flag.clear()
+        user_msg_id = uuid.uuid4().hex
+        for rid in rids:
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": rid,
+                    "result": {
+                        "stopReason": stop_reason,
+                        "_meta": {"cognition.ai/userMessageId": user_msg_id},
+                    },
+                }
+            )
+
+
+def _await_permission(sess: Session) -> Optional[Dict[str, Any]]:
+    deadline = time.time() + 30.0
+    while time.time() < deadline:
+        if sess.cancel_flag.is_set():
+            return None
+        try:
+            return sess.perm_responses.get(timeout=0.1)
+        except queue.Empty:
+            continue
+    return None
+
+
+def run_turn(sess: Session) -> None:
+    if MODE == "crash":
+        sess.session_update(
+            {
+                "sessionUpdate": "agent_thought_chunk",
+                "content": {"type": "text", "text": "FAKE_THOUGHT_NOT_FINAL"},
+            }
+        )
+        os._exit(1)
+
+    sess.session_update(
+        {
+            "sessionUpdate": "agent_thought_chunk",
+            "content": {"type": "text", "text": "FAKE_THOUGHT_NOT_FINAL"},
+        }
+    )
+
+    tool_call_id = "exec:0#" + uuid.uuid4().hex[:16]
+    sess.session_update(
+        {
+            "sessionUpdate": "tool_call",
+            "toolCallId": tool_call_id,
+            "title": "Ran fake command",
+            "kind": "execute",
+            "rawInput": {"command": "echo fake"},
+        }
+    )
+    perm_id = "perm-" + uuid.uuid4().hex[:8]
+    send(
+        {
+            "jsonrpc": "2.0",
+            "id": perm_id,
+            "method": "session/request_permission",
+            "params": {
+                "sessionId": sess.session_id,
+                "toolCall": {"toolCallId": tool_call_id},
+                "options": [
+                    {"optionId": "allow_once", "kind": "allow_once"},
+                    {"optionId": "allow_always", "kind": "allow_always"},
+                    {"optionId": "reject_once", "kind": "reject_once"},
+                ],
+            },
+        }
+    )
+    perm_resp = _await_permission(sess)
+    if sess.cancel_flag.is_set():
+        sess.end_turn("cancelled")
+        return
+    option_id = ""
+    if isinstance(perm_resp, dict):
+        option_id = str(
+            ((perm_resp.get("result") or {}).get("outcome") or {}).get("optionId") or ""
+        )
+    if not option_id.startswith("allow"):
+        sess.end_turn("refusal")
+        return
+
+    steps = 5
+    cancelled = False
+    for _ in range(steps):
+        if sess.cancel_flag.is_set():
+            cancelled = True
+            break
+        sess.drain_steers()
+        time.sleep(max(SLOW, 0.0) / steps)
+    sess.drain_steers()
+
+    sess.session_update(
+        {
+            "sessionUpdate": "tool_call_update",
+            "toolCallId": tool_call_id,
+            "status": "completed",
+        }
+    )
+
+    if cancelled:
+        sess.end_turn("cancelled")
+        return
+    if MODE == "fail":
+        sess.end_turn("refusal")
+        return
+    if MODE != "empty":
+        sess.session_update(
+            {
+                "sessionUpdate": "agent_message_chunk",
+                "content": {"type": "text", "text": "FAKE_DEVIN_"},
+            }
+        )
+        sess.session_update(
+            {
+                "sessionUpdate": "agent_message_chunk",
+                "content": {"type": "text", "text": "OK"},
+            }
+        )
+        sess.drain_steers()
+    sess.end_turn("end_turn")
+
+
+def worker(sess: Session) -> None:
+    while True:
+        sess.turn_active.wait()
+        run_turn(sess)
+
+
+def main() -> int:
+    agent_type = None
+    model = None
+    argv = sys.argv[1:]
+    i = 0
+    while i < len(argv):
+        if argv[i] == "--agent-type" and i + 1 < len(argv):
+            agent_type = argv[i + 1]
+            i += 2
+        elif argv[i] == "--model" and i + 1 < len(argv):
+            model = argv[i + 1]
+            i += 2
+        else:
+            i += 1
+
+    log_event(
+        {
+            "bin": "devin",
+            "argv": argv,
+            "cwd": os.getcwd(),
+            "has_ACP_BACKEND": "ACP_BACKEND" in os.environ,
+            "has_FULL_PROMPT": "FULL_PROMPT" in os.environ,
+            "has_JUDGE_INPUT_BODY": "JUDGE_INPUT_BODY" in os.environ,
+            "has_JR_INPUT_BODY": "JR_INPUT_BODY" in os.environ,
+            "has_JR_FINDINGS_BODY": "JR_FINDINGS_BODY" in os.environ,
+            "agent_type": agent_type,
+            "model": model,
+        }
+    )
+
+    sess = Session()
+    t = threading.Thread(target=worker, args=(sess,), daemon=True)
+    t.start()
+
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            msg = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        mid = msg.get("id")
+        method = msg.get("method")
+        params = msg.get("params") or {}
+
+        # Response to a server->client request we sent (permission grant)
+        if method is None and mid is not None and ("result" in msg or "error" in msg):
+            sess.perm_responses.put(msg)
+            continue
+
+        if method == "initialize":
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {
+                        "protocolVersion": 1,
+                        "agentCapabilities": {"loadSession": True},
+                        "agentInfo": {"name": "fake-devin", "version": "0.0.0"},
+                    },
+                }
+            )
+            continue
+        if method == "session/new":
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "result": {
+                        "sessionId": sess.session_id,
+                        "modes": {
+                            "currentModeId": "accept-edits",
+                            "availableModes": [
+                                {"id": "accept-edits", "name": "Code"},
+                                {"id": "smart", "name": "Smart"},
+                                {"id": "ask", "name": "Ask"},
+                                {"id": "plan", "name": "Plan"},
+                                {"id": "bypass", "name": "Bypass Permissions"},
+                            ],
+                        },
+                    },
+                }
+            )
+            continue
+        if method == "session/set_mode":
+            sess.mode_id = str(params.get("modeId") or "")
+            log_event({"bin": "devin", "event": "set_mode", "modeId": sess.mode_id})
+            send({"jsonrpc": "2.0", "id": mid, "result": {}})
+            continue
+        if method == "session/prompt":
+            text = prompt_text_of(params)
+            log_event({"bin": "devin", "event": "prompt", "text": text})
+            sess.add_prompt(mid, text)
+            continue
+        if method == "session/cancel":
+            sess.cancel_flag.set()
+            if mid is not None:
+                send({"jsonrpc": "2.0", "id": mid, "result": {}})
+            continue
+        if method == "elicitation/create":
+            continue
+        if mid is not None:
+            send(
+                {
+                    "jsonrpc": "2.0",
+                    "id": mid,
+                    "error": {"code": -32601, "message": f"unknown {method}"},
+                }
+            )
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

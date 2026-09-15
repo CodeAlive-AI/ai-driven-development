@@ -492,6 +492,73 @@ def normalize_opencode(obj: Dict[str, Any]) -> tuple[str, Any]:
     return "event", typ
 
 
+def _devin_content_text(content: Any) -> str:
+    if isinstance(content, str):
+        return content
+    if isinstance(content, dict):
+        if content.get("type") == "text" or "text" in content:
+            return str(content.get("text") or "")
+        if "content" in content:
+            return _devin_content_text(content["content"])
+    if isinstance(content, list):
+        return "".join(_devin_content_text(c) for c in content)
+    return ""
+
+
+def normalize_devin(obj: Dict[str, Any]) -> tuple[str, Any]:
+    """Map `devin acp` JSON-RPC NDJSON lines to the stream vocabulary.
+
+    Only session/update agent_message_chunk updates produce final text.
+    agent_thought_chunk is observable but never part of the answer. The
+    session/prompt response carries stopReason: end_turn → end; anything
+    else (cancelled, refusal, max_tokens, error) → error. Everything else is
+    progress-only.
+    """
+    # JSON-RPC response (has id + result/error, no method)
+    if "id" in obj and "method" not in obj and ("result" in obj or "error" in obj):
+        if "error" in obj:
+            err = obj.get("error")
+            msg = err.get("message") if isinstance(err, dict) else str(err)
+            return "error", msg or json.dumps(err)
+        result = obj.get("result")
+        if not isinstance(result, dict):
+            return "progress", "response"
+        stop = _normalize_grok_stop_reason(result.get("stopReason"))
+        if not stop:
+            # initialize / session/new / set_mode responses: progress only
+            return "progress", "response"
+        if stop in _GROK_SUCCESS_STOP:
+            return "end", result.get("stopReason") or "end_turn"
+        return "error", result.get("stopReason") or stop
+
+    method = obj.get("method") or ""
+    params = obj.get("params") if isinstance(obj.get("params"), dict) else {}
+    if method == "session/update":
+        update = params.get("update") if isinstance(params.get("update"), dict) else {}
+        su = update.get("sessionUpdate") or update.get("type") or ""
+        if su == "agent_message_chunk":
+            text = _devin_content_text(update.get("content"))
+            return ("text", text) if text else ("progress", su)
+        if su == "agent_thought_chunk":
+            return "thought", _devin_content_text(update.get("content"))
+        if su == "tool_call":
+            return "tool_started", update.get("title") or update.get("kind") or "tool"
+        if su == "tool_call_update":
+            status = str(update.get("status") or "in_progress")
+            if status in {"completed", "complete", "done", "failed", "error"}:
+                return "tool_completed", status
+            return "progress", status
+        return "progress", su or "session/update"
+    if method == "_cognition.ai/agent_stopped":
+        cause = str(params.get("cause") or "")
+        if cause and cause != "complete":
+            return "error", cause
+        return "progress", method
+    if method:
+        return "progress", method
+    return "event", "devin"
+
+
 def normalize_gemini(obj: Dict[str, Any]) -> tuple[str, Any]:
     """Gemini CLI typically emits plain text; JSON objects map when present."""
     if "_plain" in obj:
@@ -532,7 +599,8 @@ def stream_to_progress_type(stream_type: str) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Normalize backend streams to consilium JSONL")
     ap.add_argument("--backend", required=True, choices=[
-        "codex-cli", "claude-code", "opencode", "gemini-cli", "grok-build", "plain"
+        "codex-cli", "claude-code", "opencode", "gemini-cli", "grok-build",
+        "devin-cli", "plain"
     ])
     ap.add_argument("--agent-id", required=True)
     ap.add_argument("--model", default="")
@@ -666,6 +734,10 @@ def main() -> int:
                     stream_typ, data = normalize_claude(obj)
                 elif args.backend == "opencode":
                     stream_typ, data = normalize_opencode(obj)
+                elif args.backend == "devin-cli":
+                    # `devin acp` JSON-RPC NDJSON; backend label stays
+                    # args.backend on emitted events.
+                    stream_typ, data = normalize_devin(obj)
                 elif args.backend == "gemini-cli":
                     stream_typ, data = normalize_gemini(obj)
                 else:

@@ -65,6 +65,13 @@
       "role": "analyst",
       "label": "Grok Fast Test"
     },
+    "devin": {
+      "enabled": true,
+      "backend": "devin-cli",
+      "model": "swe-2-high",
+      "role": "analyst",
+      "label": "Devin SWE-2 Test"
+    },
     "gemini-cli": {
       "enabled": false,
       "backend": "gemini-cli",
