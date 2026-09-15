@@ -254,7 +254,16 @@ Do not let `record` mean "any file that remembers something", "the missing sourc
 ##### E.10:0.2c.9 - `model`, `diagram`, `screen`, `dashboard`, `table`, `note`, `memo`, `summary`, `explanation`
 
 These are recognition examples, not kinds.
-Classify each occurrence as one of:
+
+For unresolved `model` or `explanation` wording, recover the subject at issue and what the work needs to obtain or change. An explanation of a predictor may concern its behavior, its internal computation or the phenomenon it predicts. Constructing an account, expressing an available account and helping another agent acquire an ability can require different methods; one request can combine these contributions. Use the method that supplies the required result once the question is clear. If the object or relation remains unresolved, use `E.10.ARCH:3`.
+
+When `model` hides the question, state what answer is sought from it. For example, a model of stated axioms is a structure satisfying those axioms; modeling an observed process may seek relations from which to derive predictions or compare interventions. The same mathematical construction can serve several modeling uses. Retain the subject's vocabulary and notation when they already make that use clear.
+
+For an unclear request to "run" or "execute" a model, recover how the model is interpreted for this question, how the answer is obtained, and who or what performs that operation. The operation may be reasoning with a diagram, solving constraints, running a simulation or experimenting with a physical analogue. A diagram's reader can supply premises and an inference method that are absent from the drawing; recover the missing contribution when it changes the answer or another agent must reproduce the reasoning. `B.5.FM` helps construct the model, `A.6.3.RT.OE` makes an expression usable in the intended operation, and `C.29.2` develops a computational formulation when computation is required. Use `C.2.P.DR` when the wording attributes an unsupported action to the representation itself.
+
+A performance claim states what the agent does or can do. A claim that it uses a particular internal representation concerns how that performance is obtained. Use `C.2.1` when the content and identity of an episteme are at issue; use the applicable subject method to establish a claimed physical or computational representation. Use `E.17.EFP` when ambiguity about source faithfulness changes how an expressed account may be used, and `C.2.8` when recoverability by a recipient is the question.
+
+When the wording concerns representation, publication or reliance, classify the occurrence as applicable:
 - episteme or episteme publication;
 - `U.View`, `U.EpistemeView`;
 - publication form;
@@ -269,7 +278,7 @@ Classify each occurrence as one of:
 - assurance and engineering-justification record under `B.3`;
 - work- or reliance-guiding appearance whose missing prerequisite is recovered under `A.15.4`.
 
-Keep the ordinary example word only after the actual kind is visible nearby.
+Use the ordinary word once the surrounding text makes the intended object and use clear. Add an FPF kind name when that distinction changes the claim or the next action.
 
 ##### E.10:0.2c.10 - `reader`, `reviewer`, `author`, `operator`
 

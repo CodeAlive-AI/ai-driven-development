@@ -132,9 +132,9 @@ Choose the row that fits the problem, or use a closer domain construction. The m
 | Probe, order or context effect with incompatible frames | Quantum-like or contextual-probability model: identify the contextual obstruction that still changes inference or action after the ordinary subject patterns. | Apply C.26's adequacy conditions. A physical quantum claim additionally needs the relevant physics and observations. |
 | Storage, computational or realizability limit | Count actual represented objects and operations; apply a resource bound or constructive/impossibility argument. | Recompute for the actual alternative representation. A valid rejection of one implementation does not yet supply a feasible replacement. |
 
-For a constrained extremum or stationary construction, C.29.AV develops the admissible family, calculates its effect and establishes what the resulting condition proves. Use it when specifying a variation space still leaves the required construction unresolved.
+For a constrained extremum or stationary construction, construct or reuse a family of allowed candidates and calculate the resulting change in the target quantity. Distinguish an improving candidate, a necessary stationary condition and a justified optimum; carry the resulting conclusion and its assumptions into the working question.
 
-For a symmetry argument, C.29.SC follows the transformation through the conditions and required answer. It transfers a solution, restricts possible answers or identifies a choice that the available distinctions cannot support.
+For a symmetry argument, follow the transformation through the problem's data, conditions and required answer. Derive the transferred solution, restriction or obstruction to selection, and say which problem that consequence answers.
 
 When a balance must be constructed or its boundary changes, C.29.BB identifies the additive quantity, included stores and crossing transfers. It combines compatible accounts and returns the total, a bound or the missing contribution.
 
@@ -991,8 +991,7 @@ The comparison above selects the first-use Method. The references below provide 
 - **Construction and argument recovery:** B.5 recovers the inputs, operations and dependencies needed to obtain or understand a result. C.29 tests which consequence can be carried through the proposed mathematical correspondence.
 
 - **Related Methods:** C.29.1 constructs mathematical result transfer; C.29.2 constructs a computation; C.29.3 connects computation to concrete execution. Each has its own working entry. They can be composed when one result supplies another's input; a computational question can also begin with an already adequate mathematical representation.
-- **Admissible variation:** C.29.AV constructs a constraint-preserving family and obtains an improvement, necessary condition or justified optimum from its change.
-- **Symmetry consequence:** C.29.SC follows the action on a problem and its answer to transfer a solution, derive a restriction or expose an unsupported choice.
+
 - **Boundary balance:** C.29.BB constructs and revises an additive change account, preserving shared transfers and the information needed for the requested total.
 - **Joint reasoning:** B.5.MPC connects the physical account, mathematical question, computation and realization, starting from whichever contribution is available and returning to the contribution whose conditions fail. A.3.3 supplies state and continuation semantics; A.6.1 supplies the realization relation; C.39 helps find or develop a missing operation.
 
