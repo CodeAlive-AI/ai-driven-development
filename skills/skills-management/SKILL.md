@@ -367,7 +367,7 @@ If no skills found: offer to help directly, then suggest `npx skills init <name>
 
 ## Multi-Agent Operations
 
-Manage skills across 42 supported AI coding agents. Full registry at [skills.sh](https://skills.sh).
+Manage skills across 40 supported AI coding agents. Full registry at [skills.sh](https://skills.sh).
 
 ### Supported agents
 

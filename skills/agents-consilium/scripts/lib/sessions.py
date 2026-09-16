@@ -433,12 +433,24 @@ def stores_for(harness: str) -> list[Store]:
     if harness == "grok":
         return [Store(harness, "sessions", ov or (HOME / ".grok" / "sessions"), "session_dirs")]
     if harness == "devin":
-        base = ov or ((_win_localapp() / "devin" / "cli") if IS_WINDOWS
-                      else (HOME / ".local" / "share" / "devin" / "cli"))
-        return [
-            Store(harness, "sessions.db", base / "sessions.db", "sqlite"),
-            Store(harness, "transcripts", base / "transcripts", "json_dir"),
-        ]
+        if ov:
+            return [
+                Store(harness, "sessions.db", ov / "sessions.db", "sqlite"),
+                Store(harness, "transcripts", ov / "transcripts", "json_dir"),
+            ]
+        if IS_WINDOWS:
+            # No verified Windows install yet: docs map ~/.config/devin ->
+            # %APPDATA%\devin, so offer Roaming first and LocalAppData as fallback.
+            bases = [_win_appdata() / "devin" / "cli",
+                     _win_localapp() / "devin" / "cli"]
+        else:
+            bases = [HOME / ".local" / "share" / "devin" / "cli"]
+        out = []
+        for base in bases:
+            suffix = "" if len(bases) == 1 else f":{base.parent.parent.name.lower()}"
+            out.append(Store(harness, f"sessions.db{suffix}", base / "sessions.db", "sqlite"))
+            out.append(Store(harness, f"transcripts{suffix}", base / "transcripts", "json_dir"))
+        return out
     if harness == "gemini":
         base = ov or (HOME / ".gemini")
         return [

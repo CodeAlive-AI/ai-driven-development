@@ -1,6 +1,6 @@
 ---
 name: plugins-management
-description: Create, publish, delete, and submit plugins for coding agents (Claude Code, OpenCode). Use when user wants to (1) create a new plugin with proper structure, (2) create or configure a plugin marketplace, (3) publish plugins to GitHub/GitLab/npm, (4) delete/uninstall plugins, (5) validate plugin structure, or (6) prepare and submit plugins to the official Anthropic directory or the OpenCode ecosystem.
+description: Create, publish, delete, and submit plugins for coding agents (Claude Code, OpenCode, Devin CLI/Desktop). Use when user wants to (1) create a new plugin with proper structure, (2) create or configure a plugin marketplace, (3) publish plugins to GitHub/GitLab/npm, (4) delete/uninstall plugins, (5) validate plugin structure, or (6) prepare and submit plugins to the official Anthropic directory or the OpenCode ecosystem.
 ---
 
 # Plugins Manager
@@ -10,6 +10,7 @@ Manage plugins across coding agents: create, validate, publish, delete, and subm
 **Supported agents:**
 - **Claude Code**: `.claude-plugin/plugin.json`-based plugins, distributed via marketplaces
 - **OpenCode**: TypeScript/JavaScript plugins in `.opencode/plugins/` or npm packages listed in `opencode.json`
+- **Devin CLI / Desktop**: `.devin-plugin/plugin.json` manifest inside a plugin source (GitHub repo, git URL, `git-subdir`, or local folder); installs skills (`<plugin>:<skill>` slash commands), `AGENTS.md`/`rules/`, `agents/` subagents, `hooks.json`, and `.mcp.json` as one unit. Managed with `devin plugins` commands; plugins also apply to Devin cloud sessions, subject to per-surface limits. The scripts in this skill target Claude/OpenCode manifests — for Devin, author the `.devin-plugin/plugin.json` by hand per the Devin docs.
 
 **CRITICAL**: Before performing any deletion, uninstall, or removal operation, you MUST use the `AskUserQuestion` tool to confirm with the user. Never delete/uninstall plugins or remove marketplaces without explicit user confirmation.
 

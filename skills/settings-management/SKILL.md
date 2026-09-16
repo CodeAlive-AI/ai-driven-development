@@ -1,6 +1,6 @@
 ---
 name: settings-management
-description: View and configure settings for coding agents (Claude Code, Codex CLI, OpenCode, and others). Covers JSON settings for Claude Code, TOML for Codex CLI, and JSON/JSONC for OpenCode, including permissions, sandbox, model selection, profiles, feature flags, providers, hooks, subagents, and skills.
+description: View and configure settings for coding agents (Claude Code, Codex CLI, OpenCode, Devin CLI/Desktop, and others). Covers JSON settings for Claude Code and Devin, TOML for Codex CLI, and JSON/JSONC for OpenCode, including permissions, sandbox, model selection, profiles, feature flags, providers, hooks, subagents, and skills.
 ---
 
 # Settings Management
@@ -183,8 +183,32 @@ Key differences from Claude Code:
 
 See [references/opencode-settings.md](references/opencode-settings.md) for full OpenCode config reference.
 
+## Devin CLI / Desktop Settings
+
+Devin uses JSON in `~/.config/devin/config.json` (user; `%APPDATA%\devin\config.json` on Windows), `.devin/config.json` (project), and `.devin/config.local.json` (project-local, gitignored). MCP servers live in dedicated `mcp_config.json` files at the same levels.
+
+```json
+{
+  "agent": { "model": "swe-2-high" },
+  "permissions": {
+    "allow": ["Read(**)", "Exec(git)"],
+    "ask": ["Write(**/.env*)"]
+  },
+  "read_config_from": { "claude": true, "cursor": true, "windsurf": true }
+}
+```
+
+Key differences:
+- Project configs accept only `permissions`, `read_config_from`, and `hooks`
+- `read_config_from` imports rules/hooks/subagents from `.claude/`, `.cursor/`, `.windsurf/` by default
+- Skills: `.devin/skills/` (project), `~/.config/devin/skills/` (user)
+- Plugins: `.devin-plugin/plugin.json` manifest; `devin plugins` CLI
+
+See [references/devin-settings.md](references/devin-settings.md) for the full Devin config reference.
+
 ## Reference
 
 - **Claude Code settings**: [references/claude-settings.md](references/claude-settings.md)
 - **Codex CLI settings**: [references/codex-settings.md](references/codex-settings.md)
 - **OpenCode settings**: [references/opencode-settings.md](references/opencode-settings.md)
+- **Devin CLI/Desktop settings**: [references/devin-settings.md](references/devin-settings.md)

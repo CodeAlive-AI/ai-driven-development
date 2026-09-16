@@ -1051,7 +1051,10 @@ class WindowsPathTests(FixtureMixin, unittest.TestCase):
         cd = self._stores("claude-desktop", env)
         self.assertTrue(str(cd[0].path).startswith(appdata))
         dev = self._stores("devin", env)
-        self.assertTrue(str(dev[0].path).startswith(localapp))
+        # Both Roaming and LocalAppData candidates are offered (order: roaming first)
+        self.assertEqual(len(dev), 4)
+        self.assertTrue(str(dev[0].path).startswith(appdata))
+        self.assertTrue(str(dev[2].path).startswith(localapp))
         oc = self._stores("opencode", env)
         self.assertTrue(str(oc[0].path).startswith(localapp))
         with patch.object(sessions, "IS_WINDOWS", True), \

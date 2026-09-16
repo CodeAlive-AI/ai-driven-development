@@ -281,6 +281,8 @@ def _discover_instruction_files(
             home / ".codex" / "AGENTS.md",
             home / ".claude" / "CLAUDE.md",
             home / ".config" / "opencode" / "AGENTS.md",
+            home / ".config" / "devin" / "AGENTS.md",
+            Path(os.path.expandvars("%APPDATA%")) / "devin" / "AGENTS.md",
         ]
         discovered.extend(
             (path, "user") for path in candidates if path.exists() or path.is_symlink()
@@ -411,6 +413,8 @@ def _discover_skills(
         (root / ".codex" / "skills", "project", "codex"),
         (root / ".claude" / "skills", "project", "claude-code"),
         (root / ".opencode" / "skills", "project", "opencode"),
+        (root / ".devin" / "skills", "project", "devin"),
+        (root / ".windsurf" / "skills", "project", "windsurf"),
     ]
     if include_user_scope:
         home = Path.home()
@@ -420,6 +424,10 @@ def _discover_skills(
                 (home / ".codex" / "skills", "user", "codex"),
                 (home / ".claude" / "skills", "user", "claude-code"),
                 (home / ".config" / "opencode" / "skills", "user", "opencode"),
+                (home / ".config" / "devin" / "skills", "user", "devin"),
+                (Path(os.path.expandvars("%APPDATA%")) / "devin" / "skills",
+                 "user", "devin"),
+                (home / ".codeium" / "windsurf" / "skills", "user", "windsurf"),
             ]
         )
 
@@ -475,6 +483,9 @@ def _discover_subagents(
         (root / ".codex" / "agents", "*.toml", "codex", "project"),
         (root / ".claude" / "agents", "*.md", "claude-code", "project"),
         (root / ".opencode" / "agents", "*.md", "opencode", "project"),
+        (root / ".devin" / "agents", "*.md", "devin", "project"),
+        (root / ".devin" / "agents", "*/AGENT.md", "devin", "project"),
+        (root / ".agents" / "agents", "*.md", "devin", "project"),
     ]
     if include_user_scope:
         home = Path.home()
@@ -483,6 +494,9 @@ def _discover_subagents(
                 (home / ".codex" / "agents", "*.toml", "codex", "user"),
                 (home / ".claude" / "agents", "*.md", "claude-code", "user"),
                 (home / ".config" / "opencode" / "agents", "*.md", "opencode", "user"),
+                (home / ".config" / "devin" / "agents", "*.md", "devin", "user"),
+                (Path(os.path.expandvars("%APPDATA%")) / "devin" / "agents",
+                 "*.md", "devin", "user"),
             ]
         )
     found: list[tuple[Path, str, str]] = []

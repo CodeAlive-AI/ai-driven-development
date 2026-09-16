@@ -275,6 +275,22 @@ codex mcp add sentry --env SENTRY_AUTH_TOKEN=... -- url=https://mcp.sentry.dev/m
 
 **CLI:** `opencode mcp add`, `opencode mcp list`, `opencode mcp auth <name>`, `opencode mcp logout <name>`, `opencode mcp debug <name>`. Variable substitution via `{env:VAR}` and `{file:path}`. See [opencode-mcp.md](opencode-mcp.md) for the full reference, including known plugin-hook caveats for MCP calls.
 
+### Devin CLI / Desktop
+
+| Property | Value |
+|----------|-------|
+| Global config (macOS/Linux) | `~/.config/devin/mcp_config.json` |
+| Global config (Windows) | `%APPDATA%/devin/mcp_config.json` |
+| Project config | `.devin/mcp_config.json`, `.devin/mcp_config.local.json` (gitignored) |
+| Config key | `mcpServers` |
+| Format | JSON |
+| Transports | stdio (`command`/`args`/`env`), http (`url` + `transport: "http"`) |
+
+**Note:** Dedicated `mcp_config.json` files since v3000.3 (Local 3.6); older
+versions keep servers under `mcpServers` in `config.json` and migrate them on
+startup. Devin also imports MCP/rules config from `AGENTS.md`, `.cursor/rules`,
+`.windsurf/rules`, and `.claude/` when `read_config_from` is enabled (default).
+
 ### Zed
 
 | Property | Value |

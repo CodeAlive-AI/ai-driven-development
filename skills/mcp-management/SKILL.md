@@ -1,6 +1,6 @@
 ---
 name: mcp-management
-description: Search, install, configure, update, and remove MCP servers across coding agents (Claude Code, Cursor, VS Code, Claude Desktop, Gemini CLI, Codex, Goose, Zed, and more). Supports multi-agent installation via npx add-mcp, the official MCP registry, and direct config editing.
+description: Search, install, configure, update, and remove MCP servers across coding agents (Claude Code, Cursor, VS Code, Claude Desktop, Gemini CLI, Codex, Goose, Zed, Devin CLI/Desktop, and more). Supports multi-agent installation via npx add-mcp, the official MCP registry, and direct config editing.
 ---
 
 # MCP Server Management

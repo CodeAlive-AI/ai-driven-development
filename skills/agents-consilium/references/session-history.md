@@ -40,7 +40,7 @@ itself is platform-neutral; only the *default store roots* differ:
 | `codex` | `~/.codex` (or `$CODEX_HOME`) | `%USERPROFILE%\.codex` (or `%CODEX_HOME%`) |
 | `opencode` | `~/.local/share/opencode` | `%LOCALAPPDATA%\opencode` |
 | `grok` | `~/.grok/sessions` | `%USERPROFILE%\.grok\sessions` |
-| `devin` | `~/.local/share/devin/cli` | `%LOCALAPPDATA%\devin\cli` |
+| `devin` | `~/.local/share/devin/cli` | `%APPDATA%\devin\cli` and `%LOCALAPPDATA%\devin\cli` (both checked) |
 | `gemini` | `~/.gemini` | `%USERPROFILE%\.gemini` |
 | `claude-desktop` | `~/Library/Application Support/Claude` | `%APPDATA%\Claude` |
 | `cursor` | `~/Library/Application Support/Cursor/User` | `%APPDATA%\Cursor\User` |

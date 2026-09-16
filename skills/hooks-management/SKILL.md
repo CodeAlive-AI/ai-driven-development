@@ -1,6 +1,6 @@
 ---
 name: hooks-management
-description: Manage hooks and automation for coding agents (Claude Code, Codex CLI, OpenCode). Use when users want to add, list, remove, update, or validate hooks. Triggers on requests like "add a hook", "create a hook that...", "list my hooks", "remove the hook", "validate hooks", or any mention of automating agent behavior with shell commands or plugins.
+description: Manage hooks and automation for coding agents (Claude Code, Codex CLI, OpenCode, Devin CLI/Desktop). Use when users want to add, list, remove, update, or validate hooks. Triggers on requests like "add a hook", "create a hook that...", "list my hooks", "remove the hook", "validate hooks", or any mention of automating agent behavior with shell commands or plugins.
 ---
 
 # Hooks Management
@@ -40,6 +40,13 @@ Manage hooks and automation through natural language commands.
 - Codex App and CLI share these config layers. In the App/IDE, the settings UI opens the same `config.toml`.
 - Hooks are enabled by default. Use `[features].hooks = false` to disable them. `codex_hooks` is a deprecated alias.
 - Non-managed Codex command hooks must be reviewed/trusted with `/hooks`; changed hook definitions are skipped until trusted.
+
+**Devin CLI / Desktop hook locations**:
+- Project: `.devin/hooks.v1.json` (standalone hooks object, recommended) or `"hooks"` in `.devin/config.json` / `.devin/config.local.json`
+- User: `"hooks"` in `~/.config/devin/config.json` (`%APPDATA%\devin\config.json` on Windows)
+- Claude-format hooks under `.claude/` are imported automatically when `read_config_from.claude` is on (default)
+- Events: PreToolUse, PostToolUse, PermissionRequest, UserPromptSubmit, Stop, PostCompaction, SessionStart, SessionEnd; `matcher` is a regex on `tool_name`
+- See [references/devin-hooks.md](references/devin-hooks.md) for the full event/output contract
 
 **Claude Code default control mechanism for PreToolUse**: emit JSON on stdout with `hookSpecificOutput.permissionDecision` set to `"allow"`, `"deny"`, **`"ask"`** (triggers the built-in user confirmation prompt), or **`"defer"`** (pause headless tool calls; resume with `-p --resume`). See [Decision Control](#decision-control-pretooluse). Do NOT roll your own confirmation schemes (env-var flags, interactive `osascript` prompts, bypass tokens) — those break the built-in UX and silently fail under existing `permissions.allow` entries.
 

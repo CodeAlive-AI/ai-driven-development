@@ -57,11 +57,11 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 
 | Skill | What It Does |
 |-------|--------------|
-| [mcp-management](skills/mcp-management/) | Install and manage MCP servers across 10+ coding agents (Claude Code, Cursor, VS Code, Gemini CLI, Codex, Goose, Copilot CLI, OpenCode, Zed) — single command, handles JSON/YAML/TOML config differences |
-| [hooks-management](skills/hooks-management/) | Manage hooks and automation for Claude Code, Codex CLI, and OpenCode |
-| [settings-management](skills/settings-management/) | Configure settings for Claude Code (JSON), Codex CLI (TOML), and OpenCode (JSON/JSONC) |
+| [mcp-management](skills/mcp-management/) | Install and manage MCP servers across 10+ coding agents (Claude Code, Cursor, VS Code, Gemini CLI, Codex, Goose, Copilot CLI, OpenCode, Zed, Devin) — single command, handles JSON/YAML/TOML config differences |
+| [hooks-management](skills/hooks-management/) | Manage hooks and automation for Claude Code, Codex CLI, OpenCode, and Devin CLI/Desktop |
+| [settings-management](skills/settings-management/) | Configure settings for Claude Code (JSON), Codex CLI (TOML), OpenCode (JSON/JSONC), and Devin CLI/Desktop (JSON) |
 | [skills-management](skills/skills-management/) | Organise, discover, share, and **train** skills for coding agents — SkillOpt-style optimisation loop with bounded edits, held-out validation gate, rejected-edit buffer, epoch-wise slow/meta update, plus trigger / transfer / diff / edit-log tooling |
-| [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code and OpenCode (validate, scaffold, submit to Anthropic's directory) |
+| [plugins-management](skills/plugins-management/) | Package and publish plugins for Claude Code, OpenCode, and Devin CLI/Desktop (validate, scaffold, submit to Anthropic's directory) |
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 

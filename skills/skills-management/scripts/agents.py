@@ -2,19 +2,21 @@
 """Shared agent definitions for multi-agent skill management.
 
 Based on the Skills CLI registry (https://skills.sh, https://github.com/vercel-labs/add-skill).
-Supports 42 AI coding agents with their skill directory configurations.
+Supports 40 AI coding agents with their skill directory configurations.
 """
 
+import os
 from pathlib import Path
 from typing import TypedDict
 
 
-class AgentConfig(TypedDict):
+class AgentConfig(TypedDict, total=False):
     """Configuration for an AI coding agent."""
     name: str
     display_name: str
     project_dir: str      # Relative path for project-level skills
     global_dir: str       # Path for user-level skills (supports ~)
+    global_dir_windows: str  # Windows override for global_dir (%VARS% expanded)
     detect_paths: list[str]  # Paths to check for agent installation
 
 
@@ -103,6 +105,17 @@ AGENTS: dict[str, AgentConfig] = {
         "project_dir": ".cursor/skills",
         "global_dir": "~/.cursor/skills",
         "detect_paths": ["~/.cursor"],
+    },
+    "devin": {
+        "name": "devin",
+        "display_name": "Devin CLI / Desktop",
+        # Devin reads the shared .agents/skills standard plus .devin/skills
+        # and .windsurf/skills; the shared dir is canonical (also serves
+        # codex/opencode/etc). .devin/skills remains Devin-specific.
+        "project_dir": ".agents/skills",
+        "global_dir": "~/.config/devin/skills",
+        "global_dir_windows": "%APPDATA%\\devin\\skills",
+        "detect_paths": ["~/.config/devin", "~/.devin", "~/.local/share/devin"],
     },
     "droid": {
         "name": "droid",
@@ -360,6 +373,9 @@ def get_global_skills_dir(agent: str) -> Path | None:
     if not config:
         return None
 
+    win_dir = config.get("global_dir_windows")
+    if win_dir and os.name == "nt":
+        return Path(os.path.expandvars(win_dir))
     return Path(config["global_dir"]).expanduser()
 
 
