@@ -45,12 +45,14 @@ edits inside an installation are not a persistent customization mechanism.
 |---|---|---|
 | `review` | Gets independent opinions or reviews code with multiple agents | Read-only |
 | `delegate` | Gives one exact agent a task, with optional live steering and detached execution | Full read/write access |
+| `sessions` | Searches and navigates local coding-agent session histories | Read-only |
 
 In short:
 
 ```text
 Need several opinions?         review
 Need research or execution?    delegate
+Need to find a past session?   sessions
 ```
 
 ## Install
@@ -219,6 +221,46 @@ profile. It creates a new run using the saved native conversation. Only the late
 successful turn can continue; failed or ambiguous work is never replayed, and
 unavailable resume does not silently start over. Ordinary runs remain ephemeral.
 
+## Session history search
+
+`sessions` reads the session stores your coding agents already write —
+Claude Code, Codex CLI/Desktop, OpenCode, Grok, Devin CLI, Gemini, Cursor,
+Qwen Code, Kimi Code, OMP, Claude Desktop, and Consilium's own runs. It
+creates no index or database; every record carries a native locator
+(file:line or db table:key) back to the raw source.
+
+Multi-layer stores keep their authority straight: Codex surfaces the
+canonical `rollout-*.jsonl` bodies, the `state_*.sqlite` thread index
+(with subagent `thread_spawn_edges` lineage), the Desktop sidebar catalog
+(`codex-dev.db`, including cloud-only `chatgpt` threads that honestly
+report "no local rollout"), thread summaries, and `history.jsonl`. Claude
+Desktop covers Cowork `audit.jsonl` sessions (manifests with the user's
+`initialMessage`, permission events, `.audit-key` never touched) and
+`claude-code-sessions` manifests linked via `cliSessionId` to the
+canonical Claude Code transcript.
+
+```bash
+# Which history stores exist on this machine?
+scripts/consilium sessions roots
+
+# Recent Codex sessions in a project
+scripts/consilium sessions list -a codex --since 2026-01-01 --cwd my-project
+
+# What did the human actually ask? (prompts only, all harnesses)
+scripts/consilium sessions grep --scope prompts -i "rollback"
+
+# Read around a hit: 5 fragments on each side of seq 42
+scripts/consilium sessions show codex:0194a1b2-... --around 42 --context 5
+```
+
+Fragments are classified by `kind` (`prompt`/`assistant`/`reasoning`/
+`tool_call`/`tool_result`/`context`/`permission`/`metadata`…) and
+`authorship` (`human`/`agent`/`system`), so genuine user input stays
+distinguishable from orchestrator-injected context, subagent sidechains, and
+tool output. The full navigation algorithm and
+per-harness format recipes live in
+[`references/session-history.md`](references/session-history.md).
+
 ## Using it from a coding agent
 
 After installing the skill, ask your agent naturally:
@@ -293,6 +335,7 @@ scripts/consilium review code --depth basic|specialists|super|ultra [...]
 scripts/consilium delegate -a <exact-agent-id> [...]
 scripts/consilium delegate -a <exact-agent-id> --steerable|--one-shot|--detach [...]
 scripts/consilium delegate steer|status|cancel|wait|wait-any|watch|events|list [...]
+scripts/consilium sessions roots|list|grep|show [...]
 scripts/consilium --list-agents
 ```
 

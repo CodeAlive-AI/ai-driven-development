@@ -8,6 +8,7 @@
 #   consilium delegate -a <exact-agent-id> [...]
 #   consilium delegate wait|watch|events|list [...]
 #   consilium quota [all|codex|grok]
+#   consilium sessions roots|list|grep|show [...]
 #
 # Observability contract:
 #   compact semantic live progress → stderr
@@ -45,6 +46,11 @@ Usage:
   consilium delegate events RUN_ID [--cursor N] [--max-events N]
   consilium delegate list [--active|--all] [--reap] [--json]
   consilium quota [all|codex|grok]
+  consilium sessions roots [-a harness[,harness...]] [--store SUBSTR]
+  consilium sessions list [-a ...] [--store S] [--cwd S] [--since T] [--until T] [--limit N]
+  consilium sessions grep [-a ...] [--scope SCOPE] [-i] [--regex] [--limit N] PATTERN
+  consilium sessions show <harness:session-id|--file PATH> [--around SEQ] [--context N]
+                          [--scope SCOPE] [--max-chars N]
   consilium --list-agents
   consilium -h | --help
 
@@ -96,6 +102,22 @@ quota
   both. Codex uses its typed app-server API. Grok uses the official /usage TUI
   command on the SSH host (default: grok-aws). A partial result exits 2; all
   requested providers failing exits 3.
+
+sessions
+  Read-only search and navigation over local coding-agent session histories
+  (claude-code, codex, opencode, grok, devin, gemini, cursor, qwen-code,
+  kimi-code, omp, claude-desktop, plus consilium's own runs). No index or
+  database is created — every command streams decoded JSONL records with
+  native locators (file:line / db table:key) and a coverage summary.
+    roots  detected stores, availability, evidence level
+    list   session ids with title, cwd, dates, models
+    grep   text search; each hit carries kind (prompt/assistant/reasoning/
+           tool_call/tool_result/context/permission/metadata/…), authorship,
+           model, ts, seq, rel ids
+    show   one session's fragments; --around SEQ emits a ±--context window
+  Scope presets: convo (default) = prompts+assistant; prompts, assistant,
+  tools, reasoning, system, all. Classification rules and per-harness format
+  recipes: references/session-history.md.
 
 Environment:
   CONSILIUM_CONFIG, CONSILIUM_PROGRESS, CONSILIUM_OUTPUT_DIR, CONSILIUM_RUN_DIR, CONSILIUM_SAVE_OUTPUTS,
@@ -189,8 +211,12 @@ case "$1" in
         shift
         exec python3 "$LIB_DIR/quota.py" "$@"
         ;;
+    sessions|history)
+        shift
+        exec python3 "$LIB_DIR/sessions.py" "$@"
+        ;;
     *)
-        echo "Error: unknown command: $1 (expected review|delegate|quota)" >&2
+        echo "Error: unknown command: $1 (expected review|delegate|quota|sessions)" >&2
         usage >&2
         exit $EXIT_USAGE
         ;;

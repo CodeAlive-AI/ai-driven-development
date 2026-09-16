@@ -1783,6 +1783,21 @@ else
   FAIL=$((FAIL + 1))
 fi
 
+# Session-history readers (synthetic fixtures, offline).
+echo "=== Session history readers (offline) ==="
+set +e
+SESS_OUT=$(PYTHONDONTWRITEBYTECODE=1 PYTHONPATH="$LIB_DIR${PYTHONPATH:+:$PYTHONPATH}" python3 "$TESTS_DIR/sessions_test.py" 2>&1)
+SESS_RC=$?
+set -e
+printf '%s\n' "$SESS_OUT" | tail -5
+sess_count=$(printf '%s\n' "$SESS_OUT" | sed -n 's/^Ran \([0-9][0-9]*\) tests.*/\1/p' | tail -1)
+sess_count=${sess_count:-0}
+if [[ $SESS_RC -eq 0 && $sess_count -gt 0 ]]; then
+  PASS=$((PASS + sess_count))
+else
+  FAIL=$((FAIL + 1))
+fi
+
 # CLI surface for steerable modes
 help_out=$("$CONSILIUM" delegate -h 2>&1) || true
 assert_contains "delegate help mentions steerable" "$help_out" "steerable"
