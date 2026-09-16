@@ -1,0 +1,3 @@
+# Windows batch files need CRLF for reliable label/goto handling in cmd.exe
+*.cmd text eol=crlf
+*.bat text eol=crlf
