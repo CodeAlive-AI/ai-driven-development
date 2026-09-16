@@ -611,7 +611,8 @@ def test_duplicate_idempotency(tmp: Path) -> None:
     cwd = tmp / "cwd-dup"
     cwd.mkdir()
     env = env_base(reg_root, art)
-    env["CONSILIUM_FAKE_STEER_SLOW"] = "0.5"
+    # Window must outlast three sequential steer CLI calls; 0.5s flakes under load.
+    env["CONSILIUM_FAKE_STEER_SLOW"] = "1.5"
     proc, run_id, _ = start_steerable("codex", "dup task", env, cwd)
     time.sleep(0.15)
     # Same client_id + same content + same mode → idempotent

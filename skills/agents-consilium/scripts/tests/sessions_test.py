@@ -1029,6 +1029,49 @@ class CliAnalyticsTests(FixtureMixin, unittest.TestCase):
         self.assertEqual(grp["tool_errors"], 1)
 
 
+class WindowsPathTests(FixtureMixin, unittest.TestCase):
+    """Store paths resolve to %APPDATA%/%LOCALAPPDATA% under Windows."""
+
+    def _stores(self, harness, env):
+        env = dict(env)
+        env.pop("CONSILIUM_STEER_DIR", None)  # keep the host env out of steer-root resolution
+        with patch.object(sessions, "IS_WINDOWS", True), \
+             patch.object(sessions, "IS_MACOS", False), \
+             patch.object(sessions, "HOME", self.root), \
+             patch.dict(os.environ, env, clear=False):
+            return sessions.stores_for(harness)
+
+    def test_windows_bases(self):
+        appdata = str(self.root / "AppData" / "Roaming")
+        localapp = str(self.root / "AppData" / "Local")
+        env = {"APPDATA": appdata, "LOCALAPPDATA": localapp}
+        cur = self._stores("cursor", env)
+        self.assertEqual(cur[0].path,
+                         self.root / "AppData" / "Roaming" / "Cursor" / "User" / "globalStorage" / "state.vscdb")
+        cd = self._stores("claude-desktop", env)
+        self.assertTrue(str(cd[0].path).startswith(appdata))
+        dev = self._stores("devin", env)
+        self.assertTrue(str(dev[0].path).startswith(localapp))
+        oc = self._stores("opencode", env)
+        self.assertTrue(str(oc[0].path).startswith(localapp))
+        with patch.object(sessions, "IS_WINDOWS", True), \
+             patch.object(sessions, "IS_MACOS", False), \
+             patch.object(sessions, "HOME", self.root), \
+             patch.dict(os.environ, {**env, "CONSILIUM_STEER_DIR": ""}, clear=False):
+            self.assertTrue(str(sessions._steer_root()).startswith(localapp))
+
+    def test_sqlite_uri_windows_path(self):
+        # file: URI must use forward slashes even for drive-letter paths
+        db = self.root / "sub dir" / "x.db"
+        db.parent.mkdir(parents=True)
+        conn = sqlite3.connect(db)
+        conn.execute("CREATE TABLE t (a)")
+        conn.close()
+        c = sessions.open_sqlite_ro(db)
+        self.assertIsNotNone(c)
+        c.close()
+
+
 class CliTests(FixtureMixin, unittest.TestCase):
     """End-to-end through argv parsing using CONSILIUM_HISTORY_ROOT_* overrides."""
 

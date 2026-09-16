@@ -218,13 +218,18 @@ case "$1" in
         shift
         exec bash "$LIB_DIR/delegate.sh" "$@"
         ;;
-    quota)
-        shift
-        exec python3 "$LIB_DIR/quota.py" "$@"
-        ;;
-    sessions|history)
-        shift
-        exec python3 "$LIB_DIR/sessions.py" "$@"
+    quota|sessions|history)
+        cmd=$1; shift
+        # python3 on POSIX; Git Bash on Windows usually exposes only `python`
+        PY=$(command -v python3 || command -v python) || {
+            echo "Error: no python interpreter found (need python3 or python on PATH)" >&2
+            exit $EXIT_USAGE
+        }
+        if [ "$cmd" = "quota" ]; then
+            exec "$PY" "$LIB_DIR/quota.py" "$@"
+        else
+            exec "$PY" "$LIB_DIR/sessions.py" "$@"
+        fi
         ;;
     *)
         echo "Error: unknown command: $1 (expected review|delegate|quota|sessions)" >&2

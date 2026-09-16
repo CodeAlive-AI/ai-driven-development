@@ -27,6 +27,34 @@ headers (`_session`), fragments, and a final `_summary` record. Diagnostics go
 to stderr; exit codes are 0 ok / 2 partial (some stores unavailable) / 70+ hard
 failure.
 
+## Platform defaults
+
+All commands run on macOS, Linux, and Windows. On Windows use the sibling
+`consilium.cmd` launcher (sessions/quota run on native Python; review/delegate
+forward to bash — Git Bash, MSYS2, or WSL required for those). The reader
+itself is platform-neutral; only the *default store roots* differ:
+
+| harness | macOS / Linux | Windows |
+|---|---|---|
+| `claude-code` | `~/.claude/projects` | `%USERPROFILE%\.claude\projects` |
+| `codex` | `~/.codex` (or `$CODEX_HOME`) | `%USERPROFILE%\.codex` (or `%CODEX_HOME%`) |
+| `opencode` | `~/.local/share/opencode` | `%LOCALAPPDATA%\opencode` |
+| `grok` | `~/.grok/sessions` | `%USERPROFILE%\.grok\sessions` |
+| `devin` | `~/.local/share/devin/cli` | `%LOCALAPPDATA%\devin\cli` |
+| `gemini` | `~/.gemini` | `%USERPROFILE%\.gemini` |
+| `claude-desktop` | `~/Library/Application Support/Claude` | `%APPDATA%\Claude` |
+| `cursor` | `~/Library/Application Support/Cursor/User` | `%APPDATA%\Cursor\User` |
+| `qwen-code` | `~/.qwen/projects` | `%USERPROFILE%\.qwen\projects` |
+| `kimi-code` | `~/.kimi-code` (or `$KIMI_CODE_HOME`) | `%USERPROFILE%\.kimi-code` (or `%KIMI_CODE_HOME%`) |
+| `omp` | `~/.omp/agent/sessions` | `%USERPROFILE%\.omp\agent\sessions` |
+| `consilium` | `~/Library/Caches/agents-consilium/steer` (macOS), `$XDG_CACHE_HOME/agents-consilium/steer` (Linux) | `%LOCALAPPDATA%\agents-consilium\steer` |
+
+`CONSILIUM_HISTORY_ROOT_<HARNESS>` overrides any default (uppercase, `-`→`_`),
+`CONSILIUM_STEER_DIR` overrides the consilium root. On Linux `claude-desktop`
+and `cursor` fall back to `~/.config/…`. SQLite stores open read-only via a
+`file:` URI with `mode=ro` + `PRAGMA query_only=ON`; drive-letter paths
+(`C:\…`) are URI-escaped internally — pass them as normal paths.
+
 ## The navigation algorithm
 
 Follow these steps in order. Each step narrows before the next one reads more

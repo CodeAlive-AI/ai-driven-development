@@ -27,6 +27,17 @@ from typing import Any, Iterable, Iterator
 
 HOME = Path.home()
 IS_MACOS = sys.platform == "darwin"
+IS_WINDOWS = sys.platform == "win32"
+
+
+def _win_appdata() -> Path:
+    """Roaming AppData (per-machine sync'd) — where Claude Desktop/Cursor keep state."""
+    return Path(os.environ.get("APPDATA") or (HOME / "AppData" / "Roaming"))
+
+
+def _win_localapp() -> Path:
+    """Local AppData — caches and machine-local state."""
+    return Path(os.environ.get("LOCALAPPDATA") or (HOME / "AppData" / "Local"))
 
 EXIT_OK = 0
 EXIT_USAGE = 5
@@ -294,7 +305,10 @@ def tail_line(path: Path, chunk: int = 8192) -> str | None:
 def open_sqlite_ro(path: Path) -> sqlite3.Connection:
     """Short-lived read-only connection. Never immutable=1 (unsafe on live DBs),
     never manual WAL parsing. Raises on failure → caller reports unavailable."""
-    conn = sqlite3.connect(f"file:{path}?mode=ro", uri=True, timeout=2.0)
+    # as_posix() keeps Windows paths valid inside a file: URI (C:/x/y.db)
+    conn = sqlite3.connect(
+        f"file:{urllib.parse.quote(path.as_posix(), safe='/:')}?mode=ro",
+        uri=True, timeout=2.0)
     conn.execute("PRAGMA query_only=ON")
     return conn
 
@@ -360,6 +374,8 @@ def _steer_root() -> Path:
         return Path(env).expanduser()
     if IS_MACOS:
         return HOME / "Library" / "Caches" / "agents-consilium" / "steer"
+    if IS_WINDOWS:
+        return _win_localapp() / "agents-consilium" / "steer"
     return Path(os.environ.get("XDG_CACHE_HOME", HOME / ".cache")) / "agents-consilium" / "steer"
 
 
@@ -409,7 +425,7 @@ def stores_for(harness: str) -> list[Store]:
     if harness == "opencode":
         if ov:
             return [Store(harness, "custom", ov, "json_dir")]
-        base = HOME / ".local" / "share" / "opencode"
+        base = (_win_localapp() / "opencode") if IS_WINDOWS else (HOME / ".local" / "share" / "opencode")
         return [
             Store(harness, "db", base / "opencode.db", "sqlite"),
             Store(harness, "storage", base / "storage", "json_dir"),
@@ -417,7 +433,8 @@ def stores_for(harness: str) -> list[Store]:
     if harness == "grok":
         return [Store(harness, "sessions", ov or (HOME / ".grok" / "sessions"), "session_dirs")]
     if harness == "devin":
-        base = ov or (HOME / ".local" / "share" / "devin" / "cli")
+        base = ov or ((_win_localapp() / "devin" / "cli") if IS_WINDOWS
+                      else (HOME / ".local" / "share" / "devin" / "cli"))
         return [
             Store(harness, "sessions.db", base / "sessions.db", "sqlite"),
             Store(harness, "transcripts", base / "transcripts", "json_dir"),
@@ -429,7 +446,9 @@ def stores_for(harness: str) -> list[Store]:
             Store(harness, "projects-map", base / "projects.json", "json_dir"),
         ]
     if harness == "claude-desktop":
-        base = ov or (HOME / "Library" / "Application Support" / "Claude")
+        base = ov or (_win_appdata() / "Claude" if IS_WINDOWS
+                      else HOME / ".config" / "Claude" if not IS_MACOS
+                      else HOME / "Library" / "Application Support" / "Claude")
         if ov:
             return [Store(harness, "cowork", base, "session_dirs")]
         return [
@@ -439,7 +458,9 @@ def stores_for(harness: str) -> list[Store]:
     if harness == "cursor":
         if ov:
             return [Store(harness, "custom", ov, "sqlite")]
-        base = HOME / "Library" / "Application Support" / "Cursor" / "User"
+        base = (_win_appdata() / "Cursor" / "User" if IS_WINDOWS
+                else HOME / ".config" / "Cursor" / "User" if not IS_MACOS
+                else HOME / "Library" / "Application Support" / "Cursor" / "User")
         out = [Store(harness, "globalStorage", base / "globalStorage" / "state.vscdb", "sqlite")]
         ws = base / "workspaceStorage"
         if ws.is_dir():

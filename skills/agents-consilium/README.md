@@ -21,8 +21,12 @@ Each worker runs through its real coding-agent harness, with access to the tools
 
 Linux and macOS are covered by the full offline regression suite. Windows 11
 with Git Bash/MSYS2 and native Python 3.11+ has experimental, community-supported
-compatibility. Run shell commands from Git Bash; native PowerShell/cmd invocation
-is not the shell interface.
+compatibility. `consilium.cmd` runs `sessions` and `quota` natively (cmd,
+PowerShell, or Git Bash all work — store roots resolve to `%APPDATA%` /
+`%LOCALAPPDATA%` / `%USERPROFILE%` automatically, see
+[references/session-history.md](references/session-history.md#platform-defaults)).
+`review` and `delegate` run from Git Bash; native PowerShell/cmd invocation is
+not the shell interface for those modes.
 
 CI checks Windows imports, LF config output, cross-process locking, bounded
 observation, process-tree cancellation, CLI launchers, and a fake Codex durable
