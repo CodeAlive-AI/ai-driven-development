@@ -48,8 +48,9 @@ data — do not grep before you know which sessions exist.
    `--scope all|tools|system|reasoning|prompts`.
 4. **Read around a hit** — `sessions show <harness:id> --around SEQ --context N`.
    `seq` is the fragment's native sequence position within its session;
-   `--context` emits N fragments on each side. This is how you see what a
-   prompt answered, which tool call preceded a failure, or what the user saw.
+   `--context` emits N *emitted* fragments on each side — counted after
+   `--scope` filtering, so a scope-filtered window may span more seqs than
+   2N+1. `flags` evidence carries `seq` directly — feed it to `--around`.
 5. **Open the raw record** — every fragment's `locator` points at the source:
    `{"file": ..., "line": N}` for JSONL stores, `{"db": ..., "table": ...,
    "key"/"row_id": ...}` for SQLite, `{"dir": ...}` for directory stores.
@@ -287,6 +288,68 @@ Codex stores the same threads in several layers with different authority.
   runs — joinable to `codex:` sessions).
 - `events.jsonl`: normalized event stream emitted by the run; raw provider
   output under `raw/`.
+
+## Turn analytics: `turns` / `flags` / `stats`
+
+For reflection workloads ("how did model X do?", "what keeps failing in my
+orchestration?") navigate **turns**, not raw fragments. A turn follows the
+TraceLab definition: it starts at the *triggering* user message
+(`kind=prompt` + `authorship` ∈ `human`|`unknown`) and ends at the last agent
+output before the next triggering message. Adjacent prompts with no agent
+output between them merge into one request (multi-message input and
+store-internal mirrors like codex `event_msg.user_message` ↔
+`response_item.user`).
+
+```bash
+consilium sessions turns -a codex --since 2026-02-01   # one row per turn
+consilium sessions flags -a claude-code --kind retry_loop
+consilium sessions stats --by model                    # grouped aggregates
+```
+
+Each turn row carries: `ts_start/ts_end/duration_s`, `models`, `user_msgs`,
+`tool_calls`, `tool_errors`, `retries`, `assistant_msgs`, `reasoning`,
+`compactions`, `permissions`, `interrupted`, `has_final`, `usage`, and
+`first_locator`/`last_locator` for `show --around` drill-down.
+
+`flags` emits deterministic, evidence-linked detections — **never verdicts**:
+
+| pattern | detection rule |
+|---|---|
+| `retry_loop` | ≥3 identical `tool_call`s (same tool+input) across consecutive *steps* — calls fanned out from one raw record (same `locator`) count as one parallel step |
+| `search_loop` | ≥5 consecutive search/read-type steps without a mutation (same step-collapsing) |
+| `edit_without_read` | Write/Edit/apply_patch on a path with no earlier Read in the session |
+| `correction` | triggering prompt matching lexical correction markers ("that's not", "revert", "не так", …) after a completed turn |
+| `correction_burst` | ≥3 corrections in one session |
+| `abandoned` | session ends on an unanswered human prompt after earlier agent activity |
+| `permission_friction` | ≥3 permission events in one session |
+| `context_pressure` | ≥1 compaction event |
+| `interrupted` | ≥1 interrupt/abort record (`turn_aborted`, `[Request interrupted…]`) |
+| `error_burst` | ≥3 error fragments within a 10-fragment window |
+| `failed_run` | terminal boundary `status=failed/error` (consilium runs) |
+
+Every flag carries `evidence: [{seq, locator}, …]` + `basis` describing the
+rule — feed `seq` straight to `sessions show <harness:id> --around SEQ` to
+verify before quoting it in an insight. These are heuristics: a `retry_loop` may be a deliberate
+poll; `correction` markers may be false positives on idiomatic text.
+
+`stats` groups by `--by model|harness|cwd|day`: sessions, turns, tool
+calls/errors + error rate, compactions, interruptions, median turn duration,
+token usage, flags per pattern, plus `_top_flagged` sessions for triage.
+
+Usage semantics: claude/gemini/opencode emit per-request usage (summed);
+codex `token_count` is a cumulative snapshot (max taken, never summed).
+Grok `tool_result` carries no error field — `tool_errors=0` there means
+"not recorded", not "no errors".
+
+**Dedup rule** (stated in every `_summary`): layered stores of one
+conversation collapse — first canonical layer wins (rollout/transcript over
+index/catalog), claude-desktop code-sessions key on `cliSessionId`, consilium
+runs dedupe by `native_session`.
+
+**Synthesis recipe**: `stats` → find outlier groups → `flags` → collect
+patterns with locators → `show --around` on the worst sessions → write the
+top insights yourself with evidence links. The tool prepares evidence;
+the calling agent owns the narrative.
 
 ## Classification contract
 

@@ -251,6 +251,11 @@ scripts/consilium sessions grep --scope prompts -i "rollback"
 
 # Read around a hit: 5 fragments on each side of seq 42
 scripts/consilium sessions show codex:0194a1b2-... --around 42 --context 5
+
+# Reflection: per-turn metrics, anti-pattern flags, grouped stats
+scripts/consilium sessions stats -a claude-code --by model --since 2026-02-01
+scripts/consilium sessions flags --kind retry_loop --limit 20
+scripts/consilium sessions turns -a grok --cwd my-project
 ```
 
 Fragments are classified by `kind` (`prompt`/`assistant`/`reasoning`/

@@ -737,6 +737,298 @@ class ConsiliumRunTests(FixtureMixin, unittest.TestCase):
         self.assertTrue(any(f["kind"] == "boundary" and f["status"] == "completed" for f in out))
 
 
+class EnrichmentTests(FixtureMixin, unittest.TestCase):
+    """error / usage / interrupted fields propagated from native records."""
+
+    def test_codex_error_interrupted_usage(self):
+        sid = "88887777-6666-5555-4444-333322221111"
+        path = self.root / "codex" / "2026" / "02" / "01" / f"rollout-2026-02-01T00-00-00-{sid}.jsonl"
+        write_jsonl(path, [
+            {"timestamp": "2026-02-01T00:00:00Z", "type": "session_meta",
+             "payload": {"id": sid, "cwd": "/w", "model_provider": "openai"}},
+            {"timestamp": "2026-02-01T00:00:01Z", "type": "event_msg",
+             "payload": {"type": "user_message", "turn_id": "t1", "message": "run it"}},
+            {"timestamp": "2026-02-01T00:00:02Z", "type": "response_item",
+             "payload": {"type": "function_call", "name": "shell", "call_id": "c1", "arguments": "{}"}},
+            {"timestamp": "2026-02-01T00:00:03Z", "type": "response_item",
+             "payload": {"type": "function_call_output", "call_id": "c1",
+                         "output": json.dumps({"output": "boom", "metadata": {"exit_code": 1}})}},
+            {"timestamp": "2026-02-01T00:00:04Z", "type": "event_msg",
+             "payload": {"type": "turn_aborted", "turn_id": "t1"}},
+            {"timestamp": "2026-02-01T00:00:05Z", "type": "event_msg",
+             "payload": {"type": "token_count", "info": {"total_token_usage": {"input": 10}}}},
+        ])
+        store = sessions.Store("codex", "sessions", self.root / "codex", "jsonl_dir")
+        ref = list(sessions.codex_iter_sessions(store))[0]
+        out = list(sessions.codex_iter_fragments(store, ref, 400, {}))
+        err = [f for f in out if f.get("error")]
+        self.assertTrue(any(f["kind"] == "tool_result" for f in err))
+        self.assertTrue(any(f.get("interrupted") for f in out))
+        self.assertTrue(any(f.get("usage") for f in out))
+
+    def test_claude_is_error_and_usage(self):
+        proj = self.root / "claude" / "-p"
+        sid = "12345678-1234-1234-1234-1234567890ab"
+        write_jsonl(proj / f"{sid}.jsonl", [
+            {"type": "user", "timestamp": "2026-02-01T00:00:00Z", "sessionId": sid,
+             "origin": {"kind": "human"}, "message": {"role": "user", "content": "go"}},
+            {"type": "assistant", "timestamp": "2026-02-01T00:00:01Z", "sessionId": sid,
+             "message": {"role": "assistant", "model": "claude-opus-5",
+                         "usage": {"input_tokens": 5, "output_tokens": 9},
+                         "content": [{"type": "tool_use", "id": "t1", "name": "Bash",
+                                      "input": {"command": "false"}}]}},
+            {"type": "user", "timestamp": "2026-02-01T00:00:02Z", "sessionId": sid,
+             "message": {"role": "user", "content": [
+                 {"type": "tool_result", "tool_use_id": "t1", "is_error": True,
+                  "content": "exit 1"}]}},
+        ])
+        store = sessions.Store("claude-code", "projects", self.root / "claude", "jsonl_dir")
+        ref = list(sessions.claude_iter_sessions(store))[0]
+        out = list(sessions.claude_iter_fragments(store, ref, 400, {}))
+        self.assertTrue(any(f.get("error") and f["kind"] == "tool_result" for f in out))
+        self.assertTrue(any((f.get("usage") or {}).get("output") == 9 for f in out))
+
+
+def afrag(kind, authorship=None, text=None, tool=None, inp=None, error=False,
+          ts=None, seq=0, usage=None, interrupted=False, status=None):
+    f = {"kind": kind, "seq": seq, "native_type": "test",
+         "locator": {"file": "fx", "line": seq}}
+    if text is not None:
+        f["text"] = text
+    if authorship:
+        f["authorship"] = authorship
+    if tool:
+        f["rel"] = {"tool": tool}
+        f["text"] = json.dumps({"name": tool, "input": inp or {}})
+    if error:
+        f["error"] = True
+    if ts:
+        f["ts"] = ts
+    if usage:
+        f["usage"] = usage
+    if interrupted:
+        f["interrupted"] = True
+    if status:
+        f["status"] = status
+    return f
+
+
+class AnalyzeTests(FixtureMixin, unittest.TestCase):
+    """Turn/flags/stats projections over synthetic fragment streams."""
+
+    def run_session(self, frags, store_name="s"):
+        import analyze
+        store = sessions.Store("h", store_name, self.root, "jsonl_dir")
+        ref = sessions.SessionRef(harness="h", store=store_name, session_id="sess-1",
+                                  locator={}, title="t", cwd="/w")
+        return analyze.analyze_session(store, ref, frags)
+
+    def test_turn_boundaries_and_prompt_merge(self):
+        frags = [
+            afrag("prompt", "human", "first", seq=1),
+            afrag("prompt", "human", "second same request", seq=2),  # merged
+            afrag("assistant", "agent", "reply", seq=3, ts="2026-01-01T00:00:10Z"),
+            afrag("prompt", "human", "next task", seq=4, ts="2026-01-01T00:00:20Z"),
+            afrag("assistant", "agent", "reply2", seq=5, ts="2026-01-01T00:00:30Z"),
+        ]
+        rows, flags = self.run_session(frags)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["turn"], 1)
+        self.assertEqual(rows[0]["user_msgs"], 2)
+        self.assertTrue(rows[0]["has_final"])
+        self.assertEqual(rows[1]["turn"], 2)
+
+    def test_technical_prompts_do_not_trigger(self):
+        frags = [
+            afrag("context", "system", "sys", seq=1),
+            afrag("prompt", "system", "auto-injection", seq=2),
+            afrag("prompt", "agent", "subagent task", seq=3),
+            afrag("prompt", "human", "real prompt", seq=4),
+            afrag("assistant", "agent", "ok", seq=5),
+        ]
+        rows, _ = self.run_session(frags)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["user_msgs"], 1)
+
+    def test_flags_full_session(self):
+        frags = [
+            afrag("prompt", "human", "do it", seq=1, ts="2026-01-01T00:00:00Z"),
+            afrag("tool_call", tool="Read", inp={"file_path": "/a.py"}, seq=2),
+            afrag("tool_result", seq=3),
+        ]
+        # 5 consecutive search calls: search_loop; 3 identical Greps: retry_loop
+        frags += [afrag("tool_call", tool="Grep", inp={"pattern": "x"}, seq=4 + i) for i in range(3)]
+        frags += [afrag("tool_result", error=True, seq=7),
+                  afrag("tool_call", tool="Read", inp={"file_path": "/b.py"}, seq=8),
+                  afrag("tool_call", tool="Read", inp={"file_path": "/c.py"}, seq=9)]
+        # mutation on a path never read
+        frags += [afrag("tool_call", tool="Write", inp={"file_path": "/new.py"}, seq=10),
+                  afrag("tool_result", seq=11),
+                  afrag("assistant", "agent", "done", seq=12)]
+        # permission friction + compaction + interrupt
+        frags += [afrag("permission", "system", seq=13 + i) for i in range(3)]
+        frags += [afrag("compaction", "system", seq=16),
+                  afrag("metadata", "system", seq=17, interrupted=True)]
+        # correction prompt → turn 2; then unanswered prompt → abandoned
+        frags += [afrag("prompt", "human", "that's not what I asked, revert it", seq=18),
+                  afrag("assistant", "agent", "ok reverted", seq=19),
+                  afrag("prompt", "human", "and also …", seq=20)]
+        rows, flags = self.run_session(frags)
+        pats = {f["pattern"] for f in flags}
+        self.assertIn("retry_loop", pats)
+        self.assertIn("search_loop", pats)
+        self.assertIn("edit_without_read", pats)
+        self.assertIn("correction", pats)
+        self.assertIn("permission_friction", pats)
+        self.assertIn("context_pressure", pats)
+        self.assertIn("interrupted", pats)
+        self.assertIn("abandoned", pats)
+        self.assertEqual(len(rows), 3)
+        self.assertFalse(rows[-1]["has_final"])
+        # evidence locators always present for evidence-bearing flags
+        ev = [f for f in flags if f["pattern"] == "retry_loop"][0]
+        self.assertTrue(ev["evidence"])
+        self.assertIn("file", ev["evidence"][0]["locator"])
+        self.assertIn("seq", ev["evidence"][0])
+
+    def test_retry_loop_step_collapsing(self):
+        # calls fanned out from one raw record (same locator) = one parallel
+        # step — must NOT count as a retry run (grok batch-edit false positive)
+        one_loc = {"file": "fx", "line": 7}
+        frags = [afrag("prompt", "human", "go", seq=1)]
+        for i, p in enumerate(("/a.py", "/b.py", "/c.py")):
+            f = afrag("tool_call", tool="Write", inp={"file_path": p}, seq=2 + i)
+            f["locator"] = one_loc
+            frags.append(f)
+        frags.append(afrag("assistant", "agent", "done", seq=6))
+        _, flags = self.run_session(frags)
+        self.assertNotIn("retry_loop", {f["pattern"] for f in flags})
+        # same call across three DISTINCT steps IS a retry loop
+        frags = [afrag("prompt", "human", "go", seq=1)]
+        for i in range(3):
+            frags.append(afrag("tool_call", tool="Bash", inp={"command": "ls"},
+                               seq=2 + i * 2))
+            frags.append(afrag("tool_result", seq=3 + i * 2))
+        _, flags = self.run_session(frags)
+        self.assertIn("retry_loop", {f["pattern"] for f in flags})
+
+    def test_retry_loop_unparseable_input(self):
+        # truncated/unparseable args must not collapse all calls into sig="{}"
+        frags = [afrag("prompt", "human", "go", seq=1)]
+        for i, name in enumerate(("/x.py", "/y.py", "/z.py")):
+            f = afrag("tool_call", tool="Write", seq=2 + i)
+            f["text"] = '{"name":"Write","arguments":"{\\"file_path\\": \\"' + name  # truncated JSON
+            frags.append(f)
+        _, flags = self.run_session(frags)
+        self.assertNotIn("retry_loop", {f["pattern"] for f in flags})
+
+    def test_error_burst(self):
+        frags = [afrag("prompt", "human", "go", seq=1)]
+        frags += [afrag("tool_result", error=True, seq=2 + i) for i in range(3)]
+        frags += [afrag("assistant", "agent", "x", seq=6)]
+        _, flags = self.run_session(frags)
+        self.assertIn("error_burst", {f["pattern"] for f in flags})
+
+    def test_stats_grouping_and_dedup(self):
+        import analyze
+        root = self.root / "claude"
+        sid = "ded00000-0000-0000-0000-00000000000a"
+        proj = root / "-p"
+        write_jsonl(proj / f"{sid}.jsonl", [
+            {"type": "user", "timestamp": "2026-03-01T00:00:00Z", "sessionId": sid,
+             "origin": {"kind": "human"}, "message": {"role": "user", "content": "hi"}},
+            {"type": "assistant", "timestamp": "2026-03-01T00:00:05Z", "sessionId": sid,
+             "message": {"role": "assistant", "model": "claude-x",
+                         "content": [{"type": "text", "text": "hey"}]}},
+        ])
+        # two stores over the same tree → session counted once
+        stores = [sessions.Store("claude-code", "projects", root, "jsonl_dir"),
+                  sessions.Store("claude-code", "dup", root, "jsonl_dir")]
+        for s in stores:
+            s.status = "ok"
+        args = type("A", (), {"cwd": None, "since": None, "until": None, "max_chars": 400})
+        stats: dict[str, int] = {}
+        seen = [(st.name, r.session_id) for st, r, f in analyze.iter_dedup_sessions(stores, args, stats)]
+        self.assertEqual(len(seen), 1)
+        self.assertEqual(seen[0][0], "projects")
+        self.assertEqual(stats.get("deduped"), 1)
+
+        # cmd_stats aggregates over the deduped stream
+        import contextlib
+        import io
+        import unittest.mock as m
+        ns = type("N", (), {})()
+        ns.agent = "claude-code"; ns.store = None; ns.cwd = None
+        ns.since = None; ns.until = None; ns.max_chars = 400; ns.limit = 0; ns.by = "model"
+        with m.patch.object(analyze.S, "selected_stores", return_value=stores):
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf):
+                analyze.cmd_stats(ns)
+        rows = [json.loads(l) for l in buf.getvalue().splitlines()]
+        grp = next(r for r in rows if r.get("group") == "claude-x")
+        self.assertEqual(grp["sessions"], 1)  # dedup applied
+        self.assertEqual(grp["turns"], 1)
+        self.assertEqual(grp["sessions_no_model"], 0)
+        self.assertTrue(rows[-1]["_summary"])
+        self.assertIn("dedup_rule", rows[-1])
+
+
+class CliAnalyticsTests(FixtureMixin, unittest.TestCase):
+    def setUp(self):
+        super().setUp()
+        self.env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONDONTWRITEBYTECODE="1")
+
+    def run_cli(self, *args, env_extra=None):
+        env = dict(self.env)
+        env.update(env_extra or {})
+        return subprocess.run(
+            [sys.executable, str(LIB / "sessions.py"), *args],
+            capture_output=True, text=True, encoding="utf-8", timeout=30, env=env)
+
+    def lines(self, proc):
+        return [json.loads(l) for l in proc.stdout.splitlines() if l.strip()]
+
+    def test_turns_flags_stats_cli(self):
+        proj = self.root / "claude" / "-p"
+        sid = "aaaabbbb-0000-1111-2222-333344445555"
+        write_jsonl(proj / f"{sid}.jsonl", [
+            {"type": "user", "timestamp": "2026-03-02T00:00:00Z", "sessionId": sid,
+             "origin": {"kind": "human"}, "message": {"role": "user", "content": "build it"}},
+            {"type": "assistant", "timestamp": "2026-03-02T00:00:05Z", "sessionId": sid,
+             "message": {"role": "assistant", "model": "claude-opus-5",
+                         "content": [{"type": "tool_use", "id": "t1", "name": "Read",
+                                      "input": {"file_path": "/x.py"}}]}},
+            {"type": "user", "timestamp": "2026-03-02T00:00:06Z", "sessionId": sid,
+             "message": {"role": "user", "content": [
+                 {"type": "tool_result", "tool_use_id": "t1", "is_error": True,
+                  "content": "no such file"}]}},
+            {"type": "user", "timestamp": "2026-03-02T00:00:30Z", "sessionId": sid,
+             "origin": {"kind": "human"},
+             "message": {"role": "user", "content": "that's not right, undo it"}},
+        ])
+        env = {"CONSILIUM_HISTORY_ROOT_CLAUDE_CODE": str(self.root / "claude")}
+
+        proc = self.run_cli("turns", "-a", "claude-code", env_extra=env)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        rows = [r for r in self.lines(proc) if not r.get("_summary")]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0]["turn"], 1)
+        self.assertEqual(rows[0]["tool_errors"], 1)
+        self.assertEqual(rows[0]["duration_s"], 6.0)
+        self.assertFalse(rows[1]["has_final"])
+
+        proc = self.run_cli("flags", "-a", "claude-code", env_extra=env)
+        pats = {r["pattern"] for r in self.lines(proc) if not r.get("_summary")}
+        self.assertIn("correction", pats)
+        self.assertIn("abandoned", pats)
+
+        proc = self.run_cli("stats", "-a", "claude-code", "--by", "model", env_extra=env)
+        rows = self.lines(proc)
+        grp = next(r for r in rows if r.get("group") == "claude-opus-5")
+        self.assertEqual(grp["turns"], 2)
+        self.assertEqual(grp["tool_errors"], 1)
+
+
 class CliTests(FixtureMixin, unittest.TestCase):
     """End-to-end through argv parsing using CONSILIUM_HISTORY_ROOT_* overrides."""
 

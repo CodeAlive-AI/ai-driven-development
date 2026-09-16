@@ -3,8 +3,9 @@
 
 Read-only, index-free reader over the native on-disk session stores of CLI
 coding agents. Emits bounded JSONL fragments with source locators and honest
-coverage diagnostics. See references/session-history.md for the format
-recipes and the navigation algorithm this implements.
+coverage diagnostics. `turns`/`flags`/`stats` add a turn-level reflection
+layer (delegated to lib/analyze.py). See references/session-history.md for
+the format recipes and the navigation algorithm this implements.
 
 Never execute stored content. Never mutate source files. SQLite stores are
 opened `mode=ro` + `PRAGMA query_only` — never `immutable=1`, never manual
@@ -66,6 +67,18 @@ AUTOCONTEXT_MARKERS = (
     "Caveat:",
 )
 
+# Codex response-layer injections arrive as role=user/developer records that
+# never appear in event_msg.user_message. They are recognizable by their XML/
+# INSTRUCTIONS wrappers; free text without these markers is a genuine prompt
+# (or an unverifiable steer) even when the event_msg mirror is missing or
+# arrives later in the file.
+CODEX_INJECTION_MARKERS = (
+    "<environment_context", "<app-context", "<skills_instructions",
+    "<recommended_plugins", "<user_instructions", "<INSTRUCTIONS",
+    "# AGENTS.md instructions", "<permissions", "<collaboration_mode",
+    "<session_context", "<steering", "<turn_context", "<developer_message",
+)
+
 
 def _trunc(text: Any, limit: int) -> tuple[str, bool]:
     if not isinstance(text, str):
@@ -95,6 +108,9 @@ def frag(
     rel: dict[str, Any] | None = None,
     phase: str | None = None,
     status: str | None = None,
+    error: bool = False,
+    usage: Any = None,
+    interrupted: bool = False,
     max_chars: int = 400,
 ) -> dict[str, Any]:
     out: dict[str, Any] = {
@@ -130,7 +146,33 @@ def frag(
         out["phase"] = phase
     if status:
         out["status"] = status
+    if error:
+        out["error"] = True
+    if usage is not None:
+        out["usage"] = _compact_usage(usage)
+    if interrupted:
+        out["interrupted"] = True
     return out
+
+
+def _compact_usage(u: Any) -> dict[str, int] | None:
+    """Reduce harness usage dicts to {input, output, cache_read, cache_write, total}."""
+    if not isinstance(u, dict):
+        return {"total": u} if isinstance(u, (int, float)) else None
+    out: dict[str, int] = {}
+    for dst, keys in (
+        ("input", ("input_tokens", "input", "prompt_tokens")),
+        ("output", ("output_tokens", "output", "completion_tokens")),
+        ("cache_read", ("cache_read_input_tokens", "cache_read")),
+        ("cache_write", ("cache_creation_input_tokens", "cache_write")),
+        ("total", ("total_tokens", "total", "tokens_used")),
+    ):
+        for k in keys:
+            v = u.get(k)
+            if isinstance(v, (int, float)) and v:
+                out[dst] = int(v)
+                break
+    return out or None
 
 
 def _iso(value: Any) -> str | None:
@@ -184,10 +226,22 @@ def ts_epoch(value: Any) -> float | None:
 # IO helpers
 # ---------------------------------------------------------------------------
 
-def iter_jsonl(path: Path, stats: dict[str, int]) -> Iterator[tuple[int, dict[str, Any]]]:
+def _read_head(fh, max_lines: int) -> str:
+    """Read at most max_lines complete lines from an open text file."""
+    parts: list[str] = []
+    for _ in range(max_lines):
+        line = fh.readline()
+        if not line:
+            break
+        parts.append(line)
+    return "".join(parts)
+
+
+def iter_jsonl(path: Path, stats: dict[str, int], max_lines: int | None = None) -> Iterator[tuple[int, dict[str, Any]]]:
     """Yield (line_no, record) for each parseable JSON object line.
 
-    Reads are bounded to the file size observed at open time; a truncated
+    Reads are bounded to the file size observed at open time (or to
+    max_lines lines when a listing only needs the head); a truncated
     trailing line is reported via stats['truncated_tail'], malformed interior
     lines via stats['malformed'].
     """
@@ -198,8 +252,8 @@ def iter_jsonl(path: Path, stats: dict[str, int]) -> Iterator[tuple[int, dict[st
         stats["unreadable"] = stats.get("unreadable", 0) + 1
         return
     with fh:
-        data = fh.read(size + 1)
-    if not data.endswith("\n") and data.strip():
+        data = fh.read(size + 1) if max_lines is None else _read_head(fh, max_lines)
+    if not data.endswith("\n") and data.strip() and max_lines is None:
         stats["truncated_tail"] = stats.get("truncated_tail", 0) + 1
     # split('\n'), not splitlines(): JSON strings may legally contain raw
     # U+2028/U+2029/NEL which splitlines() would wrongly treat as line breaks.
@@ -536,18 +590,23 @@ def claude_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: 
                     yield frag("claude-code", store.name, ref.session_id, seq, "tool_result", "user.tool_result", loc,
                                text=text, ts=ts, authorship="system", visible=False,
                                basis="tool_result block inside user-role record",
+                               error=bool(b.get("is_error")),
                                cwd=cwd, rel={**rel_ids, "call_id": b.get("tool_use_id")}, max_chars=max_chars)
                 else:
-                    marker = auto or any(m in (b.get("text") or "") for m in AUTOCONTEXT_MARKERS)
+                    txt = b.get("text") or ""
+                    interrupted = txt.startswith("[Request interrupted by user")
+                    marker = interrupted or auto or any(m in txt for m in AUTOCONTEXT_MARKERS)
                     auth = "human" if origin_kind == "human" else ("system" if marker else ("agent" if origin_kind else "unknown"))
                     yield frag("claude-code", store.name, ref.session_id, seq,
                                "context" if marker and auth == "system" else "prompt",
                                "user", loc, text=b.get("text"), ts=ts,
-                               authorship=auth, visible=not marker,
-                               basis=f"origin.kind={origin_kind!r} isMeta={auto}",
+                               authorship=auth, visible=not marker, interrupted=interrupted,
+                               basis=("user interrupt record" if interrupted
+                                      else f"origin.kind={origin_kind!r} isMeta={auto}"),
                                cwd=cwd, rel=rel_ids, max_chars=max_chars)
         elif t == "assistant" and msg is not None:
             model = msg.get("model")
+            usage = msg.get("usage")
             for b in msg.get("content") or []:
                 if not isinstance(b, dict):
                     continue
@@ -560,12 +619,13 @@ def claude_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: 
                 elif bt == "tool_use" or bt == "server_tool_use":
                     yield frag("claude-code", store.name, ref.session_id, seq, "tool_call", f"assistant.{bt}", loc,
                                text=json.dumps({"name": b.get("name"), "input": b.get("input")}, ensure_ascii=False),
-                               ts=ts, authorship="agent", model=model, cwd=cwd,
+                               ts=ts, authorship="agent", model=model, cwd=cwd, usage=usage,
                                rel={**rel_ids, "call_id": b.get("id"), "message_id": msg.get("id"), "tool": b.get("name")},
                                max_chars=max_chars)
                 elif bt in ("text",):
                     yield frag("claude-code", store.name, ref.session_id, seq, "assistant", "assistant.text", loc,
                                text=b.get("text"), ts=ts, authorship="agent", model=model, cwd=cwd,
+                               usage=usage,
                                rel={**rel_ids, "message_id": msg.get("id")}, max_chars=max_chars)
                 else:
                     yield frag("claude-code", store.name, ref.session_id, seq, "unknown", f"assistant.{bt}", loc,
@@ -606,15 +666,23 @@ def codex_iter_sessions(store: Store) -> Iterator[SessionRef]:
         yield from _codex_history_sessions(store)
         return
     for path in sorted(store.path.rglob("rollout-*.jsonl")):
+        # Cheap listing: session identity + dates come from the filename
+        # (rollout-YYYY-MM-DDTHH-MM-SS-<id>.jsonl) and mtime; session_meta is
+        # the first record, so a bounded head read suffices for cwd/lineage.
+        # --since/--until filtering then skips full parses entirely.
+        name_m = re.match(r"rollout-(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})-(\d{2})-(.+)\.jsonl$", path.name)
+        created_name = f"{name_m.group(1)}T{name_m.group(2)}:{name_m.group(3)}:{name_m.group(4)}Z" if name_m else None
+        try:
+            updated = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat().replace("+00:00", "Z")
+        except OSError:
+            updated = None
         stats: dict[str, int] = {}
         meta = None
-        first_ts = last_ts = None
+        first_ts = None
         models: list[str] = []
-        for line_no, rec in iter_jsonl(path, stats):
+        for line_no, rec in iter_jsonl(path, stats, max_lines=300):
             if first_ts is None:
                 first_ts = rec.get("timestamp")
-            if rec.get("timestamp"):
-                last_ts = rec["timestamp"]
             t = rec.get("type")
             payload = rec.get("payload") or {}
             if t == "session_meta" and meta is None:
@@ -622,13 +690,16 @@ def codex_iter_sessions(store: Store) -> Iterator[SessionRef]:
             elif t == "turn_context" and payload.get("model"):
                 if payload["model"] not in models:
                     models.append(payload["model"])
+            if meta is not None and first_ts is not None and models:
+                break
         meta = meta or {}
         lineage = meta.get("source", {}).get("subagent", {}).get("thread_spawn") if isinstance(meta.get("source"), dict) else None
         parent = meta.get("parent_thread_id") or meta.get("forked_from_id") or (lineage or {}).get("parent_thread_id")
         yield SessionRef(
             "codex", store.name, str(meta.get("id") or meta.get("session_id") or path.stem),
             locator={"file": str(path)},
-            cwd=meta.get("cwd"), created=first_ts or meta.get("timestamp"), updated=last_ts,
+            cwd=meta.get("cwd"), created=first_ts or created_name or meta.get("timestamp"),
+            updated=updated,
             models=models or ([meta["model_provider"]] if meta.get("model_provider") else []),
             parent=parent,
             agent=meta.get("agent_nickname") or meta.get("agent_path"),
@@ -865,13 +936,18 @@ def codex_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: d
                     kind, native, auth, vis, basis = "assistant", "response_item.assistant", "agent", True, "response layer"
                 elif role in ("user", "developer"):
                     # verbatim human prompts are confirmed by event_msg.user_message;
-                    # response-layer user text is bootstrap/context unless mirrored
-                    kind = "prompt" if text in event_texts else "context"
-                    native = "response_item." + role
-                    auth = "unknown" if kind == "prompt" else "system"
-                    vis = None if kind == "prompt" else False
-                    basis = "mirrors event_msg.user_message" if kind == "prompt" else "response-layer injection (bootstrap/env/steer)"
-                    if kind == "prompt":
+                    # injections carry known wrappers — anything else is a genuine
+                    # (if unverified) user-layer record, not invisible context
+                    injected = any(m in text for m in CODEX_INJECTION_MARKERS) or \
+                        any(m in text for m in AUTOCONTEXT_MARKERS)
+                    mirrored = text in event_texts
+                    if injected:
+                        kind, native, auth, vis = "context", "response_item." + role, "system", False
+                        basis = "response-layer injection (bootstrap/env/steer)"
+                    else:
+                        kind, native, auth, vis = "prompt", "response_item." + role, "unknown", None
+                        basis = ("mirrors event_msg.user_message" if mirrored else
+                                 "no event_msg mirror — free text without injection markers")
                         pending_user_items[text] = seq
                 else:
                     kind, native, auth, vis, basis = "metadata", f"response_item.{role}", "system", False, "non-conversational role"
@@ -890,6 +966,7 @@ def codex_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: d
             elif pt in ("function_call_output", "custom_tool_call_output", "tool_search_output"):
                 yield frag("codex", store.name, ref.session_id, seq, "tool_result", f"response_item.{pt}", loc,
                            text=payload.get("output"), ts=ts, authorship="system", visible=False,
+                           error=_codex_output_is_error(payload),
                            rel={"call_id": payload.get("call_id")}, max_chars=max_chars)
             else:
                 yield frag("codex", store.name, ref.session_id, seq, "unknown", f"response_item.{pt}", loc,
@@ -910,6 +987,7 @@ def codex_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: d
                            text={k: payload.get(k) for k in ("turn_id", "reason", "msg") if payload.get(k)},
                            ts=ts, authorship="system", visible=False,
                            status={"task_complete": "completed", "turn_aborted": "aborted"}.get(pt),
+                           interrupted=(pt == "turn_aborted"),
                            rel={"turn_id": payload.get("turn_id")}, max_chars=max_chars)
             elif pt == "guardian_assessment":
                 yield frag("codex", store.name, ref.session_id, seq, "permission", "event_msg.guardian_assessment", loc,
@@ -921,9 +999,12 @@ def codex_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: d
                            text=payload.get("message") or payload, ts=ts, authorship="system", visible=False,
                            max_chars=max_chars)
             else:
+                info = payload.get("info") if pt == "token_count" else None
                 yield frag("codex", store.name, ref.session_id, seq, "metadata", f"event_msg.{pt}", loc,
                            text=None if pt == "token_count" else payload, ts=ts, authorship="system",
-                           visible=False, rel={"turn_id": payload.get("turn_id")}, max_chars=max_chars)
+                           visible=False, error=(pt == "error"),
+                           usage=(info or {}).get("total_token_usage") or (info or {}).get("total") or info,
+                           rel={"turn_id": payload.get("turn_id")}, max_chars=max_chars)
         elif t == "compacted":
             yield frag("codex", store.name, ref.session_id, seq, "compaction", "compacted", loc,
                        text=payload.get("message") or payload, ts=ts, authorship="system",
@@ -931,6 +1012,22 @@ def codex_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: d
         else:
             yield frag("codex", store.name, ref.session_id, seq, "metadata", str(t), loc,
                        text=payload or None, ts=ts, authorship="system", visible=False, max_chars=max_chars)
+
+
+def _codex_output_is_error(payload: dict[str, Any]) -> bool:
+    """function_call_output carries JSON text like {"output": ..., "metadata": {"exit_code": N}}."""
+    out = payload.get("output")
+    if isinstance(out, dict):
+        out = out.get("output")
+    if isinstance(out, str) and out.startswith("{"):
+        try:
+            out = json.loads(out)
+        except json.JSONDecodeError:
+            pass
+    meta = out.get("metadata") if isinstance(out, dict) else None
+    if isinstance(meta, dict) and meta.get("exit_code") not in (None, 0):
+        return True
+    return bool(payload.get("is_error") or payload.get("status") == "error")
 
 
 def _codex_message_text(payload: dict[str, Any]) -> str:
@@ -1050,6 +1147,7 @@ def opencode_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats
                     yield frag("opencode", "db", ref.session_id, seq, "boundary", f"message.finish.{msg['finish']}", loc,
                                ts=(msg.get("time") or {}).get("completed") or mtime, authorship="system",
                                status="completed" if msg["finish"] == "stop" else msg["finish"],
+                               error=bool(msg.get("error")),
                                model=model, cwd=cwd, rel={"message_id": mid}, max_chars=max_chars)
             for pid, ptime, part in parts_by_msg.get(mid, []):
                 seq += 1
@@ -1064,15 +1162,18 @@ def opencode_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats
                     continue
                 if ptype == "tool":
                     st = part.get("state") or {}
+                    is_err = st.get("status") == "error" or bool(st.get("error"))
                     yield frag("opencode", "db", ref.session_id, seq, "tool_call", "part.tool", ploc,
                                text=json.dumps({"tool": part.get("tool"), "input": st.get("input"), "status": st.get("status")}, ensure_ascii=False),
-                               ts=ptime, authorship="agent", model=model, cwd=cwd,
+                               ts=ptime, authorship="agent", model=model, cwd=cwd, error=is_err,
+                               usage=msg.get("tokens") or msg.get("usage"),
                                rel={"call_id": part.get("callID"), "tool": part.get("tool")}, max_chars=max_chars)
                     if st.get("output") or st.get("error"):
                         seq += 1
                         yield frag("opencode", "db", ref.session_id, seq, "tool_result", "part.tool.output", ploc,
                                    text=st.get("output") or st.get("error"), ts=ptime, authorship="system",
-                                   visible=False, rel={"call_id": part.get("callID")}, max_chars=max_chars)
+                                   visible=False, error=is_err,
+                                   rel={"call_id": part.get("callID")}, max_chars=max_chars)
                 elif ptype == "subtask":
                     yield frag("opencode", "db", ref.session_id, seq, "metadata", "part.subtask", ploc,
                                text=part.get("description") or part.get("prompt"), ts=ptime,
@@ -1124,17 +1225,18 @@ def opencode_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats
                 continue
             if ptype == "tool":
                 st = part.get("state") or {}
+                is_err = st.get("status") == "error" or bool(st.get("error"))
                 yield frag("opencode", "storage", ref.session_id, seq, "tool_call", "part.tool", ploc,
                            text=json.dumps({"tool": part.get("tool"), "input": st.get("input"), "status": st.get("status")}, ensure_ascii=False),
-                           ts=(st.get("time") or {}).get("start"), authorship="agent",
+                           ts=(st.get("time") or {}).get("start"), authorship="agent", error=is_err,
                            model=model, cwd=cwd, rel={"call_id": part.get("callID"), "tool": part.get("tool")},
                            max_chars=max_chars)
                 if st.get("output") or st.get("error"):
                     seq += 1
                     yield frag("opencode", "storage", ref.session_id, seq, "tool_result", "part.tool.output", ploc,
                                text=st.get("output") or st.get("error"), ts=(st.get("time") or {}).get("end"),
-                               authorship="system", visible=False, rel={"call_id": part.get("callID")},
-                               max_chars=max_chars)
+                               authorship="system", visible=False, error=is_err,
+                               rel={"call_id": part.get("callID")}, max_chars=max_chars)
             elif ptype == "subtask":
                 yield frag("opencode", "storage", ref.session_id, seq, "metadata", "part.subtask", ploc,
                            text=part.get("description") or part.get("prompt"),
@@ -1214,12 +1316,14 @@ def grok_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: di
         elif t == "tool_result":
             yield frag("grok", store.name, ref.session_id, seq, "tool_result", "tool_result", loc,
                        text=rec.get("content"), authorship="system", visible=False,
+                       error=bool(rec.get("is_error") or rec.get("isError")),
                        rel={"call_id": rec.get("tool_call_id")}, max_chars=max_chars)
         elif t == "backend_tool_call":
             kind = rec.get("kind") or {}
             yield frag("grok", store.name, ref.session_id, seq, "tool_call", "backend_tool_call", loc,
                        text=json.dumps(kind.get("action") or kind, ensure_ascii=False),
                        authorship="agent", visible=False, status=rec.get("status"),
+                       error=rec.get("status") == "error",
                        rel={"tool": kind.get("tool_type"), "call_id": rec.get("id")}, max_chars=max_chars)
         elif t == "system":
             yield frag("grok", store.name, ref.session_id, seq, "context", "system", loc,
@@ -1559,6 +1663,7 @@ def claude_desktop_iter_fragments(store: Store, ref: SessionRef, max_chars: int,
                 if bt == "tool_result":
                     yield frag("claude-desktop", store.name, ref.session_id, seq, "tool_result", "user.tool_result", loc,
                                text=_tool_result_text(b), ts=ts, authorship="system", visible=False,
+                               error=bool(b.get("is_error")),
                                rel={**rel, "call_id": b.get("tool_use_id")}, max_chars=max_chars)
                 else:
                     marker = "<system-reminder>" in (b.get("text") or "")
@@ -1708,13 +1813,14 @@ def cursor_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: 
                        rel={"bubble_id": bid}, max_chars=max_chars)
         tool = bubble.get("toolFormerData")
         if isinstance(tool, dict) and tool.get("name"):
+            is_err = str(tool.get("status") or "").lower() in ("error", "failed", "rejected")
             yield frag("cursor", store.name, ref.session_id, seq, "tool_call", "bubble.toolFormerData", loc,
                        text=json.dumps({"name": tool.get("name"), "params": tool.get("params"), "status": tool.get("status")}, ensure_ascii=False),
-                       authorship="agent", visible=False,
+                       authorship="agent", visible=False, error=is_err,
                        rel={"call_id": tool.get("toolCallId"), "tool": tool.get("name")}, max_chars=max_chars)
             if tool.get("result") is not None:
                 yield frag("cursor", store.name, ref.session_id, seq, "tool_result", "bubble.toolFormerData.result", loc,
-                           text=tool.get("result"), authorship="system", visible=False,
+                           text=tool.get("result"), authorship="system", visible=False, error=is_err,
                            rel={"call_id": tool.get("toolCallId")}, max_chars=max_chars)
 
 
@@ -1775,8 +1881,13 @@ def qwen_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: di
                 json.dumps(p.get("functionResponse", {}).get("response"), ensure_ascii=False)
                 for p in parts if isinstance(p, dict) and p.get("functionResponse")
             ) or json.dumps(rec.get("toolCallResult"), ensure_ascii=False)
+            is_err = any(
+                isinstance((p.get("functionResponse") or {}).get("response"), dict)
+                and (p["functionResponse"]["response"].get("error")
+                     or p["functionResponse"]["response"].get("errorMessage"))
+                for p in parts if isinstance(p, dict))
             yield frag("qwen-code", store.name, ref.session_id, seq, "tool_result", "user.functionResponse", loc,
-                       text=text, ts=ts, authorship="system", visible=False, cwd=cwd,
+                       text=text, ts=ts, authorship="system", visible=False, cwd=cwd, error=is_err,
                        rel={**rel, "call_id": (rec.get("toolCallResult") or {}).get("callId")}, max_chars=max_chars)
         elif t == "user":
             if subtype in QWEN_HUMAN_SUBTYPES:
@@ -1912,7 +2023,8 @@ def kimi_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: di
                 elif pt == "tool.result":
                     yield frag("kimi-code", store.name, ref.session_id, seq, "tool_result", "loop.tool.result", loc,
                                text=part.get("result") or part.get("output"), ts=ts, authorship="system",
-                               visible=False, rel={**rel, "call_id": part.get("toolCallId")}, max_chars=max_chars)
+                               visible=False, error=bool(part.get("isError") or part.get("error")),
+                               rel={**rel, "call_id": part.get("toolCallId")}, max_chars=max_chars)
                 else:
                     kind = "reasoning" if pt == "think" else "assistant"
                     yield frag("kimi-code", store.name, ref.session_id, seq, kind, f"loop.part.{pt}", loc,
@@ -1994,6 +2106,7 @@ def omp_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stats: dic
                 yield frag("omp", store.name, ref.session_id, seq, "tool_result", "message.toolResult", loc,
                            text="\n".join(str(c.get("text", "")) for c in (msg.get("content") or []) if isinstance(c, dict)),
                            ts=ts, authorship="system", visible=False,
+                           error=bool(msg.get("isError") or msg.get("is_error")),
                            rel={**rel, "call_id": msg.get("toolCallId"), "tool": msg.get("toolName")},
                            max_chars=max_chars)
             else:
@@ -2105,7 +2218,9 @@ def consilium_iter_fragments(store: Store, ref: SessionRef, max_chars: int, stat
             elif t in ("end", "run_finished", "completed"):
                 yield frag("consilium", "runs", ref.session_id, seq, "boundary", t, loc,
                            text=rec.get("data"), ts=rec.get("ts") or rec.get("timestamp"),
-                           authorship="system", status=rec.get("status"), max_chars=max_chars)
+                           authorship="system", status=rec.get("status"),
+                           error=rec.get("status") in ("failed", "error"),
+                           max_chars=max_chars)
             else:
                 yield frag("consilium", "runs", ref.session_id, seq, "metadata", str(t), loc,
                            text=rec.get("data") or rec.get("text"), ts=rec.get("ts") or rec.get("timestamp"),
@@ -2500,13 +2615,18 @@ def cmd_show(args: argparse.Namespace) -> int:
     context = args.context
     window: list[dict[str, Any]] = []
     after_remaining: int | None = None
+    around_seen = around_hit = False
+    truncated = False
     for f in iter_all_fragments(store, ref, args.max_chars, stats):
+        if target is not None and f.get("seq") == target:
+            around_seen = True
         if not in_scope(f, args.scope) or not in_window(f, since, until):
             continue
         if target is None:
             emit(f)
             emitted += 1
             if args.limit and emitted >= args.limit:
+                truncated = True
                 break
             continue
         if after_remaining is not None:
@@ -2517,6 +2637,7 @@ def cmd_show(args: argparse.Namespace) -> int:
                 break
             continue
         if f.get("seq") == target:
+            around_hit = True
             for prev in window:
                 emit(prev)
                 emitted += 1
@@ -2527,7 +2648,15 @@ def cmd_show(args: argparse.Namespace) -> int:
             window.append(f)
             if len(window) > context:
                 window.pop(0)
-    emit(coverage_summary([store], 1, emitted, stats))
+    summary = coverage_summary([store], 1, emitted, stats)
+    if truncated:
+        summary["truncated"] = True
+        summary["note"] = (summary.get("note") or "") + " | output truncated by --limit; pass --limit 0 for the full session"
+    if target is not None and not around_hit:
+        summary["around_hint"] = (
+            f"seq {target} {'exists but was filtered out by --scope/--since/--until — retry with --scope all' if around_seen else 'does not exist in this session'}"
+        )
+    emit(summary)
     return EXIT_OK
 
 
@@ -2643,11 +2772,28 @@ def main() -> int:
     p.add_argument("--around", type=int, metavar="SEQ", help="emit a window around the fragment with this seq")
     p.add_argument("--context", type=int, default=10, help="fragments on each side of --around (default 10)")
 
+    p = sub.add_parser("turns", help="one row per user-triggered turn with per-turn metrics")
+    _add_common(p)
+
+    p = sub.add_parser("flags", help="deterministic anti-pattern detections with evidence locators")
+    _add_common(p)
+    p.add_argument("--kind", help="only this pattern (retry_loop|search_loop|edit_without_read|"
+                                 "correction|correction_burst|abandoned|permission_friction|"
+                                 "context_pressure|interrupted|error_burst|failed_run)")
+
+    p = sub.add_parser("stats", help="grouped aggregates + coverage (--by model|harness|cwd|day)")
+    _add_common(p)
+    p.add_argument("--by", choices=("model", "harness", "cwd", "day"), default="model")
+
     args = parser.parse_args()
     args.max_chars = getattr(args, "max_chars", 400) or 0
     if getattr(args, "limit", 200) == 0:
         args.limit = 0
     handlers = {"roots": cmd_roots, "list": cmd_list, "grep": cmd_grep, "show": cmd_show}
+    if args.command in ("turns", "flags", "stats"):
+        import analyze  # noqa: E402 — local lib, lazy to keep this file standalone
+        handlers.update({"turns": analyze.cmd_turns, "flags": analyze.cmd_flags,
+                         "stats": analyze.cmd_stats})
     try:
         return handlers[args.command](args)
     except BrokenPipeError:

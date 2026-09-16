@@ -51,6 +51,9 @@ Usage:
   consilium sessions grep [-a ...] [--scope SCOPE] [-i] [--regex] [--limit N] PATTERN
   consilium sessions show <harness:session-id|--file PATH> [--around SEQ] [--context N]
                           [--scope SCOPE] [--max-chars N]
+  consilium sessions turns [-a ...] [--since T] [--until T] [--limit N]
+  consilium sessions flags [-a ...] [--kind PATTERN] [--since T] [--limit N]
+  consilium sessions stats [-a ...] [--by model|harness|cwd|day] [--since T]
   consilium --list-agents
   consilium -h | --help
 
@@ -115,6 +118,14 @@ sessions
            tool_call/tool_result/context/permission/metadata/…), authorship,
            model, ts, seq, rel ids
     show   one session's fragments; --around SEQ emits a ±--context window
+    turns  one row per user-triggered turn: duration, models, tool/error/
+           retry counts, usage, has_final, first/last locators
+    flags  deterministic anti-patterns (retry_loop, search_loop,
+           edit_without_read, correction(_burst), abandoned,
+           permission_friction, context_pressure, interrupted, error_burst,
+           failed_run) — each carries evidence locators, not verdicts
+    stats  grouped aggregates (--by model|harness|cwd|day): sessions, turns,
+           error rate, compactions, median turn duration, token usage, flags
   Scope presets: convo (default) = prompts+assistant; prompts, assistant,
   tools, reasoning, system, all. Classification rules and per-harness format
   recipes: references/session-history.md.
