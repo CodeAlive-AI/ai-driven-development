@@ -159,6 +159,7 @@ The deterministic part of the form check handles recoverable syntax and projecti
 - the product-declared title and Readme H1, the compact opening, and absence of prohibited development or machine material from reader front matter;
 - the required H1 sequence plus the product-declared body and reference tail;
 - product-declared Readme and Preface entries in the established ToC grammar, before the logical pattern index, with no generic rival mini-menu;
+- one correctly addressed, content-free Preface end heading at the boundary of that unit;
 - authoritative index segments, aggregate row/body bijection, duplicates, and reserved support-index grammar;
 - the Readme's one practical-entry set; its explicit examples-not-coverage statement; the product's declaration of example keys and forms; exactly one H3 ordinary entry or H4 card per declared key; five ordered ordinary-entry fields; a non-empty card-group explanation; six ordered card fields; the shared reading-burden measure and mantra/card limits; and zero or one same-key H5 expansion with the declared boundary; and
 - equality and source agreement of every optional public cue that is actually projected.
@@ -208,6 +209,6 @@ A pattern can participate in several profiles, and a profile can draw on several
 
 ##### E.11.PFP:4.7.1 - Make a Preface section recognizable on its own
 
-A reader entering through search, a quotation, a link or a retrieved excerpt may see a heading without its parents. Every heading inside the Preface therefore carries the framework's public reference code, the publication-unit key `Preface`, and its complete ordinal section path:
+A reader entering through search, a quotation, a link or a retrieved excerpt may see a heading without its parents. Every heading that introduces Preface content therefore carries the framework's public reference code, the publication-unit key `Preface`, and its complete ordinal section path:
 
 ```text

@@ -137,13 +137,14 @@ When a problem draws from multiple sections:
 ## Section INDEX
 
 Structural reference. Each entry is a folder — read its `_index.md` first, then pick the sub-section.
+Counts follow upstream H2 headings; the Preface includes its content-free `FPF.Preface:End` boundary marker.
 
 | # | Section | Sub | When to use |
 |---|---------|:---:|-------------|
 | 01 | [Title page](sections/01-first-principles-framework---core-conceptual-specification/_index.md) | 0 | **Identify**: title, authorship, version date, top-level identity. |
 | 02 | [Table of Contents](sections/02-table-of-contents/_index.md) | 0 | **Navigate**: locate a pattern, keyword, query cue, dependency, or neighboring section. |
 | 03 | [FPF Readme](sections/03-first-principles-framework-readme/_index.md) | 10 | **Enter, onboard, and recover**: choose a practical entry, understand what each part contributes, connect transformation flows, recover a lost path from outside use to recursive builders, or locate licensing and reuse terms. |
-| 04 | [Preface](sections/04-preface/_index.md) | 21 | **Orient**: read philosophy, Architectural Rationale, shared source synthesis, profile choices, whole-combination conditions, uncertainty posture, and purpose/non-goals. |
+| 04 | [Preface](sections/04-preface/_index.md) | 22 | **Orient**: read philosophy, Architectural Rationale, shared source synthesis, profile choices, whole-combination conditions, uncertainty posture, and purpose/non-goals. |
 | 05 | [Part A — Kernel](sections/05-part-a---kernel-architecture-cluster/_index.md) | 30 | **Decompose, identify, discover, trace, assign, recover, and authorize**: holons, bounded contexts, acting/changed-system recognition, consequence-bearing System discovery, outside-use dependency tracing, roles, permissions, candidate-Method recovery from Work evidence, transformers, method/work separation, object reidentification, constrained configurations, state-change rules, predictive information. |
 | 06 | [A.IV.A — Signatures](sections/06-cluster-a-iv-a---signature-stack-boundary-discipline/_index.md) | 28 | **Set boundaries, derive relations, transform epistemes, and render**: distinguish relations from occurrences; recover exact method/work and under-specified service/access relations; derive needed relation claims; keep source, receiving episteme, arrow, use claim, work, and publication distinct; classify statements, construct operative expressions, or render structure faithfully. |
 | 07 | [A.V — Principles](sections/07-cluster-a-v---constitutional-principles-of-the-kernel/_index.md) | 47 | **Prevent confusion, remove ceremony, recover direct subjects, and steer or recovery-test Work**: category errors, ontology premises, decision-relevant operational parsimony, project/process/case language, situation-responsive next-action choice, performer/support configuration and recovery probes, production-work identity, completion criteria and separate closure authority, measuring, comparing, evidence graphs and changed-source revalidation, bounded specialist results, mechanism suites, transformation-step constraint validity, independent-check gate decisions, constraint-governed unfolding. |
