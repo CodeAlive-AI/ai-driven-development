@@ -204,7 +204,7 @@ This skill was built through a structured research and review process:
 
 ### Multi-agent review
 
-The skill was reviewed by external AI agents (OpenAI Codex CLI / GPT-5.4 and Google Gemini CLI / Gemini 3.1 Pro) via the [agents-consilium](../agents-consilium/) skill for independent, unbiased assessment. The review identified 6 critical operational issues:
+The skill was reviewed by external AI agents (OpenAI Codex CLI / GPT-5.4 and Google Gemini CLI / Gemini 3.1 Pro) via the [pragmatic-orchestration](https://github.com/CodeAlive-AI/pragmatic-orchestration) skill for independent, unbiased assessment. The review identified 6 critical operational issues:
 
 1. **Scanning impossibility** — original instructions assumed whole-codebase scanning; replaced with bounded high-signal hub strategy
 2. **O(N^2) audit check** — field-overlap comparison replaced with grep-friendly stem+suffix heuristics

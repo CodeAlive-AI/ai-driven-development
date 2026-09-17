@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 24 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 23 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -30,7 +30,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 24 skills
+# Install all 23 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -94,11 +94,9 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [fetch-url-as-markdown](skills/fetch-url-as-markdown/) | URL → clean Markdown via local trafilatura (real-browser UA, anti-stub guards, structured exit codes), with Exa MCP as a fallback for JS-rendered or anti-bot pages. Drop-in replacement for built-in WebFetch |
 | [ubiquitous-language](skills/ubiquitous-language/) | Domain thesaurus manager — DDD naming consistency, thesaurus generation, naming audit, git-history mining for naming ambiguities |
 
-### Multi-agent orchestration (1)
+### Multi-agent orchestration
 
-| Skill | What It Does |
-|-------|--------------|
-| [agents-consilium](skills/agents-consilium/) | Multi-agent **review** (read-only ask / multi-depth code) and single-agent **delegate** (full YOLO, steerable or detached, with `wait` / `watch` / `list` to block on, follow, or rediscover a run) via `scripts/consilium`. Stateful Grok 4.5 workers handle repository research; Codex Sol is an explicit second opinion for difficult spec verification or optimization planning. Codex, Claude Code, OpenCode, native Grok Build, Gemini (review-only), Devin CLI (opt-in). Independent opinions, structured specialists, super/ultra judge pipelines |
+**Moved out:** the `agents-consilium` skill now lives in its own repository — [CodeAlive-AI/pragmatic-orchestration](https://github.com/CodeAlive-AI/pragmatic-orchestration) (CLI renamed to `porch`). Install it with `npx skills add CodeAlive-AI/pragmatic-orchestration@pragmatic-orchestration -g -y`.
 
 ### macOS & Windows system health (2)
 
@@ -143,7 +141,6 @@ ai-driven-development/
 │   ├── marketplace.json         ← lists this repo as a single plugin (source: "./")
 │   └── plugin.json               ← umbrella plugin manifest
 ├── skills/                       ← canonical agent-skills layout
-│   ├── agents-consilium/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
 │   ├── code-that-fits-in-your-head/
