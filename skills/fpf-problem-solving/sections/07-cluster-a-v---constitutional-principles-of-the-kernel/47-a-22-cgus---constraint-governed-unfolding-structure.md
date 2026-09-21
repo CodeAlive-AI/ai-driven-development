@@ -61,6 +61,22 @@ For example, a design review has two alternatives: accept the design or repair i
 
 That corrected card is already useful. It keeps both potential alternatives visible and refuses to invent the missing relation. Continue only if a named later use needs formal structure identity or replayable results.
 
+##### A.22.CGUS:4.1.1 - Conditions through constituent and encompassing work
+
+When a continuation is a way of performing work, recover the part of its Method/Work vertical that can change availability. Ask what constituent actions must be performable and what encompassing work is being done through them. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.
+
+Distinguish conditions needed at entry, conditions that must remain satisfied during combined performance, and the result required by the encompassing use. In particular:
+
+- a constituent may be individually performable but fail in the needed coordination;
+- adequate local resources may be insufficient when constituents share them;
+- a constituent result may satisfy its own postcondition while leaving the whole's result unresolved.
+
+For each relevant condition, state what it concerns and how it affects this continuation. Reuse an understood connection or adequate existing basis. A missing condition blocks or leaves unknown the dependent alternative; it need not block an independent way to learn, obtain support or change the arrangement. Capability belongs to its performer and conditions under A.2.2; prospective resources and support remain prospective until available.
+
+In the formal branch, express these dependencies with the existing constituents, selected relations, applied constraints and continuation judgements. A temporal edge alone cannot express that one action constitutes part of another ongoing work. Nor does a nested flow position establish Method or Work parthood. A diagram may show the relations together when their meanings remain recoverable.
+
+A constituent's postcondition supports the encompassing conclusion only through the relevant composition and result-use conditions. An expected postcondition is not an observed result. If the displayed account omits conditions needed to perform the whole, state the narrower question it answers. A constituent hierarchy without potential alternatives does not require CGUS qualification.
+
 #### A.22.CGUS:4.2 - Formal qualification branch
 
 Use the four A.22 discriminators to identify one `U.Structure`:
@@ -267,6 +283,19 @@ The structure has two potential continuations although this case enables only re
 If `RepairProposalTargetsCandidate@DR-27` or its participant binding is missing, the repair result becomes `unknown — proposal target not established`. If the structure's identity was established on another sufficient basis, only this case result is incomplete. If that occurrence belongs to the claimed identity basis, this structure claim also remains provisional.
 
 If a later thermal check passes while the service check still passes, acceptance becomes enabled and repair becomes disabled. If the constituents, selected occurrences, constraints, use frame, locus bindings, and potential topology have not changed, the CGUS keeps its identity and membership. A replacement result episteme or relation occurrence must first be compared under the A.22 discriminators.
+
+#### A.22.CGUS:5.1 - A missing intermediate capability changes the continuation
+
+In this constructed learning case, a dancer has the strength and static axis control needed by a figure and can recall its sequence. The known limitation is maintaining balance during its required rotation. The figure's continuation depends on that coordinated performance, not just on adequate strength and memory.
+
+| Alternative | Relevant conditions in this case | Present result |
+| --- | --- | --- |
+| Perform the complete figure under its intended conditions. | The required balance during rotation cannot yet be sustained. | Unavailable for the intended performance; naming the figure or its steps does not remove the gap. |
+| Practise the rotational coordination under a suitable reduced demand. | A domain-appropriate exercise, suitable space and the needed support are available in the stipulated case. | Available as practice of the intermediate performance. It does not establish ability to perform the full figure. |
+
+During the rotation, balance coordination would constitute part of turning; that turn would constitute part of the figure. These are connections through current performance, not three successive tasks. The practice alternative can exercise the first connection without already performing the intended figure.
+
+When the coordination can be sustained, return to the encompassing figure and vary the relevant conditions before drawing a broader capability conclusion. The case condition and its continuation judgement can change without changing the potential alternatives. The subject's training Method supplies the exercise and assessment; CGUS makes their effect on the available continuation explicit.
 
 ### A.22.CGUS:6 - Bias-Annotation
 

@@ -243,6 +243,8 @@ The composition link is not one-to-one. A Work occurrence may enact the whole me
 
 If any side is missing, lower only that side. Do not repair a missing submethod by inventing a work part, and do not repair a missing work part by inventing a submethod. Keep a method-description node, evidence segment, mechanism material, system-component behavior, or `A.15.4` appearance-based reliance repair request under its subject pattern.
 
+For an ordinary working question—what larger work is being done through this action now—use **B.1.5.EW**. It recovers the constitutive connections at the needed grain and shows how a changed encompassing condition changes the action. An ongoing whole need not be completed, and its constituents need not all act at once. When changing a constituent for use in one or several wholes, **B.1.5.RS** follows the change through their entry conditions, interactions and required results. The qualifications above still decide the corresponding Method and Work claims.
+
 #### B.1.5:4.5.1 - Planning And Performed-Work Obligations
 
 B.1.5 has three common use positions, but they are positions in use, not U-kinds:

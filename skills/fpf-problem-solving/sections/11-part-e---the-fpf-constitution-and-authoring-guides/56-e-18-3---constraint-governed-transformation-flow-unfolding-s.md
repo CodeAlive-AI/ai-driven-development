@@ -214,6 +214,8 @@ E.18.3 recognizes one selected A.22.CGUS `U.Structure`; it is not a second trans
 
 A graph, record, filled table, demonstration, imperative, selected continuation, recommendation, or intended realization is evidence of neither the A.22 identity nor the E.18.3 condition. It admits no MethodDescription or Work. A.3.2, A.15.1, A.3.4 and A.15.PROD supply the applicable membership or occurrence tests; every relation claim still needs its exact predicate definition, applicability conditions and current facts.
 
+When a continuation is intended to perform work, apply A.22.CGUS:4.1.1 to its relevant constituent and encompassing conditions. The arrangement may need capabilities and shared resources that no single flow position reveals. Recover Method and Work parthood independently through B.1.5.EW; nested transformation-flow positions and temporal arcs retain their own meanings. Local completion supports the whole result only under the required coordination and result-use conditions. A description that omits those conditions answers a narrower question than whether the whole can be performed.
+
 #### E.18.3:4.4 - Replay and change localization
 
 Replay A.22 identity, CGUS membership, and E.18.3 membership separately. The first uses the four A.22 discriminators; the second uses local locus bindings and potential continuation topology; the third maps those bindings to one E.18 substrate case and its positions, bindings, and obtaining occurrences. Replay the current set from each candidate's condition or relation basis, applicability, case inputs, facts or evidence, dependent occurrences, window, outcome, and reason. Description loss and every stronger neighboring claim remain separate uses.

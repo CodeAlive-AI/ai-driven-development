@@ -26,6 +26,8 @@ The primary working reader is an architect, methodologist, practice designer, or
 - Do not use this pattern for one clear Method decomposition, one procedure order, a carrier index, a universal level stack, a mandatory record schema, domain filling, product-roster generation, or lifecycle design.
 - A practitioner can use this Method to prepare evidence for a framework or project decision. Making that decision, establishing a product, publishing a description, or realizing a future practice remains separate work.
 
+For the smaller question of what encompassing work is being done through one current action, start with **B.1.5.EW**. It can expose a missing constituent or a changed condition without requiring this full synthesis. Use **B.1.5.RS** when the difficulty is preserving encompassing uses while replacing one constituent. Return here when the answer depends on several structures that do not correspond one-for-one.
+
 The result is a **practice-architecture synthesis** for the named use. That phrase names an ordinary working description, not a new root kind. The practice, its Methods and Work, participating Systems, and its description remain different things.
 
 ### C.32.MWA:2 - Problem

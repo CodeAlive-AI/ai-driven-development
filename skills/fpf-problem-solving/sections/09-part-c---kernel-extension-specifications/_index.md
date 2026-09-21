@@ -40,7 +40,7 @@
 - [C.16.Q - Quality-Term Precision Restoration](30-c-16-q---quality-term-precision-restoration.md) (849 lines) — Type: Characterization precision-restoration pattern
 - [C.17 - Characterising Generative Novelty and Value](31-c-17---characterising-generative-novelty-and-value.md) (404 lines) — Status. Evaluation and measurement-use pattern; normative where stated.
 - [C.18 - Open-Ended Search Archive and Front Stewardship](32-c-18---open-ended-search-archive-and-front-stewardship.md) (306 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
-- [C.18.1 - Scaling‑Law Lens Binding (SLL)](33-c-18-1---scaling-law-lens-binding.md) (135 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale, budget, data, model capacity, iteration budget, freedom...
+- [C.18.1 - Scaling‑Law Lens Binding (SLL)](33-c-18-1---scaling-law-lens-binding.md) (139 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale, budget, data, model capacity, iteration budget, freedom...
 - [C.19 - Explore-Exploit Live-Pool Governor](34-c-19---explore-exploit-live-pool-governor.md) (411 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](35-c-19-1---bitter-lesson-preference.md) (156 lines) — One-screen purpose (manager-first).
 - [C.19.2 - Use-Bounded Apparatus Application](36-c-19-2---use-bounded-apparatus-application.md) (170 lines) — Type: Architectural (A)
@@ -85,7 +85,7 @@
 - [C.32.ACE - Architecture Characteristic Eval Programs](75-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32
 - [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](76-c-32-conway---architecture-influence-and-transformed-archite.md) (433 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Multilevel Architecture Residual Optimization](77-c-32-mlao---multilevel-architecture-residual-optimization.md) (275 lines) — Type: Architectural subpattern under C.32
-- [C.32.MWA - Practice Architecture Synthesis from Several Structures](78-c-32-mwa---practice-architecture-synthesis-from-several-stru.md) (202 lines) — Tech-name: PracticeArchitectureSynthesisFromSeveralStructures
+- [C.32.MWA - Practice Architecture Synthesis from Several Structures](78-c-32-mwa---practice-architecture-synthesis-from-several-stru.md) (204 lines) — Tech-name: PracticeArchitectureSynthesisFromSeveralStructures
 - [C.32.FAIL - Architecture Failure Recognition and Repair](79-c-32-fail---architecture-failure-recognition-and-repair.md) (245 lines) — Type: Architectural subpattern under C.32
 - [C.32.PAD - Project Architecture Decision After Candidate Synthesis](80-c-32-pad---project-architecture-decision-after-candidate-syn.md) (362 lines) — Type: Architecture decision pattern under C.32
 - [C.32.ADR - Architecture Decision Record Projection](81-c-32-adr---architecture-decision-record-projection.md) (228 lines) — Type: Architecture publication pattern under C.32

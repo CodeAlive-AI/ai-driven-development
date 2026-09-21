@@ -21,7 +21,7 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](16-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the Specification](17-e-6---didactic-architecture-of-the-specification.md) (100 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding Principle](18-e-7---archetypal-grounding-principle.md) (84 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (670 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](19-e-8---fpf-authoring-conventions-style-guide.md) (672 lines) — Type: Architectural (A)
 - [E.8.ECSPF - FPF Pattern Publication Form for Evaluation Guidance](20-e-8-ecspf---fpf-pattern-publication-form-for-evaluation-guid.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design‑Rationale Record (DRR) Method](21-e-9---design-rationale-record-method.md) (359 lines) — Type: Governance and authoring pattern
 - [E.9.DA - DRR Decision-Adequacy Evaluation CharacteristicSpace](22-e-9-da---drr-decision-adequacy-evaluation-characteristicspac.md) (444 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
@@ -38,7 +38,7 @@
 - [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](33-e-11---first-practical-entry-and-pattern-use-discoverability.md) (508 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](34-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (549 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](35-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (319 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PFP - Framework Publication Form Profile](36-e-11-pfp---framework-publication-form-profile.md) (214 lines) — Type: Specialization of E.11
+- [E.11.PFP - Framework Publication Form Profile](36-e-11-pfp---framework-publication-form-profile.md) (216 lines) — Type: Specialization of E.11
 - [<FrameworkCode>.Preface:<n> - <Title>](37-frameworkcode-preface-n---title.md) (133 lines) — For example, ## STR.Preface:1 - Problem frame - Direction and commitment under changing conditions identifies the first section of the Strategy Preface. ### ME.Preface:7.3 - Production...
 - [E.11.DSG - DPF Suite Reference](38-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](39-e-12---didactic-primacy-cognitive-ergonomics.md) (88 lines) — The FPF is designed as an "Operating System for Thought," a tool intended to augment and clarify human (and artificial) reasoning. This mission places a unique demand on its architecture: the...
@@ -58,7 +58,7 @@
 - [E.18 - Transformation Flow Structure](53-e-18---transformation-flow-structure.md) (595 lines) — Tech-name: TransformationFlowStructure (pattern label)
 - [E.18.1 - P2W Problem-to-Work Carry-Through](54-e-18-1---p2w-problem-to-work-carry-through.md) (560 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](55-e-18-2---transformation-flow-mathematical-description.md) (239 lines) — Tech-name: TransformationFlowMathematicalDescription
-- [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](56-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (469 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
+- [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](56-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (471 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
 - [E.18.NET - Network of Transformation-Flow Structures](57-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork
 - [E.19 - Pattern Quality Gates: Review and Refresh Profiles](58-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (793 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol](59-e-20---mechanism-introduction-protocol.md) (403 lines) — Type: Architectural pattern

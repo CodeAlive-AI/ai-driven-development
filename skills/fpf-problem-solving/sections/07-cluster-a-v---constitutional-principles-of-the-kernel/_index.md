@@ -17,7 +17,7 @@
 - [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (160 lines) — Use this pattern when a precise claim of agency matters: which System qualifies for a local goal-directed system-role kind, and which assignment actually holds for the action in question? Start with...
 - [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (363 lines) — Type: Kernel mereology and part-whole relation discipline pattern
 - [A.15 - System-Role–Method–Work Alignment](14-a-15---system-role-method-work-alignment.md) (398 lines) — Type: Architectural (A)
-- [A.15.1 - U.Work](15-a-15-1---u-work.md) (595 lines) — Type: Architectural (A)
+- [A.15.1 - U.Work](15-a-15-1---u-work.md) (597 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan](16-a-15-2---u-workplan.md) (312 lines) — Type: Architectural (A)
 - [A.15.3 - SlotFillingsPlanItem](17-a-15-3---slotfillingsplanitem.md) (319 lines) — Tech-name: SlotFillingsPlanItem
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (480 lines) — Type: Architectural (A)
@@ -49,4 +49,4 @@
 - [A.20 - Constraint Validity for Transformation Steps](44-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
 - [A.21 - Gate Decisions from Independent Check Results](45-a-21---gate-decisions-from-independent-check-results.md) (296 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](46-a-22---structure-and-structural-views.md) (486 lines) — Type: Architectural pattern
-- [A.22.CGUS - Constraint-Governed Unfolding Structure](47-a-22-cgus---constraint-governed-unfolding-structure.md) (340 lines) — Type: A.22 specialization of U.Structure
+- [A.22.CGUS - Constraint-Governed Unfolding Structure](47-a-22-cgus---constraint-governed-unfolding-structure.md) (369 lines) — Type: A.22 specialization of U.Structure

@@ -258,6 +258,8 @@ Before claiming refinement or replacement, decide whether the changed account st
 
 A replacement comparison says which Method may replace which other Method, for what use, under which preconditions, with which intended result or preserved condition, and which bounds, interfaces, losses, and guards must remain visible. Do not infer the reverse direction. Shared kind criteria or similar descriptions do not prove replacement.
 
+When the replacement question concerns a constituent used by one or several encompassing Methods, **B.1.5.RS** supplies the comparison: follow the candidate through each relevant use and retain any adaptation or narrower applicability. For the distinct question of which Methods are being enacted together through a current action, use **B.1.5.EW**.
+
 A parameter change inside the Method's declared applicability and identity rule is variation of the same Method. A change to a participant meaning, result, bound, interface, or acceptance condition that matters to identity identifies another Method or leaves the identity question unresolved.
 
 A `G.5` family row cites already identified Methods and states why they are grouped for the current use. A fallback can belong to a `B.1.5` whole construction, a `G.5` selector rule or result, or a local relation-bearing claim. A dispatch rule says which selector branch applies; state the current branch and its basis.

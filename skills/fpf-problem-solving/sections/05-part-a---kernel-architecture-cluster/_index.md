@@ -22,7 +22,7 @@
 - [A.2.8.PER - Granted Permission, Exercise, and Non-Prohibition](17-a-2-8-per---granted-permission-exercise-and-non-prohibition.md) (314 lines) — Type: Definitional ontic support pattern
 - [A.2.9 — U.SpeechAct (Communicative Work Kind, Occurrences, and Records)](18-a-2-9-u-speechact.md) (400 lines) — Type: Definitional work-ontic pattern
 - [A.3 - Transformer Constitution (Quartet)](19-a-3---transformer-constitution.md) (210 lines) — Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence by enacting which U.Method, under which exact U.SystemRoleAssignment when assignment-bound...
-- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](20-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (459 lines) — Type: Definitional pattern
+- [A.3.1 - U.Method: Reusable Way of Doing with Explicit Applicability](20-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) (461 lines) — Type: Definitional pattern
 - [A.3.1.MR - Candidate-Method Recovery from Work Evidence](21-a-3-1-mr---candidate-method-recovery-from-work-evidence.md) (211 lines) — Type: Architectural (A)
 - [A.3.2 - U.MethodDescription: Description Episteme for a Way of Doing](22-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) (328 lines) — Type: Definitional pattern
 - [A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme](23-a-3-3---u-dynamics-state-space-and-transition-law-episteme.md) (336 lines) — Type: Definitional pattern
