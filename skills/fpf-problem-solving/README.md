@@ -94,4 +94,4 @@ on the skill file itself.
 
 ## License
 
-Skill packaging and splitter: MIT. The generated FPF specification content by Anatoly Levenchuk is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). The specification is split into section files with generated navigation indexes.
+Skill packaging and splitter: MIT. Adapted from *First Principles Framework (FPF)* by Anatoly Levenchuk, [ailev/FPF](https://github.com/ailev/FPF), upstream commit `453144eda2870a14d47fd9c066deeb0405eee86f`. The FPF specification text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the specification was split into section files with generated navigation indexes, and `SKILL.md` adds an agent-oriented router and usage instructions. This adaptation is not endorsed by the FPF author.

@@ -5,6 +5,18 @@ description: "Use First Principles Framework (FPF) to decompose problems, archit
 
 # First Principles Framework (FPF)
 
+## Attribution and license
+
+This skill adapts *First Principles Framework (FPF)* by Anatoly Levenchuk,
+[ailev/FPF](https://github.com/ailev/FPF), upstream commit
+`453144eda2870a14d47fd9c066deeb0405eee86f`. The FPF specification text in
+`sections/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Changes: the specification was split into section files and given generated navigation
+indexes; this `SKILL.md` adds an agent-oriented router and usage instructions.
+See the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md).
+Skill packaging and the splitter are MIT licensed. This adaptation is not endorsed by
+the FPF author.
+
 An "Operating System for Thought" — a transdisciplinary architecture for reasoning,
 written in human- and machine-readable pseudo-code. FPF turns raw intelligence (human or machine)
 into organisationally usable reasoning: explicit bounded contexts, auditable artefacts, multi-view

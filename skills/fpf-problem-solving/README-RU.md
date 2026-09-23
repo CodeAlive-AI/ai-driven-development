@@ -90,4 +90,4 @@ Section files — это сырой контент. `SKILL.md` является 
 
 ## License
 
-Упаковка skill и splitter: MIT. Сгенерированный текст спецификации FPF Анатолия Левенчука распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см. [область действия лицензии upstream](https://github.com/ailev/FPF/blob/main/LICENSING.md). Спецификация разделена на файлы секций с генерируемыми навигационными индексами.
+Упаковка скилла и splitter: MIT. Адаптировано из *First Principles Framework (FPF)* Анатолия Левенчука, [ailev/FPF](https://github.com/ailev/FPF), коммит источника `453144eda2870a14d47fd9c066deeb0405eee86f`. Текст спецификации FPF распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см. [область действия лицензии источника](https://github.com/ailev/FPF/blob/main/LICENSING.md). Изменения: спецификация разделена на файлы секций с генерируемыми навигационными индексами, а `SKILL.md` добавляет маршрутизацию и инструкции для агента. Автор FPF не подтверждал и не одобрял эту адаптацию.
