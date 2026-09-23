@@ -200,3 +200,5 @@ Refresh only the affected source-use row when a newer result changes one Solutio
 - **Keeps outside:** universal marginal value, a new delta kind, domain formulas and thresholds, causal proof, assurance, permission, selected-set declaration, and `ChoiceResult`.
 
 ### C.11.CRC:End
+
+<a id="fpf-pattern-C.11.DUA"></a>

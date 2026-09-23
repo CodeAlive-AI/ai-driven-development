@@ -18,16 +18,17 @@
 - [A.6.3.RT.OE - Construct an Operative Expression](13-a-6-3-rt-oe---construct-an-operative-expression.md) (248 lines) — Normativity: Normative
 - [A.6.3.NAR - Structure-to-Narrative Rendering](14-a-6-3-nar---structure-to-narrative-rendering.md) (392 lines) — Type: Specialization pattern
 - [A.6.4 - EntityOfConcern retargeting](15-a-6-4---entityofconcern-retargeting.md) (250 lines) — Type: Definitional pattern
-- [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims](16-a-6-p---relational-precision-restoration---recovering-direct.md) (562 lines) — Type: Architectural (A)
-- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](17-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (431 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording
-- [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission](18-a-6-rcd---needed-relation-claim-derivation-and-relation-kind.md) (399 lines) — Type: Kernel relation-foundation pattern
-- [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](19-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (265 lines) — Type: FPF precision-restoration pattern
-- [A.6.A - Action-Invitation Precision Restoration (ACT-INV)](20-a-6-a---action-invitation-precision-restoration.md) (754 lines) — Type: Architectural (A)
-- [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION)](21-a-6-f---function-and-functional-precision-restoration.md) (422 lines) — Type: Architectural pattern
-- [A.6.M - Module Relation Repair](22-a-6-m---module-relation-repair.md) (390 lines) — Type: Architectural pattern
-- [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline](23-a-6-5---relation-declaration-slot-discipline---slotkind-valu.md) (371 lines) — Type: Architectural (A)
-- [A.6.6 - Base Declaration Discipline - Direct relation first; reusable declaration only when needed](24-a-6-6---base-declaration-discipline---direct-relation-first.md) (444 lines) — Type: Definitional relation-discipline pattern
-- [A.6.7 - MechSuiteDescription — Description of a set of distinct mechanisms](25-a-6-7---mechsuitedescription-description-of-a-set-of-distinc.md) (423 lines) — Type: Architectural pattern.
-- [A.6.9 - Cross-Context Sameness Disambiguation - Restoring the concrete claim behind "same", "equivalent", and "align" (RPR-XCTX)](26-a-6-9---cross-context-sameness-disambiguation---restoring-th.md) (365 lines) — Type: Relational precision-restoration pattern; Architectural (A) — A.6.P specialisation (RPR)
-- [A.6.S - TargetSignature and optional ConstructorSignature - demand-driven signature engineering](27-a-6-s---targetsignature-and-optional-constructorsignature.md) (298 lines) — Type: Architectural (A)
-- [A.6.H - Wholeness Language Unpacking — RPR-WHOLE](28-a-6-h---wholeness-language-unpacking-rpr-whole.md) (326 lines) — Type: Relational-precision specialization
+- [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims](16-a-6-p---relational-precision-restoration---recovering-direct.md) (564 lines) — Type: Architectural (A)
+- [A.6.P.RI - Recover Agent-Relative References for Action](17-a-6-p-ri---recover-agent-relative-references-for-action.md) (196 lines) — Normativity: Normative unless marked informative
+- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](18-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (431 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording
+- [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission](19-a-6-rcd---needed-relation-claim-derivation-and-relation-kind.md) (399 lines) — Type: Kernel relation-foundation pattern
+- [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](20-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (265 lines) — Type: FPF precision-restoration pattern
+- [A.6.A - Action-Invitation Precision Restoration (ACT-INV)](21-a-6-a---action-invitation-precision-restoration.md) (754 lines) — Type: Architectural (A)
+- [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION)](22-a-6-f---function-and-functional-precision-restoration.md) (422 lines) — Type: Architectural pattern
+- [A.6.M - Module Relation Repair](23-a-6-m---module-relation-repair.md) (390 lines) — Type: Architectural pattern
+- [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline](24-a-6-5---relation-declaration-slot-discipline---slotkind-valu.md) (371 lines) — Type: Architectural (A)
+- [A.6.6 - Base Declaration Discipline - Direct relation first; reusable declaration only when needed](25-a-6-6---base-declaration-discipline---direct-relation-first.md) (444 lines) — Type: Definitional relation-discipline pattern
+- [A.6.7 - MechSuiteDescription — Description of a set of distinct mechanisms](26-a-6-7---mechsuitedescription-description-of-a-set-of-distinc.md) (423 lines) — Type: Architectural pattern.
+- [A.6.9 - Cross-Context Sameness Disambiguation - Restoring the concrete claim behind "same", "equivalent", and "align" (RPR-XCTX)](27-a-6-9---cross-context-sameness-disambiguation---restoring-th.md) (365 lines) — Type: Relational precision-restoration pattern; Architectural (A) — A.6.P specialisation (RPR)
+- [A.6.S - TargetSignature and optional ConstructorSignature - demand-driven signature engineering](28-a-6-s---targetsignature-and-optional-constructorsignature.md) (298 lines) — Type: Architectural (A)
+- [A.6.H - Wholeness Language Unpacking — RPR-WHOLE](29-a-6-h---wholeness-language-unpacking-rpr-whole.md) (326 lines) — Type: Relational-precision specialization

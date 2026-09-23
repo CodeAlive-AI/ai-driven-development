@@ -28,9 +28,9 @@
 - [C.3.4 - KindUseAdaptationDeclaration — Contextual Adaptation of Kinds without Cloning](18-c-3-4---kinduseadaptationdeclaration-contextual-adaptation-o.md) (211 lines) — One-line summary. Use a KindUseAdaptationDeclaration when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base...
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](19-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (159 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](20-c-3-a---typed-guard-macros-for-kinds-usm.md) (461 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
-- [C.11 - Decision Theory (Decsn-CAL)](21-c-11---decision-theory.md) (727 lines) — Normativity: Normative unless marked informative
-- [C.11.CRC - Configuration-Relative Contribution Comparison](22-c-11-crc---configuration-relative-contribution-comparison.md) (203 lines) — Tech name: ConfigurationRelativeContributionComparison
-- [C.11.DUA - Decision-Useful Advice and Evidence Demands](23-c-11-dua---decision-useful-advice-and-evidence-demands.md) (243 lines) — Tech name: DecisionUsefulAdvice
+- [C.11 - Decision Theory (Decsn-CAL)](21-c-11---decision-theory.md) (729 lines) — Normativity: Normative unless marked informative
+- [C.11.CRC - Configuration-Relative Contribution Comparison](22-c-11-crc---configuration-relative-contribution-comparison.md) (205 lines) — Tech name: ConfigurationRelativeContributionComparison
+- [C.11.DUA - Decision-Useful Advice and Evidence Demands](23-c-11-dua---decision-useful-advice-and-evidence-demands.md) (257 lines) — Tech name: DecisionUsefulAdvice
 - [C.13 — Constructional Mereology (Compose‑CAL)](24-c-13-constructional-mereology.md) (253 lines) — At a glance. Use C.13 when a practitioner must show how identified entities and relations that obtain form one whole, collection, or aspect. The account explains how those facts support the whole,...
 - [C.16 - Measurement & Metrics Characterization (MM‑CHR)](25-c-16---measurement-metrics-characterization.md) (339 lines) — Use this pattern when. Use C.16 to make a reading interpretable or to construct the model needed for a proposed measurement. Start with what is being measured and how the procedure relates it to an...
 - [C.16.MR - Construct a Measurement Relation](26-c-16-mr---construct-a-measurement-relation.md) (211 lines) — Normativity: Normative
@@ -93,12 +93,12 @@
 - [C.33 - Structural Information Adequacy for Architecture Capture and Missing-Structure Return](83-c-33---structural-information-adequacy-for-architecture-capt.md) (209 lines) — Type: Architectural pattern
 - [C.34 - Structural Correspondence, Equivalence, and Morphism Adequacy](84-c-34---structural-correspondence-equivalence-and-morphism-ad.md) (189 lines) — Type: Architectural pattern
 - [C.35 - Structural Synthesis and Discovery Adequacy](85-c-35---structural-synthesis-and-discovery-adequacy.md) (248 lines) — Type: Architectural pattern
-- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](86-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (402 lines) — Tech-name: CulturalEvolutionEngineering
+- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](86-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (404 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.37 - Use-Bounded Representation Selection and Co-Use](87-c-37---use-bounded-representation-selection-and-co-use.md) (277 lines) — Normativity: Normative unless explicitly marked informative
-- [C.38 - Construct Comparable Ways to Obtain One Result](88-c-38---construct-comparable-ways-to-obtain-one-result.md) (200 lines) — Normativity: Normative unless explicitly marked informative
+- [C.38 - Construct Comparable Ways to Obtain One Result](88-c-38---construct-comparable-ways-to-obtain-one-result.md) (202 lines) — Normativity: Normative unless explicitly marked informative
 - [C.39 - Find and Develop a Way to Obtain a Result](89-c-39---find-and-develop-a-way-to-obtain-a-result.md) (169 lines) — Normativity: Normative unless explicitly marked informative.
-- [C.39.RO - Turn a Construction into a Reusable Operation](90-c-39-ro---turn-a-construction-into-a-reusable-operation.md) (212 lines) — Normativity: Normative
+- [C.39.RO - Turn a Construction into a Reusable Operation](90-c-39-ro---turn-a-construction-into-a-reusable-operation.md) (214 lines) — Normativity: Normative
 - [C.40 - Develop Branching Search from Reusable Material](91-c-40---develop-branching-search-from-reusable-material.md) (169 lines) — Normativity: Normative unless explicitly marked informative.
-- [C.40.CD - Develop Problems and Ways of Solving Them Together](92-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (214 lines) — Normativity: Normative
+- [C.40.CD - Develop Problems and Ways of Solving Them Together](92-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (216 lines) — Normativity: Normative
 - [C.36.P - Cultural-Evolution Wording-Use Precision Restoration](93-c-36-p---cultural-evolution-wording-use-precision-restoratio.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
 - [C.36.RP - Sustain and Renew Shared Ways of Working](94-c-36-rp---sustain-and-renew-shared-ways-of-working.md) (211 lines) — Normativity: Normative unless marked informative

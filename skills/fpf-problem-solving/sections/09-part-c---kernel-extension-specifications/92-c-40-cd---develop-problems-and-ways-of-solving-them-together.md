@@ -52,6 +52,8 @@ Locate a consequential change and carry it through the question:
 
 Use B.5.QD to form and examine the new question. Change a named condition, demanded result, available means or composition of operations. Explain how that change affects what an answer would need to establish.
 
+If the opening is an incompatibility, B.5.QD.CF examines the premise that makes the demands conflict and constructs a question about another means or a legitimate distinction. Return its candidate to the retained requirements here; changing an assumption for exploration leaves the corresponding realization question open.
+
 Check the formulation before investing in solving it. Its objects and operations must have meanings, its conditions must be interpretable together, and the proposed answer must be assessable. A question asking whether a configuration is possible can legitimately return an impossibility result. When a task generator promises a solvable challenge, support that promise with a feasible case. Otherwise keep feasibility open.
 
 Select a revealing attainable case. Its result may expose a counterexample, a useful intermediate construction or a missing operation. Leave difficulty relative to the available means and method where it has not been established more generally.

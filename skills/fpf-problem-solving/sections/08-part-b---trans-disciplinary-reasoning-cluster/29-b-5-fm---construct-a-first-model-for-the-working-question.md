@@ -40,6 +40,10 @@ State what alternatives the answer should distinguish: whether an intervention c
 
 Inspect a small instance or the available arrangement. Describe the supplied facts separately from the account you propose. Ask what changes between the cases that matter. The first question can be provisional; preserve a new question when the attempted construction reveals a more useful distinction.
 
+If the participant cannot yet express what differs or matters, B.5.EA helps articulate that contribution before model construction. Return here when the resulting distinction permits a question or contrast; do not require this preliminary work when the contrast is already usable.
+
+When the current account is clear but leaves you unsure which question matters, the scheme comparison in :4.2.1 can expose a useful distinction. A discovered question may already have an adequate answer; use it without requiring a larger model.
+
 An existing answer may already resolve the contrast. Use it under its conditions. C.11.DUA helps when obtaining more information or refining a model competes with acting on a sufficient answer.
 
 #### B.5.FM:4.2 - Choose the participants and distinctions
@@ -49,6 +53,28 @@ Follow what can be transformed, exchanged, combined, constrained or observed. Pr
 Try a consequential variation. If two situations receive the same description but permit different answers, recover the distinction that separates them. An object can need several quantities; several objects can sometimes be represented together. Choose the coarsening from the inference it must preserve.
 
 For a question about permitted continuations, A.3.3 helps construct a sufficient state description. For an observation, C.16 helps connect the quantity of interest to what the observation reports.
+
+#### B.5.FM:4.2.1 - Let a conceptual scheme expose a useful question
+
+Start from what the current account is meant to enable, even when the question is provisional: prepare a workshop, interpret an effect or improve a construction. Choose a small, understood conceptual scheme whose relations could reveal a consequential distinction. Here a scheme means related concepts and the inferences their relations permit. For example, connecting a learner's attempt, what an instructor can observe and the feedback required can expose a question that a seating plan leaves unanswered.
+
+State the possible contribution before expanding the account. Recover the selected relation's participants, conditions and a consequence; B.5.TU helps if that theoretical contribution is unfamiliar. Use B.5.4 to construct its tentative correspondence to the case. Keep what the source account says distinguishable from what the scheme suggests adding. A sketch or ordinary question can carry the correspondence.
+
+When a relation appears absent, distinguish the following outcomes:
+
+| What is available | Useful continuation |
+| --- | --- |
+| The account already supplies the relation and answer. | Use them. |
+| The relation applies, but a participant or condition is unknown. | Ask whether resolving it could change the work. |
+| The relation does not apply under the scheme's own conditions. | Drop that question or try an applicable scheme. |
+| The expression cannot represent the needed distinction. | Change the expression or scheme; A.6.3.RT helps when that change needs work. |
+| The scheme conflicts with a consequential part of the case. | Reconsider the correspondence or assumption before using its consequence. |
+
+An empty position in a diagram establishes none of these outcomes by itself. If adapting a scheme changes a relation's meaning, state that change and reconsider the conclusions that depend on it.
+
+Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden; no record of declining an unnecessary inquiry is required.
+
+Use the resulting answer directly or continue constructing the model it needs. A subject specialist or AI can supply a relation, correspondence or calculation; the required knowledge and access depend on that contribution. Selecting a scheme creates no requirement to traverse a whole ontology or to learn every relation before making the useful move.
 
 #### B.5.FM:4.3 - Build relations that can produce a consequence
 
@@ -140,6 +166,16 @@ The inference works because each extension produces a distinct string, deleting 
 
 If the restriction changes to “no three consecutive 1s”, the same grouping loses a needed distinction. Separate prefixes with zero, one or two trailing 1s and reconstruct the permitted transitions. This change identifies what the state must retain; the subsequent recurrence or program is a further computational contribution.
 
+#### B.5.FM:5.4 - Find the limiting relation in a workshop plan
+
+Twelve people have accepted a 60-minute workshop. There are twelve seats and one instructor. The proposed arrangement gives each person a four-minute attempt observed by that instructor, then two minutes of the instructor's feedback before the next attempt begins. The initial plan lists attendance and materials.
+
+Use the relation between attempted action, observation and feedback to ask whether the intended practice can occur in the session. The sequential arrangement requires `12 * (4 + 2) = 72` minutes before any introduction. The next question is which arrangement can supply the intended practice and feedback within the available time. Reducing attendance, increasing duration or changing the learning arrangement have different consequences. Merely pairing learners supplies the required feedback only if they can provide that contribution.
+
+Now suppose twelve independent stations already provide the required task-specific feedback and can be used concurrently. The serial calculation no longer describes the work. Use the concurrent duration and the remaining session activities to decide whether the arrangement fits; this reasoning does not require another instructor. If the intended event is instead a demonstration with no individual practice, the individual-feedback relation does not impose that practice on it. Clarify the event's purpose before treating this scheme as applicable.
+
+The same question-forming move can use a measurement scheme: a shared column label, such as temperature, leaves the relevant quantity, observing conditions and aggregation to be recovered before combining records. If the existing documentation already establishes their suitability, use that answer. The scheme supplies a question, not a compulsory new measurement.
+
 ### B.5.FM:6 - Bias-Annotation
 
 The examples use small explicit accounts so that the reader can inspect the construction. Complex systems can require learned representations, instruments and multiple specialist contributions. Their suitability depends on the inference and available means.
@@ -185,6 +221,14 @@ B.5 coordinates the overall inquiry. This method develops its model-building con
 **Construction as a reasoning contribution.** Adapt Nersessian's [2025 account, §3](https://onlinelibrary.wiley.com/doi/10.1111/tops.12777): a useful analogy may have to be built, with its correspondence revised during use. The present method applies that contribution in :4.2–:4.4: select distinctions through a needed consequence, build compatible relations and use a small case to revise the correspondence. Reusing a calibrated domain model is cheaper when it already expresses the proposed change. Constructing another account becomes worthwhile when the available model cannot express a consequential interaction or operation; the vessel and prefix cases show those failures.
 
 **Qualitative consequences and application.** The [ISLE explanation by Etkina and Brookes](https://www.islephysics.net/why-isle.html) connects observation, proposed explanation, predicted consequence, testing and application, first qualitatively and then quantitatively. Use that progression in :4.4–:4.6 when a physical prediction needs examination and application. A formal construction can instead proceed from its formation rules and a derivation, as in :5.3.
+
+**Finding a question through a scheme.** Compare two practical starting points: follow a provisional question into a small model (:4.1–:4.5), or use an understood scheme to expose a question (:4.2.1). Give both routes the same workshop facts, knowledge of the attempt/feedback relation and a hand calculation. The first can begin with “Can this plan provide the intended practice?”, select the instructor's time, derive 72 minutes and revise the arrangement. With independent stations it changes the model and withdraws the serial restriction. Both routes can obtain these results.
+
+Use the scheme-based entry when an apparently adequate account, such as a seating plan, leaves the relevant question unclear. Its applicability table distinguishes an unknown relation from one that is inapplicable, inexpressible or in conflict with the case. In :5.4 the demonstration-only variant drops the individual-practice question instead of treating it as a missing provision. Recovering and trying a scheme has a cost: use the direct construction when the distinction and question are already clear. This comparison supports a choice between instructions under the stated conditions; it establishes neither faster learning nor better field performance.
+
+Gentner and Hoyos, [Analogy and Abstraction](https://doi.org/10.1111/tops.12278), 2017, §§1.2–2, provide a historical structural-alignment account. Adapt relational rather than name matching in :4.2.1; the reviewed transfer effects depend on their task and comparison conditions. Keet and Khan, [Discerning and Characterising Types of Competency Questions for Ontologies](https://arxiv.org/html/2412.13688v1), 2024, §§3–4, contribute purpose-sensitive questions and limits of a scheme's expressiveness. Adapt those distinctions in the applicability table without imposing their ontology-specific taxonomy. Vagnino and Walker, [Schema drift](https://doi.org/10.1016/j.cognition.2025.106418), 2026, supplies a limitation: repeated comparison can change relational judgments, with rival explanations unresolved. This motivates the explicit return to a changed relation; it does not establish this repair's efficacy.
+
+Reconsider the scheme-based entry when it repeatedly produces irrelevant questions or when the direct construction already supplies the needed distinction. Repair the correspondence or continue from the adequate question before broadening the inquiry.
 
 **Subject premises of the physical cases.** [OpenStax, University Physics 2, §1.6](https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer) supplies the conducting-layer and convection relations. [Volume 2, §2.1](https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas) supplies the isothermal fixed-amount gas relation; [Volume 1, §14.1](https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure) supplies the hydrostatic pressure relation. The chosen arrangements, simplifications and receiving questions are the present constructions.
 

@@ -42,6 +42,10 @@ Say what an answer would help someone understand, construct, explain, decide or 
 
 Separate the subject from its description, the intended result from a convenient proxy, and established premises from assumptions. Use ordinary language, a sketch or a small mathematical example at the precision needed to expose the difficulty.
 
+If a participant senses that an account misses something but cannot yet express what, B.5.EA helps develop a correctable distinction from their experience. Use the resulting question or contrast here; a better expression does not by itself establish a claim about the world.
+
+An expressible account can still omit a consequential relation. B.5.FM:4.2.1 uses a small conceptual scheme to find a question through that relation, while distinguishing an unknown contribution from an inapplicable scheme. Use an already adequate answer directly.
+
 When the current formulation is inadequate, vary a consequential element. Useful operations include:
 
 - change the quantity or distinction that the answer must preserve;

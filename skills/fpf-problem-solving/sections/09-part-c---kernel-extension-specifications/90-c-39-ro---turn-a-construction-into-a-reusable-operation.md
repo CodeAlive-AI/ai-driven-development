@@ -209,3 +209,5 @@ The source synthesis supports constructive reuse without requiring the whole aut
 - **C.11.DUA** selects worthwhile information work for the receiving use.
 
 ### C.39.RO:End
+
+<a id="fpf-pattern-C.40"></a>

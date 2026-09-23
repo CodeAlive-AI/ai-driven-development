@@ -139,6 +139,8 @@ The table records term use and any actual bridge. F.17 supplies durable term row
 
 For music and dance, a label such as `prog`, `post-prog`, `contemporary`, `hip-hop`, `battle`, `TikTok dance`, `canon`, `school`, or `technique` may point to different FPF values in different contexts. The bridge row says which one is current before the project relies on the label.
 
+When the claim concerns a retained style, name what varies and what the comparison retains. Depicting a new scene in a retained visual style changes the represented content; depicting the same scene in different styles changes the style. These are different preservation relations. Say which works or variants are compared, by what relevant features, and for which use. A stylistic similarity alone does not establish that an audience recognizes or likes the work, that a performer can reproduce it, or that its method has been transmitted; those conclusions need the corresponding recognition, response, performance or transmission relation.
+
 #### C.36:4.2 - Intervention Card
 
 Use an intervention card when a project must retain the identity of a proposed or performed intervention. First write the ordinary claim: what relation will change, by what proposed action, what effect is expected, how it will be measured, and what would stop or redirect the attempt. For example: `The festival will change jury feedback timing; adoption in the next teaching cycle is the measured effect; use A.15.2 for the plan and A.3.4 only if an actual change later obtains.`

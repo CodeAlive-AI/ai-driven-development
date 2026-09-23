@@ -33,6 +33,7 @@ For a reversible local choice, ordinary project language is enough. Create a dur
 **Not this pattern when.** Use the nearest applicable pattern instead:
 
 - Before Work exists, use `A.15.2` for intended-work content and `A.15.5` for work-entry readiness.
+- After an interruption, use `A.15.10` when the purpose, governing method or unfinished contribution must be recovered before a useful next action can be selected. If these are already available, continue here.
 - When ongoing Work is blocked because an exact performer, support, or continuation-state relation is missing or unsupported—not because known candidates need choosing—use the actual-Work branch of `A.15.8` to repair that configuration or stop, then return here.
 - For a settled short procedure with no material branch, use the applicable domain Method; consult its `A.3.2` MethodDescription when a description is needed.
 - For a choice outside current Work when the chooser and `OptionSet` are already known, use `C.11`.
@@ -98,6 +99,8 @@ Reading this pattern, consulting a MethodDescription, following a plan, or recei
 | The action is fixed but calls to tools or services must be planned | Use `C.24`. | A call plan and checkpoint return; the call plan is not the underlying choice. |
 | A changed condition or missing required support defeats an action-guiding claim | Keep the other qualified information; compare feasible, worthwhile refresh with a supported narrower action, the named safe fallback or stopping under §4.2. | Qualified information supports the selected continuation, with the affected limit stated. Age or a missing administrative time field alone does not invalidate an applicable claim. |
 | Safety, authority, capability, applicability, or current Work is unresolved | Use the pattern that defines or tests the missing claim—for example, `A.2.2` for capability, `A.15.1` for performed Work, and `A.15.5` only for work-entry readiness; keep safety, authority, and applicability with the pattern that defines them. | The missing claim grounded under its own rule, or a named unresolved claim with return or stop; no action, permission, capability, Work, or Method change is inferred from the unresolved claim. |
+
+When an available method repeatedly goes unconsidered at a relevant moment, use `A.15.11` to connect it with an occasion in the work. This can make a useful candidate available to step 4; the current constraints still determine which actions are admissible.
 
 #### A.15.7:4.4 - Keep the first result light
 

@@ -420,3 +420,5 @@ These rows answer the B.1.5 practice question: how to decide and expose order-se
 - Stops before any positive transformation-composition or transformation-part claim until a direct governor supplies exact participants, obtaining semantics, and occurrence identity.
 
 ### B.1.5:End
+
+<a id="fpf-pattern-B.1.5.EW"></a>

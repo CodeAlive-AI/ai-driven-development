@@ -73,6 +73,20 @@ An inquiry can be useful even if the physical action stays the same. It may esta
 
 For exploratory research, name the explanatory, model-building, hypothesis-discriminating or option-creating gain at the research horizon. A study can earn its cost through those gains before an operational intervention is selected. The direct research method must still connect its attainable observations to that gain.
 
+#### C.11.DUA:4.2.1 - Compare a proposed change with continuing the work
+
+For optional advice to change a way of working, include continuing without that change among the serious alternatives. A useful new contribution can be considered while the present work succeeds and its constraints remain unchanged. Recover what the recipient could gain, on which horizon, and what following the advice would require.
+
+When the gain depends on a constituent action, use B.1.5.EW to recover the encompassing work performed through it, the contributions needed below it and the conditions that change its use. Use B.1.5.RS for a proposed replacement in those wholes. Include a second receiving whole or an intermediate connection while it can reverse the advice. Use an already adequate account directly.
+
+Compare the full continuation: understanding and discussing the advice, obtaining support, learning, adaptation, coordination, execution and displaced work. Use C.11.CRC when the finite comparison or interactions are missing. If several changes compete for the same recipient capacity, compare their combined demand with ongoing commitments and changes already selected. Individually useful changes may require a smaller set, deferral or a different combination.
+
+Keep deciding to think further, presenting advice, deciding to change and performing the change separate. Cheap computation can justify frequent consideration while interruption and transition costs justify infrequent advice or intervention. Consider timing and a smaller change when those alternatives matter. A change in performer capability or adaptation cost can justify reconsidering the encompassing way of working.
+
+Use the available basis before asking the recipient for more work. Unclear benefit alone gives the recipient no obligation to prove an optional suggestion useless or fund an expensive evaluation. Obtain more information only when a plausible attainable answer can change a worthwhile continuation. If presenting the advice has no proportionate basis, continue without presenting it; no rejection record is required merely to finish. Preserve a reason or reconsideration condition only for a receiving use that needs it.
+
+An existing obligation still constrains the available continuations. Examine its merits and possible revision through section 4.3 when that question is live.
+
 #### C.11.DUA:4.3 - Appraise a disputed requirement and its current force
 
 When the requirement itself is in question, identify the quantity, activity or claim it governs and the problem it is meant to address. Examine its basis and uncertainty, threshold, protective contribution, burden and distribution of error costs. Include delay and displaced risks: reducing one named risk may increase another.

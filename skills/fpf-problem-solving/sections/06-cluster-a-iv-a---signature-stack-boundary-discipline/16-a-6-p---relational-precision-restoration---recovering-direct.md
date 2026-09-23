@@ -80,6 +80,8 @@ Start from the claim as written and ground each load-bearing head:
 
 The result of this step is an ordinary sentence containing identifiable objects. It is not a newly minted object kind. When several candidates remain live, use the small working note in A.6.P:4.9.
 
+Copying an expression such as “my left” or “our project” into another participant's instruction can change its referent. Use `A.6.P.RI` when the receiving use still needs to establish whose reference is intended, what must remain the same, or which performer is to act. The result is a usable interpretation or instruction, or a specific missing condition. When those references and the task are already clear, use ordinary clarification or the relevant domain transformation; A.6.3.RT governs a needed change of representation scheme while the EntityOfConcern stays the same.
+
 If the material is still a cue and no relation-bearing claim can yet be stated, stay with `A.16.1` or `B.4.1` instead of forcing relation publication. If the cue has stabilized into an open explanatory question but still has no selected relation answer, use `B.5.2.0`.
 
 If counter-evidence or a failed use shows that a published relation statement overstates its articulation, closure, or framing, use `A.16.2` to reopen, back off, or respecify that publication. `A.16.2` records the retreat; A.6.P repairs the relation again only after the engineer can name a grounded candidate relation, its participants, and a discriminating check. Use `A.16.0` only when readers must see lineage, branching, loss, or responsibility-transfer history; a local return needs no trajectory account.

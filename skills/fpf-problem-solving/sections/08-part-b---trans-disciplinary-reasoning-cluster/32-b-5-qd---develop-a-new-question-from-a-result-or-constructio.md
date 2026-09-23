@@ -66,6 +66,8 @@ A variation can change the original task. Preserve that change explicitly: restr
 
 These variations can be combined or repeated. Their purpose is to expose a useful answer, not to fill a catalogue of question types.
 
+When requirements appear incompatible, B.5.QD.CF recovers the premises producing the conflict and asks what other construction could satisfy the retained need. It distinguishes changing an assumed means or representation from changing a requirement, and can return a useful impossibility when the conditions must remain.
+
 #### B.5.QD:4.3 - Give the new question an answer form
 
 Say what would answer the question: for example, a construction, an explanatory relation, a bound, a counterexample or a condition under which an operation works. State the objects, allowed changes and premises that can alter the answer.

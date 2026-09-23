@@ -171,3 +171,5 @@ A fixed control-layer diagram is another useful alternative when the problem alr
 - C.11.DUA bounds further investigation by what it can change.
 
 ### B.1.5.EW:End
+
+<a id="fpf-pattern-B.1.5.RS"></a>

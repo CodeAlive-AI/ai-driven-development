@@ -8,7 +8,7 @@
 - [E.2.DA - FPF Pillar-Adequacy Evaluation CharacteristicSpace](03-e-2-da---fpf-pillar-adequacy-evaluation-characteristicspace.md) (277 lines) — Use E.2.DA when the object under improvement is an FPF-level object and the question is whether it realizes the E.2 Pillars adequately for a declared use. The object can be a monolith edition,...
 - [E.3 - Principle Taxonomy & Precedence Model](04-e-3---principle-taxonomy-precedence-model.md) (154 lines) — Pattern E.2 supplies eleven immutable pillars, yet experience shows that a flat list of principles invites ambiguity: reviewers cannot decide which pillar overrules another  and “dead‑letter” rules...
 - [E.4 - FPF Ecosystem Family Architecture](05-e-4---fpf-ecosystem-family-architecture.md) (315 lines) — Type: Architectural (A)
-- [E.4.FPF - First Principles Framework Form and Publication-or-Access Carrier Assembly](06-e-4-fpf---first-principles-framework-form-and-publication-or.md) (273 lines) — Type: Architectural (A)
+- [E.4.FPF - First Principles Framework Form and Publication-or-Access Carrier Assembly](06-e-4-fpf---first-principles-framework-form-and-publication-or.md) (288 lines) — Type: Architectural (A)
 - [E.4.PFAD - Principle-Framework Architecture Decision](07-e-4-pfad---principle-framework-architecture-decision.md) (284 lines) — Type: Architectural (A)
 - [E.4.DPF - Domain Principle Framework Authoring and Publication-or-Access Carrier Assembly](08-e-4-dpf---domain-principle-framework-authoring-and-publicati.md) (623 lines) — Type: Architectural (A)
 - [E.4.DPF.DA - Domain Principle Framework Package-Adequacy Evaluation CharacteristicSpace](09-e-4-dpf-da---domain-principle-framework-package-adequacy-eva.md) (403 lines) — Normativity: Normative unless marked informative.
@@ -35,9 +35,9 @@
 - [E.10.P - Conceptual Prefixes policy & registry](30-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Recovering What “Context” Means in Use](31-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
 - [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline](32-e-10-d2---entityofconcern-description-episteme-and-specifica.md) (413 lines) — Definitional pattern - normative, notation-agnostic
-- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](33-e-11---first-practical-entry-and-pattern-use-discoverability.md) (508 lines) — Type: Pattern-language governance pattern (E)
+- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](33-e-11---first-practical-entry-and-pattern-use-discoverability.md) (512 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](34-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (549 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](35-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (319 lines) — Type: Pattern-language use pattern (E)
+- [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](35-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (331 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PFP - Framework Publication Form Profile](36-e-11-pfp---framework-publication-form-profile.md) (216 lines) — Type: Specialization of E.11
 - [<FrameworkCode>.Preface:<n> - <Title>](37-frameworkcode-preface-n---title.md) (133 lines) — For example, ## STR.Preface:1 - Problem frame - Direction and commitment under changing conditions identifies the first section of the Strategy Preface. ### ME.Preface:7.3 - Production...
 - [E.11.DSG - DPF Suite Reference](38-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
