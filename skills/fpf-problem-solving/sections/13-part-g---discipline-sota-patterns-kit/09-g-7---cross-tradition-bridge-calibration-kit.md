@@ -2,21 +2,22 @@
 
 **Tag.** Architectural pattern
 **Stage.** design‑time (calibration + publication) + run‑time (sentinel‑driven telemetry emission; orchestration governed by **G.11**)
-**Primary output.** A bridge calibration kit that turns **G.2**’s BridgeMatrix rows into **F.9** `BridgeCard`s and publishes: a `BridgeCalibrationTable (BCT)` + `CalibrationLedger` + `RegressionSet` + `SentinelSet`, plus UTS‑visible crossing rows and RSCR‑ready sentinel triggers scoped to `PathSliceId` / `PatternScopeId`.
+**Start here.** Name the correspondence to be calibrated and the question of the receiving use, if one is already known. Recover its exact endpoints and governing relation, then state the evidence, preserved distinctions and losses. The first useful result is a bounded calibration statement; its suitability for a receiving use requires that use’s own rule, loss tolerance and reliance. Add the kit fields below when calibrated values or published, refreshable calibration records are needed. For a bounded reuse needing neither, follow the correspondence’s direct rule instead (F.9 for senses, C.3.3 for kinds, or the named plane rule).
+**Primary output.** A calibration kit with a `BridgeCalibrationTable (BCT)`, `CalibrationLedger`, `RegressionSet` and `SentinelSet`. Each row cites the actual sense, kind or plane correspondence being calibrated. F.9 rows carry BridgeCards; public naming and real flow/gate crossings add their required UTS or bundle anchors. Sentinel triggers carry the affected references and live scope.
 **Primary hooks.** `G.Core` (Part‑G invariants + RSCR trigger catalogue + Default Governing Definition Index), **G.2** (BridgeMatrix), **F.9** (BridgeCard + CL), **C.3.3** (KindBridge + CL^k when the kind channel is used), **F.3** (source-local sense clustering), **F.17** (SenseCell anchoring), **F.7** (source-local comparison display), **E.18/A.21** (GateCrossing + CrossingBundle checks), **G.6** (PathId/PathSliceId citation surface), **G.5** (downstream consumer for eligibility/selection), **G.11** (refresh orchestration consumer), **B.3** (assurance lanes + penalty policies), **C.21** (DHC accounts such as AlignmentDensity), **C.18 and C.19** (QD/OEE pins when relevant), **C.23** (SoS‑LOG clauses as explainability gates for cross‑Tradition choices), **G.4** (Acceptance hooks/thresholds when bridges are used as selector gates), **E.10** (LEX / strict distinction discipline).
-**Working‑Model first.** Prefer a minimal, auditable calibration procedure and worked micro‑cases; escalate to heavier harnesses only where risk warrants (per **E.8**). Use this kit when the receiving use needs calibrated CL values or published, refreshable calibration records. Handle other bounded semantic reuse directly under F.9.
+**Working‑Model first.** Prefer a minimal, auditable calibration procedure and worked micro‑cases; escalate to heavier harnesses only where risk warrants (per **E.8**).
 **Non‑duplication note.** Universal Part‑G invariants (no shadow specs; Bridge‑only crossings; penalty routing to `R_eff` only; P2W split; typed/id‑based RSCR causes; defaults with one governing definition; Δ‑discipline) are governed by `G.Core` and are *cited* via `CC‑GCORE‑*`. This pattern defines only the *bridge calibration kit* and its surfaces.
 
 ### G.7:1 - Problem frame
 
 SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **BridgeMatrix**: a Tradition×Tradition inventory of “comparable constructs” with preliminary notes (candidate correspondences, likely losses, tentative levels). When the receiving use requires calibrated cross‑Context reuse, downstream patterns (CHR/CAL/selector/logging/shipping) must ensure that the reuse is:
 
-* **materialised** as explicit bridge artefacts (not implied by prose),
+* **recoverable** through the actual correspondence and its source basis, including BridgeCards for F.9 rows,
 * **calibrated** with a small, auditable procedure (so CL/CL^k/plane routing is not a narrative),
-* **published** as checkable crossing bundles (UTS + GateCrossing harness),
+* **published** with the anchors required by the receiving use; UTS and E.18/A.21 harnesses apply to their actual public names and flow/gate crossings,
 * **refreshable** in a *targeted* way (path‑scoped RSCR rather than whole‑pack reruns).
 
-`G.7` packages this into a kit: `BCT` + `BridgeCard` publication + `RegressionSet`/`SentinelSet` wiring, so that later patterns can satisfy core invariants without re‑inventing cross‑Tradition machinery.
+`G.7` packages this into a kit: `BCT` + applicable correspondence references + `RegressionSet`/`SentinelSet` wiring, so that later patterns can satisfy core invariants without re‑inventing cross‑Tradition machinery.
 
 ### G.7:2 - Problem
 
@@ -59,10 +60,10 @@ SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **Br
     FreshnessWindowRef,
     CalibrationLedgerId,
     RowScopeId,
-    ReferencePlane(src),
-    ReferencePlane(tgt),
-    UTSRowId[],
-    PathId[]/PathSliceId[]
+    ReferencePlane(src)?,
+    ReferencePlane(tgt)?,
+    UTSRowId[]?,
+    PathId[]?/PathSliceId[]?
   },
   DefaultsConsumed := ∅,
   TriggerAliasMapRef := ∅
@@ -70,7 +71,8 @@ SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **Br
 
 * **Expansion rule.** Effective `CoreConformanceIds`, `RSCRTriggerKindIds`, and `CorePinsRequired` are obtained by expanding the cited profile/set ids and unioning with the explicit ids above (see `G.Core` nil‑elision + expansion rule).
 * **Conditional pins.**
-  * `BridgeCardRef.edition` is required iff BridgeCards are published as editioned artefacts.
+  * Relation, calibration and policy pins follow the channel/use conditions in G.Core:4.2.3. Source/target planes are required for an actual plane claim or another rule that consumes them; UTS and Path pins follow actual public-name and path uses.
+  * `BridgeCardRef.edition` is required iff an F.9 BridgeCard is published as an editioned artefact.
   * Sentinel scopes MAY be recorded as `PatternScopeId[]` when path surfaces are not available (and SHALL then be present in sentinel records and emitted trigger payload pins).
 * **CN/CG note.** `CC‑GCORE‑CN‑CG‑1` is included via `GCoreConformanceProfileId.PartG.AuthoringBase` and is exercised only when the governance card and legality gate (e.g., `CNSpecRef.edition` / `CGSpecRef.edition`) are explicitly pinned; penalty/guard policy ids (`Φ(CL)`, `Ψ(CL^k)`, `Φ_plane`) are policy pins, not governance cards or legality gates.
 
@@ -96,12 +98,12 @@ Where each `RowEntry` minimally binds:
 
 `RowEntry := ⟨
 RowEntryId, ComparableConstructId, RowScopeId,
-BridgeCardId[],
-RowCL_min, RowCL_k_min?, RowCL_plane_min?,
-LossNoteRef[]?, CounterExampleRef[]?, CounterExampleAbsenceRef?, WaiverRef[]?,
+BridgeCardId[]?, KindBridgeAssertionRef[]?, PlaneRelationRef[]?,
+RowCL_min?, RowCL_k_min?, RowCL_plane_min?, CalibrationBasisRef,
+LossNoteRef[]?, CounterExampleRef[]?, CounterExampleAbsenceRef?, ReceivingUseClaimRef[]?, ReceivingPolicyRef[]?, WaiverRef[]?,
 RegressionSetId, SentinelSetId,
-PolicyPins: { Φ(CL), Ψ(CL^k)?, Φ_plane? },
-PlanePins: { ReferencePlane(src), ReferencePlane(tgt) },
+PolicyPins?: { Φ(CL)?, Ψ(CL^k)?, Φ_plane? },
+PlanePins?: { ReferencePlane(src), ReferencePlane(tgt) },
 ExtensionPins?: { [GPatternExtensionId]: { …ids… } }
 ⟩`
 
@@ -112,7 +114,7 @@ Minimal fields:
 
 `CalibrationLedger := ⟨
 LedgerId, TradPairId,
-Entries[]  // each entry cites RowEntryId, BridgeCardId(s), CL‑minima, waivers (if any), loss notes, counterexamples, UTS rows, and (when run) regression-run/delta refs
+Entries[]  // cite RowEntryId, relation/card refs, calibration basis and supported summaries, losses, counterexamples or search disclosure, UTS rows and any regression-run/delta refs; keep receiving-use/policy claims and a policy exception distinct
 ⟩`
 
 **(C) RegressionSet — object.**
@@ -122,30 +124,21 @@ Minimal fields:
 
 `RegressionSet := ⟨ RegressionSetId, TradPairId, TestCaseId[], ExpectedOutcomesRef?, RegressionRunRef? ⟩`
 
-##### G.7:4.2.1 - CL / CL^k admissibility regime and plane guard (kit‑local; normative)
+##### G.7:4.2.1 - Interpret calibration and assess a receiving use separately
 
-This subsection is kit-governed (G.7) and complements (but does not duplicate) `G.Core` penalty routing and tri‑state guard semantics.
+**Calibration question.** State which correspondence, direction, scope, source editions and evidence the row assesses. Keep an F.9 sense correspondence, a C.3.3 kind correspondence and an applicable plane relation under their separate predicates. A record or favourable summary makes none of them obtain.
 
-**Admissibility regimes (row‑level, minimal).**
-* `RowCL_min` MUST take a value in `{3,2,1,0}` (value set and CL meaning are governed by F.9; G.7 governs the admissibility regime).
-* Default admissibility for cross‑Tradition reuse:
-  * `RowCL_min ≥ 2` ⇒ admissible for reuse (subject to downstream guards/policies).
-  * `RowCL_min = 1` ⇒ **NOT** admissible unless an explicit `WaiverRef[]` is cited; any reuse under waiver is **guarded-only** (no substitution semantics).
-  * `RowCL_min = 0` ⇒ forbidden for reuse; it MAY remain in BCT as a documented non‑bridge with loss notes/counterexamples.
-* **Honesty rule (row‑level):**
-  * if `RowCL_min ≤ 2`, at least one `CounterExampleRef[]` MUST be cited;
-  * if `RowCL_min = 3` and `CounterExampleRef[]` is empty, a citable `CounterExampleAbsenceRef` MUST be provided (explicit “searched‑none found / no known counterexample” disclosure);
-  * if any `LossNoteRef[]` is present, the row MUST NOT be presented as “free substitution” in any consumer surface.
+For a stated F.9 correspondence, optional CL shorthand means: `0` contradicted, `1` weakly comparable, `2` bounded support with explicit counterexamples, and `3` matched stated invariants with no current material counterexample. Cite the actual calibration basis. A kind-channel value follows C.3.3; a plane-channel value requires its own declared calibration rule. One channel cannot raise or replace another.
 
-**Kind channel (`CL^k`) (conditional).**
-If a row relies on bridges in the `Kind` channel, then `RowCL_k_min` and `Ψ(CL^k)` pin MUST be present, and the same admissibility regimes apply to `RowCL_k_min`.
+**Summary meaning.** Use `RowCL_min` only when a non-empty set of cells shares the declared ordinal scale and calibration question and the receiving report needs its weakest calibrated level. Cite that cell set and keep each loss recoverable. Apply the same condition independently to kind or plane summaries. An empty, mixed or unresolved basis has no such minimum; publish the separate results or the precise gap. A minimum is a calibration summary, not an admissibility result, and ordinal values are not averaged.
 
-**Plane guard (`CL^plane`) (conditional).**
-If `ReferencePlane(src)` and `ReferencePlane(tgt)` differ (or plane routing is explicitly invoked), then:
-* `RowCL_plane_min` and `Φ_plane` pin MUST be present;
-* if either plane pin is absent, the row is non‑conformant (no implicit plane defaulting);
-* any “blocking” outcome must be representable downstream via `G.Core` tri‑state guard (`abstain` or a policy‑bound `degrade(mode=…)`), without introducing additional statuses in G.7;
-* plane effects MUST NOT rewrite `CL/CL^k`; their impact is routed via the pinned policy ids and `G.Core` penalty semantics.
+**Evidence honesty.** Preserve actual counterexamples and losses. Level 2 needs its cited bounded-support counterexample; level 0 identifies the contradiction. Weak or incomplete evidence must be disclosed rather than dressed as a discovered counterexample. At level 3, when none is cited, supply a citable search/absence account stating what was examined and that none was found or is currently known. This reports the search basis, not universal absence. A loss-noted row cannot be presented as free substitution.
+
+**Receiving use.** For an F.9 use, state the separate claim with its use, direction, correspondence rule, loss tolerance and polarity; obtain matching A.10 reliance, or the B.3 result when an actual named assurance claim is current. A C.3.3 use separately checks receiving admissibility and target classification. Missing classification evidence remains unknown. Authorization, when required, follows its own rule. No CL level supplies these results.
+
+A receiving policy may impose an additional threshold for one named use. Cite that use, the policy's justification and authority, and its other necessary premises. The threshold is an additional policy condition, not F.9's general law. A `WaiverRef` identifies an authorized exception to that policy only: it supplies no missing correspondence, target fact, suitable-use claim or evidence. Preserve any narrower allowed use and its independently supported conditions.
+
+**Plane and loss policies.** When a receiving use relies on a plane relation, name the source and target planes, its predicate, calibration basis and applicable policy. Missing required plane information leaves that use unresolved. Keep any downstream `abstain` or policy-bound `degrade` under its receiving guard. Plane evidence does not rewrite CL or CL^k; a numerical loss requires its own receiving model and policy, with the consequence in R only.
 
 **(D) SentinelSet & BridgeSentinel — object.**
 A `SentinelSet` is a watch‑list that connects bridge calibration changes to RSCR‑ready triggers scoped to downstream consumption.
@@ -154,9 +147,10 @@ Minimal fields:
 
 `BridgeSentinel := ⟨
 SentinelId,
-watchedBridgeIds: BridgeCardId[],
+watchedRowEntryIds: RowEntryId[],
+watchedRelationRefs: exact references to the correspondences assessed by those rows,
 watchedScope: PathSliceId[] | PathId[] | PatternScopeId[],
-payloadPins: { BCT.id, RegressionSetId, FreshnessWindowRef, PolicyPins, PlanePins, UTSRowId[] }
+payloadPins: { BCT.id, RegressionSetId, FreshnessWindowRef, affected RowEntryId[], watchedRelationRefs, PolicyPins?, PlanePins?, UTSRowId[]? }
 ⟩`
 
 `SentinelSet := ⟨ SentinelSetId, BridgeSentinel[] ⟩`
@@ -165,13 +159,12 @@ payloadPins: { BCT.id, RegressionSetId, FreshnessWindowRef, PolicyPins, PlanePin
 
 For each Tradition‑pair and each comparable construct row from **G.2**:
 
-1. **Materialise bridge artefacts.** Produce (or reuse) **F.9** `BridgeCard`s for the concrete `SenseCell`‑level alignments required by the row scope.
-   *Note.* “SenseCell anchoring” is a kit requirement: if a row is authored at a coarser token level, the SenseCell anchors must be explicitly cited (F.17 identity discipline).
+1. **Recover the correspondence being calibrated.** For an F.9 row, resolve the exact F.17 sense cells and profile, then produce or reuse its BridgeCard. A kind-channel row cites the C.3.3 kind endpoints and assertion; a plane row cites its own relation and rule. A coarser source label must be resolved to those actual endpoints before calibration.
 2. **Record row scope and losses.** Author a `RowScopeId` and record loss notes as first‑class citations (e.g., `LossNoteRef[]`), not as informal footnotes.
-   Also record `RowCL_min` (and `RowCL_k_min?`, `RowCL_plane_min?` when applicable) and cite `WaiverRef[]` if any row is intentionally kept at `=1` for guarded-only reuse.
-3. **Plane pins (no hidden plane mixing).** Record source `ReferencePlane` pins and target `ReferencePlane` pins and the relevant policy id pins for plane routing (ids only; do not duplicate policy tables).
-4. **Policy pins for penalty routing.** Record the policy id pins needed to audit penalty routing (ids only). Penalty semantics cite `CC‑GCORE‑PEN‑1` through `G.Core`; G.7’s responsibility is to make the pins explicit and published.
-5. **Row bottleneck discipline.** When a row aggregates multiple bridge cells, row summarisation uses this kit's bottleneck semantics and carries a counterexample citation whenever any cell is loss‑noted.
+   Record the calibration basis and any meaningful channel summary under §4.2.1. If a receiving use is named, cite its separate suitability/classification and reliance results. Cite a waiver only for its exact authorized policy exception; it does not repair missing evidence.
+3. **Resolve any plane claim.** If the row or receiving use consumes a plane relation, record its exact reference, source and target planes, governing rule and any plane policy actually applied. A kind-only or sense-only row creates no plane claim.
+4. **Expose policies actually used.** Record policy and model references for a named threshold, exception, numerical loss or assurance calculation. Calibration without such a receiving use needs no invented Φ/Ψ/Φ_plane policy. Applied penalties retain G.Core's R/R_eff-only rule.
+5. **Summarize only a common calibration basis.** Use the minimum only under §4.2.1's shared-scale and shared-question conditions. Retain each actual loss and counterexample; otherwise report the separate cell results or the unresolved basis.
 6. **Regression and sentinel wiring.** Create/update the `RegressionSet` and `SentinelSet`. Any calibration change that can affect downstream audit (CL/CL^k/plane pins, relevant policy ids, edition pins for involved telemetry surfaces, freshness window) emits typed RSCR triggers (canonical ids; scope + payload pins).
    If the regression harness is run, record a citable `RegressionRunRef` (or equivalent run/delta reference) and attach it to the relevant ledger entries (pin‑first; no narrative-only deltas).
 
@@ -179,20 +172,20 @@ For each Tradition‑pair and each comparable construct row from **G.2**:
 
 A conformant G.7 publication:
 
-* publishes UTS‑citable identifiers for `BridgeCard`s and any GateCrossing/crossing rows that rely on them,
-* ensures crossing bundles are checkable via **E.18/A.21** harnesses (lexical SD, lane purity, required pin presence),
+* publishes the exact correspondence references for each row, including BridgeCards for F.9 rows and UTS identifiers when the naming/publication rule requires them,
+* makes an independently governed E.18 crossing or A.21 gate checkable through its applicable harness, preserving lexical, lane and required-pin constraints,
 * emits RSCR triggers using canonical `RSCRTriggerKindId` and attaches the minimum payload pins listed in §4.1.
-* ensures evidence-facing citations are pin-complete: whenever bridge calibration is cited in SCR/Evidence surfaces, the citation MUST include `{BCT.id, RegressionSetId}` and the active policy id pins `{Φ(CL), Ψ(CL^k)?, Φ_plane?}` (ids only; representation is governed by `G.6`/SCR).
+* keeps SCR/Evidence citations complete for their actual use: include the row locator, exact correspondence basis and `{BCT.id, RegressionSetId}`, plus the policy/model pins actually consumed by the reliance or assurance claim. Representation follows G.6/SCR when that surface is used.
 
 #### G.7:4.5 - Worked mini‑examples (informative; post‑2015; row scopes + loss notes)
 
-> These are **working models**, not equivalence claims. They illustrate how row scope + loss notes constrain safe reuse.
+> These worked rows use illustrative calibration values and source scopes. Actual calibration needs its stated evidence. Each receiving use still has a separate rule and loss tolerance.
 
 1. **Preference‑learning objective (Method; RowScope = “training‑objective‑intent”).**
    *Cells:* `RLHF@Context‑A` ↔ `DPO@Context‑B` ↔ `IPO@Context‑C`
-   *RowCL_min:* 2 (guarded)
+   *RowCL_min:* 2 (calibrated bounded support in this worked case)
    *Loss notes:* different inductive biases (reward model vs direct preference likelihood; sensitivity to preference noise model; implicit regularisation forms).
-   *Use:* cross‑Tradition *didactic alignment* and eligibility hints; thresholds/acceptance remain governed by CAL.
+   *Proposed use:* a didactic comparison of objective intent. Its separate claim must limit the comparison to that intent and retain the listed differences; method eligibility and acceptance require their own rule.
 
 2. **Robustness evaluation (Measurement; RowScope = “metric‑family‑intent”).**
    *Cells:* `Accuracy@IID` ↔ `Robustness@ShiftBench` (e.g., distribution‑shift benchmarks common in post‑2019 practice)
@@ -203,12 +196,29 @@ A conformant G.7 publication:
    *Cells:* `MAP‑Elites grid indices` ↔ `CVT‑MAP‑Elites centroids` ↔ `CMA‑ME archive`
    *RowCL_min:* 2
    *Loss notes:* discretisation vs centroidal tessellation; archive pressure differs; drift occurs if `DistanceDef` or insertion policy changes.
-   *Use:* admissible cross-reporting of QD telemetry when edition pins are explicit.
+   *Proposed use:* cross-reporting only the named descriptor-map relation under explicit edition pins and an affirmative bounded-use claim with passing reliance. Edition pins alone do not make the telemetry comparable.
 
 4. **Open‑ended transfer semantics (Method; RowScope = “transfer‑rule intent”).**
    *Cells:* `POET‑class transfer rule` ↔ `Enhanced‑POET‑class transfer rule` ↔ “modern open‑ended transfer variants”
    *RowCL_min:* 2
    *Loss notes:* environment validity region differs; transfer timing and selection pressures differ; pinning transfer rule editions is mandatory for audit.
+
+**Paired receiving case — Vehicle to TransportUnit.** Use C.3.3 §9.1's exact source and target kind declarations, pinned scheme editions, `registryAPI v1.4` and selected time window. In row `VehicleTransportOrder`, record the obtaining KindBridge, preserved PassengerCar/Vehicle subkind order and collapsed EV distinction, with the reported `CL^k=2` and battery-health loss. This is the kind channel; an F.9 sense Bridge is added only if the receiving claim separately relies on one.
+
+For a G.5 shortlist of independently admitted Methods for a transport review, suppose the applicability criterion uses only the preserved transport/passenger order and explicitly ignores propulsion. The row can support that narrow applicability comparison after receiving admissibility, fresh target classification of the subject vehicles and the matching evidence-reliance result pass. The Methods' other eligibility criteria remain applicable. For a battery-health review whose Method-selection rule needs EV/battery information, the same correspondence fails that use because the required distinction is lost. A favourable CL value or a waiver cannot supply the battery premise. The correspondence and calibration can stay unchanged while these two use conclusions differ. Use these two questions as a paired RegressionSet probe when this row is reused: recover the transport-order premise for the first and expose the missing battery premise for the second. Recheck the affected use after its criterion or the row's preservation/loss basis changes.
+
+In C.3.3 §9.3's AdultPatient/AdultPerson_Y case, the age-boundary loss and `CL^k=1` remain evidence about the kind correspondence. An authorized policy exception does not supply an unresolved date of birth; the receiving classification stays unknown.
+
+**Choose pins for the actual use.** These cases apply the same conditions to a compact result and to the fuller kit:
+
+| Use | What the result must retain |
+| --- | --- |
+| VehicleTransportOrder kind-only calibration | its C.3.3 kind endpoints, assertion, CL^k calibration basis, battery-health loss, row/freshness and kit references; a live sentinel can use PatternScopeId. No sense Bridge, plane relation or loss policy follows from this row. |
+| F.9 sense-only calibration | exact F.17 sense endpoints, obtaining Bridge, BridgeCard and any reported CL basis; add neither a kind correspondence nor a plane claim without its own basis. |
+| Plane-only calibration | the independently governed plane relation, planes and calibration rule/basis; add a numerical loss policy only if that receiving model is used. Plane change alone supplies no F.9 Bridge. |
+| A G.2 harvest with no crossing, or a suite contract reused on another entity of the same kind | ordinary source/edition and applicability information; no crossing pin set is instantiated merely from the harvest, entity change or a new declaration edition. |
+| A use relying on both a sense and kind correspondence | both independently established relations and their receiving conditions; neither channel replaces the other. |
+| A safety-assurance comparison using an F.9 calibration, a defined plane-loss model and an A.21 gate | the exact Bridge/Card and row, BCT/regression/freshness evidence, actual plane relation and model/policy pins, matching A.10/B.3 reliance and assurance grounds, and every required gate anchor. A required missing pin leaves that use unresolved; favourable calibration alone grants no permission. |
 
 #### G.7:4.6 - Extensions (pattern‑scoped; non‑core)
 
@@ -242,11 +252,11 @@ A conformant G.7 publication:
 * **RequiredPins/EditionPins/PolicyPins (minimum; conditional on use):**
 
   * `AlignmentDensityMethodRef.edition?`
-  * `DeclaredUnitsRef?` *(units declaration style per governing definition; e.g., “bridges_per_100_DHC_SenseCells”)*
+  * `DeclaredUnitsRef?` *(the C.21 Unit for the reported quantity; AlignmentDensity uses `obtaining_relations/100_compared_cells`)*
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.TelemetryDelta, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EditionPinChange}`
 * **Notes (wiring‑only):**
   * G.7 stores the *counts and declared units* as a surface; C.21 governs the meaning and legality constraints.
-  * When reporting AlignmentDensity, the counted bridge set is typically restricted to `CL ≥ 2` (treat `CL=3` as “free substitution”, `CL=2` as “guarded” for reporting); conformance is enforced by `CC‑G7‑DHC‑Units‑1` while semantics remain governed by `C.21`.
+  * When reporting AlignmentDensity, follow C.21's declared F.17 cell set and count only exact obtaining directed F.9 relations. Preserve each counted relation's orientation and admitted-use qualifier, and keep observed loss in its evidence account. CL values neither change that count definition nor grant substitution; `CC‑G7‑DHC‑Units‑1` checks the report's units and cited method.
 
 **GPatternExtension: QDParityPins**
 
@@ -326,31 +336,31 @@ Scope: Universal for the bridge calibration kit; any method‑family or discipli
 | ConformanceId             | Requirement                                                                                                                                                                                                                                                                               | Purpose                                                                        |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | **CC‑G7‑CoreRef**         | `G.7` is conformant only if it satisfies the effective `G.Core` obligations declared by the `GCoreLinkageManifest` in **§4.1** (after nil‑elision and expansion of profile/set/pinset ids), including any explicit deltas listed there. | Make universal invariants one governing definition and enforce citation‑based reuse.       |
-| **CC‑G7‑BCT‑1**           | For any active `TradPairId` using this calibration kit for cross‑Tradition reuse, a `BridgeCalibrationTable (BCT)` **MUST** exist, declare a `FreshnessWindowRef`, and provide `RowEntry` records that cite, at minimum: `RowEntryId`, `ComparableConstructId`, `RowScopeId`, `BridgeCardId[]`, `RowCL_min`, `PlanePins {ReferencePlane(src), ReferencePlane(tgt)}`, `PolicyPins {Φ(CL)}` (and `Ψ(CL^k)?`, `Φ_plane?` when applicable), plus `{RegressionSetId, SentinelSetId}`. | Ensure the kit exists as an auditable object rather than a prose matrix.       |
-| **CC‑G7‑BridgeCard‑1**    | Any bridge published by G.7 **MUST** be consumable as an **F.9** `BridgeCard` and **MUST** be SenseCell‑anchored (directly or via explicit SenseCell anchor refs).                                                                                                                        | Prevent “Context‑only” or ambiguous bridges.                                   |
-| **CC‑G7‑UTS‑1**           | G.7 outputs **MUST** mint/publish UTS‑citable ids (NameCards/twin labels as applicable) for (a) each BridgeCard (or its NameCard) and (b) each GateCrossing/crossing row that makes bridge use checkable; and **MUST** expose the resulting `UTSRowId[]` in the BCT/Ledger/crossing bundles. *(UTS discipline is delegated to `CC‑GCORE‑UTS‑1`.)* | Make bridge calibration externally citable and checkable.                      |
+| **CC‑G7‑BCT‑1** | An active calibration kit has a BCT with its freshness basis, exact row scope, relation/card references, calibration basis and applicable evidence, regression and sentinel references. Channel summaries and policy/plane pins are present only under their declared calibration or receiving-use conditions. | Make the calibration and its use independently recoverable. |
+| **CC‑G7‑BridgeCard‑1** | An F.9 BridgeCard resolves its exact F.17 endpoint senses and relation profile. A kind-channel assertion follows C.3.3 and cites its exact kind endpoints; a plane claim cites its own governor. Keep the channels distinct. | Preserve the subject of each correspondence. |
+| **CC‑G7‑UTS‑1** | When G.7 mints or publishes a public identifier, apply CC-GCORE-UTS-1 and expose the resulting UTS rows in the consuming BCT/Ledger or crossing bundle. Include a BridgeCard or GateCrossing row only when that actual object is used; a kind-only calibration creates no F.9 BridgeCard. | Make public names citable without inventing relations. |
 | **CC‑G7‑RowScope‑1**      | Every BCT row **MUST** declare its `RowScopeId` (which correspondence or difference is being calibrated), and any loss notes **MUST** be recorded as citable artefacts (refs/ids), not only narrative text.                                                                                                 | Keep reuse honest and locally bounded.                                         |
-| **CC‑G7‑CLRegime‑1**      | Every BCT row **MUST** record `RowCL_min` (and `RowCL_k_min?`, `RowCL_plane_min?` where applicable) and apply the admissibility regime from §4.2.1: `≥2` admissible; `=1` only with cited `WaiverRef[]`; `=0` forbidden for reuse. The honesty rule must be satisfied: ≥1 counterexample for `≤2`, and an explicit stated‑absence disclosure for `=3` when no counterexample is cited. | Make CL/waiver/plane regimes explicit and auditable at kit level.              |
-| **CC‑G7‑SCRLinkage‑1**    | Whenever bridge calibration is cited in SCR/Evidence surfaces, the citation **MUST** include `{BridgeCardId[]}` (or `UTSRowId[]` for the bridge artefacts), an explicit row locator (`RowEntryId` or equivalent), `{BCT.id, RegressionSetId}`, and the active policy id pins `{Φ(CL), Ψ(CL^k)?, Φ_plane?}` (ids only; representation governed elsewhere). | Prevent “pins exist but are not visible/auditable” failure mode.               |
+| **CC‑G7‑CLRegime‑1** | Every reported CL summary satisfies §4.2.1's calibration meaning and aggregation conditions. Actual losses, counterexamples and required search/absence disclosures remain citable. The receiving use has its own rule, tolerance and reliance; a threshold or waiver cites its policy use, justification, authority and additional premises. | Calibration evidence supplies no automatic permission or receiving classification. |
+| **CC‑G7‑SCRLinkage‑1** | A calibration cited in SCR/Evidence surfaces MUST identify its exact sense, kind or plane correspondence, row locator and `{BCT.id, RegressionSetId}`. Add BridgeCard/UTS anchors for the actual F.9/public-name use and policy/model pins for the actual reliance, numerical loss or assurance calculation. | Preserve the evidence consumed by the claim without fabricating another channel. |
 | **CC‑G7‑SoSLOG‑Pins‑1**   | When `G.7:Ext.SoSLogClauses` is in use, G.7 outputs **MUST** expose the cited SoS‑LOG rule ids and the relevant `PathId/PathSliceId` evidence citations; any change in those pins **MUST** be RSCR‑relevant per `CC‑GCORE‑TRIG‑1…TRIG‑4`.                                               | Keep cross‑Tradition reuse explainable without embedding C.23 semantics.        |
 | **CC‑G7‑Acceptance‑1**    | When `G.7:Ext.AcceptanceHooks` is in use, G.7 outputs **MUST** expose the Acceptance clause ids/policy ids used as gates; thresholds/unknown handling remain governed by Acceptance; any change **MUST** be RSCR‑relevant per `CC‑GCORE‑TRIG‑1…TRIG‑4`.                                           | Keep thresholds and unknowns out of bridges while preserving auditability.     |
-| **CC‑G7‑RowBottleneck‑1** | If a comparable construct row aggregates multiple bridge cells, row summaries (e.g., `RowCL_min`) **MUST** follow this kit's bottleneck discipline and cite a counterexample whenever a cell carries a loss note.                                                                              | Forbid “CL averaging” and enforce loss‑aware summaries.                        |
+| **CC‑G7‑RowBottleneck‑1** | A minimum summarizes only a non-empty cell set sharing the declared ordinal scale and calibration question. Keep the constituent evidence and losses; otherwise report separate results or the gap. | Avoid averaging ordinal evidence or treating its minimum as a use decision. |
 | **CC‑G7‑PolicyPins‑1**    | G.7 outputs **MUST** publish the *policy id pins* required to audit penalty routing and plane effects (ids only), as required by `CC‑GCORE‑LINK‑1/2` and `CC‑GCORE‑PEN‑1`. G.7 MUST NOT duplicate policy tables or redefine penalty semantics.                                           | Keep penalty routing auditable while preserving single‑governing-pattern policy semantics. |
-| **CC‑G7‑GateCrossing‑1**  | Any published crossing rows that rely on bridges **MUST** be checkable via GateCrossing/CrossingBundle harnesses (E.18/A.21): required pins are present; lexical constraints and lane purity checks are runnable.                                                                        | Make crossings checkable, not narrative.                                       |
+| **CC‑G7‑GateCrossing‑1** | An independently governed E.18 flow crossing or A.21 gate that consumes calibration MUST retain its required harness, pins, lexical constraints and lane checks. A calibration relation alone is not that flow crossing or gate. | Make actual crossings and gates checkable. |
 | **CC‑G7‑Sentinels‑1**     | G.7 **MUST** register `BridgeSentinel` entries for bridges used by live scopes and **MUST** emit typed RSCR triggers (canonical `RSCRTriggerKindId`; see `CC‑GCORE‑TRIG‑1…TRIG‑4`) on calibration‑relevant edits, scoped to the watched `PathSliceId[]` or `PatternScopeId[]`, with the minimum payload pins from §4.1. | Enable targeted refresh rather than pack‑wide reruns.                          |
 | **CC‑G7‑QD‑Pins‑1**       | When `G.7:Ext.QDParityPins` is in use, G.7 outputs **MUST** include `{DescriptorMapRef.edition, DistanceDefRef.edition, InsertionPolicyRef}` and treat any change to those pins as RSCR‑relevant per `CC‑GCORE‑TRIG‑1…TRIG‑4`.                                                          | Prevent silent QD telemetry drift.                                             |
-| **CC‑G7‑DHC‑Units‑1**     | When AlignmentDensity (or related DHC accounts) are reported, G.7 outputs **MUST** (a) restrict the counted bridges to those in rows with `RowCL_min ≥ 2` (treat `CL=3` as “free substitution”, `CL=2` as “guarded” for reporting), (b) include declared units, and (c) cite the relevant DHC method semantics (C.21). G.7 MUST NOT invent arithmetic over ordinal/illegal surfaces. | Keep dashboards and discipline‑health metrics lawful and interpretable.        |
+| **CC‑G7‑DHC‑Units‑1** | When AlignmentDensity is reported, G.7 outputs **MUST** count the exact obtaining directed F.9 relations in the declared F.17 cell set under C.21, include the declared units, and cite the active DHC method and replay basis. Related DHC accounts use their own exact C.21 definitions. CL labels grant no substitution and do not redefine the counted relation set; G.7 MUST NOT invent arithmetic over ordinal or otherwise inadmissible surfaces. | Keep dashboards and discipline-health readings faithful to their measurement definitions and bounded-use claims. |
 
 ### G.7:8 - Common Anti-Patterns and How to Avoid Them
 
 * **Bridge‑by‑prose (“they have the same sense”).**
   **Avoid:** publish BCT rows + BridgeCards + UTS rows; require SenseCell anchoring and row scopes.
 * **Scope or sense relation used as a kind bridge.**
-  **Avoid:** do not substitute a scope or **F.9** sense relation for a **C.3.3** `KindBridge`; use `RowScopeId` to state which channel is claimed, and require `CL^k` + `Ψ(CL^k)` pins when a kind‑channel bridge is invoked (do not “upgrade” a scope‑channel bridge into kind substitution).
+  **Avoid:** state the channel in `RowScopeId` and use its direct governor. A C.3.3 correspondence needs its kind endpoints and separate receiving classification; cite CL^k and any loss policy only when that calibration or reliance account uses them.
 * **Plane blindness (“concept = world”).**
   **Avoid:** record plane pins and policy id pins; keep plane effects auditable and separable from CL/CL^k semantics.
 * **CL smoothing / averaging.**
-  **Avoid:** enforce row bottleneck summaries and counterexample citations for loss‑noted cells.
+  **Avoid:** establish the common scale and calibration question before taking a minimum; retain actual counterexamples and losses, and keep the receiving decision separate.
 * **Pack‑wide refresh on a local bridge edit.**
   **Avoid:** register sentinels scoped to `PathSliceId` and emit typed RSCR triggers with minimal payload pins.
 * **QD metric drift by unpinned artefacts.**
@@ -368,12 +378,17 @@ Scope: Universal for the bridge calibration kit; any method‑family or discipli
 * **Why BCT + RegressionSet + SentinelSet?** Regression tests make calibration drift detectable; sentinels identify the downstream scopes to refresh.
 * **Why row scopes?** Because “comparable” is not one thing; scope must be explicit to avoid accidental substitution.
 
-### G.7:11 - SoTA‑Echoing (post‑2015, for orientation; non‑normative)
+### G.7:11 - SoTA-Echoing — calibrate a correspondence for its receiving use
 
-* **Edition‑aware evaluation and dataset shift practice.** Post‑2018 evaluation culture (robustness and shift benchmarks, protocol pinning, reproducibility checklists) motivates treating protocol versions and “what changed” as first‑class pins rather than prose.
-* **Preference‑based optimisation families.** Modern preference‑learning lines (late‑2010s → 2020s) show how neighbouring objectives can share intent but diverge in assumptions—an archetypal case for row scope + loss notes.
-* **Quality‑Diversity and differentiable QD.** MAP‑Elites successors (CVT variants, CMA‑ME line, differentiable QD ecosystems) emphasise archive/descriptor/distance artefacts whose editions must be pinned for comparability.
-* **Open‑ended evolution and transfer‑rule portfolios.** POET‑class work motivates explicit transfer rule editions and environment validity regions as pins when bridges are used for cross‑tradition reporting.
+**Practice question.** When a correspondence has a favourable calibration, what must an engineer check before reusing it for a different task? The selected best-known line for this question keeps the exact relation, its justification and source versions recoverable, then tests the receiving task's required distinctions. The serious alternative is to select an alignment by its reference-benchmark score and carry that favourable score into downstream use.
+
+[SSSOM 1.0's mapping model](https://mapping-commons.github.io/sssom/1.0/spec-model/) supplies the first line's concrete separation of endpoints, relation predicate and justification. Its [mapping FAQ](https://mapping-commons.github.io/sssom/1.0/faq/) distinguishes relation precision from confidence and explains why source versions and justification matter. **Adopt** that separation for the BCT row's exact correspondence and calibration basis in §4.2. These sources address exchangeable ontology mappings; they do not establish an F.9 Bridge, a C.3.3 classification or permission for an FPF receiving use.
+
+The [OAEI 2025 Conference evaluation](https://oaei.ontologymatching.org/2025/results/conference/eval.html) is the serious benchmark comparator: its precision/recall measures assess generated correspondences against stated reference alignments and populations. That is useful for choosing a matcher on that question. **Reject** carrying its aggregate success, or one CL value, as a substitute for a different task's premises. This is a limit of the inference, not a claim that OAEI promises such transfer.
+
+**Adapt** the mapping-and-justification line in §4.2.1 and procedure steps 2/6: retain direction, scope and losses, and use a small regression pair whose required distinction changes. In §4.5, VehicleTransportOrder can retain passenger/transport order while losing battery information. The same calibrated relation can therefore support the stated transport comparison and fail the battery-health question. Keeping that distinction prevents a concrete erroneous use that a single favourable summary cannot detect.
+
+At comparable effort, both alternatives start with the same relation row and existing calibration evidence. The selected line adds one named use condition and the smallest counterexample or regression pair that can change the answer. That is extra effort deliberately accepted for reuse across task boundaries; ordinary one-off correspondence handling remains with F.9 when a calibration kit adds no value. SSSOM and OAEI provide the compared technical approaches, not empirical validation of this kit. Reopen when a new receiver needs a distinction outside the row's stated preservation/loss basis, or when a cheaper rule can distinguish those same allowed and failed uses with equivalent support.
 
 ### G.7:12 - Relations
 

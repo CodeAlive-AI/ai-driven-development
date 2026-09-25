@@ -170,7 +170,7 @@ CulturalEvolutionInterventionCard@Project:
   P2WCarryThroughRef?:
   WorkPlanRef?:
   InterventionSystemRoleKindRef?: U.KindRef resolving to one exact local system-role kind
-  InterventionSystemRoleClassificationJudgmentRef?: U.RelationRef
+  InterventionSystemRoleClassificationJudgmentRef?: reference to the exact C.3.2 classification judgment
   InterventionAssignmentSpeciesRef?: U.RelationKindRef constrained under U.SystemRoleAssignment
   InterventionAssignmentOccurrenceRef?: U.RelationRef constrained to U.SystemRoleAssignment
   PerformedInterventionWorkRef?: U.EntityRef constrained to U.Work

@@ -1,4 +1,4 @@
-## A.11.OP - Decision-Relevant Least Action and Operational Parsimony
+## A.11.OP - Decision-Relevant Least Action and Operational Parsimony: Test a Proposed Requirement
 
 > **Type:** Part A pragmatic principle pattern
 > **Class:** `Prag`

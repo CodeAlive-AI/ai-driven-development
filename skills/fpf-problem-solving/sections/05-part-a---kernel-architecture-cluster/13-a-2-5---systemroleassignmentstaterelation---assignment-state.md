@@ -1,4 +1,4 @@
-## A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition and Work Admission
+## A.2.5 - SystemRoleAssignmentStateRelation - Assignment-State Recognition for Work Admission
 
 > **Type:** Definitional (D)
 > **Status:** Stable

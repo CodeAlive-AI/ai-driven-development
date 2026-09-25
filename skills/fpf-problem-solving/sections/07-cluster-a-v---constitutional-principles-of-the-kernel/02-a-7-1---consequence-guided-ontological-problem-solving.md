@@ -79,7 +79,7 @@ The method result uses one of these closed local dispositions in its result epis
 
 A working account is sufficient when admitted direct kinds and relations determine the next move and plausible constructional alternatives do not change the result or guarantee. Stop without declaring the alternatives false. Do not create an occurrence ledger, evidence apparatus, publication package, or ontology record whose distinctions cannot change the use.
 
-Create a durable ontology result only when reuse, dispute, high consequence, automation, or cross-pattern change makes persistence valuable. If the work exposes a missing distinction that must persist, submit the candidate for E.24 admission and return only after a positive admission result.
+Create a durable ontology result only when reuse, dispute, high consequence, automation, or cross-pattern change makes persistence valuable. If the work exposes a missing distinction that must persist, submit the candidate for E.24 admission. A return that relies on the newly admitted distinction requires a positive admission result; otherwise return the exact missing governor or blocked claim without presuming admission.
 
 #### A.7.1:4.6 - Reopen and teach without premature structure admission
 
@@ -89,7 +89,7 @@ A short domain, wording, typed-account, or constructive-ground presentation may 
 
 ### A.7.1:5 - Archetypal Grounding
 
-**Support occurrence repair.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The direct relation identity rule defeats that reading before a second ontology is written. The A.7.1 analysis method is already selected, while the current support-relation pattern constrains the disputed claim; neither the bearing/shaft subject nor that subject pattern is an apparatus candidate, so the work creates no option set. Ontology-analysis work uses `A7CP-01` and `A7CP-10`, recovers two support occurrences, repairs the warranty and incident-attribution claim, and returns it to maintenance. No new relation kind or U-kind is created.
+**Support occurrence inquiry.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The A.7.1 analysis method is already selected; the bearing/shaft subject and the applicable subject predicate are inputs and constraints, so the work creates no option set. Recover the exact load-bearing relation and its obtaining and occurrence-identity rules before counting occurrences. If an admitted subject rule makes removal end one occurrence and reinstallation begin another, apply that rule and the current facts to repair the warranty and incident-attribution claim. If the receiving use needs that distinction but no applicable rule defines it, return the missing governor and blocked claim. Use `A7CP-01` and `A7CP-10` only when their claims are load-bearing in this reasoning; neither compact claim defines the subject relation.
 
 **Missing telemetry non-use.** A team cannot determine pump state because telemetry was never collected. State kinds, evidence relations, and candidate actions are already clear. The result is `returnToDirectOwner` for measurement and evidence work with the blocked state claim; no premise-use occurrence or ontology artifact is minted.
 

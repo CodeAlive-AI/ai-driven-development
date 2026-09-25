@@ -1,7 +1,7 @@
 ## E.16 - RoC‑Autonomy Budget & Enforcement
 
 **Intent.** Make an autonomy claim testable and enforceable through a published **AutonomyBudgetDecl**, guarded enactment, override SpeechActs with separation of duties, and a Work-anchored **AutonomyLedger**.
-**Rule (summary).** If a claim calls a local system-role kind, Method, or Service autonomous, read it as a claim about Work a System may perform without continuous human direction. Authors **MUST**: (i) publish an `AutonomyBudgetDecl` that names the claim, working situation, scope, window, policy, budget, and override rule; (ii) say whether it is prospective or bound to actual enactment; (iii) gate Method steps with `requiresAutonomyBudget`; (iv) write an `AutonomyLedgerEntry` for admitted Work; (v) block on depletion until a `ResumeAutonomy` SpeechAct passes the guards, the declared separation-of-duties check, and the independent authority check; and (vi) surface the autonomy fields in UTS rows.
+**Rule (summary).** If a claim calls a local system-role kind, Method, or Service autonomous, read it as a claim about Work a System may perform without continuous human direction. Authors **MUST**: (i) publish an `AutonomyBudgetDecl` that names the claim, working situation, scope, window, policy, budget, and override rule; (ii) say whether it is unscheduled/prospective, bound to a proposed action, or bound to actual enactment; (iii) gate Method steps with `requiresAutonomyBudget`; (iv) write an `AutonomyLedgerEntry` for admitted Work; (v) block on depletion until a `ResumeAutonomy` SpeechAct passes the guards, the declared separation-of-duties check, and the independent authority check; and (vi) surface the autonomy fields in UTS rows.
 
 **Builds on:** A.2 / A.2.1 / A.2.5 / A.2.7 / A.15 / A.21; B.3; C.16; E.8; E.10; E.18; F.4; F.6; F.8; F.15; F.17.
 **Coordinates with:** A.13 (Agential Role) and A.17/A.18/A.19/C.16/A.10 for current agency characterization, measurement, and evidence; planned C.9 (Agency Characteristic Profile) only as future consolidation; C.24 (Agent-Tools-CAL) where applicable; G.4, G.5, G.8, G.9, and G.10 (method authoring, selection, and shipping).
@@ -22,13 +22,13 @@ A System that performs Work without continuous human direction must stay within 
 | Force                          | Tension                                                                  |
 | ------------------------------ | ------------------------------------------------------------------------ |
 | **Creativity vs Safety**       | Exploration autonomy vs hard constraints and override duties             |
-| **Locality vs Comparability**  | A budget stays bound to its claim, working situation, scope, window, policy, and override rule; actual holder, assignment, Work, and authority references appear only when the budget is enactment-bound. |
+| **Locality vs Comparability**  | A budget stays bound to its claim, working situation, scope, window, policy, and override rule; actual holders, assignments and authority enter a scheduled action check; a Work reference appears only when performance independently qualifies under A.15.1. |
 | **Simplicity vs Auditability** | Lightweight authoring vs ledger‑grade evidence                           |
 | **Autonomy vs SoD**            | Helpful self‑action vs separation‑of‑duties and human‑in‑the‑loop points |
 
 #### E.16:3.1 - Bias-Annotation
 
-**Lenses tested:** `Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`. **Scope:** Universal when wording about a local system-role kind, Method, or Service says that a System may perform Work involving unsupervised decision or actuation, and that Work is admitted through an `AutonomyBudgetDecl` plus Green-Gate. It is **not** aimed at purely assistive suggestion-only tools where a human confirms every action at the point of execution.
+**Bias considerations:** `Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`. **Scope:** Universal when wording about a local system-role kind, Method, or Service says that a System may perform Work involving unsupervised decision or actuation, and that Work is admitted through an `AutonomyBudgetDecl` plus Green-Gate. It is **not** aimed at purely assistive suggestion-only tools where a human confirms every action at the point of execution.
 
 * **Gov.** Bias toward enforceable oversight (hard gates, SoD, canonical override SpeechActs). Mitigation: exploration autonomy is still allowed, but only inside an explicit budget and time window.
 * **Arch.** Bias toward gate‑and‑ledger structure (Green‑Gate + Work‑anchored `AutonomyLedger`). Mitigation: `telemetrySpecRef` can scope what is emitted when full deltas are unnecessary.
@@ -41,12 +41,12 @@ A System that performs Work without continuous human direction must stay within 
 This RoC **applies whenever** wording about a local system-role kind, Method, or Service claims that a System may perform Work involving unsupervised decision or actuation.
 
 **E.16-S1 (Autonomy Budget - mandatory).**
-Any autonomy claim **MUST** publish a named, versioned **AutonomyBudgetDecl**. A prospective declaration fixes what is being claimed and how later Work will be bounded; it does not pretend that a performer, assignment, Work item, or authority occurrence already exists. An enactment-bound declaration supplies those actual references before the Green-Gate admits Work.
+Any autonomy claim **MUST** publish a named, versioned **AutonomyBudgetDecl**. A prospective declaration fixes what is being claimed and how later Work will be bounded; it does not pretend that a performer, assignment, Work item, or authority occurrence already exists. An action-bound declaration supplies the proposed-action and actual allocation references for A.21 permission to start. An enactment-bound declaration additionally refers to already admitted actual Work.
 
 ```
 AutonomyBudgetDecl {
   id, version
-  bindingState: prospective | enactment-bound
+  bindingState: prospective | action-bound | enactment-bound
   autonomyClaimRef: U.EpistemeRef
   budgetConsumerSystemRoleKindRef: U.KindRef        // exact local kind required for the Work
   workingSituation: plain statement of the intended Work and its admission condition
@@ -68,6 +68,16 @@ AutonomyBudgetDecl {
     authorityRelationOccurrenceRef?: U.EntityRef      // independently obtaining direct relation
     separationOfDutiesRelationRef: U.RelationRef      // exact A.2.7 incompatibility relation
   }
+  actionBinding?: {
+    workEntryClaimRef: U.EpistemeRef                  // prospective A.21 decision subject
+    boundedProposedActionRef: governed action or WorkPlan/action locator
+    proposedActionIdentityRuleRef: exact local rule, including rescheduling/continuation
+    intendedWindow: bounded intended execution/allocation window
+    budgetConsumerHolderSystemRef: U.EntityRef constrained to U.System
+    budgetConsumerSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
+    overrideAuthorityHolderSystemRef: U.EntityRef constrained to U.System
+    overrideAuthoritySystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
+  }
   enactmentBinding?: {
     budgetConsumerHolderSystemRef: U.EntityRef constrained to U.System
     budgetConsumerSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
@@ -80,26 +90,24 @@ AutonomyBudgetDecl {
 }
 ```
 
-In `prospective` state, `enactmentBinding` and `authorityRelationOccurrenceRef` may be absent. Before actual Work is admitted, publish or select an `enactment-bound` edition with every field in `enactmentBinding` and a current authority-relation occurrence. If the override authority rotates, refresh that binding before relying on it. Do not create an assignment or authority occurrence merely to fill the declaration.
+An unscheduled `prospective` budget may omit actionBinding, enactmentBinding, nonexistent assignments and authority occurrences. Permission to start a scheduled action uses `action-bound` with its exact proposed action, work-entry claim, real holders/assignments and current independent authority. Use A.2.7's separately declared prospective incompatibility species for that allocation check. `enactment-bound` adds actual Work only after A.15.1 admission, retaining the applicable action/permission match. A request, schedule or pass result creates no Work. If authority rotates or a permission-relevant action/window changes, recheck before relying on the permission.
 
 The holder Systems, local kinds, any separate System-classification judgments, assignment occurrences, Work, budget declaration, later override Work, authority relation, and separation-of-duties relation are different objects. A kind reference neither classifies a System nor creates an assignment; an assignment alone grants no authority.
 
 **E.16‑S1.A (Scout / probe / commit partition for bounded specialization).**
 When an autonomy-bearing method uses bounded specialization scouting, the budget declaration **MUST** keep scout budget, probe budget, and commit checkpoint as distinct control surfaces rather than collapsing them into one undifferentiated burn envelope. A successful probe does not by itself authorize a committed route, wider burn, or scope widening. Leaving probe state requires one explicit checkpoint decision through the declared guard or override path, with budget burn and residual budget recorded in the `AutonomyLedger`. `E.16` governs this budget partition plus guard and ledger enforcement; it does not replace the dyadic move of `A.15` or the `CheckpointReturn` plan semantics of `C.24`.
 **E.16-S2 (Guarded enactment - Green-Gate).**
-A **Method step** that requires autonomy **MUST** list the exact required local system-role kind and `requiresAutonomyBudget: AutonomyBudgetDecl.id`. A **Work** instance is admissible only when the declaration is `enactment-bound` and the gate has resolved the actual values rather than inferred them from labels:
+A Method step requiring autonomy **MUST** name the exact required local kind and `requiresAutonomyBudget: AutonomyBudgetDecl.id`. Green-Gate decides permission for the A.21 prospective work-entry claim and bounded action. It resolves:
 
-* `budgetConsumerHolderSystemRef` identifies the performer System, and `budgetConsumerSystemRoleAssignmentRef` resolves to the exact obtaining A.2.1 assignment whose holder and assigned kind match the declaration;
-* `budgetedWorkRef` is the Work now being admitted and matches the declared working situation, ClaimScope, and qualification window;
-* the assignment is in an enactable A.2.5 state; any separate classification judgment required by the gate is checked separately;
-* the named override-authority System and assignment are current, and the independent authority relation covers the override Work allowed by the protocol;
-* the budget ledger shows tokens and limits remaining for this declaration in the accounting window; and
-* every guard in `AdmissibilityConditionsId` passes.
+* the action's artifact/subject, operation, target and intended window under its exact identity/continuation rule;
+* the real prospective performer System and obtaining A.2.1 assignment whose holder/kind match the declaration, with the required A.2.5 state and any separate classification judgment;
+* the actual authorizer/override-authority System and assignment, the applicable prospective incompatibility result, and the independent authority covering this action;
+* applicable ClaimScope, qualification/accounting windows, remaining budget and every required guard.
 
-Failing any gate blocks enactment. Missing actual bindings remain missing; they are not repaired by turning a prospective declaration into fictional Work or assignment data.
+A known prohibited allocation blocks the action before performance. Keep every required check present with its source outcome, including missing information, `unknown` or `notRun`, then apply the exact A.21 profile mapping. A required missing or unrun result may map only to `degrade` or `block` under an explicit rule; an unknown result retains its uncertainty and the policy-qualified consequence. Any accepted uncertainty must name its subject, tolerance, permitted bounded action, consequence and recheck/expiry condition. Reserve `abstain` for a gate that actually makes no decision and states the remaining decision route. Aggregate only after these mappings are known; a pass permits only the bounded action under the checked conditions. Resubmitting the same action changes no action identity. Rescheduling reopens window-sensitive permission even when the action-continuation rule preserves a continuing action. Work is admitted separately from actual performance history under A.15.1.
 
 **E.16-S3 (Autonomy Ledger).**
-Every admitted Work item **MUST** have an **AutonomyLedgerEntry**:
+Every actual Work item admitted under this budget **MUST** have an **AutonomyLedgerEntry**:
 
 ```
 AutonomyLedgerEntry {
@@ -116,7 +124,7 @@ AutonomyLedgerEntry {
 }
 ```
 
-The ledger is evidence about the Work. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable. For reporting, use **Γ_work** (B.1.6) for the recorded resource values under the applicable accounting and overlap policy, and **Γ_time** (B.1.4) for the recovered temporal relations among the Work occurrences.
+Existing budget and performance records may supply this declaration and ledger when they retain the required meanings, identities and references; no duplicate accounting store is required. The ledger is evidence about actual Work. When prior permission is relied on, cite its exact result and the policy-supported match from this performance to the previously bounded action; a shared request label is insufficient. The Work, its performer System, its A.2.1 assignment, and the `performedUnderAssignment` attribution remain separately recoverable. For reporting, use **Γ_work** (B.1.6) for the recorded resource values under the applicable accounting and overlap policy, and **Γ_time** (B.1.4) for the recovered temporal relations among the Work occurrences.
 
 **E.16-S4 (Overrides - SpeechActs, authority, and separation of duties).**
 Every budget **MUST** reference an `overrideProtocolRef` that defines the available SpeechActs:
@@ -126,9 +134,9 @@ Every budget **MUST** reference an `overrideProtocolRef` that defines the availa
 * **NarrowAutonomy(budgetId, Δscope)** - apply stricter limits;
 * **Escalate(budgetId)** - hand over through the declared override-authority path.
 
-The declaration names the exact A.2.7 incompatibility relation between the consumer and override-authority local kinds. At each override, the checking System separately resolves the two exact A.2.1 assignment occurrences, their holder Systems, the target Work, and their overlap window, then applies that relation's declared predicate. The override fails when the actual pair satisfies the predicate's prohibited joint-allocation case. Different labels or merely different assignment IDs do not prove separation of duties.
+The declaration names the exact A.2.7 incompatibility species and its predicate. Before a proposed pause, resume, narrowing or escalation, identify that bounded override action, its real holder/assignment and independent authority. The target navigation Work may already exist; the proposed override is not yet override Work. Apply the actual-Work species when its condition concerns the existing target Work, or the separately declared prospective species when the policy concerns allocation to the proposed override action. Resolve both actual assignments, holders, relevant subject identity, windows and applicability; reject a known prohibited joint allocation. Different labels or assignment IDs alone do not establish separation.
 
-The same check independently confirms that the declared direct authority relation currently authorizes the override Work. Neither the local kind, assignment, policy name, nor incompatibility relation supplies that authority by itself. Every override SpeechAct is Work and receives an `overrideWork` ledger entry, including zero or negative budget deltas as the policy specifies.
+Check authority for the proposed override independently. Once the override is actually performed and admitted under A.15.1, record its `overrideWork` ledger entry and policy-specified zero, negative or other budget delta. Match that performance to prior permission by the policy's exact action rule. The proposal and its pass result remain distinct from that performed SpeechAct Work.
 
 **E.16-S5 (Depletion behavior).**
 When a budget depletes - no tokens remain, an envelope is exceeded, or a cap is breached:
@@ -144,7 +152,7 @@ A UTS row that carries an autonomy claim about Work described through a local sy
 * `Aut-Guard policy-id (PolicyIdRef)`;
 * `OverrideProtocolRef`;
 * declared **Scope (G)** and **Γ_time** window;
-* edition pins for the referenced local system-role kind, Method, CHR, and policies; and, when enactment-bound, the actual binding references needed by the receiving use.
+* edition pins for the referenced local system-role kind, Method, CHR, and policies; and, when action-bound, its proposed-action and real allocation refs; when enactment-bound, the additional actual Work refs needed by the receiving use.
 * *(optional, if a scale preference is declared)* `ScaleLensPolicyRef` and `ScaleLensOptIn ∈ {OptedIn, Neutral, OptedOut}`.
 
 **E.16‑S7 (Scale & selection — optional lens).**
@@ -162,21 +170,36 @@ The autonomy claim names navigation Method `Navigate_v3`. Its enactment-bound bu
 
 The declared A.2.7 relation is `NavigatorSupervisorIncompatibility`; its predicate prohibits the same System from holding both assignments for the same navigation Work during overlapping windows. The gate resolves both A.2.1 assignments and their holders and admits the override path because the actual pair does not match that prohibited case and the independent authority relation is current. The budget then supplies `action_tokens=10 k steps/day`, `risk_bands={maxSpeed <= 1.2 m/s, minDist >= 0.5 m}`, and `resource_caps={battery >= 20%}`. Ledger entries decrement the action budget and record distance checks. Depletion stops autonomous movement.
 
-**Show-B (prospective, then enactment-bound deployment).**
-A prospective deployment budget names the autonomy claim, `DeployerSystemRole` and `ReleaseAuthorizerSystemRole`, the production-promotion situation, deployment policy, ClaimScope, daily window, guard set, and the exact A.2.7 incompatibility relation. It leaves holder Systems, assignments, deployment Work, and authority-relation occurrence empty because no release has been scheduled.
+For a proposed pause/resume of that current navigation Work, name the override action and check its permission before it occurs. The navigation Work and its existing ledger remain unchanged by the proposal. Only the performed, independently admitted override adds override Work and its actual budget delta.
 
-When a release is scheduled, an enactment-bound edition names the deployment service System, its exact deployer assignment, the release Work, the authorizer System and assignment, and the independently obtaining release-authority relation. The receiving check tests the two assignments against the declared predicate for holder, same Work, overlap, and applicability; it then applies `decision_tokens=3/day`, `error-budget burn <= 2%/day`, and the ordinary deployment guards. A kind label or the notation `role A perpendicular role B` would not close either check.
+**Show-B (unscheduled, action-bound, then performed release).**
+An unscheduled budget names the deployment/authorizer local kinds, policy, limits and prospective incompatibility species without inventing assignments or release Work. When release promotion is proposed, its local action rule fixes artifact `Release-E7`, target `Production-East`, operation `promote`, and intended window 14:00–14:15. Use its existing WorkPlan action locator if available; the rule otherwise identifies those values directly. Duplicate request IDs for these same values name the same proposed action.
+
+`ReleaseDutyProspectiveIncompatibility` has the unordered kind pair {DeployerSystemRole, ReleaseAuthorizerSystemRole}. Under its adopted policy it prohibits the same actual holder's obtaining assignments to those kinds for the same proposed release action during overlapping allocation windows. Its applicability and meaning-changing policy edition are explicit. The kind relation obtains independently of whether anyone attempts a prohibited allocation. The illustrative `ReleaseEntryProfile-E1` requires allocation, authority, budget and the action’s other declared guards. It maps known prohibition, unknown allocation, and missing/unrun required allocation checks to `block`; satisfactory current results map to `pass`. Its hold consequence is to establish the allocation facts and recheck within the proposed action window. This is the case’s explicit profile, not an A.21 default.
+
+| Case | Receiving result |
+| --- | --- |
+| No release scheduled | The budget remains prospective; no action or nonexistent assignments are filled. |
+| Two distinct assignment IDs have the same System holder for this action and overlapping windows | The prospective predicate finds the prohibited allocation; the profile maps it to `block` before any release performance. Passing authority or budget cannot override it. |
+| The overlap result is `unknown`, while authority and budget pass | `ReleaseEntryProfile-E1` maps unknown allocation to `block`; the aggregate of block, pass and pass is block. Hold promotion and establish the missing overlap facts. |
+| The required allocation check has no result or was not run | Keep the missing/`notRun` check in the required set. This profile maps it to `block`; run or recover the check before reevaluating. |
+| Different permitted holders, current independent authority, budget and all other required guards pass | A.21 permits the bounded promotion. No release Work is yet claimed. |
+| The rejected release is resubmitted under a new request ID | The same-action rule preserves the subject, so the allocation check is not bypassed. |
+| The window changes to 15:00–15:15 | The explicit continuation rule may retain the continuing release action when artifact, target and operation are unchanged and rescheduling is linked. Permission for 14:00–14:15 does not extend; evaluate the new window and allocation. |
+| The permitted promotion is performed | A.15.1 identifies actual Work from its performance grounds. The ledger records that Work and policy-defined budget delta; a separate exact action match connects it to the applicable prior permission. |
+
+The declaration's `decision_tokens=3/day` and `error-budget burn <= 2%/day` remain typed limits checked under their policy. This branch neither weakens the actual-Work incompatibility species nor treats a gate as Work admission.
 
 ### E.16:6 - Conformance Checklist (SCR - E.16-CC)
 
 | ID            | Requirement |
 | ------------- | ----------- |
-| **E.16-CC-1** | Every autonomy claim **MUST** reference a named, versioned **AutonomyBudgetDecl** that states its binding state and identifies the claim, consumer local kind, working situation, policy, ClaimScope, qualification window, budget, override-authority local kind and policy, and exact A.2.7 separation-of-duties relation. A prospective declaration may omit actual holders, assignments, Work, and authority occurrence; all become mandatory in an enactment-bound edition before Work admission. |
-| **E.16-CC-2** | A Method step that depends on autonomy **MUST** name the exact required local kind and `requiresAutonomyBudget`. Green-Gate **MUST** resolve the performer System, exact A.2.1 assignment, target Work, scope and window, assignment state, budget, and guards; any required classification judgment is separate. |
+| **E.16-CC-1** | Each autonomy claim cites a named/versioned budget with claim, consumer kind, situation, policy, scope/window, limits, override rule and exact A.2.7 species. Prospective budgets may omit actions/assignments; action-bound permission resolves the proposed action and real allocation/authority; enactment-bound adds independently admitted actual Work. |
+| **E.16-CC-2** | Green-Gate decides the A.21 prospective work-entry claim and bounded action, resolving its identity/continuation, real holder/assignment/state, authority, scope/window, remaining budget, incompatibility and guards. Changed permission-relevant windows require recheck; request respelling does not create another action. |
 | **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` that identifies the Work, performer System, exact assignment, budget edition, deltas, and guard verdicts. |
-| **E.16-CC-4** | An override **MUST** be SpeechAct Work performed by an admitted System under an exact A.2.1 assignment. The receiving check **MUST** apply the named A.2.7 incompatibility predicate to both actual assignments, holders, target Work, overlap window, and applicability, reject a prohibited joint allocation, and independently confirm the authority relation. Kind labels or `role perpendicular role` notation are insufficient. |
+| **E.16-CC-4** | A proposed override passes its applicable A.2.7 species and independent authority check before performance. An existing target Work is distinct from that proposal. Only a performed, A.15.1-admitted override is recorded as overrideWork with the applicable delta and policy-supported match to prior permission. |
 | **E.16-CC-5** | Depletion **MUST** block autonomy-gated steps until `ResumeAutonomy` passes the actual-assignment separation-of-duties check, independent authority check, and ordinary guards. |
-| **E.16-CC-6** | A UTS row that carries an autonomy claim about Work described through a local system-role kind, Method, or Service **MUST** include `AutonomyBudgetDeclRef`, binding state, Aut-Guard policy id, `OverrideProtocolRef`, ClaimScope, and Γ_time window; an enactment-bound row also exposes the actual binding references needed by its receiving use. |
+| **E.16-CC-6** | A UTS autonomy row carries the budget edition/state, guard policy, override protocol, scope/window, action/allocation refs when action-bound and actual Work refs when enactment-bound. |
 | **E.16-CC-7** | When bounded specialization scouting is in scope, scout budget, probe budget, and commit checkpoint **MUST** stay explicit, and a successful probe **SHALL NOT** count as automatic committed rollout. |
 
 ### E.16:7 - Consequences
@@ -185,30 +208,17 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
 * **Comparability.** UTS surfaces autonomy metadata for fair selection & parity.
 * **Safety.** Guards are hard gates; depletion halts further autonomy‑gated Work.
 
-#### E.16:7.1 - SoTA‑Echoing (post‑2015 practice alignment)
+#### E.16:7.1 - SoTA-Echoing — bind a budget decision to the proposed action
 
-> Each item states **Adopt / Adapt / Reject**, and why. Vendor/tool tokens are kept as *informative*, not normative.
+**Practice question.** Is an existing release policy and error-budget ledger enough to permit an autonomous promotion or override? The selected line reuses those controls while checking the proposed action, current allocation and authority, available budget and applicable guards before performance. It then records the actual Work and consumption. A serious lighter alternative gates releases solely by the existing service-level error-budget policy and records their effects afterward. That is sufficient when the release policy already supplies every action/authority condition needed by the use.
 
-1. **Corrigibility & safe interruptibility (2016→).**
-   **Adopt/Adapt.** Work on safe interruption and “off‑switch” incentives argues that capable systems should remain *stoppable* and should not be rewarded for resisting oversight (Orseau & Armstrong, 2016; Hadfield‑Menell et al., 2017). E.16 adapts this into canonical **PauseAutonomy / ResumeAutonomy** SpeechActs plus **SoD** and *hard* gating on depletion.
+The [Google SRE Workbook's Example Error Budget Policy, 2018](https://sre.google/workbook/error-budget-policy/) is the concrete comparator: its four-week budget can freeze changes, explicitly excepts P0/security fixes and supplies an escalation route. **Adopt** policy-bound depletion and explicit exception handling in S2, S4 and S5. **Adapt** the budget to the exact autonomous action and current authority in S1–S2, rather than inferring those facts from the remaining service budget. The cited example is a bounded release policy, not a general autonomy standard or proof of the completeness of a particular gate.
 
-2. **AI safety as concrete operational hazards (2016→).**
-   **Adopt.** “Concrete Problems in AI Safety” pushes instrumentation and testable safety constraints over informal assurances (Amodei et al., 2016). E.16 mirrors this by turning “autonomy” into a **budget + ledger + guards** specification that can be benchmarked and audited.
+Show-B gives the decisive case: a release can be within its error budget while the required allocation overlap remains unknown. Budget-only permission would miss that unresolved premise; the explicit ReleaseEntryProfile-E1 blocks until it is established. A changed window reopens the affected permission, while S3 records consumption only after actual performance. Show-A adds a real pause/resume authority and depletion stop. The same existing policy, ledger and allocation records can supply these inputs; a second accounting system adds no value when their meanings and exact references are already present. The extra work is resolving a current action/allocation question, not copying the budget into another form.
 
-3. **SRE error budgets & “stop the line” operations (2016→).**
-   **Adopt/Adapt.** Error‑budget practice treats reliability as a measurable envelope that gates risky change when depleted (Beyer et al., *Site Reliability Engineering*, 2016; Beyer et al., eds., [*The Site Reliability Workbook*](https://sre.google/workbook/preface/), 2018). E.16 adapts the idea into `risk_bands` and depletion behavior that blocks autonomy‑gated steps until governed resume.
+**Reject** treating a declared pause interface as proof that a learning agent has no incentive to resist interruption. [Orseau and Armstrong's Safely Interruptible Agents, revised October 2016](https://intelligence.org/files/Interruptibility.pdf) supplies the distinct learning-theoretic question and results under stated agent and learning assumptions. It does not establish E.16's runtime enforcement or override authority. S4 requires an effective override path; any stronger incentive or learning claim needs its own applicable analysis. Scout/probe/commit partitioning in S1.A is a local budget-control rule, with no claim here that unnamed agentic-search research proves its effectiveness.
 
-4. **Risk management frameworks for AI systems (2023→).**
-   **Adopt/Adapt.** Contemporary risk frameworks emphasize governance, continuous measurement, and traceable controls (NIST AI RMF 1.0, 2023; ISO/IEC 23894, 2023). E.16 adapts these into **UTS publication** + **Work‑anchored ledger evidence** for parity and audit.
-
-5. **Policy‑as‑code and provenance gating (2019→).**
-   **Adopt.** Modern supply‑chain integrity systems emphasize *policy‑checked actions with verifiable provenance* (in‑toto, 2019→; SLSA, 2021→). E.16 echoes the same principle for autonomy: **no autonomy‑gated enactment without passing declared guards and emitting ledger evidence** (without importing any specific tooling).
-
-6. **Scaling laws & the Bitter Lesson (2019→).**
-   **Adapt/Reject.** Empirical scaling work and the Bitter Lesson motivate considering compute‑heavy search when returns are monotonic (Sutton, 2019; Kaplan et al., 2020). E.16 adapts this into an **optional** ScaleLensPolicy (E.16‑S7) constrained by the *same* budgets and guards, and **rejects** any interpretation that lets “scale” bypass safety gates.
-
-7. **Budgeted specialist acquisition and checkpointed exploitation (2024→).**
-   **Adopt/Adapt.** Recent agentic tool-use, self-play, and open-ended search lines reinforce that the competition variable is time or budget to threshold plus fast exploitation after a viable route is found. E.16 adapts this into distinct scout/probe/commit control surfaces and rejects any reading where early probe success authorizes rollout without an explicit checkpoint.
+At comparable operational effort, the selected line wins only when an action-sensitive premise could change permission: it uses the same budget evidence and adds that check before harm can follow the proposed action. For a policy already covering it, reuse the existing decision and accounting basis while respecting their currentness. Reopen when the action rule, authority/allocation policy, budget window or override mechanism changes, or when evidence shows a bypass or a cheaper control retaining the same required distinctions. No error-budget policy, interface declaration or interruption theorem alone establishes general autonomous-system safety.
 
 #### E.16:7.2 - Common Anti-Patterns and How to Avoid Them
 
@@ -216,14 +226,13 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
 | --- | --- | --- | --- |
 | **Autonomy-by-label** | “Autonomous” is claimed but there is no `AutonomyBudgetDecl` or ledger | Autonomy becomes opaque; cannot be audited or compared | Require **E.16‑S1/S3**; reject publication without `AutonomyBudgetDeclRef` + version |
 | **Soft gates** | Budget/guards only warn; enactment proceeds anyway | Violates Safety and SoD; makes budgets non-enforceable | Make Green‑Gate **blocking** on Core surface (**E.16‑S2**) |
-| **Self-override** | The actual consumer and override assignments are missing, or their holder, Work, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve both exact A.2.1 assignments, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
+| **Self-override** | The actual consumer and override assignments are missing, or their holder, actual-Work or proposed-action identity under the selected species, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve both exact A.2.1 assignments, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
 | **Budget bypass via “scale”** | Scaling preference relaxes guards or ignores caps | Undermines declared limits; breaks comparability | In ScaleLensPolicy, **guards/SoD must remain non‑weakened** (**E.16‑S7**) |
 | **Untyped quotas** | Tokens/caps are recorded without units, or units are mixed | Ledger becomes non-comparable; audits become meaningless | Type budgets and deltas via **MM‑CHR (C.16)**; keep unitful rates/quotas |
 | **Ledger-as-logging** | Logs exist but are not Work‑anchored (no workRef/budgetId/version or recoverable edition pins) | Evidence is non-portable; cannot support parity/refresh | Require `AutonomyLedgerEntry` attached to `U.Work` with workRef, budgetId, version, and the referenced declaration's edition pins |
 
 ### E.16:8 - Rationale & E‑/F‑/G‑links
 
-* **E.8** — follows the pattern template (Context → Problem → Forces → Solution → Grounding → CC → Consequences).
 * **E.10** — uses LEX‑BUNDLE: Scope via **ClaimScope (G)**, time via **Γ_time**, and **L‑AUTO** for autonomy wording.
 * **Mint/reuse authority (policy-ids).** Mint/reuse authority is expressed via **F.8:8.1** (`PolicyIdRef`: `PolicySpecRef` + `MintDecisionRef?`) and explicit **GateCrossing** checks (**E.18**) evaluated by the active **GateProfile/GateFit** (**A.21**); no tier ladder is required.
 * **Part F** — integrates with **F.4** Role Description (RCS includes *AgencyLevel*; RSG gates), **F.6** for exact performed-Work attribution after independent A.15.1 admission, **F.15** SCR/RSCR (harness includes depletion/override tests), **F.17** UTS (columns, incl. optional ScaleLens fields).
@@ -232,10 +241,10 @@ When a release is scheduled, an enactment-bound edition names the deployment ser
 ### E.16:9 - Mini conformance checklist (cross-E-F; author's quick use)
 
 1. **Declare the boundary:** name the autonomy claim, consumer local kind, working situation, policy, ClaimScope, window, budget, override-authority kind, and exact A.2.7 incompatibility relation.
-2. **Bind only when real:** mark an early declaration `prospective`; before admitting Work, use an `enactment-bound` edition with actual holder Systems, A.2.1 assignments, Work, and authority-relation occurrence. Invent none of them.
-3. **Gate the Work:** resolve the exact performer, assignment, Work, state, remaining budget, and guards.
-4. **Record the Work:** emit an `AutonomyLedgerEntry` with performer and assignment attribution for every admitted budgeted or override Work item.
-5. **Check override separately:** apply the A.2.7 predicate to both actual assignments and the target Work and window, reject a prohibited joint allocation, and independently test override authority.
+2. **Identify the proposed action:** keep an unscheduled budget prospective; use action-bound for a scheduled action, its work-entry claim, real assignments/holders and independent authority. Apply the declared action identity and continuation rule.
+3. **Gate permission to start:** apply the appropriate prospective allocation test, budget and guards to the bounded action. Recheck permission-relevant changes. A pass is not performed Work.
+4. **Record actual Work:** after independent A.15.1 admission, emit the Work-anchored ledger entry, attribution and actual delta; relate it to prior permission through the exact policy-supported action match.
+5. **Check override separately:** distinguish the existing target Work from the proposed override; apply the selected actual-Work or prospective-action species to the real assignments and applicable window, and independently test authority before performance.
 6. **Publish what users need:** expose the budget edition, binding state, policy, override protocol, scope, and window in the UTS row.
 
 These steps are the smallest complete route for a working Part F test harness; optional telemetry and selection lenses remain optional.

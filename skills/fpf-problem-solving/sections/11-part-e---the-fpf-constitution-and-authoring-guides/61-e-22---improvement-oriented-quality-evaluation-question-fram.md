@@ -158,7 +158,7 @@ QualityEvaluationQuestionFrame <: U.Episteme:
   desiredImprovementAimDescriptionRef?: U.EpistemeRef, referencing one desired-improvement-aim description
   tradeoffProtectionSet: TradeoffProtectionSet@Context by value
   evaluationQualificationWindowDescriptionRef: U.EpistemeRef, referencing one EvaluationQualificationWindow description
-  nonUseBoundaryDescriptionRef: U.EpistemeRef, referencing one non-use-boundary description
+  nonUseBoundaryDescriptionRef?: U.EpistemeRef, referencing a non-use-boundary description only when the grounded condition in CC-E22-6 holds
 ```
 
 The frame's exact object version, characteristic space, predicate/comparator binding, ClaimScope, and qualification window equal those of its use declaration and expected evidence basis. These bindings make the question replayable; they do not reidentify the space, predicate, comparator, scope, method, or consuming object. A changed binding creates a changed frame edition and requires a newly evaluated result.

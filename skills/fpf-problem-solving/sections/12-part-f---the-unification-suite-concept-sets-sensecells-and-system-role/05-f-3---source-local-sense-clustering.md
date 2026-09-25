@@ -2,7 +2,7 @@
 
 **“Under one explicit interpretation basis, merge aliases that make the same local claim and split uses that do not.”**
 **Status.** Architectural pattern.
-**Depends on.** F.1 **Question-Relative Source Selection**; F.2 **Term Harvesting & Normalisation**; F.17 for the optional three-part local-sense cell; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
+**Depends on.** F.1 **Question-Relative Source Selection**; F.2 **Source-Local Term Harvesting & Normalisation**; F.17 for the optional three-part local-sense cell; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
 **Coordinates with.** F.4 **SystemRoleKindDescription**; F.7 **Concept-Set Table**; F.8 **Mint or Reuse Decision**; F.9 only when two exact local meanings need a tested relation.
 **Aliases (informative).** *source-local clustering*; *sense consolidation*.
 
@@ -146,7 +146,9 @@ An optional one-glance card may show:
 
 The card is a display. Its fields do not create a new object or relation.
 
-### F.3:12 - Worked examples
+### F.3:12 - Worked example and recognition cues
+
+Section 12.2 supplies one source-grounded clustering case. The other entries are recognition cues for possible clusters and boundaries; recover their exact editions, passages and interpretation bases before treating them as completed LocalSenseClaims.
 
 #### F.3:12.1 - BPMN 2.0
 
@@ -156,9 +158,15 @@ The card is a display. Its fields do not create a new object or relation.
 
 #### F.3:12.2 - PROV-O
 
-**Activity.** Claim: a time-bounded occurrence that uses or generates entities and may be associated with agents. Counterexample: a sorting algorithm as a reusable way of doing is not an occurrence.
+**Receiving question.** Which of `prov:Activity`, `http://www.w3.org/ns/prov#Activity` and `prov:Agent` can share one local meaning?
 
-**Agent.** Claim: an entity that bears responsibility for an activity’s effects under the PROV scheme. Counterexample: an RBAC permission role is not thereby a PROV agent.
+**Source basis.** [W3C PROV-O Recommendation, 30 April 2013](https://www.w3.org/TR/2013/REC-prov-o-20130430/), §1.3 fixes the `prov` namespace; §3.1 states the class meanings; §4.1 gives the class IRIs. The effective scheme is that edition's PROV-O vocabulary.
+
+**Activity.** Consolidate the prefixed name and its full IRI: both address the class whose Tech label is **activity (PROV-O)** and Plain label is **occurrence that acts on or with entities**. LocalSenseClaim: an occurrence over an interval that acts on or with entities. A sorting algorithm as a reusable way of doing is not thereby such an occurrence.
+
+**Agent.** Keep a separate local meaning. Tech **agent (PROV-O)**; Plain **responsible participant**. LocalSenseClaim: something responsible for an activity, an entity's existence or another agent's activity. An RBAC permission role is not thereby a PROV agent.
+
+The namespace expansion supports the alias consolidation; the temporal-occurrence and responsibility meanings remain separate. These two local claims answer the receiving question; an F.17 address is added only for a later recurring use.
 
 #### F.3:12.3 - ITIL 4
 
@@ -241,6 +249,6 @@ The card is a display. Its fields do not create a new object or relation.
 
 ### F.3:17 - Didactic close
 
-> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Give each result one faithful Tech label, one helpful Plain label, and a short counterexample. Use an F.17 cell only when recurring work needs the address. Nothing in this clustering makes two sources the same; test that separately in F.9.”
+> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Give each result one faithful Tech label, one helpful Plain label, and a short counterexample when a boundary test is needed. Use an F.17 cell only when recurring work needs the address. Nothing in this clustering makes two sources the same; test that separately in F.9.”
 
 ### F.3:End

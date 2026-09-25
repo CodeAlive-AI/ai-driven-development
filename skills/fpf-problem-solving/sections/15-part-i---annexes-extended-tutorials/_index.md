@@ -7,4 +7,4 @@
 
 ## Contents
 
-- [I.2 - Expanded Entry Disambiguation Cases](01-i-2---expanded-entry-disambiguation-cases.md) (209 lines) — I.2 is the canonical publication unit for ExpandedEntryDisambiguationCase
+- [I.2 - Choose a First Pattern: Expanded Entry Disambiguation Cases](01-i-2---choose-a-first-pattern-expanded-entry-disambiguation-c.md) (209 lines) — I.2 is the canonical publication unit for ExpandedEntryDisambiguationCase

@@ -52,7 +52,7 @@ When an evaluation or improvement pass is claimed as actual A.15.1 `U.Work`, rec
 
 Keep a returned value, durable result episteme, changed object, and actual Transformation separate. Connect a returned value through its A.6.1 binding or the evaluation's direct result relation. Connect Work to a result or change only through a declared direct relation or local claim that actually obtains; otherwise return the missing governor.
 
-The repeated organization changes the object, re-evaluates the changed version through the same declared method and quality model, checks trade-offs and cost, and exposes admissible stop, continue, switch, new-frame, information-hold, branch, and subject-pattern-return continuations. That organization is one current A.22 constraint-governed unfolding structure; use E.18 only when an independently selected transformation-flow structure is actually the EntityOfConcern. Neither the method, record, visible cycle, nor selected continuation is an enduring Work occurrence or context container.
+The repeated organization changes the object, re-evaluates the changed version through the same declared method and quality model, checks trade-offs and cost, and exposes admissible stop, continue, switch, new-frame, information-hold, branch, and subject-pattern-return continuations. When the receiving use needs its structure, admit that organization under A.22.CGUS through §4.2a; use E.18 only when an independently selected transformation-flow structure is actually the EntityOfConcern. Neither the method, record, visible cycle, nor selected continuation is an enduring Work occurrence or context container.
 
 #### E.23:4.1 - Ordinary loop method
 
@@ -63,7 +63,7 @@ For one quality-improvement loop:
 3. Reuse the exact current E.22 question frame, or open one when no frame binds the current object, purpose, scope, and result-consuming work or decision.
 4. Run the declared evaluation. When the evaluated object is one FPF pattern version, retain the complete E.21 result: every coordinate, `ShortRationale`, `PrecisionRestorationProfile`, evidence basis, coordinate payload, and status. A loop note, blocker summary, or "no blockers" statement is not a substitute. If dated evaluation Work is asserted, identify it and its result binding or direct result relation; keep any durable result episteme separate.
 5. Record each returned finding or proposal separately. A grouped memory summary does not close skipped items, and a proposal remains a proposed next action rather than performed Work.
-6. Select the next change. Selection does not perform it. If the change is performed, identify the improvement Work and connect it to a returned value or changed object only through an obtaining A.6.1 binding or declared Work-to-result or Work-to-change relation. If that relation is unavailable, keep proposal, Work, changed object, and Transformation separate and return the missing relation.
+6. Select the next change. Selection does not perform it. When the account asserts dated improvement Work, identify that Work and connect it to a returned value or changed object only through an obtaining A.6.1 binding or declared Work-to-result or Work-to-change relation. If that relation is unavailable, keep proposal, Work, changed object, and Transformation separate and return the missing relation.
 
    Repair below-floor findings first. Above the floor, prefer a substantive gain—such as clearer action, a missing case or countercase, current source support, restored predecessor content, cleaner relations, or a split of overloaded material. Do not add guards, catalogues, or quality proof merely to defend a higher score. Close with no change only after the evidence shows that no feasible non-dominated improvement remains under the protected trade-offs.
 
@@ -94,7 +94,7 @@ The next table names the local values used after this routing choice.
 |---|---|
 | `QualityImprovementLoopMethod` | Repeated improvement `U.Method` for one object version under one declared evaluation use. |
 | `ObjectUnderImprovementRef` | Exact `U.Entity` version being changed, paired with its exact `U.Kind`. |
-| `QualityEvaluationQuestionFrame` | The E.22 `U.Episteme` that binds one exact object version and use declaration to the selected characteristic space, predicate or comparator, ClaimScope, exact result-consuming work or decision, evaluation purpose, qualification window, and ordinary non-use boundary. E.23 reuses that frame; it does not move the consuming-use position into the declaration. |
+| `QualityEvaluationQuestionFrame` | The E.22 `U.Episteme` that binds one exact object version and use declaration to the selected characteristic space, predicate or comparator, ClaimScope, exact result-consuming work or decision, evaluation purpose, qualification window, and any grounded non-use boundary required by E.22. E.23 reuses that frame; it does not move the consuming-use position into the declaration. |
 | `QualityEvaluationUseDeclaration` | The E.22 `U.Episteme` that keeps any question-changing evaluator condition or intended-evaluator identity separate from the actual evaluator, assignment and dated Work, and keeps the evaluation pattern, optional semantic Method, selected characteristic space, predicate or comparator, ClaimScope, quality-model descriptions, evidence basis, result form, and qualification window distinct. E.23 reuses it; it does not define a second evaluation ontology. |
 | `LoopEvaluationEvidenceBasis@Context` | `U.Episteme` whose EntityOfConcern is the exact object version evaluated in one loop pass. It describes the evidence values actually checked and missing evidence positions found for that pass and is distinct from E.22's expected evidence-basis description. |
 | `LoopEvaluationResultFormDescription` | `U.Episteme` describing the result-row form used for the current pass; normally the same form cited by the evaluation-use declaration. |
@@ -107,7 +107,7 @@ The next table names the local values used after this routing choice.
 | `CostAndRiskAccount` | Cost and risk account used to judge another pass or operation. |
 | `ImprovementLoopDecisionValue` | Local closed value set `stop | continue | switchMethodFamily | openNewFrame | holdUntilInformationBasisSufficient`. |
 | `QualityImprovementLoopRecord` | `U.Episteme` whose EntityOfConcern is the exact starting object version for one bounded improvement-loop application. Its ClaimGraph relates that version to one admitted unfolding structure, selected next-action proposals, independently identified evaluation and improvement Work, exact result bases and result epistemes, changed versions, evidence bases, trade-offs, cost and risk, and the selected continuation and boundaries. It describes those objects and relations; it is not the method, performer, Work occurrence, changed object, or structure. |
-| `QualitySideEvaluationChangeClaim` | Controlled claim-node form inside a `U.ClaimGraph`; it compares before and after evaluation results for named object versions on declared `Q` coordinates under one evaluation-use declaration and qualification window. |
+| `QualitySideEvaluationChangeClaim` | Controlled claim-node form inside a `U.ClaimGraph`; it compares before and after evaluation results for named object versions on declared `Q` coordinates. Each result uses the evaluation-use declaration bound to its own object version; keep the evaluation criterion, scope, scale and qualification conditions comparable, or state the explicitly selected stronger evaluation. |
 | `SourceComposedResultClaim` | Controlled claim-node form inside a `U.ClaimGraph`; it relates one changed-object result claim to exact accepted source-use decisions and each source contribution. It is neither the changed object nor a source-use decision. |
 | `KindRestorationCheck` | Conditionally present precision-repair check required by the selected restoration predicate and its evaluation result. |
 
@@ -157,7 +157,7 @@ QualityImprovementLoopRecord <: U.Episteme:
   reconsiderationBoundaryRefs[]: U.EntityRef, each referencing one ImprovementLoopBoundaryCondition@Context
   loopDecisionReasonDescriptionRef: U.EpistemeRef, referencing one loop-decision-reason description
 QualitySideEvaluationChangeClaim in U.ClaimGraph:
-  qualityEvaluationUseDeclarationRef
+  beforeQualityEvaluationUseDeclarationRef and afterQualityEvaluationUseDeclarationRef
   beforeObjectVersionRef and afterObjectVersionRef
   beforeEvaluationResultRefs[] and afterEvaluationResultRefs[]
   evaluationCoordinateRefs[]
@@ -262,11 +262,11 @@ For a structured use, the complete E.21 result belongs to step 4, proposal and W
 
 Stop when the current object version meets the declared floor or improvement aim and no feasible non-dominated proposal remains worth its cost under the current use, comparison set, source state, and protected trade-offs. If the remaining proposal mainly makes a value easier to argue while adding apparatus or worsening use, affordability, locality, source preservation, or ecology, reject that proposal; continue searching for a substantive content improvement if the improvement aim is still open, and stop only with a by-value no-proposal disposition.
 
-Continue only when at least one `ExpectedEvaluationResultChange@Context` states a scale-qualified change worth its cost and risk. Switch method when the current method family is not changing the evaluated result, is too costly, or no longer fits the evaluation. Use `holdUntilInformationBasisSufficient` only with non-empty unfilled-position descriptions and the sufficiency condition that would make continuation admissible.
+Continue only when at least one predicted evaluation-result change states a scale-qualified change worth its cost and risk. Use `ExpectedEvaluationResultChange@Context` when the conditional account in §4.2a is needed. Switch method when the current method family is not changing the evaluated result, is too costly, or no longer fits the evaluation. Use `holdUntilInformationBasisSufficient` only with non-empty unfilled-position descriptions and the sufficiency condition that would make continuation admissible.
 
 An all-`5`, all-exceptional, current-front-reaching, or current-front-improving result closes this loop locally. It does not say that future development is impossible. A new use, `Q` component, source anchor, `SoTA` front, comparison set, affordability boundary, or higher-payoff proposal can open a later loop.
 
-Treat the five decision values as current continuation dispositions, not as Work states. A branch is usable only when its A.22 guarded continuation cites the exact current guard or constraint claim and the already-obtaining relation occurrences that make that alternative admissible. A stop or subject-assertion reconsideration is a boundary until an exact stronger predicate and current facts establish another relation. Naming A.15, E.22, G.11, G.5, or another subject pattern as a locator neither performs Work nor creates an object described there.
+Treat the five decision values as current continuation dispositions, not as Work states. When the admitted A.22 structure is used, a branch is usable only when its guarded continuation cites the exact current guard or constraint claim and the already-obtaining relation occurrences that make that alternative admissible. A stop or subject-assertion reconsideration is a boundary until an exact stronger predicate and current facts establish another relation. Naming A.15, E.22, G.11, G.5, or another subject pattern as a locator neither performs Work nor creates an object described there.
 
 #### E.23:4.4 - Method-family selection
 
@@ -281,13 +281,13 @@ Treat the five decision values as current continuation dispositions, not as Work
 | `SoTAReachAndMaintainFamily` | Reaching or maintaining an externally assigned front depends on composing several accepted source or practice anchors. |
 | `SpecializedObjectFamilyCycle` | A specialized method family fits a declared characteristic space and is BLP-compatible. |
 
-The selected family is justified by characteristic-space fit, the declared `ExpectedEvaluationResultChange@Context` values, cost and risk, and protected trade-offs. Familiarity, automation, or current popularity is not enough.
+The selected family is justified by characteristic-space fit, the declared scale-qualified predicted evaluation-result changes, cost and risk, and protected trade-offs. Familiarity, automation, or current popularity is not enough.
 
 #### E.23:4.5 - Operation-family selection
 
-An operation family is selected only when the loop record names:
+An operation family is selected only when the loop account names:
 
-1. one scale-qualified `ExpectedEvaluationResultChange@Context`;
+1. one scale-qualified predicted evaluation-result change;
 2. failure mode addressed;
 3. cost or risk reason;
 4. protected trade-offs;
@@ -315,7 +315,7 @@ For NQD and OEE, use `E.23` to change one object version or candidate and re-eva
 
 ### E.23:5 - Archetypal Grounding
 
-**Tell.** Name the object version and evaluation, make one bounded change through separately identified Work, and re-evaluate the changed object before claiming improvement. Keep proposals, performed Work, the changed object or Transformation, the later evaluation, and its returned result distinct.
+**Tell.** Name the object version and evaluation, make one bounded change, and re-evaluate the changed object before claiming improvement. Identify dated improvement Work only when that occurrence is asserted. Keep proposals, performed Work, the changed object or Transformation, the later evaluation, and its returned result distinct.
 
 **Show — agent harness improvement from a loop-engineering request.** A user asks to improve a local DPF seed. The record names that seed version as the object under improvement, selects E.4.DPF.DA or E.21 for evaluation, and states the aim: make the seed usable for local first entry without public-Core claims.
 The loop may change only that seed or another explicitly declared evaluation or harness slice. Prompts, adversarial examples, and harness checks enter only when the record states the expected evaluation change and their removal or stop condition. Selection makes them proposals. Each actual harness run or seed edit is separate Work governed by the central §4 rule; returned values, durable results, changed versions, and Transformations stay separate and use their declared bindings or relations.
@@ -357,13 +357,13 @@ The bias is bounded. One direct evaluation can close without a loop. Repetition 
 | Check | Passing condition |
 |---|---|
 | `CC-E23-1` | Name the exact object version, exact object-under-improvement evaluation, one current `QualityEvaluationQuestionFrame`, and one `QualityEvaluationUseDeclaration` before claiming a changed evaluation result. |
-| `CC-E23-2` | Reuse an E.22 or equivalent exact frame only when it binds the current object version, selected characteristic space, predicate or comparator, ClaimScope, result-consuming work or decision, purpose, qualification window, and non-use boundary; otherwise open a new frame. |
-| `CC-E23-3` | Represent returned repair possibilities as row-atomic E.22 findings or proposal rows with closure tests; pair proposals selected for the next pass with scale-qualified `ExpectedEvaluationResultChange@Context` values. A grouped memory summary does not discharge skipped rows, and proposal selection does not establish performance. |
+| `CC-E23-2` | Reuse an E.22 or equivalent exact frame only when it binds the current object version, selected characteristic space, predicate or comparator, ClaimScope, result-consuming work or decision, purpose, qualification window, and any grounded non-use boundary required by E.22; otherwise open a new frame. |
+| `CC-E23-3` | Represent returned repair possibilities as row-atomic E.22 findings or proposal rows with closure tests; pair proposals selected for the next pass with scale-qualified predicted evaluation-result changes, using `ExpectedEvaluationResultChange@Context` when the conditional §4.2a account is needed. A grouped memory summary does not discharge skipped rows, and proposal selection does not establish performance. |
 | `CC-E23-4` | Every asserted evaluation or improvement `U.Work` first recovers each exact actual performer through A.13, then uses A.15.1 to identify the occurrence, time, Method, and containing System independently. Add A.2.1 and F.6 only when the record or receiving use expressly represents precise assignment-bound attribution; their absence or failure leaves the Work intact. Then name the evaluation application and result binding or direct result or change relation, plus any separate result episteme. Re-evaluate the changed object before claiming coordinate, status, `Q`, or front-relation change. |
 | `CC-E23-5` | Record what became worse and protected trade-offs. |
 | `CC-E23-6` | Continue only when a scale-qualified expected evaluation-result change and the cost and risk account support another pass. |
 | `CC-E23-7` | Treat all-`5`, exceptional, or front-reaching results as local loop stops, not permanent maturity endings. |
-| `CC-E23-7a` | Do not treat `5`, all-`5`, or `5-defensible` as a repair target. Repair below-floor results first. Exceptional-improvement work proceeds through non-dominated proposal rows that name the expected substantive content change, protected trade-offs, and cost and risk. A no-proposal or stay-at-current-value disposition is admitted only when it cites the `LoopEvaluationEvidenceBasis@Context` and explains why every plausible content improvement is dominated, unavailable, or outside the declared scope. Reject changes that add guards, relation catalogues, evidence theatre, or quality proof while reducing use, affordability, locality, or ecology. |
+| `CC-E23-7a` | Do not treat `5`, all-`5`, or `5-defensible` as a repair target. Repair below-floor results first. Exceptional-improvement work proceeds through non-dominated proposal rows that name the expected substantive content change, protected trade-offs, and cost and risk. A no-proposal or stay-at-current-value disposition is admitted only when it names the checked evaluation evidence basis, using `LoopEvaluationEvidenceBasis@Context` when the conditional structured account is needed, and explains why every plausible content improvement is dominated, unavailable, or outside the declared scope. Reject changes that add guards, relation catalogues, evidence theatre, or quality proof while reducing use, affordability, locality, or ecology. |
 | `CC-E23-8` | When a neighboring claim appears during a loop, name the live claim and its subject pattern before continuing. `E.23` may cite that pattern in the loop record, but it does not absorb the neighbor's authority unless the neighbor's object version is itself the declared object under improvement. |
 | `CC-E23-8a` | For a precision-restoration defect, apply F.19 as guidance and open a subject pattern only for unresolved FPF-specific meaning; claim Method or MethodDescription only after A.3.1 and A.3.2 admit it. Apply `CC-E23-4` only when actual repair Work is asserted. Consume E.21's compact `PrecisionRestorationProfile` when that evaluation is active. Require one bounded `KindRestorationCheck` when the changed expression can alter the object, kind, relation, slot or use position, claim kind, admissible use, or scope; otherwise F.19's local revalidation completes the ordinary repair. |
 | `CC-E23-9` | Apply `E.10` to load-bearing loop names, status values, examples, stop conditions, and result wording introduced or repaired by the loop. |
@@ -371,7 +371,7 @@ The bias is bounded. One direct evaluation can close without a loop. Repetition 
 | `CC-E23-11` | If a practitioner entry phrase such as "loop engineering", "agent loop", or "harness loop" appears, lower it to object version plus object-under-improvement evaluation before opening `E.23`, or name the direct neighboring subject pattern and stop the `E.23` overread. |
 | `CC-E23-12` | In agent or harness cases, state which slice the loop may change: the target object version, the evaluation, or the harness object. Any other slice becomes neighboring work under its own subject pattern, not implicit `E.23` scope. |
 | `CC-E23-13` | Keep the selected proposal, actual improvement Work governed by `CC-E23-4`, its result or change relation, changed object or Transformation, later evaluation pass, and result episteme distinct. When a required relation has no governor, retain those objects and the blocker; do not mint a generic Work-result relation. |
-| `CC-E23-14` | Represent current alternatives, exact guards, selected obtaining relations, selected continuation, stop, and subject-assertion reconsideration conditions in one admitted A.22 unfolding structure. When transformation-flow membership is current, E.18/E.18.3 recognizes that same selected `U.Structure`; do not mint a parallel loop object. A visible cycle, record, structure, decision value, or branch is not enduring Work, context, authorization, or performance. |
+| `CC-E23-14` | When §4.2a's receiving-use condition holds, represent current alternatives, exact guards, selected obtaining relations, selected continuation, stop, and subject-assertion reconsideration conditions in one admitted A.22 unfolding structure. When transformation-flow membership is current, E.18/E.18.3 recognizes that same selected `U.Structure`; do not mint a parallel loop object. A visible cycle, record, structure, decision value, or branch is not enduring Work, context, authorization, or performance. |
 | `CC-E23-15` | A low value, finding, floor miss, or improvement aim does not establish an actual Problem. Any actual Problem used by the loop resolves to one current C.22.PFR occurrence with its direct participants and temporal identity. |
 
 ### E.23:8 - Common Anti-Patterns and How to Avoid Them

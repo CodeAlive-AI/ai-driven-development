@@ -251,6 +251,8 @@ A22IdentityBasis:
     ReplaceEditionWhenCurrentnessFailsOrIsUnknown@Review-2026-08
   namedSelectionUseFrame:
     questionOrAction: may v2 remain the basis for this comparison?
+    admissibleAction: judge whether to recalculate with v2 or replace the reference edition for CandidateSetComparisonBasis@Review-2026-08
+    stopOrReturnCondition: stop recalculation when the currentness result, dependency occurrence, either flow binding, or source-use occurrence is unavailable; re-evaluate both candidates when the edition or currentness facts change
 forbiddenOverread: no displayed order, gate decision, plan, Work, or comparison result follows
 constraintGovernedProfileBasis:
   locusBindingRows[]:

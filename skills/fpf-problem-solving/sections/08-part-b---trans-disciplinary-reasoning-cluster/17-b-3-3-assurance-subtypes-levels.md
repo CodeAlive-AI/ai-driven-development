@@ -95,7 +95,7 @@ B.3 supplies this claim-and-use structure and its source account. [ISO/IEC/IEEE 
 
 - **B.3, A.10 and C.2.1:** define the assurance result, evidence-use references and target claim.
 - **B.5.3 and B.3.5/C.13:** supply needed concept correspondence and the elected, relation-specific construction account.
-- **A.4 and E.14:** preserve design/run separation and the direction from Working-Model claims to assurance publications.
+- **C.2.1 and E.14:** keep the identified Working-Model claim distinct from its assurance publication. A.4 supplies a System design/operation comparison only when that is the actual claim being assured.
 - **B.3.4 and C.27.TA:** qualify currentness by the relied-on use, conditions and temporal reference.
 - **C.11 and C.19.2:** support the choice of worthwhile additional evidence when that decision is live.
 - **B.4 and Part D:** may consume a qualified assurance result in their actual transition or decision rules; this pattern supplies neither an automatic evolution gate nor risk-acceptance authority.

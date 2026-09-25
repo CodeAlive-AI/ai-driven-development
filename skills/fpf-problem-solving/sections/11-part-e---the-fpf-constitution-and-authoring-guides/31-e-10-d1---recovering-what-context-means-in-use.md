@@ -46,7 +46,7 @@ The bounded result is the repaired statement. No additional record is part of th
 
 | Wording use | Recover this content | Next move or stop |
 | --- | --- | --- |
-| Source-local meaning | An adequate current `F.0.1` result: the exact F.17 `SchemeSenseCell <ReferenceScheme, LocalExpression, LocalSenseClaim>` and its obtaining `LocalSenseBasisRelation` to the identified basis episteme. | Reuse that result. If the source-local meaning remains unclear, apply `F.0.1`, rewrite the sentence, and return to the subject question. Open `F.1` only when source selection is live, `F.9` only when the receiving claim needs a relation between different semantic-context projections, and `F.0.2` only when several source ontologies must be compared for the receiving claim. |
+| Source-local meaning | An adequate current `F.0.1` result: the source, edition, expression, passage and plain meaning. Add an exact F.17 `SchemeSenseCell <ReferenceScheme, LocalExpression, LocalSenseClaim>` only when a named reuse, claim, receiver or relation needs its address; state a `LocalSenseBasisRelation` only when that support relation is current and obtains. | Reuse the adequate result. If the source-local meaning remains unclear, apply `F.0.1`, rewrite the sentence, and return to the subject question. Open `F.1` only when source selection is live, `F.9` only when the receiving claim needs a relation between exact local senses with different interpretation bases, and `F.0.2` only when several source ontologies must be compared for the receiving claim. |
 | DDD or model-use boundary | The direct A.1.1 `ModelApplicabilityRelation`, assigned-Work `ModelUseRelation`, or `ModelExpressionCoherenceRelation`. Select one `BoundedModelUseStructure` only when the organization of several such facts changes the engineering decision. | Stop at the direct relation when it answers the question. Select the wider structure only under A.1.1 and A.22. |
 | Claim applicability or comparison boundary | The A.2.6 `U.ClaimScope`, its admitted `U.ContextSlice` values and membership facts, effective scheme, qualification window, comparison scheme, and any direct relation needed by the claim. | State those values and predicates under their subject patterns. Do not add a generic context participant. |
 | Working situation, project use, or reader use | The named situation; intended reader; use; decision; non-use boundary; and the participants, Work, and claims whose change would alter that use or decision. `Problem frame` remains a readable pattern heading rather than a formal Context value. | Write the situation and use directly. Introduce a formal value only when a named later use needs its identity. |
@@ -134,7 +134,7 @@ In return, the author can use the method supplied for the subject question. Sour
 
 ### E.10.D1:10 - Rationale
 
-The useful outcome of the earlier edition was to make context wording visible, separate situational narrative from semantic locality, and demand explicit treatment of cross-local meaning. Its mechanism was too strong: one universal `U.BoundedContext` erased distinctions that later FPF patterns now make directly.
+Context wording can make locality visible, distinguish a working situation from a source-local meaning, and reveal the need to relate different local meanings. One universal `U.BoundedContext` would erase distinctions that the subject patterns define separately.
 
 Positive recovery is preferred to a forbidden-word list. A spelling check can find candidates, but only the receiving claim tells whether the phrase hides a scheme, scope, structure, situation, or other value. Naming that content opens the next practical move; banning the word does not.
 
@@ -159,12 +159,12 @@ These comparisons support the recovery branches for the wording uses named here.
 - Apply `E.10.ARCH` when the same consequential wording problem recurs across framework contributions. That pattern supplies the shared restoration method; `E.10.D1` supplies this word-specific branch.
 - `A.1.1` defines the direct model-use relations and the decision condition for selecting `BoundedModelUseStructure`.
 - `A.2.6` defines claim scopes, context slices, and their membership facts. `C.2.1` identifies claim-bearing epistemes and their effective schemes.
-- `F.0.1` supplies the source-local recovery method, exact F.17 cell and basis-relation result, reuse rule, and stop. `E.10.D1` recognizes the wording use and returns the repaired sentence; it does not repeat that recovery method.
+- `F.0.1` supplies source-local meaning recovery, reuse and stop. Its ordinary result is a plain answer tied to the source passage; an exact F.17 cell and a separately obtaining basis relation are conditional additions. `E.10.D1` recognizes the wording use and returns the repaired sentence; it does not repeat that recovery method.
 - `F.1` is used only when source selection is live. `F.0.2` is used only when several source ontologies must be compared for one receiving claim. Neither follows automatically from a source-local wording repair.
 - `F.17` defines `SchemeSenseCell`, `SenseCellAddressRef`, and `LocalSenseBasisRelation`. `F.9` defines semantic-context projection, direct Bridge truth, separate bounded-use claims, and reliance boundaries; use `F.9` only when the receiving claim needs that cross-local relation.
 - `C.30` defines the obtaining `ArchitectureRelation` and the separate `ArchitectureClaim` form. Use the actual relation only when its predicate holds; use claim content for a negative, unresolved, candidate, or expected architecture statement.
 - `E.17.0` defines viewpoint identity, the direct `EpistemeViewpointConformanceRelation`, its readable positive, negative, and unresolved results, and the resulting same-episteme `U.View` membership.
 - For environment, operating-region, and operating-condition wording, use the pattern that defines or constrains the subject claim. When the affecting fact or condition cannot be recovered, keep the wording result unresolved rather than inferring architecture or viewpoint content.
-- Apply `F.19` only for final phrase repair after the ontology and practical use are recovered. Apply `F.18` only when the repair creates a durable reusable designation.
+- Apply `F.19` for the normal connected reading and final plain rewrite. Use `E.10.D1` only for a consequential context ambiguity that remains; apply `F.18` only when the repair creates a durable reusable designation.
 
 ### E.10.D1:End

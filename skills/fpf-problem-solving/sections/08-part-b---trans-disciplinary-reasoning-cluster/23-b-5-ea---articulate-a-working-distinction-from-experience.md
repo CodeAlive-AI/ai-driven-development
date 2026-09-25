@@ -48,6 +48,8 @@ Keep a productive tension long enough to unfold it. “I was invited to choose, 
 
 First give the participant room to develop their own expression. A listener can then offer a tentative reformulation when it helps, making it easy to reject, amend or leave unfinished. If agreement merely repeats the listener's words, ask what the participant can now add or correct. Return to their words and the occasion when the suggestion prevents that contribution. Record a phrase when it prevents losing the developing point or supports another participant's use; no separate form is required for an ordinary conversation.
 
+Test a proposed interpretation or remedy on the originating episode. If following it would leave the participant's concern untouched, reopen the interpretation. Use the dialogue, document or work already available before asking the participant to supply more material. Ask for a genuinely missing fact when it could change the next move; do not make the participant prove a diagnosis that neither party has yet developed. Their correction can identify the limit of the listener's account without establishing a rival explanation. B.5.PI keeps that opening connected with inquiry into the work.
+
 #### B.5.EA:4.3 - Let concrete episodes change the candidate distinction
 
 Return to the details that now matter. If another relevant episode is available, examine what each one contributes. One can reveal a relation the other made difficult to notice. Try the relation on the other episode and inspect both its contribution and its failure to fit.
@@ -105,6 +107,12 @@ If the teacher later notices that the waiting learners lacked a diagram supplied
 A craft practitioner describes an operation by tracing a brief path with one hand and saying “it catches here”. A colleague interprets this as a property of the finished shape. Repeating the gesture while describing the encountered resistance reveals that the practitioner means a transition during the operation.
 
 The colleague asks which change in the work occurs at that point and can now inspect that transition. The gesture helped develop the description; it did not by itself establish a physical cause. The applicable craft or physical account supplies that later explanation.
+
+#### B.5.EA:5.4 - A clearer help form misses the concern
+
+A reader objects to guidance that begins “when you notice a difficulty, ask for help”. The listener offers a more visible help form. The reader rejects this but cannot name a better method. The available exchange already permits one test: would the proposed form change the situation of a worker who regards the result as ordinary and never seeks help? It would not.
+
+The listener preserves that difference and examines how the work could first become a question, using B.5.PI. If the reader can only point to the passage and cannot continue, the passage and unresolved concern can remain as an early cue in the existing conversation. A polished paraphrase does not close the concern, and a new explanation is not yet established merely because the first one failed.
 
 The cases are constructed; their supplied subject details are the basis for the illustrated conclusions.
 

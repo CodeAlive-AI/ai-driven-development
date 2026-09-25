@@ -161,7 +161,7 @@ Assignment does not prove classification unless the kind's signature uses that i
 | Local kind, declaration, classification, and extension | `C.3`, `C.3.1`, `C.3.2` | system-role kind, `KindSignature`, four-input judgment, optional extension, and kind-continuity decision |
 | System-role assignment | `A.2.1`, `A.6.5`, `A.6.REL` | direct species, exact participants, predicate, applicability, and uninterrupted occurrence identity |
 | Assignment state | `A.2.5` | exact assignment occurrence, `SystemRoleAssignmentStatePredicate`, `SystemRoleAssignmentStateRelation` occurrence, and its maximal truth interval; target evaluation window, assertion polarity, evidence, and reliance remain separate |
-| Capability | `A.2.2` | holder, capability instance, envelope, measures, currentness, and fit predicate |
+| Capability | `A.2.2` | holder, qualified ability claim, work conditions, attained bounds, currentness and fit predicate |
 | Relations among system-role kinds | `A.2.7`, `C.3.1` | exact kind participants and substitution, incompatibility, bundle, or monotonic qualification relation |
 | Description and naming | `F.4`, `F.5`, `F.18` | kind, `SystemRoleKindDescription`, names, and publication or access carrier |
 | Method and Work | `A.3`, `A.13`, `A.15.1`, `F.6` | Method and MethodDescription; exact actual performer recovered through A.13; independently admitted Work occurrence; assignment and F.6 attribution only when precise assignment-bound attribution is expressly consumed |
@@ -235,16 +235,16 @@ KindSignature@ReviewerSystemRole/e3:
   EntityOfConcern: ReviewerSystemRole
   candidateValueKind: U.System
   membershipCriterion:
-    one current A.2.2 capability instance has the candidate system as holder,
-    names substantive-review Work or its review-judgment result class,
-    and satisfies its declared envelope, measures, and currentness;
+    the candidate system can perform substantive-review Work or produce
+    the review-judgment result class under the declared conditions and bounds;
+    the A.2.2 ability assertion has the support and currentness required here;
     the current JournalReview capability-fit predicate confirms the submission,
     review-phase, and judgment-quality conditions for this slice
   sliceApplicabilityConditions:
     the submission, review phase, and temporal selector
   effectiveReferenceScheme: JournalReview-Scheme-2026/e3
   assumptionsAndDependencies:
-    the capability instance, currentness condition, and capability-fit predicate
+    the qualified holder-ability claim, its currentness condition and capability-fit predicate
 ```
 
 The capability and fit predicate are governed under A.2.2. They are features used by the criterion, not substitutes for the kind or judgment. One application can therefore state:

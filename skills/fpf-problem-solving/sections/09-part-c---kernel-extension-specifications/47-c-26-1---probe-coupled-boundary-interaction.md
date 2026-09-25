@@ -198,7 +198,7 @@ When relation wording is load-bearing, do not mint a relation token here. Use `A
 | Service split | Splitting Checkout and Payment changes recovery paths and support load, so the split is part of the phenomenon being evaluated. | If the split only reduces deployment coupling with no probe/export effect, use ordinary boundary and quality patterns. |
 | Incident metric | Publishing "cache failover is the primary risk" shifts attention, staffing, and reproduction work. | If the metric is only a report of already-carried evidence, use `A.10` for any source-recovery or bounded-reliance question, and `B.3` only for an actual named assurance claim. |
 
-The positive examples are intentionally ordinary. QL value here is not exotic formalism; it is noticing that a read, metric, workshop, or interface often participates in the state it later claims to report.
+The positive examples establish probe-coupled interaction readings. Use those results without QL wording when the ordinary subject patterns carry the case, as CC-C26.1.4 permits. Retain QL only when the additional C.26 activation test establishes one named contextual-model obstruction that survives those patterns and changes the admissible inference or action.
 
 #### C.26.1:4.9 - Evidence posture for probe-coupled claims
 
@@ -208,10 +208,10 @@ Use the least-committing evidence posture that still supports the intended use.
 | --- | --- | --- |
 | `QLP-0` recognition | Flag a likely probe-coupled situation for local discussion. | Meeting note, dashboard screenshot, issue comment, context-map draft. |
 | `QLP-1` local working use | Change a local probe/order/frame, bridge note, or boundary decision in a team setting. | Before/after labels, changed tickets, changed dashboard query, changed escalation path, changed architecture note. |
-| `QLP-2` decision-bearing / reusable use | Publish as a repeatable FPF example or organization guideline, or use the reading in a local decision with consequence. | Multiple cases, comparison with ordinary routes, named uncertainty, near-miss cases. |
-| `QLP-3` assurance or reusable-law use | Use in release, audit, contractual, reusable-law, or high-impact decision support. | Evidence graph, measurement method, assurance tuple, traceable source references, rival explanation comparison. |
+| `QLP-2` decision-bearing use | Use a probe-coupled reading for a named boundary, probe, export, or other decision whose answer needs more than the current local account. | The action-changing rival explanations, declared loss and receiving-use limits, and observations or comparisons that this decision consumes; reuse adequate existing contributions. |
+| `QLP-3` assurance use | Answer a named assurance question about the probe-coupled claim, its empirical adequacy, or comparative advantage. | The applicable A.10 and B.3 support for that conclusion, with C.16 measurement or a Bridge/loss account only where the conclusion relies on it; retain adequate existing support and its limits. |
 
-Do not make `QLP-3` the ordinary entry cost. Most practical C.26.1 use lives at `QLP-0` or `QLP-1`, with escalation only when the output is reused or carries higher consequence.
+Do not make `QLP-3` the ordinary entry cost. Recognition or local working use may remain at `QLP-0` or `QLP-1` when its account is sufficient. Select additional support from the receiving conclusion under C.26:12b; publication, reuse, or formal wording alone does not require escalation or recollection of adequate evidence.
 
 ### C.26.1:5 - Archetypal Grounding
 

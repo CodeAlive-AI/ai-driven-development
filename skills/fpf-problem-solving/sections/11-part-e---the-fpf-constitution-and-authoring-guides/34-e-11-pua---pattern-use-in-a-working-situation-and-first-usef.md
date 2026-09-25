@@ -63,12 +63,14 @@ Before making any pattern-use record, answer aloud: “What exactly do I have no
 1. **Recognize the working situation.** Name the subject or relation in ordinary domain language and ask the current practical question. State an exact kind now only when a nearby kind difference can change the pattern or result.
 2. **Inspect one direct pattern.** Read its Problem frame, Problem, Forces, Solution, Consequences, ordinary boundary, and nearest stronger neighbor. Do not select from its title or one trigger word alone.
 3. **Say what useful result would answer the question.** Name the entity, obtaining relation, honest interim entity, or blocker plainly enough to distinguish it from a plan, description, recommendation, work occurrence, or nearby value. Name the Method, plan, dated Work, Transformation, evaluation, decision, or later-use object relative to which it is a result only when the phrase depends on that object. Add an exact kind, predicate, pattern locator, `ClaimGraph`, or category-correct basis only when ambiguity or replay makes it necessary.
-4. **Use the pattern's `Solution`.** A person or assisting system follows the guidance under its stated conditions. Name a system-role classification or assignment only when that claim matters; it necessarily matters for a precise Agent or actual-Work performer claim because A.13 requires both in the performer core. If actual Work is current, first recover every precise performer's A.13 core; A.15.1 then independently admits the dated Work from the exact performance history, enacted Method, extent, and containing-System relation. Add F.6 afterward only when this use needs precise assignment-bound attribution through the same obtaining A.13 assignment; otherwise the Work-only account stops after A.15.1. Identify a Method, authority, responsibility, or another independent value only when its own claim is current. A responsibility claim names its predicate and participants, or the A.6.RCD missing governor; routine pattern use needs no such expansion. Use A.15.PROD only when the Work and its changes first constituted an entity.
+4. **Use the pattern's `Solution`.** A person or assisting system follows the guidance under its stated conditions. Name a system-role classification or assignment only when that claim matters; it necessarily matters for a precise Agent or actual-Work performer claim because A.13 requires both in the performer core. If actual Work is current, first recover every precise performer's A.13 core; A.15.1 then independently admits the dated Work from the exact performance history, enacted Method, extent, and containing-System relation. Add F.6 afterward only when this use needs precise assignment-bound attribution through the same obtaining A.13 assignment; otherwise the Work-only account stops after A.15.1. Identify a Method, authority, responsibility, or another independent value only when its own claim is current. A responsibility claim names its predicate and participants, or the A.6.RCD missing governor; routine pattern use needs no such expansion. Use A.15.PROD when the current claim must settle whole or proper-part production Work, Work-attributed first existence, or production completion; apply only the branch that answers that claim.
 5. **Check what now exists or obtains.** Identify the result under the direct pattern whose content defines, constrains, or tests it. A pre-existing entity may instead receive new grounding for the current question. If the expected subject result still does not exist, name the honest interim result and leave the subject expectation open. Do not turn grounding, planning, evaluation, acceptance, publication, or non-agentive change into production.
+   Compare the obtained result with the original receiving use, not only with the selected pattern's expected output. At an existing demonstration or handover, inspect what the result now enables and any extra adjustment needed to make it usable. If the account leaves a consequential difference unexplained, B.5.PI helps form the inquiry; the user need not already know an anomaly label or another PatternID. A reported concern is not closed by a correct answer to a substitute question. B.5.EA helps recover what the formulation lost. Use the available episode and text before asking the participant to supply a diagnosis. An adequate direct result still finishes this use without an extra audit.
+
 6. **State the immediate continuation only as needed.** Name a later use, stronger neighboring pattern, or unresolved clarification in conversation. Materialize an expectation, basis, result, flow, provenance, or boundary episteme only when a named later use needs it to remain addressable.
 7. **Stop or return.** Stop when the smallest useful result, honest interim entity, or exact blocker answers the current question at the precision that use needs. Return when the concern, basis, expected entity, direct pattern, relation, or later-use condition changes. A genuine stop needs no receiver.
 
-The practical delta has three honest forms. A new entity or relation occurrence becomes current under its own rule and basis; A.15.PROD enters only for an exact Work-attributed first-constitution claim. A pre-existing entity remains unchanged while a grounding finding becomes adequate for this use. Or the expected subject result remains absent while an honest interim result and return condition become explicit.
+The practical delta has three honest forms. A new entity or relation occurrence becomes current under its own rule and basis; use the applicable A.15.PROD branch only when a production-work, Work-attributed first-constitution or completion claim is current. A pre-existing entity remains unchanged while a grounding finding becomes adequate for this use. Or the expected subject result remains absent while an honest interim result and return condition become explicit.
 
 #### E.11.PUA:4.2 - Reliance profiles
 
@@ -140,7 +142,7 @@ PatternUseApplicabilityFinding@Context <: U.Episteme
 
 `@Context` in these legacy support-species names is a compatibility and retrieval suffix. It names no `U.BoundedContext`, universal situation, project container, relation, or identity field. Every support episteme follows C.2.1 identity. Claim scope, bounded model use, project work, qualification window, and other working conditions enter only through the exact neighboring object and direct relation needed by the receiving use.
 
-The defining `ClaimGraph` located at PUA states the practical-question, optional compact-trace, candidate-basis, candidate-support-episteme, candidate-rationale, result-expectation, result-closure-finding, and dependent-use-disposition-finding schemas. The exact rule content at `E.11` states public-card comparison rationale; `E.11.PUR` states fit, applicability, recommendation, coordination rationale, coordination, and ordering. The candidate-basis, additional-basis, and ordering relation declarations use A.6.5 SlotSpec discipline; A.6.5 does not define those relations' identity. PUA findings cite the result predicate, defining or constraining `ClaimGraph`, pattern locator, and one category-correct direct basis. In the local-claim branch they keep the A.6.RCD derivation-rule locator distinct from every base-predicate `ClaimGraph` locator. They introduce no result or actual-use relation kind.
+The defining `ClaimGraph` located at PUA states the practical-question, optional compact-trace, candidate-basis, candidate-support-episteme, candidate-rationale, result-expectation, result-closure-finding, and dependent-use-disposition-finding schemas. The exact rule content at `E.11` states public-card comparison rationale; `E.11.PUR` states fit, applicability, recommendation, coordination rationale, coordination, and ordering. A candidate basis is an ordinary C.2.1 claim about the exact candidate when that addressable account is needed. It cites actual supporting claims, independently obtaining relations or evidence uses under their own definitions. It introduces no generic candidate-basis or additional-basis U.Relation. PUR separately governs prospective coordination and precedence. Its result-dependent readiness claim consumes a current PUA closure, including an adequate earlier result; the prospective ordering relation itself does not require that result already to exist. PUA findings cite the result predicate, defining or constraining `ClaimGraph`, pattern locator, and one category-correct direct basis. In the local-claim branch they keep the A.6.RCD derivation-rule locator distinct from every base-predicate `ClaimGraph` locator. They introduce no result or actual-use relation kind.
 
 #### E.11.PUA:4.3 - Question, boundary, and expectation
 
@@ -163,7 +165,8 @@ PatternUseBoundaryCondition@Context <: U.Episteme:
   editionId
   boundaryConditionKind: candidateAdmission | minimumUsableResult | stop | return | wrongTurnRecovery | strongerNeighbor | missingGovernor | missingInformation | costEscalation | reversibilityEscalation | receivingPatternContinuation
   conditionDescriptionRef: U.EpistemeRef
-  relationFunctionClaimRef: U.EntityRef, referencing the exact defining or constraining ClaimGraph in the pattern episteme used for the boundary
+  relationFunctionRuleEpistemeRef: U.EpistemeRef, resolving the exact episteme edition whose ClaimGraph defines or constrains the boundary
+  relationFunctionClaimAddress?: C.2.1 ClaimAddress, only when the receiving use needs one uniquely resolvable intrinsic claim in that edition
   conditionalNextQuestionPatternLocator?: U.EntityRef, locating one exact FPF pattern episteme
   conditionalReceivingPatternPositionKindRef?: U.KindRef
   conditionalReceivingPatternPositionRef?: U.EntityRef
@@ -194,37 +197,27 @@ The flow position is a descriptive PUA position. `intendedUseClaimRef`, `intende
 
 #### E.11.PUA:4.4 - Candidate basis under named reliance
 
-Construct a durable candidate only after inspecting the direct pattern's Problem frame, Problem, Forces, Solution, Consequences, and ordinary boundary. A public README template can supply a reusable starting point, but current project values come from the exact EntityOfConcern, practical question, effective reference scheme, and any current claim-scope, project-work, model-use, qualification-window, or other direct relation named by value.
+Construct a durable candidate only after inspecting the direct pattern's Problem frame, Problem, Forces, Solution, Consequences and ordinary boundary. When a named reliance needs its basis addressable, state one ordinary C.2.1 claim whose EntityOfConcern is that exact CandidatePatternUse episteme. Say which direct Solution content and case facts support using the pattern for this practical question and expected result, with their applicability and unresolved or contradicted premises. Ordinary conversational use need not materialize this account.
+
+An optional representation of the basis claim is:
 
 ```text
-CandidatePatternUseBasisRelation@Context <: U.Relation:
-  publicTemplateRef?: U.EpistemeRef, referencing one PublicCandidatePatternUseTemplate@FPFReadme
-  directPatternRef: U.EntityRef, referencing one exact FPF pattern episteme
-  directSolutionSectionRef: U.EntityRef, referencing the E.17 PublicationUnit containing the direct pattern's Solution
-  entityOfConcernRef: U.EntityRef
-  entityOfConcernKindRef: U.KindRef
-  practicalUseQuestionRef: U.EpistemeRef, referencing one PracticalUseQuestion@Context
-  problemCardRef?: U.EpistemeRef, referencing one C.22.2 ProblemCard episteme
-  resultExpectationRef: U.EpistemeRef, referencing one PatternUseResultExpectation@Context
-  additionalBasisRelationRefs[]?: U.EntityRef, each referencing one CandidatePatternUseAdditionalBasisRelation@Context
-  candidatePatternUseRef: U.EpistemeRef, referencing one CandidatePatternUse@Context
-  RelationRefKind: U.EntityRef
-  Direction: <entityOfConcernRef, practicalUseQuestionRef, directPatternRef> -> candidatePatternUseRef
-  Dependence: local to the exact direct pattern, question, expectation, candidate editions, and any additional basis relation named below
-  Identity: <entityOfConcernRef, practicalUseQuestionRef, directPatternRef, directSolutionSectionRef, resultExpectationRef, candidatePatternUseRef>
+Candidate basis claim:  // ordinary C.2.1 episteme; local description, no new U-kind
+  entityOfConcernRef: U.EpistemeRef, referencing the exact CandidatePatternUse@Context
+  claimGraph: U.ClaimGraph by value
+  referenceSchemeRef: U.ReferenceSchemeRef
+  directPatternRef: U.EpistemeRef
+  directSolutionContentRef: exact content supporting this candidate
+  supportingClaimRefs[]?: U.EpistemeRef
+  supportingRelationRefs[]?: references to independently obtaining direct relations
+  supportingEvidenceUseRefs[]?: exact evidence-use references under their own rules
+```
 
-CandidatePatternUseAdditionalBasisRelation@Context <: U.Relation:
-  candidatePatternUseRef: U.EpistemeRef, referencing one CandidatePatternUse@Context
-  basisValueRef: U.EntityRef
-  basisValueKindRef: U.KindRef
-  basisRelationSignatureRef?: U.EntityRef, referencing one U.Signature
-  basisPatternLocator: U.EntityRef, locating the exact FPF pattern episteme whose content defines or constrains the basis relation
-  basisUseDescriptionRef: U.EpistemeRef
-  RelationRefKind: U.EntityRef
-  Direction: basisValueRef -> candidatePatternUseRef for basisUseDescriptionRef
-  Dependence: local to the candidate, basis value, exact governing relation, and their current editions
-  Identity: <candidatePatternUseRef, basisValueRef, basisValueKindRef, basisRelationSignatureRef if present, basisUseDescriptionRef>
+The claim states how each cited object supports the candidate's question and expectation. It keeps each object's kind and the asserted use recoverable; a generic “additional basis” wrapper supplies neither. A README template can supply a reusable starting point, while case facts come from the actual subject, practical question, effective scheme and action-changing working conditions.
 
+Reference respelling that still designates the same source changes no source referent. Added evidence can change support without changing that source. A richer display may preserve the episteme, whereas changed claim content, EntityOfConcern or effective ReferenceScheme is assessed under C.2.1 and can identify a different candidate or basis episteme. A direct basis relation remains a separate option only when a receiver needs its occurrence and its participants, predicate and identity are independently settled under A.6.REL.
+
+```text
 CandidatePatternUse@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef
   entityOfConcernKindRef: U.KindRef
@@ -244,7 +237,7 @@ CandidatePatternUse@Context <: U.Episteme:
   returnBoundaryRef: U.EpistemeRef, referencing one PatternUseBoundaryCondition@Context
 ```
 
-Each additional basis relation names its exact value, kind, relation signature when current, predicate, defining or constraining `ClaimGraph`, pattern locator, and use in this candidate. The public template is absent when the candidate was formed by direct pattern inspection without a README template. `directSolutionSectionRef` is the Solution section of `directPatternRef`; no redundant solution-MethodDescription ref is retained. A project-tailored MethodDescription is a separate `U.MethodDescription` under A.3.2. If dated Work first constitutes that episteme and the inception claim matters, state the exact A.15.PROD assertion; any derivation or reuse relation to the direct pattern episteme remains separate. Applicability, recommendation, and coordination remain exact E.11.PUR assertions.
+The public template is absent when the candidate was formed by direct pattern inspection without a README template. `directSolutionSectionRef` is the Solution section of `directPatternRef`; no redundant solution-MethodDescription ref is retained. A project-tailored MethodDescription is a separate `U.MethodDescription` under A.3.2. If dated Work first constitutes that episteme and the inception claim matters, state the exact A.15.PROD assertion; any derivation or reuse relation to the direct pattern episteme remains separate. Applicability, recommendation, and coordination remain exact E.11.PUR assertions.
 
 #### E.11.PUA:4.4.1 - Rationale subjects stay distinct
 
@@ -260,6 +253,18 @@ CandidatePatternUseRationale@Context <: U.Episteme:
 ```
 
 Candidate rationale has one candidate subject. The `ClaimGraph` located at `E.11.PUR` defines the coordination-rationale schema over a declared candidate set. The `ClaimGraph` located at `E.11` defines the public-card comparison-rationale schema over one public guidance episteme before a project candidate is constructed. No rationale episteme is a universal bag.
+
+#### E.11.PUA:4.4.2 - Joint-success candidate and its premises
+
+A candidate proposes using A.9 to compute the probability that both named components succeed, with marginals 0.9 and 0.8. The expected product 0.72 is supported by A.9's joint-success case only when the independence premise and the model's applicability to these events hold.
+
+| Case basis | Claim about this candidate |
+| --- | --- |
+| Independence and applicable marginals are established for the named events and window. | The product-law basis supports the expectation. Applying the law is still the subject operation; the candidate claim is not its delivered result. |
+| Dependence is established, for example P(B given A)=0.7 rather than P(B)=0.8. | That fact defeats this independence-based product expectation. Recover the applicable joint model; do not keep 0.72 by citing the same pattern. |
+| The dependence information is missing. | This stated basis remains unresolved. Name the missing premise instead of asserting either independence or its negation. |
+
+PUR can use those claims in its existing fit/applicability judgement without requiring a fused basis relation. Spelling an A.9 reference differently while resolving the same source does not change the support's referent. Changing the candidate's expected event from “both” to “at least one” changes its claim content; the product expectation cannot be retained as though only the reference display changed. Under the independent alternative-success model in A.9, the corresponding value would be 0.98, requiring that different candidate content and result basis. Neither basis claim authorizes Work, delivers the result, or supplies a result-closure finding.
 
 #### E.11.PUA:4.5 - Actual-result closure and receiving-use disposition
 
@@ -290,7 +295,7 @@ PatternUseResultClosureFinding@Context <: U.Episteme:
 
 The three flow-position values are descriptive PUA positions, not kinds, relations, or occurrence identities. The finding's claim graph names the result entity, its exact predicate, defining or constraining `ClaimGraph`, pattern locator, the object relative to which the result wording is true, and exactly one direct-basis branch. For a direct relation occurrence it names predicate, participants, applicability, obtaining, occurrence identity, and defining `ClaimGraph`. For an A.6.1 binding it names operation, application, argument or result binding, and its defining `ClaimGraph`. For an A.6.RCD local C.2.1 claim, the relation-or-binding locator is absent; the claim ref, polarity, substrate or constructor, base predicates, their `ClaimGraph` locators, participants, case facts, and any support or warrant required by the dependent use are recoverable, with the derivation-rule locator named separately. The claim does not obtain. If the result itself is a relation occurrence, `entityOfConcernRef` and `resultDirectBasisRef` may designate that same occurrence. The closure finding reports those facts; it creates none of them.
 
-Open A.15.PROD only when the closure claims that exact dated Work, through independently identified actual changes and the applicable identity rule, first constituted an entity. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its exact subject assertion and defining `ClaimGraph`; a non-agentive change needs no production claim. Completion, evaluation, acceptance, publication, continuation, and later use remain separate. If the claimed result existed already, use `4.6` instead. If no direct basis is recoverable, retain the independently identified entity and return the exact `missingGovernor` or `missingInformation` boundary rather than minting a closure relation.
+Open the A.15.PROD branch needed by the closure: production-work participation, Work-attributed entity inception, or production completion. An inception claim requires independently identified dated Work, actual changes and the applicable identity rule. A completion claim keeps subject-state satisfaction separate from the governor that closes the production Work. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its exact subject assertion and defining `ClaimGraph`; a non-agentive change needs no production claim. Completion, evaluation, acceptance, publication, continuation, and later use remain separate. If the claimed result existed already, use `4.6` instead. If no direct basis is recoverable, retain the independently identified entity and return the exact `missingGovernor` or `missingInformation` boundary rather than minting a closure relation.
 
 Path slice and `DesignRunTag` are both present only when the exact result-bearing position and its one TFS are already recoverable under E.18; otherwise both are absent. These fields are provenance cues, not identifiers for another TFS, a network, or a cross-flow relation.
 
@@ -375,7 +380,7 @@ FinalPracticePatternUseTestResult@Context <: U.Episteme:
   referenceSchemeRef: U.ReferenceSchemeRef
   editionId
   practicalUseQuestionRef: U.EpistemeRef, referencing one PracticalUseQuestion@Context
-  selectedCandidatePatternUseBasisRelationRef: U.EntityRef, referencing one CandidatePatternUseBasisRelation@Context
+  selectedCandidateBasisClaimRef: U.EpistemeRef, whose EntityOfConcern is the selected CandidatePatternUse@Context and whose ClaimGraph states the §4.4 basis
   selectedFirstResultExpectationRef: U.EpistemeRef, referencing one PatternUseResultExpectation@Context
   selectedFirstResultGroundingState: SelectedFirstResultGroundingStateValue
   selectedFirstResultFlowPosition: PatternUseResultFlowPositionValue
@@ -390,16 +395,16 @@ FinalPracticePatternUseTestResult@Context <: U.Episteme:
   explicitUnknownDescriptionRef: U.EpistemeRef
   minimalClarificationPatternRef: U.EntityRef, referencing one exact FPF pattern episteme
   expectedClarificationResultKindRef: U.KindRef
-  demonstrativeSliceRef?: U.EpistemeRef, referencing one post-qualification DemonstrativeUnfoldingSlice@Context that shows these existing descriptions
+  demonstrativeSliceRef?: U.EpistemeRef, resolving a post-qualification C.2.1 description episteme about the admitted CGUS that shows these existing descriptions
 ```
 
-Each practice continuation description states an action or proposed use, the expected result and its kind, the full PatternID and pattern name, and the condition under which that continuation is current. Its `entityOfConcernRef` resolves to the same selected `CandidatePatternUse@Context` as the test result. The test passes only when at least one of the three to five descriptions has `continuationDisposition=branch` or `return`, the final continuable work position is explicit, and one consequential unknown names the minimum clarification pattern and expected clarification-result kind. The selected basis relation resolves to that same candidate; the candidate names the same question and expectation as the test result, and the expectation and test result name the same descriptive flow position.
+Each practice continuation description states an action or proposed use, the expected result and its kind, the full PatternID and pattern name, and the condition under which that continuation is current. Its `entityOfConcernRef` resolves to the same selected `CandidatePatternUse@Context` as the test result. The test passes only when at least one of the three to five descriptions has `continuationDisposition=branch` or `return`, the final continuable work position is explicit, and one consequential unknown names the minimum clarification pattern and expected clarification-result kind. The selected basis claim concerns that same candidate; the candidate names the same question and expectation as the test result, and the expectation and test result name the same descriptive flow position.
 
 The practice descriptions remain ordinary PUA epistemes whether or not a wider CGUS qualifies. When `demonstrativeSliceRef` is present, that post-qualification slice shows the existing descriptions in its declared display order; it does not create wrapper rows, replace or retype the descriptions, or change the candidate, subject result, or continuable work position.
 
 `SelectedFirstResultGroundingStateValue` is `newlyCurrentSubjectResult | preExistingWithGrounding | expectedSubjectResultAbsent`. Exactly one state branch is filled:
 
-- For `newlyCurrentSubjectResult`, fill `newlyCurrentSubjectResultClosureFindingRef` and leave the other state positions absent. The closure separates the rule under which the result exists or the relation obtains from the basis that makes it this use's result. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its own rule; an actual non-agentive change remains under A.3.4. Cite A.15.PROD only when exact dated Work and its actual changes first constituted an entity under its identity rule.
+- For `newlyCurrentSubjectResult`, fill `newlyCurrentSubjectResultClosureFindingRef` and leave the other state positions absent. The closure separates the rule under which the result exists or the relation obtains from the basis that makes it this use's result. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its own rule; an actual non-agentive change remains under A.3.4. Cite the applicable A.15.PROD branch for a current production-work, inception or completion claim. First existence requires the exact dated Work, actual changes and applicable identity rule; completion remains a separate claim.
 - For `preExistingWithGrounding`, fill both `preExistingResultGroundingFindingRef` and `preExistingGroundingResultClosureFindingRef` and leave the other state positions absent. The grounding finding names the already-existing entity, its paired grounding relation occurrences, and the exact pattern content that defines or constrains each relation. Its separate closure uses another category-correct basis to make that finding the exercise's result; a subject-grounding occurrence alone does not. Cite A.15.PROD only if exact dated Work first constituted the finding episteme. The exercise does not produce the pre-existing entity.
 - For `expectedSubjectResultAbsent`, fill `expectedSubjectResultAbsentInterimResultClosureFindingRef` and leave the other state positions absent. The interim entity keeps its own kind and rule; the closure records the relative object and category-correct basis required by this reliance. It may support later work but does not satisfy the selected subject-result expectation.
 
@@ -495,7 +500,7 @@ The trace measure improved while subject progress worsened. Keep completeness as
 | `PUA-2` | Direct inspection | Problem frame, Problem, Forces, Solution, Consequences, ordinary boundary, and stronger neighbor were inspected. |
 | `PUA-3` | Useful result before apparatus | Ordinary use distinguishes the result, honest interim entity, or blocker from nearby values and reaches a stop or return. Relative-object, exact predicate, pattern locator, basis, and flow position appear only when ambiguity or named reliance needs them. |
 | `PUA-4` | Reliance profile | Ordinary use remains conversational; every materialized support record names the later reliance that needs it. |
-| `PUA-5` | Honest closure | The use distinguishes a newly current result, a pre-existing entity with new grounding, and an interim entity while the expected result remains absent. A materialized closure cites the exact result assertion, direct pattern content, relative object when relevant, and category-correct basis. A.15.PROD appears only for a Work-attributed entity-inception claim. |
+| `PUA-5` | Honest closure | The use distinguishes a newly current result, a pre-existing entity with new grounding, and an interim entity while the expected result remains absent. A materialized closure cites the exact result assertion, direct pattern content, relative object when relevant, and category-correct basis. A.15.PROD appears only for a current production-work, Work-attributed inception or production-completion claim, with that branch's own basis. |
 | `PUA-6` | Work integrity | Every precise performer first has the A.13 core; `U.Work` then names an independently A.15.1-grounded occurrence and is never inferred from planning, setup, authorization, assignment, F.6 attribution, or another Work. Add F.6 only for a current exact assignment-bound attribution through the same obtaining A.13 assignment. A claim that the Work's actual changes first constituted another entity cites A.15.PROD and the work-to-change basis. |
 | `PUA-7` | Later use | The immediate continuation is understandable when current. A materialized realized-use finding cites the exact later object and basis; an intended-use finding asserts no obtaining relation. A genuine stop has no receiver or disposition finding. |
 | `PUA-8` | Return | A changed concern, basis, result, pattern, or use opens a named return instead of silent reinterpretation. |
@@ -541,7 +546,7 @@ The 2026 navigation study is a current preprint anchor rather than settled conse
 
 ### E.11.PUA:12 - Relations
 
-- **Builds on:** `E.11` for public entry, `E.8` for action-guiding pattern form, `E.18` for each TFS-local position and local `DesignRunTag`, `E.18.NET` for a current network, `A.6.P.WMR` and `A.6.RCD` when a relation rule or direct claim cannot be recovered, A.13 for every precise performer core, A.15.1 for independent dated-Work admission, F.6 only for current assignment-bound attribution, A.15.PROD for Work-attributed entity inception, A.15 for wider planning and work coordination, C.2.1 for support epistemes, and A.6.5 for slot discipline.
+- **Builds on:** `E.11` for public entry, `E.8` for action-guiding pattern form, `E.18` for each TFS-local position and local `DesignRunTag`, `E.18.NET` for a current network, `A.6.P.WMR` and `A.6.RCD` when a relation rule or direct claim cannot be recovered, A.13 for every precise performer core, A.15.1 for independent dated-Work admission, F.6 only for current assignment-bound attribution, A.15.PROD for the separately current production-work, Work-attributed entity-inception or production-completion claim, A.15 for wider planning and work coordination, C.2.1 for support epistemes, and A.6.5 for slot discipline.
 - **Coordinates with:** `E.11.PUR` for applicability, recommendation, and coordination; `E.18.1` for accepted problem-to-work carry-through; `E.22` and `E.23` for evaluation and repeated improvement; `G.11` for currentness; and each direct pattern that defines, constrains, or tests the selected result.
 - **Use next when current:** `E.11` when no direct pattern is selected, `E.11.PUR` when recommendation or ordering among several uses is current, and the direct pattern for any result or work claim beyond PUA's boundary.
 

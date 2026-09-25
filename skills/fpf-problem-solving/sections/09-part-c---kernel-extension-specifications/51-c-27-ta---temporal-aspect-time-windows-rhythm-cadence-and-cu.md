@@ -190,12 +190,13 @@ C.27.TA names the source-currentness and validity windows. `G.9`, source-use, ev
 
 An architecture move is expected to reduce an interlevel conflict after two release cycles.
 
-C.27.TA states the recovery-timing claim about the exact architecture claim under the release-cycle reference and window. Use `A.3.4` for the structure-transformation relation, the direct architecture patterns to identify the selected structure and characteristic, and evidence/result patterns for an observed effect.
+C.27.TA states the expected recovery timing for the exact selected structure discussed by the C.30 architecture claim, under the release-cycle reference and window. Use A.22 and the applicable architecture pattern to identify that structure independently; the claim episteme is not its proxy. Use A.3.4 for the proposed structure transformation and evidence/result patterns for any observed effect.
 
 ```text
 TemporalAspectStatementClaimContent:
-  entityOfConcernRef: the exact C.30 architecture claim about the selected interlevel-conflict structure.
-  entityRulePatternCitation: C.30 plus the selected architecture-structure pattern.
+  entityOfConcernRef: the exact independently identified selected structure discussed by the C.30 interlevel-conflict claim.
+  entityRulePatternCitation: A.22 plus the applicable C.30 architecture-structure pattern.
+  sourceOrUseBoundaryRef?: the exact C.30 architecture claim supplying this expected recovery-timing assertion.
   claimOrWorkScopeRef?: exact A.2.6 claim scope for the pump-station operations-service architecture concern during release train R14-R15.
   aspectPredicate: recoveryTiming.
   temporalReference: release train cycle.

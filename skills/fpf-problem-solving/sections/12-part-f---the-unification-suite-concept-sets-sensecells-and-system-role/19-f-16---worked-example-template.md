@@ -3,7 +3,7 @@
 **“Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”**
 **Status.** Architectural pattern.
 **Builds on:** E.10.D1 **Recovering What “Context” Means in Use**; F.1 for the source cut; F.0.1, F.2, F.3, and F.17 for exact source-local meaning when needed; F.7 for an optional comparison surface; F.9 only for actual semantic relations and bounded-use claims; F.10 for windows; F.15 for checks.
-**Coordinates with.** F.12 when a case evaluates promise acceptance; A.10 for evidence use; B.3 only for assurance or material reliance; C.16.P and A.6.RCD when indicator or proxy wording hides a missing relation; E.13 only for optimized or decision-driving proxies; the direct Part C pattern for every illustrated subject; and the A.3, A.15, A.6.1, and B.1.5 method-and-work stack.
+**Coordinates with.** F.12 when a case evaluates promise acceptance; A.10 for evidence use; B.3 only for an actual named assurance claim; C.16.P and A.6.RCD when indicator or proxy wording hides a missing relation; E.13 only for optimized or decision-driving proxies; the direct Part C pattern for every illustrated subject; and the A.3, A.15, A.6.1, and B.1.5 method-and-work stack.
 
 ### F.16:1 - Intent & applicability
 
@@ -47,10 +47,10 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 * **Actual subject** — the value or entity to which a substantive claim applies.
 * **Obtaining relation** — a relation supported for these exact participants; its appearance on the page does not create it.
 * **Source basis** — exact source and edition, passage, and effective reference scheme needed by the claim.
-* **Evidence basis** — observations, source claims, A.10 evidence-use relations, and any separately warranted B.3 reliance limits that support the conclusion.
+* **Evidence basis** — the observations, source claims and independently established direct relations supporting the conclusion, represented in A.10's descriptive evidence-provenance account with its bounded-reliance disposition. A separately current B.3 assurance claim retains its own result and limits.
 * **Evaluation result** — when the case evaluates a promise or criterion, the result bound by an exact A.6.1 application during evaluation Work, on the result scale declared by the applicable rule.
 * **Receiving use** — the concrete decision, explanation, comparison, or action for which the result is used.
-* **SchemeSenseCell** — an optional F.17 address for a recurring local meaning.
+* **SchemeSenseCell** — the exact F.17 coordinate `<ReferenceScheme by value, LocalExpression, LocalSenseClaim>`. A separate address resolves that coordinate when recurring use needs it.
 * **Comparison table** — an optional F.7 display of exact entries and already obtaining relations.
 * **Window and separation of duties** — F.10 or F.14 constraints included only when time, population, phase, or separation of duties changes the case.
 
@@ -70,11 +70,11 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 
 6. **Obtaining relations.** For each relation, name its exact participants, direction, basis, and loss. Use F.9 only for a real semantic relation between distinct local meanings. Use the defining or testing pattern for MethodDescription membership, enactment, performed Work, measurement, evidence, fulfilment, kind, assignment, publication, transformation, and any load-bearing indicator relation. If proxy wording names no supported relation, use C.16.P and stop at A.6.RCD `missing-governor`.
 
-7. **Evidence, result, and limits.** Show what observations or sources support the claim and how A.10 uses them. When evaluation is part of the case, show the evaluation Work, enacted Method, exact application and result binding, declared result scale, and any separate F.10 status or optional C.2.1 verdict episteme. Use B.3 only for assurance or material reliance. State what remains outside the conclusion.
+7. **Evidence, result, and limits.** Show the independently established direct relations by which observations or sources support the claim. A.10 describes that path and classifies reliance on it for the bounded use; its fields must supply the evidence required by the claim and its direct rule. When evaluation is part of the case, show the evaluation Work, enacted Method, exact application and result binding, declared result scale, and any separate F.10 status or optional C.2.1 verdict episteme. Use B.3 only for an actual named assurance claim. State what remains outside the conclusion.
 
 8. **Optional comparison surface.** If two or more local meanings or source claims are hard to compare in prose, add one compact F.7 table. State the receiving-use conclusion separately. Omit the table when it adds ceremony but no clarity.
 
-9. **Micro-narrative and checks.** In five to seven lines, walk from the working situation through the actual relations to the result. End with two or three F.15 checks and one explicit non-use boundary.
+9. **Micro-narrative and checks.** Walk briefly from the working situation through the actual relations to the result. End with the few direct subject checks that let the reader replay the claim and one non-use boundary. Add F.15 only when a finite naming slice needs its static or regression checks.
 
 **Memory rule.** If the case cannot fit on one page or slide, reduce it to one claim or split it into linked examples. Do not delete the evidence or relation that makes the claim intelligible merely to preserve the page count.
 
@@ -86,7 +86,7 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 4. **Optional aids.** F.17 cells and F.7 tables appear only when they reduce reader effort and remain evidentially inert.
 5. **Source precision.** Source and edition and the effective scheme are explicit where wording or interpretation changes the claim.
 6. **Temporal honesty.** MethodDescription, Work, observation, and output remain distinct; windows are stated when they change the result.
-7. **Agency precision.** When a system-role claim matters, name the local system-role kind, actual System, obtaining assignment, and performed-Work attribution as applicable.
+7. **Agency precision.** Every asserted dated Work uses the performer's recovered A.13 core and independent A.15.1 admission. The core includes its obtaining assignment; add F.6 only when the worked claim needs precise assignment-bound attribution. Recover a separately needed local-kind or description claim under its own rule.
 8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported; when evaluation occurs, it keeps evaluation Work, operation result, declared scale, EvidenceStatus, RequirementStatus, and optional verdict episteme distinct; and it states what none of them establishes.
 9. **Didactic parsimony.** Every item changes the worked answer; optional machinery is omitted when it does not.
 
@@ -101,11 +101,29 @@ The panel may also be a two-source contrast with **no relation asserted**. A sou
 
 ### F.16:8 - Worked micro-example
 
+#### F.16:8.0 - A complete constructed availability case
+
+**Question and gain.** Does the supplied June observation support the service promise's 99.9% availability threshold? The example separates the measurement and acceptance result from a runbook's approval.
+
+**Inputs and direct rules.** This is a constructed case, not a report of observed service performance. Take as independently admitted inputs the service-delivery Work `Delivery-June` and evaluation Work `Evaluation-July-1`, with their performers' A.13 cores and A.15.1 admissions already established. The exact A.2.3 promise clause `Availability-June` concerns the delivery Work's outcome. Its acceptance specification uses all 43,200 minutes in the 30-day June window, no exclusions, and the rule `availability = availableMinutes / 43200`; `Met` means at least 0.999 and `NotMet` means less. These two values are the declared result scale.
+
+**Observation and basis.** The supplied C.16 observation `Availability-Trace-June` directly concerns the promised available/unavailable characteristic of `Delivery-June`. Under its stipulated complete-coverage measurement basis, exactly the first 40 minutes are unavailable and the remaining 43,160 minutes are available. The observation's subject, characteristic, window, unit and complete coverage are premises of this case; an alarm log without that measurement basis could not replace it. No distinct indicator relation or F.9 correspondence is needed.
+
+**Application and result.** During `Evaluation-July-1`, the declared evaluation Method uses the exact A.6.1 application `Availability-Application-June` with `availableMinutes=43160`, `totalMinutes=43200` and `threshold=0.999`. It returns `43160/43200 = 0.999074074...` and binds `Met` as the acceptance result. If a separately recovered F.10 rule maps `Met` to `RequirementStatus=Satisfied` for this clause and window, that status can be reported; the application result alone is already the worked conclusion.
+
+**Evidence and bounded use.** The descriptive A.10 account cites the exact observation-subject/measurement basis, promise-outcome fit, evaluation application and result-binding facts. Those independently established premises supply the evidence demanded by this acceptance rule, so `pass` is limited to explaining this June result. There is no separately named assurance claim, future-availability conclusion or permission claim.
+
+**Replay and boundary.** The available and unavailable minutes sum to 43,200; 40 unavailable minutes is below the permitted 43.2; and the computed ratio exceeds 0.999. With 50 unavailable minutes the same rule would return `NotMet`. If complete coverage were missing, this worked evidence basis would not support either conclusion; return the rule's missing-evidence question instead of inventing coverage or a pass.
+
+#### F.16:8.1 - Applying the canvas to a multi-source availability case
+
+The following is an application sketch. Supply the named source passages, exact relations, observations and result before claiming it is a completed worked example.
+
 **Title and situation.** *An alarm log does not by itself prove monthly uptime.* Operations has an approved runbook and a month of IEC task and alarm logs; a service report must judge the exact ITIL promise-content claim.
 
 **Worked claim.** June uptime is judged from admissible observations of the promised service outcome over the stated population and window. Alarm and command records may contribute evidence only through explicit relations and coverage limits.
 
-**Actual subjects and routes.** The ITIL promise content and its promise-use, delivery, and fulfilment relations use A.2.3; the service-delivery Work and separate evaluation Work use A.15.1; the exact observations, availability characteristic, scale, and values use C.16; A.6.1 identifies the evaluation application and result binding; F.12 supplies the evaluation shape; A.10 supplies evidence use; and B.3 applies only if assurance is claimed or reliance is material. The runbook is a MethodDescription under A.3.2 only when its claims concern one admitted Method, and its edition is surfaced here only if it changes the evaluation result or replay.
+**Actual subjects and routes.** The ITIL promise content and its promise-use, delivery, and fulfilment relations use A.2.3; the service-delivery Work and separate evaluation Work use A.15.1; the exact observations, availability characteristic, scale, and values use C.16; A.6.1 identifies the evaluation application and result binding; F.12 supplies the evaluation shape; A.10 describes the independently established evidence relations and qualifies the bounded reliance; and B.3 applies only when an actual named assurance claim is current. The runbook is a MethodDescription under A.3.2 only when its claims concern one admitted Method, and its edition is surfaced here only if it changes the evaluation result or replay.
 
 **Source basis.** Cite the ITIL edition and promise passage, IEC edition and task and alarm passages, observation source and procedure, and any source-local meaning needed to interpret *availability* or *alarm*.
 
@@ -122,9 +140,9 @@ The panel may also be a two-source contrast with **no relation asserted**. A sou
 - Use **F.1** for the exact source cut and **F.0.1** and **F.17** for each local claim or durable address actually needed by the case.
 - Use **F.7** only for a readable comparison surface and **F.9** only for relations that actually obtain between exact local meanings, together with the separate bounded-use claim.
 - Use **E.10.D1** to replace vague *context* wording with the source, scheme, scope, model use, working situation, comparison basis, or other value that changes the case.
-- Use **F.10** for windows and **F.15** for the small set of replayable checks.
+- Use **F.10** for status claims and their windows. Use each direct subject rule for the worked checks; add **F.15** only for the example's finite naming slice.
 
-**Coordinates with:** F.4 and F.6 only when a local system-role kind, assignment, or performed-Work attribution is actually part of the case; A.10 for evidence use; B.3 only when assurance is claimed or reliance is material; and the direct Part C pattern for every illustrated subject and relation.
+**Coordinates with:** F.4 and F.6 only when a local system-role kind, assignment, or performed-Work attribution is actually part of the case; A.10 for evidence use; B.3 only when an actual named assurance claim is current; and the direct Part C pattern for every illustrated subject and relation.
 
 **Constrains:** A cross-domain example may use this canvas or a faithful reduction. It names claim and gain first, actual values and relations next, and optional aids last. It never treats a lexical cell, table row, page layout, or generic Bridge as proof.
 
@@ -147,7 +165,9 @@ The panel may also be a two-source contrast with **no relation asserted**. A sou
 | **AP-9** | Evidence silence | The result appears without observations, source claims, or reliance basis. | Confidence cannot be assessed. | Show evidence use, limits, and non-use boundary. |
 | **AP-10** | Ontologist’s shorthand | Predicate notation replaces an ordinary explanation. | Precision becomes inaccessible to the cold reader. | Lead with plain language; retain compact notation only when it genuinely shortens a repeated calculation. |
 
-### F.16:12 - Extended worked micro-examples
+### F.16:12 - Cross-domain application sketches
+
+These sketches select claims and routes for a later worked case. They become replayable examples only after their exact local meanings, subject facts, source passages, observations and results are supplied.
 
 #### F.16:12.1 - OWL class and FCA formal concept
 
@@ -159,13 +179,13 @@ Recover both exact local claims. State the actual relation, if any, between thei
 
 **Situation and claim.** The same System performs Work under a local operator system-role assignment and also has permissions grouped by an RBAC role. The claim is that these are different subjects even when both use the word *role*.
 
-Use F.4 and F.6 for the local system-role kind, System, obtaining assignment, and performed-Work attribution. Use the access-control pattern for the permission grouping. Use E.10.ROLE and F.0.1 for the trigger word. State any separation-of-duties constraint directly. No disjointness or sameness follows from a table row or from spelling.
+Recover the local system-role kind under A.2 with C.3 and the exact assignment under A.2.1. For claimed dated Work, recover the performer's A.13 core and independently admit the Work under A.15.1; add F.6 only for precise attribution through that same obtaining assignment. F.4 supplies a kind description only when one is needed. Use the access-control pattern for the permission grouping, E.10.ROLE and F.0.1 for the trigger word, and the direct rule for any separation-of-duties constraint. A table row or shared spelling establishes neither sameness nor disjointness.
 
 #### F.16:12.3 - Method description, Work, and service promise
 
 **Situation and claim.** A build MethodDescription contains a target duration; dated build Work occurs; observations report actual duration; a service promise is evaluated for a calendar week.
 
-Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and evaluation Work and any Method enactment, C.16 for observations and measured values, A.2.3 and F.12 for promise evaluation, A.6.1 for the exact evaluation application and result binding, A.10 for evidence use, and B.3 only for assurance or material reliance. Cite the MethodDescription edition only if it changes the result or replay, and state separately whether the Work used it. A comparison table may show promised and observed values, but it establishes neither Work, result, status, nor a verdict episteme.
+Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and evaluation Work and any Method enactment, C.16 for observations and measured values, A.2.3 and F.12 for promise evaluation, A.6.1 for the exact evaluation application and result binding, A.10 for a descriptive account of independently established evidence relations and bounded reliance, and B.3 only for an actual named assurance claim. Cite the MethodDescription edition only if it changes the result or replay, and state separately whether the Work used it. A comparison table may show promised and observed values, but it establishes neither Work, result, status, nor a verdict episteme.
 
 ### F.16:13 - Safe reasoning moves
 
@@ -174,7 +194,7 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 3. **Name actual subjects.** Replace vague words with the Systems, epistemes, Methods, Work, claims, observations, values, kinds, or assignments actually involved.
 4. **Route relations.** Name the defining or testing pattern for each relation. For an alleged proxy, first test direct measurement; if a distinct indicator relation is needed and no rule supplies it, return A.6.RCD `missing-governor`.
 5. **Recover local wording.** Cite the source, edition, and scheme; add F.17 only when recurring use needs an address.
-6. **Show evidence and evaluation.** Explain how A.10 uses the evidence. When evaluation occurs, show the evaluation Work, Method, application, result binding, declared scale, separate F.10 status, and optional verdict episteme as applicable; use B.3 only for assurance or material reliance.
+6. **Show evidence and evaluation.** Recover the direct evidence-use relations, their descriptive A.10 account and its bounded-reliance disposition. When evaluation occurs, show the evaluation Work, Method, application, result binding, declared scale, separate F.10 status, and optional verdict episteme as applicable; use B.3 only for an actual named assurance claim.
 7. **Use aids sparingly.** Add an F.7 table only when it lowers reading cost; never infer from layout.
 8. **State limits.** Include direction, loss, window, population, uncertainty, or non-use boundary that changes the conclusion.
 9. **Replay.** Run two or three focused checks that target the case's real risks, including result and status separation when evaluation is present.
@@ -187,7 +207,7 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 * **SCR-F16-S02 (actual subjects).** No cell, row, label, or record substitutes for an actual value.
 * **SCR-F16-S03 (direct relations).** Every substantive relation names its exact participants and cites the pattern that defines or tests it; unsupported proxy wording ends at A.6.RCD `missing-governor`.
 * **SCR-F16-S04 (conditional F.9).** F.9 appears only for a real relation between distinct local meanings.
-* **SCR-F16-S05 (source and evidence).** Exact sources and editions and the A.10 evidence-use basis are visible where they affect the claim; B.3 appears only for assurance or material reliance.
+* **SCR-F16-S05 (source and evidence).** Exact sources and editions and the A.10 evidence-use basis are visible where they affect the claim; B.3 appears only for an actual named assurance claim.
 * **SCR-F16-S06 (optional aids).** Cells and tables are omitted when they do not reduce reader effort and are never evidential.
 * **SCR-F16-S07 (time and agency).** Windows, Work, System, assignment, and attribution are explicit when material.
 * **SCR-F16-S08 (one-page parsimony).** Every included item changes the answer; a larger case is split without losing its basis.

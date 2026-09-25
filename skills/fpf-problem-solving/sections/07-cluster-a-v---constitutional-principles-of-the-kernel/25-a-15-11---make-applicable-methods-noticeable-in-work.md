@@ -14,6 +14,8 @@ The subject is the arrangement that brings a potentially useful method into cons
 
 The first useful result is a method considered at the point where it could help, followed by use, a named unresolved condition or dismissal. Someone arranging the opportunity needs a method that may help, or a specific question about a missed opportunity. The recipient need not already have diagnosed the omission.
 
+When no useful method or meaningful question has yet been identified, B.5.PI helps bring ongoing work into inquiry. Arranging a reminder for a known method does not supply that preceding contribution. The cue arranged here can make that inquiry method available at an ordinary handover or demonstration, without anticipating the particular difficulty it may reveal.
+
 If the useful method is already being considered, continue with selection or application directly. If its description cannot be obtained, repair access. If the performer recognizes the need but cannot perform the operation, obtain that contribution or develop the capability. More reminders alone do not supply it.
 
 ### A.15.11:2 - Problem
@@ -47,6 +49,8 @@ Start from work someone actually does. State what could improve: a choice, a res
 
 Identify the larger method being performed through the selected action and the constituent methods that make that action possible. These methods can be performed together in the same action. Use B.1.5.EW when this connection is unclear. Judge a proposed improvement under the conditions of that encompassing work, including any missing capabilities or resources on which it depends.
 
+When no question has yet been raised, B.5.PI uses an ordinary work occasion to compare a result with its use and develop a question or retain an early cue. Arrange that opportunity without presupposing a particular error.
+
 When the useful contribution is uncertain, examine a small, permitted sample of the work with a relevant practitioner or source. Ask what an available alternative could make possible. C.40 and C.40.CD supply constructive inquiry where the question or method itself needs development. Do not install a standing prompt merely because a topic sounds relevant.
 
 #### A.15.11:4.2 - Make the relevance relation explicit
@@ -66,6 +70,10 @@ Try a nearby case in which the method should not be suggested. If the same cue r
 Choose an existing occasion: preparing a plan, receiving a result, changing a tool, estimating an addition or revisiting a commitment. Put the cue in material used at that occasion, or arrange an intervention by a participant who already attends to it.
 
 Select the means according to the performer. A visible comparison can help a human notice a relation. An organization's existing review meeting can bring a specialist into the choice. A tool can provide relevant instructions to an AI agent when an existing software event occurs. These arrangements share a functional purpose without requiring the same internal mechanism.
+
+A short execution checklist is one possible cue. Give it a real occasion and user, express each check as something that user can inspect, and say what to do when a condition is unmet or cannot be determined. Distinguish checking a known condition from discovering whether the chosen method and its result fit the work. A pattern's Conformance Checklist can supply content, but copying it does not automatically produce a usable execution aid.
+
+For example, before using a calculated amount in a quotation, a check can ask whether the amount is defined for these inputs and means what the quotation requires. An unresolved item leads to examination of that case, not a forced tick. Keep a way to raise a consequential concern that none of the listed checks expresses; use B.5.PI to develop the question and B.5.EA when a participant cannot yet put the difference into words. Passing the listed checks establishes only what those checks support.
 
 Choose timing that preserves the work. An explanation during a difficult movement can disrupt the action it is intended to help; an agreed pause may be the useful occasion. A quiet pointer may suffice where interruption would cost more. Use only observation and access already authorized for this purpose.
 
@@ -135,6 +143,12 @@ The cue makes a coordination question available. It does not establish the cause
 
 Repeating “notice your balance” is unhelpful once the learner already recognizes the difficulty. The next contribution lies in acquisition or execution, not in making the question more prominent. For an artificial performer, the corresponding next contribution must be selected from its own sensing, control and learning methods; a human first-person instruction is not automatically an executable robot instruction.
 
+#### A.15.11:5.4 - A checklist supports a handover without claiming completeness
+
+A laboratory's existing handover requires the recipient to know which sample each result concerns. A short execution check asks the producer to compare the identifiers on the result and the specimen record before transfer. The action for an unresolved match is to recover that correspondence before using the result; a tick without that comparison supplies no assurance.
+
+The identifier check can pass while the recipient still cannot use the result because its unit or measurement condition is unclear. The handover therefore leaves room to name a concern outside the listed checks and obtain the relevant explanation. B.5.PI helps develop the question if neither person can yet state it. The checklist remains useful for its selected condition; it is not enlarged into a claim that every possible problem has been excluded.
+
 ### A.15.11:6 - Bias-Annotation
 
 The person arranging a cue has a candidate method in mind and can mistake its uptake for success. Retain cases where the appropriate outcome is to dismiss the method or continue with a simpler answer.
@@ -153,6 +167,7 @@ For a consequential use, inspect the arrangement and the resulting work:
 - Were any extra explanations or aids retained in the claim about what worked?
 - Does the comparison include the cue's burden and its effect on the encompassing task?
 - Can a useful dismissal, revision or removal count as success?
+- When a checklist carries the cue, can the user inspect its condition and continue when it is unmet, unknown or insufficient for the receiving use?
 
 Use the questions that can change the judgement about this arrangement.
 
@@ -190,6 +205,8 @@ The practice question is how to make a useful method available before a recipien
 
 **Adopt separate questions about immediate assistance and later use.** Teo and colleagues' [AI Assistants Overassist](https://arxiv.org/html/2607.21306v1) (2026 preprint), §§3.1–3.5, separates intervention timing, immediate results and performance on a related problem under different retained contexts. It informs §4.5 and the comparison with no intervention in §4.6. A supplied answer may be the right immediate contribution, while development requires a different comparison. The simulated students and context manipulations do not establish parameter learning or human acquisition; the arrangement still needs examination in its receiving work.
 
+**Adapt a checklist to actual execution.** Degani and Wiener, [Human Factors of Flight-Deck Checklists: The Normal Checklist](https://ntrs.nasa.gov/api/citations/19910017830/downloads/19910017830.pdf) (1990), §§3.1.4 and 5.2.2, distinguishes doing items from verifying their state and describes a correct response being given without the corresponding verification. This historical aviation analysis informs §4.3 and §5.4: choose a real occasion, inspect the relevant condition, and give an unresolved item a continuation. A publication's conformance list and a usable execution aid have different jobs. The aviation method does not make any finite list comprehensive for all work; an unlisted concern retains its own path into inquiry.
+
 Reopen the choice when a simpler entry works just as well, a cue repeatedly misfires, changing work defeats its relevance, or a stronger subject method offers the same gain with less disruption. Human learning and automatic recommendation require their own more specific evidence when those are the intended claims.
 
 ### A.15.11:12 - Relations
@@ -197,6 +214,7 @@ Reopen the choice when a simpler entry works just as well, a cue repeatedly misf
 - **A.15.7** chooses an action from the available situation and applicable methods. This pattern constructs an encounter when a relevant possibility repeatedly fails to enter that choice.
 - **A.15.8** examines performer and support dependencies. **A.15.10** retains or reconstructs an interrupted continuation; this pattern can introduce a method that has never belonged to the present work.
 - **B.1.5.EW** recovers the concurrent vertical of methods and work needed to judge the contribution.
+- **B.5.PI** connects ordinary work with inquiry before a known problem or help request; **B.5.EA** develops an unformulated distinction. They supply what merely arranging a known-method cue cannot.
 - **C.40** and **C.40.CD** develop problems and useful possibilities where the candidate relation is still missing.
 - **C.11.CRC** compares the finite change with the current configuration. **C.11.DUA** examines and repairs the demands imposed by advice. **C.11** supplies the resulting choice when it needs explicit treatment.
 - **E.23.CAE** distinguishes explanations of changed performance when that distinction matters; **E.23.CDI** frames development of the required capability.

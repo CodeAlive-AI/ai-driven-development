@@ -459,7 +459,7 @@ FunctionalStructureViewUse ::= {
   selectedTransformationFlowStructureRefs?: FinSet(U.StructureRef constrained to TransformationFlowStructure),
   transformerSideFillerRefs?: FinSet(U.SystemRef),
   candidateBearerRefs?: candidate system refs; explicit gap refs,
-  capabilityRefs?,
+  holderAbilityClaimRefs?: qualified A.2.2 claims about identified holder Systems,
   inputConditionRefs?,
   outputConditionRefs?,
   functionalPortRefs?,

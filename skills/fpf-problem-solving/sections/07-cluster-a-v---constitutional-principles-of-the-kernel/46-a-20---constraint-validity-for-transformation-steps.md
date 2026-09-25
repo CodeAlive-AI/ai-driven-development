@@ -163,7 +163,7 @@ A.20 keeps only the result content needed to reuse the internal-constraint findi
 - `G.11` defines refresh planning and performed refresh work;
 - `C.27` defines temporal-claim adequacy;
 - `A.21` defines check applications, profile use, gate aggregation, and decision consequences;
-- `A.10` and `B.3` define evidence use and assurance; and
+- `A.10` recovers provenance and bounded reliance; the direct support pattern defines each evidence relation and `B.3` governs assurance; and
 - `A.15` defines plans and dated Work.
 
 Citing an A.20 result in one of those claims does not copy that consumer's identity, scheduling, publication, or policy fields into A.20.
@@ -172,7 +172,7 @@ Citing an A.20 result in one of those claims does not copy that consumer's ident
 
 #### A.20:5.1 - Satisfied unit-conversion constraint
 
-`TemperatureConversion-7` converts a Celsius input to kelvin. The named constraint says that the output must equal the input plus 273.15 K and must remain at or above 0 K. It is required for this use. For input 25 °C, the test obtains 298.15 K and a non-negative result, so the outcome is `satisfied`. The witness records the input, formula edition, output, and test result for this evaluation window.
+`TemperatureConversion-7` converts a Celsius input to kelvin. For the numerical Celsius value `c` and numerical kelvin value `k`, the named constraint requires `k = c + 273.15` and `k >= 0`; the corresponding temperature is `k K`. It is required for this use. For input 25 °C, the test obtains 298.15 K and a non-negative result, so the outcome is `satisfied`. The witness records the input, formula edition, output, and test result for this evaluation window.
 
 The local summary is `satisfied` because this is the complete required set for the stated case. That result does not say that a release gate passed or that conversion Work occurred.
 
@@ -245,7 +245,7 @@ Constraint truth, knowledge about that truth, and a policy response are differen
 - `A.6.1` and `E.20` define operation and mechanism content whose named constraints may be tested.
 - `A.6.4` defines the retargeting arrow r, the separate bounded-use assertion q, and the separate current-case judgement. A.20 may test q's exact proposition only when it is a named internal constraint; any operation application remains separate.
 - `A.21` consumes exact check results and defines gate-policy consequences without suppressing independent applicable results.
-- `E.17`, `G.11`, `C.27`, `A.10`, `B.3`, and `A.15` define publication, refresh, temporal, evidence, assurance, and Work claims.
+- `E.17`, `G.11`, `C.27`, `B.3`, and `A.15` govern publication, refresh, temporal, assurance and Work claims. `A.10` recovers provenance and bounded reliance on independently established support.
 - `F.9` applies only when an additional semantic correspondence is current.
 - `C.2.1` supplies result-episteme identity.
 

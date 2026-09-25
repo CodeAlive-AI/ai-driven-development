@@ -6,7 +6,7 @@
 
 **Plain-name.** Formality characteristic.
 
-**One-line summary.** `C.2.3` defines **Formality (F)** as one ordinal `U.Characteristic` with polarity `up`, anchored by the default ladder `F0...F9`, and declared as the `F` coordinate of the typed `F-G-R` assurance tuple.
+**One-line summary.** `C.2.3` defines **Formality (F)** as one ordinal `U.Characteristic` with polarity `up`, anchored by the default ladder `F0...F9`, and declared for normative epistemes. An assurance argument consumes F only when its named use needs rigor of expression.
 
 ### C.2.3:1 - Problem frame
 
@@ -45,7 +45,7 @@ Without one unified `F` characteristic:
 
 #### C.2.3:4.1 - Identity and typing
 
-- **Name:** `U.Formality` (abbreviated `F` in the assurance tuple)
+- **Name:** `U.Formality` (abbreviated `F`)
 - **Type:** `U.Characteristic`
 - **Scale kind:** ordinal
 - **Polarity:** `up`
@@ -56,11 +56,11 @@ Without one unified `F` characteristic:
 
 #### C.2.3:4.2 - Place in the typed `F-G-R` tuple
 
-`F` is the formality coordinate in the assurance tuple. Its interaction rules are strict:
+A named assurance argument may consume `F` alongside G or R under B.3. Declaring F for a normative episteme does not itself select an assurance argument or require the current use to consume a universal tuple. The characteristics remain distinct:
 
 - `F` is **not** `G`; scope remains governed by `U.ClaimScope` and other USM structures.
 - `F` is **not** `R`; evidence, warrant strength, and decay remain assurance concerns.
-- `CL` and bridge losses affect **`R`**, not `F`.
+- Mapping loss is assessed for the actual receiving use. Any effect on R needs its B.3/C.2.2 basis; an ordinal CL value supplies no automatic penalty and does not change F.
 - Changes in notation, carrier, or rendering form do not change `F` if the formal content is preserved.
 
 #### C.2.3:4.3 - Extensibility and local anchors
@@ -97,11 +97,11 @@ The pattern biases FPF toward one explicit rigor characteristic and against stor
 - `CC-F-3` Higher `F` **SHALL** mean greater or equal strictness of expression, not greater truth, trust, or scope.
 - `CC-F-4` Contexts **MUST NOT** publish alternative "formality modes" or "tiers" as surrogates for `F`.
 - `CC-F-5` Local sub-anchors **SHALL** preserve the global ordering and the parent anchor meaning.
-- `CC-F-6` The episteme-level `F` of a composite episteme **SHALL** be bounded by the least-formal essential support on the relevant support path.
+- `CC-F-6` For a composite episteme assessed as one expressed claim or argument, its F **SHALL** be bounded by its least-formal essential content or inference on the declared compositional support path. Identify that assessed bearer and support relation. This expression-wide cap does not extend automatically to external evidence cited as warrant.
 - `CC-F-7` Implementations **MUST NOT** average `F` values numerically.
 - `CC-F-8` Changes in `G`, `R`, or `CL` **SHALL NOT** change `F` unless the expression form itself changes.
 - `CC-F-9` Cross-context transport **SHALL** preserve the attributed `F` when formal content is preserved. If the receiving rewrite changes claim content, EntityOfConcern, or the effective reference scheme under `C.2.1`, the result is a new episteme with its own `F`.
-- `CC-F-10` Translation loss, bridge loss, and plane crossings **SHALL** affect `R` rather than being hidden as `F` changes.
+- `CC-F-10` Translation loss, bridge loss and plane crossings **SHALL** retain their actual receiving-use limitations. Evaluate any assurance effect under its governing model; do not hide it as an F change when the expressed content is preserved.
 - `CC-F-11` Assigned `F` values **SHALL** be justifiable by observable content such as explicit predicates, executable semantics, or machine-checked proofs.
 - `CC-F-12` Declaring a tool or notation **SHALL NOT** by itself justify a higher `F` unless the content satisfies the target anchor semantics.
 - `CC-F-13` Status labels such as `Draft`, `Approved`, or `Published` **MUST NOT** substitute for `F`.
@@ -114,7 +114,7 @@ The pattern biases FPF toward one explicit rigor characteristic and against stor
 |---|---|---|
 | **Status leakage** | An episteme is called highly formal because it is approved or published. | `CC-F-13` keeps status and formality separate. |
 | **Tool-worship** | A notation, prover, or execution harness is named, so the episteme is rated high-F without checking the content. | `CC-F-11` and `CC-F-12` require observable semantic grounds. |
-| **Appendix inflation** | A small high-formality appendix is used to advertise the whole episteme as high-F. | `CC-F-6` keeps the whole episteme capped by the least-formal essential support. |
+| **Appendix inflation** | A small high-formality appendix is used to advertise the whole episteme as high-F. | `CC-F-6` scopes the cap to the assessed composite expression and its essential content or inference. |
 | **Proxy ladder** | A local context invents "bronze / silver / gold" or "ready / mature / final" and uses it instead of `F`. | `CC-F-4` rejects rival ladders. |
 | **Characteristic capture** | Articulation, closure, scope, or evidence is spoken of as if it were part of `F`. | `CC-F-8`, `CC-F-10`, and `CC-F-15` keep the characteristics orthogonal. |
 
@@ -137,7 +137,7 @@ Post-2015 practice across formal methods, software architecture, safety engineer
 
 ### C.2.3:12 - Relations
 
-- **Defines:** the `F` coordinate of the typed `F-G-R` assurance tuple.
+- **Defines:** U.Formality for epistemes, including the F result consumed by an assurance argument when its use requires that characteristic.
 - **Builds on:** characteristic machinery from `A.18` / `A.19` and episteme-level characteristic assignment from Part C.
 - **Coordinates with:** `C.2.2`, `B.3`, `F.9`, `C.2.LS`, `A.16`, `C.2.4`, `C.2.5`, `C.2.6`, and `C.2.7`.
 - **Coordinates with:** `C.19.2` when a declared use asks whether increasing rigor of expression or selecting/configuring a formal apparatus repays application work. `F` measures expression rigor; it does not select the apparatus, plan the work, or establish the problem-facing result.
@@ -231,7 +231,9 @@ Higher-equality foundations are load-bearing. The expression relies on a frontie
 
 #### C.2.3:15.1 - Weakest-essential-support rule
 
-For a composite episteme, the effective `F` is bounded by the least-formal essential support on the relevant support path. A highly formal annex does not lift an informal essential claim core.
+Identify the assessed episteme’s expressed claim or argument and the compositional support relation it actually uses. Its F is bounded by the least-formal essential content or inference within that assessed expression. A machine-checked annex does not make an informal connecting inference machine-checked.
+
+External evidence has a different role. A typed claim supported by an informal observation can remain F4 because its predicates and types are explicit, while its warrant remains weak or unresolved under B.3. If the assessed bearer is instead the whole argument, an essential inference expressed only as controlled prose caps that argument at F3 despite an F7 annex. Name that bearer and inference; do not take a minimum over every external source in an evidence chain.
 
 #### C.2.3:15.2 - Relation to `G`
 
@@ -243,7 +245,7 @@ Higher `F` often makes evidence easier to formulate, test, or prove, but it does
 
 #### C.2.3:15.4 - Relation to `CL` and Bridges
 
-A bridge may expose loss or mismatch across contexts. Those losses affect `R`; they do not silently lower or raise the attributed `F`. A receiving rewrite that changes claim content, EntityOfConcern, or the effective reference scheme identifies a new episteme under `C.2.1`; that episteme should be published with its own `F`.
+A bridge may expose loss or mismatch across contexts. Preserve that limitation for the actual receiving use and assess any R effect under its justified model; the loss does not silently lower or raise the attributed F. A receiving rewrite that changes claim content, EntityOfConcern, or the effective reference scheme identifies a new episteme under `C.2.1`; that episteme should be published with its own `F`.
 
 ### C.2.3:16 - Worked Examples
 
@@ -261,7 +263,7 @@ A controller coupled to a plant model with explicit hybrid obligations is typica
 
 #### C.2.3:16.4 - Decision policy
 
-A decision policy with controlled prose may remain `F3`. If thresholds and conditions are published as typed predicates, it becomes `F4`.
+A normative policy stating in controlled prose that requests exceeding a thirty-minute planned-duration ceiling fail that budget condition may declare F3 without any B.3 assurance result. An expression with a typed Plan variable p, plannedMinutes(p) in nonnegative real minutes, and meetsBudget(p) iff plannedMinutes(p) ≤ 30 satisfies the F4 predicate/type basis for this condition. The rating follows those observable expression properties, not a software tool or a readability claim. Meeting the expressed budget condition alone supplies neither other eligibility conditions nor permission.
 
 #### C.2.3:16.5 - Proof-bearing algorithm
 
@@ -279,7 +281,7 @@ Declare `F` honestly and early. A low `F` declaration is not a defect; it is oft
 
 #### C.2.3:17.2 - For reviewers
 
-Review the actual claim core. Ask whether the target anchor semantics are visibly satisfied, whether essential support contains segments with lower `R`, lower `F`, or missing witness coverage, and whether status or other characteristics have leaked into the `F` declaration.
+Review the assessed claim or argument and its actual expression. Check the target anchor’s observable predicates, types, semantics and proof terms, and any less-formal essential constituent of that same assessed bearer. A missing proof term required by the claimed anchor matters to F; missing external evidence or lower R is a separate warrant question. Check that status, readability and assurance have not replaced the expression test.
 
 #### C.2.3:17.3 - For integrators and assurance leads
 
@@ -291,7 +293,7 @@ Use `F` explicitly in gates and composition analysis, but do not let it absorb w
 - **Anchor.** A named ordinal milestone on the `F` ladder.
 - **Sub-anchor.** A context-local refinement docked to one parent anchor.
 - **Delta-`F`.** A content change that alters expression rigor.
-- **Essential support.** The support without which the central claim does not stand.
+- **Essential support for composite F.** Content or inference required by the assessed composite expression under its named compositional support relation; external evidential warrant is assessed separately.
 - **Example notation.** `F = F4`, `F = F7[HOL]`, `requires F >= F6`.
 
 ### C.2.3:19 - Change Log and Patch Notes

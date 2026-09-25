@@ -230,7 +230,7 @@ The pattern stays intentionally narrow. It does not turn every publication-unit 
 3. **CC-AUD-3 — Outside-work boundary is explicit.**
    The case states what downstream `U.Work`, work planning, decision, gate, or reliance claim still remains outside the publication unit under review, including neighboring pattern application, downstream claim or effect, or ongoing engineering-process continuation when that distinction matters.
 4. **CC-AUD-4 — The active repair choice is named honestly.**
-   The case makes explicit whether the live problem situation is local lexical-head repair, whole-unit primary-subject stabilization, bounded comparison, or another neighboring pattern rather than patching several problem situations at once under one vague stability claim.
+   The case returns `stable for current use` when the unit, primary subject, carried publication move, and outside boundary already suffice. Otherwise it names local lexical-head repair, whole-unit primary-subject stabilization, bounded comparison, or the applicable neighboring pattern rather than patching several problem situations at once.
 5. **CC-AUD-5 - The next pattern and project-reference boundary is explicit.**
    When the problem calls for `Local Head Restoration`, `PublicationUnit Primary-Subject Discipline`, `E.17.ID.CR ComparativeReviewUnit`, an explanation-faithfulness pattern, or a downstream decision, gate, work, or reliance pattern, name the pattern to apply and the exact project object or record when one is needed.
 6. **CC-AUD-6 — Presentation-form labels do not launder publication-unit kind or downstream claim or effect.**

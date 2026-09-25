@@ -159,6 +159,6 @@ Reconsider these comparisons when a source provides a better account of the part
 - **C.16 and C.17** supply measurement and the distinctions among novelty, usefulness and sample surprise.
 - **C.11** compares formed options; **C.19** governs directions in an active search pool; **C.18** supplies retention in an exploration archive. **C.40** develops problems and ways together.
 - **D.1 and D.3** supply ethical-value and conflict analysis when affected interests raise those questions.
-- **E.23.CDI** separates a described acquisition method, its execution and an asserted capability change. The applicable field pattern supplies the acquisition or intervention method.
+- **E.23.CDI** offers candidate capability-development guidance that separates a described acquisition method, its execution and an asserted capability change. It can govern an FPF claim only after its own admission; the applicable admitted field pattern supplies the acquisition or intervention method.
 
 ### E.10.INT:End

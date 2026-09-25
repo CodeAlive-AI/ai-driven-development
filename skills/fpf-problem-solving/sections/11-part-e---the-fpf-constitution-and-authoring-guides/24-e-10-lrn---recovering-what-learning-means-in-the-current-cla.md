@@ -27,7 +27,7 @@ The same word family is used for importantly different situations:
 - a person inquires, notices, remembers, or reorganizes an episteme;
 - another System performs teaching, coaching, demonstration, or feedback Work;
 - a person acquires a capability for later Work;
-- an algorithm performs parameter-estimation or optimization Work and returns a fitted model;
+- a computing System performs parameter-estimation or optimization Work using an algorithm and returns a fitted model;
 - an inference Method returns a posterior or approximate distribution;
 - a query policy acquires data or reduces uncertainty;
 - a probe decodes a representation from system-side phenomena;
@@ -62,7 +62,7 @@ Recover the current claim from its participants, subject, operation, result, and
 2. **Recover the grammatical commitment.** Identify who or what is said to have taught, trained, learned, changed, produced, inferred, or acquired something. Grammar foregrounds a claim but does not fill missing causal participants or evidence.
 3. **Name the changed subject.** State whether the current claim concerns a person's capability, an episteme, a model and parameters, a probability distribution, a representation relation, an organization or population, a product, a Work occurrence, or another exact subject.
 4. **Separate Work, Method, and result.** Name inquiry, teaching, practice, training, optimization, inference, experiment, data acquisition, assessment, publication, or cultural-continuation Work only when it is current. Keep its performer, Method, inputs, and dated occurrence separate from the result attributed to another subject.
-5. **State the evidence and blocked transfer.** Name what was observed or assessed, for which task, population, configuration, window, support arrangement, and use. State the stronger nearby claim that this basis does not establish.
+5. **State the evidence and any material transfer boundary.** Name what was observed or assessed, for which task, population, configuration, window, support arrangement, and use. State an unsupported stronger claim only when independent local grounds make that reading plausible and the distinction changes use.
 6. **Select one direct branch.** Use the branch table below. When one sentence contains several branches, split it into several ordinary sentences and route each one separately.
 7. **Stop after recovery.** Return the repaired claim and direct pattern, or an exact missing-information, missing-governor, quote-only, ordinary-use, or blocker result. Do not create a generic learning record, role kind, process, progress scale, or causal relation.
 
@@ -71,14 +71,14 @@ Recover the current claim from its participants, subject, operation, result, and
 | Recovered current claim | Required route and boundary |
 | --- | --- |
 | A person or other System acquired or changed a capability for later Work | Use `A.2.2` and the direct capability-development/evaluation patterns. Name holder, target Work, conditions, support arrangement, performance evidence, transfer horizon, and uncertainty. Practice, teaching, a score, or one successful performance does not by itself establish the capability. |
-| A teacher, coach, peer, tool-using System, or environment performed teaching, demonstration, feedback, or practice-support Work | Use A.15 for dated Work, A.3 for the enacted Method, and direct responsibility/authority relations when current. The occurrence and intended result do not entail capability acquisition by the recipient. |
+| A teacher, coach, peer, tool-using System or other admitted System performed teaching, demonstration, feedback, or practice-support Work | Use A.13 and A.15.1 for the independently admitted performer and dated Work, A.3.1 for the enacted Method, and direct responsibility/authority relations when current. Environmental conditions keep their own causal or support relations unless an actual performer is independently established. The occurrence and intended result do not entail capability acquisition by the recipient. |
 | A person inquired, noticed, remembered, understood, or revised an episteme | Recover the exact episteme, representation, source use, inquiry Work, and claim change through `C.2.1`, `A.6.3.RT`, A.10, and the direct subject pattern. Do not infer a general capability from one reported insight. |
 | A statistical or machine-learning system was trained or fitted | Identify target function, distribution, or policy; data and data-generating assumptions; model family; objective or estimator; training/optimization Work; resulting model edition; evaluation conditions; and deployment use. Parameter change, a low training loss, a generated sample, and deployed-system capability remain different claims. |
 | A probabilistic inference Method returned a posterior or approximation | Identify the target model/distribution, observations, inference or approximation family, objective/divergence/bound, computation, diagnostics, and returned distribution. Variational inference is an inference/optimization branch. |
 | Active learning, curiosity, exploration, question asking, or data mining selected or acquired information | Identify the query, observation, experiment, or data-acquisition option; current belief/model state; expected or observed information result; cost; and receiving decision. Information acquisition or uncertainty reduction does not by itself establish capability, transfer, useful action, or an evidence-qualified next choice. |
 | A probe found a “learned representation” | Distinguish the system-side phenomenon, training history when relevant, probe-training Work, decoded rendering, representation relation under `A.6.3.RT` and `C.29`, and any admitted episteme. Decodability or a readable label does not establish causal use, internal semantic identity, or general capability. |
 | An organization, community, or culture “learned” | Recover changed Methods, assignments, Work, carriers, population, transmission or reconstruction, selection, retention, loss, and consequences through their direct patterns and `C.36`. A report, policy, or lesson-learned entry does not establish changed enacted practice. |
-| A course, lesson, guide, dataset, pattern, artifact, or other learning product was created or used | Identify the product episteme or artifact, production Work, publication/use relation, intended capability contribution, and observed result separately. The carrier is not the holder's capability or internal state. |
+| A course, lesson, guide, dataset, pattern, artifact, or other learning product was created or used | Identify the product episteme or artifact, any claimed production Work, publication or use relation, intended capability contribution and observed result separately. Use of an existing product need not assert its production Work. The carrier is not the holder's capability or internal state. |
 | Ordinary or quoted wording makes no FPF-governed claim | Preserve it. If relied on later, recover the exact branch then. |
 
 #### E.10.LRN:4.2 - Grammar does not settle the route
@@ -157,7 +157,7 @@ An organization publishes a “lessons learned” report. Publication establishe
 1. Is the word family claim-bearing for the current use?
 2. Are participants, changed subject, Work or Method, result, and receiving use explicit enough to choose a direct pattern?
 3. Are teaching/training occurrences separated from capability, model, inference, or generalization results?
-4. Does the evidence name task or population, conditions, support arrangement, window, and blocked transfer?
+4. Does the evidence name task or population, conditions, support arrangement, window, and any locally grounded transfer boundary that changes use?
 5. Are information acquisition, belief/model update, statistical fitting, and capability change kept distinct?
 6. Are public constructions, recall performances, patterns, and cultural variants kept distinct from holder capability and internal state?
 7. Is source-local wording preserved as quotation where needed without becoming FPF ontology?
@@ -186,7 +186,7 @@ Reopen this pattern when a recurring claim-bearing use cannot reach one direct s
 
 ### E.10.LRN:10 - Rationale
 
-The recurring transdisciplinary problem is lexical recovery, not a common learning substance. A stable thin action survives across the unlike cases: recover who or what changed, separate Work and Method from result, state evidence and blocked transfer, split unlike claims, and route each claim to its owner. That action changes practice while leaving every substantive ontology and Method with its direct pattern.
+The recurring transdisciplinary problem is lexical recovery, not a common learning substance. A stable thin action survives across the unlike cases: recover who or what changed, separate Work and Method from result, state evidence and any action-changing transfer boundary, split unlike claims, and route each claim to its owner. That action changes practice while leaving every substantive ontology and Method with its direct pattern.
 
 This also explains the UTS decision. Familiar spelling is insufficient for one `UnifiedTermRow`. A durable public row is considered only for an independently governed value after its own naming and use tests; the umbrella word creates neither that value nor a Bridge among the branches.
 

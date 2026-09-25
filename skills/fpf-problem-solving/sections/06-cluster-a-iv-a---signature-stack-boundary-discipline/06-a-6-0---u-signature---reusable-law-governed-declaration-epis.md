@@ -187,6 +187,32 @@ An assertion names the exact actual-use claim identity and bounded receiving use
 
 R7 is a changed-law successor of historical `RuleContentBasisFindingDefinition@R6`, not identity-continuous reuse. The C.2.1 succession assertion names predecessor, successor, `changeClass = reusable-law-change`, the changed law set—formal-premise/criterion-selection truth split, owner-claim removal, per-question analysis separation, independent candidate axes, pairwise compatibility, temporal-policy identity, and non-permissive reliance—and `inheritedAcceptanceOrUse = none`. A dependency pin selects R6 or R7 explicitly; a pin change reopens dependants rather than silently retargeting them.
 
+#### A.6.0:4.6b - Candidate-basis establishment and family disposition
+
+`RuleContentBasisFindingDefinition@R8` is a changed-law successor of R7. It preserves R7's two actual-use predicate tests and adds the following laws to its named `RuleContentBasisFamilyAlgebra@R8` subgraph. Candidate sufficiency is a separate operation: it asks whether a basis can support the exact derivation or bounded evaluation under named rules, not whether that basis was actually used. Existing R7 actual-use assertions retain their exact definition and use pins. R8 inherits no acceptance, actual use or reliance merely from succession.
+
+For one exact analysis question and temporal cell under E.4.PFR §3.6, take a finite candidate universe V and its supported open/closed state. Each candidate is a finite nonempty conjunctive set of semantic-base subgraphs. The receiving contract fixes which axes are required before evaluation. Exactness, applicability and sufficiency are always required; acceptance and witness join that conjunction only when the receiving contract requires them. Each axis has an independently supported true/false result or remains unknown.
+
+**Sufficiency.** In derive mode, the named inference rules derive the exact dependent proposition from the candidate basis with no undeclared premises. In evaluate mode, the basis supplies the criteria and facts required by the named evaluation rule to obtain its bounded result. That result may be negative: a supported failing evaluation does not make its basis insufficient. These laws neither establish `derivedUsingRuleContent` nor `evaluatedAgainstRuleContent` without their separate actual-use facts.
+
+**Establishment.** A candidate is established iff all required axes are true. It is decisively defeated iff at least one required axis is false, even when another is unknown. Otherwise its establishment remains unresolved. Minimality is an additional result: a candidate is inclusion-minimal when no proper sub-basis in the stated comparison domain is sufficient under the same rules. Unknown or false optional minimality does not remove an established candidate. A request for a minimal family qualifies that additional answer separately.
+
+Let F contain all and only established candidates. Keep independently sufficient alternatives even when a required overlapping pair has incompatible consequences. A required pair is one whose compatibility can change the cell disposition or named receiver action; its result is compatible, established incompatible, or unresolved. Apply conflict precedence, then exactly one row:
+
+| Family and candidate-universe condition | Disposition |
+| --- | --- |
+| F nonempty and a required pair has established incompatible consequences | `established-conflict` |
+| F nonempty, no established conflict, and V open, some candidate establishment unresolved, or some required pair unresolved | `established-with-open-candidates` |
+| F nonempty, V closed, every candidate establishment settled, and all required pairs compatible | `established-compatible` |
+| F empty and V open or at least one candidate establishment unresolved | `open-no-established` |
+| F empty, V closed/nonempty, and every candidate decisively defeated | `closed-insufficient` |
+| F empty, V closed/empty, and an exact supported claim identifies the absent needed content, subject/use and search boundary | `missing-candidates` |
+| F empty, V closed/empty, without that supported needed-content claim | `closed-empty-unresolved-need` |
+
+An unknown axis on an already defeated candidate is not unresolved establishment. With fewer than two established candidates, no required pair exists and the all-compatible pair condition is vacuously true. The supported needed-content claim retains its reconsideration condition. A closed empty universe alone proves no missing need. Without a named receiving analysis need, take E.4.PFR's no-analysis exit before this operation.
+
+R8's succession claim names R7, R8, `changeClass = reusable-law-change`, the added sufficiency/required-axis/conjunction/minimality/partition laws and `inheritedAcceptanceOrUse = none`. A dependency pin chooses the exact definition edition; R8 does not retarget R7 consumers. The result remains a non-permissive analysis assertion under C.2.1.
+
 #### A.6.0:4.7 - Keep declaration, realization, and use under their direct patterns
 
 | Current object or claim | Subject pattern |

@@ -38,7 +38,7 @@ For a reversible local choice, ordinary project language is enough. Create a dur
 - For a settled short procedure with no material branch, use the applicable domain Method; consult its `A.3.2` MethodDescription when a description is needed.
 - For a choice outside current Work when the chooser and `OptionSet` are already known, use `C.11`.
 - For missing action candidates, use a subject-specific generation Method; use `C.18` only for an actual open-ended candidate archive and front.
-- After the action is fixed, use `C.24` only if calls to tools or services must be planned.
+- After the action is fixed, use `C.24` if calls to tools or services must be planned. An already prescribed action can enter C.24 directly before Work begins; it needs no A.15.7 decision.
 - For a plan revision before Work, use `A.15.2`.
 - For retrospective Method recovery, use `A.3.1.MR`.
 
@@ -99,6 +99,8 @@ Reading this pattern, consulting a MethodDescription, following a plan, or recei
 | The action is fixed but calls to tools or services must be planned | Use `C.24`. | A call plan and checkpoint return; the call plan is not the underlying choice. |
 | A changed condition or missing required support defeats an action-guiding claim | Keep the other qualified information; compare feasible, worthwhile refresh with a supported narrower action, the named safe fallback or stopping under §4.2. | Qualified information supports the selected continuation, with the affected limit stated. Age or a missing administrative time field alone does not invalidate an applicable claim. |
 | Safety, authority, capability, applicability, or current Work is unresolved | Use the pattern that defines or tests the missing claim—for example, `A.2.2` for capability, `A.15.1` for performed Work, and `A.15.5` only for work-entry readiness; keep safety, authority, and applicability with the pattern that defines them. | The missing claim grounded under its own rule, or a named unresolved claim with return or stop; no action, permission, capability, Work, or Method change is inferred from the unresolved claim. |
+
+A current account may treat an unexamined outcome or recurring adjustment as ordinary, so that no question enters this choice. `B.5.PI` uses a selected demonstration, handover or other ordinary work occasion to compare a result with its use and develop a question or retain an early cue. It requires actual access and attention, not a prior diagnosis. Use it when that contribution is needed; ordinary next-action selection does not require auditing every action.
 
 When an available method repeatedly goes unconsidered at a relevant moment, use `A.15.11` to connect it with an occasion in the work. This can make a useful candidate available to step 4; the current constraints still determine which actions are admissible.
 

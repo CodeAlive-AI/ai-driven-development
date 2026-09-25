@@ -337,6 +337,6 @@ Reconsider the realization when a required input, observation relation, executio
 | A.6.1 - U.Mechanism | Supplies operation-declaration and realization semantics when those relations are asserted. |
 | A.6.3.RT - Representation-Scheme Transition | Helps change the representation of preparation, operations and readout under an available scheme while preserving the content needed for use. |
 | C.16 - Measurement and Metrics Characterization | Supplies the measurement relation and the interpretation limits of a physical indication. |
-| C.11.DUA - Decision-Useful Advice and Evidence Demands | Selects further assurance or information by the receiving decision and its cost. |
+| C.11.DUA - Make Advice and Evidence Demands Worth Their Burden | Selects further assurance or information by the receiving decision and its cost. |
 
 ### C.29.3:End

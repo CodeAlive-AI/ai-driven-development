@@ -139,15 +139,15 @@ If Y is made available, E.24.PUB separately identifies the publication occurrenc
 
 #### A.6.3:4.7 - Preserve composition and replay
 
-For fixed source epistemes, rules, reference semantics, correspondence dependencies, and configuration:
+The selected formal substrate supplies the identities, admitted compositions, and arrow equivalence. For fixed source epistemes, rules, reference semantics, correspondence dependencies, and configuration:
 
 - identity viewing preserves the same C.2.1 episteme;
-- composing `f : X -> Y` with `g : Y -> Z` gives the same licensed receiving claims as the declared composite, up to the stated equivalence;
-- deterministic viewings yield the same Y identity discriminators on replay;
+- composing `f : X -> Y` with `g : Y -> Z` gives the admitted composite `compose(g,f) : X -> Z` under A.6.2 P3;
+- if a separately declared construction operation is deterministic, replay with the same admitted inputs yields the same receiving C.2.1 identity discriminators;
 - random seeds, model editions, external service state, or timing that can change Y are explicit inputs to the work or declaration, not hidden meta;
-- applying an idempotent normalization twice yields the same receiving episteme up to the declared representation equivalence.
+- a normalization repeat claim identifies `n_X : X -> Y` and the next arrow `n_Y : Y -> Z`, establishes `Z = Y` under C.2.1, and witnesses `compose(n_Y,n_X) ≃ n_X` under the declared arrow equivalence. One `X -> Y` arrow is self-composable only when X = Y.
 
-If two paths differ in claims, EntityOfConcern, or effective reference scheme beyond the declared equivalence, they do not identify the same receiving episteme and the composition claim fails.
+A composition requires the exact middle episteme to match. A claim that two routes yield the same receiving episteme requires equality of all three C.2.1 identity discriminators; representation equivalence alone does not establish that identity. The repeat claim requires a fixture or proof under A.6.2 P4.
 
 #### A.6.3:4.8 - Stop at the lightest sufficient statement
 
@@ -173,7 +173,7 @@ Query Q constructs Y from source X while preserving the same system and making o
 
 #### A.6.3:5.4 - Normalized publication card
 
-X and Y are separately identified epistemes about exact morphism f. Y reorders claims and normalizes names without changing their interpretation. `NormalizeTechCard : X -> Y` is an idempotent direct viewing. A later publication occurrence makes Y available through a TechCard form. Y is called `U.View` only if it conforms to the exact publication viewpoint; the form and carrier remain separate.
+X and Y are separately identified epistemes about exact morphism f. Y reorders claims and normalizes names without changing their interpretation. `NormalizeTechCard : X -> Y` is a direct viewing. For a repeat claim under the same scheme and normalization rules, identify the next normalization arrow `n_Y : Y -> Z`; establish `Z = Y` under C.2.1 and `compose(n_Y, NormalizeTechCard) ≃ NormalizeTechCard` under the substrate's declared arrow equivalence, with a fixture or proof. A later publication occurrence makes Y available through a TechCard form. Y is called `U.View` only if it conforms to the exact publication viewpoint; the form and carrier remain separate.
 
 #### A.6.3:5.5 - Cross-model coverage
 

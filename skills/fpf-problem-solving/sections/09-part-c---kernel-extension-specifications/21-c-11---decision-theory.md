@@ -298,7 +298,7 @@ ProbeDecisionValue(  # conditional as described above
 )
 ChoiceResult(
   choiceDisposition = choose_now | reject_current_set | probe_again | reroute,
-  selectedOption or retainedTieSet or rejectedCurrentSet or rerouteOwner,
+  selectedOption or retainedTieSet or rejectedCurrentSet or nextProbe or rerouteOwner,
   reason this result is lawful now
 )
 ```

@@ -8,13 +8,13 @@
 
 #### E.11:1.1 - Use this when
 
-Use `E.11` when a README scenario, Preface explanation, ToC cue, retrieval cue, lexical query row, expanded case, or pattern-local recognition passage could change which FPF pattern a working reader should inspect first.
+Use `E.11` when a pattern title, README scenario, Preface explanation, ToC cue, retrieval cue, lexical query row, expanded case, or pattern-local recognition passage could change which FPF pattern a working reader should inspect first.
 
 The ordinary reader does not arrive with a PatternID. They arrive with a project question: architecture, a working document, a comparison, a vague concern, an improvement, evidence, timing, causal use, a description, a name, wording, mathematics, state of the art, a local framework, system recognition, or system delimitation. E.11 gives that reader a recognizable entry without turning entry material into a second pattern body or universal method sequence.
 
 **First useful result.** The reader can name the working situation, the first useful result or blocker, one direct pattern or small plausible set to inspect, and the ordinary stop or wrong-turn return. That is enough for ordinary entry; no card form, comparison account, or project-local value is required.
 
-**Primary EntityOfConcern.** One public entry or discoverability publication unit: README first-entry guidance, Preface principle explanation, ToC query material, retrieval cue, expanded entry-disambiguation case, or a pattern-local `Problem frame`.
+**Primary EntityOfConcern.** One public entry or discoverability publication unit: pattern title, README first-entry guidance, Preface principle explanation, ToC query material, retrieval cue, expanded entry-disambiguation case, or a pattern-local `Problem frame`.
 
 **Author and reader remain different.** An FPF author or maintainer publishes or refreshes the public guidance. A practitioner, manager, or assisting agent reads it and opens the direct pattern; that reader is not thereby performing E.11 publication work.
 
@@ -50,6 +50,7 @@ Use this distribution:
 
 | Publication unit | Job | Not its job |
 | --- | --- | --- |
+| Pattern title | Compact recognition of the working question, discriminating result or familiar method, authored under E.8 §4.1.5. | A complete applicability decision, pattern definition or substitute for the Solution. |
 | Framework Readme | Public first-entry situations and practical first results; the FPF Readme renders the entries declared in `E.4.FPF`, while a DPF or LPF Readme renders its product's own declared entries. | Pattern authority, the key-and-form declaration, full methods, conformance doctrine, or project-instance fields. |
 | `Preface` | Plain-engineering narrative explaining the cross-cutting ideas behind those entries. | A second scenario table, PatternID catalogue, or conformance authority. |
 | Table of Contents | Search-oriented overview. Every pattern row exposes its PatternID and title plus at least one working-question locator: a `Use when` cue, query phrase, or discriminating keyword. State any domain or local PatternID prefix discipline that affects lookup. Add admission state or dependencies when either can change the reader's choice. | Public first-entry explanation, a prescribed use sequence, or durable pattern semantics. |
@@ -68,6 +69,8 @@ Pattern count is only a diagnostic. A one-pattern edition asks whether the resul
 When discoverability has become use of one selected pattern, continue with `E.11.PUA`. When the live question is which applicable pattern use to recommend, how several uses relate, or whether an earlier result already answers the concern, continue with `E.11.PUR`. Neither continuation turns a public entry order into a universal workflow.
 
 For an FPF-grounded domain or local practice framework, README, Preface, ToC, practical entries, an all-in-one carrier, a skill pack, retrieval, or a callable access service may expose the entry. That publication or access use neither decides framework architecture nor supplies authority, and the carrier is not the pattern body merely because a reader reaches it first. Use `E.4` to identify the framework family and member. Only when a downstream-used framework-architecture question is live, record its selected answer in one `E.9` DRR using the `E.4.PFAD` profile; use `E.4.PFR` separately when a named relation or edition maintenance use needs its representation.
+
+Before a query exists, distinguish an unexamined way of working from a known method that goes unnoticed. `B.5.PI` connects an ordinary work occasion with inquiry; `B.5.EA` helps retain and express a sensed but unformulated distinction. A recoverable early cue need not yet become a query. Once there is a question, the entry discipline here helps reach the contribution that could answer it.
 
 A readable, searchable entry can still go unused because it is not encountered when its method would help. Use `A.15.11` to arrange that encounter and make the relation to the work apparent. Once the method is under consideration, continue with selection or application; the publication entry remains governed here.
 
@@ -132,7 +135,7 @@ PracticalUseCardExpansion@FPFReadme <: U.Episteme:
   publicWrongTurnRecoveryBoundaryRef: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   publicStrongerNeighborBoundaryRefs[]: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   publicCoarseningRows[]: PublicResultCoarseningRow@FPFReadme
-  demonstrativeSliceRef?: DemonstrativeUnfoldingSlice@Context
+  demonstrativeSliceRef?: U.EpistemeRef, resolving a C.2.1 description episteme about one independently qualified A.22.CGUS structure
   ordinaryWalkthroughRef?: PublicOrdinaryWalkthrough@FPFReadme
 
 PracticalUseCardPublicationUnit@FPFReadme:
@@ -195,7 +198,8 @@ PublicPatternUseResultTemplate@FPFReadme <: U.Episteme:
 PublicPatternUseBoundaryConditionTemplate@FPFReadme <: U.Episteme:
   boundaryConditionKind: recognizableCondition | stop | return | wrongTurnRecovery | strongerNeighbor | missingGovernor | missingInformation
   conditionDescriptionRef: U.Episteme
-  relationFunctionClaimRef: U.EntityRef, referencing the exact defining or constraining ClaimGraph in the pattern episteme used for the boundary
+  relationFunctionRuleEpistemeRef: U.EpistemeRef, resolving the exact episteme edition whose ClaimGraph defines or constrains the boundary
+  relationFunctionClaimAddress?: C.2.1 ClaimAddress, only when the receiving use needs one uniquely resolvable intrinsic claim in that edition
   conditionalNextQuestionPatternRef?: U.EntityRef, referencing one exact FPF pattern episteme
   conditionalReceivingPatternPositionDescriptionRef?: U.Episteme
 
@@ -288,7 +292,7 @@ PracticalUseCarryThroughCheck:
   publicWrongTurnRecoveryBoundaryRef: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   publicStrongerNeighborBoundaryRefs[]: PublicPatternUseBoundaryConditionTemplate@FPFReadme
   publicCoarseningRows[]: PublicResultCoarseningRow@FPFReadme
-  demonstrativeSliceRef?: DemonstrativeUnfoldingSlice@Context
+  demonstrativeSliceRef?: U.EpistemeRef, resolving a C.2.1 description episteme about one independently qualified A.22.CGUS structure
   ordinaryWalkthroughRef?: PublicOrdinaryWalkthrough@FPFReadme
   principalBlockedOverreadRef?: PublicPatternUseBoundaryConditionTemplate@FPFReadme
 ```
@@ -379,6 +383,25 @@ PracticalUseEntryComparison@Context <: U.Episteme:
 ```
 
 Guidance, practical question, compared result templates or blockers, first-result differences, named reliance, stop, and return remain ClaimGraph content or separate references under their direct patterns; none replaces the C.2.1 identity. Each comparison cites at least one result template or exact blocker from the guidance it evaluates. `claimScopeRef` or `modelUseStructureRef` is present only when the named scope or model-use structure changes the reliance being recorded. Several plausible entries alone do not make this record current. The named reliance may be a later review, replay, audit, automation, or another use that needs addressable comparison history. Retain only the rows that use needs.
+
+#### E.11:4.6.1 - Compare the information the reader actually receives
+
+For a title or cue revision, name the reading operation and compare the material that operation exposes. First discovery, browsing supported working questions, selecting among neighbors and re-finding a known method can need different cues. Understanding an opened body and composing its method with others require the content and relations inside the patterns.
+
+Keep these comparisons distinct:
+
+| Visible material | What the comparison can establish |
+| --- | --- |
+| Titles alone | Whether the headings expose a plausible working question and distinguish candidates at this first encounter. |
+| Complete ToC rows | Whether titles together with keywords, query cues, status and relevant dependencies support the choice. |
+| Full bodies or search windows | What the available passages let this reader recover; the result includes any body explanation actually supplied. |
+| Indexed or retrieved fragments | What the consuming system can find and show from the fields and context it actually receives. |
+
+For a title-only comparison, withhold the fuller cue and the author's intended answer. Keep the task and allowed preparation comparable, include tempting neighboring patterns and an ordinary non-use case, then open the selected body to inspect the promised result and boundary. Preserve an actual first response before giving explanations that could teach the intended choice. A desk comparison can justify a visible repair; use an actual reading when unresolved interpretations can change the selection or when claiming that a reader recovered the intended question.
+
+For AI retrieval, inspect the real input: the file or index fields, included heading and parent context, chunk boundary and returned passage. A renamed heading can affect only a path that carries its text or resulting representation. Adding context to a fragment is another intervention. A heading scan, a full-text search and a contextual embedding query therefore need their own declared conditions; a result from one does not establish the others.
+
+Check both discovery from a working question and re-finding by a useful technical term. An attractive first click is insufficient if the body returns the reader from a wrong use or the familiar method becomes harder to find. Keep the useful shortlist, correction or no-use return; ordinary comparison needs no extra catalogue or score. A local AI reading supports that observed response, not a human-effect estimate. Keep any new body content separate from a title or presentation contribution, and use an appropriate description-comparison method when that attribution matters.
 
 #### E.11:4.7 - Replay and currentness
 
@@ -501,6 +524,8 @@ The serious alternative is familiar-title or ranked-result lookup with a short t
 [Zhu, Reinecke, and Mitra, *Language Scent: Exploring Cross-Language Information Navigation*, arXiv:2604.03604v2](https://arxiv.org/html/2604.03604v2), supplies bounded evidence for considering such proximal cues: its multilingual system exposes information value and interpretation cues, and its lab study involved 16 English–Chinese speakers. It does not compare FPF names or establish that two labels have the same referent. **Adapt as a local probe:** `E.11:4.1.1`, `4.1.2`, and `4.5.1` test recognizable wording against the direct result; `E11-9/10/11` keep cue, entry, and direct content distinct. Reopen if a shorter label works equally well for the actual readers, if the cue invites the wrong result, or if stronger evidence changes the transfer from multilingual navigation. No universal benefit from contextual wording is inferred.
 
 For a cross-DPF entry, `E.11.DSG` supplies the direct four-return, exact-source, and known-DPF-bypass rules used in `E.11:4` and `E11-13`. These are semantic inputs to the entry, not another competing navigation theory: Suite membership follows E.4's inclusion rules, a reader or assisting System performs lookup Work, and cross-DPF entry requires no Suite edition. E.8, E.17, F.17, F.18, and E.11.PUA retain their direct authoring, publication, naming, and pattern-use functions. Reopen the affected entry when those direct results or boundaries change; use `G.11` only when a currentness or telemetry question is actually current.
+
+**Retrieval-exposure question.** Which part of a publication can help an assistant find the needed pattern? The selected line makes the actual indexed and returned context explicit. A title-only change cannot repair a passage whose retrieval representation omits that title. **Adapt:** §4.6.1 separates heading, row, body-window and fragment comparisons. [Anthropic's Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) (2024) supplies a concrete context-enrichment alternative; [Conti et al., Context is Gold to find the Gold Passage](https://aclanthology.org/2025.emnlp-main.1150/) (EMNLP 2025) supplies context-dependent retrieval evaluation and contextual embedding training. These interventions differ from title revision and provide no effect estimate for it. Keep the cheaper existing cue when it suffices; reopen when the consuming system changes its fields, chunking or context, or when the changed cue repeatedly selects the wrong body.
 
 ### E.11:12 - Relations
 

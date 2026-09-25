@@ -93,6 +93,7 @@ Effective obligations/pins/triggers are computed as **union(expand(sets), explic
 
 * `CorePinsRequired` *(pattern delta; pin names only; all are id‑valued unless noted)* := {
   `ComparatorSpecRef.edition`,
+  `TaskSignatureRef?`, `TaskMapRef?`, *(when a selector consumes the parity result; TaskMapRef only when its G.4 CAL gates are current)*
   `entityOfConcernRef?`, `targetRefs[]?`, *(exactly one subject branch)*
   `ClaimScope`, `EvaluationWindow`, `FreshnessWindows`,
   `BaselineSet`, `BaselineBindingRef`,
@@ -121,6 +122,7 @@ Minimal fields (conceptual; ids/pins only):
   ParityPlanId(UTS),                       // continuing plan lineage
   planEdition,                            // one immutable edition
   CGFrameId?,                              // exact cited CG frame when the plan depends on one
+  TaskSignatureRef?, TaskMapRef?,           // conditional G.5 input; TaskMap only for current G.4 CAL gates
   entityOfConcernRef? := EntityOfConcernRef, // one-EntityOfConcern branch only
   targetRefs[]?,                            // exact-target branch only; existing kinds and editions
   groundingHolonRef := GroundingHolonRef,
@@ -142,7 +144,7 @@ Minimal fields (conceptual; ids/pins only):
   PlannedFillingRows[]?                    // declaration-local A.15.3 content inside this WorkPlan; no independent row refs
 ⟩`
 
-`ParityPlanRef := <ParityPlanId, planEdition>` designates one immutable plan edition. Changing its subject, baseline binding, comparator edition, or another active value that can change the run or its interpretation creates a new `planEdition`. The lineage id may remain only while this is still the same continuing plan; old `ParityPlanRef` values continue to resolve their old editions.
+`ParityPlanRef := <ParityPlanId, planEdition>` designates one immutable plan edition. Changing its subject, baseline binding, comparator edition, or another active value that can change the run or its interpretation creates a new `planEdition`. When a G.5 selector consumes this comparison, pin its exact `TaskSignatureRef` in the plan. If that selector uses G.4 CAL gates, also pin its exact `TaskMapRef` and require the map's task-signature reference to match. Omit these selector inputs from a parity run that needs no selector. The lineage id may remain only while this is still the same continuing plan; old `ParityPlanRef` values continue to resolve their old editions.
 
 Exactly one subject branch is present. Use `entityOfConcernRef` when the report compares results about one EntityOfConcern. Use `targetRefs[]` when the targets themselves are compared; each ref keeps the kind and edition defined by its existing subject pattern. In particular, a G.5 method-family target is an exact `MethodFamilyRowRef`, and a generator-family target is an exact `GeneratorFamilyRowRef`.
 
@@ -161,13 +163,14 @@ A UTS-publishable parity publication record produced by a parity run under one e
   ParityReportId(UTS),
   parityPlanRef := ParityPlanRef,
   entityOfConcernRef?, targetRefs[]?,        // exactly one subject branch is present
+  TaskSignatureRef?, TaskMapRef?,           // echoed when the selector branch is used
   groundingHolonRef, referencePlaneRef,
   claimScopeRef, EvaluationWindow,
   BaselineSet, BaselineBindingRef, FreshnessWindows,
   CNSpecRef.edition, CGSpecRef.edition, ComparatorSpecRef.edition,
   SCPRef.edition?, MinimalEvidenceRef.edition?,             // echoed iff used/pinned in the plan
   UNM_id?, NormalizationMethodId[]?, NormalizationMethodInstanceId[]?, // echoed iff used in the plan
-  OutcomeRefs,                              // selected-set / archive outcomes (as refs to selector outputs)
+  OutcomeRefs,                              // parity/comparison results; G.5 output refs only when selection is current
   EpsilonDominance?,                        // echoed when used
   AbstainReasons[]?,                        // ids/labels (policy-bound) for abstain/degrade; refusal paths included
   TelemetrySummary? := ⟨IlluminationSummary?, coverage?, regret?⟩,  // report-only by default; promotion requires CAL policy-id pins
@@ -203,19 +206,19 @@ Planning is the act of making the parity run *reproducible by construction*:
 7. **Bind comparator choice to CG-Spec (CSLC comparability and admissibility).** Any numeric comparison or aggregation MUST be CSLC‑admissible and cite the corresponding CG‑Spec entry (via `ComparatorSpecRef`). If Characteristics differ by unit, scale, or space, the plan MUST declare the ids used for “normalize, then compare” (`UNM_id?`, `NormalizationMethodId[]?`, `NormalizationMethodInstanceId[]?`) — ids only; semantics are defined elsewhere.
 8. **Declare order & PortfolioMode semantics.** Parity MUST preserve set‑return semantics; `PortfolioMode` and `DominanceRegime` are either explicitly pinned or cited through `G.Core.DefaultGoverningDefinitionIndex`. IlluminationSummary/coverage/regret remain telemetry unless a CAL policy explicitly promotes them (policy‑id pinned & recorded).
 9. **Attach planned fillings when applicable.** If parity depends on planned slot fillings, this WorkPlan contains the relevant A.15.3 rows in `PlannedFillingRows[]`; each row points to a declaration member defined by its own pattern and has no independent reference or identity. Omit the field when no such row is needed.
-10. **Publish crossing pins (when invoked).** When expressions have distinct recovered F.17 meanings, establish the required F.9 relation and publish its Bridge and CL pins; ReferencePlane or Kind crossings cite their own exact crossing basis and pins. Penalties affect `R_eff` only (invariants pinned through `G.Core`).
+10. **Publish the relation and its receiving use (when invoked).** For distinct recovered F.17 meanings, establish the F.9 relation and the separate bounded-use claim and matching reliance. Cite G.7 calibration, CL and policy pins when that account uses them; its summary does not decide parity admissibility. Kind correspondence also requires receiving admissibility and fresh target classification under C.3.3. A plane relation keeps its own basis. Supported penalties affect R only under the receiving model.
 
 #### G.9:4.3 — Execution protocol (run‑time / selector‑adjacent)
 
 Execution is **one run** under the pinned plan:
 
-1. **Validate CSLC references and pins.** Validate the cited CSLC comparability and admissibility references, active pins, and witnesses; run eligibility or acceptance checks for the supplied `TaskSignatureRef` (S2), using the pinned plan’s conditions, and refuse or abstain on non-admissible operations (record trace; no “fourth status”). If a live `A.21` gate consumes this check, cite its `GateDecisionRef`/`DecisionLogRef`; do not create a `G.9`-local CSLC gate.
-2. **Invoke selection/dispatch.** Apply **G.5** under the plan’s pinned refs and emit selector outputs in a form consistent with G.5’s `PortfolioMode` and selected-set semantics.
+1. **Validate CSLC references and pins.** Validate the cited CSLC comparability and admissibility references, active pins, and witnesses; apply the eligibility or acceptance checks required by the pinned comparison and refuse or abstain on non-admissible operations. When the G.5 branch is current, use the exact planned `TaskSignatureRef` and the matching `TaskMapRef` when G.4 CAL gates apply; record the branch trace under its own result vocabulary. If a live `A.21` gate consumes this check, cite its exact `GateDecisionResult`; cite a `DecisionLog` only when that optional audit or reuse record is needed. The profile application and its action consequence remain governed by A.21; do not create a `G.9`-local CSLC gate.
+2. **Run the comparison and any required selection.** Apply the pinned comparator to the admissible comparison inputs and retain its lawful result shape in `ParityReport`. If a selector-facing result is required, apply **G.5** under the plan's exact task and conditional map refs and publish its declared outcome. An ordinary parity or benchmark report ends without G.5 when no selector result is needed.
 
    When parity is comparing bounded specialization, the report should echo the active specialization profiles or equivalent pins so readers can recover the work-measure threshold target, prior exposure, budget-to-threshold, post-threshold efficiency when relevant, transfer, retention, downside field, and any corridor-entry baseline or evidence note from the parity object itself rather than from later narrative explanation.
 
 3. **Record the comparability mapping when used.** If `UNM_id?`, `NormalizationMethodId[]?`, or `NormalizationMethodInstanceId[]?` was declared, echo it in `ParityReport` or its explicit pins delta. Record the ids and any scoped notes required by the cited specification in the audit pins and SCR; cite the applicable `PathId` values.
-4. **Publish trace.** Emit `ParityReport` with the exact `ParityPlanRef`, its `BaselineBindingRef`, EvidenceGraph citations, and all active edition and policy-id pins, so the run can be checked and run again.
+4. **Publish trace.** Emit `ParityReport` with the exact `ParityPlanRef`, its `BaselineBindingRef`, conditional selector input refs, EvidenceGraph citations, and all active edition and policy-id pins, so the run can be checked and run again.
 5. **Emit telemetry hooks (optional, report‑only).** When telemetry is produced, it is emitted as telemetry pins/events for refresh wiring (not as a silent change in dominance interpretation).
 
 #### G.9:4.3a — Worked parity slice
@@ -239,6 +242,8 @@ FreshnessWindows = { sensorSeries: at-most-24h-old-at-run,
 CNSpecRef.edition = PumpCN-E2
 CGSpecRef.edition = PumpCG-E4
 ComparatorSpecRef.edition = PumpTriageComparator-E3
+TaskSignatureRef = PumpVibrationTriage-T1
+TaskMapRef = absent                         // this G.5 case uses no G.4 CAL gate
 ParityPinSet = [PumpCN-E2, PumpCG-E4, PumpTriageComparator-E3, PumpVibrationMeasureSpec-E2]
 EvidenceGraphId = PumpTriageEvidence-E5
 PathId[] = [PumpReadings-P7, ComparatorRun-P3]
@@ -419,7 +424,7 @@ The following blocks store **wiring only** (pins/refs/policy‑ids, relevant tri
 | Interface                          | Consumes                                                                                                                                         | Produces                                                                                        |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
 | **G.9‑1 `Plan_Parity`**            | exactly one subject branch—one `EntityOfConcernRef` or exact `targetRefs[]` under their existing kinds and editions—plus `GroundingHolonRef`, `ReferencePlane`, `ClaimScope`, `EvaluationWindow`, `BaselineSet`, `BaselineBindingRef`, `FreshnessWindows`, `Budgeting?`, `EpsilonDominance?`, `CNSpecRef.edition`, `CGSpecRef.edition`, `ComparatorSpecRef.edition`, mode-specific measurement or normalization editions when used, `SCPRef.edition?`, `MinimalEvidenceRef.edition?`, `UNM_id?`, `NormalizationMethodId[]?`, `NormalizationMethodInstanceId[]?`, `ParityPinSet`, `EvidenceGraphId`, `PathId[]`, `PathSliceId?`, `PlannedFillingRows[]?` | one immutable `ParityPlan` WorkPlan edition and its exact `ParityPlanRef` |
-| **G.9‑2 `Run_Parity`**             | exact `ParityPlanRef`, `TaskSignatureRef` (S2), **G.5‑3 Select**                                                                                | selected-set, archive, or other set refs; DRR and SCR pins with `PathId[]` and, when needed, `PathSliceId` |
+| **G.9‑2 `Run_Parity`**             | exact `ParityPlanRef` and comparison inputs; **G.5‑3 Select** only for a selector-facing result, using the plan's exact `TaskSignatureRef` and conditional matching `TaskMapRef` | parity/comparison result refs and, when selected, G.5 outcome refs; DRR and SCR pins with `PathId[]` and, when needed, `PathSliceId` |
 | **G.9‑3 `Publish_ParityReport`**   | exact `ParityPlanRef`, parity-run trace refs, and active pins                                                                                   | `ParityReport` carrying the same exact plan ref and baseline binding (UTS publication record; emits canonical RSCR ids) |
 | **G.9‑4 `Expose_ParityTelemetry`** | Telemetry deltas (archive changes, coverage/regret signals, etc.)                                                                                | Telemetry events carrying `PathSliceId?`, policy‑ids, and edition pins for refresh wiring       |
 
@@ -462,7 +467,7 @@ G.9 conforms only if it satisfies the **effective** set of `CC‑GCORE‑*` decl
    Delegated to `CC‑GCORE‑CROSS‑1` and `CC‑GCORE‑PEN‑1`. This item remains as a stable delegation point for Bridge and reference-plane crossing visibility plus R-channel penalty placement discipline.
 
 8. **CC‑G9.8 — Report replay and evidence trace completeness (local).**
-   A ParityReport **SHALL** carry the exact `ParityPlanRef` and `BaselineBindingRef` used for the run and include an EvidenceTrace with `EvidenceGraphId` and the relevant `PathId[]` (and `PathSliceId?` when needed), covering inclusions, refusals, abstentions, and degradations. If the historical plan edition or binding cannot be resolved, return that unresolved input instead of substituting a current edition.
+   A ParityReport **SHALL** carry the exact `ParityPlanRef` and `BaselineBindingRef` used for the run, echo `TaskSignatureRef` and any required `TaskMapRef` when the selector branch was used, and include an EvidenceTrace with `EvidenceGraphId` and the relevant `PathId[]` (and `PathSliceId?` when needed), covering inclusions, refusals, abstentions, and degradations. If the historical plan edition or binding cannot be resolved, return that unresolved input instead of substituting a current edition.
 
 9. **CC‑G9.9 — Telemetry hooks are emitted with pins (local).**
    When parity emits telemetry for refresh, emitted telemetry **SHALL** carry the active edition pins and policy‑ids needed to re‑run parity (including the active subset of `ParityPinSet` relevant to the emitted event).

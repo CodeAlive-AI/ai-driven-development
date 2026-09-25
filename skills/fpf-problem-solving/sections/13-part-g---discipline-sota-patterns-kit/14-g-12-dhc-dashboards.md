@@ -4,7 +4,7 @@
 
 **Stage:** optional series authoring → measurement and series-update Work when needed → representation → optional publication and refresh.
 
-**Primary hooks:** C.21 for discipline-health Characteristics and the common replay basis; C.16 for measurement; C.2.1 for result and series epistemes; C.29 for representations; E.24.PUB for publication availability; G.6 for evidence paths when relied on; G.11 for refresh; G.Core, A.19, and G.0 for the exact legality and comparison surfaces actually used.
+**Primary hooks:** C.21 for discipline-health Characteristics and the common replay basis; C.16 for measurement; C.2.1 for result and series epistemes; C.29 when the view uses a mathematical correspondence; E.24.PUB for publication availability; G.6 for evidence paths when relied on; G.11 for refresh; G.Core, A.19, and G.0 for the exact legality and comparison surfaces actually used.
 
 **Optional hooks:** G.2 for SoTA palettes, G.5 for selector results, C.18 and C.19 for QD or open-ended telemetry, G.8 for maturity views, G.10 for shipping, F.18 when public names are needed, and F.9 only for actual distinct-local-sense comparison.
 
@@ -77,9 +77,9 @@ The minimal durable series basis is `DHCSeriesRef.edition`, `DisciplineRef`, `In
 | `DHCCoordinateResultRef` | Ref to one persisted C.21/C.16 coordinate-result episteme and its active C.21 replay basis. | It is not a row, series, evidence path, or acceptance decision. |
 | `DHCSeries` | One C.2.1 episteme whose EntityOfConcern is the discipline and whose ClaimGraph orders coordinate-result refs by explicit windows under one intended use, ClaimScope, and comparison basis. | It is not a public U-kind, publication occurrence, dashboard, carrier, or Work. |
 | `DHCRow` | One representation element showing an exact coordinate-result ref and selected readable fields. | It does not compute, establish, or replace the result. |
-| `DashboardSlice` | A C.29 view or grouping over exact row, result, or series refs. | It adds no comparison, normalization, acceptance, or selection semantics. |
+| `DashboardSlice` | A dashboard representation or grouping over exact row, result, or series refs; use C.29 when a mathematical correspondence is claimed. | It adds no comparison, normalization, acceptance, or selection semantics. |
 | `DHCTelemetryPin` | A G.11-facing refresh payload with a canonical trigger, exact affected scope, and changed definition, window, evidence, or policy pins. | It is not evidence, currentness, an edition relation, or refresh Work. |
-| dashboard publication | An E.24.PUB occurrence for one selected series or view edition, audience, bounded use, form, carrier, and availability interval. | A UTS row, rendering, upload, or release label does not make it obtain. |
+| dashboard publication | An E.24.PUB occurrence for one exact selected episteme edition expressed by the dashboard form, with its audience, bounded use, carrier, and availability interval. The selected edition may be a series, a coordinate result, or a view independently constituted as a C.2.1 episteme. | A view element, UTS row, rendering, upload, or release label does not supply episteme identity or make publication obtain. |
 
 Conceptual forms:
 
@@ -125,21 +125,21 @@ DashboardSlice := <
 
 1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline. Do not compute from labels or restate Characteristic semantics in G.12.
 2. **Fix use, scope, and windows.** Name IntendedUse and ClaimScope. Add a `TargetSliceRef` only when the computation or publication really consumes it, and state its relation to the scope.
-3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, exact Method and MethodDescription, model or calibration pins when used, time or population basis, and any distance or definition-set edition.
+3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, exact Method, MethodDescription edition when used, model or calibration pins when used, time or population basis, and any active distance or definition-set edition.
 4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and keep any assurance consequence in R only.
 5. **Open optional panels only when used.** Portfolio, QD, open-ended, maturity, SoTA, shipping, and advanced-view fields appear only through their extension blocks.
 
 **Stage B — Construct or update content**
 
-1. When new coordinates are required, separately identify the C.16 measurement Method, MethodDescription, model, calibration, dated Work, result, and result episteme. G.12 creates none of them from a row.
-2. Assemble or revise the `DHCSeries` ClaimGraph from exact coordinate-result refs and windows. This assembly may be dated Work; the series episteme is its result, not the Work or work record.
+1. When new coordinates are required, obtain their C.16 measurement results and coordinate-result epistemes with the active C.21 replay basis. Identify the exact Method and dated measurement Work, and the MethodDescription, model, and calibration basis required for that measurement use. Keep these objects separate; G.12 creates none of them from a row.
+2. When the receiving use needs one series episteme, assemble or revise the `DHCSeries` ClaimGraph from exact coordinate-result refs and windows. Otherwise construct the local view directly over those result refs. Series assembly may be dated Work; its resulting episteme remains separate from the Work or work record.
 3. Apply A.18 and any exact A.19/G.0 comparison, normalization, distance, or aggregation rule actually used. Nominal and ordinal values remain non-arithmetic unless an explicit lawful transformation creates another Scale.
 4. Construct `DHCRow` and `DashboardSlice` representations. They may omit fields for readability only when every displayed claim still resolves its exact result and replay basis.
 
 **Stage C — Publish or refresh only when required**
 
 1. If public designators are needed, use F.18 for names of already constituted series or views. A name row is not publication.
-2. If an audience must be able to obtain the selected edition, establish E.24.PUB with exact audience, bounded use, form, carrier, and interval.
+2. If an audience must be able to obtain a selected episteme edition, establish E.24.PUB with that exact edition, audience, bounded use, dashboard form, carrier, and interval. If the view itself is the selected episteme, recover its independent C.2.1 identity. Otherwise a view over several source epistemes identifies each selected edition and its publication occurrence. Construct a series episteme only when the receiving use needs that additional ordered account.
 3. If changed definitions, windows, evidence paths, crossing bases, or policies must trigger selective maintenance, emit G.11 telemetry pins naming the affected result or series slice. Otherwise stop without refresh wiring.
 
 #### G.12:4.9 — Optional Extensions
@@ -205,7 +205,7 @@ This non-normative seed reserves no semantics. An embedding, prediction, change-
 | `Create_DHCSeries` | exact coordinate-result refs, discipline, intended use, ClaimScope, windows, comparison basis, optional definition-set and target-slice refs | one C.2.1 `DHCSeries` episteme edition |
 | `Update_DHCSeries` | prior series edition, added or replaced exact result refs, affected windows, edition rule | successor series episteme edition only when C.2.1's historical-continuation predicate holds, plus exact edition relation when asserted |
 | `Render_DHCView` | exact result or series refs, view specification, annotations | `DHCRow[]` and/or `DashboardSlice` representations |
-| `Publish_DHCView` | selected episteme or view edition plus E.24.PUB audience, bounded use, form, carrier, and interval | obtaining publication relation when its predicate holds |
+| `Publish_DHCView` | exact selected episteme edition (series, coordinate result, or independently constituted view episteme), dashboard form, and E.24.PUB audience, bounded use, carrier, and interval | obtaining publication relation for that edition when its predicate holds |
 | `Emit_DHCTelemetry` | exact changed definition, window, evidence, crossing, or policy pin and affected slice | G.11-facing telemetry payload |
 | optional panel interfaces | the corresponding extension's exact values | only that panel's representation and conditional refresh pins |
 

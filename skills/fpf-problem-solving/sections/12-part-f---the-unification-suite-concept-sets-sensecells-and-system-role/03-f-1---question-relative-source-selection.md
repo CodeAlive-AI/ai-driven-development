@@ -196,7 +196,7 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 4. **C.31 §4.5.** Makes function-module alignment, interface burden, and flow-boundary alignment separate characteristics rather than one modularity score. This changes the trade-offs the comparison must expose.
 5. **C.32 §§4–5.** Starts candidate synthesis from functional demand and candidate bearers, keeps materially different configurations visible, and records expected gain, known loss, constraints, and source-return conditions. This prevents the source cut from pretending to choose the architecture.
 
-**Deliberate limits.** The cut claims neither an exhaustive survey of allocation algorithms nor one module taxonomy or cross-sector optimum. It does not decide the final DPF pattern identity. The campaign-specific guide and research-source pilot remains in `FPF-DPF-CLAIM-PLACEMENT-CAMPAIGN/PILOT-SYSTEMS-ENGINEERING-FUNCTION-TO-MODULE-ALLOCATION.md`; it is not a hidden dependency of this portable example.
+**Deliberate limits.** The cut claims neither an exhaustive survey of allocation algorithms nor one module taxonomy or cross-sector optimum. It does not decide the final DPF pattern identity.
 
 **First result.** One `SourceCutNote` whose ClaimGraph contains the five roles, use, limits, and reopen conditions; whose EntityOfConcern is the stated question; and whose effective scheme is `FPFCoreReferenceScheme` for FPF August 2026. The later comparison must expose unsupported capabilities, unallocated functions, unresolved interfaces, alternatives, trade-offs, and accepted losses.
 
@@ -258,7 +258,7 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 | --- | --- | --- |
 | One-book domain | One influential source is treated as the whole answer despite a known rival or transfer limit. | State the question and add each source whose inspected claims change it. For a SoTA claim, the one source must itself critically compare the serious alternatives. |
 | Currentness laundering | A registry entry, official status, maintained label, citation count, or recent date promotes a source into the best-known line. | Record identity and currentness separately. Select rank only from the answer-changing comparison, or return the unresolved source gap. |
-| Source-role collapse | A lineage anchor, popular default, failure case, and best-known-line candidate are all reported as equivalent support. | Classify each retained source by its answer-changing role and prevent the last three non-positive roles from carrying SoTA rank. |
+| Source-role collapse | A lineage anchor, popular default, failure case, and best-known-line candidate are all reported as equivalent support. | Classify each retained source by its answer-changing role; official/popular-comparator, lineage-only, and identity/currentness-only roles do not supply SoTA rank. |
 | Reading-list cut | Many sources are retained without distinct roles. | Keep only answer-changing roles and record deliberate exclusions. |
 | Edition blur | A source is named without the edition that fixes the relied claim. | Identify the edition and reopen only affected claims when it changes. |
 | Domain-family inference | A shelf label is treated as evidence of meaning, relation, or relevance. | Use the label only to find sources; inspect their claims. |

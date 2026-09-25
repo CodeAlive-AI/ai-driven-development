@@ -171,10 +171,7 @@ existingDesignationOrLocalExpression(v, u) is sufficient
   -> stop; do not mint NameCard, SenseCell, row, or name family.
 ```
 
-```text
-systemRoleKindBundleRelation(K1, K2) obtains
-  -> not(newSystemRoleKind(K1K2)).
-```
+An obtaining `systemRoleKindBundleRelation(K1, K2)` does not by itself establish a new `K1K2` system-role kind. Any such kind requires independent admission under A.2 with C.3.
 
 ```text
 statusVariant(S, windowOrValue)
@@ -186,10 +183,7 @@ differentLocalSenseProjections(c1, c2)
   -> test F.9 only for a named correspondence use; not(Bridge(c1,c2)) by difference alone.
 ```
 
-```text
-namingObjectPresent(x)
-  -> not(governedValueExists) and not(nextNamingObjectRequired).
-```
+The presence of a naming object establishes neither that its governed value exists nor that another naming object is required. Recover the value independently and test the next object's own receiving-use condition.
 
 These are stopping and dispatch rules. They create no values or relation occurrences.
 
