@@ -80,6 +80,8 @@ Use the resulting answer directly or continue constructing the model it needs. A
 
 Use subject knowledge to propose how the selected participants interact or which operations are permitted. Explain how each proposed relation answers part of the question. A physical interaction law, a mathematical formation rule and an execution rule supply different kinds of premise.
 
+When the working question is causal and the proposed mechanisms still need to be expressed as comparable models, use C.28.CM to construct and challenge those models. Keep the outcome and time horizon comparable across the accounts, together with any intervention being considered. Make the variables, mechanisms, assumptions and material alternative influences explicit. Return each model with its useful consequence or the premise still needed to derive one; continue with inference and criticism in :4.4–4.5. An annotated sketch or ordinary explanation may suffice. Use a supplied or readily constructed model directly when it already supports the needed inference.
+
 Starting material can come from more than one source. A known model may need to be altered before it becomes a useful analogy. Recover the corresponding participants and relations, then examine the changes needed in the present situation. The construction can improve both the proposed model and the understanding of what it represents.
 
 Keep coupled choices compatible. If liquid leaving a closed vessel increases the space occupied by trapped gas, a pressure calculation must use that changed space. If two classes of formal objects permit different extensions, their counts must remain distinguishable until the extension is performed.
@@ -237,6 +239,7 @@ Reopen the method when another construction approach supplies a more useful mode
 ### B.5.FM:12 - Relations
 
 - **B.5** coordinates inquiry; **B.5.4** constructs a supplied concept's correspondence to a situation.
+- **C.28.CM** develops missing causal relations and alternatives, returning a conditional consequence or unresolved premise to the general model-building question.
 - **C.29** selects and uses a mathematical representation. **C.29.1, C.29.2 and C.29.3** supply transfer, computational formulation and realization.
 - **A.3.3**, **C.16** and **A.6.3.RT** supply state, measurement and expression construction.
 - **B.5.RC** and **B.5.RA** recover an available construction or argument. **B.5.RR** revises reasoning; **B.5.MPC.R** repairs a failed joint physical answer.

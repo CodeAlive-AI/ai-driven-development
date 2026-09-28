@@ -161,7 +161,9 @@ def split_spec():
         if not h2s:
             # No H2 children — put all content in _index.md
             content = "".join(h1_block)
-            (dir_path / "_index.md").write_text(content, encoding="utf-8")
+            (dir_path / "_index.md").write_text(
+                content.rstrip() + "\n", encoding="utf-8"
+            )
             total_files += 1
             print(f"  {dirname}/ ({len(h1_block)} lines, no sub-sections)")
         else:
@@ -173,14 +175,18 @@ def split_spec():
             h2_entries = []
             for h2_idx, (h2_line, h2_title, h2_block) in enumerate(h2s, 1):
                 filename = heading_to_filename(h2_idx, h2_title)
-                (dir_path / filename).write_text("".join(h2_block), encoding="utf-8")
+                (dir_path / filename).write_text(
+                    "".join(h2_block).rstrip() + "\n", encoding="utf-8"
+                )
                 total_files += 1
                 desc = first_sentence(h2_block[1:])
                 h2_entries.append((filename, h2_title, len(h2_block), desc))
 
             # Write _index.md with preamble + TOC
             index_content = "".join(preamble) + build_toc(h2_entries)
-            (dir_path / "_index.md").write_text(index_content, encoding="utf-8")
+            (dir_path / "_index.md").write_text(
+                index_content.rstrip() + "\n", encoding="utf-8"
+            )
             total_files += 1
 
             print(f"  {dirname}/ ({len(h2s)} sub-sections)")

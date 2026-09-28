@@ -51,6 +51,8 @@ The first result is a supported statement with its limits and the next useful st
 4. Which live threat could overturn the conclusion: for example, confounding, time order, missing comparison cases, interference, measurement error or transfer to another population?
 5. What statement is supported under those conditions, and what further evidence or calculation would change it?
 
+When the causal question requires relations that have not yet been constructed, use C.28.CM to turn the subject account and material alternatives into explicit causal models. Return with their premises, conditional consequences or a precise missing relation. A sufficient support verdict or an adequate existing model can finish the present question without that construction.
+
 #### C.28:0.4 - First Output
 
 **Ordinary first result.** Suppose the available comparison says that self-selected teams using method A completed more tasks than teams not using it, while task difficulty and prior team capability were not controlled. Report the observed association; the claim that A caused the improvement remains unsupported by that comparison. The next useful question is whether a design or existing evidence can distinguish the method's effect from those rival explanations.
@@ -84,6 +86,8 @@ nextCausalUseAction =
   requestPerformedSamplingEvidence |
   requestTransportCheck |
   requestEvidenceDesign |
+  requestModelConstruction |
+
   sendFairnessUseToD5BiasAuditReport |
   sendParityUseToG9 |
   abstainDownstream
@@ -495,6 +499,8 @@ The record states which interventions and queries the learned or abstracted vari
 
 #### C.28:4.7 - Graph and calculus names
 
+Use C.28.CM when the causal relations, material alternatives or observing process still need to be modeled. It supplies a model with explicit premises and a useful consequence or unresolved distinction. Use C.28.MR for a required intervention derivation in a supplied model. These contributions return to the support question here; constructing a graph does not establish its empirical adequacy.
+
 Use specialist names only when the result depends on them. For a counterfactual graphical-model derivation, use the conditions and calculus in [Correa and Bareinboim, 2025](https://proceedings.mlr.press/v267/correa25a.html) and cite the actual derivation used:
 
 
@@ -601,6 +607,7 @@ The last evaluation needs the natural proposal and its relation to outcomes; a f
 
 | Current issue | Use | C.28 contribution |
 | --- | --- | --- |
+| missing causal model or materially different mechanism account | `C.28.CM` | causal question and required support; returns explicit models with conditional consequences |
 | measurement or metric | `C.16` | causal support only when the measure is used causally |
 | temporal trend or rate | `C.27` | causal support only when time order is used as cause evidence |
 | evidence path and provenance | `A.10` | support-result and component refs |
@@ -732,6 +739,7 @@ These are bounded selections for the illustrated questions. They preserve cheap 
 
 ### C.28:12 - Relations
 
+- **C.28.CM** constructs and challenges causal models when the mechanism relations or material alternatives are still missing; the returned model retains its assumptions and evidential limits.
 - **C.28.MR** derives an intervention consequence within a supplied causal model, with the replacement, retained conditions and solution needed by that query.
 
 - `C.16` keeps measurements and scales; `C.27` keeps temporal-claim adequacy.

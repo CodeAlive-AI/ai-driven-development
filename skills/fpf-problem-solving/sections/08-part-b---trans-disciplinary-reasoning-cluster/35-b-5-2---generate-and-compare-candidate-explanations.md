@@ -78,6 +78,8 @@ The filtering step is local and context-sensitive, but the criteria used **SHALL
 
 No one filter is universally decisive. The pattern only requires that at least two filters be declared when a prime hypothesis is selected.
 
+When a causal hypothesis cannot yet yield a discriminating implication because its mechanisms and rival accounts are unspecified, use C.28.CM to construct comparable causal models. Return their conditional consequences and unresolved premises to these plausibility filters. A useful hypothesis whose present question is already answered needs no additional model merely to remain a candidate.
+
 #### B.5.2:4.5 - Abductive Unfolding Structure Block
 
 When the question concerns possible continuations of abductive work and their conditions, use A.22.CGUS's ordinary branch. Open its formal branch only when the receiving use needs the structure's identity or replay; reuse of a hypothesis note alone does not require that branch.
@@ -154,6 +156,7 @@ Contemporary inquiry practice in science, engineering, design, and diagnosis tre
 - **Consumes:** `U.AbductivePrompt` publications from `B.5.2.0`, often reached through `B.4.1` and `A.16`.
 - **Produces:** hypothesis-bearing `U.Episteme` publications with explicit conjectural content, supports, fragilities and allowed use; no automatic `AssuranceLevel:L0`.
 - **Provides inputs for:** deduction, probe design and evidence synthesis when those questions are live. C.11 governs a separate feasible-action or acquisition choice; C.28 supplies needed causal-use support. A possible experiment is not funded or scheduled Work.
+- **Uses:** C.28.CM when causal mechanisms and alternatives must be constructed before their implications can inform the plausibility comparison.
 - **Coordinates with:** `A.22.CGUS` when the abductive prompt, `B.4.1` cue publication, rival hypotheses, plausibility constraints, evidence-return loci, and downstream tests must be inspected as an `AbductiveSearchUnfoldingStructure`.
 
 #### B.5.2:12.1 - Prompt-entry broadening via `U.AbductivePrompt`

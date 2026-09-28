@@ -1,6 +1,6 @@
 ## Practical entries
 
-The entries below are examples, not a catalogue or a boundary around FPF, a DPF, or an LPF. Bring the actual difficulty from your project. If no example fits, search the Table of Contents or ask an assisting agent to compare a small plausible set of direct patterns. These pattern languages can help with many more questions than a short Readme can show.
+The entries below are examples, not a catalogue or a boundary around FPF, a DPF, or an LPF. Bring the actual difficulty from your project. If no example fits, follow [Using FPF and its DPF Suites](https://github.com/ailev/FPF/blob/main/USING-FPF.md#choose-what-to-read) to search the available publications for an individual method or a connected application. Use the full Table of Contents for technical terms and direct pattern lookup, or ask an assisting agent to compare plausible candidates. These pattern languages can help with many more questions than a short Readme can show.
 
 The ordinary examples start with one direct pattern and retain any conditions for a later use. They can stop at the first useful result without a mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
 

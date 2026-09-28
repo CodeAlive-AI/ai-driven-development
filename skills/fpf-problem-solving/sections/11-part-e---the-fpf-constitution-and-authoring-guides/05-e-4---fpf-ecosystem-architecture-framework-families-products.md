@@ -50,6 +50,8 @@ Start with the smallest route that answers the current question:
 
 This route is ordinary guidance, not a new record or package. A direct pattern or honest stop is a complete first result when no durable ecosystem-architecture record is needed.
 
+When the difficulty is that individually available patterns do not yet give practitioners a usable whole, use E.4.CM to develop the composite Method contribution. It connects recurring composition difficulties, exact supplied remedies, public placement and a short entry. A new primitive operation or a new framework is not a prerequisite for that useful contribution.
+
 Create an ecosystem-architecture record only when that durable architecture or later reliance is current. Use these fields:
 ```text
 FPFEcosystemArchitectureRecord@Context:
