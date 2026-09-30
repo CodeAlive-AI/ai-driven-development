@@ -18,7 +18,7 @@
 
 Use this pattern when a source uses a compact architecture or stratification label and that word alone does not tell you what technical claim is being made.
 
-Typical labels are `layer`, `level`, `tier`, `stack`, `ladder`, `rung`, and architecture-operation words such as `block`, `expert`, `cache`, `router`, and `gate`.
+Typical labels are `layer`, `level`, `tier`, `stack`, `ladder`, `rung`, structural uses of `vertical` or `horizontal`, and architecture-operation words such as `block`, `expert`, `cache`, `router`, and `gate`.
 
 **What goes wrong if missed.** A useful local label starts acting as ontology. A `layer` is assumed to be a holon level, control layer, publication layer, scale window, or module boundary without deciding which. A `stack` becomes architecture by name; a `block` becomes a module; an `expert` becomes a system-role kind or performer; a `cache` becomes a state or memory relation; a `router` becomes a decision policy; a `gate` becomes a gate decision. Word shape establishes none of these.
 
@@ -102,6 +102,8 @@ The note is neither the selected structure nor the relation, claim, publication,
 | Ordinary source-label non-use | any source label | No FPF claim remains after the sentence is read in context. | No precision-restoration pattern; keep ordinary wording, quote it, reduce its use, or block reliance. |
 
 **When a level claim matters.** When a later decision or design relies on a sentence such as “X is at level L” or “A is above B,” name the subject at stake (the `EntityOfConcern`), what is being ordered, compared, grouped, or mapped, the relation or scale mapping that gives the claim its meaning, when it applies, and whether the sentence asserts, proposes, assumes, or merely illustrates the claim. Apply the same test when `layer`, `tier`, `band`, `scale`, or `stage` carries the stronger claim. A named model or standard may provide this mapping within its declared use; its status does not extend the claim beyond that use. The source word may remain, but these facts—not the label—carry the claim. A list, diagram row, first-then order, carrier section, curriculum, scale label, stage sequence, or coarse-grained description does not establish a subject level by form. If the facts are missing, keep the wording local or illustrative and block reliance on the stronger level claim.
+
+**When orientation carries the claim.** Recover the structure's subject, the represented relation and the convention that gives vertical or horizontal its meaning through A.22:4.3a. Keep literal spatial directions under their actual reference frame. For a Method-architecture question, C.30.ASV:4.5a helps choose the structure; the axis does not choose it.
 
 #### C.30.STRAT:4.2a - Same-sentence claim boundary
 

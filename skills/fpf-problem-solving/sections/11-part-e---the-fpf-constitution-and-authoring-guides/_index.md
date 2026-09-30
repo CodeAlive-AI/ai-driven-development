@@ -7,11 +7,11 @@
 - [E.2 - FPF's Eleven Pillars and Bitter-Lesson Preference (BLP)](02-e-2---fpf-s-eleven-pillars-and-bitter-lesson-preference.md) (136 lines) — Use the Eleven Pillars in §4 to assess whether an FPF rule or artifact meets its constitutional obligations. Use the separate BLP policy in §6 when a computational choice claims a...
 - [E.2.DA - Evaluate How FPF Realizes Its Pillars (Pillar-Adequacy CharacteristicSpace)](03-e-2-da---evaluate-how-fpf-realizes-its-pillars.md) (277 lines) — Use E.2.DA when the object under improvement is an FPF-level object and the question is whether it realizes the E.2 Pillars adequately for a declared use. The object can be a monolith edition,...
 - [E.3 - Principle Taxonomy, Precedence and Agent Autonomy Profiles (ABL)](04-e-3---principle-taxonomy-precedence-and-agent-autonomy-profi.md) (168 lines) — Pattern E.2 supplies eleven immutable pillars, yet experience shows that a flat list of principles invites ambiguity: reviewers cannot decide which pillar overrules another  and “dead‑letter” rules...
-- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites](05-e-4---fpf-ecosystem-architecture-framework-families-products.md) (317 lines) — Type: Architectural (A)
-- [E.4.CM - Develop Composite Methods as Framework Contributions](06-e-4-cm---develop-composite-methods-as-framework-contribution.md) (234 lines) — Normativity: Normative
-- [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes](07-e-4-fpf---fpf-edition-assembly-publication-forms-carriers-an.md) (288 lines) — Type: Architectural (A)
+- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites](05-e-4---fpf-ecosystem-architecture-framework-families-products.md) (319 lines) — Type: Architectural (A)
+- [E.4.CM - Develop Connected Methods as Framework Contributions](06-e-4-cm---develop-connected-methods-as-framework-contribution.md) (291 lines) — Normativity: Normative
+- [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes](07-e-4-fpf---fpf-edition-assembly-publication-forms-carriers-an.md) (289 lines) — Type: Architectural (A)
 - [E.4.PFAD - Principle-Framework Architecture Decision](08-e-4-pfad---principle-framework-architecture-decision.md) (358 lines) — Type: Architectural (A)
-- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish](09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md) (625 lines) — Type: Architectural (A)
+- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish](09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md) (628 lines) — Type: Architectural (A)
 - [E.4.DPF.DA - Evaluate a DPF or LPF Package for Its Declared Use (Package-Adequacy CharacteristicSpace)](10-e-4-dpf-da---evaluate-a-dpf-or-lpf-package-for-its-declared.md) (403 lines) — Normativity: Normative unless marked informative.
 - [E.4.PFR - Pattern-Framework Relation and Edition Discipline](11-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (357 lines) — Type: Architectural (A)
 - [E.4.PFIP - Principle-Framework Publication Integration and Preservation](12-e-4-pfip---principle-framework-publication-integration-and-p.md) (250 lines) — Normativity: Normative unless explicitly marked informative
@@ -22,16 +22,16 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](17-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the FPF Specification](18-e-6---didactic-architecture-of-the-fpf-specification.md) (80 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases](19-e-7---archetypal-grounding-explain-rules-of-fpf-architectura.md) (77 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (751 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (756 lines) — Type: Architectural (A)
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](21-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](22-e-9---design-rationale-record-for-fpf-content-decisions.md) (359 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](23-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (444 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
-- [E.10 - Unified Lexical Rules for FPF](24-e-10---unified-lexical-rules-for-fpf.md) (1578 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](24-e-10---unified-lexical-rules-for-fpf.md) (1629 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](25-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.INT - Recovering What Interest or Curiosity Means Here](26-e-10-int---recovering-what-interest-or-curiosity-means-here.md) (165 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](27-e-10-dev---recovering-what-development-or-evolution-means-in.md) (220 lines) — Type: Part E precision-restoration pattern
-- [E.10.MOVE - Move, Readiness and Trajectory Wording Precision Restoration](28-e-10-move---move-readiness-and-trajectory-wording-precision.md) (340 lines) — Type: Part E precision-restoration pattern
-- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](29-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (440 lines) — Type: Architectural (E)
+- [E.10.MOVE - Move, Readiness and Trajectory Wording Precision Restoration](28-e-10-move---move-readiness-and-trajectory-wording-precision.md) (342 lines) — Type: Part E precision-restoration pattern
+- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](29-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (444 lines) — Type: Architectural (E)
 - [E.10.ROLE - Recovering What “Role” Means in the Current Claim](30-e-10-role---recovering-what-role-means-in-the-current-claim.md) (180 lines) — Type: Lexical and ontological precision restoration (E)
 - [E.10.P - Conceptual Prefixes policy & registry](31-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Recovering What “Context” Means in Use](32-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
@@ -39,7 +39,7 @@
 - [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](34-e-11---first-practical-entry-and-pattern-use-discoverability.md) (539 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](35-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (554 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](36-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (338 lines) — Type: Pattern-language use pattern (E)
-- [E.11.PFP - Framework Publication Form Profile for Markdown](37-e-11-pfp---framework-publication-form-profile-for-markdown.md) (218 lines) — Type: Specialization of E.11
+- [E.11.PFP - Framework Publication Form Profile for Markdown](37-e-11-pfp---framework-publication-form-profile-for-markdown.md) (219 lines) — Type: Specialization of E.11
 - [<FrameworkCode>.Preface:<n> - <Title>](38-frameworkcode-preface-n---title.md) (133 lines) — For example, ## STR.Preface:1 - Problem frame - Direction and commitment under changing conditions identifies the first section of the Strategy Preface. ### ME.Preface:7.3 - Production...
 - [E.11.DSG - DPF Suite Reference](39-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](40-e-12---didactic-primacy-cognitive-ergonomics.md) (115 lines) — Use this pattern in either of two working situations:

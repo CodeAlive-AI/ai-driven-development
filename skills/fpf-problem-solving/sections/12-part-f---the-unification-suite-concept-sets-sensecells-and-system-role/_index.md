@@ -4,8 +4,8 @@
 ## Contents
 
 - [F.0.1 - Source-Local Meaning Recovery](01-f-0-1---source-local-meaning-recovery.md) (251 lines) — Type: Architectural (A)
-- [F.0.2 - Conceptual Synthesis across Source Ontologies](02-f-0-2---conceptual-synthesis-across-source-ontologies.md) (229 lines) — Type: Architectural (A)
-- [F.1 - Question-Relative Source Selection](03-f-1---question-relative-source-selection.md) (326 lines) — Type: Architectural (A)
+- [F.0.2 - Semantic Synthesis across Source Ontologies](02-f-0-2---semantic-synthesis-across-source-ontologies.md) (236 lines) — Type: Architectural (A)
+- [F.1 - Question-Relative Source Selection](03-f-1---question-relative-source-selection.md) (328 lines) — Type: Architectural (A)
 - [F.2 — Source-Local Term Harvesting & Normalisation](04-f-2-source-local-term-harvesting-normalisation.md) (209 lines) — “Harvest the source’s own words, recover what they mean there, and stop before comparison.”
 - [F.3 - Source-Local Sense Clustering](05-f-3---source-local-sense-clustering.md) (255 lines) — “Under one explicit interpretation basis, merge aliases that make the same local claim and split uses that do not.”
 - [F.4 - SystemRoleKindDescription — Describing an Exact System-Role Kind](06-f-4---systemrolekinddescription-describing-an-exact-system-r.md) (331 lines) — Type: Definitional (D)

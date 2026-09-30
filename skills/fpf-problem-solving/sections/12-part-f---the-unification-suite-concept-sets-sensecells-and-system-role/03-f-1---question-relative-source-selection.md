@@ -86,6 +86,8 @@ The first three roles can supply answer-changing evidence. An official or popula
 
 For a SoTA claim, disable the generic one-source cheap exit unless the one source is itself a current critical synthesis that compares the serious alternatives for the named question and the author can state why no known action-changing rival or counterexample remains hidden. Otherwise retain the necessary rival and failure evidence or return an unresolved source gap. Do not manufacture confidence from a one-source cut.
 
+An original FPF or DPF answer is compared under E.8:11 on the same basis as a source-derived answer. Select the sources needed to expose serious alternatives, their limits and relevant failure evidence; do not require a prior external publication containing the authored answer. The original answer still needs that comparison, so its authorship does not restore the generic one-source exit.
+
 The `SourceCutNote` records the `E.8:11` roles and the missing comparison, but it does not itself select the best-known line. Use `F.0.2` when an actual cross-source synthesis claim is required. Use `G.2` only when a broader refreshable evidence pack is justified; a bounded comparison does not require that apparatus by default.
 
 

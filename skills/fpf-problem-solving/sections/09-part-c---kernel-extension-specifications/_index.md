@@ -71,8 +71,8 @@
 - [C.30.AD - Architecture Description Adequacy](61-c-30-ad---architecture-description-adequacy.md) (466 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](62-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (262 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Clarify Architecture and Structure Wording (Precision Restoration)](63-c-30-p---clarify-architecture-and-structure-wording.md) (248 lines) — Type: Architectural pattern
-- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](64-c-30-strat---clarify-stratification-and-architecture-source.md) (255 lines) — Type: Architectural precision-restoration subpattern under C.30
-- [C.30.ASV - Architecture Structural View Adequacy (ASV)](65-c-30-asv---architecture-structural-view-adequacy.md) (807 lines) — Type: Architectural pattern
+- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](64-c-30-strat---clarify-stratification-and-architecture-source.md) (257 lines) — Type: Architectural precision-restoration subpattern under C.30
+- [C.30.ASV - Architecture Structural View Adequacy (ASV)](65-c-30-asv---architecture-structural-view-adequacy.md) (848 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](66-c-30-lca---control-structure-view-adequacy.md) (312 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](67-c-30-ilc---cross-scope-architecture-residual-triage.md) (253 lines) — Type: Architectural subpattern under C.30
 - [C.30.TFS-REL - Use Transformation-Flow Structures and Networks in Architecture](68-c-30-tfs-rel---use-transformation-flow-structures-and-networ.md) (416 lines) — Type: Architectural pattern
@@ -86,7 +86,7 @@
 - [C.32.ACE - Architecture Characteristic Eval Programs](76-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32
 - [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](77-c-32-conway---architecture-influence-and-transformed-archite.md) (433 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Architecture Candidates to Reduce Cross-Scope Residuals](78-c-32-mlao---architecture-candidates-to-reduce-cross-scope-re.md) (275 lines) — Type: Architectural subpattern under C.32
-- [C.32.MWA - Practice Architecture Synthesis from Several Structures](79-c-32-mwa---practice-architecture-synthesis-from-several-stru.md) (204 lines) — Tech-name: PracticeArchitectureSynthesisFromSeveralStructures
+- [C.32.MWA - Synthesize an Architecture Account of Methods and Their Use](79-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) (208 lines) — Tech-name: MethodArchitectureSynthesisFromSeveralStructures
 - [C.32.FAIL - Architecture Failure Recognition and Repair](80-c-32-fail---architecture-failure-recognition-and-repair.md) (245 lines) — Type: Architectural subpattern under C.32
 - [C.32.PAD - Project Architecture Decision After Candidate Synthesis](81-c-32-pad---project-architecture-decision-after-candidate-syn.md) (362 lines) — Type: Architecture decision pattern under C.32
 - [C.32.ADR - Architecture Decision Record Projection](82-c-32-adr---architecture-decision-record-projection.md) (228 lines) — Type: Architecture publication pattern under C.32
@@ -97,7 +97,7 @@
 - [C.36 - Cultural Evolution and Cultural-Evolution Engineering](87-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (404 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.37 - Select and Use Representations for One Action](88-c-37---select-and-use-representations-for-one-action.md) (281 lines) — Normativity: Normative unless explicitly marked informative
 - [C.38 - Construct Comparable Ways to Obtain One Result](89-c-38---construct-comparable-ways-to-obtain-one-result.md) (202 lines) — Normativity: Normative unless explicitly marked informative
-- [C.39 - Find and Develop a Way to Obtain a Result](90-c-39---find-and-develop-a-way-to-obtain-a-result.md) (169 lines) — Normativity: Normative unless explicitly marked informative.
+- [C.39 - Find and Develop a Way to Obtain a Result](90-c-39---find-and-develop-a-way-to-obtain-a-result.md) (265 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.39.RO - Turn a Construction into a Reusable Operation](91-c-39-ro---turn-a-construction-into-a-reusable-operation.md) (214 lines) — Normativity: Normative
 - [C.40 - Develop Branching Search from Reusable Material](92-c-40---develop-branching-search-from-reusable-material.md) (171 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.40.CD - Develop Problems and Ways of Solving Them Together](93-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (216 lines) — Normativity: Normative

@@ -1,7 +1,7 @@
 ## B.1.5.EW - Recover How Constituent Actions Enact Encompassing Work
 
 > **Type:** Method pattern
-> **Status:** Candidate
+> **Status:** Stable
 
 ### B.1.5.EW:1 - Problem frame
 
@@ -56,9 +56,9 @@ Choose the occurrence account that fits the work. Several descriptions do not re
 
 A useful test is to explain the positive connection, not just what would fail if the action disappeared. Removing an external power supply can stop a calculation; that fact alone does not make power generation part of the analyst's Work.
 
-#### B.1.5.EW:4.3 - Follow the relevant vertical and recover its constituents
+#### B.1.5.EW:4.3 - Follow constituent and encompassing work
 
-Continue upward through another encompassing work only while its conditions change the selected action, its learning or its use. Explain each intervening connection. If an action serves two wholes, keep both uses and their different conditions visible.
+Continue through the constituent–whole connections in the selected Method or Work structure only while the next encompassing whole's conditions change the action, its learning or its use. Explain each intervening connection. If an action serves two wholes, keep both uses and their different conditions visible.
 
 Then ask what you must be able to do, or obtain from another participant, to perform the selected action. If a described construction remains unclear, use B.5.RC to recover its inputs, operations, conditions and a small execution. If you lack the domain know-how, obtain an explanation or demonstration. If you understand the operation but cannot perform it in the combination, practise with the encompassing conditions, obtain support or use another qualified contributor. Stop a branch at an understood operation or an available contribution sufficient for this use.
 
@@ -99,7 +99,7 @@ A solo drill established that the dancer can make a large turn. In the partnered
 
 A different dancer has adequate strength and static axis control and knows the figure, but cannot maintain balance during its rotation. The missing performance lies between available muscular actions and the known figure. More strength practice or sequence recall need not repair this stipulated gap. Develop the rotational coordination in suitable practice, then return to the figure and vary the conditions that affect the combination. Keep already attained abilities; test the needed intermediate performance rather than assuming that mastery below and knowledge above fill it.
 
-The vertical here follows performed movement, coordinated figure and phrase. Playing the recording is external support under this boundary. Practising these movements may later contribute to cultural transmission, but one beat does not establish that a cultural variant persists in a population.
+The selected Work structure here connects the performed movement, coordinated figure and phrase through their constituent–whole relations. Playing the recording is external support under this boundary. Practising these movements may later contribute to cultural transmission, but one beat does not establish that a cultural variant persists in a population.
 
 #### B.1.5.EW:5.2 - An update within a running calculation
 

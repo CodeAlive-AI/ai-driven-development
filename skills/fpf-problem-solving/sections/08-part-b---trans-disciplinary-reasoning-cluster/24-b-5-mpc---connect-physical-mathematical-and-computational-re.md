@@ -1,7 +1,7 @@
 ## B.5.MPC - Connect Physical, Mathematical and Computational Reasoning
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.MPC:1 - Problem frame
@@ -388,7 +388,7 @@ For this Method, the practical consequence is precise. Naming the same count N i
 
 A second alternative is to make one formal language carry the whole inquiry. This can help when a mature language expresses the required physical, mathematical and execution distinctions and its users can work with it. If it cannot express a necessary distinction, use another representation or develop the language. Retaining interpretable correspondences allows several forms to contribute without assuming that one form already covers the whole problem.
 
-Levenchuk's [2012 robotics account](https://ailev.livejournal.com/1034484.html) describes difficulty combining familiar speed calculations, several distance quantities, program expressions and physical timing. It motivates changing the question while retaining the interpreted relations in :4.3, and examining the timing of observation and execution in :4.5. The account is a historical report of a particular learning situation. The resulting Method here is a conceptual synthesis.
+Levenchuk's [2012 robotics account](https://ailev.livejournal.com/1034484.html) describes difficulty combining familiar speed calculations, several distance quantities, program expressions and physical timing. It motivates changing the question while retaining the interpreted relations in :4.3, and examining the timing of observation and execution in :4.5. The account is a historical report of a particular learning situation. The resulting Method here is a methodological synthesis.
 
 AI can reduce the cost of obtaining a calculation, candidate proof or explanation while leaving the choice and interpretation of the receiving question open. Klowden and Tao discuss the difference between a formally checked statement, its intended meaning and the understanding that enables further use. Section :4.8 turns that distinction into a contribution question: who can recover the decisive connection and adapt it when the premise changes? This is a capability to arrange, not an assertion that every participant must reproduce every proof. See [*Mathematical Methods and Human Thought in the Age of AI*, 2026, §4](https://arxiv.org/html/2603.26524v1).
 
@@ -402,7 +402,7 @@ A sufficient answer remains a legitimate stopping point when the current use is 
 
 ### B.5.MPC:11 - SoTA-Echoing
 
-For the declared coordination question, the selected answer is the explicit combination of physical interpretation, operation-preserving mathematical use, computational formulation and realization comparison. The sources below supply particular advances and alternatives. The combined Method and the three constructed cases are conceptual synthesis; they do not establish a measured advantage for every discipline, reader or team.
+For the declared coordination question, the selected answer is the explicit combination of physical interpretation, operation-preserving mathematical use, computational formulation and realization comparison. The sources below supply particular advances and alternatives. The combined Method is a methodological synthesis. The three cases are constructed under their stated conditions. Neither supplies a measured advantage for every discipline, reader or team.
 
 | Practice question | Selected line, comparison and change to this Method | Limits and condition for reconsidering the choice |
 | --- | --- | --- |

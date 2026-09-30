@@ -74,6 +74,7 @@ The name comparison covers `FPFEditionRebuildabilityRecord`, `FPFEditionAssembly
 | `MATHEMATICAL-MODELING` | Ordinary practical entry |
 | `LIVE-WORK-STEERING` | Ordinary practical entry |
 | `METHOD-RECOVERY` | Ordinary practical entry |
+| `METHOD-CONSTRUCTION` | Ordinary practical entry |
 | `WORK-OPPORTUNITY` | Ordinary practical entry |
 | `PROFESSIONAL-RESULT` | Ordinary practical entry |
 | `UNFAMILIAR-THEORY` | Practical-Use Card |

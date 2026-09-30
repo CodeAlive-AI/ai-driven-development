@@ -945,7 +945,7 @@ Adapt the obstructions and failures-of-compositionality perspective into `LostSt
 
 [Horsman, Stepney, Wagner and Kendon 2014, §§VI–VIII](https://arxiv.org/abs/1309.7979) connect abstract computation with physical preparation, evolution and interpretation. C.29.3 adopts this comparison and explains its current extensions to digital, analog and stochastic realizations. Its source discussion distinguishes the resulting computational claim, the system model and performed execution.
 
-These Methods and their worked constructions are conceptual synthesis. Algorithm design, numerical analysis, learning, coding and distributed computation supply further construction techniques, guarantees and cost analysis when the working question needs them.
+These Methods are a methodological synthesis. Their worked cases are constructed under the stated models and conditions. Algorithm design, numerical analysis, learning, coding and distributed computation supply further construction techniques, guarantees and cost analysis when the working question needs them.
 
 ### C.29:13a - References
 

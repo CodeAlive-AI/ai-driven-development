@@ -1,7 +1,7 @@
 ## C.16.MR - Construct a Measurement Relation
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### C.16.MR:1 - Problem frame
@@ -195,7 +195,7 @@ The voltmeter case exhibits the trade-off. Reading V directly is sufficient for 
 
 [Dounas-Frazer and Lewandowski (2018), §2](https://arxiv.org/pdf/1805.10334), distinguishes the investigated phenomenon, measuring equipment and their models. **Adapt:** :4.1-:4.2 recover the measurement contribution, while :4.5 preserves the separate model and arrangement repairs. The source studies experimental physics education; this cross-practice construction does not claim that its educational findings establish transfer to all agents or domains.
 
-The common procedure and worked cases are a conceptual synthesis. Reopen the construction choice when a supplied calibration achieves the same interpretation with less work, or when a newly consequential interaction or response condition defeats the existing relation. Detailed uncertainty propagation, calibration design and model identification remain substantial specialized Methods.
+The common procedure is a methodological synthesis. The worked cases are constructed under their stated conditions. Reopen the construction choice when a supplied calibration achieves the same interpretation with less work, or when a newly consequential interaction or response condition defeats the existing relation. Detailed uncertainty propagation, calibration design and model identification remain substantial specialized Methods.
 
 ### C.16.MR:12 - Relations
 

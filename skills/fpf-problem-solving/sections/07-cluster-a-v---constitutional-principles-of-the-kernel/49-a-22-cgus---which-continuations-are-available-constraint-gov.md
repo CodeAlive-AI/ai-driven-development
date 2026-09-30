@@ -63,7 +63,7 @@ That corrected card is already useful. It keeps both potential alternatives visi
 
 ##### A.22.CGUS:4.1.1 - Conditions through constituent and encompassing work
 
-When a continuation is a way of performing work, recover the part of its Method/Work vertical that can change availability. Ask what constituent actions must be performable and what encompassing work is being done through them. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.
+When a continuation is a way of performing work, recover the constituent–whole relations in the relevant Method and Work structures that can change availability. Ask what constituent actions must be performable and what encompassing work is being done through them. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.
 
 Distinguish conditions needed at entry, conditions that must remain satisfied during combined performance, and the result required by the encompassing use. In particular:
 
@@ -187,6 +187,8 @@ Potential branches and joins remain part of the structure even when the present 
 Before qualification, an ordinary explanation is about the domain question or proposed alternatives. If persistence is needed, its C.2.1 `EntityOfConcern` remains that question or proposed set, not a CGUS that has not yet qualified.
 
 After qualification, a whole-structure description may describe loci, bindings, relations, constraints, potential branches, case results, and relevant omissions. A separate demonstrative slice may show one traversal for a declared teaching or comparison use. That slice is a C.2.1 episteme: its exact claim content, the qualified CGUS as `EntityOfConcern`, and its effective `U.ReferenceScheme` jointly recover its identity. `DemonstrativeUnfoldingSlice@Context` is readable lineage for this possibility, not a `U.Kind` or an exact slice by itself. The slice neither creates nor reidentifies the structure. Use C.33 only when hidden or lost structure in its carrier matters to a declared architecture use within C.33's scope.
+
+Where a slice shows one selected pattern use, it may recall the difficulty through the pattern's `Problem frame` or `Problem`, or recall the way of addressing it through the `Solution`. To show that same use in either form, preserve the selected pattern, working subject and question or proposed use, current conditions, expected result, stop or continuation, and relevant locus bindings. Changing between those formulations changes only the description when the selected pattern use and the qualified structure remain the same. A.22 structure identity still depends on its constituents, selected obtaining relations, applied constraints and named selection-use frame; CGUS membership additionally depends on its locus bindings and at least two potential continuations. Question or action labels establish neither.
 
 Displayed words such as *move*, *next*, and *path* remain ordinary language unless a stronger claim requires another kind. A proposed action, a plan item, a `U.WorkPlan`, dated `U.Work`, and an actual `U.Transformation` are different values. Use `E.10.MOVE`, A.15, and A.3 only when that distinction changes the claim; a display performs and authorizes nothing.
 

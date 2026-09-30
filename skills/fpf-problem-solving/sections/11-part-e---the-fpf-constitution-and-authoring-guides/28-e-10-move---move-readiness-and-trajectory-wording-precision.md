@@ -44,6 +44,8 @@ Without this restoration:
 
 **Cheap ordinary use.** When the governed value and its direct pattern are already evident, apply `F.19`, name the value, rewrite the phrase without changing the claim, confirm the remaining admissible reader use, and stop. Do not materialize the repair note or traverse the disposition table. Open the fuller procedure only when the wording remains ambiguous, carries several governed values, imports a source term, or must be replayed later.
 
+For a mantra, recover the pattern use before deciding that two phrases mean different moves. A question about a difficulty can refer to the `Problem frame` or `Problem`; a reminder of what to do can refer to the same use through the `Solution`. “Find what the trial establishes” can state the difficulty and the action intended to resolve it. When the subject, intended result and conditions are clear, retain the useful wording. Clarify a missing participant or relation where the reader would otherwise choose a different pattern or action. This wording choice decides neither whether a mantra is local or long nor whether a surrounding presentation is a demonstrative slice of an independently qualified CGUS.
+
 Restore the governed target before choosing replacement wording:
 
 1. Name the exact `GovernedTextSpan`, the `ClaimBeingMade`, and the `ObjectUnderWordingRepair`.

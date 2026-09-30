@@ -213,7 +213,7 @@ Reopen the choice when a simpler entry works just as well, a cue repeatedly misf
 
 - **A.15.7** chooses an action from the available situation and applicable methods. This pattern constructs an encounter when a relevant possibility repeatedly fails to enter that choice.
 - **A.15.8** examines performer and support dependencies. **A.15.10** retains or reconstructs an interrupted continuation; this pattern can introduce a method that has never belonged to the present work.
-- **B.1.5.EW** recovers the concurrent vertical of methods and work needed to judge the contribution.
+- **B.1.5.EW** recovers how constituent actions enact encompassing work and which whole conditions constrain those actions.
 - **B.5.PI** connects ordinary work with inquiry before a known problem or help request; **B.5.EA** develops an unformulated distinction. They supply what merely arranging a known-method cue cannot.
 - **C.40** and **C.40.CD** develop problems and useful possibilities where the candidate relation is still missing.
 - **C.11.CRC** compares the finite change with the current configuration. **C.11.DUA** examines and repairs the demands imposed by advice. **C.11** supplies the resulting choice when it needs explicit treatment.

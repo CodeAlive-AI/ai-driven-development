@@ -1,7 +1,7 @@
 ## B.5.TC - Compare Theoretical Accounts for a Working Question
 
 > **Type:** Method-description pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.TC:1 - Problem frame
@@ -194,6 +194,6 @@ This pattern combines these constructive contributions into a common comparison 
 - **C.29** selects mathematical lens use; **C.29.1** constructs the correspondence needed to transfer a result. **C.29.2** and **C.29.3** separate computational formulation from physical execution.
 - **B.5.MPC** connects mathematical, physical and computational contributions. **C.28** governs causal and intervention claims.
 - **C.38** constructs comparable ways to obtain one result. This pattern supplies a theoretical comparison when such a way depends on an unsettled account. **C.11** and **C.11.DUA** govern a consequential choice and the worth of further inquiry.
-- **F.0.2** uses a comparison of accounts when forming a conceptual synthesis across sources. **A.6.3.RT** supports operative expression, and **A.15.9** obtains a missing specialist contribution.
+- **F.0.2** uses a comparison of accounts when forming a semantic synthesis across sources. **A.6.3.RT** supports operative expression, and **A.15.9** obtains a missing specialist contribution.
 
 ### B.5.TC:End
