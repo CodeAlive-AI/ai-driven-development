@@ -4,8 +4,8 @@
 
 ### A.5:1 - Problem frame
 
-FPF’s ambition is to act as an *“operating system for thought.”*
-That ambition can only be realised if the framework:
+FPF helps practitioners combine shared conceptual grounds and reusable methods with suitable domain methods.
+FPF can support that use across changing disciplines only if it:
 
 * **(i)** remains *stable* and *self‑consistent* over multi‑decade timespans;
 * **(ii)** *invites*, rather than resists, the continual influx of new disciplinary knowledge; and

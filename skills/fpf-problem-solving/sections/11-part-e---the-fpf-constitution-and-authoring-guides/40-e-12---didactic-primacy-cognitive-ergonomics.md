@@ -14,7 +14,7 @@ The first route asks why formal assurance helps. The second investigates a concr
 If the framework's design prioritizes theoretical purity or formal completeness over cognitive ergonomics, it becomes vulnerable to two critical failure modes:
 
 1.  **Goodhart's Law:** When a measure, such as an `AssuranceLevel` within a declared `B.3.3` profile, becomes the primary target, it can cease to indicate the understanding sought. Teams may start "gaming the metrics," producing assurance-bearing epistemes or publications that satisfy the visible criteria but remain conceptually shallow or pragmatically useless.
-2.  **Cognitive Overload & Rejection:** The framework becomes so dense, jargon-laden, and procedurally complex that its users—the very agents it is meant to serve—either burn out or abandon it in favor of simpler, albeit less rigorous, methods. The "Operating System for Thought" devolves into a bureaucratic machine for certification.
+2.  **Cognitive Overload & Rejection:** The framework becomes so dense, jargon-laden, and procedurally complex that its users—the very agents it is meant to serve—either burn out or abandon it in favor of simpler, albeit less rigorous, methods. Certification procedures can consume effort without helping users understand or decide the matter at hand.
 
 ### E.12:3 - **Forces**
 
@@ -90,7 +90,7 @@ An expert walkthrough can recover all four comparison duties from the actual pas
 
 This pattern operationalizes **Didactic Primacy (P-2)**, transforming it from a philosophical statement into an enforceable architectural Standard. The `Rationale Mandate` requires a clear explanation of the cognitive purpose of each key assurance episteme or publication. The bounded Human-Factor inquiry examines an actual reader obstruction or work demand while retaining the method's prerequisites and assurance. It does not require a speculative threshold or a refinement proposal when none is supported.
 
-A purely conceptual workload warning would leave the reader without a next action; a stronger psychometric or causal method would require separately justified observations and design. The bounded inquiry supplies an attainable examination and honest stop. It complements formal rigor with the unchanged Rationale Mandate and preserves independently justified controls. Together they support FPF's aim of serving meaningful, human-relevant goals as an "Operating System for Thought."
+A purely conceptual workload warning would leave the reader without a next action; a stronger psychometric or causal method would require separately justified observations and design. The bounded inquiry supplies an attainable examination and honest stop. It complements formal rigor with the Rationale Mandate and preserves independently justified controls. Together they connect formal assurance with what practitioners need to understand or decide for their work.
 
 #### E.12:8.1 - SoTA-Echoing — investigate the obstruction before prescribing simplification
 

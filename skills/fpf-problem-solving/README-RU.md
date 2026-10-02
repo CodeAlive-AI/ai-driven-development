@@ -31,7 +31,7 @@ sections/
     ...                                # 30 подразделов
   09-part-c---kernel-extension-specifications/
     _index.md
-    ...                                # 94 подразделов
+    ...                                # 96 подразделов
   ...                                  # 15 директорий
 ```
 
@@ -90,4 +90,4 @@ Section files — это сырой контент. `SKILL.md` является 
 
 ## License
 
-Упаковка скилла и splitter: MIT. Адаптировано из *First Principles Framework (FPF)* Анатолия Левенчука, [ailev/FPF](https://github.com/ailev/FPF), коммит источника `b112256466bff620bbee2b72ab8cfe4ad976e60d`. Текст спецификации FPF распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см. [область действия лицензии источника](https://github.com/ailev/FPF/blob/main/LICENSING.md). Изменения: спецификация разделена на файлы секций с генерируемыми навигационными индексами, а `SKILL.md` добавляет маршрутизацию и инструкции для агента. Автор FPF не подтверждал и не одобрял эту адаптацию.
+Упаковка скилла и splitter: MIT. Адаптировано из *First Principles Framework (FPF)* Анатолия Левенчука, [ailev/FPF](https://github.com/ailev/FPF), коммит источника `ab9dea1df26a5bca741b9a56aa525137bc765821`. Текст спецификации FPF распространяется под [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); см. [область действия лицензии источника](https://github.com/ailev/FPF/blob/main/LICENSING.md). Изменения: спецификация разделена на файлы секций с генерируемыми навигационными индексами, а `SKILL.md` добавляет маршрутизацию и инструкции для агента. Автор FPF не подтверждал и не одобрял эту адаптацию.

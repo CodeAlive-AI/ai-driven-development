@@ -3,11 +3,11 @@
 
 ## Contents
 
-- [E.1 - Vision & Mission: “Operating System for Thought”](01-e-1---vision-mission-operating-system-for-thought.md) (107 lines) — Use this charter when proposing an FPF rule or artifact and deciding whether it serves the framework's purpose. Name the reader's task, show which core invariant the rule supports, and state a...
-- [E.2 - FPF's Eleven Pillars and Bitter-Lesson Preference (BLP)](02-e-2---fpf-s-eleven-pillars-and-bitter-lesson-preference.md) (136 lines) — Use the Eleven Pillars in §4 to assess whether an FPF rule or artifact meets its constitutional obligations. Use the separate BLP policy in §6 when a computational choice claims a...
+- [E.1 - Vision & Mission](01-e-1---vision-mission.md) (111 lines) — Use this charter when proposing an FPF rule or artifact and deciding whether it serves the framework's purpose. Name the reader's task, show which core invariant the rule supports, and state a...
+- [E.2 - FPF's Eleven Pillars and Bitter-Lesson Preference (BLP)](02-e-2---fpf-s-eleven-pillars-and-bitter-lesson-preference.md) (138 lines) — Use the Eleven Pillars in §4 to assess whether an FPF rule or artifact meets its constitutional obligations. Use the separate BLP policy in §6 when a computational choice claims a...
 - [E.2.DA - Evaluate How FPF Realizes Its Pillars (Pillar-Adequacy CharacteristicSpace)](03-e-2-da---evaluate-how-fpf-realizes-its-pillars.md) (277 lines) — Use E.2.DA when the object under improvement is an FPF-level object and the question is whether it realizes the E.2 Pillars adequately for a declared use. The object can be a monolith edition,...
 - [E.3 - Principle Taxonomy, Precedence and Agent Autonomy Profiles (ABL)](04-e-3---principle-taxonomy-precedence-and-agent-autonomy-profi.md) (168 lines) — Pattern E.2 supplies eleven immutable pillars, yet experience shows that a flat list of principles invites ambiguity: reviewers cannot decide which pillar overrules another  and “dead‑letter” rules...
-- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites](05-e-4---fpf-ecosystem-architecture-framework-families-products.md) (319 lines) — Type: Architectural (A)
+- [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites](05-e-4---fpf-ecosystem-architecture-framework-families-products.md) (327 lines) — Type: Architectural (A)
 - [E.4.CM - Develop Connected Methods as Framework Contributions](06-e-4-cm---develop-connected-methods-as-framework-contribution.md) (291 lines) — Normativity: Normative
 - [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes](07-e-4-fpf---fpf-edition-assembly-publication-forms-carriers-an.md) (289 lines) — Type: Architectural (A)
 - [E.4.PFAD - Principle-Framework Architecture Decision](08-e-4-pfad---principle-framework-architecture-decision.md) (358 lines) — Type: Architectural (A)
@@ -26,7 +26,7 @@
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](21-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](22-e-9---design-rationale-record-for-fpf-content-decisions.md) (359 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](23-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (444 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
-- [E.10 - Unified Lexical Rules for FPF](24-e-10---unified-lexical-rules-for-fpf.md) (1629 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](24-e-10---unified-lexical-rules-for-fpf.md) (1631 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](25-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.INT - Recovering What Interest or Curiosity Means Here](26-e-10-int---recovering-what-interest-or-curiosity-means-here.md) (165 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](27-e-10-dev---recovering-what-development-or-evolution-means-in.md) (220 lines) — Type: Part E precision-restoration pattern
@@ -63,9 +63,9 @@
 - [E.18.NET - Network of Transformation-Flow Structures](58-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork
 - [E.19 - Pattern Quality Gates: Review and Refresh Profiles](59-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (793 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms](60-e-20---mechanism-introduction-protocol-introduce-or-revise-f.md) (403 lines) — Type: Architectural pattern
-- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](61-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (606 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
-- [E.22 - Improvement-Oriented Quality Evaluation Question Framing](62-e-22---improvement-oriented-quality-evaluation-question-fram.md) (356 lines) — Use E.22 when someone is about to ask for a quality evaluation, quality review, returned-finding absorption, improvement proposal, or follow-up hypothesis over an object version named by value, and...
-- [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (453 lines) — Type: Method-description pattern
+- [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](61-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (607 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
+- [E.22 - Improvement-Oriented Quality Evaluation Question Framing](62-e-22---improvement-oriented-quality-evaluation-question-fram.md) (416 lines) — Use E.22 when a request such as “review this” leaves it unclear what the recipient needs to learn about an object version. A floor check, a search for further improvement and a check of applied...
+- [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (466 lines) — Type: Method-description pattern
 - [E.23.CDI - Developing Capability for a Named Work Family](64-e-23-cdi---developing-capability-for-a-named-work-family.md) (180 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod
 - [E.23.CAE - Capability Access and Expression Differential Probe](65-e-23-cae---capability-access-and-expression-differential-pro.md) (273 lines) — Tech-name: CapabilityAccessAndExpressionDifferentialProbeMethod
 - [E.24 - U.Ontic and Ontic Introduction Discipline](66-e-24---u-ontic-and-ontic-introduction-discipline.md) (710 lines) — Type: Part E FPF authoring discipline pattern

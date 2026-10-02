@@ -81,8 +81,8 @@
 - [C.31.ASAP - Which Architecture Is Preferable Under Scale? (Scale Amenability)](71-c-31-asap---which-architecture-is-preferable-under-scale.md) (323 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](72-c-32---architecture-candidate-synthesis.md) (354 lines) — Type: Architectural pattern
 - [C.32.P2S - Problem-to-Structure Architecturing Unfolding](73-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (359 lines) — Type: Architectural process pattern under C.32
-- [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](74-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (205 lines) — Type: Architectural characterization subpattern under C.32
-- [C.32.ACS - Architecture Characteristic Criteria Set](75-c-32-acs---architecture-characteristic-criteria-set.md) (288 lines) — Type: Architecture characterization pattern under C.32
+- [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](74-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (212 lines) — Type: Architectural characterization subpattern under C.32
+- [C.32.ACS - Architecture Characteristic Criteria Set](75-c-32-acs---architecture-characteristic-criteria-set.md) (292 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](76-c-32-ace---architecture-characteristic-eval-programs.md) (219 lines) — Type: Architecture eval-support subpattern under C.32
 - [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](77-c-32-conway---architecture-influence-and-transformed-archite.md) (433 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Architecture Candidates to Reduce Cross-Scope Residuals](78-c-32-mlao---architecture-candidates-to-reduce-cross-scope-re.md) (275 lines) — Type: Architectural subpattern under C.32
@@ -97,9 +97,9 @@
 - [C.36 - Cultural Evolution and Cultural-Evolution Engineering](87-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (404 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.37 - Select and Use Representations for One Action](88-c-37---select-and-use-representations-for-one-action.md) (281 lines) — Normativity: Normative unless explicitly marked informative
 - [C.38 - Construct Comparable Ways to Obtain One Result](89-c-38---construct-comparable-ways-to-obtain-one-result.md) (202 lines) — Normativity: Normative unless explicitly marked informative
-- [C.39 - Find and Develop a Way to Obtain a Result](90-c-39---find-and-develop-a-way-to-obtain-a-result.md) (265 lines) — Normativity: Normative unless explicitly marked informative.
+- [C.39 - Find and Develop a Way to Obtain a Result](90-c-39---find-and-develop-a-way-to-obtain-a-result.md) (290 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.39.RO - Turn a Construction into a Reusable Operation](91-c-39-ro---turn-a-construction-into-a-reusable-operation.md) (214 lines) — Normativity: Normative
-- [C.40 - Develop Branching Search from Reusable Material](92-c-40---develop-branching-search-from-reusable-material.md) (171 lines) — Normativity: Normative unless explicitly marked informative.
+- [C.40 - Develop Branching Search from Reusable Material](92-c-40---develop-branching-search-from-reusable-material.md) (826 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.40.CD - Develop Problems and Ways of Solving Them Together](93-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (216 lines) — Normativity: Normative
 - [C.40.CU - Develop a Useful and Reproducible Use of a Construct](94-c-40-cu---develop-a-useful-and-reproducible-use-of-a-constru.md) (255 lines) — Normativity: Normative
 - [C.36.P - Clarify Cultural-Evolution Wording for a Claim or Action](95-c-36-p---clarify-cultural-evolution-wording-for-a-claim-or-a.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

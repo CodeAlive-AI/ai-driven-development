@@ -80,7 +80,7 @@ DPFPackageAdequacyEvaluationConfiguration:
   FrameworkEpistemeEditionOfConcernRef: <one exact authored U.Episteme>
   DeclaredVisiblePackageFormOrUse: <plain description of the exact visible form or use being evaluated; not a U-kind>
   PackageArchitectureRefs:
-  FPFCoreEditionRef:
+  FPFEditionRef: <the selected FPF edition; required Core claims are identified in DependencyAndEditionRefs>
   DependencyAndEditionRefs:
   SourceBasisRefs:
   PFADDecisionRefs:
@@ -252,7 +252,7 @@ When a coordinate is below floor, return a finding or repair proposal. When a co
 | `seedOnly` | The package is useful as a seed or prompt output but not for reliance-bearing use. |
 | `holdForPFADDecision` | The package architecture, pattern set, dependency, or publication unit needs a framework architecture decision. |
 | `holdForCoreAmendmentDecision` | A package claim may belong in FPF Core and must not be hidden inside a DPF. |
-| `refreshNeeded` | The package was adequate before, but source, Core edition, local use, telemetry, or dependency state has changed. |
+| `refreshNeeded` | The package was adequate before, but a source, relied-on framework edition, local use, telemetry, or dependency state has changed, or a relied-on Core claim has changed materially. |
 
 ### E.4.DPF.DA:5 - Archetypal Grounding
 

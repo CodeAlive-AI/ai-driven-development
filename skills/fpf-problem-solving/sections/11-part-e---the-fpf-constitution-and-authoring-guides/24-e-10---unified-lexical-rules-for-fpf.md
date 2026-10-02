@@ -239,6 +239,8 @@ Before opening that branch, test whether the phrase already names an independent
 
 For *work product*, name the thing and the claim being made about it: a corrected recording, a report's content, an assembled device, or another particular entity. A.15.PROD distinguishes participation in production, the first satisfaction of an entity's identity rule, and completion under a criterion. Apply only the question actually raised. A document can describe a wanted change without being that change; a publication occurrence, delivery and acceptance each need their own basis. A.15.2:4.2 keeps an expected output or delivery target in the plan from asserting its existence or completion.
 
+For a recurring *result of Work* or *result of a project*, reuse the established meaning and obtain the facts for the new participants. A.6.P.WMR:4.7 explains that reuse, including production across entity kinds, preservation of a condition, joint Work and later use; :5.7 develops the authoring case and a missing-fact return. Different participant kinds do not by themselves require different result meanings, and the common word does not make those different relations one. A.15.6 supplies the actual-project and whole/part grounds when that claim is current.
+
 ##### E.10:0.2c.7a - `goal`, `purpose`, `objective`, and the concern of a method
 
 Read these words with the action or claim they qualify. Whose aim is being stated, what is it about, and what change or preserved condition matters for the decision? A team's chosen goal can explain its choice of a Method. The same Method can serve several purposes. Keep a clear ordinary use without requiring a formal goal object.

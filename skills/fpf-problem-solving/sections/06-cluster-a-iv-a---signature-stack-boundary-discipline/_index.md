@@ -20,7 +20,7 @@
 - [A.6.4 - EntityOfConcern Retargeting: Judge a Bounded Use Across Different Entities](15-a-6-4---entityofconcern-retargeting-judge-a-bounded-use-acro.md) (250 lines) — Type: Definitional pattern
 - [A.6.P - Relational Precision Restoration - Recovering Direct Relations from Under-Specified Claims](16-a-6-p---relational-precision-restoration---recovering-direct.md) (564 lines) — Type: Architectural (A)
 - [A.6.P.RI - Recover Agent-Relative References for Action](17-a-6-p-ri---recover-agent-relative-references-for-action.md) (196 lines) — Normativity: Normative unless marked informative
-- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](18-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (431 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording
+- [A.6.P.WMR - Exact Relation Recovery for Method and Work Claims](18-a-6-p-wmr---exact-relation-recovery-for-method-and-work-clai.md) (476 lines) — Plain label: recover the exact relation hidden by input, result, and handoff wording
 - [A.6.RCD - Needed Relation Claim Derivation and Relation-Kind Admission](19-a-6-rcd---needed-relation-claim-derivation-and-relation-kind.md) (399 lines) — Type: Kernel relation-foundation pattern
 - [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](20-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (265 lines) — Type: FPF precision-restoration pattern
 - [A.6.A - Affordance and Action-Invitation Precision Restoration (ACT-INV)](21-a-6-a---affordance-and-action-invitation-precision-restorati.md) (622 lines) — Type: Architectural (A)

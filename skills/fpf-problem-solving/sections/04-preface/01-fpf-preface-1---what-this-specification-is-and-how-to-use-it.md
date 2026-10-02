@@ -1,8 +1,12 @@
 ## FPF.Preface:1 - What This Specification Is And How To Use It
 
-This document is the Core Conceptual Specification of the First Principles Framework (FPF). It defines a standards-style pattern language for explicit, reviewable, improvable conceptual work in engineering, research, management, governance, and mixed human and AI projects.
+This Core Conceptual Specification publishes the general pattern content of an edition of the First Principles Framework (FPF), together with this Preface and navigation. Its pattern language supports explicit, reviewable and improvable conceptual work in engineering, research, management, governance, and mixed human and AI projects.
 
 The reader should not need FPF vocabulary before this Preface becomes useful. Here an FPF term should first name an ordinary engineering distinction, then point to the pattern that gives the stricter form.
+
+FPF's Core brings together shared concepts, constitutional principles and reusable methods for reasoning. The Kernel is the defining content of universal meta-concepts within that Core; all eleven constitutional first principles in E.2 govern the Kernel and other contributions. Domain and local frameworks explain work in their own settings and state which Core content and editions they rely on. This Preface explains the overall arrangement. Pattern bodies give the definitions, methods and conditions needed for an exact use; files and websites make those publications available.
+
+For an ordinary problem, use a known adequate domain method directly. Consult a supplying pattern when a missing distinction or operation prevents the needed result. Read the detailed distinctions below when their claim or action is your current question.
 
 FPF is not a domain encyclopedia and not a project-management method. It is a framework for making hard project reasoning coherent when many project entities and relations are easy to mix: systems, bodies of knowledge and models, architecture, descriptions, publications, concern-specific views, local system-role kinds and assignments, methods, plans, performed work, evidence, decisions, options, commitments, and improvement criteria.
 
@@ -73,15 +77,15 @@ Keep this reminder, the possible continuations it describes, a work plan and the
 
 This Preface explains why these practical uses belong to one framework. The Table of Contents supports search when the reader already knows the pattern family. A pattern body is a pattern episteme containing its exact Solution, boundaries, checks, action- or judgement-guiding content, and the definitions or constraints it actually asserts. It is a `U.MethodDescription` only when that membership is established and the distinction is current. The actual project claim remains a separate subject assertion. README and ToC references point to those rule-content loci and published term rows; they do not become alternate schema or finding stores.
 
-This Preface is also a reader-facing rendering of FPF's first-principles architecture. It is written for people who need the whole-framework picture before entering exact patterns. It foregrounds holons, descriptions, architecture, evidence, publication, choice, improvement, source-publication and source-use currentness, and domain or local framework growth; it deliberately coarsens, omits, or defers individual pattern detail, source publications, source-use history, and many relation records. When a Preface claim becomes load-bearing, check it against the exact ClaimGraph or assertion in the subject pattern body.
+This Preface gives a reader-facing explanation of FPF's first-principles architecture. It deliberately coarsens, omits or defers individual pattern detail, source publications, source-use history and many relation records. When a Preface claim becomes necessary for a decision, return to the relevant pattern for the exact claim, its conditions and the detail omitted here.
 
 Use the `readme` when a current project question needs a practical-use card and a direct pattern locator. Use this Preface when you need the whole-FPF picture. Use the Table of Contents when you already know the pattern family or need a search-oriented overview. Use the pattern body for its exact Problem frame and Solution; recover an exact predicate, `ClaimGraph`, or Method only when the current claim, action, or named reliance needs that distinction, and state the current project claim separately.
 
-The large areas of the specification can be read as one conceptual architecture. You do not need every name in this list yet; it is a map for later lookup:
+The following Parts organize the published material for lookup. Kernel membership follows the defining content of universal meta-concepts wherever their patterns supply it. Other content can develop a method or state a constitutional requirement. You do not need every name in this map before using a relevant pattern.
 
-- Part A gives the kernel: holons, contexts, system-role kinds and assignments, capabilities, methods, work, time, scope, signatures, architecture, characteristics, measurement, comparison, and foundations for choosing from candidate sets.
+- Part A introduces foundational distinctions and their uses: holons, contexts, system-role kinds and assignments, capabilities, methods, work, time, scope, signatures, architecture, characteristics, measurement, comparison, and foundations for choosing from candidate sets.
 - Part B gives transdisciplinary reasoning, emergence, evidence, assurance, trust, canonical reasoning, creativity, problem-side records and cues, and bridge discipline.
-- Part C gives major extension patterns: characterization, measurement, mathematical modeling, architecture, temporality, causality, option portfolios, quality, problem shaping, and precision restoration in specialized domains.
+- Part C develops general patterns for characterization, measurement, mathematical modeling, architecture, temporality, causality, option portfolios, quality, problem shaping and precision restoration.
 - Part D keeps ethics, conflict, and multi-scale value questions visible where they are live.
 - Part E gives the FPF constitution: pillars, guard rails, pattern form, lexical discipline, description and publication discipline, transformation-flow structures for carrying results through work, admission, review, and design-rationale discipline.
 - Part F gives unification and naming: local meaning units, concept sets, bridges, term sheets, local-first naming, and technical prose repair.

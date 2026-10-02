@@ -44,7 +44,7 @@ Keep five frequently collapsed objects distinct:
 4. **The project system-of-interest.** Project designation or selection is a separate claim from `U.System` identity, environment, parthood, system-role kind or assignment, and architecture. B.1.2 does not derive it from a box or aggregation decision.
 5. **Use qualification and neighboring relations.** `Context` is not one world-side container supplied by B.1.2. When claim scope, effective reference scheme, or a bounded model-use structure qualifies a use, recover that exact qualifier under its subject pattern. Recover any system-role assignment or other neighboring relation separately. None delimits the system, identifies its environment, or establishes containment by itself.
 
-B.1.2 does not make `Gamma_sys` the pattern head, create generic boundary or interaction U-kinds, or infer a part-whole relation from transformation, coordination, responsibility, or representation.
+For a system-aggregation decision, use :4.1 to recover the system, parthood, delimitation, crossing, and whole-characteristic results or their blockers. Use :4.2 only when their joint organization changes that decision.
 
 ### B.1.2:2 - Problem
 
@@ -124,6 +124,10 @@ Use A.6.F only to resolve an unclear function expression and A.6.M only to resol
 A pump skid may be one exact entity proposed for recognition under the already admitted `U.System` kind. Pumps, frame, valves, controller, and connectors become its components only when their exact A.14 part-relation occurrences obtain and C.13 grounds the assembly; the proposal, drawing, and component list establish none of those facts.
 
 The power grid, maintenance crew, telemetry dashboard, and supplier are not skid components merely because the skid depends on them. Recover the exact systems or epistemes and their supply, work, telemetry, publication, source-use, or other direct relations. If a maintenance-isolation decision needs their joint organization, an A.22 selected structure may include the exact obtaining crossings without turning them into parts.
+
+**Concrete coordination result.** In an illustrative component-inventory case, skid S is already recognized under A.1. Inspection and assembly evidence have established the A.14 component relations of pump P, frame F, valve V and controller C to S, with the C.13 assembly basis. The inventory is complete for this example. A documented electrical-supply relation has grid G as source and S as receiver; dashboard D is an episteme describing S. These independently supplied facts are the inputs to the decision, not conclusions inferred from the drawing.
+
+For the question “Which of these objects belongs in S's component inventory?”, B.1.2 returns P, F, V and C, retaining each part relation's basis. G remains an external supply participant and D remains a description. The inventory establishes no total mass, reliability or safe-isolation conclusion: each would need its own characteristic rule or decision basis. If inspection instead leaves V's part relation unresolved, return the three established components and that specific gap; do not present the inventory as complete. Changed assembly or supply facts reopen the affected result.
 
 #### B.1.2:5.2 - Resistor In A Circuit
 

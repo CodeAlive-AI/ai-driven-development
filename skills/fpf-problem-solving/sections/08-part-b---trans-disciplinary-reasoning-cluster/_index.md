@@ -5,8 +5,8 @@
 
 - [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (236 lines) — Type: Part B holonic construction pattern
 - [B.1.1 - Dependency Structure and Relation Grounding](02-b-1-1---dependency-structure-and-relation-grounding.md) (215 lines) — Type: Part B holonic construction pattern
-- [B.1.2 - Coordinate Decisions About System Aggregation and Delimitation](03-b-1-2---coordinate-decisions-about-system-aggregation-and-de.md) (212 lines) — Type: Part B holonic construction pattern
-- [B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation](04-b-1-3---knowledge-aggregation-synthesis-and-target-scheme-co.md) (278 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and the warrant each source actually contributes.
+- [B.1.2 - Coordinate Decisions About System Aggregation and Delimitation](03-b-1-2---coordinate-decisions-about-system-aggregation-and-de.md) (216 lines) — Type: Part B holonic construction pattern
+- [B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation](04-b-1-3---knowledge-aggregation-synthesis-and-target-scheme-co.md) (282 lines) — At a glance. Use B.1.3 to compose exact U.Episteme inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and the warrant each source actually contributes.
 - [B.1.4 - Specify Order-Sensitive or Temporal Aggregation (Γ_ctx, Γ_time)](05-b-1-4---specify-order-sensitive-or-temporal-aggregation.md) (216 lines) — Type: B-family aggregation pattern
 - [B.1.5 - Gamma_method - Order-Sensitive Method Composition and Work Enactment](06-b-1-5---gamma-method---order-sensitive-method-composition-an.md) (425 lines) — Type: Part B composition and grounding pattern
 - [B.1.5.EW - Recover How Constituent Actions Enact Encompassing Work](07-b-1-5-ew---recover-how-constituent-actions-enact-encompassin.md) (176 lines) — Use this pattern when you need to understand, perform, teach, divide or change a way of working and cannot yet explain how its constituent actions perform the encompassing work. A person knows each...
@@ -29,7 +29,7 @@
 - [B.5.MPC - Connect Physical, Mathematical and Computational Reasoning](24-b-5-mpc---connect-physical-mathematical-and-computational-re.md) (437 lines) — Normativity: Normative unless marked informative
 - [B.5.MPC.R - Repair a Physical-Mathematical-Computational Connection](25-b-5-mpc-r---repair-a-physical-mathematical-computational-con.md) (251 lines) — Normativity: Normative unless marked informative
 - [B.5.RC - Recover a Construction from Its Description](26-b-5-rc---recover-a-construction-from-its-description.md) (190 lines) — Normativity: Normative unless marked informative
-- [B.5.RA - Recover an Argument for Its Next Use](27-b-5-ra---recover-an-argument-for-its-next-use.md) (193 lines) — Normativity: Normative unless marked informative
+- [B.5.RA - Recover an Argument for Its Next Use](27-b-5-ra---recover-an-argument-for-its-next-use.md) (368 lines) — Normativity: Normative unless marked informative
 - [B.5.RR - Revise Reasoning After a Premise or Question Changes](28-b-5-rr---revise-reasoning-after-a-premise-or-question-change.md) (184 lines) — Normativity: Normative unless marked informative
 - [B.5.FM - Construct a First Model for the Working Question](29-b-5-fm---construct-a-first-model-for-the-working-question.md) (250 lines) — Normativity: Normative unless marked informative
 - [B.5.TU - Construct a Working Use of an Unfamiliar Theory](30-b-5-tu---construct-a-working-use-of-an-unfamiliar-theory.md) (196 lines) — Type: Method-description pattern

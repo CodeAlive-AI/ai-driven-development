@@ -3,10 +3,10 @@
 > A standards-style pattern language for turning difficult engineering, research, management, and mixed human/AI work into explicit, reviewable, improvable reasoning.
 
 - **Author:** Anatoly Levenchuk, with AI-assisted development and review
-- **Version:** September 2026
+- **Version:** October 2026
 - **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 
-- **Status:** Normative kernel, eternal alpha: already used in working projects and development programs, while still evolving.
+- **Status:** Normative Core, eternal alpha: already used in working projects and development programs, while still evolving.
 
 Begin with the working question in your project; FPF helps make the reasoning explicit enough to review and improve.
 
