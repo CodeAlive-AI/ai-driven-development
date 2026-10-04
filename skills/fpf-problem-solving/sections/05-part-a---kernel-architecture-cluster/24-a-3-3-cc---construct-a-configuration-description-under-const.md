@@ -1,7 +1,7 @@
 ## A.3.3.CC - Construct a Configuration Description under Constraints
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### A.3.3.CC:1 - Problem frame

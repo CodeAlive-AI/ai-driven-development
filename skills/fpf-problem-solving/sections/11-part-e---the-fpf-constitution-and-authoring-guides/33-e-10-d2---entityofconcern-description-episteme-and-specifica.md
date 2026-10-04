@@ -71,15 +71,15 @@ The ordinary minimum is prose, not a mandatory record:
 
 If no neighboring relation is needed, omit the second sentence. If the C.2.1 triple or the required direct governor cannot be recovered, return that exact blocker instead of filling a generic context field.
 
-### E.10.D2:4.1 - Core recovery discipline
+#### E.10.D2:4.1 - Core recovery discipline
 
-#### E.10.D2:4.1.1 - EntityOfConcern
+##### E.10.D2:4.1.1 - EntityOfConcern
 
 `EntityOfConcern` is the one exact independently identified `U.Entity` about which the selected claim-bearing whole makes its claims. It may be a system, work occurrence, method, episteme, direct relation occurrence, characteristic, structure, pattern, or another admitted entity. It is neither a universal object bucket nor the authoring target merely because the author is editing it.
 
 A ClaimGraph may designate several other entities as participants in relational, comparative, negative, counterfactual, or modal claims. Those designations do not by themselves create a joint EntityOfConcern. Select a relation occurrence, collection, or structured whole only after its direct pattern independently identifies that entity.
 
-#### E.10.D2:4.1.2 - Description episteme
+##### E.10.D2:4.1.2 - Description episteme
 
 A description episteme is an ordinary `U.Episteme` whose exact `U.ClaimGraph` contains descriptive claims about its exact EntityOfConcern under its effective `U.ReferenceScheme`. Its identity is the C.2.1 constitution triple; E.10.D2 adds no `subjectRef`, description slot, `isDescriptionOf` relation, context constituent, or peer description ontology.
 
@@ -87,7 +87,7 @@ Its ClaimGraph may contain labels, characterizations, criteria, structural or be
 
 For one named describing use, state the exact viewpoint P it selects when that selection changes interpretation or action. Keep the episteme, its EntityOfConcern, the use, and P distinct. The selection is not an episteme identity discriminator and establishes neither viewpoint conformance nor `U.View` membership.
 
-#### E.10.D2:4.1.3 - Specification-use admission
+##### E.10.D2:4.1.3 - Specification-use admission
 
 Use a `...Spec` name only when the receiving use depends on specification force and all applicable conditions are recoverable:
 
@@ -100,13 +100,13 @@ Declared formality, notation discipline, comparators, tolerances, and measuremen
 
 Specification use does not create another episteme identity. A revision that changes ClaimGraph, EntityOfConcern, or effective ReferenceScheme identifies another episteme under C.2.1; a changed harness, evaluation result, publication, or relying use changes its own neighboring object or relation.
 
-#### E.10.D2:4.1.4 - Model-use structure
+##### E.10.D2:4.1.4 - Model-use structure
 
 A `BoundedModelUseStructure` is selected only when the receiving assertion, calculation, interpretation, comparison, or other use depends on the organization of admitted model-applicability, model-use, and coherence relations governed by A.1.1. The receiving use designates that exact structure through its direct relation. The structure is never a constituent of description-episteme identity merely because the episteme is used inside it.
 
 If a proposed dependent relation species genuinely requires one exact model-use structure as an identity-bearing participant, its own pattern must declare that participant and its obtaining and identity rules. E.10.D2 supplies no generic context relation as a shortcut.
 
-#### E.10.D2:4.1.5 - Episteme about an episteme
+##### E.10.D2:4.1.5 - Episteme about an episteme
 
 When an episteme is described, use C.2.1's ordinary recursion. A review episteme about another episteme has that earlier episteme as its EntityOfConcern and its own ClaimGraph and effective ReferenceScheme. Self-description is also possible when the episteme's identity remains recoverable; then its EntityOfConcern designation resolves to itself. Publication and representation uses remain separately governed, and self-reference supplies no assurance by itself.
 

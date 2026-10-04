@@ -1,7 +1,7 @@
 ## B.5.QD - Develop a New Question from a Result or Construction
 
 > **Type:** Method-description pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.QD:1 - Problem frame

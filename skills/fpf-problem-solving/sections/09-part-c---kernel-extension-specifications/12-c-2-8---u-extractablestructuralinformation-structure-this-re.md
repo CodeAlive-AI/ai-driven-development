@@ -1,7 +1,7 @@
 ## C.2.8 - `U.ExtractableStructuralInformation` — Structure This Reader Can Recover
 
 > **Type:** Definitional (D)
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative.
 
 ### C.2.8:1 - Problem frame

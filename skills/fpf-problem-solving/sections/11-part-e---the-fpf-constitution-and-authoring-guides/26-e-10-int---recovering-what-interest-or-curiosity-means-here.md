@@ -2,7 +2,7 @@
 
 > **Type:** lexical and ontological precision restoration (E)
 >
-> **Status:** Draft
+> **Status:** Stable
 
 ### E.10.INT:1 - Problem frame
 

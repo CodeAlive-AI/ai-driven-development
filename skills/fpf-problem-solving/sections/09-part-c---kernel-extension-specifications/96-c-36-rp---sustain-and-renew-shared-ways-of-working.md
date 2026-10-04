@@ -2,7 +2,7 @@
 
 > **Type:** Method pattern
 >
-> **Status:** Draft
+> **Status:** Stable
 >
 > **Normativity:** Normative unless marked informative
 

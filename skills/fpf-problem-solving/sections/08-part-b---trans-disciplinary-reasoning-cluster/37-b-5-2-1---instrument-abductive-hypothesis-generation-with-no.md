@@ -82,7 +82,7 @@ Primary dominance test: compute the (ε-)Pareto front over the declared `Dominan
 Note — Status `Surprise` (scope and default role):
 Use `Surprise` as a secondary tie-break only when the active C.19 policy names that use, among candidates otherwise Pareto-equivalent on the declared primary characteristics. A policy may explicitly promote `Surprise` into dominance with its constituted basis. If the policy does not use `Surprise`, omit that reading.
 
-### B.5.2.1:5.1 - Creative-generation consistency with the declared dominance doctrine
+#### B.5.2.1:5.1 - Creative-generation consistency with the declared dominance doctrine
 
 - When candidate generation speaks about fronts, use the declared `DominanceSet` for the front and keep archive retention separate when archive mode is active.
 - Do not write novelty or diversity terms into the front definition merely because they are important to archive quality or exploration value.

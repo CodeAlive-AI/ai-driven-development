@@ -1,7 +1,7 @@
 ## B.5.MPC.R - Repair a Physical-Mathematical-Computational Connection
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.MPC.R:1 - Problem frame

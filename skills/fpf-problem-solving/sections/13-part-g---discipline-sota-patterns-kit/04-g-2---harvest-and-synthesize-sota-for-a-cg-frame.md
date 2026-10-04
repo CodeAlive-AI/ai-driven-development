@@ -231,7 +231,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 
 `Extensions` are pattern‑scoped annexes. They do not introduce Part‑G‑wide norms; they declare the additional pins required when those semantics are active and cite the corresponding governing patterns.
 
-###### G.2:4.5.1 - GPatternExtension: GammaEpistSynthesis
+##### G.2:4.5.1 - GPatternExtension: GammaEpistSynthesis
 
 **PatternScopeId:** `G.2:Ext.GammaEpistSynthesis`
 **GPatternExtensionId:** `GammaEpistSynthesis`
@@ -253,7 +253,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 * The auditable synthesis record identified by `GammaEpistSynthId` binds: (i) provenance union, (ii) explicit object alignment refs, (iii) assurance tuple refs (via their governing definitions) for each asserted fusion/substitution. A B.1.3 `Γ_epist^synth` application and its returned episteme remain separate from this record.
 * This extension cites the `Γ‑fold`, `Φ`, and penalty rules through `G.Core` and exposes the pins needed for replay. When B.3/C.2.2 supplies no justified common numerical score or loss calculation, retain the separate support, actual mapping limitations and bounded assurance conclusion; a synthesis record does not supply the missing model.
 
-###### G.2:4.5.2 - GPatternExtension: HarvestProtocols
+##### G.2:4.5.2 - GPatternExtension: HarvestProtocols
 
 **PatternScopeId:** `G.2:Ext.HarvestProtocols`
 **GPatternExtensionId:** `HarvestProtocols`
@@ -272,7 +272,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 **Notes (extension discipline):**
 * This extension binds a declared protocol profile to the pack’s `FlowRecord` without redefining evidence semantics.
 
-###### G.2:4.5.3 - GPatternExtension: DHCAlignmentHooks
+##### G.2:4.5.3 - GPatternExtension: DHCAlignmentHooks
 
 **PatternScopeId:** `G.2:Ext.DHCAlignmentHooks`
 **GPatternExtensionId:** `DHCAlignmentHooks`
@@ -295,7 +295,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 * AlignmentDensity uses C.21's Unit `obtaining_relations/100_compared_cells`: fix the exact compared F.17 cell set and count the exact obtaining directed F.9 relations, retaining each relation's orientation and admitted-use qualifier. Keep observed loss in its evidence account. A CL calibration label does not include or exclude a relation by itself. Any independently justified receiving-use filter must name its own policy and resulting population; it is not a C.21 CL threshold.
 * For example, three obtaining directed relations in a fixed set of 100 compared cells give a density of 3 in that Unit. Changing a CL label while relation truth, population and admitted-use qualifier remain fixed leaves the density 3. A fourth calibration row labelled CL=2 with no obtaining relation adds nothing. If a use condition actually changes which relations qualify, restate that changed population before comparing densities.
 
-###### G.2:4.5.4 - GPatternExtension: NQDAnnex
+##### G.2:4.5.4 - GPatternExtension: NQDAnnex
 
 **PatternScopeId:** `G.2:Ext.NQDAnnex`
 **GPatternExtensionId:** `NQDAnnex`
@@ -316,7 +316,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 **Notes (extension discipline):**
 * This extension only pins the required references for replayability; it does not redefine QD semantics, dominance, or acceptance rules.
 
-###### G.2:4.5.5 - GPatternExtension: InteropForms
+##### G.2:4.5.5 - GPatternExtension: InteropForms
 
 **PatternScopeId:** `G.2:Ext.InteropForms`
 **GPatternExtensionId:** `InteropForms`

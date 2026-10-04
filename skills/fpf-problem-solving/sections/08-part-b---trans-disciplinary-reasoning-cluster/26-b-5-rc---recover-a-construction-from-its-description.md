@@ -1,7 +1,7 @@
 ## B.5.RC - Recover a Construction from Its Description
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.RC:1 - Problem frame

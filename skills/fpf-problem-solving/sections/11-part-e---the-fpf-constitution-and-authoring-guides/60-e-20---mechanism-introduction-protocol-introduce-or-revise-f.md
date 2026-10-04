@@ -90,7 +90,7 @@ MIP governs **how changes are assigned to their governing definitions**, not how
 
 Only the third outcome uses the manifest in `E.20:4.2`. The first two still name the current governing locus or alias-docking relation when the text will be published. When the only current result is no denotation change, the published content should not carry MIP-run vocabulary except as a short non-trigger note.
 
-#### E.20:4.0.1 - Mint vs reuse
+##### E.20:4.0.1 - Mint vs reuse
 
 **Mints:**
 * **MIP** — Mechanism Introduction Protocol (this pattern).
@@ -244,7 +244,7 @@ If the introduction renames any public token or changes canonical naming:
 2. Update registers and twin labels per lexical discipline.
 3. Avoid silent rewrites: the MIP-run SHALL make the alias relation and successor relation explicit.
 
-#### E.20:4.9.1 - Deprecation / supersession / retirement (preserve citeability)
+##### E.20:4.9.1 - Deprecation / supersession / retirement (preserve citeability)
 
 If the change class includes deprecation, supersession, or retirement (E.20:4.1 #8), the MIP-run SHALL preserve reference continuity while making the status change explicit:
 

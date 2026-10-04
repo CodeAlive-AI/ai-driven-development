@@ -132,13 +132,13 @@ A conforming `C.11` pass does not stop at naming schools of decision theory. It 
    If the result is `probe again`, name the next probe and the exact comparison defect it is supposed to repair.
    A `C.11` pass is done only when it names the lawful choice result and the reason that result is lawful.
 
-#### C.11:4.2a - Receive heterogeneous premises without relabeling them as signals
+##### C.11:4.2a - Receive heterogeneous premises without relabeling them as signals
 
 An interesting observation, information-gain estimate, capability result, objective or reward, articulated former cue, or `C.17` characterization enters this pattern only under its exact source/result identity. Use `E.10.LRN` first when *learning* wording still hides that identity. Use `A.10` when an evidence-bearing or source-bearing claim is actually relied on: its existing `RelianceDisposition` qualifies only that bounded premise use. An objective, reward, preference, or loss enters as the `EvaluativeMeasure`, `PreferenceOrder`, or `ChoiceRule` input it actually supplies and is not evidence by numerical form. When an `A.16.1` cue pack remains current as a source or provenance episteme, preserve that source identity and route the separately articulated endpoint result through its direct claim owner. A `C.17` novelty, surprise, use, or creativity characterization remains a characterization and does not license a move by itself.
 
 No separate premise-qualification result sits between those owners and `C.11`. Use the qualified inputs in the live option/probe comparison and return only the existing `ChoiceResult`. When the missing comparison basis is specifically what a finite candidate contributes relative to the current configuration, use `C.11.CRC` to construct that ordinary comparison claim and return here. If every premise and the finite comparison are already explicit, proceed directly.
 
-#### C.11:4.2.1 - Well-formed comparison state
+##### C.11:4.2.1 - Well-formed comparison state
 
 
 Well-formedness constraint: a live `C.11` comparison state is usable only when the decision record states the following, subject to the stated condition on inquiry:
@@ -159,7 +159,7 @@ The comparison is still unfinished, not yet wrong but not yet closeable, when an
 - one heavier dependence layer is invoked for rhetorical force, but the record never states what defect of the lighter comparison it repairs;
 - the record says more information would help, but never says which probe could still change the choice and why.
 
-#### C.11:4.2.1a - Minimal admissible decision semantics
+##### C.11:4.2.1a - Minimal admissible decision semantics
 
 This minimal choice doctrine does not settle every decision-theory dispute, but it already supports some semantic distinctions by value and rules out others.
 
@@ -180,7 +180,7 @@ The following are not admissible in this `C.11` body:
 
 This is why `C.11` is more than one note-taking protocol. The body already supports local incompleteness, partial order, explicit trade-off measures, and wider chooser-bearing cases, but it requires those semantic facts to change the lawful result rather than remain hidden beneath one elegant summary line.
 
-#### C.11:4.2.2 - Probe-worthiness rule
+##### C.11:4.2.2 - Probe-worthiness rule
 
 Another probe is worth doing only when all three conditions hold together:
 
@@ -196,7 +196,7 @@ If the best available next probe cannot change the local choice result, or its e
 
 If the next probe would no longer change which option survives but would only change how one already-chosen option gets enacted, budgeted, or checkpointed, the question has already crossed to `C.24`.
 
-#### C.11:4.2.3 - `ChoiceRule` versus `ChoiceResult`
+##### C.11:4.2.3 - `ChoiceRule` versus `ChoiceResult`
 
 `ChoiceRule` and `ChoiceResult` are not the same kind of thing.
 
@@ -236,7 +236,7 @@ For `reroute`, the emitted `ChoiceResult` should show:
 - the neighboring question and the pattern used to answer it;
 - the reason this is no longer local choice among already-available options.
 
-#### C.11:4.2.4 - Closure rule over the current `OptionSet`
+##### C.11:4.2.4 - Closure rule over the current `OptionSet`
 
 The comparison may close as `choose now` only when all of the following are true together:
 
@@ -273,7 +273,7 @@ The comparison should close as `reroute` when the record shows that the decision
 
 If none of those closure conditions can yet be satisfied, the record is still unfinished. It is not rescued by richer terminology alone.
 
-#### C.11:4.2.5 - Minimal decision-record form
+##### C.11:4.2.5 - Minimal decision-record form
 
 A minimal `C.11` decision record has the shape below. Include `ProbeDecisionValue` only for a live inquiry alternative or an inquiry judgement whose content the decision or recipient needs. Include only the relevant information or computation value. A retained prose reason or limitation alone does not activate that block: put only the needed statement in `ChoiceResult`.
 
@@ -307,7 +307,7 @@ Exact syntax is unnecessary. The chooser, options, shared comparison basis, `Cho
 
 Use branch language only when it changes the actual comparison being performed.
 
-#### C.11:4.2.6 - Resource-aware choice is one lens over declared source families
+##### C.11:4.2.6 - Resource-aware choice is one lens over declared source families
 
 - Start from one declared source family or one declared source-family composition such as `Front`, `Archive`, or `Front+Archive`.
 - Apply one declared decision lens over that source family rather than inventing one hidden universal winner rule.
@@ -319,6 +319,8 @@ Use branch language only when it changes the actual comparison being performed.
   - `A.19.SelectorMechanism` remains the cited set-return floor
   - `SelectionSlot` remains the selector output floor
   - if later selector-facing set-result declaration is required, that set-returning floor may support one `Shortlist` or one `RankedShortlist` in `G.5` rather than one forced single winner
+
+#### C.11:4.3 - Dependence layers and neighboring repairs
 
 ##### C.11:4.3.1 - Classical evidential baseline
 
@@ -430,7 +432,7 @@ The minimum usable inventory for this pattern is:
 
 The applicable objects from this inventory are required because the decision record must carry one explicit path from a live `OptionSet` through one live `ChoiceRule` to one emitted `ChoiceResult`.
 
-#### C.11:4.5.1 - Always explicit versus conditionally activated objects
+##### C.11:4.5.1 - Always explicit versus conditionally activated objects
 
 The following objects should be explicit in every usable `C.11` decision record:
 
@@ -484,7 +486,7 @@ What follows from `DecisionSubject` being wider than `Agent`:
 
 This floor is enough to keep choice doctrine inspectable and stable. It does not yet assume one full branch-specific quantum-like package or one cross-scale geometry-heavy package.
 
-#### C.11:4.5.2 - Boundary on multilevel and social-expectation doctrine
+##### C.11:4.5.2 - Boundary on multilevel and social-expectation doctrine
 
 `DecisionSubject` and `DecisionSubjectGranularity` are the local answer to human-only and individual-only narrowing. They keep the chooser explicit at person, team, organization, or other collectivity-bearing level so the doctrine does not silently collapse back into one generic individual agent.
 

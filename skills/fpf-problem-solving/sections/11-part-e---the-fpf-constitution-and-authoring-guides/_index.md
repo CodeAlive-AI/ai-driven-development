@@ -10,8 +10,8 @@
 - [E.4 - FPF Ecosystem Architecture: Framework Families, Products and DPF Suites](05-e-4---fpf-ecosystem-architecture-framework-families-products.md) (327 lines) — Type: Architectural (A)
 - [E.4.CM - Develop Connected Methods as Framework Contributions](06-e-4-cm---develop-connected-methods-as-framework-contribution.md) (291 lines) — Normativity: Normative
 - [E.4.FPF - FPF Edition Assembly: Publication Forms, Carriers and Access Routes](07-e-4-fpf---fpf-edition-assembly-publication-forms-carriers-an.md) (289 lines) — Type: Architectural (A)
-- [E.4.PFAD - Principle-Framework Architecture Decision](08-e-4-pfad---principle-framework-architecture-decision.md) (358 lines) — Type: Architectural (A)
-- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish](09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md) (628 lines) — Type: Architectural (A)
+- [E.4.PFAD - Principle-Framework Architecture Decision](08-e-4-pfad---principle-framework-architecture-decision.md) (382 lines) — Type: Architectural (A)
+- [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish](09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md) (649 lines) — Type: Architectural (A)
 - [E.4.DPF.DA - Evaluate a DPF or LPF Package for Its Declared Use (Package-Adequacy CharacteristicSpace)](10-e-4-dpf-da---evaluate-a-dpf-or-lpf-package-for-its-declared.md) (403 lines) — Normativity: Normative unless marked informative.
 - [E.4.PFR - Pattern-Framework Relation and Edition Discipline](11-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (357 lines) — Type: Architectural (A)
 - [E.4.PFIP - Principle-Framework Publication Integration and Preservation](12-e-4-pfip---principle-framework-publication-integration-and-p.md) (250 lines) — Normativity: Normative unless explicitly marked informative
@@ -20,9 +20,9 @@
 - [E.5.2 - Notational Independence](15-e-5-2---notational-independence.md) (95 lines) — Use this pattern when expressing FPF content or using another expression to carry that content. Keep the conceptual meaning recoverable while choosing an expression that supports the intended work. A...
 - [E.5.3 - Unidirectional Dependency between FPF Families](16-e-5-3---unidirectional-dependency-between-fpf-families.md) (80 lines) — FPF separates artefacts into stable Conceptual Core, executable
 - [E.5.4 - Cross‑Disciplinary Bias Audit](17-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
-- [E.6 - Didactic Architecture of the FPF Specification](18-e-6---didactic-architecture-of-the-fpf-specification.md) (80 lines) — FPF addresses readers who differ in at least two respects:
+- [E.6 - Didactic Architecture of the FPF Specification](18-e-6---didactic-architecture-of-the-fpf-specification.md) (81 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases](19-e-7---archetypal-grounding-explain-rules-of-fpf-architectura.md) (77 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (756 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (762 lines) — Type: Architectural (A)
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](21-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](22-e-9---design-rationale-record-for-fpf-content-decisions.md) (359 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](23-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (444 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
@@ -36,7 +36,7 @@
 - [E.10.P - Conceptual Prefixes policy & registry](31-e-10-p---conceptual-prefixes-policy-registry.md) (30 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Recovering What “Context” Means in Use](32-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
 - [E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline](33-e-10-d2---entityofconcern-description-episteme-and-specifica.md) (413 lines) — Definitional pattern - normative, notation-agnostic
-- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](34-e-11---first-practical-entry-and-pattern-use-discoverability.md) (539 lines) — Type: Pattern-language governance pattern (E)
+- [E.11 - First-Practical Entry and Pattern-Use Discoverability Discipline](34-e-11---first-practical-entry-and-pattern-use-discoverability.md) (645 lines) — Type: Pattern-language governance pattern (E)
 - [E.11.PUA - Pattern Use in a Working Situation and First Useful Result](35-e-11-pua---pattern-use-in-a-working-situation-and-first-usef.md) (554 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](36-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (338 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PFP - Framework Publication Form Profile for Markdown](37-e-11-pfp---framework-publication-form-profile-for-markdown.md) (219 lines) — Type: Specialization of E.11
@@ -51,7 +51,7 @@
 - [E.17.1 - Viewpoint Bundle Library - Reusable Viewpoint Reference Bundles](46-e-17-1---viewpoint-bundle-library---reusable-viewpoint-refer.md) (436 lines) — Type: Architectural (A)
 - [E.17.2 - TEVB - Project-local Typical Engineering Viewpoint Bundle Template for Holons](47-e-17-2---tevb---project-local-typical-engineering-viewpoint.md) (331 lines) — Status: Stable authoring template; no TEVB catalogue value is shipped by this pattern.
 - [E.17 - Multi‑View Publication Kit](48-e-17---multi-view-publication-kit.md) (589 lines) — Type: Part E publication pattern
-- [E.17.EFP - ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces](49-e-17-efp---explanationfaithfulnessprofile-explanation-use-di.md) (555 lines) — Type: Architectural (A)
+- [E.17.EFP - ExplanationFaithfulnessProfile — explanation-use discipline over existing MVPK faces](49-e-17-efp---explanationfaithfulnessprofile-explanation-use-di.md) (567 lines) — Type: Architectural (A)
 - [E.17.ID.CR - Compare Sources Within a Shared Review Frame (ComparativeReviewUnit)](50-e-17-id-cr---compare-sources-within-a-shared-review-frame.md) (714 lines) — Plain-name. Bounded source comparison under a shared review frame.
 - [E.17.AUD - PublicationUnit Stability Discipline - keep one publication unit stable enough to read honestly](51-e-17-aud---publicationunit-stability-discipline---keep-one-p.md) (250 lines) — Plain name. Keep one publication unit stable enough to read honestly.
 - [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it](52-e-17-aud-lhr---publicationunit-stability-discipline-and-loca.md) (365 lines) — Placement. Narrow local lexical-head repair pattern inside the broader PublicationUnit Stability Discipline.
@@ -67,7 +67,7 @@
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](62-e-22---improvement-oriented-quality-evaluation-question-fram.md) (416 lines) — Use E.22 when a request such as “review this” leaves it unclear what the recipient needs to learn about an object version. A floor check, a search for further improvement and a check of applied...
 - [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (466 lines) — Type: Method-description pattern
 - [E.23.CDI - Developing Capability for a Named Work Family](64-e-23-cdi---developing-capability-for-a-named-work-family.md) (180 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod
-- [E.23.CAE - Capability Access and Expression Differential Probe](65-e-23-cae---capability-access-and-expression-differential-pro.md) (273 lines) — Tech-name: CapabilityAccessAndExpressionDifferentialProbeMethod
+- [E.23.CAE - Capability Access and Expression Differential Probe](65-e-23-cae---capability-access-and-expression-differential-pro.md) (276 lines) — Tech-name: CapabilityAccessAndExpressionDifferentialProbeMethod
 - [E.24 - U.Ontic and Ontic Introduction Discipline](66-e-24---u-ontic-and-ontic-introduction-discipline.md) (710 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.CD - Ontic Candidate Detection and First-Use Disposition](67-e-24-cd---ontic-candidate-detection-and-first-use-dispositio.md) (324 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.PUB - Episteme Publication: Availability, Form and Carrier](68-e-24-pub---episteme-publication-availability-form-and-carrie.md) (282 lines) — Type: Part E FPF authoring discipline pattern

@@ -1,7 +1,7 @@
 ## B.5.TU - Construct a Working Use of an Unfamiliar Theory
 
 > **Type:** Method-description pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.TU:1 - Problem frame

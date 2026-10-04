@@ -108,7 +108,7 @@ When an addressable recommendation is materialized, `expectedResultExpectationRe
 
 When a stronger neighboring pattern better addresses the current question, name it and state the return condition. Populate `strongerNeighborPatternRef` only when the exact pattern identity matters to an addressable recommendation. The reference does not establish formal `U.MethodDescription` membership; such membership requires its own A.3.2 basis. Familiarity with the current candidate is not a recommendation reason.
 
-#### E.11.PUR:4.2.1 - Reuse an earlier result when it still answers the concern
+##### E.11.PUR:4.2.1 - Reuse an earlier result when it still answers the concern
 
 After identifying an applicable candidate use, ask whether an earlier result episteme already answers the present concern. Use the pattern that defines or tests that result to compare:
 
@@ -219,13 +219,13 @@ Recommend `C.28` without claiming that the test is authorized. The later gate us
 
 Because this local recommendation is reversible and no named later use relies on it, the team states the applicability result and one compact rationale over all five aspects in the working conversation; it materializes no recommendation episteme or support profile. If a later gate review needs to replay each aspect independently, that review may create current fit findings and a current applicability finding from the then-current basis. It does not backdate those addressable findings; if the original readable rationale was retained, it remains the earlier recommendation's historical basis.
 
-#### E.11.PUR:5.1.1 - An earlier result still answers the concern
+##### E.11.PUR:5.1.1 - An earlier result still answers the concern
 
 The same team already has a C.28 causal-use result for the same pump model, intervention question, declared use, sources, assumptions, and qualification window. The team uses C.28 to compare that result episteme and edition with the present concern. Every comparison value still matches, so the team cites the result and stops instead of performing the C.28 use again.
 
 If the team uses the result as a premise in a project discussion and the source-to-use account is still implicit, it uses A.10 to make the source → result → claim connection explicit for that bounded use. If the later gate Work relies on that result, its A.10 evidence-provenance path names the result and bounded use. If new operating conditions change the causal-use assumptions or qualification window, the team reopens that affected C.28 question rather than treating the old result as current or restarting every coordinated pattern use.
 
-#### E.11.PUR:5.1.2 - No new use is worth recommending
+##### E.11.PUR:5.1.2 - No new use is worth recommending
 
 A team considers an optional check that fits its concern and conditions. The most it could save is ten minutes; performing it takes an hour. The present work already meets the needed result, and no obligation requires this check. The team establishes applicability, compares the hour with the possible saving, and continues without selecting a new use. It needs neither a recommendation episteme with a fictitious candidate nor a refusal document. If asked why, it states the cost comparison in the conversation.
 

@@ -1,7 +1,7 @@
 ## A.1.RI - Reidentifying an Object across Observations
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### A.1.RI:1 - Problem frame

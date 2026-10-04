@@ -122,7 +122,7 @@ Use Tech `position` only for a place in a selected representation, such as a tup
 | concern, interest, viewpoint, problem, or characteristic-space selection | `A.7` for EntityOfConcern and description distinction; `C.22` or `C.22.2` for problem-card claims; `E.17.0` or `E.17.2` for viewpoint or view claims; `F.4` or `F.18` for system-role-kind-description or naming cases; `A.19` or `E.21` for characteristic-space cases | Do not mint generic `U.Concern` or `U.Interest` by wording alone. |
 | publication, description, declarative representation, source wording | `C.2.1`, `E.17`, `C.2.P.DR`, `E.10`, `E.10.ARCH` | Do not let description or publication use displace the EntityOfConcern selected by the project concern. |
 
-#### A.6.RSIR:4.2.1 - Relation-defined wording dispatch
+##### A.6.RSIR:4.2.1 - Relation-defined wording dispatch
 
 When wording derives a qualification, status, or category from participation in a relation, recover the object needed by the next use before naming it:
 

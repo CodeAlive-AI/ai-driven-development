@@ -28,14 +28,14 @@ Use `C.24` when an applicable domain prescription or a completed decision has fi
 
 Do not use it to generate candidates, keep a live pool, choose among unresolved options, execute calls, or score completed Work.
 
-### C.24:0.1 - What goes wrong if missed
+#### C.24:0.1 - What goes wrong if missed
 
 - a route is scheduled by an opaque heuristic, so nobody can see which budget is being burned or what should stop it;
 - unresolved choice or pool-policy work is smuggled into a plan;
 - a route description is mistaken for a Method, a plan for performed Work, or a successful probe for committed rollout; and
 - replanning loses the basis that fixed the action and its conditions.
 
-### C.24:0.2 - What this buys
+#### C.24:0.2 - What this buys
 
 - one small, tool-neutral plan that cites the accepted action basis;
 - visible budgets, stop conditions, and replan triggers before calls are made;
@@ -48,7 +48,7 @@ Do not use it to generate candidates, keep a live pool, choose among unresolved 
 
 **Not this pattern when.** Use `C.11` while fixed-option choice is unresolved, `C.19` while treatment of a live pool is unresolved, `G.5` when the current task is selector-facing result declaration, `A.15.5` for work-entry readiness, and `A.15.1` when the question is what Work actually occurred or which Method it enacted.
 
-### C.24:0.3 - First-minute questions
+#### C.24:0.3 - First-minute questions
 
 1. Which applicable domain prescription, A.15.7 decision or C.11 choose-now result fixes the action or option now being planned?
 2. Does every planned step name an admitted Method, rather than only a vendor route or endpoint label?
@@ -56,7 +56,7 @@ Do not use it to generate candidates, keep a live pool, choose among unresolved 
 4. What event stops or replans the route?
 5. Is the useful output a plan, a checkpoint, or a return to a neighbouring pattern?
 
-### C.24:0.4 - First output
+#### C.24:0.4 - First output
 
 The first useful output is one of these:
 

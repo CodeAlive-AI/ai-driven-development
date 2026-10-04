@@ -1,7 +1,7 @@
 ## C.40.CD - Develop Problems and Ways of Solving Them Together
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### C.40.CD:1 - Problem frame

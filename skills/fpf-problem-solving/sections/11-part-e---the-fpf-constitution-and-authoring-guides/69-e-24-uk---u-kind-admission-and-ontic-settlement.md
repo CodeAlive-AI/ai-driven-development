@@ -126,7 +126,7 @@ Read kind, individual, dependence, and part separately:
 
 None of a kind name, membership, identity dependence, or parthood follows from another. When the contrast is kind versus instance, say **kind**, **individual**, **instance**, or **concrete governed object**, not bare **value**. Reserve slot-filler wording for actual declaration slots and record-field wording for records.
 
-#### E.24.UK:4.2a - Durable Membership and C.3 Projection
+##### E.24.UK:4.2a - Durable Membership and C.3 Projection
 
 Durable U-kind membership and C.3 classification remain distinct, but C.3 now relies on an admitted meta-kind. `E24UK-AR-UKIND-R5-01` admits `U.Kind`; its individuals are reusable intensional classification distinctions recovered through candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. A `KindSignature`, source or practice label, scheme, extension, assertion, or publication is not that kind individual.
 
@@ -146,7 +146,7 @@ The three A.1.1 relation-kind designations consumed by the bounded-model-use tes
 
 A project that needs bounded quantification may use an admitted `U.Kind` individual through C.3.2. If the kind's membership criterion cites an already governed durable subject-kind predicate, that projection neither admits another durable kind nor creates an automatic `U.SubkindOf` fact. A project-specific kind remains an individual of `U.Kind` without acquiring its own public `U.*` label; proposing such a label reopens E.24.UK for that subject kind.
 
-#### E.24.UK:4.2b - Accepted Admission-Result Registry
+##### E.24.UK:4.2b - Accepted Admission-Result Registry
 
 Each `E24UK-AR-*` reference identifies one accepted `UKindAdmissionResult`, not the decision episteme that produced it. The registry is a navigation index. The two R5 admission references resolve to their exact membership results in sections 4.2.2 and 4.2.3; the U.Kind ontology disposition is separate from its retained root admission; the bootstrap resolves to `E24-CO-UONTIC-BOOT-01` and sibling result `E24-OS-UONTIC-BOOT-01`. A row marked `RG` is a reconstructed by-value result whose exact subject-pattern passage and this row together state the disposition, membership test, reliance, and boundary; it does not pretend that a new shared decision was run. No result reference gains a second result by appending a suffix.
 
@@ -178,7 +178,7 @@ Each R5 or bootstrap result is a C.2.1 episteme about the pre-judgment subject c
 | `E24UK-AR-UVIEWPOINT-RG-01` | `U.Viewpoint`; `same-individual-dependent` under `U.Episteme`, RG | `E.17.0:4`; fixed viewpoint-convention membership claims | E.17.0; an identifier, reference, describing use, selected viewpoint, carrier, or structure does not grant membership |
 | `E24UK-AR-UVIEW-RG-01` | `U.View`; `same-individual-dependent` under `U.Episteme`, RG | `E.17.0:4`; `EpistemeViewpointConformanceRelation(E,P)` obtains | E.17.0 and A.6.3; authoring, rendering, query execution, or publication does not grant membership |
 
-#### E.24.UK:4.2c - Open Prerequisites, Blocked Candidates, and Non-admission Results
+##### E.24.UK:4.2c - Open Prerequisites, Blocked Candidates, and Non-admission Results
 
 The shared decision can also encounter public kind names that do not yet have a resolvable accepted admission result. They remain explicit prerequisites rather than being smuggled into the accepted registry. Existing by-value use of an exact current value may continue under its subject pattern, but no new admission may cite the unsettled kind itself as already accepted.
 
@@ -197,7 +197,7 @@ Consumer repair follows the disposition, not one replacement word. Method-descri
 
 Thus `dependent` describes an admission and identity architecture. It is not a shorthand for every object named in a record, every participant of a relation, or every qualifier used to interpret an episteme.
 
-#### E.24.UK:4.2.1 - Accepted Root Settlement For `U.Relation`
+##### E.24.UK:4.2.1 - Accepted Root Settlement For `U.Relation`
 
 FPF has already admitted `U.Relation`; project users do not repeat this ontology decision. The root kind classifies individuable obtaining relation occurrences. A direct relation can obtain before a system explicitly individuates, names, describes, or references one occurrence, but admission under this root requires the direct relation pattern to supply an occurrence-identity rule.
 
@@ -218,7 +218,7 @@ Apply the positive extent rule before classifying a nearby object. Predicate con
 
 The rule is not lexical. An individuable publication-relation occurrence is itself a `U.Relation` when E.24.PUB defines that relation and states its obtaining and identity conditions. A row that represents the occurrence remains a representation element. Reidentify the current object by the rule that defines or tests it instead of inferring membership from words such as relation, edge, link, record, or reference.
 
-#### E.24.UK:4.2.2 - Accepted Root Settlement for `U.Kind`
+##### E.24.UK:4.2.2 - Accepted Root Settlement for `U.Kind`
 
 `E24UK-AR-UKIND-R5-01` admits the root `U.Kind`. Its individuals are reusable intensional classification distinctions, identified through the C.3/C.3.1 candidate domain, operative membership condition, intended member/non-member boundary and continuity rule under `FPFCoreReferenceScheme`. A signature, source label, scheme, current extension, assertion or publication is not the kind individual. Existing individual subject kinds do not supply this cross-pattern meta-kind.
 
@@ -230,7 +230,7 @@ For example, C.3.1 can establish `CoolingPumpKind` as a subkind of `PumpKind` wh
 
 Reopen the additional-ontic question when a named dependent use requires persistent nonduplicative coordination beyond those direct rules and supplies a stable subject and positive contribution. Neither admitting the root nor adding `SubkindOf` merely because it is nearby establishes that need. E.24's positive `EpistemeOntic` case retains its independently justified constitution and neighboring-relation coordination.
 
-#### E.24.UK:4.2.3 - Accepted Same-individual Dependent Settlement for `U.SubkindOf`
+##### E.24.UK:4.2.3 - Accepted Same-individual Dependent Settlement for `U.SubkindOf`
 
 The subject here is the still-unsettled C.3.1 proposal for an ordered kind-participant relation—not `U.SubkindOf` assumed in advance. The accepted relation occurrence keeps its `U.Relation` identity and gains the dependent membership only when C.3.1's obtaining rule holds.
 

@@ -1,7 +1,7 @@
 ## C.39.RO - Turn a Construction into a Reusable Operation
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### C.39.RO:1 - Problem frame

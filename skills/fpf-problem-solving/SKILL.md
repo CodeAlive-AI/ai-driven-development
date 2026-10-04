@@ -9,7 +9,7 @@ description: "Use First Principles Framework (FPF) to decompose problems, archit
 
 This skill adapts *First Principles Framework (FPF)* by Anatoly Levenchuk,
 [ailev/FPF](https://github.com/ailev/FPF), upstream commit
-`ab9dea1df26a5bca741b9a56aa525137bc765821`. The FPF specification text in
+`99c6a97dbf756f4d1611dce4bb6e35f56c915e14`. The FPF specification text in
 `sections/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Changes: the specification was split into section files and given generated navigation
 indexes; this `SKILL.md` adds an agent-oriented router and usage instructions.
@@ -172,4 +172,3 @@ Counts follow upstream H2 headings; the Preface includes its content-free `FPF.P
 | 12 | [Part F — Unification](sections/12-part-f---the-unification-suite-concept-sets-sensecells-and-system-role/_index.md) | 22 | **Synthesize and align**: bounded semantic synthesis across source ontologies, concept sets, sense cells, bridges with separate bounded-use claims and reliance basis, system-role descriptions, UTS, lexical continuity. |
 | 13 | [Part G — SoTA Kit](sections/13-part-g---discipline-sota-patterns-kit/_index.md) | 15 | **Harvest and refresh disciplines**: SoTA Packs, CG-Frames, dispatchers, provenance ledgers, benchmark harnesses, shipping, telemetry refresh, dashboards, external interop. |
 | 14 | [Part H — Reserved](sections/14-part-h---reserved/_index.md) | 0 | **Reserve**: preserve the upstream Part H position for future specification content. |
-| 15 | [Part I — Annexes](sections/15-part-i---annexes-extended-tutorials/_index.md) | 1 | **Walk through**: expanded entry disambiguation cases for high-risk or repeatedly misclassified first-pattern choices. |

@@ -1,7 +1,7 @@
 ## C.29.1 - Mathematical Result Transfer
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### C.29.1:1 - Problem frame

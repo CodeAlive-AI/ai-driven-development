@@ -3,7 +3,7 @@
 
 ## Contents
 
-- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (249 lines) — One‑screen purpose (manager‑first). This pattern gives newcomers a plain‑language starter kit for FPF’s generative engine so they can run an admissible problem-solving or search loop on day one. It...
+- [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (258 lines) — One‑screen purpose (manager‑first). This pattern gives newcomers a plain‑language starter kit for FPF’s generative engine so they can run an admissible problem-solving or search loop on day one. It...
 - [A.1 - Recognize a Whole with Parts (U.Holon and Admitted Holon Kinds)](02-a-1---recognize-a-whole-with-parts.md) (375 lines) — Type: Part A architectural ontology pattern
 - [A.1.RI - Reidentifying an Object across Observations](03-a-1-ri---reidentifying-an-object-across-observations.md) (204 lines) — Normativity: Normative
 - [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context)](04-a-1-1---bounded-model-use-structure-applicability-use-and-ex.md) (438 lines) — Type: Part A architectural ontology pattern

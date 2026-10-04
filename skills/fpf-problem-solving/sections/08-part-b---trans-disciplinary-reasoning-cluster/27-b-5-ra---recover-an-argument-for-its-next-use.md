@@ -1,7 +1,7 @@
 ## B.5.RA - Recover an Argument for Its Next Use
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.RA:1 - Problem frame

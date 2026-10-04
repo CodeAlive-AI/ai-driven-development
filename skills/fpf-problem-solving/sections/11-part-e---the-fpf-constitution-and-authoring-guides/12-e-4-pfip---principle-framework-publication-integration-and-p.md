@@ -1,7 +1,7 @@
 ## E.4.PFIP - Principle-Framework Publication Integration and Preservation
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless explicitly marked informative
 
 ### E.4.PFIP:1 - Problem frame

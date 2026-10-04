@@ -1,7 +1,7 @@
 ## C.28.MR - Derive an Intervention Consequence by Mechanism Replacement
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### C.28.MR:1 - Problem frame

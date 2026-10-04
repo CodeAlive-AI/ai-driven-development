@@ -1,7 +1,7 @@
 ## C.29.2 - Computational Formulation
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative when this Method is selected; worked cases retain their stated assumptions.
 
 ### C.29.2:1 - Problem frame

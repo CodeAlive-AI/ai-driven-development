@@ -1,7 +1,7 @@
 ## A.6.3.RT.OE - Construct an Operative Expression
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative
 
 ### A.6.3.RT.OE:1 - Problem frame

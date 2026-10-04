@@ -243,11 +243,17 @@ One final allow/refuse bit is operationally convenient but ontologically poor. K
 
 #### C.3.A:Annex A - Regulatory and compliance alignment [A/I]
 
-##### C.3.A:A.1 Purpose and fit
+<a id="c3aa1-purpose-and-fit"></a>
+
+##### C.3.A:A.1 - Purpose and fit
+
 
 Regulations name categories such as Adult person, Class II medical device, Personal data, and Lease. A local context needs both a faithful category correspondence and explicit jurisdiction/version/time applicability. The kind channel answers “about what”; USM Scope answers “where and when”; neither answers whether one exact local candidate satisfies the target criterion.
 
-##### C.3.A:A.2 Normative obligations
+<a id="c3aa2-normative-obligations"></a>
+
+##### C.3.A:A.2 - Normative obligations
+
 
 **C-REG-1 (Regulatory declarations).** Each used regulatory category SHALL be an exact authority-context local kind with a separately identified `KindSignature` declaration episteme edition. Any F value characterizes that episteme, not the kind.
 
@@ -265,7 +271,10 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 **C-REG-8 (Local adaptation).** A local nuance MAY use a RoleMask declaration. If it becomes a stable conceptual distinction, the context SHALL separately identify any new local kind and establish its obtaining subkind relation; mask reuse does not perform that change.
 
-##### C.3.A:A.3 Regulatory guards
+<a id="c3aa3-regulatory-guards"></a>
+
+##### C.3.A:A.3 - Regulatory guards
+
 
 **Guard_RegAdopt(P, candidate, authorityKind, authoritySignatureEdition, localKind, localSignatureEdition, S_local).**
 
@@ -286,7 +295,10 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 **Guard_RegXContextUse(P, candidate, sourceKind, targetKind, targetSignatureEdition, S_target).** Apply `Guard_XContext_Typed` and then the exact target candidate judgment. A missing target dependency yields `unknown`; it is not cured by a high bridge assessment.
 
-##### C.3.A:A.4 Worked examples [I]
+<a id="c3aa4-worked-examples-i"></a>
+
+##### C.3.A:A.4 - Worked examples [I]
+
 
 **Adult dosage across jurisdictions.** Authority kind `AdultPerson@RegY` uses threshold 18; hospital kind `AdultPatient` uses 21. The obtaining KindBridge and its assertion state the boundary loss and `CL^k=1`. For patient P-44, the hospital evaluates its target signature edition in the dated formulary slice. Missing DOB support gives `unknown`; the guard refuses without asserting that P-44 is a non-adult.
 
@@ -296,7 +308,10 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 **IFRS and US GAAP Lease.** Each authority kind and local corporate kind remains independently identified. The bridge assertion records the short-term-exception loss. Test planning targets boundary candidates under pinned target declarations rather than treating one shared label as truth.
 
-##### C.3.A:A.5 Guidance and migration [I]
+<a id="c3aa5-guidance-and-migration-i"></a>
+
+##### C.3.A:A.5 - Guidance and migration [I]
+
 
 1. Inventory regulatory claims, exact category declarations, and applicability slices.
 2. Recover or author target `KindSignature` declaration editions; keep F on those epistemes.
@@ -306,7 +321,10 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 6. Route Scope through USM and bridge consequences through R.
 7. Use RoleMask declarations for local procedural tailoring; separately establish a new kind/order relation only when the distinction truly becomes conceptual and stable.
 
-##### C.3.A:A.6 Manager's compact pattern [I]
+<a id="c3aa6-managers-compact-pattern-i"></a>
+
+##### C.3.A:A.6 - Manager's compact pattern [I]
+
 
 - **Where and when?** Claim scope over exact context slices.
 - **About what?** Exact local kind and signature declaration; KindBridge relation/assertion for a required correspondence between distinct kinds.
@@ -315,11 +333,17 @@ Regulations name categories such as Adult person, Class II medical device, Perso
 
 #### C.3.A:Annex B - Assurance lanes and evidence design [A/I]
 
-##### C.3.A:B.1 What typed assurance adds [I]
+<a id="c3ab1-what-typed-assurance-adds-i"></a>
+
+##### C.3.A:B.1 - What typed assurance adds [I]
+
 
 VA can prove a claim quantified over an exact declared kind; LA can exercise exact candidates and boundary cases under pinned editions and slices; TA can qualify the tools used to produce support. None of those lanes turns evidence existence into classification truth.
 
-##### C.3.A:B.2 Normative obligations
+<a id="c3ab2-normative-obligations"></a>
+
+##### C.3.A:B.2 - Normative obligations
+
 
 **EA-1 (Declaration and candidate binding).** Every VA/LA artifact SHALL cite the governed claim, exact quantified kind and signature edition, and assumed Scope. Candidate-specific evidence SHALL additionally name each exact candidate and its four-input judgment.
 
@@ -337,7 +361,10 @@ VA can prove a claim quantified over an exact declared kind; LA can exercise exa
 
 **EA-8 (No scope-by-wording).** More general wording, more matching candidates, or additional evidence-matrix rows SHALL NOT widen G. A `ΔG+` change requires the new support or sufficiently congruent bridge basis required by A.2.6; otherwise retain or narrow the declared Scope.
 
-##### C.3.A:B.3 Evidence matrix [I]
+<a id="c3ab3-evidence-matrix-i"></a>
+
+##### C.3.A:B.3 - Evidence matrix [I]
+
 
 | Rows | Columns | Cell content |
 | --- | --- | --- |
@@ -345,7 +372,10 @@ VA can prove a claim quantified over an exact declared kind; LA can exercise exa
 
 Rows plan declared distinctions; they do not classify every candidate. A proof-only row may remain declaration-level when it genuinely proves a universal claim. A test or monitoring row becomes candidate-bearing and records exact judgments for the exercised candidates.
 
-##### C.3.A:B.4 VA lane [A/I]
+<a id="c3ab4-va-lane-ai"></a>
+
+##### C.3.A:B.4 - VA lane [A/I]
+
 
 - **VA-1.** A proof carrier SHALL cite the exact claim, quantified kind, `KindSignature` edition, and assumed scope slices.
 - **VA-2.** A proof of a universal claim need not invent a candidate; application to an actual candidate uses `Guard_CandidateUse` separately.
@@ -354,7 +384,10 @@ Rows plan declared distinctions; they do not classify every candidate. A proof-o
 
 Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse at Plant-B requires kind-identity and scope settlement, with bridges only where required. Application to VIN-17 then uses the Plant-B target signature and exact target judgment.
 
-##### C.3.A:B.5 LA lane [A/I]
+<a id="c3ab5-la-lane-ai"></a>
+
+##### C.3.A:B.5 - LA lane [A/I]
+
 
 - **LA-1.** Each test or monitoring campaign SHALL state row declaration editions, slice columns, exact tested candidates, and their judgments.
 - **LA-2.** Boundary probing SHALL distinguish criterion boundaries from Scope boundaries.
@@ -363,20 +396,29 @@ Example: a proof over `PassengerCarSignature@v4` assumes a dry-road slice. Reuse
 
 Example: rows `PassengerCar` and `LightTruck` use pinned signature editions; columns cover dry/wet slices. The tested VINs are exact candidates. A missing sensor dependency for one VIN yields `unknown`, not a negative vehicle classification.
 
-##### C.3.A:B.6 TA lane [A/I]
+<a id="c3ab6-ta-lane-ai"></a>
+
+##### C.3.A:B.6 - TA lane [A/I]
+
 
 Qualify provers, checkers, measurement pipelines, and classifiers separately. A classifier output can support an assertion about `J`; the tool neither becomes the candidate nor makes the governed criterion hold. Version drift may make the support unavailable and hence produce `unknown` for a candidate-bearing use.
 
 - **TA-1.** Every tool whose qualification is relied on by VA or LA SHALL identify its exact version and qualification status, and the receiving guard SHALL recover that declaration when the reliance is current.
 - **TA-2.** Missing or weaker tool qualification MUST NOT be hidden by lowering the owning episteme's F or widening G. The receiving policy may require additional independent support, reduce or condition R, or refuse the use while preserving the exact unavailable-support reason.
 
-##### C.3.A:B.7 Evidence guards
+<a id="c3ab7-evidence-guards"></a>
+
+##### C.3.A:B.7 - Evidence guards
+
 
 **Guard_EvidencePlan_Typed** SHALL check exact row declaration editions, exact slice columns, bridge/assertion needs, candidate-selection policy, freshness, independence, and TA declarations. Planning rows do not count as candidate judgments.
 
 **Guard_EvidenceAttach_Typed** SHALL bind every evidence unit to its exact claim/use, row declaration, slice, exact candidate when current, judgment value, support relation, freshness, and bridge consequences. It SHALL preserve `unknown` and the separate attach/refuse disposition.
 
-##### C.3.A:B.8 Anti-patterns and remedies
+<a id="c3ab8-anti-patterns-and-remedies"></a>
+
+##### C.3.A:B.8 - Anti-patterns and remedies
+
 
 | Anti-pattern | Remedy |
 | --- | --- |
@@ -386,13 +428,19 @@ Qualify provers, checkers, measurement pipelines, and classifiers separately. A 
 | trusted tool substitutes for content support | keep TA separate and recover the governed candidate facts/support |
 | bridge presence substitutes for target evaluation | use the independent target declaration and fresh target judgment |
 
-##### C.3.A:B.9 End-to-end example [I]
+<a id="c3ab9-end-to-end-example-i"></a>
+
+##### C.3.A:B.9 - End-to-end example [I]
+
 
 A two-plant braking claim pins the `PassengerCar` declaration and Plant-A scope. VA proves the quantified claim over that declaration. LA tests exact VINs in dry/wet slices and records their judgments. TA identifies tool versions. Plant-B reuse recovers the target declaration and any required bridges with their loss and R consequences; each Plant-B candidate is evaluated afresh before evidence is attached.
 
 #### C.3.A:Annex C - ESG and Method–Work guards
 
-##### C.3.A:C.1 ESG obligations (normative)
+<a id="c3ac1-esg-obligations-normative"></a>
+
+##### C.3.A:C.1 - ESG obligations (normative)
+
 
 When a state transition publishes or relies on a claim quantified over kinds, the ESG guard SHALL:
 
@@ -407,7 +455,10 @@ When a state transition publishes or relies on a claim quantified over kinds, th
 
 ESG MUST NOT widen G to hide incompatibility, treat a label as a candidate judgment, or convert `unknown` to `false`.
 
-##### C.3.A:C.2 Method–Work obligations (normative)
+<a id="c3ac2-methodwork-obligations-normative"></a>
+
+##### C.3.A:C.2 - Method–Work obligations (normative)
+
 
 This Method–Work slice is conditional; it is not a definition that makes every actual change agentic, capability-held, planned, method-mediated, or Work. Open its capability/method/WorkPlan entry checks only when those objects and an A.15.1 Work use are current. A natural, spontaneous, formal, jointly caused, or non-separable `U.Transformation` remains under A.3/A.3.4 and does not acquire a fictive performer, role assignment, method, capability, plan, or Work to satisfy this guard. A broader scale-free-agency or Work decision remains with A.13 and A.15.1. This annex neither settles nor forbids that decision. Reflexive cases require separately grounded acting and affected positions, while joint or non-separable cases keep their direct dynamics, interaction, or causality governors rather than forcing one arbitrary actor-target split.
 
@@ -430,7 +481,10 @@ A conforming Method–Work check SHALL:
 9. keep W, inputs, outputs, JobSlice, capability, plan, logs, and assertions distinct; and
 10. refuse fail-closed on `false` or `unknown` without rewriting either value.
 
-##### C.3.A:C.3 Ready-to-use skeletons
+<a id="c3ac3-ready-to-use-skeletons"></a>
+
+##### C.3.A:C.3 - Ready-to-use skeletons
+
 
 **ESG_TypedGate(Claim, claimKind, claimSignatureEdition, receiveKind, receiveSignatureEdition, TargetSlice, candidates?).** Apply `Guard_TypedClaim` to the exact claim and receiving kinds; for each actual candidate apply `Guard_CandidateUse` with both declaration editions; apply bridge, freshness, and policy predicates; return the separate transition disposition.
 
@@ -438,7 +492,10 @@ A conforming Method–Work check SHALL:
 
 **MethodWork_ResultGate(W, JobSlice, actualInputs, actualOutputs, declarations, ResultRecordRef?).** First recover the independently grounded dated W under A.15.1. Then evaluate exact input/output candidate judgments, check scope and any acceptance predicates, and keep any ResultRecordRef as a reference to a separate episteme whose content designates W.
 
-##### C.3.A:C.4 Worked examples [I]
+<a id="c3ac4-worked-examples-i"></a>
+
+##### C.3.A:C.4 - Worked examples [I]
+
 
 **ESG braking policy.** The claim pins `VehicleSignature@v4` and the dry/wet TargetSlice. The consumer is restricted to `PassengerCar`, and `SubkindOfObtains(PassengerCar, Vehicle; plantVehicleScheme)` holds under the paired exact declaration editions. For VIN-17, evaluate `J(VIN-17, PassengerCar, passengerCarEdition, TargetSlice)=true`; C.3.1 monotonicity then supplies the Vehicle-side classification needed by the universal claim. An unavailable brake-configuration dependency would yield `unknown`, and the transition would refuse separately.
 
@@ -446,7 +503,10 @@ A conforming Method–Work check SHALL:
 
 **Cross-context plant use.** The source claim and source kind cross via separate Scope and KindBridge channels. Plant-B recovers its own target declaration and evaluates exact TransportUnit candidate TU-9. Bridge assertions affect R; they do not classify TU-9 or create the later Work occurrence.
 
-##### C.3.A:C.5 Anti-patterns and remedies
+<a id="c3ac5-anti-patterns-and-remedies"></a>
+
+##### C.3.A:C.5 - Anti-patterns and remedies
+
 
 | Anti-pattern | Remedy |
 | --- | --- |

@@ -27,7 +27,7 @@ Not this pattern when:
 - you are building one interpretive view over an already-declared substrate; use `A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW` or a local specialization such as `G.2`;
 - you are deciding live pool policy, frontier retention, or next-move planning; use `C.19` or `C.24`.
 
-### A.19.SOURCE-SET-SPACE-SUBSTRATE:0.1 - What goes wrong if missed
+#### A.19.SOURCE-SET-SPACE-SUBSTRATE:0.1 - What goes wrong if missed
 
 If this pattern is missed, authors usually collapse several different things into one vague "space" or one vague "projection":
 
@@ -39,7 +39,7 @@ If this pattern is missed, authors usually collapse several different things int
 
 The result looks tidy, but the reader cannot tell what is being searched, what is being evaluated, what is only being published, and where uncertainty actually enters.
 
-### A.19.SOURCE-SET-SPACE-SUBSTRATE:0.2 - What this buys
+#### A.19.SOURCE-SET-SPACE-SUBSTRATE:0.2 - What this buys
 
 This pattern buys one conservative but expressive substrate declaration:
 

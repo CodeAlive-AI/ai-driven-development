@@ -1,7 +1,7 @@
 ## B.5.RR - Revise Reasoning After a Premise or Question Changes
 
 > **Type:** Method pattern
-> **Status:** Draft
+> **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
 ### B.5.RR:1 - Problem frame
