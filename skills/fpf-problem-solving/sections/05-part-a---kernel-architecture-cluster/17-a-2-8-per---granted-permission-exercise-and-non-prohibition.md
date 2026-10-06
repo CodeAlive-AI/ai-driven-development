@@ -201,7 +201,7 @@ PermissionNormConflictFinding@Context <: U.Episteme
   conflictingNormClaimAddress: ClaimAddress
   overlapScope: U.ClaimScope
   overlapWindow: QualificationWindowPolicy
-  governingPrecedencePolicyRef: U.EpistemeRef
+  governingPrecedencePolicyRef?: U.EpistemeRef
   applicablePrecedenceRuleAddress?: ClaimAddress
   decisionAuthorityRelationOccurrenceRef?: U.RelationRef constrained to the direct decision-authority relation kind
   resolutionWorkRef?: WorkRef
@@ -212,6 +212,8 @@ PermissionNormConflictFinding@Context <: U.Episteme
 ```
 
 Create the finding only when the grant and current prohibition or commitment concern the same beneficiary/action content, overlapping scope/window, and incompatible practical conclusions. Check that match directly from the two claims and their participants. Permission and an obligation to perform the same action are not automatically in conflict.
+
+An unresolved finding may omit `governingPrecedencePolicyRef` when no governing precedence policy has been identified. Keep the disposition unresolved and retain the missing input and what would reopen the question. A settled finding identifies the governing policy and the applicable rule or independently grounded decision result.
 
 Resolve the conflict through exactly one of two branches:
 

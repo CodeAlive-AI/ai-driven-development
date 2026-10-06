@@ -9,7 +9,7 @@ Capability is a System's ability to perform a work family or produce a result cl
 
 **Primary working reader.** A manager, architect, engineer, safety assessor, scheduler or model author deciding whether a holder can meet a Work, Method-step, service-promise or architecture need.
 
-**First useful move.** Name the holder, work or result, conditions and attained bounds. Then compare the receiving demand with that qualified claim, using the support and currentness required for this use. An adequate existing claim and fit result may be reused without another record.
+**First useful move.** Name the holder, work or result, conditions and attained bounds. Then compare the receiving demand with that qualified claim, using the support and currentness required for this use. An adequate existing claim and fit result may be reused without another record. When a whole-result claim hides a consequential difference in how the holder uses a Method, use :2.1 to expose that difference.
 
 **What goes wrong if missed.** Assignment, a MethodDescription, one successful run or a promise is mistaken for measured ability. Conversely, an expired report is treated as if it physically removed the holder's ability. Both errors conceal which fact needs attention.
 
@@ -67,6 +67,22 @@ Use these values when the receiving comparison needs them:
 WorkScope describes work conditions, even when an episteme states them. That episteme's ClaimScope concerns its claims; the two scopes do not become interchangeable. Quantitative bounds and qualification policy remain separate from WorkScope membership. A time condition belongs in WorkScope only when it actually changes which work slices are covered; an evidence-age rule belongs in qualification.
 
 These distinctions permit ordinary capability use without `U.Capability` as an additional kind. A separate kind question arises only if a concrete receiving use needs another individual's continuity or a useful stable classification beyond the holder and these claims; E.24.UK then requires that question's actual identity and membership facts.
+
+#### A.2.2:2.1 - Method-relative capability: the structure the holder can use
+
+Use this more detailed comparison when a person, machine or composite can produce part of a result, yet it is unclear which operation, distinction or connection of the Method it can use. A correct explanation, a supplied decision and successful execution with help can support different claims. Keep the ordinary ability-and-fit answer in :3 when it already settles the receiving question.
+
+Select the Method organization that can change the decision: its consequential operations, distinctions, conditions and joins. Include recognizing when to select the Method, adapting it or composing it with another Method only when the promised contribution requires that. Choose a grain at which a missing relation changes the next action. Separate success at individual operations from success at their coordination.
+
+**Usable Method structure** is the aspect of which selected operations and relations a specified System can bring to bear in named work under stated conditions. As an A.17 relational characteristic it has the ordered bearers `(holder System, Method)`, arity two. The selected structure and granularity, work family, success criteria, relevant time/configuration, ordinary tools, supplied help, execution budget and observation horizon qualify that comparison. A MethodDescription can supply the account or evidence; it does not replace the Method in this pair.
+
+A **Method-relative capability profile** expresses the qualified ability claims at that grain. It can be ordinary prose: identify the supported contribution, the help that supplied another contribution, and the unresolved or contradicted claim. It is an account about the holder, not another capability individual. An unobserved operation remains unresolved rather than becoming zero ability. A successful trial grounds only the capability inference warranted by its conditions and evidence.
+
+Compare profiles only on a compatible selection and conditions. If one covers another's supported organization and adds a consequential relation, it has greater supported structural coverage. Different strengths can remain incomparable. A count or fraction needs a fixed structural unit, denominator and inference rule; separately acquired actions do not add up to an acquired join. Use A.17/A.18 and C.16 for a declared scale or measurement. The resulting coverage is distinct from task value, a universal mastery rank or a bit estimate.
+
+Make assistance part of the claim. If a specialist selects the right variant and the holder executes it, the occurrence does not yet support the holder's selection capability. Removing that specialist changes the tested conditions. Keep tools and references that the receiving work ordinarily provides. If the capable whole is an equipped System or ensemble, state the claim about that whole rather than distributing it to every participant.
+
+Current usable structure says what the holder can do now. **Acquired structure** adds a history claim, requiring comparable before/after capability accounts; attribution to a particular intervention needs its own grounds. **Obtainable through learning** concerns a starting holder and a specified acquisition arrangement, including how later learning actions are chosen. Use E.23.CDI for that construction and E.23.CAE when access, expression or changed conditions remain plausible explanations of the observed difference. Those questions do not add an acquisition arrangement as a third bearer of the current characteristic.
 
 ### A.2.2:3 - Positive Solution
 
@@ -188,6 +204,12 @@ The monthly-close service promise is a promise-content claim. The actual close f
 
 "ISO 26262 has safety capability" is not an ability claim about a holder System. The standard is an episteme used as source, requirement, or assurance input. A safety engineering team or toolchain may have a capability to perform safety-case work using that standard within a declared envelope.
 
+#### A.2.2:6.5 - A recovered rule and a usable transition
+
+Consider a constructed rhythmic case with eight pulses and audible attacks at pulses 0, 3 and 6. One Method alternates left and right on audible attacks; another alternates on every pulse, including silent ones. Both yield L,R,L in the first cycle. In the next cycle, attack-wise alternation yields R,L,R, while pulse-wise alternation yields L,R,L again. The first cycle therefore cannot distinguish control of these two state-update rules.
+
+Suppose a performer draws both traces correctly and performs the second rule while following a teacher, but reverts to attack-wise alternation without that demonstration. The comparison preserves the correct explanation as a recovery result. Its capability conclusion concerns execution with the demonstration; independent control of the silent-pulse transition remains unsupported. A pulse reference may remain if the receiving performance normally provides it. The next useful question is how to acquire or supply that transition, not how many correct notes to add to a mastery score; E.23.CDI develops that choice. A digital controller can be compared on the same selected relation using its input/output traces, but that comparison supplies neither a human learning mechanism nor evidence that either holder acquired the rule through training.
+
 ### A.2.2:7 - Reconsider the Claim, Its Support or Its Fit
 
 Reopen the value whose governing conditions changed. A different holder changes the subject. Configuration, calibration, wear, staffing, training or environment may change actual ability; evidence and qualification affect warranted reliance; the receiving demand affects fit. Assignment state and authority can separately defeat Work admission while ability remains.
@@ -236,6 +258,7 @@ The claim is about `Cell_3`. Justify its attained bounds under the stated compon
 | `CC-A2.2-09` | For composite holders, is the capability stated at the whole whose ability is being claimed? |
 | `CC-A2.2-10` | Are lowering and reopen conditions local enough to change only the affected ability proposition, assertion, evidence relation, currentness assessment or fit predicate? |
 | `CC-A2.2-11` | When wording says that a holder possesses an algorithm, did the use dispatch separately to capability, exact Method, deployed-software or possession relation, or candidate episteme, and apply A.3.2's exact-Method `EntityOfConcern` plus substantive-claim threshold before admitting `U.MethodDescription`? Does only the admitted holder system perform dated Work under exact assignment while the Work separately enacts the Method? |
+| `CC-A2.2-12` | When a Method-relative profile is used, are the selected Method relations, holder, help, comparison conditions and supported claims explicit, with unresolved evidence and acquisition history kept distinct from current ability? |
 
 ### A.2.2:10 - Anti-Patterns and Repairs
 
@@ -305,6 +328,9 @@ Reopen this selection when instability or a changed distribution defeats the ret
 | `C.27.TA`, `C.27` | Use C.27.TA when a positive temporal aspect of capability—currentness, window, rhythm, or drift—is itself relied on; use C.27 for temporal-claim adequacy. |
 | `C.2.1`, `A.10`, `B.3`, `C.28`, `F.10`, `E.17` | Govern episteme, evidence, assurance, counterfactual, status, and publication-use relations that may justify or qualify a statement or reliance use about a capability claim. |
 | `C.16.P`, `A.19` | Govern characteristic, scale, and characteristic-space recovery when capability measures depend on declared measured aspects. |
+| `A.17`, `A.18`, `C.16` | Govern the relational characteristic, a declared coverage scale and an actual measurement of usable Method structure in :2.1. |
+| `C.2.8` | Governs structure recoverable from an expressed account; that recovery can inform a Method-relative profile without establishing enactment capability. |
+| `E.23.CDI`, `E.23.CAE` | E.23.CDI develops the acquisition or provision choice; E.23.CAE distinguishes apparent loss or failed use from a supported capability change. |
 | `C.25` | Governs composite quality families and Q-Bundles that may supply slots for capability-fit checks. |
 | `C.30`, `C.32.HCS`, `C.32.ACS`, `C.32.ACE` | Govern architecture-characteristic material, project criteria rows, and eval readings that may constrain capability use without thereby establishing the holder's ability. |
 | Promise-content and commitment patterns | Govern outward promise and commitment relations; a promise or commitment claim may cite a capability relation, but capability does not become promise or commitment. |

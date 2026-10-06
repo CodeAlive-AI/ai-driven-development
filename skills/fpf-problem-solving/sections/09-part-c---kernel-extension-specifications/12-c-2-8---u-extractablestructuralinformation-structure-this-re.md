@@ -124,6 +124,8 @@ Measure or compare extraction effort separately. Two expressions may expose the 
 
 Use the method appropriate to the proposed change: C.37 for selecting representations, A.6.3.NAR for narrative ordering and source carry-through, or the applicable domain description or instructional method. ESI states the aspect being compared; it does not prescribe adding a diagram, example or lesson.
 
+When the account describes a Method, carry the recovered operations and relations into A.2.2:2.1 if the next question is which of them the holder can use. Keep the extraction result about the episteme, form and observer: correctly explaining a rule supplies different evidence from performing it with specified support. E.23.CDI:4.2.1 uses the Method-relative profile to choose learning or provision and to revise an acquisition arrangement when its feedback and receiving result disagree. Stop at the ESI result when structural recovery alone answers the question.
+
 ### C.2.8:5 - Archetypal Grounding
 
 #### C.2.8:5.1 - Architecture account in prose and a diagram
@@ -235,6 +237,7 @@ At comparable effort, ordinary source-based reconstruction often answers which n
 - **C.2.1 and E.24.PUB:** identity of the expressed episteme, publication form and presentation carrier.
 - **C.2.4:** degree of explicit articulation and its receiving-use thresholds.
 - **C.29:** mathematical-lens correspondence for a formal structural-information estimate.
+- **A.2.2:2.1 and E.23.CDI:4.2.1:** Method-relative capability and the acquisition or provision choice that can consume a recovered Method structure.
 - **C.33:** captured and missing structure, sufficiency and source return for an architecture use.
 - **A.6.3.NAR and E.17.EFP:** narrative construction and explanation-faithfulness uses that consume structural recovery.
 - **C.11.CRC/C.11 and C.37:** marginal comparison and choice, and selection of useful representations.

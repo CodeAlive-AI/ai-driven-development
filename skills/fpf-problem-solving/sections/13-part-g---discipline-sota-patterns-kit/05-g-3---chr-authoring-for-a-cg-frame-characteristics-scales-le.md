@@ -3,7 +3,7 @@
 **Tag.** Architectural pattern (CHR kit; publishes lawful measurement primitives; constrains CAL authoring and selector/dispatch use)
 **Stage.** *design‑time* (authoring & publication; enables admissible run-time consumption by `G.4` / `G.5`)
 **Primary output.** `CHR Pack@CG‑Frame` — a notation‑independent, UTS‑published CHR bundle that provides: typed Characteristics/Scales/Levels/Coordinates, legality + guard surfaces, aggregation/comparison specs, RSCR hooks/tests, and provenance pins.
-**Primary hooks.** `G.1` (declared CG-frame, which is the framing episteme), `G.2` (SoTA synthesis inputs), `A.19.CHR` (CHRMechanismSuite boundary + pins), `A.15.3` (SlotFillingsPlanItem baseline), `A.18/C.16` (MM-CHR legality), `F.0.1`, `F.1`, `F.9`, `F.17`, and `F.18` (source-local meaning, selected source editions, actual relations between local-sense cells, and naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4` (trust, freshness/decay), `A.10` (evidence-provenance paths and cited carriers), `G.6` (EvidenceGraph/Path citation), optional `C.18 and C.19` (QD/OEE wiring), `G.11` (refresh orchestration).
+**Primary hooks.** `G.1` (declared CG-frame, which is the framing episteme), `G.2` (SoTA synthesis inputs), `A.19.CHR` (CHRMechanismSuite boundary + pins), `A.15.2` (WorkPlan baseline), `A.15.3` (planned filling of an independently declared position), `A.18/C.16` (MM-CHR legality), `F.0.1`, `F.1`, `F.9`, `F.17`, and `F.18` (source-local meaning, selected source editions, actual relations between local-sense cells, and naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4` (trust, freshness/decay), `A.10` (evidence-provenance paths and cited carriers), `G.6` (EvidenceGraph/Path citation), optional `C.18 and C.19` (QD/OEE wiring), `G.11` (refresh orchestration).
 **Non‑duplication note.** Universal Part‑G invariants (bridge‑only crossings, tri‑state semantics, penalties→`R_eff`‑only, set‑return semantics, P2W split, typed RSCR triggers + alias docking, defaults with one governing definition, linkage discipline) are governed by `G.Core`. This pattern cites them via `G.3:4.1` and delegates where needed.
 
 ### G.3:1 - Problem frame
@@ -66,7 +66,7 @@ CorePinsRequired := {
 UTSRowId[],                      // required: CHR terms are public ids (Name Cards plus public-id continuity records)
 PathId[]/PathSliceId[],          // required: worked examples/tests and refresh anchoring cite paths
 ReferencePlane,                  // required: definitional claims are plane-scoped
-Φ/Ψ/Φ_plane policy-ids?,         // iff crossings/plane moves are exercised in examples or imports
+Φ/Ψ/Φ_plane policy-ids?,         // when the applied loss/assurance model uses them or an applicable rule for the receiving use requires them (G.Core:4.2.3)
 ΓFoldRef.edition?                // iff an explicit Γ-fold artefact is pinned (otherwise use DefaultId)
 // NOTE: method-/discipline-specific pins (e.g., DescriptorMapRef/DistanceDefRef/DHCMethodRef/InsertionPolicyRef)
 // are declared only inside Extensions (e.g., `G.3:Ext.QD_OEE_Wiring`) to keep core linkage universal.
@@ -260,14 +260,15 @@ All blocks below are `GPatternExtension` modules (PatternScopeId-scoped; **not**
 * **GPatternExtensionId:** `SuiteBoundaryLinkage`
 * **GPatternExtensionKind:** `InteropSpecific`
 * **GoverningPatternId:** `A.19.CHR`
-* **Uses:** `{A.19.CHR, A.15.3}`
+* **Uses:** `{A.19.CHR, A.15.2, A.15.3}`
 * **⊑/⊑⁺:** `∅`
 * **RequiredPins/EditionPins/PolicyPins (minimum):**
 
   * `CHRMechanismSuiteDescriptionRef.edition?` *(when the suite description is cited as a reproducibility baseline)*
-  * `CHRMechanismSuiteSlotFillingsPlanItem` refs *(when planned baseline binds CHR artefacts into WorkPlanning)*
+  * `WorkPlanRef` and local baseline locator *(when a planned baseline binds CHR artefacts into WorkPlanning under `A.15.2`)*
+  * `CHRMechanismSuiteSlotFillingsPlanItem` in that WorkPlan *(when the plan fills an independently declared operation argument or relation position under `A.15.3`; cite the governing declaration and member designator, and locate the filling row within the plan)*
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.BaselineBindingEdit, RSCRTriggerKindId.EditionPinChange}`
-* **Notes (wiring‑only):** This module binds CHR authoring outputs to the P2W seam (`SlotFillingsPlanItem`); suite semantics and membership are governed by `A.19.CHR`.
+* **Notes (wiring-only):** `A.19.CHR` governs suite semantics and membership; `A.19.CHR:4.1.2` distinguishes ordinary planned baselines from typed filling.
 
 **GPatternExtension: SoTAPackInputs**
 
@@ -409,7 +410,7 @@ CHR authoring is where many biases become “baked in” as measurement choices.
 | CC‑G3‑14          | **Evidence wired.** Each `CHR.Characteristic` links to R‑anchors via `PathId/PathSliceId` (and, where applicable, `A.10` anchor/carrier refs), so downstream evidence discipline (`G.6`) can audit legality and guard claims.            |
 | CC‑G3‑15          | An `Archetypal Grounding` section exists with at least two domain‑distinct examples that demonstrate lawful CHR typing/legality and the CHR↔CAL separation (notably: no thresholds in CHR).                                          |
 | CC‑G3‑16          | If `EvidenceLanes` are used, lane tags are declared with a citation to their governing pattern taxonomy (`B.3`), and any lane‑dependent tolerances/proof requirements are explicitly pinned (policy‑id / edition refs). Cross‑lane comparison/aggregation is **illegal by default** unless an explicit governing-pattern policy makes it lawful (typically `G.4`), and it must be auditable via evidence paths (`G.6`). |
-| CC‑G3‑17          | If the CHR outputs are bound into the planned baseline / suite seam, the binding uses `CHRMechanismSuiteSlotFillingsPlanItem` as defined in `A.19.CHR` + `A.15.3` (no local baseline variants; wiring via `G.3:Ext.SuiteBoundaryLinkage`). |
+| CC‑G3‑17          | When CHR outputs are bound into a planned baseline, identify the `A.15.2` WorkPlan and its local baseline locator. If the plan fills an independently declared operation argument or relation position under `A.15.3`, also use `CHRMechanismSuiteSlotFillingsPlanItem` with its governing declaration reference, member designator and plan-local filling-row locator, as governed by `A.19.CHR:4.1.2` (wiring via `G.3:Ext.SuiteBoundaryLinkage`). |
 | CC‑G3‑18          | **Freshness is explicit.** Each `CHR.Characteristic` declares a validity window and either (i) an explicit `NonDecayingDecl` or (ii) a freshness/half‑life statement that is pinned to the governing pattern (`B.3.4`) when policy‑bound (`G.3:Ext.DecayWiring`). Changes in decay windows/policies participate in RSCR via canonical trigger kinds declared in `G.3:4.1`. |
 
 ### G.3:8 - Common Anti‑Patterns and How to Avoid Them
@@ -445,7 +446,7 @@ This pattern aligns with post‑2015 best practice by:
 
 ### G.3:12 - Relations
 
-**Builds on:** `G.Core`, `G.1`, `G.2`, `G.6` (EvidenceGraph / Path citation), `A.19.CHR`, `A.15.3`, `A.17–A.18/C.16` (MM-CHR), `F.0.1` (source-local meaning), `F.1` (source selection), `F.9` (actual relations between local-sense cells), `F.17` (scheme-sense cells), `F.18` (naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4`, `A.10`, `E.10`, `E.5.1–E.5.3`.
+**Builds on:** `G.Core`, `G.1`, `G.2`, `G.6` (EvidenceGraph / Path citation), `A.19.CHR`, `A.15.2` (WorkPlan baselines), `A.15.3` (planned fillings of independently declared positions), `A.17–A.18/C.16` (MM-CHR), `F.0.1` (source-local meaning), `F.1` (source selection), `F.9` (actual relations between local-sense cells), `F.17` (scheme-sense cells), `F.18` (naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4`, `A.10`, `E.10`, `E.5.1–E.5.3`.
 **Uses (via Extensions):** `G.0` (promotion/linkage to `CG‑Spec`), optional `C.18 and C.19` (QD/OEE wiring).
 **Publishes to:** `G.4` (admissible operators plus legality and guard macros and freshness pins), `G.5` (role declarations plus pins for reproducibility), `UTS` (Name Cards and public-id continuity notes), RSCR tests and hooks.
 **Constrains:** any CAL/LOG/selector usage that consumes CHR (must treat CHR artefacts as typed/legal surfaces, not as prose hints).

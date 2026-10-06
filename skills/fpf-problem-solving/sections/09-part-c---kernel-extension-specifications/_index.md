@@ -18,8 +18,8 @@
 - [C.2.4 - U.ArticulationExplicitness — How Explicit Is an Episteme's Meaning for Its Use?](08-c-2-4---u-articulationexplicitness-how-explicit-is-an-episte.md) (205 lines) — Type: Definitional (D)
 - [C.2.5 - U.LanguageStateClosureDegree — How Fixed Is the Current Candidate Space?](09-c-2-5---u-languagestateclosuredegree-how-fixed-is-the-curren.md) (195 lines) — Type: Definitional (D)
 - [C.2.6 - U.LanguageStateAnchoringMode — How Is the Episteme Anchored?](10-c-2-6---u-languagestateanchoringmode-how-is-the-episteme-anc.md) (175 lines) — Type: Definitional (D)
-- [C.2.7 - U.LanguageStateRepresentationFactorBundle — How Is the Representation Organized?](11-c-2-7---u-languagestaterepresentationfactorbundle-how-is-the.md) (175 lines) — Type: Definitional (D)
-- [C.2.8 - U.ExtractableStructuralInformation — Structure This Reader Can Recover](12-c-2-8---u-extractablestructuralinformation-structure-this-re.md) (244 lines) — Type: Definitional (D)
+- [C.2.7 - U.LanguageStateRepresentationFactorBundle — How Is the Representation Organized?](11-c-2-7---u-languagestaterepresentationfactorbundle-how-is-the.md) (183 lines) — Type: Definitional (D)
+- [C.2.8 - U.ExtractableStructuralInformation — Structure This Reader Can Recover](12-c-2-8---u-extractablestructuralinformation-structure-this-re.md) (247 lines) — Type: Definitional (D)
 - [C.2.P.DR - Repair Claims Based on Declarative Form Alone (Declarative Representation Precision Restoration)](13-c-2-p-dr---repair-claims-based-on-declarative-form-alone.md) (344 lines) — Type: C.2.P precision-restoration child pattern for declarative-representation overread
 - [C.3 - Kinds, Intent and Extent, and Typed Reasoning](14-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (171 lines) — Type: Typed reasoning discipline pattern
 - [C.3.1 - Kind Identity and Subkind Relations (U.Kind and U.SubkindOf)](15-c-3-1---kind-identity-and-subkind-relations.md) (160 lines) — Type: Kind identity, subkind relation, and continuity pattern
@@ -27,7 +27,7 @@
 - [C.3.3 - KindBridge and CL^k — Correspondence between Distinct Kinds](17-c-3-3---kindbridge-and-cl-k-correspondence-between-distinct.md) (194 lines) — One-line summary. A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no...
 - [C.3.4 - KindUseAdaptationDeclaration — Tailor the Use of an Existing Kind](18-c-3-4---kinduseadaptationdeclaration-tailor-the-use-of-an-ex.md) (211 lines) — One-line summary. Use a KindUseAdaptationDeclaration when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base...
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](19-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (159 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
-- [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](20-c-3-a---typed-guard-macros-for-kinds-usm.md) (521 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
+- [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](20-c-3-a---typed-guard-macros-for-kinds-usm.md) (524 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
 - [C.11 - Decision Theory (Decsn-CAL)](21-c-11---decision-theory.md) (731 lines) — Normativity: Normative unless marked informative
 - [C.11.CRC - Configuration-Relative Contribution Comparison](22-c-11-crc---configuration-relative-contribution-comparison.md) (205 lines) — Tech name: ConfigurationRelativeContributionComparison
 - [C.11.DUA - Make Advice and Evidence Demands Worth Their Burden](23-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md) (257 lines) — Tech name: DecisionUsefulAdvice
@@ -49,9 +49,9 @@
 - [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](39-c-22---task-typing-and-tasksignature-assignment.md) (384 lines) — Purpose. Declare an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
 - [C.22.1 - Task-family adaptation signature](40-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
 - [C.22.PFR - Problematic-For Relation](41-c-22-pfr---problematic-for-relation.md) (333 lines) — Normativity: Normative unless marked informative
-- [C.22.2 - ProblemCard](42-c-22-2---problemcard.md) (658 lines) — Normativity: Normative
+- [C.22.2 - ProblemCard](42-c-22-2---problemcard.md) (663 lines) — Normativity: Normative
 - [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](43-c-23---methodfamily-evidence-maturity.md) (203 lines) — LOG (logic) for deductive shells for admissibility
-- [C.24 - Plan Tool or Service Calls for a Fixed Action (C.Agent-Tools-CAL)](44-c-24---plan-tool-or-service-calls-for-a-fixed-action.md) (383 lines) — Normativity: Normative
+- [C.24 - Plan Tool or Service Calls for a Fixed Action (C.Agent-Tools-CAL)](44-c-24---plan-tool-or-service-calls-for-a-fixed-action.md) (389 lines) — Normativity: Normative
 - [C.25 - Q-Bundle: Express a Quality Claim as One Characteristic or a Structured Bundle](45-c-25---q-bundle-express-a-quality-claim-as-one-characteristi.md) (418 lines) — Type: Definitional (D)
 - [C.26 - Quantum-Like Modeling Lens](46-c-26---quantum-like-modeling-lens.md) (650 lines) — Type: Architectural pattern
 - [C.26.1 - Probe-Coupled Boundary Interaction](47-c-26-1---probe-coupled-boundary-interaction.md) (300 lines) — Type: Architectural pattern

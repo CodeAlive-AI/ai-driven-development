@@ -126,7 +126,7 @@ When an observed discrepancy matters, compare its plausible sources in the subje
 
 `U.EvidenceStub` may carry a type-of-ground and identifier that lead to the exact A.10/G.6 provenance path. The path can cite the method description, model, calibration, work, inputs, output, result episteme, source publications, and transformations. Neither the stub nor a graph edge establishes those objects or their obtaining relations.
 
-A later comparison, diagnosis, criterion evaluation, acceptance action, or decision is separate dated work. It uses the result episteme through an exact premise, reference, operation-argument, decision-use, or other direct relation. Currentness belongs to G.11; bounded reliance to A.10 or B.3 under their entry conditions.
+A later comparison, diagnosis, criterion evaluation, acceptance action, or decision is a separately governed use of the measurement result. Recover its actual operation and any result under the direct pattern. Ground dated `U.Work` when the account asserts it or the receiving use requires it. The use relies on the result episteme through an exact premise, reference, operation-argument, decision-use, or other direct relation. Currentness belongs to G.11; bounded reliance to A.10 or B.3 under their entry conditions.
 
 #### C.16:5.8 - Lexical and neighboring-pattern discipline
 
@@ -300,7 +300,7 @@ Other lineage and domain examples are informative comparators. A source change r
 
 **Kernel.** MM‑CHR *imports* the canonical Characteristic vocabulary and the CSLC discipline fixed by A.17 and A.18; it does not redefine them. CharacteristicSpace reasoning (for change) lives in the patterns that consume MM‑CHR readings.
 
-**Using patterns.** KD‑CAL, Arch‑CAL, G.4, and other consumers cite C.16 measurement-result epistemes and then ground their own comparison, evaluation, acceptance, aggregation, or decision work. They do not produce a measurement merely by naming a template, score field, criterion, or evidence profile.
+**Using patterns.** KD‑CAL, Arch‑CAL, G.4, and other consumers cite C.16 measurement-result epistemes and then apply the direct patterns for their comparison, evaluation, acceptance, aggregation, or decision use, grounding dated `U.Work` when the account asserts it or the receiving use requires it. They do not produce a measurement merely by naming a template, score field, criterion, or evidence profile.
 
 **Unification (F‑cluster).** External standards (e.g., ISO 80000 quantity types; W3C SOSA/SSN observable properties; QUDT units/quantity kinds) are related via Concept‑Set rows and Bridges; MM‑CHR treats those alignments as context supplied by F‑patterns, not as local re‑definitions.
 

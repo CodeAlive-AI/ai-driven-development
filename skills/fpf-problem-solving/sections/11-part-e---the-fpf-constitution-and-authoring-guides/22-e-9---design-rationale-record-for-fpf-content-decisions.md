@@ -71,7 +71,7 @@ selected answer, trigger four systemic hazards:
 
 ### E.9:4 - Solution — state the decision before distributing it
 
-Write the `Decision` account first in ordinary precise language. Before a reader meets a DRR identity schema, method/work account, or catalogue of alternatives, they must be able to recover, in this order:
+Present the `Decision` account first in ordinary precise language. Before a reader meets a DRR identity schema, method/work account, or catalogue of alternatives, they must be able to recover, in this order:
 
 1. the working FPF problem and why it matters now;
 2. the selected answer stated positively;
@@ -80,7 +80,7 @@ Write the `Decision` account first in ordinary precise language. Before a reader
 5. the first substantive drafting action; and
 6. the nearest boundary, honest blocker, or reopen condition.
 
-That short account is the primary authoring source. Add exact method, work, application, episteme-identity, source-use, assessment, or authority distinctions only when the decision or a named later reliance depends on them.
+When the answer is still unsettled, use §4.2 to develop it through a working expression; the order above is the reader's entry to the resulting decision, not a requirement to guess the answer before inquiry. That short account, once supported, is the primary authoring source. Add exact method, work, application, episteme-identity, source-use, assessment, or authority distinctions only when the decision or a named later reliance depends on them.
 
 A nontrivial DRR keeps four conceptual components recoverable. These are the minimum decision kernel; the lightweight editorial variant remains available under `CC-DRR.5`.
 
@@ -236,12 +236,57 @@ The DRR names:
 
 Reusable process-source method is not limited to semio wording or pattern-authoring language. It may enter FPF only when it is separable from local process mechanics, improves FPF use, and has one exact evaluation pattern. After the method lands in FPF, process documents should cite the selected FPF pattern instead of keeping a parallel long-form rule.
 
+#### E.9:4.2 - Develop an unsettled decision through a working expression
+
+When the selected answer is still unknown, begin with the current difficulty and available material rather than manufacturing a Decision to fill the record. The opening instruction in §4 governs how the selected answer is presented to its reader. It does not require that deciding starts with an already selected answer.
+
+Use a provisional expression to bring a consequential relation into view: juxtapose two cases, arrange competing explanations, trace a dependency, or compare an intended use with the result currently available. E.8:4.2.1.2 and A.6.3.RT.OE supply the expression construction. Identify what the arrangement lets you infer and what remains unsupported. A question mark can make an unresolved interpretation visible; it supplies no premise for choosing one answer.
+
+Let the result change the decision question when it reveals that the original question conflated different work. Retain live alternatives only for the comparison they support. Replace a classification by format, tool or package name when the deciding difference concerns the operation or conditions of use. A working table can therefore be revised or discarded after it has produced the useful distinction. Its row count is not progress toward a decision.
+
+Before another author relies on the selected answer, resolve each premise that can change its selected obligation, or choose an explicitly bounded result whose remaining uncertainty does not defeat that obligation. State an honest stop where neither is available. Use the four kernel components and the applicable inspection content in §4.1 to inspect that closure. Material already recoverable in the account need not be copied into another answer column. A source pointer without the needed substantive contribution is not recoverable decision content.
+
+Keep this difference visible in the writing. “The source order for this row is unknown” can be a valid investigation result. “Convert this row using day/month/year” would require the missing premise. Conversely, a settled decision to stop such rows and request their interpretation can be supported even while their particular dates remain unknown. What remains open must be compared with the decision actually being made.
+
+The record carries the resulting problem, selection, reasons and consequences, not every discarded worksheet or the chronology of deciding. Retain a working expression when a later use needs its reasoning or recoverability; otherwise carry its useful result and source return into the decision. An incomplete exploration becomes neither an accepted decision nor an authorization merely by receiving a DRR heading.
+
 ### E.9:5 - Archetypal Grounding (System / Episteme)
 
 | Holon flavour | DRR analogue | Minimum kernel illustrated |
 |---------------|--------------|-----------------------------|
 | **`U.System`** (physical target) | The author applies `DRRMethod` during decision work on a pump-motor change; the selected-answer result specifies brushless DC and exact control/maintenance loci. | The C.2.1 DRR episteme records inefficiency/plant-use problem, alternatives, energy-versus-cost/authority rationale, selected loci, control-schema and supplier consequences, and validation obligation. |
 | **`U.Episteme`** (knowledge target) | The author applies `DRRMethod` during decision work on a theory revision; the selected-answer result specifies a new axiom and exact theory/teaching loci. | The DRR episteme records conflicting data, alternatives, explanatory/Pillar rationale, selected distribution, predictions, curriculum consequences, and downstream validation obligation. |
+
+#### E.9:5.1 - Decide what support a conversion pattern should carry
+
+An author is revising the actual date-conversion explanation in E.8:4.2.1.1. The explanation already supplies the essential rule: use the applicable supplier guarantee to choose the date order before running the converter. North guarantees month/day/year, South day/month/year for the files at issue. The same text, `03/04/2026`, accordingly yields March 4 or April 3. The intended practitioner can run a converter with a supplied order. The author can follow that reasoning but has not yet decided whether the public method should prescribe a table, a per-row card or prose alone.
+
+A first working note says: “Choose a standard date card; include source, raw value, order and converted value.” It proposes a form before establishing whether all four entries are independent user inputs or what their arrangement must let the reader do. Turning those words into a completed Decision would hide the open question.
+
+The author first constructs the raw/result expression and its unresolved cell shown in E.8:4.2.1.2. It keeps both possible results visible. Trying to select an output from the raw text alone fails. The supplier difference leads to the source-qualified comparison. This yields a more useful decision question: **which source-to-interpretation connection must the pattern explain, and which expression makes that connection usable without requiring unnecessary repeated entry?** The difference between required available content and manual entry is obtained from this operation; it is not a reason to drop the source information.
+
+The author now compares three concrete alternatives at the same practitioner preparation:
+
+| Alternative | What it supplies | What changes the decision |
+| --- | --- | --- |
+| Prose instruction and the current worked reasoning | The source-to-order selection and the mixed-order stop are already available. | It remains sufficient for a reader who can keep the small comparison in view; it does not prescribe a repeated record. |
+| A four-field card manually completed for every row | An addressable per-row account can travel separately. | Within one qualified session, copying the fixed order and derived result adds work; separated use may instead need the source and guarantee return. |
+| A source-qualified comparison in the explanation, with a use-relative working view | Both interpretations of the same raw text are inspectable together; the interpretation remains connected to its guarantee. | Its labels and context must remain recoverable if the table travels; a local single-source view may omit repeated displayed inputs only while the context actually supplies them. |
+
+The comparison does not demonstrate that every reader is faster with a table. It establishes different supported operations and context dependencies. The author selects the third alternative for the explanatory example, retains the first as a sufficient compact use, and rejects the universal manual-card requirement. The selected pattern account has to teach the conditions of reducing the view and restoring the missing context.
+
+A short decision account can now carry the useful result:
+
+- **Problem frame:** the existing conversion method is available, but authors lack the worked choice between explanatory comparison and a mandatory record for each conversion.
+- **Decision:** develop the expression-construction explanation in E.8:4.2.1.2, with the source-qualified comparison and a conditional reduced view. Preserve §4.2.1.1's source-to-order selection and honest stop. Do not prescribe a card for every row or change the converter's subject method.
+- **Rationale:** the different outputs for identical raw text require an interpretation supplied by the applicable source. A juxtaposed comparison teaches this relation. Re-entering a value already supplied by the session is a separate burden with no additional contribution to that local operation. Detached reuse changes that judgement.
+- **Consequences:** keep the guarantee's scope and source return beside the operation; restore row-level context for mixed or separated use. First draft the actual explanation and compared expressions at the named locus. Examine whether the intended reader can recover and apply the selection under the stated preparation. Do not claim observed learning, speed or universal usability from this construction.
+
+These paragraphs supply the bounded content decision; they are not answers copied into every inspection row. Its exact grounds are the existing E.8 explanation, the stipulated supplier guarantees and the performed comparison. The related conversion operation remains unchanged. No new date kind, source-independent interpretation or general record schema is selected. A changed supplier guarantee reopens the affected interpretation; an actual reader failure would reopen the explanation or its support.
+
+Now South changes to mixed orders without row-level information. The author can still settle the content decision to preserve the earlier results, represent the new unknown and stop that row's conversion pending a trustworthy interpretation. The missing date order does not prevent explaining that boundary. It does prevent selecting a particular converted date. If the proposed public method instead promised to convert every row without obtaining such information, the author would have to change that promise or stop the dependent decision.
+
+E.9's four components and inspection content remain stable aids for making the final selection recoverable. The provisional card is not preserved merely because it was the first form used. Its useful source-to-interpretation distinction survives in the selected account, while unnecessary per-row manual entries are removed. This exercises E.9 on its own use: working expressions help produce the question and selection; the decision record preserves the supported answer for its next author.
 
 ### E.9:6 - Bias-Annotation
 

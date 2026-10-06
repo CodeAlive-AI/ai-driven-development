@@ -72,6 +72,8 @@ The constrained subject is normally:
 
 Another subject is admissible only when its own pattern defines a named internal constraint and states why this result form applies. An E.18 locus label alone supplies neither the subject nor the constraint.
 
+When a fact needed to determine applicability is missing, state the unresolved question, the missing fact, and the rule that will decide it. Assign `applicabilityValue` and construct the result below once applicability is established.
+
 Minimum result content:
 
 ```text
@@ -100,13 +102,13 @@ The legacy label `FlowConstraintValidity` may be retained only as a locator for 
 
 #### A.20:4.2 - Applicability, required set, and summary
 
-Before evaluation, name the constraints applicable to the current subject and case. Mark each as `required`, `optional`, or `notApplicable` and state why. The required set is complete only when every constraint that the current use depends on is named.
+Before evaluation, name the constraints applicable to the current subject and case. Mark each as `required`, `optional`, or `notApplicable` and state why. The required set is complete only when every constraint that the current use depends on is named and no unresolved applicability question could change that set.
 
 For one evaluated applicable constraint:
 
 - `satisfied` means the test established the named constraint for the stated case and window;
 - `violated` means the test established a counterexample or failed condition;
-- `unknown` means required facts, applicability facts, or witness content could not be determined;
+- `unknown` means required case facts or witness content could not be determined after applicability was established; unresolved applicability remains the preliminary question in section 4.1;
 - `error` means the selected evaluation could not complete correctly.
 
 When a consumer needs one local summary over the complete required set, use:

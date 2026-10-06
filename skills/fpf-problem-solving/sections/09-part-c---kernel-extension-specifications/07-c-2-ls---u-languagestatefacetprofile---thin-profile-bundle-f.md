@@ -136,7 +136,7 @@ SysML v2 is deliberately excluded from the positive SoTA basis and from useful l
 A console alert note may be published with a language-state facet profile such as:
 
 - `F = F2/F3` because the note is structurally controlled but still lightweight;
-- `AE = AE2` because candidate anchors are visible but not yet fully relation-shaped;
+- `AE = AE2` because candidate anchors are visible but the direct semantic branch or its required structure remains partial;
 - `CD = CD1` because several routes remain live;
 - `LanguageStateAnchoringMode = AM.OperatorLoop` because the note is directly anchored to operator intervention/work;
 - `RepresentationFactorBundle = {local, sparse, mixed-symbolic}` because alert text and compact codes coexist.

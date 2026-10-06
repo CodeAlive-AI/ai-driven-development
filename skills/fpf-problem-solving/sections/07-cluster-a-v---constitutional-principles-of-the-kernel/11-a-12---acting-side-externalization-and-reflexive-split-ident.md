@@ -69,7 +69,7 @@ ActingSideExternalization@Context:
   changedSubjectRef: one exact continuing referent identified by the identity rule that defines that referent
   actingEntityRef: exact U.Entity proposed for the acting side
   actingSystemRef?: U.System, fill only after actingEntityRef satisfies the complete A.1 U.System criterion
-  a1RecognitionDispositionOrBlockerRef?: required while actingSystemRef is unfilled
+  a1RecognitionDispositionOrBlockerRef?: required when this account needs an A.1 recognition result and actingSystemRef is unfilled
   actingSystemRoleAssignmentRef?: U.RelationRef constrained to U.SystemRoleAssignment, only when one exact obtaining work-facing assignment is current
   actingSideParticipationRef?: one exact obtaining relation occurrence satisfying the predicate and participant meanings that define the participation, causal, or interaction claim
   transformationRef?: U.Transformation, fill only when A.3.4 identifies a bounded change of changedSubjectRef
@@ -84,7 +84,7 @@ ActingSideExternalization@Context:
 
 Identify `actingEntityRef` and `changedSubjectRef` as distinct participants in the claim. `changedSubjectRef` is a question-local position, not a U-kind or union ValueKind: its value retains its independently admitted kind and identity rule. A presentation carrier does not become a `U.Holon` by filling it. Fill `transformationRef` only when A.3.4 establishes a bounded change of that same continuing referent.
 
-Before calling the acting entity a `U.System`, apply the complete A.1 criterion. Until recognition is established, retain the entity and its `recognized | rejected | unknown` disposition or blocker, and leave `actingSystemRef` unfilled. Once recognized, that position names the same entity under `U.System`, not another actor. Tight coupling or membership in a larger holon does not merge the acting and changed positions.
+Before calling the acting entity a `U.System`, apply the complete A.1 criterion. When this account needs an A.1 recognition result and recognition is not established, retain the entity and its `recognized | rejected | unknown` disposition or blocker. Leave `actingSystemRef` unfilled until recognition is established; once recognized, that position names the same entity under `U.System`, not another actor. Tight coupling or membership in a larger holon does not merge the acting and changed positions.
 
 `ActingSideExternalization@Context` describes the relation frame; it does not define a U-kind or establish that a change occurred. Each neighboring claim has its own participants and defining or testing rule. Neither A.12 frame has a generic context, scope or qualifier position. Ask what the proposed qualifier changes:
 
@@ -248,7 +248,7 @@ The additional proposed claim is: "Lathe-3 transmits cutting force to Workpiece-
 
 | Check | Requirement |
 | --- | --- |
-| `CC-A12-1` | A self-action or passive change account names the proposed acting participant and changed subject separately. When the precise frame is used, it identifies one exact continuing `changedSubjectRef` by that referent’s identity rule and requires `actingEntityRef`; before A.1 recognition it keeps the exact disposition or blocker and leaves `actingSystemRef` unfilled, and after recognition that optional position identifies the same entity under `U.System`. A filled `transformationRef` identifies an A.3.4 bounded change of that same `changedSubjectRef`. `ReflexiveSplit@Context` carries only acting and changed part positions; a companion acting-side frame carries this recognition boundary when needed. |
+| `CC-A12-1` | A self-action or passive change account names the proposed acting participant and changed subject separately. When the precise frame is used, it identifies one exact continuing `changedSubjectRef` by that referent’s identity rule and requires `actingEntityRef`. Fill the optional `actingSystemRef` only after complete A.1 recognition; it identifies the same entity under `U.System`. When this account needs an A.1 recognition result and recognition is not established, keep the exact disposition or blocker. A filled `transformationRef` identifies an A.3.4 bounded change of that same `changedSubjectRef`. `ReflexiveSplit@Context` carries only acting and changed part positions; a companion acting-side frame carries this recognition boundary when needed. |
 | `CC-A12-2` | A Reflexive Split case identifies distinct exact entity parts or subsystems inside one containing holon, and each position has its independently obtaining direct part relation. Temporal phases keep their phase identity rules; assignments use A.2.1; parthood uses A.14 or the exact part-relation rule; descriptions use C.2.1; selected structures use A.22. None fills an A.12 part position merely by being nearby. |
 | `CC-A12-3` | A.12 does not create `U.Transformer`, `U.Boundary`, or `U.Interaction`. |
 | `CC-A12-4` | Bounded transformation claims require `A.3.4`; method and work claims require `A.15` and `A.15.1`. For an actual Work claim, establish each performer’s A.13 core before independent A.15.1 occurrence admission. The profile is conditional as stated in §4.1. |

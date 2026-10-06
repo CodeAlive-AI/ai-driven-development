@@ -86,7 +86,7 @@ The governed-value ref and kind ref are both present or both absent. `BlockedOve
 After `E.10` selects this pattern, use these cue groups to find the appropriate recovery branch while an action-changing ambiguity remains:
 
 - `move`, `step`, `action`, `application`, `solution`, and `next action`;
-- `readiness`, `ready`, `full kit`, `work entry`, `committed`, and `launch-ready`;
+- `readiness`, `ready`, `full kit`, `work entry`, and `launch-ready`; `commit`, `committed`, `commit checkpoint`, or `commitTrigger` when they hide a route-adoption or work-entry transition;
 - `movement`, `direction`, or `shift` used for an expected evaluation-result change;
 - `route`, `workflow`, `process`, `path`, `trajectory`, `loop`, or `flow` used for an unresolved claim about a path, ordering, or what it represents; use the direct exits below;
 - imported source wording such as TameFlow `MOVE`.

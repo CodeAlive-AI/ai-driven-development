@@ -61,6 +61,8 @@ For example, a design review has two alternatives: accept the design or repair i
 
 That corrected card is already useful. It keeps both potential alternatives visible and refuses to invent the missing relation. Continue only if a named later use needs formal structure identity or replayable results.
 
+When retaining or handing over this card separately, include the two rules above or a usable return to them so the recipient can reconsider availability after the facts change.
+
 ##### A.22.CGUS:4.1.1 - Conditions through constituent and encompassing work
 
 When a continuation is a way of performing work, recover the constituent–whole relations in the relevant Method and Work structures that can change availability. Ask what constituent actions must be performable and what encompassing work is being done through them. B.1.5.EW supplies that recovery; knowing a Method's description does not supply the capability or resources to perform it.

@@ -70,7 +70,7 @@ When a downstream reader asks whether intended Work can enter a work boundary, t
 
 The Solution turns observed signal material into one C.2.1 episteme and one governed next use, not a completed form.
 
-1. Capture the symptom, anomaly, risk, stakeholder cue, drift, hypothesis, or other observed signal before naming an actual Problem.
+1. Capture the symptom, anomaly, risk, stakeholder cue, drift, hypothesis, or other observed signal before naming an actual Problem. If the concern is not yet clear, put available source entries side by side and compare the events or meanings they record. Use what this comparison reveals to develop the question, as in [the support example](#c222-support-source-comparison).
 2. Recover the one joint EntityOfConcern, effective ReferenceScheme, ClaimScope, and claim family. If the claims concern unrelated entities, split the ClaimGraph and card.
 3. Separate the signal detector, actual-PFR assertion if independently grounded, anticipated-condition claim, improvement check, candidate acceptance criterion, method-availability claim, monitored risk signal, and proxy-distortion risk. These are not one card status or one PFR participant set.
 4. Pay only for current complexity. Add conditional content only when it changes the current next use; otherwise stop at the lighter card or name the direct pattern for the claim now current.
@@ -275,7 +275,7 @@ Source record names are recovered by use, not by label shape. This section preve
 | Evidence pack, provenance note, assurance row, gate log, autonomy budget, runbook, rollback plan, method selection, work plan, performed-work note, result record, or result measurement | Preserve only the problem-side cue, risk or validation boundary, source reference, and stop condition before that use. | `A.10`, `G.6`, `B.3`, `A.21`, `E.16`, `G.5`, `A.15`, `C.16`, or `G.11` according to the claim named by value. |
 | Candidate solution, described system, ordinary log, budget, ledger, protocol, plan, pack, or factory wording | Recover the use under repair: problem-side source material, problem-side source relation, selected-set material, work, evidence, gate, or autonomy material, or ordinary example. | Apply the subject pattern for the recovered relation; do not mint a local `C.22.2` kind from the label. |
 
-The repair rule is short: if the source material supplies problem-side material, copy the material into the card's current fields. If it supplies another FPF-governed claim, keep only the local cue and apply the pattern that defines or constrains that claim.
+If the source supplies problem-side material, make the needed content available in the card, directly or through an accessible return to the exact source content. The receiving reader must be able to interpret what that return supplies; when the card travels without access to the source, include the content and interpretation needed for its next use. If the source supplies another FPF-governed claim, keep only the local cue and apply the pattern that defines or constrains that claim.
 
 ### C.22.2:8 - Portfolio, Archive, and Set-Return Treatment
 
@@ -524,9 +524,14 @@ These rows are recognition slices, not complete Thin cards. Before using one, co
 | Literature-synthesis anomaly before method selection | An anomaly does not fit current category labels. | Preserve rival formulation, EntityOfConcern, evidence need, bridge, representation, or mathematical-lens relation when that relation is being made, and next discrimination action. | The anomaly is not proof for a new theory or a selected research method. |
 | Selected-set candidate before P2W | A retained candidate from a front or pool looks promising. | Preserve `sourceSetRef`, source-set kind, selection or retention criterion, non-scalar next use, and only the currentness or window on which that use relies. | Set membership is not selected-solution proof, priority score, or work authorization. |
 
+<a id="c222-support-source-comparison"></a>
+
 #### C.22.2:20.1a - Compact P2W-ready Disposition Slice
 
 A support team sees repeated failed hand-offs after a new interface policy. The incoming request says "rewrite the escalation workflow." A conforming `ProblemCard` first repairs the problem-side record instead of accepting the work-shaped request.
+
+The first-line entry uses "complete" for sending the case; the specialist entry uses it for accepting the case. Put those two meanings together: the same status names different events. This comparison supplies the question "Which event completes the hand-off?" and identifies the ambiguity retained below. It does not establish the cause of reopening. If both entries instead mean acceptance, this contrast no longer supports an ambiguity claim; retain the reopening signal and reopen the formulation.
+
 
 | Card field | Filled value |
 |---|---|

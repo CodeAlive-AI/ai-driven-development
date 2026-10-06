@@ -130,7 +130,7 @@ Classification or assignment alone never completes the implication. The rule sta
 
 #### A.2.8:4.5 - Assertion, Record, and Adjudication
 
-An assertion or record about a commitment is a separately identified claim-bearing episteme. A compact reliance record can expose:
+An assertion or record about a commitment is a separately identified claim-bearing episteme. For an independently identified actual `U.Commitment` occurrence, a compact occurrence-description record can expose:
 
 ```text
 CommitmentAssertion:
@@ -146,8 +146,11 @@ CommitmentAssertion:
   institutingBasisRef: exact actual basis required by that rule
   evidenceClaimRefs?: exact support used for reliance or adjudication
   carrierRefs?: carriers used as evidence or source
-  assertionStatus: affirmed | denied | unresolved
+  assertionPolarity: affirmative | negative
+  relianceResultRef?: exact separately governed evaluation or evidence-use result, when the receiving use needs it
 ```
+
+Before a commitment occurrence has been independently identified, express whether the commitment obtains as an ordinary C.2.1 assertion with an independently identified EntityOfConcern. Designate the relation kind and its participants in the claim content, and retain the failed or unknown obtaining condition. Do not invent a commitment occurrence or actual instituting-basis reference. Keep assertion polarity separate from the reliance judgement; unavailable evidence alone establishes no negation.
 
 Use the record to describe the relation. `evidenceClaimRefs` and carriers support reliance; they are not participants or instituting facts unless the identified constitutive rule makes one such fact current and the pattern for that subject supplies its test. If adjudication is intended, cite the exact evidence claims, criteria, and carriers. If no adjudication is claimed, do not invent an audit apparatus.
 
@@ -273,7 +276,7 @@ policy mentions one system-role kind
 | `CC-A2.8-6` | The occurrence identity and continuity decision distinguish changed bearers, content, rules, and interrupted intervals, and treat a changed instituting basis as identity-bearing exactly when the constitutive rule says so. |
 | `CC-A2.8-7` | System-role kind, classification, assignment, policy, publication, assertion, and evidence are not commitment participants or duty bearers by form. |
 | `CC-A2.8-8` | Responsibility, permission, authority, access, Work, result, and compliance are separately asserted or left unresolved. |
-| `CC-A2.8-9` | A reliance or audit record names its exact `U.Commitment` EntityOfConcern and does not claim to create it. |
+| `CC-A2.8-9` | An occurrence-description reliance or audit record names its exact `U.Commitment` EntityOfConcern and does not claim to create it. |
 | `CC-A2.8-10` | A missing constitutive rule or instituting-relation governor returns `missing-governor[individual commitment institution]`. Unavailable required evidence leaves reliance `unknown`; demonstrated failure of an obtaining condition yields non-obtaining. Do not complete a placeholder relation. |
 
 ### A.2.8:9 - Common Anti-Patterns and How to Avoid Them

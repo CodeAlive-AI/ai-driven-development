@@ -6,11 +6,11 @@
 
 ### A.6.3.RT.OE:1 - Problem frame
 
-Use this pattern when the available content and notation do not yet give the practitioner an expression with which to perform the needed operation. A diagram contains the right objects but obscures their shared parts. An instruction groups alternatives differently from the work it should guide. A rhythmic phrase has known durations but its entry against a recurring cycle is hard to follow.
+Use this pattern when the available content and notation do not yet give the practitioner an expression with which to perform the needed operation. A diagram contains the right objects but obscures their shared parts. An instruction groups alternatives differently from the work it should guide. A rhythmic phrase has known durations but its entry against a recurring cycle is hard to follow. Two reports may suggest a difficulty before the practitioner has obtained the distinction or question needed to investigate it.
 
 An **operative expression** is an expression prepared for a specified use: calculating, comparing, inferring, constructing or coordinating an action. Its signs can be written, drawn, spoken or gestural. The selected notation supplies their formation and interpretation rules; the subject Method supplies the operation to perform.
 
-**First useful move.** Name one operation that should become possible, then identify the parts of the content that must be examined together for that operation. To compare the sides of a constructed triangle, keep each segment recognizable both as a triangle side and as a radius of the circle used to construct it.
+**First useful move.** Select one attainable operation, even provisionally, then identify the parts of the content that must be examined together. When the final question is unknown, compare two available cases or separate their observed events; use what this attempt reveals to develop that question. To compare the sides of a constructed triangle, keep each segment recognizable both as a triangle side and as a radius of the circle used to construct it.
 
 The result is a usable expression and the interpretation needed for its next use. A representation change can also need A.6.3.RT's comparison with the source. Any new subject result obtained while using the expression has its own construction or argument.
 
@@ -51,6 +51,18 @@ Recover the givens, constraints, unknowns and partial construction used by that 
 
 Use the subject Method to recover an absent operation or premise. B.5.RC and B.5.RA can help recover a construction or argument. An expression can expose the missing contribution and provide a useful stopping point.
 
+##### A.6.3.RT.OE:4.1.1 - Let a partial expression help obtain the question
+
+Sometimes the available material reveals a difficulty before it supplies a definite question. Start with an attainable operation on that material: place two reports together, arrange events by their stated times, separate an observation from its interpretation, or compare a proposed outcome with what is actually available. State what this attempt could distinguish. A provisional operation can be selected without pretending that the final inquiry is settled.
+
+Try the operation and inspect what its expression lets you see. An unanswered position can expose a missing observation. Two incompatible interpretations can reveal a conflated question. A row that cannot accommodate a second attempt can reveal that the chosen unit was too coarse. Change the arrangement when the available material warrants that change; obtain a missing contribution when rearrangement cannot supply it.
+
+Give the discovered distinction a meaning in the subject work. If "duration" covers receipt-to-result time in one report and equipment occupation in another, separate their endpoints before calculating a difference. The new labels become useful through those definitions and the observed events. A visually convincing pattern alone does not supply a causal explanation.
+
+Use the result to continue, revise the question or stop at the missing basis. B.5.QD and C.40.CD develop the next question when the expression's result changes what must be obtained. Preserve the earlier material that still has a supported interpretation. Replacing the first question does not require rewriting observations to fit the new one.
+
+The construction can stop with a useful distinction or an explicit question. Before a later operation consumes its unresolved part as a fact, supply the missing premise or withhold that dependent result.
+
 #### A.6.3.RT.OE:4.2 - Give recurring parts a stable interpretation
 
 Identify which elements must remain recognizable across the expression. Use the selected scheme's names, positions, types, units, binding rules or temporal references to keep them connected.
@@ -60,6 +72,14 @@ When one part belongs to different groupings, retain its identity through the ch
 When similar marks denote different parts, distinguish them before combining their relations. For a formula with a bound variable and a free variable, preserve the binding scopes when renaming. For a repeated rhythmic sign, its position can distinguish occurrences even when the syllable is unchanged.
 
 Use the amount of labeling the operation needs. Reuse familiar conventions; explain a local convention at its first consequential use.
+
+A table also needs an interpretation for its rows and columns. A row may represent a case or relation with several participants, rather than one object. A column can ask for an object, quantity, condition or judgement. Explain what its entries denote and which combinations are meaningful before relying on alignment.
+
+For example, suppose a local `BenchKind` admits physical test benches already identified as `U.System` individuals. A column headed "Bench" asks which of those benches a job used. The entry `B7` designates a particular bench; it is not the name of the domain kind. `BenchKind` is a classification distinction, hence an individual of `U.Kind` under C.3.1, while B7 is classified by that distinction. These upper-kind, domain-kind and particular-object claims answer different questions. A table of kinds could instead contain `BenchKind` itself; it would need a different column interpretation.
+
+Use those distinctions to catch an actual mismatch. Placing `BenchKind` in the job's Bench position would name a classifying distinction when the operation needs the used bench. Placing a duration there supplies a different kind of value. A "30" in an occupation-duration column still needs its unit and interval meaning. Domain membership and the relation to this job require their own grounds; a heading or a successful spreadsheet entry does not establish them.
+
+Retain such annotations where the distinction changes inference, comparison or transfer. Familiar domain wording can be enough for an experienced reader. A computational validator can enforce the declared checks only when its implemented rules match this interpretation.
 
 #### A.6.3.RT.OE:4.3 - Arrange the parts around the needed relation
 
@@ -174,6 +194,41 @@ The duration labels retain the whole phrase. These additional cues expose the po
 
 This case adapts Nelson's exercise 7. Reuse the pulse alignment when phrase and cycle change tempo together. Recompute it when a syllable duration in pulses, the cycle's pulse division or the phrase's entry relative to the cycle changes. A particular performer's fluency remains a question for actual performance.
 
+#### A.6.3.RT.OE:5.4 - Discover which duration an investigation needs
+
+A practitioner receives two reports: job Q41 took 55 minutes, whereas Q42 took 30. The present difficulty is an apparent slowdown. The available messages name receipt and usable-result times; a bench log names occupation intervals. The final explanation is unknown.
+
+Start by placing the reported durations together:
+
+| Job | Reported duration |
+| --- | ---: |
+| Q41 | 55 minutes |
+| Q42 | 30 minutes |
+
+This expression makes a numerical comparison easy but does not establish what the durations measure. Return to the messages and log. They supply the events below:
+
+| Job | Received | Bench occupied | Usable result available |
+| --- | --- | --- | --- |
+| Q41 | 09:05 | 09:30–10:00 | 10:00 |
+| Q42 | 11:00 | 11:00–11:30 | 11:30 |
+
+A row identifies one job; the occupation entry is an interval for that job. All times use the same day's clock and time basis. Aligning those events permits two different calculations. Q41 has 55 minutes from receipt to result, comprising 25 minutes before bench occupation and 30 minutes of occupation. Q42 has 30 minutes to its result and 30 minutes of occupation. The two jobs differ in the former duration but not the latter.
+
+The useful question changes: what accounts for Q41's pre-occupation interval, and is that interval consequential for the receiving work? The observations do not establish its cause. Buying a faster bench would be an unsupported remedy on this evidence. The expression has produced a useful distinction before supplying an explanation.
+
+Now Q43 is received at 13:00. Its first occupation, 13:00–13:30, produces an unusable result; its second, 13:50–14:20, produces the usable result. A single occupation interval per job would lose this construction. Retain one job with its two attempts:
+
+| Job and attempt | Bench occupied | Attempt outcome |
+| --- | --- | --- |
+| Q43, first attempt | 13:00–13:30 | Unusable result |
+| Q43, second attempt | 13:50–14:20 | Usable result |
+
+The row now identifies an attempt of a job. Receipt and usable-result events remain associated with Q43 as a whole. Time to the usable result is 80 minutes; total bench occupation is 60; the interval between attempts is 20. The unsuccessful first attempt counts toward occupation even though it did not supply the required result.
+
+The representation changed because the subject history required another distinction. Q41/Q42's earlier observations and calculations remain valid. The practitioner can now ask about repetition, the gap between attempts or the receiving deadline; the corresponding subject inquiry supplies the needed causal or decision grounds.
+
+These small tables are worked expressions for comparing the cases. If the log already provides the interpreted events and calculation, its existing view can be sufficient. A later transfer that separates a row from its job needs the return that recovers that relation. Retain the distinction in B.5.WN when it should support a future line of thought; ending the local investigation does not require a permanent note collection.
+
 ### A.6.3.RT.OE:6 - Bias-Annotation
 
 Under E.3's five Principle-Taxonomy lenses (Gov, Arch, Epist, Prag and Did), this pattern concerns expression construction for a stated operation under available conventions. It assumes that subject operations and notation rules can be obtained. It does not supply the full practice of notation invention, mathematical proof, composition or instruction.
@@ -231,6 +286,8 @@ Choose those additional cues when locating that relation is the current difficul
 
 **Vocal and gestural construction.** David P. Nelson, *Solkattu Manual: An Introduction to the Rhythmic Language of South Indian Music* (2008), printed pp. 17 and 19, supplies the notation comparison above and exercise 7's duration assignments, continuing hand cycle and six-pulse preparation. **Adapt** their coordination in :5.3; the added boundary cues are derived from those durations. The rhythmic Method and learned conventions supply the subject operation. The source's teaching advice and the constructed alignment give bounded support for this use; performance remains subject to its actual execution.
 
+**Exploratory expressions.** The two-column duration comparison in :5.4 preserves the reported numbers but leaves their meanings unresolved. The event table adds source-supported endpoints and permits the waiting/occupation distinction. Its fixed row convention then fails for Q43, whose two attempts require a different unit. Retain useful constraints while revising the one that excludes the relevant history. David Kirsh's [analysis of external representations in problem solving](https://link.springer.com/article/10.1007/s00146-010-0272-8) supports making operations possible through external arrangements; Shipman and Marshall's [analysis of premature formality](https://people.engr.tamu.edu/shipman/formality-paper/harmful.html) supports allowing structure to develop with the work. These are conceptual and historical grounds for the construction, not comparative efficacy evidence for the particular tables. The sufficient existing log remains the lower-burden alternative when it already supports the same operation.
+
 These are conceptual and practice-specific sources for the chosen construction, with the common sequence developed by synthesis. Reopen the choice when an available expression supports the same operation with less preparation, a local repair fails because notation rules are inadequate, or use reveals a consequential relation that the current expression hides.
 
 ### A.6.3.RT.OE:12 - Relations
@@ -239,6 +296,8 @@ These are conceptual and practice-specific sources for the chosen construction, 
 - **E.5.2** governs recoverable interpretation and portable conceptual meaning.
 - **B.5.RC and B.5.RA** recover a missing construction or argument.
 - **B.5.RR** carries a changed premise through the dependent reasoning.
+- **B.5.QD and C.40.CD** develop the next question when a result changes the inquiry; **B.5.WN** carries a thought through notes and later occasions when that continuation is needed.
+- **C.3.1** supplies the distinction between a domain kind, its individuals and the upper-kind claims used in a typed expression.
 - **C.37** selects representations that jointly support a working use.
 - **C.2.8** characterizes structure recoverable by a specified recipient under stated conditions.
 - **A.6.0 and A.6.1** describe reusable scheme vocabulary, rules or operations when those declarations are needed.

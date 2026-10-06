@@ -5,7 +5,7 @@
 
 - [A.7 - Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice)](01-a-7---strict-distinction-repair-conflations-of-fpf-objects.md) (366 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before checking...
 - [A.7.1 - Consequence-Guided Ontological Problem Solving](02-a-7-1---consequence-guided-ontological-problem-solving.md) (161 lines) — Type: Architectural (A)
-- [A.7.2 - FPF Ontology-Premise Reconciliation](03-a-7-2---fpf-ontology-premise-reconciliation.md) (212 lines) — Type: Architectural (A)
+- [A.7.2 - FPF Ontology-Premise Reconciliation](03-a-7-2---fpf-ontology-premise-reconciliation.md) (214 lines) — Type: Architectural (A)
 - [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use](04-a-7-cp---constructive-premise-compact-and-reasoning-basis-us.md) (195 lines) — Type: Architectural (A)
 - [A.8 - Universal Core Principle: Test a U-Kind Across Domains](05-a-8---universal-core-principle-test-a-u-kind-across-domains.md) (140 lines) — Type: Kernel admission discipline pattern
 - [A.9 - Choose and Check an Aggregation Law for the Intended Result](06-a-9---choose-and-check-an-aggregation-law-for-the-intended-r.md) (125 lines) — Use this when a receiving decision needs a combined result, but the law that gives the proposed operation its meaning or preserves a needed property is unresolved. The same input values can support...
@@ -31,7 +31,7 @@
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](26-a-15-prod---production-work-entity-identity-inception-and-pr.md) (513 lines) — Type: Architectural (A)
 - [A.16 - Language-State Moves: Choose the Next Publication and Use of a Cue or Claim](27-a-16---language-state-moves-choose-the-next-publication-and.md) (239 lines) — Type: Architectural (A)
 - [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable](28-a-16-0---keep-an-episteme-s-language-state-and-publication-h.md) (302 lines) — Type: Architectural (A)
-- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use](29-a-16-1---prearticulationcuepack-preserve-an-early-cue-before.md) (295 lines) — Type: Definitional (D)
+- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use](29-a-16-1---prearticulationcuepack-preserve-an-early-cue-before.md) (297 lines) — Type: Definitional (D)
 - [A.16.2 - Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication](30-a-16-2---reopen-sketchbackoff-respecify-or-retire-a-language.md) (225 lines) — Type: Architectural (A)
 - [A.17 - Canonical “Characteristic” (A.CHR-NORM): Name What Is Measured](31-a-17---canonical-characteristic-name-what-is-measured.md) (138 lines) — To have reproducibility and explainability there is a need to measure various aspects of systems or knowledge epistemes or publications. A dedicated measurement backbone (see C.MM‑CHR, Measurement &...
 - [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](32-a-18---minimal-cslc-in-kernel.md) (160 lines) — Aliases (for narrative use only): _“Axis”_ (≈ Characteristic), _“Point”_ (≈ Coordinate). _(These colloquial aliases may be used in Plain language explanations, but never in formal identifiers or...
@@ -48,7 +48,7 @@
 - [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](43-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (301 lines) — Type: Architectural (A)
 - [A.19.CPM - Compare Admitted Profiles under a Declared Comparator (CPM)](44-a-19-cpm---compare-admitted-profiles-under-a-declared-compar.md) (391 lines) — Type: Architectural (A)
 - [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](45-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (433 lines) — Type: Architectural (A)
-- [A.20 - Constraint Validity for Transformation Steps](46-a-20---constraint-validity-for-transformation-steps.md) (253 lines) — Type: Architectural (A)
+- [A.20 - Constraint Validity for Transformation Steps](46-a-20---constraint-validity-for-transformation-steps.md) (255 lines) — Type: Architectural (A)
 - [A.21 - Gate Decisions from Independent Check Results](47-a-21---gate-decisions-from-independent-check-results.md) (296 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](48-a-22---structure-and-structural-views.md) (507 lines) — Type: Architectural pattern
-- [A.22.CGUS - Which Continuations Are Available? — Constraint-Governed Unfolding Structure (CGUS)](49-a-22-cgus---which-continuations-are-available-constraint-gov.md) (364 lines) — Type: A.22 specialization of U.Structure
+- [A.22.CGUS - Which Continuations Are Available? — Constraint-Governed Unfolding Structure (CGUS)](49-a-22-cgus---which-continuations-are-available-constraint-gov.md) (366 lines) — Type: A.22 specialization of U.Structure

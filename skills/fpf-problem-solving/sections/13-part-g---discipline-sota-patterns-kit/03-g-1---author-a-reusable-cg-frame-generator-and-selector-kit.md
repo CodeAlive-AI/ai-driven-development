@@ -95,7 +95,7 @@ GCoreLinkageManifest := ⟨
     // RSCR regression tests used by the chassis (if any).
     RSCRTestId[]?,
 
-    // When a planned baseline is used: identify the WorkPlan and its local filling-row designators.
+    // For a planned baseline, identify the A.15.2 WorkPlan and local locator; add declaration ref, member designator and plan-local filling-row locator when A.15.3 applies.
     WorkPlanRef[]?
   },
 
@@ -207,7 +207,7 @@ M4 MUST preserve *set‑return semantics* (as governed by `G.Core`) and MUST NOT
 * `RefreshReadinessCardId` bound to `CGFrameLibraryId` (and thus to `CG‑FrameContext`)
 * `CGKitId` (the versioned kit manifest) binding `M1…M6` into a single reusable unit; it MUST enumerate the card ids and MAY carry references to deprecations/edition bumps minted by the canonical governing definitions
 * declared telemetry hooks (what signals are observed, with what pins)
-* declared RSCR wiring: which `RSCRTriggerKindId` are relevant (canonical ids), with minimal required payload pins (including WorkPlan refs and their local planned-filling row designators when the chassis is bound into WorkPlanning)
+* declared RSCR wiring: which `RSCRTriggerKindId` are relevant (canonical ids), with minimal required payload pins. For a planned baseline, include the `A.15.2` WorkPlan reference and its local baseline locator; filling an independently declared position under `A.15.3` also requires the governing declaration reference, member designator and plan-local filling-row locator.
 
 **Boundary:** orchestration semantics are governed by `G.11`.
 M6 prepares *refresh‑readiness metadata* and wiring stubs; it does not define scheduling/priority heuristics.
@@ -377,7 +377,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * `CHRPackId?`, `CALPackId?`, `SoS‑LOGBundleId?`, `ParityReportId?` *(as present in the library index)*
 * `EvidenceGraphId?`, `BridgeMatrixId?`, `BridgeCalibrationTableId?` *(when cited by the shipped artefacts)*
 * `UTSRowId[]?` *(when any public ids are minted/published)*
-* `WorkPlanRef[]?` with local planned-filling row designators *(when a planned baseline is cited by the shipment surface)*
+* `WorkPlanRef[]?` with local baseline locators *(when a planned baseline is cited by the shipment surface under `A.15.2`)*; include the governing declaration reference, member designator and plan-local filling-row locator when `A.15.3` applies
 
 **Notes (wiring‑only):** this block does not define shipping; it only records the minimum wiring from the chassis/library index to `G.10` when shipping is performed.
 
@@ -421,7 +421,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 | CC‑G1‑04          | `M3` MUST record emitter provenance as a wiring surface, including `EmitterPolicyRef` (policy‑id/ref), edition pins, and provenance anchors (via `A.10`). Any method‑specific fields MUST be introduced only via `GPatternExtension` blocks.   |
 | CC‑G1‑05          | `M4` MUST be wired to `G.5` (or explicitly cite `G.5` artefacts governed by cited patterns) and MUST preserve set-result outcomes. `SCRId` MUST be present (or recoverable from an explicitly cited SCR record) so the G.5 audit references are addressable; assurance content is required only for an actual named assurance claim; `DRRId` SHOULD be present when a decision‑rationale artefact is minted.   |
 | CC‑G1‑06          | `M5` MUST publish a library/index surface that points to referenced CHR/CAL/LOG artefacts and to any minted public ids (`UTSRowId[]`, Name Cards) via the canonical governing definitions (Part F), without introducing shadow specs (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`).    |
-| CC‑G1‑07          | `M6` MUST publish `CGKitId` and expose refresh‑readiness wiring: canonical `RSCRTriggerKindId[]` applicability + minimal payload pins (including WorkPlan refs and their local planned-filling row designators when applicable) and RSCR test ids; orchestration semantics MUST be cited to `G.11`.  |
+| CC‑G1‑07          | `M6` MUST publish `CGKitId` and expose refresh-readiness wiring: canonical `RSCRTriggerKindId[]` applicability, minimal payload pins and RSCR test ids. Planned baseline references MUST follow `G.1:4.2.6`, including the additional references required when `A.15.3` applies; orchestration semantics MUST be cited to `G.11`. |
 | CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId` (or `governing pattern not yet selected` only for Phase-3 seeds). If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
 
 ### G.1:8 - Common Anti‑Patterns and How to Avoid Them (informative)
@@ -468,7 +468,7 @@ This chassis is designed to stay compatible with modern (post‑2015) practice w
 ### G.1:12 - Relations
 
 **Builds on:** `G.Core`, `E.8`, `E.10`, `E.19`.
-**Uses:** `A.10 (Provenance Anchors)`, `A.15.3 (SlotFillingsPlanItem)`, `A.19.CN (CN‑Spec)`, `G.0 (CG‑Spec)`, `G.2 (SoTA Synthesis Pack)`, `G.3 (CHR Pack@CG‑Frame)`, `G.4 (CAL Pack@CG‑Frame)`, `G.5 (Selector & Dispatch)`, `G.10 (Shipping)`, `G.11 (Refresh Orchestration)`, and (via Extensions) `C.17, C.18, and C.19`.
+**Uses:** `A.10 (Provenance Anchors)`, `A.15.2` (WorkPlan baselines), `A.15.3` (planned fillings of independently declared positions), `A.19.CN (CN‑Spec)`, `G.0 (CG‑Spec)`, `G.2 (SoTA Synthesis Pack)`, `G.3 (CHR Pack@CG‑Frame)`, `G.4 (CAL Pack@CG‑Frame)`, `G.5 (Selector & Dispatch)`, `G.10 (Shipping)`, `G.11 (Refresh Orchestration)`, and (via Extensions) `C.17, C.18, and C.19`.
 **Publishes to / consumes from:** Part‑F publication surfaces (UTS, naming, RSCR tests, Role/Concept artefacts) as cited by their governing definitions.
 
 ### G.1:End

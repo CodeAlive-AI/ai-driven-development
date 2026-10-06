@@ -22,9 +22,9 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](17-e-5-4---cross-disciplinary-bias-audit.md) (84 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the FPF Specification](18-e-6---didactic-architecture-of-the-fpf-specification.md) (81 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases](19-e-7---archetypal-grounding-explain-rules-of-fpf-architectura.md) (77 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (762 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (808 lines) — Type: Architectural (A)
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](21-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
-- [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](22-e-9---design-rationale-record-for-fpf-content-decisions.md) (359 lines) — Type: Governance and authoring pattern
+- [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](22-e-9---design-rationale-record-for-fpf-content-decisions.md) (404 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](23-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (444 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
 - [E.10 - Unified Lexical Rules for FPF](24-e-10---unified-lexical-rules-for-fpf.md) (1631 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](25-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
@@ -41,7 +41,7 @@
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](36-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (338 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PFP - Framework Publication Form Profile for Markdown](37-e-11-pfp---framework-publication-form-profile-for-markdown.md) (219 lines) — Type: Specialization of E.11
 - [<FrameworkCode>.Preface:<n> - <Title>](38-frameworkcode-preface-n---title.md) (133 lines) — For example, ## STR.Preface:1 - Problem frame - Direction and commitment under changing conditions identifies the first section of the Strategy Preface. ### ME.Preface:7.3 - Production...
-- [E.11.DSG - DPF Suite Reference](39-e-11-dsg---dpf-suite-reference.md) (214 lines) — Type: Specialization of E.11 (E)
+- [E.11.DSG - DPF Suite Reference](39-e-11-dsg---dpf-suite-reference.md) (223 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](40-e-12---didactic-primacy-cognitive-ergonomics.md) (115 lines) — Use this pattern in either of two working situations:
 - [E.13 - Pragmatic Utility and Proxy-to-Value Alignment](41-e-13---pragmatic-utility-and-proxy-to-value-alignment.md) (195 lines) — Type: Part E FPF evaluation and repair pattern
 - [E.14 - Human-Centric Working-Model: Readable Claims and Recoverable Assurance](42-e-14---human-centric-working-model-readable-claims-and-recov.md) (354 lines) — Use this pattern when FPF text needs to stay readable as one human working model while heavier mapping, logical, constructive, or empirical assurance remains recoverable underneath it.
@@ -66,7 +66,7 @@
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](61-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (607 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](62-e-22---improvement-oriented-quality-evaluation-question-fram.md) (416 lines) — Use E.22 when a request such as “review this” leaves it unclear what the recipient needs to learn about an object version. A floor check, a search for further improvement and a check of applied...
 - [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (466 lines) — Type: Method-description pattern
-- [E.23.CDI - Developing Capability for a Named Work Family](64-e-23-cdi---developing-capability-for-a-named-work-family.md) (180 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod
+- [E.23.CDI - Developing Capability for a Named Work Family](64-e-23-cdi---developing-capability-for-a-named-work-family.md) (211 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod
 - [E.23.CAE - Capability Access and Expression Differential Probe](65-e-23-cae---capability-access-and-expression-differential-pro.md) (276 lines) — Tech-name: CapabilityAccessAndExpressionDifferentialProbeMethod
 - [E.24 - U.Ontic and Ontic Introduction Discipline](66-e-24---u-ontic-and-ontic-introduction-discipline.md) (710 lines) — Type: Part E FPF authoring discipline pattern
 - [E.24.CD - Ontic Candidate Detection and First-Use Disposition](67-e-24-cd---ontic-candidate-detection-and-first-use-dispositio.md) (324 lines) — Type: Part E FPF authoring discipline pattern
