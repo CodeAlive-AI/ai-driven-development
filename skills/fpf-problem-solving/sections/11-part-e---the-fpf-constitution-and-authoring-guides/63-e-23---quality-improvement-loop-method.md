@@ -352,7 +352,7 @@ Actual machining and assembly produce Prototype-4 through separately identified 
 
 This pattern biases FPF toward adaptive improvement with explicit re-evaluation. The bias is useful because many real objects improve only through feedback and revision.
 
-The bias is bounded. One direct evaluation can close without a loop. Repetition is justified only by a scale-qualified `ExpectedEvaluationResultChange@Context` and acceptable cost and risk.
+The bias is bounded. One direct evaluation can close without a loop. Repetition is justified only by a scale-qualified predicted evaluation-result change and acceptable cost and risk.
 
 **Scope: limited.** The pattern covers repeated improvement of one declared object version under one rerunnable evaluation. It is not a universal account of change, learning, capability development, cultural evolution, publication, release, or project authorization; use the subject pattern for those claims.
 
@@ -392,9 +392,9 @@ The bias is bounded. One direct evaluation can close without a loop. Repetition 
 |---|---|
 | **Checklist closed, quality improved.** Discharge count replaces re-evaluation. | Re-evaluate the changed object and apply `CC-E23-4` when dated Work is asserted. |
 | **Loop result without evaluation form.** The loop says the object improved but retains no evidence in the declared evaluation form. | Restore that result form and evidence basis, then apply `CC-E23-4` to any dated Work claim. |
-| **Agentic retry as method law.** Repetition continues without a scale-qualified predicted evaluation-result change. | Add `ExpectedEvaluationResultChange@Context`, cost and risk, trade-offs, and a stop or switch condition. |
+| **Agentic retry as method law.** Repetition continues without a scale-qualified predicted evaluation-result change. | State a scale-qualified predicted evaluation-result change, cost and risk, trade-offs, and a stop or switch condition. |
 | **Operation-family creep.** Verification, memory, supervision, or search is added everywhere. | Keep only operations that can change the evaluation result enough to justify cost. |
-| **Goodharted pass.** Visible values rise while protected qualities worsen, or a non-`5` value is treated as a defect to be fixed by more apparatus. | Use trade-off inspection; apply `E.13` when the visible value is replacing the intended value; reject, delete, split, relocate, or hold dominated changes; continue searching for substantive content improvement when the improvement aim is still open; record `stay at current value` only when the `LoopEvaluationEvidenceBasis@Context` shows that no non-dominated content improvement remains. |
+| **Goodharted pass.** Visible values rise while protected qualities worsen, or a non-`5` value is treated as a defect to be fixed by more apparatus. | Use trade-off inspection; apply `E.13` when the visible value is replacing the intended value; reject, delete, split, relocate, or hold dominated changes; continue searching for substantive content improvement when the improvement aim is still open; record `stay at current value` only when the checked evaluation evidence basis shows that no non-dominated content improvement remains. |
 | **Lexical substitution closure.** A trigger word disappears, but the replacement narrows, widens, or changes the object kind; for example a graph-shaped method or workflow cue becomes a work sequence without a selected ontology decision. | Reopen the row, recover the pre-repair and post-repair kind through `E.10`, `F.19`, `F.18`, or the subject pattern, and leave the repair blocking if the kind cannot be preserved or explicitly changed by accepted decision. |
 | **Maturity-ceiling stop.** All-`5` is treated as an automatic stop or permanent end of development. | Apply the gain, protected-quality and cost test in §4.3; state the reason for stopping and what could reopen it. |
 | **SoTA citation as self-assignment.** Sources are cited as proof of frontier quality. | State source contributions and re-evaluate the composed result. |
@@ -407,14 +407,14 @@ The bias is bounded. One direct evaluation can close without a loop. Repetition 
 
 | Consequence | Benefit | Cost |
 |---|---|---|
-| Repeated improvement follows one explicit improvement method and one current unfolding structure, while each performed pass retains its own dated Work identity and attribution under `CC-E23-4`. | FPF no longer relies on hidden authoring habits or one fictitious enduring loop occurrence. | A complete loop record names its object, evaluation, structure, independently identified Work and result routes, and boundaries. |
+| Repeated improvement follows one explicit improvement method and, when §4.2a is needed, one current unfolding structure, while each performed pass retains its own dated Work identity and attribution under `CC-E23-4`. | FPF no longer relies on hidden authoring habits or one fictitious enduring loop occurrence. | A complete loop record names its object, evaluation, structure, independently identified Work and result routes, and boundaries. |
 | Row discharge is separated from evaluated quality change. | Improvement claims become replayable. | The claim remains inadmissible until the changed object is re-evaluated through a separately identified Work and result. |
 | General and specialized loops are comparable. | BLP can be applied without craft folklore. | Comparison is admitted with explicit cost, risk, and characteristic-space fit. |
 | Exceptional stop remains local. | All-`5` or front-reaching closure no longer freezes future development. | The closure record includes its reopen conditions. |
 
 ### E.23:10 - Rationale
 
-The shared method is simple: select a proposed improvement; perform it; connect any returned value or changed object through its direct relation or A.6.1 binding; then re-evaluate through a separate pass and result. `CC-E23-4` supplies the dated-Work account whenever either performed pass is asserted as Work. Check trade-offs and cost, then stop, continue, switch method, open a new frame, or hold. A.22 carries the guarded alternatives, selected continuation, stop, and returns; when transformation-flow membership is independently current, E.18 and E.18.3 recognize that selected structure rather than a second loop object. Classical improvement cycles, agentic loops, fixed-performer optimization, MCDA, Goodhart, and OEE and NQD lines contribute useful operations and boundaries, but they do not replace this method or turn the cycle into enduring Work or context.
+The shared method is simple: select a proposed improvement; perform it; connect any returned value or changed object through its direct relation or A.6.1 binding; then re-evaluate through a separate pass and result. `CC-E23-4` supplies the dated-Work account whenever either performed pass is asserted as Work. Check trade-offs and cost, then stop, continue, switch method, open a new frame, or hold. When §4.2a is needed, A.22 carries the guarded alternatives, selected continuation, stop, and returns; when transformation-flow membership is independently current, E.18 and E.18.3 recognize that selected structure rather than a second loop object. Classical improvement cycles, agentic loops, fixed-performer optimization, MCDA, Goodhart, and OEE and NQD lines contribute useful operations and boundaries, but they do not replace this method or turn the cycle into enduring Work or context.
 
 ### E.23:11 - SoTA-Echoing
 

@@ -143,7 +143,7 @@ A cheap reversible probe can support a narrow disposition. A high-stakes capabil
 
 #### E.23.CAE:4.5 - Route without choosing
 
-The first result should fit in six lines:
+Keep the first result compact; one useful shape is:
 
 > **Claim tested:** [holder, Work family, envelope, window].
 > **Controlled contrast:** [reference, changed condition, and what was held fixed].

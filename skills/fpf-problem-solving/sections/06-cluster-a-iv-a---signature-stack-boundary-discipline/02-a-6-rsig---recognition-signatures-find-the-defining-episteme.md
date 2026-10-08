@@ -235,6 +235,8 @@ Why the cue is not enough yet:
 
 Recognition repair:
 
+First recover the defining description; the cue alone leaves its boundary claim unresolved. For the worked branch below, suppose inspection of that defining episteme establishes a request-admissibility condition. If the source instead prescribes a duty or states another boundary claim, recognize that content and apply its corresponding entry.
+
 1. `description_seen` = one boundary-presented admissibility description.
 2. `encountered_carrier_or_projection` = one clause or excerpt where the
    description is seen.
@@ -294,6 +296,8 @@ Why the cue is not enough yet:
   pairwise comparison is to determine.
 
 Recognition repair:
+
+With only the cue, first ask what the pairwise comparison is intended to determine. For the worked branch below, suppose the defining episteme supplies comparison under a declared comparator but no selection or publication rule. If the source also defines selection, recover and use that contribution.
 
 1. `description_seen` = one method-description applicability note.
 2. `encountered_carrier_or_projection` = one method-description note, pattern excerpt,

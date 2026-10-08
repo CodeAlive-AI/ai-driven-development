@@ -117,7 +117,7 @@ AutonomyLedgerEntry {
   performedUnderSystemRoleAssignmentRef: U.RelationRef constrained to U.SystemRoleAssignment
   budgetId, version, time
   deltas: { action_tokensΔ?, decision_tokensΔ?, riskΔ?, resourceΔ? }
-  guardVerdicts: { name -> pass|fail }
+  guardVerdicts: { checkApplicationId -> GateCheckApplicationResult ref } // A.21; refs may be supplied by the cited GateDecisionResult
   overrideAuthorityRelationOccurrenceRef?             // required for overrideWork
   separationOfDutiesCheckResultRef?                    // required for overrideWork
   pathIds: { PathId, PathSliceId }                     // for G-suite parity/refresh
@@ -196,7 +196,7 @@ The declaration's `decision_tokens=3/day` and `error-budget burn <= 2%/day` rema
 | ------------- | ----------- |
 | **E.16-CC-1** | Each autonomy claim cites a named/versioned budget with claim, consumer kind, situation, policy, scope/window, limits, override rule and exact A.2.7 species. Prospective budgets may omit actions/assignments; action-bound permission resolves the proposed action and real allocation/authority; enactment-bound adds independently admitted actual Work. |
 | **E.16-CC-2** | Green-Gate decides the A.21 prospective work-entry claim and bounded action, resolving its identity/continuation, real holder/assignment/state, authority, scope/window, remaining budget, incompatibility and guards. Changed permission-relevant windows require recheck; request respelling does not create another action. |
-| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` that identifies the Work, performer System, exact assignment, budget edition, deltas, and guard verdicts. |
+| **E.16-CC-3** | Work admitted under autonomy **MUST** have an `AutonomyLedgerEntry` that identifies the Work, performer System, exact assignment, budget edition, deltas, and references to the guard check-application results. |
 | **E.16-CC-4** | A proposed override passes its applicable A.2.7 species and independent authority check before performance. An existing target Work is distinct from that proposal. Only a performed, A.15.1-admitted override is recorded as overrideWork with the applicable delta and policy-supported match to prior permission. |
 | **E.16-CC-5** | Depletion **MUST** block autonomy-gated steps until `ResumeAutonomy` passes the actual-assignment separation-of-duties check, independent authority check, and ordinary guards. |
 | **E.16-CC-6** | A UTS autonomy row carries the budget edition/state, guard policy, override protocol, scope/window, action/allocation refs when action-bound and actual Work refs when enactment-bound. |

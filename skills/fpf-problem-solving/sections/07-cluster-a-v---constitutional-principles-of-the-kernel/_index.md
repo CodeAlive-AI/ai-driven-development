@@ -10,7 +10,7 @@
 - [A.8 - Universal Core Principle: Test a U-Kind Across Domains](05-a-8---universal-core-principle-test-a-u-kind-across-domains.md) (140 lines) — Type: Kernel admission discipline pattern
 - [A.9 - Choose and Check an Aggregation Law for the Intended Result](06-a-9---choose-and-check-an-aggregation-law-for-the-intended-r.md) (125 lines) — Use this when a receiving decision needs a combined result, but the law that gives the proposed operation its meaning or preserves a needed property is unresolved. The same input values can support...
 - [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (384 lines) — Normativity: Normative
-- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (336 lines) — Pattern type. Method pattern.
+- [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (338 lines) — Pattern type. Method pattern.
 - [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (157 lines) — Type: Kernel parsimony and admission discipline pattern
 - [A.11.OP - Decision-Relevant Least Action and Operational Parsimony: Test a Proposed Requirement](10-a-11-op---decision-relevant-least-action-and-operational-par.md) (264 lines) — Type: Part A pragmatic principle pattern
 - [A.12 - Acting-Side Externalization and Reflexive Split: Identify Who Acts on What](11-a-12---acting-side-externalization-and-reflexive-split-ident.md) (307 lines) — Type: Part A architectural ontology pattern

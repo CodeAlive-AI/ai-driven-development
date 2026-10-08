@@ -4,8 +4,8 @@
 ## Contents
 
 - [A.6 - Signature Stack: Classify and Place Boundary Claims](01-a-6---signature-stack-classify-and-place-boundary-claims.md) (596 lines) — Type: Architectural (A)
-- [A.6.RSIG - Recognition Signatures: Find the Defining Episteme for a Description](02-a-6-rsig---recognition-signatures-find-the-defining-episteme.md) (414 lines) — Type: Architectural pattern
-- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)](03-a-6-b-boundary-norm-square.md) (794 lines) — Type: Architectural (A)
+- [A.6.RSIG - Recognition Signatures: Find the Defining Episteme for a Description](02-a-6-rsig---recognition-signatures-find-the-defining-episteme.md) (418 lines) — Type: Architectural pattern
+- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)](03-a-6-b-boundary-norm-square.md) (800 lines) — Type: Architectural (A)
 - [A.6.C — Contract Unpacking for Boundaries](04-a-6-c-contract-unpacking-for-boundaries.md) (362 lines) — Type: Architectural (A)
 - [A.6.REL - Relation Obtaining and Individuation: Distinguish Occurrences When Needed](05-a-6-rel---relation-obtaining-and-individuation-distinguish-o.md) (398 lines) — Type: Architectural (A)
 - [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme](06-a-6-0---u-signature---reusable-law-governed-declaration-epis.md) (443 lines) — Type: Architectural (A)
@@ -25,7 +25,7 @@
 - [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](20-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (265 lines) — Type: FPF precision-restoration pattern
 - [A.6.A - Affordance and Action-Invitation Precision Restoration (ACT-INV)](21-a-6-a---affordance-and-action-invitation-precision-restorati.md) (622 lines) — Type: Architectural (A)
 - [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION)](22-a-6-f---function-and-functional-precision-restoration.md) (422 lines) — Type: Architectural pattern
-- [A.6.M - Module and Interface Claim Repair](23-a-6-m---module-and-interface-claim-repair.md) (390 lines) — Type: Architectural pattern
+- [A.6.M - Module and Interface Claim Repair](23-a-6-m---module-and-interface-claim-repair.md) (386 lines) — Type: Architectural pattern
 - [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline](24-a-6-5---relation-declaration-slot-discipline---slotkind-valu.md) (371 lines) — Type: Architectural (A)
 - [A.6.6 - Base Declaration Discipline: Say Exactly What Something Depends On](25-a-6-6---base-declaration-discipline-say-exactly-what-somethi.md) (444 lines) — Type: Definitional relation-discipline pattern
 - [A.6.7 - MechSuiteDescription — Shared Conditions for Joint Use of Distinct Mechanisms](26-a-6-7---mechsuitedescription-shared-conditions-for-joint-use.md) (467 lines) — Type: Architectural pattern.
