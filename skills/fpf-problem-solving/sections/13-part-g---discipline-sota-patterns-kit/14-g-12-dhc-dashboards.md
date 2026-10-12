@@ -146,7 +146,7 @@ DashboardSlice := <
 
 > An extension adds only the panel-specific fields, pins, and triggers consumed by that view. It does not redefine C.21, C.16, comparison, evidence, publication, selection, or refresh semantics.
 
-<a id="g12extsotapalette--sota-palette-alignment"></a>
+
 
 ##### G.12:4.9.1 - `G.12:Ext.SoTAPalette` — SoTA palette alignment
 
@@ -157,7 +157,7 @@ DashboardSlice := <
 * Optional pins: `SoTA_PackRef.edition?`, exact F.17 cell refs, and obtaining F.9 relation refs when alignment is actually displayed.
 * No additional trigger kind by default.
 
-<a id="g12extportfoliotelemetry--selector-result-panel"></a>
+
 
 ##### G.12:4.9.2 - `G.12:Ext.PortfolioTelemetry` — selector result panel
 
@@ -168,7 +168,7 @@ DashboardSlice := <
 * Conditional values: `TaskSignatureRef?`, resolved `DominanceRegime`, resolved `PortfolioMode`, and exact selector result and basis refs.
 * Set-returning semantics remain visible. A scalar headline is only a view annotation unless a separate policy lawfully constructs it.
 
-<a id="g12extqdtelemetry--illumination-or-archive-panel"></a>
+
 
 ##### G.12:4.9.3 - `G.12:Ext.QDTelemetry` — illumination or archive panel
 
@@ -179,7 +179,7 @@ DashboardSlice := <
 * Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceSpecRef.edition?`, `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
 * Illumination and coverage stay telemetry unless a separate accepted policy promotes them into the comparator, dominance set, or selected-set criteria under C.18's trade-off and authority conditions.
 
-<a id="g12extopenendedtelemetry--open-ended-or-transfer-panel"></a>
+
 
 ##### G.12:4.9.4 - `G.12:Ext.OpenEndedTelemetry` — open-ended or transfer panel
 
@@ -190,7 +190,7 @@ DashboardSlice := <
 * Conditional pins: `TransferRulesRef.edition`, `EnvironmentValidityRegionId?`, `ProbeBudgetPolicyId?`, and `PathSliceId[]`.
 * Open-ended signals do not become dominance objectives by display.
 
-<a id="g12extmaturityladderpanel--maturity-view"></a>
+
 
 ##### G.12:4.9.5 - `G.12:Ext.MaturityLadderPanel` — maturity view
 
@@ -201,7 +201,7 @@ DashboardSlice := <
 * Conditional values: `MaturityCardRef`, `MaturityRungId?`, and evidence-path refs when the displayed rung relies on them.
 * Adds `RSCRTriggerKindId.MaturityRungChange` only for a refresh-wired view.
 
-<a id="g12extpackinclusion--shipping-stub"></a>
+
 
 ##### G.12:4.9.6 - `G.12:Ext.PackInclusion` — shipping stub
 
@@ -212,7 +212,7 @@ DashboardSlice := <
 * Conditional values: exact pack ref, selected `DHCSeriesRef.edition` or `DashboardSliceRef`, and the replay or shipping pins the included claims actually require.
 * G.10 governs shipping; this extension only identifies what is included.
 
-<a id="g12extviewfamilyseed--advanced-view-seed"></a>
+
 
 ##### G.12:4.9.7 - `G.12:Ext.ViewFamilySeed` — advanced view seed
 

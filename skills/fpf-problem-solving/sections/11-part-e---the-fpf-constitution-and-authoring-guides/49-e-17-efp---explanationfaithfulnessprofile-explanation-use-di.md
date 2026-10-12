@@ -304,13 +304,13 @@ When a reader-fit difference changes the bounded or blocked use, state only the 
 
 #### E.17.EFP:4.5 - Shared explanation rule set
 
-<a id="e17efp45a-preservation-rule"></a>
+
 
 ##### E.17.EFP:4.5.a. - Preservation rule
 
 Every published explanation form under this profile expresses enough of one exact episteme edition for the declared use. Source identity rests on ClaimGraph, exact EntityOfConcern and effective ReferenceScheme; sufficiency rests on retained action-changing qualifications, source return and disclosure of use-relevant omissions. A partial expression may satisfy both. Insufficiency does not constitute a target; actual changed content, concern or effective scheme requires its own identity decision and any claimed source-to-target relation. E.24.PUB publication occurrence remains separate, and the EFP class changes neither identity nor relation.
 
-<a id="e17efp45b-loss-and-reliability-rule"></a>
+
 
 ##### E.17.EFP:4.5.b. - Loss and reliability rule
 
@@ -318,7 +318,7 @@ A published form states material omission, reordering, simplification or connect
 
 When a concrete reader-fit difference is load-bearing, expose only enough of its bounded use or overread risk to prevent the actual didactic or contrastive form from being mistaken for assurance, policy, or gate guidance.
 
-<a id="e17efp45c-downstream-use-and-boundary-rule"></a>
+
 
 ##### E.17.EFP:4.5.c. - Downstream-use and boundary rule
 
@@ -328,7 +328,7 @@ Interpretant-side fields do not weaken that boundary rule. They only bound reade
 
 If a coarsened explanation-like rendering needs a narrower bounded claim or effect, blocked downstream use, and source-bearing reopen to remain honest, apply `A.6.3.CSC Controlled Semantic Coarsening` rather than keeping the case in ordinary explanation-use discipline.
 
-<a id="e17efp45d-composition-and-reopen-rule"></a>
+
 
 ##### E.17.EFP:4.5.d. - Composition and reopen rule
 

@@ -80,7 +80,7 @@ How can a practitioner repair technically plausible prose that asserts unsupport
 
 Use `OntologyFirstPlainRewrite` as one connected reading and repair over a natural sentence, row, paragraph, list, or small coherent section. Take the intended reader and use from the surrounding work; do not invent an adversarial reader or a persona form.
 
-<a id="one-connected-reading-and-repair"></a>
+
 
 #### F.19:4.3 - One connected reading and repair
 
@@ -107,7 +107,7 @@ Keep ordinary practitioner action and instrumental pattern-use wording ordinary 
 
 Open the identity-bearing branch only when the sentence deliberately asserts a particular dated `U.Work` occurrence. Then point to its basis: A.13 first, independent A.15.1 Work admission second, and F.6 afterward only for precise assignment-bound attribution. Add a local system-role kind or a separate System-classification judgment only when that neighboring claim matters. Treat a pattern episteme as a `U.MethodDescription` only after `A.3.2` establishes that it has an already admitted Method as its exact `EntityOfConcern` and makes at least one substantive claim about that Method as a way of doing. Otherwise cite the applicable pattern content as guidance and use `A.3.1` for the Method itself.
 
-<a id="plausible-reader-guards-and-cold-reader-recovery"></a>
+
 
 #### F.19:4.4 - Plausible-reader guards and cold-reader recovery
 
@@ -123,7 +123,7 @@ Retain a negative alternative, denied consequence, warning, or non-use statement
 
 Even a grounded guard should be the smallest clear correction. When actor allocation is the useful content, state it positively: “On receiving new evidence, the reader decides whether to reopen checking or revision.” When currentness is the useful content, state the direct use: “This guide conveys the seminar of 1 February 2026; check current rules against the current FPF edition.” Keep material negation, documented anti-patterns, fair disputes, and safety stops when their polarity or boundary is itself the claim.
 
-<a id="basis-and-coverage-of-a-recovery-judgement"></a>
+
 
 #### F.19:4.5 - Basis and coverage of a recovery judgement
 
@@ -143,7 +143,7 @@ Limit a recovery conclusion to the natural text units and relations examined und
 
 State a material limit in the receiving judgement or result already needed by the work. When a required reading is unavailable, identify the missing basis and leave only the dependent conclusion open. Correct recovery of what the text asserts and the subject-matter warrant or practical adequacy of that assertion remain separate questions under `C.2.8`.
 
-<a id="result-and-local-revalidation"></a>
+
 
 #### F.19:4.6 - Result and local revalidation
 

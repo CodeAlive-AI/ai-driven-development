@@ -319,8 +319,8 @@ Reopen these choices when a better method at comparable effort changes the attai
 - **E.23, E.23.CAE and E.23.CDI** distinguish object improvement, capability-expression questions and development of a named capability holder. **E.10.DEV** recovers ambiguous development claims; **C.36** governs the cultural-evolution question.
 - **B.4** can use these reasoning results in an actual evolution inquiry. A sufficient reasoning result does not itself require another evolution cycle.
 
-[fpf-b5-4-ref]: B.5.4-Recognize-a-Reusable-Concept-in-a-Concrete-Situation.md#b54---recognize-a-reusable-concept-in-a-concrete-situation
+[fpf-b5-4-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b54---recognize-a-reusable-concept-in-a-concrete-situation
 
-[fpf-a15-9-ref]: A.15.9-Request-and-Use-a-Bounded-Result-from-Another-Practice.md#a159---use-or-request-a-bounded-result-from-another-practice
+[fpf-a15-9-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a159---use-or-request-a-bounded-result-from-another-practice
 
 ### B.5:End

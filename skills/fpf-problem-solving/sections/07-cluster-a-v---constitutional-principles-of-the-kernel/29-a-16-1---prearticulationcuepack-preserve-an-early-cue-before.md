@@ -70,7 +70,7 @@ A conforming cue pack may publish:
 
 `cueNucleus` names the minimal preserved core: what exactly is being kept visible rather than lost in carrier noise or premature endpoint wording.
 
-When the nucleus is still unclear, try arranging the available material as in [the operator example](#a161-operator-cue-pack-example).
+When the nucleus is still unclear, try arranging the available material as in [the operator example](#a161131---operator-cue-pack).
 
 `primaryWitnessRef` and `primaryAnchor` provide explicit triage when one witness or anchor is load-bearing for preservation. Secondary witnesses, anchors, traces, embodiment refs, and model-state refs may enrich the pack without displacing that primary nucleus.
 
@@ -150,7 +150,7 @@ The pattern fits early cue capture in design, embodied cognition, incident triag
 
 ### A.16.1:13 - Worked Examples and Invalid Publications
 
-<a id="a161-operator-cue-pack-example"></a>
+
 
 #### A.16.1:13.1 - Operator cue pack
 

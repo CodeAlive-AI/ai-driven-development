@@ -175,5 +175,3 @@ For the working question in §5.1, a decision log preserves why A was selected b
 - **Uses C.2.1** when the receiving use needs an identifiable retained account.
 
 ### C.11.DBR:End
-
-<a id="fpf-pattern-C.11.DUA"></a>

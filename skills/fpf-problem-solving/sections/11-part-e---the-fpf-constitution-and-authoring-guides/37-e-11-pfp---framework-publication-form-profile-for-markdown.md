@@ -156,6 +156,7 @@ DRRs, build manifests, quality runs, digests, logs, and campaign state are proce
 
 The deterministic part of the form check handles recoverable syntax and projection agreement:
 
+- absence of raw HTML from the complete Markdown publication under E.8:4.1.1, while retaining literal code, mathematical notation and Markdown autolinks;
 - the product-declared title and Readme H1, the compact opening, and absence of prohibited development or machine material from reader front matter;
 - the required H1 sequence plus the product-declared body and reference tail;
 - product-declared Readme and Preface entries in the established ToC grammar, before the logical pattern index, with no generic rival mini-menu;

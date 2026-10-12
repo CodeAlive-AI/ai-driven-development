@@ -35,18 +35,17 @@ A DPF gives an intended practitioner or assisting agent a source-grounded patter
 
 Start here with the cold-reader route. It answers whether framework authoring should begin before it asks for proposal, dependency, naming, quality, or publication apparatus.
 
-1. Name the intended reader and recurring working problem.
-2. State the useful move a domain or local principle framework might add.
+1. Name the intended reader, recurring working problem and useful result.
+2. Recover candidate contributions from that problem and its sources before fitting them to the current Library: recurring practitioner problems, reusable moves or Methods, first useful results, ordinary stops or wrong-turn returns, and source or refresh boundaries. When the use spans several problem families, recover their consequential connections and the practice field or fields they serve. A field can include known Methods as well as missing ones; novelty of elementary operations is not its identity test.
 3. Inspect what FPF Core, existing domain or local frameworks, and current sources already provide.
-4. Test a cheaper search, curated reading route, or access-only result.
-5. Before classifying the material by its carrier or a broad existing owner, recover candidate contributions as recurring practitioner problems, reusable moves or Methods, first useful results, ordinary stops or wrong-turn returns, and source or refresh boundaries.
    - Treat a role or competence account, several independently reusable contributions, a Card or mantra spanning material relations, a plausible field and refresh boundary, a representative use across contributions, or visible action or result loss under one broad owner as a cue to compare, not as proof of a DPF.
    - In one recognizable situation, compare each contribution with the exact current FPF or admitted-DPF action, first useful result, stop or wrong-turn return, and source or refresh obligation. Include a non-use boundary only when `F.19`'s grounded-contribution test admits it. Preserve whether it is carried by an exact current owner, supplied by an exact external result, an action-bearing remainder, or unresolved. A shared topic, role label, carrier form, missing product name, or missing PatternIDs cannot close the question.
-   - When the receiving use depends on connected Methods, establish what the intended reader receives as a whole under E.4.CM:4.4 before treating the constituent suppliers as a complete answer. If this exact comparison closes every contribution and no later-used field, edition, relation, direct-subject, publication, or access consequence remains, take the smallest useful result or stop. If exact ownership is unresolved, a coherent connected remainder survives, or closure would erase a material relation or field or refresh responsibility, keep the framework question open through the following steps.
-6. If a reusable problem-solution language still looks useful, sketch one to four provisional pattern candidates with recognizable problems and solution moves. These candidates are seeds or contributions; their number does not make a framework edition.
-7. State what field of practice the proposed framework promises to cover. Test whether its recurring problem families, pattern relations, and one representative first use need a new framework. If the current material is too narrow, retain it as, for example, a seed, a contribution to an existing framework, a guide, direct use of FPF and the sources, or another result whose direct kind fits its use.
+   - When the receiving use depends on connected Methods, establish what the intended reader receives as a whole under E.4.CM:4.4 before treating the constituent suppliers as a complete answer. A remainder can be a connection, a Method, a whole field or several fields. Keep the framework question open when exact ownership is unresolved or closure would erase a material relation, field or refresh responsibility.
+4. Distinguish content reuse from the architecture answer. Existing coverage establishes what can be retained; it does not freeze the boundaries of the frameworks carrying it. When the recovered families or changed uses put those boundaries in question, compare their current organization with a revised distribution of existing and new contributions under E.4.PFAD:4.2. A new or revised DPF can inherit or receive existing Methods. Several fields can warrant a Suite; one large pattern, an application or an umbrella title does not settle their organization.
+5. Test a cheaper search, curated reading route, access-only result or stop against the same receiving use. Take it when the exact comparison closes every contribution and no later-used field, edition, relation, direct-subject, publication or access decision remains. A sufficient narrow result needs no survey of unrelated fields.
+6. If a reusable problem-solution language still looks useful, state its field promise, connected problem families, material relations and representative first use. Compare new and revised frameworks with contribution to an existing one; use the field-scale test in :4.0. Retain a narrow useful result as a seed, contribution, guide, direct source use or another result whose kind fits its use when that test does not support a framework.
+7. Sketch provisional pattern candidates at the scale of the recovered problems. One to four can be enough to test a small proposal; neither that range nor the size of one carrier limits the number of Methods or fields to recognize. Keep independently reusable problem–move–result contributions and their whole-use relations visible before choosing their publication grouping.
 8. Ask whether choosing among five outcomes—a new or revised framework, a contribution to an existing framework, a non-framework product, a thinner publication or access route, or no new maintained product now—will settle a later-used edition, dependency, initial pattern placement or relation, direct-subject identity or change rule, or publication or access decision whose rationale another author or reviewer needs.
-
 9. If no, take the useful contribution, thinner route, other result, or stop without a DRR. If yes, use `E.4.PFAD` to state which of the same five outcomes was selected and its framework-specific consequences in one `E.9` DRR.
 
 These are alternative entry outcomes, not serial stages. A separate organization-design proposal is useful only when a named review use needs candidate organization claims. A separate dependency description is useful only when a named next authoring use needs a stable account of dependency availability and relevance. Neither is a prerequisite for recognizing or answering the architecture question.
@@ -477,14 +476,14 @@ Replayable authoring slice:
 | Local publication or access | one exact form-bearing publication or access-facing carrier exposes the framework after source-return notes are present; any access route is named separately |
 | Refresh route | `G.11` refresh when the source pack, selected `FPF@C1` edition, either relied-on Core claim, or greenhouse-control practice changes; reopen the explanations and uses affected by the change. |
 
-<a id="pattern-address-and-reorder-slice"></a>
+
 
 #### E.4.DPF:5.1 - Pattern-address and reorder slice
 
 
 A Systems Engineering DPF edition gives `SYSE.22` a stable address and places it after `SYSE.2` because that order helps its readers. A later edition may move `SYSE.22` without renaming it when its recurring problem and working answer continue; the ToC and body order change together, while old citations still resolve through the same PatternID. If a later repair splits that working answer, only the continuing answer keeps `SYSE.22`; the other answer receives a new unused PatternID, and readers of the old reference get a short migration assertion or an explicit stop.
 
-<a id="local-mantra-authoring-slice"></a>
+
 
 #### E.4.DPF:5.2 - Local-mantra authoring slice
 
@@ -493,35 +492,35 @@ After the `HC.NutrientMonitoring` Solution is stable, its authors use the local 
 
 If a seminar instead needs to show alternative continuations for invalid measurement, out-of-range nutrient condition, control saturation, and crop-stage transition through one named wider unfolding structure, the authors open `A.22.CGUS` and build a demonstrative walkthrough. They do not obtain that structure merely by extending or repeating the local mantra.
 
-<a id="optional-organization-proposal-slice"></a>
+
 
 #### E.4.DPF:5.3 - Optional organization-proposal slice
 
 
 A team intends a new clinical-method DPF, and a named review use needs candidate organization claims before an architecture answer is selected. It creates one current `U.WorkPlan` for possible future DPF-authoring Work, then one C.2.1 `IntendedFrameworkResultDescription` whose identity is its exact intended-result ClaimGraph, that WorkPlan as EntityOfConcern, and its effective ReferenceScheme; ClaimScope remains separate. `FrameworkOrganizationDesignProposal` uses that description as its EntityOfConcern and proposes candidate pattern-family, dependency, publication, and access relations in one ClaimGraph. The proposal is the current result. No future framework entity, actual architecture, architecture description, dated Work, or production relation is asserted.
 
-<a id="coverage-and-acceptance-slice"></a>
+
 
 #### E.4.DPF:5.4 - Coverage and acceptance slice
 
 
 The proposal's medication-review coverage criterion names the pattern families whose representation is necessary for that declared use. One constraint claim node names the covered relation-family refs with exact kinds, that admitted use, and the coverage criterion. The authoring WorkPlan separately cites an acceptance target for review completion. C.33 uses the coverage node as comparator when evaluating proposal coverage; the WorkPlan target does not replace the criterion.
 
-<a id="empirical-grounding-and-use-frame-stress-slice"></a>
+
 
 #### E.4.DPF:5.5 - Empirical-grounding and use-frame stress slice
 
 
 The intended-result description has a separately obtaining `EpistemeEmpiricalGroundingRelation` to `MedicationReviewTeam@Hospital-A`, an A.1-admitted holon, covering the exact supported claim subgraph. The holon is not an episteme identity slot. A request to rely instead on a consortium first rechecks the empirical-grounding relation and evidence, effective ReferenceScheme, ClaimScope, and any independently selected BoundedModelUseStructure. Changing only the empirical ground changes that relation; changing the ClaimGraph, EntityOfConcern, or effective scheme identifies another episteme. F.9 opens only if an exact cross-context local-sense translation is actually current, not merely because the maintaining organization changed.
 
-<a id="optional-authoring-dependency-slice"></a>
+
 
 #### E.4.DPF:5.6 - Optional authoring-dependency slice
 
 
 A named next authoring use needs a stable dependency account. The selected FPF edition is available and relevant now, so its `fpfEdition` position has exact value and kind refs and no acquisition condition. The next-use boundary names the Core claims needed for that authoring use. The accepted architecture answer is cited through its E.9 DRR because this use needs that rationale; it is not a mandatory PFAD dependency position. A publication carrier is missing but retained for later use, so its position has no value refs, has an acquisition-condition description, and does not block current pattern drafting. A missing source pack marked `currentForNextAuthoringUse` blocks the next use and opens the stated return. Availability never stands for relevance.
 
-<a id="framework-evolution-slice"></a>
+
 
 #### E.4.DPF:5.7 - Framework-evolution slice
 

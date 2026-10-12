@@ -14,6 +14,8 @@ This skill functions as **agentic RAG** — retrieval-augmented generation drive
 
 Navigation also covers how constituent actions enact encompassing work (B.1.5.EW), whether constituent-method replacements preserve their receiving uses (B.1.5.RS), first models and theory use, reasoning revision, physical/mathematical/computational connections, measurement construction and repair, object reidentification, predictive information, reusable operations, and branching search. Symmetry comparisons are covered by C.29.1, and clarification of model/explanation uses by E.10.
 
+Navigation also covers bounded recorded-history replay of continuation rules (C.40:4.8.1), no-change comparisons for apparent improvement (E.23:4.1.1), rebuilding affected evidence after evaluation changes (E.23:4.1a), and improving the methods used for further development (E.23:5.1).
+
 ## Install
 
 ```bash
@@ -93,4 +95,4 @@ on the skill file itself.
 
 ## License
 
-Skill packaging and splitter: MIT. Adapted from *First Principles Framework (FPF)* by Anatoly Levenchuk, [ailev/FPF](https://github.com/ailev/FPF), upstream commit `0c6ade275e9360f0c5ab9715d8f05c0dbaa13cf8`. The FPF specification text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the specification was split into section files with generated navigation indexes, and `SKILL.md` adds an agent-oriented router and usage instructions. This adaptation is not endorsed by the FPF author.
+Skill packaging and splitter: MIT. Adapted from *First Principles Framework (FPF)* by Anatoly Levenchuk, [ailev/FPF](https://github.com/ailev/FPF), upstream commit `f2bc67dd6f3d8525bc63965a98165abf59b48e2f`. The FPF specification text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the specification was split into section files with generated navigation indexes, and `SKILL.md` adds an agent-oriented router and usage instructions. This adaptation is not endorsed by the FPF author.

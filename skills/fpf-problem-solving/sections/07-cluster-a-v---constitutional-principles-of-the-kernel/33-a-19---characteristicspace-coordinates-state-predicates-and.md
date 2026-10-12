@@ -206,7 +206,7 @@ An embedding `iota : CS_1 -> CS_2` is point-injective and preserves every struct
 
 A coarse-graining, binning, many-to-one normalization, or dropped-coordinate operation is not an embedding. Declare it as a lossy mapping or projection, state the preserved and lost distinctions, and let each consumer decide whether that loss is admissible for its comparison, prediction, gate, or assurance use. When the use relates two exact F.17 local senses and the F.9 predicate obtains, cite that Bridge and a separate bounded-use claim. A ReferencePlane change instead cites its applicable plane relation. The coordinate mapping, semantic relation, plane relation, and C.16 calibration or measurement backing remain separate.
 
-<a id="a195213-product--combination-cs--cs--cs"></a>
+
 
 ###### A.19:5.2.1.3 - Product – **Combination** `CS₁ ⊗ CS₂ = CS⊗`.
 
@@ -217,7 +217,7 @@ The **product** of two spaces CS₁ and CS₂ is a new space **CS⊗** whose bas
 
 A label such as `Ready`, `Authorized`, or `Degraded` is a consumer-side category, not a space or comparison result. Its subject pattern states the predicate and evaluation use. Comparing two coordinate states depends on the declared spaces, mappings, scales, and comparison scope; A.19 permits only the following two coordinate regimes.
 
-<a id="a195221-coordinatewise-comparability-_coord"></a>
+
 
 ###### A.19:5.2.2.1 - Coordinatewise comparability (`≼_coord`)
 
@@ -232,13 +232,13 @@ Two states can be compared **coordinatewise** only under strict conditions. Esse
 
 When these conditions are met, one can define a **coordinatewise preorder** over states. Common patterns include:
 
-- **Dominance:** For a given set of “higher is better” slots, we say state *x* **≼<sub>coord</sub>** state *y* if and only if for *every relevant slot a*, the coordinate $a(x) \le a(y)$ (**after orienting all slots to the declared polarity for that slot**). In other words, *y* is as good or better on all enforced criteria. This defines a Pareto-like ordering (often partial, not total).
+- **Dominance:** For a given set of “higher is better” slots, we say state *x* $≼_{\mathrm{coord}}$ state *y* if and only if for *every relevant slot a*, the coordinate $a(x) \le a(y)$ (**after orienting all slots to the declared polarity for that slot**). In other words, *y* is as good or better on all enforced criteria. This defines a Pareto-like ordering (often partial, not total).
 
 - **Predicate-region inclusion:** Predicate-defined categories denote regions of the declared space. Compare their regions by inclusion: `Region(P) subseteq Region(Q)` means every point satisfying `P` also satisfies `Q`. For example, speed > 120 and accuracy > 95% implies speed > 100 and accuracy > 90%. Two points satisfying the same category predicate need not be ordered; ordering those points requires the separately declared coordinate comparator.
 
 By default, **no comparability** is assumed unless proven. If any of the above congruence conditions fails, one must **not** fall back to ad-hoc comparisons (like matching by name or normalizing without declaration). Either switch to a **normalization-based regime** or declare the states **incomparable**.
 
-<a id="a195222-normalizationbased-comparability-_normalization"></a>
+
 
 ###### A.19:5.2.2.2 - Normalization‑based comparability (`≼_normalization`)
 
@@ -247,7 +247,7 @@ When two state vectors do not meet the strict conditions for coordinatewise comp
 
 Concretely: if we have state _x_ in CS₁ and state _y_ in CS₂, a normalization‑based comparison is permitted only if the model can cite a set of `NormalizationMethodInstanceId`(s) under a chosen **UNM** (per **A.19.UNM**) that lands the relevant coordinates of _x_ into CS₂ (or lands both into a declared common target space). The base results are **NCVs** with their preserved/lost distinctions. Use an `≡_UNM` class only when the receiving query is recoverable from that class; an inherited operation needs its separate compatibility and availability argument under A.19.UNM.
 
-**Comparability rule (normalize-then-compare).** We say _x_ **≼<sub>normalization</sub>** _y_ only if, after applying the cited normalization instances to produce a representation of _x_ in CS₂ (or a common target), the mapped state can be compared **coordinatewise** under `≼_coord`. In other words, we never compare raw _x_ and _y_; we compare *after mapping into a common, well-typed space*.
+**Comparability rule (normalize-then-compare).** We say _x_ $≼_{\mathrm{normalization}}$ _y_ only if, after applying the cited normalization instances to produce a representation of _x_ in CS₂ (or a common target), the mapped state can be compared **coordinatewise** under `≼_coord`. In other words, we never compare raw _x_ and _y_; we compare *after mapping into a common, well-typed space*.
 
 If a normalization use also spans different reference schemes or planes, keep the decisions separate. The A.19.UNM instance supplies the coordinate mapping. Cite an F.9 Bridge only when the use relates two exact F.17 local senses and its direct predicate obtains; state the bounded-use claim and reliance separately, with `CL` only as optional evidence shorthand. A ReferencePlane crossing cites its applicable plane relation. CPM supplies the comparison scope and evaluation window, and B.3 enters only for an actual assurance use. None of these relations or consequences follows from the scheme or plane difference alone.
 

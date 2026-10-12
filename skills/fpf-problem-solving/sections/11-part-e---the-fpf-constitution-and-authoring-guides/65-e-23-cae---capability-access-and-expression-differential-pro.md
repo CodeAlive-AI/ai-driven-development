@@ -226,7 +226,7 @@ The cost is a qualified reference basis, controlled contrast, explicit claim bou
 
 What changes in practice is not the adoption of one memory theory. It is the refusal to move directly from failed expression to capability loss or development Work without first asking which observable contrast could change that conclusion.
 
-<a id="reopen-condition"></a>
+
 
 #### E.23.CAE:9.1 - Reopen condition
 

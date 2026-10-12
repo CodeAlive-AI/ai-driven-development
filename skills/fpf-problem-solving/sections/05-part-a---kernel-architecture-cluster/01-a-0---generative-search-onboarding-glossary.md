@@ -31,7 +31,7 @@ FPF needs a **short, normative glossary** that names the generative primitives i
 
 ### A.0:4 - Solution - Normative onboarding glossary and publication hooks
 
-<a id="41-plain-oneliners-normative-onramp-formal-anchors-in-c17c19"></a>
+
 
 #### A.0:4.1 - Plain one‑liners (normative on‑ramp; formal anchors in C.17–C.19)
 
@@ -51,7 +51,7 @@ FPF needs a **short, normative glossary** that names the generative primitives i
 
 *(Registers & forbidden forms per **LEX‑BUNDLE**; avoid “axis/dimension/validity/process” for measurement and scope.)*
 
-<a id="42-publication--telemetry-duties-where-these-terms-show-up"></a>
+
 
 #### A.0:4.2 - Publication & telemetry duties (where these terms **show up**)
 
@@ -60,7 +60,7 @@ FPF needs a **short, normative glossary** that names the generative primitives i
 2. **Parity & edition pins (Part G).** When QD/OEE is in scope, **pin the editions and policies used by the operation or required by its receiving use**, including `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceRef.edition` and `TransferRulesRef.edition` where applicable; record `PathSliceId` when required by that use. **G.9** supplies the pin requirements for an actual parity use. Treat **illumination/coverage as report‑only telemetry**; publish an **Illumination Map** where G‑kit mandates parity records. **Declare S** (Scale Variables) and run at least one **scale‑probe** (two points along S) when claiming **scale‑amenability**. **Dominance policy defaults to `ParetoOnly`;** including illumination in dominance **MUST** cite a CAL policy‑id.
 3. **Tell‑Show‑Show (E.7/E.8).** Any architectural pattern that claims generative behaviour **MUST** embed **both** a **U.System** and a **U.Episteme** illustration using this glossary (manager‑first didactics).
 
-<a id="43-minimal-first-day-construction"></a>
+
 
 #### A.0:4.3 - Minimal first-day construction
 

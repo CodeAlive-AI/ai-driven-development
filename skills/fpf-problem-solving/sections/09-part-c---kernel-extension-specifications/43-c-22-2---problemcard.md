@@ -70,7 +70,7 @@ When a downstream reader asks whether intended Work can enter a work boundary, t
 
 The Solution turns observed signal material into one C.2.1 episteme and one governed next use, not a completed form.
 
-1. Capture the symptom, anomaly, risk, stakeholder cue, drift, hypothesis, or other observed signal before naming an actual Problem. If the concern is not yet clear, put available source entries side by side and compare the events or meanings they record. Use what this comparison reveals to develop the question, as in [the support example](#c222-support-source-comparison).
+1. Capture the symptom, anomaly, risk, stakeholder cue, drift, hypothesis, or other observed signal before naming an actual Problem. If the concern is not yet clear, put available source entries side by side and compare the events or meanings they record. Use what this comparison reveals to develop the question, as in [the support example](#c222201a---compact-p2w-ready-disposition-slice).
 2. Recover the one joint EntityOfConcern, effective ReferenceScheme, ClaimScope, and claim family. If the claims concern unrelated entities, split the ClaimGraph and card.
 3. Separate the signal detector, actual-PFR assertion if independently grounded, anticipated-condition claim, improvement check, candidate acceptance criterion, method-availability claim, monitored risk signal, and proxy-distortion risk. These are not one card status or one PFR participant set.
 4. Pay only for current complexity. Add conditional content only when it changes the current next use; otherwise stop at the lighter card or name the direct pattern for the claim now current.
@@ -524,7 +524,7 @@ These rows are recognition slices, not complete Thin cards. Before using one, co
 | Literature-synthesis anomaly before method selection | An anomaly does not fit current category labels. | Preserve rival formulation, EntityOfConcern, evidence need, bridge, representation, or mathematical-lens relation when that relation is being made, and next discrimination action. | The anomaly is not proof for a new theory or a selected research method. |
 | Selected-set candidate before P2W | A retained candidate from a front or pool looks promising. | Preserve `sourceSetRef`, source-set kind, selection or retention criterion, non-scalar next use, and only the currentness or window on which that use relies. | Set membership is not selected-solution proof, priority score, or work authorization. |
 
-<a id="c222-support-source-comparison"></a>
+
 
 #### C.22.2:20.1a - Compact P2W-ready Disposition Slice
 

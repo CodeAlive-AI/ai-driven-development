@@ -117,7 +117,7 @@ GCoreLinkageManifest := ⟨
 
 The chassis is *view‑friendly*: it is an inventory of “what exists and how it is wired”, not a second specification of CN/CG/CHR/CAL/selection semantics.
 
-<a id="m1--cgframecontext-card-scope-anchor"></a>
+
 
 ##### G.1:4.2.1 - M1 — CG‑FrameContext Card (scope anchor)
 
@@ -135,7 +135,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
 
 **Notes:** any spec-legality content is **cited** via `A.19.CN (CN‑Spec)` and `G.0 (CG‑Spec)` (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`); this card does not introduce a local “mini‑spec”.
 
-<a id="m2--sota_setcgframe-harvester-output-card"></a>
+
 
 ##### G.1:4.2.2 - M2 — SoTA_Set@CG‑Frame (harvester output card)
 
@@ -148,7 +148,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
 **Governing pattern:** harvesting discipline and SoTA-pack payload are governed by `G.2`.
 In `G.1`, M2 is a *card in the chassis* and a wiring surface; it does not redefine the harvesting method. A relied-on coverage result cites G.2's `CoverageJudgementRef` with its HarvestPolicy basis, counted units and receiving question. M2 supplies no alternative family count.
 
-<a id="m3--variantpool-candidate-inventory--emitter-trace"></a>
+
 
 ##### G.1:4.2.3 - M3 — VariantPool (candidate inventory + emitter trace)
 
@@ -166,7 +166,7 @@ In `G.1`, M2 is a *card in the chassis* and a wiring surface; it does not redefi
 **Governing pattern for method payload:** method‑specific emitter semantics remain in their governing definitions, cited through `Extensions` (e.g., the relevant `C.17`, `C.18`, and `C.19` definitions).
 M3 MUST remain method‑agnostic in its core definition: it is an inventory surface, not an algorithm spec.
 
-<a id="m4--shortlist-selector-output"></a>
+
 
 ##### G.1:4.2.4 - M4 — Shortlist (selector output)
 
@@ -180,7 +180,7 @@ M3 MUST remain method‑agnostic in its core definition: it is an inventory surf
 **Governing pattern:** selection/dispatch semantics are governed by `G.5`.
 M4 MUST preserve *set‑return semantics* (as governed by `G.Core`) and MUST NOT hard‑code a forced singleton outcome.
 
-<a id="m5--cgframelibrary-published-bindings-index"></a>
+
 
 ##### G.1:4.2.5 - M5 — CG‑FrameLibrary (published bindings index)
 
@@ -197,7 +197,7 @@ M4 MUST preserve *set‑return semantics* (as governed by `G.Core`) and MUST NOT
 
 **Boundary:** M5 is a **kit/library surface**, not shipping. If a shipped pack is needed, governing-definition assignment is `G.10`.
 
-<a id="m6--refreshreadiness-card-telemetry-hooks--wiring"></a>
+
 
 ##### G.1:4.2.6 - M6 — RefreshReadiness Card (telemetry hooks + wiring)
 
@@ -229,7 +229,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 > Guard: `G.1:Ext.*` are **PatternScopeId** values (internal, pattern‑scoped), not new patterns and not new `PatternId`.
 
-<a id="gpatternextension--g1extharvesterwiring"></a>
+
 
 ##### G.1:4.4.1 - GPatternExtension — `G.1:Ext.HarvesterWiring`
 
@@ -251,7 +251,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 **RSCRTriggerSetIds:** `{GCoreTriggerSetId.SoTAHarvestSynthesis}`
 **Notes (wiring‑only):** harvesting semantics (living review funnels, inclusion policy families, SoS indicator families, etc.) are defined by `G.2` and are not duplicated in `G.1`.
 
-<a id="gpatternextension--g1extshortlistwiring"></a>
+
 
 ##### G.1:4.4.2 - GPatternExtension — `G.1:Ext.ShortlistWiring`
 
@@ -274,7 +274,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 **Notes (wiring‑only):** `G.1` does not redefine selection: it binds M4’s output surface to the `G.5` selector/dispatcher kernel.
 
-<a id="gpatternextension--g1extcreativitychr"></a>
+
 
 ##### G.1:4.4.3 - GPatternExtension — `G.1:Ext.CreativityCHR`
 
@@ -292,7 +292,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 **Notes (wiring‑only):** `G.1` only records which creativity characteristics are used for M3/M4 wiring; legality/typing lives in the CHR governing definitions.
 
-<a id="gpatternextension--g1extnqd"></a>
+
 
 ##### G.1:4.4.4 - GPatternExtension — `G.1:Ext.NQD`
 
@@ -316,7 +316,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 **Notes (wiring‑only):** QD/QD‑adjacent algorithm families and their parameterisations belong to `C.18 and C.19`; `G.1` only fixes the pins needed to make the VariantPool and Shortlist reproducible.
 
-<a id="gpatternextension--g1extopenendedfamilywiring"></a>
+
 
 ##### G.1:4.4.5 - GPatternExtension — `G.1:Ext.OpenEndedFamilyWiring`
 
@@ -339,7 +339,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 **Notes (wiring‑only):** this block enables declared sets of `{Environment, MethodFamily}` pairs without redefining generator semantics in `G.1`; it should cite/align with the selector‑side wiring in `G.5:Ext.OpenEndedFamilyWiring`.
 
-<a id="gpatternextension--g1extrefreshwiring"></a>
+
 
 ##### G.1:4.4.6 - GPatternExtension — `G.1:Ext.RefreshWiring`
 
@@ -359,7 +359,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 **RSCRTriggerSetIds:** `{GCoreTriggerSetId.RefreshOrchestration}`
 **Notes (wiring‑only):** M6 declares readiness and wiring; orchestration semantics (queueing, prioritisation, cadence) are governed by `G.11`.
 
-<a id="gpatternextension--g1extshippingwiring"></a>
+
 
 ##### G.1:4.4.7 - GPatternExtension — `G.1:Ext.ShippingWiring`
 

@@ -114,7 +114,7 @@ Reconsider this choice if an intended reader cannot fill a decisive relation fro
 - B.5 connects the interpreted question to construction, inference, observation and a useful continuation.
 - A.7.1 supplies consequence-guided ontological repair when a working claim gives a defeated engineering result.
 
-[fpf-b5-5-1-ref]: B.5-Canonical-Reasoning-Cycle.md#b551---a-counterexample-becomes-a-constructive-mathematical-question
-[fpf-b5-4-1-1-ref]: B.5-Canonical-Reasoning-Cycle.md#b5411---propose-a-first-model
+[fpf-b5-5-1-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b551---a-counterexample-becomes-a-constructive-mathematical-question
+[fpf-b5-4-1-1-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b5411---propose-a-first-model
 
 ### B.5.4:End

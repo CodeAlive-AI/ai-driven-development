@@ -45,7 +45,7 @@
 - [C.19 - Explore-Exploit Live-Pool Governor](35-c-19---explore-exploit-live-pool-governor.md) (414 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](36-c-19-1---bitter-lesson-preference.md) (156 lines) — One-screen purpose (manager-first).
 - [C.19.2 - Use-Bounded Apparatus Application](37-c-19-2---use-bounded-apparatus-application.md) (170 lines) — Type: Architectural (A)
-- [C.20 - Composition of U.Discipline (Discipline-CAL)](38-c-20---composition-of-u-discipline.md) (362 lines) — <a id="e24uk-settlement"</a
+- [C.20 - Composition of U.Discipline (Discipline-CAL)](38-c-20---composition-of-u-discipline.md) (362 lines) — U.Discipline is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate...
 - [C.21 - Field Health & Structure (Discipline-CHR)](39-c-21---field-health-structure.md) (265 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline without collapsing the result into taste, anecdotes, a...
 - [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](40-c-22---task-typing-and-tasksignature-assignment.md) (384 lines) — Purpose. Declare an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
 - [C.22.1 - Task-family adaptation signature](41-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
@@ -100,7 +100,7 @@
 - [C.38 - Construct Comparable Ways to Obtain One Result](90-c-38---construct-comparable-ways-to-obtain-one-result.md) (202 lines) — Normativity: Normative unless explicitly marked informative
 - [C.39 - Find and Develop a Way to Obtain a Result](91-c-39---find-and-develop-a-way-to-obtain-a-result.md) (298 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.39.RO - Turn a Construction into a Reusable Operation](92-c-39-ro---turn-a-construction-into-a-reusable-operation.md) (214 lines) — Normativity: Normative
-- [C.40 - Develop Branching Search from Reusable Material](93-c-40---develop-branching-search-from-reusable-material.md) (875 lines) — Normativity: Normative unless explicitly marked informative.
+- [C.40 - Develop Branching Search from Reusable Material](93-c-40---develop-branching-search-from-reusable-material.md) (909 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.40.CD - Develop Problems and Ways of Solving Them Together](94-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (216 lines) — Normativity: Normative
 - [C.40.CU - Develop a Useful and Reproducible Use of a Construct](95-c-40-cu---develop-a-useful-and-reproducible-use-of-a-constru.md) (255 lines) — Normativity: Normative
 - [C.36.P - Clarify Cultural-Evolution Wording for a Claim or Action](96-c-36-p---clarify-cultural-evolution-wording-for-a-claim-or-a.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration

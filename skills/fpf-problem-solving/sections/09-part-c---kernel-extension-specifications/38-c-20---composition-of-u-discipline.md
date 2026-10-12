@@ -2,7 +2,7 @@
 > **Status:** Stable
 > **Type:** Pattern
 
-<a id="e24uk-settlement"></a>
+
 
 ### C.20:11 - E.24.UK settlement
 

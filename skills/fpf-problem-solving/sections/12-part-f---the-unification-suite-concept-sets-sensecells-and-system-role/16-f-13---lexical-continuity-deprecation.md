@@ -203,7 +203,7 @@ Let `meaningOf(ℓ)` recover the exact `<ReferenceScheme, LocalSenseClaim>` proj
 
 Two expressions with the same `meaningOf`, intended use and independently governed value where applicable may receive a rename. A changed `LocalExpression` still changes the exact F.17 cell. An external label change preserves a cell only when the target coordinate itself is unchanged.
 
-<a id="f13122--local-alias"></a>
+
 
 #### F.13:12.2 - Local alias
 
