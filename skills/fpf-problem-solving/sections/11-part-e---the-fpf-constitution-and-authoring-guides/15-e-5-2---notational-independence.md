@@ -1,5 +1,7 @@
 ## E.5.2 - Notational Independence
 
+> **Status:** Stable
+
 ### E.5.2:1 - Problem frame
 
 Use this pattern when expressing FPF content or using another expression to carry that content. Keep the conceptual meaning recoverable while choosing an expression that supports the intended work. A diagram, calculus or sequence of learned signs may help a reader reason or construct a result. A single expression needs an explanation of its interpretation; a semantic mapping is needed when expressions are compared or one is translated, substituted or relied on as carrying the other's content.

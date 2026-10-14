@@ -1,5 +1,7 @@
 ## E.5 - Four Guard‑Rails of FPF
 
+> **Status:** Stable
+
 ### E.5:1 - Problem frame
 FPF positions itself as a **timeless, universal “operating system for
 thought.”**  Collaborative projects of this scope face four predictable

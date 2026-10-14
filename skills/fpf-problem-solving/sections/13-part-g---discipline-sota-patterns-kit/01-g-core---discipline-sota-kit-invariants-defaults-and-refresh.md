@@ -1,5 +1,7 @@
 ## G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)
 
+> **Status:** Stable
+
 
 **Tag.** Architectural pattern (Part‑G core invariants hub; refactoring/deduplication)
 **Stage.** *design‑time* (authoring discipline + ID‑stable citation discipline; no run‑time mechanism)

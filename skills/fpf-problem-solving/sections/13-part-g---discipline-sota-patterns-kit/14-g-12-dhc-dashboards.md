@@ -1,5 +1,7 @@
 ## G.12 — DHC Dashboards (Discipline-Health Time Series and Views)
 
+> **Status:** Stable
+
 **Tag:** Architectural kit pattern; notation-independent.
 
 **Stage:** optional series authoring → measurement and series-update Work when needed → representation → optional publication and refresh.

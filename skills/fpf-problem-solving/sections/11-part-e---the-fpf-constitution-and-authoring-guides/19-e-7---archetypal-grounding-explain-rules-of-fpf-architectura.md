@@ -1,5 +1,7 @@
 ## E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases
 
+> **Status:** Stable
+
 ### E.7:1 - Problem frame
 Universal rules are powerful only when readers can grasp them. In FPF the
 Conceptual Core speaks in substrate‑agnostic language: `U.Holon`,

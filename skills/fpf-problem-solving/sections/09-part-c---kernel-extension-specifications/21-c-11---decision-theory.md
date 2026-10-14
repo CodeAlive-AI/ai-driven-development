@@ -684,6 +684,8 @@ Worked-slice discipline from these rows:
 
 ### C.11:12 - Relations
 
+C.11.MV constructs a Method-option worth comparison, preserving the receiving result, present alternative, learning and transition effort, recurring support and distribution of burden. It uses this choice discipline and C.11.DUA where a demanded inquiry or requirement itself needs appraisal.
+
 - **Builds on:** `A.6.P`, `A.6.5`, `A.10`, `A.13`, `A.18`, `A.19`; **coordinates with:** `E.10.LRN` for learning-word recovery, `C.11.CRC` for a missing finite configuration-relative comparison claim, `C.17` for bounded characterization
 - **Read next when candidate work is needed:** `C.38` for forming complete ways of obtaining one result, `C.39` for a missing explanation of how to obtain it, or `C.40` for feasible variation and examination of usable material. Use `C.18` when generation-account or archive/front claims are needed.
 - **Other neighboring questions:** `C.19` for one explicit pool-policy result over exploration or exploitation governance; `C.24` for one enactment-facing call plan or `CheckpointReturn`; `G.5` for the selector-facing result kind that is actually current—retained alternatives, all-member joint use, narrowed handoff, abstain, or escalation; and `C.28` when the choice result depends on causal-use support

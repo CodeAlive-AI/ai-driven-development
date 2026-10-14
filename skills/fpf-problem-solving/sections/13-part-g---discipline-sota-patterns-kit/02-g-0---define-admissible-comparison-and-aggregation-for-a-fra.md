@@ -1,5 +1,7 @@
 ## G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec)
 
+> **Status:** Stable
+
 **Tag.** Architectural pattern (foundational Standard; constrains G.1–G.5)
 **Stage.** *design-time* legality gate (establishes comparison legality & evidence minima; constrains run-time gates)
 **Primary output.** `CG‑Spec` — a notation-independent legality gate for a `CG‑Frame`, published to UTS (with explicit edition pins for downstream reproducibility and RSCR).

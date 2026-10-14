@@ -1,5 +1,7 @@
 ## A.13 - The Agential Role & Agency Spectrum
 
+> **Status:** Stable
+
 ### A.13:0 - Use This When
 
 Use this pattern when a precise claim of agency matters: which System qualifies for a local goal-directed system-role kind, and which assignment actually holds for the action in question? Start with that System, the kind and criterion it satisfies, the obtaining assignment, and only the scope, situation and window the use needs. Keep the evidence for those facts recoverable. The first result is a supported agency claim, not a five-characteristic measurement exercise.

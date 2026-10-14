@@ -2,7 +2,9 @@
 
 > **One-line summary.** `KindAT` is an informative editorial facet on one local `U.Kind`. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor, assurance coverage, bridge expectations, catalog search, and refactoring. KindAT is not a Characteristic: it has no algebra or threshold and never appears in guards or composition. It changes neither the kind, a `KindSignature`, a classification judgment, an extension representation, nor F–G–R.
 
-**Status.** Informative for anchors, heuristics, examples, and guidance; normative only for the usage rules that prohibit guard/composition use and constrain placement.
+**Normativity:** Informative for anchors, heuristics, examples, and guidance; normative only for the usage rules that prohibit guard/composition use and constrain placement.
+
+> **Status:** Stable
 
 **Placement.** Part C (Kinds), identifier **C.3.5**. Audience: engineering managers, architects, editors, and assurance leads.
 

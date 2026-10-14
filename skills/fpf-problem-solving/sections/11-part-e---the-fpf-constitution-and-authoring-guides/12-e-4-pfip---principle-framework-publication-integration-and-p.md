@@ -31,7 +31,7 @@ First, an accepted source contribution may never reach the candidate, or it may 
 
 Publication plurality makes the second failure harder to see:
 
-- one framework edition can be exposed through a sequential monolith, extracted pattern texts, reader-entry and Preface forms, cards, diagrams, or retrieval forms;
+- one framework edition can be exposed through a sequential monolith, extracted pattern texts, reader-entry and Architectural Reference forms, cards, diagrams, or retrieval forms;
 - two forms can serve the same broad use without being versions of one another;
 - a text diff can expose changed sentences but not a lost diagram relation, card field, retrieval cue, or admitted operation;
 - splitting or merging forms can make a predecessor form disappear even though its content still needs a disposition; and
@@ -73,6 +73,8 @@ Identify:
 - every predecessor expression whose continuity, replacement, retirement, split, merge, or use change is claimed.
 
 Complete the accepted input set before assembly. If one source contribution changes a public entry, required input, result, field meaning, action order, stop, return, or another consumed interface, either include the affected public entries and direct consumers in this candidate or leave that contribution out until they can be updated with it.
+
+Before assigning a receiving passage, recover the content architecture that makes that receiver appropriate. Method placement and architectural-account placement answer different questions. The former follows the Method's subject, generality and required contributions under E.4 and E.4.PFAD; the latter follows the named whole explained under E.11.DSG:4.1. An account connecting Core and domain languages can belong to a Library account even when the general Method it explains belongs in Core. Retiring a separate carrier supplies neither placement decision. If the receiver is not justified, return that architecture question before treating a content match as an accepted allocation.
 
 For each accepted source contribution, record the candidate publication-form expression and the passage, field, relation, cue, or selected structure intended to incorporate it. A source contribution with no corresponding predecessor content is an accepted addition. Changing or retiring predecessor content needs an accepted content decision; changing or retiring a publication form is not such a decision.
 
@@ -125,7 +127,7 @@ An accepted publication-form addition, retirement, split, merge, or use-change d
 Run a separate allocation comparison for every accepted form change that leaves an affected predecessor expression outside an eligible one-to-one pair, and for every split or merge even when narrower pairs survive.
 
 1. Select a complete inventory for every predecessor expression named by the form-change decision.
-2. For every named predecessor content or selected structure, record one or more corresponding candidate expression parts, an accepted content-change or content-retirement decision, an accidental-loss result, or a blocker.
+2. For every named predecessor content or selected structure, use the receiving subject and publication function established in section 4.1, then record one or more corresponding candidate expression parts, an accepted content-change or content-retirement decision, an accidental-loss result, or a blocker. A complete textual match establishes correspondence, not the receiver's architectural suitability.
 3. Allow predecessor content to appear in several candidate expressions and several predecessor inventory entries to correspond to one candidate expression part.
 4. Inspect the complete inventories of the named candidate expressions and classify candidate content or selected structure without a predecessor allocation as accepted or unexpected additions.
 5. Reuse an eligible-pair result as correspondence evidence when applicable, but do not let it replace the allocation traversal.
@@ -160,6 +162,8 @@ When the framework publication has no predecessor, perform the accepted-source c
 **Show — architecture diagram.** One FPF architecture-diagram form is replaced one-to-one by a candidate diagram for the same orientation use. The diagrams have no useful line diff. The maintainer uses the FPF pattern that defines or constrains that diagram form to select named framework parts, dependency edges, and legend distinctions for the inventory. The maintainer uses `C.33` to record captured and lost structure and `C.34` to record the declared correspondence. One predecessor dependency edge has no candidate correspondent, so similar layout cannot support a positive conclusion.
 
 **Show — local practice framework.** An LPF candidate replaces a repeated general explanation with a reference to a new FPF method. The accepted-source comparison passes. The predecessor comparison still checks the LPF's local recovery cue, concrete work-size limit, and tool-specific stop because the general FPF method does not include those local actions. Removing them would be loss, not successful deduplication.
+
+**Show — a thematic account changes carrier.** A Library removes a separately published account that connects general development Methods, human learning and organizational change. The general development construction belongs in Core; the human and organizational mechanisms remain in their DPFs. The account explains their combined use, so its receiver is the Library Architectural Reference. Copying every paragraph into Core would preserve the words but change which whole Core claims to explain. The allocation first establishes these receivers, then checks the complete transferred account, the retained domain Methods and the updated current returns. A different passage explaining only the connections among Core patterns can remain in the Core account.
 
 ### E.4.PFIP:6 - Bias-Annotation
 

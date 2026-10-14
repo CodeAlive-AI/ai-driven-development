@@ -1,7 +1,7 @@
 ## B.1.5.RS - Evaluate a Constituent Method Replacement in Its Encompassing Uses
 
 > **Type:** Method pattern
-> **Status:** Candidate
+> **Status:** Stable
 
 ### B.1.5.RS:1 - Problem frame
 

@@ -1,5 +1,7 @@
 ## E.5.1 - DevOps Lexical Firewall
 
+> **Status:** Stable
+
 ### E.5.1:1 - Problem frame
 The FPF Core is meant to remain valid across decades and technology
 generations.  Implementation details—file formats, build pipelines,

@@ -2,7 +2,9 @@
 
 > **One-line summary.** Use a `KindUseAdaptationDeclaration` when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base `KindSignature` edition, local candidate constraints or vocabulary bindings, intended guard use, and applicability. Check admissibility before returning `true`, `false`, or `unknown`. A locality change first triggers kind-identity comparison: the same kind needs no `KindBridge`; distinct kinds need one only when its exact correspondence predicate obtains.
 
-**Status.** Normative in **Part C**. Identifier **C.3.4**.
+**Normativity:** Normative in **Part C**. Identifier **C.3.4**.
+
+> **Status:** Stable
 **Audience.** Engineering managers, architects, reviewers, and editors.
 
 ### C.3.4:0 - Use This When

@@ -2,7 +2,9 @@
 
 > **One-line summary.** A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no `KindBridge` is needed. When two independently identified kinds are distinct and a directional correspondence predicate holds, one `KindBridge` direct relation may obtain. A separate bridge-assertion episteme states direction, paired declaration editions, preservation or loss, `CL^k`, evidence, and admitted use. It never transfers source classification truth.
 
-**Status.** Normative in **Part C**. Identifier **C.3.3**.
+**Normativity:** Normative in **Part C**. Identifier **C.3.3**.
+
+> **Status:** Stable
 **Audience.** Engineering managers, architects, assurance leads, editors.
 
 **Depends on.**

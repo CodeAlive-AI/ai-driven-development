@@ -399,6 +399,8 @@ These rows answer the B.1.5 practice question: how to decide and expose order-se
 
 ### B.1.5:12 - Relations
 
+B.1.5.CM constructs the prospective whole, constituent contributions, joins and boundary account that this qualification consumes. C.32.MWA.PP separately compares performance and provision arrangements. Useful cooperation or a shared provider does not supply a missing Method whole.
+
 - Uses `A.1` for the general non-agentive-holon recognition boundary; A.1 does not supply Method-part or whole-forming facts.
 - Uses `A.3.1` to identify the exact candidate Method and every exact part Method before B.1.5 tests the composite-method qualification; B.1.5 directly governs only `MethodPartOfRelation` and the composite-construction test.
 - Uses `A.6.RCD` for serial, parallel, guarded, iterative, fallback, adapter, join, substitution, and other whole-forming claims. Existing direct predicates, local compound claims, and reusable predicate definitions are valid stopping results; only a named occurrence-semantics need requires `E.24 for a kind candidate` and `E.24.UK`.

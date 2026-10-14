@@ -1,5 +1,7 @@
 ## E.5.4 - Cross‑Disciplinary Bias Audit
 
+> **Status:** Stable
+
 ### E.5.4:1 - Problem frame
 FPF calls itself trans‑disciplinary, but every author carries implicit
 metaphors from a source domain. If those metaphors leak into “universal”

@@ -1,5 +1,7 @@
 ## G.1 - Author a Reusable CG-Frame Generator and Selector Kit
 
+> **Status:** Stable
+
 **Tag.** architectural pattern; *generator chassis* (design‑time kit / authoring scaffold)
 **Normativity.** normative, except sections explicitly marked *informative*
 **Stage.** *design‑time* authoring of a generator‑kit with a *run‑time* execution façade (policy‑governed; edition‑aware)

@@ -1,5 +1,7 @@
 ## B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation
 
+> **Status:** Stable
+
 **At a glance.** Use B.1.3 to compose exact `U.Episteme` inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and the warrant each source actually contributes.
 
 **Use this when.** Use this pattern when a named synthesis or compilation use depends on how claims, models, datasets, or arguments are combined, and the aggregation must keep source, mapping, conflict, order, and temporal qualifications inspectable.

@@ -10,11 +10,13 @@ FPF is a **thinking amplifier** — it helps you plan deeper and make better dec
 
 ## How it works
 
-This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (14 directories, 405 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a starting point or practical entry, applying a pattern to its first useful result, discovering Systems that may bear consequences, recovering candidate Methods from Work evidence, disambiguating agent-relative instructions, steering or resuming ongoing Work, making applicable methods noticeable, initiating inquiry from ordinary work, developing a line of thought through working notes, coordinating development states, bridging domain terms, recovery-testing Work-performance configurations, screening mandatory workflow steps for operational relevance, comparing finite configuration changes, reconsidering a decision when its relied-on basis changes, appraising advice and evidence demands for a recipient’s decision, clarifying learning/development/evolution claims, probing apparent capability loss before redevelopment, navigating a DPF Suite Reference, revalidating affected uses after source changes, requesting bounded specialist results, selecting representations for one use, constructing comparable ways to obtain one result, assembling framework publication forms or connected methods, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causal-model construction, actual temporal structure, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. Current navigation also covers reader-extractable structural information (C.2.8), Architectural Rationale and profile choices, retargeting with separate bounded-use assertions and current-case judgments, and cross-context reuse with assurance requirements determined by the stated use. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
+This skill functions as **agentic RAG** — retrieval-augmented generation driven by the agent itself, with no external vector database or embedding pipeline. The upstream FPF specification is split into a two-level hierarchy (14 directories, 446 files). SKILL.md provides a thinking-verb router that maps the user's intent to the right section, including choosing a starting point or practical entry, applying a pattern to its first useful result, discovering Systems that may bear consequences, recovering candidate Methods from Work evidence, disambiguating agent-relative instructions, steering or resuming ongoing Work, making applicable methods noticeable, initiating inquiry from ordinary work, developing a line of thought through working notes, coordinating development states, bridging domain terms, recovery-testing Work-performance configurations, screening mandatory workflow steps for operational relevance, comparing finite configuration changes, reconsidering a decision when its relied-on basis changes, appraising advice and evidence demands for a recipient’s decision, clarifying learning/development/evolution claims, probing apparent capability loss before redevelopment, navigating a Architectural Reference, revalidating affected uses after source changes, requesting bounded specialist results, selecting representations for one use, constructing comparable ways to obtain one result, assembling framework publication forms or connected methods, synthesizing architecture across non-isomorphic practice structures, developing capability for named Work, synthesizing source ontologies without flattening their local meanings, recovering project/process/case subjects and roles, tracing outside-use dependencies, distinguishing relations from occurrences, transforming epistemes, reasoning about decisions, causal-model construction, actual temporal structure, time, architecture, and structural adequacy, publishing stable multi-view artifacts, governing ontic admission, refreshing SoTA packs, and tracing provenance. Current navigation also covers reader-extractable structural information (C.2.8), Architectural Rationale and profile choices, retargeting with separate bounded-use assertions and current-case judgments, and cross-context reuse with assurance requirements determined by the stated use. The agent then navigates `_index.md` files to pick the narrowest sub-section and loads only that into context. The agent is the retriever, the router, and the reasoner — all in one loop.
 
 Navigation also covers how constituent actions enact encompassing work (B.1.5.EW), whether constituent-method replacements preserve their receiving uses (B.1.5.RS), first models and theory use, reasoning revision, physical/mathematical/computational connections, measurement construction and repair, object reidentification, predictive information, reusable operations, and branching search. Symmetry comparisons are covered by C.29.1, and clarification of model/explanation uses by E.10.
 
 Navigation also covers bounded recorded-history replay of continuation rules (C.40:4.8.1), no-change comparisons for apparent improvement (E.23:4.1.1), rebuilding affected evidence after evaluation changes (E.23:4.1a), and improving the methods used for further development (E.23:5.1).
+
+Navigation also covers method recovery from documentary sources, contribution qualification, Work trials, coherence, fit and transfer, variants and introduction (A.3.1), descriptions (A.3.2.DE), composite methods (B.1.5.CM), substantive discussion (B.5.SD), methodological support (A.15.8.MS), method worth and provision arrangements, representation profiles, method culture, development requirements and repertoires, opportunity inquiry and joint reachability (C.39–C.40), checklist questions and shared checking (C.41), connected-method pattern languages (E.8.ML), and method contribution synthesis and coverage (F.0.2.MA/RC).
 
 ## Install
 
@@ -30,10 +32,10 @@ sections/
     _index.md                          # TOC with descriptions of all sub-sections
     01-a-0---generative-search-onboarding-glossary.md
     02-a-1---recognize-a-whole-with-parts.md
-    ...                                # 30 sub-sections total
+    ...                                # 38 sub-sections total
   09-part-c---kernel-extension-specifications/
     _index.md
-    ...                                # 97 sub-sections
+    ...                                # 124 sub-sections
   ...                                  # 14 directories total
 ```
 
@@ -46,19 +48,19 @@ The agent reads `_index.md` first, picks the right sub-section file, and loads o
 | 01 | Title page | 0 |
 | 02 | Table of Contents | 0 |
 | 03 | FPF Readme | 12 |
-| 04 | Preface | 22 |
-| 05 | Part A — Kernel Architecture | 30 |
+| 04 | Architectural Reference | 22 |
+| 05 | Part A — Kernel Architecture | 38 |
 | 06 | A.IV.A — Signature Stack & Boundary | 29 |
-| 07 | A.V — Constitutional Principles | 49 |
-| 08 | Part B — Trans-disciplinary Reasoning | 41 |
-| 09 | Part C — Kernel Extensions | 97 |
+| 07 | A.V — Constitutional Principles | 50 |
+| 08 | Part B — Trans-disciplinary Reasoning | 43 |
+| 09 | Part C — Kernel Extensions | 124 |
 | 10 | Part D — Ethics & Conflict | 5 |
-| 11 | Part E — Constitution & Authoring | 69 |
-| 12 | Part F — Unification Suite | 22 |
+| 11 | Part E — Constitution & Authoring | 70 |
+| 12 | Part F — Unification Suite | 24 |
 | 13 | Part G — SoTA Patterns Kit | 15 |
 | 14 | Part H — Reserved | 0 |
 
-Counts follow upstream H2 headings. The Preface has 21 content sections plus the content-free `FPF.Preface:End` boundary marker.
+Counts follow upstream H2 headings. The Architectural Reference has 21 content sections plus the content-free `FPF.Reference:End` boundary marker.
 
 ## Updating after FPF spec changes
 
@@ -95,4 +97,4 @@ on the skill file itself.
 
 ## License
 
-Skill packaging and splitter: MIT. Adapted from *First Principles Framework (FPF)* by Anatoly Levenchuk, [ailev/FPF](https://github.com/ailev/FPF), upstream commit `f2bc67dd6f3d8525bc63965a98165abf59b48e2f`. The FPF specification text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the specification was split into section files with generated navigation indexes, and `SKILL.md` adds an agent-oriented router and usage instructions. This adaptation is not endorsed by the FPF author.
+Skill packaging and splitter: MIT. Adapted from *First Principles Framework (FPF)* by Anatoly Levenchuk, [ailev/FPF](https://github.com/ailev/FPF), upstream commit `7d0a78002c04f2337283b97d707991c888013a73`. The FPF specification text is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see the [upstream licensing scope](https://github.com/ailev/FPF/blob/main/LICENSING.md). Changes: the specification was split into section files with generated navigation indexes, and `SKILL.md` adds an agent-oriented router and usage instructions. This adaptation is not endorsed by the FPF author.

@@ -37,10 +37,12 @@ Section INDEX and README tables.
 After generation, record the upstream commit hash and verify both the generated Markdown
 file total and every per-section H2 count against SKILL.md, README.md, and README-RU.md.
 Counts follow all emitted H2 headings, including content-free publication boundaries such as
-`FPF.Preface:End`; explain those markers in the navigation docs rather than counting them as
+`FPF.Reference:End`; explain those markers in the navigation docs rather than counting them as
 new thinking patterns or omitting them from generated output.
 Review upstream licensing notices when they change; keep README attribution, license links,
 and the distinction between specification content and skill packaging accurate.
+
+Track publication-label changes as well as new patterns: the non-normative Architectural Reference uses `FPF.Reference:*` identifiers. When method-development or checklist suites grow, route their distinct thinking needs through existing rows where possible and verify each cited PatternID against the generated headings.
 
 ### 1. Description field (YAML frontmatter)
 

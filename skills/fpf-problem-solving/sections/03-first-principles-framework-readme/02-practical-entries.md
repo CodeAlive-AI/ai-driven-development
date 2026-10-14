@@ -18,7 +18,7 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 - **Question:** What candidate explanation is supported, which real rivals remain, and which uncertainty can change the intended use?
 - **First useful result or blocker:** One source-traceable provisional account per candidate with real rivals and relevant gaps—or an honest record-only result. Include a useful distinguishing question when it changes recovery or receiving use; designing or undertaking a study is a separate choice.
 - **Start with:** `A.3.1.MR`.
-- **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1` or specialist `ME.18` only when that later use is current.
+- **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1`, or to `RMP.10` for a needed empirical programme or `RMP.11` for a needed historical inquiry, only when that further use is current.
 
 ### PROFESSIONAL-RESULT — Use one result from another practice without transferring the decision
 
@@ -239,7 +239,7 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **First useful result or blocker:** One source-linked SoTA view, live option set, reuse route, framework decision, or exact missing scope or maintenance basis.
 - **Mantra:** Name the practical question, scope, freshness need, and rival traditions. Build a source-linked plural view; preserve disagreement, source-use limits and constructions; compare useful approaches; try cheaper reuse or contribution first; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
 - **Start with:** `G.2`; add `C.18`, `C.19`, or `G.5` for the set and the E.4/E.9 authoring route only if a framework is selected.
-- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Preface:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use. A source pack or proposal is not a framework by appearance.
+- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Reference:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use. A source pack or proposal is not a framework by appearance.
 
 #### SYSTEM-DELIMITATION — Separate parts, selected boundary, and crossings
 

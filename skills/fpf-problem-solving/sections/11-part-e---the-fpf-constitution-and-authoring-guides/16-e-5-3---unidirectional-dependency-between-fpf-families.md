@@ -1,5 +1,7 @@
 ## E.5.3 - Unidirectional Dependency between FPF Families
 
+> **Status:** Stable
+
 ### E.5.3:1 - Problem frame
 FPF separates artefacts into stable **Conceptual Core**, executable
 **Tooling Reference**, and fast‑evolving **Pedagogical Companion** (see

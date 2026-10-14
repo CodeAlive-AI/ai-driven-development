@@ -1,5 +1,7 @@
 ## A.9 - Choose and Check an Aggregation Law for the Intended Result
 
+> **Status:** Stable
+
 ### A.9:1 - Context
 
 **Use this when** a receiving decision needs a combined result, but the law that gives the proposed operation its meaning or preserves a needed property is unresolved. The same input values can support different operations: component success probabilities combine differently for “both succeed” and “at least one succeeds”. Reordering functions can change their result even when the notation looks like an ordinary fold.
