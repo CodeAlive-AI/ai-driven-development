@@ -1,6 +1,6 @@
 ## Start here
 
-Before selecting framework guidance, read and apply [Using FPF and its DPF Suites](https://github.com/ailev/FPF/blob/main/USING-FPF.md). This instruction applies to project work, framework development, review and coordination. It explains how to find and read relevant content in the publications available to you, including when an interface cannot retrieve a large file.
+Before selecting framework guidance, read and apply [Using FPF Library](https://github.com/ailev/FPF/blob/main/USING-FPF.md). This instruction applies to project work, framework development, review and coordination. It explains how to find and read relevant content in the publications available to you, including when an interface cannot retrieve a large file.
 
 When an AI agent assists you, put this requirement and the instruction's location in your project's `AGENTS.md` or equivalent instructions. If a reading test explicitly limits its reader to an isolated excerpt, use only the materials supplied for that test; do not add USING-FPF.md unless the test includes it.
 

@@ -9,7 +9,7 @@ description: "Use First Principles Framework (FPF) to decompose problems, archit
 
 This skill adapts *First Principles Framework (FPF)* by Anatoly Levenchuk,
 [ailev/FPF](https://github.com/ailev/FPF), upstream commit
-`7d0a78002c04f2337283b97d707991c888013a73`. The FPF specification text in
+`b40c9df9e856c1c8c6a12f93ed8b310265007f68`. The FPF specification text in
 `sections/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 Changes: the specification was split into section files and given generated navigation
 indexes; this `SKILL.md` adds an agent-oriented router and usage instructions.

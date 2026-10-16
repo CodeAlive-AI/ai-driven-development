@@ -1,9 +1,9 @@
 ## Citation
 
 
-If you use FPF, please cite:
+To cite this Core specification, use:
 
 ```text
-Levenchuk, Anatoly. First Principles Framework (FPF).
+Levenchuk, Anatoly. First Principles Framework (FPF Core). In FPF Library.
 GitHub repository: https://github.com/ailev/FPF
 ```
