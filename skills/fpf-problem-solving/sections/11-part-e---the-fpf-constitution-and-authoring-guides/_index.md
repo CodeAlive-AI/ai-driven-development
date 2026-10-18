@@ -22,7 +22,7 @@
 - [E.5.4 - Cross‑Disciplinary Bias Audit](17-e-5-4---cross-disciplinary-bias-audit.md) (86 lines) — FPF calls itself trans‑disciplinary, but every author carries implicit
 - [E.6 - Didactic Architecture of the FPF Specification](18-e-6---didactic-architecture-of-the-fpf-specification.md) (83 lines) — FPF addresses readers who differ in at least two respects:
 - [E.7 - Archetypal Grounding: Explain Rules of FPF Architectural Patterns through Cases](19-e-7---archetypal-grounding-explain-rules-of-fpf-architectura.md) (79 lines) — Universal rules are powerful only when readers can grasp them. In FPF the
-- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (841 lines) — Type: Architectural (A)
+- [E.8 - FPF Authoring Conventions & Style Guide](20-e-8---fpf-authoring-conventions-style-guide.md) (854 lines) — Type: Architectural (A)
 - [E.8.ML - Construct a Pattern Language for Connected Methods](21-e-8-ml---construct-a-pattern-language-for-connected-methods.md) (166 lines) — Use this when. The Method-related content has been recovered and allocated, but one linear description does not give recurring users the independent problem entries, neighboring decisions or source...
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](22-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](23-e-9---design-rationale-record-for-fpf-content-decisions.md) (404 lines) — Type: Governance and authoring pattern
@@ -42,7 +42,7 @@
 - [E.11.PUR - Pattern-Use Applicability, Recommendation, and Coordination](37-e-11-pur---pattern-use-applicability-recommendation-and-coor.md) (338 lines) — Type: Pattern-language use pattern (E)
 - [E.11.PFP - Framework Publication Form Profile for Markdown](38-e-11-pfp---framework-publication-form-profile-for-markdown.md) (226 lines) — Type: Specialization of E.11
 - [<FrameworkCode>.Reference:<n> - <Title>](39-frameworkcode-reference-n---title.md) (133 lines) — For example, ## STR.Reference:1 - Problem frame - Direction and commitment under changing conditions identifies the first section of a Strategy architectural-reference unit whose key is Reference....
-- [E.11.DSG - Architectural Reference](40-e-11-dsg---architectural-reference.md) (258 lines) — Type: Specialization of E.11 (E)
+- [E.11.DSG - Architectural Reference](40-e-11-dsg---architectural-reference.md) (264 lines) — Type: Specialization of E.11 (E)
 - [E.12 - Didactic Primacy & Cognitive Ergonomics](41-e-12---didactic-primacy-cognitive-ergonomics.md) (117 lines) — Use this pattern in either of two working situations:
 - [E.13 - Pragmatic Utility and Proxy-to-Value Alignment](42-e-13---pragmatic-utility-and-proxy-to-value-alignment.md) (195 lines) — Type: Part E FPF evaluation and repair pattern
 - [E.14 - Human-Centric Working-Model: Readable Claims and Recoverable Assurance](43-e-14---human-centric-working-model-readable-claims-and-recov.md) (354 lines) — Use this pattern when FPF text needs to stay readable as one human working model while heavier mapping, logical, constructive, or empirical assurance remains recoverable underneath it.
