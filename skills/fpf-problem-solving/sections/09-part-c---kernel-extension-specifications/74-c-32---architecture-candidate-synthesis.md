@@ -40,6 +40,8 @@ Use C.32 only for candidate palette construction. Do not use it to ground the ar
 
 Use `C.32.MWA` instead when several structures of Methods, Work, subjects and their descriptions, capabilities and providers, and cultural change do not line up one-for-one and the needed result is one usable practice architecture. Keep C.32 for a palette of candidate configurations for one grounded architecture question.
 
+For control alternatives whose observations, decisions and interventions must work together under information, time, resource and authority constraints, use `C.32.LCA` to construct and compare that connection. Bring its explained alternatives into the wider palette when other selected structures also change. `C.30.LCA` addresses the separate question of which control relations a description represents and what use that description or view supports.
+
 Common exits by claim kind:
 
 - `C.30` grounds the described holon, any obtaining `ArchitectureRelation`, its selected `U.Structure`, and any separate `ArchitectureClaim`; `C.30.ASV`, `A.6.F`, and `A.6.M` recover structural views, function wording, and module-interface relations.
@@ -184,7 +186,7 @@ ArchitectureCharacteristicImprovementLoop@Project:
 | Functional demand | `FunctionalStructure` | A.6.F-recovered functional demands, dependencies, constraints, and candidate bearer pressure. | `C.30.ASV`, `A.6.F`, `C.30.TFS-REL` when flow relation is current. |
 | Constructive bearer | `ModuleInterfaceStructure`, material, manufacturing, or component relation. | Candidate modules, interface grammar, substitutability, variation slots, and fabrication burden. | `A.6.M`, `C.31`, `C.30.ASV`. |
 | Placement and locality | `PlacementDeploymentStructure` or `MaterialSpatialStructure`. | Location, latency, access, environment, maintenance, and source-return burden. | `C.30.ASV`, domain pattern when current. |
-| Control and flow | `ControlStructure` and `TransformationFlowStructure`. | Feedback, supervisor relation, rate, flow relation, crossing, and transformation relation. | `C.30.LCA`, `E.18`, `C.30.TFS-REL`, `C.27` when timing is current. |
+| Control and flow | `ControlStructure` and `TransformationFlowStructure`. | Feedback, supervisor relation, rate, flow relation, crossing, and transformation relation. | `C.32.LCA` for constructing and comparing control arrangements; `C.30.LCA` for control-description or view adequacy; `E.18`, `C.30.TFS-REL`, `C.27` when timing is current. |
 | Method, Work, local-kind or assignment, information, and evidence | Method and Work structures; relations among local system-role kinds, classifications, or assignment structures; direct allocation or responsibility relations; information and evidence structures. | Prospective enactment burden, independently established responsibility, data custody, evidence reuse, assurance pressure, and source return. | `E.10.ROLE` for unresolved wording; A.2 and A.2.1 for recovered kind, classification, or assignment; A.15 for actual Work, with F.6 only when precise assignment-bound attribution is expressly consumed; the admitted direct domain predicate or exact missing governor for responsibility; `A.10`, `B.3`, `C.25`, and `C.31` when those claims are current. |
 
 Candidate architecture changes are local C.32 entries for candidate configurations. They are not FPF work occurrences, method steps, or receiving-pattern claims. A change is admissible only when the selected structure being changed is named.

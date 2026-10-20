@@ -22,7 +22,7 @@
 - [A.15.3 - SlotFillingsPlanItem: Plan a Value for an Existing Declaration Member](17-a-15-3---slotfillingsplanitem-plan-a-value-for-an-existing-d.md) (319 lines) — Tech-name: SlotFillingsPlanItem
 - [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (489 lines) — Type: Architectural (A)
 - [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](19-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (218 lines) — Type: Architectural (A)
-- [A.15.6 - Recover What Project, Process, or Case Wording Refers To](20-a-15-6---recover-what-project-process-or-case-wording-refers.md) (398 lines) — Type: Architectural (A)
+- [A.15.6 - Recover What Project, Process, or Case Wording Refers To](20-a-15-6---recover-what-project-process-or-case-wording-refers.md) (400 lines) — Type: Architectural (A)
 - [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (206 lines) — Type: Architectural (A)
 - [A.15.8 - Work-Performance Configuration and Recovery Testing](22-a-15-8---work-performance-configuration-and-recovery-testing.md) (227 lines) — Type: Architectural (A)
 - [A.15.8.MS - Configure Methodological Support for Work](23-a-15-8-ms---configure-methodological-support-for-work.md) (326 lines) — Primary working result: a tested configuration that covers a bounded set of named-user tasks, or a truthful lower result: several retained candidates, a stated split boundary, or a missing priority...

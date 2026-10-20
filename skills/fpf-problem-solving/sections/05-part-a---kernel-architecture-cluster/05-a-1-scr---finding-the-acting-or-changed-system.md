@@ -8,7 +8,7 @@
 
 ### A.1.SCR:0 - Practitioner entry
 
-**Use this when.** Use this pattern when a decision depends on which exact system acts, is intended to change, carries a capability, persists through a lifecycle, or is being considered or designated as the project system-of-interest—and the proposed subject is still unclear. Ask: **Which exact system acts or is intended to change here, and what decision depends on treating it as a system?**
+**Use this when.** Use this pattern when a decision depends on which exact system acts, is intended to change, carries a capability, persists through a lifecycle, or is being considered for the project target-system role or as a local system-of-interest—and the proposed subject is still unclear. Ask: **Which exact system acts or is intended to change here, and what decision depends on treating it as a system?**
 
 **First useful move.** State the claim, the proposed actor or change bearer, and what you will decide differently if it is or is not a system. If the phrase already names Work, a Method, capability, transformation, episteme, structure, or a direct relation and your decision does not depend on systemhood, name that object and leave through its subject pattern. Apply the complete A.1 criterion only in the system-dependent branch.
 
@@ -20,7 +20,7 @@
 
 **Honest unknown case.** `WorkshopController-9` is an exact boxed device, but the team cannot recover its internal assembly, reidentification rule, or operating boundary. The evaluation is **unknown** and names those missing inputs; the decision that assumes an acting controller remains blocked. The entity itself satisfies or fails the criterion independently of current knowledge.
 
-**What this buys.** A real actor, change bearer, lifecycle subject, capability holder, or project system-of-interest decision gets a tested identity and boundary. A direct Work, Method, capability, structure, episteme, or relation question leaves immediately without an unnecessary A.1 evaluation. Continue through A.1.STM only if the practitioner still cannot connect this recognition result to the project's outside use; recognition alone does not open the long map.
+**What this buys.** A real actor, change bearer, lifecycle subject, capability holder, or project system-of-interest decision gets a tested identity and boundary. A direct Work, Method, capability, structure, episteme, or relation question leaves immediately without an unnecessary A.1 evaluation. Continue through A.1.STM when the shared project target and intended-use basis, or this result's connection to it, remains unresolved. Recognition alone does not require traversing the long map.
 
 **Not this pattern when.** If the subject and its admitted kind are already clear, use the subject pattern of the claim. If service or access wording hides a promise, participant, bearer, permission, Work occurrence, status, evidence, or direct relation, begin with A.6.P §4.11a. Enter A.1.SCR from that route only when the repaired claim itself depends on whether the exact entity recovered by A.6.P—an exact bearer or access-providing arrangement—is a system. If only a name for an already recoverable object is unclear, use F.18.
 
@@ -81,7 +81,7 @@ Before testing systemhood, ask whether the current decision already concerns one
 | Promise, commitment, speech act, or permission result | A.2.3, A.2.8, A.2.9, or A.2.8.PER |
 | Service/access referent, status, evidence, evaluation, delivery, acceptance, or other relation | A.6.P §4.11a and then the exact subject pattern |
 
-If this result answers the decision, stop here. Name the object, its subject pattern, and what you can now do. Do not apply A.1 as a recurring project ritual.
+If this result answers the decision, stop here. Name the object, its subject pattern, and what you can now do. Do not apply A.1 as a recurring project ritual. This is a local stop: it neither supplies nor removes the shared target and use hypothesis required for a systemic project account. Use A.1.STM when that common basis or the local result's connection to it is the question.
 
 If a needed relation has no current governor, state the exact participants and blocked receiving use, return `missing-governor[...]`, and continue under A.6.RCD. Do not substitute `relatedTo`, a graph edge, or a local bundle.
 
@@ -126,18 +126,20 @@ When service or access wording is the unresolved phrase, start in A.6.P §4.11a.
 
 “My service stopped” does not by itself say that a system stopped. Service-provision Work may have ceased, an exact deployed or physical bearer may have stopped or become unavailable, an access-providing arrangement may be proposed as the exact system whose functioning stopped, or promised availability/fulfilment may have failed. Use A.1.SCR only to test a separately proposed exact bearer or access-providing arrangement when its system boundary matters to the decision.
 
-#### A.1.SCR:4.7 - Preserve the project system-of-interest bridge
+#### A.1.SCR:4.7 - Connect recognition to the common project target
 
-The primary expression is **project system-of-interest**, inherited from systems engineering without adding target, aim, or goal semantics. `systemOfConcern` may serve as a historical systems-engineering Plain synonym for that same designation.
+A **system-of-interest** is a system selected for an investigation or decision. The **project target system** has a more specific role: it is the common target whose intended functioning, change or cessation in its environment organizes the participants' joint undertaking. A local system-of-interest can be a builder or component without replacing that target. A.1.STM:4.1–4.3 develops the shared basis and the dependency from intended use to functioning, construction, Methods and capable creators.
 
-A project plan or decision may designate one system as the project system-of-interest. Keep six questions separate:
+A plan or decision can designate a target or a local system-of-interest. Recover which claim is current and keep these questions separate:
 
-1. identify the exact actual system, or keep a merely intended future referent as a designator in plan, decision, or description content;
-2. name the plan or decision that designates it and the intended change or use;
+1. identify the actual System, or keep an intended future holder as a designator in plan, decision or description content;
+2. recover the designation and intended use; when common project purpose is claimed, recover the participants' working agreement rather than infer it from the designation alone;
 3. admit composite project Work only after A.15.1 and A.15.6 qualifications hold;
-4. state each actual work-to-referent, transformation, production, evaluation, delivery, acceptance, or later-use fact under its own governor;
-5. test any `SystemOfInterestSystemRole` interpretation and any A.2.1 system-role assignment separately; and
-6. when the recognized system must be reconnected to the long dependency from outside use through architecture, Work, change, and recursive builders, use A.1.STM to name the needed final result, retain supported answers, and read backward to the first unsupported dependency. Take that question to the subject pattern whose entry accepts it, and return the answer or a named stop.
+4. state each actual work-to-referent, transformation, production, evaluation, delivery, acceptance or later-use fact under its own governor;
+5. test any technical system-role classification and A.2.1 assignment separately; a generic `SystemOfInterestSystemRole` criterion is insufficient for a specific project-target claim unless its declared distinction also supplies that meaning; and
+6. use A.1.STM when the recognized System or a local result must be connected to the common target's intended use. If that basis is already supported, its section 4.4 retains the narrower route: locate the first unsupported dependency, use its subject pattern, and return the answer or a named stop.
+
+A future target or a series of intended instances can be described before any actual holder exists. Agreement about the target role and required kind of holder is not recognition of an individual System. A.1.STM:4.2 keeps these prospective and actual claims distinct.
 
 For a claim about a particular dated Work occurrence, first identify every actual performing System and recover its A.13 core. Independently admit that occurrence under A.15.1 from its performance history, at least one Method actually followed, temporal extent, and at least one locally declared containing-System relation. Apply this branch to the occurrence being asserted, whether it is Work represented on the map or a separately asserted Work of using the map. After admission, add F.6 only when the receiving claim also needs precise assignment-bound attribution through that performer's same obtaining assignment. A Work-only claim may stop after admission.
 
@@ -157,7 +159,7 @@ Each row states whether the A.1.SCR trigger actually fires. The rows are example
 | “We release a game session.” | Keep composite dated Work, interval, and session record under their subject patterns. If the phrase instead proposes `GameSessionWhole-GS204`, identify that exact operational whole and use A.1 when its boundary, persistence, or acting eligibility matters. | Recover every actual performer's A.13 core and admit Work only with the full independent A.15.1 basis and exact work-part relations; add F.6 afterward only when this claim also needs precise assignment-bound attribution. Evaluate the operational whole through its constituents, assembly, authoritative-state continuity, larger-game compatibility, and acting eligibility. Keep player systems, deployed installation, rule episteme, interval, activities, and records separate. | A label, shared interval, lobby record, or rules document establishes neither systemhood, Work, parthood, nor identity between the Work and the operational whole. |
 | “We sell internet access.” | Start in A.6.P with promise, permission, state, bearer, commercial relation, or other subject-pattern readings. If the phrase instead proposes `InternetAccessArrangement-CA17`, preserve that exact entity and use A.1 only when the arrangement's systemhood matters. | Add Method or MethodDescription, WorkPlan, permission, provisioning Work, system-role assignment, commitment, status, evidence and evaluation, fulfilment, and acceptance only when the named decision needs those claims; evaluate the arrangement separately from its gateway and status. | No `U.Access` or generic `AccessRelation`; credentials, system-role labels or assignments, endpoints, promises, plans, evidence, connections, states, and bearers remain distinct and cannot replace the exact arrangement before A.1 evaluation. |
 | “We develop a program.” | Distinguish code/episteme, computational Method, intended designator, deployed realization, and run. Use A.1.SCR only when a decision depends on the deployed realization acting, persisting, or changing as a system. | Add MethodDescription, planned or actual Work, transformations, and project system-of-interest designation only when the named decision separately asserts them. | Code, algorithm, deployed system, run, and project designation are not one object. |
-| “The salon creates a hairstyle.” | Name the client whose hair is affected and the selected hair structure/characteristics. Use A.1.SCR only if the client-as-changed-system boundary matters. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts, and acceptance only when the named decision needs them. | Stop at the selected hair structure and characteristics when they answer the decision. |
+| “The salon creates a hairstyle.” | Recover the intended hairstyle and its use. If the claim proposes an embodied hair-and-fastener whole as target, preserve that exact entity for A.1 evaluation; keep a not-yet-existing hairstyle in description content. If the decision concerns only hair structure or characteristics, use those subject patterns. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts and acceptance when needed. A.1.STM connects the hairstyle's use to these choices and distinguishes the salon as provider. | A local structure or characteristic result may close its question. It does not establish the target's systemhood, remove the common target question, or justify replacing the proposed hairstyle with the client before evaluation. |
 | “The surface needs a grind.” | Name the workpiece or containing holon and the surface state, structure, and characteristics. Usually leave through those subject patterns without A.1.SCR. | Add grinding Method, treatment Work, transformation, measurement, and acceptance only when the named decision needs them. | A finish label is not an independent system, Work, or transformation. |
 | “The batch moves through the flow.” | Name the material batch under its collection or holon rule and separately the selected `TransformationFlowStructure` or `FlowValuation`. Use A.1.SCR only if a decision depends on whether the batch is an acting or changed system. | Add movement/treatment Work, transformations, transfer relations, path/valuation, and evidence under their subject patterns. | Recover an acting collective under A.1 only if that claim is current; for a claim that Work was performed, name its actual performer. |
 
@@ -205,7 +207,7 @@ Across all rows, first preserve the exact entity named by the proposed system re
 | `CC-A1-SCR-6` | Add a neighboring claim only under its subject pattern and only when the named decision needs that claim. |
 | `CC-A1-SCR-7` | Service/access ambiguity begins in A.6.P §4.11a and returns here only for a separate system-dependent claim about the exact entity recovered there—an exact bearer or access-providing arrangement. |
 | `CC-A1-SCR-8` | A missing relation preserves exact participants and dependent use and records the established A.6.RCD result `missing-governor[...]`. |
-| `CC-A1-SCR-9` | Project system-of-interest designation follows a named plan or decision; recognition, affectedness, system-role-kind interpretation, and system-role assignment neither establish nor replace it. |
+| `CC-A1-SCR-9` | Designation follows a named plan or decision; local system-of-interest and common project target remain distinct. Recognition, designation, participants' agreement, technical classification and assignment are supported at their own scopes. |
 | `CC-A1-SCR-10` | Physical grounding creates no cross-kind identity or unrestricted composition. |
 | `CC-A1-SCR-11` | The seven noun cases and the scale-free stress fixtures state their exact entities, subject-pattern alternatives, result semantics, and blocked inferences; they form no kind or closed enumeration. |
 | `CC-A1-SCR-12` | No new candidate, session, access, mastery, situation, relation, restoration-record, or bundle ontology is introduced. |
@@ -225,7 +227,7 @@ Across all rows, first preserve the exact entity named by the proposed system re
 
 ### A.1.SCR:9 - Consequences
 
-The pattern makes full system recognition more useful by applying it only where identity and boundary change an engineering decision. It also makes subject-pattern results productive: Work, Method, capability, structure, episteme, and relations can close their own questions. The cost is that the practitioner must state the decision and may need to stop when construction facts or a relation governor are missing.
+The pattern makes full system recognition more useful by applying it only where identity and boundary change an engineering decision. It also makes subject-pattern results productive: Work, Method, capability, structure, episteme, and relations can close their own questions. The cost is that the practitioner must state the decision and may need to stop when construction facts or a relation governor are missing. A local non-System result remains useful while A.1.STM keeps any unresolved common-target question visible.
 
 ### A.1.SCR:10 - Rationale
 

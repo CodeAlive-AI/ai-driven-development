@@ -6,7 +6,7 @@
 
 ### C.32.MWA.PP:0 - Use This When
 
-Use this pattern when individually plausible Methods or candidate accounts could be combined or co-used in materially different ways, and the receiving result depends on their composition, Work overlap or order, allocation, subject/support arrangement, descriptions, provider access or cultural relations. A typical practice or development network can supply the intended transformations while leaving their local performance and support unresolved.
+Use this pattern when individually plausible Methods or candidate accounts could be combined or co-used in materially different ways, and the receiving result depends on their composition, Work overlap or order, allocation, relations among the affected Systems and means, descriptions, provider access or cultural relations. A typical practice or development network can supply the intended transformations while leaving their local performance and support unresolved.
 
 The practical question is how the related contributions can become obtainable together. A Method may need a qualified judgement before work begins, while the proposed expert is available only later. A common service may save preparation but delay local decisions. Learning may consume the only expert time needed for current delivery. Assigning names to boxes does not settle these interactions.
 
@@ -27,14 +27,14 @@ Use the strategic or subject practice first when the unresolved question is only
 | Method structure | Identified Methods and direct composition, specialization, family, participation, or other selected Method relations with stated truth status. |
 | Work structure | Admitted or intended Work and direct parthood, overlap, order, result-use, or transformation relations. Work order does not by itself establish Method composition. |
 | allocation structure | Responsibility, authority, capability demand, provider dependence, shared capacity, and burden distribution relevant to the alternatives. |
-| subject/support structure | Project Systems, enabling Systems, resources, access, provider, and support relations whose configuration changes the result. |
+| Systems, means and access | Systems being changed and Systems performing or contributing work; the means used; and relations through which performers obtain a result, access a means or receive authority to act. Distinguish the Systems, work, results and relations when their configuration changes the decision. |
 | description structure | Epistemes, views, schema correspondences, version relations, and losses used by the decision. Description order is not Work order. |
 | cultural relation | Recognition, transmission, selection, retention, or loss of a Method variant. A chosen project option is not cultural continuation. |
 | simultaneous multigrain contribution | Work at several grains is performed during overlapping intervals. It can include constituent and encompassing Work, the same Work enacting several Methods, or separate Work that only overlaps. Determine the relation; overlap alone neither establishes nor excludes Method composition. |
 | genuine first–then condition | One direct Work, result-use, transformation, evidence, configuration, or authority relation makes a later occurrence or decision depend on an earlier result or condition. |
 | architecture alternative | A possible-future synthesis whose named relations differ materially. Until realized or independently shown to obtain, it remains proposed. |
 
-**Mastery** in the development cases means a person's qualified ability to contribute to a family of tasks under stated conditions. Organization and AI capability claims keep their own holders, mechanisms and evidence. **Support** supplies a contribution that enables another's work, such as tools, teaching, expert execution, research, coordination or maintained access. Cultural continuation concerns how practices are carried, understood, reproduced and changed; installing a procedure does not establish it.
+**Mastery** in the development cases means a person's qualified ability to contribute to a family of tasks under stated conditions. Organization and AI capability claims keep their own holders, mechanisms and evidence. **Support** describes how a specified contribution makes other work possible or changes its conditions. State who performs the supplying work, what it returns, and how the receiving performer uses that result. Identify the means, access and authority separately when they affect the connection. Teaching, an expert's execution, a tool and permission to use it can all matter, but they occupy different positions in that explanation. A change to the supplying performer's capability or Method is another claim, requiring its own result. Cultural continuation concerns how practices are carried, understood, reproduced and changed; installing a procedure does not establish it.
 
 ### C.32.MWA.PP:1 - Problem Frame
 
@@ -112,7 +112,7 @@ Try the operation on one representative input or a sufficiently explicit prospec
 
 | Finding in the attempted use | Obtain this contribution before relying on the proposed arrangement |
 | --- | --- |
-| The Method and its receiving result are sufficient; only local access or capacity is missing. | Preserve the Method and design the missing performance/support relation. |
+| The Method and its receiving result are sufficient; only local access or capacity is missing. | Preserve the Method and design the missing allocation or access relation. |
 | Competent people can perform the decisive judgement, but the learner or another provider cannot recover it. | Obtain a qualified demonstration or reconstruct the missing criterion; design learning separately. |
 | One Method returns a result that the next cannot use. | Construct an adapter, choose a compatible Method or revise the receiving condition with its owner. Explain why the connection works. |
 | No qualified way obtains the requested subject result. | Use C.39 and the relevant subject or research practice to construct a way or return a precise unresolved inquiry. |
@@ -131,7 +131,7 @@ Do not force every result-use or support relation into Method composition. Use B
 
 #### C.32.MWA.PP:4.3 - Keep the necessary structures distinct and connect their claims
 
-Select only the structures that can change this design. A compact cross-reference is often enough. C.30.ASV:4.5a supplies the Method questions; C.32.MWA:4.1 relates them to separate performance, support and cultural accounts.
+Select only the structures that can change this design. A compact cross-reference is often enough. C.30.ASV:4.5a supplies the Method questions; C.32.MWA:4.1 relates them to distinct accounts of Work, Systems and means, and cultural relations.
 
 | Question | What is being related | What must not be inferred from that relation |
 | --- | --- | --- |
@@ -282,9 +282,9 @@ Select the receiving Method from the result still missing.
 
 **For a separately selected corporate assurance engagement, use the applicable corporate governance Method to arrange and receive it.** Supply the subject, question, criteria, period and intended reliance. Reuse an adequate existing result; otherwise obtain the appropriate mandate, qualification, access, capacity, safeguards for conflicts and reporting route. Preserve the provider's actual conclusion and its limits for the governing recipient's action, including a route protected from those whose work is examined. The corporate governance Method arranges and receives the contribution; the qualified professional Method governs the examination itself. A non-corporate or profession-specific engagement uses its direct institutional or professional supplier instead of inheriting corporate jurisdiction. This return adds no compulsory audit of every support or learning episode.
 
-These receiving Methods can consume the same competent realization and its results. Compare the available result with the present claim, name the remaining gap and obtain only the additional complete contribution needed to settle it. If human acquisition is missing, give the qualified practitioner of human learning the actual later-work demand, subject criterion and permitted help; obtain the capability result and its supported use rather than crediting instruction or attendance. If System integration, access, provision or scheduling is missing, use the corresponding engineering, administration, provider or operating Method.
+These receiving Methods can consume the same competent realization and its results. Compare the available result with the present claim, name the remaining gap and obtain only the additional complete contribution needed to settle it. If human acquisition is missing, give the qualified practitioner of human learning the actual later-work demand, subject criterion and permitted help; obtain the capability result and its supported use rather than crediting instruction or attendance. If work is missing to integrate Systems, supply an input, arrange access or schedule use, obtain that work through the corresponding engineering, administration, provider or operating Method.
 
-The hand-back to C.32.MWA.PP must make local enactment and its limits interpretable. Before dependent work, the receiving practitioner obtains effective assignments, permissions, provision and commitments through their owners. A prospective walkthrough can show how a real or sufficiently explicit input would pass through local actions: which operation of the supplied Method each action performs, which condition it preserves and how its result becomes usable next. That walkthrough supports a construction claim, not an assertion that the occurrences happened.
+The hand-back to C.32.MWA.PP must make local enactment and its limits interpretable. Before dependent work, the receiving practitioner obtains the required inputs and usable means, and secures effective assignments, permissions and commitments through their owners. A prospective walkthrough can show how a real or sufficiently explicit input would pass through local actions: which operation of the supplied Method each action performs, which condition it preserves and how its result becomes usable next. That walkthrough supports a construction claim, not an assertion that the occurrences happened.
 
 When actual performance is examined, compare the actions with the operative conditions as well as with the obtained result. A good result reached by another way can be valuable without demonstrating enactment of the selected Method. An allowed variation can preserve it; a changed criterion or replacement operation can require another subject judgement, Method identity or replacement decision through A.3.1 and B.1.5.RS. Retain that difference in the returned result without demanding detailed fresh observation at every workstation.
 
