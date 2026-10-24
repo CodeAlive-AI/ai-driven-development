@@ -8,12 +8,12 @@
 
 ## Contents
 
-- [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (112 lines) — Scope & exports. A substrate-neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their change and equivalence. Exports: (i) three point-characteristics—Formality F,...
+- [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (112 lines) — Scope & exports. A substrate-neutral calculus for composing epistemic holons (U.Episteme) and reasoning about their change and equivalence. Exports: (i) three distinct assessment aspects—Formality F,...
 - [C.2.1 - U.Episteme: Constitution, Empirical Grounding, and Edition Relations](02-c-2-1---u-episteme-constitution-empirical-grounding-and-edit.md) (586 lines) — Normativity: Normative except where a section is explicitly marked informative
 - [C.2.P - Clarify Episteme, Publication, and Source Wording (Epistemic Precision Restoration)](03-c-2-p---clarify-episteme-publication-and-source-wording.md) (524 lines) — Type: C.2 precision-restoration pattern for episteme, publication, source wording, and source-relation wording
 - [C.2.2 - Reliability R in the F–G–R triad](04-c-2-2---reliability-r-in-the-f-g-r-triad.md) (320 lines) — Reliability (R) concerns the warrant for one typed claim under an explicit claim scope (G). Keep the support useful and its limitations visible. A numerical R needs a receiving model for its meaning,...
 - [C.2.2a - U.LanguageStateSpace - Language-state chart over U.CharacteristicSpace](05-c-2-2a---u-languagestatespace---language-state-chart-over-u.md) (260 lines) — Type: Architectural (A)
-- [C.2.3 - Unified Formality Characteristic F](06-c-2-3---unified-formality-characteristic-f.md) (314 lines) — Type: Definitional (D)
+- [C.2.3 - Formality of an Episteme](06-c-2-3---formality-of-an-episteme.md) (321 lines) — Type: Definitional (D)
 - [C.2.LS - U.LanguageStateFacetProfile - Thin profile bundle for language-state facets](07-c-2-ls---u-languagestatefacetprofile---thin-profile-bundle-f.md) (249 lines) — Type: Definitional (D)
 - [C.2.4 - U.ArticulationExplicitness — How Explicit Is an Episteme's Meaning for Its Use?](08-c-2-4---u-articulationexplicitness-how-explicit-is-an-episte.md) (205 lines) — Type: Definitional (D)
 - [C.2.5 - U.LanguageStateClosureDegree — How Fixed Is the Current Candidate Space?](09-c-2-5---u-languagestateclosuredegree-how-fixed-is-the-curren.md) (195 lines) — Type: Definitional (D)
@@ -24,13 +24,13 @@
 - [C.3 - Kinds, Intent and Extent, and Typed Reasoning](14-c-3---kinds-intent-and-extent-and-typed-reasoning.md) (171 lines) — Type: Typed reasoning discipline pattern
 - [C.3.1 - Kind Identity and Subkind Relations (U.Kind and U.SubkindOf)](15-c-3-1---kind-identity-and-subkind-relations.md) (160 lines) — Type: Kind identity, subkind relation, and continuity pattern
 - [C.3.2 - Kind Intent, Membership Judgment, and Extension](16-c-3-2---kind-intent-membership-judgment-and-extension.md) (240 lines) — Type: Kind declaration and classification pattern
-- [C.3.3 - KindBridge and CL^k — Correspondence between Distinct Kinds](17-c-3-3---kindbridge-and-cl-k-correspondence-between-distinct.md) (196 lines) — One-line summary. A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no...
+- [C.3.3 - KindBridge and CL^k — Correspondence between Distinct Kinds](17-c-3-3---kindbridge-and-cl-k-correspondence-between-distinct.md) (198 lines) — One-line summary. A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no...
 - [C.3.4 - KindUseAdaptationDeclaration — Tailor the Use of an Existing Kind](18-c-3-4---kinduseadaptationdeclaration-tailor-the-use-of-an-ex.md) (213 lines) — One-line summary. Use a KindUseAdaptationDeclaration when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base...
 - [C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)](19-c-3-5---kindat-intentional-abstraction-facet-for-kinds.md) (161 lines) — One-line summary. KindAT is an informative editorial facet on one local U.Kind. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor,...
 - [C.3.A - Typed Guard Macros for Kinds + USM (Annex)](20-c-3-a---typed-guard-macros-for-kinds-usm.md) (526 lines) — One-line summary. These guard macros combine C.3 declaration compatibility, the exact C.3.2 candidate judgment when an actual candidate is current, RoleMask and KindBridge declarations/relations, and...
-- [C.11 - Decision Theory (Decsn-CAL)](21-c-11---decision-theory.md) (735 lines) — Normativity: Normative unless marked informative
+- [C.11 - Decision Theory (Decsn-CAL)](21-c-11---decision-theory.md) (739 lines) — Normativity: Normative unless marked informative
 - [C.11.CRC - Configuration-Relative Contribution Comparison](22-c-11-crc---configuration-relative-contribution-comparison.md) (203 lines) — Tech name: ConfigurationRelativeContributionComparison
-- [C.11.DBR - Reconsider a Decision When Its Relied-on Basis Changes](23-c-11-dbr---reconsider-a-decision-when-its-relied-on-basis-ch.md) (180 lines) — Use this pattern when an earlier choice, commitment or recommendation is known, and a later observation, outcome or changed condition may alter the basis for one use of that result. A team may have...
+- [C.11.DBR - Reconsider a Decision When Its Relied-on Basis Changes](23-c-11-dbr---reconsider-a-decision-when-its-relied-on-basis-ch.md) (182 lines) — Use this pattern when an earlier choice, commitment or recommendation is known, and a later observation, outcome or changed condition may alter the basis for one use of that result. A team may have...
 - [C.11.DUA - Make Advice and Evidence Demands Worth Their Burden](24-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md) (257 lines) — Tech name: DecisionUsefulAdvice
 - [C.11.MV - Compare the Worth of a Method Option](25-c-11-mv---compare-the-worth-of-a-method-option.md) (249 lines) — Primary working result: keep, revise, replace, branch, or stop for one named Method decision, or a retained set with its limitation when the choice remains unresolved. The result makes current...
 - [C.13 — Constructional Mereology (Compose‑CAL)](26-c-13-constructional-mereology.md) (253 lines) — At a glance. Use C.13 when a practitioner must show how identified entities and relations that obtain form one whole, collection, or aspect. The account explains how those facts support the whole,...
@@ -49,7 +49,7 @@
 - [C.20 - Composition of U.Discipline (Discipline-CAL)](39-c-20---composition-of-u-discipline.md) (362 lines) — U.Discipline is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate...
 - [C.21 - Field Health & Structure (Discipline-CHR)](40-c-21---field-health-structure.md) (265 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline without collapsing the result into taste, anecdotes, a...
 - [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](41-c-22---task-typing-and-tasksignature-assignment.md) (384 lines) — Purpose. Declare an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
-- [C.22.1 - Task-family adaptation signature](42-c-22-1---task-family-adaptation-signature.md) (149 lines) — One-screen purpose (manager-first).
+- [C.22.1 - Task-family adaptation signature](42-c-22-1---task-family-adaptation-signature.md) (151 lines) — One-screen purpose (manager-first).
 - [C.22.PFR - Problematic-For Relation](43-c-22-pfr---problematic-for-relation.md) (333 lines) — Normativity: Normative unless marked informative
 - [C.22.2 - ProblemCard](44-c-22-2---problemcard.md) (663 lines) — Normativity: Normative
 - [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](45-c-23---methodfamily-evidence-maturity.md) (226 lines) — LOG (logic) for deductive shells for admissibility
@@ -73,16 +73,16 @@
 - [C.30.AD - Architecture Description Adequacy](63-c-30-ad---architecture-description-adequacy.md) (466 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](64-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (262 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Clarify Architecture and Structure Wording (Precision Restoration)](65-c-30-p---clarify-architecture-and-structure-wording.md) (248 lines) — Type: Architectural pattern
-- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](66-c-30-strat---clarify-stratification-and-architecture-source.md) (257 lines) — Type: Architectural precision-restoration subpattern under C.30
+- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](66-c-30-strat---clarify-stratification-and-architecture-source.md) (259 lines) — Type: Architectural precision-restoration subpattern under C.30
 - [C.30.ASV - Architecture Structural View Adequacy (ASV)](67-c-30-asv---architecture-structural-view-adequacy.md) (848 lines) — Type: Architectural pattern
-- [C.30.LCA - Control Structure View Adequacy (LCA)](68-c-30-lca---control-structure-view-adequacy.md) (315 lines) — Type: Architectural subpattern under C.30
+- [C.30.LCA - Control Structure View Adequacy (LCA)](68-c-30-lca---control-structure-view-adequacy.md) (317 lines) — Type: Architectural subpattern under C.30
 - [C.30.ILC - Cross-Scope Architecture Residual Triage](69-c-30-ilc---cross-scope-architecture-residual-triage.md) (253 lines) — Type: Architectural subpattern under C.30
 - [C.30.TFS-REL - Use Transformation-Flow Structures and Networks in Architecture](70-c-30-tfs-rel---use-transformation-flow-structures-and-networ.md) (419 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](71-c-31---modularity-and-reusable-structure-characteristics.md) (389 lines) — Type: Characterization pattern
 - [C.31.RSA - Reusable Structure Accounting](72-c-31-rsa---reusable-structure-accounting.md) (396 lines) — Type: Characterization pattern
 - [C.31.ASAP - Which Architecture Is Preferable Under Scale? (Scale Amenability)](73-c-31-asap---which-architecture-is-preferable-under-scale.md) (323 lines) — Type: Characterization pattern
 - [C.32 - Architecture Candidate Synthesis](74-c-32---architecture-candidate-synthesis.md) (356 lines) — Type: Architectural pattern
-- [C.32.LCA - Construct and Compare a Control Architecture](75-c-32-lca---construct-and-compare-a-control-architecture.md) (397 lines) — Type: Method pattern in the C.32 architecture-synthesis family
+- [C.32.LCA - Construct and Compare a Control Architecture](75-c-32-lca---construct-and-compare-a-control-architecture.md) (399 lines) — Type: Method pattern in the C.32 architecture-synthesis family
 - [C.32.P2S - Problem-to-Structure Architecturing Unfolding](76-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (359 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](77-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (212 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set](78-c-32-acs---architecture-characteristic-criteria-set.md) (292 lines) — Type: Architecture characterization pattern under C.32
@@ -121,7 +121,7 @@
 - [C.40.JF - Qualify Dependencies and Joint Reachability](111-c-40-jf---qualify-dependencies-and-joint-reachability.md) (212 lines) — Normativity: Normative unless marked informative.
 - [C.40.OP - Maintain Opportunities and Stepping Stones](112-c-40-op---maintain-opportunities-and-stepping-stones.md) (212 lines) — Normativity: Normative unless marked informative.
 - [C.40.RQ - Requalify Changed Opportunities](113-c-40-rq---requalify-changed-opportunities.md) (237 lines) — Normativity: Normative unless marked informative.
-- [C.40.OD - Construct and Continue Open-Ended Development](114-c-40-od---construct-and-continue-open-ended-development.md) (295 lines) — Normativity: Normative
+- [C.40.OD - Construct and Continue Open-Ended Development](114-c-40-od---construct-and-continue-open-ended-development.md) (297 lines) — Normativity: Normative
 - [C.40.JD - Develop a Way, Its Holder and Its Provision Together](115-c-40-jd---develop-a-way-its-holder-and-its-provision-togethe.md) (235 lines) — Normativity: Normative
 - [C.40.NP - Continue from a Result to New Attainable Problems](116-c-40-np---continue-from-a-result-to-new-attainable-problems.md) (144 lines) — Normativity: Normative
 - [C.41 - Select Checklist Questions for a Work Result](117-c-41---select-checklist-questions-for-a-work-result.md) (241 lines) — Skilled work can fail through a small omission, a forgotten conversation or an answer that outlives its grounds. More documentation can make that worse when it hides the question, interrupts useful...
@@ -131,6 +131,7 @@
 - [C.41.SR - Reconcile Checklist Results Across Shared Work](121-c-41-sr---reconcile-checklist-results-across-shared-work.md) (180 lines) — Use this when several people or agents rely on local checklist answers to conduct shared work, one person combines several such contributions, or a change may have invalidated those answers. A...
 - [C.41.QC - Qualify Checklist Criteria and Checking Means](122-c-41-qc---qualify-checklist-criteria-and-checking-means.md) (154 lines) — Use this when a proposed criterion or checking means may fail to distinguish the difference that matters. This is common with inherited lists, generated criteria, model judgements, new tools and...
 - [C.42 - Reduce Avoidable Work While Preserving the Needed Result](123-c-42---reduce-avoidable-work-while-preserving-the-needed-res.md) (284 lines) — Normativity: Normative unless explicitly marked informative.
-- [C.36.P - Clarify Cultural-Evolution Wording for a Claim or Action](124-c-36-p---clarify-cultural-evolution-wording-for-a-claim-or-a.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
-- [C.36.RP - Sustain and Renew Shared Ways of Working](125-c-36-rp---sustain-and-renew-shared-ways-of-working.md) (213 lines) — Normativity: Normative unless marked informative
-- [C.36.MC - Qualify and Develop a Method Culture](126-c-36-mc---qualify-and-develop-a-method-culture.md) (316 lines) — Primary working result: a bounded cultural account and a warranted continue, revise, branch, replace, stop, or unknown decision. It retains the admitted-Method or status-preserved...
+- [C.43 - Connect Observation, Choice and Action in Control](124-c-43---connect-observation-choice-and-action-in-control.md) (396 lines) — Normativity: Guidance within the stated applicability
+- [C.36.P - Clarify Cultural-Evolution Wording for a Claim or Action](125-c-36-p---clarify-cultural-evolution-wording-for-a-claim-or-a.md) (173 lines) — Tech-name: CulturalEvolutionWordingUsePrecisionRestoration
+- [C.36.RP - Sustain and Renew Shared Ways of Working](126-c-36-rp---sustain-and-renew-shared-ways-of-working.md) (213 lines) — Normativity: Normative unless marked informative
+- [C.36.MC - Qualify and Develop a Method Culture](127-c-36-mc---qualify-and-develop-a-method-culture.md) (316 lines) — Primary working result: a bounded cultural account and a warranted continue, revise, branch, replace, stop, or unknown decision. It retains the admitted-Method or status-preserved...

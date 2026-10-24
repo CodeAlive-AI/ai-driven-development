@@ -28,7 +28,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 ### C.2.LS:4 - Solution
 `U.LanguageStateFacetProfile` is a typed profile bundle that names the facets by which position claims in the declared language-state chart over `U.CharacteristicSpace` are published and interpreted:
 
-- `formalityRef` -> `U.Formality` from `C.2.3`
+- `formalityRef` -> the expression-property assessment governed by `C.2.3`, including its selected basis and any justified local ordered summary
 - `articulationExplicitnessRef` -> `U.ArticulationExplicitness` from `C.2.4`
 - `languageStateClosureDegreeRef` -> `U.LanguageStateClosureDegree` from `C.2.5`
 - `languageStateAnchoringModeRef` -> `U.LanguageStateAnchoringMode` from `C.2.6`
@@ -36,7 +36,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 - `thresholdRefs?` -> context-local threshold declarations over the named facets
 - `routeNotes?` -> informative notes that help interpret routing or reopening decisions
 
-`C.2.LS` therefore defines only the **profile bundle**; it defines neither an individual characteristic nor a trajectory. `A.18/A.19` supply characteristic semantics, `A.16` defines admissible moves, and `E.18` governs an independently selected TransformationFlowStructure.
+`C.2.LS` therefore defines only the **profile bundle**; it defines neither an individual characteristic nor a trajectory. A formality assessment or representation-factor bundle can contain several Characteristics. If placed in a CharacteristicSpace, each of those Characteristics receives its own declared Scale and slot; the reference to the assessment is not itself a Coordinate. `A.18/A.19` supply characteristic semantics, `A.16` defines admissible moves, and `E.18` governs an independently selected TransformationFlowStructure.
 
 #### C.2.LS:4.0a - Kind and profile-bundle boundary
 
@@ -46,7 +46,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 `C.2.LS` defines only profile composition and requires the language-state facets to remain explicit and non-collapsed. It does **not**:
 
 - redefine `F`;
-- invent a second formality progression;
+- invent a universal formality progression or an undeclared local summary;
 - redefine the scale semantics of `AE`, `CD`, `LanguageStateAnchoringMode`, or `U.LanguageStateRepresentationFactorBundle`;
 - define reopen/backoff moves;
 - define endpoint classification or bridge kinds.
@@ -91,7 +91,7 @@ The pattern biases authors toward keeping facets explicit and away from master-s
 
 ### C.2.LS:7 - Conformance Checklist
 - `CC-C.2.LS-1` A language-state facet profile **SHALL** reference the patterns that define its facets rather than invent local unnamed factors.
-- `CC-C.2.LS-2` `C.2.LS` **MUST NOT** redefine `F` or create a second formality progression.
+- `CC-C.2.LS-2` `C.2.LS` **MUST NOT** redefine the C.2.3 assessment or conceal several expression properties in one undeclared rank.
 - `CC-C.2.LS-3` Thresholds that matter for routing, reopening, or lexical repair **SHALL** be published on explicit facets.
 - `CC-C.2.LS-4` Trajectory accounts that rely on facet profiles **SHOULD** reuse A.16 move kinds. Apply E.18 only to an independently selected TransformationFlowStructure; use E.18.2 when its mathematical description is needed.
 - `CC-C.2.LS-5` Composite labels such as `early`, `settled`, or `ready` **SHALL NOT** stand in for the explicit facet bundle when those states matter operationally.
@@ -135,7 +135,7 @@ SysML v2 is deliberately excluded from the positive SoTA basis and from useful l
 #### C.2.LS:13.1 - Operator-facing early alert
 A console alert note may be published with a language-state facet profile such as:
 
-- `F = F2/F3` because the note is structurally controlled but still lightweight;
+- its formality assessment states that the alert terms and structure are stable while some acceptance conditions remain informal;
 - `AE = AE2` because candidate anchors are visible but the direct semantic branch or its required structure remains partial;
 - `CD = CD1` because several routes remain live;
 - `LanguageStateAnchoringMode = AM.OperatorLoop` because the note is directly anchored to operator intervention/work;
@@ -154,10 +154,10 @@ A felt or trace-anchored mismatch cue in an inquiry note may be:
 That profile explains why the cue should remain in `A.16.1` rather than being forced into `A.6.P` or `B.5.2` immediately.
 
 #### C.2.LS:13.3 - Architecture-description case
-A viewpoint-bound note about the adequacy of an architecture description may be moderately high in `F`, moderately high in `AE`, still mid-level in `CD`, document-mediated in `AM`, and symbolic in its representation-factor bundle. The profile keeps description-side adequacy distinct from system-side engineering quality.
+A viewpoint-bound note about the adequacy of an architecture description may state its constraints through explicit typed predicates, be moderately high in `AE`, still mid-level in `CD`, document-mediated in `AM`, and symbolic in its representation-factor bundle. The profile keeps description-side adequacy distinct from system-side engineering quality.
 
 #### C.2.LS:13.4 - Same `F`, different profile
-Two notes may share the same rough `F` band and still differ sharply in articulation, closure, anchoring, and representation factors. One may be operator-loop anchored and low-closure; another may be document-mediated and comparatively closed. The profile bundle keeps that difference visible instead of letting `F` behave like a master factor.
+Two notes may supply the same required expression properties and still differ sharply in articulation, closure, anchoring, and representation factors. One may be operator-loop anchored and low-closure; another may be document-mediated and comparatively closed. The profile bundle keeps that difference visible instead of letting `F` behave like a master factor.
 
 ### C.2.LS:14 - Authoring and Review Guidance
 

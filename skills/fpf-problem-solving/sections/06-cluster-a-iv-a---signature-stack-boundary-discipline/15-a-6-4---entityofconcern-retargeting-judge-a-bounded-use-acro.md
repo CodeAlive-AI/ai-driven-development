@@ -136,7 +136,7 @@ Legacy `KindBridge` plus mandatory `CL`, and generic SquareLaw-retargeting inter
 
 **ER-6 - Separate application, Work, and resulting episteme.**
 
-An arrow that preserves the EntityOfConcern belongs to the A.6.3 preserving branch rather than this subtype. When a system measures, computes, fits, translates, authors, or otherwise changes an episteme, identify the A.6.1 application and bindings when current, the performing system and Work, and the resulting C.2.1 episteme separately. The arrow can relate those epistemes without performing that activity or creating a universal production relation.
+An arrow that preserves the EntityOfConcern remains in the preserve mode of A.6.2 rather than this retargeting subtype. Use A.6.3 only when its declared viewing construction and additional laws are satisfied. When a system measures, computes, fits, translates, authors, or otherwise changes an episteme, identify the A.6.1 application and bindings when current, the performing system and Work, and the resulting C.2.1 episteme separately. The arrow can relate those epistemes without performing that activity or creating a universal production relation.
 
 #### A.6.4:4.4 - Boundary with representation, explanation, transformation-flow structure, and neighboring claims
 
@@ -197,7 +197,7 @@ A.6.4 deliberately foregrounds the exact source and receiving entities when the 
 
 | Anti-pattern | Why it fails | Correct action |
 |---|---|---|
-| Retargeting as viewing | A changed EntityOfConcern is treated as the same object under another viewpoint. | Resolve `EntityOfConcernRef` to the exact entity: use A.6.3 when that entity is preserved, and A.6.4 only when the independently identified entities differ. |
+| Retargeting as viewing | A changed EntityOfConcern is treated as the same object under another viewpoint. | Resolve `EntityOfConcernRef` to the exact entity: same-entity arrows remain in A.6.2 preserve mode and qualify for A.6.3 only under its viewing laws; use A.6.4 when the independently identified entities differ and its retargeting laws hold. |
 | Retargeting as publication rendering | A diagram, export, or face is treated as the arrow or as support for its use. | Keep publication forms in E.17 and E.24.PUB; state r and the separate use claim q only when each is current. |
 | Universal Bridge as admission | A `KindBridge`, F.9 Bridge, `CL`, mapping, or optic is required or used to inherit every downstream claim. | Use the A.6.4 minimum basis; add F.9 only for a separate local-sense relation and state every neighboring claim under its own rule. |
 | Mathematical notation decides retargeting | A Fourier, graph, path, or category representation is treated as proof that the EntityOfConcern changed. | Use C.29 for the mathematical lens and repeat the C.2.1 identity test. Use A.6.3.RT when the entity is preserved; use A.6.4 only for independently different entities. |

@@ -70,7 +70,7 @@ Names such as `Guard_TypedClaim` are editorial handles. A context may alias them
 3. require `U.ClaimScope(C)` to cover the exact `TargetSlice` and require an explicit `Gamma_time` selector;
 4. apply only the justified bridge consequences to R;
 5. check evidence freshness separately when the admission implies reliance; and
-6. check a policy-required formality threshold on the exact claim or declaration episteme that owns the value.
+6. check the policy-required expression properties on the exact claim or declaration episteme under C.2.3; a threshold is meaningful only on its named, justified local scale.
 
 The subkind direction above is contravariant only for restricting a universally quantified claim: a claim over `Vehicle` may enter a `PassengerCar`-restricted use when `PassengerCar` is a subkind of `Vehicle`. It is not a generic compatibility direction for producer outputs, operation arguments, mutable positions, or arbitrary typed slots; each such use states its own variance rule. This guard MUST NOT invent an anonymous candidate or infer a candidate classification from declaration compatibility.
 
@@ -163,7 +163,7 @@ A source judgment may support reliance but MUST NOT be copied as target truth. W
 
 **E-04 (Fail-closed without truth rewrite).** A required check returning `false`, `unknown`, or `not-applicable`, a missing declaration, non-obtaining relation, unavailable bridge assertion, or uncovered Scope causes refusal. The refusal is not itself a classification value or an assertion that the relevant world-side relation fails to obtain.
 
-**E-05 (Weakest link and bridge consequence).** Chained bridge assessments use the governed weakest-link rule. The receiving R path records each relied-on bridge/assertion; neither F nor G nor a judgment value is modified.
+**E-05 (Bridge composition and consequence).** Apply C.3.3:KB-10 to a relied-on chain. Establish joint definedness and preservation of the source distinctions needed by the receiving use from its actual mappings and intermediate interpretations. A minimum of comparable link ranks is a link summary, not that preservation result. The receiving R path records each relied-on bridge and assertion and applies only its justified consequences; neither F nor G nor a judgment value is modified.
 
 **E-06 (Predicate separation).** Declaration compatibility, candidate admissibility, candidate classification, Scope coverage, evidence freshness, bridge applicability, capability fit, and action disposition SHALL remain separately inspectable predicates.
 

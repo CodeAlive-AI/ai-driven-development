@@ -52,6 +52,8 @@ The practical problem is to construct and compare those relations without losing
 
 Construct the arrangement from the result and its causal dependencies, then compare the complete alternatives. The following sections explain connected operations, not a mandatory sequence of meetings or a prescribed stack of controllers. Begin at the first missing contribution; retain an adequate model, decision or component result.
 
+The architectural result changes the organization through which control occurs. **C.43** supplies the broader connection between the current situation, possible continuation, choice, realized influence and revision; use it directly when those answers can be joined within an adequate existing arrangement. The present Method constructs an arrangement when that joining requires different information, timing, allocation, means or interaction. Its result then returns to the ongoing control question.
+
 #### C.32.LCA:4.1 - Recover the controlled situation and the consequence that matters
 
 State what is meant to change, for whom, by when, and within which protected conditions. “Make the system faster” leaves the decision unresolved. “Reach the receiving position within two updates without exceeding the actuator limit” identifies a result and a constraint. “Have the approved panel installed by 16:00 without spending an unauthorized budget” identifies a different result and different conditions.
@@ -124,7 +126,7 @@ A command or reference governor adjusts the requested input to an already qualif
 
 Use **C.32** to develop the candidate palette when several structures change together. For an identified conflict across scopes, **C.32.MLAO** helps generate alternatives that reduce it while exposing the burden moved elsewhere. Bring those candidates back to the information, timing and joint-condition construction here.
 
-A lower-level policy need not be less accurate than a higher-level decision. Rapid tracking accuracy, predictive accuracy, semantic understanding, search quality and adaptability are different characteristics. Compare the required characteristics under the actual resource conditions. A rule such as “strategy is slow” is a possible arrangement, not a substitute for that comparison.
+A policy in a lower control layer need not be less accurate than a decision in an upper control layer. Rapid tracking accuracy, predictive accuracy, semantic understanding, search quality and adaptability are different characteristics. Compare the required characteristics under the actual resource conditions. A rule such as “strategy is slow” is a possible arrangement, not a substitute for that comparison.
 
 #### C.32.LCA:4.6 - Construct the exchange that makes the parts work together
 
@@ -222,7 +224,7 @@ Separate an unavailable candidate from a costly feasible one, and both from a ca
 
 Include the transition. A new controller needs initialization and an admissible switch. A new organizational allocation needs effective authority, informed participants and preserved obligations. Existing work and performed history do not disappear when the new arrangement is selected.
 
-**C.11** supplies the authorized choice among the explained alternatives; use **C.11.DUA** when the value of another observation, calculation or trial is itself unresolved. A constructed case can justify a conditional proposal. An effectiveness claim requires evidence from its intended use. Do not require a new trial when existing adequate evidence settles the decision, and do not count a simulated or taught example as operational evidence.
+**C.11** supplies a reasoned local choice among the explained alternatives; the right to commit resources or direct action remains separately established under the actual permission and agreement relations; use **C.11.DUA** when the value of another observation, calculation or trial is itself unresolved. A constructed case can justify a conditional proposal. An effectiveness claim requires evidence from its intended use. Do not require a new trial when existing adequate evidence settles the decision, and do not count a simulated or taught example as operational evidence.
 
 Return the chosen alternative, accepted trade-off and conditions of use to the receiving engineering or organizational decision. If only a candidate comparison was requested, it can finish here without authorizing implementation.
 
@@ -389,7 +391,7 @@ The current arrangement can itself become the subject of a slower development ac
 - **A.3.3, A.3.3.TR and A.3.3.PI** supply the dynamics, transition rule and predictive information. Their results enter the decisions and timing here; a changed input policy can reopen them.
 - **C.32 and C.32.MLAO** supply candidate generation and changes that address a recovered cross-scope residual. This pattern adds the control-specific construction of information, intervention, timing and continuation.
 - **C.32.MWA.PP:4.3–4.9** supplies construction and comparison of joint performance and provision, including shared means, workload, commitments and transition conditions. This pattern connects those conditions to the observation, decision and intervention that must occur in time. A proposed relation remains prospective until its obtaining conditions are met; changed authority or resource demand returns to the affected comparison.
-- **C.11 and C.11.DUA** supply the authorized choice and the worth of further inquiry. The architecture explanation is their input, not authorization by itself.
+- **C.11 and C.11.DUA** supply the local choice and the worth of further inquiry. The architecture explanation is their input; neither that explanation nor the choice establishes permission to act. **C.43** returns the selected arrangement to the connected continuation it must make possible.
 - **C.28** governs reliance on a causal result when an empirical effect is used to justify the change. A conditional calculation retains its model premises.
 - **C.39 and B.1.5.RS** support construction of a missing contribution and preservation of receiving uses when one contribution is replaced. A replacement that changes observations, timing or actions returns to the affected joint-condition analysis here.
 

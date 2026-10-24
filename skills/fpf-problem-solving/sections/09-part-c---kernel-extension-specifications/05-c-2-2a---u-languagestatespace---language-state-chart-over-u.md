@@ -64,7 +64,7 @@ Without an explicit language-state chart:
 ### C.2.2a:4 - Solution
 `U.LanguageStateSpace` is the cluster-local name for the declared language-state chart over `U.CharacteristicSpace` as disciplined by `A.19`.
 
-It is not a second kernel state-space apparatus beside `A.19`. It is the particular declared `U.CharacteristicSpace` whose basis slots are the language-state facets used in this cluster.
+It is not a second kernel state-space apparatus beside `A.19`. It is the particular declared `U.CharacteristicSpace` whose basis slots represent the selected language-state Characteristics. A profile containing several Characteristics expands into their separate slots; it is not one atomic Coordinate.
 
 #### C.2.2a:4.0a - Kind and chart boundary
 
@@ -87,15 +87,15 @@ Publish each basis-slot reading as a `ValueSet(slot)`, interval, or other admiss
 `position` language is therefore admissible here only as shorthand for such slot-explicit `A.19` coordinate claims. It does **not** authorize a rival process-sequence or feature-vector story.
 
 #### C.2.2a:4.3 - Facet basis
-The language-state chart is coordinated by explicit facet subject patterns rather than by an informal master progression. In the current cluster the basis is formed by:
+The language-state chart is coordinated by explicit facet subject patterns rather than by an informal master progression. Select the actual Characteristics and Scales needed for the next action from:
 
-- `C.2.3` for `F`;
+- `C.2.3` for the selected expression properties in a formality assessment, or an explicitly justified local summary;
 - `C.2.4` for articulation explicitness;
 - `C.2.5` for language-state closure degree;
 - `C.2.6` for language-state anchoring mode;
 - `C.2.7` for the language-state representation-factor bundle.
 
-`C.2.2a` states that these basis slots together define the chart. It does **not** govern the internal scale semantics of the individual facets.
+The selected basis slots together define the chart under A.19. Each actual Characteristic has its own Scale and slot. In particular, neither a formality profile nor a representation-factor bundle is silently treated as one Coordinate. `C.2.2a` does **not** govern the internal meanings or Scale semantics of those Characteristics.
 
 #### C.2.2a:4.4 - Ontological slot groups
 Within this cluster, keep five slot groups distinct:

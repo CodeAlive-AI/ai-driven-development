@@ -13,6 +13,8 @@ The reader needs access to the earlier basis, the later result and the subject k
 
 **Use the direct way when it already suffices.** A subject Method that already compares the earlier basis, later outcome, affected uses and current alternatives needs no additional C.11.DBR pass. Use C.11 directly when the current chooser, options and comparison basis are ready. Use A.15.7 for a next action during ongoing Work when no earlier-basis reconstruction is needed. Begin with A.10.1 when a source changed and its actual receiving uses are still unknown.
 
+Within ongoing control, return the affected and preserved uses to **C.43**. A changed observation may require another immediate action; a changed model, goal or means can require rebuilding a different contribution. This Method establishes which relied-on basis changed and where that matters. The receiving control account connects that result to an available intervention and its execution. An adequate subject feedback Method can already supply this comparison without a separate reconstruction.
+
 ### C.11.DBR:2 - Problem
 
 Feedback can miss its receiving decision in two opposite ways. A later result stays in a report while the team continues relying on a defeated premise. Or one changed condition reopens every related decision, including commitments and completed work whose grounds remain sound.

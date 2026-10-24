@@ -244,7 +244,7 @@ If the candidate needs changed authority or a new agreement, include the obtaina
 
 #### C.32.MWA.PP:4.8 - Compare complete changes at proportionate effort
 
-Use one current baseline, declared horizons and decision-changing scenarios. Compare each candidate's result and resource consequences, including the transition from the incumbent. C.11.CRC supplies the comparison; C.11 supplies the authorized choice.
+Use one current baseline, declared horizons and decision-changing scenarios. Compare each candidate's result and resource consequences, including the transition from the incumbent. C.11.CRC supplies the comparison; C.11 supplies the reasoned local choice. The rights and agreements needed to carry it out remain conditions established through §§4.7 and 4.9.
 
 First distinguish an unavailable arrangement from a costly but possible one. Then retain the coordinates that could reverse the choice. These can include useful results, capability retention, delay, participant effort, qualified scarce time, money, continuity, autonomy, dependence, error exposure and future flexibility. Compare contributions to their actual receivers. A lower supplier cost that makes client performance impossible is not a cheaper equivalent service.
 

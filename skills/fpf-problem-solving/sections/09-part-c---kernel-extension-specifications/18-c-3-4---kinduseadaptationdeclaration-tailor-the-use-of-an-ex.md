@@ -134,7 +134,7 @@ Use an adaptation declaration for procedural tailoring. If the criterion becomes
 
 - The base `KindSignature` episteme supplies the kind criterion and its own F.
 - The separate adaptation declaration supplies additional candidate-feature constraints or vocabulary bindings and may have its own F.
-- The exact `KindUseAdaptationJudgment` pins both editions and preserves `unknown`; neither formality value belongs to the kind, candidate, or truth value.
+- The exact `KindUseAdaptationJudgment` pins both editions and preserves `unknown`; neither formality assessment belongs to the kind, candidate, or truth value.
 - An optional extension-like result remains only a pinned-edition representation of true adaptation judgments.
 
 #### C.3.4:8.3 - With KindBridge

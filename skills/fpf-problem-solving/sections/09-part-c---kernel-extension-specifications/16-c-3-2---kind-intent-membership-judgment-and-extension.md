@@ -63,7 +63,7 @@ Author a reusable `KindSignature` only when a named receiving use needs the crit
 - the exact `U.ContextSlice` applicability in which the evaluation may be formed;
 - the effective `U.ReferenceScheme`;
 - named assumptions, dependencies, standards, versions, units, and temporal policy;
-- its `U.Formality`; and
+- the expression properties needed for its intended use under C.2.3; and
 - an optional `ExtentRule` for a named extension-consuming use.
 
 In A.6.0 terms, `SubjectKind` is the broad candidate kind and `RangedValueKind` is `{true, false, unknown}`. `not-applicable` is returned before this ranged evaluation. `ExtentRule` is declaration content, not a new ontic relation. Formality characterizes the declaration episteme, not the kind, candidate, truth, or extension. A changed membership condition, candidate-domain declaration, `EntityOfConcern`, applicability, or effective scheme identifies another episteme. Recheck its signature membership under A.6.0 and its `KindSignature` content under this section; claim an edition relation under C.2.1 only when that relation obtains. C.3.1 separately decides kind continuity.

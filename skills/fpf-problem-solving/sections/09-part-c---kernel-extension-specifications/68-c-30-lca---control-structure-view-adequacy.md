@@ -42,6 +42,8 @@ When either form includes actual control Work, each Work ref names an occurrence
 
 Use full `ControlStructureView` only when an independently identified architecture-description episteme about the selected control structure satisfies the fixed E.17.0 predicate for one viewpoint. Full use is justified when control-participant meanings, direct relations, rates, recovered control-layer labels, boundary refs, source return, representation or publication, or the patterns used for particular claims matter beyond the note.
 
+An obtaining relation can be ineffective or harmful. Describe the actual command, observation and response, including their delay, rather than supplying missing ideal connections. Distinguish an established absence from a relation not yet known: `oneWay` and `unclear` support different next inquiries. A controller whose feedback amplifies a deviation still has describable feedback; adequacy is a judgement on its behavior for the receiving use. **C.43:4.1.1–4.1.3** connects that description to explanation and a possible change. **C.32.LCA** develops the new arrangement when that is required.
+
 ### C.30.LCA:2 - Problem
 
 Control diagrams are persuasive because they look operational: arrows imply feedback, boxes imply responsibility, and recovered control-layer labels imply separation. In practice that is often enough for orientation, but not enough to identify selected structure, make direct relations obtain, admit the description as `U.View`, or establish architecture adequacy. A control-stack description can quietly overclaim stability, safety, evidence sufficiency, gate validity, assurance, or causality; a non-control `layer`, `level`, `tier`, or `stack` label belongs first to `C.30.STRAT`.

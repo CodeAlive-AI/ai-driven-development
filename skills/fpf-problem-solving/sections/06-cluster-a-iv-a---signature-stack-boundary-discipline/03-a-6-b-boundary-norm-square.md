@@ -428,9 +428,7 @@ or plan without inventing an actual E result.
 
 Choose one row. If one sentence answers two questions, split it before classification. If the sentence is not permission-like, do not use this branch. The branch classifies claims and selects existing subject patterns; it creates no `permission result` umbrella. Use the filled case in §8.4.5.4 when a concrete model is needed; point back to that case rather than adding another pattern list.
 
-**Guideline.** Keep gate semantics independent of specific evidence carriers:
-write the gate predicate in `A-*`; when an actual observation or result is stated,
-put it in `E-*` and reference the gate (`E → A`). `A-*` claims MUST NOT reference `E-*` (no upward dependencies), even though `E-*` is used to adjudicate gate satisfaction.
+**Guideline.** Keep the gate predicate separate from the observations and results used to evaluate it. Write the predicate in `A-*`; state an actual observation or result in `E-*` and reference the gate when the result concerns its application (`E → A`). An `A-*` predicate may consume a separately established result under §5.2; express a material dependency by reference under §6.1. That reference does not establish the result or a gate decision.
 
 **Step 4 — Link by ID or canonical location, not by paraphrase.** Apply the
 cross-quadrant restrictions in §6.4, including its explicitly informative-note

@@ -136,6 +136,8 @@ actingPartOrSubsystemRef != changedPartOrSubsystemRef
 
 for the current change-bearing claim.
 
+For controlled self-change, this split supplies the internal acting and changed participants. Connect their action to the rule or intended result that selects the intervention, its effect on later operation and the consequences used to revise it. **C.43:4.1.2** develops that account. An updater installing a poor setting can satisfy Reflexive Split; whether the update is suitably controlled and improves the result are further questions. If only roles or successive states are established, retain the supported acting-side account without inventing internal entity parts.
+
 #### A.12:4.3 - Episteme And Publication Cases
 
 If a source says "the document updates itself", identify the acting participant and decide which changed-object reading the claim needs:

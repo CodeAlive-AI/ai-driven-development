@@ -13,7 +13,7 @@
 - **C.3.2 — Kind intent, admissibility, judgment, and extension:** check `admissible | not-applicable` before a fresh `true | false | unknown` receiving judgment.
 - **A.2.6 — USM:** Claim scope and selected context slices remain separate from kind identity and kind correspondence.
 - **C.2.2 — F–G–R:** justified bridge penalties affect reliance R, not F or G.
-- **C.2.3 — U.Formality:** formality belongs to the declaration or assertion episteme.
+- **C.2.3 — Formality assessment:** the assessed expression properties belong to the declaration or assertion episteme.
 
 **Non-goals.** No repository or notation mandate. No Scope mapping here. No bridge from a locality change alone. No transfer of classification truth. `CL^k` reuses an ordinal congruence anchor for a declared kind-correspondence use without becoming a universal interoperability score.
 
@@ -91,7 +91,9 @@ The separate bridge assertion states whether obtaining is affirmed, denied, or u
 
 **KB-08 (Anchor reuse and AT neutrality).** `CL^k` reuses the ordinal anchor semantics of CL but assesses the declared bridge use over kind intent and order. The bridge-assertion episteme labels it kind-congruence. KindAT remains editorial under C.3.5 and independent of `CL^k`.
 **KB-09 (Effect on R only).** After receiving admissibility has been checked and an admissible candidate has received a fresh target judgment, a claim that relies on both that result and an obtaining KindBridge may apply only the bridge assertion's justified monotone `Ψ(CL^k)` consequence to R, alongside any independently established scope-relation consequence. A `not-applicable` candidate forms no judgment; `unknown` stays `unknown`; F and G do not change.
-**KB‑10 (Chaining).** For a chain of bridges, **effective `CL^k` = min** of the links (weakest‑link).
+**KB-10 (Chaining).** A minimum over comparable link assessments reports the lowest link rank on their common scale and calibration question. It does not by itself assess the composed correspondence. For a receiving use that depends on preservation through the chain, recover the exact mappings and intermediate interpretations, establish their joint definedness, and check that the required source distinctions survive every link and the composition. Keep each obtaining KindBridge and its assertion distinct. Return the preserved structure, actual losses and unresolved requirements; use another correspondence, narrower application or additional basis when an essential distinction is unavailable.
+
+Two locally useful mappings can lose different distinctions. For a finite order test on `0 < 1 < 2`, let both monotone maps have values `f(0)=0`, `f(1)=0`, `f(2)=1` and `g(0)=0`, `g(1)=0`, `g(2)=1`. Each preserves a nontrivial distinction in its own domain, but their composition maps every source value to `0`. The lowest link rank cannot establish preservation of the source distinction the final use needs. Conversely, an established composition that preserves the required common structure remains usable. A local law may derive a composition characteristic from a minimum when its domain and preservation argument justify that law; there is no universal chain-minimum rule. Any numerical consequence for R still requires the receiving model under C.2.2 and B.3.
 
 #### C.3.3:6.5 - Loss Notes & Definedness
 
@@ -186,10 +188,10 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 | **KB-07** | Collapse designates affected source order facts and lost distinctions without rewriting either kind order. |
 | **KB-08** | `CL^k` is an assessment in the bridge assertion and does not alter kind identity, formality, scope, or abstraction facet. |
 | **KB-09** | Reliance applies only justified `CL^k` consequences to R; admissibility, F, G, and classification truth stay unchanged. |
-| **KB-10** | Chained bridge reliance uses the weakest link while keeping occurrences and assertions distinct. |
+| **KB-10** | A comparable-link minimum remains a link summary; a claim about composed correspondence establishes joint definedness and preservation of the distinctions required by the receiving use, keeping occurrences and assertions distinct. |
 | **KB-11** | Loss notes state non-preserved criteria or subkind facts and do not change either kind. |
 | **KB-12** | Definedness is explicit; outside it the guard declines that bridge use while independent receiving classification keeps its own result. |
 
-**Integration requirements with Part B.** Part B distinguishes the C.3.3 kind-correspondence channel from scope and F.9 sense channels, routes justified `CL^k` consequences to R, and retains weakest-link chaining. Templates designate exact relied-on relations and assertions; their fields create none of them.
+**Integration requirements with Part B.** Part B distinguishes the C.3.3 kind-correspondence channel from scope and F.9 sense channels, routes justified `CL^k` consequences to R, and uses KB-10 for composition: comparable-link summaries remain separate from established preservation through the chain. Templates designate exact relied-on relations and assertions; their fields create none of them.
 
 ### C.3.3:End

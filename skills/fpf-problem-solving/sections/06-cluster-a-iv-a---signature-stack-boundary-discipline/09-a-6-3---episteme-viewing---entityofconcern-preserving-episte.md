@@ -68,7 +68,7 @@ If the supposed receiving item has no recoverable claim content or EntityOfConce
 
 #### A.6.3:4.2 - Declare the viewing construction
 
-A.6.3 viewing is the EntityOfConcern-preserving branch of A.6.2's local effect-free arrow class. In the selected formal substrate, one viewing arrow is written `v : X -> Y` and has exact source episteme X and exact receiving episteme Y.
+A.6.3 viewing is a preserve-mode specialization of A.6.2's local effect-free arrow class, subject to the viewing construction and laws below. In the selected formal substrate, one viewing arrow is written `v : X -> Y` and has exact source episteme X and exact receiving episteme Y.
 
 The reusable A.6.0 declaration describes the admitted local arrow family, rather than turning one arrow or endpoint pair into a kind:
 

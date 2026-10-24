@@ -27,12 +27,12 @@
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](22-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (243 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](23-e-9---design-rationale-record-for-fpf-content-decisions.md) (404 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](24-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (448 lines) — Framework placement: Core.
-- [E.10 - Unified Lexical Rules for FPF](25-e-10---unified-lexical-rules-for-fpf.md) (1631 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](25-e-10---unified-lexical-rules-for-fpf.md) (1642 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](26-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (215 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.INT - Recovering What Interest or Curiosity Means Here](27-e-10-int---recovering-what-interest-or-curiosity-means-here.md) (165 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](28-e-10-dev---recovering-what-development-or-evolution-means-in.md) (220 lines) — Type: Part E precision-restoration pattern
 - [E.10.MOVE - Move, Readiness and Trajectory Wording Precision Restoration](29-e-10-move---move-readiness-and-trajectory-wording-precision.md) (342 lines) — Type: Part E precision-restoration pattern
-- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](30-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (444 lines) — Type: Architectural (E)
+- [E.10.ARCH - Wording-Use Ontological Precision Restoration Architecture](30-e-10-arch---wording-use-ontological-precision-restoration-ar.md) (445 lines) — Type: Architectural (E)
 - [E.10.ROLE - Recovering What “Role” Means in the Current Claim](31-e-10-role---recovering-what-role-means-in-the-current-claim.md) (180 lines) — Type: Lexical and ontological precision restoration (E)
 - [E.10.P - Conceptual Prefixes policy & registry](32-e-10-p---conceptual-prefixes-policy-registry.md) (32 lines) — Intent. Provide a compact, notation‑neutral registry and minting policy for conceptual prefixes — short shorthands that signal cognitive namespaces used throughout the Core.
 - [E.10.D1 - Recovering What “Context” Means in Use](33-e-10-d1---recovering-what-context-means-in-use.md) (171 lines) — Normativity: Normative when context carries meaning needed by an FPF claim; informative for quoted source wording and ordinary prose that already makes its meaning clear.
@@ -61,7 +61,7 @@
 - [E.18.1 - P2W Problem-to-Work Carry-Through](56-e-18-1---p2w-problem-to-work-carry-through.md) (559 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](57-e-18-2---transformation-flow-mathematical-description.md) (239 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](58-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (473 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
-- [E.18.NET - Network of Transformation-Flow Structures](59-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork
+- [E.18.NET - Network of Transformation-Flow Structures](59-e-18-net---network-of-transformation-flow-structures.md) (422 lines) — Tech-name: TransformationFlowStructureNetwork
 - [E.19 - Pattern Quality Gates: Review and Refresh Profiles](60-e-19---pattern-quality-gates-review-and-refresh-profiles.md) (793 lines) — Type: Architectural pattern
 - [E.20 - Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms](61-e-20---mechanism-introduction-protocol-introduce-or-revise-f.md) (403 lines) — Type: Architectural pattern
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](62-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (607 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
