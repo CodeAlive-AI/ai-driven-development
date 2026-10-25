@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Agent_Skills-Collection-blueviolet?style=for-the-badge" alt="Agent Skills Collection">
-  <img src="https://img.shields.io/badge/Skills-24-blue?style=for-the-badge" alt="24 Skills">
+  <img src="https://img.shields.io/badge/Skills-23-blue?style=for-the-badge" alt="23 Skills">
   <img src="https://img.shields.io/badge/Hooks-1-yellow?style=for-the-badge" alt="1 Hook">
   <img src="https://img.shields.io/badge/Agents-12+-orange?style=for-the-badge" alt="12+ Agents">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
@@ -65,12 +65,13 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (8)
+### Engineering practices (9)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
+| [agent-qa](skills/agent-qa/) | Natural-language web/mobile testing with vostride's agent-qa, recorded run evidence, and advanced memidex memory and self-improvement; preserves read-only review and draft-only requests |
 | [code-that-fits-in-your-head](skills/code-that-fits-in-your-head/) | Keep agent-authored systems understandable and maintainable by resisting accidental complexity, Big Balls of Mud, and technical-debt accumulation. Supports large changes when architecture, acceptance criteria, verification, and recovery are explicit; uses structural heuristics without universal formatting or task-size limits |
 | [prompt-engineering](skills/prompt-engineering/) | Universal prompt-engineering toolkit. 14 reference docs covering Claude / GPT / Gemini family-specific guidance, prompting techniques, evaluation & red-teaming, common failure modes (hallucinations, security, structure, debt) |
 | [fpf-problem-solving](skills/fpf-problem-solving/) | First Principles Framework — a transdisciplinary "operating system for thought". Decompose cross-domain problems, audit conclusions, and reason rigorously about complex systems. Based on Anatoly Levenchuk's [FPF](https://github.com/ailev/FPF) |
@@ -141,6 +142,7 @@ ai-driven-development/
 │   ├── marketplace.json         ← lists this repo as a single plugin (source: "./")
 │   └── plugin.json               ← umbrella plugin manifest
 ├── skills/                       ← canonical agent-skills layout
+│   ├── agent-qa/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
 │   ├── code-that-fits-in-your-head/
