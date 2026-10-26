@@ -14,7 +14,7 @@
 
 **Primary subject.** In this pattern, `publicationUnitPrimarySubject` means what this bounded publication unit is mainly about for the current reading. It may be a named entity, boundary, episode, question, proposal, pattern section, or another plainly named subject. This is a publication aid, not a new `U.` kind or a `C.2.1` participant by default.
 
-**Exact C.2.1 projection.** Only when the unit carries one identified claim-bearing episteme `E`, and its primary subject is the exact entity that the claims of `E` concern, may the author state `publicationUnitPrimarySubject = EntityOfConcern(E)`. Otherwise do not infer an `EntityOfConcernRef`, do not treat a topic or interpretation as an entity, and do not use a primary-subject transition as evidence that the exact `C.2.1` participant changed.
+**Exact C.2.1 projection.** Only when the unit carries one identified claim-bearing episteme `E`, and its primary subject is the exact entity that the claims of `E` concern, may the author state `publicationUnitPrimarySubject = EntityOfConcern(E)`. Otherwise do not infer an `EntityOfConcernRef` from a topic label or interpretation alone, or use a primary-subject transition as evidence that the exact `C.2.1` participant changed.
 
 **Publication unit.** Here this means one bounded note, memo, sheet, review aid, screen, table, or short section that people are expected to read as one unit.
 
@@ -33,11 +33,9 @@
 
 **Quick recovery.** If this situation fits, write the ordinary natural-language declaration in `E.17.AUD.OOTD:4.3` and compare it with the nearest worked slice in `E.17.AUD.OOTD:5.1` through `E.17.AUD.OOTD:5.6`. Use the six diagnostic prompts only if the declaration is hard to make honest. If one clear sentence or two short sentences settle the case, stop there rather than creating a card or climbing into heavier assurance by habit.
 
-**Quick boundary bank.** If this situation no longer fits, stop at the right boundary instead of opening the heavier stack by habit. One overloaded local lexical head or qualifier only -> `E.17.AUD.LHR` (`Local Head Restoration`). Same stable publication unit, but the question under repair is one bounded comparison over already pinned source epistemes or publications -> `E.17.ID.CR`. View, face, carrier, same-entity rewrite, or downstream approval, work, or reliance question -> the neighboring pattern or the more honest downstream decision publication.
+**What this pattern does.** `PublicationUnit Stability Discipline` names the broader family. `PublicationUnit Primary-Subject Discipline` is the local writing-and-review pattern for making one unit's primary subject, carried move, downstream-use boundary, and outside-work boundary clear together.
 
-**What this pattern does.** `PublicationUnit Stability Discipline` names the broader family. `PublicationUnit Primary-Subject Discipline` is the local writing-and-review pattern for making one unit's primary subject, carried move, downstream-use boundary, and outside-work boundary clear together. The moving lineage remains successive `U.Episteme` publications over `U.CharacteristicSpace`; this pattern only keeps one publication unit clear about that lineage or one move over it.
-
-**Reader.** This pattern is written first for an engineer-manager, architect, reviewer, or programme lead who needs to stop one publication unit from quietly changing what it is about. Others may polish or review the text itself, but the opening should still read as ordinary review and writing guidance.
+**Reader.** This pattern is written first for an engineer-manager, architect, reviewer, or programme lead who needs to stop one publication unit from quietly changing what it is about.
 
 ### E.17.AUD.OOTD:1 - Problem frame
 
@@ -96,7 +94,7 @@ If the real problem is still only one vague local lexical head word, start with 
 - **Publication unit** = one written or displayed bounded unit others are meant to read as one unit, such as a note, memo, sheet, table, or guided screen.
 - **Primary subject** = what that bounded unit is mainly about for the current reading. It is an ordinary local publication term, not a new ontological kind.
 - **Concern** = the question, aspect, or issue foregrounded about that subject. The concern can change while the subject remains the same.
-- **Exact `EntityOfConcern`** = the one exact `U.Entity` participating in the `C.2.1` constitution of one identified claim-bearing episteme. It is not a synonym for topic, kind, interpretation, question, or subject.
+- **Exact `EntityOfConcern`** = the one exact `U.Entity` participating in the `C.2.1` constitution of one identified claim-bearing episteme. Neither a topic label nor a writing question identifies that participant by itself.
 - **Carried move** = what the unit asserts, compares, explains, recommends, or otherwise communicates about its subject; it may also say that it only stabilizes the reading without adding a new claim.
 - **Downstream use** = what a reader is invited or permitted to do with the unit, such as understand, compare, approve, rely, assign, or act.
 - **Outside-work boundary** = what wider review, execution work, non-admissible downstream decision, or reliance claim stays outside the current unit.
@@ -200,7 +198,7 @@ These fields do not create a rival rule track. `publicationUnitFormCue` names wo
 **Quick boundary to neighboring patterns and project records**
 - use `E.17.AUD.LHR` (`Local Head Restoration`) when the instability is still local to one lexical head, qualifier, or interpretation word;
 - use `E.17.ID.CR` when the same publication unit already holds one stable primary subject, one carried move, and one outside-work boundary, and the question under repair is one bounded comparative review move over already available source epistemes or publications;
-- use this pattern when one publication unit still has unstable subject, concern, carried-move, downstream-use, or outside-work interpretation after honest local repair;
+- use this pattern when the unit's unstable subject, concern, carried move, downstream use, or outside-work interpretation extends beyond local lexical repair;
 - use the neighboring pattern that addresses the view, face, carrier, entityOfConcernRef-preserving transform, explanation, bridge, ontology, gate, approval, or execution question; keep any required project record with that question.
 
 #### E.17.AUD.OOTD:4.5 - Boundary-rule summary
@@ -208,10 +206,10 @@ These fields do not create a rival rule track. `publicationUnitFormCue` names wo
 Use this summary to decide whether to stay with this pattern or move to a neighboring one.
 
 The practical summary is:
-1. keep one declared primary subject unless a transition is explicit;
+1. choose the least-cost honest unit architecture under 4.2.a: retain one primary subject, declare a transition, keep an explicitly sectioned unit, or split;
 2. do not collapse primary subject, concern, exact `EntityOfConcern`, description, carrier, publication unit, carried move, process, and downstream use into one unchanged interpretation;
 3. keep the carried move and permitted downstream use distinct from the wider work around them;
-4. use local `E.17.AUD.LHR` (`Local Head Restoration`) first, and open this pattern when publication-unit interpretation instability remains after that;
+4. use `E.17.AUD.LHR` when one local head or qualifier is the defect; use this pattern when that repair cannot settle the unit's subject, move, use, or outside boundary;
 5. apply `E.17.ID.CR` when publication-unit stability already holds and the remaining question is one bounded comparative review move over already available source epistemes or publications;
 6. move out when the unit starts carrying downstream decision pressure or another neighboring-pattern question.
 
@@ -235,7 +233,7 @@ Repair the memo in one of two ways:
 
 **Repaired two-sentence memo.** `This memo assesses the proposed service boundary between catalog and checkout. Rollout sequencing, responsibility assignment, and approval remain outside this memo.`
 
-**Action saved.** The author publishes those two sentences and stops: no six-row artifact, empty transition declaration, neighboring-pattern reference, assurance record, or evidence package is produced. A rollout record opens only if rollout later becomes current work.
+**Result.** The author publishes those two sentences and stops. A rollout record opens only if rollout later becomes current work.
 
 #### E.17.AUD.OOTD:5.2 - Operations note shifting into approval
 
@@ -303,13 +301,13 @@ The main mitigation is explicit primary-subject, concern, carried-move, downstre
 2. **CC-OOTD-2 - Primary subject is explicit.**
    The unit states what it is mainly about in ordinary language rather than asking readers to infer it from tone.
 3. **CC-OOTD-3 - Any `EntityOfConcern` projection is exact and conditional.**
-   The unit uses `EntityOfConcern` only for the exact entity participant of one identified claim-bearing episteme under `C.2.1`; a topic, kind, question, or interpretation is never substituted for that participant.
+   The unit uses `EntityOfConcern` only for the exact entity participant of one identified claim-bearing episteme under `C.2.1`. A topic label alone does not identify that participant. An independently identified entity, including an admitted relation kind, may do so when the claims concern it.
 4. **CC-OOTD-4 - Concern, carried move, downstream use, and outside work are distinct.**
    The unit states which question it foregrounds, what it asserts or communicates, how readers may use it, and which wider work, approval, execution, decision, or reliance remains outside.
 5. **CC-OOTD-5 - Any transition is typed and explicit.**
    If subject, concern, claim or carried move, downstream use, or the exact entity participant changes, the unit names which change occurred rather than quietly absorbing all of them into one interpretation.
 6. **CC-OOTD-6 - Local vs publication-unit repair choice is honest.**
-   Apply `E.17.AUD.LHR` (`Local Head Restoration`) first when local repair is enough; apply this pattern only when publication-unit interpretation instability remains after local repair.
+   Use `E.17.AUD.LHR` when one local head or qualifier is the defect. Apply this pattern when that repair cannot settle the unit's subject, move, use, or outside boundary.
 7. **CC-OOTD-7 - Neighboring-pattern boundary is explicit.**
    If an entityOfConcernRef-preserving transform, explanation, bridge, comparative-review, ontology, gate, approval, or execution claim becomes primary, use the neighboring pattern that defines or constrains that claim rather than pretending this pattern still carries the case.
 8. **CC-OOTD-8 - Claim-bearing lens is stated when needed.**
@@ -355,7 +353,7 @@ Heavier declaration comes only after the ordinary declaration already holds and 
 | Keep the current unit focused and expose its scope and non-scope. | [Google Technical Writing One — Documents](https://developers.google.com/tech-writing/one/documents) (updated 2025-07-07) tells authors to state scope and non-scope, then refocus or revise the scope when content veers; [Paragraphs](https://developers.google.com/tech-writing/one/paragraphs) (updated 2025-03-28) treats a paragraph as one independent unit of logic focused on one topic. | Paragraph focus does not imply one subject for every memo, packet, or document. OOTD scales the move by naming the bounded unit and comparing retention, explicit transition, sectioning, and splitting. | `E.17.AUD.OOTD:4.2.a`, `E.17.AUD.OOTD:4.3`, `E.17.AUD.OOTD:5.1`, `E.17.AUD.OOTD:5.6` |
 | Organize documentation around the user's need and keep different action/cognition modes visible. | [Diátaxis](https://diataxis.fr/) organizes content, architecture, and form around four distinct user needs; its [compass](https://diataxis.fr/compass/) tests whether material informs action or cognition and supports acquisition or application, at sentence or whole-document scale. | The four modes diagnose a use shift but are not an FPF ontology or a formula for document count. OOTD names the actual carried move and downstream use, then keeps one structured unit only when a shared reader goal makes that cheaper and still clear. | `E.17.AUD.OOTD:4.1.a`, `E.17.AUD.OOTD:4.2.a`, `E.17.AUD.OOTD:5.2`, `E.17.AUD.OOTD:5.6` |
 | Use a single-subject reusable topic when modular reuse is the main need. | [OASIS DITA 1.3 `<topic>`](https://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/base/topic.html) defines the top-level topic as a single-subject topic or article. This is established structured-authoring lineage (2015), not the current source of OOTD's whole-document rule. | A DITA topic is one valid reusable unit architecture, not evidence that a deliberately sectioned review packet is defective. OOTD selects it when independent reuse or retrieval dominates and otherwise permits the coherent multi-section unit. | `E.17.AUD.OOTD:4.2.a`, `E.17.AUD.OOTD:5.6` |
-| Keep object words and local designations precise without importing another concept system. | ISO 704:2022 and ISO 1087:2019 terminology practice distinguishes objects, concepts, definitions, designations, and terms. | Terminology discipline repairs overloaded heads but does not choose the publication architecture. OOTD first uses `E.17.AUD.LHR`, then makes subject, concern, carried move, and use explicit only when unit-level instability remains. | `E.17.AUD.OOTD:4.1.a`, `E.17.AUD.OOTD:4.2`, `E.17.AUD.OOTD:5.3` |
+| Keep object words and local designations precise without importing another concept system. | ISO 704:2022 and ISO 1087:2019 terminology practice distinguishes objects, concepts, definitions, designations, and terms. | Terminology discipline repairs overloaded heads but does not choose the publication architecture. OOTD uses `E.17.AUD.LHR` for a local-head defect and its own architecture choice when the instability extends beyond that repair. | `E.17.AUD.OOTD:4.1.a`, `E.17.AUD.OOTD:4.2`, `E.17.AUD.OOTD:5.3` |
 
 ### E.17.AUD.OOTD:12 - Relations
 

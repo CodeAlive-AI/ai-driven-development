@@ -10,7 +10,7 @@
 
 **Use this when** a worthwhile problem or proposed contribution is clear enough to explore, but the proposed direction is still “train,” “buy,” “automate,” “hire,” or “learn Pattern X.” Those labels omit the change, later Work, access, support, transition burden, and evidence that would make the contribution possible.
 
-Start by describing one finite change from the actual situation, together with the support needed to obtain the proposed contribution. Construct a materially different way when it could change the inquiry. The first useful result is a small set of contribution-bearing direction/support configurations, or one such candidate with an exact missing alternative or premise.
+Start by describing one finite change from the actual situation, together with the support needed to obtain the proposed contribution. Construct a materially different way when it could change the inquiry. The first useful result is an adequate contribution-bearing direction/support candidate, a set of materially different candidates, or a conditional candidate with a named missing premise.
 
 A *direction* here is a prospective change in contribution, capability, use, or enabling conditions over a declared horizon. Its description is not an obtaining arrangement, selected programme, WorkPlan, performed Work, or choice. A person exploring their own development can use it without asking for advice.
 
@@ -44,7 +44,7 @@ Construct whole-enough prospective directions around the receiving contribution.
 
 Name the subject of the proposed change and configuration, receiving Work or use, proposed result, acceptance expectation, horizon, scenarios, and protected conditions. Use the current problem/contribution account from `C.40.PC` or an adequate direct source. Preserve an unconfirmed problem as a hypothesis rather than strengthening it through detailed design.
 
-Recover the actual starting configuration `S0`: relevant capability, access, support, Work, interfaces, resources, and current readings. Mark unknowns. A job title, organization chart, tool inventory, or source publication is not that baseline.
+Recover the actual starting configuration `S0`: relevant capability, access, support, Work, interfaces, resources, and current readings. Mark unknowns. A job title, organization chart, tool inventory or source publication may supply relevant information, but its presence alone does not establish the needed baseline.
 
 Use `C.40.OC` for the characteristic meanings, scales, current/intended/protected/unknown readings, and evidence window needed by the inquiry. Characterize only what could change the direction or its qualification; do not commission a complete diagnosis by default.
 
@@ -54,7 +54,7 @@ For every serious proposal, explain what the subject or supported arrangement co
 
 When a pattern is the proposed address, cite its complete current body and recover the action-bearing contribution from it. Do not substitute its title, PatternID, a summary card, or a list of topics for that contribution. Keep the body's relevant applicability, assurance, and stopping conditions; the direction need not copy the entire source.
 
-If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and [A.3.2](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). A pattern is a MethodDescription only when it describes an already admitted Method as its EntityOfConcern. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
+If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and [A.3.2](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). A pattern is a MethodDescription only after A.3.2 establishes an already admitted Method as its exact EntityOfConcern and at least one substantive claim about that Method as a way of doing. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
 
 For a person, connect the contribution to representative later Work. “Use A.15.9 to formulate and rely on a bounded outside-practice result in evidence review” can specify a contribution; “finish A.15.9” cannot specify capability or transfer. A capability or transfer claim needs qualified evidence about this person, the later Work and permitted support; obtain that result from the relevant capability and subject practice before relying on it.
 
@@ -69,7 +69,7 @@ Distinguish two questions:
 
 For a separately selected decision-design inquiry, an applicable alternative-generation Method can develop an explicit set of decision alternatives from the directions returned here. That Method can retain alternatives for different live formulations; same-result parity is not its universal entry condition.
 
-Retain the actual baseline, a smaller repair, a staged direction, or no new development when each genuinely answers the inquiry. No change still carries continuing Work, resource use, and exposure. A missing alternative is an honest return; do not invent a weak candidate to make a preferred one win.
+Retain the actual baseline, a smaller repair, a staged direction, or no new development when each answers the inquiry. No change still carries continuing Work, resource use, and exposure. A missing alternative is an honest return; do not invent a weak candidate to make a preferred one win.
 
 #### C.40.DC:4.4 - Specify the finite change and support configuration
 
@@ -116,7 +116,7 @@ Reopen only the affected contribution, support, transition, comparison, or downs
 
 #### C.40.DC:5.1 - A complete pattern contribution for a person's later Work
 
-This constructed case concerns Mira's four-month exploration of useful engineering-review Work. Its source packet stipulates permitted example packages and a maximum of two inquiry hours per week. The stipulated review record identifies recurring delays from missing outside-practice premises. Her current ability to recognize those missing premises in representative Work is unknown. Independent acceptance, confidentiality, and sustainable workload remain protected.
+This constructed case concerns Mira's four-month exploration of useful engineering-review Work. The case assumes permitted example packages and a maximum of two inquiry hours per week. The stipulated review record identifies recurring delays from missing outside-practice premises. Her current ability to recognize those missing premises in representative Work is unknown. Independent acceptance, confidentiality, and sustainable workload remain protected.
 
 One lead is “learn A.15.9.” The direction instead cites the complete [A.15.9 body](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and recovers its contribution:
 
@@ -232,7 +232,7 @@ Finite changes and stage-specific baselines make hidden burden visible. They let
 
 **Front-end boundary.** [ISO 56007:2023](https://www.iso.org/standard/75068.html) supplies normative guidance for opportunity/concept work before solution development and deployment. Here that boundary supports prospective configurations and truthful gaps; it supplies no missing support, implementation, or effect evidence. A complete cited pattern contribution similarly supplies guidance, not holder capability.
 
-**Trade-off, limits, and reopen.** The selected account costs more than naming an intervention but less than designing and qualifying every implementation. Its constructed cases demonstrate distinctions, not comparative effectiveness. Reopen the affected move if current holder or configuration practice preserves the contribution, complete consequences, and necessary support with less burden; if a relied-on comparison or source changes; or if a real use reveals a consequential omitted interaction or transition.
+**Trade-off, limits, and reopen.** Recovering the contribution and support takes work; compare that burden with using an adequate existing direction or obtaining the fuller implementation detail needed by the receiving use. The constructed cases demonstrate distinctions, not comparative effectiveness. Reopen the affected move if current holder or configuration practice preserves the contribution, complete consequences, and necessary support with less burden; if a relied-on comparison or source changes; or if a real use reveals a consequential omitted interaction or transition.
 
 ### C.40.DC:12 - Relations
 

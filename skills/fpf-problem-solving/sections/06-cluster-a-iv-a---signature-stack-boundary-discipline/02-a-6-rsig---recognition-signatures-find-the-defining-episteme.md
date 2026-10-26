@@ -6,57 +6,16 @@
 
 ### A.6.RSIG:1 - Problem frame
 
-A reader often meets one description before they know whether it is the right
-description to inspect. The reader may see a boundary clause, method note,
-interface excerpt, pattern opening, or public projection. The reader first needs
-to recognize the description before reconstructing its full semantics:
-what description is seen, where it is encountered, what it applies to, what
-excludes it, and which `definitionEpistemeRef` identifies its defining `U.Episteme`.
-Reject a nearby reading or wrong defining `U.Episteme` only when the grounded-guard
-condition in §4.1 holds.
+**Use this when** an encountered description leaves it unclear which defining account to inspect. A boundary clause, method note, interface excerpt or pattern opening can identify a useful next reading if its purpose, applicability and defining source are recoverable.
+**First useful move.** State what the encountered description is for and identify its defining `U.Episteme`, using `definitionEpistemeRef` when a reference is needed. Include an exclusion or rejected neighboring reading only when it changes recognition or use under §4.1.
 
-**Plain recognition line.** Find the defining `U.Episteme` for the encountered description.
+This gives the reader a description to inspect before broader comparison or a decision to apply its contents. A summary or excerpt can guide that choice, while its source reference allows the reader to check the defining account.
 
-Use this pattern while the reader needs to decide whether one encountered
-description is the right description to inspect, before broader comparison,
-publication-face selection, boundary-claim routing, or pattern-language entry
-comparison begins.
-
-What goes wrong if this pattern is missed:
-
-- one summary, excerpt, boundary phrase, or local top is mistaken for the
-  defining `U.Episteme` of the description;
-- one access/request description is over-read as a promise about downstream
-  effect;
-- one boundary-presented description is over-read as L/A/D/E-classified claim structure or
-  as the full semantic claim set;
-- one method note is treated as applicable before its actual method family and
-  exclusions are recoverable;
-- one pattern-local opening is forced to carry cross-pattern comparison that
-  belongs to `E.11`.
-
-What this pattern buys:
-
-- the reader can tell what the encountered description is for before deeper
-  semantics are reconstructed;
-- carrier, projection, description, and defining `U.Episteme` stay distinct;
-- false neighboring descriptions and wrong defining `U.Episteme` references become
-  rejectable in one first pass;
-- later boundary, publication, lexical, or pattern-language repairs start
-  from first-contact identification instead of from guesswork.
-
-Ordinary not-this-pattern boundary:
-
-- not when the reader's question already concerns full routed-claim structure, published
-  view law, lexical repair, or cross-pattern entry orientation;
-- not when the real question is the whole semantics of the method, boundary
-  claim, interface promise, or pattern;
-- not when a search/query phrase needs naming repair rather than
-  first-contact recognition of a particular encountered description.
+Reuse an already adequate identification. If the question instead concerns full boundary-claim classification, publication/view conditions, the Method’s semantics, cross-pattern selection or durable naming, use the pattern for that question.
 
 ### A.6.RSIG:2 - Problem
 
-When first-contact recognition is under-governed, several defects recur:
+A missing or ambiguous recognition cue can leave the following questions unresolved:
 
 1. One reader finds a boundary, method, interface, or pattern-local opening but
    cannot tell whether it is the right description to inspect.
@@ -79,12 +38,9 @@ When first-contact recognition is under-governed, several defects recur:
 
 ### A.6.RSIG:4 - Solution
 
-#### A.6.RSIG:4.1 - Recognition-cue discipline and non-goals
+#### A.6.RSIG:4.1 - Recognition-cue discipline
 
-`A.6.RSIG` governs description-recognition signatures in general: the
-first-contact cue structure by which one reader can recover what encountered
-description is live, what carrier or projection exposed it, what it applies to,
-what excludes it, and which `definitionEpistemeRef` identifies its defining `U.Episteme`.
+A recognition cue makes the description, its purpose and relevant applicability conditions recoverable, with a reference to its defining account. Identify the encountered carrier or projection when that distinction affects recognition.
 Reject a nearby reading or wrong defining `U.Episteme` only when it passes F.19's
 grounded-guard test: the rejected reading has an independent local ground, is
 plausible for the intended reader, and changes truth, understanding, selection,
@@ -98,7 +54,7 @@ declaration requires the applicable neighboring pattern's explicit conditions.
 The encountered carrier or projection may help recognition; it does not become
 authoritative merely by being encountered.
 
-Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is available only through one publication, cite separately the exact E.24.PUB publication occurrence that makes it available; the publication, projection, or carrier does not become the defining episteme merely because it exposed the definition to the reader.
+Point to the defining `U.Episteme` through the available publication. Identify the E.24.PUB publication occurrence separately when its identity changes which definition or use is available. The publication and its carrier keep their own identities.
 
 `A.6.RSIG` does not govern:
 
@@ -111,18 +67,16 @@ Use `definitionEpistemeRef` for the defining `U.Episteme`. If the definition is 
 
 #### A.6.RSIG:4.2 - Two-level description-recognition shape
 
-**Reader-visible minimum.** For ordinary reader-facing use, the minimum is not a card. One or two
-sentences may be enough if they make recoverable:
+**Reader-visible minimum.** Ordinary prose is sufficient when it makes these values recoverable:
 
 1. what this description is for;
 2. when it applies;
-3. when it does not apply;
+3. any exclusion that changes recognition or use;
 4. which definitionEpistemeRef applies;
 5. what nearby false reading or wrong defining `U.Episteme` to reject, when
    the grounded-guard condition in §4.1 holds.
 
-**Review-expanded shape, only when needed.** When a recognition cue affects a
-decision or is being reviewed, use the expanded recoverability shape:
+**Expanded questions when needed.** Use the following questions when the shorter cue leaves a consequential recognition ambiguity unresolved. Existing prose can carry the answers; a separate form is optional.
 
 ```text
 description_seen
@@ -138,40 +92,31 @@ projection_role_if_any
 nearby_false_description_or_wrong_definition_episteme
 ```
 
-The `nearby_false_description_or_wrong_definition_episteme` field is optional:
-use it only when the grounded-guard condition in §4.1 holds.
+Use the exclusion and false-neighbor fields only when the grounded-guard condition in §4.1 holds. The viewpoint field names the reader’s perspective; identify a formal U.Viewpoint episteme only when that separate relation matters.
 
-This shape is a review aid, not a mandatory form for every encountered
-description. It exists to keep description, carrier, projection, and definitionEpistemeRef from
-collapsing into one overloaded publication label or projection label.
+The questions help distinguish the encountered description and its defining account from their publication or carrier when those differences affect the choice.
 
 ##### A.6.RSIG:4.2.1 - Minimal local repair and review sequence
 
 Use this sequence when authoring or reviewing one recognition-signature repair:
 
-1. Name the `description_seen` and the reader viewpoint in one concrete first
-   sentence.
+1. Name the encountered description and the reader’s question.
 2. Name the encountered carrier or projection if confusing it with authority is
    a live risk.
-3. State what the description applies to and what excludes it.
+3. State the applicability and any exclusion needed to choose the description.
 4. Name the defining `U.Episteme` to inspect first.
 5. When the grounded-guard condition in §4.1 holds, name the nearby false
    description or wrong defining `U.Episteme` to reject.
-6. State the first admissible entry stop or neighboring-pattern application.
+6. State the useful next inspection or the missing basis that prevents it.
 7. If that stop cannot be stated without A.6.B claim routing, publication-face law,
    lexical repair, or cross-pattern comparison, apply the appropriate neighboring pattern instead of
    stretching `A.6.RSIG`.
 
-Minimal admissible output:
+The result is the recognition statement, its defining source reference and the useful next inspection or limitation. Include a false-neighbor correction only under §4.1.
 
-- one first-contact recognition statement the reader can use immediately;
-- one explicit defining `U.Episteme`;
-- an explicit false-neighbor rejection when the grounded-guard condition in §4.1 holds;
-- one admissible entry stop or reroute.
+#### A.6.RSIG:4.3 - Common uses
 
-#### A.6.RSIG:4.3 - Parent cases
-
-`A.6.RSIG` keeps the main parent cases explicit:
+The same recognition question occurs in several settings:
 
 - **boundary-description recognition**: can one reader recover what one
   boundary-presented description is for before the reader needs to classify its
@@ -304,30 +249,15 @@ With only the cue, first ask what the pairwise comparison is intended to determi
    or review comment that mentions pairwise comparison.
 3. `applies_to` = comparison under a declared comparator set or characteristic
    family.
-4. `excludes` = publication of a selected set, execution planning, evidence
-   sufficiency, and one-off decision doctrine. If one of those questions is
-   current, apply the pattern that governs it and obtain the result it requires.
-5. `definitionEpistemeRef` = the relevant comparison or method pattern, not the
-   note itself.
+4. `excludes` = selection or publication rules absent from this defining description. Apply the governing pattern if either result is needed.
+5. `definitionEpistemeRef` = the defining comparison or Method-description episteme identified from the source, which this short cue does not supply.
 6. `nearby_false_description_or_wrong_definition_episteme` = selection/publication doctrine
    treated as if the method note had already settled it.
-7. `first_admissible_entry_stop_or_reroute` = method applicability is recognized or
-   rejected before selection semantics begin.
+7. `first_admissible_entry_stop_or_reroute` = inspect the identified comparison description. Its actual applicability and any subsequent selection still need their own conditions established.
 
 ### A.6.RSIG:6 - Bias-Annotation
 
-This pattern counters:
-
-- front-door centralization bias, where every description-recognition question
-  is pushed into one global front-door cue;
-- signature-stack overreach, where any useful cue is prematurely promoted into
-  `U.Signature`;
-- carrier-authority collapse, where an encountered carrier or projection is
-  treated as the defining `U.Episteme`;
-- alias bias, where uncontrolled synonyms compensate for missing recognition
-  structure;
-- workflow bias, where first-contact recognition is narrated as sequence or
-  handoff.
+A familiar label can attract the reader to the wrong account. The boundary, access and pairwise-comparison cases show why recognizing the subject and recovering the defining source must work together. A cue that already does this needs no additional form, alias or classification.
 
 ### A.6.RSIG:7 - Conformance checklist
 
@@ -344,10 +274,7 @@ This pattern counters:
 - **CC-RSIG-4 No kind inflation.** An ordinary recognition cue is not by itself a
   typed `U.Signature`; a task requiring a typed declaration uses the applicable
   neighboring pattern under §4.5.
-- **CC-RSIG-5 Recoverable cue shape.** For load-bearing cases, description,
-  viewpoint, cue, applicability, exclusion, defining `U.Episteme`, and admissible
-  entry stop remain recoverable. A false neighbor is required only when the
-  grounded-guard condition in §4.1 holds.
+- **CC-RSIG-5 Recoverable cue.** For a consequential recognition use, keep the description’s purpose, applicability, defining source and next inspection recoverable. Include viewpoint, carrier/projection distinctions, exclusions or a false-neighbor correction when they change the reading under §4.1.
 - **CC-RSIG-6 No alias minting.** Query cues and ordinary phrasing do not by
   themselves establish a naming settlement or Bridge. Use `F.18` for naming
   settlement and `F.9` for a Bridge, each under its own conditions.
@@ -371,41 +298,28 @@ This pattern counters:
 
 ### A.6.RSIG:9 - Consequences
 
-This pattern gives one neutral governing discipline for first-contact
-description recognition without turning discoverability into one universal
-governing pattern. It sharpens the boundary between cue recognition, semantic
-authority, lexical repair, publication-face projection, and pattern-language
-entry.
+A reader can identify the relevant defining account while leaving its full semantics, applicability judgment and any subsequent selection to the work that needs them.
 
-The cost is one extra explicit split when a cue is confusing: description,
-encountered carrier or projection, and defining `U.Episteme` must not be
-collapsed; include the false neighbor when §4.1's grounded-guard condition holds. The cost stays bounded because the expanded shape is review-only
-or risk-triggered, not a required card for ordinary prose.
+The cost is recovering enough purpose, conditions and source identity to make that choice. Use the expanded questions only when the ordinary cue leaves a consequential ambiguity.
 
 ### A.6.RSIG:10 - Rationale
 
+A recognition cue lets a reader choose what to inspect from the description’s stated purpose and conditions. The source reference then makes that first estimate checkable against the defining account. If the account does not support the cue, revise the cue or keep the choice unresolved; a recognizable label alone cannot settle the discrepancy. An adequate cue can finish this first-reading task without deciding whether the full Method is applicable or effective.
 
-`A.6.RSIG` combines information-scent, human/AI expectation-management,
-controlled vocabulary, and retrieval-context practices into one
-description-facing discipline.
+The same construction works for a boundary clause, an interface description or a Method note because each connects an encountered expression to a defining account and a bounded reading decision. Their domain meanings remain different. This shared relation explains the common questions without turning recognition into one universal entry or semantics pattern.
 
 ### A.6.RSIG:11 - SoTA-Echoing
 
-This pattern is an `FPF`-local synthesis, not an established external term. It
-carries the modern practice concern only where that concern sharpens one
-description-facing recognition question: can the reader recover the right
-description, its carrier or projection, its exclusions, its defining `U.Episteme`,
-and, when §4.1's grounded-guard condition holds, its false neighbor before
-relation precision or epistemic precision-restoration work begins?
+The following sources contribute to cue economy, recoverable definition and bounded expectations. Their contributions apply to the recognition question; the defining subject account still supplies its substantive semantics.
 
-| Pattern claim carried here | Source-bearing SoTA support (post-2015) | Alignment with `A.6.RSIG` | Adoption status and worked-slice implication |
+| Recognition question | Source contribution | Connection to this pattern | Use and limits |
 | --- | --- | --- | --- |
-| First-contact recognition is narrower than general information architecture or documentation UX. | Jorge Arango (2018), *Living in Information: Responsible Design for Digital Places*; ISO/IEC/IEEE 26514:2022, *Systems and software engineering - Design and development of information for users*. | These sources support purposeful information places and user information shaped around what the user needs. `A.6.RSIG` narrows that to one encountered description: what it is for, what applies, what excludes, what carrier exposed it, and which `definitionEpistemeRef` identifies the defining episteme. | **Adopt or narrow.** Adopt the recognition and information-need concern; reject a universal UX or layout pattern. In the boundary sentence slice, the first repair is not "what does the complete Contract Bundle mean?" but "what description is this, what does it apply to, and which definitionEpistemeRef applies?" |
-| Information scent helps first-contact cue economy but is not the defining episteme. | Raluca Budiu (2020), "Information Scent: How Users Decide Where to Go Next", Nielsen Norman Group. | Information scent treats visible labels, context, and prior knowledge as imperfect estimates of source value. `A.6.RSIG` adopts the cue-economy insight and adds definition-episteme and exclusion discipline, with false-neighbor rejection under §4.1's grounded-guard condition. | **Adopt and add definition-episteme discipline.** Adopt first-contact cue economy; reject treating familiar wording, link scent, or local projection as the defining `U.Episteme`. In the API slice, an endpoint label can attract attention and state deployment initiation without promising successful completion. |
-| Description-recognition signatures help human and AI-assisted readers manage applicability and limitation expectations. | Amershi et al. (2019), "Guidelines for Human-AI Interaction", CHI 2019. | Human-AI guidance emphasizes making capabilities and limits clear enough for users to calibrate trust. `A.6.RSIG` adapts that pressure into `applies_to`, `excludes`, `definitionEpistemeRef`, and admissible entry stop for human and AI-assisted readers. | **Adapt.** Adopt expectation management; reject making this an AI-interface pattern. In the method-note slice, the reader learns what the note can and cannot settle before using it for a decision. |
-| Description-recognition cues need controlled wording without becoming synonym or alias governance. | Helen Lippell, ed. (2022), *Taxonomies: Practical Approaches to Developing and Managing Vocabularies for Digital Information*. | Taxonomy practice supports governed terms, validation, and maintenance for search and browse. `A.6.RSIG` adopts stable cue language while leaving wording repair to `E.10` cues within `F.19`, durable naming, aliases, and collision checks to `F.18`, actual Bridge claims to `F.9`, and under-specified relation claims to `A.6.P`. | **Adapt.** Adopt controlled-lexeme discipline; reject synonym stuffing inside description-recognition signatures. The worked slices state definitionEpistemeRef, exclusions, and a false neighbor when §4.1's grounded-guard condition holds, instead of adding more query phrases. |
-| Thin echoes and projection snippets need definition-episteme anchors before a reader or retrieval system treats them as the defining episteme. | Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"; Liu, Zhang, and Liang (2023), "Evaluating Verifiability in Generative Search Engines"; Gao et al. (2023), "Enabling Large Language Models to Generate Text with Citations". | Retrieval and citation work makes source context, support, and verifiability load-bearing. Before relying on a retrieved fragment, public projection, or local example to identify a particular defining description, recover the defining `U.Episteme` and the projection relation when relevant. An unresolved fragment may still guide further inspection. | **Adapt / narrow.** Adopt source anchoring and citation-support pressure; reject a retrieval benchmark or graph-native authority. A retrieved applicability cue does not by itself settle selection semantics. |
-| Description-recognition-signature adequacy is reviewable through small, case-linked checks. | Riehle, Harutyunyan, and Barcomb (2020), *Pattern Discovery and Validation Using Scientific Research Methods*, Technical Report CS-2020-01. | Pattern-validation practice supports explicit evidence and case adequacy. `A.6.RSIG` keeps that pressure lightweight: use the first-contact shape, false-neighbor rejection when §4.1's grounded-guard condition holds, and worked slices first; add `C.25` only for a composite quality-family claim, `C.16.Q` only for overloaded evaluative wording, and empirical evidence when the recognition claim requires it. | **Adopt / lightweight.** Adopt accountable validation; reject mandatory benchmark machinery for ordinary recognition repairs. |
+| First-contact recognition is narrower than general information architecture or documentation UX. | Jorge Arango (2018), *Living in Information: Responsible Design for Digital Places*; ISO/IEC/IEEE 26514:2022, *Systems and software engineering - Design and development of information for users*. | These sources support purposeful information places and user information shaped around what the user needs. `A.6.RSIG` narrows that to one encountered description: what it is for, what applies, what excludes, what carrier exposed it, and which `definitionEpistemeRef` identifies the defining episteme. | Use the recognition and information-need contribution for one encountered description; broader UX and layout remain outside this task. In the boundary sentence slice, the first repair is not "what does the complete Contract Bundle mean?" but "what description is this, what does it apply to, and which definitionEpistemeRef applies?" |
+| Information scent helps first-contact cue economy but is not the defining episteme. | Raluca Budiu (2020), "Information Scent: How Users Decide Where to Go Next", Nielsen Norman Group. | Information scent treats visible labels, context, and prior knowledge as imperfect estimates of source value. `A.6.RSIG` uses the cue-economy insight and adds definition-episteme and exclusion discipline, with false-neighbor rejection under §4.1's grounded-guard condition. | Visible cues guide inspection; the defining episteme remains the source to inspect. In the API slice, an endpoint label can attract attention and state deployment initiation without promising successful completion. |
+| Description-recognition signatures help human and AI-assisted readers manage applicability and limitation expectations. | Amershi et al. (2019), "Guidelines for Human-AI Interaction", CHI 2019. | Human-AI guidance emphasizes making capabilities and limits clear enough for users to calibrate trust. `A.6.RSIG` adapts that pressure into `applies_to`, `excludes`, `definitionEpistemeRef`, and admissible entry stop for human and AI-assisted readers. | Clarify expectations for the encountered description. In the method-note slice, the reader learns what the note can and cannot settle before using it for a decision. |
+| Description-recognition cues need controlled wording without becoming synonym or alias governance. | Helen Lippell, ed. (2022), *Taxonomies: Practical Approaches to Developing and Managing Vocabularies for Digital Information*. | Taxonomy practice supports governed terms, validation, and maintenance for search and browse. `A.6.RSIG` uses stable cue language while leaving wording repair to `E.10` cues within `F.19`, durable naming, aliases, and collision checks to `F.18`, actual Bridge claims to `F.9`, and under-specified relation claims to `A.6.P`. | Use stable terms that discriminate the intended description. The worked slices state definitionEpistemeRef, exclusions, and a false neighbor when §4.1's grounded-guard condition holds, instead of adding more query phrases. |
+| Thin echoes and projection snippets need definition-episteme anchors before a reader or retrieval system treats them as the defining episteme. | Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"; Liu, Zhang, and Liang (2023), "Evaluating Verifiability in Generative Search Engines"; Gao et al. (2023), "Enabling Large Language Models to Generate Text with Citations". | Retrieval and citation work makes source context, support, and verifiability load-bearing. Before relying on a retrieved fragment, public projection, or local example to identify a particular defining description, recover the defining `U.Episteme` and the projection relation when relevant. An unresolved fragment may still guide further inspection. | Recover the defining source and support for the cue. A retrieved applicability cue does not by itself settle selection semantics. |
+| Description-recognition-signature adequacy is reviewable through small, case-linked checks. | Riehle, Harutyunyan, and Barcomb (2020), *Pattern Discovery and Validation Using Scientific Research Methods*, Technical Report CS-2020-01. | Pattern-validation practice supports explicit evidence and case adequacy. `A.6.RSIG` keeps that pressure lightweight: use the first-contact shape, false-neighbor rejection when §4.1's grounded-guard condition holds, and worked slices first; add `C.25` only for a composite quality-family claim, `C.16.Q` only for overloaded evaluative wording, and empirical evidence when the recognition claim requires it. | Choose evidence for the recognition conclusion being made; an ordinary wording repair need not establish measured reader performance. |
 
 ### A.6.RSIG:12 - Relations
 

@@ -6,23 +6,23 @@
 
 ### C.2.P.DR:0 - Use this when
 
-Use this pattern when a declarative representation is about to guide action, reliance, gate, release, evidence, method, mechanism, work, or pattern-application claims by its shape alone.
+Use this pattern when the appearance of a representation is being used to establish an operational or classification claim without its required grounds—for example, treating a green dashboard tile as release permission or a graph path as prescribed work.
 
-**First useful move.** Recover the visible expression or artifact; exact current direct object or relation; any current representation or correspondence use; current source or publication relation; tempting stronger action claim; recovered subject pattern; retained use; blocked stronger action claim; and stop or reopen condition. Return the repaired wording and needed stop or subject-pattern return. Use a `DeclarativeRepresentationRepair` note only when the receiving use needs the repair to remain inspectable.
+**First useful move.** Identify the expression and the claim being inferred from it. Recover what the expression actually states or represents, then apply the rule for the disputed claim. Return wording that preserves the supported use and identifies what remains unestablished. A sentence can suffice. Use a `DeclarativeRepresentationRepair` note only when the receiving use needs a separately inspectable repair.
 
 **Quick example.** A heat-flow graph in a reactor-cooling review can show preserved and lost flow relations. It does not authorize a valve change by graph shape. The repair keeps the graph path as graph structure, returns release or gate reliance to the gate, source, and evidence patterns, and blocks the hidden work-permission claim.
 
 Use this pattern especially when:
 
-- a graph path, `PathSlice`, flow valuation, transformation-flow structure line, or graph expression over such a structure is overread as a prescribed work route or workflow;
-- an `A.10` evidence path is overread as approval, permission, release, gate passage, or assurance;
-- a query, access path, query plan, table, dashboard, schema, checklist predicate, or API description is overread as method, work plan, performed work, gate, permission, or proof;
-- a publication face, source-chain relation, carrier file path, mathematical representation, method-description representation, or FPF pattern relation is overread as call, dispatch, invocation, send, receive, route, or pattern application;
-- method-like wording hides whether the current claim concerns `U.Method`, `U.MethodDescription`, formal substrate, mathematical-lens use, `U.Mechanism`, `U.WorkPlan`, dated `U.Work`, evidence relation, source relation, or quote-only source wording.
+- a graph path or selected flow structure is treated as a prescribed work sequence;
+- an `A.10` evidence path is treated as permission, release or assurance;
+- a query plan or program-like expression is treated as a method or as performed work;
+- a publication or pattern reference is treated as an actual call, send or application;
+- method-like wording leaves the way of doing, its description and an actual episode indistinguishable.
 
-**What goes wrong if missed.** The representation appears to do work it cannot do. A path "routes" a decision, a query "calls" a pattern, a dashboard "authorizes" release, a checklist predicate "runs" a process, an evidence path "permits" action, or a program-looking text becomes "the method" without recovering method semantics, method description, formal substrate, mechanism, work plan, work, evidence, or source-use relation.
+**What goes wrong if missed.** A reader relies on an effect that the expression does not establish. The green tile may report a status while the required release decision is absent; program-like text may be mistaken for a method without identifying a way of doing.
 
-**What this buys.** The working reader keeps a visible expression useful without making it magical or hiding its subject pattern. Graph paths and structures, evidence or provenance relations, queries and formal objects, publication faces, and pattern relations keep their own kinds. When a graph, file, tile, table, or face represents one of them, the exact representation or correspondence use is stated separately. For method-like wording, the reader identifies the direct object or relation, any represented object or claim, and the exact relation that gives the expression its current use before selecting method, method description, formal substrate, mechanism, plan, work, evidence, source, gate, or release guidance.
+**What this buys.** The reader can retain a useful graph, query or publication while resolving the disputed operational claim under its own rule. An object under direct inspection stays distinct from a representation of that object.
 
 **Not this pattern when.**
 
@@ -36,9 +36,9 @@ Use this pattern especially when:
 
 ### C.2.P.DR:1 - Problem frame
 
-FPF work meets many declarative-looking expressions and many direct objects or relations: graph and table artifacts; paths and selected structures; state predicates and values; dashboard and publication faces; evidence, provenance, source, and pattern relations; formal substrates; and method descriptions. Some visible expressions represent a separately governed object or claim; other named items are themselves the current direct object or relation. Their common declarative appearance does not make them peers in one kind.
+A graph can itself be the object under inspection, or a drawing can represent a graph. A table can express claims about a system, or its layout can be the publication form being examined. Recover that distinction before deciding which rule governs the disputed use.
 
-The recurring failure is a category shift. Because some representations look like paths, pipelines, calls, dispatches, states, gates, or control programs, the prose starts granting them operational effects. A representation then seems to authorize work, pass a gate, enact a method, prove a result, release a system, or select a pattern by its shape alone.
+The recurring failure is an unsupported shift from appearance to operational effect. For example, an arrow in a graph can represent a relation without prescribing an action or proving that it occurred.
 
 This pattern repairs that shift. It does not build a general theory of representation. It only restores the exact FPF-governed object, relation, or claim and its subject pattern when declarative-looking wording is overread as imperative or operational.
 
@@ -49,8 +49,8 @@ Without this repair:
 1. **Graph path becomes work route.** A path or path slice in `E.18` is treated as an ordered work narrative, even when no work occurrence, work plan, or method description is current.
 2. **Evidence path becomes permission.** An evidence relation or provenance relation is treated as approval, gate passage, release, safety, or authority rather than as evidence for a named claim or effect.
 3. **Query becomes method.** A query, access path, query plan, or dashboard is treated as the semantic way of doing, rather than as a representation, method description, evidence relation, source relation, or ordinary source wording.
-4. **Pattern relation overread as dispatch.** Pattern application prose starts saying that one pattern exits to, routes to, calls, invokes, receives, owns, or dispatches another, hiding declarative pattern relations and subject pattern selection.
-5. **Programming-paradigm label becomes ontology.** Imperative, functional, logical, constraint, object-centric event, effect-handler, pipeline, orchestration, or workflow wording is treated as the FPF kind rather than as one representation style or source label.
+4. **Pattern relation overread as dispatch.** A reference to another pattern is treated as an actual call or work occurrence. Ordinary navigation remains adequate when it expresses the intended relation clearly.
+5. **Programming-paradigm label becomes ontology.** A label such as functional, declarative or workflow is treated as sufficient to determine an FPF kind.
 6. **Mechanism, method, and work collapse.** A method-like expression is repaired to `method` or `mechanism` by vocabulary rather than by the current claim: way of doing, description, formal substrate, law-governed mechanism, plan, occurrence, evidence, or quote-only wording.
 
 ### C.2.P.DR:3 - Forces
@@ -60,7 +60,7 @@ Without this repair:
 | Representation usefulness and action overread | Graphs, queries, predicates, and dashboards are useful precisely because they expose structure; their shape does not supply hidden work, permission, or release. |
 | Legitimate path words and metaphor repair | `A.10 evidence path`, `E.18` graph path, and carrier file paths may be legitimate; `path` becomes a defect only when it carries a stronger action or authority claim by metaphor. |
 | Method generality and subject discipline | Algorithms, programs, solver models, proofs, SOPs, and process models can all be useful, but first identify the direct object or relation, the current claim, and any exact representation use. Select `U.MethodDescription` only after the claim-bearing episteme passes the A.3.2 membership test; representation form alone selects nothing. |
-| Declarative and imperative labels are too crude | Current programming and process practice includes effects, handlers, constraint models, object-centric events, e-graphs, and process theories; the repair names the direct object or relation, current claim, any representation use, and subject pattern rather than choosing one programming-paradigm slogan. |
+| Paradigm label and actual semantics | A programming or process label can locate a source treatment, but the actual object and claim determine the receiving FPF rule. |
 | Subject pattern and local repair | When `E.18`, `A.10`, `A.3.1`, `A.3.2`, `A.6.1`, `A.15.2`, `A.15.1`, `E.17`, or another pattern already governs the current claim, this pattern names only the overread and leaves the next claim to that pattern rather than duplicating it. |
 
 ### C.2.P.DR:4 - Solution
@@ -69,15 +69,15 @@ Repair declarative-representation overread by separating the visible expression,
 
 The repair order is:
 
-1. **Name the visible expression or artifact.** Quote or identify the graph highlight, file, query text, predicate display, dashboard tile, table, publication face, path diagram, carrier path, mathematical expression, method-description expression, or pattern sentence that prompted the overread.
-2. **Recover the exact current direct object or relation.** Name the graph structure, `PathSlice`, flow valuation, evidence or provenance relation, state predicate or value, query or formal object, publication face or occurrence, formal substrate, claim-bearing episteme, source relation, carrier-side object, pattern relation, or other direct outcome under its own governor. This is a list of alternative recovery outcomes, not representation kinds in one ontology.
+1. **Identify the expression.** Quote or point to the part that prompted the unsupported inference.
+2. **Recover the object or relation at issue.** For example, distinguish a graph path, an evidence relation and a reported state value. Use its subject pattern when that rule is already clear; the selection table below helps when it is not.
 3. **Distinguish the direct object from any representation or correspondence use.** When the visible expression represents a separately identified object or claim, name the exact relation and target. When the direct object or relation itself is current and no separate representation claim is needed, keep that direct use; do not relabel the direct object as a representation kind. Record `none` only when the receiving use needs an inspectable account of that distinction.
-4. **Recover source or publication relation when current.** If a face, source chain, generated explanation, copied text, dashboard, file path, or publication unit is current, use the publication pattern or source-use pattern governing that relation.
-5. **Name the tempting stronger action claim.** Say what the visible expression is being asked to do by resemblance: route, call, dispatch, invoke, run, flow, send, receive, authorize, release, prove, prescribe, execute, select, pass a gate, or record work.
-6. **Select the subject pattern.** Use the direct pattern when the object or relation is already recovered; otherwise use this pattern only long enough to recover the direct outcome, any representation use, and the blocked stronger claim.
-7. **State retained use.** Keep the weaker useful use: graph structure, evidence relation, source-finding, state predicate, publication face, exact representation use, formal-substrate input, candidate method reading, or pattern relation.
-8. **State the blocked stronger action claim.** Block only the stronger claim that is not recoverable.
-9. **Stop or reopen.** Stop when the subject pattern can carry the next claim. Before stopping, ask what claim, evidence relation, gate relation, safety relation, method relation, work relation, or source relation would become less reviewable if the visible expression were accepted as the stronger claim. Reopen if a later source changes the visible expression, direct object or relation, representation relation or target, source currentness, subject pattern, or intended use.
+4. **Recover a source or publication relation when it matters to this claim.** Use the pattern governing that relation and its actual participants.
+5. **State the disputed operational claim.** Name the action, result or authority being inferred from the expression.
+6. **Apply the claim's subject pattern.** Establish its required grounds or identify what is missing. An actual permission or gate condition comes from that rule.
+7. **Preserve the supported use.** The graph may still support a comparison, for example, while leaving action permission unresolved.
+8. **Delimit the unsupported claim.** Do not assert the stronger result from appearance alone. Distinguish that missing basis from a use actually blocked by an applicable rule; a separately established result remains usable under its own conditions.
+9. **Stop or reopen.** Stop when the repaired statement supports the intended use or the subject pattern supplies the remaining question. Reopen when a changed source, correspondence or intended use can invalidate that result.
 
 #### C.2.P.DR:4.1 - DeclarativeRepresentationRepair note
 
@@ -96,9 +96,9 @@ DeclarativeRepresentationRepair:
   StopOrReopenCondition:
 ```
 
-The ordinary result is the repaired wording, exact direct outcome, any current representation use, retained use, blocked stronger claim, and needed stop or reopen condition. The optional note records these values when the receiving use needs them to remain inspectable. If the subject pattern already supplies a suitable record, use it without duplicating the repair note here.
+The ordinary result is the repaired statement and any unresolved condition that changes its use. In the optional note, `BlockedStrongerActionClaim` identifies the assertion that appearance does not establish; it does not by itself declare the underlying action prohibited. Name an actual blocked use and its governing condition separately when applicable. Reuse a suitable subject-pattern record without copying it into another repair note.
 
-Use four plain questions before the claim-and-pattern table: What visible thing am I looking at? What direct object or relation is current? What, if anything, does it represent? What stronger action claim must remain blocked?
+Use four plain questions before the claim-and-pattern table: What visible thing am I looking at? What direct object or relation is current? What, if anything, does it represent? Which stronger claim still needs grounds?
 
 | Visible expression or artifact | Exact current direct object or relation | Representation or correspondence use | Stronger action claim blocked |
 | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ Use four plain questions before the claim-and-pattern table: What visible thing 
 | already identified `U.Episteme` with one admitted `U.Method` as its exact `EntityOfConcern` and at least one substantive claim about that method as a way of doing | `A.3.2 U.MethodDescription` | Code, SOP, proof-script, solver-model, process-model, protocol, recipe, and diagram forms are clues only. A name, citation, approval, runnable form, or representation correspondence does not establish membership. |
 | law-governed operation algebra, laws, admissibility predicates, transport, audit, realization, or governing-definition assignment | `A.6.1` and `E.20` | Mechanism meaning is not selected by saying "algorithm" or "method"; it needs mechanism fields. |
 | planned work, intended window, resource budget, acceptance criterion, or source “role requirement” | `A.15.2 U.WorkPlan` for the plan. Resolve a “role requirement” separately to its exact local system-role kind, separate System-classification judgment, future assignment condition, capability, participant relation, or other direct condition; if unresolved, use `E.10.ROLE`. | A plan is not a Method, MethodDescription, evidence, gate passage, performed Work, or assignment occurrence. A required kind or condition does not create the future assignment. |
-| exact dated Work occurrence | Recover every exact actual performer and its obtaining A.2.1 system-role assignment through A.13, then let `A.15.1 U.Work` independently identify the dated occurrence, enacted Method, time, and containing System. A representation claiming the exact Work keeps every actual performer named or recoverable. Keep the underlying assignment facts recoverable; include an assignment identifier in the representation only when the receiving use needs it. Add an F.6 relation through that same obtaining assignment only when the representation or receiving use expressly represents precise assignment-bound attribution. Missing or failed F.6 leaves the Work intact and blocks only that attribution. | The Work occurrence is not its trace, record, binding, resource use, result, diagram, plan, MethodDescription, source cue, or evidence path. |
+| exact dated Work occurrence | Recover every exact actual performer and its obtaining A.2.1 system-role assignment through A.13, then let `A.15.1 U.Work` independently identify the dated occurrence, enacted Method, time, and containing System. A representation claiming the exact Work keeps every actual performer named or recoverable. Keep the underlying assignment facts recoverable; include an assignment identifier in the representation only when the receiving use needs it. Add an F.6 relation through that same obtaining assignment only when the representation or receiving use expressly represents precise assignment-bound attribution. Missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds still hold and blocks only that attribution. | The Work occurrence is not its trace, record, binding, resource use, result, diagram, plan, MethodDescription, source cue, or evidence path. |
 | run trace or performed-work record | `C.2.1` for the exact trace or record episteme, plus its direct description, publication, source-use, or evidence-use pattern only when that claim is current | The episteme may designate exact `W`, `RA`, holder `S`, and `performedUnderAssignment(W, RA)` when it makes that attribution; it neither is the Work occurrence nor makes the relation obtain. |
 | concrete parameter or participant binding | the exact direct subject-relation pattern, or `A.6.1` for one independently identified operation application and its actual argument or result binding | A declaration, call position, trace field, or type-compatible token establishes no actual binding. |
 | performed resource use | the exact direct resource-use relation involving the already identified Work occurrence; use `B.1.6` only when aggregation is current | Resource use is a separately obtaining relation, not a Work field, record field, or result. |
@@ -131,13 +131,11 @@ Use four plain questions before the claim-and-pattern table: What visible thing 
 
 #### C.2.P.DR:4.3 - Legitimate path and route settlement
 
-`path` is not banned.
-
 `A.10 evidence path for <claim, effect, or use>` is legitimate when the evidence relation or provenance relation for the named claim, effect, or reliance use is current. `E.18` graph path and `PathSlice` are legitimate when the graph object, path, slice, crossing, or flow valuation is current. Carrier file paths, URLs, mathematical paths, and quoted source paths are legitimate when their notation, source-use function, or use relation is current.
 
-The defect is not the word. The defect is hidden ontology: the sentence treats a representation as if something literally ran, flowed, executed, authorized, released, proved, selected, or prescribed action without first naming the exact direct object or relation and its subject pattern.
+Repair path wording when it carries an unsupported claim about what happens or what may be done. A clear ordinary reference or navigation instruction can remain unchanged.
 
-When the representation is route-shaped, loop-shaped, graph-shaped, diffusion-like, or workflow-like, ask first which object is current:
+For a route or unfolding expression, identify the object before selecting its rule:
 
 | Current object | Subject pattern |
 | --- | --- |
@@ -148,11 +146,11 @@ When the representation is route-shaped, loop-shaped, graph-shaped, diffusion-li
 | work plan, work readiness, or performed work | A.15 family |
 | evidence, assurance, gate, decision, architecture, publication, or currentness-refresh claim | the subject pattern for that claim |
 
-Do not repair route-shaped wording by replacing it with another route-shaped word. Always recover the visible expression, exact direct object or relation, representation or correspondence use or `none`, retained use, blocked stronger action claim, subject pattern, and stop or reopen condition. When the representation use is `none`, do not require a represented target, preserved and lost structure, or a mathematical-lens admissible-use account. When an exact representation, mathematical-lens, or selected-structure use is current, also name its target, the preserved and lost structure, and the admitted and blocked uses required by C.29 or that structure's subject pattern.
+Recover the relation the route expression conveys. Direct inspection of a graph object needs no separate represented target or lens account. If a representation or selected structure supports an inference, establish its target and the preservation or loss relevant to that inference under its subject pattern. Use C.29 for a separate mathematical representation or transfer issue; adequate local mathematics or an unambiguous rendering can suffice without a C.29 record.
 
 #### C.2.P.DR:4.4 - Method, algorithm, mechanism, plan, and work settlement
 
-Do not repair `algorithm`, `program`, `solver`, `proof`, `recipe`, `method`, `workflow`, `process`, `procedure`, `access path`, `query plan`, or `control strategy` by choosing one fashionable replacement.
+For method-like wording, recover the claimed way of doing and distinguish it from its expression and any actual performance.
 
 **Method-description membership guard.** A code file, SOP, proof script, solver model, process model, protocol, recipe, diagram, or query plan is only a representation clue. First identify the claim-bearing episteme under C.2.1. Apply A.3.2 only when that same episteme has one admitted `U.Method` as its exact `EntityOfConcern` and at least one claim says how that method is done, such as its transformation or enactment concern, applicability, precondition, intended effect or preserved condition, bound, generic participant meaning, or internal method composition. A name, author, citation, approval, file form, runnable configuration, or representation correspondence alone is a near-miss. If the test fails, do not assign `U.MethodDescription`; keep the representation, publication, plan, dated work, result, formal substrate, mechanism declaration, evidence, or source use with its subject pattern. A representation or publication change does not decide membership. If claim content, exact method, or effective reference scheme changes, C.2.1 first identifies the resulting episteme; then apply A.3.2 to that individual.
 
@@ -178,16 +176,16 @@ When the source label hides method, mechanism, formal-substrate, work, evidence,
 
 #### C.2.P.DR:4.5 - Programming-paradigm and process-model settlement
 
-Imperative, functional, logical, constraint, object-centric event, effect-handler, pipeline, orchestration, Declare-style, SQL-like, e-graph, hypergraph, or process-mining wording is a clue to identify the visible expression, direct object or relation, any representation use, and current claim. It is not a decision procedure by itself.
+A paradigm label helps locate the relevant source semantics. Those semantics, together with the claim being made, determine which FPF question to ask.
 
-Current practice makes the old contrast between imperative and declarative labels too weak as a final ontology:
+The source treatments below expose different distinctions:
 
 - constructor and process-theory lines keep computation, information, dynamics, and procedure close to possible or impossible transformations and compositional realization;
 - scoped effects and handlers separate operation syntax, semantic handling, scopes, resources, equations, type information, and effect information;
 - Declare-style process models and object-centric event logs distinguish constraints, events, objects, relations, ingestion, transformation, storage, and analysis;
 - e-graph and monoidal-rewriting work shows that computation or process representation may be equivalence or composition structure rather than instruction order.
 
-Use those lines as guardrails: recover the exact FPF-governed object, relation, claim, or representation use and its subject pattern instead of replacing one programming-paradigm label with another.
+Use the distinction relevant to the case to recover the object or claim, then apply its subject pattern.
 
 ### C.2.P.DR:5 - Worked slices
 
@@ -201,13 +199,13 @@ Repair:
 DeclarativeRepresentationRepair:
   VisibleExpressionOrArtifact: P2W graph expression with a highlighted path or path slice
   CurrentDirectObjectOrRelation: exact E.18 `PathSlice` and E.18.1 carry-through relation among the named records when those objects are current
-  RepresentationOrCorrespondenceUse: proposed correspondence from this P2W graph expression to the exact E.18 `PathSlice`; C.29 lens-use account not yet supplied
+  RepresentationOrCorrespondenceUse: highlighted nodes and edges render the selected E.18 `PathSlice`; the highlight adds no work ordering
   SourceOrPublicationRelation: none
   TemptingStrongerActionClaim: ordered work route for the team
   RecoveredGoverningPattern: E.18.1, with A.15.2 or A.15.1 only if planned or dated work is current
   RetainedUse: selected graph path and carry-through relation for inspection
   BlockedStrongerActionClaim: no work route or prescribed workflow by path shape alone
-  StopOrReopenCondition: recover or cite a C.29 lens-use account that states the preserved and lost structure and bounds the intended use; until then this representation branch is an incomplete rewrite, and claim-bearing use of the proposed correspondence is blocked; reopen when path, source currentness, graph edition, or intended work relation changes
+  StopOrReopenCondition: stop at inspection of the selected path and carry-through relation; use A.15.2 for a prescribed work sequence. If a separate mathematical transfer is proposed, establish its C.29 correspondence and limits before relying on that transfer. Reopen when the selected graph, source or intended work relation changes
 ```
 
 A graph publication or pattern publication remains a separately governed publication object. If one is current, state its exact source or publication relation and participants in the neighbouring claim; neither publication object belongs in `SourceOrPublicationRelation` by mention alone.
@@ -252,13 +250,13 @@ Repair:
 DeclarativeRepresentationRepair:
   VisibleExpressionOrArtifact: reactor-cooling heat-flow graph with one highlighted preserved path
   CurrentDirectObjectOrRelation: exact E.18 heat-flow path or `PathSlice`; keep boundary conditions and any flow valuation under their subject patterns
-  RepresentationOrCorrespondenceUse: proposed correspondence from this reactor-cooling graph rendering to the exact selected E.18 heat-flow `PathSlice`; C.29 lens-use account not yet supplied
+  RepresentationOrCorrespondenceUse: the rendering identifies the selected E.18 path; a proposed inference from its edges to physical heat flow still lacks its correspondence and boundary conditions
   SourceOrPublicationRelation: none
   TemptingStrongerActionClaim: graph path authorizes physical valve-change work
   RecoveredGoverningPattern: E.18 and C.29 for graph and lens use; A.21, A.10, A.15.2, and A.15.1 only if gate, evidence, work plan, or dated work is current
-  RetainedUse: graph structure for comparison, model review, and source-finding
+  RetainedUse: graph inspection and identification of the missing heat-flow correspondence
   BlockedStrongerActionClaim: no release, gate passage, physical intervention, or work occurrence by highlighted path alone
-  StopOrReopenCondition: recover or cite a C.29 lens-use account that states the preserved and lost structure and bounds the intended use; until then this representation branch is an incomplete rewrite, and claim-bearing use of the proposed correspondence is blocked; reopen when gate decision, source currentness, measurement boundary, or work plan becomes current
+  StopOrReopenCondition: keep the proposed physical inference unresolved until the correspondence, material losses and boundary conditions support it under C.29; operational reliance also needs the applicable validation and gate or authority result. Reuse adequate existing domain/model documentation. Reopen when that basis or intended intervention changes
 ```
 
 An engineering-review publication and a gate record remain separate objects. State any exact source or publication relation with its participants, and keep any gate relation under its subject pattern; neither object belongs in `SourceOrPublicationRelation`.
@@ -273,13 +271,13 @@ Repair:
 DeclarativeRepresentationRepair:
   VisibleExpressionOrArtifact: CRISPR guide-selection table with off-target scores and candidate ranking
   CurrentDirectObjectOrRelation: candidate-guide comparison and exact characteristic values under C.16 or A.19; use A.10 to recover any independently established direct support relation needed for reliance
-  RepresentationOrCorrespondenceUse: proposed correspondence from this table's candidate and off-target-score representation elements to the exact candidate-guide comparison and exact characteristic values named above; C.29 lens-use account not yet supplied
+  RepresentationOrCorrespondenceUse: rows identify the compared candidate guides and columns reproduce named score values with their scales and source references; the ranking adds no approval relation
   SourceOrPublicationRelation: none
   TemptingStrongerActionClaim: ranked row approves biological intervention
   RecoveredGoverningPattern: C.16 or A.19 for characteristics when current; A.10 for evidence; A.15.2 for experimental work plan; A.21 or authority pattern only if approval or gate claim is current
   RetainedUse: source-finding, candidate comparison, and constraint review
   BlockedStrongerActionClaim: no edit approval, work occurrence, safety claim, or gate passage from table rank alone
-  StopOrReopenCondition: recover or cite a C.29 lens-use account that states the preserved and lost structure and bounds the intended use; until then this representation branch is an incomplete rewrite, and claim-bearing use of the proposed correspondence is blocked; reopen when protocol, gate decision, evidence path, lab classification or assignment, exact GrantedPermissionRelation@Context or direct authority result, or dated lab Work becomes current; unresolved “role authorization” goes to E.10.ROLE, and an unsupported stronger permission or authority claim returns missing-governor
+  StopOrReopenCondition: stop at the supported comparison under the stated score meanings and source conditions. Use C.29 only if a separate model or transfer claim is made. Intervention approval needs its applicable authority or gate result; resolve unclear “role authorization” through E.10.ROLE, distinguishing a missing rule from missing facts under a known rule. Reopen when the scores, protocol or intended use changes
 ```
 
 A lab notebook, protocol publication, source episteme, and review record remain separate objects. State an exact source or publication relation and its participants only when it obtains; none of these objects belongs in `SourceOrPublicationRelation` by mention alone.
@@ -290,13 +288,13 @@ A lab notebook, protocol publication, source episteme, and review record remain 
 | --- | --- |
 | `CC-C2PDR-1` | A repair separately names the visible expression or artifact, the exact current direct object or relation, and any current representation or correspondence use. Record `none` for the representation branch only when the receiving use needs an inspectable account. No field types structures, relations, formal objects, publication objects, or carrier-side objects as one family of representation kinds. |
 | `CC-C2PDR-2` | When a representation use is current, the repair names its exact represented EntityOfConcern or claim and, for a mathematical-lens or selected-structure use, the preserved and lost structure and admitted and blocked uses required by its subject pattern; any current source or publication relation is named independently. When `RepresentationOrCorrespondenceUse` is `none`, no represented-target, preserved/lost-structure, or lens-use account is required. |
-| `CC-C2PDR-3` | The tempting stronger action claim is explicit: route, call, dispatch, invoke, run, flow, send, receive, authorize, release, prove, prescribe, execute, select, pass a gate, or record work. |
-| `CC-C2PDR-4` | The recovered subject pattern is named by value, or the case is demoted to quote-only, ordinary prose, reduced-use cue, blocked use, or incomplete rewrite. |
+| `CC-C2PDR-3` | The disputed operational claim is explicit. Its missing grounds remain distinct from a use blocked by an applicable rule. |
+| `CC-C2PDR-4` | Use the recovered subject pattern for the governed claim. Sufficient ordinary wording or a bounded source quotation may finish without further formalization. If recovery is incomplete, retain only the supported use and identify the unresolved claim; apply any actual stop under its governing rule. |
 | `CC-C2PDR-5` | Legitimate `A.10 evidence path`, `E.18` graph path, `PathSlice`, carrier file path, URL, or mathematical path use is preserved when its exact evidence, provenance, graph, carrier/source, or mathematical object or relation is current. |
 | `CC-C2PDR-6` | Method-like and algorithm-like wording identifies the visible expression, direct object or relation, current claim, and any exact representation use before selecting a subject pattern. If A.3.2 is selected, one already identified C.2.1 episteme has one admitted `U.Method` as its exact `EntityOfConcern` and at least one substantive way-of-doing claim; code, SOP, proof, solver, workflow, process, procedure, recipe, protocol, model, or diagram form alone does not pass. |
 | `CC-C2PDR-7` | An `E.10.ARCH:3.1` project-concern recovery may connect method, mechanism, formal-substrate, work values, evidence relations, source relations, gate relations, or result relations, but each connected value keeps its own subject pattern and typed claim. |
-| `CC-C2PDR-8` | The repair leaves one retained use and one blocked overread; type-correct but inert wording is incomplete. |
-| `CC-C2PDR-9` | The pattern does not become a general representation theory, API pattern, schema pattern, legal framework, workflow framework, or generic admissibility pattern. |
+| `CC-C2PDR-8` | The repair preserves the supported use and delimits the unsupported inference. It leaves the reader with the needed result or a specific unresolved condition. |
+| `CC-C2PDR-9` | The repair stays within declarative-representation overread; separately governed questions use their own patterns. |
 | `CC-C2PDR-10` | Subject patterns keep their invariants. This pattern only restores representation use and blocked overread before those patterns carry their own claims. |
 
 ### C.2.P.DR:7 - Common anti-patterns
@@ -309,7 +307,7 @@ A lab notebook, protocol publication, source episteme, and review record remain 
 | Mechanism by prestige | `mechanism` is used because the word sounds more rigorous than method or algorithm. | Require operation algebra, laws, admissibility predicates, transport, audit, realization, or governing-definition assignment. |
 | Dashboard as gate | Green status, dashboard tile, score, or status label becomes permission or release. | Recover source relation or publication relation, state-family value, evidence relation, and gate or release pattern when current. |
 | Pattern dispatcher | Pattern relations are given action or control effects through route, exit, receiver, call, owner, or home wording. | Write declarative neighboring-pattern boundary or application relation; use `E.8` and `F.19` together when both publication-form and phrase-apparatus claims are live, or use the one subject pattern when only one claim is live. |
-| Generic representation theory | The repair tries to classify every representation in FPF or becomes an API pattern, schema pattern, legal framework, workflow framework, or generic admissibility pattern. | Stop at the representation-use field set and use the subject pattern for the current claim. |
+| General theory substituted for repair | The repair expands into classifying all representations. | Resolve the disputed inference and continue under its subject pattern. |
 
 ### C.2.P.DR:8 - Relations
 
@@ -321,23 +319,20 @@ A lab notebook, protocol publication, source episteme, and review record remain 
 ### C.2.P.DR:9 - Consequences
 
 - FPF can keep useful graph, path, query, table, dashboard, publication, and pattern-relation vocabulary without banning ordinary words.
-- The repair blocks hidden authority, release, gate, evidence, method, mechanism, work, and pattern-dispatch claims by requiring the subject pattern named by value.
+- Operational claims receive their actual grounds and conditions; a supported comparison remains useful while a stronger claim is unresolved.
 - Method and mechanism claims become easier to compose because `E.10.ARCH:3.1` keeps separately recovered values connected only by the exact direct relations and participant meanings supplied by their subject patterns, without treating source labels as alternate ontology.
 - The cost is this recovery, with a small note only when the receiving use needs an inspectable repair. Ordinary navigation, source quotation, and already-governed graph or evidence paths do not need the note.
 
 ### C.2.P.DR:10 - SoTA-Echoing
 
-This pattern uses external sources only for the representation-overread repair question. They do not replace FPF ontology, and older famous sources are lineage or contrast unless a current source below supplies the contemporary payload.
+The following sources inform distinctions used in repairing representation overread. Historical anchors are identified separately.
 
 | Exact source or practice anchor | Source-use function or relation | What it changes here |
 | --- | --- | --- |
-| `E.10`, `E.10.ARCH`, and `C.2.P` | Current FPF precision-restoration architecture. | This pattern is a bounded child realization under `C.2.P`, not a new umbrella pattern. |
-| `A.10` and `E.18` | Local FPF subject patterns for evidence paths, provenance paths, transformation-flow graph paths, and path slices. | Path wording is legitimate when the exact evidence or provenance relation, graph path, or `PathSlice` is current; the defect is stronger overread. |
-| `A.3.1`, `A.3.2`, `A.6.0`, `C.29`, `A.6.1`, `E.20`, `A.15.2`, and `A.15.1` | Local FPF method-like and algorithm-like wording discipline. | The repair identifies the direct object or relation, current claim, and any representation use before choosing method, qualifying method-description episteme, formal substrate, mechanism, work plan, or work occurrence; representation form alone chooses none of them. |
-| Stefano Gogioso, Vincent Wang-Mascianica, Muhammad Hamza Waseem, Carlo Maria Scandolo, and Bob Coecke, "Constructor Theory as Process Theory", arXiv:2401.05364, EPTCS 397, 2023; David Deutsch and Chiara Marletto, "Constructor theory of time", arXiv:2505.08692v3, revised 2026-06-05. | Current SoTA decision payload for transformation-theory and process-theory repair of computation, method, and dynamics wording. | Computation, information, dynamics, and procedure wording is interpreted through possible or impossible transformation and compositional-process claims when that claim is current, not through software notation or ordered instruction prose first. |
-| Roger Bosman, Birthe van den Berg, Wenhao Tang, and Tom Schrijvers, "A Calculus for Scoped Effects & Handlers", Logical Methods in Computer Science 20(4), 2024, arXiv:2304.09697; Cristina Matache, Sam Lindley, Sean Moss, Sam Staton, Nicolas Wu, and Zhixuan Yang, "Scoped Effects as Parameterized Algebraic Theories", ESOP 2024 extended version, arXiv:2402.03103. | Current SoTA decision payload for effectful computation and programming-model wording. | Operation syntax, semantic handling, scope, resources, equations, and effect information remain separable; pure-function slogans and imperative-declarative slogans are not enough. |
-| Francesco Chiariello, Valeria Fionda, Antonio Ielo, and Francesco Ricca, "Direct Encoding of Declare Constraints in ASP", Theory and Practice of Logic Programming 25, 2025, arXiv:2412.10152; Alessandro Berti et al., "OCEL (Object-Centric Event Log) 2.0 Specification", arXiv:2403.01975; Lien Bosmans et al., "Dynamic and Scalable Data Preparation for Object-Centric Process Mining", arXiv:2410.00596. | Current SoTA decision payload for process-model, trace, workflow, and event-record wording. | Constraint, event, object, relation, data model, ingestion, transformation, storage, and analysis claims are recovered separately before a method, work plan, work occurrence, evidence, or gate claim is accepted. |
-| Aleksei Tiurin, Chris Barrett, Dan R. Ghica, and Nick Hu, "Equivalence Hypergraphs: DPO Rewriting for Monoidal E-Graphs", arXiv:2406.15882, v2 revised 2025-05-20. | Current SoTA decision payload for graph, equivalence, and compositional-representation wording. | Graph, equality, equivalence, and rewrite objects keep their direct kinds; any representation relation to them remains separate from instruction order, method, work, or action claims. |
-| Robert Kowalski 1979; E. F. Codd 1970; Selinger et al. 1979; van der Aalst, Pesic, and Schonenberg 2009; Van Roy and Haridi 2004; Deutsch 2013; Deutsch and Marletto 2015. | Historical lineage or contrast only. | These sources explain why the overread is recognizable; they do not carry current SoTA weight for this pattern by age, fame, or popularity. |
+| Stefano Gogioso, Vincent Wang-Mascianica, Muhammad Hamza Waseem, Carlo Maria Scandolo, and Bob Coecke, "Constructor Theory as Process Theory", arXiv:2401.05364, EPTCS 397, 2023; David Deutsch and Chiara Marletto, "Constructor theory of time", arXiv:2505.08692v3, revised 2026-06-05. | Transformation and compositional-process accounts. | Computation, information, dynamics, and procedure wording is interpreted through possible or impossible transformation and compositional-process claims when that claim is current, not through software notation or ordered instruction prose first. |
+| Roger Bosman, Birthe van den Berg, Wenhao Tang, and Tom Schrijvers, "A Calculus for Scoped Effects & Handlers", Logical Methods in Computer Science 20(4), 2024, arXiv:2304.09697; Cristina Matache, Sam Lindley, Sean Moss, Sam Staton, Nicolas Wu, and Zhixuan Yang, "Scoped Effects as Parameterized Algebraic Theories", ESOP 2024 extended version, arXiv:2402.03103. | Semantics of scoped effects and handlers. | Operation syntax, semantic handling, scope, resources, equations, and effect information remain separable; pure-function slogans and imperative-declarative slogans are not enough. |
+| Francesco Chiariello, Valeria Fionda, Antonio Ielo, and Francesco Ricca, "Direct Encoding of Declare Constraints in ASP", Theory and Practice of Logic Programming 25, 2025, arXiv:2412.10152; Alessandro Berti et al., "OCEL (Object-Centric Event Log) 2.0 Specification", arXiv:2403.01975; Lien Bosmans et al., "Dynamic and Scalable Data Preparation for Object-Centric Process Mining", arXiv:2410.00596. | Constraint-based process models and object-centric event data. | Constraint, event, object, relation, data model, ingestion, transformation, storage, and analysis claims are recovered separately before a method, work plan, work occurrence, evidence, or gate claim is accepted. |
+| Aleksei Tiurin, Chris Barrett, Dan R. Ghica, and Nick Hu, "Equivalence Hypergraphs: DPO Rewriting for Monoidal E-Graphs", arXiv:2406.15882, v2 revised 2025-05-20. | Equivalence and compositional rewriting. | Graph, equality, equivalence, and rewrite objects keep their direct kinds; any representation relation to them remains separate from instruction order, method, work, or action claims. |
+| Robert Kowalski 1979; E. F. Codd 1970; Selinger et al. 1979; van der Aalst, Pesic, and Schonenberg 2009; Van Roy and Haridi 2004; Deutsch 2013; Deutsch and Marletto 2015. | Historical lineage or contrast only. | These earlier treatments provide the historical background for the current distinctions above. |
 
 ### C.2.P.DR:End

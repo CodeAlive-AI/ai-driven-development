@@ -8,21 +8,21 @@
 
 **Not this pattern when.** If the question is ordinary part-whole or collection admission, use `B.1`, `A.14`, and `C.13`. If it is episteme identity or historical edition continuity, use `C.2.1` before any aggregation. If the question is the method as such, method description, work plan, dated work occurrence, or Work temporal part or episode, use `A.3.1`, `A.3.2`, `A.15.2`, or `A.15.1`. If the question is work-resource accounting, use `B.1.6`. If the question is changed identity, use the pattern that defines the subject's identity or change; for a clear whole-reidentification question, use `B.2` directly to test whether the existing whole suffices or a new whole must be reidentified. Use `B.2.P` first only when emergence-family wording hides the claim kind. If the question is temporal adequacy of a claim, use `C.27`.
 
-**What goes wrong if missed.** Order, phase, context, or time-window wording becomes ordinary parthood, method order, performed work, evidence currentness, or whole reidentification by label.
+**What goes wrong if missed.** A reader may mistake an ordering for parthood, a planned sequence for performed work, a phase for a new whole, or temporal coverage for evidence currentness.
 
 **What this buys.** The practitioner can aggregate order-sensitive and temporal material while keeping method, work, transformation, work-resource, temporal-adequacy, and MHT claims with the patterns that define or test them.
 
 ### B.1.4:1 - Problem Frame
 
-Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another enduring individual with a stated identity rule may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. In these cases the aggregation is about order or temporal coverage over already recovered relations, not about a new level, a generic boundary, or a hidden interaction kind.
+Many useful aggregates are not simple unordered wholes. A manufacturing sequence changes meaning when steps are swapped. An argument chain depends on which premise is used before which lemma. A turbine or another enduring individual with a stated identity rule may be considered across proper temporal restrictions. An unchanged paper or dataset episteme may also be restricted to a proper interval only while its complete C.2.1 identity triple remains fixed; changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme, with edition continuity tested separately. In these cases the aggregation concerns order or temporal coverage over already recovered relations.
 
 `B.1.4` defines the aggregation claim. It asks which EntityOfConcern is being aggregated, which positions or phases are included, which scope and time window qualify the claim, which ordered or phase relation is being used, what the aggregate may be used for, and which neighboring pattern carries any stronger claim.
 
 ### B.1.4:1.1 - Problem
 
-Without this pattern, four errors recur. First, `SerialStepOf` or another ordered relation is read as ordinary parthood, so changing the order looks harmless even when the aggregate meaning changes. Second, a phase label is read as a new holon level or a new whole, so identity change is hidden instead of handled by whole reidentification. Third, design-time plans, possible method order, run-time histories, and evidence windows are folded together as one sequence. Fourth, mathematical order, graph, or operator notation starts to stand for the in-life object instead of expressing a recovered relation for one bounded use.
+Confusing these relations produces four recurring errors. First, `SerialStepOf` or another ordered relation is read as ordinary parthood, so changing the order looks harmless even when the aggregate meaning changes. Second, a phase label is read as a new holon level or a new whole, so identity change is hidden instead of handled by whole reidentification. Third, design-time plans, possible method order, run-time histories, and evidence windows are folded together as one sequence. Fourth, a user treats mathematical notation as the represented object or relation, without establishing the correspondence needed for the bounded use.
 
-The practical failure is not a missing diagram. It is an inadmissible aggregate: the user cannot tell which carrier is being followed, which positions or phases are included, which relation is ordered, which time window is covered, whether gaps or overlaps matter, or which pattern must carry a stronger work, resource, transformation, evidence, or whole-reidentification claim.
+The resulting aggregate is unusable for the proposed claim: the user cannot tell which carrier is being followed, which positions or phases are included, which relation is ordered, which time window is covered, whether gaps or overlaps matter, or which pattern must carry a stronger work, resource, transformation, evidence, or whole-reidentification claim.
 
 ### B.1.4:1.2 - Forces
 
@@ -32,7 +32,7 @@ The practical failure is not a missing diagram. It is an inadmissible aggregate:
 | Temporal coverage vs. carrier identity | A phase aggregate needs useful time windows, but it must not hide that the carrier changed identity. |
 | Design-time relation vs. run-time history | Method order, work plan, and performed work often share labels, but they are different claims. |
 | Compact notation vs. ontology | `Gamma_ctx`, `Gamma_time`, graph, or algebra notation can make a relation easy to use, but cannot create a holon, method, work occurrence, or transformation. |
-| Local aggregation vs. stronger return | The pattern should keep a small aggregation record, while sending resource, evidence-currentness, transformation, and MHT claims to their owners. |
+| Local aggregation vs. related claims | The aggregation account should remain compact while retaining links to the independent grounds for resource, evidence-currentness, transformation, and MHT claims. |
 
 ### B.1.4:2 - Solution
 
@@ -69,7 +69,7 @@ ContextTemporalAggregation@Context:
 
 `stopOrReturnCondition` states when to stop aggregating or apply another pattern; `strongerSourceReturnCondition` states the condition for a stronger claim. Include `nonAdmissibleOverread?` only when it passes F.19's plausible-reader test. `groundedNonAdmissibleOverread?` is an alias for that same optional value.
 
-Use the record to describe the exact aggregation claim and its independently established relations. The record is not itself the relation or a new `U.Level`, `U.Boundary`, `U.Interaction`, or generic process object.
+Use the record to describe the aggregation claim and its independently established relations. Keeping that description distinct from the relations lets a reader inspect what has actually been established.
 
 #### B.1.4:2.1 - Two Aggregation Modes
 
@@ -109,7 +109,7 @@ Gamma_time(temporalAggregationRecord, timeWindow, coverageAndOverlapPolicy)
   -> temporal aggregate record
 ```
 
-The notation does not create a holon, transformation, method, work occurrence, or whole reidentification by itself. It records how the selected relation set is combined for the current use.
+The notation expresses how the selected relation set is combined for the current use. Establish the objects and relations independently before using it.
 
 Keep an ordinary statement about who prepared the aggregation ordinary. If the use asserts one exact dated sequencing, combining, measuring or auditing Work, recover the actual performer's A.13 core and admit the Work independently under A.15.1. Use A.3.4 for a separate transformation claim, B.1.6 for resource aggregation, and A.10 to recover provenance and bounded reliance on independently established results. Writing the record does not identify its writer as the transformer of the EntityOfConcern.
 
@@ -185,15 +185,13 @@ For temporal phase aggregation:
 
 ### B.1.4:8 - Consequences
 
-This pattern makes ordered and temporal aggregation inspectable without turning every sequence, phase, or context label into a holon level. It also lets practitioners keep useful `Gamma_ctx` and `Gamma_time` notation while avoiding a category error: the notation is an apparatus over a recovered aggregation claim, not the in-life work, method, transformation, or whole.
-
-The cost is that the practitioner must name the relation being aggregated. The gain is that contextual order, temporal coverage, work evidence, resource accounting, transformation, and whole reidentification stop interfering with one another.
+The practitioner obtains an inspectable account of ordered or temporal aggregation, with `Gamma_ctx` and `Gamma_time` available to express it. Naming the relations and their conditions takes work, but lets the practitioner distinguish the aggregation result from claims about performed work, resources, transformation, or whole reidentification.
 
 ### B.1.4:8.1 - Rationale
 
 `B.1.4` exists because contextual order and temporal phase aggregation are neither ordinary part-whole construction nor generic process talk. One enduring carrier with a stated identity rule can be considered through proper temporal restrictions; a selected relation set can be order-sensitive; and both cases need admissible aggregation without inventing a new holon kind. The pattern therefore keeps relation discipline explicit: `PhaseOf` and the carrier's identity rule for legitimate phase aggregation; C.2.1 identity and independently obtaining edition relations for distinct episteme history; A.15.1 relations for Work; ordered relation refs and `OrderSpec` for contextual aggregation; and separate patterns for resource, transformation, evidence, and whole reidentification.
 
-The old `DesignRunTag` warning is preserved as a rule rather than a label: do not fold design-time possible order and run-time history into one aggregate. If both are needed, make two records and relate them by value.
+Keep design-time possible order and run-time history in separate aggregates. If both are needed, make two records and state their correspondence.
 
 ### B.1.4:8.2 - SoTA-Echoing
 

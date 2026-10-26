@@ -40,7 +40,7 @@ Preservation also involves choices. Requiring every participant to learn every o
 
 Make the required methods obtainable through an arrangement that participants can use and, where needed, develop.
 
-**Recover the receiving work → locate the unavailable contribution → choose how it will remain obtainable → arrange acquisition, access or redistribution → use it in the receiving situation → retain the means of use and develop a worthwhile continuation.**
+**Recover the receiving work → locate the unavailable contribution → choose how it will remain obtainable → arrange acquisition, access or redistribution → use it in the receiving situation → retain the means of use. Develop a further continuation when its expected value justifies the work.**
 
 These are dependencies of the work. An available demonstration, tool or newly discovered method can be the starting point.
 

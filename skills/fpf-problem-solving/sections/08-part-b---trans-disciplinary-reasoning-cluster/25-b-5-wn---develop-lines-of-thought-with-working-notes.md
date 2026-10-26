@@ -99,7 +99,7 @@ Compare deferral with the present reliance. If today's choice consumes the missi
 
 #### B.5.WN:4.6 - Compose an argument for a recipient
 
-When a project becomes useful or an assigned question needs an answer, select the notes that can contribute to it. State the proposed conclusion and arrange the reasons in the order the recipient needs. A visible outline can keep the whole argument available while one passage is being written.
+When a project or assigned question needs an answer, select the notes that can contribute to it. State the proposed conclusion and arrange the reasons in the order the recipient needs. A visible outline can keep the whole argument available while one passage is being written.
 
 Turn the selected material into that argument. Supply missing transitions, examine contrary material, remove repetitions and distinguish a useful example from evidence for a general claim. A chain of links is not yet the written inference. Composition often exposes a premise that seemed present only because the author knew the collection.
 
@@ -139,7 +139,7 @@ In another project, all reviews are reported as completed, but the receiving com
 
 > **Which event makes a result available for its next use?** Ending the producing activity and obtaining a usable receiving result can differ. Investigate the required relation in each case; equal words such as “completed” do not establish it.
 
-This note is an own cross-case conjecture and question. Its links name the bench and review contributions and preserve their different grounds. It proposes an inquiry; it does not establish a common cause.
+This note states the practitioner's cross-case conjecture and question. Its links name the bench and review contributions and preserve their different grounds. It proposes an inquiry; it does not establish a common cause.
 
 Now change the review facts: all reviewers used a common valid basis, but the recipient has not opened their results. The missing-basis explanation fails in that case. The practitioner narrows the connection to the distinction between a result's availability and its actual use, retaining the original bench observations. If no current project needs this question, the semantic entry is a sufficient continuation. If a delivery decision needs it today, the project must establish which result is actually available before acting.
 
@@ -215,7 +215,7 @@ The examples are constructed reasoning cases. They establish their explicit calc
 
 ### B.5.WN:9 - Consequences
 
-A useful thought can remain available across occasions without a finished project or final classification. Connections become operations that develop reasoning, and composition can reveal what the collection still does not supply.
+A useful thought can remain available across occasions without a finished project or final classification. Forming and examining connections develops reasoning, and composing an argument can reveal what the collection still does not supply.
 
 The practitioner spends time on recoverable formulation, meaningful entries and occasional revision. The return depends on later use. A sufficient immediate record can remain the better choice when that further work has no identified contribution.
 

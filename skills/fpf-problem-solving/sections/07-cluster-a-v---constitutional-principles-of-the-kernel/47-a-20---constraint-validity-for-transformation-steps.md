@@ -12,14 +12,14 @@
 
 Use A.20 when one transformation or one operation application is current in a transformation-flow structure and the question is whether that subject satisfies one named internal constraint for one stated case. It also applies when an A.6.4 bounded-use assertion q is current there and q's exact proposition is the named internal constraint. A.6.4 retains the separate current-case judgement.
 
-**First useful move.** Write one sentence:
+**First useful move.** Recover the subject, constraint and case from the existing description. If they are not yet explicit, state:
 
 > For subject S and case facts I, constraint C is applicable and required; test T returned outcome O under window W, with witness or reason R.
 
-**Quick worked case.** `TemperatureConversion-7` must add 273.15 to a Celsius input and must not return a value below 0 K. For input 25 °C, the test returns 298.15 K, so both required conditions are `satisfied`; the witness records the formula edition, input, output, and test result for this evaluation window. The practitioner may reuse this result for that case and window, or pass it to a current gate or assurance use; changed input, formula edition, assumptions, or window requires another check. If the output were 297.15 K, the formula condition would be `violated`; if no output could be recovered, it would be `unknown`; if the test had not run, its evaluation state would be `notRun`.
+**Quick worked case.** `TemperatureConversion-7` must add 273.15 to a Celsius input and must not return a value below 0 K. For input 25 °C, the test returns 298.15 K, so both required conditions are `satisfied`; the witness records the formula edition, input, output, and test result for this evaluation window. The practitioner may reuse this result for that case and window, or pass it to a current gate or assurance use; changed input, formula edition, assumptions, or window requires reassessing affected grounds and establishing whether this result still covers the receiving case and use. If the output were 297.15 K, the formula condition would be `violated`; if no output could be recovered, it would be `unknown`; if the test had not run, its evaluation state would be `notRun`.
 
 Stop after that result unless a gate, assurance argument, publication, or another named task needs it. Path and crossing structure, refresh, gate decisions, evidence, assurance, Work, and semantic bridges keep their own patterns.
-**What goes wrong if missed.** A class label or green status replaces the actual constraint and test. An unknown or unrun required check disappears inside `pass`. A failed local constraint makes unrelated gate-fit facts look inapplicable. A.20 then starts redefining paths, publications, refresh, gates, or retargeting instead of reporting its own result.
+**What goes wrong if missed.** A class label or green status replaces the actual constraint and test. An unknown or unrun required check disappears inside `pass`. A failed local constraint makes unrelated gate-fit facts look inapplicable. Copying the surrounding flow architecture into this result obscures the local finding.
 
 **What this buys.** A practitioner can see which constraint was tested, why it applied, what case was used, what the result means, and which later decision may consume it.
 
@@ -96,7 +96,7 @@ ConstraintValidityResult:
 
 `outcome` is present only when `evaluationState=evaluated` and `applicabilityValue` is `required` or `optional`. A not-applicable constraint records the reason it is outside this case. A not-run constraint records that evaluation work has not produced a result. Neither is `unknown` and neither silently counts as success.
 
-If a dated evaluation Work occurrence matters, cite it separately through `evaluationWorkRef`; the Work and result episteme do not become one object.
+If a dated evaluation Work occurrence is asserted, first establish its A.13 core: the performing System, exact local agential-role kind and membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits that performance; F.6 applies afterward only for precise assignment-bound attribution. The optional `evaluationWorkRef` cites that Work separately from the result episteme.
 
 The legacy label `FlowConstraintValidity` may be retained only as a locator for this result family. It does not name a relation, gate status, publication record, or flow-wide property.
 
@@ -117,10 +117,10 @@ When a consumer needs one local summary over the complete required set, use:
 
 The summary rule is:
 
-1. `notApplicable` only when the declared required set is empty because no A.20 internal constraint applies to this subject and use;
+1. `notApplicable` only when the declared required set is empty because no required A.20 internal constraint applies to this subject and use; any optional results remain separately available;
 2. `violated` when at least one required result is `violated`;
 3. `unresolved` when no required result is violated but at least one required constraint is `notRun`, `unknown`, or `error`; and
-4. `satisfied` only when every required applicable constraint has an evaluated `satisfied` result.
+4. `satisfied` only when the required set is nonempty and every member has an evaluated `satisfied` result.
 
 Optional results do not change the summary unless a separately accepted use decision moves their constraints into the required set. A missing required result can therefore never disappear beside a satisfied result.
 
@@ -130,7 +130,7 @@ The following families are recognition aids, not a universal required list. Each
 
 | Constraint family | Trigger | `satisfied` means | Other outcomes |
 | --- | --- | --- | --- |
-| Type, domain, and range | The subject consumes or produces typed values. | Every case input and result used by the claim lies in the declared type, domain, and range. | A counterexample is `violated`; unavailable values are `unknown`; a failed test is `error`. |
+| Type, domain, and range | The subject consumes or produces typed values. | Every case input and result used by the claim lies in the declared type, domain, and range. | A counterexample is `violated`; unavailable values are `unknown`; an evaluation that cannot complete correctly is `error`. |
 | Admissibility conditions | The operation or transformation declares guards or admissible cases. | Every required guard is true for the case and window. | A false guard is `violated`; undetermined guard truth is `unknown`. |
 | Law or invariant set | The current claim relies on a named law or invariant. | The named invariant holds for the case under its assumptions. | A counterexample is `violated`; missing case facts or witness content are `unknown`. |
 | Quantity and unit coherence | The current operation combines quantities or units. | The case is coherent under the already declared quantity, unit, and reference-scheme rules. | A mismatch is `violated`; an unrecovered declaration is `unknown`. A.20 does not define or translate units or planes. |
@@ -166,7 +166,7 @@ A.20 keeps only the result content needed to reuse the internal-constraint findi
 - `C.27` defines temporal-claim adequacy;
 - `A.21` defines check applications, profile use, gate aggregation, and decision consequences;
 - `A.10` recovers provenance and bounded reliance; the direct support pattern defines each evidence relation and `B.3` governs assurance; and
-- `A.15` defines plans and dated Work.
+- `A.15.2` defines WorkPlans; an asserted dated Work uses the admission grounds in §4.1.
 
 Citing an A.20 result in one of those claims does not copy that consumer's identity, scheduling, publication, or policy fields into A.20.
 
@@ -184,7 +184,7 @@ If the same implementation returns 297.15 K for 25 °C, the formula constraint i
 
 #### A.20:5.3 - Lossy retargeting
 
-Suppose an A.6.4 arrow r relates an episteme about a detailed equipment classification to one about three maintenance classes. A separate q affirmatively states that the receiving classes preserve the maintenance action selected for every source case under named conditions and allows loss of manufacturer-specific distinctions for that use. Because that exact proposition is the named internal constraint here, A.20 tests it on the stated cases. No reverse mapping is part of that constraint. Exact facts that establish the invariant and keep loss within the boundary yield the A.20 outcome `satisfied`; a counterexample yields `violated`; a missing deciding fact yields `unknown`. The separate A.6.4 current-case judgement then compares all exact current facts with q's conditions and proposition and reports `satisfies`, `fails`, or `cannot decide`; the A.20 outcome does not replace it. Any operation that produced the receiving episteme remains separate.
+Suppose an A.6.4 arrow r relates an episteme about a detailed equipment classification to one about three maintenance classes. A separate q affirmatively states that the receiving classes preserve the maintenance action selected for every source case under named conditions and allows loss of manufacturer-specific distinctions for that use. Because that exact proposition is the named internal constraint here, A.20 tests it on the stated cases. A sample supports only those sampled cases unless the evaluation also supplies an argument covering the proposition’s universal quantifier. No reverse mapping is part of that constraint. Exact facts that establish the invariant and keep loss within the boundary yield the A.20 outcome `satisfied`; a counterexample yields `violated`; a missing deciding fact yields `unknown`. The separate A.6.4 current-case judgement then compares all exact current facts with q's conditions and proposition and reports `satisfies`, `fails`, or `cannot decide`; the A.20 outcome does not replace it. Any operation that produced the receiving episteme remains separate.
 
 ### A.20:6 - Bias annotation
 
@@ -201,7 +201,7 @@ For an ordinary A.20 use, check only these five points:
 2. **Case and applicability (`CC-A20-2`).** State the assumptions, case facts, scope, evaluation window, and why the constraint is `required`, `optional`, or `notApplicable`.
 3. **Evaluation and outcome (`CC-A20-2`).** Record `evaluated` or `notRun`. For an evaluated applicable constraint, record `satisfied`, `violated`, `unknown`, or `error` under the constraint's own outcome rule.
 4. **Support (`CC-A20-1`).** Give the witness, counterexample, missing-information reason, or error reason that supports that result.
-5. **Complete summary (`CC-A20-3`).** Use `ConstraintValiditySummary=satisfied` only when every constraint in the complete declared required set was evaluated and satisfied.
+5. **Complete summary (`CC-A20-3`).** Use `ConstraintValiditySummary=satisfied` only when the complete declared required set is nonempty and every member was evaluated and satisfied.
 
 A specialist constraint such as a stability bound, return-shape condition, or retargeting invariant is present only when its trigger in section 4.3 applies (`CC-A20-4`).
 
@@ -226,15 +226,15 @@ A specialist constraint such as a stability bound, return-shape condition, or re
 
 ### A.20:9 - Consequences
 
-The result is smaller and more reusable. A missing check can no longer disappear as success, and a gate can retain useful independent findings even after one internal failure. The cost is that a consequence-bearing use must name its required constraint set and cannot hide policy inside A.20 status words.
+The result retains the local finding and its reuse conditions. The summary rule prevents a missing required check from counting as success; a gate can retain useful independent findings even after one internal failure. The cost is that a consequence-bearing use must name its required constraint set and cannot hide policy inside A.20 status words.
 
 ### A.20:10 - Rationale
 
-Constraint truth, knowledge about that truth, and a policy response are different. A.20 records the evaluation result. The constraint's own pattern defines the truth condition. A.21 or another consumer decides what follows. Keeping those steps separate removes evaluation-order dependence and prevents a local validity pattern from becoming a second architecture for flows, publication, refresh, and gates.
+Constraint truth, knowledge about that truth, and a policy response are different. A.20 records the evaluation result. The constraint's own pattern defines the truth condition. A.21 or another consumer decides what follows. Keeping those steps separate preserves independent findings across evaluation order and leaves policy consequences with the receiving decision.
 
 ### A.20:11 - SoTA echo
 
-| Current practice line | Adopted move | Limit |
+| Practice comparison | Adopted move | Limit |
 | --- | --- | --- |
 | Refinement-type, property-based, and proof-carrying validation | Name the property, case, outcome, and witness rather than publishing an unqualified validation label. | A witness supports only the stated property and case. |
 | Dimensional analysis and assumption-bound numerical validation | Keep quantity, unit, domain, assumptions, and validity region with the result. | The check does not define unit conversion or comparison policy. |

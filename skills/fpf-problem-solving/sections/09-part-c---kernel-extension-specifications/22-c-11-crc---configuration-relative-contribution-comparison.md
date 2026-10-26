@@ -12,11 +12,11 @@
 
 ### C.11.CRC:0 - Use This When
 
-Use this pattern when a bounded addition, replacement, removal, intervention, experiment, information/computation acquisition, capability-development element, project, or component is being justified by “what it adds,” but the current configuration, interactions, resources, horizon, uncertainty, and receiving decision are not yet part of the comparison.
+Use this pattern when a proposed finite change is being justified by “what it adds,” but its contribution has not been compared with the current configuration under the conditions that matter to the receiving decision. The change may add, replace or remove something; it may also acquire information before a later commitment.
 
 **First useful result.** Return one ordinary `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the named receiving question that can consume the claim. It can supply local choice under `C.11`, construction of a continuation under `C.43`, or a subject Method that compares proposed changes. The comparison does not choose the option.
 
-**Cheap exit.** If a current `A.19`/`C.11` account already states the same finite baseline, change, horizon, result and resource coordinates, interactions, uncertainty, and reopen condition, use that account directly.
+**Cheap exit.** If an existing domain calculation or `A.19`/`C.11` account already states the same finite baseline and change with the material comparison conditions and reopen condition, use it directly.
 
 **Not this pattern when.** Do not use it for a source-only comparison with no realizable configuration change; for a purely causal question under `C.28`; for a mathematical-lens question already answered by `C.29` and a field Method; for an archive/front relation under `C.18`; or as a substitute for field-specific finance, optimization, operations, engineering, experimental-design, or capability-development calculation.
 
@@ -90,7 +90,7 @@ reopenCondition:
 nextGoverningPattern: named receiving Method; C.11 when the result supplies its local choice
 ```
 
-Omit a field only when it cannot change this comparison and that omission is apparent from the bounded case. A polished record cannot compensate for a missing current configuration or receiving question.
+An ordinary comparison sentence or existing calculation can carry this result when the material premises are recoverable. Omit a field when it cannot change the comparison and that omission is apparent from the bounded case. The current configuration and receiving question remain necessary.
 
 #### C.11.CRC:4.2 - Mathematical and model-routing distinction
 
@@ -104,7 +104,7 @@ Omit a field only when it cannot change this comparison and that omission is app
 | Variational inference | Which member of an approximation family best approximates a target probability distribution under a declared divergence or bound? | The result is an approximate distribution and uncertainty account, not an extremal physical trajectory, capability acquisition, or general marginal value. |
 | Evolutionary variation | How are retained variants generated and selected in an evolutionary or cultural process? | The shared word *variation* does not identify the mathematical object or Method above; route to `C.18`, `C.36`, or the field practice. |
 
-This is why calculus of variations matters without becoming the default interpretation of marginality. When the candidate is a whole trajectory, field, function, control, or shape, pointwise finite-coordinate reasoning can miss the coupled admissible deformation. `C.29` governs the mapping from the world or domain model to that mathematical object, what structure is preserved or lost, and when the lens must stop. Specialist practice governs derivation, discretization, solver choice, optimality and sufficiency checks, and validation.
+This is why calculus of variations matters without becoming the default interpretation of marginality. When the candidate is a whole trajectory, field, function, control, or shape, pointwise finite-coordinate reasoning can miss the coupled admissible deformation. Use `C.29` when the mapping from the world or domain model to that mathematical object, its preservation/loss or its transfer limits remain at issue. An adequate domain formulation can be used directly. Specialist practice governs derivation, discretization, solver choice, optimality and sufficiency checks, and validation.
 
 #### C.11.CRC:4.3 - Recognition and assurance split
 
@@ -171,26 +171,20 @@ A project is compared with the current portfolio and financing/operating configu
 
 **Costs.** Practitioners must name a baseline, vectors, interactions, and uncertainty that an isolated score could hide. Some cases remain indeterminate until field evidence or implementation capability is available.
 
-Reopen this pattern when repeated cases cannot express their finite comparison with this spine; when a current `A.19`/`C.11` composition fully absorbs the same practitioner entry, action, first result, and stop; or when a mathematical branch requires a different transdisciplinary action rather than a field-specific Method.
+Revisit the comparison when changed conditions could alter its claim. A newly available substitute, tighter resource constraint, changed horizon or loss of relied-on evidence can require a new assessment; retain unaffected premises and claims.
 
 ### C.11.CRC:10 - Rationale
 
 The pattern is narrow because its result is neither a new value ontology nor a decision. The reusable action is to construct a finite configuration-relative claim for a receiving choice or construction. The claim can remain useful while alternatives or a conditional policy are still being developed. `A.19` remains the comparison-mechanism owner, `C.29` the mathematical-lens owner, and `C.11` the choice owner.
 
-The selected name follows `F.18`. *Marginal contribution decision* conflates finite difference, derivative, economic terminology, and the later decision; *marginal value* encourages one scalar; *sensitivity analysis* names a different question. `Configuration-Relative Contribution Comparison` names the reference configuration and comparison while leaving domain quantities and choice outside.
-
 ### C.11.CRC:11 - SoTA Echoing
 
 | Source line | Adopted move | Limit retained here |
 | --- | --- | --- |
-| Current `C.11`, `A.19`, and `C.29` | Keep choice, comparison mechanisms, and mathematical-lens use with their current owners. | Internal architecture is not evidence for domain quantities. |
 | Ortega and Braun, [information-processing costs in decision making](https://arxiv.org/abs/1204.6481), 2013 | Keep the resource costs of information acquisition and computation explicit in the decision. | Statistical-physics form is a model under assumptions, not proof of literal physical free-energy minimization. |
 | Blei, Kucukelbir, and McAuliffe, [*Variational Inference: A Review for Statisticians*](https://www.cs.columbia.edu/~blei/papers/BleiKucukelbirMcAuliffe2017.pdf), 2017 | Keep target distribution, approximation family, optimization, speed/scale, and uncertainty trade-offs visible. | Historical field anchor; it does not define calculus-of-variations design or general contribution. |
 | MIT OpenCourseWare, [*Matrix Calculus for Machine Learning and Beyond*](https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/pages/lecture-notes-and-readings/), 2023 calculus-of-variations material | Treat a function, trajectory, or field as the varied object under admissible variation and boundary structure. | Course material supplies a mathematical distinction, not FPF ontology or physical evidence. |
 | Huan, Jagalur, and Marzouk, [optimal experimental design review](https://arxiv.org/abs/2407.16212), 2024/2026 | Keep design variables, utility, model assumptions, computational cost, robustness, and myopic/non-myopic boundaries explicit. | Specialist experiment design remains outside this finite comparison pattern. |
-| Current systems, operations, finance, and human-capability cases named in the receiving DPF programme | Stress-test finite baseline, interactions, constraints, uncertainty, and option effects across unlike fields. | Cross-field recurrence establishes the comparison spine, not transferable formulas, thresholds, or authority. |
-
-Refresh only the affected source-use row when a newer result changes one Solution distinction or shows that a field-independent method can replace it. Older mathematical anchors remain historical where current work has repaired their limits.
 
 ### C.11.CRC:12 - Relations
 

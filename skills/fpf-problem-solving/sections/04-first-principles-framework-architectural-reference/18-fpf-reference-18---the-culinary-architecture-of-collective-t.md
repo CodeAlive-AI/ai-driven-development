@@ -1,25 +1,21 @@
 ## FPF.Reference:18 - The Culinary Architecture Of Collective Thought
 
-Many FPF ideas sound familiar. Evolution, exploration and exploitation, evidence, roles, boundaries, architecture, comparison, naming, and improvement are not new ingredients. A thoughtful reader may ask why FPF formalizes so many "obvious" ideas.
+FPF combines familiar ideas about evidence, roles and comparison into a shared account of how reasoning can be organized. A kitchen analogy helps explain the contribution.
 
-The answer is that FPF is not trying to invent the ingredients. It is trying to build the kitchen.
+A documented procedure is like a recipe for obtaining a particular result. A skilled practitioner may also perform the task using tacit knowledge.
 
-A domain methodology is like a cookbook. It gives excellent recipes for a class of dishes: software delivery, scientific experiment, safety case, product discovery, architecture review, or policy design. A skilled practitioner can often cook one dish beautifully from experience alone.
-
-FPF is closer to the architecture of a professional kitchen. It gives places, instruments, roles, interfaces, checks, and repeatable forms so many dishes can be prepared, compared, improved, and served without chaos. The value is not that flour or heat are new. The value is that ingredients, techniques, stations, timing, quality checks, and presentation can work together at scale.
+FPF's architectural guidance concerns how such contributions work together. In the analogy, this is the arrangement of stations, instruments, roles, timing and checks that lets people prepare different dishes. In reasoning, it is the relations that make different Methods and results usable together.
 
 In FPF terms:
 
 - system-role kinds distinguish recurring work-facing contributions, while system-role assignments identify which systems are assigned to them;
-- methods and method descriptions separate how action can be performed from the document describing it;
-- work patterns keep actual change distinct from plans;
-- evidence and assurance keep proof and reliance inspectable;
-- characteristic spaces define what quality means for the object at hand;
+- Methods and MethodDescriptions distinguish a reusable way of doing from a claim-bearing account of it;
+- Work patterns distinguish performed Work from plans;
+- evidence and assurance guidance helps make a claim’s grounds and reliance limits inspectable;
+- characteristic spaces organize the dimensions of assessment; criteria and scales determine how the object can be compared;
 - architecture patterns keep structure distinct from diagrams;
-- naming and term sheets let people talk across contexts without semantic collapse;
-- state-of-the-art and option portfolios keep search open before selection;
-- improvement loops let the whole arrangement get better over time.
+- naming and term sheets expose the meanings being compared across contexts;
+- state-of-the-art comparisons and option portfolios make alternatives available for selection and later revision;
+- improvement loops connect results to reconsideration of the Methods and arrangements that produced them.
 
-For a small well-known problem solved by one expert, FPF may feel heavier than intuition. Its advantage appears when reasoning is collective, long-lived, high-stakes, cross-domain, AI-assisted, or open-ended. That is where tacit expertise alone becomes hard to audit, transfer, or refresh.
-
-FPF does not replace expert judgment. It gives expert judgment a shared architecture so it can compound rather than evaporate.
+Compare the effort of making these connections explicit with its contribution to inspecting, reusing or revising the reasoning. For a familiar problem that one practitioner can answer adequately, a direct answer may suffice.

@@ -4,32 +4,32 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**Plain-name.** Observe-to-route seam.
+**Plain-name.** Candidate routes from an observed cue.
 
 ### B.4.1:1 - Problem frame
-Observation rarely yields a ready anomaly, articulated action claim or question, or hypothesis in one step. Between low-articulation cue preservation and endpoint assertions under exact subject predicates, the cluster needs one explicit route-bearing seam that can publish route plurality or route selection without pretending that the cue already satisfies an endpoint predicate.
+**Use this when.** A stabilized cue has possible continuations that a recipient needs to compare, or a route choice needs to be published. State the candidate routes and any justified selection without presenting the cue as an already established anomaly, action claim, or hypothesis.
 
-That seam begins **after cue stabilization**, with `PreArticulationCuePack` or an equivalent early form under `A.16`. Cue preservation may exist before routing. `B.4.1` begins only when route publication itself becomes worth making explicit.
+Routing begins **after cue stabilization**, with `PreArticulationCuePack` or an equivalent early form under `A.16`. Cue preservation may exist before routing. `B.4.1` begins only when route publication itself becomes worth making explicit.
 
 ### B.4.1:2 - Problem
-Without a pre-abductive seam, early cue publications are either lost, prematurely forced into late forms such as `AnomalyStatement`, `Characteristic`, `ActionOption`, or requirement language, or they smuggle route selection into cue-pack prose with no explicit route-subject assertion, predicate, and pattern locator.
+A cue publication can lose its useful continuations when it is forced prematurely into a late form such as `AnomalyStatement`, `Characteristic`, or `ActionOption`. A route choice can also remain hidden in cue-pack prose, leaving the reader without its grounds or the applicable subject pattern.
 
 ### B.4.1:3 - Forces
 | Force | Tension |
 |---|---|
 | **Early capture vs endpoint discipline** | Preserve low-articulation cues without collapsing route discipline. |
 | **Plural route set vs explicit selection** | Permit multiple candidate routes while still requiring an explicit selection record when selection occurs. |
-| **Seam clarity vs new-type inflation** | Add a real seam without creating an uncontrolled zoo of new publication kinds. |
+| **Useful publication vs extra kinds** | Make routes inspectable without introducing a new publication kind for every case. |
 | **Form vs face precision** | Keep route-bearing publication form distinct from the MVPK face on which it is rendered. |
 
 ### B.4.1:4 - Solution
-Use this seam to make the candidate continuations and any selected route explicit after cue stabilization. The pre-abductive route-bearing seam sits inside the language-state cluster, between observation/cue preservation and endpoint subject-pattern entries:
+After cue stabilization, make the candidate continuations and any selected route explicit. Keep downstream claims under their subject patterns. The optional route follows this sequence:
 
 `Observe -> Notice -> Stabilize -> Route`
 
 Publish the route package as a `RoutedCueSet`, normally downstream of `PreArticulationCuePack`.
 
-A robust route package should identify:
+The route publication should identify:
 
 - the **originating cue pack**, if any, or the equivalent early form preserving the stabilized cue,
 - the **candidate route set**,
@@ -65,7 +65,7 @@ A conforming routed cue set may publish:
 
 `publicationFaceRefs` names MVPK faces only when face typing matters for publication or review. Faces are renderings of the routed cue set or of later typed projection publications; they are not the route-bearing form itself.
 
-A multi-route `RoutedCueSet` is still one governed member. A lineage fork requires distinct successor epistemes or project records under their applicable identity and lineage rules. Use `C.2.1` for episteme identity; publication availability remains separate under `E.24.PUB`.
+One `RoutedCueSet` can describe several candidate routes. A lineage fork requires distinct successor epistemes or project records under their applicable identity and lineage rules. Use `C.2.1` for episteme identity; publication availability remains separate under `E.24.PUB`.
 
 #### B.4.1:4.2 - Starter route family and conditional extension species
 The candidate route set may contain, among others:
@@ -85,7 +85,7 @@ The candidate route set may contain, among others:
 ##### B.4.1:4.2.1 - Specialization-sensitive extension route family
 These four routes are not part of the starter canonical core. Use them only when the cue already carries explicit bounded-specialization pressure, corridor-entry pressure, or substrate-fit doubt that subject patterns must be able to recover by value.
 
-Use `TaskFamilySpecializationRoute` when the cue points toward acquiring one narrower higher-fit specialist lane for one declared task family under budget, where that lane may later resolve into one specialist method, portfolio, or competence bundle. Use `AdaptationProbeRoute` when the honest next question is whether threshold-reaching specialization is actually attainable under the current budget. Use `NonHumanUtilityRoute` when the cue suggests a promising utility target outside the current human-default solution corridor but still tied to one declared task family or utility target. Use `SubstrateDiversificationRoute` when the cue says the current method substrate may be too narrow and a broader or different substrate should be tested before commitment.
+Use `TaskFamilySpecializationRoute` when the cue points toward acquiring one narrower higher-fit specialist lane for one declared task family under budget, where that lane may later resolve into one specialist method, portfolio, or competence bundle. Use `AdaptationProbeRoute` when the next question is whether threshold-reaching specialization is attainable under the current budget. Use `NonHumanUtilityRoute` when the cue suggests a promising utility target outside the current human-default solution corridor but still tied to one declared task family or utility target. Use `SubstrateDiversificationRoute` when the cue says the current method substrate may be too narrow and a broader or different substrate should be tested before commitment.
 
 Contexts may refine the route family locally, but they shall keep the distinction between early route publication and endpoint governance.
 
@@ -98,7 +98,7 @@ A routed cue set may support these continuations:
 - apply `A.6.P`, `A.6.A`, or `C.16.Q` under its own entry conditions and produce the sentence, record, or other result that the selected pattern calls for,
 - or publish another explicitly typed upstream projection.
 
-For a proposed downstream projection, if no typed publication form can yet be named honestly, keep the content in `RoutedCueSet`; an MVPK face alone supplies no such form.
+For a proposed downstream projection, if no applicable typed publication form can yet be identified, keep the content in `RoutedCueSet`; an MVPK face alone supplies no such form.
 
 ### B.4.1:5 - Archetypal Grounding
 **Tell.** Observation alone is not yet routing. A route requires at least a stabilized cue plus a declared candidate route set.
@@ -125,10 +125,10 @@ The pattern favors preserving low-articulation cues and publishing route plurali
 - **Projection capture.** Treat a typed downstream projection publication or its MVPK face as if it already governed the endpoint family.
 
 ### B.4.1:9 - Consequences
-The benefit is an admissible early seam for language-state trajectories and a cleaner bridge from cue preservation to later patterns. The trade-off is one more explicit publication form and one more explicit route declaration.
+Recipients can inspect candidate continuations, their grounds, and any selection before a downstream result is established. The cost is an additional route publication and its maintenance.
 
 ### B.4.1:10 - Rationale
-`B.4.1` provides the route-bearing seam between cue preservation and endpoint or abductive entry. It keeps route publication explicit without forcing cue packs to become route records.
+Cue preservation and route choice answer different questions. A separate route publication makes the proposed continuations inspectable while retaining the cue pack as the account of the stabilized cue.
 
 ### B.4.1:11 - SoTA-Echoing
 This matches practice in incident triage, exploratory design, model probing, and embodied cue work, where routing follows stabilization rather than appearing fully formed at first observation.
@@ -162,7 +162,7 @@ This is admissible only if the route rationale makes the plurality explicit rath
 It is invalid to treat a routed cue set as if it were already a hypothesis, a gate, or a work plan. The route-bearing publication form records candidate continuations; the applicable subject pattern governs the downstream result.
 
 #### B.4.1:13.4 - Specialization-route and nonhuman-utility split
-A routed cue set for a new task family may admissibly keep `ProblemAbductionRoute`, `TaskFamilySpecializationRoute`, and `NonHumanUtilityRoute` live together. The point is to preserve the declared task family, utility target, current budget window, missing discriminator, and possible corridor-entry load without laundering those routes into a premature prompt, selector, or policy choice.
+A routed cue set for a new task family may admissibly keep `ProblemAbductionRoute`, `TaskFamilySpecializationRoute`, and `NonHumanUtilityRoute` live together. The point is to preserve the declared task family, utility target, current budget window, missing discriminator, and possible corridor-entry load without presenting those candidates as an already justified prompt, selector, or policy choice.
 
 ### B.4.1:14 - Keeping route plurality useful
 
@@ -172,7 +172,7 @@ A routed cue set stays useful only when route plurality, route grounds, selectio
 Use the minimal route package in §4 (Solution).
 
 #### B.4.1:14.2 - Selected route is not endpoint governance
-Even when one route is selected, the routed cue set remains a seam publication form. Apply a downstream subject pattern when its entry conditions are met; that pattern governs the next claim or result.
+Even when one route is selected, the routed cue set states the route choice. Apply a downstream subject pattern when its entry conditions are met; that pattern governs the next claim or result.
 
 #### B.4.1:14.3 - Review prompt and threshold reminder
 A reviewer should check whether the selected route is justified by the published cue pack or equivalent early form and whether suppressed alternative routes were genuinely considered rather than silently erased. If the articulation threshold required for a proposed late prompt, requirement, or work claim is not yet met, keep the publication early.
@@ -187,7 +187,7 @@ One cue cluster may also split into several routed cue sets if different sub-cue
 `B.4.1` governs route publication. Use the applicable subject patterns for abductive reasoning, lexical repair, deontic commitment, and work execution when their entry conditions are met.
 
 #### B.4.1:15.1 - Migration from anomaly-first prose
-Older anomaly-first language should be migrated into route publication when the publication does not yet meet anomaly-governance entry conditions.
+If a publication labels a cue as an anomaly before the anomaly's entry conditions hold, recover the stabilized cue and publish its candidate routes.
 
 #### B.4.1:15.2 - Intervention vs inquiry split
 An operator-facing disturbance may legitimately support both:

@@ -2,7 +2,7 @@
 
 > **Status:** Stable
 
-**At a glance.** Use B.1.3 to compose exact `U.Episteme` inputs into one knowledge aggregate while preserving provenance, conceptual fit, context, and the warrant each source actually contributes.
+**At a glance.** Use B.1.3 to compose identified `U.Episteme` inputs into one knowledge aggregate while preserving their provenance, interpretation conditions, conceptual mappings, and contribution to its warrant.
 
 **Use this when.** Use this pattern when a named synthesis or compilation use depends on how claims, models, datasets, or arguments are combined, and the aggregation must keep source, mapping, conflict, order, and temporal qualifications inspectable.
 
@@ -10,8 +10,7 @@
 
 **What changes in practice.** Identify the target claim, each input's support role and dependencies before combining them. Return a justified calculation or a reasoned synthesis with its limitations; preserve provenance and conflicts. Return identity, edition, temporal restriction, Work, publication, and assurance questions to their subject patterns.
 
-> **► decided‑by: A.14 Advanced Mereology**
-**A.14/C.2.1 compliance —** Use **ConstituentOf** for semantic parts and **PortionOf** only for quantitative splits of texts/data with declared μ. Use `PhaseOf` only for a proper interval of one unchanged C.2.1 episteme. When a MethodDescription or document episteme's claim content, EntityOfConcern, or effective ReferenceScheme changes, identify another episteme and assert `EpistemeEditionRelation` only when its historical-continuation predicate obtains. Work segmentation uses A.15.1; no **ComponentOf** is used here.
+**Mereology and identity (A.14/C.2.1).** Use **ConstituentOf** for semantic parts and **PortionOf** only for quantitative splits of texts/data with declared μ. Use `PhaseOf` only for a proper interval of one unchanged C.2.1 episteme. When a MethodDescription or document episteme's claim content, EntityOfConcern, or effective ReferenceScheme changes, identify another episteme and assert `EpistemeEditionRelation` only when its historical-continuation predicate obtains. Work segmentation uses A.15.1; no **ComponentOf** is used here.
 
 > **Plain‑English headline.**
 > **Γ\_epist** composes **epistemic holons** (claims, models, datasets, arguments) into a **single episteme** while preserving **provenance** and distinguishing the support, limitations, and conceptual mappings on which its conclusion depends. B.3 governs the meaning and model of any assurance calculation. This is a **semantic and evidential composition**, not a physical sum or a universal confidence fold.
@@ -20,7 +19,7 @@
 
 * **Holonic foundation.** In the FPF, a `U.Episteme` is a holon whose identity is **knowledge-bearing** (A.1). It can be a **statement/claim**, a **model**, a **theory**, a **specification**, a **dataset with semantics**, or a **compiled claim-bearing synthesis**.
 * **Strict Distinction (A.7).** We separate:
-  **structure** (what the episteme comprises), **order** (argument flow), **identity and history** (C.2.1 identities and edition relations), **proper temporal restriction** (A.14), **work** (what was spent to produce/validate it), and **values** (objectives/criteria). Γ\_epist stays in the **structure/semantics** lane and calls out to Γ\_ctx/Γ\_time/Γ\_work only after their direct inputs are recovered.
+  **structure** (what the episteme comprises), **order** (argument flow), **identity and history** (C.2.1 identities and edition relations), **proper temporal restriction** (A.14), **work** (what was spent to produce/validate it), and **values** (objectives/criteria). Γ\_epist composes the episteme's **structure and semantics**. Use Γ\_ctx, Γ\_time, or Γ\_work for the corresponding questions after recovering their required inputs.
 * **Mereology (A.14).** For knowledge composition we primarily use **ConstituentOf** (logical or semantic parts), **UsageOf** or **ReferenceTo** (external reliance), and each collection's own belongs-to rule for collections such as anthologies or corpora. We do **not** use **ComponentOf** (physical) in Γ\_epist.
   `PhaseOf` may restrict the **same unchanged episteme** to a proper interval when its complete C.2.1 identity triple remains fixed. Distinct labelled versions or revisions require distinct C.2.1 identities when a discriminator changes and an independently obtaining `EpistemeEditionRelation` for any claimed historical continuation. Knowledge does not act and acquires neither a work-facing local system-role kind nor an assignment. Ordinary prose may say, for example, "the researcher synthesized the sources". If the receiving use does not identify that action as one particular dated `U.Work` occurrence, stop with the ordinary sentence. If it does, recover each actual performer's A.13 core and independently admit the occurrence under A.15.1. Add F.6 only when the receiving use also needs precise assignment-bound attribution; a short local projection may omit an unused assignment identifier only when every consumed relation remains recoverable.
 * **Assurance (B.3).** Keep **F** (Formality), **G** (ClaimScope), and **R** (Reliability) distinct. Identify the meaning, scale, and receiving use of each value before calculating with it. A mapping's **CL** summarizes one relation's fit; its ordinal rank is not a numerical loss of reliability. Preserve provenance and make any unsupported inference or semantic crossing visible. Formality or mode does not supply a missing warrant model.
@@ -32,7 +31,7 @@ Naive aggregation of knowledge holons causes recurring failures:
 
 1. **Unsupported confidence folds.** Averaging incomparable scores can hide conflict; a compulsory minimum can discard useful complementary support or overstate the probability of several necessary conditions. Both violate B.3 when their inputs and dependency model are unjustified.
 2. **Provenance erasure.** Merges that drop sources, methods, or links break **A.10 Evidence Graph Referring** and make results unauditable.
-3. **Semantic drift.** Folding across mismatched concepts without explicit **mappings** (and their **CL**) yields incoherent composites that look formal but mean nothing.
+3. **Semantic drift.** Combining mismatched concepts without explicit **mappings** and their **CL** summaries can change or obscure the resulting claim despite its formal appearance.
 4. **Order blindness.** Arguments with essential **dependency order** (premise ⇒ lemma ⇒ conclusion) are treated as sets; non‑commutativity is lost and results become non‑reproducible.
 5. **Semantic-context chimeras.** Combining claims whose local senses or reference schemes differ, without exact mappings and—when meanings cross—an F.9 Bridge plus a separately warranted bounded-use claim, silently corrupts claims and inflates **R**.
 6. **Category errors.** Applying a physical quantity’s addition rule to truth, or averaging ordinal formality, ignores the value’s meaning and scale. Use C.16 for admissible scale operations and B.3 for the warranted support inference.
@@ -42,7 +41,7 @@ Naive aggregation of knowledge holons causes recurring failures:
 | Force                                      | Tension                                                                                                                      |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
 | **Conservatism vs. Synthesis** | Refuse unsupported assurance gains ↔ retain the real contribution of complementary and alternative support. |
-| **Universality vs. Domain nuance**         | One operator across math, science, engineering specs ↔ domain‑specific semantics and evidence patterns differ.               |
+| **Universality vs. Domain nuance** | A common composition account across domains ↔ domain-specific semantics and evidence patterns differ. |
 | **Provenance fidelity vs. Cognitive load** | Keep the **full trail** of sources and methods ↔ avoid overwhelming authors with bookkeeping.                                |
 | **Order/time discipline vs. Flow** | Respect argument **order**, exact episteme identity and edition relations, and any proper temporal restriction ↔ keep composition usable for day-to-day synthesis. |
 | **Parsimony vs. Fit** | Small rule set (A.11) ↔ explicit mappings, use-specific limitations, and justified loss models where needed. |
@@ -64,7 +63,7 @@ Naive aggregation of knowledge holons causes recurring failures:
 
 #### B.1.3:4.2 - The operator family (companion flavours)
 
-To keep **design vs run** clean (A.15), Γ_epist has two companion flavours that share the same algebra but answer different semantic questions. Their declarations contain only the values on which the result depends. A performer, local system-role kind, or assignment is therefore not an operator argument: the same fold can be specified before staffing and can be applied in Work performed by different Systems without changing its result semantics.
+Γ_epist has two companion operations with different semantic questions and the composition conditions below. Their declarations contain the values on which the result depends. A performer, local system-role kind, or assignment is not an operator argument: the fold can be specified before staffing and applied in Work performed by different Systems without changing its result semantics. This preserves the design/run distinction under A.15.
 
 When one particular operation application matters, use A.6.1 for that application and its argument and result bindings. A practitioner sentence may still say "the engineer compiled the guidance". If no particular dated `U.Work` claim is current, that ordinary sentence needs no classification or assignment apparatus. If one is current, recover every actual performer System's A.13 core and independently admit the Work under A.15.1 from its performance history, enacted Method, temporal extent, and containing System. Add F.6 afterward only when precise assignment-bound attribution is current. A short B.1.3 projection may omit an assignment identifier unused by its receiver only when every relation it consumes remains recoverable. An operation result binding says which value the application returned; it establishes neither production nor first existence of that value, publication, release, acceptance, nor a carrier. Open A.15.PROD or the publication patterns only when one of those separate questions is current.
 
@@ -145,8 +144,8 @@ When computing **Γ_epist^synth(D_know)**:
    If the conclusion depends on premise or derivation order, identify the ordered relations and positions, declare the **OrderSpec**, and retain the branch, join and independence conditions needed by the argument. Use B.1.4:4 to check the bounded aggregation and its determinacy under those conditions.
 
 
-**9. No costs here.**
-   Any compute/collection effort is **Γ\_work**; attach references but do not mix costs into epistemic aggregation.
+**9. Account for resource use separately.**
+   Aggregate resources spent on computation or collection under **Γ\_work**. Reference that account without including resource costs in the epistemic aggregation.
 
 #### B.1.3:4.5 - Core rules for target-scheme compilation
 
@@ -156,7 +155,7 @@ When computing **Γ_epist^compile(E_synth, TargetScheme)**:
    Map every operative concept, unit, and claim into **TargetScheme** and record the exact mapping and its **CL** evidence summary. For a meaning that crosses semantic contexts, name the source and receiving `SchemeSenseCell` values, the obtaining F.9 Bridge, the proposed use, direction, use-specific rule, and permitted loss; establish reliance separately. C.2.1 identifies the compiled episteme from its resulting claims, exact EntityOfConcern, and target scheme. A changed identity discriminator identifies another episteme; it does not by itself open a whole-reidentification question.
 
 **2. Re-express the assurance basis.**
-   Re-express F, G, and the support account in **TargetScheme**. Preserve the formal conclusion and empirical limitations separately. Recalculate R or a mapping loss only if the target use has the required meanings, scales, and model under B.3/C.2.2; a change of vocabulary or increased formality is not additional warrant. Without a justified aggregate, carry the separate support and bounded synthesis. A quantitative or formal application proves the calculations or derivations it actually claims, not a fictitious tuple imposed by its mode.
+   Re-express F, G, and the support account in **TargetScheme**. Preserve the formal conclusion and empirical limitations separately. Recalculate R or a mapping loss only if the target use has the required meanings, scales, and model under B.3/C.2.2; a change of vocabulary or increased formality is not additional warrant. Without a justified aggregate, carry the separate support and bounded synthesis. A quantitative or formal result needs grounds for its claimed calculations or derivations; its mode alone requires no additional numerical tuple.
 
 **3. Compilation trace.**
    Produce the compiled episteme's SCR and the carrier hashes needed to reconstruct this application. Require independent re-hash verification when the receiving claim needs independent carrier-integrity evidence under B.3 or an applicable B.3.3 assurance profile. A level label alone does not select that check. The trace establishes neither publication nor release.
@@ -186,7 +185,7 @@ For **Γ_epist^compile**, map the retained claims into the journal's scheme, car
 #### B.1.3:5.2 - Episteme — **Controller proof and a real protective function**
 
 * **Inputs:** a requirement specification, hazard analysis, test logs, and a proof of controller property P under assumptions A. Preserve each source's actual formal basis and support. No common R scale follows from four labels or formality levels.
-* **Formal receiving question:** “Does A entail P in the stated model?” Retain the valid proof and its assumptions as the useful result. An empirical study is not needed to turn that result into an invented empirical R; F describes checkability, not the probability that the actual controller is safe.
+* **Formal receiving question:** “Does A entail P in the stated model?” Retain the valid proof and its assumptions as the useful result. An empirical study is not needed to turn that result into an invented empirical R; F describes the expression properties; the probability that the actual controller is safe needs its own assurance basis.
 * **World-facing receiving question:** “Does the installed controller deliver the protective function in these operating conditions?” Expose the reliance on A, the implementation/model correspondence, and the actual operating scope. If A is unsupported for this use, the proof alone does not establish the world-facing claim. If logs show an edge case violating A, retain that counterevidence and withhold the stronger assurance while preserving the theorem A ⇒ P.
 * **Threshold case:** a receiving acceptance clause requires a justified probability of at least 0.95 for the real protective function. Substituting a high F or its rescaled value cannot meet it. A declared ordinal checkability comparison remains usable as an ordinal comparison. A numerical acceptance result requires the model and evidence that warrant that particular probability; otherwise return the narrower formal conclusion and the unresolved actual-system assurance.
 * **Positive quantitative case:** if a receiving model actually establishes two necessary independent conditions, each with probability 0.9, their conjunction is 0.81. A 0.85 threshold is not met by replacing 0.81 with min(0.9, 0.9). If independence is unavailable, the joint probability needs the actual conditional model or remains unresolved; the formal proof is unchanged.
@@ -253,21 +252,21 @@ For **Γ_epist^compile**, map the retained claims to the certification scheme. W
 
 **Benefits**
 
-* **Auditability by construction.** Every retained claim remains tied to its sources; **SCR** guarantees reconstructability.
+* **Traceable composition.** Every retained claim remains tied to its sources; the **SCR** identifies the carriers needed to reconstruct the aggregate.
 * **Qualified synthesis.** Useful formal and complementary support is retained; dependency assumptions, contrary evidence, and mapping limitations constrain the resulting claim.
 * **Target-scheme results.** Compiled epistemes are aligned with one declared reference scheme; any release or publication remains separately governed.
 * **Didactic clarity.** Separates **semantic folding** (Γ\_epist) from **order** (Γ\_ctx), **time** (Γ\_time), **spend** (Γ\_work), and **emergence** (B.2).
 
 **Trade‑offs**
 
-* **Mapping overhead.** Declaring mappings and **CL** costs time; it prevents silent incoherence.
+* **Mapping overhead.** Declaring mappings and **CL** costs time and makes interpretation differences inspectable.
 * **No forced single score.** Heterogeneous support may remain separate. This makes some comparisons less compact but avoids fictitious assurance and preserves a useful bounded conclusion. B.2 remains specific to a genuinely unresolved whole-reidentification question.
 
 ### B.1.3:10 - Rationale (informative)
 
 * **Epistemic composition is not physical addition.** A missing necessary premise, a complementary study, and a contrary result do different work. The receiving claim and dependency model determine their combination; minimum is not universally conservative.
 * **Provenance supports reliance.** Losing a source or SCR link can defeat reconstruction or warranted use while the episteme keeps the same C.2.1 identity. Restore the missing provenance and reconsider the affected reliance. Identify another episteme only when claim content, EntityOfConcern or effective ReferenceScheme changes; source or method claims that form part of the claim content are subject to that same rule.
-* **Interpretation matters.** Exact reference schemes and local senses prevent quiet reinterpretation. F.9 governs any cross-context Bridge; C.2.1 governs the resulting episteme identity.
+* **Interpretation matters.** Declared reference schemes and local senses let a reader identify reinterpretation. F.9 governs any cross-context Bridge; C.2.1 governs the resulting episteme identity.
 * **Parsimony with power.** Provenance, support roles and dependencies, exact mappings, and order/time hooks suffice for a useful synthesis without imposing a common score. [Gutierrez, Glymour and Davey Smith, *Evidence triangulation in health research* (2025)](https://link.springer.com/article/10.1007/s10654-024-01194-6) supports comparing design assumptions and shared biases, checking target-question comparability, and using qualitative comparison when quantitative pooling is unwarranted. This methodological contribution does not supply a universal R formula or make a further study mandatory.
 
 ### B.1.3:11 - Relations

@@ -19,7 +19,7 @@ Use it after `C.40.OI` when the subject, receiving use, and horizon were still l
 
 **Ordinary non-use boundary.** Do not build a characterization merely because a dashboard exists. If no characteristic could change the next action, stop. Characterizations of populations, lineages, cultures, organizations, people, AI models, and engineered systems rely on different domain owners and evidence; similar metric labels do not justify transfer.
 
-Development talk often compresses a subject into “junior,” “mature,” “ready,” “high potential,” “advanced,” “safe,” or a composite score. A list of methods or technologies can create the same illusion: possession or use is treated as a characteristic of the subject and then as proof of useful change.
+Development talk often compresses a subject into “junior,” “mature,” “ready,” “high potential,” “advanced,” “safe,” or a composite score. A list of methods or technologies can create the same illusion: possession or use is treated as proof of the needed capability or useful change.
 
 An opportunity needs a more selective account. The practitioner must know which characteristics can reverse the worthwhile problem, proposed contribution, supported direction, reachability claim, portfolio position, advice, or protected condition. The account must preserve distinct result, resource, affected-System or distributional, and explicitly protected coordinates rather than hiding them inside a single attractive number.
 
@@ -55,7 +55,7 @@ The resulting direction may sound specific while remaining unmeasurable, incompa
 
 ### C.40.OC:4 - Solution
 
-Build the smallest characteristic account that can change this inquiry, and expose every material unknown or protected coordinate.
+Build a characteristic account sufficient for this inquiry, exposing every material unknown and protected coordinate.
 
 #### C.40.OC:4.1 - Bind the characterization to one subject, use, and horizon
 
@@ -98,7 +98,7 @@ For every selected characteristic, state in ordinary language:
 9. source, method, and qualification needed for reliance; and
 10. the next claim that this reading can change.
 
-Use [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when a value, score, sensor indication, rating, or comparison must be made interpretable as a measurement. A label, dashboard tile, method description, or evidence link is not the measurement result or the actual subject state.
+Use [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when a value, score, sensor indication, rating, or comparison must be made interpretable as a measurement. A display or source link can report or locate a result; reliance still needs its measurement basis and supported relation to the subject. A MethodDescription explains a way of obtaining a result without establishing that the result was obtained.
 
 #### C.40.OC:4.4 - Orient the complete comparison coordinate set
 
@@ -242,13 +242,13 @@ A conforming characterization or companion account:
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
 | One maturity score | Meanings, weights, scales, protections, and uncertainty disappear. | Select the characteristics that can change this inquiry and preserve their distinct scales. |
-| Method or tool inventory as characterization | Possession or use does not establish the subject's state or contribution. | Ask which result or protected condition each item changes and obtain the direct evidence. |
+| Method or tool inventory as characterization | Possession or use alone does not establish the needed capability or result. | Ask which result or protected condition each item changes and obtain the direct evidence. |
 | Target without baseline | The proposed delta cannot be interpreted. | State the current reading or an explicit unknown under the same subject, scale, and horizon. |
 | Measurement by dashboard | A display is treated as subject state, result, evidence, and verdict. | Recover the complete C.16 measurement chain and separate later interpretation. |
 | Higher is always better | Polarity and target regions are assumed. | Declare higher-, lower-, target-, or unordered semantics for each scale. |
 | Person-to-system transfer | Human capability or learning evidence is reused for an AI model or organization. | Identify the actual bearer and configuration, then obtain the transfer basis from the direct practice owning the receiving characteristic and its evidence under `C.40.OC:4.5`. |
 | Benefits-only comparison | Resources, affected Systems, distribution, and protections vanish. | Orient the complete coordinate set before finite comparison. |
-| Unknown as favorable | A missing premise enters a direction as if it had passed. | Preserve `unknown` and state the strongest claim it blocks. |
+| Unknown as favorable | A missing premise enters a direction as if it had passed. | Preserve `unknown` and identify each dependent claim that remains unsupported. |
 | Characterization as diagnosis of everything | Entry burden expands beyond the decision. | Keep only action-changing characteristics and name relevant unsearched areas. |
 
 ### C.40.OC:9 - Consequences
@@ -257,7 +257,7 @@ Practitioners gain a characterization that is smaller than a full diagnosis yet 
 
 The cost is that a familiar word such as *maturity* may unfold into several claims with different owners and evidence windows. Some apparently precise numbers become conditional or unusable. Completing the account may require measurements or specialist results that the current inquiry cannot afford.
 
-This pattern improves the integrity of the inquiry, not the subject itself. It supplies no measurement Work, capability, diagnosis, direction choice, intervention, assurance, or observed effect.
+The characterization supports the inquiry. Obtaining a measurement, diagnosing a condition or changing the subject still requires the applicable operation and evidence.
 
 ### C.40.OC:10 - Rationale
 
@@ -269,13 +269,13 @@ In opportunity construction, use the characterization to vary opportunity-genera
 
 **Practice question.** How should practitioners replace a development maturity label or isolated score with a characterization that can guide a finite opportunity decision without inventing one universal scale?
 
-**Best-known line for this pattern.** FPF [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the strongest current measurement chain: exact measurand or subject, Characteristic, Scale, method, model, calibration, dated Work, attributed result, uncertainty, and bounded later use. [`C.11.CRC`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the strongest current finite-change orientation: actual `S0`, finite `Δ`, realizable `S1`, complete result/resource/affected-System/distributional/protected coordinates, interactions, transition basis, uncertainty, and option effects. This pattern **adapts** those lines at `C.40.OC:4.2`–`4.7` by selecting only characteristics that can change one opportunity inquiry and by returning holder-specific meaning and evidence outward.
+**Contributing Methods.** FPF [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the measurement chain: exact measurand or subject, Characteristic, Scale, method, model, calibration, dated Work, attributed result, uncertainty, and bounded later use. [`C.11.CRC`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the finite-change orientation: actual `S0`, finite `Δ`, realizable `S1`, complete result/resource/affected-System/distributional/protected coordinates, interactions, transition basis, uncertainty, and option effects. This pattern **adapts** those lines at `C.40.OC:4.2`–`4.7` by selecting only characteristics that can change one opportunity inquiry and by returning holder-specific meaning and evidence outward.
 
 **Serious alternative or default.** A maturity model or composite readiness score is faster to communicate and may be adequate when its construct, scale, weighting, evidence, and decision use are already qualified. As a default across unlike holders, it hides scale legality, trade-offs, protected coordinates, and transfer. At comparable entry effort, the selected multi-coordinate characterization preserves more decision-relevant information, at the cost of a less compact headline and possible indeterminate result.
 
 For organization and campaign cases, [ISO 56008:2024](https://www.iso.org/standard/78485.html) is a current opportunity/innovation measurement source and supports explicit measurement and portfolio review. It is an organization-scope comparator, not a universal person, AI, or engineered-system characterization Method and not effectiveness evidence.
 
-**Source roles and limits.** `C.16` and `C.11.CRC` are the current best-known FPF lines for measurement and finite contribution comparison. ISO 56008 is a bounded normative comparator. Holder, domain, safety, professional, legal, and evidence practices supply the actual characteristic meanings and results; this pattern does not outrank them.
+**Source roles and limits.** `C.16` and `C.11.CRC` supply measurement and finite contribution comparison. ISO 56008 is a bounded normative comparator. Holder, domain, safety, professional, legal, and evidence practices supply the actual characteristic meanings and results; this pattern does not outrank them.
 
 **Reopen condition.** Reopen this stance if a current alternative demonstrates a lower-burden characterization that preserves subject/configuration identity, scale and uncertainty, the complete coordinate set, protected conditions, holder-specific ownership, and local reopenability, or if a relied-on measurement or finite-comparison pattern changes those obligations.
 

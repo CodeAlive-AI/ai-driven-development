@@ -10,13 +10,13 @@ Use this pattern when a diagram or explanation shows several possible next actio
 
 > Which alternatives are available now, and what condition blocks each one?
 
-Name the decision or question, the visible alternatives, the condition for each alternative, and the facts available now. If a needed fact or rule is missing, mark that alternative `unknown` and stop when this answers the practical question. A useful explanation need not first become a formal record or an admitted structure.
+Name the decision or question, the visible alternatives, the condition for each alternative, and the facts available now. If a missing fact or rule could change the answer, mark that alternative `unknown`. An established blocking condition may already settle it as unavailable. Stop when this answers the practical question. A useful explanation need not first become a formal record or an admitted structure.
 
 Open the formal branch only when the team must qualify, persist, compare, publish, or rely more strongly on the structure. A `ConstraintGovernedUnfoldingStructure` (CGUS) is one A.22 `U.Structure` whose locally named loci, constituents, obtaining relations, and constraints define at least two potential continuations across the cases allowed by those constraints. A separate result says which alternatives are enabled, disabled, unknown, or error for one case and time window.
 
 Do not use CGUS merely because a card, graph, table, narrative, prompt path, or README line looks route-shaped. A single recommendation or displayed sequence is not enough. The structure may branch, join, cycle through subject relations, remain partially ordered, or leave several alternatives live at once. A result with zero or one enabled alternative can still concern that same branching structure.
 
-**What changes in practice.** Practitioners correct the visible alternatives and their conditions before completing formal fields. They keep potential structure separate from the result for the present case, and they mark an affected alternative `unknown` at its first unresolved fact or rule instead of inventing a continuation. Display order alone neither prescribes nor performs Work.
+**What changes in practice.** Practitioners correct the visible alternatives and their conditions before completing formal fields. They keep potential structure separate from the result for the present case, and they mark an alternative `unknown` when an unresolved fact or rule prevents deciding it. Display order alone neither prescribes nor performs Work.
 
 ### A.22.CGUS:1 - Problem Frame
 
@@ -50,7 +50,7 @@ Write the smallest useful answer in domain language:
 2. list the real alternatives;
 3. state the condition for each alternative;
 4. state the facts known for this case;
-5. mark each alternative `available`, `blocked`, or `unknown`, and name the first missing fact or rule.
+5. mark each alternative `available`, `blocked`, or `unknown` under its condition, and name any gap that prevents deciding it. If the evaluation itself failed, state that error rather than treating it as a domain fact.
 
 For example, a design review has two alternatives: accept the design or repair it. Acceptance needs both checks to pass. Repair needs at least one failed check and a repair proposal that concerns this design.
 
@@ -163,11 +163,12 @@ CurrentContinuationSetResult:
   enabledContinuationCandidateRefs[]
   disabledContinuationCandidateRefs[]
   unknownContinuationCandidateRefs[]
+  errorContinuationCandidateRefs[]
   stopOrNextAction
   recheckConditions[]
 ```
 
-A claim reference identifies the claim being applied; it does not show that the test applies or that its condition is satisfied. An obtaining relation is not a condition claim. Keep these two basis branches distinct and derive the case result only from completed judgements.
+A claim reference identifies the claim being applied; it does not show that the test applies or that its condition is satisfied. An obtaining relation is not a condition claim. Keep these two basis branches distinct and derive the case result only from completed judgements. Apply the candidate’s own condition logic: for example, one false required conjunct can establish `disabled` despite another unknown conjunct. Retain that unknown basis value; it is not thereby satisfied. An evaluation failure yields `error` under the applicable test, not an invented fact about the candidate.
 
 The membership test concerns potential topology. Changed facts, evidence, test outcomes, or time windows normally change a judgement and the current set, not the structure. Reidentify the A.22 structure when a constituent, selected obtaining relation occurrence, applied constraint, or named use frame changes. Reapply CGUS membership when a locus binding or potential-continuation row changes.
 
@@ -178,7 +179,7 @@ Do not turn qualification, case evaluation, description adequacy, and downstream
 | Decision | Passing basis | Honest lower result |
 | --- | --- | --- |
 | A.22 identity and CGUS membership | The four A.22 discriminators identify one structure; its local loci, relations, and constraints define at least two potential continuations across allowed cases. | Name the missing discriminator, binding, relation, constraint, or candidate. Keep the artifact as an explanation. |
-| Continuation result for this case | Each candidate has an applicable test or obtaining-relation basis, case inputs, facts, required polarity, time window, and an `enabled`, `disabled`, `unknown`, or `error` result. | Mark the affected candidate unknown or stop on the missing value. Do not revoke an independently established structure. |
+| Continuation result for this case | Each candidate has an applicable test or obtaining-relation basis, case inputs, facts, required polarity, time window, and an `enabled`, `disabled`, `unknown`, or `error` result. | Mark the affected candidate unknown when the gap prevents deciding its condition; retain an independently established disabled result. Do not revoke an independently established structure. |
 | Description or demonstrative-slice adequacy | The description says what it shows and omits for its declared use. Use C.33 only when a carrier's loss affects a declared architecture use within C.33's scope. | Narrow or correct the description. Missing publication or loss material does not deny the structure. |
 | A stronger neighboring claim | The method, Work, evidence, assurance, gate, architecture, publication, currentness, or mathematical claim passes its own definition or test. | Stop only that stronger use and name its missing rule or basis. |
 
@@ -311,7 +312,7 @@ When the coordination can be sustained, return to the encompassing figure and va
 | **CC-CGUS-1 Identity and profile.** | The four A.22 discriminators identify one `U.Structure`; local locus bindings, relations, and constraints define at least two potential continuations across allowed cases. | Recover the missing value or keep the artifact as an explanation. |
 | **CC-CGUS-2 Local loci and relation participants.** | Every `CGUSLocusBinding` uses a locus declared inside this CGUS and binds one constituent for a stated meaning. A needed relation participant retains its definition, occurrence, order, and binding; `RelationSignature` and `SlotSpec` appear together only for declaration-level replay. | Restore the locus or complete relation-participant basis. Never use a free-standing `SlotSpec` as a structure position. |
 | **CC-CGUS-3 Explanation and description separation.** | An ordinary or persisted provisional explanation concerns the domain question or proposed alternatives. Post-qualification descriptions and slices concern the CGUS. None is the structure or a membership condition. | Restore the right `EntityOfConcern` or keep the explanation ordinary. |
-| **CC-CGUS-4 Current continuation result.** | Each judgement retains its test or obtaining-relation basis, applicability, inputs, facts, polarity, dependent occurrences, window, outcome, and reason. The enabled set may contain zero, one, or several alternatives. | Mark the affected candidate unknown or stop on the missing value. |
+| **CC-CGUS-4 Current continuation result.** | Each judgement retains its test or obtaining-relation basis, applicability, inputs, facts, polarity, dependent occurrences, window, outcome, and reason. The enabled set may contain zero, one, or several alternatives. | Apply the candidate’s condition logic; mark it unknown only when the missing value prevents deciding the result, and retain evaluation errors separately. |
 | **CC-CGUS-5 Separate decisions.** | Identity and membership, case result, description adequacy, and each neighboring claim are judged separately. | Reopen only the affected decision. |
 | **CC-CGUS-6 Work-order boundary.** | The selected structure and display expose branches and conditions. | Put any prescribed or performed Work order under the Method, work-plan, or Work pattern that establishes it. |
 | **CC-CGUS-7 Graph-shaped coverage.** | Branches, joins, cycles, partial order, and live alternatives are preserved or explicitly omitted for the declared use. | Keep a chain provisional or state what its demonstrative slice omits. |
@@ -335,7 +336,7 @@ This separation prevents a changed fact from reidentifying a stable structure an
 
 ### A.22.CGUS:10 - Rationale
 
-The recurring object is a thin specialization of A.22 `U.Structure`, not a new root kind. Constraint-based process modeling, object-centric querying, artifact-centric modeling, acausal modeling, and FPF pattern use all distinguish a constraint-bearing structure from a performed trace, work order, view, publication, solver run, or example path.
+The recurring object is a thin specialization of A.22 `U.Structure`, not a new root kind. The cited constraint-based, object-centric, artifact-centric and acausal approaches provide different ways to express relations and constraints beyond one displayed execution path. CGUS uses this design question while retaining its own A.22 identity and continuation tests.
 
 The same distinction appears in acausal engineering models: component relations and constraints can be stated before an analysis chooses a calculation direction. FPF adopts only that general separation. Mathematical models, analyses, executions, results, and publications keep their own kinds and rules.
 
@@ -343,12 +344,11 @@ The same distinction appears in acausal engineering models: component relations 
 
 | Source or practice anchor | FPF adoption | Boundary |
 | --- | --- | --- |
-| Aaron Küsters and Wil M.P. van der Aalst, [“OCPQ: Object-Centric Process Querying & Constraints”](https://arxiv.org/abs/2506.11541), 2025 | Current research comparator for typed objects, joins, many-to-many dependencies, and relation-preserving constraint queries. | A query or result is not the CGUS. |
-| JuliaHub, Dyad 3.2 component and analysis documentation, 2026 | Current engineering comparator for reusable relation-first components separated from analyses and their solution objects. | FPF imports neither Dyad ontology nor its tools. Modelica 3.7 is retained only as historical acausal-modeling lineage. |
+| Aaron Küsters and Wil M.P. van der Aalst, [“OCPQ: Object-Centric Process Querying & Constraints”](https://arxiv.org/abs/2506.11541), 2025 | Research comparison for typed objects, joins, many-to-many dependencies and relation-preserving constraint queries in the cited 2025 work. | A query or result is not the CGUS. |
+| JuliaHub, Dyad 3.2 component and analysis documentation, 2026 | Engineering comparison for reusable relation-first components separated from analyses and their solution objects in the cited Dyad 3.2 documentation. | FPF imports neither Dyad ontology nor its tools. Modelica 3.7 is retained only as historical acausal-modeling lineage. |
 | Declare/MP-Declare, DCR, artifact-centric/GSM, and CMMN work | Lineage for declarative constraints, live alternatives, stages, guards, and weakly structured case work. | These are not current authority for a universal FPF process calculus; their notation and workflow ontology are not imported. |
 | FPF pattern-language practice | Ordinary explanations may precede qualification; descriptions and demonstrative slices may follow it. | An entry card, example, or publication is neither admission evidence nor the specification. |
 
-As of 2026-08-04, OCPQ and Dyad are the current comparators used here. Modelica, Declare, DCR, artifact-centric/GSM, and CMMN remain lineage where their distinctions are useful. Reopen this choice when a newer object-centric constraint method or relation-first engineering language changes the treatment of objects, relations, analyses, or live alternatives.
 
 ### A.22.CGUS:12 - Relations
 

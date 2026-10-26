@@ -1,6 +1,6 @@
 ## G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay)
 
-**Tag.** Architectural pattern (architectural; notation-independent)
+**Tag.** Architectural pattern (notation-independent)
 > **Status:** Stable
 **Normativity.** Normative (unless explicitly marked informative)
 
@@ -10,31 +10,30 @@
 
 **Primary hooks.** `G.Core` (RSCR trigger catalogue, alias docking, and Default Governing Definition Index), `G.6` (EvidenceGraph; `PathId` and `PathSliceId`), `G.7` (Bridge Sentinels; CL, Φ, and plane policy pins), `G.5` (set-returning selection and dispatch), `G.8` (SoS-LOGBundle telemetry hooks), `G.9` (parity reruns), `G.10` (shipping hooks and pack-level telemetry pins), `G.12` (dashboard telemetry pins), `B.3.4` (freshness and decay), `E.18` (GateCrossing and CrossingBundle visibility), `C.18` and `C.19` archive, front, and live-pool policy pins, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support results whose SoTA-sensitive fields can change downstream causal-use results).
 
-**Non-duplication note.**
 `G.11` cites `G.Core` for RSCR trigger-kind meaning, CN and CG admissibility, tri-state guards, penalties, set-return semantics, shipping or harvesting delegation, `RSCRTriggerKindId` values, and default governing definitions.
 Refresh plans and reports cite those governed definitions; they do not create local trigger meanings or default definitions inside the refresh record.
 
 ### G.11:0 - Use this when
 
-Use this pattern when a shipped pack, evidence set, dashboard, selected set, archive, front, Q-front, term bridge, descriptor set, parity result, or a use that relies on an `A.6.RCD` predicate definition or derived relation kind may be stale because telemetry, freshness, edition pins, policy pins, evidence, bridge calibration, source currentness, a relied-on base relation definition, the named substrate edition, or derivation applicability changed.
+Use this pattern when a changed premise or condition may alter whether a shipped pack or related result supports its receiving use. The change can concern evidence, source currentness, telemetry, an edition or policy, bridge calibration, a relied-on base relation definition, the named substrate edition or derivation applicability. The affected result can be an evidence set, dashboard, selected set, archive, front, Q-front, term bridge, descriptor set, parity result or use of an `A.6.RCD` definition.
 
 #### G.11:0.1 - What goes wrong if missed
 
-The team either rebuilds everything after every small change or keeps using a shipped record whose source, descriptor, edition, policy, bridge, or archive currentness has silently drifted. Refresh then becomes an informal maintenance habit rather than a scoped, reviewable work plan and report.
+A team may rerun unrelated work, continue using an unsupported result or publish a currentness report without repairing the affected use. First determine what the changed basis permits; select and perform upkeep only where it is needed.
 
 #### G.11:0.2 - What this buys
 
-The practitioner first decides what the available support permits for the receiving use. When a changed premise requires upkeep, the refresh kit names the affected object and scope, the source and policy basis, and the justified action. Planning and reporting remain separate, and refresh can stay local while preserving comparability and subject-specific result meanings.
+The practitioner first decides what the available support permits for the receiving use. A shared premise can reopen several dependent results while leaving independent results usable. When upkeep is justified, the refresh plan names that scope, its source and policy basis, and the selected actions. The resulting report records what was actually performed.
 
-When a later or replacement source may change a claim and the actual receiving uses must first be found and revalidated, use `A.10.1` for the bounded search frame, discovery coverage and gaps, exact-use test, action-changing reach, application of the direct subject guidance, and the independently obtained subject result. `G.11` continues to govern source currentness, decay, refresh planning, and refresh reporting. A practitioner or admitted System may use a separately established currentness result or independently obtained subject result to plan later refresh without changing either result or the governing patterns.
+When a later or replacement source may change a claim and the actual receiving uses must first be found and revalidated, use `A.10.1` for the bounded search frame, discovery coverage and gaps, exact-use test, action-changing reach, application of the direct subject guidance, and the independently obtained subject result. `G.11` continues to govern source currentness, decay, refresh planning, and refresh reporting. Use a separately established currentness result or independently obtained subject result to plan later refresh under its governing pattern.
 
 #### G.11:0.3 - First output
 
-For loop, harness, workflow-store, or DPF seed artifacts, a refresh line names the currentness object directly: source pack, evaluator, benchmark, harness edition, workflow edition, pattern seed, PFAD and PFR dependency, selected set, archive, front, or publication carrier. `G.11` records currentness, source decay, edition change, telemetry, scoped refresh action, and report refs; it does not decide whether the artifact improved.
+When a structured currentness line is useful for a loop, harness, workflow-store or DPF seed artifact, name its currentness object: for example, the source pack, evaluator, benchmark, harness or workflow edition, pattern seed, PFAD/PFR dependency, selected set, archive, front or publication carrier. The line can state currentness, source decay, edition change, telemetry and scoped refresh refs. Its subject pattern determines whether the artifact improved.
 
 First establish whether the current conditions and available basis already support the receiving use. If they do, retain that result without a new currentness line, WorkPlan, waiver or skip-refresh certificate. When a later recipient needs a changed limit or retained reason, keep the minimum useful content with the existing result or publication; a `RefreshCurrentnessLine@Context` can express it when a structured line is useful. Produce a `RefreshPlan@Context` only for selected planned refresh. For an underlying claim about a selected set, archive, culture, bridge, evidence, dashboard or shipping, obtain that subject pattern's result; currentness does not establish its adequacy.
 
-When currentness is the live question, use G.11 to record framework edition pins, source packs, publication-carrier currentness, deprecation, supersession, and source-decay conditions. In that record, cite `E.4` for the affected framework, `E.4.PFR` for a framework relation, `E.4.PFAD` for the framework architecture decision, the exact source contribution and bounded use, including the `G.2` pack when that route was used, and `E.11` for discovery. For publication, cite `E.17` for a source-backed face and return to source and `E.24.PUB` for the occurrence, form, carrier, audience, bounded use, and availability. Do not create private refresh vocabulary for these neighboring meanings.
+When a currentness record is needed, include the applicable framework edition pins, source packs, publication-carrier currentness, deprecation, supersession and source-decay conditions. In that record, cite `E.4` for the affected framework, `E.4.PFR` for a framework relation, `E.4.PFAD` for the framework architecture decision, the exact source contribution and bounded use, including the `G.2` pack when that route was used, and `E.11` for discovery. For publication, cite `E.17` for a source-backed face and return to source and `E.24.PUB` for the occurrence, form, carrier, audience, bounded use, and availability.
 
 ### G.11:1 - Problem frame — Keeping shipped SoTA current without global rebuilds
 
@@ -45,16 +44,11 @@ Part G produces shipped, selector-ready publication units and records: packs, bu
 * **edition drift** (descriptor, distance, or transfer rules bump; policy pins evolve),
 * **bridge evolution** (CL or plane penalties or calibrations update).
 
-The kit addresses two recurring refresh failures:
-
-* a brittle set of ad-hoc “full rerun” rituals, or
-* an audit-only refresh result that leaves currentness drift unresolved.
-
-`G.11` is the **Part G governing definition** of the **refresh orchestration kit**: its users turn typed refresh causes into **scoped plans** and record execution in **auditable execution reports**. Cause semantics and universal invariants remain delegated to `G.Core`.
+G.11 governs the connection from typed refresh causes and their affected uses to selected plans and execution reports. G.Core supplies cause semantics and the applicable invariants.
 
 ### G.11:2 - Problem — Why naive refresh breaks comparability and admissibility
 
-A refresh loop fails (conceptually) when any of the following happens:
+A refresh loop fails when any of the following happens:
 
 1. **Full-rerun mania.** Minor edits (e.g., a single Bridge calibration) trigger pack-wide rebuilds without a traceable scope rationale.
 2. **Editionless telemetry.** Telemetry signals are recorded without edition pins, making reruns non-comparable and parity-unreplayable.
@@ -64,11 +58,11 @@ A refresh loop fails (conceptually) when any of the following happens:
 
 ### G.11:3 - Forces — Minimal recomputation under strict invariants
 
-* **Minimal scope vs. completeness.** Refresh must be *as local as possible* (slice-scoped), but still include a defensible dependency closure over evidence and crossings.
+* **Minimal scope vs. completeness.** Include every actual dependent use that can change, while excluding unrelated work. The resulting closure can contain several slices.
 * **Operational urgency vs. auditability.** Actual refresh Work must remain inspectable through the needed pins, references and paths. A currentness decision or an unchanged use must not become a fictitious Work occurrence.
 * **Alias stability vs. semantic unification.** Existing trigger labels must remain usable, but their meaning must be one governing definition and id-based.
 * **Modularity vs. orchestration power.** `G.11` must coordinate harvesting, parity, and shipping without re-implementing them or importing discipline-specific method semantics into core.
-* **Policy-bound behavior vs. “smart defaults.”** Ordering of refresh, priority heuristics, and budget handling are valuable—but must live as policy-bound extensions, not as hidden universal rules.
+* **Policy-bound behavior vs. “smart defaults.”** Ordering, priority and budget handling must follow their declared policies rather than hidden universal rules.
 
 ### G.11:4 - Solution — RSCR-driven refresh as a P2W-scoped orchestration kit
 
@@ -117,11 +111,11 @@ By the `G.Core` **Expansion rule**, the **effective** conformance ids, trigger k
 
 #### G.11:4.2 - Refresh orchestration kit (subject-qualified; conceptual artefacts)
 
-`G.11` defines a kit of authoring-plane artefacts for actual refresh planning and reporting. `RefreshPlanId` is required on a plan and `RefreshReportId` on a report. The linkage manifest applies to the triggers and actions that occur; retaining applicable support creates no trigger, plan or report merely to fill their pins.
+Use the following artifacts for refresh planning and reporting. `RefreshPlanId` is required on a plan and `RefreshReportId` on a report. The linkage manifest applies to the triggers and actions that occur; retaining applicable support creates no trigger, plan or report merely to fill their pins.
 
 1. **`RefreshQueue` (conceptual queue).**
-   A queue of refresh candidates keyed by scope (`PathSliceId` preferred; `PatternScopeId` permitted).
-   Ordering, prioritization, and batching are policy-bound (and therefore extension-scoped), but every queue item carries canonical trigger kind ids.
+   A queue of refresh candidates keyed by affected scope (`PathSliceId` refs preferred where graph-expressed; `PatternScopeId` permitted). One candidate may cover several dependent slices.
+   Ordering, prioritization and batching use declared policies; every queue item carries canonical trigger kind ids.
 
 2. **`RefreshPlan@Context` (one exact `U.WorkPlan`).**
    A planned refresh is one `U.WorkPlan` episteme under A.15.2. It **does not execute Work** and **does not embed gate decisions**. `RefreshPlan@Context` is only this pattern's application name for the plan; it declares:
@@ -137,7 +131,7 @@ By the `G.Core` **Expansion rule**, the **effective** conformance ids, trigger k
    An execution or audit report that records:
 
    * `RefreshReportId` (UTS-published id; editioned)
-   * `ExecutedActions[]` with links to cited artefacts governed by cited patterns (e.g., new parity report id, new pack id)
+   * `ExecutedActions[]` with independently admitted A.15.1 Work refs and their A.13-qualified actual performer refs, plus links to the resulting artifacts under their subject patterns (for example, a new parity report or pack id). Add F.6 attribution only when the receiving use consumes it.
    * `ObservedDeltas` (telemetry deltas, admissibility changes, evidence-relation or source-relation changes) as refs and pins, not as untyped prose
    * `RSCRRefs[]` (any RSCR or regression harness artefacts invoked)
    * `EmittedNotices[] := DeprecationNoticeId[]` and `EditionBumpLogId[]`
@@ -152,7 +146,7 @@ By the `G.Core` **Expansion rule**, the **effective** conformance ids, trigger k
 
 #### G.11:4.2a - Selected-set, archive, and cultural-variant currentness
 
-Use this line when refresh currentness concerns a selected set, front, Q-front, archive, portfolio lineage, cultural-variant lineage, style or tradition term bridge, path slice, reused `A.6.RCD` predicate definition, or admitted derived relation kind.
+Use this line when a recipient needs a structured currentness result concerning a selected set, front, Q-front, archive, portfolio lineage, cultural-variant lineage, style or tradition term bridge, path slice, reused `A.6.RCD` predicate definition, or admitted derived relation kind.
 
 ```text
 RefreshCurrentnessLine@Context:
@@ -187,37 +181,41 @@ Consume RSCR triggers from:
 * freshness and decay events (`B.3.4`),
 * evidence, bridge, policy, edition, relied-on base-definition, named-substrate-edition, or derivation-applicability edits (from the respective subject patterns' publication faces, forms, or units).
 
-Every ingested signal is normalized into an `RSCRTrigger` (canonical id, scope, payload pins), with optional alias labels.
+Normalize each ingested signal into an `RSCRTrigger` with its canonical id, scope and payload pins; retain an alias label when used.
 
 **4.3.2 Scope closure over the actual dependencies.**
-Compute the minimal dependency closure over:
+Start from the changed premise and the receiving question. Establish the minimal dependency closure that includes every actual dependent use whose claim, action or required check can change. Minimality excludes unrelated uses; it does not select the fewest nodes or stop at the first affected slice. Follow:
 
-* cited evidence and source relations, with `G.6` `PathId` and `PathSliceId` refs when a graph path slice is the current math-lens expression,
-* declared crossings (`G.7` sentinels; `CrossingBundle` visibility),
-* and pinned references (editions and policies).
+* cited evidence and source relations, using G.6 `PathId` and `PathSliceId` refs where those dependencies are graph-expressed;
+* declared crossings, including G.7 sentinels and required `CrossingBundle` visibility; and
+* pinned editions and policies consumed by the receiving result.
 
-G.6 supplies graph expression and citation when used; a graph does not establish the source or dependency relation. For a nongraph result, name the exact source, receiving result/use and dependency under `PatternScopeId`; use `PathSliceId` when that dependency scope is actually graph-expressed or independently required by the receiving contract. The closure is a planning-time claim about affected slices, distinct from execution of the planned refresh actions. Interpret a B.3.4 trigger for the receiving claim and use: available information may establish continued applicability, a narrower use, an obtainable refresh need or a necessary suspension. An age-only signal does not determine that disposition. If support remains sufficient, stop with the usable result; retain only the limitation or reason a later recipient needs.
+Recover the exact direct use at each step. A common evidence item, causal assumption, calibration or policy can feed several paths and a result that combines them. Include those branches and the combining use before choosing actions. Repeated citations to one basis do not make it independent support. G.6 provides the representation and indexes; A.10.1 supplies source-change discovery, direct-use tests and coverage limits when the existing account is insufficient. Graph reachability alone establishes no dependence. Keep an unresolved branch explicit and continue independently resolved branches.
+
+For a nongraph result, name the exact source, receiving result/use and dependency under `PatternScopeId`. Use `PathSliceId` when the scope is graph-expressed or independently required by the receiving contract. This closure states which conclusions need reconsideration; it neither performs their subject judgement nor commits every affected use to a rerun. Apply the subject rules with available evidence. An affected branch may retain the same supported conclusion, acquire a narrower use, need refresh or require suspension; an independent result remains reusable on its own qualified basis.
+
+Interpret a B.3.4 trigger for the receiving claim and use. Age alone does not select a disposition. Stop when the present basis gives the warranted answer; keep only a limitation or reason that a later recipient needs. If a subject judgement reveals another consequential dependency, return it to the scope before planning dependent work.
 
 **4.3.3 Planning (P2W boundary).**
-When the selected response requires planned refresh, use C.11 and C.19.2 for its marginal contribution, cost, delay and displaced work. Produce `RefreshPlan@Context` for the actions actually selected; possible action forms include:
+Use C.11.DUA to compare further inquiry with the warranted answer already available. Select an attainable action for what it can change at the receiving horizon, including its full cost, delay and displaced work. C.11 and, where applicable, C.19.2 supply the choice; binding evidence and authority requirements remain in force. Produce `RefreshPlan@Context` only for the planned actions selected. Possible action forms include:
 
 * `RerunHarvest` (delegates to the selected harvesting or SoTA method, such as `G.2`; use `G.1` additionally only when its generator-kit cards or wiring must change)
 * `RerunParity` (delegates to `G.9`)
 * `RecomputeSelectionOrSetResult` (delegates to `G.5`)
 * `RebindBridgeOrCrossing` (delegates changes to the obtaining Bridge to `F.9`, calibration-record changes to `G.7`, and crossing visibility to `E.18` and the applicable visibility harnesses)
-* `UpdateEvidenceBindings` (delegates to `G.6`)
+* `UpdateEvidenceBindings` (updates the provenance representation under G.6 after any changed direct relation or subject result has been established under its own governor)
 * `ReshipPack` (delegates to `G.10`)
 * `UpdateBundle` (delegates to `G.8`)
 * `UpdateDashboardSlice` (delegates to `G.12`)
 * `EmitDeprecationNotice` or `EmitEditionBumpLog` (publication units governed by this pattern)
 
 **4.3.4 Execution and audit.**
-When selected actions are performed as Work or Work-bound audit, publish the corresponding `RefreshReport@Context`. A scoped applicability judgement can reuse available information without a new experiment; a plan alone establishes neither performance nor a new observation.
+When selected actions are performed as Work or Work-bound audit, identify the actual performers and independently admitted occurrences and publish the corresponding `RefreshReport@Context`. Assess the returned subject results for each receiving use, including any result that combines refreshed and retained branches. Reuse sufficient existing observations where applicable; a plan supplies no new observation or performance.
 Gating outcomes (admit, degrade, or abstain) follow `G.Core` tri-state semantics and are recorded through policy ids and cited evidence or source relations, rather than as local bespoke outcomes.
 
 #### G.11:4.3a - Causal-use refresh sentinels
 
-When a shipped result consumes C.28, refresh planning watches the causes that can change a supported use, unsupported use, support-result verdict, limits, or downstream decision basis:
+When a shipped result consumes C.28, inspect the following changes when they can alter supported or unsupported use, a support-result verdict, its limits or a downstream decision basis:
 
 | Sentinel | Affected result | Refresh pins |
 | --- | --- | --- |
@@ -232,11 +230,11 @@ When a shipped result consumes C.28, refresh planning watches the causes that ca
 | simulation-validation shift | `simulationResultRef` in `CausalSupportComponentRefs` | model assumptions, validation, sensitivity, supported model use and unsupported realized/interventional use |
 | transport-endpoint shift | `CausalTransportabilityResult` | source/target population, domain, environment and data-generating regime, assumptions, windows, formula and unresolved limits |
 
-These are payload distinctions under existing G.Core trigger kinds, not new trigger kinds. Reopen only the affected result and downstream uses that consumed it.
+These are payload distinctions under existing G.Core trigger kinds. Apply §4.3.2 to every result and receiving use that consumes the changed causal basis, including several results sharing an assumption or data source.
 
 #### G.11:4.4 - Extensions (pattern-scoped; non-core)
 
-Discipline-specific refresh strategies and generator-specific wiring live as `GPatternExtension` blocks. Scheduling, ordering, priority, and budget policy for the refresh queue are not separate extension semantics: `G.11` defines the required policy pins on `RefreshQueue` and `RefreshPlan@Context`, while A.15.2 and A.15.3 keep the WorkPlan and its local content separate from dated Work.
+Discipline-specific refresh strategies and generator-specific wiring use `GPatternExtension` blocks. Queue scheduling uses the policy pins on `RefreshQueue` and `RefreshPlan@Context` described in §4.4a. A.15.2 and A.15.3 keep the WorkPlan and its local content separate from dated Work.
 
 
 
@@ -330,9 +328,9 @@ Scheduling strategies (bandit-style allocation, queueing, cadence policies, earl
 * `RSCRTriggerKindId[]` still comes from `G.Core`; scheduling policy does not mint trigger kinds.
 * planned refresh remains the exact `U.WorkPlan` locally called `RefreshPlan@Context`; executed refresh is recorded in `RefreshReport@Context` or Work-bound audit.
 
-If no priority or budget policy is declared, no scheduling heuristic is admissible by appearance; the plan must either use the ordinary queue order or state the missing policy pin as a blocker.
+Use an applicable ordinary queue-order rule when it already settles the scheduling choice. If a needed priority or budget rule is missing, resolve that choice under its governing authority before the plan relies on it; missing required policy pins remain a blocker. A heuristic supplies no policy merely by appearing in a queue.
 
-### G.11:5 - Archetypal Grounding — System and Episteme (informative; Tell–Show–Show)
+### G.11:5 - Archetypal Grounding — System and Episteme (informative)
 
 **`U.System` illustration — Safety-critical maintenance loop (pump and calibration).**
 A centrifugal pump is serviced under a documented procedure (method description). Sensors report vibration drift (telemetry), and a calibration standard is updated (edition bump). The maintenance team uses `G.11` to produce a refresh plan scoped to the affected inspection slices and publishes a refresh report of the executed actions with pins to the updated standard edition and the evidence or source relations. Deprecation notices are issued for obsolete thresholds in the procedure’s acceptance clauses (by subject pattern), preserving ID continuity.
@@ -348,22 +346,26 @@ A claim sheet behind a shipped SoTA pack changes (new evidence, retraction, or r
 * A local selected-set result consumes `PumpReviewBudget-E1`. Its replacement `PumpReviewBudget-E2` changes the allowed review time from 30 to 20 minutes. The existing result explicitly cites that budget; no evidence graph is in use. Scope `PumpTriageSelection` names that exact result, changed budget and dependent eligibility comparison. If re-selection is chosen, plan only that comparison through G.5 under `PatternScopeId=PumpTriageSelection`, carrying both budget editions and the current task/row refs. Record performed refresh and any required targeted check in the resulting report before republication.
 * A shipped QD archive expresses its affected dependencies in `PathSliceId=ArchiveCell-Q7`. A distance-definition change reopens the comparison using that definition. Retain the slice, old/new `DistanceDefRef.edition`, descriptor, insertion/emitter and policy pins, and the applicable G.9/G.10 evidence and shipping requirements. An OEE change to `TransferRulesRef.edition` similarly retains its affected graph slice, exact generator row edition and environment-validity scope. Nongraph support elsewhere does not relax these contracts.
 
-### G.11:6 - Bias-Annotation (informative)
+**Shared calibration, different branch outcomes.** Continue G.6:5.5's constructed case. A correction to calibration qualification K establishes that its uncertainty statement applies only in the low-vibration condition. P1 and P2 both consume K, and selection S uses their acceptance results; P3 uses another calibration. The complete affected scope includes P1, P2 and S, while P3 retains its independent basis.
 
-Bias lenses: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**.
+The inspection team checks the existing configuration records. The records show that M1 was obtained in the qualified condition, so the applicable measurement and acceptance rules preserve its supported result. M2 was obtained outside that condition; the old uncertainty statement cannot support V2 for the proposed use. Preserve the actual measurement history while returning its changed qualification to C.16 and the acceptance question to G.4. Reconsider S under G.5 because it consumed V2. A permissible shortlist restricted to the supported candidate can answer the immediate triage question; keeping P1 does not preserve the original two-candidate conclusion.
+
+For a later decision that requires V2, the team compares using a qualified independent measurement already available, obtaining a new calibration or measurement, narrowing the planned use and deferring it. In this stipulated case, an available independent measurement covers the required conditions and its assessment fits the decision window; a full repeat campaign would arrive too late and adds no needed coverage. The team selects assessment of that measurement under the subject rules. If it supports V2, S can be reconsidered with both supported branches. If it does not, retain the warranted restricted result. Record a new observation or performed refresh only when it actually occurs; the plan and the available measurement remain distinct.
+
+### G.11:6 - Bias-Annotation (informative)
 
 * **Arch bias (toward explicit wiring).** Risk: authors feel “over-pinned.” Mitigation: keep the minimum pin set small; push scheduling sophistication into extensions and policies.
 * **Gov bias (toward audit over speed).** Risk: refresh becomes bureaucratic. Mitigation: create queue, plan and report content only for the corresponding need; retain applicable support without an omission certificate, while preserving warnings a later receiver needs.
 * **Onto and Epist bias (toward one governing definition semantics).** Risk: teams try to localize trigger meaning for convenience. Mitigation: alias docking is allowed, but semantics stay in `G.Core`.
-* **Prag bias (toward minimal recomputation).** Risk: under-refresh if closure is too narrow. Mitigation: require closure rationale and allow explicit “scope wideners” as policy-bound pins.
-* **Did bias (toward readable, reusable artefacts).** Risk: oversimplified examples. Mitigation: maintain System and Episteme grounding and keep SoTA-echoing explicit.
+* **Prag bias (toward minimal recomputation).** Risk: the first affected slice is mistaken for complete reach. Mitigation: follow the shared basis to every actual dependent use under §4.3.2 and preserve the coverage limits.
+* **Did bias (toward readable, reusable artefacts).** Risk: an example can hide a condition that matters for another use. Mitigation: recover the receiving question and qualifications of that use before applying the example.
 
 ### G.11:7 - Conformance Checklist (normative)
 
 | ID                                                    | Requirement                                                                                                                                                                                                                                                                                                                                     | Purpose and Notes                                                                                                            |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | **CC‑G11‑CoreRef**                                    | A conforming `G.11` artefact **MUST** satisfy the **effective** core conformance set implied by the `GCoreLinkageManifest` in `G.11:4.1` (profile expansion plus explicit deltas; delegated to `G.Core`).                                                                                                                                       | `G.11` is conformant only if the relevant `G.Core` invariants and trigger discipline are satisfied. |
-| **CC‑G11.1 (Slice-scoped planning).**                 | A conforming `RefreshPlan@Context` **SHALL** be scoped to `PathSliceId[]` (preferred) or `PatternScopeId[]` and **SHALL** record canonical `RSCRTriggerKindId` for each planned cause. Pack-wide reruns **MAY** occur only if the declared dependency closure spans all slices; the closure rationale **SHALL** be recorded.                    | Prevents full-rerun mania while keeping a safety escape hatch explicit and auditable.                                      |
+| **CC‑G11.1 (Slice-scoped planning).** | A conforming `RefreshPlan@Context` **SHALL** name its complete affected scope as `PathSliceId[]` (preferred where graph-expressed) or `PatternScopeId[]` and record canonical `RSCRTriggerKindId` for each planned cause. Its closure rationale **SHALL** account for all actual dependent uses that can change within the declared coverage, including shared-premise branches and combining uses. Pack-wide reruns **MAY** occur only if that closure spans all slices. | Prevents both unrelated reruns and omission of another dependent use. |
 | **CC‑G11.2 (Edition discipline; QD and OEE wiring).**     | When QD, OEE, or both are active, a conforming `RefreshPlan@Context` and `RefreshReport@Context` **SHALL** satisfy the required pin, edition, and policy wiring of the applicable extension blocks: `G.11:Ext.QDRefreshWiring`, `G.11:Ext.OEERefreshWiring`, or both. **`.edition` SHALL apply only on `…Ref`.** Missing required pins **SHALL** block publication. | Keeps replayability strict while keeping method-specific pin lists inside the applicable extension blocks.                  |
 | **CC‑G11.3 (Telemetry-metric admissibility).** | A refresh **SHALL** retain the metrics and pins required by the applicable subject method and receiving contract. Any Q, D, QD-score, coverage or regret it publishes **SHALL** be published as telemetry metrics, and any published IlluminationSummary as a telemetry summary. These values **SHALL** be excluded from dominance unless a CAL policy explicitly promotes them, and the promoting policy id **SHALL** be recorded in SCR-visible evidence bindings through the cited subject patterns. | Preserves required telemetry and prevents covert scalarisation. |
 | **CC‑G11.4 (Bridge penalties).** | Any refresh reacting to a sense or kind correspondence change or to a change in an independently governed plane relation **SHALL** satisfy `CC‑GCORE‑PEN‑1`. It **SHALL** preserve the obtaining relation under its direct governor, cited calibration basis and losses, and the separate receiving-use and reliance claims consumed by the refreshed result. It **SHALL** publish the `CL`, `CL^k`, `CL^plane` values and policy/model pins required by the actual calibration or receiving use, including any required `Φ`, `Ψ` and `Φ_plane` policy ids. Any supported loss penalty **SHALL** follow its declared assurance rule and affect `R_eff` only (F and G invariant). | Keeps the actual relation, calibration and assurance grounds recoverable during refresh. |
@@ -379,7 +381,7 @@ Bias lenses: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**.
 
 | Anti-pattern                       | Symptom                                                           | Why it fails                                             | Repair                                                                            |
 | ---------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Full-rerun mania**               | Any edit triggers a global rebuild                                | Costs explode; drift hides (no scope rationale)          | Enforce slice-scoped plans (CC‑G11.1); require closure rationale for global scope |
+| **Full-rerun mania or first-slice stop** | An edit reopens every result or only the first located slice. | The scope follows storage or discovery order instead of actual dependence. | Follow §4.3.2 through every affected branch and combining use; retain independent results and coverage limits (CC‑G11.1). |
 | **Editionless telemetry**          | Telemetry lacks `…Ref.edition`                                    | Reruns are non-comparable; parity breaks                 | Block publication on missing pins (CC‑G11.2)                                      |
 | **Alias-as-semantics**             | `T*` labels are treated as meaning                                | Trigger meaning fragments; regressions become untestable | Dock aliases through `G.Core.TriggerAliasMap.G11`; record canonical ids               |
 | **Silent crossing during refresh** | Cross-context or plane reuse lacks required relation/use/reliance grounds, or an actual flow crossing or gate lacks required visibility pins. | The reuse or crossing cannot be checked against its governing rule. | Restore the missing grounds; apply E.18/A.21 harnesses to independently governed flow crossings or gates. Block the affected publication when required grounds or pins are missing (CC‑G11.6). |
@@ -388,14 +390,14 @@ Bias lenses: **Gov**, **Arch**, **Onto and Epist**, **Prag**, **Did**.
 
 ### G.11:9 - Consequences (informative)
 
-* **Selective, replayable upkeep.** Refresh becomes a controlled planning and execution loop rather than an implicit “maintenance vibe.”
+* **Selective, replayable upkeep.** The practitioner can retain a sufficient result or trace selected refresh from its changed premise through dependent uses to performed work and its results.
 * **Stable semantics with flexible operations.** Trigger meaning is centralized (`G.Core`), while scheduling sophistication can evolve as policy-bound extensions.
 * **Clear governing-definition assignment boundaries.** Orchestration coordinates actions under their governing definitions; it does not redefine their semantics (shipping remains `G.10`, selection remains `G.5`, etc.).
-* **Cost: pin discipline overhead.** Authors must carry enough ids, editions, and policies to make refresh comparable. This is intentional: it replaces hidden drift with explicit wiring.
+* **Cost: pin discipline overhead.** Authors carry the ids, editions and policies needed to make refresh comparable and to recover its dependencies.
 
 ### G.11:10 - Rationale (informative)
 
-`G.11` is intentionally a **thin orchestration governing definition**:
+G.6 makes a cited basis and its paths recoverable; G.11 connects the affected reach to a supported continuation. A shared premise can require several local judgements, while independent results remain usable. The connection separates three concerns:
 
 * The refresh loop coordinates reruns and republishing; trigger semantics, invariants, and defaults are delegated to `G.Core`.
 * The kit is split across the **P2W planning-to-work boundary** so that the exact `U.WorkPlan` and its declaration-local planned-filling rows remain planning content while dated Work remains independently established.
@@ -415,13 +417,13 @@ Each entry follows: **claim → practice → source → alignment → adoption s
    Practice: self-improving-agent, AlphaEvolve-style, and DeepEvolve-style lines use generated variants, external knowledge, evaluators, tests, archives, and empirical validation.
    Source: Darwin Godel Machine `arXiv:2505.22954`, AlphaEvolve `arXiv:2506.13131`, and DeepEvolve-style deep-research augmentation `arXiv:2510.06056`.
    Alignment: G.11 refresh records carry source, evaluator, descriptor, policy, edition, lineage, and report refs; generated method text, evaluator success, and archive update keep their subject patterns.
-   Adoption: **Adopt and adapt** (refresh tracks currentness and smallest affected scope; it does not accept generated text as proof, gate passage, or performed work).
+   Adoption: **Adopt and adapt** (refresh tracks currentness and complete affected scope; generated text, gate passage and performed work retain their different subject claims).
 
-1. **Continuous refresh is necessary in deployed evaluation pipelines.**
-   Practice: production ML systems use monitoring, retraining, and reevaluation triggers and insist on reproducibility hooks.
-   Source: Breck et al., *The ML Test Score* (`arXiv:1706.04599`, 2017); Amershi et al., *Software Engineering for Machine Learning* (ICSE-SEIP 2019).
-   Alignment: `G.11` formalizes triggers as typed causes and forces edition and policy pins for replay.
-   Adoption: **Adopt and adapt** (adapted to id-based, PathSlice-scoped refresh rather than “retrain everything”).
+1. **Deployed evaluation needs monitoring and justified refresh conditions.**
+   Practice: production ML teams monitor data and model behaviour, relate staleness to prediction quality, and use observed changes to decide when to update.
+   Source: Breck et al., [*The ML Test Score*](https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/) (IEEE Big Data, 2017), Model 4 and Monitor 4; Amershi et al., [*Software Engineering for Machine Learning: A Case Study*](https://www.microsoft.com/en-us/research/publication/software-engineering-for-machine-learning-a-case-study/) (ICSE-SEIP 2019), §II.B.
+   Alignment: G.11 uses typed causes, edition and policy pins, and the receiving-use comparison in §4.3 to select a replayable response.
+   Adoption: **Adopt and adapt** the monitoring and update-decision practices to affected-use refresh; retain sufficient applicable support.
 
 2. **Non-stationarity requires explicit drift and decay handling, not ad-hoc updates.**
    Practice: continual learning emphasizes non-stationarity as a first-class maintenance condition.
@@ -450,7 +452,7 @@ Each entry follows: **claim → practice → source → alignment → adoption s
 ### G.11:12 - Relations
 
 **Builds on:** `G.Core` (Part‑G invariants; RSCR trigger catalogue; alias docking; Default Governing Definition Index), `G.6` (EvidenceGraph, `PathId` and `PathSliceId`), `G.7` (Bridge sentinels; CL, Φ, and plane pins), `G.5` (selector and set-return), `G.8` (bundle telemetry hooks), `G.9` (parity), `G.10` (shipping hooks), `B.3.4` (freshness and decay), `E.18` (GateCrossing visibility).
-**Coordinates with:** `G.12` (dashboard telemetry pins), `A.6.RCD` for reopening reused predicate definitions and derived relation kinds when their base definitions, named substrate edition, authorized derivation operation, or applicability changes, `C.18` and `C.19` archive, front, and live-pool policy pins, `C.32.P2S` when telemetry, decay, or freshness reopens architecture problem-to-structure carry-through, `C.23` (SoS-LOG branches and maturity ladders), `C.28` (causal-use support results, verdicts, supported-use values, unsupported-use values, and SoTA-sensitive causal-use sentinel payloads), `F.15` (RSCR harness publications, when present).
+**Coordinates with:** `A.10.1` for source-change discovery, direct-use tests and affected reach; `C.11.DUA` for choosing worthwhile inquiry or a sufficient present answer; `G.12` for dashboard telemetry pins; `A.6.RCD` for reopening reused predicate definitions and derived relation kinds when their base definitions, named substrate edition, authorized derivation operation or applicability changes; `C.18` and `C.19` for archive, front and live-pool policy pins; `C.32.P2S` when telemetry, decay or freshness reopens architecture problem-to-structure carry-through; `C.23` for SoS-LOG branches and maturity ladders; `C.28` for causal-use support results, verdicts, supported and unsupported uses, and causal-use sentinel payloads; `F.15` for RSCR harness publications when present.
 **Publishes to:** UTS (refresh plan, refresh report, deprecations, edition bumps), and to the relevant subject patterns’ publication faces, forms, or units through delegated actions.
 
 ### G.11:End

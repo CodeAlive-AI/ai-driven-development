@@ -13,7 +13,7 @@ Use this pattern when one admitted `U.System` can contribute to different work o
 - which exact work-facing kind the system counts under now; or
 - which system-role assignment actually obtains.
 
-A system here is any individual independently admitted by A.1. It can be a person, team, organization, service, organism, or non-human technical object. The `SystemRole` head in a name such as `ReviewerSystemRole` says that candidates are systems.
+A system here is an individual independently recognized as a `U.System` under A.1. It can be a person, team, organization, deployed service system, organism, or non-human technical object. The `SystemRole` head in a name such as `ReviewerSystemRole` says that candidates are systems.
 
 Typical moments:
 
@@ -25,7 +25,7 @@ Typical moments:
 
 **Primary EntityOfConcern.** One exact local `U.Kind` whose candidates are `U.System` individuals and whose operative membership condition distinguishes a stable, assignable, work-facing contribution. C.3 recovers the kind through that candidate domain and condition, a useful member/non-member boundary, and a continuity rule. A practice or source reference may locate the definition or prompt comparison; it does not identify the kind. Such a kind is called a **system-role kind**. Assignment is a neighboring direct relation, not part of the kind.
 
-**Primary working reader.** The first reader is an engineer-manager, analyst, or FPF author who must keep system identity stable while making classification and assignment inspectable. A later reader must be able to recover the kind's candidate domain, work-facing membership condition, member/non-member boundary, continuity rule, declaration edition, candidate and slice, useful definition provenance, and any separately obtaining assignment and Work attribution.
+**Working reader.** A practitioner who needs to preserve system identity while making a classification or assignment inspectable.
 
 **First useful move.** Start with the ordinary conclusion: “Alice counts as a reviewer for this submission” or “PumpUnit-3 is assigned as cooling circulator for this operating episode.” For classification, name the local system-role kind and evaluate the candidate with one `KindSignature` under C.3.2. Add a `U.SystemRoleAssignment` occurrence only when holding or assignment identity is actually claimed.
 
@@ -112,7 +112,7 @@ J(candidateSystem, systemRoleKind, kindSignatureEdition, contextSlice)
 
 An assignment may be one feature only when the local `KindSignature` explicitly uses that independently obtaining assignment predicate. There is no family-wide rule that assignment means membership. The judgment being computed, a broader-kind judgment, an extension row, or the proposed `U.SubkindOf` occurrence cannot be a premise of the same judgment.
 
-For an admissible candidate and slice, a known failed criterion gives `false`; missing support for a required feature or an unavailable dependency gives `unknown`. Evidence supports a claim about the governed feature; it does not create that feature or the membership result.
+For an admissible candidate and slice, a known failed criterion gives `false`; missing support for a required feature or an unavailable dependency gives `unknown`. Evidence supports the claim that a governed candidate feature holds; the feature and membership criterion determine what is being classified.
 
 Every `U.SubkindOf` proposal evaluates the aligned narrower and broader signatures independently for the same candidate and slice. Admit the order only when the C.3.1 monotonicity condition holds. The edge records an already established implication; it never produces either classification judgment.
 
@@ -174,16 +174,16 @@ Select only the objects needed by the current claim. None of these values is a �
 
 #### A.2:4.7 - Recover Contribution Wording before Formalizing It
 
-The phrase “the role of X” often means that X contributes to a use. Apply `E.10.ROLE` first. If X is an admitted system and the claim needs a work-facing classification, recover the local system-role kind and C.3.2 judgment; add an assignment only when holding is claimed. Otherwise keep X in its actual kind and name the direct relation or declaration place.
+The phrase “the role of X” often means that X contributes to a use. Use `E.10.ROLE` when its technical meaning remains unclear; section 4.9 permits ordinary wording when no stronger distinction is needed. If X is an admitted system and the claim needs a work-facing classification, recover the local system-role kind and C.3.2 judgment; add an assignment only when holding is claimed. Otherwise keep X in its actual kind and name the direct relation or declaration place.
 
 | Ordinary wording | Governed repair |
 | --- | --- |
-| `RFC 9110 plays a normative role in this design` | Keep the publication as an episteme and state the current external-rule, constraint, source-use, or publication relation selected by the design claim. |
-| `this dataset plays the benchmark role` | Keep the dataset as an episteme and state the measurement, evidence, benchmark, source-use, or currentness relation that actually obtains. |
+| `RFC 9110 plays a normative role in this design` | Identify the RFC's claim-bearing content as the source episteme and state the external-rule, constraint, source-use, or publication relation selected by the design claim. |
+| `this dataset plays the benchmark role` | State the measurement, benchmark, evidence, source-use, or currentness relation actually used. Identify any claim-bearing dataset account under C.2.1; keep its file or publication under the relevant direct pattern. |
 | `this parameter has the control role` | Recover the Method or model parameter, or an A.6.5 participant slot, from the direct declaration. |
 | `this interface plays the integration role` | Recover the selected module-interface, port, signature, or protocol relation under its governor. |
 
-Use these recognition probes to identify the relation in the current claim. If no direct relation can yet be named, return the exact `missing-governor` rather than minting a system-role kind.
+Use these recognition probes to identify the relation in the current claim. If the predicate or participants remain unclear, recover them through A.6.P. Return `missing-governor` through A.6.RCD only when that recovered relation has no applicable governor; do not substitute a system-role kind.
 
 #### A.2:4.8 - System-Role Vocabularies and Relations among Kinds
 
@@ -197,7 +197,7 @@ Algebraic, graph, matrix, embedding, or neural representations are mathematical 
 | --- | --- | --- |
 | `CoolingCirculatorSystemRole` | A pump supplies a circulation contribution in plant operation. | Capability, assignment, functioning, and performed Work remain separate. |
 | `TestArticleSystemRole` | The same pump is selected for qualification use. | The classification or assignment does not change pump identity. |
-| `VerifierSystemRole` | A person, team, organization, service, or non-human technical system supplies verification contribution under its local criterion. | A verification report is an episteme, not the classified system. |
+| `VerifierSystemRole` | A person, team, organization, deployed service system, or non-human technical system supplies verification contribution under its local criterion. | A verification report is an episteme, not the classified system. |
 | `TransformerSystemRole` | A system is classified for a transformation-facing contribution. | For performed Work, name the performer system. |
 
 #### A.2:4.9 - Reduced Use and Stronger Claims
@@ -280,7 +280,7 @@ PlantCoolingAssignment@PumpUnit3:
 
 The interval is assertion content about the known extent; the occurrence continues only while the species predicate obtains without interruption for the same participants. `PlantOperationsSystemRoleVocabulary-2026`, its reference scheme, and the relevant signature can be cited as interpretation evidence. They are not extra assignment participants.
 
-Closing the open interval later refines the same occurrence description when uninterrupted identity is preserved; the stated interval neither makes the relation obtain nor becomes another participant.
+A later description may close the open interval while referring to the same uninterrupted assignment occurrence. Changed claim content identifies another episteme under C.2.1; the stated interval neither makes the relation obtain nor becomes another participant.
 
 The assignment proves neither circulation capability over every operating region nor performed circulation or maintenance Work. Those claims use A.2.2, A.15.1, and the applicable Method, transformation, measurement, and evidence relations.
 
@@ -290,7 +290,7 @@ An engineering team uses RFC 9110 while designing an HTTP service. Keep these cl
 
 1. `DesignTeam-2` independently counts under `ProtocolDesignerSystemRole` in the current slice when its signature criterion is satisfied.
 2. For this hypothetical assignment-bound case, suppose the practice has declared `ProtocolDesignSystemRoleAssignment` under `U.SystemRoleAssignment` according to A.2.1, and `DesignAssignment-1` is one obtaining occurrence with holder `DesignTeam-2` and assigned kind `ProtocolDesignerSystemRole`.
-3. The RFC publication is the source episteme in the direct source-use or external-rule relation selected by the design claim.
+3. The RFC's claim-bearing content is the source episteme in the direct source-use or external-rule relation selected by the design claim; any publication relation remains separate.
 4. In this hypothetical case, recover `DesignTeam-2` as the exact actual performer through A.13 with that same obtaining `DesignAssignment-1`, then let A.15.1 independently admit the dated design Work. Suppose this Work was performed under `DesignAssignment-1`; F.6 afterward establishes that relation to this same assignment. F.6 identifies neither assignment nor performer, and failed attribution would leave the Work intact. The Work may separately produce a MethodDescription or SystemDescription only through the applicable production claim.
 
 
@@ -331,7 +331,7 @@ An external notation may call one relation position `role`. Apply E.10.ROLE and 
 6. State each claim about state, capability, Method, Work, responsibility, commitment, permission, authority, evidence, or reliance through the pattern that defines or constrains it.
 7. Evaluate every subkind proposal from independently obtained aligned judgments; never use the proposed edge as a membership premise.
 8. For cross-local use, compare the C.3 definitions first. Reuse the same kind when its distinction continues; when two kinds are present, keep both kinds distinct and establish only the exact C.3.3 kind relation, any needed F.9 local-sense relation, and bounded-use claim actually consumed. In either branch, establish assignments independently; reusing the kind neither creates assignments nor licenses their substitution or merger.
-9. If the source uses *role* for another object, apply E.10.ROLE and continue with the recovered subject pattern; stop at `missing-governor` when no relation is yet admitted.
+9. If a technical use of *role* still hides another object, use E.10.ROLE and continue with the recovered subject pattern. If the relation itself is unclear, use A.6.P; return `missing-governor` through A.6.RCD only for a recovered relation lacking an applicable governor.
 
 ### A.2:8 - Conformance Checklist
 

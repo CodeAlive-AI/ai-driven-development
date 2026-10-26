@@ -2,30 +2,31 @@
 
 > **Status:** Stable
 
-**Tag:** Architectural pattern (conceptual; notation‑independent; pack‑boundary governing definition)
-**Stage:** release‑time composition and publication; edition‑aware. For an independently applicable `E.18` flow crossing or `A.21` gate, carry its required CrossingBundle or gate anchors into the shipped pack.
+**Use this when.** Part-G output must reach a selector, auditor or maintainer as one citable, editioned shipment. Start from that receiving use, collect the required upstream references and preserve the conditions for interpreting their results. A sufficient existing result can be cited directly; creating a new pack is needed only for this shipping use.
+
+For an independently applicable `E.18` flow crossing or `A.21` gate, carry its required CrossingBundle or gate anchors into the shipped pack.
 **Builds on:** `G.Core` (Part‑G core invariants and delegation); upstream pack/kit governing definitions as cited publications or records (not redefined here).
 **Governs (scope boundary):** *shipping* of Part‑G outputs as a **pack** (`SoTA‑Pack(Core)`), including the pack‑level publication kit: (i) selector‑facing selection/parity roster, (ii) PathId/PathSlice citation surface, (iii) telemetry pins for refresh planning, and (iv) optional interop ingestion as citation‑only notes.
 **Does not govern:** governing spec refs (`CN‑Spec`, `CG‑Spec`), CHR/CAL semantics, selection semantics, evidence semantics, bridge calibration semantics, refresh orchestration (these remain with their governing definitions and are **cited**).
 
-### G.10:1 - Problem frame — Shipping without smuggling semantics
+### G.10:1 - Problem frame — Preserve meaning when shipping
 
-Part G produces many **kit-governed** and **suite-governed** publications or records (harvest packs, CHR/CAL packs, evidence graphs, bridge calibration records, log bundles, parity reports). Without an explicit **pack-boundary governing definition**, “shipping” tends to become:
+Part G produces many **kit-governed** and **suite-governed** publications or records (harvest packs, CHR/CAL packs, evidence graphs, bridge calibration records, log bundles, parity reports). Without an explicit pack boundary, shipping can become:
 
-* an ad‑hoc folder/export ritual (tool‑locked, not citable), or
+* a tool-specific export without citable contents, or
 * a silent re-specification step (shipping accidentally redefines legality, defaults, or selection semantics), or
 * a brittle hand‑off that cannot support RSCR/refresh (no actionable pins/editions/policies attached).
 
-`G.10` fixes the pack boundary: it defines the **single, normative shipping surface** for Part‑G outputs — **`SoTA‑Pack(Core)`** — and a minimal choreography for making shipped artefacts **selector‑ready** and **audit‑citable**, while delegating all Part‑G‑wide invariants to `G.Core` (citation/delegation, not restatement).
+`G.10` fixes the pack boundary: it defines the **single, normative shipping surface** for Part‑G outputs — **`SoTA‑Pack(Core)`** — and the composition steps needed to make shipped artefacts **selector-ready** and **audit-citable**. `G.Core` governs the shared invariants.
 
-### G.10:2 - Problem — Why naive shipping breaks reuse, legality, and refresh
+### G.10:2 - Problem — Failures of reuse, legality and refresh
 
-Naive shipping fails (conceptually) when any of the following occurs:
+Shipping fails when:
 
 1. **Format-as-governing-spec.** A concrete export format is treated as “the pack,” turning a tool choice into a governing pack definition.
 2. **Editionless hand‑offs.** Shipped artefacts omit the edition/policy pins required to replay or compare outcomes, so parity and RSCR become non‑actionable.
-3. **Pack smuggles semantics.** Shipping reintroduces “convenience” rules (hidden scalarisation, competing defaults, private gate decisions), fragmenting the governing spec ref.
-4. **Invisible crossings.** Cross-context or cross-plane reuse is present, but the pack does not expose the crossing bundles and penalty policy pins needed for audit and refresh planning.
+3. **Shipping changes the rules.** The pack adds local rules (hidden scalarisation, competing defaults, private gate decisions), fragmenting the governing spec ref.
+4. **Invisible crossings.** An actual correspondence, flow crossing or gate lacks the grounds, bundle anchors or policy pins required for its receiving use.
 5. **No method‑of‑obtaining‑output disclosure.** Consumers receive outcomes without a minimal, citable trail of *which methods, mechanisms, and policies were used, at which editions, to obtain them*.
 6. **Refresh orphaning.** Telemetry and decay signals exist, but the shipped artefact provides no stable scope keys (`PathId` / `PathSliceId`) and no payload pins for RSCR triggers.
 
@@ -89,11 +90,11 @@ Effective obligations/pins/triggers are computed as **union(expand(sets), explic
 
   `MOOManifestId?` *(method‑of‑obtaining‑output disclosure; conceptual object id)*
   }
-  *(Optional pins from `CrossingVisibilityPins` MAY be strengthened to unconditional by listing them above; `G.10` typically strengthens `UTSRowId[]` and path/crossing bundles when the pack is publicly shipped.)*
+
 
 * `TriggerAliasMapRef` := `∅` *(canonical trigger ids are used directly)*
 
-> **Mode‑specific definition pins.** Any additional pins required for QD/OEE/interop shipping are introduced only by `GPatternExtension` blocks in `G.10:4.6` (never smuggled into the core linkage).
+> **Mode-specific definition pins.** Use the applicable `GPatternExtension` blocks in `G.10:4.6` for additional QD/OEE/interop pins.
 
 #### G.10:4.2 - `SoTA‑Pack(Core)` object model (normative; notation‑independent)
 
@@ -204,12 +205,12 @@ The `selectorOutcomeKind`, `setResultFamily`, `handoffKind`, `sourceSetFamily`, 
 
 **Interpretation constraints (normative by delegation).** Any universal invariants governing (i) CN/CG spec-ref governing-definition assignment, (ii) crossing visibility and penalty routing, (iii) tri‑state guards, (iv) set‑return semantics, (v) P2W split, (vi) defaults, and (vii) RSCR trigger typing are **not restated here** and are enforced via `G.Core` conformance (see `CC‑G10‑CoreRef`).
 
-#### G.10:4.3 - Shipping choreography (normative; governing-definition delegating)
+#### G.10:4.3 - Shipping procedure (normative)
 
-`G.10` prescribes a minimal, governing-definition delegating sequence for composing a shipped pack:
+Compose the pack while preserving the cited definitions:
 
 1. **S‑1 — Gather & pin.** Collect upstream artefact ids and verify the **required pins** implied by the linkage manifest (edition pins, policy pins, UTS/Path pins).
-2. **S‑2 — Compose `SoTA‑Pack(Core)` + MOO disclosure.** Assemble the pack object and attach a **`MOOManifest`** that lists the referenced methods, mechanisms, and policies used, at their exact editions, to obtain the shipped outcomes (ids only; semantics stay with governing definitions).
+2. **S‑2 — Compose `SoTA‑Pack(Core)` + MOO disclosure.** Assemble the pack object. For shipped outcomes intended for downstream use, attach a **`MOOManifest`** listing the methods, mechanisms and policies used to obtain them at their exact editions (ids only; semantics stay with governing definitions).
 3. **S‑3 — Publish selection/parity roster (selector‑facing).** Except when the inputs-only presence-rule exception in §4.2.1 is used, produce a selector‑readable `PortfolioRosterId` with the parity/definition pins required for reproducibility; do not mandate formats.
 4. **S‑4 — Anchor and publish path citations.** Ensure A.10 anchors exist and publish/record `PathId/PathSliceId` citations required for downstream explainability (e.g., the `C.23` W2 `AdmissibilityLedger`) and maturity rung changes.
 5. **S‑5 — Expose CrossingBundle.** For each GateCrossing relevant to the shipped artefacts, expose the required `CrossingBundle` references (fail fast on missing or non‑conformant bundles when required).
@@ -311,18 +312,12 @@ All method‑/generator‑/interop‑specific shipping extension declarations li
 **Notes (shipping-pin discipline):**
 * This block only records that an interop surface contributed to the shipped pack’s provenance; it does not redefine any crosswalk semantics.
 
-#### G.10:4.7 - Published surfaces must ship kind, source, derivation, lens, and shortlist token
+#### G.10:4.7 - Metadata for shipped results and source views
 
-- Published surfaces should carry the subject kind, source set kind, and relevant declared surface pins. When a selector outcome is shipped, they should also carry its outcome kind and, when applicable, the set-result kind or handoff kind.
-- These are publication payload metadata fields inside `SoTA-Pack(Core)`, not publication face kinds, publication form kinds, interop publication form kinds, or carrier kinds.
-- Good publication fields include `selectorOutcomeKind`, `setResultFamily`, `handoffKind`, `subjectKind`, `sourceSetFamily`, `sourceSetComposition`, `dominanceRegime`, `lensId`, `shortlistId`, and any declared archive or promotion-policy ids that the reader needs to interpret the visible set.
-- Those payload fields should use controlled tokens, cited ids, or already-declared head labels rather than shipping-local prose values.
-- When the visible surface or the shortlisted source is one derived tradition view, also publish the derivation explicitly.
-- Useful additional fields there include `derivedViewKind`, `basePaletteRef`, and the declared `qId` or reachability rule id that disciplined that derivation.
-- `portfolioMode` may remain as one support field about selector operation, but it should not stand in for the public set label.
-- A published surface should mirror semantics that are already declared in the governing palette, front, archive, or shortlist language.
-- It should not redefine that semantics locally.
-- When one shipped surface still needs a plain-language label, use the declared set-result kind and source set rather than falling back to `portfolioMode`.
+Ship the metadata the receiver needs to interpret the visible result: subject and source-set kind, the declared surface pins, and any shipped selector outcome's `selectorOutcomeKind`, `setResultFamily` or `handoffKind`. Use controlled tokens, cited ids or already declared head labels. The roster may carry `subjectKind`, `sourceSetFamily`, `sourceSetComposition`, `dominanceRegime`, `lensId`, `shortlistId` and applicable archive or promotion-policy ids; include those that change interpretation.
+
+For a derived tradition view, retain `derivedViewKind`, `basePaletteRef` and its declared `qId` or reachability/coverage rule. `portfolioMode` describes selector operation; the declared result kind and source set supply the public label. These fields carry the governing palette, front, archive or selected-set meaning inside the publication. They neither redefine it nor name publication-face, publication-form, interop-form or carrier kinds.
+
 
 ##### G.10:4.7.1 - Worked publication slice
 
@@ -341,7 +336,7 @@ All method‑/generator‑/interop‑specific shipping extension declarations li
 **Benefits**
 
 * A shipped result becomes **selector‑ready** and **audit‑citable** without turning file formats into governing specifications.
-* Shipping is no longer a semantic “backdoor”: pack‑level semantics remain governing-definition delegated.
+* Shipping preserves the semantics of the cited outputs and their governing definitions.
 * RSCR/refresh becomes operationally viable because pack‑level scope keys and payload pins are present.
 
 **Costs / trade‑offs**
@@ -351,24 +346,23 @@ All method‑/generator‑/interop‑specific shipping extension declarations li
 
 ### G.10:6 - Bias‑Annotation (informative)
 
-Bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
 
 * **Format bias (Arch/Prag).** A popular export format is tempting to treat as “the pack”.
   *Mitigation:* keep Core surfaces conceptual (E.5.2); move serialisation recipes to Annex/Interop; keep conformance on semantics.
 * **Centralisation bias (Gov).** A single pattern governing shipping semantics can become a bottleneck.
   *Mitigation:* keep shipping as one explicit governing-pattern responsibility, but push mode/method specifics into explicit `G.10:Ext.*` extension blocks and cite governing patterns.
-* **Telemetry→dominance bias (Onto/Prag).** Shipping pipelines often “promote” telemetry proxies (illumination/coverage) into ranking.
+* **Telemetry→dominance bias (Onto/Prag).** Promoting telemetry proxies (illumination/coverage) into ranking changes the interpretation of the shipped result.
   *Mitigation:* preserve the telemetry/order separation and require explicit CAL policy‑id for any promotion; record the policy‑id in audit pins/telemetry.
 * **Interop authority bias (Onto/Epist).** External indexes can silently override local legality/typing.
   *Mitigation:* `G.10‑7` ingests interop only as cited notes (editions + mapping policy refs), never as a replacement governing spec ref.
 
-### G.10:7 - Archetypal grounding (informative; post‑2015 method families)
+### G.10:7 - Archetypal grounding
 
 **World‑plane (benchmark shipping).**
-A team working within a CG‑Frame ships a selected set that includes a QD archive (e.g., MAP‑Elites‑class / CMA‑ME‑class families) and a generator family (e.g., POET‑class environment generation). The shipped `SoTA‑Pack(Core)` cites the CHR/CAL packs and records the QD/OEE extension-required pins through the extension blocks so that downstream parity and refresh can be scoped to the affected `PathSliceId`s rather than forcing a global rebuild.
+A team working within a CG-Frame ships QD archive results (for example, from MAP-Elites-class or CMA-ME-class methods), a declared selector outcome derived from them, and generator-family results (for example, from POET-class environment generation). The shipped `SoTA‑Pack(Core)` cites the CHR/CAL packs and records the QD/OEE extension-required pins through the extension blocks so downstream parity and refresh can locate the affected `PathSliceId`s and reconsider their dependent uses.
 
 **Episteme‑plane (synthesis shipping).**
-A team working within a CG‑Frame ships a pluralistic set of admissible methods gathered from post‑2015 literature streams (living review + synthesis pack). The shipped pack carries explicit CN/CG spec refs, evidence path citations, and method‑of‑obtaining‑output disclosure; downstream selection uses set‑valued outcomes, and refresh can be scheduled when the synthesis pack or key pins change.
+A team working within a CG‑Frame ships a pluralistic set of admissible methods supported by a literature review and synthesis pack. The shipped pack carries explicit CN/CG spec refs, evidence path citations, and method‑of‑obtaining‑output disclosure; downstream selection uses set‑valued outcomes, and refresh can be scheduled when the synthesis pack or key pins change.
 
 ### G.10:8 - Conformance checklist (CC‑G10)
 
@@ -378,7 +372,7 @@ This pattern inherits order/illumination, evidence, and bridge/penalty legality 
 | --- | ----------- | -------------------------------- |
 | **CC‑G10‑CoreRef** | The pattern satisfies the **effective** `G.Core` obligations declared by `G.10:4.1` (after profile/set/pin‑set expansion under `Nil‑elision`). | Check that the linkage manifest is present and that the expanded obligations are not contradicted. |
 | **CC‑G10.1 (Notation‑independent).** | The pack MUST NOT rely on any specific file syntax; cards/tables are conceptual; tool serialisations are informative only. | Look for format‑free conceptual fields; any serialisation is explicitly non‑normative. |
-| **CC‑G10.2 (Pack parity pins).** | If QD/OEE fields are present, pin `DescriptorMapRef.edition`, `DistanceDefRef.edition`, and (OEE) `TransferRulesRef.edition`; when a shipped field actually consumes a C.21 DHC coordinate, carry every active field of that coordinate's `DHCReplayBasis` instead of a generic method-spec or metric-edition pin. Include `CharacteristicSpaceRef` (+ `CharacteristicSpaceRef.edition` when it affects partitioning reproducibility); for QD archive semantics also pin `EmitterPolicyRef` and `InsertionPolicyRef`. | Verify the corresponding `G.10:Ext.*` block is present and the pins appear in AuditPins and (when relevant) in telemetry pins. |
+| **CC‑G10.2 (Pack parity pins).** | If QD archive fields are present, pin `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `EmitterPolicyRef` and `InsertionPolicyRef`. Include `CharacteristicSpaceRef` when archive partitioning is declared, with its edition when that affects reproducibility. OEE fields pin `TransferRulesRef.edition` under their own extension. When a shipped field consumes a C.21 DHC coordinate, carry every active field of that coordinate's `DHCReplayBasis`. A non-QD generator use does not acquire QD descriptor or archive pins. | Verify the corresponding `G.10:Ext.*` block is present and the pins appear in AuditPins and (when relevant) in telemetry pins. |
 | **CC‑G10.3 (Telemetry discipline).** | Any illumination increase or archive edit SHALL log `PathSliceId`, the active `policy‑id`, the active editions of the pinned `…Ref` fields (incl. OEE `TransferRulesRef.edition`), and the active `EmitterPolicyRef`/`InsertionPolicyRef` when applicable. | Verify emitted telemetry is PathSlice‑keyed and carries the required pins; ensure causes are recorded using canonical trigger kinds (alias labels optional only). |
 | **CC‑G10.4 (UTS publication & twins).** | Shipped heads use UTS Tech/Plain twins under the delegated publication rule. A shipped cross-context semantic-use claim cites its obtaining relation, separate bounded-use proposition and matching reliance; calibration summaries keep their evidence role. Kind and plane claims retain their own governors. | Verify the published names and exact relation/use evidence; a visible CL or policy pin alone is insufficient. |
 | **CC‑G10.5 (MOO surfaced in shipping).** | For every declared selector set-result or archive published, the pack SHALL list the applicable generation/parity method and mechanism ids (e.g., QD `EmitterPolicyRef`/`InsertionPolicyRef`, parity harness ids, method refs where the method definition is generative) and the active policy‑id(s) in SCR‑visible bindings and telemetry pins (ids only; governing-definition delegating). | Verify `MOOManifestId` is present when outcomes are intended for downstream use and does not redefine semantics. |
@@ -394,16 +388,16 @@ This pattern inherits order/illumination, evidence, and bridge/penalty legality 
 * **AP‑2 Hidden edition drift.** Remedy: require `…Ref.edition` pins in AuditPins and treat edition changes as RSCR‑relevant via canonical trigger kinds.
 * **AP‑3 “QD archive present” but missing definition pins.** Remedy: enforce `CC‑G10.2` and the `G.10:Ext.QDArchiveShippingPins` pin declarations.
 * **AP‑4 Telemetry silently becomes dominance.** Remedy: keep telemetry report‑only unless an explicit CAL policy promotes it; require policy‑id recorded (ties to `CC‑G10.3` and MOO discipline).
-* **AP‑5 No PathSlice key → refresh becomes global.** Remedy: enforce PathSlice‑keyed telemetry and path citations (`G.10‑5`, `G.10‑6`).
+* **AP-5 Missing required PathSlice key.** Remedy: enforce PathSlice‑keyed telemetry and path citations (`G.10‑5`, `G.10‑6`).
 * **AP‑6 Cross-context reuse without its required grounds or anchors.** Remedy: cite the actual relation and the receiving-use and reliance grounds required by its governor; include calibration and policy pins when that account requires them. For an independently applicable `E.18` flow crossing or `A.21` gate, expose its required bundle or gate anchors and fail on missing or non-conformant ones (`CC‑G10.7`, `CC‑GCORE‑CROSS‑1`).
 * **AP‑7 Interop ingestion rewrites semantics.** Remedy: ingest interop as cited notes only; semantics remain in `G.13` (`G.10‑7`, `G.10:Ext.InteropCitation`).
 * **AP‑8 Derived-view collapse.** Remedy: ship `sourceSetFamily`, `derivedViewKind`, `basePaletteRef`, and the declared `Q` or reachability basis with enough explicitness that one derived tradition view cannot masquerade as the default palette meaning.
 
-### G.10:8.2 - SoTA‑Echoing (post‑2015, for orientation)
+### G.10:8.2 - SoTA-Echoing
 
-* **Research‑object packaging & provenance.** Post‑2015 practice increasingly treats “release artefacts” as *packages with explicit provenance, versions, and minimal replay pins* (e.g., modern research‑object and RO‑Crate‑class approaches). `G.10` mirrors the “package‑as‑citation‑surface” idea while keeping semantics governing-definition delegated.
-* **Reproducibility regimes in ML/AI.** Contemporary reproducibility checklists, artifact evaluation/badging, and benchmark reporting norms motivate: explicit version pins, explicit method disclosure, and separating telemetry summaries from decision criteria unless policy‑promoted.
-* **Scholarly KG interoperability.** ORKG/OpenAlex‑class ecosystems highlight the need to treat external mappings as *interop notes with editions*, not as replacement governing spec refs — matching the `G.10‑7` and `G.10:Ext.InteropCitation` stance.
+* **Research‑object packaging & provenance.** Research-object and RO-Crate approaches package outputs with provenance and version information. G.10 uses that packaging idea as a citation surface for independently governed outputs.
+* **Reproducibility regimes in ML/AI.** Reproducibility checklists, artifact evaluation and benchmark reporting motivate explicit version pins, explicit method disclosure, and separating telemetry summaries from decision criteria unless policy‑promoted.
+* **Scholarly KG interoperability.** For external mappings from systems such as ORKG or OpenAlex, `G.10-7` and `G.10:Ext.InteropCitation` retain index editions and mapping policies as cited notes. FPF legality and typing keep their own governing definitions.
 
 ### G.10:9 - Relations
 

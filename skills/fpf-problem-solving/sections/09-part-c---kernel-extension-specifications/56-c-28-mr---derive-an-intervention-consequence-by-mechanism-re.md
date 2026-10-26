@@ -64,7 +64,7 @@ For a randomized replacement, give its randomization law and its dependence on e
 
 Keep a replacement's scope visible in time. In a discrete-time model, identify the affected update steps. In an event-driven model, identify the triggering condition and the state change it initiates. A.3.3.TR helps construct the relevant continuation rule from interactions, events and subject laws when that rule is missing.
 
-At the physical interpretation, ask whether the proposed action also changes another modeled mechanism. Changing a supply command and attaching a device that forces its output can have different consequences for current limits and other connections. Add the relevant effects before using the modified model to answer that physical question.
+For physical interpretation, ask whether the proposed action also changes another modeled mechanism. Changing a supply command and attaching a device that forces its output can have different consequences for current limits and other connections. Add the relevant effects before using the modified model to answer that physical question.
 
 #### C.28.MR:4.4 - Solve what the intervention query requires
 
@@ -74,7 +74,7 @@ Check the transformed relations themselves when a replacement can change existen
 
 For probabilistic results, the selected solutions must define the requested random quantity under the input law. Existence of one numerical trace supplies less than a uniquely determined distribution. A general proof is unnecessary when a direct finite calculation settles the present query.
 
-For a dynamically triggered jump, recover the event-order or flow/jump choice if it changes the result. A model's steady-state solution alone does not determine what happens during a transient. The hybrid-system approach discussed in :11 supplies one current treatment with explicit conditions; the subject model still determines which treatment is appropriate.
+For a dynamically triggered jump, recover the event-order or flow/jump choice if it changes the result. A model's steady-state solution alone does not determine what happens during a transient. The hybrid-system approach discussed in :11 supplies one treatment with explicit conditions; the subject model still determines which treatment is appropriate.
 
 #### C.28.MR:4.5 - Calculate the consequence under the retained conditions
 
@@ -142,7 +142,7 @@ The examples illustrate derivation under supplied assumptions. They do not estim
 
 ### C.28.MR:7 - Conformance Checklist
 
-- The intervention and queried consequence identify the same modeled subject, population and relevant time.
+- The intervention and queried consequence refer to the intended model and population, with their times or horizon explicit where they affect the answer.
 - The replaced equation or rule is recoverable, including any inputs used by a policy or randomizer.
 - Other mechanisms remain in force; their values are recomputed where the replacement affects them.
 - The joint input law and common causes needed by the query survive the computation.
@@ -197,6 +197,6 @@ The synthesis retains ordinary substitution as the small executable case, adds t
 - **A.3.3.TR** constructs continuation rules from interactions, operations and subject laws when time or events matter to the replacement.
 - **B.5.MPC** connects the physical account, mathematical construction, computation and observation used to interpret the consequence.
 - **B.5.RR** revises the affected reasoning when a premise or mechanism changes.
-- **C.29.1** checks transfer of a mathematical result into another representation or use; the current member constructs the intervention result that can later be transferred.
+- **C.29.1** checks transfer of a mathematical result into another representation or use; this member constructs the intervention result that can later be transferred.
 
 ### C.28.MR:End

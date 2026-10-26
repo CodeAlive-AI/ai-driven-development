@@ -6,7 +6,7 @@
 
 ### E.24.CD:0 - Use This When
 
-Use this pattern when a recurring word, card, table, schema, diagram, record, draft pattern row, or field bundle looks like a new FPF subject and the author must decide what to do next.
+Use this pattern when a recurring expression or visible form, such as a card or schema, appears to name a new FPF subject and the author must decide what to do next.
 
 Typical moments:
 
@@ -55,7 +55,7 @@ Without an explicit first-use disposition:
 | --- | --- |
 | Early recognition vs premature ontology | A recurring concern should be noticed, but recurrence alone must not mint a durable subject or `U.*` kind. |
 | Visible form vs governed subject | A form can reveal the problem while remaining an episteme, publication form, representation, carrier, or local record. |
-| Direct reuse vs shared coordination | Existing patterns should carry their own claims; E.24 opens only when dependent patterns need one stable subject identity and minimal relation set. |
+| Direct reuse vs shared coordination | Existing patterns carry their own claims; concrete duplication or disagreement across named consumers can require E.24 to decide whether shared ontology is needed. |
 | First-use affordability vs adequate discrimination | The author needs a quick choice, but the choice must still separate direct use, local classification, publication, wording, and durable admission. |
 | Traceability vs registry growth | A disputed choice may need one explanatory sentence; it does not need a standing candidate catalogue. |
 
@@ -114,7 +114,7 @@ Open E.24 when these detection facts are recoverable:
 - the named consumers that make shared coordination plausible; and
 - why one obvious direct-pattern route does not already close the blocked use.
 
-Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, declared use, and its applicability limits. If a required entry fact or settlement condition cannot be established, E.24 may return its unresolved result. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
+Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, declared use, and its applicability limits. A missing settlement condition may lead to E.24's unresolved result; a missing detection fact instead leaves the E.24.CD inquiry open. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
 
 A plainly direct case still stops at its subject pattern. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but without a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers, and failure of an obvious direct route, they do not open E.24.
 
@@ -134,9 +134,9 @@ Any denied reading must pass `F.19`'s grounded-contribution test. Use a longer e
 
 #### E.24.CD:5.1 - A candidate that genuinely opens E.24
 
-Before `C.2.1`, “description”, “view”, “claim set”, and “publication” repeatedly pointed to a claim-bearing object used across many patterns. The practical need was stable claim identity across description, evaluation, reference, and publication work. Existing patterns could not supply that shared identity and relation set independently.
+Consider a library under development in which “description”, “view”, “claim set”, and “publication” repeatedly point to a claim-bearing object used across many patterns. The named consumers need stable claim identity across description, evaluation, reference, and publication work, but their current rules leave conflicting identity claims. No obvious direct-pattern route closes that gap.
 
-That case opens E.24. E.24 then decides the durable ontic; C.2.1 governs the resulting `U.Episteme`; E.17.0, E.24.PUB, F.18, and C.29 keep viewpoint conformance, publication, naming, and representation separate. Cards and files do not become the episteme.
+Those facts open E.24 to test the proposed shared identity and relation set. FPF's episteme ontology illustrates the resulting division of responsibility: C.2.1 governs `U.Episteme`; E.17.0, E.24.PUB, F.18, and C.29 keep viewpoint conformance, publication, naming, and representation separate. In current FPF, use those established rules directly when they close the case. Cards and files do not become the episteme.
 
 #### E.24.CD:5.2 - Local cooling-pump classification
 
@@ -183,7 +183,7 @@ Treat the schema as source material, not as an ontology. A proposal episteme, me
 
 Not every row has every listed object, not every filled field is claim-bearing, and co-presence in one row does not constitute a larger subject. The filled row is one C.2.1 episteme only when one exact ClaimGraph forms a claim-bearing whole about one truthful exact EntityOfConcern under one effective ReferenceScheme. Otherwise keep the epistemes separate and state only the exact collection, publication, representation, or meeting-use relation that actually obtains.
 
-The column arrangement is a publication form only when selected to express an identified episteme for the meeting. The form is not a `U.ChangeItem`, and its columns are not ontic slots. If the project later needs a local kind of records for a query, `C.3.2` may classify those records as records. If several FPF patterns later demonstrate a different shared durable subject with its own identity and minimal relation set, that evidence can reopen `E.24`; the schema's shape cannot.
+The column arrangement is a publication form only when selected to express an identified episteme for the meeting. The form is not a `U.ChangeItem`, and its columns are not ontic slots. If the project later needs a local kind of records for a query, `C.3.2` may classify those records as records. If a later blocked use has an independently recoverable inquiry subject, named consumers and concrete cross-pattern duplication or disagreement that one obvious direct route cannot close, open `E.24` to test the proposed shared subject. The schema's shape supplies none of those facts.
 
 #### E.24.CD:5.5 - Current configuration around a holon
 
@@ -239,7 +239,7 @@ This pattern intentionally biases toward early recovery of the real subject and 
 - **scoring bias:** rating a candidate before its subject, identity rule, direct relations, and practical use are known;
 - **semio-bias:** discussing forms and labels while the governed subject and claim disappear.
 
-The mitigation is concrete: name the work, subject, needed claim, pattern that states it, applicable disposition, next action, and stop or return. Open E.24 only when several named patterns need the same subject identity or relation rules.
+The mitigation is concrete: name the work, subject, needed claim, pattern that states it, applicable disposition, next action, and stop or return. Open E.24 from the detection facts in section 4.3; the identity rule and relation set remain its settlement question.
 
 ### E.24.CD:7 - Conformance Checklist
 
@@ -275,7 +275,7 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | Local-kind inflation | A useful project criterion is promoted to durable public ontology. | Use C.3.2 and keep the local kind, declaration, judgment, and extension distinct. |
 | Registry trap | The author keeps a list of possible ontics without deciding the blocked case. | State the work, apply one truthful subject pattern or name one precise unresolved stop, and stop. |
 | Scoring before identity | A score form is filled before the subject and direct relation gap are known. | Recover the subject, identity rule, dependent uses, and missing coordination; use A.19.ECS only for an actual comparison. |
-| Repetition-as-admission | Several forms or patterns share a label, so an ontic is inferred. | Require the E.24 entry facts: one subject identity and minimal relation set reused by named dependent patterns. |
+| Repetition-as-admission | Several forms or patterns share a label, so an ontic is inferred. | Require the detection facts in section 4.3: a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers and no sufficient obvious direct route. Let E.24 settle identity and the relation set. |
 | Negative-catalogue repair | The text lists only what the candidate is not. | State the positive subject, claim, direct pattern, and next action. |
 
 ### E.24.CD:9 - Consequences
@@ -298,7 +298,7 @@ Costs:
 
 Ontic candidates rarely arrive as pure ontology. They appear through the forms people use: project tables, cards, schemas, diagrams, source packets, draft rows, examples, and repeated words. Those forms reveal working concerns, but they do not decide what exists, what relation obtains, or what FPF kind is needed.
 
-The pattern therefore asks for one first-use disposition instead of a candidate record. Keep direct claims in their direct patterns; use C.2.1 only when one exact ClaimGraph, one truthful EntityOfConcern, and one effective ReferenceScheme constitute an episteme; and use C.3.2 for local classification. Keep publication in E.24.PUB and representation in C.29. Use C.2.P.DR to block action inferred from declarative form; resolve ambiguous wording through A.6.RSIR, A.6.F, A.6.P, or E.10; and name only an already governed value through F.18. Open E.24 only when named dependent patterns need one stable subject identity and minimal relation set that those simpler applications cannot preserve.
+The pattern therefore asks for one first-use disposition instead of a candidate record. Keep direct claims in their direct patterns; use C.2.1 only when one exact ClaimGraph, one truthful EntityOfConcern, and one effective ReferenceScheme constitute an episteme; and use C.3.2 for local classification. Keep publication in E.24.PUB and representation in C.29. Use C.2.P.DR to block action inferred from declarative form; resolve ambiguous wording through A.6.RSIR, A.6.F, A.6.P, or E.10; and name only an already governed value through F.18. Open E.24 when the detection facts in section 4.3 make shared ontology a live question that those simpler applications do not close.
 
 This order keeps the first move affordable and falsifiable. Another author can see which fact selected the applicable pattern or unresolved stop and what to do next. A list of candidate fields or scores would make the form look authoritative and invite optimization of the record instead of settlement of the subject.
 

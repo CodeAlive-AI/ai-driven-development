@@ -10,7 +10,7 @@
 
 Use this pattern when claim-bearing wording uses *role* and the current sentence does not yet reveal which object or relation it means.
 
-> A **system role** is a context-local kind for an entity already admitted under A.1 as a `U.System`, which may be a person, team, organization, or non-human technical object. The name creates no admission, assignment, agency, capability, or Work.
+> A **system role** is a local kind whose candidates are independently admitted `U.System` individuals, such as a person, team, organization or non-human technical object. Its membership condition distinguishes a stable, assignable, work-facing contribution under A.2 and C.3. The name creates no admission, assignment, agency, capability, or Work.
 
 A **system-role assignment** is one exact occurrence under `U.SystemRoleAssignment`. The bare word *role* identifies neither object.
 
@@ -66,7 +66,7 @@ If recovery shows that the same bounded phrase carries several distinct claims a
 
 | Current claim recovered from the wording | Required result and next action |
 |---|---|
-| One exact local work-facing system-role kind, or a technical claim that one admitted system counts under it | For kind recovery, use C.3 and A.2 to identify one exact context-local system-role kind; a durable local designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`. For a current classification judgment, use A.2 and C.3.2 and keep the admitted candidate system, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` result recoverable. Kind admission is not the classification judgment. |
+| One exact local work-facing system-role kind, or a technical claim that one admitted system counts under it | For kind recovery, use C.3 and A.2 to identify one exact local system-role kind through its candidate domain, membership distinction and continuity rule; a durable local designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`. For a current classification judgment, use A.2 and C.3.2 and keep the admitted candidate system, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` result recoverable. Kind admission is not the classification judgment. |
 | One obtaining assignment of an admitted system to that kind | Recover one occurrence of an exact direct species under `U.SystemRoleAssignment` through A.2.1. Assignment creates neither system admission, another classification, capability, participation, responsibility, nor Work. |
 | “The system as reviewer” or similar readable designation | Keep the readable actor designation when it carries the needed ordinary claim. Recover exact system identity, a separately obtaining classification, or an assignment only when the receiving claim uses that distinction. Create no `SystemInRole` individual. |
 | Participant meaning or actual participant of a direct relation | Use `A.6.RSIR` and the pattern for that direct relation. State the participant meaning and actual participant without calling either a system role. |
@@ -123,7 +123,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal
 1. Is *role* being used in a claim, rather than only in ordinary or quoted wording?
 2. Does the repaired ordinary sentence name the recognizable object and action or relation?
 3. Was the result selected from the recovered claim rather than from the word alone?
-4. If a system-role kind is current, are its local boundary and stable contribution distinction recoverable through C.3 and A.2? If a technical classification claim is current, are the candidate’s independent A.1 system admission, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` C.3.2 judgment separately recoverable?
+4. If a system-role kind is current, are its candidate domain, work-facing membership distinction, member/non-member boundary and continuity rule recoverable through C.3 and A.2? If a technical classification claim is current, are the candidate’s independent A.1 system admission, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` C.3.2 judgment separately recoverable?
 5. If an assignment is current, can you identify both the assignment occurrence and its declared species? Does that species' direct predicate obtain for the actual participants, including the holder, under the stated applicability, and is the occurrence's extent recoverable? Is supporting evidence kept separate from whether the assignment obtains?
 6. Are participation, declaration slot, operation binding, interface place, and representation position kept distinct?
 7. Are functioning, capability, Work, deontics, access, authority, responsibility, evidence use, and results kept under their direct relations?
@@ -144,7 +144,7 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal
 
 ### E.10.ROLE:9 - Consequences — Reopen Condition
 
-**Benefits.** Cold readers can recover the intended object at the point of use. Natural practitioner language survives. Technical names become more precise without turning relation slots, evidence uses, or representation positions into system-role kinds.
+**Benefits.** The intended object is stated at the point of use while natural practitioner language remains available. Technical names distinguish system-role kinds from relation slots, evidence uses and representation positions.
 
 **Costs.** A claim-bearing ambiguous sentence needs one bounded interpretation before it can be reused. Some old compact Tech names must be retired or made explicitly historical.
 
@@ -154,7 +154,7 @@ Reopen this pattern only when an actual bare-*role* use cannot reach one exact o
 
 The recurring problem is word-sense recovery, not a missing universal role category. FPF therefore makes an internal architectural choice: recover the claim expressed in this use, then use the direct pattern for the recovered kind, assignment, participant, declaration place, representation position, or relation. The trigger word neither supplies that ontology nor makes the recovered claim obtain.
 
-The pattern therefore stays thin. It supplies an entry and a stop rule, while C.3, A.2, A.2.1, A.6.RSIR, A.6.5, C.29, A.10, A.15, and other direct patterns retain their own predicates and identity laws.
+The pattern supplies an entry and a stop rule, while C.3, A.2, A.2.1, A.6.RSIR, A.6.5, C.29, A.10, A.15, and other direct patterns retain their own predicates and identity laws.
 
 ### E.10.ROLE:11 - SoTA-Echoing
 

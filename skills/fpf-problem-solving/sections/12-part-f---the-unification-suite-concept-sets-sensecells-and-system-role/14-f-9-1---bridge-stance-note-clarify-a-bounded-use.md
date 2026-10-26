@@ -12,9 +12,9 @@
 
 **Start here when.** You already have the Bridge and its bounded-use claim, but a reader may still overread a phrase such as “operationalizes”, “projection”, or “roughly analogous”.
 
-**First useful move.** Point to the exact bounded-use claim and write one ordinary sentence: “For this named use, read the relation as `___`; do not infer `___`.” Choose a stance word only if it makes that sentence shorter and clearer.
+**First useful move.** Point to the exact bounded-use claim and write one ordinary sentence: “For this named use, read the relation as `___`.” Add a rejected overread only when it has an independent local ground and changes the intended reader's interpretation, as F.19 requires. Choose a stance word only if it makes the sentence shorter and clearer.
 
-**What goes wrong if missed.** A friendly gloss starts acting like proof of equivalence, permission to substitute, or evidence that a use happened. The opposite failure also occurs: authors build a second bridge taxonomy merely to explain how one already warranted use should be read.
+**What goes wrong if missed.** An interpretive gloss is treated as proof of equivalence, permission to substitute, or evidence that a use happened. The opposite failure also occurs: authors build a second bridge taxonomy merely to explain how one already warranted use should be read.
 
 **What this buys.** Readers get a compact caution or reading aid while the Bridge, proposed use, evidence, reliance, authorization, actual downstream act, and optional publication package remain separately checkable.
 
@@ -31,7 +31,7 @@ A bridge stance note is an ordinary C.2.1 episteme. It is not a U-kind and it is
 Its C.2.1 identity is settled as follows:
 
 - its `EntityOfConcern` is one exact F.9 bounded-use claim;
-- its `ClaimGraph` states the selected stance, the ordinary-language reading that stance abbreviates, and the nearest overread it rejects;
+- its `ClaimGraph` states the selected stance, the ordinary-language reading that stance abbreviates, and any grounded overread it needs to reject;
 - its effective `ReferenceScheme` supplies the local meanings of the stance wording.
 
 Changing the bounded-use claim, stance, material reading boundary, or effective scheme identifies another stance episteme. Rewording that preserves those values may be a new edition of the same claim-bearing account under the applicable C.2.1 edition rule. Changing how the note is published or found—for example, its Card, registry entry, file, or visual placement—does not reidentify it.
@@ -44,7 +44,7 @@ The underlying bounded-use claim remains primary. It names the obtaining Bridge,
 | --- | --- |
 | Readability and exactness | One short cue can help a reader, but the cue cannot carry the relation or use semantics by itself. |
 | Reuse and locality | A small vocabulary is reusable, while every stance still belongs to one exact bounded-use claim. |
-| Help and overread | A friendly gloss should aid interpretation without widening equivalence, substitution, authority, or reliance. |
+| Help and overread | A gloss should aid interpretation without widening equivalence, substitution, authority, or reliance. |
 | Loss emphasis and duplicate claims | A stance may foreground one material loss, but it should not restate or silently alter the bounded-use claim. |
 
 ### F.9.1:4 - Solution
@@ -67,7 +67,7 @@ Write the note in this order:
 - cite the bounded-use claim it explains;
 - state one plain reading of that claim;
 - name one primary stance when a reusable label helps;
-- state the nearest likely overread; and
+- state the nearest overread only when F.19's grounded-contribution test requires the correction; and
 - emphasize a material loss only when that emphasis changes how the reader should understand the claim.
 
 The stance note may cite evidence or a current A.10 or B.3 reliance result, but it does not create either. If the proposed direction, rule, tolerated loss, polarity, or reliance result changes, repair that object under F.9, A.10, or B.3 rather than editing the stance as a proxy.
@@ -94,9 +94,9 @@ A stance word carries no direction by itself. Direction belongs to the bounded-u
 - The stance note says how to read that one claim.
 - A claim that a comparison, translation, publication, Work occurrence or other downstream act occurred uses that object's subject pattern and evidence. When authorization is needed, recover it under the pattern that defines the permission or authority claim. The stance note establishes neither.
 
-A Bridge Card is optional claim-bearing packaging. A Card may publish the Bridge description, bounded-use claim, evidence references, reliance result, and stance note together, but the Card is not a prerequisite for any of them. The Card's layout and edition, and any publication occurrence or file carrying it, remain separate from the objects it brings together.
+A Bridge Card is optional claim-bearing packaging. A Card may package the Bridge description, bounded-use claim, evidence references, reliance result, and stance note together, but the Card is not a prerequisite for any of them. The Card's layout and edition, and any publication occurrence or file carrying it, remain separate from the objects it brings together.
 
-`CL` is optional F.9 shorthand for evidence strength about a stated correspondence. It is not a substitution threshold and does not rank the stance. A stance note may not turn `CL`, a loss note, or friendly wording into suitability or permission.
+`CL` is optional F.9 shorthand for evidence strength about a stated correspondence. It is not a substitution threshold and does not rank the stance. A stance note establishes neither suitability nor permission from `CL`, a loss note, or the gloss itself.
 
 #### F.9.1:4.5 - Preserve source return and coarsening boundaries
 
@@ -128,7 +128,7 @@ Two schools use different senses that share one explanatory pattern. For example
 
 #### F.9.1:5.5 - `nonEquivalent` is a warning, not a verdict generator
 
-An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table but not suitable for substitution. A `nonEquivalent` stance may make that limit easy to see. The label does not authorize a table or show that one was produced; nor does it make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
+An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table. A separate negative claim rejects the proposed substitution use. A `nonEquivalent` stance may make that limit easy to see. The label does not authorize a table or show that one was produced; nor does it make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
 
 #### F.9.1:5.6 - Anti-case: the gloss comes first
 
@@ -139,7 +139,7 @@ An affirmative bounded-use claim says that the Bridge is suitable for placing tw
 1. One exact F.9 Bridge obtains before the stance note is cited.
 2. One separately constituted bounded-use claim names the proposed use, direction, correspondence rule, tolerated loss, polarity, and effective scheme.
 3. The stance note is a separate C.2.1 episteme whose EntityOfConcern is that exact bounded-use claim.
-4. The note states a plain reading and nearest likely overread; a stance token is optional.
+4. The note states a plain reading; it includes a rejected overread only when F.19's grounded-contribution test requires it. A stance token is optional.
 5. The stance changes neither Bridge kind nor Bridge identity, claim identity or polarity, reliance, authorization, nor any downstream occurrence.
 6. A Card is optional packaging, not a prerequisite or source of truth.
 7. `CL`, observed loss, permitted loss, reliance, and stance remain distinct.
@@ -153,7 +153,7 @@ An affirmative bounded-use claim says that the Bridge is suitable for placing tw
 | --- | --- | --- |
 | Card-first entry | Packaging is made a prerequisite for relation or claim truth. | Start from the obtaining Bridge and exact bounded-use claim; add a Card only when reuse pays. |
 | Stance as Bridge kind | The gloss competes with F.9 relation semantics. | Keep the F.9 kind unchanged and make the stance a separate episteme about one use claim. |
-| Stance as licence | Friendly wording silently authorizes substitution or action. | State claim polarity and current reliance separately; apply the pattern that defines the needed authorization. |
+| Stance as licence | The gloss is used to authorize substitution or action. | State claim polarity and current reliance separately; apply the pattern that defines the needed authorization. |
 | `CL` as threshold | Evidence shorthand becomes a rule for use. | Keep `CL` in the evidence account and retain the exact use rule and tolerated loss in the bounded-use claim. |
 | Loss note as tolerance | An observed difference is treated as accepted loss. | Keep observed loss in evidence and permitted loss in the bounded-use claim. |
 | Several stance tags | Labels replace one intelligible sentence and hide incompatible readings. | Use one primary stance plus plain loss and boundary wording. |
@@ -164,7 +164,7 @@ An affirmative bounded-use claim says that the Bridge is suitable for placing tw
 
 **Benefits.** A reader receives one concise interpretive cue without losing the exact relation, use, evidence, or action boundary. Cards remain optional, and the same Bridge may support several independently judged uses and stance notes.
 
-**Costs.** Authors must identify the bounded-use claim before adding a stance. Some older card-first records need one extra claim reference and may lose a decorative stance that has no practical reader benefit.
+**Costs.** Authors must identify the bounded-use claim before adding a stance. A card-first record may need a reference to the bounded-use claim and removal of a stance that supplies no reader benefit.
 
 **Limits.** F.9.1 neither establishes a Bridge nor judges suitability, evidence, reliance, permission, performance, publication, or controlled coarsening. It explains one already constituted bounded-use claim.
 

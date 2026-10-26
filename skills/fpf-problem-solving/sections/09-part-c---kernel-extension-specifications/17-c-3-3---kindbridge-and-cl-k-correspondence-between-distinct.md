@@ -1,6 +1,6 @@
 ## C.3.3 - KindBridge and CL^k — Correspondence between Distinct Kinds
 
-> **One-line summary.** A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no `KindBridge` is needed. When two independently identified kinds are distinct and a directional correspondence predicate holds, one `KindBridge` direct relation may obtain. A separate bridge-assertion episteme states direction, paired declaration editions, preservation or loss, `CL^k`, evidence, and admitted use. It never transfers source classification truth.
+> **Summary.** A changed practice, source, team, or scheme first triggers a comparison of kind definitions. If the same kind continues, reuse it and evaluate the receiving candidate afresh; no `KindBridge` is needed. When two independently identified kinds are distinct and a directional correspondence predicate holds, one `KindBridge` direct relation may obtain. A separate bridge-assertion episteme states direction, paired declaration editions, preservation or loss, `CL^k`, evidence, and admitted use. It never transfers source classification truth.
 
 **Normativity:** Normative in **Part C**. Identifier **C.3.3**.
 
@@ -15,7 +15,7 @@
 - **C.2.2 — F–G–R:** justified bridge penalties affect reliance R, not F or G.
 - **C.2.3 — Formality assessment:** the assessed expression properties belong to the declaration or assertion episteme.
 
-**Non-goals.** No repository or notation mandate. No Scope mapping here. No bridge from a locality change alone. No transfer of classification truth. `CL^k` reuses an ordinal congruence anchor for a declared kind-correspondence use without becoming a universal interoperability score.
+**Use boundary.** Kind correspondence leaves scope translation and local-sense correspondence to their own patterns when needed. `CL^k` is an ordinal assessment for a declared kind-correspondence use, not a universal interoperability score.
 
 ### C.3.3:1 - Purpose and Audience
 
@@ -135,20 +135,20 @@ A typed receiving guard first determines whether the same kind continues or a di
 * **Fix the definedness area.** Bind to target Standards/versions and any environment selectors essential to classification.
 * **Assign `CL^k` from exemplars.** Calibrate on concrete counter‑examples and preserved properties; resist optimistic ratings.
 
-#### C.3.3:8.2 - Review playbook (10 minutes)
+#### C.3.3:8.2 - Review prompts
 
 1. **Identity checked first?** Same kind reused without a bridge, or two distinct kinds and the obtaining correspondence shown? Add Scope or F.9 relations only when the receiving use consumes them.
 2. **Order claims honest?** Any `⊑` inversions? Collapses disclosed?
 3. **`CL^k` plausible?** Based on preserved properties, not name similarity?
-4. **Loss notes present?** Will they force narrowing of Scope or extra tests?
-5. **Definedness area clear?** Guard will **fail closed** outside it?
-6. **Penalties wired to R?** No hidden tweaks to **F/G**?
+4. **Loss consequences clear?** Do they change the justified inference, require more basis or leave the intended use adequate?
+5. **Definedness area clear?** Outside it, does the guard decline this bridge use while preserving the independent classification result?
+6. **Reliance consequence justified?** Any numerical change to R needs its receiving model; F and G remain unchanged.
 
 #### C.3.3:8.3 - Rating `CL^k` (rules of thumb)
 
 * **High `CL^k`**: signature equivalence or **up‑to‑iso**; `⊑` fragment preserved; only cosmetic losses.
-* **Medium `CL^k`**: some invariants relaxed or lost; selected subkinds collapsed; order preserved on critical path.
-* **Low `CL^k`**: name‑only correspondences; properties diverge; order not preserved. Establish that the KB-01 correspondence predicate holds before bridge use, even for a name-only match. Expect significant **R** penalty and/or adapters.
+* **Medium `CL^k`**: some invariants relaxed or lost; selected subkinds collapsed; the source-order facts required by the use remain preserved.
+* **Low `CL^k`**: name-only correspondences; properties diverge; order not preserved. Establish that the KB-01 correspondence predicate holds before bridge use, even for a name-only match. Determine which inferences remain justified; narrow the use or repair the correspondence if a required distinction is lost. A numerical R penalty requires the receiving model under C.2.2/B.3.
 
 ### C.3.3:9 - Worked Examples (informative)
 
@@ -162,7 +162,7 @@ Frontend and gateway services use the same `AuthenticatedRequest` kind: the cand
 
 #### C.3.3:9.3 - AdultPatient across jurisdictions (clinical)
 
-The obtaining bridge relates source kind `AdultPatient` to independently identified target kind `AdultPerson_Y`. Its assertion gives `CL^k=1`, states the 18-versus-21 boundary loss, and limits definedness to the declared jurisdictional editions. The target classification uses its own signature edition. For an admissible candidate, missing DOB support yields `unknown`; a mask adapter or narrower Scope may support a later use, while the guard's refusal and R penalty remain separate from target truth.
+The obtaining bridge relates source kind `AdultPatient` to independently identified target kind `AdultPerson_Y`. Its assertion gives `CL^k=1`, states the 18-versus-21 boundary loss, and limits definedness to the declared jurisdictional editions. The target classification uses its own signature edition. For an admissible candidate, missing DOB support yields `unknown`. That result and a separate guard refusal can suffice for the present decision. If later classification is needed, obtain the required birth-date support; a claim restricted to an independently supported subset is another possible use. Neither narrowing the claim nor applying a justified R consequence turns the candidate's unknown classification into a true one.
 
 ### C.3.3:10 - Anti‑patterns & Remedies (informative)
 
@@ -170,7 +170,7 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 | -------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------- |
 | One interoperability score, or mandatory scope-plus-kind bridges | Blurs independent channels and invents unused relations | Open only the exact Scope, kind, and sense relations consumed by the receiving use; keep their losses and R consequences separate |
 | Claiming preserved `⊑` while inverting order | Makes typed reasoning unsound          | Mark as **not preserved**; add **loss note**; consider adapter or subkind redesign  |
-| Hiding collapses                             | Overstates coverage                    | List collapsed subkinds explicitly; plan the justified **R** penalty for lost granularity           |
+| Hiding collapses | Overstates coverage | State the collapsed subkinds and their consequence for the receiving use; apply only a justified R consequence. |
 | Implicit latest mapping | Non-deterministic and non-auditable | Pin both scheme editions and the mapping-rule edition in the bridge assertion; outside bridge definedness decline that bridge use without changing an independently obtained receiving result. |
 | Using KindBridge to widen G                  | Conflates kind correspondence with claim-scope translation | Keep Scope edits in **USM** (ΔG±); KindBridge never widens Scope                    |
 | Adjusting F/G for poor `CL^k`                 | Violates F–G–R & USM separation             | Route consequences to **R** only; consider narrowing Scope or adding adapters       |
@@ -191,7 +191,5 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 | **KB-10** | A comparable-link minimum remains a link summary; a claim about composed correspondence establishes joint definedness and preservation of the distinctions required by the receiving use, keeping occurrences and assertions distinct. |
 | **KB-11** | Loss notes state non-preserved criteria or subkind facts and do not change either kind. |
 | **KB-12** | Definedness is explicit; outside it the guard declines that bridge use while independent receiving classification keeps its own result. |
-
-**Integration requirements with Part B.** Part B distinguishes the C.3.3 kind-correspondence channel from scope and F.9 sense channels, routes justified `CL^k` consequences to R, and uses KB-10 for composition: comparable-link summaries remain separate from established preservation through the chain. Templates designate exact relied-on relations and assertions; their fields create none of them.
 
 ### C.3.3:End

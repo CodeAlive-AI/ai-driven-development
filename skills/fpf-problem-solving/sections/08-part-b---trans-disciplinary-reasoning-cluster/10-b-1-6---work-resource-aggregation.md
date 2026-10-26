@@ -10,11 +10,11 @@
 
 **What goes wrong if missed.** Resource, effort, time, energy, or cost totals are read from methods, plans, dashboards, or phase labels without a dated work occurrence, resource ledger, and overlap policy.
 
-**What this buys.** A replayable chain that keeps the resource Characteristic, measurement work/result episteme, aggregation work/result, exact policy, work parthood/overlap, and provenance separately recoverable while preventing double counting.
+**What this buys.** The practitioner can reconstruct a resource total from its measurements, Work set, overlap facts, policy, and provenance, and check whether shared use has been counted more than once.
 
 ### B.1.6:1 - Problem Frame
 
-Practitioners need to roll up work-resource claims across runs, exact A.15.1 Work temporal parts or episodes, teams, devices, stations, model-training epochs, non-Work carrier phases with an established identity and `PhaseOf` relation, or evidence-production occurrences. The recurring error is to treat a method, method description, plan, phase label, dashboard, or expected efficiency as if it were measured performed Work or as if the label established a Work relation.
+Practitioners need resource totals across identified Work occurrences and their A.15.1 temporal parts or episodes. A non-Work carrier phase can enter the account when its identity and `PhaseOf` relation are established. The recurring error is to treat a method, method description, plan, phase label, dashboard, or expected efficiency as if it were measured performed Work or as if the label established a Work relation.
 
 Use `B.1.6` for the work-resource aggregation claim. Treat dated work occurrence, Method, MethodDescription, WorkPlan, resource ledger, holon delimitation, transformation, evidence, and whole reidentification as separate claims under their applicable patterns.
 
@@ -80,7 +80,7 @@ Recover each of these objects and claims independently:
 - a distinct **C.2.1 aggregation-result episteme** states the result, work set, policy, boundary, time window, qualifications, and uncertainty; and
 - **A.10/G.6 provenance** makes the measurement sources, transformations, aggregation work, and result episteme replayable.
 
-A ledger, dashboard, policy, profile, clause, citation, or graph edge may represent or cite this chain. None establishes work occurrence, actual participation, measurement, aggregation, or result identity by presence.
+A ledger or other representation may describe this chain. Establish the Work, participation, measurements, aggregation, and result identities from their own grounds before relying on that description.
 
 #### B.1.6:2.1 - Subject Pattern Map
 
@@ -111,7 +111,7 @@ The notation applies only after the resource Characteristics, C.16 measurement W
 
 ### B.1.6:4 - Ledger Discipline
 
-The ledger is a replay surface, not the source of the aggregation claim. For every resource component it records:
+The ledger records the grounds needed to reconstruct the aggregation. For every resource component it records:
 
 - resource Characteristic, Scale, Unit, polarity when relevant, and accounting boundary;
 - exact measured or estimated subject, time window, and work occurrence to which the value applies;
@@ -205,26 +205,24 @@ Use `PortionOf` only for a resource portion with its A.14 measure and additivity
 
 This pattern defines a conservative predicate and result form for typed resource aggregation while keeping each input measurement, performed work occurrence, aggregation policy/application, result episteme, work relation, and provenance path distinct.
 
-The cost is explicit accounting discipline. The gain is that resource roll-ups become comparable without claiming more than the evidence and boundary relation allow.
+The cost is establishing the accounting basis. A comparison can then use totals whose measurements, boundaries, and aggregation policies are compatible, within the limits of their evidence.
 
 ### B.1.6:9.1 - Rationale
 
 `B.1.6` exists because a convenient total can hide several ontically different chains. Its result is obtained only after exact resource measurement, work-set and overlap grounding, an edition-pinned aggregation policy, and dated aggregation work. The ledger represents that recovered account.
 
-The pattern keeps the useful old `Gamma_work` notation, but only as notation over a recovered aggregation record. It also preserves the old planned-versus-measured warning: a method description or work plan can declare expected yield or expected resource use, but measured aggregation depends on dated work evidence.
+`Gamma_work` denotes the aggregation described by that account. A MethodDescription or WorkPlan can state expected yield or resource use; a measured aggregation requires evidence of dated Work and its resource use.
 
 ### B.1.6:9.2 - SoTA-Echoing
 
-Source qualification was checked against the publishers' current surfaces on 2026-07-30. Because ISO and GHG Protocol announced active joint development of an updated product-accounting standard in 2026, these decisions remain qualified only through 2027-01-30 unless a new draft, amendment, confirmation status, or published replacement appears earlier. Internal FPF neighbour authority stays in Relations; it is not presented as an external source decision.
+The following contributions are adapted from the cited editions for work-resource aggregation.
 
-| Exact source and source-use decision | Visible B.1.6 mutation | Rejected overread | Smallest source-change replay |
-| --- | --- | --- | --- |
-| [ISO 14040:2006 with Amendment 1:2020, confirmed current in 2022](https://www.iso.org/standard/37456.html), and [ISO 14044:2006 with Amendments 1:2017 and 2:2020, confirmed current in 2022](https://www.iso.org/standard/38498.html) — **adapt** goal/scope, system-boundary, inventory, allocation, reporting, and intended-use discipline to one exact work-resource aggregation. | `Exact policy`, `Overlap and shared stocks`, the engine-programme case, and `CC-B1.6-2/3` require boundary, work set, allocation, overlap/deduplication, output kind, and intended use before a total is admitted. | An LCA boundary, inventory table, category, or reported total does not establish FPF work parthood, measurement, aggregation work, result identity, or admissibility for every later use. | Reopen only `Exact policy`, `Overlap and shared stocks`, the engine-programme allocation paragraph, and `CC-B1.6-2/3` if ISO changes boundary or allocation requirements. |
-| [GHG Protocol *Product Life Cycle Accounting and Reporting Standard*, 2011](https://ghgprotocol.org/product-standard), including its allocation and double-counting requirements — **adapt** process subdivision/system expansion before allocation, physical or other justified allocation, and explicit double-count control for shared processes/stocks. | The ledger's shared-resource row, `Overlap and shared stocks`, the manufacturing-cell case, and `CC-B1.6-2/3` require an independently grounded overlap/shared-use fact and one edition-pinned allocation or deduplication rule. | Co-listing, a common meter, corporate/category membership, or a convenient allocation key does not prove disjointness, work structure, or a universal resource share. | Reopen only the shared-resource ledger row, `Overlap and shared stocks`, the manufacturing-cell case, and `CC-B1.6-2/3` when the joint ISO/GHG replacement changes shared-process allocation or double-count rules. |
-| [JCGM GUM-6:2020, *Developing and using measurement models*](https://doi.org/10.59161/JCGMGUM-6-2020) — **adapt** input-quantity, model-adequacy, covariance, and uncertainty-propagation discipline to the edition-pinned aggregation policy. | `Uncertainty and provenance`, the engine-programme case, and `CC-B1.6-1/3` require the input measurement uncertainties, correlations/conversions, propagation method, and qualified output uncertainty to remain distinct from provenance. | Adding source refs, estimates, or point totals does not propagate uncertainty; aggregation does not make incompatible models or quantities commensurable. | Reopen only `Uncertainty and provenance`, the engine-programme uncertainty sentence, and `CC-B1.6-1/3` if GUM changes model or propagation requirements. |
-| [ISO 80000-1:2022, *Quantities and units — Part 1: General*](https://www.iso.org/standard/76921.html) — **adapt** quantity-kind, unit, quantity-value, dimension, and coherent-unit discipline only for typed aggregation inputs and outputs. | `Typed resource basis`, the model-training case, and `CC-B1.6-1/3` keep joules, hours, mass, currency, bytes, and attention distinct unless an exact conversion/normalization and output kind are declared. | A shared numeral, unit label, normalized score, or vector slot does not authorize cross-kind addition, scalarization, efficiency, or comparability. | Reopen only `Typed resource basis`, the affected typed component in the model-training case, and `CC-B1.6-1/3` if ISO 80000 changes the mapped quantity/unit distinction. |
-
-Source refresh is local: replay the row's named rule, case, and checklist rows first. Widen only when that replay contradicts another current B.1.6 locus; a changed accounting source cannot by itself create work, overlap, measurement, result episteme, provenance, or a downstream verdict.
+| Source | Contribution to the method | Use boundary |
+| --- | --- | --- |
+| [ISO 14040:2006 with Amendment 1:2020](https://www.iso.org/standard/37456.html) and [ISO 14044:2006 with Amendments 1:2017 and 2:2020](https://www.iso.org/standard/38498.html) | Adapt goal/scope, system-boundary, inventory, allocation, reporting, and intended-use discipline. Declare the boundary, Work set, allocation and overlap policy, output kind, and intended use before relying on the total. | An LCA boundary or reported total does not establish FPF Work parthood, measurement, aggregation Work, result identity, or admissibility for every later use. |
+| [GHG Protocol, *Product Life Cycle Accounting and Reporting Standard* (2011)](https://ghgprotocol.org/product-standard) | Adapt process subdivision or system expansion before allocation, physical or other justified allocation, and double-count control for shared processes and stocks. Ground the shared-use or overlap facts and apply one identified allocation or deduplication policy. | A common meter or convenient allocation key does not establish disjointness, Work structure, or a universal resource share. |
+| [JCGM GUM-6:2020, *Developing and using measurement models*](https://doi.org/10.59161/JCGMGUM-6-2020) | Adapt input-quantity, model-adequacy, covariance, and uncertainty-propagation discipline. Retain input uncertainties, correlations and conversions, the propagation method, and qualified output uncertainty separately from provenance. | Source references and point totals do not propagate uncertainty; aggregation does not make incompatible models or quantities commensurable. |
+| [ISO 80000-1:2022, *Quantities and units — Part 1: General*](https://www.iso.org/standard/76921.html) | Adapt the distinctions among quantity kind, unit, quantity value, and dimension, and the use of coherent units, for typed inputs and outputs. Keep resource quantities distinct unless a conversion or normalization and output kind are justified. | A shared numeral, unit label, normalized score, or vector position does not justify cross-kind addition, scalarization, efficiency, or comparability. |
 
 ### B.1.6:10 - Relations
 

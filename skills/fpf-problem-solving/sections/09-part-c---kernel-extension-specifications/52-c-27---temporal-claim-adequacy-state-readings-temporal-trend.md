@@ -27,7 +27,7 @@ A local note can remain record-shaped claim content. Use E.24.PUB only when a pu
 | --- | --- | --- |
 | Dyn0 | a state or snapshot | ordinary prose; C.16 only when measurement construction matters |
 | Dyn1 | a rate, trend, trajectory, flow, throughput, tempo, or cadence | ordinary prose or a C.16 result |
-| Dyn2 | effort, input, policy, timing, resistance, feedback, or constraint is claimed to change a rate, rhythm, recovery, or regime | one small C.27 card |
+| Dyn2 | effort, input, policy, timing, resistance, feedback, or constraint is claimed to change a rate, rhythm, recovery, or regime | one small C.27 account, in ordinary prose or the card below |
 
 Dyn0, Dyn1, and Dyn2 classify authored claims. They do not classify Systems, teams, services, Methods, or practices as kinds of things.
 
@@ -82,7 +82,7 @@ Use the least-committing result that changes the receiving action.
 2. Cite the exact C.27.TA episteme or ClaimAddress that states the positive temporal aspect. C.27 does not redefine its bearer, predicate, temporal reference, window, coupling, or currentness.
 3. Classify the source claim as Dyn0, Dyn1, or Dyn2.
 4. If it is Dyn0 or Dyn1 and no intervention-sensitive use remains, stop or use C.16.
-5. If it is Dyn2, write the one-screen card below.
+5. If it is Dyn2, supply the one-screen account below; its required content can remain one readable sentence.
 6. Add a direct neighboring result only when the supported use relies on its distinction.
 7. If the claim cannot meet the small card, narrow it. Do not open a larger profile merely because the card exposed uncertainty.
 
@@ -141,7 +141,7 @@ Keep coasting and debt distinct. Coasting describes continued movement or stabil
 
 #### C.27:3.4 - Boundary-Crossing Header
 
-Most uses stop at the one-screen card. When an exact beyond-local use depends on another pattern result, add only this header and exact references:
+Most uses stop at the one-screen account. When a receiving use depends on another pattern result, add its exact reference and contribution to that same account. The following header can organize those references when they need to travel together:
 
 ~~~text
 Dyn2TemporalClaimProfileClaimContent
@@ -163,8 +163,6 @@ This profile remains ClaimGraph content in a C.2.1 adequacy episteme whose Entit
 Each activeNeighborResults entry names the actual result kind supplied by its direct pattern. Do not replace a C.16 measurement result, C.28 causal-use result, G.9 parity result, C.26.3 envelope-regulation claim, Work occurrence, evidence relation, or assurance claim with a generic C.27 field.
 
 ### C.27:4 - Archetypal Grounding
-
-The cases come before the rare trigger reference because they show where ordinary work should stop.
 
 #### C.27:4.1 - Backlog Reduction Planning
 
@@ -192,10 +190,10 @@ supportedUse:
 unsupportedUse:
   causal proof, long-term capacity model, or benchmark superiority
 reopenTrigger:
-  work-mix shift, saturation, quality loss, or no measured reduction after sprint N
+  work-mix shift, saturation, quality loss, or a measured rate after sprint N that does not match the planning estimate
 ~~~
 
-This card does not need a boundary-crossing profile for a local plan choice.
+For a numerical version of this constructed case, let the backlog start at 120 comparable items, the baseline reduction rate be 20 per week, and each sprint last one week with no new incoming items. The doubling assumption gives 40 per week and leaves 40 items after the two sprints. That conditional calculation can inform local staffing discussion without establishing the assumed gain. If the measured first-sprint reduction is 20, there is progress, but the uniform 40-per-week estimate is not met in that sprint. Reassess ramp-up and the remaining estimate before relying on the second-sprint forecast; the first sprint alone does not determine the two-sprint outcome. No boundary-crossing profile is needed for this local use.
 
 #### C.27:4.2 - Braking to Protect Viability
 
@@ -358,14 +356,14 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 | C27-3 | The source claim's world-side EntityOfConcern remains with the source claim and is not duplicated as the adequacy episteme's subject. |
 | C27-4 | C.27 cites an exact C.27.TA episteme or ClaimAddress and does not redefine its bearer, predicate, temporal reference, window, coupling, or currentness. |
 | C27-5 | Dyn0, Dyn1, and Dyn2 classify claims, not Systems or other world objects. |
-| C27-6 | The local result is the one-screen card; a boundary-crossing profile contains only the small header and exact direct-result references. |
+| C27-6 | The local result supplies the one-screen content in ordinary prose or a card; a boundary-crossing profile adds only the needed direct-result references and their contributions. |
 | C27-7 | The card names claimed input, resistance or cost, reason for the reading, supported use, unsupported use, and reopen condition without implying causal effect, Work, authority, value, promise, or assurance. |
 | C27-8 | Performed Work names the actual System actor, whose A.13 core precedes independent A.15.1 Work admission. F.6 follows only when precise assignment-bound attribution is current. An assignment remains a separate obtaining relation and never acts. |
 | C27-9 | A non-system input uses its actual direct relation or remains an unresolved or source-side intervention claim; no generic applier branch is created. |
 | C27-10 | A viability use cites an exact C.26.3 claim episteme or ClaimAddress and an exact System, A.22 Structure, or another subject with its direct identity rule as bearer; no generic viability or configuration relation is invented. |
 | C27-11 | Measurement, dynamics, Work, causality, benchmark, promise, value, quality, viability, scaling, adaptation, search, publication, assurance, and residual QL stay with their direct patterns. |
-| C27-12 | Cases precede the optional trigger reference, and the trigger reference copies no neighboring schema. |
-| C27-13 | At least one golden case stops at ordinary prose, Dyn0, or Dyn1, and braking or coasting is not treated as failed acceleration. |
+| C27-12 | A sufficient local use can finish without the optional trigger reference. A dependent use cites the needed neighboring result without copying its schema. |
+| C27-13 | A sufficient ordinary, Dyn0 or Dyn1 reading can finish without Dyn2. Braking or coasting is not treated as failed acceleration. |
 | C27-14 | Publication occurrence, form, carrier, and availability appear only when they change use and do not reidentify unchanged claim content. |
 
 ### C.27:8 - Common Anti-Patterns
@@ -422,8 +420,6 @@ C.27 adopts:
 - interval-sensitive practice transfer, including the error introduced by copying static poses or rate words without the timing and effort pattern.
 
 C.27 adapts physical vocabulary into authored-claim adequacy and direct FPF relations. It rejects literal force, mass, acceleration, rhythm, or second-order-process kinds, mandatory calculus, universal control theory, and automatic QL relevance.
-
-The pattern is successful when it improves action quality more than paperwork and remains easier not to use than to misuse.
 
 ### C.27:11 - SoTA-Echoing
 

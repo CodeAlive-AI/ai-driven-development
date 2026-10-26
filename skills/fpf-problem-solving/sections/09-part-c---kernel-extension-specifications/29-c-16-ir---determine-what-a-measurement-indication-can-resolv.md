@@ -156,7 +156,7 @@ If the supplied bound is relaxed to N < 300, both 21 and 293 satisfy the two rem
 
 ### C.16.IR:6 - Bias-Annotation
 
-Under the five Principle-Taxonomy lenses of E.3 (Gov, Arch, Epist, Prag and Did), this pattern is scoped to interpreting indications through available relations. The cases use supplied, simple relations. Real inverse problems may be high-dimensional, unstable or sensitive to uncertain model structure. Establishing complete bounds can then require considerably more work than exhibiting one ambiguity.
+The cases use supplied, simple relations. Real inverse problems may be high-dimensional, unstable or sensitive to uncertain model structure. Establishing complete bounds can then require considerably more work than exhibiting one ambiguity.
 
 The set-based branch treats uncertainty as admitted possibilities. Statistical inference and decisions under risk can distinguish those possibilities by likelihood, loss or preference when their own assumptions are supplied. Use the result form appropriate to the question; a demand for uniqueness can make an already useful measurement appear inadequate.
 

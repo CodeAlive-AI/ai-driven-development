@@ -14,7 +14,7 @@ Ordinary use of "agent" does not by itself require this precise account. Use A.1
 
 A.13 separates a precise agency claim from a claim about the holder’s agency characteristics. The former identifies a System’s local kind and obtaining assignment; the latter states the characteristics the receiving use needs.
 
-This pattern builds directly on the FPF Kernel. A.1 establishes that the acting holder must be a `U.System`. A.2 and A.2.1 distinguish a local system-role kind, classification by that kind, and an obtaining occurrence of a directly declared `U.SystemRoleAssignment` species. A.12 supplies the acting-side externalization principle.
+A.1 establishes the holder as a `U.System`. A.2 and A.2.1 distinguish a local system-role kind, classification by that kind, and an obtaining occurrence of a directly declared `U.SystemRoleAssignment` species. A.12 helps recover the acting and changed participants when that distinction matters.
 
 This distinction serves three uses:
 
@@ -27,7 +27,7 @@ This distinction serves three uses:
 Treating agency as an intrinsic property or a mere label hides different questions:
 
 1. **Episteme-as-Actor:** When "the specification decided to update the system" hides the actor, use A.12 to identify the proposed acting entity. A precise agency claim needs that entity admitted as a System under A.1, distinct from the specification under A.7.
-2.  **Type Inflation:** Introducing a root agent kind alongside `U.System` and `U.Episteme` would violate **Ontological Parsimony (C-5)**. The same System may qualify for an agential system-role kind and receive an assignment in one working situation but not another. The agency claim states its scope and window separately; a root type cannot express these differences.
+2. **Type Inflation:** Adding a root agent kind duplicates existing ontology when System, local kind and assignment already express the needed claim. The same System may qualify for an agential system-role kind and receive an assignment in one working situation but not another. Scope and window remain separate; a root label alone does not express these differences. A.11 tests a proposed ontology addition for material loss under the best existing expression.
 3. **Unsupported Claims:** A label such as "agent" supplies neither the local kind criterion and obtaining assignment nor evidence for a claimed autonomy profile. Those claims need their own support under A.10.
 4. **The Binary Trap:** "Agent/not-agent" alone does not distinguish a thermostat’s feedback, a cruise-control system’s prediction and a strategic robotic swarm’s self-learning capabilities.
 
@@ -68,9 +68,9 @@ The following descriptions state what the five characteristics concern. A measur
 
 1. **Boundary Maintenance Capacity (BMC):** The ability of the System to maintain its own structural and functional integrity against perturbations. The maintained property is the holder’s integrity, not merely the value it controls.
 2. **Predictive Horizon (PH):** The temporal or causal depth of the holder’s internal model. State which depth the claim uses; the horizon is distinct from prediction accuracy.
-3. **Model Plasticity (MP):** The rate at which the holder can update its internal model (`U.GenerativeModel`) in response to prediction errors (`U.Error`). Describe the model update and its rate; evaluate capability acquisition separately under E.10.LRN.
+3. **Model Plasticity (MP):** The rate at which the holder can update its internal model in response to prediction errors. Describe the model update and its rate; evaluate capability acquisition separately under E.10.LRN.
 4. **Policy Enactment Reliability (PER):** The probability that the holder will successfully execute its chosen `U.Method` under operational conditions. The event is successful Method execution; a result or safety claim needs its own basis.
-5. **Objective Complexity (OC):** A measure of the complexity of the `U.Objective` the holder can pursue, from simple set-points to abstract, multi-scale goals. These examples distinguish objectives; a complexity comparison needs a declared criterion and scale.
+5. **Objective Complexity (OC):** A measure of the complexity of the objective the holder can pursue, from simple set-points to abstract, multi-scale goals. These examples distinguish objectives; a complexity comparison needs a declared criterion and scale.
 
 ##### A.13:4.3.1 - Task-family specialization claims
 
@@ -82,7 +82,7 @@ Low-human-overlap or newly discovered task families remain admissible when the t
 
 Engineers and managers can use the **Agency Grade** as a **non-normative, didactic** summary of a profile. The scale runs from 0 to 4; an assurance use that consumes agency characteristics needs their supported values, not this summary.
 
-| Grade | Label | Typical agency-characteristic profile (Conservative Lower Bound) | Archetypal Example |
+| Grade | Label | Illustrative agency-characteristic profile | Archetypal Example |
 | :--- | :--- | :--- | :--- |
 | **0** | **Non-Agential** | `BMC ≈ 0`, `PH ≈ 0`, `MP ≈ 0` | An admitted System whose supported profile has the stated values. A document or another non-System has no Agency Grade. |
 | **1** | **Reactive** | `BMC > 0`, `PH ≈ 0`, `MP ≈ 0` | A thermostat; a simple feedback controller. Follows fixed rules. |
@@ -92,20 +92,20 @@ Engineers and managers can use the **Agency Grade** as a **non-normative, didact
 
 The Grade 0 label summarizes a profile; it does not settle the separate local-kind classification or assignment claim.
 
-The profile states characteristic claims and their supporting evidence; the Grade is a pedagogical summary. A claim about a holder’s Agency Grade requires a corresponding auditable profile under CC-A13.3. The Grade remains unavailable as a normative premise under CC-A13.4.
+The profile states characteristic claims and their supporting evidence; the Grade is a pedagogical summary. An actual Grade claim needs a supported profile and a stated mapping from its values to the label, including thresholds when the mapping uses them. Without that basis, leave the Grade unresolved. CC-A13.3 governs that support; CC-A13.4 excludes the Grade as a normative premise.
 
 ### A.13:5 - Archetypal Grounding
 
-Start with the simple controller: “Thermostat_Model_T800 holds T800-home-heating-assignment as HomeHeatingController for household-temperature control.” The holder, local kind and assignment are different objects. For this illustration, System admission, qualification under the local kind’s criterion and an obtaining assignment are premises. The working case must supply that criterion, the supporting facts and any needed scope, situation or window; the names alone supply none of them.
+Start with the controller: “Thermostat_Model_T800 holds T800-home-heating-assignment as HomeHeatingController for household-temperature control.” In this constructed case, Thermostat_Model_T800 identifies one installed unit, admitted as a System, in House-H1 from 08:00 to 12:00 on Day-D. The local HomeHeatingController criterion is the ability to read the household temperature and selected set-point, command heating below the set-point and stop heating at or above it. The stipulated device behavior satisfies that criterion at the selected 21 °C set-point. The directly declared HomeHeatingAssignment species assigns a qualifying System to that kind when the household controller designation and enabled control connection obtain; both hold for T800 in that household and window.
 
-The table gives schematic variations for individual and collective Systems, then a knowledge-artifact contrast. Profile and Grade remain separate claims. These local kind names are examples, not a universal `AgentialRole` vocabulary.
+The core result is that this System qualifies for HomeHeatingController and holds the obtaining assignment for the stated use. No Grade or autonomy measurement is needed for that result. If the household withdraws the designation while the device retains its capabilities, the assignment ceases under its rule; classification may remain true, and the precise agency claim must change. The table gives further schematic variations for individual and collective Systems, then a knowledge-artifact contrast. Its local kind names and profile/Grade assumptions are illustrative.
 
-| Archetype | Holder (`U.System`) | Illustrative local agential system-role kind | Distinct obtaining assignment occurrence | Agency-characteristic profile sketch (illustrative assumptions) | Resulting Agency Grade |
+| Archetype | Holder (`U.System`) | Illustrative local agential system-role kind | Distinct obtaining assignment occurrence | Agency-characteristic profile sketch (illustrative assumptions) | Illustrative Agency Grade |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Simple Controller** | `Thermostat_Model_T800` | `HomeHeatingController` | `T800-home-heating-assignment` assigns `Thermostat_Model_T800` to `HomeHeatingController` for household-temperature control. | `BMC`: High (assumed).   `PH`: Zero (no prediction).   `MP`: Zero (fixed logic).   `PER`: Very High.   `OC`: Low (single set-point). | **Grade 1 (Reactive)** |
 | **Advanced Controller** | `PredictiveCruiseControl_v3` | `VehicleDynamicsController` | `PCC-v3-vehicle-dynamics-assignment` assigns `PredictiveCruiseControl_v3` to `VehicleDynamicsController` for the driving situation supplied by the working case. | `BMC`: High.   `PH`: High (predicts traffic flow).   `MP`: Zero (fixed model).   `PER`: High.   `OC`: Medium (optimization). | **Grade 2 (Predictive)** |
 | **Learning System** | `SelfCalibratingSensorArray` | `IndustrialProcessAdaptiveController` | `sensor-array-process-adaptation-assignment` assigns `SelfCalibratingSensorArray` to `IndustrialProcessAdaptiveController` for the calibration task family and window supplied by the working case. | `BMC`: High.   `PH`: High.   `MP`: Medium (assumed).   `PER`: High.   `OC`: Medium. | **Grade 3 (Adaptive)** |
-| **Collective acting holder** | `DevOpsTeam_Phoenix` (a collective `U.System`) | `ProjectPhoenixDeliveryCoordinator` | `phoenix-team-delivery-assignment` assigns the collective System `DevOpsTeam_Phoenix` to `ProjectPhoenixDeliveryCoordinator` for the project work being claimed. | `BMC`: High (maintains delivery capacity).   `PH`: High (release planning).   `MP`: High (assumed).   `PER`: Medium-High.   `OC`: High (abstract business goals). | **Grade 4 (Reflective/Strategic)** |
+| **Collective acting holder** | `DevOpsTeam_Phoenix` (a collective `U.System`) | `ProjectPhoenixDeliveryCoordinator` | `phoenix-team-delivery-assignment` assigns the collective System `DevOpsTeam_Phoenix` to `ProjectPhoenixDeliveryCoordinator` for the project work being claimed. | `BMC`: High (assumed).   `PH`: High (release planning).   `MP`: High (assumed).   `PER`: Medium-High.   `OC`: High (abstract business goals). | **Grade 4 (Reflective/Strategic)** |
 | **Knowledge artifact** | No acting holder. `ISO_26262_Standard.pdf` is a file carrier; the selected standard edition and any exact claim episteme made available through it remain distinct. | **N/A** | **N/A**: neither the carrier nor an episteme is a `U.System`, so neither can receive an agential system-role assignment. | N/A | **N/A — no System holder or agency-characteristic profile** |
 
 The profile values above are illustrative assumptions, not measured results. The case explanations support narrower statements:
@@ -125,7 +125,7 @@ Apply these normative checks to the corresponding agency, profile or Grade claim
 | :--- | :--- | :--- |
 | **CC-A13.1 (Holder Type)** | The holder System of an obtaining agential `U.SystemRoleAssignment` **MUST** be a `U.System`. | Prevents the "episteme-as-actor" category error. Enforces **Strict Distinction (A.7)**. |
 | **CC-A13.2 (Assignment Mandate)** | A precise claim of agency **MUST** name the exact local agential system-role kind and an obtaining occurrence of a directly declared `U.SystemRoleAssignment` species. Any claim scope, working situation, and time window needed by the use remain separate. | Binds agency to a specific holder and assignment without turning a generic context field into their identity. |
-| **CC-A13.3 (Characteristic Evidence)** | Any claim about a holder’s Agency Grade or autonomy profile **MUST** be substantiated by an auditable agency-characteristic profile with Evidence Graph Ref (A.10). | Requires support for the Grade or profile claim. |
+| **CC-A13.3 (Characteristic Evidence)** | An actual claim about a holder's Agency Grade or autonomy profile **MUST** have a supported agency-characteristic profile with recoverable evidence and provenance under A.10. A Grade claim also states the mapping from those values to its didactic label. Use an Evidence Graph Ref when that representation is needed. | Supports the characteristic values and the Grade interpretation. |
 | **CC-A13.4 (Grade is Didactic)** | The **Agency Grade (0-4)** **SHALL NOT** be used as a normative input for formal reasoning. It is a didactic summary of the agency-characteristic profile. | An assurance case that consumes these characteristics uses their supported values, not the Grade. |
 | **CC-A13.5 (Collective as System)** | To claim agency for a collective (e.g., a team or swarm), it **MUST** first be admitted as a `U.System` under the complete A.1 criterion. Identify its defined boundary and coordination `U.Method`; those two features alone do not establish Systemhood. | Distinguishes an admitted collective System from a mere set or collection (`MemberOf`); parthood claims use A.14. |
 | **CC-A13.6 (MHT for Emergent Agency)** | If a collection of Systems develops a new supervisory structure and crosses a documented agency-characteristic threshold, apply B.2’s whole-reidentification test. When B.2 establishes the transition, a **Meta-Holon Transition (MHT)** **MUST** be declared. | Supervision and threshold crossing prompt the inquiry. If the same whole explains the changed facts, stop without MHT. A prior description as non-agential or at a lower didactic Grade may describe the starting case; it is not a normative premise. |
@@ -154,7 +154,7 @@ The following research contributions inform different agency questions:
 *   **Builds on:**
     *   `A.1 Holonic Foundation`: Establishes that only `U.System`s can be bearers of behavioral roles.
     *   `A.2 System-Role Kinds and Assignments`: Distinguishes an exact local system-role kind, classification by that kind, and an obtaining `U.SystemRoleAssignment`.
-    *   `A.12 Acting-Side Externalization and Reflexive Split: Identify Who Acts on What`: Work by an acting holder is modeled using the acting-side externalization principle.
+    *   `A.12 Acting-Side Externalization and Reflexive Split: Identify Who Acts on What`: Separates acting and changed participants when that distinction matters; its precise frame is conditional on the claims needed.
 *   **Coordinates with:**
     * `B.2 Meta-Holon Transition (MHT)`: New supervisory structure together with a documented agency-characteristic threshold crossing prompts the whole-reidentification inquiry. B.2 first tests whether the same whole suffices; only an established transition warrants the MHT declaration.
     * `B.3 Trust & Assurance Calculus`: A profile can supply evidence-backed characteristic results when a named reliability, safety or other assurance argument uses them. Retain each result’s bearer, scale and basis; the didactic Grade is not the assurance input.

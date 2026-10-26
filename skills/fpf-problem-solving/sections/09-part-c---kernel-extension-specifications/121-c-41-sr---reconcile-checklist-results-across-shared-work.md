@@ -66,7 +66,7 @@ When a room, description, tool, subject or intended use changes, identify which 
 
 Retain the historical account. Reuse unaffected observations where their basis remains sufficient. A continuation after interruption consumes this account of current questions and grounds, not only a remembered set of colours.
 
-Record or communicate the resulting shared conclusion, its unresolved contribution and the useful next move. Stop at enough detail for the current dependence. If maintaining the connections costs more than the shared reliance warrants, simplify to a conversation or an existing coordination arrangement.
+Record or communicate the resulting shared conclusion, any unresolved contribution and any needed next move. Stop at enough detail for the current dependence. If maintaining the connections costs more than the shared reliance warrants, simplify to a conversation or an existing coordination arrangement.
 
 #### C.41.SR:4.4 - Change, simultaneous work and the whole result
 

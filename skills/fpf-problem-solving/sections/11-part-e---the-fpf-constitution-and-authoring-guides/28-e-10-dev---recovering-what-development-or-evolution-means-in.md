@@ -4,8 +4,6 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative.
 
-**At a glance.** `E.10.DEV` repairs claim-bearing *development* and *evolution* wording by naming the changed or represented subject, the continuity or membership rule, posture, any direction or value claim, and the direct pattern that defines or tests the result.
-
 **Use this when.** After the normal `F.19` reading and compact `E.10` routing, use this pattern only while claim-bearing development, develop, progress, growth, maturation, adaptation, evolution, evolve, or lineage wording still hides what changed, what stayed identifiable, whether success or direction is asserted, whether the claim is actual or modelled, or which direct owner must be used—and resolving that ambiguity changes the claim or next action.
 
 **Primary EntityOfConcern.** One bounded wording-use restoration whose development or evolution expression has an FPF-governed use.
@@ -39,10 +37,10 @@ Without a shared recovery move:
 | --- | --- |
 | Familiar umbrella language | Practitioners need ordinary words such as development and evolution. |
 | Unlike subjects | Holder continuity, population membership, model identity, archive retention, and programme order support different claims. |
-| Positive first use | A warning without a route leaves the reader to rediscover the same neighborhood. |
+| Positive first use | A warning without a route leaves the subject question unresolved. |
 | Domain ownership | Mechanisms, interventions, evidence, and safety remain with the owning FPF or DPF pattern. |
 | Light burden | A clear sentence should close locally without a mandatory card or record. |
-| Honest gaps | A missing non-cultural population owner is better than a false cultural or one-holder route. |
+| Honest gaps | A missing rule for a non-cultural population leaves that claim open. |
 
 ### E.10.DEV:4 - Solution
 
@@ -114,7 +112,7 @@ Return a **missing-information result** to the programme author. First ask wheth
 - **Mira:** Which engineering Work family and conditions does the capability claim concern? For an observed increase, obtain the comparable qualification results through :5.2 before retaining that claim.
 - **Research:** Which claim or problem formulation is meant? What revision is proposed or observed, and under what criterion does it count as an advance?
 
-#### E.10.DEV:5.2 - Human capability without candidate borrowing
+#### E.10.DEV:5.2 - Change in human capability
 Source wording: `Mira developed as an engineer.`
 
 For the capability reading, recover the named Work family, supported envelope, qualification window, measures, and evidence under `A.2.2`. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately. If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition; do not turn that result into a trajectory choice or development Work. If a dated intervention occurred, identify its Work and Method separately. Do not rely on candidate `E.23.CDI` as current FPF law; after its own admission it may apply only when a separate steering or choice result selects capability development.
@@ -125,7 +123,7 @@ Source wording: `The organization evolved after the platform rollout.`
 
 If the claim asserts actual rollout Work, recover its performer and occurrence independently under A.13 and A.15.1. For the separate organization-change claim, identify the organization and the changed working relations. Use the applicable organizational DPF or domain Method to establish which working relations changed and under what conditions, with `A.3.4` for the actual change and the direct patterns for the other claimed relations. Recover the roles, assignments, interfaces, routines, capabilities, observed organization Work and effects, period, evidence, or cultural relations on which that claim depends. State any benefit under its declared basis and supporting evidence.
 
-#### E.10.DEV:5.4 - Population and archive countercase
+#### E.10.DEV:5.4 - Population and archive
 
 Source wording: `The population evolved as the archive improved.`
 
@@ -185,7 +183,7 @@ Reopen this pattern when a recurring branch cannot reach a direct owner or exact
 
 ### E.10.DEV:10 - Rationale
 
-The reusable transdisciplinary problem is recovering the claim carried by the wording. Across the unlike cases, a thin action survives: recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop. Keeping that action in `E.10.DEV`, selected through compact `E.10` routing, prevents repeated local reconstruction. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
+The reusable transdisciplinary problem is recovering the claim carried by the wording. The same recovery applies across these cases: recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop. `E.10.DEV` makes that recovery available through compact `E.10` routing. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
 
 ### E.10.DEV:11 - SoTA Echoing
 

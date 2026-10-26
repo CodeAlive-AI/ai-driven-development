@@ -20,7 +20,7 @@ The primary `EntityOfConcern`—the thing being changed—is one exact existing 
 
 If the truthful answer is “nothing”, test that claim against the affected passages and stop after the smallest adequate repair and check. If the answer is uncertain because several materially different repairs remain plausible, open the alternative-comparison branch.
 
-Not this pattern when authoring a first pattern seed with no predecessor; use E.8 and the subject-owning patterns. Do not use E.15 merely to run a wording check, make a design decision, perform a quality review, publish a pattern, or land a candidate: E.10, E.9, E.19 or E.21, E.24.PUB, and the landing process own those distinct questions. Return here when one of those activities changes an existing pattern edition and edition continuity or affected use is in question.
+Not this pattern when authoring a first pattern seed with no predecessor; use E.8 and the subject-owning patterns. Do not use E.15 merely to run a wording check, make a design decision, perform a quality review, publish a pattern, or land a candidate: F.19 with E.10 cues, E.9, E.19 or E.21, E.24.PUB, and the landing process own those distinct questions. Return here when one of those activities changes an existing pattern edition and edition continuity or affected use is in question.
 
 ### E.15:2 - Problem
 
@@ -110,7 +110,7 @@ Exact copied text may close by identity. A large deletion, compression, move, or
 
 Select checks from the actual change and intended conclusion. A small Δ-0 repair may need one focused check. A Δ-2 or Δ-3 change may require semantic, ontological, consumer, source, preservation, or independent quality checks. Reuse a current check result when candidate, question, conclusion, and conditions are unchanged.
 
-After a material ontological or formal repair, read the **whole changed pattern** as a cold practitioner. A local token scan cannot establish precise plain language. Check that the working situation, first action, examples, conditions, and result remain understandable without reconstructing the ontology from elsewhere. Simplify the expression, not the distinction. Keep a technical term when it names a real needed object or relation; remove stacked qualifiers and formal notation when they do no action-changing work.
+After a material ontological or formal repair, read the **whole changed pattern** for what an intended practitioner can recover from the publication and its stated prerequisites. This author walkthrough remains expert evidence; obtain an actual reading under F.19 when its conditions require one. A local token scan cannot establish precise plain language. Check that the working situation, first action, examples, conditions, and result remain understandable without reconstructing the ontology from elsewhere. Simplify the expression, not the distinction. Keep a technical term when it names a real needed object or relation; remove stacked qualifiers and formal notation when they do no action-changing work.
 
 Author-side use of E.10, E.19, or E.21 questions is development evidence. It does not become the independent review, complete quality result, admission, or landing conclusion that a later use may require.
 
@@ -148,7 +148,7 @@ An identifier is spelled correctly everywhere except one explanatory sentence. T
 
 #### E.15:5.2 - Plain-language repair after an ontology correction
 
-A relation passage is ontologically exact but has grown into two pages of qualifications that hide the first action. The candidate restores one readable explanation and keeps the exact relation test in the assurance section. Because a substantial rewrite can lose ideas, the author independently inventories the predecessor's entry, action, conditions, examples, and prohibitions, then reads the whole candidate as a cold user. If every semantic function remains, the result may be Δ-1 or Δ-2 depending on whether a normative clarification also occurred; the word count does not decide.
+A relation passage is ontologically exact but has grown into two pages of qualifications that hide the first action. The candidate restores one readable explanation and keeps the exact relation test in the assurance section. Because a substantial rewrite can lose ideas, the author independently inventories the predecessor's entry, action, conditions, examples, and prohibitions, then reads the whole candidate for what an intended user can recover from its public explanation. If every semantic function remains, the result may be Δ-1 or Δ-2 depending on whether a normative clarification also occurred; the word count does not decide.
 
 #### E.15:5.3 - One-word semantic change with dependent consumers
 
@@ -164,9 +164,7 @@ A pattern could model a new distinction as a local value, a direct relation, or 
 
 ### E.15:6 - Bias-Annotation
 
-Lenses tested: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal for changes to existing FPF pattern editions**.
-
-The method biases toward continuity and inspectability (**Arch**, **Onto/Epist**). The direct-repair route, record-reuse rule, whole-pattern cold-reader check, and first-adequate-result stop protect practical speed and readability (**Prag**, **Did**). Decision and review authority remain with their own patterns (**Gov**).
+The method biases toward continuity and inspectability (**Arch**, **Onto/Epist**). The direct-repair route, record-reuse rule, whole-pattern practitioner-use reading, and first-adequate-result stop protect practical speed and readability (**Prag**, **Did**). Decision and review authority remain with their own patterns (**Gov**).
 
 ### E.15:7 - Conformance Checklist
 
@@ -194,7 +192,7 @@ The method biases toward continuity and inspectability (**Arch**, **Onto/Epist**
 | **One score chooses the winner** | Readability, breadth, formal checks, and assurance are added without lawful scales or protected trade-offs. | Keep constraints separate and choose among non-dominated candidates for the intended use. |
 | **Version number supplies semantics** | `major`, `minor`, or `patch` is treated as proof of compatibility. | Decide continuity first; use a version label only to communicate that decision. |
 | **A new trace for every change** | DRR, review, source, check, and landing facts are copied into another authoring-trace record. | Keep the minimum change account in the receiving workflow and cite existing results. |
-| **Precise fragment, unreadable pattern** | A formal repair passes a token check while the whole pattern loses recognition and practical entry. | Read the whole changed pattern as a cold practitioner and simplify non-load-bearing formal language. |
+| **Precise fragment, unreadable pattern** | A formal repair passes a token check while the whole pattern loses recognition and practical entry. | Read the whole changed pattern for practitioner recoverability and simplify non-load-bearing formal language. |
 | **Self-log as practitioner guidance** | The pattern publishes its own authoring history and calls it Work or quality evidence. | Keep one worked practitioner case in the pattern; keep actual work and evaluation evidence in their direct records. |
 
 ### E.15:9 - Consequences
@@ -225,8 +223,6 @@ The selected method combines exact edition comparison with dependency-aware incr
 | Li, Chen, Huang, and Ding, [“Change-aware model checking for evolving concurrent programs based on Program Dependence Net”](https://doi.org/10.1002/smr.2626), 2024 | **Adopt the current research move by analogy:** use prior verified results and property-relevant dependency slices rather than rechecking an entire changed system. | Software paths and LTL properties do not transfer as FPF kinds or sufficient evidence for prose semantics. | Result reuse requires an unchanged conclusion and a justified outside-impact dependency. |
 | MAP-Elites and quality-diversity search, with current FPF C.18/C.19 machinery | **Retain as optional lineage and method family:** useful when several materially different candidates and diversity itself matter. | Candidate multiplicity and archive coverage do not improve an understood local repair and do not select a winner across heterogeneous qualities. | Alternative generation is conditional; E.21/E.22 and intended use decide among non-dominated candidates. |
 | Full rerun of every authoring, source, assurance, and review activity | **Reject as the default rival:** broad reruns can be appropriate after a genuinely broad Δ-3 change. | At comparable correctness, they spend more effort on unaffected premises and encourage ceremonial records. | Scope verification from actual change and dependencies, while preserving the explicit broad-change branch. |
-
-The non-dominated contribution is therefore not a new authoring trace or scoring system. It is the combination of a cheap direct-repair path, actual-delta classification, independent predecessor preservation, actual-consumer reach, and whole-pattern practitioner-language verification, with stronger search and checking opened only by their real use.
 
 ### E.15:12 - Relations
 

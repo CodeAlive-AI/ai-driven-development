@@ -6,7 +6,7 @@
 > **Status:** Stable
 **Builds on:** F.1 **Question-Relative Source Selection**; F.0.1, F.2, F.3, and F.17 for exact source-local meaning and optional addresses; F.5 for naming; F.9 only for actual relations between local meanings; F.10 for status families and windows; F.11 for the Method, MethodDescription, and Work distinctions; A.2.3 for `U.PromiseContent`; A.15.1 for evaluation Work; and A.6.1 for the applied evaluation operation and its result binding.
 **Coordinates with.** C.2 and C.16 for observation, characteristic, scale, unit, and measured-value claims; A.3.2 when a selected evaluation MethodDescription edition changes the result; A.10 for evidence use; B.3 only when an actual named assurance claim is current; C.16.P and A.6.RCD when indicator or proxy wording hides an unsupported relation; E.13 only when a proxy is optimized or used as a target, incentive, gate, release argument, reputation signal, repair target, or decision driver; and direct transformation or control patterns when outputs are material.
-**Non-goals.** No team workflow, tool, record format, or universal acceptance object. F.12 explains the minimum claims needed for a defensible judgement.
+**Scope.** F.12 explains the claims needed to justify a promise-fulfilment judgement.
 
 ### F.12:1 - Intent & applicability
 
@@ -32,7 +32,7 @@
 | **Promise and occurrence** | Promise content is stated in advance; fulfilment concerns actual Work and delivered outcome. |
 | **Local meaning and integration** | Sources use different words, while the judgement must join their claims without a generic Bridge. |
 | **Parsimony and realism** | One compact pattern must cover thresholds, percentiles, shares, counts, and bands. |
-| **Evidence and feasibility** | Direct observation is best, but sometimes only a limited proxy is available. |
+| **Evidence and feasibility** | Evidence must concern the promised characteristic; available measurements may cover only an indicator. |
 
 ### F.12:4 - Core idea (didactic)
 
@@ -48,7 +48,7 @@ Before reporting the result, name nine things:
 8. the acceptance rule and declared result scale, such as a Boolean, trichotomous, graded, `N/A`, or `Inconclusive`-including scale when that scale is actually declared; and
 9. the PromiseContentUse, delivery, fulfilment, measurement, evidence-use, any separately defined indicator or proxy, reliance, and status relations that actually connect these claims.
 
-The operation's result value comes first. A RequirementStatus assertion of `Satisfied` or `Violated` is available only through the exact acceptance result and its F.10 rule. Insufficient evidence can support `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or it can yield a locally declared result such as `Inconclusive` when the acceptance scale says so; it never silently creates a mixed universal scale. A plain summary may say **met**, **not met**, or **cannot judge** while retaining that exact distinction. A SchemeSenseCell may help address a local meaning, but it cannot bear the promise, Work, observation, value, result, evidence, or status. A comparison table may display the argument, but it cannot establish any of it.
+The operation's result value comes first. A RequirementStatus assertion of `Satisfied` or `Violated` is available only through the exact acceptance result and its F.10 rule. Insufficient evidence can support `EvidenceStatus=Inconclusive` and leave `RequirementStatus=Pending`, or it can yield a locally declared result such as `Inconclusive` when the acceptance scale says so; it never silently creates a mixed universal scale. A plain summary may say **met**, **not met**, or **cannot judge** while retaining that exact distinction. A SchemeSenseCell addresses a local meaning; the evaluation still concerns the exact promise, Work, observations, values, result and status-use relation. A comparison table may display the argument; display alone does not establish those claims.
 
 ### F.12:5 - Minimal vocabulary
 
@@ -237,7 +237,7 @@ Promise content: restoration within 60 minutes for each in-scope incident. Deliv
 * **SCR-F12-S07 (result and status).** The operation result stays on its declared scale; RequirementStatus and EvidenceStatus are mapped separately, and evidence insufficiency is never implicit target falsity.
 * **SCR-F12-S08 (optional episteme).** A C.2.1 verdict episteme exists only for a named later use and remains distinct from result and status.
 * **SCR-F12-S09 (no generic Bridge).** F.9 is used only for a real local-meaning relation and establishes none of the other relations.
-* **SCR-F12-S10 (temporal honesty).** No timeless or retroactively rewritten result or status assertion appears.
+* **SCR-F12-S10 (temporal identity).** No timeless or retroactively rewritten result or status assertion appears.
 
 #### F.12:15.2 - Regression
 

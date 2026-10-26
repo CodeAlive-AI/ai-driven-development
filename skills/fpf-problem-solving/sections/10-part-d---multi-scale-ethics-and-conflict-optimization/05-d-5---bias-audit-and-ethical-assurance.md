@@ -2,35 +2,35 @@
 
 > **Type:** D-family bias-audit and ethical-assurance boundary pattern
 > **Status:** Stable
-> **Pattern role:** This compact pattern owns bias, fairness, impact-audit, causal-fairness audit consumption, and ethical-assurance boundary use; it does not replace D.1 through D.4.
 
-**Use this when.** Use this pattern when a model, metric, policy, publication, decision system, recommendation, method, work plan, system, holon, or FPF claim may create bias, unfairness, human or group impact, causal-fairness overclaim, or ethical assurance risk.
 
-**Not this pattern when.** If the ethical value frame is missing, use `D.1`. If the current question is multilevel ethics entry, use `D.2`. If the current question is to describe the sides and tension of an interlevel ethical conflict, use `D.3`. If the current question is mediation or decision use of that conflict, use `D.4`. If the current question is only evidence, causality, assurance, measurement, or architecture residual without bias, fairness, human or group impact, or ethical assurance, use the direct owner.
+**Use this when.** Use this pattern when you need to examine bias or fairness in a current or intended use, assess its effects on people, or establish what an ethical-assurance claim supports.
 
-**What goes wrong if missed.** A model, metric, policy, publication, or decision system passes ordinary evidence or assurance checks while representation, proxy, visibility, metric, language, or human-impact bias remains hidden.
+**Not this pattern when.** If the ethical value frame is missing, use `D.1`. If the current question is multilevel ethics entry, use `D.2`. If the current question is to describe the sides and tension of an interlevel ethical conflict, use `D.3`. If the current question is mediation or decision use of that conflict, use `D.4`. If the current question is only evidence, causality, assurance, measurement, or architecture residual without bias, fairness, human or group impact, or ethical assurance, use the corresponding subject pattern.
 
-**What this buys.** Bias, fairness, human-impact, causal-fairness, and ethical-assurance concerns become auditable without replacing `D.1` through `D.4`, evidence, causal, measurement, or architecture owners.
+**What goes wrong if missed.** Ordinary technical verification is accepted as sufficient while bias or harm to affected people remains unexamined.
+
+**What this buys.** A bounded audit conclusion states what was examined, which affected groups and uses it covers, and the limits of its support.
 
 ### D.5:1 - Problem Frame
 
 Bias and fairness failures often survive ordinary verification. A metric may be accurate while hiding subgroup harm. A model may be predictive while reproducing past exclusion. A policy may look neutral while moving cost to people or groups who were not represented in the evidence. A publication may look technically clear while licensing a harmful use.
 
-`D.5` keeps this audit and assurance question explicit. It does not replace multilevel ethics. It asks whether the current object and its intended use are ethically unsafe because of bias, unfairness, impact, causal fairness without the required C.28 evidence value, or assurance without the required assurance relation.
+Ask which bias, fairness or impact claim is being made, what that use requires of it, and whether the available evidence supports it. Use C.28 for a causal-fairness claim and B.3 for an assurance claim.
 
 ### D.5:1.0 - Problem
 
-Bias, fairness, human-impact, causal-fairness, and ethical-assurance concerns can remain invisible after ordinary technical verification. The failure is to let the model, metric, policy, publication, method, work plan, system, or holon be treated as admissible for use while the audited EntityOfConcern, intended use, affected people or groups, evidence, mitigation, and residuals are not explicit.
+The failure is to treat technical verification as sufficient for a fairness or ethical-assurance conclusion without identifying the audited object, affected people and intended use. Examine the evidence and any mitigation or residual on which that conclusion relies.
 
 ### D.5:1.1 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Ordinary verification vs. subgroup harm | Evidence or accuracy can look strong while representation, proxy, metric, visibility, language, or impact bias remains current. |
+| Ordinary verification vs. subgroup harm | Ordinary verification can leave bias or harm to particular groups unexamined. |
 | Bounded answer vs. stronger reliance | A current concern may need only a qualified answer; a release or assurance claim can need a fuller account of the basis, mitigations, and residuals it relies on. |
 | Fairness wording vs. causal claim | Metric disparity, associative fairness, interventional fairness, and counterfactual fairness are different claims. |
 | Assurance relation vs. ethical permission | Assurance can record examined evidence and residuals, but cannot turn unresolved bias or harm into moral authorization. |
-| Audit frame vs. neighboring owners | D.5 must keep bias and ethical assurance visible without replacing evidence, causality, measurement, architecture, or D.1 through D.4. |
+| Connected audit vs. distinct supporting claims | Use the methods needed for measurement, causal support, assurance or ethical conflict; connect their results through the audit question and intended use. |
 
 ### D.5:2 - Solution
 
@@ -81,7 +81,7 @@ The frame organizes the audit account. It is neither the object being audited no
 
 #### D.5:3.1 - Optional Audit Records And Depth
 
-D.5 may use a compact `BiasRegister@Context` when the live need is to keep concerns visible during ordinary work:
+A `BiasRegister@Context` can keep concerns recoverable during ongoing work:
 
 ```text
 BiasRegister@Context:
@@ -104,7 +104,7 @@ Use a fuller `BiasAuditReport@Context` when the receiving decision needs to insp
 
 A concrete indication of harm, a missing basis for an intended claim, or an applicable assurance requirement can make further investigation necessary before that use. Name what its result could change, who can obtain it, and whether its contribution warrants its full cost and delay; use `C.11.DUA` when this appraisal is unresolved. If the needed basis remains unavailable, state which intended claim remains unsupported and give any feasible narrower use, mitigation, or stop with its conditions. Neither a short record nor a large report supplies missing evidence.
 
-Exposure, repetition, automation, publication, and changed populations are cues to examine the actual use and consequence. They do not by themselves prescribe a full audit or a separate explanation for omitting one. When a protective or documentation requirement is disputed, use `C.11.DUA` to examine its hazard, threshold basis, protective contribution, feasibility, and distributed burden, while keeping its current force and amendment authority explicit.
+Exposure, repetition, automation, publication, and changed populations are cues to examine the actual use and consequence. They do not by themselves prescribe a full audit. When a protective or documentation requirement is disputed, use `C.11.DUA` to examine its hazard, threshold basis, protective contribution, feasibility, and distributed burden, while keeping its current force and amendment authority explicit.
 
 #### D.5:3.2 - Compact Bias Concern Taxonomy
 
@@ -112,8 +112,8 @@ Exposure, repetition, automation, publication, and changed populations are cues 
 | --- | --- | --- |
 | REP | Representation, coverage, sampling, proxy choice, missing group, or shifted population. | Who or what is missing, over-weighted, proxied, or moved out of scope? |
 | ALG | Algorithmic, modeling, objective, ranking, optimization, or threshold behavior. | Which model or optimization choice changes outcomes for whom? |
-| VIS | Visibility, interface, dashboard, presentation, or publication framing. | What becomes easy to see, hard to see, or too authoritative by display? |
-| MET | Metric, measurement, scale, comparator, normalization, or threshold. | What does the metric count, hide, compare, or turn into a pass or fail claim? |
+| VIS | What the presentation makes visible or authoritative. | What becomes easy to see, hard to see, or too authoritative by display? |
+| MET | Measurement and comparison. | What does the metric count, hide, compare, or turn into a pass or fail claim? |
 | LNG | Language, naming, category, definition, group label, or claim wording. | Which words change what can be asserted, counted, blamed, or done? |
 
 The codes are only concern locators. They do not replace the governed object, affected people or groups, intended use, evidence, mitigation, or accepted residual.
@@ -124,9 +124,9 @@ A fairness claim may be associative, interventional, or counterfactual. C.28 sup
 
 When counterfactual fairness is consequential, reusable, published, or used for assurance, the cited C.28 components expose the additional counterfactual-identifiability assumptions required for that question. If the audit relies on an estimated fairness result, they also expose the estimate and its estimation-consistency result. Missing identification or consistency lowers the C.28 result to `bounded` or `unsupported`; more of the same data does not repair either gap.
 
-Cite the C.28 result from the existing `BiasAuditReport@Context`. Do not open a separate C.28 fairness card; D.5 defines no such output. Metric-only fallback remains cheaper: when only metric disparity is claimed, record the metric or evaluation result and stop. An interventional proxy may support a bounded interventional fairness statement, but it does not establish counterfactual fairness without the required estimand and support components.
+Cite the C.28 result from the existing `BiasAuditReport@Context`. When only metric disparity is claimed, record the metric or evaluation result and stop. An interventional proxy may support a bounded interventional fairness statement, but it does not establish counterfactual fairness without the required estimand and support components.
 
-The C.28 result is one evidence basis. It does not certify fairness, approve a release, or supply ethical assurance; D.5 and any downstream decision or assurance pattern make those separate conclusions.
+The C.28 result is one evidence basis for the audit conclusion. Interpret it within the declared audit scope. A release decision or ethical-assurance claim requires its own judgement and supporting basis.
 
 ### D.5:5 - Ethical Assurance Boundary
 
@@ -166,11 +166,11 @@ A hiring-screening model has high aggregate accuracy and an internal note says i
 
 ### D.5:8 - Consequences
 
-This pattern keeps bias, fairness, impact, causal-fairness audit consumption, and ethical assurance from being scattered across technical patterns. It also prevents D.5 from swallowing all ethics. The cost is that teams must say which bias or fairness claim they are making. The gain is that ethical assurance becomes a typed assurance or evidence claim rather than a comforting label.
+A reader can distinguish a supported metric finding from a causal-fairness or ethical-assurance conclusion and identify what additional basis a proposed use would require.
 
 ### D.5:9 - Rationale
 
-`D.5` exists because bias, fairness, human-impact, causal-fairness audit consumption, and ethical assurance often survive ordinary technical checks. It keeps those concerns in one audit frame while preserving direct owners: metrics and measurement remain with measurement patterns, causal fairness remains with causal-use patterns, assurance remains an assurance relation, and multilevel ethical conflict remains with D.2 through D.4.
+Technical accuracy alone does not establish fairness for affected groups. Connect the audit question with its object and intended use, then use the evidence appropriate to that claim. Measurement, causal support and ethical assurance answer different questions; interpret their results accordingly.
 
 Audit depth follows what a particular claim or decision needs from the result. A compact account can carry a useful finding; a stronger audit or assurance conclusion needs its supporting evidence and the record required for that reliance. Material changes reopen the affected basis, and a disputed requirement remains open to substantive appraisal without losing its present force.
 

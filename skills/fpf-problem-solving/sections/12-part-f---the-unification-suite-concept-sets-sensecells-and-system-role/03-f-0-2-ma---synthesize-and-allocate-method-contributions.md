@@ -6,13 +6,13 @@
 
 ### F.0.2.MA:1 - Problem frame
 
-**Use this when.** You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. A handbook, research paper and account recovered from practice may use the same words for different actions, or different words for the same useful move.
+**Use this when.** You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. Documentary sources and accounts recovered from practice may use the same words for different actions, or different words for the same useful move.
 
 The working reader is a Method engineer building or revising descriptions, a repertoire or a pattern language. Begin with one disputed allocation: **which recovered contribution should this description or pattern carry, and what would be lost by placing it there?**
 
 The first useful result is one justified allocation. For example: “Use the existing coherence-checking Method; keep this source's narrower qualification window with the affected description claim; leave the observed shortcut as a candidate account.” Stop there if it settles the receiving decision.
 
-Use an already sufficient F.0.2 synthesis or existing pattern result directly when no Method-content allocation remains. A.3.1.DR recovers documentary contributions; A.3.1.MR, and conditionally RMP.10, recover accounts from Work evidence. F.0.2.MA starts from their results, not from an unread corpus or raw observations.
+Use an already sufficient F.0.2 synthesis or existing pattern result directly when no Method-content allocation remains. A.3.1.DR recovers documentary contributions; A.3.1.MR, and conditionally RMP.10, recover accounts from Work evidence. F.0.2.MA starts from their results.
 
 ### F.0.2.MA:2 - Problem
 
@@ -92,7 +92,7 @@ The engineer's allocation is:
 | Shortening the warning | Retain W's rival accounts and the missing comparison. Do not create an admitted “shortcut Method” from one reported occurrence. |
 | Layout instructions for the handbook's publishing tool | Keep them in H. They do not belong in the reusable Method claim. |
 
-The first useful result is the conditional reuse answer, not a new pattern count. A description author can now state the condition and the exact return to A.3.1.CC.
+The first useful result is the conditional reuse answer. A description author can now state the condition and the return to A.3.1.CC.
 
 #### F.0.2.MA:5.2 - A changed source does not erase a former result
 
@@ -144,7 +144,7 @@ The current best-known approach for this question combines source-local conceptu
 
 [Daalhuizen and Cash's Method Content Theory (2021)](https://doi.org/10.1016/j.destud.2021.101018) supplies questions about goal, procedure, rationale, framing and mindset. [Stacey et al. (2025)](https://doi.org/10.1017/dsj.2025.9) reinforces the need to retain the knowledge and use conditions around procedural guidance. Adopt these as source questions; do not turn their different models into a universal field schema or FPF parthood test.
 
-This Method-content allocation is a local synthesis, not a claim of priority over SME or conceptual synthesis. Reopen it when current supply makes a separate result unnecessary, a source difference defeats a merge, or maintaining the allocation costs more than the source reconstruction it saves.
+Reopen this allocation method when current supply makes a separate result unnecessary, a source difference defeats a merge, or maintaining the allocation costs more than the source reconstruction it saves.
 
 ### F.0.2.MA:12 - Relations
 

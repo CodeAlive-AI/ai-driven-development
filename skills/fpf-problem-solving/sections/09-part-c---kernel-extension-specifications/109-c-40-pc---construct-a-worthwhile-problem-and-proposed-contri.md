@@ -10,7 +10,7 @@
 
 **Use this when** a development lead names an attractive niche, technology, course, service, or provider promise, but the receiving use and the reason to change it remain unclear. Someone may say “we need AI,” “become a leader,” or “offer faster analysis” without identifying whose result is unsatisfactory, what difference matters, or what could actually be supplied.
 
-Start by asking the receiver what is missing or foregone in one bounded use. Relate that problem to a proposed contribution and an inspectable acceptance expectation. The first useful result is a supported worthwhile problem or an explicitly unconfirmed problem hypothesis, together with the proposed contribution, its limits, and the question that could confirm, narrow, or reject it.
+Recover from the receiver's account or adequate existing evidence what is missing or foregone in one bounded use. Relate that problem to a proposed contribution and an inspectable acceptance expectation. The first useful result is a supported worthwhile problem or an explicitly unconfirmed problem hypothesis, together with the proposed contribution, its material limits and, when needed, a question that could confirm, narrow or reject it.
 
 The subject that might develop and the receiver of its later contribution can differ. A person may explore their own future Work without an adviser; an organization may investigate a contribution for a client; a research programme may seek an epistemic contribution rather than a commercial offer.
 
@@ -59,7 +59,7 @@ For example:
 
 Faster approval is a different benefit claim; automatic approval is a different contribution and authority question. Preserve those differences if they become live rather than silently extending the proposal.
 
-If rival problem formulations change the subject, boundary, evidence, intervention family, or affected interests, keep them distinct. Retain each materially different formulation with the subject, boundary, evidence, intervention and interests it changes. Obtain a bounded problem-structuring contribution through A.15.9 if the needed formulation cannot yet be constructed from the available grounds. A change of wording that leaves those consequences identical does not create another worthwhile problem.
+Retain rival problem formulations separately when they change the subject, boundary, evidence, intervention family or affected interests, and make those differences explicit. Obtain a bounded problem-structuring contribution through A.15.9 if the needed formulation cannot yet be constructed from the available grounds. A change of wording that leaves those consequences identical does not create another worthwhile problem.
 
 #### C.40.PC:4.3 - Establish what makes the problem worthwhile
 
@@ -88,13 +88,13 @@ A research contribution can be a criticism, discriminating experiment, reproduci
 
 Explain why the proposed result could address the missing receiving result. Mark that connection as supported, conditional, disputed, or hypothetical according to its evidence. Identify what a plausible contrary answer would change.
 
-Ask the smallest question that distinguishes the live possibilities. “Does the reviewer need a source-traceable account of unsupported claims, or is the delay actually caused by unavailable acceptance authority?” can redirect the contribution. “Would you like better AI?” cannot distinguish the problem from the preferred solution.
+When a consequential uncertainty remains, ask a discriminating question whose attainable answer warrants the inquiry. “Does the reviewer need a source-traceable account of unsupported claims, or is the delay actually caused by unavailable acceptance authority?” can redirect the contribution. “Would you like better AI?” cannot distinguish the problem from the preferred solution.
 
 Use existing adequate results before requesting new Work. When another practice must supply an answer, use [A.15.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) for the bounded result request and reliance boundary. The supplying practice answers its own substantive question. A proposed interview, measurement, or experiment still needs the permissions and conditions applicable to that activity.
 
 #### C.40.PC:4.6 - Return the account at the strength it supports
 
-Ordinary prose is enough when the receiver can recover the situation, worthwhile difference or hypothesis, contribution, acceptance expectation, evidence limits, and next question. For example:
+Ordinary prose is enough when the receiver can recover the situation, worthwhile difference or hypothesis, contribution, acceptance expectation, evidence limits and any next question needed by the use. For example:
 
 > The case's acceptance engineer reports that unsupported claims cannot be recovered reliably from the incoming package, and the stipulated review records support that concern. We propose a source-traceable claim-to-evidence account, not approval; the next question is whether the available records and review criteria cover a representative package without breaching confidentiality.
 
@@ -145,7 +145,7 @@ A conforming problem/contribution account:
 4. **MUST** preserve material contrary evidence, affected-System consequences, and burdens that can reverse the worth claim.
 5. **MUST** state an inspectable acceptance expectation without reporting actual acceptance or achieved benefit.
 6. **MUST** distinguish a proposed promise from an existing promise and both from commitment, provision, and fulfilment.
-7. **MUST** expose the evidence or hypothesis linking the contribution to the problem and the next discriminating question.
+7. **MUST** expose the evidence or hypothesis linking the contribution to the problem, and a discriminating question when a material uncertainty remains.
 8. **MUST NOT** infer need from novelty, a supplier offer, or solution feasibility, or reject a supported receiving problem solely because solution evidence is missing.
 9. **MUST** return to the next missing result or stop; a direction, recommendation, choice, or intervention is not required to complete this account.
 
@@ -190,7 +190,7 @@ An explicit confirming question gives provisional value a practical use. It says
 - **Uses C.40.OC:** characteristics and scales needed to make a worth or contribution claim interpretable.
 - **Can supply a selected problem-structuring Method:** the bounded problem/contribution account and unresolved formulation question for a separate decision-support inquiry.
 - **Uses A.2.3:** identity and conditions of relied-on promise content, distinct from commitment and provision.
-- **Uses A.15.9:** the smallest missing outside-practice result and its reliance boundary, without performing the supplier's Method.
+- **Uses A.15.9:** the needed bounded outside-practice result and its reliance boundary, without performing the supplier's Method.
 - **Supplies C.40.DC:** worthwhile problem/proposed-contribution accounts, including explicit hypotheses and acceptance expectations.
 - **Supplies C.40.JF:** the value and contribution claims whose necessary transitions still need qualification; a worthwhile problem is not a reachability verdict.
 - **Uses C.40.RQ:** local requalification when receiving need, source, acceptance, protection, or horizon changes.

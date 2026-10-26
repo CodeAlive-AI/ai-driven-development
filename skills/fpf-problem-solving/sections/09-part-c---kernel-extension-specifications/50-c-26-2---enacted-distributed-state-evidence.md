@@ -22,7 +22,7 @@ Plain glosses:
 - `collective bearer`: the declared team, organization, service mesh, market slice, or other `U.System` whose coordinated work, behavior, or trace pattern is being read.
 - `coordinated work or behavior`: role-work, service behavior, market participant traces, routine, commitment, artifact use, or coordinated action.
 - `distributed-state reading`: a minimal evidence-bound interpretation of coordinated work or behavior, not a new hidden group entity.
-- `carrier`: a log, trace, artifact, commitment, routine, dashboard, report, API response, or document that grounds but does not equal the state.
+- `carrier`: a log, trace record, dashboard, report, API response or other artifact that makes relevant work inspectable. A commitment, routine or change in work is distinguished from the record or observation used as evidence of it.
 - `faithful-enough export`: a representation good enough for the current decision; when it is not faithful enough, state what was lost and why.
 
 ### C.26.2:2 - Problem
@@ -41,7 +41,7 @@ Both fail. Coordinated behavior may evidence a real working state, but it does n
 | Minimal evidence-bound claim vs useful claim | The pattern must say something useful without claiming group mind or durable hidden ontology. |
 | Evidence vs measurement | Some cases have formal measures; many have traces, commitments, routines, and artifacts instead. |
 | Export need vs export loss | The state often must be summarized for a decision, but the summary may lose the coordination that matters. |
-| Primary source family vs QL lens | Distributed cognition, team cognition, routines, and socio-technical evidence are primary; QL enters only when probe, frame, or export effects are load-bearing. |
+| Primary source family vs QL lens | Distributed cognition, team cognition, routines and socio-technical evidence are primary. QL additionally requires C.26's named residual contextual-model obstruction. |
 
 ### C.26.2:4 - Solution
 
@@ -49,7 +49,7 @@ Model the claim as evidence-bound `U.Episteme` over a declared collective `U.Sys
 
 If the proposed bearer is a market slice or service mesh, declare whether it is a collective `U.System`, delivery system, trace population, or evidence set. Continue with EDSE only when a collective `U.System` bearer is established; otherwise retain any supported trace-population or evidence-set claim. Do not infer systemhood from coordinated-looking traces alone.
 
-The primary evidence family is coordinated work, service behavior, market participant traces, work traces, and socio-technical evidence. Distributed cognition, routine dynamics, and team cognition supply the primary interpretive grounding. QL enters only when probe, frame, export, incompatible read, or carrier/export structure that is not faithful enough for the declared use changes the admissible state reading.
+Ground the reading in observed coordinated work or behavior and its evidence. Distributed cognition, routine dynamics and team cognition supply the primary interpretive accounts. These can support an EDSE result without QL; add that lens only when the C.26 activation test establishes a residual contextual-model obstruction.
 
 The canonical EDSE move is to separate the factorable part from the coordination residue before making the minimal state reading:
 
@@ -58,12 +58,14 @@ The canonical EDSE move is to separate the factorable part from the coordination
 3. state what residue remains as a minimal state reading;
 4. state what action this residue supports.
 
-Start with this recognition note:
+Here, residue means the proposed reading left after that comparison, with unresolved rivals retained. Merely naming an alternative does not refute it or establish an additional hidden mechanism. If the ordinary account explains everything needed by the receiving use, use that account and stop.
+
+Start with these recognition questions. Ordinary prose is sufficient when it retains their answers.
 
 | Mini-entry | Question |
 | --- | --- |
 | Collective bearer | Whose coordinated work or behavior is being read: which team, organization, service mesh, market slice, or other declared collective system? |
-| Carriers / window | Which traces, artifacts, work results, commitments, dashboards, API responses, or records ground the reading, and during which window? |
+| Carriers / window | Which observations or records of the coordinated work support the reading, and during which window? Distinguish the observed work or commitment from its evidence carrier. |
 | Minimal state reading | What is the minimal state reading supported by the coordinated work or behavior, or by the trace pattern? |
 | Rival | Which ordinary rival explanation remains live: policy, routine, shared stimulus, dashboard-following, copied artifact, or propagation effect? |
 | Practical change | What can be done now without exceeding the evidence: adjust communication, triage, routing, planning, probe design, or return to a fuller evidence record? |
@@ -77,8 +79,8 @@ Full EDSE record:
 | Collective bearer | Which declared collective `U.System` is being described? |
 | Observed coordinated work, behavior, and trace pattern | Which role-work, service behavior, market participant traces, routine, commitment, artifact use, or coordinated action is observed? |
 | State reading | Which minimal state reading is consistent with the work? |
-| QL cue or formal cue if retained after ordinary work, evidence, or routine explanation | Which probe, export loss, incompatible frame, compound-system decomposition, or no faithful-enough export under the declared probe, frame, and use makes ordinary work and evidence wording insufficient after ordinary explanations have been tried? |
-| Evidence carriers | Which logs, traces, records, commitments, artifacts, dashboards, API responses, or documents ground the reading? |
+| QL cue or formal cue if retained after ordinary work, evidence, or routine explanation | Which named contextual-model obstruction survives ordinary work/evidence explanations and meets C.26's activation test? Omit this field for an ordinary EDSE use. |
+| Evidence carriers | Which logs, trace records, commitment records, artifacts, dashboards, API responses or documents support the reading? |
 | Probe or measurement approximation | Which survey, dashboard, API read, interview, trace query, metric, or publication approximates the state, and how may that probe change, thin, or frame the state reading? |
 | Attempted export and faithful-enough criterion | What export was attempted, and what would count as faithful enough for the current decision? |
 | Loss cause and higher-fidelity export | Why is the current export not faithful enough, and could a more discriminating probe, bridge, representation, or time window produce a higher-fidelity export? |
@@ -172,13 +174,13 @@ This pattern is useful because many real work states are enacted before they are
 Operational evidence sequence:
 
 1. Name the collective bearer as a declared `U.System` and state its boundary; a bare social label does not establish that System.
-2. Name the coordinated work, behavior, or trace pattern being read: actions, routines, commitments, role-work, service behavior, market participant traces, artifacts, or timing. For a precise Work claim, use the `A.15` alignment route through `A.13` and independent `A.15.1` admission; add `F.6` only when the receiving use needs precise assignment-bound attribution through the same obtaining assignment.
+2. Name the coordinated work, behavior, or trace pattern being read: actions, routines, commitments, role-work, service behavior, market participant traces, artifacts, or timing. For a particular dated Work claim, use the `A.15` alignment route through `A.13` and independent `A.15.1` admission; add `F.6` only when the receiving use needs precise assignment-bound attribution through the same obtaining assignment.
 3. Name the evidence carriers through `A.10` so the reading is inspectable.
-4. State the time window, persistence support, decay/refresh condition, reprobe cost, and ordinary rival explanations.
+4. State the time window and ordinary rival explanations. Add persistence support, decay/refresh conditions and reprobe cost when they affect the claim or receiving action, following :4.11.
 5. Name the candidate state reading only as a minimal evidence-bound `U.Episteme` reading.
-6. State the attempted export and what it lost.
+6. When an attempted export carries the claim, state its fidelity criterion and loss. Otherwise retain the supported local reading without inventing an export attempt.
 7. State the minimal supported claim, the supported action or use it carries now, and the other uses that remain unsupported by this reading.
-8. Add `B.3` assurance only when an actual named assurance claim is current; `QLP-3` requires that claim and a `B.3` assurance result for the named QL target claim and receiving use. Consequence level, audit, release, or accountability use may also impose a direct domain requirement for that claim.
+8. Add `B.3` assurance only when an actual named assurance claim is current; `QLP-3` requires that claim and a `B.3` assurance result for the target claim and receiving use. Consequence level, audit, release, or accountability use may also impose a direct domain requirement for that claim.
 
 Required output: produce a minimal evidence-bound distributed-state reading, the time window that bounds it, the live rival explanations, and the supported bounded action or use that follows from that reading.
 
@@ -216,7 +218,7 @@ The syntax is illustrative. A decision-use record retains the distinctions on wh
 Well-formedness constraints:
 
 - `collectiveBearer` is a declared collective system, not a metaphorical subject.
-- `evidenceCarriers` are inspectable publication units, traces, records, commitments, logs, or work-result records.
+- `evidenceCarriers` make the relevant work inspectable through observations, traces, logs, commitment records or other work-result records; the claimed occurrence is not identified with its record.
 - `timeWindow` bounds the claim; persistence beyond that window needs its own support.
 - `ordinaryRivals` include at least the principal policy, incentive, routine, shared stimulus, dashboard-following, copied-artifact, or social-desirability explanation that could explain the same coordination.
 - `minimalSupportedClaim` states only what survives after rivals and export loss are named.
@@ -233,7 +235,7 @@ The pattern keeps four objects separate:
 | Probe / approximation | The survey, dashboard query, interview, trace query, report request, metric, or publication act that frames the state reading. |
 | Distributed-state reading | The minimal `U.Episteme` claim inferred from coordinated work or behavior under carriers, window, rivals, and export limits. |
 
-A survey can be an evidence carrier and a probe. It is not the distributed state. A policy can be a carrier or a routine explanation. It is not automatically evidence that everyone shares one state. A dashboard can be a carrier, a probe, and a behavior-changing instrument. It is not automatically faithful enough for the intended use.
+A survey operation probes; its response records carry outputs. A policy claim can explain an observed routine, while a publication of that policy carries its text. A dashboard can display evidence and act as an instrument in a behavior-changing probe. In each case, recover the operation, content and carrier actually used; none is automatically a faithful representation of the collective state.
 
 #### C.26.2:4.10 - Case bank and near misses
 
@@ -265,17 +267,17 @@ The ordinary EDSE claim is minimal but actionable. It says: "this coordinated wo
 
 ### C.26.2:5 - Archetypal Grounding
 
-Tell: During an incident, several teams independently stop non-critical releases, reroute support, and prepare rollback evidence before any single manager issues a written decision. Later, a survey asks whether "we had decided to freeze release", and answers conflict.
+Tell: In a constructed incident case, the independently identified incident-response System includes Release, Support and Operations teams. Between 14:00 and 14:30, their deployment logs show non-critical releases held, support-routing records show incident traffic redirected, and rollback artifacts are prepared. No written freeze decision is found for that interval. Later survey answers about whether "we had decided to freeze release" conflict.
 
-Show, System side: the collective bearer is the incident-response organization during a declared incident window. Its carriers include deployment logs, meeting records, escalation messages, rollback preparation, support routing, and release queue changes.
+Show, System side: the bearer is that incident-response System during the stated half-hour. Preparing rollback and changing support routing are observed work; logs, messages and artifact records make those actions inspectable. The observations are not replaced by the later survey.
 
-Show, Episteme side: the supported claim is minimal. The organization acted consistently with a release-freeze readiness posture during window W. The claim does not say every participant knew the same proposition or that the coordination exists apart from the declared evidence carriers. A management directive, playbook, or dashboard effect remains a rival unless evidence narrows it.
+Show, Episteme side: the System acted consistently with a release-freeze readiness posture during 14:00–14:30. Report those coordinated actions in incident communication instead of reporting a unanimous freeze decision. An unwritten directive, playbook, shared alarm or dashboard effect remains a rival explanation; the case does not establish a separate causal mechanism. If a playbook fully explains the actions needed by the receiving use, retain that ordinary account. If a next-day plan relies on the posture persisting, obtain the additional support for that later window. The half-hour reading supplies neither persistence nor release-readiness assurance.
 
 ### C.26.2:6 - Bias-Annotation
 
 This pattern biases authors toward minimal evidence-bound claims and explicit evidence. That may feel conservative, but it makes distributed-state language usable.
 
-It also biases authors to keep primary grounding in distributed cognition, team cognition, organizational routines, socio-technical work, and evidence practice. The QL lens is secondary and only becomes active when probing, exporting, or comparing the state changes or loses load-bearing structure.
+It also biases authors to keep primary grounding in distributed cognition, team cognition, organizational routines, socio-technical work, and evidence practice. The QL lens is secondary and additionally requires C.26's contextual-model obstruction test; ordinary export loss or changed probing alone is insufficient.
 
 ### C.26.2:7 - Conformance Checklist
 
@@ -293,7 +295,7 @@ It also biases authors to keep primary grounding in distributed cognition, team 
 | CC-C26.2.10 | Probe / measurement approximation, attempted export, faithful-enough criterion, loss cause, and higher-fidelity export possibility are stated when export or measurement carries the claim. |
 | CC-C26.2.11 | Export loss is stated when the claim depends on export that is not faithful enough for the declared use. |
 | CC-C26.2.12 | The evidence posture is stated when the claim is reused, contested, or higher consequence. |
-| CC-C26.2.13 | Formal measurement uses `C.16`; evidence provenance and bounded reliance use `A.10`; actual named assurance claims use `B.3`, and `QLP-3` requires a `B.3` assurance result for the named QL target claim and receiving use; loss in a cross-context Bridge between exact local senses uses `F.9`. |
+| CC-C26.2.13 | Formal measurement uses `C.16`; evidence provenance and bounded reliance use `A.10`; actual named assurance claims use `B.3`, and `QLP-3` requires a `B.3` assurance result for the target claim and receiving use; loss in a cross-context Bridge between exact local senses uses `F.9`. |
 | CC-C26.2.14 | The pattern inherits `QL-NQ` from `C.26` and does not mint `U.DistributedState`. |
 
 ### C.26.2:8 - Common Anti-Patterns and How to Avoid Them
@@ -321,10 +323,10 @@ Existing FPF patterns can carry parts of the support requirement, but no single 
 | Pattern claim | Practice source | Pattern implication | Adoption stance |
 | --- | --- | --- | --- |
 | Coordinated work can evidence state-like organization without reducing that state to one participant report. | [Representing distributed cognition in socio-technical systems](https://www.sciencedirect.com/science/article/abs/pii/S2405896316321164), team cognition, shared mental models, transactive memory, [organizational routine dynamics resources](https://routines.broad.msu.edu/resources), work traces, and socio-technical systems. | Make these the primary grounding; infer only minimal evidence-bound state readings from carriers, traces, and work. | Adapt as primary non-QL grounding. |
-| Probe/export conditions can change or thin the state reading. | [Quantum-like modeling in biology with open quantum systems and instruments](https://www.sciencedirect.com/science/article/pii/S0303264720301994) / [arXiv](https://arxiv.org/abs/2010.15573) and [Open Systems, Quantum Probability, and Logic for Quantum-like Modeling in Biology, Cognition, and Decision-Making](https://www.mdpi.com/1099-4300/25/6/886). | Activate QL only when probing, formalizing, exporting, or bridging changes or loses load-bearing structure. | Adapt as secondary modeling support. |
+| Probe/export conditions can change or thin the state reading. | [Quantum-like modeling in biology with open quantum systems and instruments](https://www.sciencedirect.com/science/article/pii/S0303264720301994) / [arXiv](https://arxiv.org/abs/2010.15573) and [Open Systems, Quantum Probability, and Logic for Quantum-like Modeling in Biology, Cognition, and Decision-Making](https://www.mdpi.com/1099-4300/25/6/886). | Examine the probe/export effect under its ordinary subject account; retain QL only when C.26's separate obstruction test is met. | Adapt as secondary modeling support. |
 | Contextual judgment and previous judgments can alter the state being reported. | [Quantum Cognition](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-033020-123501). | Treat surveys, interviews, reports, and dashboards as possible probes of enacted state, not faithful copies by default. | Use as probe/export caution with ordinary evidence routes. |
 | Some sequential data can be carried by classical instrument models. | [Quantum-like Cognition in Process Theories: An Analysis](https://arxiv.org/abs/2604.08604). | Keep non-necessity visible: EDSE is a useful FPF evidence pattern, not proof that only QL formalism works. | Use as rival-model discipline. |
-| Carrier plurality is normal in operational evidence. | Observability, incident-management, audit, work-trace, and assurance practice. | Use logs, traces, dashboards, meeting records, commitments, artifacts, and operational changes as carriers, not as faithful copies of the whole state. | Adopt through `A.10` evidence-provenance accounts and `B.3` when an actual named assurance claim is current. |
+| Carrier plurality is normal in operational evidence. | Observability, incident-management, audit, work-trace, and assurance practice. | Use logs, trace records, dashboard outputs, meeting notes, commitment records and other artifacts as evidence of work and operational changes; recover what their content supports about the collective state. | Adopt through `A.10` evidence-provenance accounts and `B.3` when an actual named assurance claim is current. |
 
 Worked-slice discipline from these rows:
 

@@ -72,7 +72,7 @@ When a relation appears absent, distinguish the following outcomes:
 
 An empty position in a diagram establishes none of these outcomes by itself. If adapting a scheme changes a relation's meaning, state that change and reconsider the conclusions that depend on it.
 
-Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden; no record of declining an unnecessary inquiry is required.
+Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden.
 
 Use the resulting answer directly or continue constructing the model it needs. A subject specialist or AI can supply a relation, correspondence or calculation; the required knowledge and access depend on that contribution. Selecting a scheme creates no requirement to traverse a whole ontology or to learn every relation before making the useful move.
 
@@ -114,7 +114,7 @@ Keep an explanatory trace when later use or collaboration requires it. A new mod
 
 ### B.5.FM:5 - Archetypal Grounding
 
-These constructed cases expose different model choices. Their calculations establish conditional consequences; no apparatus test is reported.
+These constructed cases expose different model choices. Their calculations establish conditional consequences.
 
 #### B.5.FM:5.1 - Choose the heat path before commissioning a calculation
 
@@ -234,7 +234,7 @@ Reconsider the scheme-based entry when it repeatedly produces irrelevant questio
 
 **Subject premises of the physical cases.** [OpenStax, University Physics 2, §1.6](https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer) supplies the conducting-layer and convection relations. [Volume 2, §2.1](https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas) supplies the isothermal fixed-amount gas relation; [Volume 1, §14.1](https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure) supplies the hydrostatic pressure relation. The chosen arrangements, simplifications and receiving questions are the present constructions.
 
-Reopen the method when another construction approach supplies a more useful model at comparable effort, or when a recurring difficulty calls for a model-building move absent from this account.
+Reconsider the construction approach when another supplies a more useful model at comparable effort, or when a recurring difficulty calls for an additional model-building move.
 
 ### B.5.FM:12 - Relations
 

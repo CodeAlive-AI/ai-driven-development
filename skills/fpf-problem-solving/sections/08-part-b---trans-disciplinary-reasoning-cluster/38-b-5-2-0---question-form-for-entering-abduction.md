@@ -6,7 +6,7 @@
 
 **Plain-name.** Question form for entering abduction.
 
-**Use this when.** Use this pattern when a stabilized cue, opportunity, probe-related observation or anomaly raises an explanatory question for B.5.2. Publish the question, its scope and motivating grounds while rival explanations remain open.
+**Use this when.** A stabilized cue, opportunity, probe-related observation or anomaly raises an explanatory question for B.5.2. Publish the question, its scope and motivating grounds while rival explanations remain open.
 
 **What goes wrong if missed.** A cue is forced into anomaly form, an opportunity is treated as a hypothesis, or a prompt-like sentence silently smuggles in the preferred answer before rival hypotheses can be compared.
 
@@ -16,10 +16,10 @@
 
 ### B.5.2.0:0 - Kind and publication-form boundary
 
-`U.AbductivePrompt` is a dependent durable publication-form value under episteme publication and abductive entry, not a root U-kind. Its identity is the typed prompt form that may seed `B.5.2` after cue preservation, routing, and language-state threshold checks. A cue, routing note, anomaly sentence, candidate hypothesis, or local prompt label does not become `U.AbductivePrompt` unless the prompt species, open question, scope, and provenance required by this pattern are present.
+`U.AbductivePrompt` is a dependent durable publication-form value under episteme publication and abductive entry, not a root U-kind. It may seed `B.5.2` when its explanatory question, scope and motivating grounds are clear enough for rival comparison under the applicable language-state thresholds. A cue, routing note, anomaly sentence, candidate hypothesis, or local prompt label does not become `U.AbductivePrompt` unless the prompt species, open question, scope, and provenance required by this pattern are present.
 
 ### B.5.2.0:1 - Problem frame
-`B.5.2` needs an entry form that can accept admissible language-state trajectories after cue preservation and routing, without pretending that anomaly is the only admissible starting form.
+`B.5.2` needs an entry form that preserves a question's motivating grounds, including when they arise from an opportunity or probe rather than an anomaly.
 
 ### B.5.2.0:2 - Problem
 If anomaly is the only admissible input, pre-anomaly opportunity cues and route-derived prompt forms are excluded or misrepresented. If anything can enter, abduction loses its typed starting discipline.
@@ -28,11 +28,11 @@ If anomaly is the only admissible input, pre-anomaly opportunity cues and route-
 | Force | Tension |
 |---|---|
 | **Breadth vs discipline** | Admit more than anomaly, but keep a bounded family of admissible prompt species. |
-| **Reuse vs type inflation** | Introduce a clean entry form without exploding the number of heavy publication kinds. |
+| **Reuse vs type inflation** | Use one entry form for several prompt species while keeping their questions distinguishable. |
 | **Prompt vs hypothesis** | Keep the initiating prompt distinct from the downstream abductive outcome. |
 
 ### B.5.2.0:4 - Solution
-`U.AbductivePrompt` is a narrow family head for the prompt forms that may admissibly seed `B.5.2` after admissible cue preservation and governing-pattern selection under `A.16`, `A.16.1`, and `B.4.1`. `A.16.0` is used only when the cue-to-prompt history itself has governance value as an explicit trajectory account. When rendered, a prompt uses ordinary MVPK faces; prompt status is a property of the publication form, not a rival face ontology.
+`U.AbductivePrompt` covers the prompt forms that may seed `B.5.2`. Use `A.16`, `A.16.1` and `B.4.1` when the initiating cue needs preservation, clarification or selection of its next reasoning contribution. Use `A.16.0` only when the cue-to-prompt history itself needs an explicit trajectory account. A prompt uses ordinary MVPK faces; its prompt status belongs to the publication form and remains distinct from its face.
 
 #### B.5.2.0:4.1 - Starter canonical species and conditional extension species
 - starter canonical species:
@@ -86,10 +86,10 @@ The pattern broadens the entry form to abduction, but still keeps it typed and a
 The benefit is cleaner, less brittle abduction-entry terms. The trade-off is one additional explicit prompt family head and one more declared publication form.
 
 ### B.5.2.0:10 - Rationale
-This keeps admissible cue preservation and trajectory publication able to dock into `B.5.2` through a typed prompt form without anomaly inflation and without making `A.16.0` mandatory.
+A typed prompt lets a preserved cue contribute its explanatory question to `B.5.2` while retaining the grounds that made the question worth asking.
 
 ### B.5.2.0:11 - SoTA-Echoing
-The pattern reflects real abductive practice, where opportunities, probe prompts, and stabilized cues often begin the loop before a full anomaly formulation exists.
+An opportunity or a probe-related contrast can raise an explanatory question without being formulated as an anomaly.
 
 ### B.5.2.0:12 - Relations
 - Builds on: `C.2.2a`, `A.16`, `A.16.1`, `B.4.1`, `C.2.LS`, `C.2.4`, `C.2.5`.
@@ -115,7 +115,7 @@ A prompt becomes reusable in `B.5.2` only when its initiating question is explic
 
 #### B.5.2.0:14.1 - Minimal prompt package
 
-A robust abductive prompt should make explicit:
+An abductive prompt should make explicit:
 
 - the **prompt species**,
 - the **open question**,
@@ -145,15 +145,13 @@ Use anomaly species for an explanatory question arising from a failure, contradi
 
 For the four specialization-sensitive species, use the explanatory questions and conditions in §4.1.1. Questions asking which option to acquire, which probe to perform or which substrate to try follow the direct choice routes in §4.3.
 
-Cue-derived prompt entries should stay prompt-headed species rather than projection-headed aliases. The load-bearing question is the prompt kind itself, not one package-local naming trick.
+Name each cue-derived entry as a prompt species, preserving the explanatory question it introduces.
 
 ### B.5.2.0:16 - Boundary crossing and invalid drift
 
 A prompt should enter `B.5.2` only when the question is explicit enough that rival hypotheses can now be compared against it. If the question is still underspecified, the admissible continuation is further stabilization or routing, not premature abduction.
 
 A routed cue may be close to prompt form but still missing one decisive contrast or witness. In such cases the candidate stays outside `U.AbductivePrompt` until its initiating question is stable.
-
-A bare intuition, slogan, or rhetorical question with no prompt species and no cue provenance is not yet an admissible `U.AbductivePrompt`.
 
 A common failure mode is drift from cue -> prompt -> hypothesis without anyone naming the boundary crossings. `B.5.2.0` blocks that drift by keeping the prompt package distinct from both the earlier cue pack and the downstream prime hypothesis.
 
@@ -171,13 +169,7 @@ One note may legitimately contain a bundle of closely related prompts. If so, th
 
 An assurance reader can test prompt readiness with three questions:
 
-1. **Is there a real open explanatory question?** An asserted answer is no longer a prompt; an action-choice question needs its own Method.
-2. **Is the prompt species plausible?** If the initiating cue shape is opportunity-shaped or probe-shaped, forcing anomaly species is a category error.
-3. **Could rival hypotheses now be compared against this prompt?** If not, the prompt candidate probably needs more stabilization before entering `B.5.2`.
-
-Add three follow-up checks:
-
-- **Is the scope tight enough for downstream comparison?**
-- **Is there an imaginable rival-set, even if not yet fully written?**
-- **Is the narrowing still a question rather than a disguised answer?**
+1. **Is there an open explanatory question?** An asserted answer is no longer a prompt; narrowing the scope must leave the answer open. An action-choice question needs its own Method.
+2. **Does the prompt species fit its initiating grounds?** If those grounds are an opportunity or a probe-related contrast, forcing anomaly species misclassifies the question.
+3. **Could meaningful rival hypotheses now be compared under the declared scope?** The rival set need not yet be fully written, but possible alternatives and a scope that permits their comparison must be recoverable. Otherwise stabilize the prompt before entering `B.5.2`.
 ### B.5.2.0:End

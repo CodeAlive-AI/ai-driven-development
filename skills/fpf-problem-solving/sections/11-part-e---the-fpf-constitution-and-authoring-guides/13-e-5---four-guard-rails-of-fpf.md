@@ -3,39 +3,31 @@
 > **Status:** Stable
 
 ### E.5:1 - Problem frame
-FPF positions itself as a **timeless, universal “operating system for
-thought.”**  Collaborative projects of this scope face four predictable
-entropic pulls:
+Use this pattern when authoring or revising Core concepts or their Tooling and Pedagogy forms. Four recurring risks require different checks:
 
-1. **Implementation gravity** – concept prose accretes tool jargon.
-2. **Notation lock‑in** – one diagram style becomes “the language.”
-3. **Convenience cycles** – quick fixes create reverse dependencies.
-4. **Disciplinary monoculture** – implicit bias colours “universal” rules.
+1. **Implementation language** — concept prose acquires tool-specific terms.
+2. **Notation lock-in** — one diagram style becomes the only way to express a concept.
+3. **Reverse dependencies** — a local convenience makes Core depend on an outer layer.
+4. **Disciplinary bias** — domain-specific assumptions enter rules intended for several domains.
 
-Left unchecked, these forces erode Pillars **P‑1 Cognitive Elegance**,
-**P‑4 Open‑Ended Kernel** and **P‑5 FPF Layering**.
+These risks undermine Pillars **P-1 Cognitive Elegance**, **P-4 Open-Ended Kernel** and **P-5 FPF Layering**. Use E.5.1–E.5.4 for the corresponding detailed rules.
 
 ### E.5:2 - Problem
-Without explicit, non‑negotiable protectors the Conceptual Core would
-slowly:
+Core definitions can become tied to transient tools or one notation, acquire dependency cycles, or present domain-specific assumptions as universal. Authors need constraints that preserve reusable meanings while permitting concrete examples and different forms of expression.
 
-* entangle with transient technology terms,
-* hard‑freeze into a single dialect,
-* devolve into a tightly coupled “big ball of mud”,
-* betray its trans‑disciplinary promise.
 
 ### E.5:3 - Forces
 
 | Force | Tension |
 |-------|---------|
-| **Purity vs Pragmatism** | Preserve pristine concepts ↔ need real examples. |
+| **Abstraction vs Concrete Use** | Stable concept definitions ↔ useful real examples. |
 | **Universality vs Convention** | Rules valid across domains ↔ convenience of one familiar notation. |
 | **Modularity vs Integration** | Independent layers ↔ temptation to cross‑link for speed. |
-| **Objectivity vs Perspective** | Neutral framework ↔ contributors’ unavoidable cultural lens. |
+| **Cross-Domain Use vs Perspective** | Claims intended across domains ↔ contributors’ disciplinary and cultural assumptions. |
 
 ### E.5:4 - Solution — the Four Guard‑Rails
-FPF establishes **four architecturally enforced guard‑rails** that every Core, Tooling, and Pedagogy artefact must obey.  They function as an “immune system” resisting each entropic pull.
-**Scope note (conceptual, not lint).** These guard‑rails regulate the **architecture of thought**—concepts, claims, and their relations. Abstract Core definitions exclude incidental tools, formats and workflows. A rule about a named publication form, protocol or grammar may retain the syntax necessary for that subject under E.5.1, with its edition/use boundary. Linting and automation remain outside Core and are optional unless a separate operational contract requires them; they preserve the governed conditions rather than define the concepts.
+Every Core, Tooling, and Pedagogy artefact must obey these **four guard-rails** at its own layer.
+**Scope.** These guard-rails regulate concepts, claims and their relations. Abstract Core definitions exclude incidental tools, formats and workflows. A rule about a named publication form, protocol or grammar may retain the syntax necessary for that subject under E.5.1, with its edition/use boundary. Linting and automation remain outside Core and are optional unless a separate operational contract requires them; they preserve the governed conditions rather than define the concepts.
 
 | # | Guard‑Rail | Protects against |
 |---|------------|------------------|
@@ -51,7 +43,7 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 | Guard‑Rail | `U.System` example | `U.Episteme` example |
 |------------|-------------------|----------------------|
 | GR‑1 | Definition of `U.System` never cites file formats or build scripts. | Definition of `U.Episteme` avoids naming specific proof engines. |
-| GR‑2 | Pump boundary invariant is true in plain text or any diagram. | F‑G‑R semantics hold in algebraic or graph notation alike. |
+| GR‑2 | A meaning-preserving mapping between text and diagram retains the pump boundary invariant. | A meaning-preserving mapping between algebraic and graph expressions retains F‑G‑R semantics. |
 | GR‑3 | A sizing helper imports Core invariants; Core never imports helper tutorials. | Learning guide cites R‑score; Core does not derive its semantics from the guide. |
 | GR‑4 | Bias audit removes thermo‑mechanical jargon from a “universal” pattern. | Audit replaces physics‑centric metaphors in a trust pattern. |
 
@@ -71,22 +63,15 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| **Long‑term integrity** – stops slow drift of the Core toward jargon, notation lock‑in, and hidden cycles. | Authors must run a guard‑rail checklist before submission. *Mitigation:* template auto‑inserts the checklist. |
-| **Stable yet evolvable ecosystem** – Core stays timeless while Tooling & Pedagogy can iterate rapidly. | Early stage contributions may feel constrained; examples in the Pedagogical Companion show compliant paths. |
-| **Trust & auditability** – stakeholders can verify the framework’s purity independently. | Adds overhead to governance; justified by safety and longevity. |
+| **Long‑term integrity** – stops slow drift of the Core toward jargon, notation lock‑in, and hidden cycles. | Authors must check the applicable guard-rails before submission. |
+| **Stable yet evolvable ecosystem** – Core meanings can remain stable while Tooling and Pedagogy change independently. | Early stage contributions may feel constrained; examples in the Pedagogical Companion show compliant paths. |
+| **Trust & auditability** – readers can inspect the declared meaning, dependency and bias boundaries. | Review adds effort; the four named rules make its scope explicit. |
 
 ### E.5:8 - Rationale
-A constitution without enforcement degrades into *dead‑letter rules*.
-The four guard‑rails translate abstract Pillars into **concrete, testable
-constraints**.  Grouping them under one umbrella pattern:
+The four guard-rails turn abstract Pillars into constraints on wording, notation, dependency and bias. Grouping them here gives newcomers one entry to the applicable rule, identifies any needed amendment, and supplies shared requirements for optional automated checks.
 
-* gives newcomers a single “safety index” to consult,
-* makes compliance binary (*pass / amend*),
-* provides a stable anchor for future automated conformance tools—without
-  mentioning any specific engine, thus honouring GR‑1 itself.
+They instantiate Pillars **P-1**, **P-2**, **P-4** and **P-5** and follow the precedence order defined in **E.3**.
 
-They collectively instantiate Pillars **P‑1**, **P‑2**, **P‑4**, **P‑5**
-and reinforce the precedence order defined in **E.3**.
 
 ### E.5:9 - Relations
 

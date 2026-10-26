@@ -28,7 +28,7 @@ If the framework's design prioritizes theoretical purity or formal completeness 
 
 ### E.12:4 - **Solution**
 
-FPF elevates **Didactic Primacy (Pillar P-2)** to a normative architectural principle, operationalized through two conceptual mechanisms designed to act as a permanent counterbalance to excessive formalism.
+FPF makes **Didactic Primacy (Pillar P-2)** an architectural principle. The Rationale Mandate connects formal assurance to its cognitive benefit; the Human-Factor Loop investigates a concrete obstruction or doubtful demand.
 
 #### E.12:4.1 - The Principle of Didactic Primacy (Expanded Definition)
 
@@ -36,7 +36,7 @@ The primary purpose of the FPF is to enhance the cognitive capabilities (qualifi
 
 #### E.12:4.2 - Mechanism 1: The Rationale Mandate
 
-Every key assurance episteme or publication (such as a `U.AssuranceCase` or `Proof`) **MUST** contain a mandatory, human-readable **`rationale`** component.
+Every key assurance episteme or publication (such as a `U.AssuranceCase` or `Proof`) **MUST** contain a human-readable **`rationale`** component.
 
 *   **Nature:** The `rationale` is a narrative explanation of the cognitive benefit.
 *   **Content:** It **MUST** answer the question: *"How does achieving this level of formal assurance tangibly help the agent better understand the problem or make a more reliable decision?"*
@@ -90,7 +90,7 @@ An expert walkthrough can recover all four comparison duties from the actual pas
 
 ### E.12:8 - **Rationale**
 
-This pattern operationalizes **Didactic Primacy (P-2)**, transforming it from a philosophical statement into an enforceable architectural Standard. The `Rationale Mandate` requires a clear explanation of the cognitive purpose of each key assurance episteme or publication. The bounded Human-Factor inquiry examines an actual reader obstruction or work demand while retaining the method's prerequisites and assurance. It does not require a speculative threshold or a refinement proposal when none is supported.
+The `Rationale Mandate` requires a clear explanation of the cognitive purpose of each key assurance episteme or publication. The bounded Human-Factor inquiry examines an actual reader obstruction or work demand while retaining the method's prerequisites and assurance. It does not require a speculative threshold or a refinement proposal when none is supported.
 
 A purely conceptual workload warning would leave the reader without a next action; a stronger psychometric or causal method would require separately justified observations and design. The bounded inquiry supplies an attainable examination and honest stop. It complements formal rigor with the Rationale Mandate and preserves independently justified controls. Together they connect formal assurance with what practitioners need to understand or decide for their work.
 

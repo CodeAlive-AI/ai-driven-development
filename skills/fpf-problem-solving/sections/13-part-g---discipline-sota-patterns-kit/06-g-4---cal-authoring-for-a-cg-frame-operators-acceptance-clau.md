@@ -8,7 +8,7 @@
 
 **Smallest viable CAL pack.** Publish one charter for the exact CG frame, one typed operator card, one acceptance clause with `ClaimScope`, evaluation window, and unknown or failure behavior, one legal flow, one evidence and currentness profile, one proof-or-gap row, one worked declaration example, and a minimal editioned `TaskMap` that cites the exact charter, the C.22 `TaskSignatureRef`, and the declaration refs used by selection. Stop there when this pack answers the task; method-family extensions, archive surfaces, crossing records, and additional policy pins enter only when the case actually needs them.
 
-**What changes in practice.** Thresholds and failure behavior stop hiding in code, illegal arithmetic becomes an authoring defect, and runtime workers can cite stable declarations without pretending that a card, flow, manifest, proof row, or stored evidence ref performed an evaluation.
+**What changes in practice.** Thresholds and failure behavior become inspectable, illegal arithmetic becomes an authoring defect, and runtime workers can cite stable declarations when applying an operator or clause.
 
 **Not this pattern.** Use C.16 for the measurement result, A.19 for comparison or selection, A.13 and A.15.1 for each precise performer and independently admitted dated evaluation Work, F.6 only when exact assignment-bound attribution is current, A.6.1 for actual bindings, C.2.1 for the verdict episteme, A.10/G.6 for provenance, G.11 for currentness, B.3 for assurance, and C.11 for a decision. If the immediate question is whether a declared clause actually ran and what result obtained, go directly to the declaration-to-runtime boundary in §4.4a.
 
@@ -30,7 +30,7 @@ This pattern provides the design‑time authoring kit and the publication surfac
 
 ### G.4:2 - Problem
 
-Teams repeatedly face drift and ambiguity in the CAL Pack that sits between “typed measurements exist” and “a selector/dispatcher runs”:
+A CAL Pack connects typed measurements to later selection and evaluation. Drift or ambiguity in that connection can produce:
 
 * **Illicit operations** slip in (implicit cardinalization, unit laundering, ordinal arithmetic).
 * **Acceptance is scattered** (thresholds embedded in code or in CHR prose; predicates not typed; unknown handling inconsistent).
@@ -66,7 +66,7 @@ The authoring path is complete when a cold reader can reconstruct the plain acce
 
 #### G.4:4.1 - G.Core linkage (normative)
 
-**Builds on:** `G.Core` (Part‑G core invariants; citation/delegation hub)
+**Builds on:** `G.Core` (Part-G core invariants)
 
 **GCoreLinkageManifest (normative).** Canonical shape, Nil‑elision, and the Expansion rule are defined in `G.Core`.
 
@@ -106,7 +106,7 @@ By the `G.Core` Expansion rule, the effective conformance ids / trigger kinds / 
 Notes (normative intent, delegated semantics):
 
 * The semantics of tri‑state outcomes, penalty routing, set‑return discipline, crossing visibility, P2W split, typed RSCR causes, and the Default Governing Definition Index are governed in `G.Core` and are not redefined here.
-* EvidenceGraph/Path pins (when used) are declared only via **`G.4:Ext.EvidenceGraphWiring`** in **G.4:4.5** (so `G.Core linkage` stays minimal and does not “pull in” `G.6` by default).
+* EvidenceGraph/Path pins, when used, are declared only via **`G.4:Ext.EvidenceGraphWiring`** in **G.4:4.5**.
 * Method‑specific pins (e.g., QD descriptor/distance/insert policy pins; open‑ended transfer rules pins) MUST appear only in **Extensions** blocks (see **G.4:4.5**) and MUST NOT introduce competing defaults.
 
 #### G.4:4.2 - `CAL Pack@CG-Frame` surface (kit governed by this pattern)
@@ -248,7 +248,7 @@ This chain keeps declaration, execution, local result, result episteme, provenan
   - `UTSRowId[]` (for cited artifacts)
 - **RSCRTriggerSetIds:** `∅`
 - **RSCRTriggerKindIds:** `{RSCRTriggerKindId.EvidenceSurfaceEdit, RSCRTriggerKindId.EditionPinChange, RSCRTriggerKindId.PolicyPinChange}`
-- **Notes (wiring‑only):** This block does not define EvidenceGraph semantics; it only fixes that CAL proofs/examples may cite evidence by Path ids.
+- **Notes:** CAL proofs and examples may cite G.6 evidence paths by these ids.
 
 **GPatternExtension block: `G.4:Ext.NQD`**
 - **PatternScopeId:** `G.4:Ext.NQD`
@@ -300,7 +300,7 @@ This chain keeps declaration, execution, local result, result episteme, provenan
   - `FailureBehaviorPolicyId`
 - **RSCRTriggerSetIds:** `∅`
 - **RSCRTriggerKindIds:** `{RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.MaturityRungChange, RSCRTriggerKindId.TelemetryDelta}`
-- **Notes (wiring‑only):** This block only pins branch/rule ids for degrade/abstain explanation; it does not redefine rule semantics.
+- **Notes:** The pinned C.23 branches and rules explain the clause's degrade/abstain behavior.
 
 ### G.4:5 - Archetypal Grounding
 
@@ -426,19 +426,19 @@ This yields modularity (one governing definition per invariant or default), audi
 
 ### G.4:11 - SoTA-Echoing
 
-The qualification period for the source-use decisions below starts on 2026-07-30. The source identities below are immutable publications; the G.4 adoption decisions remain qualified through 2027-07-30 unless a governing neighbour adopts a successor earlier or a new result contradicts the named assumption boundary.
+These sources contribute to particular CAL clauses or extensions under the stated conditions. Reconsider the affected use when its source assumptions or adopted contract change.
 
-| Exact source and source-use decision | Visible G.4 mutation | Rejected overread | Smallest source-change replay |
+| Source and adopted contribution | Use in CAL | Applicability limit | Return when |
 | --- | --- | --- | --- |
 | Angelopoulos, Bates, Fisch, Lei, and Schuster, [*Conformal Risk Control*, ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html) — **adapt** bounded monotone-loss risk control only for a CAL clause whose statistical assumptions are explicit. | C3 and `CC-G4-04` require loss, risk/coverage target, calibration population/window, exchangeability or declared shift treatment, and failure/abstain behavior before such a clause is published. Only an actual application under §4.4a supplies the required binding and verdict. | “Conformal”, a calibration set, or a coverage target does not make a universal acceptance guarantee, authorize deployment, or establish that evaluation occurred. | Reopen only C3, `CC-G4-04`, and the one worked clause/test that claims this guarantee when its assumptions or guarantee change. |
 | Fontaine, Togelius, Nikolaidis, and Hoover, [*Covariance Matrix Adaptation for the Rapid Illumination of Behavior Space*, GECCO 2020](https://doi.org/10.1145/3377930.3390232) — **adapt** only the need to pin descriptor, distance, insertion, archive, and reporting policy when `G.4:Ext.NQD` is actually used. | C6, `G.4:Ext.NQD`, and `CC-G4-13` keep QD method semantics in C.18 while making the CAL wiring reproducible. | Archive occupancy, coverage, QD-score, or the presence of CMA-ME wiring is not dominance, acceptance, selection, or a runtime result. | Reopen only C6, `G.4:Ext.NQD`, `CC-G4-13`, and its one NQD example/test if the adopted descriptor/archive contract changes. |
 | Wang et al., [*Enhanced POET: Open-ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions*, ICML/PMLR 119 (2020)](https://proceedings.mlr.press/v119/wang20l.html) — **reject as a source of G.4 core or acceptance semantics**; retain it only as an exact lineage reference for optional exploration wiring under the applicable pattern. | C6 and `CC-G4-11` require an exact current pattern and present-task entry and stop condition before any exploration extension is admitted; no POET-specific rule enters the CAL core. | Open-ended generation, transfer, or progress telemetry does not become a CAL acceptance rule, task authority, or selected governor by citation. | Reopen only C6, `CC-G4-11`, and the exact C.19/C.23 extension block if the applicable pattern explicitly adopts a changed POET-family rule set. |
 
-Distributionally robust and broad multi-objective families are discovery leads, not G.4 decision sources. Current comparison, partial-order, and selected-set law stays with A.18/A.19; a future external source enters this table only after it changes a present C1–C9 action, worked case, or conformance row. Source refresh is local to the row's named rule, example, and check.
+Use A.18/A.19 for comparison, partial-order and selected-set rules. Distributionally robust and broader multi-objective methods are further candidates to investigate when the receiving question needs them. Revisit only the clauses, extensions and applications that depend on a changed source claim.
 
 #### G.4:11.1 - CAL architecture and publication inventory
 
-G.4 is a design-time authoring pattern. It publishes a notation-independent `CAL Pack@CG-Frame` with a charter for the exact CG frame, EntityOfConcern, ReferencePlane, specification editions, and assumption envelope; stable operator, clause, and flow ids; evidence and currentness refs; proof-or-gap records; worked examples and tests; continuity notes; and a minimal `TaskMap`. It uses G.Core, G.0, and G.1–G.3 for Part-G, CG-frame, SoTA, CHR, and legality disciplines; A.6.1 for declarations and actual bindings; A.13 and A.15.1 for precise performers and independently admitted runtime Work; F.6 only for a current assignment-bound attribution through the same obtaining assignment; C.2.1 for result epistemes; and A.10, G.11, B.3, and C.11 for provenance, currentness, assurance, and decisions. G.6 is used only when `G.4:Ext.EvidenceGraphWiring` is present. Method-specific semantics remain in the applicable extension pattern. The detailed manifests, schemas, and interfaces above are citation surfaces for CAL authors and consumers within this one practitioner path, not a second workflow.
+The charter fixes the pack's scope and assumptions. Typed operators and clauses define admissible applications; flows compose them; evidence profiles and the ProofLedger expose their required grounds. The `TaskMap` connects these declarations to selection. Later applications bind actual inputs and produce results under §4.4a. Extensions add only the method-specific declarations needed by that use.
 
 ### G.4:12 - Relations
 

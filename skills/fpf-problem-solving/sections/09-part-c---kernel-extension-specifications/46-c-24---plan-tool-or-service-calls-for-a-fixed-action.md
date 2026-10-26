@@ -8,8 +8,6 @@
 
 **Intent.** Help a practitioner turn an already fixed action or option into a budgeted call plan, then revise that plan or return a bounded checkpoint without confusing planning with selection or execution.
 
-**Instantiates and refines Pillars.** `E.2` `P-3` Scalable Formality, `P-7` Pragmatic Utility, `P-10` Open-Ended Evolution, `P-11` SoTA Alignment, and `C.19.1` Bitter-Lesson Preference when a real scale comparison is current.
-
 **Depends on.** `A.15` and its planning and Work patterns for Methods, descriptions, plans, performed Work, and attribution; `A.15.7` for a situation-responsive next-action decision; `C.11` for a fixed choice among a current `OptionSet`; `C.2.1` when the relied-on decision or checkpoint needs a persistent episteme; `C.18` for candidate-generation records; `C.19` for live-pool policy; `C.19.1` for a scale-based comparison or waiver; `C.16` for measured comparison inputs; `G.6` for call-trace representation; and `B.3` only when a named assurance use needs one bounded assurance result.
 
 **Coordinates with.** `U.PromiseContent` for service acceptance conditions, `C.28` when a planned call is intended to support a causal use, and `E.17`/`E.24.PUB` when an already obtained result is being published or made available.
@@ -112,7 +110,7 @@ If the domain prescription, its applicability or the action it requires changes,
 
 Tool-using Systems may plan across web services, local programs, instruments, robots, or human-operated routes. The implementation may be an LLM agent, a search system, a conventional planner, or a fixed program. The planning problem is the same: turn a fixed action or option into an ordered and bounded route without hiding route grounding, budget, or stop logic.
 
-A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as precise performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work from its performer, Method, interval, and containment facts. Add the exact A.2.1 assignment reference and F.6 only when the plan or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact.
+A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as precise performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work from its performer, Method, interval, and containment facts. Add the exact A.2.1 assignment reference and F.6 only when the plan or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds still hold.
 
 ### C.24:2 - Problem
 
@@ -235,7 +233,7 @@ The field states the planned causal use and any support already consumed. It doe
 
 #### C.24:4.6 - Public quick card
 
-Record:
+An ordinary written plan can supply this content; the schemas above are optional forms. Retain an existing applicable plan when it already states:
 
 - exactly one action-basis branch: the grounded domain-prescribed action, an A.15.7 decision episteme, or a C.11 `choose now` ChoiceResult; add the objective and ordered Method refs;
 - route-description refs only when needed, with their source scheme, exact edition, intended use, and selected Method binding;
@@ -312,7 +310,7 @@ CheckpointReturn:
   commitTrigger = reproduction_is_stable_and_required_evidence_is_current
 ```
 
-If the repeat establishes the trigger, the maintainer decides whether to end route probing and adopt `ci_patch_plan_09`: produce the patch, then run its targeted tests. The maintainer checks the time remaining after that repeat against the plan's 25-minute need and the applicable safety or assurance conditions. If the plan is adopted, the repair agent may start its first call only with the required work-entry permission. The checkpoint itself records neither that permission nor a performed call.
+If the repeat establishes the trigger, the maintainer decides whether to end route probing and adopt `ci_patch_plan_09`: produce the patch, then run its targeted tests. The maintainer checks the time remaining after that repeat against the plan's 25-minute need and the applicable safety or assurance conditions. A 3-minute repeat leaves 27 minutes; a 6-minute repeat leaves 24 and cannot fund the unchanged 25-minute plan. The latter result requires a feasible shorter route, independently permitted budget revision, or stop. If the plan is adopted, the repair agent may start its first call only with the required work-entry permission. The checkpoint itself records neither that permission nor a performed call.
 
 **Two vendor routes with one token.** Vendor A and Vendor B both publish a route called `search`. `vendor_a_search_v2` states scheme `VendorA API`, edition `2026-07`, intended use `repository text search`, and selected Method `RepositoryTextSearchMethod_3`. `vendor_b_search_v5` states scheme `VendorB agent tools`, edition `2026-08`, intended use `web source retrieval`, and selected Method `WebSourceRetrievalMethod_8`. The shared token identifies neither binding; the description fields do. An executable adapter, if used, remains distinct from the Method it implements, and its execution remains separate Work.
 
@@ -349,11 +347,11 @@ Keep notation and vendors out of the conceptual contract. Do not average unlike 
 - **Catch-all policy or profile ref.** Cite the actual PoolPolicyResult, EmitterPolicy, C.19.1 result, B.3 result, or domain-defined constraint, or omit the branch.
 - **Confidence threshold as assurance.** Use a direct condition and cite B.3 only for a named assurance use.
 - **Executable adaptation by implication.** Store the binding in a route description; identify any executable adaptation independently.
-- **Successful probe as commitment.** Require a checkpoint with a commit trigger.
+- **Successful probe as commitment.** Keep the trigger, decision to adopt the proposed plan, and permission to perform its calls distinct; satisfying the trigger supplies no missing decision or permission.
 
 ### C.24:9 - Consequences
 
-Tool use becomes inspectable before execution: the result shows which accepted decision fixed the action or option, which Methods are planned, what budget is reserved, and what changes the route. Identical vendor tokens remain distinguishable by source scheme, edition, intended use, and selected Method. The cost is explicit Method grounding and branch-specific constraint refs. Heavy assurance, causal, or scale-comparison records appear only when their use justifies them.
+Tool use becomes inspectable before execution: the result shows which applicable prescription or accepted decision fixed the action or option, which Methods are planned, what budget is reserved, and what changes the route. Identical vendor tokens remain distinguishable by source scheme, edition, intended use, and selected Method. The cost is explicit Method grounding and branch-specific constraint refs. Heavy assurance, causal, or scale-comparison records appear only when their use justifies them.
 
 ### C.24:10 - Rationale and current practice
 
@@ -368,7 +366,7 @@ Tool use becomes inspectable before execution: the result shows which accepted d
 | DeepPlanning, ACL 2026, [DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints](https://aclanthology.org/2026.acl-long.335/) | **Adapt:** retain global budgets, dependencies, or safe parallelism when material, and use the bounded scout and checkpoint cycle for information needed before commitment. | Long-horizon benchmarks expose degradation and efficiency trade-offs, but their task schemas do not belong in every ordinary call plan. |
 | `C.19.1` current scale-comparison sources and method | **Adopt conditionally:** use Bitter-Lesson pressure only with the actual probe and a named bearer, scale window, evidence, cost, safety, and uncertainty. | Generality is not a winner by label; local policy and waiver stay separate from empirical comparison. |
 
-This set is non-dominated for C.24's declared use because it keeps the smallest common planning contract while exposing the failure dimensions that later work shows can move independently. Remove a field when it changes no route, stop, reliance, or replay; reopen when a new contribution changes that trade-off rather than merely adding another benchmark.
+These contributions distinguish route grounding, plan quality, execution and replanning. Keep only fields that change the route, stop, reliance or replay. Reconsider the plan when new knowledge changes one of those decisions; another benchmark alone need not change an adequate plan.
 
 ### C.24:12 - Relations
 

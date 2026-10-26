@@ -6,14 +6,16 @@
 
 **Plain-name.** Language-state facet profile.
 
-**Use this pattern when.** Use C.2.LS when a `U.Episteme` publication needs one explicit profile that keeps formality, articulation, closure, anchoring, representation factors, and local thresholds visible together.
+**Use this pattern when.** Use C.2.LS when the next use of a published `U.Episteme` needs an explicit profile of selected language-state readings and local thresholds. Select from formality, articulation, closure, anchoring and representation factors.
+
+**Sufficient result and non-use.** The profile can point to existing readings and include only the facets needed together. If ordinary wording, one direct facet reading or an applicable existing profile already serves the receiving use, use it without constructing another bundle.
 
 **What goes wrong if missed.** Teams replace the facet profile with a maturity adjective such as `ready`, `raw`, or `stable`, then use that label to choose routes, decide whether to reopen, interpret Bridges, or make publication decisions. The label hides the actual facet values.
 
 **What this buys.** A thin, decomposable profile bundle: each facet keeps the definition and tests supplied by its own pattern, while the profile gives authors, assurance readers, and integrators one place to publish a threshold-relevant language-state position.
 
 ### C.2.LS:1 - Problem frame
-Once position claims in the declared language-state chart over `U.CharacteristicSpace` must be published and compared, teams need one thin profile bundle that keeps the relevant facets visible as one explicit facet profile without turning that profile into a second characteristic calculus or a surrogate maturity progression.
+To publish or compare position claims in the language-state chart over `U.CharacteristicSpace`, collect the needed facet references and readings in one profile. This makes the readings and their contribution to a receiving threshold inspectable while each facet pattern supplies its own definition.
 
 ### C.2.LS:2 - Problem
 Without a dedicated profile bundle, authors blur articulation, closure, anchoring, and representation into one vague maturity story, or they silently reuse `F` as a surrogate. That blocks admissible threshold publication, undercuts `A.16` move guards, and makes school-to-school bridge work harder than it needs to be.
@@ -26,7 +28,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 | **Local thresholds vs cross-context comparability** | Contexts need local thresholds, but the facet names must stay stable enough for bridge work and viewpoint bundles. |
 
 ### C.2.LS:4 - Solution
-`U.LanguageStateFacetProfile` is a typed profile bundle that names the facets by which position claims in the declared language-state chart over `U.CharacteristicSpace` are published and interpreted:
+`U.LanguageStateFacetProfile` is a typed profile bundle that names the facets needed to publish and interpret a position claim in the declared language-state chart over `U.CharacteristicSpace`. Select the applicable references from:
 
 - `formalityRef` -> the expression-property assessment governed by `C.2.3`, including its selected basis and any justified local ordered summary
 - `articulationExplicitnessRef` -> `U.ArticulationExplicitness` from `C.2.4`
@@ -40,7 +42,7 @@ Without a dedicated profile bundle, authors blur articulation, closure, anchorin
 
 #### C.2.LS:4.0a - Kind and profile-bundle boundary
 
-`U.LanguageStateFacetProfile` is a dependent durable profile-bundle value under the declared `U.LanguageStateSpace` and `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the explicit bundle of language-state facet refs used for position reading and threshold publication. A local dashboard, table, route note, or maturity label is a publication or interpretation over the bundle, not the bundle itself.
+`U.LanguageStateFacetProfile` is a dependent durable profile-bundle value under the declared `U.LanguageStateSpace` and `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the explicit bundle of language-state facet refs used for position reading and threshold publication. A dashboard or table can publish the bundle; its display or label does not determine the facet readings or their admissible use.
 
 #### C.2.LS:4.1 - Contribution boundary
 `C.2.LS` defines only profile composition and requires the language-state facets to remain explicit and non-collapsed. It does **not**:
@@ -57,10 +59,10 @@ Any threshold used to choose a next question, constrain an admissible move, or b
 #### C.2.LS:4.2.a - Local profile-reading witness
 For this pattern, a published facet profile is reviewable when:
 
-- the facet refs are explicit or explicitly inherited from an already pinned upstream publication;
+- the selected facet refs and readings are explicit or recoverable from a cited applicable upstream publication;
 - any threshold-bearing use names the facet whose threshold is being invoked;
 - route notes or local overlays remain informative and visibly docked to the explicit facet bundle;
-- and the profile does not smuggle move rules, bridge rules, gate state, or downstream definitions and tests into the bundle record.
+- and any claimed move, Bridge, gate state or downstream result retains its own governing definition and test.
 
 A polished label, one strong facet, or one memorable route note does not by itself yield an admissible profile reading. The profile remains conformant only when the named facets stay explicit and decomposable.
 
@@ -72,7 +74,7 @@ A language-state judgement may be composite, but the composite shall be decompos
 - `AM.TraceAnchored`,
 - and representation-wise mixed rather than purely symbolic.
 
-A conforming profile makes this decomposition visible rather than hiding it under one poetic label such as "early" or "raw".
+A conforming profile makes this decomposition visible rather than hiding it under one stage label such as "early" or "raw".
 
 #### C.2.LS:4.4 - Corridor map note
 `C.2.LS` participates in the current `Language-State & Semantic Routing Corridor`, but contributes only the thin facet-profile bundle. Readers who need one map of the full language-state pattern set should read the corridor note in `C.2.2a`.
@@ -82,12 +84,12 @@ That map does not change this boundary: `C.2.LS` still does not define cue prese
 ### C.2.LS:5 - Archetypal Grounding
 **Tell.** A team may say a draft is "still forming" for different reasons. `U.LanguageStateFacetProfile` forces the team to say whether the issue is low articulation, low candidate-space closure, an anchoring mismatch, or an unresolved representation-factor bundle.
 
-**Show (System).** An operator alert note can be `AM.OperatorLoop` anchored and low-closure without being low-formality in every respect.
+**Show (System).** An operator alert note can have stable alert terms and structure, `AM.OperatorLoop` anchoring and low closure.
 
 **Show (Episteme).** An inquiry note can be low articulation yet already tightly anchored to exemplars and traces.
 
 ### C.2.LS:6 - Bias-Annotation
-The pattern biases authors toward keeping facets explicit and away from master-scale stories. That cost is intentional: the goal is to prevent surrogate progressions from entering the Core.
+Making selected facet readings explicit costs more than using one stage adjective. It lets the receiving reader test the actual threshold; retain the ordinary wording or existing reading when that already serves the use.
 
 ### C.2.LS:7 - Conformance Checklist
 - `CC-C.2.LS-1` A language-state facet profile **SHALL** reference the patterns that define its facets rather than invent local unnamed factors.
@@ -96,7 +98,7 @@ The pattern biases authors toward keeping facets explicit and away from master-s
 - `CC-C.2.LS-4` Trajectory accounts that rely on facet profiles **SHOULD** reuse A.16 move kinds. Apply E.18 only to an independently selected TransformationFlowStructure; use E.18.2 when its mathematical description is needed.
 - `CC-C.2.LS-5` Composite labels such as `early`, `settled`, or `ready` **SHALL NOT** stand in for the explicit facet bundle when those states matter operationally.
 - `CC-C.2.LS-6` Composite readings, overlays, and route notes **SHALL** remain decomposable into named facets and **MUST NOT** behave as hidden master factors.
-- `CC-C.2.LS-7` A profile bundle **MUST NOT** smuggle move rules, bridge rules, gate state, or downstream definitions and tests into what should remain a thin facet-profile record.
+- `CC-C.2.LS-7` Profile references or notes **MUST NOT** replace the governing move, Bridge, gate or downstream rule. Cite the applicable rule when a proposed consequence depends on it.
 
 ### C.2.LS:8 - Common Anti-Patterns and How to Avoid Them
 - **Shadow progression.** Treating `early/late` as a master scale. Split the judgement into the named facets.
@@ -109,20 +111,16 @@ The pattern biases authors toward keeping facets explicit and away from master-s
 The benefit is clearer source and rule references: early cue work, bridge annotations, and reopen moves can all refer to one explicit facet profile. The trade-off is more explicit profile authoring and threshold publication.
 
 ### C.2.LS:10 - Rationale
-The pattern gives the declared language-state chart over `U.CharacteristicSpace` one stable record through which its facet bundle can be published together, without taking over definitions and tests supplied elsewhere in FPF.
+The profile brings together the references needed to interpret facet readings and test a local threshold. Each referenced pattern supplies the corresponding definition and test; the profile preserves their different contributions to the receiving judgement.
 
 ### C.2.LS:11 - SoTA-Echoing
 
-**SoTA note.** This section does not mint a second rule source. It is a load-bearing alignment statement: the Solution, Conformance Checklist, and boundary discipline of this pattern must match the stance stated here or explicitly justify divergence.
-
-**Source boundary.** The exact facet meanings and profile rules come from `A.18/A.19` and the neighboring FPF patterns. External sources are used only when they change a rule or case.
+**Source boundary.** The facet meanings and profile rules come from `A.18/A.19` and the neighboring FPF patterns. The external comparisons below contribute scoped conditions and publication distinctions.
 
 | Claim need | Bounded comparison | Exact source | Use in `C.2.LS` | Disposition |
 |---|---|---|---|---|
 | Readiness claims should stay scoped instead of collapsing into one global adjective. | A profile can state scoped conditions and local thresholds rather than one blanket readiness label. | NIST AI RMF 1.0 (2023) | Require explicit facet-level thresholds and reject a polished profile label as a substitute for the facet values. | **Adopt/Adapt.** |
 | A publication can keep several named description elements visible without making their container identical to those elements. | Architecture-description vocabulary distinguishes named elements and their correspondence in a published description. | ISO/IEC/IEEE 42010:2022 | Use this only as a narrow publication comparator; it does not establish the language-state facet ontology. | **Narrow comparator only.** |
-
-SysML v2 is deliberately excluded from the positive SoTA basis and from useful lineage for this question. Search prominence and official status do not show that it solves the facet-profile problem, and no demonstrated use here changes a rule or worked case. Treat it as a historical dead end for this comparison. Do not add a replacement citation merely to fill the removed row.
 
 **Local stance.** The useful bounded result is a small explicit facet profile with local thresholds and decomposable readings, not one maturity adjective or one route-coloured bundle label.
 
@@ -151,7 +149,7 @@ A felt or trace-anchored mismatch cue in an inquiry note may be:
 - `AM.EmbodiedFelt`,
 - and representation-wise mixed because the cue is partly verbal, partly kinesthetic, partly exemplar-based.
 
-That profile explains why the cue should remain in `A.16.1` rather than being forced into `A.6.P` or `B.5.2` immediately.
+Use the profile to identify what the next question still needs. `A.16.1` preserves the cue; `A.6.P` can recover an unclear relation, and `B.5.2` starts from an admissible `U.AbductivePrompt`. Apply the receiving pattern's conditions when choosing the move.
 
 #### C.2.LS:13.3 - Architecture-description case
 A viewpoint-bound note about the adequacy of an architecture description may state its constraints through explicit typed predicates, be moderately high in `AE`, still mid-level in `CD`, document-mediated in `AM`, and symbolic in its representation-factor bundle. The profile keeps description-side adequacy distinct from system-side engineering quality.
@@ -167,7 +165,7 @@ When publishing a language-state facet profile:
 1. start from the local authoring problem rather than from a memorized progression;
 2. name the facet refs explicitly;
 3. add threshold refs only when a threshold changes routing, repair, or another operative decision;
-4. avoid global labels such as "mature", "raw", or "ready" unless the profile decomposition is already visible.
+4. when a label such as "mature", "raw", or "ready" carries an operational claim, make the relevant facet readings and conditions visible.
 
 #### C.2.LS:14.2 - For assurance readers
 An assurance reader should ask:
@@ -175,10 +173,10 @@ An assurance reader should ask:
 - is any facet silently replaced by `F`?
 - is a threshold published on an explicit facet rather than on a poetic surrogate?
 - do route or reopen claims actually match the published facet bundle?
-- are profile notes genuinely informative, or are they smuggling definitions or tests from elsewhere?
+- do profile notes guide interpretation while preserving the definitions and tests supplied by the applicable patterns?
 
 #### C.2.LS:14.3 - For integrators
-Integrators should preserve profile references rather than rephrasing them into local slang. A local alias is acceptable only if the underlying facet docking remains explicit and stable.
+Integrators should preserve the profile references. A local alias is acceptable when the underlying facet references remain recoverable and unambiguous.
 
 ### C.2.LS:15 - Extension and Migration Notes
 
@@ -186,33 +184,33 @@ Integrators should preserve profile references rather than rephrasing them into 
 Contexts may extend the profile with local threshold refs, route notes, or additional descriptive aids, but they shall not add a new master facet that collapses the named facet set into one summary factor.
 
 #### C.2.LS:15.2 - Migration from surrogate prose
-Older prose often says:
+When a stage label carries a claim used in routing, comparison or another decision, recover the readings it abbreviates. Examples include:
 
 - "the episteme is still early",
 - "the issue is not mature enough",
 - "the note is ready",
 - "the cue is still raw".
 
-A conforming migration rewrites such statements into explicit facet talk: which facet is low, which is high, which threshold is or is not met, and which move that fact justifies.
+For that use, state the facet reading and its grounds, whether any relied-on threshold is met, and the governing rule for the resulting move. An ordinary description with no such operational claim needs no profile expansion.
 
 #### C.2.LS:15.3 - Boundary reminder
-`U.LanguageStateFacetProfile` is a coordination record. If authors put move rules, bridge rules, scale rules, or bundle semantics into the profile itself, that content belongs with the pattern that defines the move, Bridge, scale, or bundle.
+Use the profile to refer to facet readings and applicable thresholds. Definitions and tests for moves, Bridges, Scales and bundles remain with their governing patterns.
 ### C.2.LS:16 - Profile Publication Package Discipline
 
 #### C.2.LS:16.1 - Minimal publishable profile package
-A publishable `U.LanguageStateFacetProfile` should normally carry:
+A publishable `U.LanguageStateFacetProfile` carries what its receiving use needs:
 
-- the declared facet refs for `AE`, `CD`, `LanguageStateAnchoringMode`, and `LanguageStateRepresentationFactorBundle`;
+- the selected facet refs from :4, with their readings or references to those readings;
 - any threshold refs that substantively affect routing, repair, bridge interpretation, or review load;
-- the local relation to `F` when readers might otherwise treat `F` as a surrogate;
-- any omission note when a facet is intentionally unpublished, unknown, or locally irrelevant.
+- the relation to `F` when readers might otherwise treat `F` as a surrogate;
+- any missing or unknown reading that could change the receiving judgement.
 
 One-line publication is admissible only if the facet definitions and tests remain legible.
 
 #### C.2.LS:16.2 - Partial-profile rule
-A partial profile is admissible only when omission is explicit. Publishing `AE` and `CD` while deferring `LanguageStateAnchoringMode` is acceptable; silently omitting it and then speaking in scalar prose such as "early" or "ready" is not.
+A partial profile identifies its selected facets and any missing reading that could change the receiving judgement. Publishing `AE` and `CD` can suffice when anchoring is irrelevant to that use. If the use depends on anchoring and its value is unavailable, state that unknown; a readiness label cannot fill it.
 
-If only one facet is published, either explain why the others are not included in the current note or point to the note where they are already published.
+One facet can be sufficient for the named use. Refer to other readings only when that use needs them; no note about irrelevant omissions is required.
 
 #### C.2.LS:16.3 - Overlay discipline
 Local overlays such as "explicit-but-open", "trace-heavy", or "operator-tight" are admissible only when they dock to explicit facet refs. Overlays remain secondary to the declared profile and must not replace the facet bundle.
@@ -220,13 +218,13 @@ Local overlays such as "explicit-but-open", "trace-heavy", or "operator-tight" a
 ### C.2.LS:17 - Cross-Facet Reading Rule
 
 #### C.2.LS:17.1 - No master-facet reading
-Do not infer the whole language-state profile from one facet. High `AE` does not entail high `CD`; strong `AM.OperatorLoop` does not fix `AE` or `CD`; symbolic representation does not entail high `F`; low `CD` does not imply low operational consequence.
+Do not infer the whole language-state profile from one facet. High `AE` does not entail high `CD`; strong `AM.OperatorLoop` does not fix `AE` or `CD`; symbolic representation does not establish the expression properties needed by the receiving use; low `CD` does not imply low operational consequence.
 
 #### C.2.LS:17.2 - Threshold interaction rule
-When a threshold is expressed over one facet, say whether the other facets are merely informative or also constraining. A Context may allow entry into `B.5.2.0` once `AE` suffices for an explicit open question while still capping `CD` so rival answers remain live; it may allow entry into `A.6.P` at `AE3+` while still capping `CD` so the move remains exploratory rather than endpoint-binding.
+When a threshold is expressed over one facet, say whether the other facets are merely informative or also constraining. An applicable local rule may allow entry into `B.5.2.0` once `AE` suffices for an explicit open question while still capping `CD` so rival answers remain live; it may allow entry into `A.6.P` at `AE3+` while still capping `CD` so the move remains exploratory rather than endpoint-binding.
 
 #### C.2.LS:17.3 - Transition reading rule
-Read profile transitions facetwise. A note may become more explicit without becoming more closed, more document-mediated without changing closure, or more symbolic without becoming more formal. `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, and `B.5.2.0` should therefore cite the facet transition that actually justifies the move.
+Read profile transitions facetwise. A note may become more explicit without becoming more closed, more document-mediated without changing closure, or more symbolic without adding the expression properties needed by its receiving use. `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, and `B.5.2.0` should therefore cite the facet transition that actually justifies the move.
 
 ### C.2.LS:18 - Review Matrix and Migration Tests
 
@@ -237,12 +235,13 @@ An assurance reader should ask:
 - does any overlay smuggle a hidden scalar or gate decision;
 - are threshold claims tied to the facet that really bears them;
 - do cited moves in `A.16`, `A.16.1`, `A.16.2`, `B.4.1`, or `B.5.2.0` actually match the facet bundle;
-- if the profile crosses a Bridge or viewpoint boundary, did the author use `F.9` for the Bridge, bounded-use claim, and loss account, and keep any optional F.9.1 stance note separate rather than importing it as a fake facet?
+- if reuse depends on distinct local meanings, was `F.9` used for the actual Bridge and its bounded-use claim, keeping any optional loss account or F.9.1 stance note separate from the facets;
+- if viewpoint conformance is claimed, was it tested under `E.17.0`?
 
 #### C.2.LS:18.2 - Migration test for source prose
-Source phrases such as "still immature", "not ready yet", or "already stable enough" should be unpacked into: which facet is claimed, which anchor or bundle member justifies it, which threshold or route consequence follows, and which cited rule or external `authoritySourceRef` justifies that consequence.
+When a receiving use depends on a source phrase such as "still immature" or "already stable enough", recover the claimed facet reading, its grounds, any threshold or route consequence, and the cited rule that warrants that consequence. Add an external `authoritySourceRef` only when an external authority actually supplies the rule.
 
 #### C.2.LS:18.3 - Comparative profile use
-Compare profiles facetwise unless a Context has published an explicit local aggregation for reporting. Such an aggregation remains secondary and must not replace the profile in norms, thresholds, or bridge claims.
+Compare profiles on the named facets. A missing reading leaves that facet's comparison unresolved. A reporting aggregate needs a declared local model and operations admissible for the actual Scales under A.18/A.19; publishing an aggregation rule alone does not establish that basis. The aggregate remains secondary and must not replace the profile in norms, thresholds, or Bridge claims.
 
 ### C.2.LS:End

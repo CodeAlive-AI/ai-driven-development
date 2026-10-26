@@ -1,16 +1,16 @@
 ## FPF.Reference:15 - Raising Semantic Precision
 
-FPF does not expect people to start with perfect terminology. Early thinking is often compressed, metaphorical, and useful. That is not a failure. It becomes a problem only when the compressed phrase begins to govern action, evidence, architecture, publication, decision, work, assurance, or mathematical modeling.
+Compressed or metaphorical wording can be useful. Repair it when a plausible intended reader cannot recover a distinction that changes the claim, action, understanding or reliance.
 
-FPF therefore provides a semantic precision upgrade path:
+Use `F.19` for the complete connected reading and repair. This summary shows where additional restoration may be needed:
 
-1. Notice the wording that is doing too much. Broad heads, pronouns, metaphors, status words, level words, support words, function words, architecture words, and evidence words often signal a hidden claim.
-2. Recover the project entity under concern, relation, claim, or project-side source-use relation being made.
-3. Recover the ontology before changing the word. Name the kinds, slots, context, viewpoint, time, evidence, and use that matter.
-4. Use mathematical modeling or a formal signature only when it helps. FPF calls these a math lens or formal substrate when a graph, order, signature, state space, topology, probability model, or variational principle makes the structure reviewable. Mathematics is not decoration.
-5. Rewrite the wording as a plain reader line and, when needed, technical fields so the practical point remains readable and the claim remains checkable.
-6. State what can now be done, what remains blocked, and which pattern defines or constrains a different claim.
+1. Read a complete sentence, row, paragraph or other coherent span and state what it needs to convey. `E.10:0.2` cues can help locate hidden claims; they do not decide the repair.
+2. Recover the predicate and required participants. Test the complete claim, including negation, modality and conditions; check predicate–participant compatibility and resolve referents and kinds in context.
+3. Try deleting optional wording. Retain it only when it changes the plausible intended reader’s understanding, judgement or action. A guard also needs an independent local ground for the rejected reading. Ask whether a series is needed before checking its membership, relations and discourse load.
+4. If an FPF kind, relation, naming or source-use question remains unresolved, use `E.10` to find its governing pattern. Add mathematical modeling or a formal signature only for a remaining question it can answer.
+5. Write the ordinary technical statement that preserves the needed meaning, conditions and use boundaries; add technical fields only when the use requires them. Compare it with the source span for lost distinctions or changed obligations.
+6. Reread the repaired passage and the context needed to interpret it. Check whether the intended reader can recover the claim and intended use without private explanation. Leave any action-changing limit or blocker explicit, then return to the working question.
 
-This is why `E.10` is a trigger scan rather than a synonym list. `E.10.ARCH` distributes repair to the pattern that can recover the ontology. `A.6.P`, `C.2.P`, `C.16.P`, `C.16.Q`, `C.30.P`, `A.19.SPR`, `A.6.F`, `F.18`, and `F.19` carry major repair families. `C.29` helps when a mathematical lens is needed. `A.6.0` governs formal-substrate declarations when a formal signature is the right object.
+`E.10` supplies wording cues and routes remaining FPF meaning questions; `E.10.ARCH` directs unresolved ontology questions to their governing patterns. `A.6.P`, `C.2.P`, `C.16.P`, `C.16.Q`, `C.30.P`, `A.19.SPR`, `A.6.F` and `F.18` supply subject-specific restoration or naming guidance. `C.29` helps when a mathematical lens is needed. `A.6.0` governs formal-substrate declarations when a formal signature is the object at issue. `F.19` governs the connected rewrite and local rereading.
 
-The success condition is not "the text now sounds precise". The success condition is that after removing overread, the working reader still has a useful move: use the claim within its declared limit, repair it further, apply the related pattern that defines or constrains the remaining claim, or block the claim until the missing record, relation, evidence, or subject-pattern application is supplied.
+A repair succeeds when it preserves the warranted meaning and lets the intended reader use it, obtain a needed clarification or recognize the exact remaining blocker.

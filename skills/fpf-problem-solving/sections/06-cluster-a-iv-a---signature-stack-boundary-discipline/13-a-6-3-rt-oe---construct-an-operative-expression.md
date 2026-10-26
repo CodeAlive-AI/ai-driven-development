@@ -115,7 +115,7 @@ If the operation cannot be followed, locate what is missing. The expression may 
 
 Keep a new conclusion with the construction or argument that establishes it. A diagram can make the argument possible while the argument still supplies the conclusion's justification. Drawing scale, apparent symmetry or a coincident mark supports a subject claim only through the applicable rules.
 
-A worked operation establishes this use under the stated preparation. If fluent execution, learning, transfer or explanation quality is the question, select the corresponding assessment. Use C.2.8 for a recipient's recoverable structure and the relevant Explanation Design or learning Method for the needed change.
+An inspectable worked operation shows how the expression is used under the stated conventions. It does not establish another recipient's fluent execution, learning or transfer. When those results or explanation quality are the question, select the corresponding assessment. Use C.2.8 for a recipient's recoverable structure and the relevant Explanation Design or learning Method for the needed change.
 
 #### A.6.3.RT.OE:4.6 - Return the expression for its next use
 
@@ -231,7 +231,7 @@ These small tables are worked expressions for comparing the cases. If the log al
 
 ### A.6.3.RT.OE:6 - Bias-Annotation
 
-Under E.3's five Principle-Taxonomy lenses (Gov, Arch, Epist, Prag and Did), this pattern concerns expression construction for a stated operation under available conventions. It assumes that subject operations and notation rules can be obtained. It does not supply the full practice of notation invention, mathematical proof, composition or instruction.
+This pattern concerns expression construction for a stated operation under available conventions. It assumes that subject operations and notation rules can be obtained. It does not supply the full practice of notation invention, mathematical proof, composition or instruction.
 
 The cases favor expressions whose participating parts can be inspected directly or followed in time. Very large constructions can need abstraction, tooling or several coordinated representations. Reader preparation and the operation govern whether the added structure helps.
 

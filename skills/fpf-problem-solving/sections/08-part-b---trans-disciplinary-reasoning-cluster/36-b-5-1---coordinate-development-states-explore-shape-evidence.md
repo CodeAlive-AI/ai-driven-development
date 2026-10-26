@@ -49,7 +49,7 @@ B.3.3 governs any assurance conclusion about the particular claim and receiving 
 
 ### B.5.1:6 - **Rationale**
 
-This pattern operationalizes the **Principle of State Explicitness (P-9)** for development coordination. The four states make the project's focus and transition obligations inspectable. B.5 supplies reasoning contributions and B.3.3 qualifies assurance for a claim and use. Keeping those questions distinct supports iterative development without requiring every useful idea or result to become an operational holon.
+This pattern operationalizes the **Principle of State Explicitness (P-9)** for development coordination. The four states make the project's focus and transition obligations inspectable. B.5 supplies reasoning contributions and B.3.3 qualifies assurance for a claim and use. Keeping those questions distinct lets a project use a sufficient result while continuing development of its subject.
 
 ### B.5.1:7 - **Relations**
 

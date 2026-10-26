@@ -64,7 +64,7 @@ For a mathematical application, compare the retained distinctions and operations
 
 Begin with an understood case so a transcription or implementation error can be found. Then use a changed case that exercises the claimed difference: a shared resource, a constraint, an intervention or another relevant variation. Derive a general relation when the intended conclusion ranges beyond the cases. A finite example establishes its own result; a counterexample can refute a general assertion whose premises it satisfies.
 
-Agreement of reported numbers is informative only after their meanings and conditions are aligned. Conversely, different intermediate objects can lead to the same answer through an explained correspondence. Record only the derivation or explanation the receiving use needs; the comparison does not require a standard table or separate report.
+Agreement of reported numbers is informative only after their meanings and conditions are aligned. Conversely, different intermediate objects can lead to the same answer through an explained correspondence. Record only the derivation or explanation the receiving use needs.
 
 #### B.5.TC:4.4 - Locate what causes the difference
 
@@ -182,11 +182,11 @@ For comparing what different mathematical accounts let a practitioner compute, *
 
 For physical formulations that may agree, **adopt** the constructive comparison in Sussman and Wisdom's *Structure and Interpretation of Classical Mechanics*, second edition (2015), §1.6: derive the equations under the stated force and potential assumptions. This answers more than a numerical fit and often costs less than a new simulation. Against selecting a formulation solely by familiarity, preserve the advantage of coordinates adapted to constraints. Sections :4.3–:4.4 and :5.2 separate that choice from numerical approximation. Reopen when interactions, constraints or the requested result change. [Publisher's text](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/9579/sicm_edition_2.zip/chapter001.html).
 
-For comparing causal uses, **adopt** intervention construction from Pearl's *Causal inference in statistics: An overview* (2009), §3.2.1, and **adapt** it here to expose the particular consequence on which two accounts disagree. Agreement in the observed distribution, a serious comparator for prediction, can leave that intervention consequence undecided. This changes :4.4 and :5.3. C.28 supplies the broader causal method. Reopen when the causal premises or intended intervention change. [Author's paper](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf).
+For comparing causal uses, **adopt** intervention construction from Pearl's *Causal inference in statistics: An overview* (2009), §3.2.1, and **adapt** it here to expose the particular consequence on which two accounts disagree. Agreement in the observed distribution, a serious comparator for prediction, can leave that intervention consequence undecided. Sections :4.4 and :5.3 use this construction; C.28 supplies the broader causal method. Reopen when the causal premises or intended intervention change. [Author's paper](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf).
 
 For prediction, a serious alternative to choosing a single account is combining predictive distributions. Yao, Vehtari, Simpson and Gelman's stacking method (2018) chooses weights through predictive performance when the candidate set need not contain the data-generating model. **Adapt** that question-relative choice into :4.5's permission to retain combinations. **Reject** using such predictive weights as a verdict about causal mechanism or mathematical equivalence; those are different comparison questions. The statistical method remains with its domain, including its scoring and validation conditions. Reopen when prediction under another distribution or a different use is required. [Authors' paper](https://sites.stat.columbia.edu/gelman/research/published/stacking.pdf).
 
-This pattern combines these constructive contributions into a common comparison method. Its first result is the comparison obtained under the stated conditions.
+This pattern combines these constructive contributions into a common comparison method.
 
 ### B.5.TC:12 - Relations
 

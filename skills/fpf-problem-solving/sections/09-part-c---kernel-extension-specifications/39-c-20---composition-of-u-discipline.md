@@ -4,36 +4,26 @@
 
 
 
-### C.20:11 - E.24.UK settlement
-
-
-`U.Discipline` is the admitted durable holon kind for one exact field-level practice-and-knowledge whole. C.20 supplies the kind-specific construction criterion; A.1 recognizes one exact candidate under that admitted kind only after the candidate, constituents, obtaining constructive relations, assembly, identity or reidentification rule, composition-grounded whole characteristic, and larger-assembly compatibility are recoverable.
-
-The kind is not established by a field name, subject domain, curriculum, department, professional body, journal, bibliography, standards folder, method family, bridge set, comparison policy, publication set, selected relation structure, or count of local viewpoints. A discipline is not a `U.System` or `U.Episteme` by default. A system, episteme, method, work occurrence, publication occurrence, bridge, comparison, and selected `U.Structure` retain their own identities even when they are used in work concerning a discipline.
-
-C.20 directly governs the narrow `DisciplinePartOfRelation` and the complete discipline-construction test. It does not introduce separate public U-kinds for applied discipline, transdiscipline, tradition, or lineage. Applied, multidisciplinary, transdisciplinary, tradition, lineage, school, and edition wording remains useful only as a separately governed classification, historical claim, or description whose exact criterion is stated.
 
 ### C.20:0 - Use This When
 
 Use this pattern when a team needs to decide whether an apparent field is one durable practice-and-knowledge whole rather than a convenient label or collection. Typical moments include:
 
-- comparing rival traditions within or across apparent disciplines without letting a shared label, Bridge, or comparison table merge them;
-- moving one practice across semantic localities while preserving the exact local meanings, direction, tolerated loss, and discipline boundaries;
-- judging whether an exact Method or method family actually belongs to a field assembly rather than being merely registered, used, cited, published, compared, or taught there;
-- keeping discipline continuity inspectable while its canon, standards, or accepted practices change, and identifying another whole when the reidentification rule fails;
-- deciding whether a research or engineering field has exact parts and a continuing identity;
-- deciding whether a theory, school, standard, or subdiscipline is actually a part;
-- using an applied, multidisciplinary, or transdisciplinary label without letting breadth wording create a kind or whole.
+- comparing rival traditions without letting a shared label, Bridge or comparison table merge them;
+- reusing a practice across semantic localities while preserving local meanings, direction, tolerated loss and field boundaries;
+- testing whether a Method, theory, standard or subdiscipline is a constituent rather than merely used, cited, registered or taught in the field;
+- determining continuity while a canon, standard or accepted practice changes, and identifying another whole when the reidentification rule fails;
+- using an applied, multidisciplinary or transdisciplinary classification under its stated criterion.
 
 **Primary EntityOfConcern.** One exact `U.Entity` candidate being tested for recognition as `U.Discipline`. The candidate is recoverable before the classification result; calling it a candidate discipline does not make the result true.
 
-**First useful move.** Name the exact candidate and two independently identified candidate parts: at least one making a knowledge-bearing contribution and at least one making a reusable-practice contribution. Then state why each direct part relation obtains and one whole-forming fact that couples the two contributions. Do this before letting the discipline name support a comparison, selector or dispatcher, health or maturity claim, transport, or edition decision. If those facts are unavailable, stop at the separately governed objects or collection.
+**First useful move.** Name the exact candidate and two independently identified candidate parts: at least one making a knowledge-bearing contribution and at least one making a reusable-practice contribution. Then state why each direct part relation obtains and one whole-forming fact that couples the two contributions. Do this before letting the discipline name support a comparison, selector or dispatcher, health or maturity claim, transport, or edition decision. If those facts are unavailable, retain the supported account of separately governed objects or their collection and leave the discipline claim unresolved.
 
 **What goes wrong if missed.** A field name starts doing the work of a canon, method repertoire, institution, bridge, comparison policy, and maturity score at once. A card or graph can then manufacture parts, and changes to a journal, standard, method list, or dashboard can silently manufacture a new discipline. Cross-locality reuse can also look valid after local meanings, evidence lanes, or comparison rules have drifted.
 
 **What this buys.** A practitioner can say what the discipline is made of, how the exact parts form one practice-and-knowledge whole, what remains the same through change, and which surrounding objects are merely used by discipline work. That makes comparison, transport, stewardship, and edition work inspectable without reducing the field to a document list or domain label.
 
-**Not this pattern when.** Use domain or catalogue work for a subject-area label; use the effective `ReferenceScheme`, `ClaimScope`, and F.17 local-sense row for one local meaning; use F.9 only when a semantic relation is claimed between two exact F.17 `SchemeSenseCell` values from different semantic contexts and its predicate obtains; C.2.1 and its publication or source-use patterns for one theory, standard, canon item, or their exact episteme edition; C.3, C.2.1, and direct historical or provenance relations for a school, variant, lineage, or classification; A.3.1 and B.1.5 for a Method or composite Method; A.15.1 for dated Work; A.22 for a selected relation organization; A.19.CPM for an actual comparison; C.21 for field-health characteristics; and E.24.PUB for publication. Use C.20 when determining, explaining, or relying on whether one exact field-level candidate has the required construction and continuity. The result may be `true`, `false`, or `unknown`; when the constructive facts are unavailable, stop at a collection.
+**Not this pattern when.** Use domain or catalogue work for a subject-area label; use the effective `ReferenceScheme`, `ClaimScope`, and F.17 local-sense row for one local meaning; use F.9 only when a semantic relation is claimed between two exact F.17 `SchemeSenseCell` values from different semantic contexts and its predicate obtains; C.2.1 and its publication or source-use patterns for one theory, standard, canon item, or their exact episteme edition; C.3, C.2.1, and direct historical or provenance relations for a school, variant, lineage, or classification; A.3.1 and B.1.5 for a Method or composite Method; A.15.1 for dated Work; A.22 for a selected relation organization; A.19.CPM for an actual comparison; C.21 for field-health characteristics; and E.24.PUB for publication. Use C.20 when determining, explaining, or relying on whether one exact field-level candidate has the required construction and continuity. The result may be `true`, `false` or `unknown`. Missing constructive facts leave the discipline claim unknown; they do not establish that the candidate is only a collection. Continue with the separately supported objects or collection when those suffice.
 
 ### C.20:1 - Problem Frame
 
@@ -67,7 +57,9 @@ Without a direct construction test:
 
 #### C.20:4.1 - Run the complete recognition test
 
-Recover six constructive components for the same exact candidate:
+`U.Discipline` is the admitted durable holon kind for a field-level practice-and-knowledge whole. It is neither a `U.System` nor a `U.Episteme` by default. C.20 supplies its construction criterion; A.1 recognizes a candidate under that kind when all six components below and the practice-and-knowledge condition hold.
+
+Recover six constructive components for the same candidate:
 
 1. **Exact candidate.** Identify one exact `U.Entity` and its proposed field boundary. A public name or description is only a designator or episteme about that candidate.
 2. **Exact constituents.** Identify every claimed part under its direct kind and identity pattern. The construction must contain at least one exact knowledge-bearing contribution and at least one exact reusable-practice contribution; these are assembly contributions, not fixed part kinds or heterogeneous card positions.
@@ -208,7 +200,7 @@ For ordinary evidence reliance, use the exact A.10 evidence-provenance relation 
 
 #### C.20:5.0 - Keep the System/Episteme contrast without making the table a constructor
 
-The former Tell-Show-Show contrast remains useful because it asks five different reader questions. Read every cell as an independently governed example, not as a slot or a recipe for manufacturing a discipline.
+The examples distinguish the field candidate from a system, episteme and the relations used to describe its construction. Each cell retains its own subject pattern; the table is not an assembly rule.
 
 | Reader function | System-side safety scene | Episteme-side discipline scene | C.20 boundary |
 | --- | --- | --- | --- |
@@ -240,9 +232,9 @@ A C.13 `Gamma_m.sum` trace may report the candidate, three parts, three part-rel
 
 #### C.20:5.2 - A department, corpus, and method registry are not yet a discipline
 
-`Safety Department A` performs research and teaching Work. Its repository contains standards and papers, and its registry lists analysis Methods. Those facts establish a system, Work, epistemes, publications, and registry membership under their subject patterns.
+`Safety Department A` performs research and teaching Work. Its repository contains standards and papers, and its registry lists analysis Methods. Those facts identify the organization, its research and teaching Work, the standards and papers, and registry membership under their subject patterns. Any publication occurrence additionally needs its own audience-availability basis under E.24.PUB.
 
-They do not yet establish which exact entities are field constituents, any `disciplinePartOf` occurrence, a practice-knowledge assembly, one whole characteristic, or a reidentification rule. The useful result is the recovered collection and work organization. Stop before `U.Discipline`; do not fill missing canon, carrier, bridge, or comparison positions merely to complete a card.
+They leave the field constituents, `disciplinePartOf` occurrences, practice-knowledge assembly, whole characteristic and reidentification rule unresolved. The discipline classification is therefore unknown on these facts. The recovered collection and work organization may suffice for the current question; do not fill missing card positions to manufacture a positive classification.
 
 #### C.20:5.3 - Cross-field reuse does not create a transdiscipline
 
@@ -258,7 +250,7 @@ If the replacement rejects the field's former causal object, changes the practic
 
 ### C.20:6 - Bias-Annotation
 
-Apply five complementary lenses; the later risk table does not replace them.
+These questions expose different ways a field account can acquire unsupported meaning.
 
 | Lens | Question and counter-bias |
 | --- | --- |
@@ -321,7 +313,7 @@ Apply five complementary lenses; the later risk table does not replace them.
 
 ### C.20:8 - Consequences
 
-**Benefits.** Discipline claims become auditable without freezing one universal canon, institution, bridge set, or method repertoire. Rival traditions can remain explicit and federate only through admissible directed uses rather than false consensus; constituent replacement and genuine reidentification can be distinguished. Field comparison and dispatch can consume the exact construction without becoming its cause. A selector can additionally consume exact discipline-relevant Characteristic and evidence or assurance claims, while an admitted publisher System can perform publication Work that yields a readable didactic presentation without making its title, card, column, or registry ontological. Any stewardship, responsibility, authority, ownership, or assignment is stated separately when it independently obtains.
+**Benefits.** The construction account distinguishes constituent replacement from reidentification without freezing a universal canon or Method repertoire. It preserves rival traditions through their explicit contributions and admissible directed uses. Comparison, selection and publication can use that account and their own characteristic, evidence or authority grounds; they do not supply missing construction facts.
 
 **Costs and trade-offs.** A positive claim needs exact parts, direct relation intervals, whole-forming claims, an assembly, a reidentification rule, one whole characteristic, and a larger-assembly compatibility account. The cost is proportional: ordinary use can stop at readable sentences. A named comparison adds Scale, comparator, and CG-Spec literacy; a cross-locality use that relies on an obtaining semantic Bridge adds its separate bounded-use claim and reliance work; trace, evidence, publication, health, selector, or assurance apparatus is added only for a named receiver. That extra explicitness pays back in safer reuse and clearer governance.
 
@@ -337,7 +329,7 @@ This separation keeps every discipline-related claim local to an exact EntityOfC
 
 ### C.20:9.1 - SoTA-Echoing
 
-| Current source or practice line | C.20 adoption | Boundary of non-overread |
+| Source or practice line | Contribution to C.20 | Use boundary |
 | --- | --- | --- |
 | Constructional-ontology work cited in A.1 and C.13 requires explicit constituents, constructive relations, assembly, dependence, and identity choices rather than an extensional list. | Require exact part occurrences, whole-forming claims, an assembly-sensitive reidentification rule, and one composition-grounded whole characteristic. | A graph, card, constructor expression, shared label, or input set creates neither whole nor relation. |
 | Current science-of-science and reproducibility practice cited in C.21 treats field health as several typed, scoped, time-qualified characteristics. | Let C.21 evaluate exact disciplines without importing health coordinates into construction. | Reproducibility, standardization, disruption, diversity, or evidence granularity is not discipline identity or truth by itself. |

@@ -180,7 +180,7 @@ A small successful application provides something to use and a basis for further
 
 **What does a theory's formal structure contribute to an application?** Adopt [Baez and Stay, §2.3](https://arxiv.org/html/0903.0340v3)'s constructive comparison of cartesian and monoidal operations. A familiar “parallel composition” description can leave input duplication unresolved. Section :5.1 obtains the required operation or the obstruction under stated rules, then asks whether the receiving practice can supply it. This pays the cost of recovering only the consequential structure. The broader cross-disciplinary correspondences in that paper do not establish the physical copying operation in our case.
 
-The common method is a synthesis of these contributions. Reopen it when a better approach obtains a usable application with less reconstruction, when a recurring failure requires another connecting operation, or when changed tools alter the contribution the receiver must understand.
+The common method is a synthesis of these contributions. Reconsider how to construct the application when a better approach requires less reconstruction, when a recurring failure requires another connecting operation, or when changed tools alter the contribution the receiver must understand.
 
 ### B.5.TU:12 - Relations
 

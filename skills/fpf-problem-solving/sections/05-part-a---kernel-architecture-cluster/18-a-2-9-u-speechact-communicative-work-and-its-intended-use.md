@@ -2,8 +2,9 @@
 
 > **Status:** Stable
 > **Type:** Definitional work-ontic pattern
+> **Normativity:** Normative unless explicitly marked informative
 
-### A.2.9:0.1 - Kind Settlement
+### A.2.9:0.1 - Communicative Work and Its Description
 
 `U.SpeechAct` is the admitted communicative-work kind under `U.Work`. One individual such as `SA-Approve-4711 : U.SpeechAct` is an actual temporally bounded speech-act occurrence. A `SpeechActRecord : U.Episteme` may state claims about that occurrence.
 
@@ -32,16 +33,6 @@ Typical moments:
 **First useful move.** State who should understand or do what because of the communication, including later self-use by its producer, and what evidence would be enough for the present judgement. Keep response, achievement, later action or change, causal contribution, authority, consent, permission, and admissibility separate. Repair the smallest blocker in the wording, representation, prerequisites, medium, interaction, or a future receiving use—or stop. Only when the named modeling, audit, institutional, or reliance use needs exact occurrence detail, follow the admission and conditional attribution route in §4.1 and SA-C0/SA-C1. Recover taxonomy, scheme, policy, optional channel, and any separate effect only when the use needs them. Create a `SpeechActRecord` only when a receiving use needs a persistent claim about the already admitted occurrence. Apply SA-C1 when a guard, gate, or claim needs exact assignment-bound attribution; otherwise the record may omit that attribution.
 
 **Not this pattern when.** If the question is only what a document says, use A.7/C.2/E.17. If the question is only evidentiary support for a later claim or whether the communication caused a later effect, use A.10 or C.28 after identifying that claim. For whether an actual system or party has a duty, use A.2.8. When the Work is not an act of communicating under §4.1, use A.15.1 directly.
-> **Type:** Definitional (D)
-> **Normativity:** Normative (unless explicitly marked informative)
-> **Placement:** Part A → **A.2 System-role kinds, assignments, and agency kernel**
-> **Refines:** A.2 (System-role kinds and assignments)
-> **Builds on:** A.2.1 (`U.SystemRoleAssignment` direct species), A.2.6 (`Γ_time` and windows), A.7 (EntityOfConcern, Description episteme, and carrier), A.10 (SCR/RSCR carrier discipline), A.13 (precise local agency basis), A.15.1 (`U.Work`), and F.6 (`performedUnderAssignment` attribution)
-> **Purpose (one line):** Admit communicative enactments under `U.SpeechAct`, make a named receiving use and its smallest evidence-backed repair usable before heavier occurrence detail, and provide a minimal optional `SpeechActRecord` while keeping the act, record, utterance description, and evidence carrier separate.
-
-> FPF already treats communicative acts as observable events used in system-role-assignment-state checklists and grounding (“presence of act: AuthorizationSpeechAct exists…”); those checks cite actual occurrences admitted under `U.SpeechAct`, not the kind itself.
-> The spec’s micro-examples and conformance gates distinguish **communicative Work** (“performed a SpeechAct”) from **operational Work** (“executed Work”) while keeping both inside `U.Work` (cf. CC‑A15‑10 GateSplit).
-
 
 ### A.2.9:1 — Problem frame
 
@@ -78,7 +69,7 @@ How can FPF represent communicative enactments so that:
 
 | Force                  | Tension                                                                                                                 |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Minimality             | Needs to be light enough for routine modeling and linting; not a full pragmatics or legal-instrument system.               |
+| Minimality | The account should serve routine use without requiring a full pragmatics or legal-instrument model. |
 | Auditability           | If used as a gate, it must be evidence-backed; but not all communicative acts are equally observable or retainable.     |
 | Interpretive locality  | Recognition and institutional force depend on exact taxonomies, schemes, and current policies; F.9 is needed only when a receiving use really crosses local meanings. |
 | Multi-party reality    | Many real boundaries are multiparty (protocols, organizations); dyadic “speaker-hearer” is too narrow.                  |
@@ -96,7 +87,7 @@ When exact occurrence identity, governance, modeling, audit, or reliance is curr
 
 #### A.2.9:4.1 — Normative definition
 
-`U.SpeechAct <: U.Work` is a kind declaration. An actual Work individual is admitted as `SA : U.SpeechAct` when its primary effect is **communicative**: it places an utterance through an optional channel in a way classified by an exact speech-act recognition taxonomy under an effective reference scheme and, when institutional force is claimed, by a current policy, procedure, or protocol rule as potentially:
+`U.SpeechAct <: U.Work` is a kind declaration. An actual Work individual is admitted as `SA : U.SpeechAct` when its primary effect is **communicative**: it places an utterance through an optional channel in a way classified by an exact speech-act recognition taxonomy under an effective reference scheme. A claimed institutional force additionally depends on the applicable current policy, procedure or protocol rule. The taxonomy may distinguish functions such as:
 
 * asserting/informing,
 * requesting/directing,
@@ -209,10 +200,10 @@ A **`SpeechActRef`** resolves to one actual Work individual admitted as `SA : U.
 
 #### A.2.9:4.4 — Separation rules with `U.Commitment`, `GrantedPermissionRelation@Context`, and `U.PromiseContent` (normative)
 
-1. **Instituting an enduring deontic relation.** A speech-act occurrence may be the actual instituting basis for one `U.Commitment` or `GrantedPermissionRelation@Context` only under an exact current constitutive policy or rule and the effect pattern's satisfied direct predicate. The enduring relation is separately identified. Do not encode obligations or permissions as prose inside `SpeechActRecord`; cite only the exact already obtaining relation occurrences in `institutes.commitments` or `institutes.permissions`.
+1. **Instituting an enduring deontic relation.** A speech-act occurrence may be the actual instituting basis for one `U.Commitment` or `GrantedPermissionRelation@Context` only under an exact current constitutive policy or rule and the effect pattern's satisfied direct predicate. The enduring relation is separately identified. To state an instituted effect in `SpeechActRecord`, cite its already obtaining occurrence in `institutes.commitments` or `institutes.permissions`; quoted duty or permission wording alone does not establish that effect.
 
 2. **Promise content and the act of offering it.**
-   `U.PromiseContent` is the promised-outcome statement; a speech act may be the act of offering or issuing that promise, but the promise content lives in the promise-content object and is referenced from the resulting commitments.
+   `U.PromiseContent` is the promised-outcome statement. A speech act may offer or issue that promise; any resulting commitment references the separate promise-content episteme.
 
 3. **The act and its evidence carrier.**
    A “signed approval PDF”, ticket, message, or API log is a carrier; it may carry an utterance-description episteme or a `SpeechActRecord`. The speech act is the Work occurrence described or evidenced.
@@ -226,9 +217,9 @@ A **`SpeechActRef`** resolves to one actual Work individual admitted as `SA : U.
 
 * **Multi-party:** `addressedTo` is a set. Its optional members may be parties, exact local system-role kinds, or exact obtaining occurrences of directly declared `U.SystemRoleAssignment` species. State which branch each addressee uses. Identify the actual performer and establish any claimed authority, commitment, permission, responsibility or institutional effect under their applicable rules.
 
-### A.2.9:5 — Archetypal Grounding (Tell–Show–Show)
+### A.2.9:5 — Worked Communication Uses
 
-#### A.2.9:5.1 — Tell (universal rule)
+#### A.2.9:5.1 — Receiving-Use Judgement and Observation Record
 
 When a named receiving use is current, first state who should understand or do what, what evidence would be enough, and the smallest repair or stop. Keep the act of communicating, its wording and medium, observed response, achieved use, later effect, causal contribution, and authority or permission questions distinct.
 
@@ -241,7 +232,7 @@ When governance or gating depends on “someone said or did X”, first identify
 The smallest repair may be a clearer threshold sentence or a changed table, followed by evidence that addresses the named use. If the operator lacks permission to make the change, return that blocker instead of repeating the message. If a later need adds audit use, apply it to later communication or a separately named reevaluation. It does not turn “Got it” into achievement of the earlier use.
 
 
-#### A.2.9:5.2 — Show #1 (system archetype: change-control approval gates a deployment)
+#### A.2.9:5.2 — Change-Control Approval and Deployment
 
 **Situation (messy prose):**
 “Change is approved, so the pipeline may deploy.”
@@ -285,7 +276,7 @@ The utterance is about `ChangeRequestId(4711)`; its policy-selected target and d
 **Near misses.** A ticket row alone is a carrier-backed claim, not the act. `ChangeApprovalProcedure_v3` is a MethodDescription, not what the act enacts. A current approver assignment does not prove that approval Work occurred. Without the exact current policies, the occurrence remains communicative Work but establishes no grant.
 
 
-#### A.2.9:5.3 - Show #2 (episteme archetype: publishing a spec edition)
+#### A.2.9:5.3 - Publishing a Specification Edition
 
 **Situation:**
 “The interface spec declares MUST/SHALL requirements.” This sentence describes the specification's contents. The current task is to model publication of version 12 and determine its institutional effects.
@@ -312,13 +303,11 @@ Publication makes the selected `APISpec_v12` edition available with its claim co
 
 ### A.2.9:6 — Bias-Annotation
 
-Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Kernel universal** when the named receiving use of communicative Work, or its governance, eligibility, gating, provenance, or protocol use, makes the act itself current.
+The account favors explicit performers, recognizable communicative functions and evidence suited to a named use. Its limits are:
 
-* **Gov bias:** favors explicit accountable performers and auditable records; increases clarity but adds modeling overhead.
-* **Arch bias:** optimizes evolvability by keeping institutional effects referenceable rather than embedded in prose.
-* **Onto/Epist bias:** preserves the kind/actual-act/record/utterance-description/carrier distinctions and requires an actual performer for an occurrence claim.
-* **Prag bias:** models only what is needed for decisions/audit (not full intention/sincerity/perlocutionary psychology).
-* **Did bias:** keeps the record minimal and queryable for state checklists and boundary reviews.
+* Exact occurrence and institutional claims need the performer and evidence basis, which adds modeling effort; an ordinary receiving-use judgement can remain conversational.
+* Institutional effects are separately referenceable, preserving the distinction between the act and its enduring consequences.
+* Recognition covers the functions needed by the use; the account does not provide a full model of intention, sincerity or perlocutionary psychology.
 
 ### A.2.9:7 — Conformance Checklist (normative)
 
@@ -345,11 +334,11 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Kernel un
 | **Placeholder method as Work anchor**                                     | a fabricated description hides an unknown world-side relation | keep the unresolved claim and source-gap provenance in a separate candidate observation stub; do not call it a `SpeechActRecord` or use it for reliance; recover the actual Method relation before A.15.1 admission and creation of the complete record |
 | **`affected` as aboutness, target, and effect**                            | one field makes mention look like world-side change | state the utterance subject and intended institutional target separately; cite an exact obtaining change/effect relation only when one exists |
 | **Status claim listed as instituted effect**                              | a claim ID is mistaken for the status it describes | cite the exact status or publication relation occurrence; keep the C.2.1 claim and A.10 evidence separate |
-| **Free-text type** (“type=‘approved-ish’”)                                | not lintable; drifts across schemes  | define `SpeechActTypeRef` in the exact recognition-taxonomy episteme and interpret it under the effective reference scheme |
+| **Free-text type** (“type=‘approved-ish’”)                                | the claimed act type has no recoverable recognition criterion  | define `SpeechActTypeRef` in the exact recognition-taxonomy episteme and interpret it under the effective reference scheme |
 | **Generic judgement-context field**                                      | one container word hides taxonomy, scheme, policy, channel, and receiving use | name only the exact recognition taxonomy, effective scheme, current policy/procedure, optional channel, and any actual F.9 crossing |
 | **MethodDescription as enacted Method**                                  | a procedure episteme is made the world-side way of doing | recover exact `enactsMethod -> U.Method`; cite `methodDescriptionRef` only as a separate identifying, constraining, or justifying episteme |
 | **Channel or carrier as act**                                            | transmission or evidence is mistaken for communicative Work | identify the exact speech-act occurrence; keep optional channel, utterance description, and carriers in their direct relations |
-| **Act carries obligations** (obligations embedded as prose in speech act) | collapses act and deontic relation | identify each separately obtaining `U.Commitment` relation occurrence instituted under the exact current rule |
+| **Quoted obligation treated as an instituted duty** | wording in the utterance or record is treated as the deontic relation | identify each separately obtaining `U.Commitment` occurrence instituted under the applicable rule |
 | **Gating without window**                                                 | cannot evaluate freshness            | add explicit `window` and reference it in the guard/checklist                            |
 | **Untraced commitments** (several commitments attributed to one act without identifying each obtaining relation) | loses instituting-act traceability | use one `actTypes` set for one communicative Work and reference each separately obtaining commitment in `institutes.commitments`; identify several acts sharing a carrier only when distinct world-side grounds satisfy §4.1 |
 
@@ -372,14 +361,14 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Kernel un
 
 FPF uses communicative acts both for ordinary receiving uses and as operationally meaningful events such as approvals, notices, and overrides. A.2.9 begins with who should understand or do what and the evidence needed for that use, then admits `U.SpeechAct` through the independent A.13/A.15.1 route when exact occurrence identity is current. F.6 follows only for a separate precise assignment-bound attribution. It treats each actual act as a temporally bounded Work individual enacting an exact Method and uses `SpeechActRecord` only for claim-bearing representation. Occurrence admission remains independent of its description and of any later assignment-bound attribution judgement.
 
-### A.2.9:11 — SoTA-Echoing (informative; current alignment with one historical anchor)
+### A.2.9:11 — SoTA-Echoing (informative)
 
 > **Informative.** Alignment notes; not normative requirements.
 
-* **Adopt — ISO 24617‑2:2020 / multi-dimensional communicative functions.** Modern dialogue‑act standards treat communicative behavior as potentially multi‑functional. A.2.9 mirrors this with an `actTypes` **set** on one communicative Work and permits shared carriers across several acts only when their world-side histories establish distinct occurrences.
-* **Adapt — commitment-based semantics for communication (multi-agent/protocol practice, 2015+).** A pragmatic way to avoid mental-state modeling is to track communication by its **social/institutional effects**, especially on commitments, permissions, and protocol states. A.2.9 reflects this via separate `institutes.commitments` and `institutes.permissions` links to `U.Commitment` and `GrantedPermissionRelation@Context` without modeling sincerity or intention.
-* **Adopt (warning) — illocutionary pluralism in multiparty discourse (2015+).** One utterance commonly performs multiple recognizable functions. A.2.9 avoids the “single force” trap by allowing several recognized functions on one act, while several acts sharing an utterance or carrier still require distinct occurrence grounds.
-* **Adopt, adapt, reject — purpose-relative grounding evidence and structured interaction.** Adopt Clark and Brennan's (1991) purpose-relative grounding principle as a historical anchor: evidence of understanding must be sufficient for the current purpose. Current studies of grounding gaps in human–LLM dialogue (Shaikh et al., 2024, 2025) reinforce the risk of presumed shared understanding, while one structured-interface study (Do et al., 2024) shows that interaction structure can help in its tested setting. Adapt that line in §5.1 by naming the receiving use and evidence first, then changing only the wording, representation, prerequisite, medium, or interaction that blocks it. Reject any inference that a reply, silence, or favourable outcome fixes meaning, proves achievement, or establishes causal contribution. Reopen this guidance when new evidence changes what supports the named use, when participants or medium change materially, or when a relied-on source no longer transfers; recheck only the affected source claim, evidence threshold, medium, or interaction choice.
+* **ISO 24617‑2:2020 / multi-dimensional communicative functions.** Modern dialogue‑act standards treat communicative behavior as potentially multi‑functional. A.2.9 mirrors this with an `actTypes` **set** on one communicative Work and permits shared carriers across several acts only when their world-side histories establish distinct occurrences.
+* **Commitment-based semantics for communication (multi-agent/protocol practice, 2015+).** A pragmatic way to avoid mental-state modeling is to track communication by its **social/institutional effects**, especially on commitments, permissions, and protocol states. A.2.9 reflects this via separate `institutes.commitments` and `institutes.permissions` links to `U.Commitment` and `GrantedPermissionRelation@Context` without modeling sincerity or intention.
+* **Illocutionary pluralism in multiparty discourse (2015+).** One utterance can perform multiple recognizable functions. A.2.9 avoids the “single force” trap by allowing several recognized functions on one act, while several acts sharing an utterance or carrier still require distinct occurrence grounds.
+* **Purpose-relative grounding evidence and structured interaction.** Clark and Brennan's (1991) purpose-relative grounding principle is a historical anchor: evidence of understanding must be sufficient for the current purpose. Studies of grounding gaps in human–LLM dialogue (Shaikh et al., 2024, 2025) reinforce the risk of presumed shared understanding, while one structured-interface study (Do et al., 2024) shows that interaction structure can help in its tested setting. Section 5.1 applies that line by naming the receiving use and evidence first, then changing the wording, representation, prerequisite, medium or interaction that blocks it. A reply, silence or favourable outcome alone does not fix meaning, prove achievement or establish causal contribution. For the named receiving use, reconsider the affected evidence threshold or interaction choice when new evidence, changed participants, a changed medium or a failed source transfer invalidates its basis.
 
 ### A.2.9:12 — Relations
 

@@ -4,6 +4,8 @@
 > **Status:** Stable
 > **Normativity:** Normative (unless explicitly marked informative)
 
+**Use this when** admitted values need a declared valuation for comparison or selection. Select the scoring rule and recover its input basis, output meanings and permitted use before calculating. If the receiving comparison can use the admitted values directly, scoring is unnecessary.
+
 `USCM.IntensionRef` identifies the exact `U.Mechanism` declaration in §4.1 under A.6.1. CHR resolves its score stage to the local Score operation; the declaration supplies the meanings and actual application/binding rules below.
 
 ### A.19.USCM:0 - At a glance — didactic, informative
@@ -11,7 +13,7 @@
 * **Suite stage:** `score` (ordering lives only in `A.19.CHR:4.5` / `suite_protocols`; suite membership is a set in `A.19.CHR:4.2`).
 * **Inputs, conceptual:** an admitted measure profile for the exact evaluated bearer, plus `CNSpecRef`, `CGSpecRef`, and `ScoringMethodDescriptionRef`; their editions name the criteria, claim scope and selected slices, qualification window, comparison or reference basis, evidence policy, and intended result use. `MinimalEvidenceRef` may override the CG-Spec minimum.
 * **Output:** `ScoreProfileSlot` = a set of score measures (vector scores are first‑class; a scalar score is allowed only if explicitly declared).
-* **Non‑goals:** does **not** normalize (UNM), aggregate (ULSAM), compare (CPM), select (SelectorMechanism), threshold, publish, or emit telemetry; it is a scoring step with explicit admissibility and evidence surfaces.
+* **Non‑goals:** does **not** normalize (UNM), aggregate (ULSAM), compare (CPM), select (SelectorMechanism), issue a gate decision, publish, or emit telemetry; it is a scoring step with explicit admissibility and evidence surfaces.
 * **P2W seam:** an A.15.2 baseline selects editions and policies, including ScoringMethodDescriptionRef when USCM is used. A.15.3 typed filling applies only to independently declared receiving positions under A.19.CHR:4.7.2. Actual Score bindings obtain under §4.1; Audit records the effective refs and pins.
 * **Failure mode:** tri‑state guard (`pass|degrade|abstain`); unknown never coerces to `pass`, and MUST NOT be coerced to `0/false`.
 * **Quick rule of thumb:** if `CGSpecSlot.SCP` is missing → `ScoreEligibility = abstain` (fail‑closed); if `ScoringMethodDescriptionSlot` is missing → `ScoreEligibility = abstain` (no implicit scoring method); if `CN‑Spec.comparability` requires normalization‑based comparability → normalization MUST be explicit in choreography (Uses/pins), never hidden inside `Score`.
@@ -50,7 +52,7 @@ Engineering teams often need to convert an admitted (indicator or NCV) profile i
 
 3. **Vector reality vs scalar simplicity.** Many situations require multiple score dimensions. A single scalar score may be convenient but must be an explicit, declared commitment, not a hidden reduction.
 
-4. **Uncertainty vs decisiveness.** Teams need decisions under uncertainty; the framework must prevent epistemic overconfidence. Tri‑state admissibility guards preserve correctness without forcing silent coercions.
+4. **Uncertainty vs decisiveness.** Teams need decisions under uncertainty; the framework must prevent epistemic overconfidence. Tri-state admissibility guards state whether the declared conditions pass, permit degraded use or require abstention; their correctness depends on the rule and evidence.
 
 5. **Strict distinction across CHR steps.** USCM must not absorb UNM, ULSAM, or CPM semantics “for convenience,” or the suite becomes opaque and non‑teachable.
 
@@ -83,8 +85,6 @@ Method semantics (“how to score”) remain out of suite core: they belong in S
 * **IntensionRef:** `USCM.IntensionRef` (canonical target for the suite member named in `A.19.CHR:4.2`).
 
 * **SignatureManifest (optional; importability):** if a USCM publication is intended to be imported/reused, it SHOULD publish a `SignatureManifest` (A.6.0:4.5 and A.6.1; A.6.0 checklist item 10 with `SM-1` through `SM-4`) consistent with `IntensionHeader`/`Imports`, explicitly exposing the stable SlotKind surface (including `ScoringMethodDescriptionSlot`) and any declared scalarization commitment.
-
-* **Tell.** **SCP‑first** scoring: produce score measures from admitted profiles without violating CSLC / scale lawfulness.
 
 * **Purpose:** **SCP‑first** scoring: produce score measures from admitted profiles without violating CSLC / scale lawfulness.
 
@@ -131,7 +131,7 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 * **LawSet** (minimum; admissibility‑first, no hidden scalarization):
 
   1. **SCP+CSLC lawfulness:** any numeric transform used to produce `ScoreProfileSlot` MUST be admissible under `CGSpecSlot.SCP` and CSLC‑lawful (cites `G.0` + `A.18`).
-  2. **ScoringMethod is explicit (no hidden defaults):** `Score` MUST cite `ScoringMethodDescriptionSlot` (edition-pinned via P2W when reproducibility matters; see `A.19.CHR:4.7.2`). Disclose the scoring method **𝒢** (Coordinate→Score), its domain, codomain, Scale, polarity and the properties required by the declared scoring use. Apply C.16 when measurement is claimed and enforce the actual SCP/CSLC restrictions. Boundedness or monotonicity is required only when the selected method or use requires it. USCM MUST NOT rely on an implicit default scoring method.
+  2. **ScoringMethod is explicit (no hidden defaults):** `Score` MUST cite `ScoringMethodDescriptionSlot` (with its edition resolved for this use and recorded in the P2W baseline when applicable; see `A.19.CHR:4.7.2`). Disclose the scoring method **𝒢** (Coordinate→Score), its domain, codomain, Scale, polarity and the properties required by the declared scoring use. Apply C.16 when measurement is claimed and enforce the actual SCP/CSLC restrictions. Boundedness or monotonicity is required only when the selected method or use requires it. USCM MUST NOT rely on an implicit default scoring method.
   3. **No implicit normalization:** `Score` MUST NOT silently perform UNM; if `CNSpecSlot.comparability` requires normalization‑based comparability, the normalization step MUST be explicit in choreography (Uses/pins), not hidden in `Score`.
   4. **Vector scores allowed; scalarization must be explicit:** producing a single scalar score is allowed only if explicitly declared (e.g., by fixing `ScoreProfileSlot` cardinality to 1 and citing the lawful transform); partial‑order semantics MUST NOT be silently reduced to a scalar “tie‑breaker”.
   5. **Unknown is not coerced:** unknown / insufficient evidence MUST NOT be mapped to `0`/`false`; use tri‑state guards and explicit failure behavior.
@@ -139,9 +139,10 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 * **AdmissibilityConditions** (tri‑state guard; fail‑closed on missing admissibility/evidence):
 
   * `ScoreEligibility(InputProfileSlot, CNSpecSlot, CGSpecSlot, ScoringMethodDescriptionSlot, MinimalEvidenceSlot?) → GuardDecision ∈ {pass|degrade|abstain}`.
-  * `pass` requires: (i) `CGSpecSlot.SCP` is present, (ii) the scoring method and edition are explicit, (iii) the input profile is admitted for the exact bearer and criteria, (iv) the cited specs apply to the exact claim scope and selected slices, qualification window, comparison or reference basis, and intended result use, (v) the evidence supporting the admitted profile passes the effective minimum, and (vi) `CN-Spec.comparability` routing is satisfied, including explicit UNM when needed.
+  * `pass` requires: (i) `CGSpecSlot.SCP` is present, (ii) the scoring method and edition are explicit, (iii) the input profile is admitted for the exact bearer and criteria, (iv) the cited specs apply to the exact claim scope and selected slices, qualification window, comparison or reference basis, and intended result use, (v) the evidence supporting the admitted profile passes the effective minimum, and (vi) `CN-Spec.comparability` routing is satisfied, including explicit UNM when needed, and (vii) the declared transformation is defined on the input profile and satisfies the applicable SCP/CSLC restrictions.
   * If `MinimalEvidenceSlot` is absent, the guard MUST evaluate evidence against `CGSpecSlot.MinimalEvidence` (by explicit rule), and MUST NOT return `pass` when evidence is missing/unknown.
-  * If `ScoringMethodDescriptionSlot` is missing or unpinned/ambiguous under the active planned baseline, the guard MUST return `abstain` (fail‑closed), not “assume a default”.
+  * If `ScoringMethodDescriptionSlot` is missing or unresolved or ambiguous under the selected use baseline, the guard MUST return `abstain` (fail‑closed), not “assume a default”.
+  * `degrade` requires every non-evidence condition above and an effective failure policy that permits the stated degraded result when evidence is insufficient. `abstain` applies otherwise, including an undefined transformation or missing required input. A degrade policy supplies no undefined value.
 
 * **Applicability:**
 
@@ -169,11 +170,11 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 
 * **Selected-input basis.** Consume the exact UINDM S and space declaration when an indicator profile is used. For CS7 in A.19.UINDM §5.4, the Celsius policy selects i1 and the declared Celsius scoring rule reads 20, giving 0.5. It cannot read the kelvin position's 293.15 under that rule. After a basis change, resolve the selected positions and the scoring method's input requirements again; keep any projection in the original basis order.
 
-* **A score profile is a set of measures.** `ScoreProfileSlot` is a `U.Set (of U.Measure)`. Treat this as “vector scoring by default.” If a project truly needs a single scalar score, declare that explicitly (per LawSet item 4), rather than assuming scalarity.
+* **A score profile retains its component meanings.** `ScoreProfileSlot` is a `U.Set (of U.Measure)`, with each component's score Characteristic and Scale recoverable. An ordered vector rendering retains the correspondence between positions and those components. Several score dimensions are different from uncertainty expressed by an interval or set for one component. A scalar score, or an interval-valued result, requires its own declared meaning and admissible operations.
 
 * **USCM does not order; it scores.** USCM produces score measures. Any ordering, dominance, or set‑valued comparison is performed by CPM and SelectorMechanism (and any optional aggregation is made explicit via ULSAM). Treating the score as “the decision” is a category error in CHR terms.
 
-* **ScoringMethod is explicit (no hidden defaults).** USCM requires `ScoringMethodDescriptionSlot`: the scoring method is a first‑class, auditable choice (typically pinned in planned baseline). This keeps “how we score” evolvable (wired via method packs) without making it implicit or accidental.
+* **ScoringMethod is explicit (no hidden defaults).** USCM requires `ScoringMethodDescriptionSlot` with its selected edition. A formal A.3.2 U.MethodDescription claim requires an independently admitted A.3.1 Method as exact EntityOfConcern and substantive content about that Method as a way of doing. This keeps “how we score” evolvable (wired via method packs) without making it implicit or accidental.
 
 * **No implicit UNM is a boundary guard.** This discourages convenience implementations that “just normalize inside scoring.” USCM forbids that: if comparability requires normalization‑based routing, the UNM step is explicit in choreography (Uses/pins) and visible in audit surfaces.
 
@@ -197,19 +198,19 @@ The key didactic boundary is: **USCM is allowed to transform measures only withi
 A program manager evaluates competing rollout plans for a product launch.
 
 * The admitted profile includes measures like `{Cost, LeadTime, Reliability, RiskExposure, CarbonPerUnit}`.
-* The CG‑Spec’s `SCP` admits only scale‑lawful transforms (e.g., monotone transforms on ratio/interval measures, explicit unit alignment rules, and prohibited operations on ordinal measures).
+* The CG-Spec's SCP states the allowed transforms and their output meanings. A rescaling that preserves a ratio chart uses a positive factor; an interval-chart conversion uses its admissible affine rule. A different scoring function declares its score Scale and valuation instead of claiming that any monotone function preserves the original quantity.
 * USCM runs `Score(...)` and outputs a score profile such as `{UtilityScore, RiskScore}` rather than forcing a single number.
-* A plan lacks sufficient evidence for `RiskExposure` for the named planning bearer, selected claim slices, and qualification window; `ScoreEligibility` returns `degrade`, and the audit records the effective MinimalEvidence policy and the exact CN-Spec and CG-Spec editions.
+* A plan lacks sufficient evidence for RiskExposure. In this constructed case the declared method can return a bounded risk-score interval from the available inputs, and the effective failure policy permits that qualified output. ScoreEligibility returns degrade only if the non-evidence conditions still hold. Audit retains the interval meaning, limitation and CN/CG editions. If the method has no defined result on the available inputs, the result is abstain instead.
 
-Downstream steps can now compare and select with an explicit audit trail, instead of pretending that “the score was objective.”
+A downstream comparison can use that interval only under a rule that accepts its meaning and uncertainty. The audit identifies the grounds; it does not supply a missing comparison rule.
 
 #### A.19.USCM:5.3 - Show — U.Episteme
 
 A research lead compares several model families for deployment across heterogeneous environments.
 
 * Indicators include calibration and robustness metrics; scoring is done using a calibrated probabilistic score plus uncertainty‑aware score dimensions.
-* A post‑2015 practice example is to keep monotonicity and interpretability constraints explicit (e.g., monotone additive models or monotone deep lattice style models) and to treat uncertainty as first‑class (e.g., conformal set‑valued scoring that yields intervals rather than point scores).
-* USCM produces a score profile that can remain vector‑valued and uncertainty‑aware, and it refuses to coerce “unknown” into a point score. Comparisons and selections occur downstream using set‑valued semantics where appropriate.
+* A chosen scoring method may require monotonicity or interpretability, as in the additive and lattice examples below. A separate prediction-uncertainty account may supply an interval under its own method and conditions; its interval is not another name for a vector of score dimensions.
+* The declared score profile retains each score dimension and any justified uncertainty representation. Unknown input is not replaced by a point score. Downstream comparison explicitly handles the actual scalar, vector or interval meanings it consumes.
 
 ### A.19.USCM:6 - Bias-Annotation — informative
 
@@ -241,25 +242,25 @@ A USCM publication or use is conformant if it satisfies:
 
 7. **Unknown and evidence handling is explicit.** Unknown / insufficient evidence is not coerced to `0/false`. Eligibility uses `GuardDecision ∈ {pass|degrade|abstain}` and evaluates evidence against the effective policy (`MinimalEvidenceSlot` override or `CGSpecSlot.MinimalEvidence`).
 
-8. **Planning and actual binding remain separate.** A.15.2 carries the intended edition/policy baseline; A.15.3 governs typed filling only for independently declared positions. The actual application uses its effective bindings under §4.1, and Audit records their refs and pins. Planned selection alone does not establish actual use.
+8. **Planning and actual binding remain separate.** On a P2W path, A.15.2 carries the intended edition/policy baseline; A.15.3 governs typed filling only for independently declared positions. The actual application uses its effective bindings under §4.1, and Audit records their refs and pins. Planned selection alone does not establish actual use.
 
 9. **Relation and plane discipline.** Another bearer, scope and window, basis, method, plane, or result use gets a fresh eligibility decision. Any F.9 Bridge, kind relation, or plane relation is cited only when the score or conclusion relies on that obtaining relation, and supported loss routes to `R_eff`.
 
-10. **Specialization discipline, if extended.** Any specialization of USCM (`⊑/⊑⁺`) follows the following extension conditions: SlotKind invariance for inherited ops, no new mandatory inputs to the inherited `Score` op, and any extra outputs or ops expressed only via `⊑⁺`.
+10. **Specialization discipline, if extended.** Retain inherited operation-position meanings, add no mandatory input to the inherited Score operation, and declare extra outputs or operations explicitly using the local extension notation `⊑⁺`. A claimed refinement, conservative extension or equivalence additionally needs its exact A.6.1 §4.8 predicate, endpoint facts and applicable preservation test; `⊑/⊑⁺` alone establishes none of them.
 
 ### A.19.USCM:8 - Common Anti‑Patterns and How to Avoid Them
 
-* **Hidden normalization inside scoring.** Scoring silently normalizes or aligns measures. Avoid by making UNM explicit in choreography and keeping USCM's `Score` admissibility‑only.
+* **Hidden normalization inside scoring.** Scoring silently normalizes or aligns measures. Avoid by making UNM explicit in choreography and keeping Score as the declared scoring transformation under its admission conditions.
 
 * **Weighted sum across mixed or non-admissible scales.** Treating “weights + sum” as universal. Avoid by requiring SCP+CSLC admissibility; if the scale operation is not scale-admissible, it is not admissible.
 
 * **Silent scalarization.** Collapsing vector scores or partial orders into a single “overall score” via an untracked tie‑breaker. Avoid by leaving vector scores intact, and making scalarization an explicit declared commitment.
 
-* **Implicit scoring method (“we just use the standard formula”).** The scoring method is assumed rather than declared and pinned. Avoid by requiring `ScoringMethodDescriptionSlot` and edition pinning in planned baseline; treat “identity scoring” (if ever needed) as an explicit method description, not a hidden default.
+* **Implicit scoring method (“we just use the standard formula”).** The scoring method is assumed rather than declared and pinned. Avoid by requiring `ScoringMethodDescriptionSlot` and resolving its edition, recorded in a planned baseline on P2W paths; treat “identity scoring” (if ever needed) as an explicit method description, not a hidden default.
 
 * **Unknown → 0 coercion.** Treating missing evidence as zero, false, or “good enough.” Avoid by tri‑state guards and explicit failure behavior, with auditable effective evidence policy.
 
-* **Shadow CG‑Spec.** Hard‑coding admissibility rules inside a scoring method description instead of citing `CGSpecSlot.SCP`. Avoid by keeping admissibility in CG‑Spec and treating method details as wiring.
+* **Shadow CG‑Spec.** Copying governing CG conditions into a competing local specification creates drift. Cite `CGSpecSlot.SCP` and retain the scoring method's own domain, law and restrictions; method-specific conditions are substantive content, not merely wiring.
 
 * **Telemetry or publish leakage.** Treating scoring as a reporting step. Avoid by keeping publish/telemetry outside suite closure and using the appropriate post-suite mechanisms.
 
@@ -272,7 +273,7 @@ A USCM publication or use is conformant if it satisfies:
 * Makes scoring a first‑class, admissibility‑gated CHR step, reducing illicit arithmetic and silent assumptions.
 * Improves auditability and reproducibility via explicit edition pins and explicit evidence policy selection (override vs default).
 * Preserves evolvability: scoring method families can change via SoTA wiring without changing the USCM intension.
-* Supports correctness under uncertainty via tri‑state guards and explicit unknown handling.
+* Makes uncertainty disposition explicit through the guard result and its effective failure policy.
 
 **Costs / trade‑offs**
 
@@ -292,24 +293,24 @@ This increases both evolvability (stable interface, externalized method semantic
 
 ### A.19.USCM:11 - SoTA-Echoing
 
-**SoTA vs popular note.** This section records alignment to post‑2015 evidence‑backed practice. It is **not** a mandate to use fashionable methods; method semantics stay in SoTA packs (`G.2`) and wiring modules, while this pattern fixes the stable mechanism boundary.
+The following research and architecture-description lines inform distinct choices. A receiving task selects its method and verifies the conditions it needs; none of these examples establishes a universal scoring policy.
 
 
 
 #### A.19.USCM:11.1 - SoTA alignment map
 
-| SoTA practice pointer, post‑2015+                                             | Primary source examples, post‑2015+                                                                                                               | Where it connects to USCM                                                                                                                                        | Adoption status |
+| Practice contribution                                             | Source examples                                                                                                               | Where it connects to USCM                                                                                                                                        | Adoption status |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| Prefer monotone and interpretable scoring surfaces where appropriate          | Explainable additive and monotone model lines, e.g., Lou et al. 2016; Nori et al. 2019; monotone deep lattice style models, e.g., You et al. 2017 | Expressed as **admissibility‑bounded transform freedom** via `CGSpecSlot.SCP` and explicit scalarization rules; method details stay out of the kernel                 | Adapt           |
-| Treat probabilistic scores as measures requiring calibration, not raw outputs | Calibration practice, e.g., temperature scaling (Guo et al. 2017) and successors                                                                  | Expressed as “score is a measure on an explicit scale,” bounded by SCP+CSLC and evidence gating; calibration itself is wired as method semantics, not kernel law | Adapt           |
-| Keep uncertainty explicit and allow set‑valued scoring when appropriate       | Modern conformal prediction practice, e.g., Romano et al. 2019; Barber et al. 2021                                                                | Expressed as “vector scores allowed; unknown not coerced; no hidden scalarization,” enabling downstream set‑valued comparison/selection                          | Adapt           |
-| Keep architectural commitments traceable to one governing pattern                     | ISO/IEC/IEEE 42010:2022 architecture description discipline                                                                                       | Expressed as explicit governing-pattern assignment and Tell+Cite stubs elsewhere (no competing semantics)                                                                  | Adopt           |
+| Prefer monotone and interpretable scoring surfaces where appropriate          | Explainable additive and monotone model lines, e.g., Nori et al. 2019; monotone deep lattice style models, e.g., You et al. 2017 | Expressed as **admissibility‑bounded transform freedom** via `CGSpecSlot.SCP` and explicit scalarization rules; method details stay out of the kernel                 | Adapt           |
+| Assess calibration when interpreting probability estimates as correctness likelihoods | [Guo et al. (2017), On Calibration of Modern Neural Networks](https://proceedings.mlr.press/v70/guo17a.html), including temperature scaling                                                                  | Expressed as “score is a measure on an explicit scale,” bounded by SCP+CSLC and evidence gating; calibration itself is wired as method semantics, not kernel law | Adapt           |
+| Keep prediction uncertainty distinct from multiple score dimensions       | [Romano, Patterson and Candès (2019), Conformalized Quantile Regression](https://arxiv.org/abs/1905.03222), constructs prediction intervals under its stated conditions                                                                | Retain the interval's declared meaning and conditions when a receiving score or comparison uses it. Vector cardinality alone does not establish uncertainty semantics                          | Adapt           |
+| Keep architectural commitments traceable to one governing pattern                     | ISO/IEC/IEEE 42010:2022 architecture description discipline                                                                                       | FPF adapts architecture-description distinctions to explicit governing-pattern references; that local assignment is not a rule claimed from the standard                                                                  | Adapt           |
 
 **Notes per row**
 
 1. USCM does not "implement a particular scoring model"; it preserves a stable, admissibility‑gated surface on which such models can be wired.
 2. Calibration is treated as a lawful transform family that must live within SCP+CSLC; the kernel does not mandate a specific calibration method.
-3. Set‑valued scoring aligns with USCM’s “vector first, scalar by declaration” law, and is naturally consumed by CPM/SelectorMechanism without forcing a spurious total order.
+3. A prediction interval and a vector of score measures carry different meanings. A downstream CPM/SelectorMechanism use needs a declared comparator for whichever result it consumes; neither form supplies an ordering automatically.
 4. Governing-pattern traceability is used here to keep the spec teachable and non-duplicative; it does not add new governance cards or admissibility gates.
 
 ### A.19.USCM:12 - Relations
@@ -321,7 +322,7 @@ This increases both evolvability (stable interface, externalized method semantic
   * `G.0` (CG‑Spec, specifically `SCP` and `MinimalEvidence`).
   * `A.18` (CSLC lawfulness discipline).
   * `C.16` (measurement constitution and scale-lawful operations when measurement is claimed).
-  * `A.15.2` for the planned edition/policy baseline; `A.15.3` plus `A.19.CHR:4.7.2` for typed filling of independently declared positions.
+  * `A.15.2` for the planned edition/policy baseline on P2W paths; `A.15.3` plus `A.19.CHR:4.7.2` for typed filling of independently declared positions.
   * `A.19.CN` (CN‑Spec, specifically `comparability` routing and normalization‑based comparability expectations).
 * **Used by**
 

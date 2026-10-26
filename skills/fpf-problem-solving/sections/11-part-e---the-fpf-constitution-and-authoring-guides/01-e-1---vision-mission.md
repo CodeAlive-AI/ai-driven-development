@@ -24,7 +24,7 @@ When a claim crosses domains without its meaning, basis or conditions, the recei
 
 **Mission Statement**
 
-> *Enable any motivated system/actor/agent/transformer — human or AI — to transform a raw idea into a reproducible, auditable change in the physical world through incremental, falsifiable cycles.*
+> *Enable motivated people and AI agents to transform a raw idea into a reproducible, auditable change in the physical world through incremental, falsifiable cycles.*
 
 **Vision Statement**
 
@@ -96,17 +96,17 @@ The next action is therefore specific: use the supported instruction for this bo
 
 #### E.1:6.1 - SoTA-Echoing — connect conformance to intended use
 
-**Practice question.** Does a well-formed, traceable rule deserve adoption when its contribution and stakeholder benefit remain unclear? The selected line couples rule conformance with a bounded intended-use argument. The serious simpler default checks required fields and invariant labels, accepting the artifact when that trace is complete. That default is inexpensive and can suffice when the substantive argument is already established and unchanged; it cannot establish the argument for a new rule by itself.
+**Practice question.** Does a well-formed, traceable rule deserve adoption when its contribution and stakeholder benefit remain unclear? The selected line couples rule conformance with a bounded intended-use argument. The simpler default checks required fields and invariant labels, accepting the artifact when that trace is complete. That default is inexpensive and can suffice when the substantive argument is already established and unchanged; it cannot establish the argument for a new rule by itself.
 
 The [NASA Systems Engineering Handbook's product verification and validation distinction, §§5.3–5.4](https://www.nasa.gov/reference/5-0-product-realization/) supplies the substantive line: requirements conformance and satisfaction of stakeholder expectations in intended use answer different questions. **Adapt** that distinction to CC-Vision.2/4 and §4 steps 2–3. The handbook concerns engineered products; its authority neither admits an FPF invariant nor proves the universal value of a reasoning framework. The conformance-only shortcut is the compared local default, not NASA's complete method.
 
 The [GOV.UK Service Standard's success-definition guidance](https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data) supports the complementary move of identifying useful performance measures together with user research. **Adapt** it to the explicit benefit and evidence boundary in §5.2. **Reject** treating a metric target as an achieved effect. Neither source supplies a required improvement percentage or a universal framework-effectiveness test.
 
-At the same proposal and two-case scope, §5.2's substantive replay detects the unsafe label-only reuse that a complete traceability field would leave unanswered. It costs a small explicit comparison; wider reader or performance claims cost separately justified inquiry. Reuse an already adequate argument when its conditions match, and justify an omitted benefit where CC-Vision.4 permits it. Reopen only when the intended task, invariant contribution, benefit evidence or serious cheaper alternative changes enough to affect adoption.
+At the same proposal and two-case scope, §5.2's substantive replay detects the unsafe label-only reuse that a complete traceability field would leave unanswered. It costs a small explicit comparison; wider reader or performance claims cost separately justified inquiry. Reuse an already adequate argument when its conditions match, and justify an omitted benefit where CC-Vision.4 permits it. Reopen only when the intended task, invariant contribution, benefit evidence or cheaper alternative changes enough to affect adoption.
 
 ### E.1:7 - Relations & Precedence
 Pattern E.1 governs **E.2 Eleven Pillars** and the Guard‑Rail set **E.5**; any later pattern that conflicts with E.1 **MUST** be revised via a DRR before entering the Canon.
 
-*“Purpose without a scaffold is wishful thinking; a scaffold without purpose is cargo‑cult—FPF welds the two into disciplined imagination.”*
+
 
 ### E.1:End

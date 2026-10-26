@@ -9,7 +9,7 @@
 
 Use this pattern when a one-Method, plurality, or Method-relation focus needs alternatives, variants, evidence, and provenance that another practitioner can inspect and reuse. Typical uses include comparing several Methods, forming a project proposal, locating a variant, or checking whether a familiar source contribution still supports the current question.
 
-Begin with the named comparison or proposal use, the focus result or equivalent subject statement, and the practical result the project needs. Search the practice that owns that result; add primary Method-construction and reuse sources when their contribution can change the repertoire. Keep exact editions and status visible while assembling the smallest repertoire that can support the use.
+Begin with the named comparison or proposal use, the focus result or equivalent subject statement, and the practical result the project needs. Search the practice that owns that result; add primary Method-construction and reuse sources when their contribution can change the repertoire. Keep exact editions and status visible while assembling a repertoire sufficient for the use. Reuse an adequate repertoire whose grounds still apply.
 
 The first useful result is a set of status-preserving entries with claim-bearing source material, supported relations, evidence limits, currentness, and explicit missing positions. An honest gap is part of the repertoire when it changes comparison or proposal work.
 
@@ -19,7 +19,7 @@ Do not treat a bibliography, repository, package outline, observed Work, or list
 
 | Name used here | Meaning |
 | --- | --- |
-| named-use repertoire | The smallest inspectable result that exposes subjects, statuses, claim-bearing sources, relations, limits, and gaps for one comparison or proposal use. It is not every item in a repository. |
+| named-use repertoire | An inspectable result that exposes subjects, statuses, claim-bearing sources, relations, limits, and gaps for one comparison or proposal use. It is not every item in a repository. |
 | identified Method | A reusable world-side way of doing already identified under `A.3.1`. Repertoire inclusion does not repeat or strengthen that identity. |
 | candidate Method account | A provisional claim-bearing episteme about a possible Method. Repertoire inclusion preserves its unresolved identity conditions. |
 | MethodDescription | A description of one already identified Method under `A.3.2`, kept distinct from that Method, candidate accounts, and Work occurrences. |
@@ -66,15 +66,17 @@ Recognition is cheap: a source or repository entry is worth inspecting when it m
 1. **Bind the repertoire use.** Name the focus, receiving result, decision, situation family, and what the next comparison or proposal must inspect. State what would make an entry relevant.
 2. **Search the contributing source lines.** Search the problem-owning practice for Methods, accounts, variants, evidence, and current operating constraints. When constructing, adapting or reusing ways of working is itself unresolved, include primary Method Engineering sources for the relevant construction and source-organization contribution. A sufficient domain repertoire needs no additional literature pass solely because its subject is a Method. Record exact source editions or dates and the claim-bearing passages or artifacts used.
 3. **Recover subjects before grouping them.** Cite the existing `A.3.1` identity result for every identified Method. Keep provisional material as a candidate Method account. Attach a MethodDescription only to its already identified Method. Keep tools, roles, capabilities, support arrangements, evidence, and Work occurrences under their actual kinds.
-4. **Extract contributions with limits.** For every useful source, state the contribution used, the subject it concerns, its evidence or status, its scope, and what it does not establish. A package position or source vocabulary does not determine the FPF kind.
+4. **Extract contributions with limits.** For every useful source, state the contribution used, the subject it concerns, its evidence or status, its scope, and any material limit on its use. A package position or source vocabulary does not determine the FPF kind.
 5. **Record relations independently.** Separate established family membership, project-local grouping, variant claims, input/result relations, and supported lineage relations. For lineage, name both exact subjects, the relation claimed, and the source that supports it. Leave same-Method identity, causal effect, superiority, and composition open unless their own governors settle them.
 6. **Pin editions and use-qualified currentness.** Distinguish publication or artifact edition from the claim relied on for the current use. Keep its relevant conditions and actual evidence, permission or qualification windows; identify the changed premise that would require reconsideration. A new edition or review date can invite attention without defeating that claim. Use a broader `G.2` SoTA pack only when the use needs refreshable multi-source synthesis rather than a small question-relative source set.
 7. **Expose missing positions.** List absent alternatives, unknown editions, unsupported ancestry, missing evidence, unresolved family status, and contributions whose source meaning cannot yet be recovered. Say which next use each gap blocks or merely weakens.
-8. **Return the bounded repertoire.** Publish the subject inventory, source-contribution rows, relation rows, currentness limits, and gaps for the named use. Stop when the next decision can inspect the live alternatives and uncertainties without guessing their status.
+8. **Return the bounded repertoire.** Make the subjects, source contributions, relations, applicable conditions and any gaps available for the named use. Reuse an adequate existing account; publish a separate record when later receivers need one. Stop when the next decision can inspect the live alternatives and uncertainties without guessing their status.
 
 #### C.39.RP:4.2 - Record the Result
 
-| Result position | Required content |
+The following positions can organize a record when one is needed. Include only relations and gaps relevant to the use; the table does not require an unsupported relation or missing position to exist.
+
+| Result position | Content |
 | --- | --- |
 | repertoire use | Focus, receiving result, situation family, consuming comparison or proposal, relevance criterion, and scope. |
 | subject inventory | Exact Method identities, candidate-account refs, MethodDescription refs, and unlike supporting subjects kept outside the Method rows. |
@@ -100,7 +102,7 @@ The EC-417 project needs an inspectable repertoire for a Method-relation compari
 | `M-Release-Authorize`, identified Method | existing `A.3.1` identity result; release checklist `RC-17.3`; named authorization results | consumes verification, evidence-state, and authority conditions for EC-417 | no family relation with the other three Methods is established |
 | `C-Evidence-Reconcile-Internal`, candidate Method account | eight internal cases in evidence dossier `ER-EC417-12+1` | documented derivation from the eight internal occurrences and their artifact traces | `A.3.1` identity and transfer to supplier-originated changes remain open |
 | `C-Evidence-Reconcile-Supplier`, candidate Method account | four supplier-originated cases plus the held-out thirteenth case in `ER-EC417-12+1` | documented derivation from those cases; the held-out case supports the supplier branch without proving a Method | `A.3.1` identity, population scope, and relation to the internal account remain open |
-| `C-AI-Trace-Review`, human-governed candidate Method account | AI trace prompt `ATP-2`, confidentiality rule, human-decision record set `HDR-TraceAcceptReject-17`, and decision-result set `RES-TraceAcceptReject-17` | `ATP-2` contributes prompt-and-guard description content to the candidate account; `HDR-TraceAcceptReject-17` evidences the bounded human Work set `W-TraceAcceptReject-17` performed by `TraceReviewer-17` and links each occurrence to its corresponding result in `RES-TraceAcceptReject-17`; the candidate account is documented as derived from `ATP-2`, `HDR-TraceAcceptReject-17`, and `RES-TraceAcceptReject-17`; the AI provider remains a separate System | no evidence of autonomous authority, effectiveness, or transfer outside the named information boundary; none of these relations establishes Method identity, family membership, causation, superiority, applicability, or composition |
+| `C-AI-Trace-Review`, human-governed candidate Method account | AI trace prompt `ATP-2`, confidentiality rule, human-decision record set `HDR-TraceAcceptReject-17`, and decision-result set `RES-TraceAcceptReject-17` | `ATP-2` contributes prompt-and-guard description content to the candidate account; `HDR-TraceAcceptReject-17` evidences the bounded human Work set `W-TraceAcceptReject-17` performed by `TraceReviewer-17`, with the A.13 assignment basis and independent A.15.1 Work admission established for those occurrences, and links each occurrence to its corresponding result in `RES-TraceAcceptReject-17`; the candidate account is documented as derived from `ATP-2`, `HDR-TraceAcceptReject-17`, and `RES-TraceAcceptReject-17`; the AI provider remains a separate System | no evidence of autonomous authority, effectiveness, or transfer outside the named information boundary; none of these relations establishes Method identity, family membership, causation, superiority, applicability, or composition |
 
 For the `D-21` through `D0` use window, the project relies on the exact contributions and conditions in the table. If a new export or edition changes only their layout while the relied-on claims, configuration, access and use remain the same, retain the repertoire without a new search, trial or renewal record. If `FI-4.8` instead loses coverage for a changed controller or toolchain, or an actual permission or qualification window ends, reopen or suspend that affected use even before the planned review date. Keeping the old edition identified does not authorize continued reliance on defeated premises. Reconsider only the affected source-use row, preserve the earlier claim for its supported conditions, and keep the needed limitation with the result for later receivers.
 
@@ -110,7 +112,7 @@ Description-side material stays separate. Existing `A.3.2` results identify `HV-
 
 Proposed-whole account `C-EC-Release-v2` is recorded outside the repertoire membership table as an architecture subject. It cites contributions from the four Methods and three accounts, but that source relation establishes neither a whole Method nor `methodPartOf`.
 
-The repertoire stops honestly with four missing positions: no established Method family covers the local grouping; no source establishes a Method-lineage relation among the four identified Methods; the same-Method or distinct-Method relation between the two reconciliation accounts is unresolved; and the AI account lacks transfer and effectiveness evidence. Those gaps do not prevent A.3.1.QM from qualifying individual subjects or C.32.MWA.PP from comparing named structures. They prevent family, ancestry, superiority, and composite claims.
+The repertoire stops honestly with four missing positions: no established Method family covers the local grouping; no source establishes a Method-lineage relation among the four identified Methods; the same-Method or distinct-Method relation between the two reconciliation accounts is unresolved; and the AI account lacks transfer and effectiveness evidence. Those gaps do not prevent A.3.1.QM from qualifying individual subjects or C.32.MWA.PP from comparing named structures. The repertoire alone does not support family, ancestry, superiority or composite claims; a claim needed by the receiving use requires its own basis.
 
 ### C.39.RP:6 - Bias-Annotation
 
@@ -148,7 +150,7 @@ The repertoire stops honestly with four missing positions: no established Method
 
 The project gains reusable alternatives with recoverable provenance, bounded evidence, and visible gaps. Later qualification and architecture comparison can inspect the same subjects without repeating search or inheriting false family and composition claims.
 
-The cost is a smaller catalogue. Some lineages remain partial, and the newest source may be unusable until its changed meaning or applicability is checked.
+Recovering subjects and provenance takes work. Some lineages remain partial, and a new source whose changed meaning or applicability is unresolved may be unusable for the affected claim.
 
 ### C.39.RP:10 - Rationale
 
@@ -162,7 +164,6 @@ The repertoire distinguishes Methods, performed Work, descriptions, variants, ca
 | --- | --- | --- |
 | Henderson-Sellers and Ralyté, [Situational Method Engineering: State-of-the-Art Review](https://opus.lib.uts.edu.au/handle/10453/13456) | Method-base lineage, reusable source material, situational construction, and explicit Method Engineering traditions. | Source-local fragments and construction terms do not determine FPF kinds, family membership, or composition. |
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Method ecosystem, core idea, representation, procedure, intended use, tool, and adaptation questions. | The elements guide source recovery; they are not an imported ontology or universal repertoire schema. |
-| Current FPF `G.2`, `G.5`, and `G.11` | Refreshable SoTA sourcing when needed, truthful family or local set results, and edition/currentness discipline. | These patterns do not identify repertoire Methods or turn co-listing and lineage into selection, family, or merit. |
 
 Reopen when a relied-on source contribution, its support or its applicability changes, a missing position becomes available, an `A.3.1` result changes a subject's status, a family or lineage relation gains or loses support, or the named comparison requires an alternative outside the current relevance boundary. Age or edition succession alone establishes none of these changes.
 

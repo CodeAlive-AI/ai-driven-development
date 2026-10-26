@@ -3,13 +3,11 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** occurrence-level trial evidence and explicit missing-evidence positions for the separate A.3.1.CC coherence, A.3.1.FT fit or transfer, and C.11.MV practical-worth decisions. A candidate Method account remains a candidate; only independently admitted Work is reported as having occurred, and only independently admitted Methods as having been enacted.
-
 ### A.3.1.WT:0 - Use This When
 
 Use this pattern when a Method or candidate Method account is ready for a trial in actual Work and the next decisions need observations from named situations rather than another plan, demonstration, or document review. Begin with one trial question: what must be learned from actual Work for a later coherence, fit, transfer, or worth decision?
 
-The first useful result is a trial-slice row. It names the subject and its status, the situation-selection reason, the planned task, the Work that actually occurred, actual performers and enacted admitted Methods, relied-on Systems and capabilities, observations, gaps, and the later decision that may use them. A row that returns `missing-performed-work` is useful when the trial remains only planned.
+The first useful result is an account of the selected trial Work and observations. It names the subject and its status, the situation-selection reason, the planned task, the Work that actually occurred, actual performers and enacted admitted Methods, relied-on Systems and capabilities, observations, gaps, and the later decision that may use them. A result that returns `missing-performed-work` is useful when the trial remains only planned.
 
 Here *trial* is Plain practice wording for intentionally selected Work and observation. It is not a new subtype of `U.Work`, a Method admission, an evaluation result, or a claim that the situation statistically represents a population.
 
@@ -32,7 +30,7 @@ Do not use this pattern to declare description coherence, situational fit, trans
 
 Method trials are often easiest to describe after the fact: a team used some material, produced a result, and reported value. That compression hides what Method was admitted, which Work occurred, who performed it, which support conditions were present, what changed, and which conclusions the observations can support.
 
-Convenient success cases also miss the situations that matter most. A Method may look usable in a familiar task and fail when feedback is closed-loop, information is incomplete, capability is stale, or a required relation is absent. Representative and discriminating situations therefore serve different purposes and must be selected for an explicit later question.
+Selecting only convenient success cases can miss conditions that change the outcome. A Method may look usable in a familiar task and fail when feedback is closed-loop, information is incomplete, capability is stale, or a required relation is absent. Representative and discriminating situations therefore serve different purposes and must be selected for an explicit later question.
 
 ### A.3.1.WT:2 - Problem
 
@@ -49,7 +47,7 @@ These moves produce a positive story but weak evidence. Later reviewers cannot r
 | Status preservation | Candidate claims need testing, while useful Work must not be reported as enactment of an unidentified Method whole. |
 | Observability | Later decisions need traceable observations, while instrumentation and reporting can burden or distort Work. |
 | Capability | Performer ability can change the result, while training or one success invites premature capability claims. |
-| Failure value | Failure can localize a correction, while teams and sponsors are biased toward a favourable trial narrative. |
+| Failure value | Failure can localize a correction, while a preference for a favourable narrative can hide it. |
 | Evidence reach | Several occurrences can strengthen a local account, while they still may not establish contribution, causality, transfer, or practical worth. |
 
 ### A.3.1.WT:4 - Solution
@@ -66,10 +64,10 @@ Select situations from the later evidence questions, arrange and observe actual 
 4. **Select a discriminating situation when the decision needs one.** Change or seek one condition whose outcome can show whether a live claim holds in that situation: unfamiliar technical coupling, another domain, missing support relation, changed capability envelope, stale material, or another named alternative. State the claim that could fail. Do not require every trial to contain an artificial stress case.
 5. **Write the WorkPlan without backdating Work.** State intended tasks, performers, admitted Methods, support conditions, observation points, protected conditions, burdens to record, stop rules, and the later use of each observation. Keep simulation and demonstration as planned or separately typed activities unless independently admitted Work occurs.
 6. **Check capability and support inputs separately.** When reliance on capability changes interpretation, identify the holder System, Work family or result class, operating envelope, measures, qualification or currentness condition, and evidence. Recover only A.15.8.MS material, access, tool, provider, feedback, and decision conditions supported for the relevant task rows; preserve retained candidates, split boundaries, untested conditions, and gaps rather than treating them as configured inputs.
-7. **Admit only Work that occurred.** For each occurrence, recover every actual performer System and its A.13 basis, the action history, at least one admitted Method actually followed, temporal extent, and required containing-System relation under `A.15.1`. Add assignment attribution, System use, operation binding, affected referent, resource use, or result relations only when their own predicates obtain.
+7. **Admit only Work that occurred.** For each occurrence, recover every actual performer System and its A.13 basis, the action history, at least one admitted Method actually followed, temporal extent, and required containing-System relation under `A.15.1`. Use F.6 through the same obtaining A.13 assignment only when precise assignment-bound attribution is needed. Add System use, operation binding, affected referent, resource use, or result relations only when the claim needs them and their own predicates obtain.
 8. **Record conditions and departures.** For each Work occurrence, record the situation, relied-on Systems and direct relations, holder capabilities used in interpretation, deviations from the WorkPlan, adaptations, burdens, stops, domain results, and observations. Keep the domain result, report, log, and evidence-use relation separate from Work.
-9. **Qualify the evidence reach.** Distinguish direct observation, participant report, source interpretation, observed association, contribution claim, and causal claim. Return the strongest supported level and name missing comparison, temporal, capability, relation, or alternative evidence.
-10. **Return evidence by later use.** Send contradicted description or relation claims to A.3.1.CC, situation comparisons and an unlike-situation result to A.3.1.FT, and results, burdens, alternatives, side effects, and evidence limits to C.11.MV. Return `missing-performed-work`, `missing-method-admission`, `missing-capability-basis`, `missing-direct-relation`, or the named missing premise when a required condition is absent.
+9. **Qualify the evidence reach.** Distinguish direct observation, participant report, source interpretation, observed association, contribution claim, and causal claim. Return the supported level needed by the receiving claim and name missing comparison, temporal, capability, relation, or alternative evidence.
+10. **Return evidence by later use.** For each selected receiving question, send contradicted description or relation claims to A.3.1.CC, situation comparisons and an unlike-situation result to A.3.1.FT, and results, burdens, alternatives, side effects, and evidence limits to C.11.MV. Return `missing-performed-work`, `missing-method-admission`, `missing-capability-basis`, `missing-direct-relation`, or the named missing premise when a required condition is absent.
 
 #### A.3.1.WT:4.2 - Record the Result
 
@@ -82,8 +80,10 @@ Select situations from the later evidence questions, arrange and observe actual 
 | actual Work | Each admitted Work occurrence, actual performers, enacted admitted Methods, temporal extent, containing System, and deviations from plan. |
 | relied-on conditions | Holder capabilities, Systems, Agent-performed Work, direct relations, access, assignments, permissions, authority, tools, providers, and support conditions that actually obtain or remain missing. |
 | observations | Domain results, burdens, adaptations, failures, participant reports, direct observations, and their source or evidence-use relations. |
-| reach and gaps | Supported observation level, unsupported contribution or causal overreads, missing evidence, and conditions that would reopen the slice. |
-| return | Occurrence-level evidence routed separately to A.3.1.CC, A.3.1.FT, and C.11.MV, or a supported lower result. |
+| reach and gaps | Supported observation level, missing evidence, material limits on contribution or causal claims, and conditions that would reopen the slice. |
+| return | Occurrence-level evidence for the selected A.3.1.CC, A.3.1.FT or C.11.MV question, or a supported lower result. |
+
+Keep these distinctions in the account and its referenced records. A table is useful when several occurrences need comparison; a single account need not use one row per position.
 
 #### A.3.1.WT:4.3 - What Changes in Practice
 
@@ -91,9 +91,9 @@ Teams stop calling a scheduled exercise or positive report “the trial”. They
 
 A failed or incomplete occurrence remains useful. It can expose a description defect, a representation difficulty, a missing support relation, a capability condition, or a situation boundary without being inflated into a universal verdict on the Method.
 
-#### A.3.1.WT:4.4 - Minimal Constructed Trial Replay
+#### A.3.1.WT:4.4 - Constructed Trial Case
 
-The following is a constructed teaching replay, not field evidence. It shows the smallest result that lets later checks reuse the same Work without turning the trial into their conclusion.
+This constructed case illustrates how later checks can reuse the same Work while reaching their own conclusions; it is not field evidence.
 
 `M-Unit-Review-1` is admitted for reviewing temperature-sensor calibration reports before release. Its current description tells the reviewer to identify every source unit, normalize values, compare them with the declared tolerance, and stop on an unresolved mismatch. `WP-ME11-1` plans two review tasks for the same week. `S-Rep-1` is a current same-unit report of the ordinary kind. `S-Disc-1` keeps the product, decision, reviewer, description, and support fixed but introduces a Celsius/Kelvin mismatch; it is selected because the live claim is that the Method lets this reviewer expose a unit mismatch before release.
 
@@ -131,15 +131,15 @@ The useful A.3.1.WT result is therefore not “SSFD works”. It is a set of rep
 
 #### A.3.1.WT:5.3 - EC-417 Early Stop
 
-The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-smallest-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
+The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
 In `EC-417`, the three-release statement remains a WorkPlan. The three named-user retrieval, tailoring, and selection-support occurrences from A.15.8.MS establish only those support tasks; they do not perform a release or enact the candidate whole `C-EC-Release-v2`.
 
-For a release trial, apply §4.1(6–9) to the release's own occurrence, support, evidence and authority facts. The observed support tasks do not supply that release Work; until its basis is recovered, return `missing-performed-work`. Even after a release is admitted, keep `C-EC-Release-v2` as a candidate and send the occurrence evidence separately to A.3.1.CC, A.3.1.FT, C.11.MV.
+For a release trial, apply §4.1(6–9) to the release's own occurrence, support, evidence and authority facts. The observed support tasks do not supply that release Work; until its basis is recovered, return `missing-performed-work`. Even after a release is admitted, keep `C-EC-Release-v2` as a candidate and send the occurrence evidence to the selected A.3.1.CC, A.3.1.FT or C.11.MV question.
 
 ### A.3.1.WT:6 - Bias-Annotation
 
-| Recurring bias | Likely drift | Repair |
+| Bias | Likely drift | Repair |
 | --- | --- | --- |
 | plan-completion bias | A scheduled or demonstrated task is recorded as trial Work. | Admit each actual Work occurrence separately; otherwise return `missing-performed-work`. |
 | candidate-laundering bias | Constituent activity is reported as enactment of the candidate whole. | Preserve the candidate account and name only separately admitted enacted Methods. |
@@ -147,7 +147,7 @@ For a release trial, apply §4.1(6–9) to the release's own occurrence, support
 | instrument bias | Logs, reports, or telemetry are treated as the Work or result. | Keep the occurrence, result, record, and evidence-use relation separate. |
 | capability inflation | Training or one success becomes a holder capability claim. | Require the A.2.2 holder, Work family, envelope, measures, window, and evidence. |
 | causal inflation | Reported benefit or association becomes Method-caused effect. | State the observation level and missing comparison or causal basis. |
-| trial-judgment collapse | One trial record decides coherence, fit, transfer, and worth at once. | Route evidence to A.3.1.CC, A.3.1.FT, and C.11.MV as separate receiving uses. |
+| trial-judgment collapse | One trial record decides coherence, fit, transfer, and worth at once. | Route evidence to A.3.1.CC, A.3.1.FT, and C.11.MV according to the selected receiving questions. |
 
 ### A.3.1.WT:7 - Conformance Checklist
 
@@ -160,7 +160,7 @@ For a release trial, apply §4.1(6–9) to the release's own occurrence, support
 - [ ] Capability, System use, assignment, permission, authority, support, operation binding, and result relations are asserted only from their own bases.
 - [ ] Conditions, deviations, adaptations, burdens, observations, and domain results are recorded per occurrence.
 - [ ] Direct observation, self-report, association, contribution, and causality are not merged.
-- [ ] The result routes evidence and gaps separately to A.3.1.CC, A.3.1.FT, and C.11.MV and claims none of their judgments.
+- [ ] The result separates any selected A.3.1.CC, A.3.1.FT and C.11.MV uses and supplies evidence or gaps without claiming their judgments.
 
 ### A.3.1.WT:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -177,24 +177,21 @@ For a release trial, apply §4.1(6–9) to the release's own occurrence, support
 
 Trial Work produces inspectable evidence. Failures and missing premises survive as useful results, and later assurance decisions can compare the same occurrences without changing their identity or truth status.
 
-The cost is more explicit occurrence recovery and narrower conclusions. Projects must record performer, Method, situation, capability, support, direct relations, burdens, and source limits, and they may finish a costly trial with a precise gap instead of a favourable verdict.
+The cost is more explicit occurrence recovery and narrower conclusions. Projects must record the performer, enacted Method and situation, together with the capability, support, direct relations, burdens and source limits that affect the receiving question, and they may finish a costly trial with a precise gap instead of a favourable verdict.
 
 ### A.3.1.WT:10 - Rationale
 
 Actual Work is the shared empirical base, but coherence, fit, transfer, worth, capability, contribution, and causality are different claims. Keeping them separate lets the same occurrence inform several decisions without allowing one decision to inherit another's conclusion.
 
-Representative and discriminating situations are paired because typical-use evidence and boundary-finding evidence answer different questions. Their selection is decision-relative; it does not create statistical representativeness or a universal situation taxonomy.
+Representative situations answer typical-use questions; discriminating situations test a stated difference or boundary. Select the former for the intended use and add the latter when the decision requires it. Their selection does not create statistical representativeness or a universal situation taxonomy.
 
 ### A.3.1.WT:11 - SoTA-Echoing
 
-| Source | Adopted or adapted contribution | Boundary and practitioner implication |
+| Source | Contribution | Boundary and practitioner implication |
 | --- | --- | --- |
-| Yildirim, Campean, and Uddin, [function-modeling evaluation in industry practice](https://doi.org/10.1017/dsj.2026.10056) | Adopt workplace projects, varied application situations, reported limitations, later report analysis, and separation of direct and indirect contribution as trial-design and evidence-recording cues. | One automotive OEM, SSFD used within a broader methodology, and retrospective reports establish neither SSFD-only causality nor universal transfer. |
-| Tsai, Zdravkovic, and Söder, [DBE-design Method action research](https://doi.org/10.1007/s10270-022-01068-z) | Adopt repeated plan-perform-evaluate cycles in an operating health-services ecosystem as an unlike-domain replay of actual validation actions. | The evaluation is ex ante and case-specific; it establishes neither long-term effect nor transfer to the other elicited domains. |
-| Faludi, Yiu, and Agogino, [empirical tests of sustainable-design Methods](https://doi.org/10.1017/dsj.2020.17) | Adopt explicit alternative Methods, several industry situations, participant Work, activities, and immediate value reports as a bounded comparison input. | Immediate self-report establishes neither long-term product results, causal superiority, nor the effectiveness of recombined variants. |
-| Current FPF `A.3.1`, `A.15.1`, `A.2.2`, and `A.10` | Adopt independent Method admission, Work occurrence admission, capability qualification, and evidence-use relations. | A.3.1.WT contributes the practitioner move for situation selection and occurrence-level trial evidence; it does not redefine those claims or make the downstream judgments. |
-
-Reopen the pattern when practitioners cannot select a discriminating situation without a universal trial taxonomy, when actual Work cannot be distinguished from demonstrations or records, when the candidate branch repeatedly loses status, or when current field evidence supports a stronger trial-selection move without broadening the later judgments.
+| Yildirim, Campean, and Uddin, [function-modeling evaluation in industry practice](https://doi.org/10.1017/dsj.2026.10056) | Workplace projects, varied application situations, reported limitations, later report analysis, and separation of direct and indirect contribution supply trial-design and evidence-recording cues. | One automotive OEM, SSFD used within a broader methodology, and retrospective reports establish neither SSFD-only causality nor universal transfer. |
+| Tsai, Zdravkovic, and Söder, [DBE-design Method action research](https://doi.org/10.1007/s10270-022-01068-z) | Repeated plan-perform-evaluate cycles in an operating health-services ecosystem provide an unlike-domain example of actual validation actions. | The evaluation is ex ante and case-specific; it establishes neither long-term effect nor transfer to the other elicited domains. |
+| Faludi, Yiu, and Agogino, [empirical tests of sustainable-design Methods](https://doi.org/10.1017/dsj.2020.17) | Explicit alternative Methods, several industry situations, participant Work, activities, and immediate value reports supply a bounded comparison input. | Immediate self-report establishes neither long-term product results, causal superiority, nor the effectiveness of recombined variants. |
 
 ### A.3.1.WT:12 - Relations
 

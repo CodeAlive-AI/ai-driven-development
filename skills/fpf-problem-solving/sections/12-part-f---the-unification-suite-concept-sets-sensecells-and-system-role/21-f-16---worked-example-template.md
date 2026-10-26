@@ -15,7 +15,7 @@
 
 **Do not use this when.** A shorter direct example already shows the claim. F.16 does not require a cross-source relation, table row, lexical cell, system-role claim, window, or SoD unless the case actually contains one.
 
-**Non-goals.** No registry, workflow, editor, storage format, or proof by page layout. The template shapes what the reader sees, not how a team produces it.
+**Scope.** The template organizes the explanation presented to the reader.
 
 ### F.16:2 - Problem frame
 
@@ -33,15 +33,14 @@ A useful worked example is a compact case with nine visible parts:
 
 * **Question and gain** — the recognizable practical problem and what changes when it is solved.
 * **Claim** — one sentence that can be accepted, rejected, or qualified.
-* **Actual subjects** — the Systems, epistemes, Methods, Work occurrences, kinds, assignments, claims, observations, values, operation applications, results, status uses, or other entities involved.
+* **Actual subjects** — the values and entities to which the worked claim applies, with their relevant kinds and relation positions.
 * **Direct patterns** — the patterns that define, constrain, or test each substantive value or relation.
 * **Source basis** — exact sources and editions and the passages or interpretation schemes that matter.
 * **Obtaining relations** — each named directly, with participants, direction, and limits.
 * **Evidence, result, and reliance** — what supports the claim, what evaluation actually returned when one occurred, and what remains uncertain.
-* **Optional aids** — F.17 cells for recurring local meanings and an F.7 table for comparison; neither creates a fact.
+* **Optional aids** — F.17 cells when a local meaning needs a stable address and an F.7 table when comparison needs a display; their presence establishes no fact.
 * **Boundary and checks** — where the example stops and the few checks a reader can replay.
 
-The old theatre metaphor can still help memory: the question is the scene, actual values are the participants, obtaining relations are what happens between them, sources and evidence are what let the audience check the scene, and the boundary says what the scene does not show. No fictional “actor” or “cue” replaces an ontological subject.
 
 ### F.16:4 - Minimal vocabulary
 
@@ -52,7 +51,7 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 * **Evidence basis** — the observations, source claims and independently established direct relations supporting the conclusion, represented in A.10's descriptive evidence-provenance account with its bounded-reliance disposition. A separately current B.3 assurance claim retains its own result and limits.
 * **Evaluation result** — when the case evaluates a promise or criterion, the result bound by an exact A.6.1 application during evaluation Work, on the result scale declared by the applicable rule.
 * **Receiving use** — the concrete decision, explanation, comparison, or action for which the result is used.
-* **SchemeSenseCell** — the exact F.17 coordinate `<ReferenceScheme by value, LocalExpression, LocalSenseClaim>`. A separate address resolves that coordinate when recurring use needs it.
+* **SchemeSenseCell** — the exact F.17 coordinate `<ReferenceScheme by value, LocalExpression, LocalSenseClaim>`. A separate address resolves that coordinate when the receiving use needs it.
 * **Comparison table** — an optional F.7 display of exact entries and already obtaining relations.
 * **Window and separation of duties** — F.10 or F.14 constraints included only when time, population, phase, or separation of duties changes the case.
 
@@ -64,19 +63,19 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 
 2. **Worked claim.** State one bounded claim. Example: “June availability is evaluated from observations of the defined service-delivery Work, not from the approved runbook.”
 
-3. **Actual subjects.** List only the Systems, Methods, descriptions, delivery and evaluation Work occurrences, promise-content claims, characteristics, observations, values, operation applications, results, status uses, local system-role kinds, assignments, or other values needed by the claim.
+3. **Actual subjects.** Name the actual values and entities needed by the claim, distinguishing its subject, relation participants and result.
 
 4. **Direct pattern route.** Beside each substantive claim, cite the pattern that defines, constrains, or tests the value or relation used by the claim. This prevents one vague word or generic Bridge from taking over several relation families.
 
-5. **Exact source basis.** Cite the source and edition and, where local wording matters, the expression, claim, and effective scheme. Add an F.17 cell only if repeated use needs a durable address.
+5. **Exact source basis.** Cite the source and edition and, where local wording matters, the expression, claim, and effective scheme. Add an F.17 cell only if the exact local meaning needs a stable address for this use.
 
 6. **Obtaining relations.** For each relation, name its exact participants, direction, basis, and loss. Use F.9 only for a real semantic relation between distinct local meanings. Use the defining or testing pattern for MethodDescription membership, enactment, performed Work, measurement, evidence, fulfilment, kind, assignment, publication, transformation, and any load-bearing indicator relation. If proxy wording names no supported relation, use C.16.P and stop at A.6.RCD `missing-governor`.
 
-7. **Evidence, result, and limits.** Show the independently established direct relations by which observations or sources support the claim. A.10 describes that path and classifies reliance on it for the bounded use; its fields must supply the evidence required by the claim and its direct rule. When evaluation is part of the case, show the evaluation Work, enacted Method, exact application and result binding, declared result scale, and any separate F.10 status or optional C.2.1 verdict episteme. Use B.3 only for an actual named assurance claim. State what remains outside the conclusion.
+7. **Evidence, result, and limits.** Show the independently established direct relations by which observations or sources support the claim. A.10 describes that path and classifies reliance on it for the bounded use; the cited basis must meet the evidence requirement of the claim and its direct rule. When evaluation is part of the case, show the evaluation Work, enacted Method, exact application and result binding, declared result scale, and any separate F.10 status or optional C.2.1 verdict episteme. Use B.3 only for an actual named assurance claim. State the consequential limits of the conclusion.
 
 8. **Optional comparison surface.** If two or more local meanings or source claims are hard to compare in prose, add one compact F.7 table. State the receiving-use conclusion separately. Omit the table when it adds ceremony but no clarity.
 
-9. **Micro-narrative and checks.** Walk briefly from the working situation through the actual relations to the result. End with the few direct subject checks that let the reader replay the claim and one non-use boundary. Add F.15 only when a finite naming slice needs its static or regression checks.
+9. **Micro-narrative and checks.** Walk briefly from the working situation through the actual relations to the result. End with the direct subject checks that let the reader replay the claim, and add a non-use boundary only when F.19's grounded-contribution test requires it. Add F.15 only when a finite naming slice needs its static or regression checks.
 
 **Memory rule.** If the case cannot fit on one page or slide, reduce it to one claim or split it into linked examples. Do not delete the evidence or relation that makes the claim intelligible merely to preserve the page count.
 
@@ -85,11 +84,11 @@ The old theatre metaphor can still help memory: the question is the scene, actua
 1. **Claim first.** The example states one recognizable claim and practical gain before its architecture.
 2. **Actual subjects.** World, claim, evidence, status, and use assertions attach to actual values, not lexical cells or rows.
 3. **Direct relations.** Every substantive relation cites the pattern that defines or tests it; F.9 is conditional on a real local-meaning relation, and the word *proxy* never supplies an indicator relation.
-4. **Optional aids.** F.17 cells and F.7 tables appear only when they reduce reader effort and remain evidentially inert.
+4. **Optional aids.** F.17 cells and F.7 tables appear only when they reduce reader effort; their presence or layout does not supply evidence.
 5. **Source precision.** Source and edition and the effective scheme are explicit where wording or interpretation changes the claim.
-6. **Temporal honesty.** MethodDescription, Work, observation, and output remain distinct; windows are stated when they change the result.
+6. **Time and object distinctions.** MethodDescription, Work, observation, and output remain distinct; windows are stated when they change the result.
 7. **Agency precision.** Every asserted dated Work uses the performer's recovered A.13 core and independent A.15.1 admission. The core includes its obtaining assignment; add F.6 only when the worked claim needs precise assignment-bound attribution. Recover a separately needed local-kind or description claim under its own rule.
-8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported; when evaluation occurs, it keeps evaluation Work, operation result, declared scale, EvidenceStatus, RequirementStatus, and optional verdict episteme distinct; and it states what none of them establishes.
+8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported; when evaluation occurs, it keeps evaluation Work, operation result, declared scale, EvidenceStatus, RequirementStatus, and optional verdict episteme distinct; and it states the consequential limits of the result.
 9. **Didactic parsimony.** Every item changes the worked answer; optional machinery is omitted when it does not.
 
 ### F.16:7 - Optional comparison panel
@@ -144,7 +143,7 @@ The following is an application sketch. Supply the named source passages, exact 
 - Use **E.10.D1** to replace vague *context* wording with the source, scheme, scope, model use, working situation, comparison basis, or other value that changes the case.
 - Use **F.10** for status claims and their windows. Use each direct subject rule for the worked checks; add **F.15** only for the example's finite naming slice.
 
-**Coordinates with:** F.4 and F.6 only when a local system-role kind, assignment, or performed-Work attribution is actually part of the case; A.10 for evidence use; B.3 only when an actual named assurance claim is current; and the direct Part C pattern for every illustrated subject and relation.
+**Coordinates with:** A.2 with C.3 for a local system-role kind, A.2.1 for an assignment, F.4 only for a separately needed kind description, and F.6 only for precise performed-Work attribution; A.10 for evidence use; B.3 only when an actual named assurance claim is current; and the direct Part C pattern for every illustrated subject and relation.
 
 **Constrains:** A cross-domain example may use this canvas or a faithful reduction. It names claim and gain first, actual values and relations next, and optional aids last. It never treats a lexical cell, table row, page layout, or generic Bridge as proof.
 
@@ -164,8 +163,8 @@ The following is an application sketch. Supply the named source passages, exact 
 | **AP-6** | Global trigger word | *Role*, *function*, *process*, or *service* appears without recovering its subject. | Polysemy hides objects and relations. | Apply E.10 and F.0.1 and then choose precise plain wording. |
 | **AP-7** | Design-time and run-time blur | A design description is narrated as Work. | Plan and occurrence collapse. | Use F.11, A.3, and A.15 and state the actual relation. |
 | **AP-8** | Edition haze | Source name lacks the edition that controls meaning. | The example cannot be replayed. | Name the source, edition, and relevant passage. |
-| **AP-9** | Evidence silence | The result appears without observations, source claims, or reliance basis. | Confidence cannot be assessed. | Show evidence use, limits, and non-use boundary. |
-| **AP-10** | Ontologist’s shorthand | Predicate notation replaces an ordinary explanation. | Precision becomes inaccessible to the cold reader. | Lead with plain language; retain compact notation only when it genuinely shortens a repeated calculation. |
+| **AP-9** | Evidence silence | The result appears without observations, source claims, or reliance basis. | Confidence cannot be assessed. | Show evidence use and consequential limits; add a non-use boundary only when F.19 requires the grounded correction. |
+| **AP-10** | Ontologist’s shorthand | Predicate notation replaces an ordinary explanation. | Precision becomes inaccessible to the cold reader. | Lead with plain language; retain compact notation when it clarifies a needed relation or calculation without replacing the explanation. |
 
 ### F.16:12 - Cross-domain application sketches
 
@@ -195,11 +194,11 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 2. **Bound.** Write one claim and one receiving use.
 3. **Name actual subjects.** Replace vague words with the Systems, epistemes, Methods, Work, claims, observations, values, kinds, or assignments actually involved.
 4. **Route relations.** Name the defining or testing pattern for each relation. For an alleged proxy, first test direct measurement; if a distinct indicator relation is needed and no rule supplies it, return A.6.RCD `missing-governor`.
-5. **Recover local wording.** Cite the source, edition, and scheme; add F.17 only when recurring use needs an address.
+5. **Recover local wording.** Cite the source, edition, and scheme; add an F.17 cell only when the receiving use needs a stable local-meaning address.
 6. **Show evidence and evaluation.** Recover the direct evidence-use relations, their descriptive A.10 account and its bounded-reliance disposition. When evaluation occurs, show the evaluation Work, Method, application, result binding, declared scale, separate F.10 status, and optional verdict episteme as applicable; use B.3 only for an actual named assurance claim.
 7. **Use aids sparingly.** Add an F.7 table only when it lowers reading cost; never infer from layout.
 8. **State limits.** Include direction, loss, window, population, uncertainty, or non-use boundary that changes the conclusion.
-9. **Replay.** Run two or three focused checks that target the case's real risks, including result and status separation when evaluation is present.
+9. **Replay.** Run focused checks for the case's actual failure risks, including result and status separation when evaluation is present.
 
 ### F.16:14 - Acceptance tests
 
@@ -210,7 +209,7 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 * **SCR-F16-S03 (direct relations).** Every substantive relation names its exact participants and cites the pattern that defines or tests it; unsupported proxy wording ends at A.6.RCD `missing-governor`.
 * **SCR-F16-S04 (conditional F.9).** F.9 appears only for a real relation between distinct local meanings.
 * **SCR-F16-S05 (source and evidence).** Exact sources and editions and the A.10 evidence-use basis are visible where they affect the claim; B.3 appears only for an actual named assurance claim.
-* **SCR-F16-S06 (optional aids).** Cells and tables are omitted when they do not reduce reader effort and are never evidential.
+* **SCR-F16-S06 (optional aids).** Cells and tables are omitted when they do not reduce reader effort; their presence or layout is not treated as evidence.
 * **SCR-F16-S07 (time and agency).** Windows, Work, System, assignment, and attribution are explicit when material.
 * **SCR-F16-S08 (one-page parsimony).** Every included item changes the answer; a larger case is split without losing its basis.
 * **SCR-F16-S09 (evaluation architecture).** When evaluation is present, the performing System, evaluation Work, enacted Method, exact application and result binding, declared result scale, separate EvidenceStatus and RequirementStatus, and optional verdict episteme remain recoverable.

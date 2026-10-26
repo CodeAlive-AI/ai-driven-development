@@ -20,7 +20,7 @@ Typical moments:
 
 **What goes wrong if missed.** Emergence becomes rhetoric, ordinary improvement is overclaimed as a new whole, or a genuinely new whole remains hidden under old part, evidence, assurance, architecture, or responsibility claims.
 
-**What this buys.** B.2 gives one accountable whole-reidentification move: recover the exact existing whole, the separately governed facts that challenge its identity, the exact candidate new whole, and decide whether the existing whole continues or the new whole must carry the claim before relying on evidence, a record, or a receiving-use decision.
+**What this buys.** The practitioner can decide whether the current claim concerns the existing whole or a new one, using the changed facts and each whole's identity grounds. The result guides subsequent records and reliance decisions.
 
 **Not this pattern when.**
 
@@ -33,17 +33,17 @@ Typical moments:
 
 ### B.2:1 - Problem Frame
 
-A Meta-Holon Transition is not a new root ontology, generic emergence label, or mathematical graph result. It is a whole-reidentification claim about an exact holon already recognized through A.1 construction, identity, part relations, whole-level characteristics, and a direct kind-specific pattern.
+A Meta-Holon Transition is a whole-reidentification claim about a holon recognized through A.1 construction, identity, part relations, whole-level characteristics, and a direct kind-specific pattern.
 
 The B.2 comparison determines whether the old whole remains the right EntityOfConcern for the current claim; retain it when its identity rule accommodates the change. The candidate new whole can be recognized as a `U.System`, `U.Episteme`, `U.Method`, `U.Work`, `U.Discipline`, or another holon kind only after `E.24.UK` has admitted that public kind and the exact candidate satisfies A.1 plus the direct kind-specific criterion.
 
 ### B.2:2 - Problem
 
-Without B.2:
+When whole identity and its grounds are unclear:
 
 1. **New whole is missed.** A constructive assembly or coordinated closure changes the object, but evidence and architecture still point to old parts.
 2. **Ordinary improvement is overclaimed.** A better component, stronger measurement, or corrected method is called emergence.
-3. **Record fields become ontology.** A result field, trigger mnemonic, profile, or checklist is treated as a U-kind or actor.
+3. **Record fields become ontology.** A user treats the organization or labels of a record as grounds for recognizing the whole or its kind.
 4. **Agency becomes binary.** A threshold crossing is read as “agent or not agent” instead of a characteristic-space threshold for an admitted System. A local system-role kind, classification, or assignment is a separate optional fact and neither establishes nor is required for the agency characteristic.
 5. **Mathematics replaces ontology.** A graph, RG-like flow, MSPD score, or benchmark jump is treated as MHT without recovering the holon claim.
 6. **Transformation becomes containment.** A system changing another holon is treated as its part or the larger whole containing it without a separately obtaining part-whole relation.
@@ -107,7 +107,7 @@ When another use must inspect or cite the outcome, identify an optional `Existin
 | `existingWholeSufficiencyVerdict` | `sufficient | insufficient | unknown` for the named receiving use. |
 | `remainingWholeReidentificationQuestionRef?` | The exact residual question when the result is `insufficient` or `unknown`. |
 
-The comparison is an action a practitioner performs. The optional result records its claim-bearing outcome. Neither is a reusable checklist or Method unless an independent receiving use later requires and defines such an object. The episteme creates none of its referenced claims or relations.
+The practitioner performs the comparison; the optional episteme records its outcome. Identity and relation claims still depend on the facts and rules used in that comparison.
 
 #### B.2:4.3 - HolonReidentificationRecord
 `HolonReidentificationRecord` is an optional `U.Episteme` whose EntityOfConcern is the exact new holon. Use it only when a person or system performing later work needs a durable account of why that new holon, rather than the prior whole, is the current EntityOfConcern. Candidate classification remains a separately governed judgment.
@@ -134,8 +134,6 @@ Use one `resultHolonRef : U.HolonRef` for the candidate new whole and one `resul
 
 When a person or system performing downstream work must inspect or cite the classification judgment, add the optional `resultHolonClassificationAssertionRef`. That C.2.1 assertion may report a governed evaluation of `true`, `false`, or `unknown`; its evidence, warrant, and G.11 currentness stay separate from world-side criterion satisfaction. B.2 still asks a different question: whether the existing whole can continue to carry the subject claim or a new whole must be identified.
 
-Do not use `post*` field names as live governed names. They hide the candidate new whole and its kind and invite temporal shorthand. Name that whole and its admitted public kind; cite a classification assertion only when the receiving use needs that episteme.
-
 #### B.2:4.5 - Agency Threshold
 
 An agency-characteristic threshold is a condition in a characteristic space, not a root kind or a substitute for the A.13 agency claim. State its exact System, predicate, claim scope, and qualification window.
@@ -148,11 +146,11 @@ Recover the admitted System and its agency-relevant characteristic or threshold 
 
 When a source describes a system changing another holon, recover acting-system participation and transformation separately.
 
-Use `A.12` for acting-side externalization, `A.3.4` for bounded transformation, and `A.15.1` for work occurrence. A system changing another holon does not thereby become its part or the larger whole containing it, and no `U.Transformer` kind is created.
+Use `A.12` for acting-side externalization, `A.3.4` for bounded transformation, and `A.15.1` for work occurrence. Changing another holon does not establish a part-whole relation between that holon and the acting System.
 
 #### B.2:4.7 - Mathematical-Lens Separation
 
-Graph, algebra, RG-like, MSPD, benchmark, scaling, and morphism language can bear on MHT recognition only as mathematical or analytical expression.
+A mathematical or analytical result, such as an MSPD measure or graph analysis, can contribute to an MHT claim through a justified correspondence with the objects and relations concerned.
 
 Use `C.29` when the mathematical lens is relied on for the current claim. Use B.2 only after the holon identity claim is recovered and the ordinary existing-whole comparison leaves a whole-reidentification question.
 
@@ -209,7 +207,7 @@ A collection of results can remain a catalogue. B.2 becomes current only when th
 
 Several systems, methods, and work occurrences align and a new capability envelope appears. Apply the direct capability, characteristic, function, transformation, method, work, evidence, and architecture patterns first.
 
-Use `B.2.4` only when separately governed capability or functioning facts make a whole-reidentification question live under B.2. Evidence can support the claim about those facts; it creates neither the facts nor the question.
+Use `B.2.4` when capability or functioning changes raise a whole-reidentification question. Evidence supports the claim about those changes; the B.2 identity comparison determines whether the existing whole still suffices.
 
 #### B.2:5.4 - Lathe And Workpiece
 
@@ -274,7 +272,7 @@ Positive consequences:
 
 - MHT becomes a precise whole-reidentification move rather than a synonym for improvement.
 - Cases involving a candidate new system, episteme, method, work occurrence, or discipline use the same B.2 whole-reidentification solution while retaining their subject patterns.
-- Trigger language remains useful without becoming ontology.
+- Trigger language helps locate the changed facts that need examination.
 - Mathematical and benchmark evidence can be used without replacing the holon claim.
 
 Costs:
@@ -285,9 +283,7 @@ Costs:
 
 ### B.2:10 - Rationale
 
-Holonic work needs a way to recognize when a whole has changed enough that the old EntityOfConcern no longer carries the current claim. B.2 provides that move without collapsing all novelty into "emergence" and without inventing record-field U-kinds.
-
-The pattern is intentionally conservative: it applies repairs from subject patterns first, then supports whole reidentification only when the existing whole no longer explains the observed shift. This protects B.1 part-whole construction, A.15.1 work, A.3.4 transformation, C.16 characteristics, C.29 math-lens use, and episteme and publication discipline from being swallowed by MHT.
+Holonic work needs a way to recognize when the prior EntityOfConcern no longer carries the current claim. First test whether the existing identity rule accommodates the changed facts, including any sufficient repair under a subject pattern. Whole reidentification is needed only when the existing whole no longer supports the explanation. Part-whole, Work, transformation, characteristic, representation, and publication claims retain their own grounds throughout that comparison.
 
 ### B.2:11 - Decision-bearing SoTA account
 
@@ -298,7 +294,7 @@ The pattern is intentionally conservative: it applies repairs from subject patte
 | How should agency bear on whole reidentification? | Michael Levin, [*Technological Approach to Mind Everywhere*](https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2022.768201/full) (2022). | **Adopt** non-binary, multi-characteristic, empirically tested agency and multi-scale competency as possible evidence about a system. **Reject** an agency label or threshold as a root kind or automatic new-whole result. | Section 4.5 keeps agency as one possible trigger whose direct characteristics must affect closure, objective, supervision, or identity. |
 | What can a multiscale mathematical signal contribute? | Akhtyrchenko, Katsnelson, and Ustyuzhanin, [*Directing Open-Ended Evolution in Artificial Life via Multi-Scale Path Divergence*](https://arxiv.org/abs/2606.17091) (v2, 3 August 2026), defines MSPD over realized trajectories as a multiscale analytical and optimization measure. | **Adopt** MSPD as a possible exact analytical input when its trajectory assumptions match the case. **Reject** a high MSPD, RG-like score, graph pattern, or benchmark jump as whole reidentification. | Sections 0, 4.7, and 8 route the mathematical result through C.29 and still require the B.2 identity comparison. |
 
-These sources answer different questions. None supplies a universal emergence detector. Popular modeling languages and generic architecture standards are not used as decision authority here because they do not decide when the same whole ends and another begins.
+These sources answer different questions. Use each contribution within its stated scope; the whole-reidentification conclusion still requires the comparison of identity and construction facts.
 
 ### B.2:12 - Relations
 - **Builds on:** `A.1` for world-side holon recognition, `B.1` for part-whole construction, `A.14` and `C.13` for relation and constructional grounding, and `E.24.UK` for one-time public-kind admission.

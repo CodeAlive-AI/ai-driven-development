@@ -82,9 +82,9 @@ For the additive construction, the singleton base case returns 2 from the one-el
 
 ### A.9:7 - Consequences
 
-The practitioner can explain why the chosen operation answers the actual question and what would defeat it. A combined result remains usable only while the stated model and conditions apply. Lawful reordering or repartitioning can support distributed calculation; it does not guarantee that independently developed Systems will integrate without other work.
+The practitioner can explain why the chosen operation answers the actual question and what would defeat it. A combined result remains usable only while the stated model and conditions apply. Lawful reordering or repartitioning can support distributed calculation.
 
-The cost is recovering the domain meaning, dependencies and any property required by the action. A sufficient existing law can make this cheap. When its basis is absent, a qualified bound or retained inputs preserves useful information and exposes the missing premise. New-whole recognition remains a separate B.2 decision.
+The cost is recovering the domain meaning, dependencies and any property required by the action. A sufficient existing law can make this cheap. When its basis is absent, a qualified bound or retained inputs preserves useful information and exposes the missing premise. Whole recognition uses A.1; use B.2 for a remaining whole-reidentification question.
 
 ### A.9:8 - Rationale
 
@@ -107,7 +107,7 @@ Checking only the needed property also keeps the burden proportionate. A request
 
 ### A.9:10 - Application situations
 
-Apply the method to an unresolved choice in resource combination, joint or alternative reliability, control composition, numerical regrouping or ordered Methods. Use the actual subject source for the intended result and its applicability; the examples establish no universal cross-scale guarantee or empirical performance benefit.
+Apply the method to an unresolved choice in resource combination, joint or alternative reliability, control composition, numerical regrouping or ordered Methods. Use the subject source for the intended result and its applicability.
 
 ### A.9:11 - SoTA-Echoing
 

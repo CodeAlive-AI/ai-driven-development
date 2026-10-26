@@ -14,11 +14,11 @@
 
 **Use this pattern when.** A team is about to route, compare, or publish a note by calling it `early`, `ready`, or `settled`, and the next action depends on what is actually known.
 
-**First question.** What is known or uncertain about each of these five aspects, which readings clear the local threshold, and what may happen next: formality, articulation, closure, anchoring, and representation?
+**First question.** Which of the five aspects can change the next action—formality, articulation, closure, anchoring, or representation—and which readings or unknowns does that action need?
 
 **What goes wrong if missed.** Teams flatten those five aspects, the grounds for judging them, and the publication lane into one maturity adjective. A polished document can then look ready although the claim is still open, or a useful early cue can be rejected because it is not yet polished.
 
-**What this buys.** One small chart row that shows only the distinctions needed by the next action while keeping the episteme publication separate from its grounds, form, face, and carrier.
+**What this buys.** One small chart row that shows only the distinctions needed by the next action while keeping the episteme publication separate from its grounds, publication form and carrier.
 
 ### C.2.2a:0 - First useful chart
 
@@ -27,21 +27,21 @@ Start with the smallest row that can change the next action:
 - the exact episteme publication being positioned;
 - only the currently relevant facet values or intervals; mark a decision-relevant unknown as `unknown`;
 - the grounds for those readings;
-- the local threshold used by the named next action and the action now allowed, blocked, or still undecided;
+- any local threshold used by the named next action and whether the readings meet it, fail it, or leave the result undecided;
 - publication form, face, or carrier only when that distinction changes interpretation, preservation, or the next action.
 
-**Filled example.** `Pump-alert-17` is the alerting episteme publication being positioned. Its affected asset and discrepant reading are visible, but the claim structure is not yet complete; rival diagnostic routes remain open; the alert is anchored in the operator loop; and its representation mixes text with telemetry. Formality is omitted because the present routing decision does not depend on it. The grounds are trace `T-17` and operator note `N-4`. The local rule permits routing to the diagnostic-question seam once the affected asset and discrepant reading are explicit; it does not yet permit treating the alert as a Work record. Form, face, and carrier are omitted because none changes that decision.
+**Filled example.** `Pump-alert-17` is the alerting episteme publication being positioned. Its affected asset and discrepant reading are visible, but the claim structure is not yet complete; rival diagnostic routes remain open; the alert is anchored in the operator loop; and its representation mixes text with telemetry. Formality is omitted because the present routing decision does not depend on it. The grounds are trace `T-17` and operator note `N-4`. The local rule permits routing to the diagnostic-question seam once the affected asset and discrepant reading are explicit. Form, face, and carrier are omitted because none changes that decision.
 
-**Non-use.** If a pinned inherited chart already supplies the current values and threshold for the same next action, cite it instead of publishing another row. If `early` or `ready` is only ordinary prose and no routing, comparison, publication, or threshold decision depends on it, leave it as ordinary prose rather than creating a governed position.
+**Non-use.** If an existing chart already supplies the applicable values and threshold for the same next action, cite it instead of publishing another row. If `early` or `ready` is only ordinary prose and no routing, comparison, publication, or threshold decision depends on it, leave it as ordinary prose rather than creating a governed position.
 
 **Practical result.** The row tells the practitioner whether to continue, stop, or route the publication to the pattern that governs the next question; it does not itself authorize that action.
 
 ### C.2.2a:1 - Problem frame
 In engineering, inquiry, operator, and management practice, teams often need to say where a governed `U.Episteme` publication currently stands before it has reached an endpoint subject pattern. That governed publication may appear through several cue-bearing, route-bearing, or endpoint-bound publication forms, but the chart claim remains about the governed `U.Episteme` publication rather than about a local alias or a carrier lane.
 
-Cue packs, routed cue sets, abductive prompts, typed route-bounded projection publications, partial normal forms, and endpoint-bound records are not rival positioned items in the space. They are publication forms through which a current position claim is made visible. MVPK faces may render those forms, but faces are not themselves the forms. By contrast, a service disturbance, a model-vs-observation discrepancy, a bodily tension, a telemetry trace, a model output, or a carrier document may trigger, witness, or carry that episteme, but none of those is itself a coordinate in the space.
+Reusable arrangements or notations for cue packs, routed cue sets, abductive prompts, typed route-bounded projection publications, partial normal forms, and endpoint records are publication forms. A completed cue or record can express the episteme being assessed; its arrangement does not determine its chart position. An MVPK face is a selected publication form under E.17; it remains separate from the episteme, publication occurrence and carrier under E.24.PUB. By contrast, a service disturbance, a model-vs-observation discrepancy, a bodily tension, a telemetry trace, a model output, or a carrier document may trigger, witness, or carry that episteme, but none of those is itself a coordinate in the space.
 
-Practitioners, including engineers, operators, researchers, managers, and engineer-managers, still have to decide where such an episteme currently stands, which thresholds matter next, which publication form is admissible, and what must not yet be claimed. If this domain is described only with folk labels such as `raw`, `early`, `settled`, or `ready`, the real geometry disappears.
+Practitioners still have to determine the relevant readings, any threshold used, the publication form needed and the claims those readings support. Labels such as `raw`, `early`, `settled`, or `ready` can hide these separate values and decision conditions.
 
 ### C.2.2a:2 - Problem
 Without an explicit language-state chart:
@@ -68,10 +68,10 @@ It is not a second kernel state-space apparatus beside `A.19`. It is the particu
 
 #### C.2.2a:4.0a - Kind and chart boundary
 
-`U.LanguageStateSpace` is a dependent durable chart value under `U.CharacteristicSpace` and the episteme language-state boundary, not a new root state-space U-kind. Its identity is the declared characteristic-space chart for governed episteme publication positions. Practitioners can publish or use the chart through score tables, publication forms, local route maps, and carriers, which remain distinct from the chart.
+`U.LanguageStateSpace` is a dependent durable chart value under `U.CharacteristicSpace` and the episteme language-state boundary, not a new root state-space U-kind. Its identity is the declared characteristic-space chart for governed episteme publication positions. Here, the positioned episteme publication is the selected published `U.Episteme` edition being assessed; the E.24.PUB publication occurrence remains separate. Practitioners can publish or use the chart through score tables, publication forms, local route maps, and carriers, which remain distinct from the chart.
 
 #### C.2.2a:4.1 - Core use
-`U.LanguageStateSpace` gives FPF one explicit declared chart for answering five questions:
+`U.LanguageStateSpace` gives FPF an explicit declared chart for answering five questions:
 
 - which basis slots define where the governed episteme stands;
 - what a position claim in that chart means;
@@ -84,7 +84,7 @@ A language-state position is a partial, slot-explicit coordinate claim in the de
 
 Publish each basis-slot reading as a `ValueSet(slot)`, interval, or other admissible set-valued claim. Early seam publications may leave some slots unknown or wide, but that uncertainty must be declared rather than hidden inside one stage word.
 
-`position` language is therefore admissible here only as shorthand for such slot-explicit `A.19` coordinate claims. It does **not** authorize a rival process-sequence or feature-vector story.
+`position` here abbreviates these slot-explicit `A.19` coordinate claims.
 
 #### C.2.2a:4.3 - Facet basis
 The language-state chart is coordinated by explicit facet subject patterns rather than by an informal master progression. Select the actual Characteristics and Scales needed for the next action from:
@@ -97,16 +97,15 @@ The language-state chart is coordinated by explicit facet subject patterns rathe
 
 The selected basis slots together define the chart under A.19. Each actual Characteristic has its own Scale and slot. In particular, neither a formality profile nor a representation-factor bundle is silently treated as one Coordinate. `C.2.2a` does **not** govern the internal meanings or Scale semantics of those Characteristics.
 
-#### C.2.2a:4.4 - Ontological slot groups
-Within this cluster, keep five slot groups distinct:
+#### C.2.2a:4.4 - Position, grounds and publication
+Keep the positioned episteme publication separate from the grounds for its assessment and from its publication form and carrier:
 
 - **positioned episteme publication** - the governed `U.Episteme` publication whose current position is being claimed;
 - **grounds / witnesses** - disturbances, discrepancies, traces, model outputs, bodily tensions, exemplars, or contrasts that justify the current reading;
-- **publication forms** - cue packs, routed cue sets, prompt forms, typed route-bounded projection publications, partial normal forms, and endpoint-bound records through which the episteme is published;
-- **publication faces** - the existing MVPK faces on which those publication forms are rendered when face typing matters;
-- **carriers** - documents, console notes, cards, trace files, or model carriers that hold or render a publication.
+- **publication forms** - arrangements or notations used for publications such as cue packs, prompts, typed projections, partial normal forms and endpoint records; an MVPK face is a selected publication form, identified when that distinction matters;
+- **carriers** - physical or digital media, such as a paper sheet, file or console display, that bear the selected form.
 
-`U.LanguageStateSpace` governs only the coordinate reading of the position claim. It does not collapse that claim into the grounds, publication form, publication face, or carrier.
+`U.LanguageStateSpace` governs only the coordinate reading of the position claim. Keep that claim distinct from its grounds, publication form and carrier.
 
 #### C.2.2a:4.5 - Position publication rule
 
@@ -117,7 +116,7 @@ Add the local threshold and named next action only when the row is used for move
 The position is reviewable when the named or inherited episteme publication, relevant readings, grounds, and any relied-on threshold are recoverable, and when any form, face, or carrier actually mentioned remains distinct from the positioned episteme publication. A polished note or better carrier does not by itself prove a new chart position.
 
 #### C.2.2a:4.6 - Non-substitution of `F`
-`F` remains one basis slot in the chart, not the whole chart.
+The formality assessment supplies the selected expression Characteristics, each with its own basis slot. A justified local summary may occupy one slot; a multi-property profile does not. These readings describe only the expression properties selected under C.2.3.
 
 A conforming account shall not infer:
 
@@ -129,23 +128,14 @@ A conforming account shall not infer:
 Where operationally meaningful thresholds exist, they must be published on the relevant slots rather than being disguised as informal `F` sublevels.
 
 #### C.2.2a:4.7 - Position versus publication form
-A position claim in `U.LanguageStateSpace` is distinct from:
-
-- the underlying governed `U.Episteme`,
-- the source disturbance, discrepancy, or witness,
-- the current publication form,
-- the MVPK face that renders that publication,
-- the carrier that stores or displays it,
-- or the endpoint-subject-qualified publication that may result from it.
-
-These objects are coupled but distinct. `U.LanguageStateSpace` keeps the position claim readable without conflating it with any of them.
+A position claim states facet readings about the identified episteme. Witnesses provide grounds for those readings; a selected publication form, including an MVPK face, expresses the claim; a carrier bears that form. Changing the form or carrier does not by itself change a facet reading. Any later publication qualified under an endpoint subject pattern still needs that pattern's conditions.
 
 #### C.2.2a:4.8 - Threshold publication discipline
 If a threshold is used to justify a move or endpoint entry, that threshold shall be stated on explicit basis slots in the chart. Statements such as `this is now ready`, `this has matured`, or `this is still too early` are non-conformant when they substitute for undeclared slot conditions.
 
 #### C.2.2a:4.9 - Comparison and bridge note
 
-Positions may be compared directly only under one shared chart meaning and the applicable local comparison rule. For cross-context use, first recover the two exact F.17 local senses and test the direct F.9 predicate. Cite a Bridge only when that predicate obtains. State the proposed bounded use and any reliance separately; a loss note is optional and belongs to that use, not to the fact that the contexts differ.
+Positions may be compared directly only under one shared chart meaning and the applicable local comparison rule. When comparison or reuse depends on distinct local meanings, recover the two exact F.17 local senses and test the direct F.9 predicate. Cite a Bridge only when that predicate obtains. State the proposed bounded use and any reliance separately; a loss note is optional and belongs to that use, not to the fact that the contexts differ.
 
 If no Bridge obtains, preserve both local positions. Name the actual comparison or translation relation needed by the receiving use, or return the applicable missing-governor result instead of inventing correspondence.
 
@@ -156,52 +146,50 @@ Compare the relevant readings with the local threshold named by the next action.
 ### C.2.2a:5 - Archetypal Grounding
 **Tell.** One note can have high operator-loop anchoring yet still low closure. Another can be document-mediated and symbol-heavy while still open on route choice. Both notes have positions in one language-state chart, but not on one maturity progression.
 
-**Show (System).** A service disturbance is a system-side phenomenon. The positioned governed `U.Episteme` publication is the alerting episteme published from that disturbance; its position claim may report moderate formality, low closure, high operator-loop anchoring, and mixed representation because terse codes and natural-language hints coexist.
+**Show (System).** A service disturbance is a system-side phenomenon. The positioned governed `U.Episteme` publication is the alerting episteme published from that disturbance; its position claim may identify a declared observation vocabulary and unit-bearing values, alongside low closure, high operator-loop anchoring, and mixed representation because terse codes and natural-language hints coexist.
 
 **Show (Episteme).** A model-vs-observation discrepancy is a witness-level tension, not the positioned episteme publication itself. Once preserved as a cue pack, the resulting governed `U.Episteme` may be low in articulation, low in closure, trace-anchored, and only partly symbolic even when rendered into prose.
 
 ### C.2.2a:6 - Bias-Annotation
-The pattern deliberately biases authors toward decomposable coordinate claims and away from folk stage vocabularies. That costs some brevity, but it prevents collapse of genuinely different state facets into one adjective.
+The pattern favors separate facet readings over one stage adjective when a decision depends on them. Ordinary descriptions remain sufficient under the non-use boundary in :0.
 
 ### C.2.2a:7 - Conformance Checklist
 - `CC-C.2.2a-1` `U.LanguageStateSpace` **SHALL** be treated as the declared language-state chart over `U.CharacteristicSpace`, not as a rival kernel space and not as a disguised `F` progression.
 - `CC-C.2.2a-2` Published positions **SHALL** cite explicit facet subject patterns when those positions matter for movement, routing, or endpoint entry.
 - `CC-C.2.2a-3` Position claims **SHALL** use slot-explicit values, `ValueSet` claims, or intervals; uncertainty **SHALL NOT** be hidden inside stage words such as `ready`, `early`, or `mature`.
-- `CC-C.2.2a-4` A position claim in the chart **MUST NOT** be conflated with the current ground, witness, publication form, publication face, or carrier.
-- `CC-C.2.2a-5` Cross-context use **SHALL** recover the two exact F.17 local senses and test the direct F.9 predicate. Cite a Bridge only when it obtains; keep the bounded-use claim, reliance, and any optional loss note separate. If it does not obtain, keep the local positions distinct and name the missing comparison or translation governor.
+- `CC-C.2.2a-4` A position claim in the chart **MUST NOT** be conflated with the current ground, witness, publication form (including an MVPK face), or carrier.
+- `CC-C.2.2a-5` Comparison or reuse that depends on distinct local meanings **SHALL** recover the two exact F.17 local senses and test the direct F.9 predicate. Cite a Bridge only when it obtains; keep the bounded-use claim, reliance, and any optional loss note separate. If it does not obtain, keep the local positions distinct and name the missing comparison or translation governor.
 - `CC-C.2.2a-6` Corridor and navigation notes **MUST NOT** be read as relocation of facet, seam, bridge, or downstream subject-pattern semantics into the chart subject-pattern set.
-- `CC-C.2.2a-7` If a position claim is used for routing, endpoint entry, or gate-adjacent reasoning, the threshold note and the bearer-lane distinction between positioned episteme publication, publication form, face, and carrier **SHALL** remain explicit or explicitly inherited from a pinned upstream publication.
+- `CC-C.2.2a-7` If a position claim is used for routing, endpoint entry, or gate-adjacent reasoning, its relied-on threshold **SHALL** remain explicit or recoverable from the cited applicable upstream publication. The positioned episteme publication **SHALL** remain identifiable. Include form, MVPK face or carrier distinctions when they affect interpretation or the next action, as in :4.5.
 
 ### C.2.2a:8 - Common Anti-Patterns and How to Avoid Them
 - **Maturity monism.** Replace five facets with one stage word. Repair by publishing explicit slot placement.
 - **Formality capture.** Use `F` to stand in for articulation, closure, or anchoring. Repair by naming the actual facet subject pattern.
-- **Carrier collapse.** Treat a document, cue pack, or routed note as if it were the position itself. Repair by separating carrier lane, publication form, publication face, and position claim.
+- **Carrier collapse.** Treat a document, cue pack, or routed note as if it were the position itself. Repair by distinguishing the position claim, publication form (including an MVPK face) and carrier.
 - **Threshold folklore.** Speak of readiness without any explicit threshold declaration. Repair by publishing relevant local threshold notes on explicit slots.
 - **Bridge by vibe.** Similar stage language is treated as equivalence. Recover the two exact F.17 local senses and test F.9; cite a Bridge only when its predicate obtains. Otherwise keep both positions local and route the actual comparison or translation question.
 - **Corridor inflation.** Treat the navigation cluster or corridor map as if it were the subject-pattern set for all downstream semantics. Repair by naming the pattern that governs the current chart, seam, or downstream claim; identify any seam publication form separately.
 
 ### C.2.2a:9 - Consequences
-The benefit is that practitioners, including engineers, operators, researchers, managers, and engineer-managers, can speak about where a governed `U.Episteme` stands without hiding the reasons inside vague maturity language. The trade-off is that publication must carry explicit slot and threshold information when decisions depend on it.
+Practitioners can state the language-state readings of a governed `U.Episteme` and their grounds without hiding them inside one maturity adjective. The trade-off is that publication must carry explicit slot and threshold information when decisions depend on it.
 
 ### C.2.2a:10 - Rationale
-Language-state work needs one explicit statement of what this chart is before individual facet, move, and endpoint patterns start using it. Without that statement, readers have to reconstruct the same geometry from scattered local rules and examples.
+Language-state work needs one explicit statement of what this chart is before individual facet, move, and endpoint patterns start using it. Its declared basis and each facet's rule let readers interpret a position and test the threshold needed by the next action.
 
 ### C.2.2a:11 - SoTA-Echoing
 
-**SoTA note.** This section does not mint a second rule source. It is a load-bearing alignment statement: the Solution, Conformance Checklist, and bearer-lane discipline of this pattern must match the stance stated here or explicitly justify divergence.
+The external comparisons below concern publication distinctions and scoped profiles. The chart basis remains grounded in A.19 and its facet patterns.
 
-**Traditions covered.** This pattern binds itself to architecture-description governance, model-based systems engineering, and risk/governance profiling practice.
-
-| Claim need | SoTA practice (post-2015) | Primary source (post-2015) | Alignment with `C.2.2a` | Adoption status |
+| Claim need | Practice contribution | Primary source | Alignment with `C.2.2a` | Adoption status |
 |---|---|---|---|---|
-| Complex technical state should be published through explicit views, viewpoints, and model distinctions rather than one implicit maturity word. | Contemporary architecture-description governance separates source architecture description, view, viewpoint, and correspondence evidence instead of letting one visible adjective stand in for the whole state. | ISO/IEC/IEEE 42010:2022 | `C.2.2a` adopts this by keeping chart position, publication form, face, and carrier in distinct slot groups and by rejecting stage-language as a surrogate coordinate system. | **Adopt.** |
+| Complex technical state should be published through explicit views, viewpoints, and model distinctions rather than one implicit maturity word. | Contemporary architecture-description governance separates source architecture description, view, viewpoint, and correspondence evidence instead of letting one visible adjective stand in for the whole state. | ISO/IEC/IEEE 42010:2022 | `C.2.2a` keeps chart position, publication form and carrier distinct; an MVPK face is a form under E.17. A stage adjective cannot substitute for the required facet readings. | **Adopt.** |
 | Governance-relevant readiness requires context-local profiles and thresholds, not one global adjective. | Current governance and risk frameworks use explicit profiles, thresholds, and scoped conditions rather than one blanket readiness label. | NIST AI RMF 1.0 (2023) | `C.2.2a` adopts the threshold-publication discipline and rejects the popular shortcut where `ready`, `early`, or `mature` replaces explicit slot conditions. | **Adopt/Reject-popular-shortcut.** |
 
-**Architecture-description governance.** `C.2.2a` adopts the discipline that positions, publication forms, faces, and carriers stay explicitly distinct, even when one local rendering makes them look aligned.
+**Architecture-description contribution.** Keep the position claim and the form and carrier through which it is published distinguishable when their identity changes interpretation or use.
 
 **Characteristic-space and profile discipline.** The multi-facet chart is grounded in FPF `A.19` and the current `C.2.3`–`C.2.7` facet patterns; it is not imported from an external modeling language. Current governance practice contributes the narrower discipline of publishing scoped profiles and thresholds.
 
-**Local stance.** The load-bearing architecture decision is FPF-native: governed language-state is a multi-facet chart with explicit thresholds and bearer-lane distinctions, not one maturity progression or one polished publication face. The external rows support the narrower view, publication, profile, and threshold disciplines stated above.
+**Local stance.** The load-bearing architecture decision is FPF-native: governed language-state uses a multi-facet chart with explicit thresholds and the publication distinctions needed by the receiving use, not one maturity progression or one polished publication face. The external rows support the narrower view, publication, profile, and threshold disciplines stated above.
 
 ### C.2.2a:12 - Relations
 - Builds on: `A.19`, `E.10`, `F.18`.
@@ -213,7 +201,7 @@ Language-state work needs one explicit statement of what this chart is before in
 #### C.2.2a:13.1 - Inquiry cue before endpoint capture
 A position claim for a research cue note may state:
 
-- moderate `F`,
+- `F`: the terms needed for the inquiry are defined, while the proposed inferences remain in prose,
 - low articulation explicitness,
 - low closure,
 - strong embodied or trace-based anchoring,
@@ -224,7 +212,7 @@ Keep these readings explicit when testing entry into `A.6.P` or `C.25`; the note
 #### C.2.2a:13.2 - Routed operator alert note
 A routed operational alert may have:
 
-- moderate formality,
+- `F`: the alert condition has unit-bearing variables and an explicit threshold predicate,
 - medium articulation,
 - low closure because several responses remain live,
 - high operator-loop anchoring,
@@ -233,7 +221,7 @@ A routed operational alert may have:
 Keep the live responses explicit in the route-bearing seam publication. Before publishing an endpoint-subject-qualified work record or reliance record, test the applicable downstream pattern's conditions; these chart readings do not decide that result.
 
 #### C.2.2a:13.3 - Viewpoint-bound adequacy note
-A document-mediated adequacy note about an architecture description may be relatively high in formality and articulation, mid-level in closure, document-mediated in anchoring, and symbolic in representation. That position remains within the same language-state chart even though its carrier lane differs from an embodied inquiry cue.
+A document-mediated adequacy note about an architecture description may state an explicit vocabulary and predicates for its claims, with articulation sufficient for the described comparisons, mid-level closure, document-mediated anchoring and symbolic representation. That position remains within the same language-state chart even though its carrier lane differs from an embodied inquiry cue.
 
 #### C.2.2a:13.4 - Polished prose is not closure
 A prose rewrite may look cleaner, more compact, or more manager-readable than the source cue and still remain low in closure or articulation explicitness. If the underlying slot values, uncertainty, and route plurality remain unchanged, then publication polish changes the rendering or carrier lane, not the chart position by itself.
@@ -245,10 +233,10 @@ A publishable row contains the exact episteme publication, the decision-relevant
 Minimum self-check:
 
 1. Does the row name the positioned episteme publication rather than a ground, form, face, or carrier?
-2. Does it state every facet that can change the named next action and mark a relevant unknown honestly?
+2. Does it state every facet that can change the named next action and mark a relevant unknown as unknown?
 3. Are the grounds and any relied-on local threshold recoverable?
-4. Does the row say what action is allowed, blocked, or still undecided without pretending to authorize it?
-5. For cross-context use, was F.9 tested on two exact local senses rather than inferred from similar wording?
+4. Does the row say whether its readings meet the named action's threshold, fail it, or leave the result undecided, while the receiving pattern governs the action?
+5. If the use depends on distinct local meanings, was F.9 tested on the two exact local senses rather than inferred from similar wording?
 
 ### C.2.2a:15 - Extended corridor map
 

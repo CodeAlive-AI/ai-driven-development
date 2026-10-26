@@ -1,21 +1,19 @@
 ## FPF.Reference:4 - Creativity And Assurance Mature Together
 
-Many frameworks choose a side. Some optimize for assurance: audit trails, evidence, safety gates, confidence, compliance, and sign-off. Others celebrate creativity: exploration, novelty, pivots, abduction, and open-ended search. FPF is built to keep both rails alive at once.
+Creative inquiry produces and examines possibilities. Assurance establishes what reliance a claim can support. FPF connects these contributions while keeping their conditions distinct.
 
-Creativity without assurance drifts. Assurance without creativity calcifies. A project that only imagines produces attractive but untested possibilities. A project that only checks can become excellent at rejecting new options before it has generated any worth checking.
+A project may generate attractive possibilities that remain untested, or repeatedly reject candidates without developing alternatives worth comparing.
 
-FPF treats creative work as governed search. It gives names to the early move where a team asks "what could be true?", to the generation of multiple candidate explanations or designs, to the preservation of novelty and diversity, to the comparison of alternatives, and to the point where exploration should narrow into refinement. The relevant families include abduction, problem shaping, novelty-diversity and open-ended exploration, set-returning selection, publications of current best-known options, and option portfolios.
+FPF treats creative work as governed search. It offers methods for asking "what could be true?", generating candidate explanations or designs, preserving novelty and diversity, comparing alternatives, and moving from exploration to refinement when the question requires it. The relevant families include abduction, problem shaping, novelty-diversity and open-ended exploration, set-returning selection, publications of current best-known options, and option portfolios.
 
-FPF also treats assurance as more than a final audit. Evidence, assurance, source-publication currentness, source-use currentness, gate validity, and decision permission are different claims. They can mature while creativity is still active. An early idea can be preserved as a cue without pretending it is evidence. A candidate can be kept in a portfolio without pretending it has been selected. A promising mathematical way of looking at the problem can be recorded without pretending it validates the world.
+FPF also treats assurance as more than a final audit. Evidence, assurance, source-publication currentness, source-use currentness, gate validity and decision permission are different claims. They can develop while creative inquiry continues. Preserving a cue does not by itself establish evidence for another claim; keeping a candidate in a portfolio does not choose it for the next action; recording a mathematical proposal does not validate its correspondence to the world.
 
-This useful order does not define a project sequence. The practical stance is:
+These contributions do not define a compulsory project sequence. In practice:
 
 - generate enough candidate explanations or designs before converging;
 - keep novelty, use value, constraint fit, and comparison characteristics visible;
-- turn promising candidates into forms that evidence and assurance can inspect;
+- explain promising candidates so their claims and conditions can be evaluated for the intended reliance;
 - publish selected options, Pareto-like fronts, or portfolios without hiding remaining uncertainty;
-- reopen the work when evidence, source-publication or source-use currentness, context, or state of the art changes.
+- reopen affected work when changes in evidence, source-publication or source-use currentness, context or state of the art can change its result or justified use.
 
-In a laboratory, an anomaly is not merely noise. It may be a prompt for candidate explanations, followed by evidence and model comparison. In a product team, a concept sketch is not a meeting souvenir. It can become a reviewable knowledge object, which FPF calls an episteme, with scope, candidate value, and evidence needs. In operations, an emergency workaround may be a useful abductive move; later reliance on it depends on connections to evidence, assurance, and work records.
-
-This is one of FPF's central payoffs: a team can be inventive without losing its audit trail, and conservative without closing down imagination too early.
+In a laboratory, an anomaly may prompt candidate explanations, evidence gathering and model comparison. A product concept sketch can be developed into a reviewable claim-bearing account—an episteme—with scope, proposed value and evidence needs. In operations, proposing an emergency workaround may involve abduction; later reliance on that workaround depends on the evidence, assurance and work records required for that use.

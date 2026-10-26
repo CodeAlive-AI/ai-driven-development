@@ -6,19 +6,16 @@
 
 ### B.2.5:0 - Use This When
 
-Use this pattern when a holon is supervised, regulated, steered, corrected, constrained, or coordinated through a two-sided feedback relation between one supervising acting system and one or more supervised holons. If the supervision is conditioned by a local system-role kind or assignment, recover that classification and exact assignment separately.
+Use this pattern to describe two-sided feedback between one supervising acting system and one or more supervised holons. If the supervision is conditioned by a local system-role kind or assignment, recover that classification and exact assignment separately.
 
 The first useful move is to recover the facts supporting the feedback claim:
 
-```text
-Which holons are supervised?
-Which admitted system supervises these holons for this feedback use, under which policy and during which time window, and which local supervisor system-role kind and exact assignment obtain when that classification matters?
-What observation, report, signal, publication, or source relation carries state?
-What influence, constraint, objective, mode, or work change returns?
-Which rule and case facts couple that return to the observation for each supervised holon?
-Which transformation, work, architecture, evidence, assurance, timing,
-or causal claim is being made in addition to the relation?
-```
+1. Name the supervised holons and the admitted system supervising them.
+2. State the feedback use, policy, and time window. Add a local supervisor system-role kind and assignment when that classification matters.
+3. Identify the observation, report, signal, publication, or source relation that conveys state.
+4. Identify the influence, constraint, objective, mode, or Work change returned to each holon.
+5. State the rule and case facts coupling each return to its observation.
+6. Separate any additional transformation, Work, architecture, evidence, assurance, timing, or causal claim.
 
 **What goes wrong if missed.** A control diagram, policy note, dashboard, publication channel, or supervisor word starts carrying part-whole, agency, safety, assurance, timing, gate, or architecture claims that belong elsewhere.
 
@@ -42,7 +39,7 @@ Use B.2.5 for this compound description. A broader architecture, MHT, Work or ev
 
 ### B.2.5:2 - Problem
 
-Without this pattern, three different structures collapse:
+Keep three structures distinct:
 
 1. **Part-whole structure.** Which holons are parts of which wholes.
 2. **Supervisor-subholon feedback relation.** Which admitted system supervises, what it observes, and what influence or constraint returns; add its system-role kind and assignment only when separately current.
@@ -103,13 +100,13 @@ Reopen the dedicated relation-kind alternative only when a receiving use needs t
 
 #### B.2.5:4.2 - Part-Whole Boundary
 
-A supervised holon may be part of a larger holon, but supervision and parthood are different relations. A controller, committee, platform-governance group, review board, or tool-mediated group can supervise when the exact acting entity is independently admitted as `U.System`; it may do so under an exact system-role assignment without being a physical part of the supervised holon. A method, policy, or review practice can structure the supervision work; it does not supervise by itself.
+A supervised holon may be part of a larger holon, but supervision and parthood are different relations. The supervising entity must be independently admitted as `U.System`; it may supervise under a system-role assignment without being a physical part of the supervised holon. A method, policy, or review practice can structure the supervision work; it does not supervise by itself.
 
 Use `A.1` for holon recognition, `A.14` for the exact mereological claim, and `B.1` or `C.13` for the applicable construction account. Use B.2.5 for the compound supervisor-subholon feedback claim.
 
 #### B.2.5:4.3 - Acting-System Boundary
 
-The supervising participant is an admitted acting system. When local classification matters, A.2 supplies the exact supervisor system-role kind and A.2.1 supplies the obtaining assignment; neither label nor assignment acts. Do not create `U.TransformerRef` or treat a publication, theory, dashboard, model, method description, or report as the acting system.
+The supervising participant is an admitted acting system. When local classification matters, A.2 supplies the supervisor system-role kind and A.2.1 supplies the obtaining assignment. Distinguish that system from an episteme it uses, such as a policy or report.
 
 For acting-side externalization, use `A.12`. For transformation, use `A.3.4`. For Work, use `A.15.1`. For system-role kind and assignment, use `A.2` and `A.2.1`.
 
@@ -153,7 +150,7 @@ A C.30.LCA description consumes the report and command relation references plus 
 
 A theory is revised when labs publish findings and a research community reviews anomalies and accepted revisions.
 
-B.2.5 can state feedback around review and revision when the reviewed object is independently admitted as a Holon and the report, returned revision influence and coupling rule are established. Otherwise retain the independently supported review or source-use claims. Recover the exact admitted System that performs the review or revision, whether it is a research community, standards body, lab, review board, or tool-mediated group; any local system-role kind and assignment are separate claims. The theory remains the reviewed or revised episteme.
+B.2.5 can state feedback around review and revision when the reviewed object is independently admitted as a Holon and the report, returned revision influence and coupling rule are established. Otherwise retain the independently supported review or source-use claims. Name the admitted System performing the review or revision; its local system-role kind and assignment, when relevant, are separate claims. The theory remains the reviewed or revised episteme.
 
 For publication channels, journals, datasets, reports, and review records, keep each object's identity distinct from its current publication or source-use relation; recover content, form, representation, or carrier only when the case depends on that distinction.
 
@@ -165,7 +162,7 @@ Work alignment uses `A.15`; a separate work-authority claim needs its own direct
 
 ### B.2.5:5.4 - Bias-Annotation
 
-| Bias | How B.2.5 prevents it |
+| Bias | Correction |
 | --- | --- |
 | Supervisor relation mistaken for parthood or containing-whole identity | The supervisor relation is not a parthood claim; `A.1` governs holon recognition, `A.14` the exact mereological claim, and `B.1` or `C.13` the applicable construction account. |
 | Feedback-as-proof bias | A closed feedback relation may supply input to separate stability, safety, assurance, or timing work, but does not certify those claims. |
@@ -179,7 +176,7 @@ Work alignment uses `A.15`; a separate work-authority claim needs its own direct
 | `CC-B2.5-1` | A conforming use names supervised holons and the supervising acting system; it adds the local supervisor system-role kind and exact assignment only when each independently obtains. |
 | `CC-B2.5-2` | A conforming use names the observation, report, or source side and the influence, constraint, or objective side. It also names the coupling rule, its case facts, common applicability, temporal qualification and evidence that changes the compound claim or its later use. |
 | `CC-B2.5-3` | The assertion is the conjunction of observation, return and coupling for every member of a nonempty supervised set. It introduces no fused U.Relation occurrence; a mathematical loop needs its separate C.29 use. |
-| `CC-B2.5-4` | No `U.TransformerRef` or `U.InteractionRef` is created. |
+| `CC-B2.5-4` | Observation and influence references retain their direct kinds; a report episteme, signal occurrence, and source-use relation are not interchangeable. |
 | `CC-B2.5-5` | Parthood, control-structure view, base publication and source-use relations, and the compound feedback assertion are kept separate. Each base occurrence keeps its own identity and extent rules. |
 | `CC-B2.5-6` | Stability, safety, timing, causal, evidence, assurance, gate, and mathematical-lens claims use the patterns that define or test them. |
 | `CC-B2.5-7` | Episteme examples name the acting systems that perform review, revision, publication, or use. |
@@ -191,7 +188,7 @@ Work alignment uses `A.15`; a separate work-authority claim needs its own direct
 | Unspecified supervisor-subholon feedback | Subholons are said to be coordinated through supervisor-subholon feedback, but no supervising acting system, medium, or feedback relation is named. | Recover the supervised holons, actual supervising System, observation side and returned influence side. Record that claim only when the receiving use needs it; add a system-role kind or assignment only when independently current. |
 | Functional layer as component | A planning or control layer is modeled as a physical part of the controlled holon. | Separate parthood from feedback relation; use `C.30.LCA` for the view. |
 | Perfect communication | State access is assumed instant, complete, or lossless. | Name medium or publication limits; use `C.27`, `A.3.3`, or evidence-use patterns for timing and information claims. |
-| Episteme acts | A theory, model, paper, dashboard, or standard senses, judges, plans, or adapts. | Recover each exact acting System through A.13 and let A.15.1 independently admit the dated revision Work. Add F.6 only when the account expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact. A short sentence may omit an unused assignment identifier. Name the Method or review practice structuring the Work when current, and any publication or source-use relation. This Work rule does not make assignment or system-role classification a condition of the supervisor-subholon feedback relation itself. |
+| Episteme acts | A claim-bearing episteme is assigned sensing, judging, planning, or adaptation that a system performs. | Name the acting System and distinguish it from the episteme it uses. If the account asserts a particular dated Work, recover the acting System through A.13 and let A.15.1 independently admit that Work. Add F.6 only when the account consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact. A short sentence may omit an unused assignment identifier. Name the Method or review practice structuring the Work when relevant, and any publication or source-use relation. This Work rule does not make assignment or system-role classification a condition of the feedback claim itself. |
 | Relation certifies safety | The feedback relation is treated as evidence, assurance, gate, or safety result. | Keep the relation and use the pattern for the stronger claim. |
 
 ### B.2.5:8 - Consequences

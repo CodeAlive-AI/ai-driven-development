@@ -1,11 +1,11 @@
 ## FPF.Reference:8 - Beyond Bias Hunting
 
-Critical-thinking practice often focuses on cognitive biases: confirmation bias, availability bias, planning fallacy, fixation, groupthink, and many others. That work is useful. It gives names to predictable failures in human judgment.
+Recognizing cognitive biases—such as confirmation bias, availability bias, planning fallacy, fixation and groupthink—can help diagnose recurring failures in judgement.
 
-But bias hunting is mostly corrective. It starts after a bad pattern of reasoning has appeared. It asks the thinker to remember a growing list of mistakes and avoid them by vigilance.
+Diagnosing a recurring error leaves a constructive question: what arrangement of reasoning and work would prevent it or expose it when it matters?
 
-FPF takes a more constructive stance. It does not only say "do not confuse the plan with reality." It gives separate objects for method description, plan, performed work, evidence, and result. It does not only say "do not trust the dashboard too much." It distinguishes evidence, published dashboard rendering, assurance, gate, and decision. It does not only say "do not jump to a favorite option." It gives candidate sets, comparison characteristics, selected options, and portfolio refresh.
+FPF provides distinct accounts of method description, plan, performed work, evidence and result, with rules for relating them. For a dashboard, recover which claims it presents and what evidence, assurance, gate result or decision the intended use requires. For options, form candidates, compare their characteristics, choose when warranted and refresh retained alternatives.
 
-That is why FPF's discipline around wording and descriptions should not make FPF look like a commission for checking speech. The repair matters, but it is not the center. The center is constructive: build reasoning arrangements in which whole classes of mistakes become harder because the EntityOfConcern, claim kind, evidence path, publication use, decision, and work object are not allowed to collapse unnoticed.
+The constructive task is to organize reasoning so that its subject, claim kinds, support, publication uses, decisions and Work remain distinguishable and connected. The relevant methods explain how to obtain and connect these contributions and how to revise them when their premises change.
 
-This changes the tone of FPF. It is not a list of warnings. It is a design language for better reasoning. The user should come away not only knowing what not to say, but knowing what to build next: an architecture question note, problem card, comparison frame, characteristic space, evidence-readiness note, naming card, repaired paragraph, modeling note, option portfolio, or improvement loop.
+The useful next result may be a clearer problem, a justified comparison, a workable method, a revised physical arrangement or an explanation another practitioner can use. Create a card, model or report when that is the result needed.

@@ -10,7 +10,7 @@ Use this pattern when work must recover one reusable kind, decide whether one ki
 
 **What goes wrong if missed.** A source or practice label becomes an identity key, `U.SubkindOf` carries dependency or construction, a finite sample is mistaken for a universal order, mutually classifying kinds are silently merged, or a changed declaration is treated as automatically new or automatically harmless.
 
-**What this buys.** The user gets an operational kind-continuity test, a replayable subkind test, and a small preorder that remains distinct from declaration identity, current extension, evidence, bridging, and public naming.
+**What this buys.** The user gets an operational kind-continuity test, a replayable subkind test, and a preorder of subkind facts distinct from declaration identity, current extension, evidence, bridging, and public naming.
 
 **Primary EntityOfConcern.** One `U.Kind` individual recovered through its candidate domain, operative membership condition, intended member/non-member distinction, and continuity rule; or one proposed `U.SubkindOf` relation between exact kind participants within declared applicability.
 
@@ -22,7 +22,7 @@ Use this pattern when work must recover one reusable kind, decide whether one ki
 
 A practice/source boundary is provenance and a comparison cue. It affects the continuity decision only when comparison exposes a real difference in the candidate domain or membership distinction.
 
-`U.SubkindOf` is separately admitted by `E24UK-AR-USUBKINDOF-R5-01` as a same-individual dependent kind under `U.Relation`. Its participants are an exact narrower kind and broader kind. An effective reference scheme and aligned `KindSignature` editions make the criteria interpretable and qualify applicability; they are not relation participants or occurrence-identity discriminators. Candidate state, context slice, declaration edition, kind identity, and one obtaining subkind relation can therefore change for different reasons.
+`U.SubkindOf` is a same-individual dependent kind under `U.Relation`. Its participants are an exact narrower kind and broader kind. An effective reference scheme and aligned `KindSignature` editions make the criteria interpretable and qualify applicability; they are not relation participants or occurrence-identity discriminators. Candidate state, context slice, declaration edition, kind identity, and one obtaining subkind relation can therefore change for different reasons.
 
 ### C.3.1:2 - Problem
 
@@ -113,7 +113,7 @@ C.3.1 counters hierarchy, sample-as-law, assertion-as-world, locality, and table
 | Check | Requirement |
 | --- | --- |
 | `CC-C31-1` | Each `U.Kind` individual has a recoverable candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. Practice/source provenance is a comparison cue, not an automatic identity discriminator. |
-| `CC-C31-2` | `U.SubkindOf` cites `E24UK-AR-USUBKINDOF-R5-01`, has exact ordered kind participants, declared applicability, one valid obtaining branch, and participant-determined occurrence identity. |
+| `CC-C31-2` | `U.SubkindOf` has exact ordered kind participants, declared applicability, one valid obtaining branch, and participant-determined occurrence identity. |
 | `CC-C31-2a` | Predicate content, C.2.1 assertion, evidence item, representation edge, scheme and signature editions, and optional occurrence designator remain distinct; none makes the relation obtain by form. |
 | `CC-C31-2b` | Obtaining facts form a preorder. Mutual facts between distinct kinds record classification equivalence for the alignment; a partial order is formed only over equivalence groups when needed. |
 | `CC-C31-3` | Criterion entailment compares exact membership rules under aligned interpretation, or exhaustive evaluation covers a deliberately closed finite domain. Non-exhaustive observations support only the assertion. |
@@ -138,8 +138,6 @@ C.3.1 counters hierarchy, sample-as-law, assertion-as-world, locality, and table
 **Benefits.** Local typed compatibility remains small while its consequences for actual candidate judgments are testable.
 
 **Costs.** A declaration change that matters to later classification needs an explicit edition and a separate continuity decision.
-
-**Risks avoided.** False hierarchy, silent redefinition, retrospective reinterpretation, table-created membership, and kind/individual substitution are blocked.
 
 ### C.3.1:12 - Rationale
 

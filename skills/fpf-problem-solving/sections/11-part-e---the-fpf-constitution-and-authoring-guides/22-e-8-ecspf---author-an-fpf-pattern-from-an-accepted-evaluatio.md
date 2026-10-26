@@ -6,9 +6,9 @@
 
 ### E.8.ECSPF:1 - Problem frame
 
-Use this pattern when an accepted `EvaluationCharacteristicSpaceSpec` constructed or repaired under `A.19.ECS` has been selected for durable FPF publication, and an author must turn it into a practitioner-facing pattern. The question is not "what values should this object be judged by?" but "how should the pattern teach this evaluation so its values remain usable, reviewable, and bounded?"
+Use this pattern when an accepted `EvaluationCharacteristicSpaceSpec` constructed or repaired under `A.19.ECS` has been selected for durable FPF publication, and an author must turn it into a practitioner-facing pattern. The author must explain how to perform the evaluation defined by that specification so its values remain usable, reviewable and bounded.
 
-`A.19.ECS` guides an author in constructing or repairing the evaluation characteristic-space specification: evaluated object kind and, when needed, the object version; declared use, working reader, qualification window, contrast cases, object-kind-fit rule, coordinate and scale bindings, value meanings and preferred movement, evidence and missingness rules, result-row shape, adjacent-value rationales, calibration points, any triggered coordinate payload, protected trade-offs, any declared comparison rule, status meanings, neighbouring-pattern exits, and stop, reopen, `E.22`, and `E.23` conditions. `E.8` supplies the ordinary FPF authoring form. `E.8.ECSPF` tells the author how to carry the accepted specification into that form. The specification, its `CharacteristicSpace`, the authored pattern content, a later evaluation of an object, and the result of that evaluation remain different things.
+`A.19.ECS` guides construction or repair of the specification: what is evaluated, for which use, how values are justified and what the result permits. Section 4.3 below identifies the complete accepted content to publish. `E.8` supplies the ordinary FPF authoring form. `E.8.ECSPF` tells the author how to carry the accepted specification into that form. The specification, its `CharacteristicSpace`, the authored pattern content, a later evaluation of an object, and the result of that evaluation remain different things.
 
 **Not this pattern when.** Use `A.19.ECS` when the characteristic-space specification itself is missing or inadequate. Use `E.8` when the pattern is not an evaluation-characteristic-space pattern. Use `E.21`, `E.9.DA`, `E.2.DA`, `F.18`, `C.25`, or a project-local evaluation when one already supplies the value meanings for the evaluated object and use. Use `E.22` to frame one quality evaluation and `E.23` to run repeated improvement. Use a local rubric, table, or project rule instead of an FPF pattern when the evaluation is not intended for durable FPF reuse.
 
@@ -18,7 +18,7 @@ Use this pattern when an accepted `EvaluationCharacteristicSpaceSpec` constructe
 
 **What goes wrong if missed.** The pattern, the accepted specification, the evaluation, and its result collapse into one supposed object. The pattern then becomes a score sheet, review form, checklist, or taxonomy. The coordinate table appears before the working situation. Readers can see values but cannot tell when to use them, what to do after an evaluation result, which objects are outside the declared evaluated-object kind, or which neighbouring pattern supplies the needed evidence, assurance, gate, work, decision, naming, measurement, or improvement guidance.
 
-**What this buys.** `E.8.ECSPF` lets an author publish evaluation guidance as a real pattern: practitioner-readable first, exact enough for review, and bounded enough for a later evaluator to use with the framing guidance in `E.22` or the repeated-improvement guidance in `E.23`.
+**What this buys.** `E.8.ECSPF` lets an author publish evaluation guidance as a pattern: practitioner-readable first, exact enough for review, and bounded enough for a later evaluator to use with the framing guidance in `E.22` or the repeated-improvement guidance in `E.23`.
 
 **Primary EntityOfConcern in plain terms.** The primary EntityOfConcern is the authored FPF pattern content and its publication form for one accepted evaluation characteristic-space specification.
 
@@ -95,7 +95,7 @@ The authoring flow and the quality-improvement flow are different. First an auth
 | `DiscriminatingCaseBank` | Passing, below-floor, and outside-declared-object-kind boundary worked slices. | Not only positive examples. |
 | `RelatedPatternRelationBlock` | Statements of outside claims, each with the applicable pattern id and its concrete contribution in this use. | Not a general directory, a closed relation-verb vocabulary, or a list of presumed Methods. |
 | `EvaluationResultFormBlock` | Published result-form discipline for this evaluation: required row fields, evidence basis, short rationale rule, and any coordinate-specific payload. | Not a review report, project status, or optional appendix. |
-| `CalibrationAndPayloadBlock` | Published adjacent-value calibration points and payload rules for values that need comparator, source-currentness, corpus-projection, worked-case, or retrieval evidence. | Not extra bureaucracy and not a second score system. |
+| `CalibrationAndPayloadBlock` | Published adjacent-value calibration points and payload rules for values that need comparator, source-currentness, corpus-projection, worked-case, or retrieval evidence. | Requirements for the same evaluation, not a second score system. |
 | `PatternVersionQualityEvaluation` | Optional `E.21` evaluation over the authored pattern publication form. | Not a replacement for the evaluation for one evaluated object kind and not publication-form method content. |
 
 #### E.8.ECSPF:4.3 - By-value carry-through
@@ -115,7 +115,7 @@ The fields may be expressed in plain language, tables, or worked cases, preservi
 
 ### E.8.ECSPF:5 - Archetypal Grounding
 
-**Tell.** Guidance based on an evaluation `CharacteristicSpace` becomes reusable in FPF only when a practitioner can recognize the evaluated object and use before reading the coordinate table. The publication form must teach the evaluation use, not merely list the values. The following slice shows the author's move from an accepted specification to practitioner-facing content.
+Guidance based on an evaluation `CharacteristicSpace` becomes reusable in FPF only when a practitioner can recognize the evaluated object and use before reading the coordinate table. The publication form must teach the evaluation use, not merely list the values. The following slice shows the author's move from an accepted specification to practitioner-facing content.
 
 **Accepted specification.** An author has an accepted `EvaluationCharacteristicSpaceSpec` for one version of a field-service handover instruction.
 
@@ -147,11 +147,11 @@ The returned status is `repair`, because one coordinate remains below its declar
 
 **Near miss, proxy improvement.** An editor shortens the instruction so the first move is easier to find, but deletes the visible stop condition. `FirstMoveRecoverability` rises to `2` while `HazardBoundaryVisibility` falls to `0`. The author must not add or average those ordinal values and call the rewrite better. The protected safety trade-off has been lost, so the pattern returns `repair` and the accepted specification must be reopened if its current status rule would reward that rewrite.
 
-**Show, pattern-quality evaluation.** `E.21` is an evaluation for one FPF pattern version. Its publication form must still open with the working question "is this pattern good enough for the declared use?" before showing coordinates such as first-action recoverability, boundary fit, and SoTA binding.
+**Pattern-quality evaluation.** `E.21` is an evaluation for one FPF pattern version. Its publication form must still open with the working question "is this pattern good enough for the declared use?" before showing coordinates such as first-action recoverability, boundary fit, and SoTA binding.
 
-**Show, local rubric that should not become an FPF pattern.** A project team defines a temporary rubric for choosing a meeting room. The `A.19.ECS` specification may be adequate locally, but no durable FPF pattern is needed because the evaluated object kind and use do not recur across FPF practice.
+**Local rubric.** A project team defines a temporary rubric for choosing a meeting room. The `A.19.ECS` specification may be adequate locally, but no durable FPF pattern is needed because the evaluated object kind and use do not recur across FPF practice.
 
-**Show, object-kind boundary.** A nuclear-plant evaluation can judge nuclear plants and declared comparable power-generation alternatives. A plant inspection report can supply evidence about the plant but is outside that evaluated-object kind: before the evaluation is opened, select a suitable evaluation; after a forced invocation, record an object-kind-fit defect/value rather than treating it as a weak nuclear plant or skipping declared coordinates. The pattern publication form must show that boundary before readers try to use the coordinate table.
+**Object-kind boundary.** A nuclear-plant evaluation can judge nuclear plants and declared comparable power-generation alternatives. A plant inspection report can supply evidence about the plant but is outside that evaluated-object kind: before the evaluation is opened, select a suitable evaluation; after a forced invocation, record an object-kind-fit defect/value rather than treating it as a weak nuclear plant or skipping declared coordinates. The pattern publication form must show that boundary before readers try to use the coordinate table.
 
 ### E.8.ECSPF:6 - Bias-Annotation
 
@@ -162,7 +162,7 @@ Evaluation-characteristic-space patterns are vulnerable to domain-example bias: 
 | Check | Requirement | Why |
 |---|---|---|
 | `CC-E8ECSPF-1` | The pattern SHALL carry every required value from the accepted `EvaluationCharacteristicSpaceSpec` and every optional value whose trigger holds, including reader scope, qualification window, neighbouring exits, and the applicable `E.22` and `E.23` conditions. A citation or field-name list alone does not satisfy this requirement. | Prevents loss between the accepted specification and practitioner-facing content. |
-| `CC-E8ECSPF-2` | Recognition text SHALL state evaluated object kind, declared use, working reader, qualification window, first evaluation use, FPF-publication boundary, and object-kind boundary before dense coordinate tables. | Keeps the pattern usable before it becomes reviewable. |
+| `CC-E8ECSPF-2` | Recognition text SHALL state evaluated object kind, declared use, working reader, qualification window, first evaluation use, FPF-publication boundary, and object-kind boundary before dense coordinate tables. | Makes the evaluation use recognizable before detailed review. |
 | `CC-E8ECSPF-3` | The `Solution` SHALL carry the accepted specification's values rather than leaving them only in conformance rows, SoTA rows, or examples. | Prevents checklist substitution. |
 | `CC-E8ECSPF-4` | Worked cases SHALL include passing, below-floor, and outside-declared-object-kind boundary outcomes. | Tests evaluated-object-kind discrimination. |
 | `CC-E8ECSPF-5` | Each coordinate SHALL state value meanings, polarity or no-simple-direction value rule, missingness rule, and protected trade-off when applicable to the declared evaluation use. | Makes evaluation uses repeatable and bounded. |
@@ -217,7 +217,6 @@ The split between `A.19.ECS` and `E.8.ECSPF` preserves the distinction between a
 | [*AHELM: A Holistic Evaluation of Audio-Language Models* (arXiv:2508.21376)](https://arxiv.org/abs/2508.21376) | The HELM comparison discipline extended to audio-language models across audio-relevant aspects, with standardized prompts, inference parameters, metrics, and released outputs. | An audio-language evaluation must publish the audio-specific use, procedure, and evidence that change its coordinates. | AHELM is an audio-language source, not an agent-evaluation source and not evidence for unrelated modalities. | Reopen if a successor changes the adopted audio-language procedure or exposes a missing audio boundary. |
 | [*A survey on Quality-Diversity optimization: Approaches, applications, and challenges* (2026, DOI 10.1016/j.swevo.2025.102240)](https://doi.org/10.1016/j.swevo.2025.102240) | Current overview, for this narrow question, of QD feature or descriptor spaces, local quality and objective heads, diversity, containers, comparison or dominance, and evaluation metrics. | The publication form keeps dimensions, comparison rules, and protected trade-offs visible when an aggregate would hide loss. | QD is optimization over a declared feature space, not a universal evaluation architecture. A bounded scalarization remains separately declared with its use, loss, and non-use boundary. | Reopen if a newer synthesis changes the QD comparison used here or if this pattern claims more than the narrow non-scalar lesson. |
 
-Model-card literature and classic pattern-language literature remain historical lineage for intended-use reporting and action-guiding publication. The retained publication lesson is concrete: put recognition and the first evaluation use before coordinate tables. This lineage is not presented as current-best evidence for the question. Current FPF `E.8` supplies the internal authoring rule and is not an external SoTA source.
 
 ### E.8.ECSPF:12 - Relations
 

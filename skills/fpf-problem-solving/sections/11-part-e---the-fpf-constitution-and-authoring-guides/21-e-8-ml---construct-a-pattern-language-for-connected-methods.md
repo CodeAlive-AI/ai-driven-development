@@ -73,7 +73,7 @@ A formal CGUS is appropriate only when that structure is itself needed. A.22.CGU
 
 A changed fact can change a continuation judgement under the same frame. A changed question, admissible action or stop can require reidentification. The user or capable system assesses the new situation. During ongoing Work, A.15.7 supplies the next-action decision.
 
-When the promised use includes performing or learning a Method, show its relevant vertical as well as result dependencies. At a selected moment, what constituent action is enacting what encompassing work, and what changes in that action when a condition of the whole changes? B.1.5.EW supplies this recovery. Show the capability, support and combined resource conditions that the language's own bodies leave to another contribution. Use a representative case where a missing intermediate performance changes the continuation; do not require an exhaustive stack when its understood parts cannot change the use. B.1.5.RS supplies the distinct comparison when a constituent is replaced across encompassing uses.
+When the promised use includes performing or learning a Method, show its relevant constituent–whole connections as well as result dependencies. At a selected moment, what constituent action is enacting what encompassing work, and what changes in that action when a condition of the whole changes? B.1.5.EW supplies this recovery. Show the capability, support and combined resource conditions that the language's own bodies leave to another contribution. Use a representative case where a missing intermediate performance changes the continuation; do not require an exhaustive stack when its understood parts cannot change the use. B.1.5.RS supplies the distinct comparison when a constituent is replaced across encompassing uses.
 
 #### E.8.ML:4.4 - Explain the profile at its own scope
 
@@ -147,7 +147,7 @@ The selected structure can be useful without an admitted composite Method or a f
 
 ### E.8.ML:11 - SoTA-Echoing
 
-Alexandrian pattern languages provide the historical problem-first, relational and generative idea. [Ralyté, Deneckère and Rolland's SME Map (2003)](https://doi.org/10.1007/3-540-45017-3_9) already supports on-the-fly construction; [continuous SME composition and enactment](https://doi.org/10.1007/s10270-022-01018-9) is a serious implemented alternative. Adopt their adaptive-use pressure, not a claim that unfolding begins here.
+[Ralyté, Deneckère and Rolland's SME Map (2003)](https://doi.org/10.1007/3-540-45017-3_9) supports on-the-fly construction; [continuous SME composition and enactment](https://doi.org/10.1007/s10270-022-01018-9) is an implemented alternative. Adopt their support for adaptive use.
 
 Current E.8/E.11.PFP supply individual and whole-account form; A.3.1/A.3.2/B.1.5, A.22.CGUS and C.39.MC supply the separate identities and use results. This pattern adds the Method-specific language arrangement after source allocation.
 

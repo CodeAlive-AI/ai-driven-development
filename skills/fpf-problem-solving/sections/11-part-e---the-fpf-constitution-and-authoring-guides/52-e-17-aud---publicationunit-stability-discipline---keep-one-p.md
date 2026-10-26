@@ -41,8 +41,6 @@ Without a named publication-unit stability discipline:
 
 ### E.17.AUD:4 - Solution
 
-> Stabilize the interpretation of one publication unit before editing it at the wrong level.
->
 > Name what the unit is mainly about, the publication move it carries, the claim that remains outside, and one repair choice. Apply another pattern only when that choice requires it.
 
 #### E.17.AUD:4.0 - Plain working terms
@@ -77,13 +75,11 @@ If the publication unit changes any of those four without saying so, its interpr
 - `bounded comparison`: if the unit is stable, apply `E.17.ID.CR`;
 - `leave publication-unit stability`: the live question concerns work, work planning, decision, gate, evidence, explanation, reliance, carrier or front-end work, or another claim that this pattern does not test; apply the relevant pattern and name the exact project object or record.
 
-After choosing the repair, apply `E.17.AUD.LHR` for one local head, `E.17.AUD.OOTD` for whole-unit stabilization, `E.17.ID.CR` for bounded comparison, or the specific neighboring pattern and project record needed by a claim outside publication-unit stability.
-
 Do not repeat or replace the narrower whole-unit check in `PublicationUnit Primary-Subject Discipline`: can this one unit still keep one stable primary subject, one carried publication move, and one outside boundary to work, work planning, decision, gate, or reliance claim?
 
 #### E.17.AUD:4.3 - Inherited dynamic frame
 
-Use the lineage and move frame already defined by `C.2.2a` or `A.16.0`. Here, inspect how one publication unit speaks about that lineage or publication move. This is not a standalone theory of documents, carriers, or publication forms.
+When the unit describes a lineage or move, use `C.2.2a` or `A.16.0` for that subject and inspect how the unit expresses it.
 
 #### E.17.AUD:4.4 - Kind and boundary
 
@@ -106,7 +102,7 @@ Those objects may matter, but mentioning them in the same note, sheet, or screen
 
 #### E.17.AUD:4.5 - Ordinary working card
 
-Use this seven-row card before you widen the repair:
+When a wider repair needs these distinctions, use the seven questions to recover them:
 
 | Row | Ordinary prompt |
 | --- | --- |
@@ -147,7 +143,7 @@ When explanation, comparison, or a downstream claim is load-bearing, keep five f
 - current admissible reliance or work interpretation and forbidden non-admissible decision, work, or gate claim;
 - whether this unit is the primary publication unit or a derivative helper publication;
 - any claim-bearing modeling substrate or rationale;
-- and that the assurance section only tightens the opening recognition claim rather than silently broadening it into downstream claim or effect.
+- how any assurance finding corrects or bounds the opening claim according to its actual result, without silently adding an unestablished downstream claim or effect.
 
 ### E.17.AUD:5 - Worked slices
 
@@ -213,15 +209,15 @@ The pattern stays intentionally narrow. It does not turn every publication-unit 
 
 **Practice, source, alignment, and adoption.** `C.2.1`, `A.7`, `E.17`, and the description patterns keep an EntityOfConcern, a description episteme, its publication occurrence, form, and carrier distinct. ISO/IEC/IEEE 42010:2022 is standards lineage for the narrower architecture/architecture-description distinction, not the source of this general publication-unit ontology. `PublicationUnit Stability Discipline` adapts the current FPF distinction to one readable unit and requires a primary-subject shift to be explicit; an EntityOfConcern change requires the exact C.2.1 case. For a reviewer or architect, this is the practical guard behind worked slices 5.2 and 5.3.
 
-**Claim 2.** Best-known current information-for-use practice treats user-facing units as purpose-bound, structured information rather than as loose bundles that can mix explanation, instruction, warning, and decision or reliance effect by convenience.
+**Claim 2.** Information-for-use practice treats user-facing units as purpose-bound, structured information rather than as loose bundles that can mix explanation, instruction, warning, and decision or reliance effect by convenience.
 
 **Practice, source, alignment, and adoption.** Joint IEC and IEEE 82079-1:2019 requires information for use to be purpose-directed, structured, and evaluated for usability. `PublicationUnit Stability Discipline` adopts purpose-bound publication units and explicit outside boundaries to work, work planning, decision, gate, or reliance claim, adapts that discipline from information-for-use to notes, memos, sheets, tables, and screens, and rejects the shortcut where a clearer or official-looking unit is treated as if it had already become approval, policy, gate, work, or reliance text. For a manager or operator, this is the practical guard behind worked slices 5.4 and 5.5: better explanatory form does not itself mint downstream claim or effect.
 
-**Claim 3.** Best-known current pattern-writing and pattern-validation practice keeps patterns tied to recognisable situations, explicit problem, solution, and consequence structure, and reviewable rationale rather than elegant internal naming alone.
+**Claim 3.** Pattern-writing and pattern-validation practice keeps patterns tied to recognisable situations, explicit problem, solution, and consequence structure, and reviewable rationale rather than elegant internal naming alone.
 
 **Practice, source, alignment, and adoption.** Iba (2021), [How to Write Patterns](https://hillside.net/plop/2021/plopourri/PLoP21_PLOPOURRI_Iba_Methodology4.pdf), and Riehle, Harutyunyan, and Barcomb (2025), [Pattern Discovery and Validation Using Scientific Research Methods](https://doi.org/10.1007/978-3-662-70810-1_6), with the [authors' 2021 preprint](https://arxiv.org/abs/2107.06065), treat pattern writing and validation as requiring recognisable situations, explicit structure, and reviewable reasoning rather than only elegant naming. `PublicationUnit Stability Discipline` adopts worked slices, recognisable entry cues, and an explicit next-pattern and project-reference boundary, adapts those expectations to publication-unit stability work, and rejects a pattern text that is cleanly labeled but domain-thin or reader-thin. For the current working reader, this is the practical guard behind the Problem frame and slices 5.1 through 5.5: the pattern should be usable before one has to reconstruct the surrounding rationale from scratch.
 
-**Local stance.** The current SoTA claim is narrow. This pattern is not claiming one universal theory of documents. It claims a smaller and more practical point: one publication unit stays trustworthy only when its primary subject, carried publication move, and outside boundary to work, work planning, decision, gate, or reliance claim remain explicit enough for cold readers to recover, and when practitioners apply the specific neighboring pattern needed by a different problem.
+**Local stance.** The unit is sufficiently clear for its declared use when readers can recover its primary subject, carried publication move and outside boundary, and apply the neighboring pattern needed by a different problem. This clarity judgement does not itself establish the truth or warrant of its claims.
 
 ### E.17.AUD:10 - Conformance Checklist
 

@@ -97,12 +97,12 @@ A separate assertion says whether this arrow supports one named receiving use an
 For every admitted `v : X -> Y`:
 
 1. **Same EntityOfConcern.** X and Y designate the same exact EntityOfConcern. Similar labels, bridge claims, or one shared project do not establish this equality.
-2. **No unsupported strengthening.** Every claim in Y about that entity is recoverable as a consequence, conservative re-expression, or explicitly admitted aggregation of claims in the identified sources under the declared reference and representation semantics.
+2. **No unsupported strengthening.** Every claim in Y is recoverable as a consequence, conservative re-expression, or explicitly admitted aggregation of claims in the identified sources under the declared reference and representation semantics. This includes claims about the EntityOfConcern and any asserted correspondence, evidence or evaluation facts.
 3. **Declared loss.** Every omitted concern or claim family that affects receiving use is named, together with the condition under which the loss is admitted.
 4. **Reference discipline.** A changed effective reference scheme is explicit. If the change alters available operations or representation semantics, use A.6.3.RT; apply C.29 when the transition uses a declared mathematical lens. Do not call such a change formatting.
 5. **No hidden retargeting.** Subsystem-to-system, method-to-work, model-to-modeled-system, or episteme-to-publication changes are not same-EntityOfConcern viewing.
 
-For a lightweight check, take each claim in Y—or each group covered by one rule—and point to the source claims and the selection, rewriting, or aggregation rule that licenses it. Mark omitted claim groups. If a result claim cannot be traced this way, treat it as a new claim rather than a viewing result. If support cannot be decided exactly, state the structural or domain check used as an approximation and what it cannot establish. Add a proof only when disagreement, risk, or the receiving use makes it necessary.
+For a lightweight check, take each claim in Y—or each group covered by one rule—and point to the source claims and the selection, rewriting or aggregation rule that licenses it. Mark omitted claim groups. If support cannot be established, leave that claim's admissibility in the viewing unresolved; if the rule demonstrably introduces an unsupported claim, the proposed construction fails the viewing law. A structural or domain check used as an approximation states what it cannot establish. Add a proof when disagreement, risk or the receiving use requires one.
 
 Truth of source claims is a separate evaluation. Conservativity says what Y is licensed to claim from the sources; it does not establish that those claims are true in the world or adequate for a decision.
 
@@ -125,7 +125,7 @@ Directly authored Y can be a view without any A.6.3 source relation. Conversely,
 
 **Correspondence-mediated viewing.** Y depends on several exact source epistemes or on exact relations between their claim-bearing contents. Recover each direct correspondence, realization, trace, equivalence, or consistency relation under its governing pattern before using it. Then identify the C.2.1 episteme that states or describes those relations if the construction must cite it.
 
-Plain `correspondence model` may name that exact claim-bearing episteme for convenience. It is not a public `U.CorrespondenceModel` kind, and its graph edges or table cells do not establish the direct relations. If a needed relation lacks a governor, return the exact missing-relation blocker or use A.6.RCD.
+Plain `correspondence model` may name that claim-bearing episteme for convenience. It is not a public `U.CorrespondenceModel` kind. A graph edge or table cell may state or support a correspondence claim; its mere presence does not establish that the relation obtains. Judge the content and any evidence under the relation's governor and A.10. If a needed relation lacks a governor, return the missing-relation blocker or use A.6.RCD.
 
 The viewing declaration cites the exact source epistemes and exact correspondence claims on which Y depends. If Y asserts facts about a correspondence episteme, evidence, or evaluation result, those assertions belong to Y's claim content and follow C.2.1's identity rule. The cited objects remain independently identified, and the assertions still require the support specified by the viewing law.
 
@@ -189,16 +189,16 @@ X concerns pump P-14. A proposed Y concerns the whole cooling skid. Even if ever
 |---|---|
 | Construction history is inspectable without defining view membership. | X and Y must be independently identified before the construction is asserted. |
 | Direct authoring and generated epistemes coexist. | A generated result needs a separate E.17.0 test before it can be called a view. |
-| Correspondence-mediated constructions can use exact domain relations. | Graph edges and trace tables cannot substitute for relation obtaining. |
+| Correspondence-mediated constructions can use exact domain relations. | A graph or trace table must supply the relevant claims and grounds; its presence alone does not establish the relation. |
 | Work and publication stay outside the mathematical construction. | Tool execution and availability require their own patterns when current. |
-| Composition can be replayed. | Hidden state or undeclared loss invalidates the algebraic claim. |
+| Composition and any declared deterministic replay can be checked. | Composition needs matching endpoints and admitted laws. Uncontrolled state that can change Y prevents the corresponding repeatability claim for the construction operation; undeclared material loss prevents the corresponding receiving-use claim. |
 
 ### A.6.3:7 - Rationale and SoTA-Echoing
 
-| Source or practice line | Adopted move | Rejected overread | Practical effect |
+| Source or practice line | Contribution | Boundary | Practical effect |
 |---|---|---|---|
-| Lenses, optics, and compositional transformation research | Use identity, composition, conservativity, and explicit loss as checks over episteme-to-episteme construction. | The mathematical construction does not itself establish that a direct world-side relation obtains. | Viewing arrows can be composed and replayed while operation applications, Work occurrences, and world-side relations remain separately governed. |
-| Bidirectional transformation and model-synchronization practice | Make cross-model correspondence dependencies explicit and test path agreement. | A generic correspondence record or graph edge does not establish correspondence. | Coverage and consistency viewing declarations cite exact source relations, so broken dependencies can be repaired locally. |
+| Lenses, optics and compositional transformation research | Supply identity and composition structures; the selected viewing family adds its stated conservativity and loss conditions. | A mathematical construction does not itself establish that a world-side relation obtains. | Viewing arrows can be composed while operation applications, Work occurrences and world-side relations remain separately governed. |
+| Bidirectional transformation and model-synchronization practice | Make cross-model correspondence dependencies explicit and test path agreement. | A record or graph must carry the required correspondence claims and grounds; its presence alone is insufficient. | Coverage and consistency viewing declarations cite their source relations, so broken dependencies can be repaired locally. |
 | Model-based view-as-query practice | Treat query and projection as common construction routes. | Query execution does not establish E.17.0 conformance. | Generated and directly authored epistemes meet the same independent E.17.0 membership rule. |
 | FPF C.2.1 and E.17.0 architecture | Keep episteme identity, viewing construction, conformance, evaluation, work, production, and publication separate. | — | The next engineering action can rely on the exact relation it actually needs. |
 
@@ -207,13 +207,13 @@ X concerns pump P-14. A proposed Y concerns the whole cooling skid. Even if ever
 1. X and Y each have recoverable C.2.1 identity.
 2. X and Y have the same exact EntityOfConcern; otherwise the route is A.6.4.
 3. The declaration states the exact claim construction, reference semantics, applicability, preserved content, and admitted loss.
-4. Y introduces no unsupported commitment about the EntityOfConcern.
+4. Every claim in Y has the support required by the viewing law, including any claim about a correspondence, evidence or evaluation result.
 5. Every correspondence-mediated dependency resolves to exact source epistemes and governed direct relations.
 6. `U.View` is asserted only after independent E.17.0 conformance.
 7. A viewpoint selected for a named describing use is not used as membership evidence and does not enter X or Y identity.
 8. Systems, tools, work, parameters, and production claims are recovered separately when actual construction work matters.
 9. Publication occurrence, form, carrier, and rendering remain separate from X, Y, and v.
-10. Composition, deterministic replay, and declared loss pass for the receiving use.
+10. Composition and declared loss satisfy their laws; any deterministic replay claim is tested under its stated conditions.
 11. Ordinary use stops without materializing objects the next work or decision does not need.
 
 ### A.6.3:9 - Relations

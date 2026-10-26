@@ -28,9 +28,9 @@ Examples occur across several disciplines:
 * admissibility/assurance (claims linked to evidence, checks, or proofs),
 * publication discipline (what a statement is fit to be used for, where, and when).
 
-In drafts, authors often reach for a single umbrella metaphor (frequently “anchor/anchoring”). That metaphor collapses **different ontological situations** and **different operation classes**, blocking precise invariants and obscuring their direction and applicable rules.
+An umbrella metaphor such as anchor can leave different relations and operations indistinguishable. When it hides the actual relation, recover that relation so its direction, invariants and applicable rules are clear.
 
-Like A.6.5, this family can expose **typing conflicts across viewpoints**: an endpoint may be named by its self-kind while the selected direct relation expects another participant kind or reference mode. Make that mismatch explicit only when it is current; do not hide it by renaming ends or flipping direction. Use SlotSpecs only when a reusable relation declaration actually needs them.
+This family can expose a typing mismatch: the named dependent or base may not satisfy the participant kind required by the direct relation, or its designation may not satisfy the receiving declaration's reference mode. Resolve the mismatch under the applicable rule; renaming participants or reversing direction does not fix it. Add SlotSpecs only when a reusable declaration needs them.
 
 Every ordinary basedness assertion first needs only:
 
@@ -58,7 +58,7 @@ Typical failure modes this pattern is designed to eliminate:
    Evidence, pins, certificates, or proofs are treated as “the base”, even when they are only witnesses for a base relation (or conversely: a true base is treated as a mere witness).
 
 4. **Scope/time collapse.**
-   Based declarations are treated as timeless truths; time dependence is smuggled in via “current/latest/recently”, violating explicit `Γ_time` discipline.
+   A time-dependent assertion leaves its applicable interval or temporal rule unclear, so readers cannot tell which case it covers.
 
 5. **`Γ_time` used as a proxy for freshness.**
    Authors treat `Γ_time` as “freshness” or “evidence decay”, collapsing TimePolicy with witness-timespan/freshness predicates.
@@ -73,7 +73,7 @@ Typical failure modes this pattern is designed to eliminate:
    * source-local meaning recovery and, when needed, an F.17 `SchemeSenseCell` and `LocalSenseBasisRelation` (not a base declaration).
 
 8. **Slot/basing conflation.**
-   A.6.5 distinguishes relation positions, their fillers, and stored references. Umbrella basing language can hide the direct relation at the next layer, while record-edit language can be mistaken for change in the relation itself.
+   A.6.5 separates a declaration-local SlotSpec, a designation carried in an episteme and the actual participant. Editing a designation does not itself change the obtaining relation.
 
 9. **Anchor relapse (source or meaning surrogate).**
    “Anchor/anchoring” is used to mean “the source”, “the meaning”, “the global reference”, or “the thing that makes this true”. This hides the exact source, scheme, expression, local claim, and any obtaining basis relation behind a metaphor; the phrase alone does not let a reviewer recover them.
@@ -88,7 +88,7 @@ Typical failure modes this pattern is designed to eliminate:
 | **Universality vs precision** | One discipline must cover calibration, evidence linking, reference selection, attribution, gating, etc., without collapsing them into one pseudo-relation. |
 | **Minimal kernel vs decision auditability** | Few primitives are preferred, but decision-relevant declarations must expose the basis required by the decision, including witnesses, pins, or explicit time selectors when that use needs them. |
 | **Two perspectives, one reality** | Dependent-view and base-view must both be expressible without renaming relation-end meanings or flipping meaning. |
-| **Compatibility with A.6.5** | When a reusable base-relation declaration needs SlotSpecs or edit history, keep SlotKind, ValueKind, and RefKind distinct and do not collapse slot edits with semantic re-declarations. |
+| **Compatibility with A.6.5** | When a reusable base-relation declaration needs SlotSpecs, keep SlotKind, ValueKind, and RefKind distinct and do not collapse designation edits with changes to a participant or relation. |
 | **Lexical guardrails** | Umbrella metaphors can hide participants, direction, and the applicable relation rule; the wording must recover those values. |
 | **Cross-local integrity** | When a declaration actually depends on a relation between different local kinds, local senses, scopes, or planes, that exact relation must remain explicit and reviewable; different sources alone do not create a Bridge. |
 
@@ -145,7 +145,7 @@ Calibration, attribution, policy dependence, constructive grounding, and other c
 
 #### A.6.6:4.3 - Reusable declaration only for a named reuse
 
-Use the direct relation's A.6.0 `RelationSignature` only after the relation kind is already admitted and at least two named claims or consumers need the same reusable declaration content. That signature states the participant meanings, predicate, applicability, and occurrence-identity rule. A.6.5 SlotSpecs belong inside that reusable declaration; they are not required in an ordinary one-case assertion.
+Use the direct relation's A.6.0 `RelationSignature` only after its kind is admitted and a named receiving use needs reusable participant typing or declaration content. An observed second consumer is not required; a concrete anticipated use can justify the declaration. The signature states participant meanings, predicate, applicability and any needed occurrence-identity rule. A.6.5 SlotSpecs belong inside it; an ordinary one-case assertion may need none.
 
 If no direct pattern supplies the relation kind, participants, or predicate, keep the exact local claim or return the A.6.RCD `missing-governor` result. Do not repair the gap by minting a generic `BaseRelation` kind or token, SlotSpecs, or a scoped-record type.
 
@@ -155,7 +155,7 @@ For a named receiving use that genuinely needs a `RelationSignature`, the direct
 
 - the dependent and base participant meanings and direction or symmetry;
 - the obtaining predicate and applicability;
-- the occurrence-identity rule supplied by the direct pattern;
+- the occurrence-identity rule when the receiving use needs that identity;
 - admissible participant kinds and reference modes;
 - any scope, time, evidence, or cross-local condition that changes this predicate or the named reuse; and
 - the direct continuity or change rules, when that history is current.
@@ -168,9 +168,9 @@ When one identified derivation or criterion-selection claim uses exact claim con
 
 The assertion is ordinary C.2.1 claim content under `derivedUsingRuleContent` or `evaluatedAgainstRuleContent`. The dependent and base are predicate parameters, not automatically A.6.5 SlotSpecs, participants of a reusable relation occurrence, or an intrinsic `rule-bearing` classification. Same-scheme use adds no Bridge. A source edition, designation, acceptance/currentness fact, trace, or witness qualifies the assertion but does not enter semantic-base identity. Equal graphs under the same scheme count as one semantic base with multiple qualifications; a changed graph is another base.
 
-Change only the fact that changed: declare or withdraw a selected base, repoint the dependent, rescope, retime, refresh witnesses, or change the predicate relation. A changed subject, content, mode, bounded use, actual-use claim, scope extension, temporal policy, or interpreted endpoint identifies another C.2.1 assertion. A claimed edition succession additionally requires the continuity conditions of C.2.1:4.5. Do not infer a new relation kind, occurrence, evidence result, Work, authority, or reliance from that change.
+Change only the fact that changed: declare or withdraw a selected base, repoint the dependent, rescope, retime, refresh witnesses, or change the predicate relation. A changed subject, content, mode, bounded use, scope extension, temporal policy, or interpreted endpoint identifies another C.2.1 assertion. A claimed edition succession additionally requires the continuity conditions of C.2.1:4.5. Do not infer a new relation kind, occurrence, evidence result, Work, authority, or reliance from that change.
 
-A basis-family analysis is a separate, optional C.2.1 episteme opened only for a named comparison, replay, material-conflict, or reliance receiver. Its candidate universe, evaluations, pairwise compatibility, temporal partition, established family, and disposition neither edit this reusable predicate declaration nor become fields of each actual-use assertion.
+A basis-family analysis is a separate, optional C.2.1 episteme opened only for a named comparison, replay, material-conflict, or reliance receiver. Its candidate universe, evaluations, pairwise compatibility, temporal partition, established family, and disposition neither edit this reusable predicate declaration nor become fields of each derivation or criterion-selection assertion. A separate claim about actual use in Work follows its own rule; neither R7 predicate establishes that use.
 
 #### A.6.6:4.4.1 - Perspective and voice
 
@@ -181,15 +181,15 @@ State the relation in the shortest ordinary sentence that keeps both participant
 **Normative lexical rule.** In Tech or normative prose, do not use umbrella metaphors (`anchor`, `attach`, `ground`, or `support`) in place of the actual relation. Prefer an ordinary relation-specific sentence; add functional or arrow notation only when a named receiver benefits from it.
 
 **Red-flag rule (`anchor*` as dependence metaphor).**
-* In **Tech or normative** prose, rewrite `anchor*` as an ordinary relation-specific sentence, or move to the already reserved primitive that actually governs the claim.
-* In **Plain or source** commentary, quoted umbrella wording may remain for traceability when the repaired sentence immediately names the actual relation. It must not be converted into a generic `validatedBy`, `verifiedBy`, `SupportRelation`, or metaphor-headed token.
+* In **Tech or normative** prose, repair `anchor*` when it leaves the relation or participants unresolved. Keep an adequate ordinary or already governed use.
+* Source wording may remain for recognition or traceability alongside its recovered meaning. It cannot supply a missing rule merely by being renamed `validatedBy`, `verifiedBy`, `SupportRelation`, or another formal-looking token.
 
-**Carve-outs (pattern-defined primitives).** This red-flag rule does **not** ban uses where “anchoring” is already a *pattern-defined primitive* elsewhere in the spec, such as E.10 MG-DA token-to-EntityOfConcern anchoring or A.10 evidence anchors. It still acts as a review trigger: confirm you are using the reserved sense, not smuggling a basedness meaning.
+**Pattern-defined meanings.** E.10 MG-DA token-to-EntityOfConcern anchoring and A.10 evidence anchors retain their own definitions. Apply the relevant rule when that is the intended sense; do not open another basedness repair solely because the word appears.
 
 **Naming guard for relation vocabulary.** Do not mint a new direct relation whose name merely preserves a metaphor such as `Anchor*`, `Ground*`, or `Attach*`. Name the actual relation kind and use the corresponding ordinary verb phrase. In an optional assertion record, the local `directRelationKind` field identifies that already admitted relation kind; the field is not another relation kind.
 **Lane guard for meaning.** If the intent is “say what this expression means in this source”, do not introduce an `Anchor…` or `Ground…` relation. Recover the source-local claim under F.0.1; use F.17 only when a durable `SchemeSenseCell` or obtaining `LocalSenseBasisRelation` is actually needed. Semantic meaning assignment is not a base-declaration record.
 
-**Grounding disambiguation rule.** If the prose says “grounded”, its actual ordinary or governed meaning MUST be recovered. The following branches illustrate distinct meanings, not an exhaustive classification:
+**Grounding disambiguation.** When grounded leaves a consequential meaning unresolved, recover it. These branches illustrate distinct meanings, not an exhaustive classification:
 * constructive grounding (`tv:groundedBy`, base is a trace),
 * situational/empirical grounding (base is a grounding holon or experimental setup),
 * source-local meaning lane (exact source, scheme, expression, local claim, and optional F.17 cell or basis relation; no special base-declaration object).
@@ -210,13 +210,13 @@ Operation classes (conceptual):
 7. **refreshWitnesses** — add/refresh witnesses/pins when decision use continues across time advances, scope widening, or evidence refresh.
 8. **changeDirectRelationKind** — not an edit-in-place. Changing `directRelationKind` changes claim meaning; mint a new assertion or declaration rather than silently rewriting the kind. When edition history is needed, relate it to the prior episteme only if C.2.1:4.5's continuity rule and case facts establish that relation. Use F.13 for a separately current lexical-continuity claim.
 
-**Relation to A.6.5 slot operations (non-normative mapping).** A project may realize an edit to an optional assertion or declaration through A.6.5 slot operations. The semantic account must still say which episteme field changed. A separately claimed change to the actual relation uses the direct relation's change rule and any current Work; it is never inferred from the record edit.
+**Relation to A.6.5 designation operations (informative).** Apply A.6.5 when the changed assertion designation is governed by a compatible RelationSignature SlotSpec. Other assertion or declaration fields retain their own C.2.1 or direct definition. State which content changed. A separately claimed world-side change uses the direct relation's rule; ordinary editing requires no invented Work occurrence.
 
 **Relation to E.18 assurance ops (informative).** On `U.Transfer`, `ConstrainTo`, `CalibrateTo`, `CiteEvidence`, and `AttributeTo` have their own declared meanings and constraints. A project may use the local declaration-change labels to describe changes in a represented assertion, but those labels neither subsume the E.18 operations nor create their relations.
 
 #### A.6.6:4.7 - Disambiguation guide for selecting the direct relation
 
-When a draft uses an umbrella phrase (“anchored”, “attached”, “grounded”), replace it with the direct relation that actually fits the claim:
+When umbrella wording leaves the relation unclear, recover the direct meaning that fits the claim:
 
 | Colloquial intent | Direct relation or reading (illustrative) | Participants and conditions | Typical supporting material, when needed |
 | --- | --- | --- | --- |
@@ -226,7 +226,7 @@ When a draft uses an umbrella phrase (“anchored”, “attached”, “grounde
 | “Make measurements comparable by calibration” | **Calibration** (`calibratedTo`) | Name the instrument, model, or output said to be calibrated and the applicable standard or datum; the domain's calibration rule must determine their roles. | calibration Work plus certificate pin |
 | “This is the datum of that” | **Datum relation** (`datumOf`) | Recover what is the datum of what, and the applicable domain rule; `datumOf` does not supply the calibration or normalisation predicate. | the domain-required basis; calibration Work or certificate pin only if that rule needs it |
 | “Make measurements comparable by normalisation” | **Normalisation** (`normalisedTo`) | Name what is normalised—an instrument, model, or output—and the standard or datum used; recover the normalisation predicate and direction from its domain rule. | the domain-required basis; calibration Work or certificate pin only if that rule needs it |
-| “This result bears on that claim” | **Evidence use** under A.2.4, with A.10 only when replayable provenance or reliance is needed | dependent: result or other evidence episteme; base: target claim | exact evidence-use relation; producing Work, result binding, carrier, provenance, currentness, and reliance remain separate |
+| “This result bears on that claim” | **Evidence use** under A.2.4, with A.10 only when replayable provenance or reliance is needed | result or other evidence episteme and target claim, with the evidence-use direction defined by A.2.4 | exact evidence-use relation; producing Work, result binding, carrier, provenance, currentness, and reliance remain separate |
 | “This edge is grounded in construction” | **Constructive grounding** (`tv:groundedBy`) | dependent: WM edge; base: constructor trace (`Γ_m`) | trace pins, edition pins |
 | “This description is about X” | **Ordinary aboutness** under A.7/C.2.1 | description episteme and its exact EntityOfConcern X; aboutness alone does not establish a source-to-receiving construction | the source or describing relation required by the use |
 | “Construct a view of the same entity” | **Viewing** (`viewedVia`) under A.6.3 | separately identified source and receiving epistemes, the same exact EntityOfConcern, and the construction rule | viewing pins |
@@ -283,7 +283,7 @@ scope        = WorkScope{rig=R3, range=[0..200]°C},
 gammaTime          = interval[2025-09-01, 2026-03-01] 〉
 ```
 
-When a later decision relies on this assertion, cite the exact A.2.4 evidence-use relation from the calibration-certificate episteme to the assertion. Use A.10 only if that decision also needs the producing Work, operation result, carrier, provenance, or currentness path. Then distinguish changes by what actually changed:
+When a later decision relies on this assertion, identify the calibration-certificate episteme and its A.2.4 evidence-use relation to the assertion. Use A.10 when the decision needs a bounded-reliance judgment or the producing Work, operation result, carrier, provenance or currentness path. Distinguish changes by what actually changed:
 
 * New standard ⇒ **rebase** + **refreshWitnesses**.
 * Wider applicability window ⇒ **retime** and likely **refreshWitnesses**.
@@ -301,7 +301,7 @@ Stop with the short evidence-use statement when it answers the question. No `val
 
 **Tell.** Suppose a B.3.5 assurance requirement for this publication requires a recoverable constructor trace. A structural edge is published (“A componentOf B”) without that trace. It becomes treated as “obvious”, while the construction chain is not recoverable. Ordinary parthood does not require this trace; the failure here concerns the selected hypothetical assurance requirement.
 
-**Show.** First state and test the direct `tv:groundedBy` assertion between the model edge and constructor trace. Stop when that assertion answers the use. If a publication needs a stable assertion edition with its current qualifiers, it may represent that C.2.1 episteme as:
+**Show.** Locate the required constructor trace and test the direct `tv:groundedBy` predicate for the model edge and trace. If the trace remains unavailable, retain that gap and stop the dependent assurance claim. For illustration, suppose `ComposeCAL#c17` is recovered and the case facts satisfy the grounding predicate for `Edge:componentOf#17`. The short affirmative assertion may be enough; a publication needing a stable assertion edition with its qualifiers can represent it as:
 
 ```
 BD#EdgeGrounding_ComponentOf_17 :=
@@ -328,7 +328,7 @@ The printed trace reference names the intended constructor trace; its presence d
 
 An A.6.6 use conforms when the checks for its selected branch pass:
 
-1. **CC-BD-1 - Direct assertion first.** The actual dependent, base, direct relation, and readable affirmative or negative assertion are recoverable. The direct pattern supplies the predicate. Test affirmative obtaining or establish nonobtaining under its applicable criterion or closure basis; a record, label, or failure to establish the affirmative supplies no case result.
+1. **CC-BD-1 - Direct assertion first.** The actual dependent, base, direct relation, and readable assertion or unresolved factual question are recoverable. The direct pattern supplies the predicate. Test affirmative obtaining or establish nonobtaining under its applicable criterion or closure basis; a record, label, or failure to establish the affirmative supplies no case result. Missing case facts leave the question unknown; only a missing governing rule requires A.6.RCD.
 2. **CC-BD-2 - Ordinary stop.** If that assertion answers the receiving question, no SlotSpecs, declaration record, witnesses, edition, occurrence identity, or assurance package is required.
 3. **CC-BD-3 - Reusable declaration is demand-driven.** A `RelationSignature` satisfies the reuse test in A.6.6:4.3 and applies only to an already admitted relation kind.
 4. **CC-BD-4 - Assertion and occurrence stay separate.** A scoped witnessed record, when used, is a C.2.1 assertion or description episteme. It is not the world-side relation occurrence, and its form alone does not establish that occurrence; any constitutive contribution follows the direct relation's rule.
@@ -337,7 +337,7 @@ An A.6.6 use conforms when the checks for its selected branch pass:
 7. **CC-BD-7 - Crossings are conditional.** An actual relation between two exact F.17 cells uses F.9 only when its predicate obtains and keeps the bounded-use claim separate. A ReferencePlane crossing uses its applicable plane relation. One creates neither the other.
 8. **CC-BD-8 - No silent retyping or direction flip.** Participant kinds and direction follow the direct relation. A mismatch is repaired by the applicable narrowing, Bridge, retargeting, or direct relation rule, not by renaming an endpoint.
 9. **CC-BD-9 - Plain language remains sufficient.** Ordinary relation-specific prose is preferred. Functional or arrow notation is optional and may not replace the readable assertion.
-10. **CC-BD-10 - Metaphors do not become ontology.** `anchor`, `ground`, `attach`, and `support` remain source-word triggers unless they name an already reserved primitive; no metaphor-headed fallback kind or relation is minted.
+10. **CC-BD-10 - Wording does not create ontology.** Recover the meaning of anchor, ground, attach or support when it is unresolved. Keep an adequate ordinary or governed meaning; a metaphor or new label cannot supply an absent relation rule.
 11. **CC-BD-11 - Meaning lane stays separate.** Source-local meaning starts with F.0.1 and uses F.17 only when a durable sense address or basis relation is needed; it is not a base-declaration record.
 12. **CC-BD-12 - Change claims name the changed object.** Changing an assertion's or reusable declaration's ClaimGraph, exact EntityOfConcern, or effective ReferenceScheme identifies another episteme; representation-only editing need not. An actual relation change requires the direct relation's own change predicate and any separately current Work.
 13. **CC-BD-13 - Optional history is proportional.** `declareBase`, `rebase`, `rescope`, `retime`, or `refreshWitnesses` is used only when a named receiver needs that declaration history. The label establishes no world-side fact.
@@ -350,11 +350,11 @@ An A.6.6 use conforms when the checks for its selected branch pass:
 | **Umbrella “anchored/attached/grounded” with no direct relation** | Hides relation kind and predicate | Name the participants, use the relation-specific verb, and apply its direct predicate |
 | **Perspective flip without recoverable participants** | Direction and typing become ambiguous | Keep the same participants and direction in both active and passive wording; add formal endpoint names only when reused |
 | **Work or carrier treated as evidence relation** | Collapses producing Work, result episteme, carrier, provenance, evidence use, and reliance | State the exact A.2.4 evidence-use relation; open A.10 only for the replayable provenance or reliance path |
-| **Implicit “current/latest”** | Violates explicit time discipline | Declare `Γ_time` explicitly and use witness timespans for freshness where needed |
+| **Unclear temporal applicability** | Current or latest leaves the intended time-dependent claim ambiguous | State the applicable interval or temporal rule, using explicit Γ_time when the governing use needs it. Check witness freshness separately. |
 | **Decision use without its actual basis** | A relied-on assertion cannot be checked | Cite the exact evidence-use, provenance, currentness, or assurance relations required by that decision; do not add a generic witness field or new document |
 | **Semantic meaning expressed as basedness** | Confuses source-local meaning with another relation | Recover the source-local claim under F.0.1 and add an F.17 cell or basis relation only when needed |
 | **Relation-kind change presented as an edit** | A semantic shift masquerades as continuity | State the new direct relation and use the applicable continuity rule when that history matters |
-| **Using `*Slot` to name an endpoint/value** | Confuses SlotKind with ValueKind/RefKind; breaks substitution and tooling | Keep `*Slot` for positions; use `base`/`dependent` for values and `*Ref` for stored references |
+| **Using `*Slot` for a participant or designation** | Conflates declaration content, participant and reference | Reserve `...Slot` for a declaration-local SlotKind. Name the dependent and base directly, distinguishing their designations and any reference values under A.6.5. |
 | **Optional record field treated as a carrier or free-text kind** | Lets a record label stand in for the direct relation | Make the field identify the already admitted relation vocabulary entry; keep the assertion, carrier, and relation occurrence separate |
 
 ### A.6.6:9 - Consequences
@@ -362,7 +362,7 @@ An A.6.6 use conforms when the checks for its selected branch pass:
 **Benefits**
 
 - A readable direct assertion can close an ordinary question without record-first work.
-- Reusable declarations remain available when several consumers need the same participant meanings and laws.
+- Reusable declarations are available when a receiving use needs their participant typing and laws.
 - Scope, time, evidence, and continuity are explicit exactly where they change a predicate or receiving use.
 - Evidence use, source-local meaning, semantic Bridges, plane crossings, and ordinary help keep their own ontologies.
 
@@ -382,10 +382,10 @@ The recurring ambiguity is not “how to attach”, but which direct relation is
 A base is a participant in the selected direct relation. Evidence or other supporting material justifies an assertion only through its own direct relations. Conflating the two makes both reasoning and audit unreliable.
 
 **Why add scope and `Gamma_time` conditionally.** They are required when the direct predicate or receiving use changes across extent or time. Adding them everywhere hides the ordinary relation behind a universal qualifier form.
-A declaration is never “everywhere forever” by default in FPF. Scope makes applicability explicit; `Γ_time` prevents hidden time dependence (“recent”, “current”, “latest”).
+Recover applicable extent and time from the direct relation and the receiving use. An already clear interval or temporal rule needs no duplicate field; an implicit current or latest that leaves the intended case ambiguous does.
 
-**Why prohibit kind edits.**
-Changing the relation kind changes meaning; treating it as an update erases history and breaks continuity discipline.
+**Why distinguish semantic revision from representation editing.**
+Changing the relation kind changes the assertion's meaning. Preserve the former episteme when history matters and establish any claimed continuity under C.2.1; a new wording or representation alone need not change identity.
 
 **Why retain a local declaration-change lexicon.** When a named receiver tracks assertion or declaration history, the labels distinguish which episteme field changed. They are optional and do not describe actual relation change without the direct relation's own predicate.
 When that history is needed, explicit change classes distinguish rebase, retime, rescope, and witness refresh; a generic edit label hides those differences and recreates the ambiguity A.6.5 removed at the slot layer.
@@ -409,20 +409,16 @@ When that history is needed, explicit change classes distinguish rebase, retime,
    *Primary source:* [OMG Structured Assurance Case Metamodel (SACM), version 2.3, October 2023](https://www.omg.org/spec/SACM/2.3).
 
 5. **Objects over a base as a stable mathematical lens.**
-   **Adopt/Adapt.** Modern category-theory texts make “objects over a base” (slice categories) a reusable pattern for “X relative to B”. We adopt that lens as the stable abstraction behind base declarations, and adapt it with explicit scope/time and witness semantics needed for engineering governance.
+   **Adopt/Adapt.** Category-theory treatments of objects over a base, including slice categories, offer a mathematical way to compare an X-relative-to-B construction. Use that lens only when the selected mathematical construction and its correspondence to the direct domain relation are established under C.29. It supplies no universal obtaining predicate, scope, time or witness rule for calibration, evidence, attribution and the other distinct domain relations.
    *Primary source:* Riehl, *Category Theory in Context* (2016).
 
-**SoTA binding note (informative):** the “object over a base” lens is the abstraction used to keep the pattern stable across domains (item 5).
-
 ### A.6.6:12 - Relations
-
-
 
 **Specialises A.6.P Relational Precision Restoration.** A.6.6 handles basedness wording by recovering the actual dependent, base, and direct relation, then stopping or opening only the additional object required by a named use.
 
 **Builds on A.6.REL and `A.6.0`.** The direct pattern supplies relation obtaining and occurrence identity. A reusable `RelationSignature` is justified only for an already admitted relation kind and shared declaration content; the declaration form alone establishes no occurrence.
 
-**Builds on A.6.5 only when reusable declaration content is current.** SlotKinds, ValueKinds, and reference modes type participant positions inside that `RelationSignature`; an ordinary one-case assertion needs no SlotSpec record.
+**Builds on A.6.5 only when reusable declaration content is current.** A SlotSpec declares a participant meaning, ValueKind and designation mode inside one RelationSignature. An ordinary assertion needs no SlotSpec record unless its receiving use requires that declaration.
 
 **Coordinates with A.2.4 and A.10.** A.2.4 states the exact evidence-use relation. A.10 represents the independently established sources, Work, result epistemes, carriers, provenance, currentness, and later-use relations needed for bounded reliance. Neither pattern admits generic `verifiedBy` or `validatedBy` edges, and Work is not an evidence carrier.
 
@@ -432,7 +428,7 @@ When that history is needed, explicit change classes distinguish rebase, retime,
 
 **Coordinates with F.9 and ReferencePlane rules conditionally.** F.9 applies only to an obtaining Bridge between two exact F.17 cells and keeps its bounded-use claim separate. A ReferencePlane crossing uses its applicable plane relation. If both are current, state both; if only one is current, introduce no object from the other branch.
 
-**Coordinates with A.2.6, A.7, and E.24.UK:** A.2.6 governs scope and explicit `Γ_time`; implicit “latest/current” remains inadmissible. A.7 keeps EntityOfConcern, Description-episteme, specification use, and publication face, form, unit, carrier, and rendering distinct. E.24.UK supplies the kind-admission boundary applied in A.6.6:4.1.
+**Coordinates with A.2.6, A.7, and E.24.UK:** A.2.6 governs scope and Γ_time when the assertion or receiving use depends on them. A.7 distinguishes EntityOfConcern, description, specification and publication uses. E.24.UK supplies the U-kind admission boundary; an optional local record form admits no new kind.
 
 **Coordinates with C.3.3 and E.18.** C.3.3 supplies `U.KindBridge` only for an independently established cross-local kind correspondence, with its exact kinds, direction, declared `CL^k`, and use/loss conditions; different participant kinds alone establish no KindBridge or silent re-typing. E.18 retains the meanings of its assurance operations on `U.Transfer`, including `CalibrateTo`, `CiteEvidence`, `AttributeTo`, and `ConstrainTo`; A.6.6's declaration-change labels do not replace them.
 

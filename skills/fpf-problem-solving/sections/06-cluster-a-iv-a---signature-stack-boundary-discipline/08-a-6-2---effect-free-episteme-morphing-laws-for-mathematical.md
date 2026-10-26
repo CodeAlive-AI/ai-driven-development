@@ -6,10 +6,11 @@
 
 **Use this pattern when** a project needs to state and reuse a law-constrained mathematical relation between two exact epistemes while keeping that arrow distinct from a claim that it suits one use, an operation application, publication, and performed Work.
 
+**First useful move.** Identify the two exact epistemes, compare their claim content, EntitiesOfConcern and effective schemes, then state the arrow rule and laws required by the receiving use. A direct wording comparison or publication rendering can remain under its own pattern when no such mathematical relation is needed.
+
 **What goes wrong if missed.** A view, retargeting, refinement, representation change, publication rendering, mechanism application, or work occurrence is treated as the same operation, so the project can no longer tell whether the EntityOfConcern changed or only the episteme changed.
 
 **What this buys.** EFEM gives one law-constrained episteme-to-episteme morphism discipline with explicit preserve/retarget mode, clear boundaries among actual values, declaration-local participant meanings, and references, plus conservativity and composition conditions.
-
 
 **Builds on.**
 A.6.0 `U.Signature` for subject, vocabulary, laws, and applicability; A.6.1 `U.Mechanism`; A.6.5 for declaration-local SlotSpecs; C.2.1 for `U.Episteme` identity and direct constitution, empirical-grounding, and edition relations; E.10.D2 for the EntityOfConcern, Description-episteme, describing-use, and specification-use boundary; and C.3 plus F.9 for kind-level and exact cross-local reasoning.
@@ -17,7 +18,7 @@ A.6.0 `U.Signature` for subject, vocabulary, laws, and applicability; A.6.1 `U.M
 **Used by.**
 A.6.3 epistemic viewing; A.6.4 EntityOfConcern retargeting; E.17.0 multi-view describing; E.17 (MVPK); and E.18 structural reinterpretation over transformation-flow structure.
 
-**EntityOfConcern change-mode discipline.** EFEM classifies each arrow as `preserve` or `retarget` by comparing the exact C.2.1 EntitiesOfConcern designated by its endpoint `entityOfConcernRef` values. Earlier source-side spellings must be normalized to the EntityOfConcern family before conformant use and do not define a second EntityOfConcern ontology.
+**EntityOfConcern change-mode discipline.** EFEM classifies each arrow as `preserve` or `retarget` by comparing the exact C.2.1 EntitiesOfConcern resolved from its endpoint references.
 
 **Object settlement.** EFEM and `EpMorphism` are local mathematical classes defined here in the selected formal substrate, not admitted durable U-kinds. `U.Episteme` is reused from C.2.1. An A.6.0 FormalSubstrate signature that declares EFEM vocabulary and laws is a separate episteme; one arrow, one use-specific assertion about that arrow, any operation application, performed Work, and publication remain separate objects under their direct governors.
 
@@ -49,7 +50,7 @@ Concretely, without EFEM:
    Some arrow families have endpoint epistemes about the same exact EntityOfConcern; others have endpoints about independently different entities. Without a common `EntityOfConcernChangeMode` classification, a relation that looks like a harmless representation change can hide a different receiving EntityOfConcern.
 
 3. **No functorial backbone.**
-   MVPK, KD‑CAL, and E.18 all rely on episteme arrows that compose and respect identities, but the conditions for identity, composition, purity, conservativity, formal domain, and any arrow-family repeat law are not formulated once and reused. Different parts of the spec repeat subtly different sets of laws.
+   To compose arrows from MVPK, KD-CAL or E.18, the receiving use needs compatible identity, composition, purity, conservativity and formal-domain conditions. Any repeat law must also be stated for the particular arrow family.
 
 4. **Slot/Ref confusion.**
    C.2.1 identifies an episteme through exact claim content, one exact EntityOfConcern, and one effective ReferenceScheme. A.6.5 SlotSpecs apply only inside an exact reusable relation declaration. Laws for projection or retargeting that rely on unnamed fields or tuple positions therefore hide which parts of the source and receiving epistemes are being compared and which separately obtaining facts the rule reads.
@@ -103,7 +104,7 @@ The A.6.3 viewing branch has endpoint epistemes about the same EntityOfConcern. 
 
 #### A.6.2:4.2 - Direct signature components (A.6.0 alignment)
 
-When repeated use needs a reusable formal declaration, an A.6.0 `U.Signature(profile=FormalSubstrate)` episteme may declare this local arrow family. Its direct declaration components are:
+When a receiving use needs a reusable formal declaration, an A.6.0 `U.Signature(profile=FormalSubstrate)` episteme may declare this local arrow family. Its direct declaration components are:
 
 ```text
 SubjectKind     = local formal type EpMorphism
@@ -144,7 +145,7 @@ For any arrow `f : X→Y` presented as an effect-free episteme morphism:
    * `content(E) : U.ClaimGraph` — E's exact identity-bearing claim content;
    * `entityOfConcernRef(E) : U.EntityRef` — designates E's exact EntityOfConcern;
    * `selectedViewpointRef?(use) : U.ViewpointRef` — only when the named describing use selects one exact viewpoint; this is not a component of E's identity;
-   * `referenceScheme?(E) : U.ReferenceScheme` — E's effective designation and interpretation scheme;
+   * `referenceScheme(E) : U.ReferenceScheme` — E's effective designation and interpretation scheme;
    * `representationSchemeRef?(E) : U.RepresentationSchemeRef` — only when an exact representation scheme and its correspondence relation are current for E under their direct governors; C.29 governs any mathematical-lens use; this is not a C.2.1 identity component;
    * a separately current neighboring fact — name the exact `EpistemeEditionRelation`, exact A.10 evidence or provenance relation, or other governed predicate and its participants when the arrow family reads or compares it; do not collect these facts in a generic projection. If E asserts such a fact, that assertion is already part of `content(E)`.
 
@@ -242,7 +243,7 @@ Each arrow family states the formal domain in which its laws apply:
 
 If `X` or `Y` lies outside that domain, the arrow is not a member of this local family. This is distinct from an operation application being admitted or rejected. When a receiving-use claim is made, a use-specific scope, operating condition, or selected viewpoint enters `q` only when it changes the invariant, visible loss, receiving use, or conditions; `q` carries affirmative or negative polarity, and a separate current-case judgement tests exact facts against it. Changing either does not reidentify the arrow.
 
-When the use also relates two exact F.17 local senses and the F.9 predicate obtains, cite that Bridge and a separate bounded-use claim. When it crosses a ReferencePlane, cite the applicable plane relation. If transport is performed, identify the A.6.1 application separately. Different labels, contexts, schemes, planes, or operating conditions alone create none of these relations.
+When the use also relates two exact F.17 local senses and the F.9 predicate obtains, cite that Bridge and a separate bounded-use claim. When it crosses a ReferencePlane, cite the applicable plane relation. A claim about performed transport follows P1's separate application and Work conditions. Different labels, contexts, schemes, planes or operating conditions alone create none of these relations.
 
 ### A.6.2:5 - Archetypal Grounding (Tell–Show–Show)
 
@@ -254,8 +255,8 @@ The examples below show how EFEM is intended to be used across the EntityOfConce
 
 *Shape.*
 
-* Domain: `X = U.MethodDescription` episteme with `entityOfConcernRef(X) : U.MethodRef`, `content(X) : U.ClaimGraph_D`, and `ReferenceScheme_D`; when the named engineering validation use selects viewpoint P, record that selection separately.
-* Codomain: `Y = U.MethodSpec` episteme with the same `entityOfConcernRef(Y) = entityOfConcernRef(X)`, more structured `content(Y) : U.ClaimGraph_S`, and a more explicit ReferenceScheme. If the same named validation use continues, it preserves its selected viewpoint P separately.
+* Domain: exact episteme `X : U.MethodDescription` with `entityOfConcernRef(X) : U.MethodRef`, `content(X) : U.ClaimGraph_D`, and `ReferenceScheme_D`; when the named engineering validation use selects viewpoint P, identify that selection separately.
+* Codomain: exact episteme `Y : U.MethodSpec` concerning the same Method, with more structured `content(Y) : U.ClaimGraph_S` and a more explicit ReferenceScheme. If the same named validation use continues, it preserves its selected viewpoint P separately.
 
 `Specify_DescEp_SpecDesc` is a species of EFEM only when all of these hold:
 
@@ -290,11 +291,11 @@ MVPK can reuse the EFEM laws for these normalization arrows. Claim the relevant 
 
 #### A.6.2:5.3 - Retargeting sketch (`entityOfConcernChangeMode = retarget`)
 
-*Context.* E.18 structural reinterpretation relates a physical-layout episteme to a functional-behaviour episteme. The EntityOfConcern changes from the physical assembly to the functional network.
+*Context.* For this E.18 retargeting sketch, take the physical assembly `S₁` and functional network `S₂` as independently identified, different entities. The source episteme concerns `S₁`; the receiving episteme concerns `S₂`.
 
 Inside EFEM, this becomes a species with `entityOfConcernChangeMode = retarget`:
-* input episteme describes `S₁` (e.g. a component hierarchy holon);
-* output episteme describes `S₂` (e.g. a functional network holon);
+* the source episteme describes the physical assembly `S₁`;
+* the receiving episteme describes the independently identified functional network `S₂`;
 * one exact arrow `r` relates the two endpoint epistemes under its declared formal rule; a separate A.6.4 assertion `q` states the invariant, visible loss, bounded receiving use, conditions, and polarity; and a current-case judgement separately tests the exact facts;
 * P2 checks only the formal consequence relation declared for `r`; the ordinary current-case judgement tests the exact facts against `q`, and A.20 enters only when that proposition is an internal constraint.
 
@@ -371,7 +372,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
 
 * **Value-and-relation clarity.**
   By requiring each EFEM species to compare the three C.2.1 identity values and name the exact separately obtaining relations its rule reads, the pattern keeps an EntityOfConcern, a declaration-local SlotKind, and a reference to the entity distinct. Equal or different endpoint relation facts are a comparison result, not an effect of the arrow.
-* **Better didactics.**
+* **Didactic projection.**
   When a didactic expression–meaning–subject triangle is useful, use the C.2.1:5 projection: expression maps to selected representation elements and any publication carrier; meaning is the ClaimGraph interpreted under its effective ReferenceScheme; subject is the exact EntityOfConcern. Keep any material empirical grounding, representation correspondence, reference, and viewpoint selection for a named describing use separately identified, rather than adding triangle slots.
 
 ### A.6.2:10 - Rationale
@@ -397,16 +398,14 @@ FPF distinguishes actual participants and their references from the declaration-
 
 ### A.6.2:10.1 - SoTA-Echoing
 
-**Practice question.** What current transformation practice supports reusable definitions and composition while keeping execution and correctness evidence separate, and does it justify a universal repeat law?
+**Practice question.** How can reusable transformation definitions and composition remain separate from execution and correctness evidence, and which repeat laws do they support?
 
-| Source or practice | Contribution used here | Limit and disposition |
+| Source or practice | Contribution used here | Use boundary |
 | --- | --- | --- |
-| [Zhao et al., *KBX: Verified Model Synchronization via Formal Bidirectional Transformation* (2024)](https://arxiv.org/abs/2404.18771) | Separates formal BX definitions, generated synchronization, and consistency verification. | **Adapt.** Supports the declaration, arrow, application, and use-claim split. Its formal synchronizer does not make every arrow effect-free or idempotent in FPF. |
-| [He and Zan, *BIT: A template-based approach to incremental and bidirectional model-to-text transformation* (2024)](https://doi.org/10.1016/j.jss.2024.112148) | Separates a user-facing surface language, formal core semantics, printer/parser execution, round-trip properties, and empirical cases; it also treats some computational effects explicitly. | **Adapt.** Supports a readable first route and explicit effect boundary. BIT's round-trip laws are construction-specific, not a universal EFEM idempotence law. |
-| Category, optic, fibration, cospan, and BX traditions | Supply durable mathematical lineage for arrows, identities, composition, views, and correspondences. | **Retain as lineage.** Use the selected FormalSubstrate for the local mathematical theory; apply C.29 when the mathematics is used as a lens. Reject automatic F.9 Bridge, EntityOfConcern decision, or idempotence. |
-| Current FPF C.2.1, C.29, A.6.3.RT, and A.6.4 | Separate episteme identity, mathematical-lens use, same-entity representation change, and changed-entity retargeting with a use-specific claim. | **Adopt.** These are the direct FPF boundaries. |
-
-The thin EFEM arrow class is a bounded FPF synthesis.
+| [Zhao et al., *KBX: Verified Model Synchronization via Formal Bidirectional Transformation* (2024)](https://arxiv.org/abs/2404.18771) | Separates formal BX definitions, generated synchronization and consistency verification. | This supports the declaration, arrow, application and use-claim distinction. The synchronizer's laws do not establish purity or idempotence for every FPF arrow. |
+| [He and Zan, *BIT: A template-based approach to incremental and bidirectional model-to-text transformation* (2024)](https://doi.org/10.1016/j.jss.2024.112148) | Separates a surface language, formal core semantics, printer/parser execution, round-trip properties and empirical cases; some computational effects are explicit. | Its round-trip laws belong to that construction. They supply no universal EFEM idempotence law. |
+| Category, optic, fibration, cospan and BX traditions | Supply mathematical lineage for arrows, identities, composition, views and correspondences. | The selected FormalSubstrate supplies the local mathematical theory. C.29 governs a mathematical-lens use; F.9 correspondence, EntityOfConcern identity and repeat laws retain their independent conditions. |
+| FPF C.2.1, C.29, A.6.3.RT and A.6.4 | Separate episteme identity, mathematical-lens use, same-entity representation change and changed-entity retargeting with a use-specific claim. | These patterns govern the corresponding FPF objects and uses. |
 
 ### A.6.2:11 - Relations
 

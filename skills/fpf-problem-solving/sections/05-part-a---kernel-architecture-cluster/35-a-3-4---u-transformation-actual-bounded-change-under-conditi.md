@@ -8,25 +8,11 @@
 
 Use this pattern when a project must decide whether an actual change occurred and identify that one change. Ask: what continuing subject changed, where the change begins and ends, which facts differ before, during, and after it, and what rule makes this one occurrence rather than unrelated observations.
 
-Use it when the working question is:
+**First useful move.** Name the continuing subject and where the change begins and ends. Write the subject facts that hold before, during, and after that boundary, then state the boundary conditions and the continuity or reidentification rule that make this one occurrence. A desired state, method, plan or model alone leaves occurrence unresolved. Use records or observations for the actual facts they support.
 
-- what continuing subject changed: an entity, selected structure, presentation carrier, constituent organization, characteristic-bearing referent, or formal object;
-- when a specification's claim content changes, which two C.2.1 epistemes exist, whether their `EpistemeEditionRelation` obtains, whether a continuing carrier or constituent organization changed, and whether revision `U.Work` first constituted the later episteme under `A.15.PROD`;
-- which actual characteristic-state and direct-relation facts differ across the boundary;
-- what temporal extent, formal ordering, or continuity rule identifies this occurrence;
-- which additional claim, if any, is actually being made about method, planned work, performed work, mechanism, flow structure, representation, evidence, publication, or a later use, and which pattern answers that claim.
+Missing information about a neighboring claim leaves that claim unresolved; it neither disproves nor establishes the transformation.
 
-**Primary EntityOfConcern.** One actual `U.Transformation`: the bounded occurrence identified through the five checks in 4.1. Identify the objects needed for separate planning, enactment, representation, evidence, or later-use claims under their own patterns.
-
-**Primary working reader.** A practitioner or modeler who must identify one actual change for a current engineering, scientific, formal, documentary, or architectural use before relating it to method, work, flow, evidence, or production. The parked-composition branch additionally addresses an FPF author or reviewer only when that use asks whether several changes compose one change or whether that whole could satisfy A.1.
-
-**First useful move.** Name the continuing subject and where the change begins and ends. Write the subject facts that hold before, during, and after that boundary, then state the boundary conditions and the continuity or reidentification rule that make this one occurrence. If the material supplies only a desired state, method, plan, model, trace, or assertion, stop: it has not yet grounded an actual `U.Transformation`.
-
-**Open-world guard.** Not finding a method, work occurrence, evidence item, publication, delivery, acceptance, or later-use relation does not prove that it is absent. It prevents only the particular claim that needs it. Finding one of those objects likewise does not prove that an actual transformation occurred.
-
-**What goes wrong if missed.** Method names become change proof, work traces become laws, process diagrams become execution, dynamics models become permission, temporal trends become intervention claims, mathematical constructions become project-world work, and publications or result records are treated as the change itself.
-
-**What this buys.** The practitioner gets one usable actual-change result without first deciding whether finer changes are its parts. If no composition or holon claim is needed, continue with the ordinary neighboring-object guidance at `4.3`. If such a claim is needed, keep the identified changes and return the parked composition blocker; this pattern does not guess the future architecture. Apply `A.1` only after an accepted architecture supplies the proposed whole and its construction facts. Method, work, flow, representation, evidence, publication, production, and later-use claims stay separate.
+**Practical gain.** Identify one actual change without first deciding whether finer changes are its parts. If no composition or holon claim is needed, continue with the neighboring-object guidance at `4.3`. A positive composition claim requires the additional basis in `4.2.1`; A.1 applies only after the proposed whole and its construction facts are independently supplied.
 
 **Not this pattern when.**
 
@@ -43,20 +29,19 @@ Use it when the working question is:
 
 ### A.3.4:1 - Problem Frame
 
-FPF often needs to talk about change in physical systems, engineered artifacts, organizations, presentation carriers, constituent organizations, architectures, programs, regulatory situations, and research objects. A revised specification needs an early split: changed claim content identifies two C.2.1 epistemes, not one continuing changed episteme. Test the `EpistemeEditionRelation` between them. Open A.3.4 only for a continuing carrier, constituent organization, or other subject with its own identity rule; if revision `U.Work` first creates the later episteme, use `A.15.PROD` for that first existence. When the source says *process*, *editing*, or *construction*, recover the changed object from the case.
-
+FPF often needs to talk about change in physical systems, engineered artifacts, organizations, presentation carriers, constituent organizations, architectures, programs, regulatory situations, and research objects. A revised specification needs an early split: changed claim content identifies two C.2.1 epistemes, not one continuing changed episteme. Test the `EpistemeEditionRelation` when historical continuation between them is claimed. Open A.3.4 only for a continuing carrier, constituent organization, or other subject with its own identity rule; if revision `U.Work` first creates the later episteme, use `A.15.PROD` for that first existence. When the source says *process*, *editing*, or *construction*, recover the changed object from the case.
 
 For transformer constitution use `A.3`; for signatures and slot discipline use `A.6.0` and `A.6.5`; for problem-to-work carry-through use `E.18.1`. Section 0 and sections 4.4–4.5 provide the other neighboring routes.
 
-What is missing is a positive first route: identify the actual change, then open only the separate method, work, flow, representation, evidence, publication, or later-use claim the practitioner is making.
+Identify the actual change, then open only the separate neighboring claim the practitioner is making.
 
 ### A.3.4:2 - Problem
 
-Without `U.Transformation`, projects repeatedly make category errors:
+The following substitutions leave actual-change identity unestablished:
 
 1. **Method as transformation.** A way of doing is treated as if the change already happened or must happen.
-2. **Mechanism as transformation.** A law-governed operation algebra is mistaken for the actual or intended change, although it only states how a transformation may proceed.
-3. **Work as transformation law.** A dated work occurrence or trace is treated as if it defined the reusable transformation.
+2. **Mechanism as transformation.** A law-governed operation algebra states how change may proceed; it does not establish the actual occurrence.
+3. **Work as transformation law.** A dated work occurrence or trace is treated as if it defined the law governing a reusable kind of change.
 4. **Dynamics as permission.** A state-space or transition-law episteme is used as if it authorized action, gate passage, or result acceptance.
 5. **Temporal claim as transformation.** A claim about rate, rhythm, recovery, delay, effort, inertia, freshness, or validity window is used as if it specified the whole change and its conditions.
 6. **Formal construction as project-world work.** A morphism, proof construction, or formal transformation inside a mathematical substrate is treated as a physical or organizational change without a realization or work relation.
@@ -80,25 +65,25 @@ These errors are expensive because the wrong neighboring pattern then receives t
 
 `U.Transformation` is the FPF ontic for one actual bounded change. Use the five checks below and keep only the facts needed to distinguish this occurrence:
 
-1. **Changed subject.** Name the continuing entity, selected structure, presentation carrier, constituent organization, characteristic-bearing referent, or formal object and apply its identity rule. If an episteme's claim content differs across the boundary, identify two C.2.1 epistemes and test their `EpistemeEditionRelation`; do not call either one the continuing changed subject. Use A.3.4 only for another continuing subject, or use `A.15.PROD` when revision `U.Work` first constitutes the later episteme.
+1. **Changed subject.** Name the continuing entity, selected structure, presentation carrier, constituent organization, characteristic-bearing referent, or formal object and apply its identity rule. If an episteme's claim content differs across the boundary, identify two C.2.1 epistemes and test their `EpistemeEditionRelation` when historical continuation is claimed; do not call either one the continuing changed subject. Use A.3.4 only for another continuing subject, or use `A.15.PROD` when revision `U.Work` first constitutes the later episteme.
 2. **Extent and boundary.** State the temporal extent of the change, including only gaps admitted by its continuity rule, or state the ordering boundary in a declared formal substrate.
 3. **Boundary conditions.** State the conditions that delimit this change from adjacent persistence, work, or change occurrences.
 4. **Actual change facts.** Write the characteristic-state facts and relations that actually hold before, during, and after the boundary.
 5. **Continuity or reidentification.** If the subject varies internally, the change pauses, or several intervals are proposed, state the rule that says the subject and this occurrence continue across that variation.
 
-Here, **one** means one occurrence at the resolution, subject, extent, and boundary needed for this use. It does not mean elementary, atomic, indivisible, or partless. Later refinement may identify finer changes, and future accepted work may establish constructive parts; sampling or subdividing time establishes neither result.
+Here, **one** means one occurrence at the resolution, subject, extent, and boundary needed for this use. It does not mean elementary, atomic, indivisible, or partless. Finer changes and their possible constructive relations require their own identification; sampling or subdividing time establishes neither.
 
 Treat a possible, desired, planned, predicted, modeled, asserted, or published change as claim content until the occurrence facts above hold. A formal transformation can be actual within an admitted formal substrate, but its formula or proof term remains a `C.29` representation of that independently identified formal change.
 
 #### A.3.4:4.2 - First-use transformation basis
 
-Use these questions as a recognition aid, not as fields of a transformation record:
+Use these questions to identify the occurrence and any additional claim the use needs:
 
 | Question | What to write | Stop condition |
 | --- | --- | --- |
-| What changed? | one continuing subject under its identity rule | stop if only a label, file, diagram, or desired object is available |
+| What changed? | one continuing subject under its identity rule | stop while that subject or its identity remains unresolved |
 | Across which boundary? | temporal extent or formal ordering boundary | stop if before and after are merely two unrelated observations |
-| What actual facts differ? | the relations and characteristic-state facts that hold before, during, and after the boundary | stop if the only basis is a method, plan, trace, formula, or assertion |
+| What actual facts differ? | the relations and characteristic-state facts that hold before, during, and after the boundary | stop while the actual facts needed by 4.1 remain unestablished; a record or representation can supply support for those facts |
 | What delimits one occurrence? | boundary conditions and continuity or reidentification rule | split or leave identity unresolved when the rule does not cover the gap |
 | Which later claim or use, if any, relies on this change? | name that claim and apply its pattern: for example dated `U.Work`, a safety evaluation, a publication assertion, or no neighboring use | write only the relation needed by that branch; if no later use is being claimed, add nothing |
 
@@ -106,39 +91,39 @@ Use these questions as a recognition aid, not as fields of a transformation reco
 
 Choose only the next claim that the use actually needs:
 
-- **Work.** First identify a dated `U.Work` occurrence under `A.15.1`. If both work and transformation participants are identified, apply the routes and stops in `4.2.4`. The short reactor fixture has not identified that work occurrence, so it makes no work-to-change claim and does not yet report a missing governor.
+- **Work.** Establish the A.13 basis and independently admit the dated `U.Work` occurrence under `A.15.1`; use F.6 afterward only for precise attribution to that same assignment. If both work and transformation participants are identified, apply the routes and stops in `4.2.4`. The short reactor fixture has not identified that work occurrence, so it makes no work-to-change claim.
 - **Safety evaluation.** Use case-local `evaluatesTransformation@PlantSafety-v4(SafetyEvaluation-7, CoolingLoopTransformation-7, CoolingLoopSafetyCriterion-v4)` only when all three participants are identified and the predicate's obtaining conditions hold. Identify a decision separately when one is claimed.
 - **Publication.** Use a C.2.1 assertion whose EntityOfConcern is `CoolingLoopTransformation-7` and identify its E.24.PUB publication occurrence.
 
 If none of these uses is being claimed, keep the identified transformation and add no neighboring relation.
 
-**Choose the next branch now.** If the current result is one identified transformation and the use needs no positive claim that several changes compose one change or that the change is a holon, continue directly at 4.3. Sections 4.2.1 and 4.2.3 are not prerequisites for that ordinary route. Open them only when the use needs one of those two positive claims; the current advanced branch returns the parked blocker and selects no future architecture.
+If the result is one identified transformation and the use needs no positive composition or transformation-holon claim, continue at 4.3. Open 4.2.1 and 4.2.3 only for those additional claims.
 
 ##### A.3.4:4.2.1 - Keep proposed component and whole-configuration changes separate
 
-Use *component change* and *whole-configuration change* only as ordinary question roles for actual `U.Transformation` occurrences already identified through A.3.4:4.1. They are not additional U-kinds, record fields, or evidence that one change is part of another.
+Use *component change* and *whole-configuration change* for the respective proposed uses of actual `U.Transformation` occurrences already identified through A.3.4:4.1. Those descriptions alone establish no parthood relation.
 
-Identify every proposed component change and the proposed whole-configuration change independently. A sampled point, arbitrary subinterval, method step, work part, flow node, graph edge, trace segment, formula term, before-and-after image, shared changed subject, or temporal inclusion establishes neither composition nor absence of finer parts.
+Identify every proposed component change and the proposed whole-configuration change independently. Temporal inclusion, shared subject, neighboring flow positions or parts of a representation establish neither composition nor absence of finer parts.
 
 The neighboring general patterns do not silently answer the composition question. `A.22` can identify a selected structure whose relation organization changes; `C.27.TA` can identify temporal aspects; `A.14` and `C.13` define structural mereology and a `Γ_m` construction trace. None of those results by itself says that several actual changes compose one actual change. A materialized `Γ_m.sum` trace is a C.2.1 episteme about identified entity-part relations, assembly, and direct identity or reidentification conditions.
 
-One independently identified change of a selected configuration can therefore remain a valid configuration transformation. If the use needs no positive composition or transformation-holon claim, continue with that transformation and the ordinary neighboring-object guidance in `4.3`-`4.8`. If it does need such a claim, retain the identified changes and stop with **missing transformation-composition governor**; a proposed local compound claim also stops with **missing derivation substrate**. Neither stop says that composition is false or that any change is partless.
+One independently identified change of a selected configuration can therefore remain a valid configuration transformation. If the use needs no positive composition or transformation-holon claim, continue with that transformation and the ordinary neighboring-object guidance in `4.3`-`4.8`. If it does need such a claim, retain the identified changes and stop with **missing transformation-composition governor**; a proposed local compound claim also stops with **missing derivation substrate** when no admitted constructor semantics supplies it. Neither stop says that composition is false or that any change is partless.
 
 ##### A.3.4:4.2.3 - Apply A.1 only after composition is independently established
 
-Membership in `U.Transformation` supplies no holonhood. A.1 remains the authority for the constructive criterion. This edition of A.3.4 supplies neither a positive transformation-composition result nor the candidate, constituents, constructive part relations, and assembly needed by A.1. Therefore an independently identified configuration transformation remains a valid `U.Transformation`, while positive `U.Holon` classification on the basis of transformation composition stops. The stop is not evidence that no such whole or parts exist.
+Membership in `U.Transformation` supplies no holonhood. To apply A.1 to one change as a whole, independently identify the candidate, constituents, constructive part relations and assembly under a governing construction rule. Recognition of an individual occurrence supplies none of those missing construction facts. This pattern defines no transformation-composition rule; where that needed governor or derivation substrate is absent, positive A.1 classification on that basis stops. The stop does not disprove the existence of a whole or its parts.
 
-If future accepted work supplies one whole transformation and its construction facts, apply A.1 without changing its test or assuming which relation form that work chose. A.1 still requires the candidate, constituents, constructive part relations and assembly, reidentification rule, composition-grounded whole-level characteristic, and possible participation in a larger constructive assembly. Recover those facts from the patterns that define them at that time.
+When an independently admitted construction supplies one whole transformation, apply A.1 without changing its test. A.1 requires the candidate, constituents, constructive part relations and assembly, reidentification rule, composition-grounded whole-level characteristic, and possible participation in a larger constructive assembly. Recover those facts from their governing patterns.
 
-A.1 also keeps world-side satisfaction or failure separate from an A.6.1 `true | false | unknown` recognition evaluation, an optional C.2.1 assertion, evidence and assurance, G.11 currentness, receiving-work disposition, and B.2 whole reidentification. Follow A.1 for that separation rather than repeating its full table here.
+A.1 distinguishes satisfaction of its criterion from recognition, assertion, assurance and receiving-work disposition; use its account when those separate claims matter.
 
-Stress the current boundary before classifying:
+Apply that boundary to the proposed case:
 
 - a pressure increase may be identified as one `U.Transformation` at the resolution needed by the use; sampling or subdivision establishes neither constructive parts nor absence of such parts;
 - a switch transition may be treated as effectively instantaneous at the selected temporal resolution and identified as one `U.Transformation`; that resolution claim establishes neither indivisibility nor parts;
 - subintervals of continuous biological growth may each be independently identified as transformations, but this pattern does not decide whether they compose one change;
 - a formal transformation can be actual under a selected formal substrate, while its formula, morphism, or proof term remains a C.29 representation and supplies no holonhood;
-- mounting, wiring, connection, and whole-configuration changes may each be identified independently; the current edition does not make them constituents of one transformation, so positive A.1 classification on that basis does not begin.
+- mounting, wiring, connection, and whole-configuration changes may each be identified independently; a positive A.1 claim based on their composition requires the additional construction facts above.
 
 ##### A.3.4:4.2.4 - Keep work and production claims outside transformation identity
 
@@ -150,9 +135,9 @@ Production is a separate question. For a production claim, test production-work 
 
 **Pump 14 — current result and earlier no-governor stage:** A.3.4 identifies `T-P14-PRESSURE-RISE : U.Transformation` as the bounded change of continuing `HydraulicLoop_P14`; the loop's discharge-pressure characteristic is `belowBand` at the opening boundary and `inBand` at the closing boundary. The current case record contains relation-declaration episteme `P14-REL-2026`, owned by `Pump14OperationsRelations`, which declares `AdjustmentWorkCausesPressureRise` for exact participants `W-P14-ADJUST-1010-1020 : U.Work` and `T-P14-PRESSURE-RISE`; a separately stated case fact satisfies its actual-causation predicate. Therefore write: `W-P14-ADJUST-1010-1020 caused T-P14-PRESSURE-RISE`. In the explicitly earlier case record, `P14-REL-2026` is absent; at that epistemic stage, keep the same Work and transformation, return `missing-governor: work-to-change claim for <W-P14-ADJUST-1010-1020, T-P14-PRESSURE-RISE>`, and route the missing declaration to `Pump14OperationsRelations` instead of asserting causation.
 
-#### A.3.4:4.3 - Keep six layers separate
+#### A.3.4:4.3 - Distinguish the change from claims and representations
 
-For one identified transformation, keep these objects distinct:
+When the use needs the following contributions, keep their different objects and criteria recoverable:
 
 | Layer | Object to keep distinct | Where to check it |
 | --- | --- | --- |
@@ -165,7 +150,7 @@ For one identified transformation, keep these objects distinct:
 
 A verbal predicate does not turn every obtaining relation occurrence into a transformation. Assignment, availability, installation, and temporal order can obtain without change. Conversely, one actual transformation may require several relation facts without being identical to any one of them.
 
-Do not use a generic `transformationRelation` field. If an existing relation already states the needed fact, use it. Otherwise apply `A.6.RCD`: a local compound claim is available only when its exact base facts and admitted substrate are present; if a required basis is missing, preserve the applicable `A.6.RCD` stop. Introduce a reusable predicate-definition episteme only when repeated uses need the same rule. A new durable relation kind still needs its own obtaining and occurrence-identity law; a task, morphism, operation family, or verbal predicate cannot be inserted into one union-valued field.
+Use an existing relation that states the needed fact. Otherwise apply `A.6.RCD`: a local compound claim is available only when its base facts and admitted substrate are present; preserve the applicable stop when a required basis is missing. Introduce reusable predicate-definition content when repeated uses need the same rule. A new durable relation kind needs its own obtaining and occurrence-identity law. A task, morphism, operation family and relation occurrence have different meanings and cannot occupy one generic `transformationRelation` field.
 
 #### A.3.4:4.4 - Add neighboring objects only for the claim being made
 
@@ -185,31 +170,22 @@ For each neighboring claim, identify the object it needs and state that object's
 | description, view, publication, form, or carrier | C.2.1, `E.17`, and `E.24.PUB` keep the episteme, view membership, publication occurrence, publication form, and carrier distinct |
 | `input`, `output`, `result`, `outcome`, `deliverable`, or `handoff` | name the participant and the relation actually claimed: method declaration, planned work, actual work, transformation, evaluation, commitment, delivery, acceptance, transfer, or receiving work. The source word is not a kind or universal slot. |
 
-A declared post-state is part of a transformation description. An actual post-boundary state or changed entity is a fact about the subject. To call that entity or relation a result, name the later use, its participants, and the relation being asserted; acceptance, delivery, publication, and downstream effect remain separate. `U.Transformation` therefore has no generic `ResultRef` or `OutputConditionOrPortRefs` slot.
+A declared post-state is part of a transformation description. An actual post-boundary state or changed entity is a fact about the subject. When wording such as *result* carries a separate claim, make its participants and relation recoverable from that use. Acceptance, delivery, publication, and downstream effect remain separate. `U.Transformation` has no generic `ResultRef` or `OutputConditionOrPortRefs` slot.
 
 When the use needs an episteme about the transformation, identify it through C.2.1: exact claim content, the transformation or another subject as EntityOfConcern, and the effective reference scheme. Add scope, viewpoint, empirical grounding, edition, publication, or representation only when the use separately requires that relation.
 
-#### A.3.4:4.5 - Neighboring Distinction Table
+#### A.3.4:4.5 - Temporal and problem-to-work questions
 
 | Claim being made | Pattern to use |
 | --- | --- |
-| actual bounded transformation | `A.3.4 U.Transformation` |
-| selected transformation-flow structure, locus, path, crossing, or flow valuation | `E.18`; A.3.4 still identifies each transformation occurrence |
-| graph, algebra, morphism, path, tuple, or wiring expression | `E.18.2` and `C.29` for representation |
-| semantic way of doing | `A.3.1 U.Method` |
-| description of a way of doing | `A.3.2 U.MethodDescription` |
-| state-space and transition-law episteme | `A.3.3 U.Dynamics` |
-| reusable operation declaration or application binding | `A.6.1` |
-| planned or dated work | `A.15.2 U.WorkPlan` or an `A.15.1` `U.Work` occurrence |
 | positive temporal aspect or temporal-claim adequacy | `C.27.TA` or `C.27` |
 | problem-to-work carry-through | `E.18.1`; it carries the identified objects |
-| evidence, evaluation, assurance, gate, decision, source use, publication, delivery, acceptance, or transfer | use the pattern that defines that claim |
 
 #### A.3.4:4.6 - Description And Publication Boundary
 
-A method description, dynamics model, transformation diagram, transformation-flow structure description, dashboard, result record, source span, publication, or proof may describe a transformation or provide evidence for a use.
+A description or representation can convey a transformation or provide evidence for a use. Examples include a dynamics model, diagram, trace and proof.
 
-If the task is about the description, use `C.2.1`, `A.3.2`, `A.3.3`, `E.17`, `E.18`, or the applicable publication or source pattern. If the task is about the transformation, keep the description as a neighboring episteme or publication value.
+Use the pattern for the represented claim or publication: for example `A.3.2` for a MethodDescription, `A.3.3` for a dynamics episteme, or `E.24.PUB` for a publication occurrence. Identify the transformation independently of that descriptive or publication relation.
 
 #### A.3.4:4.7 - Formal Transformation And Project-World Realization
 
@@ -233,7 +209,7 @@ Keep these objects separate:
 - if revision `U.Work` first constitutes the later episteme, open a separate `A.15.PROD` first-existence question: name the exact `productIdentitySpecification` episteme, the named applicability predicate or filled local claim that applies it to the candidate basis, subject context, and boundary, the `identityClosingWork`, and the work-to-change and change-to-identity predicates or local compound claims. If that specification continues an earlier specification, state the separate C.2.1 `EpistemeEditionRelation` only when its historical-continuation predicate obtains; without that relation, treat it as a non-continuing replacement and evaluate its applicability independently. Return the applicable `A.6.RCD` stop for either named connection that lacks its required basis;
 - a plant change, safety evaluation, assurance claim, gate decision, and publication are separate objects and relations.
 
-If only the proposed wording and proof are available, do not assert a project-world plant transformation. Different claim content gives two epistemes; test their `EpistemeEditionRelation`. Assert an A.3.4 specification-side transformation only for a separately continuing carrier or constituent organization with its boundary, before/during/after facts, and continuity rule. If the question instead concerns the later episteme's first existence, use `A.15.PROD` and stop when either direct connection lacks a basis. The proof can support an assertion only through its evidence or derivation use.
+If only the proposed wording and proof are available, do not assert a project-world plant transformation. Different claim content gives two epistemes; test their `EpistemeEditionRelation` when historical continuation is claimed. Assert an A.3.4 specification-side transformation only for a separately continuing carrier or constituent organization with its boundary, before/during/after facts, and continuity rule. If the question instead concerns the later episteme's first existence, use `A.15.PROD` and stop when either direct connection lacks a basis. The proof can support an assertion only through its evidence or derivation use.
 
 ### A.3.4:5 - Archetypal Grounding
 
@@ -265,14 +241,13 @@ An architecture team performs dated architecture `U.Work`. During the same inter
 
 #### A.3.4:5.6 - Functional transformer in a flow
 
-When a sentence says that a system *transforms input to output* or *implements an algorithm*, split at least four questions: which system and role assignment are claimed; which subject actually changed; which participant, port, or operation bindings hold at the boundary; and where the transformation sits in the selected E.18 flow. Add a method or method description only if the sentence also makes that claim.
+When a sentence says that a system *transforms input to output* or *implements an algorithm*, recover the subject and the claim it makes. Identify the continuing changed subject for an actual-transformation claim. Use A.3 for an acting-system claim, and A.13 followed by A.15.1 for a dated Work claim. Identify participant, port or operation bindings when the sentence uses them, and use E.18 when it claims a position in a transformation flow. A Method or MethodDescription is needed only for the corresponding way-of-doing claim.
 
 Examples:
 
 - A pump can be the acting system while the actual transformation is the bounded pressure change of an identified fluid volume. Inlet and outlet pressure facts are characteristic-state and port facts; the pump curve is a model episteme.
 - A warehouse can perform receiving `U.Work` while pallet-location and inventory-state changes occur. If a later use needs a work-to-change claim, name the pair and apply `4.2.4`. Orders and pallets keep their work, transfer, resource, or affected-subject relations.
 - A neural-network block can participate in an activation transformation. Tensor-shape declarations, the attention method, dated inference work, benchmark evaluation, and architecture allocation stay separate and use their own patterns.
-
 
 #### A.3.4:5.7 - Assembly changes before PumpSkid identity
 
@@ -286,7 +261,7 @@ Positive A.1 classification on that basis stops as well, because no accepted com
 
 ### A.3.4:6 - Bias-Annotation
 
-This pattern keeps the actual change separate from a composition question, holon classification, facts about the changed subject, method, work, flow structure, representation, assertion, evidence, evaluation, publication, production, and later use. It resists software narrowing, method-as-effect, model-as-authority, trace-as-law, formal-as-project-work, relation-verb-as-change, sampled-slice composition, blanket transformation holonhood, work-caused-change-as-production, and result-word-as-kind errors.
+A familiar representation can draw attention away from the actual subject and its continuity: a process diagram suggests work steps, while sampled time points suggest parts of a change. Return to the occurrence facts before inferring enactment or composition. The non-agentive seedling case also shows why identifying change need not begin with an acting system.
 
 ### A.3.4:7 - Conformance Checklist
 
@@ -295,7 +270,7 @@ This pattern keeps the actual change separate from a composition question, holon
 | `CC-A34-1` | One continuing changed subject, temporal extent or formal ordering boundary, boundary conditions, before/during/after facts, and continuity or reidentification rule identify the transformation. Changed claim content instead yields two C.2.1 epistemes and a separate edition-relation question. |
 | `CC-A34-2` | Actuality and transformation identity require the complete basis in 4.1, even when a method, plan, model, representation, or individual relation fact is available. |
 | `CC-A34-3` | Every subject fact uses the pattern that defines its relation or characteristic; no union-valued `transformationRelation` field is used. |
-| `CC-A34-4` | Method, method description, operation declaration or binding, plan, work, flow structure, representation, evidence, evaluation, and publication retain separate identities and relations. |
+| `CC-A34-4` | Any additional method, operation, work, flow, representation, evidence, evaluation or publication claim retains its own objects and relations. |
 | `CC-A34-5` | A transformation assertion is a C.2.1 episteme about the actual transformation or exact base facts. |
 | `CC-A34-6` | Time, rate, rhythm, duration, and ordering claims use `C.27.TA` and `C.27` without replacing transformation identity. |
 | `CC-A34-7` | Use E.18 for the selected flow structure and C.29 for mathematical representation; ground actual transformation and work claims separately through A.3.4 and A.15.1. |
@@ -303,8 +278,8 @@ This pattern keeps the actual change separate from a composition question, holon
 | `CC-A34-9` | `input`, `output`, `result`, `outcome`, `deliverable`, and `handoff` remain wording cues until the reader names the participant and relation being asserted. |
 | `CC-A34-10` | When performed `U.Work` is claimed to cause, realize, or participate in a transformation, the case applies an existing subject predicate, states one `A.6.RCD` disposition-2 local compound claim over named base facts, or preserves the applicable `A.6.RCD` stop for the pair. Co-occurrence and a shared subject are insufficient. |
 | `CC-A34-11` | Every proposed component change and whole-configuration change is identified independently. Shared timing, referent, work, flow position, or representation establishes neither composition nor partlessness. |
-| `CC-A34-12` | A use that needs positive transformation composition returns the parked result in 4.2.1. |
-| `CC-A34-13` | A transformation is tested under A.1 only after a future accepted architecture independently supplies the exact candidate and all six A.1 constructive components; the current blocker, evaluation, assertion, evidence, currentness, receiving disposition, and B.2 remain separate. |
+| `CC-A34-12` | A positive transformation-composition claim requires a governing rule; preserve the missing-governor or missing-substrate result from 4.2.1 when its required basis is absent. |
+| `CC-A34-13` | Test a transformation under A.1 only after an independently admitted construction supplies the candidate and all six required construction facts. Recognition, assertion, assurance and receiving-work disposition remain separate. |
 | `CC-A34-14` | When a production claim is current, test production-work participation, entity-identity inception, and production completion separately under `A.15.PROD`, using the exact work, work part, subject-identity facts, completion criterion, and direct effect facts. |
 
 ### A.3.4:8 - Common Anti-Patterns and How to Avoid Them
@@ -317,42 +292,40 @@ This pattern keeps the actual change separate from a composition question, holon
 | Temporal trend as intervention | A rate or rhythm trend is treated as proof of changed behavior under an intervention. | Use `C.27.TA` and `C.27`, then identify the continuing changed subject and its before/during/after facts separately. |
 | Formal construction as work | A morphism or proof construction is treated as work performed in a project-world object. | Use `C.29` or the direct formal pattern for the mathematical relation; name realization and work separately. |
 | Publication as transformation | A dashboard or report is treated as the changed state. | Use publication or source patterns for that artifact; identify the changed subject separately. |
-| Sliced trajectory as composition | Samples, subintervals, method steps, work parts, concurrent changes, or flow nodes are declared components of one transformation by containment or proximity. | Independently identify each actual transformation. If the use needs a positive composition claim, return the parked blocker in 4.2.1; this edition does not choose its future architecture. Sampling or subdivision likewise supplies no evidence of indivisibility. |
-| Resolution-level identification as partlessness | A change identified as one occurrence at the resolution chosen for the task is treated as necessarily atomic, indivisible, or partless, or as automatically composite and holonic. | Keep the independently identified `U.Transformation`; infer neither presence nor absence of finer parts. Do not make a positive composition or A.1 claim until a future accepted architecture supplies its basis. |
+| Sliced trajectory as composition | Samples, subintervals, method steps, work parts, concurrent changes, or flow nodes are declared components of one transformation by containment or proximity. | Identify each actual transformation independently and require the governing rule and derivation basis in 4.2.1 for a positive composition claim. Sampling or subdivision also supplies no evidence of indivisibility. |
+| Resolution-level identification as partlessness | A change identified as one occurrence at the resolution chosen for the task is treated as necessarily atomic, indivisible, or partless, or as automatically composite and holonic. | Keep the independently identified `U.Transformation`; infer neither presence nor absence of finer parts. Do not make a positive composition or A.1 claim without its independent construction basis. |
 | Work-caused change as production | A change that follows `U.Work` is called a produced entity or completed production. | First close the named work/transformation connection through `4.2.4` or keep its blocker; then separately test production-work participation, first existence of the subject, and the applicable production-completion criterion under `A.15.PROD`. |
 
 ### A.3.4:9 - Consequences
 
-- FPF gains one place to identify actual bounded transformations.
-- Current-resolution identification remains cheap: one bounded change can be identified without settling its finer composition. This says neither that finer parts exist nor that they do not.
+- One bounded change can be identified at the needed resolution without settling its finer composition.
 - An independently grounded change of a selected configuration remains usable without asserting whether nearby changes compose it or are its parts.
-- A use that needs positive transformation composition receives the one parked result from 4.2.1: missing governor, and also missing substrate when it proposes a local derived or compound claim. No relation kind, signature, occurrence law, or definition identifier is minted here.
-- If a future accepted architecture supplies an exact whole transformation and its construction facts, A.1 then applies its own six-component test; this edition supplies no positive transformation-holon classification.
+- A positive transformation-composition claim needs a governing rule and, for a local derived or compound claim, an admitted substrate. Return the missing basis identified in 4.2.1 when either is unavailable.
+- A.1 applies its six-part criterion after an independently admitted construction supplies the whole transformation and its construction facts.
 - Each subject pattern keeps its own change, `U.Work`, and production facts. A work/transformation connection uses the existing-predicate or local-compound branch in `4.2.4`; otherwise preserve the applicable `A.6.RCD` stop for the named pair.
 - E.18 can arrange or locate transformation occurrences in a selected flow structure.
-- Ordinary result wording remains usable after the reader names the later use, its participants, and the relation being asserted; no universal transformation-result or production relation is introduced.
-- Readers whose use stops with one actual transformation skip 4.2.1 and 4.2.3. Only a composition- or transformation-holon-dependent use opens that advanced branch, whose current result is the parked blocker.
+- Ordinary result wording can express the relation needed by its use, while production, delivery and acceptance remain separately determined.
 
 ### A.3.4:10 - Rationale
 
-`U.Transformation` gives FPF one object for an actual bounded change. Identify it from the continuing subject, boundary, before/during/after facts, boundary conditions, and continuity or reidentification rule. Keep task, method, plan, work, operation family, predicate, representation, assertion, evidence, evaluation, publication, and later-use claims visible as separate objects rather than fields of the transformation.
+`U.Transformation` identifies one actual bounded change through the continuing subject, extent, boundary conditions, before/during/after facts, and continuity or reidentification rule. A description, planned operation or performed Work answers a different question and keeps its own identity.
 
 An independently identified configuration transformation is not made into a whole with transformation parts merely because separately identified changes occur in the same episode or concern referents selected into that configuration. A positive composition claim still needs its governing rule and, for a compound claim, admitted derivation semantics.
 
-A.1 remains an independent second test. If future accepted work supplies one exact whole transformation and all six A.1 construction facts, A.1 can judge that same entity. Until then, a whole or composite label, a trace, and the parked blocker supply no holonhood.
+A.1 remains an independent test of the proposed whole and its construction facts. A whole or composite label and a trace supply no missing construction basis.
 
-This separation also keeps production and result claims honest. A claim that `U.Work` caused or participated in a transformation needs the corresponding route in `4.2.4`; even a positive work-to-change claim does not establish production. A post-boundary entity may be the same continuing entity rather than a newly constituted one. Production-work participation, first existence, production completion, delivery, acceptance, and downstream effect each need their own participants, relation, and criterion.
+This separation also distinguishes change from production. A claim that `U.Work` caused or participated in a transformation needs the corresponding route in `4.2.4`; even a positive work-to-change claim does not establish production. A post-boundary entity may be the same continuing entity rather than a newly constituted one. Production-work participation, first existence, production completion, delivery, acceptance, and downstream effect each need their own participants, relation, and criterion.
 
 ### A.3.4:11 - SoTA-Echoing
 
-A.3.4 uses four current source branches for four different questions.
+Four source contributions address different questions about change.
 
-| Source and practice answer | Use in A.3.4 | Adoption status and blocked overread |
+| Source and practice answer | Use in A.3.4 | Contribution and limits |
 | --- | --- | --- |
-| Marletto, Deutsch, and Vedral, ["Tests of constructor theory"](https://arxiv.org/abs/2606.07352v1), 2026, arXiv edition `2606.07352v1`, reviews the current experimental-test branch of constructor theory in terms of possible and impossible tasks and constructors rather than ordinary program execution. | A.3.4:4.1 and 4.7 require an independently grounded actual bounded change even when a constructor-theory task or formal transformation is current; case 5.4 keeps the proof term or morphism expression as representation. | **Adapt.** Use the task/constructor distinction to discipline possibility and governing conditions. Reject the overread that a task, its description, a constructor label, or a formal expression establishes the actual occurrence, project-world realization, evidence, or permission; this source branch is not treated as consensus ontology for every change. |
-| Deutsch and Marletto, ["Constructor theory of time"](https://arxiv.org/abs/2505.08692v3), 2025, current arXiv edition `2505.08692v3` revised in 2026, shows within that current branch why duration and dynamics need an account distinct from task possibility. | A.3.4:4.1 identifies the occurrence through its extent or formal ordering boundary and actual subject facts; 4.4-4.5 use `C.27.TA` for temporal aspects, `C.27` for temporal-claim adequacy, and `A.3.3` for dynamics; case 5.1 keeps the control-law episteme separate from the cooling-loop change. | **Adapt.** Preserve the separation among task, duration, dynamics, and actual occurrence without importing constructor theory as FPF temporal ontology. Reject duration, a dynamics model, or a task specification as sufficient transformation identity. |
-| Guizzardi, Benevides, Fonseca, Porello, Almeida, and Sales, ["UFO: Unified Foundational Ontology"](https://doi.org/10.3233/AO-210256), 2022, gives the current-state UFO account through distinct micro-theories that include events, situations, participation, causation, and change. | A.3.4:4.1 and 4.3-4.5 keep actual-change identity, subject facts, participation or work-to-change facts, causation, assertion, and representation as separate questions; case 5.6 applies that split to a system in a flow. | **Adopt the separation pressure; reject wholesale import.** FPF does not import UFO categories or infer event mereology from a model. Identify one `U.Transformation` at the resolution needed by the use; open participation, causation, work, or representation only through the pattern for that claim. |
-| Borgo and Righetti, ["Towards Applied Constructional Ontology"](https://doi.org/10.3233/FAIA250480), 2025, argues that applied constructional ontology still requires explicit choices about mereology, dependence, identity, and application concerns. | A.3.4:4.2 and the PumpSkid case 5.7 independently identify the local changes, reject composition by timing or representation, and keep the positive architecture open. | **Adopt the demand for explicit choices; do not preselect their answer.** Temporal inclusion, graph adjacency, a shared referent, a construction label, or a selected structure supplies neither transformation composition nor part identity. This source does not decide whether FPF should later use a generic relation, subject-specific relations, bounded local claims, or continued non-admission. |
+| Marletto, Deutsch, and Vedral, ["Tests of constructor theory"](https://arxiv.org/abs/2606.07352v1), 2026, arXiv edition `2606.07352v1`, reviews the experimental-test branch of constructor theory in terms of possible and impossible tasks and constructors rather than ordinary program execution. | A.3.4:4.1 and 4.7 require an independently grounded actual bounded change even when a constructor-theory task or formal transformation is used; case 5.4 keeps the proof term or morphism expression as representation. | Use the task/constructor distinction to discipline possibility and governing conditions. A task, its description, a constructor label, or a formal expression does not establish the actual occurrence, project-world realization, evidence, or permission; this source branch is not treated as consensus ontology for every change. |
+| Deutsch and Marletto, ["Constructor theory of time"](https://arxiv.org/abs/2505.08692v3), 2025, arXiv edition `2505.08692v3` revised in 2026, shows within that branch why duration and dynamics need an account distinct from task possibility. | A.3.4:4.1 identifies the occurrence through its extent or formal ordering boundary and actual subject facts; 4.4-4.5 use `C.27.TA` for temporal aspects, `C.27` for temporal-claim adequacy, and `A.3.3` for dynamics; case 5.1 keeps the control-law episteme separate from the cooling-loop change. | Preserve the separation among task, duration, dynamics, and actual occurrence without importing constructor theory as FPF temporal ontology. Duration, a dynamics model, or a task specification alone leaves actual occurrence identity unresolved. |
+| Guizzardi, Benevides, Fonseca, Porello, Almeida, and Sales, ["UFO: Unified Foundational Ontology"](https://doi.org/10.3233/AO-210256), 2022, develops the UFO account through distinct micro-theories that include events, situations, participation, causation, and change. | A.3.4:4.1 and 4.3-4.5 keep actual-change identity, subject facts, participation or work-to-change facts, causation, assertion, and representation as separate questions; case 5.6 applies that split to a system in a flow. | These distinctions help formulate separate participation, causation and change claims. Event mereology still requires its own construction basis. Identify one `U.Transformation` at the resolution needed by the use; open participation, causation, work, or representation only through the pattern for that claim. |
+| Borgo and Righetti, ["Towards Applied Constructional Ontology"](https://doi.org/10.3233/FAIA250480), 2025, argues that applied constructional ontology still requires explicit choices about mereology, dependence, identity, and application concerns. | A.3.4:4.2 and the PumpSkid case 5.7 independently identify the local changes, reject composition by timing or representation, and return the missing basis for a positive composition claim. | Temporal inclusion, graph adjacency, a shared referent, a construction label, or a selected structure supplies neither transformation composition nor part identity. |
 
 ### A.3.4:12 - Relations
 

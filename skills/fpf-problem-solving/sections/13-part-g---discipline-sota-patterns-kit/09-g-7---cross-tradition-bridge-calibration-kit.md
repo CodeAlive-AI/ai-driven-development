@@ -6,28 +6,28 @@
 **Stage.** design‑time (calibration + publication) + run‑time (sentinel‑driven telemetry emission; orchestration governed by **G.11**)
 **Start here.** Name the correspondence to be calibrated and the question of the receiving use, if one is already known. Recover its exact endpoints and governing relation, then state the evidence, preserved distinctions and losses. The first useful result is a bounded calibration statement; its suitability for a receiving use requires that use’s own rule, loss tolerance and reliance. Add the kit fields below when calibrated values or published, refreshable calibration records are needed. For a bounded reuse needing neither, follow the correspondence’s direct rule instead (F.9 for senses, C.3.3 for kinds, or the named plane rule).
 **Primary output.** A calibration kit with a `BridgeCalibrationTable (BCT)`, `CalibrationLedger`, `RegressionSet` and `SentinelSet`. Each row cites the actual sense, kind or plane correspondence being calibrated. F.9 rows carry BridgeCards; public naming and real flow/gate crossings add their required UTS or bundle anchors. Sentinel triggers carry the affected references and live scope.
-**Primary hooks.** `G.Core` (Part‑G invariants + RSCR trigger catalogue + Default Governing Definition Index), **G.2** (BridgeMatrix), **F.9** (BridgeCard + CL), **C.3.3** (KindBridge + CL^k when the kind channel is used), **F.3** (source-local sense clustering), **F.17** (SenseCell anchoring), **F.7** (source-local comparison display), **E.18/A.21** (GateCrossing + CrossingBundle checks), **G.6** (PathId/PathSliceId citation surface), **G.5** (downstream consumer for eligibility/selection), **G.11** (refresh orchestration consumer), **B.3** (assurance lanes + penalty policies), **C.21** (DHC accounts such as AlignmentDensity), **C.18 and C.19** (QD/OEE pins when relevant), **C.23** (SoS‑LOG clauses as explainability gates for cross‑Tradition choices), **G.4** (Acceptance hooks/thresholds when bridges are used as selector gates), **E.10** (LEX / strict distinction discipline).
+
 **Working‑Model first.** Prefer a minimal, auditable calibration procedure and worked micro‑cases; escalate to heavier harnesses only where risk warrants (per **E.8**).
-**Non‑duplication note.** Universal Part‑G invariants (no shadow specs; Bridge‑only crossings; penalty routing to `R_eff` only; P2W split; typed/id‑based RSCR causes; defaults with one governing definition; Δ‑discipline) are governed by `G.Core` and are *cited* via `CC‑GCORE‑*`. This pattern defines only the *bridge calibration kit* and its surfaces.
+
 
 ### G.7:1 - Problem frame
 
 SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **BridgeMatrix**: a Tradition×Tradition inventory of “comparable constructs” with preliminary notes (candidate correspondences, likely losses, tentative levels). When the receiving use requires calibrated cross‑Context reuse, downstream patterns (CHR/CAL/selector/logging/shipping) must ensure that the reuse is:
 
 * **recoverable** through the actual correspondence and its source basis, including BridgeCards for F.9 rows,
-* **calibrated** with a small, auditable procedure (so CL/CL^k/plane routing is not a narrative),
+* **calibrated** with a small procedure whose evidence and conditions are inspectable,
 * **published** with the anchors required by the receiving use; UTS and E.18/A.21 harnesses apply to their actual public names and flow/gate crossings,
-* **refreshable** in a *targeted* way (path‑scoped RSCR rather than whole‑pack reruns).
+* **refreshable** through the uses that depend on changed calibration, with path-scoped RSCR where paths are used.
 
 `G.7` packages this into a kit: `BCT` + applicable correspondence references + `RegressionSet`/`SentinelSet` wiring, so that later patterns can satisfy core invariants without re‑inventing cross‑Tradition machinery.
 
 ### G.7:2 - Problem
 
-1. Cross‑Tradition comparisons are frequently attempted via informal “synonymy” or ad‑hoc mappings, causing silent meaning drift and hidden crossings.
-2. Plane mismatches (world ↔ concept ↔ episteme, or other `ReferencePlane` shifts) are often ignored, or conflated with “semantic sameness”, causing wrong downstream confidence.
-3. Calibration changes (CL/CL^k/plane or their policy pins) must trigger **targeted** re‑checks; pack‑wide reweaves are too costly and too slow.
+1. Cross-Tradition comparison through informal “synonymy” or an unspecified mapping can hide meaning drift and the relation actually needed.
+2. An unexamined plane mismatch (world ↔ concept ↔ episteme, or another `ReferencePlane` shift) can support an unwarranted downstream confidence claim.
+3. Calibration changes (CL/CL^k/plane or their policy pins) require rechecks of the uses that depend on them. Unrelated pack contents retain their existing basis.
 4. If bridges are involved in QD/illumination or other edition‑sensitive telemetry, **edition pins** must be tracked (otherwise comparisons become irreproducible after a map/distance/policy update).
-5. Row‑level summaries (for matrix rows / comparable construct groups) tend to be averaged or “smoothed”, which is incompatible with bottleneck semantics and loss honesty.
+5. Averaging ordinal row values is inadmissible; even a lawful summary can hide a loss needed by a receiving task. Preserve the cell evidence and use only a summary justified for the stated calibration question.
 
 ### G.7:3 - Forces
 
@@ -35,7 +35,7 @@ SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **Br
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Comparability vs local authority**     | Enable comparisons across Traditions ↔ avoid overriding Context‑local meaning.                                                                                            |
 | **Auditability vs authoring throughput** | Require explicit artefacts, losses, and pins ↔ keep the calibration procedure light enough to be used.                                                                    |
-| **Targeted refresh vs safety**           | Emit path‑local RSCR triggers ↔ ensure triggers are typed and carry enough payload pins for audit and rerun planning.                                                     |
+| **Targeted refresh vs safety**           | Emit scope-specific RSCR triggers ↔ retain the typed causes and payload needed for audit and planning further work.                                                     |
 | **Plane awareness vs “one story”**       | Explicitly surface `ReferencePlane` and plane penalties ↔ avoid turning plane discussion into a second semantics of “sameness”.                                           |
 | **QD comparability vs metric drift**     | Enable cross‑context reporting of archive/illumination telemetry ↔ enforce edition‑aware pins for descriptor/distance/policies only when those modes are actually in use. |
 
@@ -43,7 +43,7 @@ SoTA synthesis (**G.2**) can legitimately preserve pluralism by exporting a **Br
 
 #### G.7:4.1 - G.Core linkage (normative)
 
-**Builds on:** `G.Core` (Part‑G core invariants; citation/delegation hub)
+**Builds on:** `G.Core` (Part-G core invariants)
 
 **GCoreLinkageManifest (normative).**
 
@@ -157,9 +157,9 @@ payloadPins: { BCT.id, RegressionSetId, FreshnessWindowRef, affected RowEntryId[
 
 `SentinelSet := ⟨ SentinelSetId, BridgeSentinel[] ⟩`
 
-#### G.7:4.3 - Minimal calibration procedure (auditable; table‑backed; bridge‑first)
+#### G.7:4.3 - Minimal calibration procedure
 
-For each Tradition‑pair and each comparable construct row from **G.2**:
+For each correspondence selected for calibration, grouped by Tradition pair and comparable construct:
 
 1. **Recover the correspondence being calibrated.** For an F.9 row, resolve the exact F.17 sense cells and profile, then produce or reuse its BridgeCard. A kind-channel row cites the C.3.3 kind endpoints and assertion; a plane row cites its own relation and rule. A coarser source label must be resolved to those actual endpoints before calibration.
 2. **Record row scope and losses.** Author a `RowScopeId` and record loss notes as first‑class citations (e.g., `LossNoteRef[]`), not as informal footnotes.
@@ -179,7 +179,7 @@ A conformant G.7 publication:
 * emits RSCR triggers using canonical `RSCRTriggerKindId` and attaches the minimum payload pins listed in §4.1.
 * keeps SCR/Evidence citations complete for their actual use: include the row locator, exact correspondence basis and `{BCT.id, RegressionSetId}`, plus the policy/model pins actually consumed by the reliance or assurance claim. Representation follows G.6/SCR when that surface is used.
 
-#### G.7:4.5 - Worked mini‑examples (informative; post‑2015; row scopes + loss notes)
+#### G.7:4.5 - Worked mini-examples (row scopes and loss notes)
 
 > These worked rows use illustrative calibration values and source scopes. Actual calibration needs its stated evidence. Each receiving use still has a separate rule and loss tolerance.
 
@@ -190,7 +190,7 @@ A conformant G.7 publication:
    *Proposed use:* a didactic comparison of objective intent. Its separate claim must limit the comparison to that intent and retain the listed differences; method eligibility and acceptance require their own rule.
 
 2. **Robustness evaluation (Measurement; RowScope = “metric‑family‑intent”).**
-   *Cells:* `Accuracy@IID` ↔ `Robustness@ShiftBench` (e.g., distribution‑shift benchmarks common in post‑2019 practice)
+   *Cells:* `Accuracy@IID` ↔ `Robustness@ShiftBench` (for example, a declared distribution-shift benchmark)
    *RowCL_min:* 2
    *Loss notes:* shift taxonomy differs; comparability depends on pinned protocol editions and window selection; “robustness” is not a scalar substitute for accuracy.
 
@@ -201,7 +201,7 @@ A conformant G.7 publication:
    *Proposed use:* cross-reporting only the named descriptor-map relation under explicit edition pins and an affirmative bounded-use claim with passing reliance. Edition pins alone do not make the telemetry comparable.
 
 4. **Open‑ended transfer semantics (Method; RowScope = “transfer‑rule intent”).**
-   *Cells:* `POET‑class transfer rule` ↔ `Enhanced‑POET‑class transfer rule` ↔ “modern open‑ended transfer variants”
+   *Cells:* `POET-class transfer rule` ↔ `Enhanced-POET-class transfer rule`
    *RowCL_min:* 2
    *Loss notes:* environment validity region differs; transfer timing and selection pressures differ; pinning transfer rule editions is mandatory for audit.
 
@@ -322,16 +322,15 @@ In C.3.3 §9.3's AdultPatient/AdultPerson_Y case, the age-boundary loss and `CL^
 
 ### G.7:5 - Archetypal Grounding (System / Episteme)
 
-**System case:** *Cross-standard comparison of safety claims about one physical system (bridge-first).*
-A team must compare a safety assurance claim across two regulatory Traditions (e.g., a “functional safety case” tradition and a “ML system testing” tradition) for the *same physical system scope*. `G.7` forces explicit SenseCell‑level bridges (what exactly is the “hazard”, what is the “evidence carrier”, what is the “pass criterion”), records losses, pins planes, and provides sentinels so that changes in the safety evidence protocol editions trigger path‑local RSCR rather than re‑authoring the entire safety case.
+**System case:** *Cross-standard comparison of safety claims about one physical system.*
+A team must compare a safety assurance claim across two regulatory Traditions (e.g., a “functional safety case” tradition and a “ML system testing” tradition) for the *same physical system scope*. Where “hazard”, “evidence carrier” or “pass criterion” has distinct source-local meanings, the team establishes the corresponding F.9 relations and uses G.7 to calibrate them. It records losses and any plane relation actually consumed, then watches the affected uses so a protocol-edition change reopens their dependent claims under G.11.
 
-**Episteme case:** *Benchmark protocol pluralism (post-2015 evaluation practice).*
-A research group wants to compare “state‑of‑the‑art” across multiple evaluation Traditions (IID performance, shift robustness, preference‑based evaluation). `G.7` turns “these are comparable” into explicit BridgeCards with declared row scope, pins the evaluation protocol editions, and registers sentinels so that when a benchmark protocol or policy pin changes, downstream selector decisions can be re‑audited by replaying the affected PathSlice‑scoped evidence.
+**Episteme case:** *Benchmark protocol pluralism.*
+A research group wants to compare “state‑of‑the‑art” across multiple evaluation Traditions (IID performance, shift robustness, preference‑based evaluation). For each actual correspondence needed by that comparison, G.7 records the calibrated scope, preserved distinctions and losses, with BridgeCards for F.9 rows. Protocol-edition pins and sentinels identify affected selector uses when a protocol or policy changes; G.11 governs their reconsideration.
 
 ### G.7:6 - Bias‑Annotation
 
-Bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**.
-Scope: Universal for the bridge calibration kit; any method‑family or discipline‑specific calibration technique is modularized as `GPatternExtension` and cited to its governing patterns.
+A favourable calibration summary can hide a missing distinction required by the receiving task. Keep the calibration basis and that task’s premises separate, as in §4.5’s paired transport and battery-health uses.
 
 ### G.7:7 - Conformance Checklist (normative) — **CC‑G7**
 
@@ -349,29 +348,29 @@ Scope: Universal for the bridge calibration kit; any method‑family or discipli
 | **CC‑G7‑RowBottleneck‑1** | A minimum summarizes only a non-empty cell set sharing the declared ordinal scale and calibration question. Keep the constituent evidence and losses; otherwise report separate results or the gap. | Avoid averaging ordinal evidence or treating its minimum as a use decision. |
 | **CC‑G7‑PolicyPins‑1**    | G.7 outputs **MUST** publish the *policy id pins* required to audit penalty routing and plane effects (ids only), as required by `CC‑GCORE‑LINK‑1/2` and `CC‑GCORE‑PEN‑1`. G.7 MUST NOT duplicate policy tables or redefine penalty semantics.                                           | Keep penalty routing auditable while preserving single‑governing-pattern policy semantics. |
 | **CC‑G7‑GateCrossing‑1** | An independently governed E.18 flow crossing or A.21 gate that consumes calibration MUST retain its required harness, pins, lexical constraints and lane checks. A calibration relation alone is not that flow crossing or gate. | Make actual crossings and gates checkable. |
-| **CC‑G7‑Sentinels‑1**     | G.7 **MUST** register `BridgeSentinel` entries for bridges used by live scopes and **MUST** emit typed RSCR triggers (canonical `RSCRTriggerKindId`; see `CC‑GCORE‑TRIG‑1…TRIG‑4`) on calibration‑relevant edits, scoped to the watched `PathSliceId[]` or `PatternScopeId[]`, with the minimum payload pins from §4.1. | Enable targeted refresh rather than pack‑wide reruns.                          |
+| **CC‑G7‑Sentinels‑1**     | G.7 **MUST** register `BridgeSentinel` entries for bridges used by live scopes and **MUST** emit typed RSCR triggers (canonical `RSCRTriggerKindId`; see `CC‑GCORE‑TRIG‑1…TRIG‑4`) on calibration‑relevant edits, scoped to the watched `PathSliceId[]` or `PatternScopeId[]`, with the minimum payload pins from §4.1. | Identify the uses affected by a calibration change.                          |
 | **CC‑G7‑QD‑Pins‑1**       | When `G.7:Ext.QDParityPins` is in use, G.7 outputs **MUST** include `{DescriptorMapRef.edition, DistanceDefRef.edition, InsertionPolicyRef}` and treat any change to those pins as RSCR‑relevant per `CC‑GCORE‑TRIG‑1…TRIG‑4`.                                                          | Prevent silent QD telemetry drift.                                             |
 | **CC‑G7‑DHC‑Units‑1** | When AlignmentDensity is reported, G.7 outputs **MUST** count the exact obtaining directed F.9 relations in the declared F.17 cell set under C.21, include the declared units, and cite the active DHC method and replay basis. Related DHC accounts use their own exact C.21 definitions. CL labels grant no substitution and do not redefine the counted relation set; G.7 MUST NOT invent arithmetic over ordinal or otherwise inadmissible surfaces. | Keep dashboards and discipline-health readings faithful to their measurement definitions and bounded-use claims. |
 
 ### G.7:8 - Common Anti-Patterns and How to Avoid Them
 
 * **Bridge‑by‑prose (“they have the same sense”).**
-  **Avoid:** publish BCT rows + BridgeCards + UTS rows; require SenseCell anchoring and row scopes.
+  **Avoid:** establish the exact sense relation and its endpoints, then cite its calibration basis and row scope. Publish BridgeCards and UTS rows under their applicable kit and naming rules.
 * **Scope or sense relation used as a kind bridge.**
   **Avoid:** state the channel in `RowScopeId` and use its direct governor. A C.3.3 correspondence needs its kind endpoints and separate receiving classification; cite CL^k and any loss policy only when that calibration or reliance account uses them.
 * **Plane blindness (“concept = world”).**
-  **Avoid:** record plane pins and policy id pins; keep plane effects auditable and separable from CL/CL^k semantics.
+  **Avoid:** identify the actual plane relation, its rule and evidence; record policy pins when that use consumes them, keeping plane effects separate from CL/CL^k semantics.
 * **CL smoothing / averaging.**
   **Avoid:** establish the common scale and calibration question before taking a minimum; retain actual counterexamples and losses, and keep the receiving decision separate.
 * **Pack‑wide refresh on a local bridge edit.**
-  **Avoid:** register sentinels scoped to `PathSliceId` and emit typed RSCR triggers with minimal payload pins.
+  **Avoid:** register sentinels for the watched path or pattern scopes and emit typed RSCR triggers with the changed basis and affected-use scope. G.11 follows the actual dependencies.
 * **QD metric drift by unpinned artefacts.**
   **Avoid:** enable `G.7:Ext.QDParityPins` only when needed and require edition/policy pins when enabled.
 
 ### G.7:9 - Consequences
 
 * **Auditable pluralism.** Cross‑Tradition reuse becomes explicit, loss‑aware, and checkable.
-* **Targeted, edition‑aware refresh.** Calibration drift triggers path‑scoped RSCR rather than expensive global reruns.
+* **Targeted, edition-aware refresh.** Calibration drift identifies the dependent uses to reconsider, including path-scoped RSCR where paths are used.
 * **Downstream cleanliness.** Selectors/logging/shipping can cite bridges and policy pins without inventing local crossing rules or shadow specs.
 
 ### G.7:10 - Rationale
@@ -382,15 +381,15 @@ Scope: Universal for the bridge calibration kit; any method‑family or discipli
 
 ### G.7:11 - SoTA-Echoing — calibrate a correspondence for its receiving use
 
-**Practice question.** When a correspondence has a favourable calibration, what must an engineer check before reusing it for a different task? The selected best-known line for this question keeps the exact relation, its justification and source versions recoverable, then tests the receiving task's required distinctions. The serious alternative is to select an alignment by its reference-benchmark score and carry that favourable score into downstream use.
+**Practice question.** When a correspondence has a favourable calibration, what must an engineer check before reusing it for a different task? The adopted line for this question keeps the exact relation, its justification and source versions recoverable, then tests the receiving task's required distinctions. A benchmark-based alternative selects an alignment by its reference-benchmark score and carries that favourable score into downstream use.
 
 [SSSOM 1.0's mapping model](https://mapping-commons.github.io/sssom/1.0/spec-model/) supplies the first line's concrete separation of endpoints, relation predicate and justification. Its [mapping FAQ](https://mapping-commons.github.io/sssom/1.0/faq/) distinguishes relation precision from confidence and explains why source versions and justification matter. **Adopt** that separation for the BCT row's exact correspondence and calibration basis in §4.2. These sources address exchangeable ontology mappings; they do not establish an F.9 Bridge, a C.3.3 classification or permission for an FPF receiving use.
 
-The [OAEI 2025 Conference evaluation](https://oaei.ontologymatching.org/2025/results/conference/eval.html) is the serious benchmark comparator: its precision/recall measures assess generated correspondences against stated reference alignments and populations. That is useful for choosing a matcher on that question. **Reject** carrying its aggregate success, or one CL value, as a substitute for a different task's premises. This is a limit of the inference, not a claim that OAEI promises such transfer.
+The [OAEI 2025 Conference evaluation](https://oaei.ontologymatching.org/2025/results/conference/eval.html) provides the benchmark comparator: its precision/recall measures assess generated correspondences against stated reference alignments and populations. That is useful for choosing a matcher on that question. **Reject** carrying its aggregate success, or one CL value, as a substitute for a different task's premises. This is a limit of the inference, not a claim that OAEI promises such transfer.
 
 **Adapt** the mapping-and-justification line in §4.2.1 and procedure steps 2/6: retain direction, scope and losses, and use a small regression pair whose required distinction changes. In §4.5, VehicleTransportOrder can retain passenger/transport order while losing battery information. The same calibrated relation can therefore support the stated transport comparison and fail the battery-health question. Keeping that distinction prevents a concrete erroneous use that a single favourable summary cannot detect.
 
-At comparable effort, both alternatives start with the same relation row and existing calibration evidence. The selected line adds one named use condition and the smallest counterexample or regression pair that can change the answer. That is extra effort deliberately accepted for reuse across task boundaries; ordinary one-off correspondence handling remains with F.9 when a calibration kit adds no value. SSSOM and OAEI provide the compared technical approaches, not empirical validation of this kit. Reopen when a new receiver needs a distinction outside the row's stated preservation/loss basis, or when a cheaper rule can distinguish those same allowed and failed uses with equivalent support.
+At comparable effort, both alternatives start with the same relation row and existing calibration evidence. The selected line adds one named use condition and the smallest counterexample or regression pair that can change the answer. That is extra effort deliberately accepted for reuse across task boundaries; ordinary one-off correspondence handling remains with its direct sense, kind or plane rule when a calibration kit adds no value. SSSOM and OAEI provide the compared technical approaches, not empirical validation of this kit. Reopen when a new receiver needs a distinction outside the row's stated preservation/loss basis, or when a cheaper rule can distinguish those same allowed and failed uses with equivalent support.
 
 ### G.7:12 - Relations
 

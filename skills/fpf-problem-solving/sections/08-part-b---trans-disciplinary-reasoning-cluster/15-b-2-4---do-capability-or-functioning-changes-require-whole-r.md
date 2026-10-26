@@ -6,20 +6,20 @@
 
 ### B.2.4:0 - Use This When
 
-Use this pattern when exact capability, functioning, or transformation-flow facts, already established under their subject patterns, make a B.2 whole-reidentification question live.
+Use this pattern when capability, functioning, or transformation-flow facts, established under their subject patterns, raise a B.2 whole-reidentification question.
 
-The first useful question is whether those facts can still be explained by the existing whole. If they can, keep that whole and use the direct pattern for the capability, functioning relation, transformation, Method, Work, module, characteristic, or architecture claim. If they cannot, use B.2 for the residual question. Evidence and measurement separately support, challenge, or leave unresolved the claims about those facts; they create neither the facts nor B.2 selection.
+The first useful question is whether those facts can still be explained by the existing whole. If they can, keep that whole and use the direct pattern for the capability, functioning relation, transformation, Method, Work, module, characteristic, or architecture claim. If they cannot, use B.2 for the residual question. Evidence and measurement support, challenge, or leave unresolved the claims about those facts. Use the supported facts in B.2's comparison of the existing and candidate wholes.
 
 **What goes wrong if missed.** A genuine new whole is hidden under ordinary capability improvement; or every impressive capability, function, method chain, module allocation, or metric gain is overclaimed as emergence.
 
-**What this buys.** The pattern keeps capability and functioning facts available to B.2 while preserving the separate evidence relation and preventing B.2.4 from becoming a generic capability, function, method, work, module, or emergence pattern.
+**What this buys.** The practitioner can distinguish a change within an existing whole from a capability or functioning change that requires testing a new whole.
 
 **Not this pattern when.**
 
 - If the claim is ordinary capability, use `A.2.2`; use `C.16` for its measured-characteristic claims.
 - If function-like wording hides the exact claim, use `A.6.F` to recover its direct subject pattern; an already precise functioning claim returns directly to that pattern.
 - If the claim is transformation or transformation-flow structure, use `A.3.4` or `E.18` respectively; use `C.30.TFS-REL` for the selected structure's bounded architecture use.
-- If the claim is method, method relation, method description, work plan, or work occurrence, use `A.15`, `A.3.1`, `A.3.2`, `A.15.2`, and `A.15.1`.
+- Use `A.3.1` for Method identity, `B.1.5` for Method composition, `A.3.2` for a MethodDescription, `A.15.2` for a WorkPlan, and `A.15.1` for a Work occurrence; `A.15` aligns roles, Methods, and Work.
 - If bearer allocation is the question, use the direct allocation or parthood pattern. Use `A.6.M` only for unresolved module/interface wording, and `C.30`, `A.22` or `C.30.ASV` only for the current architecture, selected-structure or architectural-view claim.
 - If the claim is measurement, threshold, score, robustness, quality, or a whole-level characteristic, use `C.16` and `A.19` for that claim and `A.10` only when evidence use is current.
 - If the wording is ambiguous emergence, synergy, or title-mnemonic language, use `B.2.P` before selecting B.2.4.
@@ -32,10 +32,10 @@ B.2.4 is the narrow B.2 specialization for cases where exact capability, functio
 
 ### B.2.4:2 - Problem
 
-Without this specialization:
+Confusing capability and whole identity produces these errors:
 
 1. **Capability becomes generic emergence.** A threshold crossing or new envelope is treated as a new whole without B.2 checks.
-2. **Function becomes ontology.** Function-like wording creates `U.Function` or a hidden peer kind.
+2. **Function wording hides the claim.** A function label substitutes for identifying the obtaining relation and its participants.
 3. **Method and work collapse.** The way of doing, description of doing, planned work, and performed work are compressed into one vague operational claim.
 4. **Module allocation becomes functional truth.** A module label is treated as evidence for the required behavior or selected structure.
 5. **Transformation-flow description replaces in-life structure.** A graph, diagram, or publication of a flow is treated as the flow structure or whole.
@@ -53,7 +53,7 @@ Without this specialization:
 
 ### B.2.4:4 - Solution
 
-Use B.2.4 as a decision bridge from direct capability and functioning facts to B.2 whole reidentification. Add no generic slice, context placeholder, candidate-bearer list, or second B.2 record.
+Use the capability and functioning facts to decide whether B.2 whole reidentification is needed.
 
 #### B.2.4:4.1 - Start From Exact Facts, Claims, And Support
 
@@ -63,7 +63,7 @@ Use B.2.4 as a decision bridge from direct capability and functioning facts to B
 4. Perform B.2's ordinary existing-whole comparison. Better measurement, component improvement, Method or Work repair, allocation repair, or architecture-view repair can leave the same whole in place.
 5. If a residual whole-reidentification question remains, use B.2 for it. B.2 then identifies one exact candidate new whole, applies the complete A.1 and kind-specific criteria, and compares that candidate with the existing whole.
 
-B.2.4 adds no result species. If a receiving use needs a durable account, use B.2's optional C.2.1 epistemes; their content neither creates the direct facts nor selects the new whole.
+If a receiving use needs a durable account, use B.2's optional C.2.1 epistemes to state the facts, comparison, and supported conclusion.
 
 #### B.2.4:4.2 - Subject-Pattern Test
 
@@ -107,7 +107,7 @@ Use B.2 when the exact direct facts show that the existing whole cannot carry th
 - exact coordination and work facts concerning a team, a toolchain, and the enacted Methods from a method family make a result-system candidate live; or
 - a candidate episteme has exact constitution and explanatory-use facts that leave an episteme whole-reidentification question.
 
-After the return, use B.2 for the existing-whole/new-whole comparison, its one exact candidate, and any optional record. B.2.4 adds no result record or evidence slice. The direct patterns still define and test the contributing facts, while evidence or measurement supports the associated claims.
+Use B.2 to compare the existing whole with one candidate and, when needed, record the result. The subject patterns define and test the contributing facts; evidence and measurement support the associated claims.
 
 ### B.2.4:5 - Archetypal Grounding (Worked Cases)
 
@@ -143,7 +143,7 @@ A new theory may explain phenomena that the source portfolio did not explain. Us
 | --- | --- |
 | `CC-B2.4-1` | B.2.4 is used only when exact capability, functioning, or selected in-life transformation-flow facts leave a B.2 whole-reidentification question after subject-pattern explanations are tested. |
 | `CC-B2.4-2` | Ordinary capability, function, functioning, transformation, method, work, module, characteristic, evidence, and architecture claims return to subject patterns. |
-| `CC-B2.4-3` | No generic `U.Emergence`, `U.Function`, `U.MetaMethod`, or capability-root kind is created. |
+| `CC-B2.4-3` | A capability or function label does not substitute for the subject-pattern facts or B.2 whole comparison. |
 | `CC-B2.4-4` | Method, method description, work plan, and work occurrence remain separate. |
 | `CC-B2.4-5` | Mathematical or publication descriptions of transformation-flow structure do not replace the in-life structure. |
 | `CC-B2.4-6` | If B.2 remains current, it handles the one exact candidate new whole, complete recognition, whole comparison, and any optional record; B.2.4 introduces no result species. |
@@ -176,7 +176,7 @@ Costs:
 
 Capabilities and functioning relations are often where a new-whole question first becomes visible. Their direct facts, not the availability of supporting evidence, determine whether the existing-whole explanation still works.
 
-B.2.4 keeps this mixed situation disciplined. It does not rename the capability, functioning, transformation flow, method, work, allocation, measurement, or support as "meta-function". It asks whether the exact direct facts defeat the existing-whole explanation and, only then, requires B.2 for the residual question.
+B.2.4 asks whether those facts defeat the existing-whole explanation and, only then, uses B.2 for the residual question. This keeps local capability improvement available without overlooking a change of whole.
 
 ### B.2.4:10 - SoTA-Echoing
 

@@ -5,8 +5,6 @@
 > **Status:** Stable
 >
 > **Plain name:** recover what “learning” means here
->
-> **Placement:** Part E, under `E.10` and `E.10.ARCH`
 
 ### E.10.LRN:0 - Use This When
 
@@ -22,7 +20,7 @@ Use this pattern when claim-bearing wording says *learn*, *learning*, *learned*,
 
 ### E.10.LRN:1 - Problem Frame
 
-The same word family is used for importantly different situations:
+The same word family is used for different situations:
 
 - a person inquires, notices, remembers, or reorganizes an episteme;
 - another System performs teaching, coaching, demonstration, or feedback Work;
@@ -41,7 +39,7 @@ These uses can occur together without becoming one process. A teacher can teach 
 
 When the umbrella word remains load-bearing, authors silently transfer evidence and conclusions across subjects. A lesson becomes a capability; an artifact becomes proof of authorship or transfer; benchmark improvement becomes generalization; information gain becomes competence gain; model fitting becomes inference; an organizational slogan becomes changed practice; and a repeated pattern becomes a universal atom of knowledge.
 
-The repair must preserve familiar language while preventing those transfers. It must also stay thin: the direct subject patterns, not this wording pattern, define capabilities, Work, Methods, epistemes, evidence, models, representations, cultures, and decisions.
+The repair must preserve familiar language while preventing those transfers. The direct subject patterns define capabilities, Work, Methods, epistemes, evidence, models, representations, cultures, and decisions; this pattern recovers the claim to which they apply.
 
 ### E.10.LRN:3 - Forces
 
@@ -49,7 +47,7 @@ The repair must preserve familiar language while preventing those transfers. It 
 | --- | --- |
 | Useful umbrella vs distinct subjects | Ordinary language needs *learning*; action-bearing claims need the exact changed subject and result. |
 | Occurrence vs outcome | Teaching or training Work can occur without establishing the intended capability or generalization result. |
-| Human and machine cases | Wet and dry substrates can implement several different operations; substrate material does not classify the claim. |
+| Human and machine cases | Biological and computing substrates can support different operations; substrate alone does not classify the claim. |
 | Internal change vs inspectable construction | An external artifact or performance can expose reasoning without proving capability, authorship, transfer, or retention. |
 | Source fidelity vs FPF ontology | A paper may deliberately use one label across several quantities; FPF preserves that quotation while recovering distinct claims for use. |
 | Precision vs paperwork | One local rewrite should suffice when no durable recovery record is needed. |
@@ -137,7 +135,7 @@ An active-learning policy chooses a query or observation because its expected re
 
 #### E.10.LRN:5.5 - Public construction
 
-A participant builds and explains a working pump simulation. The artifact and explanation make some model choices inspectable. Assessment Work may use them as evidence for bounded claims. Independent diagnosis of a changed pump configuration is a different representative task; only direct evidence from that task can support the corresponding transfer or capability claim.
+A participant builds and explains a working pump simulation. The artifact and explanation make some model choices inspectable. Assessment Work may use them as evidence for bounded claims. Independent diagnosis of a changed pump configuration is a different representative task. Test it under its declared support conditions and use the resulting evidence for a bounded transfer or capability claim.
 
 #### E.10.LRN:5.6 - Organizational learning
 
@@ -147,7 +145,7 @@ An organization publishes a “lessons learned” report. Publication establishe
 
 - **Human-default bias:** do not assume every use concerns a person's capability.
 - **Machine-anthropomorphism bias:** do not translate model fitting into human cognition or agency.
-- **Substrate bias:** wet and dry neural networks can participate in several kinds of Work and result; material substrate does not choose the branch.
+- **Substrate bias:** biological and computing substrates can support several kinds of Work and result; substrate does not choose the branch.
 - **Artifact bias:** public construction improves inspectability but does not prove authorship, capability, or transfer.
 - **English-grammar bias:** active/passive voice and English lexical convention do not establish causal structure.
 - **Metric bias:** a changed score or loss does not identify which subject changed or which stronger claim it supports.
@@ -186,7 +184,7 @@ Reopen this pattern when a recurring claim-bearing use cannot reach one direct s
 
 ### E.10.LRN:10 - Rationale
 
-The recurring transdisciplinary problem is lexical recovery, not a common learning substance. A stable thin action survives across the unlike cases: recover who or what changed, separate Work and Method from result, state evidence and any action-changing transfer boundary, split unlike claims, and route each claim to its owner. That action changes practice while leaving every substantive ontology and Method with its direct pattern.
+The recurring transdisciplinary problem is lexical recovery, not a common learning substance. The same bounded action applies across these cases: recover who or what changed, separate Work and Method from result, state evidence and any action-changing transfer boundary, split unlike claims, and route each claim to its owner. That action changes practice while leaving every substantive ontology and Method with its direct pattern.
 
 This also explains the UTS decision. Familiar spelling is insufficient for one `UnifiedTermRow`. A durable public row is considered only for an independently governed value after its own naming and use tests; the umbrella word creates neither that value nor a Bridge among the branches.
 

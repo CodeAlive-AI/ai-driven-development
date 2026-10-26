@@ -2,18 +2,18 @@
 
 FPF assumes an open world. New evidence can arrive. A better mathematical model may appear. A source publication, source-use record, or telemetry relation may become stale. A competitor may change the state of the art. A user need may shift. A new concern may reveal that the same system should be described differently.
 
-Engineering and management still need local closure. A bridge cannot wait for all possible facts. A gate decision cannot cite the entire universe. A release, experiment, procurement, safety case, or architecture review therefore defines what counts as sufficient for the next action.
+Engineering and management still need local closure: for a release, experiment, procurement, safety case or architecture review, establish what evidence and conditions are sufficient for the next action.
 
-The old open-world versus closed-world distinction is a useful didactic picture. In an open world, absence of proof is not proof of absence. If a name is missing from a party guest list, the list may be incomplete. In a locally closed operational world, absence from the accepted manifest matters. If a name is missing from the aircraft manifest, the airline acts as if that passenger is not on the flight.
+The open-world versus closed-world distinction provides a useful picture. Under open-world reasoning, absence of proof is not proof of absence. If a name is missing from a party guest list, the list may be incomplete. By contrast, a comparison can deliberately close over an accepted option set: an unlisted option is not compared in that bounded decision.
 
-FPF does not transform the open world into a closed one. It lets a project build small closed worlds for declared purposes:
+FPF supports local closure for declared purposes:
 
-- the exact source, scope, model-use organization, working situation, comparison basis, or other subject-defined boundary states what is current for this decision;
-- an EntityOfConcern states what project entity the reasoning is about;
-- a description states what can be relied on and under what relation;
-- evidence and assurance state what claim is credible enough for the local use;
-- a gate or decision states what boundary is crossed;
-- a reopen condition states when local closure is no longer enough.
+- identify the source, scope, model-use organization, working situation, comparison basis or other subject-defined conditions needed for this decision;
+- name the project entity that the reasoning concerns: the EntityOfConcern;
+- state the proposed reliance and its conditions in the description;
+- qualify the claim’s support using the evidence and assurance required for the local use;
+- state the decision or gate result under its applicable rule;
+- state when the conclusion must be reconsidered.
 
 This is why FPF patterns often look strict. The strictness is local. It lets a project act while keeping the wider world open. A local closure is not a claim that nothing else exists. It is a declared scope for responsible action.
 

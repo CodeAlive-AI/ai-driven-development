@@ -6,11 +6,11 @@
 
 **Plain-name.** Language-state representation-factor bundle.
 
-**Use this pattern when.** Use C.2.7 when a governed `U.Episteme` publication needs to describe how its representation is organized through locality/distribution, sparsity/density, symbolicity/subsymbolicity, or an explicit local factor bundle.
+**Use this pattern when.** Use C.2.7 when a comparison or use depends on how an episteme is represented: the distribution of its code, its sparsity or its symbolic structure. Identify the representation and the units being assessed. An ordinary description can suffice when the receiving use needs no factor-bundle claim.
 
 **What goes wrong if missed.** One representation label such as `symbolic`, `distributed`, or `encoding basis` starts doing too much work: it hides articulation, closure, anchoring, bridge loss, or comparison assumptions.
 
-**What this buys.** A factor-bundle account of representation that keeps representation organization separate from anchoring, articulation, closure, evidence, carrier, and admissible-use claims.
+**What this buys.** A comparison of representation factors on explicit bases, without deriving articulation, closure or anchoring from a single label.
 
 ### C.2.7:1 - Problem frame
 Published position claims in the declared language-state chart over `U.CharacteristicSpace` must keep representation factors such as locality, sparsity, and symbolicity distinct.
@@ -32,11 +32,11 @@ Using `EncodingBasis` without its underlying factors collapses several independe
 - `U.Sparsity`
 - `U.Symbolicity`
 
-Authors may publish a local alias such as `EncodingBasis`, but it shall dock back to the underlying factor bundle instead of replacing it.
+A local alias such as `EncodingBasis` shall identify the factors and readings it summarizes.
 
 #### C.2.7:4.0a - Kind and factor-bundle boundary
 
-`U.LanguageStateRepresentationFactorBundle` is a dependent durable factor-bundle value under the declared `U.LanguageStateSpace` / `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the bundle of representation factors used for governed episteme publication positions. Individual factors, aliases, dashboards, model probes, or publication forms do not become separate U-kinds unless another governing pattern admits them.
+`U.LanguageStateRepresentationFactorBundle` groups readings of distinct representation Characteristics. Each factor needs its own meaning and Scale, and the declared chart binds these under A.18/A.19. The bundle describes the representation identified in the position claim; a factor reading is distinct from that representation or its publication form.
 
 #### C.2.7:4.1 - Minimal factor readings
 | Factor | Question it answers | Typical values |
@@ -55,14 +55,7 @@ When the list travels separately, supply the unit order and decoding rule needed
 
 #### C.2.7:4.2 - Non-collapse rules
 
-`LanguageStateRepresentationFactorBundle` is not:
-
-- `LanguageStateAnchoringMode`;
-- `ArticulationExplicitness`;
-- `LanguageStateClosureDegree`;
-- evidence, source-currentness, publication authority, work permission, or gate readiness.
-
-A representation may be distributed yet have high trace anchoring; symbolic yet low-articulation; sparse yet low-closure. Those combinations shall remain visible. A model-state, embedding, vector-store relation, or operator-facing publication face may fill one or more representation factors, but the factor bundle does not decide the episteme, carrier, evidence, bridge, work, or gate relation by itself.
+Representation organization, anchoring, articulation and closure answer different questions. A distributed code can be trace-anchored; a symbolic note can leave its meaning unclear; a sparse representation can express a claim that remains open. Assess each relevant facet on its own grounds. The representation factors alone establish neither evidence for the claim nor permission to act on it.
 
 #### C.2.7:4.3 - Extension rule
 Authors may add extra local representation factors only if the extension is published as a factor addition rather than as a new master factor that erases the core factor bundle.
@@ -72,7 +65,7 @@ Authors may add extra local representation factors only if the extension is publ
 
 **Show (System).** An operator decision aid may mix sparse alert codes and symbolic method-description text.
 
-**Show (Episteme).** A research probe can move from distributed activation patterns to sparse symbolic hypotheses without any one-step formality story.
+**Show (Episteme).** A researcher can describe a distributed activation pattern in a symbolic hypothesis. Assess the model-side code and the hypothesis's expression separately; the new expression alone establishes neither the hypothesis's articulation nor its warrant.
 
 ### C.2.7:6 - Bias-Annotation
 The pattern resists folk theories that try to line up one representation factor with one stage or progression story.
@@ -92,25 +85,25 @@ The pattern resists folk theories that try to line up one representation factor 
 The benefit is cleaner comparison across schools, substrates, and publication forms. The trade-off is the effort needed to make the relevant factor readings explicit.
 
 ### C.2.7:10 - Rationale
-The factor-bundle design keeps the representation basis-slot family in the declared language-state chart over `U.CharacteristicSpace` orthogonal to articulation, closure, and anchoring.
+Separate representation factors let the reader compare code organization while assessing articulation, closure and anchoring on their own grounds.
 
 ### C.2.7:11 - SoTA-Echoing
 This factorization fits current work on sparse distributed representations, hybrid symbolic/neuro-symbolic representation practices, and interpretability practice.
 
 ### C.2.7:12 - Relations
-- Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
+- Builds on: `A.18`, `A.19`, `C.2.2a`, `C.2.LS`.
 - Coordinates with: `C.2.6`, `A.16.0`, `A.16`, `A.16.1`, `B.4.1`, `B.5.2.0`, `F.9` for any Bridge and bounded-use claim, and `F.9.1` only for an optional stance note about that claim.
 - Constrains: language-state position publication and bridge loss notes around representation shifts.
 ### C.2.7:13 - Worked Examples and Factor Interaction Notes
 
 #### C.2.7:13.1 - Distributed but explicit
-A model-side summary may be representation-wise distributed and still highly explicit once published into a stable symbolic wrapper. This case matters because it blocks the folk myth that distributed implies vague.
+The pair code in :4.1 is distributed. Publishing its unit order and complete decoding rule can make its interpretation highly articulated without changing the code's locality. A symbolic wrapper with an unspecified decoder would leave that interpretation unresolved.
 
 #### C.2.7:13.2 - Symbolic but still low-articulation
-A glossary-like note may be fully symbolic while still low in `AE` because the meaning needed by its receiving use remains unclear. This blocks the opposite myth: symbolic therefore explicit.
+A glossary-like note may be fully symbolic while still low in `AE` because the meaning needed by its receiving use remains unclear.
 
 #### C.2.7:13.3 - Mixed representation publication
-An operator-facing publication face may combine sparse alert codes, symbolic method-description text, and distributed back-end model summaries. The representation-factor bundle should make that mixture visible instead of compressing it into one label.
+An operator decision aid may display alert codes beside text explaining a back-end model. Assess the alert code, the text and the model-side code on their stated units. A text summary of a distributed model does not inherit the model's distribution merely by describing it. If one bundle reports several components, identify which readings concern which component.
 
 ### C.2.7:14 - Authoring and Review Guidance
 
@@ -120,10 +113,10 @@ To publish a representation-factor bundle, ask separately:
 - how local or distributed is the representation?
 - how sparse or dense is it?
 - how symbolic or subsymbolic is it?
-- which additional factor, if any, genuinely matters enough to publish?
+- which additional factor changes the intended comparison or use?
 
 #### C.2.7:14.2 - Review prompt
-An assurance reader should reject any attempt to use one factor as if it summarized the rest. The factor bundle exists precisely to block that reduction.
+Check whether the reported factors support the intended comparison. Do not infer unreported factors from one label without a relation that establishes them.
 
 #### C.2.7:14.3 - Cross-facet reminder
 Assurance readers should also watch for silent replacement of `LanguageStateAnchoringMode`, `AE`, or `CD` by representation talk.
@@ -141,7 +134,7 @@ Aliases such as `EncodingBasis` or similar should be unfolded into explicit fact
 ### C.2.7:16 - Factor-Bundle Publication Discipline
 
 #### C.2.7:16.1 - Minimal representation package
-A publishable `U.LanguageStateRepresentationFactorBundle` should normally show the current factor settings for locality/distribution, sparsity/density, and symbolicity/subsymbolicity, together with any declared extra factor. If a factor is intentionally omitted, say so rather than hiding the omission under a compact alias.
+A bundle claim should show the readings relevant to its stated use, using the starter factors and any declared additions. A partial bundle can suffice; identify an omitted or unresolved factor when it could change the comparison or continuation. An alias must not imply that an unreported reading is known.
 
 #### C.2.7:16.2 - No hidden scalar rule
 Compact overlays such as "sparse-symbolic" are admissible only when they dock to the underlying factor bundle. No compact label may behave as a hidden master score for comparison, bridge comparison, or stage/progression talk.
@@ -152,10 +145,10 @@ Local aliases such as `EncodingBasis` are admissible only when their docking to 
 ### C.2.7:17 - Factor Interaction and Cross-Facet Reading Rule
 
 #### C.2.7:17.1 - Interaction rule
-Representation factors may correlate, but they do not determine one another. Highly distributed cues can still be sparse; symbolic publications can still be locally dense; mixed symbolicity can coexist with either strong or weak articulation. Publish the actual factor bundle rather than narrating one factor as if it predicted the rest.
+Representation factors may be related under a particular code or model. State that relation and its conditions before inferring one reading from another. Locality and active-unit fraction are distinct, as :4.1 shows. Publish the readings needed for the comparison; assess articulation independently under C.2.4.
 
 #### C.2.7:17.2 - Cross-facet non-substitution
-Representation talk must not silently replace `AE`, `CD`, or `LanguageStateAnchoringMode`. A shift from distributed to symbolic publication may change readability while leaving articulation low, closure open, or anchoring heavily operator-bound.
+Representation talk must not silently replace `AE`, `CD`, or `LanguageStateAnchoringMode`. A symbolic account of a distributed code may be easier to read while leaving interpretation unclear, closure open or anchoring operator-bound.
 
 #### C.2.7:17.3 - Bridge reminder
 If a representation shift matters in transport across contexts, note that the shift may alter what is preserved or salient. Use `F.9` for the Bridge and its bounded-use claim when the receiving use needs a semantic relation between local senses from different contexts; use `F.9.1` only for a separate optional stance note about that claim.
@@ -174,7 +167,7 @@ An assurance reader should ask:
 An additional factor is justified only if it captures a distinct representational question that cannot be reduced to locality, sparsity, or symbolicity. The extra factor should extend the bundle, not become a rival master factor.
 
 #### C.2.7:18.3 - Migration test for source terminology
-Source vocabularies often use "symbolic", "distributed", or "encoding basis" as if one term solved the whole classification problem. A conforming migration unpacks the term into explicit factor dockings and then checks whether any cross-facet claims were smuggled into the source label.
+For a source term such as "symbolic", "distributed" or "encoding basis", retain its source-local meaning and scope. If an FPF comparison needs factor readings, establish which factors the source actually supports and leave the others unresolved. Mere citation of the source term needs no reconstruction into a complete bundle. Test any further cross-facet claim separately.
 
 #### C.2.7:18.4 - Bundle-comparison reminder
 Representation bundles may be compared across contexts only after the compared factors are explicit. If one context uses a compact local alias and another publishes the full factor bundle, require explicit docking before treating the two descriptions as commensurable.

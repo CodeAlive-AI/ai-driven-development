@@ -67,7 +67,7 @@ Place the one authoritative logical pattern index after those public-unit entrie
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 ```
 
-Across all segments, every pattern body has exactly one row, every row resolves to exactly one body, and no PatternID appears twice. A Part label groups rows for navigation; it is not a pattern row, a semantic parent, or another index.
+Across all segments, every published pattern body has exactly one row, every current `PatternRef` row resolves to exactly one complete body, and no PatternID or reserved locator appears twice. Explicit `PlannedCatalogEntry` rows reserve future locators under E.8 H-10; they are outside the current-pattern row/body bijection and supply no available pattern or current dependency. A Part label groups rows for navigation; it is not a pattern row, a semantic parent, or another index.
 
 PatternID, title, Part, and `§` position remain separate even when one row displays them together. PatternID supplies the stable public address within the named framework; the title explains the pattern; Part and `§` show where the current edition places it. Within each Part, the ToC rows and pattern bodies follow the same order. That order need not ascend by PatternID, and moving or retitling a pattern does not by itself change its PatternID.
 
@@ -165,7 +165,7 @@ The deterministic part of the form check handles recoverable syntax and projecti
 - the required H1 sequence plus the product-declared body and reference tail;
 - product-declared Readme and architectural-reference entries in the established ToC grammar, before the logical pattern index, with no generic rival mini-menu;
 - one correctly addressed, content-free architectural-reference end heading at the boundary of that unit;
-- authoritative index segments, aggregate row/body bijection, duplicates, and reserved support-index grammar;
+- authoritative index segments, aggregate current-pattern row/body bijection, distinct future-facing `PlannedCatalogEntry` rows, duplicates, and reserved support-index grammar;
 - the Readme's one practical-entry set; its explicit examples-not-coverage statement; the product's declaration of example keys and forms; exactly one H3 ordinary entry or H4 card per declared key; five ordered ordinary-entry fields; a non-empty card-group explanation; six ordered card fields; the shared reading-burden measure and mantra/card limits; and zero or one same-key H5 expansion with the declared boundary; and
 - equality and source agreement of every optional public cue that is actually projected.
 

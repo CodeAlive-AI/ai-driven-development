@@ -14,7 +14,7 @@ Use `B.2` first to decide whether whole reidentification is current and to ident
 
 **What goes wrong if missed.** A catalogue, literature review, dashboard, model repository, or vocabulary is called a new theory without claim-graph reidentification; or a real new episteme whole is treated as a pile of publications.
 
-**What this buys.** The pattern preserves B.2 whole reidentification while keeping episteme ontology with C.2.1 and the episteme family. It prevents episteme-result MHT from becoming episteme agency, publication authority, generic emergence, or a second episteme ontology.
+**What this buys.** The practitioner can recognize B.2's candidate as an episteme under C.2.1 and distinguish that result from its publication, use, and assurance claims.
 
 **Not this pattern when.**
 
@@ -26,7 +26,7 @@ Use `B.2` first to decide whether whole reidentification is current and to ident
 
 ### B.2.3:1 - Problem Frame
 
-A library is not a theory, and a theory is not its publication.
+A collection does not become a theory merely because its items are stored together. Distinguish the claim-bearing whole from its publication form and carrier.
 
 A group of papers, models, datasets, design notes, forecasts, standards, or local doctrines may remain a collection. B.2.3 becomes current only when B.2's exact candidate new whole can be constructively recognized under A.1 and the current C.2.1 constitution criterion identifies that same individual as one claim-bearing episteme.
 
@@ -34,10 +34,10 @@ B.2.3 introduces no special episteme result object. It retains B.2's one `result
 
 ### B.2.3:2 - Problem
 
-Without this specialization:
+Confusing the episteme with its collection, representation, or publication can produce these errors:
 
 1. **Catalogues become theories.** Aggregated publications or dashboards are treated as a new episteme because they are stored together.
-2. **Theory becomes publication.** The paper, report, standard document, model card, or dashboard is used as the episteme itself.
+2. **Publication form becomes episteme.** A carrier or publication form is mistaken for the claim-bearing episteme it presents.
 3. **Episteme receives agency.** The theory, standard, or doctrine is described as if it performs work or enforces behavior by itself.
 4. **Morphing becomes MHT.** A view, retargeting, coarsening, translation, or model transformation is treated as a new episteme whole.
 5. **Assurance is inherited silently.** Trust in constituent sources is treated as trust in the reidentified episteme whole.
@@ -55,7 +55,7 @@ Without this specialization:
 
 ### B.2.3:4 - Solution
 
-Use B.2.3 as the `U.Episteme` specialization of B.2. Reuse B.2's exact existing whole, exact candidate new whole, direct construction facts, and optional C.2.1 records; add no context-shaped slice or episteme-result schema.
+Use B.2.3 as the `U.Episteme` specialization of B.2. Reuse its existing whole, candidate new whole, direct construction facts, and any optional C.2.1 records needed for this use.
 
 #### B.2.3:4.1 - Reuse The B.2 Candidate And Complete Episteme Recognition
 
@@ -98,15 +98,7 @@ These cues identify claims and relations to inspect. They neither constitute the
 
 #### B.2.3:4.4 - Blocked Readings
 
-Do not use B.2.3 as:
-
-- a name for generic emergence;
-- an authority claim for a publication;
-- an agentive claim about a theory, standard, or doctrine;
-- an effect-free episteme morphism, view, retargeting, or coarsening;
-- a second episteme ontic beside C.2.1;
-- a shortcut from source synthesis to high trust;
-- a replacement for source-use, evidence, assurance, or publication patterns.
+Recognition of an episteme result establishes neither agency, publication authority, nor inherited assurance. Use the applicable subject patterns for those separate claims; the non-use cases in :0 identify the other operations.
 
 ### B.2.3:5 - Archetypal Grounding (Worked Cases)
 
@@ -140,7 +132,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
 | Library as theory | A repository, dashboard, or reading list is treated as one claim-bearing episteme. | Identify B.2's exact candidate, execute A.1, and test its C.2.1 ClaimGraph/EntityOfConcern/ReferenceScheme constitution. |
-| Publication as episteme | A PDF, report, standard document, model card, or dashboard is treated as the episteme itself. | Keep the episteme, publication form, and carrier distinct under C.2.1, E.17, E.24.PUB, and source-use patterns. |
+| Publication as episteme | A publication form or carrier is treated as the claim-bearing episteme. | Keep the episteme, publication form, and carrier distinct under C.2.1, E.17, E.24.PUB, and source-use patterns. |
 | Episteme agency | A theory, standard, or doctrine is described as performing Work or enforcement. | Recover every exact acting System through A.13 and let A.15.1 independently admit the Work. Add F.6 only when the receiving account expressly consumes precise assignment-bound attribution; a missing or failed attribution does not demote the Work. |
 | Morphing as MHT | View, translation, coarsening, or retargeting is called a new episteme whole. | Use A.6 episteme-morphism patterns unless B.2 whole reidentification remains current. |
 | Source trust transfer | Trust in constituent sources becomes assurance for the result episteme. | Re-evaluate assurance and source-use relations for the result episteme; retain only those that still apply to its exact claims. |
@@ -171,7 +163,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 
 Positive consequences:
 
-- Episteme-result MHT becomes usable without preserving title mnemonics as ontology.
+- The practitioner can distinguish a new claim-bearing whole from a collection or changed publication.
 - C.2.1 remains the episteme identity pattern.
 - Publications, source use, synthesis work, evidence, assurance, and acting systems remain separate.
 
@@ -183,15 +175,15 @@ Costs:
 
 ### B.2.3:9 - Rationale
 
-Knowledge synthesis can create a new holon, but only when the result is a reidentified claim-bearing episteme. B.2.3 keeps that useful case and removes the drift toward episteme agency, publication authority, generic emergence, and duplicate episteme ontology.
+A knowledge synthesis may yield a new claim-bearing whole. Establish that conclusion through the whole's construction and identity, then assess its other uses separately.
 
-This pattern is deliberately thin. B.2 is the pattern for whole reidentification; C.2.1 is the pattern for the ClaimGraph/EntityOfConcern/ReferenceScheme constitution relation and episteme identity; publication and source-use patterns contain the defining content for their relations; A.6 episteme-morphism patterns contain the defining content for morphing and retargeting; use A.15.1 for synthesis Work and A.12 for the acting-side split.
+B.2 is the pattern for whole reidentification; C.2.1 is the pattern for the ClaimGraph/EntityOfConcern/ReferenceScheme constitution relation and episteme identity; publication and source-use patterns contain the defining content for their relations; A.6 episteme-morphism patterns contain the defining content for morphing and retargeting; use A.15.1 for synthesis Work and A.12 for the acting-side split.
 
 ### B.2.3:10 - SoTA-Echoing
 
 | Source family | Lesson for B.2.3 | FPF decision |
 | --- | --- | --- |
-| Evidence synthesis and living-review practice | Synthesis claims need explicit scope, evidence relation, currentness, and maintenance rather than narrative authority. | B.2.3 requires current C.2.1 constitution and keeps assurance and source use in neighboring relations. |
+| Evidence synthesis and living-review practice | Synthesis claims need explicit scope, evidence relations, currentness, and maintenance conditions. | B.2.3 requires current C.2.1 constitution and keeps assurance and source use in neighboring relations. |
 | Knowledge-graph and claim-network practice | A knowledge body can be represented as related claims, evidence, and sources. | The actual ClaimGraph is a C.2.1 constitution participant; its graph representation, evidence, and sources do not declare MHT or add episteme identity positions. |
 | Science-of-science and paradigm-change studies | Fields and theories can consolidate into named bodies with new scope and organizing principles. | B.2.3 treats consolidation as a cue to inspect; it neither constitutes the candidate episteme nor selects B.2. |
 | Publication and standards practice | A standard, report, model, or dashboard use may concern claim content, a representation, a publication form, or its carrier; its name alone does not decide which. | E.17 and source-use patterns remain separate from the episteme whole. |

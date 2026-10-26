@@ -7,11 +7,11 @@
 
 ### B.1.5.CM:0 - Use This When
 
-Use this pattern when a proposal already names an intended Method whole—often a methodology, operating model, playbook, integrated process, or local way of working—and the next decision needs to know what can truthfully be said about that whole now.
+Use this pattern when a proposal names an intended Method whole, such as a methodology or playbook, and the next decision depends on what is already established about that whole.
 
 Begin with the proposal's intended result, participants, relation claims, guards, burdens, unresolved conditions, and selection reason. Recover the whole semantics needed for identification before choosing the result branch.
 
-The first useful result is deliberately two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the strongest prospective account or lower claim that the evidence supports. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
+The first useful result is deliberately two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
 
 Do not require prior performance of C.32.MWA.PP when equivalent proposal content is already available. Do not treat a coherent description, selected architecture, WorkPlan, tool implementation, or successful first trial as Method construction or identification by itself.
 
@@ -31,13 +31,13 @@ Do not require prior performance of C.32.MWA.PP when equivalent proposal content
 
 Method Engineering often produces coherent proposals before the proposed practice exists. Situational Method Engineering and design-Method research offer useful construction and adaptation moves, while FPF keeps the proposed account, world-side Method, MethodDescription, WorkPlan, performed Work, and obtaining relations distinct.
 
-A proposed whole can still be valuable. It can state an invariant, guards, variants, participant roles, stops, and a bounded trial. The error is reporting possible-future content as already obtaining.
+A proposal can state an invariant, guards, variants, participant contributions, stops, and a bounded trial when one is selected. The error is reporting possible-future content as already obtaining.
 
 ### B.1.5.CM:2 - Problem
 
 One failure declares a whole whenever a document gives several steps a shared name. Another refuses to state anything useful until a mature Method has already been identified. A third treats participant co-use, Work order, or a successful tool integration as `methodPartOf` evidence.
 
-The first error overclaims, the second prevents learning, and the third confuses several relation structures. B.1.5.CM needs a positive lower branch that supports present comparison or later realization while keeping uncertainty explicit.
+The first error overclaims, the second prevents learning, and the third confuses several relation structures. A prospective or partial account can support present comparison or later realization while keeping uncertainty explicit.
 
 ### B.1.5.CM:3 - Forces
 
@@ -47,13 +47,13 @@ The first error overclaims, the second prevents learning, and the third confuses
 | Composition evidence | Participant Methods and relations may be supported unevenly, while one missing load-bearing relation can defeat the whole claim. |
 | Variation | A reusable Method permits bounded variation, while unlimited adaptation destroys reidentification. |
 | Trialability | A WorkPlan can make uncertainty testable, while planned or performed Work does not backdate Method existence. |
-| Honest lowering | A lower result must remain actionable, while it cannot hide unresolved identity or relation claims. |
+| Useful partial result | A partial result must support its receiving use while keeping unresolved identity or relation claims explicit. |
 
 ### B.1.5.CM:4 - Solution
 
 B.1.5 supplies the exact composition test. This construction supplies the candidate whole, constituent contributions, interfaces and grounds to which that test applies; it can also return a useful relation account below the whole-Method threshold. Use an already complete B.1.5 result directly rather than reconstructing it.
 
-Recover the proposed whole's semantics, test whole and participant identity separately from relation truth, and return the strongest branch the evidence supports.
+Recover the proposed whole's semantics, test whole and participant identity separately from relation truth, and return the branch supported by that evidence.
 
 #### B.1.5.CM:4.1 - Pattern-Use Unfolding
 
@@ -63,7 +63,7 @@ Recover the proposed whole's semantics, test whole and participant identity sepa
 4. **Name the relation sets.** State every load-bearing proposed or obtaining relation, including Method composition, Work order or overlap, result use, allocation, support/provider access, authority, and description correspondence as applicable. Do not infer one relation from another.
 5. **Test the positive branch.** Record an obtaining composition only when the whole and parts are identified as Methods and the required `B.1.5` relations are shown to obtain within the bounded claim.
 6. **Return the prospective branch when needed.** State the candidate whole, participant statuses, proposed relation sets, guards, adapters, alternatives, recovery, variation points, burdens and unresolved conditions needed for the receiving use. A traceable proposal can answer that use while its stronger whole claim remains unresolved.
-7. **Lower independently.** When whole semantics, identity, or one relation remains too weak even for a useful candidate, return the supported fragment, relation claim, WorkPlan question, or stop. Do not pad the account to look complete.
+7. **Return a supported partial result.** When missing whole semantics, identity, or a relation prevents a useful candidate account, return the supported fragment, relation claim, WorkPlan question, or stop. Keep the missing grounds explicit.
 8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, authority and reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or lower result and the limitation that matters to its recipient.
 
 #### B.1.5.CM:4.2 - Record the Result
@@ -85,7 +85,7 @@ Practitioners can write and test a coherent proposed Method without pretending t
 
 The EC-417 project proposes `C-EC-Release-v2` as a whole for safety-relevant release coordination.
 
-Under A, the team waits for signed supplier evidence before integrating the software. Under B2, it integrates from a versioned provisional edition, reconciles it with signed evidence before safety closure, and assigns most preparation of the changes between the editions to the supplier-configuration role to keep the safety engineer within the peak limit. [C.32.MWA.PP §5.3](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c32mwapp53---possible-future-alternatives-a-b-and-b2) gives the timing and capacity comparison. A is selected before integration; recovery R is used when closure fails after early B2 integration.
+Under A, the team waits for signed supplier evidence before integrating the software. Under B2, it integrates from a versioned provisional edition, reconciles it with signed evidence before safety closure, and assigns most preparation of the changes between the editions to the supplier-configuration role to keep the safety engineer within the peak limit. [C.32.MWA.PP §5.3](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c32mwapp53---possible-future-alternatives-a-b-and-b2) gives the timing and capacity comparison. A can be selected only before integration; recovery R is used when closure fails after early B2 integration.
 
 The proposed account states:
 
@@ -116,11 +116,11 @@ In B2, `TraceReviewer-17` accepts or rejects each AI trace suggestion used by th
 
 Missing signed evidence after early integration triggers recovery R. In R, preserve the performed-integration record and evidence history. Repeat the evidence comparison and affected verification when evidence arrives by `D0` while the existing evidence and reversibility guards still hold. Record whether early integration is retained, rolled back, or repeated, and the added burden. If closure remains unresolved at `D0`, the release result is withhold/next-slot and this R occurrence ends as a failed B2 trial.
 
-`ASG-TraceReview-17` and `PERM-TraceAcceptReject-17` also end at `D0`; continuing safety or release relations extend neither. The trial WorkPlan therefore contains no post-`D0` AI suggestion, trace-review Work, assignment, permission, result, or exercise, and claims no other later Work. Unresolved R may motivate later planning, but this case asserts no post-`D0` recovery WorkPlan, PlanItem, planned endpoints, qualification/currentness result, readiness, assignment, permission/authority, or later Work.
+`ASG-TraceReview-17` and `PERM-TraceAcceptReject-17` end at `D0`; continuing safety or release relations extend neither. This trial provides no post-`D0` AI-supported continuation and asserts no later Work or recovery WorkPlan. Unresolved R may motivate separate later planning.
 
 When later non-AI recovery needs coordination, the project may create a new `A.15.2` WorkPlan; `A.15.2` itself does not require planning before every otherwise valid later Work. Planned or unplanned Work would still need its separate qualification/currentness, readiness, assignment, permission/authority, and `A.15.1` occurrence as applicable. These stops preserve all earlier Work and evidence history. A is only a pre-entry alternative.
 
-Acceptance observations include whether each trial respects confidentiality and authority, remains below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a truthful release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is an explicit stop and failed trial observation. The withhold/next-slot result preserves earlier Work and may motivate planning; it creates neither a recovery WorkPlan nor later Work. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
+Acceptance observations include whether each trial respects confidentiality and authority, remains below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a truthful release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is an explicit stop and failed trial observation. The withhold/next-slot result preserves earlier Work and may motivate later planning. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
 
 #### B.1.5.CM:5.1 - Finish a Design Comparison Before a Trial Is Available
 
@@ -161,7 +161,7 @@ A later opportunity with useful obtainable observations can warrant implementati
 
 ### B.1.5.CM:9 - Consequences
 
-Projects can move from architecture proposal to realization and learning under explicit identity and relation conditions. Strong composition claims are recoverable, while weaker proposals remain actionable without treating their Methods or relations as established.
+Projects can move from architecture proposal to realization and learning under explicit identity and relation conditions. An established composition and a supported proposal remain distinguishable, and either can support the use for which its grounds are sufficient.
 
 The cost is a visible open identity or relation question. Some proposed methodologies will remain candidate accounts after useful trials, and some will split into several Methods or a relation structure instead of maturing as one whole.
 
@@ -179,7 +179,7 @@ B.1.5.CM does not depend on applying C.32.MWA.PP first. C.32.MWA.PP is one commo
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Intended use, procedure, representation, tool, ecosystem, and adaptation conditions for a coherent proposal. | Conceptual completeness does not prove world-side Method existence or relations. |
 | Current FPF `A.3.1`, `A.22`, `B.1.5`, and `C.32.MWA` | Method identification, selected structures, Method composition, and several-structure synthesis. | B.1.5.CM adds the truthful whole-versus-prospective-account resolution and realization continuation. |
 
-Reopen when a representative proposal cannot be expressed through the positive/prospective/lower branches, when variation repeatedly defeats reidentification, or when a positive composition claim cannot be distinguished from Work order or co-use.
+Reconsider the account when its content fits none of these supported results, when variation defeats its reidentification rule, or when the claimed composition depends only on Work order or co-use.
 
 ### B.1.5.CM:12 - Relations
 

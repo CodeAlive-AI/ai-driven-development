@@ -3,20 +3,14 @@
 > **Status:** Stable
 
 ### E.6:1 - Problem frame
-FPF addresses readers who differ in at least two respects:
+Use this pattern when arranging the specification's explanation and practical entry. Readers differ in at least two respects:
 
-* **Disciplinary** – systems engineers, knowledge scientists, ethicists.
-* **Experience** – newcomers need intuition; experts need rigour.
-
-Past drafts mixed governance mandates with domain examples, producing a
-steep learning curve and repeated “forward‑reference” detours.
+* **Disciplinary background** — for example, systems engineering, knowledge science or ethics.
+* **Preparation** — newcomers may need introductory examples; prepared readers may enter through a precise definition or operation.
 
 ### E.6:2 - Problem
-If core ideas are buried under formalism or scattered across parts,
-readers either give up or misuse the framework. We need a didactic
-macro-order that guides cognitive load from low to high while keeping
-normative sections discoverable, without letting readers confuse
-document order with one universal first-practical workflow.
+The publication needs an explanatory order in which readers can find the grounds needed for later claims. A practical question may nevertheless require entry into a later Part. Document order must not become a compulsory workflow.
+
 
 ### E.6:3 - Forces
 
@@ -30,7 +24,7 @@ document order with one universal first-practical workflow.
 
 #### E.6:4.0 - Document order is distinct from first-practical entry
 
-The macro-order of the document is a didactic scaffold, not a universal practical workflow. Apply `E.11.PFP` to the compact opening and navigation. After the Table of Contents, the Readme offers recognizable working questions and direct entries; the Architectural Reference explains the whole pattern language, its cross-cutting ideas, connections and architectural choices, including an informal on-ramp. These informative explanation and navigation units and ToC cues may cross Parts when the reader's question requires it. Use `E.11` for practical entry, including its worked comparisons when compact cues leave a genuine ambiguity.
+The document's macro-order organizes explanation; it does not prescribe one practical workflow. Apply `E.11.PFP` to the compact opening and navigation. After the Table of Contents, the Readme offers recognizable working questions and direct entries; the Architectural Reference explains the whole pattern language, its cross-cutting ideas, connections and architectural choices, including introductory explanation. These informative explanation and navigation units and ToC cues may cross Parts when the reader's question requires it. Use `E.11` for practical entry, including its worked comparisons when compact cues leave a genuine ambiguity.
 
 Keep the main explanatory sequence recoverable:
 
@@ -59,7 +53,7 @@ This publication order does not require readers to traverse every Part. Practica
 
 | ID | Requirement |
 |----|-------------|
-| **CC‑DA.1** | Each Part **SHALL** open with a one‑paragraph situational “hook” before formal text. |
+| **CC‑DA.1** | Each Part **SHALL** open with a one-paragraph situational introduction before formal text. |
 | **CC‑DA.2** | Every architectural pattern **MUST** supply the grounding required by E.7: applicable System and Episteme illustrations, or the explicit single-substrate scope and justification under CC‑AG.3. |
 | **CC‑DA.3** | Governance patterns (**Part E**) **SHALL NOT** appear before the Kernel in the main document flow. |
 | **CC‑DA.4** | Navigation aids **SHALL** distinguish document order from first-practical entry guidance; first-entry pattern-comparison guidance and expanded entry-disambiguation cases are informative and MAY cross Parts without implying a universal process history. |
@@ -68,14 +62,14 @@ This publication order does not require readers to traverse every Part. Practica
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| Smooth learning curve; readers can stop at their needed depth. | Template discipline required; mitigated by authoring guide (E.8). |
-| Reduces forward‑reference clutter; each concept is primed before formal use. | The Architectural Reference's introductory examples evolve when new archetypes are added; their change is handled through the relevant architecture decision. |
+| Readers can choose introductory explanation or direct entry to the pattern they need. | Authors must maintain the explanation and entry guidance under E.8. |
+| Grounding can be read beside the claims it explains. | The Architectural Reference's introductory examples evolve when new archetypes are added; their change is handled through the relevant architecture decision. |
 
 ### E.6:8 - Rationale
 Pairing an abstract rule with contrasting, applicable illustrations makes its intended application and scope inspectable. The document order and E.7 grounding rule provide those connections while leaving practical entries free to cross Parts. This implements **P‑2 Didactic Primacy** and **P‑1 Cognitive Elegance** without replacing the subject's reasoning or evidence.
 
 ### E.6:9 - Relations
-* **Depends on:** `pat:constitution/guard‑rails` (GR‑1 ensures example jargon stays outside Core).
+* **Depends on:** `pat:constitution/guard‑rails` (GR-1 governs implementation detail and necessary subject syntax).
 * **Constrains:** Placement of Parts, patterns, and their explanatory examples.
 * **Instantiates pillars:** P‑1, P‑2
 

@@ -3,22 +3,17 @@
 > **Status:** Stable
 
 ### E.5.4:1 - Problem frame
-FPF calls itself trans‑disciplinary, but every author carries implicit
-metaphors from a source domain. If those metaphors leak into “universal”
-patterns, practitioners from other fields disengage or mis‑interpret the
-rules.
+Use this pattern when authoring or reviewing a normative pattern's assumptions, examples and claimed scope. Wording and metaphors drawn from one domain can hide assumptions that readers in another domain need to recognize.
 
 ### E.5.4:2 - Problem
-Unrecognised bias hides in wording, examples, unit choices or principle
-weighting. Once embedded in normative language, such bias is hard to
-remove and contradicts Pillars **P‑2 Didactic Primacy** and **P‑8
-Cross‑Scale Consistency**.
+Bias in wording, examples, unit choices or principle weighting can make a rule appear applicable where its assumptions do not hold. This undermines **P-2 Didactic Primacy** and **P-8 Cross-Scale Consistency**. The author needs to justify the emphasis, repair the imbalance or state a narrower scope.
+
 
 ### E.5.4:3 - Forces
 
 | Force | Tension |
 |-------|---------|
-| **Neutrality** | One voice for all disciplines ↔ need for relatable examples. |
+| **Shared meaning** | Cross-domain interpretation ↔ relatable domain examples. |
 | **Conciseness** | Audit guidance must be brief ↔ must cover multiple bias types. |
 | **Longevity** | Guidance must survive emergence of new domains. |
 
@@ -31,20 +26,18 @@ Cross‑Scale Consistency**.
 
 2. **Equilibrium question**
    For each lens ask:
-   *“Does the pattern over‑privilege this class or silence it?”*
+   *“Does the pattern give this class more weight than its use justifies, or omit a concern from this class that changes use?”*
    *Examples:*
    *   Over‑reliance on `Epist` precision may ignore `Prag` cost.
-   *   Dominant `Arch` metaphors may alienate `Did` audiences.
+   *   An `Arch` metaphor may hide meaning the `Did` audience needs.
 
 3. **Scope‑or‑Balance rule**
-   * If imbalance is found and universality is intended, re‑phrase to
-     restore balance.
+   * If an unjustified imbalance is found and universality is intended, revise the claims or explanation to correct the weighting or address the neglected concern.
    * If imbalance is intentional (domain‑specific pattern), mark the
      scope explicitly: *“Applies primarily to thermodynamic systems.”*
 
-4. **Audit trace**
-   The pattern carries a short **Bias‑Annotation** paragraph recording
-   which lenses were tested and any scoping statement. Keep workflow checklists,
+4. **Bias annotation**
+   The pattern carries a short **Bias‑Annotation** paragraph naming the five lenses and any scoping statement. Keep workflow checklists,
    reviewer metadata and other data outside the Core, along with tips on data formats and data governance.
 
 ### E.5.4:5 - Archetypal Grounding (System / Episteme)
@@ -67,15 +60,15 @@ Cross‑Scale Consistency**.
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| Neutral, inclusive language attracts wider adoption. | Authors spend a few extra lines on Bias‑Annotation; mitigated by template snippet. |
-| Bias is surfaced at writing time, not after publication. | — |
+| Readers can identify the claim's scope and the assumptions that constrain transfer. | Authors must examine the five lenses and explain a declared limitation. |
+| The audit can expose domain-specific assumptions during drafting. | — |
 
 ### E.5.4:8 - Rationale
 Coupling the audit directly to the Principle Taxonomy keeps the guard‑rail
 **concept‑driven**. Review-board procedures, CI jobs, and workflow
-checklists belong in the Tooling Guide. This separation satisfies
+checklists belong in Tooling. This separation satisfies
 **GR‑1** (Firewall)
-while securing Pillars **P‑2, P‑7 Pragmatic Utility, P‑8**.
+and supports Pillars **P‑2, P‑7 Pragmatic Utility, P‑8**.
 
 ### E.5.4:9 - Relations
 * **Parent umbrella:** `pat:constitution/guard‑rails` (E.5)

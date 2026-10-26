@@ -83,9 +83,9 @@ A Target of Assurance (ToA) denotes the claim being assessed for the named use, 
 
 ### B.3.3:6 - Consequences
 
-Recipients can inspect what an assurance result supports and why a stronger use remains open. Teams direct effort towards relevant gaps and can reuse genuinely covering evidence.
+Recipients can inspect what an assurance result supports and why a stronger use remains open. Teams direct effort towards relevant gaps and can reuse evidence that covers the claim.
 
-Comparability becomes profile-specific. Defining a useful shared profile takes judgement about consequences, criteria and evidence; routine uses avoid that overhead. Review remains fallible and contestable rather than becoming objective merely because a status is computed.
+Comparability becomes profile-specific. Defining a useful shared profile takes judgement about consequences, criteria and evidence; routine uses avoid that overhead.
 
 ### B.3.3:7 - Rationale
 

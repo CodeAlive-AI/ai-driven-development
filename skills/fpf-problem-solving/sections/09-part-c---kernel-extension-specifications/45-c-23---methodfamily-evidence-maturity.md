@@ -7,18 +7,18 @@
 
 **Registration boundary.** A `MethodFamily` is registered by one exact G.5 registry row and registry edition. That record names the family, its admitted A.3.1 Method members and grouping basis, and intended selector use. Establish evidence, claim scope, validity, and the decision result under their respective rules.
 
-**Builds on.** **G.5** (MethodFamily registry/selector), **G.4** (Acceptance & EvidenceProfiles), **C.22** (TaskSignature S2), **C.18 NQD‑CAL** (QD/illumination), **C.19 E/E‑LOG** (emitters/policies), **B.3** (named assurance claims; `R_eff` under a declared policy), **A.10** (Evidence Graph Ref), **E.10** (LEX), **E.18** (GateCrossing / CrossingBundle visibility when a selected structural crossing is current). **Coordinates with.** **G.6** (EvidenceGraph), **G.8** (LOG bundling), **G.9** (Parity), **G.11** (Refresh).
-
 ### C.23:1 - Problem frame
 
-Families of methods compete inside a CG‑Frame. The selector (G.5) must **admit, degrade, or abstain** per family **without** universal scores, using **typed** problem descriptors and **auditable** evidence. Maturity of a family (its evidence-backed rung for the declared admission use) must be **visible to LOG** rules yet **separate from acceptance thresholds** (which live only in **AcceptanceClauses**, G.4).
+**Use this when** a G.5 selector must admit, restrict or refuse a registered MethodFamily for a declared TaskSignature and use. Apply executable rules to typed descriptors and the applicable evidence, retaining the branch and its grounds. Family maturity is evidence about that bounded admission use; an admission threshold belongs to a G.4 AcceptanceClause.
+
+An ordinary application of a sufficient domain Method needs no MethodFamily admission record. Use C.11 for a local choice when no selector-facing family admission is required.
 
 ### C.23:2 - Problem
 
 Unstructured “readiness” stories and undisciplined evidence lead to:
 
 * (i) **Illicit scalarisation** across mixed scale types,
-* (ii) **Prose‑only** gating that a dispatcher cannot execute,
+* (ii) ambiguous gating conditions that a dispatcher cannot apply,
 * (iii) reuse after the family, evidence profile, claim scope, qualification window, or comparison basis changed, or reliance on an unstated source-local, kind, or plane relation, and
 * (iv) Immature families leaking into production.
   We need a **notation‑independent LOG layer** whose **executable rules** use **TaskSignature (S2)** + **EvidenceProfiles** to return *admit / degrade / abstain*, **routing CL penalties selected under R4 to `R_eff` only** (never mutating **F/G**).
@@ -28,13 +28,12 @@ Unstructured “readiness” stories and undisciplined evidence lead to:
 * **Pluralism vs. dispatchability.** Competing Traditions expose different invariants; selection must compare **without semantic flattening**.
 * **Maturity vs. opportunity.** Open‑ended exploration (E/E‑LOG) must coexist with **run‑safe** exploitation; *immature ≠ forbidden* → provide safe **degrade** paths.
 * **Unknowns (tri‑state).** Missing or `unknown` values in live S2 fields must propagate **explicitly** to *Degrade(mode)* (including *sandbox*) or *Abstain*; no silent coercions.
-* **Lexical discipline.** Head‑anchoring, EntityOfConcern / Description / specification-use separation, Bridge hygiene; **no tool names in Core**.
+* **Meaning and implementation.** Keep the family, its description, rule and evaluation result distinct. A particular notation or software implementation must preserve the same admission conditions.
 
 ### C.23:4 - Solution — **Method‑SoS‑LOG**: deductive shells over Eligibility & Evidence
 
 #### C.23:4.1 - Objects & heads (LEX/I‑D‑S)
 
-*Tech heads; Plain twins are published via UTS.*
 **`MethodFamily`** (registered in G.5) carries **Eligibility** and artefact identity; **`MaturityCard`** (this pattern) carries evidence‑aware maturity; **`SoS‑LOG.Rule`** (this pattern) is an executable rule schema; evaluating a rule returns one of `{Admit | Degrade(mode) | Abstain}` for a `(TaskSignature, MethodFamily)` pair. A qualifying description episteme uses `…Description`; `…Spec` names that same episteme only after the E.10.D2 specification-use gate grants the named use.
 
 #### C.23:4.2 - Rule schema (normative)
@@ -83,7 +82,7 @@ with the following **branch obligations**:
 
 **R8 — Telemetry and refresh hooks.** When an active QD or open-ended generator branch records an illumination increase or changes its search archive, publish the current editions and actual edition increments of the definitions on which the changed use depends. For QD, these include its characteristic space, descriptor map, distance, insertion and emitter policies under R0.QD and C.22. For open-ended generation, retain **`TransferRulesRef.edition`** and the applicable validity and telemetry policy ids; add QD definitions only when that branch uses QD. A separate illumination report retains the measurement basis required by C.17:5.1. Ordinary retention of selection evidence follows its own retention and source references; it does not require QD definitions. Expose **PathSliceId** for refresh or decay in SCR only when an E.18 path slice is current.
 
-> *Aphorism.* **“Admit on admissibility and sufficiency; degrade on uncertainty; abstain on inadmissibility.”**
+> Admit on the complete R1 basis. Degrade only through a declared narrower-use branch after its prerequisites pass. Abstain when a prerequisite fails or the policy supplies no permitted branch.
 
 ##### C.23:4.2.1 - Report the branch actually reached
 
@@ -113,10 +112,10 @@ When a maturity judgement is established for an admission use, publish or cite i
 * **L0 — Anecdotal.** Claims exist; lanes sparse; examples ad‑hoc.
 * **L1 — Worked‑Examples.** Multiple **worked examples** with lane tags and **Scope slices** declared; *no replication yet*.
 * **L2 — Replicated.** Independent replications identify their distinct bearers or operating conditions and declare the claim scope and selected slices, source and method editions, and qualification windows used; lane separation is observed and decay windows are explicit.
-* **L3 — Benchmark‑Severe.** Repeated wins or parity on **community baselines** or **severe tests**; cross‑Tradition bridges declared with **loss notes**.
+* **L3 — Benchmark‑Severe.** Repeated wins or parity on **community baselines** or **severe tests**. Declare any F.9 Bridge on which this comparison relies, with its loss notes.
 
 *Optional rung (for QD/OEE‑heavy families; ordinal, closed enum):*
-* **L4 — QD‑Hardened.** Archive stability under declared **InsertionPolicy/DistanceDef** editions; reproducible **IlluminationSummary** improvements under controlled budgets; OEE generators pass **EnvironmentValidityRegion** severe tests.
+* **L4 — QD‑Hardened.** For an active QD use, establish archive stability under the declared **InsertionPolicy/DistanceDef** editions and reproducible **IlluminationSummary** improvements under controlled budgets. For an OEE generator, establish severe tests of its **EnvironmentValidityRegion**. An OEE use without QD does not acquire QD archive or illumination requirements; retain the exact branch and evidence behind the rung.
 
 **Norms.**
 **M1.** The ladder is **lane‑aware** (TA/VA/LA) and **freshness‑aware**; it is **not** a global numeric score. Declare **Scale kind=ordinal** and the **closed enumeration** of rungs; register the enum at **UTS** (twin labels; editioned).
@@ -130,7 +129,7 @@ When a maturity judgement is established for an admission use, publish or cite i
 
 **U1. (LEX).** Enumerations for `Degrade(mode)` and Maturity rungs **MUST** be declared as **closed value sets** and **registered at UTS** (twin labels). **Lexical SD** (**E.10**) applies.
 **U2.** A live S2 characteristic or predicate admits `unknown` only when its C.22 value rule permits it; `unknown` **MUST** map to a branch (`Degrade` or `Abstain`) declared on the **family** (no coercions). Each branch publishes a **branch‑id** and (where used) a `mode` from a **closed enum** registered at **UTS** (LEX enum clarity).
-**U3.** `ShiftClass` semantics follow **C.22**. If `ShiftClass ∈ {covariate‑shift, concept‑drift, adversarial}` or `unknown`, default outcome is `Degrade(scope‑narrow)` unless a CAL.AcceptanceClause explicitly guards the regime.
+**U3.** `ShiftClass` semantics follow **C.22**. For a known `ShiftClass ∈ {covariate‑shift, concept‑drift, adversarial}`, the default is `Degrade(scope‑narrow)` unless a CAL.AcceptanceClause explicitly guards the regime. A live `unknown` follows U2 and its declared Degrade or Abstain branch. All these branches remain subject to R0, applicable R0.QD and R2/R3.
 
 #### C.23:4.5 - Publication & wiring
 
@@ -141,15 +140,15 @@ When a maturity judgement is established for an admission use, publish or cite i
 
 ### C.23:5 - Archetypal Grounding (Tell–Show–Show)
 
-*(Plain register for pedagogy; Core remains notation‑independent per E.10/E.8.)*
+The following are constructed branch examples. For each later branch, stipulate that the named family and policy editions resolve and R0 passes; the QD case also passes R0.QD. Every Admit below additionally requires the complete R1 Eligibility, evidence and Acceptance basis. If a stipulated prerequisite is missing, use the early-Abstain result in §4.2.1 instead.
 
 **Show‑1 - Continuous dynamics (ODE task).**
-*S2 excerpt.* `DataShape=ODE; stiff?=unknown; Size≈10^3; Objective={↓error@ratio, ↑throughput@ratio}; Constraints={safety_gate@ordinal}; Jacobian_sparsity=high; Missingness=MAR`.
+*S2 excerpt.* `DataShape=ODE; stiff?=unknown; Hamiltonian=unknown; Size≈10^3; Objective={↓error@ratio, ↑throughput@ratio}; Jacobian_sparsity=high; Missingness=MAR`. A declared safety predicate tests the required ordinal safety level.
 *Families.* `Implicit‑BDF` vs `Explicit‑RK` vs `Symplectic`.
 *Rules.*
-- `Implicit‑BDF`: **Eligibility** tolerates `stiff?=unknown` if `Jacobian_sparsity=high` (guarded precondition); **MaturityCard**=`L3` (replicated & benchmarked). Outcome: `Admit`.
-- `Explicit‑RK`: requires `stiff?=false`; with `unknown` ⇒ `Degrade(sandbox)` (probe).
-- `Symplectic`: eligible only when `Hamiltonian=true`; here ⇒ `Abstain`.
+- `Implicit‑BDF`: with `Jacobian_sparsity=high`, its declared unknown-handling branch permits `Degrade(probe-only)` under exploration policy `EE-ODE-1` and Acceptance-bound guards `Probe-ODE-1`. An applicable L3 maturity judgement remains cited. If later observations establish `stiff?=true` and `Hamiltonian=false`, and the complete R1 basis for the intended use holds, that new input can receive `Admit`; the original unknown is not silently converted to true.
+- `Explicit‑RK`: requires `stiff?=false` for ordinary use. Its declared unknown branch permits `Degrade(sandbox)` after R0 and eligibility are checked for that bounded use.
+- `Symplectic`: requires `Hamiltonian=true`; its declared branch for the live `unknown` returns `Abstain`, without reporting a false Hamiltonian judgement.
 *Didactic anchor.* This mirrors C.22’s typed‑signature discipline and CHR legality (no ordinal means; unit alignment for **ratio**).
 
 > The cited ecosystem examples of these families (post‑2015) are organised in **DifferentialEquations.jl**, which exposes multiple solver **families** under one call surface—precisely the pattern G.5 expects. ([Journal of Open Research Software][17])
@@ -159,8 +158,8 @@ When a maturity judgement is established for an admission use, publish or cite i
 *Families.* `MILP (branch‑and‑bound)`, `Constraint‑Programming`, `Heuristic meta‑search`.
 *Rules.*
 - `MILP`: **Eligibility** requires `convex_relaxation=available`; the cited L3 MaturityCard edition names the registered family, evidence profile, benchmark basis, claim scope, qualification window, and intended selector use ⇒ `Admit`.
-- `Constraint‑Programming`: **MaturityCard**=`L2`; Acceptance demands `service_level≥B` (ordinal predicate). With `B` met but baseline parity unknown ⇒ `Degrade(scope‑narrow)`.
-- `Heuristic meta‑search`: **MaturityCard**=`L1` ⇒ `Degrade(sandbox)` or `Abstain` depending on RSCR parity policy.
+- `Constraint‑Programming`: **MaturityCard**=`L2`; the ordinal `service_level≥B` Acceptance predicate is met. Baseline parity is an additional CAL condition, not a missing R0 minimum in this example. Its declared failure behavior permits `Degrade(scope-narrow)` while parity is unresolved, after R0 and eligibility pass for the narrowed use. If that parity basis were required by R0, the result would be `Abstain`.
+- `Heuristic meta‑search`: **MaturityCard**=`L1`. The applicable AcceptanceClause and family failure policy decide between a permitted `Degrade(sandbox)` branch and `Abstain`; L1 alone supplies neither outcome.
 *Didactic anchor.* G.5 declares a `Shortlist` of the non-dominated retained candidates, with its comparison basis and unresolved ties; no cross-ordinal weighting is introduced.
 
 > The cited “single call / many solvers” packaging that motivates MethodFamily rows is exemplified by **JuMP** (2017–2022), which cleanly separates **model description** from solver choice. ([Miles Lubin][18])
@@ -183,7 +182,7 @@ When a maturity judgement is established for an admission use, publish or cite i
 
 ### C.23:6 - Bias‑Annotation
 
-**Principle‑taxonomy lenses.** *Universality* (trans‑discipline), *Didactic primacy* (Tell–Show–Show), *Open‑ended evolution* (refresh‑ready), *Lexical firewall* (no tool names in Core), *Notation independence*. Limits: Worked examples reference widely‑used ecosystems **in Plain register** only.
+Maturity is evidence-relative: a rung established for one family, scope and use does not establish suitability for another. A declared bounded exploration branch can remain useful below an exploitation floor, while keeping its own prerequisites and limits.
 
 ### C.23:7 - Conformance Checklist (normative)
 
@@ -217,7 +216,7 @@ For a named admission-assurance claim, B.3 requires each of **F**, **G**, and **
 
 ### C.23:10 - Relations
 
-**Builds on:** **G.5** (selector consumes these rules), **G.4** (Acceptance & EvidenceProfiles), **C.22** (S2 typing), **C.18 NQD‑CAL**, **C.19 E/E‑LOG**, **B.3** (named assurance claims and declared aggregation, including WLNK only when applicable).
+**Builds on:** **G.5** (selector consumes these rules), **G.4** (Acceptance & EvidenceProfiles), **C.22** (S2 typing), **C.18 NQD‑CAL**, **C.19 E/E‑LOG**, **B.3** (named assurance claims and declared aggregation, including WLNK only when applicable), **A.10** (evidence basis) and **E.10** (naming). **G.6** supplies EvidenceGraph paths when used; **E.18** applies when a selected structural crossing is current.
 **Publishes to:** **UTS** (MaturityCards, rule ids), **SCR/RSCR** (branch coverage; parity hooks).
 **Constrains:** **G.8** (LOG Bundling must cite MaturityCards), **G.9** (parity harness draws baselines per rung), **G.11** (refresh windows per rung & decay), **G.5** (Open‑Ended Family mode for GeneratorFamily).
 **Outcome.** **Admissibility logic** for MethodFamilies combines LOG shells, the maturity poset, degrade modes, and publication requirements with CG‑Spec legality rules, CHR guard‑macros, and CAL acceptance mechanics.

@@ -8,13 +8,13 @@
 
 Use this pattern when B.2 has identified one exact candidate new whole and that same individual must be recognized under the already admitted `U.System` kind: a swarm, production cell, cloud platform, regulated control system, organizational unit, or another physical or operational whole that can act in work or transformation while remaining itself.
 
-The first useful question is not "is there emergence?" First test the exact candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the direct `U.System` criterion. After those two tests, recover only the additional facts used by the concrete case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
+**First useful move.** Test the candidate against A.1's six common components. Then test whether its physical or operational organization makes it eligible to act in work or transformation while preserving its identity—the direct `U.System` criterion. After those two tests, recover only the additional facts used by the concrete case, such as delimitation, an objective or commitment, coordination, capability, system-role kind or assignment, method, work, transformation, functioning, architecture, evidence, assurance, or time. State each fact or claim through the pattern that defines its object or relation. Do not make an objective or commitment a condition for `U.System` recognition; require it only for the separate objective or commitment claim being made.
 
 Use `B.2` first to decide whether whole reidentification is needed and to identify the one candidate new whole. Use `B.2.2` only when that candidate is to be tested under the already admitted `U.System` kind.
 
 **What goes wrong if missed.** A real operating whole is still managed through old component claims, or a mere collection is declared a new system without establishing its A.1 basis and acting eligibility.
 
-**What this buys.** The system MHT keeps the useful meta-system-transition intuition while preserving FPF's subject patterns for system participation, architecture, capability, transformation, work, evidence, and assurance.
+**What this buys.** The practitioner obtains a System-recognition result for B.2's candidate and can determine which claims about the new operating whole need their own grounds.
 
 **Not this pattern when.**
 
@@ -34,10 +34,10 @@ A collection of systems is not thereby a system MHT. B.2.2 carries B.2's existin
 
 ### B.2.2:2 - Problem
 
-Without this specialization:
+When system recognition and the claims about the new whole are conflated:
 
 1. **System identity stays on old parts.** The project keeps component assurance, component responsibilities, and component interfaces after the operating whole has changed.
-2. **System claims become rhetoric.** A group gets a collective name, but no delimitation, objective, obtaining coordination relation, or capability envelope is established for the exact new whole proposed for recognition under `U.System`.
+2. **System claims become rhetoric.** A collective name is used in place of System-recognition grounds or of the additional facts that the particular claim needs, such as an objective, coordination relation, or capability envelope.
 3. **Supervision is overread.** A coordination mechanism is treated as a containing whole, safety warrant, or complete system recognition without the corresponding direct facts.
 4. **Transformation is confused with containment.** One system changing another holon is treated as part-whole construction instead of transformation and work.
 5. **Architecture description replaces architecture.** Dashboards, diagrams, simulations, bills, and digital twins are treated as the operating system rather than descriptions of it.
@@ -54,7 +54,7 @@ Without this specialization:
 
 ### B.2.2:4 - Solution
 
-After B.2 leaves a whole-reidentification question open, continue with the same exact candidate new whole and direct facts. Add no system-specific result species or context-shaped slice.
+After B.2 leaves a whole-reidentification question open, continue with the same candidate new whole and its direct facts.
 
 #### B.2.2:4.1 - Reuse The B.2 Candidate And Complete System Recognition
 
@@ -147,7 +147,7 @@ If the only change is a better dashboard or one more service, use architecture-d
 
 #### B.2.2:5.3 - Production Cell
 
-A machine, robot, fixture, workpiece carrier, and inspection station can become a production cell when the cell has its own delimitation, objective, obtaining coordination relations, transformation structure, exact work occurrences, and capability envelope. Evidence separately supports the claims about those facts.
+A proposed production cell has a machine, robot, fixture, workpiece carrier, and inspection station as candidate constituents. Apply :4.1 to recognize the whole. For the operating-cell case, separately establish its delimitation, objective, coordination relations, transformation structure, Work occurrences, and capability envelope, with evidence for those claims.
 
 A fixture being manufactured as a workpiece is not part of the machine merely because the machine changes it. The production cell claim needs a result system; the manufacturing relation remains transformation and work.
 
@@ -189,7 +189,7 @@ A fixture being manufactured as a workpiece is not part of the machine merely be
 Positive consequences:
 
 - Meta-system transition remains usable for engineering and organizational systems without making B.2 system-only.
-- System ontic preservation becomes explicit: the same exact candidate is recognized under A.1 and `U.System`, while each system fact and claim stays with its subject pattern.
+- A.1 and the `U.System` criterion apply to the same candidate; each additional system claim retains its own grounds.
 - Assurance, responsibility, architecture, work, and evidence claims are kept with their subject patterns.
 
 Costs:
@@ -202,7 +202,7 @@ Costs:
 
 Valentin Turchin's meta-system transition remains a useful intuition for the system case: components can become a higher operating whole when coordination and control create a new object of management and assurance. FPF generalizes that intuition in B.2, then uses B.2.2 to keep the classical system case precise.
 
-The key distinction is ontological, not lexical. A whole proposed for recognition under the admitted `U.System` kind is not a trigger profile, coordination mechanism, graph, description, dashboard, or process label. It is one exact candidate new whole that satisfies A.1 and the direct `U.System` criterion; every changed system fact and claim stays with its subject pattern.
+Recognizing the candidate requires actual construction and acting eligibility under A.1 and the `U.System` criterion. A description or coordination claim supplies only its own contribution; every additional claim about the recognized system needs its subject-specific grounds.
 
 ### B.2.2:10 - SoTA-Echoing
 

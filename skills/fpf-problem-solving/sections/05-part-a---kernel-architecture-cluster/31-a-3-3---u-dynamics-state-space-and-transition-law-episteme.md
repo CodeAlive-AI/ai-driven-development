@@ -20,7 +20,7 @@ This pattern identifies the episteme that states the model's state space and tra
 
 A time series describes observations but leaves the next state to be explained. A control instruction selects an action but may leave its physical effect unspecified. Even a declared law can give an inadequate prediction when its chosen state hides a consequential difference, as the two-substance case shows.
 
-A usable account must therefore connect the changing subject, the state distinctions, the transition law and the observations. Its applicability and support must be sufficient for the particular prediction or decision, which may demand more than the initial model comparison.
+A usable account must connect the changing subject, the state distinctions and the transition law, adding the observation relation when the question uses observations. Its applicability and support must be sufficient for the particular prediction or decision, which may demand more than the initial model comparison.
 
 ### A.3.3:3 - Forces
 
@@ -294,7 +294,7 @@ A familiar equation or a well-fitting simulation can also encourage extrapolatio
 
 An explicit state and transition law lets the practitioner calculate a possible trajectory and compare it with observations through a declared relation. A failed comparison can then change a particular state choice, parameter, observation account or applicability condition.
 
-The work costs more than collecting measurements: the model needs interpretable characteristics and a supported law. A bounded prediction may be sufficient; a more consequential use may require additional observation, calibration or validation under :4.6.
+Constructing the model requires interpretable characteristics and a supported law. A bounded prediction may be sufficient; a more consequential use may require additional observation, calibration or validation under :4.6.
 
 ### A.3.3:10 - Rationale
 
@@ -306,7 +306,7 @@ The needed prediction determines which state distinctions have to remain recover
 
 | Available description | What it answers | Added effort and limit |
 | --- | --- | --- |
-| One present total | Bounds the next total between one quarter and one half of the present total. | Cheapest when that interval settles the question; it cannot select one exact next value under unequal retention. |
+| One present total | Bounds the next total between one quarter and one half of the present total. | Needs only the present total when that interval settles the question; it cannot select one exact next value under unequal retention. |
 | The two component masses | Determines the next state and total directly. | Requires observing or otherwise establishing the composition. |
 | Two consecutive exact totals | Recovers the two masses, then predicts by the derived second-order recurrence. | Replaces a composition observation with a second timed reading; noisy readings require an error account. |
 

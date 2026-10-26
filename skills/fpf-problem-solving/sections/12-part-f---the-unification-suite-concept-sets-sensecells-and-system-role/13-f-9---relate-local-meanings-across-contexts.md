@@ -38,7 +38,7 @@
 
 Cross-context work fails in predictable ways:
 
-1. **String-equals fallacy.** Identical spellings such as "process", "role", "accuracy", or "ready" are taken as identical meaning.
+1. **String-equals fallacy.** An identical spelling, such as "process", is taken as identical meaning.
 2. **Relation-to-use jump.** A true semantic correspondence is treated as sufficient for whatever comparison, substitution, translation, or publication is wanted next.
 3. **Design-run jumping.** Design artefacts are substituted for run-time occurrences, or run-time occurrences are treated as design definitions.
 4. **Direction amnesia.** A symmetric relation is read as two use licences, or narrower and broader senses are used in the unsafe direction.
@@ -70,7 +70,7 @@ Start with the two exact local senses, not with a context object, mapping table,
 <ReferenceScheme by value, LocalExpression, LocalSenseClaim>
 ```
 
-For F.9, **semantic bounded context** is a Plain practice name for the local interpretation basis recovered from one exact cell's `<ReferenceScheme, LocalSenseClaim>` projection. It is not an entity, relation participant, selected model-use structure, project situation, scope, viewpoint, description, designator, or reference. Two expressions under the same projection remain with ordinary designation and scope operations. Different projections make a Bridge question possible but do not make a Bridge obtain.
+For F.9, **semantic bounded context** is a Plain practice name for the local interpretation basis recovered from one exact cell's `<ReferenceScheme, LocalSenseClaim>` projection. It names this interpretation basis, not a separate FPF entity, relation participant, or selected model-use Structure. Two expressions under the same projection remain with ordinary designation and scope operations. Different projections make a Bridge question possible but do not make a Bridge obtain.
 
 When the two cells are from different semantic contexts, declare one relation-semantic `BridgePredicateProfile` and test it against their current meanings. Shared spelling, different schemes, a mapping implementation, a card, a registry entry, evidence, an assessment score, or publication establishes none of those facts by itself.
 
@@ -157,7 +157,7 @@ A Bridge kind classifies the direct semantic relation tested by a profile. It sa
 
 #### F.9:6.1 - Same-family relation kinds
 
-1. **Equivalence** - the endpoint senses have the same extension and relevant intension under the stated relation condition. The relation is symmetric and should be rare. A later use still names its direction, rule, and tolerance.
+1. **Equivalence** - the endpoint senses have the same extension and relevant intension under the stated relation condition. The relation is symmetric. A later use still names its direction, rule, and tolerance.
 2. **Narrower-than** - the source sense is properly included in the receiving sense. The relation is asymmetric.
 3. **Broader-than** - the source sense properly includes the receiving sense. The relation is asymmetric.
 4. **Partial-overlap** - the senses have a non-empty intersection, while each has cases excluded by the other. The relation is symmetric.
@@ -304,7 +304,7 @@ A second premise is still required. The C.2.1 claim names the proposed type-stru
 
 #### F.9:12.4 - Setpoint versus service target
 
-`CTRL:setpoint` and `ITIL:target` share a familiar word but usually have only `Partial-overlap` or are `Disjoint` under the exact readings. A proposed substitution in a control calculation receives a negative bounded-use claim because its rule and tolerance cannot preserve the physical-reference meaning. A didactic comparison may receive a different affirmative claim. Neither claim changes which Bridge obtains.
+`CTRL:setpoint` and `ITIL:target` can both be described as a "target", but usually have only `Partial-overlap` or are `Disjoint` under the exact readings. A proposed substitution in a control calculation receives a negative bounded-use claim because its rule and tolerance cannot preserve the physical-reference meaning. A didactic comparison may receive a different affirmative claim. Neither claim changes which Bridge obtains.
 
 ### F.9:13 - Common Anti-Patterns and How to Avoid Them
 
@@ -511,13 +511,12 @@ An actual card can package the relation claim, bounded-use claim, evidence path,
 
 ### F.9:20 - Bias-Annotation
 
-Lenses tested: governance, architecture, ontology and episteme, pragmatics, didactics. Scope: universal for cross-context correspondence and reuse.
 
 * **Governance bias.** The pattern adds a separate use claim and reliance check. Mitigation: keep them in ordinary sentences when durable packaging has no payoff.
 * **Architecture bias.** Typed relation profiles can look heavier than synonym prose. Mitigation: the five-part script begins with the practical action and introduces exact terms only where they stop a real overread.
 * **Ontology and episteme bias.** F.9 resists global meaning claims and keeps claims separate from their subject. Mitigation: explicit Bridges still permit practical cross-context comparison.
 * **Pragmatic bias.** Conservative separation can feel slower than reusing a mapping table. Mitigation: a fixed Bridge can support many independently stated uses without being reidentified.
-* **Didactic bias.** The four-object split can become bureaucratic if written only in internal nouns. Mitigation: every use starts by saying what a person will do, what rule they will follow, and what result would make them stop.
+* **Didactic bias.** An explanation using only internal nouns can obscure the action. Mitigation: every use starts by saying what a person will do, what rule they will follow, and what result would make them stop.
 
 ### F.9:21 - Conformance Checklist
 
@@ -551,7 +550,7 @@ An F.9 use conforms iff:
 
 Cross-context comparison is unavoidable, but the truth of a semantic relation and the suitability of one action are different claims. Putting direction, a use rule, and tolerated loss into `BridgePredicateProfile` would reidentify the relation whenever the proposed use changed. Putting them in a separate C.2.1 claim lets one Bridge remain fixed while several uses are affirmed, rejected, narrowed, or reopened independently.
 
-The same separation keeps evidence honest. A.10 or B.3 can reopen reliance without erasing the relation. A card can travel without becoming the relation. A proposed use can be warranted without being authorized or performed. These boundaries preserve practical reuse and make each failure local and repairable.
+A.10 or B.3 can reopen reliance without erasing the relation. A card can travel without becoming the relation. A proposed use can be warranted without being authorized or performed. These boundaries preserve practical reuse and make each failure local and repairable.
 
 ### F.9:24 - SoTA-Echoing
 
@@ -570,7 +569,7 @@ A reusable description/Card states its mode and exact C.2.1 identity. An actual 
 
 #### F.9:25.2 - One occurrence, several claims and descriptions
 
-Several bounded-use claims, cards, reviews, or publications may concern the same actual Bridge. Their C.2.1 identities differ when their ClaimGraph, EntityOfConcern, or effective scheme differs; the Bridge identity does not. Prefer one primary current card only when it reduces navigation cost.
+Several bounded-use claims and description/Card epistemes may concern the same actual Bridge. Their C.2.1 identities differ when their ClaimGraph, EntityOfConcern, or effective scheme differs; the Bridge identity does not. Any review Work or publication occurrence is identified separately under its subject pattern. Prefer one primary current card only when it reduces navigation cost.
 
 #### F.9:25.3 - Revision without silent ontology change
 
@@ -578,7 +577,7 @@ If evidence, observed loss, reliance, assurance, wording, or publication changes
 
 ### F.9:26 - Bundle and endpoint interaction
 
-Viewpoint bundles, quality bundles, dashboards, reports, and endpoint bundles may cite Bridges and bounded-use claims, but they do not absorb their semantics. Each bundle keeps its own ontology and direct use rule.
+Descriptions and displays may cite Bridges and bounded-use claims; their governed objects and rules of use remain separate.
 
 When a quality-family claim crosses contexts, observed loss may bear on its bounded-use claim and on B.3 assurance, but neither fact retypes the quality family. An F.9.1 stance note may help readers interpret the claim; it remains a separate episteme and cannot widen the relation, proposed use, reliance, authorization, or occurrence.
 
@@ -599,6 +598,6 @@ A reader can test bridge integrity with eight questions:
 7. If someone says the use happened, is the actual Work, assertion, publication, relation, operation application, or other object recovered under its own pattern?
 8. Does any card remain optional packaging rather than the source of relation truth, permission, or occurrence?
 
-Repair *same*, *equivalent*, *align*, and *map* prose in that order: recover the exact senses; test the Bridge; state the bounded-use claim; check reliance; recover authorization or the actual receiving object only when those questions are live. Do not start from a polished card or a score.
+Repair *same*, *equivalent*, *align*, and *map* prose in that order: recover the exact senses; test the Bridge; state the bounded-use claim; check reliance; recover authorization or the actual receiving object only when those questions are live. Do not start from a card or a score.
 
 ### F.9:End

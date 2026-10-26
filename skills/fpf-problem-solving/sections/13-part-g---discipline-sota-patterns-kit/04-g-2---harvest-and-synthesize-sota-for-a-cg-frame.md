@@ -4,7 +4,7 @@
 > **Status:** Stable
 > **Normativity:** Normative *(unless explicitly marked informative)*
 >
-> **Purpose.** Provide a repeatable, auditable way to **discover**, **triage**, and **synthesize** state‑of‑the‑art (SoTA) across competing `Tradition` lineages *before* minting CHR/CAL/LOG assets for a `CG‑Frame`.
+> **Purpose.** Provide a repeatable, auditable way to **discover**, **triage**, and **synthesize** state‑of‑the‑art (SoTA) across competing `Tradition` lineages for CHR/CAL/LOG authoring and method selection in a `CG‑Frame`.
 >
 > **Start here.** Write the question the receiving CHR, CAL or selector work must answer. Before counting coverage, fix the source population and what counts as the same family. Distill the first source claims with their editions, evidence and limits, keeping competing lineages separate. The first useful result is a claim set that can answer part of that question and expose what is still missing. Use the manifest below when developing it into a conforming synthesis pack; a single-source fact lookup can return its source directly without creating such a pack.
 > The primary output is a **`SoTA Synthesis Pack@CG‑Frame`** that feeds:
@@ -25,7 +25,7 @@ A team extends FPF into a new `CG‑Frame`. The relevant literature is typically
 * **plural** (multiple `Tradition` lineages with incompatible commitments),
 * **source- and use-sensitive** (results depend on the exact source and edition, claim region, EntityOfConcern, comparison basis, evidence, and receiving use),
 * **method‑heterogeneous** (different evidence styles, operator sets, and validity regions),
-* **time‑sensitive** (rapid drift post‑2015; frequent benchmark/protocol shifts).
+* **time-sensitive** (new evidence or changed benchmarks and protocols can alter a claim's applicability).
 
 Downstream Part-G work in CHR, CAL, selection, shipping, and refresh depends on citation-ready claims that keep each exact CG-frame, source edition, claim region, EntityOfConcern, comparison basis, evidence anchor, and actual cross-source relation recoverable.
 
@@ -33,9 +33,9 @@ Downstream Part-G work in CHR, CAL, selection, shipping, and refresh depends on 
 
 How can we systematically assemble a SoTA view that is:
 
-1. **pluralist but comparable** (plurality preserved; comparability is achieved only via explicit crossings),
+1. **pluralist but comparable** (preserve plurality and establish the correspondence and comparison basis required for the intended use),
 2. **evidence‑addressable** (claims cite auditable evidence surfaces and anchors),
-3. **actionable** (produces inventories and citable publication forms usable in G.3, G.4, and G.5 without treating a card as a meaning container or selector authority),
+3. **actionable** (supplies source-qualified claims and candidate inventories for G.3, G.4 and G.5),
 4. **refreshable** (editions/policies/windows are pinned so RSCR/refresh can re‑audit and re‑run without semantic drift)?
 
 ### G.2:3 - Forces
@@ -167,7 +167,7 @@ A view‑friendly description object (pack‑local `SoTAPaletteDescriptionId`) t
 * `MicroExamples`, `UTSProposals`,
 * and the `entityOfConcern Map` for citation and later CHR/CAL authoring.
 
-**Note (normative intent):** this is the primary “consumable surface” for `G.3/G.4/G.5`; it prevents downstream patterns from scraping free prose.
+`G.3/G.4/G.5` use this export view to find and cite the pack components.
 
 **Editorial template: 1‑page “SoTA Sheet” per Tradition (informative).**
 When authoring `ClaimSheets[Tradition]`, teams often benefit from a single‑page template: scope + claims + evidence anchors + validity region + failure modes + freshness window + cross‑Tradition reuse notes + pointers to micro‑examples.
@@ -195,7 +195,9 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 5. **Build alignment/divergence surfaces.**
    Where reuse across `Tradition` is desired, record the obtaining correspondence and its exact basis in `BridgeMatrix`: F.9 for sense correspondence, C.3.3 for kind correspondence, or the direct rule for a plane relation, as actually used. State preserved distinctions and losses for the receiving question. Consolidation requires explicit alignment proof. Add bundle or gate anchors only for an independently applicable E.18 flow crossing or A.21 gate, under `CC‑GCORE‑CROSS‑1`.
 
-6. **(Alias: G.2‑F) Produce Γ_epist synthesis records when fusion/substitution is asserted.**
+6. **(Alias: G.2‑F) Construct a needed synthesis and record asserted fusion/substitution.**
+   Use B.1.3:4.4 to construct a joint conclusion from the source claims when the receiving question needs one. Recover their support and conflict relations, shared dependencies, subject and applicability before composing. A qualified synthesis with separately stated support can suffice when no common numerical model is justified.
+
    If a `G.2` pack publication asserts fusion or substitution across sources or across `Tradition` records (beyond mere “parallel divergent claims”), it **MUST** emit `GammaEpistSynthId` records per `G.2:Ext.GammaEpistSynthesis` (provenance union + explicit object alignment refs + assurance tuple refs), and it **MUST** keep penalties routed to `R_eff` only by delegation (`CC‑GCORE‑PEN‑1`).
 
 7. **Publish teachable micro‑groundings.**
@@ -243,13 +245,13 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 
 * `GammaEpistSynthId[]` *(pack‑local ids of synthesis records; emitted iff fusion/substitution is asserted)*
 * `EvidenceAnchorRef[]` *(provenance union; evidence carriers cited by A.10 evidence-provenance paths)*
-* `BridgeMatrixId` and `BridgeCardId[]` *(explicit object alignment references when crossing is involved)*
+* `BridgeMatrixId` and the applicable correspondence references when a sense, kind or plane relation is used; include `BridgeCardId[]` for an F.9 semantic bridge
 * `CL/CL^plane` and `Φ/Ψ/Φ_plane policy-ids` when required by the cited crossing or actually used loss model *(semantics and penalties → `R_eff` remain governed by the cited definitions)*
 * `PathId/PathSliceId?` *(only when citing via `G.6`)*
 
 **RSCRTriggerKindIds:** `{RSCRTriggerKindId.EvidenceSurfaceEdit, RSCRTriggerKindId.CrossingBundleEdit, RSCRTriggerKindId.ReferencePlaneEdit, RSCRTriggerKindId.PenaltyPolicyEdit, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.EditionPinChange}`
 
-**Notes (normative intent; duplication‑avoidant):**
+**Synthesis and its record (normative):**
 * The auditable synthesis record identified by `GammaEpistSynthId` binds: (i) provenance union, (ii) explicit object alignment refs, (iii) assurance tuple refs (via their governing definitions) for each asserted fusion/substitution. A B.1.3 `Γ_epist^synth` application and its returned episteme remain separate from this record.
 * This extension cites the `Γ‑fold`, `Φ`, and penalty rules through `G.Core` and exposes the pins needed for replay. When B.3/C.2.2 supplies no justified common numerical score or loss calculation, retain the separate support, actual mapping limitations and bounded assurance conclusion; a synthesis record does not supply the missing model.
 
@@ -338,15 +340,13 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 
 #### G.2:4.6 - Palette first
 
-- `SoTAPaletteDescription` is one plurality-preserving palette.
-- It is not by itself one `Front`, one `Archive`, or one `Shortlist`.
-- When that palette's members are traditions, `TraditionPalette` is the reader-facing tradition-only palette head over the same palette declaration, not one second governing definition. For methods, hypotheses, or other members, keep `SoTAPaletteDescription` or `Palette + SubjectKind` explicit instead.
-- Traditions remain in the palette until a later surface declares comparison, retention, or choice semantics explicitly.
-- `TraditionFront` is one derived view over the declared palette under one declared `Q`; the `Q` basis stays pinned separately and the view does not rename `Tradition` or `SoTAPaletteDescription`.
-- `TraditionArchive` is one derived retention view over that same palette under one declared reachability or coverage rule; that rule stays pinned separately and the view does not turn the palette into one archive by default.
-- When one derived tradition view is shown, keep the base palette recoverable at the same time.
-- When comparison or retention needs richer geometry or atlas language, treat that as support for the derivation rather than as the default meaning of the palette.
-- A reader should be able to say both `this is the palette` and `this is the derived tradition view currently being shown` without collapsing those two objects.
+`SoTAPaletteDescription` is the base, plurality-preserving palette. Keep it recoverable while displaying a derived front, archive or shortlist. A derived view declares its own comparison, retention or choice semantics; it does not replace the base palette or silently remove its members.
+
+When the palette's members are traditions, `TraditionPalette` is the reader-facing name for that same palette declaration. For methods, hypotheses or other members, use `SoTAPaletteDescription` or `Palette + SubjectKind`.
+
+A `TraditionFront` is derived under a declared `Q`. A `TraditionArchive` is derived under a declared reachability or coverage rule. Pin each view's governing basis separately; neither view renames `Tradition` or changes the base palette's meaning.
+
+Use richer geometry or atlas language when the comparison or retention question needs it to explain the derivation. Keep that interpretation separate from the palette's default meaning.
 
 #### G.2:4.7 - Optional atlas interpretation of a declared palette
 
@@ -385,18 +385,17 @@ G.1 M2 and the G.3–G.5 consumers cite the chosen pack judgement with its purpo
 
 ### G.2:6 - Bias-Annotation (informative)
 
-Bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: harvesting and synthesis for a `CG‑Frame`.
 
-* **Selection bias (Gov/Onto).** Any harvesting protocol can over‑represent certain venues, languages, or evidence styles.
+* **Selection bias.** Any harvesting protocol can over‑represent certain venues, languages, or evidence styles.
   *Mitigation:* pluralism floor + explicit `CorpusLedger` + explicit protocol pins.
 
-* **Consolidation bias (Onto/Epist).** Pressure to “merge” lineages can erase incompatible commitments.
+* **Consolidation bias.** Pressure to “merge” lineages can erase incompatible commitments.
   *Mitigation:* keep Claim Sheets disjoint by default; require explicit alignment proof for fusion; preserve loss notes.
 
-* **Recency bias (Prag).** Overweighting newest papers can hide durable backbone results; underweighting them misses SoTA drift.
+* **Recency bias.** Overweighting newest papers can hide durable backbone results; underweighting them misses SoTA drift.
   *Mitigation:* publish freshness windows and make them RSCR‑relevant.
 
-* **Didactic bias (Did).** Micro‑examples can steer interpretation toward familiar domains.
+* **Didactic bias.** Micro‑examples can steer interpretation toward familiar domains.
   *Mitigation:* require heterogeneous substrates and explicit A.10 anchors.
 
 ### G.2:7 - Conformance Checklist (normative) — **CC‑G2**
@@ -455,15 +454,14 @@ Bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: harves
 ### G.2:9 - Consequences
 
 * **Positive:** Downstream CHR/CAL/dispatch work becomes faster and less ambiguous because the pack is citable and structured.
-* **Positive:** Plurality is preserved while still enabling disciplined comparability through explicit crossings.
+* **Positive:** Plural claims remain available, with the correspondences and comparison basis needed for any joint use.
 * **Positive:** Refresh becomes tractable because pins and typed causes exist.
 * **Negative:** Adds authoring overhead (ledger, flow record, micro‑examples, explicit pins).
 * **Negative:** Requires governance discipline to prevent the pack from becoming an uncontrolled “everything bucket”.
 
 ### G.2:10 - Rationale
 
-SoTA synthesis is a bottleneck for new `CG‑Frame` work: without a disciplined harvest, downstream formalization (CHR/CAL) and operational selection (G.5) either (i) inherit hidden semantic collisions, or (ii) re‑invent incompatible “mini‑standards.”
-`G.2` resolves this by treating SoTA work as a **publishable kit**: explicit plurality, explicit crossings, explicit evidence anchors, and explicit hand‑offs.
+Source-qualified claims let CHR/CAL authors and G.5 selectors reuse a comparison basis without re-harvesting it. Separate Claim Sheets preserve lineage commitments; justified mappings and support relations permit a qualified joint conclusion. The pack keeps these grounds citable for reuse and refresh.
 
 ### G.2:11 - SoTA-Echoing — keep a reusable synthesis current without restarting it
 
@@ -471,11 +469,11 @@ SoTA synthesis is a bottleneck for new `CG‑Frame` work: without a disciplined 
 
 The [Cochrane Handbook, Chapter 22, §§22.2.3–4](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22) supplies the conditional living-review line and its resource trade-off: priority, uncertainty and likely new evidence can justify frequent updates, while additional searching needs resources. **Adapt** this conditional choice in `HarvestProtocols`; declare the search/update policy rather than treating every G.2 pack as perpetually living. The clinical-review guidance does not establish coverage or evidence adequacy for an arbitrary engineering CG-frame.
 
-The [PRISMA 2020 reporting guidance](https://www.prisma-statement.org/prisma-2020) supplies the substantive static-review comparator and a shared reporting basis. Its [explanation of study selection](https://www.bmj.com/content/372/bmj.n160) distinguishes records, reports and included studies. **Adapt** the distinction to `CorpusLedger`, `FlowRecord` and the declared family units in §4.3: multiple source entries can concern one counted family. **Reject** treating a publication count or a completed flow diagram as proof of adequate family coverage. G.2's k threshold, lineage duties and FPF alignment rules remain local decisions, not PRISMA requirements.
+The [PRISMA 2020 reporting guidance](https://www.prisma-statement.org/prisma-2020) supplies a shared reporting basis for the static-review comparator. Its [explanation of study selection](https://www.bmj.com/content/372/bmj.n160) distinguishes records, reports and included studies. **Adapt** the distinction to `CorpusLedger`, `FlowRecord` and the declared family units in §4.3: multiple source entries can concern one counted family. **Reject** treating a publication count or a completed flow diagram as proof of adequate family coverage. G.2's k threshold, lineage duties and FPF alignment rules remain local decisions, not PRISMA requirements.
 
 The [2024 PRISMA-LSR extension](https://www.bmj.com/content/387/bmj-2024-079183) supplies the more specific reporting line for an actually selected living protocol: justify that mode, identify the version's trigger and changes, and plan when to retire it. **Adapt** that distinction to the policy pins, change causes and downstream handoffs in §4.3 and `G.2-2 Extend`; G.11 governs refresh orchestration. Source reporting guidance does not supply an automatic update schedule or establish that a newly added claim is sound.
 
-The control-stack case in §5.1 makes the improvement concrete. If e1's operating-envelope claim is revised, the existing ledger identifies M-R and its consumers; re-examine that claim and the comparisons that depend on it. The new report does not add a family. The method-only count remains 2 until a distinct admitted method-family unit is found. A static review can also be updated correctly, but each separate consumer must recover the changed basis unless a shared update is published. For the same new source and receiving question, the selected pack reuses existing screening and claim relations; its added maintenance burden is justified only while repeated shared use and consequential change make that work useful.
+The control-stack case in §5.1 makes the improvement concrete. If e1's operating-envelope claim is revised, the existing ledger identifies M-R and its consumers; re-examine that claim and the comparisons that depend on it. The new report does not add a family. The method-only count remains 2 until a distinct method-family unit within the declared population is found. A static review can also be updated correctly, but each separate consumer must recover the changed basis unless a shared update is published. For the same new source and receiving question, the selected pack reuses existing screening and claim relations; its added maintenance burden is justified only while repeated shared use and consequential change make that work useful.
 
 Reopen the choice of protocol when the evidence rate, decision importance, uncertainty or maintenance resources change; retire living surveillance when its reason no longer holds. Reopen an individual synthesis when a new source changes a relied-on claim, coverage judgement or alignment. A source with a new date but no relevant content change does not by itself warrant reconstructing every downstream conclusion.
 

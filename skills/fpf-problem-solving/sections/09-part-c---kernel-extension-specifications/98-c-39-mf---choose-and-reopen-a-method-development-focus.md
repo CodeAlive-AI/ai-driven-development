@@ -11,7 +11,7 @@ Use this pattern when a project says that its “methodology”, “process”, 
 
 Begin with the result that is missing, late, unsafe, or too costly and the representative Work in which that result matters. Recover the Methods and candidate accounts already visible there before choosing the level of focus.
 
-The first useful move is to compare four possible focus classes: one Method; an established family or project-local grouping; named Method relations; and a non-Method return. The practical gain is that later repertoire, qualification, or architecture Work receives the smallest subject it can act on without inventing a Method or a composite.
+The first useful move is to compare four possible focus classes: one Method; an established family or project-local grouping; named Method relations; and a non-Method return. This gives later repertoire, qualification, or architecture Work a supported subject and the relations it needs to address, without inventing a Method or a composite.
 
 Do not use C.39.MF merely because one tool failed, one practitioner lacks capability, one document is incomplete, or one project, process, or case view is inconvenient. Return that question to its direct subject unless changing a Method would change the receiving result.
 
@@ -53,7 +53,7 @@ The project then asks the wrong downstream question. It builds a repertoire for 
 
 C.39 supplies the receiving-result and missing-way inquiry. Use this narrower Method-focus construction when it is not yet clear whether changing a Method, a relation among Methods, or its support would answer that inquiry. An adequate focus supplied by C.39 or A.15.6 is an input, not work to repeat.
 
-Select the smallest focus class whose subject and status are supported and whose change could alter the receiving result. Keep the rejected focus options and one observable reopen condition in the result.
+Select a focus whose subject and status are supported. Compare what addressing each plausible focus could contribute to the receiving decision, together with all the work and resources it requires, using `C.11` or a domain decision Method. Retain the dependencies needed for that contribution, including relations among several Methods when they affect the result. Keep the rejected focus options and one observable reopen condition in the result.
 
 #### C.39.MF:4.1 - Pattern-Use Unfolding
 
@@ -78,7 +78,7 @@ Select the smallest focus class whose subject and status are supported and whose
 
 #### C.39.MF:4.3 - What Changes in Practice
 
-The project stops asking which named methodology should replace another. It first decides whether the live subject is one Method, a governed family or local grouping, relations among several Methods, or a non-Method condition. Downstream Work becomes smaller, and a useful plurality can remain plural without being packaged as a fictitious composite.
+The project stops asking which named methodology should replace another. It first decides whether the live subject is one Method, a governed family or local grouping, relations among several Methods, or a non-Method condition. Downstream Work can address the selected subject and the relations on which its result depends. A useful plurality can remain plural without being packaged as a fictitious composite.
 
 ### C.39.MF:5 - Archetypal Grounding — EC-417 Release Focus
 
@@ -99,7 +99,7 @@ The status inventory contains four identified Methods: `M-HW-Verify`, `M-SW-Inte
 | one Method: `C-EC-Release-v2` | rejected because the whole is not identified as a Method |
 | established release-Method family | rejected because no governed family membership is supplied |
 | project-local `LG-EC417-ReleaseMethods` grouping | retained only as a comparison locator; no family claim |
-| candidate account: `C-AI-Trace-Review` | not selected as the current focus because its bounded trace suggestions govern neither evidence reconciliation nor release authority; candidate-account status is preserved |
+| candidate account: `C-AI-Trace-Review` | not selected as the current focus because its bounded trace suggestions supply neither the evidence-reconciliation result nor a release-authorization result; candidate-account status is preserved |
 | relations among the four Methods and two reconciliation accounts | selected because evidence timing, result use, allocation, and authority relations change the release decision |
 | test-rig support decision | retained as a rival non-Method return, but current evidence does not make it the sole focus |
 
@@ -133,7 +133,7 @@ The schedule exposes a timing conflict, the reusable accounts expose the checks 
 | “These methods are our family.” | Use a local grouping unless governed membership is independently established. |
 | “The tracker shows the real process.” | Recover what the recorded claims concern and their coverage and loss; a tracker label establishes neither a Method nor a view. |
 | “Several contributors imply one composite.” | Return a Method-relation focus and send a proposed whole to B.1.5.CM only when that later question is live. |
-| “Choose the smallest item.” | Choose the smallest *decision-changing* subject, which may be a relation focus rather than one operation. |
+| “Choose the smallest item.” | Compare the contribution and full burden of the plausible focus options; retain the dependencies needed for the receiving result. |
 
 ### C.39.MF:9 - Consequences
 
@@ -143,7 +143,7 @@ The cost is a short recovery of Work, views, statuses, and non-Method alternativ
 
 ### C.39.MF:10 - Rationale
 
-The focus determines which claims are admissible in later Method use. Preserving the difference among a Method, family, local grouping, relation focus, and non-Method subject prevents downstream qualification or architecture prose from silently upgrading an unsupported object.
+The focus identifies the subject and relations that later Method development must address. Preserving the difference among a Method, family, local grouping, relation focus, and non-Method subject prevents downstream qualification or architecture prose from silently upgrading an unsupported object.
 
 C.39.MF connects questions about Methods, their descriptions, Work, capability, tools, variants and Method change. Project, process and case accounts help discover those questions. Recovering each claim's subject before selecting its representation preserves both useful accounts of one Work and useful connections among different subjects.
 
@@ -151,9 +151,8 @@ C.39.MF connects questions about Methods, their descriptions, Work, capability, 
 
 | Source | Retained contribution | Use boundary |
 | --- | --- | --- |
-| Current FPF `A.15.6`, `C.11`, `A.3.1`, and `G.5` | Project-relative subject recovery, bounded choice, Method identity, and family/selector discipline. | These patterns do not choose the Method-development focus for the project. |
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Method-ecosystem and element distinctions that help locate a candidate focus. | Source elements are prompts, not FPF kinds or Method parts. |
-| Bender, [embedded-analytics process selection](https://doi.org/10.1007/s10257-024-00675-1) | Current context-specific selection evidence. | One application population does not establish a universal focus taxonomy. |
+| Bender, [embedded-analytics process selection](https://doi.org/10.1007/s10257-024-00675-1) | Context-specific process-selection evidence. | One application population does not establish a universal focus taxonomy. |
 
 Reopen the affected rule when a current source or representative use exposes another materially different focus class, or when an account's subject, status, or omitted claim changes the Method question or non-Method return.
 

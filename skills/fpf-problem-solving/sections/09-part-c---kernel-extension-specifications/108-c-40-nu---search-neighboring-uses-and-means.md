@@ -68,7 +68,7 @@ Use explicit value questions: what would matter to a receiver, what burden shoul
 
 #### C.40.NU:4.3 - Keep the operation, source, and claim status together
 
-For each retained lead, say what was varied, where the idea came from, what concrete difference might matter, and what remains unsupported. Preserve a source date or edition when its currentness affects the next use. Distinguish the source's actual claim from the inference made for this subject.
+For each retained lead, say what was varied, where the idea came from, what concrete difference might matter, and any material limit or unsupported premise. Preserve a source date or edition when its currentness affects the next use. Distinguish the source's actual claim from the inference made for this subject.
 
 For example: “The supplier describes long-record retrieval; changing the receiving use from automatic approval to claim-to-evidence recovery suggests a possible review aid. We have no result establishing its accuracy or permitted use with these records.” That is a search lead with a testable connection, not a supplier-validated opportunity.
 
@@ -86,7 +86,7 @@ Mark leads as ready for problem/contribution inquiry, conditional on a named pre
 
 Stop widening when the retained contrasts expose the unknowns that can change the inquiry at its chosen effort, when an adequate set already exists, or when a missing premise makes further generation uninformative. If the effort limit is reached first, report that limit and any consequential unsearched area; do not describe the search as sufficient merely because the time was spent.
 
-State the next discriminating question and how plausible answers would change the leads. Use `C.40.PC` when the missing result is the receiver's worthwhile problem or proposed contribution, and `C.40.DC` when that result is already adequate and directions need support configurations. A return to one missing frame or characteristic is also a complete outcome.
+When the receiving inquiry needs a further answer, state the discriminating question and how plausible answers would change the leads. A sufficient local result or adequate lead set can end the search. Use `C.40.PC` when the missing result is the receiver's worthwhile problem or proposed contribution, and `C.40.DC` when that result is already adequate and directions need support configurations. A return to one missing frame or characteristic is also a complete outcome.
 
 A two-sentence return can suffice: “Changing the use and support exposed claim-to-evidence recovery and shift-exception handoff as different leads; three other products repeat the first mechanism. We stopped after the agreed source search because the next difference depends on whether receivers need either contribution; accessibility beyond the current office use remains unsearched.”
 
@@ -159,16 +159,16 @@ A conforming search return:
 | --- | --- | --- |
 | Five brands, one possibility | The receiving use and mechanism remain unchanged. | Vary the contribution, characteristic, or support that could alter the inquiry. |
 | Idea-count target | Quantity says nothing about decision-bearing differences. | Name the difference each retained lead exposes and stop at useful coverage or a gap. |
-| Analogy as permission | Another configuration's demonstration supplies no local access or safety basis. | Retain a conditional lead and request the receiving owner's result. |
+| Analogy as permission | Another configuration's demonstration supplies no local access or safety basis. | Retain the conditional lead; obtain the receiving practice's result when its attainable contribution warrants the burden. |
 | Protected constraint deleted | The attractive lead depends on an unauthorized change. | Keep the limit or investigate a separately authorized alternative. |
-| Infinite ideation | Generation postpones the receiver or evidence question. | State which answer would retain, narrow, or reject the lead and obtain that answer. |
+| Infinite ideation | Generation postpones the receiver or evidence question. | State which answer would retain, narrow or reject the lead; obtain it when worthwhile, or finish with the conditional result or gap. |
 | Archive as value verdict | Retention is mistaken for a useful or non-dominated opportunity. | Name the archive's actual retention basis and keep worth and comparison separate. |
 
 ### C.40.NU:9 - Consequences
 
 The practitioner can explain how a search changed the possibilities under consideration and why it stopped. An old capability with better support can remain alongside a new technology. Rejected or unresolved leads retain reasons that make later reconsideration local.
 
-The cost is a small amount of source and difference tracking. Search can end without a positive opportunity, and relevant unsearched areas may remain. The result supports the next inquiry; it supplies neither the receiver's value evidence nor the subject's feasible development change.
+The cost includes generating contrasts and retaining their source and difference basis. Search can end without a positive opportunity, and relevant unsearched areas may remain. The result supports the next inquiry; it supplies neither the receiver's value evidence nor the subject's feasible development change.
 
 ### C.40.NU:10 - Rationale
 

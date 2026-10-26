@@ -3,8 +3,6 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** a **Method-recovery dossier** whose entries retain their existing kinds or ordinary statuses, provenance, source meaning, viewpoint, bounded use, and decision-bearing relations. For qualification, A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts; B.1.5.CM receives a proposed-whole account when whole identity and relations are the question.
-
 ### A.3.1.DR:1 - Problem Frame
 
 **Use this when.** A methodology, standard, body of knowledge, maintained synthesis, reference model, or tool suite mixes reusable ways of doing with descriptions, Systems, capabilities, evidence, authority, and support. The receiving decision needs contributions from one package or several documentary sources, but their chapters and component lists do not establish Method structure.
@@ -35,7 +33,7 @@ Method Content Theory and design-Method element research contribute questions ab
 
 ### A.3.1.DR:2 - Problem
 
-The common decomposition error copies package headings into a Method library. A role becomes a Method, a checklist becomes a component, a tool becomes a participant Method, and adjacency becomes `methodPartOf`. The opposite error extracts a procedure alone and loses the rationale, input/result correspondence, authority, evidence, or support condition that makes it usable.
+Copying package headings into a Method library can misidentify the contributions. A role becomes a Method, a checklist becomes a component, a tool becomes a participant Method, and adjacency becomes `methodPartOf`. The opposite error extracts a procedure alone and loses the rationale, input/result correspondence, authority, evidence, or support condition that makes it usable.
 
 A later qualification then appears precise but cannot be replayed from the source and cannot distinguish a Method defect from missing access, capability, evidence, or authority.
 
@@ -64,7 +62,7 @@ Build a source-traceable dossier around the receiving decision. Recover each doc
 5. **Record intended use and possible loss.** Say what the receiving use proposes to keep, change, reject, or leave unresolved and what source meaning or context would be lost. These are source-local recovery dispositions. Do not yet assert cross-source sameness, perform semantic merging, allocate a remainder to a supplier, or design the resulting pattern language.
 6. **Recover direct relations and small dependency slices.** Retain supported production/use, schema correspondence, provider access, allocation, responsibility, authority, or other relevant relations. A line, container, chapter, lane, or local section supplies no relation. Attach only the source claims, conditions, and returns needed for the next judgement.
 7. **Prepare the actual downstream subjects.** A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts, each with the smallest slice needed to judge contribution, inputs/results, applicability, burden, capability, support, authority/access, and evidence. B.1.5.CM receives a proposed-whole account when whole identity and relations are the question; retain its proposed semantics, participant statuses, relation boundary, and source slices. Other kinds remain in the dossier or accompany those subjects without becoming Methods.
-8. **Return the dossier or the first blocking gap.** Use open navigation sections when they help retrieval. Stop when the receiving decision can recover its subjects and source basis. If edition, role, receiving use, a needed current comparator, source return, kind, relation, or evidence is missing, name the affected contribution and the missing basis. Do not manufacture corpus completeness.
+8. **Return the dossier and any blocking gaps.** Use open navigation sections when they help retrieval. Stop when the receiving decision can recover its subjects and source basis. If edition, role, receiving use, a needed current comparator, source return, kind, relation, or evidence is missing, name the affected contribution and the missing basis. Continue unaffected recovery when it can still serve the receiving decision; do not claim completeness beyond the recovered boundary.
 
 ##### A.3.1.DR:4.1.1 - Select the Recovery Profile Per Source
 
@@ -100,7 +98,7 @@ Practitioners can reuse a Method, retain a candidate account, cite a description
 
 ### A.3.1.DR:5 - Archetypal Grounding — EC-417 Release Assurance Package
 
-Source/use boundary for this constructed case: the EC-417 package snapshot specified below, used as documentary Method guidance for the changed release decision; recover the decision-bearing slice, and return when that package, receiving use, or a relied-on condition changes. This one sentence supplies the ordinary one-source contract.
+For this constructed case, take the listed EC-417 package contents as one fixed documentary snapshot. Use it as Method guidance for the changed release decision, recover the decision-bearing slice, and return when the package, receiving use, or a relied-on condition changes. This supplies the source/use boundary for the one-source case.
 
 The EC-417 team receives a “release assurance methodology” containing a stage table, release checklist, supplier procedure, AI prompt, PLM and CI instructions, test-rig guidance, role descriptions, and stored evidence bundles. The receiving decision is whether its Method contributions and candidate reconciliation accounts can support a changed release arrangement.
 
@@ -140,7 +138,7 @@ If C's full argument becomes unavailable but a page-located excerpt remains, ret
 
 ### A.3.1.DR:6 - Bias-Annotation
 
-| Recurring bias | Likely drift | Repair |
+| Bias | Likely drift | Repair |
 | --- | --- | --- |
 | source-taxonomy bias | Goal, procedure, rationale, framing, mindset, representation, role, or tool becomes a universal Method component kind. | Use those terms as source questions and place each returned claim with its actual subject. |
 | diagram-containment bias | A box or lane is read as composition or parthood. | Require the direct relation and its evidence independently. |
@@ -189,10 +187,9 @@ The dossier is deliberately open. Its value lies in tracing source contributions
 | --- | --- | --- |
 | Daalhuizen and Cash, [Method Content Theory](https://doi.org/10.1016/j.destud.2021.101018) | Goal, procedure, rationale, framing, and mindset as questions that prevent procedure-only recovery. | Static content variables and initial study population do not define FPF kinds, Method parts, or cross-domain effectiveness. |
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Core idea, representation, procedure, intended use, tool, ecosystem, and adaptation prompts. | Source elements remain questions and source claims, not a universal dossier ontology. |
-| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Current comparison of engineering-Method knowledge and the placement of representations, framing, and rationale. | Conceptual comparison supplies no project Method identity or package parthood. |
-| Current FPF `A.3.1`, `A.3.2`, `B.1.5`, and `F.18` | Method identity, MethodDescription membership, composition law, and name recovery. | The DPF adds the decision-bounded dossier and dependency-slice Method. |
+| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Comparison of engineering-Method knowledge and the placement of representations, framing, and rationale. | Conceptual comparison supplies no project Method identity or package parthood. |
 
-Reopen when a current source or package case exposes a decision-bearing contribution that cannot retain its kind, provenance, role, and relation in the open dossier; when a source profile hides material receiving conditions; or when the ordinary one-package result acquires burden that its use does not need.
+Revisit the recovered dossier when a source or package case exposes a decision-bearing contribution whose kind, provenance, role or relation remains unclear; when a selected recovery profile omitted a material receiving condition; or when the dossier imposes work that its receiving use does not need.
 
 ### A.3.1.DR:12 - Relations
 

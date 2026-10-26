@@ -15,7 +15,7 @@ Start with the ordinary question: **does this actual bearer have this duty now?*
 
 **Not this pattern when.** Use `A.2.3` for promise content, `A.2.9` for the communicative Work that may institute a duty, and `A.2.8.PER` for permission or authorization. For responsibility, use an admitted domain responsibility predicate; if none exists, return its exact `A.6.RCD` missing governor. Use a gate pattern for admissibility and `A.15.1` for performed Work. If no current subject pattern defines how the proposed individual duty is instituted, return `missing-governor[individual commitment institution]` instead of completing a record by convention.
 
-### A.2.8:0.1 - Kind Settlement and Wording Boundary
+### A.2.8:0.1 - Individual Duty and Source Wording
 
 `U.Commitment` is an enduring individual deontic relation. It covers obligation, recommendation-as-duty, and prohibition.
 
@@ -259,7 +259,7 @@ policy mentions one system-role kind
 | --- | --- | --- |
 | Record-first bias | A filled form is treated as an obtaining relation. | Test the direct predicate; keep the record as an assertion. |
 | Office-label bias | A role, office, or assignment becomes the bearer. | Recover the actual system or party and use the kind or assignment only as a rule ground. |
-| Legal-form bias | A maximal legal-policy schema is imposed on every duty. | Keep the direct participants minimal and add grounds or assurance only when the current claim needs them. |
+| Legal-form bias | A maximal legal-policy schema is imposed on every duty. | Keep the direct participants minimal and establish the rule-required instituting basis. Add further legal-policy detail or assurance only when the receiving claim needs it. |
 | Evidence-as-constitution | An audit trail is treated as what creates the duty. | Keep support and institution separate. |
 | Responsibility overreach | Duty is read as ownership or accountability. | Apply the direct responsibility predicate or return its missing governor. |
 | Keyword bias | `MUST`, `SHALL`, `MAY`, or `responsible` selects an ontology by spelling. | Recover the claim first, then select the exact relation or ordinary non-use. |
@@ -275,7 +275,7 @@ policy mentions one system-role kind
 | `CC-A2.8-5` | The actual instituting basis required by that rule obtains under the pattern that defines that basis. |
 | `CC-A2.8-6` | The occurrence identity and continuity decision distinguish changed bearers, content, rules, and interrupted intervals, and treat a changed instituting basis as identity-bearing exactly when the constitutive rule says so. |
 | `CC-A2.8-7` | System-role kind, classification, assignment, policy, publication, assertion, and evidence are not commitment participants or duty bearers by form. |
-| `CC-A2.8-8` | Responsibility, permission, authority, access, Work, result, and compliance are separately asserted or left unresolved. |
+| `CC-A2.8-8` | When the receiving use needs responsibility, permission, authority, access, Work, result or compliance, its claim is separately governed; the commitment alone supplies none of those results. |
 | `CC-A2.8-9` | An occurrence-description reliance or audit record names its exact `U.Commitment` EntityOfConcern and does not claim to create it. |
 | `CC-A2.8-10` | A missing constitutive rule or instituting-relation governor returns `missing-governor[individual commitment institution]`. Unavailable required evidence leaves reliance `unknown`; demonstrated failure of an obtaining condition yields non-obtaining. Do not complete a placeholder relation. |
 
@@ -283,7 +283,7 @@ policy mentions one system-role kind
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| “The API shall…” as duty-bearer structure | An interface description is an episteme, not the actual bearer. | Identify the policy claim and actual system or party; test institution. |
+| “The API shall…” as duty-bearer structure | The API label leaves unclear whether the sentence states generic policy or an individual duty, and what entity it concerns. | Recover the referent. For an individual duty, identify the actual System or party and test institution under §4.2. |
 | `CommitmentSubject ::= RoleRef | RoleAssignmentRef | PartyRef` | It merges a kind, relation occurrence, and actual bearer. | Use one actual bearer branch; keep kind and assignment in the rule's grounds. |
 | Optional institution source | A published sentence appears sufficient to create the relation. | Require the applicable rule and its actual instituting basis. |
 | Assignment-as-duty | Staffing becomes obligation. | Treat the assignment only as a rule fact and identify a separate commitment. |
@@ -298,13 +298,13 @@ policy mentions one system-role kind
 
 - Generic policy content and actual duty no longer collapse.
 - Actual bearers are directly recoverable.
-- Modality, scope, referents, and validity remain lintable.
+- The reader can identify the modality, scope, referents and validity.
 - Assignment and responsibility independence is explicit.
-- Assurance can be added proportionately without becoming universal process overhead.
+- Assurance is added for a named claim that needs it.
 
 **Costs and mitigations**
 
-- A positive individual-duty claim needs more than a policy sentence. This is the necessary cost of claiming a world-side relation; generic policy content remains cheap to state.
+- An individual-duty assertion must establish the applicable rule and actual instituting basis. A generic policy statement can remain sufficient when no individual duty is being asserted.
 - Domains with another instituting basis need the pattern that defines that basis. Until then, return the exact `missing-governor` result.
 - Conflict resolution remains outside this pattern. Preserve each current commitment plus the exact source, independently obtaining authority relation, and selecting rule required by the named conflict or choice use; apply D.3/D.4 for an interlevel ethical conflict, C.11 for an explicit choice among available options, or return `missing-governor[commitment conflict resolution]` when no direct result rule exists.
 
@@ -316,11 +316,11 @@ Requiring an actual bearer, constitutive rule, and actual basis prevents descrip
 
 > **Informative.** These comparisons motivate the distinctions; they do not govern local claims.
 
-- **BCP 14 (RFC 2119 and RFC 8174).** Controlled normative keywords support explicit modality, but keywords do not identify an individual bearer or institute a duty. **Adapt.**
-- **W3C ODRL 2.2.** Duties, permissions, assignees, actions, constraints, and policy provenance motivate explicit participants and qualifiers. FPF keeps individual commitment, permission, policy episteme, and evidence separate. **Adapt.**
-- **Institutional and constitutive-rule approaches.** Their distinction between rule content, institutional conditions, and resulting relations supports the required constitutive rule and actual basis. **Adopt the separation.**
-- **Policy-as-code practice.** Admission predicates and policy evaluation should not be confused with individual obligation or performed Work. **Adapt.**
-- **Trace-based compliance and supply-chain attestations.** Evidence and carriers can support adjudication while remaining distinct from relation obtaining. **Adopt.**
+- **BCP 14 (RFC 2119 and RFC 8174).** Controlled normative keywords support explicit modality, but keywords do not identify an individual bearer or institute a duty.
+- **W3C ODRL 2.2.** Duties, permissions, assignees, actions, constraints, and policy provenance motivate explicit participants and qualifiers. FPF keeps individual commitment, permission, policy episteme, and evidence separate.
+- **Institutional and constitutive-rule approaches.** Their distinction between rule content, institutional conditions, and resulting relations supports the required constitutive rule and actual basis.
+- **Policy-as-code practice.** Admission predicates and policy evaluation should not be confused with individual obligation or performed Work.
+- **Trace-based compliance and supply-chain attestations.** Evidence and carriers can support adjudication while remaining distinct from relation obtaining.
 
 ### A.2.8:13 - Relations
 

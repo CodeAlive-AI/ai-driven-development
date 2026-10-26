@@ -10,7 +10,7 @@
 
 **Use this when** something relied on by an opportunity, direction, path, or advising engagement changes, and a practitioner needs to know what can still be used. The change may concern the subject, receiving use, horizon, characteristic, contribution, support, resource, permission, evidence, or an enabling step.
 
-Begin with the changed premise and the particular opportunity claim that used it. Compare the earlier and current conditions and return the useful result they support. Obtain new qualification only when a stronger current use needs it and its attainable contribution warrants acquisition. The first useful result is an unchanged, narrowed, blocked, revised, or retired contribution for a stated use, with its affected downstream return.
+Begin with the changed premise and the particular opportunity claim that used it. Compare the earlier and current conditions and return the useful result they support. Obtain new qualification only when the current use needs it and its attainable contribution warrants acquisition. The first useful result is an unchanged, narrowed, blocked, revised, or retired contribution for a stated use, with its affected downstream return.
 
 This is application-specific requalification shared by Construction and Advising. A changed recommendation returns to its actual advice owner for the affected follow-up question; changed source-currentness or publication work retains its direct owner.
 
@@ -180,7 +180,7 @@ Ask what action-changing claim actually differs and what inspected evidence supp
 5. **MUST** obtain the independently governed subject result through the relevant practice before asserting restored qualification.
 6. **MUST** requalify altered scope, quantities, transfer, and finite comparisons; a narrower candidate does not inherit every whole-use result.
 7. **MUST** preserve actual versus conditional stage configurations, incurred burdens, and unaffected independent contributions.
-8. **MUST** state the smallest supported unchanged, narrowed, blocked, revised, or retired use and its exact gap or next receiver.
+8. **MUST** state the supported unchanged, narrowed, blocked, revised, or retired disposition and its affected scope. Name a gap or next receiver only when one is needed.
 9. **MUST** preserve earlier returned advice and distinguish renewed recommendation, authorized choice, protection response, and implementation.
 10. **MUST** retain actual professional and observation duties without inventing a continuing service.
 11. **SHOULD** close a bounded update when its result and coverage limits are usable, while leaving independent unresolved questions explicit.
@@ -193,7 +193,7 @@ Ask what action-changing claim actually differs and what inspected evidence supp
 | The world stayed the same, so the correction is irrelevant | A changed claim can remove warranted support for the same world. | Requalify the receiving assertion that used it. |
 | Follow every link | Citation and adjacency substitute for actual dependence. | Use the direct receiving claim and bounded discovery coverage. |
 | Not found means unaffected | Inaccessible or unsearched receivers disappear from the conclusion. | Preserve the coverage gap and localize the result. |
-| Narrow the label, keep the old estimate | A whole-use result is silently transferred to a different case mix or configuration. | Obtain the narrowed candidate's own qualified comparison. |
+| Narrow the label, keep the old estimate | A whole-use result is silently transferred to a different case mix or configuration. | Use the narrowed candidate's qualified comparison before relying on it; otherwise retain the narrower candidate as conditional. |
 | Correct the advice by rewriting its history | The earlier return can no longer be recovered. | Preserve it and identify the later correction and current reliance limit. |
 | No new observation means no change | Failed observation is treated as a favourable result. | Return the missing evidence and its effect on current reliance. |
 | Updated advice changes the operation | Recommendation is mistaken for an authorized decision or control rule. | Return the question to the actual choice or protection owner. |
@@ -202,7 +202,7 @@ Ask what action-changing claim actually differs and what inspected evidence supp
 
 A change can now produce a small useful correction rather than a global restart or a cosmetic source update. Practitioners can retain independently supported routes, revise a conditional branch, and explain exactly which premise would restore a stronger claim.
 
-The cost is recovering the earlier use and enough current evidence to distinguish dependence from proximity. Some coverage remains unresolved, and an urgent operational or professional duty can continue while the opportunity update is incomplete. Local closure is honest only within the inspected conditions.
+The cost is recovering the earlier use and enough current evidence to distinguish dependence from proximity. Some coverage may remain unresolved, and an urgent operational or professional duty can continue while the opportunity update is incomplete. Local closure is honest only within the inspected conditions.
 
 ### C.40.RQ:10 - Rationale
 

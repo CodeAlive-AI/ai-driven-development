@@ -15,11 +15,11 @@ Typical moments:
 - a project needs to know whether a relation is part-whole, dependence, representation, influence, source use, publication use, or evidence relation;
 - a selected dependency structure will be expressed with a graph, table, matrix, or another mathematical or representation lens.
 
-**First useful move.** Name the dependency relation under concern before choosing graph notation. Then decide whether it is part-whole, boundary crossing, order, temporal phase, resource, representation, evidence, publication use, source use, or another direct relation defined or tested by the applicable pattern.
+**First useful move.** Name the dependency relation and its participants before choosing graph notation. Use B.1.1:4.3 to distinguish common relation kinds, then follow the pattern that defines or tests the relation in question.
 
-**What goes wrong if missed.** A graph becomes the ontology; an edge named "depends on" carries many relation kinds at once; external influence becomes parthood; order and time are encoded as structure; and mathematical checks look precise while the relation being checked remains unclear.
+**What goes wrong if missed.** A generic "depends on" edge can conceal different relations. External influence, order, or temporal dependence may be mistaken for parthood, and mathematical checks may appear precise while the relation being checked remains unclear.
 
-**What this buys.** B.1.1 lets dependency material bear on B.1 aggregation without letting graph notation decide relation kinds.
+**What this buys.** The practitioner can use dependency evidence in a B.1 aggregation claim while keeping the relations distinct from their graph representation.
 
 **Not this pattern when.**
 
@@ -33,16 +33,16 @@ Typical moments:
 
 B.1.1 separates dependency structure from graph representation.
 
-A dependency structure can be ontology-side when a direct pattern has selected the relation under concern. A dependency graph is a mathematical or representation description of that selected relation structure. The graph may be useful, but it is not the holon, not the part-whole relation, and not the constructional grounding by itself.
+A dependency structure can be ontology-side when a direct pattern has selected the relation under concern. A dependency graph describes that selected relation structure. The facts and rules governing the relations supply the grounds for the whole-level claim.
 
 ### B.1.1:2 - Problem
 
-Without B.1.1:
+When these distinctions are missed:
 
 1. **Edge drift spreads.** `ComponentOf`, a collection's belongs-to relation, `PhaseOf`, `SerialStepOf`, `RepresentationOf`, source use, evidence relation, and control relation all become generic graph edges.
 2. **Boundary crossing becomes parthood.** A power grid, supplier, teacher, measuring instrument, model, or source record is drawn as a part because it affects the holon.
 3. **Design and run objects mix.** Planned structure, design description, actual work occurrence, and telemetry are placed in one dependency expression without a DesignRunTag or a distinction among the patterns that define those claims.
-4. **Acyclic graph discipline overclaims.** A graph check says something about the drawing, but the ontology-side relation remains ungrounded.
+4. **Acyclic graph discipline overclaims.** A graph property is used to support a claim about the object without grounding the represented relation.
 5. **Mappings become parts.** A digital twin, dashboard, diagram, or architecture description is treated as a constituent of the object it describes.
 
 ### B.1.1:3 - Forces
@@ -99,7 +99,7 @@ DependencyGraphRepresentation@Context:
   publicationOrViewRef?
 ```
 
-The graph may express acyclicity, reachability, cutsets, weak links, flow, or traceability. Those checks apply to the graph expression and bear on the selected relation only when the rule for that relation admits the mapping. Use C.29 to state the mathematical representation correspondence, preserved and lost distinctions, and validation boundary on which that inference depends.
+Use the graph to examine properties such as acyclicity, reachability, cutsets, weak links, flow, or traceability. These checks concern the graph expression; their results bear on the selected relation only when its rule admits the mapping. Use C.29 to state the mathematical representation correspondence, preserved and lost distinctions, and validation boundary on which that inference depends.
 
 #### B.1.1:4.3 - Relation Grounding Guide
 
@@ -115,7 +115,7 @@ The graph may express acyclicity, reachability, cutsets, weak links, flow, or tr
 
 #### B.1.1:4.4 - Graph Checks Are Conditional
 
-Acyclicity, topological order, cutset, reachability, and flow checks are useful only after the graph is selected as a lens over a selected relation structure.
+Run graph checks only after selecting the graph as a lens over the dependency structure.
 
 Do not infer:
 
@@ -143,13 +143,13 @@ If the edge means representation, recover the architecture-description, publicat
 
 Source graph: `Prep -> Weld -> Paint`.
 
-If the graph describes a method or process view, use the patterns that define the method, description, and order claims. If it describes performed Work, use A.15.1 with occurrence identity, timing, evidence, and the exact Work relation. Do not let the same graph do both jobs.
+If the graph describes a method or process view, use the patterns that define the method, description, and order claims. If it describes performed Work, use A.15.1 with occurrence identity, timing, evidence, and the exact Work relation. If one graph represents both, distinguish the Method or plan relations from the evidenced Work relations.
 
 ### B.1.1:6 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
 | --- | --- | --- |
-| Graph as ontology | A graph node or edge is treated as the in-life object or relation. | Recover the dependency structure and the exact relations, then use the patterns that define or test them before graph expression. |
+| Graph as ontology | A graph node or edge is treated as the represented object or relation. | Recover the dependency structure and the exact relations, then use the patterns that define or test them before graph expression. |
 | One-edge-fits-all | `depends on` carries parthood, order, representation, source use, evidence, and influence at once. | Split the relation kinds and name the pattern that defines or tests each one. |
 | External influence as parthood | Supply, measurement, teaching, source use, or control is drawn as a component relation. | Use the exact boundary-crossing, evidence, source-use, publication-use, transformation, supply, or control relation and its defining pattern. |
 | Design-description and run-occurrence collapse | A planned dependency graph is treated as evidence of performed work. | Separate design description, work occurrence, and evidence relations. |
@@ -179,22 +179,20 @@ If the graph describes a method or process view, use the patterns that define th
 
 Positive consequences:
 
-- Dependency views become useful without becoming hidden ontology.
-- External influences can be discussed without corrupting parthood.
+- Dependency views expose the relations they represent.
+- External influence and parthood are assessed as separate claims.
 - Graph checks keep their value and their limits.
-- B.1 aggregation receives cleaner part-whole inputs.
+- B.1 aggregation can rely on explicitly grounded part-whole inputs.
 
 Costs:
 
-- A diagram alone is no longer enough; relation kinds and the patterns that define or test them must be named.
+- Name the relation kinds and the patterns that define or test them, in the diagram or its accompanying explanation.
 - Some compact dependency graphs need multiple relation layers or views.
 - Graph-based checks may need C.29 when the mathematical lens is relied on.
 
 ### B.1.1:10 - Rationale
 
-Dependency language is useful exactly because it is broad. That breadth is also the danger. FPF keeps the breadth for recognition, then restores precision by separating relation kinds, selected structures, mathematical expressions, and publication forms.
-
-B.1.1 therefore does not abolish dependency graphs. It makes them honest: a graph represents a selected relation structure; each direct relation is grounded by the facts and rule that make it obtain.
+Dependency is a useful starting term for several kinds of connection. To use it in a whole-level claim, distinguish the relation, the selected structure, and the mathematical or published expression. The facts and rules that make each relation obtain supply the grounds; a graph expresses the selected structure.
 
 ### B.1.1:11 - SoTA-Echoing
 

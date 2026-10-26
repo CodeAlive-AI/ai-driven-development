@@ -1,12 +1,12 @@
 ## C.3.5 - KindAT — Intentional Abstraction Facet for Kinds (K0…K3)
 
-> **One-line summary.** `KindAT` is an informative editorial facet on one local `U.Kind`. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—help plan declaration rigor, assurance coverage, bridge expectations, catalog search, and refactoring. KindAT is not a Characteristic: it has no algebra or threshold and never appears in guards or composition. It changes neither the kind, a `KindSignature`, a classification judgment, an extension representation, nor F–G–R.
+> **Use.** `KindAT` is an informative planning facet on one local `U.Kind`. Its anchors—K0 Instance, K1 Behavioral Pattern, K2 Formal Kind/Class, and K3 Up-to-Iso—describe how the kind is intended to be treated. They guide planning and catalog search; they supply no classification or assurance result.
 
 **Normativity:** Informative for anchors, heuristics, examples, and guidance; normative only for the usage rules that prohibit guard/composition use and constrain placement.
 
 > **Status:** Stable
 
-**Placement.** Part C (Kinds), identifier **C.3.5**. Audience: engineering managers, architects, editors, and assurance leads.
+**Audience:** engineering managers, architects, editors, and assurance leads.
 
 **Depends on.**
 
@@ -15,13 +15,10 @@
 - **C.3.3:** the obtaining `KindBridge` relation and its separate bridge-assertion episteme carrying `CL^k`, loss, evidence, and admitted use.
 - **C.3.4:** the `KindUseAdaptationDeclaration` episteme and exact `KindUseAdaptationJudgment`.
 - **A.2.6, C.2.2, and C.2.3:** Claim/Work scope, F–G–R, and formality assessed on the episteme that owns the expression.
-- **MM-CHR:** the Facet-versus-Characteristic distinction.
-
-**Non-goals.** KindAT supplies no numerical scale, gating rule, composition operator, public-kind admission, classification result, or assurance score.
 
 ### C.3.5:1 - Purpose
 
-Teams need a quick answer to a planning question: is this local kind intended as a curated instance-like cohort, a behavioral pattern, a formal invariant-bearing kind, or a kind considered up to structural equivalence? The answer can guide where declaration rigor and assurance effort are likely to pay off without pretending that abstraction itself widens scope, raises formality, settles classification, or increases reliability.
+Teams need a quick answer to a planning question: is this local kind intended as a curated instance-like cohort, a behavioral pattern, a formal invariant-bearing kind, or a kind considered up to structural equivalence? The answer can guide where declaration rigor and assurance effort are likely to pay off. An ordinary description of those planning needs is sufficient when a shared tag adds no useful distinction.
 
 KindAT gives that planning vocabulary while keeping the governing objects separate:
 
@@ -35,11 +32,9 @@ KindAT gives that planning vocabulary while keeping the governing objects separa
 
 - **G** says where a claim or Work use applies.
 - a **local kind** says what the declaration and claim are about.
-- a **KindSignature declaration episteme** states the reusable criterion and has its own F when current.
+- a **KindSignature declaration episteme** states the reusable criterion; assess its formality under C.2.3 when the receiving use needs that assessment.
 - **R** says how well a receiving claim or use is supported.
 - **KindAT** is only a catalog and planning tag on the local kind.
-
-Calling KindAT a Characteristic would invite a second scope axis, an abstraction score, or a hidden classification gate. Keeping it as a facet lets editors search and plan without adding another truth-bearing or assurance-bearing object.
 
 ### C.3.5:3 - Anchors K0…K3 (informative)
 
@@ -51,7 +46,7 @@ Calling KindAT a Characteristic would invite a second scope axis, an abstraction
 
 **Non-example.** A stable invariant-bearing distinction belongs nearer K2 even if few candidates are currently known.
 
-**Planning.** Prefer exact slice-bound judgments and assurance over the current candidate domain. Cross-context reuse is likely to need explicit instance correspondence. If the use relies on a KindBridge between distinct kinds, `CL^k` may be low.
+**Planning.** Prefer exact slice-bound judgments and assurance over the current candidate domain. When reuse depends on matching named candidates, make that correspondence explicit. Any KindBridge assessment follows the actual distinct-kind correspondence and its preservation evidence.
 
 #### C.3.5:3.2 - K1 — Behavioral pattern
 
@@ -61,7 +56,7 @@ Calling KindAT a Characteristic would invite a second scope axis, an abstraction
 
 **Non-example.** A kind with stable explicit predicates and order relations belongs nearer K2.
 
-**Planning.** Invest in making the signature criterion evaluable and in testing behavioral diversity. Bridges are usually pattern correspondences whose assertions must state loss.
+**Planning.** Invest in making the signature criterion evaluable and in testing behavioral diversity. For a bridge that compares behavioral distinctions, its assertion states the demonstrated preservation and loss.
 
 #### C.3.5:3.3 - K2 — Formal kind/class
 
@@ -71,7 +66,7 @@ Calling KindAT a Characteristic would invite a second scope axis, an abstraction
 
 **Non-example.** An informal cohort or role cue does not become K2 merely because it is stored in a schema.
 
-**Planning.** Consider raising the declaration episteme's F where the receiving use warrants it; plan R across relevant subkinds and boundary cases. KindBridge assertions may support medium or high `CL^k` only from demonstrated signature/order preservation.
+**Planning.** Develop the expression properties the receiving use needs under C.2.3; plan assurance across relevant subkinds and boundary cases. KindBridge assertions may support medium or high `CL^k` only from demonstrated signature/order preservation.
 
 #### C.3.5:3.4 - K3 — Up-to-Iso
 
@@ -81,7 +76,7 @@ Calling KindAT a Characteristic would invite a second scope axis, an abstraction
 
 **Non-example.** A class whose candidate identity matters beyond the declared structure is not K3.
 
-**Planning.** Require explicit equivalence witnesses and receiver acceptance. High `CL^k` is justified only when the obtaining bridge and its assertion demonstrate preservation of the relevant equivalence structure.
+**Planning.** For a use that relies on equivalence, make the equivalence witnesses explicit and establish receiver acceptance. High `CL^k` is justified only when the obtaining bridge and its assertion demonstrate preservation of the relevant equivalence structure.
 
 ### C.3.5:4 - Manager heuristics (informative)
 
@@ -105,7 +100,7 @@ These are planning cues, not default F values, R values, classification results,
 
 ### C.3.5:6 - Usage rules (normative)
 
-**AT-01 (Facet, not Characteristic).** KindAT SHALL be treated as a Facet per MM-CHR. It has no algebra or threshold and MUST NOT appear in guard predicates or composition math.
+**AT-01 (Facet, not Characteristic).** KindAT SHALL be treated as the informative catalog and planning facet defined here. It has no algebra or threshold and MUST NOT appear in guard predicates or composition math.
 
 **AT-02 (Placement).** If recorded, KindAT SHALL characterize one exact local `U.Kind` under an effective reference scheme. A catalog row may represent that assignment. KindAT MUST NOT be attached to a claim, capability, `KindSignature` episteme, candidate, judgment, or extension as a substitute for its own governor.
 
@@ -113,7 +108,7 @@ These are planning cues, not default F values, R values, classification results,
 
 **AT-04 (Bridge neutrality).** Editors assign KindAT from the kind's intentional stance. The bridge-assertion episteme may record an informative anchor comparison, but `CL^k` remains a separate assessment of the admitted bridge use from demonstrated signature/order preservation and loss.
 
-**AT-05 (Catalog representation).** When KindAT is represented in a catalog, the catalog SHOULD identify the local kind and effective reference scheme and reference, rather than collapse, the current `KindSignature` edition, obtaining subkind relations, `KindUseAdaptationDeclaration` editions, KindBridge occurrences/assertions, and optional extension representations. Absence of a tag means “not set”, not K0.
+**AT-05 (Catalog representation).** When KindAT is represented in a catalog, the catalog SHOULD identify the local kind and effective reference scheme. If the catalog also uses a signature, subkind relation, kind-use adaptation, bridge or extension, it SHOULD reference the corresponding declaration edition, relation or representation separately. Absence of a tag means “not set”, not K0.
 
 ### C.3.5:7 - Authoring and review guidance (informative)
 
@@ -155,6 +150,6 @@ These are planning cues, not default F values, R values, classification results,
 | **AT-02** | The tag designates one exact local kind; catalogs only represent that assignment and its references. |
 | **AT-03** | No text makes KindAT change F, G, R, classification truth, or extension contents. |
 | **AT-04** | KindBridge relation, bridge assertion, `CL^k`, and KindAT remain separate. |
-| **AT-05** | Catalog use references the separate signature, order, kind-use adaptation, bridge, and extension objects without collapsing them. |
+| **AT-05** | A catalog identifies the kind and reference scheme and separately references any related objects it uses. |
 
 ### C.3.5:End

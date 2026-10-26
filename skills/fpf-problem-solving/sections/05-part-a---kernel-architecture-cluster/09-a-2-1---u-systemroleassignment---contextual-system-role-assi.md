@@ -21,7 +21,7 @@ Typical moments:
 
 **Primary EntityOfConcern.** One assignment occurrence whose relation species is declared directly under `U.SystemRoleAssignment`. Every species declares a holder participant with `U.System` as its domain, an assigned-kind participant drawn from one exact local system-role-kind domain, its own predicate and applicability, any real additional participant meanings, and its occurrence-identity rule. The occurrence supplies the actual participant values, including its holder System.
 
-**Primary working reader.** An engineer-manager, analyst, Method author, or FPF author who must identify assignment and Work attribution without merging classification, capability, responsibility, authority, Method, Work, evidence, or publication into the assignment.
+**Working reader.** A practitioner who must identify an assignment and any needed Work attribution while keeping their neighboring claims separate.
 
 **First useful move.** Write the ordinary claim first: “Robot-7 is assigned as inspector for Shift-17.” Then identify the declared assignment species, the participant meanings and predicate it declares, and the participant values that satisfy that predicate in this case. Expose an occurrence reference only when another claim must distinguish or cite this episode.
 
@@ -44,7 +44,7 @@ Typical moments:
 
 `U.SystemRoleAssignment` is the common relation family. It has no permissive root `RelationSignature`. Concrete domain species declare the participant law that their occurrences actually satisfy. A simple inspection assignment may need only the holder and assigned kind. A project-review appointment may also depend on one exact commission. The stronger occurrence itself is the assignment; it does not sit beside a weaker generic assignment with the same projection.
 
-The holder can be any independently admitted `U.System`, including a person, team, organization, service, organism, or non-human technical object. Assignment establishes neither capability, responsibility, commitment, permission, authority, access, gate passage, functioning, Method enactment, nor performed Work.
+The holder can be any independently admitted `U.System`, including a person, team, organization, deployed service system, organism, or non-human technical object. Assignment establishes neither capability, responsibility, commitment, permission, authority, access, gate passage, functioning, Method enactment, nor performed Work.
 
 Taxonomy epistemes, reference schemes, `KindSignature`s, assertions, and interval descriptions can interpret or describe the assignment claim. They are not generic world-side assignment participants. A selected `BoundedModelUseStructure` belongs in the receiving assertion or use unless one separately admitted relation species makes that structure a required identity-bearing participant.
 
@@ -67,7 +67,7 @@ Without this pattern:
 | --- | --- |
 | Common attribution projection vs domain-specific assignment identity | F.6 needs the holder of every assignment, while domains can require different real participants. |
 | Simple cases vs stronger appointments | A two-participant assignment should stay light; a real commission or position must not be hidden or downgraded. |
-| Readable assertion vs explicit occurrence | Most readers need a sentence, while later attribution or state claims may need a stable assignment reference. |
+| Readable assertion vs explicit occurrence | A sentence can state an assignment; attribution or state claims may also need a stable occurrence reference. |
 | Stable participants vs repeated episodes | Identical participant values can recur after an interruption; time describes and distinguishes episodes without becoming a participant. |
 | Interpretation vs world-side identity | Taxonomies, schemes, signatures, and evidence matter to claims but do not automatically participate in the assignment. |
 | Assignment vs neighboring facts | Classification, capability, permission, responsibility, access, Method, and Work can vary independently. |
@@ -130,9 +130,9 @@ If no current pattern admits the proposed participant kind or direct predicate, 
 
 An occurrence of a declared species begins when that species' direct predicate starts obtaining for fixed participant values. It continues over the maximal uninterrupted predicate-true interval. It ends when a participant changes or the predicate ceases to obtain. A later resumption is another occurrence even when every participant value is the same.
 
-A context field ending in `...SystemRoleAssignmentRef` uses `U.RelationRef constrained to U.SystemRoleAssignment` and resolves to the exact occurrence while keeping its declared species recoverable.
+A reference field ending in `...SystemRoleAssignmentRef` uses `U.RelationRef constrained to U.SystemRoleAssignment` and resolves to the exact occurrence while keeping its declared species recoverable.
 
-An assignment assertion or occurrence description can state `assignmentInterval` with a temporal reference, start, end or explicit open end, and continuity claim. Closing an open interval later refines the same description when world-side obtaining was uninterrupted. When evidence is missing, whether the assignment obtained remains `unknown`; the evidence gap by itself establishes neither continuity nor a split. The occurrence ends when its predicate ceases to obtain; evidence of cessation supports a conclusion about when it ended.
+An assignment assertion or occurrence description can state `assignmentInterval` with a temporal reference, start, end or explicit open end, and continuity claim. A later assertion may close an open interval while referring to the same world-side occurrence when obtaining was uninterrupted. Changed claim content is separately identified under C.2.1. When evidence is missing, whether the assignment obtained remains `unknown`; the evidence gap by itself establishes neither continuity nor a split. The occurrence ends when its predicate ceases to obtain; evidence of cessation supports a conclusion about when it ended.
 
 Keep ordinary interval content here. When a positive temporal aspect itself becomes a relied-on object—its temporal reference, validity or currentness window, duration, cadence, rhythm, or interval structure—use `C.27.TA` for that aspect and keep the assignment occurrence separate. Use `C.27` only for the different question of whether a temporal claim is adequate.
 
@@ -168,7 +168,7 @@ During Shift-17, Robot-7 is assigned as inspector under
 MaintenanceInspectionAssignment.
 ```
 
-Expose an occurrence identifier only when a receiver must distinguish episodes, cite the assignment as a participant, compare assertions, or preserve provenance. If a required participant or the predicate cannot be recovered, lower the claim or return the exact missing governor. Never insert a dummy value or broaden the assigned-kind domain.
+Expose an occurrence identifier only when a receiver must distinguish episodes, cite the assignment as a participant, compare assertions, or preserve provenance. If a required participant or predicate is unresolved, state that missing basis and limit the claim. Use A.6.P to recover unclear relation meaning; return `A.6.RCD missing-governor` only when the recovered relation lacks an applicable governor. Never insert a dummy value or broaden the assigned-kind domain.
 
 #### A.2.1:4.7 - Direct Neighboring Relations
 
@@ -198,7 +198,7 @@ attributedPerformerSystem(W, RA) := RA.HolderSystemSlot
 A.13 first identifies the actual performer `S`, and A.15.1 independently admits `W : U.Work` from its performance history, enacted Method, temporal extent, and containing-System relation. F.6 is needed only for a **precise assignment-bound attribution**—when the current use must also say exactly under which assignment `W` was performed. It then establishes `performedUnderAssignment(W, RA)` against the same assignment already used by A.13 and requires `S = attributedPerformerSystem(W, RA) = RA.HolderSystemSlot`. The projection exposes the assignment holder only for comparison with `S`; it identifies neither assignment nor performer, and a missing or failed F.6 check leaves the Work intact.
 
 `SystemRoleAssignmentSlot` in F.6 accepts any admitted assignment species because its `ValueKind` is the family `U.SystemRoleAssignment`. It is not a union of a generic relation and stronger non-assignment values. `ReviewWork-A` can be attributed to `ReviewAssignment-A`, and `ReviewWork-B` to `ReviewAssignment-B`, without creating generic duplicates.
-Assignment does not prove that Work occurred. Work does not alter assignment identity. For source wording such as `RoleEnactment`, first use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. If the current use also needs to say exactly under which assignment the Work was performed, add that assignment and the separate F.6 `performedUnderAssignment` check. Do not create a duplicate run-time kind or occurrence.
+Assignment does not prove that Work occurred. Work and assignment have separate identity rules; whether performed Work ends an assignment depends on the species predicate. For source wording such as `RoleEnactment`, first use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. If the current use also needs to say exactly under which assignment the Work was performed, add that assignment and the separate F.6 `performedUnderAssignment` check. Do not create a duplicate run-time kind or occurrence.
 
 #### A.2.1:4.9 - Source Context Shorthand
 
@@ -273,7 +273,7 @@ A.13 first recovers `ReviewService-4` as the exact actual performer through its 
 5. Decide whether a receiver needs explicit occurrence identity. Stop at the readable assertion when it does not.
 6. Distinguish repeated episodes by uninterrupted predicate obtaining, not by storage identifiers.
 7. Keep classification, capability, state, Method, Work, responsibility, commitment, permission, authority, access, evidence, reliance, and publication under their direct patterns.
-8. Use context fields ending in `...SystemRoleAssignmentRef` only with `U.RelationRef constrained to U.SystemRoleAssignment` and an exact recovered occurrence.
+8. Use reference fields ending in `...SystemRoleAssignmentRef` only with `U.RelationRef constrained to U.SystemRoleAssignment` and an exact recovered occurrence.
 9. For source shorthand, recover each hidden value by kind and relation before relying on it.
 
 ### A.2.1:8 - Conformance Checklist

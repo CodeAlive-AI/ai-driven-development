@@ -6,21 +6,21 @@
 
 ### B.1.2:0 - Use This When
 
-Use this pattern when one exact entity recognized under the already admitted `U.System` kind, or one exact entity still being evaluated under A.1 for that kind, is being considered as a whole and an engineering decision depends on coordinating its independently governed part-whole, delimitation, crossing, function/bearer, and whole-characteristic claims.
+Use this pattern when an engineering decision about a system whole depends on several independently grounded claims: its part-whole relations, delimitation, boundary crossings, functions and their bearers, or whole-level characteristics. The entity may already be recognized under `U.System` or still be under evaluation through A.1.
 
 Typical moments:
 
-- a machine, plant, robot, vehicle, building asset, service organization, or operating unit is proposed as a whole assembled from exact constituents;
+- a machine, building asset, or organization is proposed as a whole assembled from identified constituents;
 - a system-level characteristic is to be rolled up from constituent characteristics;
 - a supply, signal, measurement, control, source, publication, evidence, or transformation relation is being mistaken for a part relation;
 - a functional element must be distinguished from and allocated to physical, organizational, software, or operational bearers;
 - a named decision needs one recoverable view of the system boundary, exact crossings, and compatibility choices without turning that view into the system.
 
-**First useful move.** Name the exact whole and its A.1 recognition status, the decision being made, and each load-bearing claim. For every claim, select its subject pattern and either recover the exact result or state the exact missing governor or information. Only then ask whether their joint organization itself changes the named decision.
+**First useful move.** Name the whole and its A.1 recognition status, the decision, and the claims it depends on. For each claim, use the applicable subject pattern to recover its result or identify the missing defining rule or information. Then ask whether considering the results' joint organization changes the decision.
 
-**What goes wrong if missed.** System aggregation becomes a drawing exercise. Ports, suppliers, documents, digital twins, dashboards, source records, and measuring instruments become components by placement. Functional elements become physical parts by label. External change or measurement is read as containment. One convenient record then appears to establish all those unrelated facts.
+**What goes wrong if missed.** A reader may infer components and containment from placement in a diagram, treat a functional element as a physical part, or mistake an external transformation or measurement relation for parthood. A coordination record then appears to establish facts that each need their own grounds.
 
-**What this buys.** B.1.2 coordinates one engineering aggregation decision while leaving system recognition, exact parthood, assembly, delimitation, crossing, function, bearer, characteristic, evidence, description, representation, and decision claims with their subject patterns.
+**What this buys.** The practitioner can combine the results needed for one engineering aggregation decision while retaining each claim's own grounds and use conditions.
 
 **Not this pattern when.**
 
@@ -34,7 +34,7 @@ Typical moments:
 
 ### B.1.2:1 - Problem Frame
 
-B.1.2 specializes B.1 for system holons, but it is a coordination method rather than the source of one omnibus system-aggregation relation. The useful engineering question is which exact independently governed facts must be considered together for one aggregation or delimitation decision.
+B.1.2 specializes B.1 for system holons. It coordinates independently grounded facts for one aggregation or delimitation decision; each relation retains its own defining pattern.
 
 Keep five frequently collapsed objects distinct:
 
@@ -48,7 +48,7 @@ For a system-aggregation decision, use :4.1 to recover the system, parthood, del
 
 ### B.1.2:2 - Problem
 
-Without B.1.2:
+When these distinctions are missed:
 
 1. **Boundary by drawing.** A box in a diagram is accepted as system delimitation.
 2. **External relations become parts.** Suppliers, grids, sensors, controllers, teachers, measuring instruments, or digital twins are placed inside the system because they interact with it.
@@ -65,12 +65,12 @@ Without B.1.2:
 | Delimitation vs external dependency | A named use needs an exact system boundary while critical relations can cross it and remain external. |
 | Component structure vs functional structure | Physical or organizational bearers may realize several functions, and one function may require several bearers. |
 | Conservative roll-up vs redundancy | Weakest-link and conservation checks are useful, but redundancy or substitution may require B.2 whole reidentification. |
-| Description vs in-life system | Diagrams, BIM models, digital twins, and dashboards describe systems; they are not the system by appearance. |
+| Description vs described system | A description must preserve the distinctions needed for the decision while remaining distinguishable from the system it describes. |
 | Coordination vs ownership | One decision may need many direct facts, but the coordinating pattern must not become the source of all those relations. |
 
 ### B.1.2:4 - Solution
 
-Use B.1.2 to coordinate one named system-aggregation or delimitation decision across independently governed results. Do not introduce `SystemAggregationRelation@Context`, `HolonDelimitationRelation@Context`, `HolonBoundaryCrossingRelation@Context`, or another record-shaped relation merely to hold the answers together.
+Coordinate one named system-aggregation or delimitation decision using the independently grounded results below. A record can bring those results together; establishing any further relation requires its own grounds.
 
 #### B.1.2:4.1 - Recover Each Direct Result Or Blocker
 
@@ -84,19 +84,19 @@ Use B.1.2 to coordinate one named system-aggregation or delimitation decision ac
 | Which whole-level characteristic is claimed? | `C.16`, `A.19`, and `C.29` when a mathematical lens is used | Exact bearer, characteristic, assignment or value, scale, threshold or aggregation relation, and lens-use boundary; otherwise the missing bearer, scale, relation, or evidence. |
 | Which evidence, description, representation, or publication supports inspection? | `A.10`, `B.3`, `C.2.1`, `C.29`, `E.17`, and the exact source or architecture-description pattern | The exact episteme and exact evidence, assurance, description, representation, source-use, or publication relation; otherwise the missing identity, relation, applicability, or reliance basis. |
 
-Naming those results together does not create a further world-side relation. Stop at the first direct blocker that prevents the named decision; do not weaken it into an aggregate-shaped placeholder.
+Stop when a missing direct result prevents the named decision, and identify that missing result. Collecting the available results does not supply it.
 
 #### B.1.2:4.2 - Select A Structure Only When The Joint Organization Matters
 
 If the joint organization of several exact results itself changes the named decision, select one ordinary `U.Structure` under `A.22`. Recover all four identity discriminators: exact independently identified constituents, exact selected obtaining relation occurrences, exact constraints as applied, and one named selection-use frame with its admissible action or stop.
 
-The selected structure is non-agentive. It creates no system, part, crossing, allocation, characteristic, evidence, or decision fact and does not become the system, its environment, or its containing whole. A box, list, graph, table, description, view, or publication can represent or describe the selected organization but supplies none of the four discriminators by form.
+The selected structure is non-agentive. Selecting it does not itself establish systemhood or the relations being selected. A diagram or other representation can express the selected organization; its form alone supplies none of the four discriminators.
 
 #### B.1.2:4.3 - Make Interface Choices About Exact Crossing Relations
 
-When the aggregate exposes, namespaces, internalizes, excludes, or leaves a crossing with its subject pattern, make that choice about one exact crossing-relation occurrence and one named use. These words are ordinary decision options, not a closed FPF enumeration and not another relation kind.
+When choosing an interface arrangement, identify the crossing-relation occurrence and the use affected by the choice. Options include exposing the crossing, assigning it a namespace, internalizing it, excluding it, or leaving its treatment with its subject pattern. These are ordinary decision options.
 
-Name the direct world facts, affected endpoints, exact crossing predicate and occurrence, preserved obligation or information, evidence if relied on, and the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that chooses among the ordinary interface options when its exact predicate applies. A different choice passes only after its exact subject assertion, predicate, and result are named; otherwise stop with the established `missing-governor` blocker, whose content identifies the absent exact predicate source. If a later use must inspect the choice, identify a separate C.2.1 episteme whose claim content describes it and cites that direct result; the episteme does not make the crossing, parthood, compatibility, or decision fact obtain. This preserves interface accountability without an omnibus compatibility-check object. Without that account, an apparent simplification can silently drop an external obligation or proliferate unmanaged endpoints.
+Name the direct world facts, affected endpoints, exact crossing predicate and occurrence, preserved obligation or information, evidence if relied on, and the C.11 `ChoiceResult` or C.32.PAD `ArchitectureDecisionRelation@Project` that chooses among the ordinary interface options when its exact predicate applies. A different choice passes only after its exact subject assertion, predicate, and result are named; otherwise stop with the established `missing-governor` blocker, whose content identifies the absent exact predicate source. If a later use must inspect the choice, identify a separate C.2.1 episteme whose claim content describes it and cites that direct result; the episteme does not make the crossing, parthood, compatibility, or decision fact obtain. This account lets the practitioner check whether an interface change loses an external obligation or leaves an endpoint unmanaged.
 
 #### B.1.2:4.4 - Whole-Level Characteristics
 
@@ -181,9 +181,9 @@ The lathe can change the workpiece through a bounded transformation and work occ
 Positive consequences:
 
 - System aggregation remains practical for engineering systems and organizations.
-- Boundary and interface concerns become explicit subject-pattern work without omnibus relation or check objects.
-- Functional architecture, module allocation, and physical parthood stop collapsing into one diagram.
-- Digital-twin and publication artifacts stay on the description side unless an exact stronger relation predicate is defined and current facts satisfy it.
+- Boundary and interface decisions expose the facts and rules they depend on.
+- Practitioners can distinguish functional architecture, module allocation, and physical parthood within a shared diagram.
+- A digital twin or publication remains a description unless a further relation is independently defined and established.
 
 Costs:
 
@@ -193,9 +193,7 @@ Costs:
 
 ### B.1.2:9 - Rationale
 
-System aggregation is the place where holonic thinking is most tempting and most useful. It is also where false parthood is easy: anything connected, measured, represented, or controlled can be drawn inside a system box.
-
-B.1.2 preserves the engineering payoff by coordinating exact subject-pattern results for recognition, parthood, assembly, delimitation, crossings, function, bearer, characteristic, evidence, and description. It selects one ordinary A.22 structure only when their joint organization changes the named decision.
+An engineering decision may depend on several relations involving the same system. Drawing them inside one box can obscure which objects are parts and which participate through other relations. B.1.2 coordinates the independently grounded results and selects an A.22 structure only when their joint organization changes the decision.
 
 ### B.1.2:10 - SoTA-Echoing
 

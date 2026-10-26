@@ -16,7 +16,7 @@ The ordinary working moment is simple: “This pattern looks relevant. What do I
 
 **Primary EntityOfConcern.** One use of one selected FPF pattern for a current practical question, ending at one useful first result or honest stop. A later use is named only when a current continuation or reliance actually needs it.
 
-**What this buys.** The user gets a direct path from a pattern to a useful subject result without confusing pattern inspection, method description, planning, performed work, and result evidence. A heavier trace remains available when another person, assisting system, tool, audit, or delayed decision will rely on the distinctions.
+**What this buys.** The user gets a direct path from a pattern to a useful subject result without confusing pattern inspection, method description, planning, performed work, and result evidence. An addressable trace remains available when another person, assisting system, tool, audit, or delayed decision will rely on the distinctions.
 
 **Not this pattern when.** While several public entries remain plausible, keep comparing them under `E.11`; begin PUA only after one direct pattern is selected. Use `E.11.PUR` when applicability, recommendation, or coordination among several candidate uses is the current question. Use `E.18.1` when a wider method, plan, work, interpretation, and return flow must preserve accepted problem-side distinctions. Use the A.15 family when intended or performed `U.Work` is itself current.
 
@@ -58,7 +58,7 @@ If the working question is still represented only by a pre-method-selection `Tas
 
 #### E.11.PUA:4.1 - The ordinary seven-step use
 
-Before making any pattern-use record, answer aloud: “What exactly do I have now, what is the smallest useful result, and what would make me stop or return?”
+Before making any pattern-use record, answer: “What exactly do I have now, what is the smallest useful result, and what would make me stop or return?”
 
 1. **Recognize the working situation.** Name the subject or relation in ordinary domain language and ask the current practical question. State an exact kind now only when a nearby kind difference can change the pattern or result.
 2. **Inspect one direct pattern.** Read its Problem frame, Problem, Forces, Solution, Consequences, ordinary boundary, and nearest stronger neighbor. Do not select from its title or one trigger word alone.
@@ -157,7 +157,7 @@ PatternUseApplicabilityFinding@Context <: U.Episteme
 
 `@Context` in these legacy support-species names is a compatibility and retrieval suffix. It names no `U.BoundedContext`, universal situation, project container, relation, or identity field. Every support episteme follows C.2.1 identity. Claim scope, bounded model use, project work, qualification window, and other working conditions enter only through the exact neighboring object and direct relation needed by the receiving use.
 
-The defining `ClaimGraph` located at PUA states the practical-question, optional compact-trace, candidate-basis, candidate-support-episteme, candidate-rationale, result-expectation, result-closure-finding, and dependent-use-disposition-finding schemas. The exact rule content at `E.11` states public-card comparison rationale; `E.11.PUR` states fit, applicability, recommendation, coordination rationale, coordination, and ordering. A candidate basis is an ordinary C.2.1 claim about the exact candidate when that addressable account is needed. It cites actual supporting claims, independently obtaining relations or evidence uses under their own definitions. It introduces no generic candidate-basis or additional-basis U.Relation. PUR separately governs prospective coordination and precedence. Its result-dependent readiness claim consumes a current PUA closure, including an adequate earlier result; the prospective ordering relation itself does not require that result already to exist. PUA findings cite the result predicate, defining or constraining `ClaimGraph`, pattern locator, and one category-correct direct basis. In the local-claim branch they keep the A.6.RCD derivation-rule locator distinct from every base-predicate `ClaimGraph` locator. They introduce no result or actual-use relation kind.
+The defining `ClaimGraph` located at PUA states the practical-question, optional compact-trace, candidate-basis, candidate-support-episteme, candidate-rationale, result-expectation, result-closure-finding, and dependent-use-disposition-finding schemas. The exact rule content at `E.11` states public-card comparison rationale; `E.11.PUR` states fit, applicability, recommendation, coordination rationale, coordination, and ordering. A candidate basis is an ordinary C.2.1 claim about the exact candidate when that addressable account is needed. It cites actual supporting claims, independently obtaining relations or evidence uses under their own definitions. It introduces no generic candidate-basis or additional-basis U.Relation. PUR separately governs prospective coordination and precedence. Its result-dependent readiness claim needs the actual result and category-correct basis, including an adequate earlier result; a PUA closure finding is materialized only when named later reliance needs addressability. The prospective ordering relation itself does not require that result already to exist. PUA findings cite the result predicate, defining or constraining `ClaimGraph`, pattern locator, and one category-correct direct basis. In the local-claim branch they keep the A.6.RCD derivation-rule locator distinct from every base-predicate `ClaimGraph` locator. They introduce no result or actual-use relation kind.
 
 #### E.11.PUA:4.3 - Question, boundary, and expectation
 
@@ -230,7 +230,7 @@ Candidate basis claim:  // ordinary C.2.1 episteme; local description, no new U-
 
 The claim states how each cited object supports the candidate's question and expectation. It keeps each object's kind and the asserted use recoverable; a generic “additional basis” wrapper supplies neither. A README template can supply a reusable starting point, while case facts come from the actual subject, practical question, effective scheme and action-changing working conditions.
 
-Reference respelling that still designates the same source changes no source referent. Added evidence can change support without changing that source. A richer display may preserve the episteme, whereas changed claim content, EntityOfConcern or effective ReferenceScheme is assessed under C.2.1 and can identify a different candidate or basis episteme. A direct basis relation remains a separate option only when a receiver needs its occurrence and its participants, predicate and identity are independently settled under A.6.REL.
+Reference respelling that still designates the same source changes no source referent. Added evidence can change support without changing that source. A richer display may preserve the episteme. Changing its claim content, EntityOfConcern or effective ReferenceScheme identifies another candidate or basis episteme under C.2.1. A direct basis relation remains a separate option only when a receiver needs its occurrence and its participants, predicate and identity are independently settled under A.6.REL.
 
 ```text
 CandidatePatternUse@Context <: U.Episteme:
@@ -267,7 +267,7 @@ CandidatePatternUseRationale@Context <: U.Episteme:
   rationaleUseBoundaryRef: U.EpistemeRef, referencing one PatternUseBoundaryCondition@Context
 ```
 
-Candidate rationale has one candidate subject. The `ClaimGraph` located at `E.11.PUR` defines the coordination-rationale schema over a declared candidate set. The `ClaimGraph` located at `E.11` defines the public-card comparison-rationale schema over one public guidance episteme before a project candidate is constructed. No rationale episteme is a universal bag.
+Candidate rationale has one candidate subject. The `ClaimGraph` located at `E.11.PUR` defines the coordination-rationale schema over a declared candidate set. The `ClaimGraph` located at `E.11` defines the public-card comparison-rationale schema over one public guidance episteme before a project candidate is constructed. Keep those rationale subjects distinct.
 
 ##### E.11.PUA:4.4.2 - Joint-success candidate and its premises
 
@@ -419,7 +419,7 @@ The practice descriptions remain ordinary PUA epistemes whether or not a wider C
 
 `SelectedFirstResultGroundingStateValue` is `newlyCurrentSubjectResult | preExistingWithGrounding | expectedSubjectResultAbsent`. Exactly one state branch is filled:
 
-- For `newlyCurrentSubjectResult`, fill `newlyCurrentSubjectResultClosureFindingRef` and leave the other state positions absent. The closure separates the rule under which the result exists or the relation obtains from the basis that makes it this use's result. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its own rule; an actual non-agentive change remains under A.3.4. Cite the applicable A.15.PROD branch for a current production-work, inception or completion claim. First existence requires the exact dated Work, actual changes and applicable identity rule; completion remains a separate claim.
+- For `newlyCurrentSubjectResult`, fill `newlyCurrentSubjectResultClosureFindingRef` and leave the other state positions absent. The closure separates the rule under which the result exists or the relation obtains from the basis that makes it this use's result. A relation occurrence may first obtain through its direct predicate; an evaluation or decision becomes current under its own rule; an actual non-agentive change remains under A.3.4. Cite the applicable A.15.PROD branch for a current production-work, inception or completion claim. A Work-attributed first-existence claim requires the exact dated Work, actual changes and applicable identity rule; completion remains a separate claim.
 - For `preExistingWithGrounding`, fill both `preExistingResultGroundingFindingRef` and `preExistingGroundingResultClosureFindingRef` and leave the other state positions absent. The grounding finding names the already-existing entity, its paired grounding relation occurrences, and the exact pattern content that defines or constrains each relation. Its separate closure uses another category-correct basis to make that finding the exercise's result; a subject-grounding occurrence alone does not. Cite A.15.PROD only if exact dated Work first constituted the finding episteme. The exercise does not produce the pre-existing entity.
 - For `expectedSubjectResultAbsent`, fill `expectedSubjectResultAbsentInterimResultClosureFindingRef` and leave the other state positions absent. The interim entity keeps its own kind and rule; the closure records the relative object and category-correct basis required by this reliance. It may support later work but does not satisfy the selected subject-result expectation.
 
@@ -552,8 +552,6 @@ The first-result boundary prevents proxy completion. A plan, note, simulation, o
 | Jin, Bai, and Oulasvirta, *Modeling Trial-and-Error Navigation With a Sequential Decision Model of Information Scent*, arXiv:2603.11759 (2026) | Make bounded inspection, wrong-turn recognition, and explicit return part of ordinary use. | Adapt the navigation result to pattern use. The preprint does not decide FPF ontology, shortlist size, or whether records are needed. |
 | Current FPF `A.10`, `B.3`, `E.18`, `E.18.NET`, `C.2.1`, and `G.11` | Keep exact result, basis, local positions, later-use relation, and currentness evidence addressable when a named later use relies on them. | Adapt conditionally through `relianceBearing`; reject universal trace production and keep each claim with the pattern that defines or tests it. |
 | Current FPF `E.11`, `E.11.PUR`, and A.15 | Separate public discovery, one selected-pattern use, recommendation or coordination, intended work, performed work, and entity inception. | PUA supplies the user-side use method and optional reliance findings without collapsing those objects. |
-
-The practical implication is direct: inspect enough to detect a wrong turn, record only what a named later use needs, and never infer a subject result from the existence of its trace.
 
 Conditional pattern use is the lineage anchor, not a claim that traditional pattern-language practice already supplies PUA's result and flow ontology. Recipe following, PatternID matching, and universal trace production remain the common comparators.
 

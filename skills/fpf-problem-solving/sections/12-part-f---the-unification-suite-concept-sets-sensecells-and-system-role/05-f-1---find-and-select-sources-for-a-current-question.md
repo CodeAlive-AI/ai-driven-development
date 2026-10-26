@@ -19,7 +19,7 @@ When candidate sources are already inspectable and more than one may change the 
 
 The source-selection branch returns one `SourceCutNote : U.Episteme`. Before treating the note as that episteme, identify the receiving question as one exact project entity. That question is the note's `EntityOfConcern`; the intended use remains in the ClaimGraph rather than becoming a second subject. Name the effective `U.ReferenceScheme` explicitly: it must resolve the question, the cited source-edition designators, and the answer-changing role claims. The ClaimGraph also names deliberate exclusions, known limits or source gaps, and reopen conditions. If the question or scheme is still missing, keep an ordinary working note and return that missing value instead of claiming a C.2.1 episteme. A one-screen source note may represent the same episteme when it carries the same claims; its compact form neither admits a source nor contains its local meaning.
 
-**What this buys.** You can reach material under unfamiliar wording, explain what the available search could have missed, and return passages whose contribution to the current question can be inspected. Later term recovery, comparison, synthesis or direct source use can then begin from a reason for each source rather than from one influential canon, a bibliography quota, a domain label or an opaque search score.
+**What this buys.** You can reach material under unfamiliar wording, explain what the available search could have missed, and return passages whose contribution to the current question can be inspected. Later source use can begin from an inspected reason for selecting each source.
 
 **Not this pattern when.** If one already identified source closes the question, use its claim directly or use `F.0.1` for one source-local meaning. Use `F.9` for an actual relation between recovered local senses and `F.0.2` for a bounded conceptual comparison or synthesis. Use `G.2` for a broader refreshable SoTA pack. When the receiving work requires an exhaustive, protocol-defined, or appraisal-bearing evidence review, use its domain method; F.1 does not replace that search, appraisal, or reporting discipline. Building or maintaining an access system is a separate engineering question; this pattern uses the finding means already available.
 
@@ -48,7 +48,7 @@ Without question-led finding and a justified source cut where one is needed:
 | Efficient search vs human judgment | Search aids may prioritize candidates but cannot decide their role in the answer. |
 | Compact memory vs source analysis | A short result should keep the decision recoverable without becoming a second literature review. |
 | Wider discovery vs question fidelity | Query variants may omit a word to reach more material, while the original conditions still govern what can answer the question. |
-| Available access vs coverage | A cheap route may reach enough material; a consequential blind spot may justify another route or an honest access gap. |
+| Available access vs coverage | A cheap route may reach enough material; a consequential blind spot may justify another route or an explicit access gap. |
 
 
 
@@ -238,7 +238,7 @@ SPEM 2.0 or ISO 24744 may change the reading of Method and MethodDescription; OW
 
 ##### F.1:5.1.3 - Control, actuation, and services
 
-Control-theory sources, IEC 61131-3, ISA-95, ITIL 4, and SOSA/SSN can contribute different claims about controller design, program execution, integration, service commitments, and observations. A current question may need only a subset. *Actuation* is not a service promise, and *incident* is not a plant fault merely because the words occur near operational work.
+Control-theory sources, IEC 61131-3, ISA-95, ITIL 4, and SOSA/SSN can contribute different claims about controller design, program execution, integration, service commitments, and observations. A current question may need only a subset. Keep an actuation claim separate from a service commitment, and inspect whether an incident report concerns a plant fault.
 
 #### F.1:5.2 - Minimal worked source cut
 
@@ -417,7 +417,7 @@ Checks that refer to a cut or `SourceCutNote` apply when source selection is cur
 ### F.1:9 - Consequences
 
 
-An unfamiliar name or incomplete search view need no longer end finding silently. The practitioner can construct a route from the available source, words or references, repair a consequential blind spot and return material with an honest limit. That result may support a direct answer without requiring source selection.
+An unfamiliar name or incomplete search view need no longer end finding silently. The practitioner can construct a route from the available source, words or references, repair a consequential blind spot and return material with its limits. That result may support a direct answer without requiring source selection.
 
 The source cut becomes small enough to inspect, while a decisive rival, counterexample, or transfer limit cannot be discarded merely to satisfy a count. Later work can recover why each source was present, which edition was used, what the cut deliberately omitted, and what change reopens it.
 
@@ -440,7 +440,7 @@ The cut is not evidence that its sources are true, sufficient, representative, m
 
 Finding is useful when the question and the source's wording do not yet meet. An exact address or lexical lookup is sufficient when it reaches the needed content. Variants and complementary routes earn their extra cost by exposing material that the first route could miss. Restoring the original conditions during inspection prevents broader discovery from changing the question. Returning source context and actual access prevents a compact finding aid from supplying claims it never showed.
 
-Source selection for conceptual work is neither statistical sampling nor a race to the largest bibliography. The receiving question determines which source differences matter. A source belongs in the active cut when an inspected claim can change the answer, expose a rival or counterexample, or mark where transfer fails.
+The receiving question determines which source differences matter. A source belongs in the active cut when an inspected claim can change the answer, expose a rival or counterexample, or mark where transfer fails.
 
 This keeps the useful part of purposive and iterative sampling—selection for a stated analytic purpose—without importing another field's population, richness scale, saturation claim, or count convention. It also keeps the useful part of systematic-search and AI-assisted screening—recoverable searches and efficient candidate discovery—without treating search coverage, rank, or reporting conformance as source adequacy.
 

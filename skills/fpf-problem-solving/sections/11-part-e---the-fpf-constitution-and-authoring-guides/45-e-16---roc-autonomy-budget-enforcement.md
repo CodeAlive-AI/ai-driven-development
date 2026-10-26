@@ -2,8 +2,9 @@
 
 > **Status:** Stable
 
-**Intent.** Make an autonomy claim testable and enforceable through a published **AutonomyBudgetDecl**, guarded enactment, override SpeechActs with separation of duties, and a Work-anchored **AutonomyLedger**.
-**Rule (summary).** If a claim calls a local system-role kind, Method, or Service autonomous, read it as a claim about Work a System may perform without continuous human direction. Authors **MUST**: (i) publish an `AutonomyBudgetDecl` that names the claim, working situation, scope, window, policy, budget, and override rule; (ii) say whether it is unscheduled/prospective, bound to a proposed action, or bound to actual enactment; (iii) gate Method steps with `requiresAutonomyBudget`; (iv) write an `AutonomyLedgerEntry` for admitted Work; (v) block on depletion until a `ResumeAutonomy` SpeechAct passes the guards, the declared separation-of-duties check, and the independent authority check; and (vi) surface the autonomy fields in UTS rows.
+**Use this when.** A claim about a local system-role kind, Method or Service says that a System may decide or actuate without continuous human direction. Start by publishing the claimed autonomy and its limits in an `AutonomyBudgetDecl`, stating whether it is prospective, action-bound or enactment-bound. The rules below govern permission, override, actual Work accounting and publication.
+
+Purely assistive suggestion-only tools whose every action a human confirms at the point of execution are outside this pattern's scope.
 
 **Builds on:** A.2 / A.2.1 / A.2.5 / A.2.7 / A.15 / A.21; B.3; C.16; E.8; E.10; E.18; F.4; F.6; F.8; F.15; F.17.
 **Coordinates with:** A.13 (Agential Role) and A.17/A.18/A.19/C.16/A.10 for current agency characterization, measurement, and evidence; planned C.9 (Agency Characteristic Profile) only as future consolidation; C.24 (Agent-Tools-CAL) where applicable; G.4, G.5, G.8, G.9, and G.10 (method authoring, selection, and shipping).
@@ -29,8 +30,6 @@ A System that performs Work without continuous human direction must stay within 
 | **Autonomy vs SoD**            | Helpful self‑action vs separation‑of‑duties and human‑in‑the‑loop points |
 
 #### E.16:3.1 - Bias-Annotation
-
-**Bias considerations:** `Gov`, `Arch`, `Onto/Epist`, `Prag`, `Did`. **Scope:** Universal when wording about a local system-role kind, Method, or Service says that a System may perform Work involving unsupervised decision or actuation, and that Work is admitted through an `AutonomyBudgetDecl` plus Green-Gate. It is **not** aimed at purely assistive suggestion-only tools where a human confirms every action at the point of execution.
 
 * **Gov.** Bias toward enforceable oversight (hard gates, SoD, canonical override SpeechActs). Mitigation: exploration autonomy is still allowed, but only inside an explicit budget and time window.
 * **Arch.** Bias toward gate‑and‑ledger structure (Green‑Gate + Work‑anchored `AutonomyLedger`). Mitigation: `telemetrySpecRef` can scope what is emitted when full deltas are unnecessary.
@@ -227,7 +226,7 @@ At comparable operational effort, the selected line wins only when an action-sen
 | Anti-pattern | Symptom | Why it fails | Repair |
 | --- | --- | --- | --- |
 | **Autonomy-by-label** | “Autonomous” is claimed but there is no `AutonomyBudgetDecl` or ledger | Autonomy becomes opaque; cannot be audited or compared | Require **E.16‑S1/S3**; reject publication without `AutonomyBudgetDeclRef` + version |
-| **Soft gates** | Budget/guards only warn; enactment proceeds anyway | Violates Safety and SoD; makes budgets non-enforceable | Make Green‑Gate **blocking** on Core surface (**E.16‑S2**) |
+| **Soft gates** | Budget/guards only warn; enactment proceeds anyway | Violates Safety and SoD; makes budgets non-enforceable | Enforce the applicable A.21 profile and stop any continuation that its result forbids (**E.16-S2**). |
 | **Self-override** | The actual consumer and override assignments are missing, or their holder, actual-Work or proposed-action identity under the selected species, and window facts match the prohibited joint-allocation case in the declared A.2.7 predicate. | A label pair or two different assignment IDs does not establish separation of duties. | Resolve both exact A.2.1 assignments, apply the declared incompatibility predicate, reject a prohibited pair, and check the independent authority relation (**E.16-S4**). |
 | **Budget bypass via “scale”** | Scaling preference relaxes guards or ignores caps | Undermines declared limits; breaks comparability | In ScaleLensPolicy, **guards/SoD must remain non‑weakened** (**E.16‑S7**) |
 | **Untyped quotas** | Tokens/caps are recorded without units, or units are mixed | Ledger becomes non-comparable; audits become meaningless | Type budgets and deltas via **MM‑CHR (C.16)**; keep unitful rates/quotas |
@@ -249,6 +248,6 @@ At comparable operational effort, the selected line wins only when an action-sen
 5. **Check override separately:** distinguish the existing target Work from the proposed override; apply the selected actual-Work or prospective-action species to the real assignments and applicable window, and independently test authority before performance.
 6. **Publish what users need:** expose the budget edition, binding state, policy, override protocol, scope, and window in the UTS row.
 
-These steps are the smallest complete route for a working Part F test harness; optional telemetry and selection lenses remain optional.
+Optional telemetry and selection lenses remain optional.
 
 ### E.16:End

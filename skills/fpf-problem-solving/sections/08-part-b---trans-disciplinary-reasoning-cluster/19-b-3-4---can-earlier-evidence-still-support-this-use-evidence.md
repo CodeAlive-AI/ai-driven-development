@@ -57,7 +57,7 @@ Elapsed days can contribute to a justified priority rule or deterioration model.
 
 #### B.3.4:4.4 - Choose the feasible response to the actual change
 
-Determine what the receiving use can support now. The following are possible responses, not a compulsory completion triad:
+Determine which continuation the available support and applicable rules permit. Choose the response that addresses the actual change:
 
 | Response | When useful | Result for the receiving use |
 | --- | --- | --- |
@@ -113,7 +113,7 @@ This requires judgement about dependency reach and review policy. An optional qu
 
 ### B.3.4:8 - Rationale
 
-An earlier result can remain valid for its earlier claim while no longer supporting a changed use. Conversely, elapsed time need not defeat an unchanged premise. Maintenance therefore follows the assurance argument and its conditions rather than a universal entropy metaphor.
+An earlier result can remain valid for its earlier claim while no longer supporting a changed use. Conversely, elapsed time need not defeat an unchanged premise. Maintenance therefore follows the assurance argument and its conditions.
 
 B.3's source account and [ISO/IEC/IEEE 15026-2:2022](https://www.iso.org/standard/80625.html) place maintenance with assurance cases. C.27.TA supplies the use-relative temporal qualification. This pattern adapts those distinctions to continued reliance and planning; it attributes no universal decay equation or mandatory expiry date to the standard. A validated domain deterioration model or an applicable review rule can justify a particular time-based policy and its reconsideration conditions.
 

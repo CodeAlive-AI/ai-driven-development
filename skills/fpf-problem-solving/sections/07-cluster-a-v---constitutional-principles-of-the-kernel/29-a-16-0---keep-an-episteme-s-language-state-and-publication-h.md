@@ -52,9 +52,9 @@ It answers the question: `when the history matters, which episteme edition is cu
 
 #### A.16.0:4.0a - Identify the account and its expression
 
-1. **Apply the history threshold.** Keep a local A.16 move note when it answers the receiving question. Use the fuller account only when branch, loss, lineage or an actual responsibility history changes a later use.
+1. **Apply the history threshold.** Keep the local A.16 publication content when it answers the receiving question. Use the fuller account only when branch, loss, lineage or an actual responsibility history changes a later use.
 2. **Identify the account's subject.** For a source-centred history, name the exact source episteme as EntityOfConcern and state the relevant edition and relation claims in the account's ClaimGraph. For a relation-centred account, identify the independently obtaining relation it concerns. A negative or unresolved lineage claim remains about an independently identified source or other subject; it creates no relation occurrence.
-3. **Recover the relevant history claims.** Distinguish the source editions, position claims, actual lineage, moves, losses and next use needed here. Use their direct rules below. State an unknown link or a supported no-successor result explicitly rather than inventing continuity.
+3. **Recover the relevant history claims.** Distinguish the source editions, position claims, actual lineage, moves, losses and next use needed here. Use their direct rules below. Distinguish an unknown link from a no-successor result supported by an applicable negative criterion or complete closure basis. Neither result establishes continuity.
 4. **Choose an adequate expression.** The `LanguageStateMoveTrajectory` form can express that account. Under E.24.PUB, publication form is a relation-defined participant meaning over an independently identified entity; using the form admits no subtype or second account individual. Recover its expression relation, carrier and any availability occurrence only when the receiving claim needs those distinctions.
 5. **Return the history needed by the next use.** Make the relevant branch, loss, limit or responsibility fact recoverable. Stop when that use is supported; a further account of the account's own history is needed only if another receiving question requires it.
 
@@ -87,7 +87,7 @@ The position read by this pattern is the slot-explicit claim defined in `C.2.2a`
 Early seam publications may leave some slots unknown or wide. That uncertainty is admissible only if it is explicit. A trajectory account therefore records the position claim for the current episteme edition and, when needed, for predecessor or sibling editions that justify the move reading.
 
 #### A.16.0:4.3 - Use threshold and core trajectory record
-A single local `A.16` move note is sufficient when no load-bearing branch, loss, or supersession structure needs publication and no actual responsibility handoff depends on upstream history. An existing version history can also supply the answer when the needed source-use, continuity and loss facts are already recoverable there; the form does not require copying them into another document.
+Local `A.16` publication content is sufficient when no load-bearing branch, loss, or supersession structure needs publication and no actual responsibility handoff depends on upstream history. An existing version history can also supply the answer when the needed source-use, continuity and loss facts are already recoverable there; the form does not require copying them into another document.
 
 Use the `LanguageStateMoveTrajectory` account form when at least one of the following changes the receiving use:
 
@@ -100,7 +100,7 @@ An account using this form identifies its own subject, claim content and effecti
 
 - the current selected episteme edition;
 - predecessor, sibling, or ancestor editions when the current reading depends on lineage;
-- the lineage link kind (`derivedFrom`, `supersedes`, `forkedFrom`, `mergedFrom`, `retiredWithSuccessor`, `retiredWithoutSuccessor`, or another explicitly typed link);
+- the obtaining lineage link kind, such as `derivedFrom`, `supersedes`, `forkedFrom`, `mergedFrom` or `retiredWithSuccessor`; a supported `retiredWithoutSuccessor` result is a claim about the retired episteme, not a link to an invented successor;
 - the current position claim and any load-bearing predecessor position claims;
 - the typed move or move sequence;
 - the publication form and, when availability matters, the publication occurrence;
@@ -117,7 +117,7 @@ Not every account uses every move. Forward movement, retreat, reframing, and exp
 `A.16` defines the detailed move guards. `A.16.0` records the moves and their satisfied guards; it does not replace them.
 
 #### A.16.0:4.5 - Seam publication and face discipline
-A trajectory account may refer to seam publication forms that remain upstream of endpoint admission. In the current cluster these include:
+A trajectory account may refer to seam publication forms that remain upstream of endpoint admission. Examples include:
 
 - `PreArticulationCuePack`;
 - `RoutedCueSet`;
@@ -150,7 +150,7 @@ After docking to a next use, monitoring, maintenance, revisit, or later re-entry
 #### A.16.0:4.7 - Re-expression and additional world-facing Work
 Some `formalize` and `operationalize` steps re-express already available grounds through rewriting, slot-explicit articulation, route-bounded partialization, view retargeting, or normal-form repair. Performing those activities can itself be dated Work under A.15.1; the distinction here is whether new world-side measurements or interventions are needed.
 
-Some steps additionally require new measurements, experiments, installation or use of instrumentation, execution, or other `U.Work`. When that happens, the trajectory account shall expose the work-boundary crossing. The account records why the crossing was required; use the relevant work, gate, or endpoint pattern to describe or test the world step. Add a particular Work, assertion, or `ClaimGraph` identity only when the claim or later reliance depends on it.
+Some steps additionally require new measurements, experiments, installation or use of instrumentation, or execution. Make that needed action and its reason visible; use the relevant measurement, experiment, gate, or endpoint pattern to describe or test it. A distinct Work identity is needed only when the receiving claim or reliance depends on that occurrence: establish the A.13 basis and independent A.15.1 admission, then apply F.6 if precise assignment-bound attribution is needed. An assertion or `ClaimGraph` identity is likewise conditional on its use.
 
 A work-boundary crossing does not by itself transfer responsibility or authority. If a separate actual responsibility handoff occurs, use the triggered branch in `A.16.0:4.6` and keep its relation distinct from the Work, episteme lineage, publication, and endpoint use.
 
@@ -199,20 +199,20 @@ These are constructed distinctions. History account H1 has source episteme S0 as
 For a question about whether S0 has a successor when the evidence is incomplete, keep S0 as the account's subject and state that unresolved claim. For a question about an actual independently identified lineage relation R, an account may instead have R as its subject. A table showing unrelated S0 and T0 does not supply a common history-object identity.
 
 ### A.16.0:6 - Bias-Annotation
-The pattern biases authors toward lineage-aware history accounts rather than stage stories that conflate re-expression with changed claims. That bias is intentional when branch, loss, next-use, actual responsibility, or authority semantics matter. The counter-bias is equally intentional: do **not** publish a trajectory account when a local move note already suffices.
+The pattern biases authors toward lineage-aware history accounts rather than stage stories that conflate re-expression with changed claims. That bias is intentional when branch, loss, next-use, actual responsibility, or authority semantics matter. The counter-bias is equally intentional: reuse sufficient local publication content instead of adding another account.
 
 ### A.16.0:7 - Conformance Checklist
 - `CC-A.16.0-1` The `LanguageStateMoveTrajectory` account form **SHALL NOT** be treated as mandatory wrapper syntax around every `A.16` move or as an additional U-kind.
 - `CC-A.16.0-2` Identify the account episteme through its own C.2.1 content, subject and scheme. Distinguish it from the source editions and relations it describes, and distinguish each selected publication edition from grounds, form, availability occurrence, face and carrier.
 - `CC-A.16.0-3` Position claims used in the trajectory **SHALL** be published as slot-explicit claims in the declared language-state `U.CharacteristicSpace`, not as folk stage labels.
-- `CC-A.16.0-4` State the independently obtaining fork, merge, supersession, derivation or retirement facts whenever the account depends on them. Preserve negative or unresolved claims without inventing a relation. Successor publication and generic authority are not universal fork requirements.
+- `CC-A.16.0-4` State the independently obtaining fork, merge, supersession, derivation or retirement facts whenever the account depends on them. Distinguish negative claims supported by an applicable criterion or complete closure basis from unresolved claims; neither creates a relation. Successor publication and generic authority are not universal fork requirements.
 - `CC-A.16.0-5` Publication form and MVPK face **SHALL NOT** be collapsed, and untyped seam placeholders **SHALL NOT** substitute for typed publication forms.
 - `CC-A.16.0-6` `projection` **SHALL** be read as route-bounded partialization with visible loss notes and an admissible reopen condition.
 - `CC-A.16.0-7` Work-requiring `formalize` or `operationalize` steps **SHALL** expose the work-boundary crossing; they **SHALL NOT** call that crossing a responsibility handoff unless the separate `A.16.0:4.6` branch is satisfied.
 - `CC-A.16.0-8` When the history is represented by an independently selected TransformationFlowStructure, authors **SHALL** apply E.18 to that structure and use E.18.2 when a mathematical description is needed. A graph rendering alone establishes neither subject.
 
 ### A.16.0:8 - Common Anti-Patterns and How to Avoid Them
-- **Meta-wrapper inflation.** Treat `A.16.0` as obligatory around every move. Repair by publishing a local `A.16` move note unless a later use depends on the history.
+- **Meta-wrapper inflation.** Treat `A.16.0` as obligatory around every move. Repair by using sufficient local `A.16` publication content unless a later use depends on the history.
 - **One-publication myth.** Record a changed claim discriminator under the same episteme edition. Repair by identifying the different epistemes and only the lineage links whose predicates obtain.
 - **Pattern and form collapse.** Treat a pattern reference as if it were a publication form. Repair by naming the form and the cited pattern's concrete definition, constraint, or test separately.
 - **Form and face collapse.** Treat seam publications as if they minted a second MVPK face family. Repair by naming form and face separately.
@@ -220,7 +220,7 @@ The pattern biases authors toward lineage-aware history accounts rather than sta
 - **Hidden work crossing or invented responsibility handoff.** Do not describe operationalization as purely linguistic when it required new world-facing work, and do not treat that crossing or next-use docking as a responsibility transfer. Publish the work boundary; open the separate `A.16.0:4.6` branch only for an actual responsibility, commitment, permission, or authority change.
 
 ### A.16.0:9 - Consequences
-The benefit is that heavy-history language-state movement becomes lineage-aware, reviewable, and dockable without premature endpoint capture or metonymic collapse. The trade-off is more explicit publication of position claims, lineage links, move kinds, loss notes, next-use docking, and any actual responsibility handoff when history is worth publishing.
+Readers can recover which epistemes supplied later claims, what changed or was lost, and how that history constrains the next use. The trade-off is more explicit publication of position claims, lineage links, move kinds, loss notes, next-use docking, and any actual responsibility handoff when history is worth publishing.
 
 ### A.16.0:10 - Rationale
 Language-state work needs one trajectory-account normal form for the subset of cases where history itself matters. Without it, readers have to reconstruct lineage, branch structure, retirement, next-use docking, and any actual responsibility handoff from fragments. With it overused, every local move becomes over-wrapped. The pattern exists to hold the middle line.
@@ -262,10 +262,10 @@ An operator alert note about a service disturbance may move:
 
 `notice -> stabilize -> route -> projection -> operationalize`
 
-If later evidence no longer supports one route, the admissible continuation may include explicit retirement of that branch rather than silent disappearance. The retirement does not erase the prior branch; it ends the retired branch's current use and preserves continuity explicitly. Any authority change still requires the separate relation in §4.6.
+If later evidence no longer supports one route, the admissible continuation may include explicit retirement of that branch rather than silent disappearance. The retirement ends the branch's current use while preserving its history. Any episteme-continuity claim still requires its own obtaining relation. Any authority change still requires the separate relation in §4.6.
 
 #### A.16.0:13.4 - Bridge-sensitive trajectory
-A route-bearing comparative note may move through a seam publication and only later dock to a bridge overlay or viewpoint bundle. The bridge or viewpoint attachment does not replace the trajectory account; it annotates or re-expresses a lineage that already exists.
+A route-bearing comparative note may move through a seam publication and only later dock to a bridge overlay or viewpoint bundle. Apply F.9 or E.17.1 to the receiving use and reuse the established history needed there. A Bridge or viewpoint attachment supplies no missing lineage facts.
 
 ### A.16.0:14 - Filled history: a restart incident loses its scope
 
@@ -279,7 +279,7 @@ The local incident-edition rule permits a note to continue S0 only if it actuall
 | S1, a briefing composed from S0 | “Checkout is permanently undersized; add replicas.” The explicit claim/action supports AE3; the selected capacity route is CD3. It omits both the restart window and the later success, and drops the rival explanations. | S1 has changed claim content and fails the stated edition-continuity rule. Record that failed continuation claim rather than silently linking it as the next valid edition. Its polish and closure establish no stronger warrant. |
 | S2, a corrected note composed directly from S0 after S1's loss is found | Retains both observations and rivals; adds “Which explanation accounts for the restart-only timeouts, and what observation would distinguish them?” It withdraws the permanent-shortage conclusion. Its explicit diagnostic structure gives `ValueSet(AE)={AE3}`; restored rivals give `ValueSet(CD)={CD2}`. | C.2.1 continuation from S0 to S2 obtains: distinct content, actual source use, same System/scheme, retained observations and an explicitly changed question satisfy the stated rule. Do not infer continuation from S1. |
 
-The A.16 `reopen` guard is met for the earlier capacity-route commitment: recovering S0 reveals the lost scope and unsupported elimination of rivals. The local next-use rule requires at least AE2, both named rivals and the observation window to be recoverable; it permits a return to B.5.2.0's diagnostic-question entry, not authorization to add replicas. S2 meets that guard. The receiving practitioner can now frame the discriminating inquiry while withholding the permanent-capacity conclusion. Any additional measurement is prospective Work under its own rule.
+The A.16 `reopen` guard is met for the earlier capacity-route commitment: recovering S0 reveals the lost scope and unsupported elimination of rivals. The local next-use rule requires at least AE2, both named rivals and the observation window to be recoverable; it permits a return to B.5.2.0's diagnostic-question entry, not authorization to add replicas. S2 meets that guard. The receiving practitioner can now frame the discriminating inquiry while withholding the permanent-capacity conclusion. Any additional measurement remains to be planned and performed under its applicable rule; admit a distinct Work only when that claim is needed.
 
 This short history is needed because the loss occurred between notes and changes how the later action proposal may be used. If the same facts and return were already recoverable in one adequate local move note, §4.3 would stop there. No successor publication, fork, responsibility transfer or history-of-H17 is required for this result.
 
@@ -288,14 +288,10 @@ A practitioner should ask:
 
 1. Is the author describing history over the declared language-state `U.CharacteristicSpace`, or only narrating progress informally?
 2. Is the selected episteme edition distinct from the grounds, publication form, occurrence, face, and carrier?
-3. Is this history heavy enough to justify `A.16.0`, or would a local `A.16` move note have sufficed?
+3. Is this history heavy enough to justify `A.16.0`, or would local `A.16` publication content have sufficed?
 4. Are multi-route state and lineage fork being kept distinct?
 5. Are derivation, supersession, fork, merge, or retirement links visible where the reading depends on them?
 6. Does the current claim concern an episteme edition, a seam or endpoint publication form, or—when bounded availability matters—an `EpistemePublicationRelation` occurrence? Are those positions kept separate, and is the endpoint test named?
 7. If `formalize` or `operationalize` required world-facing work, is the work-boundary crossing explicit? If responsibility, commitment, permission, or authority also changed, are its participants, exact relation, object or action, scope, interval, and required instituting act stated separately?
 
-### A.16.0:16 - Boundary notes
-`A.16.0` does not replace `C.2.2a` / `A.19` position semantics, `A.16` move guards, `A.16.1` cue-pack semantics, `A.16.2` retreat / retirement semantics, `B.4.1` seam entry routing, `B.5.2.0` abductive prompt species, `E.17` face typing, `E.18` selected transformation-flow structure, or any endpoint-local repair logic.
-
-Its job is narrower: publish one intelligible history package where lineage, branch, loss, retreat, retirement, next-use docking, or a separately established responsibility handoff is load-bearing. It does not turn those different relations into one handoff relation.
 ### A.16.0:End

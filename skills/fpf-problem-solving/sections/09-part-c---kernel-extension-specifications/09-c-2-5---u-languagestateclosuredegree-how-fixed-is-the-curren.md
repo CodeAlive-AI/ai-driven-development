@@ -8,7 +8,7 @@
 
 **Use this pattern when.** Use C.2.5 when a governed `U.Episteme` publication must say how fixed its candidate space, route space, or frame space has become before endpoint use, reopening, or retreat.
 
-**What goes wrong if missed.** A confident tone is mistaken for closure, closure is mistaken for truth or gate authority, or a closure drop leaves endpoint expectations and route commitments silently hanging.
+**What goes wrong if missed.** A confident tone is mistaken for closure, closure is mistaken for truth or gate authority, or a closure drop leaves readers unable to tell which endpoint uses and route commitments remain supported.
 
 **What this buys.** A separate ordinal characteristic for closure degree, so teams can distinguish exploration, stabilization, selected route, guarded fixation, and admissible retreat without collapsing closure into formality, articulation, warrant, or obligation.
 
@@ -30,16 +30,16 @@ Closure is often hidden inside vague words such as "ready", "settled", or "open"
 
 #### C.2.5:4.0a - Kind and characteristic boundary
 
-`U.LanguageStateClosureDegree` is a dependent durable characteristic value under the declared `U.LanguageStateSpace` / `U.CharacteristicSpace` boundary, not a root U-kind. Its identity is the closure-degree basis slot and ordinal scale discipline for governed episteme publication positions. Claims about local route commitments, gates, or authority states remain separate from the closure-degree claim. When one matters to the current use, test it against its applicable rule and current case facts.
+`U.LanguageStateClosureDegree` names the Characteristic assessed here. The `CD0`–`CD5` readings belong to its ordinal Scale. A language-state chart binds that Characteristic and Scale in a basis slot under A.19; the Characteristic, a value on its Scale and the chart slot remain distinct. Claims about local route commitments, gates, or authority states remain separate from the closure-degree claim. When one matters to the current use, test it against its applicable rule and current case facts.
 
 #### C.2.5:4.1 - Characteristic specification
 - **Kind:** CHR characteristic.
 - **Scale discipline:** ordinal.
-- **What rises:** the local state becomes more fixed or more binding.
+- **What rises:** the candidate space or selected route becomes more fixed for the named use. Any binding force comes from its separately established rule.
 - **What does not follow automatically:** truth, trust, formality, or quality.
 
 #### C.2.5:4.2 - Starter anchor set
-| Anchor | Reading | Typical governance effect |
+| Anchor | Reading | Typical interpretation for use |
 |---|---|---|
 | `CD0` | exploratory-open | broad rival space remains live |
 | `CD1` | weakly stabilized | some contrasts are present, but rival routes remain normal |
@@ -72,7 +72,7 @@ An ordinary PatternID in `governingPatternRef` locates the FPF rule relevant to 
 **Show (Episteme).** A hypothesis sketch can be highly articulated but still low closure because rival explanations remain live.
 
 ### C.2.5:6 - Bias-Annotation
-The pattern makes closure explicit, which resists hidden overconfidence but may feel heavy to authors who prefer implicit consensus.
+Explicit closure takes description work; it makes the remaining rivals and grounds of fixation recoverable.
 
 ### C.2.5:7 - Conformance Checklist
 - `CC-C.2.5-1` Closure **SHALL** be declared independently from `F` and `AE` when it matters for routing, docking, or reopening.
@@ -81,7 +81,7 @@ The pattern makes closure explicit, which resists hidden overconfidence but may 
 - `CC-C.2.5-4` A closure drop **SHALL NOT** silently preserve an endpoint-use claim when the supporting route or publication form no longer supports it.
 
 ### C.2.5:8 - Common Anti-Patterns and How to Avoid Them
-- **Closure by mood.** A sentence sounds decisive, so teams assume high closure. Publish `CD` explicitly.
+- **Closure by mood.** A sentence sounds decisive, so teams assume high closure. State the actual fixation and its grounds; add a `CD` reading when the receiving use needs that scale.
 - **Irreversible drift.** Closure rises informally but no reopening condition exists. Use `A.16.2`.
 - **Authority smuggling.** High closure is treated as if it were automatically a gate or obligation. Check the applicable gate condition for a gate claim; use `A.2.8` to check whether the claimed obligation obtains.
 
@@ -89,7 +89,7 @@ The pattern makes closure explicit, which resists hidden overconfidence but may 
 The benefit is admissible handling of stabilization, commitment, and reopening. The trade-off is more explicit state declaration and more explicit retreat records.
 
 ### C.2.5:10 - Rationale
-Closure is the route-governance basis slot that complements articulation within the declared language-state chart over `U.CharacteristicSpace`. `A.16.0` and its seam species need both.
+Closure describes how fixed the candidate space is; articulation describes how explicit its meaning is. `A.16.0` and its related patterns can use both when each affects the move condition.
 
 ### C.2.5:11 - SoTA-Echoing
 The facet aligns with iterative design, open-world reasoning, and exploratory search practices where closure is a governance choice rather than a hidden by-product.
@@ -101,13 +101,13 @@ The facet aligns with iterative design, open-world reasoning, and exploratory se
 ### C.2.5:13 - Worked Examples and Retreat Cases
 
 #### C.2.5:13.1 - Explicit but still open
-A note may sit at `AE4` yet only `CD1` because rival explanatory frames are still live. The important lesson is that explicit publication does not imply settled closure.
+A note may sit at `AE4` yet only `CD1` because rival explanatory frames are still live. Explicit publication does not imply settled closure.
 
 #### C.2.5:13.2 - Strong closure under policy guard
 An operator rule may be only moderate in `AE` but high in `CD` because policy already fixes the next step under the current horizon. This shows why closure is governance-facing, not merely stylistic.
 
 #### C.2.5:13.3 - Reopen case
-A route may move from `CD4` back to `CD2` when counter-evidence appears. A conforming publication does not hide this as embarrassment; it records the retreat as an admissible `A.16.2` move.
+A route may move from `CD4` back to `CD2` when counter-evidence appears. Record the counter-evidence and the retreat as an admissible `A.16.2` move.
 
 ### C.2.5:14 - Authoring and Review Guidance
 
@@ -116,11 +116,11 @@ To assign `CD`, ask:
 
 - how many rivals remain live?
 - is one route merely preferred, or actually fixed?
-- what guard, `governingPatternRef`, or `authoritySourceRef` makes the closure binding?
+- if the closure is binding, what applicable guard, `governingPatternRef`, or `authoritySourceRef` makes it so?
 - what would count as an admissible reopen trigger?
 
 #### C.2.5:14.2 - Review prompt
-An assurance reader should ask whether closure is being inferred from tone, from hierarchy, or from social force rather than from an explicit narrowing of route or frame space.
+An assurance reader should identify the actual narrowing and its source under :16.2, including a policy or protocol when it fixes the route. Confident tone or an appeal to hierarchy alone does not establish that fixity.
 
 #### C.2.5:14.3 - Governance note
 Whenever a claim about a gate, commitment, or endpoint use depends on `CD`, the supporting guard, `governingPatternRef`, or `authoritySourceRef` should be visible.
@@ -131,7 +131,7 @@ Whenever a claim about a gate, commitment, or endpoint use depends on `CD`, the 
 Contexts may refine the starter closure anchors, but shall keep the ordinal progression and the explicit link to reopen/backoff discipline.
 
 #### C.2.5:15.2 - Migration from readiness language
-Words such as "settled", "closed", "final", or "open" should be treated as migration prompts into explicit `CD` claims and, where needed, into named `A.16.2` moves.
+When routing, endpoint use or reopening depends on words such as "settled", "closed", "final", or "open", recover the claimed fixity and its grounds. Use an explicit `CD` reading when that scale is needed and a named `A.16.2` move when the closure changes. Sufficient ordinary wording needs no separate level solely to repeat it.
 
 #### C.2.5:15.3 - Boundary reminder
 `CD` is not warrant strength and not a gate decision. It speaks only about the local fixity of the current episteme or publication position and its candidate space.
@@ -142,7 +142,7 @@ A publishable `CD` claim should name what has narrowed:
 
 - the rival routes or frames that remain live;
 - the route, frame, or interpretation that is currently privileged or fixed;
-- the guard, `governingPatternRef`, `authoritySourceRef`, or policy that makes the narrowing binding;
+- any guard, `governingPatternRef`, `authoritySourceRef`, or policy that makes the narrowing binding;
 - the condition under which an admissible reopen or backoff would occur.
 
 A bare claim such as "now settled" is insufficient when closure affects routing or authority.
@@ -177,16 +177,16 @@ High `CD` may coexist with obligations. When prose treats "closed" as "must now 
 An assurance reader should ask:
 
 - what was narrowed;
-- by what `governingPatternRef`, `authoritySourceRef`, or guard it was narrowed;
+- what evidence, choice or applicable rule supports that narrowing, with a `governingPatternRef`, `authoritySourceRef` or guard when one is used;
 - what would reopen it;
 - which gate, release, work, evidence-use, assurance, policy, or adjudication claims depend on the stated closure conditions and remain supported;
-- whether the publication distinguishes local closure from whole-context finality.
+- whether the publication distinguishes local closure from whole-case finality.
 
 #### C.2.5:18.2 - False-finality test
-Words such as "final", "settled", or "decided" should be challenged unless the route-governance and guard package is explicit. Final-sounding rhetoric often overstates actual closure.
+When a receiving action relies on "final", "settled", or "decided", check the actual scope and source of fixation and any applicable guard. A final-sounding word alone does not establish those conditions.
 
 #### C.2.5:18.3 - Cross-facet reminder
-Low `CD` does not imply low articulation, low anchoring, or poor representation. Reviewers should not treat openness as low seriousness.
+Low `CD` does not imply low articulation, low anchoring, or poor representation.
 
 #### C.2.5:18.4 - Split-closure review case
 A publication may be closed enough for immediate local work use or reliance use while remaining open about broader explanation, long-horizon consequences, or alternative classification. Allow the split when locality is explicit; reject prose that advertises whole-case finality when only one language-state segment is fixed.

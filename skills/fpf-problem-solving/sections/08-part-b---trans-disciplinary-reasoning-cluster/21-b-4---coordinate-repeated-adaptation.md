@@ -16,11 +16,11 @@ The FPF is built on the **Principle of Open-Ended Evolution (P-10)**: continued 
 
 ### B.4:2 - **Problem**
 
-Without a canonical, shared model for evolution, projects fall into predictable and costly failure modes:
+When use, observation, and change are disconnected, three failures can follow:
 
-1. **Design-Reality Divergence (The "Drift"):** The run-time subject in use slowly diverges from its design-time account. Formal models become elegant fictions, assurance cases become irrelevant, and the project loses the ability to reason reliably about what it uses.
-2. **Learning Stagnation (The "Ivory Tower"):** Observation produces valuable findings, but no explicit change path carries them into a revised design or renewed use. "Lessons learned" remain static documents.
-3. **Chaotic Change (The "Whack-a-Mole"):** Reactive patches have no stated observed basis, identity decision, or return-to-use condition. Hidden dependencies and unintended consequences accumulate.
+1. **Design-reality divergence:** The subject in use diverges from its design-time account. Models and assurance cases can continue to describe conditions that no longer hold.
+2. **Unused findings:** Observation produces valuable findings, but no explicit change path carries them into a revised design or renewed use. "Lessons learned" remain static documents.
+3. **Unexplained change:** Reactive patches have no stated observed basis, identity decision, or return-to-use condition. Hidden dependencies and unintended consequences accumulate.
 
 ### B.4:3 - **Forces**
 
@@ -48,9 +48,9 @@ Not every holon is an adaptation-loop subject, and the five branches are not int
 
 #### B.4:4.2 - Separate the changed subject from the acting side
 
-The subject does not observe, refine, or deploy itself by grammatical convenience. A System performs each actual piece of Work. The changed subject, performing System, dated Work, Method enacted by that Work, and result remain distinct. Practitioner prose can still say "the engineer refined the design" or "the controller adjusted the valve" when that recognizable actor and action are enough. If that ordinary sentence is all the receiver needs, do not open a technical Work account. If B.4 identifies one particular dated `U.Work` occurrence, first recover every actual performer's A.13 core and independently admit the Work under A.15.1 from its performance history, enacted Method, temporal extent, and containing System. Add F.6 only when the receiving claim also needs precise assignment-bound attribution. A short B.4 account may omit an unused assignment identifier or classification only when every relation it consumes remains recoverable.
+Name the acting System separately from the subject being changed. A System performs each actual piece of Work. The changed subject, performing System, dated Work, Method enacted by that Work, and result remain distinct. Practitioner prose can still say "the engineer refined the design" or "the controller adjusted the valve" when that recognizable actor and action are enough. If that ordinary sentence is all the receiver needs, do not open a technical Work account. If B.4 identifies one particular dated `U.Work` occurrence, first recover every actual performer's A.13 core and independently admit the Work under A.15.1 from its performance history, enacted Method, temporal extent, and containing System. Add F.6 only when the receiving claim also needs precise assignment-bound attribution. A short B.4 account may omit an unused assignment identifier or classification only when every relation it consumes remains recoverable.
 
-The performing System need not be external to the larger holon. For internal adaptation, apply the `A.12` reflexive split: identify the changed subsystem or part and the acting subsystem or part as exact, distinct participants, and establish their parthood in the containing holon independently. Use an external System when that is what the case actually has. For any particular dated `U.Work`, recover every performer's A.13 core and independently admit the occurrence under A.15.1; add F.6 afterward only when precise assignment-bound attribution is current. Name an assignment in the short B.4 account only when the receiving claim uses its identity. State authority, responsibility, permission, acceptance, or admission through its own direct predicate, actual participants, and applicability basis; neither a phase label nor Work supplies them.
+The performing System need not be external to the larger holon. For internal adaptation, apply the `A.12` reflexive split: identify the changed subsystem or part and the acting subsystem or part as exact, distinct participants, and establish their parthood in the containing holon independently. Use an external System when the case has one. Apply the same Work-admission and conditional attribution rules above to either acting side. State authority, responsibility, permission, acceptance, or admission through its own direct predicate, actual participants, and applicability basis; neither a phase label nor Work supplies them.
 
 #### B.4:4.3 - Keep the four phase claims distinct
 
@@ -141,17 +141,17 @@ The phase names can be shared, but each subject branch keeps its own identity an
 
 ### B.4:8 - **Common Anti-Patterns and How to Avoid Them**
 
-| Anti-Pattern | Observable symptom | How FPF prevents it conceptually |
+| Anti-pattern | Observable symptom | Repair |
 | :--- | :--- | :--- |
-| **The "Immaculate Conception"** | A feature or design appears with no observed basis or identity decision. | **CC-B4.1** and **CC-B4.2** connect the change to an observed basis and state whether the subject continues or has a successor. |
-| **The "Self-Healing Illusion"** | "The system automatically improves itself" hides who or what performed the Work. | **CC-B4.3** requires a distinct acting-side System. An internal control or adaptation loop is valid when exact internal participants, their parthood, the Work, Methods, and phase transitions are identified; physical externality is not required. |
-| **The "Perfect Hotfix"** | A quick run-time repair is reported as a complete successful loop, although design repair, evidence, or renewed-use confirmation did not occur. | Record only the urgent observation, change Work, deployment, and immediate result that actually occurred. Later description repair, testing, assurance, and follow-up operation are separate Work and may reopen the loop. A hotfix can compress time, not truth. |
+| **Change without a basis** | A feature or design appears with no observed basis or identity decision. | **CC-B4.1** and **CC-B4.2** connect the change to an observed basis and state whether the subject continues or has a successor. |
+| **Unidentified internal adaptation** | "The system automatically improves itself" hides who or what performed the Work. | **CC-B4.3** requires a distinct acting-side System. An internal control or adaptation loop is valid when exact internal participants, their parthood, the Work, Methods, and phase transitions are identified; physical externality is not required. |
+| **Incomplete hotfix account** | A quick run-time repair is reported as a complete successful loop, although design repair, evidence, or renewed-use confirmation did not occur. | Record only the urgent observation, change Work, deployment, and immediate result that actually occurred. Later description repair, testing, assurance, and follow-up operation are separate Work and may reopen the loop. |
 
 ### B.4:9 - **Consequences**
 
 | Benefits | Trade-offs / Mitigations |
 | :--- | :--- |
-| **Creates a learning architecture:** The loop gives repeated adaptation a readable structure and connects learning to actual change. | **Record overhead:** A full trace is too heavy for many local changes. *Mitigation:* keep the account proportional to the receiver and expand it only for reliance, assurance, audit, or replay. |
+| **Connects learning to change:** The loop relates an observed basis, a change, and renewed use across repeated adaptations. | **Record overhead:** A full trace is too heavy for many local changes. *Mitigation:* keep the account proportional to the receiver and expand it only for reliance, assurance, audit, or replay. |
 | **Exposes design-reality divergence:** Separate phase outputs make stale descriptions, failed deployment, and missing renewed use visible. | **No automatic success:** The loop cannot guarantee reconciliation. Deployment can fail, evidence can overturn a candidate, and renewed use can reveal another problem. |
 | **Makes evolution auditable:** Named subjects, Systems, Work, identity relations, and evidence let a reviewer reconstruct why a change was made. | **Several patterns remain necessary:** B.4 coordinates their results; it does not replace the subject's identity, Work, evidence, publication, or acceptance patterns. |
 
@@ -170,7 +170,7 @@ The result is a practical review language for repeated adaptation. It avoids bot
 * **Operationalizes:** `P-10 Open-Ended Evolution`.
 * **Uses:** `A.4` when Observe needs a comparison of a System's intended design with its actual operating conditions; `A.12` for external or reflexively split acting sides; `A.15.1` for dated Work; and the direct subject patterns named in B.4:4.1 for identity and continuity.
 * **Coordinates with:** `B.5 Choose the Next Reasoning Contribution (Canonical Reasoning Cycle)`, `B.5.1` development states, and `B.3 Is This Claim Supported for This Use? — Trust and Assurance Calculus`. B.4 does not implement the B.5.1 states one-for-one, and evidence is not a B.4 phase.
-* **Is detailed by:** `B.4.1 Publish Candidate Routes for a Stabilized Cue (RoutedCueSet)` for optional early cue routing, together with B.4.x instantiation patterns for specific subject families.
+* **Is detailed by:** `B.4.1 Publish Candidate Routes for a Stabilized Cue (RoutedCueSet)` for optional early cue routing. The subject patterns in B.4:4.1 supply each subject's identity and continuity rules.
 
 #### B.4:11.1 - Pre-abductive seam compatibility
 

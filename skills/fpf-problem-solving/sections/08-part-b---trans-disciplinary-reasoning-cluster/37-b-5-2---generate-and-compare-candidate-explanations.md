@@ -14,16 +14,16 @@
 
 ### B.5.2:1 - Problem frame
 
-**Use this when.** An anomaly, opportunity or probe question needs candidate explanations that can be compared on their present plausibility. State the question and generate its serious rivals. The first useful result is a qualified conjecture with its supports, fragilities and allowed use, or an honest abort, defer or split outcome.
+**Use this when.** An anomaly, opportunity or probe question needs candidate explanations that can be compared on their present plausibility. State the question and generate its serious rivals. The first useful result is a qualified conjecture with its supports, fragilities and allowed use, or a justified abort, defer or split outcome.
 
 An adequate present answer or action need not enter abduction merely to generate another research task. Use C.11 for a live choice among feasible actions and C.28 when a causal-support claim is needed. Abduction contributes candidate explanatory content; it is not the complete evidence synthesis or action decision.
 
 ### B.5.2:2 - Problem
 
-Without an explicit abductive pattern:
+Abductive work can fail in several ways:
 
 1. **Inquiry stalls at surprise.**
-   A team encounters an anomaly, opportunity, or probe pressure but has no admissible next action for producing a candidate hypothesis.
+   A team encounters an anomaly, opportunity, or probe question but does not know how to form and compare candidate explanations.
 2. **Origin is lost.**
    Once a conjecture appears, the initiating prompt, rival candidates, and early plausibility grounds disappear from the record.
 3. **Candidate space collapses too early.**
@@ -64,7 +64,7 @@ The loop is intentionally iterable. A selected prime hypothesis may later be rep
 
 #### B.5.2:4.3 - Entry discipline via `U.AbductivePrompt`
 
-`AnomalyStatement` remains a canonical prompt species, but it is not the only one. `B.5.2` also accepts the broader prompt species governed by `B.5.2.0`, such as `ProblemCuePrompt`, `OpportunityCuePrompt`, and `ProbeCuePrompt`. This broadens entry without dissolving type discipline.
+`AnomalyStatement` remains a canonical prompt species, but it is not the only one. `B.5.2` also accepts the broader prompt species governed by `B.5.2.0`, such as `ProblemCuePrompt`, `OpportunityCuePrompt`, and `ProbeCuePrompt`.
 
 #### B.5.2:4.4 - Plausibility filters
 
@@ -95,16 +95,15 @@ AbductiveUnfoldingStructureBlock:
   evidenceReturnLoci[]:
   languageStateMoveRefs[]:
   poolPolicyOrSelectionRef?:
-  blockedOverread?: not inspiration event, not linear ideation workflow, not evidence by itself
 ```
 
 Use `unfoldingStructureRef` to designate the selected structure. Recover its constituents, obtaining relation occurrences, applied constraints and selection-use frame under A.22; qualify its loci and potential continuations under A.22.CGUS. Keep the describing record separate from that identity. Use `cueSetWithDownstreamPatternAlternativesRef` when the prompt still carries several possible patterns for the next question. Use `rivalHypothesisSetRef` before selecting a prime hypothesis. Use `evidenceReturnLoci[]` to say where later evidence, deduction, probe design, or assurance work can return; do not use those loci as evidence. Abductive plausibility comparison remains here. Use C.18 for archive or front claims, C.19 for live-pool policy, G.5 for a selector's selected-set declaration, or the direct comparison method when that distinct result is needed.
 
-`AbductiveSearchUnfoldingStructure` is a local designation for an A.22.CGUS structure selected for an abductive-search question; it supplies no additional identity rule. It is not a root U-kind, ideation workflow, evidence, or selection decision. Use `B.5.2` to state the abductive prompt, cue set with alternative next patterns, rival hypotheses, plausibility constraints, and evidence-return loci. Use the patterns that define or test evidence, deduction, probe design, assurance, selected-set result declaration, pool policy, and comparison when those claims become current.
+`AbductiveSearchUnfoldingStructure` is a local designation for an A.22.CGUS structure selected for an abductive-search question; it supplies no additional identity rule.
 
 ### B.5.2:5 - Archetypal Grounding
 
-**Tell.** Abduction is not "a flash of insight." It is the governed passage from a typed prompt to a candidate conjecture through explicit rival generation and plausibility comparison.
+**Tell.** Abduction develops a candidate conjecture from a typed prompt through explicit rival generation and plausibility comparison.
 
 **Show (System).** An operations team sees a recurring latency spike that existing explanations do not cover. They publish an `AnomalyStatement`, compare rival causes against current telemetry and mechanism knowledge, and retain a qualified prime conjecture. They name a possible discriminating probe without assigning a maturity level or committing the service team to an experiment.
 
@@ -112,7 +111,7 @@ Use `unfoldingStructureRef` to designate the selected structure. Recover its con
 
 ### B.5.2:6 - Bias-Annotation
 
-This pattern biases authors toward visible candidate plurality, explicit plausibility criteria, and persistent prompt provenance. That bias is intentional. `B.5.2` would rather keep early conjectures slightly over-exposed than let their origin and selection grounds disappear.
+This pattern biases authors toward visible candidate plurality, explicit plausibility criteria, and persistent prompt provenance.
 
 ### B.5.2:7 - Conformance Checklist
 
@@ -147,7 +146,7 @@ For the hypothesis-led empirical inquiry described in B.5, B.5.2 supplies explan
 
 ### B.5.2:11 - SoTA-Echoing
 
-Contemporary inquiry practice in science, engineering, design, and diagnosis treats candidate generation as iterative and contrast-driven rather than singular and opaque. The pattern aligns with that practice, but keeps the representation lightweight: explicit prompts, visible rival candidates, and local plausibility grounds instead of heavyweight ideation machinery.
+Iterative comparison keeps a candidate explanation open to revision as rival explanations and plausibility grounds change. A short publication can preserve the prompt, rival candidates and comparison rationale.
 
 ### B.5.2:12 - Relations
 
@@ -161,7 +160,7 @@ Contemporary inquiry practice in science, engineering, design, and diagnosis tre
 
 #### B.5.2:12.1 - Prompt-entry broadening via `U.AbductivePrompt`
 
-Older wording that makes `AnomalyStatement` the exclusive entry form is superseded. `B.5.2` accepts `U.AbductivePrompt`, where `AnomalyStatement` remains one canonical species alongside cue-derived prompt species such as `ProblemCuePrompt`, `OpportunityCuePrompt`, and `ProbeCuePrompt`.
+`B.5.2` accepts `U.AbductivePrompt`. `AnomalyStatement` is one canonical species alongside cue-derived prompt species such as `ProblemCuePrompt`, `OpportunityCuePrompt`, and `ProbeCuePrompt`.
 
 ### B.5.2:13 - Prompt, Candidate, and Hypothesis Package Discipline
 
@@ -189,7 +188,7 @@ A candidate-set note is the minimal record that preserves rival plurality. It ne
 - whether the candidate remains live, is deferred, or is rejected,
 - and the implication or possible evidence that would best discriminate among remaining rivals, with an availability limitation when it changes the receiving use.
 
-The important point is not bureaucratic completeness. The important point is to prevent retrospective rewriting in which the surviving candidate is made to look as if it had been the only serious option from the beginning.
+Keep the alternatives visible so a later reader can recover what was compared before the preferred candidate was selected.
 
 #### B.5.2:13.3 - Prime-hypothesis record
 
@@ -202,7 +201,7 @@ A selected prime hypothesis should preserve more than the hypothesis sentence it
 - the **allowed downstream use or next question**, which may concern deduction, a possible probe, a separately justified action or reconsideration; include availability limits when they change that use,
 - and any **known fragilities** already visible at selection time.
 
-This is how `B.5.2` stays connected to the rest of the reasoning cycle. The abductive loop does not merely emit an idea; it emits a conjecture with explicit downstream-use terms.
+These terms let the recipient choose a permitted continuation from the conjecture.
 
 ### B.5.2:14 - Admissible Transitions, Abort Paths, and Reopening
 
@@ -210,7 +209,7 @@ The abductive loop keeps its outcomes distinct so the recipient can tell whether
 
 #### B.5.2:14.1 - Relation to `B.4.1` and `A.16`
 
-`B.4.1` and `A.16` often supply the pre-abductive seam. They help preserve and stabilize upstream publications, including publication forms that carry route-shaped representations when those forms are explicitly governed, before the publication is fit for explicit conjecture. `B.5.2` begins only once the current publication is ready to function as an abductive prompt. This boundary matters because it prevents two opposite errors:
+`B.4.1` and `A.16` can help preserve and clarify an initiating publication until it supplies an abductive prompt. `B.5.2` begins only once the current publication is ready to function as an abductive prompt. This boundary matters because it prevents two opposite errors:
 
 - **premature abduction**, where a low-articulation cue is treated as if it had already earned hypothesis form;
 - **delayed abduction**, where a now-stable prompt is kept indefinitely in early cue form even though rival conjectures should already be compared.
@@ -223,7 +222,6 @@ Not every abductive run should end in a prime hypothesis. Three non-selection ou
 2. **Defer.** Several candidates remain live and the available comparison does not justify a winner, for example because a needed discriminator is unavailable. Preserve the unresolved set and its limits without inventing a winning explanation. A separately warranted present action may still proceed under C.11.
 3. **Split.** The original prompt turns out to contain several distinct questions. The run should fork into several narrower prompts rather than select one over-broad conjecture.
 
-These outcomes are not failures. They are part of keeping abduction honest.
 
 #### B.5.2:14.3 - Reopening and rival reinstatement
 
@@ -236,11 +234,10 @@ A conforming reopening note should identify:
 - what change in evidence, scope, or internal contradiction triggered the reopening,
 - and whether the original prompt itself has changed or only the candidate ranking has changed.
 
-This allows the reasoning cycle to keep continuity without pretending that the earlier abductive choice had never been made.
 
 #### B.5.2:14.4 - Scope discipline during iteration
 
-Abductive drift often comes from silent scope expansion. A conjecture first framed for one target slice quietly becomes a universal explanation. `B.5.2` therefore expects scope discipline to remain explicit during iteration. If a candidate requires a broader or narrower scope than the prompt originally declared, that scope move should be stated rather than smuggled in under the rhetoric of a "better explanation."
+Abductive drift often comes from silent scope expansion. A conjecture first framed for one target slice quietly becomes a universal explanation. `B.5.2` therefore expects scope discipline to remain explicit during iteration. If a candidate requires a broader or narrower scope than the prompt originally declared, state that change before using the candidate at the new scope.
 
 ### B.5.2:15 - Worked Examples
 
@@ -300,21 +297,12 @@ Hypothesis reviewers should not ask only whether the chosen hypothesis looks pla
 - whether the selected hypothesis has interpretable implications and a meaningful possible discriminator, with actual availability kept separate from that explanatory contribution,
 - and whether any scope inflation occurred during selection.
 
-A polished hypothesis with no visible rivals is usually less trustworthy than a rougher hypothesis whose rival space is explicit.
 
 #### B.5.2:16.3 - For integrators and assurance leads
 
 Integrators receive a qualified conjecture, not early assurance conferred by an `L0` label. Preserve its prompt, rivals, supports, filter rationale and fragilities. Use B.3.3 only for a receiving assurance question, C.11 for a feasible-action or evidence-acquisition choice, and C.28 for causal support when needed. An unavailable probe can leave the explanation unresolved while an independently warranted bounded service action remains useful; do not turn the conjecture into a mandatory work item.
 
-### B.5.2:17 - Migration and Boundary Notes
-
-#### B.5.2:17.1 - Migration from anomaly monopoly
-
-Older wording that says abduction begins only from anomaly should be rewritten into the broader but still typed claim: abduction begins from an admissible `U.AbductivePrompt`, of which anomaly is one canonical species.
-
-#### B.5.2:17.2 - Migration from inspiration rhetoric
-
-Legacy prose that describes abduction as a flash, leap, or raw creative moment may remain as didactic metaphor, but it should not be used as the operational description of the pattern. The operational core is typed prompt -> rival set -> plausibility filtering -> prime hypothesis publication.
+### B.5.2:17 - Boundaries of abductive use
 
 #### B.5.2:17.3 - Boundary to deduction and evidence
 

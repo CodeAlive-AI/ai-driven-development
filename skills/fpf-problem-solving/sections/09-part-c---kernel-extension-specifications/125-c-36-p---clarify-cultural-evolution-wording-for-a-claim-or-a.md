@@ -87,10 +87,11 @@ Use the intended claim, not the trigger word, to select the result. Write the sh
 Before these cultural routes, send unresolved generic development or evolution wording to `E.10.DEV`. Return here only when its repaired claim has a cultural-evolution subject and a cultural wording question remains; preserve its ordinary non-use, missing-information result, non-cultural population or lineage architecture gap, and one-pass stop otherwise.
 
 1. **Cultural-evolution case.** Use C.36 when the claim concerns how a collective or discipline generates, transmits, recognizes, selects, retains, or deliberately changes variants. Method and Work families, system-role facts, canons or memory epistemes, mediation, style or tradition terms, variant sets, and interventions remain separately identifiable inside that case.
-2. **Term and bridge work.** Use F.17 and F.18 when a durable source or project term needs a stable local meaning or name. Use F.9 only when an actual relation between distinct source-local cells is current. Keep C.36 only for the cultural-evolution case that makes the term matter.
+2. **Term and bridge work.** Use F.17 when the needed identification or qualification of a source-local or project meaning is unresolved, and F.18 when a durable name is needed. Preserve the claims made under each source-local meaning. Use F.9 only when an actual relation between distinct source-local cells is current. Keep C.36 only for the cultural-evolution case that makes the term matter.
 3. **Practice, technique, and developmental-machinery wording.** Ask what the phrase names:
 
-   - For a reusable way of doing, use A.3.1; for a description of that way, use A.3.2; for a plan, use A.15.2; and for dated doing, use A.15.1.
+   - For a reusable way of doing, use A.3.1. A description qualifies as U.MethodDescription under A.3.2 when its exact EntityOfConcern is an already admitted Method and it makes at least one substantive claim about that Method as a way of doing.
+   - For a plan, use A.15.2. For a particular dated U.Work occurrence, establish the A.13 basis, independently admit Work under A.15.1, and use F.6 only when precise assignment-bound attribution is required.
    - If several Methods are related or assembled, use A.3.1's method-relation route; it keeps ordinary relations, order-sensitive composition, and a selected Structure distinct.
    - If the wording is about who acts or how someone is assigned, E.10.ROLE separates direct participation, a local system-role kind or classification under A.2, an assignment under A.2.1, and a relation between system-role kinds under A.2.7.
    - Use A.1.1 only when the decision depends on bounded model use or one of its direct model-applicability, actual-use, or fixed-content-coherence relations. Use A.10, C.20, or C.23 only when the claim is about evidence use, discipline composition, or method-family maturity.
@@ -112,7 +113,7 @@ The trigger phrases are examples. Recover the intended object, relation, or clai
 |---|---|---|
 | generic development, evolution, evolved, progress, growth, adaptation, or lineage | changed or represented subject; needed continuity or membership; posture; any direction or value basis; direct owner; cultural or non-cultural boundary | `E.10.DEV` first; then C.36 or C.36.P only for a recovered cultural-evolution case, and `E.10.MOVE` only for a remaining independent trajectory or path ambiguity |
 | style, tradition, genre, scene, school, or cultural lineage | term row or actual bridge; Method or Work family; canon or memory episteme; recognition relation; selected set; publication label | F.17, F.18, F.9, C.36, A.3.1, C.20, C.18, G.5, E.17, or E.24.PUB |
-| practice, technique, developmental machinery | Method or MethodDescription; relations among Methods or a selected Structure of them; WorkPlan or dated Work; direct participation; local system-role kind or classification; assignment species or occurrence; relation between system-role kinds; bounded model-use structure or one of its direct relations; discipline position; evidence-use claim; quote-only wording | A.3.1, A.3.2, A.15.1, A.15.2, E.10.ROLE, A.2, A.2.1, A.2.7, A.1.1, A.10, C.20, or C.23 |
+| practice, technique, developmental machinery | Method or MethodDescription; relations among Methods or a selected Structure of them; WorkPlan or dated Work; direct participation; local system-role kind or classification; assignment species or occurrence; relation between system-role kinds; bounded model-use structure or one of its direct relations; discipline position; evidence-use claim; quote-only wording | A.3.1, A.3.2, A.13, A.15.1, A.15.2, F.6, E.10.ROLE, A.2, A.2.1, A.2.7, A.1.1, A.10, C.20, or C.23 |
 | platform, platform regime, measurement regime | mediating System or architecture; recognition, selection, measurement, visibility, publication, source-currentness, or direct model-use relation; bounded model-use structure; claim scope; ordinary project label | A.1, A.1.1, C.30, C.16, A.19, E.17, E.24.PUB, G.11, or C.36 |
 | MHT, level, boundary, feedback down, model-use or scope reframe, frustration, interlevel conflict | new holon or level; whole reidentification; System boundary; relation crossing a holon boundary; supervisor-subholon feedback; bounded model use or claim scope; cross-scope residual; mathematical-lens use; interlevel ethical conflict | A.1, A.1.1, B.2.P, B.2, B.2.2, B.2.3, B.2.4, B.2.5, C.30.ILC, C.29, D.2, D.3, or D.4 |
 | attractor, basin, stable style | loose style term or an actual dynamics, temporal, or mathematical-lens claim | F.17, F.18, F.9, A.3.3, C.27, C.29, or C.36 |
@@ -134,7 +135,7 @@ CulturalEvolutionWordingRecoveryLine:
   recoveredObjects: short-video recommendation System; dance-variant set
   recoveredRelations: recommendation mediation; visibility; recognition; selection
   recoveredClaim: these relations changed which variants were copied and retained
-  applicablePatternRefs: A.1, C.36, F.17, F.18
+  applicablePatternRefs: A.1, C.36
   retainedSourceLabelUse: keep "platform" as the source label for the recommender and visibility infrastructure
   admissibleUse: discuss how visibility and recognition changed retained dance variants
   blockedUse: treat platform as a root cultural kind or style as one global kind
@@ -147,7 +148,7 @@ If `attractor` is a loose metaphor for a stable recognizable style, state that l
 
 #### C.36.P:5.3 - "Technique As Developmental Machinery"
 
-If technique names a way of doing work, use `A.3.1 U.Method`. If it names a training plan, use `A.15.2 U.WorkPlan`. If it names performed rehearsal or production, use dated `U.Work`. If the same term carries different source-local meanings, use F.17 and F.18; use F.9 only when an actual relation between distinct cells is current. Use C.36 only when the technique participates in a cultural-evolution case.
+If technique names a way of doing work, use `A.3.1 U.Method`. If it names a training plan, use `A.15.2 U.WorkPlan`. For a claim about a particular rehearsal or production occurrence, establish A.13's basis and independent A.15.1 admission; use F.6 only for precise assignment-bound attribution. Ordinary guidance about rehearsing or producing needs no invented occurrence. If the same term carries different source-local meanings, preserve each meaning and its claims. Use F.17 when their identification or qualification is needed, F.18 only when a durable name is needed, and F.9 only when an actual relation between distinct cells is current. Use C.36 only when the technique participates in a cultural-evolution case.
 
 #### C.36.P:5.4 - "The Scene Became A New Level"
 

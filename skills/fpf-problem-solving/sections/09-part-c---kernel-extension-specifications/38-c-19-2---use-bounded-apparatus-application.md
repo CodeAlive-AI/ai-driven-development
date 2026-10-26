@@ -12,7 +12,7 @@ The first useful move is to name the practical use, result kind, claimed guarant
 
 **Not this pattern when.** If an adequate way to obtain the result is still unexplained, use `C.39`. If usable material needs feasible variation and examination, use `C.40`. Use `C.18` when the question concerns the generation account or archive/front stewardship. If the live question is a local choice over an existing option set, use `C.11`. If the blocker is an ontology conflation, use `A.7.1`; if it is a material conflict among FPF premises, use `A.7.2`.
 
-The primary working reader is an engineer, method or model selector, or technical lead. That reader position is not a system-role kind or assignment. This pattern is a `U.MethodDescription` episteme whose claims describe one admitted `U.Method`. When an admitted `U.System` performs dated configuration or application `U.Work` using that Method, first recover the performer's A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the present use needs precise assignment-bound attribution. Show an assignment identifier, species, participants, and attribution detail only when that use relies on them, attribution is ambiguous, or the source wording must be repaired. The problem-facing result remains with the pattern that defines or tests it.
+The primary reader is an engineer, method or model selector, or technical lead. Use the instructions below to guide bounded application; the problem-facing result remains with the pattern that defines or tests it. Reader position, guidance and performed Work have different meanings. Section 4.1 gives the identity-bearing conditions when a claim about a Method, MethodDescription or dated Work is needed.
 
 ### C.19.2:1 - Problem frame
 
@@ -34,7 +34,7 @@ The failure is not merely excess documentation. It obscures who performs the wor
 | One current path vs live alternatives | Inventing rivals creates bureaucracy; ignoring genuine alternatives can lock in avoidable cost or loss. |
 | Local economy vs reuse | One-off work favors a small path; repeated work can amortize configuration and improve transfer. |
 | Direct kinds vs shared comparison | Unlike candidates must retain their kinds while being compared against one declared use and guarantee. |
-| Method guidance vs actual work | A practitioner can use a `U.MethodDescription` episteme as guidance when performing the configuration or application work. |
+| Guidance vs actual work | The instructions guide configuration or application; their description does not perform it. |
 
 ### C.19.2:4 - Solution
 
@@ -44,8 +44,8 @@ Use this minimal lens before taking a branch:
 
 1. **Declared use:** the practical question, direct result kind, claimed guarantee, non-negotiable constraints, and horizon.
 2. **Selected or candidate direct-kind object:** the method description, model, ontology module, formal technique, or other governed object being considered.
-3. **Application MethodDescription and described Method:** this pattern's `U.MethodDescription` episteme and the admitted `U.Method` it describes. A practitioner uses its claims to guide the Work.
-4. **Performer and work:** when an admitted `U.System` performs dated configuration or application `U.Work` using the described Method, recover its A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the present use needs precise assignment-bound attribution. In a short account, expose assignment identity, species, participants, or attribution detail only when the use relies on them, attribution is ambiguous, or source wording must be repaired.
+3. **Application guidance and Method:** use this pattern’s instructions to guide the application. When identifying a particular Method, apply A.3.1. Treat a claim-bearing episteme as its `U.MethodDescription` only when A.3.2 establishes that the already admitted Method is its EntityOfConcern and it makes substantive claims about that way of doing. Using the guidance does not itself require that classification.
+4. **Performer and work:** when a claim identifies particular dated configuration or application `U.Work`, recover the admitted performing `U.System` through A.13 and independently admit the Work under A.15.1, including its enacted Method under A.3.1. Add F.6 afterward only when the present use needs precise assignment-bound attribution. In a short account, expose assignment identity, species, participants, or attribution detail only when the use relies on them, attribution is ambiguous, or source wording must be repaired.
 5. **Problem-facing result:** the domain, engineering, assurance, architecture, or other subject-pattern result inspected after the work.
 
 The intended reader may also be the person-system that performs the Work, but reader position and performer relation remain different.
@@ -79,16 +79,16 @@ These four dispositions form the complete current `C.11` result set. “Configur
 
 1. State the practical use, direct result kind, claimed guarantee, constraints, horizon, and current apparatus state.
 2. If one apparatus is already selected, test its credible adaptation path without inventing choice. If candidates are missing, use `C.39` for an unexplained way to obtain the result or `C.40` for feasible variation and examination of usable material. Add `C.18` only when a generation account or archive/front claim is needed.
-3. Name available alternatives by their direct kinds and apply the shared eligibility predicate.
+3. When alternatives are current, identify them by their direct kinds and apply the shared eligibility predicate.
 4. For each current path, state the smallest adaptation/configuration work and the useful-result threshold: what must be learned, evidenced, integrated, or reviewed before the path can improve the use.
 5. Compare available time and budget, prior exposure, post-threshold efficiency, transfer, retention, interoperability, downside, reversibility, and expected reuse using values supplied by their subject patterns. Do not compress them into an undeclared scalar.
 6. If choice is current, consume one lawful `C.11 ChoiceResult`; otherwise continue on the one-apparatus path.
-7. On a branch that proceeds to application, prepare the needed `A.15.2` plan or, for tool-call enactment, `C.24` call plan. Have the admitted system perform `A.15.1` work.
+7. Carry out the selected application. Use A.15.2 when a plan is needed and C.24 when tool-call planning is the question. A precise dated-Work claim uses the performer and admission conditions in §4.1.
 8. Inspect the separately governed problem-facing result. Keep an application/configuration note only when reuse, dispute, automation, or consequence makes it useful.
 
 #### C.19.2:4.5 - Stop and reopen
 
-Stop when the direct result is usable at the claimed guarantee and no additional distinction or setup burden has an expected practical return for the declared use and horizon. This is a positive result, not a claim that the unused apparatus is inferior.
+Stop when the direct result is usable at the claimed guarantee and no further distinction or setup is expected to improve the declared use enough to justify its burden over the stated horizon. This is a positive result, not a claim that the unused apparatus is inferior.
 
 Reopen when a consequential counterexample, failed result, changed use or guarantee, changed recurrence horizon, new candidate path, automation need, or changed adaptation cost alters the lawful path. Reopen only the affected application, candidate, choice, plan, or work question under its subject pattern.
 
@@ -98,7 +98,16 @@ A short branch presentation may show one-apparatus, candidate-generation, choose
 
 ### C.19.2:5 - Archetypal Grounding
 
-**Repeated audited handoffs.** A fleet has 400 maintenance handoffs each year. The required result is an audited maintenance-decision episteme with a fixed safety and interoperability guarantee. Candidate generation is complete: an ontology-backed method description and a lighter local decision method are eligible; a spreadsheet macro is excluded because it cannot preserve required relation-occurrence identity. `C.11` returns `choose now` for the ontology-backed method because recurrence amortizes configuration.
+**Repeated audited handoffs.** A fleet has 400 maintenance handoffs each year. The required result is an audited maintenance-decision episteme with a fixed safety and interoperability guarantee. Candidate generation is complete: an ontology-backed Method and a lighter local decision Method are eligible; their descriptions are available. A spreadsheet macro is excluded because it cannot preserve required relation-occurrence identity.
+
+In this constructed planning account, both eligible Methods satisfy the same guarantee and material non-time conditions. The complete expected setup and per-handoff effort are comparable person-hours, including the required learning, review and integration. Forty setup hours are available. The ontology-backed Method needs 40 hours initially and 6 minutes per handoff; the lighter Method needs 2 hours initially and 14 minutes per handoff.
+
+| Horizon | Ontology-backed Method | Lighter Method |
+| --- | --- | --- |
+| 400 handoffs | 40 + 400 × 6/60 = 80 hours | 2 + 400 × 14/60 = 95 hours 20 minutes |
+| 100 handoffs | 40 + 100 × 6/60 = 50 hours | 2 + 100 × 14/60 = 25 hours 20 minutes |
+
+The setup difference is 38 hours and the per-handoff saving is 8 minutes: the methods tie at 285 handoffs. At the declared 400-handoff horizon, C.11 returns `choose now` for the ontology-backed Method on the supplied equal-guarantee basis, saving an expected 15 hours 20 minutes. If the feasible horizon falls to 100, the same basis favors the lighter Method. These are conditional estimates, not observed maintenance results; changed costs or guarantees reopen their respective questions.
 
 An admitted maintenance-information System performs the dated configuration and application Work using the selected ontology-backed Method. The account recovers the System's A.13 core and independently admits the Work under A.15.1. Because the current question is whether setup cost is repaid across the handoffs and consumes no exact assignment-bound attribution, this short example does not open F.6 or expose assignment identity, species, participants, or attribution detail. A later attribution-bearing claim adds F.6 through the same obtaining A.13 assignment.
 
@@ -109,7 +118,6 @@ A separately admitted maintenance-decision System then performs decision Work us
 
 ### C.19.2:6 - Bias-Annotation
 
-Applicable bias lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: cross-domain bounded application work.
 
 The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar terminology is treated as practical superiority. The mitigation is one declared result and guarantee, direct-kind candidates, actual adaptation/work cost, and a positive one-apparatus path. A second bias is automation optimism; cheaper computation does not erase evidence, human attention, integration, or consequence review.
 
@@ -122,7 +130,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | `CC-C19.2-3` | Candidate generation, local choice, planning, tool-call planning, dated work, and direct result retain their subject patterns. |
 | `CC-C19.2-4` | Every candidate retains its direct kind and satisfies one explicit eligibility predicate for the same use and guarantee. |
 | `CC-C19.2-5` | Any `C.11` result is exactly `choose now`, `reject current set`, `probe again`, or `reroute`. |
-| `CC-C19.2-6` | The intended-reader position, `U.MethodDescription` episteme, described `U.Method`, admitted performing `U.System`, dated `U.Work`, and problem-facing result remain distinct. Every precise performer has an A.13 core, and the Work is independently admitted under A.15.1. F.6 is required only when the receiving use also needs precise assignment-bound attribution. A short projection exposes assignment identity, species, participants, or attribution detail only when that use relies on them, attribution is ambiguous, or source wording must be repaired. |
+| `CC-C19.2-6` | The intended-reader position, guidance, any independently identified `U.Method` and qualifying `U.MethodDescription`, performing `U.System`, dated `U.Work` and problem-facing result remain distinct. Every precise performer has an A.13 core, and the Work is independently admitted under A.15.1. F.6 is required only when the receiving use also needs precise assignment-bound attribution. A short projection exposes assignment identity, species, participants, or attribution detail only when that use relies on them, attribution is ambiguous, or source wording must be repaired. |
 | `CC-C19.2-7` | The first useful result and stop are practical, and every reopen condition changes a named next action. |
 | `CC-C19.2-8` | No generic apparatus U-kind, hidden scalar, or unadmitted CGUS is introduced. |
 
@@ -152,7 +160,7 @@ The aphorism is: **make the apparatus earn its setup work.**
 | Practice question | Current practice and source | FPF alignment | Disposition |
 |---|---|---|---|
 | How much reasoning effort repays its cost? | Resource-rational analysis ties computation to action value under bounded resources (Lieder & Griffiths 2020, with Russell & Wefald 1991 as lineage). | The useful-result threshold and non-dominated next move govern setup and application work. The repeated-handoff and one-off cases show the practical difference. | **Adapt.** FPF retains multiple separately defined dimensions rather than one universal value-of-computation scalar. |
-| Should ontology/formality be complete before use? | Demand-driven incremental formalization starts from useful work and deepens when use repays it (Shipman & McCall 1999, still current as the named HCI/knowledge-base precursor). | The one-apparatus path allows value before total configuration, with reopen on recurrence, failure, automation, or stronger guarantee. | **Adopt as continuing lineage.** No HOS tool or single formality ladder is imported. |
+| Should ontology/formality be complete before use? | Demand-driven incremental formalization starts from useful work and deepens when use repays it (Shipman & McCall 1999 as a historical HCI/knowledge-base precursor). | The one-apparatus path allows value before total configuration, with reopen on recurrence, failure, automation, or stronger guarantee. | **Adopt as continuing lineage.** No HOS tool or single formality ladder is imported. |
 | Do different questions warrant different apparatus and outputs? | Current competency-question work distinguishes purposes and expected products rather than imposing one ontology checklist (Keet & Khan 2024). | Eligibility is tied to one declared use/result/guarantee; the pattern does not universalize one method or checklist. | **Adapt.** Question differentiation changes candidate eligibility and return. |
 | How should concern and purpose constrain a model or architecture description? | ISO/IEC/IEEE 42010:2022 keeps concerns, stakeholders, viewpoints, and architecture descriptions explicit without prescribing one tool. | Declared use, guarantee, and direct result keep apparatus application purpose-bound while subject patterns retain their kinds. | **Adapt.** Use the purpose/concern discipline without importing architecture-description ontology into every apparatus. |
 

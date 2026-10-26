@@ -10,7 +10,7 @@
 
 Use `E.11` when a pattern title, README scenario, architectural-reference explanation, ToC cue, retrieval cue, lexical query row, expanded case, or pattern-local recognition passage could change which FPF pattern a working reader should inspect first.
 
-The ordinary reader does not arrive with a PatternID. They arrive with a project question: architecture, a working document, a comparison, a vague concern, an improvement, evidence, timing, causal use, a description, a name, wording, mathematics, state of the art, a local framework, system recognition, or system delimitation. E.11 gives that reader a recognizable entry without turning entry material into a second pattern body or universal method sequence.
+A reader may arrive with a project question rather than a PatternID: for example, how to compare alternatives, revise an architecture or examine a causal claim. E.11 gives that reader a recognizable entry without turning entry material into a second pattern body or universal method sequence.
 
 **First useful result.** The reader can name the working situation, the first useful result or blocker, one direct pattern or small plausible set to inspect, and the ordinary stop or wrong-turn return. That is enough for ordinary entry; no card form, comparison account, or project-local value is required.
 
@@ -18,7 +18,7 @@ The ordinary reader does not arrive with a PatternID. They arrive with a project
 
 **Author and reader remain different.** An FPF author or maintainer publishes or refreshes the public guidance. A practitioner, manager, or assisting agent reads it and opens the direct pattern; that reader is not thereby performing E.11 publication work.
 
-**What this buys.** A cold reader starts from a real project question rather than FPF topology, while exact pattern authority stays in the direct pattern and duplicate navigation canons do not grow.
+**Practical gain.** The entry connects a project question to a direct pattern and its first useful result. The direct pattern retains the governing explanation; each navigation unit carries its own entry function.
 
 **Not this pattern when.** After one direct pattern is selected, use `E.11.PUA` to follow its `Solution` to the smallest useful result or an honest missing-basis stop. Use `E.11.PUR` to judge applicability, recommendation, coordination, or ordering among candidate pattern uses, and to stop on an earlier result that still answers the concern. Use the direct pattern for the actual result, plan, work, evidence, decision, authorization, or publication claim.
 
@@ -56,7 +56,7 @@ Use this distribution:
 | Table of Contents | Search-oriented overview. Every pattern row exposes its PatternID and title plus at least one working-question locator: a `Use when` cue, query phrase, or discriminating keyword. State any domain or local PatternID prefix discipline that affects lookup. Add admission state or dependencies when either can change the reader's choice. | Public first-entry explanation, a prescribed use sequence, or durable pattern semantics. |
 | Pattern `Problem frame` | High-precision local recognition for that pattern's own `EntityOfConcern`, first action, result, and non-use boundary. | A related-pattern fanout list or package-placement rationale. |
 | Worked entry comparison in E.11 or another expanded case | Longer entry disambiguation only when README, ToC, and local recognition are insufficient. | A tutorial obligation for every pattern or a replacement pattern body. |
-| Retrieval cues and projections | Thin finding aids that point to the direct pattern and state what they cannot decide. | Evidence, gate, authorization, final interpretation, or shadow authority. |
+| Retrieval cues and projections | Compact finding aids that point to the direct pattern and state what they cannot decide. | Evidence, gate, authorization, final interpretation, or shadow authority. |
 
 The framework Readme is the single editable public entry set. If another publication form needs the same guidance, project it from that Readme rather than maintaining a second version. Put any unique cue in the publication unit whose job matches it, then remove the duplicate row or index.
 
@@ -122,7 +122,7 @@ Use this internal explicitness ladder only when it helps decide where the explan
 The ladder is a placement aid, not a completeness target. Higher is not automatically better.
 
 
-The following context-free schemas are optional authoring support for a card whose result promise, boundary, or later reuse cannot remain truthful from the short prose alone. They are not a public form and contain no reader-project instance:
+The following schemas contain no project values and provide optional authoring support for a card whose result promise, boundary, or later reuse cannot remain truthful from the short prose alone. They are not a public form and contain no reader-project instance:
 
 ```text
 PracticalUseGuidance@FPFReadme <: U.Episteme:
@@ -150,7 +150,7 @@ PracticalUseCardPublicationUnit@FPFReadme:
   linksTo?: PracticalUseCardExpansion@FPFReadme
 ```
 
-Use `demonstrativeSliceRef` only when the example independently passes A.22.CGUS admission in its declared illustrative bounded context. Otherwise use an ordinary walkthrough; no rationale record is required merely to say that an explanation is not a CGUS slice.
+Use `demonstrativeSliceRef` only when the example independently passes A.22.CGUS admission for its declared illustrative use. Otherwise use an ordinary walkthrough; no rationale record is required merely to say that an explanation is not a CGUS slice.
 
 ##### E.11:4.1.1 - Cold-reader recognition and grounded public value
 
@@ -342,7 +342,7 @@ ToC and lexical-query phrases remain finding aids, not alternate names, semantic
 
 When more than one selectable entry remains plausible, compare four things: recognizable-situation fit, difference among first results or exact public blockers, direct pattern, and stop or return condition. Keep the comparison in conversation for ordinary bounded use. Open the most promising direct pattern before constructing a project candidate.
 
-Keep the rationale in conversation for ordinary comparison. Materialize it only when a named later use needs addressable comparison history; then it has one public-guidance subject and no fabricated project result:
+Materialize the rationale only when a named later use needs addressable comparison history; then it has one public-guidance subject and no fabricated project result:
 
 ```text
 PracticalUseEntryComparisonRationale@Context <: U.Episteme:
@@ -503,7 +503,7 @@ An already accepted engineering account may instead need reader-facing publicati
 
 A team says, “We need a shortlist, not one winner.” Ask which first result is missing: an admissible comparison, a pool of candidates, policy over that pool, a selected-set declaration, publication of the result, or one local decision. The fact that the current use concerns a governed set changes the choice; a one-winner doctrine is premature.
 
-If comparison or aggregation is not yet admissible, inspect `G.0`, `A.19.CN` and the relevant `A.17–A.19` bodies; `A.19.CPM` or `A.19.SelectorMechanism` becomes current when the comparator or selector structure itself is unsettled. For generation and archive/front stewardship while forming the pool, open `C.18`. For policy over still-live candidates, open `C.19`. `G.5` supplies the selector-facing selected-set declaration, and `E.24.PUB` makes a declared result available.
+If comparison or aggregation is not yet admissible, inspect `G.0`, `A.19.CN` and the relevant `A.17–A.19` bodies; `A.19.CPM` or `A.19.SelectorMechanism` becomes current when the comparator or selector structure itself is unsettled. For generation and archive/front stewardship while forming the pool, open `C.18`. For policy over still-live candidates, open `C.19`. Use `G.5-6 DeclareSetResult` when already identified members and a current choice, pool treatment or other inclusion basis need a selector-facing set declaration. `G.5-3 Select` applies when selection among its admitted Method or generator candidates is itself needed. `E.24.PUB` separately makes a declared result available.
 
 If the actual question is one local choice, open `C.11`. If the action or option is already fixed and the missing result is a tool or service call plan or checkpoint return, use `C.24`, including for a call that performs an already chosen comparison. Stop at the correct direct body or a sufficiently discriminated candidate set; neither a shortlist nor the order of these examples prescribes a sequence. If several inspected pattern uses still need a recommendation or coordination, take that question to `E.11.PUR`.
 
@@ -613,11 +613,9 @@ Public guidance remains weaker than the direct pattern. It helps a reader choose
 
 ### E.11:11 - SoTA-Echoing
 
-The choices below apply `E.8:11` to first entry, recovery from a wrong turn, and recall. The selected answer is bounded guidance that a reader can test against a cheaper entry; it is not a claim that a recent paper validates FPF.
-
 **Navigation question.** How can a reader choose a useful first pattern without inspecting the whole corpus, and recover when the first cue was misleading? The best-known line for this use is sequential, bounded inspection with an explicit return: compare the result or blocker offered by a few plausible entries, open one direct pattern, and stop or backtrack when its boundary rules it out.
 
-The serious alternative is familiar-title or ranked-result lookup with a short topical snippet. It is cheap and remains sufficient when the direct pattern is already known. For an ambiguous question, however, the same small reading budget can be spent on a situation, first-result difference, and return instead of another topical label. This deliberately trades some snippet brevity for a recoverable wrong-turn decision; it does not promise fewer clicks or faster task completion. **Adapt:** `E.11:4.1`, `4.1.2`, `4.4`, `4.6`, and `4.7` keep that bounded inspection and cheap exit; case `5.5` rejects a better first-click metric when the reader reaches the wrong use. Section `4.6.2` and cases `5.7–5.14` unfold the discriminating fact, direct result and return when a compact cue still leaves an ambiguity; they retain the cheaper sufficient-cue exit.
+The alternative is familiar-title or ranked-result lookup with a short topical snippet. It is cheap and remains sufficient when the direct pattern is already known. For an ambiguous question, however, the same small reading budget can be spent on a situation, first-result difference, and return instead of another topical label. This deliberately trades some snippet brevity for a recoverable wrong-turn decision; it does not promise fewer clicks or faster task completion. **Adapt:** `E.11:4.1`, `4.1.2`, `4.4`, `4.6`, and `4.7` keep that bounded inspection and cheap exit; case `5.5` rejects a better first-click metric when the reader reaches the wrong use. Section `4.6.2` and cases `5.7–5.14` unfold the discriminating fact, direct result and return when a compact cue still leaves an ambiguity; they retain the cheaper sufficient-cue exit.
 
 [Jin, Bai, and Oulasvirta, *Modeling Trial-and-Error Navigation With a Sequential Decision Model of Information Scent*, arXiv:2603.11759v1](https://arxiv.org/html/2603.11759v1), supplies a best-known-line candidate and counterexample to treating navigation as fully informed, one-shot selection. Its model reproduces partial inspection, premature choices, and backtracking; it does not test FPF entries or require the reader to run a navigation model. The first-result comparison and reliance-conditioned history are FPF adaptations. Reopen this choice if a same-budget title/snippet or other entry preserves result discrimination and wrong-turn recovery with less burden, or if reader evidence shows that the added return cues distract from the first useful choice.
 
@@ -627,7 +625,7 @@ The serious alternative is familiar-title or ranked-result lookup with a short t
 | --- | --- | --- |
 | [Radović and Manzey, *The Impact of a Mnemonic Acronym on Learning and Performing a Procedural Task and Its Resilience Toward Interruptions*](https://doi.org/10.3389/fpsyg.2019.02522), 2019 experiments; and [Yang et al., *Testing (quizzing) boosts classroom learning*](https://doi.org/10.1037/bul0000309), 2021 meta-analysis of 222 classroom studies | Compare the same truthful entry with and without a mantra, then replay the remembered path after delay or interruption. The acronym study found faster learning but no general benefit to completion time or error rate; the retrieval-practice effect varied with the comparison condition, format, repetition, feedback, timing, and design. | **Adapt, checked 2026-08-25:** a memorable cue and later retrieval justify testing mnemonic gain, not presuming it. `E.11:4.1`, `E.11:4.4.1`, case 5.4, `E11-14`, and `E11-15` select a card only when the mantra materially restores a choice-changing cross-pattern question, result, check, branch, or return. A one-result local mantra remains a valid teaching aid but does not select the richer card form. **Reject:** repetition, immediate familiarity, syntax, phrase length, topic coverage, or a public label as proof, and any inference that recalling a formula executes the work. Both sources study learning tasks rather than FPF use. Reopen only if comparable reader-use evidence removes the advantage over the no-mantra entry or shows that the mantra hides the result or return. |
 
-**Cue question.** When a reader's familiar wording or language hides another useful target, should the entry merely translate the same label, show more results, or explain the choice nearby? The selected line is the smallest situation-and-result cue that lets this reader distinguish the targets, with an expansion only for a distinction that cannot fit truthfully. The serious alternative is a concise translated title or ordinary search snippet. Keep that alternative when it already distinguishes the use; otherwise prefer a short explanation of what the reader can obtain over extra synonyms. This trades a little reading space for a visible choice, without requiring full translation, a multilingual interface, or another public scenario.
+**Cue question.** When a reader's familiar wording or language hides another useful target, should the entry merely translate the same label, show more results, or explain the choice nearby? The selected line is the smallest situation-and-result cue that lets this reader distinguish the targets, with an expansion only for a distinction that cannot fit truthfully. The alternative is a concise translated title or ordinary search snippet. Keep that alternative when it already distinguishes the use; otherwise prefer a short explanation of what the reader can obtain over extra synonyms. This trades a little reading space for a visible choice, without requiring full translation, a multilingual interface, or another public scenario.
 
 [Zhu, Reinecke, and Mitra, *Language Scent: Exploring Cross-Language Information Navigation*, arXiv:2604.03604v2](https://arxiv.org/html/2604.03604v2), supplies bounded evidence for considering such proximal cues: its multilingual system exposes information value and interpretation cues, and its lab study involved 16 English–Chinese speakers. It does not compare FPF names or establish that two labels have the same referent. **Adapt as a local probe:** `E.11:4.1.1`, `4.1.2`, and `4.5.1` test recognizable wording against the direct result; `E11-9/10/11` keep cue, entry, and direct content distinct. Reopen if a shorter label works equally well for the actual readers, if the cue invites the wrong result, or if stronger evidence changes the transfer from multilingual navigation. No universal benefit from contextual wording is inferred.
 

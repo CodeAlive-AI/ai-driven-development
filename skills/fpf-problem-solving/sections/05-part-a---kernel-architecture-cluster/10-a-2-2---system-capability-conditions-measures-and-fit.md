@@ -7,7 +7,7 @@ Capability is a System's ability to perform a work family or produce a result cl
 
 **Primary EntityOfConcern.** The holder System whose ability is being asserted. A capability statement that needs an identified account is an episteme under C.2.1; its subject is the holder, and its claims state what that holder can do. Actual ability, the assertion, its support, current qualification and fit to a receiving demand remain distinguishable.
 
-**Primary working reader.** A manager, architect, engineer, safety assessor, scheduler or model author deciding whether a holder can meet a Work, Method-step, service-promise or architecture need.
+**Working reader.** A practitioner deciding whether a holder can meet a Work, Method-step, service-promise or architecture need.
 
 **First useful move.** Name the holder, work or result, conditions and attained bounds. Then compare the receiving demand with that qualified claim, using the support and currentness required for this use. An adequate existing claim and fit result may be reused without another record. When a whole-result claim hides a consequential difference in how the holder uses a Method, use :2.1 to expose that difference.
 
@@ -143,7 +143,7 @@ WorkAdmissionCheck:
   methodStepRequires: A.3.1 or A.3.2
   holderAbilityClaim: A.2.2 qualified claim about the assignment holder
   capabilityFitCondition: admission predicate over declared capability measures and any named characteristic, Q-Bundle, or architecture-characteristic inputs
-  performedWorkRecord: A.15.1 after execution
+  performedWorkRef?: A.15.1, only for a separately asserted dated Work occurrence
 ```
 
 The checks are separate:
@@ -257,7 +257,7 @@ The claim is about `Cell_3`. Justify its attained bounds under the stated compon
 | `CC-A2.2-08` | For Work admission, are the exact system-role assignment, capability claim, and capability-fit predicate all visible when all are current? |
 | `CC-A2.2-09` | For composite holders, is the capability stated at the whole whose ability is being claimed? |
 | `CC-A2.2-10` | Are lowering and reopen conditions local enough to change only the affected ability proposition, assertion, evidence relation, currentness assessment or fit predicate? |
-| `CC-A2.2-11` | When wording says that a holder possesses an algorithm, did the use dispatch separately to capability, exact Method, deployed-software or possession relation, or candidate episteme, and apply A.3.2's exact-Method `EntityOfConcern` plus substantive-claim threshold before admitting `U.MethodDescription`? Does only the admitted holder system perform dated Work under exact assignment while the Work separately enacts the Method? |
+| `CC-A2.2-11` | When wording says that a holder possesses an algorithm, did the use dispatch separately to capability, exact Method, deployed-software or possession relation, or candidate episteme, and apply A.3.2's exact-Method `EntityOfConcern` plus substantive-claim threshold before admitting `U.MethodDescription`? For a dated Work claim, are the actual performer and Work independently established through A.13 and A.15.1, with F.6 added only when precise assignment-bound attribution is needed and Method enactment kept separate? |
 | `CC-A2.2-12` | When a Method-relative profile is used, are the selected Method relations, holder, help, comparison conditions and supported claims explicit, with unresolved evidence and acquisition history kept distinct from current ability? |
 
 ### A.2.2:10 - Anti-Patterns and Repairs
@@ -271,10 +271,10 @@ The claim is about `Cell_3`. Justify its attained bounds under the stated compon
 | Work-as-capability | "We did it once, so we can." | Keep the work occurrence; add a separate capability claim only when envelope, measures, and currentness are justified. |
 | Promise-as-capability | "The SLA is our capability." | Use promise content or commitment for what is offered; capability is the internal measured ability that makes the promise credible. |
 | Episteme-as-holder | "The report has assessment capability." | Use evidence, source, status, or assessment relation for the episteme; capability holder remains a system. |
-| Unbounded capability | "The tool can machine titanium." | Add material grade, tolerances, feed range, environment, version, qualification window, and measurement evidence. |
+| Unbounded capability | "The tool can machine titanium." | State the material grade and performance bounds needed by the receiving use, with the operating conditions and qualification basis that support them. |
 | Capability threshold in system-role-kind name | `HighPrecisionWelderSystemRole` hides a measured threshold. | Keep the system-role-kind name free of the threshold; put precision in the Method-side admission or fit condition and the holder capability claim. |
 | Characteristic-as-capability | "Low latency is a capability." | Use `U.Characteristic` with declared scale for latency; add a capability claim only when a named holder can produce a result class within an envelope that includes the latency measure. |
-| Q-Bundle-as-capability | "Resilience is our capability." | Use `C.25` for the composite quality family; cite a capability only when a currentness assessment supports reliance on a qualified holder ability and a fit predicate tests the relevant bundle slot. |
+| Q-Bundle-as-capability | "Resilience is our capability." | Use `C.25` for the quality family. If a capability is claimed, state what the holder can maintain or produce under specified conditions and bounds; use a relevant bundle slot in the fit comparison when the receiving demand calls for it. |
 | Architecture-row-as-capability | "Maintainability row gives capability." | Use `C.32.ACS` for the architecture-characteristic criteria row; it may constrain a capability-fit condition but does not establish the holder's ability. |
 
 ### A.2.2:11 - Consequences
@@ -289,7 +289,7 @@ The claim is about `Cell_3`. Justify its attained bounds under the stated compon
 
 **Costs.**
 
-- Capability tables need envelope, measures, and currentness fields.
+- A relied-on ability claim must make its relevant envelope, attained bounds and qualification basis recoverable.
 - Teams need to stop using system-role labels or assignments as shortcuts for ability.
 - Some old "function", "service", "process", and "algorithm" sentences need kind recovery before they can be used in FPF.
 
@@ -322,7 +322,7 @@ Reopen this selection when instability or a changed distribution defeats the ret
 | `A.3.2` | Governs membership of one already identified claim-bearing episteme in `U.MethodDescription`; algorithm, procedure, or possession wording is only a cue until the exact admitted Method `EntityOfConcern` and substantive way-of-doing claim are recovered. An admitted method description may separately state required capability. |
 | `A.3.3` | Governs `U.Dynamics`, the state-space and transition-law episteme; dynamics may explain or predict capability but is not the qualified holder ability. |
 | `A.15`, `A.15.1`, `A.15.2` | Govern method, plan, and performed work alignment; capability is one input to work admission, not work itself. |
-| `A.6.5` | Supplies SlotSpec discipline for capability relation fields and capability-use relations. |
+| `A.6.5` | Governs SlotSpecs when an independently needed relation declaration is current; the capability statement can remain ordinary prose. |
 | `A.6.F` | Repairs function and functionality wording that may hide capability, method, work, math function, or functional-architecture claims. |
 | `A.6.RSIR` | Use it to recover relation, signature, interface, system-role, participation, declaration-position, and slot wording before capability repair when the source sentence is mixed; use E.10.ROLE to select the branch for bare *role*. |
 | `C.27.TA`, `C.27` | Use C.27.TA when a positive temporal aspect of capability—currentness, window, rhythm, or drift—is itself relied on; use C.27 for temporal-claim adequacy. |
@@ -333,23 +333,10 @@ Reopen this selection when instability or a changed distribution defeats the ret
 | `E.23.CDI`, `E.23.CAE` | E.23.CDI develops the acquisition or provision choice; E.23.CAE distinguishes apparent loss or failed use from a supported capability change. |
 | `C.25` | Governs composite quality families and Q-Bundles that may supply slots for capability-fit checks. |
 | `C.30`, `C.32.HCS`, `C.32.ACS`, `C.32.ACE` | Govern architecture-characteristic material, project criteria rows, and eval readings that may constrain capability use without thereby establishing the holder's ability. |
-| Promise-content and commitment patterns | Govern outward promise and commitment relations; a promise or commitment claim may cite a capability relation, but capability does not become promise or commitment. |
+| Promise-content and commitment patterns | Govern outward promise and commitment relations; a promise or commitment claim may cite a qualified capability claim, but capability does not become promise or commitment. |
 
 ### A.2.2:14 - Neighboring Claims
 
-Keep the direct governor of each neighboring value needed by the ability or fit claim:
-
-- local system-role kind, direct system-role assignment, `SystemRoleAssignmentStateRelation`, structure of relations among system-role kinds, or system-role-kind description;
-- method, method family, method description, or algorithm description;
-- work plan, work occurrence, run record, or measurement trace;
-- evidence graph, source record, model card, standard, report, dashboard, publication, or specification-use relation;
-- promise content, commitment, permission, authority relation, or policy decision;
-- `U.Characteristic`, scale row, coordinate, score, metric, indicator, or threshold;
-- `C.25` Q-Bundle, quality-family label, mechanism, status, or evidence slot;
-- architecture-characteristic starter head, project criteria row, eval program, eval reading, selected-structure adequacy claim, or architecture-description concern;
-- capability-fit predicate, gate, admission relation, or work-entry readiness record;
-- structural part, module, interface, port, or functional structure unless the current claim is the ability of a holder system expressed through that structure.
-
-These values may contribute to a holder-ability claim, its support or a receiving fit check. Name the neighboring value, record, relation, or predicate through its own governing pattern when that neighboring claim is current.
+Use the direct pattern for any additional claim that the ability or fit decision consumes. Section 4 distinguishes common ambiguous wordings, and section 13 identifies their governors. Keep the neighboring value's own identity and the contribution it makes to the ability claim, its support or the receiving comparison.
 
 ### A.2.2:End

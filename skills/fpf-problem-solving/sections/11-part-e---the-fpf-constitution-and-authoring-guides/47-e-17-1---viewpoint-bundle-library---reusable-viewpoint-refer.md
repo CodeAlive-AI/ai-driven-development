@@ -48,8 +48,8 @@ When recurring viewpoint families lack a stable catalogue:
    A family called `functional`, `capability`, or `operational` may differ only lexically, or may differ semantically, but there is no disciplined place to tell which is which.
 3. **`MultiViewDescribing` cannot reuse a family cleanly.**
    Each describing use that needs the family must restate it locally instead of importing an existing bundle.
-4. **Reusable viewpoint-library practice remains external.**
-   FPF lacks a native place where reusable viewpoint families can be expressed as reviewable catalogue content without importing a standard's ontology.
+4. **No reusable local declaration.**
+   Available viewpoints are known through external terminology or project lists, but no catalogue supplies the exact local references needed for repeated import.
 5. **Reader-facing labels leak into semantics.**
    Authors reuse the same name for viewpoints, views, publication faces, or folders, and the boundary between EntityOfConcern and Description episteme becomes unclear.
 
@@ -162,11 +162,11 @@ Changing a participant or restoring availability after a gap yields another publ
 ### E.17.1:5 - Archetypal Grounding
 
 
-**Tell.** A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces used later.
+A viewpoint bundle library lets FPF say "use this already-defined viewpoint family" without confusing that family with the concrete views or publication faces used later.
 
-**Show (System; hypothetical template instance).** E.17.2 can guide one project to bind local references `r_functional`, `r_procedural`, `r_allocation`, and `r_module` to exact project P editions inside one constituted catalogue L. Until those bindings and their resolution under exact `R_L` exist, these names are variables and no reusable TEVB family value is present.
+**System description: hypothetical template instance.** E.17.2 can guide one project to bind local references `r_functional`, `r_procedural`, `r_allocation`, and `r_module` to exact project P editions inside one constituted catalogue L. Until those bindings and their resolution under exact `R_L` exist, these names are variables and no reusable TEVB family value is present.
 
-**Show (Episteme; hypothetical family shape).** A project could bind local references for risk, control, compliance, and operations viewpoints in one exact catalogue declaration. The labels alone are not references or exact P editions; this example becomes reusable only after that project supplies complete `<G_L, K_L, R_L>`, exact bindings, and one ordinary family designator.
+**Governance account: hypothetical family shape.** A project could bind local references for risk, control, compliance, and operations viewpoints in one exact catalogue declaration. The labels alone are not references or exact P editions; this example becomes reusable only after that project supplies complete `<G_L, K_L, R_L>`, exact bindings, and one ordinary family designator.
 
 ### E.17.1:6 - Bias-Annotation
 
@@ -212,8 +212,6 @@ After a recurring family-level use is established, the pattern biases FPF toward
 ISO 42010 is retained only as historical vocabulary lineage for the words *view* and *viewpoint*. It is not current architecting SoTA, does not supply FPF identity or conformance laws, and does not justify this catalogue architecture. No current external problem-solving source or reusable source comparison is claimed by this E.17.1 edition.
 
 The present architecture is therefore an explicit local FPF rationale. The concrete problem is repeated use of the same exact E.17.0 viewpoint episteme editions: users need to resolve exact references, preserve source catalogue and omission provenance, and avoid reidentifying P or turning a family label into membership. One C.2.1 catalogue ClaimGraph with local declaration claim blocks is the least additional object that answers those actions while reusing C.2.1 identity, E.17.0 membership, C.13 collection, F.9 comparison, and E.24.PUB publication boundaries.
-
-SysML v2 is deliberately absent from the positive source basis and is not treated as lineage for this question. Official status, search prominence, systems-oriented naming, and prospective scope are not evidence that it solves the exact reusable-catalogue and practitioner-use problem here. This exclusion imports no contrary SysML ontology claim; it only prevents popularity or status from standing in for demonstrated contribution.
 
 Reopen the local architecture if an exact current source or exercised project catalogue demonstrates a simpler way to preserve reference resolution, exact P identity, subsets, omissions, provenance, and cross-context comparison without losing any of those practitioner actions; or if project replay shows that one catalogue ClaimGraph with local declarations adds apparatus without changing a practitioner action. Until then, describe this as provisional local design, not source-established SoTA.
 
@@ -289,8 +287,6 @@ A practical rule is:
 - if the local project selects a subset or adds only didactic/publication material, keep exact catalogue edition L and its declaration unchanged and declare the local subset or annex; do not treat the overlay as declaration content;
 - if the local project changes viewpoint membership or meaning, publish a new local catalogue edition carrying the revised or new family declaration.
 
-This is how bundle reuse remains trustworthy across organizations.
-
 #### E.17.1:14.3 - Multi-bundle coordination: provenance first, comparison separately
 
 Many real description families need more than one bundle, for example:
@@ -339,7 +335,7 @@ A project may likewise consider local variables `r_theory`, `r_experiment`, `r_i
 
 #### E.17.1:15.4 - Cross-family description relation positions
 
-A serious project may use one materialized local TEVB instance for its design family, another exact local governance family for program oversight, and another exact local publication-oriented family for publication faces and forms. `E.17.1` keeps these relation positions reviewable by preserving which exact catalogue and declaration each viewpoint came from and by preventing a final publication face or form from masquerading as the catalogue itself.
+A project may use one materialized local TEVB instance for its design family, another exact local governance family for program oversight, and another exact local publication-oriented family for publication faces and forms. `E.17.1` keeps these relation positions reviewable by preserving which exact catalogue and declaration each viewpoint came from and by preventing a final publication face or form from masquerading as the catalogue itself.
 
 ### E.17.1:16 - Authoring and Review Guidance
 

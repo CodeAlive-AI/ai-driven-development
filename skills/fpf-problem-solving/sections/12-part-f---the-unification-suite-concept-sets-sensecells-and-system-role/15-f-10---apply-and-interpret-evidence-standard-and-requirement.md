@@ -6,7 +6,7 @@
 
 ### F.10:1 - Problem frame
 
-**Use this when.** Use F.10 when a receiving use depends on a word such as *observed*, *measured*, *validated*, *approved*, *deprecated*, *satisfied*, *violated*, *waived*, *pending*, *current*, or *ready*, and the exact status value, governed target, scope, window, source, rule, or use is still implicit.
+**Use this when.** Use F.10 when a receiving use depends on a status word and its exact value, governed target, scope, window, source, rule, or use is still implicit.
 
 Use it especially when evidence, standards, and requirements are being mixed: a dashboard says a service is ready, a standard says a method is approved, a measurement is cited as requirement satisfaction, a model card says a model is validated, or a requirement register says a clause is waived.
 
@@ -112,7 +112,7 @@ Use this order:
 5. resolve the local status expression to its exact F.17 cell and F.10 family;
 6. recover the source, edition, scheme, scope, conditions, window, provenance, and currentness required by this status use;
 7. recover the exact rule and any direct/A.6.1 application and evaluation-result claim needed by the use; identify dated evaluation Work and its enacted Method only when that history is current and independently admitted under A.13/A.15.1;
-8. assert the status-use relation and its C.2.1 status-assertion episteme; then separately recover publication/display and any actual later premise, decision-use, status-use, gate-use, or operation-argument relation.
+8. test the status-use relation under §4.2 and state the corresponding C.2.1 status assertion; then separately recover publication/display and any actual later premise, decision-use, status-use, gate-use, or operation-argument relation.
 
 Status never defines or constitutes the target. A changed status may change a receiving disposition without changing target identity or the earlier domain result. Conversely, a changed target or direct result requires the status application to be re-evaluated; copying the old value is not continuation proof.
 
@@ -127,7 +127,7 @@ When an A.2.4 first-use classification is current, retain its positions by value
 | `StatusScopeSlot` | Claim, requirement, admission, or use scope; not a generic context object. |
 | `StatusValueSlot` | Exact local status-value cell or value governed here or by another direct status pattern. |
 | `StatusWindowSlot` | Validity, edition, freshness, or source window. |
-| `StatusUseSlot` | Named intended use; actual later use still needs its dated work and direct relation. |
+| `StatusUseSlot` | Named intended use; any actual later use keeps the identity and basis defined by its subject pattern. Dated Work is separately admitted only when that occurrence is claimed. |
 | `StatusProvenanceConstraintSlot` | Exact source order, authority source, publication, proof, verification, register, or provenance condition. |
 
 These are relation positions, not system-role-kind qualifier slots, a record schema that applies status, or a new generic status ontic.
@@ -212,7 +212,7 @@ For a controller run independently admitted as `U.Work` under A.15.1, keep that 
 
 #### F.10:5.3 - Model card and fairness requirement
 
-A model card reports high cross-validation AUC. Recover the exact predictive-performance result and claim episteme first; the card is a publication/display. F.10 may assert an `EvidenceStatus` for that predictive claim under its validation scheme and window. It cannot decide the different policy clause “demographic parity delta ≤ 0.1”. That branch needs production-window fairness measurement, its result episteme/evidence use, the policy clause, dated evaluation work, the exact policy rule application, and its own requirement-status assertion.
+A model card reports high cross-validation AUC. Recover the exact predictive-performance result and claim episteme first; distinguish that claim from the card's publication or display. F.10 may assert an `EvidenceStatus` for that predictive claim under its validation scheme and window. It cannot decide the different policy clause “demographic parity delta ≤ 0.1”. That branch needs production-window fairness measurement, its result episteme/evidence use, the policy clause, dated evaluation work, the exact policy rule application, and its own requirement-status assertion.
 
 #### F.10:5.4 - Status display cue
 
@@ -220,7 +220,7 @@ A release dashboard cell shows `Ready`. The cell is only a cue until exact sourc
 
 ### F.10:6 - Bias-Annotation
 
-F.10 blocks five recurring biases:
+F.10 addresses five recurring biases:
 
 * **label-authority bias:** familiar wording is treated as source authority;
 * **target-by-status bias:** assigning a value is treated as defining or creating its target;
@@ -228,7 +228,7 @@ F.10 blocks five recurring biases:
 * **family/bridge explanation bias:** a family edge, shared spelling, row, Card, or Bridge replaces the exact interpretation relation and rule; and
 * **system-role drift:** an evidence, status, standard, or requirement use is treated as proof that its bearer is a `U.System`, has a local system-role classification, or holds a system-role assignment.
 
-The repair is to recover target and direct result first, then the exact local value, relation occurrence, assertion, evaluation basis, display, and receiving use. None of those use facts establishes System admission, a local system-role classification, or an assignment. The same bearer may have those neighbouring facts only when it independently passes System admission and is the holder of an assignment occurrence whose declared species is known.
+The repair is to recover target and direct result first, then the exact local value, relation occurrence, assertion, evaluation basis, display, and receiving use. None of those use facts establishes System admission, a local system-role classification, or an assignment. Recover System admission and any local system-role classification separately. If an assignment is claimed, identify its obtaining occurrence and declared species, with the independently admitted System as holder.
 
 ### F.10:7 - Conformance checklist
 
@@ -267,11 +267,11 @@ The repair is to recover target and direct result first, then the exact local va
 
 ### F.10:9 - Consequences
 
-F.10 adds a small amount of relation recovery before status can be relied on. The user names exact target/result, local value, scheme, scope, window, source, rule, and use instead of letting a word decide everything.
+F.10 requires relation recovery before status can be relied on. The user names exact target/result, local value, scheme, scope, window, source, rule, and use instead of letting a word decide everything.
 
 The payoff is practical: teams can compare statuses across disciplines, explain why a status was asserted or rejected, locate bridge/interpretation loss, and stop a display from becoming target truth, permission, assurance, gate passage, or work evidence.
 
-The cost is that F.10 cannot decide neighboring results. It does not perform measurement or evaluation, compute assurance, approve a standard by speech act, satisfy a clause, pass a gate, authorize work, prove causal effect, decide currentness, or establish actual downstream use.
+The cost is the need to obtain each consumed domain result from its subject pattern; F.10 supplies only the status-use and interpretation judgments.
 
 ### F.10:10 - Rationale
 

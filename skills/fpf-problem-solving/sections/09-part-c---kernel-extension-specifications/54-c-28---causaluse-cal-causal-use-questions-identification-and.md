@@ -57,7 +57,7 @@ When the causal question requires relations that have not yet been constructed, 
 
 **Ordinary first result.** Suppose the available comparison says that self-selected teams using method A completed more tasks than teams not using it, while task difficulty and prior team capability were not controlled. Report the observed association; the claim that A caused the improvement remains unsupported by that comparison. The next useful question is whether a design or existing evidence can distinguish the method's effect from those rival explanations.
 
-This sentence-level result can finish the task. When the triage must be reused, its local form is:
+This sentence-level result can finish the task and remain reusable. When a receiving use needs its distinctions separately addressable, the following local form can retain them:
 
 ```text
 CausalUseTriageRecord:
@@ -126,7 +126,7 @@ C.28 keeps those distinctions visible while allowing a cheap stop.
 Use the smallest result that answers the current question:
 
 1. triage the claim;
-2. stabilize the question in a small card when it must be reused;
+2. retain the question in ordinary prose or a small card when it must be reused;
 3. run the common threat screen;
 4. add only the specialist result needed now; and
 5. issue a small `CausalUseSupportResult` when another pattern must consume the conclusion.
@@ -214,7 +214,7 @@ Choose the kind by the claim being supported, not by the tool or source. Simulat
 
 #### C.28:4.2 - Question cards and support result
 
-Use a local card when the question must survive beyond the current sentence:
+A question that must remain separately recoverable can use this local card; reuse an existing account when it already preserves the needed content:
 
 ```text
 LocalCausalUseQuestionCard:
@@ -228,7 +228,7 @@ LocalCausalUseQuestionCard:
   nextCausalUseAction
 ```
 
-Use a durable card only for a reusable or consequential claim:
+For a reusable or consequential claim whose receiving use needs the fuller distinctions, use this durable card:
 
 ```text
 DurableCausalUseQuestionCard:
@@ -320,7 +320,12 @@ An `identified` label without an identifying expression or derivation is incompl
 
 **Replayable identified case.** For `treatment_effect_in_population_P`, `AdjustmentSet_Z` is justified as blocking the relevant back-door paths. `backdoor_adjustment_derivation_7` states the identifying expression in ordinary terms: compare treated and untreated outcomes within each Z group, then average those differences using the target population's Z distribution. The result cites the data regime, assumptions, expression, and the confounding or overlap change that would reopen it.
 
-**Replayable nonidentified case.** In a treatment cohort, unmeasured severity affects both treatment and outcome, and no valid adjustment set, instrument, proxy, or useful bound is available. `unmeasured_severity_obstruction_3` is the failure witness. The result is `nonidentified`; reporting an adjusted number does not change that status.
+**Replayable nonidentified case.** In a constructed binary treatment/outcome example, the observed law is `P(X=0,Y=0)=0.5` and `P(X=1,Y=1)=0.5`. Two models allowed by the stated assumptions reproduce that same law:
+
+- Model M0 has an unobserved fair binary input U, `X=U` and `Y=U`. Replacing X by either constant leaves `P(Y=1)=0.5`, so the average intervention contrast is 0.
+- Model M1 has the same U and `X=U`, but `Y=X`. Replacing X by 1 gives Y=1; replacing X by 0 gives Y=0, so that contrast is 1.
+
+Thus the observed law does not identify `E[Y|do(X=1)]-E[Y|do(X=0)]` in a model class admitting both accounts. These two models and their differing answers supply `unmeasured_severity_obstruction_3`; the name alone would not be a witness. More observations of the same joint law cannot distinguish them. Additional assumptions or intervention evidence may exclude one account; a bound, if established for the admitted model class, supports its own bounded claim. Reporting an adjusted number alone does not change the nonidentification result.
 
 For a supplied causal model, C.28.MR derives the consequence by replacing the selected mechanism, retaining the other mechanisms and input law, and solving the relations needed by the query. The following case gives its small observation/intervention entry.
 
@@ -402,7 +407,7 @@ TargetTrialMappingResult:
 
 Every mapping field identifies the actual mapping. `protocolToDataGapAccountRef` points to one account that lists the observed gaps or explicitly states that none was found within the declared source and window. The residual-confounding and sensitivity fields remain present even when their bounded result is favourable. Reporting completeness is not a risk-of-bias, identification, or estimate verdict.
 
-**Filled target-trial mapping.** `HypertensionEmulationMap-2025` maps `HypertensionTargetTrial-1` to `ClinicRecords-2022-2024`: age and diagnosis fields implement eligibility; prescription records distinguish the two treatment strategies; the prescription date supplies assignment and time zero; encounter records map the twelve-month follow-up; and the recorded systolic-pressure field maps the outcome. `GapRecord-17` states that adherence after prescription is not observed, `ResidualConfoundingAssessment-17` retains unmeasured severity as a live threat, and `SensitivityMap-17` points to the negative-control and quantitative-bias analyses. The result supports construction and review of this emulation. It does not by itself establish identification, low bias, or a transportable effect; new severity or adherence data reopens it.
+**Constructed target-trial mapping.** `HypertensionEmulationMap-2025` maps `HypertensionTargetTrial-1` to `ClinicRecords-2022-2024`: age and diagnosis fields implement eligibility; prescription records distinguish the two treatment strategies; the prescription date supplies assignment and time zero; encounter records map the twelve-month follow-up; and the recorded systolic-pressure field maps the outcome. `GapRecord-17` states that adherence after prescription is not observed, `ResidualConfoundingAssessment-17` retains unmeasured severity as a live threat, and `SensitivityMap-17` points to the negative-control and quantitative-bias analyses. The result supports construction and review of this emulation. It does not by itself establish identification, low bias, or a transportable effect; new severity or adherence data reopens it.
 
 **Estimation.**
 
@@ -426,7 +431,7 @@ At least one identification or explicit design-based basis is required before th
 
 **Counterfactual fairness.** Before D.5 uses a counterfactual-fairness support result, its C.28 components cite the identification result and the extra assumptions needed to connect the available data to that counterfactual question. When the fairness conclusion depends on an estimate, they also cite the estimate and its `estimationConsistencyResultRef`. Without those conditions, return `bounded` or `unsupported`; more data, even an unlimited amount of the same data, does not repair missing counterfactual identification or an inconsistent estimator. Associative or interventional fairness claims use their own rung and do not inherit this stronger branch by label.
 
-**Non-DML estimate.** A randomized trial cites `random_assignment_identification_4`, `trial_data_8`, `DifferenceInMeansMethod_2`, `standard_error_result_5`, and its attrition sensitivity check. It needs no orthogonal-score, nuisance-model, or cross-fitting fields. The estimate supports only the declared population, outcome, assignment, and follow-up window.
+**Constructed non-DML estimate.** A randomized trial cites `random_assignment_identification_4`, `trial_data_8`, `DifferenceInMeansMethod_2`, `standard_error_result_5`, and its attrition sensitivity check. It needs no orthogonal-score, nuisance-model, or cross-fitting fields. The estimate supports only the declared population, outcome, assignment, and follow-up window.
 
 **Transport.** For the first-moment population-measure problem under covariate shift, use [Boughdiri, Berenfeld, Josse and Scornet, *A Unified Framework for the Transportability of Population-Level Causal Measures*, 2025, §§2–4](https://proceedings.neurips.cc/paper_files/paper/2025/hash/795679e4056817ee71d37680939e980f-Abstract-Conference.html) with its internal trial-validity, overlap and selected exchangeability conditions. Other endpoint changes need their own identifying result.
 
@@ -495,7 +500,7 @@ CausalVariableRepresentationRecord:
 
 The record states which interventions and queries the learned or abstracted variables preserve, not that they are causal variables for every query or domain.
 
-**Filled representation case.** `WardStateRepresentation-4` derives three state variables from monitor traces through `WardStateAbstractionMethod-2`. Its intervention-validity result covers dosage interventions, its invariance result covers the two hospitals in the training and hold-out comparison, and its query-preservation result passes the declared one-step counterfactual query but fails the long-horizon query. The record therefore supports the one-step policy comparison only; a new hospital, sensor scheme, intervention family, or long-horizon claim reopens it.
+**Constructed representation case.** `WardStateRepresentation-4` derives three state variables from monitor traces through `WardStateAbstractionMethod-2`. Its intervention-validity result covers dosage interventions, its invariance result covers the two hospitals in the training and hold-out comparison, and its query-preservation result passes the declared one-step counterfactual query but fails the long-horizon query. The record therefore supports the one-step policy comparison only; a new hospital, sensor scheme, intervention family, or long-horizon claim reopens it.
 
 #### C.28:4.7 - Graph and calculus names
 
@@ -714,7 +719,7 @@ Watch for causal prestige, simulation laundering, metric proxy substitution, gra
 
 ### C.28:9 - Consequences
 
-The pattern makes unsupported causal claims easier to lower while keeping ordinary triage cheap. Consequential claims become replayable across question, support components, threats, limits, and source window. The cost is additional specialist work only where a stronger causal statement or downstream decision genuinely depends on it.
+The pattern makes unsupported causal claims easier to lower while keeping ordinary triage cheap. Consequential claims become replayable across question, support components, threats, limits, and source window. The cost is additional specialist work only where a stronger causal statement or downstream decision depends on it.
 
 ### C.28:10 - Rationale
 

@@ -3,13 +3,11 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** one `U.MethodDescription` edition and a use-coverage account for one admitted `U.Method`; or, when Method admission is absent, improved candidate-account content that keeps its candidate status.
-
 ### A.3.2.DE:0 - Use This When
 
 Use this pattern when people need usable claims about an identified Method or a candidate account of a proposed way of working. The receiving use may concern planning, enactment, comparison, review, revision, publication or teaching; retain the claims' actual status. Start from one named use: who needs to do or decide what, which Method claims that use consumes, and what can remain outside the edition.
 
-The first useful result is a short use-coverage row. It names the Method or candidate account, the receiving use, the claims needed now, the claims deliberately omitted, and the stop. That row prevents a documentation project from expanding before its practical question is clear.
+The first useful result is a short use-coverage account. It names the Method or candidate account, the receiving use, the claims needed now, the claims deliberately omitted, and the stop. That account prevents a documentation project from expanding before its practical question is clear.
 
 Do not use this pattern merely to publish, diagram, approve, schedule, or record Work. A `U.MethodDescription` is the claim-bearing episteme whose exact `EntityOfConcern` is one Method already admitted under `A.3.1`; its code, diagram, form, carrier, approval, WorkPlan, and dated Work remain different things. If the proposed whole is still a candidate account, improve that account without classifying it as a `U.MethodDescription` for the whole.
 
@@ -42,7 +40,7 @@ The result is difficult to reuse and difficult to challenge. Readers cannot tell
 | --- | --- |
 | Use fitness | Each receiving use needs enough claims, while one universal description becomes expensive and opaque. |
 | Stable subject | Several editions and forms may describe the same Method, while a candidate or changed Method must not inherit that identity by typography. |
-| Practical brevity | The first useful edition should be small, while hidden preconditions or stops can make it misleading. |
+| Practical brevity | The edition should contain what its receiving use needs, while hidden preconditions or stops can make it misleading. |
 | Representation plurality | Text, code, diagrams, tables, and formal models may all help, while none determines MethodDescription membership. |
 | Evidence limits | Claims may cite evidence and source limits, while the description must not become the evidence or assurance result. |
 | Revision | A use may require a new edition, while editing a description does not by itself change the Method. |
@@ -55,13 +53,13 @@ Author claims for named uses while preserving the described Method's identity or
 
 #### A.3.2.DE:4.1 - Pattern-Use Unfolding
 
-1. **Name the receiving use.** State the reader or consuming system, the action or decision, the situation and qualification window, and the stop. Replace “complete documentation” with the smallest question that changes work.
+1. **Name the receiving use.** State the reader or consuming system, the action or decision, the situation and qualification window, and the stop. Define completeness by the claims the receiving use needs, including their connections.
 2. **Establish the subject branch.** Name the admitted `U.Method` and effective `U.ReferenceScheme`. If admission is absent, keep the subject as a candidate account and author only improved candidate content.
 3. **Select the needed Method claims.** For the named use, consider the transformation or enactment concern, generic participant meanings, applicability, preconditions, intended effects or preserved conditions, bounds, parameters, variation, internal composition, evaluation conditions, and stops. Include only positions that change the use. For enactment or learning, recover the operations the performer must carry out and where their inputs come from.
 4. **Separate neighboring claims.** Keep planned assignments and dates in a `U.WorkPlan`; actual performers, temporal extent, participation, and results with dated `U.Work`; operation declarations with `A.6.1`; evidence reliance with `A.10`; capability with `A.2.2`; approval, permission, and authority with the patterns that define those claims. Cite them when the use depends on them without absorbing them into Method semantics.
 5. **Write the explanation or instruction.** For enactment or learning, connect each needed action to its inputs, the operation performed, the result and the condition for continuing or stopping. Explain why a connection or ordering matters when the reader needs that reason to apply or adapt it. For a Method that depends on professional judgment, explain which observations bear on the decision, how they change the proposed action, and which unresolved conflict needs another contribution or a stop. Naming a mindset without showing that effect leaves the explanation incomplete. Unfold a constituent operation until the intended performer can carry it out, or identify the missing know-how or contribution; do not invent an operation to fill a heading. Retain alternatives and genuine dependencies without imposing one order on independent actions. In the admitted-Method branch, identify the episteme by its claim content, Method as `EntityOfConcern`, and effective scheme. In the candidate branch, retain the account's proposed content and unresolved Method-identification conditions. State which claims were added, retained, narrowed, or removed when another edition is being revised.
 6. **Record use coverage and omissions.** For each named use, list the claims exposed, claims deliberately omitted, unresolved claims, and the return condition. An omission is acceptable when the receiver does not rely on it; otherwise it is a gap.
-7. **Choose expression and publication separately.** Select text, code, diagrams, a mathematical lens, publication form, and carrier only after the claims are stable enough for the use. When different named Method-related actions require complementary governed representations of the current MethodDescription or candidate account, C.37.MP returns a complete Method representation profile: one complete C.37 claim group per action, together with cross-use correspondences, conflicting omissions, edition relations, decisions to keep representations separate, and conditions that require reconsidering several selections. Use the FPF pattern governing any other represented entity.
+7. **Choose expression and publication separately.** Select text, code, diagrams, a mathematical lens, publication form, and carrier only after the claims are stable enough for the use. For one representation-use action, use C.37 or its direct governing pattern. When different named Method-related actions require complementary governed representations of the current MethodDescription or candidate account, C.37.MP returns a complete Method representation profile: one complete C.37 claim group per action, together with cross-use correspondences, conflicting omissions, edition relations, decisions to keep representations separate, and conditions that require reconsidering several selections. Use the FPF pattern governing any other represented entity.
 8. **Try the receiving use from the description.** Recover the claims, conditions and omissions needed by the receiving use. For enactment or learning, work through a small case: recover the first action and its inputs, follow its result to the next needed action or stop, and expose any instruction supplied only from the author's memory. Return a description or candidate-account correction, or identify the missing input, know-how or other result needed by the use. This checks the description at that use; it does not establish the Method's effectiveness or a learner's acquired capability.
 
 #### A.3.2.DE:4.2 - Record the Result
@@ -74,6 +72,8 @@ Author claims for named uses while preserving the described Method's identity or
 | use coverage | Needed claims, exposed claims, deliberate omissions, gaps, and return condition for each use. |
 | neighboring objects | Any WorkPlan, Work, representation, operation declaration, evidence path, capability, permission, authority, publication, or carrier relied on, each kept under its own kind. |
 | edition disposition | MethodDescription edition, improved candidate-account content, or lower stop with the decisive missing condition. |
+
+These positions can be stated in prose or in an existing description account; they do not require a separate row or form.
 
 #### A.3.2.DE:4.3 - What Changes in Practice
 
@@ -112,20 +112,20 @@ The receiving-use check asks the reader to recover that calculation and return f
 
 A stakeholder map can keep the same boxes and labels while the way of constructing and using it changes. In this constructed case, an admitted contact-planning Method includes people who hold the approval or supply roles needed to arrange a rollout. A proposed child account instead asks whether a new shift-handover routine covers the work of the people who produce and use the handover information. Its author cannot explain that change merely by adding "be inclusive" to the old instruction.
 
-The receiving use is a facilitator's preparation of a handover review. Available inputs are the proposed routine, the two-shift role roster, the information each role supplies or needs, and the known limits of those accounts. The author writes the proposed instruction:
+The receiving use is a facilitator's preparation of a handover review. Available inputs are the proposed routine, the two-shift role roster, the information each role's holders supply or need, and the known limits of those accounts. The author writes the proposed instruction:
 
-1. Start from the handover information that must reach the next shift and identify the roles that produce or use it. Include a role because of that working dependency, even when its holder has little influence over rollout approval. Use actual supplied facts; mark an uncertain dependency for clarification.
-2. For each included role, obtain an account of the information needed, the action it enables and a relevant missing-information case. Distinguish what a participant or work record actually supplies from the facilitator's assumption. A manager's approval does not supply another role's working account by itself.
+1. Start from the handover information that must reach the next shift and identify the roles whose holders produce or use it in their work. Include a role because of that working dependency, even when its holder has little influence over rollout approval. Use actual supplied facts; mark an uncertain dependency for clarification.
+2. For each included role, obtain an account of the information its holders need, the action that information enables and a relevant missing-information case. Distinguish what a participant or work record actually supplies from the facilitator's assumption. A manager's approval does not supply another role's working account by itself.
 3. Relate those needs to the proposed routine. Show which handover action supplies each needed result and which dependency remains uncovered or unknown. Influence can help arrange contact; it does not remove a required receiving role from this check.
 4. Return the map with the supported coverage and the particular missing account or handover contribution. Stop a claim of complete coverage when a material dependency remains unresolved. The result can guide a correction or a bounded trial; it does not itself authorize rollout or show that the routine works.
 
-For a small replay, suppose a day lead approves the trial, an IT maintainer supplies the display, and a night operator uses unresolved-item flags to resume work. The approval-contact map may correctly contain the first two roles. The proposed method also includes the night operator because the operator consumes a result needed for the handover. If the routine supplies a flag but no next action, the map exposes that missing contribution. If a relief operator's information need is unknown, add that unresolved dependency rather than treating a full roster of names as complete coverage.
+For a small worked case, suppose a day lead approves the trial, an IT maintainer supplies the display, and a night operator uses unresolved-item flags to resume work. The approval-contact map may correctly contain the first two roles. The proposed method also includes the night operator because the operator consumes a result needed for the handover. If the routine supplies a flag but no next action, the map exposes that missing contribution. If a relief operator's information need is unknown, add that unresolved dependency rather than treating a full roster of names as complete coverage.
 
-The explanation now makes the changed judgment recoverable: inclusion follows a working dependency, and completion requires an account of its contribution. The canvas may remain unchanged, but the operation, required evidence and stop differ. This is proposed reusable content, so retain candidate status and use A.3.1.MV:5.2 for its derivation and evidence boundaries. The replay checks whether the explanation supplies the intended distinctions; it is not a field validation of the proposed method.
+The explanation now makes the changed judgment recoverable: inclusion follows a working dependency, and completion requires an account of its contribution. The canvas may remain unchanged, but the operation, required evidence and stop differ. This is proposed reusable content, so retain candidate status and use A.3.1.MV:5.2 for its derivation and evidence boundaries. The worked case checks whether the explanation supplies the intended distinctions; it is not a field validation of the proposed method.
 
 ### A.3.2.DE:6 - Bias-Annotation
 
-| Recurring bias | Likely drift | Repair |
+| Bias | Likely drift | Repair |
 | --- | --- | --- |
 | document identity bias | A titled document becomes the Method or its complete description. | Establish Method admission and identify the claim-bearing episteme separately. |
 | completeness bias | More sections are assumed to make the edition adequate for every use. | Name uses and expose only the claim positions they consume. |
@@ -156,9 +156,9 @@ The explanation now makes the changed judgment recoverable: inclusion follows a 
 
 ### A.3.2.DE:9 - Consequences
 
-Method descriptions become smaller, more reusable, and easier to compare because their subject and receiving uses are explicit. Candidate accounts remain useful without losing their truth status, and missing claims return to the right owner.
+Method descriptions become more reusable and easier to compare because their subject and receiving uses are explicit. Candidate accounts remain useful without losing their truth status, and missing claims return to the right owner.
 
-The cost is plurality: one Method may have several editions, use-coverage rows, and representations. Projects must also maintain links to neighboring plans, evidence, policy, and publication results instead of copying them into one manual.
+The cost is plurality: one Method may have several editions, use-coverage accounts, and representations. Projects must also maintain links to neighboring plans, evidence, policy, and publication results instead of copying them into one manual.
 
 ### A.3.2.DE:10 - Rationale
 
@@ -168,15 +168,12 @@ The claim-first order prevents representation and publication choices from selec
 
 ### A.3.2.DE:11 - SoTA-Echoing
 
-| Source | Adopted or adapted contribution | Boundary and practitioner implication |
+| Source | Contribution | Boundary and practitioner implication |
 | --- | --- | --- |
-| ISO/IEC/IEEE 24774:2021, [process-description elements](https://www.iso.org/standard/78981.html) | Adopt the discipline of describing purpose, outcomes, activities, tasks, information items, roles, and views only where the receiving description use needs them. | Description-side conformance does not establish process performance or FPF kinds. Practitioners still recover the admitted Method and each neighboring claim separately. |
-| Daalhuizen and Cash, [Method content theory](https://doi.org/10.1016/j.destud.2021.101018) | Adapt the focus on content that helps a user understand and use a Method. | The source does not make one universal completeness schema. A.3.2.DE uses named-use coverage and explicit omissions instead. |
-| Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Adopt intended use, procedure, representation, tools, and adaptation conditions as recurring authoring questions. | Conceptual elements do not prove Method identity, obtaining relations, Work, or effectiveness. The EC-417 slices preserve those stops. |
-| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9), §§2.4 and 4.4 | Adapt the connection between procedure, required knowledge and the generation of inputs and results: make the reasoning steps recoverable where the receiving use needs them. | This strengthens instruction construction and the small receiving-use check. Explicit content alone does not supply tacit skill, establish learning or settle FPF's Method/description distinction. |
-| Current FPF `A.3.1`, `A.3.2`, `C.2.1`, `C.29`, and `E.24.PUB` | Adopt exact Method identity, MethodDescription membership, episteme identity, representation correspondence, and publication separation. | These patterns supply the identity and boundary rules; A.3.2.DE contributes the practitioner method for authoring a use-bounded edition and returning an honest lower result. |
-
-Reopen the pattern when a representative user cannot state the named use without a universal field catalogue, when candidate status is repeatedly lost, or when the reader can find claims but cannot recover the promised operation, or when a current source offers a better way to select, explain or test the claims needed by a use at comparable effort.
+| ISO/IEC/IEEE 24774:2021, [process-description elements](https://www.iso.org/standard/78981.html) | Describe purpose, outcomes, activities, tasks, information items, roles, and views only where the receiving description use needs them. | Description-side conformance does not establish process performance or FPF kinds. Practitioners still recover the admitted Method and each neighboring claim separately. |
+| Daalhuizen and Cash, [Method content theory](https://doi.org/10.1016/j.destud.2021.101018) | Focus on content that helps a user understand and use a Method. | The source does not make one universal completeness schema. A.3.2.DE uses named-use coverage and explicit omissions instead. |
+| Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Intended use, procedure, representation, tools and adaptation conditions supply authoring questions. | Conceptual elements do not prove Method identity, obtaining relations, Work, or effectiveness. The EC-417 slices preserve those stops. |
+| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9), §§2.4 and 4.4 | Use the connection between procedure, required knowledge and the generation of inputs and results: make the reasoning steps recoverable where the receiving use needs them. | This strengthens instruction construction and the small receiving-use check. Explicit content alone does not supply tacit skill, establish learning or settle FPF's Method/description distinction. |
 
 ### A.3.2.DE:12 - Relations
 

@@ -1,6 +1,6 @@
 ## C.3.4 - KindUseAdaptationDeclaration — Tailor the Use of an Existing Kind
 
-> **One-line summary.** Use a `KindUseAdaptationDeclaration` when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base `KindSignature` edition, local candidate constraints or vocabulary bindings, intended guard use, and applicability. Check admissibility before returning `true`, `false`, or `unknown`. A locality change first triggers kind-identity comparison: the same kind needs no `KindBridge`; distinct kinds need one only when its exact correspondence predicate obtains.
+> **Summary.** Use a `KindUseAdaptationDeclaration` when a procedure needs a narrower or differently named use of an existing kind without defining another kind. The declaration pins the base `KindSignature` edition, local candidate constraints or vocabulary bindings, intended guard use, and applicability. Check admissibility before returning `true`, `false`, or `unknown`. A locality change first triggers kind-identity comparison: the same kind needs no `KindBridge`; distinct kinds need one only when its exact correspondence predicate obtains.
 
 **Normativity:** Normative in **Part C**. Identifier **C.3.4**.
 
@@ -23,11 +23,11 @@ Do not use C.3.4 merely to rename a kind, represent a catalog row, narrow claim 
 - **A.2.6 — Context slices and Scopes:** Claim and Work scope over `U.ContextSlice`.
 - **C.2.2 and C.2.3:** F–G–R and formality characterize the episteme being assessed.
 
-**Non-goals.** This pattern mandates no repository or notation. A kind-use adaptation declaration is not a kind, `KindBridge`, or Scope.
+**Use boundary.** The declaration specifies a use of the base kind. Kind identity, kind correspondence and claim scope retain their own rules.
 
 ### C.3.4:1 - Purpose
 
-Teams often need a local projection of a widely used kind: `Vehicle` with ABS for one procedure, or local spelling `X-Auth` for `AuthHeader`. Cloning a kind for every use fragments catalogs and creates false bridge pressure. A local-use declaration keeps the base-kind identity, makes constraints and bindings explicit, and gives a guard one versioned episteme to designate. It is not another kind, classification occurrence, or record ontology.
+Teams often need a local projection of a widely used kind: `Vehicle` with ABS for one procedure, or local spelling `X-Auth` for `AuthHeader`. Cloning a kind for every use fragments catalogs and creates false bridge pressure. A local-use declaration keeps the base-kind identity, makes constraints and bindings explicit, and gives a guard one versioned episteme to designate.
 
 ### C.3.4:2 - Context
 
@@ -108,7 +108,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 #### C.3.4:6.3 - Stable Refinement and Catalog Representation
 
-**KUA-07 (Stable refinement).** Broad reuse triggers a review for another kind. If that kind and an obtaining subkind fact are established, retain the adaptation declaration only for any remaining local use or retire it. Declaration reuse, catalog action, or labeling performs no kind admission and establishes no subkind fact.
+**KUA-07 (Stable refinement).** When repeated uses may require one stable membership distinction, review whether another kind would serve them. If that kind and an obtaining subkind fact are established, retain the adaptation declaration for any remaining local use or retire it. Reuse of a vocabulary binding alone adds no membership distinction. Declaration reuse or labeling performs no kind admission and establishes no subkind fact.
 
 **KUA-08 (Addressability).** Every guard-addressable adaptation declaration resolves to its exact edition, base signature, dependencies, applicability, and intended use. A correspondence declaration also resolves its source declaration as EntityOfConcern, target declaration, direction, deterministic rule, effective scheme, definedness, and loss. A catalog represents those references; it is neither the declaration episteme nor ontology, and consolidation does not merge kind identities.
 
@@ -116,7 +116,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 **KUA-09 (Identity check before bridge).** On a locality change, first compare exact base-kind definitions. Same-kind reuse needs no `KindBridge` but still uses the receiving declaration and a fresh judgment. Distinct-kind use establishes a `KindBridge` only when its directional correspondence predicate obtains. Differing adaptation constraints or bindings may additionally require an exact correspondence declaration. Source judgments are never copied as receiving truth; justified bridge consequences affect R only.
 
-**KUA-10 (Definedness and fail-closed use).** Outside adaptation applicability, return `not-applicable` and form no judgment. For an admissible request with an unavailable dependency, return `unknown`. Outside correspondence definedness, the guard declines that cross-local use without rewriting an independently evaluated receiving result.
+**KUA-10 (Definedness and fail-closed use).** Outside adaptation applicability, return `not-applicable` and form no judgment. For an admissible request, return `unknown` when an unavailable dependency leaves the conjunction unsettled under KUA-04; a known false conjunct still gives `false`. Outside correspondence definedness, the guard declines that cross-local use without rewriting an independently evaluated receiving result.
 
 ### C.3.4:7 - Invariants and Non-goals
 
@@ -128,7 +128,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 #### C.3.4:8.1 - With Kinds and Subkinds
 
-Use an adaptation declaration for procedural tailoring. If the criterion becomes conceptual and stable, identify another local kind and establish the exact obtaining `U.SubkindOf` relation. Repeated declaration use, promotion language, and a catalog link do not establish that relation.
+Use an adaptation declaration for procedural tailoring. If the receiving uses need a stable conceptual distinction as a kind, identify it under C.3.1 and establish any claimed `U.SubkindOf` relation. Repeated declaration use or a catalog link does not establish that relation.
 
 #### C.3.4:8.2 - With Judgment and Declarations
 
@@ -149,11 +149,11 @@ A locality change first prompts kind-identity comparison. When the same base kin
 
 | Anti-pattern | Why it is wrong | Repair |
 | --- | --- | --- |
-| Adaptation declaration treated as a new type | Duplicates the kind and hides the declaration episteme. | Keep the base kind; for a stable conceptual refinement identify another local kind and establish `U.SubkindOf` independently. |
+| Adaptation declaration treated as a new type | Duplicates the kind and hides the declaration episteme. | Keep the base kind; when a receiving use needs a distinct kind, identify it and establish any claimed `U.SubkindOf` relation independently. |
 | Claim- or Work-scope condition hidden in an adaptation judgment | Conflates the candidate with where a claim or Work applies. | Move the scope condition to A.2.6; keep candidate constraints and declaration applicability explicit. |
 | Unversioned or applicability-free declaration used by a guard | Makes evaluation non-replayable. | Give the declaration a designator, pin its edition and dependencies, state applicability, and distinguish `not-applicable` from `unknown`. |
 | Locality change treated as automatic bridge | Splits the same kind or transfers source truth. | Compare kind definitions first. Same-kind reuse needs no bridge and still gets a fresh receiving result; distinct-kind use needs an obtaining C.3.3 correspondence. |
-| Many declarations with the same local meaning | Produces catalog entropy and inconsistent behavior. | Consolidate redundant declarations; for a stable conceptual distinction, separately identify a local kind and establish its obtaining `U.SubkindOf` relation. |
+| Many declarations with the same local meaning | Produces redundant declarations and inconsistent behavior. | Consolidate redundant declarations. If their receiving uses need one stable membership distinction as a kind, identify it separately and establish any claimed `U.SubkindOf` relation. |
 | Declaration name treated as a kind synonym | Hides constraints and invites misuse. | Designate the exact declaration edition and base kind separately in prose and guards. |
 
 ### C.3.4:10 - Worked Examples
@@ -174,7 +174,7 @@ In Jurisdiction Y, first compare the exact patient-kind membership distinctions.
 
 ### C.3.4:11 - Authoring and Review Guidance
 
-An adaptation card may show its declaration designator, base kind, effective scheme, pinned base-signature and declaration editions, adaptation type, intended use, candidate constraints, bindings, separately routed Scope, applicability, examples, known bridge or correspondence declarations, and a stable-distinction review note when current. A correspondence card shows its source declaration as EntityOfConcern and names target, direction, rule, definedness, loss, and effective scheme. A card represents the declaration; it is not the declaration or another kind.
+A card can express an adaptation or correspondence declaration, or point to its exact edition and show the content needed for the receiving use. Keep the declaration's claim-bearing content distinct from the card's arrangement as publication form and from its carrier under C.2.P. A pointer-only card needs an accessible source for the declaration content required by the use. The declarations retain all applicable conditions in section 6; changing their presentation does not change the base kind.
 
 Rules of thumb:
 
@@ -207,6 +207,6 @@ Reviewer questions:
 | **KUA-07** | Stable refinement is independently identified and checked; declaration reuse does not promote it. |
 | **KUA-08** | Guard-addressable adaptation and correspondence declarations resolve to their exact editions and all interpretation, dependency, definedness, direction, and loss values required by section 6.3; a catalog remains representation and does not merge kind identities. |
 | **KUA-09** | Locality change triggers identity comparison. Same-kind reuse has no bridge and still gets a fresh receiving judgment; distinct-kind use requires an obtaining C.3.3 correspondence before bridge reliance. |
-| **KUA-10** | Non-applicability forms no judgment; unavailable admissible dependencies yield `unknown`; correspondence failure blocks use without rewriting the receiving result. |
+| **KUA-10** | Non-applicability forms no judgment. For an admissible request, unavailable dependencies yield `unknown` only when KUA-04 leaves the conjunction unsettled. Correspondence failure blocks that use without rewriting the independent receiving result. |
 
 ### C.3.4:End

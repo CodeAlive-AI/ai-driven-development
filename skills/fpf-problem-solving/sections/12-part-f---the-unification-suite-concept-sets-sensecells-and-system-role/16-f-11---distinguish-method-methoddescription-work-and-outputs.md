@@ -5,18 +5,18 @@
 **Type:** Architectural pattern.
 
 > **Status:** Stable
-**Builds on:** E.10.D1 **Recovering What “Context” Means in Use**; A.3, A.3.1, and A.3.2 for `U.Method` and `U.MethodDescription`; A.15 and A.15.1 for dated `U.Work`; C.2.1 for the identity of each claim-bearing episteme or report.
-**Coordinates with.** F.0.1 and F.17 for exact source-local meaning and an optional durable cell; F.4 for local system-role-kind descriptions; F.5 for naming; F.6 for system-role assignment and performed-Work attribution; F.9 only for an actual relation between distinct local meanings; F.10 for status and windows; B.1.5 for Method composition and Work enactment.
+**Builds on:** E.10.D1 **Recovering What “Context” Means in Use**; A.3, A.3.1, and A.3.2 for `U.Method` and `U.MethodDescription`; A.13 for actual-performer admission, then A.15 and A.15.1 for dated `U.Work`; C.2.1 for the identity of each claim-bearing episteme or report.
+**Coordinates with.** F.0.1 and F.17 for exact source-local meaning and an optional durable cell; F.4 for local system-role-kind descriptions; F.5 for naming; A.2.1 for system-role assignment and F.6 for precise performed-Work attribution; F.9 only for an actual relation between distinct local meanings; F.10 for status and windows; B.1.5 for Method composition and Work enactment.
 **Aliases (informative).** *Method, description, Work, and control-output split*; *design and run distinction*.
 
 ### F.11:1 - Intent & applicability
 
-**Intent.** Give a cold reader four practical questions that prevent common category errors:
+**Intent.** Give the reader four practical questions that prevent common category errors:
 
 1. What **`U.Method`**, the way of doing, is meant?
 2. What **`U.MethodDescription`**, the episteme whose one exact `EntityOfConcern` is that Method, is being used?
 3. What dated **`U.Work`** actually occurred?
-4. Did that Work produce a control signal, command, setpoint, transformation output, or other domain-specific output that matters to this claim?
+4. Did that Work produce a domain-specific output that matters to this claim?
 
 These questions are a reading aid, not a universal four-kind ontology. The fourth answer is whatever value and relation its direct control or transformation pattern defines; F.11 does not mint a universal `U.Actuation` kind.
 
@@ -45,14 +45,14 @@ These questions are a reading aid, not a universal four-kind ontology. The fourt
 
 Use four questions, then state only the relations that actually obtain:
 
-* **Method — the way.** An algorithm, test method, clinical pathway, or welding technique is a way of doing under A.3 and A.3.1.
-* **MethodDescription — the description episteme.** An SOP, program text, BPMN or SPEM model, or other episteme is a `U.MethodDescription` only when A.3.2 finds one admitted Method as its exact `EntityOfConcern` and at least one substantive claim about that Method as a way of doing.
-* **Work — the occurrence.** A dated performance, run, batch, or service episode is `U.Work` under A.15 and A.15.1. Work is the occurrence itself, not a record of the occurrence; a record or report is a separate episteme or carrier.
-* **Control or transformation output — if present.** A setpoint, command, duty-cycle value, signal, or changed output is identified under its direct pattern and related to the Work only when that relation obtains.
+* **Method — the way.** A.3 and A.3.1 govern the way of doing, such as a welding technique.
+* **MethodDescription — the description episteme.** An episteme is a `U.MethodDescription` only when A.3.2 finds one admitted Method as its exact `EntityOfConcern` and at least one substantive claim about that Method as a way of doing.
+* **Work — the occurrence.** A dated occurrence is `U.Work` only after admission under A.15 and A.15.1. Work is the occurrence itself, not a record of the occurrence; a record or report is a separate episteme or carrier.
+* **Control or transformation output — if present.** Identify the output under its direct pattern and relate it to the Work only when that relation obtains.
 
 F.11 allows the plain sentence “this MethodDescription describes the Method” as shorthand for that A.3.2 constitution and membership judgement. It does not add a binary description relation. Several epistemes may each have the same Method as their exact `EntityOfConcern`; one episteme may concern one admitted composite Method; and one document or publication may present several separately identified epistemes. One MethodDescription episteme cannot have several Methods as its `EntityOfConcern`.
 
-Work may enact a Method when the exact enactment relation and evidence are stated. A System may perform Work under an obtaining system-role assignment when A.15.1 and F.6 support that attribution. A claim that a System or Work used, followed, deviated from, conformed to, or relied on a particular MethodDescription edition is separate. Cite the pattern that defines or tests that claim; use A.10 or B.3 for evidence reliance, and return A.6.RCD `missing-governor` when no current pattern supplies the needed relation after its participants and sentence are explicit.
+Work may enact a Method when the exact enactment relation and evidence are stated. Recover the actual performer through A.13 and admit the Work independently under A.15.1; add F.6 only when precise attribution to the same obtaining assignment is needed. A claim that a System or Work used, followed, deviated from, conformed to, or relied on a particular MethodDescription edition is separate. Cite the pattern that defines or tests that claim; use A.10 or B.3 for evidence reliance, and return A.6.RCD `missing-governor` when no current pattern supplies the needed relation after its participants and sentence are explicit.
 
 ### F.11:5 - Minimal vocabulary
 
@@ -81,7 +81,7 @@ For every claimed actual performer, recover the A.13 core: the admitted System, 
 
 #### F.11:6.4 - Which output matters, if any?
 
-Name the actual signal, command, setpoint, transformation output, or resulting value. State how it relates to the Work under the direct control or transformation pattern. Some Work has no control output; a manual command can be simple; neither case forces a fourth universal kind.
+Name the actual signal, command, setpoint, transformation output, or resulting value. State how it relates to the Work under the direct control or transformation pattern. Some Work has no control output; the fourth question does not require a universal output kind.
 
 #### F.11:6.5 - Which evidence and status claim?
 
@@ -177,13 +177,13 @@ The Method is triage-first incident handling; the MethodDescription is the playb
 7. **Bind agency exactly.** Recover the A.13 core for each performer before independent A.15.1 Work admission; add F.6 only for precise assignment-bound attribution through the same obtaining assignment.
 8. **Use outcome evidence.** Observations about the Work support evaluation; commands and approvals alone do not.
 9. **Preserve history.** A new description does not alter past Work or its evidence.
-10. **Recover words locally.** Use F.9 only when a genuine relation between local meanings is part of the question.
+10. **Recover words locally.** Use F.9 only when a relation between local meanings is part of the question.
 
 ### F.11:13 - Relations
 
 **Builds on:**
 
-- Use **A.3** and **A.3.1** for `U.Method`, **A.3.2** for `U.MethodDescription`, and **A.15** and **A.15.1** for dated `U.Work`.
+- Use **A.3** and **A.3.1** for `U.Method`, **A.3.2** for `U.MethodDescription`, **A.13** for the actual-performer basis, and **A.15** and **A.15.1** for dated `U.Work`.
 - Use **B.1.5** for Method composition and Work enactment, **C.2.1** for the identity of every claim-bearing episteme and report, and **E.10.D1** when vague *context* wording hides the actual source, scheme, scope, use, situation, or evidence basis.
 - Use the direct transformation, observation, or control pattern when an output claim is made; F.11 creates no universal actuation kind.
 

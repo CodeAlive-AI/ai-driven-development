@@ -224,8 +224,7 @@ Resolution and checking are declaration-first and context-sensitive. Authors and
 
 **H-11 (Assembled Part boundaries and title agreement).** In the assembled publication, every compact ToC Part label **MUST** be a bold separator with a blank line on both sides, not a duplicate structural Part heading. Its title and ASCII ` - ` separator **MUST** agree exactly with the corresponding `# Part <letter> - <title>` body heading. A reserved body Part that has no compact ToC table, including current Part H, does not require an empty compact label or table.
 
-*Unification note:* historic A‑ and D‑templates differed only by the presence/absence of **Bias‑Annotation** and **Relations**; the unified template keeps the headings everywhere and requires every heading to carry content-bearing grounding, boundary, consequence, rationale, source-use, relation, or reduced-case material rather than an omission placeholder.
-The Alexandrian pattern canon historically calls *Problem frame* “Context”. FPF uses *Problem frame* because generic `Context` and universal `U.BoundedContext` do not identify the actual value a claim needs.
+`Problem frame` names the working situation. Generic `Context` and universal `U.BoundedContext` do not identify the actual value a claim needs.
 
 Route each use directly. Recover source-local meaning through `F.0.1`, use `F.1` to select answer-changing sources, state `ClaimScope` through `A.2.6`, and use `A.1.1` for an admitted bounded-model use. Add `F.17` only when a durable address or basis relation is needed, `F.9` only for an obtaining Bridge between two exact local senses, and the applicable plane relation for a `ReferencePlane` claim. Otherwise leave the relation unasserted rather than inferring it from a shared word, source, or context.
 
@@ -298,7 +297,7 @@ Begin with the practical explanation developed for its intended use, using C.39:
 
 Use the twelve substantive functions in the canonical template as authoring questions for a whole FPF, DPF, or LPF and each selected substantive profile. `E.11.PFP:4.7` governs their public answers, inheritance, and placement in the framework's publication units. The same functions can describe a broad Method, a composition of Methods, or a narrower use; the declared subject and applicability determine the scale.
 
-The `Solution` explains the actual organization and use of the described Methods: their contributions, relations, and the results that make a next move possible. `Architectural Rationale` explains why that organization and those choices serve the declared use, which serious alternatives were considered, their trade-offs, and the conditions under which another choice becomes preferable. Preserve shared source explanations there when users need them to understand or adapt several patterns together.
+The `Solution` explains the actual organization and use of the described Methods: their contributions, relations, and the results that make a next move possible. `Architectural Rationale` explains why that organization and those choices serve the declared use, which alternatives were considered, their trade-offs, and the conditions under which another choice becomes preferable. Preserve shared source explanations there when users need them to understand or adapt several patterns together.
 
 The same explanation must make recoverable how constituent actions perform encompassing work where that connection matters to learning, performance or change. Show what larger work is already being done through the selected action, what constituents make that action possible, and which conditions of the whole constrain it. Preserve genuine result-before-use dependencies alongside the constituent–whole relations of the relevant Method and Work structures. A representative case should let the reader change the action when a relevant condition of the whole changes. Use B.1.5.EW for recovery and B.1.5.RS for a constituent replacement; do not require a separate level diagram or exhaustive decomposition when the connection is already understood.
 
@@ -323,7 +322,7 @@ Finish with the chosen title and its truthful discovery cue. Keep the PatternID 
 | # | Principle | Guideline |
 |---|-----------|-----------|
 | S-0 | Governing-claim flow | Begin with the recognisable working situation and governing claim or action. Add context, grounding, examples, and a closing line only when they help the reader understand or use that claim. |
-| S-1 | Density without Jargon | Short declarative sentences; tool names belong in Pedagogy/Tooling. |
+| S-1 | Density without Jargon | Short declarative sentences; incidental tool details belong in Pedagogy/Tooling. Retain necessary subject syntax under E.5.1. |
 | S-2 | Internal Cohesion | Inline references to Pillars and related patterns. |
 | S-3 | Embedded Mini-Definitions | Gloss a new term in parentheses on first appearance. |
 | S-4 | Contextualisation | Brief historical or disciplinary lineage references. |
@@ -343,8 +342,7 @@ Finish with the chosen title and its truthful discovery cue. Keep the PatternID 
 | S-18 | Intended-reader discipline | Address the intended framework user. Explain the Methods, their organization, alternatives, costs, and use-changing reasons in the public body. Keep current development, review, evaluation, projection, and landing correspondence in its own carrier under `E.8:4.2.3`. |
 | S-19 | Precision before relaxation | Apply the connected `F.19` reading and kind/loss comparison before accepting a plain or didactic rewrite. Route only an unresolved FPF head, qualifier, relation, or admissible-use question to `E.10`, `E.10.ARCH`, or its subject pattern. |
 
-Authors use the principles as a *scaffold*, not a straitjacket: the goal
-is coherent, engaging insight. Engagement remains subordinate to semantic discipline: hooks, quotable lines, Plain restatements, and didactic images may improve recognition, but any ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary they carry must be recoverable through the governed Tech reading or named neighboring pattern. Ordinary Plain prose without that claim kind or admissible-use boundary stays ordinary prose.
+Use the principles to make the explanation coherent and readable. Engagement remains subordinate to semantic discipline: hooks, quotable lines, Plain restatements, and didactic images may improve recognition, but any ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary they carry must be recoverable through the governed Tech reading or named neighboring pattern. Ordinary Plain prose without that claim kind or admissible-use boundary stays ordinary prose.
 
 **S-0 (Governing-claim flow) — explanation**
 
@@ -355,9 +353,7 @@ Every canonical pattern SHALL stabilise one primary `EntityOfConcern`, relation 
 
 If a pattern uses a broad umbrella or head together with a narrower operative branch, the text must also make the stack explicit early enough for first reading: what the broad head names, what the current narrowed branch is, what primary `EntityOfConcern`, relation record, or claim record is actually in play, what exact action assertion and predicate are current, and what wider work or process remains outside the pattern. A qualifier alone does not restore that stack.
 
-Under `F.18` local-first naming, the canonical pair here is **recognition text** and **assurance text**.
-The earlier provisional `recognition shell` and `assurance shell` wording is retired.
-These names refer to two reading-order functions carried by existing sections or projections inside one pattern; they do **not** mint new `authoritySourceRef` targets, generic neighboring-pattern relations, publication-form or face kinds, `publication-face kind`s, or a second face family.
+**Recognition text** and **assurance text** name two reading-order functions carried by existing sections or projections inside one pattern; they do **not** mint new `authoritySourceRef` targets, generic neighboring-pattern relations, publication-form or face kinds, `publication-face kind`s, or a second face family.
 Additional didactic scaffolding remains optional and is justified when the family is especially easy to misuse, easy to over-read, or hard to teach. The instruction needed for the pattern's declared use is part of its substantive contribution under §4.2.1.1, not optional scaffolding.
 
 The **recognition text** is the first-reading text.
@@ -397,7 +393,7 @@ If `SoTA-Echoing` carries an FPF-governed claim, the practical implication of th
 - reviewer guidance that tells what to inspect first and which neighboring FPF pattern defines or constrains the failure mode and which project-side FPF kind and reference named by value carries the claim or effect;
 - local mini-definitions or glossary material for recurring terms that would otherwise be recovered only from project context.
 
-Pattern density is therefore not “more metadata” and not “longer tag lists”. It is the presence of enough recognition, assurance, and, when needed, extra didactic material that a reader can understand the pattern, apply it lightly in ordinary cases, and recognise when a heavier review profile is required.
+Provide enough recognition, assurance and, when needed, additional didactic material for the reader to understand the pattern, apply it in ordinary cases and recognise when a heavier review profile is required.
 
 ###### E.8:4.2.1.1 - Provide enough explanation for the reader's use without requiring a complete reading
 
@@ -575,7 +571,7 @@ Read a proposed destination far enough to establish that it supplies the contrib
 
 A pattern is written for its intended framework user: the person who uses it to organise thought, investigate a question, change a system, publish a description, or review a result under that pattern.
 
-Its sections explain the described subject, the user's action and result, costs, and grounded boundaries that change use. Public architectural explanation belongs here when it helps the reader understand, select, combine, or adapt the Methods. For example, explain why a profile specializes one step but reuses another, how a combination makes its next result possible, or when a serious alternative would be better. State the actual relations in `Solution` and their reasons in `Architectural Rationale`. A whole language and its profiles use the same content functions through `E.11.PFP:4.7`.
+Its sections explain the described subject, the user's action and result, costs, and grounded boundaries that change use. Public architectural explanation belongs here when it helps the reader understand, select, combine, or adapt the Methods. For example, explain why a profile specializes one step but reuses another, how a combination makes its next result possible, or when an alternative would be better. State the actual relations in `Solution` and their reasons in `Architectural Rationale`. A whole language and its profiles use the same content functions through `E.11.PFP:4.7`.
 
 `E.8` reader and reviewer wording is framework-authoring wording. Project-side publication readers, explanation readers, comparative review units, and participants in named project-side review relations are governed by the patterns that name those units and relations, such as `E.17`, `E.17.ID.CR`, `E.17.EFP`, `A.10`, `A.15.4`, `A.20`, or `A.21`.
 
@@ -585,9 +581,6 @@ Keep the development history of the current pattern version in its DRR, companio
 ##### E.8:4.2.4 - Human-facing fit beyond intended-reader correctness
 Human-facing fit is also subject-domain fit. A recognition text that starts from internal taxonomy, pattern-placement convenience, or package-architecture wording before the problem-domain moment is still under-authored even if its later guidance or check text is correct. When a broader umbrella name and a narrower operative branch are both used, the recognition text should also tell the reader which stack is actually active rather than leaving that reconstruction to a later declaration block or companion note.
 
-A pattern can already address the intended reader and keep its boundaries clean, yet still fail the first minute of use for a cold working reader.
-That failure usually appears when the text is admissible but does not yet make the working situation, practical payoff, primary `EntityOfConcern`, non-use boundary, or first action-guiding move visible enough.
-
 **P-2 epistemic precision check.** When the E.10 criteria call for epistemic precision restoration in pattern prose, the first admissible action-guiding move must survive as remaining admissible reader use or be replaced by a neighboring FPF rule whose content now defines or constrains that claim application. This is a direct `E.2` `P-2` and `E.12` requirement, not an optional style preference. Intentional didactic metaphors and vivid Plain recognition lines are admissible when they are ordinary recognition aids or when their claim kind or admissible-use boundary maps back to Tech under `E.10:6.2`. A precision-corrected rewrite that leaves the recognition text inert is still under-authored.
 
 For canonical patterns, the first-reading text should behave as a **recognition text** and the heavier review/check scope should remain in an **assurance text**.
@@ -595,7 +588,7 @@ For canonical patterns, the first-reading text should behave as a **recognition 
 For method guidance, explain in `Solution` what the performer should attend to or compare when it can change the next move: conditions needed for the operation, consequences expected from it, and whether the obtained result serves the receiving work. Give a reachable continuation when a condition is unmet, unknown or the result leaves the original concern unanswered. `B.5.PI` develops an opening into inquiry; `B.5.EA` helps when the concern cannot yet be expressed, and an early cue can remain unresolved. Put these connections where they change use, including in first authoring. Do not add a compulsory monitor, extra form or copied “watch for anomalies” paragraph to every pattern. A known adequate result can still end the work directly.
 
 
-When a pattern claims practice guidance or is meant to be used by engineers, managers, researchers, or other working readers, authors should make the following visible before the heavier harness takes over:
+When a pattern claims practice guidance or is meant to be used by engineers, managers, researchers, or other working readers, authors should make the following visible before the heavier assurance material:
 - a recognisable `Use this when` or equivalent first-minute recognition cue;
 - a concrete working situation in `Problem frame`, not only taxonomic or pattern-placement language;
 - a short statement of what goes wrong if the pattern is missed or misread;
@@ -643,8 +636,7 @@ If the pattern claims broad, universal, or transdisciplinary usefulness, that br
 The recognition text should show heterogeneous reader or domain situations adequate to the claimed breadth, rather than one narrow case family with a later broad claim attached.
 When a compact matrix helps, `F.16` is the preferred template for making that breadth legible.
 
-This is not a request to flatten the pattern into plain language only.
-It is a rule about ordering, assurance depth, and text consistency: the recognition text must help a working reader recognise the pattern early, while the assurance text continues to carry the full claim kind or admissible-use boundary.
+Keep ordering, assurance depth and text consistency aligned: the recognition text must help a working reader recognise the pattern early, while the assurance text continues to carry the full claim kind or admissible-use boundary.
 If the pattern uses technical lexicon, ontological distinctions, or a mathematical lens, those structures must remain recoverable, but the first-reading text should not require the reader to decode that full stack before recognising the working situation.
 The assurance text may tighten or discipline the recognition text; it must not silently shift what the recognition text claimed.
 
@@ -663,7 +655,7 @@ Repaired Problem-frame recognition signature:
 ```text
 Use this pattern when boundary-facing language - API, protocol, SLO/SLA, compliance clause, or other published boundary description - mixes guidance or check clauses, admissibility gates, duties, and evidence into one sentence or published boundary description.
 
-If missed, the text becomes boundary-claim soup: runtime behavior, governance, and evidence are treated as one undifferentiated promise.
+If missed, runtime behavior, governance, and evidence are treated as one undifferentiated promise.
 
 Do not use this pattern merely because the text mentions an API or boundary description. If the question is still one unstable cue, preserve it through the admissible cue-preservation line first.
 
@@ -740,8 +732,6 @@ Passing a Conformance Checklist supports the selected conformance claims, not a 
 
 ### E.8:8 - Common Anti-Patterns and How to Avoid Them
 
-These failure modes recur in drafts and in downstream application. They are predictable ways the Forces in this pattern get violated.
-
 | Anti-pattern | Symptom | Why it fails | How to avoid / repair |
 |-------------|---------|------------------------------|-----------------------|
 | **Template cargo-culting** | Headings exist, but the section is fragments, decorative bullets, or a table with no governing claim. | Satisfies Uniformity but loses Readability and Didactic Primacy. | State the governing claim and its practical consequence in ordinary prose; introduce a list or table only when that structure improves the reader's work, and apply `F.19` to its contribution and load. |
@@ -767,14 +757,12 @@ These failure modes recur in drafts and in downstream application. They are pred
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| **Predictable skeleton** – readers instantly know where to find the problem frame, forces, and criteria. | Limits author freedom in macro layout; mitigated by flexibility inside the Solution subsection. |
-| **Cohesive voice** – S‑principles give FPF a recognisable style, aiding memorability. | Reviewers must read for style, not only semantics; checklists reduce review effort. |
-| **Embedded pedagogy** – Tell-Show-Show and governing-claim flow make the spec self-teaching. | Patterns may become slightly longer; retain only material that improves comprehension or use. |
+| **Predictable structure** – the same named sections locate the problem frame, forces, and criteria. | Limits author freedom in macro layout; mitigated by flexibility inside the Solution subsection. |
+| **Cohesive voice** – S‑principles give authors common guidance for explaining their contributions. | Reviewers must judge readability as well as semantics; the checklist identifies recurring conformance questions. |
+| **Grounded explanation** – Tell-Show-Show and governing-claim flow connect the rule to its application. | Patterns may become slightly longer; retain only material that improves comprehension or use. |
 
 ### E.8:10 - Architectural Rationale
-Structure and style function as FPF’s *grammar*. By unifying what were
-once separate “template” and “style guide” patterns, authors face a
-single reference point that satisfies:
+The common structure and style principles serve:
 
 * **P‑1 Cognitive Elegance** – uniform, minimal surprises.
 * **P‑2 Didactic Primacy** – narrative flow, dual archetype examples.
@@ -784,7 +772,7 @@ A unified template also improves retrieval: a chunk containing `A.2:<n> - Bias�
 
 The ASCII ` - ` separator in H-2 keeps heading entry inexpensive: authors can type it directly on ordinary keyboards, and readers can reuse the same characters in search and plain-text tools. Typographic dash variants require an extra input or conversion step while adding no information to the boundary between an identifier and its title. Where a prose dash is useful, `--` is a keyboard-accessible option; the identifier/title separator remains ` - `.
 
-International and industry standards often speak in terms of *conformance criteria*. FPF uses the label **Conformance Checklist** to make adoption easier for engineers and managers.
+The **Conformance Checklist** groups the criteria for judging a pattern that claims conformance.
 
 ### E.8:11 - SoTA-Echoing *(normative; typed comparison to contemporary best-known practice)*
 

@@ -12,7 +12,7 @@
 
 **Primary reader.** The practitioner preparing decision-ready alternatives for one receiver. The pattern forms candidates; it neither chooses for the receiver nor realizes a retained way.
 
-**First useful result.** A finite same-result comparison containing at least two materially different complete-enough possible-future ways, one shared parity basis, explicit supported/proposed/unknown premises and gaps, and the truthful next handoff. When choice is current, hand the resulting `OptionSet` to `C.11`; its `ChoiceResult` is separate. For a retained way, name the first unsupported realization branch.
+**First useful result.** A finite same-result comparison containing at least two materially different complete-enough possible-future ways, one shared parity basis, explicit supported/proposed/unknown premises and gaps, and the truthful next handoff. When choice is current, hand the resulting `OptionSet` to `C.11`; its `ChoiceResult` is separate. For a retained way, name any first unsupported realization branch; if none remains, use the direct realization Method.
 
 **What changes in practice.** Instead of comparing *buy* against *AI* or *internal* as if the labels were peer kinds, the practitioner asks how each whole way could make the same accepted result available. Duplicate labels merge, materially different ways under one label split, and omitted integration, evidence, support, capability, custody, resource, consequence, and exit burdens become visible before commitment.
 
@@ -51,8 +51,8 @@ Fix one result, receiving use, situation, horizon, and acceptance basis. Constru
 3. **Construct at least two materially different complete ways.** Use labels only as prompts. For each surviving way, describe the relevant proposed or already-available Agents, Work, Methods, Systems, values, provision or access relations, enabling branches, and conditions through which the same result could become available. Mark every decision-bearing premise as supported now, proposed, or unknown. Merge labels that resolve to the same decision-changing contents; split ways under one label when a content difference can change the choice. If no second way can be supported, return the missing-alternative or search gap rather than fabricating a peer. When the gap is an unexplained obtaining operation, use `C.39` for a candidate explanation or the precise unresolved contribution. Its sufficient-one-way result does not complete this comparison.
 4. **Use one decision-changing parity basis.** Ask the same bounded questions of every way: result and availability condition; performers, Work, Methods, and means; production, transfer, provision, access, custody, or ownership; fit, interfaces, integration, and configuration; evidence, uncertainty, and assurance; support, maintenance, change, exit, and recovery; capability consequences; resources; and consequences for affected Systems. Omit a group only when it cannot change this choice. Keep a decision-reversing unknown as a visible gap.
 5. **Restore comparability without forcing totality.** Keep the result, receiving use, acceptance conditions, situation, configuration boundary, evidence horizon, and burden categories shared. Use ordinary comparison when the ordering is direct. Use `A.19.CPM` and `A.19.SelectorMechanism` only when evidence gates, partial orders, incomparability, abstention, or set-valued retention matter. Do not hide protected conditions inside an unexplained score.
-6. **Freeze and hand off a finite option set.** Put only complete-enough whole ways into the current `OptionSet`, with gaps that the chooser can see. Then apply `C.11` for local choice. Its result may choose one way or a retained tie-set, reject the current set, probe again, or reroute. `C.38` does not choose by implication and does not gain the chooser's authority.
-7. **Name the truthful continuation and reopen.** For a retained way, identify the first unsupported realization branch or the direct pattern that now owns the question. Reopen only when a changed result identity, use, acceptance basis, candidate, specialist result, capability, interface, evidence item, burden, support condition, affected-System consequence, exit condition, or observation can change the comparison or choice.
+6. **Freeze and hand off a finite option set.** Put only complete-enough whole ways into the current `OptionSet`, with gaps that the chooser can see. When local choice is current, apply `C.11`. Its result may choose one way or a retained tie-set, reject the current set, probe again, or reroute. `C.38` does not choose by implication and does not gain the chooser's authority.
+7. **Name the truthful continuation and reopen.** For a retained way, identify the first unsupported realization branch, if any, or the direct Method that can now proceed. Reopen only when a changed result identity, use, acceptance basis, candidate, specialist result, capability, interface, evidence item, burden, support condition, affected-System consequence, exit condition, or observation can change the comparison or choice.
 
 #### C.38:4.2 - Use a proportional parity view
 
@@ -86,9 +86,9 @@ The result is a comparison claim, not an obtaining arrangement in the world. It 
 
 #### C.38:4.4 - Retain the comparison without duplication
 
-Use the least burdensome way to keep the comparison recoverable:
+An immediate sufficient comparison can finish without a new record. When later use needs its basis retained, use the least burdensome arrangement:
 
-1. If a domain result already carries the complete same-use comparison and declares this specialization, keep it there rather than producing a second account.
+1. If a domain result already carries the complete same-use comparison, keep it there rather than producing a second account.
 2. Otherwise retain one ordinary `C.2.1` episteme about the one result-obtaining comparison, with a truthful EntityOfConcern and effective reference scheme.
 3. If a direct domain Method already returns the complete useful comparison more cheaply, use that Method and do not add a `C.38` account.
 
@@ -133,7 +133,7 @@ Use that direct Method. Adding a `C.38` account for the same decision would dupl
 | *AI* or *automation* | The Agent or tool's proposed contribution inside each way, plus capability, access, evidence, authority, stop, and recovery where needed. | A performer species is a whole way or receives decision authority. |
 | *arrangement* or *option* | The complete-enough claim bundle for this one comparison and its premise modality. | A new universal kind, selected Structure, architecture, or obtaining world-side relation. |
 
-**Bias check.** Do not privilege the official, fashionable, familiar, widely adopted, or institutionally praised arrangement. Popular practice often describes the previous generation's compromise. Prefer the candidate whose claimed improvement over known weaknesses is explicit and supported for this result and situation. A way that follows a standard or uses a common provider can still be the best current way, but neither officiality nor popularity proves it.
+**Bias check.** Compare the supported benefits, burdens and limits of each way for this result and situation, including any decision-relevant weakness. An adequate incumbent may remain preferable. Familiarity, novelty, popularity or institutional standing alone does not establish suitability.
 
 ### C.38:7 - Conformance and practical checks
 
@@ -147,10 +147,10 @@ A use conforms only when the checks needed by its claimed comparison pass:
 6. `A.19.CPM` or `A.19.SelectorMechanism` is used only when its evidence-gating, incomparability, abstention, or set-return contribution is actually needed.
 7. Only complete-enough whole ways enter the finite `OptionSet`; `C.11` alone makes the local choice and emits the `ChoiceResult`.
 8. The rule for retaining the comparison prevents a duplicate episteme when an owning domain result already carries the complete comparison.
-9. A retained way names its first unsupported realization branch, but no realization or later Work is claimed by the comparison.
+9. A retained way names any first unsupported realization branch or the direct Method that can proceed; the comparison itself claims no realization or later Work.
 10. The reopen condition names a changed premise or result that can alter the comparison or choice.
 
-**Recognition check.** Give a cold reader a *build/buy/provider/AI* list. The reader should be able to name one common result and expose at least one hidden difference or duplicate without inventing an arrangement taxonomy.
+**Recognition check.** The practitioner can recover one common result from a *build/buy/provider/AI* list and identify a decision-relevant hidden difference or duplicate. An arrangement taxonomy is unnecessary.
 
 **Assurance check.** For a consequential use, inspect each actual premise under its direct evidence and authority patterns, challenge one omitted burden that could reverse the choice, and verify that the selected domain assurance and acceptance Methods remain outside `C.38`.
 
@@ -180,13 +180,13 @@ A use conforms only when the checks needed by its claimed comparison pass:
 
 ### C.38:10 - Rationale and SoTA use
 
-The practice question is how to construct several decision-ready ways to obtain one named result without smuggling in a choice, false actuality, or a domain-specific arrangement schema. The best-known current line is result-first, whole-way, and parity-first: begin with the one receiving result and use, expand every serious candidate into a complete-enough possible-future way, expose the same decision-relevant burdens and limits for each, and only then hand a finite `OptionSet` to `C.11`.
+The practice question is how to construct several decision-ready ways to obtain one named result without smuggling in a choice, false actuality, or a domain-specific arrangement schema. Begin with the receiving result and use, expand each serious candidate into a complete-enough possible-future way, and expose the same decision-relevant burdens and limits. The resulting finite `OptionSet` is an input to C.11 when local choice is current.
 
-The serious default is to list familiar labels such as internal, provider, buy, build, partner, procurement vehicle, or lifecycle stage and score them immediately. Those labels mix unlike grains and hide missing integration, evidence, support, capability, custody, consequence, recovery, and exit burdens. Familiarity, official standing, adoption breadth, recency, or institutional praise can make such rows look credible; none shows that they are complete or comparable ways. `C.38` repairs that defect by fixing one result and receiver, resolving every label into a whole possible-future way, applying a bounded parity basis, marking unknowns without inventing current relations, and stopping before local choice or actual Work.
+An initial table may contain labels such as internal, provider, buy, build, partner, procurement vehicle or lifecycle stage. Scoring those labels before recovering their contents can mix unlike alternatives and hide integration, evidence, support, capability, custody, consequence, recovery and exit burdens. Familiarity, official standing, adoption breadth, recency, or institutional praise can make such rows look credible; none shows that they are complete or comparable ways. `C.38` repairs that defect by fixing one result and receiver, resolving every label into a whole possible-future way, applying a bounded parity basis, marking unknowns without inventing current relations, and stopping before local choice or actual Work.
 
-Complete engineering comparison supplies the domain comparator and the subtraction boundary: `C.38` keeps only same-result candidate formation and the parity move, while Systems Engineering keeps the engineered-System context, engineering arrangement content, specialist boundaries, realization, and assurance. The recording case checks transfer: its downstream performance-production Method consumes a prior comparison without yielding performance-production authority to `C.38`. The direct Method-base case is the non-use test: when a domain Method already returns the full comparison, no generic duplicate is added. These cases retain the comparator, transfer, and non-use distinctions; a Method's name or institutional standing does not rank an alternative.
+The common comparison depends on its domain inputs. Systems Engineering supplies the engineered-System conditions, specialist criteria, realization and assurance; the recording Method supplies artistic, participatory and production requirements. Those differences determine what a complete way must include. When a domain Method already returns the sufficient comparison, use that result directly.
 
-A source changes this pattern only when it exposes a defect in the current move or demonstrates a better repair. Reopen the smallest affected candidate or parity question when a decision-changing premise changes; reopen the common line itself only when a current direct pattern supplies the whole move at comparable effort, or evidence shows that result-first whole-way parity systematically hides a burden that changes the decision.
+Reopen the affected candidate or parity question when a decision-changing premise changes. Reconsider the comparison approach when an available direct Method supplies the needed result more economically or when evidence shows that the current comparison hides a consequential burden.
 
 ### C.38:11 - Relations
 

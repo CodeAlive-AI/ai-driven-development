@@ -2,25 +2,25 @@
 
 > **Type:** D-family ethical entry pattern
 > **Status:** Stable
-> **Pattern role:** This compact pattern helps a practitioner recognize multilevel ethical concern and identify the next exact subject assertion and predicate; it does not settle conflict or supply a fixed level ladder.
 
-**Use this when.** Use this pattern when a system, holon, method, work plan, work occurrence, policy, recommendation, architecture move, or publication use may improve one declared level or scope while harming another, or when responsibility is assigned across levels.
+
+**Use this when.** Use this pattern when an action or arrangement may benefit one affected entity while harming another across levels or scopes, or when responsibility is assigned across levels.
 
 **Not this pattern when.** If only the value frame is missing, use `D.1`. If `D.3` has already described the conflict, use that result. If the conflict has to be mediated or used in a decision, use `D.4`. If the current concern is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** A local improvement is treated as ethically sufficient while another declared level, scope, or affected holon carries the harm.
 
-**What this buys.** The practitioner names the affected levels or scopes, the current value frame, and the next pattern to apply before mediation, assurance, bias audit, or architecture return.
+**What this buys.** Identify who or what may bear a loss, explain how the affected scopes are related, and choose the question to examine next.
 
 ### D.2:1 - Problem Frame
 
 Ethical trouble in system-holon work often appears because the current action is good for one level and bad for another. A person may benefit while a team is damaged. A project may benefit while a community pays the cost. A standard may improve coordination while excluding a minority case. A model may improve one metric while moving harm to a less visible scope.
 
-Do not force these cases into a fixed ladder such as local, group, ecosystem, planetary. Declare the levels and scopes present in the situation—for example, a person, team, organization, community, polity, economy, built asset, project, environment, episteme family, standard, publication, AI-enabled system, or another admitted holon or declared scope.
+Do not force these cases into a fixed ladder such as local, group, ecosystem, planetary. Declare the levels and scopes present in the situation and explain who or what may be affected.
 
 ### D.2:1.0 - Problem
 
-A change can be beneficial at one declared level or scope while imposing harm, exclusion, or risk elsewhere, or while changing a direct responsibility relation. The failure is to treat the local gain as ethically sufficient before the affected levels, scopes, holons, epistemes, Methods, actual Work, evidence, and next subject pattern are named. Recover role wording through `E.10.ROLE`; do not infer responsibility from a kind or assignment.
+A change can benefit one affected entity while imposing harm, exclusion or risk elsewhere, or change who is responsible for its consequences. The failure is to infer ethical sufficiency from the local gain without examining consequences for others. When responsibility matters, state its basis; a kind or assignment does not by itself establish that responsibility. Use `E.10.ROLE` to clarify role wording.
 
 ### D.2:1.1 - Forces
 
@@ -28,9 +28,9 @@ A change can be beneficial at one declared level or scope while imposing harm, e
 | --- | --- |
 | Local benefit vs. cross-level harm | A change can improve one declared scope while imposing cost, risk, or exclusion elsewhere. |
 | Situation-defined levels vs. fixed ladders | Multilevel ethics needs declared levels and scopes from the case, not a universal moral hierarchy. |
-| Holons in life vs. descriptions | The affected object may be a system, episteme, publication use, policy, or architecture move; the entry must not collapse these into one document concern. |
+| Affected entities and their descriptions | Identify the affected entity, whether a system or an episteme such as a standard, and explain whose use or interests make the change an ethical concern. |
 | Early recognition vs. premature mediation | Use D.2 to make the conflict visible, D.3 to describe its sides and tension, and D.4 for mediation. |
-| Ethical concern vs. architecture residual | Cross-scope residuals can be architectural, ethical, or both; the next pattern to apply must be named by value. |
+| Ethical concern vs. architecture residual | Cross-scope residuals can be architectural, ethical, or both; choose the method for the question that needs answering. |
 
 ### D.2:2 - Solution
 
@@ -78,7 +78,7 @@ MultilevelEthicsEntry@Context:
 
 The entry has one job: make the multilevel concern recognizable and choose its next use. It does not require a separate dossier or new inquiry before the concern can be discussed. A proposed inquiry goes through `C.11.DUA` when its receiving contribution or feasibility is unresolved; conflict description and decision use remain with `D.3` and `D.4`.
 
-For this pattern, holon work includes material systems and epistemes when they are the affected EntityOfConcern. An architectural description, standard, model card, policy publication, or research program may be the affected episteme; the pattern still asks which levels, scopes, affected holons, interests, responsibilities, and consequences are live.
+Material systems and epistemes can be affected EntitiesOfConcern. For an episteme such as a standard, state which uses and interests make its change ethically relevant.
 
 ### D.2:3 - Recognition Matrix
 
@@ -92,7 +92,7 @@ For this pattern, holon work includes material systems and epistemes when they a
 
 ### D.2:4 - Boundaries
 
-`D.2` is an entry pattern, not a general ethics doctrine and not a conflict solver. It keeps ethics from being omitted when levels and scopes of holons matter. It also keeps multilevel ethics from replacing architecture, assurance, causal, evidence, or publication patterns before the ethical EntityOfConcern is clear.
+D.2 recognizes ethical concerns across levels and scopes. Use the corresponding subject method to judge a conflict, mediate it or conduct an audit.
 
 `D.2` does not create `U.Level`, `U.Frustration`, `U.Emergence`, or a fixed moral scale. Levels and scopes are declared relations in the current situation. If a mathematical lens is needed for scale, frustration, optimization, Pareto comparison, or renormalization-like reasoning, use `C.29` and the applicable pattern for the current object.
 
@@ -131,20 +131,18 @@ Now suppose a release decision depends on whether a proposed servicing method ca
 
 ### D.2:7 - Consequences
 
-This pattern makes ethical level structure visible early. It prevents two opposite errors: treating ethics as a late bias audit only, and treating every interlevel residual as architecture without first asking whether value, harm, responsibility, or admissible sacrifice is being claimed.
+Making cross-scope concerns explicit lets the practitioner choose the next useful question, such as an ethical conflict, an architectural consequence or a need for audit.
 
 ### D.2:9 - Rationale
 
-`D.2` makes multilevel ethical concern visible before the work jumps to conflict mediation, bias audit, assurance, or architecture. This matters because many cases look technically local but ethically cross-level: a method, standard, architecture move, publication, or work plan can improve one scope while pushing cost, risk, exclusion, or responsibility elsewhere.
-
-The pattern deliberately avoids a fixed ladder. It asks for declared levels and scopes from the situation, then selects the next pattern to apply. That keeps FPF holon-aware without making every cross-scope case an architecture residual or every ethical case a bias audit.
+A change can look technically local while shifting costs, risks or responsibilities across affected entities. Recovering those relations lets the practitioner formulate the ethical question before choosing mediation, an audit or an architectural response.
 
 ### D.2:10 - SoTA-Echoing
 
 | Source line | Practical implication for this pattern |
 | --- | --- |
 | Multilevel selection and holonic systems thinking | Ethical effects often appear across nested, overlapping, or situation-defined scopes; the case must declare the levels or scopes it uses instead of importing a fixed moral ladder. |
-| Applied ethics and responsibility practice | Responsibility and harm cannot be assigned only at the most local level when a method, work plan, policy, standard, architecture move, or recommendation moves consequences across scopes. |
+| Applied ethics and responsibility practice | Trace responsibility and harm across the scopes where the action has consequences. |
 | FPF holon and episteme ontology | Affected systems, collections, work occurrences, disciplines, and epistemes may be current; value-frame editions, ClaimScope, and qualification windows delimit the ethical claim, while descriptions and publication use remain separate from the affected in-life object. |
 | Architecture residual discipline | A cross-scope residual can require architecture repair, a D.3 conflict description, or both; D.2 names the next pattern to apply instead of treating architecture shape as ethical proof or ethics as architecture by default. |
 

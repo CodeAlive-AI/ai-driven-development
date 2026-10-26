@@ -3,13 +3,11 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** a verified bounded claim, one correction returned to the maintained result that owns the contradicted claim, or a named gap. Construction, MethodDescription, representation, support, and trial-evidence claims remain separately governed; coherence establishes neither situational fit nor practical worth.
-
 ### A.3.1.CC:0 - Use This When
 
 Use this pattern when Method construction commitments, a MethodDescription, a selected representation, an enactment-support result, or trial evidence no longer agree well enough for a named use. Begin with the possible contradiction and the decision it blocks: which maintained claim may be wrong, incomplete, stale, or unsupported?
 
-The first useful result is a coherence-finding row. It names the claim being checked, its maintained owner and edition, the comparison basis, the observed agreement or defect, the one result to reconsider, and the stop. A truthful `owner-not-recoverable` or `missing-comparison-basis` result is better than declaring the whole Method incoherent.
+The first useful result is a bounded coherence finding. It names the claim being checked, its maintained owner and edition, the comparison basis, the observed agreement or defect, the one result to reconsider, and the stop. A truthful `owner-not-recoverable` or `missing-comparison-basis` result is better than declaring the whole Method incoherent.
 
 Here *coherence* is Plain practice wording for checking whether claims relied on for the declared use agree where they should. It is not a new FPF relation, Method admission, fit result, effectiveness result, or universal consistency proof.
 
@@ -20,8 +18,8 @@ Do not use this pattern to decide whether the Method fits another situation, tra
 | Item | Working meaning here | Boundary |
 | --- | --- | --- |
 | construction commitment | A maintained B.1.5.CM requirement, component decision, operation declaration, or obtaining-relation claim about the Method under construction. | It is not a sentence in a later description merely because the sentence refers to it. |
-| MethodDescription claim | A claim in one A.3.2.DE edition for a named use, including coverage, omission, correspondence, evidence limit, or stop. | Description agreement does not admit a Method or establish that Work occurred. |
-| Method representation profile | An C.37.MP result for several unlike Method-related actions. It contains one complete C.37-bearing row per action and a separate cross-use result naming the shared Method source, correspondences, conflicting omissions, edition relations, keep-separate decisions, and changes that reopen several rows. | It does not select a representation for an arbitrary entity, make row colocation a composition result, or establish view, mathematical-lens, publication, or structure conformance by itself. |
+| MethodDescription claim | A claim in one MethodDescription edition for a named use, including coverage, omission, correspondence, evidence limit, or stop. A.3.2.DE can construct or repair the description when needed. | Description agreement does not admit a Method or establish that Work occurred. |
+| Method representation profile | A C.37.MP result for several unlike Method-related actions. It contains one complete C.37-bearing row per action and a separate cross-use result naming the shared Method source, correspondences, conflicting omissions, edition relations, keep-separate decisions, and changes that reopen several rows. | It does not select a representation for an arbitrary entity, make row colocation a composition result, or establish view, mathematical-lens, publication, or structure conformance by itself. |
 | support claim | One A.15.8.MS task, configuration, A.22 proposal or selection position, collection, membership, edition, publication, direct-relation, test, or reliance claim. | A repository or successful tool task cannot repair a contradiction in another maintained result by being convenient. |
 | trial evidence | A.3.1.WT occurrence-level observations and gaps qualified for a named later use. | An observation can bear on a claim. Any correction belongs in the maintained result that owns that claim. |
 | coherence finding | A bounded agreement, contradiction, missing-information, failed-declared-conformance, or currentness result about one named claim. | “The Method is coherent” is too broad unless every claim relied on and its qualification window are actually in scope. |
@@ -44,7 +42,7 @@ This makes correction expensive and unsafe. Several maintained results are chang
 
 | Force | Tension |
 | --- | --- |
-| Local correction | A small owner-specific repair preserves working claims, while a package-wide rewrite feels safer. |
+| Local correction | Repairing the claim at its owner preserves unaffected claims, while dependent claims may also need rechecking. |
 | Construction and description | They must correspond for relied-on uses, while they remain different results with different tests. |
 | Representation | A representation must expose what its use needs, while omission can be deliberate for another use. |
 | Trial evidence | Actual Work can reveal contradictions, while failure can also come from situation, capability, support, or another direct relation. |
@@ -62,6 +60,8 @@ When the parts appear locally consistent but the required whole result still has
 
 #### A.3.1.CC:4.1 - Pattern-Use Unfolding
 
+Use steps 4–8 only for the claims and evidence that the named coherence question depends on.
+
 1. **Name the blocked use and possible contradiction.** Identify the reader or decision, the claim needed, its qualification window, and what would count as agreement, contradiction, missing information, or a stop. Do not begin with “verify the Method”.
 2. **Preserve the subject and status branch.** Identify the admitted Method under `A.3.1`, or keep the proposed whole as a candidate account. Keep Work, WorkPlan, description, representation, support, evidence, publication, and structure claims at their current statuses.
 3. **Recover the maintained claim and owner.** Record the claim text or predicate, owning result, edition or occurrence, source or construction basis, intended use, and currentness condition. If ownership cannot be recovered, return `owner-not-recoverable` before editing several carriers.
@@ -73,7 +73,7 @@ When the parts appear locally consistent but the required whole result still has
 9. **Classify the finding.** Distinguish: `agreement-within-window`; `contradicted-claim`; `missing-information`; `failed-declared-conformance`; `stale-source-or-edition`; and `owner-not-recoverable`. Do not turn uncertainty into contradiction or a local defect into a whole-Method verdict.
 10. **Select one correction owner.** Return the smallest correction to B.1.5.CM construction, A.3.2.DE description, one direct C.37 use row, one complete C.37.MP Method representation profile, one exact A.15.8.MS result, or the direct governor of a lower representation result. If one observation defeats several independent claims, create separate findings with separate owners; do not copy one vague correction into every upstream result.
 11. **Repair and repeat the same check.** Preserve unaffected claims, statuses, evidence, and windows. Recheck the repaired claim against the same basis. If the use, subject, source, edition, or criteria changed, start a new coherence use instead of calling the old check passed.
-12. **Return the bounded result and non-use.** State the verified claim, correction or gap, owner, affected downstream uses, preserved claims, and reopen condition. Say explicitly that fit, transfer, worth, capability, contribution, causality, admission, and publication remain separate.
+12. **Return the bounded result.** State the verified claim, correction or gap, owner, affected downstream uses, preserved claims, material use limits, and reopen condition.
 
 #### A.3.1.CC:4.2 - Record the Result
 
@@ -86,7 +86,9 @@ When the parts appear locally consistent but the required whole result still has
 | finding | Agreement, contradiction, missing information, failed declared conformance, stale source or edition, or missing owner; include the evidence reach. |
 | repair routing | One maintained result to reconsider, smallest correction, unaffected claims and statuses, and downstream uses that must be rechecked. |
 | rerun | Same-check result after repair, or the changed use or basis that requires a new check. |
-| return | Verified bounded claim, corrected claim, or named gap; non-use and reopen condition. |
+| return | Verified bounded claim, corrected claim, or named gap; material use limits and reopen condition. |
+
+Use the existing claim and finding records or a concise account that preserves these distinctions; the positions do not require a separate form.
 
 #### A.3.1.CC:4.3 - What Changes in Practice
 
@@ -129,15 +131,15 @@ Project 11 records a different application and many reported results. It is neit
 
 #### A.3.1.CC:5.1 - EC-417 Early Stop
 
-The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-smallest-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
+The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
 `C-EC-Release-v2` remains a candidate account and the three-release statement remains a WorkPlan. A.3.1.CC may check current description, representation, A.15.8.MS task, collection, edition, reliance, permission, application, Work, result-binding, and proposed-organization claims against their own bases. It must not verify planned releases as performed Work or call the candidate whole coherent as a Method.
 
-For every correction, name the exact maintained position. A stale method-base edition returns to that edition result. A failed viewpoint rule returns the lower episteme and failed `E.17.0` rule to their direct governor. Recheck the action's complete C.37 basis when that use relied on the failed result. For an C.37.MP profile, follow §4.1(6) and recheck only its actually dependent cross-use relations. A missing A.22 selection-use basis remains the already named gap. Keep the observed support results separate from the missing tailoring definition and untested permission/authority stop; none supplies release evidence.
+For every correction, name the exact maintained position. A stale method-base edition returns to that edition result. A failed viewpoint rule returns the lower episteme and failed `E.17.0` rule to their direct governor. Recheck the action's complete C.37 basis when that use relied on the failed result. For a C.37.MP profile, follow §4.1(6) and recheck only its actually dependent cross-use relations. A missing A.22 selection-use basis remains the already named gap. Keep the observed support results separate from the missing tailoring definition and untested permission/authority stop; none supplies release evidence.
 
 ### A.3.1.CC:6 - Bias-Annotation
 
-| Recurring bias | Likely drift | Repair |
+| Bias | Likely drift | Repair |
 | --- | --- | --- |
 | package-coherence bias | One local contradiction becomes a verdict on the whole Method package. | Bound the claim, use, owner, and window before checking. |
 | document-owner bias | The document displaying a claim is edited even when construction or support owns it. | Recover the maintained result and direct governor. |
@@ -156,14 +158,14 @@ For every correction, name the exact maintained position. A stale method-base ed
 - [ ] Agreement, contradiction, missing information, failed declared conformance, staleness, and missing owner are not merged.
 - [ ] Every correction returns to one maintained result and preserves unaffected claims.
 - [ ] A repaired claim is rechecked against the same basis, or a changed basis starts a new use.
-- [ ] No coherence result is overread as fit, transfer, worth, contribution, causality, capability, admission, or publication.
+- [ ] The conclusion is limited to the claims actually checked; any stronger receiving claim retains its separate basis.
 
 ### A.3.1.CC:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Repair |
 | --- | --- |
 | “The trial failed, so rewrite the Method.” | Locate the contradicted claim and rule out situation, capability, support, and relation gaps first. |
-| “The standard checklist passed, so the Method is coherent.” | State the declared conformance use and every claim outside its scope. |
+| “The standard checklist passed, so the Method is coherent.” | State the declared conformance use and its limits relevant to the intended decision. |
 | “Fix the diagram and the description together.” | Determine whether one or two independent claims are contradicted and route each separately. |
 | “Project 32 proves SSFD is inconsistent.” | Treat the reported representation difficulty as evidence that opens an owner-specific check. |
 | “No contradiction was observed, so coherence is proven.” | Return agreement only for the claims, evidence, and window actually checked. |
@@ -182,14 +184,11 @@ The same evidence may support several checks, but its use relation is different 
 
 ### A.3.1.CC:11 - SoTA-Echoing
 
-| Source | Adopted or adapted contribution | Boundary and practitioner implication |
+| Source | Contribution | Boundary and practitioner implication |
 | --- | --- | --- |
 | Ralyté, Koutsopoulos, and Stirna, [verification, validation, and evaluation of modeling methods](https://doi.org/10.1007/s10270-025-01304-2) | Keep verification, validation, and evaluation questions separate and use evidence to locate the claim under check. | The source is modeling-Method focused and does not supply one universal FPF owner map or prove practical worth. |
 | [ISO/IEC/IEEE 24774:2021](https://www.iso.org/standard/78981.html) | Use description elements, rules, views, and declared description-side conformance as selectable comparison bases. | The standard does not make description conformance a Method admission, fit, or performance result and is not imported as FPF ontology. |
 | Cash, Daalhuizen, and Hekkert, [method efficacy and effectiveness](https://doi.org/10.1016/j.destud.2023.101204) | Preserve the difference between internal or use-side adequacy questions and practical effect questions. | The contribution does not supply a universal coherence score or make one successful occurrence decisive. |
-| Current FPF `A.3.1`, `A.10`, `C.2.1`, `E.17.0`, `A.22`, and the direct governors cited by the maintained claim | Reuse Method admission, claim-bound evidence, episteme and edition identity, view conformance, structure selection, and direct predicate tests. | A.3.1.CC contributes owner-specific comparison and correction routing; it does not redefine those identities or predicates. |
-
-Reopen the pattern when practitioners cannot identify one maintained owner without changing the architecture, when repeated findings require a distinct independent coherence problem, when a source supplies a stronger owner-discrimination method, or when a governing FPF predicate changes the repair route.
 
 ### A.3.1.CC:12 - Relations
 

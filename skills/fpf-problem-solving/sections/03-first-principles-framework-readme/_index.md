@@ -2,22 +2,22 @@
 
 The Library's [document identities and current carriers (Library.Reference:11.1)](https://github.com/ailev/FPF/blob/main/FPF-LIBRARY-REFERENCE.md#libraryreference111---document-identities-and-current-carriers) identify the complete publications by DocID and full title. Keep complete PatternIDs or SectionRefs and enough context to identify the document when a reference must remain usable beyond its present hyperlink. Add a document qualifier only when that identity is not already clear.
 
-> First Principles Framework (FPF) is a standards-style pattern language for turning difficult engineering, research, management, and mixed human and AI work into explicit, reviewable, improvable reasoning.
+> First Principles Framework (FPF) is a standards-style pattern language for making reasoning in difficult engineering, research, management, and mixed human and AI work explicit, reviewable, and improvable.
 
-FPF helps when a project has outgrown one clever conversation. It is useful when meanings, claims, options, evidence, architecture, work decisions, publication forms, and improvement criteria need to stay coherent across people, teams, tools, time, or AI agents.
+FPF is useful when meanings, claims, options, evidence, architecture, work decisions, publication forms, and improvement criteria need to stay coherent across people, teams, tools, time, or AI agents.
 
 
 ## Contents
 
 - [Start here](01-start-here.md) (16 lines) — Before selecting framework guidance, read and apply [Using FPF Library](https://github.com/ailev/FPF/blob/main/USING-FPF.md). This instruction applies to project work, framework development, review...
 - [Practical entries](02-practical-entries.md) (253 lines) — The entries below illustrate questions that FPF can help answer; they do not exhaust its uses. Bring the actual difficulty from your project and use the search guidance in USING-FPF.md to find an...
-- [Decide Whether FPF Fits](03-decide-whether-fpf-fits.md) (49 lines) — Use FPF when ordinary discussion is no longer enough to keep work coherent. Typical signs:
-- [When Several Transformation Flows Form One Network](04-when-several-transformation-flows-form-one-network.md) (9 lines) — Inspect E.18.NET when the current question joins independently identified transformation-flow structures through exact direct relation occurrences. Several stages, several paths, or several...
+- [Decide Whether FPF Fits](03-decide-whether-fpf-fits.md) (49 lines) — Use FPF when more explicit distinctions or connections would help keep the work coherent. Typical signs:
+- [When Several Transformation Flows Form One Network](04-when-several-transformation-flows-form-one-network.md) (16 lines) — Inspect E.18.NET when the current question joins independently identified transformation-flow structures through exact direct relation occurrences. Several stages, several paths, or several...
 - [Perform several levels of work through one action](05-perform-several-levels-of-work-through-one-action.md) (8 lines) — While adding an amount to a customer's running total, an agent can be calculating that total and preparing the report that contains it. These are related descriptions of the work being performed...
-- [Recover a lost path from outside use to recursive builders](06-recover-a-lost-path-from-outside-use-to-recursive-builders.md) (6 lines) — Use this guide when the team has recovered or is explicitly proposing one project system-of-interest but can no longer show how a local result supports the expected outside change, release or runtime...
+- [Recover a lost path from outside use to recursive builders](06-recover-a-lost-path-from-outside-use-to-recursive-builders.md) (6 lines) — Use this guide when the team has recovered or is explicitly proposing one project system-of-interest but cannot trace the dependencies connecting a local result with the expected outside change,...
 - [One-Minute Example](07-one-minute-example.md) (21 lines) — A platform team asks:
-- [What FPF Is](08-what-fpf-is.md) (17 lines) — FPF is a pattern language for disciplined thinking in projects where ordinary prose, local expert judgment, or one-off AI output is not enough.
-- [What FPF Is Not](09-what-fpf-is-not.md) (13 lines) — - a shrink-wrapped project methodology;
+- [What FPF Is](08-what-fpf-is.md) (17 lines) — FPF is a pattern language for making project reasoning explicit and checking the meanings, claims and connections on which action depends.
+- [What FPF Is Not](09-what-fpf-is-not.md) (10 lines) — - one prescribed project methodology to apply in full;
 - [How to Use This Repository](10-how-to-use-this-repository.md) (29 lines) — Start with one of the ordinary examples or one of the cross-pattern cards when it recognizes the current project question. A direct example is enough when one pattern can return the needed result. A...
 - [License and reuse](11-license-and-reuse.md) (6 lines) — The original FPF and DPF content by Anatoly Levenchuk, including the Engineering DPF Suite and Narrativization DPF, is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you...
 - [Citation](12-citation.md) (10 lines) — To cite this Core specification, use:

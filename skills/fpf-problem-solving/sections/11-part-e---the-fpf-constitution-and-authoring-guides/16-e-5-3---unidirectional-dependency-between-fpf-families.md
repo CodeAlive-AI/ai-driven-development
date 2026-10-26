@@ -3,17 +3,11 @@
 > **Status:** Stable
 
 ### E.5.3:1 - Problem frame
-FPF separates artefacts into stable **Conceptual Core**, executable
-**Tooling Reference**, and fast‑evolving **Pedagogical Companion** (see
-E.4 FPF Ecosystem Architecture: Framework Families, Products and DPF Suites).  If dependencies can point *both* ways,
-volatile layers will eventually drag the Core into rapid revision
-cycles or introduce domain‑specific bias.
+Use this pattern when an FPF artefact imports or otherwise depends on another artefact. FPF separates the Conceptual Core, Tooling Reference and Pedagogical Companion under E.4. The dependency direction must preserve that separation while allowing the outer families to change.
 
 ### E.5.3:2 - Problem
-*Architectural gravity*: a tutorial or helper script adds a new feature,
-Core patterns import it “temporarily,” and within months the supposedly
-timeless layer depends on transient assets—breaking Pillar **P‑5
-FPF Layering**.
+A Core pattern can become dependent on a tutorial or helper feature introduced for a local need. Changes to that feature then require reconsidering Core content even when its conceptual subject is unchanged. A cycle prevents the layers from being revised independently and violates **P-5 FPF Layering**.
+
 
 ### E.5.3:3 - Forces
 
@@ -26,7 +20,7 @@ FPF Layering**.
 ### E.5.3:4 - Solution — One‑Way, Acyclic Imports
 Define a strict **partial order** over FPF ecosystem families **and guard meaning flow** (see **E.10 V-1**): imports between families point only **upward** in stability, and **no Core semantics** may derive from Tooling/Pedagogy. No linters or machine checking in Conceptual Core.
 
-**`imports` is a dependency DAG, not a specialisation relation (normative).** Whenever an artefact exposes an explicit `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat the dependency claims carried by `imports` as **dependency edges** governed by this section: the induced `imports` graph MUST be **acyclic** (a DAG) and MUST respect the declared direction. `imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms); specialisation relations and any specialisation-chain claims are declared separately under their defining rules. For mechanism declarations, apply A.6.1:4.8 to the comparison claim and C.29 when a mathematical morphism is claimed.
+**`imports` expresses dependency; specialisation is separate (normative).** Whenever an artefact exposes an explicit `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat the dependency claims carried by `imports` as **dependency edges** governed by this section: the induced `imports` graph MUST be **acyclic** (a DAG) and MUST respect the declared direction. `imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms); specialisation relations and any specialisation-chain claims are declared separately under their defining rules. For mechanism declarations, apply A.6.1:4.8 to the comparison claim and C.29 when a mathematical morphism is claimed.
 
 Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 
@@ -64,13 +58,11 @@ Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
 | Core stays free of tool churn and tutorial bias. | Authors must create abstraction layers in Tooling instead of inserting hooks into Core. |
-| Release cadence decoupled: Core (slow), Tooling (medium), Pedagogy (fast). | Slight duplication when multiple tools target same concept; mitigated by shared Core definitions. |
+| Tooling and Pedagogy changes need not require a Core release. | Slight duplication when multiple tools target same concept; mitigated by shared Core definitions. |
 
 ### E.5.3:8 - Rationale
-One‑way import graphs are a proven safeguard in operating systems
-(kernel vs user land) and layered protocols. Here the rule operationalises
-Pillars **P‑4 Open‑Ended Kernel** and **P‑5 FPF Layering**, ensuring
-that innovation happens “below” without contaminating the timeless Core.
+One-way dependencies keep changes in Tooling or Pedagogy from becoming prerequisites for interpreting Core claims. The rule implements **P-4 Open-Ended Kernel** and **P-5 FPF Layering** while allowing those families to evolve under the Core semantics they use.
+
 
 ### E.5.3:9 - Relations
 * **Parent umbrella:** `pat:constitution/guard‑rails` (E.5)

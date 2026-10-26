@@ -2,11 +2,8 @@
 
 FPF is not:
 
-- a shrink-wrapped project methodology;
-- a checklist bureaucracy;
-- a quick-answer cheat sheet;
+- one prescribed project methodology to apply in full;
 - a replacement for domain expertise;
-- a demand to study the whole specification before useful work begins;
-- a promise that every project needs every pattern.
+- a requirement to study the whole specification or apply every pattern before useful work begins.
 
-FPF is most useful when the cost of semantic drift, premature convergence, hidden evidence gaps, weak architecture, vague quality, or unreviewable work is higher than the cost of using a disciplined pattern language.
+Compare the expected gain—such as clearer meanings, better-supported choices or a constructible method—with the full effort of using the relevant guidance.

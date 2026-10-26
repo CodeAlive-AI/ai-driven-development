@@ -26,7 +26,7 @@ Three failures follow:
 2. a source difference that changes action is hidden as terminology variation; or
 3. missing or weak source material is reported as if the disputed domain claim were false.
 
-Semantic synthesis must preserve source-local meanings while returning a positive next move or an honest bounded stop.
+Semantic synthesis must preserve source-local meanings while returning a positive next move or a bounded stop.
 
 ### F.0.2:3 - Forces
 
@@ -80,7 +80,7 @@ The source gap is the reason and closure condition for an unresolved-inquiry cla
 
 Use `F.0.2` for one ontology-to-subject-pattern question whose smallest useful result is one of the three claims above. Use `G.2` when a `CG-Frame` needs a broad, refreshable harvesting surface with a CorpusLedger, Claim Sheets, palette, inventories, alignment records, examples, and declared G.3-G.5 handoffs.
 
-The methods combine in one direction. An author may use identified claims and provenance from a `G.2` pack as inputs here. The author must still compare retained differences, limits, receiving use, and reopen conditions before writing an `F.0.2` result. The bounded comparison does not require the rest of the pack when the question does not use it.
+An author may use identified claims and provenance from a `G.2` pack as inputs here. The author must still compare retained differences, limits, receiving use, and reopen conditions before writing an `F.0.2` result. The bounded comparison does not require the rest of the pack when the question does not use it.
 
 #### F.0.2:4.5 - Boundary to wording-use precision restoration
 
@@ -94,7 +94,7 @@ A DPF may need a reliable current domain ontology so practitioners can recognize
 
 A semantic result explains what may be claimed, which distinctions matter and where source accounts agree or differ. It can include claims about actions and Methods. Methodological synthesis constructs ways of acting: selecting, adapting and connecting operations, their conditions, intermediate results and returns for a needed use. The difference concerns the question and what is constructed, not nouns versus verbs or the document in which the result is written.
 
-Use C.39 to construct, connect, explain or change ways of obtaining the needed results. E.4.CM applies that general methodological work to a framework author's public account of one composite Method or several independent Methods. Those constructions can use the semantic result returned here; trying a proposed way can expose a missing distinction or reopen source comparison. Neither operation requires completing a universal ontology before acting. A sufficient existing Method can be used directly.
+Use C.39 to construct, connect, explain or change ways of obtaining the needed results. E.4.CM applies that general methodological work to a framework author's public account of one composite Method or several independent Methods. Those constructions can use the semantic result returned here; trying a proposed way can expose a missing distinction or reopen source comparison. A sufficient existing Method can be used directly.
 
 ### F.0.2:5 - Archetypal Grounding
 
@@ -132,7 +132,7 @@ A cross-disciplinary data framework proposes one shared classification relation 
 
 #### F.0.2:5.4 - Cheap anti-case
 
-An engineer consults a handbook and its later edition only to recover the current pump tolerance. The later edition gives the needed claim, and no ontological difference changes the authoring decision. The engineer records direct source reliance and stops without semantic synthesis.
+An engineer consults a handbook and its later edition only to recover the current pump tolerance. The later edition gives the needed claim, and no ontological difference changes the authoring decision. The engineer uses the tolerance, cites the later edition and stops without semantic synthesis.
 
 #### F.0.2:5.5 - Compare causal accounts on one sensor case
 

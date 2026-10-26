@@ -2,7 +2,7 @@
 
 > **Status:** Stable
 
-**One-screen purpose (manager-first).**
+**Purpose.**
 State the empirical Bitter Lesson narrowly: in search, learning, planning, and related computational work, general methods able to use increasing compute or data have often displaced hand-engineered special cases. Treat that history as a comparison pressure, not as proof about every bearer. Here *bearer* names the candidate being compared under the scale claim or generality policy. A project may declare an analogous preference for a module, platform, organization design, evidence arrangement, or other bearer only as a separate local policy, with a scale predicate, objective vector, comparison basis, and evidence form appropriate to that bearer. Safety, cost, admissibility, uncertainty, and non-dominance remain visible; the word `general` creates no preference by itself.
 **Builds on.** C.19 (E and E‑LOG), C.24 (Agent‑Tools‑CAL; **ATC‑2**), B.3 (Assurance), E.3 (Precedence), E.5 (Guard‑Rails).
 **Coordinates with.** G.5 (Selector), G.8 (SoS‑LOG Bundles), G.9 (Parity), G.11 (Refresh‑Telemetry), A.0 (On‑Ramp).
@@ -29,9 +29,9 @@ Apply the pattern that defines and tests the current question: `C.30` or `C.32` 
 
 #### C.19.1:0.4 - First Output
 
-Run one cheap scale-claim probe before selecting any `Scale-Audit`. In a short note, name the two bearer candidates and their direct patterns, the task family or receiving use, the proposed scale predicate, objective vector, comparison basis, feasible evidence form, safety boundary, and stakes. Return one of four results:
+First examine the scale claim and its available basis before selecting a `Scale-Audit`. This cheap scale-claim probe may use an existing adequate account; it does not by itself require a new experiment or note. Identify the two candidates and their direct patterns, task family or receiving use, proposed scale predicate, objective vector, comparison basis, feasible evidence, safety boundary and stakes. Return one of four results:
 
-- `no scale claim yet`: use the bounded candidate under its direct pattern; no BLP preference or waiver follows;
+- `no scale claim yet`: no supported scale claim is available. State whether no such claim is needed or which claimed basis remains unresolved. A bounded use may proceed under its direct pattern only if it needs no missing scale conclusion or override of a declared preference; this result supplies neither preference nor waiver;
 - `local analogy or policy`: identify the non-computational bearer family, policy edition, and bearer-appropriate evidence still needed;
 - `bounded scale comparison`: state the smallest parity and uncertainty method adequate for this use;
 - `full Scale-Audit selected`: state why the claim, stakes, feasible evidence, and receiving use justify the added work.
@@ -47,7 +47,7 @@ Without this separation, teams either repeat the Bitter Lesson as a slogan or im
 ### C.19.1:2 - Policy clauses (normative)
 
 **BLP-1 — Probe first; select audit depth by claim and risk.**
-Every BLP use starts with the cheap scale-claim probe. A scale claim is current only when the exact bearer kind and direct pattern, a recoverable scale predicate, an objective vector, a comparison basis, an evidence form, and a named receiving use are present. If any of those is absent, return `no scale claim yet`; if a local analogy or policy remains useful, label it as such and do not present it as an empirical conclusion or manufacture a `Scale-Audit`.
+Every BLP use starts with the scale-claim examination above. A claim ready for comparison needs the bearer kind and direct pattern, a recoverable scale predicate, objective vector, comparison basis, evidence form and named receiving use. If any is absent, identify the missing basis and return `no scale claim yet`: the asserted claim remains unsupported, rather than disappearing. A useful local analogy or policy may be retained as such, but it supplies no empirical conclusion and does not bypass an applicable preference or waiver condition.
 
 When the scale claim is current, choose evidence proportional to the bearer, stakes, feasible observations, and receiving use. A selector-facing superiority claim, durable reusable-bearer policy, safety-material override, or expensive irreversible choice normally justifies a fuller audit. A reversible local probe may need only a small matched comparison. The method shall preserve:
 
@@ -60,7 +60,7 @@ When the scale claim is current, choose evidence proportional to the bearer, sta
 (g) **Claim-matched tests:** use knee or budget-constrained regret tests only when the asserted advantage depends on a knee or dominance inside the audited window.
 
 **BLP-2 — Preference rule with alpha and delta tolerances.**
-Among admissible options with comparable assurance within `delta` and budget within `alpha`, a scale-based preference for one option over another is warranted when the first option's response over the audited range Pareto-dominates the second's, with uncertainty accounted for. If no option dominates within the evidence bounds, `C.19.1` returns `no scale-based preference`; it does not turn greater generality into an empirical winner. A separately declared project policy may break that tie in favor of a more general bearer, but the result shall be labeled as that local policy or analogy, not as the empirical Bitter Lesson, and its E/E-LOG tie-breaker and edition shall be cited. For an agentic use, keep any alpha and delta values in the actual C.19.1 comparison, local-policy or waiver result consumed by the C.24 CallPlan.
+Among admissible options with comparable budgets, using `alpha` when a tolerance is needed, and comparable assurance under any applicable `delta` when an assurance result is material to this use, a scale-based preference is warranted when one option’s response over the audited range Pareto-dominates the other’s, with uncertainty accounted for. Apply any required assurance condition; a comparison that consumes no assurance result does not create one merely to fill `delta`. If no option dominates within the evidence bounds, `C.19.1` returns `no scale-based preference`; it does not turn greater generality into an empirical winner. A separately declared project policy may break that tie in favor of a more general bearer, but the result shall be labeled as that local policy or analogy, not as the empirical Bitter Lesson, and its E/E-LOG tie-breaker and edition shall be cited. For an agentic use, keep any alpha and delta values in the actual C.19.1 comparison, local-policy or waiver result consumed by the C.24 CallPlan.
 > **BLP‑2.1 — Valid waiver grounds (override transparency).**
 > Overrides of a declared local generality preference are allowed **only** when:
 > • **Admissibility override:** guard rails, ethics, or precedence make the general bearer inadmissible (`E.5`, `E.3`).
@@ -81,7 +81,7 @@ Record **Heuristic Debt** only when an admitted heuristic functions as reusable 
 **BLP-5 — Adaptation policy is a separate question.**
 The Bitter Lesson does not by itself require feedback-driven adaptation or make disabling adaptation a waiver. When adaptation is current, use `C.22.1` for the task-family adaptation claim, `E.23` for repeated object-version improvement, and `C.24` for tool-call planning and replanning, together with the applicable privacy and Guard-Rail patterns. A product policy may require or prohibit adaptation, but that result needs its own objective, evidence, risk boundary, and review date.
 **BLP‑6 — Precedence & safeguards.**
-BLP is constitutional (instantiates **P‑10**, **P‑11**, **P‑7**, and **P‑1**), but **does not supersede Guard‑Rails (E.5) or precedence rulings (E.3)**. Where a declared **NQD** or **C.19 E‑LOG** policy promotes illumination into dominance, use that lens for the audited window.
+BLP draws on **P‑10**, **P‑11**, **P‑7** and **P‑1**. Apply E.3 to the actual principles being compared; the combined policy has no single precedence class. It **does not supersede Guard‑Rails (E.5) or precedence rulings (E.3)**. Where a declared **NQD** or **C.19 E‑LOG** policy promotes illumination into dominance, use that lens for the audited window.
 
 **BLP‑7 — Publication discipline.**
 When a durable `Scale-Audit` is actually performed, its artifacts **SHALL** be exported to **G.11** with the used edition pins, uncertainty method, alpha and delta tolerances when current, ComparatorSet, policy reference, and qualification window. A `no scale claim yet` or local bounded-use exit creates no audit package.
@@ -111,12 +111,24 @@ When a durable `Scale-Audit` is actually performed, its artifacts **SHALL** be e
 
 ### C.19.1:5 - Archetypal grounding (post-2015; informative)
 
-Source-use relation and source-currentness: the following example groups are informative grounding for computational scale comparison, not a current SoTA table and not evidence for non-computational bearer families. A concrete BLP claim still needs its task family or receiving use, comparator set, current alpha and delta tolerances when used, budget, material safety and admissibility boundary, any current assurance boundary, and source-currentness row named by the applying pattern or parity harness.
+These computational examples illustrate where a scale comparison may be useful; they supply no empirical conclusion for another bearer family. Each actual comparison still needs its task family, comparator, budget and safety basis, uncertainty, applicable alpha/delta tolerances and any source-currentness condition required by its receiving use.
 
 * **LLMs:** prompt programs, **retrieval-augmented** policies, and **MoE** policies compared with narrow task-specific pipelines; set-returning selection across editions and budgets.
 * **RL and planning:** model-based optimization and general agents compared with hand-coded controllers, subject to alpha and delta tolerances and safety.
 * **Preference learning:** comparisons between **RLHF** and **DPO** families.
 * **QD and OEE:** MAP-Elites, **CMA-ME**, **DQD**, and **QDax**; **POET** and **Enhanced-POET**; illumination remains **report-only telemetry** unless policy promotes it.
+
+**Completed bounded comparison.** Suppose a specialist and a general search method are tested on the same fixed task set at three matched budgets on the same processor. The account includes the full computational cost, keeps the other material conditions fixed and supplies the following uncertainty bounds for the percentage of tasks solved. Both methods satisfy the same applicable safety and eligibility conditions; no separate assurance result is consumed. The budget tolerance is `alpha = 0` CPU-seconds at each matched point.
+
+| Budget | Specialist: solved tasks | General method: solved tasks |
+| --- | --- | --- |
+| 100 CPU-seconds | 83–85% | 79–81% |
+| 200 CPU-seconds | 85–87% | 89–91% |
+| 400 CPU-seconds | 86–88% | 94–96% |
+
+The specialist wins at the first probed budget, while the general method wins at the other two even after allowing for the supplied uncertainty. Neither response dominates across all three probed budgets. Return `no scale-based preference` for that whole comparison; the word general does not reverse it. The result supports the stated comparisons at those points, not an interpolated law between them or a claim outside the window.
+
+If the receiving choice is confined to 100 CPU-seconds, the specialist's bounded advantage can be used under that question's comparison rule. A separately declared prefer-general policy, if applicable, still needs its own tie-break or waiver treatment. No such policy is stipulated here, so no waiver or debt entry is created merely to report these results. Changing the task family, hardware-cost account or budget window reopens the dependent comparison. This is a constructed application, not a new benchmark finding.
 
 ### C.19.1:5.1 - SoTA-Echoing
 

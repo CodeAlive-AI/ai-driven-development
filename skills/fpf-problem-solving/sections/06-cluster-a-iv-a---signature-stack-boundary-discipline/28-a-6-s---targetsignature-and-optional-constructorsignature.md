@@ -5,7 +5,7 @@
 > **Normativity:** Mixed (normative where RFC 2119 keywords appear; quadrant classification is governed by A.6.B)
 > **One-liner:** Start from the actual signature assertion, revision, relation, operation application, or Work. Add a separate ConstructorSignature only when a named receiving use needs reusable constructor vocabulary, laws, and applicability. Keep an operation description, any mathematical arrow, its application, performed Work, and publication faces distinct.
 
-**E.24.UK settlement.** A.6.S admits no `U.SignatureEngineeringPair` kind or durable arrangement individual. The spelling is retired. `TargetSignature` and `ConstructorSignature` are use-specific designations for two independently identified `U.Signature` epistemes; neither designation adds another kind, constitution relation, or identity discriminator. Merely pairing two documents or naming both signatures establishes no relation between them.
+**Object boundary.** A.6.S admits no `U.SignatureEngineeringPair` kind or durable arrangement individual. The spelling is retired. `TargetSignature` and `ConstructorSignature` are use-specific designations for two independently identified `U.Signature` epistemes; neither designation adds another kind, constitution relation, or identity discriminator. Merely pairing two documents or naming both signatures establishes no relation between them.
 
 **Use this pattern when** a project already has, or genuinely needs, a reusable signature that declares how another signature is to be authored or revised, and at least one named receiving use needs that declaration to remain stable across applications, editions, or publishers.
 
@@ -27,8 +27,8 @@ This pattern reserves the following tokens in Tech (normative) register:
 Rename-guards (common collisions):
 
 * **enabling** — Plain adjective meaning “producing/maintaining the TargetSignature”; it is not a `U.*` token.
-* **constructor** — MUST distinguish `ConstructorSignature` (episteme), a constructor-operation description, the A.6.2 arrow used to state its effect-free episteme relation, and the admitted System that applies the described constructor operation and performs any separately admitted construction Work. State any local system-role classification and obtaining assignment separately. If the physics term is intended, spell **Constructor Theory** explicitly.
-* **target** — avoid bare “target” in Tech clauses; use `TargetSignature` or qualify the target (for example, “F.9 target cell” or “target holon”).
+* **constructor** — distinguish the objects consumed by the claim: ConstructorSignature, constructor-operation description, any A.6.2 mathematical arrow, the applying System, and independently admitted Work. A system-role classification or assignment is a separate claim. Spell out Constructor Theory when that physics concept is intended.
+* **target** — qualify the word when its intended object is ambiguous: for example, TargetSignature, F.9 target cell or target holon. A locally clear use needs no repeated expansion.
 * **contract** — if source wording uses this Plain shorthand, recover whether it means `TargetSignature`, Contract Bundle, promise content, commitment, or work/evidence. In this pattern the intended recovered value is usually `TargetSignature`; promises, duties, and gates are classified under `A.6.B` and `A.6.C`.
 
 ### A.6.S:1 - Problem frame
@@ -68,7 +68,6 @@ FPF needs a pattern for **engineering signatures as boundary epistemes**: a disc
 * **Local meaning vs cross-local reuse.** Signature claim content pins its effective ReferenceScheme where interpretation matters. The local kind and any source-local meaning remain separate values. Use F.9 for an actual semantic Bridge between exact local senses whose `<ReferenceScheme, LocalSenseClaim>` interpretation bases differ, and judge its bounded-use claim separately. Distinct F.17 cells or a mapping alone do not establish that relation.
 * **Contract talk vs ontology.** “Contract” language invites mixing promises, norms, and invariants; FPF requires quadrant discipline.
 
-
 ### A.6.S:4 - Solution - start with the direct move; add a ConstructorSignature for named reuse
 
 #### A.6.S:4.0 - Keep the signature, arrow, application, and Work separate
@@ -85,14 +84,14 @@ When dated authoring, deriving, materializing, validating, storing, or publishin
 
 Start with the **TargetSignature**: the `U.Signature` being authored, stabilized, or revised. Its A.6.0 declaration content identifies its subject and value or result range and supplies the reusable vocabulary, laws, and applicability that make it a signature. It contains neither operational gates, deontic duties, evidence claims, nor construction Work merely because those topics occur nearby.
 
-Add a **ConstructorSignature** only when a named receiver needs reusable constructor-operation vocabulary, laws, and applicability. The receiver may be a later editioning process, another authoring System, a publication process, or another repeatable use that would otherwise have to reconstruct the same operation declaration. Apply A.6.0:4.8: identify at least two named claims or consumers that need the same declaration content. One receiver may need it for several named application or edition claims; repeatability alone does not establish those uses. A one-off edit, direct relation assertion, arrow, operation application, or Work occurrence does not qualify by itself.
+Add a **ConstructorSignature** when a named receiving use needs reusable constructor-operation vocabulary, laws and applicability under A.6.0:4.8. This may serve later editioning, another authoring System, publication or another concrete use that would otherwise reconstruct the same declaration. A concrete anticipated use can justify it; an observed second consumer is not required. A one-off edit, assertion, arrow, application or Work occurrence by itself supplies no such need.
 
 The two signatures remain separate C.2.1 epistemes. State only the relation that is actually current:
 
 * when one signature cannot interpret a required term or replay a law without the other, use the exact A.6.0 declaration-dependency claim;
 * when a System uses a Method or MethodDescription that cites the ConstructorSignature while revising the TargetSignature, state that method/source use and any actual application or Work under its direct pattern;
 * when both signatures are merely relevant to the same local question, name them without inventing a pair relation; and
-* if a future use needs a durable relation occurrence between them, first supply that relation kind's participant meanings, predicate, applicability, occurrence identity, and E.24/E.24.UK settlement. A.6.S supplies none by default.
+* if a receiving use needs a relation between them, use its direct rule or A.6.RCD for a missing rule; add explicit occurrence identity only when needed. A new framework pattern follows E.24, and a proposed U-kind follows E.24.UK. A.6.S admits no generic pair relation.
 
 `TargetSignature` and `ConstructorSignature` are Tech designations of each signature's place in this use, not local system-role kinds. A publication may explain TargetSignature as “the signature being engineered”; it need not introduce the abbreviation *SoI*. Do not conflate the TargetSignature with its exact C.2.1 EntityOfConcern. Distinct signature editions remain distinct epistemes when their C.2.1 discriminator triples differ; any empirical-grounding, edition, continuity, dependency, source-use, or publication relation remains separately identified.
 
@@ -102,9 +101,9 @@ The two signatures remain separate C.2.1 epistemes. State only the relation that
 
 A ConstructorSignature declares only operation families that a named receiver will reuse. It need not contain both A.6.5 slot operations and A.6.6 declaration-change labels, and it need not contain either family when another direct operation declaration is enough.
 
-**Slot operations, when current.** Use A.6.5 when a reusable relation declaration needs stable participant positions, fillers, or references. Its vocabulary distinguishes name binding, first or later by-value filling, reference retargeting, typed substitution, resolution, and parameter passing. Keep `bind` for name binding; do not use generic *edit* to hide a reference retargeting or a referent-internal change. A one-off ordinary edit that needs no reused SlotSpec stays an ordinary edit.
+**Designation operations, when current.** Use A.6.5 for designations governed by a compatible RelationSignature SlotSpec: supplying or replacing a designation, typed substitution, reference retargeting and reference resolution. Keep the declaration, designation and actual participant distinct. Operation arguments and results remain A.6.1 declarations, and durable naming follows F.18. A reference retargeting and a change in its referent are different operations; ordinary wording may state either without a new SlotSpec.
 
-**Assertion or declaration history, when current.** Use A.6.6 first to state the actual dependent, base, and direct relation. Stop when that readable assertion answers the use. If a named receiver needs the history of an optional assertion representation or reusable declaration, its local labels such as `declareBase`, `rebase`, `rescope`, `retime`, or `refreshWitnesses` may describe which represented field changed. They do not establish or change the world-side relation. Producing new evidence is separate Work; changing a witness reference is only a record edit.
+**Assertion or declaration history, when current.** Use A.6.6 first to state the actual dependent, base, and direct relation. Stop when that readable assertion answers the use. If a named receiver needs the history of an optional assertion representation or reusable declaration, its local labels such as `declareBase`, `rebase`, `rescope`, `retime`, or `refreshWitnesses` may describe which represented field changed. They do not establish or change the world-side relation. Changing a witness reference is a designation edit. A claim that new evidence was produced needs its own basis; any deliberately asserted dated production Work follows §4.0.
 
 **Mathematical arrows, when current.** An operation description may cite an A.6.2, A.6.3, or A.6.4 arrow only when that mathematical relation is useful to the receiver. The ConstructorSignature states the arrow family and the endpoint values or facts it reads or compares. The arrow remains effect-free; an application that produces a receiving episteme and any performed Work remain separate.
 
@@ -120,10 +119,9 @@ When more than one distinction is current, classify each move separately rather 
    A *presentation* change (views, stakeholder cards, projections) may be an E.17/E.24.PUB form or carrier change. Use A.6.3 only when a mathematical source-to-receiving viewing construction is current, preserving the exact EntityOfConcern; E.17.0 separately governs any `U.View` membership claim.
 
 2. **Direct edits and conditional declaration history.**
-   State a one-off vocabulary, law, applicability, or reference change directly. Use A.6.5 only for reusable relation-participant declarations or reference operations that matter to the receiver. Use A.6.6 declaration history only after the actual base-dependence relation is stated and a named receiver needs that history.
-3. **Editioning + reference retargeting (A.6.5).**
-   Use when the TargetSignature meaningfully changes and downstream coordination needs a new TargetSignature edition. Do not silently mutate the existing episteme: identify the successor edition and retarget the references whose receiving use now selects it (`Retarget<...>` in the relevant Ref slots).
-
+   State a one-off vocabulary, law, applicability, or reference change directly. Use A.6.5 only when a compatible RelationSignature SlotSpec governs the needed declaration or designation operation; other references retain their direct rules. Use A.6.6 declaration history only after the actual base-dependence relation is stated and a named receiver needs that history.
+3. **Editioning and reference retargeting.**
+   When downstream use selects a new TargetSignature edition, identify that edition and retarget the references that must resolve it. Apply each reference's direct resolution and continuity rules; A.6.5 applies only where a compatible SlotSpec governs its designation. Preserve the previous episteme for uses that still select it.
 
 4. **Epistemic retargeting and structural reinterpretation (A.6.4; rarer).**
    Use only when the source and receiving `EntityOfConcernRef` values resolve to different exact EntitiesOfConcern. A reference-only change that still resolves to the same entity stays with its actual reference operation. A.6.4 identifies the source and receiving epistemes and one exact arrow `r`. A separate C.2.1 bounded-use assertion `q` is about that exact `r`; its ClaimGraph contains the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity. A separate current-case judgement compares the exact facts with `q` and returns exactly `satisfies`, `fails`, or `cannot decide`; `cannot decide` names the missing fact and reopen condition. This is distinct from an ordinary new edition of the same TargetSignature.
@@ -143,7 +141,7 @@ For an actual measurement, actuation, validation run, carrier write, or other ef
 
 For E.17 publication, choose a faithful publication form for the bounded reader/use and point to the exact source episteme edition. Preserve E.17's no-content-extension rule: informative explanation may expose source meaning without adding boundary commitments. Only when the selected episteme's `U.View` membership is asserted or needed, resolve its exact viewpoint and E.17.0 conformance; add an A.6.3 source-to-receiving construction only when that separate relation is current. The publication occurrence, carrier, viewpoint use, conformance claim, and any publication Work remain separate. When E.17's CC-MVPK-3b boundary claim-set condition applies, keep normative face text traceable to that A.6.B claim set, with informative commentary; a face does not become a second boundary specification. No MVPK package is required merely because a signature changed.
 
-Classify atomic claims under A.6.B, keeping laws, operational admissibility, deontic commitments, and evidence-use claims separate. Correct quadrant classification alone needs no register. Use the applicable claim register when stable identifiers serve reuse, a decision, audit, or cross-face citation; keep a return to the claim's ID or canonical source location for a material dependency. Do not put operational gates, duties, evidence results, or Work into the TargetSignature merely to make one authoring record complete. Without a need for the register, ordinary claim content and the direct patterns are enough.
+Classify atomic boundary claims under A.6.B: law content; entry or continuation conditions of an identified mechanism application; generic prescriptions, individual commitments or grants; and observed, measured or evaluated results retain their distinct meanings. Evidence use and actual Work need their own basis. Correct classification needs no register by itself. Use the applicable claim register when stable identifiers serve reuse, a decision, audit or cross-face citation, retaining a claim ID or canonical source location for a material dependency. Keep a TargetSignature focused on its declaration content; ordinary claims and their direct patterns suffice when no register is needed.
 
 #### A.6.S:4.5 - Signature-construction relation in a transformation-flow structure (informative)
 
@@ -158,7 +156,7 @@ This mapping is optional. A one-off revision needs neither an E.18 flow nor a Co
 
 #### A.6.S:4.6 - State during construction (informative)
 
-Do not mint a new kernel “signature state” unless you need it.
+Use an existing edition or status distinction when it answers the construction question. A different state claim needs its own definition; a convenient label does not admit a kernel kind.
 In most cases, use:
 
 * **edition** + explicit continuity/withdrawal links for semantic evolution, and
@@ -216,8 +214,8 @@ Scope: signature-engineering uses that meet the entry condition; ordinary one-of
 | ID | Requirement | Purpose |
 | ---: | --- | --- |
 | **CC-A.6.S-1** | State the actual assertion, revision, relation, arrow, application, or Work first. If it answers the receiving use, no ConstructorSignature or pair object is required. | Preserves the cheap direct path. |
-| **CC-A.6.S-2** | A ConstructorSignature appears only when a named receiving use needs reusable constructor vocabulary, laws, and applicability shared by at least two named claims or consumers under A.6.0:4.8. Those claims may belong to one receiver. It is an independently identified `U.Signature`; `U.SignatureEngineeringPair` is not used. | Prevents an unsupported object and needless second signature. |
-| **CC-A.6.S-3** | When two signatures are both current, state the exact A.6.0 dependency, method/source use, or other direct relation that actually obtains. Co-mentioning them creates no relation. | Keeps the connection explicit without inventing a universal pair. |
+| **CC-A.6.S-2** | A ConstructorSignature appears when a named receiving use needs reusable constructor vocabulary, laws and applicability under A.6.0:4.8; a concrete anticipated use can qualify. It is an independently identified U.Signature, without a U.SignatureEngineeringPair. | Prevents an unsupported pair and needless second signature. |
+| **CC-A.6.S-3** | When both signatures are relevant, state any actual dependency or source-use relation the receiving claim needs. They may also be named without a relation claim; co-mention alone establishes none. | Keeps the useful connection explicit without inventing a universal pair. |
 | **CC-A.6.S-4** | The ConstructorSignature declares only operation families its named receiver reuses. A.6.5 slot verbs, A.6.6 declaration-change labels, A.6.2-A.6.4 arrows, E.17 views, assignment identity, and evidence are each conditional on their own current use. | Prevents the constructor menu from becoming a mandatory package. |
 | **CC-A.6.S-5** | A meaning change identifies a new TargetSignature episteme when a C.2.1 discriminator changes. State edition, continuity, and reference-retargeting claims only under their actual predicates; use A.6.4 only when the exact EntityOfConcern-retargeting arrow `r` is current, and identify any bounded-use assertion `q` and current-case judgement separately. | Separates episteme change, editioning, reference change, and retargeting. |
 | **CC-A.6.S-6** | If an A.6.2-A.6.4 arrow is declared, keep the arrow, any separately governed use assertion, any current-case judgement, operation description, application, and Work distinct. Name the endpoint values and neighboring facts read or compared; the arrow changes no neighboring relation occurrence. | Preserves the accepted arrow/application/Work boundary. |
@@ -252,23 +250,21 @@ Stable boundaries sometimes benefit from a reusable description of how they are 
 
 A.6.5, A.6.6, A.6.2-A.6.4, and E.17 supply distinct optional moves. Treating all of them as mandatory constructor primitives would recreate the ambiguity and overhead those patterns are meant to remove. The direct move comes first; the reusable ConstructorSignature packages only the operation language that has an actual receiver.
 
-The result keeps viewing, declaration edits, episteme succession, reference retargeting, EntityOfConcern Retargeting: Judge a Bounded Use Across Different Entities, application, and Work distinct. A.6.B likewise keeps laws, gates, duties, and evidence-use claims from competing in one “contract” paragraph.
-
-**SoTA source note (informative).** Modern effect systems support the separation between an operation declaration and effectful realization; categorical optics inform explicit preservation claims; and architecture-description practice informs accountable views. A.6.S adopts those limited separations without importing a tool ontology or making a ConstructorSignature mandatory.
+The result keeps viewing, declaration edits, episteme succession, reference retargeting, EntityOfConcern retargeting, application and Work distinct. A.6.B separately recovers the actual law, admissibility, deontic or observation claim hidden by contract wording.
 
 ### A.6.S:11 - SoTA-Echoing
 
 * **Adopt: algebraic effects and effect systems separate operation signatures from handler semantics.**
-  Contemporary effect systems emphasise that an operation signature can be described independently of how effects are handled. A.6.S adopts that separation here: the TargetSignature remains the boundary declaration, while any operation application, construction Work, and operational enforcement remain separately identified. This echoes row-typed algebraic effects and modern handler formulations (Leijen 2017; Hillerström & Lindley 2018).
+  The cited effect-system work describes operation signatures independently of how effects are handled (Leijen 2017; Hillerström & Lindley 2018). A.6.S adopts that separation: a TargetSignature declares the boundary, while operation application, construction Work and operational enforcement retain their own identities and rules.
 
 * **Adapt: categorical optics treat “focus” and “round‑trip laws” as a disciplined interface for bidirectional structure.**
-  Optics offer a compact mathematical language for “what is preserved” under a transformation and when updates are coherent. A.6.S adapts this mindset to boundary evolution: viewing corresponds to projection, and retargeting corresponds to an explicit transition with stated preservation claims. Profunctor optics provide a post‑2015 reference point for this style of interface reasoning (Pickering, Gibbons & Wu 2017).
+  Categorical optics make preservation and round-trip laws explicit for bidirectional structure (Pickering, Gibbons & Wu 2017). A.6.S adapts the practice of stating the laws a constructor use needs. An A.6.3 viewing or A.6.4 retargeting still follows its own rule; this analogy alone establishes neither an optic nor a round-trip law for a particular constructor.
 
 * **Adapt: architecture-description practice relates views to viewpoints and stakeholder concerns.**
   ISO/IEC/IEEE 42010:2022 contributes that discipline. FPF's local adaptation identifies the exact `U.Viewpoint` episteme and tests the selected episteme's `U.View` membership through E.17.0 conformance; a publication face remains the separate form over its source for a bounded reader/use, with membership and A.6.3 construction conditional under §4.4. Any separate `responsibility` or `view-accountability` claim needs its actual participants and governing predicate. A ConstructorSignature is added only when a named receiver reuses the view-producing operation declaration; it is not required to explain how every view was produced.
 
 * **Adopt in spirit: behavioural protocol disciplines treat boundaries as typed interaction protocols with safety commitments.**
-  Session and behavioural type practice treats boundaries as protocols with progress and safety properties, which matches the A.6 split between signature laws and mechanism entry gates. A.6.S does not import tooling or typechecking, but it adopts the practice of making boundary interactions explicit and law‑governed (e.g., modern MPST practice as cited in A.6.1).
+  Session and behavioural type practice treats boundaries as protocols with progress and safety properties, which matches the A.6 split between signature laws and mechanism entry gates. A.6.S does not import tooling or typechecking, but it adopts the practice of making boundary interactions explicit and law‑governed (the MPST sources discussed in A.6.1).
 
 ### A.6.S:12 - Relations
 
@@ -290,7 +286,7 @@ The result keeps viewing, declaration edits, episteme succession, reference reta
   * A.6.B — Boundary Norm Square & Claim Register discipline
   * E.17 and E.17.0 — MVPK and multi‑view describing
 
-* **Coordinates with:** A.6.5 for reused relation-participant or reference operations and A.6.6 for direct base-dependence assertions and optional declaration history; neither vocabulary is mandatory.
+* **Coordinates with:** A.6.5 for a compatible RelationSignature SlotSpec and its designation operations, and A.6.6 for direct base-dependence assertions and optional declaration history. Neither vocabulary is mandatory.
 
 * **Constrains:** a signature-engineering use only where the relevant meaning change, edition, reference retargeting, view, application, or Work claim is current; one distinction does not make the others mandatory.
 

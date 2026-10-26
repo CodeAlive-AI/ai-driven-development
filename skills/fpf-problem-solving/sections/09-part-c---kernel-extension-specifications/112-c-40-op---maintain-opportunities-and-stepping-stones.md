@@ -97,7 +97,7 @@ Ordinary opportunity retention does not require all those practices. A few descr
 
 #### C.40.OP:4.6 - Return a discriminating question and reconsider locally
 
-Name the next question whose plausible answers would retain, narrow, reject, or open a particular opportunity or path. Use the declared receiving policy to consider relevant value, inquiry burden, delay, protections, and uncertainty. Reuse a sufficient partial comparison; no complete ranking is needed merely to state the question.
+When further qualification or revision is needed, name the next question whose plausible answers would retain, narrow, reject, or open a particular opportunity or path. An adequate retained set can be used directly until its reconsideration condition occurs. Use the declared receiving policy to consider relevant value, inquiry burden, delay, protections, and uncertainty. Reuse a sufficient partial comparison; no complete ranking is needed merely to state the question.
 
 If the question becomes “which candidate or probe should we choose now?”, return to the actual local choice or decision-support question. A proposed probe needs its own feasibility, exposure, authority, and execution basis before it becomes recommended or performed. An information request is not that authorization.
 
@@ -159,7 +159,7 @@ Ask what later use justifies retention now, what continuing burden it creates, a
 8. **MUST** distinguish archive retention, current-front membership, live-pool treatment, local choice, and actual Work when those questions occur.
 9. **MUST NOT** force one scalar winner, universal horizon taxonomy, selected programme, or work permission from a retained set.
 10. **MUST** localize changed-premise effects, retire defeated retention claims, and preserve unaffected independent opportunities.
-11. **SHOULD** return the next discriminating question and keep the account no larger than its receiving use requires.
+11. **SHOULD** return a discriminating question when its answer could change a retained opportunity or path, and keep the account no larger than its receiving use requires.
 
 ### C.40.OP:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -168,7 +168,7 @@ Ask what later use justifies retention now, what continuing burden it creates, a
 | Keep only today's best | Later reachability and useful exploration can disappear with a currently weaker candidate. | State the specific retention reason independently of current-front membership. |
 | Keep everything | Retention consumes resources and loses its practical purpose. | Name the later use, cost, reconsideration trigger, and discard condition. |
 | Every step starts from today | Earlier gains are counted again and earlier obligations vanish. | Reconstruct each step from its own inherited configuration. |
-| First in the sequence means enabling | Temporal order is mistaken for a supported stepping-stone relation. | Obtain the exact connection to the later option. |
+| First in the sequence means enabling | Temporal order is mistaken for a supported stepping-stone relation. | Use a qualified connection to the later option, or retain only a candidate stepping stone. |
 | Saved means available | A note is treated as reserved capacity, maintained capability, or permission. | Qualify actual preservation or label the option conditional. |
 | More novelty means expanded possibilities | Visiting a region is mistaken for changing what the generator can admit. | Use C.18's earlier/candidate space and mode claim only when the stronger distinction matters. |
 | C.19 chooses my next probe | Pool treatment is mistaken for a local choice or permission. | Return the actual local decision and the probe's own feasibility and authority question. |

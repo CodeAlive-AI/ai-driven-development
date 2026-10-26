@@ -6,14 +6,14 @@
 
 ### A.1:0 - Use This When
 
-Use this pattern when a project must say what kind of thing is under concern before it can rely on parts, wholes, boundaries, acting systems, roles, methods, work, architecture, or descriptions.
+Use this pattern when a decision depends on whether an entity is a whole with parts, an acting System, or a claim-bearing holon.
 
 Typical moments:
 
-- a team calls everything a "system" and then asks physical or operational questions about theories, documents, models, dashboards, or descriptions;
+- physical or operational abilities are being attributed to a theory or document merely because it is called a system;
 - an episteme is treated as an acting agent that decides, performs work, authorizes, promises, or revises itself;
-- a product, organization, machine, document family, research program, discipline, work occurrence, or model family must be treated as a whole with parts;
-- a list, batch, fleet, pool, clientele, community, or supplier base is expected to act, but no acting system has been constructively recognized;
+- a proposed whole needs an account of its constituents and construction;
+- a collection is expected to act, but no acting system has been constructively recognized;
 - architecture or selected-structure claims need the holon whose structure is being selected.
 
 **Primary EntityOfConcern.** One exact `U.Entity` candidate whose actual construction may or may not satisfy the constructive recognition criterion for one already admitted holon kind.
@@ -29,7 +29,7 @@ Once the exact proposed or observed focus is current, use `A.1.CSD` when the nex
 After recognition, use `A.1.STM` only when the remaining problem is loss of the long dependency from project use through architecture, Work, change, and recursive builders. Otherwise apply the rule that defines or tests the next claim.
 
 
-**What goes wrong if missed.** A document edits itself, a theory gets ports, a list becomes an organization, a lathe that changes a workpiece is treated as its containing whole without an obtaining part-whole relation, and architecture is discussed without naming the holon whose structure is selected.
+**What goes wrong if missed.** A claim attributes revision Work to a document, gives a theory physical ports, or treats a list as an organization. A lathe that changes a workpiece is treated as its containing whole without an obtaining part-whole relation. An architecture claim lacks the holon whose structure is selected.
 
 **What this buys.** FPF gets one compact part-whole foundation without turning every whole into a physical system: identity starts at `U.Entity`; part-whole treatment starts at `U.Holon`; acting work attaches to `U.System`; claim-bearing knowledge is carried by `U.Episteme`; method holonhood is governed by `U.Method`; other admitted holon kinds keep their own subject patterns.
 
@@ -45,7 +45,7 @@ After recognition, use `A.1.STM` only when the remaining problem is loss of the 
 
 ### A.1:1 - Problem Frame
 
-FPF cannot use `system` as its universal root. A pump, theory, software product, legal code, dashboard, research program, work occurrence, discipline, and team can all be objects under concern, but they do not all act, exchange matter, execute methods, or carry physical ports.
+A pump can move water, a theory can carry claims, and a team can coordinate work. FPF needs a referenceable root broad enough for these objects while retaining the different conditions for part-whole, acting and claim-bearing claims.
 
 A.1 separates four questions that are often collapsed:
 
@@ -64,7 +64,7 @@ Without A.1:
 
 1. **System-bias spreads.** Physical and operational assumptions are projected onto epistemes, descriptions, theories, documents, dashboards, and source records.
 2. **Epistemes become agents.** A document, model, theory, pattern, or report is said to decide, promise, authorize, perform work, or revise itself.
-3. **Collections become collectives by wording.** A set of people, services, files, claims, assets, or suppliers is treated as an acting whole without boundary, coordination, system-role assignments, capability, method, or work evidence.
+3. **Collections become collectives by wording.** A collection is treated as an acting whole without establishing its constituent relations, assembly and acting eligibility.
 4. **Transformation becomes containment.** A system that changes another holon is treated as the larger whole containing it, or as standing in a part-whole relation to it, merely from that interaction.
 5. **Architecture loses its grounding holon.** A structure, view, graph, diagram, or architecture claim floats free of the holon whose selected structure is under concern.
 6. **Slot filling creates false kinds.** A system, episteme, holon, relation occurrence, or other value is given a new intrinsic kind merely because it fills one slot of a system-role assignment, evidence, publication, description, or another direct relation.
@@ -126,7 +126,7 @@ Name the already admitted holon kind and its direct kind-specific pattern separa
 
 Exact dated classification work belongs to `A.15.1`. When a reusable typed recognition-evaluation operation is current, `A.6.1` governs its declared arguments and result plus the actual application bindings. The evaluation returns `true` when its governed inputs determine satisfaction, `false` when they determine failure, and `unknown` when missing evidence or an unavailable dependency prevents either determination. `unknown` is an evaluation result, not a third candidate state: the same candidate can satisfy or fail the criterion while the current evaluation remains unable to determine which.
 
-When another use must inspect or cite the judgment, identify an optional C.2.1 classification-assertion or evaluation-result episteme whose exact EntityOfConcern is the candidate. Its claim content names the admitted kind, the A.1 criterion, the constituent and part-relation facts, reidentification rule, whole-level characteristic, candidate-side compatibility facts, exact construction-method-or-rule episteme, evaluation frame, and `true | false | unknown` judgment needed by that use.
+When another use must inspect or cite the judgment, identify an optional C.2.1 classification-assertion or evaluation-result episteme whose EntityOfConcern is the candidate. Its claim content names the admitted kind, the A.1 criterion, the constituent and part-relation facts, reidentification rule, whole-level characteristic, candidate-side compatibility facts, construction method or rule and its applicable conditions, evaluation frame, and `true | false | unknown` judgment needed by that use.
 
 A person or system performing the receiving work separately decides whether to rely, decline to rely, defer, or reopen. Exact evidence and assurance relations support or warrant assertion claim content. Use G.11 to test whether the selected assertion edition is current. `B.2` addresses the different question whether the existing whole is no longer the right EntityOfConcern for a receiving use. A.1 satisfaction, failure, or evaluation uncertainty supplies neither warrant for a B.2 claim nor grounds for selecting B.2.
 
@@ -144,7 +144,7 @@ Current accepted holon-kind examples are:
 - `U.Discipline`, defined in `C.20` as a field-level practice-and-knowledge holon;
 - `U.Method`, defined in `A.3.1`, with method-composition patterns such as `B.1.5` defining how submethods compose into a whole method across levels.
 
-A project-local holon classification names its concrete C.3 `U.Kind`, the A.1 criterion, any kind-specific criterion, and the direct patterns for the construction facts it uses. A proposed public `U.*` holon kind first passes `E.24.UK` and gains one subject pattern. Neither route may rely on part-whole, architecture, system-role-kind classification or assignment, work, evidence, or source-use claims before the candidate-side criterion is recoverable.
+A project-local holon classification names its concrete C.3 `U.Kind`, the A.1 criterion, any kind-specific criterion, and the direct patterns for the construction facts it uses. A proposed public `U.*` holon kind first passes `E.24.UK` and gains one subject pattern. Before relying on a claim that depends on the candidate being a holon, recover its candidate-side criterion.
 
 Candidate recognition is decided by the six candidate-side constructive components in A.1:4.2, not by agentivity, wording, evidence availability, or a B.2 whole-reidentification result. Grounding work selects the participating objects from the surrounding practice or world, fixes their boundaries, identifies constituents and exact part relations, recovers the assembly and reidentification rule, and tests the resulting whole-level characteristic and larger-assembly compatibility. Relations may arrange, constrain, assign, qualify, or describe constituents; those relations do not become constituents by that fact.
 
@@ -189,11 +189,11 @@ A Markov blanket is not a holon boundary by name. First recover whether the sour
 
 #### A.1:4.7 - Collections, Collection-As-Whole, And Acting Collectives
 
-A list, set, batch, fleet, pool, clientele, community, supplier base, or coverage zone does not become a `U.System` by wording.
+A collection becomes a recognized `U.System` only when it satisfies the constructive and acting-eligibility conditions below.
 
-First recover the current claim: who or what belongs to which collection under the collection's own rule and A.14; a possible holon under the complete six-part A.1 test; a `C.13 set` account of already established belonging; optional B.3.5 assurance; a whole-level characteristic under C.16; an acting collective under the `U.System` criterion plus A.15.1 Work; or whole reidentification under B.2.
+Start with the claim needed by the task. Use the collection's own rule and A.14 for membership; the complete six-part A.1 test for a possible holon; and the additional acting-eligibility condition for a collective System. Use C.13 for a construction account of already established belonging, C.16 for a whole-level characteristic, and B.3.5 only for a named assurance use. B.2 addresses the separate whole-reidentification question.
 
-An acting collective `U.System` has a boundary, coordination, system-role assignments, capability or method evidence, and work-facing participation. If those are not current, keep the object as a collection or collection-as-whole claim under subject patterns.
+An acting collective must satisfy all six A.1 components and have an actual physical or operational organization through which it can causally participate in work or transformation while preserving its identity. Assignment, capability, method and performed-Work claims require their own bases under the direct patterns in section 4.4. If only collection membership is established, state that collection claim; if missing evidence prevents a requested System classification, the evaluation result is `unknown` under section 4.2.
 
 #### A.1:4.8 - Constructional Grounding
 
@@ -359,7 +359,7 @@ A.1 draws on current constructional-ontology, applied-foundational-ontology, and
 
 For the Pump #37 and scientific-theory cases in A.1:5, the practical consequence is the same: recover the candidate and its subject-side construction first; use a governed method or rule only to test larger-assembly compatibility; keep evaluation, evidence, assertion, description, and publication as separately governed neighboring objects.
 
-Treat a stronger source as current only when it changes the root split among `U.Entity`, `U.Holon`, `U.System`, admitted holon kinds, delimitation, boundary crossing, or publication-form separation. A new tool, notation, or diagram style is not enough unless it changes that ontology-side claim.
+
 
 ### A.1:12 - Relations
 

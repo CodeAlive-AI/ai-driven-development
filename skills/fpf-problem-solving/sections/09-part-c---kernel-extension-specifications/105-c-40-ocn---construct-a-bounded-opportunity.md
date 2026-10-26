@@ -34,7 +34,7 @@ A promising means can be mistaken for a worthwhile result, and a plausible direc
 
 ### C.40.OCN:4 - Solution
 
-The Method identified under [A.3.1](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a31---umethod-reusable-way-of-doing-with-explicit-applicability) is: construct a bounded opportunity by relating possible later Work to neighboring uses and technologies, distinguishing a useful problem from an offered promise, constructing materially different directions and supports, qualifying their dependencies, and returning the strongest supported reachability claim and next question.
+Construct a bounded opportunity by relating possible later Work to neighboring uses and technologies, distinguishing a useful problem from an offered promise, constructing materially different directions and supports, qualifying their dependencies, and returning the strongest supported reachability claim and next question.
 
 Its generic participants are the person or arrangement conducting the inquiry, the developing holder or subject, possible receivers or users of the later contribution, and sources or suppliers of material premises. They are Method-side meanings, not actual assignments or Work participants. The inquiry performer may also be the subject of the proposed change; no distinct recommendation recipient is an applicability condition.
 
@@ -60,7 +60,7 @@ Do not demand a fully specified goal before discovery. “Explore a useful contr
 
 A small reversible inquiry may use a few relevant source checks and conversations. A consequential commitment will need much stronger domain evidence, but that is not a reason to manufacture certainty during opportunity construction.
 
-The six working sections unfold one reusable way. They express information dependencies and permit iteration; they do not impose a schedule. Return to the earliest changed claim, not automatically to the beginning.
+The following operations develop the opportunity. They express information dependencies and permit iteration; they do not impose a schedule. Return to the earliest changed claim, not automatically to the beginning.
 
 The independently usable opportunity Methods supply the missing contributions: C.40.OI bounds the inquiry, C.40.OC characterizes its subject, C.40.NU searches, C.40.PC constructs the problem and contribution, C.40.DC constructs directions, C.40.JF qualifies joint reachability, C.40.OP retains useful continuations and C.40.RQ requalifies change. Enter at the missing result; an adequate existing contribution need not be reconstructed. The connections below explain how their results form one opportunity account.
 
@@ -119,7 +119,7 @@ A direction should say more than “train,” “buy,” “automate” or “hi
 
 Use C.40.DC to construct materially different directions and their support configurations. Obtain qualified holder, organization, AI and other subject results through A.15.9 for what the proposed changes would require. After one result/use/acceptance premise is stable, an applicable organizational Method can compare whole organizational obtaining arrangements. Before that point, forcing every lead into the same-result comparison would conceal the still-open opportunity question.
 
-Retain the obtaining baseline, a smaller repair, a staged direction or no change when they genuinely answer the inquiry. Do not count a fragment as a complete direction merely to populate a table, and do not discard a potentially useful contribution only because its supporting arrangement is not yet designed.
+Retain the obtaining baseline, a smaller repair, a staged direction or no change when they answer the inquiry. Do not count a fragment as a complete direction merely to populate a table, and do not discard a potentially useful contribution only because its supporting arrangement is not yet designed.
 
 
 
@@ -202,7 +202,7 @@ Assurance asks whether each value and reachability claim follows from sources qu
 
 #### C.40.OCN:5.1 - A new model without a settled problem
 
-This is a constructed example of the Method, not a report about an actual model, organization or performed Work. Its source packet stipulates the bounded facts described below; absent facts remain absent.
+This constructed example assumes the bounded facts below. It reports no actual model, organization or performed Work; missing facts remain unknown.
 
 An engineering-services unit hears that a new model can process long technical records. No accepted development problem or target result has been selected. The inquiry concerns useful contributions to engineering handoffs within ninety days, under confidential-data, independent-acceptance and continuing-service conditions. Buying or deploying the model is not the inquiry's objective.
 
@@ -234,7 +234,7 @@ A small archive is optional. If the unit retains these candidates for later inqu
 
 #### C.40.OCN:5.2 - A person exploring future engineering work
 
-This is another prospective, constructed use. An engineer wants to explore a useful next contribution within four months without asking an external adviser for a recommendation. The holder is the person. The inquiry's source packet distinguishes two prospective Work families: technical evidence review and coordination of cross-discipline interface questions. No future assignment, promotion or learning effect is assumed.
+This is another prospective, constructed use. An engineer wants to explore a useful next contribution within four months without asking an external adviser for a recommendation. The holder is the person. The example distinguishes two prospective Work families: technical evidence review and coordination of cross-discipline interface questions. No future assignment, promotion or learning effect is assumed.
 
 The person searches neighboring applications of their technical experience, different characteristics of contribution and possible supports. Evidence review could emphasize identifying mismatches between claims and tests; interface coordination could emphasize recovering incompatible assumptions between specialists. The first is not renamed as the second merely because both involve reading documents.
 
@@ -294,7 +294,7 @@ The working question is how to construct a useful possibility before the target 
 
 Keeney's older generation anchor informs explicit value questions; the human career framework informs that branch's alternatives and information qualification. C.18 governs any archive/front and possibility-space claim. These contributions are not interchangeable and do not, separately or together, prove practical reachability for an actual holder.
 
-The substantive addition here is the complete prospective construction: from neighboring-use search through a worthwhile problem and proposed contribution to support dependencies, bounded reachability and a discriminating return. An archive-only approach preserves candidates but still needs a generator and domain facts. A same-result arrangement Method is powerful after its result premise is stable; it cannot substitute for this earlier question. Conversely, once the opportunity question is settled, this Method should stop and let the exact next owner work.
+The prospective construction connects neighboring-use search, a worthwhile problem and proposed contribution, support dependencies, bounded reachability and a discriminating return. An archive-only approach preserves candidates but still needs a generator and domain facts. A same-result arrangement Method is powerful after its result premise is stable; it cannot substitute for this earlier question. Conversely, once the opportunity question is settled, this Method should stop and let the exact next owner work.
 
 What changes in practice is concrete: “we should develop in this promising area” becomes a candidate contribution whose value, dependencies and next question can be inspected. The account can preserve a worthwhile possibility while refusing an unsupported reachability or advice claim.
 

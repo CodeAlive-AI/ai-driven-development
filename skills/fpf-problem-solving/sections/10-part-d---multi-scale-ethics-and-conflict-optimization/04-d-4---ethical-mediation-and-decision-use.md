@@ -2,32 +2,32 @@
 
 > **Type:** D-family ethical mediation and decision-use pattern
 > **Status:** Stable
-> **Pattern role:** Develop and compare ways to act when an ethical conflict has already been described; return a recommendation, conditional continuation, refusal or impasse.
 
-**Use this when.** Use this pattern when an `InterlevelEthicalConflictDescription` from `D.3` must support mediation, refusal, a decision, an evidence demand, or a return to causal, assurance, or architecture work.
+
+**Use this when.** Use this pattern when you need to develop and assess ways of responding to a described ethical conflict.
 
 **Not this pattern when.** If the conflict has not yet been described, use `D.3`. If the issue is only value plurality, use `D.1`. If the issue is only entry recognition, use `D.2`. If the current work is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** Naming the conflict or filling in a decision record replaces the work of developing options and judging what each would require or change.
 
-**What this buys.** The practitioner can compare available ways to act, recognize a useful change to the proposed means, and explain a recommendation or why the choice remains unresolved. Evidence, causal, assurance, architecture and bias-audit claims keep their own subject methods.
+**What this buys.** The practitioner can compare available ways to act, recognize a useful change to the proposed means, and explain a recommendation or why the choice remains unresolved.
 
 ### D.4:1 - Problem Frame
 
 Once an interlevel ethical conflict is visible, the next risk is premature closure. A team may declare a compromise before evidence is sufficient, turn an assurance input into ethical permission, use one level's value as a trump card, or hide a refusal behind technical language.
 
-`D.4` guides one use of the conflict described by D.3. It does not make FPF a final moral authority. It asks what move is admissible from the current description and what must return to evidence, causality, assurance, architecture, decision, or value framing before action is justified.
+From the current conflict account, ask which continuations can be justified and what remains to be established. Use the subject method for any missing basis.
 
 ### D.4:1.0 - Problem
 
-A described ethical conflict can still be used badly. The failure is to treat its description, an assurance input, a formula, or an architecture return as if it already selected a compromise, refusal, evidence demand, accepted residual, or bounded decision use.
+Describing the conflict does not develop or compare ways of responding to it. Evidence and formal comparisons contribute to that judgement only within their stated scope.
 
 ### D.4:1.1 - Forces
 
 | Force | Tension |
 | --- | --- |
 | Described conflict vs. premature closure | A conflict description makes action discussable, but does not by itself decide compromise, refusal, or permission. |
-| Evidence demand vs. decision pressure | Work may need a decision, while the ethical claim still needs stronger evidence, causal analysis, assurance, or architecture return. |
+| Evidence demand vs. decision pressure | The decision may be time-sensitive while a claim it relies on still lacks the required support. |
 | Mediation vs. universal authority | D.4 can guide one bounded use of a described conflict, but cannot become a general decision theory. |
 | Residual acceptance vs. hidden harm | Proceeding under residual harm can be admissible only when residuals, the admitted Systems involved, prospective plans or assignment requirements, direct responsibility relations or exact missing governors, and return conditions are explicit. When the account asserts performed work, identify that occurrence and its performer; add assignment attribution when that claim is made. |
 | Mathematical allocation vs. ethical decision | A formula or optimization can inform a decision, but it is not the ethical decision by itself. |
@@ -98,7 +98,6 @@ EthicalMediationDecisionUse:
   strongerSourceReturnCondition?
 ```
 
-The record names the current ethical use of the conflict: mediate, refuse, continue under explicit residual, demand evidence, ask a causal question, ask for assurance, return to architecture, or make a bounded decision.
 
 Name the affected EntityOfConcern and any affected Systems, the value-frame editions, the decision question and options, and the intended decision or Work use. Add ClaimScope and a qualification window when they delimit that use. State the proposed mediation or refusal and any accepted residuals. If evidence, causal adequacy, assurance, architecture residuals, responsibility, permission, or actual Work remains unresolved, return only that question to the pattern that defines it. These values delimit the mediation; a generic context field does not.
 
@@ -113,7 +112,7 @@ Name the affected EntityOfConcern and any affected Systems, the value-frame edit
 | Architecture move reduces one residual but creates ethical conflict elsewhere. | Return the architecture residual and keep the ethical conflict distinct. | `C.30.ILC`, `D.3` |
 | A decision must proceed with residual harm. | Record the accepted residual, admitted decision or repair Systems, prospective plan, commitment, permission, authority, or assignment requirements, direct responsibility relations or exact missing governors, evidence limits, and return condition. If Work has actually occurred, recover each precise performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when the decision account also needs exact assignment-bound attribution. | `C.11`, `B.3`, `D.5`, A.2.1, A.13, A.15.1, and F.6 as applicable |
 
-When the basis required for a particular claim cannot be obtained, that claim remains unsupported. A narrower recommendation or decision must satisfy its own evidence, ethical and authority conditions. Preserve an accepted residual where it changes the use; an inactive inquiry creates no separate omission account.
+When the basis required for a particular claim cannot be obtained, that claim remains unsupported. A narrower recommendation or decision must satisfy its own evidence, ethical and authority conditions. Preserve an accepted residual where it changes the use.
 
 ### D.4:4 - Archetypal Grounding (Worked Slices)
 
@@ -150,7 +149,7 @@ If a newly identified consequence can reverse that preference, or the intended u
 
 `D.4` does not define the conflict description, bias audit, ethical assurance, architecture residual, causal identification, evidence provenance, or decision theory in general. It defines one ethical use of a conflict already described by D.3.
 
-Do not name a mediation move "calculus" unless a mathematical lens is selected and the lens is actually doing work. Do not name a mediation move "operator" unless the current pattern explicitly governs an operation. Most D.4 use concerns a practical recommendation or decision. A mathematical representation can support that comparison; its premises and result still need their ethical interpretation.
+Use a mathematical representation when its operations improve the comparison. Explain its premises and interpret its result under the ethical value frames.
 
 ### D.4:5.1 - Bias-Annotation
 
@@ -158,7 +157,7 @@ Do not name a mediation move "calculus" unless a mathematical lens is selected a
 | --- | --- | --- |
 | Conflict description becomes decision | A D.3 description is treated as if it already selected an action. | Name the D.4 move and its admissible use. |
 | Assurance becomes permission | Technical assurance is read as ethical authorization. | Keep assurance as an assurance or evidence relation and record the ethical use separately. |
-| Formula becomes ethics | Allocation, optimization, or scoring is treated as the ethical decision. | Use `C.29` for the mathematical lens; use D.4 to record the bounded ethical use without making the pattern an agent or responsible party. |
+| Formula becomes ethics | Allocation, optimization, or scoring is treated as the ethical decision. | Use `C.29` for the representation; explain how its result informs the ethical comparison under D.4. |
 | Residual harm disappears | Action proceeds while residuals, admitted decision or repair Systems, and direct responsibility relations stay unnamed. | Name accepted residuals, prospective plans, commitments, permissions, authority and assignment requirements, the admitted direct responsibility predicates or exact missing governors, evidence limits, and return condition. Identify actual Work and its performer when performance is claimed; add assignment-bound attribution when that further claim is made. |
 
 ### D.4:6 - Conformance Checklist
@@ -181,13 +180,11 @@ Do not name a mediation move "calculus" unless a mathematical lens is selected a
 
 ### D.4:7 - Consequences
 
-This pattern makes ethical action reviewable without pretending that every conflict has a clean optimum. It preserves refusal, evidence demand, and residual acceptance as first-class outcomes. It also prevents architecture, assurance, or causal evidence from quietly becoming moral permission.
+A recommendation can be reviewed against its value premises, alternatives and remaining concerns. Refusal, a justified evidence request and acceptance of an explicit residual remain possible outcomes.
 
 ### D.4:9 - Rationale
 
-`D.4` exists because an inspectable ethical conflict still needs a bounded use. Some uses stop work. Some demand evidence. Some return to causal, assurance, or architecture patterns. Some proceed under an accepted residual with named responsibility and return conditions. Without this pattern, teams either freeze because conflict exists or move too fast because the conflict was mapped once.
-
-The pattern keeps refusal, evidence demand, and residual acceptance visible as ordinary outcomes. It also prevents formulas, assurance labels, architecture residual repairs, or causal claims from silently becoming moral authorization.
+Recognizing a conflict leaves a practical question: what can be done under the stated value premises and available conditions? Developing alternatives can change the means that created the conflict, while comparison can justify a bounded recommendation or show why the choice remains unresolved.
 
 ### D.4:10 - SoTA-Echoing
 
@@ -199,7 +196,7 @@ For **deciding how much investigation this mediation needs**, **adopt** C.11.DUA
 
 ### D.4:11 - Relations
 
-- Builds on `D.3` for the exact conflict-description episteme used by this mediation or decision.
+- Uses `D.3` to recover the conflict and its sides; identify the description episteme when the receiving use needs that reference.
 - Coordinates with `D.1` and `D.2` when value frame or multilevel entry is incomplete.
 - Coordinates with `D.5` when bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance is current.
 - Coordinates with `A.10`, `B.3`, `C.11`, `C.11.DUA`, `C.28`, `C.29`, and `C.30.ILC` when evidence, assurance, choice, inquiry value, causal, mathematical-lens, or architecture-residual questions are current.

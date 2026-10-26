@@ -98,17 +98,17 @@ The earlier repair makes this problem attainable: it provides a demonstrated los
 
 ### C.40.NP:6 - Bias-Annotation
 
-A successful exercise can anchor the next undertaking, while a programme owner can invent novelty to retain work. Compare the acquired possibility, a useful ordinary continuation and a genuine stop. An unfamiliar case is not automatically a new problem class; show what operation or understanding must grow.
+A successful exercise can anchor the next undertaking, while a programme owner can invent novelty to retain work. Compare the acquired possibility, a useful ordinary continuation and a stop. An unfamiliar case is not automatically a new problem class; show what operation or understanding must grow.
 
 ### C.40.NP:7 - Conformance Checklist
 
 - The prior result and its qualification are stated.
-- The changed starting position makes a particular further question or result attainable.
-- The continuation is worthwhile relative to its complete burden and retained obligations.
+- An attainable continuation is grounded in the changed starting position and a supported next contribution; a retained possibility keeps any unresolved condition explicit.
+- Any selected continuation is worthwhile relative to its complete burden and retained obligations.
 - Reuse, transfer and improvement of the developing means remain distinct.
 - Independent carriers retain their own ends and consent.
 - Changed criteria do not silently rewrite the earlier comparison.
-- The return permits an honest stop and makes no claim of infinite future performance.
+- The return permits a justified stop and makes no claim of infinite future performance.
 
 ### C.40.NP:8 - Common Anti-Patterns and How to Avoid Them
 

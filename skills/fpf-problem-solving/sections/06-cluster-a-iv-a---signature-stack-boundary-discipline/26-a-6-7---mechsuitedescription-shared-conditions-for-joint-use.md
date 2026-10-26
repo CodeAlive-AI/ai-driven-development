@@ -10,7 +10,7 @@
 
 **Not this pattern when.** Use A.6.1 for one operation declaration, A.3.1 for a way of doing, and A.15.2 for an ordinary plan or edition baseline. A suite is useful only when several declarations have joint conditions to express.
 
-A `MechSuiteDescription` is a Kernel **Description** token that names a **set of distinct** `U.Mechanism` (different declaration contracts, not different realizations of one contract) and declares **suite-level obligations**, **required spec pins**, and any **allowed usage protocols**, without conflating this with `MechFamilyDescription` or with publication `Pack`s.
+A `MechSuiteDescription` describes a finite set of distinct mechanism declaration contracts, their shared obligations, required specification references and permitted protocols. Two realizations of one contract remain one member. The description is distinct from a MechFamilyDescription and a publication Pack.
 
 **Plain-name.** mechanism suite description; mechanism suite passport.
 
@@ -36,7 +36,7 @@ Lexical note: do **not** prefix this token with `U.`. The `U.*` namespace is for
 
 ### A.6.7:1 - Problem frame
 
-In FPF, a **mechanism** is a node-level `U.Mechanism` with explicit argument and result declarations for each operation and a declared LawSet/guards/transport/audit (A.6.1). Many architectures, however, require **a stable bundle of multiple different mechanisms** that are intended to be used together under shared admissibility and crossing discipline (e.g., a characterization chain, an admissibility-gated selection pipeline, or a universal Part-G kernel that multiple `G.*` patterns must reuse).
+An A.6.1 `U.Mechanism` declares its operations, arguments, results, laws, guards and any transport or audit conditions. Some architectures need several distinct declarations to be used together under shared conditions: for example, a characterization chain or an admissibility-gated selection protocol. The suite description states those joint conditions without redefining the member operations.
 
 FPF already has `MechFamilyDescription`, but its meaning is: **many realizations of one and the same `U.Mechanism`**. That construct cannot correctly represent a bundle of different mechanisms (different declarations), and trying to overload it creates a level error.
 
@@ -52,8 +52,8 @@ The suite user needs one description that can:
 4. constrain **allowed protocols** of use (allowed pipelines / permitted ordering), without turning the suite into a mechanism, and
 5. preserve strict distinction among:
 
-   * a suite of mechanisms (`MechSuiteDescription`),
-   * a family of realizations of one mechanism (`MechFamilyDescription`),
+   * a description of several distinct mechanism contracts (`MechSuiteDescription`),
+   * a description of realizations of one contract (`MechFamilyDescription`),
    * a publication bundle (`Pack`, e.g., G.10).
 
 ### A.6.7:3 - Forces
@@ -75,17 +75,14 @@ The suite user needs one description that can:
 5. **Guard vs gate separation.**
    Mechanisms can output tri-state guard outcomes and explanations; **gate decisions** (including `block`) and `DecisionLog` remain gate-level (`OperationalGate(profile)`). A suite must not collapse these layers.
 
-6. **FPF is conceptual.**
-   The suite is a conceptual descriptor: no implementation fields, no “lint rules”, no machine governance. The suite expresses obligations as conceptual constraints and required pins/anchors.
+6. **Description and actual use.**
+   Shared conditions constrain later use; they are not that use or its results. Implementation references may be cited under their own rules, while member declarations retain the operation semantics.
 
 ### A.6.7:4 - Solution
 
 Declare the members and their shared conditions in a `MechSuiteDescription`:
 
-
-
 #### A.6.7:4.1 - `MechSuiteDescription` (data model)
-
 
 `MechSuiteDescription` declares:
 
@@ -95,7 +92,7 @@ Declare the members and their shared conditions in a `MechSuiteDescription`:
 4. **Suite spec pins:** required citations/pins to governing spec refs and other “anchor” references.
 5. **Suite protocols:** allowed pipelines of use (permitted ordering and optional steps), expressed at the descriptive level.
 6. **Suite audit obligations:** required audit/pin visibility for downstream uses (UTS/Path pins, crossing pins, guard pins), expressed as required anchors (not run-time values).
-7. **Notes:** didactic boundaries and anti-pattern warnings.
+7. **Notes:** optional explanations or boundaries needed to interpret or use the suite.
 
 A minimal canonical form:
 
@@ -147,11 +144,11 @@ MechSuiteDescription := ⟨
 * **WF‑MS‑4 (Suite ≠ Mechanism).** `MechSuiteDescription` contains no `OperationAlgebra`/`LawSet`/execution semantics and is not admissible where a `U.Mechanism.*` node is required.
 
 * **Membership is by exact declaration (order-free).**
-  `mechanisms` MUST denote a duplicates-free set of distinct `U.Mechanism` members. Membership order has no semantics; any intended ordering is expressed only in `suite_protocols`. A suite is defined by selected operation declarations and suite protocols.
+  `mechanisms` MUST resolve to a duplicates-free set of member declaration epistemes. Membership order has no semantics; intended ordering belongs in `suite_protocols`. Shared conditions and selected operations determine which joint uses the description permits.
 
 **Declaration reference and edition selection.** `MechanismDeclarationRef` is a reference to an independently identified A.6.1 `U.Mechanism` episteme, not a new kind. Resolve it under the effective reference scheme to its content and EntityOfConcern. The published edition used for that resolution must be explicit or uniquely determined by the cited suite baseline. When several editions qualify, state a selection condition that yields one before using a protocol step; otherwise return the unresolved alternatives. There is no implicit latest.
 
-Changing declaration content, EntityOfConcern or effective reference scheme follows A.6.1/C.2.1 identity. Changing a carrier, layout or citation alone can leave the member unchanged. A changed guard or argument selects a different declaration contract and requires the affected protocol bindings to be checked again. A claim that two declarations concern the same operation family needs that subject's own identity rule; suite membership does not establish it. Distinct declaration contracts can be selected without inventing a universal operation-family kind.
+Changing declaration content, EntityOfConcern or effective reference scheme follows A.6.1/C.2.1 identity. Changing a carrier, layout or citation alone can leave the member unchanged. A changed guard or argument selects a different declaration contract and requires the affected protocol bindings to be checked again. A claim that two declarations concern the same operation family needs that subject's own identity rule; suite membership does not establish it. Distinct declaration contracts can be selected without inventing a universal operation-family kind. A change to a shared specification or policy similarly reopens the steps and downstream results that depend on it. Reuse unaffected conditions and results when their grounds still hold.
 
 * **No substitution by `MechFamilyDescription`.**
   A suite MUST NOT be encoded as a `MechFamilyDescription`.
@@ -163,12 +160,9 @@ Changing declaration content, EntityOfConcern or effective reference scheme foll
 * **No mechanism semantics in the suite.**
   A suite is a **Description**, not a mechanism: it does not define `OperationAlgebra` and does not absorb gate logic.
 
-
-
 #### A.6.7:4.2 - SuiteObligations (canonical obligation vocabulary)
 
-
-`MechSuiteDescription` MAY declare any obligations. The canonical names in §4.1 support reuse across Part G and admissibility-gated characterization stacks; they are not an exhaustive inventory.
+A MechSuiteDescription may state additional shared obligations within the member contracts and applicable FPF rules. The names in §4.1 are reusable examples, not an exhaustive inventory.
 
 `SuiteObligations` SHOULD be written as an explicit, duplicates-free clause set. Select applicable clauses from the canonical vocabulary in §4.1 and state any additional obligations explicitly. The requirements below remain applicable under their stated conditions.
 
@@ -197,7 +191,7 @@ Changing declaration content, EntityOfConcern or effective reference scheme foll
    Well-formedness constraint: `USM.CompareGuard` and `USM.LaunchGuard` denote gate-owned guard events/pins; member mechanisms and suite protocols use `…Admissibility` / `…Eligibility` for guard predicates, not the reserved gate lexemes.
 
 6. **`cg_spec_cite_required_for_numeric_ops`.**
-   Well-formedness constraint: any member operation that performs numeric comparison/aggregation/admissibility-sensitive scoring cites the applicable `CG-Spec` (and relevant subrefs) as spec pins, rather than embedding equivalent local admissibility content.
+   For a suite whose numeric comparison, aggregation or scoring is admissibility-gated under CG-Spec, the relevant member operations cite that specification and its needed subrefs. Keep the admissibility content in the specification; a suite does not create a second local version.
 
 7. **`no_silent_scalarisation_of_partial_orders` and `no_silent_totalisation`.**
    Well-formedness constraint: if a member mechanism induces a partial order, it preserves set-/relation-valued semantics; it does not silently reduce to a scalar/total order. Any totalization is explicit and policy-bound.
@@ -216,10 +210,7 @@ Changing declaration content, EntityOfConcern or effective reference scheme foll
 11. **`finalize_launch_values_in_work_enactment_only`.**
    Well-formedness constraint: `FinalizeLaunchValues` (and any witness of actual launch values) occurs only in `U.WorkEnactment`; neither the suite nor any planned-baseline WorkPlanning plan item is a place for launch values.
 
-
-
 #### A.6.7:4.3 - SuiteSpecPins
-
 
 A `MechSuiteDescription` MUST be able to declare required spec pins as references, not as duplicated content. Canonically:
 
@@ -239,10 +230,7 @@ SuiteSpecPins := ⟨
 * A suite may require an edition/reference baseline in ordinary A.15.2 WorkPlan content. Address it through the exact plan and its local content locator; it supplies no launch value or gate decision.
 * Use A.15.3 typed planned filling only when an existing declaration member independently supplies the position meaning, designation, cardinality and actual-use predicate. A suite Description field is not a SlotSpec or operation argument merely because a plan names it. Missing planned information can remain unknown in the plan; a missing governor requires recovery or definition of that member before typed filling. Actual launch bindings and any FinalizeLaunchValues witness remain with actual enactment.
 
-
-
 #### A.6.7:4.4 - SuiteProtocols
-
 
 A suite MAY describe allowed protocols (pipelines) as descriptive constraints on how suite members are intended to be composed. A `SuiteProtocol` describes the member-operation sequence. Its description:
 
@@ -268,10 +256,7 @@ ProtocolStep := ⟨
 ⟩
 ```
 
-
-
 #### A.6.7:4.5 - SuiteAuditObligations
-
 
 A suite MAY require that downstream use provide certain audit anchors. These are **requirements**, not run-time values. A suite audit obligation MAY include:
 
@@ -285,10 +270,7 @@ A suite MAY require that downstream use provide certain audit anchors. These are
 
 **Norm.** A suite must never publish a `DecisionLog` or `GateDecision`. If the suite requires guard pins, it requires their **presence** as anchors so that the gate-level owner can aggregate `GuardFail`s and decide `degrade|block` per gate profile.
 
-
-
 #### A.6.7:4.6 - Examples
-
 
 **Example 1 — compare two offers and retain the nondominated set.** The question is whether either offer can be discarded without accepting a worse cost or quality. This is a stipulated mathematical use; the following specifications and applications are case facts, not empirical measurements or dated Work claims.
 
@@ -419,19 +401,19 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 5. **Anti-pattern: “Implicit calls”.**
    A protocol implies “normalize happens somewhere” without explicit member and pin visibility.
-   **Fix:** protocols enumerate steps and required pins; E.18 `Uses` edges remain explicit.
+   **Fix:** identify the selected member operations and required pins. When an E.18 flow structure is independently selected, keep its Uses edges explicit too.
 
 ### A.6.7:9 - Consequences
 
 **Benefits.**
 
 * Eliminates level confusion between “family of realizations” vs “bundle of mechanisms”.
-* Provides a Kernel governing pattern for universal obligations reused across multiple patterns (notably Part G universalization).
+* Lets several protocols reuse one identified set of shared conditions.
 * Makes admissibility/transport/audit obligations shared and explicit, reducing semantic drift across member mechanisms.
 
 **Costs.**
 
-* Introduces an additional `MechSuiteDescription` publication that must be maintained as suites evolve.
+* Adds a description that must be maintained when its member contracts or shared conditions change. Publication is needed only when the receiving use requires it.
 * Requires discipline: suites must remain descriptive and must not become “meta-mechanisms” or “hidden gates”.
 
 ### A.6.7:10 - Rationale
@@ -447,7 +429,7 @@ Encoding this unity as “one mechanism” or “one family” forces false comm
 
 ### A.6.7:11 - SoTA-Echoing
 
-**Question and selected answer.** How can a practitioner reuse several operation contracts under one set of conditions without selecting an implementation prematurely? For this question, **adapt** the explicit process-reference, input/output and requirement separation in [CWL Workflow v1.2.1, §3.3 and §4.3](https://www.commonwl.org/v1.2/Workflow.html#WorkflowStep). Its [abstract Operation](https://www.commonwl.org/v1.2/Workflow.html#Operation) describes inputs and outputs before binding a concrete process. This is the best-known-line candidate for declaration-first composition here; it does not establish FPF admissibility or operation identity.
+**Question and selected answer.** How can a practitioner reuse several operation contracts under one set of conditions without selecting an implementation prematurely? For this question, **adapt** the explicit process-reference, input/output and requirement separation in [CWL Workflow v1.2.1, §3.3 and §4.3](https://www.commonwl.org/v1.2/Workflow.html#WorkflowStep). Its [abstract Operation](https://www.commonwl.org/v1.2/Workflow.html#Operation) describes inputs and outputs before binding a concrete process. This supplies a declaration-first composition comparison; FPF admissibility and operation identity retain their own rules.
 
 **Serious alternative.** A pinned executable pipeline is preferable when the task is already to fit and run compatible estimators. [scikit-learn 1.9.1 Pipeline, `steps`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) exposes named estimator steps; each has fit, and intermediate steps have transform. It is a substantive composition alternative, not evidence that every characterization contract should have that interface.
 
@@ -460,7 +442,7 @@ This choice is expressed in §4.1's exact declaration/edition resolution, §4.4'
 * **Relates to A.6.1:** suite members are `U.Mechanism`; the suite does not replace the mechanism definition.
 * **Relates to A.6.5:** member operation declarations retain A.6.1 argument/result meanings, ValueKinds and binding rules. A.6.5 applies only where a cited `RelationSignature` independently declares participant SlotSpecs; there SlotKind stability, correct refMode and non-semantic SlotIndex remain required.
 * **Relates to E.18 / P2W:** suite protocols describe intended composition; use E.18 for the selected transformation-flow structure and its crossings, and E.18.1 for P2W carry-through.
-* **Suite conformance:** Suite-level conformance uses the conceptual checklist in §7; suites require pins/anchors rather than procedural validation.
+* **Suite conformance:** use §7 for the applicable requirements. Resolve required references and check the content and facts those requirements consume; a pin's presence alone does not establish conformance.
 * **Relates to G.10:** suites are not packs; G.10 handles shipping of Part-G outputs as a SoTA pack, while E.17 publishes reader-facing forms of an already accepted engineering account.
 
 ### A.6.7:End

@@ -1,14 +1,7 @@
 ## E.10.D2 - EntityOfConcern, Description Episteme, and Specification-Use Discipline
 > **Status:** Stable
-
-*Definitional pattern - normative, notation-agnostic*
-
-> **One-sentence summary.** Start from the exact work, decision, or other receiving use; recover the description episteme through C.2.1's exact `<ClaimGraph, EntityOfConcern, effective ReferenceScheme>` constitution; and add specification, viewpoint, view, model-use, evidence, publication, carrier, or representation machinery only when that receiving use depends on its separately governed relation.
-
-**Type:** Definitional pattern.
-**Builds on:** A.7 **Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice)**; C.2.1 **Episteme Identity, Constitution, Grounding, and Edition**; A.2.6 **Claim Scope**; A.1.1 **Bounded Model-Use Structure**; C.29 **Mathematical Representation**.
-**Coordinates with.** E.10 **Ontological Precision Restoration**; E.17.0 **Viewpoint and View Membership**; E.17 and E.24.PUB **Publication**; A.10 and B.3 **Evidence and Assurance**; G.11 **Currentness**; A.3.2 **Method Description**; F.9 **Bridge**; F.4 **System-Role-Kind Description**; F.5 **Naming Discipline**.
-**Non-goals.** This pattern introduces no description kind, slot relation, context tuple, card schema, publication kind, or representation kind. It does not decide whether claims are true, current, sufficient, authoritative, or permitted. It handles each live question under the subject pattern while keeping the described object and the claim-bearing episteme recoverable.
+> **Type:** Definitional pattern
+> **Normativity:** Normative, notation-agnostic
 
 ### E.10.D2:1 - Problem frame
 
@@ -34,7 +27,7 @@ The working distinctions are:
 * **specification use** is a checkable use of a description episteme, not a third peer ontology class;
 * viewpoint, view, claim scope, model-use structure, grounding, evidence, edition, publication, carrier, and representation remain neighboring objects and relations.
 
-This buys a small practical result: the reader can say what is described, which claim-bearing episteme is being used, what the receiving use needs next, and where any additional claim is governed. A formal-looking file, card, suffix, approval, or diagram gains no ontological or practical authority by appearance.
+The first result is that the reader can say what is described, which claim-bearing episteme is being used, what the receiving use needs next, and where any additional claim is governed. A formal-looking file, card, suffix, approval, or diagram gains no ontological or practical authority by appearance.
 
 ### E.10.D2:2 - Problem
 
@@ -83,7 +76,7 @@ A ClaimGraph may designate several other entities as participants in relational,
 
 A description episteme is an ordinary `U.Episteme` whose exact `U.ClaimGraph` contains descriptive claims about its exact EntityOfConcern under its effective `U.ReferenceScheme`. Its identity is the C.2.1 constitution triple; E.10.D2 adds no `subjectRef`, description slot, `isDescriptionOf` relation, context constituent, or peer description ontology.
 
-Its ClaimGraph may contain labels, characterizations, criteria, structural or behavioral claims, diagrams interpreted under a scheme, or other claim-bearing content. Those claims and representations do not become parts or properties of the EntityOfConcern unless the corresponding direct subject pattern establishes them.
+Descriptive claims may assign designations, characterize the entity, state criteria, or describe structure or behavior. A diagram may express those claims under the effective scheme and separately serve a representation use under §8.4. Their expression does not by itself establish parts or properties of the EntityOfConcern; recover those subject-side facts under their direct patterns.
 
 For one named describing use, state the exact viewpoint P it selects when that selection changes interpretation or action. Keep the episteme, its EntityOfConcern, the use, and P distinct. The selection is not an episteme identity discriminator and establishes neither viewpoint conformance nor `U.View` membership.
 
@@ -134,7 +127,7 @@ When an episteme is described, use C.2.1's ordinary recursion. A review episteme
 
 **D2-5 (Stable identity across use).** Changed description use, viewpoint selection, harness, evidence, publication, form, carrier, rendering, or representation does not by itself change episteme identity.
 
-**D2-6 (Work and authority separation).** An episteme, plan, checklist, specification, standard, file, or dashboard performs no work and grants no permission, acceptance, assurance, or world-side truth without the exact direct relation.
+**D2-6 (Work and authority separation).** An account of Work identifies its performing System under A.15.1. Epistemes carry claims and may be used in that Work under independently governed use relations. Permission, acceptance, assurance and world-side claims retain their direct governing rules; a description or display supplies none by label.
 
 **D2-7 (No label-only sameness).** Identical labels across schemes, scopes, viewpoints, model-use structures, or contexts establish neither the same EntityOfConcern nor the same episteme. Use the governing identity and Bridge rules.
 
@@ -164,7 +157,7 @@ For one named describing use, state that the use selects one exact `U.Viewpoint`
 
 That selection:
 
-* does not acquire C.2.1 episteme identity;
+* does not change the C.2.1 identity of the episteme being read;
 * does not establish `EpistemeViewpointConformanceRelation`;
 * does not admit or remove same-individual `U.View` membership;
 * selects no receiving view and performs no A.6.3 viewing construction;
@@ -308,15 +301,15 @@ If the exact E.24.PUB objects are recoverable, the admissible next sentence is t
 
 | Consequence | Cost or boundary |
 |---|---|
-| Description and specification wording becomes safer across FPF. | Authors must recover one C.2.1 constitution and the receiving use instead of relying on a suffix, title, or filled context record. |
+| Description and specification names have explicit constitution and checkability conditions. | Authors must recover one C.2.1 constitution and the receiving use instead of relying on a suffix, title, or filled context record. |
 | One episteme can remain stable across changed viewpoint selections, harnesses, evidence, publications, carriers, and representations. | Each changed neighboring use needs its own subject pattern when it matters to the next action. |
 | Publication, evidence, assurance, gate, work, state, and system-role-kind or assignment claims remain independently testable. | Prose can become slightly longer when a source phrase compressed several non-substitutable relations. |
 | The ordinary move stays small because optional neighbors are opened conditionally. | A genuinely load-bearing neighbor cannot be hidden merely to keep the sentence short. |
-| A local application can return an exact blocker. | Reopen when the receiving use, C.2.1 discriminator, required direct governor, or checkability basis cannot be recovered from current facts. |
+| A local application can return an exact blocker. | Name the missing receiving use, C.2.1 discriminator, direct governor or checkability basis; resume when it can be recovered. |
 
 ### E.10.D2:13 - Rationale
 
-The durable core distinguishes the subject being described from the claim-bearing use of a C.2.1 episteme. Each identity is recovered independently; C.2.1 permits the same episteme to serve both uses in a self-description. Specification is a checkable use of that episteme. Viewpoint selection, view membership, scope, model-use structure, grounding, evidence, assurance, edition, publication, carrier, representation, and work have different reasons to obtain and different identity rules.
+The account distinguishes the subject being described from the claim-bearing use of a C.2.1 episteme. Each identity is recovered independently; C.2.1 permits the same episteme to serve both uses in a self-description. Specification is a checkable use of that episteme. Viewpoint selection, view membership, scope, model-use structure, grounding, evidence, assurance, edition, publication, carrier, representation, and work have different reasons to obtain and different identity rules.
 
 Making those neighbors fields of a description tuple would erase those rules and make formality, publication, approval, or a shared context label look constitutive. Requiring all of them for every description would also make ordinary use needlessly heavy. Receiving-use-first routing preserves both reliability and economy: recover the exact constitution, add the one neighbor needed for the next action, then stop.
 
@@ -406,7 +399,5 @@ Use the short memory **use, claims, entity, scheme, one needed neighbor**:
 4. **Scheme.** What effective ReferenceScheme makes the claims readable about that entity?
 5. **One needed neighbor.** Does the next action actually need a describing-use viewpoint, specification checking, grounding, scope, model-use structure, evidence, edition, currentness, publication, carrier, representation, Bridge, or work use?
 6. **Stop.** Add only that direct relation, or stop after constitution if none is needed.
-
-The older memory “entity, description, admitted specification use” remains a useful three-word reminder, but it is not a three-kind ontology. Entity names the independently governed concern; description names the C.2.1 claim-bearing episteme used descriptively; specification names a checkable use admitted for one receiving purpose.
 
 ### E.10.D2:End

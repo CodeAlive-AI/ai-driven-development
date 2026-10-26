@@ -21,13 +21,13 @@
 
 **First useful move.** State the case in ordinary language:
 
-> This holder previously obtained this result for this Work family under these conditions. The holder now fails to obtain that result under the changed demand. Before more training, redesign, rehearsal, or parameter updating, return once to a qualified reference condition without further development, vary the smallest decision-bearing condition, and record which observable distinction changes first.
+> This holder has a qualified capability claim or prior result for this Work family under these conditions. The present demand is not met. Before choosing more development, recover a safe qualified reference condition, vary the smallest decision-bearing condition without further development, and record which observable distinction changes first. If that reference cannot be obtained, return the missing basis or an unresolved disposition.
 
-**First useful result.** Return the controlled observations, one or more qualified differential dispositions, the strongest surviving rival, the limits of the result, and candidate routes to the patterns or domain Methods that could receive it. The result is not a choice, authorization, selected next Work, or performed Work; it does not establish hidden memory or a causal mechanism.
+**First useful result.** Return the controlled observations, one or more qualified differential dispositions, the strongest surviving rival (if any), the limits of the result, and candidate routes to the patterns or domain Methods that could receive it. The result is not a choice, authorization, selected next Work, or performed Work; it does not establish hidden memory or a causal mechanism.
 
 **What changes in practice.** A practitioner no longer treats one failed performance as proof that the capability or memory disappeared. They first ask whether the claimed demand, configuration, cue or routing, applicability selection, response access, adaptation, and enactment can be separated by a safe contrast. Development or redesign begins only after a separate steering or choice result uses that evidence.
 
-**What this buys.** The probe can recover a still-available response, avoid unnecessary redevelopment, identify the earliest observable failure position, and return a smaller next question to the right owner. It works across unlike holders because the common part is the contrast and disposition, not one theory of memory, organization, learning, or model internals.
+**What this buys.** The probe can recover a still-available response, avoid unnecessary redevelopment, identify the earliest observable failure position, and return a smaller next question to the applicable pattern or domain Method. It works across unlike holders because the common part is the contrast and disposition, not one theory of memory, organization, learning, or model internals.
 
 **Not this pattern when.**
 
@@ -88,12 +88,12 @@ CapabilityAccessExpressionProbe@Use:
   controlledChangeCondition:
   protectedConditions:
   disposition:
-  strongestSurvivingRival:
-  unsupportedUse:
+  strongestSurvivingRival: <or none retained within the tested alternatives and conditions>
+  unsupportedUse?: <only a materially unsupported use at issue>
   candidateRoutes:
 ```
 
-This card is a local Method result, not a new FPF kind.
+This optional form records the probe result; it introduces no new FPF kind.
 
 #### E.23.CAE:4.2 - Run the differential probe
 
@@ -105,7 +105,7 @@ This card is a local Method result, not a new FPF kind.
 6. **Observe applicability separately.** Ask whether the relevant Method, response, routine, policy, or prior case is selected as applicable before judging execution. For a person this may involve recognition or choice; for an organization it may involve routing, role, record, or authorization; for AI or robotics it may involve task/context identification, policy routing, or function activation. These are different mechanisms occupying one observational position.
 7. **Separate availability, adaptation, enactment, and result.** Where the case permits, observe whether the response can be accessed or activated, whether it can be transformed for the changed demand, whether the actual performer arrangement can enact it, and whether the required result obtains. A later failure does not by itself establish an earlier one.
 8. **Compare live rivals.** Retain every explanation still compatible with the observations. Ordinary cue effects, interference, envelope mismatch, configuration loss, applicability failure, access or activation failure, adaptation failure, enactment failure, and actual holder change are not synonyms.
-9. **Return a disposition and candidate routes.** State the earliest supported distinction, evidence and conditions, strongest surviving rival, unsupported overread, and patterns or domain Methods that could receive the result. Do not select a route merely because the probe produced a disposition.
+9. **Return a disposition and candidate routes.** State the earliest supported distinction, evidence and conditions, the strongest surviving rival (if any), any materially unsupported use at issue, and patterns or domain Methods that could receive the result. If no rival remains among those tested, state that bounded result. Do not select a route merely because the probe produced a disposition.
 
 These steps organize observations, not a universal cognitive pipeline. A holder may implement them through simultaneous, recurrent, distributed, or structurally different processes.
 
@@ -158,23 +158,23 @@ During ongoing Work, `A.15.7` can use the disposition as current information whi
 
 #### E.23.CAE:5.1 - Human knowledge that remains inert
 
-**Tell.** A practitioner can explain a structural decision principle when it is named but does not use it in a differently worded workplace case. The failure may concern retrieval, recognition of applicability, adaptation, enactment, or an envelope limit; “they forgot” decides none of these.
+**Situation.** A practitioner can explain a structural decision principle when it is named but does not use it in a differently worded workplace case. The failure may concern retrieval, recognition of applicability, adaptation, enactment, or an envelope limit; “they forgot” decides none of these.
 
-**Show.** First confirm that the workplace case lies inside the claimed capability envelope. Without reteaching, present a qualified reference case that the practitioner previously solved, then the workplace case, then the reference again. Ask separately whether the principle is relevant before asking for a solution. If a structural comparison makes the principle recognizable and the practitioner can then adapt it, the observations support availability plus an applicability-selection failure under the uncued condition. They do not prove one universal retrieval mechanism or complete workplace capability. Human Capability Development or a direct domain Method can receive the result only after a separate next-action decision.
+**Probe.** First confirm that the workplace case lies inside the claimed capability envelope. Without reteaching, present a qualified reference case that the practitioner previously solved, then the workplace case, then the reference again. Ask separately whether the principle is relevant before asking for a solution. If a structural comparison makes the principle recognizable and the practitioner can then adapt it, the observations show reference availability and successful prompted use. They support applicability-selection failure under the uncued condition only if the comparison made an already available relation recognizable without supplying missing guidance. If new guidance remains a possible explanation, retain that rival and leave the stronger distinction unresolved. Neither observation proves one universal retrieval mechanism or complete workplace capability. Human Capability Development or a direct domain Method can receive the result only after a separate next-action decision.
 
-This is the minimally viable case: one holder, one Work family, one reference return, one applicability observation, one changed demand, one disposition, one surviving rival, and one candidate route.
+The case keeps the first probe small while retaining the distinction between prompted use and the stronger applicability diagnosis.
 
 #### E.23.CAE:5.2 - Organizational handover
 
-**Tell.** An incident-handover arrangement previously obtained an accepted result, then fails after a shift, tool, role, record, or authority change. Calling this “organizational forgetting” hides the exact relation that changed.
+**Situation.** An incident-handover arrangement previously obtained an accepted result, then fails after a shift, tool, role, record, or authority change. Calling this “organizational forgetting” hides the exact relation that changed.
 
-**Show.** Name the admitted organizational holder or performer arrangement and the handover Work. Compare the earlier roster, record, dispatch tool, authority, and interface configuration with the current one. Run a protected `A → B → A` replay or simulation: established configuration, changed configuration, then restored configuration. Observe which routine or Method is selected, whether it can be adapted to the new shift, whether authorized performers enact it, and whether the handover result obtains. If the result returns when record access and authority are restored, `configurationOrSupportUnavailable` is supported. Routine theory, organization design, staffing, governance, and collective learning remain OCE or organizational questions; no human-like organization memory has been established.
+**Probe.** Name the admitted organizational holder or performer arrangement and the handover Work. Compare the earlier roster, record, dispatch tool, authority, and interface configuration with the current one. Run a protected `A → B → A` replay or simulation: established configuration, changed configuration, then restored configuration. Observe which routine or Method is selected, whether it can be adapted to the new shift, whether authorized performers enact it, and whether the handover result obtains. If the result returns when record access and authority are restored, `configurationOrSupportUnavailable` is supported. Routine theory, organization design, staffing, governance, and collective learning remain OCE or organizational questions; no human-like organization memory has been established.
 
 #### E.23.CAE:5.3 - AI or robotic apparent forgetting
 
-**Tell.** A continually updated model or robot previously expressed a task function or policy and later appears to forget it. A benchmark drop can reflect parameter change, task/context routing, function activation, interface state, sensing, actuation, support configuration, or a demand outside the tested envelope.
+**Situation.** A continually updated model or robot previously expressed a task function or policy and later appears to forget it. A benchmark drop can reflect parameter change, task/context routing, function activation, interface state, sensing, actuation, support configuration, or a demand outside the tested envelope.
 
-**Show.** Hold parameters fixed during the probe where feasible. Compare no task/context cue with a qualified task cue or routing intervention; vary cue reliability, state feedback, blocked versus interleaved order, and relevant transition statistics; then return to the earlier condition without further update. For a robot, keep sensing, controller state, actuation, calibration, tool, and environment conditions explicit. If the earlier function or policy reappears under a qualified activation condition, availability under that condition is supported and simple global loss is weakened. Function vectors, context inference, routing, controller state, continual-learning algorithms, and parameter overwrite remain model-specific explanations. If no response reappears and direct model or controller evidence supports change, `capabilityClaimRevisionWarranted` may be returned without claiming a universal memory mechanism.
+**Probe.** Hold parameters fixed during the probe where feasible. Compare no task/context cue with a qualified task cue or routing intervention; vary cue reliability, state feedback, blocked versus interleaved order, and relevant transition statistics; then return to the earlier condition without further update. For a robot, keep sensing, controller state, actuation, calibration, tool, and environment conditions explicit. If the earlier function or policy reappears under a qualified activation condition, availability under that condition is supported and simple global loss is weakened. Function vectors, context inference, routing, controller state, continual-learning algorithms, and parameter overwrite remain model-specific explanations. If no response reappears and direct model or controller evidence supports change, `capabilityClaimRevisionWarranted` may be returned without claiming a universal memory mechanism.
 
 ### E.23.CAE:6 - Bias-Annotation
 
@@ -199,7 +199,7 @@ This is the minimally viable case: one holder, one Work family, one reference re
 | `CC-E23CAE-5` | Development, rehearsal, procedure change, parameter update, calibration, or another holder-changing operation is controlled where safe; contamination narrows or blocks the disposition. |
 | `CC-E23CAE-6` | A qualified reference return and at least one decision-bearing condition distinguish live rivals; cue reliability, order, and transition history are included when they can change the observation. |
 | `CC-E23CAE-7` | Applicability selection, response access or activation, adaptation, enactment, and obtained result are not inferred from one undifferentiated success or failure. |
-| `CC-E23CAE-8` | The disposition names its observation, conditions, strongest surviving rival, unsupported overread, and claim limit. |
+| `CC-E23CAE-8` | The disposition names its observation, conditions, claim limit, the strongest surviving rival (if any) and any materially unsupported use at issue. If none of the tested rivals remains, state that bounded result rather than inventing another explanation. |
 | `CC-E23CAE-9` | Human, organizational, AI, robotic, collective, or hybrid explanations and interventions remain with their direct owners; no common hidden mechanism is asserted. |
 | `CC-E23CAE-10` | The result remains a premise and candidate-route set, not a `ChoiceResult`, authorization, selected next Work, or performed Work. |
 | `CC-E23CAE-11` | Unsafe, overly costly, coupled, or change-inducing probes return a protected alternative, narrower claim, or `unresolvedDifferential`. |
@@ -224,7 +224,7 @@ The pattern reduces premature retraining, redesign, procedure rewrite, and param
 
 The cost is a qualified reference basis, controlled contrast, explicit claim boundary, and possible protected replay or simulation. Context dimensions can be coupled, reference evidence can be stale, and the probe can change the holder. A narrow unresolved result is therefore a successful outcome when the available evidence cannot support a stronger distinction.
 
-What changes in practice is not the adoption of one memory theory. It is the refusal to move directly from failed expression to capability loss or development Work without first asking which observable contrast could change that conclusion.
+The practitioner asks which observable contrast could change the conclusion before moving from failed expression to capability loss or development Work.
 
 
 
@@ -243,7 +243,7 @@ The method stays transdisciplinary only by refusing a common hidden mechanism. I
 
 **Practice question.** When prior performance, failed transfer, or unstable expression leaves several live explanations, what is the smallest current defensible move that distinguishes an envelope or configuration failure, applicability or access failure, context-dependent expression, adaptation or enactment failure, and actual capability change without yet choosing development or repair Work?
 
-**Selected best-known line and serious alternatives.** **Adopt** an observation-first differential: bind the capability claim, hold development or updating fixed where safe, return to a qualified reference condition, vary the smallest decision-bearing condition, separate the observable failure positions, and retain genuine-change and unresolved exits. The serious defaults are to infer capability loss and begin development immediately, or to **adopt** a latent-context or COIN-style explanation as the common mechanism. At comparable first-decision effort, the selected line can be as small as one safe reference return and one discriminating contrast. It is no worse on affordability, safety honesty, or admission of genuine change, and it is better at avoiding premature redevelopment and cross-holder mechanism overreach. Its deliberate cost is that the extra contrast needs a qualified basis, may contaminate or endanger the case, and may truthfully return `unresolvedDifferential`.
+**Selected best-known line and serious alternatives.** **Adopt** an observation-first differential: bind the capability claim, hold development or updating fixed where safe, return to a qualified reference condition, vary the smallest decision-bearing condition, separate the observable failure positions, and retain genuine-change and unresolved exits. The serious defaults are to infer capability loss and begin development immediately, or to **adopt** a latent-context or COIN-style explanation as the common mechanism. At comparable first-decision effort, the selected line can be as small as one safe reference return and one discriminating contrast. It supplies a discriminating observation that the immediate-loss default omits, while retaining genuine-change and unresolved outcomes. Its affordability depends on the qualified contrast and the alternative work it can avoid. Its deliberate cost is that the extra contrast needs a qualified basis, may contaminate or endanger the case, and may truthfully return `unresolvedDifferential`.
 
 **Defect overcome and pattern mutation.** Immediate loss/development projects one failed expression backward into capability change; a universal latent-context account projects one useful human explanation across non-isomorphic holders. The selected line changes `E.23.CAE:4.2` steps 4–8, the observation-qualified dispositions in `4.3`, the three holder cases in `5`, the assurance stop in `4.4`, the anti-patterns in `8`, and the source-sensitive reopen condition in `9`. It leaves mechanisms and interventions with their direct owners.
 

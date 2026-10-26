@@ -86,7 +86,7 @@ These are different change questions, not a universal event classification. For 
 
 #### C.39.MC:4.4 - Retain Only What Another Use Needs
 
-An ordinary continuation answer needs the current difficulty, selected knowledge, available/blocked/unknown action, first missing fact, and stop or return. Retain an existing result by reference when it already carries the needed claims.
+An ordinary continuation answer states the current difficulty, selected knowledge, available/blocked/unknown action, any missing fact that matters, and the applicable stop or return. Retain an existing result by reference when it already carries the needed claims.
 
 Only when another turn must cite, compare, audit, or rely on the connected answer, keep a Situated Method-Architecture Result as an ordinary C.2.1 episteme. Its content includes the architecture claims and statuses in use, their source/result returns, the current continuations and conditions, the affected-delta answer, and the next return. This is a descriptive result name, not a new root kind or mandatory register.
 
@@ -96,7 +96,7 @@ The profile/language episteme, a description of one Method, a selected structure
 
 #### C.39.MC:4.5 - Open Formal CGUS Only for Its Own Use
 
-The plain alternatives-and-conditions answer often suffices. Use A.22.CGUS when an independently selected structure must be qualified, persisted, compared, published, or more strongly relied on. A structure requires its constituents, selected obtaining relations, applied constraints, and named use frame; its CGUS membership requires at least two potential continuations across allowed cases. Zero or one currently enabled continuation is compatible with that potential branching.
+The plain alternatives-and-conditions answer often suffices. Use A.22.CGUS when the needed claim concerns a selected structure with potential continuation branching, and that claim must be qualified, persisted, compared, published or more strongly relied on. A structure requires its constituents, selected obtaining relations, applied constraints, and named use frame; its CGUS membership requires at least two potential continuations across allowed cases. Zero or one currently enabled continuation is compatible with that potential branching.
 
 For a Method-architecture continuation use, the local frame name Situated-Method-Architecture-Continuation denotes this question: which continuation can obtain the next bounded Method-architecture result or honest stop? Its admissible actions are to select a continuation, retain alternatives, request the first missing fact, or stop. The stop is the first decision-usable result or a missing condition that prevents it. Naming this frame does not establish the structure or choose the action.
 
@@ -120,7 +120,7 @@ The engineer uses A.15.7 to choose the available bounded review. The review lead
 
 Before the next choice, the relevant procedure is inspected. Its construction rule places M2 outside W: M2 supplies optional advice but is neither required nor an admitted construction alternative. That changes the proposed composition claim, not the independently established identity of W, M1, or M2.
 
-The engineer returns the affected composition question to B.1.5.CM. The proposed relation set is not supported as W's obtaining composition; retain the useful support relation and return P for correction or another proposed arrangement. The participant A.3.1.QM results remain supported; the bounded review and publication blocker remain as before. The new situated result changes the composition-claim and return content. It does not backdate a new Method, change completed review Work, or announce a new structure from one new fact. If another proposed arrangement changes W's reusable semantics, that later proposal needs its own identity question.
+The engineer returns the affected composition question to B.1.5.CM. The proposed relation set is not supported as W's obtaining composition; retain the useful support relation and return P for correction or another proposed arrangement. The participant A.3.1.QM results remain supported; the bounded review and publication blocker remain as before. The new situated result changes the composition-claim and return content. It does not backdate a new Method, change independently established completed review Work, or announce a new structure from one new fact. If another proposed arrangement changes W's reusable semantics, that later proposal needs its own identity question.
 
 What changed in practice is small but consequential: one changed source claim reopens one whole-account decision and its dependent uses, while available independent review continues.
 
@@ -174,7 +174,7 @@ General pattern use and live Work steering already exist. The Method-development
 
 A direct MethodDescription is preferable when it already supplies the action and stop. A fixed route is useful when its dependencies remain sufficient. For a changing plurality of questions, reconstructing the returns from separate patterns can hide an unresolved whole or repeat unaffected qualification. This method keeps those returns visible at a cost proportionate to the present decision.
 
-Pattern-language form supplies problem-oriented knowledge, not a replacement chooser. Local first–then dependencies can still matter. Neither situational use nor the word unfolding claims that Methods have no causal assumptions or that all actions can occur in any order.
+A pattern language supplies problem-oriented knowledge for the deciding practitioner. Local action order follows the applicable prerequisites and causal assumptions; a contents order does not establish them.
 
 ### C.39.MC:11 - SoTA-Echoing
 
@@ -184,9 +184,8 @@ Pattern-language form supplies problem-oriented knowledge, not a replacement cho
 | Hoppenbrouwers and colleagues, [Agile Service Development: A Rule-Based Method Engineering Approach](https://doi.org/10.1007/978-3-642-19997-4_17), 2011; historical declarative/agile SME anchor. | Retain rules and constraints as an alternative to prescribing one complete development route. | Declarative and on-the-fly Method Engineering are prior ideas, not novelty claims here. Each current continuation still needs its facts and an acting/deciding System. |
 | Christopher Alexander, [The Origins of Pattern Theory](https://christopher-alexander-ces-archive.org/article/the-origins-of-pattern-theory-the-future-of-the-theory-and-the-generation-of-a-living-world/), OOPSLA 1996 address published in 1999; historical lineage. | Retain context-sensitive use of a connected pattern language and the contribution of generative order. | Pattern order can be meaningful without being a universal Work sequence. This tradition supplies neither current FPF identity nor a claim that causality disappears. |
 | Stacey and colleagues, [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9), 2025; recent engineering-knowledge comparator. | Retain explicit how-to knowledge together with the knowledge needed to interpret and use it. | Their treatment of Method knowledge does not settle FPF's world-side Method/episteme boundary. It supports exposing the needed knowledge and result, not importing a definition by vocabulary. |
-| Current E.11.PUA/PUR, A.15.7, A.22.CGUS, A.3.1/B.1.5, and A.3.1.QM, C.32.MWA.PP, B.1.5.CM, A.3.2.DE, C.37.MP; direct working comparators. | Reuse pattern use and result reuse, live choice, potential/current continuation separation, Method identity/composition, and professional result contracts. | The new contribution is limited to the question-to-result return and situation-delta localization across Method-development uses. If direct use supplies that same result more cheaply, take the direct exit. |
 
-These sources support a bounded synthesis, not a claim that this construction invented continuous or pattern-based Method Engineering. Reopen the affected source or action when a current alternative supplies the same result with less reconstruction, a source change alters a load-bearing distinction, or use evidence reveals a missed dependency or unnecessary burden. Claims of human or AI superiority require their own comparative evidence.
+Use these source contributions for the stated questions and limits. Reopen the affected source or action when a current alternative supplies the same result with less reconstruction, a source change alters a load-bearing distinction, or use evidence reveals a missed dependency or unnecessary burden. Claims of human or AI superiority require their own comparative evidence.
 
 ### C.39.MC:12 - Relations
 

@@ -12,7 +12,7 @@ Use F.4 when a project needs a short, reusable description that makes one exact 
 
 Typical moments:
 
-- a project has a durable kind name such as `ReviewerSystemRole`, `OperatorSystemRole`, `InspectorSystemRole`, `TransformerSystemRole`, or `ShipyardCoordinatorSystemRole`, but readers cannot recover which systems are candidates, what condition distinguishes members from relevant non-members, what change would make it another kind, the current `KindSignature`, or the work-facing boundary;
+- a project has a durable kind name such as `InspectorSystemRole`, but readers cannot recover which systems are candidates, what condition distinguishes members from relevant non-members, what change would make it another kind, the current `KindSignature`, or the work-facing boundary;
 - a MethodDescription names a required system-role kind, but readers cannot tell which exact local kind must classify a candidate before an assignment can be checked;
 - a kind name is starting to carry assignment, capability, Method, Work, permission, responsibility, evidence, publication, or status claims that belong elsewhere; or
 - source prose says that a report, standard, dataset, theorem, dashboard, publication, or requirement has a “role”, and the writer must recover whether that wording denotes a system-role kind at all.
@@ -23,7 +23,7 @@ Typical moments:
 
 **First useful move.** Name the exact local system-role kind, say in ordinary words which systems can count and what separates a member from a relevant non-member, cite the current `KindSignature`, and state the change that would make it another kind. Add source or practice provenance only to help readers find and compare the definition. Keep the recognition explanation no longer than the next classification, assignment, Method, Work, naming, or cross-local claim needs.
 
-**What goes wrong if missed.** A description card becomes a hidden procedure, staffing record, access policy, permission badge, responsibility claim, evidence relation, status assertion, or Work log. Then one word recreates a universal role ontology and a second role-like ontology for epistemes, publications, statuses, and relation positions.
+**What goes wrong if missed.** A description card becomes a hidden procedure, staffing record, access policy, permission badge, responsibility claim, evidence relation, status assertion, or Work log. The system-role kind then becomes confused with claims about its holders and with uses of epistemes or representations.
 
 **What this buys.** A project gets a compact, readable description while operational claims remain at their direct loci. The kind stays recognizable; classification and assignment stay checkable; capability, Method, Work, evidence, status, responsibility, and publication claims stay inspectable instead of being smuggled into the name.
 
@@ -196,7 +196,7 @@ Source says “episteme X has role Y”
 
 #### F.4:7.1 - Pump Inspector System Role
 
-`PumpInspectorSystemRoleKindDescription` is a C.2.1 episteme whose EntityOfConcern is the kind currently named `PumpInspectorSystemRole`. The practical distinction is simple: an admitted system counts when it obtains readings for the named pump and declared condition characteristics in the applicable inspection situation and returns the named pre-maintenance judgment from those readings. A maintenance technician, inspection robot, or service team can be a member; a report, or a system missing either condition, is a relevant non-member. `PlantA-PumpInspector-KindSignature-v4` and `Plant-A-Maintenance-Scheme` state the current definition and interpretation. Plant A provenance locates that definition; it does not identify the kind. The same kind continues through an aligned edition while the candidate range and two-part distinction continue; a material change to either calls for another kind. Each predicate declaration supplies participant meanings and applicability, and the current case supplies the satisfying facts. Use `A.6.F` only if source wording first hides those claims behind *function*; it establishes neither predicate. If either predicate or its case facts cannot be recovered, record the exact A.6.RCD `missing-governor` or missing-information result instead of classifying the candidate.
+`PumpInspectorSystemRoleKindDescription` is a C.2.1 episteme whose EntityOfConcern is the kind currently named `PumpInspectorSystemRole`. An admitted system counts when it obtains readings for the named pump and declared condition characteristics in the applicable inspection situation and returns the named pre-maintenance judgment from those readings. A maintenance technician, inspection robot, or service team can be a member; a report, or a system missing either condition, is a relevant non-member. `PlantA-PumpInspector-KindSignature-v4` and `Plant-A-Maintenance-Scheme` state the current definition and interpretation. Plant A provenance locates that definition; it does not identify the kind. The same kind continues through an aligned edition while the candidate range and two-part distinction continue; a material change to either calls for another kind. Each predicate declaration supplies participant meanings and applicability, and the current case supplies the satisfying facts. Use `A.6.F` only if source wording first hides those claims behind *function*; it establishes neither predicate. If either predicate or its case facts cannot be recovered, record the exact A.6.RCD `missing-governor` or missing-information result instead of classifying the candidate.
 
 The description says the kind concerns pump-condition inspection and does not itself denote repair. It may cite pump-inspection capability conditions or an inspection Method when a receiving Work claim needs them. Its boundary says that an inspection report is an episteme used through evaluation, evidence, source, or publication relations, not a system-role holder.
 
@@ -220,7 +220,7 @@ The report is not a system-role holder and does not acquire an “evidence role.
 
 #### F.4:7.3 - Standard Used as a Specification or Source
 
-The sentence “Standard S has the architecture-standard role in this Work” is unsafe if it classifies the standard episteme as a system-role holder. Rewrite the actual claim: the exact edition of Standard S is used as a specification, external rule, premise, or source for named claims. A standard may constrain or support a claim through that direct relation. No system-role kind or assignment is needed unless a separately admitted system really satisfies and is assigned to one.
+The sentence “Standard S has the architecture-standard role in this Work” is unsafe if it classifies the standard episteme as a system-role holder. Rewrite the actual claim: the exact edition of Standard S is used as a specification, external rule, premise, or source for named claims. A standard may constrain or support a claim through that direct relation. No system-role kind or assignment is needed unless a separately admitted system satisfies and is assigned to one.
 
 #### F.4:7.4 - Access Role Is Not Automatically a System Role
 
@@ -252,13 +252,13 @@ RBAC *role* often names a permission grouping. If the current claim concerns per
 
 **Costs.**
 
-- Former “role-or-status template” material must move to F.10, A.2.4, B.3, A.10, E.17, G.6, or another direct relation.
+- When adapting a template that mixes role and status, route each claim to F.10, A.2.4, B.3, A.10, E.17, G.6, or the direct relation that governs it.
 - A stronger claim may require several neighboring patterns instead of one overloaded card.
 - Public, Core-facing, or durable cross-local names require F.18.
 
 ### F.4:10 - SoTA Decision for a Readable Kind Description
 
-Source use was checked on 2026-08-20. The bounded question is: **how can one work-facing kind be described for recognition without confusing the kind with its bearer, a classification judgment, assignment, capability, Method, Work, designation, or publication?** The comparison assumes the effort of authoring one project pattern, not adopting a whole upper ontology.
+The bounded question is: **how can one work-facing kind be described for recognition without confusing the kind with its bearer, a classification judgment, assignment, capability, Method, Work, designation, or publication?** The comparison assumes the effort of authoring one project pattern, not adopting a whole upper ontology.
 
 | Current line | Strong contribution | Limit at comparable pattern-authoring effort | FPF decision and receiving locus |
 | --- | --- | --- | --- |
@@ -268,7 +268,6 @@ Source use was checked on 2026-08-20. The bounded question is: **how can one wor
 
 **Selected non-dominated contribution.** gUFO and BFO offer richer foundational categorization, but at higher mapping effort and without deciding the project-local recognition use. ISO 704 and OntoLex keep description and designation separate at lower effort, but leave assignment, capability, Method, Work, and publication outside their answer. F.4 takes the smallest useful middle path: one C.2.1 episteme about one already recovered C.3 kind, a short ordinary-language recognition distinction, and explicit exits for stronger neighboring claims. At the effort of one pattern description, it preserves the needed ontology while remaining usable by a cold project reader.
 
-SysML is intentionally not a SoTA comparator, lineage source, or ontology authority for this question. Its modeling notation does not supply the kind-identity, classification, assignment, description, or Work rules being compared; search visibility or standard status does not make it a content rival.
 
 Currentness and reopen condition: reopen F.4 when A.2, C.3, A.2.1, A.2.5, A.2.7, A.15, A.6.5, A.6.RSIR, C.2.1, F.9, F.10, F.18, or the accepted episteme-use discipline changes enough that the described-kind or non-inference boundary would be stated differently.
 
@@ -325,6 +324,6 @@ Avoid as live Tech vocabulary:
 
 ### F.4:14 - Didactic Memory
 
-A `SystemRoleKindDescription` is the readable episteme that tells people what one exact local system-role kind means. It helps a reader classify, assign, name, or compare the kind. It does not admit the kind or a candidate system, produce the classification judgment, create an assignment, prove capability, define a Method, perform Work, grant permission, establish responsibility, carry evidence, publish itself, or turn every useful episteme into a system-role holder.
+A `SystemRoleKindDescription` is an episteme that explains one local system-role kind. Use its recognition account and current `KindSignature` to judge a candidate under C.3.2; establish any assignment separately under A.2.1. Follow :4.2 for capability, Method, Work or other neighboring claims.
 
 ### F.4:End

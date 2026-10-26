@@ -10,7 +10,7 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 **Primary working reader.** A practitioner or FPF author deciding whether a visible thing is a claim-bearing episteme, a `U.View`, a publication form, a C.29 representation, a `U.PresentationCarrier`, or evidence of one publication occurrence.
 
-**First useful move.** Put the intended receiving use in the bounded-use declaration itself. Then say, in one sentence, which episteme edition is available, to which declared audience, for which bounded use, in which publication form, and on which presentation carrier. Cite a separate plan, decision question, or `U.WorkPlan` only when it independently exists and changes the publication claim; it is not a second required statement of intended use. Availability establishes none of actual access, reliance, use, Work, or result. When a precise performed-Work claim is independently current, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact. Follow A.6.1 for an operation binding, C.11 for a `ChoiceResult`, or the exact access, reliance, or use relation without reproducing its test here. Open the heavier publication-relation declarations only when the receiving use depends on availability, its declared boundary, or publication-occurrence identity.
+**First useful move.** Put the intended receiving use in the bounded-use declaration itself. Then say, in one sentence, which episteme edition is available, to which declared audience, for which bounded use, in which publication form, and on which presentation carrier. Cite a separate plan, decision question, or `U.WorkPlan` only when it independently exists and changes the publication claim; it is not a second required statement of intended use. Availability establishes none of actual access, reliance, use, Work, or result. Open fuller relation detail only when needed to resolve disputed availability, its declared boundary, or publication-occurrence identity.
 
 **What goes wrong if missed.** A visible layout is treated as the described subject, a file is treated as the claims it carries, a diagram is treated as a view merely because it is graphical, or a currently available episteme is turned into a durable `U.EpistemePublication` kind. The receiving work then cannot tell which object changed when claims, layout, carrier, audience, or use changes.
 
@@ -75,7 +75,7 @@ Its actual participants are:
 | --- | --- | --- |
 | selected episteme edition | one exact `U.Episteme` identified under `C.2.1` | the claims made available |
 | audience declaration | one `U.Episteme` whose claims identify the intended receiving entities or a C.3-governed local kind and its membership criterion | who is included; a reader label alone is insufficient when the boundary matters |
-| bounded-use declaration | one `U.Episteme` whose claims state the operations or decisions supported, the conditions of that use, and the excluded stronger use | what availability is for; actual reliance remains another relation |
+| bounded-use declaration | one `U.Episteme` whose claims state the operations or decisions supported, the conditions of that use, and any stronger-use boundary needed to interpret those claims | what availability is for; actual reliance remains another relation |
 | publication form | one exact `U.Entity` used as the selected arrangement, notation, or rendering convention that expresses the edition for the bounded use | how the edition is expressed; visible shape alone does not establish this use |
 | presentation carrier | one exact `U.PresentationCarrier` | what physically or digitally bears the selected form |
 
@@ -107,7 +107,7 @@ The audience-declaration episteme identifies the audience criterion; it is not t
 
 One occurrence is reidentified by those five fixed participants and their maximal continuous interval of availability. Changing any participant yields another publication occurrence. Demonstrated loss of availability followed by restoration yields a later occurrence. Missing or stale evidence leaves current obtaining unresolved; it does not prove a gap.
 
-Rendering, printing, uploading, indexing, or granting access are activities separate from the publication occurrence. If one is independently claimed as dated Work, apply its direct Work and attribution patterns; E.24.PUB does not restate their admission, assignment, or compact-reporting rules. The activity and any result remain separate from the publication-relation participants.
+Rendering, printing, uploading, indexing, or granting access are activities separate from the publication occurrence. When a precise performed-Work claim is independently current, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact. Follow A.6.1 for an operation binding, C.11 for a `ChoiceResult`, or the exact access, reliance, or use relation without reproducing its test here. The activity and any result remain separate from the publication-relation participants.
 
 #### E.24.PUB:4.2 - Recover expression and bearing only when needed
 
@@ -218,7 +218,7 @@ Lenses tested: **Onto**, **Epist**, **Semio**, **Arch**, **Prag**, **Did**.
 - **Semio:** designation, expression, representation, bearing, and publication availability use different predicates.
 - **Arch:** keep each subject claim with its applicable pattern; E.24.PUB defines only the neighboring publication architecture.
 - **Prag:** progressive explicitness stops at the first statement sufficient for the receiving use.
-- **Did:** one readable sentence and heterogeneous cases precede the RelationSignature detail.
+- **Did:** ordinary first use stops at one readable sentence; the cases show which object or relation changes when a publication is revised.
 
 ### E.24.PUB:7 - Conformance Checklist
 

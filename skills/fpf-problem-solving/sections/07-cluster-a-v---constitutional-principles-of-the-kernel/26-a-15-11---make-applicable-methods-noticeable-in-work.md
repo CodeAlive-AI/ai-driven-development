@@ -47,7 +47,7 @@ Use what is already known before spending effort on the arrangement. Stop when t
 
 Start from work someone actually does. State what could improve: a choice, a result, the range of situations the performer can handle, or the effort required. Identify who can arrange the opportunity and who would encounter it. The same person can prepare a cue for their own future work.
 
-Identify the larger method being performed through the selected action and the constituent methods that make that action possible. These methods can be performed together in the same action. Use B.1.5.EW when this connection is unclear. Judge a proposed improvement under the conditions of that encompassing work, including any missing capabilities or resources on which it depends.
+Identify how the selected action contributes to the encompassing work. When the proposed improvement depends on cooperating methods, recover the larger method and the constituent methods that make the action possible; they may be performed together in the same action. Use B.1.5.EW when that connection is unclear. Judge the improvement under the conditions of the encompassing work, including any missing capabilities or resources on which it depends.
 
 When no question has yet been raised, B.5.PI uses an ordinary work occasion to compare a result with its use and develop a question or retain an early cue. Arrange that opportunity without presupposing a particular error.
 
@@ -63,7 +63,7 @@ A useful cue can take this form:
 
 Use the language of the work. For example: “Before estimating the extra report, compare what decision it would improve with the report we already have.” Naming a pattern can provide access after this relation has become clear.
 
-Try a nearby case in which the method should not be suggested. If the same cue recommends it there, refine the relation or leave the recommendation tentative. Shared terminology is a lead for investigation; applicability depends on what the operation would do under the actual conditions.
+When a plausible false match could change the suggestion, use a nearby case in which the method should not be suggested. Matching existing observations can supply this comparison. If the same cue recommends the method there, refine the relation or leave the recommendation tentative. Shared terminology is a lead for investigation; applicability depends on what the operation would do under the actual conditions.
 
 #### A.15.11:4.3 - Place the cue where it can be encountered
 
@@ -87,7 +87,7 @@ Keep the action proportionate to the present need. Sometimes a colleague's direc
 
 #### A.15.11:4.5 - Try the intended arrangement
 
-Use a safe instance of the receiving work. Establish whether the cue is actually encountered, whether its relevance can be recovered, and what the participant then does. Include a condition that defeats the proposed match when a plausible false recommendation could change the outcome.
+When a trial can change the arrangement decision and its result is not already available, use a safe instance of the receiving work. Establish whether the cue is actually encountered, whether its relevance can be recovered, and what the participant then does. Include a condition that defeats the proposed match when a plausible false recommendation could change the outcome.
 
 Keep the intended aids available. If a coach adds an explanation during the trial, that explanation becomes part of what enabled the result. If an AI assistant receives additional context, its success applies to that context. To claim use without those aids, examine that different configuration separately.
 
@@ -101,7 +101,7 @@ C.11.CRC compares a finite change with the current configuration. C.11.DUA exami
 
 Compare at the level where the gain is needed. A better component result may leave the whole task unchanged. A small preparatory improvement may enable several larger methods at once. Recognition, correct application and worthwhile use are separate outcomes.
 
-Keep, revise or remove the arrangement accordingly. A recipient can dismiss an inapplicable or unprofitable suggestion without producing a refusal record. Where a real accountability requirement applies, use its existing record rather than inventing one for every cue.
+Keep, revise or remove the arrangement accordingly. A recipient can dismiss an inapplicable suggestion or one not worth its burden without producing a refusal record. Where a real accountability requirement applies, use its existing record rather than inventing one for every cue.
 
 #### A.15.11:4.7 - Adjust after use
 

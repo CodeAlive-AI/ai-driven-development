@@ -6,7 +6,7 @@
 **Stage.** *design-time* legality gate (establishes comparison legality & evidence minima; constrains run-time gates)
 **Primary output.** `CG‑Spec` — a notation-independent legality gate for a `CG‑Frame`, published to UTS (with explicit edition pins for downstream reproducibility and RSCR).
 **Primary hooks.** `USM.ScopeSlice(G)`, `entityOfConcern`, `SCP`, `MinimalEvidence`, `CNSpecRef`, `Γ‑fold`, `Φ(CL)` / `Φ_plane` policy pins, `UTS` publication (Name Cards + edition pins).
-**Non-duplication note.** Universal Part‑G invariants are cited through `G.Core` and are satisfied here **only via delegation** (`CC‑G0‑CoreRef` → `CC‑GCORE‑*`). Single‑governing definition CN/CG spec-ref discipline is enforced via `CC‑GCORE‑CN‑CG‑1` (no shadow specs; no competing defaults).
+
 
 ### G.0:1 - Problem frame
 
@@ -15,11 +15,10 @@ A team defines or evolves a `CG‑Frame` (e.g., a frame for creativity measureme
 * lawful with respect to measurement admissibility (scale/unit/polarity constraints),
 * auditable with explicit evidence minima and provenance,
 * reproducible via pinned editions and explicit policy ids,
-* portable only via explicit crossings (bridges and reference-plane moves), never via implicit semantic leakage.
+* portable under the explicit correspondence and plane-relation conditions that the receiving use requires.
 
 `CG‑Spec` is the single design-time object that fixes *what comparisons and aggregations are lawful in this frame*, under which pinned assumptions and minimal evidence requirements, so that run-time selection and publication can be audited without inventing new “local legality gates”.
 
-Didactic subtitle: **Design-time rules for safe, auditable comparison.**
 
 ### G.0:2 - Problem
 
@@ -34,7 +33,7 @@ Without a single, frame-level legality standard:
 
 * **Pluralism vs. comparability.** Multiple traditions must co-exist while allowing admissible comparison where justified.
 * **Expressiveness vs. safety.** Rich comparator sets and aggregators vs. measurement admissibility constraints.
-* **Locality vs. portability.** Context-local semantics first; portability only via explicit bridges and explicit losses.
+* **Locality vs. portability.** Preserve context-local meanings and establish the correspondences and use conditions needed for transfer, including any justified loss.
 * **Assurance vs. agility.** Evidence minima must meet the claim threshold while staying light enough to adopt.
 * **Design-time vs. run-time.** Keep legality standards and templates design-time; run-time only cites and applies them.
 
@@ -55,7 +54,7 @@ Without a single, frame-level legality standard:
 
 **Builds on:** `G.Core` (Part-G core invariants; governing-pattern citation)
 
-**GCoreLinkageManifest (normative; size-controlled via profiles/sets).**
+**GCoreLinkageManifest (normative).**
 
 Effective obligations/pins/triggers are computed by union expansion of the referenced ids (per `G.Core:4.2`).
 Profiles/sets + explicit deltas; `Nil‑elision` applies.
@@ -150,7 +149,7 @@ CG‑Spec :=
 ⟩
 ```
 
-**Local typing notes (non-exhaustive; normative intent but no shadow specs).**
+**Local typing notes (normative, non-exhaustive).**
 
 * `ComparatorSpec` MUST be typed against SCP/CHR constraints. Examples of lawful comparators are frame-local choices and are authored here (e.g., dominance where lawful; lexicographic over typed traits; medoid/median for ordinal where lawful; explicit weighted sums only where legality is proven and units are aligned).
 * `MinimalEvidenceEntry` MUST declare: lane requirements, evidence carriers, freshness window (if any), and explicit failure behavior wiring. The semantics of `{pass|degrade|abstain}` and `degrade(mode=…)` are delegated to `G.Core`.
@@ -209,8 +208,8 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 * **⊑/⊑⁺:** `∅`
 * **RequiredPins/EditionPins/PolicyPins (minimum):**
 
-  * `BridgeCardId/BridgeId` (when crossings are permitted)
-  * `CL` / `CL^k` and `Φ`/`Φ_plane` policy ids (when penalties are in play)
+  * `BridgeCardId/BridgeId` (when the use relies on the corresponding semantic bridge)
+  * `CL` / `CL^k` and `Φ`/`Φ_plane` policy ids (when the corresponding calibration or loss model is used)
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.CrossingBundleEdit, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.ReferencePlaneEdit}`
 * **Notes (wiring-only):** Crossing semantics and penalty routing are delegated to `G.Core`; this module only lists the required pins used by `CG‑Spec` entries.
 
@@ -249,7 +248,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 
 **Tell.** Two labs compare energy efficiency results of a physical system where measurements use different rigs and units, and some evidence is missing.
 
-**Show (failure without CG‑Spec).** The team averages an ordinal safety rating, mixes units (“kWh” vs “MJ”), and silently treats missing lanes as zeros. Cross-lab reuse happens without explicit bridge and loss notes, so selection becomes a black box.
+**Show (failure without CG‑Spec).** The team averages an ordinal safety rating, mixes units (“kWh” vs “MJ”), and silently treats missing lanes as zeros. Cross-lab reuse also leaves any differences in measurement meaning and their effects unexplained.
 
 **Show (repair with CG‑Spec).** A conformant `CG‑Spec`:
 
@@ -276,10 +275,10 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 
 `CG‑Spec` can encode (and therefore amplify) biases if authored carelessly:
 
-* **Tradition favoritism.** Comparator choices may privilege a tradition’s evidence style; mitigation: require explicit evidence minima and explicit crossing costs, and keep cross-tradition aggregation gated by explicit justifications.
+* **Tradition favoritism.** Comparator choices may privilege a tradition’s evidence style; mitigation: declare evidence minima and any justified crossing loss, and require grounds for cross-tradition aggregation.
 * **Metric gaming and Goodhart effects.** Overemphasis on a single scalar can lead to gaming; mitigation: preserve set-return semantics and require explicit, auditable scalarisations when they are lawful and intended.
 * **Hidden thresholds and opaque safety policy.** Embedding acceptance thresholds in prose or code hides value judgments; mitigation: keep thresholds in CAL acceptance clauses and pin policy ids.
-* **Scope creep.** Comparisons leak across entityOfConcern or reference planes; mitigation: require explicit `entityOfConcern` and `ReferencePlane` pins and treat plane moves as explicit crossing events.
+* **Scope creep.** A comparison may be reused for a different entityOfConcern or reference plane. Retain `entityOfConcern` and `ReferencePlane` pins, and apply the governing rule for any plane relation the comparison uses. Include E.18/A.21 crossing or gate pins when that use applies.
 
 ### G.0:7 - Conformance Checklist (normative)
 
@@ -309,13 +308,13 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 * **Anti-pattern: shadow legality gates in downstream code.** Avoid by requiring downstream to cite `CG‑Spec` segments by id+edition.
 * **Anti-pattern: “one number to rule them all”.** Avoid by preserving set-return outputs when only partial orders are lawful; any scalarisation must be explicit, typed, and justified.
 * **Anti-pattern: thresholds inside CG‑Spec or CHR.** Avoid by keeping thresholds and acceptance logic in CAL and citing from `CG‑Spec` only via stubs/templates.
-* **Anti-pattern: implicit crossings.** Avoid by requiring explicit bridge ids, CL/policy ids, and reference-plane pins.
+* **Anti-pattern: unqualified cross-context reuse.** Expose the correspondence, calibration, loss-policy and reference-plane pins required by the receiving use (`G.Core:4.2.3`).
 
 ### G.0:9 - Consequences
 
 * **Lawful comparability.** The frame declares exactly what can be compared/aggregated and under what constraints.
 * **Auditable selection.** Downstream selectors can justify outcomes via pinned legality surfaces and explicit evidence minima.
-* **Explicit portability costs.** Cross-context reuse becomes deliberate and costed via visible crossings and penalties.
+* **Explicit transfer conditions.** Cross-context reuse exposes the correspondence, receiving conditions and any justified loss on which it relies.
 * **Lower drift under evolution.** Edition pinning + typed RSCR triggers makes comparability drift detectable and refreshable.
 
 ### G.0:10 - Rationale
@@ -329,7 +328,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 
 ### G.0:11 - SoTA‑Echoing
 
-This pattern aligns with post‑2015 best practice in evaluation and governance by:
+The pattern connects the following evaluation and governance practices:
 
 * treating “abstain / defer” as a first-class outcome rather than forcing a single brittle scalar (cf. selective prediction / abstention and set-valued reporting practices),
 * preserving multiobjective / partial-order outputs as sets (Pareto / archive thinking) rather than silently collapsing to a scalar,

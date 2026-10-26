@@ -6,28 +6,19 @@
 
 ### G.6:1 - Problem Frame
 
-Use this pattern when a later user must cite, replay, audit, or refresh a path through several already established objects and relations rather than repeat their complete source account.
+Use this pattern when a later user must cite, replay, audit or refresh a chain of established facts, such as a measurement, an acceptance judgement and a decision. Give that chain a stable address while preserving the evidence and rules for its members.
 
-Use it when the working question is:
-
-* which admitted dated Work occurrences and A.13-qualified actual performer Systems must remain addressable, together with already-established F.6 attribution refs only when the selected path expressly consumes precise assignment-bound attribution, and any local system-role kind or assignment identifier that the path separately uses;
-* which direct participation or binding facts, produced entities, domain results, result epistemes, outcomes, source publications, carriers, and provenance relations must remain addressable;
-* which exact direct relations connect those objects, which pattern defines or constrains each relation, and whether each relation is already established as obtaining;
-* which bounded context, reference plane, time window, bridge, edition, policy, source-currentness result, or reliance boundary limits the cited path;
-* which downstream work and exact use relation may cite the path; and
-* what stronger conclusion, assurance, permission, acceptance, gate passage, or decision the path does not carry.
-
-**Primary EntityOfConcern.** The primary `EntityOfConcern` is an addressable provenance representation: one `EvidenceGraph`, its `PathId` or `PathSliceId`, and any ledger entry that makes the path replayable. G.6 governs path identity, slicing, citation, and local refresh. It does not create the represented work, participation, production, result, episteme, outcome, source, currentness, reliance, or representation correspondence.
+**Primary EntityOfConcern.** The primary `EntityOfConcern` is an addressable provenance representation: one `EvidenceGraph`, its `PathId` or `PathSliceId`, and any ledger entry that makes the path replayable. G.6 governs path identity, slicing, citation and refresh of the representation. The represented facts remain governed by their subject patterns.
 
 **First useful move.** Name the relied-on claim or bounded use, then list the exact object refs and direct relation refs needed to replay it. For every relation record its direct governor and obtaining claim. Only then draw the path. Keep an unresolved relation as a gap; do not turn it into a graph edge asserted as obtaining.
 
 **What goes wrong if missed.** A tidy graph makes an unperformed method look like Work, a co-listed System or entity look like a participant or Work performer, a carrier look like a produced result, a measurement or verdict look like generic evidence, or a provenance edge look like the world-side relation itself.
 
-**What this buys.** Downstream work can cite one stable path while a reviewer can still recover the exact work, participants, products, subject results, result epistemes, sources, direct relations, currentness, and bounded use that the path represents.
+**What this buys.** A downstream user can cite one path and recover its supporting facts, their qualifications and the direct relations that connect them. A changed premise can be traced to every dependent path within the established coverage.
 
-**Not this pattern when.** Use `A.2.4` for the first evidence-use or status-use classification, `A.10` for source recovery and bounded reliance, `A.15.1` and `F.6` for performed Work and its attribution, `A.2.1` only when an assignment occurrence itself is current, `A.6.1` for actual operation bindings, `A.15.PROD` when production or inception is current, the exact domain pattern for its local result, `C.2.1` for the result episteme, `G.11` for currentness, `C.29` for representation correspondence, and `B.3` for assurance. If only one local source-to-use statement is needed, stay in A.10.
+**Not this pattern when.** If the required fact or relation has not been established, use its subject pattern in §4.1 first. If only one local source-to-use statement is needed, stay in A.10.
 
-Here `path` means a path in a descriptive provenance graph. It is not an action route, method, workflow, transformation flow, universal evidence relation, or generic work-result relation.
+Here `path` means a path in a descriptive provenance graph, not an action route.
 
 ### G.6:2 - Problem
 
@@ -40,7 +31,7 @@ The common failures are:
 3. **Result collapse.** Subject result, result episteme, carrier, outcome, assurance, and later decision become one generic result node.
 4. **Declaration-to-runtime collapse.** A `MethodDescription`, operation signature, policy, clause, or plan is read as an actual run and its bindings.
 5. **Hidden crossing.** A path silently crosses context, reference plane, edition, source order, or currentness window.
-6. **Refresh fanout.** One changed source or relation forces a global rerun because the smallest affected path slice cannot be found.
+6. **Incomplete refresh reach.** A changed premise prompts a global rerun or a repair of only the first located slice because its actual dependent paths have not been identified.
 
 ### G.6:3 - Forces
 
@@ -51,7 +42,7 @@ The common failures are:
 | Result continuity versus result collapse | A path may connect measurement, evaluation, aggregation, and decision while preserving every local result and result episteme. |
 | Reusable declaration versus performed occurrence | Methods, descriptions, policies, and clauses may be cited, but dated work and actual bindings remain separate. |
 | Cross-context reuse versus hidden loss | Bridges, editions, time windows, source order, and currentness remain visible at the path slice that depends on them. |
-| Refresh locality versus stale reliance | Stable addresses let one changed object or direct relation reopen only the affected path or slice. |
+| Refresh locality versus stale reliance | One changed premise may affect several paths; complete dependency coverage excludes unrelated paths without losing a dependent use. |
 
 ### G.6:4 - Solution — cite independently governed objects and relations
 
@@ -75,7 +66,7 @@ Create an `EvidenceGraph` only after the relied-on claim or bounded use and its 
 | Transformation-flow structure distinct from performed work | `E.18` and `E.18.2` |
 | First evidence/status use, provenance and bounded reliance, currentness, or assurance | `A.2.4`, `A.10`, `G.11`, or `B.3` respectively |
 
-G.6 does not substitute for any row. If the subject pattern or relation cannot be recovered, the path records an unresolved gap and cannot present that edge as obtaining.
+If the subject pattern or relation cannot be recovered, the path records an unresolved gap and cannot present that edge as obtaining.
 
 Do not add a local `U.EvidenceRole` or turn proof, measurement, benchmark, source, or status labels into system-role kinds. For any claim that a producer, verifier, laboratory, issuer, or maintainer participates, recover the exact direct relation, the participants it declares, and the place each actual participant fills. Other nearby facts—for example, a local system-role kind, assignment, Work occurrence, responsibility, authority, or permission—are separate and may be cited only when they independently obtain; none establishes participation. Do not infer that a passive laboratory or produced entity performs Work merely because the path cites it.
 
@@ -83,7 +74,7 @@ Do not add a local `U.EvidenceRole` or turn proof, measurement, benchmark, sourc
 
 #### G.6:4.2 - EvidenceGraph as a representation
 
-An `EvidenceGraph` is a typed directed graph used for provenance citation and replay. It may project a dependency-closed slice of independently governed objects and relations. It is not a holarchy, work plan, method, transformation flow, result algebra, or proof that its contents obtain.
+An `EvidenceGraph` is a typed directed graph used for provenance citation and replay. It may project a dependency-closed slice of independently governed objects and relations.
 
 Minimal graph fields:
 
@@ -103,7 +94,7 @@ EvidenceGraph:
   C29RepresentationRefs
 ```
 
-A node record is a projection, not a new universal object kind:
+A node record is a projection:
 
 ```text
 RepresentedNodeRecord:
@@ -115,7 +106,7 @@ RepresentedNodeRecord:
   RepresentationRef
 ```
 
-The node set may cite exact Work occurrences and their A.13-qualified actual performer Systems. It may also cite local system-role kinds, assignment occurrences whose identities the path uses, obtaining F.6 relations when precise attribution is expressly consumed, direct participation and binding facts, produced entities, subject results, result epistemes, outcomes, sources, carriers, currentness results, reliance dispositions, and later Work. Every cited Work occurrence uses the independently established performer and A.15.1 Work refs described in §4.1; F.6 refs are optional and never discover the performer. Co-listing creates no relation among these objects.
+Node records use the object kinds and subject patterns in §4.1. Every cited Work occurrence uses the independently established performer and A.15.1 Work refs specified there; add F.6 refs only when precise attribution is consumed. Co-listing creates no relation among the cited objects.
 
 An asserted edge is also a projection:
 
@@ -133,7 +124,7 @@ RepresentedRelationEdgeRecord:
 
 Before the edge enters a relied-on path, the exact direct relation must already be established under its governor. The participant refs in the edge must match that relation; adjacency, direction, shared identifiers, timestamps, source order, or visual layout cannot supply them. `RepresentationRef` points outward to the applicable C.29 correspondence when that correspondence is current.
 
-G.6 defines no fallback core edge vocabulary. Legacy or display labels such as `verifiedBy`, `validatedBy`, `measuredBy`, `producedByWork`, `derivedFrom`, `usesMethodDescription`, `citesSource`, or `evidences` are navigation prompts only. Replace each with the exact formal, measurement, work, production, publication, representation, provenance, temporal, status-use, premise, reference, argument, or other direct relation before asserting the edge as obtaining.
+G.6 defines no fallback core edge vocabulary. Legacy or display labels such as `verifiedBy`, `validatedBy`, `measuredBy`, `producedByWork`, `derivedFrom`, `usesMethodDescription`, `citesSource` or `evidences` are navigation prompts. Recover the exact direct relation and its governor before asserting an edge as obtaining.
 
 #### G.6:4.3 - PathId and PathSliceId
 
@@ -170,7 +161,7 @@ PathCitationRecord:
 
 #### G.6:4.4 - Provenance ledger
 
-A `ProvenanceLedger` is a citable replay index over `PathCitationRecord` entries. It is not a work-progress log, result registry, review-comment log, process-status log, or ontic source.
+A `ProvenanceLedger` indexes `PathCitationRecord` entries for citation and replay. Its object and relation indexes let a user find paths that cite the same basis.
 
 ```text
 ProvenanceLedger:
@@ -185,17 +176,19 @@ ProvenanceLedger:
   RefreshScopeRule
 ```
 
-The ledger may cite work, participants, produced entities, domain results, result epistemes, outcomes, sources, transformations, representation correspondences, provenance, and later uses. A row establishes none of them. Use a ledger when several downstream consumers need the same path family; do not create one merely because a local A.10 account is easy to write.
+Use a ledger when several downstream consumers need the same path family; a single local source-to-use account can remain in A.10.
 
 #### G.6:4.5 - Refresh and source return
 
-Reopen the smallest affected `PathId`, `PathSliceId`, node projection, or relation-edge projection when any cited object, direct relation, governor, source, bridge, representation correspondence, edition, policy, time window, currentness result, or reliance boundary changes.
+When a cited object, direct relation, governor, source, bridge, representation correspondence, edition, policy, time window, currentness result or reliance boundary changes, start at its node or relation-edge projection. Identify the exact changed claim or condition and the receiving use it may alter. Use the represented-object and direct-relation indexes to locate other `PathId` or `PathSliceId` values that consume the same basis. The first located slice is an entry to this inquiry, not its completion boundary.
 
-If the direct relation no longer obtains or its proof becomes unavailable, remove it from the relied-on path or mark the exact unresolved gap. Do not preserve the edge from graph history, infer a replacement relation, rerun unrelated paths, or certify a new downstream result through refresh alone.
+For each candidate path, recover the actual premise, evidence-use, operation-argument or other direct use under its governor. Follow that dependence while a receiving claim, action or required check can change. A shared calibration, causal assumption or source conclusion can affect several otherwise separate paths; include each affected use. Common storage, a citation or graph reachability alone establishes no such dependence. When a changed source requires discovery beyond an adequate existing index, use A.10.1 for its bounded search, direct-use test and coverage limits. An unsearched or unresolved branch is a limit on the conclusion, not an unaffected branch.
+
+Retain independent results and their qualified paths. For an affected branch, return to the subject pattern to determine whether the available basis supports the same result, a narrower use, a changed result or a scoped gap. If a represented relation no longer obtains or its required support is unavailable, remove it from the relied-on path or mark that gap; retain the earlier account for its historical use where warranted. G.11 uses the resulting dependency scope to decide which refresh actions, if any, are needed. Updating a projection does not establish a replacement relation or perform that Work.
 
 #### G.6:4.6 - Declarative representation discipline
 
-`EvidenceGraph`, `PathId`, `PathSliceId`, and `ProvenanceLedger` tell a reader which already governed account is being cited. They do not tell a worker what to do and they do not reconstruct missing world-side facts.
+`EvidenceGraph`, `PathId`, `PathSliceId` and `ProvenanceLedger` identify the governed accounts a reader can inspect. When a needed account is missing, return to its subject pattern.
 
 | Current phrase or artifact | Required recovery before G.6 representation |
 | --- | --- |
@@ -209,7 +202,7 @@ If the direct relation no longer obtains or its proof becomes unavailable, remov
 
 #### G.6:4.7 - Extension wiring without core drift
 
-Selector, benchmark, assurance, refresh, or telemetry patterns may require additional pins in `PathCitationRecord`. They may cite `PathId` or `PathSliceId`, but they do not mint a universal edge, result, evidence, or criterion-participant relation. Any added graph record still names the exact represented object or direct relation and its governor.
+Selector, benchmark, assurance, refresh or telemetry patterns may require additional pins in `PathCitationRecord` and cite `PathId` or `PathSliceId`. Each added record still names its represented object or direct relation and governor.
 
 `G.5` may cite a path for selector explanation, `G.9` for benchmark replication, `G.11` for local refresh, and B.3 for an assurance input. Their selection, benchmark, currentness, and assurance results remain their own.
 
@@ -217,25 +210,33 @@ Selector, benchmark, assurance, refresh, or telemetry patterns may require addit
 
 #### G.6:5.1 - Measurement, acceptance, and decision
 
-C.16 dated measurement work binds the pressure measurand, detector, calibration, model, input quantities, and uncertainty propagation and obtains a pressure measurement result. A distinct C.2.1 episteme states that result. Later G.4 `EvaluationWork` applies one declared acceptance clause through exact A.6.1 bindings and obtains `unknown`; another C.2.1 episteme states that verdict. Later C.11 decision work uses the verdict episteme through an exact premise relation and defers.
+In this constructed case, a measurement team performs dated C.16 measurement Work with bindings for the pressure measurand, detector, calibration, model, input quantities and uncertainty propagation. Its pressure measurement result is stated in a distinct C.2.1 episteme. An evaluation team later performs G.4 `EvaluationWork`, applying one declared acceptance clause through exact A.6.1 bindings and obtaining `unknown`; another C.2.1 episteme states that verdict. A decision maker then performs C.11 decision Work, uses the verdict episteme through an exact premise relation and defers. The performer and Work references are independently established under §4.1.
 
 G.6 may give this chain one `PathId` only after the measurement, work, binding, result, episteme, clause-application, premise, and decision relations are independently established. Its nodes keep raw detector output, indication, actual pressure, measurement result, verdict, and decision distinct. Its edges cite the exact relations; none produces the work, verdict, or decision.
 
 #### G.6:5.2 - Resource aggregation
 
-An engine programme has several C.16 resource measurements, dated test-run work occurrences, exact phase and overlap relations, and a shared warm-up allocation rule. B.1.6 dated aggregation work applies `ProgrammeResourcePolicy-v3` and obtains a typed resource vector with propagated uncertainty; a distinct C.2.1 episteme states it.
+An engine programme has several C.16 resource measurements, dated test-run Work occurrences, exact phase and overlap relations, and a shared warm-up allocation rule. An aggregation team performs dated B.1.6 aggregation Work, applies `ProgrammeResourcePolicy-v3` and obtains a typed resource vector with propagated uncertainty; a distinct C.2.1 episteme states it. The path uses the independently established performer and Work refs.
 
 The G.6 path cites every measurement result and episteme, the work-set and overlap relations, the edition-pinned policy, aggregation work, aggregation result, sources, and representation refs. Epoch labels alone do not establish work-part relations. Warm-up energy allocation and uncertainty propagation are performed in the aggregation work; an emissions verdict remains a separate result.
 
 #### G.6:5.3 - Produced model and benchmark use
 
-Dated training work has exact actual bindings and, when an inception or completion claim is current, one local A.15.PROD claim. Separate benchmark-evaluation work applies its declared method and dataset edition and obtains a result under the benchmark's direct governor; a C.2.1 episteme states that result. E.17 governs the model card's source-backed face and return to the selected claims, E.24.PUB their actual audience availability, and C.29 any consumed representation correspondence. G.11 supplies currentness when later use depends on edition or freshness.
+A training team performs dated training Work with exact actual bindings and, when an inception or completion claim is current, one local A.15.PROD claim. An evaluation team separately performs benchmark-evaluation Work, applies its declared method and dataset edition and obtains a result under the benchmark's direct governor; a C.2.1 episteme states that result. Both Work occurrences use their independently established performer refs. E.17 governs the model card's source-backed face and return to the selected claims, E.24.PUB their actual audience availability, and C.29 any consumed representation correspondence. G.11 supplies currentness when later use depends on edition or freshness.
 
 A G.6 `PathSliceId` may cite that dependency chain for replication. The graph does not infer training from the model's presence, participation from a roster, evaluation from the protocol, superiority from the score, or deployment permission from the model card.
 
 #### G.6:5.4 - Dashboard status cue
 
 A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10 recovers the source and provenance for bounded reliance, with query Work, currentness, and a live rival explanation when those facts affect the claim. G.6 is entered only when a downstream audit or release package needs a stable path through those already established relations. The visible cue, graph path, and ledger row establish neither gate passage nor release.
+
+#### G.6:5.5 - One calibration basis, several receiving paths
+
+In a constructed inspection account, `Path-P1` connects measurement result M1 to acceptance result V1, and `Path-P2` connects M2 to V2. Both measurements use the same calibration qualification K through independently established relations. A later selection S uses both acceptance results. `Path-P3`, stored in the same publication, uses a different calibration and supports an unrelated result.
+
+A correction to K first appears in P1's projection. The ledger's indexes also locate P2, and the receiving-use relations lead from V1 and V2 to S. Reconsider both branches and S under their subject patterns. P3 stays outside this reach because it does not consume the changed qualification. Two paths citing K still cite one common basis; their count supplies no independent corroboration. If the index cannot cover another receiving store, state that discovery limit and use A.10.1 when the receiving question needs that search.
+
+The resulting G.6 account identifies the affected paths and their exact dependencies. G.11:5 continues this case through different branch outcomes and selection of the needed work.
 
 ### G.6:6 - Bias-Annotation
 
@@ -263,6 +264,7 @@ A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10
 | `CC-G6-08` Time and crossing | Are bounded context, plane, window, bridge/loss, edition, policy, source order, and G.11 currentness visible where they limit use? | Add the exact refs or narrow/block the path slice. |
 | `CC-G6-09` Provenance and use | Are A.2.4/A.10 evidence/status use, A.10 provenance/reliance, downstream work, and exact use relation separate? | Recover the direct use; path citation or membership is not actual reliance. |
 | `CC-G6-10` Ledger boundary | Does the ledger merely index already established objects and relations, with `NotCarried`, gaps, and local reopen triggers? | Remove process status, generic result fields, and fact-creating language. |
+| `CC-G6-11` Affected reach | Does the refresh scope include every established dependent use that can change within the declared coverage, including uses of a shared premise on other paths? | Follow §4.5; retain independent paths, expose unresolved coverage and return each affected judgement to its subject pattern. |
 
 ### G.6:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -275,14 +277,14 @@ A dashboard cell shows `Ready`. F.10 governs the status-use classification; A.10
 | Provenance as result or assurance | A path or ledger row is read as truth, currentness, safety, permission, or acceptance. | Use A.10, G.11, and B.3 under their entry conditions, and state the exact local result under its applicable predicate and pattern. |
 | Citation as actual use | A downstream record cites a path and is assumed to have used it. | Establish the exact premise, reference, argument, or decision-use relation; recover dated Work separately under §4.1 when the claim asserts that occurrence. |
 | Workflow overread | A declarative path becomes a method or action route. | Handle Work under A.15.1 and transformation-flow structure under E.18; limit G.6 to representation and citation. |
-| Global refresh | One changed source or relation reopens every graph. | Reopen only the affected path, slice, node projection, or relation-edge projection. |
+| Global refresh or first-slice stop | A changed premise either reopens every graph or leaves another dependent path unchanged. | Recover all actual dependent uses within the covered scope under §4.5; retain independent paths and expose gaps. |
 
 ### G.6:9 - Consequences
 
 Benefits:
 
 * downstream records cite evidence-provenance paths without copying evidence tables;
-* source, bridge, policy, edition, and time changes reopen the smallest path slice;
+* source, bridge, policy, edition and time changes reopen their full affected dependency scope while preserving independent results;
 * evidence, assurance, causal use, status, gate, work, and publication claims stay in their subject patterns;
 * provenance becomes replayable and privacy-minimizable through scoped refs.
 
@@ -294,7 +296,7 @@ Costs:
 
 ### G.6:10 - Rationale
 
-A.10 recovers one relied-on claim, its source/provenance account, and bounded reliance. G.6 adds stable graph-path identity, slicing, shared citation, and path-local refresh when several downstream consumers need the same dependency-closed representation.
+A.10 recovers one relied-on claim, its source/provenance account and bounded reliance. G.6 adds stable path identity, slicing and shared citation. Its indexes help locate uses of a changed common basis; A.10.1 supplies further source-change discovery when needed, and G.11 selects refresh from the resulting scope.
 
 That representational gain does not justify a second ontology of evidence edges. Work, participants, products, subject results, result epistemes, outcomes, sources, provenance, currentness, and later uses already have direct governors. G.6 therefore projects their exact refs and direct relations, and C.29 governs the representation correspondence when current. This makes a complex chain readable without allowing graph topology to create facts.
 
@@ -302,22 +304,22 @@ The ledger is likewise an index over established provenance, not a result store 
 
 ### G.6:11 - SoTA-Echoing
 
-The source-use decisions below are based on the publishers' source versions current on 2026-07-30. These decisions remain qualified through 2027-07-30 unless a new Recommendation, specification edition, maintenance status, or replacement changes the adopted contract earlier. Internal FPF neighbour authority stays in Relations; it is not presented as an external source decision.
+The source-use decisions below are based on the publishers' source versions current on 2026-07-30. These decisions remain qualified through 2027-07-30 unless a new Recommendation, specification edition, maintenance status, or replacement changes the adopted contract earlier.
 
-| Exact source and source-use decision | Visible G.6 mutation | Rejected overread | Smallest source-change replay |
+| Exact source and source-use decision | G.6 use | Rejected overread | Direct source-change entry |
 | --- | --- | --- | --- |
-| [W3C PROV-O, Recommendation 30 April 2013](https://www.w3.org/TR/prov-o/) — **adapt** qualified provenance descriptions and stable entity/activity/agent references only as a representation discipline for exact FPF objects and direct relations. | `RepresentedNodeRecord`, `RepresentedRelationEdgeRecord`, the measurement-to-decision case, and `CC-G6-02/03` require every node and edge to cite an independently governed object or obtaining relation with its governor and qualification. | A PROV-shaped class, activity, agent, qualified association, or derivation does not establish FPF work, participation, production, result, truth, currentness, or later use. | Reopen only §4.2's node/edge rules, the measurement-to-decision path, and `CC-G6-02/03` if PROV-O's qualified-relation contract changes. |
-| [C2PA Content Credentials Technical Specification 2.4, April 2026](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html) — **adapt** asset/manifest identity, claim generator, assertions, ingredients/actions, signature validation, trust policy, and specification version for claim-bound content provenance. | `PathCitationRecord` carries source publication/carrier, C.29 representation, edition/policy, currentness, and `NotCarried`; the produced-model case and `CC-G6-07/08` retain the exact content carrier, transform chain, trust regime, and version. | A valid manifest, visible Content Credential, ingredient chain, or authenticity mark does not establish truth of the represented world state, authorship beyond its exact assertion, work, safety, permission, or adequacy. | Reopen only those `PathCitationRecord` source/version fields, the produced-model carrier slice, and `CC-G6-07/08` when C2PA changes manifest/assertion identity, validation, trust, or version semantics. |
-| [SLSA specification v1.2](https://slsa.dev/spec/v1.2/) with [in-toto Attestation Framework v1.2 and `Statement/v1`](https://github.com/in-toto/attestation/blob/main/spec/README.md) — **adapt** artifact subject, predicate type, producing context, inputs, authenticated envelope, verifier expectation, and versioned attestation separation. | The produced-model/benchmark path names training work, produced model edition, dataset/method edition, benchmark work/result, source inputs, publication/carrier, verifier context, and currentness; `CC-G6-07/08` keep those refs replayable without one generic attestation edge. | A signed statement, provenance predicate, SLSA level, or verification summary does not prove an uncited build/work/result relation, benchmark superiority, runtime safety, release approval, gate passage, or assurance. | Reopen only the attestation-bearing fields of that path slice, the produced-model/benchmark case, and `CC-G6-07/08` when the adopted SLSA provenance/verification contract or in-toto `Statement/v1` semantics change. |
-| [W3C Verifiable Credentials Data Model 2.0, Recommendation 15 May 2025](https://www.w3.org/TR/vc-data-model-2.0/) — **adapt** credential subject, issuer, holder, verifier, status, context, and validity separation for a path that cites an independently governed credential/status use. | `PathCitationRecord` separates source/carrier/currentness refs, downstream work, exact use relation, A.10 reliance disposition, and `NotCarried`; the dashboard-status case and `CC-G6-09` require the status cue, query/use work, verifier or relying context, and actual reliance to remain distinct. | A valid credential, successful proof check, holder presentation, status value, or graph membership does not become claim truth, authorization, permission, gate passage, release, actual reliance, or assurance. | Reopen only those credential/status/use fields, the dashboard-status path, and `CC-G6-09` if VC 2.0 or its adopted status/validity contract changes. |
-| Pineau et al., [*Improving Reproducibility in Machine Learning Research*, JMLR 22(164), 2021](https://jmlr.org/papers/v22/20-303.html), and Mitchell et al., [*Model Cards for Model Reporting*, FAT* 2019](https://doi.org/10.1145/3287560.3287596) — **adapt** exact method, dataset, metric, evaluation condition, version, limitation, and run-evidence disclosure as inputs to a replayable benchmark path. | The produced-model/benchmark case, dependency-closed `PathSliceId`, and `CC-G6-02/07/08` keep model edition, training/evaluation work, dataset and method editions, local result, result episteme, source carrier, limitations, and currentness separately addressable. | A reproducibility checklist, model card, disclosed score, or limitation does not establish that training or evaluation occurred, that the reported result is current, that one model is superior, or that deployment is permitted. | Reopen only the model/benchmark slice fields, that worked case, and `CC-G6-02/07/08` if the adopted reproducibility or reporting contract changes. |
-| [ISO/IEC/IEEE 15026-2:2022, *Systems and software assurance — Part 2: Assurance case*](https://www.iso.org/standard/80625.html) — **adapt** the separation between cited evidence and the structure, maintenance, and evaluation of an assurance case. | `NotCarried` names assurance explicitly, the subject-pattern map and §4.7 handle assurance under B.3, and `CC-G6-10` permits the ledger to index evidence paths without becoming an assurance result. | A complete-looking evidence path, ledger entry, confidence label, or signed carrier is not an assurance claim, safety result, readiness result, compliance result, or release confidence. | Reopen only `NotCarried`, the B.3 extension boundary, one assurance-input path, and `CC-G6-10` if the adopted assurance-case evidence or maintenance boundary changes. |
+| [W3C PROV-O, Recommendation 30 April 2013](https://www.w3.org/TR/prov-o/) — **adapt** qualified provenance descriptions and stable entity/activity/agent references only as a representation discipline for exact FPF objects and direct relations. | `RepresentedNodeRecord`, `RepresentedRelationEdgeRecord`, the measurement-to-decision case, and `CC-G6-02/03` require every node and edge to cite an independently governed object or obtaining relation with its governor and qualification. | A PROV-shaped class, activity, agent, qualified association, or derivation does not establish FPF work, participation, production, result, truth, currentness, or later use. | Start with §4.2's node/edge rules, the measurement-to-decision path, and `CC-G6-02/03` if PROV-O's qualified-relation contract changes. |
+| [C2PA Content Credentials Technical Specification 2.4, April 2026](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html) — **adapt** asset/manifest identity, claim generator, assertions, ingredients/actions, signature validation, trust policy, and specification version for claim-bound content provenance. | `PathCitationRecord` carries source publication/carrier, C.29 representation, edition/policy, currentness, and `NotCarried`; the produced-model case and `CC-G6-07/08` retain the exact content carrier, transform chain, trust regime, and version. | A valid manifest, visible Content Credential, ingredient chain, or authenticity mark does not establish truth of the represented world state, authorship beyond its exact assertion, work, safety, permission, or adequacy. | Start with those `PathCitationRecord` source/version fields, the produced-model carrier slice, and `CC-G6-07/08` when C2PA changes manifest/assertion identity, validation, trust, or version semantics. |
+| [SLSA specification v1.2](https://slsa.dev/spec/v1.2/) with [in-toto Attestation Framework v1.2 and `Statement/v1`](https://github.com/in-toto/attestation/blob/main/spec/README.md) — **adapt** artifact subject, predicate type, producing context, inputs, authenticated envelope, verifier expectation, and versioned attestation separation. | The produced-model/benchmark path names training work, produced model edition, dataset/method edition, benchmark work/result, source inputs, publication/carrier, verifier context, and currentness; `CC-G6-07/08` keep those refs replayable without one generic attestation edge. | A signed statement, provenance predicate, SLSA level, or verification summary does not prove an uncited build/work/result relation, benchmark superiority, runtime safety, release approval, gate passage, or assurance. | Start with the attestation-bearing fields of that path slice, the produced-model/benchmark case, and `CC-G6-07/08` when the adopted SLSA provenance/verification contract or in-toto `Statement/v1` semantics change. |
+| [W3C Verifiable Credentials Data Model 2.0, Recommendation 15 May 2025](https://www.w3.org/TR/vc-data-model-2.0/) — **adapt** credential subject, issuer, holder, verifier, status, context, and validity separation for a path that cites an independently governed credential/status use. | `PathCitationRecord` separates source/carrier/currentness refs, downstream work, exact use relation, A.10 reliance disposition, and `NotCarried`; the dashboard-status case and `CC-G6-09` require the status cue, query/use work, verifier or relying context, and actual reliance to remain distinct. | A valid credential, successful proof check, holder presentation, status value, or graph membership does not become claim truth, authorization, permission, gate passage, release, actual reliance, or assurance. | Start with those credential/status/use fields, the dashboard-status path, and `CC-G6-09` if VC 2.0 or its adopted status/validity contract changes. |
+| Pineau et al., [*Improving Reproducibility in Machine Learning Research*, JMLR 22(164), 2021](https://jmlr.org/papers/v22/20-303.html), and Mitchell et al., [*Model Cards for Model Reporting*, FAT* 2019](https://doi.org/10.1145/3287560.3287596) — **adapt** exact method, dataset, metric, evaluation condition, version, limitation, and run-evidence disclosure as inputs to a replayable benchmark path. | The produced-model/benchmark case, dependency-closed `PathSliceId`, and `CC-G6-02/07/08` keep model edition, training/evaluation work, dataset and method editions, local result, result episteme, source carrier, limitations, and currentness separately addressable. | A reproducibility checklist, model card, disclosed score, or limitation does not establish that training or evaluation occurred, that the reported result is current, that one model is superior, or that deployment is permitted. | Start with the model/benchmark slice fields, that worked case, and `CC-G6-02/07/08` if the adopted reproducibility or reporting contract changes. |
+| [ISO/IEC/IEEE 15026-2:2022, *Systems and software assurance — Part 2: Assurance case*](https://www.iso.org/standard/80625.html) — **adapt** the separation between cited evidence and the structure, maintenance, and evaluation of an assurance case. | `NotCarried` names assurance explicitly, the subject-pattern map and §4.7 handle assurance under B.3, and `CC-G6-10` permits the ledger to index evidence paths without becoming an assurance result. | A complete-looking evidence path, ledger entry, confidence label, or signed carrier is not an assurance claim, safety result, readiness result, compliance result, or release confidence. | Start with `NotCarried`, the B.3 extension boundary, one assurance-input path, and `CC-G6-10` if the adopted assurance-case evidence or maintenance boundary changes. |
 
-Source refresh is local: replay the changed row's named record fields, rule or case, and checklist rows first. Widen only when that replay contradicts another current G.6 locus; a changed source cannot by itself create a represented object, obtaining relation, work occurrence, result, currentness, reliance, assurance, permission, or decision.
+Start source return at the changed row's named fields, rule, case and checklist rows. Then follow §4.5 through every actual dependent representation and receiving use, including another row when it shares the changed premise. Preserve independently supported accounts. The applicable subject patterns establish any revised relation or result before its graph projection is updated.
 
 ### G.6:12 - Relations
 
-* **Builds on:** `A.10` for source recovery, provenance, bounded reliance, and graph-edge discipline; `A.2.4` for first-use evidence/status classification; `C.2.1` for claim and result epistemes; `C.29` for representation correspondence.
+* **Builds on:** `A.10` for source recovery, provenance, bounded reliance and graph-edge discipline; `A.10.1` for source-change discovery and affected-use reach; `A.2.4` for first-use evidence/status classification; `C.2.1` for claim and result epistemes; `C.29` for representation correspondence.
 * **Coordinates with:** `A.13` and `A.15.1` for already-established exact actual performers and Work; `F.6` and `A.2.1` only when the receiving path expressly consumes precise assignment-bound attribution; `A.6.1` for actual operation bindings; the exact pattern for each participation relation; `A.15.PROD` for production or inception when current; `C.16` for measurement results; `G.4` for runtime evaluation results; `B.1.6` for work-resource aggregation results; `C.28` for causal use; `F.10` for status use; `F.9` for bridge and loss; `E.18` and `E.18.2` for transformation-flow structure; `G.11` for currentness; `B.3` for assurance; `E.17` for source-backed faces and return to source; `E.24.PUB` for obtaining publication occurrences; and the pattern that defines each exact formal, diagnostic, conformance, comparison, selection, acceptance, gate, permission, commitment, or decision claim cited by a path.
 * **Used by:** selector, benchmark, replication, audit, refresh, assurance, maturity, and release patterns that need stable provenance-path citation, including `G.5`, `G.9`, and `G.11`.
 * **Does not govern:** any represented work occurrence, participation, production, local result, result episteme, outcome, source publication, representation correspondence, currentness result, assurance, later use, or stronger conclusion named in `NotCarried`.

@@ -4,7 +4,9 @@
 
 ### A.3:1 - Intent
 
-Establish a substrate-neutral way to say which system performed one dated world-side Work occurrence by enacting which `U.Method`, under which exact `U.SystemRoleAssignment` when assignment-bound attribution is needed, and which separately governed method-description, capability, work-to-change, evidence, or aggregation claims the current use additionally relies on—without self-magic and without blurring run-independent semantics, the occurrence, and an episteme that describes or asserts it. The pattern keeps the **Transformer Quartet** object families distinct; it does not require every change claim or Work assertion to carry all four. `A.3.4` independently identifies an actual bounded change; that identification alone establishes no acting system, agency, role assignment, method, or work. A.3 builds directly on **System-Role Kinds and Assignments (A.2)** and the direct Work and episteme rules in **A.15.1 and C.2.1** and is guarded by **Strict Distinction (A.7)** and **Evidence Graph Referring (A.10)**.
+Use this pattern to distinguish a performed Work occurrence from its performer, enacted Method and any relied-on MethodDescription. Recover each performer's A.13 basis, then admit the dated Work independently through A.15.1 with its actual enacted Method. Use F.6 when the account also needs precise assignment-bound attribution. Add MethodDescription, capability, work-to-change, evidence or aggregation claims only when the receiving use relies on them.
+
+The **Transformer Quartet** keeps those object families distinct; it does not require every change claim or Work assertion to name all four. A.3.4 independently identifies an actual bounded change. That result alone establishes no acting System, agency, assignment, Method or Work. A.2, A.15.1 and C.2.1 define the neighboring objects; A.7 preserves their distinctions and A.10 governs evidence use.
 
 ### A.3:2 - Context
 
@@ -15,28 +17,27 @@ Establish a substrate-neutral way to say which system performed one dated world-
 
 ### A.3:3 - Problem
 
-Legacy phrasing (“actor / process / blueprint”) causes recurrent failures:
+Shorthand such as “actor,” “process” or “blueprint” can hide these different questions:
 
-1. **Self‑magic in an actor-side claim:** “the system configures itself” is used as if it already supplied a performer, role assignment, method, work occurrence, causal relation, and evidence.
+1. **Missing acting-side basis:** a self-configuration claim depends on a performer or distinct acting and changed positions that its account has not established.
 2. **Plan = event:** blueprint/algorithm reported as if execution happened.
 3. **Capability or Method = Work:** having a capability or a Method is taken to establish that Work occurred.
 4. **Episteme as doer:** documents/models treated as actors.
-5. **Occurrence-description leak:** a method, plan, log, ticket, carrier, or evidence item is treated as the dated Work occurrence, while the assertion fails to designate the actual performer assignment, enacted Method, extent, affected referent, and direct relations.
-   A.2, A.7, A.10 and A.15.1 supply these distinctions, but A.3 must give the **canonical quartet** that authors can apply consistently.
+5. **Occurrence-description confusion:** a Method, plan, log, ticket or carrier is treated as the dated Work occurrence, leaving the actual occurrence and the basis required by the receiving claim unresolved.
 
 ### A.3:4 - Forces
 
 | Force                       | Tension                                                                                     |
 | --------------------------- | ------------------------------------------------------------------------------------------- |
 | **Identity vs behaviour**   | Keep holon identity stable while roles/behaviours change.                                   |
-| **Simplicity vs precision** | Managers want one “process” box; kernel must keep **MethodDescription / Method / Work** distinct.  |
-| **Universality vs idioms**  | Pumps, proofs, and data‑pipelines must read the same, yet allow domain names.               |
+| **Simplicity vs precision** | One process box can hide the distinctions among MethodDescription, Method and Work that a receiving use needs. |
+| **Universality vs idioms** | Accounts of physical and epistemic Work need the common distinctions while preserving domain terms. |
 | **Reusable semantics vs dated occurrence** | Keep Method, any MethodDescription edition, and Work distinct; make each relied-on connection explicit. |
 | **Evidence vs mereology**   | Provenance edges (EPV‑DAG) must never turn into part‑whole edges.                           |
 
 ### A.3:5 - Solution — The Transformer Quartet
 
-For work-enactment, A.3 keeps four neighboring anchors visible: the performer-side assignment, a MethodDescription edition when the receiving use relies on one, the enacted Method, and the dated Work. For another independently grounded asymmetric actor-side claim, apply only the anchors required by its direct governor. These anchors qualify the actor-side claim; they are not occurrence conditions for every `U.Transformation`.
+For work enactment, A.3 distinguishes four objects: the performer System with its needed assignment basis, a MethodDescription edition when the use relies on one, the enacted Method, and the dated Work. Another independently grounded actor-side claim uses only the participants and relations required by its direct governing pattern. These distinctions qualify that acting-side claim; they are not occurrence conditions for every `U.Transformation`.
 
 #### A.3:5.1 - The four anchors (terms & types)
 
@@ -128,7 +129,7 @@ When Work on an episteme or its carrier is claimed, the performer is still a Sys
 Every performed resource-use fact relied on for a claim about Work MUST state its measure and units. A percentage that enters a resource aggregation must be grounded in the exact PortionOf measure needed by that use. Totals, allocation, overlap handling, deduplication, and optional `Gamma_work` notation belong to a separately recovered B.1.6 aggregation, not to Work identity.
 
 **CC‑A3‑7 - Authority, justification, and provenance boundary.**
-Authority, justification, and provenance are not constitutive fields of a SystemRoleAssignment occurrence or Work occurrence. When a receiving use relies on one of them, identify the exact episteme and direct authority, justification, source, evidence, or provenance relation and connect it to the exact assignment occurrence, Work individual, assertion, or description. None of those neighboring claims makes the assignment obtain or the Work occur.
+Authority, justification and provenance are not generic constitutive fields of a SystemRoleAssignment or Work occurrence. When a receiving use relies on one of them, identify the exact episteme and direct authority, justification, source, evidence or provenance relation and connect it to the assignment occurrence, Work individual, assertion or description. The assignment and Work must obtain under their own predicates.
 
 **CC‑A3‑8 - Agentic policy, planning, Work, and outcome separation.**
 An agentic case does not license a generic pipeline from policy, through a planned action, to an action. Recover each exact policy, objective, selection or decision, WorkPlan, SystemRoleAssignment, dated Work, actual change, and outcome claim under its direct owner when that claim is current. A policy does not create a plan or Work; a plan does not prove Work; and Work does not prove an outcome. Do not mint `U.PlannedAction` or `U.Action` from ordinary action wording.
@@ -143,7 +144,7 @@ A.3 does not require a MethodDescription or an assertion about Work to make ever
 
 **Benefits**
 
-* **Explainability by construction.** A conforming assertion about performed Work designates the world-side occurrence, each performer System's A.13 basis, enacted Method, and any obtaining F.6 attribution or neighboring description, capability, work-to-change, evidence, or aggregation claim on which the current use relies; actual-change identity remains separately inspectable under A.3.4.
+* **Recoverable Work basis.** A conforming assertion about performed Work designates the world-side occurrence, each performer System's A.13 basis, enacted Method, and any obtaining F.6 attribution or neighboring description, capability, work-to-change, evidence, or aggregation claim on which the current use relies; actual-change identity remains separately inspectable under A.3.4.
 * **Keep system parts distinct from method and edition claims.** A Method, local system-role kind, or description does not become a part of a System by describing its operation; edition succession is also distinct from a part-whole relation. Actual Method-to-Method parts remain governed by A.3.1 and B.1.5.
 * **Composable analytics without hidden ownership.** Exact Work intervals and performed resource-use facts can feed separately recovered B.1.4 or B.1.6 aggregations; the selected policy, evidence, and result remain inspectable at that direct owner.
 * **Local plurality without whole-context bridges.** Exact role taxonomies, ReferenceSchemes, compatibility rules, and use-specific mappings let local practices differ without treating a shared label or one bridge as wholesale equivalence.
@@ -151,11 +152,11 @@ A.3 does not require a MethodDescription or an assertion about Work to make ever
 **Trade‑offs**
 
 * **More explicit separation when reliance needs it.** Start with the smallest grounded performer-assignment, Method, and Work claims; add MethodDescription, capability, policy, plan, change, evidence, and aggregation relations only when a named use depends on them.
-* **Discipline for reflexive work.** Modellers must ground distinct acting and changed positions before using a controller–plant or other reflexive split; this adds only the relation claims the use needs and avoids both self-magic and arbitrary decomposition.
+* **Discipline for reflexive work.** Modellers must ground distinct acting and changed positions before using a controller–plant or other reflexive split; this adds only the relation claims the use needs and avoids an ungrounded performer or arbitrary decomposition.
 
-### A.3:9 - Rationale (post‑2015 cross‑domain support)
+### A.3:9 - Rationale and Source Comparisons
 
-**Constructor theory (post‑2015).**
+**Constructor theory.**
 Constructor theory informs the distinction between possible and impossible tasks and the conditions on substrates and constructors. A.3 adopts that modal discipline without equating a constructor-theory constructor with an FPF performer or `TransformerRole` holder. In the performed-Work branch, an independently grounded System may be the holder of an exact SystemRoleAssignment, and a Work occurrence performed under that assignment may enact an exact Method; natural, spontaneous, joint, formal, or otherwise non-agentive transformation remains possible without that actor-side factorization. A task description qualifies as a MethodDescription only under A.3.2; it is neither the constructor nor the Work. ([Royal Society Publishing][1], [arXiv][2], [Constructor Theory][3])
 
 **Active inference & free‑energy mechanics (2017→).**
@@ -175,7 +176,7 @@ A.3 keeps the target EntityOfConcern, MethodDescription, Method, local system-ro
 A.3's CC-A3-1 uses A.12 only when an actor-side or reflexive-work claim is current. The split keeps grounded acting and changed positions distinct for that claim; it neither invents an actor for non-separable change nor turns ordinary descent to already grounded parts into an MHT.
 
 **A.13 Agential Role.**
-When an agency claim is current, A.13 governs agenthood and the domain profile, while A.17, A.18, A.19, C.16, and A.10 govern its measurement and evidence as applicable; planned C.9 may later consolidate the profile but supplies no current governing force. A.3 keeps identity, role assignment, method, plan, work, transformation, and evidence separate. Scale-free or minimal physical agentivity, observerhood, self-evidencing, or causal participation does not by itself establish an obtaining `U.SystemRoleAssignment`, `TransformerRole@Context`, method enactment, or dated Work.
+When an agency claim is current, A.13 governs agenthood and the domain profile, while A.17, A.18, A.19, C.16, and A.10 govern its measurement and evidence as applicable. A.3 keeps identity, role assignment, method, plan, work, transformation, and evidence separate. Scale-free or minimal physical agentivity, observerhood, self-evidencing, or causal participation does not by itself establish an obtaining `U.SystemRoleAssignment`, `TransformerRole@Context`, method enactment, or dated Work.
 
 **A.3.4 Actual Bounded Change Under Conditions.**
 A.3.4 independently identifies one actual bounded transformation from the changed referent and subject-side occurrence facts. A.3 opens only when an actor-side enactment claim is additionally grounded. Natural, spontaneous, formal, relational, and joint-dynamics changes therefore need no fictive performer.
@@ -191,9 +192,6 @@ A.3 consumes A.14/C.13 only for independently grounded part or structure relatio
 
 **B-cluster (Gamma sections).**
 A.3 supplies grounded actor-side facts and exact Work occurrences; receiving assertions may designate them, but A.3 does not require a universal bundle of Gamma calculations. B.1.5 governs order-sensitive Method composition and optional `Gamma_method`; B.1.4 governs a selected temporal aggregation and optional `Gamma_time`; B.1.6 governs a selected Work-resource aggregation and optional `Gamma_work`. System-boundary and epistemic aggregations use their exact direct patterns when current. Every such result has its own EntityOfConcern, policy, evidence, and admissible use rather than becoming a field or identity condition of MethodDescription, SystemRoleAssignment, or Work.
-
-**Indexing to the glossary.**
-Terms used here (TransformerRole, Work, Method, MethodDescription, PortionOf, PhaseOf, BoundedContext) remain exactly as defined in Annex A; see A.1/A.2/A.14/A.15 entries for lexical registers.
 
 [1]: https://royalsocietypublishing.org/doi/10.1098/rspa.2014.0540 "Constructor theory of information | Proceedings of the Royal Society A"
 [2]: https://arxiv.org/abs/1405.5563 "Constructor Theory of Information"

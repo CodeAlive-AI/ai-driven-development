@@ -10,12 +10,12 @@ E.1 sets the aim of making reliable reasoning accessible across disciplines thro
 The pillars are also the first-principles basis of FPF. They are the minimal commitments from which pattern-level work derives: decisive structure, teachability, maturing formality, open kernel, layering, register discipline, practical payoff, cross-scale consistency, explicit state, open-ended evolution, and SoTA renewal. Later patterns can support this basis by making a concrete argument about pillar support more inspectable; they do not replace pillar authority.
 
 ### E.2:2 - Problem
-Frameworks without binding first principles wobble between two extremes: rigid dogmas that kill adaptation and amorphous guidelines that invite cognitive chaos. In either case, reasoning fragments, auditability collapses, and physical impact suffers.
+Without binding first principles, contributors cannot distinguish commitments that proposals must preserve from choices they may revise. Treating every choice as fixed blocks adaptation; treating every commitment as optional leaves incompatible rules without a basis for resolution.
 
 ### E.2:3 - Forces
 | Force                          | Tension                                                |
 | ------------------------------ | ------------------------------------------------------ |
-| **Foundational Stability**     | Immutable core ↔ perpetual adaptation to new knowledge |
+| **Foundational Stability**     | Stable commitments ↔ adaptation to new knowledge |
 | **Cognitive Load**             | Minimal elegance ↔ comprehensive coverage              |
 | **Rigor vs Accessibility**     | Formal soundness ↔ intuitive entry for non‑specialists |
 | **Universality vs Modularity** | Domain‑agnostic scope ↔ plug‑in extensibility          |
@@ -75,7 +75,7 @@ When a pillar-impact argument relies on mathematical structure, scale behavior, 
 
 **BLP‑6 — Precedence & Safeguards.** BLP combines governance and architectural principles; classify each compared principle under E.3 rather than assigning one class to the whole policy. It is instantiated by Pillars **P‑10 (Open‑Ended Evolution)**, **P‑11 (SoTA Alignment)**, **P‑7 (Pragmatic Utility)**, and **P‑1 (Cognitive Elegance)**. It does **not** override applicable safety and ethics requirements, **E.5** Guard‑Rails, or E.3 precedence rulings; where BLP conflicts with Guard‑Rails, **Guard‑Rails prevail**. When **NQD/E/E‑LOG** elevates illumination to dominance for exploration mandates, BLP **adopts that lens** rather than overriding it.
 
-*Informative SoTA contexts (post‑2015):* set-returning selection across **LLM prompt‑programming vs fine‑tuned task models**; **preference‑learning families (RLHF ↔ DPO)**; **QD archives (MAP‑Elites/CMA‑ME/DQD/QDax)**; **open‑ended environment–method co‑evolution (POET‑class)**; **offline RL vs Decision Transformer parity**; and beyond ML, **optimization/control** (model‑based planning vs hand‑tuned controllers) and **simulation‑based inference** in the sciences. These are **illustrative only**; use the parity harness instead of single‑winner leaderboards.
+BLP applies to comparisons such as prompt programming versus fine-tuning and model-based planning versus hand-tuned control when they make the scale or generality claims specified above. Their tasks and receiving conditions determine the comparison; G.5/G.9 apply when their selector/parity contracts hold.
 
 ### E.2:7 - Conformance Checklist — BLP
 
@@ -110,7 +110,7 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 
 *Positive*
 
-* Provides an explicit “north star” for every contributor.
+* Gives contributors explicit constitutional obligations.
 * Delivers a falsifiable checklist for evaluating proposals.
 * Builds trust in high‑assurance domains through transparency.
 
@@ -121,7 +121,7 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 
 ### E.2:11 - Rationale
 
-The pillars are distilled from systems engineering, philosophy of science, software architecture, and ontology design. They interlock: *Cognitive Elegance* (P‑1) enables *Didactic Primacy* (P‑2); *Open‑Ended Kernel* (P‑4) and *FPF Layering* (P‑5) make *Open‑Ended Evolution* (P‑10) and *SoTA alignment* (P‑11) feasible; *Cross‑Scale Consistency* (P‑8) provides the algebraic backbone for *Scalable Formality* (P‑3). This minimal yet sufficient set balances stability with change, rigor with accessibility, and abstraction with measurable impact.
+The pillars are distilled from systems engineering, philosophy of science, software architecture, and ontology design. They interlock: *Cognitive Elegance* (P‑1) enables *Didactic Primacy* (P‑2); *Open‑Ended Kernel* (P‑4) and *FPF Layering* (P‑5) make *Open‑Ended Evolution* (P‑10) and *SoTA alignment* (P‑11) feasible; *Cross‑Scale Consistency* (P‑8) provides the algebraic backbone for *Scalable Formality* (P‑3). Together the pillars balance stability with change, rigor with accessibility, and abstraction with measurable impact.
 
 `C.29` is a downstream support pattern for this constitution when mathematical first-principles structure is part of an argument about pillar support. It makes the structure, loss, and stop condition explicit while `E.2` remains authority over what counts as a pillar.
 
@@ -132,6 +132,6 @@ The pillars are distilled from systems engineering, philosophy of science, softw
 * **Mathematical support path:** `C.29` supports pillar-impact arguments only for adequacy of mathematical lenses used to express first-principles structure. It does not amend pillar content, priority, or conformance.
 * **Governs:** Every DRR, tool, and pedagogical artefact linked to FPF.
 
-*These pillars are not a cage but the load‑bearing columns of a workshop where ideas can be safely built, dismantled, and evolved.*
+
 
 ### E.2:End

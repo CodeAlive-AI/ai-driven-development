@@ -4,17 +4,17 @@ A platform team asks:
 
 > Should we buy, fine-tune, or build an agent stack for our product?
 
-Without FPF, the conversation often mixes architecture, vendor comparison, safety, evidence, budget responsibility, user value, and implementation planning. The loudest option can win before the team knows what is being compared.
+The discussion can mix architecture, vendor comparison, safety, evidence, budget responsibility, user value and implementation planning before the team has established what it is comparing.
 
-With FPF, the first pass can become a small set of explicit project objects:
+A first pass with FPF can make the following distinctions explicit:
 
-- holons in play: the product, the agent stack, and the team or toolchain that will change it are not the same holon;
-- architecture flow: what problem pressure should become which candidate, selected, expected, and actual structures;
+- project objects: distinguish the product, the agent stack, and the team or toolchain involved in changing them;
+- architecture flow: which candidate and selected structures address the problem pressure, and how expected and actual structures compare;
 - comparison frame: which alternatives are in the candidate set;
 - evaluation characteristics: cost, latency, controllability, safety, maintainability, time to first use, and other project-specific characteristics;
-- evidence gaps: which test result makes commitment admissible;
+- evidence gaps: which missing evidence can change whether commitment is justified;
 - current decision state: whether the team is choosing now, keeping a selected set, making a project architecture decision, or doing more discovery;
-- work and feedback: which method, readiness, and performed-work records establish that the selected structures were actually realized;
+- work and feedback: which method and readiness conditions are needed, what Work was performed, and what evidence supports realization of the selected structures;
 - reader reliance: what engineering, management, and assurance readers may responsibly rely on.
 
-That same shape can be used for a factory modernization, laboratory protocol, construction design change, supply-chain decision, safety case, or research program. The point is not the AI topic; the point is one body of reasoning that can be reviewed, improved, and published without changing meaning on the way.
+These questions can also guide a factory modernization, laboratory protocol, construction design change, supply-chain decision, safety case or research program. They help keep reasoning reviewable and reusable while preserving its meaning in different presentations.

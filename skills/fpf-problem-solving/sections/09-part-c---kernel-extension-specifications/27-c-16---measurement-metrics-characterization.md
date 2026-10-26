@@ -70,7 +70,7 @@ If a fact needed for that interpretation is unavailable, state which conclusion 
 
 #### C.16:5.2 - Fix Characteristic, Scale, unit and time stance
 
-**M‑CSLC‑1.** One `U.DHCMethod` binds exactly one Characteristic to exactly one Scale. A discrete reading names its Level; another reading names its Coordinate or value on that Scale.
+**M‑CSLC‑1.** One `U.DHCMethod` binds exactly one Characteristic to exactly one Scale. A reading names its Coordinate or value on that Scale, and a Level when the Scale supplies that named category or tier.
 
 **M‑CSLC‑2.** When units apply, name the quantity kind and presentation Unit. Conversions are admissible only when they preserve the quantity kind and the Scale supports the operation. Nominal and ordinal labels do not acquire interval or ratio arithmetic by being encoded as numbers.
 
@@ -136,8 +136,7 @@ Use **measurand**, **measurement subject**, **Characteristic**, **Scale**, **Lev
 
 ### C.16:6 - Scale-type admissibility quick reference (Informative)
 
-> **Didactic note.** This table is a memory aid for engineers and managers. It does **not** introduce new admissibility rules. Normative admissibility of operations by scale type is governed by **A.18 (CSLC)** and, where mechanized in CG‑frames, by the relevant admissibility profiles.
-> If any row below conflicts with A.18, treat it as an illustrative example and follow A.18.
+A.18 governs operation admissibility by Scale type; CG-frame admissibility profiles govern their declared mechanized uses. This table summarizes those distinctions. A Scale-compatible calculation also needs the statistical or subject-model assumptions that justify its use.
 
 | Scale type   | Comparisons    | Location          | Differences        | Ratios                   | Admissible summaries                                  | Typical unsupported anti-patterns                                   |
 | ------------ | -------------- | ----------------- | ------------------ | ------------------------ | ----------------------------------------------------- | ------------------------------------------------------------------- |
@@ -147,13 +146,12 @@ Use **measurand**, **measurement subject**, **Characteristic**, **Scale**, **Lev
 | **Ratio**    | <, =, >        | mean location     | Δ meaningful       | ratios meaningful        | arithmetic/geometric means, cv, growth rates          | adding heterogeneous units; log on nonpositive values               |
 
 **Reminders (informative; see A.18 for normative rules).**
-G‑1 (Order). On ordinal, transforms should be **monotone**.
+G‑1 (Order). Ordinal transforms preserve the declared order and distinctions.
 G‑2 (Differences). On interval or ratio, **Δ** is meaningful; on ordinal or nominal, it is undefined.
-G‑3 (Ratios). Only ratio Scales admit **x/y** semantics; interval, ordinal, or nominal do not.
+G‑3 (Ratios). Ratios of raw values require a ratio Scale. Ratios of derived differences require their own quantity interpretation and model conditions.
 G‑4 (Unit coherence). Interval or ratio arithmetic presumes compatible units (or a declared conversion).
 G‑5 (Target polarity). If polarity is targeted, comparisons use distance‑from‑target semantics as declared by the relevant subject pattern, template, and cited method or mechanism.
 
-*(These rules line up with the MM‑CHR exposition of CSLC and term discipline; A.17 fixes the lexical side.)*
 
 ### C.16:7 - Provenance and use semantics (Normative)
 
@@ -189,7 +187,7 @@ The carrier, dashboard, ledger, criterion clause, and evidence path may represen
 
 **Internal-combustion-engine test bench.** One dated test-bench work occurrence binds the engine, dynamometer, fuel batch, ambient conditions, method, model, and calibration records. Torque, exhaust temperature, and emissions are three Characteristics with separate Scales and result epistemes; their input quantities, output quantities, covariance where relevant, and uncertainties remain separately recoverable. Aggregation work may later construct a declared performance summary, and evaluation work may apply an emissions criterion. Neither the summary nor the pass/fail verdict is the torque or emissions measurement result.
 
-**Architecture coupling.** The measurand is the exact ordered module pair under a declared dependency census window, not either module alone. The Characteristic is Coupling on an ordinal Scale. The method description defines generic dependency classes; dated work binds the actual codebase edition and pair. The result episteme states the Level and basis. A later release decision may rely on it, but the dashboard tile and decision record do not establish the census work.
+**Architecture coupling.** The measurement subject is the exact ordered module pair under a declared dependency census window, not either module alone. The Characteristic is Coupling on an ordinal Scale. The method description defines generic dependency classes; dated work binds the actual codebase edition and pair. The result episteme states the Level and basis. A later release decision may rely on it, but the dashboard tile and decision record do not establish the census work.
 
 #### C.16:8.3.1 - A voltmeter changes the voltage it reads
 
@@ -258,21 +256,19 @@ Measurement is not merely reading a carrier. It is performed work under a method
 
 ### C.16:14.1 - SoTA-Echoing
 
-Recheck the affected source-use decision before relying on it after 2027-07-30 or following an earlier change to the source edition, amendment, correction, Recommendation status, or normative definition. External terms guide the bounded C.16 rules named below; no source imports its ontology wholesale or establishes a measurement, work occurrence, result, episteme, calibration fact, or later-use relation.
+These sources contribute different parts of measurement interpretation. Their quantity, model and observation concepts retain their source meanings; correspondence to an FPF concept requires F.9 only when the use depends on that semantic mapping.
 
-| Exact source and source-use decision | Visible C.16 mutation | Rejected overread | Smallest source-change replay |
-| --- | --- | --- | --- |
-| [JCGM 200:2012, VIM3, online entry 2.9 `measurement result`](https://jcgm.bipm.org/vim/en/2.9.html), including the online corrections/annotations as of 2026-07-30 — **adopt** the attributed-values-plus-relevant-information boundary. | `M-RES-1`, `M-RES-2`, the calibrated-detector case, and checklist items 6–7 keep measurand, attributed values, uncertainty/relevant information, and result episteme distinct. | A displayed indication, raw output, actual subject state, diagnosis, verdict, or decision is not the measurement result. | Reopen only `M-RES-1/2`, the calibrated-detector result paragraph, and checklist items 6–7 if VIM changes the result/measurand boundary. |
-| [JCGM GUM-6:2020, *Developing and using measurement models*](https://doi.org/10.59161/JCGMGUM-6-2020) — **adapt** its model/input/output/model-adequacy and uncertainty discipline to the C.16 measurement chain. | `M-MODEL-1`, `M-IO-1`, `M-UNC-1/2`, the engine-test case, and checklist items 3–4 make model edition, actual inputs, output quantity, assumptions, calibration, covariance, propagation, and validity domain recoverable. | Model input/output roles are not universal work relations; more provenance pointers do not reduce uncertainty; a formula or function does not prove that measurement work occurred. | Reopen only `M-MODEL-1`, `M-IO-1`, `M-UNC-1/2`, the engine-test uncertainty paragraph, and checklist items 3–4 if GUM changes model construction, adequacy, or propagation requirements. |
-| [ISO 80000-1:2022, *Quantities and units — Part 1: General*](https://www.iso.org/standard/76921.html) and [ISO/IEC 25024:2015, confirmed current in 2022](https://www.iso.org/standard/35749.html) — **Bridge-only** for quantity/unit names and data-quality-measure alignment. | They may populate a Concept-Set/Bridge used by `M-CSLC-2` or a receiving data-quality measure; they do not change C.16's separation between Characteristic/Scale and measurement result. | Standard quantity, unit, or quality-measure labels do not authorize arithmetic, comparability, acceptance, or a C.16 result. | Reopen only the affected Bridge row plus `M-CSLC-2` and checklist item 2; reopen no measurement case unless the mapped term was load-bearing there. |
-| [QUDT Schema 3.4.0, June 2026 catalogue](https://www.qudt.org/catalog/qudt-catalog.html) — **Bridge-only** for citable quantity-kind, unit, dimension, and datatype identifiers. | A C.16 record may cite a QUDT identifier after the F-pattern Bridge establishes the correspondence; `M-CSLC-2` still governs admissible C.16 use. | A shared URI does not prove same measurand, Scale, model, calibration regime, or direct comparability. | Reopen only the cited Bridge mapping, `M-CSLC-2`, and checklist items 2 and 8 when the mapped QUDT graph or identifier changes. |
-| [W3C/OGC SOSA/SSN Recommendation 19 October 2017](https://www.w3.org/TR/vocab-ssn/) — **Bridge-only** for sensor, observation, procedure, feature-of-interest, and observed-property terms. The [2023 Edition First Public Working Draft of 16 September 2025](https://www.w3.org/TR/vocab-ssn-2023/) is watch-only until it reaches a governing publication status. | A Bridge may align an external observation/procedure record with C.16's measurand, method, work, indication, and result boundaries; it never replaces `M-WORK-1` or `M-RES-1/2`. | An SOSA/SSN observation graph does not by itself establish FPF work identity, actual bindings, measurement result, result episteme, or later use. | Reopen only the affected SOSA/SSN Bridge, `M-WORK-1`, the external-record case that uses it, and checklist items 5–7 when the Recommendation changes or the 2023 Edition advances with a conflicting normative separation. |
+| Source | Measurement contribution | Use boundary |
+| --- | --- | --- |
+| [JCGM 200:2012, VIM3, entry 2.9](https://jcgm.bipm.org/vim/en/2.9.html) | A measurement result comprises attributed values with the relevant information needed to interpret them. | An indication, raw output, actual subject state, diagnosis, verdict or decision has a different role in the measurement and its use. |
+| [JCGM GUM-6:2020, *Developing and using measurement models*](https://doi.org/10.59161/JCGMGUM-6-2020) | Model construction and adequacy connect actual inputs, output quantity, assumptions, calibration, covariance and uncertainty propagation within a validity domain. | Model input/output roles are not universal Work relations. A formula does not establish performed measurement work; more provenance pointers do not reduce uncertainty. |
+| [ISO 80000-1:2022, *Quantities and units — Part 1: General*](https://www.iso.org/standard/76921.html) and [ISO/IEC 25024:2015, *Measurement of data quality*](https://www.iso.org/standard/35749.html) | Quantity, unit and data-quality-measure definitions can supply the terms used by a measurement. | A standard label alone establishes neither Scale-compatible arithmetic nor comparability, acceptance or a C.16 result. |
+| [QUDT Schema 3.4.0, June 2026 catalogue](https://www.qudt.org/catalog/qudt-catalog.html) | Citable identifiers distinguish quantity kinds, units, dimensions and datatypes. Source-local citation needs no additional semantic mapping; a different intended local sense does. | A shared URI does not establish the same measurand, Scale, model, calibration regime or direct comparability. |
+| [W3C/OGC SOSA/SSN Recommendation, 19 October 2017](https://www.w3.org/TR/vocab-ssn/), and [2023 Edition First Public Working Draft, 16 September 2025](https://www.w3.org/TR/vocab-ssn-2023/) | Observation and procedure accounts can supply relevant subject, property and measurement information. Interpret each claim under its cited edition; a draft proposal carries its stated draft status. | An observation graph does not by itself establish FPF Work identity, actual bindings, a measurement result, its episteme or a later use. A correspondence claim needs its own basis. |
 
 **Constructing and revising the model.** GUM-6:2020, §§7, 9-10 and 12, supplies the distinction between the measurement principle, effects of implementation and adequacy for use. Section :5.3.1 turns that distinction into a construction and an ambiguity test. The circuit and assessment cases work this instruction using their stated subject models.
 
 [Dounas-Frazer and Lewandowski (2018), §2](https://arxiv.org/pdf/1805.10334), distinguishes models of the phenomenon and measurement equipment and allows revision of either model or either physical arrangement. C.16 adopts those different returns. Its stopping question is the intended use of the measurement: a sufficient interval can end the work, while a consequential discrepancy can require further investigation. B.5 and C.11.DUA supply the wider inquiry and choice.
-
-Other lineage and domain examples are informative comparators. A source change reopens the contribution that relies on it; extend that comparison when a changed premise also affects another use.
 
 ### C.16:15 - Relations - Placement *(Informative)*
 
@@ -302,7 +298,7 @@ Other lineage and domain examples are informative comparators. A source change r
 
 **Using patterns.** KD‑CAL, Arch‑CAL, G.4, and other consumers cite C.16 measurement-result epistemes and then apply the direct patterns for their comparison, evaluation, acceptance, aggregation, or decision use, grounding dated `U.Work` when the account asserts it or the receiving use requires it. They do not produce a measurement merely by naming a template, score field, criterion, or evidence profile.
 
-**Unification (F‑cluster).** External standards (e.g., ISO 80000 quantity types; W3C SOSA/SSN observable properties; QUDT units/quantity kinds) are related via Concept‑Set rows and Bridges; MM‑CHR treats those alignments as context supplied by F‑patterns, not as local re‑definitions.
+**External terminology.** A standard can be cited and used in its own sense. When a C.16 use depends on correspondence between different local senses, use F.17 to identify the terms and F.9 to establish the needed Bridge. That correspondence does not itself establish a measurement result.
 
 ### C.16:15a - Measurement and probe note for quantum-like readings
 

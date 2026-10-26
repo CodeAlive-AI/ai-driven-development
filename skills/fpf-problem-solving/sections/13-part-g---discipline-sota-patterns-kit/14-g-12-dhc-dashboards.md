@@ -2,13 +2,6 @@
 
 > **Status:** Stable
 
-**Tag:** Architectural kit pattern; notation-independent.
-
-**Stage:** optional series authoring → measurement and series-update Work when needed → representation → optional publication and refresh.
-
-**Primary hooks:** C.21 for discipline-health Characteristics and the common replay basis; C.16 for measurement; C.2.1 for result and series epistemes; C.29 when the view uses a mathematical correspondence; E.24.PUB for publication availability; G.6 for evidence paths when relied on; G.11 for refresh; G.Core, A.19, and G.0 for the exact legality and comparison surfaces actually used.
-
-**Optional hooks:** G.2 for SoTA palettes, G.5 for selector results, C.18 and C.19 for QD or open-ended telemetry, G.8 for maturity views, G.10 for shipping, F.18 when public names are needed, and F.9 only for actual distinct-local-sense comparison.
 
 ### G.12:0 — Use This When
 
@@ -125,7 +118,7 @@ DashboardSlice := <
 
 **Stage A — Select what the view is about**
 
-1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline. Do not compute from labels or restate Characteristic semantics in G.12.
+1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline.
 2. **Fix use, scope, and windows.** Name IntendedUse and ClaimScope. Add a `TargetSliceRef` only when the computation or publication really consumes it, and state its relation to the scope.
 3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, exact Method, MethodDescription edition when used, model or calibration pins when used, time or population basis, and any active distance or definition-set edition.
 4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and keep any assurance consequence in R only.
@@ -258,7 +251,7 @@ G.12 counters screen-first, “latest”-by-default, scalar-winner, and publicat
 
 **Costs.** A relied-on trend needs exact result, scope, window, and replay identities. Publication and refresh add their own conditional work.
 
-**Risks avoided.** Screenshot-as-result, scope/slice collapse, hidden method drift, illicit ordinal arithmetic, scalarization by view, and carrier-as-publication are blocked.
+
 
 ### G.12:9 — Relations
 

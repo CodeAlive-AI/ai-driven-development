@@ -105,10 +105,10 @@ Each `P_*` variable must be bound to one exact C.2.1 episteme that independently
 
 For any one of the four positions:
 
-1. identify the exact target kind and the complete self-contained P ClaimGraph;
-2. apply the five E.17.0 viewpoint-membership conditions;
-3. only in the independently triggered structured branch, identify exact convention epistemes under their least-powerful admitted kinds, construct exact collection C under C.13, recover every selected obtaining direct relation, state ordinary constraint episteme `Q_org`, let a system perform the A.22 selection work, and identify exact selected structure S;
-4. bind the resulting exact P to its project-local reader designator and exact `U.ViewpointRef`; and
+1. identify the exact target kind and the complete fixed claims required by E.17.0;
+2. in the ordinary self-contained branch, constitute P with that target kind as EntityOfConcern;
+3. in the independently triggered structured branch, identify exact convention epistemes under their least-powerful admitted kinds, construct exact collection C under C.13, recover every selected obtaining direct relation, state ordinary constraint episteme `Q_org`, let a system perform the A.22 selection work, and identify exact selected structure S; constitute P with S as EntityOfConcern;
+4. apply the five E.17.0 viewpoint-membership conditions to the resulting P, then bind its project-local reader designator and exact `U.ViewpointRef`; and
 5. record the resolution under exact `R_L` in the local declaration claim block.
 
 No constituent, `Q_org`, or P becomes a `U.Signature` merely to fit this template. A constituent is a `U.MethodDescription` only when it describes one independently admitted method under A.3.2. Exact selection work and its result remain separate from C, S, P, and selected relation occurrences. The structured-witness table below contains variables and optional recipes, not current repository values.
@@ -295,7 +295,7 @@ The cut is deliberately small, not claimed complete. Serious omitted branches re
 | deployment/operational | May use procedural, module-interface, and allocation positions together; author another family when deployment topology or operational environment changes a distinct recurring action. |
 | business/usage/publication | Keep service, promise, stakeholder-use, and publication questions under their direct patterns; author another family only when their recurring concern cannot be represented without changing the TEVB positions. |
 
-**Source status.** ISO 42010 is historical vocabulary lineage only. Function–behaviour–structure language is also lineage and a recognition aid, not evidence for this exact four-position cut. Query or projection production uses C.2.1 to identify the candidate episteme and A.6.3 to state its construction; it is not an external source for viewpoint selection. Responsibility/allocation is retained because it changes the practical question and avoids a recurrent function/actor collapse. SysML v2 is deliberately not used as positive evidence or lineage for this selection: official status, search prominence, systems-oriented naming, and prospective scope do not supply a demonstrated current solution to this exact reusable-family problem.
+**Source status.** ISO 42010 is historical vocabulary lineage only. Function–behaviour–structure language is also lineage and a recognition aid, not evidence for this exact four-position cut. Query or projection production uses C.2.1 to identify the candidate episteme and A.6.3 to state its construction; it is not an external source for viewpoint selection. Responsibility/allocation is retained because it changes the practical question and avoids a recurrent function/actor collapse.
 
 **Reopen.** Re-run source selection and a bounded actual-use comparison when an exact current problem-solving source or exercised project result supplies a better reusable family; when routine project replay repeatedly needs one omitted branch at the same frequency and action impact as the four; when two retained positions cease to change different actions; or when the four-position template produces more selection work than it saves. Until such evidence exists, call the cut provisional local rationale and never a computed frontier.
 

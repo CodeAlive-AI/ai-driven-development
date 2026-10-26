@@ -110,7 +110,7 @@ Its only two actual participants are independently identified before the test:
 2. exact `T := EntityOfConcern(E)` is recovered only from E's C.2.1 constitution;
 3. exact T satisfies P's fixed `EntityOfConcernKindCriterion` through the cited public durable-kind membership rule or the direct identity and membership rule of one exact independently admitted local kind; an exact C.3.2 `KindSignature` edition and one exact `U.ContextSlice` are separate test inputs only when P's local membership test needs them;
 4. E has at least one independently admitted episteme kind referenced by P's admitted-kind claims, excluding `U.View` and every kind whose membership depends on this same conformance; and
-5. E's fixed claim content, interpreted under its effective reference scheme, satisfies P's fixed concern-coverage and semantic-form rules, including each exact completeness rule and each admitted omission or loss condition named by P.
+5. E's fixed claim content, interpreted under its effective reference scheme, satisfies P's fixed concern-coverage, semantic-form and consistency rules, including each exact completeness rule and each admitted omission or loss condition named by P.
 
 T is recovered from E, not guessed from a use qualifier, topic, P, label, reference spelling, or evaluator input, and it is not a hidden third participant. Changing T changes E. Changing P's target criterion, admitted target kind or cited membership rule, any exact `KindSignature` edition or `U.ContextSlice` named as a separate test input, admitted-kind claims, or conformance rules changes P.
 
@@ -137,7 +137,7 @@ Conformance covers E's semantic content relative to P's fixed convention claims.
 
 The declaration, SlotSpecs, references, and relation-participant designations alone do not establish that the relation obtains. Its positive occurrence is identified by the actual E/P pair under the fixed predicate. P remains the ordinary episteme about its exact C.2.1 EntityOfConcern; P is not this signature.
 
-The complete F.18 NameCard for the direct conformance kind is below. Its public-row fields point to the current F.17 result rather than paraphrasing that result's scheme or local sense:
+The F.18 NameCard for the direct conformance kind identifies its naming settlement and current F.17 public row:
 
 | Field | Exact value or rule |
 |---|---|
@@ -169,8 +169,6 @@ An episteme is a `U.View` exactly when `EpistemeViewpointConformanceRelation(E,P
 One unchanged E may conform to zero, one, or several viewpoint editions through different pair-determined occurrences while remaining one episteme. Direct authoring and A.6.3 construction—including identity viewing—are separate histories: either may be present or absent, and neither grants membership. Selection, transformation, bundling, naming, rendering, publication, audience, or current use also grants none.
 
 Membership survives the end of reading, selection, use, evaluation, bundle membership, or publication. `P_old` and `P_new` are different C.2.1 epistemes when they differ in fixed claims, effective scheme, or exact EntityOfConcern—the target kind in the self-contained branch or selected S in the structured branch; an obtaining `EpistemeEditionRelation` relates them but transfers no conformance. A current use may select `P_new` while unchanged E still conforms to `P_old`; adequacy and conformance for `<E,P_new>` are judged separately. If E's claim content, EntityOfConcern, or effective scheme changes, C.2.1 identifies another episteme and its membership is judged anew.
-
-The stable gain is one `U.Viewpoint` extent spanning both a self-contained P about an exact target kind and the narrower P about an action-changing convention structure, plus one `U.View` extent spanning direct and derived construction without identity, use, or publication collapse. The ordinary cost is one exact P and the fixed E/P test; C/Q/S recovery and A.22 selection are paid only when separately versioned convention organization changes a named action.
 
 #### E.17.0:4.6 - Author or revise a reusable viewpoint only when existing P cannot serve
 
@@ -240,7 +238,7 @@ The fixed `E17ViewpointSemanticsSlice@FPFEdition` selects the exact FPF and E.17
 
 The four exact values remain distinct from their designators. Each KindSignature declaration states its admitted value domain and exact-equality predicate with a fixed interpretation under C.2.3. The kinds have deterministic exact-equality membership, no `SubkindOf`, and fail-closed definedness. Incomplete evidence or interpretation leaves the optional evaluation unsupported or undefined; it supplies neither a negative result nor a third `unknown` member.
 
-Omit both local values from P, direct relation obtaining, and—when the structured branch is active—Q_org and structure identity unless the named consumer actually needs one. Without such a consumer, state the direct conformance judgment or the structured branch's Q_org constraint judgment. `KindMembershipJudgment` and `ConcernCoverageJudgment` remain withdrawn and do not return as kinds or result fields.
+Omit both local values from P, direct relation obtaining, and—when the structured branch is active—Q_org and structure identity unless the named consumer actually needs one. Without such a consumer, state the direct conformance judgment or the structured branch's Q_org constraint judgment.
 
 ##### E.17.0:4.6.4 - In the structured branch, state Q_org and select S without hidden organization
 
@@ -502,7 +500,7 @@ Reopen the pattern when either conformance participant kind changes, the fixed p
 
 ### E.17.0:7 - Rationale, lineage, and current FPF basis
 
-Only a recoverable exact external source may appear here as SoTA evidence. ISO 42010 remains vocabulary lineage. The local design rationale below uses the current FPF construction, representation, relation, evaluation, and work boundaries directly; a category label is not evidence.
+ISO 42010 supplies vocabulary lineage. The remaining rows state FPF design rationale using its construction, representation, relation, evaluation and work rules.
 
 | Source or practice line | Adopted move | Rejected overread | Practical effect |
 |---|---|---|---|

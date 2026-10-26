@@ -136,7 +136,7 @@ Retain questions whose expected contribution warrants their interruption and int
 
 State the useful coverage in ordinary language: “These questions concern the physical set's contents, wording and assembly.” State an uncovered question when it changes use: “They do not establish that the exercise teaches the intended distinction.” [FPF B.1.5](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b15---gamma_method---order-sensitive-method-composition-and-work-enactment) helps distinguish the constituent result from the encompassing result; adding a whole-result question is worthwhile only when someone can supply its grounds.
 
-Pass the selected questions and their meaning to C.41.TF. Stop when further additions do not improve the intended use at worthwhile cost. Reopen selection after a missed consequential difference, a changed purpose or description, or repeated burden without benefit. Include a question about continued usefulness or feasibility when that premise can disappear during the work: an earlier decision to begin does not settle it for every later occasion. Obtain that judgement from the practice competent to supply it.
+When a reusable template is needed, pass the selected questions and their meaning to C.41.TF. Stop when further additions do not improve the intended use at worthwhile cost. Reopen selection after a missed consequential difference, a changed purpose or description, or repeated burden without benefit. Include a question about continued usefulness or feasibility when that premise can disappear during the work: an earlier decision to begin does not settle it for every later occasion. Obtain that judgement from the practice competent to supply it.
 
 A discovered omission can suggest checking analogous subjects or implementations. Carry over the question and relevant source passage, then establish its applicability, observation route and answer for each subject. Keep assumptions about use, interfaces and dependencies visible. Agreement among several implementations can preserve the same mistaken interpretation; return to the substantive description and its grounds where that possibility matters. Neither an earlier failure nor an earlier pass transfers merely because the subjects look alike.
 
@@ -192,7 +192,7 @@ A generated list reflects its prompt, examples and model as well as the task. Tr
 
 ### C.41:7 - Conformance Checklist
 
-For a second reading of this Method's use, inspect the actual selected questions:
+To examine this Method's use, inspect the actual selected questions:
 
 - Can a user identify the work result, each subject and the intended occasion?
 - Can the criterion's basis and the assumption about usefulness be distinguished?

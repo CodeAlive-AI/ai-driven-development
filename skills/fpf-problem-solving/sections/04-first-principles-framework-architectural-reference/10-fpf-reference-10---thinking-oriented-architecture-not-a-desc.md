@@ -7,11 +7,11 @@ A descriptive upper ontology tries to give a consistent inventory of what exists
 FPF is a thinking-oriented architecture. It asks:
 
 - what project entity is under concern in this project moment;
-- what claim, relation, decision, evidence path, work object, or publication use is being made;
+- which claim, relation, decision, evidence path, work object or publication use is current;
 - which distinction needs to remain visible for an action to be responsible;
 - what action- or judgement-guiding content is needed for the next use, and, when actual method identity matters, what exact Method and pattern-description rule content are current;
 - what would make the result reviewable and reopenable.
 
-This is the difference between a catalogue and an instrument. A catalogue can tell you that a method description and performed work are different FPF kinds. FPF also asks what happens in the project when those two are confused, what written form should separate them, what evidence or decision remains blocked, and what pattern should be used next.
+A taxonomy can distinguish a method description from performed Work. FPF also develops guidance for what a practitioner should do when they are confused: recover which object is current, state its supporting facts or missing basis, and use the pattern that answers the resulting question.
 
 The ontology therefore serves action guidance. FPF does not replace domain ontologies, mathematics, standards, or evidence. It gives them a place in project reasoning so they can be used without collapsing local meanings or publication forms.

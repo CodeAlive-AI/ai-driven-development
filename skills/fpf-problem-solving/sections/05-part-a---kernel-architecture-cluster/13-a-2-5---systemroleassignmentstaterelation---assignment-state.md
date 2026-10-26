@@ -20,9 +20,9 @@ Typical working moments include these:
 - two assignments are incompatible only while both satisfy the conditions that make them work-admitting; and
 - a model-use structure, `KindSignature`, reference scheme, or bridge changes the meaning of one predicate clause and must therefore be included in that predicate's semantic basis.
 
-**Primary EntityOfConcern.** The EntityOfConcern is one obtaining `SystemRoleAssignmentStateRelation`, a direct relation kind admitted under `U.Relation`. Its two participants are one exact obtaining `U.SystemRoleAssignment` occurrence and one by-value `SystemRoleAssignmentStatePredicate`. The relation's maximal continuous temporal extent comes from uninterrupted predicate truth while that assignment obtains.
+**Primary EntityOfConcern.** The EntityOfConcern is one obtaining occurrence of `SystemRoleAssignmentStateRelation`. This direct relation kind is admitted under `U.Relation`. The occurrence has two participants: one exact obtaining `U.SystemRoleAssignment` occurrence and one by-value `SystemRoleAssignmentStatePredicate`. Its maximal continuous temporal extent comes from uninterrupted predicate truth while that assignment obtains.
 
-**Primary working reader.** The first reader is an engineer, operator, method designer, safety checker, or manager deciding whether a current assignment can support the next method or Work claim without confusing assignment, capability, state, evidence, gate outcome, and performed Work.
+**Primary working reader.** The intended reader defines or checks the state conditions that the next operation requires of an assignment.
 
 **What goes wrong if missed.** A system-role label is treated as current readiness. A dashboard value is substituted for the world-side state relation. Missing evidence is read as proof that the predicate is false. Capability is mistaken for Work admission. A state-machine diagram is used as both the ontology and the method order.
 
@@ -138,15 +138,15 @@ For a relied-on state claim, keep this order:
 5. use `A.2.4` for compact evidence use and `A.10` only when fuller evidence-basis detail changes the relied-on use; and
 6. let the direct consumer apply the supported assertion under its own subject pattern.
 
-When evaluation itself is current, recover the exact actual evaluator System through A.13 and let A.15.1 independently admit exact dated evaluation `W_eval : U.Work`. Add F.6 `performedUnderAssignment(W_eval, RA_eval)` through the same obtaining A.13 assignment only when this account or its receiving use expressly consumes precise assignment-bound attribution; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the evaluation Work intact. A separately constituted evaluation result is a `C.2.1` episteme whose ClaimGraph states the judgment about the assignment or established occurrence. The evaluation and receiving use add no participants to the state relation: its participants remain the tested assignment and its predicate, and occurrence identity still follows §4.3.
+When the account makes a claim about a particular dated evaluation Work, recover the evaluator System through A.13 and let A.15.1 independently admit that evaluation `W_eval : U.Work`. Add F.6 `performedUnderAssignment(W_eval, RA_eval)` through the same obtaining A.13 assignment only when this account or its receiving use expressly consumes precise assignment-bound attribution; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the evaluation Work intact. A separately constituted evaluation result is a `C.2.1` episteme whose ClaimGraph states the judgment about the assignment or established occurrence. The evaluation and receiving use add no participants to the state relation: its participants remain the tested assignment and its predicate, and occurrence identity still follows §4.3.
 
-The actual state extent, target evaluation window, and evidence-relevance interval answer different questions. Expired evidence lowers reliance without retroactively rewriting an earlier world-side occurrence.
+The actual state extent, target evaluation window, and evidence-relevance interval answer different questions. When evidence no longer supports the receiving use, reconsider reliance without retroactively rewriting an earlier world-side occurrence.
 
 #### A.2.5:4.5 - Work-Admission Use
 
-A.2.5 supplies the state relation and exact assertion form. Use the direct subject patterns when Method selection, a gate decision, authority, or a claim that Work occurred is needed.
+A.2.5 defines the assignment-state relation and guides recognition of its occurrences and formulation of assertions. Use the direct subject patterns when Method selection, a gate decision, authority, or a claim that Work occurred is needed.
 
-For a consequence-bearing admission use, the system performing the consumer's evaluation or decision Work applies that consumer's direct pattern and checks:
+For a consequence-bearing admission use, apply the consumer's direct pattern and check:
 
 1. the exact `U.SystemRoleAssignment` obtains throughout the receiving decision or Work window;
 2. the consumer selects one exact `SystemRoleAssignmentStatePredicate`, whose truth condition may be an explicit conjunction;
@@ -154,7 +154,7 @@ For a consequence-bearing admission use, the system performing the consumer's ev
 4. the assertion has the evidence relation and currentness that this consumer requires; and
 5. every other admission condition is separately established under its subject pattern.
 
-The consumer's direct pattern defines any admit, deny, defer, or unresolved outcome. A.2.5 contributes only the exact state relation on which that decision Work may rely.
+The consumer's direct pattern defines any admit, deny, defer, or unresolved outcome. This pattern supplies the state-recognition and assertion rules used in that decision.
 
 #### A.2.5:4.6 - System-Role-Kind Relation Use
 
@@ -176,7 +176,7 @@ When the model needs continuous coordinates rather than discrete labels, use `A.
 
 #### A.2.5:4.8 - Semantic Basis and Receiving-Use Qualification
 
-Most state claims need no bridge, reference scheme, or bounded-model-use structure. Directly governed truth-condition clauses are enough.
+Use directly governed truth-condition clauses when they suffice for the state claim.
 
 When a `KindSignature`, reference scheme, bridge, or `BoundedModelUseStructure` changes the meaning of a predicate clause, include its exact edition in `SystemRoleAssignmentStatePredicate` semantic basis and therefore in predicate identity. When it changes only how a separate receiving assertion, comparison, or Work use presents or consumes an unchanged predicate, cite it in that receiving use instead. The generic relation signature remains the two-participant declaration in §4.1.
 
@@ -266,7 +266,7 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 
 | Check | Question |
 |---|---|
-| `CC-A2.5-01` | Is the current object one `SystemRoleAssignmentStateRelation : U.Relation`? |
+| `CC-A2.5-01` | Is the current object one obtaining occurrence of `SystemRoleAssignmentStateRelation`? |
 | `CC-A2.5-02` | Does `SystemRoleAssignmentSlot` use a `U.RelationRef` constrained to `U.SystemRoleAssignment` and resolve to the exact assignment occurrence being evaluated, with its declared species, holder, and extent established under A.2.1? |
 | `CC-A2.5-03` | Is `StatePredicateSlot` present by value with exact system-role-kind domain, normalized truth clauses, temporal reading, applicability, and only meaning-bearing semantic-basis refs? |
 | `CC-A2.5-04` | Is actual state extent derived from uninterrupted predicate truth while the assignment obtains, with any target evaluation window kept separate? |
@@ -274,8 +274,8 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 | `CC-A2.5-06` | Are a demonstrated predicate gap and a mere evidence gap distinguished? |
 | `CC-A2.5-07` | Does `SystemRoleAssignmentStateAssertion` keep polarity, predicate, direct claim-family ref, known actual extent, target window, reliance posture, and evidence relations distinct? |
 | `CC-A2.5-08` | Are capability, Method selection, gate outcome, authority, assurance, and performed Work left with their direct patterns? |
-| `CC-A2.5-09` | If several predicates hold together, are they composed explicitly rather than forced into one exclusive state label? |
-| `CC-A2.5-10` | Does cross-context reuse preserve the full predicate identity through an explicit continuity or bridge decision rather than label matching? |
+| `CC-A2.5-09` | If several predicates matter to the receiving use, are their conditions retained, with any required conjunction explicit and exclusivity imposed only when the subject-domain model requires it? |
+| `CC-A2.5-10` | Does cross-context reuse establish either the same full predicate identity or an explicit comparison or bridge showing which truth and admission effects are preserved? |
 | `CC-A2.5-11` | Is a meaning-bearing signature, scheme, bridge, or model-use structure included in predicate identity only when the clauses depend on it, and otherwise kept with the receiving use? |
 | `CC-A2.5-12` | If a statechart or graph is used, is it kept as a lens or description of possible configurations and changes? |
 
@@ -326,7 +326,7 @@ Assignment state is neither capability nor Work. Capability says what operations
 | Esparza and Fischer, [Runtime Verification for LTL in Stochastic Systems](https://arxiv.org/abs/2508.07963), 2025 | Runtime monitoring distinguishes true, false, and inconclusive results; finite observations do not settle every temporal property. | Treat incomplete evidence as unresolved for the relying use, preserve the predicate's temporal reading, and do not close an occurrence merely because a finite evidence path is silent. |
 | [Cedar Policy Language current reference](https://docs.cedarpolicy.com/policies/syntax-policy.html) | Fine-grained decisions evaluate a concrete principal, action, resource, current attributes, and request-time conditions rather than a system-role label alone. | Require the system performing consumer decision Work to combine current assignment, exact predicate, state window, and action-specific relations. Keep this as an implementable software specialization rather than the ontology of every assignment state. |
 | Zuvic, [Capability Gates Are Not Authorization](https://arxiv.org/abs/2606.28679), 2026 preprint | A current agent-framework audit distinguishes exposed capability from per-call, value-sensitive authorization and reports fail-closed enforcement experiments. | Keep capability in A.2.2 and require the consumer to evaluate the concrete state and action claim before side effects; do not infer authorization from tool exposure. The empirical scope remains the audited software frameworks. |
-| Liu et al., [A Framework for Formalizing LLM Agent Security](https://arxiv.org/abs/2603.19469), 2026 preprint | Task alignment, action alignment, source authorization, and data isolation require runtime checks over the current task and action. | In agentic cases, require the consumer's governing claim to name the current task and action relations; A.2.5 supplies only the exact state relation and assertion form, while A.10 supplies only the evidence-use relation; the applicable evaluation or assurance pattern separately establishes any reliance posture. |
+| Liu et al., [A Framework for Formalizing LLM Agent Security](https://arxiv.org/abs/2603.19469), 2026 preprint | Task alignment, action alignment, source authorization, and data isolation require runtime checks over the current task and action. | In agentic cases, require the consumer's governing claim to name the current task and action relations; A.2.5 defines the state relation and assertion form, while A.10 provides the rules for evidence use; the applicable evaluation or assurance pattern separately establishes any reliance posture. |
 | `A.6.REL`, `A.2.1`, `A.19`, `A.2.4`, and `A.10` | FPF already separates relation obtaining, occurrence identity, assignment episodes, characteristic-space predicates, assertions, and evidence use. | Use §4.3 to distinguish state episodes; record an assertion and evidence use only when the receiving use requires them. |
 
 The sources' transferable contribution is bounded: current action decisions need exact participants and predicates; temporal monitoring can remain unresolved; capability and action admission differ; and state-machine notation is optional modeling machinery.

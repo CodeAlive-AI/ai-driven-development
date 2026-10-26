@@ -18,7 +18,7 @@ First select the result needed now. Recover the inputs required by its declarati
 
 **Not this pattern when.** Use `A.2.8` for one actual bearer's obligation, recommendation-as-duty, or prohibition; `A.2.9` for the communicative work that institutes or revokes a grant; `A.6.B` for L/A/D/E classification; `A.15.5` for work-entry readiness; `A.21` for gate decisions; and `A.15.1` for the identity and result of performed work.
 
-The primary reader is a policy, boundary, work-planning, assurance, or operations practitioner who must decide exactly what a permission-looking claim can support. The performer of a grant speech act or later Work remains an admitted system under one exact obtaining system-role assignment.
+When the account asserts a particular dated Work occurrence, identify its performer through A.13 and admit the Work independently through A.15.1. Use F.6 where the relevant declaration consumes precise attribution to a covering assignment; the grantor, beneficiary and decision branches below state those conditions.
 
 ### A.2.8.PER:1 - Problem frame
 
@@ -89,11 +89,11 @@ NonProhibitionFinding@Context <: U.Episteme
   evaluationWindow: QualificationWindowPolicy
   checkedProhibitionAddresses: set<ClaimAddress>
   result: nonProhibited | unresolved
-  evaluationWorkRef: WorkRef
+  evaluationWorkRef?: WorkRef             # when the account asserts this dated evaluation Work
 
 NonViolationFinding@Context <: U.Episteme
   workRef: WorkRef
-  performerSystemRoleAssignmentRefs: set<U.RelationRef constrained to U.SystemRoleAssignment>
+  performerSystemRoleAssignmentRefs?: set<U.RelationRef constrained to U.SystemRoleAssignment> # when the checked norm uses precise assignment attribution
   onBehalfOfRelationOccurrenceRef?: U.RelationRef constrained to the direct on-behalf-of relation kind
   normativeFrameRef: U.EpistemeRef
   frameCurrentnessResultRef: U.EpistemeRef
@@ -103,14 +103,14 @@ NonViolationFinding@Context <: U.Episteme
   evaluationWindow: QualificationWindowPolicy
   checkedProhibitionAddresses: set<ClaimAddress>
   result: nonViolating | unresolved
-  evaluationWorkRef: WorkRef
+  evaluationWorkRef?: WorkRef             # when the account asserts this dated evaluation Work
 ```
 
 `nonProhibited` and `nonViolating` are admissible only when the named frame is current and explicitly sufficiently complete for the intended use. Otherwise the finding is `unresolved`. Neither finding institutes permission or proves absence outside its frame.
 
 Every `ClaimAddress` in this pattern means the reusable `C.2.1 ClaimAddress`: an exact episteme-edition reference plus an intrinsic claim identity declared by that edition's ClaimGraph. A heading, row number, file location, or printed token is insufficient.
 
-For `NonViolationFinding@Context`, recover the performer Systems from the named Work and cite each covering assignment occurrence and its declared `U.SystemRoleAssignment` species. If the checked norm instead turns on Work done for a `PartyRef`, cite the obtaining on-behalf-of relation defined in its pattern. These are case facts used by the evaluation. Omit the on-behalf-of reference when no such branch is used.
+For `NonViolationFinding@Context`, recover the performer Systems from the independently admitted Work. Cite each covering assignment occurrence and its declared species when the checked norm uses that assignment attribution. If the norm instead turns on Work done for a `PartyRef`, cite the obtaining on-behalf-of relation defined in its pattern. These are case facts consumed by the evaluation. Omit unused assignment or on-behalf-of references. A finding need not identify a separate dated evaluation Work unless the account asserts that occurrence; its frame, completeness, currentness and checked-prohibition requirements still apply.
 
 #### A.2.8.PER:4.4 - Declare the strong granted-permission relation
 
@@ -175,7 +175,7 @@ The match and eligibility are direct obtaining predicates over the Work, grant, 
 
 The exercise relation obtains only when those two predicates hold, the grant obtains throughout the exercise interval, and the work remains in scope. The work is a satisfier of permitted action content. Judge any obligation-satisfaction or discharge claim under the separate evaluation or compliance rule (A.2.8:4.6). The work consumes the grant only when the named policy explicitly makes it single-use or quota-bound.
 
-Non-exercise leaves an obtaining grant unused and ordinarily still obtaining; it does not establish `NonViolationFinding@Context`. Exercise establishes only the exercise relation and likewise does not establish that finding without the separate checked-frame evaluation. Work outside the action specification, beneficiary eligibility, scope, or window does not exercise the grant; any further consequence is established only by the applicable prohibition, commitment, admissibility, or Work-related predicate. If a decision is required, an admitted system performs the dated decision Work under the relevant Method, covering assignment, and authority relation.
+Non-exercise leaves a grant unused; it continues while the §4.4 conditions hold. Neither non-exercise nor exercise establishes `NonViolationFinding@Context` without the separate checked-frame evaluation. Work outside the action specification, beneficiary eligibility, scope or window does not exercise the grant; any further consequence follows from the applicable prohibition, commitment, admissibility or Work-related predicate. When a decision is required, identify its result and use the relevant decision rule; an asserted dated decision Work follows the performer-and-Work route above and any assignment or authority conditions required by that rule.
 
 #### A.2.8.PER:4.6 - Expose conflict without inventing precedence
 
@@ -213,7 +213,7 @@ PermissionNormConflictFinding@Context <: U.Episteme
 
 Create the finding only when the grant and current prohibition or commitment concern the same beneficiary/action content, overlapping scope/window, and incompatible practical conclusions. Check that match directly from the two claims and their participants. Permission and an obligation to perform the same action are not automatically in conflict.
 
-An unresolved finding may omit `governingPrecedencePolicyRef` when no governing precedence policy has been identified. Keep the disposition unresolved and retain the missing input and what would reopen the question. A settled finding identifies the governing policy and the applicable rule or independently grounded decision result.
+An unresolved finding may omit `governingPrecedencePolicyRef` when no governing precedence policy has been identified. Keep the disposition unresolved and retain the missing input and what would reopen the question. A settled finding identifies the governing policy and the applicable rule or independently grounded decision result. For a proposed action, `blockedWorkOrRelianceRef` identifies the action or its WorkPlan under the applicable subject rule; it does not designate a future Work occurrence.
 
 Resolve the conflict through exactly one of two branches:
 
@@ -292,16 +292,16 @@ Permission becomes inspectable without being inflated into a universal authoriza
 
 ### A.2.8.PER:10 - Rationale
 
-Positive permission has different satisfaction and failure behavior from obligation. A grant can obtain while unused; non-use ordinarily violates nothing; matching action can exercise the grant without discharging a duty. Separating weak findings, strong grants, and exercise preserves these practical consequences while using existing episteme, relation, speech-act, policy, work, and evidence-use patterns.
+Positive permission has different satisfaction and failure behavior from obligation. A grant can obtain while unused. Non-use does not violate that grant, but a separate duty may still be violated; matching action can exercise the grant without discharging a duty. Separating weak findings, strong grants and exercise preserves these consequences through the existing episteme, relation, speech-act, policy, Work and evidence-use patterns.
 
 ### A.2.8.PER:11 - SoTA-Echoing
 
-| Practice question | Current practice and source | FPF alignment | Disposition |
+| Practice question | Source or practice | FPF alignment | Boundary |
 |---|---|---|---|
-| How do weak and strong permission differ? | Moltmann (2024) distinguishes modal objects, strong permission, weak non-violation, and action satisfiers. | Separate frame-relative findings, instituted grants, and actual exercise; retain FPF subject patterns. | **Adapt.** Do not import modal objects, truthmakers, or possible worlds as U-kinds. |
-| How should permission, duty, and prohibition remain distinct? | W3C ODRL 2.2 (2018) models permission, prohibition, duty, assignee, action, constraint, and policy separately. | Keep beneficiary, action specification, policy, scope/window, and duty/prohibition predicates and pattern locations explicit. | **Adapt.** FPF uses direct relations and epistemic findings rather than importing the ODRL information model wholesale. |
-| What makes a policy decision usable? | NIST SP 800-207 (2020) and current policy-as-code practice separate subject, requested action, resource and operating facts, current policy, and decision evidence. | Exercise eligibility and conflict use are bounded by the exact beneficiary, action, normative-frame and policy editions, ClaimScope, window, and intended use. | **Adapt.** A policy response or gate display is not itself an enduring grant. |
-| How should digital permit evidence be relied on? | W3C Verifiable Credentials Data Model 2.0 (2025) separates issuer, holder, verifier, status, proof, and relying context. | Permit publications enter `A.10` evidence/currentness paths and do not replace the grant relation. | **Adapt.** Credential form supplies neither permission nor exercise by itself. |
+| How do weak and strong permission differ? | Moltmann (2024) distinguishes modal objects, strong permission, weak non-violation, and action satisfiers. | Separate frame-relative findings, instituted grants, and actual exercise; retain FPF subject patterns. | Do not import modal objects, truthmakers, or possible worlds as U-kinds. |
+| How should permission, duty, and prohibition remain distinct? | W3C ODRL 2.2 (2018) models permission, prohibition, duty, assignee, action, constraint, and policy separately. | Keep beneficiary, action specification, policy, scope/window, and duty/prohibition predicates and pattern locations explicit. | FPF uses direct relations and epistemic findings rather than importing the ODRL information model wholesale. |
+| What makes a policy decision usable? | NIST SP 800-207 (2020) and policy-as-code practice separate subject, requested action, resource and operating facts, current policy, and decision evidence. | Exercise eligibility and conflict use are bounded by the exact beneficiary, action, normative-frame and policy editions, ClaimScope, window, and intended use. | A policy response or gate display is not itself an enduring grant. |
+| How should digital permit evidence be relied on? | W3C Verifiable Credentials Data Model 2.0 (2025) separates issuer, holder, verifier, status, proof, and relying context. | Permit publications enter `A.10` evidence/currentness paths and do not replace the grant relation. | Credential form supplies neither permission nor exercise by itself. |
 
 
 ### A.2.8.PER:12 - Relations

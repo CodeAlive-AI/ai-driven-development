@@ -17,7 +17,7 @@ Use it when the working question is:
 
 **Primary EntityOfConcern.** The `EntityOfConcern` is the independently identified bearer or exact claim being qualified. A temporal label such as *cadence*, *freshness*, or *recovery timing* is a predicate or qualifier in the ClaimGraph; it is not a second entity.
 
-**C.2.1 and publication boundary.** A materialized temporal-aspect statement is record-shaped ClaimGraph content in one `C.2.1` episteme whose effective ReferenceScheme makes the temporal terms interpretable. Changing that claim content identifies another episteme. A changed layout, publication occurrence, form, or carrier can leave the episteme unchanged; those publication objects remain separate under `E.24.PUB` when availability matters. When the claim depends on another direct relation, cite that relation's exact declaration or independently established occurrence. A PatternID remains an ordinary rule citation and is never a relation reference.
+**C.2.1 and publication boundary.** A materialized temporal-aspect statement is ClaimGraph content in one `C.2.1` episteme whose effective ReferenceScheme makes the temporal terms interpretable. Changing that claim content identifies another episteme. A changed layout, publication occurrence, form, or carrier can leave the episteme unchanged; those publication objects remain separate under `E.24.PUB` when availability matters. When the claim depends on another direct relation, cite that relation's exact declaration or independently established occurrence. A PatternID remains an ordinary rule citation and is never a relation reference.
 
 **First useful move.** State four things in one readable sentence: the exact bearer or claim, the temporal predicate, the temporal reference, and the interval or window.
 
@@ -25,7 +25,7 @@ Use it when the working question is:
 
 Open the fuller statement only when the receiving use also depends on measurement, an exact scheme or scope, a selected Structure, a source or use boundary, currentness, reopen conditions, coupling, another direct relation, or an explicit rule citation or blocked overread.
 
-**What goes wrong if missed.** Temporal words become vibe labels. A cadence is named without bearer, a freshness claim has no validity window, a rhythm has no timing reference, a recovery claim has no interval, an architecture trajectory has no changed structure, and a transformation claim smuggles timing into method, mechanism, or evidence.
+**What goes wrong if missed.** Temporal words leave the claim indeterminate. A cadence is named without bearer, a freshness claim has no validity window, a rhythm has no timing reference, a recovery claim has no interval, an architecture trajectory has no changed structure, and a transformation claim smuggles timing into method, mechanism, or evidence.
 
 **What this buys.** A practitioner can state one positive temporal-aspect claim before selecting `C.27`, `A.3.4`, `A.3.3`, `A.15.2`, `A.15.1`, `C.16`, `C.28`, `G.9`, or the relevant evidence, source, gate, or assurance pattern for the receiving use.
 
@@ -168,7 +168,7 @@ Add a source-use boundary, currentness condition, refresh condition, or reopen c
 
 #### C.27.TA:4.6 - Recovery, Stabilization, Inertia, And Effort Over Time
 
-A recovery, stabilization, inertia, or effort-over-time claim first names the exact EntityOfConcern, temporal predicate, temporal reference, and interval. It becomes a C.27 adequacy question only when an authored claim uses that result for a practical action.
+A recovery, stabilization, inertia, or effort-over-time claim first names the exact EntityOfConcern, temporal predicate, temporal reference, and interval. Use C.27 when an unresolved question about the temporal claim's adequacy changes the receiving action. A sufficient positive temporal-aspect claim can still finish here.
 
 Add the disturbance or starting condition, measured reading, effort, resistance, residue, inertia relation, rule-pattern citation, or direct-relation reference only when the receiving use relies on that distinction. These values do not turn the temporal predicate into a transformation, Work, evidence, value, or assurance relation.
 
@@ -184,7 +184,7 @@ This is a complete first result: exact bearer, cadence predicate, release-train 
 
 A benchmark comparison uses a model report from April and a competitor report from June.
 
-C.27.TA names the source-currentness and validity windows. `G.9`, source-use, evidence, and benchmark patterns carry comparator parity, provenance, and evidence use.
+Name each report's currentness predicate, reference date or edition, and validity window for the comparison. April versus June publication dates alone do not establish that one claim is stale or that the reports are comparable. If no currentness basis is available, retain only the supported dated-report claim. `G.9`, source-use, evidence and benchmark patterns carry the separate parity, provenance and reliance questions.
 
 #### C.27.TA:5.3 - Architecture Recovery Timing
 
@@ -214,7 +214,7 @@ TemporalAspectStatementClaimContent:
 
 A review practice depends on a two-day response rhythm across several review positions and participants. Keep a responsibility claim separate when the temporal account relies on it.
 
-Name a local system-role kind or a separate System-classification judgement only when the receiving claim uses that distinction. If it relies on an assignment, cite the directly declared relation species and its obtaining occurrence with the actual participant values, holder, applicability, and extent under `A.2.1`. An assignment may be current in a plan or availability statement before any response Work occurs; it neither classifies a System nor implies completed Work. Only when the claim says that a System performed dated response Work should the reader first recover that exact performer through A.13 and independently admit the Work under A.15.1. Add F.6 only if the temporal account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact.
+Name a local system-role kind or a separate System-classification judgement only when the receiving claim uses that distinction. If it relies on an assignment, cite the directly declared relation species and its obtaining occurrence with the actual participant values, holder, applicability, and extent under `A.2.1`. An assignment may be current in a plan or availability statement before any response Work occurs; it neither classifies a System nor implies completed Work. Only when the claim says that a System performed dated response Work should the reader first recover that exact performer through A.13 and independently admit the Work under A.15.1. Add F.6 only if the temporal account also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds still hold.
 
 C.27.TA names the exact EntityOfConcern, rhythm or cadence predicate, temporal reference, and window. When cross-bearer coordination matters, cite the direct coupling-relation declaration and an obtaining occurrence only after its predicate passes; keep the PatternID as a separate rule citation.
 
@@ -224,11 +224,11 @@ Lenses: **Onto**, **Prag**, **Epist**, **Arch**, **Gov**.
 
 Distortions to watch for:
 
-- **rhythm-as-vibe:** rhythm or cadence appears without bearer, timing reference, and window;
+- **unqualified rhythm:** rhythm or cadence appears without bearer, timing reference, and window;
 - **freshness-as-permission:** currentness is treated as permission, evidence, or gate passage;
 - **time-as-transformation:** timing language is treated as the transformation relation;
-- **dynamics theft:** a temporal aspect is treated as a state-space or transition-law episteme;
-- **measurement theft:** a temporal aspect is treated as a completed measurement construction.
+- **temporal aspect mistaken for dynamics:** a temporal aspect is treated as a state-space or transition-law episteme;
+- **temporal aspect mistaken for measurement:** a temporal aspect is treated as a completed measurement construction.
 
 ### C.27.TA:7 - Conformance Checklist
 
@@ -256,10 +256,10 @@ Distortions to watch for:
 
 ### C.27.TA:9 - SoTA-Echoing
 
-| Source family | Current lesson for C.27.TA | FPF decision |
+| Source family | Contribution to C.27.TA | FPF decision |
 | --- | --- | --- |
 | Control and model-predictive practice | Horizons, constraints, update intervals, and feedback timing are distinct from the controlled object and the control law. | Express temporal aspects as predicates or qualifiers in claim content; use `A.3.3`, evidence, and control-related patterns for models and control claims. |
-| David Deutsch and Chiara Marletto, "Constructor theory of time" (`arXiv:2505.08692v3`), version-specific source posture. | A task or transformation specification need not itself specify duration or the internal course of performance; duration and dynamics can be recovered through timer and clock relations among attributes. Reopen this row if a later version changes the task/duration/timer/clock separation used here. | Require C.27.TA temporal aspects to name bearer and temporal reference. Use `A.3.4` for the transformation, `A.3.3` for dynamics episteme, and C.27 only when an authored temporal claim uses the aspect for a practical use. |
+| David Deutsch and Chiara Marletto, "Constructor theory of time" (`arXiv:2505.08692v3`), version-specific source posture. | A task or transformation specification need not itself specify duration or the internal course of performance; duration and dynamics can be recovered through timer and clock relations among attributes. Reopen this row if a later version changes the task/duration/timer/clock separation used here. | Require C.27.TA temporal aspects to name bearer and temporal reference. Use `A.3.4` for the transformation, `A.3.3` for dynamics episteme, and C.27 for an unresolved temporal-adequacy question that changes the receiving use. |
 | Dynamic treatment regimes and policy evaluation | Intervention timing, follow-up interval, policy window, and outcome window must be separated before causal or policy claims are made. | Use C.27.TA for temporal windows; use `C.28` and evidence patterns for causal-use and policy claims. |
 | Object-centric process and event-log practice | A scalar throughput or latency can hide multiple bearers, event types, and interaction windows. | Name the exact EntityOfConcern, temporal predicate, and temporal reference before using a rate, cadence, or trajectory across objects. |
 | Rhythm and synchronization research | Rhythm needs a bearer, timing reference, and window; phase or interval structure and coupling matter only when the receiving use relies on them. | Keep rhythm and cadence as predicates or qualifiers in temporal claim content; state a separate temporal-adequacy or other subject assertion only for its current use, and resolve the defining or constraining `ClaimGraph` through C.27 or the relevant pattern locator. |

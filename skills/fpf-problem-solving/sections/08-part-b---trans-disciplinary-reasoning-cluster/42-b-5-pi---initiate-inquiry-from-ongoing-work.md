@@ -91,7 +91,7 @@ Producing a result, keeping it usable and learning from the attempt can be enact
 
 ### B.5.PI:5 - Archetypal Grounding
 
-These are constructed cases with stated conditions, not measurements of the method's effectiveness.
+These are constructed cases with stated conditions.
 
 #### B.5.PI:5.1 - An on-time handover hides recurring work
 
@@ -167,7 +167,7 @@ The whole method is longer than a reminder because its intermediate results diff
 
 ### B.5.PI:11 - SoTA-Echoing
 
-The practice question is how ordinary work becomes open to useful inquiry before its performer recognizes a problem. The synthesis combines problem detection, questioning of assumptions and examination of successful work. It does not generalize a laboratory effect or one industrial practice into guaranteed autonomous discovery.
+The practice question is how ordinary work becomes open to useful inquiry before its performer recognizes a problem. The synthesis combines problem detection, questioning of assumptions and examination of successful work.
 
 **Interpretation, not only signal strength.** Klein, Pliske, Crandall and Woods, [Problem detection](https://doi.org/10.1007/s10111-004-0166-y) (2005), is a historical account of how context and interpretation affect recognition. It motivates comparing accounts and revisiting explanations in §§4.2–4.3. A technical detector is a serious alternative when a suitable representation and criterion already exist. Ruff et al., [A Unifying Review of Deep and Shallow Anomaly Detection](https://arxiv.org/abs/2009.11732) (2021), makes those technical choices explicit. Its detector families do not decide what an unexamined work practice should regard as worth questioning. Use such a detector for its stated object, rather than substitute statistical rarity for practical inadequacy.
 

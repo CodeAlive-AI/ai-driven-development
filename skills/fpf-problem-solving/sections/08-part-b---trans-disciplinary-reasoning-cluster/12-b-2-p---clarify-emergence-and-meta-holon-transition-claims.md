@@ -8,11 +8,7 @@
 
 Use this pattern when wording such as `emergence`, `emergent`, `synergy`, `higher-level property`, `meta-system`, `meta-epistemic`, `meta-functional`, `MHT`, `MET`, `MFT`, `promotion`, `post*`, or collection words mixed with those terms could be pointing to several different FPF objects.
 
-The first useful move is:
-
-```text
-Recover the claim kind before choosing replacement wording.
-```
+**First useful move.** Recover the claim kind before choosing replacement wording.
 
 B.2.P is selected only when the source wording hides one of these recurring questions:
 
@@ -24,7 +20,7 @@ B.2.P is selected only when the source wording hides one of these recurring ques
 
 **What goes wrong if missed.** A word like "emergent" becomes a shortcut to a new U-kind, a collection receives agency by name, a metric jump becomes MHT, or source title mnemonics survive as if they were current pattern authority.
 
-**What this buys.** B.2.P gives one local recovery profile for emergence-family and MHT wording. It keeps B.2-family subject patterns centered on whole reidentification while ordinary capability, characteristic, function, architecture, evidence, math-lens, publication, and collection claims remain with their subject patterns.
+**What this buys.** The practitioner can replace ambiguous emergence wording with the actual claim and the pattern that supplies its grounds. Whole reidentification stays distinguishable from the neighboring claims in :4.2.
 
 **Not this pattern when.**
 
@@ -37,18 +33,18 @@ B.2.P is selected only when the source wording hides one of these recurring ques
 
 Emergence-family wording is overloaded. It can point to a new system whole, an episteme whole, a capability envelope, a characteristic crossing, an architecture residual, a mathematical scale expression, a benchmark artifact, a publication claim, or a collection-as-whole question.
 
-It asks which exact EntityOfConcern, world-side or claim-side fact, and subject pattern are current, and whether the same whole still carries the claim.
+Recover the EntityOfConcern, the fact or assertion being discussed, its subject pattern, and whether the same whole still carries the claim.
 
 ### B.2.P:2 - Problem
 
-Without B.2.P:
+Unresolved emergence wording can produce these errors:
 
 1. **Generic emergence becomes ontology.** `U.Emergence` or an equivalent hidden kind appears even though no such root kind is selected.
-2. **Collections become systems by poetry.** A fleet, community, pool, or base is treated as an acting system because the phrase sounds collective.
+2. **Collections become systems by name.** A fleet, community, pool, or base is treated as an acting system because the phrase sounds collective.
 3. **Capability becomes MHT.** A new capability envelope or functioning relation is treated as a new whole without checking existing-whole explanations.
 4. **Mathematics becomes declaration.** A graph, scaling law, RG-like expression, benchmark jump, or MSPD score is treated as whole reidentification.
 5. **Old mnemonic titles are mistaken for applicable PatternIDs.** Source labels such as `MET` or `MFT` hide whether the claim concerns an episteme whole, capability or functioning facts, evidence for those facts, or something else.
-6. **Semio-bias returns.** Publication, dashboard, model, or source interpretation claims displace the in-life holon or characteristic under concern.
+6. **Description displaces the subject.** A publication, dashboard, model, or source interpretation is examined in place of the holon or characteristic the claim concerns.
 
 ### B.2.P:3 - Forces
 
@@ -74,7 +70,7 @@ Read the complete natural span with F.19 and E.10's compact cues. If an emergenc
 4. **Subject pattern.** Which pattern defines or constrains that object and claim without using `emergence` as a substitute?
 5. **Disposition.** Keep the exact direct claim, open B.2 only for a remaining whole-reidentification question, or stop with the exact missing object or governor.
 
-A temporary author note may retain the source phrase, exact object, subject pattern, blocked overread, and replacement or stop. The note is not a U-kind, relation, result object, or required project record. Do not ask a practitioner to fill a generic emergence card before the direct object can be named.
+Retain the source phrase beside the recovered claim and replacement only when that comparison is needed.
 
 #### B.2.P:4.2 - Claim-Kind Recovery and Subject-Pattern Selection Table
 
@@ -97,7 +93,7 @@ A temporary author note may retain the source phrase, exact object, subject patt
 
 #### B.2.P:4.3 - Whole-Reidentification Recovery
 
-When a whole-reidentification question remains after claim-kind recovery, do not create a second MHT schema. Use B.2 with this concrete account:
+When claim-kind recovery leaves a whole-reidentification question, use B.2 with this account:
 
 1. name the exact existing whole, admitted kind, and identity or reidentification rule;
 2. name each changed delimitation, constituent, constructive relation, assembly, supervision, objective, capability, characteristic, or temporal fact and its subject pattern;
@@ -106,7 +102,7 @@ When a whole-reidentification question remains after claim-kind recovery, do not
 5. state whether the direct identity rules preserve the same whole or require a new whole for the current subject claim;
 6. only when a specific downstream task must inspect or cite the decision, identify any separate assertion or record, supporting evidence and warrant, G.11 currentness result, and rely, decline, defer, or reopen decision.
 
-Evidence availability, an evaluation value, a record field, and receiving reliance neither construct the candidate nor decide whether the existing whole continues or a new whole must be identified. If the exact candidate, one required constructive fact, or the larger-assembly compatibility condition has no governor, stop with that missing object or governor rather than writing `candidateResultRef`, `resultKindRef`, `mhtWitnessRef`, or a context-shaped placeholder.
+Evidence availability, an evaluation value, a record field, and receiving reliance neither construct the candidate nor decide whether the existing whole continues or a new whole must be identified. If the candidate, a required constructive fact, or the larger-assembly compatibility condition lacks a defining rule or needed grounds, stop and name that gap.
 
 #### B.2.P:4.4 - Collection Boundary
 
@@ -120,7 +116,7 @@ If the claim is plain collection admission:
 - use `A.1` for an acting collective admitted as `U.System`; use `A.15` for a separate alignment question and A.2 patterns for the exact system-role-kind or assignment claim when either is current;
 - use `C.16` for a whole-level characteristic.
 
-B.2.P may point to these subject patterns; it does not own their claims. An unassembled collection remains an unassembled collection even when a list, dashboard, or project card names it as one whole. A C.13 collection construction does not by itself establish an integrated assembly, acting system, or A.1 holon.
+Use each pattern for its corresponding claim. A C.13 collection construction does not by itself establish an integrated assembly, acting system, or A.1 holon.
 
 #### B.2.P:4.5 - Source Mnemonics and Result Fields
 
@@ -152,9 +148,9 @@ Recover:
 - Which claims concern the model as a description episteme, and which concern its mathematical expression or lens use?
 - Is robustness a characteristic-space claim?
 - Is the result a benchmark artifact?
-- Is there an in-life holon whole-reidentification question?
+- Does the claim concern reidentifying the actual holon?
 
-For those direct claims, use `C.29`, `C.16`, `A.10`, and source-use patterns as applicable. Use B.2 when the identity of the in-life whole remains the question.
+For those direct claims, use `C.29`, `C.16`, `A.10`, and source-use patterns as applicable. Use B.2 when that whole's identity remains the question.
 
 #### B.2.P:5.3 - "A Meta-Functional Transition Happened"
 
@@ -180,7 +176,7 @@ Identify each actual change independently under A.3.4. A shared work occurrence,
 
 ### B.2.P:5.7 - Bias-Annotation
 
-| Bias | How B.2.P prevents it |
+| Bias | How to address it |
 | --- | --- |
 | Emergence-as-root-kind bias | The recovery starts from EntityOfConcern, claim kind, and subject pattern; no generic `U.Emergence` is introduced. |
 | Collection-agency bias | Collective nouns are separated into membership set, constructed whole, acting collective system, whole-level characteristic bearer, or candidate new holon named by an MHT claim. |
@@ -221,7 +217,7 @@ Identify each actual change independently under A.3.4. A shared work occurrence,
 
 Positive consequences:
 
-- B.2-family emergence language no longer creates hidden U-kinds.
+- Readers can distinguish emergence-family claims without inferring a new kind from the wording.
 - B.2, B.2.2, B.2.3, and B.2.4 stay centered on their subject claims instead of carrying repeated first-stage precision restoration.
 - Collections, capabilities, functions, characteristics, architecture residuals, mathematical expressions, and publications keep their subject patterns.
 
@@ -233,9 +229,7 @@ Costs:
 
 ### B.2.P:9 - Rationale
 
-Emergence-family wording is useful because it marks a possible explanatory concern. It is dangerous because it can hide the actual object: a holon, system, episteme, capability, characteristic, architecture structure, mathematical expression, evidence relation, source publication, or collection.
-
-B.2.P follows F.19's whole-span reading with compact E.10 cues; E.10.ARCH or a direct subject rule resolves only the remaining FPF ontology question, after which F.19 tests the repaired sentence. This prevents one word from creating several local ontologies.
+Emergence-family wording can mark a useful explanatory question while leaving its object and claim unclear. Read the complete span through F.19 with the E.10 cues. Use E.10.ARCH or a subject pattern only for the remaining FPF meaning question, then reread the repaired sentence through F.19. The result states the object, claim, and conditions needed for its use.
 
 ### B.2.P:10 - SoTA-Echoing
 

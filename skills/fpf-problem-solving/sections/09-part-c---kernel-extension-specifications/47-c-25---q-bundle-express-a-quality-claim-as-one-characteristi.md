@@ -11,11 +11,11 @@
 **Coordinates with.**
 `C.17-C.19` for quality-related measurement families, `C.16.P` when characteristic/scale/score wording is not yet recoverable, `A.15` for method, work-plan, or work-occurrence gating, and `C.16.Q` for quality/evaluative-characterization wording before the endpoint is one explicit characteristic, Q-Bundle-shaped claim content, objective, or another governing pattern.
 
-**Use this pattern when.** Use C.25 when a familiar quality family such as availability, resilience, security, or maintainability may be hiding several differently typed contributors and the reader needs one claim that keeps them distinct.
+**Use this pattern when.** Use C.25 when an engineering-quality family such as availability, resilience, security or maintainability may be hiding several differently typed contributors and the reader needs one claim that keeps them distinct.
 
 **First useful move.** Ask: *what would make this quality claim false?* If one measure on one declared Scale answers the question, state that one Characteristic and stop. Use Q-Bundle-shaped claim content only when several differently typed contributors—such as a measure and scope, or measures plus a load-bearing window or mechanism—jointly determine the answer.
 
-**First result.** Write one readable quality claim about one exact bearer and include only the contributors on which its truth or the next receiving action depends. An optional slot is omitted unless changing that slot could change the current claim or receiving action.
+**First result.** Write one readable quality claim about one exact bearer and include only the contributors on which its truth or the next receiving action depends. Ordinary prose can express that structure; no separate template is required. Omit an optional slot unless changing it could change the current claim or receiving action.
 
 **Nearest non-use.** Stay with the direct Characteristic pattern when one measure and Scale carry the claim. Use the direct scope, measurement, evidence, assurance, gate, publication, viability-envelope, or temporal pattern when that neighboring question—not quality-family decomposition—is the current work.
 
@@ -94,7 +94,7 @@ An absent optional slot contributes no condition. Each measure keeps its own Sca
 
 **Tell.** A quality family is not automatically one metric. Use one Characteristic when one measure and Scale carry the claim; use a Q-Bundle only when several differently typed contributors are jointly load-bearing.
 
-**Minimal completed availability case.** Under `ServiceQualityScheme-v4`, the claim says: *CheckoutAPI maintained at least 99.9% availability for customer-facing request handling over the rolling 30-day window.* Its exact bearer is the independently identified `CheckoutAPI` System. Its Q-Bundle content has `Name: Availability`, `ClaimScope: customer-facing request handling`, `Measures: AvailabilityRatio[%] >= 99.9`, and `QualificationWindow: rolling 30 days`. `WorkScope`, `Mechanisms`, `Status`, and `Evidence` are omitted because this drafting use does not rely on them. If evidence reliance, a failover prerequisite, or a gate later becomes current, add only the direct relation or slot that question needs.
+**Minimal completed availability case.** Under `ServiceQualityScheme-v4`, the claim says: *CheckoutAPI maintained at least 99.9% availability for customer-facing request handling over the rolling 30-day window.* Its exact bearer is the independently identified `CheckoutAPI` System. In this example the receiving use separately checks coverage of customer-facing requests and the rolling-window qualification as well as the ratio. Its Q-Bundle content has `Name: Availability`, `ClaimScope: customer-facing request handling`, `Measures: AvailabilityRatio[%] >= 99.9`, and `QualificationWindow: rolling 30 days`. `WorkScope`, `Mechanisms`, `Status`, and `Evidence` are omitted because this drafting use does not rely on them. If evidence reliance, a failover prerequisite, or a gate later becomes current, add only the direct relation or slot that question needs. If the receiving question instead asks only for AvailabilityRatio under an already fixed scope and measurement window, the single-Characteristic branch is sufficient.
 
 **Escalation examples.** A resilience or security claim often needs several measures, scenario or attack-class scope, mechanisms or control statuses, and a qualification window. Those contributors belong in the bundle only when they are part of that claim's truth conditions; treating the family as one scalar score would erase which contributor failed.
 
@@ -119,7 +119,7 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 | **One-number `-ility`** | `Resilience = 82` with no declaration of what is being measured and what scope/scenario is intended. | `CC-C.25-2` requires a Q-Bundle when the family is composite. |
 | **Scope as metric** | The claim treats wider applicability as a higher quality value rather than as a larger USM set. | `CC-C.25-3` keeps scope set-valued and non-CHR. |
 | **Mechanism equals quality** | Presence of a mechanism or certificate is reported as if it were the measurement itself. | `CC-C.25-4` keeps mechanism/status slots distinct from measures. |
-| **Collapsed guard prose** | One sentence mixes coverage, thresholds, windows, and mechanisms without typed separation. | `C.25` rewrites the claim into explicit slots and typed guard factors. |
+| **Ambiguous guard** | The reader cannot tell which coverage, thresholds, windows or mechanisms make the claim true. | Make those conditions and their kinds recoverable, in ordinary prose or explicit slots. |
 
 ### C.25:9 - Consequences
 
@@ -145,7 +145,7 @@ The comparison below selects lines by the quality-family problem they can solve,
 | [NIST SP 800-160 Vol. 2 Rev. 1, *Developing Cyber-Resilient Systems*](https://doi.org/10.6028/NIST.SP.800-160v2r1) | Treats cyber resilience through distinct goals, objectives, techniques, approaches, and design principles for anticipating, withstanding, recovering from, and adapting to adverse conditions. It keeps resilience from becoming one score. | The line is security-specific and intentionally broad; applying its life-cycle and risk constructs can be expensive. It does not provide one lightweight local claim identity or universal aggregation law. | Adopt the separation of scenario, measures, mechanisms, and outcomes when they are load-bearing; reject a universal resilience scalar and do not copy the full handbook into a Q-Bundle. |
 | [OMG SACM 2.3](https://www.omg.org/spec/SACM/2.3) | Separates structured claims, argument links, artifact references, counter-evidence, and interchange packages, making an assurance case inspectable across tools. | A complete assurance case and its interchange structure can be much heavier than an ordinary quality claim. SACM does not decide which quality contributors make the claim true or whether one bundle guard is admissible. | Keep quality claim content distinct from evidence and assurance. Open `A.10` or `B.3` only on their own trigger instead of embedding an assurance case in C.25. |
 
-**FPF-local synthesis.** C.25 combines only the non-dominated moves needed before a direct domain pattern takes over: one exact bearer; a single-Characteristic exit; otherwise a typed separation of load-bearing measures, scopes, windows, mechanisms, statuses, and evidence references; and a guard over only the conditions the claim actually states. The tuple and this conditional guard are FPF synthesis, not a claim that contemporary practice already shares one universal Q-Bundle.
+**FPF-local synthesis.** C.25 combines the contributions needed to express the local quality claim: one exact bearer; a single-Characteristic exit; otherwise a typed separation of load-bearing measures, scopes, windows, mechanisms, statuses, and evidence references; and a guard over only the conditions the claim actually states. The tuple and this conditional guard are FPF synthesis, not a claim that contemporary practice already shares one universal Q-Bundle.
 
 **Defeating and reopen conditions.** Prefer a direct domain pattern when it already supplies a clearer composite-quality identity, aggregation law, and practitioner route. Reopen C.25 when a useful quality claim cannot be stated through the available typed contributors without inventing filler, when a non-conjunctive trade-off or dependency cannot be named under its direct pattern, when the record costs more than the receiving decision warrants, or when a proxy repeatedly becomes the decision object despite the source claims remaining load-bearing.
 
@@ -166,7 +166,7 @@ The comparison below selects lines by the quality-family problem they can solve,
 
 #### C.25:12.1 - Endpoint function in evaluative classification
 
-In evaluative repair, `C.25` is the endpoint pattern for engineering quality families after overloaded quality wording has been repaired by `C.16.Q` and any hidden characteristic, scale, score, metric, or proxy wording has been repaired by `C.16.P`. `qualityTermAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the admissible result is a claim about one `Characteristic`, one episteme with Q-Bundle-shaped claim content, or an explicit objective-oriented quality claim under its own endpoint pattern.
+Use C.25 directly when the engineering quality claim and its contributors are already recoverable. Use C.16.Q for unresolved evaluative wording and C.16.P for an unresolved Characteristic, Scale, score, metric or proxy; then return to the endpoint their result supports. `qualityTermAscription(...)` may remain a transitional repair record, but it is **not** the universal resting place when the admissible result is a claim about one `Characteristic`, one episteme with Q-Bundle-shaped claim content, or an explicit objective-oriented quality claim under its own endpoint pattern.
 
 ### C.25:13 - Decision Test: Single Characteristic or Bundle?
 
@@ -245,11 +245,13 @@ The bundle form makes it possible to distinguish "the measurement fell short" fr
 Resilience is almost never one scalar. It commonly binds together:
 
 - disruption scenario scope,
-- restoration-related measures such as `MTTR`, `RTO`, or `RPO`,
+- observed restoration measures, such as mean time to restore under a declared observation protocol, and the recovered data point,
 - recovery mechanisms and preparedness states,
 - and scenario-specific evidence about drills, restorations, or incident traces.
 
-Trying to compress this into a single resilience value usually destroys the difference between fast recovery in one scenario and structural fragility in another.
+Keep the observations distinct from their objectives: [RTO](https://csrc.nist.gov/glossary/term/Recovery_Time_Objective) bounds permissible recovery duration, while [RPO](https://csrc.nist.gov/glossary/term/recovery_point_objective) specifies the required data-recovery point. Neither is an observed recovery result. Compare the observations with the applicable objectives under the declared rule.
+
+Trying to compress this into a single resilience value can hide the difference between fast recovery in one scenario and structural fragility in another.
 
 #### C.25:15.3 - Security family
 
@@ -308,7 +310,7 @@ Resist a guard such as *resilience must be high*. Cite the exact quality-claim e
 
 #### C.25:17.1 - Repair from bare quality requirement prose
 
-Bare phrases such as *quality requirement*, *security requirement*, or *availability requirement* should not survive as bare heads when the underlying endpoint is actually a characteristic or bundle. The repair rule is:
+Keep a familiar label such as *security requirement* when its content already makes the intended claim clear. If the label hides what is required, recover the endpoint:
 
 - choose the endpoint shape first,
 - then bind the requirement or commitment to that explicit head.
@@ -388,6 +390,7 @@ Practical reading:
 3. If one proxy or this proportional bundle answers the receiving question, stay in `C.25`.
 4. Open `C.26.3` only when several characteristics must remain inside a viable region under disturbance and a candidate intervention, boundary condition, adaptation cost, or failure mode matters.
 5. Open `C.27` only when a temporal claim is being used to change action—for example, when rate-change, effort, window, resistance, recovery, or cadence changes that action.
+
 Minimum viability-envelope note:
 
 | Field | Required content |

@@ -1,19 +1,17 @@
 ## FPF.Reference:9 - Thinking Through Writing
 
-FPF relies on written forms because serious reasoning needs objects that can be inspected. In everyday work, much reasoning stays inside conversation, memory, chat logs, sketches, or tool outputs. That is often enough for one short exchange. Addressable records become useful when reasoning is to survive delegation, review, reuse, publication, AI assistance, or time.
+FPF uses written forms when reasoning needs to remain inspectable. Conversation, memory, chat logs, sketches or tool outputs can suffice for immediate work. Addressable records become useful when delegation, review, reuse, publication, AI assistance or delay requires durable access.
 
-FPF's cards, records, tables, views, term sheets, characteristic spaces, pattern bodies, conformance checks, and DRRs are thinking instruments. They are not documentation after the fact. Writing the record is often the work of thinking:
+Written forms can help develop reasoning as well as record it. For example:
 
-- a problem card separates a complaint from a problem that later work can use;
+- developing a problem card can turn an initial complaint into a formulation whose subject, constraints and unresolved relations later work can use;
 - a TaskSignature makes an accepted problem usable by later eligibility, acceptance, and method-family selection without selecting the method or planning the work inside the problem record;
-- a comparison frame forces the team to say what is being compared and by which characteristics;
-- a characteristic space makes "better" visible before improvement starts;
+- a comparison frame makes explicit what is being compared, by which characteristics and under which conditions;
+- a characteristic space supplies dimensions and scales for a declared evaluation or comparison;
 - a term sheet keeps local meanings from being flattened across teams;
-- a DRR exposes what decision changed the specification and why;
-- a pattern body makes a recurring working problem reusable without hiding its boundaries.
+- a DRR makes the decision, its reasons and its intended consequences inspectable;
+- a pattern body explains reusable guidance for a recurring problem, with the conditions and limits of its use.
 
 The medium is not prescribed. A team may use paper, markdown, a wiki, a spreadsheet, a model repository, or a specialized tool. FPF is tool-agnostic. What matters is the conceptual structure of the durable publication unit and the relations it makes recoverable.
 
-This is especially important for AI use. An AI assistant can generate fluent prose faster than a team can inspect it. FPF forms give generated outputs and proposals places to land: candidate set, evidence gap, description-use note, architecture question, term sheet row, source-basis return condition, missing-structure return condition, or blocked-use result. Without such forms, the output often remains persuasive text rather than project reasoning.
-
-Thinking through writing is not paperwork. It is how thought becomes durable enough to challenge, improve, and responsibly act on.
+For an AI-generated proposal that needs inspection or reuse, identify what result it offers and its grounds—for example, an option comparison, an architecture question or a qualified model-use claim. Choose a form that keeps the necessary distinctions recoverable; completing that form does not supply missing support.

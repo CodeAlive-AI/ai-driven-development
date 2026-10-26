@@ -55,18 +55,18 @@ A third failure is static stability. Teams say "keep the system stable" as if st
 
 Use C.26.3 when the work must regulate a multi-characteristic viability envelope under disturbance. Use `C.25`, `U.Dynamics`, measurement, boundary, causal, and work patterns to state the exact qualities, changes, observations, relations, and Work on which the envelope claim relies. Add `C.26` / QL only under the residual-obstruction condition in §1. If no such obstruction remains, omit the QL fields and checks; do not discard an otherwise useful envelope-regulation result.
 
-Start with this recognition note:
+Start with these recognition questions; ordinary prose can supply the answers.
 
 | Mini-entry | Question |
 | --- | --- |
 | Viability bearer | Is it one System with its A.1 identity, one A.22 `U.Structure` with exact constituents, selected obtaining relations, applied constraints, and a named selection-use frame, or a population/market slice with its own declared basis? A list of system-role kinds and assignment occurrences is not a bearer. |
 | Protected promise / function | Which `U.PromiseContent`, stakeholder value, function, operating regime, commitment payload, or delivery promise is protected? |
-| Envelope variables | Which two to five variables matter, rather than one comfort scalar? |
+| Envelope variables | Which dimensions and bounds must be retained for this viability decision? |
 | Disturbance | What pushes the exact object in the local viability-bearer position outside the declared envelope? |
 | Sensor / probe / candidate intervention | What reads the situation? What change is proposed, which exact object carries that proposal, and what actual Work, transformation, relation, or resulting state exists, if any? |
 | Trade-off / failure | What gets worse, what cost is paid, and what failure would show the envelope move did not work? |
 
-Use the fuller envelope-regulation record below when the viability reading will change a metric, candidate-intervention choice, boundary, staffing, routing, promise, or evidence decision.
+Use the fuller account below when the receiving viability decision needs distinctions missing from the recognition note. Reuse adequate existing content. A supported diagnosis can finish without an intervention proposal.
 
 Full envelope-regulation record:
 
@@ -90,7 +90,7 @@ Full envelope-regulation record:
 
 `Homeostasis` means keeping a parameter or bundle inside viable bounds. `Allostasis` means preserving functioning through separately governed changes to internal settings, external relations, boundary conditions, or operating regime when circumstances change.
 
-Do not say that all architecture is homeostasis. Say that some architecture decisions are viability-envelope decisions.
+Use these terms when their distinction changes the interpretation of the viability decision.
 
 #### C.26.3:4.2 - Finish conditions
 
@@ -141,15 +141,15 @@ Envelope-regulation sequence:
 2. Name the envelope variables and the viable range or qualitative boundary for each.
 3. Name the disturbance or regime change.
 4. Name sensors/probes and say whether they only report, also frame, or also change behavior.
-5. Name each candidate intervention and recover the exact object of the proposal: Method or description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description. Separately identify any dated Work, actual change, obtaining relation occurrence, or resulting state. Work may change an access, permission, assignment, local-sense claim, reference scheme, Bridge description, bounded-use claim, or other world-side object only as its direct pattern permits. If an F.9 endpoint or profile changes, test the resulting Bridge candidate anew; a fixed Bridge occurrence cannot be revised or ended by authority.
+5. When regulation is proposed, name each candidate intervention and recover the exact object of the proposal: Method or description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description. Separately identify any dated Work, actual change, obtaining relation occurrence, or resulting state. Work may change an access, permission, assignment, local-sense claim, reference scheme, Bridge description, bounded-use claim, or other world-side object only as its direct pattern permits. If an F.9 endpoint or profile changes, test the resulting Bridge candidate anew; a fixed Bridge occurrence cannot be revised or ended by authority.
 6. State the boundary condition being preserved or changed.
-7. State the trade-off condition and adaptation cost.
+7. For a proposed regulation, state the trade-off condition and adaptation cost.
 8. State the failure mode and re-probe/destabilization condition.
 9. Add dynamics detail only if rate, inertia, damping, latency, resistance, or acceleration changes the decision.
 
-Ordinary output: produce a viability-envelope record with envelope variables and viable region, a disturbance/sensor/probe map, a candidate-intervention-to-direct-object recovery, and a trade-off, adaptation, and failure condition that tells the practitioner what changes in the work.
+Ordinary output: explain the viability bearer, variables and bounds, disturbance, observations and failure condition. When regulation is proposed, add the identified proposal, trade-off and adaptation cost. A record is useful when its layout helps recover those distinctions; ordinary prose can preserve them.
 
-The output should give one direct next move: revise a MethodDescription or policy episteme; amend a WorkPlan; recover each actual performer's A.13 core and independently admit the Work under A.15.1; if that Work account must also identify the assignment under which it was performed, check the relation separately through F.6; change a setting through a separately grounded transformation; change an access or permission relation when its direct pattern permits; revise a local-sense claim, reference scheme, Bridge description, or bounded-use claim; test a new F.9 candidate after an endpoint/profile change; record the resulting state; or drop the envelope claim.
+Finish with the supported diagnosis or the proposal it warrants. Use the proposal's direct pattern for its development and any later execution or change; keep the supported envelope claim separate from those results. If its necessary grounds are missing, retain only the narrower supported claim or return the missing basis.
 
 #### C.26.3:4.6 - Viability envelope record
 
@@ -171,7 +171,7 @@ failure mode: ...
 re-probe or destabilization condition: ...
 ```
 
-The record is not a new U-kind or a universal architecture constructor. Changing its ClaimGraph content changes the claim and therefore identifies another episteme under `C.2.1`. A new layout, publication occurrence, form, or carrier can leave the episteme unchanged. New evidence can change the support for the claim without changing that claim; if the asserted ClaimGraph changes, the result is another episteme.
+Changing the ClaimGraph content changes the claim and therefore identifies another episteme under `C.2.1`. A new layout, publication occurrence, form, or carrier can leave the episteme unchanged. New evidence can change the support for the claim without changing that claim; if the asserted ClaimGraph changes, the result is another episteme.
 
 Well-formedness constraints:
 
@@ -206,7 +206,7 @@ Use the minimal reading that carries the case:
 
 | Reading | Use when | Practical output |
 | --- | --- | --- |
-| Scalar quality repair | One characteristic or Q-bundle dimension is enough. | Apply `C.25`, measurement patterns, or evidence patterns as appropriate. |
+| Scalar quality repair | One characteristic or Q-bundle dimension is enough. | Use `C.16` for the Characteristic/measurement claim, `C.25` for an engineering-quality bundle when needed, and evidence patterns for the actual reliance. |
 | Homeostatic envelope | The target is to keep a bundle inside a stable range under disturbance. | State variables, range, disturbance, sensor, candidate intervention with its recovered direct object, and failure mode. |
 | Allostatic envelope | Function is preserved through one or more separately governed changes. | State the proposal's exact Method or description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description; separately state any dated Work, actual transformation or other change, obtaining relation occurrence, resulting state, and moved cost. |
 | Probe-coupled viability | The measurement, dashboard, review, or readiness check changes the envelope it reports, but its output is used as a passive read for the decision. | Coordinate with `C.26.1`. |
@@ -238,21 +238,33 @@ Allostasis, active inference, FEP, Markov blankets, and computational-boundary s
 | Criticality / metastability | Stability may be regime-bounded and fluctuation-bearing, not one final fixed point. |
 | Expected free energy / precision control | Information gathering, action, and confidence have cost; use only when those costs change the architecture decision. |
 
-This translation keeps the pattern practical for architects. The reader should be able to move from a source line to one concrete action: change a metric or probe; recover the candidate proposal as its exact Method or description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description; separately identify any dated Work, actual transformation or other change, obtaining relation occurrence, or resulting state; where a direct relation pattern permits Work or a transformation to establish, change, or end its occurrence, state that occurrence under its predicate; for F.9, revise only the relevant claim, scheme, endpoint sense, profile, or description and test any new Bridge candidate independently; change a boundary condition; state a trade-off; or reroute.
+Use the translated source contribution to explain an envelope constraint or choose the next needed operation—for example, compare a probe redesign or a proposed setting change. The operational sequence and direct subject patterns govern the resulting proposal, observation or actual change; a source analogy supplies none of their missing grounds.
 
 ### C.26.3:5 - Archetypal Grounding
 
-Tell: A platform team tries to preserve checkout latency during a traffic spike. The first move is to increase cache aggressiveness. Latency improves, but support load rises because stale payment-failure status causes confused customer contacts.
+Tell: In a constructed case, a platform team tries to preserve checkout latency during a traffic spike. Increasing cache aggressiveness improves latency, but stale payment-failure status increases confused customer contacts and support load.
 
-Show, System side: take `CheckoutSystem-1` as a case premise: it has already been independently recognized under A.1 as the deployed `U.System` whose viability envelope the team regulates. If that recognition is unavailable, stop; *checkout*, *payment*, and *service* wording do not establish the bearer. Keep the protected promise separate: `CheckoutPromiseContent-1` is the `U.PromiseContent` stating the checkout outcome and reliability on which the customer may rely. For this envelope decision, latency and payment-correctness measurements support claims about selected behaviour and results of `CheckoutSystem-1`; support-load measurement concerns the team's dated support Work; operator-attention measurement concerns the people doing that Work; and customer-promise reliability is tested by a separate evaluation of whether `CheckoutPromiseContent-1` is fulfilled. The decision uses these claims as distinct constraints; it does not turn them into facets of one bearer. Candidate interventions are proposed cache-policy, retry-policy, or routing changes. If the team plans one as intended Work, place that intention in a `U.WorkPlan`; the proposal is not `U.Work`. Assert `U.Work` only after each actual performer's A.13 core is established and A.15.1 independently admits the dated occurrence from its history, enacted Method, temporal extent, and containing-System relation. If the case must also identify the assignment under which that Work was performed, check the relation separately through F.6. For the cache intervention, this case asserts only the observed cache-setting change, not a Work individual. A dashboard query remains a probe unless the case separately names a behaviour-changing occurrence. Changing escalation terms, a local-sense claim, a reference scheme, an F.9 endpoint/profile component, or a Bridge description keeps the resulting promise content, commitment, claim, description, and dated Work separate. After an endpoint/profile change, test the new F.9 candidate independently; do not say that Work revised the fixed Bridge occurrence. Here the observed cache-setting change improves latency while stale payment-failure status increases support load, so optimizing one declared dimension damages another.
+Show, System side: `CheckoutSystem-1` is independently recognized under A.1 as the deployed System. `CheckoutPromiseContent-1` separately states the checkout outcome and reliability on which customers may rely. Compare two matched one-hour windows under the stipulated spike condition, one before and one after the cache-setting change. The envelope decision uses three independently defined constraints:
 
-Show, Episteme side: the supported claim is not "latency is the viability state." It is an envelope-regulation claim: the observed cache-setting change preserved latency while damaging another envelope dimension. The text records that actual change separately from the proposed cache-policy intervention. The repair is to state the trade-off, adaptation cost, applicable authority and latency, and failure mode.
+| Constraint and subject | Required bound | Before cache-setting change | After cache-setting change |
+| --- | --- | ---: | ---: |
+| CheckoutSystem-1 request latency, highest five-minute p95 within each hour | <=250 ms | 350 ms | 180 ms |
+| CheckoutSystem-1 stale payment-failure statuses over the incident hour | <=1% | 0.2% | 3% |
+| Incident support Work: customer contacts handled during that hour | <=20 | 10 | 45 |
+
+These numbers are constructed case premises. The latency condition improves, but the changed setting violates the status and support constraints, so it does not restore the declared envelope. These claims concern different subjects; the decision uses them together without making support Work a facet of CheckoutSystem-1. Operator attention, if added, would concern the people doing that Work. Fulfillment of CheckoutPromiseContent-1 still needs its own evaluation.
+
+The case stipulates the observed cache-setting change; it identifies no dated cache-intervention Work individual. A claim about a particular such Work would require each actual performer's A.13 basis and independent A.15.1 admission, with F.6 only for assignment-bound attribution. A dashboard query is an observation operation unless a behavior-changing effect is separately established.
+
+Show, Episteme side: retain the diagnosis that the changed setting improves latency while violating other envelope constraints. A lower-cache-duration setting or revised retry policy is a proposal to compare, not an observed remedy. Recover that proposal's object, expected trade-off, adaptation cost, applicable authority and realization latency before choosing it; a planned enactment belongs in a WorkPlan. Missing intervention evidence leaves the diagnosis useful and the proposed remedy unresolved. If support capacity is independently revised to 50 contacts per hour, the observed 45 satisfies that revised constraint, but the 3% stale-status result still exceeds 1%; changing one bound does not repair the other failure.
+
+Keep promise content, commitments, claims, descriptions and dated Work separately identified if escalation or access is changed. For an F.9 endpoint/profile change, test the resulting Bridge candidate independently; Work does not revise a fixed Bridge occurrence.
 
 ### C.26.3:6 - Bias-Annotation
 
-This pattern biases authors against scalar comfort. That bias prevents "green dashboard" from replacing viability.
+This pattern emphasizes constraints that a favorable scalar can hide, including damage to another envelope dimension.
 
-It also biases authors toward actionable architecture work. The pattern asks which direct object a boundary, access, protocol, staffing, cache, throttle, bridge, or measurement proposal denotes and how quickly its separately governed effects can matter. For any precise Work claim, establish each actual performer's A.13 core and independently admit the dated occurrence under A.15.1. Add F.6 attribution only if the account must also identify the assignment under which that Work was performed. Any actual transformation is grounded separately.
+It also biases authors toward actionable architecture work. The pattern asks which direct object a boundary, access, protocol, staffing, cache, throttle, bridge, or measurement proposal denotes and how quickly its separately governed effects can matter. For a particular dated Work claim, establish each actual performer's A.13 core and independently admit the dated occurrence under A.15.1. Add F.6 attribution only if the account must also identify the assignment under which that Work was performed. Any actual transformation is grounded separately.
 
 Use `C.25` alone when one quality bundle or metric can be handled without envelope, disturbance, boundary condition, recovered candidate intervention, adaptation cost, or viability failure mode.
 
@@ -288,7 +300,7 @@ Use `C.25` alone when one quality bundle or metric can be handled without envelo
 
 ### C.26.3:9 - Consequences
 
-This pattern helps architects see stability-through-change. It supports decisions about candidate interventions only after each throttling, staffing, routing, protocol, context-boundary, cache, measurement, or escalation proposal is recovered as its exact Method, description, setting proposal, WorkPlan, access or permission claim, or Bridge proposal or description, while any dated Work, actual transformation or other change, obtaining relation occurrence, and resulting state remain separately grounded.
+The envelope account makes trade-offs visible: preserving one characteristic can violate a constraint supplied by another claim. It supports a diagnosis, or comparison of independently identified proposals, while the direct subject patterns continue to govern the proposed objects and any actual changes.
 
 The cost is that simple metric stories become less simple. That is acceptable when the metric story hides another envelope dimension, an intervention cost, a boundary condition, or a failure mode.
 

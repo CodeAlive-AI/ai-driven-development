@@ -6,6 +6,10 @@
 
 **Plain-name.** Admissible reopen / backoff / respecification.
 
+**Use this when.** A published framing, route or use claim exceeds its grounds, or a branch should cease to be used. Choose the move in §4.1, retain the supported content and revise only the dependent claims affected by the change.
+
+**First useful result.** Make the source, reason, surviving content and changed use recoverable in the existing publication or an accompanying note. Apply A.16:4.3 to any episteme-identity change. Use A.16.0 only when the receiving question needs a separate account of the history.
+
 ### A.16.2:1 - Problem frame
 A governed history across the language-state chart must support admissible retreat as well as tightening. When a route, publication form, or framing scaffold over-commits, teams need a first-class way to reopen, back off, respecify, or retire a branch without pretending nothing changed.
 
@@ -29,26 +33,29 @@ This pattern defines the retreat, reframing, and retirement side of the `A.16` m
 | `reopen` | the current family is still right, but closure was over-committed | family and major orientation | closure, rival set, guards |
 | `sketchBackoff` | the current publication form overstates articulation or stability | witnesses, traces, some anchors | publication form, articulation-explicitness value, route certainty |
 | `respecify` | the family remains plausible, but the framing scaffold, route specification, or facet-profile reading is wrong | broad domain, witness base, and major family commitments | framing scaffold, route specification, facet-profile reading |
-| `retire` | a cue, route-bearing publication, episteme, or branch is no longer current or no longer worth preserving | historical continuity and any cited witnesses that still matter | current-use or retirement status, successor/no-successor status, and any separately established relation change |
+| `retire` | a cue, route-bearing publication, episteme, or branch is no longer current or no longer worth preserving | recorded history and any cited witnesses that still matter | current-use or retirement status, successor information, and any separately established relation change |
 
 `respecify` is intentionally narrower than epistemic precision repair. Slot-explicit epistemic precision restoration, bearer repair, or endpoint-local lexical precision remains with governing patterns such as `A.6.P`, `C.16.Q`, and `A.6.A`.
 
-#### A.16.2:4.2 - Required publication note
-Every retreat or retirement move shall name:
+#### A.16.2:4.2 - Required publication content
+Make the following content recoverable for each retreat or retirement move; add a note only when the existing material is insufficient:
 
 - source publication form,
 - source articulation, closure, route plurality or selection, endpoint-use disposition, publication availability, and current-use status insofar as each is current,
 - trigger or counter-evidence,
-- target family or target publication form,
+- target family or target publication form when there is one; a retired branch may have no successor,
 - retained witnesses,
 - withdrawn assumptions, route claims, endpoint-use or current-use claims, and any exact authority, responsibility, permission, or commitment relation that separately changes,
-- and whether a successor now exists or the branch is retired without successor.
+- required dependent updates under §20;
+- and successor information when the receiving use needs it. Identify a successor only under its applicable relation; distinguish a no-successor result supported by a negative criterion or complete closure basis from an unresolved successor question.
 
 #### A.16.2:4.3 - Status and relation discipline
-A retreat or retirement move shall separately update any route selection, endpoint or gate result, publication availability, current-use or retirement claim that no longer holds. The move does not by itself establish a change in authority, responsibility, permission, or commitment. If one of those relations does change, name its exact predicate, participants, object or action, scope, interval, and ending or instituting act under its direct pattern.
+Reconsider each route selection, endpoint or gate conclusion, publication availability, current-use or retirement claim that depends on the changed basis. Revise those no longer supported and preserve unaffected claims. A past test result remains a historical fact; distinguish it from whether its conclusion still applies to the current use. The move does not by itself establish a change in authority, responsibility, permission, or commitment. If one of those relations does change, name its exact predicate, participants, object or action, scope, interval, and ending or instituting act under its direct pattern.
+
+If only one route claim, scope assumption or operational use fails, retain the surviving content. Follow its actual dependencies under §20 instead of resetting the entire publication.
 
 ### A.16.2:5 - Archetypal Grounding
-**Tell.** Backoff is not regression; it is an admissible language-state move when the current publication form over-commits. Retirement is not erasure; it says that the exact cue, episteme, publication, or branch is no longer current for the named use while preserving its history.
+**Tell.** Backoff is admissible when the current publication form over-commits. Retirement is not erasure; it says that the exact cue, episteme, publication, or branch is no longer current for the named use while preserving its history.
 
 **Show (System).** On a rollback cue, a practitioner may reopen a prior decision path instead of pretending the original operationalization still holds, or retire one branch once a better-supported successor line has taken over.
 
@@ -59,7 +66,7 @@ The pattern pushes against false linear progress narratives. The cost is that te
 
 ### A.16.2:7 - Conformance Checklist
 - `CC-A.16.2-1` Retreat or retirement moves **SHALL** cite the trigger or counter-evidence that justifies them.
-- `CC-A.16.2-2` A retreat or retirement move **SHALL NOT** silently preserve a passed endpoint test, stronger-use disposition, gate result, publication availability, or current-use claim when the target form no longer supports it.
+- `CC-A.16.2-2` Reassess claims that depend on the changed basis. Revise an endpoint-use, gate, publication-availability or current-use conclusion when it is no longer supported; preserve the historical test result and unaffected claims.
 - `CC-A.16.2-3` Reopen / backoff / respecify / retire moves **SHOULD** preserve witnesses and trace links whenever still valid.
 - `CC-A.16.2-4` Target articulation, closure, route selection, endpoint-use disposition, publication availability, and current-use or retirement status **SHALL** remain separate and be explicit when the move substantively changes them.
 - `CC-A.16.2-5` `respecify` **SHALL NOT** be used to smuggle slot-explicit epistemic precision repair out of governing patterns.
@@ -72,13 +79,13 @@ The pattern pushes against false linear progress narratives. The cost is that te
 - **Silent branch disappearance.** A branch stops mattering, but no retirement or supersession note is published.
 
 ### A.16.2:9 - Consequences
-The benefit is explicit reversibility, reframing, and retirement handling. The trade-off is more explicit transition records and more explicit governance notes.
+The benefit is explicit reversibility, reframing, and retirement handling. The cost is making the changed use and its affected dependencies recoverable; existing publication content may suffice.
 
 ### A.16.2:10 - Rationale
 Language-state history is not one-way tightening. Without retreat and retirement discipline, `A.6.P` and endpoint forms would encode only one-way progress and would hide the real cost of over-commitment.
 
 ### A.16.2:11 - SoTA-Echoing
-This fits iterative design, incident response, scientific reframing, embodied inquiry, and exploratory model work where recovery from over-commitment and honest branch retirement are part of competent practice.
+**FPF proposal.** The four moves distinguish reopening closure, reducing an over-committing form, changing a framing and ending a use. A.16:10 gives bounded incident-response and historical provenance comparisons; the move distinctions and admission rules here remain FPF's own contribution.
 
 ### A.16.2:12 - Relations
 - Builds on: `A.16`, `C.2.5`.
@@ -103,23 +110,6 @@ A route-bearing publication may keep the same broad family but replace one frami
 #### A.16.2:13.4 - Retire an obsolete branch
 A route-bearing branch may later become obsolete because another branch now carries the governing pattern and witness support for the current use. The admissible continuation is explicit `retire`, not silent disappearance.
 
-### A.16.2:14 - Authoring and Review Guidance
-
-#### A.16.2:14.1 - Author prompt
-A retreat or retirement note should say:
-
-- what proved over-committed or no longer current,
-- what remains valid,
-- which route selection, endpoint-use disposition, publication availability, current-use claim, or separately established authority relation is withdrawn,
-- what publication form now becomes appropriate,
-- and whether any successor carries the continuity forward.
-
-#### A.16.2:14.2 - Review prompt
-A reviewer should ensure that retreat does not become silent erasure. Valid witnesses should survive unless explicitly discarded with reason, and retired branches should either name a successor or say clearly that none exists.
-
-#### A.16.2:14.3 - Boundary reminder
-Retreat is an admissible move, not a rhetorical excuse to avoid publishing mistakes. The value of the pattern depends on making the retreat or retirement visible.
-
 ### A.16.2:15 - Migration Notes
 
 #### A.16.2:15.1 - Migration from regression language
@@ -128,41 +118,19 @@ Older language often talks about "going backwards" or "regressing". The preferre
 #### A.16.2:15.2 - Integration reminder
 When retreat affects governing patterns such as `A.6.P`, `A.6.A`, `C.16.Q`, or `A.15`, update the affected subject result, recovered action claim or question, evaluation, Work hook, or current-use claim instead of leaving a stale downstream assertion.
 
-### A.16.2:16 - Retreat Package Discipline
-
-A retreat is trustworthy only when it makes visible what changed, what survived, and which exact route, endpoint, publication, current-use, or independently established relation claim no longer holds.
-
-#### A.16.2:16.1 - Minimal retreat note
-A retreat note should make explicit:
-
-- the **source form** and the separate route selection, endpoint-use disposition, publication availability, current-use status, and actual relation claims that matter,
-- the **triggering mismatch or counter-evidence**,
-- the **move kind**,
-- the **target form or target family**,
-- the **retained witnesses**,
-- the **withdrawn assumptions or route claims**,
-- the **required downstream updates** for any affected governing pattern,
-- and the **successor / no-successor status** if a branch is retired.
-
-#### A.16.2:16.2 - Retreat is not erasure
-Retreat preserves continuity: a high-closure formulation or one that had passed a named endpoint test for a stronger use was adopted, then shown to over-commit in stated respects, and therefore backed off or withdrawn admissibly.
-
-#### A.16.2:16.3 - Partial retreat
-Some retreats withdraw only one route claim or scope assumption, or remove one framing scaffold or operational hook from the current use. In those cases name the surviving core rather than resetting everything.
-
 ### A.16.2:17 - What each retreat preserves and withdraws
 
 #### A.16.2:17.1 - Reopen
 `reopen` usually preserves the family and much of the surrounding structure while withdrawing closure. It reintroduces rival possibilities without claiming that the entire earlier publication was inadmissible.
 
 #### A.16.2:17.2 - Sketch-backoff
-`sketchBackoff` more sharply withdraws closure, a route selection, or a passed endpoint test and its stronger-use disposition. It typically preserves witnesses, exemplars, or cue anchors while withdrawing the over-committing publication form. An actual authority relation changes only through its own predicate and act, not merely because the form changed.
+`sketchBackoff` withdraws the closure, route selection or stronger-use disposition that the available grounds no longer support; it preserves the historical fact of any earlier test. It typically preserves witnesses, exemplars, or cue anchors while withdrawing the over-committing publication form. An actual authority relation changes only through its own predicate and act, not merely because the form changed.
 
 #### A.16.2:17.3 - Respecify
-`respecify` keeps the broad family but changes framing scaffold, route specification, or facet-profile reading. It is neither pure retreat nor silent edit: it preserves enough of the prior publication to justify continuity, but it does not authorize semantic slot repair that belongs to governing patterns.
+`respecify` keeps the broad family but changes framing scaffold, route specification, or facet-profile reading. It is neither pure retreat nor silent edit: it retains the supported content while identifying any changed episteme under C.2.1. Assert continuity only when its relation obtains; apply governing patterns for semantic slot repair.
 
 #### A.16.2:17.4 - Retire
-`retire` ends current use of the exact cue, episteme, route-bearing publication, or branch while preserving historical continuity. It may point to a better-supported successor or explicitly state that no successor currently exists. Publication availability and any actual authority relation remain separate claims.
+`retire` ends current use of the exact cue, episteme, route-bearing publication, or branch while preserving its history. Report supported successor information or an unresolved successor question as §4.2 requires. Publication availability and any actual authority relation remain separate claims.
 
 ### A.16.2:18 - Worked Recovery Cases
 
@@ -173,7 +141,7 @@ An evaluative note may have reached a high closure state under one route, but ne
 An abductive prompt may later prove over-committed because its open question was formulated before the cue anchors had stabilized. The admissible recovery is to sketch-backoff to `PreArticulationCuePack`, preserving the cue carriers while withdrawing the prompt-readiness and current-use claims.
 
 #### A.16.2:18.3 - Respecifying a route specification
-A route-bearing publication may keep the same general direction but replace one route specification with another when later review shows that the original framing selected the wrong governing pattern family. The point of `respecify` is to make that replacement visible without pretending the earlier route specification never existed.
+A route-bearing publication may keep the same general direction but replace one route specification with another when later review shows that the original framing selected an unsuitable governing pattern within that broader question. The point of `respecify` is to make that replacement visible without pretending the earlier route specification never existed.
 
 #### A.16.2:18.4 - Retiring a route branch
 A route-bearing branch may later be withdrawn because better-supported grounds, clearer closure, or a more adequate successor publication now carry the work. `retire` keeps that withdrawal visible instead of letting the branch vanish into later prose.
@@ -186,9 +154,7 @@ A reviewer can test retreat integrity with five questions:
 2. **Were the affected claims updated?** If the earlier route selection, endpoint admission, gate result, publication availability, current-use claim, evidence-use basis, or actual authority relation no longer applies, revise that exact dependent claim under its direct pattern.
 3. **Did valid witnesses survive?** If all earlier grounding disappeared without reason, the retreat probably became erasure.
 4. **Was the move kind correctly named?** Reopen, sketch-backoff, respecify, and retire solve different problems; confusing them obscures what actually changed.
-5. **If a branch was retired, was successor / no-successor status explicit?** If not, the retirement record leaves unclear whether a successor exists.
-
-The matrix is intentionally small: `A.16.2` should keep retreat legible, not surround it with decorative procedure.
+5. **If the next use needs successor information, is its basis clear?** Distinguish an obtaining successor relation, a supported no-successor result and an unresolved question.
 
 ### A.16.2:20 - Required Downstream Repairs
 
@@ -199,7 +165,7 @@ A retreat or retirement often leaves stale downstream publications or Work targe
 Retreat propagation should be as narrow as truth permits. If only one framing scaffold failed, then only the downstream publications or Work targets that depend on that scaffold need revision. Over-broad rollback is wasteful; under-broad rollback leaves false route, endpoint, publication, or current-use claims in circulation.
 
 #### A.16.2:20.3 - Retreat timestamping and witness continuity
-Where several revisions exist, the retreat note should make clear which earlier publication it revises and which witness set still carries continuity across the revision. Without that linkage, readers may not know whether two nearby texts are alternative drafts or a genuine retreat sequence.
+Where several revisions exist, the changed publication or accompanying note should identify the earlier publication and retained witnesses. State which obtaining relation, if any, supports episteme continuity. Without that linkage, readers may not know whether two nearby texts are alternative drafts or a genuine retreat sequence.
 
 ### A.16.2:21 - Comparative Retreat Rule
 
@@ -210,15 +176,6 @@ Where several revisions exist, the retreat note should make clear which earlier 
 Authors in a context may prefer softening language such as "refined further" or "adjusted slightly" even when a real retreat or retirement occurred. `A.16.2` rejects that habit. If closure dropped, framing was withdrawn, route selection or endpoint use changed, or a branch was retired, name the move directly.
 
 #### A.16.2:21.3 - Boundary to silent editing
-If a publication is simply rewritten and no continuity account is preserved, that is editing, not `A.16.2`. Retreat is a reviewable move only when the earlier high-closure form or the form that had passed a named endpoint test remains part of the visible history.
+For a reviewable retreat, keep the relevant earlier claim and the reason for its change recoverable. Existing version history or publication content can supply that account. A separate note is needed only when that material is insufficient; a continuity claim still requires its own relation.
 
-### A.16.2:22 - Review Addendum for Retreat Integrity
-
-Add three checks to the base retreat matrix:
-
-- **Were downstream dependencies updated?**
-- **Was the propagation scope truthful?**
-- **Does the revised history remain legible?**
-
-These checks keep `A.16.2` tied to explicit recovery and retirement rather than narrative smoothing.
 ### A.16.2:End

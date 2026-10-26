@@ -16,7 +16,7 @@ Use this pattern when repeated typed reasoning needs one explicit kind criterion
 
 **First useful move.** Write the readable result first: `Pump #14 counts as a cooling pump in this plant slice because it satisfies the declared cooling-pump condition.` Before evaluating, confirm that a pump candidate and this slice are within the declaration's candidate domain and applicability. Cite support only when the receiving use relies on it; create a reusable signature or extension only for repeated or set-consuming use.
 
-**Not this pattern when.** Use the direct subject pattern to establish the candidate and the exact quality, relation, episteme, status, publication occurrence, or other condition named by the criterion; A.14 for membership in a collection; C.3.3 for a claimed correspondence between distinct kinds; C.29 for a claim-bearing mathematical representation; and `E.24.UK` for admission of another durable public kind.
+**Not this pattern when.** Use the direct subject pattern to establish the candidate and the exact quality, relation, episteme, status, publication occurrence, or other condition named by the criterion; A.14 for membership in a collection; C.3.3 for a claimed correspondence between distinct kinds; C.29 for a separate mathematical representation or transfer question; and `E.24.UK` for admission of another durable public kind.
 
 ### C.3.2:1 - Problem Frame
 
@@ -47,7 +47,7 @@ The shorthand `MemberOf(e,k,slice)` is unsafe because readers can take it as an 
 | `U.Kind` individual and order | The intensional kind and any obtaining `U.SubkindOf` facts used by typed reasoning. | C.3 and C.3.1; not this declaration, a practice/source label, or a new public-kind admission. |
 | `KindSignature` | A `U.Signature` declaration episteme whose exact `EntityOfConcern` is the kind. | A.6.0 and C.2.1 govern the episteme and its editions. |
 | classification judgment | One evaluation for an admissible exact candidate, kind, signature edition, and slice, returning `true`, `false`, or `unknown`. | C.3.2; it is not a direct relation occurrence or guard result by default. |
-| `KindExtension(k, slice)` | An optional set-valued representation of admissible candidates judged `true` for the pinned signature edition and slice. | Local calculation unless C.29 governs a claim-bearing use. |
+| `KindExtension(k, slice)` | An optional set-valued representation of admissible candidates judged `true` for the pinned signature edition and slice. | C.3.2 for the local set calculation; C.29 when a separate mathematical representation or transfer issue needs resolution. |
 
 `ClassificationAdmissibility(candidate, kind, signatureEdition, slice)` returns `admissible` or `not-applicable`. It is a precondition result, not another kind or membership value. `not-applicable` means the candidate fails the declared candidate `ValueKind`/interpretation or the slice falls outside signature applicability; no classification judgment is formed.
 
@@ -100,7 +100,7 @@ Materialize `KindExtension(k, slice)` only when a named query, quantification, c
 - State the candidate domain without inventing `U.EntitySet`.
 - Include exactly admissible candidates whose judgment is `true`. Keep `unknown` and `not-applicable` distinct when the receiver needs those exclusions explained.
 - Treat braces, rows, indexes, or database results as representations. They create neither a collection holon, A.14 membership occurrence, direct classification relation, nor criterion condition.
-- Use C.29 when the represented set changes a claim-bearing use; otherwise the extension may remain a local calculation.
+- Use C.29 when interpretation, preservation or transfer of the represented set leaves a separate mathematical question. Otherwise finish the local calculation under the kind and query rules.
 
 Candidate state or a later slice can change an extension without changing the signature or kind. An extension row cannot repair an inconsistent declaration or subkind fact.
 
@@ -168,8 +168,8 @@ For a Work classification, keep these distinctions:
 
 - `U.Work` is the admitted kind;
 - `W : U.Work` is one independently grounded dated 4D work occurrence under `A.15.1`;
-- a plan, expected-work item, log, card, database row, assertion, or description about W remains distinct from W; identify any claim-bearing episteme through C.2.1, separately from its publication form or carrier; and
-- performer assignment, enacted method, temporal extent, containing system, affected referent, material binding, resource use, transformation, production, result, delivery, and acceptance remain separately governed.
+- a plan, record or description about W remains distinct from W; identify any claim-bearing episteme through C.2.1, separately from its publication form or carrier; and
+- further claims about W, such as its resource use or result, follow their direct subject patterns.
 
 A kind may classify an already identified W. A kind symbol, work label, plan, or record never occupies W's individual position, and record existence does not make planned Work actual.
 
@@ -209,7 +209,7 @@ A kind may classify an already identified W. A kind symbol, work label, plan, or
 | Returning `false` for missing support | Preserve `unknown`; let the receiving guard decide whether to decline use. |
 | Treating any evidence item or record as membership | Ask whether the criterion directly concerns that governed episteme, relation, status, or publication occurrence. If not, keep it only as support. |
 | Reusing a world-side belongs-to predicate or minting a relation by notation | Keep the result as a classification judgment unless a direct relation pattern is justified. |
-| Treating an extension or braces as ontology | Keep the candidate domain and extension as representations; use C.29 when claim-bearing. |
+| Treating an extension or braces as ontology | Keep the candidate domain and extension as representations. Resolve a separate mathematical representation or transfer issue through C.29; an adequate local calculation needs no additional lens account. |
 | Attaching scope or formality to the kind | Keep them on their declaration or assertion epistemes. |
 | Editing an extension to hide a subkind counterexample | Repair the relation proposal, declaration alignment, or distinct-kind bridge. |
 | Classifying a record as actual Work | Recover an independently grounded `W : U.Work`; keep its record separate. |
@@ -219,8 +219,6 @@ A kind may classify an already identified W. A kind symbol, work label, plan, or
 **Benefits.** Classification becomes inspectable without ontology growth, evidence-created truth, or coercion among non-applicability, uncertainty, and falsity. Repeated criteria can be reused, and set-consuming uses can receive a bounded representation.
 
 **Costs.** Reliance-bearing uses must pin a declaration and slice, check candidate/slice applicability, preserve `unknown`, and recover any criterion-bearing status or relation under its direct pattern.
-
-**Risks avoided.** Kind/declaration collapse, locality-as-identity, record ontology, not-applicable-as-unknown, false-for-unknown, mathematical-set overread, silent subkind repair, and kind/individual substitution are blocked.
 
 ### C.3.2:16 - Rationale
 

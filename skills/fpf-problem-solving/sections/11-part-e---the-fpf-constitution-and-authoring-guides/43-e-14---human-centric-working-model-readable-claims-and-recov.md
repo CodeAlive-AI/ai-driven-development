@@ -19,8 +19,6 @@ Use this pattern when FPF text needs to stay readable as one human working model
 Establish a **single, human-centric Working-Model** that practitioners can read, discuss, and evolve **without first reading the full assurance account**.
 A direct Working-Model statement needs no assurance field simply because it is published. When a publication elects `B.3.5` or another named current assurance requirement applies, the author declares the posture that requirement calls for and attaches only the needed assurance shoulders — **Mapping**, **Logical**, **Constructive**, or **Empirical Validation**. Under `B.3.5`, covered claims declare `validationMode`; covered structural claims also carry the profile's constructive grounding. The posture and its supports justify or challenge the published claim; they create neither the chosen model value nor a world-side relation occurrence. A `postulate` remains a pragmatic working claim within its stated scope: the author should add brief empirical cues that would help later validation. Choosing it does not say that evaluation or measurement Work occurred or that a result exists. The complete Work, result, and provenance account enters only when evaluation or measurement actually occurred and the current assurance use relies on that result; another named current requirement keeps its own obligations. Assurance shoulders sit **beneath** the Working-Model and **never define its vocabulary**.
 
-Put bluntly: *one model people work in; three assurance shoulders — plus empirical checks when the world is the judge.*
-
 ### E.14:2 - Problem Frame
 
 Teams need **one shared Working-Model** to make decisions at speed. Historically this shared model either:
@@ -72,9 +70,7 @@ Human-facing patterns also need EntityOfConcern stability across the two reading
 
 Working-Model-first drafting therefore also means subject-domain-first drafting. If a pattern is meant to help with a real review, design, cultural, research, or operational problem, the recognition text should open from that problem-owning moment before internal taxonomy or package architecture. If a broader umbrella and a narrower working branch are both live, say plainly what each names, what object is being discussed, what move the reader makes, and what wider work remains outside.
 
-Under `F.18` local-first naming, the canonical pair here is **recognition text** and **assurance text**.
-The earlier provisional `...shell` wording is retired.
-These names refer to two reading-order text blocks inside one pattern, not to new publication-face kinds or authority kinds.
+**Recognition text** and **assurance text** name two reading-order text blocks inside one pattern.
 
 For human-facing canonical patterns, Working-Model-first discipline should appear in a two-part reading order.
 The **recognition text** is the working text that a cold practitioner, manager, or researcher should be able to understand first: what situation this pattern is for, what it buys, what it is not for, and what ordinary mistake it helps prevent.
@@ -185,19 +181,17 @@ The selected support stays below the readable claim. It makes the needed basis i
 
 ### E.14:6 - Archetypal Grounding *(System and Episteme cases)*
 
-> **Tell–Show–Show.** The principle is stated once, then shown on a `U.System` case (structural) and on a `U.Episteme` case (knowledge‑bearing), in line with the authoring template.
-
 #### E.14:6.1 - `U.System` — Working‑Model first, Constructive grounding available
 
 * **Publication (Working‑Model).** Authors state structure using familiar relations (e.g., *Impeller* **ut\:ComponentOf** *Pump*; *Pump* **ut\:ComponentOf** *Skid*). Nothing else is required for readers to follow the design.
 * **Assurance (downward grounding).** When the publication elects `B.3.5`, first recover the exact skid, parts, direct fastening, coupling, enclosure, terminal, flange, and seal occurrences, the applicable skid assembly rule, and the skid reidentification rule. Then link the readable claim to one current C.2.1 `sum` trace that reports those facts and declare `validationMode=axiomatic`. If another named current requirement calls for a construction account, follow its stated obligations instead of borrowing `B.3.5` automatically. The account remains below the Working-Model; order and time stay in their own relation families.
-* **Canonization move.** Readers continue to see Working‑Model relations as the primary Working-Model text; the constructive story is *supporting*, not *defining*.
+* **Reading result.** Readers continue to see Working‑Model relations as the primary Working-Model text; the constructive story is *supporting*, not *defining*.
 
 #### E.14:6.2 - `U.Episteme` - Working-Model first; Logical, Mapping, and exact empirical support as appropriate
 
 * **Publication (Working-Model).** Authors connect meaning-bearing epistemes or publications using exact knowledge relations (for example, **RepresentationOf** or **UsageOf**) in the same human-oriented style.
 * **Assurance (downward grounding).** If the direct knowledge relation is sufficient, stop after the readable claim. When interpretation or alignment needs assurance, select Logical or Mapping support. When observation is the right currency, name the target claim, scope and window, dated evaluation or measurement Work, every performer System, and the Method the Work enacted. First recover each performer's A.13 core and independently admit the Work under A.15.1. Because this branch also asks under which assignment the Work was performed, check that exact link afterward with F.6 and use A.2.1 for the assignment itself. Cite a MethodDescription or local system-role-kind classification only when the claim uses it. Then name the participants or A.6.1 bindings, domain-local result and result episteme, A.10 evidence-provenance path, and any B.3 assurance claim that the assurance use consumes.
-* **Canonization move.** Working-Model text remains the public form; the exact result and support chain stays available underneath without leaking method, record, or time semantics into the subject claim.
+* **Reading result.** Working-Model text remains the public form; the exact result and support chain stays available underneath without leaking method, record, or time semantics into the subject claim.
 
 #### E.14:6.3 - Pump-vibration measurement: short recognition, exact assurance underneath
 
@@ -306,8 +300,6 @@ The **Working-Model layer remains the canonical publication face** for authors a
 | **Progressive assurance.** Teams can start with the direct claim and add Mapping, Logical, Constructive, or Empirical support deliberately without changing the visible relation. | **Risk of “forever-light.”** Some models may remain weakly assured; formal maturity checks and assurance prompts show where risk warrants more support. |
 | **Layer hygiene.** Order and time remain outside mereology; structural identity is neither overloaded nor diluted. | **Split attention.** Authors must learn to keep relation families distinct; mitigated by the Tell-Show-Show pedagogy across architectural patterns. |
 | **Spec cohesion.** The same section order and safety subsections (Bias‑Annotation, Conformance Checklist) keep patterns comparable and auditable.             | **Tighter prose.** Patterns grow by a few concise checks; mitigated by the canonical template.                                                                               |
-
-> **Quotable closer.** *“One layer to speak, four layers to justify—only when needed.”*
 
 ### E.14:11 - Rationale
 
