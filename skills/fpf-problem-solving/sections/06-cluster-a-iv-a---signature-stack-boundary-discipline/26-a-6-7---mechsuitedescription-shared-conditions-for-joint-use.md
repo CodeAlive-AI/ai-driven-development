@@ -200,7 +200,7 @@ A MechSuiteDescription may state additional shared obligations within the member
    Well-formedness constraint: suite core does not publish acceptance thresholds (“passing scores” / hidden cutoffs). Thresholds belong to acceptance clauses / task signatures / gate profiles.
 
 9. **`crossing_visibility_required`.**
-   Well-formedness constraint: any GateCrossing relevant to suite use publishes a `CrossingBundle` (E.18) and can be cited as an audit anchor.
+   Well-formedness constraint: for each GateCrossing relevant to suite use, make its changed bindings, from/to values and establishing basis visible under E.18:5.1. Publish a `CrossingBundle` when a named downstream use relies on durable crossing evidence, including an applicable suite audit requirement under §4.5; that bundle can be cited as an audit anchor.
    Apply E.18 only for an independently selected TransformationFlowStructure and its actual governed crossing; apply A.21 for a current work-entry gate. An edition, entity or notation change alone supplies neither that crossing nor a semantic Bridge.
    Suites may require `CrossingBundleRef` / UTS / Path pins and policy-id pins as anchors, and MUST NOT embed CL/Φ/Ψ/Φ_plane tables.
 

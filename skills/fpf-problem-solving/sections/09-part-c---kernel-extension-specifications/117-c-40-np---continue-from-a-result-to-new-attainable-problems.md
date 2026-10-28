@@ -48,6 +48,8 @@ Improvement of development itself is another possible direction. Identify the li
 
 A finite observation can support a repeatable next transition, transfer to another carrier or reduced dependence. It cannot demonstrate that development will continue indefinitely.
 
+When the changed position exposes several costly or previously unattainable ways of working, C.39.WI develops their discovery and selection. Compare the receiving gain and complete improvement burden, including effects beyond throughput and work displaced at a constraint. The selected improvement returns to this Method through what its use makes newly attainable; neither the largest reported cost nor a fixed quota determines the next problem.
+
 #### C.40.NP:4.3 - Enable further carriers without requiring compliance
 
 When development is intended to become ordinary practice, identify what must be reconstructed and used by further carriers. The object is not necessarily a fixed procedure. It can include ways of noticing difficulties, disputing formulations, obtaining professional help, constructing a transition and reopening the question after success.

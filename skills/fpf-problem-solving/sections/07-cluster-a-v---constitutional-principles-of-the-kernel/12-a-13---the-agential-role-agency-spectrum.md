@@ -72,11 +72,27 @@ The following descriptions state what the five characteristics concern. A measur
 4. **Policy Enactment Reliability (PER):** The probability that the holder will successfully execute its chosen `U.Method` under operational conditions. The event is successful Method execution; a result or safety claim needs its own basis.
 5. **Objective Complexity (OC):** A measure of the complexity of the objective the holder can pursue, from simple set-points to abstract, multi-scale goals. These examples distinguish objectives; a complexity comparison needs a declared criterion and scale.
 
+**Build the profile for its receiving use.** First name the claim or decision that needs a characteristic. Select the characteristics whose values can change that answer. Keep the holder, configuration, task or Method, assistance and relevant conditions common across the results you combine. Reuse a sufficient existing account; a characteristic-only claim can remain separate from an assignment claim.
+
+For each selected question, use or construct a domain definition that connects an observable distinction to a characteristic value. A.17 and A.18 separate the characteristic, its scale and allowed operations from preference or scoring. C.16 supplies measurement discipline. Explain how the observation distinguishes the values needed by the receiving use. If the same observations fit materially different values, obtain a discriminating observation or retain that uncertainty.
+
+| Characteristic | Construct the measurement needed by the use |
+| --- | --- |
+| BMC | Identify the holder's structural and functional properties to preserve, the perturbations, tolerated loss and recovery, and external assistance. Test that integrity condition on the specified cases. Report the perturbations withstood, a supported limit or a success proportion for a declared population. |
+| PH | Name the internal model and choose temporal or causal depth. Establish the future interval or kind and number of causal transitions that the model represents. Report that extent in its declared units; assess prediction accuracy separately when the receiving use needs it. |
+| MP | Identify the changing model, prediction-error signal, measure of model change and time or budget denominator. For a scalar parameter, state whether the result uses net change or total variation; these differ when updates oscillate. Interpret the achieved rate under its observed conditions. |
+| PER | Identify the chosen Method, successful-execution event, operational population and probability model. Include required operations and permitted stops in the event definition. A sample frequency estimates a probability only under the stated sampling and inference assumptions. |
+| OC | Describe the objective and select a complexity criterion, such as independently adjustable targets or a declared rubric for coordinating conditional goals. Establish that the holder can pursue an objective with that structure. A demonstrated objective can supply a result without establishing the holder's maximum capacity. |
+
+Retain each value or admissible value range, uncertainty, evidence and applicability. An unmeasured characteristic remains unmeasured. Evidence that a holder has no predictive mechanism can establish zero PH; missing information about that mechanism cannot. A model-update rate and a task-performance improvement answer separate questions. A.13:4.3.1 connects a supported adaptation result to the task-family claim.
+
+Assemble only the results that the receiving use consumes, and apply its comparison or decision rule. Values require compatible meanings and conditions, or a justified transformation, before comparison. A faster model change can be useful correction or harmful oscillation; the receiving objective determines that preference. Use the Grade mapping in §4.4 only when a didactic summary is wanted. After a change, reopen the dependent result: new measurement error changes its warranted value range; a tighter task tolerance can change suitability while leaving that range intact; a new model can require a different PH or MP definition.
+
 ##### A.13:4.3.1 - Task-family specialization claims
 
 When assessing a holder’s **time-to-usable specialization**, name the holder, `TaskFamily` and work target. Use C.22 for the task anchor and C.22.1 for adaptation time or budget to the declared work-measure threshold. Keep task family, work target, claim scope, situation, measurement window, threshold, adaptation budget and provenance basis distinct where the claim uses them. The same holder can show different specializations for different task families; this does not establish greater intelligence in general or a new U-kind.
 
-Low-human-overlap or newly discovered task families remain admissible when the task family, evidence basis, and reuse window are explicit by value.
+For a task-family comparison described as low-human-overlap, use C.22:5.2.1 to state the human-practice reference set, correspondence and coverage rule. Newly discovered families retain the same explicit task-family, evidence and reuse-window conditions. Such a comparison characterizes the task-family relation; the holder's specialization still needs its own result.
 
 #### A.13:4.4 - The Agency Grade (Didactic Layer)
 
@@ -93,6 +109,8 @@ Engineers and managers can use the **Agency Grade** as a **non-normative, didact
 The Grade 0 label summarizes a profile; it does not settle the separate local-kind classification or assignment claim.
 
 The profile states characteristic claims and their supporting evidence; the Grade is a pedagogical summary. An actual Grade claim needs a supported profile and a stated mapping from its values to the label, including thresholds when the mapping uses them. Without that basis, leave the Grade unresolved. CC-A13.3 governs that support; CC-A13.4 excludes the Grade as a normative premise.
+
+A local mapping may cover only the profiles needed for its communication use. State non-overlapping conditions for the labels it assigns and leave other cases unclassified. When a supported value is a range, check the permitted values against those conditions. One label is supported only when all consequential admissible values select it; otherwise retain the uncertainty or alternatives allowed by the mapping. Preserve the characteristic results that the label does not summarize.
 
 ### A.13:5 - Archetypal Grounding
 
@@ -116,6 +134,28 @@ The profile values above are illustrative assumptions, not measured results. The
 
 **Key takeaway from grounding:**
 The same ontology works for a thermostat, a predictive controller, a learning System, and a collective System: classification by a local kind and an obtaining assignment are both stated, while scope, situation, Work, evidence, profile, and grade remain separate. An exact ISO claim episteme may be cited in an A.10 evidence-provenance account or a B.3 reliance claim; any direct relation relied on by that account or claim must actually obtain under its own defining rule. Its file carrier merely bears a publication form.
+
+#### A.13:5.1 - Construct a measured profile for a calibration use
+
+Consider one installed `SensorArray-S7`, admitted as a System. This constructed case supplies its local `IndustrialProcessAdaptiveController` criterion and obtaining assignment: S7 detects deviation from a reference signal, selects a permitted offset update or stops calibration on an invalid input, and has the designation and enabled connection for that control. Those premises establish the agency core. The additional question is what its bench profile shows and whether calibration reaches residual error at most 0.1 °C within three minutes.
+
+The measurement definitions and observations below are stipulated case inputs. The internal sensor model is `z = r + b`, where z is the raw indication, r the reference value and b the estimated offset. The reference relation establishes a constant raw offset `z - r = 0.6 °C` for this test. The admitted `OffsetUpdateMethod-3` reads that reference, checks the allowed update and commits the new offset once per minute:
+
+`b_next = b + 0.5 * (z - r - b)`.
+
+Starting at `b = 0`, the three committed offsets are 0.3, 0.45 and 0.525 °C. The measurement basis bounds the total uncertainty in interpreting residual error by ±0.02 °C. After the third update, that residual therefore lies in `[0.055, 0.095] °C`, satisfying the 0.1 °C target. The following profile keeps the other supported characteristics separately interpretable.
+
+| Result | Basis and use boundary |
+| --- | --- |
+| BMC: integrity maintained in four of four specified perturbation cases | Integrity I requires an intact executable, one valid configuration and restoration of both channels within five seconds. The supplied test histories establish I after each one-second interruption of power, one channel or communication, and after an interrupted parameter write. Recovery is automatic after the interruption ends. This is coverage of those four cases. |
+| PH: 30 seconds temporal depth | S7's internal forecasting function produces `z_hat(t+h) = r(t) + b(t)` for `0 <= h <= 30 s`, holding the current reference and offset over that prediction interval. The implementation supplies that model extent. Prediction accuracy is a separate question. |
+| MP: 0.175 °C per minute over the three updates | The declared measure is total variation of the stored offset divided by elapsed time. All three updates have the same sign, so both total variation and net change equal 0.525 °C; divide by three minutes. Parameter readback resolution is 0.01 °C. |
+| PER: 0.95 for uniform selection from the stated finite population | The population is 20 fully examined scripted bench episodes with valid inputs. Successful execution means completing the required reads, checks and commits of OffsetUpdateMethod-3. Nineteen histories meet it; one records a failed commit. Under uniform selection of one of these episodes, the probability is 19/20. A production-population estimate would need its own sampling and inference basis. |
+| OC: one independently adjustable target pursued in this case | The local complexity criterion counts independently adjustable target quantities. Here the target quantity is residual temperature error; the three-minute budget and offset-update bounds are fixed conditions of this comparison. The calculation establishes pursuit of this objective in the stated regime. |
+
+For the C.22.1 adaptation question, the first successful minute checkpoint is at 180 seconds, with a budget of three reference/update cycles and the stated initial model. This threshold result uses the residual-error bound; MP reports the parameter-change rate. For a local didactic convention, assign Grade 3 within this controller family when BMC covers the named perturbation set, temporal PH is positive and error-driven MP is distinguishable from zero at the declared resolution. Leave other profiles unclassified. S7 receives that label; PER and OC remain explicit profile results outside what this partial mapping summarizes.
+
+**Changed receiving condition.** Tighten the residual-error target to 0.05 °C while keeping the three-update budget. The profile values and local Grade remain supported, but the calibration result fails the new target: even the lower residual bound after three updates is 0.055 °C. Under the same model, five updates would give an upper residual bound of 0.03875 °C. The practitioner can compare a larger adaptation budget with another update Method or a better measurement basis. The changed tolerance reopens the adaptation decision.
 
 ### A.13:6 - Conformance Checklist
 
@@ -143,7 +183,7 @@ Apply these normative checks to the corresponding agency, profile or Grade claim
 
 The core answers which System qualifies for a local kind and holds its assignment. The profile answers separate questions about that holder’s capabilities. A Grade summarizes the profile for communication; it does not replace the detailed characteristic results needed by an assurance use.
 
-The following research contributions inform different agency questions:
+The five characteristics are FPF engineering choices. A domain profile develops their operational definitions for its intended use; its measurement methods and any Grade mapping need their own stated basis. The following research contributions inform different agency questions:
 
 - Levin’s [scale-free cognition paper (2019)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02688/full) proposes an account of individuality and goal-directedness while allowing more than one useful agent definition.
 - Levin’s [TAME proposal (2022)](https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2022.768201/full) describes a rich space of capacities rather than one privileged scalar of cognition. It motivates distinguishing capabilities instead of treating "agent" as a sufficient comparison.

@@ -106,7 +106,7 @@ Any `U.Dynamics.stateSpace` refers to a declared `CharacteristicSpace`. The dyna
 
 To ensure consistency and comparability, a CharacteristicSpace must obey the following invariants:
 
--   **A19-CS-1 (Exactly one per slot).** Each slot **binds exactly one** Characteristic to **exactly one** Scale (including a specific Unit or kind, if applicable). This mirrors the CSLC clause of “one aspect – one scale”: there are no ambiguous or compound mappings in a single slot. (If a Characteristic can be measured on multiple Scales, choose one Scale for each slot; another Scale for that Characteristic requires a separate slot in this space or a slot in another space.)
+-   **A19-CS-1 (Exactly one per slot).** Each slot **binds exactly one** Characteristic to **exactly one** Scale (including its scale type and, when applicable, its Unit with the quantity-kind and conversion semantics governed by C.16). This mirrors the CSLC clause of “one aspect – one scale”: there are no ambiguous or compound mappings in a single slot. (If a Characteristic can be measured on multiple Scales, choose one Scale for each slot; another Scale for that Characteristic requires a separate slot in this space or a slot in another space.)
 
 - **A19-CS-2 (Named basis).** A CharacteristicSpace declaration contains an ordered basis of slots. Each slot has a stable technical name and makes its Characteristic, Scale, position, and the Characteristic's subject/input signature recoverable. Plain-language aliases may aid recognition but do not change the basis.
 
@@ -380,9 +380,9 @@ The separation matters because a threshold or region is not the space, yet its s
 
 ### A.19:10 - SoTA-Echoing
 
-Measurement and evaluation practice requires explicit variable definitions, subject/input roles, Scales, units, value ranges, partial-input treatment, normalization, and comparability before multi-criteria comparison is meaningful. A.19 adapts that discipline by treating the CharacteristicSpace and its genuine Coordinate values as the declared ontic object, while observation absence, scoring, indicator choice, normalization use, and assurance remain with their direct patterns.
+FPF's characteristic and measurement patterns require explicit variable definitions, subject/input roles, Scales, applicable units, value ranges, partial-input treatment, normalization when used, and comparability for multi-criteria comparison. A.19 applies A.17, A.18, C.16 and A.19.UNM by treating the CharacteristicSpace and its genuine Coordinate values as the declared ontic object, while observation absence, scoring, indicator choice, normalization use, and assurance remain with their direct patterns.
 
-Dynamical-systems and state-space practice supplies the useful hook: a dynamics model needs a declared state space, but the state space does not itself define the law, time base, observation model, or intervention. FPF keeps that boundary so that characteristic-space declarations can be reused across system, episteme, evaluation, and architecture work without smuggling consumer semantics into the space.
+FPF's dynamics construction distinguishes the declared state space from the law and time base, any observation model, and any intervention on the modeled subject. A.19 supplies the space and typing hook; A.3.3 governs the state-law account and its conditional returns for other uses. This boundary lets characteristic-space declarations be reused across system, episteme, evaluation, and architecture work, with consumer semantics retained in their direct patterns.
 
 ### A.19:13 - Relations - Ontic Relations and Consumer Boundary
 

@@ -6,7 +6,7 @@
 - [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (257 lines) — Use this when choosing or describing a generative search or selection. This glossary identifies the values, policies and set-result kinds needed by that operation, and connects them to their...
 - [A.1 - Recognize a Whole with Parts (U.Holon and Admitted Holon Kinds)](02-a-1---recognize-a-whole-with-parts.md) (375 lines) — Type: Part A architectural ontology pattern
 - [A.1.RI - Reidentifying an Object across Observations](03-a-1-ri---reidentifying-an-object-across-observations.md) (202 lines) — Normativity: Normative
-- [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context)](04-a-1-1---bounded-model-use-structure-applicability-use-and-ex.md) (438 lines) — Type: Part A architectural ontology pattern
+- [A.1.1 - Bounded Model-Use Structure: Applicability, Use and Expression Coherence (DDD Bounded Context)](04-a-1-1---bounded-model-use-structure-applicability-use-and-ex.md) (444 lines) — Type: Part A architectural ontology pattern
 - [A.1.SCR - Finding the Acting or Changed System](05-a-1-scr---finding-the-acting-or-changed-system.md) (261 lines) — Type: Part A practitioner application pattern
 - [A.1.CSD - Discovering Systems That May Bear Consequences](06-a-1-csd---discovering-systems-that-may-bear-consequences.md) (272 lines) — Type: Part A practitioner discovery pattern
 - [A.1.STM - Connect Project Reasoning (System-Thinking Long Mantra)](07-a-1-stm---connect-project-reasoning.md) (284 lines) — Type: Part A practitioner application pattern

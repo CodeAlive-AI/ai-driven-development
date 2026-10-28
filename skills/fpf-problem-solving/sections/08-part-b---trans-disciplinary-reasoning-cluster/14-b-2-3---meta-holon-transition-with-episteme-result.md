@@ -8,7 +8,7 @@
 
 Use this pattern when B.2 has identified one exact candidate new whole and that same individual must be recognized under the already admitted `U.Episteme` kind: a theory, model family, standard, doctrine, specification body, research programme, field-level knowledge body, or other claim-bearing non-agentive holon.
 
-Use `B.2` first to decide whether whole reidentification is current and to identify the one candidate new whole. Use `B.2.3` only when its `resultHolonKindRef` resolves to `U.Episteme`.
+Use `B.2` first to decide whether whole reidentification is current and to identify the one candidate new whole. Use `B.2.3` when that candidate is to be tested under `U.Episteme`. For a first constitution or recognition without an established prior whole, use A.1 and C.2.1 as explained in B.2:4.
 
 **First useful move.** For B.2's exact candidate, identify one `U.ClaimGraph`, one exact EntityOfConcern, and one effective `U.ReferenceScheme`, then test whether their `EpistemeConstitutionRelation` obtains under C.2.1. Keep grounding, viewpoint, view, publication, source use, representation, evidence, and assurance in their neighboring direct relations.
 
@@ -30,7 +30,7 @@ A collection does not become a theory merely because its items are stored togeth
 
 A group of papers, models, datasets, design notes, forecasts, standards, or local doctrines may remain a collection. B.2.3 becomes current only when B.2's exact candidate new whole can be constructively recognized under A.1 and the current C.2.1 constitution criterion identifies that same individual as one claim-bearing episteme.
 
-B.2.3 introduces no special episteme result object. It retains B.2's one `resultHolonRef` and `resultHolonKindRef`, then requires C.2.1 for episteme constitution and each current neighboring relation's own subject pattern.
+B.2.3 introduces no special episteme result object. It tests B.2's candidate under A.1 and C.2.1, then retains B.2's one `resultHolonRef` and `resultHolonKindRef` for the established result. Each current neighboring relation keeps its own subject pattern.
 
 ### B.2.3:2 - Problem
 
@@ -50,7 +50,7 @@ Confusing the episteme with its collection, representation, or publication can p
 | Synthesis vs aggregation | A new episteme whole can integrate claims, but many collections remain indexes, reviews, or portfolios. |
 | Episteme identity vs publication form | The episteme may be published in many forms; no publication form is the episteme by appearance. |
 | Claim organization vs agency | An episteme can organize claims and guide use, but systems perform work with or on it. |
-| Constituent evidence vs result assurance | Evidence for parts may bear on the result, but the result episteme needs its own claim and assurance relations. |
+| Constituent evidence vs result assurance | Evidence for parts may bear on the result. When assurance is required for a result claim, test whether that support applies to the claim and its receiving use. |
 | Source mnemonic vs current ontology | Short labels can aid recognition while hiding whether the current question concerns B.2 whole reidentification, C.2.1 constitution, A.6 morphing, E.17 publication, or source use. |
 
 ### B.2.3:4 - Solution
@@ -59,18 +59,18 @@ Use B.2.3 as the `U.Episteme` specialization of B.2. Reuse its existing whole, c
 
 #### B.2.3:4.1 - Reuse The B.2 Candidate And Complete Episteme Recognition
 
-Keep B.2's one `resultHolonRef` for the candidate and its one `resultHolonKindRef`, which here resolves to the already admitted `U.Episteme` kind. Execute the complete A.1 criterion over that candidate, including the larger-assembly applicability and compatibility condition. Then apply C.2.1 to the same individual:
+Start with B.2's candidate designated as an exact `U.Entity`, proposed for the already admitted `U.Episteme` kind. Execute the complete A.1 criterion over that candidate, including the larger-assembly applicability and compatibility condition. Apply C.2.1 to the same individual:
 
 1. identify its exact claim content as one `U.ClaimGraph`;
 2. identify the exact independently governed `U.Entity` that those claims concern;
 3. identify the effective `U.ReferenceScheme` under which the claims are read about that entity; and
 4. test whether the direct `EpistemeConstitutionRelation` among those participants obtains and yields one interpretable claim-bearing whole.
 
-The candidate and its constitution relation are distinct, even though C.2.1 reidentifies them from the same participant triple. A card, tuple, repository, publication set, graph representation, or filled reference does not make the relation obtain. If A.1 or C.2.1 fails, do not identify the candidate as the episteme result; if a required dependency cannot be evaluated, return `unknown`.
+The candidate and its constitution relation are distinct, even though C.2.1 reidentifies them from the same participant triple. A card, tuple, repository, publication set, graph representation, or filled reference does not make the relation obtain. If A.1 or C.2.1 fails, do not identify the candidate as the episteme result; if a required dependency cannot be evaluated, return `unknown`. For an established episteme result, B.2's `resultHolonRef` designates that individual and `resultHolonKindRef` resolves to `U.Episteme`. Preserve a preliminary or unresolved judgment in an optional C.2.1 assertion only when a receiving use needs it; B.2:4.4 governs that distinction.
 
 #### B.2.3:4.2 - Keep Constitution And Neighboring Relations Separate
 
-The exact ClaimGraph, EntityOfConcern, and effective ReferenceScheme are the three participants of C.2.1's `EpistemeConstitutionRelation`. That constitution relation does not by itself identify A.1 constituents or constructive part relations. When A.1 requires those facts, recover them from an exact direct episteme-part or claim-composition pattern. The EntityOfConcern remains an independently governed entity related through aboutness and reference. Keep all other current questions in their direct relations:
+The exact ClaimGraph, EntityOfConcern, and effective ReferenceScheme are the three participants of C.2.1's `EpistemeConstitutionRelation`. C.2.1:4.1 identifies the ClaimGraph and ReferenceScheme as epistemic constituents of the interpretable claim-bearing whole. Establish that constitution for the candidate, and recover any further claimed part or composition relation under its direct pattern. The EntityOfConcern remains an independently governed entity related through aboutness and reference. Keep all other current questions in their direct relations:
 
 - empirical grounding uses `EpistemeEmpiricalGroundingRelation` only when designated empirical claims have current claim-to-world mappings involving the exact grounding holon;
 - viewpoint selection for a describing use follows `E.10.D2`; `U.View` recognition requires `E.17.0` conformance of the exact episteme to an exact viewpoint;
@@ -88,7 +88,7 @@ When a receiving use has materialized B.2's optional `MHTTriggerProfile`, interp
 | --- | --- | --- |
 | Delimitation change | The knowledge body now has a stable EntityOfConcern, scope, reference scheme, and claim scope. | `C.2.1`, `A.7`, source-use patterns |
 | Objective or evaluation change | The result episteme contains an answer or evaluation claim for a question that the collection did not answer as one claim-bearing whole. | `C.2.1`, `C.16`, `E.21` or relevant evaluation pattern |
-| Supervision or coordination change | Principles, axioms, invariants, reference schemes, or claim-graph constraints organize how constituent claims are interpreted. | `C.2.1`, `A.6.0`, `A.6.1`, `C.29` when formal lens is current |
+| Supervision or coordination change | Recover an actual supervision or coordination relation under its defining pattern. Principles, axioms, invariants, reference schemes, and claim-graph constraints instead organize claim interpretation; inspect that change as a constitution or claim-composition claim rather than filling a relation-occurrence field with it. | `C.2.1`, `A.6.0`, `A.6.1`, `C.29` when formal lens is current |
 | Capability or closure claim | The candidate episteme supports a new explanatory, predictive, specification, or coordination use; evidence for that claim remains separate. | `C.2.1`, `C.16`, `A.10` for evidence use, and the pattern for that use |
 | Agency threshold | The episteme remains non-agentive. For an agency-characteristic claim, recover the exact System, characteristic predicate, scope, and window and test the characteristic independently; that characteristic claim does not require an assignment. A precise agency claim requires the separate A.13 core. If dated Work is also claimed, recover each exact performer through A.13 and let A.15.1 independently admit the Work. Add F.6 only when the receiving claim expressly consumes precise assignment-bound attribution; missing or failed F.6 leaves the Work intact. | `A.12`, `A.2.1`, `A.13`, `A.19`, `C.16`, `A.15.1`, `F.6` |
 | Temporal consolidation | A chronology or source-currentness change prompts inspection of the knowledge body. Test any changed ClaimGraph, EntityOfConcern or effective ReferenceScheme under C.2.1; currentness alone changes none of those identity values. | `C.2.1`, `C.27`, `G.11`, `E.17`, and source-use patterns |
@@ -104,16 +104,51 @@ Recognition of an episteme result establishes neither agency, publication author
 
 #### B.2.3:5.1 - Reliability Doctrine
 
-Before MHT, teams have local runbooks, incident reports, dashboards, and reliability definitions. They may be useful, but they are not yet one episteme.
+Reliability work may begin with local runbooks, incident reports, dashboards, and definitions that remain a collection. A first doctrine constitution requires A.1 and C.2.1; the collection supplies no prior holon merely by being named. The following constructed case instead starts with an already recognized episteme and asks whether it can support a stronger deployment claim.
 
-After MHT, the exact candidate may be a reliability doctrine when it passes A.1 and its ClaimGraph, EntityOfConcern, and effective ReferenceScheme stand in an obtaining C.2.1 constitution relation. Add empirical grounding to operating services, handbook publication, and source-use relations for standards or training materials only when the receiving use needs them.
+**Supplied setting and receiving need.** The example stipulates a modeled deployment `S = Relay-S/D17`, independently identified by its deployment configuration, and a fixed nonempty set of requests. Use classical two-valued logic. `Ack(r)` means that D17 emits an acknowledgement for request `r`; `PrimaryStored(r)` means its primary store holds that request's payload when the acknowledgement is emitted. The already recognized episteme `E0 = <G0, S, R0>` has a ClaimGraph containing the sole premise:
 
-- **Candidate new whole:** the reliability doctrine named by B.2.
-- **A.1 basis:** exact constituents and constructive relations established by an obtaining episteme-part or claim-composition predicate, a governed assembly and reidentification rule, a composition-grounded claim-bearing characteristic, and compatibility with an applicable larger knowledge-body construction rule.
-- **C.2.1 constitution:** the doctrine's exact ClaimGraph states its principles and definitions; its EntityOfConcern is user-visible service harm and reliability; its effective ReferenceScheme supplies the reliability designations and interpretation rules.
-- **Neighboring relations:** empirical grounding to operating services, handbook publication, source use for standards and training materials, and evidence or assurance are added only for the receiving use and do not identify the doctrine.
+```text
+P: for every request r, Ack(r) implies PrimaryStored(r).
+```
 
-Systems use and cite the doctrine, use it in training, and let its claims guide their work; any relevant local system-role kind and assignment remain separate claims.
+`R0` is the complete scheme interpreting this graph, with those request, acknowledgement, and primary-storage designations. The receiving work now needs one episteme whose own stated premises support a derivation of:
+
+```text
+Q: for every request r, Ack(r) implies
+   (PrimaryStored(r) and ReplicaStored(r)).
+```
+
+Here `ReplicaStored(r)` means the replica holds the same payload at acknowledgement time. Q concerns the deployment S. The required new object, if established, is an episteme carrying and supporting Q.
+
+**Compare with E0.** In the comparison vocabulary, retain all R0 meanings and add `ReplicaStored`. Set `Ack(r*) = true`, `PrimaryStored(r*) = true`, and `ReplicaStored(r*) = false` for one request, with `Ack = false` for every other request. This valuation satisfies P and falsifies Q, so G0's stated premise does not entail Q. To obtain the required derivation, supply the additional premise:
+
+```text
+T: for every request r, Ack(r) implies ReplicaStored(r).
+```
+
+T is a stipulated premise of this example, not a reliability fact proved about an operating service. Let G1 contain P, T, Q, and the inference deriving Q from P and T by conjunction introduction under the common antecedent. Let R1 retain R0's meanings and add the replica-storage designation. The candidate is `E1 = <G1, S, R1>`.
+
+Nonentailment alone would not establish a new identity. Here C.2.1's declared identity discriminators are the exact ClaimGraph, EntityOfConcern, and effective ReferenceScheme. Keeping E0 requires retaining G0 and R0. Adding the premise, inference, and effective designation needed for this use changes both G and R, so the result cannot be E0 under that identity rule. This establishes `insufficient` for E0 and this receiving use. E0 still exists and supports P; a different layout or publication of its unchanged triple would leave it E0.
+
+**Recognize the candidate.** The construction supplies each A.1 ground:
+
+| Ground | Supplied fact or demonstrated result |
+| --- | --- |
+| Individuated candidate | E1 is the particular candidate `<G1, S, R1>`. |
+| Constituents | G1 and R1 are its epistemic constituents under C.2.1; S remains the independently identified EntityOfConcern. |
+| Construction | R1 interprets every claim and inference in G1 about S, and G1 organizes P and T as premises for Q. This satisfies the C.2.1 constitution predicate for one interpretable claim-bearing whole. |
+| Identity | C.2.1 reidentifies this episteme by that exact G1/S/R1 triple. A change in one of those values identifies another episteme. |
+| Composition-grounded characteristic | G1 supplies the inference organization and R1 its interpretation about S; together they yield an interpretable derivation of Q. P alone and T alone each leave one of Q's conjuncts unestablished. |
+| Compatibility with a larger assembly | The argument construction below incorporates E1 unchanged and uses Q in a further derivation. |
+
+For the last ground, supply a local argument-assembly rule: retain an interpreted argument as an unchanged constituent, preserve its graph and interpretation, and join its conclusion to an additional compatible premise by a named inference. Construct `E2 = <G2, S, R2>`. G2 contains G1 as an unchanged subargument and adds the supplied lemma `L: (PrimaryStored(r) and ReplicaStored(r)) implies Recoverable(r)` for each request. R2 retains R1 as the fixed local scheme for that subargument and adds the meaning of `Recoverable(r)`: the modeled recovery method can read back r's payload at the stated time. Under the assumption Ack(r), Q gives both storage conditions and L gives Recoverable(r) by modus ponens; discharging the assumption yields `Ack(r) implies Recoverable(r)`. Under this construction rule, E1 is a constituent of E2 with its graph, local scheme, subject, and identity preserved.
+
+E1 therefore satisfies the displayed A.1 grounds and C.2.1 constitution and meets the receiving need. If later work needs a reidentification record, `resultHolonRef` names E1 and `resultHolonKindRef` names `U.Episteme`. The record and any classification assertion concern E1; Q still concerns S. The logical construction establishes the conditional derivation, not the truth of P, T, or L for a real deployment. A use that must rely on those service claims needs their actual grounds and any assurance required under B.3.
+
+**Change the interpretation condition.** Suppose the supplied candidate uses G1 with the complete R0, whose declared vocabulary has no interpretation of `ReplicaStored`. The proposed `<G1, S, R0>` fails constitution: its scheme cannot interpret the whole graph. Supply a scheme that does interpret it and identify the resulting episteme. By contrast, if R1 exists but is unavailable to the evaluator, evaluation is `unknown`; recover the scheme or withhold the classification. Neither result erases E0 or changes the identity of an already constituted E1. A failed or unresolved judgment is not a typed positive result in the optional record.
+
+For a larger reliability doctrine, the same comparison uses its actual claims about user-visible service harm and reliability, its independently identified subject, and its effective designations. Add empirical grounding to operating services, handbook publication, and source use for standards or training materials only when the receiving use needs them. Systems use and cite the doctrine, use it in training, and let its claims guide their work; any relevant local system-role kind and assignment remain separate claims.
 
 #### B.2.3:5.2 - Model Family Becomes Theory
 
@@ -135,7 +170,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | Publication as episteme | A publication form or carrier is treated as the claim-bearing episteme. | Keep the episteme, publication form, and carrier distinct under C.2.1, E.17, E.24.PUB, and source-use patterns. |
 | Episteme agency | A theory, standard, or doctrine is described as performing Work or enforcement. | Recover every exact acting System through A.13 and let A.15.1 independently admit the Work. Add F.6 only when the receiving account expressly consumes precise assignment-bound attribution; a missing or failed attribution does not demote the Work. |
 | Morphing as MHT | View, translation, coarsening, or retargeting is called a new episteme whole. | Use A.6 episteme-morphism patterns unless B.2 whole reidentification remains current. |
-| Source trust transfer | Trust in constituent sources becomes assurance for the result episteme. | Re-evaluate assurance and source-use relations for the result episteme; retain only those that still apply to its exact claims. |
+| Source trust transfer | Trust in constituent sources becomes assurance for the result episteme. | For that assurance use, re-evaluate the support and source-use relations against the result claim; retain only those that still apply. |
 
 ### B.2.3:6 - Conformance Checklist
 
@@ -157,7 +192,7 @@ The standard is not the committee, the PDF, or the Work of enforcement. The comm
 | PDF as episteme | A PDF carrier or its publication form is used as the theory itself. | Use publication patterns for the PDF and keep B.2's `resultHolonRef` for the independently constituted episteme. |
 | Doctrine receives agency | "The standard enforces..." or "the theory decides..." | For a literal claim of dated enforcement or decision Work, recover its actual performer through A.13 and admit the Work independently under A.15.1; add F.6 only when the use consumes precise assignment-bound attribution. Otherwise use F.19 to retain ordinary guidance wording when its capable user and action are recoverable. |
 | Morphism as MHT | A view, translation, coarsening, or retargeting is called a new episteme whole. | Use A.6.2, A.6.3, A.6.4, or A.6.3.CSC unless B.2 whole reidentification is current. |
-| Synthesis as high trust | A new theory inherits trust because its sources were reliable. | Rebuild assurance for the result episteme through A.10, B.3, B.3.5, C.2.1, and source-use patterns. |
+| Synthesis as high trust | A new theory inherits trust because its sources were reliable. | When this assurance claim is needed, use A.10, B.3, B.3.5, C.2.1, and source-use patterns to assess the result claim; reuse adequate existing support rather than inheriting assurance from the sources. |
 
 ### B.2.3:8 - Consequences
 
@@ -181,12 +216,11 @@ B.2 is the pattern for whole reidentification; C.2.1 is the pattern for the Clai
 
 ### B.2.3:10 - SoTA-Echoing
 
-| Source family | Lesson for B.2.3 | FPF decision |
-| --- | --- | --- |
-| Evidence synthesis and living-review practice | Synthesis claims need explicit scope, evidence relations, currentness, and maintenance conditions. | B.2.3 requires current C.2.1 constitution and keeps assurance and source use in neighboring relations. |
-| Knowledge-graph and claim-network practice | A knowledge body can be represented as related claims, evidence, and sources. | The actual ClaimGraph is a C.2.1 constitution participant; its graph representation, evidence, and sources do not declare MHT or add episteme identity positions. |
-| Science-of-science and paradigm-change studies | Fields and theories can consolidate into named bodies with new scope and organizing principles. | B.2.3 treats consolidation as a cue to inspect; it neither constitutes the candidate episteme nor selects B.2. |
-| Publication and standards practice | A standard, report, model, or dashboard use may concern claim content, a representation, a publication form, or its carrier; its name alone does not decide which. | E.17 and source-use patterns remain separate from the episteme whole. |
+The distinction between episteme constitution and neighboring relations is an FPF construction. B.2.3 requires current C.2.1 constitution. State the synthesis claim within the scope needed for its interpretation and use. Recover evidence relations, currentness qualifications, and maintenance conditions only where the receiving use or a binding rule requires them. Assurance and source use remain neighboring relations.
+
+A knowledge body can be represented as related claims, evidence, and sources. The actual ClaimGraph is a C.2.1 constitution participant. Keep its graph representation, evidence, and sources in the neighboring relations described in B.2.3:4.2; C.2.1 governs episteme identity and B.2 governs whole reidentification. Fields and theories can consolidate into named bodies with new scope and organizing principles. B.2.3 treats a named consolidation as a cue to inspect; use C.2.1 for the candidate's constitution and B.2 only for a whole-reidentification question.
+
+A standard, report, model, or dashboard use may concern claim content, a representation, a publication form, or its carrier; its name alone does not decide which. Publication and source use retain their own relations under E.17 and source-use patterns, separate from the episteme's constitution. The constructed case in B.2.3:5.1 applies these distinctions to a stronger claim about a deployment.
 
 ### B.2.3:11 - Relations
 

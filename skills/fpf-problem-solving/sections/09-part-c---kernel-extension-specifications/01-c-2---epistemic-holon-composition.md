@@ -59,7 +59,7 @@ For example, two necessary independent conditions with probabilities 0.9 each ha
 
 #### C.2:4.4 - What **must not** be conflated (normative guards)
 
-* **Representation structure ≠ carrier.** Files, PDFs, or repositories are **carriers** outside the episteme; they never count as parts of `U.Episteme` (**see C.2.1 EP‑1; CC‑EPI‑2/3**).
+* **Representation structure ≠ carrier.** Files, PDFs, or repositories are **carriers** outside the episteme; they never count as parts of `U.Episteme` (**see C.2.1:4.1–4.2, :4.6, and :11 item 11**).
 * **Work and guidance.** **Systems** perform Work. Epistemes can guide or constrain that Work through their claim content; keep the guiding content distinct from its performer.
 * **CL is not a score.** It is a **qualitative ladder** of preservation classes; do not average it.
 

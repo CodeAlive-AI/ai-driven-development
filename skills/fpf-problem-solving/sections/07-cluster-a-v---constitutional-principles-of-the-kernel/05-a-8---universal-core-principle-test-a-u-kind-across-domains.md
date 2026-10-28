@@ -16,12 +16,12 @@ Typical moments:
 
 - a candidate U-kind is proposed because several domains use similar words;
 - a local subject value starts being treated as universal because it is useful in one field;
-- `E.24.UK` admits a durable U-kind candidate, and the remaining question is whether it belongs in the universal core;
+- a new U-kind proposal includes a universal-core claim, or an already admitted kind is being considered for kernel placement;
 - source or draft type wording claims kernel-level status and must be recovered into current U-kind governance.
 
 **Primary EntityOfConcern.** The EntityOfConcern is the universal-core admission claim for one candidate U-kind.
 
-**First useful move.** Apply `E.24.UK` first. If the candidate survives as a durable U-kind and claims kernel-level status, test whether it makes the same abstract contribution in at least three foundationally different domain families.
+**First useful move.** Recover the candidate and its proposed membership or identity rule through `E.24.UK`. If kernel-level status is claimed, test whether it makes the same abstract contribution in at least three foundationally different domain families. Use the applicable accepted admission result for an already admitted kind; a new proposal supplies the shared decision's independently recovered candidate inputs.
 
 **Not this pattern when.**
 
@@ -55,7 +55,12 @@ Without A.8:
 
 ### A.8:3 - Solution
 
-Use the three-domain falsification test only after `E.24.UK` has admitted the candidate as a durable U-kind candidate.
+Recover the basis for the three-domain falsification test through `E.24.UK`:
+
+- **Already admitted kind.** Use its applicable accepted admission result and the candidate facts it establishes. Reconsider kernel placement at the claimed scope; an unchanged, still-applicable admission does not need to be repeated.
+- **New admission proposal.** Use the independent candidate inputs of the shared decision in `E.24:4.0a`: governed individuals, proposed membership or identity rule, intended extent, nearest non-member and receiving use. Complete the A.8 test alongside the other applicable admission tests, before E.24.UK closes the decision. The projections provide evidence for the core-placement claim; the complete E.24.UK test decides admission.
+
+In either case, the candidate description and the domain evidence must support the comparison independently of the conclusion being sought.
 
 The candidate passes A.8 only when all four conditions hold:
 
@@ -69,7 +74,7 @@ Use the following fields to make each projection inspectable. Equivalent prose o
 ```text
 UniversalCoreProjection:
   CandidateUKind:
-  UKindAdmissionResultRef: exact accepted E.24.UK output; follow it to the shared decision only when common inputs or decision mode are needed.
+  UKindAdmissionResultRef: exact accepted E.24.UK output, when available; follow it to the shared decision only when common inputs or decision mode are needed.
   DomainFamily:
   DomainTerm:
   LocalEoC:
@@ -77,6 +82,8 @@ UniversalCoreProjection:
   DifferenceOrLoss:
   EvidenceRef:
 ```
+
+For a new proposal, `CandidateUKind` identifies the candidate under consideration. Keep its projection findings with the shared decision's ClaimGraph. Supply `UKindAdmissionResultRef` when an applicable accepted result exists; a pending decision reference is not an accepted-result reference. The other projection values can be supplied and tested before that result exists.
 
 At least three supported projections are required. Try to defeat the proposed universal-core claim: a supported counterexample within its claimed scope refutes that form of the claim. A misidentified local object or invalid projection first needs correction. Three successful cases support this admission test; they do not prove universality over every future case.
 
@@ -88,7 +95,7 @@ Test one proposed contribution across different domain families. If it fails a v
 | --- | --- | --- | --- |
 | `U.System` | thermodynamic control volume; biological cell or organism; cyber-physical system | acting physical or operational holon satisfying all six constructive components and the applicable kind-specific condition in A.1:4.2–4.3 | boundary physics, substrate, observability, and control style |
 | `U.Episteme` | theorem or proof text; clinical guideline; model card or safety case | claim-bearing non-agentive knowledge object that can be used, cited, revised, or published | carrier, notation, authority source, and assurance regime |
-| `U.Work` | machining run; lab assay; review or approval act | dated performed occurrence: A.13 identifies the actual performer and A.15.1 independently admits the Work from that performer basis plus its Method, history, extent, and obtaining containing-System relation; F.6 adds an assignment check only when the current use must also say under which assignment the Work was performed | physical medium, institutional form, measurement trace, and evidence carrier |
+| `U.Work` | machining run; lab assay; review or approval act | dated performed occurrence: use the complete A.15.1 admission, including A.1:4.2's six common constructive components, A.13's actual-performer basis, grounded performance history, enacted Method and extent, and facts establishing containment of the complete occurrence under a declared System boundary; F.6 adds an assignment check only when the current use must also say under which assignment the Work was performed | physical medium, institutional form, measurement trace, and evidence carrier |
 
 These rows identify candidate comparisons, not completed admissions. Each needs an E.24.UK basis, actual projection evidence and stated differences or losses.
 
@@ -104,6 +111,8 @@ The three cases test distinct warrant and application conditions while preservin
 
 Now strengthen the proposed core definition to “every episteme is experimentally verified.” The mathematical case supplies a counterexample within the intended scope: its warrant is derivation, not an experiment. Reject that stronger core claim, retain the supported contribution, and keep experimental verification under the subject and evidence rules that require it. A new counterexample reopens the affected universality claim and uses that depend on it; independently supported claims remain reusable.
 
+**First-admission replay.** Stipulate a proposed edition in which this claim-bearing kind has no accepted admission result. Its candidate description and the independently identified source objects, claims and schemes above supply inputs to the shared E.24 decision. The same projection test can establish the supported core contribution from those inputs. Keep that finding in the decision while the other admission conditions are examined. If the required by-value dependence of downstream uses remains unsupported, admission remains unresolved despite the successful projections. After all conditions for the selected positive form pass, the accepted E.24.UK result supplies `UKindAdmissionResultRef` and naming can proceed. The existing-kind example instead consumes its already applicable result.
+
 Record domain-family coverage, each distinct test, and the differences or losses needed to assess the comparison. Quality-diversity telemetry such as `Diversity_P` or `IlluminationSummary` can contribute only under its governing C.17, C.19 or direct rule; it does not itself admit a U-kind or establish the projection.
 
 ### A.8:3.2 - Bias-Annotation
@@ -114,7 +123,7 @@ A.8 resists kernel growth based on familiar names because downstream patterns ma
 
 | Check | Requirement |
 | --- | --- |
-| `CC-A8-1` | The candidate has an `E.24.UK` durable U-kind admission basis before A.8 is applied. |
+| `CC-A8-1` | The test uses the applicable accepted E.24.UK result for an already admitted kind, or the independent shared-decision candidate inputs for a new proposal. `UKindAdmissionResultRef` identifies only an actual accepted result. A new proposal completes the other applicable admission conditions before admission. |
 | `CC-A8-2` | The A.8 claim is kernel-level universal-core admission, not C.3 typed reasoning. |
 | `CC-A8-3` | At least three domain-family projections are recorded. |
 | `CC-A8-4` | Each valid projection tests the same abstract contribution and contributes distinct evidence; repair a misidentified object or invalid projection before judging the candidate. Successful cases support the test rather than proving all future applications. |

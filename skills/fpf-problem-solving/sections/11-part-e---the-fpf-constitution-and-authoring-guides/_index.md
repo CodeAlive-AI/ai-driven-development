@@ -13,7 +13,7 @@
 - [E.4.PFAD - Principle-Framework Architecture Decision](08-e-4-pfad---principle-framework-architecture-decision.md) (408 lines) — Type: Architectural (A)
 - [E.4.DPF - Domain and Local Principle Frameworks: Whether and How to Author and Publish](09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md) (653 lines) — Type: Architectural (A)
 - [E.4.DPF.DA - Evaluate a DPF or LPF Package for Its Declared Use (Package-Adequacy CharacteristicSpace)](10-e-4-dpf-da---evaluate-a-dpf-or-lpf-package-for-its-declared.md) (406 lines) — Normativity: Normative unless marked informative.
-- [E.4.PFR - Pattern-Framework Relation and Edition Discipline](11-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (357 lines) — Type: Architectural (A)
+- [E.4.PFR - Pattern-Framework Relation and Edition Discipline](11-e-4-pfr---pattern-framework-relation-and-edition-discipline.md) (360 lines) — Type: Architectural (A)
 - [E.4.PFIP - Principle-Framework Publication Integration and Preservation](12-e-4-pfip---principle-framework-publication-integration-and-p.md) (254 lines) — Normativity: Normative unless explicitly marked informative
 - [E.5 - Four Guard‑Rails of FPF](13-e-5---four-guard-rails-of-fpf.md) (89 lines) — Use this pattern when authoring or revising Core concepts or their Tooling and Pedagogy forms. Four recurring risks require different checks:
 - [E.5.1 - DevOps Lexical Firewall](14-e-5-1---devops-lexical-firewall.md) (78 lines) — Use this pattern when Core prose mentions an implementation detail, such as a file format, build command or runtime flag. Determine whether that detail is incidental to the concept or necessary to...
@@ -27,7 +27,7 @@
 - [E.8.ECSPF - Author an FPF Pattern from an Accepted Evaluation CharacteristicSpace Specification](22-e-8-ecspf---author-an-fpf-pattern-from-an-accepted-evaluatio.md) (242 lines) — Type: Authoring method pattern
 - [E.9 - Design-Rationale Record (DRR) for FPF Content Decisions](23-e-9---design-rationale-record-for-fpf-content-decisions.md) (404 lines) — Type: Governance and authoring pattern
 - [E.9.DA - Evaluate a DRR for Its Declared Authoring Use (Decision-Adequacy CharacteristicSpace)](24-e-9-da---evaluate-a-drr-for-its-declared-authoring-use.md) (446 lines) — Use E.9.DA when one exact DRR must be checked for decision adequacy under a declared FPF authoring use: pattern drafting, host amendment, selected-locus distribution, accepted-decision carry-through,...
-- [E.10 - Unified Lexical Rules for FPF](25-e-10---unified-lexical-rules-for-fpf.md) (1639 lines) — Type: Part E lexical-governance pattern
+- [E.10 - Unified Lexical Rules for FPF](25-e-10---unified-lexical-rules-for-fpf.md) (1649 lines) — Type: Part E lexical-governance pattern
 - [E.10.LRN - Recovering What “Learning” Means in the Current Claim](26-e-10-lrn---recovering-what-learning-means-in-the-current-cla.md) (213 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.INT - Recovering What Interest or Curiosity Means Here](27-e-10-int---recovering-what-interest-or-curiosity-means-here.md) (165 lines) — Type: lexical and ontological precision restoration (E)
 - [E.10.DEV - Recovering What Development or Evolution Means in the Current Claim](28-e-10-dev---recovering-what-development-or-evolution-means-in.md) (218 lines) — Type: Part E precision-restoration pattern
@@ -58,7 +58,7 @@
 - [E.17.AUD.LHR - PublicationUnit Stability Discipline and Local Head Restoration - repair the overloaded local lexical head before the publication unit inherits it](53-e-17-aud-lhr---publicationunit-stability-discipline-and-loca.md) (350 lines) — Placement. Narrow local lexical-head repair pattern inside the broader PublicationUnit Stability Discipline.
 - [E.17.AUD.OOTD - PublicationUnit Stability Discipline and PublicationUnit Primary-Subject Discipline - publication-unit stability over one primary subject](54-e-17-aud-ootd---publicationunit-stability-discipline-and-pub.md) (383 lines) — Placement. Narrow publication-unit stability pattern inside the broader PublicationUnit Stability Discipline.
 - [E.18 - Transformation Flow Structure](55-e-18---transformation-flow-structure.md) (582 lines) — Tech-name: TransformationFlowStructure (pattern label)
-- [E.18.1 - P2W Problem-to-Work Carry-Through](56-e-18-1---p2w-problem-to-work-carry-through.md) (553 lines) — Tech-name: ProblemToWorkCarryThrough
+- [E.18.1 - P2W Problem-to-Work Carry-Through](56-e-18-1---p2w-problem-to-work-carry-through.md) (565 lines) — Tech-name: ProblemToWorkCarryThrough
 - [E.18.2 - Transformation Flow Mathematical Description](57-e-18-2---transformation-flow-mathematical-description.md) (239 lines) — Tech-name: TransformationFlowMathematicalDescription
 - [E.18.3 - Constraint-Governed Transformation-Flow Unfolding Structure](58-e-18-3---constraint-governed-transformation-flow-unfolding-s.md) (469 lines) — Type: E.18 transformation-flow specialization of A.22.CGUS
 - [E.18.NET - Network of Transformation-Flow Structures](59-e-18-net---network-of-transformation-flow-structures.md) (418 lines) — Tech-name: TransformationFlowStructureNetwork

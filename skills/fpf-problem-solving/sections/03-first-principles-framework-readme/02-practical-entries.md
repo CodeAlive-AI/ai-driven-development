@@ -1,8 +1,10 @@
 ## Practical entries
 
-The entries below illustrate questions that FPF can help answer; they do not exhaust its uses. Bring the actual difficulty from your project and use the search guidance in USING-FPF.md to find an individual method or a connected application. Search the Table of Contents for relevant entries, or ask an assisting agent to compare plausible candidates. If unfamiliar wording or limited access hides the needed material, `F.1:4.4` explains how to find inspectable passages and state the remaining search or access gap. A sufficient known source can end that lookup.
+The entries below illustrate questions that FPF can help answer. Bring the actual difficulty from your project and use the search guidance in USING-FPF.md to find an individual method or a connected application. Search the Table of Contents for relevant entries, or ask an assisting agent to compare plausible candidates. If unfamiliar wording or limited access hides the needed material, `F.1:4.4` explains how to find inspectable passages and state the remaining search or access gap. A sufficient known source can end that lookup.
 
 The ordinary examples start with one direct pattern and retain any conditions for a later use. They can stop at the first useful result without a mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
+
+To find which costly or unavailable work deserves improvement, use [C.39.WI](#c39wi---discover-worthwhile-method-improvements). Follow one consequential result, compare real alternatives and their complete burden, and distinguish a missing way from an explanation, access, provision or execution problem. The first result can be a warranted improvement undertaking, a retained possibility or a reasoned decision to continue current practice. An already understood, worthwhile and authorized remedy can be performed directly.
 
 ### LIVE-WORK-STEERING — Choose the next action while Work is changing
 
@@ -136,7 +138,7 @@ Compare with continuing as at present. Thinking, obtaining evidence, explaining 
 
 ### Practical-Use Cards
 
-These cards offer a non-exhaustive set of optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
+These cards offer optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
 
 The keys only help navigation. Compare cards by the situation and intended result, then open the direct patterns needed in the actual case. Skip a contribution whose question is not current, and stop at the first useful result or blocker.
 

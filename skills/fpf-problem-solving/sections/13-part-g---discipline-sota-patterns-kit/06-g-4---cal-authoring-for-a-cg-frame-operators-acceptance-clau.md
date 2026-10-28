@@ -137,7 +137,7 @@ Each `resultInputDeclarationRef` resolves an A.6.1 `ArgumentDeclaration` whose m
   * records which acceptance clauses gate which flows.
 * `CAL.EvidenceProfiles` — evidence wiring surface:
 
-  * lane tags (`F/G/R`) / provenance anchors / policy pins needed for `SCR` and audit surfaces,
+  * lane tags under their declared regime / provenance anchors / policy pins needed for `SCR` and audit surfaces,
   * explicit freshness/decay hooks (freshness window + decay/Γ_time selectors) as pinned policies/refs (not prose).
   * explicit `ReferencePlane` and any used penalty-policy refs (`Φ(CL)`, `Ψ(CL^k)`, `Φ_plane`); the ProofLedger supplies the receiving quantity, scale, input meanings, assumptions, and derivation or calibration. Monotonicity and boundedness alone do not justify a numerical loss.
 * **Optional** `CAL.NQD[]` — QD/OEE‑related calculus surfaces when declared:
@@ -196,9 +196,11 @@ CAL.Flow :=
     resultKind, decisionAidPolicyRef? ⟩
 
 CAL.EvidenceProfile :=
-  ⟨ evidenceProfileId(UTS), lanes(F/G/R), anchors(A.10)[],
+  ⟨ evidenceProfileId(UTS), lanes(declared tags), anchors(A.10)[],
     freshnessPolicyPins[]?, penaltyPolicyPins[]?, ΓFoldRef.edition? ⟩
 ```
+
+`lanes` carries the tags and meanings of the declared evidence-lane regime; when a CHR charter supplies that regime, retain its tags and meanings. The assurance claim, receiving use and selected contributions follow `B.3`/`B.3.3`. Keep any consumed `C.2.2:4.1` tuple, with its exact claim and `F`, `G` and `R_eff` values, separately recoverable from the lane tags.
 
 `CALCharterRef` and `TaskMapRef` each resolve one immutable edition. A changed charter, task, TaskSignature edition, clause, operator, flow, evidence profile, or edition-bearing cited list creates a new `taskMapEdition`; an old `TaskMapRef` continues to resolve its old values. The C.22 TaskSignature remains a separately constituted episteme. The map relates that exact signature to the CAL declarations used by selection but neither derives the signature nor duplicates their thresholds.
 

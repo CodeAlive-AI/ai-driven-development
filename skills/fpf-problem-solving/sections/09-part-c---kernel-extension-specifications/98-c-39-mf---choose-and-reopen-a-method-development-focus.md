@@ -27,6 +27,8 @@ Do not use C.39.MF merely because one tool failed, one practitioner lacks capabi
 | project, process, or case account | A description whose direct subject is recovered from its claims under `A.15.6` and `C.2.1`. It is a `U.View` only through its own `E.17.0` conformance relation. Several accounts can concern one Work; they can instead concern a plan, Method, result, or other subject. |
 | non-Method return | A result that redirects the decision to the actual subject, relation, and next useful question while naming what observation would reopen the Method question. |
 
+When the consequential work or worthwhile improvement has not yet been found, C.39.WI supports its discovery and comparison. Use its result here to settle an ambiguous Method or non-Method focus; an already adequate focus needs no repetition.
+
 ### C.39.MF:1 - Problem Frame
 
 Project teams encounter Methods through handbooks, standards, stage models, issue trackers, training, job titles, toolchains, and remembered practice. These can reveal useful Methods, but their visible boundaries rarely coincide with Method identity.

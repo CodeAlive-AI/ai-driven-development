@@ -225,6 +225,8 @@ Conceptual compactification here keeps a developed connection available for reus
 
 These connected questions help a reader improve a way of working without treating its description, support or observed performance as the same result. The full Methods retain their individual entries; the explanation below shows why their answers can differ and when they need to be used together.
 
+When it is unclear which work deserves improvement, `C.39.WI` follows work that consumes substantial resources, causes avoidable loss or cannot yet supply a useful result. It compares complete consequences and burden, then selects an attainable Method, explanation, access, provision or execution change, a retained possibility or continuation of current practice. Use `C.39.MF` when the selected development question still has an ambiguous subject. An adequate professional improvement Method can be used directly.
+
 #### FPF.Reference:16.7.1 - Method, MethodDescription, WorkPlan, and Work remain distinct
 
 A Method is a reusable way of doing. A MethodDescription is an episteme about one admitted Method. A candidate
@@ -739,6 +741,7 @@ The control construction connects what can be known about a present situation, w
 | --- | --- | --- |
 | Who acts on what, including within one whole? | A.12 recovers acting and changed participants and, where supported, Reflexive Split | The rule or purpose of the influence and its effect on future operation |
 | What relations does the actual control arrangement have? | C.30.LCA recovers a control structure and the warranted use of its description | Explanation of its behavior and the judgement of whether to change it |
+| What work does this advice or evidence demand impose, and what attainable continuation can it improve? | C.11.DUA recovers the receiving question and demanded work, appraises its contribution and burden, and returns usable advice while retaining the force of binding requirements | Construction and comparison of continuations, including the work of inquiry, recommendation and change |
 | What does a finite proposed change add from the attained situation? | C.11.CRC develops the configuration-relative contribution comparison | Competing uses of means, a receiving choice or construction, and actual realization |
 | Which currently formulated alternative should this chooser select? | C.11 supplies local choice with its stated uncertainty and probing conditions | Construction of alternatives, later contingent action, execution and revision where needed |
 | How must observations, decisions and influences be organized? | C.32.LCA constructs and compares control arrangements | Their realization and continued use under the conditions relied on |
@@ -746,6 +749,12 @@ The control construction connects what can be known about a present situation, w
 | How can current results enable further worthwhile problems and means? | C.40.OD, C.40.DC, C.40.JD and C.40.NP develop connected open-ended development, including selection and realization of interventions | Use the obtained direction, work arrangement and developmental returns to revise the control continuation where the existing development Method leaves a relevant connection unresolved |
 
 These are relations of use among independently useful Methods, with composition where the receiving operation requires it. They are not consecutive levels of one hierarchy. A contribution comparison can serve an experiment, operational action, architecture design or development direction. A local choice can select a whole conditional policy. Development can change the alternatives, criteria and means that a later local choice temporarily holds fixed. Control does not add another universal level to the pedagogical Intellect Stack in §19.
+
+Advice can contribute to control by changing what a recipient investigates, chooses or performs. Following it also uses means and can alter the actions that remain available. The common basis for connecting C.11.DUA with control is this whole continuation. Use compatible accounts of the receiving result, present configuration, affected participants, horizon and feasible means when joining the contributions. DUA can begin before a local option set is ready, by recovering the work hidden in the advice. C.43 then connects the warranted proposal to the actual observation, choice, realization and revision relations. A sufficient present answer or a justified stop can finish the receiving question.
+
+The connection changes the organization of control. Frequent inexpensive reasoning can support occasional advice; presenting that advice, committing to change and carrying it out can have different useful occasions and burdens. C.43:4.3–4.5 explains how to construct those continuations and their timing. Section 4.8 applies the same relation to development of capabilities and Methods, including changes to the way development is recommended and directed. An explanatory gain or a new possibility is appraised at its receiving horizon, even before it supports an operational intervention.
+
+When a person directs an AI agent, an instruction naming a Method can bring it into consideration. A.15.11 supplies that encounter when needed; the subsequent work must establish whether the agent can obtain and apply the operation and whether its use improves the receiving result. Repeated reminders alone do not identify the failed connection. Recognition, execution and benefit remain distinct questions when choosing between a clearer instruction, better support and a changed Method.
 
 Use C.11 for a local choice. Ongoing control may require connecting such choices to observation, realization and revision through C.43. Use C.32.LCA when the control arrangement itself needs redesign. The common construction keeps specialist results and their different assumptions available for the subject at hand.
 

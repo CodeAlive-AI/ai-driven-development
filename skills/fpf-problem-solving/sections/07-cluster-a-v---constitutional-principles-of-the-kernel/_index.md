@@ -7,23 +7,23 @@
 - [A.7.1 - Consequence-Guided Ontological Problem Solving](02-a-7-1---consequence-guided-ontological-problem-solving.md) (159 lines) — Type: Architectural (A)
 - [A.7.2 - FPF Ontology-Premise Reconciliation](03-a-7-2---fpf-ontology-premise-reconciliation.md) (213 lines) — Type: Architectural (A)
 - [A.7.CP - Constructive-Premise Compact and Reasoning-Basis Use](04-a-7-cp---constructive-premise-compact-and-reasoning-basis-us.md) (193 lines) — Type: Architectural (A)
-- [A.8 - Universal Core Principle: Test a U-Kind Across Domains](05-a-8---universal-core-principle-test-a-u-kind-across-domains.md) (152 lines) — Type: Kernel admission discipline pattern
+- [A.8 - Universal Core Principle: Test a U-Kind Across Domains](05-a-8---universal-core-principle-test-a-u-kind-across-domains.md) (161 lines) — Type: Kernel admission discipline pattern
 - [A.9 - Choose and Check an Aggregation Law for the Intended Result](06-a-9---choose-and-check-an-aggregation-law-for-the-intended-r.md) (127 lines) — Use this when a receiving decision needs a combined result, but the law that gives the proposed operation its meaning or preserves a needed property is unresolved. The same input values can support...
 - [A.10 - Evidence Graph Referring: Claim-Bound Evidence and Provenance Graph](07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) (386 lines) — Normativity: Normative
 - [A.10.1 - Revalidate Affected Uses When a Relied-on Source Changes](08-a-10-1---revalidate-affected-uses-when-a-relied-on-source-ch.md) (338 lines) — Pattern type. Method pattern.
-- [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (161 lines) — Type: Kernel parsimony and admission discipline pattern
+- [A.11 - Ontological Parsimony](09-a-11---ontological-parsimony.md) (163 lines) — Type: Kernel parsimony and admission discipline pattern
 - [A.11.OP - Decision-Relevant Least Action and Operational Parsimony: Test a Proposed Requirement](10-a-11-op---decision-relevant-least-action-and-operational-par.md) (264 lines) — Type: Part A pragmatic principle pattern
-- [A.12 - Acting-Side Externalization and Reflexive Split: Identify Who Acts on What](11-a-12---acting-side-externalization-and-reflexive-split-ident.md) (310 lines) — Type: Part A architectural ontology pattern
-- [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (164 lines) — Use this pattern when a precise claim of agency matters: which System qualifies for a local goal-directed system-role kind, and which assignment actually holds for the action in question? Start with...
-- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (370 lines) — Type: Kernel mereology and part-whole relation discipline pattern
+- [A.12 - Acting-Side Externalization and Reflexive Split: Identify Who Acts on What](11-a-12---acting-side-externalization-and-reflexive-split-ident.md) (312 lines) — Type: Part A architectural ontology pattern
+- [A.13 - The Agential Role & Agency Spectrum](12-a-13---the-agential-role-agency-spectrum.md) (204 lines) — Use this pattern when a precise claim of agency matters: which System qualifies for a local goal-directed system-role kind, and which assignment actually holds for the action in question? Start with...
+- [A.14 - Advanced Mereology: Components, Portions, Aspects & Phases](13-a-14---advanced-mereology-components-portions-aspects-phases.md) (374 lines) — Type: Kernel mereology and part-whole relation discipline pattern
 - [A.15 - System-Role–Method–Work Alignment](14-a-15---system-role-method-work-alignment.md) (394 lines) — Type: Architectural (A)
-- [A.15.1 - U.Work: Dated Performed Work Occurrence](15-a-15-1---u-work-dated-performed-work-occurrence.md) (597 lines) — Type: Architectural (A)
+- [A.15.1 - U.Work: Dated Performed Work Occurrence](15-a-15-1---u-work-dated-performed-work-occurrence.md) (633 lines) — Type: Architectural (A)
 - [A.15.2 - U.WorkPlan: Plan Content for Coordinating Future Work](16-a-15-2---u-workplan-plan-content-for-coordinating-future-wor.md) (306 lines) — Type: Architectural (A)
-- [A.15.3 - SlotFillingsPlanItem: Plan a Value for an Existing Declaration Member](17-a-15-3---slotfillingsplanitem-plan-a-value-for-an-existing-d.md) (322 lines) — Tech-name: SlotFillingsPlanItem
-- [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (483 lines) — Type: Architectural (A)
-- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](19-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (223 lines) — Type: Architectural (A)
-- [A.15.6 - Recover What Project, Process, or Case Wording Refers To](20-a-15-6---recover-what-project-process-or-case-wording-refers.md) (404 lines) — Type: Architectural (A)
-- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (203 lines) — Type: Architectural (A)
+- [A.15.3 - SlotFillingsPlanItem: Plan a Value for an Existing Declaration Member](17-a-15-3---slotfillingsplanitem-plan-a-value-for-an-existing-d.md) (323 lines) — Tech-name: SlotFillingsPlanItem
+- [A.15.4 - Work-Relevant Appearance-Based Reliance Repair](18-a-15-4---work-relevant-appearance-based-reliance-repair.md) (487 lines) — Type: Architectural (A)
+- [A.15.5 - Work-Entry Readiness and Full-Kit Preparation](19-a-15-5---work-entry-readiness-and-full-kit-preparation.md) (229 lines) — Type: Architectural (A)
+- [A.15.6 - Recover What Project, Process, or Case Wording Refers To](20-a-15-6---recover-what-project-process-or-case-wording-refers.md) (412 lines) — Type: Architectural (A)
+- [A.15.7 - Situation-Responsive Work Steering and Next-Action Selection](21-a-15-7---situation-responsive-work-steering-and-next-action.md) (205 lines) — Type: Architectural (A)
 - [A.15.8 - Work-Performance Configuration and Recovery Testing](22-a-15-8---work-performance-configuration-and-recovery-testing.md) (227 lines) — Type: Architectural (A)
 - [A.15.8.MS - Configure Methodological Support for Work](23-a-15-8-ms---configure-methodological-support-for-work.md) (322 lines) — Primary working result: a tested configuration that covers a bounded set of named-user tasks, or a truthful lower result: several retained candidates, a stated split boundary, or a missing priority...
 - [A.15.9 - Use or Request a Bounded Result from Another Practice](24-a-15-9---use-or-request-a-bounded-result-from-another-practi.md) (176 lines) — Normativity: Normative unless explicitly marked informative

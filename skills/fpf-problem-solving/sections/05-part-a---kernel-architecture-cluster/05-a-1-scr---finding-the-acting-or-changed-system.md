@@ -241,9 +241,9 @@ Extent-sensitive identity remains useful because it forces the practitioner to s
 
 | External source | Contribution used here | A.1.SCR use and boundary |
 | --- | --- | --- |
-| Florio and Linnebo, [*Introduction to Constructional Ontology*](https://philarchive.org/rec/FLOITC-3), 2024 | Construction choices affect identity and require constructors, inputs, and construction-sensitive distinctions. | Only the system-dependent branch in A.1.SCR:4.3 applies the six-component test. Return `unknown` when missing information prevents determining either satisfaction or failure. |
-| Deutsch, [*Constructor Theory*](https://arxiv.org/abs/1210.7439), 2012 | Possible transformations depend on substrate attributes and constructor conditions. | At A.1.SCR:4.3 and 5.1, test whether facts about the proposed assembly satisfy the applicability and compatibility conditions of a governed larger-assembly construction rule. |
-| Partridge, [*BORO Ontology*](https://borosolutions.net/boro-ontology), C-FORS 2025 | Four-dimensional identity pressure asks what exists through change and across extent. | Use A.1.SCR:4.8 for the entity and kind distinctions; shared extent alone does not establish identity. |
+| Florio and Linnebo, [*Introduction to Constructional Ontology*](https://ceur-ws.org/Vol-3882/foust-5.pdf), JOWO/FOIS 2024, CEUR Workshop Proceedings 3882, §1, pp. 1–3, and §3, p. 4 | Construction choices affect identity and require constructors, inputs, and construction-sensitive distinctions. | Only the system-dependent branch in A.1.SCR:4.3 applies the six-component test. Return `unknown` when missing information prevents determining either satisfaction or failure. |
+| Deutsch, [*Constructor Theory*](https://arxiv.org/abs/1210.7439v1), arXiv:1210.7439v1 (2012), §1.1, pp. 1–4 | Possible transformations depend on substrate attributes and constructor conditions. | At A.1.SCR:4.3 and 5.1, test whether facts about the proposed assembly satisfy the applicability and compatibility conditions of a governed larger-assembly construction rule. |
+| Chris Partridge, [*BORO Ontology*](https://research.borosolutions.net/boro-ontology/), C-FORS Summer School, University of Oslo, 23 May 2025, slides 19, 22–24 and 28 | Four-dimensional identity pressure asks what exists through change and across extent. | Use A.1.SCR:4.8 for the entity and kind distinctions; shared extent alone does not establish identity. |
 
 The conditional method is an FPF synthesis.
 
