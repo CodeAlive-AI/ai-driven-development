@@ -1,4 +1,4 @@
-## C.2.7 - `U.LanguageStateRepresentationFactorBundle` — How Is the Representation Organized?
+## C.2.7 - `LanguageStateRepresentationFactorBundle` — How Is the Representation Organized?
 
 > **Type:** Definitional (D)
 > **Status:** Stable
@@ -8,9 +8,9 @@
 
 **Use this pattern when.** Use C.2.7 when a comparison or use depends on how an episteme is represented: the distribution of its code, its sparsity or its symbolic structure. Identify the representation and the units being assessed. An ordinary description can suffice when the receiving use needs no factor-bundle claim.
 
-**What goes wrong if missed.** One representation label such as `symbolic`, `distributed`, or `encoding basis` starts doing too much work: it hides articulation, closure, anchoring, bridge loss, or comparison assumptions.
+**What goes wrong if missed.** One representation label such as `symbolic`, `distributed`, or `encoding basis` starts doing too much work: it hides articulation, closure, source or use conditions, Bridge loss, or comparison assumptions.
 
-**What this buys.** A comparison of representation factors on explicit bases, without deriving articulation, closure or anchoring from a single label.
+**What this buys.** A comparison of representation factors on explicit bases, while keeping articulation, closure and source or use claims independently grounded.
 
 ### C.2.7:1 - Problem frame
 Published position claims in the declared language-state chart over `U.CharacteristicSpace` must keep representation factors such as locality, sparsity, and symbolicity distinct.
@@ -23,20 +23,20 @@ Using `EncodingBasis` without its underlying factors collapses several independe
 |---|---|
 | **Comparability vs reductionism** | Allow comparison while preserving the distinctions among factors. |
 | **Compact core vs extensibility** | Keep a minimal starter bundle while leaving room for domain-specific refinements. |
-| **Representation vs anchoring** | Describe how the current episteme is represented without hiding what it is anchored to. |
+| **Representation vs source and use** | Describe how information is represented while retaining the distinct claims about its source and use conditions. |
 
 ### C.2.7:4 - Solution
-`U.LanguageStateRepresentationFactorBundle` is a factor bundle, not one scalar characteristic. The minimal core starter set is:
+`LanguageStateRepresentationFactorBundle` is a factor bundle, not one scalar characteristic. The core starter set for the comparison questions below is:
 
-- `U.LocalityDistribution`
-- `U.Sparsity`
-- `U.Symbolicity`
+- `LocalityDistribution`
+- `Sparsity`
+- `Symbolicity`
 
 A local alias such as `EncodingBasis` shall identify the factors and readings it summarizes.
 
-#### C.2.7:4.0a - Kind and factor-bundle boundary
+#### C.2.7:4.0a - Factors and their readings
 
-`U.LanguageStateRepresentationFactorBundle` groups readings of distinct representation Characteristics. Each factor needs its own meaning and Scale, and the declared chart binds these under A.18/A.19. The bundle describes the representation identified in the position claim; a factor reading is distinct from that representation or its publication form.
+`LanguageStateRepresentationFactorBundle` groups readings of distinct representation Characteristics. Each factor needs its own meaning and Scale, and the declared chart binds these under A.18/A.19. The bundle describes the representation identified in the position claim; a factor reading is distinct from that representation or its publication form.
 
 #### C.2.7:4.1 - Minimal factor readings
 | Factor | Question it answers | Typical values |
@@ -53,15 +53,23 @@ In the second scheme, `[0,1,0,0,0,0,1,0]` and the list of active positions `{2,7
 
 When the list travels separately, supply the unit order and decoding rule needed for its next use, directly or through an accessible return to the exact source content. Counting written marks instead of active units requires a different comparison basis.
 
+##### C.2.7:4.1.1 - Why begin with these factors?
+
+The starter set separates three questions that often change how a representation can be read or transferred. **LocalityDistribution** concerns whether one selected unit distinguishes a represented value or whether a combination is needed. **Sparsity** concerns how much of the declared unit set is active or used; its reading depends on what is counted and on the local comparison criterion. **Symbolicity** concerns the explicit tokens and structures available to the receiving interpretation, including the applicable decoding or composition rules. These questions can matter separately: locating a report, estimating the units used to express it and recovering its interpretation require different information.
+
+The pair code in :4.1 explains why a count of active units cannot settle locality and why a compact inscription needs its decoder. The starter bundle keeps these distinctions available without requiring a complete model of the representation. Select only the factors that affect the receiving question, as :16.1 permits. Preserve the representation and unit basis for each reading; factors of a source model and factors of its explanation concern different representations.
+
+An assessment aimed at reconstruction error, robustness or the effect of a causal intervention may need other Characteristics directly. Use those Characteristics when they answer the question; retain a starter factor only when its reading contributes. The gain from the shared triple is a reusable starting vocabulary for code organization, use of units and explicit symbolic structure. It is not an exhaustive representation-quality model, and it supplies no universal thresholds or empirical claim that the factors are statistically independent. Add a needed factor under :4.3 while keeping the meanings of the factors already used.
+
 #### C.2.7:4.2 - Non-collapse rules
 
-Representation organization, anchoring, articulation and closure answer different questions. A distributed code can be trace-anchored; a symbolic note can leave its meaning unclear; a sparse representation can express a claim that remains open. Assess each relevant facet on its own grounds. The representation factors alone establish neither evidence for the claim nor permission to act on it.
+Representation organization, articulation and closure are assessed under their own Characteristics; source and use claims retain their direct predicates. A distributed code can be computed from an identified trace; a symbolic note can leave its meaning unclear; a sparse representation can express a claim that remains open. Assess each relevant facet on its own grounds. The representation factors alone establish neither evidence for the claim nor permission to act on it.
 
 #### C.2.7:4.3 - Extension rule
 Authors may add extra local representation factors only if the extension is published as a factor addition rather than as a new master factor that erases the core factor bundle.
 
 ### C.2.7:5 - Archetypal Grounding
-**Tell.** A model-state cue can be highly distributed but still trace-anchored; a symbolic note can be low articulation if its semantics are still vague.
+**Tell.** A model-state cue can use a highly distributed representation and be obtained from an identified recorded state; a symbolic note can be low articulation if its semantics are still vague.
 
 **Show (System).** An operator decision aid may mix sparse alert codes and symbolic method-description text.
 
@@ -73,7 +81,7 @@ The pattern resists folk theories that try to line up one representation factor 
 ### C.2.7:7 - Conformance Checklist
 - `CC-C.2.7-1` `LanguageStateRepresentationFactorBundle` **SHALL** be published as a factor bundle, not as a hidden scalar.
 - `CC-C.2.7-2` Local aliases such as `EncodingBasis` **MAY** exist only with an explicit docking to the governed factors.
-- `CC-C.2.7-3` Representation factors **MUST NOT** silently replace `LanguageStateAnchoringMode` or `LanguageStateClosureDegree`.
+- `CC-C.2.7-3` Representation factors **MUST NOT** silently replace the source and use claims recovered through C.2.6 or `LanguageStateClosureDegree`.
 - `CC-C.2.7-4` New local factors **SHALL** preserve the factor-bundle discipline.
 
 ### C.2.7:8 - Common Anti-Patterns and How to Avoid Them
@@ -85,10 +93,15 @@ The pattern resists folk theories that try to line up one representation factor 
 The benefit is cleaner comparison across schools, substrates, and publication forms. The trade-off is the effort needed to make the relevant factor readings explicit.
 
 ### C.2.7:10 - Rationale
-Separate representation factors let the reader compare code organization while assessing articulation, closure and anchoring on their own grounds.
+Separate representation factors let the reader compare code organization while assessing articulation and closure and establishing the required source or use claims on their own grounds. The starter triple earns its place through the three receiving questions in :4.1.1. A direct selection of other representation Characteristics is preferable when it answers the actual task with less irrelevant assessment.
 
 ### C.2.7:11 - SoTA-Echoing
-This factorization fits current work on sparse distributed representations, hybrid symbolic/neuro-symbolic representation practices, and interpretability practice.
+The triple is an FPF starting choice for :4.1.1, with bounded external comparisons:
+
+| Source and status | Contribution and boundary |
+|---|---|
+| [Elhage et al., *Toy Models of Superposition* (2022)](https://transformer-circuits.pub/2022/toy_model/toy_model.pdf), pp.1–5, historical research basis | Feature directions can differ from neuron basis directions. This supports identifying the units and basis before interpreting locality or sparsity; the toy models do not establish the FPF triple for all representations. |
+| [Fraser-Taliente et al., *Natural Language Autoencoders* (2026)](https://transformer-circuits.pub/2026/nla/index.html), Method and Discussion | The method maps activations to text and reconstructs activations from that text. Reconstruction and the interpretation of the explanation require their own assessment. This is a current case for selecting task-specific Characteristics alongside, or instead of, starter factors. |
 
 ### C.2.7:12 - Relations
 - Builds on: `A.18`, `A.19`, `C.2.2a`, `C.2.LS`.
@@ -119,7 +132,7 @@ To publish a representation-factor bundle, ask separately:
 Check whether the reported factors support the intended comparison. Do not infer unreported factors from one label without a relation that establishes them.
 
 #### C.2.7:14.3 - Cross-facet reminder
-Assurance readers should also watch for silent replacement of `LanguageStateAnchoringMode`, `AE`, or `CD` by representation talk.
+Assurance readers should also watch for silent replacement of the source and use claims recovered through C.2.6, `AE`, or `CD` by representation talk.
 
 ### C.2.7:15 - Extension and Migration Notes
 
@@ -130,7 +143,7 @@ Authors may add extra local factors, but each added factor should answer a disti
 Aliases such as `EncodingBasis` or similar should be unfolded into explicit factor dockings before they are relied upon for comparison, bridge claims, or downstream use.
 
 #### C.2.7:15.3 - Boundary reminder
-`U.LanguageStateRepresentationFactorBundle` describes representational organization only. It does not determine admissible use, closure, or anchoring by itself.
+`LanguageStateRepresentationFactorBundle` describes representational organization only. Admissible use, closure and source or interaction claims retain their own conditions and grounds.
 ### C.2.7:16 - Factor-Bundle Publication Discipline
 
 #### C.2.7:16.1 - Minimal representation package
@@ -148,7 +161,7 @@ Local aliases such as `EncodingBasis` are admissible only when their docking to 
 Representation factors may be related under a particular code or model. State that relation and its conditions before inferring one reading from another. Locality and active-unit fraction are distinct, as :4.1 shows. Publish the readings needed for the comparison; assess articulation independently under C.2.4.
 
 #### C.2.7:17.2 - Cross-facet non-substitution
-Representation talk must not silently replace `AE`, `CD`, or `LanguageStateAnchoringMode`. A symbolic account of a distributed code may be easier to read while leaving interpretation unclear, closure open or anchoring operator-bound.
+Representation talk must not silently replace `AE`, `CD`, or the source and use claims recovered through C.2.6. A symbolic account of a distributed code may be easier to read while leaving interpretation unclear, closure open or an operator acknowledgement still required.
 
 #### C.2.7:17.3 - Bridge reminder
 If a representation shift matters in transport across contexts, note that the shift may alter what is preserved or salient. Use `F.9` for the Bridge and its bounded-use claim when the receiving use needs a semantic relation between local senses from different contexts; use `F.9.1` only for a separate optional stance note about that claim.
@@ -161,7 +174,7 @@ An assurance reader should ask:
 - are all claimed factors visible in the publication or cited source;
 - does any alias hide the factor bundle;
 - is one factor being used as if it summarized the whole representation state;
-- has representation talk started to replace articulation, closure, or anchoring claims.
+- has representation talk started to replace articulation, closure, or source and use claims.
 
 #### C.2.7:18.2 - Local extension test
 An additional factor is justified only if it captures a distinct representational question that cannot be reduced to locality, sparsity, or symbolicity. The extra factor should extend the bundle, not become a rival master factor.

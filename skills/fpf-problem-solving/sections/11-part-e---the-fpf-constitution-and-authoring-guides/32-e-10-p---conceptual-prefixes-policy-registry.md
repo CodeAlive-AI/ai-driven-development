@@ -15,7 +15,7 @@
 5. **Scope.** Prefixes are **globally reserved** within the Core; domain patterns **MAY** mint local shorthands only within a named local glossary and its effective scheme and **MUST NOT** collide with this registry.
 
 **Registered conceptual prefixes (Core).**
-* `U.` — namespace for admitted U-kinds and dependent `U.*` forms; spelling alone does not prove kindhood. *Anchors:* E.10:8.3, M-P1, reserves the namespace; E.24.UK:4.1 supplies the U-kind admission test. Each named value retains the identity or membership rule in its defining subject pattern.
+* `U.` — namespace for U-kinds admitted under E.24.UK, whose dispositions cover root and dependent kinds. Spelling, dependence or reuse alone does not establish U-kind admission. *Anchors:* E.10:8.3, M-P1, reserves the namespace; E.24.UK:4.1–4.3 governs admission. Each kind retains the identity or membership rule in its defining subject pattern.
 * `Γ_` — **calculus-operator notation**, for example `Γ_epist`, `Γ_ctx` and `Γ_time`. *Anchors:* E.10:8.3, M-P1, reserves the prefix; B.1.3:4.2 defines the synthesis and compilation operators; B.1.4:3 defines the optional notation for contextual and temporal aggregation. Other flavours cite their own operator definitions. For a system aggregation or delimitation decision, use B.1.2:4 to recover the separately governed results and any missing basis.
 * `ut:` — **Universal relation family** (e.g., `PartOf` sub‑relations). *Anchor:* A.14 (Mereology) — informative alias vocabulary.
 * `tv:` — **Trace & Validation vocabulary** (CT2R‑LOG): `tv:AliasOf`, `tv:groundedBy`. *Anchor:* B.3.5 (CT2R-LOG).

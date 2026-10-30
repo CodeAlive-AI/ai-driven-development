@@ -283,6 +283,9 @@ Reopen this line when a current direct Method supplies the entire use with less 
 
 ### C.39:12 - Relations
 
+C.39.QR returns work through a part, case, model or other intermediate construction to the original question. It distinguishes what the obtained result warrants about the subject from what it completes for the requested use, and brings a missing obtaining way here. C.39.WA develops the common grounds and organizing relations of a whole-subject account, follows them into choices about parts, and revisits its scope after consequential findings.
+
+
 C.39.MC continues a connected Method-development question after a result or changed condition. It preserves applicable qualification, composition, description and support results while returning only the affected question to its supplier. Use it when that continuation is unresolved; an adequate direct MethodDescription remains the sufficient return.
 
 - C.39.RO constructs a reusable operation from a working case, retaining input meanings, application conditions and the reason for its result.

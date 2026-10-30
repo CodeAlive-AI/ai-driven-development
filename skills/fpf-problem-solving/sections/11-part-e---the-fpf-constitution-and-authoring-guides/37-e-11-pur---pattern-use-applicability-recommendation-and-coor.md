@@ -44,6 +44,8 @@ Evaluate candidate uses against five distinct fit aspects. An ordinary reversibl
 
 #### E.11.PUR:4.1 - Fit and applicability
 
+In the optional forms below, `claimGraph` carries the episteme's complete asserted content, including the reasons and qualifications that change what it says. The scheme designation resolves under C.2.1:4.2.6 to the rules actually governing that account. It can select another episteme's effective scheme or exact content defining those rules; a reference to a document alone does not choose between them. Preserve an unresolved interpretation rather than filling the field with a nearby name. These forms organize addressable writing when needed; ordinary conversation and partial notes remain sufficient under the entry conditions above.
+
 ```text
 PatternUseFitCriterionValue =
   problemFrame | forces | solutionConditions | ordinaryBoundary | resultAndReceivingUse
@@ -53,8 +55,8 @@ PatternUseApplicabilityResultValue = applicable | inapplicable | insufficientBas
 
 PatternUseFitFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing one CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   fitCriterion: PatternUseFitCriterionValue
   fitResult: PatternUseFitResultValue
@@ -62,8 +64,8 @@ PatternUseFitFinding@Context <: U.Episteme:
 
 PatternUseApplicabilityFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing one CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   fitFindingRefs[5]: U.EpistemeRef, each referencing one PatternUseFitFinding@Context
   applicabilityResult: PatternUseApplicabilityResultValue
@@ -90,8 +92,8 @@ PatternUseRecommendationSupportProfileValue = ordinaryCompact | relianceBearing
 PatternUseRecommendation@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the selected CandidatePatternUse@Context
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   recommendationSupportProfile: PatternUseRecommendationSupportProfileValue
   applicabilityResult: PatternUseApplicabilityResultValue
@@ -132,8 +134,8 @@ PatternUseOrderingModeValue = unordered | partialOrder | totalOrder
 
 PatternUseCoordinationRationale@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the coordination-question episteme
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   subjectCandidatePatternUseRefs[2..*]: U.EpistemeRef, each referencing one CandidatePatternUse@Context
   coordinationRationaleDescriptionRef: U.EpistemeRef
@@ -143,8 +145,8 @@ PatternUseCoordinationRationale@Context <: U.Episteme:
 PatternUseCoordination@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the coordination-question episteme
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   memberCandidatePatternUseRefs[2..*]: U.EpistemeRef, each referencing one CandidatePatternUse@Context
   orderingMode: PatternUseOrderingModeValue

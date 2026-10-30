@@ -41,7 +41,7 @@ How can an engineer assemble a usable built-asset architecture description from 
 
 Start with one intended architecture use, not with the available tool outputs. Name the exact built asset and selected A.22 structures that matter. Recover subject-relation occurrences when making actual-relation claims; a proposed arrangement can remain candidate content. Cite an obtaining `ArchitectureRelation` only when its C.30 predicate holds; otherwise keep required, desired, expected, candidate, negative, or unresolved content in a bounded `ArchitectureClaim`.
 
-Constitute each architecture description under C.2.1 about exactly one EntityOfConcern: the built asset, one obtaining `ArchitectureRelation` occurrence, or one exact selected structure. Keep its exact ClaimGraph and effective `U.ReferenceScheme` recoverable. The same episteme is a `U.View` only while a separately identified E.17.0 conformance relation to one exact viewpoint episteme obtains. Then recover reference designation, model exchange, source use, representation, publication, and currentness through their own objects and relations.
+Constitute each architecture description under C.2.1 about exactly one EntityOfConcern: the built asset, one obtaining `ArchitectureRelation` occurrence, or one exact selected structure. Keep its exact ClaimGraph and effective reference scheme recoverable. The same episteme is a `U.View` only while a separately identified E.17.0 conformance relation to one exact viewpoint episteme obtains. Then recover reference designation, model exchange, source use, representation, publication, and currentness through their own objects and relations.
 
 For a first use, make the relevant descriptions, structures, reference designations, sources and allowed use recoverable. Ordinary wording is sufficient when it answers the question; stop there. The following record can organize the references when that helps the receiving work:
 
@@ -50,12 +50,12 @@ BuiltAssetArchitectureDescriptionUse@Project:
   projectWorkOccurrenceRef?: U.EntityRef constrained to U.Work
   builtAssetDescriptionProjectUseRelationRef?: U.RelationRef governed by the exact description-use or work-use pattern
   architectureDescriptionRef: U.EpistemeRef constrained to ArchitectureDescription
-  descriptionClaimGraphRef: U.ClaimGraphRef
+  descriptionContentDesignation: C.2.1 ClaimContentDesignation, selecting the whole content of architectureDescriptionRef
   descriptionEntityOfConcernRef:
     exactly one builtAssetRef |
       ArchitectureRelation occurrence ref |
       selected U.Structure ref
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: exact C.2.1 interpretation rules, byValue
   builtAssetRef: U.HolonRef
   architectureRelationOccurrenceRefs?: FinSet(U.RelationRef)
   architectureClaimRefs?: FinSet(U.EpistemeRef)
@@ -82,6 +82,8 @@ BuiltAssetArchitectureDescriptionUse@Project:
   nextGoverningPatternApplicationRef?:
   nonAdmissibleUse:
 ```
+
+Resolve `descriptionContentDesignation` under C.2.1:4.2.6 to the whole content of the same exact episteme selected by `architectureDescriptionRef`. Its by-value effective scheme must be the rules governing that content, not the rules of a document that merely describes the scheme. A missing or conflicting resolution leaves this use record unresolved; it does not reidentify the asset or establish view conformance.
 
 This is a project-side use record, not a description identity constructor or a new root kind. `@Project` is a compatibility and retrieval cue and establishes no project entity, Work occurrence, authority, context, viewpoint, parthood, or use relation. When the use is genuinely local to one actual project, `projectWorkOccurrenceRef` identifies the exact composite `U.Work`, and `builtAssetDescriptionProjectUseRelationRef` identifies the separately governed obtaining relation by which this description use concerns that Work. Otherwise both remain absent.
 
@@ -118,7 +120,7 @@ A reference designation is useful because it makes information about an entity r
 ```text
 BuiltAssetReferenceDesignationUse:
   designationValue: local designation value, byValue
-  referenceDesignationScheme: U.ReferenceScheme, byValue
+  referenceDesignationScheme: exact designation rules and their domain, byValue
   designatedEntityRef: U.EntityRef
   selectedAspectStructureRef: U.StructureRef
   designationOrReferenceRelationRef?: U.RelationRef
@@ -212,7 +214,7 @@ When the operator compares an original design description with the as-maintained
 
 | ID | Check | Repair when absent |
 | --- | --- | --- |
-| `BA-1` | The exact built asset is recoverable, and every used architecture description has one exact ClaimGraph, one EntityOfConcern—built asset, obtaining `ArchitectureRelation`, or selected structure—and effective `U.ReferenceScheme`. | Recover the asset under `A.1`, subject relations and architecture relation under `C.30`, selected structure under `A.22`, and description identity under C.2.1; do not derive the subject from an optional architecture-claim field. |
+| `BA-1` | The exact built asset is recoverable, and every used architecture description has one exact ClaimGraph, one EntityOfConcern—built asset, obtaining `ArchitectureRelation`, or selected structure—and effective reference scheme. | Recover the asset under `A.1`, subject relations and architecture relation under `C.30`, selected structure under `A.22`, and description identity under C.2.1; do not derive the subject from an optional architecture-claim field. |
 | `BA-2` | Every asserted architecture structural view is the same exact description episteme whose selected-structure EntityOfConcern, structure kind, exact viewpoint, and independently obtaining E.17.0 conformance relation are named. | Apply `A.22`, `E.17.0`, and `C.30.ASV`; do not use the file, bundle, dashboard, representation, publication, or current use as the structure or view constructor. |
 | `BA-3` | Every relied-on designation names its scheme, designated entity, selected aspect structure, qualification window, and exact designation/reference relation when one is claimed; design/realization correspondence remains a separate claim or relation. | Recover the direct designation/reference owner and occurrence, or keep a bounded designation-use claim; never use repeated spelling as entity identity or parthood proof. |
 | `BA-4` | Exchange checking and architecture evaluation have different evaluated objects and governors; source episteme, representation, publication occurrence, form, carrier, actual subject relations, selected structures, and descriptions remain distinct. | Keep description conformance with the exchange use; return relation truth, architecture adequacy, evidence, and assurance to their direct patterns. |

@@ -1,4 +1,4 @@
-## C.2.4 - `U.ArticulationExplicitness` — How Explicit Is an Episteme's Meaning for Its Use?
+## C.2.4 - Articulation Explicitness — How Explicit Is an Episteme's Meaning for Its Use?
 
 > **Type:** Definitional (D)
 > **Status:** Stable
@@ -26,19 +26,35 @@ When articulation explicitness stays implicit, authors either overstate readines
 | **Branch readiness vs exploratory openness** | Say when a direct semantic branch can receive the episteme without forcing every cue through relation repair. |
 
 ### C.2.4:4 - Solution
-`U.ArticulationExplicitness` is an ordinal characteristic of the degree to which a governed episteme's semantic structure is explicitly articulated for its branch and receiving use. It orders progression from a cue to a complete branch-appropriate expression whose meaning remains stable in a named receiving use. The common direction is independent of the semantic branch.
+Articulation explicitness (`AE`) characterizes how explicitly an episteme's semantic structure is expressed for its semantic branch and receiving use. Its ordinal Scale orders progression from a cue to a complete branch-appropriate expression whose meaning remains stable in that use. The common direction is independent of the semantic branch.
 
-#### C.2.4:4.0a - Kind and characteristic boundary
+#### C.2.4:4.0a - Characteristic, reading and assessment
 
-`U.ArticulationExplicitness` names the Characteristic assessed here. The `AE0`–`AE5` readings belong to its declared ordinal Scale. A language-state chart binds that Characteristic and Scale in a basis slot under A.19; the Characteristic, a value on its Scale and the chart slot remain distinct. Local thresholds, route labels and table columns may reference them without introducing another U-kind.
+Articulation explicitness is the Characteristic; `AE0`–`AE5` name values on its ordinal Scale (:4.2). An `AE` reading attributes a supported value, or a set of remaining possible values, to an identified episteme edition within a stated assessment scope. Identify a selected fragment when only that fragment is assessed. The branch and receiving use determine which semantic structure must be recoverable. For a cue-bearing account, assess the meaning needed for the intended next use; the underlying observation or felt tension is part of its grounds.
+
+A.18 distinguishes the Characteristic from its Scale and values. A chart slot binds that Characteristic and Scale under A.19; an assessment states the reading and its grounds. A note, table or C.2.LS profile can express the assessment. Its form does not determine the reading.
+
+#### C.2.4:4.5 - Choose a sufficient articulation claim
+
+Start with the intended question or action and the meaning it requires. Read the available expression to recover its subject, semantic branch, and the participants, conditions and bounds that matter to that use. State what is already explicit and what is still missing. A direct condition can be sufficient for the next action; in that case, use it without assigning an `AE` level.
+
+Use an `AE` reading when the receiving work needs comparison on this Scale, a position in a declared chart, or a test against a declared `AE` threshold. Match the available content to the anchors in :4.2 and state the grounds for the reading. Reuse an applicable assessment when its edition, scope, branch and receiving conditions still match. If the grounds do not determine the needed value, retain the supported possibilities or a decision-relevant unknown. The applicable rule for the receiving action supplies its condition; an `AE` value supplies only the articulation input that condition uses.
+
+#### C.2.4:4.6 - Develop and revise the content in writing
+
+Writing can help obtain the meaning that will later be assessed. Put the cue or earlier wording beside a proposed statement, question or plan. Try to make the missing participant, distinction or condition explicit, then compare the expressions with the observations and reasons that motivated them. Retain what supports the next use and expose a gap that still prevents it. Use the relevant subject pattern when developing the missing content requires its method.
+
+Assess closure separately under C.2.5 when the use depends on which alternatives remain live or which route is fixed. Making a claim explicit can raise `AE` while leaving its warrant weak; restoring a lost alternative can improve the articulation while reducing closure. Preserve the observations, qualifications and rivals needed to reconsider the conclusion. A.16.0:14 shows this comparison across three written accounts; use a separate history account only when that history changes the next use.
+
+When the content, scope, branch or receiving use changes, reconsider the affected assessment and any decision that relied on it. A changed receiving requirement can make the earlier reading inapplicable even when the assessed episteme is unchanged. C.2.1 governs any claim-content or episteme-identity change; A.16 and A.16.2 govern a selected publication move or retreat.
 
 #### C.2.4:4.1 - Characteristic specification
-- **Kind:** CHR characteristic.
+- **Assessed subject:** the identified episteme edition, with assessment scope and receiving use stated.
 - **Scale discipline:** ordinal.
 - **What rises:** semantic shape becomes more explicit.
 - **What does not follow automatically:** truth, trust, closure, admissibility, or formality.
 
-`AE` is therefore independent from `F`, from `LanguageStateClosureDegree`, and from endpoint authority.
+`AE` is therefore independent from `F`, from closure degree (`CD`, C.2.5), and from endpoint authority.
 
 Use `C.2.8` to compare how much selected structure a reader can correctly extract under stated preparation, access and budget, including when both expressions already meet the same `AE` threshold. Reader recovery supports an `AE` judgment about explicit articulation; it does not turn the `AE0`–`AE5` progression into a scale of extractable structural amount.
 
@@ -108,11 +124,19 @@ A template may enforce precise syntax while leaving the meaning needed by the re
 #### C.2.4:13.2 - Plain plan, high articulation
 The note `At 14:00, Maintenance Team 2 will isolate Pump P-17, replace Seal S-4, and restore service only after Leak Test LT-9 passes` uses ordinary language and little formal notation. It can still reach `AE4`: the planned actor, affected entity, ordered actions, time, and completion condition are explicit enough for the planning branch. It routes to `A.15`; the note describes planned actions, while `A.15.1` governs any admitted Work occurrence. The note needs no relation repair merely to count as explicit.
 
+For a planning check whose required content is exactly those items, inspect them directly. Add the `AE4` reading only when a comparison, chart or declared threshold needs that Scale. The plan's explicitness still leaves the planned action and any authorization for it to their own tests.
+
 #### C.2.4:13.3 - Relation-looking but wrongly routed
 A row `Maintenance Team 2 | Pump P-17 | isolate | 14:00` looks slot-shaped. If it records intended action, however, it is a compact plan row rather than proof of a durable relation. Its layout does not raise `AE` until the planning meaning and conditions are recoverable, and it does not select `A.6.P`.
 
 #### C.2.4:13.4 - Threshold edge case
 A cue with a stable trigger and candidate anchors may still sit between `AE2` and `AE3` because its direct branch is unresolved. Keep the cue recoverable in `B.4.1` or `A.16.1` and state what is missing. An applicable first recognition or clarification step can help select the branch; use its required inputs and apply the receiving branch's threshold before claiming that result. There is no universal relation threshold.
+
+#### C.2.4:13.5 - Recovering what a clearer summary lost
+
+In the constructed case in A.16.0:14, an initial note preserves three timeouts just after a restart, a later successful request, and two rival explanations. A summary says that the system is permanently undersized and recommends adding replicas. That diagnosis and action are more explicit, but comparison with the original note reveals the lost observation window, success and rivals.
+
+The revised account returns to the original observations, withdraws the permanent-capacity conclusion and formulates a question about an observation that could distinguish the rivals. Under the case's stated readings, the summary raised `AE` from `AE2` to `AE3` and `CD` from `CD2` to `CD3`; the revision keeps `AE3` while reopening to `CD2`. Comparing the written contents supplies the reason for revision. The levels report different aspects of that change; neither a clearer summary nor its higher closure establishes the capacity claim. The full case distinguishes the supported edition-continuation claim from the rejected one and identifies the permitted next use.
 
 ### C.2.4:14 - Authoring and Review Guidance
 
@@ -137,7 +161,7 @@ If `AE` determines whether an episteme stays in `A.16.1`, passes through `B.4.1`
 Contexts may refine the starter anchor set with subanchors, but the refinement must preserve the ordinal direction and the distinction from `F` and `CD`.
 
 #### C.2.4:15.2 - Migration from vague articulation prose
-When routing or use depends on articulation, statements such as "still vague", "more explicit now", or "ready for formalization" should be migrated into explicit `AE` claims plus the corresponding move or routing claim.
+When routing or use depends on words such as "still vague", "more explicit now", or "ready for formalization", recover the meaning already explicit, the missing content and the condition for the next use. Use that direct condition when it is sufficient. Add an `AE` reading only when the receiving work needs its Scale, with the grounds and any declared threshold. A claim about the resulting move or route still follows its own governing pattern.
 
 #### C.2.4:15.3 - Boundary reminder
 `AE` does not govern closure, confidence, or warrant. If authors want those meanings, they must publish them through their own governing patterns.

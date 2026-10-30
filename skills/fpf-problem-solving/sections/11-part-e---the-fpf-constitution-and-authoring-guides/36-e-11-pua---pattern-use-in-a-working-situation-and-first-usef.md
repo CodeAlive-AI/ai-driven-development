@@ -97,12 +97,14 @@ In `ordinaryBounded` use, the subject, practical question, inspected pattern, us
 
 In `relianceBearing` use, materialize only the distinctions that the named reliance will use. Another reader may need a candidate basis and rationale. Automation may need an exact result kind, predicate, pattern locator, `ClaimGraph`, relative object, and category-correct basis. Delayed review may need a descriptive flow position and a separate later-use disposition. A receiver appears only for an actual communication or admitted route relation; an ordinary return needs only its condition and optional next-pattern locator. No profile causes every support record to be materialized.
 
+In the optional forms below, `claimGraph` carries the episteme's complete asserted content, including the reasons and qualifications that change what it says. The scheme designation resolves under C.2.1:4.2.6 to the rules actually governing that account. It can select another episteme's effective scheme or exact content defining those rules; a reference to a document alone does not choose between them. Preserve an unresolved interpretation rather than filling the field with a nearby name. These forms organize addressable writing when needed; ordinary conversation and partial notes remain sufficient under the entry conditions above.
+
 ```text
 CompactPatternUseTrace@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   claimScopeRef?: U.EntityRef, referencing one U.ClaimScope
   modelUseStructureRef?: U.EntityRef, referencing one BoundedModelUseStructure
   projectWorkRef?: U.EntityRef, referencing one composite U.Work
@@ -165,8 +167,8 @@ The defining `ClaimGraph` located at PUA states the practical-question, optional
 PracticalUseQuestion@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   claimScopeRef?: U.EntityRef, referencing one U.ClaimScope
   modelUseStructureRef?: U.EntityRef, referencing one BoundedModelUseStructure
   projectWorkRef?: U.EntityRef, referencing one composite U.Work
@@ -175,8 +177,8 @@ PracticalUseQuestion@Context <: U.Episteme:
 
 PatternUseBoundaryCondition@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the CandidatePatternUse@Context or PracticalUseQuestion@Context whose use is bounded
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   boundaryConditionKind: candidateAdmission | minimumUsableResult | stop | return | wrongTurnRecovery | strongerNeighbor | missingGovernor | missingInformation | costEscalation | reversibilityEscalation | receivingPatternContinuation
   conditionDescriptionRef: U.EpistemeRef
@@ -188,8 +190,8 @@ PatternUseBoundaryCondition@Context <: U.Episteme:
 
 PatternUseResultExpectation@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the CandidatePatternUse@Context whose result is expected
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   expectedResultKindRef: U.KindRef
   expectedResultPatternLocator: U.EntityRef, locating one exact FPF pattern episteme
@@ -219,8 +221,8 @@ An optional representation of the basis claim is:
 ```text
 Candidate basis claim:  // ordinary C.2.1 episteme; local description, no new U-kind
   entityOfConcernRef: U.EpistemeRef, referencing the exact CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   directPatternRef: U.EpistemeRef
   directSolutionContentRef: exact content supporting this candidate
   supportingClaimRefs[]?: U.EpistemeRef
@@ -236,8 +238,8 @@ Reference respelling that still designates the same source changes no source ref
 CandidatePatternUse@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   claimScopeRef?: U.EntityRef, referencing one U.ClaimScope
   modelUseStructureRef?: U.EntityRef, referencing one BoundedModelUseStructure
   projectWorkRef?: U.EntityRef, referencing one composite U.Work
@@ -259,8 +261,8 @@ The public template is absent when the candidate was formed by direct pattern in
 ```text
 CandidatePatternUseRationale@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing one CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   rationaleDescriptionRef: U.EpistemeRef
   rationaleBasisEpistemeRefs[]: U.EpistemeRef
@@ -289,8 +291,8 @@ PUA introduces no actual-result relation and no universal actual-use relation. K
 PatternUseResultClosureFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the independently identified result entity or obtaining relation occurrence
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   candidatePatternUseRef: U.EpistemeRef, referencing one CandidatePatternUse@Context
   resultExpectationRef: U.EpistemeRef, referencing one PatternUseResultExpectation@Context
@@ -319,8 +321,8 @@ Record receiving-use disposition separately, and only for a named reliance:
 ```text
 PatternUseReceivingUseDispositionFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the same result entity or relation occurrence as the closure finding
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   resultClosureFindingRef: U.EpistemeRef, referencing one PatternUseResultClosureFinding@Context
   receivingUseRealizationState: realized | intendedNotYetRealized
@@ -355,8 +357,8 @@ GroundingBasisPair:
 PreExistingResultGroundingFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the pre-existing entity
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   candidatePatternUseRef: U.EpistemeRef, referencing one CandidatePatternUse@Context
   resultExpectationRef: U.EpistemeRef, referencing one PatternUseResultExpectation@Context
@@ -378,8 +380,8 @@ Use this test when the declared teaching, rehearsal, or evaluation use is to est
 ```text
 PatternUsePracticeContinuationDescription@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the selected CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   actionOrProposedUseDescriptionRef: U.EpistemeRef
   expectedResultDescriptionRef: U.EpistemeRef
@@ -391,8 +393,8 @@ PatternUsePracticeContinuationDescription@Context <: U.Episteme:
 
 FinalPracticePatternUseTestResult@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the selected CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   practicalUseQuestionRef: U.EpistemeRef, referencing one PracticalUseQuestion@Context
   selectedCandidateBasisClaimRef: U.EpistemeRef, whose EntityOfConcern is the selected CandidatePatternUse@Context and whose ClaimGraph states the §4.4 basis

@@ -232,7 +232,7 @@ A conforming reopening note should identify:
 - which prior prime hypothesis is being reopened,
 - whether a stored rival is being reinstated or a new candidate is entering,
 - what change in evidence, scope, or internal contradiction triggered the reopening,
-- and whether the original prompt itself has changed or only the candidate ranking has changed.
+- and whether the explanatory question, its prompt account, or only the candidate ranking has changed. Apply `B.5.2.0:4.2.1–4.2.2`: a revised account may still concern the same question; a changed question needs its own entry grounds.
 
 
 #### B.5.2:14.4 - Scope discipline during iteration

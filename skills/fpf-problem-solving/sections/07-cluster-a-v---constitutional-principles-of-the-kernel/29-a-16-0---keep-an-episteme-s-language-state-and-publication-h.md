@@ -121,11 +121,12 @@ A trajectory account may refer to seam publication forms that remain upstream of
 
 - `PreArticulationCuePack`;
 - `RoutedCueSet`;
-- `U.AbductivePrompt`;
 - partial normal forms already typed elsewhere;
 - other explicitly typed upstream publications that preserve a non-endpoint position.
 
 These are not a rival publication-face sequence. They are typed publication forms rendered, when necessary, on existing MVPK faces under `E.17`.
+
+For a published `U.AbductivePrompt`, identify the question account under `B.5.2.0:4.2.1–4.2.2` and its selected form separately. When a trajectory returns to that entry, distinguish a changed account from a changed explanatory question.
 
 Untyped placeholders such as "route-bounded publication face" are non-conformant in a trajectory account unless the text also names the actual publication form and, separately, the MVPK face if face typing matters.
 

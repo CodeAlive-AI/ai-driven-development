@@ -6,6 +6,8 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 
 To find which costly or unavailable work deserves improvement, use [C.39.WI](#c39wi---discover-worthwhile-method-improvements). Follow one consequential result, compare real alternatives and their complete burden, and distinguish a missing way from an explanation, access, provision or execution problem. The first result can be a warranted improvement undertaking, a retained possibility or a reasoned decision to continue current practice. An already understood, worthwhile and authorized remedy can be performed directly.
 
+When a correct local result leaves the original request unresolved, use [C.39.QR](#c39qr---return-results-to-the-original-question). Recover what the recipient needs, identify how the partial work relates to it, and justify the returned conclusion. Then obtain the missing contribution or settle the qualified result. When the requested contribution is an explanation of a whole subject, [C.39.WA](#c39wa---develop-an-account-of-the-whole-subject) develops its organizing grounds and connections and shows how they guide choices about parts. Examples make these operations concrete; varied cases reveal differences within the stated range.
+
 ### LIVE-WORK-STEERING — Choose the next action while Work is changing
 
 - **Situation:** Ongoing Work has an applicable domain Method, but a current fact can change what should happen next.

@@ -31,7 +31,7 @@
 - [A.15.11 - Make Applicable Methods Noticeable in Work](26-a-15-11---make-applicable-methods-noticeable-in-work.md) (224 lines) — Normativity: Normative unless marked informative
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](27-a-15-prod---production-work-entity-identity-inception-and-pr.md) (490 lines) — Type: Architectural (A)
 - [A.16 - Language-State Moves: Choose the Next Publication and Use of a Cue or Claim](28-a-16---language-state-moves-choose-the-next-publication-and.md) (237 lines) — Type: Architectural (A)
-- [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable](29-a-16-0---keep-an-episteme-s-language-state-and-publication-h.md) (298 lines) — Type: Architectural (A)
+- [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable](29-a-16-0---keep-an-episteme-s-language-state-and-publication-h.md) (299 lines) — Type: Architectural (A)
 - [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use](30-a-16-1---prearticulationcuepack-preserve-an-early-cue-before.md) (221 lines) — Type: Definitional (D)
 - [A.16.2 - Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication](31-a-16-2---reopen-sketchbackoff-respecify-or-retire-a-language.md) (182 lines) — Type: Architectural (A)
 - [A.17 - Canonical “Characteristic” (A.CHR-NORM): Name What Is Measured](32-a-17---canonical-characteristic-name-what-is-measured.md) (138 lines) — Use this when. A measurement description leaves unclear what aspect is measured, which entities it concerns, or how its value differs from a Score. First name the Characteristic and its bearer or...
@@ -47,8 +47,8 @@
 - [A.19.UINDM - Indicatorization (UINDM): Select Indicators Under a Declared Policy](42-a-19-uindm---indicatorization-select-indicators-under-a-decl.md) (294 lines) — Type: Architectural (A)
 - [A.19.USCM - Unified Scoring Mechanism, USCM](43-a-19-uscm---unified-scoring-mechanism-uscm.md) (340 lines) — Type: Architectural (A)
 - [A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)](44-a-19-ulsam---unified-lawful-scale-aggregation-mechanism.md) (291 lines) — Type: Architectural (A)
-- [A.19.CPM - Compare Admitted Profiles under a Declared Comparator (CPM)](45-a-19-cpm---compare-admitted-profiles-under-a-declared-compar.md) (368 lines) — Type: Architectural (A)
-- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](46-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (405 lines) — Type: Architectural (A)
+- [A.19.CPM - Compare Admitted Profiles under a Declared Comparator (CPM)](45-a-19-cpm---compare-admitted-profiles-under-a-declared-compar.md) (370 lines) — Type: Architectural (A)
+- [A.19.SelectorMechanism - Unified Selection Kernel, SelectorMechanism](46-a-19-selectormechanism---unified-selection-kernel-selectorme.md) (407 lines) — Type: Architectural (A)
 - [A.20 - Constraint Validity for Transformation Steps](47-a-20---constraint-validity-for-transformation-steps.md) (255 lines) — Type: Architectural (A)
 - [A.21 - Gate Decisions from Independent Check Results](48-a-21---gate-decisions-from-independent-check-results.md) (300 lines) — Type: Architectural (A)
 - [A.22 - Structure and Structural Views (STRUCT-CAL)](49-a-22---structure-and-structural-views.md) (487 lines) — Type: Architectural pattern

@@ -143,7 +143,7 @@ prioritize the FPF-governed sections and enforceable requirements in E.19:4.2.1.
 4. **Cross-pattern compatibility & impact radius**
    Relations are consistent with declared dependencies and dependents; declared scope/impact is compatible or explicitly limited.
 5. **Didactic grounding**
-   Archetypal Grounding is present and teaches the concept with concrete cases or references, not only abstractions.
+   Apply E.8:4.2.1.3 to the connected explanation and its cases. Recover the common relation or Method being taught, its grounds, and the correspondence to the example. For a Method example, distinguish the reusable way, the depicted performance and its subject material. Inspect whether the cases make the material variation of the declared use intelligible; a correct result in the example's domain answers only that part of the review.
 6. **Reader-fit**
    The pattern body addresses the intended FPF user in the working role governed by that pattern. FPF developers, package architects, reviewers, and evaluators are appropriate readers when they occupy that role. FPF-governed sections explain admissible use, costs, boundaries, the concrete definitions, constraints, tests, or other contributions used from FPF patterns named by value, project-side FPF kinds and references named by value, and related relations named by value in user terms. Architecture placement, freeze or merge state, package-boundary rationale, reference boilerplate, quality or projection evidence, corpus-entry evidence, `PatternQualityStatus`, monolith-parity evidence, landing evidence, and broader package-development rationale stay in `DRR`, architecture documents, review handoff, `E.21` result, `E.19` findings, README, ToC, `E.11`, cards, retrieval or projection carriers, release or landing evidence carriers, companions, or ordinary references unless they change the working reader's first admissible move.
 7. **Template & section integrity**
@@ -196,11 +196,12 @@ When E.21 is active, its `PrecisionRestorationProfile` carries the quality resul
 Check these connected uses:
 
 * **Recognition and first action:** an early `Use this when` or equivalent, a recognizable working situation, the cost of missing it, practical gain, first admissible action and ordinary non-use boundary.
-* **Performable guidance:** a minimally viable example, with a worked slice when misuse is likely; useful Consequences and Anti-Patterns; and a clear adoption test.
+* **Performable guidance:** a worked application that makes the Method's own choices, intermediate results and continuation recoverable; useful Consequences and Anti-Patterns; and a clear adoption test. Select additional materially different applications when the declared use requires them.
 * **Subject and reader:** a short account of the primary EntityOfConcern, relation or claim record and any minimal modeling lens needed by typed declaration content. Give early technical terms nearby plain glosses. When several reader situations are served, state the primary working reader, concern and viewpoint.
 * **Recognition and assurance:** put first-use guidance before the declaration, modeling and review/check material needed for assurance. Keep its scope consistent with the recognition claim.
 * **Grounding and breadth:** connect explanatory SoTA rows to their working-reader implication and the cases or boundaries they discipline. A universal or transdisciplinary claim needs heterogeneous recognition situations adequate to that breadth; F.16 is the preferred compact example-matrix template.
 
+Compare the account with the promised subject before using a successful case as an adequacy result. Identify which general grounds explain the choices across the required variations and which differences change the action. Follow a continuing case back to that account when its application problem begins to determine what the pattern teaches. Preserve its useful grounding, then obtain the missing explanation or varied application. Use E.21's scope and case-coverage coordinates when a quality value is required; a local demonstration does not settle a broader scope.
 When admission or refresh includes precise-language repair, apply `CC-E19-7a`. It preserves practical guidance and the Plain/Tech relation under `E.2` `P-2` and `E.12`, with formal identity and dated-Work checks only under the conditions stated there. `F.19` governs the whole-span repair; `E.10` supplies compact cues and FPF routing.
 
 For a broad cleanup across several patterns, or any cleanup that touches FPF-governed Problem frames, Problem sections, first-use recognition text, archetypal grounding, examples, or worked slices, check whether the didactic function was harmed. In inspect-repair-verify, restore the working situation, first useful move, and the definition, constraint, test, or other pattern contribution needed by the claim; in independent findings, record the exact harm and repair direction. A positive `improved` or `preserved` account is required only when another evaluation makes that value one of its substantive results, and it belongs in that evaluation.
@@ -638,11 +639,33 @@ If a governing admission, refresh, `E.21`, `DRR`, publication, or release decisi
 
 **Ordering and effort.** Put ontology, semantics, modularity, and SoTA defects in FPF-governed sections before compact low-signal formatting findings. If semantic defects are present, address them before mechanical edits; formatting and micro-typos must not dominate the work by volume.
 
-### E.19:5 - Archetypal Grounding — transfer across three pattern subjects
+### E.19:5 - Archetypal Grounding — perform the selected review
 
-The three worked situations in §0.2 use the same review move: name the exact pattern edition and review question, apply `PCP-BASE` plus only the live risk profiles, inspect the complete selected scope, and either repair and recheck the defects or return one complete actionable findings set.
+The situations in section 0.2 help a reviewer recognize which questions to select. The following constructed reviews show the comparison, conclusion and return for two different kinds of defect.
 
-**Transfer result.** Profile selection and the two review forms transfer unchanged. Each subject keeps its own correctness question: system requirements agree with their conformance claims; episteme and publication uses keep claims, source use/currentness, publication occurrences, and carriers distinct; and Method guidance is distinguished from performed Work. A successful example from one case cannot stand in for either of the others.
+#### E.19:5.1 - Review and repair a source-change instruction
+
+E.21:5.0 supplies the complete compact pattern `EX.1@source-pin-1`. It asks the user to record a source edition, the rule used and its effect on a decision, then concludes: "Reopen the decision whenever the source publishes any new edition." The present E.19 question is a bounded refresh review of that last instruction, read with the whole quoted pattern. The relying use is to keep a decision connected to its source grounds.
+
+The reviewer selects PCP-BASE and PCP-REFRESH. The edition-change instruction can repeatedly create work and can also determine which decisions receive attention; its semantic condition therefore needs examination. The small scope permits inspect-repair-verify within the reviewer's authority.
+
+The reviewer compares the trigger with the reliance described earlier in the pattern. In one constructed new edition the title changes while the used rule, applicability and limitations remain the same. The instruction reopens a decision whose stated ground is unchanged. In another edition the relied-on maximum inspection interval becomes shorter, affecting the chosen interval. Here reconsideration is needed. The difference identifies the defect: publication of an edition is being used in place of a material change to the decision's basis.
+
+The reviewer replaces the last instruction with:
+
+> When a source changes, compare the used rule, its applicability and its stated limitations. Reopen the relying decision where that comparison changes its grounds. Retain decisions whose grounds remain applicable. If the used rule or edition cannot be recovered, apply the existing stop-and-retrieve instruction before relying on it.
+
+Focused verification applies the two changes to the revised instruction. The title change now calls for preserving the recovery route while retaining the decision. The shortened interval sends the affected decision back for reconsideration. The source-identity and stop-and-retrieve contributions remain intact. The review can close this bounded refresh question with the repaired instruction and that comparison. E.21's evaluation of the deliberately defective quoted edition remains an evaluation of its original text.
+
+#### E.19:5.2 - Keep a pattern-quality conclusion within its authority
+
+A different candidate adds this claim to its otherwise developed review guidance: "An admitted deployment pattern authorizes the team to deploy the system." The requested review concerns this new authority claim; the preceding account already explains the Method and its conditions.
+
+PCP-BASE identifies a change from the quality of guidance to permission for a particular operation. PCP-NORM is selected because the new sentence asserts authority. The reviewer locates no project decision or authorization relation in the candidate's grounds: the supplied conclusion concerns the pattern edition. The claim therefore lacks the contribution that would permit the asserted deployment.
+
+Under independent findings, the reviewer leaves the candidate unchanged and returns the exact repair: state that the admitted pattern supplies guidance for the deployment work, and identify the project's governing authorization before claiming permission to perform that work. The author replaces the sentence with: "Use the admitted pattern as guidance for preparing deployment. The project's responsible authority decides whether this deployment may proceed under its governing conditions." Focused rereading preserves the useful Method guidance and separates the permission decision and its needed basis.
+
+This defect requires a different comparison from section 5.1. There the relation from source change to decision grounds selected the refresh; here the subject and authority of the returned conclusion select its permissible use. Both reviews choose their depth from an actual claim, carry out the selected comparison and complete a repair or findings return. Their reasoning is available for analogous questions under the applicable profiles; observation of transfer by other reviewers requires those actual uses.
 
 ### E.19:6 - Bias-Annotation
 

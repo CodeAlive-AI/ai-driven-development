@@ -3,14 +3,14 @@
 
 ## Contents
 
-- [A.6 - Signature Stack: Classify and Place Boundary Claims](01-a-6---signature-stack-classify-and-place-boundary-claims.md) (568 lines) — Type: Architectural (A)
+- [A.6 - Signature Stack: Classify and Place Boundary Claims](01-a-6---signature-stack-classify-and-place-boundary-claims.md) (587 lines) — Type: Architectural (A)
 - [A.6.RSIG - Recognition Signatures: Find the Defining Episteme for a Description](02-a-6-rsig---recognition-signatures-find-the-defining-episteme.md) (332 lines) — Type: Architectural pattern
-- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)](03-a-6-b-boundary-norm-square.md) (794 lines) — Type: Architectural (A)
+- [A.6.B — Boundary Norm Square (Laws / Admissibility / Deontics / Work‑Effects)](03-a-6-b-boundary-norm-square.md) (834 lines) — Type: Architectural (A)
 - [A.6.C — Contract Unpacking for Boundaries](04-a-6-c-contract-unpacking-for-boundaries.md) (357 lines) — Type: Architectural (A)
 - [A.6.REL - Relation Obtaining and Individuation: Distinguish Occurrences When Needed](05-a-6-rel---relation-obtaining-and-individuation-distinguish-o.md) (387 lines) — Type: Architectural (A)
-- [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme](06-a-6-0---u-signature---reusable-law-governed-declaration-epis.md) (442 lines) — Type: Architectural (A)
+- [A.6.0 - U.Signature - Reusable Law-Governed Declaration Episteme](06-a-6-0---u-signature---reusable-law-governed-declaration-epis.md) (444 lines) — Type: Architectural (A)
 - [A.6.1 - U.Mechanism - Reusable Law-Governed Operation Declaration](07-a-6-1---u-mechanism---reusable-law-governed-operation-declar.md) (508 lines) — Pattern kind. Ontic declaration pattern.
-- [A.6.2 - Effect-Free Episteme Morphing: Laws for Mathematical Relations Between Epistemes](08-a-6-2---effect-free-episteme-morphing-laws-for-mathematical.md) (424 lines) — Type: Definitional pattern
+- [A.6.2 - Effect-Free Episteme Morphing: Laws for Mathematical Relations Between Epistemes](08-a-6-2---effect-free-episteme-morphing-laws-for-mathematical.md) (428 lines) — Type: Definitional pattern
 - [A.6.3 - Episteme viewing - EntityOfConcern-preserving episteme construction](09-a-6-3---episteme-viewing---entityofconcern-preserving-episte.md) (234 lines) — Use this when. You need to derive a smaller, reorganized, or differently expressed body of claims from existing claims while keeping the same thing under discussion. In FPF terms, the source and...
 - [A.6.3.CSC - Controlled Semantic Coarsening: Shorten an Account for a Bounded Use](10-a-6-3-csc---controlled-semantic-coarsening-shorten-an-accoun.md) (355 lines) — Type: Architectural (A)
 - [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression](11-a-6-3-cr---conservativeretextualization-entityofconcern-pres.md) (341 lines) — Type: Specialization pattern

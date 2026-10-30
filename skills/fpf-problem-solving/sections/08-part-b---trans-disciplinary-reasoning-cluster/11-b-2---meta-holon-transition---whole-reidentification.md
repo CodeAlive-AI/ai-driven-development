@@ -18,7 +18,7 @@ Typical moments:
 - separately governed structure, functioning, method, and work facts support a capability envelope that the existing whole cannot explain; evidence separately supports the claim about those facts;
 - an architecture residual cannot be explained inside the existing whole.
 
-**First useful move.** Compare the observed gain or shift with explanations that preserve the existing whole. If better parts, corrected relations, improved measurement, Method or Work repair, richer phase coverage, or architecture-view repair is sufficient, stay with the existing whole and use that subject pattern. Proceed to a new-whole claim only when that comparison leaves whole reidentification necessary.
+**First useful move.** Compare the observed gain or shift with explanations that preserve the existing whole. If better parts, corrected relations, improved measurement, Method or Work repair, richer phase coverage, or architecture-view repair is sufficient, stay with the existing whole and use that subject pattern. Proceed to a new-whole claim only when that comparison leaves whole reidentification necessary. When the identity grounds themselves are missing or disputed, start with :4.0.
 
 **What goes wrong if missed.** Emergence becomes rhetoric, ordinary improvement is overclaimed as a new whole, or a genuinely new whole remains hidden under old part, evidence, assurance, architecture, or responsibility claims.
 
@@ -64,7 +64,7 @@ When whole identity and its grounds are unclear:
 
 Use B.2 as a world-side whole-reidentification pattern. Start with the actual wholes and the facts governed by their direct patterns; add records only when a receiving use needs them.
 
-Name what the receiving work needs from a whole: for example, a system bearing an operational capability or an episteme supporting a particular conclusion. Establish which prior whole, if any, is being compared. For a first constitution, obtain the construction facts under the applicable subject pattern and then apply A.1. For a first recognition of an existing whole, apply A.1 to the facts already obtaining; the recognition date does not establish when the whole came into existence. If the prior identity grounds are unavailable, leave that question unresolved. None of these situations supplies a prior holon for `existingWholeRef` by itself.
+Name what the receiving work needs from a whole: for example, a system bearing an operational capability or an episteme supporting a particular conclusion. Establish which prior whole, if any, is being compared. For a first constitution, obtain the construction facts under the applicable subject pattern and then apply A.1. For a first recognition of an existing whole, apply A.1 to the facts already obtaining; the recognition date does not establish when the whole came into existence. When the prior identity grounds are unavailable or disputed, use :4.0 to recover or compare their basis. Keep the identity question unresolved until that work supplies the deciding grounds. None of these situations supplies a prior holon for `existingWholeRef` by itself.
 
 With an established prior whole:
 
@@ -76,6 +76,20 @@ With an established prior whole:
 6. Materialize a trigger profile, optional explanation-result episteme, reidentification assertion, or record only when a named receiving use must inspect, cite, compare, or preserve that claim.
 
 The optional `MHTTriggerProfile`, `ExistingWholeExplanationResult`, and `HolonReidentificationRecord` are ordinary C.2.1 epistemes. Their content can designate exact wholes, facts, claims, and relation occurrences; the content fields are not world-side participants and supply no substitute for the preceding move.
+
+#### B.2:4.0 - Establish the identity grounds for the comparison
+
+Use this branch when the comparison needs an identity criterion that is unavailable or contested. A sufficient criterion already supplied by the admitted kind and subject practice can be used directly in :4.2. Here the useful result is a justified rule for the whole being compared, or the particular missing ground that prevents choosing one.
+
+**Recover the subject of the identity claim.** State what continuing whole the receiving question concerns and which construction makes it that whole. A commissioned installation, the resources currently performing an order and a supervisor's jurisdiction can overlap materially while answering different questions. Recover their constituents, organizing relations and relevant occasions before treating their descriptions as rival accounts of one individual. Use A.1 and the kind-specific pattern for the corresponding recognition question. When two accounts concern different subjects, keep each subject and its own continuity conditions.
+
+**Recover what warrants each proposed rule.** Find the domain account that makes the proposed conditions relevant to this whole: for example, the constitutive organization described by a design, an established lifecycle practice, or a theory of the object's persistence. Follow its reasons into what may change and what ends the individual. Distinguish a condition sufficient for continuity from one merely necessary for it. An identifier, observation or test can help recognize that condition; recover the connection that gives it identifying force. For an institutionally constituted object, the applicable constituting rule can itself supply identity conditions. For a physical organization, a proposed rule also has to fit the actual organization and changes. A convenient model boundary answers only the questions warranted by its correspondence to that subject.
+
+**Compare the consequential alternatives through B.5.TC.** Give each proposed account the same identity question and corresponding facts; recover its reasoning, then vary the condition on which the accounts disagree. Choose variations from the disputed claim. Replacement can expose whether the criterion preserves an organization or requires a fixed collection of parts. A temporary loss of functioning tests whether incapacity has been confused with the end of its bearer. A transfer of control tests whether the question follows the installation or a particular control relationship. Two independently constituted systems with the same output test whether a proposed condition distinguishes individuals or only capability. Division, merger or reconstruction matters when one of those events changes the receiving decision. For an episteme, compare its ClaimGraph, EntityOfConcern and effective ReferenceScheme under C.2.1 even when its carriers differ.
+
+Locate the first reason for disagreement, as B.5.TC:4.4 explains. It may be a different subject, an incompatible domain premise or a missing fact about one continuing whole. A counterexample can defeat a proposed criterion; the surviving proposal still needs the positive domain grounds that license its continuity claims. When a theory's application is unclear, B.5.TU supplies that recovery. Obtain a specialist result or further inquiry only for the consequential ground still missing, using C.11.DUA to judge its attainable contribution and burden.
+
+**Return the criterion to the identity comparison.** State the selected subject, the rule and its grounds, the changes it permits, and the event or condition that would end continuity. Keep a qualified or partial rule at the strength actually supported. Feed those results into :4.2 and use A.1.RI when observations still need to be associated under the rule. Complementary accounts keep their different subjects; unresolved competing criteria for the same subject retain their conditional answers and the fact or domain commitment needed to decide between them. If their difference cannot affect the receiving work, continue that work at its supported scope. A broader identity conclusion remains open.
 
 #### B.2:4.1 - MHTTriggerProfile
 
@@ -185,7 +199,7 @@ Keep these five distinctions explicit:
 
 - the existing whole and candidate new whole, their constituents, obtaining constructive relations, assemblies, characteristics, and identity rules are world-side objects and facts under their direct patterns;
 - a B.2 whole-reidentification assertion is a C.2.1 episteme about those objects;
-- evidence and assurance relations support or warrant the assertion's claim content but create neither whole and decide neither identity rule;
+- evidence and assurance relations support or warrant claims about construction and identity grounds, including the reasoned choice of an applicable criterion in :4.0;
 - use G.11 to determine whether the selected assertion or record edition is current for the receiving use;
 - a person or system performing the receiving work decides whether to rely, decline to rely, defer, or reopen.
 
@@ -256,6 +270,20 @@ A selected `BoundedModelUseStructure` organizes exact model-use relations. It is
 
 Several actual changes during assembly may each be exact `U.Transformation` occurrences. B.2 does not treat them as constituents of one composite transformation. If whole reidentification would require positive transformation composition, transformation parthood, or composite-transformation identity and no direct governor supplies contribution, compatibility, boundary, interfaces, and reidentification, retain the exact blocker and the independently identified changes. The missing composition facts do not show that any change is atomic.
 
+#### B.2:5.7 - Obtain a criterion before judging a production-cell change
+
+In this constructed case, a maintenance engineer must decide whether replacing a robot and transferring supervision continues the commissioned production cell or requires identifying another whole. Three proposed accounts track the listed components, the achieved output and the installed organization. The receiving question concerns the maintained installation; scheduling separately needs the resources currently assigned to an order.
+
+The available engineering material provides grounds for comparison. The design makes the robot exchangeable through specified mechanical, safety and control connections to the retained base, guards and fixtures. The maintenance procedure isolates the installation, replaces that module and tests those connections before return to service. The control arrangement permits supervision to be reassigned through the same interface. Separately commissioning another installation gives it its own construction and maintenance history. The practitioner must turn these commitments and the actual construction facts into a continuity rule for the installation.
+
+Apply B.5.TC to the three proposals. Requiring the same component individuals throughout conflicts with the design's exchangeable-module construction: it would terminate the cell's identity at the very substitution that the maintenance operation performs within the retained organization. Preserved output is also inadequate as an identity criterion. The isolated cell temporarily produces nothing, and a second independently assembled cell can produce the same output at the same time. A named supervisor identifies a control participant; the design permits that participant to change while retaining the installation and its control interface.
+
+The supported criterion therefore follows continuity of the installed assembly and its organizing connections, allowing the component substitutions those connections and the maintenance practice support. Its grounds are the design's organization and the lifecycle operations on that organization. Component serial numbers, production measurements and supervisor assignments supply different facts needed by that account; none of the three alone identifies the continuing installation.
+
+Now inspect the change. The base, guards and fixtures remain; the replacement robot fits the specified connections; the required connection checks pass; supervision transfers through the retained interface. Under the recovered criterion, the replacement is an admitted constituent change of the same cell. In :4.2, that supported maintenance explanation is sufficient, so keep the cell and update the changed component and responsibility claims under their subject patterns. The scheduling account can separately change its resource membership.
+
+Change the conditions. If the commissioned installation is dismantled and an independently assembled cell supplies the same output elsewhere, output recovery leaves the earlier installation's continuity unestablished. Recover the new assembly and its identity grounds under A.1 before claiming a new whole. If only output logs are available and the construction and maintenance grounds cannot be recovered, state the missing connection: whether the actual change preserves the installed organization under an applicable lifecycle rule. Retain the conditional identity alternatives. The logs can still support their bounded production claims.
+
 ### B.2:6 - Bias-Annotation
 
 | Bias risk | Failure | Mitigation |
@@ -323,13 +351,14 @@ Holonic work needs a way to recognize when the prior EntityOfConcern no longer c
 | How should agency bear on whole reidentification? | Michael Levin, [*Technological Approach to Mind Everywhere*](https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2022.768201/full) (2022). | **Adopt** non-binary, multi-characteristic, empirically tested agency and multi-scale competency as possible evidence about a system. **Reject** an agency label or threshold as a root kind or automatic new-whole result. | Section 4.5 keeps agency as one possible trigger whose direct characteristics must affect closure, objective, supervision, or identity. |
 | What can a multiscale mathematical signal contribute? | Akhtyrchenko, Katsnelson, and Ustyuzhanin, [*Directing Open-Ended Evolution in Artificial Life via Multi-Scale Path Divergence*](https://arxiv.org/abs/2606.17091) (v2, 3 August 2026), defines MSPD over realized trajectories as a multiscale analytical and optimization measure. | **Adopt** MSPD as a possible exact analytical input when its trajectory assumptions match the case. **Reject** a high MSPD, RG-like score, graph pattern, or benchmark jump as whole reidentification. | Sections 0, 4.7, and 8 route the mathematical result through C.29 and still require the B.2 identity comparison. |
 
-These sources answer different questions. Use each contribution within its stated scope; the whole-reidentification conclusion still requires the comparison of identity and construction facts.
+Constructional ontology makes the identity consequences of inputs and organizing relations inspectable. Its applied use depends on the intended ontology and domain commitments; those grounds determine which proposed construction answers the identity question. Section :4.0 connects their recovery with B.5.TC's comparison of competing accounts. The manufacturing studies contribute reasons for control organization and reconfiguration; a production or recovery result supports the corresponding behavioral claim. Identifying the continuing individual additionally needs its construction and continuity grounds. The case in :5.7 develops that connection under explicit engineering premises.
 
 ### B.2:12 - Relations
 - **Builds on:** `A.1` for world-side holon recognition, `B.1` for part-whole construction, `A.14` and `C.13` for relation and constructional grounding, and `E.24.UK` for one-time public-kind admission.
 - **Coordinates with:** `A.12` and `A.3.4` for acting-side and transformation, `A.3.1` and `A.15.1` for Method and Work, `A.15` when their alignment is the current question, `C.16` and `A.19` for characteristic space and threshold, `C.2.1` for optional claim and record epistemes, `A.10` and `B.3` for evidence and warrant, `G.11` for edition currentness, `C.29` for mathematical lenses, and `C.32.P2S` when architecturing pressure becomes whole reidentification rather than local structure repair.
 - **Specialized by:** `B.2.2` when the candidate new whole is a system, `B.2.3` when it is recognized under the admitted `U.Episteme` kind, and `B.2.4` when capability or functioning facts require whole reidentification.
 - **Can use neighboring evidence from:** `B.2.5` when a supervisor-subholon feedback relation is part of the B.2 case evidence or neighboring structure; that does not make B.2.5 a specialization for the candidate new holon's kind.
+- **Uses for disputed identity grounds:** `B.5.TC` for the comparison and `B.5.TU` when an application of a proposed account must first be constructed; :4.0 explains the identity-specific return.
 - **Uses:** `B.2.P` when emergence-family, MHT, MET, MFT, synergy, or metric-mirage wording hides which claim kind is current before B.2 is applied.
 
 ### B.2:End

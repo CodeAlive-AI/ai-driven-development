@@ -1,4 +1,4 @@
-## C.2.5 - `U.LanguageStateClosureDegree` — How Fixed Is the Current Candidate Space?
+## C.2.5 - Language-State Closure Degree — How Fixed Is the Current Candidate Space?
 
 > **Type:** Definitional (D)
 > **Status:** Stable
@@ -26,14 +26,24 @@ Closure is often hidden inside vague words such as "ready", "settled", or "open"
 | **Authority vs explicit retreat** | Let strong closure matter, but keep visible the moves that relax it. |
 
 ### C.2.5:4 - Solution
-`U.LanguageStateClosureDegree` is an ordinal characteristic over how fixed the current candidate set, framing, and admissible next moves are in a published position claim in the declared language-state chart over `U.CharacteristicSpace`.
+Language-state closure degree (`CD`) characterizes how firmly a specified candidate space is fixed in the position expressed by an episteme for a named use. The candidates may be answers, frames or possible next moves. Identify which choice is being assessed and which alternatives remain live. The ordinal Scale in :4.2 describes the progression from open exploration to stronger fixation.
 
-#### C.2.5:4.0a - Kind and characteristic boundary
+#### C.2.5:4.0a - Characteristic, reading and assessment
 
-`U.LanguageStateClosureDegree` names the Characteristic assessed here. The `CD0`–`CD5` readings belong to its ordinal Scale. A language-state chart binds that Characteristic and Scale in a basis slot under A.19; the Characteristic, a value on its Scale and the chart slot remain distinct. Claims about local route commitments, gates, or authority states remain separate from the closure-degree claim. When one matters to the current use, test it against its applicable rule and current case facts.
+Closure degree is the Characteristic; `CD0`–`CD5` name values on its ordinal Scale. A reading attributes a supported value, or a set of remaining possible values, to an identified episteme edition within a stated assessment scope and receiving use. A language-state chart binds the Characteristic and Scale in a slot under A.19. The Characteristic, its Scale values, a reading and the chart slot remain distinct under A.18/A.19.
+
+A closure assessment states the actual fixity and its grounds. Claims about a binding route commitment, gate or authority relation follow their own rules and case facts. A note or C.2.LS profile can express the closure assessment; its reusable form and the filled assessment remain distinct.
+
+#### C.2.5:4.5 - Recover the choice before assigning a level
+
+Name the question or choice whose candidate space matters. Recover the live alternatives, any selected route or frame, and the reason that limits further choice. State the scope of that fixation and what would justify reopening it. The different sources of narrowing in :16.2 determine what must be reconsidered when conditions change.
+
+Use that ordinary account directly when it supplies the receiving decision's condition. Assign a `CD` reading when the work needs comparison on this Scale, a chart position or a test against a declared threshold. Match the actual narrowing and reopening conditions to :4.2; retain an unresolved reading when the available grounds do not establish them. A level does not replace the surviving alternatives or the reason for their treatment.
+
+The Scale's order describes greater fixity, not a universal improvement. Inquiry may need several alternatives kept live; a particular operational use may need one route fixed under a separately justified rule. C.2.4 assesses how explicit this content is. Writing out the alternatives and the decision rule can improve articulation without changing closure. New evidence or a changed use can instead reopen one choice while other commitments remain fixed. Preserve the supported observations and surviving choices, then revise only the conclusions affected by the change, using A.16.2 when a publication move is needed.
 
 #### C.2.5:4.1 - Characteristic specification
-- **Kind:** CHR characteristic.
+- **Assessed subject:** the identified episteme edition, with the candidate space, assessment scope and receiving use stated.
 - **Scale discipline:** ordinal.
 - **What rises:** the candidate space or selected route becomes more fixed for the named use. Any binding force comes from its separately established rule.
 - **What does not follow automatically:** truth, trust, formality, or quality.
@@ -101,7 +111,9 @@ The facet aligns with iterative design, open-world reasoning, and exploratory se
 ### C.2.5:13 - Worked Examples and Retreat Cases
 
 #### C.2.5:13.1 - Explicit but still open
-A note may sit at `AE4` yet only `CD1` because rival explanatory frames are still live. Explicit publication does not imply settled closure.
+The constructed `Pump-alert-21` in C.2.LS:13.1 makes its diagnostic question and the contrasting implications of three alternatives explicit. It has `AE4` for that question and `CD1` because all three alternatives remain live. When an accepted reference-gauge reading excludes one alternative, the candidate field narrows to `CD2`; neither remaining route is selected. The question remains fully articulated at `AE4`.
+
+A practitioner choosing the next diagnostic question can use the stated alternatives and observations directly. A chart or comparison that needs both Scales can use the separate readings. The full case supplies the observations and discrimination rule; the two levels alone would not justify excluding a candidate.
 
 #### C.2.5:13.2 - Strong closure under policy guard
 An operator rule may be only moderate in `AE` but high in `CD` because policy already fixes the next step under the current horizon. This shows why closure is governance-facing, not merely stylistic.
@@ -186,7 +198,7 @@ An assurance reader should ask:
 When a receiving action relies on "final", "settled", or "decided", check the actual scope and source of fixation and any applicable guard. A final-sounding word alone does not establish those conditions.
 
 #### C.2.5:18.3 - Cross-facet reminder
-Low `CD` does not imply low articulation, low anchoring, or poor representation.
+Assess articulation under C.2.4 and representation under C.2.7 independently of closure. Source, evidence, access and action conditions retain their separate claims under C.2.6.
 
 #### C.2.5:18.4 - Split-closure review case
 A publication may be closed enough for immediate local work use or reliance use while remaining open about broader explanation, long-horizon consequences, or alternative classification. Allow the split when locality is explicit; reject prose that advertises whole-case finality when only one language-state segment is fixed.

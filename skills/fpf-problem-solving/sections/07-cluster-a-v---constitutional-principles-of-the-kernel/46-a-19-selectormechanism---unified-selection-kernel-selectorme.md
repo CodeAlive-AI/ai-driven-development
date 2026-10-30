@@ -109,7 +109,7 @@ Method semantics and SoTA algorithm families do not live inside the kernel: they
 
 * **EntityOfConcernRef:** the selection operation family declared by `Select` and `SelectEligibility` in this section.
 
-* **Effective `U.ReferenceScheme`:** the CHR suite reference scheme in which the A.19.CHR SlotKind lexicon, CN-Spec, CG-Spec, and any current TaskSignature tokens are interpreted.
+* **Effective reference scheme:** the CHR suite reference scheme in which the A.19.CHR SlotKind lexicon, CN-Spec, CG-Spec, and any current TaskSignature tokens are interpreted.
 
 * **Direct signature components:**
 
@@ -138,13 +138,15 @@ Each argument below is declared separately for Select and SelectEligibility, exc
 | Argument | claimScope | U.ClaimScope delimiting candidate universe and selection use | ByRef; 1 |
 | Argument | selectedSlices | Set of selected U.ContextSlice members of claimScope under A.2.6 | ByValue set of exact references; 1 set |
 | Argument | characteristicPredicate | A.19 CharacteristicSpacePredicate basis shared as required with the relevant CPM members | ByValue; 0..1, explicitly absent when none governs the use |
-| Argument | referenceScheme | Effective U.ReferenceScheme used to interpret the selection | ByRef; 1 |
+| Argument | referenceScheme | `EpistemeInterpretationScheme` (C.2.1:4.1.2), governing this selection | ByRef through C.2.1 SchemeDesignation; 1 |
 | Argument | referencePlane | CHR:ReferencePlane value qualifying selection | ByValue; 1 |
 | Argument | evaluationTime | Selection-evaluation point or interval in the declared time basis | ByValue; 1 |
 | Argument | selectorPolicy | Effective selection policy and resolved defaults, including exact candidate-level failure behavior when degrade is used | ByRef to the declared policy; 1, resolved through TaskSignature when it supplies that policy |
 | Select argument | eligibility | GuardDecision actually determined by SelectEligibility for these same proposal arguments, used to admit this selection | ByValue; 1, with its exact producing guard-result binding recoverable |
 | Select result | SelectionSlot | Set of candidate values selected under those criteria and policy | ByValue; 1 set on completed admitted selection, 0 on abstain |
 | SelectEligibility result | GuardDecision | Judgment determined by the eligibility predicates: pass, degrade or abstain | ByValue; 1 on completed evaluation |
+
+Resolve the scheme designation under C.2.1:4.2.6 to one exact rule collection, then check its C.2.1:4.1.2 range and the rules needed by these actual selection inputs. The reference token is not the bound scheme. An unresolved required interpretation cannot support a completed admitted selection; apply the guard and abstention rules below. Membership alone supplies neither successful selection nor a cross-scheme correspondence. The application and result bindings below remain independently required.
 
 For each argument row, its **bindingPredicate** holds when that application actually uses the resolved value for its stated purpose: candidates supply the selection universe, criteria/policy supply the choice rule, specifications/evidence requirements govern admission, and the basis, coverage and provenance supply the comparisons on which the choice relies. Scope, slices, predicate, scheme, plane and time bind only when they qualify that application. A nearby policy or copied comparison record does not supply those bindings.
 
@@ -292,7 +294,7 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 
 | ID | Requirement |
 | --- | --- |
-| **CC-A19SelectorMechanism-0** | **Mechanism declaration completeness:** one `U.Mechanism` episteme, its exact selection-operation-family `EntityOfConcernRef`, its effective `U.ReferenceScheme`, the operation-local argument/result declarations, `OperationAlgebra`, `LawSet`, `AdmissibilityConditions`, and Applicability are recoverable under A.6.1. |
+| **CC-A19SelectorMechanism-0** | **Mechanism declaration completeness:** one `U.Mechanism` episteme, its exact selection-operation-family `EntityOfConcernRef`, its effective reference scheme, the operation-local argument/result declarations, `OperationAlgebra`, `LawSet`, `AdmissibilityConditions`, and Applicability are recoverable under A.6.1. |
 | **CC‑A19SelectorMechanism‑1** | **Single governing pattern:** the canonical SelectorMechanism `U.Mechanism` declaration is governed by `A.19.SelectorMechanism:4.1`; other descriptions cite this section rather than restating the kernel law. |
 | **CC‑A19SelectorMechanism‑2** | **Set‑return default:** a conformant `Select` MUST be set‑returning by default; it MUST NOT silently collapse partial orders or incomparabilities to a single winner. |
 | **CC‑A19SelectorMechanism‑3** | **No hidden thresholds or constants:** a conformant SelectorMechanism publication MUST NOT smuggle thresholds, weights, dominance rules, tie‑breakers, or default `PortfolioMode` fields. Selection‑level commitments MUST be explicit in `CriteriaSlot` and explicit policy defaults when used (e.g., via `TaskSignatureSlot`). Acceptance thresholds remain governed by `AcceptanceClauses`, `TaskSignature`, or `GateProfile` records and MUST be applied only via `SelectEligibility`. |

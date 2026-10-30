@@ -315,6 +315,6 @@ When the same expression properties and conditions still answer the receiving qu
 
 #### C.2.3:19.3 - Boundary to language-state facets
 
-This pattern does not redefine `U.ArticulationExplicitness`, `U.LanguageStateClosureDegree`, `U.LanguageStateAnchoringMode` or `U.LanguageStateRepresentationFactorBundle`. C.2.LS and its subordinate patterns govern those facets. A formality assessment can refer to their results when relevant, but must not relabel them as steps of one rigor scale.
+C.2.4 governs articulation explicitness, C.2.5 governs closure degree, C.2.6 recovers source and use claims, and C.2.7 governs the representation-factor readings. C.2.LS brings selected results together in an optional profile. A formality assessment can refer to these results when relevant, but must not relabel them as steps of one rigor scale.
 
 ### C.2.3:End

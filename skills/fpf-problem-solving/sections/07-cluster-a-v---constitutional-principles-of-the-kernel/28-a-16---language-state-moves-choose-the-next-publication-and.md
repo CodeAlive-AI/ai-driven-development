@@ -64,7 +64,7 @@ This is the one canonical move table. Later examples apply it; they do not defin
 | `respecify` | the broad family remains plausible but its framing scaffold, facet reading, or route specification is wrong | a revised framing or route specification replaces the earlier one | replaced commitments, invariants that stay fixed, and any episteme-identity change |
 | `retire` | a cue, route-bearing publication, episteme, or branch is no longer current for the named use because its grounds failed, a successor took over, or a current-use decision ended | retirement or withdrawal is explicit | reason, exact retired object, preserved history, and supported successor information or an unresolved successor question when the receiving use needs it |
 
-The table names moves, not the resulting objects. `PreArticulationCuePack`, `RoutedCueSet`, and `U.AbductivePrompt` are publication forms defined elsewhere. A claim-bearing episteme remains `U.Episteme`; `E.24.PUB` separately defines a bounded publication occurrence.
+The table names moves, not the resulting objects. `PreArticulationCuePack` and `RoutedCueSet` are publication forms defined elsewhere. `U.AbductivePrompt` is the question account defined by `B.5.2.0`; its publication form is selected separately. A claim-bearing episteme remains `U.Episteme`; `E.24.PUB` separately defines a bounded publication occurrence.
 
 `projection` means route-bounded partialization. Its result must be a typed publication form; an MVPK face alone or an untyped placeholder is not enough. `respecify` changes framing, route specification, or a facet-profile reading. Precision repair remains with `A.6.P` or `C.16.Q`; recovery of an ambiguous action-oriented claim or question remains with `A.6.A`.
 
@@ -72,7 +72,7 @@ Do not use A.16 to decide measurement admissibility, Bridge substitution, endpoi
 
 #### A.16:4.2 - Guard discipline
 
-State the guard through named language-state facets and the route condition that matters. Use `AE` from `C.2.4`, `CD` from `C.2.5`, `LanguageStateAnchoringMode` from `C.2.6`, and `LanguageStateRepresentationFactorBundle` from `C.2.7`, separately or through one published facet profile. Add witnesses, scope, and `GammaTime` selectors when needed. “The idea matured” is not a guard.
+State the guard through named language-state facets and the route condition that matters. Use `AE` from `C.2.4`, `CD` from `C.2.5` and the representation-factor readings from `C.2.7`. State required source, evidence, access or action conditions separately under C.2.6. A guard can use both readings and direct relation claims, cited separately or through one published profile; a relation account is not a CharacteristicSpace slot. Add witnesses, scope, and `GammaTime` selectors when needed. “The idea matured” is not a guard.
 
 A summarized chain may omit repeated unchanged fields, but it must leave every move identity, endpoint-rule change, loss, and status change that affects interpretation reconstructible. A later higher-closure publication does not retroactively strengthen an earlier cue; later retreat does not erase the earlier publication.
 
@@ -229,7 +229,7 @@ Use this one checklist for authoring and review:
 
 ### A.16:11 - Relations
 
-- **Builds on:** `C.2.1` for episteme identity; `C.2.2a` for language-state positions; `C.2.LS` for facet profiles; `C.2.4` for articulation, `C.2.5` for closure, `C.2.6` for anchoring, and `C.2.7` for representation-factor readings; `A.18` for Scale semantics; and `A.19` for CharacteristicSpace and Coordinate semantics.
+- **Builds on:** `C.2.1` for episteme identity; `C.2.2a` for language-state positions; `C.2.LS` for facet profiles; `C.2.4` for articulation, `C.2.5` for closure, `C.2.6` for source and use conditions, and `C.2.7` for representation-factor readings; `A.18` for Scale semantics; and `A.19` for CharacteristicSpace and Coordinate semantics.
 - **Coordinates with:** `A.16.0` for accountable trajectories; `A.16.1` for early preservation; `A.16.2` for retreat and respecification; `B.4.1` for route publication; `B.5.2.0` for abductive prompting; `A.6.P`, `A.6.A`, `C.16.Q`, and `C.25` for endpoint-local questions; `E.11.PUR`, `A.15.5`, `A.15.1`, and `A.15.2` for non-A.16 move wording and project action; `E.24.PUB` for bounded publication availability; `E.18` for an independently selected TransformationFlowStructure and `E.18.2` for its mathematical description; and `E.10.MOVE` when source wording does not mean this local move.
 - **Constrained by:** A.2/A.2.1 and the applicable deontic or authority pattern for any actual relation change; A.13 followed by independent A.15.1 for precise performed Work, F.6 only afterward when precise assignment-bound attribution is current, A.15.PROD for production or inception, and the applicable domain predicate for result claims.
 
