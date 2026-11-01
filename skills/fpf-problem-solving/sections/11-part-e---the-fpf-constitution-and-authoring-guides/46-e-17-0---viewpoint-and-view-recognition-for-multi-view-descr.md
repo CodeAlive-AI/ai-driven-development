@@ -20,7 +20,7 @@
 
 `MultiViewDescribing` names this pattern's method. It is not a public U-kind, a family record, or an extra entity beside the epistemes and relations recovered below.
 
-**Builds on:** C.2.1 for episteme identity; C.13 for collections; A.22 for selected structures; A.6.5 for relation-signature participant SlotSpecs; A.6.3 for an optional source-to-view construction relation; E.10.D2 for Description epistemes and specification use; E.24.PUB for publication; C.29 for representations.
+**Builds on:** C.2.1 for episteme identity; C.13 for collections; A.22 for selected structures; A.6.5 for relation-signature participant SlotSpecs; A.6.3 for an optional source-to-view construction relation; C.2.1:6 for description and specification use, with E.10.D2 for naming; E.24.PUB for publication; A.6.3.RT/A.6.3.RT.OE for expression construction and C.29 for mathematical representation.
 
 **Used by:** E.17 publication, E.17.1 viewpoint bundles, E.17.2 TEVB, E.18 transformation-flow descriptions, and domain patterns that compare several views.
 
@@ -73,11 +73,11 @@ Recover candidate `E : U.Episteme` through C.2.1:
 
 - exact claim content;
 - exact EntityOfConcern `T`;
-- effective `U.ReferenceScheme`.
+- effective `ReferenceScheme`.
 
 These three discriminators identify E. A layout, file, query run, `viewpointRef`, selected project context, publication form, or carrier does not add another episteme identity discriminator.
 
-If the current thing is only a diagram element, graph node, form, or carrier, recover that object under C.29 or E.24.PUB first. Do not promote it to an episteme or view by appearance.
+Recover a diagram element or graph node under the chosen representation and its correspondence, adding C.29 when a mathematical lens is used. Recover a publication form or carrier under E.24.PUB. Do not promote it to an episteme or view by appearance.
 
 #### E.17.0:4.2 - Resolve one exact viewpoint episteme
 
@@ -229,7 +229,7 @@ In this branch, changed P claim content, exact S, or effective scheme identifies
 
 ##### E.17.0:4.6.3 - Keep explicit evaluation values optional
 
-The fixed `E17ViewpointSemanticsSlice@FPFEdition` selects the exact FPF and E.17.0 declaration editions, effective `U.ReferenceScheme`, and `Γ_time`. In that slice the admission predicates defined here permit exactly two optional C.3.2 local ValueKinds, each carried by its own C.2.1 KindSignature episteme:
+The fixed `E17ViewpointSemanticsSlice@FPFEdition` selects the exact FPF and E.17.0 declaration editions, effective `ReferenceScheme`, and `Γ_time`. In that slice the admission predicates defined here permit exactly two optional C.3.2 local ValueKinds, each carried by its own C.2.1 KindSignature episteme:
 
 | Local ValueKind | Exact extension | Admit an explicit value only when |
 |---|---|---|
@@ -337,7 +337,7 @@ The compact positive statement may stop at “this exact constituent depends on 
 |---|---|---|
 | `A_dependency` | a separately reviewable readable assertion is needed: one C.2.1 assertion episteme whose exact EntityOfConcern is `E_dependent` and whose claims state the direct predicate for exact `E_base` | authoring does not make r obtain; A is neither r, an occurrence description, nor a third participant |
 | `O_dependency` | an already recoverable r needs a separate description: one C.2.1 description episteme whose exact EntityOfConcern is r and whose claims may state endpoints and participant-determined identity | the description is not r, and endpoint mention without independently recoverable r is insufficient |
-| `D_dependencyUse` | one named A.22 structure-selection judgment needs a reviewable claim that exact r is admissible: one C.2.1 episteme identified through obtaining `EpistemeConstitutionRelation(G_dependencyUse,r,S_decl)`, where G is its exact `U.ClaimGraph`, r is its exact EntityOfConcern, and `S_decl` is its effective `U.ReferenceScheme` | D is not G, r, `S_decl`, an assertion, occurrence description, `U.Signature`, RelationSignature, selected structure, actor, or third dependency-relation participant; the participant triple does not constitute itself, and obtaining r does not entail use-specific admissibility |
+| `D_dependencyUse` | one named A.22 structure-selection judgment needs a reviewable claim that exact r is admissible: one C.2.1 episteme identified through obtaining `EpistemeConstitutionRelation(G_dependencyUse,r,S_decl)`, where G is its exact claim content G in the `NonemptyClaimContent` range, r is its exact EntityOfConcern, and `S_decl` is its effective `ReferenceScheme` | D is not G, r, `S_decl`, an assertion, occurrence description, `U.Signature`, RelationSignature, selected structure, actor, or third dependency-relation participant; the participant triple does not constitute itself, and obtaining r does not entail use-specific admissibility |
 | `J_dependency` | that named selection judgment needs inspectable inferential support | J is non-constitutive justification content, distinct from G; it carries the inferential account for the obtaining and selection-admissibility claims. Claim truth and r's occurrence identity remain governed by their direct rules |
 | empirical or formal evaluation package | a named receiving use needs a tested result or formal conclusion | its actors, work, methods, bases, results, evidence, production, and use relations remain separate from r and D |
 | later selection work and C.11 result | accountable selection or project choice is separately current | an exact system performs Work using the selected method; no generic acceptance relation follows |
@@ -380,7 +380,7 @@ If reusable target claims are needed, constitute them separately under C.2.1:
 - `C_dependencyDoesNotObtain` carries a distinct negative principal claim and is not a state of the positive episteme; and
 - `C_dependencyAdmissibleForSelection` concerns exact r under the named use frame and remains distinct from both obtaining claims.
 
-Co-representation in one ClaimGraph does not merge these epistemes. T carries its empirical conclusion locally; `E_dependencyProof` carries its formal conclusion locally. If a target-claim episteme separately represents one conclusion, use C.29 only when representation correspondence matters—never as truth, use, or r. Mint no duplicate evidence-bearing relation and no new A.10 ontology.
+Co-representation in one ClaimGraph does not merge these epistemes. T carries its empirical conclusion locally; `E_dependencyProof` carries its formal conclusion locally. If a target-claim episteme separately represents one conclusion, recover its correspondence to that conclusion; add C.29 when mathematical inference or transfer matters. That correspondence does not establish the conclusion's truth, its use, or r. Mint no duplicate evidence-bearing relation and no new A.10 ontology.
 
 Keep these three cases distinct:
 
@@ -392,7 +392,7 @@ For historical reliance on a claim or result, use `A.10` to recover its obtainin
 
 ##### E.17.0:4.7.4 - Schemes, scope, transformation, and change
 
-Recover `S_dep` from `E_dependent`, `S_base` from `E_base`, and `S_decl` from D. They are three uses of existing `U.ReferenceScheme`, outside r and its RelationSignature. G may designate exact endpoints, claim values, and declared names through those schemes; designation is neither occurrence obtaining, truth, nor historical participation.
+Recover `S_dep` from `E_dependent`, `S_base` from `E_base`, and `S_decl` from D. They are three uses of existing `ReferenceScheme`, outside r and its RelationSignature. G may designate exact endpoints, claim values, and declared names through those schemes; designation is neither occurrence obtaining, truth, nor historical participation.
 
 Keep claim-scope `widen`, `narrow`, and `refit` under A.2.6 when no local-sense translation is needed. Use `translate` only when scope membership must be expressed between exact local senses: require an obtaining F.9 Bridge between their exact `SchemeSenseCell` values, the separate affirmative claim for that translation's direction, rule, and tolerance, and the current A.10 or B.3 reliance branch. Scheme difference, same spelling, token reuse, or translation intent triggers no Bridge.
 
@@ -408,7 +408,7 @@ For one current describing use, always name the use. Add one singular `viewpoint
 
 When the viewpoint matters, that describing use selects P for itself only. The selection does not establish conformance or `U.View` membership, give E a new C.2.1 identity, reidentify E, or create a universal selection relation, legacy context tuple, bounded-context object, or generic model-use identity field. Another use may select another P while E remains unchanged. A use needing several viewpoints first identifies the C.13 collection and its exact membership; it does not overload `viewpointRef` with a collection value.
 
-The architecture therefore keeps exactly two positive dependent-kind rules—P as `U.Viewpoint` by its fixed self-contained content about an exact target kind or, conditionally, by fixed content about selected S; and E as `U.View` by obtaining conformance—and two direct relation kinds: viewpoint-convention dependence and E/P conformance. D remains optional for a named A.22 use; the two local explicit-result ValueKinds remain optional for named evaluation consumers. Families carry exact `U.ViewpointRef` values only when a named use needs viewpoint selection. C.2.1 identity, MethodDescription, A.6.3 construction, E.24.PUB publication, C.29 representation, and unrelated interfaces retain their separate identities and rules.
+The architecture therefore keeps exactly two positive dependent-kind rules—P as `U.Viewpoint` by its fixed self-contained content about an exact target kind or, conditionally, by fixed content about selected S; and E as `U.View` by obtaining conformance—and two direct relation kinds: viewpoint-convention dependence and E/P conformance. D remains optional for a named A.22 use; the two local explicit-result ValueKinds remain optional for named evaluation consumers. Families carry exact `U.ViewpointRef` values only when a named use needs viewpoint selection. C.2.1 identity, MethodDescription, A.6.3 construction, E.24.PUB publication, C.29 mathematical representation, and unrelated interfaces retain their separate identities and rules.
 
 #### E.17.0:4.9 - Add viewing construction only when its history matters
 
@@ -436,7 +436,7 @@ When cross-view correspondence matters:
 2. state the direct correspondence, consistency, realization, trace, or change-impact relation that is claimed;
 3. apply the concrete pattern that defines and tests that relation, including its obtaining and occurrence-identity rules;
 4. identify a C.2.1 assertion or description episteme only when the correspondence claim itself must be reviewed or used;
-5. use C.29 when a graph, matrix, or diagram represents the already recovered objects and relations.
+5. recover the correspondence by which a graph, matrix, or diagram represents those objects and relations; use A.6.3.RT/A.6.3.RT.OE for its construction and C.29 when a mathematical lens is required.
 
 Plain `correspondence model` may describe such a claim-bearing episteme after its exact EntityOfConcern and direct relations are recoverable. It is not a universal `U.CorrespondenceModel` kind, a substitute for the relations, or proof that they obtain. If no pattern defines and tests the needed direct relation, return the exact missing-relation blocker or use A.6.RCD; do not close the case with `linked`, `mapped`, or `consistent`.
 
@@ -446,15 +446,15 @@ Temporary inconsistency is represented by exact evaluation claims and, when curr
 
 E.24.PUB keeps three direct relation occurrences distinct:
 
-- `PublicationFormExpressionRelation(selectedEdition,publicationForm,boundedUseDeclaration)` states that the exact form expresses enough of that selected episteme edition for the declared use;
-- `PublicationFormBearingRelation(presentationCarrier,publicationForm)` states that the exact `U.PresentationCarrier` bears the recoverable form; and
-- `EpistemePublicationRelation(selectedEdition,audienceDeclaration,boundedUseDeclaration,publicationForm,presentationCarrier)` makes that edition available to entities admitted by the audience declaration for the bounded use, only while both supporting relations obtain and the audience can get the edition through the carrier.
+- `PublicationExpressionRelation(selectedEdition,expression,boundedUseDeclaration)` states that exact X conveys the required claims of E for U;
+- `PublicationExpressionBearingRelation(presentationCarrier,expression)` states that an actual state or realization of independently identified C yields that same X; and
+- `EpistemePublicationRelation(selectedEdition,audienceDeclaration,boundedUseDeclaration,expression,presentationCarrier)` makes E available through X and C to the declared audience for U while expression, bearing and audience access obtain.
 
-Expression has its exact three participants, bearing its exact two, and publication its exact five. Each occurrence retains its own maximal continuous obtaining or availability interval. Changing a participant identifies another occurrence; an availability gap followed by restoration creates a later publication occurrence. None of those changes reidentifies an otherwise unchanged C.2.1 episteme.
+Expression has its exact three participants, bearing its exact two, and publication its exact five. Each occurrence retains its own maximal continuous obtaining or availability interval. Changing a participant identifies another occurrence; an availability gap followed by restoration creates a later publication occurrence. None of those changes reidentifies an otherwise unchanged C.2.1 episteme. When reusable form F matters, establish X/F conformance. E.24.PUB retains form-mediated expression and bearing with the same-X witness, and broader availability over permitted expressions or carriers. A changed exact publication need not interrupt that broader availability.
 
-Rendering, upload, or carrier manipulation is `U.Work` only when an exact system performs it. C.29 separately defines representation and correspondence for mathematical, diagrammatic, or other representations of independently recovered objects and relations. A form, carrier, representation, rendering, or publication occurrence grants no `U.Viewpoint` or `U.View` membership and makes no world-side relation obtain.
+Rendering, upload, or carrier manipulation is `U.Work` only when an exact system performs it. A.6.3.RT and A.6.3.RT.OE govern construction and correspondence of expressions; C.29 supplies the additional mathematical-lens conditions. A form, carrier, representation, rendering, or publication occurrence grants no `U.Viewpoint` or `U.View` membership and makes no world-side relation obtain.
 
-Plain `published view` therefore means an already recognized view episteme participating as the selected edition in an exact publication occurrence. It is not another durable kind. One unchanged view may participate in several publications through different audiences, uses, forms, carriers, and availability intervals.
+Plain `published view` therefore means an already recognized view episteme participating as the selected edition in an exact publication occurrence. It is not another durable kind. One unchanged view may participate in several publications through different audiences, uses, expressions, carriers, and availability intervals.
 
 ### E.17.0:5 - Worked cases
 
@@ -476,11 +476,11 @@ Adding a reference to unchanged viewpoint episteme P to another E.17.1 local fam
 
 #### E.17.0:5.5 - Two publications of one view
 
-View episteme E conforms to P. A web page and a printed sheet use exact forms F1 and F2 borne by exact carriers K1 and K2. Separate expression and bearing relations obtain, and two five-participant publication occurrences make the same E edition available under their own audience, bounded-use, and maximal availability intervals. E remains one view episteme; none of the forms, carriers, supporting relations, or occurrences becomes E or P.
+View episteme E conforms to P. A web publication uses exact expression X1 following reusable form F1, borne by carrier K1; a printed publication uses X2, F2 and K2. Expression, bearing and selected form conformance obtain for each. Two exact publications make the same E available under their own audience, bounded-use and maximal availability intervals. E remains one view episteme. Broader availability of E can continue when an alternative expression or carrier replaces one of these exact publications.
 
 #### E.17.0:5.6 - Cross-view correspondence
 
-A functional view names transformation F and a structural view names module M. A project claim says M realizes F. The shared system EntityOfConcern and aligned diagram positions do not establish realization. Recover exact F and M, apply the direct realization-relation pattern, then identify an assertion episteme about that occurrence if review needs it. A traceability matrix may represent the assertion and occurrence under C.29; its cell is not the realization relation.
+A functional view names transformation F and a structural view names module M. A project claim says M realizes F. The shared system EntityOfConcern and aligned diagram positions do not establish realization. Recover exact F and M, apply the direct realization-relation pattern, then identify an assertion episteme about that occurrence if review needs it. A traceability matrix may represent the assertion and occurrence through an explicit correspondence; C.29 applies when that use requires a mathematical lens. Its cell is not the realization relation.
 
 #### E.17.0:5.7 - Procedural view is not a method description
 
@@ -505,8 +505,8 @@ ISO 42010 supplies vocabulary lineage. The remaining rows state FPF design ratio
 | Source or practice line | Adopted move | Rejected overread | Practical effect |
 |---|---|---|---|
 | Architecture-description viewpoint practice, including `ISO/IEC/IEEE 42010:2022`, used as established practice lineage rather than current architecting SoTA | Separate concern-bearing viewpoint, view, described entity, correspondence, and publication. | A standards vocabulary does not supply FPF identity, obtaining, or work methods. | Readers can recover familiar distinctions while using FPF direct relations and dependent-kind criteria. |
-| **Local design rationale, not external SoTA evidence:** current `C.2.1` identifies source and receiving epistemes; use `A.6.3` for any actual source-to-receiving construction, `A.15.1` for performed query or projection work, and `C.29` for its representation. | Treat a query or projection as one possible construction route between separately identified epistemes. | Query execution, a query definition, or a projected form does not grant `U.View` membership or prove claim preservation. | Directly authored and query-produced candidates use the same independent E/P conformance test; construction history is opened only when consumed. |
-| **Local design rationale, not external SoTA evidence:** current direct-relation patterns define and test correspondence predicates; `C.29` defines their representations, `F.9` defines an exact Bridge between distinct F.17 cells when its predicate obtains, evaluation patterns test consistency, and `A.15.1` identifies repair work. | Keep correspondence, consistency evaluation, and performed repair distinct. | A trace link, graph edge, correspondence episteme, or repair result does not make the subject relation obtain. | Inconsistency and repair can be stated and acted on without collapsing world-side relation, epistemic judgment, representation, and work. |
+| **Local design rationale, not external SoTA evidence:** current `C.2.1` identifies source and receiving epistemes; use `A.6.3` for any actual source-to-receiving construction, `A.15.1` for performed query or projection work, A.6.3.RT/A.6.3.RT.OE for expression construction and correspondence, and `C.29` for a mathematical lens. | Treat a query or projection as one possible construction route between separately identified epistemes. | Query execution, a query definition, or a projected form does not grant `U.View` membership or prove claim preservation. | Directly authored and query-produced candidates use the same independent E/P conformance test; construction history is opened only when consumed. |
+| **Local design rationale, not external SoTA evidence:** current direct-relation patterns define and test correspondence predicates; A.6.3.RT/A.6.3.RT.OE govern expression construction and correspondence, `C.29` adds mathematical-lens conditions, `F.9` defines an exact Bridge between distinct F.17 cells when its predicate obtains, evaluation patterns test consistency, and `A.15.1` identifies repair work. | Keep correspondence, consistency evaluation, and performed repair distinct. | A trace link, graph edge, correspondence episteme, or repair result does not make the subject relation obtain. | Inconsistency and repair can be stated and acted on without collapsing world-side relation, epistemic judgment, representation, and work. |
 | **Local design rationale, not external SoTA evidence:** current FPF constructive-relation and episteme architecture | Identify E and P independently; identify selected S and convention-dependency occurrences only in the action-changing structured branch; derive `U.View` membership from obtaining E/P conformance. | Do not materialize a universal family record, mandatory convention structure, context slot bundle, or correspondence-model kind. | Ordinary authoring can stop at self-contained P, while shared-convention maintenance remains replayable when it actually exists. |
 
 ### E.17.0:8 - Relations and contribution boundaries
@@ -521,7 +521,7 @@ ISO 42010 supplies vocabulary lineage. The remaining rows state FPF design ratio
 - **F.18** supplies the two relation-kind NameCards; naming metadata neither defines relation semantics nor grants admission. **F.9** applies only when an exact relation between distinct F.17 `SchemeSenseCell` values obtains.
 - **E.17.1** defines exact catalogue epistemes and local family declarations whose members are exact `U.ViewpointRef` values. **E.17.2** supplies the four-position project-local engineering viewpoint authoring template and, only after local materialization, its four exact bindings. A declaration, template position, or reference grants no viewpoint or view membership.
 - **E.24.UK** admits dependent `U.Viewpoint` and `U.View` once for public use; E.17.0 supplies their stable positive membership predicates.
-- **E.24.PUB** defines form expression, carrier bearing, publication availability, and recurrence. **C.29** defines representations and correspondence; neither makes the represented world-side relation obtain.
+- **E.24.PUB** defines exact expression and bearing, selected form conformance, form-mediated availability and publication recurrence. **A.6.3.RT** and **A.6.3.RT.OE** govern expression construction; **C.29** governs a mathematical lens. Their use retains the independent predicate for any represented subject relation.
 - **A.1, A.2, A.2.1, A.3.1, A.3.2, A.15.1, and F.6** distinguish performer Systems, local system-role kinds, exact assignments, Methods, MethodDescriptions, Work, and attribution. Responsibility remains under its direct predicate. Use **A.15.PROD** only for a separately needed local inception or completion claim.
 - **A.10, G.6, and B.3** retain provenance and assurance. Use **A.6.RCD** when no pattern defines a needed cross-view or use relation.
 
@@ -536,7 +536,7 @@ ISO 42010 supplies vocabulary lineage. The remaining rows state FPF design ratio
 7. The current describing use is named. A singular viewpoint reference selects P only when that choice changes reading, checking, or a permitted conclusion; omission otherwise changes neither episteme identity nor conformance. Multi-selection uses a C.13 collection with exact membership.
 8. Optional local result values, evaluation, evidence, occurrence designation, decision-use D, and J exist only for a named receiving work or decision need; unsupported evaluation is not a third or negative value.
 9. For every multi-view collection, selected structure, or cross-view relation, apply the pattern that defines its identity or obtaining test; a table, graph, matrix, or shared subject proves none.
-10. Form expression, carrier bearing, five-participant publication availability and recurrence, rendering work, and C.29 representation remain distinct from E, P, view membership, and every represented world-side relation.
+10. Exact expression, carrier bearing, optional form conformance, five-participant publication availability and recurrence, rendering work, and mathematical representation under C.29 remain distinct from E, P, view membership, and every represented world-side relation.
 11. Ordinary use stops at a readable direct judgment unless a named consumer needs more structure; authoring stops at the shortest progressive path that produces exact P and its reference.
 
 ### E.17.0:End

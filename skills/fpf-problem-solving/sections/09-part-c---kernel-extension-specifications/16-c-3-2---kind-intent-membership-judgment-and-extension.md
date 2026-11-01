@@ -61,7 +61,7 @@ Author a reusable `KindSignature` only when a named receiving use needs the crit
 - the candidate `ValueKind` or exact value interpretation admitted as input;
 - the membership condition in terms of directly governed candidate qualities, relations, constructive grounding, epistemes, registrations, certifications, publications, legal statuses, or other exact conditions;
 - the exact `U.ContextSlice` applicability in which the evaluation may be formed;
-- the effective `U.ReferenceScheme`;
+- the effective reference scheme: designation and interpretation rules for reading that declaration;
 - named assumptions, dependencies, standards, versions, units, and temporal policy;
 - the expression properties needed for its intended use under C.2.3; and
 - an optional `ExtentRule` for a named extension-consuming use.

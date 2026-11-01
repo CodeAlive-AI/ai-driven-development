@@ -16,7 +16,7 @@
 
 ### A.19.UNM:0 - At a glance — didactic, informative
 
-**Intent.** Provide a single, explicit normalization mechanism for **coordinate values** in a `U.CharacteristicSpace`, so that **comparability** and downstream characterization steps can be stated as “**normalize-then-compare**” (governance), rather than as hidden arithmetic inside scoring/selection.
+**Intent.** Provide a single, explicit normalization mechanism for **coordinate values** in a `DeclaredCharacteristicSpace`, so that **comparability** and downstream characterization steps can be stated as “**normalize-then-compare**” (governance), rather than as hidden arithmetic inside scoring/selection.
 
 **Where it sits.**
 - **CN-frame governance card:** `CN_Spec.normalization` + `CN_Spec.comparability.mode` route whether comparison is `coordinatewise` or `normalization-based`.
@@ -34,7 +34,7 @@
 **Minimum declaration set (didactic).**
 - In `CN_Spec.comparability`: set `mode`, and (when UNM participates in acceptance/comparison) set `minimal_evidence`.
 - In `CN_Spec.normalization`: declare `UNM_id?`, `methods`, `instances`, `method_descriptions`, `invariants`, and (if representatives are required) `fix`.
-- In Audit: cite the chosen `NormalizationMethodInstanceId`, `NormalizationMethodDescriptionRef.edition`, characteristic-space and CN-Spec editions, bearer, scope/window, reference or comparison basis, invariants, evidence, and intended comparison. Cite a Bridge, kind relation, or plane relation only when the result or receiving use actually relies on it.
+- In Audit: cite the chosen `NormalizationMethodInstanceId`, `NormalizationMethodDescriptionRef.edition`, characteristic space, its separately referenced description episteme and the CN-Spec edition, bearer, scope/window, reference or comparison basis, invariants, evidence, and intended comparison. Cite a Bridge, kind relation, or plane relation only when the result or receiving use actually relies on it.
 
 **Non-goals.**
 - Not indicator selection (that is **UINDM**).
@@ -98,7 +98,7 @@ Select the configured method and apply the declaration below:
 **NormalizationMethodDescription.** An editioned epistemic description of a normalization method (bounds, validity region/window, scope constraints, and evidence links governed by `C.16`). For an A.3.2 `U.MethodDescription` claim, its exact EntityOfConcern must be an independently admitted A.3.1 Method and its content must make a substantive claim about that Method as a way of doing.
 **NormalizationMethodDescriptionRef.** A ref to an editioned `NormalizationMethodDescription`, used in `CN_Spec.normalization.method_descriptions`.
 
-**NormalizationMethodInstanceId.** A stable token naming a normalization method configured for specific coordinates in a base `U.CharacteristicSpace`, with a named validity window and (when required) evidence pins. One such configuration can be used by several distinct `apply` occurrences; this identifier does not identify a calculation invocation. Used in `CN_Spec.normalization.instances`.
+**NormalizationMethodInstanceId.** A stable token naming a normalization method configured for specific coordinates in a base `DeclaredCharacteristicSpace`, with a named validity window and (when required) evidence pins. One such configuration can be used by several distinct `apply` occurrences; this identifier does not identify a calculation invocation. Used in `CN_Spec.normalization.instances`.
 
 **NormalizationMethodInstance.** That configured method, referenced by `NormalizationMethodInstanceId`. Its coordinate qualification and validity window are separate from the extent of a calculation that uses it.
 
@@ -120,7 +120,7 @@ Select the configured method and apply the declaration below:
 **UNM_id.** An optional identifier in `CN_Spec.normalization.UNM_id?` selecting the UNM declaration episteme used by this CN-frame. Resolve its edition; it is distinct from `NormalizationMethodInstanceId` (configured normalization method).
 **ValidityWindow.** A named validity window attached to a `NormalizationMethodInstanceId`, bounding where/when the instance is admissible (no implicit “latest”).
 
-**Relation and reuse boundary.** A normalized value remains tied to the exact normalization-method instance and edition, characteristic-space and CN-Spec editions, bearer, scope and window, reference or comparison basis, evidence, and intended comparison. Reusing it does not by itself establish a transfer relation. Cite an F.9 Bridge or a plane relation only when that relation actually obtains, and state the receiving use separately.
+**Relation and reuse boundary.** A normalized value remains tied to the exact normalization-method instance and edition, characteristic space, its separately referenced description episteme and the CN-Spec edition, bearer, scope and window, reference or comparison basis, evidence, and intended comparison. Reusing it does not by itself establish a transfer relation. Cite an F.9 Bridge or a plane relation only when that relation actually obtains, and state the receiving use separately.
 **Lexical discipline.** Name a UNM operation as normalization, re-parameterization or a coordinate mapping under its declared invariants. Use a specialized FPF `Map` designation only when its defining conditions apply; an ordinary mathematical mapping does not thereby assert that specialized kind or an F.9 Bridge.
 Legacy κ‑notation for normalization is retired; do not re‑introduce it.
 
@@ -152,22 +152,25 @@ A different realizer of the same declaration changes no suite member. A correcte
 
 **SubjectBlock**
 - `SubjectKind`: declared normalization methods, with their actual domains, output kinds and preserved/lost distinctions; functional methods may additionally supply `≡_UNM` over their admitted inputs
-- `RangedValueKind`: coordinate values (`CV`) for named measurable slots in the exact `U.CharacteristicSpace` and CN-Spec editions; UNM normalizes **values**, not characteristics
+- `RangedValueKind`: coordinate values (`CV`) for named measurable slots in the resolved `DeclaredCharacteristicSpace`, with `characteristicSpaceDescriptionRef` and the CN-Spec edition pinned; UNM normalizes **values**, not characteristics
 - `BearerAndUseBoundary`: the exact bearer, scope and window, reference or comparison basis, evidence, and intended comparison declared for those values
 - Input qualification: coordinate values admitted by the selected CN-Spec for this bearer and use, within the configured method's declared validity window. This is not an operation-application extent or an A.6.1 slice-membership `ExtentRule`.
 - `ResultKinds`:
   - `NormalizedCharacteristicValue (NCV)`
   - optional function-kernel equivalence (`≡_UNM`) and its set of classes; a congruence claim only for separately checked operations
   - optional quotient objects and/or `Normalization-fixed` representatives (via `NormalizationFixSpec`)
+
+**Space range and resolution.** Use the `DeclaredCharacteristicSpace` criterion and paired reference resolution in A.19:5.1.1.1. `CharacteristicSpaceRef` selects the space; `CN_Spec.characteristicSpaceDescriptionRef: U.EpistemeRef` pins the exact description supplying its basis. Both must resolve and agree on that space before normalization; otherwise the dependent use remains unresolved and eligibility abstains. Membership establishes the input's space structure; the selected operation must still resolve its actual positions, Scales and applicable use conditions. A changed basis requires a new space reference and position resolution, even if its label or document path is unchanged. Preserve the preceding space, description and results; reuse requires the correspondence and operation conditions of the receiving use.
+
 **Operation-local argument and result declarations**
 
-The names below are declaration-local designators. `ByValue` carries the stated value; each named Ref resolves to one exact value and edition under this declaration's effective reference scheme. Cardinality is per application. The first four arguments are shared declarations instantiated separately for `apply` and `UNM_Eligibility`.
+The names below are declaration-local designators. `ByValue` carries the stated value; each named Ref resolves to one exact value under this declaration's effective reference scheme. An episteme reference selects its exact edition; the space reference and its separate description-episteme reference follow the rule above. Cardinality is per application. The first four arguments are shared declarations instantiated separately for `apply` and `UNM_Eligibility`.
 
 | Operation and direction | Local designator | Meaning and ValueKind | Designation; cardinality |
 | --- | --- | --- | --- |
 | apply / UNM_Eligibility argument | NormalizationMethodInstanceSlot | Configured normalization method selected for the value; NormalizationMethodInstanceId | ByValue; 1 for apply, 0..1 for eligibility |
 | apply / UNM_Eligibility argument | CoordinateValueSlot | Coordinate value to transform or assess; CV in the named chart | ByValue; 1 for apply, 0..1 for eligibility |
-| apply / UNM_Eligibility / compose argument | CharacteristicSpaceSlot | Space that supplies the coordinate meanings and Scales; U.CharacteristicSpace | U.CharacteristicSpaceRef; 1, or 0..1 for eligibility |
+| apply / UNM_Eligibility / compose argument | CharacteristicSpaceSlot | Space that supplies the coordinate meanings and Scales; DeclaredCharacteristicSpace | CharacteristicSpaceRef; 1, or 0..1 for eligibility |
 | apply / UNM_Eligibility / compose argument | CNSpecSlot | CN-Spec used for the bearer, scope/slices, qualification window, basis, evidence requirements and intended comparison | CNSpecRef; 1, or 0..1 for eligibility |
 | apply result | NCVSlot | Transformed value returned under the selected method's domain and preservation/loss basis; NCV | ByValue; 1 on successful return, 0 without a defined/admitted result |
 | UNM_Eligibility result | GuardDecision | Eligibility judgment under the predicates below; pass, degrade or abstain | ByValue; 1 on completed evaluation |
@@ -223,7 +226,7 @@ For example, with fixed method `n(x)=x/10`, domain [0,100] and the same CN-Spec,
 - **UNM‑L1 (Declared method class gate).** A normalization method instance is admissible only if its method is declared in the allowed method class set: `{ratio:scale, interval:affine, ordinal:monotone, nominal:categorical, tabular:LUT(+uncertainty)}`.
 - **UNM‑L1a (Method semantics are governed by the method).** `NormalizationMethod` defines invariants, closure (composition / inverses where defined), and validity rules. UNM consumes these declarations; it does not invent extra admissibility.
 - **UNM-L2 (Directed result before narrower claims).** Return the defined transformed value with its domain and preserved/lost distinctions. Functional equality of outputs forms equivalence classes on that domain. A receiving operation descends only after compatibility and, for a partial operation, representative-independent availability hold. A query descends only when constant on the classes; otherwise retain/refine the input or return the missing distinction.
-- **UNM-L2a (Declared-basis locality).** Every transformed value, function-kernel equivalence and stronger operation/query claim retains the selected method, actual domain, characteristic-space and CN-Spec editions, bearer, scope/window and comparison basis. Reusing an unchanged equivalence for a new query does not make that query recoverable; assess its own constancy/compatibility and the receiving-use conditions.
+- **UNM-L2a (Declared-basis locality).** Every transformed value, function-kernel equivalence and stronger operation/query claim retains the selected method, actual domain, characteristic space, its separately referenced description episteme and the CN-Spec edition, bearer, scope/window and comparison basis. Reusing an unchanged equivalence for a new query does not make that query recoverable; assess its own constancy/compatibility and the receiving-use conditions.
 - **UNM‑L3 (Fail‑closed).** If admissibility/evidence is insufficient (or required inputs are missing/stale), UNM does not silently coerce; it yields `abstain` or `degrade` (tri‑state guard discipline) and may surface an explicit freshness/work request (see A.19.UNM:4.5).
   *Didactic reading:* `abstain` ⇒ no admitted NCV from this proposed application, so a comparison depending on that output cannot proceed on this basis; `degrade` ⇒ NCV may be produced but must be treated as policy‑gated and auditable (never “quietly good enough”).
 - **UNM‑L4 (No implicit indicatorization).** `NCV` does not imply “indicator”; indicator status is a separate policy step (UINDM).
@@ -238,7 +241,7 @@ Definition (UNM‑Eligibility):
 `UNM_Eligibility(NormalizationMethodInstanceSlot, CoordinateValueSlot, CharacteristicSpaceSlot, CNSpecSlot) → GuardDecision`
 where `GuardDecision ∈ {pass | degrade | abstain}` and follows this predicate semantics:
 - **pass** iff all of the following hold:
-  - (**CN-Spec binding**) the selected `NormalizationMethodInstanceId` is declared in `CN_Spec.normalization.instances` (or an equivalent declared surface), its method kind is included in `CN_Spec.normalization.methods`, and (if present) it satisfies `normalization.admissible_reparameterizations`; the exact characteristic-space and CN-Spec editions, bearer, claim scope and selected slices, qualification window, reference or comparison basis, and intended comparison are recoverable;
+  - (**CN-Spec binding**) the selected `NormalizationMethodInstanceId` is declared in `CN_Spec.normalization.instances` (or an equivalent declared surface), its method kind is included in `CN_Spec.normalization.methods`, and (if present) it satisfies `normalization.admissible_reparameterizations`; the exact characteristic space, its separately referenced description episteme and the CN-Spec edition, bearer, claim scope and selected slices, qualification window, reference or comparison basis, and intended comparison are recoverable;
   - (**Target coordinate binding**) the input `CV`’s `slot_id` belongs to the method instance’s declared bound coordinate set and its value lies in the selected transformation's actual input domain;
   - (**Scale‑regime compatibility**) the method kind is compatible with the coordinate’s regime (`ratio:scale | interval:affine | ordinal:monotone | nominal:categorical | tabular:LUT(+uncertainty)`) and preserves the declared `NormalizationInvariant[*]` (from `CN_Spec.normalization.invariants` and/or the method description);
   - (**Validity window**) the method instance’s validity window covers the active slice/time policy (no implicit “latest”);
@@ -253,7 +256,7 @@ UNM is applicable when:
 UNM is typically skipped when `comparability.mode = coordinatewise` (unless an explicit downstream step requires a declared quotient/fix anyway).
 
 **Relation and reuse boundary**
-- A normalized value remains local to the exact method instance and edition, characteristic-space and CN-Spec editions, bearer, scope and window, reference or comparison basis, evidence, and intended comparison recorded for it.
+- A normalized value remains local to the exact method instance and edition, characteristic space, its separately referenced description episteme and the CN-Spec edition, bearer, scope and window, reference or comparison basis, evidence, and intended comparison recorded for it.
 - If a receiving use depends on a relation between distinct source-local meanings, cite the exact F.9 Bridge, its direction, what it preserves or loses, and that receiving use. If reference planes differ and the comparison depends on their relation, cite the exact plane relation as a separate claim.
 - A changed bearer, scope, corpus, scale, method, or window does not by itself establish either relation. If the receiving use relies on a correspondence between bearer kinds, establish that kind relation separately; a changed bearer kind alone supplies no such relation. Any loss penalty remains on the R-lane and is used only when the corresponding relation claim supports it.
 **Γ_timePolicy**
@@ -265,7 +268,7 @@ UNM is typically skipped when `comparability.mode = coordinatewise` (unless an e
 - When a comparison actually relies on a relation between different planes, cite that exact relation, its direction and loss, and keep its use separate from the normalization result.
 **Audit**
 Audit records MUST include:
-- `CNSpecRef.edition` + `comparability.mode`, the exact `U.CharacteristicSpace` edition, and the evaluated bearer
+- `CNSpecRef.edition` + `comparability.mode`, the exact `CharacteristicSpaceRef`, the separate `characteristicSpaceDescriptionRef: U.EpistemeRef` pinned in CN-Spec, and the evaluated bearer
 - (when present) `CN_Spec.normalization.UNM_id` (the selected UNM declaration identity for this CN-Spec)
 - chosen `NormalizationMethodInstanceId`, its validity window, and any `NormalizationMethodDescriptionRef.edition`
 - declared `NormalizationInvariant[*]` and `NormalizationFixSpec` (if used)

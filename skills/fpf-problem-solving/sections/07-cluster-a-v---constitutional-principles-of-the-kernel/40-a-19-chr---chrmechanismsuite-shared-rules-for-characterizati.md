@@ -171,7 +171,7 @@ CHRMechanismSuiteDescription.mechanisms :=
 
 * **`bridge_only_crossings`:** a semantic correspondence between distinct recovered local senses requires the obtaining F.9 Bridge and the bounded-use/reliance basis consumed by this use.
 * **`two_bridge_rule_for_described_entity_change`:** a C.3.3 kind correspondence retains its own endpoints, obtaining and receiving-use conditions. If an F.9 correspondence is also used, establish it independently. EntityOfConcern change alone supplies neither relation. Plane-only claims stay under their direct governor.
-* **`transport_declarative_only`:** the suite does not embed CL/Φ/Ψ/Φ_plane tables and does not introduce any additional graph edge kind beyond E.18 `U.Transfer`; it requires only refs/pins/anchors whose realization is mediated by E.18 / gate surfaces.
+* **`transport_declarative_only`:** the suite does not embed CL/Φ/Ψ/Φ_plane conversion or penalty tables. It states the refs, pins and anchors consumed by its obligation; applicable rules and E.18 crossings or gate decisions remain with their owners. Distinct directly governed relation kinds may participate in the selected structure. A graph label or suite obligation supplies neither an obtaining relation nor a hidden conversion, penalty or gate decision.
 * **`penalties_route_to_r_eff_only`:** CL/Φ/Ψ/Φ_plane penalties route to `R/R_eff` only; `F/G` are invariant under penalty routing.
 * **`crossing_visibility_required`:** an actual E.18 crossing in an independently selected TransformationFlowStructure retains its required CrossingBundle; an A.21 work-entry gate retains its applicable gate anchors. A changed edition pin triggers the recheck required by its receiving use, but does not itself create a crossing, Bridge or gate.
 

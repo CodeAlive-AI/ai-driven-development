@@ -92,11 +92,13 @@ Method semantics (“how to score”) remain out of suite core: they belong in S
 
 * **SubjectBlock:**
 
-  * **SubjectKind:** `U.Measure`, supplied by the measures in InputProfileSlot; each measure retains its bearer, Characteristic and Scale.
-  * **RangedValueKind:** `U.Measure`; Score transforms the admitted profile under the selected method, and ScoreEligibility assesses that proposed transformation.
+  * **SubjectKind:** `ReadingContent`, supplied by the reading contents in InputProfileSlot; each retains its bearer, Characteristic and Scale.
+  * **RangedValueKind:** `ReadingContent`; Score transforms the admitted profile under the selected method, and ScoreEligibility assesses that proposed transformation.
   * **SliceBasis:** the declared `U.ClaimScope` and selected `U.ContextSlice` members, together with the qualification window and intended result use.
   * **Input qualification:** scoring ranges over the admitted indicator or NCV profile for the exact evaluated bearer, criteria, claim scope and selected slices, qualification window, comparison or reference basis, and intended result use; `CN-Spec.comparability` routes comparison and `CG-Spec.SCP` gates admissibility.
   * Results are declared per operation: the score-measure profile and the eligibility judgment.
+
+**Reading range.** `ReadingContent` and profile interpretation come from C.16:5.5.1. Resolve each component's subject, Characteristic, Scale, attribution and conditions before using its values. A content member can be conditional or insufficiently supported; this operation's eligibility and evidence rules still decide whether it may be used. Profiles retain the positions or contributor identities, ordering and multiplicity required by their declared basis. An independently materialized result episteme is distinct from the calculated Coordinate and the bound reading content.
 
 **Operation-local argument and result declarations**
 
@@ -104,12 +106,12 @@ Each input meaning is declared separately for Score and ScoreEligibility. ByRef 
 
 | Direction | Local designator | Meaning and ValueKind | Designation; cardinality |
 | --- | --- | --- | --- |
-| Argument | InputProfileSlot | Admitted set of U.Measure values to score; each UINDM-derived value retains its exact basis position, Characteristic and Scale | ByValue; 1 profile |
+| Argument | InputProfileSlot | Admitted profile of ReadingContent components to score; each UINDM-derived value retains its exact basis position, Characteristic and Scale | ByValue; 1 profile |
 | Argument | CNSpecSlot | CN-Spec used for the bearer, basis, scope/slices, qualification window, intended use and comparability routing | CNSpecRef; 1 |
 | Argument | CGSpecSlot | CG-Spec supplying the SCP restrictions and default evidence requirement for this scoring use | CGSpecRef; 1 |
 | Argument | ScoringMethodDescriptionSlot | ScoringMethodDescription supplying the selected Coordinate→Score rule, domain, codomain, Scale, polarity and use-required properties | ScoringMethodDescriptionRef; 1 |
 | Argument | MinimalEvidenceSlot | MinimalEvidence override used in place of CGSpecSlot.MinimalEvidence | MinimalEvidenceRef; 0..1 |
-| Score result | ScoreProfileSlot | Set of U.Measure values actually returned by the declared scoring rule | ByValue; 1 profile on completed admitted scoring, 0 on abstain or termination without a result |
+| Score result | ScoreProfileSlot | Profile of ReadingContent components actually returned by the declared scoring rule | ByValue; 1 profile on completed admitted scoring, 0 on abstain or termination without a result |
 | ScoreEligibility result | GuardDecision | Eligibility judgment under the predicates below: pass, degrade or abstain | ByValue; 1 on completed evaluation |
 
 An argument's **bindingPredicate** holds when this Score or ScoreEligibility application actually uses the resolved value for that row's purpose: the profile supplies the operands, the method supplies the transformation, CN-Spec delimits its use and routing, and CG-Spec plus any override supplies its admission and evidence conditions. Mere inclusion in an Audit record is insufficient. The ScoreProfileSlot **bindingPredicate** holds when that Score application returns the profile obtained by applying the bound method lawfully to those operands, with the declared scalar/vector cardinality. The guard's result binding holds when that ScoreEligibility application returns its evaluated judgment. Each binding follows A.6.1 identity and continuous extent within the application; the result begins to bind at return.
@@ -170,7 +172,7 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 
 * **Selected-input basis.** Consume the exact UINDM S and space declaration when an indicator profile is used. For CS7 in A.19.UINDM §5.4, the Celsius policy selects i1 and the declared Celsius scoring rule reads 20, giving 0.5. It cannot read the kelvin position's 293.15 under that rule. After a basis change, resolve the selected positions and the scoring method's input requirements again; keep any projection in the original basis order.
 
-* **A score profile retains its component meanings.** `ScoreProfileSlot` is a `U.Set (of U.Measure)`, with each component's score Characteristic and Scale recoverable. An ordered vector rendering retains the correspondence between positions and those components. Several score dimensions are different from uncertainty expressed by an interval or set for one component. A scalar score, or an interval-valued result, requires its own declared meaning and admissible operations.
+* **A score profile retains its component meanings.** `ScoreProfileSlot` is a declared profile of `ReadingContent` components, with each component's score Characteristic and Scale recoverable. An ordered vector rendering retains the correspondence between positions and those components. Several score dimensions are different from uncertainty expressed by an interval or set for one component. A scalar score, or an interval-valued result, requires its own declared meaning and admissible operations.
 
 * **USCM does not order; it scores.** USCM produces score measures. Any ordering, dominance, or set‑valued comparison is performed by CPM and SelectorMechanism (and any optional aggregation is made explicit via ULSAM). Treating the score as “the decision” is a category error in CHR terms.
 

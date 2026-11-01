@@ -47,7 +47,7 @@ The cluster’s outcome is a **LocalSenseClaim**, with a Tech and Plain label pa
 
 ### F.3:5 - Minimal vocabulary (this pattern only)
 
-* **Interpretation basis** — the exact source and edition and the effective `U.ReferenceScheme` used to understand the selected passages.
+* **Interpretation basis** — the exact source and edition and the effective reference scheme used to understand the selected passages.
 * **Unit** — a source-local lexical note from F.2.
 * **LocalSenseClaim** — the one-sentence claim that a cluster of source uses supports under that basis.
 * **Supporting expressions** — the F.2 expressions consolidated by the claim.

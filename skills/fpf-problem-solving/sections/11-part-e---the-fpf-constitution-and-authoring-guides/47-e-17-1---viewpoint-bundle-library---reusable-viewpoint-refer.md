@@ -83,9 +83,11 @@ This lets `MultiViewDescribing` import a finite viewpoint family from a stable c
 
 Open the complete constitution below for the affected catalogue edition when authoring or admitting a new L, when L or edition identity or reference resolution is disputed, or when a named later use needs the catalogue's ClaimGraph, subject, or scheme as inspectable premises. Reuse an existing check while that edition, its effective scheme, and the relied-on premises stay unchanged:
 
-- `G_L` is the exact `U.ClaimGraph` that states the catalogue scope, the local family declarations, the referenced viewpoint editions, their target-kind compatibility conditions, and the edition-change rule;
+- `G_L : NonemptyClaimContent` is the catalogue's complete interpreted claim content (`ClaimGraph`), stating its scope, local family declarations, referenced viewpoint editions, target-kind compatibility conditions, and edition-change rule;
 - `K_L` is the exact catalogue subject: the independently identified finite C.13 collection of already admitted viewpoint episteme editions whose recurring reuse groupings L describes. Its collection identity, exact members, obtaining membership relations, and identity rule are established before L; neither the catalogue nor a declaration creates them; and
-- `R_L : U.ReferenceScheme` is the exact effective scheme under which the catalogue's ordinary library, edition, and family designators resolve; each `U.ViewpointRef` resolves to exact P; target-kind criteria and compatibility claims are interpreted; and reference, omission, provenance, and edition-change rules are read.
+- `R_L : EpistemeInterpretationScheme` is the exact effective rule collection under which the catalogue's ordinary library, edition, and family designators resolve; each `U.ViewpointRef` resolves to exact P; target-kind criteria and compatibility claims are interpreted; and reference, omission, provenance, and edition-change rules are read. C.2.1:4.1.2 supplies both ranges; the catalogue requires the full content and rule coverage stated here.
+
+An eligible replacement for `R_L` must also resolve the actual catalogue designators and interpret its criteria; range membership alone supplies none of those results. A missing rule leaves the affected retrieval or compatibility judgement unresolved. Each referenced P retains its own effective scheme and E.17.0 membership; resolving its reference under `R_L` does not transfer the catalogue's scheme to P.
 
 `EpistemeConstitutionRelation(G_L, K_L, R_L)` must obtain. The participant-determined triple `<G_L, K_L, R_L>` identifies exact catalogue episteme L. If a proposed catalogue has only a file, label, list, or card but no truthful exact `K_L` or effective `R_L`, stop: L has not yet been constituted.
 
@@ -153,11 +155,14 @@ Construction, identity viewing, transformation, declaration membership, selectio
 
 A published library is the same selected C.2.1 episteme edition participating in exact E.24.PUB relations:
 
-- `PublicationFormExpressionRelation` relates that selected edition, one exact publication form, and one exact bounded-use declaration;
-- `PublicationFormBearingRelation` relates one exact `U.PresentationCarrier` and that form; and
-- `EpistemePublicationRelation` relates the selected edition, audience declaration, bounded-use declaration, form, and carrier for one maximal continuous availability interval.
+- `PublicationExpressionRelation` relates that selected edition, one independently identified expression, and one exact bounded-use declaration;
+- `PublicationExpressionBearingRelation` relates one independently identified physical or digital carrier to that expression;
+- `PublicationFormConformanceRelation` relates the expression to any selected reusable publication form whose rules it satisfies; and
+- `EpistemePublicationRelation` relates the selected edition, audience declaration, bounded-use declaration, expression, and carrier for one maximal continuous availability interval.
 
-Changing a participant or restoring availability after a gap yields another publication occurrence under E.24.PUB; it does not reidentify unchanged L or any member viewpoint. Rendering, printing, or uploading is separate system-performed `U.Work`. C.29 applies when a diagram or catalogue rendering represents independently recovered declarations or viewpoint epistemes. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
+When form-mediated expression and bearing are claimed, retain E.24.PUB's corresponding relations with the same expression as witness. A change of exact publication need not interrupt broader availability of the library through its permitted expressions and carriers.
+
+Changing a participant or restoring availability after a gap yields another publication occurrence under E.24.PUB; it does not reidentify unchanged L or any member viewpoint. Rendering, printing, or uploading is separate system-performed `U.Work`. For a diagram or catalogue rendering, recover the correspondence between its elements and independently identified declarations or viewpoint epistemes. Use A.6.3.RT/A.6.3.RT.OE when constructing an expression or changing its representation scheme. Add C.29 when choosing or using a mathematical representation raises an inference or transfer question. Publication, representation, form, carrier, or rendering grants no viewpoint or view membership and makes no represented world-side relation obtain.
 
 ### E.17.1:5 - Archetypal Grounding
 
@@ -182,7 +187,7 @@ After a recurring family-level use is established, the pattern biases FPF toward
 - `CC-VBL-5` A family designator is not used as an id kind, publication-face/form kind, carrier kind, viewpoint reference, or substitute for an exact member.
 - `CC-VBL-6` Changes to member references, targets, family meaning, or compatibility constraints create another catalogue edition carrying the revised or new family declaration; publication or annex-only change does not reidentify unchanged P.
 - `CC-VBL-7` Multi-bundle imports preserve exact catalogue provenance and collisions only. Same-scheme comparison names its exact predicate and participants and applies the pattern that defines that predicate. Cross-context comparison resolves exact F.17 cells, obtaining F.9 Bridge, separate `<u,d,r,t>` claim, and required A.10 or B.3 reliance; otherwise it stops at lexical or structural contrast.
-- `CC-VBL-8` E.24.PUB expression, bearing, publication, recurrence, rendering work, and C.29 representation remain distinct, grant no viewpoint or view membership, and make no represented world-side relation obtain.
+- `CC-VBL-8` E.24.PUB expression, bearing, publication, recurrence, rendering work, and mathematical representation under C.29 remain distinct, grant no viewpoint or view membership, and make no represented world-side relation obtain.
 - `CC-VBL-9` A bundle intended for non-expert reuse should provide references that resolve under their applicable schemes to exact archetypal-grounding examples or sections for its member viewpoints; grounding aids recognition but grants no membership.
 
 ### E.17.1:8 - Common Anti-Patterns and How to Avoid Them
@@ -217,10 +222,10 @@ Reopen the local architecture if an exact current source or exercised project ca
 
 ### E.17.1:12 - Relations
 
-- **Builds on:** `C.2.1` for library and member-episteme identity; `E.17.0` for exact P membership, reference resolution, singular use selection, and sole E/P view-membership rule; `C.13` for explicit imported collections; `A.22` for any separately selected organization; `A.6.2-A.6.4` for optional episteme-construction histories; `A.7`, `E.7`, and `E.10` for carrier, authoring, and naming discipline; `E.24.PUB` for publication; and `C.29` for representation.
+- **Builds on:** `C.2.1` for library and member-episteme identity; `E.17.0` for exact P membership, reference resolution, singular use selection, and sole E/P view-membership rule; `C.13` for explicit imported collections; `A.22` for any separately selected organization; `A.6.2-A.6.4` for optional episteme-construction histories; `A.7`, `E.7`, and `E.10` for carrier, authoring, and naming discipline; `E.24.PUB` for publication; `A.6.3.RT`/`A.6.3.RT.OE` for expression construction and representation-scheme transition; and `C.29` for mathematical-lens use.
 - **Constrains:** E.17.0 consumers whenever they import a reusable family; an import narrows eligible references but neither selects one P for a use nor proves conformance.
 - **Coordinates with:** `C.2.2a`, `A.16.0`, `E.17`, `E.17.2`, `E.18:5.12`, `F.9`, `F.9.1`, and domain-specific families requiring stable reuse.
-- **Protects:** exact separation among catalogue triple `<G_L, K_L, R_L>`, catalogue episteme L, local declaration claim block, ordinary family designator, `U.ViewpointRef`, P designator, P, candidate/View E, any A.22 structure, form, carrier, publication occurrence, and C.29 representation.
+- **Protects:** exact separation among catalogue triple `<G_L, K_L, R_L>`, catalogue episteme L, local declaration claim block, ordinary family designator, `U.ViewpointRef`, P designator, P, candidate/View E, any A.22 structure, form, carrier, publication occurrence, and their representations.
 
 #### E.17.1:12.1 - Resolvable annex references for thin bundles
 

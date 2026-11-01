@@ -4,22 +4,22 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**One-line summary.** `ExplanationFaithfulnessProfile` classifies the bounded explanation use of a publication form or representation of one exact claim-bearing episteme. It does not decide which episteme the text expresses and cannot turn changed claims into another form of the source.
+**One-line summary.** `ExplanationFaithfulnessProfile` classifies the bounded explanation use of a publication expression or representation of one exact claim-bearing episteme. It does not decide which episteme the text expresses and cannot turn changed claims into another expression of the source.
 
-**Explanation-facing text in plain terms.** One published text on an existing MVPK face. It may express only the part of an exact source edition needed for a declared explanation use. Identify that edition by its ClaimGraph, exact EntityOfConcern and effective ReferenceScheme; then test whether the form expresses enough for that use. Omitting other source content neither claims whole-source coverage nor by itself constitutes another episteme. A changed assertion, concern or effective scheme needs its own identity decision.
+**Explanation-facing text in plain terms.** One particular text expression constructed under the rules of an existing MVPK face. It may express only the part of an exact source edition needed for a declared explanation use. Identify that edition by its ClaimGraph, exact EntityOfConcern and effective ReferenceScheme; then test whether this expression recovers enough of that edition for the use under E.24.PUB. Omitting other source content neither claims whole-source coverage nor by itself constitutes another episteme. A changed assertion, concern or effective scheme needs its own identity decision.
 
 **Ontic first screen.** Before assigning an explanation class, identify the source and the intended reader use.
 
 1. Recover the exact source edition's ClaimGraph, EntityOfConcern and effective ReferenceScheme under C.2.1. Equal displayed words alone do not establish this identity.
 2. Test whether the text expresses enough of that edition for the declared use under E.24.PUB §4.2. Preserve every qualification that changes the answer for that use, keep the source return, and disclose use-relevant omissions. A partial expression may qualify; a missing required condition leaves source sufficiency unresolved or fails it, even when each displayed sentence is individually true. Omission alone does not create a target episteme. Apply A.6.3.RT as well when a representation-change claim is current.
-3. If the text asserts changed content or concerns another entity or effective scheme, identify the exact target under C.2.1 and the source-to-target relation actually claimed under A.6.3.CR, A.6.3.CSC, A.6.4 or another applicable pattern. Establish that relation independently before EFP classifies the target form; the class creates neither participant nor relation.
+3. If the text asserts changed content or concerns another entity or effective scheme, identify the exact target under C.2.1 and the source-to-target relation actually claimed under A.6.3.CR, A.6.3.CSC, A.6.4 or another applicable pattern. Establish that relation independently before EFP classifies the target expression; the class creates neither participant nor relation.
 4. A new causal or counterfactual proposition belongs to a separate hypothesis episteme under B.5.2, or stays outside EFP. Blocking reliance on it does not make it a rendering of the source.
 
 **Explanation-use relation in plain terms.** State which exact episteme the published text expresses, how that episteme relates to the named source when it is a different target, which explanation-use class applies, and what downstream claim or effect still stays outside the profile. Name the exact E.24.PUB publication occurrence, pins, traces, or provenance only when they are material to the present use.
 
-**Use this when.** Use EFP when a real source-pinned, reconstructive, didactic, or speculative ambiguity changes how a published explanation form may be reviewed or used—especially for generated, retrieval-facing, model-facing, derivative, or interactive explanation. Authorship alone does not trigger the profile.
+**Use this when.** Use EFP when a real source-pinned, reconstructive, didactic, or speculative ambiguity changes how a published explanation expression may be reviewed or used—especially for generated, retrieval-facing, model-facing, derivative, or interactive explanation. Authorship alone does not trigger the profile.
 
-**What goes wrong if missed.** A publication form, a rewritten episteme, and a new hypothesis are all called a rendering of one source. Helpful wording then hides a changed claim-bearing object or an unsupported source relation.
+**What goes wrong if missed.** A publication expression, a rewritten episteme, and a new hypothesis are all called a rendering of one source. Helpful wording then hides a changed claim-bearing object or an unsupported source relation.
 
 **What this buys.** One honest identity branch followed by one bounded explanation-use class: the reader can tell which episteme is being published, how a changed target was obtained, and which stronger use remains blocked.
 
@@ -43,17 +43,17 @@
 
 **Common wrong escalations and boundary transfers.** Do not use this profile to hide new claims, bridge-comparison load, action-selection pressure, or gate-bearing guidance inside helpful prose. If the rendering is really a bounded comparison, apply `E.17.ID.CR`; if it is only same-entity rewriting or representation shift, apply `A.6.3.CR` or `A.6.3.RT`; if a deliberately coarsened rendering's narrower bounded claim or effect, blocked downstream use, and source-bearing reopen are the actual problem, apply `A.6.3.CSC`; if it is already making world, work or reliance, assurance, or gate-bearing claims, leave `E.17.EFP` for the more exact downstream FPF pattern or project-side record.
 
-**Generated-explanation repaired case.** Identify the exact source by its claims, concern and effective scheme, then test the generated text for the declared use. A sufficient partial expression may remain a form of that source; missing use-relevant content requires source return or repair, not automatic target creation. Changed assertions require an exact target and an independently obtaining source-to-target relation. An identity, sufficiency or relation gap leaves classification for that use open. After identity and bounded sufficiency are settled, recover the source basis for each operative claim used beyond reader help. Use `A.10` when its evidence/provenance account is needed for the named reliance; an assurance, gate, work, permission, approval, or release claim also needs its applicable pattern and exact project record when required. Missing grounds keep the dependent use at reader help or source-finding.
+**Generated-explanation repaired case.** Identify the exact source by its claims, concern and effective scheme, then test the generated text for the declared use. A sufficient partial expression may remain an expression of that source; missing use-relevant content requires source return or repair, not automatic target creation. Changed assertions require an exact target and an independently obtaining source-to-target relation. An identity, sufficiency or relation gap leaves classification for that use open. After identity and bounded sufficiency are settled, recover the source basis for each operative claim used beyond reader help. Use `A.10` when its evidence/provenance account is needed for the named reliance; an assurance, gate, work, permission, approval, or release claim also needs its applicable pattern and exact project record when required. Missing grounds keep the dependent use at reader help or source-finding.
 
-**Common wrong first interpretation.** A fluent, confident, source-linked, or reliable-looking explanation is treated as evidence. First honest entry: identify the exact episteme expressed by the text and any required source-to-target relation, then classify its publication form for reader help or source-finding; only an operative claim with an A.10 evidence path or another source relation that carries, supports, or exposes the source basis for the operative claim can carry downstream reliance.
+**Common wrong first interpretation.** A fluent, confident, source-linked, or reliable-looking explanation is treated as evidence. First honest entry: identify the exact episteme expressed by the text and any required source-to-target relation, then classify its publication expression for reader help or source-finding; only an operative claim with an A.10 evidence path or another source relation that carries, supports, or exposes the source basis for the operative claim can carry downstream reliance.
 
 Negative result: if a generated explanation says "reliable" but no operative claim maps to a source relation, the E.17.EFP result is source-finding only or reader help only. If an attempted downstream reliance is still raised, the receiving `A.10`, `B.3`, `A.21`, or other relation named by value can return evidence-needed or no-bounded-current-use for that attempted reliance. It is not weak evidence by style, confidence, fluency, or citation-like wording.
 
-**Generated-retelling survival.** Compression or omission may preserve a source edition's inspectable reader-help use, source-finding cue and quoted pins when the partial form remains sufficient under the ontic first screen. State the limited use and material omissions. If the text strengthens or otherwise changes an assertion, or changes the concern or effective scheme, identify the target and establish its claimed source-to-target relation before classifying the target form. Fluency and links establish neither identity nor sufficiency, evidence, assurance, permission, gate passage or work authority.
+**Generated-retelling survival.** Compression or omission may preserve a source edition's inspectable reader-help use, source-finding cue and quoted pins when the partial expression remains sufficient under the ontic first screen. State the limited use and material omissions. If the text strengthens or otherwise changes an assertion, or changes the concern or effective scheme, identify the target and establish its claimed source-to-target relation before classifying the target expression. Fluency and links establish neither identity nor sufficiency, evidence, assurance, permission, gate passage or work authority.
 
-**Derivative text and adaptation source-link rule.** A fork, adaptation, abridged guide, translation, generated explanation, tutorial or access-format conversion first undergoes the same identity-and-bounded-sufficiency test. A sufficient partial expression may remain a source form. Insufficient expression returns the exact missing source content or condition; a changed claim-bearing target requires its own identity and an obtaining direct relation. EFP then qualifies explanation use only if needed. If the result will guide work or reliance, map each operative claim to its source basis. Use `A.10` when the evidence/provenance account must remain replayable for that reliance; a missing claim-to-source map permits only reader help, a source-gap note, or prospective evidence work.
+**Derivative text and adaptation source-link rule.** A fork, adaptation, abridged guide, translation, generated explanation, tutorial or access-format conversion first undergoes the same identity-and-bounded-sufficiency test. A sufficient partial expression may remain a source expression. Insufficient expression returns the exact missing source content or condition; a changed claim-bearing target requires its own identity and an obtaining direct relation. EFP then qualifies explanation use only if needed. If the result will guide work or reliance, map each operative claim to its source basis. Use `A.10` when the evidence/provenance account must remain replayable for that reliance; a missing claim-to-source map permits only reader help, a source-gap note, or prospective evidence work.
 
-**Published-form and episteme identity over revision and regeneration.** Reidentify the source or target through ClaimGraph, exact EntityOfConcern and effective ReferenceScheme, then retest expression sufficiency for the declared use. A different selection of source content may remain another sufficient form of the same edition; equal words about another concern or under another effective scheme do not establish the same episteme. A changed target requires its direct source-to-target relation. Face, prompt, template, carrier or title alone settles none of these questions. When use beyond ordinary reader help depends on how the text was produced, identify the exact generation or production relation and the source references it actually used; neither relation changes episteme identity by itself. EFP records only the bounded explanation use of the resulting published form.
+**Published-expression and episteme identity over revision and regeneration.** Reidentify the source or target through ClaimGraph, exact EntityOfConcern and effective ReferenceScheme, then retest expression sufficiency for the declared use. A different selection of source content may remain another sufficient expression of the same edition; equal words about another concern or under another effective scheme do not establish the same episteme. A changed target requires its direct source-to-target relation. Face, prompt, template, carrier or title alone settles none of these questions. When use beyond ordinary reader help depends on how the text was produced, identify the exact generation or production relation and the source references it actually used; neither relation changes episteme identity by itself. EFP records only the bounded explanation use of the resulting published expression.
 
 **Pattern basis.** E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material.
 **Builds on.** `E.17.0 MultiViewDescribing`; `E.17` MVPK; `A.7`; `E.10.D2`; `A.6.B`; `F.9`; `F.18`.
@@ -61,20 +61,20 @@ Negative result: if a generated explanation says "reliable" but no operative cla
 
 ### E.17.EFP:1 - Problem frame
 
-The exact source ClaimGraph may need more than one publication form or representation. Explanation work may also produce a different target ClaimGraph, but that target is another episteme and must not be hidden inside the word `rendering`. Recurrent cases include:
+The exact source episteme may need more than one publication expression or representation. Explanation work may also produce changed claim content; identify the resulting target episteme under C.2.1 rather than treating its ClaimGraph as the whole episteme or hiding changed content inside the word `rendering`. Recurrent cases include:
 
-- a manager-readable form of the same technical ClaimGraph;
+- a manager-readable expression of the same technical ClaimGraph;
 - connective explanation that remains entailed by the source, or else belongs to an exactly related target episteme;
-- didactic use of a sufficient source form, including a partial expression, or of a separately identified target with an obtaining rewrite or coarsening relation;
-- exploratory use of a publication form of a separately constituted hypothesis episteme.
-FPF already has C.2.1 for episteme identity, A.6.3 and neighboring patterns for source-to-target relations, `E.17.0` for viewpoints and views, `E.17` for publication faces, and E.24.PUB for publication occurrence, form, and carrier. EFP supplies only the remaining bounded explanation-use classification of one form of the already identified source or target episteme.
+- didactic use of a sufficient source expression, including a partial expression, or of a separately identified target with an obtaining rewrite or coarsening relation;
+- exploratory use of a publication expression of a separately constituted hypothesis episteme.
+FPF already has C.2.1 for episteme identity, A.6.3 and neighboring patterns for source-to-target relations, `E.17.0` for viewpoints and views, `E.17` for reusable publication-face rules, and E.24.PUB for exact expression, form conformance, bearing and publication availability. EFP supplies only the remaining bounded explanation-use classification of one particular expression of the already identified source or target episteme.
 
 ### E.17.EFP:2 - Problem
 
 Without a dedicated profile:
-1. a form of the source, a rewritten target episteme, and a new hypothesis blur together;
+1. an expression of the source, a rewritten target episteme, and a new hypothesis blur together;
 2. explanation prose starts behaving like a second semantic rule track;
-3. publication-side reviewers cannot tell which faces remain bounded-use for a given explanation class;
+3. publication-side reviewers cannot tell which expressions remain within the bounded use of their explanation class;
 4. source and evidence details are either demanded for every explanation or omitted when a named claim, dispute, derivative, or reliance actually needs them;
 5. an EFP class quietly substitutes for C.2.1 identity, an obtaining source-to-target relation, bridge work, or a gate decision.
 
@@ -90,41 +90,41 @@ Without a dedicated profile:
 
 #### E.17.EFP:4.1 - Informal definition
 
-> `ExplanationFaithfulnessProfile` is a review profile for the explanation use of publication forms or representations of exact claim-bearing epistemes on existing MVPK faces. E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material.
+> `ExplanationFaithfulnessProfile` is a review profile for the explanation use of publication expressions or representations of exact claim-bearing epistemes on existing MVPK faces. E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material.
 >
-> It does not create a new face family, episteme, or source relation. C.2.1 first identifies the exact episteme expressed by the text; E.24.PUB or A.6.3.RT identifies its form or representation; and, when the ClaimGraph changes, the applicable source-to-target pattern defines the relation and its obtaining test. EFP then states the bounded explanation use of that already identified object.
+> It does not create a new face family, episteme, or source relation. C.2.1 first identifies the exact episteme expressed by the text; E.24.PUB identifies its particular expression and any selected form conformance, while A.6.3.RT governs a claimed representation transition. When claim content changes, the applicable source-to-target pattern defines the relation and its obtaining test. EFP then states the bounded explanation use of that already identified expression.
 
-#### E.17.EFP:4.1.a - Profile, episteme, and published-form distinction
+#### E.17.EFP:4.1.a - Profile, episteme, and published-expression distinction
 
-`ExplanationFaithfulnessProfile` is a **review profile**. Its cases concern passive publication forms or representations of an exact `U.Episteme`.
+`ExplanationFaithfulnessProfile` is a **review profile**. Its cases concern passive publication expressions or representations of an exact `U.Episteme`.
 
-The distinction is executable: identify the episteme through its claim content, exact concern and effective scheme; test the form's sufficiency for the declared use; then classify that explanation use. Partial expression can preserve the source identity. Missing needed content blocks that use, while an actual changed target needs a C.2.1 identity and an independently obtaining source-to-target relation. An EFP class supplies none of these prerequisites.
+The distinction is executable: identify the episteme through its claim content, exact concern and effective scheme; test the expression's sufficiency for the declared use; then classify that explanation use. Partial expression can preserve the source identity. Missing needed content blocks that use, while an actual changed target needs a C.2.1 identity and an independently obtaining source-to-target relation. An EFP class supplies none of these prerequisites.
 
 #### E.17.EFP:4.1.b - How to read this profile
 
-This profile does not decide whether a claim is true or which claim-bearing object exists. It starts after C.2.1 identity and any required source-to-target relation are recoverable, then qualifies the explanation use of one publication form or representation.
+This profile does not decide whether a claim is true or which claim-bearing object exists. It starts after C.2.1 identity and any required source-to-target relation are recoverable, then qualifies the explanation use of one publication expression or representation.
 
 - `Faithfulness` names the review question for that explanation use, not a pass verdict or an episteme-identity rule.
-- Class names are bounded-use labels for a form or representation, not merit labels and not source-to-target relations.
-- Use E.17 for face discipline and E.24.PUB for publication occurrence and form.
+- Class names are bounded-use labels for an expression or representation, not merit labels and not source-to-target relations.
+- Use E.17 for reusable face rules and E.24.PUB for exact expression, form conformance, carrier bearing and publication availability.
 - A changed assertion, concern or effective scheme reopens episteme identity even when the prose remains explanatory, didactic, reconstructive or speculative. Selecting only enough source content for a bounded use does not itself assert a changed ClaimGraph.
-- A causal or counterfactual addition requires a separate hypothesis episteme under B.5.2 before any publication form can receive an EFP use label.
+- A causal or counterfactual addition requires a separate hypothesis episteme under B.5.2 before any publication expression can receive an EFP use label.
 
 #### E.17.EFP:4.1.c - Local working vocabulary
 
 This profile uses a small local vocabulary for review.
 
-- **Source episteme and publication occurrence** = the exact source `U.Episteme` edition and, when material, the exact E.24.PUB `EpistemePublicationRelation` occurrence through which it is available. Neither is an MVPK face, form, carrier, or arbitrary physical item.
-- **Current claim-bearing episteme** = the exact source or target edition identified by ClaimGraph, EntityOfConcern and effective ReferenceScheme. The published form may express a sufficient part of that edition for the declared use. A target's claimed source-to-target relation must obtain under its direct pattern.
-- **Published explanation form** = one publication form or representation of that current claim-bearing episteme on one existing face.
-- **Class assignment** = the explanation-use class assigned to that published form on that face.
-- **Bundle-local class difference** = a case where two forms in one bundle carry different bounded explanation uses.
+- **Source episteme and publication occurrence** = the exact source `U.Episteme` edition and, when material, the exact E.24.PUB `EpistemePublicationRelation` occurrence through which it is available. Neither is a particular expression, MVPK face, reusable form, carrier, or arbitrary physical item.
+- **Current claim-bearing episteme** = the exact source or target edition identified by ClaimGraph, EntityOfConcern and effective ReferenceScheme. The published expression may express a sufficient part of that edition for the declared use. A target's claimed source-to-target relation must obtain under its direct pattern.
+- **Published explanation expression** = one independently identified sign construction that expresses enough of the current claim-bearing episteme for the bounded explanation use. Identify its expression domain and equality rule under E.24.PUB when comparing what was supplied. It follows the reusable rules of the selected MVPK face; those rules are not the filled text and do not acquire its explanation-use class.
+- **Class assignment** = the explanation-use class assigned to that published expression on that face.
+- **Bundle-local class difference** = a case where two expressions in one bundle carry different bounded explanation uses.
 
 These are review aids, not new kinds or relation types. EFP neither creates the current episteme nor substitutes for C.2.1, E.24.PUB, A.6.3, B.5.2, or another direct source-to-target pattern.
 
 #### E.17.EFP:4.2 - Core profile fields
 
-The ontic first screen is performed once, not copied into a metadata record for every note. Most published forms whose identity branch is already recoverable need only the compact explanation-use note:
+The ontic first screen is performed once, not copied into a metadata record for every note. Most published expressions whose identity branch is already recoverable need only the compact explanation-use note:
 
 | Core field | Question |
 | --- | --- |
@@ -134,7 +134,7 @@ The ontic first screen is performed once, not copied into a metadata record for 
 | blocked downstream use | What wider claim or effect is not carried by the explanation? |
 | reopen or boundary condition | What source change, dispute, use escalation, missing source relation, or neighboring-pattern boundary condition ends this profile use? |
 
-The fuller field vocabulary below opens only when ambiguity or load-bearing use is present: different classes across faces, source linkage dispute, connective reconstruction, reader-fit dispute, interaction or statefulness, derivative rendering, cross-context reuse, cited reliance, work or reliance, evidence, gate, engineering justification, bridge, or coarsening boundary.
+The fuller field vocabulary below opens only when ambiguity or load-bearing use is present: different explanation classes for expressions constructed under the selected faces, source linkage dispute, connective reconstruction, reader-fit dispute, interaction or statefulness, derivative rendering, cross-context reuse, cited reliance, work or reliance, evidence, gate, engineering justification, bridge, or coarsening boundary.
 
 - `faceRuleRef = E.17` and `viewpointConformanceRuleRef = E.17.0`;
 - `sourcePublicationOrRecordForm`;
@@ -182,14 +182,14 @@ The fuller field vocabulary below opens only when ambiguity or load-bearing use 
 
 These fields inherit the `E.17:5.1e` local-field rule. They classify one explanation-facing rendering for review; they do not create `U.Kind`, `publication-face kind`, `RelationKind`, `KindBridge`, `EvidenceKind`, `GateDecision`, `SpeechAct`, `Commitment`, `U.Work`, authority reference, publication face, or project-side FPF kind and reference named by value unless another FPF pattern explicitly defines or instantiates that object. The `explanationClass` value is a local source-relation and bounded-use profile value, not `ExplanationKind`, not `U.Kind`, not `EvidenceKind`, not `FaceKind`, and not a truth certificate.
 
-When claim content changes, pause EFP until the practitioner uses C.2.1 to identify the target episteme and the applicable source-to-target pattern to identify and test the relation. EFP may then qualify a publication form of that target only when explanation use remains a distinct question; it never substitutes for that relation or its obtaining test.
+When claim content changes, pause EFP until the practitioner uses C.2.1 to identify the target episteme and the applicable source-to-target pattern to identify and test the relation. EFP may then qualify a publication expression of that target only when explanation use remains a distinct question; it never substitutes for that relation or its obtaining test.
 
 #### E.17.EFP:4.2.a - Working-model first
 
-Ordinary published forms do not restate every field or replay the ontic decision. When their exact claim-bearing episteme, MVPK face, any material E.24.PUB occurrence, and already published source references make the branch recoverable, the compact note inherits those conditions by reference.
+Ordinary published expressions do not restate every field or replay the ontic decision. When their exact claim-bearing episteme, MVPK face, any material E.24.PUB occurrence, and already published source references make the branch recoverable, the compact note inherits those conditions by reference.
 
 A source-bearing review record becomes necessary when:
-- explanation class differs across faces in the same publication bundle;
+- explanation class differs between expressions constructed under different faces in the same publication bundle;
 - the rendering relies on bounded connective prose that is not obvious from the source wording alone;
 - didactic or speculative wording creates a real risk of policy, assurance, or gate misuse;
 - source linkage, provenance, or reliability transport would otherwise become unclear;
@@ -203,15 +203,15 @@ A publication-side reviewer starts with five questions:
 
 1. Which exact source edition is intended: what ClaimGraph, EntityOfConcern and effective ReferenceScheme identify it?
 2. Does the text express enough for the declared use, retaining action-changing qualifications, source return and use-relevant omission disclosure? Whole-source coverage is not required; an omitted answer-changing condition blocks this use even if the displayed sentences are true.
-3. Does the text assert changed content or concern another entity or effective scheme? If so, which exact target and independently obtaining source-to-target relation support its form?
-4. Which E.24.PUB form or applicable A.6.3.RT representation expresses the identified episteme, and which explanation class changes the reader's next action?
-5. Has the form begun carrying another unsupported claim, relation, reliance or deliberately coarsened use that must return to its direct pattern?
+3. Does the text assert changed content or concern another entity or effective scheme? If so, which exact target and independently obtaining source-to-target relation support its expression?
+4. Which E.24.PUB expression or applicable A.6.3.RT representation expresses the identified episteme, and which explanation class changes the reader's next action?
+5. Has the expression begun carrying another unsupported claim, relation, reliance or deliberately coarsened use that must return to its direct pattern?
 
 If a prerequisite is missing, return the exact source-identity, source-sufficiency, target-identity or relation gap. Do not manufacture a target from an omission or repair a gap with a class. Once these prerequisites and the action-changing class distinction are recoverable, the compact note is complete. Open a fuller face-by-face record only when a section 4.2 trigger consumes additional fields.
 
 #### E.17.EFP:4.2.c - Interpretant-side block
 
-This profile classifies explanation use on existing faces; it does not describe full interactive explanation systems.
+This profile classifies the explanation use of particular expressions constructed under existing faces; it does not describe full interactive explanation systems.
 
 When reader fit materially changes the explanation class, bounded use, blocked use, or reopen condition, make only the distinction needed for that change. A familiar audience and static note may need no separate reader-model field. A contrastive or interactive case may need one or more of `targetUserModel`, `interactionMode`, `contrastiveQuestion`, `boundedReaderUse`, or `overreadRisk`.
 
@@ -232,14 +232,14 @@ In field form, the local assignment is `explanationClass = SourcePinnedExplanati
 
 Class assignment follows, and never replaces, the ontic first screen.
 
-- `SourcePinnedExplanation` qualifies a form or representation that expresses enough of the exact source edition for the declared use, with action-changing qualifications, source return and use-relevant omissions recoverable. It claims no whole-source coverage.
+- `SourcePinnedExplanation` qualifies an expression or representation that expresses enough of the exact source edition for the declared use, with action-changing qualifications, source return and use-relevant omissions recoverable. It claims no whole-source coverage.
 - `SourceLinkedExplanationReconstruction` qualifies a non-obvious connective only when it remains in the same source ClaimGraph because a stated derivation from exact source claims recovers it, or because the source ClaimGraph already reports an exact relation occurrence whose obtaining is independently established under its defining pattern. An independently true relation that the source does not claim belongs to another target ClaimGraph.
-- `DidacticRetelling` qualifies teaching or onboarding use of a sufficient source form, including a partial expression, or of an exact target connected under `A.6.3.CR`, `A.6.3.CSC` or another applicable pattern when pedagogy changes claims, concern or effective scheme.
-- `SpeculativeRetelling` qualifies only the bounded exploratory use of a form of a separately constituted hypothesis episteme, normally produced under `B.5.2`. It is not a speculative form of the original source ClaimGraph.
+- `DidacticRetelling` qualifies teaching or onboarding use of a sufficient source expression, including a partial expression, or of an exact target connected under `A.6.3.CR`, `A.6.3.CSC` or another applicable pattern when pedagogy changes claims, concern or effective scheme.
+- `SpeculativeRetelling` qualifies only the bounded exploratory use of an expression of a separately constituted hypothesis episteme, normally produced under `B.5.2`. It is not a speculative expression of the original source ClaimGraph.
 
-These values are not `U.Kind` values, MVPK faces, semantic merit grades, source-to-target relations, or episteme identities. They state how the published form may be used after those objects and relations have been recovered.
+These values are not `U.Kind` values, MVPK faces, semantic merit grades, source-to-target relations, or episteme identities. They state how the published expression may be used after those objects and relations have been recovered.
 
-Class assignment is per published form on a face, not one blanket label for a whole multi-face bundle. If a `PlainView` form stays source-pinned while a `TechCard` form expresses a separately related target episteme, the bundle names both exact epistemes and the class difference.
+Class assignment is per published expression on a face, not one blanket label for a whole multi-face bundle. If a `PlainView` expression stays source-pinned while a `TechCard` expression expresses a separately related target episteme, the bundle names both exact epistemes and the class difference.
 
 #### E.17.EFP:4.3.a - Ordinary class-selection guidance
 
@@ -248,11 +248,11 @@ A practical order is:
 1. identify the source's ClaimGraph, exact concern and effective scheme;
 2. test sufficiency of the text for the declared use, including qualifications and omissions;
 3. identify any actual changed target and independently obtaining source-to-target relation;
-4. identify the form or representation and assign an EFP class only if that explanation-use distinction changes the reader's next action.
+4. identify the expression or representation and assign an EFP class only if that explanation-use distinction changes the reader's next action.
 
 Use `SourcePinnedExplanation` for sufficient source expression; `SourceLinkedExplanationReconstruction` for an already justified connective explanation; `DidacticRetelling` for bounded teaching use of the identified source or target; and `SpeculativeRetelling` only for a separately constituted hypothesis episteme. A missing prerequisite returns its exact gap. Any narrower reader-help use must itself satisfy the source-expression test.
 
-Do not keep one narrower-use target with declared source-loss mode inside explanation merely because the prose is reader-friendly. When its narrower bounded claim or effect, blocked downstream use, and source-bearing return are primary, use `A.6.3.CSC Controlled Semantic Coarsening`; EFP may qualify a later publication form only if explanation use remains a separate live question.
+Do not keep one narrower-use target with declared source-loss mode inside explanation merely because the prose is reader-friendly. When its narrower bounded claim or effect, blocked downstream use, and source-bearing return are primary, use `A.6.3.CSC Controlled Semantic Coarsening`; EFP may qualify a later publication expression only if explanation use remains a separate live question.
 
 #### E.17.EFP:4.3.b - Entailed connective and `addedLinkPolicy`
 
@@ -278,12 +278,12 @@ If neither a derivation from the exact source claims nor an exact source-reporte
 
 #### E.17.EFP:4.4 - Working bounded-use matrix
 
-| Class | Claim/source relation | Augmentation boundary | Usually bounded faces | Usually bounded publication-form use | Usually forbidden uses |
+| Class | Claim/source relation | Augmentation boundary | Usually bounded faces | Usually bounded publication-expression use | Usually forbidden uses |
 |---|---|---|---|---|---|
 | `SourcePinnedExplanation` | sufficient expression of the exact source edition for the declared use; whole-source coverage is not claimed | no claim-level augmentation | `PlainView`, `TechCard` | source inspection, navigation, or bounded restatement | an assurance, gate, evidence, or work claim not separately established |
 | `SourceLinkedExplanationReconstruction` | same source ClaimGraph with a connective recovered by a stated derivation from source claims, or by an exact relation occurrence already reported there and independently shown to obtain | no new relation by class label | `PlainView`, `TechCard` | bounded explanation while the exact derivation or source-reported relation remains recoverable | use for which the source, scheme, derivation, source relation claim, or obtaining basis is unavailable |
-| `DidacticRetelling` | sufficient source form, or form of a separately identified target connected under A.6.3 or another applicable pattern | pedagogy does not hide target identity or relation | `PlainView` | didactic or onboarding use | policy, assurance, gate, or source-replacement use |
-| `SpeculativeRetelling` | form of a separately constituted B.5.2 hypothesis episteme | causal or counterfactual claim belongs to the hypothesis ClaimGraph | `PlainView` | clearly marked exploratory use | evidence, assurance, gate, release, or policy use |
+| `DidacticRetelling` | sufficient source expression, or expression of a separately identified target connected under A.6.3 or another applicable pattern | pedagogy does not hide target identity or relation | `PlainView` | didactic or onboarding use | policy, assurance, gate, or source-replacement use |
+| `SpeculativeRetelling` | expression of a separately constituted B.5.2 hypothesis episteme | causal or counterfactual claim belongs to the hypothesis ClaimGraph | `PlainView` | clearly marked exploratory use | evidence, assurance, gate, release, or policy use |
 
 This matrix assigns no evidence relation. An ordinary EFP result needs no A.10 path. Exact evidence, trace, pin, or provenance details open only when a named claim, dispute, derivative transformation, or receiving reliance consumes them and its applicable pattern or project record requires them.
 
@@ -301,13 +301,13 @@ When a reader-fit difference changes the bounded or blocked use, state only the 
 
 ##### E.17.EFP:4.5.a. - Preservation rule
 
-Every published explanation form under this profile expresses enough of one exact episteme edition for the declared use. Source identity rests on ClaimGraph, exact EntityOfConcern and effective ReferenceScheme; sufficiency rests on retained action-changing qualifications, source return and disclosure of use-relevant omissions. A partial expression may satisfy both. Insufficiency does not constitute a target; actual changed content, concern or effective scheme requires its own identity decision and any claimed source-to-target relation. E.24.PUB publication occurrence remains separate, and the EFP class changes neither identity nor relation.
+Every published explanation expression under this profile expresses enough of one exact episteme edition for the declared use. Source identity rests on ClaimGraph, exact EntityOfConcern and effective ReferenceScheme; sufficiency rests on retained action-changing qualifications, source return and disclosure of use-relevant omissions. A partial expression may satisfy both. Insufficiency does not constitute a target; actual changed content, concern or effective scheme requires its own identity decision and any claimed source-to-target relation. E.24.PUB publication occurrence remains separate, and the EFP class changes neither identity nor relation.
 
 ##### E.17.EFP:4.5.b. - Loss and reliability rule
 
-A published form states material omission, reordering, simplification or connection. An omission that removes information required by the declared use blocks that use even when the remaining text is true. When the form instead asserts changed content, identify its exact target and establish the claimed source-to-target relation under A.6.3 or another applicable pattern. An EFP label supplies neither missing content nor that relation. Reliability is never silently widened by more persuasive prose.
+A published expression states material omission, reordering, simplification or connection. An omission that removes information required by the declared use blocks that use even when the remaining text is true. When the expression instead asserts changed content, identify its exact target and establish the claimed source-to-target relation under A.6.3 or another applicable pattern. An EFP label supplies neither missing content nor that relation. Reliability is never silently widened by more persuasive prose.
 
-When a concrete reader-fit difference is load-bearing, expose only enough of its bounded use or overread risk to prevent the actual didactic or contrastive form from being mistaken for assurance, policy, or gate guidance.
+When a concrete reader-fit difference is load-bearing, expose only enough of its bounded use or overread risk to prevent the actual didactic or contrastive expression from being mistaken for assurance, policy, or gate guidance.
 
 ##### E.17.EFP:4.5.c. - Downstream-use and boundary rule
 
@@ -319,7 +319,7 @@ If a coarsened explanation-like rendering needs a narrower bounded claim or effe
 
 ##### E.17.EFP:4.5.d. - Composition and reopen rule
 
-Repeated `SourcePinnedExplanation` over forms of the same exact source edition can be idempotent for the same bounded use. A changed selection of content reopens sufficiency for that use; changed assertions, concern or effective scheme reopen C.2.1 identity and any source-to-target relation. Didactic target forms reopen when their target edition, relation or use changes; speculative forms reopen when their B.5.2 hypothesis edition, prompt relation or exploratory use changes.
+Repeated `SourcePinnedExplanation` over expressions of the same exact source edition can be idempotent for the same bounded use. A changed selection of content reopens sufficiency for that use; changed assertions, concern or effective scheme reopen C.2.1 identity and any source-to-target relation. Didactic target expressions reopen when their target edition, relation or use changes; speculative expressions reopen when their B.5.2 hypothesis edition, prompt relation or exploratory use changes.
 
 #### E.17.EFP:4.6 - Hard boundary rules
 
@@ -330,7 +330,7 @@ A rendering reviewed under this profile keeps the following explicit:
 - it does **not** replace bridge discipline, retargeting discipline, or world or gate boundary discipline;
 - it does **not** let `publication face/form` and `interop publication form` collapse into one undifferentiated explanation channel.
 
-If explanation text carries a changed ClaimGraph, stop class review, identify the exact target episteme and establish that the direct source-to-target relation obtains. Resume EFP only for a publication form of that target when bounded explanation use remains separately material.
+If explanation text carries a changed ClaimGraph, stop class review, identify the exact target episteme and establish that the direct source-to-target relation obtains. Resume EFP only for a publication expression of that target when bounded explanation use remains separately material.
 
 ### E.17.EFP:5 - Archetypal grounding
 
@@ -352,7 +352,7 @@ This stays within `SourcePinnedExplanation` because the rendering changes readab
 
 **Published reconstruction.** `During standard load, CL-2 outlet temperature satisfies the IC-7 upper-bound criterion stated by D-18.`
 
-The connective is recoverable because both claims concern the same outlet and load context, `RS_plantThermal` supplies the Celsius order, and `65 <= 70`. The compact `addedLinkPolicy` points to `{D-14,D-18}`, `RS_plantThermal.order`, and that one-step derivation. It does not merely call the link implied. This form may be `SourceLinkedExplanationReconstruction` while those exact premises and rules remain current.
+The connective is recoverable because both claims concern the same outlet and load context, `RS_plantThermal` supplies the Celsius order, and `65 <= 70`. The compact `addedLinkPolicy` points to `{D-14,D-18}`, `RS_plantThermal.order`, and that one-step derivation. It does not merely call the link implied. This expression may be `SourceLinkedExplanationReconstruction` while those exact premises and rules remain current.
 
 #### E.17.EFP:5.2.a - Non-entailed link exits the profile
 
@@ -374,15 +374,15 @@ The selection relation and both limits are explicit in the source, so this is or
 
 **Source edition.** In this example, `ReservePathDescription-E4` concerns exact path `R-1` and its overload intervals under effective duration scheme `RS_duration`. It contains `D-31: R-1 is configured to remain available for overload intervals no longer than five minutes` and `T-8: Observed interval O-7 lasted two minutes`.
 
-**`PlainView` form.** `R-1 is configured for overload intervals up to five minutes. Source: ReservePathDescription-E4, D-31. Use: orientation to the configured duration; this form omits the O-7 observation.`
+**`PlainView` expression.** `R-1 is configured for overload intervals up to five minutes. Source: ReservePathDescription-E4, D-31. Use: orientation to the configured duration; this expression omits the O-7 observation.`
 
-For that use, D-31 is sufficient and the form may be `SourcePinnedExplanation` of the same source edition. It does not assert T-8, observed availability or a guarantee. The omitted T-8 does not constitute another episteme, and the class claims no whole-source coverage.
+For that use, D-31 is sufficient and the expression may be `SourcePinnedExplanation` of the same source edition. It does not assert T-8, observed availability or a guarantee. The omitted T-8 does not constitute another episteme, and the class claims no whole-source coverage.
 
-**`TechCard` form.** `O-7 falls within D-31's configured duration window. Sources: ReservePathDescription-E4, D-31 and T-8.`
+**`TechCard` expression.** `O-7 falls within D-31's configured duration window. Sources: ReservePathDescription-E4, D-31 and T-8.`
 
-That connective follows from `2 min <= 5 min` under `RS_duration`; the form may be `SourceLinkedExplanationReconstruction` with this derivation pointer. The bundle states the class difference. The PlainView form alone cannot answer whether O-7 fits: that use needs the omitted T-8 and must return to it. Neither comparison establishes that the path actually remained available.
+That connective follows from `2 min <= 5 min` under `RS_duration`; the expression may be `SourceLinkedExplanationReconstruction` with this derivation pointer. The bundle states the class difference. The PlainView expression alone cannot answer whether O-7 fits: that use needs the omitted T-8 and must return to it. Neither comparison establishes that the path actually remained available.
 
-**Missing qualification.** Suppose an identified source edition also states `D-32: This availability configuration applies only while the backup supply is energized`. A form giving only the true five-minute duration is insufficient for deciding whether the configuration applies during loss of that supply. Return D-32 and the supply-state facts before that use. This insufficiency creates no target episteme; a separate assertion of unconditional availability would be changed content requiring its own target and relation.
+**Missing qualification.** Suppose an identified source edition also states `D-32: This availability configuration applies only while the backup supply is energized`. An expression giving only the true five-minute duration is insufficient for deciding whether the configuration applies during loss of that supply. Return D-32 and the supply-state facts before that use. This insufficiency creates no target episteme; a separate assertion of unconditional availability would be changed content requiring its own target and relation.
 
 **Equal words, different subject.** The same duration sentence about path `R-2` does not identify the `R-1` source. Likewise, identical displayed duration words interpreted under another effective scheme do not establish the same source identity. Recover the exact concern and scheme and apply the relevant retargeting or scheme-change pattern before claiming a source-to-target relation.
 
@@ -390,9 +390,9 @@ That connective follows from `2 min <= 5 min` under `RS_duration`; the form may 
 
 **Source episteme claim.** `The pressure-control condition is satisfied whenever the reserve valve opens within 80 ms.`
 
-**Didactic publication form.** `For onboarding: opening the reserve valve within 80 ms is enough to satisfy the pressure-control condition. The exact condition and threshold remain in the pinned source edition.`
+**Didactic publication expression.** `For onboarding: opening the reserve valve within 80 ms is enough to satisfy the pressure-control condition. The exact condition and threshold remain in the pinned source edition.`
 
-The form expresses the same source ClaimGraph; `DidacticRetelling` qualifies only its teaching use. If the text instead says that the whole system is safe, that different safety claim requires its own target episteme, an obtaining source-to-target relation, and the applicable safety relation before publication. A didactic label cannot supply them.
+The expression expresses the same source ClaimGraph; `DidacticRetelling` qualifies only its teaching use. If the text instead says that the whole system is safe, that different safety claim requires its own target episteme, an obtaining source-to-target relation, and the applicable safety relation before publication. A didactic label cannot supply them.
 
 #### E.17.EFP:5.4 - Speculative retelling
 
@@ -400,9 +400,9 @@ The form expresses the same source ClaimGraph; `DidacticRetelling` qualifies onl
 
 That observation may frame an abductive prompt. If `B.5.2` produces exact hypothesis episteme `E_couplingHypothesis` with claim `A temporary coupling effect may have accelerated recovery`, that claim belongs to the new hypothesis ClaimGraph, not to the observed-source edition.
 
-**Speculative publication form of the hypothesis episteme.** `Exploratory hypothesis: a temporary coupling effect may have accelerated recovery. This is the separately identified hypothesis, not a claim of the incident source.`
+**Speculative publication expression of the hypothesis episteme.** `Exploratory hypothesis: a temporary coupling effect may have accelerated recovery. This is the separately identified hypothesis, not a claim of the incident source.`
 
-`SpeculativeRetelling` qualifies only this form's exploratory explanation use. It neither constitutes `E_couplingHypothesis` nor turns the form into a passive rendering of the observed source.
+`SpeculativeRetelling` qualifies only this expression's exploratory explanation use. It neither constitutes `E_couplingHypothesis` nor turns the expression into a passive rendering of the observed source.
 
 #### E.17.EFP:5.4.a - Anti-example: explanation that quietly becomes a new claim
 
@@ -417,24 +417,24 @@ The second sentence has a different ClaimGraph. To retain it, constitute an exac
 
 **Overreaching rendering on an `AssuranceLane`-facing use.** `This explanation is sufficient assurance that short overloads stay inside the tolerated window.`
 
-This assurance sentence has a different ClaimGraph. It requires an exact target episteme under C.2.1 and the applicable A.10/B.3 relations; until those obtain it is unsupported and receives no EFP class. The earlier onboarding form may retain its bounded didactic use, but that class neither carries nor weakens the assurance claim.
+This assurance sentence has a different ClaimGraph. It requires an exact target episteme under C.2.1 and the applicable A.10/B.3 relations; until those obtain it is unsupported and receives no EFP class. The earlier onboarding expression may retain its bounded didactic use, but that class neither carries nor weakens the assurance claim.
 
 #### E.17.EFP:5.4.c - Boundary to lighter explanatory note with source-bearing return
 **Source slice.** `The technical incident note says the reserve path remained available during the measured load band, but it also keeps one unresolved ambiguity about recovery latency.`
 
 **Lighter explanatory rendering.** `In plain terms: the reserve path stayed available during overload recovery.`
 
-For a use that needs the measured load band or the unresolved latency qualification, this lighter text is insufficient: return those source conditions. Omission alone does not constitute another episteme. If the text is instead intended to assert availability throughout overload recovery beyond the measured band, it makes a changed claim. Identify that target under C.2.1 and establish its `A.6.3.CSC` or other applicable source-to-target relation before EFP classifies a later target form.
+For a use that needs the measured load band or the unresolved latency qualification, this lighter text is insufficient: return those source conditions. Omission alone does not constitute another episteme. If the text is instead intended to assert availability throughout overload recovery beyond the measured band, it makes a changed claim. Identify that target under C.2.1 and establish its `A.6.3.CSC` or other applicable source-to-target relation before EFP classifies a later target expression.
 
 #### E.17.EFP:5.5 - Class-specific reopen cues in the worked slices
 - **`SourcePinnedExplanation`** reopens when the pinned source claim set, source pins, or face-use assumptions change so that the rendering can no longer remain claim-preserving and visibly source-bound.
 - **`SourceLinkedExplanationReconstruction`** reopens when any source premise, effective-scheme rule, derivation, context identity, source claim about the exact relation occurrence, or that occurrence's obtaining basis changes or disappears.
 - **`DidacticRetelling`** reopens when the exact source or target edition connected under A.6.3 changes, or when teaching use starts functioning as policy-bearing, design-bearing, or gate-bearing guidance.
-- **`SpeculativeRetelling`** reopens when its exact B.5.2 hypothesis edition, prompt link, or exploratory use changes; it never falls back to being a passive form of the observation source.
+- **`SpeculativeRetelling`** reopens when its exact B.5.2 hypothesis edition, prompt link, or exploratory use changes; it never falls back to being a passive expression of the observation source.
 
 #### E.17.EFP:5.6 - Boundary to interpretation and world or gate use
 
-If a text carries a new hypothesis or another changed claim, first constitute its exact target episteme and apply `B.5.2`, A.6.3, or the other direct source-to-target pattern. Comparative review, rival interpretation, bridge, world, gate, assurance, and engineering-justification uses likewise leave to their exact patterns; EFP can only qualify a later published form's explanation use.
+If a text carries a new hypothesis or another changed claim, first constitute its exact target episteme and apply `B.5.2`, A.6.3, or the other direct source-to-target pattern. Comparative review, rival interpretation, bridge, world, gate, assurance, and engineering-justification uses likewise leave to their exact patterns; EFP can only qualify a later published expression's explanation use.
 
 #### E.17.EFP:5.7 - Human-authored and generated task replay against the simpler alternative
 
@@ -462,9 +462,9 @@ Use core ordinary checks first. Conditional rows open only when reader-fit, bund
 #### E.17.EFP:7.1 - EFP-Core ordinary checks
 
 0. **CC-EF-0 — Exact episteme and sufficient expression are recoverable.**
-   Identify the source through ClaimGraph, exact EntityOfConcern and effective ReferenceScheme. Its form expresses enough for the declared use, preserves answer-changing qualifications, returns to the source and discloses use-relevant omissions; whole-source coverage is not required. Insufficiency returns the exact gap, not an invented target. An actual changed target needs its own identity and an independently obtaining source-to-target relation; a speculative causal or counterfactual claim belongs to a separate B.5.2 hypothesis episteme.
+   Identify the source through ClaimGraph, exact EntityOfConcern and effective ReferenceScheme. Its expression expresses enough for the declared use, preserves answer-changing qualifications, returns to the source and discloses use-relevant omissions; whole-source coverage is not required. Insufficiency returns the exact gap, not an invented target. An actual changed target needs its own identity and an independently obtaining source-to-target relation; a speculative causal or counterfactual claim belongs to a separate B.5.2 hypothesis episteme.
 1. **CC-EF-1 — Explanation class follows identity.**
-   The class is explicitly named for the publication form after CC-EF-0; it is not used as episteme identity or source-to-target evidence.
+   The class is explicitly named for the publication expression after CC-EF-0; it is not used as episteme identity or source-to-target evidence.
 2. **CC-EF-3 — Source reference and blocked downstream use are explicit.**
    The compact note states source reference, bounded explanation-reader use, blocked downstream use, and reopen or boundary condition.
 4. **CC-EF-5 — No new A.6.B boundary claims on explanation faces.**
@@ -477,13 +477,13 @@ Use core ordinary checks first. Conditional rows open only when reader-fit, bund
 1. **CC-EF-4 — Interpretant-side block is explicit when reader-fit does real work.**
    Only the reader-fit distinctions that change the current class, bounded use, blocked use, or reopen condition are stated. The five optional prompts are not a required block.
 2. **CC-EF-2 — Face and `publication-face kind` boundary is explicit when present.**
-   State face, pinning, provenance, or reliability details only when the present form choice, dispute, derivative, or receiving use makes that boundary material and it is not already recoverable by source reference.
+   State face, pinning, provenance, or reliability details only when the present expression choice, dispute, derivative, or receiving use makes that boundary material and it is not already recoverable by source reference.
 3. **CC-EF-6 — Boundary to interpretation, retargeting, coarsening, and world or gate use is explicit.**
    The boundary is explicit, including `A.6.3.CSC Controlled Semantic Coarsening` when a narrower bounded claim or effect, blocked downstream claim or effect, or source-bearing reopen condition becomes primary.
 4. **CC-EF-8 — Bundle-local class differences are explicit.**
-   When one publication bundle carries different explanation classes across faces, that difference is stated explicitly rather than hidden under one bundle-wide label.
+   When one publication bundle carries expressions with different explanation classes under its selected faces, that difference is stated explicitly rather than hidden under one bundle-wide label.
 5. **CC-EF-9 — Source-loss or changed-claim cases retain exact identity and use boundaries.**
-   A didactic target names its exact A.6.3 or other relation; a speculative form names its exact B.5.2 hypothesis episteme. Any material source loss or reliability downgrade states its bounded and forbidden uses without pretending that the EFP class supplies identity or relation evidence.
+   A didactic target names its exact A.6.3 or other relation; a speculative expression names its exact B.5.2 hypothesis episteme. Any material source loss or reliability downgrade states its bounded and forbidden uses without pretending that the EFP class supplies identity or relation evidence.
 6. **CC-EF-10 — Reopen triggers match the class.**
    The published review note makes class-relevant reopen triggers visible when source claim set, pins, provenance, or face-use assumptions change.
 7. **CC-EF-11 — Every non-obvious source-linked connective has an actual basis.**
@@ -499,12 +499,12 @@ Use core ordinary checks first. Conditional rows open only when reader-fit, bund
 |---|---|---|
 | Treating every explanatory prose block as equally faithful | rendering, reconstruction, didactic work, and speculation have different review loads | first try the simpler source-linked note; when class ambiguity changes the next action, name only the applicable class, bounded/blocked use, and reopen condition |
 | Letting reader-fit stay implicit when explanation is clearly tailored | a didactic or contrastive rendering can be overinterpreted as general or policy-bearing guidance | state only the audience, interaction, question, use, or overread distinction that changes the present class or boundary; do not publish a five-field block by default |
-| Using an EFP class as a second claim or relation track | changed claims hide behind reader-friendly prose | apply the full identity-and-bounded-sufficiency screen; identify any actual target and obtaining direct relation before classifying its form |
+| Using an EFP class as a second claim or relation track | changed claims hide behind reader-friendly prose | apply the full identity-and-bounded-sufficiency screen; identify any actual target and obtaining direct relation before classifying its expression |
 | Calling a connective source-linked because `addedLinkPolicy` names it | a policy declaration is mistaken for derivation or an obtaining relation | require exact source premises and effective scheme plus a derivation, or an exact relation claim already in the source plus an independently obtaining occurrence; otherwise constitute a target claim or leave EFP |
-| Treating speculative prose as a source rendering | a new causal or counterfactual claim is hidden inside a form label | constitute the separate B.5.2 hypothesis episteme, then restrict only its publication form's use |
+| Treating speculative prose as a source rendering | a new causal or counterfactual claim is hidden inside an expression label | constitute the separate B.5.2 hypothesis episteme, then restrict only its publication expression's use |
 | Collapsing MVPK face and `publication face/form` or `interop publication form` discipline | explanation appears to create a new publication family | stay on existing MVPK faces and keep named `publication face/form` or `interop publication form` and carrier policy explicit |
-| Derivative text as source replacement | a changed ClaimGraph is treated as the original source because the text is easier to read | identify same-source form versus exact target episteme and establish that its A.6.3 or other direct relation obtains before EFP classification |
-| Explanation as evidence or assurance | a fluent or source-linked explanation is cited as proof, approval, gate passage, release reliance, work authority, or assurance | identify the exact episteme and any required source-to-target relation before classifying its publication form; open `A.10`, `B.3`, `A.21`, `A.15`, or another direct record only for the exact operative claim and receiving use that need it |
+| Derivative text as source replacement | a changed ClaimGraph is treated as the original source because the text is easier to read | identify same-source expression versus exact target episteme and establish that its A.6.3 or other direct relation obtains before EFP classification |
+| Explanation as evidence or assurance | a fluent or source-linked explanation is cited as proof, approval, gate passage, release reliance, work authority, or assurance | identify the exact episteme and any required source-to-target relation before classifying its publication expression; open `A.10`, `B.3`, `A.21`, `A.15`, or another direct record only for the exact operative claim and receiving use that need it |
 
 ### E.17.EFP:9 - Consequences
 
@@ -523,7 +523,7 @@ Generated and model-facing explanation can hide source drift; ordinary human exp
 
 | Claim need | Exact source and actual scope | Local use | Boundary or rejected transfer |
 |---|---|---|---|
-| Keep claim-bearing episteme, source-to-target relation, publication form, and carrier distinct. | Current FPF `C.2.1`, `A.6.3`, and `E.24.PUB`. | Identify claims, exact concern and effective scheme, then test expression sufficiency for the declared use before EFP classification. | This is current internal ontology, not a conclusion imported from an architecture-description standard. |
+| Keep claim-bearing episteme, source-to-target relation, particular expression, reusable publication form, and carrier distinct. | Current FPF `C.2.1`, `A.6.3`, and `E.24.PUB`. | Identify claims, exact concern and effective scheme, then test expression sufficiency for the declared use before EFP classification. | This is current internal ontology, not a conclusion imported from an architecture-description standard. |
 | Explanations of AI-system results are purpose- and recipient-sensitive and must state knowledge limits. | Phillips et al. (2021), *Four Principles of Explainable Artificial Intelligence*, NISTIR 8312, DOI `10.6028/NIST.IR.8312`; government-guidance lineage. | Adapt bounded reader use and explicit limits when an AI explanation is current. | Do not generalize this XAI guidance into mandatory fields or classes for every technical explanation, and do not present it as the whole current research line. |
 | Plausibility and faithfulness of model interpretations are different evaluation questions. | Jacovi & Goldberg (2020), *Towards Faithfully Interpretable NLP Systems*, ACL DOI `10.18653/v1/2020.acl-main.386`; research lineage. | For NLP/model interpretation, do not infer faithfulness from persuasive prose. | The paper studies interpretable NLP systems, not ordinary human engineering exposition; later work further distinguishes self-consistency and intervention-based evaluation. |
 | Output-level consistency tests for LLM explanations are not automatically tests of faithfulness to model internals. | Parcalabescu & Frank (2024), *On Measuring Faithfulness or Self-consistency of Natural Language Explanations*, ACL DOI `10.18653/v1/2024.acl-long.329`; later repair of an overclaim in the evaluation line. | Name the actual check as self-consistency when that is what it measures. | Apply only to generated/LLM explanation use; do not require it for human-authored notes. |
@@ -540,7 +540,7 @@ Generated and model-facing explanation can hide source drift; ordinary human exp
 
 ### E.17.EFP:12 - Relations
 
-- **Uses when current:** `C.2.8` for the extractable structural amount consumed by a bounded explanation use; its comparison retains the identified episteme, expressing form and qualified observer, while EFP retains explanation-use classification.
+- **Uses when current:** `C.2.8` for the extractable structural amount consumed by a bounded explanation use; its comparison retains the identified episteme, expression that conveys it and qualified observer, while EFP retains explanation-use classification.
 - **Builds on:** `E.17.0`, `E.17`, `A.7`, `E.10.D2`, `A.6.B`, `F.9`, `F.18`
 - **Coordinates with:** `ConservativeRetextualization`, `RepresentationSchemeTransition`, `A.6.3.CSC Controlled Semantic Coarsening`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `A.15`, `A.15.4`, `B.3`, `A.20`, `A.21`
 - **Profile basis and main neighboring-pattern boundaries:** E.17 supplies face discipline; E.17.0 supplies viewpoint/view conformance only when `U.View` membership is material. A shift toward new semantics, a coarsened narrower-use target, or a gate-bearing claim or effect leaves the profile.
@@ -548,6 +548,6 @@ Generated and model-facing explanation can hide source drift; ordinary human exp
 
 ### E.17.EFP:12a - C.29 mathematical-lens use relation
 
-> When a published explanation form uses a mathematical lens, EFP still classifies and bounds its explanation use. Cite the applicable `C.29` output only for the mathematical-lens claim actually used. If the applicable C.29 result is `MathLensUse.LensCandidateNote`, retain its first-candidate recognition use and next lens-use action and output; `CandidateMathObject?` remains optional. For a load-bearing mathematical-lens claim, cite the exact `MathLensUse.OneLine`, `MathLensUse.MiniCard`, or `MathLensUse.FullCard` result required by C.29. Keep recoverable the candidate mathematical object, lens mapping mode, preserved and lost structure, exposed invariant or distinction, and stop condition required by that output, plus `LensUseBoundaryValue` and `declaredLensUse` where C.29 requires them; include `blockedLensOverread?` only when it passes F.19's plausible-reader test. Keep EFP's bounded explanation use and blocked downstream use explicit; do not copy fields already recoverable through that exact reference. Add source-relation, evidence, face, or forbidden-use detail only when the receiving use makes it material; the mathematical-lens result does not make the explanation faithful, evidential, or admissible downstream by itself.
+> When a published explanation expression uses a mathematical lens, EFP still classifies and bounds its explanation use. Cite the applicable `C.29` output only for the mathematical-lens claim actually used. If the applicable C.29 result is `MathLensUse.LensCandidateNote`, retain its first-candidate recognition use and next lens-use action and output; `CandidateMathObject?` remains optional. For a load-bearing mathematical-lens claim, cite the exact `MathLensUse.OneLine`, `MathLensUse.MiniCard`, or `MathLensUse.FullCard` result required by C.29. Keep recoverable the candidate mathematical object, lens mapping mode, preserved and lost structure, exposed invariant or distinction, and stop condition required by that output, plus `LensUseBoundaryValue` and `declaredLensUse` where C.29 requires them; include `blockedLensOverread?` only when it passes F.19's plausible-reader test. Keep EFP's bounded explanation use and blocked downstream use explicit; do not copy fields already recoverable through that exact reference. Add source-relation, evidence, face, or forbidden-use detail only when the receiving use makes it material; the mathematical-lens result does not make the explanation faithful, evidential, or admissible downstream by itself.
 
 ### E.17.EFP:End

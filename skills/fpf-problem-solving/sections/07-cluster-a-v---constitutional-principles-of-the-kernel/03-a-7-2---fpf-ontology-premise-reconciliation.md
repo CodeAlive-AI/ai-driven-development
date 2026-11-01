@@ -104,7 +104,7 @@ RelationOccurrenceQualifiers:
   useFunction: OntologySourceUseFunctionValue
   sourceContentSliceRef?: U.EpistemeRef
   sourceContentKindRef?: U.KindRef
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
   sourceCurrentnessResultRef?: U.EpistemeRef
   receivingClaimCurrentnessResultRef?: U.EpistemeRef
   landedFPFDecisionRef?: U.EpistemeRef

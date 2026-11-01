@@ -97,7 +97,7 @@ C.2.1 separately constitutes the result claims and optional conformance-record e
 
 A practitioner applying F.15 may check these exact objects together but redefines none:
 
-1. effective `U.ReferenceScheme` values and exact prior/later editions;
+1. effective reference scheme values and exact prior/later editions;
 2. independently governed local-sense claims and F.17 `SchemeSenseCell` coordinates;
 3. exact governed values and relation occurrences together with the rules that identify each value or say when each relation obtains, and the PatternIDs that locate those rules;
 4. F.4 `SystemRoleKindDescription` epistemes and their exact local system-role kinds;

@@ -72,7 +72,7 @@ C.31.RSA governs reusable-structure accounting as a typed description over decla
 ```text
 ReusableStructureAccountingDescription@Context:
   accountingBasisRef:
-  structureRefs: FinSet(U.StructureRef)
+  structureRefs: FinSet(SelectedStructureReference)
   structuralAspectRefs: FinSet(StructuralAspectDescriptionRef)
   reusableStructureSlots:
   bespokeResidueSlots:

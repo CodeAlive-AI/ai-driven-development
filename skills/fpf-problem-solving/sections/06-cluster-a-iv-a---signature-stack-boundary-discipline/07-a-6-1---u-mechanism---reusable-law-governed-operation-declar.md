@@ -45,7 +45,7 @@ The repair is a small set of exact distinctions applied with progressive explici
 
 | Force | Tension |
 |---|---|
-| Reuse and semantic locality | Reusers need stable operation meaning, while every use has an effective `U.ReferenceScheme` and bounded Applicability. |
+| Reuse and semantic locality | Reusers need stable operation meaning, while every use has an effective `ReferenceScheme` and bounded Applicability. |
 | Law and admission | Laws state reusable regularities; admission predicates decide whether one proposed operation use is admissible. |
 | Declaration and realization | A declaration can have several realizers; changing one realizer does not by itself change declaration identity. |
 | Light use and typed reuse | One readable operation sentence is often enough, while repeated use may need exact argument and result declarations; a receiving claim about one use may additionally need a particular application and its bindings. |
@@ -128,7 +128,7 @@ The content components have distinct jobs:
 | Content component | Meaning and use |
 |---|---|
 | `EntityOfConcernRef` | Identifies the exact declared operation family. |
-| effective `U.ReferenceScheme` | Supplies the meaning under which the content identifies this episteme. A changed effective reference scheme changes episteme identity. |
+| effective `ReferenceScheme` | The exact operative rule collection, a C.2.1:4.1.2 `EpistemeInterpretationScheme` value, interprets this declaration's content. Its rules, domains and semantic dependencies must cover that content; a changed collection changes episteme identity. |
 | `SubjectKind`, `RangedValueKind`, and optional `ResultKind` | Name the declared subject and value range, plus a distinct result kind when current. |
 | optional `SliceSet` and `ExtentRule` | Use only when membership of the same `SubjectKind` can differ across selected `U.ContextSlice` values. `SliceSet` names those slices; `ExtentRule` determines `Extension(SubjectKind, slice)` by stating the membership rule. Time intervals, measurement series, application extents, value/result ranges and changing datasets retain their own meanings. A mathematical set representation uses its representation pattern; C.29 applies only for a mathematical-lens use. |
 | `OperationAlgebra` | Contains one exact `OperationDeclaration` for every reused operation. Each argument and result declaration gives a declaration-local designator, semantic meaning, exact ValueKind, binding designation rule, binding predicate, and any semantic cardinality. The application predicate says what applying that operation means; the extent and identity rules distinguish its particular applications. |
@@ -149,12 +149,12 @@ Keep neighboring facts outside mechanism identity-bearing content. Cite an F.9 B
 
 Meaning and applicability answer different questions:
 
-- the effective `U.ReferenceScheme` determines how the declaration content is interpreted;
+- the effective `ReferenceScheme` determines how the declaration content is interpreted;
 - `U.ClaimScope` identifies the entities and relations to which the current use claim applies;
 - the applicability interval states when that use is claimed;
 - the selected `CHR:ReferencePlane` states the world, conceptual, or epistemic referent mode when that distinction is current;
 - mechanism-specific conditions state assumptions that affect operation admission;
-- optional `modelUseStructureRef : U.StructureRef` cites one selected `BoundedModelUseStructure` only when its relations delimit or change mechanism use.
+- optional `modelUseStructureRef : SelectedStructureReference` cites one selected `BoundedModelUseStructure` only when its relations delimit or change mechanism use.
 
 Do not replace these values with one generic context field. Do not add `modelUseStructureRef` merely to preserve an old context column.
 
@@ -167,7 +167,7 @@ A.6.1 `AdmissibilityConditions` decide whether the proposed operation applicatio
 
 For example, let `BridgeDoseTerms-7` be the obtaining F.9 Bridge between exact cells `WardDoseValueCell` and `ProtocolDoseValueCell` under its exact `BridgePredicateProfile`. The separate C.2.1 claim for reusing the protocol mechanism in the ward-to-protocol prescribing direction is negative because the use rule cannot meet the ward's zero tolerance for changing the dose unit or scale. That reuse stops before reliance. It also stops when the bounded-use claim is absent, when A.10 does not return `RelianceDisposition=pass` for an ordinary bounded use, or, when an actual named assurance claim is current, when B.3 has no `AssuranceResult` for the same use with `disposition=supported-for-use`. None of those outcomes makes the Bridge cease to obtain or makes an operation application admitted or actual.
 
-A changed effective `U.ReferenceScheme` identifies another mechanism episteme through C.2.1. A changed selected `CHR:ReferencePlane` reopens the exact CHR assertion; a changed `BoundedModelUseStructure` requires exact A.1.1/A.22 assertions. If the project also claims that a plane transition or model-use change relation occurred, name its admitted predicate and participants or stop that claim. For any comparison or change relation actually claimed, name its source and target objects, the comparison or relation asserted, and the meaning or structure it preserves and loses. Any reliability claim, including its Formality and Guarantee, remains under its direct reliability relation.
+A changed effective `ReferenceScheme` identifies another mechanism episteme through C.2.1. A changed selected `CHR:ReferencePlane` reopens the exact CHR assertion; a changed `BoundedModelUseStructure` requires exact A.1.1/A.22 assertions. If the project also claims that a plane transition or model-use change relation occurred, name its admitted predicate and participants or stop that claim. For any comparison or change relation actually claimed, name its source and target objects, the comparison or relation asserted, and the meaning or structure it preserves and loses. Any reliability claim, including its Formality and Guarantee, remains under its direct reliability relation.
 
 Numeric comparison and aggregation use A.19 and the direct measurement and scale patterns. Orders are declared before arithmetic is applied, units are made compatible before values are combined, and any reduction to one score cites its governing scalarization relation.
 
@@ -253,7 +253,7 @@ State a mechanism-declaration comparison only when its predicate is defined and 
 
 These rows test declaration content; they do not admit a relation kind or occurrence. If the corpus already admits the exact comparison relation, use its direct pattern. If one case-specific comparison claim is enough, use A.6.RCD disposition 2 only after its exact claim subject, constructor, endpoint facts, and preservation facts are recoverable; otherwise return A.6.RCD's exact missing-substrate or missing-governor result. When the same predicate must be reused across cases, apply A.6.RCD's reusable predicate-definition branch. If a downstream use instead needs comparison occurrences with their own identity and no relation kind has been admitted, return `missing-governor[mechanism-comparison-occurrence]`; a label such as *refinement* or the adjective *direct* does not fill that gap.
 
-In every branch, identify the exact endpoint mechanism epistemes, their effective `U.ReferenceScheme` values, claim scope, comparison predicate, and preserved and changed semantic content. Changed C.2.1 identity discriminators identify another episteme. If historical continuation matters to the comparison or receiving use, test the separate `EpistemeEditionRelation(earlierMechanismEpisteme, laterMechanismEpisteme)` under C.2.1. The two endpoint epistemes remain distinct participants; refinement, extension, equivalence, a shared name, or a later date establishes neither that relation nor one continuing episteme.
+In every branch, identify the exact endpoint mechanism epistemes, their effective `ReferenceScheme` values, claim scope, comparison predicate, and preserved and changed semantic content. Changed C.2.1 identity discriminators identify another episteme. If historical continuation matters to the comparison or receiving use, test the separate `EpistemeEditionRelation(earlierMechanismEpisteme, laterMechanismEpisteme)` under C.2.1. The two endpoint epistemes remain distinct participants; refinement, extension, equivalence, a shared name, or a later date establishes neither that relation nor one continuing episteme.
 
 **Continuing revision and replacement contrast.** `FixtureSelectionMechanism-R2` has changed claim content relative to `FixtureSelectionMechanism-R1`, so it is another episteme whose declaration content qualifies it as a mechanism. In the continuing branch, the source use and continuity rule identify which claim, EntityOfConcern and scheme features must be preserved or may change; the case facts satisfy that rule. Revision Work, Method, provenance and change facts can support this test. The obtaining `EpistemeEditionRelation(FixtureSelectionMechanism-R1, FixtureSelectionMechanism-R2)` lets G.11 follow the lineage. A proposed application or realization of R2 must satisfy R2's own laws and applicability; an R1 realization supplies no automatic R2 result. Existing claims pinned to R1 keep their referent, and only uses affected by the proposed change require reconsideration. In the replacement branch, `FixtureSelectionMechanism-Alt1` has another C.2.1 identity and no obtaining edition relation to R1. Assess Alt1 under its own applicability and comparison predicate; neither R1 currentness nor realization transfers merely from the replacement.
 
@@ -263,7 +263,7 @@ When a quotient, product, categorical morphism or similar construction serves as
 
 #### A.6.1:4.9 - Keep description, representation, and publication separate
 
-`U.Mechanism` is already an episteme. A second episteme that explains, summarizes, or compares it is a C.2.1 meta-description whose `EntityOfConcernRef` identifies the mechanism episteme. A diagram, equation set, program, or table is a representation governed by A.6.3 and A.6.3.RT when representation transition matters. An E.24.PUB publication occurrence makes one selected episteme edition available for its declared audience and use. A presentation carrier bears or renders the selected publication form under `PublicationFormBearingRelation`.
+`U.Mechanism` is already an episteme. A second episteme that explains, summarizes, or compares it is a C.2.1 meta-description whose `EntityOfConcernRef` identifies the mechanism episteme. A diagram, equation set, program, or table is a representation governed by A.6.3 and A.6.3.RT when representation transition matters. An E.24.PUB publication occurrence makes one selected episteme edition available for its declared audience and use. An independently identified physical or digital carrier bears the particular expression under `PublicationExpressionBearingRelation`. When that expression conforms to a selected reusable publication form, it also witnesses `PublicationFormBearingRelation`; the same expression must witness any form-mediated expression claim used with it to establish availability.
 
 A grouping of several mechanism epistemes and realizations may be selected as a `U.Structure` or shown through a `U.View` when that structure or view is current. The grouping does not admit another root kind by itself.
 
@@ -281,7 +281,7 @@ These conditions govern different objects. If entries, branches, returns, or sto
 
 #### A.6.1:4.11 - Change the exact object that changed
 
-When content, `EntityOfConcernRef` or effective `U.ReferenceScheme` changes, C.2.1 identifies the resulting episteme. Judge its `U.Signature` and `U.Mechanism` membership from its own declaration content. A changed operation, argument or result declaration, application predicate, identity or extent rule, law, admission predicate, applicability claim or dependency changes episteme identity when its semantic content changes.
+When content, `EntityOfConcernRef` or effective `ReferenceScheme` changes, C.2.1 identifies the resulting episteme. Judge its `U.Signature` and `U.Mechanism` membership from its own declaration content. A changed operation, argument or result declaration, application predicate, identity or extent rule, law, admission predicate, applicability claim or dependency changes episteme identity when its semantic content changes.
 
 Call that later episteme an edition of an earlier mechanism only when the C.2.1 `EpistemeEditionRelation` obtains. G.11 may then follow the lineage, while a use of the later declaration must satisfy its own conditions. Without an established edition relation, assess the later declaration independently; leave historical continuation unresolved when the needed facts are missing. A shared label, refinement claim, later publication or changed filename alone supplies no continuity.
 
@@ -397,7 +397,7 @@ Practical payoff: another evaluation can reuse the same typed operation while bi
 ### A.6.1:7 - Conformance Checklist
 
 1. **Exact episteme.** One `U.Mechanism` episteme and its exact `EntityOfConcernRef` are recoverable.
-2. **Identity.** Content, EntityOfConcern, and effective `U.ReferenceScheme` remain recoverable.
+2. **Identity.** Content, EntityOfConcern, and effective `ReferenceScheme` remain recoverable.
 3. **Signature dependence and family-level anchors.** The mechanism uses A.6.0 signature content and adds operation and admission semantics without becoming a second root beside `U.Episteme`. One truthful family-level `SubjectKind` and `RangedValueKind` pair is connected to the exact argument or result meanings that realize those declarations; optional `ResultKind` is present only for one distinct family-level result kind. Additional operation-local ValueKinds remain local. If no common pair exists, split the declaration or stop instead of using a union or generic input or output list.
 4. **Typed operation declarations.** Every reused operation has declaration-local argument and result meanings, exact ValueKinds, binding designation rules, and semantic cardinalities when needed. None is an A.6.5 SlotSpec.
 5. **Application semantics.** Every claimed particular application has an exact application predicate, identity rule, extent rule, and recoverable occurrence boundary.

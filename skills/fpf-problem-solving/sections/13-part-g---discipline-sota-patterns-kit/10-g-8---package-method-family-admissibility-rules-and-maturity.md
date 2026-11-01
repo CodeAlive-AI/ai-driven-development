@@ -123,7 +123,7 @@ Method-/generator‑specific payload pins are listed only inside the relevant `G
 
   * `DescriptorMapRef` is a **map‑reference** (typically used with QD archives).
   * `CharacteristicSpaceRef` is a **space‑reference** (grid/cell semantics, if used).
-* Editions are pinned on `…Ref.edition` fields (not on informal names).
+* A `CharacteristicSpaceRef` identifies the exact space. When the use depends on its defining episteme, carry `characteristicSpaceDescriptionRef: U.EpistemeRef` separately and resolve the pair under A.19:5.1.1.1. Other required edition pins follow their direct reference patterns; informal names supply no pin.
 
 #### G.8:4.3 - `SoS‑LOGBundle@Context` schema (conceptual; notation‑independent)
 
@@ -167,7 +167,8 @@ SoS-LOGBundle@Context :=
   DominanceRegime? ,
 
   // Optional: QD / OEE pins (only when those surfaces are declared)
-  CharacteristicSpaceRef.edition? ,
+  CharacteristicSpaceRef? ,
+  characteristicSpaceDescriptionRef? , // U.EpistemeRef; exact definition under A.19:5.1.1.1
   DescriptorMapRef.edition? ,
   DistanceDefRef.edition? ,
   EmitterPolicyRef? ,
@@ -307,7 +308,7 @@ This card is a **description** suitable for dispatch/audit and refresh; it is no
 * `DistanceDefRef.edition`
 * `EmitterPolicyRef`
 * `InsertionPolicyRef`
-* `CharacteristicSpaceRef.edition?` *(required iff cell boundaries / de‑dup / parity depend on the space definition)*
+* `CharacteristicSpaceRef` with separate `characteristicSpaceDescriptionRef: U.EpistemeRef` *(required iff cell boundaries / de‑dup / parity depend on the space definition; resolve the pair under A.19:5.1.1.1)*
 
 **RSCRTriggerKindIds:** `{RSCRTriggerKindId.TelemetryDelta, RSCRTriggerKindId.EditionPinChange, RSCRTriggerKindId.PolicyPinChange}`
 **Notes (wiring‑only):**
@@ -388,7 +389,7 @@ A maturity label can hide different evidence or admission conditions. Keep the e
 
 * **CC‑G8‑6 (QD/OEE edition discipline).**
   When QD/OEE surfaces are declared, the bundle/ledger MUST pin the relevant editions and policies (`DescriptorMapRef.edition`, `DistanceDefRef.edition`, insertion/emitter policies, and `TransferRulesRef.edition` when applicable).
-  `CharacteristicSpaceRef.edition` is **required iff** cell boundaries / de‑dup rules / parity depend on the space definition, and MUST NOT be used as a substitute for `DescriptorMapRef.edition`.
+  The exact `CharacteristicSpaceRef` and separate `characteristicSpaceDescriptionRef: U.EpistemeRef` are **required iff** cell boundaries / de‑dup rules / parity depend on the space definition. Resolve the pair under A.19:5.1.1.1; neither substitutes for `DescriptorMapRef.edition`.
 
 * **CC‑G8‑7 (Maturity is ordinal/poset).**
   Maturity ladders SHALL be authored as ordinal/poset descriptions with **closed** rung ids (`MaturityRungs`, UTS‑registered) and a declared `ReferencePlane`, and SHALL be published as a citable UTS artefact (editioned; twin‑register safe).
@@ -460,7 +461,7 @@ The kit connects decision rules, acceptance thresholds, provenance and set-value
 * [ ] Evidence is citable: at run time use `PathId/PathSliceId` when available; at packaging time provide resolvable `A10EvidenceGraphRef?[]` / `EvidenceGraphId?`.
 * [ ] Every actual sense, kind or plane correspondence retains its relation and receiving-use grounds under G.Core:4.2.3. For F.9 reuse, `G.8:Ext.BridgeReuseWiring` keeps the Bridge, separate bounded-use claim and reliance basis citable. `CL/CL^k/CL^plane` and `Φ/Ψ/Φ_plane` ids and editions are pinned when the calibration or named assurance account requires them; policy ids resolve under `F.8:8.1`.
 * [ ] `PortfolioMode` and dominance defaults are not restated: cite each default's governing definition through `G.Core.DefaultGoverningDefinitionIndex` (governing definitions live outside `G.8`, typically `G.5`).
-* [ ] When the bundle binds an actual QD use, its required descriptor, distance, insertion and emitter definitions are edition/policy pinned (`DescriptorMapRef.edition`, `DistanceDefRef.edition`, insertion/emitter policies); `CharacteristicSpaceRef.edition` is pinned iff cell boundaries/de-dup/parity depend on it; **Spaces ≠ Maps**. `PortfolioMode=Archive` alone does not activate these QD fields.
+* [ ] When the bundle binds an actual QD use, its required descriptor, distance, insertion and emitter definitions are edition/policy pinned (`DescriptorMapRef.edition`, `DistanceDefRef.edition`, insertion/emitter policies); the exact space and its separate description-episteme reference are pinned iff cell boundaries/de-dup/parity depend on the space definition; **Spaces ≠ Maps**. `PortfolioMode=Archive` alone does not activate these QD fields.
 * [ ] If open‑ended surfaces are declared, pin `GeneratorFamilyRowRef`, `TransferRulesRef.edition`, and any validity/coupler policy ids; unknown transfer validity is recorded as `degrade`/branching (no “fourth status”).
 * [ ] `MaturityRungs` is a closed, UTS‑registered set; the maturity ladder is ordinal/poset with a declared `ReferencePlane`; rung transitions cite evidence.
 * [ ] RSCR triggers are emitted as canonical `RSCRTriggerKindId` values (no prose-only “reasons”).

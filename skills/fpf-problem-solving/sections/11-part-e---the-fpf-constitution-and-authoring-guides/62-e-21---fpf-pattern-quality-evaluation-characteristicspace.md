@@ -182,7 +182,7 @@ An unfinished table, prose summary, or record with missing coordinate claims rem
 | 4 | `wellExpressedForDeclaredUse` | It is clear, evidenced, and bounded for the declared scope. |
 | 5 | `exceptionallyExpressedForDeclaredUse` | It is exceptional for the declared use across reinforcing loci and cases, without hidden cost or neighbour loss. |
 
-Values are ordinal content evaluations. They are not `U.Measure`s, averages, percentages, maturity-ladder steps, review votes, or landing status.
+Values are ordinal content evaluations. They are not C.16 measurement results, averages, percentages, maturity-ladder steps, review votes, or landing status.
 
 The result-bearing coordinate row has exactly this shape:
 

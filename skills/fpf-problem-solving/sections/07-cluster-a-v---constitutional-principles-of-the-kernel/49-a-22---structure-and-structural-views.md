@@ -142,7 +142,7 @@ StructureSelectionUse:
   selectionDecisionRef?, when an accountable choice is current:
 ```
 
-`StructureSelectionUse` is used when that dated performance is asserted; it records how the system performed the selection and reached the judgment. `SelectedStructureBasis` records the four identity discriminators plus the use-return boundary. Do not copy the system, work, method, result episteme, or decision into the structure basis. A `U.ClaimScope`, effective `U.ReferenceScheme`, or model-use structure that merely qualifies a claim about either record does not enter base identity. A scope referenced by an applied constraint or a model-use structure selected as a constituent enters only through that already declared discriminator. `stopOrReturnCondition` is another name for `stopOrNonAdmissibleUse`, not an independently filled value.
+`StructureSelectionUse` is used when that dated performance is asserted; it records how the system performed the selection and reached the judgment. `SelectedStructureBasis` records the four identity discriminators plus the use-return boundary. Do not copy the system, work, method, result episteme, or decision into the structure basis. A `U.ClaimScope`, effective reference scheme, or model-use structure that merely qualifies a claim about either record does not enter base identity. A scope referenced by an applied constraint or a model-use structure selected as a constituent enters only through that already declared discriminator. `stopOrReturnCondition` is another name for `stopOrNonAdmissibleUse`, not an independently filled value.
 
 A.22 structure-aspect names such as functional, mereological, modular, transformation-flow, control, semantic, causal, dynamical, algebraic, topological, geometric, or coarse-grained remain cues for which relations and constraints to recover. They do not identify a structure without the four discriminators. C.30.ASV `ArchitectureStructureKindRef` values remain architecture-local classifiers; a matching label does not imply identity.
 
@@ -171,6 +171,20 @@ DDD `Context Mapping` names a repeatable way of constructing a Context Map; a pa
 Use `E.18.NET` when one engineering use selects two or more independently identified transformation-flow structures, or nested networks of them, together with exact obtaining relations across their boundaries. Apply the four A.22 discriminators directly: the exact TFS or nested-network members are the constituents; the exact cross-member relation occurrences satisfy their defining predicates and identity rules; the exact applied endpoint, boundary-exposure, and acyclic direct-member constraints are selected under E.18.NET; and the named network-use frame states the practical question, admissible action, and stop or return condition. Any optional explanatory overread follows F.19:4 and remains outside structure identity. The return condition reopens selection when a member, relation, constraint, or use-frame value changes and is not a fifth identity discriminator. The result is one dependent, non-agentive `U.Structure` specialization. E.18.NET defines the network's detailed identity, reference, recursion, local-state, and conformance rules; A.22 does not copy those fields.
 
 Use the first discriminator to record structure constituents. Introduce a separately re-identifiable world-side membership relation only when a receiving use needs it and can supply its participants, obtaining predicate, and identity rule.
+
+#### A.22:4.9 - Resolve a reference to one selected structure
+
+Use `SelectedStructureReference` when a description, view, transformation account, or architecture claim must refer to the same selected structure. It is a bounded C.3 kind of reference values and an exact A.6.5 `RefKind` for this use, not another durable public U-kind. Its target range is the `U.Structure` individuals identified in :4.1.
+
+A candidate reference value is interpreted as `<R, d>`: one exact effective reference scheme and one designation value identified under that scheme. R supplies designation equality and the resolution Method. Designation d includes every registry snapshot/version, temporal qualifier or other input that selects its target under R. A time of inspection or freshness observation that does not select the target remains an evaluation condition. Successful resolutions of one fixed <R,d> must identify the same S; using a lookup basis that selects another target requires an explicit change to d or R. The reference value remains the same when both components remain the same under those rules. Different reference values can resolve to the same structure; identical printed tokens under different schemes need not. A carrier, description episteme, diagram, or the structure itself is outside this reference-value domain.
+
+The membership criterion requires R to resolve d to exactly one independently identified structure S with all four :4.1 discriminators. The receiving use fixes the declaration edition and C.3.2 judgment slice with explicit versions and a temporal selector. It evaluates resolution using the target-selecting pins already fixed in d under R; a time-independent resolution states that condition. A new assessment can leave the same reference unresolved when its fixed resolution grounds are unavailable, without selecting another target. For an admissible reference candidate, established unique resolution to S satisfies the criterion; a completed resolution to no target, several targets, or an object outside the target range fails it. An unavailable resolution dependency or unsettled target identity leaves the judgment unknown. An uninterpretable candidate or an inapplicable slice is not-applicable under C.3.2. In every case without established unique resolution, the structure-dependent use remains unresolved; no negative claim about a purported structure follows. The kind continues while this candidate interpretation and membership distinction remain unchanged.
+
+A returned document can help recover S, but the reader must recover the structure it describes rather than use the document as S. Resolve the four discriminators before testing any additional receiving condition, such as model-use or transformation-flow specialization. Reference membership establishes neither that specialization nor a description, viewpoint, architecture, or reliance relation. A proposal lacking established structure identity remains proposal content under C.2.1.
+
+Retargeting explicitly selects a new <R,d> by changing R or a target-selecting component of d, then repeats resolution and the affected receiving tests. A path whose current content describes a different organization cannot silently replace S. Preserve the earlier target and dependent conclusions; reopen only uses whose target or required basis changed. A changed carrier or notation can preserve both reference and target when R retains their meanings.
+
+For example, two drawings can designate one pump-flow structure with the same constituents, obtaining connections, applied constraints and use frame. They may use different reference values while resolving to that same S. A new drawing that proposes a replacement connection is proposal content until its required structure basis is established; retaining the old file path does not retarget the earlier reference or make the proposed connection obtain. For a registry reference with d=(CoolingFlow, registry@v1, t1), choosing the same printed path under registry@v2 and t2 changes d and requires explicit selection of that new reference. If the v1 snapshot becomes unavailable, the earlier reference remains the same and its resolution judgment becomes unknown; v2 does not supply a replacement target for it.
 
 #### A.22:4.2 - Structure claim reliance relation selection
 
@@ -203,7 +217,7 @@ StructuralDescription@Context ::= {
   effectiveReferenceScheme,
   selectedViewpointRef?,
   selectedModelUseStructureRef?,
-  structureRefs: FinSet(U.StructureRef),
+  structureRefs: FinSet(SelectedStructureReference),
   structureClaimRelianceRefs?: FinSet(EvidenceRelationRef | EvidenceProvenanceRelationRef | MathLensUseOutputRef | StructureUseReturnConditionRef | U.EpistemeRef),
   describingEpistemeRef,
   admissibleUse,
@@ -216,7 +230,7 @@ StructuralView@Context ::= {
   effectiveReferenceScheme,
   selectedViewpointRef?,
   selectedModelUseStructureRef?,
-  structureRefs: FinSet(U.StructureRef),
+  structureRefs: FinSet(SelectedStructureReference),
   structuralAspectDescriptionRefs?,
   selectedRelationsOrOperations,
   hiddenOrLostStructure,
@@ -258,7 +272,7 @@ ExtractedStructuralView@Context ::= {
   selectedViewpointRef?,
   selectedModelUseStructureRef?,
   sourceCorpusOrTraceRefs,
-  structureRefs: FinSet(U.StructureRef),
+  structureRefs: FinSet(SelectedStructureReference),
   extractionDescriptionRef,
   preservedStructure,
   lostStructure,
@@ -292,7 +306,7 @@ StructuralAspectDescription@Context ::= {
   selectedViewpointRef?,
   selectedModelUseStructureRef?,
   aspectKindRef,
-  structureRefs: FinSet(U.StructureRef),
+  structureRefs: FinSet(SelectedStructureReference),
   structureClaimRelianceRefs?: FinSet(EvidenceRelationRef | EvidenceProvenanceRelationRef | MathLensUseOutputRef | StructureUseReturnConditionRef | U.EpistemeRef),
   admissibleUse,
   nonAdmissibleUse?
@@ -304,8 +318,8 @@ StructuralCoarseningDescription@Context ::= {
   effectiveReferenceScheme,
   selectedViewpointRef?,
   selectedModelUseStructureRef?,
-  sourceStructureRefs: FinSet(U.StructureRef),
-  resultStructureRefs: FinSet(U.StructureRef),
+  sourceStructureRefs: FinSet(SelectedStructureReference),
+  resultStructureRefs: FinSet(SelectedStructureReference),
   preservedUnder,
   brokenBy,
   lostStructure,

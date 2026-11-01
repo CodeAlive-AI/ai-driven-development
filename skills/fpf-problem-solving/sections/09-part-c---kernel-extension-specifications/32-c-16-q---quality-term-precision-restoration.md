@@ -98,7 +98,7 @@ qualityTermAscription :=
 {
   bearerTuple: exact bearer designator(s),
   qualitySense: QualitySense,
-  effectiveReferenceScheme: U.ReferenceScheme,
+  effectiveReferenceScheme: EpistemeInterpretationScheme,
   probeOrModelFrameRef: exact domain-local probe or model frame,
   comparisonFrameRef: exact A.19.CPM-governed comparison frame | none,
   evaluatorRef: exact evaluator or policy ref | none,
@@ -234,7 +234,7 @@ A conforming `qualityTermAscription` SHALL make explicit:
    Name the intended evaluative family.
 
 3. **Effective ReferenceScheme.**
-   State the effective `U.ReferenceScheme` by value so every designator and local sense in the ascription is interpretable. A generic context label or a representation scheme is not a substitute.
+   State the effective reference scheme by value in the C.2.1:4.1.2 range `EpistemeInterpretationScheme`: supply the actual designation and interpretation rules with their semantic dependencies so every designator and local sense in the ascription is interpretable. A generic context label or a representation scheme is not a substitute.
 
 4. **Probe or model frame.**
    Name the exact domain-local exemplar pack, probe pack, test or criticism pack, Q-bundle definition, CG-frame, acceptance specification, control horizon, or other governed probe/model configuration.
@@ -636,7 +636,7 @@ Apply the following conditions to the branch actually used. A known endpoint fol
 3. **CC-C16Q-3 - Exact probe/model and comparison frames.**
    The domain-local probe or model frame and the separately governed comparison frame or explicit `none` are stated and reviewable; no generic field silently selects either frame.
 4. **CC-C16Q-4 - Effective scheme, evaluator, and viewpoint reference.**
-   The effective `U.ReferenceScheme` is explicit. Evaluator and `U.ViewpointRef` are separate; a non-`none` reference resolves one exact viewpoint episteme and grants no conformance, membership, authority, or result.
+   The effective reference scheme is explicit. Evaluator and `U.ViewpointRef` are separate; a non-`none` reference resolves one exact viewpoint episteme and grants no conformance, membership, authority, or result.
 5. **CC-C16Q-5 - Substrate and referencePlane are declared when relevant.**
     Cross-talk across articulation modes (including preconceptual), representation substrates (including latent-distributed and symbolic-local), or `ReferencePlane` values `world`, `concept`, and `episteme` is not allowed without explicit substrate and, when live, plane declarations.
 6. **CC-C16Q-6 - ClaimScope, slices, and `Γ_time` are explicit.**

@@ -25,7 +25,7 @@ For one-off wording repair, use `F.19`. Return to `E.10`, `E.10.ARCH`, `A.6.P`, 
 
 A name lets people refer to an independently governed value. The naming decision selects designations for that value; its subject pattern supplies the rules for identifying it and testing claims about it.
 
-`FPFCoreReferenceScheme` is the by-value `U.ReferenceScheme` used to interpret current FPF Core Tech labels and relation names; a name under another scheme carries that scheme by value. Most naming work stays within one `<ReferenceScheme, LocalSenseClaim>` projection and needs no Bridge. If one named use must relate different projections, follow the later cross-projection branch in section 4.4.1. Shared spelling, another scheme, or a selected model-use structure alone creates no Bridge, use claim, reliance, governed-value identity, or `U.BoundedContext`.
+`FPFCoreReferenceScheme` names the `EpistemeInterpretationScheme` value used to interpret current FPF Core Tech labels and relation names; a name under another scheme carries that scheme by value. C.2.1:4.1.1–4.1.2 identifies the actual rules, domains and semantic dependencies and supplies the range. Recover those rules for the naming claims being made; the scheme's label or a document about it does not supply the value. Most naming work stays within one `<ReferenceScheme, LocalSenseClaim>` projection and needs no Bridge. If one named use must relate different projections, follow the later cross-projection branch in section 4.4.1. Shared spelling, another scheme, or a selected model-use structure alone creates no Bridge, use claim, reliance, governed-value identity, or `U.BoundedContext`.
 
 `F.18` supplies the naming discipline for Part F and for any FPF pattern that needs a durable public term. It coordinates with:
 
@@ -58,7 +58,7 @@ Recover the governed value, then record a naming settlement whose kind, effectiv
 
 | Force | Naming tension |
 | --- | --- |
-| Local sense and reuse across different semantic-context projections | A name must be interpretable under one effective by-value `U.ReferenceScheme` while remaining bridgeable to a different `<ReferenceScheme, LocalSenseClaim>` projection without spelling-based identity. The projections can differ under one scheme. |
+| Local sense and reuse across different semantic-context projections | A name must be interpretable under one effective by-value `ReferenceScheme` while remaining bridgeable to a different `<ReferenceScheme, LocalSenseClaim>` projection without spelling-based identity. The projections can differ under one scheme. |
 | Brevity and ontology recovery | A short label helps conversation, but the `NameCard` must keep governed kind, effective reference scheme, local sense, subject pattern, and intended use recoverable. |
 | Continuity and correction | Readers need stable public names, while authors must be able to rename, split, merge, or retire names without erasing earlier uses. |
 | Familiarity and precision | Familiar words are easier to adopt, but some familiar words import wrong prototypes from another discipline. |
@@ -84,7 +84,7 @@ Every durable name must satisfy these invariants.
 | --- | --- |
 | Governed value first | Name the governed value or value family before naming the label. |
 | Direct pattern visible | Cite the pattern description containing the exact defining or constraining ClaimGraph for the value: for example A.2 with C.3 for a local system-role kind, A.2.1 for one system-role assignment species, A.6.5 for relation slot discipline, F.10 or A.19.SPR for status-value use, and A.10 for evidence use. |
-| Reference scheme visible | The NameCard carries the effective `U.ReferenceScheme` by value; a model-use structure, claim scope, project work, or other locality relation remains separate and appears only when the naming use needs it. |
+| Reference scheme visible | The NameCard carries its effective `EpistemeInterpretationScheme` value, with the rules needed to interpret the naming claims and local sense; a model-use structure, claim scope, project work, or other locality relation remains separate and appears only when the naming use needs it. |
 | Local sense visible | Every card states one exact local-sense claim under the effective scheme. A progressive-minimum card may state it directly as `LocalSenseRef`; an expanded card uses `LocalSenseCellRef` only when it resolves to the current F.17 scheme-based coordinate. Any basis episteme and local-sense basis relation remain separate. |
 | Two labels when reusable | The Tech label is precise; the Plain label helps ordinary readers. Both point to the same governed value. |
 | Candidate comparison visible | At least two plausible head families are considered unless a cited external standard fixes the label. |
@@ -93,7 +93,7 @@ Every durable name must satisfy these invariants.
 
 #### F.18:4.2 - `NameCard` Fields
 
-A NameCard is complete when its C.2.1 identity-bearing `U.ClaimGraph` is recoverable. A compact card states the governed value and subject pattern, effective scheme and local-sense claim, one selected Tech/Plain pair, candidate set, rejections, rationale, lineage, and reopen condition. The subject pattern can make the governed kind unambiguous. These claims together constitute the complete graph; an omitted expanded field contributes no hidden claim. The compact cards `NC-U-RELATION`, `NC-CROSS-CONTEXT-RELATION-STRUCTURE`, `NC-PROBLEM-CRITERION-APPLICABILITY-RELATION`, and `NC-PROBLEMATIC-FOR-RELATION` use this form. Section 4.2a carries four expanded bounded-model-use cards.
+A NameCard is complete when its full interpreted naming-settlement content (`ClaimGraph`) is recoverable under C.2.1. That value satisfies `NonemptyClaimContent`; membership alone does not supply the narrower naming-settlement claims required here. A compact card states the governed value and subject pattern, effective scheme and local-sense claim, one selected Tech/Plain pair, candidate set, rejections, rationale, lineage, and reopen condition. The subject pattern can make the governed kind unambiguous. These claims together constitute the complete semantic content; an omitted expanded field contributes no hidden claim. The compact cards `NC-U-RELATION`, `NC-CROSS-CONTEXT-RELATION-STRUCTURE`, `NC-PROBLEM-CRITERION-APPLICABILITY-RELATION`, and `NC-PROBLEMATIC-FOR-RELATION` use this form. Section 4.2a carries four expanded bounded-model-use cards.
 
 Use the expanded form only when the current naming use needs the additional position:
 
@@ -103,8 +103,8 @@ NameCard:
   GovernedValueRef:
   GovernedValueKindRef: [add when the kind is not unambiguous from the value and subject pattern, or a consumer needs the exact kind reference]
   SubjectPatternLocator:
-  ReferenceScheme:
-  ClaimContent: [reference to the complete U.ClaimGraph constituted by all identity-bearing naming-settlement claims]
+  ReferenceScheme: EpistemeInterpretationScheme, byValue
+  ClaimContent: NonemptyClaimContent // complete naming-settlement content; a designated input resolves under C.2.1:4.2.6
   LocalSenseCellRef: [add when a separately recoverable F.17 scheme-based SenseCell is current; otherwise LocalSenseRef carries the direct local-sense claim]
   LocalSenseBasisRelationRef: [add only for an actual separately governed basis relation]
   TechLabel:
@@ -122,8 +122,8 @@ NameCard:
 
 Field discipline:
 
-- The card is a `C.2.1` episteme. `GovernedValueRef` is its exact `EntityOfConcern`; the complete `U.ClaimGraph` constituted by all identity-bearing naming-settlement claims is its `ClaimContent`; and `ReferenceScheme` is the effective by-value `U.ReferenceScheme` under which that graph is interpreted. Changing any of those three identifies another card episteme. Changing only a graph designator, card designator, carrier, field order, or layout does not.
-- In the expanded form, the `ClaimContent` field resolves to that complete graph; it is never a scalar summary beside other identity-bearing claims. The readable sibling fields designate graph nodes, edges, or projections. Changing a selected designation, declared use, local-sense claim, coverage, rejection, rationale, lineage, or reopen claim changes the graph and therefore the card episteme even if the displayed `ClaimContent` reference string stays the same.
+- The card is a `C.2.1` episteme. `GovernedValueRef` resolves to its exact `EntityOfConcern`; `ClaimContent` is the complete interpreted naming-settlement content in `NonemptyClaimContent`; and `ReferenceScheme` is the effective by-value `EpistemeInterpretationScheme` under which those claims are interpreted. Changing any of those three values identifies another card episteme. Changing only a content or card designator, carrier, field order, or layout does not.
+- The expanded form's `ClaimContent` names the complete semantic value expressed by its readable sibling fields. The examples' `.ClaimGraph` labels are local content designators; a label or graph encoding is not the value. When a representation instead supplies a stored constituent designation, declare a C.2.1:4.2.6 `ClaimContentDesignation` whose exact source edition and selection resolve to that complete naming-settlement content. The source may supply its whole content or an intrinsic semantic selection; resolve it before applying the content-range and naming-completeness tests. Changing a selected Tech/Plain name asserted by the card, declared use, local-sense claim, coverage, rejection, rationale, lineage, or reopen claim changes the content and therefore the card episteme even if the displayed content or card designator stays the same.
 - `NameCardId` designates the card episteme. It is not another identity discriminator and does not create a card kind.
 - `GovernedValueRef` resolves to the exact already-governed object or value being named. `GovernedValueKindRef` is added when the kind is not already unambiguous from that value and its subject pattern, or when a receiving use needs the exact kind reference. For relation-facing wording the value reference resolves to exactly one of the objects distinguished in section 5.6; a field label, card, table row, or local phrase is not a proxy for that object.
 - `subjectPatternLocator` names the pattern description containing the exact ClaimGraph that defines or constrains the value. `F.18` defines only the naming-settlement predicate recorded in the card; a pattern that merely presents or teaches the name defines neither the value nor this settlement.
@@ -133,6 +133,8 @@ Field discipline:
 - `BridgeRefs` contains only actual F.9 Bridge occurrences whose relation-semantic profiles obtain for the exact endpoint senses. It carries no naming-use direction, use-specific rule, tolerated loss, polarity, reliance, or permission. When naming across different semantic-context projections relies on a Bridge, recover the separate C.2.1 claim and its current A.10 or B.3 reliance outside the NameCard; omit `BridgeRefs` when the settlement makes no Bridge claim.
 - `PublicRowStatus` is exactly one of `localOnly`, `pending`, or `current` when public-row use is current. `UnifiedTermRowRef` separately resolves to the exact row and is present only when status is `current` after the section 4.4 `F.17` entry/result gate passes. Omission in a compact card claims no row. A pending public use does not imply that a row already exists.
 - `RefreshCondition` names a change to the value, kind, scheme, local sense, Bridge, subject pattern or receiving use, or a repeated reader error, that requires reconsidering this settlement.
+
+An eligible partial scheme can still leave a naming claim or reference uninterpreted; resolve that gap before the exact settlement or public-row use. Known typography-only rules fail the scheme criterion. Content and scheme membership establish neither a supported local sense, an obtaining basis relation or Bridge, suitability for a named cross-local use, nor actual use.
 
 Names such as "foundational principle pattern set", "FPF Core", "domain principle framework", and "local practice framework" require ordinary `NameCard` work before public stabilization under an effective reference scheme. Source aliases such as `ZPF`, `SPF`, `TPF`, or broad `xPF` labels remain intake aliases until `F.18` has settled the governed value and kind, by-value reference scheme, exact local sense, rejected candidates, and admissible short form.
 
@@ -147,7 +149,7 @@ NameCard:
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.1.1
   ReferenceScheme: FPFCoreReferenceScheme
-  ClaimContent: NC-BOUNDED-MODEL-USE-STRUCTURE.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+  ClaimContent: NC-BOUNDED-MODEL-USE-STRUCTURE.ClaimGraph — the NonemptyClaimContent value expressed by all identity-bearing naming-settlement claims below
   LocalSenseCellRef: SenseCell.BoundedModelUseStructure.FPFCore.2026-07-25
   LocalSenseBasisRelationRef: LocalSenseBasisRelation.BoundedModelUseStructure.FPFCore.2026-07-25
   TechLabel: BoundedModelUseStructure
@@ -169,7 +171,7 @@ NameCard:
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.1.1
   ReferenceScheme: FPFCoreReferenceScheme
-  ClaimContent: NC-MODEL-APPLICABILITY-RELATION.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+  ClaimContent: NC-MODEL-APPLICABILITY-RELATION.ClaimGraph — the NonemptyClaimContent value expressed by all identity-bearing naming-settlement claims below
   LocalSenseCellRef: SenseCell.ModelApplicabilityRelation.FPFCore.2026-07-25
   LocalSenseBasisRelationRef: LocalSenseBasisRelation.ModelApplicabilityRelation.FPFCore.2026-07-25
   TechLabel: ModelApplicabilityRelation
@@ -191,7 +193,7 @@ NameCard:
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.1.1
   ReferenceScheme: FPFCoreReferenceScheme
-  ClaimContent: NC-MODEL-USE-RELATION.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+  ClaimContent: NC-MODEL-USE-RELATION.ClaimGraph — the NonemptyClaimContent value expressed by all identity-bearing naming-settlement claims below
   LocalSenseCellRef: SenseCell.ModelUseRelation.FPFCore.2026-07-25
   LocalSenseBasisRelationRef: LocalSenseBasisRelation.ModelUseRelation.FPFCore.2026-07-25
   TechLabel: ModelUseRelation
@@ -213,7 +215,7 @@ NameCard:
   GovernedValueKindRef: U.Kind
   SubjectPatternLocator: A.1.1
   ReferenceScheme: FPFCoreReferenceScheme
-  ClaimContent: NC-MODEL-EXPRESSION-COHERENCE-RELATION.ClaimGraph — complete C.2.1 U.ClaimGraph constituted by all identity-bearing naming-settlement claims designated below
+  ClaimContent: NC-MODEL-EXPRESSION-COHERENCE-RELATION.ClaimGraph — the NonemptyClaimContent value expressed by all identity-bearing naming-settlement claims below
   LocalSenseCellRef: SenseCell.ModelExpressionCoherenceRelation.FPFCore.2026-07-25
   LocalSenseBasisRelationRef: LocalSenseBasisRelation.ModelExpressionCoherenceRelation.FPFCore.2026-07-25
   TechLabel: ModelExpressionCoherenceRelation
@@ -588,7 +590,7 @@ Status-like and evidence-like wording must go to direct patterns:
 - source use: `E.10.D2` or source-use patterns;
 - description-episteme identity: `C.2.1`;
 - multi-view publication face or form: `E.17`;
-- availability of one selected edition, expression by a form, and bearing by a carrier: `E.24.PUB`;
+- availability of one selected edition through a particular expression and carrier, with reusable form conformance and form-mediated claims when current: `E.24.PUB`;
 - gate or admission result: the relevant gate, decision, or assurance pattern.
 
 Do not name these as system-role kinds or assignments unless that separate work-facing classification or direct assignment occurrence is actually current. “This standard plays the role of evidence” is repaired to the appropriate evidence-use, source-use, or status-use relation; it is not an assignment of the standard.
@@ -604,7 +606,7 @@ If a name touches relation, slot, interface, port, boundary, protocol, API, or s
 - `A.6.C`, protocol, service-access, and commitment patterns define or constrain API, protocol, and service-access cases.
 - Use C.2.1 for the identity and content of a claim-bearing interface-description episteme.
 - Use E.17 for a multi-view publication face or form.
-- Use E.24.PUB for availability of the selected edition and for the separate form-expression and carrier-bearing relations.
+- Use E.24.PUB for availability of the selected edition, exact expression and carrier-bearing relations, and separate reusable-form conformance. A combined form-mediated availability claim retains one shared expression witness.
 
 Before naming a relation-facing object, keep these settlements distinct:
 
@@ -782,7 +784,7 @@ Recovered candidates:
 - signature or SlotSpecs under `A.6.0` and `A.6.5`;
 - claim-bearing interface description under `C.2.1`;
 - multi-view publication face or form under `E.17`;
-- publication availability, form expression, or carrier bearing under `E.24.PUB`;
+- publication availability, exact expression, reusable form conformance, form-mediated expression, or carrier bearing under `E.24.PUB`;
 - a system-role assignment under A.2.1 only when an occurrence belongs to a declared species, has an admitted System as holder, and has the local kind as assigned-kind value; any responsibility or authority relation remains separate.
 
 F.18 settlement: do not mint `PaymentInterfaceRole`. First recover which governed value the phrase names. Then name that value through its subject pattern.
@@ -820,7 +822,7 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | Check | Passing condition |
 | --- | --- |
 | Governed value | The named value is recoverable and belongs to a subject pattern. |
-| Interpretation | The effective `U.ReferenceScheme` is carried by value and the local sense is named; model-use structure, claim scope, project work, and other locality relations remain separate. |
+| Interpretation | The effective `EpistemeInterpretationScheme` value interprets the complete naming content and named local sense; model-use structure, claim scope, project work, and other locality relations remain separate. |
 | Kind | The kind is not inferred from spelling, source, or practice. A system-role kind is already recoverable through its candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. |
 | Candidate set | Unless a cited external standard fixes the label under §4.1, the smallest set covers at least two live head families. Every plausible neighbouring-object reading is examined; any forced untested exception is explicit in `CandidateCoverage` and `RefreshCondition`. |
 | System-role boundary | System-role kind, classification, assignment, holder, capability, Method, Work, evidence, status, participant meaning, declaration place, and representation position are not collapsed. |

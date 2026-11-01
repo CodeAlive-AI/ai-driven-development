@@ -10,7 +10,7 @@ Use this pattern to make room for a useful question in work that people or agent
 
 Start at a small occasion already connected with the work: preparing a handover, demonstrating a result, explaining a consequential choice, or resuming work after a change. Recover what the result is supposed to enable and examine one available episode of obtaining and using it, including the adjustments that made it succeed. A performer can do this while preparing their own work; a colleague or team can arrange the occasion. It takes access and attention, even if only briefly.
 
-The useful result is a question with an attainable next move, an early cue retained for further consideration, or a reasoned continuation without change. Here, **inquiry** includes a short question to a colleague or consultation of an existing explanation; it need not become a research project. The method helps bring an unexamined part of work into consideration. It does not promise that every hidden difficulty will be found.
+A suitable long mantra can give that occasion a connected set of questions before a difficulty is felt. Section 4.2.1 explains how to choose it and use it to find a question, while keeping the substantive Method and its conditions. The useful result is a question with an attainable next move, an early cue retained for further consideration, or a reasoned continuation without change. Here, **inquiry** includes a short question to a colleague or consultation of an existing explanation; it need not become a research project. The method helps bring an unexamined part of work into consideration. It does not promise that every hidden difficulty will be found.
 
 Use an adequate existing answer directly. When the question is already clear, use its subject method. When a known useful method merely goes unnoticed at the right moment, A.15.11 helps arrange that encounter. Continuous monitoring, statistical anomaly detection and a full audit have their own methods; they are not mandatory implementations of this one.
 
@@ -54,6 +54,20 @@ Ask what makes an apparent difference acceptable or inevitable. “This always h
 Use subject knowledge to interpret the comparison. When that knowledge is missing, the question may concern what the result means or which conditions justify its use. Do not invent the missing observation or explanation. If the available account already explains the difference and supports the intended use, continue the work without creating a problem.
 
 An **anomaly** is a difference relative to an account, expectation, comparison class or intended use that merits consideration. Make that reference clear when it affects the next move. Statistical rarity, a breached requirement, a felt mismatch and an unused possibility are different reasons to look. **Problematization** develops or questions what is taken for granted so that a consequential question becomes possible. It can change the comparison itself: something previously normal can become questionable under a better account. Anomaly detection therefore need not be completed before problematization starts.
+
+##### B.5.PI:4.2.1 - Use a suitable mantra to look for an unrecognized problem
+
+An explanation of a Method, or of several connected Methods, shows which answers belong together and why their conditions matter. A **long mantra** recalls those connections in a short form. Applying it to ordinary work can reveal an unanswered consequential question before anyone experiences a failure. The reminder supplies a place to look; subject knowledge and comparison determine what the apparent gap means.
+
+Choose the mantra by the result being examined. For a project account, A.1.STM connects intended use, functioning, construction and creators. For a physical question whose answer depends on mathematics and computation, B.5.MPC connects the physical account, interpretation, mathematical consequence, computation and return. Recover the supplying Method's purpose, applicability, dependencies and order of justification. The system mantra's direction from receiving use and wider functioning to construction and creation belongs to its systemic question. Another Method can connect different subjects and require a different order. If the working question is already answered by a sufficient direct contribution, use that answer instead of adding a traversal.
+
+Apply the questions to a particular current episode or a possible case relevant to the work. An existing explanation, drawing, calculation or demonstration may supply enough material. Follow the connections that the decision consumes: what must each answer mean, what does the next operation need from it, and under which conditions can they be used together? Use the mantra's logical direction while admitting supported answers at their appropriate places and returning when a later condition changes an earlier premise. When a short phrase cannot explain the connection, obtain the developed Method or the missing subject knowledge. Merely reciting the questions cannot supply it.
+
+Keep a missing answer, an incompatible pair of answers and an adequately supported answer distinguishable. A blank can mean that the condition is unknown, irrelevant here, or absent in the situation; determine which consequence matters before calling it a defect. Work one discriminating consequence where useful: would the result still answer its use if this assumed connection failed or this ordinary condition changed? A constructed possible case can expose an unsupported general promise; it does not show that the failure has already occurred.
+
+Turn the consequential gap into an inquiry: what claim or condition needs to be established, why its answer could change the work, and what attainable observation, explanation or construction could resolve it? Continue through sections 4.3–4.5. C.22.2 is useful when the next operation needs an inspectable problem-side formulation; an actual Problem claim retains C.22.PFR's own conditions. Preserve a cue when that is all the occasion supports, and continue without change when the supplied grounds are already adequate.
+
+A felt difficulty can lead to the same questions by tracing what the work should enable and where its account fails. The mantra makes selected consequential dependencies available before that symptom is noticed. This explains the connection between the two entries without making either a universal diagnostic script. Keep the resulting question and useful continuation; the exercise succeeds by what it brings into consideration, not by finding an obligatory number of problems. Its speed, discovery rate and later effect depend on the actual use and require their own evidence.
 
 #### B.5.PI:4.3 - Keep the part that the familiar account loses
 
@@ -121,6 +135,18 @@ The assistant returns to the available exchange and tests its own advice. A pers
 
 If the reader can only point to the phrase and must leave, keep that passage and the unresolved concern in the existing conversation. A usable question may come later. Neither a polished paraphrase nor the reader's departure proves that the concern has been answered.
 
+#### B.5.PI:5.4 - A successful calculation leaves a physical connection unexamined
+
+A designer has a graph program that returns a valid two-colouring for three gears listed as a chain: contacts AB and BC. Its tests pass, and nobody has complained about the result. At an ordinary design discussion, the designer uses B.5.MPC's mantra to explain what the result says about the proposed arrangement. The question is whether all three gears can rotate while the stipulated meshes remain engaged. This inquiry needs no project SOI designation.
+
+The physical-to-mathematical connection asks what each edge represents and whether the contact list preserves the relevant physical contacts. Merely showing the successful program run leaves that question open. Inspecting the available design establishes, for this constructed case, a third external mesh CA. The assumed idealized model has fixed parallel axes, positive pitch radii and external meshes, with rotation viewed from one side. Under those conditions every mesh requires opposite rotation directions. Around the three-contact cycle the alternating directions conflict, so nonzero coupled rotation is excluded. B.5.MPC:5.2 develops the argument and its interpretation.
+
+The first useful question was therefore "Does this list include every contact that constrains rotation?" rather than "How do we improve the colouring program?" The program can remain correct for its input. A corrected contact representation returns the physical obstruction; the designer can compare a changed arrangement or a different justified contact model. Deleting the extra edge only in the graph would leave the proposed physical obstruction untouched.
+
+Change one condition: the apparent CA line is only a drawing crossing, and the design establishes no mesh between C and A. The chain representation then preserves the stipulated contacts. Retain its compatible-direction result under that model. Tooth engagement, torque and motion under load remain separate questions only when the receiving decision needs them. If the actual contact cannot yet be established, retain that particular uncertainty and obtain the needed inspection; a drawn proximity alone settles neither outcome.
+
+The mantra exposed a connection worth examining before a felt failure. The contact evidence and kinematic argument supplied the particular answer. This illustrates the inquiry operation and its bounded continuation; it is not an observation that mantra use has improved design performance.
+
 ### B.5.PI:6 - Bias-Annotation
 
 An expert can mistake the absence of their preferred method for a defect. A familiar institution can instead normalize costly adaptations or silence a contribution because it has no accepted vocabulary. Test both interpretations against what the work enables. The person who notices a difference need not know its cause; the person who supplies an explanation still needs to show that it answers the original use.
@@ -131,6 +157,7 @@ For guidance or an application claiming this method, examine the consequential c
 
 - The entry can occur without a recognized error, a diagnostic term or a request for an audit; its actual occasion, access and attentional demand are recoverable.
 - The comparison retains the receiving use and what it took to obtain the result, including successful adaptations when they matter.
+- When a mantra guides the comparison, its Method fits the question; its actual connections and justification order are applied to a recoverable case. A found gap becomes a qualified question or cue, while adequate answers and irrelevant conditions permit a stop.
 - A proposed interpretation is tested on the original case; the participant is not required to invent a diagnosis before their concern can be examined.
 - An early cue can remain open without being mislabeled a confirmed anomaly, Problem or selected investigation.
 - The continuation can obtain a usable contribution, identify missing means, or stop without change under stated conditions.
@@ -150,6 +177,8 @@ These checks cover the stated method, not every possible anomaly in the work und
 **Require a named defect before listening.** Work with a recoverable fragment or early cue. Interpretation and warrant can follow separately.
 
 **Turn every difference into a project.** Use an adequate explanation directly, make a small useful comparison, or retain the present arrangement. An inquiry must earn its additional burden.
+
+**Recite a mantra and declare a diagnosis.** Apply its substantive questions to the case, recover their needed grounds and investigate the consequential gap. An unanswered prompt alone establishes no defect.
 
 **Treat a passed checklist as comprehensive adequacy.** State what was checked and keep consequential concerns outside the list available for inquiry.
 
@@ -184,6 +213,7 @@ Reconsider the arrangement when a simpler ordinary interaction supplies the same
 - **A.15.11** arranges an encounter with a potentially useful method, including this inquiry method, and supports known-condition execution checklists. It does not supply the question developed here.
 - **B.5.EA** develops a correctable expression; **A.16.1** preserves an early cue; **B.4.1** makes grounded continuations explicit when needed. Their results can remain provisional.
 - **B.5.QD**, **B.5.QD.CF** and **B.5** develop questions, examine conflicting assumptions and connect reasoning contributions after or during this entry.
+- **A.1.STM** and **B.5.MPC** supply developed Methods and their long mantras for different receiving questions. This pattern uses a suitable reminder to initiate inquiry before a complaint; each supplying Method retains its subject knowledge, order of justification and conditions.
 - **C.22.PFR**, **C.22.2** and **E.18.1** govern problem-side distinctions, inspectable problem formulation and carrying an accepted formulation into work. They do not require every early cue to be such a formulation already.
 - **C.11.DUA/.CRC** help choose a worthwhile continuation; **A.15.7** selects a next action under current conditions. **E.11.PUA** returns a selected pattern's result to its receiving use and can reopen inquiry here.
 - **B.1.5** and **B.1.5.EW** recover simultaneous constituent and encompassing methods; **E.23.CDI** frames capability development when the needed contribution cannot yet be performed.

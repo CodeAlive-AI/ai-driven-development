@@ -112,7 +112,7 @@ Locate the first reason for disagreement, as B.5.TC:4.4 explains. It may be a di
 | `evidenceRelationRefs[]` | References to exact evidence relation occurrences supporting the trigger claims. |
 | `sourceUseRelationRefs[]` | References to exact source-use relation occurrences when a source is relied on. |
 
-The profile's exact ClaimGraph and effective `U.ReferenceScheme`, together with its existing-whole EntityOfConcern, constitute its C.2.1 identity. Any current `U.ClaimScope` and an independently selected model-use structure can qualify this episteme when its receiving use needs them. These identity values and qualifications do not identify either whole, become MHT trigger facts, or make any referenced relation obtain. A single cue warrants attention; it does not establish whole reidentification.
+The profile's complete interpreted claim content and effective reference scheme, together with its existing-whole EntityOfConcern, constitute its C.2.1 identity. Any current `U.ClaimScope` and an independently selected model-use structure can qualify this episteme when its receiving use needs them. These identity values and qualifications do not identify either whole, become MHT trigger facts, or make any referenced relation obtain. A single cue warrants attention; it does not establish whole reidentification.
 
 #### B.2:4.2 - Existing-whole comparison and optional result
 

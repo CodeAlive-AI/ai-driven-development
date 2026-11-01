@@ -24,6 +24,6 @@
 - [F.14 - Anti-Explosion Control for System-Role and Status Name Families](19-f-14---anti-explosion-control-for-system-role-and-status-nam.md) (314 lines) — "Name less; recover the governed values first."
 - [F.15 - Static and Regression Conformance Harness for Naming and Semantic Unification](20-f-15---static-and-regression-conformance-harness-for-naming.md) (476 lines) — "Prove locality and parsimony first; only then prove composition."
 - [F.16 - Worked-Example Template (Cross-Domain)](21-f-16---worked-example-template.md) (259 lines) — “Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”
-- [F.17 - Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet)](22-f-17---make-a-settled-naming-decision-recoverable-for-reuse.md) (1052 lines) — Type: Lexical row pattern (F)
-- [F.18 - Local-First Unification Naming Protocol](23-f-18---local-first-unification-naming-protocol.md) (880 lines) — For practitioners who need a durable reusable name for an already governed value.
+- [F.17 - Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet)](22-f-17---make-a-settled-naming-decision-recoverable-for-reuse.md) (1055 lines) — Type: Lexical row pattern (F)
+- [F.18 - Local-First Unification Naming Protocol](23-f-18---local-first-unification-naming-protocol.md) (882 lines) — For practitioners who need a durable reusable name for an already governed value.
 - [F.19 - Ontology-First Plain Technical Rewriting](24-f-19---ontology-first-plain-technical-rewriting.md) (358 lines) — Type: Plain-technical precision-restoration pattern

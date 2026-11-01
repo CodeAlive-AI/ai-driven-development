@@ -57,13 +57,14 @@ CN‑Spec {
   edition           : <edition>
   bearer_ref        : <evaluated bearer or bearer kind>
   characteristic_space_ref : <CharacteristicSpaceRef>
+  characteristicSpaceDescriptionRef? : <U.EpistemeRef to the exact defining/description episteme>
   scope_ref?        : <ClaimScopeRef>
   window?           : <qualification interval>
   reference_or_comparison_basis : <corpus, baseline, reference state, or declared comparison set>
   cs_basis          : [{
     slot_id         : <tech-token>,
-    characteristic  : <U.Characteristic>,
-    scale           : { type: nominal|ordinal|interval|ratio, unit?: <U.Unit>, bounds?: <…> },
+    characteristic  : <Characteristic defined under A.17>,
+    scale           : { type: nominal|ordinal|interval|ratio, unit?: <measurement unit under A.18/C.16>, bounds?: <…> },
     polarity        : up|down|target-range|none,
     // if needed: missingness?, admissible_domain? (MM‑CHR-consistent metadata)
   }]
@@ -88,6 +89,8 @@ CN‑Spec {
 ```
 
 **Reading:** the CN-frame is the selected characteristic space and chart for one named bearer and use. The normalization block is needed for normalization-based comparison; direct coordinatewise comparison can omit it. Add maintenance arrangements when the specification is retained for later reuse or maintained as a shared edition. `CN‑Spec` pins the editions, comparison basis, scope and window, normalization references, aggregation choice, and admission evidence that make that use auditable. A.19.UNM still defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies admissibility gates. CN‑Spec records the values used; it does not make a source, scope, or Bridge into a universal container. An actual `Γ_fold` cites its law and applicability basis. Its property codes express only the claims needed by this use; A.9 supplies an unresolved law choice or property check, while ULSAM retains the actual CHR fold and admissibility rules.
+
+The space reference selects the space itself. Add `characteristicSpaceDescriptionRef` when the selected use needs one exact definition or description edition; UNM and UINDM require this pin for their applications. Resolve the pair under A.19:5.1.1.1 and check that the description supplies the basis of that same space. An unchanged space may have a different description episteme, and a changed basis may require a different space even when the description retains its familiar title.
 
 **Mechanism-reference note.** `UNM_id` identifies the admitted normalization mechanism. `NormalizationMethodId` and `NormalizationMethodInstanceId` retain the meanings declared by A.19.UNM, and evidence for a relied-on instance remains with C.16. CN‑Spec neither redefines those terms nor implies transport or a cross-local relation.
 

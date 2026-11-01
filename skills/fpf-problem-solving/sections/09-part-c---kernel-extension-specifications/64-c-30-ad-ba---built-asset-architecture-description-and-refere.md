@@ -59,12 +59,12 @@ BuiltAssetArchitectureDescriptionUse@Project:
   builtAssetRef: U.HolonRef
   architectureRelationOccurrenceRefs?: FinSet(U.RelationRef)
   architectureClaimRefs?: FinSet(U.EpistemeRef)
-  selectedStructureRefs: FinSet(U.StructureRef)
+  selectedStructureRefs: FinSet(SelectedStructureReference)
   architectureStructuralViewRefs?: FinSet(U.EpistemeRef constrained to ArchitectureStructuralView)
   viewpointConformanceRelationRefs?: FinSet(EpistemeViewpointConformanceRelationRef)
   claimScope?: U.ClaimScope, byValue
   architectureConcernRefs?: FinSet(U.EpistemeRef)
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
   empiricalGroundingRelationRefs?: FinSet(U.RelationRef)
   referenceDesignationRelationRefs?: FinSet(U.RelationRef)
   assetInformationDescriptionRefs?: FinSet(U.EpistemeRef)
@@ -122,7 +122,7 @@ BuiltAssetReferenceDesignationUse:
   designationValue: local designation value, byValue
   referenceDesignationScheme: exact designation rules and their domain, byValue
   designatedEntityRef: U.EntityRef
-  selectedAspectStructureRef: U.StructureRef
+  selectedAspectStructureRef: SelectedStructureReference
   designationOrReferenceRelationRef?: U.RelationRef
   qualificationWindow:
   correspondingEntityRef?: U.EntityRef

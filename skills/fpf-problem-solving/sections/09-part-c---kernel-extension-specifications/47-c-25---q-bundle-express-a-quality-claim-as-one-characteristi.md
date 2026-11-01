@@ -66,7 +66,7 @@ The full escalation form is:
 
 `Q-Bundle := <Name, QualityBearer, ClaimScope?, WorkScope?, Measures[CHR], QualificationWindow?, Mechanisms?, Status?, Evidence?>`
 
-`Q-Bundle` names a C.25-local record-shaped part of one exact `U.ClaimGraph`. It is not a new Kernel kind, an independently identified world object, or a second identity beside the enclosing episteme. That episteme supplies the exact claim content, one independently identified `QualityBearer` as its EntityOfConcern, and the effective `U.ReferenceScheme` under which the quality claim is read.
+`Q-Bundle` names a C.25-local record-shaped portion of one episteme's exact claim content. It is not a new Kernel kind, an independently identified world object, or a second identity beside the enclosing episteme. That episteme supplies the exact claim content, one independently identified `QualityBearer` as its EntityOfConcern, and the effective reference scheme under which the quality claim is read.
 
 The `?` is operative: omit any optional slot unless changing it could change the current claim or receiving action. A bundle may therefore contain only Name, QualityBearer, Measures, and one load-bearing scope or window. The full tuple is an escalation aid, not a form every author must fill.
 

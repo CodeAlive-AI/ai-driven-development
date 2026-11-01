@@ -31,12 +31,12 @@ The opposite repair is also harmful. A rigid carrier template can put authorship
 | Whole and direct use | Readers need the language's shared problem, organization, reasons, and limits, while a direct question may be answered by one pattern. |
 | Product boundary | Support units may belong to one framework product; independently useful adjacent products need a truthful boundary and public return. |
 | Deterministic checking | Syntax checks should be reproducible, but they must not infer table purpose, product truth, or reader value from prose. |
-| Form and carrier separation | One form may be borne by several carriers, and one outer carrier may expose several products, without merging their identities. |
+| Form and carrier separation | Expressions following one reusable form may be borne by several carriers, and one outer carrier may expose several products, without merging their identities. |
 | Accessibility and translation | Predictable headings and navigation aid many readers and tools, while one English label set cannot silently stand in for every language or access need. |
 
 ### E.11.PFP:4 - Solution
 
-Apply one common reader-facing publication form to one FPF, DPF, or LPF edition. The profile is the reusable rule for that form. It is not the form itself, the presentation carrier that bears the form, the edition expressed by it, or the publication occurrence that makes the edition available.
+Apply common reader-facing publication-form rules to construct or inspect a particular expression of one FPF, DPF, or LPF edition. This profile states requirements for the selected reusable rules and their realization in the expression. Keep the expression, its reusable form, the independently identified presentation carrier whose actual state yields it, the expressed edition, and the publication occurrence distinct under E.24.PUB.
 
 #### E.11.PFP:4.1 - Preserve the compact product opening
 

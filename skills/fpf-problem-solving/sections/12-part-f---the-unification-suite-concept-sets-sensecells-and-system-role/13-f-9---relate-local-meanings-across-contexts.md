@@ -192,9 +192,9 @@ Observed losses, unit differences, counterexamples, and invariant checks belong 
 
 Recover and, when needed, individuate the direct relation before describing it. A Bridge may obtain without any assertion, description, Card, registry row, or publication.
 
-A Bridge occurrence description is constituted independently under C.2.1 from exact claim content, the already individuated occurrence as EntityOfConcern, and an effective `U.ReferenceScheme`. A proposal may instead be a modal C.2.1 episteme whose EntityOfConcern is the admitted direct Bridge relation kind and whose ClaimGraph designates proposed endpoints and profile; it supplies no positive occurrence reference and makes no relation obtain.
+A Bridge occurrence description is constituted independently under C.2.1 from its complete interpreted claim content, the already individuated occurrence as EntityOfConcern, and its effective interpretation rules (`ReferenceScheme`). Its content and rules satisfy the C.2.1:4.1.2 ranges; each endpoint cell retains its own scheme and exact local sense. A proposal may instead be a modal C.2.1 episteme whose EntityOfConcern is the admitted direct Bridge relation kind and whose ClaimGraph designates proposed endpoints and profile; it supplies no positive occurrence reference and makes no relation obtain.
 
-Use a Bridge Card only when durable reuse, delayed handoff, evidence review, audit, publication, or costly reversal makes reusable packaging worthwhile. A particular filled Card can be the description episteme when its C.2.1 triple supports that exact use. Its reusable layout remains separate and functions as a publication form only while the exact E.24.PUB `PublicationFormExpressionRelation` obtains for the selected edition and bounded use. When availability matters, publish one selected description/Card edition through E.24.PUB: its `EpistemePublicationRelation` occurrence, publication form, and `U.PresentationCarrier` remain distinct from the selected episteme and from the Bridge.
+Use a Bridge Card only when durable reuse, delayed handoff, evidence review, audit, publication, or costly reversal makes reusable packaging worthwhile. A particular filled Card's claim-bearing account can be the description episteme when its C.2.1 identity supports that exact use. Identify its particular expression separately from the reusable layout rules. `PublicationExpressionRelation` states which claim content can be recovered from the expression for the bounded use, and `PublicationFormConformanceRelation` states whether it follows the selected Card form. That expression witnesses the form-mediated `PublicationFormExpressionRelation`; use the same expression for any carrier-bearing claim relied on for availability. When availability matters, publish one selected description/Card edition through E.24.PUB: its `EpistemePublicationRelation` occurrence, particular expression, reusable form, and independently identified physical or digital carrier remain distinct from the selected episteme and from the Bridge.
 
 ```text
 BridgeCard:
@@ -210,7 +210,7 @@ BridgeCard:
   ObservedLossAndCounterexamples?:
   EvidenceWarrantAndCurrentness?:
   NearestNonUse?:
-  CardReferenceScheme:
+  CardReferenceScheme: EpistemeInterpretationScheme, byValue // rules interpreting this description/Card's complete claims
 ```
 
 For `ClaimMode: actual`, the description/Card episteme's exact EntityOfConcern is the already individuated Bridge occurrence. It may package the Bridge assertion, one or more bounded-use propositions, their evidence and polarity, the descriptive A.10 evidence-provenance path, the independently established direct relations it cites, and local disposition, or the exact B.3 `AssuranceResult` when an actual named assurance claim is current, plus currentness and nearest non-use. Its C.2.1 identity is not the occurrence identity.
@@ -435,7 +435,7 @@ The card concerns the admitted direct Bridge relation kind and places proposed e
 * **C.34.** Structural correspondence or morphism adequacy may cite an obtaining Bridge and a bounded-use claim but states its own preserved and lost architecture structure.
 * **A.6.REL.** Applies the F.9 recurrence and occurrence-identity rule only when a receiver must distinguish or reference the occurrence.
 * **C.2.1.** Independently constitutes assertions, modal proposals, occurrence-description epistemes, and filled Cards; none supplies the Bridge predicate or occurrence identity.
-* **E.24.PUB.** Use it for any `EpistemePublicationRelation` occurrence, publication form, and presentation carrier for a selected description/Card edition. Publishing creates neither Bridge nor receiving use.
+* **E.24.PUB.** Use it for any `EpistemePublicationRelation` occurrence, particular expression, any selected reusable publication form, and actual presentation carrier for a selected description/Card edition. Publishing creates neither Bridge nor receiving use.
 * **A.6.3.CSC, C.26.1, and C.26.2.** Govern coarsening, probe effects, and no-faithful-enough-report cases when those questions are live.
 
 ### F.9:16 - Revision law

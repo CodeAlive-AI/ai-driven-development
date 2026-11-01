@@ -8,9 +8,9 @@
 - **DocID:** `FPF` within **FPF Library**.
 - **Status:** Normative Core, eternal alpha: already used in working projects and development programs, while still evolving.
 
-Begin with the working question in your project; FPF helps make the reasoning explicit enough to review and improve.
+Begin with a working question or a worthwhile occasion to examine ordinary work; FPF helps make the reasoning explicit enough to review and improve.
 
-Before selecting framework guidance, read and apply [Using FPF Library](https://github.com/ailev/FPF/blob/main/USING-FPF.md). It explains how to search the Table of Contents and available publications, then read and apply the relevant pattern to your project question. If a reading test explicitly limits its reader to an isolated excerpt, use only the materials supplied for that test; do not add USING-FPF.md unless the test includes it.
+Before selecting framework guidance, read and apply [Using FPF Library](https://github.com/ailev/FPF/blob/main/USING-FPF.md). It explains how to search the Table of Contents and available publications, then read and apply the relevant pattern to the work. If a reading test explicitly limits its reader to an isolated excerpt, use only the materials supplied for that test; do not add USING-FPF.md unless the test includes it.
 
 Check that a link has opened the intended pattern or section. If it has not, treat that return as unresolved and follow [Resolve a portable reference](https://github.com/ailev/FPF/blob/main/USING-FPF.md#resolve-a-portable-reference) with the complete PatternID or SectionRef and any requested edition.
 

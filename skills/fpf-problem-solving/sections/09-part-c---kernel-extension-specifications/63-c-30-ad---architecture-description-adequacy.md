@@ -40,14 +40,14 @@ ArchitectureDescriptionUseCard@Project:
   entityOfConcernRef: exactly one of (
     describedHolonRef | architectureRelationOccurrenceRef | selectedStructureRef
   )
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
   architectureClaimRefs?: FinSet(U.EpistemeRef constrained to ArchitectureClaim)
   claimScope?: U.ClaimScope, byValue
   concernRefs?: FinSet(U.EntityRef)
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
   empiricalGroundingRelationRefs?: FinSet(U.RelationRef)
   descriptionPurpose:
-  selectedStructureRefs: FinSet(U.StructureRef)
+  selectedStructureRefs: FinSet(SelectedStructureReference)
   structureKindRefs: FinSet(ArchitectureStructureKindRef)
   viewpointRefs?: FinSet(U.EpistemeRef constrained to U.Viewpoint)
   architectureStructuralViewRefs?: FinSet(U.EpistemeRef constrained to ArchitectureStructuralView)
@@ -58,7 +58,7 @@ ArchitectureDescriptionUseCard@Project:
   representationRefs?: FinSet(U.EntityRef)
   publicationOccurrenceRefs?: FinSet(EpistemePublicationRelationRef)
   publicationFormRefs?: FinSet(U.EntityRef)
-  carrierRefs?: FinSet(U.EntityRef constrained to U.PresentationCarrier)
+  carrierRefs?: FinSet(U.EntityRef)
   specificationUseBoundary?:
   admissibleUse:
   nonAdmissibleUse:
@@ -68,6 +68,8 @@ ArchitectureDescriptionUseCard@Project:
 `@Project` is only a retrieval cue. It creates no project, authority, context, viewpoint, parthood, or Work. When an actual project matters, `projectWorkOccurrenceRef` names the composite `U.Work` recovered under `A.15.6`. Include `architectureDescriptionProjectUseRelationRef` only when a named pattern defines how this description use concerns that Work and the relation actually holds. A Work reference alone is not project locality. If locality matters but the relation is not defined, return `missing-governor`; otherwise omit both project-local fields.
 
 The card is optional and does not identify the description. For its declared use, it retains the described thing, reference scheme, purpose, selected structures and their kinds, allowed and disallowed use, and the next architecture move or pattern needed for a separate claim. If it calls the description a `U.View`, it also retains the viewpoint and the conformance relation that actually holds. Use the fuller `ArchitectureDescriptionUseAccount` when its fields help keep the applicable correspondence, source use or return, freshness, specification use, publication, representation, or project locality inspectable. An adequate existing account need not be reformatted. Keep any authority claim in its own pattern and relation.
+
+For publication use, each carrier reference resolves to an independently identified physical or digital entity whose actual state or realization yields the relevant expression. The carrier's domain supplies its identity rule. When the bearing claim needs inspection, recover its `PublicationExpressionBearingRelation` and exact expression under E.24.PUB. A reusable form has its separate conformance relation. A file object, immutable snapshot value and individual copy retain their different identity rules.
 
 **Not this pattern when.**
 
@@ -104,7 +106,7 @@ A practitioner needs to know whether an architecture description supports the in
 | Force | Tension |
 | --- | --- |
 | Useful description vs architecture overread | A good description guides architecture work, but it is not the architecture, an obtaining `ArchitectureRelation`, selected structure, decision claim, proof, or release authorization. |
-| Multi-view richness vs exact episteme identity | Several descriptions can be needed, but each keeps its exact claim graph, one EntityOfConcern, and effective `U.ReferenceScheme`; a description set does not blur those identities. |
+| Multi-view richness vs exact episteme identity | Several descriptions can be needed, but each keeps its exact claim graph, one EntityOfConcern, and effective `ReferenceScheme`; a description set does not blur those identities. |
 | Viewpoint utility vs automatic view membership | A viewpoint helps a practitioner or practice inspect an architecture, but only the independently obtaining E.17.0 conformance relation makes the same episteme a `U.View`; a viewpoint label or bundle does not. |
 | Viewpoint utility vs viewpoint-as-kind collapse | Viewpoints do not choose the selected structure kind. Use `C.30.ASV`, or the pattern for the particular structural view, to keep viewpoint conformance and structure-kind recovery separate. |
 | Reuse vs freshness | A reused architecture description names its source-to-use path and applicable source or structure edition. A source-return condition is added only when stronger use must return to a named source or the exact defining or constraining ClaimGraph. |
@@ -126,19 +128,19 @@ For built-asset architecture descriptions, BIM, IFC, asset information, digital 
 ```text
 ArchitectureDescriptionUseAccount:
   architectureDescriptionRef: U.EpistemeRef constrained to ArchitectureDescription
-  claimGraphRef: exactly one C.2.1 ClaimGraph
+  claimGraphRef: C.2.1 ClaimContentDesignation, selecting wholeClaimContent of architectureDescriptionRef
   entityOfConcernRef: exactly one of (
     describedHolonRef | architectureRelationOccurrenceRef | selectedStructureRef
   )
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
 
   architectureClaimRefs?: FinSet(U.EpistemeRef constrained to ArchitectureClaim)
-  selectedStructureRefs: FinSet(U.StructureRef)
+  selectedStructureRefs: FinSet(SelectedStructureReference)
   structureKindRefs: FinSet(ArchitectureStructureKindRef)
 
   claimScope?: U.ClaimScope, byValue
   concernRefs?: FinSet(U.EntityRef)
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
   empiricalGroundingRelationRefs?: FinSet(U.RelationRef)
 
   architectureStructuralViewRefs?: FinSet(U.EpistemeRef constrained to ArchitectureStructuralView)
@@ -155,18 +157,20 @@ ArchitectureDescriptionUseAccount:
   representationRefs?: FinSet(U.EntityRef)
   publicationOccurrenceRefs?: FinSet(EpistemePublicationRelationRef)
   publicationFormRefs?: FinSet(U.EntityRef)
-  carrierRefs?: FinSet(U.EntityRef constrained to U.PresentationCarrier)
+  carrierRefs?: FinSet(U.EntityRef)
   specificationUseBoundary?
   publicationUseBoundary?
   admissibleUse
   nonAdmissibleUse
 ```
 
-The account points to an already constituted episteme; it is not the episteme and does not add slots to it. Its `claimGraphRef`, `entityOfConcernRef`, and `effectiveReferenceScheme` fields expose the ClaimGraph, EntityOfConcern, and reference scheme that identify the episteme. When the described thing is a relation occurrence or selected structure, the participant trace can still recover its holon. `architectureClaimRefs` carries relevant claim content or trace; `selectedStructureRefs` names the structures described, and `structureKindRefs` classifies them.
+The account points to an already constituted episteme; it is not the episteme and does not add slots to it. Its `claimGraphRef` resolves under C.2.1:4.2.6 to that episteme's complete semantic claim content; the designation and any graph representation remain distinct from the value. Together with `entityOfConcernRef` and `effectiveReferenceScheme`, it exposes the constituents and EntityOfConcern that identify the episteme. When the described thing is a relation occurrence or selected structure, the participant trace can still recover its holon. `architectureClaimRefs` carries relevant claim content or trace; `selectedStructureRefs` names the structures described, and `structureKindRefs` classifies them.
+
+In the description-use card and account, `effectiveReferenceScheme` carries the rules of the selected architecture-description episteme. In the later `C.2.1 constitution` blocks, it carries the rules of the named view-use, correspondence or freshness claim itself. Each value satisfies C.2.1:4.1.2 `EpistemeInterpretationScheme` and must cover the actual claims and references being interpreted. Missing interpretation leaves the dependent description-use judgement unresolved; membership alone establishes neither view conformance, correspondence, freshness nor adequate support for the intended use.
 
 Minimum conformance for a retained `ArchitectureDescriptionUseAccount`:
 
-- the account resolves to one exact architecture-description episteme and exposes its exact ClaimGraph, one exact EntityOfConcern, and effective `U.ReferenceScheme`;
+- the account resolves to one exact architecture-description episteme and exposes its exact ClaimGraph, one exact EntityOfConcern, and effective `ReferenceScheme`;
 - actual architecture-relation references identify independently obtaining `ArchitectureRelation` occurrences; required, desired, expected, candidate, unresolved, or negative architecture content stays claim content;
 - `selectedStructureRefs` names the architecture-relevant structures being described, and `structureKindRefs` classifies those selected structures;
 - any cited `ArchitectureStructuralView` is the same description episteme admitted as `U.View` only by a separately obtaining E.17.0 conformance relation to one exact viewpoint episteme;
@@ -218,7 +222,7 @@ ArchitectureDescriptionViewUseClaim content:
   nonAdmissibleUse:
 C.2.1 constitution:
   entityOfConcernRef: exactly one architectureDescriptionSetRef
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
 ```
 
 `ArchitectureDescriptionViewUseClaim` is a C.2.1 episteme about one description set. The block separates what the claim says from the objects that identify it; it does not add slots to the episteme. The claim cannot make anything a `U.View` or make a view, set, viewpoint, or structure obtain. Each referenced view must already satisfy E.17.0. Use `C.30.ASV` to check viewpoint conformance and selected structure, `A.22` for structure itself, and `C.30` for an obtaining architecture relation or grounded architecture claim. Use `C.30.AD` only for description identity and use, cross-view correspondence, source use or return, freshness, specification or publication use, and the remaining architecture move.
@@ -261,7 +265,7 @@ ArchitectureDescriptionCorrespondenceClaim content:
   nonAdmissibleUse:
 C.2.1 constitution:
   entityOfConcernRef: exactly one architectureDescriptionSetRef
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
 ```
 
 `ArchitectureDescriptionCorrespondenceClaim` is a C.2.1 episteme about one description set. The block separates claim content from its C.2.1 identity; it does not add slots or create a world-side relation. Cite a direct correspondence relation only when its predicate is defined, the facts satisfy it, and the relation actually holds. A warranted correspondence claim lets a reader combine views to the extent it supports: for example, a supported `sameDescribedHolon` claim establishes their common subject. It does not thereby establish the truth of their other claims, assurance, gate passage, or the identity of an architecture-relation occurrence.
@@ -284,7 +288,7 @@ ArchitectureDescriptionFreshnessClaim content:
   sourceReturnCondition?
 C.2.1 constitution:
   entityOfConcernRef: exactly one ArchitectureDescriptionRef
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
 ```
 
 `ArchitectureDescriptionFreshnessClaim` is a C.2.1 episteme about one architecture description. The block separates claim content from its C.2.1 identity. Add a source-return condition only when stronger use must go back to a named source or defining or constraining ClaimGraph. Freshness bounds current use; it does not make the description true, grounded, evidence-sufficient, or publication-current.
@@ -304,7 +308,7 @@ ArchitectureDescriptionSpecificationUseAccount@Project:
   representationRef?: U.EntityRef
   publicationOccurrenceRef?: EpistemePublicationRelationRef
   publicationFormRef?: U.EntityRef
-  carrierRef?: U.EntityRef constrained to U.PresentationCarrier
+  carrierRef?: U.EntityRef
   declaredUse:
     coordination | implementationGuidance | procurement |
     verificationPlanning | assuranceInput | releaseInput |
@@ -354,7 +358,7 @@ For an architecture-description claim, record its C.2.1 identity and only the vi
 
 | Case | C.30.AD treatment |
 | --- | --- |
-| "The architecture is documented in this view set." | Treat the set as a package of separately identified architecture-description epistemes only if each has an exact claim graph, one EntityOfConcern, and effective `U.ReferenceScheme`. A member is a `U.View` only with its exact viewpoint episteme and independently obtaining E.17.0 conformance relation. The set is not the architecture, relation occurrence, or selected structure. |
+| "The architecture is documented in this view set." | Treat the set as a package of separately identified architecture-description epistemes only if each has an exact claim graph, one EntityOfConcern, and effective `ReferenceScheme`. A member is a `U.View` only with its exact viewpoint episteme and independently obtaining E.17.0 conformance relation. The set is not the architecture, relation occurrence, or selected structure. |
 | A transformation-flow graph expression is included in an architecture document. | Use `E.18.2` for the mathematical graph description, `E.18` for the selected flow structure, path, and crossing semantics, and `C.30.TFS-REL` when the graph is used by architecture. `C.30.AD` records the exact description and its path from the source expression into that use; add a source-return condition only if a stronger use must return to the named source or exact defining or constraining ClaimGraph. The graph expression or rendering creates no actual transformation. |
 | A model card claims deployment safety. | Use `C.30.AD` only if the card publishes or represents a description episteme about an exact architecture-side object. Use the direct domain pattern for the safety or release claim, `B.3` for a separate named safety-assurance claim, `A.10` for evidence, and `A.21` only for a named gate decision. |
 | A generated code-agent relation graph shows modules and calls. | Treat the graph as a generated representation or source publication. Recover observed, inferred, and unknown relations; use `C.30.ASV` or `C.30.TFS-REL` only when an exact architecture structural view or flow relation is being used. Generation and display alone establish neither relation occurrence nor view membership; observed relations still need the facts and predicate that identify them. |
@@ -386,7 +390,7 @@ After an actual placement change at t2, the t1 deployment description can remain
 
 | Check | Condition to establish | Repair if failed |
 | --- | --- | --- |
-| **CC-C30AD-1 Episteme identity.** | Every architecture description has one exact claim graph, one exact EntityOfConcern—holon, obtaining `ArchitectureRelation` occurrence, or selected structure—and an effective `U.ReferenceScheme`. | Add the missing C.2.1 identity component or use `C.30`/`A.22` until the subject-side object is recoverable. |
+| **CC-C30AD-1 Episteme identity.** | Every architecture description has one exact claim graph, one exact EntityOfConcern—holon, obtaining `ArchitectureRelation` occurrence, or selected structure—and an effective `ReferenceScheme`. | Add the missing C.2.1 identity component or use `C.30`/`A.22` until the subject-side object is recoverable. |
 | **CC-C30AD-2 Subject and holon recovery.** | The one EntityOfConcern is supplied directly. If it is an architecture-relation occurrence or selected structure, its participant trace recovers the exact holon without copying that holon into description identity; architecture-claim refs remain optional content or trace. | Restore the exact EntityOfConcern and participant trace; remove derived identity from an optional architecture-claim field. |
 | **CC-C30AD-2a Traceable multi-view chain.** | For a description use that relies on a view, the reader can recover the concern, viewpoint, conformance relation, same episteme as `U.View`, EntityOfConcern, selected structure, optional actual architecture relation, description use (or set use when current), and next architecture move or pattern needed for a separate claim. Add allocation, responsibility, source use, representation, publication, correspondence, project use, or stronger-use return only when it is current. Responsibility names its own predicate and participants or the missing governor; assignment and viewpoint establish neither responsibility nor authority. | Add the missing object or relation, narrow the allowed use, or use the pattern that defines how to recover it. |
 | **CC-C30AD-3 Viewpoint and structure kind.** | Every asserted architecture structural view identifies the candidate episteme, exact viewpoint episteme, independently obtaining five-part E.17.0 conformance relation, selected structure, and structure kind. | Use `E.17.0` and `C.30.ASV` before relying on the view; a label, query, bundle, diagram, or publication is insufficient. |

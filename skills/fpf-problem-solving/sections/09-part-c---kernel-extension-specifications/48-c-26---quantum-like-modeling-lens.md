@@ -14,7 +14,7 @@ Use this pattern only after the ordinary FPF subject assertion and exact predica
 
 **What this buys.** The user keeps the ordinary FPF pattern in charge and adds only the minimum quantum-like lens needed to prevent that concrete representational mistake.
 
-**Identity before the lens.** When C.26 carries a quality ascription or model claim, first name the quality bearer or C.2.1 claim-bearing episteme, its effective `U.ReferenceScheme`, the probe or model frame, the comparison frame, and the applicable `U.ClaimScope`. State separately whether an `EpistemeEmpiricalGroundingRelation` obtains; a measurement, evidence reference, card, or label does not make it obtain.
+**Identity before the lens.** When C.26 carries a quality ascription or model claim, first name the quality bearer or C.2.1 claim-bearing episteme, its effective reference scheme, the probe or model frame, the comparison frame, and the applicable `U.ClaimScope`. State separately whether an `EpistemeEmpiricalGroundingRelation` obtains; a measurement, evidence reference, card, or label does not make it obtain.
 
 If a viewpoint matters, record one `U.ViewpointRef` that resolves to the `U.Viewpoint` episteme P.
 
@@ -44,7 +44,7 @@ Ordinary modeling questions that can expose a QL need are listed below. C.26.1â€
 Plain glosses:
 - `quantum-like`: a detached mathematical or representational lens, not a claim about what the target is made of.
 - `probe`: an operation that both produces an output and may change the represented state or admissible use of the output.
-- `frame`: the exact probe frame, measurement frame, comparison frame, or model frame selected by its subject pattern; the effective `U.ReferenceScheme` remains a separate part of the claim-use account.
+- `frame`: the exact probe frame, measurement frame, comparison frame, or model frame selected by its subject pattern; the effective reference scheme remains a separate part of the claim-use account.
 - `state`: the represented condition relevant to the current decision.
 - `state update`: a typed update claim. When load-bearing, say whether the update is a system change, work change, epistemic reading update, carrier update, emitted-output update, formal model update, or update-law change; do not let one phrase carry all of them.
 - `context`: when locality may matter, recover the exact claim scope, reference scheme, local-sense endpoint, selected model-use structure, qualification window, viewpoint relation, or direct subject relation that the sentence actually needs.
@@ -108,7 +108,7 @@ Start with the ordinary FPF pattern. Recover the exact claim, bearer or EntityOf
 Application sequence:
 
 1. Name the ordinary FPF pattern that already carries the baseline question.
-2. Recover the exact claim-bearing subject: quality bearer or C.2.1 model-claim episteme, effective `U.ReferenceScheme`, probe or model frame, comparison frame, and `U.ClaimScope`; record grounding and viewpoint only through their separately obtaining relations.
+2. Recover the exact claim-bearing subject: quality bearer or C.2.1 model-claim episteme, effective reference scheme, probe or model frame, comparison frame, and `U.ClaimScope`; record grounding and viewpoint only through their separately obtaining relations.
 3. Name the concrete representational mistake: passive read, shared comparison frame, false faithful-enough export claim for the intended use, exact-state shortcut, or unsupported coarsened representation.
 4. Apply the ordinary subject patterns and retain C.26 only if one named contextual-model obstruction survives and changes the admissible inference or action.
 5. Explain the surviving cue and its useful consequence in a QL-lite note; otherwise return to the ordinary subject pattern without QL wording. Ordinary prose can supply the note when its required content is recoverable.
@@ -178,7 +178,7 @@ For a retained QL use, the following questions organize a short note. Use ordina
 
 | Field | Question |
 | --- | --- |
-| Claim-bearing subject and scheme | What exact quality bearer and ascription, or exact C.2.1 model-claim episteme and EntityOfConcern, is at issue under which effective `U.ReferenceScheme`? |
+| Claim-bearing subject and scheme | What exact quality bearer and ascription, or exact C.2.1 model-claim episteme and EntityOfConcern, is at issue under which effective reference scheme? |
 | Claim-use boundary | Which exact probe or model frame, comparison frame, and `U.ClaimScope` govern this use? |
 | Grounding and viewpoint | Which exact `EpistemeEmpiricalGroundingRelation` obtains, or is grounding explicitly absent? If viewpoint matters, which `U.ViewpointRef` resolves to exact P? If evaluation Work is claimed, which System performs it? |
 | Ordinary FPF pattern | Which FPF pattern already carries the baseline question? |
@@ -490,7 +490,7 @@ The pattern may under-admit some mathematically valid QL models when the author 
 | CC-C26.9 | The support matches the receiving claim and reliance described in :12b. A prediction, model-adoption, assurance or comparative-performance conclusion receives its needed account; a conditional explanation reused under the same assumptions retains its sufficient account. |
 | CC-C26.10 | The text does not mint `U.Probe`, generic `U.State`, `U.DistributedState`, `U.Lens`, a new boundary kind, or a social-substance kind. |
 | CC-C26.11 | A cold reader can tell what changes in practice in the first minute. |
-| CC-C26.12 | Every quality ascription or model claim carried by C.26 names the exact bearer or C.2.1 claim-bearing episteme, effective `U.ReferenceScheme`, probe/model frame, comparison frame, `U.ClaimScope`, and the separately obtaining grounding relation or its explicit absence. |
+| CC-C26.12 | Every quality ascription or model claim carried by C.26 names the exact bearer or C.2.1 claim-bearing episteme, effective reference scheme, probe/model frame, comparison frame, `U.ClaimScope`, and the separately obtaining grounding relation or its explicit absence. |
 | CC-C26.13 | Any viewpoint use has one `U.ViewpointRef` resolving to exact P; the evaluator, P, and the reference remain distinct. |
 | CC-C26.14 | C.26 opens only for one named contextual-model obstruction that survives ordinary subject patterns and changes an admissible inference or action; local outputs stay in their own algebras unless an admitted comparison route exists. |
 | CC-C26.15 | A `BoundedModelUseStructure` is selected independently for a named receiving use, and any subject crossing has its own exact direct governor and occurrence. |

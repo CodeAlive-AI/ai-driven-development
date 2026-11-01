@@ -105,12 +105,14 @@ This pattern defines (governing-pattern, wiring‑friendly):
 
 * **Direct signature components:**
 
-  * **SubjectKind:** `U.Measure`, supplied by the measures in the left and right profiles.
+  * **SubjectKind:** `ReadingContent`, supplied by the reading contents in the left and right profiles.
   * **RangedValueKind:** CHR-typed profile values in a CG-Frame (see `CG-Spec.ComparatorSet`).
   * Results are declared per operation: a set of relation/poset tokens and a separate eligibility judgment.
   * Input qualification: comparison ranges over admitted left/right profiles in one exact U.ClaimScope. The selected U.ContextSlice values are its members under A.2.6; these qualifications do not define the calculation extent or add a duplicate membership relation.
 
   These are direct A.6.0 declaration components. They do not form an additional comparison-content container, and they do not absorb comparator admission, evaluation, evidence-use, or replay relations.
+
+**Reading range.** `ReadingContent` and profile interpretation come from C.16:5.5.1. Resolve each component's subject, Characteristic, Scale, attribution and conditions before using its values. A content member can be conditional or insufficiently supported; this operation's eligibility and evidence rules still decide whether it may be used. Profiles retain the positions or contributor identities, ordering and multiplicity required by their declared basis. An independently materialized result episteme is distinct from the calculated Coordinate and the bound reading content.
 
 **Operation-local argument and result declarations**
 
@@ -118,7 +120,7 @@ Each argument meaning is declared separately for Compare and CompareEligibility.
 
 | Direction | Local designator | Meaning and ValueKind | Designation; cardinality |
 | --- | --- | --- | --- |
-| Argument | LeftProfileSlot | Left operand: set of U.Measure values with their exact basis positions, Characteristic and Scale | ByValue; 1 profile |
+| Argument | LeftProfileSlot | Left operand: profile of ReadingContent components with their exact basis positions, Characteristic and Scale | ByValue; 1 profile |
 | Argument | RightProfileSlot | Right operand of the same kind, matched by the comparator or a separately justified basis mapping | ByValue; 1 profile |
 | Argument | CNSpecSlot | CN-Spec governing admission and comparability of the operand pair | CNSpecRef; 1 |
 | Argument | CGSpecSlot | CG-Spec governing comparator admission, SCP and default evidence conditions | CGSpecRef; 1 |

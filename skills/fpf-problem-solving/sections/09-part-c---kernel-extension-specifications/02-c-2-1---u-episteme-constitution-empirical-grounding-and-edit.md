@@ -6,21 +6,21 @@
 
 **Plain name.** Episteme constitution.
 
-**Use this pattern when.** You need to identify or compare a body of knowledge: what it claims, the exact entity those claims concern, and the rules under which they are interpreted. A pump specification with a changed pressure threshold carries different claims. Publishing the same claims about the same pump under the same interpretation in another file preserves the episteme.
+**Use this pattern when.** You are developing, using or changing an account and need to recover what it says, how its claims can guide work, or what a change affects. Use the common method in :4.0, then the identity, grounding or edition branch needed for the question. A pump specification with a changed pressure threshold carries different claims. Publishing the same claims about the same pump under the same interpretation in another file preserves the episteme.
 
-**First useful move.** If the claim is still taking shape, use :4.1.1 to develop it in writing. Ask: what is claimed; what exact entity are the claims about; and what designation and interpretation rules make those claims readable about that entity? Include measurement, comparison or evaluation rules where the claims use them. If identity is all the task needs, stop after those answers. Otherwise name the concrete receiving use and open only the corresponding branch in :4.0. An unresolved uncertainty or choice is needed only when the use involves a real inquiry or decision.
+**First useful move.** Establish what the account must help its recipient understand or do. Recover the relevant claims, their subject and interpretation; write or draw what is understood when the account is still developing. A corrected sentence, an interpretable table or a justified answer about a changed dependency can finish the task. Section :4.0 connects these moves; :4.1.1 gives the exact identity comparison when needed.
 
-**One-line summary.** A `U.Episteme` is a knowledge holon identified by exact claim content, one exact EntityOfConcern, and the effective `ReferenceScheme` that makes the claims interpretable about that entity. Changing any of these three discriminators identifies another episteme.
+**One-line summary.** A `U.Episteme` is a claim-bearing holon identified by exact claim content, one exact EntityOfConcern, and the effective `ReferenceScheme` that makes the claims interpretable about that entity. Changing any of these three discriminators identifies another episteme.
 
 **Primary working reader and viewpoint.** The engineer or researcher comparing, revising, teaching, grounding or publishing that knowledge object. The working concern is to reidentify it through those uses and locate a change when it occurs.
 
 **Primary governed object and architecture.** One `U.Episteme` and its `EpistemeConstitutionRelation`, `EpistemeEmpiricalGroundingRelation` and `EpistemeEditionRelation`. The EntityOfConcern of the episteme is the entity its claims concern; for a pump specification, it is the pump, while C.2.1 governs the specification's identity.
 
-**What goes wrong if missed.** A shared filename hides changed claims, subject or interpretation; or a changed display is reported as a changed model. **What this buys.** The practitioner can identify the changed knowledge object or update only the relation affected by a new grounding, view or publication use.
+**What goes wrong if missed.** The reader confuses a whole account with selected claims, its subject or its expression; a shared filename can also hide changed claims or interpretation. **What this buys.** The practitioner can recover the needed meaning and grounds, locate a consequential change and repair the dependent account, expression or use.
 
 A theory, model, specification, proof or diagnosis can be an episteme when the selected object is that claim-bearing whole. A diagram can carry such claims too. When the task concerns its layout or the calculations available through its notation, use the publication or representation branch in :4.0.
 
-**Not this pattern when.** To inspect or change the pump, perform work, or apply a method, use that subject's direct pattern. Open C.2.1 when the identity of the claims describing it matters. A separately inspected classification assertion has its own claim content, subject and scheme; its governing criterion remains under `A.1` or `C.3.2`, with `E.24.UK` used for public U-kind admission.
+**Not this pattern when.** Use the subject's direct method to inspect or change the pump, perform work or apply a calculation when its account and grounds already suffice. Open C.2.1 when interpretation, episteme identity, grounding or a change in the account leaves the receiving use unclear. A separately inspected classification assertion has its own claim content, subject and scheme; its criterion remains under `A.1` or `C.3.2`, with `E.24.UK` used for public U-kind admission.
 
 ### C.2.1:1 - Problem Frame
 
@@ -60,17 +60,228 @@ The familiar Symbol-Concept-Object triangle can still introduce the difference a
 
 ### C.2.1:4 - Solution
 
-Identify each `U.Episteme` through `EpistemeConstitutionRelation`: first state what it says, what exact entity it concerns, and the scheme under which those claims are read. Then name what the reader will do with that episteme. Add a neighboring relation only when the reader's next sentence or action requires it. The conditional branches below supply the relevant direct relation and its test.
+Begin with the work the account must support and use :4.0 to develop, interpret or revise it. When comparison requires episteme identity, `EpistemeConstitutionRelation` identifies what it says, its exact subject and its effective interpretation. The later branches supply grounding, edition and dependent-use judgments at the precision the receiving work needs.
 
-**Local episteme mantra.** *Name the claims, what they concern, and the scheme that gives those claims their reference. Stop if identity is all the task needs. Otherwise name the concrete receiving use and add only the neighboring object or relation needed for its next sentence or action. Ask for an unresolved question only in a real inquiry or decision. Update episteme identity only when claim content, EntityOfConcern, or effective reference scheme changes; otherwise update the affected relation or object under its direct pattern.*
+**Local episteme mantra.** *Recover what the recipient needs to understand or do. Connect the claims, their subject and interpretation with the grounds and expression that let the recipient use them. Follow a change to the results that depended on it. Compare exact episteme identity through claim content, EntityOfConcern and effective reference scheme when that comparison matters; otherwise repair the affected expression, relation or use and finish at the useful result.*
 
-The mantra is a recall aid, not a work plan. The application method and stop conditions are carried by sections 4.1-4.9; section 4.10 is a later reference for relation and neighboring-object distinctions.
+The mantra is a recall aid. Section 4.0 explains the common method; sections 4.1–4.9 supply exact constructions and change rules. Section 4.10 is a later reference for relation and neighboring-object distinctions.
 
 #### C.2.1:4.0 - First-use completeness questions
 
-Begin with the three questions that identify the episteme. They are identity questions, not fields to fill. When the answers are still being developed, :4.1.1 connects the writing work in C.2.4:4.6 to the resulting constitution judgment.
+##### C.2.1:4.0.1 - When this helps
 
-| Always ask | Exact object recovered |
+Use this guidance when you are preparing, using or changing an account and need to know what its content says, how another person or system can use it, or what a change affects. A useful first result can be a corrected sentence, an interpretable table or an answer about which earlier conclusion needs reconsideration.
+
+Begin with the work the account must support. Someone may need to understand a mechanism, compare two options, check a requirement or perform a calculation. Establish enough of that use to judge the account's adequacy. A familiar task can already supply its purpose; developing an account can also expose a question that was previously unclear.
+
+The general approach is to connect the claims about the subject with the grounds for checking or using them, the expression through which the recipient recovers their meaning, and the operation the recipient needs to perform. When one changes, follow the affected connections. The following sections explain those connections and give the appropriate direct Methods.
+
+If the account and its use are already clear, perform the subject work directly. Open the additional distinctions when they resolve a real uncertainty about meaning, preservation, expression or availability.
+
+##### C.2.1:4.0.2 - Knowledge work: claims, grounds and what people can do
+
+When a team develops knowledge about a subject, it can obtain several connected results. It articulates claims that can be examined, establishes grounds for relying on them, and learns to use the relevant distinctions in its work. Developing an account, supporting its claims and acquiring that ability can require different actions.
+
+An **episteme**, E of kind `U.Episteme`, is an organized claim-bearing whole about an identified subject. A condition can qualify an assertion, a premise can support a conclusion, and an exception can limit a rule. These connections make it possible to examine and use the claims together. In FPF, the exact claims G, their subject T and their effective interpretation R identify E. The next section explains those constituents and participants. A **kind** classifies independently identified entities by a membership criterion. `U.Episteme` is one such kind; E is a member. A.1 and C.3 govern that distinction. A specialized kind such as `U.WorkPlan` adds its own membership condition while retaining the identity of the same episteme.
+
+In a request to “revise this knowledge,” establish which result needs revision. If the team means its account of the pump's operating range, identify E and the claims that need correction. If it means the pressure-limit premise used by a calculation, identify that selected claim content. If the team instead needs technicians to recognize when the limit applies, the intended change concerns what those people can do. The appropriate action follows from the subject of the request.
+
+Knowledge engineering can retain hypotheses, disputed assertions, known errors and requirements as identifiable epistemes. They remain available for testing, comparison and correction. When a practice calls a claim established knowledge, recover the claim and the grounds and conditions under which the practice relies on it. Episteme identity alone supplies no judgement about that reliance.
+
+For a requirement, distinguish the assertion that a requirement has been imposed from the requirement it expresses. “The drawing requires a clearance of at least 0.4 mm” reports something about the drawing. “The clearance shall be at least 0.4 mm” states a condition on the intended assembly. The first can be checked against the drawing; relying on the second involves the applicable requirement and checking practice. A plan similarly preserves its intended coordination claims from the planning perspective, including after the planned time.
+
+When the receiving question is whether a person or team can apply the knowledge, name the work they must perform and the conditions of that performance. A.2.2 supplies the ability-and-fit comparison. For example, a technician may be able to explain a pressure limit while still needing help to select the correct limit for a changed operating condition. Qualify each claim by its actual evidence.
+
+The common work is to maintain the connections: observation and reasoning inform the claims; an expression makes those claims recoverable; a person or system uses them in a particular operation; the operation and its consequences can expose a need to revise the account or its use. The following sections explain how to follow those returns.
+
+##### C.2.1:4.0.3 - Recover what the account says
+
+Read enough connected material to recover the claims and the relations that change their meaning. Identify the subject of those claims and how names, quantities and modal expressions are interpreted. The same numerical string can state an observed value, a proposed value or a required limit. Recover that force from the account.
+
+For a developing account, write or draw the part already understood and use it to find the missing condition or connection. Return a missing fact to observation, an unsupported inference to its reasoning, and an unclear expression to its construction. These different repairs may be needed together. C.2.4 explains progressive articulation; A.6.3.RT.OE explains how to construct an expression that supports the next operation.
+
+Once the claims are determinate, compare an account through the C.2.1 constitution:
+
+- **Claim content:** what is asserted, including consequential conditions, qualifications and relations among claims.
+- **EntityOfConcern:** the particular subject those claims concern.
+- **Effective reference scheme:** the designation and interpretation rules actually used to understand the claims about that subject.
+
+These are semantic discriminators. For this whole, the subject T is an independently identified `U.Entity` serving as EntityOfConcern. Claim content G and effective rules R are abstract `U.Entity` individuals under C.2.1:4.1.1. G is the semantic constituent containing the interpreted claims; it is not a second name for the whole E. For reusable typed uses, C.2.1:4.1.2 supplies the ranges `NonemptyClaimContent` and `EpistemeInterpretationScheme`. Those declared ranges are not public U-kinds named `U.ClaimGraph` and `U.ReferenceScheme`.
+
+A file boundary is useful for finding material, while the selected claims and their organization determine the account being compared. Several files can express one account; a file can contain several independently identified accounts. When only a claim or a subgraph is needed, select that constituent explicitly. When a new episteme is constituted about it, the selected content becomes the EntityOfConcern of that new episteme.
+
+If a word, sign or reference still permits materially different readings, retain that uncertainty and obtain the missing interpretation before relying on the disputed conclusion. Where exact constituent identification matters, C.2.1 supplies `NonemptyClaimContent`, `EpistemeInterpretationScheme`, `ClaimContentDesignation` and `SchemeDesignation`. Ordinary writing needs only the explanations and references sufficient for its actual use.
+
+##### C.2.1:4.0.4 - Connect the claims with their subject and grounds
+
+Aboutness identifies what a claim concerns. To decide how that claim can guide work, establish the connection that lets the relevant practice examine or use it. The connection depends on the claim. An empirical assertion needs an observation or test bearing on what it asserts; a formal conclusion needs its derivation under the stated rules; applying a requirement needs the grounds of its force and a way to check compliance.
+
+For an empirical claim, identify what would be observed, measured or affected in a test. Recover the actual observation, measurement, intervention or test and explain how its outcome bears on the claim under the account's interpretation. Name the whole participating in that empirical connection. C.2.1 calls that participant the **GroundingHolon**: H of kind `U.Holon`, involved in the mapped empirical relations. `GroundingHolon` names its participation in this relation; `GroundingHolonSlot` is the corresponding declaration position.
+
+Select the claims this grounding covers. A test of one pressure range can ground the specified claims about that range; a statement about fatigue life needs the corresponding test or other applicable grounds. A description of a general Method can concern the Method while a particular system participating in its trial supplies the grounding holon. The subject described and the holon participating in its test therefore have separately recoverable jobs.
+
+An **evidence account** is an episteme whose claims report a result, observation or argument offered for a target claim. State which claim it supports, challenges or constrains, and why that inference is warranted. A.2.4 governs this evidence-use relation; A.10 recovers the source, production and reliance conditions that the present use needs. The observation or test and the report about it can change independently. A report can be corrected after discovering that it identifies the wrong specimen, or remain intact while a later application falls outside the tested conditions.
+
+Grounding makes a designated empirical claim inspectable through its actual connection with the world. The empirical result can support or refute that claim. Evidence use explains the direction and scope of support; an assurance judgement answers the particular reliance question that requires it. C.2.6 connects these contributions with the receiving work. Keep an ordinary adequate explanation when it supplies the needed connection.
+
+For a formal derivation, recover the interpreted premises and inference that establish the conclusion. When that conclusion is applied to a real system, also recover the model-to-subject correspondence and empirical premises of that application. For a normative account, recover the rule or decision that gives the requirement its force; empirical inspection can then establish whether the subject meets it. These connections allow formal and normative content to inform practice while retaining their actual grounds.
+
+When several accounts contribute to a conclusion, give each its contribution: for example, a necessary premise, an independently sufficient argument or evidence that limits applicability. Preserve a material conflict and distinguish repeated reports of one observation from additional observations. B.1.3 supplies the corresponding synthesis and target-scheme compilation methods. Use C.2.1 to identify the resulting account and the original accounts on which it relies.
+
+##### C.2.1:4.0.5 - Recover what description names in the situation
+
+“Description” is ordinary wording whose referent depends on the passage. In “revise the description of the pump's operating range,” it can name the episteme E carrying those claims about the pump T. In this use, description and episteme designate the same individual. The word gives no additional membership test.
+
+The technical term `U.Episteme` gives the claim-bearing whole one reusable constitution and identity rule across descriptions, plans, theories and other accounts. That rule lets a practitioner compare the same account across files and expressions, distinguish changed claims from changed presentation, and retain the original plan for comparison after performance. Where ordinary “description” already designates that whole, there is one individual with two contextual designations. An additional description kind would need a positive membership condition that changes a real classification or use; the different word supplies none.
+
+To understand what this description says, recover G: for example, the operating range, its conditions and the stated relation between pressure and flow. To understand what it concerns, recover T, the EntityOfConcern. To check an empirical claim, recover the appropriate claim-to-world mapping and H. This separates three questions: which episteme is being revised, what its claims say, and what grounds their use.
+
+The intended action can select another object. “Shorten this description to fit the card” may concern an expression and the meaning that it must preserve. “The description on page 2 is unreadable” can concern the printed signs or the wording. Name that object when the difference affects the repair. Treating every occurrence of the noun as the same technical kind would conceal the actual work.
+
+A WorkPlan can describe intended work. Its plan character comes from its intended coordination claims, horizon and plan-item organization under A.15.2. The intentions keep their own temporal perspective after execution or cancellation. A plan for Monday's pump inspection can remain the same episteme on Tuesday and supply the baseline for a later comparison. A report that the inspection occurred has other claims and its own grounds. Both can be called descriptions in ordinary language.
+
+Similarly, a MethodDescription states claims about an identified Method as a way of doing. Its specialized membership comes from A.3.2's subject and claim criterion. The word description supplies no additional general superclass between these specialized kinds and U.Episteme. Their different names alone establish no mutual exclusion.
+
+When a person **describes** something, identify the action they perform: observing relevant features, composing claims, choosing an expression, or communicating an already available account. The performed work and the resulting episteme or expression have their respective identities. The action may use an existing episteme without changing it.
+
+When the same account is used to choose a pump, compare a requirement or teach a maintenance procedure, name that operation and the claims it relies on. There is no need to put these overlapping uses into exhaustive “describing” and “non-describing” classes. If the task is specifically to provide a characterization for a concern, state what the recipient needs to learn about the subject and use that requirement to choose and judge the supplied claims.
+
+A viewpoint can provide shared requirements for that account. **Specification use** adds another actual question: which stated conditions are to be checked, by what means, for what use and with what authority when authority matters. Recover the tolerances, comparison rules and relevant viewpoint that affect that judgement. An account can describe a required condition, explain why it matters and supply a criterion for checking compliance. Each contribution is understood through its claims and use.
+
+##### C.2.1:4.0.6 - Choose the concern and check viewpoint conformance
+
+A **viewpoint** states requirements for an account: which subjects and concerns it covers, what information is required and what forms, omissions and consistency conditions are allowed. A reader can use those requirements to ask whether a particular account is suitable for that concern.
+
+In FPF, the viewpoint P is itself an episteme containing these fixed requirements; E.17.0 classifies that same individual as `U.Viewpoint`. Distinguish P from the convention or rule collection it defines when a receiving operation uses the rules as its argument. An ordinary self-contained P can concern the target kind to which its requirements apply. A separate structured organization of conventions is needed only when independently maintained components and their relations are part of the actual viewpoint problem. E.17.0 explains both cases.
+
+A **view** is that same episteme E, classified as `U.View` when its conformance to a viewpoint P obtains under E.17.0. To establish this, recover the subject of E, the applicable requirements in P and the corresponding claims or other admissible evidence for each requirement. Determine whether the coverage, interpretation and permitted omissions meet P. The same E can satisfy several viewpoints.
+
+An author can write a suitable view directly or derive an account from an earlier source. These paths answer different questions. E.17.0 establishes conformance; A.6.3 establishes the claimed relationship between source and derived content. Use both when both relationships matter.
+
+Select a viewpoint because the work needs its requirements. A question such as “What is the pump's maximum pressure?” can often be answered directly. A team repeatedly exchanging safety accounts may need a maintained viewpoint so that every recipient can depend on the same coverage.
+
+##### C.2.1:4.0.7 - Construct an expression and choose its organization
+
+Here a particular **expression** X is the identified sign construction, an entity in its selected notation domain, that can be read or processed under applicable conventions. A filled table has selected entries and relationships between them. Its reusable empty layout specifies where entries can go. To recover the table's assertions, the recipient needs the entries together with the interpretation of the headings, units and relationships. When exact expression identity matters, select the construction being compared and its rules: for example, a character sequence or a typed table with defined entries. Copies can supply the same construction through different carriers. A different wording can preserve the claims while changing that expression.
+
+Start from the operation the recipient must perform. Choose an expression that makes the required distinctions available. Then recover its meaning and compare that meaning with the source or the developing account. Inspect consequential omissions and added connections. Try the intended operation with the expression. A.6.3.RT.OE develops these construction steps; A.6.3.RT governs a change between expression schemes and its preserved and changed content.
+
+In a **representation** use, an identified entity stands for an identified subject or selected content under a correspondence. The entity keeps the kind and identity supplied by its own domain. Establish what represents what, the correspondence between relevant elements and relationships, and the interpretation under which the intended operation is warranted. A route graph can represent passages in a building; the graph's edge and path rules determine which route conclusions can be returned to the building. C.29 supplies the additional grounds when a mathematical object and mathematical inference are used.
+
+An expression can represent a subject and express claims about it. Those are different relations of the same construction. For example, a table's rows can correspond to passages, while its entries assert their widths. The correspondence explains what the rows stand for; the interpreted entries explain what the table claims.
+
+When **presentation** means an arrangement for a recipient's encounter, identify the actual order, grouping, emphasis and access provided in the expression. When it means the presenting activity, identify the performed work. These meanings do not require an additional entity between the expression and its carrier. Choose that arrangement from what the recipient must understand or do. Show a qualification where it constrains the claim the recipient will use. A presentation can be prepared for a discussion before public release. E.17 supplies the publication-facing application, including the condition of preserving the accepted source claims when that is the task.
+
+A **publication form** F supplies reusable organization rules selected for expressing material in a publication. F is the rule collection; an episteme defining those rules and an expression following them are independently recoverable objects. A card layout can require a subject, a value, its unit and a qualification. A particular filled card supplies the actual selections. When the form is reusable, distinguish the rule from its particular application: two cards with values 0.3 and 0.4 can follow the same layout and express different claims.
+
+Use the form where it helps the recipient recover the account. An ordinary sentence can already be a sufficient expression. Machine processing may require a particular encoding and interpretation, with no separate human presentation task.
+
+##### C.2.1:4.0.8 - Repair the conventions when an available expression is insufficient
+
+A familiar notation can already support the operation. When its conventions leave an important distinction unexpressible, a reference ambiguous or a reading operation undefined, design the missing contribution.
+
+First choose two cases that the recipient must treat differently. State their difference in subject terms. Try to express both under the candidate rules. If the same expression results while different answers are needed, supply the missing distinction or retain an accessible source that provides it. This derives a notation requirement from work the expression must support.
+
+Next define how the expression is formed. Identify the relevant constructors and their operands, the rule for grouping them and the referent of each consequential name. Give the interpretation of their combination and show how the recipient obtains the needed consequence. A legend that explains each sign can be sufficient for a familiar construction; a new composition also needs its reading operation.
+
+Test a change that can affect the interpretation. Reusing one measured value twice differs from performing two successive measurements. A shortened expression must preserve whichever operation the account actually specifies. A correct formal transformation needs the applicable interpretation and its conditions; a reported observation retains its own history.
+
+For translation, construct the target from interpreted source parts and relationships. Perform the target operation and return its answer to the original subject question. Find a pair of source cases the translation merges. Preserve a lost distinction when the receiving operation depends on it, using a richer target or a defined return to the source. A translation can remain sufficient for a narrower question.
+
+When complementary representations stay in use, establish their shared referents and the rules connecting their contributions. Before propagating an edit, determine whether it changes a source fact, a requirement, a model parameter or only a display. Recompute a derived prediction when its parameter changes; preserve an independently recorded observation so that the difference can inform the subject inquiry. Resolve conflicting change demands as a subject decision.
+
+The construction above supplies the common operation for recovering missing expression conventions. For a larger notation-design problem, FPF Library's **Notational Engineering DPF** develops these methods further: NOT.1 derives the needed distinctions; NOT.2 fixes formation and reference; NOT.3 gives operative interpretation; NOT.4 develops transformations; NOT.5 handles translation and loss; NOT.6 maintains complementary representations. Bring the resulting expression, rule or located limitation back to the account being developed. A.6.3.RT and A.6.3.RT.OE provide the direct construction when available conventions suffice.
+
+##### C.2.1:4.0.9 - Provide an expression and identify what carries it
+
+A **carrier** is the physical or digital entity from which the expression can be recovered under the relevant access and interpretation conditions. Select the concrete entity needed for the question: a particular sheet, a continuing file object or a fixed digital snapshot.
+
+State which identity is in use when continuity matters. Overwriting a continuing file can preserve that file object while changing the recoverable expression. A fixed byte snapshot changes when its bytes change. Printing a second sheet supplies another physical carrier. A pathname or URL locates something through an access mechanism; establish what it denotes when the comparison depends on exact identity.
+
+For a precise comparison, identify the carrier separately from its relevant state. Recover the expression from that state using the selected decoding or reading conventions. A screen can remain the same screen while displaying successive expressions. If the state needed to recover an earlier expression is unavailable, that earlier availability needs another source.
+
+**Publication**, in the availability-reading used here, is the continuing availability of a selected account through a particular expression and carrier to a declared audience for a stated use. Establish that the recipient can obtain the expression and recover the required content under those conditions. Where a chosen publication form matters, check how that expression follows the form.
+
+The activity of publishing includes actions such as placing a file or granting access. Its success contributes to availability. Actual access, interpretation and reliance by a recipient are further occurrences. Keep the specific claim clear when reporting a publication or its use.
+
+An exact publication can identify one expression even when several expressions convey the same episteme. This makes it possible to distinguish an HTML text from a spreadsheet supplied for calculation and to establish which one the recipient obtained. A collected release can include several such publications and several epistemes. Its packaging alone does not determine their semantic unity.
+
+##### C.2.1:4.0.10 - Follow changes to the results that depend on them
+
+Locate the change at the object or relation actually changed. Then follow the reasoning or operation that used it.
+
+A change to the interpreted claims, their subject or their effective interpretation changes episteme identity. Reconsider a derived conclusion when its derivation used the changed claim or interpretation. A preserved passage can remain usable on its established grounds if the changed material is outside those dependencies. Uncertain dependence requires investigation rather than an assumption of preservation.
+
+New external evidence can change the warrant for existing claims. If the author instead changes the grounds asserted within the account, the claim content also changes. C.2.1 and C.2.6 explain these different returns.
+
+A changed expression can preserve the episteme while altering usability or availability. First distinguish rules that determine the account's meaning from rules that express already determined values. Replacing prose with a labeled table can preserve both meaning and interpretation; changing an operative rule from “blank means unknown” to “blank means zero” changes the interpretation. Compare the complete claims and effective rules, then test the affected operation. Removing a qualification can strengthen a claim; changing a font can be harmless when font has no relevant meaning or operational role. The reason for the judgement comes from the expression conventions and intended operation.
+
+A changed viewpoint reopens conformance to that viewpoint. Selecting another already defined viewpoint changes the current comparison. A changed carrier or access condition reopens the relevant bearing or availability claim. The account's subject and claims may remain unchanged.
+
+An episteme E2 is a **later edition** of E1 when it has a different identity, its revision actually uses E1 as a source, and its preserved and changed features satisfy the applicable continuity rule. That rule states what must remain, what may change and which departures count as a fork, translation, retargeting or independent reconstruction. C.2.1:4.5 defines this continuation as `EpistemeEditionRelation(E1, E2)`. E2 is the edition; the relation connects E1 and E2.
+
+When selecting an edition for publication or identifying claims from it, identify that particular episteme. A reference to E2 selects E2 with its claims, subject and effective interpretation. Establishing how E2 continues E1 is a separate judgement, needed when that continuity matters to the use.
+
+For an ordinary correction, finish when the needed meaning is clear and the affected use has been reconsidered. Preserve enough explanation of a consequential change for its recipients to understand what they can now rely on. The extent of that explanation follows the change and the receiving work.
+
+##### C.2.1:4.0.11 - Connected case and changes in its conditions
+
+A warehouse team maintains an account of passages used by a robot. For a bounded route calculation, a passage is admissible when its clear width is at least 1.0 m; the other operating conditions have already been resolved for this calculation. The source account states:
+
+| Passage | Length | Clear width |
+|---|---:|---:|
+| A–B | 3 m | 1.2 m |
+| B–D | 4 m | 1.1 m |
+| A–C | 5 m | 1.3 m |
+| C–D | 5 m | 1.3 m |
+
+The account's subject is the selected warehouse arrangement. Its claims include each attributed length and width. The interpretation fixes the endpoints, measurement meanings and units. A route viewpoint requires these values for every passage being considered and requires the admissibility condition to be recoverable.
+
+The table is an expression of the relevant claims. A graph representing the same passages allows a shortest-path calculation after inadmissible edges have been removed. Under the stated correspondence and route assumptions, A–B–D has length 7 m and A–C–D has length 10 m. A robot-readable record and a diagram for a meeting can express the same route result while supporting different recipient operations. A publication provides a particular expression through an identified carrier under the applicable access conditions.
+
+A check of the survey identifies a transcription error: the observation for B–D recorded 0.8 m, while the table copied it as 1.1 m. Recover the passage, measurement meaning and relevant conditions of that observation. Here the warehouse system participating in the inspection is the grounding holon; the survey report is an evidence account for the width claim. First repair the warehouse claim and its expression. Then return to the route operation: B–D is excluded, so the earlier 7 m route conclusion loses its premise and the remaining shown route is A–C–D. The route viewpoint can remain unchanged. The table layout can remain unchanged. A previous calculation that used only the lengths for a different, explicitly width-independent question may remain valid.
+
+If the passage was instead narrowed after the earlier survey, retain the earlier observation as an account of its stated time and create the new current claim from the later inspection. That is a different change from correcting a transcription. The claim-to-world mapping, observation history and evidence-use question determine which treatment is warranted.
+
+The general operation demonstrated here is to recover the changed claim and its grounds, follow the exact dependency and revise the affected result. The graph calculation supplies the subject-specific inference. The epistemic method supplies the connection between that inference, its source account, expression and later use.
+
+Several changes require other branches of the same explanation:
+
+- **Dynamic source.** A dashboard can replace the displayed width while the screen and source service continue. Recover the state and interpreted claim used by a calculation. A new redraw with the same relevant expression and claims leaves that calculation's input unchanged.
+- **Several materials in a release.** A maintenance report can accompany the route account in one download. Identify the claims of each account and the expressions that make them available. Their common carrier does not supply a relation between their conclusions.
+- **New audience and shortening.** A short guide that says “A–B–D is available” but removes the condition on clear width presents a stronger claim. Restore the condition or establish a different qualified claim; then revise the dependent route advice.
+- **Machine use.** A parser needs an agreed relation between fields, units and passage identities. Reformatting is acceptable only when the required interpretation and operation are preserved.
+- **Normative account.** A drawing can require B–D to have width at least 1.0 m while an inspection reports 0.8 m. The requirement, observation and report about the drawing have different claim content and checks. Use them together to determine the discrepancy.
+- **Small correction.** Correcting a misspelling in “clear width” can finish after confirming that the heading still has its established meaning and that the consuming parser, if any, accepts it. The full publication analysis is needed only if the correction affects that use.
+
+##### C.2.1:4.0.12 - Read the relationships
+
+The arrows below name relations between selected objects. They show how to interpret the connections, rather than an order of stages.
+
+~~~mermaid
+flowchart LR
+    E["E: U.Episteme"] -->|"has EntityOfConcern"| T["T: U.Entity"]
+    E -->|"satisfies requirements of, when established"| P["Viewpoint"]
+    X["Particular expression"] -->|"expresses under interpretation rules"| E
+    X -->|"follows, when a form is selected"| F["Reusable form or convention"]
+    C["Carrier in its relevant state"] -->|"makes recoverable"| X
+    E2["Later episteme"] -->|"continues under an edition rule"| E
+    Q["Selected empirical claims in E"] -->|"mapped to the relevant outcomes of"| O["Observation or test"]
+    O -->|"involves"| H["H: U.Holon in the grounding relation"]
+    V["Evidence account: U.Episteme"] -->|"supports or challenges under a stated inference"| Q
+~~~
+
+Constitution connects the claims, subject and effective interpretation into E. View membership classifies that same E by established conformance to P. Expression relates X to the claims recovered from it. Form conformance relates X to reusable organization rules. Bearing relates a carrier's state to the recoverable expression. Edition continuity relates two epistemes through actual revision and its continuity rule. The grounding branch connects designated empirical claims with observations or tests involving H; the evidence branch states what an account contributes to a claim's support. The selected claims in the drawing are part of E's content, not an extra constituent of its identity.
+
+Publication combines the availability conditions involving E, X, the carrier, the audience and the intended use. To find the next needed Method, start from the unresolved relationship: C.2.1 for constitution or edition, E.17.0 for viewpoint conformance, A.6.3.RT and A.6.3.RT.OE for expression, and E.24.PUB for publication. The general path is complete when the reader has the account and the assurance needed for the current work.
+
+An **ontic**, of kind `U.Ontic` under E.24, is a connected ontology unit. It coordinates a primary subject kind, the identity or recognition rule for entities of that kind, and the minimal relation set needed by named dependent uses. `EpistemeOntic` joins `U.Episteme` with constitution, grounding, edition, viewpoint-conformance and publication relations. It supplies their common basis while each direct pattern retains its own predicate. An episteme describing that ontic is another claim-bearing object, with the ontic as its subject.
+
+##### C.2.1:4.0.13 - Identify the next necessary relation
+
+When the receiving question requires exact episteme identity, answer the following three questions. They are identity questions, not fields to fill. When the answers are still being developed, :4.1.1 connects the writing work in C.2.4:4.6 to the resulting constitution judgment.
+
+| For the identity comparison, ask | Exact object recovered |
 | --- | --- |
 | What is being claimed? | the exact claim content carried by one `ClaimGraph` |
 | What exact entity do those claims concern? | one identified `U.Entity` participating as the EntityOfConcern |
@@ -87,7 +298,7 @@ Open a row below only when its first column names the reader's next sentence or 
 | A typed interface needs replaceable interpretation rules or exact content, or must recover that value from an addressable episteme. | the receiving range, exact constituent value and any required designation/resolution; keep membership separate from successful use | C.2.1:4.1.2 and :4.2.6 |
 | An observer must inspect designated empirical claims against current observation, intervention, measurement, or test relations involving one exact holon. | one exact `EpistemeEmpiricalGroundingRelation` occurrence, its covered claim subgraph, claim-to-world mappings, and grounding holon; recover supporting evaluation or evidence use separately | C.2.1:4.3 and the direct observation, intervention, measurement, test, evaluation, or evidence pattern |
 | A description must state the concern from which this episteme is read. | one exact `U.Viewpoint` episteme P and the named describing use that selects P; keep the episteme, its EntityOfConcern, the use, and P distinct | `E.10.D2` and `E.17.0` |
-| A team will validate a Description as a specification before relying on it. | the exact Description episteme, checkable claims, and named harness or validation relation; preserve or update the named describing-use viewpoint only when that selection affects reliance | `E.10.D2` and C.2.1:6 |
+| A team will validate an episteme for specification use before relying on it. | the exact episteme, checkable claims, and named harness or validation relation; preserve or update the named describing-use viewpoint only when that selection affects reliance | `E.10.D2` and C.2.1:6 |
 | A classification assertion must say that this episteme conforms to a viewpoint and is a `U.View`. | one exact obtaining `EpistemeViewpointConformanceRelation` between this episteme and at least one exact `U.Viewpoint` episteme | `E.17.0` |
 | A reader must trace how this episteme was constructed from an earlier source episteme. | the exact source and receiving epistemes plus the governed viewing relation; view membership remains a separate conformance judgment | `A.6.3` for construction and `E.17.0` for membership |
 | A claim must be restricted to one declared part of the situation under study. | one exact `U.ClaimScope` and its membership relation over `U.ContextSlice` | `A.2.6` |
@@ -98,7 +309,7 @@ Open a row below only when its first column names the reader's next sentence or 
 | Reviewers must inspect or revise a classification judgment as an independent claim-bearing object. | one classification assertion episteme about the exact candidate, plus the exact governing criterion | C.2.1:4.2.3 with `A.1` or `C.3.2`; `E.24.UK` only for public U-kind admission |
 | A reader must assert that a later episteme revises, refines, or supersedes an earlier one. | one exact `EpistemeEditionRelation` occurrence | C.2.1:4.5 |
 | An account must assert that particular Work occurred. | identify the actual performer and admit the dated Work independently; if the account also attributes it to an assignment, test that attribution separately | `A.13` and `A.15.1`; `F.6` only for the stated attribution |
-| A publisher must make one selected episteme edition available to a declared audience for a bounded use. | the publication occurrence, publication form, and `U.PresentationCarrier` as distinct objects | `E.17` and `E.24.PUB` |
+| A publisher must make one selected episteme edition available to a declared audience for a bounded use. | the exact publication occurrence, expression and independently identified carrier, with reusable form conformance when needed | `E.17` and `E.24.PUB` |
 | A user will calculate, infer, navigate, or inspect through a representation whose available operations matter. | the representation scheme, operations and correspondence needed for that use | the applicable representation pattern; `A.6.3.RT` for a same-EntityOfConcern transition; `C.29` only for an unresolved mathematical-lens choice, transfer or reliance question |
 | One receiving System must select, decline, or co-use candidate results of different kinds as representations for the same exact action or decision. | one C.37 use-bounded representation-selection account; keep each direct subject result, optional A.2.4 first-use classification, A.10 reliance path when material, and receiving result separately governed | `C.37` |
 
@@ -138,6 +349,29 @@ Writing can help obtain the content before it is a finished knowledge object. Fo
 **Individuate content and rules before assigning a kind.** An exact body of interpreted claim content and an exact collection of operative rules are abstract `U.Entity` individuals under A.1:4.1. For the content, the discriminator is the complete selected claims with their interpreted meanings and asserted organization; for the rule collection, it is the operative rules with their application domains and interpreted dependencies. These discriminators identify the individual independently of the text, graph, document or episteme through which a reader obtains it. Giving those claims or rules under an unambiguous interpretation can designate the individual directly; :4.2.6 also permits designation through an exact episteme edition and selection. Different such designations can return the same individual. Changing any of these identity discriminators identifies another content or rule collection; an expression change that preserves them does not.
 
 This individuation and reference basis permits the content or rules to be an actual relation participant or the EntityOfConcern of an episteme about them. Neither a slot assignment nor a classification judgment supplies that basis. Entity status alone establishes no holonhood, episteme membership or obtaining relation. When the needed interpretation or identity remains unresolved, preserve the partial written result and recover the missing distinction before using it as an exact participant. That limit on the exact use does not prevent writing from helping obtain the content.
+
+C.2.1 identifies R by its operative semantic rules, their application domains and interpreted dependencies. A notation's conventions can supply those rules, the means of expressing values under them, or both. The word convention therefore does not decide which identity changes.
+
+**The boundary.** A convention belongs to the effective R when it supplies a rule needed to determine what the account's designations refer to, what its predicates and combinations mean, or how its qualifications, modalities or inferential commitments are interpreted. Its semantic rule, domain and dependencies enter the rule-collection comparison. A convention implements an expression of an already determined account when it maps signs or arrangements to the same already identified semantic values and leaves those rules, domains and dependencies intact. The corresponding mapping must be recoverable; calling a change a translation or rendering establishes none of its preservation conditions.
+
+Apply this distinction to the actual meaning-bearing dependency. A layout rule that places one already identified value beside its label can implement expression only. A spatial rule that makes adjacency mean causation supplies semantics and belongs to R when the account uses that meaning. A fixed parser can recover an already defined semantic value from a serialization; a parser rule that changes the value, relation or interpretation cannot be omitted from the comparison simply by placing it in software. The same notation can have both kinds of convention.
+
+Establish the interpreted rules before comparing the change. Do not redefine the source R after seeing the target so that equality becomes automatic. An alternative spelling of a rule is compared as an expression of that rule. An added semantic rule, a changed application domain or a changed interpreted dependency changes R. Two different rule collections can agree on a selected calculation, or even have a proved equivalence for a bounded use; that result does not identify the complete rule collections. When the semantic correspondence cannot be established, retain the useful partial comparison and leave exact E identity unresolved.
+
+**Why T and R still contribute when G is interpreted.** G supplies what this account asserts, including the meanings of its predicates and participants. It does not by itself select which participant is the EntityOfConcern of the whole. The same relational content about pump P and valve V can support an account about P or an account about V when each selection is truthful; C.2.1 distinguishes those whole accounts by T. Likewise, one interpreted assertion need not determine the full operative rule and domain under which it is stated. Rules that agree on the values used in one assertion can differ on another admissible input. R retains the actual semantic rules and dependencies needed for interpretation and reuse. It is compared independently of the assertions selected into G. Neither difference turns T into a constituent or makes R another description episteme.
+
+The cases below fix the relevant assumptions before judging identity:
+
+| Change | What must be compared | Identity consequence |
+|---|---|---|
+| “Pump P has clearance 0.4 mm” is laid out as a labeled row, using the already defined subject, characteristic, quantity and qualification meanings | Recover the same interpreted assertion and the same semantic rules; the table arrangement only binds those existing values | X changes if its expression domain distinguishes the two constructions. G, T and R can all remain, so E remains |
+| A table's operative missing-value rule changes from “blank means unknown” to “blank means zero” | The account's interpretation explicitly depends on that rule. Compare its domain and the meaning of affected entries, including entries with no observed value | R changes; affected claims in G can change as well. Agreement on the nonblank entries does not preserve E |
+| A lossy conversion writes 0 where the source explicitly said “unknown,” while both accounts retain the same already fixed meanings for zero and unknown | The conversion changes the expressed assertion; it does not change either semantic meaning | G changes and E changes even though R can remain. This is a different cause from revising the missing-value rule |
+| “0.4 mm” is written “400 micrometres” under a scheme already interpreting both units through the same quantity system and exact conversion | Compare the quantity, asserted precision or interval, rounding policy and all qualifications; the conversion must preserve them | The same quantity claim and R can remain. A different number of printed digits alone does not settle this judgement |
+| A target requires a new unit interpretation, rounding policy or differently interpreted dependency | Compare that operative semantic rule and its application domain, not just the resulting displayed value | A changed R identifies another E even if one answer or displayed number coincides |
+| A predicate name is replaced by an already interpreted alias or translated designation | Resolve both designations to the same predicate meaning and preserve every effective rule, domain and dependency | A change of spelling can preserve R and E. Introducing a different predicate criterion or domain changes R; a cross-scheme equivalence warrants only the correspondence it establishes |
+
+Full identity uses semantic equality of the actual constituents and T, as C.2.1:4.1.1 already requires. It neither uses byte identity nor identifies distinct schemes merely because they answer one question alike. A source-preserving expression can be constructed under A.6.3.RT or A.6.3.RT.OE without constituting another E. A B.1.3 compilation whose target scheme S differs from the source R instead returns an episteme identified with S and the resulting claim content. The preserved-content and reliance judgements still have their own scope.
 
 **Choose the precision the receiving work needs.** Express the claim and rules well enough to perform the named comparison, interpretation, or revision. Ordinary prose, a diagram with a clear interpretation, or a partial written comparison can be sufficient. Add a C.3.2 classification only when the receiver needs a membership, substitution, or quantified-range judgment; identify the candidates and criterion for that particular classification. Classifying whole epistemes does not establish a kind for each of their constituents. Section :4.2.1 governs a receiving use that specifically needs typed constitution participants.
 
@@ -325,7 +559,7 @@ The grounding holon need not be identical to the EntityOfConcern. One method-des
 | justification structure | exact `JustificationGraph` content | a justification structure organizes inferential dependencies without becoming claim content |
 | evidence use or assurance for a claim | for ordinary bounded reliance, the descriptive A.10 evidence-provenance path, the independently established direct relations it cites, and local `RelianceDisposition`; when an actual named assurance claim is current, the exact B.3 `AssuranceResult` or its non-positive disposition | evidence and assurance can support, narrow, or stop reliance on the claim while the episteme's identity remains fixed |
 | publication | exact publication occurrence and publication form under E.17 and E.24.PUB | making an edition available does not constitute or reidentify it |
-| presentation carrier | any exact `U.PresentationCarrier` under E.17 and E.24.PUB | bearing a publication form or rendered expression does not constitute or reidentify the episteme |
+| presentation carrier | an independently identified physical or digital `U.Entity` under its own identity rule | actual bearing of X under E.24.PUB leaves episteme identity governed by its G/T/R triple |
 | representation and admissible operations | the representation scheme, selected elements and operations used for the represented episteme, with any required correspondence or transition governed through :4.0 | a change of scheme or admitted operations can change the available work |
 
 Names ending in `Slot` are admissible here only as SlotKinds inside the exact `RelationSignature` governed by the neighboring direct relation pattern. A card or other episteme form carries participant designations in ordinary fields; it does not acquire SlotKinds by using similar field labels. None of those neighboring SlotSpecs belongs to `EpistemeConstitutionRelationSignature`.
@@ -360,7 +594,7 @@ Several edition occurrences form a lineage structure only when a receiving use d
 When claim content, EntityOfConcern, or effective reference scheme changes, the later object is another episteme. Apply `A.6.4` separately when the current claim is effect-free retargeting between epistemes with different EntitiesOfConcern; retargeting alone does not establish edition continuity. A changed publication form alone identifies neither another episteme nor an edition relation.
 
 #### C.2.1:4.6 - Keep descriptions, cards, publications, and representations downstream
-A claim-bearing filled card can itself be an episteme when its claim content, EntityOfConcern, and effective reference scheme are recoverable. The reusable arrangement of that card can instead be a publication form, and a selected graphical or tabular element can participate in a C.29 representation. Identify each object through its own constitution and the direct relation in which it participates; visible shape does not determine its kind.
+The organized claims expressed by a filled card can constitute an episteme when G, T and R are recoverable. The particular signs and arrangement supply expression X; reusable arrangement rules can supply F; a selected graphical or tabular construction can represent its subject through an identified correspondence. Use C.29 when that operation needs a mathematical lens. Identify the object selected by the actual question.
 
 When a card or other form designates the participants of one direct relation, its field labels may correspond to SlotKinds in that relation's `RelationSignature`, and its field values may be by-value designations or references of the declared refModes. The form is not a filled direct relation occurrence; supplying fields does not make the predicate obtain or provide occurrence identity.
 
@@ -368,7 +602,7 @@ In a relational assertion, the claim graph designates the actual participants an
 
 A designator designates an already recoverable referent. A governed reference resolves to that referent under an effective reference scheme.
 
-For publication, `E.17` and `E.24.PUB` govern the occurrence that makes a selected edition available to a declared audience for a bounded use, the form that expresses it, and the `U.PresentationCarrier` that bears the form. Plain **published episteme** names the episteme's contingent participation in that occurrence. Its C.2.1 identity stays fixed before, during and after that availability relation.
+For publication, `E.17` and `E.24.PUB` govern the occurrence that makes a selected episteme available through one exact expression and carrier to a declared audience for a bounded use. A reusable form constrains the expression when selected. Plain **published episteme** names the episteme's contingent participation in that occurrence. Its C.2.1 identity stays fixed before, during and after that availability relation.
 
 
 One completed inspection card shows why the distinctions matter. Its filled claims can identify one episteme; its reusable layout can be a publication form; its paper sheet or file can be a presentation carrier; and a publication occurrence can make the selected card episteme edition available to the maintenance team. None of those uses makes the others identical.
@@ -383,7 +617,7 @@ If episteme `E1` describes pump `P`, `P` is the EntityOfConcern participant in t
 
 An episteme may describe itself when its own identity remains recoverable. Self-reference never closes an assurance argument by itself. Each justification or evaluation path terminates in independently governed evidence, observation, or formal derivation rather than in a cycle of claims that cite one another.
 
-Description and specification use remain distinct. A Description episteme is admitted for specification use only when the E.10.D2 conditions are satisfied: checkable claims and a named harness or validation relation. If the relying use selects a viewpoint, name that describing use and preserve or update its exact selection only when the selection affects reliance. Formal notation alone does not grant specification use or change the episteme's kind.
+An episteme used as a description is admitted for specification use only when the :6 conditions are satisfied: checkable claims and a named harness or validation relation. If the relying use selects a viewpoint, name that describing use and preserve or update its exact selection only when the selection affects reliance. Formal notation alone does not grant specification use or change the episteme's kind.
 
 #### C.2.1:4.8 - Locate the change before updating episteme identity
 
@@ -428,8 +662,8 @@ For an A.6.3 source-to-receiving viewing construction, the two identified episte
 | multi-view collection or organization | an exact C.13 collection only when a receiving use depends on the plurality as a collection, and an exact A.22 `U.Structure` only when that use additionally depends on organization among those views | `C.13`, `A.22`, and the direct organizing relations |
 | cross-view correspondence, consistency, realization, trace, or change-impact claim | one exact direct subject relation under its own governor; a C.2.1 episteme may assert or describe it, but a heading, edge, carrier, or E.17 publication invents no relation | the exact direct relation pattern; when none is current, return an exact missing-relation blocker naming the participants, required predicate and use, and missing governor |
 | publication occurrence | the occurrence that makes one selected episteme edition available to a declared audience for a declared bounded use | `E.17` and `E.24.PUB` |
-| publication form | the arrangement, notation, or rendering convention that expresses the selected episteme edition for that publication use | `E.17` and `E.24.PUB` |
-| `U.PresentationCarrier` | the exact physical or digital carrier that bears the publication form | `E.17` and `E.24.PUB` |
+| publication form | reusable rules for forming or arranging expressions; an expression X meets them through form conformance | `E.17` and `E.24.PUB` |
+| presentation carrier | independently identified physical or digital entity C whose actual state or realization yields exact X | `E.17` and `E.24.PUB` |
 | mathematical representation | a mathematical representation used for the stated modeling or reasoning purpose | the applicable mathematical or representation pattern; `C.29` only for an unresolved mathematical-lens question |
 
 This reference table keeps the neighboring objects and relations visible after the application method. Ordinary prose names only the current object and its direct relation. A sentence such as “Model M concerns Pump P under Scheme S” is sufficient until another use needs explicit empirical grounding, a classification assertion, occurrence identity, edition continuity, publication, or representation correspondence.
@@ -450,9 +684,9 @@ This limitation matters in practice. A proof-assistant term, wiring diagram, cli
 
 ### C.2.1:6 - Description and specification-use boundary  *(normative)*
 
-A Description episteme is a `U.Episteme` whose exact EntityOfConcern is the entity being described. Description does not create a second kind beside ordinary epistemes; it names the current relation and use of one episteme.
+In a claim-bearing-result use, “description” designates episteme E, a `U.Episteme` identified by its claim content G, EntityOfConcern T and effective ReferenceScheme R. The word supplies no additional subtype criterion or relation. For a comparison of the claims alone, identify G; for a correction to wording or layout, identify the expression and the meaning it must preserve. Section :4.0.5 explains how to recover the intended object from the actual use.
 
-For a description use, keep these values recoverable:
+When these values affect the current description use, keep them recoverable:
 
 | Value | Meaning | Identity status |
 | --- | --- | --- |
@@ -463,7 +697,18 @@ For a description use, keep these values recoverable:
 | `modelUseStructureRef`, when current | designation of one independently selected `BoundedModelUseStructure : U.Structure` | optional interpretation qualifier, not a context root |
 
 
-Use `E.10.D2` to keep the EntityOfConcern, its Description episteme, and specification use distinct. A Description episteme is admitted for specification use only when its claims are checkable and a named harness or validation relation can test them. Preserve or update a selected viewpoint only for the named describing use whose reliance depends on it. The suffix `Spec`, formal notation, approval appearance, or publication in a repository does not grant that use.
+For specification use, recover all applicable conditions:
+
+1. the exact description episteme and its C.2.1 constitution;
+2. checkable claims, invariants, criteria, or acceptance conditions in its ClaimGraph;
+3. a named harness, validation, conformance, measurement, or evaluation relation capable of checking those claims for the stated use;
+4. when viewpoint selection affects reliance, the named describing use and its exact selected viewpoint are preserved or explicitly updated.
+
+Declared formality, notation discipline, comparators, tolerances, and measurement rules are named when the claims depend on them. They do not substitute for the checkable claims or the harness. If the conditions are absent, call the episteme a description and present proposed criteria as proposals; a `Spec` suffix, schema, signature, approval, or publication does not supply specification force.
+
+Specification use does not create another episteme identity. A revision that changes ClaimGraph, EntityOfConcern, or effective ReferenceScheme identifies another episteme under C.2.1; a changed harness, evaluation result, publication, or relying use changes its own neighboring object or relation.
+
+E.10.D2:4.1.3 applies these conditions to a proposed `...Spec` name.
 
 Self-description uses the same rule. If an episteme describes itself, its EntityOfConcern designation resolves to that episteme. If a review episteme describes it, the review episteme has the first episteme as EntityOfConcern and its own claim content and reference scheme.
 
@@ -581,7 +826,7 @@ A readability score can improve while the diagram makes the connections needed f
 
 #### C.2.1:9.8 - Trained or probe-derived representation and tool-using inference
 
-A distributed activation pattern observed during inference is a system-side phenomenon. A trained probe or decoded rendering can represent it for a declared use under `C.29` and `A.6.3.RT`. To identify a probe report as an episteme, recover what it claims about that exact phenomenon and the interpretation scheme that gives those claims meaning. Decodability or a readable label alone leaves that identity question unanswered. Use `E.10.LRN` when *learned representation* still leaves the subject or result unclear.
+A distributed activation pattern observed during inference is a system-side phenomenon. A trained probe or decoded rendering can represent it for a declared use through an identified correspondence. `A.6.3.RT` governs a same-subject representation transition; `C.29` supplies the additional conditions when a mathematical lens is used. To identify a probe report as an episteme, recover what it claims about that exact phenomenon and the interpretation scheme that gives those claims meaning. Decodability or a readable label alone leaves that identity question unanswered. Use `E.10.LRN` when *learned representation* still leaves the subject or result unclear.
 
 For a claim about particular inference or tool-call Work, open :4.0's Work branch. If a trace participates at an exact `A.6.1` result position, state that binding. When the trace carries claims about the call, identify its episteme through those claims, that Work as subject, and the effective scheme. A question about when the trace first existed separately opens :4.9.
 
@@ -600,7 +845,7 @@ Suppose the designation claim in that card stays the same, but `SelectionRationa
 
 C.2.1 deliberately favors explicit aboutness and interpretation because claims without an exact EntityOfConcern and effective reference scheme are difficult to compare or test. The mitigation is the `A.6.REL` minimum-current-object rule: ordinary use adds another object only when the reader's next sentence or action requires it, and states that object's direct relation to an already recoverable object.
 
-The pattern also resists representation bias. Formal calculi, diagrams, learned representations, and interactive tools can materially change available reasoning operations, but their convenience or geometry cannot establish subject identity. State those differences under the exact C.29 lens-use or selected transition predicate, using the corresponding pattern description for any explanation needed to apply it.
+The pattern also resists representation bias. Formal calculi, diagrams, learned representations, and interactive tools can materially change available reasoning operations, but their convenience or geometry cannot establish subject identity. State those differences under the selected representation correspondence or transition predicate, adding C.29's lens-use conditions for a mathematical use, using the corresponding pattern description for any explanation needed to apply it.
 
 Finally, the pattern has a claim-bearing-holon bias. Decodability alone does not make the decoded entity an episteme. The decoded entity is admitted as an episteme only when claim content, an exact EntityOfConcern, and an effective reference scheme are recoverable and together satisfy the constitution relation.
 
@@ -616,7 +861,7 @@ Finally, the pattern has a claim-bearing-holon bias. Decodability alone does not
 8. **Description boundary.** Recover the EntityOfConcern and description episteme under their C.2.1 identities. Different constitution triples identify different epistemes. In permitted self-description, the EntityOfConcern designation resolves to that same episteme; self-reference supplies no assurance by itself.
 9. **Specification use.** Specification force is admitted only when the E.10.D2 conditions obtain: checkable claims and a named harness or validation relation. A selected viewpoint is preserved or updated only for the named describing use whose reliance depends on it. Naming and appearance do not grant specification force.
 10. **Agency, work-result, and identity-inception boundary.** Only systems perform Work. `A.6.1` declares typed argument and result positions; neither a position nor its binding says when the bound entity first existed. When a current claim asks that question, the subject's direct inception pattern must define the predicate and identity rule, and current case facts must satisfy them. When inception is attributed to Work, apply A.15.PROD:4.5 and retain the exact specification and applicability basis, actual effects, earliest satisfying boundary, and `identityClosingWork`; a missing required basis stops that positive claim. If no subject inception governor exists, return one `missing-governor` blocker naming the entity or candidate basis, facts, required predicate, and receiving use. When no first-existence claim is current, do not open the inception boundary. No morphism, heading, representation, form, bare A.6.1 `result`, generic work result, or universal production relation supplies that fact.
-11. **Publication boundary.** Distinguish the episteme from its publication occurrence, form and carrier. A `U.View` is that same episteme classified under E.17.0's conformance condition. Plain `published episteme` states publication participation; a receiving classification need follows C.3.2 and public-kind admission follows E.24.UK.
+11. **Publication boundary.** Distinguish the episteme from its publication occurrence, particular expression, reusable form and carrier. A `U.View` is that same episteme classified under E.17.0's conformance condition. Plain `published episteme` states publication participation; a receiving classification need follows C.3.2 and public-kind admission follows E.24.UK.
 12. **Representation boundary.** Tuple components, graph elements, schema fields, and notation tokens remain representation elements. An explicit correspondence may relate one to an independently recovered object without identifying the two or changing the represented direct relation's participants.
 13. **Transformation and Bridge-use boundary.** A morphing, viewing, or retargeting declaration states which C.2.1 identity discriminators are preserved or changed and names the exact correspondence or retargeting relation used. For cross-context sense use, F.9 separately establishes the exact Bridge; one C.2.1 assertion about that Bridge carries `<u,d,r,t>` and polarity; A.10 handles ordinary evidence reliance; B.3 adds a result only when an actual named assurance claim is current; and the direct receiver defines or tests any actual Work, assertion, publication, relation, or operation application. The mathematical morphism performs no work, and none of these objects authorizes another.
 14. **Recursive assurance.** Self-reference and meta-description do not form a minimal justification cycle; assurance terminates in independently governed evidence, observation, or formal derivation.
@@ -641,7 +886,7 @@ Finally, the pattern has a claim-bearing-holon bias. Decodability alone does not
 
 ### C.2.1:13 - Consequences  *(informative)*
 
-**Benefits.** Episteme identity becomes stable across carrier and publication changes. Description, empirical grounding, viewing, edition, and representation questions can be repaired locally because each has a direct relation. Self-description and multi-view use need no second ontology. The same pattern works for physical engineering, medicine, learning, formal work, and computational modeling.
+**Benefits.** Episteme identity becomes stable across carrier and publication changes. Aboutness, empirical grounding, viewing, edition continuity and representation questions can be repaired locally through their respective relations. Self-description and multi-view use need no second ontology. The same pattern works for physical engineering, medicine, learning, formal work, and computational modeling.
 
 **Costs.** A load-bearing episteme use has a recoverable exact EntityOfConcern and effective reference scheme rather than relying on a title or file. Empirical-grounding and edition claims depend on their own obtaining and identity evidence. Existing record-shaped schemas sometimes need to distinguish their fields from actual relation participants.
 
@@ -681,7 +926,7 @@ These comparisons select different information for different questions. The thre
 - **A.1.RI** constructs observation-based reidentification of the subject while C.2.1 retains the identities and claims of the observation epistemes.
 
 - **Builds on:** `A.1` for holon recognition, `A.6.REL` for direct relation occurrences, `A.6.0` for independent same-individual `U.Signature` membership and relation-facing `RelationSignature` use, `A.6.5` for declaration-local SlotSpecs and participant designations, `A.7` for entity-description distinction, and `C.29` for mathematical-lens use.
-- **Coordinates with:** `A.3.2` for `U.MethodDescription` membership without a second episteme identity; `C.3.2` for local-kind membership judgments; `E.24.UK` for ontology-level U-kind admission; `E.10.D2` for Description and specification-use discipline, including selection that creates neither conformance nor membership; `A.6.1` for typed operation positions and exact current application bindings; `A.6.2`, `A.6.3`, and `A.6.4` for morphing, source-to-receiving viewing construction, and retargeting; `A.6.3.RT` for representation transitions; `E.17.0` for conformance of fixed E to fixed P and `U.View` membership; `C.13` and `A.22` for separately current multi-view collections and structures; the pattern for the exact direct subject relation, or an exact missing-relation blocker naming the participants, required predicate, use, and missing defining or constraining pattern; `F.9` for exact Bridge semantics when a claim concerns a bounded cross-context use; `E.13` when a visible representation-quality proxy is used as practical epistemic value; `A.2.6` for claim scope; `A.1.1` for bounded model-use structure; `A.10` and `B.3` for evidence and assurance; `A.14` only when a phase or separately selected edition collection is current; `C.2.P`, `A.3.1`, and `A.3.4` when source use, revision method, or actual change is current in edition-continuity evaluation; C.2.1:4.9 only when a local claim separately asks when a new entity began; `E.17` for multi-view publication forms and uses; `E.24.PUB` for publication occurrences, forms, and carriers; and `G.11` for currentness.
+- **Coordinates with:** `A.3.2` for `U.MethodDescription` membership without a second episteme identity; `C.3.2` for local-kind membership judgments; `E.24.UK` for ontology-level U-kind admission; `E.10.D2` for contextual description and specification-use naming, including selection that creates neither conformance nor membership; `A.6.1` for typed operation positions and exact current application bindings; `A.6.2`, `A.6.3`, and `A.6.4` for morphing, source-to-receiving viewing construction, and retargeting; `A.6.3.RT` for representation transitions; `E.17.0` for conformance of fixed E to fixed P and `U.View` membership; `C.13` and `A.22` for separately current multi-view collections and structures; the pattern for the exact direct subject relation, or an exact missing-relation blocker naming the participants, required predicate, use, and missing defining or constraining pattern; `F.9` for exact Bridge semantics when a claim concerns a bounded cross-context use; `E.13` when a visible representation-quality proxy is used as practical epistemic value; `A.2.6` for claim scope; `A.1.1` for bounded model-use structure; `A.10` and `B.3` for evidence and assurance; `A.14` only when a phase or separately selected edition collection is current; `C.2.P`, `A.3.1`, and `A.3.4` when source use, revision method, or actual change is current in edition-continuity evaluation; C.2.1:4.9 only when a local claim separately asks when a new entity began; `E.17` for multi-view publication forms and uses; `E.24.PUB` for publication occurrences, forms, and carriers; and `G.11` for currentness.
 - **Used by:** every pattern that identifies, describes, classifies through an explicit assertion, compares, grounds, transforms, views, publishes, or refers to a `U.Episteme`.
 
 ### C.2.1:End

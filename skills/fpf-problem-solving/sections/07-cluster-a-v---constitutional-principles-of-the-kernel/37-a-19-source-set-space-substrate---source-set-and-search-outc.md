@@ -61,7 +61,7 @@ Keep this token-status split explicit:
 - `SourceToOutcomeRelation` and `DistortionPosture` are local declaration fields. Their field names do not by themselves create one new generic ontology; the declaration requirement is satisfied only when their payload is explicit enough to audit.
 - `SourceSetFamily`, `SourceSetComposition`, and `DerivedViewKind` are local fields in this `SourceSetSpaceSubstrate` declaration. Their use as fields does not establish a new object kind.
 - `BasePaletteRef`, `OutcomeMapRef`, `SpaceMetricRef`, `TransitionRelationRef`, `BridgeDistortionNote`, `DescriptorMapRef`, and `DistanceDefRef` are guarded neighboring refs or interpretive qualifiers reused here. This pattern may cite them, but it does not redefine them.
-- `carrier` inside `SourceToOutcomeRelation` identifies the relation definition, map, model or operation that supplies the connection. Its definition can be stated directly or cited where the reader can recover it. A containing paragraph merely expresses that definition; this field asserts no `U.PresentationCarrier` relation.
+- `carrier` inside `SourceToOutcomeRelation` identifies the relation definition, map, model or operation that supplies the connection. Its definition can be stated directly or cited where the reader can recover it. A containing paragraph expresses that definition; the physical or digital entity bearing that text is identified separately under E.24.PUB.
 
 ### A.19.SOURCE-SET-SPACE-SUBSTRATE:0.b - First-minute operator cue and confusion guide
 

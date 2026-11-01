@@ -13,7 +13,7 @@
 - [A.6.2 - Effect-Free Episteme Morphing: Laws for Mathematical Relations Between Epistemes](08-a-6-2---effect-free-episteme-morphing-laws-for-mathematical.md) (428 lines) — Type: Definitional pattern
 - [A.6.3 - Episteme viewing - EntityOfConcern-preserving episteme construction](09-a-6-3---episteme-viewing---entityofconcern-preserving-episte.md) (234 lines) — Use this when. You need to derive a smaller, reorganized, or differently expressed body of claims from existing claims while keeping the same thing under discussion. In FPF terms, the source and...
 - [A.6.3.CSC - Controlled Semantic Coarsening: Shorten an Account for a Bounded Use](10-a-6-3-csc---controlled-semantic-coarsening-shorten-an-accoun.md) (355 lines) — Type: Architectural (A)
-- [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression](11-a-6-3-cr---conservativeretextualization-entityofconcern-pres.md) (341 lines) — Type: Specialization pattern
+- [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression](11-a-6-3-cr---conservativeretextualization-entityofconcern-pres.md) (343 lines) — Type: Specialization pattern
 - [A.6.3.RT - Representation-Scheme Transition: Change Representation of the Same EntityOfConcern](12-a-6-3-rt---representation-scheme-transition-change-represent.md) (509 lines) — Type: Specialization pattern
 - [A.6.3.RT.OE - Construct an Operative Expression](13-a-6-3-rt-oe---construct-an-operative-expression.md) (307 lines) — Normativity: Normative
 - [A.6.3.NAR - Structure-to-Narrative Rendering](14-a-6-3-nar---structure-to-narrative-rendering.md) (398 lines) — Type: Specialization pattern
@@ -25,7 +25,7 @@
 - [A.6.RSIR - Relation, Signature, Interface, Role, and Slot Precision Restoration](20-a-6-rsir---relation-signature-interface-role-and-slot-precis.md) (245 lines) — Type: FPF precision-restoration pattern
 - [A.6.A - Affordance and Action-Invitation Precision Restoration (ACT-INV)](21-a-6-a---affordance-and-action-invitation-precision-restorati.md) (612 lines) — Type: Architectural (A)
 - [A.6.F - Function and Functional Precision Restoration (RPR-FUNCTION)](22-a-6-f---function-and-functional-precision-restoration.md) (404 lines) — Type: Architectural pattern
-- [A.6.M - Module and Interface Claim Repair](23-a-6-m---module-and-interface-claim-repair.md) (387 lines) — Type: Architectural pattern
+- [A.6.M - Module and Interface Claim Repair](23-a-6-m---module-and-interface-claim-repair.md) (389 lines) — Type: Architectural pattern
 - [A.6.5 - Relation-Declaration Slot Discipline - SlotKind, ValueKind, RefKind, and participant-designation discipline](24-a-6-5---relation-declaration-slot-discipline---slotkind-valu.md) (364 lines) — Type: Architectural (A)
 - [A.6.6 - Base Declaration Discipline: Say Exactly What Something Depends On](25-a-6-6---base-declaration-discipline-say-exactly-what-somethi.md) (440 lines) — Type: Definitional relation-discipline pattern
 - [A.6.7 - MechSuiteDescription — Shared Conditions for Joint Use of Distinct Mechanisms](26-a-6-7---mechsuitedescription-shared-conditions-for-joint-use.md) (449 lines) — Type: Architectural pattern.

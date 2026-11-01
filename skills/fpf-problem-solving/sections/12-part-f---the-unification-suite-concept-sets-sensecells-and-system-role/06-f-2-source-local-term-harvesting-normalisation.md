@@ -37,13 +37,13 @@ F.2 prevents these mistakes by tying each expression and local-sense claim to th
 
 ### F.2:4 - Core idea (didactic)
 
-For each needed use, name the **exact source and edition**, the relevant passage, and the **effective `U.ReferenceScheme`** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, add Tech and Plain labels, and state the **LocalSenseClaim** in one sentence.
+For each needed use, name the **exact source and edition**, the relevant passage, and the **effective reference scheme** under which the passage is being read. Harvest an attested **LocalExpression**, choose a minimally edited **Local Normal Form (LNF)**, add Tech and Plain labels, and state the **LocalSenseClaim** in one sentence.
 
 That is the ordinary F.2 result. If later work needs a durable address, F.17 may represent it as `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>` and record the basis relation. The cell is optional and does not replace the source, passage, or claim. F.2 establishes no relation to another source-local meaning.
 
 ### F.2:5 - Minimal vocabulary (this pattern only)
 
-* **Exact source basis** — the selected source, edition or version, relevant passage, and effective `U.ReferenceScheme` needed to recover this use.
+* **Exact source basis** — the selected source, edition or version, relevant passage, and effective reference scheme needed to recover this use.
 * **Attested phrase** — a short verbatim cue showing how the expression is used in that source.
 * **LocalExpression** — the exact expression whose source-local meaning is being recovered.
 * **Local Normal Form (LNF)** — the minimally edited surface used to cite that expression while preserving the source’s spelling, hyphenation, and casing.

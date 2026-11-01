@@ -8,9 +8,10 @@ FPF separates the pieces:
 - a description is a reviewable knowledge object, or episteme, that describes it;
 - a view is an identified episteme that conforms to the fixed rules of an identified viewpoint (`E.17.0`);
 - a viewpoint states the concerns and fixed rules used to judge that conformance;
-- a publication form is the selected arrangement, notation or rendering convention used to express content for a bounded use;
-- a carrier physically or digitally bears that form;
-- a publication occurrence makes the expressed edition obtainable by the declared audience under the declared use conditions;
+- a publication form supplies independently identified reusable rules for forming or arranging expressions;
+- a particular expression is an independently identified sign construction from which the required claims can be recovered for the bounded use; it may conform to a selected reusable form;
+- a carrier is independently identified under its physical or digital domain, and its actual state or realization yields that expression;
+- a publication occurrence makes that expression of the selected edition obtainable from the identified carrier by the declared audience under the declared use conditions;
 - a reliance account explains which uses the evidence supports and where that support ends.
 
 This is why a diagram is not the architecture, a dashboard is not evidence by itself, a model card is not model safety, and a generated explanation is not the system it explains. They can all be valuable, but each has a kind and a relation.

@@ -36,6 +36,8 @@ When measurement concepts are not kept rigorously distinct, several issues arise
 
 **Establish “Characteristic” as the one canonical construct for “what is measured.”** In every FPF context, the _aspect or trait_ being measured MUST be referred to as a **Characteristic**. This term replaces “axis” or “dimension” when they are used as names for the measured aspect; Plain aliases must keep that mapping clear. By fixing a single name and schema, we cleanly separate a **Characteristic** from its **Scale** (and **Unit**), and from any observed **Value/Level** on that scale. The solution also differentiates single-entity vs multi-entity cases and binds all measurements to the standard CSLC sequence.
 
+**Recover the same aspect.** Identify a Characteristic by the aspect it distinguishes, the domain and arity of its possible subjects, the roles of an ordered subject tuple when relevant, and the conditions constitutive of that aspect. A changed reading, bearer, observation window or description does not by itself define a new Characteristic. A different Scale can express the same aspect through a justified conversion. Conversely, an unchanged name does not preserve the Characteristic if it now distinguishes another aspect or changes the subject roles. Preserve the original definition and establish the correspondence needed by the receiving comparison; unresolved equivalence is not identity. A content evaluation and a physical observation can both use this rule without being the same measurement practice.
+
 To enforce this solution, the following rules apply:
 
 -   **A17-R1 (Canonical term).** In all normative models and specifications, the measured aspect **SHALL** be referred to as a **Characteristic**. “Axis” and “Dimension” are not technical substitutes for the measured aspect.
@@ -52,7 +54,7 @@ To enforce this solution, the following rules apply:
 
 - **A17-R7 (Scoring against preference).** A ScoringMethod **SHALL** state how its score order represents the declared preference. Where one input is higher-is-better or lower-is-better, improving that input while holding the others fixed **MUST NOT** worsen the score, for admissible inputs under the stated conditions. Target-based preference is checked against its declared target or loss rule; the preferred direction may change across the target. A quantity calculation or unit conversion uses its measurement relation and Scale rules under A.18/C.16.
 
-- **A17-R8 (Arity declaration).** Authors **SHALL** mark a Characteristic as **`U.EntityCharacteristic`** (applies to exactly one bearer) or **`U.RelationCharacteristic`** (applies to an ordered tuple of two or more bearers). Examples: *Cohesion* → entity‑level; *Coupling* → relation‑level.
+- **A17-R8 (Arity declaration).** Authors **SHALL** identify whether a Characteristic applies to exactly one bearer or to an ordered tuple of two or more bearers, and declare the tuple roles. Examples: *Cohesion* is unary; *Coupling* is relational. This arity declaration suffices for direct use; a receiving typed interface can require a C.3 classification when it needs a recurring membership decision.
 
 - **A17-R9 (Relational scale anchors).** For relation‑level cases, the Scale’s admissible values **SHALL** be defined over the **tuple** domain (e.g., distances, similarities, inter‑role latencies). Ambiguity that re‑reads a relational Characteristic as unary is **forbidden**.
 
@@ -64,7 +66,7 @@ To enforce this solution, the following rules apply:
 
 **R18 - Allowed changes and state recognition.** For a model of change, state the allowed continuations and their conditions through A.3.3. Use a state predicate or checklist when the receiving use needs to recognize a condition. A.2.5 governs the particular case of a condition on an assignment to a system role; a gate or assurance use supplies its own required support.
 
-**I7 — Vector interpretation.** A **U.Coordinate** vector may collect multiple coordinates for multi‑Characteristic reasoning; composition into a single Score, if desired, is an **explicit new 𝒢** on that vector.
+**I7 — Vector interpretation.** A vector may collect multiple Scale-specific Coordinates for multi‑Characteristic reasoning; composition into a single Score, if desired, is an **explicit new 𝒢** on that vector.
 
 ### A.17:5 - Archetypal Grounding (System & Episteme Examples)
 

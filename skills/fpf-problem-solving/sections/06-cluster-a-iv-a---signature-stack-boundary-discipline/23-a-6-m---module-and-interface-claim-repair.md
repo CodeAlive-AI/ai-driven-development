@@ -14,11 +14,11 @@ The first useful output is a sufficient account of the recovered claim or questi
 ModuleRelationRepairNote:
   wholeHolonRef:
   candidateModuleHolonRef:
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
   claimScope?: U.ClaimScope, byValue
   modelUseStructureRef?: only when one selected model-use structure changes module meaning
   moduleInterfaceViewpointRef?: VP.ModuleInterface
-  selectedDependencyStructureRef?: U.StructureRef
+  selectedDependencyStructureRef?: SelectedStructureReference
   boundaryRef:
   interfaceSpecificationRef?: U.EpistemeRef constrained to InterfaceSpecification
   interfaceSpecificationGap?: exact missing-specification result
@@ -41,6 +41,8 @@ ModuleRelationRepairNote:
   governedNonModuleClaimPatternRefs?:
   stopCondition:
 ```
+In this note and the fuller form below, `effectiveReferenceScheme` carries a rule collection by value with the C.2.1:4.1.2 range `EpistemeInterpretationScheme`. It must supply the designation and interpretation rules used in the module-interface claim, including its holons, boundary, interface conditions and any asserted substitution or change policy.
+
 Exactly one of `interfaceSpecificationRef` and `interfaceSpecificationGap` is current. `noDirectRelationClaimed` leaves the direct-relation fields empty. `admittedPredicateClaim` names an already governed predicate, its participants and the affirmative, negative, modal or unresolved claim being made; it requires no invented obtaining occurrence. `admittedRelationAndOccurrence` additionally identifies one independently obtaining occurrence when its identity matters. `missingGovernor` names the participants, proposed predicate, affected use and missing rule. Missing case facts under an available rule leave a factual question, not a missing governor. A PatternID may locate the rule but cannot substitute for its predicate, participants or facts.
 
 Ordinary use stops when the whole, candidate module, boundary, interface specification or explicit gap, relation disposition, and conditions needed by the selected claim are clear enough to choose the next architecture move. Recover substitution or change policy when replacement or separate change is claimed, and a neighboring subject pattern when another claim remains current. Use the fuller `ModuleInterfaceClaim` record only when substitutability, conformance, publication, evidence, assurance, change policy, repeated reuse, or cross-team coordination requires durable claim content.
@@ -87,7 +89,7 @@ The practical question is: does this phrase name a module relation, component re
 
 A.6.M specializes `A.6.P` for module, component, interface, platform, and open-architecture wording when the recovered result is module-interface claim content, an interface specification, platform grammar, substitutability claim, or open-architecture module-interface claim. Stratification or architecture-operation source labels covered by `C.30.STRAT` are governed by `C.30.STRAT` until that repair recovers this module-interface content. A.6.M neither mints root kinds from those labels nor admits a direct module relation from record syntax.
 
-A candidate module is an exact `U.Holon` used in a claim that treats it as a replaceable, reusable, or separately changed structural unit of a larger `U.Holon`, ordinarily under the exact `VP.ModuleInterface` viewpoint episteme. The claim names its boundary, interface specification, admissibility conditions, substitutability policy when replaceability is claimed, and change policy when separate change is claimed. Effective `U.ReferenceScheme` and `U.ClaimScope` qualify the claim; an optional selected model-use structure appears only when its organization changes module meaning. None replaces the two holons or makes a module relation obtain. A `FunctionalElementClaim` is different: it is a claim-bearing episteme cited by a functional structural view under C.30.ASV, not a root kind or a module relation. It binds required behaviour or effect to bearer or candidate bearer, capability, functional ports, and allocation claims when those claims are current; required or desired content is not an actual `U.Transformation`. The relation between functional and module claims is separately governed allocation or correspondence, not identity. One module candidate can correspond to many functional elements; many module candidates can correspond to one functional element; a functional element can remain unallocated; and a module candidate can be present in a module-interface view with no current functional behaviour in the functional view.
+A candidate module is an exact `U.Holon` used in a claim that treats it as a replaceable, reusable, or separately changed structural unit of a larger `U.Holon`, ordinarily under the exact `VP.ModuleInterface` viewpoint episteme. The claim names its boundary, interface specification, admissibility conditions, substitutability policy when replaceability is claimed, and change policy when separate change is claimed. Effective reference scheme and `U.ClaimScope` qualify the claim; an optional selected model-use structure appears only when its organization changes module meaning. None replaces the two holons or makes a module relation obtain. A `FunctionalElementClaim` is different: it is a claim-bearing episteme cited by a functional structural view under C.30.ASV, not a root kind or a module relation. It binds required behaviour or effect to bearer or candidate bearer, capability, functional ports, and allocation claims when those claims are current; required or desired content is not an actual `U.Transformation`. The relation between functional and module claims is separately governed allocation or correspondence, not identity. One module candidate can correspond to many functional elements; many module candidates can correspond to one functional element; a functional element can remain unallocated; and a module candidate can be present in a module-interface view with no current functional behaviour in the functional view.
 
 Functional ports and module interfaces may both use `U.Signature` discipline, but they govern different claims. A functional port constrains input condition, output condition, accepted-state, and produced-state slots for a functional behavior or transformation. A module interface constrains boundary, substitutability, compatibility, protocol references, schema references, version policy, change policy, and conformance expectations for a module relation. Do not move a functional-port claim into module-interface structure unless a module-interface or substitution claim is actually being made.
 
@@ -103,18 +105,18 @@ ModuleInterfaceClaim:
   entityOfConcernRef:
     moduleHolonRef | selectedDependencyStructureRef |
     admittedDirectModuleRelationOccurrenceRef
-  effectiveReferenceScheme: U.ReferenceScheme, byValue
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
   claimScope?: U.ClaimScope, byValue
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
   moduleHolonRef: U.HolonRef
   wholeHolonRef: U.HolonRef
   viewpointRef?: U.ViewpointRef = VP.ModuleInterface
-  selectedDependencyStructureRef?: U.StructureRef
+  selectedDependencyStructureRef?: SelectedStructureReference
   boundaryRef: BoundaryRef
   interfaceSpecificationRef?: U.EpistemeRef constrained to InterfaceSpecification
   interfaceSpecificationGap?: exact missing-specification result
   functionalCorrespondenceRelationRefs?: FinSet(U.RelationRef)
-  transformationFlowStructureRefs?: FinSet(U.StructureRef)
+  transformationFlowStructureRefs?: FinSet(SelectedStructureReference)
   transformationFlowRelationOccurrenceRefs?: FinSet(U.RelationRef)
   mechanismRefs?: FinSet(U.EntityRef constrained by the selected mechanism pattern)
   dependencyRelationOccurrenceRefs?: FinSet(U.RelationRef)
@@ -137,7 +139,7 @@ ModuleInterfaceClaim:
   nonAdmissibleUse?
 ```
 
-This form is claim content in one C.2.1 episteme. Its identity uses that content, the one exact `entityOfConcernRef`, and the effective `U.ReferenceScheme`. `claimScope` qualifies the claim when its coverage matters. `modelUseStructureRef` is present only when one independently selected model-use structure changes the meaning of *module* for this claim; it is not a module participant, whole, boundary, or source of relation obtaining. `VP.ModuleInterface` is a reference to the exact viewpoint episteme when viewpoint use matters; citing it does not make this claim a `U.View`. The interface-specification and direct-relation fields obey the same exclusive branches as `ModuleRelationRepairNote`. If `entityOfConcernRef` names an admitted direct module-relation occurrence, the disposition is `admittedRelationAndOccurrence` and `obtainingRelationOccurrenceRef` resolves that same occurrence. Under the other dispositions, `entityOfConcernRef` stays with the module holon or selected dependency structure.
+This form is claim content in one C.2.1 episteme. Its identity uses that content, the one exact `entityOfConcernRef`, and the effective reference scheme. `claimScope` qualifies the claim when its coverage matters. `modelUseStructureRef` is present only when one independently selected model-use structure changes the meaning of *module* for this claim; it is not a module participant, whole, boundary, or source of relation obtaining. `VP.ModuleInterface` is a reference to the exact viewpoint episteme when viewpoint use matters; citing it does not make this claim a `U.View`. The interface-specification and direct-relation fields obey the same exclusive branches as `ModuleRelationRepairNote`. If `entityOfConcernRef` names an admitted direct module-relation occurrence, the disposition is `admittedRelationAndOccurrence` and `obtainingRelationOccurrenceRef` resolves that same occurrence. Under the other dispositions, `entityOfConcernRef` stays with the module holon or selected dependency structure.
 
 A record, package path, file boundary, graph edge, list position, name or publication does not make a world-side module relation obtain. Its content may supply a claim or grounds; assess those under the applicable rule. A.6.M admits no general direct module relation kind. If the receiving use needs a predicate that no subject rule supplies, use A.6.RCD to settle participant meanings, obtaining conditions, applicability and any needed recurrence or identity rule. Use A.6.REL when explicit identity is needed to distinguish, reidentify or refer to an obtaining occurrence, or to use it as a participant. A separately constituted RelationSignature may declare reusable SlotSpecs; neither declaration nor claim creates the occurrence.
 
@@ -147,7 +149,7 @@ Well-formedness: the claim names both holons, one exact EntityOfConcern, an effe
 
 #### A.6.M:4.2 - Interface specification is not a label
 
-A.6.M calls the independently identified specification episteme an `InterfaceSpecification`. It is one `U.Episteme` under C.2.1 whose `EntityOfConcern` is the exact boundary named by the module claim. Its identity is `<exact ClaimGraph, that one EntityOfConcern, effective U.ReferenceScheme>`. Its claim content may include:
+A.6.M calls the independently identified specification episteme an `InterfaceSpecification`. It is one `U.Episteme` under C.2.1 whose `EntityOfConcern` is the exact boundary named by the module claim. Its identity is `<exact ClaimGraph, that one EntityOfConcern, effective reference scheme>`. Its claim content may include:
 
 ```text
 InterfaceSpecification claim content:

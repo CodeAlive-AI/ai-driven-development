@@ -60,7 +60,7 @@ Before declaring a viewing, recover for each of X and Y under C.2.1:
 
 - exact claim content;
 - exact EntityOfConcern;
-- effective `U.ReferenceScheme`.
+- effective interpretation rules, identified under C.2.1:4.1.1 (`ReferenceScheme`).
 
 X and Y are separate epistemes whenever one of those identity discriminators differs. A filename, table, diagram, query result, `viewpointRef`, or publication form is not a substitute for either identity.
 
@@ -135,7 +135,7 @@ Describe querying, rewriting, modeling or rendering in ordinary practitioner ter
 
 If that work first constitutes exact episteme Y and the identity-inception claim matters, A.15.PROD governs the local work/change/identity claim. Neither work nor inception establishes conservativity or E.17.0 conformance.
 
-If Y is made available, E.24.PUB separately identifies the publication occurrence, publication form, and `U.PresentationCarrier`. Publication neither creates the A.6.3 construction nor grants `U.View` membership.
+If Y is made available, E.24.PUB separately identifies the publication occurrence, particular expression, any selected reusable publication form, and independently identified carrier whose actual state or realization yields that expression. Publication neither creates the A.6.3 construction nor grants `U.View` membership.
 
 #### A.6.3:4.7 - Preserve composition and replay
 

@@ -4,7 +4,7 @@ Before selecting framework guidance, read and apply [Using FPF Library](https://
 
 When an AI agent assists you, put this requirement and the instruction's location in your project's `AGENTS.md` or equivalent instructions. If a reading test explicitly limits its reader to an isolated excerpt, use only the materials supplied for that test; do not add USING-FPF.md unless the test includes it.
 
-Use FPF as a reference model and pattern language, not as a linear textbook. Start from the working question you bring from your project. Bring in internal FPF terms only after they help you keep the work precise.
+Use FPF as a reference model and pattern language, not as a linear textbook. Start from a working question or a worthwhile occasion to examine ordinary work. Bring in internal FPF terms only after they help you keep the work precise.
 
 You can ask an assisting agent to explain an answer or give feedback in ordinary language, without FPF terminology. For example: “Explain this and comment on my proposal without FPF jargon; use the language of my work.” The patterns can guide the reasoning while the answer uses familiar words.
 

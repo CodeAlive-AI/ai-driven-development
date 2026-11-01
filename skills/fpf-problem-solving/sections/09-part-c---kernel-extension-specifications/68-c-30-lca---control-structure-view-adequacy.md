@@ -115,10 +115,10 @@ A full `ControlStructureView` carries the common `ArchitectureStructuralView` co
 ```text
 ControlStructureView ::= ArchitectureStructuralView & {
   viewEpistemeRef: U.EpistemeRef,
-  claimGraph: exactly one C.2.1 ClaimGraph,
+  claimGraph: NonemptyClaimContent, byValue, // complete claim content of viewEpistemeRef
   entityOfConcernRef: selectedControlStructureRef,
-  effectiveReferenceScheme: U.ReferenceScheme, byValue,
-  selectedControlStructureRef: U.StructureRef,
+  effectiveReferenceScheme: EpistemeInterpretationScheme, byValue,
+  selectedControlStructureRef: SelectedStructureReference,
   structureKindRef = ControlStructure,
 
   viewpointRef: U.ViewpointRef,
@@ -129,7 +129,7 @@ ControlStructureView ::= ArchitectureStructuralView & {
   architectureRelationOccurrenceRefs?: FinSet(ArchitectureRelationRef),
   architectureClaimRefs?: FinSet(U.EpistemeRef constrained to ArchitectureClaim),
   claimScope?: U.ClaimScope, byValue,
-  modelUseStructureRef?: U.StructureRef,
+  modelUseStructureRef?: SelectedStructureReference,
   empiricalGroundingRelationRefs?: FinSet(EpistemeEmpiricalGroundingRelationRef),
   controlledHolonRef: U.HolonRef,
 
@@ -167,7 +167,7 @@ ControlStructureView ::= ArchitectureStructuralView & {
   representationRefs?: FinSet(U.EntityRef),
   publicationOccurrenceRefs?: FinSet(EpistemePublicationRelationRef),
   publicationFormRefs?: FinSet(U.EntityRef),
-  carrierRefs?: FinSet(U.EntityRef constrained to U.PresentationCarrier),
+  carrierRefs?: FinSet(U.EntityRef),
   admissibleUse,
   nonAdmissibleUse,
   sourceReturnCondition?
@@ -177,6 +177,8 @@ ControlStructureView ::= ArchitectureStructuralView & {
 The full view is the same C.2.1 episteme identified by its exact claim graph, selected-control-structure EntityOfConcern, and effective scheme. Its direct E.17.0 conformance occurrence has exactly that candidate episteme and one exact viewpoint episteme as participants. It obtains only when the fixed five-part predicate is true, and those participants determine its identity. Authoring, A.6.3 construction, a `viewpointRef`, query, selection, bundle membership, diagramming, rendering, publication, or current use does not make it obtain.
 
 `controlledHolonRef` names the holon whose state is observed or changed by independently obtaining control relations and may be the described holon or one of its exact parts. Architecture claims, `ClaimScope`, model-use structure, concern, and empirical grounding remain optional neighboring objects or relations. `modelUseStructureRef` appears only when an independently selected DDD-style bounded-model-use structure changes interpretation or selection.
+
+For publication use, each carrier reference resolves to an independently identified physical or digital entity whose actual state or realization yields the relevant expression. The carrier's domain supplies its identity rule. When the bearing claim needs inspection, recover its `PublicationExpressionBearingRelation` and exact expression under E.24.PUB. A reusable form has its separate conformance relation. A file object, immutable snapshot value and individual copy retain their different identity rules.
 
 For every positive control-relation reference, identify the actual occurrence and use the relevant pattern to recover what its participants mean. Identify any participating System, local classification, assignment, Method, Work, or F.6 attribution independently on its own admitted basis. A classification or assignment establishes neither control nor action.
 

@@ -62,13 +62,15 @@ The predecessor-to-candidate question has two branches. Use a one-to-one express
 
 These two comparisons and the two predecessor branches are parts of the method, not new FPF kinds. When a later use needs the conclusion as a reusable episteme, identify it under `C.2.1` and state the later reliance separately.
 
+A publication-form expression here is one independently identified expression under E.24.PUB that follows the selected reusable form. Fix its domain and equality rule before comparing it. The form-mediated relation can remain true while its expression witness changes, so a preservation comparison identifies the actual predecessor and candidate expressions rather than relying on that relation alone.
+
 #### E.4.PFIP:4.1 - Bound the candidate and accepted inputs
 
 Identify:
 
 - the candidate FPF, DPF, or LPF edition and declared publication use;
 - every accepted source contribution included in this candidate edition;
-- every candidate `PublicationFormExpressionRelation` occurrence and its selected edition, publication form, and bounded-use declaration;
+- every candidate `PublicationExpressionRelation` occurrence and its selected edition, independently identified expression, and bounded-use declaration, plus any selected form and its `PublicationFormConformanceRelation`; retain a current `PublicationFormExpressionRelation` claim with its actual expression witness;
 - the corresponding carriers and publication occurrences only when their identities affect the comparison; and
 - every predecessor expression whose continuity, replacement, retirement, split, merge, or use change is claimed.
 
@@ -78,7 +80,7 @@ Before assigning a receiving passage, recover the content architecture that make
 
 For each accepted source contribution, record the candidate publication-form expression and the passage, field, relation, cue, or selected structure intended to incorporate it. A source contribution with no corresponding predecessor content is an accepted addition. Changing or retiring predecessor content needs an accepted content decision; changing or retiring a publication form is not such a decision.
 
-Use `E.24.PUB` to keep the framework edition, publication form, expression relation, carrier, bearing relation, audience, bounded use, and publication occurrence distinct. Use the smallest explicit statement that supports the comparison.
+Use `E.24.PUB` to keep the framework edition, particular expression, reusable publication form, expression and conformance relations, carrier, bearing relation, audience, bounded use, and publication occurrence distinct. Use the smallest explicit statement that supports the comparison.
 
 #### E.4.PFIP:4.2 - Compare accepted sources with candidate expressions
 
@@ -98,7 +100,7 @@ The checkable traversal can retain an ordinary positive classification without a
 
 #### E.4.PFIP:4.3 - Compare one eligible expression pair
 
-One preservation comparison follows one eligible pair: one predecessor `PublicationFormExpressionRelation` occurrence and one candidate occurrence.
+One preservation comparison follows one eligible pair: one predecessor `PublicationExpressionRelation` occurrence and one candidate occurrence, with both expression identities fixed. Where form-mediated continuity is claimed, retain the corresponding `PublicationFormExpressionRelation` occurrences and identify the exact expression witnesses being compared.
 
 A pair is eligible only when both expressions have the same declared bounded use and either:
 
@@ -138,7 +140,7 @@ Without the form-change decision, stop at `missing publication-expression contin
 
 #### E.4.PFIP:4.5 - Complete the affected-publication comparison and return
 
-Identify every affected publication-form expression relation occurrence and, when carrier or publication identity affects the comparison, its bearing and publication relations. Run every applicable eligible-pair comparison and allocation comparison. Check each shared public entry or direct consumer once across the comparisons, while preserving the separate expression results that depend on it.
+Identify every affected exact expression relation occurrence, its selected reusable form when applicable, and any form-mediated relation whose continuity is claimed and, when carrier or publication identity affects the comparison, its bearing and publication relations. Run every applicable eligible-pair comparison and allocation comparison. Check each shared public entry or direct consumer once across the comparisons, while preserving the separate expression results that depend on it.
 
 Return a bounded preservation conclusion with:
 
@@ -172,7 +174,7 @@ When the framework publication has no predecessor, perform the accepted-source c
 | Lens | Likely drift | Repair |
 | --- | --- | --- |
 | Gov | Source parity, a successful build, or an accepted form change is read as permission to change or retire predecessor content. | Require an accepted content-change or content-retirement decision for that disposition. Keep the preservation conclusion as comparison evidence, not acceptance, release, landing, or assurance authority. |
-| Arch | Edition, form, expression relation, carrier, and publication occurrence collapse into one file or bundle, so a surviving carrier is treated as surviving content. | Keep the objects distinct; use eligible expression pairs for one-to-one continuity and allocation comparisons for every split or merge. |
+| Arch | Edition, particular expression, reusable form, expression relation, carrier, and publication occurrence collapse into one file or bundle, so a surviving carrier is treated as surviving content. | Keep the objects distinct; use eligible expression pairs for one-to-one continuity and allocation comparisons for every split or merge. |
 | Epist (Epistemological and Ontological) | A selected inventory is treated as complete knowledge of the publication because filenames, headings, or visible text were covered. | Select the inventory through the applicable FPF pattern or another accepted basis for the declared use. Return `missing form-comparison basis` when no complete inventory can be selected. |
 | Prag | Complete traversal grows into a written positive ledger, or cost pressure turns one proxy into preservation proof. | Traverse every inventory entry, reuse shared evidence, and write only losses, accepted changes or retirements that explain a difference, unexpected additions, blockers, and unresolved questions. |
 | Did | Retained content without a prose row looks unchecked, so reviewers ask for duplicate status text instead of inspecting the traversal boundary. | State once that the complete inventory is checkable and ordinary retained entries need no prose rows; use the unlike worked cases to teach where a separate result is required. |
@@ -186,7 +188,7 @@ The external source traditions below come mainly from software transformation, m
 | `CC-PFIP-1` Bounded candidate | The candidate framework edition and declared publication use are named. |
 | `CC-PFIP-2` Accepted inputs complete | Every accepted source contribution is included; when it changes a public entry or consumed interface, the affected public entries and direct consumers are included with it, or that source contribution is left out of this candidate. |
 | `CC-PFIP-3` Two questions kept separate | When the publication has a predecessor, accepted-source incorporation and predecessor preservation receive independent conclusions. |
-| `CC-PFIP-4` Publication relations distinguished | Edition, form, expression relation, carrier, bearing relation, audience, bounded use, and publication occurrence are identified separately when they affect the comparison. |
+| `CC-PFIP-4` Publication relations distinguished | Edition, particular expression, reusable form, expression and conformance relations, carrier, bearing relation, audience, bounded use, and publication occurrence are identified separately when they affect the comparison. |
 | `CC-PFIP-5` Pair eligibility established | Every one-to-one pair has the same declared use plus retained form identity or an accepted one-to-one continuity decision. |
 | `CC-PFIP-6` Complete inventory selected | Each pair uses a complete inventory selected through the FPF pattern that defines or constrains the form, or through another accepted comparison basis. |
 | `CC-PFIP-7` Non-text structure handled | A non-span form uses content or selected-structure correspondence chosen for the declared use; visual or carrier similarity remains only supporting evidence. |
@@ -243,7 +245,7 @@ Reopen this source use when current publication-preservation or structured-trans
 
 ### E.4.PFIP:12 - Relations
 
-- **Builds on:** `C.2.1` for framework-episteme identity and `EpistemeEditionRelation`, and `E.24.PUB` for `PublicationFormExpressionRelation`, `PublicationFormBearingRelation`, and `EpistemePublicationRelation`. Together they keep the selected edition, publication form, carrier, audience, bounded use, and publication occurrence distinct.
+- **Builds on:** `C.2.1` for framework-episteme identity and `EpistemeEditionRelation`, and `E.24.PUB` for `PublicationExpressionRelation`, `PublicationExpressionBearingRelation`, `PublicationFormConformanceRelation`, and `EpistemePublicationRelation`, together with the form-mediated `PublicationFormExpressionRelation` and `PublicationFormBearingRelation` when that broader claim is current. Keep the actual expression witnesses recoverable. These relations keep the selected edition, expression, reusable form, carrier, audience, bounded use, and publication occurrence distinct.
 - **Coordinates with:** `E.17` for several reader-facing forms and visible omissions; `E.11` for public entry and discovery; `C.33` for captured and lost selected structure; and `C.34` for declared structural correspondence.
 - **Coordinates with:** `E.8` for material-revision authoring and direct-consumer repair. A maintainer uses `E.4.PFIP` to compare an assembled principle-framework publication, not to replace pattern authoring.
 - **Entry from FPF and DPF authoring:** `E.4.FPF` refers maintainers here for integration or continuity of an FPF publication edition; `E.4.DPF` does the same for a DPF or LPF publication edition. Those two patterns continue to supply their respective authoring and publication-form guidance.

@@ -90,7 +90,7 @@ RelationOccurrenceQualifiers:
   basisClaimAddress: ClaimAddress
   posture: ReasoningBasisPostureValue
   reasoningUseScope?: U.ClaimScope
-  modelUseStructureRef?: U.StructureRef
+  modelUseStructureRef?: SelectedStructureReference
 
 OccurrenceIdentity:
   <exact basis-claim edition and claim ID,

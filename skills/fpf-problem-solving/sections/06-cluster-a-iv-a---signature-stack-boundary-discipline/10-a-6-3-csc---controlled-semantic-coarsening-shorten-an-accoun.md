@@ -87,7 +87,7 @@ Use these Plain terms with that progressive boundary:
 
 Producing an ordinary candidate does not require a Work record. When the current claim needs the history of actual coarsening, use A.13 to establish each performer's agential basis and A.15.1 to admit the dated Work independently, including at least one Method actually followed. Add F.6 only if that use must also state exactly under which assignment the Work was performed. Name a separate capability claim, an additional enacted Method, source-use or A.6.1 bindings, and any A.15.PROD inception claim only when the receiving claim depends on them. Establish conservativity or controlled loss through the source-to-candidate comparison.
 
-E.24.PUB identifies an exact publication occurrence that makes one selected episteme edition available to a declared audience for a bounded use through one exact publication form and `U.PresentationCarrier`. Plain **published episteme** names the episteme in that contingent publication use. Establish `X`, `Y`, `c`, and their admissible use under the CSC rules above.
+E.24.PUB identifies an exact publication occurrence that makes one selected episteme edition available to a declared audience for a bounded use through one independently identified expression and the actual state or realization of its independently identified carrier. Any selected reusable publication form constrains that expression separately. Plain **published episteme** names the episteme in that contingent publication use. Establish `X`, `Y`, `c`, and their admissible use under the CSC rules above.
 
 #### A.6.3.CSC:4.1 - Ordinary mini-card
 
@@ -124,7 +124,7 @@ Ordinary cases should remain light. A short orientation summary, redacted partne
 
 Open the exact branch only when independent reuse, dispute, reliance, citation, cross-scheme interpretation, policy, bridge, work, gate, privacy, engineering justification, or assurance makes identity material. Then:
 
-1. identify exact source episteme `X` and exact receiving coarsened episteme `Y` by claim content, EntityOfConcern, and effective `U.ReferenceScheme`;
+1. identify exact source episteme `X` and exact receiving coarsened episteme `Y` by claim content, EntityOfConcern, and effective interpretation rules (`ReferenceScheme`);
 2. confirm that both concern the same exact EntityOfConcern;
 3. state exact `c : X -> Y`, including claim construction, endpoint-scheme relation, preservation, controlled loss, prohibited strengthening, applicability, narrower admissible use, and return; and
 4. keep any source set, model, graph, state representation, evidence set, publication occurrence, form, carrier, actual Work, viewpoint, representation, and grounding facts separate and add only those needed by the receiving use.
@@ -245,7 +245,7 @@ A check is retained only if it changes the next admissible use, blocks a concret
 | ID | Requirement | Purpose |
 | --- | --- | --- |
 | **CC-CSC-0 (Ordinary entry).** | The practitioner names the present use and must-retain distinctions, writes the shorter candidate, compares it with the source, rejects unsupported additions or strengthening, and records loss, non-use, and return before optional identity work. | Makes direct semantic compression the first useful move without admitting a fluent invention. |
-| **CC-CSC-1 (Exact endpoints when material).** | When the candidate must travel independently or exact content identity changes the receiving use, exact `X` and `Y` each have recoverable claim content, EntityOfConcern, and effective `U.ReferenceScheme`. | Blocks a source set, model, graph, evidence set, publication, form, carrier, or readable tile from replacing an episteme. |
+| **CC-CSC-1 (Exact endpoints when material).** | When the candidate must travel independently or exact content identity changes the receiving use, exact `X` and `Y` each have recoverable claim content, EntityOfConcern, and effective interpretation rules (`ReferenceScheme`). | Blocks a source set, model, graph, evidence set, publication, form, carrier, or readable tile from replacing an episteme. |
 | **CC-CSC-2 (Exact construction when material).** | The same trigger requires exact `c : X -> Y` with same EntityOfConcern, claim construction, endpoint-scheme relation, preservation, controlled loss, prohibited strengthening, applicability, and return. | Makes a load-bearing coarsening claim testable without making the formal account the ordinary entrance. |
 | **CC-CSC-3 (Admissible use).** | The ordinary candidate names its present use; exact `Y` has one stated narrower admissible use. | Keeps convenience from becoming broad authority. |
 | **CC-CSC-4 (Non-admissible use).** | The stronger downstream use that needs more than the ordinary candidate, exact `Y`, or its publication is explicit, together with the limiting loss or missing support. Apply `F.19:4` to how that boundary is expressed; retain the actual admissibility condition. | Blocks authority laundering. |
