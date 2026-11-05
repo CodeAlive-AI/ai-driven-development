@@ -37,7 +37,7 @@ Notation independence vs useful scaling heuristics; local context vs cross‑con
 * **ScaleWindow.** Declared range of `S` values for which behaviour claims hold (editioned). This is **distinct from** **FreshnessWindow** used by parity.
 * **Scale‑Probe.** At least **two** (preferably **≥ 3**) **parity‑respecting** points in `S` within the ScaleWindow, recorded with **replicates/seeds** and **CI/error bars** to support elasticity classification. Pick points via a **small factorial or Latin‑hypercube** when multiple knobs vary.
 * **ElasticityClass** `χ ∈ {rising, knee, flat, declining}` — a **qualitative** class supported by the probe over the declared ScaleWindow. Leave `χ` unassigned when the observations and their uncertainty do not support a class, and state what remains unresolved. Numeric exponents/fits live in domain annexes, not Core.
-* **ParityNotes.** `iso‑scale parity?` flag and **loss notes** if not achieved, plus applicable **Bridge**, **Φ**, and **Ψ** IDs for actual crossings under **G.9**; penalties affect `R` only.
+* **ParityNotes.** `iso‑scale parity?` flag and **loss notes** if not achieved, plus applicable **Bridge**, **Φ**, and **Ψ** IDs for actual crossings under **G.9**; any numerical assurance penalty follows its applicable B.3 model.
 
 #### C.18.1:4.3 - Norms (SLL).
 
@@ -80,7 +80,7 @@ Notation independence vs useful scaling heuristics; local context vs cross‑con
 
 1. `S` declared **or** `S = N/A` with rationale.
 2. **Scale-probe** performed; the supported **χ** or unresolved classification recorded with **replicates and CI**; invariants disclosed.
-3. **iso-scale parity** or **loss notes**; any applicable penalties **→ R only**; editions/seeds pinned; ComparatorSet cited.
+3. **iso-scale parity** or **loss notes**; any numerical assurance penalty justified by its receiving B.3 model; editions/seeds pinned; ComparatorSet cited.
 4. If illumination is used as a tie-breaker, the selector cites the admitting policy, **χ** and **lens id** in **E/E-LOG** provenance.
 5. Knee claims cite the **policy threshold** and CI level used.
 
@@ -100,7 +100,7 @@ Here `χ?` means that the class is omitted when unresolved; uncertainty is not a
 
 ### C.18.1:11 - Consequences
 
-**Benefits.** SLL prevents scale claims from becoming rhetoric. A comparison can show which knobs were scaled, what window is covered, how much probe evidence supports the slope class, and what parity or normalization losses are declared, with any assurance penalties affecting `R` only rather than silently changing dominance.
+**Benefits.** A comparison can show which knobs were scaled, what window is covered, how much probe evidence supports the slope class, and what parity or normalization losses are declared, with any numerical assurance penalties justified by the receiving B.3 model. Dominance changes require their own admitting policy.
 
 **Trade-offs.** A supported scale claim needs observations at at least two scale points and recoverable invariants, phase, seeds, uncertainty and any applicable policy thresholds. Reuse of an applicable account can avoid new probing. The gain is that selectors, parity harnesses, refresh telemetry, and mathematical-lens uses can cite one bounded scale claim instead of guessing whether the observed behavior transfers.
 

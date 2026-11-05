@@ -45,6 +45,16 @@ The repair must recover the meaning needed by the receiving work. It should not 
 
 Rewrite the claim so the reader can recover its subject, the relevant characterization or comparison, its basis and the use it supports. Keep necessary applicability and stop conditions.
 
+#### C.16.P:4.1 - Recovery sequence
+
+1. **Read the trigger in its sentence.** Recover the complete assertion. Retain the source wording when the repair needs an inspectable comparison.
+2. **Recover the bearer.** Name the subject being characterized. For a relational Characteristic, retain the tuple required by its definition.
+3. **Recover the construction.** Use §5 to identify what the wording means. A trigger can be ordinary prose; its appearance does not create an FPF kind.
+4. **Use a recovered subject rule directly.** Once the construction is clear, apply its subject pattern from §6 or the relevant domain practice.
+5. **Repair what remains hidden.** Recover the contributions needed by this claim: for a measurement, its Characteristic, Scale and interpretation; for a comparison, its reference or comparator set; for a threshold, its predicate and applicability; for an indicator, the indicated property or claim and the direct relation, including distortion risk when it is a proxy. Keep necessary use and stop conditions. If an indicator relation is required but no governing rule can state or test it, return `missing-governor` rather than storing an `indicatorRole` label. Use A.6.RCD:0.1 to distinguish that absent rule from missing case facts or a failed positive test. Add explanatory non-use guards only under the F.19:4 test.
+6. **Separate further claims.** A measurement or score may contribute to evidence, a decision or another use. Apply the governing conditions for that additional claim; repairing the characterization alone does not establish it.
+7. **Return a useful statement.** Say what the reader can now recognize, compare or conclude, or which missing contribution leaves the claim unresolved. Type-correct wording with no useful interpretation is insufficient.
+
 When the receiving work needs a separate inspectable note, the following scaffold can retain the repair. Include only fields relevant to that claim:
 
 ```text
@@ -74,16 +84,6 @@ CharacteristicScaleRepairNote:
 ```
 
 A local rewrite is sufficient when the sentence conveys the needed meaning and conditions. An ordinary PatternID can locate the governing rule. Include `relationFunctionClaimRef` only when the use depends on the identity of its defining or constraining ClaimGraph. Include `indicatorRelationDisposition` when an indicator or proxy relation is under repair, following §4.1. An explanatory `nonAdmissibleUse` guard is optional under F.19:4's independent-ground, plausible-reader, contribution and smallest-clear-correction test; its absence needs no entry.
-
-#### C.16.P:4.1 - Recovery sequence
-
-1. **Read the trigger in its sentence.** Recover the complete assertion. Retain the source wording when the repair needs an inspectable comparison.
-2. **Recover the bearer.** Name the subject being characterized. For a relational Characteristic, retain the tuple required by its definition.
-3. **Recover the construction.** Use §5 to identify what the wording means. A trigger can be ordinary prose; its appearance does not create an FPF kind.
-4. **Use a recovered subject rule directly.** Once the construction is clear, apply its subject pattern from §6 or the relevant domain practice.
-5. **Repair what remains hidden.** Recover the contributions needed by this claim: for a measurement, its Characteristic, Scale and interpretation; for a comparison, its reference or comparator set; for a threshold, its predicate and applicability; for an indicator, the indicated property or claim and the direct relation, including distortion risk when it is a proxy. Keep necessary use and stop conditions. If an indicator relation is required but no governing rule can state or test it, return `missing-governor` rather than storing an `indicatorRole` label. Use A.6.RCD:0.1 to distinguish that absent rule from missing case facts or a failed positive test. Add explanatory non-use guards only under the F.19:4 test.
-6. **Separate further claims.** A measurement or score may contribute to evidence, a decision or another use. Apply the governing conditions for that additional claim; repairing the characterization alone does not establish it.
-7. **Return a useful statement.** Say what the reader can now recognize, compare or conclude, or which missing contribution leaves the claim unresolved. Type-correct wording with no useful interpretation is insufficient.
 
 ### C.16.P:5 - Trigger split
 
@@ -129,12 +129,12 @@ A local rewrite is sufficient when the sentence conveys the needed meaning and c
 | "Architecture score improved." | Recover whether this is a score on a declared scale, pattern-quality coordinate, grounded architecture adequacy value, selected-structure characteristic value, Q-bundle value, benchmark result, gate threshold, or ordinary comparison. Repair the wording only while the intended comparison remains unclear; use the recovered score construction directly. |
 | "The metric supports launch." | Recover measure, characteristic, scale, scoring method, threshold predicate or reference, and gate or decision pattern. A measurement may support a named launch criterion; establish that evidence use and any further launch conditions under their governing rules. |
 | "The model has robust quality." | Recover robustness perturbation and scale, quality-term or evaluative characterization under `C.16.Q`, Q-bundle under `C.25`, or mathematical-lens use under `C.29`. |
-| "Latent axis explains behavior." | Recover whether `axis` is a latent coordinate, factor, mathematical lens, characteristic, or ordinary source-local word. Use `C.29` when a mathematical-lens use is being claimed. |
+| "Latent axis explains behavior." | Recover whether `axis` is a latent coordinate, factor, mathematical lens, characteristic, or ordinary source-local word. Use `C.29` when choosing, transferring or relying on the mathematical representation leaves an unresolved question. |
 | "The benchmark proves the method is better." | Recover benchmark harness, characteristic space, comparison set, scale, statistical or evidential claim, and decision use. Use evidence named by value, decision, and work patterns as needed. |
 
 **Worked comparison.** A report calls a new implementation “stronger.” Its supplied observations concern response time in four matched workload cases under the same conditions. Response time is elapsed duration on a ratio Scale, expressed in milliseconds. The earlier times are 80, 100, 120 and 140 ms; the new times are 70, 90, 110 and 130 ms. Both comparisons use the median, defined here as the mean of the two middle ordered values. The respective medians are 110 and 100 ms.
 
-The supported rewrite is: “For these four matched workload cases, median response time fell by 10 ms, from 110 to 100 ms.” It names the Characteristic, Unit, comparison set and scoring operation and can finish the wording repair. It supplies no comparison for other workloads. If a receiving criterion requires median response time at most 105 ms on these cases, the new value satisfies that numerical condition. Any other release conditions remain separate. If the new trials used different workload cases, the original comparison would need an account of their comparability before supporting the same claim.
+The supported rewrite is: “For these four matched workload cases, median response time fell by 10 ms, from 110 to 100 ms.” Together with the stated median rule, it identifies the Characteristic, Unit, comparison set and aggregation operation and can finish the wording repair. It supplies no comparison for other workloads. If a receiving criterion requires median response time at most 105 ms on these cases, the new value satisfies that numerical condition. Any other release conditions remain separate. If the new trials used different workload cases, the original comparison would need an account of their comparability before supporting the same claim.
 
 ### C.16.P:8 - Bias-Annotation
 

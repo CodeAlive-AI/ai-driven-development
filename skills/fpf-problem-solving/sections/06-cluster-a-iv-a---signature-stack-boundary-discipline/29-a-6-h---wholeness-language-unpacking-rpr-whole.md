@@ -8,7 +8,7 @@
 
 **Use this when.** Enter after A.6.P:4.11 has recovered the concrete candidate objects and the sentence needed by the receiving use, and that sentence genuinely asks about a whole, part, structure, integrity, coverage, or completion. A.6.H helps the practitioner expose the candidate whole or other bearer, its boundary when relevant, the independently identified parts or constituents, and the exact direct claim together with the rule that defines, constrains, or tests it.
 
-**Not this pattern when.** Do not enter merely because a source contains a trigger word. Apply `C.16.P`/`C.16` when the current question is characteristic or measurement, `A.10`/`B.3` for evidence use or assurance, `C.2.1` for episteme identity or edition, `E.17`/`E.24.PUB` for publication, and the applicable A.3/A.15 rule for Method, WorkPlan, or Work. Keep using A.6.P when the candidate objects or the receiving sentence are still unknown.
+**Not this pattern when.** Do not enter merely because a source contains a trigger word. Use `A.17` or the applicable subject rule for a Characteristic or constraint, `C.16` for a measurement, and `C.16.P` while characteristic or scale wording remains unresolved. Evidence-use and assurance questions follow §6. Use `C.2.1` for episteme identity or edition, `E.17`/`E.24.PUB` for publication, and the applicable A.3/A.15 rule for Method, WorkPlan, or Work. Keep using A.6.P when the candidate objects or the receiving sentence are still unknown.
 
 **What goes wrong if missed.** A situation record, diagram, bundle, adjective, phase label, or coverage slogan becomes the supposed whole or relation. Parts, members, portions, phases, method factors, Work parts, evidence, and measured characteristics are then silently treated as one generic “part of” claim.
 
@@ -88,7 +88,7 @@ Use the following sequence only as far as the current sentence requires:
 3. **Recover a candidate whole only for an actual whole claim.** Identify the candidate individual, its direct identity pattern, relevant boundary or delimitation, environment, and at least one interaction, dependency, or constraint across that boundary when the use needs it.
 4. **Identify the alleged parts independently.** A label, location, list, graph node, file section, timestamp, or common name does not by itself establish the claimed parthood. Recover each component, constituent, entity said to belong to a collection, portion, temporal restriction, Method factor, Work part, or other object using the rule that defines or tests that claim.
 5. **State each needed direct relation claim separately.** Name its participants and test the predicate under the asserted polarity, modality or conditions. Identify an occurrence explicitly only when the receiving use needs that identity. Recognition of the whole or the mere presence of a trace, view or record does not establish the relation; relevant content can supply facts to test under its rule.
-6. **Add construction or selected structure only when the receiving use consumes it.** `C.13` may report already recovered parts, relations, constraints, and a construction rule. `A.22` may identify one selected structure when its selection basis and identity discriminators are current. Neither creates the direct facts.
+6. **Add construction or selected structure only when the receiving use consumes it.** `C.13` may report already recovered parts, relations, constraints, and a construction rule. `A.22` may identify one selected structure when its selection basis and identity discriminators are current. Their presence alone establishes no direct part or relation; apply the relevant rule to the claims and grounds they supply.
 7. **Recognize or reidentify the whole only when that question is current.** Use `A.1` for holon recognition and `B.2` for a remaining whole-reidentification question after direct existing-whole explanations have been tested. A changed adjective or part list alone decides neither.
 8. **Separate coverage, completion, and performed Work.** Name what is covered, under which scope and criterion, by which relation, and whether the claim concerns a MethodDescription, capability, plan, Work occurrence, production result, evidence set, or another subject. Apply the rule for that subject. For a deliberately asserted dated Work, recover A.13's performer basis and independently admit the occurrence under A.15.1; use F.6 afterward only for precise attribution through the same assignment. A.15.PROD governs its production claim when applicable. Ordinary practitioner action needs no invented Work identity.
 9. **Stop after unpacking.** State each recovered whole, relation, characteristic, Work, evidence use, or verdict directly. Apply another named rule only when one exact question remains and its entry holds; otherwise stop with the completed claims or exact blocker.
@@ -99,8 +99,8 @@ The word `integrity` never chooses mereology by itself.
 
 | Current sentence | First exact objects | Governing exit | Blocked overread |
 | --- | --- | --- | --- |
-| “Structural integrity is measured at X.” | bearer, integrity Characteristic, Scale or coordinate, Unit when needed, measurement method, result, evidence pointer, and time stance | `C.16.P`, then `C.16` and the exact measurement pattern | Do not invent a candidate whole, boundary, parts, or `PhaseOf` merely because the Characteristic is named *integrity*. |
-| “This report supports the integrity claim.” | target claim, supporting content and its claim-bearing episteme, any needed carrier reference, evidence-use relation, relying use, limitations, and currentness when required | `A.10`; `B.3` only when an assurance claim is current | A report title, provenance link, or measured value alone establishes no assurance result. |
+| “Structural integrity is measured at X.” | bearer, integrity Characteristic, Scale or coordinate, Unit when needed, measurement method, result, and time stance; evidence pointer when the receiving use requires it | `C.16` and the applicable measurement pattern; `C.16.P` while the characteristic or scale wording remains unresolved | Do not invent a candidate whole, boundary, parts, or `PhaseOf` merely because the Characteristic is named *integrity*. |
+| “This report supports the integrity claim.” | target claim, supporting content and its claim-bearing episteme, evidence-use relation, and the relying use, limitations, currentness, or carrier reference required by this question | the rule for the supported claim; `A.2.4` for evidence-use classification, `A.10` when a replayable source-to-use account is needed; `B.3` for an assurance claim | A report title, provenance link, or measured value alone establishes no assurance result. |
 | “The assembled pump remains an integral whole.” | exact pump, direct identity rule, boundary, independently identified parts, direct assembly or parthood relations, any current selected structure, and the whole-recognition or reidentification question | `A.14`, `C.13`, `A.22`, `A.1`, or `B.2` as selected by the actual claim | The adjective *integral* or presence of a BoM or assembly record does not establish the whole or relations; relevant recorded facts may support the claim under its rule. |
 | “Data integrity” or another defined term of art | exact bearer, defined Characteristic or constraint, threat/assumption or qualification basis, and receiving use | the characteristic, constraint, security, measurement, or evaluation pattern | Do not reinterpret the term as structural wholeness unless the sentence separately makes that claim. |
 
@@ -129,7 +129,7 @@ Ask what the next reader may do because the claim is supposedly complete.
 | Specification coverage | exact claim-bearing episteme, described EntityOfConcern, effective ReferenceScheme, required content or criterion set, coverage predicate, scope, and gaps | `C.2.1` and the exact coverage/evaluation pattern; `A.3.2` only when the episteme is classified or used as a MethodDescription under its membership rule |
 | Capability coverage | exact holder, capabilities, required actions or conditions, scope, and direct coverage criterion | `A.2.2` and the exact capability/coverage pattern |
 | Work coverage or completion | Work occurrence(s) admitted under §4.2, temporal extent, performed parts or episodes when needed, completion or production predicate, acceptance boundary, and evidence | `A.15.1`, `A.15.PROD`, or the applicable completion/acceptance pattern |
-| Evidence coverage | exact claim set, evidence-bearing objects, evidence-use relations, scope, limitations, and relying use | `A.10`; `B.3` only for an assurance claim |
+| Evidence coverage | claim set, evidence-bearing objects, evidence-use relations, scope, limitations, and receiving use | the applicable coverage rule; `A.2.4` for evidence-use classification, `A.10` when a replayable source-to-use account is needed; `B.3` for an assurance claim |
 | End-to-end method or workflow | Methods, method parts and joins, exposed interactions, failure and stop conditions; performed runs remain separate | `A.3.1` and `B.1.5`, with §4.2 for an asserted actual Work |
 
 A sentence may require several rows. Write several direct claims; an ordinary note may hold them when each remains separately recoverable.
@@ -160,19 +160,6 @@ When a wholeness-looking story changes, name the exact object and direct relatio
 - for a changed coverage scope, criterion, evidence set, or assurance use, repair that direct claim rather than inventing a generic completeness status.
 
 Do not substitute a generic change lexicon for those objects and predicates. A readable verb is welcome when the exact direct claim remains recoverable.
-
-#### A.6.H:4.8 - Guardrails
-
-1. No situation record, card, bundle, adjective, table, graph, or trace is the whole or direct relation by presence.
-2. No generic `partOf` closes a load-bearing claim when a direct relation kind or subject pattern is required.
-3. No order, plan, or Work history is structural parthood by position.
-4. No claim that an entity belongs to a collection is upgraded to component assembly or acting-system identity.
-5. No cross-boundary flow or influence is treated as a part merely because it crosses the boundary.
-6. No `integrity` reading is selected before the bearer, claim, and receiving use are known.
-7. No plan, description, or publication is treated as performed Work.
-8. No version, revision, edition, phase, filename, or provenance label decides identity or continuity.
-9. No construction trace or selected structure creates its listed parts or relations.
-10. No coverage statement becomes assurance, acceptance, readiness, or completion beyond its exact predicate and evidence.
 
 ### A.6.H:5 - Archetypal Grounding
 
@@ -217,7 +204,7 @@ Source sentence: “Section 3 is part of the proof, and v2 is part of v1.”
 
 Source sentence: “The structural integrity score is 0.82, so the system is assured.”
 
-First recover the bearer, integrity Characteristic, Scale, measurement method, result episteme, evidence, and time stance under C.16.P/C.16. For “the system is assured”, name the exact target claim and assurance use before applying B.3; then recover the evidence-use relation, scope, limitations, and relying context. The score alone does not establish that assurance result.
+Recover the bearer, integrity Characteristic, Scale, measurement method, result episteme, evidence, and time stance under C.16; use C.16.P if the characteristic or scale construction remains unclear. For “the system is assured”, name the target claim and assurance use before applying B.3; then recover the evidence-use relation, scope, limitations, and relying context. The score alone does not establish that assurance result.
 
 ### A.6.H:6 - Recognition and assurance stay separate
 
@@ -229,12 +216,12 @@ First recover the bearer, integrity Characteristic, Scale, measurement method, r
 - Does a selected structure or construction account matter to this use?
 - Does the same whole persist, or is reidentification current?
 
-**Evidence-use questions** under A.10 decide what the evidence supports for the stated relying use:
+**Evidence-use questions** ask how the evidence bears on the claim for the stated use. Apply the rule for the target claim, with A.2.4 for evidence-use classification. Use A.10 when provenance, currentness, or reliance requires a replayable source-to-use account, including carrier identity when material:
 
-- Which claim is being supported?
+- Which claim is being examined?
 - Which evidence bears on it through which relation?
 - What scope, limitation, time stance, and relying use apply?
-- Does the evidence support recognition, relation truth, measurement, completion, or another claim?
+- What judgement about recognition, relation truth, measurement, completion, or another claim does the evidence warrant?
 
 Apply B.3 only when an actual named assurance claim and assurance use are current. Evidence can make an assertion inspectable without becoming constitutive of the whole or relation.
 
@@ -259,7 +246,7 @@ Apply B.3 only when an actual named assurance claim and assurance use are curren
 | `CC-A6H-7` | Method factors, description constituents, plan items, and performed Work parts remain separate and use their subject patterns. |
 | `CC-A6H-8` | `integrity` is classified as a characteristic/measurement, evidence/assurance, actual structural-whole claim, or another defined term before another rule is applied. |
 | `CC-A6H-9` | `complete`, `turnkey`, and `end-to-end` name the exact covered objects, scope, criterion, predicate, gaps, and applicable defining or testing rule. |
-| `CC-A6H-10` | C.13 construction and A.22 selected structure are added only for a named use and create no direct part or relation occurrence. |
+| `CC-A6H-10` | C.13 construction and A.22 selected structure are added only for a named use. Their presence alone establishes no direct part or relation occurrence; their content is examined under the applicable rule. |
 | `CC-A6H-11` | A.1 recognition and B.2 reidentification are opened only for their actual questions; an adjective, list, or changed label decides neither. |
 | `CC-A6H-12` | The result is one or more subject-qualified assertions, an explicit unknown result, a needed next action or a missing-governor result. An ordinary note may hold them; its presence alone establishes no whole, relation occurrence, or new kind. A PatternID locates needed defining or testing content, or an identifiable future definition need. Any added blocked-inference guard satisfies the F.19 conditions stated at entry. |
 
@@ -269,7 +256,7 @@ Apply B.3 only when an actual named assurance claim and assurance use are curren
 | --- | --- | --- |
 | Holistic-as-evasion | “We took a holistic view” replaces the actual decision, subject, boundary, or relation. | Name the receiving use and exact claim, or remove the load-bearing assertion. |
 | Universal part-of | Components, constituents, members, portions, phases, Method factors, and Work parts share one edge. | Recover each object and direct predicate under its subject pattern. |
-| Record-as-whole | A `wholenessSituation`, bundle, BoM, graph, or trace is treated as the whole or relation. | Recover the candidate entity, independently grounded facts, exact assertion and predicate, and the subject pattern only as its ClaimGraph locator. |
+| Record-as-whole | A `wholenessSituation`, bundle, BoM, graph, or trace is treated as the whole or relation. | Recover the candidate entity, independently grounded facts, and assertion with its predicate; apply the subject pattern’s definition or test. |
 | Structure-as-sequence | Method order or plan order becomes containment. | Recover exact Methods and order/join claims under B.1.5/B.1.4; keep Work separate. |
 | Version-as-phase | Different epistemes are called phases of one document lineage. | Apply the C.2.1 identity triple, then test `EpistemeEditionRelation` independently. |
 | Work-phase shortcut | Shift, monitoring window, episode, retry, or resumption uses generic `PhaseOf`. | Apply A.15.1's exact temporal-part, episode, operational-part, retry, resumption, or occurrence rule. |
@@ -318,7 +305,7 @@ Whenever *fraction*, *percentage*, or *share* is used as a part claim, recover t
 - **Uses for direct mereology:** `A.14`; construction accounts to `C.13`; selected structures to `A.22`; holon recognition to `A.1`; and remaining whole reidentification to `B.2`.
 - **Uses for episteme and publication questions:** `C.2.1`, `A.3.2`, `E.17`, `E.24.PUB`, and `C.29` as selected by the exact subject.
 - **Uses for Method, plan, and Work questions:** `A.3.1`, `B.1.5`, `A.15.2`, the A.13/A.15.1/conditional F.6 basis in §4.2, `A.15.PROD`, and `B.1.4` only for bounded aggregation of already recovered temporal or order relations.
-- **Uses for integrity, evidence, and assurance questions:** `C.16.P`, `C.16`, the exact measurement pattern, `A.10`, and `B.3`.
+- **Uses for integrity, evidence, and assurance questions:** `A.17` or the applicable subject rule for a Characteristic or constraint; `C.16` for measurement, with `C.16.P` for unresolved characteristic or scale wording; `A.2.4` for evidence-use classification, `A.10` for a needed replayable source-to-use account, and `B.3` for an assurance claim.
 - **Uses for absent relation governance:** `A.6.RCD` after participants, required predicate, and blocked receiving use are exact.
 - **Does not establish from wording or record form alone:** a whole, lifecycle or other new kind, automatic edition series, universal part relation, coverage status, assurance verdict, or direct relation occurrence.
 

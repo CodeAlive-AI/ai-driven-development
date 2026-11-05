@@ -145,7 +145,7 @@ Calibration, attribution, policy dependence, constructive grounding, and other c
 
 #### A.6.6:4.3 - Reusable declaration only for a named reuse
 
-Use the direct relation's A.6.0 `RelationSignature` only after its kind is admitted and a named receiving use needs reusable participant typing or declaration content. An observed second consumer is not required; a concrete anticipated use can justify the declaration. The signature states participant meanings, predicate, applicability and any needed occurrence-identity rule. A.6.5 SlotSpecs belong inside it; an ordinary one-case assertion may need none.
+Use the direct relation's A.6.0 `RelationSignature` only after its kind is admitted and a named receiving use needs reusable participant typing or declaration content. An observed second consumer is not required; a concrete anticipated use can justify the declaration. The signature restates the direct relation kind's participant meanings, predicate, applicability and occurrence-identity rule for reuse. A.6.5 SlotSpecs belong inside it; an ordinary one-case assertion may need no signature or explicit occurrence individuation.
 
 If no direct pattern supplies the relation kind, participants, or predicate, keep the exact local claim or return the A.6.RCD `missing-governor` result. Do not repair the gap by minting a generic `BaseRelation` kind or token, SlotSpecs, or a scoped-record type.
 
@@ -155,7 +155,7 @@ For a named receiving use that genuinely needs a `RelationSignature`, the direct
 
 - the dependent and base participant meanings and direction or symmetry;
 - the obtaining predicate and applicability;
-- the occurrence-identity rule when the receiving use needs that identity;
+- the occurrence-identity rule, without requiring a particular occurrence to be explicitly individuated;
 - admissible participant kinds and reference modes;
 - any scope, time, evidence, or cross-local condition that changes this predicate or the named reuse; and
 - the direct continuity or change rules, when that history is current.
@@ -229,15 +229,15 @@ When umbrella wording leaves the relation unclear, recover the direct meaning th
 | “This result bears on that claim” | **Evidence use** under A.2.4, with A.10 only when replayable provenance or reliance is needed | result or other evidence episteme and target claim, with the evidence-use direction defined by A.2.4 | exact evidence-use relation; producing Work, result binding, carrier, provenance, currentness, and reliance remain separate |
 | “This edge is grounded in construction” | **Constructive grounding** (`tv:groundedBy`) | dependent: WM edge; base: constructor trace (`Γ_m`) | trace pins, edition pins |
 | “This description is about X” | **Ordinary aboutness** under A.7/C.2.1 | description episteme and its exact EntityOfConcern X; aboutness alone does not establish a source-to-receiving construction | the source or describing relation required by the use |
-| “Construct a view of the same entity” | **Viewing** (`viewedVia`) under A.6.3 | separately identified source and receiving epistemes, the same exact EntityOfConcern, and the construction rule | viewing pins |
-| “Retarget a description to another entity” | **Retargeting** (`retargetedAlong`) under A.6.4 | separately identified source and receiving epistemes with different exact EntitiesOfConcern, the retargeting arrow `r`, and separate bounded-use assertion `q` | exact `r` and `q`, and a separate current-case judgement when that case is evaluated |
+| “Construct a view of the same entity” | **Viewing arrow** under A.6.3 | separately identified source and receiving epistemes, the same exact EntityOfConcern, and the construction rule | viewing pins |
+| “Retarget a description to another entity” | **Retargeting arrow** under A.6.4 | separately identified source and receiving epistemes with different exact EntitiesOfConcern, and the retargeting arrow `r` | exact `r`; a separate assertion `q` for a named receiving use, and a current-case judgement when that case is evaluated |
 | “Allowed only under policy P” | **Constraint / policy** (`constrainedBy`, `permittedUnder`) | dependent: work-step / publication item; base: policy/rule | policy pin, waiver/work ref |
 | “Property belongs to object” | **Attribution / aboutness** (`attributedTo`, `aboutEntity`, `characterises`) | dependent: property/abstraction; base: object | observation/derivation witnesses |
 | “This expression means … in this source” | **Source-local meaning lane** (F.0.1; F.17 only when a durable address or basis relation is needed) | local expression and local-sense claim | exact source passage and, when current, an obtaining basis relation |
 
 This table is illustrative. Each row keeps its own direct relation and governor; it is not a list of species of one universal base relation or record. Grammatical subject and object expose a sentence's direction but do not by themselves determine dependent/base allocation. Where the domain predicate or participant allocation is not supplied, recover it from the source or leave that local choice open; this guide does not define it. Ordinary aboutness and source-local meaning do not by themselves select a basedness or construction branch.
 
-*Note.* A.6.3 defines the viewing arrow. A.6.4 keeps the retargeting arrow `r`, bounded-use assertion `q`, and current-case judgement separate: `q`'s ClaimGraph contains the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity; the judgement compares exact facts with `q` and returns exactly `satisfies`, `fails`, or `cannot decide`. A `cannot decide` judgement names the missing fact and reopen condition. This table directs those construction cases to their own patterns; it defines no second operator, arrow, assertion, judgement, application, or Work.
+*Note.* A.6.3 defines the viewing arrow. A.6.4 distinguishes the retargeting arrow `r` from a bounded-use assertion `q` and a current-case judgement. When a named receiving use is claimed, `q`'s ClaimGraph contains that use, its invariant, visible loss, conditions, and affirmative or negative polarity. When a particular case is evaluated, the judgement compares its exact facts with `q` and returns exactly `satisfies`, `fails`, or `cannot decide`. A `cannot decide` judgement names the missing fact and reopen condition. This table directs those construction cases to their own patterns; it defines no second operator, arrow, assertion, judgement, application, or Work.
 
 #### A.6.6:4.7a - Support wording selection test
 
@@ -285,7 +285,7 @@ gammaTime          = interval[2025-09-01, 2026-03-01] 〉
 
 When a later decision relies on this assertion, identify the calibration-certificate episteme and its A.2.4 evidence-use relation to the assertion. Use A.10 when the decision needs a bounded-reliance judgment or the producing Work, operation result, carrier, provenance or currentness path. Distinguish changes by what actually changed:
 
-* New standard ⇒ **rebase** + **refreshWitnesses**.
+* New standard ⇒ **rebase**; establish the evidence-use relation required for the new assertion, reusing suitable witnesses or refreshing them when needed.
 * Wider applicability window ⇒ **retime** and likely **refreshWitnesses**.
 * Relation-kind change (“not calibration, just normalisation”) ⇒ **changeDirectRelationKind** is not an edit; mint a new assertion or declaration. Claim continuity with the prior episteme only when that history is needed and C.2.1:4.5's rule and case facts establish it.
 
@@ -350,7 +350,7 @@ An A.6.6 use conforms when the checks for its selected branch pass:
 | **Umbrella “anchored/attached/grounded” with no direct relation** | Hides relation kind and predicate | Name the participants, use the relation-specific verb, and apply its direct predicate |
 | **Perspective flip without recoverable participants** | Direction and typing become ambiguous | Keep the same participants and direction in both active and passive wording; add formal endpoint names only when reused |
 | **Work or carrier treated as evidence relation** | Collapses producing Work, result episteme, carrier, provenance, evidence use, and reliance | State the exact A.2.4 evidence-use relation; open A.10 only for the replayable provenance or reliance path |
-| **Unclear temporal applicability** | Current or latest leaves the intended time-dependent claim ambiguous | State the applicable interval or temporal rule, using explicit Γ_time when the governing use needs it. Check witness freshness separately. |
+| **Unclear temporal applicability** | Current or latest leaves the intended time-dependent claim ambiguous | State the applicable interval or temporal rule, using explicit Γ_time when the governing use needs it. Apply the evidence-use or reliance rule's freshness check when that use requires it. |
 | **Decision use without its actual basis** | A relied-on assertion cannot be checked | Cite the exact evidence-use, provenance, currentness, or assurance relations required by that decision; do not add a generic witness field or new document |
 | **Semantic meaning expressed as basedness** | Confuses source-local meaning with another relation | Recover the source-local claim under F.0.1 and add an F.17 cell or basis relation only when needed |
 | **Relation-kind change presented as an edit** | A semantic shift masquerades as continuity | State the new direct relation and use the applicable continuity rule when that history matters |
@@ -424,7 +424,7 @@ When that history is needed, explicit change classes distinguish rebase, retime,
 
 **Coordinates with A.14 and C.2.1.** Constructive grounding and empirical grounding retain their exact direct predicates and participants. Their assertion epistemes and evidence remain separate from the world-side relations.
 
-**Coordinates with A.6.3 and `A.6.4`.** A.6.3's viewing construction keeps the source and receiving epistemes distinct with the same exact EntityOfConcern. A.6.4 retargets between different exact EntitiesOfConcern; its retargeting arrow `r`, bounded-use assertion `q`, current-case judgement, operation application, and Work remain distinct. Ordinary aboutness alone selects neither construction. A.6.6 adds no second arrow or universal relative-to object.
+**Coordinates with A.6.3 and `A.6.4`.** A.6.3's viewing construction separately identifies the source and receiving endpoints with the same exact EntityOfConcern; the endpoints may identify the same episteme in identity viewing. A.6.4 retargets between different exact EntitiesOfConcern; its retargeting arrow `r`, bounded-use assertion `q`, current-case judgement, operation application, and Work remain distinct. Ordinary aboutness alone selects neither construction. A.6.6 adds no second arrow or universal relative-to object.
 
 **Coordinates with F.9 and ReferencePlane rules conditionally.** F.9 applies only to an obtaining Bridge between two exact F.17 cells and keeps its bounded-use claim separate. A ReferencePlane crossing uses its applicable plane relation. If both are current, state both; if only one is current, introduce no object from the other branch.
 

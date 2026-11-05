@@ -126,7 +126,7 @@ Use:
 - `A.10` and `G.6` for evidence and provenance;
 - `B.3` for assurance;
 - `A.20` for its internal-constraint test in a transformation-flow structure and `A.21` for gate decisions;
-- `C.29` for mathematical-lens use.
+- `C.29` for a remaining mathematical representation, correspondence, transfer or reliance question.
 
 ### B.2.5:5 - Archetypal Grounding (Worked Cases)
 
@@ -175,7 +175,7 @@ Work alignment uses `A.15`; a separate work-authority claim needs its own direct
 | --- | --- |
 | `CC-B2.5-1` | A conforming use names supervised holons and the supervising acting system; it adds the local supervisor system-role kind and exact assignment only when each independently obtains. |
 | `CC-B2.5-2` | A conforming use names the observation, report, or source side and the influence, constraint, or objective side. It also names the coupling rule, its case facts, common applicability, temporal qualification and evidence that changes the compound claim or its later use. |
-| `CC-B2.5-3` | The assertion is the conjunction of observation, return and coupling for every member of a nonempty supervised set. It introduces no fused U.Relation occurrence; a mathematical loop needs its separate C.29 use. |
+| `CC-B2.5-3` | The assertion is the conjunction of observation, return and coupling for every member of a nonempty supervised set. It introduces no fused U.Relation occurrence. Use the applicable mathematics for a loop; C.29 addresses a remaining representation, correspondence, transfer or reliance question. |
 | `CC-B2.5-4` | Observation and influence references retain their direct kinds; a report episteme, signal occurrence, and source-use relation are not interchangeable. |
 | `CC-B2.5-5` | Parthood, control-structure view, base publication and source-use relations, and the compound feedback assertion are kept separate. Each base occurrence keeps its own identity and extent rules. |
 | `CC-B2.5-6` | Stability, safety, timing, causal, evidence, assurance, gate, and mathematical-lens claims use the patterns that define or test them. |
@@ -188,7 +188,7 @@ Work alignment uses `A.15`; a separate work-authority claim needs its own direct
 | Unspecified supervisor-subholon feedback | Subholons are said to be coordinated through supervisor-subholon feedback, but no supervising acting system, medium, or feedback relation is named. | Recover the supervised holons, actual supervising System, observation side and returned influence side. Record that claim only when the receiving use needs it; add a system-role kind or assignment only when independently current. |
 | Functional layer as component | A planning or control layer is modeled as a physical part of the controlled holon. | Separate parthood from feedback relation; use `C.30.LCA` for the view. |
 | Perfect communication | State access is assumed instant, complete, or lossless. | Name medium or publication limits; use `C.27`, `A.3.3`, or evidence-use patterns for timing and information claims. |
-| Episteme acts | A claim-bearing episteme is assigned sensing, judging, planning, or adaptation that a system performs. | Name the acting System and distinguish it from the episteme it uses. If the account asserts a particular dated Work, recover the acting System through A.13 and let A.15.1 independently admit that Work. Add F.6 only when the account consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 leaves the Work intact. A short sentence may omit an unused assignment identifier. Name the Method or review practice structuring the Work when relevant, and any publication or source-use relation. This Work rule does not make assignment or system-role classification a condition of the feedback claim itself. |
+| Episteme acts | A claim-bearing episteme is assigned sensing, judging, planning, or adaptation that a system performs. | Name the acting System and distinguish it from the episteme it uses. If the account asserts a particular dated Work, recover the acting System through A.13 and let A.15.1 independently admit that Work. Add F.6 only when the account consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer; missing or failed attribution alone leaves independently admitted Work intact. If the same finding invalidates an A.13 or A.15.1 premise used for admission, recheck that premise and the conclusions that depend on it. A short sentence may omit an unused assignment identifier. Name the Method or review practice structuring the Work when relevant, and any publication or source-use relation. This Work rule does not make assignment or system-role classification a condition of the feedback claim itself. |
 | Relation certifies safety | The feedback relation is treated as evidence, assurance, gate, or safety result. | Keep the relation and use the pattern for the stronger claim. |
 
 ### B.2.5:8 - Consequences

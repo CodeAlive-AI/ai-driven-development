@@ -49,7 +49,7 @@ Where a required review period applies, follow it until it is changed by someone
 
 #### B.3.4:4.3 - Treat epistemic debt as an optional planning indicator
 
-A team may call its outstanding evidence-review or maintenance obligations **epistemic debt (ED)**. If it needs a number, define the counted entities, dependency treatment, scale and unit, policy purpose, and meaning of the action threshold. An `epistemic_debt_budget` is then a named planning-policy limit, not a universal allowance of harm.
+A team may call its outstanding evidence-review or maintenance obligations **epistemic debt (ED)**. If it needs a number, define the counted entities, dependency treatment, scale and applicable unit, policy purpose, and meaning of any action threshold. An `epistemic_debt_budget` is then a named planning-policy limit, not a universal allowance of harm.
 
 For example, a team may count distinct overdue review obligations to plan assessor capacity. Ten duplicate paths to one obligation do not create ten obligations. Separate obligations consuming the same source may still require different judgements for different uses.
 
@@ -63,7 +63,7 @@ Determine which continuation the available support and applicable rules permit. 
 | --- | --- | --- |
 | Continue on applicable support | Available information is sufficient for the unchanged bounded use. A scoped reconsideration, if needed, has found no relevant loss. | Retain the qualified result. No new experiment, waiver or separate no-refresh record is required merely to continue. |
 | Narrow or restrict the use | Support remains sufficient for a smaller envelope or less demanding claim. | State the usable boundary and the limitation that changes the recipient's action. |
-| Refresh or inspect | An obtainable check can resolve a material uncertainty or meet a justified current requirement. | Choose that check with regard to what its result can change, its cost, delay and displaced work; perform and assess it only when actually undertaken. |
+| Refresh or inspect | An obtainable check can resolve a material uncertainty or fulfil a binding review requirement. | Choose that check with regard to what its result can change, its cost, delay and displaced work; assess its result if the check is performed. |
 | Suspend reliance or deprecate the affected result | The necessary support is absent or defeated and no permitted continuation carries the requested use. | Remove or qualify that reliance and communicate the affected reach. A status downgrade does not accept the underlying harm. |
 | Apply an authorized exception | An applicable rule permits a bounded exception and a competent authority can grant it for this case. | Follow the actual mandate, scope, conditions and accountability. A senior title alone grants no authority over affected risk bearers. |
 
@@ -77,7 +77,7 @@ Trace a changed premise to the claims and uses that actually depend on it. Reope
 
 Keep actual physical and institutional conditions intact. Expired calibration qualification, an unavailable configuration, ended resource support or an elapsed rights window can block the corresponding use even when the old report remains an accurate record of an earlier state. A justified deterioration model can make elapsed time material; cite that model rather than inferring universal decay.
 
-A dashboard should distinguish a review due, a defeated premise and a restricted use. Its colour reports the declared indicator or disposition, not the truth of the underlying claim. A failing test is a potentially relevant adverse result to assess now, not merely another overdue date.
+A dashboard should distinguish a review due, a defeated premise and a restricted use. Its colour reports the declared indicator or disposition; that report alone does not establish the underlying claim. A failing test is a potentially relevant adverse result to assess now, not merely another overdue date.
 
 #### B.3.4:4.6 - Worked cases: the same age, different decisions
 
@@ -90,7 +90,7 @@ Suppose the available inspection team can either inspect a suspected load-bearin
 ### B.3.4:5 - Conformance Checklist
 
 - **CC-ED.1 (Use-qualified currentness):** A currentness conclusion MUST identify the relied-on claim/use and the conditions or temporal boundary that change it. A carrier's age or absent date SHALL NOT alone establish loss of support.
-- **CC-ED.2 (Interpreted planning measure):** A numerical ED or debt budget MUST define its counted entities, dependency treatment, scale/unit, purpose and threshold meaning. No project has a default obligation to adopt one.
+- **CC-ED.2 (Interpreted planning measure):** A numerical ED or debt budget MUST define its counted entities, dependency treatment, scale, applicable unit, purpose and the meaning of any action threshold. No project has a default obligation to adopt one.
 - **CC-ED.3 (Affected reach):** Reconsideration MUST follow the actual support dependencies. Any aggregation MUST use an applicable interpreted model and avoid counting duplicate paths as additional evidence or risk.
 - **CC-ED.4 (Qualified disposition):** A trigger MUST be interpreted for the receiving use; it SHALL NOT automatically downgrade a level or require Refresh/Deprecate/Waive. Preserve a sufficient current result without a separate renewal or no-refresh certificate. Preserve real qualification, rights and resource-use expiry.
 - **CC-ED.5 (Actual exception authority):** A waiver, when used, MUST have the authority and scope allowed by the applicable rule, a rationale, affected risk bearers and accountability, and its actual ending or reconsideration condition. Keep the auditable exception with the decision that uses it; a title or lowered assurance status does not confer risk-acceptance authority.

@@ -87,7 +87,7 @@ A conforming `C.11` pass does not stop at naming schools of decision theory. It 
 
 1. **Fix the chooser and the choice-bearing level.**
    State one `DecisionSubject` and one `DecisionSubjectGranularity`.
-   If the real dispute is still about who or what counts as the chooser, coordinate with `A.13` instead of hiding that dispute inside one local choice.
+   If who or what carries the choice is disputed, recover the applicable basis for that attribution. Use `A.13` when the unresolved claim concerns precise agency.
 
 2. **Freeze the current option set.**
    State the already-available options being compared now as one `OptionSet`.
@@ -297,15 +297,15 @@ Exact syntax is unnecessary. The chooser, options, shared comparison basis, `Cho
 
 Use branch language only when it changes the actual comparison being performed.
 
-##### C.11:4.2.6 - Resource-aware choice is one lens over declared source families
+##### C.11:4.2.6 - Resource-aware choice over an archive or front
 
-- Start from one declared source family or one declared source-family composition such as `Front`, `Archive`, or `Front+Archive`.
+- When the `OptionSet` is drawn from a `Front`, `Archive`, or their composition, identify that source basis.
 - Apply one declared decision lens over that source family rather than inventing one hidden universal winner rule.
 - `CostToProbe`, `ValueOfInformation`, and `ValueOfComputation` belong to that lens-side choice doctrine.
 - They may justify another probe, one changed local comparison outcome, or one stop decision, but they do not rename the current `DominanceSet` and do not declare one shortlist-family result.
 - If one candidate remains worth probing because its expected information value still exceeds its expected cost, say that explicitly as one lens-side choice judgement.
 - If one archive point remains worth probing because it may change the frontier later, keep that as one resource-aware choice claim, not as evidence that the point is already on the current front.
-- The kernel floor here is:
+- For an actual `A.19.SelectorMechanism` application, retain its set-returning declaration and bindings:
   - `A.19.SelectorMechanism` remains the cited set-return floor
   - `SelectionSlot` remains the selector output floor
   - if later selector-facing set-result declaration is required, that set-returning floor may support one `Shortlist` or one `RankedShortlist` in `G.5` rather than one forced single winner
@@ -330,7 +330,7 @@ The baseline is still unfinished when the current comparison invokes it but cann
 
 Switch on one `InterventionModel` when taking one option changes the world through intervention rather than merely signaling which outcome was already likely.
 
-What changes here is not the prestige label of the theory line, but the comparative question itself: the working question is no longer only what this option indicates about the outcome, but what this option causes in the outcome structure.
+The comparative question changes: the working question is no longer only what this option indicates about the outcome, but what this option causes in the outcome structure.
 
 Typical practical cash-outs are:
 
@@ -358,7 +358,7 @@ If that coupled structure is not live, do not activate this branch. If a predict
 
 Bring the active-inference line into view when the chooser is embodied, online, and socially coupled, and when the decision cannot be understood as one disembodied choose-then-act moment.
 
-What changes here is practical choice logic, not one neighboring-school label. The comparison is no longer over one frozen snapshot alone. The comparison must now ask whether one more observation, one more coupled update, or one more socially mediated or role-expectation clarification actually changes what should be done now.
+The comparison is no longer over one frozen snapshot alone. The comparison must now ask whether one more observation, one more coupled update, or one more socially mediated or role-expectation clarification actually changes what should be done now.
 
 This minimal choice doctrine makes that social-expectation pressure explicit, but it does not yet operationalize one full `ROE` or `SocialExpectationRegime` object model inside `C.11`. If that heavier machinery is itself what the case hinges on, the decision record should say so honestly rather than pretending the local `C.11` floor has already settled it.
 
@@ -528,7 +528,7 @@ If those conditions are missing, retain the unfinished comparison and identify t
 
 **Show.** If the extra calibration run could still change which plan survives, the one-day delay fits the remaining `ProbeBudget`, and the expected gain justifies its `CostToProbe`, the right `ChoiceResult` is `probe again` with that exact calibration run named. If the measurement can no longer overturn the ranking, the right `ChoiceResult` is `choose now` with the winning plan and the reason further probing is no longer worth its cost.
 
-**Show.** A finished result here should therefore read like one decision record, not one research-theory aside: "Team-level chooser; three current plans; risk reduction preferred; calibration uncertainty still live; one extra calibration run remains feasible and could still overturn the current ranking; its expected gain justifies `CostToProbe`, including the one-day delay; `ChoiceResult = probe again with calibration run`." Or, after that probe is no longer worth doing: "`ChoiceResult = choose plan B now because the remaining calibration gain no longer justifies one more day of delay`."
+**Show.** A finished result here should therefore read like one decision record: "Team-level chooser; three current plans; risk reduction preferred; calibration uncertainty still live; one extra calibration run remains feasible and could still overturn the current ranking; its expected gain justifies `CostToProbe`, including the one-day delay; `ChoiceResult = probe again with calibration run`." Or, after that probe is no longer worth doing: "`ChoiceResult = choose plan B now because the remaining calibration gain no longer justifies one more day of delay`."
 
 **Show.** Use `C.38` if the team must turn labels or fragments into complete ways of obtaining one result. Use `C.39` if a plan still lacks an explanation of how to obtain that result, or `C.40` if the team can vary a plan and needs to examine the difference. Use `C.18` when the team needs a generation account or archive/front claim; `C.19` for exploration policy over the plan pool; and `C.24` for the run sheet and execution order after choice.
 

@@ -152,7 +152,7 @@ CommitmentAssertion:
 
 Before a commitment occurrence has been independently identified, express whether the commitment obtains as an ordinary C.2.1 assertion with an independently identified EntityOfConcern. Designate the relation kind and its participants in the claim content, and retain the failed or unknown obtaining condition. Do not invent a commitment occurrence or actual instituting-basis reference. Keep assertion polarity separate from the reliance judgement; unavailable evidence alone establishes no negation.
 
-Use the record to describe the relation. `evidenceClaimRefs` and carriers support reliance; they are not participants or instituting facts unless the identified constitutive rule makes one such fact current and the pattern for that subject supplies its test. If adjudication is intended, cite the exact evidence claims, criteria, and carriers. If no adjudication is claimed, do not invent an audit apparatus.
+Use the record to describe the relation. `evidenceClaimRefs` and carriers support reliance; they are not participants or instituting facts unless the identified constitutive rule requires the particular item in that role and the pattern for that subject supplies its test. If adjudication is intended, cite the exact evidence claims, criteria, and carriers. If no adjudication is claimed, do not invent an audit apparatus.
 
 When a later use must compare incompatible commitments, keep the commitments unchanged and carry the needed conflict inputs in one local claim:
 

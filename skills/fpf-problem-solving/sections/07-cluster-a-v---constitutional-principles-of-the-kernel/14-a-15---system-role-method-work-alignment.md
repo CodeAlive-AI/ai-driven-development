@@ -28,7 +28,7 @@
 
 | Admissible project use | Source-finding or reversible probe | Non-admissible use |
 | --- | --- | --- |
-| A maintenance team identifies the local inspection kind, assignment species and occurrence, Method, and any description or WorkPlan needed by its decision. After inspection, it identifies dated Work independently of the inspection record. | A briefing lacks a source or relation required for its attempted use; use it to locate or recover that basis before making the unsupported claim. | The presence or form of a dashboard, copied approval, generated explanation, label or briefing is treated as proof of assignment, Method, WorkPlan or performed Work. Its content may supply evidence when A.10 supports that use. |
+| A maintenance team identifies the local inspection kind, assignment species and occurrence, Method, and any description or WorkPlan needed by its decision. After inspection, it identifies dated Work independently of the inspection record. | A briefing lacks a source or relation required for its attempted use; use it to locate or recover that basis before making the unsupported claim. | The presence or form of a dashboard, copied approval, generated explanation, label or briefing is treated as proof of assignment, Method, WorkPlan or performed Work. Assess the content's evidence contribution under the rule for the claim it bears on; use A.10 when that use needs a replayable source-to-use account. |
 
 **Alignment frame in plain terms.** The system-role kind says what contribution kind is in question. The assignment relates this System to that kind while its predicate obtains. The Method is the way the Work is done. A MethodDescription describes the admitted Method; a WorkPlan states possible future Work. Dated Work is what happened. A log reports it and remains distinct from that occurrence.
 
@@ -106,7 +106,7 @@ When wording about changing, producing, selecting, deriving, controlling or main
 * **`U.WorkPlan`.** A `U.Episteme` about possible future Work, including intended windows, dependencies, performers, and budgets. It does not bring a future Work occurrence into existence.
 * **`U.Work`.** The admitted kind for concrete dated Work occurrences. One Work individual has its own temporal extent, at least one obtaining A.15.1 `enactsMethod` relation, and at least one obtaining locally declared containing-system relation. It may stand in further enactment, affected-referent, binding, resource-use, production, and result relations when the receiving use needs those independently obtaining facts. Any log, ticket, assertion, description, or performed-work record is a separate episteme.
 
-**Work occurrence and record boundary.** Do not add a universal `primaryTarget` field, a local `kind` field, or an Operational, Communicative, and Epistemic enumeration to Work identity. Recover the exact affected-referent, transformation, speech-act effect, commitment effect, production, delivery, acceptance, or other relation under its direct pattern. Those adjectives can remain recognition cues; they do not define Work subkinds by enumeration.
+**Work occurrence and record boundary.** Recover the exact affected-referent, transformation, speech-act effect, commitment effect, production, delivery, acceptance, or other relation under its direct pattern. Labels such as *operational*, *communicative* and *epistemic* can remain recognition cues; they do not define Work subkinds by enumeration.
 
 **Didactic note for managers: the chef analogy.** `ChefSystemRole` is one local system-role kind. A kitchen-assignment species defines the holder and assigned-kind positions and adds shift, station, or commission only when it changes the assignment. A particular assignment fills those positions with the chef System, the kind, and any additional value. A cookbook can be a MethodDescription; the chef's skill can be a capability; a WorkPlan can schedule cooking; and making one souffle on Tuesday is dated Work. Its temporal and resource-use relations can state the 25-minute extent, eggs, butter, and consumed gas, while a kitchen log remains a separate episteme. A restaurant vocabulary or scheme can help interpret the claims without becoming a participant in every assignment. The cookbook, skill, plan, assignment, and log do not cook.
 
@@ -151,24 +151,22 @@ For a precise performed occurrence, first recover the A.13 core for the exact ac
 
 #### A.15:4.3 - Bounded specialization scouting and `CheckpointReturn`
 
-When one human-plus-AI pair faces a new task or solution family, identify each participating human or AI service as an admitted System before using this alignment. The pair may use four local system-role kinds for this bounded work: `OutcomeCriterionHolderSystemRole`, `AIScoutSystemRole`, `AISpecialistProbeSystemRole`, and `CommitAuthoritySystemRole`. Claim an assignment only by naming its occurrence and declared species under `U.SystemRoleAssignment`. The `CommitAuthoritySystemRole` name does not supply decision authority; any authority relation must obtain independently.
+For a human-plus-AI pair planning tool calls or probing a route, recover only the Systems, assignments, Methods, plans and Work needed by the alignment claim, with their applicable admission grounds. The pair may use four local system-role kinds for this bounded work: `OutcomeCriterionHolderSystemRole`, `AIScoutSystemRole`, `AISpecialistProbeSystemRole`, and `CommitAuthoritySystemRole`. Claim an assignment only by naming its occurrence and declared species under `U.SystemRoleAssignment`. The `CommitAuthoritySystemRole` name does not supply decision authority; any authority relation must obtain independently.
 
-First distinguish the probe's question. If another probe could change which option survives the `OptionSet`, return to C.11. If changed live facts or domain-Method limits could change the next action during ongoing Work, return to A.15.7. Use the enactment checkpoint below only when the action or option is fixed, tool or service calls must be planned, and route shape or rollout order is uncertain.
+First distinguish the current question. If another probe could change which option survives the `OptionSet`, return to C.11. If changed live facts or domain-Method limits could change the next action during ongoing Work, return to A.15.7. Use C.24 when an applicable domain prescription or a completed decision has fixed the action or option and tool or service calls must be planned.
 
-The pair declares one outcome criterion, explores several candidate routes for that fixed action or option, spends a bounded scouting or probing budget before commitment, and returns one `CheckpointReturn` comparing the tested routes. Keep scouting budget, probing budget, and commit checkpoint distinct. Use A.15 only for this dyadic assignment, Method, plan, and Work alignment; use C.24 for checkpoint-record semantics and E.16 for budget and guard enforcement.
+Use a sufficient existing `CallPlan` directly. When the fixed action's usable route remains unfamiliar, plan a bounded scout or probe under the applicable outcome criterion, budget and permission conditions. After its actual performance, return what was tested and observed in a `CheckpointReturn`. Use A.15 for the assignment, Method, plan and Work claims this use needs, and C.24 for call-plan and checkpoint semantics. When an E.16 autonomy budget governs this bounded scouting, retain its distinct scout budget, probe budget and commit checkpoint and its guard or override path.
 
-Every `CheckpointReturn` carries:
+After a bounded probe, its `CheckpointReturn` carries the C.24 action basis and:
 
-- the declared outcome criterion and current `TaskFamily`;
-- the candidate approaches actually tested;
-- evidence observed for each tested approach, including progress toward the work-measure threshold and important failure signals;
+- the objective or `TaskFamily` and the applicable outcome criterion;
+- the Methods actually tested, with approach descriptions when needed;
+- the evidence observed for those tests and important failure signals, including progress toward any work-measure threshold used by the decision;
 - burned and residual budget;
-- the recommended next use: continue probing, commit to planned Work, narrow the Method or claim, use the direct pattern for another claim, or stop; and
-- the commit trigger that would justify leaving the bounded probe.
+- the recommended next action, such as a further bounded probe, adoption of an identified `CallPlan`, a narrower supported claim, return to the applicable pattern or domain prescription, or stop; and
+- the commit trigger for considering whether to end the probe and adopt an identified `CallPlan`.
 
-The return is evidence about candidate approaches, observed results, budget, and the commit trigger. It is not the selected Method, `U.WorkPlan`, or actual Work. Execution-evidence, provenance, and rollout-decision claims need their own admitted values and relations before committed rollout.
-
-Low-human-overlap approaches remain admissible here only while they stay tied to the outcome criterion, budget limits, and the exact evidence or provenance relation used by the receiving claim.
+The return is evidence about the tested approaches, observed results, budget and proposed continuation. It is not the selected Method, `U.WorkPlan` or actual Work. Use the trigger, probe evidence, residual budget and any required safety or assurance result to decide whether to adopt the identified plan, probe further or stop. Plan adoption, permission to perform calls and actual Work remain separate. Recover the execution-evidence, provenance or rollout-decision claims consumed by that decision or later rollout under their applicable rules.
 
 #### A.15:4.4 - Boundary to A.15.4 Work-Relevant Appearance-Based Reliance Repair
 
@@ -182,7 +180,7 @@ A principle scheme, functional diagram, scenario, screen, or explanation that ex
 
 Do not create a linkage record merely because one unfolding structure mentions several Method- and Work-related values. Keep each direct relation under the pattern that defines it. When a receiving use must preserve an inspectable explanation across those relations, write one bounded `C.2.1` episteme whose EntityOfConcern is the exact selected unfolding `U.Structure`. Its ClaimGraph may cite, as separate claims, the selected Method and Method-relation structure, MethodDescription epistemes, relevant local system-role kinds and assignment occurrences, the Work that enacts the Method, Work-part relations, independently identified transformations and their direct Work-to-change claims, intended WorkPlans, readiness results, capability-fit conditions, evidence, assurance, and gate decisions. Include only claims needed by that receiving use.
 
-Call this episteme a *Method–Work alignment account* in ordinary prose. Its identity comes from its EntityOfConcern, ClaimGraph, and effective ReferenceScheme, not from a field bundle. Each claim in the account remains defined or tested by its own pattern: A.3.1 for Method, A.3.2 for MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work and Work relations, A.10 for evidence, B.3 for assurance, A.20 for internal-constraint results, and A.21 for gate decisions. If the useful account would need several unrelated entities of concern, split it instead of using one umbrella record.
+Call this episteme a *Method–Work alignment account* in ordinary prose. Its identity comes from its EntityOfConcern, ClaimGraph, and effective ReferenceScheme, not from a field bundle. Each claim in the account remains defined or tested by its own pattern: A.3.1 for Method, A.3.2 for MethodDescription, A.15.2 for planning, A.15.5 for readiness, A.15.1 for dated Work and Work relations, B.3 for assurance, A.20 for internal-constraint results, and A.21 for gate decisions. Assess evidence under the rule for the claim it bears on; use A.10 when a replayable source-to-use account is needed. If the useful account would need several unrelated entities of concern, split it instead of using one umbrella record.
 
 Another structure, such as CGUS, P2W, P2S, an improvement-loop slice or a transformation-flow slice, may cite the episteme when its receiving use needs the alignment explanation. Recover the cited claims under their source, identity and applicability conditions; reuse an established result while those grounds remain valid.
 
@@ -190,7 +188,7 @@ Another structure, such as CGUS, P2W, P2S, an improvement-loop slice or a transf
 
 Use `A.15.5` when the current question is whether intended Work is ready to enter its boundary. A.15 keeps system-role kind, assignment, Method, plan, and Work distinct; A.15.5 carries `WorkEntryReadiness@Context`, `FullKitCondition`, commitment disposition, resource-readiness references, WIP or flow-policy references, planned baselines, and launch-gate references when those values are current.
 
-Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5, but a readiness result needs the WorkPlan being judged, the PlanItem content used by the criterion, missing inputs, any performed preparation Work, the planned baseline, and the stop or degraded-use condition. Address the PlanItem content through that WorkPlan; it is not another readiness target.
+Readiness is not performed Work, evidence sufficiency, or gate passage. A briefing, dashboard, source bundle, or P2W record may cue A.15.5. Ground the result in the WorkPlan being judged, the PlanItem content the criterion consumes, that criterion and the facts used to evaluate it. State the readiness result, its qualification window, and the applicable stop or degraded-use condition. Identify missing or unknown required inputs; include performed preparation Work or a planned baseline only when the criterion or receiving use consumes it. Address the PlanItem content through that WorkPlan; it is not another readiness target.
 
 ### A.15:5 - Archetypal Grounding
 
@@ -238,7 +236,7 @@ This publication can guide Method inspection and planning. Keep the selected Met
 
 **Published slice.** `Under scenario S, method family MF-2 is admissible for planning; choose the selected method and prepare the work plan before execution.`
 
-The scenario can guide Method-family selection and planning. Identify a selected Method or resulting WorkPlan in the account where that result is needed. Ground any later dated Work independently under A.15.1; a record may designate it but is not that occurrence. For evidence, gate or engineering-justification reliance, recover the required relation or decision under A.10, A.20, A.21 or B.3. If it is unavailable, narrow the use and keep the needed gap or continuation in the receiving account.
+The scenario can guide Method-family selection and planning. Identify a selected Method or resulting WorkPlan in the account where that result is needed. Ground any later dated Work independently under A.15.1; a record may designate it but is not that occurrence. For evidence, gate or engineering-justification reliance, establish the required claim, relation or decision under its direct rule, such as A.20 for internal-constraint results, A.21 for gate decisions or B.3 for assurance. Use A.10 when that reliance needs a replayable source-to-use account. If a required basis is unavailable, narrow the use and keep the needed gap or continuation in the receiving account.
 
 ### A.15:6 - Bias-Annotation
 
@@ -315,7 +313,7 @@ The distinction is operationally useful. When work fails, a team can ask whether
 | Keep system classification, relation occurrence, and dated Work distinct. | Almeida, Guizzardi, Sales, and Fonseca, gUFO (2026 preprint), is a current foundational-ontology comparator rather than imported hierarchy. | Retain FPF's exact local system-role kinds, direct assignment species, holder projection, and Work identity laws. | A foreign role hierarchy or relation model deciding FPF identity. |
 | Recover event, performer, qualified association, and records without making a log row the event. | OCEL 2.0 (2024) is current object-centric event-log practice; W3C PROV-O (2013) is representation lineage. | Identify dated Work and the exact assignment occurrence first; keep logs and provenance as separate epistemes and relations. | Anonymous Work, assignment by label, or record-as-occurrence. |
 | Keep authorization acts and the operations they permit distinct. | ITIL 4 Change Enablement (2023) and DMN 1.5 (2024) separate assessment, decision, authorization, scheduling, and realization. | Admit each communicative or operational Work occurrence independently and state its exact effect relation. | Approval collapsed into later operational Work, or label-defined Work subkinds. |
-| Keep bounded exploration separate from committed rollout. | Current agentic tool-use, self-correction, and human-in-the-loop work-control practice extends the ReAct, Toolformer, and Reflexion lines with explicit checkpoints and bounded tool use. | When an action or option is fixed, tool or service calls must be planned, and route shape or rollout order is uncertain, use exact local system-role kinds and assignments for the participating systems, and return candidate evidence, budget, and a commit trigger in `CheckpointReturn`. | One successful probe silently becomes the selected Method, WorkPlan, or rollout. |
+| Keep bounded exploration separate from committed rollout. | Current agentic tool-use, self-correction, and human-in-the-loop work-control practice extends the ReAct, Toolformer, and Reflexion lines with explicit checkpoints and bounded tool use. | For tool-call planning after the action is fixed, keep the relevant System, assignment, Method, plan and Work claims distinct. Retain an adequate `CallPlan`; after a needed bounded probe, return the tested Methods, evidence, budget and commit trigger in `CheckpointReturn` under C.24, with E.16 controls when an autonomy budget applies. | One successful probe silently becomes the selected Method, WorkPlan, or rollout. |
 
 Use the direct FPF identity rules for the alignment claims above. Use `C.30.AD` for an architecture-description question.
 
@@ -345,14 +343,14 @@ Application choices:
 3. Ask whether ordinary system-role–Method–Work alignment explains the case. If yes, stop in A.15.
 4. Add a C.26.2 low-recoverability distributed-state reading only after establishing its collective `U.System` bearer and boundary under C.26.2, and only when no participant statement, local component report, single evidence record, dashboard, or exported representation carries the inferred state faithfully enough for its intended use. Without that collective bearer, retain ordinary A.15 alignment of individual performers.
 5. State the weakest evidence-bound reading, its time window, rival explanations, and export loss.
-6. Use A.10 for evidence provenance and bounded reliance, and C.26.2:4.11 to select the evidence posture and additional support for the intended use. Obtain a B.3 assurance result for the named target claim and receiving use when an actual assurance claim is current. QLP-3 use or a direct domain requirement for assurance requires that claim and result. Momentary, low-consequence local Work guidance does not by itself require B.3.
+6. Use C.26.2:4.11 to select the evidence posture and additional support needed by the intended use. Use A.10 when the selected posture or intended reliance requires a replayable account of evidence provenance and bounded reliance. Obtain a B.3 assurance result for the named target claim and receiving use when an actual assurance claim is current. QLP-3 use or a direct domain requirement for assurance requires that claim and result. Momentary, low-consequence local Work guidance does not by itself require B.3.
 
 The C.26.2 reading is a minimal evidence-bound `U.Episteme` claim about that collective System. It is not a group mind, performed Work, evidence sufficiency, or assurance by itself.
 
 | Position | Required content |
 | --- | --- |
-| Evidence or provenance relation | Exact Work, or a separate assertion, trace, observation, report, or metric about it, connected to the reading through an independently established direct evidence/provenance relation, recoverable through A.10 or G.6 |
-| Time window | When the reading holds and when it decays or needs refresh |
+| Evidence or provenance relation | Exact Work, or a separate assertion, trace, observation, report, or metric about it, connected to the reading through an independently established direct evidence/provenance relation. Use A.10 when a replayable source-to-use account is needed, and G.6 when a trace representation is needed. |
+| Time window | The interval for which the reading is supported and any local stop; add decay or refresh conditions when the intended reuse, contest or consequential reliance needs them. |
 | Probe or occasion | The question, task, workshop, incident, handover, dashboard, or coordination situation that made the state inferable |
 | Weakest claim | The minimal distributed-state reading carried by the sources |
 | Rival explanations | For example, routine compliance, policy, command, coincidence, incentive, documentation, or local skill |
@@ -362,17 +360,17 @@ Useful outputs are an A.15 alignment claim when assignments and Work explain the
 
 ### A.15:12b - C.29 mathematical-lens use relation
 
-When a mathematical lens helps select a Method, compare Method families, shape a WorkPlan, or diagnose Work, use C.29 only for the mathematical-lens use supporting that diagnostic or selection reason. The next concrete value remains under its direct pattern: `ChoiceResult` or another local choice record when a choice is made, the selected Method when Method selection is claimed, `U.WorkPlan` for intent, dated Work for execution, a separate result record for a result claim, and A.15.4 when a reliance appearance is being used as the reason before the required relation is known. A mathematical lens may explain why a distinction is useful; it does not make a plan into performed Work or a Method explanation into execution evidence.
+When a mathematical lens helps select a Method, compare Method families, shape a WorkPlan, or diagnose Work, use an adequate domain result directly, retaining the correspondence, application conditions and material limits needed by the claim. Use C.29 when a separate mathematical-representation choice, transfer or reliance question remains. The next concrete value remains under its direct pattern: `ChoiceResult` or another local choice record when a choice is made, the selected Method when Method selection is claimed, `U.WorkPlan` for intent, dated Work for execution, a separate result record for a result claim, and A.15.4 when a reliance appearance is being used as the reason before the required relation is known. A mathematical lens may explain why a distinction is useful; it does not make a plan into performed Work or a Method explanation into execution evidence.
 
 ### A.15:12c - P2W Work-Family Split
 
-When an E.18.1 P2W use reaches work planning or work-entry readiness, keep the selected Method, one `U.WorkPlan` with any declaration-local `SlotFillingsPlanItem` content, `WorkEntryReadiness@Context`, dated Work occurrence, and separate result records distinct. A planned-filling row is addressable only through that WorkPlan and gains no independent identity. A principle scheme, functional diagram, or scenario may guide Method inspection and planning only after the current work-family value is named.
+When an E.18.1 P2W use reaches work planning or work-entry readiness, keep the selected Method, one `U.WorkPlan` with any declaration-local `SlotFillingsPlanItem` content, `WorkEntryReadiness@Context`, dated Work occurrence, and separate result records distinct. A planned-filling row is addressable only through that WorkPlan and gains no independent identity. A principle scheme, functional diagram or scenario may help identify a Method or planning question and guide its examination. Establish the particular Method, WorkPlan, readiness result or dated Work under its own pattern before asserting or relying on that value.
 
 Work planning may cite evidence and currentness requests for the direct relation under repair. A.15.5 may cite the exact WorkPlan and designate declaration-local PlanItem content when its readiness criterion uses that content. Name evidence, gate passage, performed Work, result measurement, assurance, or refresh before relying on a planning or readiness record for that stronger claim.
 
 ### A.15:12d - P2W Performed-Work Relation
 
-When E.18.1 reaches performed Work, keep `U.Work` as the admitted kind and identify one exact dated occurrence under it. `WorkEnactment` is not a second kind or pseudo-object between plan and occurrence.
+When E.18.1 reaches performed Work, keep `U.Work` as the admitted kind and identify one exact dated occurrence under it.
 
 A performed-work record is a separate `U.Episteme`. It may cite a WorkPlan, planned baseline, and exact Work occurrence. It can state bindings, performed values, substitutions, variance, telemetry, outputs, outcome claims, and result references only through independently obtaining relations; none is stored in or constituted by the Work occurrence. Comparator, transport, `PrincipleFrame`, formal-substrate signature, evidence, assurance, and gate relations remain separate.
 

@@ -26,8 +26,8 @@ Typical moments:
 
 - If the question is the local relation word, use `A.14`.
 - If the question is constructive part-whole grounding, use `C.13`.
-- If the question is assurance grounding for a working model, use `B.3.5`.
-- If the question is an exact relation among local system-role kinds, use `A.2.7`; if it is classification, assignment, or a direct participation relation, state that fact through its own pattern and predicate. Send unresolved claim-bearing “role” wording through `E.10.ROLE`. Use the Method patterns for method relation structure and `C.29` when a mathematical lens is relied on for the current claim.
+- If a publication choice or named current requirement elects the Working-Model assurance profile for the relation claim, use `B.3.5`.
+- If the question is an exact relation among local system-role kinds, use `A.2.7`; if it is classification, assignment, or a direct participation relation, state that fact through its own pattern and predicate. Send unresolved claim-bearing “role” wording through `E.10.ROLE`. Use the Method patterns for method relation structure and `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved.
 - If the question is performed-work occurrence parts, use `A.15.1`.
 - If the question is whole reidentification or emergence-family wording, use `B.2` or `B.2.P`.
 
@@ -65,7 +65,7 @@ When part-whole construction is current, recover:
 
 ```text
 HolonAggregationClaim@Context:
-  candidateWholeRef: U.Holon
+  candidateWholeRef: U.Entity
   candidatePartRefs:
   aggregationPolicyRef?
   claimScopeRef?: U.ClaimScope
@@ -85,8 +85,8 @@ This claim frame identifies the objects, relations, and qualifications needed to
 Use:
 
 - `A.14` for `ComponentOf`, `ConstituentOf`, `PortionOf`, `PhaseOf`, collection belonging under the collection's own rule, aspect, and related vocabulary;
-- `C.13` for constructional grounding such as sum, set, slice, or another accepted construction;
-- `B.3.5` when a working model relies on the part-whole claim for assurance or evidence;
+- `C.13` for constructional grounding through its sum, set or slice accounts;
+- `B.3.5` when a publication choice or named current requirement elects its assurance profile for the relation claim;
 - `C.16` when the current output is a whole-level characteristic;
 - `A.1` and `A.15` when the whole is claimed to be an acting collective system.
 
@@ -94,13 +94,13 @@ Use:
 
 | Source claim | Ontology-side recovery | Subject pattern |
 | --- | --- | --- |
-| "This object is made of these parts." | Part-whole construction over admitted holons. | `A.1`, `A.14`, `C.13`, `B.3.5` when assurance is current. |
+| "This object is made of these parts." | Identify the candidate whole and constituents and establish the part relations and construction rule. When holonhood is claimed, apply all six A.1 components and the direct kind-specific conditions. | `A.1` for holon recognition, `A.14`, `C.13`; `B.3.5` when a publication choice or named current requirement elects its assurance profile. |
 | "These items belong to this collection." | The collection's own belongs-to rule or collection-as-whole grounding; no `ComponentOf` inference. | `A.14`, `C.13`, `C.16` for a collection-level or whole-level characteristic. |
-| “This role is combined from role factors.” | Unresolved source wording. It may mean an exact relation among local system-role kinds, a classification or assignment, a direct participation relation, a naming question, or ordinary prose; none is holonic parthood by default. | `E.10.ROLE` first; then `A.2.7` only for the exact relation among local system-role kinds, or the direct pattern for the recovered classification, assignment, participation, or naming claim; use `C.29` only if a mathematical lens is selected. |
-| "This method has steps, parameters, guards, or variants." | Method relation structure, method family, method description, or work plan; not performed work by default. | `A.15`, Method patterns, `C.29` if mathematical lens is selected. |
+| “This role is combined from role factors.” | Unresolved source wording. It may mean an exact relation among local system-role kinds, a classification or assignment, a direct participation relation, a naming question, or ordinary prose; none is holonic parthood by default. | `E.10.ROLE` first; then `A.2.7` only for the exact relation among local system-role kinds, or the direct pattern for the recovered classification, assignment, participation, or naming claim; use `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
+| "This method has steps, parameters, guards, or variants." | Method relation structure, method family, method description, or work plan; not performed work by default. | `A.15`, Method patterns, `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
 | "This run contained episodes or concurrent sub-runs." | Work occurrence holarchy with timing, evidence, occurrence identity, and work-part relation. | `A.15.1`, temporal pattern, evidence-use pattern. |
-| "This graph or algebraic notation represents the structure." | Mathematical or representation description of a selected structure. | `C.29`, `A.22`, architecture or description pattern. |
-| "The whole shows emergence." | Existing-whole explanation first; B.2 only when the whole itself must be reidentified. | `B.2`, `B.2.P`, or the direct characteristic, measurement, architecture, capability, or Work pattern. |
+| "This graph or algebraic notation represents the structure." | Mathematical or representation description of a selected structure. | `A.22` and the applicable architecture or description pattern; `C.29` when a separate mathematical representation-choice, transfer or reliance question remains unresolved. |
+| "The whole shows emergence." | Check applicable explanations within the existing whole first. Use B.2 when changed facts leave a consequential question about whether that whole remains sufficient or a new whole is required. | `B.2`, `B.2.P`, or the direct characteristic, measurement, architecture, capability, or Work pattern. |
 
 #### B.1:4.3 - Work Occurrence Holarchy
 
@@ -108,7 +108,6 @@ A Method's composition and the parts of a performed Work require different groun
 
 A dated Work may have independently admitted temporal or operational parts under `A.15.1`. C.27 governs temporal claims, and B.1.4 aggregates recovered order or temporal relations when that is the question. Resource roll-ups use B.1.6; composing effects needs the direct relation and composition rule for those effects. Neither kind of calculation establishes Work parthood or makes a Method or role expression a holonic part.
 
-Use A.15.1 when the claim needs occurrence identity, temporal coverage, `Gamma_time`, `Gamma_work`, episode policy, overlap policy, resource aggregation, or performed-work evidence.
 
 #### B.1:4.4 - Mathematical And Representation Apparatus
 
@@ -130,7 +129,7 @@ Blocked uses:
 
 #### B.1:4.5 - Existing-Whole Before MHT
 
-Before declaring B.2 whole reidentification, ask whether the whole-level gain can be explained inside the existing whole:
+To assess whether changed facts require a different whole for the receiving use, first consider applicable explanations within the existing whole, such as:
 
 - better parts;
 - corrected part relation;
@@ -140,7 +139,7 @@ Before declaring B.2 whole reidentification, ask whether the whole-level gain ca
 - a correction to the selected functional or architectural structure;
 - source, publication, or representation correction.
 
-Use B.2 only when the whole itself must be reidentified.
+If a supported explanation is sufficient for the receiving use, keep the existing whole and stop. Use B.2 when changed facts leave a consequential question about whether that whole remains sufficient or a new whole is required; retain an unresolved comparison when its deciding grounds are missing.
 
 ### B.1:5 - Archetypal Grounding (Worked Cases)
 
@@ -160,7 +159,7 @@ The corpus does not become an acting system. A review board, running review tool
 
 A machining method has ordered steps and parameters. Those steps are method relation or method-description material. They do not prove that a performed machining run occurred, nor that the run had the same parts.
 
-If the current claim is the method structure, use Method patterns and C.29 when algebra is selected. If the current claim is the actual run, use A.15.1.
+If the current claim is the method structure, use Method patterns. Use C.29 when a separate mathematical representation-choice, transfer or reliance question remains unresolved. If the current claim is the actual run, use A.15.1.
 
 ### B.1:6 - Bias-Annotation
 
@@ -169,7 +168,7 @@ If the current claim is the method structure, use Method patterns and C.29 when 
 | Apparatus as ontology | A user infers the object kind from the form of a graph or other representation. | Recover the holon, relation, selected structure, and mathematical-lens use separately. |
 | Decomposition as parthood | Source “role” factors, method steps, phases, or work episodes are treated as holonic parts by label. | Use `E.10.ROLE` when the role wording is unresolved, then the direct pattern for the recovered relation; use the Method, temporal, Work, or part-whole pattern for the other claims. |
 | Collection as acting whole | A set, list, batch, fleet, or community receives agency or responsibility by plural naming. | Recover who or what belongs under the collection's own rule and the collection account, or admit the actual collective System under A.1. State responsibility separately by naming its predicate, participants, applicability, and occurrence identity; if no pattern or rule defines the needed claim, return that gap. |
-| Emergence rhetoric | "More than the sum" replaces existing-whole explanation. | Test measurement, architecture, role, method, work, and evidence explanations before B.2 whole reidentification. |
+| Emergence rhetoric | "More than the sum" replaces existing-whole explanation. | Check applicable existing-whole explanations; use B.2 only for a consequential question that remains about keeping or reidentifying that whole. |
 
 ### B.1:7 - Conformance Checklist
 
@@ -181,8 +180,8 @@ If the current claim is the method structure, use Method patterns and C.29 when 
 | `CC-B1-4` | Relations among local system-role kinds, classifications, assignments, direct participation relations, and Method relation structures are not treated as holonic parts merely because a label, graph, algebra, or naming convention composes them. `A.2.7` is used only for the first of those branches. |
 | `CC-B1-5` | Performed work occurrence parts require A.15.1. |
 | `CC-B1-6` | Mathematical and representation apparatus is named as lens or expression, not as ontology by spelling. |
-| `CC-B1-7` | B.2 is used only when the whole itself must be reidentified after existing-whole explanations fail. |
-| `CC-B1-8` | No generic `U.Boundary`, `U.Interaction`, `U.Level`, `U.Emergence`, or `U.Frustration` is introduced by aggregation wording. |
+| `CC-B1-7` | B.2 is selected when changed facts leave a consequential existing-whole versus new-whole question. A sufficient existing-whole explanation ends that inquiry; missing deciding grounds leave the comparison unresolved. |
+
 
 ### B.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -192,7 +191,7 @@ If the current claim is the method structure, use Method patterns and C.29 when 
 | Graph as structure | A diagram or graph is treated as the part-whole structure. | Name the selected structure and relation pattern; keep the graph as representation or math lens. |
 | Method as work | A method decomposition is used as evidence that work occurred. | Use A.15.1 for performed-work occurrence and evidence. |
 | Collection as acting whole | A list or pool decides, acts, or bears responsibility. | Recover who or what belongs under the collection's own rule or its collection-as-whole account, or admit the actual collective System under A.1. A system-role kind, assignment, Method, or Work does not establish responsibility; name the predicate and the pattern or rule that defines it, or state that this is missing. |
-| Emergence by narrative | "More than the sum" replaces existing-whole analysis. | Check existing-whole explanations before B.2. |
+| Emergence by narrative | "More than the sum" replaces existing-whole analysis. | Check applicable existing-whole explanations; stop when sufficient for the receiving use, or use B.2 for the consequential whole-identity question that remains. |
 
 ### B.1:9 - Consequences
 
@@ -206,26 +205,25 @@ Positive consequences:
 Costs:
 
 - Users must identify the claim kind before choosing a notation.
-- Using aggregation notation can require further grounds: work occurrence evidence uses `A.15.1`, work-resource aggregation uses `B.1.6`, mathematical-lens reliance uses `C.29`, and whole reidentification first uses `B.2.P` and then `B.2` when the problem remains current.
+- Further grounds depend on the claim: work occurrence evidence uses `A.15.1`; work-resource aggregation uses `B.1.6`; an unresolved mathematical representation-choice, transfer or reliance question uses `C.29`. Use `B.2.P` for unresolved emergence-family wording and `B.2` when changed facts leave a consequential existing-whole versus new-whole question.
 
 ### B.1:10 - Rationale
 
 Whole-level reasoning relies on accepted part-whole relations, constructional grounding, and the applicable subject patterns. This supports reasoning across different kinds of objects while retaining their own admission and relation rules.
 
-Mathematical apparatus remains available. It becomes more useful after the governed object is known: graph for dependency representation, algebra for selected composition rules, tuple for slot relation expression, matrix or embedding for analysis, and C.29 when a mathematical lens is relied on for the current claim.
+Mathematical apparatus remains available. Once the governed object is known, a graph can represent dependencies, an algebra can express selected composition rules, a tuple can express a slot relation, and a matrix or embedding can support analysis. Use C.29 when a separate mathematical representation-choice, transfer or reliance question remains unresolved.
 
 ### B.1:11 - SoTA-Echoing
 
-| Source family | Current lesson for B.1 | FPF decision |
-| --- | --- | --- |
-| Constructional ontology and applied ontology practice | Whole identity, dependency, and construction need explicit grounding rather than unrestricted composition. | B.1 requires A.14 relation vocabulary and C.13 constructional grounding before part-whole claims are relied on. |
-| Systems engineering and digital engineering practice | Whole-level characteristics and architecture views need traceable part relations and selected structures. | B.1 separates part-whole construction from selected-structure descriptions, dashboards, and mathematical representations. |
-| Method and process-modeling traditions | Plans, procedures, and performed occurrences are often conflated. | Method relation structure remains with Method patterns; performed-work holarchy remains with A.15.1. |
-| Emergence and holonic systems practice | Genuine whole-level novelty must be distinguished from measurement, architecture, role, method, or work repair. | B.2 is the pattern for whole reidentification after existing-whole explanations are tested. |
+For the question "does a collection-level calculation warrant treating the collection as a holon?", B.1 uses A.1:4.2's recognition criterion, A.14:4's distinction between belonging and parthood, and C.13:4.1's construction accounts. A collection account and a holon account support different claims; use the lighter account when it supplies the receiving result.
+
+The corpus in B.1:5.2 makes the comparison concrete. Its coverage or diversity can be assessed under the collection's inclusion and characteristic rules while constructive part relations and assembly remain unestablished. Those same collection facts remain insufficient for a holon claim under A.1, even if the aggregate value is correct. B.1:4.1–4.2 therefore preserve the collection result and require the six constructive components and kind-specific conditions for the stronger holon claim. In the pump-skid case, independently grounded component relations and assembly supply the corresponding part-whole basis.
+
+This conceptual comparison settles which account these FPF claims require, with the additional construction and recognition burden made explicit for a holon claim. It does not rank external ontology or engineering methods. Reopen the choice of account when the receiving claim, construction facts or applicable identity criterion changes.
 
 ### B.1:12 - Relations
 
-- **Builds on:** `A.1` for holon admission, `A.14` for relation vocabulary, `C.13` for constructional grounding, and `B.3.5` for Working-Model assurance grounding.
+- **Builds on:** `A.1` for holon recognition, `A.14` for relation vocabulary, and `C.13` for constructional grounding. Use `B.3.5` for Working-Model assurance grounding when a publication choice or named current requirement elects that profile.
 - **Coordinates with:** `A.15` and `A.15.1` for method and work, `A.22` and `C.30` for selected structure and architecture, `C.16` for whole-level characteristics, `C.29` for mathematical lenses, and `B.2` for whole reidentification.
 - **Refined by:** `B.1.1`, `B.1.2`, `B.1.4`, and `B.1.6` for selected dependency, system aggregation, contextual-temporal aggregation, and work-resource aggregation cases.
 

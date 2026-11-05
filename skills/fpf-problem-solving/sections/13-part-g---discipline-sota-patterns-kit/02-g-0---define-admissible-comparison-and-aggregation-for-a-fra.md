@@ -123,9 +123,9 @@ CG‑Spec :=
            ⟩,
 
   // Penalty routing and plane policies are by explicit policy ids.
-  // For semantics (tri-state, penalties→R_eff-only, crossing visibility, set-return), cite G.Core and the governing definitions it identifies.
-  CL‑Routing := ⟨policy_id, map Bridge.CL → penalty_spec⟩,
-  Φ := ⟨phi_policy_id, phi_table_ref?, psi_policy_id?, phi_plane_policy_id?⟩,
+  // For semantics (tri-state, receiving-use loss, model-bound assurance penalties, crossing visibility, set-return), cite G.Core and its governing definitions. The policy fields below are conditional; supply every reference required by the selected use or model.
+  CL‑Routing? := ⟨policy_id, map Bridge.CL → penalty_spec⟩, // when the selected use or model maps Bridge.CL to a penalty
+  Φ? := ⟨phi_policy_id?, phi_table_ref?, psi_policy_id?, phi_plane_policy_id?⟩, // when any of these policies is used
 
   AcceptanceStubs := [AcceptanceStubId…],     // templates only; thresholds remain governed by CAL (G.4)
 
@@ -138,7 +138,7 @@ CG‑Spec :=
   ⟩,
 
   RSCR := ⟨
-  RSCRTestId[]?,             // SHOULD cover: illegal_op_refusals; unit and scale legality checks; freshness windows; // partial-order scalarisation refusals; threshold semantics; CL→R_eff routing;
+  RSCRTestId[]?,             // SHOULD cover: illegal_op_refusals; unit and scale legality checks; freshness windows; // partial-order scalarisation refusals; threshold semantics; declared-model penalty calculations when used (including a selected CL→R_eff model);
                             // and refusal of degrade.order on unit mismatches (MM‑CHR).
     RSCRTriggerKindId[]
   ⟩,
@@ -291,9 +291,9 @@ All blocks below are `GPatternExtension` modules (PatternScopeId; not new Patter
 | CC‑G0‑04 | `SCP` declares, per characteristic, the lawful operation regime needed for each referenced comparator (scale/unit/polarity constraints and any required proofs/refs). |
 | CC‑G0‑05 | `MinimalEvidence` is declared per characteristic and includes explicit lane/carrier requirements, freshness window references (if any), and explicit failure behavior wiring (tri-state semantics delegated). If freshness windows are used, a stable reference making the applicable window recoverable (e.g., a `PathSliceId` with its declared time window) MUST be pinned for audit. |
 | CC‑G0‑06 | The edition-addressable Γ-fold segment **MUST** cite `DefaultId.GammaFoldForR_eff` at `G.5 CC‑G5.4`. Pin any numerical model/policy actually used, with its receiving quantity, input meanings and scales, dependencies, operation and proof/justification refs as required by that governing rule and B.3/C.2.2. With no justified numerical fold, retain the separate support permitted by the governing rule; the segment is not a demand for a score. |
-| CC‑G0‑07 | If crossing penalties are used, `CL‑Routing` and `Φ` policy ids are explicit and auditable (policy ids are exposed as pins/refs) **and are required pins for downstream SCR publication on penalised claims** (see `G.6`). |
+| CC‑G0‑07 | If crossing penalties are used, all policy ids used by the selected model are explicit and auditable (exposed as pins/refs, including applicable `CL‑Routing` and `Φ` entries) **and are required pins for downstream SCR publication on penalised claims** (see `G.6`). |
 | CC‑G0‑08 | `AcceptanceStubs` in `CG‑Spec` are templates only; any context-local thresholds/acceptance policies are governed by CAL acceptance artefacts (G.4) and are cited, not duplicated. |
-| CC‑G0‑09 | RSCR tests and triggers for edits to legality surfaces and evidence minima are present and use canonical `RSCRTriggerKindId`s. The RSCR test set SHOULD cover at least: illegal_op_refusals; unit and scale legality checks; freshness windows; partial-order scalarisation refusals; threshold semantics; CL→`R_eff` routing; refusal of `degrade.order` on unit mismatches (MM‑CHR). |
+| CC‑G0‑09 | RSCR tests and triggers for edits to legality surfaces and evidence minima are present and use canonical `RSCRTriggerKindId`s. The RSCR test set SHOULD cover at least: illegal_op_refusals; unit and scale legality checks; freshness windows; partial-order scalarisation refusals; threshold semantics; declared-model penalty calculations when used (including a selected CL→`R_eff` model); refusal of `degrade.order` on unit mismatches (MM‑CHR). |
 | CC‑G0‑10 | `PublicIdContinuity` is declared: governing definition, DRR link, refresh cadence, decay and aging policy, and deprecations. Deprecations preserve lexical continuity (Δ-discipline; delegated to `CC‑GCORE‑ID‑*`). |
 | CC‑G0‑11 | *(Conditional)* If `Illumination` / QD hooks are present, `DescriptorMapRef.edition`, `DistanceDefRef.edition`, and any `InsertionPolicyRef` / promotion policy ids are pinned (or explicitly marked absent) and are recorded in provenance/audit pins. |
 | CC‑G0‑12 | *(Conditional)* If freshness windows influence gating/selection, they are published and enforced, and references making the relevant windows recoverable (`PathSliceId` with a declared time window, or equivalent) are recorded in SCR/audit pins. |

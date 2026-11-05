@@ -22,7 +22,7 @@ The primary `EntityOfConcern` is one proposed mandatory requirement under one de
 
 For a proposed inquiry whose worth is still open, use `C.11.DUA` to compare what can be gained with feasible effort, delay, opportunity cost and downside; use `C.11` when a current chooser and options need a local choice. Finish with the supported answer and feasible continuation, which may retain the current action, narrow a claim or decline an unsupported use.
 
-Ordinary use needs no score or separate record. Name the receiving decision, result, reliance, or recovery condition in the same sentence as the disposition.
+Ordinary use needs no score or separate record. State the disposition together with the receiving decision, result, reliance, or recovery condition that justifies it.
 
 **Three recognition cases.**
 
@@ -111,7 +111,7 @@ A passing branch establishes only the named contribution. Every downstream claim
 
 #### A.11.OP:4.5 - Keep the result light and reopenable
 
-For ordinary use, say:
+For ordinary use, a short answer can be:
 
 > Keep `<requirement>` for `<declared use>` until `<nearest substantive horizon>` because `<named contribution and the basis for requiring this work>`.
 
@@ -121,7 +121,7 @@ or:
 
 If a proposed inquiry has a contribution but is unavailable or not worthwhile, finish with the current supported answer and selected continuation. Keep a short reason or limitation in that result when the recipient needs it; add no empty probe fields or separate omission account.
 
-Record the disposition in the existing record kind appropriate to a named later use when its recipient must cite, compare, audit or rely on it. Otherwise the one-sentence result is complete.
+Record the disposition in the existing record kind appropriate to a named later use when its recipient must cite, compare, audit or rely on it. Otherwise the supported answer is complete.
 
 Reopen the disposition when the horizon, plausible results, selected transformation, direct duty, assurance floor, recovery reliance, or burden-bearing alternative changes.
 
@@ -185,7 +185,7 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | **Arch** | Every special case receives another owner, or this pattern absorbs Method, choice, Work, evidence, and assurance decisions. | Keep one three-branch admission screen and return every downstream claim to its direct pattern. |
 | **Onto/Epist** | An author declares ordinary words such as *action*, *apparatus*, or *horizon* as new kinds, or treats information volume as decision relevance. | Keep the words ordinary and name the exact receiving decision, result, reliance, or recovery condition. |
 | **Prag** | “Less is better” deletes exploration, deterministic realization, prevention, or recovery; “might help” preserves ceremony forever. | Compare keeping and removing at the nearest named substantive horizon through all three branches. |
-| **Did** | The branch table becomes a mandatory form that costs more than the judgement it supports. | Keep ordinary use to one disposition sentence and introduce durable evidence only for a named relying use. |
+| **Did** | The branch table becomes a mandatory form that costs more than the judgement it supports. | For ordinary use, give the disposition and its needed explanation; introduce durable evidence only for a named relying use. |
 
 ### A.11.OP:7 - Conformance Checklist
 
@@ -199,7 +199,7 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | `CC-A11.OP-6` Delayed decision value | For an inquiry proposed for a later decision or reliance, at least one materially plausible result reaches that named use inside the horizon. This contribution is not sufficient to require acquisition; a live inquiry decision also establishes obtainability and worthwhile contribution under its direct owner. |
 | `CC-A11.OP-7` Assurance boundary | A retained assurance or recovery action names the relied-on condition and its direct owner; that owner establishes the floor and evidential basis. |
 | `CC-A11.OP-8` Disposition boundary | Passing a branch establishes contribution only. The final disposition uses the applicable choice, realization, assurance or authority basis; appraisal of a requirement's merits remains separate from its current force. |
-| `CC-A11.OP-9` Light result | Ordinary use ends in the direct one-sentence disposition; a durable result uses an existing record kind required by a named later use. |
+| `CC-A11.OP-9` Light result | Ordinary use ends in a direct disposition with the basis needed for its use; a durable result uses an existing record kind required by a named later use. |
 | `CC-A11.OP-10` Direct-owner return | Each downstream claim remains with the direct pattern named in Relations and is obtained from that pattern by value. |
 | `CC-A11.OP-11` Reopen condition | The disposition names or makes recoverable which change in horizon, result, transformation, duty, reliance, or alternative can reopen it. |
 | `CC-A11.OP-12` Theory boundary | Epistemic value and a counterfactual horizon may inform the comparison. Expected free energy, variational free energy, and Hamiltonian least action do not supply a universal engineering admission rule. |
@@ -215,7 +215,7 @@ Scope: **Universal** for the cross-domain admission question governed by this pa
 | **Fabricated alternatives for deterministic work** | A build or transformation step must invent outcome branches to look decision-relevant. | Retain it through selected realization when it performs the already selected result. |
 | **Precaution label as assurance** | Calling a step “safety” or “compliance” creates an unsupported floor. | Name the direct authority, evidence, exposure, and relied-on condition; return their disposition to the direct owner. |
 | **Possible contribution as sufficient reason to require work** | A probe is demanded because it could matter, despite unavailable means, excessive burden or a missed receiving window. | Establish contribution here; complete the live demand or choice question through C.11.DUA or C.11 and retain a useful current answer when acquisition is not selected. |
-| **Mandatory parsimony record** | The screen creates the same ceremony it is meant to remove. | Use one ordinary disposition sentence unless a named later use needs a durable episteme. |
+| **Mandatory parsimony record** | The screen creates the same ceremony it is meant to remove. | Give the disposition and its needed explanation in ordinary language; use a durable episteme only when a named later use needs it. |
 | **Free-energy or physics laundering** | Expected free energy, variational free energy, or Hamiltonian least action is presented as proof of a universal engineering rule. | Keep only the bounded epistemic, pragmatic, horizon, and risk distinctions; reject mathematical equivalence and mandated scalarization. |
 
 ### A.11.OP:9 - Consequences

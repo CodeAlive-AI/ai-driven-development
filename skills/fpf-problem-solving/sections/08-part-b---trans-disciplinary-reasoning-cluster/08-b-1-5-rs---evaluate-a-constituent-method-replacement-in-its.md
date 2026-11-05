@@ -25,7 +25,7 @@ The opposite failure is to demand that every internal detail remain identical. T
 - Several uses may require different guarantees from the same constituent.
 - Simplification saves effort when its lost detail is irrelevant to the receiving action.
 - Strong evidence can be expensive; a bounded argument or counterexample may already settle the next move.
-- A common replacement reduces maintenance, while separate variants can preserve otherwise incompatible uses.
+- A common replacement can reduce maintenance, while separate variants can preserve otherwise incompatible uses.
 - Method identity, description correspondence and performance evidence answer different questions.
 
 ### B.1.5.RS:4 - Solution
@@ -40,7 +40,7 @@ Keep a proposed replacement separate from one already performed. Use A.3.1 to se
 
 #### B.1.5.RS:4.2 - Recover the receiving wholes
 
-Identify the encompassing Methods or work arrangements whose use can change. Follow an indirect use through the intermediate whole while it affects the decision. Include a second receiving use when the constituent is shared; local success in the first use is not evidence for the second.
+Identify the encompassing Methods or work arrangements whose use can change. Follow an indirect use through the intermediate whole while it affects the decision. Include a second receiving use when the constituent is shared; local success in the first use does not by itself establish compatibility with the second.
 
 This is a search bounded by the intended replacement. If the actual users cannot be recovered, restrict adoption to the known uses or return the missing use information that prevents a broader decision. Do not require an inventory of all imaginable uses.
 
@@ -79,9 +79,9 @@ This is a directed conclusion. Replacing A by B in one use does not show that A 
 
 Choose at the supported scope, accounting for adaptation, learning, operation and maintenance costs. Retain separate variants when their different strengths justify the burden; a single universal replacement is not required.
 
-For an ongoing operation, use its ordinary rules for introducing change and retaining continuity. State the condition that would require reconsideration: changed inputs, another receiving whole, a tighter timing limit, lost support or a newly relevant result property. No separate certificate or trial is required merely to record that an existing basis was sufficient.
+For an ongoing operation, use its ordinary rules for introducing change and retaining continuity. State the condition that would require reconsideration: changed inputs, another receiving whole, a tighter timing limit, lost support or a newly relevant result property.
 
-Return the decision in the form its receiver needs. Where the conclusion is only recognition of a plausible substitute, say so. A claim of guaranteed preservation needs the argument or assurance appropriate to that claim under B.3; a local decision under uncertainty uses C.11 and C.11.DUA.
+Return the decision in the form its receiver needs. Where the conclusion is only recognition of a plausible substitute, say so. A claim of guaranteed preservation needs an argument appropriate to that claim. Use B.3 when a named assurance claim about its support is current; a local decision under uncertainty uses C.11 and C.11.DUA.
 
 ### B.1.5.RS:5 - Archetypal Grounding
 
@@ -159,7 +159,7 @@ Formal compositional contracts offer a stronger alternative where the constituen
 - B.1.5 and A.3.1 define Method composition, identity and replacement-claim distinctions.
 - B.1.5.EW recovers constituent and encompassing work when those connections are not yet understood.
 - B.5.RA and B.5.RR reconstruct and revise the argument on which preservation depends.
-- C.29 governs a mathematical correspondence used in the comparison.
+- Use C.29 when a separate question about mathematical representation, result transfer or unsupported reliance remains in the comparison.
 - C.30.LCA supplies control-specific conditions; C.30.ILC addresses resulting cross-scope architecture conflicts.
 - C.11 and C.11.DUA govern the local decision and whether further investigation is useful.
 

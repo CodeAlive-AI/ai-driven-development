@@ -12,9 +12,7 @@
 
 Use A.20 when one transformation or one operation application is current in a transformation-flow structure and the question is whether that subject satisfies one named internal constraint for one stated case. It also applies when an A.6.4 bounded-use assertion q is current there and q's exact proposition is the named internal constraint. A.6.4 retains the separate current-case judgement.
 
-**First useful move.** Recover the subject, constraint and case from the existing description. If they are not yet explicit, state:
-
-> For subject S and case facts I, constraint C is applicable and required; test T returned outcome O under window W, with witness or reason R.
+**First useful move.** Recover the subject, constraint and case from the existing description. Determine applicability; if it remains unresolved, state the missing fact and deciding rule. Once applicability is established, report its value, the evaluation state and any test outcome, with the evaluation window and witness or reason.
 
 **Quick worked case.** `TemperatureConversion-7` must add 273.15 to a Celsius input and must not return a value below 0 K. For input 25 °C, the test returns 298.15 K, so both required conditions are `satisfied`; the witness records the formula edition, input, output, and test result for this evaluation window. The practitioner may reuse this result for that case and window, or pass it to a current gate or assurance use; changed input, formula edition, assumptions, or window requires reassessing affected grounds and establishing whether this result still covers the receiving case and use. If the output were 297.15 K, the formula condition would be `violated`; if no output could be recovered, it would be `unknown`; if the test had not run, its evaluation state would be `notRun`.
 
@@ -102,7 +100,7 @@ The legacy label `FlowConstraintValidity` may be retained only as a locator for 
 
 #### A.20:4.2 - Applicability, required set, and summary
 
-Before evaluation, name the constraints applicable to the current subject and case. Mark each as `required`, `optional`, or `notApplicable` and state why. The required set is complete only when every constraint that the current use depends on is named and no unresolved applicability question could change that set.
+Before evaluation, name the constraints being considered for the current subject and case. Mark each as `required`, `optional`, or `notApplicable` and state why. The required set is complete only when every constraint that the current use depends on is named and no unresolved applicability question could change that set.
 
 For one evaluated applicable constraint:
 

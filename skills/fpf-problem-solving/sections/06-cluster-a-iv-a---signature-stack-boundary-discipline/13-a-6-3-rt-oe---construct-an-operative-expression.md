@@ -103,7 +103,7 @@ Read the prepared expression using the selected conventions. Compare its partici
 
 Pay particular attention to a relation conveyed by position, enclosure, adjacency, repetition or timing. State its meaning when the convention does not already supply it. An arrow can mean implication, temporal order, a permitted transition or material flow; use the relation needed by this expression.
 
-Test a small case that would distinguish the intended reading from a plausible changed one. In :5.2, the continuation C distinguishes two groupings because one requires A first and the other permits C on its own. The test exposes a change in permitted work that a list of retained letters would miss.
+When a plausible alternative interpretation would change the operation, test a small case that distinguishes it from the intended reading. In :5.2, the continuation C distinguishes two groupings because one requires A first and the other permits C on its own. The test exposes a change in permitted work that a list of retained letters would miss.
 
 When the expression is used as a replacement for another, A.6.3.RT compares the content carried between them. A coarsened or partial expression may still be useful for the selected operation; retain a way to recover a distinction that a later use needs.
 

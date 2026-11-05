@@ -9,18 +9,18 @@ Use this pattern when people need usable claims about an identified Method or a 
 
 The first useful result is a short use-coverage account. It names the Method or candidate account, the receiving use, the claims needed now, the claims deliberately omitted, and the stop. That account prevents a documentation project from expanding before its practical question is clear.
 
-Do not use this pattern merely to publish, diagram, approve, schedule, or record Work. A `U.MethodDescription` is the claim-bearing episteme whose exact `EntityOfConcern` is one Method already admitted under `A.3.1`; its code, diagram, form, carrier, approval, WorkPlan, and dated Work remain different things. If the proposed whole is still a candidate account, improve that account without classifying it as a `U.MethodDescription` for the whole.
+Do not use this pattern merely to publish, diagram, approve, schedule, or record Work. A `U.MethodDescription` is the claim-bearing episteme whose exact `EntityOfConcern` is one Method already admitted under `A.3.1`; its representations, carriers, and dated enactments remain separate objects. Planning and approval have their own claim conditions; the same episteme may also meet A.15.2 as a `U.WorkPlan`. If the proposed whole is still a candidate account, improve that account without classifying it as a `U.MethodDescription` for the whole.
 
 #### A.3.2.DE:0.1 - Working Distinctions
 
 | Item | Working meaning here | Boundary |
 | --- | --- | --- |
 | admitted Method | One reusable way of doing whose identity has been established under `A.3.1`. | A shared title, coherent document, WorkPlan, or successful occurrence does not establish it. |
-| `U.MethodDescription` | One C.2.1 episteme about that Method whose claims say something substantive about how the Method is carried out. | Membership is not a completeness, approval, currentness, publication, or effectiveness result. |
+| `U.MethodDescription` | One C.2.1 episteme with at least one substantive claim about that Method as a way of doing. | Membership is not a completeness, approval, currentness, publication, or effectiveness result. |
 | candidate account | Claims about a possible Method whose identity or obtaining relations remain unresolved. | It can be improved and used prospectively without being renamed a MethodDescription. |
 | named use | A particular planning, enactment, comparison, audit, revision, publication, or teaching need with a receiver and stop. | A generic wish to “document the method” is not yet a use boundary. |
 | use-coverage account | A C.2.1 account that states which Method claims an edition exposes for each named use and which it omits. | It does not prove that the claims are true enough for the use or that anyone used them. |
-| representation and publication | A `C.29` correspondence, `E.24.PUB` form or publication occurrence, and carrier through which claims may be expressed or made available. | Form and availability do not decide MethodDescription membership. |
+| representation and publication | A representation under `A.6.3.RT`/`A.6.3.RT.OE`, an `E.24.PUB` form or publication occurrence, and a carrier through which claims may be expressed or made available; `C.29` applies when a mathematical lens is used or remains to be chosen. | Form and availability do not decide MethodDescription membership. |
 
 ### A.3.2.DE:1 - Problem Frame
 
@@ -83,9 +83,9 @@ Authors stop treating “the method document” as one undifferentiated object. 
 
 #### A.3.2.DE:5.1 - Stop at the Candidate Whole
 
-`C-EC-Release-v2` is a prospective account of a possible release-coordination whole. Its intended result, alternatives A, B2, and R, guards, authority boundaries, confidentiality, reversibility, and D0 stop make it useful, but the whole is not admitted as a `U.Method`. A.3.2.DE may improve those claims for a selection or trial-planning use; it does not return a `U.MethodDescription` for that candidate whole.
+`C-EC-Release-v2` is a prospective account of a possible release-coordination whole. It proposes waiting for signed supplier evidence before software integration, or integrating from a versioned provisional edition and reconciling it with signed evidence before safety closure. It also specifies recovery after failed closure, authority boundaries, confidentiality, reversibility and stops. The Method identity of this proposed whole remains unresolved; `B.1.5.CM:5` gives the full case.
 
-The improved account remains useful: users can compare A and B2 before integration and plan a bounded trial with recovery R after a failed B2 closure. Every downstream use keeps the account's candidate status.
+Improve the claims required for selection or trial planning and retain the unresolved Method-identification condition. The result remains a candidate account.
 
 #### A.3.2.DE:5.2 - A Bounded Description of an Admitted Constituent Method
 
@@ -181,6 +181,6 @@ The claim-first order prevents representation and publication choices from selec
 - B.1.5.CM can supply an admitted whole or a prospective candidate account. A.3.2.DE preserves the branch it receives.
 - RMP.10 can supply claim content and evidence limits for a candidate account; it does not admit the Method or create the description.
 - C.37.MP consumes A.3.2.DE's current MethodDescription or candidate-account claims only when several unlike named Method-related actions require a Method-specific profile. It returns one complete C.37 claim group per action and a separate result showing how the selections relate: source correspondences, conflicting omissions, edition relations, decisions to keep representations separate, and conditions that require reconsidering several selections. For one action, use C.37 or the pattern that governs it; for another represented entity, use that entity’s governing FPF pattern.
-- `A.15.2`, `A.15.1`, `A.10`, `A.2.2`, `C.29`, and `E.24.PUB` define or constrain the neighboring plan, Work, evidence, capability, representation, and publication claims that A.3.2.DE keeps separate.
+- `A.15.2`, `A.15.1`, `A.10`, `A.2.2`, and `E.24.PUB` define or constrain neighboring plan, Work, evidence, capability and publication claims. `A.6.3.RT` and `A.6.3.RT.OE` govern representation correspondence; `C.29` governs a mathematical lens.
 
 ### A.3.2.DE:End

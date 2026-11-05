@@ -21,7 +21,7 @@ Unstructured “readiness” stories and undisciplined evidence lead to:
 * (ii) ambiguous gating conditions that a dispatcher cannot apply,
 * (iii) reuse after the family, evidence profile, claim scope, qualification window, or comparison basis changed, or reliance on an unstated source-local, kind, or plane relation, and
 * (iv) Immature families leaking into production.
-  We need a **notation‑independent LOG layer** whose **executable rules** use **TaskSignature (S2)** + **EvidenceProfiles** to return *admit / degrade / abstain*, **routing CL penalties selected under R4 to `R_eff` only** (never mutating **F/G**).
+  We need a **notation‑independent LOG layer** whose **executable rules** use **TaskSignature (S2)** + **EvidenceProfiles** to return *admit / degrade / abstain*, retaining relation losses and any justified assurance consequences under R4.
 
 ### C.23:3 - Forces
 
@@ -69,7 +69,7 @@ with the following **branch obligations**:
 
 **R3 — Abstain.** If S2 violates **Eligibility** or R0 fails, return `Abstain` with the failed rule, reasons, and available policy, evidence-profile, scope, and qualification-window basis. Report missing references and unperformed judgements under §4.2.1. Abstain is mandatory for illegal CHR operations and when a conclusion depends on an F.9 Bridge, kind relation, or plane relation that has not been established.
 
-**R4 — Relation and loss routing.** Cite an F.9 Bridge, kind relation, or plane relation only when the admission decision actually relies on that obtaining relation. Record its participants, direction, what meaning is preserved and what is lost, receiving use, and applicable policy edition. When the admission use makes a separate named assurance claim, identify its exact target claim and receiving use under B.3. Apply a supported loss penalty only under that assurance policy's declared rule; route it to `R_eff` only, leaving `F` and `G` unchanged. A changed registry row, evidence profile, claim scope, qualification window, or intended use is not by itself a crossing.
+**R4 — Relation and loss routing.** Cite an F.9 Bridge, kind relation, or plane relation only when the admission decision actually relies on that obtaining relation. Record its participants, direction, what meaning is preserved and what is lost, receiving use, and applicable policy edition. When the admission use makes a separate named assurance claim, identify its exact target claim and receiving use under B.3. Assess loss under the receiving-use rule. A numerical assurance penalty requires an applicable domain model under B.3:4.3–4.4 and affects that model's declared assurance result. Expression properties, claim scope and admission conditions retain their own governing rules. A changed registry row, evidence profile, claim scope, qualification window, or intended use is not by itself a crossing.
 
 **R5 — Proof hooks.** Every branch **MUST** retain its **A.10 evidence/source basis** for the conclusion it makes. For an early `Abstain`, cite the available basis for the failed prerequisite and name the required evidence that could not be recovered. Evidence used by a branch retains the lane tags (TA/VA/LA) and freshness windows required by its CG-Spec.MinimalEvidence and EvidenceProfile; missing requirements remain explicit gaps under §4.2.1. Cite **Bridge ids + loss notes** when the branch relies on a Bridge; the decision is **SCR‑visible**. When **G.6 EvidenceGraph** is present, also **publish EvidenceGraph path id(s)** for the branch (admit/degrade/abstain). **A branch verdict is not its own evidence basis**.
 
@@ -121,9 +121,9 @@ When a maturity judgement is established for an admission use, publish or cite i
 **M1.** The ladder is **lane‑aware** (TA/VA/LA) and **freshness‑aware**; it is **not** a global numeric score. Declare **Scale kind=ordinal** and the **closed enumeration** of rungs; register the enum at **UTS** (twin labels; editioned).
 **M2.** Transitions **MUST** be justified by **EvidenceGraph** paths (once G.6 is available) and published at UTS; missing anchors ⇒ no advance.
 **M3.** Any maturity floor used for admission—for example, a run-critical selector use requiring at least L2—MUST be authored as a CAL.AcceptanceClause and cited by R1 with its policy edition, claim scope, qualification window, and verdict; SoS-LOG does not embed acceptance thresholds.
-**M4.** Declare the MaturityCard reference plane. If an admission decision relies on a relation to another plane, cite that exact obtaining plane relation, its direction and loss, and the applicable policy edition; a supported loss penalty selected under R4 affects `R_eff` only.
+**M4.** Declare the MaturityCard reference plane. If an admission decision relies on a relation to another plane, cite that exact obtaining plane relation, its direction and loss, and the applicable policy edition; any loss assessment or assurance penalty follows R4.
 
-> *Rationale note.* Treating maturity as a **poset** aligns with B.3's requirement for lawful comparisons and avoids **scalarisation across ordinal/ratio** scales; assurance penalties selected under R4 affect **`R_eff`**, never **F/G**.
+> *Rationale note.* Treating maturity as a **poset** aligns with B.3's requirement for lawful comparisons and avoids **scalarisation across ordinal/ratio** scales; assurance calculations follow R4; maturity and admission retain their separate rules.
 
 #### C.23:4.4 - Unknowns & Shift classes (tri‑state discipline)
 
@@ -192,7 +192,7 @@ Maturity is evidence-relative: a rung established for one family, scope and use 
 | **CC-C23.2** | Each `AdmissibilityLedger` row MUST identify the exact MethodFamilyId and registry edition, S2, rule edition, intended use, claim scope, qualification window, decisive branch, and decision result. It MUST retain the consulted policy editions, established or applicable reused Eligibility, CG-Spec, evidence-profile and Acceptance results, and Γ-fold contributors where used; required missing bases and unperformed judgements are reported under §4.2.1. The A.10 source basis and any G.6 path ids follow R5; relation and loss-policy ids appear only when relied on. | Keeps the premises of each actual branch reconstructable, including early refusal. |
 | **CC‑C23.3** | Enumerations used by the rules (**Degrade(mode)**; Maturity rungs) **SHALL** be **closed** and **UTS‑registered** (twin labels). | |
 | **CC‑C23.4** | **Unknowns** in live S2 fields **SHALL** map to `Degrade(mode)` (including `sandbox`) or `Abstain` with explicit **branch‑ids**; no `unknown→0/false` coercions.                                                          | Tri‑state discipline.                          |
-| **CC-C23.5** | If a branch relies on an F.9 Bridge, kind relation, or plane relation, it MUST cite that exact obtaining relation, direction, what meaning is preserved and what is lost, receiving use, and applicable loss policy; supported penalties selected under R4 affect `R_eff` only. A changed family, evidence profile, claim scope, qualification window, or use is not by itself a crossing. | Keeps `F` and `G` invariant and relation claims truthful. |
+| **CC-C23.5** | If a branch relies on an F.9 Bridge, kind relation, or plane relation, it MUST cite that exact obtaining relation, direction, what meaning is preserved and what is lost, receiving use, and applicable loss policy; loss assessment and any assurance penalty follow R4. A changed family, evidence profile, claim scope, qualification window, or use is not by itself a crossing. | Keeps relation, loss, assurance and admission claims separate. |
 | **CC‑C23.6** | **No acceptance thresholds** in CHR or Maturity; acceptance thresholds **live only** in **AcceptanceClauses** (G.4).                                                                                             | Separation of concerns.                       |
 | **CC‑C23.7** | `MaturityCard` **SHALL NOT** be turned into a global scalar; treat as **poset**; any ordering **MUST** be lawful over CHR types.                                                           | Forbids cross‑scale scalarisation.            |
 | **CC‑C23.8** | Publish to **UTS** with twin labels. Run **GateCrossing visibility checks** only for a cited crossing of a selected **E.18** transformation-flow structure. Require **CrossingBundle** attestation only when the named receiving use needs it; apply **E.18/F.9/F.17/E.17** under their respective current uses. Apply **LanePurity** and **Lexical SD** (**E.10**); use GateChecks/GateProfile (**A.21**) only when a named gate decision is current. | Publication & crossing visibility hygiene. |
@@ -208,7 +208,7 @@ Maturity is evidence-relative: a rung established for one family, scope and use 
 
 * **Explainable admission.** Every *Admit/Degrade/Abstain* is backed by **anchored** evidence and explicit unknown handling (selector reports are SCR‑linked).
 * **Run‑safe pluralism.** Multiple families can co‑exist with **policy‑governed** exploration (E/E‑LOG) and maturity‑aware gating.
-* **Portable governance.** Bridge hygiene makes cross‑Tradition reuse **deliberate**; when a supported penalty is selected under R4, declared CL routing makes it **costed** through **`R_eff`** only.
+* **Cross-Tradition reuse.** The account identifies the obtaining relation, its limitations, and any justified assurance penalty under R4.
 
 ### C.23:9 - Rationale
 

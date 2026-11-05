@@ -12,7 +12,7 @@
 
 Use this pattern when one working line depends on all of the following at once:
 
-- one declared source set still matters and must stay recoverable by name;
+- one declared source set or composition of source sets still matters and must stay recoverable;
 - one search-side space reference and one outcome-side space reference must both be explicit;
 - the line must say whether those refs resolve to one declared `CharacteristicSpace` or to two distinct declared `CharacteristicSpace` values;
 - the source-to-outcome relation is load-bearing enough that the reader must know what is being related, in which direction, and through which declared carrier, declared map ref, or qualifier ref;
@@ -69,13 +69,13 @@ When the receiving use depends on the source set, search space and outcome space
 
 First recover:
 
-1. Name the active source set.
+1. Name the active source set, or the contributing source sets and their composition.
 2. Point `SearchSpaceRef` and `OutcomeSpaceRef` to declared `CharacteristicSpace`.
 3. Choose `sameDeclaredSpaceAs` or `distinctDeclaredSpaceFrom`.
 4. State the source-to-outcome relation in direction, mode, and carrier.
-5. State the applicable limitations; use a primary posture token to organize them without hiding other material qualifications.
+5. State the applicable limitations. A primary posture token may organize them; supply it when a selected interface requires one, without hiding other material qualifications.
 
-If one of those five cells cannot yet be filled honestly, do not improvise around it. Either you are still in `A.19`, or you have really moved into interpretive-view work, publication, or policy, or the current line is still missing one declared basis.
+If one of these facts cannot yet be recovered, preserve the established source and space facts, name the missing basis, and withhold the complete substrate claim and only the use that depends on that basis. Use the applicable subject pattern when it can supply the missing result.
 
 | If the question under repair sounds like... | Use now | Why |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ A descriptor map or distance definition supplies one part of this account; it do
 
 In many search, synthesis, and source-set/space-substrate lines, the live substrate-bearing line is not just one `CharacteristicSpace` and not just one published shortlist or archive either. The line actually depends on a stack such as:
 
-- one declared source set, for example one front, archive, palette, or another declared source-set family;
+- one declared source set, such as a front, archive or palette, or a composition of identified source sets;
 - one search-side reference to an `A.19` `CharacteristicSpace`;
 - one outcome-side reference to an `A.19` `CharacteristicSpace`;
 - one explicit `SpaceRefRelationKind` over those two references, stating whether they resolve to the same declared space or to two different declared spaces;
@@ -131,7 +131,7 @@ Declare the source-set or search/outcome-space line through one explicit substra
 
 Use this pattern to declare only the substrate stack below:
 
-- the declared source set that the line is acting on;
+- the source set, or composition of source sets, used by the search or comparison;
 - the recoverable concrete source-set identity when the family name alone would be ambiguous;
 - the search-side reference to one declared `A.19` `CharacteristicSpace`;
 - the outcome-side reference to one declared `A.19` `CharacteristicSpace`;
@@ -152,7 +152,7 @@ Use the following notation-independent stack:
 
 ```text
 SourceSetSpaceSubstrate := <
-  SourceSetFamily,
+  SourceSetFamily?,
   SourceSetRef?,
   SearchSpaceRef,
   OutcomeSpaceRef,
@@ -171,13 +171,13 @@ SourceSetSpaceSubstrate := <
 
 Interpret the fields as follows:
 
-- `SourceSetFamily` names the primary declared source-set family that the line is anchored on.
-- `SourceSetRef?` names the concrete declared source set or declared set result when several same-family source sets or set results are live or when one neighboring governing pattern must be cited to keep that identity unique. It may be omitted only when the concrete source set is unambiguous from the declared line.
+- `SourceSetFamily?` names the declared family of the immediate source set and is required for a single-source account. For a composition without a distinguished source, `SourceSetComposition` supplies the source basis by identifying each contributing source, its family and member contribution rule. If the receiving use singles out a primary source, identify that source and retain its family in `SourceSetFamily`.
+- `SourceSetRef?` names the concrete declared source set or set result when its identity would otherwise be ambiguous, including when a neighboring governing pattern supplies that identity. For a composition, recover each contributing set through `SourceSetComposition`; add a separate `SourceSetRef` when the receiving use also depends on the identity of a combined set result. A reference may be omitted only when its intended set is otherwise unambiguous.
 - `SearchSpaceRef` points to one declared `A.19` `CharacteristicSpace` in the search-side position.
 - `OutcomeSpaceRef` points to one declared `A.19` `CharacteristicSpace` in the outcome-side position.
 - `SpaceRefRelationKind` states how those two refs relate. In ordinary use, the token is either `sameDeclaredSpaceAs` or `distinctDeclaredSpaceFrom`.
 - `SourceToOutcomeRelation` identifies the source members or values, target outcome values, direction and relation mode, with the defining map, model, operation or rule in `carrier`. The mode distinguishes a description, projection, prediction, scoring relation or other declared connection; naming it does not establish that its output is accurate or suitable for a receiving use.
-- `DistortionPosture` uses one primary token plus the conditions and limits needed by the receiving use. A primary token does not make the qualifications mutually exclusive: a learned map may also be uncertain and model-dependent. The local tokens include `transparent-for-current-use`, `lossy-bridge`, `metric/model-dependent`, `transition-dependent`, `uncertainty-bearing`, `learned/adaptive`, and `unstable-under-refresh`.
+- `DistortionPosture` states the conditions and limits needed by the receiving use. A primary token may organize this account or satisfy a selected interface requirement. It does not make the qualifications mutually exclusive: a learned map may also be uncertain and model-dependent. The local tokens include `transparent-for-current-use`, `lossy-bridge`, `metric/model-dependent`, `transition-dependent`, `uncertainty-bearing`, `learned/adaptive`, and `unstable-under-refresh`.
 - `SourceSetComposition`, `DerivedViewKind`, and related `...Kind` values remain declaration fields or controlled field values unless some governing pattern explicitly promotes them; they are not automatically independent heads merely because their names end with `Kind`.
 
 The two reference fields designate A.19 spaces. `SpaceRefRelationKind` reports whether their resolved values are the same or distinct under A.19 meaning. Two identifiers or declaration documents may describe the same space; different spellings alone establish no distinction. Recover a changed basis, Scale meaning or other space-defining content before asserting distinctness. This local token field is not itself an A.6.5 reusable relation-kind declaration.
@@ -191,7 +191,7 @@ Treat a line as declared substrate only if one recoverable source-set basis, two
 `SearchSpaceRef` and `OutcomeSpaceRef` must resolve to declared `A.19` `CharacteristicSpace`. They do not become parallel space kinds, slot aliases, or role claims.
 
 **SS-2 - Source-set recoverability is mandatory.**
-The reader must be able to recover not only the source-set family but, when several same-family source sets or set results are simultaneously live, the concrete declared source set or set result through `SourceSetRef?` or one cited neighboring governing pattern that uniquely identifies it.
+The reader must be able to recover the concrete source set and its declared family. For a composition, recover every contributing set, its family and its member contribution rule; identify a primary source only when the receiving use distinguishes one. Use `SourceSetRef`, `SourceSetComposition` or an accessible source that uniquely supplies the needed identities. A family name alone does not resolve several same-family sources.
 
 **SS-3 - Relation requirement must be explicit.**
 `SourceToOutcomeRelation` is conforming when its participants, direction, mode and defining map, model, operation or rule are recoverable. Add an interpretive qualifier only when it changes that relation's use.
@@ -206,7 +206,7 @@ The reader must be able to recover not only the source-set family but, when seve
 Publication metadata, shortlist identity, live-pool policy, and enactment policy remain neighboring decisions. A substrate line may feed them, but it does not decide them.
 
 **SS-7 - Admission is fail-closed.**
-If the source set cannot be recovered, either space ref is unresolved, `SpaceRefRelationKind` cannot be chosen honestly, relation direction, mode, or carrier remains vague, or posture remains unclassified, then the complete substrate claim is not established. Preserve the recovered source and space facts, state the missing basis and withhold only the use that depends on it. Use the applicable subject pattern when it can supply the missing result.
+If the source basis cannot be recovered, either space ref is unresolved, `SpaceRefRelationKind` cannot be chosen honestly, relation direction, mode or carrier remains vague, or a qualification needed by the receiving use is unresolved, then the complete substrate claim is not established. Preserve the recovered source and space facts, state the missing basis and withhold only the use that depends on it. Use the applicable subject pattern when it can supply the missing result.
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:4.4 - Profiles
 
@@ -224,15 +224,15 @@ Use one of these ordinary profiles:
 When declaring one substrate-bearing line, proceed in this order:
 
 0. **Entry test.** Confirm that the line really needs source-set plus search/outcome-space plus relation/posture discipline. If it only needs `CharacteristicSpace` typing, use `A.19`. If it only needs publication or policy, apply the governing pattern that carries that publication or policy question.
-1. **Recover the active source set.** State `SourceSetFamily`. If several same-family source sets or set results are simultaneously live, fill `SourceSetRef?` or cite the neighboring governing pattern that makes that identity unique.
+1. **Recover the source basis.** For one immediate source set, state its family and recover its identity. For a composition, use `SourceSetComposition` to identify every contributing set, its family and how its members contribute; designate a primary source only when the receiving use singles one out. Add `SourceSetRef` or cite a source when needed to make an identity unique.
 2. **Recover the space refs.** Point `SearchSpaceRef` and `OutcomeSpaceRef` to already-declared `CharacteristicSpace`.
 3. **Choose the ref-to-ref relation kind.** Declare `sameDeclaredSpaceAs` when both references resolve to the same A.19 space by value, and `distinctDeclaredSpaceFrom` when their defining contents establish distinct values. If that identity question is unresolved, retain the uncertainty rather than inferring difference from two declarations.
 4. **State the source-to-outcome relation.** Give direction, mode, and carrier explicitly. If one named `OutcomeMapRef` or another declared interpretive qualifier carries the relation, cite that qualifier explicitly. Otherwise state the relation definition or supplying operation directly in prose.
-5. **State the qualifications.** Identify the loss, model or metric dependence, transition dependence, uncertainty, adaptation or refresh limit that affects the use. A transparency claim needs its own basis. Select a primary token and retain every other material condition in the account.
+5. **State the qualifications.** Identify the loss, model or metric dependence, transition dependence, uncertainty, adaptation or refresh limit that affects the use. A transparency claim needs its own basis. Retain every material condition; use a primary token when useful for indexing or required by a selected interface.
 6. **Add only the fields that are really doing work.** Add composition, derived-view, base-palette, metric, transition, or bridge qualifiers only when the current case actually depends on them.
 7. **Run the boundary check.** If the line starts deciding publication metadata, shortlist identity, live candidate policy, enactment policy, or interpretive-view organization, stop and apply the pattern that governs that question.
 
-**Fail-closed rule.** Do not treat the line as declared substrate if any of steps 1-5 remains unresolved. Incomplete recovery is a real defect here, not one stylistic omission.
+**Incomplete-account result.** An unresolved requirement in steps 1-5 leaves the complete substrate claim unestablished. Apply SS-7: preserve what is known and withhold only uses that require the missing basis. A declared uncertainty is a qualification to preserve, not by itself a failure to identify the substrate.
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:4.6 - Canonical rewrite forms
 
@@ -240,13 +240,11 @@ The §4.2 schema can express either profile: both space references may resolve t
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:4.7 - Conditional fields stay conditional
 
-Use `SourceSetComposition` only when the line genuinely consumes several declared source sets.
+Use `SourceSetComposition` when the account consumes several declared source sets. Identify each contributing set and its family, and state how its members enter the source basis, such as a union or specified subsets when that is the actual construction.
 
-When composition is active:
+For a single immediate source, `SourceSetFamily` remains required. For a composition, retain a primary source and its family only when the receiving use distinguishes one. Otherwise the recoverable composition supplies the source basis without inventing a primary family. Neither branch silently changes any contributing set's identity or family.
 
-- `SourceSetFamily` still names the primary family the line is anchored on;
-- `SourceSetComposition` identifies the additional declared source sets and how their members contribute to this substrate, such as a union or selected subsets when that is the actual construction;
-- the composition field does not replace the primary family, and it does not silently retitle the whole line as one different source kind.
+For example, a comparison may consume the union of declared `Front-F` and `Archive-A` without privileging either. `SourceSetComposition` identifies both sets, their families and the union. No primary `SourceSetFamily` is required; both space refs and the source-to-outcome rule apply to that declared source basis.
 
 Use `DerivedViewKind` only when one derived view is materially active and the reader must be able to recover that derivation.
 
@@ -263,7 +261,7 @@ Use them when:
 - one `TransitionRelationRef` really disciplines dynamic coupling or transfer;
 - or one bridge-loss note is the relevant reason the relation is qualified.
 
-Do not make those interpretive qualifiers the semantic center of the substrate. They help explain the relation; they do not replace the line made explicit by `SourceSetFamily`, `SourceSetRef?`, `SearchSpaceRef`, `OutcomeSpaceRef`, and the declared relation/posture pair.
+These qualifiers help explain the relation. They do not replace the recoverable source basis, the search-side and outcome-side spaces, or the declared relation and its applicable limitations. The source basis may be one set or the composition described in §4.7.
 
 The substrate cites the qualifier definition on which it relies. A later view may introduce its own representational qualification; distinguish that view claim from a change to the source-to-outcome relation. If the underlying relation changes, revise its declaration and recheck dependent uses.
 
@@ -303,7 +301,7 @@ Once the substrate is declared, select the neighboring pattern for the remaining
 - Use `G.2` when that interpretation becomes palette-first, tradition-facing atlas work. Keep the base palette and the cited substrate recoverable while doing it.
 - Use `A.6.P` when one passage collapses source set, space ref, interpretive view, atlas view, or map/ref wording into one umbrella word. Repair the wording back to the substrate declaration before adding more theory.
 - Use `F.18` when the problem is label choice or naming-side comparison around this stack. Naming notes may explain why one head is better named; they do not settle the substrate relation.
-- Use `A.0` when the task is cold-reader glossing of these tokens. Glosses help recognition; they do not replace the declaration block.
+- Use `A.0` when the task is cold-reader glossing of these tokens. Glosses explain the terms; the source, spaces, relation and limitations required by §4.2 must still be recoverable from the account.
 
 If a neighboring use needs a changed source-to-outcome relation or qualification, revise the declaration and reconsider the conclusions that depend on the change. Reuse unaffected content.
 
@@ -311,9 +309,9 @@ If a neighboring use needs a changed source-to-outcome relation or qualification
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:5.1 - System
 
-**Tell.** One QD line keeps saying that one archive is both the search-side role and the evaluation basis. Downstream readers need to see that the same declared `CharacteristicSpace` can still occupy two different role positions without turning the archive or the descriptor layer into the space itself.
+One QD line keeps saying that one archive is both the search-side role and the evaluation basis. Downstream readers need to see that the same declared `CharacteristicSpace` can still occupy two different role positions without turning the archive or the descriptor layer into the space itself.
 
-**Show.** In this constructed case, `Archive-12` is the selected candidate set. The declared descriptor map assigns behavior Coordinates to its members; the separately declared neighborhood metric is used to assess coverage in that same behavior space.
+In this constructed case, `Archive-12` is the selected candidate set. The declared descriptor map assigns behavior Coordinates to its members; the separately declared neighborhood metric is used to assess coverage in that same behavior space.
 
 ```text
 SourceSetFamily       = Archive
@@ -332,13 +330,12 @@ DistanceDefRef          = ArchiveNeighborhoodDistance@ed=4
 SpaceMetricRef          = ArchiveNeighborhoodMetric@ed=4
 ```
 
-**Cash-out.** The archive supplies the candidate members; both space references resolve to the same declared `CharacteristicSpace`. The descriptor map assigns Coordinates, and the distance and metric define the stated coverage comparison. Selection or archive maintenance can reuse these relations while keeping the archive distinct from the space.
+The archive supplies the candidate members; both space references resolve to the same declared `CharacteristicSpace`. The descriptor map assigns Coordinates, and the distance and metric define the stated coverage comparison. Selection or archive maintenance can reuse these relations while keeping the archive distinct from the space.
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:5.2 - Episteme
 
-**Tell.** One synthesis line presents one derived tradition front and then starts speaking as if the visible front were the default meaning of the whole palette.
+One synthesis line presents one derived tradition front and then starts speaking as if the visible front were the default meaning of the whole palette.
 
-**Show.**
 
 ```text
 SourceSetFamily        = Front
@@ -355,15 +352,15 @@ DistortionPosture      = metric/model-dependent; the estimate is conditional on 
                          team and workload facts and omits unmodelled adoption effects
 ```
 
-**Cash-out.** The visible front stays a derived view over the recoverable palette. `AdoptionEstimate@ed=1` supplies the stated conditional source-to-outcome mapping. A later interpretive or atlas view may reorganize the presentation while preserving that mapping and its model limitations.
+The visible front stays a derived view over the recoverable palette. `AdoptionEstimate@ed=1` supplies the stated conditional source-to-outcome mapping. A later interpretive or atlas view may reorganize the presentation while preserving that mapping and its model limitations.
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:5.3 - Boundary anti-case
 
-**Tell.** One note says only that "the shortlist front is the published result for the current selector result" and names no source-to-outcome relation, no search-side space, no outcome-side space, and no posture.
+One note says only that "the shortlist front is the published result for the current selector result" and names no source-to-outcome relation, no search-side space, no outcome-side space, and no posture.
 
-**Show.** This is not a substrate declaration. It is publication metadata over one already-selected set.
+This is not a substrate declaration. It is publication metadata over one already-selected set.
 
-**Cash-out.** Apply `G.5` or `G.10` to that note. Do not pad it with pseudo-substrate words just to make it look deeper than it is.
+Apply `G.5` or `G.10` to that note.
 
 #### A.19.SOURCE-SET-SPACE-SUBSTRATE:5.4 - Use-situation spread
 
@@ -371,9 +368,9 @@ Use the pattern this way across different working situations:
 
 | Working situation | What to do with this pattern | What must stay explicit | Common miss avoided |
 | --- | --- | --- | --- |
-| Archive-side QD line where navigation and evaluation stay in one declared behavior space | Use the shared-space profile. Fill the six core fields, then add descriptor/metric qualifier only if active. | `Archive` as source set, both role-refs, `sameDeclaredSpaceAs`, and the active posture. | Treating the archive or descriptor layer as if it were the space itself. |
-| Derived tradition/front line that is judged against one different outcome space | Use the cross-space profile and keep `DerivedViewKind` plus `BasePaletteRef` visible. | The derived view stays derived, the base palette stays recoverable, and the cross-space relation stays explicit. | Letting the visible front replace the base palette or hiding the adoption model's limitations. |
-| Learned, adaptive, or uncertainty-bearing line where the space declaration is real but heavier qualification is still case-bound | Keep the substrate core explicit and choose the honest posture token such as `uncertainty-bearing`, `learned/adaptive`, or `unstable-under-refresh`. | The reader can see that the substrate is real without being promised fake geometric closure. | Pretending every serious case is either fully transparent or fully described by one metric stack. |
+| Archive-side QD line where navigation and evaluation stay in one declared behavior space | Use the shared-space profile. Recover the source basis, both space uses, their same-space relation, the source-to-outcome connection and its limitations; add descriptor/metric qualifiers when used. | The archive as source set, both role-refs, the same declared space and applicable qualifications. | Treating the archive or descriptor layer as if it were the space itself. |
+| Derived tradition/front line that is judged against one different outcome space | Use the cross-space profile. Keep the derivation and base palette recoverable where the receiving use depends on them; add `DerivedViewKind` and `BasePaletteRef` when needed or required by its selected publication contract. | The derived view stays derived, the needed base palette remains recoverable, and the cross-space relation stays explicit. | Letting the visible front replace the base palette or hiding the adoption model's limitations. |
+| Learned, adaptive, or uncertainty-bearing line where the space declaration is real but heavier qualification is still case-bound | Keep the substrate core recoverable and state the uncertainty, adaptation or refresh conditions that affect the receiving use. Add a posture token when the selected interface requires it. | The reader can distinguish the declared substrate from unresolved accuracy, applicability or stability claims. | Pretending every serious case is either fully transparent or fully described by one metric stack. |
 | Shortlist or publication note that only says what set result or publication form is shown or shipped | Do not use this pattern. Apply `G.5` or `G.10` directly. | The note stays publication-facing instead of imitating substrate depth. | Padding publication metadata with pseudo-substrate language. |
 
 ### A.19.SOURCE-SET-SPACE-SUBSTRATE:6 - Bias-Annotation
@@ -390,14 +387,14 @@ Apply these declaration checks to the claims and qualifiers actually used:
 | ID | Check question | Fail when | Repair or governing pattern |
 | --- | --- | --- | --- |
 | `CC-A19SS-1` | Is the line really declaring one substrate-bearing relation rather than only `CharacteristicSpace`, publication metadata, or policy? | The line only names a space object, or only publishes, ships, or retains something, with no explicit source, ref, relation, or posture stack. | Move to `A.19`, `G.5`, `G.10`, `C.19`, or `C.24` as appropriate. |
-| `CC-A19SS-2` | Is the active source set recoverable enough for the current case? | Only a vague family word such as `front` or `archive` remains, and several same-family source sets or set results are live with no way to tell which one is meant. | Add the concrete declared source set or set result id or cite the neighboring governing pattern that makes the source/set-result unique. |
+| `CC-A19SS-2` | Is the source basis recoverable for the current case? | A contributing set, its family or its member contribution rule is ambiguous, or a primary source is invented for a composition that distinguishes none. | Recover each set identity and family and any actual composition under §4.7; use refs or accessible defining sources as needed. |
 | `CC-A19SS-3` | Do `SearchSpaceRef` and `OutcomeSpaceRef` both resolve to declared `A.19` `CharacteristicSpace`, and is `SpaceRefRelationKind` explicit? | One or both refs are vague, or the line leaves the same-space versus cross-space question to inference. | Restore the two refs and declare `sameDeclaredSpaceAs` or `distinctDeclaredSpaceFrom` explicitly. |
-| `CC-A19SS-4` | Is the source-to-outcome relation explicit in direction, mode, and carrier? | The line hides the relation in one umbrella phrase such as `projection`, `portfolio`, or `maps into`, with no explicit carrier. | Rewrite into the canonical substrate form and state direction, mode, and carrier. |
-| `CC-A19SS-5` | Is the active qualification posture explicit and honest? | The line is qualified in effect, but the posture is unstated or all non-transparent cases are blurred into one generic loss story. | Declare the governing posture token and any needed note; if that cannot be done honestly, keep the line informative only. |
+| `CC-A19SS-4` | Is the source-to-outcome relation explicit in its participants, direction, mode and defining basis? | The relation remains hidden in an umbrella phrase with no recoverable map, model, operation or rule. | State the participants, direction, mode and defining basis directly or cite where they can be recovered. |
+| `CC-A19SS-5` | Are the relevant qualifications explicit and supported for the claimed use? | Material limits are missing, or different qualified cases are blurred into one generic loss story. | State the qualifications and the basis needed by that use. If needed support is missing, retain the established content and withhold only the dependent conclusion; a primary token is required only by a selected interface. |
 | `CC-A19SS-6` | Are conditional and qualifier fields used only when they really do work? | Composition, derivation, base-palette, declared map ref, metric, transition, or bridge qualifiers are fabricated everywhere or silently become core. | Remove unused qualifiers; keep only the fields the current case actually depends on. |
 | `CC-A19SS-7` | If `DescriptorMapRef` or `DistanceDefRef` is active, does the text say they realize or qualify the relation rather than replace the space ref? | The representation or metric layer is treated as if it were the declared search-side or outcome-side space. | Re-state the docking rule and keep the two space refs visible. |
 | `CC-A19SS-8` | Does the line stay out of publication and policy work? | The prose starts deciding shortlist identity, selector outcome, shipping closure, or live-pool/enactment policy. | Split the line and move those downstream decisions to their governing patterns. |
-| `CC-A19SS-9` | Can the line be rewritten into one canonical substrate form without invention? | The line still depends on hidden assumptions or unresolved candidates. | Keep it as a working gloss or repair the missing recovery before reuse. |
+| `CC-A19SS-9` | Can the account establish the substrate claim needed by the current use without inventing facts? | A required source identity, space resolution, relation or material qualification remains unsupported. | Return the recovered components and the missing basis; withhold the complete claim and only uses that depend on that gap. |
 | `CC-A19SS-10` | Could a cold reader take the next lawful declaration step from this line without surrounding memo help? | The line still speaks only in umbrella words such as `space`, `projection`, or `portfolio`, and the reader cannot tell what to fill next. | Use the declaration sequence in §4.5 and recover the needed content from §4.2 before reuse. |
 | `CC-A19SS-11` | When the next question is interpretive-view, publication, or policy, is the next governing pattern explicit? | The text keeps talking as if substrate, interpretation, publication, and policy were one layer, so the reader cannot tell where to continue. | Split the line and cite `A.19.DECLARED-SUBSTRATE-INTERPRETIVE-VIEW`, `G.5`, `G.10`, `C.19`, or `C.24` as the next governing pattern. |
 | `CC-A19SS-12` | Does the current use claim only the breadth its declared posture and qualifiers actually license? | The prose implies universal geometric closure or one universal heavy-qualification story, but the declared posture or qualifiers stay narrower, uncertain, learned/adaptive, or case-bound. | Narrow the claim explicitly or add the missing posture/interpretive qualifiers that make the broader claim honest. |
@@ -406,7 +403,7 @@ Apply these declaration checks to the claims and qualifiers actually used:
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| Treating one archive or front as the search space itself | A source set is not the same kind as one declared `CharacteristicSpace`. | Keep `SourceSetFamily` and `SearchSpaceRef` separate. |
+| Treating one archive or front as the search space itself | A source set is not the same kind as one declared `CharacteristicSpace`. | Keep the source-set identity and family, or its actual composition, separate from `SearchSpaceRef`. |
 | Leaving `SpaceRefRelationKind` implicit | The reader then has to guess whether search and outcome share one declared space or use two distinct declared spaces. | Declare `sameDeclaredSpaceAs` or `distinctDeclaredSpaceFrom` next to the two refs. |
 | Letting `DescriptorMapRef` stand in for the whole substrate | A representation layer is not identical to the position-typed space declaration. | State the docking rule explicitly and keep the space refs visible. |
 | Making `SourceSetComposition` or `DerivedViewKind` mandatory in every line | The line fabricates composition or derivation where none exists. | Keep them conditional. |
@@ -444,10 +441,9 @@ That is why this pattern stops before interpretive views and before publication 
 
 | SoTA practice | Primary source(s) | Practice demand disciplined here | Practical safeguard bought | Adoption stance |
 | --- | --- | --- | --- | --- |
-| The cited multilevel-evolutionary work offers a comparison for relating descriptions across levels. | Vanchurin (2026) on generally covariant evolutionary dynamics; Warrell et al. (2024) on unified multilevel evolutionary frameworks. | `SS-0`, `SS-2`, `CC-A19SS-1`, `CC-A19SS-2`. | Keeps one neutral substrate beside `A.19`, so one archive, front, or publication face cannot silently stand in for the whole substrate declaration load. | **Adapt.** Keep one neutral substrate, but bind it to FPF declaration discipline. |
-| The cited QD work distinguishes feature/behavior space, quality/objective side, archive/repertoire set results, and local competition rather than treating one vague "space" as enough. | 2026 QD review; IJCAI 2024 stepping-stone results; MOUR-QD (2025). | `SS-1`, `SS-3`, `CC-A19SS-3`, `CC-A19SS-4`, worked slices `5.1` and `5.2`. | Forces search-side ref, outcome-side ref, and source-to-outcome relation to stay explicit, so downstream search/evaluation claims remain auditable. | **Adopt/Adapt.** Adopt the split; adapt it to FPF declared-source-set discipline. |
-| The cited QD and adjacent work considers learned, adaptive, unstructured, and uncertainty-bearing spaces and qualifiers, so one heavy metric or transition stack should not be assumed everywhere. | Uncertain Quality-Diversity (2023); Extract-QD (2025); later adaptive-space and meta-competition lines. | `SS-4`, `SS-5`, `CC-A19SS-5`, `CC-A19SS-6`. | Makes uncertainty posture explicit while keeping declared map ref, metric, transition, and bridge-loss pins optional unless the case truly depends on them. | **Adopt/Adapt.** Adopt uncertainty honesty and optional heavier qualifiers; reject mandatory geometric monoculture. |
-| Atlas and manifold-qualifier lines are useful in some cases, but they are not the default meaning of every source-set/space-substrate line. | UMAP 2024 review; 2024-2025 atlas and manifold-optimization lines. | `SS-5`, `SS-6`, boundary anti-case `5.3`, `CC-A19SS-8`. | Preserves substrate semantics so later interpretive or atlas views can help interpretation without quietly becoming the ontology. | **Adapt.** Keep atlas-form interpretation as a later specialization, not the substrate's ordinary center. |
+| Evolutionary models relate genotype and phenotype descriptions or model selection across several levels. | [Vanchurin, *Geometric framework for biological evolution* (2026)](https://arxiv.org/abs/2603.15198); [Warrell et al., *Variational methods for Learning Multilevel Genetic Algorithms using the Kantorovich Monad* (2024)](https://arxiv.org/abs/2411.09779). | `SS-0`, `SS-2`, `CC-A19SS-1`, `CC-A19SS-2`. | Provides comparisons for making the represented objects and their connecting relations explicit. | **Adapt.** These are subject-specific mathematical constructions; the source-set declaration rules here are an FPF adaptation. |
+| MOUR-QD distinguishes candidate solutions, feature descriptions, objective values and an archive with local Pareto comparisons. | [Janmohamed and Cully, *Multi-Objective Quality-Diversity in Unstructured and Unbounded Spaces* (2025), Introduction and §2](https://arxiv.org/html/2504.03715v1). | `SS-1`, `SS-3`, `CC-A19SS-3`, `CC-A19SS-4`, worked cases `5.1` and `5.2`. | Keeps the source members, space uses and source-to-outcome relation distinguishable. | **Adopt/Adapt.** Preserve the subject distinctions; express the needed references and relations under FPF. |
+| Feature spaces may be learned or unstructured, while uncertain QD may require distributions of fitness and descriptor values rather than single deterministic values. | [Janmohamed and Cully (2025), Introduction and §2](https://arxiv.org/html/2504.03715v1); [Flageat et al., *Extract-QD Framework: A Generic Approach for Quality-Diversity in Noisy, Stochastic or Uncertain Domains* (2025), Introduction and §2.2](https://arxiv.org/html/2502.06585v1). | `SS-4`, `SS-5`, `CC-A19SS-5`, `CC-A19SS-6`. | Makes the applicable uncertainty and model limits explicit without prescribing one metric or transition model for every use. | **Adopt/Adapt.** Retain the stated qualifications; select additional models and references for the actual receiving use. |
 
 ### A.19.SOURCE-SET-SPACE-SUBSTRATE:12 - Relations
 

@@ -29,7 +29,7 @@ FPF repeatedly needs to relate one exact episteme to another, often alongside a 
 * turning an informal method description into a more formal specification;
 * projecting a large system description into a smaller “for‑safety‑officer” view;
 * re‑expressing the same behavioural model in a different calculus or notation;
-* relating an analysis about one subsystem to an analysis about another, with the separate bounded-use assertion and current-case judgement required by A.6.4.
+* relating an analysis about one subsystem to an analysis about another; use A.6.4 for a claimed receiving use and for judging a current case against its bounded-use assertion.
 
 All of these can be described by **episteme-to-episteme mathematical arrows**. The arrow relates exact epistemes and states its laws; it does not itself change an episteme, measure, execute, or actuate. Any operation application and Work remain separate.
 
@@ -55,15 +55,15 @@ Concretely, without EFEM:
 4. **Slot/Ref confusion.**
    C.2.1 identifies an episteme through exact claim content, one exact EntityOfConcern, and one effective ReferenceScheme. A.6.5 SlotSpecs apply only inside an exact reusable relation declaration. Laws for projection or retargeting that rely on unnamed fields or tuple positions therefore hide which parts of the source and receiving epistemes are being compared and which separately obtaining facts the rule reads.
 
-The result: engineers and tool builders can no longer tell whether a mathematical relation keeps the same EntityOfConcern, identifies a different receiving one, or merely accompanies an operation. When the endpoints concern different entities, they also need a separate A.6.4 bounded-use assertion and a current-case judgement of whether the exact facts satisfy it.
+The result: engineers and tool builders can no longer tell whether a mathematical relation keeps the same EntityOfConcern, identifies a different receiving one, or merely accompanies an operation. For a receiving-use claim about an arrow whose endpoints concern different entities, state the separate A.6.4 bounded-use assertion. When judging a current case, compare its exact facts with that assertion.
 
 ### A.6.2:3 - Forces
 
 * **Epistemic purity vs operational power.**
-  Effect-free episteme arrows are useful because their laws can be reasoned about algebraically and composed. If a use needs I/O, solver calls, measurements, or another effect, identify the operation application and Work separately instead of giving that activity to the arrow.
+  Effect-free episteme arrows are useful because their laws can be reasoned about algebraically and composed. If a use needs I/O, solver calls, measurements, or another effect, describe the needed activity separately. Identify any actual A.6.1 application when its declaration applies and any `U.Work` only under its independent admission conditions.
 
 * **Preserve vs retarget.**
-  A viewing arrow has endpoint epistemes with the same EntityOfConcern; a retargeting arrow has independently different ones. A separate A.6.4 bounded-use assertion states the invariant, visible loss, receiving use, conditions, and affirmative or negative polarity. A current-case judgement separately reports `satisfies`, `fails`, or `cannot decide` from exact facts.
+  A viewing arrow has endpoint epistemes with the same EntityOfConcern; a retargeting arrow has independently different ones. For a claimed receiving use, a separate A.6.4 bounded-use assertion states the invariant, visible loss, receiving use, conditions, and affirmative or negative polarity. When a current case is judged, compare its exact facts with that assertion and report `satisfies`, `fails`, or `cannot decide`.
 
 * **Conservativity vs usefulness.**
   EFEM should be **conservative**: no new commitments about the EntityOfConcern beyond what the identified source ClaimGraphs and exact admitted facts license under the named schemes. The receiving ClaimGraph may factor, aggregate, normalize, or re-express source content and may use a different representation when the loss and interpretation rule are explicit. Any operation or Work that produces that receiving episteme remains separate.
@@ -100,7 +100,7 @@ The ordinary FPF objects remain separate:
 * a current-case judgement separately compares exact facts with `q` and returns `satisfies`, `fails`, or `cannot decide`;
 * an operation application and any Work that computes, authors, or changes an episteme are identified only when they actually occur.
 
-The A.6.3 viewing branch has endpoint epistemes about the same EntityOfConcern. The A.6.4 retargeting branch has endpoints about independently different entities and adds the separate bounded-use assertion `q` and current-case judgement defined above.
+The A.6.3 viewing branch has endpoint epistemes about the same EntityOfConcern. The A.6.4 retargeting branch has endpoints about independently different entities. A receiving-use claim adds the separate bounded-use assertion `q`; a judgement about a current case tests its facts against `q`.
 
 #### A.6.2:4.2 - Direct signature components (A.6.0 alignment)
 
@@ -186,7 +186,7 @@ An EFEM arrow may omit claims or conservatively reorganize and re-express them. 
 
 A separately obtaining edition, provenance, evidence, or status relation remains outside episteme identity. If the arrow family compares such a relation across X and Y, name the exact predicate and participants on each side. The arrow records that comparison; it does not create or update the relation. If Y asserts the relation, that assertion is identity-bearing `content_Y` and must pass the same source-to-result trace as every other assertion.
 
-Where `entityOfConcernChangeMode(f) = retarget`, the arrow declaration states its formal cross-entity correspondence; it does not itself establish conservativity for a receiving use. A separate A.6.4 bounded-use assertion `q` states the invariant, visible loss, receiving use, conditions, and polarity, and a current-case judgement separately tests the exact facts. An ordinary time-to-frequency representation of the same signal instead routes through A.6.3.RT; apply C.29 when the case also makes a mathematical-lens-use claim. A Fourier relation enters a retargeting case only after C.2.1 independently identifies a different receiving EntityOfConcern.
+Where `entityOfConcernChangeMode(f) = retarget`, the arrow declaration states its formal cross-entity correspondence; it does not itself establish conservativity for a receiving use. For a claimed receiving use, a separate A.6.4 bounded-use assertion `q` states the invariant, visible loss, receiving use, conditions, and polarity. When judging a current case, test its exact facts against `q`. An ordinary time-to-frequency representation of the same signal instead routes through A.6.3.RT; apply C.29 when the case also makes a mathematical-lens-use claim. A Fourier relation enters a retargeting case only after C.2.1 independently identifies a different receiving EntityOfConcern.
 
 ##### A.6.2:4.3.4 - P3 — Category structure and EntityOfConcern mapping
 
@@ -226,7 +226,7 @@ On objects, `α(X)` is the exact EntityOfConcern resolved through `entityOfConce
 
    A preserve-only or retarget-only subtype is not thereby closed under parent composition. A composite remains in that subtype only when its final mode and all additional subtype laws match; otherwise it remains an EFEM arrow in the parent class. When a receiving-use claim is made, a separate `q` states the final-use invariant, accumulated visible loss, receiving use, conditions, and polarity; a separate current-case judgement tests the final facts.
 
-3. **Scheme-aware composition.** If endpoint RepresentationSchemes or effective ReferenceSchemes differ, name the exact correspondence used by each route under its direct governor and state the equality or declared equivalence that makes the two routes agree. A.6.3.RT governs a same-EntityOfConcern representation-scheme transition; C.29 governs any mathematical-lens use. A scheme difference alone establishes neither. Use `natural`, `oplax`, or similar terminology only when the substrate supplies the actual mapping, comparison arrow, diagram, and working probe. Otherwise state the required two-route agreement in ordinary language. Any witness episteme remains separately identified.
+3. **Scheme-aware composition.** If endpoint RepresentationSchemes or effective ReferenceSchemes differ, name the exact correspondence used by each route under its direct governor and state the equality or declared equivalence that makes the two routes agree. A.6.3.RT governs a same-EntityOfConcern representation-scheme transition; C.29 governs any mathematical-lens use. A scheme difference alone establishes neither. Use `natural`, `oplax`, or similar terminology only when the substrate supplies the mappings and comparison structure required by that term and the claimed laws are established by a proof or an applicable formal check. Otherwise state the required two-route agreement in ordinary language. Any witness episteme remains separately identified.
 
 ##### A.6.2:4.3.5 - P4 — Arrow and repeat boundary
 
@@ -253,12 +253,12 @@ The examples below show how EFEM is intended to be used across the EntityOfConce
 
 #### A.6.2:5.1 - Typed specification-use refinement `Specify_DescEp_SpecDesc` (species of EFEM)
 
-*Context.* You have a `U.MethodDescription` for a safety check and want a more formal `U.MethodSpec` with checkable constraints or test-harness obligations about the same Method. Before calling the relation conservative, identify the exact claims that already support those constraints.
+*Context.* You have a `U.MethodDescription` for a safety check and want a more formal description of the same Method for a named specification use, with checkable constraints or test-harness obligations. Before calling the relation conservative, identify the exact claims that already support those constraints.
 
 *Shape.*
 
 * Domain: exact episteme `X : U.MethodDescription` with `entityOfConcernRef(X) : U.MethodRef`, its complete content `content_D = content(X)`, and effective rules `scheme_D = referenceScheme(X)`; when the named engineering validation use selects viewpoint P, identify that selection separately.
-* Codomain: exact episteme `Y : U.MethodSpec` concerning the same Method, with `content_S = content(Y)` and `scheme_S = referenceScheme(Y)`. Recover whether the effective rules stay the same or change; writing an existing rule more explicitly does not itself change it. If the same named validation use continues, it preserves its selected viewpoint P separately.
+* Codomain: exact episteme Y concerning the same Method and admitted for the named specification use, with `content_S = content(Y)` and `scheme_S = referenceScheme(Y)`. Recover whether the effective rules stay the same or change; writing an existing rule more explicitly does not itself change it. If the same named validation use continues, it preserves its selected viewpoint P separately.
 
 The suffixes D and S distinguish these endpoint values. They declare no constituent kinds. Judge endpoint admissibility under the relevant description and specification-use criteria, compare complete identity under C.2.1, and test P2 separately. A checkable new requirement can satisfy the receiving specification-use conditions while changing the episteme and failing conservativity.
 
@@ -266,7 +266,7 @@ The suffixes D and S distinguish these endpoint values. They declare no constitu
 
 * `entityOfConcernChangeMode(Specify_DescEp_SpecDesc) = preserve`. The shared Method establishes endpoint EntityOfConcern equality; the Method entity itself is not a logical premise.
 * P1 — effect-free: it is the declared arrow between the two epistemes; any operation application that produces Y is separate.
-* P2 — conservative: every behavioral claim, constraint, and test obligation in Y traces to exact claims in X, an additional named source episteme, or an independently current fact under its named relation and effective scheme.
+* P2 — conservative: every assertion in Y, including behavioral claims, constraints, and test obligations, traces to exact claims in X, an additional named source episteme, or an independently current fact under its named relation and effective scheme.
 * P3-P5 — category structure and scope: the declared arrows compose only when their exact endpoints and P3 mappings agree. P5 includes the named engineering scope, operating conditions, effective scheme, or selected viewpoint in the formal domain only insofar as the arrow law depends on them. Keep separately any such condition or viewpoint that changes the named validation or receiving-use claim.
 
 If an author chooses a new threshold, acceptance condition, harness obligation, or other commitment not supported by that basis, Y has been strengthened and the proposed arrow fails P2. Identify the new assertion in Y's changed ClaimGraph. When a particular application or Work accounts for that strengthening, identify that occurrence and the direct production relation separately. The new assertion remains outside the conservative arrow; the application, Work, and production relation account for its origin.
@@ -300,8 +300,8 @@ MVPK can reuse the EFEM laws for these normalization arrows. Claim the relevant 
 Inside EFEM, this becomes a species with `entityOfConcernChangeMode = retarget`:
 * the source episteme describes the physical assembly `S₁`;
 * the receiving episteme describes the independently identified functional network `S₂`;
-* one exact arrow `r` relates the two endpoint epistemes under its declared formal rule; a separate A.6.4 assertion `q` states the invariant, visible loss, bounded receiving use, conditions, and polarity; and a current-case judgement separately tests the exact facts;
-* P2 checks only the formal consequence relation declared for `r`; the ordinary current-case judgement tests the exact facts against `q`, and A.20 enters only when that proposition is an internal constraint.
+* one exact arrow `r` relates the two endpoint epistemes under its declared formal rule; for a claimed receiving use, a separate A.6.4 assertion `q` states the invariant, visible loss, bounded receiving use, conditions, and polarity; when a current case is judged, its exact facts are tested against `q`;
+* P2 checks only the formal consequence relation declared for `r`; when a current case is judged, the ordinary judgement tests its exact facts against `q`, and A.20 enters only when that proposition is an internal constraint.
 
 The details belong to A.6.4 and E.18; EFEM provides the generic discipline.
 
@@ -327,13 +327,13 @@ Two typical EFEM species over this kind are:
 * `Normalize_EngView` — a family of view-normalisation EFEM arrows `n_X : X -> Y` between exact `U.View` epistemes (again with `EntityOfConcernChangeMode = preserve`) that:
   * states how the formal relation uses the three C.2.1 identity values and makes the exact source-to-receiving ClaimGraph difference explicit; any difference between separately obtaining endpoint facts that it compares is named by the exact predicate and participants, and any normalization application remains separate;
   * is effect-free. A repeat claim identifies the next arrow `n_Y : Y -> Z` under the same rules, establishes `Z = Y` under C.2.1, and witnesses `compose(n_Y, n_X) ≃ n_X` under the declared arrow equivalence, as in §5.2;
-  * is conservative (P2) by construction: it never introduces new atoms about the selected system.
+  * is conservative (P2): every assertion in Y is recoverable from the identified source ClaimGraphs and admitted facts under the declared schemes, including any assertion about edition, provenance, or evidence.
 
 Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specification-use idioms state explicitly, under C.2.1:7.1 and `CC-EFEM.*`, which of the three C.2.1 endpoint values remain the same or differ and which exact separately obtaining relation occurrences their arrow rules read or compare.
 
 ### A.6.2:6 - Bias-Annotation
 
-* **Episteme‑first, world‑second.** EFEM relates epistemes as mathematical objects. For measurement or execution, identify the capable system, the A.6.1 application when current, the Work it performs, the resulting episteme, and any production relation separately.
+* **Episteme-first, world-second.** EFEM relates epistemes as mathematical objects. For a claim about actual measurement or execution, identify the capable system, the A.6.1 application when its declaration applies, any independently admitted Work, and any resulting episteme or obtaining production relation separately.
 
 * **Actual values, not unnamed fields.** Laws name the exact claim content, EntityOfConcern, and effective ReferenceScheme they use and keep empirical grounding, representation, view conformance, and describing-use viewpoint selection separate. A SlotKind is mentioned only when the exact reusable relation declaration is current.
 
@@ -352,7 +352,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
 | **CC‑EFEM.5 (Category structure and repeat claims).** | Each arrow family names its exact endpoints, arrow rule or designator, declared equivalence, identity and composition conditions. Claim category `Ep` and mapping `α` only when identities and every matching composition close. The resolved endpoint EntitiesOfConcern uniquely determine the thin-base arrow `α(f)`, but they do not identify f itself. A retargeting round trip maps to the thin-base identity and is reclassified from its final endpoints. Idempotence or another self-composition claim requires an endomorphism whose declared domain makes composition meaningful, with its equivalence and witness stated. The normalization repeat claim in §5.2 instead names successive composable arrows and witnesses its stated endpoint equality and composite equivalence. Any evaluation operation, deterministic-execution claim, or repeat claim about an operation application is separate and follows that operation's rule. |
 | **CC‑EFEM.6 (Formal domain and separate use conditions).** | Each arrow family SHALL state its allowed endpoint EntityOfConcern kinds, any endpoint facts or grounding relations its formal rule reads, admitted schemes and correspondences, and any ClaimScope constraint required by the arrow law. When a receiving-use claim is made, use-specific scope, operating conditions, or selected viewpoint enter `q` only when they change its invariant, visible loss, receiving use, or conditions; `q` carries polarity, and the separate current-case judgement tests exact facts. When the use also relies on an obtaining Bridge between two exact F.17 local senses, cite F.9 and its separate bounded-use claim; when it crosses a ReferencePlane, cite the applicable plane relation. No context, scheme, plane, or operating-condition difference creates either relation automatically. |
 | **CC‑EFEM.7 (Description and specification-use discipline).** | For any `...Description` or `...Spec` episteme, identify exact E and its EntityOfConcern under C.2.1; admit specification use only under E.10.D2; and state which endpoint claim content, EntityOfConcern, and effective scheme are preserved or differ. Name any grounding occurrence and describing-use viewpoint qualification separately and compare only the facts the rule actually reads. Any occurrence change follows its direct relation pattern; viewpoint selection and E.17.0 conformance require their own claims. |
-| **CC-EFEM.8 (Endpoint-value and relation-read declaration).** | Any EFEM species SHALL declare its morphism family and change mode and compare the three C.2.1 endpoint identity values. It SHALL name every empirical-grounding, representation, or conformance occurrence and every describing-use viewpoint qualification that its rule reads, together with the endpoint facts compared. Those occurrences retain their separately governed current values. Any actual relation change follows its direct pattern, and any producing activity follows its exact application and Work. |
+| **CC-EFEM.8 (Endpoint-value and relation-read declaration).** | Any EFEM species SHALL declare its morphism family and change mode and compare the three C.2.1 endpoint identity values. It SHALL name every empirical-grounding, representation, or conformance occurrence and every describing-use viewpoint qualification that its rule reads, together with the endpoint facts compared. Those occurrences retain their separately governed current values. Any actual relation change follows its direct pattern. Any producing activity remains separate; identify an A.6.1 application when that declaration applies and any Work under its independent admission conditions. |
 
 ### A.6.2:7.1 - Common Anti-Patterns and How to Avoid Them
 
@@ -360,7 +360,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
 |---|---|---|
 | EFEM as performed work | An episteme rewrite is treated as measurement, actuation, or work occurrence. | Use EFEM only for episteme-to-episteme morphisms; use A.15 when work in the world is current. |
 | EFEM as publication rendering | A face, carrier, or rendering change is treated as the episteme morphism itself. | Use E.17 for publication forms and use EFEM only for the episteme relation being represented. |
-| Retargeting as harmless view | Endpoint epistemes concern different entities, but the bounded-use proposition or current case remains unstated. | Identify the A.6.4 arrow; write `q` with its invariant, visible loss, use, conditions, and polarity; then report the current-case judgement from exact facts. Add F.9 only for a separate local-sense relation. |
+| Retargeting as harmless view | Endpoint EntitiesOfConcern differ, but the relation is classified as preserving their identity. | Identify the retargeting arrow under A.6.4. For a named receiving-use claim, state `q` with its invariant, visible loss, use, conditions, and polarity; when judging a current case, test its exact facts against `q`. Add F.9 only for a separate local-sense relation. |
 | Representation lens as ontology | A category arrow, graph, or mapping notation is treated as a new root U-kind. | Keep the mathematical object in its selected formal substrate; use C.29 when that object is used as a mathematical lens. Keep U-kind settlement in E.24/C.3. |
 
 ### A.6.2:9 - Consequences
@@ -369,7 +369,7 @@ Concrete `A.6.3/A.6.4/E.17.*` patterns for engineering description and specifica
   Effect-free arrow families used across KD‑CAL, MVPK, E.18, and discipline packs can reuse one local law set instead of re-inventing it. Each actual application and use claim remains separate.
 
 * **Clear separation from mechanisms & work.**
-  Measurement, execution, and simulation require a capable system, the applicable A.6.1 operation application when current, and performed `U.Work`; identify any resulting episteme and production relation separately. EFEM remains effect-free and compositional. Any semantic correspondence, temporal qualification, evidence, or reliance claim remains under its own pattern.
+  For actual measurement, execution, or simulation, identify the capable system, any A.6.1 application whose declaration applies, and any independently admitted `U.Work`; identify any resulting episteme and obtaining production relation separately. EFEM remains effect-free and compositional. Any semantic correspondence, temporal qualification, evidence, or reliance claim remains under its own pattern.
 
 * **Stable backbone for Viewing & Retargeting.**
   A.6.3 and A.6.4 do not need to repeat P0–P5; they specialise EFEM with additional constraints (preserve/retarget). Other patterns (e.g. MultiViewDescribing, MVPK, E.18 structural reinterpretation) can depend on EFEM as a stable base.

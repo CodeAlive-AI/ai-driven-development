@@ -36,7 +36,7 @@ Terms such as `FV`, `EV` or `CL` can be used only with the bearer, scale and int
 
 #### B.3.3:3.2 - Use a level only through its justified profile
 
-A domain may define an assurance profile or ordered levels when a recurring receiving decision benefits from that comparison. Its definition states the claim class and use, relevant conditions, meaning of each level, evidence rules, threshold basis and reconsideration conditions. Keep the measure and its scale explicit where a threshold is used. Establish the ordering from these meanings; the numerals in `L0–L2` supply no ordering of trust across unlike uses.
+A domain may define an assurance profile or ordered levels when a recurring receiving decision benefits from that comparison. Its definition states the claim class and use, relevant conditions, meaning of any levels used, evidence rules, the basis for any thresholds, and reconsideration conditions. Keep the measure and its scale explicit where a threshold is used. Where levels are ordered, establish that ordering from their meanings; the numerals in `L0–L2` supply no ordering of trust across unlike uses.
 
 Publish `AssuranceLevel` only with the applicable profile and a result showing why the target meets its criteria. The legacy names `Unsubstantiated`, `Substantiated` and `Axiomatic` do not supply default criteria. In particular, an axiomatic or constructive justification concerns a particular consequence or construction, not a universally higher assurance state than empirical support. A conjecture's origin in abduction likewise does not assign it `L0`.
 
@@ -68,7 +68,7 @@ A Target of Assurance (ToA) denotes the claim being assessed for the named use, 
 - **CC-B3.3.2 (Needed correspondence):** Where differing terms or participants can change the argument, the assessor MUST resolve the load-bearing correspondence through the applicable bridge. Other judgements have no general term-mapping prerequisite.
 - **CC-B3.3.3 (Qualified levels and thresholds):** A published level MUST have an applicable profile, interpreted criteria and a supported assignment. Formal, empirical and constructive evidence requirements MUST follow the specific claim and receiving use. A generic score threshold or positive validation score cannot substitute for the required protective argument.
 - **CC-B3.3.4 (Bridge scope):** A required bridge MUST cover the differences on which the conclusion depends. It SHALL NOT demand mapping every mechanism term to FPF as the price of an otherwise sufficient ordinary judgement.
-- **CC-B3.3.5 (Scope separation):** Design-time and run-time assurance claims MUST retain their distinct subjects, evidence and conditions. A design result SHALL NOT be published as evidence that the corresponding Work performed successfully.
+- **CC-B3.3.5 (Scope separation):** Design-time and run-time assurance claims MUST retain their distinct subjects, evidence and conditions. A design result alone SHALL NOT establish that the corresponding Work performed successfully.
 - **CC-B3.3.6 (CT2R-LOG grounding):** When B.3.5's profile is elected, the structural and collection branches MUST retain their distinct current construction traces and declared modes. A level assignment SHALL NOT replace the required grounding or impose the profile on unrelated claims.
 - **CC-B3.3.7 (Downward-only dependence):** Assurance publications or records SHALL NOT impose vocabulary or layout back onto the Working-Model surface.
 
@@ -83,7 +83,7 @@ A Target of Assurance (ToA) denotes the claim being assessed for the named use, 
 
 ### B.3.3:6 - Consequences
 
-Recipients can inspect what an assurance result supports and why a stronger use remains open. Teams direct effort towards relevant gaps and can reuse evidence that covers the claim.
+Recipients can inspect which claim and use an assurance result supports, its grounds and its limits. Teams direct effort towards relevant gaps and can reuse evidence that covers the claim.
 
 Comparability becomes profile-specific. Defining a useful shared profile takes judgement about consequences, criteria and evidence; routine uses avoid that overhead.
 

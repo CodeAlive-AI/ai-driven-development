@@ -152,11 +152,11 @@ When `readiness` or `ready` still hides which governed value is meant, use `E.10
 | release or permission claim | the direct release or permission pattern; a readiness value establishes neither |
 | publication use, publication face, form, or unit value, source-finding use | `E.17`, `E.17.0`, `E.17.AUD`, or `E.24.PUB` as appropriate to the recovered claim |
 | Description episteme admitted for specification use or specification refinement | `A.7`, plus the specification-granting neighbouring pattern named by value: `A.6.2`, `C.2.3`, `A.21`, `C.16`, `E.17`, `E.10`, or another named pattern |
-| temporal claim status or temporal-use classification | `C.27`, retaining `dynClaimPosture` only as a declared C.27 field |
+| temporal-claim classification and adequacy of an intervention-sensitive use | `C.27`, using its Dyn0, Dyn1 or Dyn2 readings |
 | mathematical-lens use admissibility | `C.29`, retaining `LensUseBoundaryValue` only as a declared C.29 field |
 | `DRR` decision-adequacy result or source-use classification | `E.9.DA` |
 | pattern-quality result or pattern-quality review status | `E.21`, with `E.19` only as review or admission profile |
-| administrative, review, dispatch, release or admission, or source-control state | the project-side administrative, review, dispatch, release or admission, or source-control record; not pattern prose unless the pattern's own `EntityOfConcern` is that record |
+| administrative, review, dispatch, release or admission, or source-control state | the project record that carries the state. Keep current framework-development status there; retain reusable guidance and worked examples when they explain the pattern’s method. |
 
 #### A.19.SPR:4.3 - Keeping a technical state field
 
@@ -168,7 +168,7 @@ If the three basic facts are missing, complete them or replace the field with th
 
 ### A.19.SPR:5 - Worked examples
 
-Each example starts with the smallest useful final wording. The second paragraph adds detail only for a machine-readable, replayed, or high-consequence use.
+Each example starts with wording for the stated use; §4 determines which further details are needed.
 
 #### A.19.SPR:5.1 - Physical-system state
 
@@ -176,7 +176,7 @@ Each example starts with the smallest useful final wording. The second paragraph
 
 **After:** “Pump 37 satisfies `InspectionOperatingCondition`: its coolant temperature is 72 °C, within the 60–80 °C band, and its discharge pressure is 315 kPa, above the 300 kPa minimum.”
 
-For a relied-on inspection decision, also name the reading time, measurement basis, condition edition, and the event that requires another check. Do not add those fields to a casual status sentence that no decision consumes.
+For a relied-on inspection decision, make the measurement basis and applicable condition recoverable. Add the reading time, exact condition edition and recheck condition when the decision depends on them.
 
 #### A.19.SPR:5.2 - Work-entry readiness is not gate passage
 
@@ -186,21 +186,21 @@ For a relied-on inspection decision, also name the reading time, measurement bas
 
 For replay, make the plan item, criterion, input facts, result and reliance window recoverable. Identify a separate result episteme or checking Work only when that identity matters; a claimed Work needs its A.13 basis and independent A.15.1 admission, with F.6 only for precise assignment-bound attribution. The work-entry finding alone establishes no gate passage. Use A.21 for a distinct `OperationalGate(profile)` that consumes declared checks and publishes its own decision.
 
-#### A.19.SPR:5.3 - Source currentness
+#### A.19.SPR:5.3 - Source use and currentness
 
 **Before:** “The source posture is good.”
 
-**After:** “This review uses edition E7 as the accepted decision source. Recheck that use if the edition or the reviewed question changes.”
+**After:** “This review uses edition E7 for decision question Q. Reconsider that choice if the question or the source content needed to answer it changes.”
 
-For automation or consequential reliance, also name the exact source-use relation, currentness result, use window, and the claim that must be reconsidered. The short sentence does not turn the source into evidence, assurance, gate passage, or FPF doctrine.
+When the decision relies on a claim from E7, assess that claim’s currentness under B.3.4 using the premises and time limits that matter to this use. Preserve exact source and result identities when the receiving operation depends on them.
 
 #### A.19.SPR:5.4 - Other direct repairs
 
-- **Evidence.** Replace “evidence status incomplete” with “Reliance on claim C remains unestablished because the needed calibration basis is missing; obtain the calibration record and check again.” Add exact evidence and currentness references only when the receiving decision needs them.
-- **Publication.** Replace “publication posture allows decision input” with “This publication exposes candidate input X for the decision; the decision rule still evaluates X.” Publication does not decide or assure by itself.
-- **Mathematical lens.** Keep `LensUseBoundaryValue` in C.29 when its possible values and intended lens use are defined. State the practical result in ordinary words; the field does not establish evidence, assurance, release, or source authority.
-- **Temporal claim.** Keep `dynClaimPosture` in C.27 when its values and temporal use are defined. Say which temporal claim is usable and for what purpose; the field does not upgrade its evidence or authority.
-- **Project-side state.** Put review, dispatch, release, admission, or source-control status in the project record that carries it. A pattern may mention only the user-facing boundary needed for its own subject.
+- **Evidence.** Replace “evidence status incomplete” with “Reliance on claim C remains unestablished because the needed calibration basis is missing; obtain the missing calibration basis and check again.” Add exact evidence and currentness references only when the receiving decision needs them.
+- **Publication.** Replace “publication posture allows decision input” with “This publication exposes candidate input X for the decision; the decision rule still evaluates X.”
+- **Mathematical lens.** Keep `LensUseBoundaryValue` in C.29 when its possible values and intended lens use are defined. State what the value permits for the intended lens use under C.29.
+- **Temporal claim.** For a C.27 classification, name the temporal claim and its Dyn0, Dyn1 or Dyn2 reading. State the supported use; add the intervention account only when the claim is intervention-sensitive.
+- **Project-side state.** Keep current framework-development status in its project record. Retain reusable guidance and worked examples that help the reader handle project status in the pattern’s stated practice.
 
 ### A.19.SPR:6 - Conformance checks
 
@@ -224,7 +224,7 @@ For automation or consequential reliance, also name the exact source-use relatio
 | **Status word as cover** | `posture` or `status` hides a source relation, evidence result, assurance result, gate decision, or release claim. | Say what item has which value or relation under the direct rule. |
 | **One broad word replaces another** | `support` becomes `support posture`, `basis posture`, or `source posture`. | Recover the actual source, evidence, assurance, relation, characteristic, or reader-help claim before choosing words. |
 | **Technical field without meaning** | A `...Status` or `...Posture` field has no object, possible values, or rule. | Complete those three facts or replace the field with an ordinary sentence. |
-| **Project status in pattern prose** | Review, dispatch, landing, release, or source-control state appears as user guidance. | Move it to the project record and keep only the practical boundary the pattern user needs. |
+| **Development status in pattern prose** | The framework-development project’s current review, dispatch, landing, release, or source-control state appears as user guidance. | Move that status to the project record; keep the reusable explanation and examples needed by the pattern user. |
 | **Everything becomes a source-language case** | Evidence, assurance, gate, Work, temporal, or lens-use claims are all sent to source or publication repair. | Use the direct pattern for the actual claim. |
 
 ### A.19.SPR:8 - Relations
@@ -245,8 +245,8 @@ For automation or consequential reliance, also name the exact source-use relatio
 
 ### A.19.SPR:9 - Rationale
 
-The problem is not the word `state`. The problem is a sentence that hides what has changed, what is being judged, or which rule makes the judgment meaningful. Recovering those facts first lets FPF keep short engineering language without creating a general status ontology.
+Recover the item and the value, relation, result or claim being stated; name the rule or criterion when the reader needs it to understand or act. These facts let practitioners use short engineering language while retaining each claim’s kind and conditions.
 
-Local fields such as `LensUseBoundaryValue` and `dynClaimPosture` remain useful when their object, possible values, and rule are clear. Broad phrases such as `source posture`, `evidence posture`, or `release posture` should instead become the direct sentence or project record the reader actually needs.
+A local field such as `LensUseBoundaryValue` remains useful when its object, possible values, and rule are clear. Broad phrases such as `source posture`, `evidence posture`, or `release posture` should instead become the direct sentence or project record the reader actually needs.
 
 ### A.19.SPR:End

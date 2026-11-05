@@ -36,9 +36,9 @@ A practitioner needs the measured aspect, its Scale and the rule for the propose
 
 - **F3 — Scale integrity.** Retain the distinction between category, order, interval and ratio structure. Numerical labels alone establish neither distances nor admissible arithmetic.
 
--   **F4 – Named tiers vs. continuous magnitudes.** In many domains, **named Levels** (tiers or grades) are useful – e.g. Technology Readiness Levels or bond credit ratings – whereas in others, a continuous scale is needed. The pattern should support **optional Level labels** (for tiered scales) _without forcing_ every scale to have such labels. In other words, Levels are an add-on for discrete/tiered scales, not a requirement for truly continuous measures.
+- **F4 — Optional named Levels.** A Scale can provide named tiers, such as Technology Readiness Levels or bond credit ratings. A continuous measurement needs no Level labels unless an explicit categorization is introduced.
 
--   **F5 – Method agnosticism.** The kernel Standard should say _what_ must be defined (Characteristic, Scale, etc.) but **not prescribe how measurements are obtained**. Whether a value comes from a sensor reading, a simulation, or an expert judgment is up to the respective patterns (e.g. Sys-CAL vs. KD-CAL). The pattern must not bake in any process or scoring methodology; it types the reported values, while C.16 and the receiving use supply the further measurement and comparability conditions. This avoids locking in any particular assessment method.
+- **F5 — Method agnosticism.** CSLC defines the Characteristic, Scale and value structure. The applicable domain patterns (e.g. Sys-CAL or KD-CAL) govern how values are obtained through sensing, simulation or expert judgement. C.16 and the receiving use supply the further measurement and comparability conditions.
 
 ### A.18:4 - Solution
 
@@ -54,11 +54,11 @@ Concretely, the parts of this clause are defined as follows:
 
 - **Coordinate:** one value in the declared Scale's value domain, numeric or categorical. A measurement result may attribute one Coordinate or a set of admissible Coordinates to its subject; C.16 supplies the model, uncertainty and conditions for that attribution. Examples of individual Coordinates are 7.4 on a meter Scale or Expert on the declared expertise Scale.
 
--   **Level (optional):** a named **tier or category** on the scale, used only if the scale is tiered or discretized. For example, an ordinal scale might have Levels _Low, Medium, High_. A Level is essentially a human-friendly label for certain coordinates or ranges. On purely continuous scales, **Level** is not used.
+- **Level (optional):** a named tier or category within a Scale, such as _Low, Medium, High_ on an ordinal Scale. When a continuous measurement is categorized, define the category boundaries; an uncategorized continuous Scale needs no Level labels.
 
-This CSLC structure makes the measured Characteristic and the Scale of each value recoverable, with an optional Level label. Interpreting an actual measurement additionally uses its C.16 model, conditions and uncertainty. Notably, this pattern _forbids bundling multiple characteristics into one metric_ – each metric template is one-characteristic-per-template to keep semantics crisp. If something needs to assess multiple factors, it should be modeled as multiple CSLC metrics or an explicit composite over several CSLC metrics (see §8 below). This one-aspect-one-scale rule makes the value meaning recoverable; comparison additionally requires compatible measurement conditions.
+Keep distinct reported Characteristics in separate templates. A quantity calculation or ScoringMethod may combine input values under §4.2; keep each reported output's Characteristic, Scale and governing relation recoverable.
 
-Finally, the solution ensures **tier optionality**: If a domain uses named Levels, we include them; if not, we don’t force it. For example, one can have a _Bug Severity_ Characteristic with Levels {Minor, Major, Critical} on an ordinal scale, whereas a _Length_ Characteristic would have a continuous scale (no predefined levels, just units). Both fit the pattern.
+
 
 #### A.18:4.1 - Characteristic-space support must stay declared
 
@@ -84,7 +84,9 @@ For a proposed replacement, establish the required correspondence of Characteris
 
 ### A.18:5 - Archetypal Grounding (System & Episteme Examples)
 
-**In a physical scenario (`U.System`):** Consider an athlete’s long jump. We define a Characteristic **Jump Distance** with a Scale “meters (m)” ranging from 0 upward (ratio scale with meters as the unit). When the athlete jumps and lands at 7.45 m, we record a **Coordinate** of _7.45 m_ for the Jump Distance Characteristic. Here, Jump Distance is the Characteristic, the meter-scale is the declared Scale, and _7.45 m_ is the value (Coordinate). Because this is a cardinal measurement, we can meaningfully say one jump is 1.5 m longer than another, etc. Now consider another metric in the system: **Battery Health** of a device, which might be categorized qualitatively. We could define an ordinal Scale with Levels like _Good, Fair, Poor_ for the Battery Health Characteristic. If a particular device is rated “Poor”, that is a Coordinate on the Battery Health scale (with _Poor_ as the Level name). No arithmetic is done on these labels, but we can order devices by health (Good > Fair > Poor). Both examples illustrate the one-characteristic-one-scale rule: the jump’s distance is not combined with any other aspect; the battery’s health is evaluated on its own defined scale.
+**In a physical scenario (`U.System`):** Consider an athlete’s long jump. We define a Characteristic **Jump Distance** with a Scale “meters (m)” ranging from 0 upward (ratio scale with meters as the unit). When the athlete jumps and lands at 7.45 m, we record a **Coordinate** of _7.45 m_ for the Jump Distance Characteristic. This ratio Scale permits interpreting a 1.5 m distance difference between comparable jumps.
+
+For another physical measurement, consider **Battery Health** of a device, which might be categorized qualitatively. We could define an ordinal Scale with Levels like _Good, Fair, Poor_ for the Battery Health Characteristic. If a particular device is rated “Poor”, that is a Coordinate on the Battery Health scale (with _Poor_ as the Level name). No arithmetic is done on these labels, but we can order devices by health (Good > Fair > Poor).
 
 **In knowledge-related assessment:** A person's expertise may be assessed on a declared ordinal Scale _Novice < Competent < Expert_. Alice is assessed as Expert in software engineering and Bob as Competent. Their Coordinates are ordered by that rubric; numerical labels alone supply no mean expertise. The bearer here is the person, not the description of the assessment.
 
@@ -98,7 +100,7 @@ The CSLC structure supports physical measurements and human assessments by keepi
 
 When defining a new metric template or using measurements, practitioners **SHALL** verify the following:
 
-1.  **One characteristic, one scale:** Each metric **template** binds exactly **one Characteristic** to exactly **one Scale**. If you find a metric trying to cover multiple things at once, split it into separate metrics.
+1. **One Characteristic, one Scale:** Each metric template binds exactly one Characteristic to exactly one Scale. Keep different reported Characteristics in separate templates. A calculated quantity or composite Score may use multiple inputs under §4.2.
 
 2. **Order and preference:** Is the Scale's order interpretable for the Characteristic? When the use judges which value is preferable, is that preference stated? A descriptive magnitude comparison requires only the measurement interpretation. A target-based evaluation states its target and how deviations are compared.
 
@@ -110,7 +112,7 @@ When defining a new metric template or using measurements, practitioners **SHALL
 
 6. **Cross-template operations:** For a conversion, recover the relation between compatible Scales, including units. For a quantity calculation, recover the model and its conditions under C.16. For an evaluative comparison or combination, state the ScoringMethod, its preference under A.17-R7 and its Score Scale and output range, including any required bounds. For example, converting 0.5 minutes to 30 seconds preserves duration; combining cost and reliability into a score needs an evaluation rule.
 
-7.  **Level optionality respected:** If your Characteristic doesn’t naturally have tiers, don’t force it to have **Level** names (you can leave the Level concept unused). Conversely, if your Characteristic is commonly described in categories, it’s fine to define Levels for clarity. The key is to use the Level field intentionally: either not at all (for truly continuous measures) or in a fixed, **non-overlapping** way (for discrete categories). Do not use “Level” for something that behaves like a continuous value (it would be confusing to assign a label where a number would do, or vice versa).
+7. **Level optionality:** Use named Levels when they help express the selected Scale's discrete values or non-overlapping categories. Define the categories and their boundaries; leave Level unused for an uncategorized continuous measurement.
 8. **Comparability test:** For a direct magnitude comparison, use the same Characteristic and Scale, with compatible measurement conditions under C.16. A declared conversion can establish that common basis. A preference judgement additionally uses its declared preference; changing that preference alone does not change the measurement Scale.
 
 A.17 and E.10 supply the vocabulary. A template can expose missing fields; it does not establish that the declared meanings, measurement model or resulting inference are adequate.

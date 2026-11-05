@@ -45,11 +45,10 @@ Engineering teams routinely need to decide “which characteristics count as ind
 
 4. **Auditability vs authoring overhead.** Engineer‑managers need to see *why* an indicator set was chosen and *which editions/policies* were in effect, but FPF stays conceptual (no data governance, no tool‑enforced metadata). Audit obligations must therefore be minimal yet decisive.
 
-5. **Evolvability vs didactic usability.** CHR mechanisms must remain evolvable (stable slot lexicon; method specifics in SoTA packs / wiring), while the spec must remain teachable: a reader should find UINDM’s purpose, boundary, laws, guard behavior, and audit obligations in one place.
 
-6. **Fail‑closed discipline.** Unknown/insufficient evidence must never be coerced into “pass”; tri-state guards (`pass|degrade|abstain`) state the policy's disposition of uncertainty; their correctness still depends on the evidence and rule used.
+5. **Fail‑closed discipline.** Unknown/insufficient evidence must never be coerced into “pass”; tri-state guards (`pass|degrade|abstain`) state the policy's disposition of uncertainty; their correctness still depends on the evidence and rule used.
 
-7. **P2W separation and gate/guard separation.** UINDM must expose eligibility and audit pins without turning into (i) a WorkPlanning baseline binder or (ii) an admissibility gate:
+6. **P2W separation and gate/guard separation.** UINDM must expose eligibility and audit pins without turning into (i) a WorkPlanning baseline binder or (ii) an admissibility gate:
    planned slot fillings belong to WorkPlanning plan items, while GateDecision/GateLog live in gate patterns / WorkEnactment (suite protocols remain mechanism‑steps only).
 
 ### A.19.UINDM:4 - Solution
@@ -129,14 +128,14 @@ For example, select Celsius temperature twice from CS7 under the same policy in 
   * Intended to be used before any scoring/comparison/selection that assumes an indicator profile, while remaining a distinct step (no hidden indicatorization inside downstream mechanisms).
   * Reuse for another bearer, source-local meaning, scope and window, evidence basis, reference plane, or intended use requires a new eligibility decision. Cite an F.9 Bridge, kind relation, or plane relation only when the new use actually relies on it.
   * Pin-binding note: a P2W path records intended policy editions in its planned baseline. Every application consumes resolved references and keeps the effective ones in Audit; a direct use needs no invented WorkPlan.
-* **Relation boundary:** indicatorization creates no transfer relation. When a receiving use relies on an obtaining F.9 Bridge, kind relation, or plane relation, cite it with direction, preserved or lost meaning, and receiving use; supported penalties route to **`R_eff` only**.
+* **Relation boundary:** indicatorization creates no transfer relation. When a receiving use relies on an obtaining F.9 Bridge, kind relation, or plane relation, cite it with direction, preserved or lost meaning, and receiving use; assess loss for the receiving use and apply any numerical assurance penalty under A.6.7:4.2(2).
 * **Γ_timePolicy:** `point` by default (no implicit “latest”).
 * **PlaneRegime:** the indicator set keeps the reference plane declared by the characteristic space, its separately referenced description episteme and the CN-Spec edition; UINDM introduces no plane shift.
   When a receiving conclusion depends on a relation between different planes, cite that exact plane relation, its direction and loss, and keep its use separate from the indicator set.
 * **Audit:**
 
-  * MUST record: `CharacteristicSpaceRef`, the separate `characteristicSpaceDescriptionRef: U.EpistemeRef` pinned in CN-Spec, `CNSpecRef.edition`, `IndicatorChoicePolicyRef.edition`, exact bearer, claim scope and selected slices, qualification window, evidence basis, and intended use.
-  * When evidence‑gated, MUST record: `CGSpecRef.edition` and effective MinimalEvidence (`MinimalEvidenceRef` when provided; otherwise `CGSpecSlot.MinimalEvidence`).
+  * MUST record the following values when resolved: `CharacteristicSpaceRef`, the separate `characteristicSpaceDescriptionRef: U.EpistemeRef` pinned in CN-Spec, `CNSpecRef.edition`, `IndicatorChoicePolicyRef.edition`, exact bearer, claim scope and selected slices, qualification window, evidence basis, and intended use. Identify any required value that remains missing or unresolved.
+  * When evidence‑gated, MUST record the following when resolved: `CGSpecRef.edition` and effective MinimalEvidence (`MinimalEvidenceRef` when provided; otherwise `CGSpecSlot.MinimalEvidence`).
   * SHOULD record: the realized `GuardDecision` (`pass|degrade|abstain`) and, when non‑`pass`, the policy‑bound failure behavior reference that justified it.
   * SHOULD record: a stable description of `IndicatorSetSlot` (or an id reference to a **citable** indicator-set publication unit), plus any F.9 Bridge, kind relation, or plane relation only when the result or receiving use actually relies on it.
 
@@ -200,7 +199,6 @@ Suppose a different space `CS8` reverses these two positions. Select CS8 and its
 
 * **Prag (pragmatics).** Bias toward fail‑closed guards and traceability under uncertainty. Risk: more `abstain/degrade` outcomes early. Mitigation: couple `degrade` with explicit downstream behaviors (policy‑bound) rather than silent coercions.
 
-* **Did (didactics).** Bias toward “one place to learn the mechanism”: the problem/forces/solution narrative is co‑located with the operation declaration.
 
 ### A.19.UINDM:7 - Conformance Checklist
 
@@ -217,7 +215,7 @@ A UINDM publication or use is conformant if it satisfies:
 5. **Evidence gating is explicit.** When the chosen `IndicatorChoicePolicy` is evidence‑gated, `CGSpecSlot` is present and the effective MinimalEvidence is explicit and auditable
    (`MinimalEvidenceSlot` when provided; otherwise `CGSpecSlot.MinimalEvidence`); insufficient/unknown evidence must yield `degrade/abstain` per the effective failure‑behavior policy, never a silent `pass`.
 
-6. **Reuse is explicit.** Another bearer, scope and window, basis, plane, or intended use gets a fresh eligibility decision; any F.9 Bridge, kind relation, or plane relation is cited only when the conclusion relies on that obtaining relation, with supported loss routed to `R_eff`.
+6. **Reuse is explicit.** Another bearer, scope and window, basis, plane, or intended use gets a fresh eligibility decision; any F.9 Bridge, kind relation, or plane relation is cited only when the conclusion relies on that obtaining relation, with loss assessed under the receiving-use rule and any numerical assurance penalty applied under A.6.7:4.2(2).
 
 7. **Gate/guard separation + lexeme discipline.** UINDM uses `…Eligibility` returning `GuardDecision ∈ {pass|degrade|abstain}` and does not embed GateDecision/GateLog in suite steps.
    Reserved gate‑lexemes (e.g., `…Guard`) are not used for mechanism‑level predicates; the mechanism stays at the guard/admissibility layer.

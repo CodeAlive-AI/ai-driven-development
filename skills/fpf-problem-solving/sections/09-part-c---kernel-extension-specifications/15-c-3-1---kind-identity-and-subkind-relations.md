@@ -145,7 +145,7 @@ Kind identity, direct `U.SubkindOf` obtaining, assertion identity, declaration i
 
 ### C.3.1:13 - SoTA-Echoing
 
-Type theory, ontology engineering, and versioned schema practice distinguish intensional identity, preorders, equivalence classes, interpretation editions, and extensions. C.3.1 keeps that distinction but gives practitioners two replayable obtaining branches and a before/after continuity test; C.3.2 owns admissibility and judgment, C.3.3 owns distinct-kind correspondence, and E.24.UK owns the exact public admissions.
+For a subkind question restricted to a deliberately closed finite domain, the exhaustive branch in `C.3.1:4.1` can suffice: check every candidate's admissibility and evaluate those admissible under both declarations, leaving no `unknown` and no narrower `true` without a broader `true`. Requiring criterion entailment beyond that domain would demand a stronger result than this use needs. A non-exhaustive sample leaves unexamined candidates and cannot supply this warrant. Keep the domain and aligned interpretation on the conclusion; recheck it when either changes. An open-domain claim still needs criterion entailment.
 
 ### C.3.1:14 - Relations
 

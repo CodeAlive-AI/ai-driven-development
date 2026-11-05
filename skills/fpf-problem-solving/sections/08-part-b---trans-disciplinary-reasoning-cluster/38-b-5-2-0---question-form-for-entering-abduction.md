@@ -10,7 +10,7 @@
 
 **What goes wrong if missed.** A cue is forced into anomaly form, an opportunity is treated as a hypothesis, or a prompt-like sentence silently smuggles in the preferred answer before rival hypotheses can be compared.
 
-**What this buys.** A small admission form for abduction: prompt species, open question, scope, and provenance stay explicit while the downstream abductive loop remains free to compare rival answers.
+**What this buys.** A common entry criterion for abduction: prompt species, open question, scope and motivating grounds remain recoverable while candidate explanations stay open.
 
 **Not this pattern when.** Not this pattern when the object is still a raw cue (`B.4.1`), a language-state threshold claim (`C.2.4`, `C.2.5`), a chosen hypothesis (`B.5.2`), or a selector decision about methods, substrates, or portfolios.
 
@@ -19,7 +19,7 @@
 `U.AbductivePrompt` is a claim-bearing account of one open explanatory question. It records the question, its scope, prompt species and motivating grounds. It is a same-individual-dependent kind under `U.Episteme`: the account keeps C.2.1 identity, and §4.2.2 supplies its prompt-membership test. It may seed `B.5.2` when those grounds and the applicable language-state thresholds support rival comparison. The reusable form expresses the account; it can also express another account of another question.
 
 ### B.5.2.0:1 - Problem frame
-`B.5.2` needs an entry form that preserves a question's motivating grounds, including when they arise from an opportunity or probe rather than an anomaly.
+`B.5.2` needs a question account that preserves its motivating grounds, including when they arise from an opportunity or probe rather than an anomaly.
 
 ### B.5.2.0:2 - Problem
 If anomaly is the only admissible input, pre-anomaly opportunity cues and route-derived prompt forms are excluded or misrepresented. If anything can enter, abduction loses its typed starting discipline.
@@ -32,7 +32,7 @@ If anomaly is the only admissible input, pre-anomaly opportunity cues and route-
 | **Prompt vs hypothesis** | Keep the initiating prompt distinct from the downstream abductive outcome. |
 
 ### B.5.2.0:4 - Solution
-`U.AbductivePrompt` classifies the question accounts used for entry into `B.5.2`. Use `A.16`, `A.16.1` and `B.4.1` when the initiating cue needs preservation, clarification or selection of its next reasoning contribution. Use `A.16.0` only when the cue-to-prompt history itself needs an explicit trajectory account. Publish the account through a suitable form and ordinary MVPK faces; account membership and current entry depend on the content and grounds described below.
+`U.AbductivePrompt` classifies the question accounts used for entry into `B.5.2`. Use `A.16`, `A.16.1` and `B.4.1` when the initiating cue needs preservation, clarification or selection of its next reasoning contribution. Use `A.16.0` only when the cue-to-prompt history itself needs an explicit trajectory account. Publish the account in an expression adequate for the receiving use; reuse an adequate existing expression. Select a reusable form or additional publication faces when that use needs them. Account membership and current entry depend on the content and grounds below.
 
 #### B.5.2.0:4.1 - Starter canonical species and conditional extension species
 - starter canonical species:
@@ -47,9 +47,9 @@ If anomaly is the only admissible input, pre-anomaly opportunity cues and route-
   - `SubstrateDiversificationPrompt`
 
 ##### B.5.2.0:4.1.1 - Specialization-sensitive prompt species
-These extension species are admissible only when cue provenance or trajectory account already carries the bounded-specialization evidence requirement by value; they are not the starter canonical entry set for ordinary abduction.
+Use an extension species only when the motivating grounds support one of the bounded task-family, adaptation, utility or substrate questions defined below. Preserve the conditions needed to interpret that question; cue provenance or a trajectory account can carry those grounds.
 
-`TaskFamilySpecializationPrompt` asks what explains a performance difference within the declared task family. `AdaptationProbePrompt` asks which rival explanations predict whether a proposed adaptation can reach the stated threshold. `NonHumanUtilityPrompt` asks what could explain the indicated utility advantage of a low-human-overlap approach. `SubstrateDiversificationPrompt` asks what explains the indicated limitation of the current substrate. In each species, B.5.2 returns qualified explanatory conjectures; task family, utility target, threshold, budget and motivating evidence qualify that question.
+`TaskFamilySpecializationPrompt` asks what explains a performance difference within the declared task family. `AdaptationProbePrompt` asks which rival explanations predict whether a proposed adaptation can reach the stated threshold. `NonHumanUtilityPrompt` asks what could explain the indicated utility advantage of a low-human-overlap approach. `SubstrateDiversificationPrompt` asks what explains the indicated limitation of the current substrate. For each species, B.5.2 may return a qualified explanatory conjecture or an abort, defer or split result. Preserve its motivating grounds and all conditions needed to interpret the question, including any applicable task-family, utility, threshold or budget conditions.
 
 #### B.5.2.0:4.2 - Core shape
 A conforming abductive prompt makes `promptSpecies`, its explanatory `openQuestion`, `scope` and motivating provenance explicit. The provenance may be carried by `motivatingCueRef`, `witnessRefs` or `routeProvenance`; include the applicable basis even when no routing history exists. A rendering may additionally include `contrastSet` and `GammaTime`.
@@ -82,37 +82,37 @@ Use §4.2 and §17 to judge whether that account supports entry into B.5.2 now. 
 
 The same question may have several accounts with different claims or effective schemes. Additional evidence changes account identity only when it changes one of C.2.1's identity constituents; adding an evidence relation alone need not do so. A reusable publication form can express different accounts. E.24.PUB governs the selected account's expression and publication; A.6.3.RT governs a prose-to-table transfer when that representation changes. A note containing several questions may express several prompt accounts in the same document.
 
-On return to an earlier abductive inquiry, determine what changed before restarting it:
+When returning to an earlier abductive inquiry, determine what changed and what the receiving work still needs before choosing a continuation:
 
 | Finding | Warranted continuation |
 |---|---|
-| Same question and account; different support or candidate ranking | Reconsider the affected rivals under B.5.2. |
-| Same question; changed claims in its account | Identify the revised account under C.2.1 and reassess entry on its current grounds. |
-| Changed explanatory demand, subject or relevant scope | State the new question and its relation to the earlier one; establish its own entry. |
-| Several distinct questions were bundled | Separate their accounts and use B.5.2's split return. |
+| Same question and account; different support or candidate ranking | Reconsider the affected rivals under B.5.2 when further explanatory comparison is needed. |
+| Same question; changed claims in its account | Identify the revised account under C.2.1; reassess current entry if the account will be used in B.5.2. |
+| Changed explanatory demand, subject or relevant scope | State the new question and its relation to the earlier one; establish its entry grounds if it will be used in B.5.2. |
+| Several distinct questions were bundled | Distinguish their accounts. Use B.5.2's split return when separate explanatory comparisons are needed; continue the needed questions under their own entry conditions. |
 | An expression lost a condition needed to recover the question | Restore the expression before reusing the account or its answers. |
 | The initiating ground fails or an adequate answer is already available | Abort or retire the current attempt as appropriate; preserve the earlier account and the reason for stopping. |
 
 #### B.5.2.0:4.3 - Boundary rule
-Only a declared prompt species carrying an explanatory question enters B.5.2 through this form. For a choice among available probes, actions or specialist options, use C.11. Use C.38 to develop incomplete alternatives for the same intended result, C.11.DUA to examine an unclear evidence demand, and C.19 when the question is policy over a still-live candidate pool. C.18 records generation and comparison results; C.22.1 describes an adaptation signature. Neither performs the missing choice. An explanatory subquestion arising during planning can still enter B.5.2 on its own grounds.
+An account enters B.5.2 only when its question and declared prompt species meet the entry conditions in §4.1–4.2 and §17. For a choice among available probes, actions or specialist options, use C.11. Use C.38 to develop incomplete alternatives for the same intended result, C.11.DUA to examine an unclear evidence demand, and C.19 when the question is policy over a still-live candidate pool. C.18 records generation and comparison results; C.22.1 describes an adaptation signature. Neither performs the missing choice. An explanatory subquestion arising during planning can still enter B.5.2 on its own grounds.
 
 ### B.5.2.0:5 - Archetypal Grounding
 **Tell.** An anomaly is one prompt species, not the only one.
 
 **Show (System).** A control observation may raise competing explanations of an apparent response improvement without being framed as an anomaly. The abductive result qualifies those explanations; choosing a discriminating probe is a separate C.11 decision.
 
-**Show (Episteme).** A promising mismatch can begin an opportunity-style abductive prompt rather than only a problem statement.
+**Show (Episteme).** Suppose a revised theory appears to account for two previously separate results. An opportunity-style prompt asks what could explain this apparent gain in explanatory reach.
 
 ### B.5.2.0:6 - Bias-Annotation
-The pattern broadens the entry form to abduction, but still keeps it typed and auditable.
+The pattern admits several prompt species while keeping the explanatory question and its motivating grounds explicit.
 
 ### B.5.2.0:7 - Conformance Checklist
 - `CC-B.5.2.0-1` Every `U.AbductivePrompt` **SHALL** declare its prompt species.
 - `CC-B.5.2.0-2` A prompt **SHALL NOT** be confused with a finished hypothesis.
-- `CC-B.5.2.0-3` Cue-derived prompts **SHOULD** preserve route provenance.
+- `CC-B.5.2.0-3` Cue-derived prompts **SHOULD** preserve route provenance when it exists and contributes to their entry.
 - `CC-B.5.2.0-4` Prompt publication **SHALL** include the explanatory question, its scope and the motivating provenance that make abduction appropriate.
-- `CC-B.5.2.0-5` A publication that already fixes the answer or suppresses plausible rivals **SHALL NOT** remain in prompt status.
-- `CC-B.5.2.0-6` When a specialization-sensitive prompt species is used, the prompt package **SHALL** make explicit the declared task family or utility target, the threshold or success condition being probed, the current budget window, and the route or cue provenance that made the prompt admissible.
+- `CC-B.5.2.0-5` An account that asserts its answer as settled or suppresses plausible rivals **SHALL NOT** be used as the open prompt for that inquiry.
+- `CC-B.5.2.0-6` When a specialization-sensitive prompt species is used, the prompt account **SHALL** make explicit the declared task family or utility target and the grounds for its explanatory question. Include every threshold, budget or other condition needed to interpret that question or its proposed use, and preserve the cue, witness or route provenance actually used.
 - `CC-B.5.2.0-7` Before restarting an inquiry, or reusing its prompt after a change in wording, scope or motivating grounds that may affect the question or account, the user **SHALL** apply §4.2.1–4.2.2 to establish the affected continuity and entry conditions. Already established identity and unaffected grounds remain reusable while their basis holds; comparing another rival with an unchanged prompt requires no new continuity assessment.
 
 ### B.5.2.0:8 - Common Anti-Patterns and How to Avoid Them
@@ -168,14 +168,14 @@ An abductive prompt should make explicit:
 
 - the **prompt species**,
 - the **open question**,
-- the **motivating cue or route provenance**,
+- the **motivating provenance actually used**,
 - the **contrast set**, if one is already visible,
 - the **scope** in which the question is being asked,
 - and the **witnesses or cue grounds** that justify beginning abduction.
 
-This package lets downstream conjectures be tested against the same question rather than against a rewritten paraphrase.
+This package lets downstream conjectures be assessed against the same identified explanatory question.
 
-For specialization-sensitive prompt species, the package should also make explicit the declared task family or utility target, the threshold or success condition being probed, the current budget window, the prior route provenance, and the rival prompt shapes still in play.
+For specialization-sensitive prompt species, preserve the declared task family or utility target, the conditions needed for the explanatory question, including any stated threshold or budget, and the motivating provenance actually used. Preserve alternative prompt shapes when they remain live and matter to entry.
 
 #### B.5.2.0:14.2 - Claims about the question and an asserted answer
 
@@ -198,19 +198,19 @@ Name each cue-derived entry as a prompt species, preserving the explanatory ques
 
 ### B.5.2.0:16 - Boundary crossing and invalid drift
 
-A prompt should enter `B.5.2` only when the question is explicit enough that rival hypotheses can now be compared against it. If the question is still underspecified, the admissible continuation is further stabilization or routing, not premature abduction.
+Entry into `B.5.2` requires a question explicit enough to compare potential explanations under its scope. An underspecified question needs clarification before that entry. Continue stabilization or routing when needed for the receiving question.
 
-A routed cue may be close to prompt form but still missing one decisive contrast or witness. In such cases the candidate stays outside `U.AbductivePrompt` until its initiating question is stable.
+Determine what a missing contrast or witness prevents. If it leaves the explanatory question or other membership conditions unrecoverable, `U.AbductivePrompt` membership is not established. If the account meets those conditions but lacks grounds for entry now, retain the account with that current-use limit under §4.2.2.
 
 A common failure mode is drift from cue -> prompt -> hypothesis without anyone naming the boundary crossings. `B.5.2.0` blocks that drift by keeping the prompt package distinct from both the earlier cue pack and the downstream prime hypothesis.
 
 ### B.5.2.0:17 - Scope, rival-set, and comparative-validity discipline
 
-A prompt should declare the scope in which its question is being asked: the domain fragment, operational horizon, or inquiry-bounded scope cut that makes the question answerable. If scope remains unbounded, rival hypotheses become incomparable because they are answering different questions.
+A prompt should declare the scope in which its question is being asked: the domain fragment, operational horizon, or inquiry-bounded scope cut that makes the question answerable. If the relevant scope is unresolved, apparent rivals may answer different questions; establish the scope needed for their comparison.
 
-A prompt need not list full hypotheses yet, but it should make visible whether rival answer types are already imaginable. If no rival answer space is even latent, the publication may still be a cue or orientation note rather than a true abductive prompt.
+A prompt need not list hypotheses yet. Its explanatory demand and scope must make clear what a candidate explanation would have to explain; any already identified answer types can help clarify that demand.
 
-A prompt may be narrowed to become more discriminating, but the narrowing must not silently smuggle in the answer it is supposedly asking about. Otherwise the prompt ceases to be an initiating question and becomes a disguised conclusion. If a prompt already excludes every serious rival except one preferred explanatory line, the publication may already be preloading a hypothesis. Review should then either rewrite the prompt back into a real question or explicitly apply the governing pattern that carries the asserted answer.
+A prompt may be narrowed to become more discriminating, but the narrowing must not silently smuggle in the answer it is supposedly asking about. Otherwise the prompt ceases to be an initiating question and becomes a disguised conclusion. If its formulation excludes plausible rivals without grounds, repair that restriction; if it asserts an answer as settled, treat the answer-bearing account under its governing pattern.
 
 Prompts may be compared across contexts only when their species, scope, and provenance are explicit. A probe-shaped question and an opportunity-shaped question are not the same kind of abductive entry merely because both invite explanation.
 
@@ -220,5 +220,5 @@ An assurance reader can test prompt readiness with three questions:
 
 1. **Is there an open explanatory question?** An asserted answer is no longer a prompt; narrowing the scope must leave the answer open. An action-choice question needs its own Method.
 2. **Does the prompt species fit its initiating grounds?** If those grounds are an opportunity or a probe-related contrast, forcing anomaly species misclassifies the question.
-3. **Could meaningful rival hypotheses now be compared under the declared scope?** The rival set need not yet be fully written, but possible alternatives and a scope that permits their comparison must be recoverable. Otherwise stabilize the prompt before entering `B.5.2`.
+3. **Is the question explicit enough to generate and compare candidate explanations under its declared scope?** Establish the question and the grounds required for entry before using B.5.2. Identified rival hypotheses are not an entry requirement; their generation and comparison belong to B.5.2.
 ### B.5.2.0:End

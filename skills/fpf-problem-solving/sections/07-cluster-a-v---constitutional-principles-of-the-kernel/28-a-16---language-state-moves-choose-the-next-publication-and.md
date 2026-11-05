@@ -18,7 +18,7 @@ Choose one admissible move from §4.1 and make the content in §4.4 recoverable 
 
 **Typical next patterns.** Use `A.16.1` for early preservation, `B.4.1` for route publication, `B.5.2.0` for cue-derived abductive prompting, precision repair in `A.6.P` or `C.16.Q`, wording recovery in `A.6.A` followed by the recovered subject rule, and `A.16.2` when the right move is reopen, backoff, respecify, or retire.
 
-**Not this pattern when.** Use `A.16.0` when history itself needs an accountable trajectory; use `A.6.P` or `C.16.Q` for their precision repairs and `A.6.A` to recover an ambiguous action-oriented claim or question; use `E.18` only when the current subject is an independently selected TransformationFlowStructure, and `E.18.2` for its mathematical description. When *move* means a project action rather than this local publication transition, use `E.10.MOVE`, then route the actual question through `E.11.PUR`, `A.15.5`, `A.15.1`, `A.15.2`, or its more specific subject pattern.
+**Not this pattern when.** Use `A.16.0` when history itself needs an accountable trajectory; use `A.6.P` or `C.16.Q` for their precision repairs and `A.6.A` to recover an ambiguous action-oriented claim or question; use `E.18` only when the current subject is an independently selected TransformationFlowStructure, and `E.18.2` for its mathematical description. For a known project-action question, use its subject pattern directly, such as `E.11.PUR`, `A.15.5`, `A.15.1`, or `A.15.2`. Use `E.10.MOVE` only when move-like wording still leaves the governed claim unclear.
 
 ### A.16:1 - Problem frame
 
@@ -43,7 +43,7 @@ Without one coordination rule, authors force cues into anomaly or requirement la
 
 ### A.16:4 - Solution
 
-`A.16` defines admissible move names, guards, identity decisions, and next-use docking. It does not define formality `F`, make Work occur, pass an endpoint test, create publication availability, establish authority, or supply a rival path calculus.
+`A.16` defines admissible move names, guards, identity decisions, and next-use docking.
 
 Here *move* means a typed transition in the publication of selected episteme content. Observation can supply a precursor cue for early preservation under `A.16.1`; `B.4.1` begins when route publication becomes worth making explicit. A.16 starts when a cue is deliberately noticed, stabilized, route-published, projected, formalized, operationalized, reopened, respecified, or retired.
 
@@ -72,7 +72,7 @@ Do not use A.16 to decide measurement admissibility, Bridge substitution, endpoi
 
 #### A.16:4.2 - Guard discipline
 
-State the guard through named language-state facets and the route condition that matters. Use `AE` from `C.2.4`, `CD` from `C.2.5` and the representation-factor readings from `C.2.7`. State required source, evidence, access or action conditions separately under C.2.6. A guard can use both readings and direct relation claims, cited separately or through one published profile; a relation account is not a CharacteristicSpace slot. Add witnesses, scope, and `GammaTime` selectors when needed. “The idea matured” is not a guard.
+State the guard through the language-state readings or route condition on which the move depends. Obtain any required `AE` reading from `C.2.4`, `CD` reading from `C.2.5`, and representation-factor reading from `C.2.7`. State required source, evidence, access or action conditions separately under C.2.6. A guard can use both readings and direct relation claims, cited separately or through one published profile; a relation account is not a CharacteristicSpace slot. Add witnesses, scope, and `GammaTime` selectors when needed. “The idea matured” is not a guard.
 
 A summarized chain may omit repeated unchanged fields, but it must leave every move identity, endpoint-rule change, loss, and status change that affects interpretation reconstructible. A later higher-closure publication does not retroactively strengthen an earlier cue; later retreat does not erase the earlier publication.
 
@@ -119,11 +119,11 @@ Do not compress several claims into `AuthorityState`. A reusable language-state 
 | Endpoint admission or use disposition | named endpoint test, its result, and the exact stronger use admitted, narrowed, or blocked |
 | Publication availability | exact episteme, form, bounded use, and `EpistemePublicationRelation` occurrence when current |
 | Current use or retirement | exact cue, episteme, publication, or branch and the currentness, withdrawal, supersession, or retirement claim that applies |
-| Actual relation change | only an independently established authority, responsibility, permission, or commitment relation with participants, object or action, scope, interval, and act; otherwise omit the optional claim or report the unresolved change; state that a relation is unchanged only when an applicable negative criterion or complete closure basis supports that claim |
+| Actual relation change | only an independently established authority, responsibility, permission, or commitment relation with participants, object or action, scope, interval, and any act required by its governing pattern; otherwise omit the optional claim or report the unresolved change; state that a relation is unchanged only when an applicable negative criterion or complete closure basis supports that claim |
 
 Open route plurality is not a lineage fork. A multi-route state keeps several directions live inside one route-bearing publication. A lineage fork has separately identified successor members, their preserved and lost content, and any exact lineage relations that obtain.
 
-`EndpointAdmissionProfile` may still be reused as a declarative decision profile for next-use docking. It combines the relevant `C.2.2a` position, `C.2.LS` facet readings, route condition from `B.4.1`, prompt readiness from `B.5.2.0`, and visible witness or grounding conditions. Apply it to judge only whether docking to the later question is admissible: relation-like content toward `A.6.P`, an open question and rival set toward `B.5.2.0`, evaluative content toward `C.16.Q`, ambiguous affordance-like wording toward `A.6.A` and then the recovered subject, viability or other quality-family content toward `C.25` when quality-family decomposition is the question, and executable docking toward `A.15`. Apply the selected pattern's own tests. A.6.A may return a sufficient claim, question or exact missing basis; that recovery establishes no common invitation relation. Tone, style or apparent explicitness supplies no subject result by itself. The admission result creates no authority, responsibility, permission, commitment, publication, gate, or Work state.
+`EndpointAdmissionProfile` may be reused as a declarative decision profile for next-use docking. Include only inputs required by the proposed use: the relevant `C.2.2a` position, selected `C.2.LS` facet readings, any route condition from `B.4.1`, any prompt-entry conditions from `B.5.2.0`, and the witness or grounding conditions it consumes. Apply it to judge only whether docking to the later question is admissible: relation-like content toward `A.6.P`, an open question and rival set toward `B.5.2.0`, evaluative content toward `C.16.Q`, ambiguous affordance-like wording toward `A.6.A` and then the recovered subject, viability or other quality-family content toward `C.25` when quality-family decomposition is the question, and executable docking toward `A.15`. Apply the selected pattern's own tests. A.6.A may return a sufficient claim, question or exact missing basis; that recovery establishes no common invitation relation. Tone, style or apparent explicitness supplies no subject result by itself. The admission result creates no authority, responsibility, permission, commitment, publication, gate, or Work state.
 
 #### A.16:4.7 - One history threshold
 
@@ -160,7 +160,7 @@ A `RoutedCueSet` may keep evaluative and abductive routes live. If review later 
 
 #### A.16:5.6 - Silent route drift into Work planning
 
-If an evaluative note starts guiding Work planning, make the changed route or operational use explicit in the existing material or an accompanying note. Apply A.15.2 to the WorkPlan content. Name an acting system, Method, system-role assignment, or Work only when the claim depends on that distinction; none is contained in the earlier cue.
+If an evaluative note starts guiding Work planning, make the changed route or operational use explicit in the existing material or an accompanying note. Apply A.15.2 to the WorkPlan content. Name an acting system, Method, system-role assignment, or Work only when the claim depends on that distinction.
 
 #### A.16:5.7 - Form, pattern, and face stay distinct
 
@@ -168,7 +168,7 @@ If an evaluative note starts guiding Work planning, make the changed route or op
 
 #### A.16:5.8 - Short compound histories
 
-`notice -> stabilize -> route -> projection` into `U.AbductivePrompt` and `endpoint admission -> reopen -> sketchBackoff -> route` can be summarized only when each intermediate move, changed rule, loss, and independent status claim remains reconstructible. Retreat preserves the earlier endpoint result in the history. When comparing histories, do not treat `route -> projection` and an unsupported `cue -> requirement` leap as one “formalization speed”; compare the moves, forms, applicable rules, and independent status claims.
+`notice -> stabilize -> route -> projection` and `endpoint admission -> reopen -> sketchBackoff -> route` can be summarized only when each intermediate move, changed rule, loss, and independent status claim remains reconstructible. Retreat preserves the earlier endpoint result in the history. When comparing histories, do not treat `route -> projection` and an unsupported `cue -> requirement` leap as one “formalization speed”; compare the moves, forms, applicable rules, and independent status claims.
 
 ### A.16:6 - Bias and common mistakes
 
@@ -199,7 +199,7 @@ Use this one checklist for authoring and review:
 7. A multi-route publication is not called a lineage fork. A true fork names separate successor identities, losses, and exact lineage relations.
 8. Reopen, backoff, respecify, and retire say which witnesses remain and which closure, route selection, endpoint use, publication, or current-use claim changes.
 9. Any dated Work and Work-result claim is established separately under its own patterns.
-10. Docking or a Work crossing alone establishes no authority, responsibility, permission, or commitment change. A real change names the exact relation and its own participants, object or action, scope, interval, and instituting or ending act. An unchanged-relation claim requires an applicable negative criterion or complete closure basis.
+10. Docking or a Work crossing alone establishes no authority, responsibility, permission, or commitment change. A real change names the exact relation and its own participants, object or action, scope, interval, and any instituting or ending act required by its governing pattern. An unchanged-relation claim requires an applicable negative criterion or complete closure basis.
 11. Use `EndpointAdmissionProfile` only to judge admissible docking; apply all of the endpoint pattern's own conditions.
 12. Sufficient local publication content stands alone. A.16.0 opens only at the §4.7 threshold, and E.18 opens only for an independently selected TransformationFlowStructure.
 13. A summarized chain leaves intermediate move identities, endpoint-rule changes, losses, and material status changes reconstructible.
@@ -230,7 +230,7 @@ Use this one checklist for authoring and review:
 ### A.16:11 - Relations
 
 - **Builds on:** `C.2.1` for episteme identity; `C.2.2a` for language-state positions; `C.2.LS` for facet profiles; `C.2.4` for articulation, `C.2.5` for closure, `C.2.6` for source and use conditions, and `C.2.7` for representation-factor readings; `A.18` for Scale semantics; and `A.19` for CharacteristicSpace and Coordinate semantics.
-- **Coordinates with:** `A.16.0` for accountable trajectories; `A.16.1` for early preservation; `A.16.2` for retreat and respecification; `B.4.1` for route publication; `B.5.2.0` for abductive prompting; `A.6.P`, `A.6.A`, `C.16.Q`, and `C.25` for endpoint-local questions; `E.11.PUR`, `A.15.5`, `A.15.1`, and `A.15.2` for non-A.16 move wording and project action; `E.24.PUB` for bounded publication availability; `E.18` for an independently selected TransformationFlowStructure and `E.18.2` for its mathematical description; and `E.10.MOVE` when source wording does not mean this local move.
+- **Coordinates with:** `A.16.0` for accountable trajectories; `A.16.1` for early preservation; `A.16.2` for retreat and respecification; `B.4.1` for route publication; `B.5.2.0` for abductive prompting; `A.6.P`, `A.6.A`, `C.16.Q`, and `C.25` for endpoint-local questions; `E.11.PUR`, `A.15.5`, `A.15.1`, and `A.15.2` for non-A.16 move wording and project action; `E.24.PUB` for bounded publication availability; `E.18` for an independently selected TransformationFlowStructure and `E.18.2` for its mathematical description; and `E.10.MOVE` when move-like wording still leaves the governed claim unclear.
 - **Constrained by:** A.2/A.2.1 and the applicable deontic or authority pattern for any actual relation change; A.13 followed by independent A.15.1 for precise performed Work, F.6 only afterward when precise assignment-bound attribution is current, A.15.PROD for production or inception, and the applicable domain predicate for result claims.
 
 ### A.16:End

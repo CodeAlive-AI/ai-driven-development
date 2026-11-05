@@ -26,12 +26,12 @@ Cue packs, routed cue sets, abductive prompts, typed route-bounded projection fo
 The trajectory account records the selected episteme edition at each load-bearing step, the form and publication occurrence when availability matters, and independently established lineage links among distinct epistemes when claims change.
 
 ### A.16.0:2 - Problem
-Without an explicit trajectory-account pattern for those heavier cases:
+When history needed for the receiving use is left implicit:
 
 1. history is mistaken for a generic one-pass process story rather than read as typed language-state moves over a declared `U.CharacteristicSpace`;
 2. an early seam form is confused with an endpoint-admitted episteme or with the publication occurrence that makes an episteme edition available;
 3. forks, merges, route retirement, supersession, and route-sensitive loss become implicit and unverifiable;
-4. every local move is either over-wrapped in ad hoc history prose or under-described in a way that hides a work boundary or a separately established responsibility or authority change;
+4. local move accounts may add unnecessary history detail or omit a work boundary or responsibility change that the receiving use needs;
 5. bridge and viewpoint docking inherit under-described upstream history.
 
 ### A.16.0:3 - Forces
@@ -167,7 +167,7 @@ A language-state trajectory account does not by itself establish an E.18 Transfo
 
 `A.16.0` standardizes only the heavier history package for cases where that history is itself worth publication.
 
-The word `move` remains inherited from `A.16` and means a typed language-state publication transition. `A.16.0` does not generalize it into project action, work-entry readiness, pattern-use recommendation, performed work, work plan, workflow, or transformation-flow path. If source wording uses move-like language outside this scope, restore the concern through `E.10.MOVE` before selecting `E.11.PUR`, `A.15.5`, the A.15 work family, or another applicable pattern.
+Here `move` names a typed language-state publication transition under A.16. For an already clear project-action, work-entry, pattern-use or other question, use its subject pattern directly. Use E.10.MOVE only while the wording still hides the governed claim.
 
 #### A.16.0:4.9 - Bridge and viewpoint entry
 A trajectory may later cross a viewpoint or context boundary. When that happens:
@@ -180,7 +180,7 @@ A trajectory may later cross a viewpoint or context boundary. When that happens:
 `A.16.0` only makes those entry points explicit. It establishes no current reliance, authorization, or receiving use. When those questions are live, apply triggered `A.10` or `B.3` for reliance, the pattern that directly constrains the receiving action for authorization, and evidence of the receiving Work or publication for occurrence. No bundled record is required when those questions are not live.
 
 ### A.16.0:5 - Archetypal Grounding
-**Tell.** A language-state trajectory account is not `we kept refining the note`. It is an optional, lineage-aware account of episteme editions and their publication history, with declared position claims, move kinds, losses, and the next applicable pattern or use.
+**Tell.** A language-state trajectory account is an optional, lineage-aware account of episteme editions and their publication history, with declared position claims, move kinds, losses, and the next applicable pattern or use.
 
 **Show (System).** A service disturbance is a system-side phenomenon, not a trajectory lineage member. It grounds an alerting episteme lineage. One stabilized cue pack may first keep two routes live in one `RoutedCueSet`; record a fork only after distinct successor epistemes and their independently established fork links are identified.
 
@@ -225,7 +225,7 @@ The pattern biases authors toward lineage-aware history accounts rather than sta
 Readers can recover which epistemes supplied later claims, what changed or was lost, and how that history constrains the next use. The trade-off is more explicit publication of position claims, lineage links, move kinds, loss notes, next-use docking, and any actual responsibility handoff when history is worth publishing.
 
 ### A.16.0:10 - Rationale
-Language-state work needs one trajectory-account normal form for the subset of cases where history itself matters. Without it, readers have to reconstruct lineage, branch structure, retirement, next-use docking, and any actual responsibility handoff from fragments. With it overused, every local move becomes over-wrapped. The pattern exists to hold the middle line.
+A later use may depend on lineage, branch structure, retirement, next-use conditions or an actual responsibility history. The account makes those facts recoverable when local notes do not supply them. Reuse an adequate existing history; the selected form is useful when it exposes a needed connection without adding unnecessary reconstruction.
 
 ### A.16.0:11 - SoTA-Echoing
 
@@ -243,7 +243,7 @@ Reopen the choice of account when the receiving question needs an unrecorded bra
 
 ### A.16.0:12 - Relations
 - Builds on: `C.2.2a`, `A.16`, `A.19`, `E.17`.
-- Coordinates with: `C.2.LS`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `B.5.2`, `A.6.P`, `C.16.Q`, `A.6.A`, `F.9`, `F.9.1`, `E.17.1`, and `E.10.MOVE` when move-like wording is not a language-state trajectory-account claim.
+- Coordinates with: `C.2.LS`, `A.16.1`, `A.16.2`, `B.4.1`, `B.5.2.0`, `B.5.2`, `A.6.P`, `C.16.Q`, `A.6.A`, `F.9`, `F.9.1`, `E.17.1`, and `E.10.MOVE` when move-like wording still hides the governed claim.
 - Constrains: trajectory-account publication, branch visibility, seam publication reading, docking visibility, and anti-pipeline language across the cluster.
 
 ### A.16.0:13 - Worked trajectories
@@ -290,7 +290,7 @@ A practitioner should ask:
 
 1. Is the author describing history over the declared language-state `U.CharacteristicSpace`, or only narrating progress informally?
 2. Is the selected episteme edition distinct from the grounds, publication form, occurrence, face, and carrier?
-3. Is this history heavy enough to justify `A.16.0`, or would local `A.16` publication content have sufficed?
+3. Does the receiving use need a fuller history, or does existing local content already suffice?
 4. Are multi-route state and lineage fork being kept distinct?
 5. Are derivation, supersession, fork, merge, or retirement links visible where the reading depends on them?
 6. Does the current claim concern an episteme edition, a seam or endpoint publication form, or—when bounded availability matters—an `EpistemePublicationRelation` occurrence? Are those positions kept separate, and is the endpoint test named?

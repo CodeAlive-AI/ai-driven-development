@@ -11,10 +11,10 @@
 ### A.19.USCM:0 - At a glance — didactic, informative
 
 * **Suite stage:** `score` (ordering lives only in `A.19.CHR:4.5` / `suite_protocols`; suite membership is a set in `A.19.CHR:4.2`).
-* **Inputs, conceptual:** an admitted measure profile for the exact evaluated bearer, plus `CNSpecRef`, `CGSpecRef`, and `ScoringMethodDescriptionRef`; their editions name the criteria, claim scope and selected slices, qualification window, comparison or reference basis, evidence policy, and intended result use. `MinimalEvidenceRef` may override the CG-Spec minimum.
+* **Inputs, conceptual:** an admitted measure profile for the exact evaluated bearer, plus `CNSpecRef`, `CGSpecRef`, and `ScoringMethodDescriptionRef`; their editions name the criteria, comparison or reference basis, evidence policy, intended result use, and any claim scope, selected slices or qualification window that qualify that use. `MinimalEvidenceRef` may override the CG-Spec minimum.
 * **Output:** `ScoreProfileSlot` = a set of score measures (vector scores are first‑class; a scalar score is allowed only if explicitly declared).
 * **Non‑goals:** does **not** normalize (UNM), aggregate (ULSAM), compare (CPM), select (SelectorMechanism), issue a gate decision, publish, or emit telemetry; it is a scoring step with explicit admissibility and evidence surfaces.
-* **P2W seam:** an A.15.2 baseline selects editions and policies, including ScoringMethodDescriptionRef when USCM is used. A.15.3 typed filling applies only to independently declared receiving positions under A.19.CHR:4.7.2. Actual Score bindings obtain under §4.1; Audit records the effective refs and pins.
+* **P2W seam:** an A.15.2 baseline selects editions and policies, including ScoringMethodDescriptionRef when USCM is used. A.15.3 typed filling applies only to independently declared receiving positions under A.19.CHR:4.7.2. Actual Score bindings obtain under §4.1; Audit makes the effective refs and pins recoverable.
 * **Failure mode:** tri‑state guard (`pass|degrade|abstain`); unknown never coerces to `pass`, and MUST NOT be coerced to `0/false`.
 * **Quick rule of thumb:** if `CGSpecSlot.SCP` is missing → `ScoreEligibility = abstain` (fail‑closed); if `ScoringMethodDescriptionSlot` is missing → `ScoreEligibility = abstain` (no implicit scoring method); if `CN‑Spec.comparability` requires normalization‑based comparability → normalization MUST be explicit in choreography (Uses/pins), never hidden inside `Score`.
 
@@ -36,17 +36,17 @@ so that each commitment has a single place to live, can be audited, and can evol
 
 ### A.19.USCM:2 - Problem
 
-Engineering teams often need to convert an admitted (indicator or NCV) profile into one or more **score measures** for downstream comparison and selection. If scoring is not given a **first‑class mechanism boundary** with explicit admissibility and evidence surfaces, the following failure modes are common:
+Engineering teams often need to convert an admitted (indicator or NCV) profile into one or more **score measures** for downstream comparison and selection. When the scoring rule, scale constraints or input basis remain implicit, the following failures can occur:
 
 * **Illicit arithmetic by convenience:** teams apply weighted sums, averages, or nonlinear transforms across mixed scale kinds without an explicit admissibility profile, creating scores that are not CSLC‑lawful.
 * **Hidden normalization:** scoring implementations silently normalize, align, or flip polarities, collapsing the distinction between “normalize” and “score” and making downstream reasoning non‑reproducible.
 * **Silent scalarization:** multi‑criteria realities (vector scores, partial‑order comparability) are reduced to a single scalar via hidden tie‑breakers, producing an apparent total order that is not justified.
 * **Unknown coercion:** missing or insufficient evidence is coerced into `0/false` or treated as “good enough,” yielding scores that look precise while being epistemically unsafe.
-* **Drift and non-auditability:** different teams score the same admitted scoring target differently because admissibility constraints and effective policies (editions, evidence rules, crossings) are not explicit and not recorded.
+* **Drift and non-auditability:** differences between teams' scores for the same admitted target cannot be explained or replayed when the effective admissibility constraints and policies (editions, evidence rules, used relations) are not recoverable.
 
 ### A.19.USCM:3 - Forces
 
-1. **Admissibility discipline vs operational pressure.** Scoring is where "just compute a number" pressure is strongest, but admissibility must remain explicit and checkable: SCP and CSLC constraints must bound permissible transforms.
+1. **Admissibility discipline vs operational pressure.** Admissibility must remain explicit and checkable under operational pressure: SCP and CSLC constraints must bound permissible transforms.
 
 2. **Method diversity vs stable mechanism boundary.** Scoring methods evolve rapidly; USCM’s signature must remain stable so method families can be wired through SoTA packs and extensions without mutating the mechanism boundary.
 
@@ -68,11 +68,11 @@ USCM is the **canonical scoring mechanism** in the CHR suite. It defines:
 * a stable **SlotKind surface** (via the suite lexicon),
 * an admissibility‑first **LawSet** anchored in `CG‑Spec.SCP` and CSLC,
 * an explicit **anti‑smuggling rule** (no implicit normalization), and
-* an **audit minimum** (the evaluated bearer and input profile, exact editions, criteria, scope and window, comparison basis, evidence used, effective evidence policy, result use, and any relation actually used).
+* an **audit minimum** (the evaluated bearer and input profile, exact editions, criteria, comparison basis, evidence used, effective evidence policy, result use, any scope or window that qualifies that use, and any relation actually used).
 
-USCM preserves the suite obligations by construction: it does not embed GateDecision/GateLog, it does not perform publish/telemetry steps, and it cites relation pins only when the score or its receiving use actually depends on an obtaining relation; supported loss stays in `R_eff`.
+USCM does not embed GateDecision/GateLog or perform publish/telemetry steps. It cites relation pins only when the score or its receiving use actually depends on an obtaining relation; assess loss under the applicable receiving-use rule.
 
-Method semantics (“how to score”) remain out of suite core: they belong in SoTA packs (`G.2`) and wiring‑only extension modules (`GPatternExtension` blocks), while USCM remains the stable conceptual mechanism boundary.
+Scoring-method semantics remain outside the suite core. The selected `ScoringMethodDescription` supplies them; `G.2` packs can provide method choices, while wiring-only `GPatternExtension` modules cite the corresponding governing content and required pins.
 
 #### A.19.USCM:4.1 - Operation declaration
 
@@ -94,8 +94,8 @@ Method semantics (“how to score”) remain out of suite core: they belong in S
 
   * **SubjectKind:** `ReadingContent`, supplied by the reading contents in InputProfileSlot; each retains its bearer, Characteristic and Scale.
   * **RangedValueKind:** `ReadingContent`; Score transforms the admitted profile under the selected method, and ScoreEligibility assesses that proposed transformation.
-  * **SliceBasis:** the declared `U.ClaimScope` and selected `U.ContextSlice` members, together with the qualification window and intended result use.
-  * **Input qualification:** scoring ranges over the admitted indicator or NCV profile for the exact evaluated bearer, criteria, claim scope and selected slices, qualification window, comparison or reference basis, and intended result use; `CN-Spec.comparability` routes comparison and `CG-Spec.SCP` gates admissibility.
+  * **SliceBasis:** any declared `U.ClaimScope`, selected `U.ContextSlice` members or qualification window that qualify the scoring result or its intended use.
+  * **Input qualification:** scoring ranges over the admitted indicator or NCV profile for the exact evaluated bearer, criteria, comparison or reference basis and intended result use, under any scope, slice or window conditions required by that use; `CN-Spec.comparability` routes comparison and `CG-Spec.SCP` gates admissibility.
   * Results are declared per operation: the score-measure profile and the eligibility judgment.
 
 **Reading range.** `ReadingContent` and profile interpretation come from C.16:5.5.1. Resolve each component's subject, Characteristic, Scale, attribution and conditions before using its values. A content member can be conditional or insufficiently supported; this operation's eligibility and evidence rules still decide whether it may be used. Profiles retain the positions or contributor identities, ordering and multiplicity required by their declared basis. An independently materialized result episteme is distinct from the calculated Coordinate and the bound reading content.
@@ -107,7 +107,7 @@ Each input meaning is declared separately for Score and ScoreEligibility. ByRef 
 | Direction | Local designator | Meaning and ValueKind | Designation; cardinality |
 | --- | --- | --- | --- |
 | Argument | InputProfileSlot | Admitted profile of ReadingContent components to score; each UINDM-derived value retains its exact basis position, Characteristic and Scale | ByValue; 1 profile |
-| Argument | CNSpecSlot | CN-Spec used for the bearer, basis, scope/slices, qualification window, intended use and comparability routing | CNSpecRef; 1 |
+| Argument | CNSpecSlot | CN-Spec used for the bearer, basis, intended use and comparability routing, including any scope/slices or qualification window required by that use | CNSpecRef; 1 |
 | Argument | CGSpecSlot | CG-Spec supplying the SCP restrictions and default evidence requirement for this scoring use | CGSpecRef; 1 |
 | Argument | ScoringMethodDescriptionSlot | ScoringMethodDescription supplying the selected Coordinate→Score rule, domain, codomain, Scale, polarity and use-required properties | ScoringMethodDescriptionRef; 1 |
 | Argument | MinimalEvidenceSlot | MinimalEvidence override used in place of CGSpecSlot.MinimalEvidence | MinimalEvidenceRef; 0..1 |
@@ -141,32 +141,32 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 * **AdmissibilityConditions** (tri‑state guard; fail‑closed on missing admissibility/evidence):
 
   * `ScoreEligibility(InputProfileSlot, CNSpecSlot, CGSpecSlot, ScoringMethodDescriptionSlot, MinimalEvidenceSlot?) → GuardDecision ∈ {pass|degrade|abstain}`.
-  * `pass` requires: (i) `CGSpecSlot.SCP` is present, (ii) the scoring method and edition are explicit, (iii) the input profile is admitted for the exact bearer and criteria, (iv) the cited specs apply to the exact claim scope and selected slices, qualification window, comparison or reference basis, and intended result use, (v) the evidence supporting the admitted profile passes the effective minimum, and (vi) `CN-Spec.comparability` routing is satisfied, including explicit UNM when needed, and (vii) the declared transformation is defined on the input profile and satisfies the applicable SCP/CSLC restrictions.
+  * `pass` requires: (i) `CGSpecSlot.SCP` is present, (ii) the scoring method and edition are explicit, (iii) the input profile is admitted for the exact bearer and criteria, (iv) the cited specs apply to the comparison or reference basis and intended result use, including any required claim-scope, slice or window qualifications, (v) the evidence supporting the admitted profile passes the effective minimum, (vi) `CN-Spec.comparability` routing is satisfied, including explicit UNM when needed, and (vii) the declared transformation is defined on the input profile and satisfies the applicable SCP/CSLC restrictions.
   * If `MinimalEvidenceSlot` is absent, the guard MUST evaluate evidence against `CGSpecSlot.MinimalEvidence` (by explicit rule), and MUST NOT return `pass` when evidence is missing/unknown.
   * If `ScoringMethodDescriptionSlot` is missing or unresolved or ambiguous under the selected use baseline, the guard MUST return `abstain` (fail‑closed), not “assume a default”.
   * `degrade` requires every non-evidence condition above and an effective failure policy that permits the stated degraded result when evidence is insufficient. `abstain` applies otherwise, including an undefined transformation or missing required input. A degrade policy supplies no undefined value.
 
 * **Applicability:**
 
-  * Intended to be used after indicatorization (when indicator profiles are used) and before comparison/selection.
-  * Applicable only when admissibility/evidence surfaces are present via `CGSpecSlot` (fail‑closed otherwise).
-  * Applicable only when a scoring method is explicitly declared via `ScoringMethodDescriptionSlot` (edition‑pinned when reproducibility matters). A “do nothing / identity scoring” intent (if ever needed) MUST still be declared as an explicit scoring method description, not as an implicit default.
+  * Score is intended to be used after indicatorization (when indicator profiles are used) and before comparison/selection.
+  * Score is applicable only when admissibility/evidence surfaces are present via `CGSpecSlot` (fail-closed otherwise).
+  * Score is applicable only when a scoring method is explicitly declared via `ScoringMethodDescriptionSlot` (edition-pinned when reproducibility matters). A “do nothing / identity scoring” intent (if ever needed) MUST still be declared as an explicit scoring method description, not as an implicit default.
 
-* **Relation boundary:** scoring creates no transfer relation. If the input profile or receiving use relies on an F.9 Bridge, kind relation, or plane relation, cite that exact obtaining relation, its direction and loss; supported penalties route to **`R_eff` only**.
+* **Relation boundary:** scoring creates no transfer relation. If the input profile or receiving use relies on an F.9 Bridge, kind relation, or plane relation, cite that exact obtaining relation, its direction and loss. Establish the bounded-use and reliance grounds required for that proposed use, and assess loss against its receiving rule and tolerance. Apply a numerical assurance penalty only when a named assurance use consumes it and an applicable B.3 domain model warrants it under its declared assumptions.
 
-* **Γ_timePolicy:** `point` by default (no implicit “latest”).
+* **Γ_timePolicy:** when a temporal qualification is needed, `point` by default (no implicit “latest”).
 
 * **PlaneRegime:** each admitted input and score keeps its declared reference plane; USCM introduces no plane crossing. When a conclusion depends on a relation between planes, cite that relation, its direction and loss, and keep the receiving use separate.
 
-* **Audit:**
+* **Audit:** Make the application basis below recoverable from the specifications, inputs, evidence and results actually used. For ScoreEligibility, identify missing or unresolved required inputs and policies, and apply the following requirements to the values supplied or resolved. Retain a separate record when the receiving use requires one.
 
-  * MUST record: the exact evaluated bearer and admitted input profile; `CNSpecRef.edition`, `CGSpecRef.edition`, and `ScoringMethodDescriptionRef.edition`; criteria, claim scope and selected slices, qualification window, comparison or reference basis, and intended result use.
-  * MUST record the evidence refs used to admit the input profile and evaluate `ScoreEligibility`.
-  * MUST record the **effective evidence policy**:
-    * if `MinimalEvidenceSlot?` is present → record `MinimalEvidenceRef` as effective;
-    * otherwise → cite `CGSpecSlot.MinimalEvidence` as effective.
-  * SHOULD record the realized `GuardDecision` for `ScoreEligibility`, and (when `degrade`/`abstain`) the referenced failure behavior / downstream handling policy id (e.g., SoS‑LOG branch id) when such a policy is in scope.
-  * SHOULD record: a stable description of `ScoreProfileSlot`; any F.9 Bridge, kind relation, or plane relation only when the score or receiving use actually relies on it; and, when normalization-based comparability was required, the explicit upstream UNM ref or pin.
+  * MUST make recoverable: the exact evaluated bearer, input profile and its admission status; `CNSpecRef.edition`, `CGSpecRef.edition`, and `ScoringMethodDescriptionRef.edition`; criteria, comparison or reference basis and intended result use; and any claim scope, selected slices or qualification window that qualify that use.
+  * MUST make recoverable the evidence refs used for input admission or the `ScoreEligibility` evaluation.
+  * MUST make the **effective evidence policy** recoverable:
+    * if `MinimalEvidenceSlot?` is present → identify `MinimalEvidenceRef` as effective;
+    * otherwise → identify `CGSpecSlot.MinimalEvidence` as effective.
+  * SHOULD make recoverable the realized `GuardDecision` for `ScoreEligibility`, and (when `degrade`/`abstain`) the referenced failure behavior / downstream handling policy id (e.g., SoS-LOG branch id) when such a policy is in scope.
+  * SHOULD make recoverable: a stable description of `ScoreProfileSlot`; any F.9 Bridge, kind relation, or plane relation only when the score or receiving use actually relies on it; and, when normalization-based comparability was required, the explicit upstream UNM ref or pin.
 
 #### A.19.USCM:4.2 - Interpretation notes — informative
 
@@ -182,7 +182,7 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 
 * **Evidence policy is explicit and auditable.** `MinimalEvidenceSlot?` is an optional override; otherwise the effective policy is `CGSpecSlot.MinimalEvidence`. Failures do not disappear; they must show up as `degrade/abstain` and be traceable.
 
-* **Relations are explicit and loss stays in `R_eff`.** When a score or receiving conclusion depends on another source-local meaning, bearer kind, or reference plane, cite the exact obtaining relation and supported loss. A changed bearer, scope, method, basis, or use is not by itself a crossing.
+* **Relations are explicit; loss is judged for the receiving use.** When a score or receiving conclusion depends on another source-local meaning, bearer kind, or reference plane, cite the exact obtaining relation and supported loss. Apply the receiving rule and tolerance; a numerical assurance penalty needs the applicable B.3 domain model. A changed bearer, scope, method, basis, or use is not by itself a crossing.
 
 ### A.19.USCM:5 - Archetypal Grounding — informative
 
@@ -190,12 +190,12 @@ For the Celsius example in §4.2, two separate calculations of (20−0)/(40−0)
 
 Think of USCM as **admissibility‑gated scoring**:
 
-* Input: “an admitted profile of measures for this exact bearer, criteria, scope and window, comparison basis, evidence policy, and result use, plus the CN-Spec and CG-Spec editions that declare those bounds”
+* Input: “an admitted profile of measures for this exact bearer, criteria, comparison basis, evidence policy and result use, with any scope or window that qualifies that use, plus the CN-Spec and CG-Spec editions that declare those bounds”
 * Output: “a set of score measures that downstream steps may compare/select on”
 
 The key didactic boundary is: **USCM is allowed to transform measures only within the admissibility surface (SCP+CSLC), and it must not hide normalization, aggregation, or ordering.**
 
-#### A.19.USCM:5.2 - Show — U.System
+#### A.19.USCM:5.2 - Show — rollout-plan evaluation
 
 A program manager evaluates competing rollout plans for a product launch.
 
@@ -216,7 +216,7 @@ A research lead compares several model families for deployment across heterogene
 
 ### A.19.USCM:6 - Bias-Annotation — informative
 
-* **Gov (governance).** Bias toward explicit admissibility and evidence surfaces (`CGSpecRef`, `SCP`, `MinimalEvidence`) rather than "standard practice" arithmetic. Risk: perceived overhead. Mitigation: keep the kernel signature small and push method specifics into SoTA packs and wiring modules.
+* **Gov (governance).** Bias toward explicit admissibility and evidence surfaces (`CGSpecRef`, `SCP`, `MinimalEvidence`) rather than "standard practice" arithmetic. Risk: perceived overhead. Mitigation: keep the shared signature small; use the selected ScoringMethodDescription for method-specific rules and wiring modules for their references and pins.
 
 * **Arch (architecture).** Bias toward stable interfaces and strict step boundaries (no implicit UNM; no hidden scalarization). Risk: reduced room for ad‑hoc shortcuts. Mitigation: allow richer scoring method families via wiring, without mutating the USCM intension.
 
@@ -244,9 +244,9 @@ A USCM publication or use is conformant if it satisfies:
 
 7. **Unknown and evidence handling is explicit.** Unknown / insufficient evidence is not coerced to `0/false`. Eligibility uses `GuardDecision ∈ {pass|degrade|abstain}` and evaluates evidence against the effective policy (`MinimalEvidenceSlot` override or `CGSpecSlot.MinimalEvidence`).
 
-8. **Planning and actual binding remain separate.** On a P2W path, A.15.2 carries the intended edition/policy baseline; A.15.3 governs typed filling only for independently declared positions. The actual application uses its effective bindings under §4.1, and Audit records their refs and pins. Planned selection alone does not establish actual use.
+8. **Planning and actual binding remain separate.** On a P2W path, A.15.2 carries the intended edition/policy baseline; A.15.3 governs typed filling only for independently declared positions. The actual application uses its effective bindings under §4.1, and Audit makes their refs and pins recoverable. Planned selection alone does not establish actual use.
 
-9. **Relation and plane discipline.** Another bearer, scope and window, basis, method, plane, or result use gets a fresh eligibility decision. Any F.9 Bridge, kind relation, or plane relation is cited only when the score or conclusion relies on that obtaining relation, and supported loss routes to `R_eff`.
+9. **Relation and plane discipline.** Another bearer, scope and window, basis, method, plane, or result use gets a fresh eligibility decision. Any F.9 Bridge, kind relation, or plane relation is cited only when the score or conclusion relies on that obtaining relation. Judge loss under the receiving-use rule; a numerical assurance penalty requires an applicable B.3 domain model.
 
 10. **Specialization discipline, if extended.** Retain inherited operation-position meanings, add no mandatory input to the inherited Score operation, and declare extra outputs or operations explicitly using the local extension notation `⊑⁺`. A claimed refinement, conservative extension or equivalence additionally needs its exact A.6.1 §4.8 predicate, endpoint facts and applicable preservation test; `⊑/⊑⁺` alone establishes none of them.
 
@@ -254,7 +254,7 @@ A USCM publication or use is conformant if it satisfies:
 
 * **Hidden normalization inside scoring.** Scoring silently normalizes or aligns measures. Avoid by making UNM explicit in choreography and keeping Score as the declared scoring transformation under its admission conditions.
 
-* **Weighted sum across mixed or non-admissible scales.** Treating “weights + sum” as universal. Avoid by requiring SCP+CSLC admissibility; if the scale operation is not scale-admissible, it is not admissible.
+* **Weighted sum across mixed or non-admissible scales.** Treating “weights + sum” as universal. Avoid by requiring SCP+CSLC admissibility.
 
 * **Silent scalarization.** Collapsing vector scores or partial orders into a single “overall score” via an untracked tie‑breaker. Avoid by leaving vector scores intact, and making scalarization an explicit declared commitment.
 
@@ -284,14 +284,14 @@ A USCM publication or use is conformant if it satisfies:
 
 ### A.19.USCM:10 - Rationale
 
-Scoring is a frequent source of semantic precision loss: it is easy to smuggle normalization, illegal arithmetic, implicit thresholds, and uncertainty coercion into “a simple scoring function.” USCM prevents that by forcing a clean boundary:
+Scoring can lose semantic precision through hidden normalization, illegal arithmetic, implicit thresholds or uncertainty coercion. USCM requires the following commitments to remain explicit:
 
 * **Admissibility first:** all transforms are justified by `CG‑Spec.SCP` and CSLC.
 * **No hidden steps:** normalization is explicit (UNM), aggregation is explicit (ULSAM), ordering is explicit (CPM/SelectorMechanism).
 * **Uncertainty is visible:** admissibility is tri‑state; unknown is not coerced.
-* **Audit is minimal yet decisive:** effective editions and effective evidence policy are always traceable.
+* **Recoverable audit basis:** effective editions and the effective evidence policy remain traceable.
 
-This increases both evolvability (stable interface, externalized method semantics) and didactic usability (a single place to learn USCM’s boundary and obligations).
+
 
 ### A.19.USCM:11 - SoTA-Echoing
 
@@ -311,9 +311,9 @@ The following research and architecture-description lines inform distinct choice
 **Notes per row**
 
 1. USCM does not "implement a particular scoring model"; it preserves a stable, admissibility‑gated surface on which such models can be wired.
-2. Calibration is treated as a lawful transform family that must live within SCP+CSLC; the kernel does not mandate a specific calibration method.
+2. A calibration transform must satisfy SCP+CSLC; USCM does not mandate a specific calibration method.
 3. A prediction interval and a vector of score measures carry different meanings. A downstream CPM/SelectorMechanism use needs a declared comparator for whichever result it consumes; neither form supplies an ordering automatically.
-4. Governing-pattern traceability is used here to keep the spec teachable and non-duplicative; it does not add new governance cards or admissibility gates.
+
 
 ### A.19.USCM:12 - Relations
 
@@ -335,7 +335,7 @@ The following research and architecture-description lines inform distinct choice
 
   * `UNM` when `CN‑Spec.comparability` requires normalization‑based comparability (explicit choreography, no hidden UNM).
   * `ULSAM` when folding/aggregation is needed as a distinct, explicit step.
-  * `G.2` and `GPatternExtension` wiring modules for post‑2015 method families, without mutating the USCM kernel.
+  * `G.2` for scoring-method choices and `GPatternExtension` modules for their wiring, without mutating the USCM kernel.
   * `E.20` (governing-pattern discipline) and `F.18` (alias docking) for governing-source references and designation continuity.
 
 ### A.19.USCM:End

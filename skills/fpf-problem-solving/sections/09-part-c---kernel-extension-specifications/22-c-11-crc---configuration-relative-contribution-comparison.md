@@ -100,7 +100,7 @@ An ordinary comparison sentence or existing calculation can carry this result wh
 | Derivative or gradient | What is the local rate of change with respect to a coordinate under smoothness and small-change assumptions? | It approximates the finite contribution only when the validity region and remainder are adequate for `Δ`. |
 | Sensitivity | How does a result vary with a parameter, assumption, input, model, or scenario? | It supplies robustness or assurance information; it need not describe a realizable configuration change. |
 | Shadow price or dual variable | What is the local value of relaxing a formulated active constraint under the primal/dual model? | It depends on formulation, active set, regularity, units, and local region; it is not the contribution of an arbitrary asset or intervention. |
-| Functional variation / calculus of variations | How does a functional change when the varied object is a function, path, trajectory, field, control, or shape in a declared admissible variation space? | Name the functional, admissible variations, constraints, boundary conditions, stationarity/extremum claim, sufficiency, and validation. An Euler–Lagrange equation is not a generic contribution claim or proof that a physical System optimizes. |
+| Functional variation / calculus of variations | How does a functional change when the varied object is a function, path, trajectory, field, control, or shape in a declared admissible variation space? | Name the functional, admissible variations, constraints, boundary conditions, the claim being made about variation, stationarity or an extremum, and the sufficiency or validation grounds that claim requires. An Euler–Lagrange equation is not a generic contribution claim or proof that a physical System optimizes. |
 | Variational inference | Which member of an approximation family best approximates a target probability distribution under a declared divergence or bound? | The result is an approximate distribution and uncertainty account, not an extremal physical trajectory, capability acquisition, or general marginal value. |
 | Evolutionary variation | How are retained variants generated and selected in an evolutionary or cultural process? | The shared word *variation* does not identify the mathematical object or Method above; route to `C.18`, `C.36`, or the field practice. |
 
@@ -161,7 +161,7 @@ A project is compared with the current portfolio and financing/operating configu
 | Average benefit chooses the next element | Preserve result and resource coordinates and return the comparison to the governing choice Method. |
 | Derivative times step equals finite contribution | State smoothness region and remainder or perform the finite comparison. |
 | Shadow price equals asset value | Keep the local active-constraint result and model the finite intervention separately. |
-| Functional stationarity proves physical optimality | Use `C.29`, physical/domain evidence, sufficiency checks, and validation. |
+| Functional stationarity proves physical optimality | Establish the physical/domain claim and its required sufficiency and validation grounds. Use `C.29` when the mathematical correspondence or its transfer limits remain unresolved. |
 | Variational inference is calculus of variations or “learning” | Recover the target distribution, approximation family, objective, returned approximation, and diagnostics. |
 | More information is already more capability or value | Treat information as a decision input and test the target result separately. |
 

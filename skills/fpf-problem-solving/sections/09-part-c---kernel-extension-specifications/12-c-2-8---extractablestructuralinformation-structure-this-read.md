@@ -102,7 +102,7 @@ Absence of human validation restricts empirical claims about people. It does not
 
 #### C.2.8:4.6 - Relation to epiplexity and MDL
 
-A formal structural-information estimate is useful when a mathematical model can represent the selected account, observer and extraction question. Use C.29 for that correspondence and its preserved and lost structure.
+A formal structural-information estimate is useful when a mathematical model can represent the selected account, observer and extraction question. Establish that correspondence and what structure it preserves or loses. Use C.29 for an unresolved question about choosing or transferring the representation, or relying on it beyond its supported correspondence.
 
 Finzi et al.'s computational epiplexity selects a time-bounded probabilistic program by a two-part coding criterion. Writing D for the model's data variable gives:
 
@@ -188,7 +188,7 @@ Use this checklist when a characteristic claim or comparison must be relied on o
 | `CC-C.2.8-3` Comparison | A claimed difference SHALL identify changed claims, expression, reusable-form rules, preparation, access, help, operations or budget where they can explain the result. |
 | `CC-C.2.8-4` Scale | A numerical value SHALL name its scale, structural unit or denominator and method. Ordered scales SHALL retain the positive structural direction; missing basis SHALL remain distinct from zero. |
 | `CC-C.2.8-5` Grounds | An observation, design estimate or formal-model estimate SHALL retain its grounds and their actual scope. Prior-expertise correction and additional assistance SHALL be attributed separately where consequential. |
-| `CC-C.2.8-6` Formal estimate | An epiplexity or other mathematical estimate used as ESI SHALL have the applicable C.29 correspondence; a claimed measurement SHALL satisfy C.16. |
+| `CC-C.2.8-6` Formal estimate | An epiplexity or other mathematical estimate used as ESI SHALL have the model correspondence required by :4.6; a claimed measurement SHALL satisfy C.16. |
 | `CC-C.2.8-7` Distinct results | Amount SHALL remain distinguishable from articulation, extraction effort, task utility, evidence strength, learning and robustness. |
 | `CC-C.2.8-8` Cold recovery | A publication-reading claim SHALL distinguish case facts from an explanation of the instruction supplied only by the test. |
 
@@ -199,7 +199,7 @@ Use this checklist when a characteristic claim or comparison must be relied on o
 | A fully articulated account is assumed equally recoverable by every reader | Retain its AE result and compare ESI for the selected reader preparation and budget. |
 | The expert fixes false text, and the corrected relation is credited to that text | Preserve the initial answer and identify the correction supplied by expertise; repair the expression against its source. |
 | Source-return links or a transfer test raise an amount score by their mere presence | Use source return as available support and transfer as its own tested result; compare the structure recovered under those conditions. |
-| A missing denominator is scored as little structure | Return the missing comparison basis. Assign zero only when the declared scale and observation support it. |
+| A missing denominator is scored as little structure | Return the missing comparison basis. Assign zero only when the declared scale and the result's grounds support it. |
 | Fewer words, more boxes or a larger model are used as the structural measure | Identify the selected semantic structure and justify the representation or model correspondence. |
 | A richer explanation is chosen despite a sufficient incumbent and no worthwhile gain | Compare the finite change's actual contribution and cost through C.11.CRC/C.11. |
 
@@ -207,7 +207,7 @@ Use this checklist when a characteristic claim or comparison must be relied on o
 
 A shared characteristic lets an author compare forms without confusing them with the account's identity or the described architecture. It also lets a domain evaluation consume structural recovery while keeping its other results intact.
 
-The practical cost is making material preparation, selection and access conditions explicit. That cost is small when the working situation already supplies them. Exact measurement or a causal claim about an explanation's effect requires more evidence because it answers a stronger question.
+The practical cost is making material preparation, selection and access conditions explicit. A measurement or a causal claim about an explanation's effect needs grounds appropriate to that claim; reuse an adequate existing basis.
 
 An additional example, prerequisite, diagram or changed order is useful when it exposes worthwhile structure under the actual conditions. Sometimes the current expression already supplies the needed structure. Both outcomes are compatible with this characteristic.
 
@@ -238,7 +238,7 @@ At comparable effort, ordinary source-based reconstruction often answers which n
 - **A.17/A.18 and C.16:** arity, characteristic/scale legality and the measurement chain for an actual measurement claim.
 - **C.2.1 and E.24.PUB:** identity of the expressed episteme and the distinctions among its particular expression, reusable publication form and presentation carrier.
 - **C.2.4:** degree of explicit articulation and its receiving-use thresholds.
-- **C.29:** mathematical-lens correspondence for a formal structural-information estimate.
+- **C.29:** choosing or transferring a mathematical representation, or resolving reliance beyond its supported correspondence, when that question remains for a formal structural-information estimate.
 - **A.2.2:2.1 and E.23.CDI:4.2.1:** Method-relative capability and the acquisition or provision choice that can consume a recovered Method structure.
 - **C.33:** captured and missing structure, sufficiency and source return for an architecture use.
 - **A.6.3.NAR and E.17.EFP:** narrative construction and explanation-faithfulness uses that consume structural recovery.

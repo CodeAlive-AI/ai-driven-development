@@ -3,13 +3,13 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** either a bounded composition result whose whole, participants, and load-bearing relations are independently supported, or a **prospective candidate Method account** with proposed relation sets, guards, variation, recovery, stops and unresolved conditions needed by its receiving use. Writing the account creates neither the Method nor an obtaining architecture.
+> **Primary working result:** a bounded composition result whose whole, participants, and load-bearing relations are independently supported; a **prospective candidate Method account**; or a useful narrower claim. Include the proposed relation sets, conditions and unresolved questions needed by the receiving use. Writing the account creates neither the Method nor an obtaining architecture.
 
 ### B.1.5.CM:0 - Use This When
 
 Use this pattern when a proposal names an intended Method whole, such as a methodology or playbook, and the next decision depends on what is already established about that whole.
 
-Begin with the proposal's intended result, participants, relation claims, guards, burdens, unresolved conditions, and selection reason. Recover the whole semantics needed for identification before choosing the result branch.
+Begin with the proposal's intended result, participants and relation claims. Recover the available whole semantics and the guards, burdens, unresolved conditions and selection reason that matter for the receiving use. Test the identity and relation grounds required for the conclusion sought.
 
 The first useful result is deliberately two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
 
@@ -25,7 +25,7 @@ Do not require prior performance of C.32.MWA.PP when equivalent proposal content
 | obtaining composition result | A result about an identified whole and identified participant Methods whose required `B.1.5` relations are independently shown to obtain for the bounded claim. |
 | prospective candidate account | An episteme proposing a possible reusable whole while identity or relation conditions remain unresolved. |
 | relation set | Named proposed or obtaining composition, order, result-use, allocation, support, authority, or other relations. Their truth statuses remain explicit. |
-| realization/test WorkPlan | A plan for later Work that could implement the proposal and return observations. It is not performed Work or evidence that the Method exists. |
+| realization/test WorkPlan | A plan for later Work that could implement the proposal and return observations. It is not performed Work and does not by itself establish that the Method exists. |
 
 ### B.1.5.CM:1 - Problem Frame
 
@@ -35,7 +35,7 @@ A proposal can state an invariant, guards, variants, participant contributions, 
 
 ### B.1.5.CM:2 - Problem
 
-One failure declares a whole whenever a document gives several steps a shared name. Another refuses to state anything useful until a mature Method has already been identified. A third treats participant co-use, Work order, or a successful tool integration as `methodPartOf` evidence.
+One failure declares a whole whenever a document gives several steps a shared name. Another refuses to state anything useful until a mature Method has already been identified. A third treats participant co-use, Work order, or a successful tool integration as sufficient evidence for `methodPartOf`.
 
 The first error overclaims, the second prevents learning, and the third confuses several relation structures. A prospective or partial account can support present comparison or later realization while keeping uncertainty explicit.
 
@@ -57,25 +57,25 @@ Recover the proposed whole's semantics, test whole and participant identity sepa
 
 #### B.1.5.CM:4.1 - Pattern-Use Unfolding
 
-1. **Name the receiving use.** State the result or preserved condition, situation family, intended users or performers, consuming decision, configuration or edition, and time window.
-2. **Recover whole semantics.** State the reusable operations or invariant, entry and exit, applicability, participants, permitted variation, bounds, stops, and reidentification rule. If these cannot be stated, return the missing-account question.
+1. **Name the receiving use.** State the result or preserved condition, situation family, intended users or performers, and consuming decision. Identify the configuration or edition and time window when they change the claim or its use.
+2. **Recover whole semantics.** Recover the proposed whole's reusable operations or invariant, applicability, participant contributions, and the entry/exit, variation, bounds, stops and reidentification conditions needed for the claim. Keep proposed content, supported facts and unresolved grounds distinct. Missing content blocks only conclusions that require it; a supported prospective account or partial result may still complete the receiving use.
 3. **Preserve participant statuses.** Identify each Method under `A.3.1` where supported. Keep candidate accounts and other subjects at their existing statuses.
 4. **Name the relation sets.** State every load-bearing proposed or obtaining relation, including Method composition, Work order or overlap, result use, allocation, support/provider access, authority, and description correspondence as applicable. Do not infer one relation from another.
 5. **Test the positive branch.** Record an obtaining composition only when the whole and parts are identified as Methods and the required `B.1.5` relations are shown to obtain within the bounded claim.
 6. **Return the prospective branch when needed.** State the candidate whole, participant statuses, proposed relation sets, guards, adapters, alternatives, recovery, variation points, burdens and unresolved conditions needed for the receiving use. A traceable proposal can answer that use while its stronger whole claim remains unresolved.
 7. **Return a supported partial result.** When missing whole semantics, identity, or a relation prevents a useful candidate account, return the supported fragment, relation claim, WorkPlan question, or stop. Keep the missing grounds explicit.
-8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, authority and reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or lower result and the limitation that matters to its recipient.
+8. **Choose a useful continuation when needed.** Use C.11.DUA to compare the result a realizable implementation or trial could add with its full burden, including access, allocation, authority and the available window. When that Work is selected, name its observations, acceptance and failure conditions, any required authority, and the reconsideration rule; prepare a WorkPlan where coordination needs one. Otherwise finish with the supported account or lower result and the limitation that matters to its recipient.
 
 #### B.1.5.CM:4.2 - Record the Result
 
 | Result position | Required content |
 | --- | --- |
-| use and whole semantics | Intended result/preserved condition, situation, operations or invariant, applicability, participants, variation, bounds, and reidentification. |
+| use and whole semantics | Intended result or preserved condition and receiving use; the whole semantics needed for the returned claim, including operations or invariant, applicability, participants and any relevant variation, bounds or reidentification conditions. A prospective or partial result keeps missing identity or relation grounds explicit. |
 | participant account | Each subject, kind or status, identity basis or open condition, and proposed contribution. |
-| relation sets | Each direct relation, truth status, evidence, guard, and receiving use. |
+| relation sets | Each load-bearing direct relation, its participants, truth status, grounds and any guard required for its receiving use. |
 | branch verdict | Obtaining composition result, prospective candidate account, or lower return with decisive reason. |
-| prospective content | Guards, adapters, alternatives, recovery, stops, burdens, and variation points when the lower branch applies. |
-| continuation, when selected | Later Work and observations, authority, acceptance/failure and reconsideration condition; a realization/test WorkPlan where its coordination needs one. |
+| prospective content | The guards, adapters, alternatives, recovery, stops, burdens, variation points and unresolved conditions that change the intended contribution or receiving use. |
+| continuation, when selected | Later Work and observations, any required authority, acceptance/failure and reconsideration condition; a realization/test WorkPlan where its coordination needs one. |
 
 #### B.1.5.CM:4.3 - What Changes in Practice
 
@@ -110,17 +110,21 @@ The four participant Methods are identified, but the proposed whole is not. Thei
 
 For this selected trial, B.1.5.CM returns a prospective candidate account with a WorkPlan covering at most three B2 releases. The whole and relation claims remain proposed.
 
-Before each entry, `SafetyReviewer-17` performs `W-SafetyEvidenceDecision-17` under `ASG-SafetyReview-17` and `AUTH-SafetyEvidence-17` to accept or reject the named evidence conditions; `ReleaseDecider-17` then performs `W-ReleaseDecision-17` under `ASG-ReleaseDecision-17` and `AUTH-ReleaseDecision-17` to decide branch entry and release, withhold, or next-slot disposition. Neither decision or authority relation substitutes for the other.
+At each proposed release's `D-21` entry checkpoint, `SafetyReviewer-17` accepts or rejects the entry evidence under `ASG-SafetyReview-17` and `AUTH-SafetyEvidence-17`; `ReleaseDecider-17` then decides branch entry under `ASG-ReleaseDecision-17` and `AUTH-ReleaseDecision-17`. The filled entry case identifies these decisions as `W-SafetyEvidenceDecision-17` and `W-ReleaseDecision-17`.
+
+For closure or recovery, the two decision-makers use the evidence then available to decide safety-evidence acceptance and release, withhold, or next-slot disposition under the applicable assignments and authorities. Each performed later or repeated decision is a distinct dated Work occurrence with its own inputs and result. Neither decision or authority relation substitutes for the other.
 
 In B2, `TraceReviewer-17` accepts or rejects each AI trace suggestion used by the release branch under `ASG-TraceReview-17` and `PERM-TraceAcceptReject-17`. [The full EC-417 application, §16.9.5](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference1695---5-build-the-repertoire-and-criteria-without-preselecting-an-architecture) records the one permission grant and the dated Work `W-TraceAcceptReject-17-01` that returns acceptance in the filled case. The separate relation `PEX-TraceAcceptReject-17-01` connects that dated Work to the permission it exercised. `EV-PEX-TraceAcceptReject-17-01` supplies evidence about this exercise. Each additional used suggestion requires its own dated decision Work and result, confirmation that the permission applies at that time, and its own Work-to-permission exercise relation.
 
-Missing signed evidence after early integration triggers recovery R. In R, preserve the performed-integration record and evidence history. Repeat the evidence comparison and affected verification when evidence arrives by `D0` while the existing evidence and reversibility guards still hold. Record whether early integration is retained, rolled back, or repeated, and the added burden. If closure remains unresolved at `D0`, the release result is withhold/next-slot and this R occurrence ends as a failed B2 trial.
+If signed evidence is missing at the `D-8` closure checkpoint, withhold release and enter recovery R. In R, preserve the performed-integration record and evidence history. Repeat the evidence comparison and affected verification when evidence arrives by `D0` while the existing evidence and reversibility guards still hold. Record whether early integration is retained, rolled back, or repeated, and the added burden. If closure remains unresolved at `D0`, the release result is withhold/next-slot and this R occurrence ends as a failed B2 trial.
 
 `ASG-TraceReview-17` and `PERM-TraceAcceptReject-17` end at `D0`; continuing safety or release relations extend neither. This trial provides no post-`D0` AI-supported continuation and asserts no later Work or recovery WorkPlan. Unresolved R may motivate separate later planning.
 
 When later non-AI recovery needs coordination, the project may create a new `A.15.2` WorkPlan; `A.15.2` itself does not require planning before every otherwise valid later Work. Planned or unplanned Work would still need its separate qualification/currentness, readiness, assignment, permission/authority, and `A.15.1` occurrence as applicable. These stops preserve all earlier Work and evidence history. A is only a pre-entry alternative.
 
-Acceptance observations include whether each trial respects confidentiality and authority, remains below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a truthful release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is an explicit stop and failed trial observation. The withhold/next-slot result preserves earlier Work and may motivate later planning. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
+Acceptance observations include whether each trial respects confidentiality and authority, remains at or below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a truthful release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is an explicit stop and failed trial observation. The withhold/next-slot result preserves earlier Work and may motivate later planning. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
+
+For this series, a release counts once as a failed trial if it has a capacity or supplier-pinout/integration-bundle mismatch failure or enters R, even if recovery later succeeds; keep all failure reasons. After two distinct failed trials, `ReleaseDecider-17`, within `AUTH-ReleaseDecision-17`, returns B2 for revision or rejects further use. That disposition retains the separate safety decision and grants no authority to revise the account. The immediate confidentiality, assignment, permission and authority stops still apply to the first breach. The existing decision covers at most three trials; a further release needs a new applicable decision.
 
 #### B.1.5.CM:5.1 - Finish a Design Comparison Before a Trial Is Available
 
@@ -140,14 +144,14 @@ A later opportunity with useful obtainable observations can warrant implementati
 
 ### B.1.5.CM:7 - Conformance Checklist
 
-- [ ] The proposed whole has an intended result or preserved condition, situation, reusable operations/invariant, applicability, participants, variation, bounds, and reidentification rule.
-- [ ] Whole identity and every participant status are independently stated.
+- [ ] The returned claim states the whole semantics it needs: intended result or preserved condition, situation, reusable operations/invariant, applicability, participants and relevant variation, bounds and reidentification conditions. Missing grounds remain explicit in a prospective or partial result.
+- [ ] Whole and participant identification are judged separately; candidate and unresolved statuses remain explicit.
 - [ ] Method composition, Work order/overlap, result use, allocation, support, authority, and description relations are not inferred from one another.
 - [ ] The positive branch requires identified whole and parts plus obtaining `B.1.5` relations.
-- [ ] The prospective branch preserves proposed truth and names guards, adapters, alternatives, recovery, stops, burdens, and unresolved conditions.
+- [ ] The prospective branch preserves proposed truth and includes the guards, adapters, alternatives, recovery, stops, burdens and unresolved conditions needed by the receiving use.
 - [ ] WorkPlan, performed Work, observations, MethodDescription, and Method identity remain distinct.
 - [ ] The result can lower below a candidate whole when load-bearing semantics or relations are missing.
-- [ ] A supported account or lower result can complete its receiving use. Any selected continuation has a worthwhile feasible contribution and names the needed later Work, observations, authority, acceptance/failure and reconsideration.
+- [ ] A supported account or lower result can complete its receiving use. Any selected continuation has a worthwhile feasible contribution and names the needed later Work, observations, any required authority, acceptance/failure and reconsideration.
 
 ### B.1.5.CM:8 - Common Anti-Patterns and How to Avoid Them
 

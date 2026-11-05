@@ -186,7 +186,7 @@ Evidence must answer the question it actually bears on:
 
 `CL` may summarize evidence strength for a stated correspondence: `0` contradicted, `1` weakly comparable, `2` bounded support with explicit counterexamples, and `3` matched stated invariants with no current material counterexample. It is optional and never serves as a use threshold. A `CL=3` label does not make a type-structure use suitable; the separate claim must still name the rule and tolerance, and reliance must still pass under A.10 or B.3.
 
-Observed losses, unit differences, counterexamples, and invariant checks belong in the evidence path or card. The proposed use's permitted-loss tolerance belongs in its ClaimGraph. A loss observation can change without reidentifying either the fixed Bridge or the bounded-use claim; it may instead reopen the claim's polarity or the current reliance disposition.
+Observed losses, unit differences, counterexamples, and invariant checks can supply grounds for a relation or bounded-use claim. Use an A.10 path when provenance or reliance must remain replayable, including the ordinary reliance required by §4.2; use a Card when reusable packaging is warranted under §8. The proposed use's permitted-loss tolerance belongs in its ClaimGraph. A loss observation can change without reidentifying either the fixed Bridge or the bounded-use claim; it may instead reopen the claim's polarity or the current reliance disposition.
 
 ### F.9:8 - Bridge occurrence, description, Card, and publication
 

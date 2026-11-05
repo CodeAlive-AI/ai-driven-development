@@ -9,11 +9,11 @@
 
 **Use this when.** Use B.3 when an actual named assurance claim is current: for example, a claim that an exact model claim is credible for one decision, or that an exact safety claim is adequately supported for one release use.
 
-**First useful move.** Write the target claim and the assurance use in one sentence. Then ask which direct results and argument make that use supportable. If there is no assurance claim, stop and use the pattern that defines or tests the actual evidence, status, gate, permission, safety, release, work, or domain-result claim.
+**First useful move.** State the target claim and the assurance use. Then ask which direct results and argument make that use supportable. If there is no assurance claim, stop and use the pattern that defines or tests the actual evidence, status, gate, permission, safety, release, work, or domain-result claim.
 
 **What goes wrong if missed.** A visible label or a convenient score starts raising trust without an exact target, argument, basis, limitation, and use. At the other extreme, a modest assurance question is forced through a universal score and a large record whose fields do not affect the decision.
 
-**What this buys.** The user gets the smallest assurance result that changes the named use, with enough basis and limits to inspect or reopen it. Domain-specific characteristics and calculations remain usable without pretending that unlike measures share one scale.
+**What this buys.** The user gets the smallest assurance result sufficient for the named use, with enough basis and limits to inspect or reopen it. Domain-specific characteristics and calculations remain usable without pretending that unlike measures share one scale.
 
 **Not this pattern when.** Stay with `A.2.4` for the classification of an episteme as evidence, `A.10` and `G.6` for source recovery and bounded reliance, `G.11` for currentness, `F.10` for a status value and its use, `A.21` for a gate decision, and the direct domain pattern for safety, permission, access, responsibility, release, compliance, or controlled action. Consequence alone does not create an assurance claim. A direct domain rule may require one, but the claim must be stated before B.3 is applied.
 
@@ -89,7 +89,7 @@ AssuranceResult:
   reopenCondition:
 ```
 
-`targetClaimRef` identifies the exact C.2.1 episteme or one exact C.2.1 `ClaimAddress` when the use concerns one addressed claim inside a larger episteme. `basisRefs` cite the direct results, evidence-use relations, provenance paths, argument claims, or domain rules actually used. A compact result is complete when these fields decide the named use and another person can see why the stronger use is not carried.
+`targetClaimRef` identifies the exact C.2.1 episteme or one exact C.2.1 `ClaimAddress` when the use concerns one addressed claim inside a larger episteme. `basisRefs` cite the direct results, evidence-use relations, provenance paths, argument claims, or domain rules actually used. A compact result is complete when these fields decide the named use and its basis and limits are recoverable.
 
 Keep the assurance argument readable beside its result or through references that let the recipient inspect it. Explain why the cited basis supports the target claim for this use, including applicable assumptions, limitations and relevant contrary results. This written account is an **assurance case**. Develop it while reasoning: start with the claim and use, state the proposed support, and revise the argument when a premise or inference proves inadequate. A short coherent paragraph can suffice; add detail when review, transfer or later reconsideration needs it.
 
@@ -123,7 +123,7 @@ The letters `F`, `G`, `R`, and `CL` may appear inside a declared local scheme, b
 
 - **Formality or inspectability.** Formal structure can make assumptions and inference steps easier to check. It raises assurance only when the named argument explains which uncertainty or verification need it closes. Making a wrong model proof-grade does not improve truth or empirical adequacy.
 - **Claim scope.** `U.ClaimScope` stays an A.2.6 value. It is not a quality coordinate. Widening or narrowing scope changes the claim and its applicable use under the declared scope rules.
-- **Reliability-like characteristics.** Use the exact domain definition, bearer, population or trials, conditions, scale, unit, and qualification window. A system reliability measure and an evidence-quality judgment are not interchangeable.
+- **Reliability-like characteristics.** Use the exact domain definition, bearer and scale, with any applicable unit and the population or trials, conditions and qualification window required by that definition or the receiving use. A system reliability measure and an evidence-quality judgment are not interchangeable.
 - **Relation congruence.** Characterize one exact mapping, calibration, interface, or other relation occurrence only under a declared scale and interpretation. The value neither changes the participants nor supplies a universal penalty.
 
 Never average ordinal values. Do not subtract an ordinal value from a ratio quantity. Thresholds and order comparisons are valid only under the scale that defines them.
@@ -135,15 +135,17 @@ B.3 supplies no default fold. When the assurance argument combines quantitative 
 1. the exact result claims being combined;
 2. the dependency or alternative-path structure;
 3. the domain aggregation rule or model;
-4. independence, dependence, calibration, and unit assumptions;
+4. the assumptions required by the rule or model, including any independence, dependence, calibration or unit assumptions;
 5. the calculation or ordered comparison;
-6. the rival rule that would matter if an assumption fails.
+6. any rival rule that is plausible at comparable effort and could change the result or its warranted use.
 
 Use `min` only when the cited domain rule makes the weakest input a lower bound or bottleneck for the exact quantity. It is not universally conservative. If no applicable aggregation rule is available, report the inputs separately and return a bounded, non-positive, or unresolved disposition. Do not manufacture one score to make the result look complete.
 
 Several independent evidence lines may strengthen an argument only through the rule that states how their dependence and coverage are handled. Claim-scope intersection or union follows A.2.6 and the relevant evidence model; it is not an assurance arithmetic shortcut.
 
-#### B.3:4.5 - Choose one of three proof paths
+#### B.3:4.5 - Add the proof detail the assurance use needs
+
+Add calculated or model-bearing details, replay details, or both to the compact result when the named assurance use needs them.
 
 **Compact path.** Use the six-field result in 4.2. Stop when it decides the named use.
 
@@ -157,7 +159,7 @@ Do not select the replay path merely because the use is important. Importance ma
 
 A visible artifact, such as an attestation or dashboard tile, contributes to assurance only through a claim and basis relation used by the argument. Establish whether the artifact supplies a cue, source, evidence item, or representation for that use.
 
-If the visible item only reports a status, gate decision, permission, warning, or source location, use its direct pattern and produce no B.3 result. If an assurance claim is current, cite the item only for the property it actually establishes. A valid signature or provenance chain can establish origin and integrity without establishing safety, truth, compliance, or readiness.
+If the current question concerns only a status, gate decision, permission, warning, or source location, use its direct pattern and produce no B.3 result. If an assurance claim is current, cite the item only for the property it actually establishes. A valid signature or provenance chain can establish origin and integrity without establishing safety, truth, compliance, or readiness.
 
 #### B.3:4.7 - Leave domain obligations with their direct patterns
 
@@ -189,7 +191,7 @@ Every positive or narrowed B.3 result:
 
 1. identifies the exact target claim and named assurance use;
 2. cites only basis results and relations that actually bear on that use;
-3. states assumptions, limitations, and unsupported stronger uses;
+3. states applicable assumptions and limitations, including any unsupported stronger use relevant to the receiving decision;
 4. keeps target fact, claim, evidence, assessment, result, record, publication, and later use distinct;
 5. names a reopen condition;
 6. uses the direct domain rule for every safety, permission, access, status, release, responsibility, or controlled-action premise;
@@ -197,7 +199,7 @@ Every positive or narrowed B.3 result:
 
 #### B.3:5.2 - Additional obligations for a calculated result
 
-A calculated result also names every bearer, characteristic, scale, unit, dependency, calibrated mapping, aggregation rule, and calculation. It shows at least one assumption whose failure changes the result. If a rival rule is plausible at comparable effort, show why the selected rule fits the declared dependency structure.
+A calculated result also names every bearer, characteristic, scale, applicable unit, dependency, calibrated mapping, aggregation rule and calculation it uses. Explain sensitivity to assumption failures when it matters for the named assurance use. If a rival rule is plausible at comparable effort and could change the result or its warranted use, show why the selected rule fits the declared dependency structure.
 
 #### B.3:5.3 - Additional obligations for replay
 
@@ -257,14 +259,14 @@ An assurance argument relies on a manufacturing sequence whose result changes wh
 | `CC-B3-2` | The compact result contains target, use, basis, disposition, limits, and reopen condition; optional fields appear only when they change the conclusion or its replay. |
 | `CC-B3-3` | Every characteristic has one bearer, property, scale and unit where applicable, interpretation, and basis. |
 | `CC-B3-4` | Formality is not treated as monotone truth, empirical adequacy, or warrant. |
-| `CC-B3-5` | Aggregation cites the domain model, dependencies, assumptions, units, calculation, and relevant rival; no default `min`, mean, penalty, or ordinal arithmetic is used. |
+| `CC-B3-5` | Aggregation cites the domain model, dependencies, required assumptions, applicable units, calculation or ordered comparison, and any relevant rival; no default `min`, mean, penalty, or ordinal arithmetic is used. |
 | `CC-B3-6` | Design and run results remain separate when their conditions or evidence differ. |
 | `CC-B3-7` | Target fact, target claim, evidence use, assessment Work, input results, assurance result, witness, note, publication, and later reliance or decision remain recoverable separately. |
 | `CC-B3-8` | A label, dashboard, card, provenance mark, attestation, or publication contributes only the exact property established through a cited relation. |
 | `CC-B3-9` | Safety, rights, access, responsibility, contest, redress, status, permission, release, and controlled action remain with their direct patterns. |
 | `CC-B3-10` | A causal-use premise cites the exact C.28 result. A Method premise cites its direct composition, selection or other result; add an A.22 structure only when independently selected organization changes the assurance question, with all four identity discriminators recoverable. |
 | `CC-B3-11` | Work, performer, Method, bindings, witnesses, reusable notes, and an optional F.6 assignment check are added only for an actual replay, competence, independence, timing, contest, or redress need. Every Work follows the §4.5 A.13 then independent A.15.1 route. |
-| `CC-B3-12` | A positive result states the unsupported stronger use and exact reopen condition. |
+| `CC-B3-12` | A positive result states its exact reopen condition and any unsupported stronger use relevant to the receiving decision. |
 
 ### B.3:8 - Common anti-patterns and repairs
 
@@ -293,7 +295,7 @@ An assurance argument relies on a manufacturing sequence whose result changes wh
 
 - B.3 supplies no convenient universal number. A project must use the domain model that gives its inputs meaning.
 - Some assurance questions remain unresolved until a dependency model, calibrated mapping, or direct domain requirement is supplied.
-- Reusable replay records cost more than a compact result and therefore require an actual receiver.
+- Reusable replay records can add cost; include them when the receiving use needs them.
 
 ### B.3:10 - Rationale
 

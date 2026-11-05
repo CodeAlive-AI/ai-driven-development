@@ -158,12 +158,12 @@ At `10:05`, the current A.21 application of profile `Release-Core-E4` consumes t
 
 Separately, exact A.2.8.PER `GrantedPermissionRelation@Context` occurrence `DeployGrant-12` covers the named beneficiary and deployment action for `[09:00, 11:00)`. `DeployNonProhibitionFinding-E2` reports `nonProhibited` from its named current frame, explicitly complete for this use, in evaluation window `[10:00, 10:15)`; it is not the grant. A `PermissionNormConflictFinding@Context`, if an incompatible current norm is established over the same content and window, would be a third permission-side input and an unresolved disposition would stop the use. A policy that requires readiness, gate passage, a current grant, and the frame-relative non-prohibition result may rely on those distinct inputs at `10:10`; it must re-evaluate the relevant branch when any window ends or a conflict appears. None of them proves that deployment Work occurred. A.15.1 identifies that Work only after its dated occurrence basis obtains.
 
-If a dashboard shows green but the readiness result or its reliance window, the current A.21 profile application and gate result, or the required permission value and qualification window cannot be recovered, keep the display at source finding under A.15.4. Recover the gate result directly or through `ReleaseGateLog-12`; loss of the log alone need not block reliance on a fully recoverable result. Open the A.10 evidence-provenance and currentness question when that basis for a consumed claim is unresolved.
+If a dashboard shows green but the required readiness result or its reliance window, the current A.21 profile application and gate result, or the required permission value and qualification window cannot be recovered, resolve the missing basis under its subject pattern before relying on the affected claim. Recover the gate result directly or through `ReleaseGateLog-12`; loss of the log alone need not block reliance on a fully recoverable result. Open the A.10 evidence-provenance and currentness question when that basis for a consumed claim is unresolved.
 
 ### A.15.5:6 - Bias-Annotation
 
 - **Ready-label bias.** A green tile, ready label, release screen, or commitment board position can look stronger than the recoverable claim. Recover whether the current object is readiness, appearance-based reliance repair under `A.15.4`, gate decision, work authorization, or performed work.
-- **Full-kit umbrella bias.** Full-kit preparation is useful, but it can hide planned baselines, performed preparation work, resource readiness, source currentness, and target work. Keep each current value in its subject pattern.
+- **Full-kit umbrella bias.** Full-kit preparation can hide planned baselines, performed preparation work, resource readiness, source currentness, and target work. Keep each current value in its subject pattern.
 - **Baseline-as-actuals bias.** Planned fillers and readiness references do not prove launch values, performed values, variance, or results.
 
 ### A.15.5:7 - Conformance Checklist
@@ -174,7 +174,7 @@ If a dashboard shows green but the readiness result or its reliance window, the 
 | `CC-A15.5-2` | separates readiness from performed work. | No target `U.Work` occurrence is asserted unless dated work evidence is current. |
 | `CC-A15.5-3` | separates full-kit inputs, checking results and preparation/checking Work. | A readiness claim need not identify a separate checking Work. Every dated Work it does assert needs A.13 and independent A.15.1 admission; F.6 applies only to a consumed precise assignment-bound claim. |
 | `CC-A15.5-4` | cites planned baselines without rewriting them. | A.15.3 planned-filling rows remain declaration-local content inside the exact WorkPlan. |
-| `CC-A15.5-5` | keeps gate decisions in A.21. | Readiness labels do not create `GateDecisionResult` without A.21 fields. |
+| `CC-A15.5-5` | keeps gate decisions in A.21. | When the use requires a gate result, establish it through the applicable A.21 profile application over its complete effective check set and mapping rules; readiness may supply one declared check input. |
 | `CC-A15.5-6` | keeps resource readiness and resource aggregation distinct. | Planned reservations and actual consumption are not merged. |
 | `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can identify the next supported action; committing or launching still requires its separately satisfied conditions. |
 | `CC-A15.5-8` | keeps prospective and retrospective permission inputs temporally typed and non-productive. | A current grant uses its `validityWindow`; non-prohibition uses its `evaluationWindow`; conflict uses its `overlapWindow` and any subject-pattern resolution `effectiveWindow`. Exercise and non-violation appear only for different dated Work or an explicit post-launch recheck, with their own intervals. None proves another permission value, readiness, gate passage, capability, or target-work performance. |
@@ -185,8 +185,8 @@ If a dashboard shows green but the readiness result or its reliance window, the 
 | Anti-pattern | Why it fails | Better use |
 | --- | --- | --- |
 | Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the exact permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named. |
-| Full kit as work done | Prepared inputs are treated as target work completion. | Record preparation work separately and target work only when it occurs. |
-| Baseline as actuals | Planned slot fillers are treated as launch or performed values. | Keep planned fillers in A.15.3 and record variance after work. |
+| Full kit as work done | Prepared inputs are treated as target work completion. | Keep prepared-input facts separate from target completion. Establish any claimed preparation or target Work under A.15.1, and any completion claim under its applicable criterion and case facts. |
+| Baseline as actuals | Planned slot fillers are treated as launch or performed values. | Keep planned fillers in A.15.3. When the receiving question needs a comparison, establish the actual values independently and state the result under the applicable comparison rule. |
 | MOVE imported as kind | TameFlow source wording becomes an FPF object. | Recover intended work, commitment, readiness, gate, preparation work, or performed work under FPF patterns. |
 
 ### A.15.5:9 - Consequences
@@ -204,7 +204,7 @@ Costs:
 
 ### A.15.5:10 - Rationale
 
-The readiness question is practical and recurrent: should this intended work enter the work boundary now? FPF already has the kinds needed to answer it. One local criterion and result claim keep the answer inspectable without collapsing the plan, its inputs, the checking Work, gate, permission, or target Work into one object.
+The readiness question is practical and recurrent: does this intended performance satisfy its work-entry criterion at the stated time? FPF already has the kinds needed to answer it. One local criterion and result claim keep the answer inspectable without collapsing the plan, its inputs, the checking Work, gate, permission, or target Work into one object.
 
 The result depends on the inputs actually consumed by its criterion. It may use an immediate A.15.4 disposition without making that note a new formal object. Later reliance needs the claim and its grounds recoverable under the relevant access and currentness conditions; a durable representation is one way to provide that access. A missing input may need preparation, clarification or a direct subject-pattern check, rather than automatically becoming a source-repair problem.
 

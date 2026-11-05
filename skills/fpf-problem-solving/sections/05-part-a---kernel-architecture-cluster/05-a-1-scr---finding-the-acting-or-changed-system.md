@@ -20,7 +20,7 @@
 
 **Honest unknown case.** `WorkshopController-9` is an exact boxed device, but the team cannot recover its internal assembly, reidentification rule, or operating boundary. The evaluation is **unknown** and names those missing inputs; the decision that assumes an acting controller remains blocked. The entity itself satisfies or fails the criterion independently of current knowledge.
 
-**What this buys.** A real actor, change bearer, lifecycle subject, capability holder, or project system-of-interest decision gets a tested identity and boundary. A direct Work, Method, capability, structure, episteme, or relation question leaves immediately without an unnecessary A.1 evaluation. Continue through A.1.STM when the shared project SOI and intended-use basis, or this result's connection to it, remains unresolved. Recognition alone does not require traversing the long map.
+**What this buys.** A real actor, change bearer, lifecycle subject, capability holder, or proposed project system of interest gets a tested identity and boundary. A direct Work, Method, capability, structure, episteme, or relation question leaves immediately without an unnecessary A.1 evaluation. Continue through A.1.STM when the shared project SoI and intended-use basis, or this result's connection to it, remains unresolved. Recognition alone does not require traversing the long map.
 
 **Not this pattern when.** If the subject and its admitted kind are already clear, use the subject pattern of the claim. If service or access wording hides a promise, participant, bearer, permission, Work occurrence, status, evidence, or direct relation, begin with A.6.P §4.11a. Enter A.1.SCR from that route only when the repaired claim itself depends on whether the exact entity recovered by A.6.P—an exact bearer or access-providing arrangement—is a system. If only a name for an already recoverable object is unclear, use F.18.
 
@@ -81,7 +81,7 @@ Before testing systemhood, ask whether the current decision already concerns one
 | Promise, commitment, speech act, or permission result | A.2.3, A.2.8, A.2.9, or A.2.8.PER |
 | Service/access referent, status, evidence, evaluation, delivery, acceptance, or other relation | A.6.P §4.11a and then the exact subject pattern |
 
-If this result answers the decision, stop here. Name the object, its subject pattern, and what you can now do. Do not apply A.1 as a recurring project ritual. This is a local stop: it neither supplies nor removes the shared SOI and use hypothesis required for a systemic project account. Use A.1.STM when that common basis or the local result's connection to it is the question.
+If this result answers the decision, stop here. Name the object, its subject pattern, and what you can now do. Do not apply A.1 as a recurring project ritual. This is a local stop: it neither supplies nor removes the shared SoI and use hypothesis required for a systemic project account. Use A.1.STM when that common basis or the local result's connection to it is the question.
 
 If a needed relation has no current governor, state the exact participants and blocked receiving use, return `missing-governor[...]`, and continue under A.6.RCD. Do not substitute `relatedTo`, a graph edge, or a local bundle.
 
@@ -113,7 +113,7 @@ Then apply the already admitted `U.System` condition: the whole has an actual ph
 
 After one candidate bearer is recognized, rejected, or left unresolved, use `A.1.CSD` only when the current question is which other Systems may undergo relevant changes and that discovery can change a named decision or investigation. A.1.SCR does not generate the bearer set or qualify consequence paths; it supplies only the load-bearing recognition result or blocker.
 
-These are response forms, not a schema.
+
  Persist a classification assertion or evaluation-result episteme only when another use must inspect or cite it; C.2.1 is then the pattern for that episteme. `true | false | unknown` describes an evaluation and changes no kind extent.
 
 #### A.1.SCR:4.5 - Add only the neighbors used now
@@ -126,24 +126,26 @@ When service or access wording is the unresolved phrase, start in A.6.P §4.11a.
 
 “My service stopped” does not by itself say that a system stopped. Service-provision Work may have ceased, an exact deployed or physical bearer may have stopped or become unavailable, an access-providing arrangement may be proposed as the exact system whose functioning stopped, or promised availability/fulfilment may have failed. Use A.1.SCR only to test a separately proposed exact bearer or access-providing arrangement when its system boundary matters to the decision.
 
-#### A.1.SCR:4.7 - Connect recognition to the project SOI
+#### A.1.SCR:4.7 - Connect recognition to the project SoI
 
-A **project system-of-interest (SOI)** is a system selected relative to the intended result, receiving use and contributions of a named undertaking. A component, creator or instrument can be the SOI of a related project or, in broader observer usage, of an inquiry. Keep that context recoverable. Recognition under A.1 establishes the System, not its project designation or the receiving obligations between undertakings. A project may have several systems and other results; this recognition question tests the particular entity on which the current claim relies. A.1.STM:4.1–4.3 develops their connected reasoning, local completion and reconsideration of purpose.
+The **system-of-interest (SoI)** is the system whose intended use and expected benefit give the relevant cooperation of creators its common purpose. A.1.STM:4.1 distinguishes it from the **system-in-hand**, the system locally being investigated or changed. An organization can be that engineering subject while its product or products remain the SoI. A machine or component supplied as a usable product can be the SoI of its own product undertaking under the receiving-use and fitness obligations explained there. Recognition under A.1 establishes the System; the cooperation's purpose and designation need their own basis. One project can concern several systems and other results, while this recognition question tests the exact entity on which the current claim relies.
 
-A plan or decision can designate the project SOI or select a local subject. Recover which claim is current and keep these questions separate:
+A plan or decision can designate the project SoI or select a local subject. Recover which claim is current and keep these questions separate:
 
 1. identify the actual System, or keep an intended future holder as a designator in plan, decision or description content;
 2. recover the designation and intended use; when common project purpose is claimed, recover the participants' working agreement rather than infer it from the designation alone;
 3. admit composite project Work only after A.15.1 and A.15.6 qualifications hold;
 4. state each actual work-to-referent, transformation, production, evaluation, delivery, acceptance or later-use fact under its own governor;
-5. test any technical system-role classification and A.2.1 assignment separately; a local `SystemOfInterestSystemRole` criterion must express the relevant project relation; a criterion selecting any investigated system answers a different question; and
-6. use A.1.STM when the recognized System or a local result must be connected to the common SOI's intended use. If that basis is already supported, its section 4.4 retains the narrower route: locate the first unsupported dependency, use its subject pattern, and return the answer or a named stop.
+5. test any technical system-role classification and A.2.1 assignment separately; a local `SystemOfInterestSystemRole` criterion using this Library meaning must express the product-use and cooperation basis, rather than select any system being investigated or engineered; and
+6. use A.1.STM when the recognized System or a local result must be connected to the common SoI's intended use. If that basis is already supported, its section 4.4 retains the narrower route: locate the first unsupported dependency, use its subject pattern, and return the answer or a named stop.
 
-A future SOI or a series of intended instances can be described before any actual holder exists. Agreement about the SOI role and required kind of holder is not recognition of an individual System. A.1.STM:4.2 keeps these prospective and actual claims distinct.
+For example, a production team can recognize the factory as the actual System whose layout and capabilities it is changing. That recognition supports organizational engineering without making the factory the SoI of those works. The usable machines it must supply remain the product SoI. The project can close when sufficient evidence supports the factory's agreed capability under A.1.STM:4.1.1. A prospective factory design still describes an intended system, and recognition remains open until its actual identity grounds hold.
+
+A future SoI or a series of intended instances can likewise be described before any actual holder exists. Agreement about the SoI role and required kind of holder is not recognition of an individual System. A.1.STM:4.2 keeps these prospective and actual claims distinct.
 
 For a claim about a particular dated Work occurrence, first identify every actual performing System and recover its A.13 core. Independently admit that occurrence under A.15.1 from its performance history, at least one Method actually followed, temporal extent, and at least one locally declared containing-System relation. Apply this branch to the occurrence being asserted, whether it is Work represented on the map or a separately asserted Work of using the map. After admission, add F.6 only when the receiving claim also needs precise assignment-bound attribution through that performer's same obtaining assignment. A Work-only claim may stop after admission.
 
-Infer no project designation from system recognition, affectedness, familiar wording, a system-role label, or shared realization. If the decision needs the unsupported compound project-selection truth, preserve `missing-substrate[project-selection-conjunction]` until one constructor substrate and edition define that claim.
+Infer no project designation from system recognition, affectedness, familiar wording, a system-role label, or shared realization. When a decision needs one compound claim connecting the project designation with independently established Work, change or use facts, apply A.15.6:4.1a. Return `missing-substrate[project-selection-conjunction]` only when the needed operator semantics are unavailable; preserve the designation and direct facts.
 
 #### A.1.SCR:4.8 - Use physical grounding without cross-kind identity
 
@@ -151,7 +153,7 @@ Ask what physically or operationally exists, where its boundary lies, and what p
 
 ### A.1.SCR:5 - Archetypal Grounding — Seven Heterogeneous Worked Cases
 
-Each row states whether the A.1.SCR trigger actually fires. The rows are examples.
+These examples distinguish readings that need A.1.SCR from readings handled directly by another pattern.
 
 | Source phrase | First useful result and route | Next move and governed additions | Near miss or stop |
 | --- | --- | --- | --- |
@@ -159,7 +161,7 @@ Each row states whether the A.1.SCR trigger actually fires. The rows are example
 | “We release a game session.” | Keep composite dated Work, interval, and session record under their subject patterns. If the phrase instead proposes `GameSessionWhole-GS204`, identify that exact operational whole and use A.1 when its boundary, persistence, or acting eligibility matters. | Recover every actual performer's A.13 core and admit Work only with the full independent A.15.1 basis and exact work-part relations; add F.6 afterward only when this claim also needs precise assignment-bound attribution. Evaluate the operational whole through its constituents, assembly, authoritative-state continuity, larger-game compatibility, and acting eligibility. Keep player systems, deployed installation, rule episteme, interval, activities, and records separate. | A label, shared interval, lobby record, or rules document establishes neither systemhood, Work, parthood, nor identity between the Work and the operational whole. |
 | “We sell internet access.” | Start in A.6.P with promise, permission, state, bearer, commercial relation, or other subject-pattern readings. If the phrase instead proposes `InternetAccessArrangement-CA17`, preserve that exact entity and use A.1 only when the arrangement's systemhood matters. | Add Method or MethodDescription, WorkPlan, permission, provisioning Work, system-role assignment, commitment, status, evidence and evaluation, fulfilment, and acceptance only when the named decision needs those claims; evaluate the arrangement separately from its gateway and status. | No `U.Access` or generic `AccessRelation`; credentials, system-role labels or assignments, endpoints, promises, plans, evidence, connections, states, and bearers remain distinct and cannot replace the exact arrangement before A.1 evaluation. |
 | “We develop a program.” | Distinguish code/episteme, computational Method, intended designator, deployed realization, and run. Use A.1.SCR only when a decision depends on the deployed realization acting, persisting, or changing as a system. | Add MethodDescription, planned or actual Work, transformations, and project system-of-interest designation only when the named decision separately asserts them. | Code, algorithm, deployed system, run, and project designation are not one object. |
-| “The salon creates a hairstyle.” | Recover the intended hairstyle and its use. If the claim proposes an embodied hair-and-fastener whole as the SOI, preserve that exact entity for A.1 evaluation; keep a not-yet-existing hairstyle in description content. If the decision concerns only hair structure or characteristics, use those subject patterns. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts and acceptance when needed. A.1.STM connects the hairstyle's use to these choices and distinguishes the salon as provider. | A local structure or characteristic result may close its question. It does not establish the proposed SOI's systemhood, remove the common SOI question, or justify replacing the proposed hairstyle with the client before evaluation. |
+| “The salon creates a hairstyle.” | Recover the intended hairstyle and its use. If the claim proposes an embodied hair-and-fastener whole as the SoI, preserve that exact entity for A.1 evaluation; keep a not-yet-existing hairstyle in description content. If the decision concerns only hair structure or characteristics, use those subject patterns. | Add hairdressing Method, description, dated Work, transformation, affected-referent facts and acceptance when needed. A.1.STM connects the hairstyle's use to these choices and distinguishes the salon as provider. | A local structure or characteristic result may close its question. It does not establish the proposed SoI's systemhood, remove the common SoI question, or justify replacing the proposed hairstyle with the client before evaluation. |
 | “The surface needs a grind.” | Name the workpiece or containing holon and the surface state, structure, and characteristics. Usually leave through those subject patterns without A.1.SCR. | Add grinding Method, treatment Work, transformation, measurement, and acceptance only when the named decision needs them. | A finish label is not an independent system, Work, or transformation. |
 | “The batch moves through the flow.” | Name the material batch under its collection or holon rule and separately the selected `TransformationFlowStructure` or `FlowValuation`. Use A.1.SCR only if a decision depends on whether the batch is an acting or changed system. | Add movement/treatment Work, transformations, transfer relations, path/valuation, and evidence under their subject patterns. | Recover an acting collective under A.1 only if that claim is current; for a claim that Work was performed, name its actual performer. |
 
@@ -192,7 +194,7 @@ Across all rows, first preserve the exact entity named by the proposed system re
 | Classification ritual | Every unfamiliar phrase receives the complete A.1 test. | Stop after an exact Work, Method, capability, structure, episteme, or relation answers the decision. |
 | Temporary reading becomes ontology | Repeated testing creates a candidate kind or third ontic state. | Keep one exact `U.Entity`; evaluation does not create kind membership. |
 | Physical-realization identity | Shared material or extent identifies system, local system-role kind or assignment, capability, Work, transformation, Method, plan, evidence, or description. | Apply each object's direct identity rule. |
-| Project-designation overread | A recognized or affected system is automatically called the project system-of-interest. | Require one named plan or decision designation; keep system identity, system-role-kind interpretation, and system-role assignment separate. |
+| Project-designation overread | A recognized or affected system is automatically called the project system-of-interest. | Recover the product-use and cooperation basis under section 4.7 and the plan or decision designation. Keep system identity, local system-role classification and assignment separate. |
 
 
 ### A.1.SCR:7 - Conformance Checklist — Practical Checks
@@ -207,7 +209,7 @@ Across all rows, first preserve the exact entity named by the proposed system re
 | `CC-A1-SCR-6` | Add a neighboring claim only under its subject pattern and only when the named decision needs that claim. |
 | `CC-A1-SCR-7` | Service/access ambiguity begins in A.6.P §4.11a and returns here only for a separate system-dependent claim about the exact entity recovered there—an exact bearer or access-providing arrangement. |
 | `CC-A1-SCR-8` | A missing relation preserves exact participants and dependent use and records the established A.6.RCD result `missing-governor[...]`. |
-| `CC-A1-SCR-9` | Designation follows a named plan or decision; current local subject and project SOI remain distinct. Recognition, designation, participants' agreement, technical classification and assignment are supported at their own scopes. |
+| `CC-A1-SCR-9` | A SoI designation has the product-use and cooperation basis in section 4.7 as well as its named plan or decision. The local system-in-hand, including an engineered creator, remains distinct. Recognition, designation, participants' agreement, technical classification and assignment are supported at their own scopes. |
 | `CC-A1-SCR-10` | Physical grounding creates no cross-kind identity or unrestricted composition. |
 
 
@@ -222,16 +224,16 @@ Across all rows, first preserve the exact entity named by the proposed system re
 | Unknown as a third ontic state | Missing information becomes world-side indeterminacy. | Name the missing input and blocked decision. |
 | Neighbor bundle | Different identity laws disappear. | Return the subject first, then separately governed claims needed now. |
 | Physical-realization identity | Co-location or one embodiment merges kinds. | Apply each identity rule and relation governor. |
-| Project designation inferred | Recognition or affectedness is mistaken for designation as the project system-of-interest. | Name the plan or decision; test any system-role kind and system-role assignment separately. |
+| Project designation inferred | Recognition or affectedness is mistaken for designation as the project system-of-interest. | Recover the product-use basis and designation under section 4.7; test any local system-role classification and assignment separately. |
 | Software *service* treated as system | Source-domain metonymy silently chooses a bearer. | Begin in A.6.P, name the exact referent, and enter here only for a system-dependent claim. |
 
 ### A.1.SCR:9 - Consequences
 
-The pattern makes full system recognition more useful by applying it only where identity and boundary change an engineering decision. It also makes subject-pattern results productive: Work, Method, capability, structure, episteme, and relations can close their own questions. The cost is that the practitioner must state the decision and may need to stop when construction facts or a relation governor are missing. A local non-System result remains useful while A.1.STM keeps any unresolved common-SOI question visible.
+The pattern makes full system recognition more useful by applying it only where identity and boundary change an engineering decision. It also makes subject-pattern results productive: Work, Method, capability, structure, episteme, and relations can close their own questions. The cost is that the practitioner must state the decision and may need to stop when construction facts or a relation governor are missing. A local non-System result remains useful while A.1.STM keeps any unresolved common-SoI question visible.
 
 ### A.1.SCR:10 - Rationale
 
-The conditional route preserves two useful results: a direct subject-pattern answer when systemhood does not change the decision, and a complete A.1 recognition result when it does. Keeping the proposed entity fixed through that choice prevents a familiar noun or a convenient neighboring referent from selecting a different actor, change bearer or project SOI. Project designation remains a separate claim.
+The conditional route preserves two useful results: a direct subject-pattern answer when systemhood does not change the decision, and a complete A.1 recognition result when it does. Keeping the proposed entity fixed through that choice prevents a familiar noun or a convenient neighboring referent from selecting a different actor, change bearer or project SoI. Project designation remains a separate claim.
 
 Extent-sensitive identity remains useful because it forces the practitioner to state what exists and survives change. Unrestricted composition and category import remain rejected. The seven cases demonstrate transfer across domains without asserting a common kind.
 

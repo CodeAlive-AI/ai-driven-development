@@ -68,13 +68,13 @@ These moves need not end in one tree. Nor does following several connections est
 
 At the chosen moment, identify what must be coordinated and what can vary. Keep prior-result requirements: an operation can be a constituent of an ongoing whole and still have to wait for another constituent's output.
 
-Change one condition of the encompassing work in thought or in a suitable trial. Determine what must change in the constituent action. Then consider a limitation of that action and determine which encompassing performance it prevents or restricts. Use available knowledge when it answers these questions; a new experiment is not automatically required.
+Change one relevant condition of the encompassing work in thought or in a suitable trial. Determine whether and how the constituent action or its coordination must change. Then consider a relevant limitation of that action and determine whether and how it restricts the encompassing performance. Use available knowledge when it answers these questions; a new experiment is not automatically required.
 
 Where control is involved, first check whether the feedback concerns the response and interval being judged. Delayed or misleading feedback can make adequate execution look wrong. Then distinguish failure to follow the reference from accurate execution of a reference that is no longer feasible or useful. A reference may remain in force between updates; generating or revising it is separate work. C.30.LCA helps recover the control relations when those are unclear. Claims about dynamics, feasible response or timing need their subject-specific basis; a conflict requiring architecture change can continue through C.30.ILC.
 
 #### B.1.5.EW:4.5 - Use the explanation to continue or correct the work
 
-Choose the correction that the recovered connection supports:
+Where correction is needed, choose the correction that the recovered connection supports:
 
 | What prevents the encompassing performance? | Useful continuation |
 | --- | --- |
@@ -124,7 +124,7 @@ An observer can recognize their own specialist operation while missing the conne
 - Can the reader identify the action and actual or proposed work being explained?
 - Is each claimed encompassing connection explained through performed or proposed organization, rather than timing or importance alone?
 - Are the needed constituents recoverable without indefinite decomposition?
-- Does a consequential change in whole conditions produce an intelligible change in the action?
+- Does the account explain whether and how relevant changes in whole conditions affect the selected action or its coordination?
 - Are genuine result dependencies and relevant external support retained?
 - Does the result identify a useful continuation without claiming that recognition establishes success or assurance?
 
@@ -156,9 +156,9 @@ Craver and Bechtel's [mechanistic account](https://mechanism.ucsd.edu/bill/resea
 
 [Matni, Ames and Doyle](https://arxiv.org/html/2401.15185v1) explain interacting control functions with different rates and recursively refinable organization. Their formal control constructions support the control example; they do not establish the constitution of every human practice. The practical recovery operation here is a methodological synthesis under FPF's Method and Work distinctions.
 
-For the practical question here—what larger work is being done through this action, and why must the action change—a lifecycle account is a serious but incomplete alternative. It usefully preserves preparation, delivery and other genuine precedence. It does not by itself explain why a smaller partnered step performs the figure better than a larger solo step at the same moment. Sections 4.2 and 4.4 therefore adopt organized-participation recovery and a changed-whole-condition comparison, retaining the lifecycle account where order matters. A short explanation can settle this question without building a full practice architecture.
+For the practical question here—what larger work is being done through this action, and how the conditions of that work affect the action—a lifecycle account is a serious but incomplete alternative. It usefully preserves preparation, delivery and other genuine precedence. It does not by itself explain why a smaller partnered step performs the figure better than a larger solo step at the same moment. Sections 4.2 and 4.4 therefore adopt organized-participation recovery and a changed-whole-condition comparison, retaining the lifecycle account where order matters. A short explanation can settle this question without building a full practice architecture.
 
-A fixed control-layer diagram is another useful alternative when the problem already has a justified controller/reference/plant interpretation. The Matni–Ames–Doyle account helps interpret such a case and its differing rates. Section 4.4 retains the distinction between inadequate execution and an infeasible reference; section 4.2 requires the particular constituent connection rather than inferring it from diagram depth. For non-control work, the source's formal constructions provide an analogy, not its ontology or a guarantee. Reconsider the proposed connection if its explanation rests only on causal influence or if changing the encompassing condition fails to distinguish it. Use a simpler subject Method when it supplies the same useful correction. Where only an earlier-result dependency matters, keep that dependency account and stop.
+A fixed control-layer diagram is another useful alternative when the problem already has a justified controller/reference/plant interpretation. The Matni–Ames–Doyle account helps interpret such a case and its differing rates. Section 4.4 retains the distinction between inadequate execution and an infeasible reference; section 4.2 requires the particular constituent connection rather than inferring it from diagram depth. For non-control work, the source's formal constructions provide an analogy, not its ontology or a guarantee. Reconsider the proposed connection if its explanation rests only on causal influence or if the comparison contradicts the claimed dependence. Use a simpler subject Method when it supplies the same useful result. Where only an earlier-result dependency matters, keep that dependency account and stop.
 
 ### B.1.5.EW:12 - Relations
 

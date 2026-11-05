@@ -31,9 +31,9 @@ The missing contribution is the passage from the encountered situation to a usab
 
 1. **Name the question.** Say what the interpretation should enable: reducing glare, explaining a changed reading, arranging compatible activities or choosing an observation. This determines which distinctions matter.
 2. **Describe the situation at a useful scale.** Indicate the relevant region, objects, time and conditions. Separate available observations from your proposed explanation. Try another boundary or viewpoint when the first description hides an interaction.
-3. **Recover the candidate concept through its relations.** Consult its explanation, examples and conditions. Identify its participants, how they are related, and a consequence that distinguishes its application from a plausible alternative. Use the domain account to supply knowledge omitted by a short definition.
+3. **Recover the candidate concept through its relations.** Consult its explanation, examples and conditions. Identify its participants, how they are related, and the consequences relevant to the question. When a live alternative would change the answer, identify a consequence that distinguishes them. Use the domain account to supply knowledge omitted by a short definition.
 4. **Construct the correspondence.** Point to what supplies each participant here and explain the relations between them. Use a sketch, gesture, annotated observation or short account. If mathematics helps, connect each variable or mathematical object to its interpretation and identify consequential simplifications.
-5. **Derive and examine a consequence.** Work out what should follow in this situation. Vary one relevant condition and compare the resulting prediction with an available observation, counterexample or inexpensive trial. Where competing interpretations support the same sufficient action, keep that bounded answer.
+5. **Derive and examine a consequence.** Work out what should follow in this situation and compare it with relevant available observations or constraints. When an unresolved correspondence or condition can change the needed answer, examine it through a variation, counterexample or feasible trial, or retain it as unresolved. Where competing interpretations support the same sufficient action, keep that bounded answer.
 6. **Return to the question.** Give the explanation, construction, action or next observation now supported. When a consequence fails, revisit the object boundary, relation, condition, representation or candidate concept that produced it. Identify the missing domain contribution if the available account cannot resolve the question.
 
 The result can be an interpreted sketch and a next action. Record the reasoning when another participant or later use needs to recover it.
@@ -52,7 +52,7 @@ The interpretation tells you what to adjust. Moving the viewpoint changes incide
 
 A laboratory must place three tests in two simultaneous-run slots. Its operating conditions say that A and B need the same exclusive fixture throughout a run; B and C need the same exclusive power unit; A and C can run together. There are no other constraints in this constructed case.
 
-Represent tests by vertices and a pairwise inability to share a slot by an edge. The observations supply edges AB and BC. The construction in [B.5:5.1][fpf-b5-5-1-ref] produces slots {A,C} and {B}; reading the result back means that neither exclusive resource is double-booked.
+Represent tests by vertices and a pairwise inability to share a slot by an edge. The operating conditions imply edges AB and BC. The construction in [B.5:5.1][fpf-b5-5-1-ref] produces slots {A,C} and {B}; reading the result back means that neither exclusive resource is double-booked.
 
 Now change the conditions: A and C also require the same observer throughout a run. This adds edge AC. The triangle needs three slots under these conditions; two-colouring no longer supplies an arrangement.
 
@@ -69,7 +69,7 @@ When a teacher, colleague or AI supplies the decisive interpretation, retain tha
 - The concrete question determines which distinctions matter.
 - The interpretation identifies the participants, relations and applicable conditions in the encountered situation.
 - A consequence connects the interpretation to an explanation, construction or action.
-- A consequential change is interpreted using the retained relation and its conditions.
+- When a relevant condition changes, recover what follows from the relation in those changed conditions.
 - The domain account, prerequisites and permitted assistance are accessible to the intended reader.
 - An independent-recognition claim is supported by an appropriately uncued attempt.
 
@@ -83,7 +83,7 @@ When a teacher, colleague or AI supplies the decisive interpretation, retain tha
 
 ### B.5.4:9 - Consequences
 
-The practitioner obtains an interpretation they can use and revise. A mismatch becomes a particular question about an object, relation, condition or domain account. A later calculation receives identified quantities; a model receives interpretable elements; further inquiry receives a discriminating observation.
+The practitioner obtains an interpretation they can use and revise. A mismatch becomes a particular question about an object, relation, condition or domain account. A later calculation receives identified quantities; a model receives interpretable elements; further inquiry receives a next question or observation to pursue.
 
 The cost is constructing and examining the correspondence. This work can be small when the relevant relations are already clear.
 

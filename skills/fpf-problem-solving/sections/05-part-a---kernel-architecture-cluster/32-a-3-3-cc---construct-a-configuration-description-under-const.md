@@ -147,7 +147,7 @@ A familiar coordinate system can make its convenient operations look like proper
 
 Minimal-coordinate preference can also hide a useful relation. In the linkage, fewer coordinates simplify position reconstruction, while the retained constraint equation is useful for a constraint-force question. Choose with that operation in view.
 
-Both biases can occur in a person's reasoning, an AI-generated model or a shared engineering calculation. Make the interpretation recoverable to the next participant, including when a computation is delegated.
+Make the interpretation recoverable to the next participant, including when a computation is delegated.
 
 ### A.3.3.CC:7 - Conformance Checklist
 
@@ -168,14 +168,14 @@ Both biases can occur in a person's reasoning, an AI-generated model or a shared
 | Carrying a fixed-total reduction into a model with arrivals | Make the changed total explicit or retain the counts needed to express it. |
 | Answering a job-order question from queue lengths alone | Retain the ordered identities used by the service rule. |
 | Treating a small coordinate count as a global representation | Supply coverage and equivalence information; use multiple charts or implicit constraints where needed. |
-| Rejecting a parking position because immediate sideways motion is forbidden | Keep the position and test a sequence of allowed motions under the relevant steering and obstacle conditions. |
+| Rejecting a parking position because immediate sideways motion is forbidden | Keep the position in the configuration description. Test a sequence of allowed motions under the relevant steering and obstacle conditions when the receiving question also asks about reachability. |
 | Treating a failed search as impossibility | Return the search limit, or obtain a complete argument or computation for the impossibility claim. |
 
 ### A.3.3.CC:9 - Consequences
 
 The description makes compatibility usable: a solver can seek a fitting arrangement, a practitioner can locate the condition excluding one, and another participant can reconstruct the represented values. A later law of change starts from interpretable configurations.
 
-Construction takes effort, particularly when constraints interact or a compact representation loses necessary detail. An implicit description may save modeling effort while making each computation harder; a parametrization reverses that trade-off. Reuse an adequate description until a changed operation, premise or required distinction defeats it.
+Construction takes effort, particularly when constraints interact or a compact representation loses necessary detail. An implicit description may save modeling effort while making each computation harder; a parametrization may reverse that trade-off for the receiving operation. Reuse an adequate description until a changed operation, premise or required distinction defeats it.
 
 ### A.3.3.CC:10 - Architectural Rationale
 

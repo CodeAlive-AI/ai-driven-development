@@ -11,7 +11,7 @@
 Use this pattern when several exact context-local system-role kinds are already admitted, and a later admission, allocation, or interpretation check needs one of these results:
 
 - an assignment to one system-role kind may satisfy a condition written for another kind;
-- two system-role kinds are incompatible under one exact holder, Work, and time rule;
+- two system-role kinds are incompatible under a stated holder rule, actual-Work or proposed-action identity condition, and temporal test;
 - several independently obtaining assignments are required together under one allocation rule; or
 - one system-role kind narrows another, and the practitioner must decide whether that narrowing is monotonic `U.SubkindOf` or a different residual relation.
 
@@ -24,11 +24,11 @@ Typical working moments include these:
 
 **First useful result.** Write the readable direct relation or `U.SubkindOf` claim needed by the receiving use. Recover its exact predicate. Stop there unless another claim needs one relation occurrence as an identifiable object or needs several obtaining relations selected into one structure.
 
-**Primary EntityOfConcern.** For one direct question, the EntityOfConcern is the exact relation occurrence or exact `C.3.1 U.SubkindOf` occurrence. When several such occurrences must be selected together, it is one `SystemRoleKindRelationStructure`: a dependent `U.Structure` selected from exact local system-role-kind constituents and exact obtaining relations under the exact applied constraints and one named selection-use frame.
+**Primary EntityOfConcern.** For a direct question, first identify the exact relation kind or `C.3.1 U.SubkindOf`, the participant kinds and its predicate. An assertion about a recovered obtaining occurrence uses that occurrence as its EntityOfConcern; claims without such an occurrence follow §4.7. When several such occurrences must be selected together, it is one `SystemRoleKindRelationStructure`: a dependent `U.Structure` selected from exact local system-role-kind constituents and exact obtaining relations under the exact applied constraints and one named selection-use frame.
 
 The structure contains neither holder systems nor system-role-assignment occurrences. A graph, taxonomy table, policy file, or organization chart may describe it but does not become the structure or any selected relation by form.
 
-**What goes wrong if missed.** A job-title order is used as admission authority. An independence rule omits the holder, Work, or overlap condition. A bundle name hides whether one or several systems must hold the assignments. A semantic restriction is called `U.SubkindOf` although a known broader classification can be false. A scheme or taxonomy edition is then inserted as a participant of every relation even when it changes no meaning.
+**What goes wrong if missed.** A job-title order is used as admission authority. An independence rule omits the holder, the actual Work or proposed action, or the temporal condition. A bundle name hides whether one or several systems must hold the assignments. A semantic restriction is called `U.SubkindOf` although a known broader classification can be false. A scheme or taxonomy edition is then inserted as a participant of every relation even when it changes no meaning.
 
 **What this buys.** Admission substitution, incompatibility, joint allocation, monotonic kind order, and residual qualification remain different claims with different truth and identity laws. Actual holders remain systems, actual assignments remain direct species of `U.SystemRoleAssignment`, and the system performing a receiving check remains visible.
 
@@ -49,7 +49,7 @@ A system-role-kind description or taxonomy episteme may state a relation claim, 
 The practitioner needs a reusable relation for a later engineering check, but familiar shorthand collapses four different questions:
 
 1. Can an assignment to one system-role kind satisfy an admission condition written for another?
-2. Are assignments to two system-role kinds incompatible under a stated holder, Work, and time rule?
+2. Are assignments to two system-role kinds incompatible under a stated holder rule, actual-Work or proposed-action identity condition, and temporal test?
 3. Must assignments to a finite set of system-role kinds be present together, and how may holders be allocated?
 4. Does one kind monotonically narrow another, or does the restriction require a different relation?
 
@@ -207,13 +207,13 @@ Exact current assignments and the receiving window remain inputs to the later ch
 
 For substitution and residual qualification, one occurrence begins when fixed ordered kinds satisfy one fixed predicate. For incompatibility, the participant identity is the unordered pair. For a bundle, it is the order-insensitive finite set. In every case, the occurrence continues through the maximal uninterrupted interval during which the fixed predicate obtains for those fixed participants.
 
-A compatible declaration, scheme, `KindSignature`, Bridge, or other semantic-basis edition preserves the predicate only through an explicit continuity decision showing that the rule, orientation or set semantics, applicability, system-role-kind identities, and meaning-bearing semantic basis remain unchanged. Otherwise use another predicate and establish whether it obtains for those participants. A new relation occurrence begins only when it does. Equal displayed labels establish no continuity.
+When a declaration, scheme, `KindSignature`, Bridge or other cited semantic-basis edition changes, compare the rule, orientation or set semantics, applicability, system-role-kind identities and meaning-bearing semantic basis. If these identity-bearing values remain unchanged, predicate identity is preserved. If a value changes, identify the changed predicate and establish whether it obtains for its participants; a new relation occurrence begins only when it does. If the comparison is unresolved, leave predicate continuity unresolved. Equal displayed labels establish no continuity.
 
 An affirmative assertion or occurrence description may state the known `systemRoleKindRelationExtent` only after current facts or accepted constituting history satisfy the predicate and the identity rule recovers the occurrence. Closing an open extent refines the same occurrence when obtaining was uninterrupted. A demonstrated predicate-false gap ends it; later truth begins another. Missing evidence leaves reliance unresolved and does not demonstrate a truth gap.
 
 `systemRoleKindRelationExtent` is content of an affirmative assertion or occurrence description, not a temporal SlotSpec. A target `declaredSystemRoleKindRelationEvaluationWindow` belongs to the receiving assertion or check and is not part of the direct relation signature or occurrence identity.
 
-For `U.SubkindOf`, use C.3.1's own obtaining and identity law, including its exact effective-reference-scheme edition. Do not replace it with the generic A.2.7 interval rule.
+For `U.SubkindOf`, use C.3.1's own obtaining law and participant-determined occurrence identity. The exact effective-reference-scheme edition qualifies the obtaining judgment. Do not replace that identity rule with the generic A.2.7 interval rule.
 
 `SystemRoleKindRelationStructure` identity follows all four A.22 discriminators: exact kind constituents, exact selected relation occurrences, exact applied constraint claims, and the named selection-use frame. A scheme change that changes a constituent, selected relation, applied constraint, or use frame changes the structure; selecting System, Method, Work, result episteme, and publication remain outside identity.
 
@@ -302,7 +302,7 @@ RelationSignature:
     PlantPressureTestAdmissionSubstitutionPredicate, ByValue
 ```
 
-The predicate names the ordered two kinds, receiving Method family, `PressureTestReady` rule, 2026H2 applicability, and the exact semantic basis whose edition changes either clause. `PlantMaintenanceRoles-2026` and `Plant-A-Maintenance-Scheme` may be cited in the assertion; they are not extra relation participants. If a later compatible edition preserves all identity-bearing clauses, an explicit continuity decision preserves the predicate. Otherwise use another predicate and establish whether it obtains for those participants. A new relation occurrence begins only when it does.
+The predicate names the ordered two kinds, receiving Method family, `PressureTestReady` rule, 2026H2 applicability, and the exact semantic basis whose edition changes either clause. `PlantMaintenanceRoles-2026` and `Plant-A-Maintenance-Scheme` may be cited in the assertion; they are not extra relation participants. When a later edition is used, compare those identity-bearing clauses. If they remain unchanged, use the same predicate. If a clause changes, identify the changed predicate and establish whether it obtains for its participants; a new relation occurrence begins only when it does. If the comparison is unresolved, leave predicate continuity unresolved.
 
 ```text
 PlantPressureTestSubstitutionAssertion:
@@ -413,7 +413,7 @@ Vasya may separately hold assignments to `RoboticsEngineerSystemRole` and `Music
 
 | Check | Question |
 |---|---|
-| `CC-A2.7-01` | Is the current object one exact relation among system-role kinds, one `C.3.1 U.SubkindOf` occurrence, or one dependent `SystemRoleKindRelationStructure` whose exact kind constituents, selected obtaining relation occurrences, applied constraint claims, and named selection-use frame are all recoverable? |
+| `CC-A2.7-01` | For a direct question, are the exact relation kind or `C.3.1 U.SubkindOf`, participant kinds and predicate recoverable, with an occurrence identified only when obtaining and identity are established? For a dependent `SystemRoleKindRelationStructure`, are its exact kind constituents, selected obtaining relation occurrences, applied constraint claims and named selection-use frame recoverable? |
 | `CC-A2.7-02` | Are all individual kind-slot values and all members of the bundle set exact context-local system-role kinds? |
 | `CC-A2.7-03` | Does each direct context-local species declare exact SlotSpec ValueKinds and one by-value predicate? |
 | `CC-A2.7-04` | Does the predicate state the actual receiving, incompatibility, allocation, or residual-restriction rule, applicability, and only meaning-changing semantic basis? |
@@ -425,7 +425,7 @@ Vasya may separately hold assignments to `RoboticsEngineerSystemRole` and `Music
 | `CC-A2.7-10` | Is `U.SubkindOf` used only after independent paired judgments establish monotonicity under the exact C.3.1 basis? |
 | `CC-A2.7-11` | Does a non-monotonic restriction remain a separately predicated residual relation? |
 | `CC-A2.7-12` | When occurrence identity matters, does it use fixed kind participants, fixed predicate, and maximal continuous truth interval rather than a row, graph key, or temporal SlotSpec; and is any target evaluation window kept in the receiving assertion or check? |
-| `CC-A2.7-13` | Does an explicit continuity decision cover a compatible edition before predicate and occurrence identity are preserved? |
+| `CC-A2.7-13` | When an edition changes, is a claim of predicate or occurrence continuity supported by the comparison in §4.6, with an unresolved comparison left unresolved? |
 | `CC-A2.7-14` | Are current assignments and A.2.5 state occurrences inputs to the receiving check rather than relation participants? |
 | `CC-A2.7-15` | When the account asserts a particular dated checking Work, are its performer, independently admitted Work, selected Method and outcome recoverable under A.13 and A.15.1, with F.6 only for precise assignment attribution? |
 | `CC-A2.7-16` | Are graphs, tables, matrices, algebras, policies, taxonomies, and publications kept as descriptions, lenses, or epistemes? |
@@ -439,7 +439,7 @@ Vasya may separately hold assignments to `RoboticsEngineerSystemRole` and `Music
 | Job-title or taxonomy order used for admission | The order states neither the receiving rule nor its applicability. | Recover a directional admission-substitution predicate for the exact use. |
 | `RoboticsEngineerSystemRole` treated as a subkind because of its name | A proposed edge is used as its own membership premise. | Evaluate paired classifications independently and apply C.3.1 monotonicity. |
 | Non-monotonic restriction forced into `U.SubkindOf` | A true narrower judgment can coexist with a false broader judgment. | A known narrower-true/broader-false case refutes the proposed order. Leave it unresolved only when required information is missing; use a separately predicated residual relation if that non-monotonic restriction remains useful. |
-| Independence asserted without a joint condition | The checker cannot determine which holder, Work, and window combination is incompatible. | Put same- or different-holder, Work identity, overlap, applicability, and basis into the incompatibility predicate. |
+| Independence asserted without a joint condition | The checker cannot determine which holders, actual Work or proposed action, and windows make the allocation incompatible. | Put the holder rule, the species' actual-Work or proposed-action identity condition, temporal test, applicability and basis into the incompatibility predicate. |
 | Bundle name treated as one kind | Holder allocation and independent assignments disappear. | Keep an order-insensitive kind-set relation and exact allocation predicate. |
 | Taxonomy or scheme made a permanent participant | Interpretation support is turned into world-side relation identity even when meaning does not change. | Keep only kind participants and predicate; include an edition in semantic basis only when the rule depends on it. |
 | Positive assertion reference used to create an occurrence | A reference and interval appear before predicate truth and individuation. | Establish truth, apply the identity rule when needed, then designate the occurrence. |
@@ -464,7 +464,7 @@ When a receiving check needs several kind relations together, a dependent `Syste
 
 The families are separate because their laws differ. Substitution is directional. Incompatibility is symmetric under one joint condition. A bundle uses an order-insensitive finite set and an allocation rule. Monotonic qualification belongs to `U.SubkindOf`; non-monotonic restriction stays residual. One generic hierarchy cannot preserve those distinctions.
 
-Relation realism prevents a document model from becoming the ontology. Direct predicates determine obtaining, and identity laws determine whether the same world-side relation occurrence continues; assertions, policies, and diagrams describe those facts. Slot discipline makes context-local participant domains reviewable and keeps the system-role kind, holder, assignment, predicate, slot, and representation position distinct.
+Direct predicates determine obtaining, and identity laws determine whether the same world-side relation occurrence continues; assertions, policies, and diagrams describe those facts. Slot discipline makes context-local participant domains reviewable and keeps the system-role kind, holder, assignment, predicate, slot, and representation position distinct.
 
 ### A.2.7:10 - SoTA-Echoing
 
@@ -473,7 +473,7 @@ Relation realism prevents a document model from becoming the ontology. Direct pr
 | [gUFO 2026](https://arxiv.org/abs/2603.20948) | A foundational-ontology comparator with explicit type and relation reification distinctions. | Keep relation obtaining, occurrence individuation, assertion episteme, and representation separate without importing gUFO's upper taxonomy. |
 | [OpenFGA role-modeling guidance](https://openfga.dev/docs/best-practices/modeling-roles) | Distinguishes static role-like relations, user-defined role forms, and instance-specific assignments in authorization models. | Use it as a software stress case for separating kind relations, assignment inputs, and outcomes; do not make authorization the universal ontology. |
 | [Cedar policy construction](https://docs.cedarpolicy.com/policies/syntax-policy.html) | Evaluates concrete principal, action, resource, scope, and additional conditions. | Keep structure as one premise while the checking system, exact assignments, action condition, and outcome remain visible. |
-| Separation-of-duties practice across safety, clinical work, governance, and authorization | Useful independence claims depend on exact holder, Work, overlap, and applicability conditions rather than title intuition. | Put those conditions in the symmetric incompatibility predicate and test actual assignments separately. |
+| Separation-of-duties practice across safety, clinical work, governance, and authorization | Useful independence claims depend on the holder rule, actual-Work or proposed-action identity condition, temporal test and applicability rather than title intuition. | Put those conditions in the symmetric incompatibility predicate and test actual assignments separately. |
 | FPF `C.3.1`, `A.6.REL`, `A.6.5`, and `A.22` | Supply monotonic kind order, relation occurrence identity, declaration-local SlotSpecs, and dependent structure identity. | Reuse the existing apparatus instead of creating another role taxonomy or relation-record ontology. |
 
 The software sources are stress cases, not the universal subject. Their transferable contribution is the separation of kind definitions, instance assignments, evaluation inputs, and outcomes.

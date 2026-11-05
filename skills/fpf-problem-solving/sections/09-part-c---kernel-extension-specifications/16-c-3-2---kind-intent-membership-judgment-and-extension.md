@@ -62,7 +62,7 @@ Author a reusable `KindSignature` only when a named receiving use needs the crit
 - the membership condition in terms of directly governed candidate qualities, relations, constructive grounding, epistemes, registrations, certifications, publications, legal statuses, or other exact conditions;
 - the exact `U.ContextSlice` applicability in which the evaluation may be formed;
 - the effective reference scheme: designation and interpretation rules for reading that declaration;
-- named assumptions, dependencies, standards, versions, units, and temporal policy;
+- the assumptions and dependencies on which the criterion relies, including any required standards, versions, units, or temporal policy;
 - the expression properties needed for its intended use under C.2.3; and
 - an optional `ExtentRule` for a named extension-consuming use.
 
@@ -78,7 +78,7 @@ and, only when `A = admissible`:
 
 `J(candidate, kind, signatureEdition, slice) ∈ {true, false, unknown}`
 
-These are local result notations, not newly admitted kinds, A.14 membership occurrences, direct classification relations, or evidence relations. For a fixed candidate, kind, signature edition, and slice, unchanged governed conditions and the same available support and declared dependencies yield the same result; the slice resolves concrete versions and an explicit temporal selector rather than implicit `latest` or `current`.
+These are local result notations, not newly admitted kinds, A.14 membership occurrences, direct classification relations, or evidence relations. For a fixed candidate, kind, signature edition, and slice, unchanged governed conditions and the same available support and declared dependencies yield the same result; the slice resolves every selector in its declared schema, including any declared version or temporal selector, rather than implicit `latest` or `current`.
 
 1. **Recover the candidate first.** An entity is already individuated under its direct pattern. A non-entity value keeps the identity, unit, scale, and interpretation supplied by its governor.
 2. **Pin the inputs.** Name candidate, kind, exact signature edition, and exact slice; avoid implicit `latest` or `current`.
@@ -117,7 +117,7 @@ Keep these changes distinct:
 | Change | Direct consequence | What does not follow automatically |
 | --- | --- | --- |
 | practice, source, team, or locality changes | compare the exact kind definitions and declaration meanings | another kind or `KindBridge` |
-| two distinct kinds and a directional correspondence are current | test C.3.3 obtaining and evaluate the receiving candidate afresh | transferred source truth |
+| two distinct kinds and a directional correspondence are current | test C.3.3 obtaining; for a candidate-bearing receiving use, evaluate the candidate under the receiving declaration | transferred source truth |
 | criterion, candidate domain, applicability, `EntityOfConcern`, or scheme changes | another declaration episteme; `KindSignature` qualification and any edition relation are checked separately as in section 5; C.3.1 decides kind continuity | another kind merely by edition |
 | candidate fails ValueKind or slice applicability | `not-applicable`; no judgment | `unknown` or `false` |
 | candidate state changes | reevaluate in the relevant slice when admissible | a new signature or kind |
@@ -226,7 +226,7 @@ The kind, its declaration, pre-judgment applicability, one admissible candidate 
 
 ### C.3.2:17 - SoTA-Echoing
 
-Model theory and type systems distinguish intensional declarations, satisfaction judgments, and extensions; measurement and evidence disciplines distinguish the subject feature from its observation or support. C.3.2 combines those separations with FPF's episteme identity, context-slice, representation, and direct-object boundaries.
+A refusal can suffice when the receiver needs only the guard decision. If the receiver needs classification or a further action, `C.3.2:6` preserves the relevant differences: an unsuitable request yields `not-applicable` and no judgment; missing grounds for an admissible request yield `unknown`; an admissible candidate's known criterion failure yields `false`. Collapsing them into `false` would assert non-membership for a mismatch or missing grounds. Correct the request or seek missing grounds only when a further answer is needed; an adequate negative or unresolved answer can finish the work.
 
 ### C.3.2:18 - Relations
 

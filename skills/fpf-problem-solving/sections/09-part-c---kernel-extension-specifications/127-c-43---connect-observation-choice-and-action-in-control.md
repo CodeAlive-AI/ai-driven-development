@@ -115,6 +115,8 @@ Check the information needed at the moment of action. Prediction can permit a ju
 
 #### C.43:4.3 - Construct possible continuations, including conditional future actions
 
+When you cannot yet formulate relevant alternatives or the conditions that would distinguish them, B.5:4.1.2 develops that basis from available material, a subject relation and a revealing consequence or trial. Use that construction here. An unknown condition of a described continuation differs from not yet having a useful continuation to describe; a classification of conditions alone cannot supply the latter.
+
 Construct alternatives from the available situation and from what must be obtained. Reason backward from the required result to the contributions it needs, and forward from available means to the results they could produce. Where the accounts fail to meet, obtain the missing contribution through **C.39**, revise the proposal, or retain the incompatibility as an explicit limit.
 
 A recommendation or evidence demand can leave that alternative partly unspecified. Recover what following it would require, who could perform the work and which receiving result it could improve. "Validate the model" may hide a study that finishes after the response window, while a narrower check could still support a useful action. Use **C.11.DUA:4.1–4.4** when this connection is missing: recover the demanded work, compare its attainable contribution and burden, and return the warranted advice. Bring the resulting proposal, sufficient present answer or actual impasse into this control account. A binding requirement continues to constrain the available continuations until its authority or agreement changes it.

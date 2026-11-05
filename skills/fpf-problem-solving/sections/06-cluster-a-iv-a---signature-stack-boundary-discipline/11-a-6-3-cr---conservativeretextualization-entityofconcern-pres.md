@@ -34,7 +34,7 @@ Without a dedicated pattern for conservative textual re-expression:
 ### A.6.3.CR:3 - Forces
 
 - **Same entity, different wording.** Readers need different textual forms without reopening the EntityOfConcern.
-- **Compression vs loss visibility.** Shorter or plainer forms are often useful, but omissions and source-loss modes must stay explicit.
+- **Compression vs loss visibility.** Shorter or plainer forms are often useful, but omissions and source-loss modes that affect interpretation or intended use must stay visible.
 - **Direct vs correspondence-mediated rewrites.** Some rewrites use one source episteme; others depend on claims about relations among sources.
 - **Restatement vs another construction.** Explanation, a material representation change and retargeting need their own conditions even when their outputs include text.
 - **Publication discipline.** Admissible MVPK faces and publication renderings still matter even when the transform looks like "just a rewrite."
@@ -105,7 +105,7 @@ Only after these questions are answered does a fuller review record usually beco
 
 #### A.6.3.CR:4.3 - Working-model first; explicit review record only when the case needs fuller review
 
-Follow **E.14’s working-model-first discipline**: an ordinary report, summary, or translation states what stayed the same, what was omitted, when the rewrite stops being conservative, and which pattern to use next. Put only the support needed for the current review or reliance question beneath that account.
+Follow **E.14’s working-model-first discipline**: an ordinary report, summary, or translation keeps the source claims, preserved meaning and material omissions recoverable. When a changed claim needs another pattern, name that claim and its route. Put only the support needed for the current review or reliance question beneath that account.
 
 **Ordinary case (default).** For everyday entityOfConcernRef-preserving rewrites, it is usually enough that the text or its surrounding publication keeps explicit:
 - which source `U.Episteme` claims are being re-expressed;
@@ -160,7 +160,7 @@ Each example remains under A.6.3 only while the same-entity and conservativity l
 
 ##### A.6.3.CR:4.5.a. - Preservation rule
 
-A case under `ConservativeRetextualization` preserves the same resolved EntityOfConcern, the declared bounded context, and the already available claim-bearing source while changing wording, register, language, ordering, or density. It states what remains preserved about claim scope, publication scope, pins, provenance, grounding, and ontic scaffold, and it says whether the case is `Direct` or `Correspondence`.
+A case under `ConservativeRetextualization` preserves the same resolved EntityOfConcern, the declared bounded context and support from the identified available source claims while changing wording, register, language, ordering, or density. Keep conditions on claim scope, publication scope, pins, provenance, grounding and ontic scaffold recoverable where they affect interpretation or intended use. State whether the case is `Direct` or `Correspondence` when that distinction is not already obvious.
 
 ##### A.6.3.CR:4.5.b. - Loss and reliability rule
 
@@ -172,7 +172,7 @@ A case reviewed under this pattern stays about the same entity and remains an ep
 
 ##### A.6.3.CR:4.5.d. - Composition and reopen rule
 
-A repeat claim follows A.6.3:4.7: identify the first and next rewrite arrows, establish the same resulting episteme and the required composite equivalence, and supply a fixture or proof. Different rewrite orders may yield different results. Reopen the affected claims when a needed source, correspondence witness, provenance, publication-form condition or preservation basis is no longer recoverable. Revalidate them when such a dependency changes materially, even if it remains explicit; unaffected claims retain their grounds. E.17:5.1b–c supplies the applicable reopen conditions.
+For deterministic replay or composition, use A.6.3:4.7. To claim that a further normalization leaves the result unchanged, identify the first and next rewrite arrows, establish the same resulting episteme and the required composite equivalence, and supply a fixture or proof. Different rewrite orders may yield different results. Reopen the affected claims when a needed source, correspondence witness, provenance, publication-form condition or preservation basis is no longer recoverable. Revalidate them when such a dependency changes materially, even if it remains explicit; unaffected claims retain their grounds. E.17:5.1b–c supplies the applicable reopen conditions.
 
 ##### A.6.3.CR:4.5.e. - Correspondence and its receiving use
 
@@ -218,7 +218,7 @@ This stays ordinary `ConservativeRetextualization` because the omission is decla
 
 **Published summary slice.** `For small-batch mixing, choose method family MF-2 when material X remains below T. Selected method M-2 still requires work plan WP-17 and result measurement RM-4.`
 
-This remains `ConservativeRetextualization` because it is a textual restatement of the same source-episteme claims and it keeps the work-planning and result-measurement requirements visible. It is admissible for interpretation and source-finding. It does not by itself provide performed `U.Work`, evidence, gate passage, engineering justification, or control architecture. If the summary drops WP-17 or RM-4, or makes the selected method look executable by summary alone, restore those requirements before presenting it as a faithful summary or executable guidance. A deliberately coarsened version needs `A.6.3.CSC Controlled Semantic Coarsening` with narrower admissible use, forbidden stronger use, and source-bearing return. For stronger use, apply the exact governing requirement to the current facts; the CSC label or a reference alone does not satisfy it.
+This remains `ConservativeRetextualization` because it restates the source's selection rule and preserves its planning and measurement requirements. The summary supports interpretation and source-finding. Keep WP-17 and RM-4 recoverable whenever they affect the stated interpretation, decision or performance; actual use must satisfy the applicable requirements. A shorter summary used only to select a method family may omit requirements for performing the selected method when that omission does not mislead the reader about the summary's scope or make M-2 appear ready for execution. If material loss is admissible only with a narrower use and return to the source, use `A.6.3.CSC Controlled Semantic Coarsening` with that narrower admissible use, forbidden stronger use, and source-bearing return. For stronger use, apply the exact governing requirement to the current facts; the CSC label or a reference alone does not satisfy it.
 
 #### A.6.3.CR:5.1.d - Generated-summary source-relation variant
 
@@ -227,7 +227,7 @@ A generated summary follows the same source, EntityOfConcern and conservativity 
 | Source-relation question | CR-local meaning |
 | --- | --- |
 | source pointer present | The summary points to the source slice or source bundle it claims to restate. |
-| source actually used | The inspectable source relation shows that the generation or rewrite actually used the named source, not merely a similar topic or remembered background. If that relation is unavailable, source use remains unresolved; retain only the justified source-pointer or orientation use until the relation is recovered. |
+| source actually used | The inspectable source relation shows that the generation or rewrite actually used the named source, not merely a similar topic or remembered background. If that historical relation is unavailable, leave it unresolved and block only claims or uses that require it. Retain independently established claim support and uses whose own requirements are satisfied. |
 | claim recoverable from source | Each summary assertion can be recovered from the source claims or admitted correspondence witness under the declared rule. |
 | claim merely plausible | A sentence sounds likely but is not recoverable from the source. Do not present it as source-backed: retain only a justified source-finding or orientation pointer, or explicitly separate the unsupported proposition and repair it or handle it under the pattern for the new claim. |
 | omission or loss | Relevant omitted qualifiers, alternatives, caveats, uncertainty, or conditions are visible enough for the admissible use. |
@@ -285,10 +285,10 @@ This pattern intentionally biases toward same-entity conservativity and away fro
    The EntityOfConcern values independently resolved by the source and receiving `entityOfConcernRef` values are equal.
 2. **CC-CR-2 — Textual re-expression remains the right family.**
    Textual restatement remains primary; explanation or a material representation-scheme change is not the primary move.
-3. **CC-CR-3 — Loss, provenance, pinning, and reliability are explicit or inherited by pinned reference.**
-   The case states these explicitly or inherits them through already-pinned content that remains visible to review.
-4. **CC-CR-4 — Direct vs correspondence split is explicit.**
-   The direct-vs-correspondence split is explicit and justified.
+3. **CC-CR-3 — Material loss, provenance, pinning, and reliability conditions remain recoverable.**
+   The case makes conditions that affect interpretation or intended use recoverable from the text, its surrounding publication, or the source references on which that use depends.
+4. **CC-CR-4 — Direct or correspondence-mediated construction is identifiable.**
+   The source relations make the profile recoverable; state and justify the distinction explicitly when it is not obvious.
 5. **CC-CR-5 — Correspondence witness is named where needed.**
    If correspondence-mediated, identify the relations and supporting claims; use `CorrespondenceModelRef` when their describing episteme must be cited.
 6. **CC-CR-6 — Local conservativity witness remains satisfied.**
@@ -302,7 +302,7 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 
 | Anti-pattern | Why it is wrong | How to avoid it |
 |---|---|---|
-| Treating every summary as automatically conservative | summary demand hides omission and claim shift | publish loss and provenance discipline explicitly |
+| Treating every summary as automatically conservative | summary demand hides omission and claim shift | compare receiving claims with the sources and the declared rule; expose material loss and provenance conditions |
 | Hiding correspondence in plain paraphrase | the relations and claims needed to support the rewrite disappear into prose | identify those relations and claims, and cite their describing episteme when needed |
 | Letting a rewrite become explanation | explanation work quietly becomes a textual "rewrite" | apply explanation governance once didactic or explanatory work dominates |
 | Letting the EntityOfConcern shift by topic similarity | same topic is not the same EntityOfConcern | independently resolve the source and receiving `entityOfConcernRef` values; apply `A.6.4` if the resolved entities differ |
@@ -311,7 +311,7 @@ This pattern intentionally biases toward same-entity conservativity and away fro
 
 - Readers can inspect the connection between the source claims and the rewritten text.
 - Direct and correspondence-mediated variants stay visibly separated.
-- Loss, provenance, and reliability transport become explicit instead of implicit editorial judgement.
+- Loss, provenance, and reliability conditions that affect interpretation or intended use remain recoverable.
 - Ordinary working-model use stays lightweight, while cases needing fuller review get the additional record content their risk and use warrant.
 - The pattern remains bounded by `A.6.3`, `A.6.4`, explanation-facing work, and representation-shift work.
 

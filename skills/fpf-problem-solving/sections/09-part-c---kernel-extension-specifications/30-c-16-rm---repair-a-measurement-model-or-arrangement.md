@@ -109,7 +109,7 @@ The wanted quantity is the optical power I from a beam at a detector. A supplied
 
 `r = g*(I + A) + b.`
 
-Here A is ambient optical power, g = 2 mV/mW is a known response coefficient and b is an electronic offset. The detector is unsaturated. During the following three observations, g, A and b remain unchanged:
+Here A is the ambient optical power reaching the exposed detector, g = 2 mV/mW is a known response coefficient and b is an electronic offset. The detector is unsaturated, and g and b remain unchanged across all three observations. A remains unchanged between the two exposed readings; the opaque cap blocks both optical contributions:
 
 | Condition | Reading |
 | --- | --- |

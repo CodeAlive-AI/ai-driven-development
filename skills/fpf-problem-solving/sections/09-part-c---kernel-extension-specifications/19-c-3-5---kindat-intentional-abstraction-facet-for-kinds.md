@@ -12,7 +12,7 @@
 
 - **C.3/C.3.1:** kind identity by candidate domain and membership distinction, obtaining `U.SubkindOf` relations, and kind continuity.
 - **C.3.2:** the separate `KindSignature` declaration episteme, exact four-input classification judgment, and optional pinned-edition extension representation.
-- **C.3.3:** the obtaining `KindBridge` relation and its separate bridge-assertion episteme carrying `CL^k`, loss, evidence, and admitted use.
+- **C.3.3:** the obtaining `KindBridge` relation and its separate bridge-assertion episteme carrying loss, evidence, admitted use, and any `CL^k` required by the consumed assurance or calibration account.
 - **C.3.4:** the `KindUseAdaptationDeclaration` episteme and exact `KindUseAdaptationJudgment`.
 - **A.2.6, C.2.2, and C.2.3:** Claim/Work scope, F–G–R, and formality assessed on the episteme that owns the expression.
 
@@ -130,7 +130,7 @@ These are planning cues, not default F values, R values, classification results,
 ### C.3.5:8 - Integration notes (informative)
 
 - **C.3.1/C.3.2.** KindAT may guide work on the signature declaration and assurance plan; it changes neither kind continuity nor the four-input judgment.
-- **C.3.3.** KindAT may suggest what preservation evidence to seek. The bridge assertion, not the tag, carries `CL^k`, loss, evidence, and admitted use.
+- **C.3.3.** KindAT may suggest what preservation evidence to seek. The bridge assertion carries loss, evidence, admitted use, and any `CL^k` required by the consumed assurance or calibration account.
 - **C.3.4.** Repeated adaptation-declaration use is a review cue only. A new local kind and any `U.SubkindOf` relation are established independently.
 - **A.2.6.** Scope remains G on the claim or Work use. KindAT never supplies coverage.
 - **C.2.3.** The relevant declaration or claim episteme owns F. KindAT can motivate investment but cannot assign the value.

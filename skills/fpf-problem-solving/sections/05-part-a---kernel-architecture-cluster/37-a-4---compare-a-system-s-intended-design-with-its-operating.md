@@ -31,7 +31,7 @@ The first useful result is a fit, a stated discrepancy or the exact missing/inco
 ### A.4:4 - Solution - One Bounded Comparison
 
 1. **Select the subject, account and use.** Identify the System, the design account edition and the decision this comparison must inform. Keep the System's identity under its own rule and the account's identity under C.2.1. Choose the relevant account claim rather than treating the entire design as one test.
-2. **Recover the operative criterion.** State the target or expected behavior, relevant conditions, units and tolerances, and the rule for comparing them with actual facts. Identify what force the account claim has:
+2. **Recover the operative criterion.** State the target or expected behavior, relevant conditions, any units and tolerances required by the comparison, and the rule for comparing the account claim with actual facts. Identify what force the account claim has:
 
    | Account claim | What the comparison can establish |
    |---|---|
@@ -47,7 +47,7 @@ The first useful result is a fit, a stated discrepancy or the exact missing/inco
 
 An observation may involve dated measurement Work. Recover that Work under A.13 and A.15.1 only when the receiving claim needs the occurrence; identify the result and its relied-on evidence under their own patterns. A new record does not establish a target change. A.3.4 governs any actual before/during/after change claim, and A.12 distinguishes actual acting and changed participants when internal action is asserted.
 
-Changed account claim content identifies a different C.2.1 episteme. An obtaining edition relation is a further claim with its own conditions, including any actual branching. Neither an account edit nor overlapping operation and design work decides the System's continuity. Particular practices may define design and operating regimes where useful; these regimes do not partition every holon's existence.
+Changed account claim content identifies a different C.2.1 episteme. An obtaining edition relation is a further claim with its own conditions, including any actual branching. Neither an account edit nor overlapping operation and design work decides the System's continuity. Particular practices may define design and operating regimes where useful.
 
 ### A.4:5 - Archetypal Grounding
 
@@ -81,7 +81,7 @@ Selecting D2 changes the comparison basis; it does not physically change Pump37.
 | **CC-A.4.2** | Distinguish normative target, descriptive prediction and applicability condition; recover the comparison rule. | Prevent a failed target test from silently becoming an applicability or revision decision. |
 | **CC-A.4.3** | Use comparable actual facts with the required conditions, temporal reference, units and tolerances, or state the missing premise. | Give fit and discrepancy their warranted scope. |
 | **CC-A.4.4** | Return the bounded comparison before any separately selected adaptation. | Preserve a useful answer without compulsory change. |
-| **CC-A.4.5** | Keep account identity/edition, actual Work, target change, System continuity and response authority under their direct rules. | Allow overlapping activity and branching accounts without a universal phase or predecessor law. |
+| **CC-A.4.5** | Keep account identity/edition, actual Work, target change, System continuity and response authority under their direct rules. | Allow overlapping activity and branching accounts. |
 
 ### A.4:7 - Consequences
 

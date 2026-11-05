@@ -38,11 +38,11 @@ Treating agency as an intrinsic property or a mere label hides different questio
 | **Scientific Fidelity vs. Simplicity** | Spectrum accounts draw attention to different capacities and levels of agency. A teachable summary still needs to state which characteristics and measurement bases it uses. |
 | **Role vs. Type** | The same System can qualify for a local agential kind and hold its assignment in one situation but not another. Characteristic claims are additional when consumed by the use. |
 | **Measurement vs. Label** | A quick label such as "Level 3 agent" summarizes more detailed claims. When assurance consumes agency characteristics, it needs their evidence-backed values, not that label. |
-| **System-only Action vs. Collective Action** | A precise agency claim for a team or swarm needs the collective admitted as a `U.System`, not merely named as a group. |
+| **Collective Agency** | A precise agency claim for a team or swarm needs the collective admitted as a `U.System`, not merely named as a group. |
 
 ### A.13:4 - Solution
 
-Establish the agency core first. Add the characteristic profile when the receiving claim requires it; use a Grade only as its didactic summary.
+Establish the agency core when making a precise agency claim. Build the characteristic profile when the receiving claim requires it; use a Grade only as its didactic summary.
 
 #### A.13:4.1 - The Core Definition: Agential participation through an exact system-role assignment
 
@@ -53,7 +53,7 @@ An ordinary-language **"agent"** is not a fundamental FPF type. When a precise a
 3. an occurrence of a directly declared `U.SystemRoleAssignment` species that assigns that kind to the holder and actually obtains; and
 4. any claim scope, working situation, and time window needed by the intended use, kept separate from the assignment's identity.
 
-This keeps a useful ordinary word without creating a universal `Agent` or `AgentialRole` kind. Classification by the local kind does not establish an assignment or performed Work. An episteme cannot be this assignment’s holder because the holder must be a `U.System`. Evidence supports the core facts independently of any profile; a characteristic-only claim about an admitted System need not add an assignment.
+This keeps a useful ordinary word without creating a universal `Agent` or `AgentialRole` kind. Classification by the local kind does not establish an assignment or performed Work. An episteme cannot be this assignment’s holder because the holder must be a `U.System`. Support each core fact under its own criterion, using characteristic results when that criterion requires them. A characteristic-only claim about an admitted System need not add an assignment.
 
 #### A.13:4.2 - Local Agential System-Role Kinds and Their Specializations
 
@@ -133,7 +133,7 @@ The profile values above are illustrative assumptions, not measured results. The
 - The team’s retrospectives name an activity, not a measured rate of internal-model update. `MP: High` remains an assumption; E.10.LRN keeps model change and capability acquisition separate.
 
 **Key takeaway from grounding:**
-The same ontology works for a thermostat, a predictive controller, a learning System, and a collective System: classification by a local kind and an obtaining assignment are both stated, while scope, situation, Work, evidence, profile, and grade remain separate. An exact ISO claim episteme may be cited in an A.10 evidence-provenance account or a B.3 reliance claim; any direct relation relied on by that account or claim must actually obtain under its own defining rule. Its file carrier merely bears a publication form.
+The same ontology works for a thermostat, a predictive controller, a learning System, and a collective System: classification by a local kind and an obtaining assignment are both stated, while scope, situation, Work, evidence, profile, and grade remain separate. An exact ISO claim episteme may be cited in an A.10 evidence-provenance account or a B.3 assurance claim; any direct relation relied on by that account or claim must actually obtain under its own defining rule. Its file carrier merely bears a publication form.
 
 #### A.13:5.1 - Construct a measured profile for a calibration use
 
@@ -155,7 +155,7 @@ Starting at `b = 0`, the three committed offsets are 0.3, 0.45 and 0.525 °C. Th
 
 For the C.22.1 adaptation question, the first successful minute checkpoint is at 180 seconds, with a budget of three reference/update cycles and the stated initial model. This threshold result uses the residual-error bound; MP reports the parameter-change rate. For a local didactic convention, assign Grade 3 within this controller family when BMC covers the named perturbation set, temporal PH is positive and error-driven MP is distinguishable from zero at the declared resolution. Leave other profiles unclassified. S7 receives that label; PER and OC remain explicit profile results outside what this partial mapping summarizes.
 
-**Changed receiving condition.** Tighten the residual-error target to 0.05 °C while keeping the three-update budget. The profile values and local Grade remain supported, but the calibration result fails the new target: even the lower residual bound after three updates is 0.055 °C. Under the same model, five updates would give an upper residual bound of 0.03875 °C. The practitioner can compare a larger adaptation budget with another update Method or a better measurement basis. The changed tolerance reopens the adaptation decision.
+**Changed receiving condition.** Tighten the residual-error target to 0.05 °C while keeping the three-update budget. The profile values and local Grade remain supported, but the calibration result fails the new target: even the lower residual bound after three updates is 0.055 °C. Under the same model, five updates would give an upper residual bound of 0.03875 °C. The practitioner can compare a larger adaptation budget with another update Method. The changed tolerance reopens the adaptation decision.
 
 ### A.13:6 - Conformance Checklist
 
@@ -167,15 +167,15 @@ Apply these normative checks to the corresponding agency, profile or Grade claim
 | **CC-A13.2 (Assignment Mandate)** | A precise claim of agency **MUST** name the exact local agential system-role kind and an obtaining occurrence of a directly declared `U.SystemRoleAssignment` species. Any claim scope, working situation, and time window needed by the use remain separate. | Binds agency to a specific holder and assignment without turning a generic context field into their identity. |
 | **CC-A13.3 (Characteristic Evidence)** | An actual claim about a holder's Agency Grade or autonomy profile **MUST** have a supported agency-characteristic profile with recoverable evidence and provenance under A.10. A Grade claim also states the mapping from those values to its didactic label. Use an Evidence Graph Ref when that representation is needed. | Supports the characteristic values and the Grade interpretation. |
 | **CC-A13.4 (Grade is Didactic)** | The **Agency Grade (0-4)** **SHALL NOT** be used as a normative input for formal reasoning. It is a didactic summary of the agency-characteristic profile. | An assurance case that consumes these characteristics uses their supported values, not the Grade. |
-| **CC-A13.5 (Collective as System)** | To claim agency for a collective (e.g., a team or swarm), it **MUST** first be admitted as a `U.System` under the complete A.1 criterion. Identify its defined boundary and coordination `U.Method`; those two features alone do not establish Systemhood. | Distinguishes an admitted collective System from a mere set or collection (`MemberOf`); parthood claims use A.14. |
-| **CC-A13.6 (MHT for Emergent Agency)** | If a collection of Systems develops a new supervisory structure and crosses a documented agency-characteristic threshold, apply B.2’s whole-reidentification test. When B.2 establishes the transition, a **Meta-Holon Transition (MHT)** **MUST** be declared. | Supervision and threshold crossing prompt the inquiry. If the same whole explains the changed facts, stop without MHT. A prior description as non-agential or at a lower didactic Grade may describe the starting case; it is not a normative premise. |
+| **CC-A13.5 (Collective as System)** | To claim agency for a collective (e.g., a team or swarm), it **MUST** first be admitted as a `U.System` under the complete A.1 criterion. | Distinguishes an admitted collective System from a mere set or collection (`MemberOf`); parthood claims use A.14. |
+| **CC-A13.6 (MHT for Emergent Agency)** | If new supervision and a documented agency-characteristic threshold crossing raise a whole-reidentification question about an established prior whole, apply B.2’s comparison. When B.2 establishes the transition, a **Meta-Holon Transition (MHT)** **MUST** be declared. | First constitution or recognition without an established prior whole uses A.1 and the applicable construction and kind-specific patterns. If the same whole explains the changed facts, stop without MHT. A prior description as non-agential or at a lower didactic Grade may describe the starting case; it is not a normative premise. |
 
 ### A.13:7 - Consequences
 
 | Benefits | Trade-offs / Mitigations |
 | :--- | :--- |
 | **Agency core:** Local kind, classification and obtaining assignment answer different questions; the same System may qualify and be assigned in one situation but not another. | **Modeling granularity:** Distinguish those claims and any performed Work; state scope or window when it changes the claim. Use a short ordinary-language account first and expose identifiers only when needed. |
-| **Characteristic claims:** The profile separates the capabilities being claimed and the evidence needed for their values. | **Measurement effort:** Testing, analysis and data gathering take work. Build the profile iteratively; an initial estimate can be used with its uncertainty and evidence limits explicit. Missing support for that estimate does not imply low System reliability or assign a `Reliability (R)` score; any local R result needs its own bearer, scale, rule and support. |
+| **Characteristic claims:** The profile separates the capabilities being claimed and the evidence needed for their values. | **Measurement effort:** Testing, analysis and data gathering take work. Build the profile iteratively; an initial estimate can be used with its uncertainty and evidence limits explicit. Missing support for that estimate does not imply low System reliability. |
 | **Didactic communication:** The 0–4 scale gives a short vocabulary for discussing profiles, from simple automation to strategic intelligence. | **Grade misuse:** A Grade claim needs the underlying profile under CC-A13.3 and cannot replace its characteristic values in formal reasoning under CC-A13.4. |
 | **Collective agency:** The same core distinguishes agency claims for admitted team, swarm and organization Systems. | - |
 
@@ -192,11 +192,11 @@ The five characteristics are FPF engineering choices. A domain profile develops 
 ### A.13:9 - Relations
 
 *   **Builds on:**
-    *   `A.1 Holonic Foundation`: Establishes that only `U.System`s can be bearers of behavioral roles.
+    *   `A.1 Holonic Foundation`: Supplies the constructive and acting-eligibility conditions for recognizing the holder as a `U.System`.
     *   `A.2 System-Role Kinds and Assignments`: Distinguishes an exact local system-role kind, classification by that kind, and an obtaining `U.SystemRoleAssignment`.
-    *   `A.12 Acting-Side Externalization and Reflexive Split: Identify Who Acts on What`: Separates acting and changed participants when that distinction matters; its precise frame is conditional on the claims needed.
+    *   `A.12 Acting-Side Externalization and Reflexive Split: Identify Who Acts on What`: Separates acting and changed participants when that distinction matters; its precise account is conditional on the claims needed.
 *   **Coordinates with:**
-    * `B.2 Meta-Holon Transition (MHT)`: New supervisory structure together with a documented agency-characteristic threshold crossing prompts the whole-reidentification inquiry. B.2 first tests whether the same whole suffices; only an established transition warrants the MHT declaration.
+    * `B.2 Meta-Holon Transition (MHT)`: Changed supervision and a documented agency-characteristic threshold crossing can raise a whole-reidentification question about an established prior whole. B.2 first tests whether that whole's identity rule accommodates the change and whether the whole meets the receiving use. Only an established transition warrants the MHT declaration.
     * `B.3 Trust & Assurance Calculus`: A profile can supply evidence-backed characteristic results when a named reliability, safety or other assurance argument uses them. Retain each result’s bearer, scale and basis; the didactic Grade is not the assurance input.
     * `D.2 Recognize Ethical Concerns Across Levels and Scopes (Multilevel Ethics)`: For a multilevel ethical concern, name the local gain, possible loss, affected levels or scopes and next subject question. State responsibility or accountability separately under the rule defining that relation and its participants; use an agency-characteristic input only if that rule calls for it.
 

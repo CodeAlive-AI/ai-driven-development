@@ -25,7 +25,7 @@ When the result selects a Method for enactment, identify that admitted U.Method.
 This recovery lets ecological psychology, phenomenology, active inference, control, interface design and robotics keep their distinct subject meanings while comparing a concrete action question.
 
 **Coordinates with.**
-**C.16.Q** for evaluative-language repair; **C.2.2a, A.16, A.16.1, A.16.2, and B.4.1** for language-state chart positions, articulation and closure coordination, admissible moves, early cue classification, next-use docking, and admissible retreat when a published recovery result must be reopened; use **A.16.0** only when lineage, branch, loss, or an actual responsibility-handoff history itself must be published as an explicit trajectory account; **B.5.2.0** when the recovered result is an explanatory question or candidate inquiry; **C.2.LS, C.2.4, C.2.5, C.2.6, and C.2.7** for articulation and closure readings, source and use claims, and representation-factor readings referenced but not governed here; **A.10** and **B.3** for evidence and assurance; **B.4** and **B.5** for anomaly-driven cycles; **E.17.0**, **E.17**, and **E.18** for viewpoint reference resolution, independent view conformance, and viewpoint publication; **F.9** for Bridges and bounded-use claims; **F.9.1** for optional stance notes about those claims; **C.3.3** for kind-bridge repair when endpoint kind mismatches appear.
+**C.16.Q** for evaluative-language repair; **C.2.2a, A.16, A.16.1, A.16.2, and B.4.1** for language-state chart positions, articulation and closure coordination, admissible moves, early cue classification, next-use docking, and admissible retreat when a published recovery result must be reopened; use **A.16.0** only when lineage, branch, loss, or an actual responsibility-handoff history itself must be published as an explicit trajectory account; **B.5.2.0** when the recovered result is an explanatory question or candidate inquiry; **C.2.LS, C.2.4, C.2.5, C.2.6, and C.2.7** for articulation and closure readings, source and use claims, and representation-factor readings referenced but not governed here; **A.10** and **B.3** for evidence and assurance; **B.4** and **B.5** for anomaly-driven cycles; **E.17.0** for viewpoint reference resolution and independent view conformance, and **E.17** for publication; **F.9** for Bridges and bounded-use claims; **F.9.1** for optional stance notes about those claims; **C.3.3** for kind-bridge repair when endpoint kind mismatches appear.
 
 **E.10.ARCH relation.**
 A.6.A supplies the wording-recovery method when an `E.10` or `E.10.ARCH` use leaves an affordance-like or action-first phrase ambiguous. Recover the actual claim or question and then its direct governor. Evaluative content goes to `C.16.Q`; ability, Method, Work, duty, evidence, assurance, gate and decision claims use their own patterns. Keep a recovery note only when a later reader needs the interpretation or its grounds.
@@ -280,8 +280,7 @@ A conforming `OptionSet` publishes:
 
 * explicit action members,
 * any local comparator, triage rule, or partial order,
-* admissible incomparability if no total order is admissible,
-* prohibition on hidden scalarisation.
+* admissible incomparability if no total order is admissible.
 
 **ANF-4 — `PolicyHook`.**
 Use when the receiving use needs an explicit reference to an existing controller, gate, playbook, Method or override protocol.
@@ -300,7 +299,7 @@ A.6.A SHALL prevent the collapse of action invitation language into neighbouring
 
 * A statement about **better, worse, fit, or merit** belongs to **C.16.Q**.
 * A statement about **what a system can do in general** belongs to capability wording, method wording, or method-description wording under **A.6.F** and the subject pattern for the asserted capability, method, or method-description claim.
-* For **what must or may be done**, distinguish a generic prescription, an individual duty, a grant and admission of a particular mechanism application. A.6.B distinguishes their boundary claims; the normative source, A.2.8 commitment rule, A.2.8.PER permission rule or application rule supplies the actual basis.
+* For **what must or may be done**, distinguish a generic prescription, an individual duty, a grant and admission of a named action or application. A.6.B distinguishes their boundary claims; the normative source, A.2.8 commitment rule, A.2.8.PER permission rule or admission rule supplies the actual basis.
 * Ordinary statements of **what someone did** may remain ordinary. A deliberately asserted dated U.Work follows A.13 and independent A.15.1 admission with its enactsMethod relation; precise assignment-bound attribution additionally uses F.6.
 * A result that selects a Method identifies that Method without becoming a plan or occurrence; any `methodDescriptionRef` remains auxiliary. A proposed action can remain a proposal without inventing its Method. A Description episteme never acts and is never what Work enacts.
 * When a sentence carries both evaluative and action-oriented content, make the two claims and their respective grounds distinguishable. Use linked records only when the receiving use needs them.
@@ -364,7 +363,7 @@ The technical retargeting forms apply only when a compatible declared SlotSpec m
 When the recovered claim is boundary-bearing, use its actual A.6.B classification:
 
 * **L** — the rule that defines or constrains the recovered subject, including an actual relation predicate when that is the claim; applicable enactor/site discipline and the F.9/F.9.1 boundary retain their direct governors.
-* **A** — a predicate checked at entry or during an identified mechanism application to admit, continue or reject that application. A statement of allowable claim use or general scope does not qualify by itself.
+* **A** — the admission predicate for a named action or application under the applicable rule. An actual satisfaction or admission-decision result is a separate E claim. A statement of allowable claim use or general scope does not qualify by itself.
 * **D** — a generic prescription under its normative source, an individual duty under A.2.8, or a grant under A.2.8.PER. Individual commitments and grants need their own participants and obtaining basis; a generic prescription does not establish them.
 * **E** — an observation, effect or evaluation result and the conditions under which it is obtained. A particular Work, evidence relation or carrier-condition claim uses its own rule. Cite a sensory result, event, probe or log only when its content supplies grounds for the claim; a reference list alone is insufficient.
 
@@ -408,11 +407,11 @@ Read an affordance-like sentence as a question about its intended meaning. The r
 
 Recover the proposed use: OpsTeam_Phoenix is considering RollbackMethod_R41 on Release_R41 in ProdCluster_EU_1 during RunWindow_RW. RollbackRunbook_R41 describes that Method. AlarmBundle_AB9 exposes the cue about ServiceState_S7; AnomalyPolicy_AP7 specifies the detection criteria. AlertTrace_91 and ErrorBudgetSeries_4 are candidate evidence for applying IncidentPolicy_IP2 over Horizon_H15m.
 
-The first useful statement is: “Check whether the current incident-policy guard and authority permit this team to use RollbackMethod_R41 on Release_R41 in this window; the alarm alone does not settle that question.” If the rule and facts establish a required rollback, state that independently grounded duty or gate result. Otherwise retain the proposed action or the precise missing condition. Nothing in these supplied names asserts a performed rollback.
+The first useful statement is: “Check whether the current incident-policy guard and authority permit this team to use RollbackMethod_R41 on Release_R41 in this window; the alarm alone does not settle that question.” If the rule and facts establish a rollback duty or an admission result for this use, state that independently grounded result. Otherwise retain the proposed action or the precise missing condition. Nothing in these supplied names asserts a performed rollback.
 
 If the receiving operational review uses `VP.OperationsControl`, resolve its `U.ViewpointRef` under `OperationsControlScheme_2026`. `OperationsRollbackView_9` remains an independently identified C.2.1 episteme and a `U.View` only if its exact E.17.0 conformance obtains. These are optional, separately established references, not additional requirements to understand the alarm sentence.
 
-**Recognizable near misses.** A runbook reference alone does not identify the Method selected for enactment. A viewpoint field does not make a dashboard a `U.View`. The alarm, a recovery note or a `PolicyHook` does not prove duty, gate passage or performed Work.
+**Recognizable near misses.** A runbook reference alone does not establish that its Method has been selected for enactment. A viewpoint field does not make a dashboard a `U.View`. The alarm, a recovery note or a `PolicyHook` does not prove duty, gate passage or performed Work.
 
 **Repair B — ecological and robot line**
 
@@ -470,7 +469,7 @@ A text or pattern conforms to A.6.A iff:
    Identify the would-be enactor when the claim or question depends on it.
 
 4. **CC-A.6.A-4 — Enactor discipline.**
-   Identify the System that would act. A cited assignment may designate its holder; it is not itself the enactor.
+   When the claim names an actual would-be enactor, identify the System that would act. A cited assignment may designate its holder; it is not itself the enactor.
 
 5. **CC-A.6.A-5 — Recoverable action and independently identified Method when selected.**
    State the action or inquiry being discussed. If the result selects a Method for enactment, identify its exact `U.Method` and keep any MethodDescription separate. A proposed action need not invent a Method, WorkPlan or actual Work.
@@ -512,7 +511,7 @@ A text or pattern conforms to A.6.A iff:
     A cross-tradition comparison first states whether it asserts or relies on semantic correspondence between exact senses in different semantic contexts. If yes, it cites an obtaining F.9 Bridge only after the predicate passes and adds a matching bounded-use claim only when a proposed use is live. If no, it uses E.17.ID.CR or the exact direct relation that supplies the contrast. Any F.9.1 stance note remains optional reader help for an already constituted claim.
 
 18. **CC-A.6.A-18 — Boundary-claim hook when needed.**
-    Apply L, A, D or E only when the recovered statement is an A.6.B boundary claim. For A, name the mechanism application and predicate checked at entry or during it; otherwise retain the direct rule for scope, claim use, duty, publication or the actual result.
+    Apply L, A, D or E only when the recovered statement is an A.6.B boundary claim. For A, identify the action or application and the predicate governing its admission under the applicable rule; otherwise retain the direct rule for scope, claim use, duty, publication or the actual result.
 
 19. **CC-A.6.A-19 — Consequential lexical ambiguity.**
     Action-first wording is repaired when its intended claim, participants or conditions remain unclear for the receiving use. A trigger token alone does not require replacement.
@@ -533,11 +532,11 @@ A text or pattern conforms to A.6.A iff:
 | **Site-participant-property affordance** | "The site participant is actionable" with no enactor or coupling frame | collapses relationality into monadic property language | publish site, enactor, action, and coupling frame |
 | **Invitation-as-obligation**   | "This calls for rollback" is treated as if rollback is already required                     | hides A-classified or D-classified claim status and accountability | recover the actual claim and apply its duty or gate rule through A.6.B |
 | **Invitation-as-work**         | “The system reacted” is used where only a cue or option exists                              | confuses offer with execution                          | keep invitation separate from A.15 and `U.Work`                   |
-| **MethodDescription as invited Method** | `Enact(methodDescriptionRef=Runbook)` supplies no exact Method | makes a C.2.1 episteme the world-side way of doing | select exact `methodRef -> U.Method`; keep the description auxiliary |
+| **MethodDescription as invited Method** | `Enact(methodDescriptionRef=Runbook)` treats the description as the Method to enact | makes a C.2.1 episteme the world-side way of doing | identify the exact `U.Method` intended for enactment; keep its description separate |
 | **Viewpoint or view by record inclusion** | a field name or bundle row is treated as proof of `U.Viewpoint` or `U.View` | bypasses reference resolution and E.17.0 dependent-kind rules | resolve `viewpointRef` under the effective scheme and establish any view's conformance independently |
 | **Capability-as-invitation**   | “The robot can do X” stands in for a situated affordance                                    | destroys local enactor and site conditions             | separate capability description from action invitation          |
 | **Latent cue as explanation**  | a model tendency is narrated as if it were already an explicit rationale                    | overstates articulation and evidence                   | state the supported model tendency; use a cue pack or option set only when that form helps the receiving use     |
-| **Premature automation**       | a cue without required witness records is wired directly into gates or controllers with no explicit hook `authoritySourceRef` named source or guard | creates unsafe action-to-automation coupling                         | apply the existing controller or gate rule, recover authority and evidence, and use an explicit hook when its interface requires one                |
+| **Premature automation**       | a cue is wired into a gate or controller without the evidence, authority basis or guard required by its governing rule | creates unsafe action-to-automation coupling                         | apply the existing controller or gate rule, recover its required evidence and any required authority basis, and use an explicit hook when its interface requires one                |
 | **ArticulationHint as F proxy**| `hook-explicit` is treated as "more formal"                                                | recreates a forbidden second formality characteristic          | keep F in C.2.3; reserve articulation and closure semantics for `A.16` |
 
 ### A.6.A:9 - Consequences
@@ -588,7 +587,7 @@ Reopen the affected recovery when a source-specific meaning or physical criterio
 ### A.6.A:12 - Relations
 
 * **Uses:** **A.6.P** when the recovered content is a relation claim; **A.6.REL** for its direct predicate and any needed occurrence identity.
-* **Builds on:** **A.3** and **A.7** for enactor discipline and EntityOfConcern and Description-episteme plus publication and carrier separation; **A.15** for keeping invitation distinct from enactment; **A.6.B** for boundary claim classification; **E.17.0**, **E.17**, and **E.18** for viewpoint reference resolution, independent view conformance, and viewpoint publication.
+* **Builds on:** **A.3** and **A.7** for enactor discipline and EntityOfConcern and Description-episteme plus publication and carrier separation; **A.15** for keeping invitation distinct from enactment; **A.6.B** for boundary claim classification; **E.17.0** for viewpoint reference resolution and independent view conformance, and **E.17** for publication.
 * **Works alongside:** **C.16.Q** for evaluative language; the two are siblings, not substitutes.
 * **Coordinates with:** **C.2.2a, A.16, A.16.1, A.16.2, and B.4.1** for language-state chart positions, admissible moves before post-threshold repair, and retreat when a published recovery result must be reopened; use **A.16.0** only when lineage, branch, loss, or an actual responsibility-handoff history itself must be published as an explicit trajectory account; **B.5.2.0** for probe-question cases that are still prompt-shaped; **C.2.LS, C.2.4, C.2.5, C.2.6, and C.2.7** for language-state readings and the source or use claims required beside them.
 * **Must not replace:** **C.2.3** as the single subject pattern for **F**.

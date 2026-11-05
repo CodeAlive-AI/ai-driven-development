@@ -93,7 +93,7 @@ The rationale links every check-application result to its mapping rule and then 
 
 #### A.21:4.2 - One check application
 
-A `GateCheckApplicationResult` is a C.2.1 result episteme that keeps the gate-facing use of one source result recoverable:
+A `GateCheckApplicationResult` is a C.2.1 result episteme that identifies one check application, its evaluation state, and any available source result for the gate-facing use:
 
 ```text
 GateCheckApplicationResult:
@@ -192,7 +192,7 @@ A structural crossing does not imply an F.9 semantic Bridge. Add an F.9 Bridge, 
 
 A guard event is not automatically a GateCheck. When a selected structure assigns a guard failure to a gate, the current profile may consume that identified event through a declared check application and mapping rule.
 
-The following names are recognition aids, not a universal catalogue: freshness, design-run-tag consistency, reference-plane crossing, comparator constraints, evidence completeness, safety envelope, regulator conformance, system-role fit, channel fit, equivalence preservation, outflow audit, and snapshot consistency. Each application names its checked subject, criterion, rule edition, case, and source result.
+The following names are recognition aids, not a universal catalogue: freshness, design-run-tag consistency, reference-plane crossing, comparator constraints, evidence completeness, safety envelope, regulator conformance, system-role fit, channel fit, equivalence preservation, outflow audit, and snapshot consistency. Each application names its checked subject, criterion, rule edition, case, evaluation state, and any available source result.
 
 Use A.10 for claim-bound evidence reliance and B.3 when an actual named assurance claim is current. Use A.2 and C.3.2 for system-role classification, A.2.1 for exact assignments, and F.6 only for an expressly consumed assignment-bound Work attribution. A.2.6 answers whether a claim covers the selected slice; channel criteria remain with their domain pattern. Use E.18 for crossing claims within its applicable structure and the applicable comparison pattern for comparator claims.
 
@@ -235,7 +235,7 @@ If inspection was not performed after the block was already known, record that c
 
 1. **Decision.** Name the gate, the action or transition being decided, its scope, and its time window.
 2. **Applicable rule.** Point to the profile rule and edition that apply to this gate and subject. Recover its required checks, mappings, consequences, scope and window, and any authority the rule itself requires.
-3. **Checks.** For each check, name its subject, criterion and edition, case, requirement, evaluation state, source result, and mapping rule.
+3. **Checks.** For each check, name its subject, criterion and edition, case, requirement, evaluation state, any available source result, and mapping rule.
 4. **Nothing missing.** Keep every required check visible, including `notRun`, `unknown`, error, and failure.
 5. **Worst result wins.** Aggregate only after the rule has mapped every required result. A missing or unrun required result cannot support `pass`.
 6. **Next action.** State what `pass`, `degrade`, `block`, or `abstain` means for this action, retain every applicable restriction under §4.5, and state when to decide again.
@@ -274,16 +274,16 @@ The cost is explicit identity. A practitioner must name the decision subject, pr
 
 Constraint truth, evidence about that truth, policy application, and bounded action are different claims. The source patterns define the claims and tests; their evaluations establish the check results. A.21 applies one current profile and records the consequence. Keeping those claims separate makes the decision independent of evaluation order and keeps failures useful for repair.
 
-The join lattice gives a compact, deterministic aggregation after every source result has been identified and mapped. It does not supply applicability, evidence, permission, authority, or a missing result.
+The join lattice gives a compact, deterministic aggregation after the complete effective check set has been identified and mapped under the profile. It does not supply applicability, evidence, permission, authority, or a missing result.
 
 ### A.21:11 - SoTA echo
 
-| Practice line already used by A.21 | Adopted move | Limit |
+| Basis or practice comparison | Move used in A.21 | Limit |
 | --- | --- | --- |
-| Join-semilattice aggregation in distributed-systems practice | Use an associative, commutative, idempotent worst-result join after explicit mapping. | Algebra does not make unknown or unrun input neutral. |
-| Policy evaluation and safety decision tables | Identify the applicable rule, subject, inputs, outcome mapping, and action consequence. | A profile label or default-looking branch is not policy application or authority. |
-| Attestation and provenance practice, including in-toto and SLSA lineage | Keep references and rationale available for the declared audit, transfer or reuse; publish them when that use requires publication. | An attestation, log, or dashboard does not create the gate decision or source truth. |
-| Compositional crossing checks | Apply crossing equations to an exact structural crossing when its rule requires them. | A structural crossing does not imply a semantic Bridge; each applies only when its own relation and use are current. |
+| The join-semilattice defined in §4.5 | Use the associative, commutative, idempotent worst-result join after explicit profile mapping. | Algebra does not make unknown or unrun input neutral. |
+| [Open Policy Agent: Rego policy evaluation](https://www.openpolicyagent.org/docs/policy-language), including undefined results and explicitly declared defaults | Keep the applicable policy, its inputs and evaluated result recoverable; A.21 separately specifies the mapping to a bounded action. | Rego values and undefined results do not themselves define A.21 decision values or authority. |
+| [in-toto Statement v1](https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md) and [SLSA v1.2 provenance](https://slsa.dev/spec/v1.2/provenance) bind typed attestations and production information to identified artifacts | Retain the subject and claim references needed by the declared audit, transfer or reuse. Publication follows the receiving use. | Attestation or provenance information supplies neither the gate decision nor the truth of every source claim; A.21 keeps those judgements separate. |
+| Structural-crossing rules supplied by `E.18` | Apply crossing equations to the identified crossing when its rule requires them. | A structural crossing does not imply a semantic Bridge; each applies only when its own relation and use are current. |
 
 ### A.21:12 - Relations
 

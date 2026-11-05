@@ -139,7 +139,7 @@ A repeated comparison may benefit from a nominal Characteristic summarizing one 
 
 For example, a team comparing access to a designated primary check can define one nominal Characteristic for the tuple (claim, designated check, recipient, time): the recipient can perform that check at that time, or cannot. Establish the capability and access required by the check before assigning either value; otherwise leave the reading unknown. The value helps choose between performing the check and arranging the missing access. This local comparison concerns availability of that check; it does not classify the claim's provenance or evidence quality.
 
-Declare such a Characteristic as its own chart slot. A changed aspect or Scale changes the chart meaning under A.19:5.1.2; preserve or establish an explicit mapping when an old position must be compared with it. C.3.2 governs any separate classification using these readings.
+When the summary is used in a language-state chart, declare its Characteristic as its own slot. A changed aspect or Scale changes that chart's meaning under A.19:5.1.2; preserve or establish an explicit mapping when an old position must be compared with it. C.3.2 governs any separate classification using these readings.
 
 #### C.2.6:15.2 - Recover a relation hidden by metaphor
 When wording such as "the system wants" or "the note suggests" leaves the intended action or claim unclear, identify what the system does, what the note asserts, or who makes the interpretation. Recover the relevant detector, performer or witness through the direct subject pattern. An ordinary understood metaphor needs no expanded record.

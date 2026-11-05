@@ -69,7 +69,7 @@ In **F–G–R**:
 
 * **F** (formality) is “how strictly a claim is expressed” (C.2.3).
 * **G** must be “**where it holds**,” not “how abstract it sounds.”
-* **R** carries evidence and reliance currentness. Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
+* **R** describes how strongly the claim is warranted by its evidence under the declared scope and use conditions (C.2.2). Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
 
 When **G** is a **set‑valued scope**, composition becomes precise: serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion**—but only where each line is supported.
 
@@ -308,15 +308,15 @@ These facets are **separate** from `U.WorkScope` and belong to the evidence and 
 **Meaning.** The set of `U.ContextSlice` where a **publication** (a view, card, or lane about some object or morphism) is **admissible for use** within its underlying Claim scope or Work scope.
 
 **Relation to other scopes (normative).**
-* If the publication is **about an episteme `E`**:
-  `PublicationScope(view_E) ⊆ ClaimScope(E)`.
+* If the publication's admissible use **relies on claim `c` in episteme `E`**:
+  `PublicationScope(view_E) ⊆ ClaimScope(c)`.
 * If the publication presents **a qualified holder-ability claim `C`** for work admission:
   `PublicationScope(view_C) ⊆ WorkScope(C)`, where `WorkScope(C)` is the work-condition basis designated by that claim. Any relied-on episteme ClaimScope remains a separate constraint; stating the ability in an episteme does not turn its WorkScope into ClaimScope.
-* If the publication is **about a composition**, its scope is a subset of the intersection of the exact contributing scopes. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are intersected.
+* When publication use requires **all contributing claims or capabilities to apply together**, its scope is a subset of their intersection. For **independent support lines for the same claim or capability**, establish the supported SpanUnion under §7.3 and bound publication use by that resulting scope. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are combined under the applicable rule.
 
 **Expression.** Declare `U.PublicationScope` as an exact predicate over only the `U.ContextSlice` selectors that restrict publication use: for example versioned standards, environment, audience, interface availability, exact local senses, or `gammaTime` when time changes membership. It may be narrower than the underlying scope but must not be wider.
 
-**Algebra and Delta-moves.** Publication scope uses the USM algebra. A widened publication scope is admissible only when the resulting set remains a subset of every relevant underlying Claim scope or Work scope and the publication conditions support each added slice; the underlying scope need not change when it was already broader.
+**Algebra and Delta-moves.** Publication scope uses the USM algebra. A widened publication scope is admissible only when the resulting set remains a subset of the applicable underlying Claim scope or Work scope, using §7's composition rule when several scopes contribute, and the publication conditions support each added slice; the underlying scope need not change when it was already broader.
 
 **Orthogonality to measurement.** `U.PublicationScope` is a **USM scope object** (set‑valued), not a CHR Characteristic and MUST NOT appear as a slot in a `U.CharacteristicSpace`.
 
@@ -671,7 +671,7 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 * **Make membership conditions explicit.** Name the parameters, ranges and standard editions that affect membership. Ordinary prose can express the predicate when its meaning is recoverable; name `gammaTime` only when time affects membership.
 * **Factor common conditions.** Use Refit to normalize units and factor shared predicates; do not widen by stealth.
 * **Partition support lines.** If you plan a **SpanUnion**, document independence up front.
-* **Publish supported scope.** Add slices as support appears (ΔG+).
+* **Publish supported scope.** When widening is needed, add only supported slices (ΔG+).
 * **Prepare needed translations.** When the receiving use needs a translation, establish the F.9 Bridge, then state the proposed use with its direction, mapping rule, tolerated loss and evidence plan. Establish the §7.5 reliance condition before using the mapping.
 
 #### A.2.6:16.3 - Minimal DSL snippet for scope blocks (illustrative)
@@ -698,7 +698,7 @@ receivingGuards:
 
 **Rules.**
 * **P1 (Expansion).** Profiles are macros: guards **MUST** expand them to explicit predicates before evaluating `Scope covers TargetSlice`.
-* **P2 (Edition).** Profiles are editioned. A changed predicate expression is a content change for a carrier that references the profile even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
+* **P2 (Edition).** Profiles are editioned. A changed predicate expression changes the profile declaration even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
 * **P3 (No stealth widen).** A profile update MUST NOT implicitly widen a carrier’s published scope; ΔG+ must be explicit in that carrier.
 * **P4 (Translation awareness).** If a profile expands to predicates whose exact local senses require translation, name the obtaining F.9 Bridge and the separate affirmative C.2.1 claim for that translation's direction, rule, and tolerance. The receiving guard must recover the current A.10 or B.3 reliance branch; a different label, scheme, profile, or Bridge Card alone is insufficient.
 * **P5 (No hidden context container).** A profile expands to predicates; it is not a context object, scope pattern, or additional scope kind.
@@ -714,7 +714,7 @@ receivingGuards:
 
 When a scope-aware decision needs durable audit evidence, its C.2.1 result episteme may name:
 
-* **Using object and exact scope.** The claim-bearing episteme, capability, or publication object designates or uses the exact scope.
+* **Using object and exact scope.** The claim-bearing episteme, qualified holder-ability claim, or publication object designates or uses the exact scope.
 * **Exact target slice.** Designate the independently identified slice with its complete declared selector schema and values. Bind the full slice as `targetSlice`; put the selector resolutions and translation inputs needed by this evaluation in `interpretationBasis`. Include `gammaTime` in the schema only when that temporal selector is part of the exact slice being evaluated.
 * **Evaluation outcome.** Record `true`, `false`, or `unknown`, plus the evaluation method or work occurrence when replay needs it.
 * **Separate guard outcomes.** Record work measures, qualification windows, formality, or freshness only when the receiving use checks them; none is membership.
@@ -756,7 +756,7 @@ Declare each supported serial scope (`S₁, S₂, …`) and publish **SpanUnion(
 Formalization alone does not widen scope. Widening requires a changed extension and direct support for every added slice under §7.6; changing only the expression can preserve the same scope.
 
 **Q4. What is the difference between Work scope and SLOs?**
-**Work scope** is **where** the capability can deliver; **measures** within the guard are **what** it promises there (SLO targets). Both are required at use time (WG‑1..3).
+**Work scope** names the work conditions covered by the holder's ability claim; **SLO targets** name required performance levels. At use time, check scope coverage and compare the claimed performance bounds with those targets, together with the required qualification check (WG‑1..3).
 
 **Q5. Can we assign numeric coverage to G?**
 Not normatively. G is set‑valued. You MAY attach an **informative**, explicitly declared **`CoverageMetric(G)`** (e.g., a proportion under a pinned policy) to aid **R** assessment, but guards use set membership and **`CoverageMetric(G)` MUST NOT replace `G`**.
@@ -803,7 +803,7 @@ Interpret these source terms in their own use. In a guard or conformance claim, 
 `environmentSelectors`, `platformOrStandardEditions`, `resourceRegimeSelectors`, `exactLocalSenseRefs?`, and `gammaTime?` when time changes membership.
 
 **Publication-scope predicate block:**
-the exact audience, interface, availability, and other selectors that restrict publication use, always as a subset of the underlying claim or work scopes.
+the exact audience, interface, availability, and other selectors that restrict publication use, always within the underlying claim or work scope established under the applicable composition rule in §7.
 
 **Separate use-time guard:**
 work-measure targets, qualification windows, evidence freshness, and any decision threshold. These are not fields of the scope value.
@@ -880,7 +880,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 | ------------------------------- | ----------------------------------------------- | ------------------------------------ | -------------------- | --------------------------------------------------------------------- |
 | Addressable evaluation context  | **`U.ContextSlice`**                            | **Context slice**                    | *Slice* (when local) | “domain” (as guard input), “latest” time                              |
 | Extensional scope value | **`U.Scope`**                                   | **Scope**                            | —                    | “applicability”, “envelope”, “validity” (as characteristic names)     |
-| Episteme applicability          | **`U.ClaimScope`** (*nick **G**)               | **Claim scope**                      | **G**                | “generality”, “applicability/envelope (of claim)”                     |
+| Claim applicability             | **`U.ClaimScope`** (*nick **G**)               | **Claim scope**                      | **G**                | “generality”, “applicability/envelope (of claim)”                     |
 | Capability applicability        | **`U.WorkScope`**                               | **Work scope**                       | —                    | “capability envelope”, “operational applicability”, “operation scope” |
 | Time selector                   | **`Γ_time`**                                    | **Time selector**                    | —                    | implicit “latest”                                                     |
 | Exact local-sense translation | **Obtaining F.9 Bridge + separate affirmative C.2.1 use claim + current A.10 or B.3 reliance** | **Bridge, translation rule and tolerance, checked reliance** | — | automatic Bridge use or treating a loss score as permission |
@@ -902,7 +902,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 * When time changes membership, name exact **`gammaTime`** and its membership boundary; never say “latest.” A time-independent predicate need not inspect `gammaTime`, but keep every selector already declared in the slice.
 * To compose, say: **“intersection along dependency paths; SpanUnion across independent support lines.”**
 * When exact local-sense translation is current, say: **“through an obtaining F.9 Bridge and a separate affirmative C.2.1 claim for this direction, rule, and tolerance; rely on it only through the current A.10 or B.3 branch, then evaluate membership on the returned scope.”**
-* When widening/narrowing, write **“ΔG+ / ΔG−”** and log the support change; use **“Refit”** for unit/param normalization.
+* When widening/narrowing, write **“ΔG+ / ΔG−”**; use **“Refit”** for unit/parameter normalization only when the exact scope extension is preserved.
 
 ###### A.2.6:20.1.3.3 - Source-phrase comparison summary
 
@@ -924,7 +924,7 @@ Use these conditional paraphrases with the source distinctions in §20.1.2.
 #### A.2.6:21.1 - With F–G–R (C.2.2)
 
 * **G is Claim scope.** Use set algebra (∩ / SpanUnion).
-* **F** remains the expression rigor (C.2.3); **R** captures evidence currentness and bounded reliance. Observed loss may bear on the translation-use claim; its permitted-loss tolerance remains in that claim rather than in G or the Bridge profile.
+* **F** remains the expression rigor (C.2.3); **R** describes warrant strength under the declared scope, evidence and use conditions (C.2.2). Observed loss may bear on the translation-use claim; its permitted-loss tolerance remains in that claim rather than in G or the Bridge profile.
 * **Composition.** F follows C.2.3:15.1: the essential content and connecting inferences must provide the expression properties claimed for the whole. R follows the justified support-composition model or non-aggregate synthesis under C.2.2. G follows §7.2–§7.3 (set rules).
 
 #### A.2.6:21.2 - With Formality (C.2.3)
@@ -944,7 +944,7 @@ Use these conditional paraphrases with the source distinctions in §20.1.2.
 
 #### A.2.6:21.5 - With Capability governance (A.2.2)
 
-* Capabilities MUST declare **Work scope**, **measures**, **qualification windows**; gates MUST verify all three.
+* For operational capability use, the capability declaration MUST identify **Work scope**, **measure bounds** and the applicable **qualification-window policy**; gates MUST check coverage, target satisfaction and qualification under §10.3.
 * Capability refits that preserve the set (unit changes) are **Refit**, not Δ(WorkScope).
 
 ### A.2.6:End

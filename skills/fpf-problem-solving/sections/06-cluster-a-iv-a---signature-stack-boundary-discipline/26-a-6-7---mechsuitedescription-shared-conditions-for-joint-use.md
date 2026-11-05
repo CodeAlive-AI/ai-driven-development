@@ -4,13 +4,13 @@
 > **Status:** Stable.
 > **Normativity:** Normative [A] (Core).
 
-**Use this when.** Several distinct operation declarations must be used together under shared conditions. Select their exact contracts, cite the required specifications, and state the permitted operation order.
+**Use this when.** Several distinct mechanism declarations must be used together under shared conditions. Select their exact contracts and cite the required specifications. State a permitted operation order when joint use needs a protocol.
 
-**First useful result.** Each protocol step resolves to one declaration edition and one operation in that declaration. Two implementations of the same declaration do not become two members.
+**First useful result.** The distinct member declarations, their joint conditions and required specification references are recoverable. Each declared protocol step also resolves to one member declaration edition and one operation in that declaration. Two implementations of the same declaration do not become two members.
 
-**Not this pattern when.** Use A.6.1 for one operation declaration, A.3.1 for a way of doing, and A.15.2 for an ordinary plan or edition baseline. A suite is useful only when several declarations have joint conditions to express.
+**Not this pattern when.** Use A.6.1 for one reusable operation-family declaration, A.3.1 for a way of doing, and A.15.2 for an ordinary plan or edition baseline. A suite is useful only when several declarations have joint conditions to express.
 
-A `MechSuiteDescription` describes a finite set of distinct mechanism declaration contracts, their shared obligations, required specification references and permitted protocols. Two realizations of one contract remain one member. The description is distinct from a MechFamilyDescription and a publication Pack.
+A `MechSuiteDescription` describes a finite set of distinct mechanism declaration contracts, their shared obligations and required specification references, with any declared protocols and audit requirements. Two realizations of one contract remain one member. The description is distinct from a MechFamilyDescription and a publication Pack.
 
 **Plain-name.** mechanism suite description; mechanism suite passport.
 
@@ -70,7 +70,7 @@ The suite user needs one description that can:
    Suites must cite governing spec refs as pins, not duplicate their internals, otherwise multiple competing admissibility centers arise.
 
 4. **Transport and crossing visibility discipline.**
-   An asserted semantic correspondence needs its F.9 Bridge; a kind correspondence needs its C.3.3 basis; a plane relation retains its own defining rule. Expose the anchors required by each actual relation and receiving use. An independently governed E.18 crossing or A.21 gate retains its required bundle or gate evidence. Any applicable penalty routes to `R/R_eff` only; suites do not embed CL/Φ/Ψ/Φ_plane tables.
+   A claimed semantic correspondence between different local interpretation bases needs its obtaining F.9 Bridge; a kind correspondence needs its C.3.3 basis; a plane relation retains its own defining rule. Expose the anchors required by each actual relation and receiving use. An independently governed E.18 crossing or A.21 gate retains its required bundle or gate evidence. Assess loss under the receiving-use rule; apply the model-bound penalty conditions in §4.2(2). Suites do not embed CL/Φ/Ψ/Φ_plane tables.
 
 5. **Guard vs gate separation.**
    Mechanisms can output tri-state guard outcomes and explanations; **gate decisions** (including `block`) and `DecisionLog` remain gate-level (`OperationalGate(profile)`). A suite must not collapse these layers.
@@ -90,8 +90,8 @@ Declare the members and their shared conditions in a `MechSuiteDescription`:
 2. **Membership:** a finite set of distinct mechanism declarations.
 3. **Suite obligations:** shared invariants that every member (and any permitted composition of members) must respect.
 4. **Suite spec pins:** required citations/pins to governing spec refs and other “anchor” references.
-5. **Suite protocols:** allowed pipelines of use (permitted ordering and optional steps), expressed at the descriptive level.
-6. **Suite audit obligations:** required audit/pin visibility for downstream uses (UTS/Path pins, crossing pins, guard pins), expressed as required anchors (not run-time values).
+5. **Suite protocols, when needed:** allowed pipelines of use (permitted ordering and optional steps), expressed at the descriptive level.
+6. **Suite audit obligations, when needed by downstream use:** required audit/pin visibility (UTS/Path pins, crossing pins, guard pins), expressed as required anchors (not run-time values).
 7. **Notes:** optional explanations or boundaries needed to interpret or use the suite.
 
 A minimal canonical form:
@@ -101,8 +101,8 @@ MechSuiteId := Identifier  // PascalCase; stable citation handle. Versioning MAY
 
 SuiteObligation := declared suite-level obligation
 // Canonical reusable names (not exhaustive):
-//   bridge_only_crossings,
-//   two_bridge_rule_for_described_entity_change,
+//   semantic_correspondence_requirements,
+//   independent_correspondence_requirements,
 //   transport_declarative_only,
 //   penalties_route_to_r_eff_only,
 //   guard_decision_tristate(pass|degrade|abstain),
@@ -114,8 +114,8 @@ SuiteObligation := declared suite-level obligation
 //   no_silent_totalisation,
 //   no_thresholds_in_suite_core,
 //   crossing_visibility_required,
-//   planned_slot_filling_in_work_planning_only,
-//   finalize_launch_values_in_work_enactment_only,
+//   planned_filling_in_workplan,
+//   actual_launch_facts_and_witness,
 //   implementation_export_discipline_when_cited
 
 SuiteObligations := { SuiteObligation[*] } // clause set; duplicates-free.
@@ -134,7 +134,7 @@ MechSuiteDescription := ⟨
 **Norms.**
 
 * **Suite identifier.**
-  `mech_suite_id` MUST be present and stable: it is the citation handle for downstream planning and `U.Work.Audit`.
+  `mech_suite_id` MUST be present and stable: it is the citation handle for downstream planning and audit.
 
 **Well-formedness constraints (admissibility; non-deontic).**
 
@@ -168,10 +168,10 @@ A MechSuiteDescription may state additional shared obligations within the member
 
 **Obligation meanings (normative).**
 
-1. **`bridge_only_crossings`.**
+1. **`semantic_correspondence_requirements`.**
    For an actual semantic correspondence between distinct recovered local senses, recover the F.17 endpoints and an obtaining F.9 Bridge, then the bounded-use and reliance claims required for this use. A suite creates none of those facts. A changed entity, reference scheme, plane or notation alone establishes no semantic crossing under A.6.4.
 
-   1.1. **`two_bridge_rule_for_described_entity_change`.**
+   1.1. **`independent_correspondence_requirements`.**
 
    * When both an F.9 semantic correspondence and a C.3.3 kind correspondence are claimed, establish each under its direct rule. Any separately claimed plane relation keeps its own governor. Changing the EntityOfConcern alone creates neither relation. Retain the separate use conditions and applicable penalty policy; do not invent a second Bridge from the change label.
 
@@ -179,7 +179,7 @@ A MechSuiteDescription may state additional shared obligations within the member
    * Well-formedness constraint: suite obligations do not embed CL/Φ/Ψ/Φ_plane conversion or penalty tables. Transport obligations cite the applicable rules, pins and anchors; E.18 accounts for changed use bindings, and the applicable gate owns its decision. Distinct direct predicates retain their meanings and occurrence rules. Drawing an edge or declaring a suite obligation does not establish a relation, conversion or penalty.
 
 2. **`penalties_route_to_r_eff_only`.**
-   Well-formedness constraint: CL/Φ/Ψ/Φ_plane penalties associated with crossing discipline route to `R/R_eff` only; suites do not define transport penalties that alter `F/G`.
+   Well-formedness constraint: loss is assessed under the receiving-use rule and any tolerance it requires; a supported qualitative assessment can suffice. A numerical assurance penalty is used only when a named assurance claim consumes it under an applicable domain model in B.3:4.3–4.4, with the required dependency, calibration and unit assumptions. The selected model determines which result or results the penalty affects; apply an `R/R_eff`-only restriction only when that model establishes it. A penalty alone changes no legality, invariant or `U.ClaimScope` fact; those retain their own governing rules.
 
 3. **`guard_decision_tristate(pass|degrade|abstain)` and `unknown_never_coerces_to_pass`.**
    Well-formedness constraint: admissibility/eligibility outcomes use a tri-state guard result `GuardDecision := {pass|degrade|abstain}`. Unknown/insufficient evidence is not coerced to `pass`; it resolves to `{degrade|abstain}` under declared failure behavior (e.g., probe-only as a SoS‑LOG branch id, not as a new decision value).
@@ -204,11 +204,11 @@ A MechSuiteDescription may state additional shared obligations within the member
    Apply E.18 only for an independently selected TransformationFlowStructure and its actual governed crossing; apply A.21 for a current work-entry gate. An edition, entity or notation change alone supplies neither that crossing nor a semantic Bridge.
    Suites may require `CrossingBundleRef` / UTS / Path pins and policy-id pins as anchors, and MUST NOT embed CL/Φ/Ψ/Φ_plane tables.
 
-10. **`planned_slot_filling_in_work_planning_only`.**
-    Well-formedness constraint: any planned slot filling used as a baseline for suite use is authored in `WorkPlanning` as a planned baseline (no run-time slot instances; no launch values).
+10. **`planned_filling_in_workplan`.**
+    Any planned filling used as a baseline for suite use is content of an A.15.2 `U.WorkPlan`; A.15.3 applies only to independently declared members. These are intended values under the plan's conditions, preserved separately from later actual-use facts.
 
-11. **`finalize_launch_values_in_work_enactment_only`.**
-   Well-formedness constraint: `FinalizeLaunchValues` (and any witness of actual launch values) occurs only in `U.WorkEnactment`; neither the suite nor any planned-baseline WorkPlanning plan item is a place for launch values.
+11. **`actual_launch_facts_and_witness`.**
+   For an actual launch claim under E.18:5.6, establish one independently admitted A.15.1 Work occurrence and the actual launch values through independently obtaining direct relations or exact A.6.1 application bindings. A separate `FinalizeLaunchValues` episteme may then designate that occurrence and those facts. A plan or suite requirement supplies none of those actual facts by itself.
 
 #### A.6.7:4.3 - SuiteSpecPins
 
@@ -228,7 +228,7 @@ SuiteSpecPins := ⟨
 * If the suite is admissibility-gated for characterization, `CNSpecRef` and `CGSpecRef` MUST be required (as references/pins).
 * Spec pins are citations and anchors. They do not replace the underlying `…Spec` objects.
 * A suite may require an edition/reference baseline in ordinary A.15.2 WorkPlan content. Address it through the exact plan and its local content locator; it supplies no launch value or gate decision.
-* Use A.15.3 typed planned filling only when an existing declaration member independently supplies the position meaning, designation, cardinality and actual-use predicate. A suite Description field is not a SlotSpec or operation argument merely because a plan names it. Missing planned information can remain unknown in the plan; a missing governor requires recovery or definition of that member before typed filling. Actual launch bindings and any FinalizeLaunchValues witness remain with actual enactment.
+* Use A.15.3 typed planned filling only when an existing declaration member independently supplies the position meaning, designation, cardinality and actual-use predicate. A suite Description field is not a SlotSpec or operation argument merely because a plan names it. Missing planned information can remain unknown in the plan; a missing governor requires recovery or definition of that member before typed filling. Actual application bindings retain their A.6.1 predicates; Work admission is additionally needed when the claim consumes a dated Work occurrence. An actual launch claim and any separate `FinalizeLaunchValues` witness follow E.18:5.6.
 
 #### A.6.7:4.4 - SuiteProtocols
 
@@ -320,13 +320,13 @@ CHRMechanismFamily : MechFamilyDescription := { UNM, UINDM, USCM, ... }
 
 This is a level error: `MechFamilyDescription` is reserved for realizations of a single mechanism declaration.
 
-**Example 3 (non-conformant).** Turning a suite into a hidden gate:
+**Example 3 (non-conformant).** Conflating suite conditions with decisions, governing rules or relation facts:
 
 * The suite declares `GateDecision` values or embeds a `DecisionLog`.
 * The suite defines acceptance thresholds (“pass score ≥ 0.7”) as part of suite obligations.
 * The suite embeds conversion or penalty tables, invents relation facts from a graph label, or treats referenced transport pins as an applied conversion or gate decision.
 
-All violate the separation between mechanism/suite descriptions and gate-level operational control.
+Gate decisions remain at the gate; acceptance clauses, task signatures or gate profiles state thresholds; and the applicable specifications, policies and direct predicates govern conversions, penalties and relation facts. A suite states the requirements on their use.
 
 ### A.6.7:5 - Archetypal Grounding
 
@@ -361,7 +361,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑5a (CN+CG pins for admissibility-gated characterization).** If the suite is admissibility-gated for characterization, it MUST require both `CNSpecRef` and `CGSpecRef` as pins (references), consistent with A.6.7:4.3.
 
-**CC‑A.6.7‑6 (Transport discipline preserved).** The suite MUST NOT introduce transport exceptions. An actual semantic crossing must recover its obtaining Bridge and bounded use under its direct rule, with any applicable penalties routed to `R/R_eff` only. Entity, scheme, plane or notation changes alone establish no Bridge.
+**CC‑A.6.7‑6 (Transport discipline preserved).** The suite MUST NOT introduce transport exceptions. For an actual semantic crossing, it MUST require the obtaining Bridge and bounded-use grounds under the direct rule, with loss assessed for that receiving use and any numerical assurance penalty satisfying §4.2(2). Entity, scheme, plane or notation changes alone establish no Bridge.
 
 **CC‑A.6.7‑7 (Tri-state guard discipline when used).** If the suite declares admissibility/eligibility semantics, it MUST use `GuardDecision := {pass|degrade|abstain}` and MUST NOT coerce unknown to pass.
 
@@ -379,7 +379,7 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑14 (Protocol closure & explicitness).** Each step resolves to one member declaration edition and one operation designator in that declaration (WF‑MS‑2). The operation's argument, result, law and admission meanings are recoverable. No unresolved edition choice, implicit operation or implicit crossing can supply that resolution.
 
-**CC‑A.6.7‑15 (P2W split preserved when applicable).** If the suite requires a planned-baseline pin, that baseline MUST be a `WorkPlanning` plan item and MUST NOT contain launch values or `FinalizeLaunchValues` witnesses; such witnesses remain `U.WorkEnactment`-only.
+**CC‑A.6.7‑15 (P2W split preserved when applicable).** If the suite requires a planned-baseline pin, that baseline MUST be content of an A.15.2 `U.WorkPlan`. Preserve its intended values and references. Actual launch values require independently established facts under E.18:5.6; any `FinalizeLaunchValues` witness remains a separate episteme.
 
 ### A.6.7:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -421,11 +421,11 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 Characterization and admissibility-gated selection pipelines are unified by:
 
 * shared governing spec refs (e.g., CN‑Spec / CG‑Spec),
-* shared conditions for actual semantic, kind and plane relations, independently governed flow/gate crossings, and any penalties routed to `R_eff`,
+* shared conditions for actual semantic, kind and plane relations, independently governed flow/gate crossings, and loss assessed under the receiving-use rule,
 * shared guard semantics (tri-state, no coercion),
 * and explicit protocol constraints (allowed pipelines).
 
-Encoding this unity as “one mechanism” or “one family” forces false commonality and invites hidden semantics. A dedicated **suite descriptor** preserves modularity and keeps the level separation clean.
+A suite descriptor keeps distinct contracts and their joint conditions explicit. Shared conditions alone establish neither one A.6.1 operation-family declaration nor realizations of one contract; assess any separately proposed mechanism declaration under A.6.1.
 
 ### A.6.7:11 - SoTA-Echoing
 

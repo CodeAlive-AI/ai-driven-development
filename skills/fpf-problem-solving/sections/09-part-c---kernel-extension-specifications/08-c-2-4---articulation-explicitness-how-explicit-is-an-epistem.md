@@ -110,7 +110,7 @@ The benefit is admissible publication of early cues and branch-aware threshold s
 `AE` supplies a shared ordinal interpretation for explicit articulation in the language-state chart. `A.16.0`, `A.16.1` and `B.4.1` can cite these anchors when an articulation threshold helps state their entry or completion condition. A directly stated sufficient condition needs no extra level merely to repeat it.
 
 ### C.2.4:11 - SoTA-Echoing
-The distinction echoes work on sketching, focusing/TAE, embodied cue capture, and representation probing: a cue can be real and operationally relevant before it becomes fully explicit.
+[Gendlin's *Introduction to Thinking at the Edge* (2004)](https://focusing.org/gendlin/docs/gol_2160.html), pp.3–5, is a historical comparison for :4.6. It describes trying several words against an initially unclear felt meaning, then developing sentences that express what each attempted word left unsaid. The resulting distinctions can change what is being articulated; writing and reading back can further develop the meaning. The ordinal `AE` anchors are FPF's construction for assessing that content against the stated receiving use.
 
 ### C.2.4:12 - Relations
 - Builds on: `A.18`, `C.2.2a`, `C.2.LS`.
@@ -194,7 +194,7 @@ At `AE3+`, use the local threshold of the direct branch rather than one universa
 - for a plan or intended activity, use `A.15`;
 - for a Method, use `A.3.1`; use `A.3.2` to test a `C.2.1` episteme's membership as a MethodDescription;
 - for a dated Work-occurrence claim, recover the performer under `A.13` and independently test Work admission under `A.15.1`; use `F.6` only when precise assignment-bound attribution is needed;
-- for a representation claim, use `C.29` and the represented subject's rule; use `C.2.P.DR` when declarative form is being overread, adding `A.6.3.RT` only when a representation transition is current;
+- for a representation claim, use the represented subject's rule and the representation's correspondence; use `C.29` when choosing or transferring a mathematical representation or relying on it beyond its supported correspondence leaves a separate question. Use `C.2.P.DR` when declarative form is being overread, adding `A.6.3.RT` only when a representation transition is current;
 - for an abductive prompt or explicit open question, use `B.5.2.0` or the direct question pattern;
 - for a Characteristic or Scale claim, use `A.17` and `A.18`, with `C.16.P` when its scalar wording hides the construction;
 - for an ordinary domain claim, use the domain pattern that governs its subject; use `C.2.1` when episteme identity is needed.

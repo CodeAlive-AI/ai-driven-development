@@ -420,7 +420,8 @@ When a selector consumes a declared `ExplorationArchive`, `Archive`, `Front`, or
 SelectedSetResultLabelLine@Context:
   selectorOutcomeKind:
   setResultFamily?:
-  sourceSetFamily:
+  sourceSetFamily?:
+  sourceSetComposition?:
   publicSelectedSetLabel?:
   namedUse?:
   memberEntries?:
@@ -433,6 +434,8 @@ SelectedSetResultLabelLine@Context:
 ```
 
 Earlier records may keep `membersOrHandoff`. Read it as `members` for `Shortlist` or `RankedShortlist` and as `handoffContent` for a `HandoffOutcome`. It cannot replace keyed `memberEntries` in a `JointUseSet`; if it also lists joint-use members for compatibility, that list is only the unique set projection of the entry keys.
+
+Use `sourceSetFamily` for a single immediate source and `sourceSetComposition` for a composition, under §4.4e; retain a primary family when the receiving use distinguishes one.
 
 `sourceSetFamily` may name a declared `Front`, `Q-front`, `ExplorationArchive`, `Archive`, current pool subset, or derived tradition view. For retained alternatives, `publicSelectedSetLabel` normally names `Shortlist` or `RankedShortlist` and may use a domain label such as `StyleShortlist` or `TraditionShortlist` only when its local meaning and any required term Bridge are established. `JointUseSet` is not a shortlist label: it names an all-member result and therefore uses `namedUse` plus keyed `memberEntries`. G.5 does not create the archive, compute the comparison, govern the pool policy, decide the cultural-evolution case, establish member identity or relations, or repair the term bridge. Use `C.18` for archive formation, `A.19.CPM` for comparison, `C.19` for pool policy, `C.36` for cultural-evolution claims, each member's own identity and relation patterns for those facts, and `F.17`/`F.18`/`F.9` for local meanings, naming settlement, and any obtaining term Bridge.
 
@@ -455,7 +458,7 @@ The pump result in §0.5 and the joint-use declaration in §4.4b show complete f
 
 #### G.5:4.4ca - Derived tradition-view result stays derived over one declared palette
 
-When the source is `TraditionFront` or `TraditionArchive`, keep its base `SoTAPaletteDescription` recoverable. State `SourceSetFamily`; add `DerivedViewKind` when it changes interpretation or later publication and `SourceSetComposition` only when several source-set families were actually composed. Cite the derivation's declared Q, reachability or coverage rule among the DRR/SCR or equivalent basis pins. The view qualifies the source; §4.4b still defines the emitted outcome.
+When the source is `TraditionFront` or `TraditionArchive`, keep its base `SoTAPaletteDescription` recoverable. State `SourceSetFamily`; add `DerivedViewKind` when it changes interpretation or later publication and `SourceSetComposition` only when several declared source sets were actually composed. Cite the derivation's declared Q, reachability or coverage rule among the DRR/SCR or equivalent basis pins. The view qualifies the source; §4.4b still defines the emitted outcome.
 
 #### G.5:4.4d - Worked result-declaration closure slice
 
@@ -560,7 +563,7 @@ Use §4.4b for the emitted outcome and §4.4bb–ca for its source and public-la
 | `Front` | The non-dominated source set under the declared `DominanceSet`. |
 | `Archive` | The exploration set retained under its policy. |
 | `PortfolioMode` | How the selector operated. The default `Archive` retains exploration evidence; it establishes neither an emitted Archive nor a different result family or DominanceSet. |
-| `SourceSetFamily`, `SourceSetComposition` | State the immediate source family; use composition only when several source families were actually consumed, for example a front and an archive. |
+| `SourceSetFamily`, `SourceSetComposition` | State the family of a single immediate source. For a composition, identify each contributing source and family and how its members contribute, for example a front and an archive used through their union. Retain a primary source and its family only when the receiving use distinguishes one, under `A.19.SOURCE-SET-SPACE-SUBSTRATE:4.7`. |
 | `DerivedViewKind`, `BasePaletteRef` | Qualify an actual derived view under §4.4ca; the latter is a reference, not a kind. |
 | `PromotionPolicy` | Required when tie-break or telemetry signals are promoted into dominance. |
 | `SubjectKind`, `RetentionIntent=steppingStone` | Qualify the relevant declaration or retention policy; neither names another emitted set result. |

@@ -68,7 +68,7 @@ Use the lightest object that answers the current typed-reasoning question.
 6. **Materialize an extension only for use.** A query, quantification, comparison, or review may need `KindExtension(k, slice)`. It represents admissible candidates judged `true`; notation, rows, or set membership do not create an ontic collection or classification relation.
 7. **Keep scope, formality, Work, and publication separate.** Formality characterizes the declaration episteme. Scope belongs to claims or capabilities. `U.Work` is a kind and `W : U.Work` is one independently grounded dated work occurrence. Plans, logs, cards, field bundles, carriers, and rows remain their own objects.
 
-Typed reasoning composes with F-G-R and USM in this order: recover kind compatibility; check classification admissibility and, when admissible, the exact judgment; separately check claim-scope coverage; then apply support, assurance, freshness, and any justified bridge consequence required by the receiver.
+Typed reasoning composes with F-G-R and USM in this order: recover kind compatibility; check claim-scope coverage; when the receiving use is candidate-bearing, check classification admissibility and, when admissible, the exact judgment; then apply support, assurance, freshness, and any justified bridge consequence required by the receiver.
 
 ### C.3:6 - Decision Split
 
@@ -86,7 +86,7 @@ Typed reasoning composes with F-G-R and USM in this order: recover kind compatib
 | Is this kind proposed as another durable public FPF `U.*` kind? | `E.24.UK`, followed by applicable naming patterns |
 | Is a candidate, quality, relation, construction, episteme, status, publication occurrence, or Work being identified? | Its direct subject pattern; C.3 consumes that result and does not create it by classification notation |
 
-When a constructive trace or working model and a target kind or logical representation must be inspected together, use the `StructuralCT2RTypingGroundingUnfoldingStructureBlock` from `B.3.5:4.1` or cite an equivalent A.22.CGUS specialization. C.3 supplies the kind, admissibility, judgment, subkind and kind-correspondence content actually needed. The block describes use of an independently selected A.22 structure; any A.22.CGUS qualification is tested separately. A local name or completed record establishes neither that qualification nor the classification result. For general diagnostic recovery of a subject construction from an inadequate account, use `A.7.1`.
+When a constructive trace or working model and a target kind or logical representation must be inspected together, explain their correspondence using the content in the following paragraph. `B.3.5:4.1` provides an optional block for recording that account. C.3 supplies the kind, admissibility, judgment, subkind and kind-correspondence content actually needed. Use A.22 when the receiving question needs a selected structure, and A.22.CGUS for a remaining question about potential continuations and their conditions; test any required formal qualification under that pattern. For general diagnostic recovery of a subject construction from an inadequate account, use `A.7.1`.
 
 The account identifies the source and typed or logical target, what the passage preserves or loses, and the supported reuse with its substitution limits. Name an F.9 Bridge or C.3.3 kind correspondence when the use actually claims or consumes one. Supply `CL` or `CL^k` when the consumed assurance or calibration account requires it. Evidence and proof retain their own subject patterns; a changed slice or notation alone supplies no Bridge.
 
@@ -117,7 +117,7 @@ C.3 counters lexical, locality, document, and ontology-growth bias. A familiar w
 | `CC-C3-6` | Subkind facts follow C.3.1's criterion-entailment or exhaustive closed-domain branch and form a preorder; classification equivalence does not merge kind identities. |
 | `CC-C3-7` | Kind scope is absent; declaration and assertion scopes remain on their epistemes, and the slice remains an evaluation input. |
 | `CC-C3-8` | An extension is a representation of admissible true candidates, not `U.EntitySet`, a world-side collection-belonging claim, a collection holon, or a direct relation occurrence. |
-| `CC-C3-9` | C.3.3 is used only after distinct kinds and a proposed correspondence are independently established; same-kind reuse still gets a fresh receiving judgment. |
+| `CC-C3-9` | C.3.3 is used only after distinct kinds and a proposed correspondence are independently established; same-kind reuse requires a fresh receiving judgment when the receiving use is candidate-bearing. |
 | `CC-C3-10` | `U.Work`, exact `W : U.Work`, and any episteme about W remain distinct. |
 
 ### C.3:10 - Common Anti-Patterns and How to Avoid Them
@@ -143,7 +143,7 @@ The kind, its declaration, pre-judgment admissibility, one classification judgme
 
 ### C.3:13 - SoTA-Echoing
 
-Model theory, type systems, ontology engineering, and schema practice distinguish intensional declarations, candidate evaluation, extensions, and assertion scope. C.3 adapts that separation to FPF's object discipline: declaration epistemes follow `A.6.0` and `C.2.1`, context slices and claim scope follow `A.2.6`, mathematical representations follow `C.29`, and durable kind admission follows `E.24.UK`.
+For one supported classification, the ordinary conclusion in `C.3:5` can be sufficient. Creating a reusable declaration and an extension for every such answer adds products that the receiver may not consume. Keep the criterion, admissibility and needed support recoverable in the lighter answer. Add the corresponding declaration or extension when repeated interpretation or a set-consuming question needs it.
 
 ### C.3:14 - Detail Map
 C.3 is the head pattern for typed reasoning. It leaves each detailed mechanism at its direct neighboring pattern while preserving a discoverable route to that mechanism.
@@ -152,7 +152,7 @@ C.3 is the head pattern for typed reasoning. It leaves each detailed mechanism a
 | --- | --- | --- |
 | Kind identity, subkind relation, and continuity | `C.3.1` | admitted `U.Kind` and `U.SubkindOf`, criterion-entailment or exhaustive closed-domain obtaining, preorder and classification equivalence, participant-determined relation identity, and operational before/after continuity. |
 | Declaration, candidate judgment, and extension | `C.3.2` | `KindSignature`, exact four-key judgment, `true`/`false`/`unknown`, optional `KindExtension`, and scope/formality/evidence boundaries. |
-| Cross-local kind use | `C.3.3` | identity comparison first; same-kind reuse without a bridge; for distinct kinds, an obtaining directional `KindBridge`, its separate assertion, preservation/loss, and a fresh admissible receiving judgment. |
+| Cross-local kind use | `C.3.3` | identity comparison first; same-kind reuse without a bridge; for distinct kinds, an obtaining directional `KindBridge`, its separate assertion, preservation/loss, and a fresh admissible receiving judgment when the receiving use is candidate-bearing. |
 | Local adaptation without cloning a kind | `C.3.4` | A `KindUseAdaptationDeclaration` for one named local use of an exact base kind, its pinned base-kind judgment and additional candidate-feature constraints, the exact three-valued `KindUseAdaptationJudgment`, and any separately declared `KindUseAdaptationCorrespondenceDeclaration` between two exact adaptation declarations. |
 | Abstraction facet | `C.3.5` | `KindAT` as an editorial planning facet on one exact local kind, with no effect on the kind, declaration, judgment, extension, bridge assessment, guard, or F–G–R. |
 | Typed guards and applied examples | `C.3.A` | Declaration-level kind compatibility and exact candidate-use judgments kept separate across regulatory, assurance, ESG, and Method–Work uses, including the independently grounded actual `W : U.Work` boundary. |
@@ -162,7 +162,7 @@ Do not treat this compact head pattern as the whole C.3 discipline when a case n
 ### C.3:15 - Relations
 
 - **Builds on:** `A.2.6` context-slice and scope discipline, `A.6.0` reusable declaration discipline, `C.2.1` episteme identity, F-G-R, and direct subject patterns for candidate features.
-- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `C.29`, `E.24.UK`, `A.8`, `A.11`, `F.8` and `F.18`. Use `B.3.5:4.1` when constructional and typed or logical content must be inspected together; A.22 selects the structure and A.22.CGUS tests any required qualification separately. Use `A.7.1` for a general diagnostic return to the subject construction.
+- **Coordinates with:** `C.3.1` through `C.3.5`, `C.3.A`, `C.29`, `E.24.UK`, `A.8`, `A.11`, `F.8` and `F.18`. `B.3.5:4.1` provides an optional record when constructional and typed or logical content must be inspected together; use A.22 for a needed structure selection and A.22.CGUS for a remaining continuation question or required qualification. Use `A.7.1` for a general diagnostic return to the subject construction.
 - **Does not replace:** direct candidate-feature ontology, A.14 collection membership, `A.2.6` scope, `C.29` representation use, ontic settlement in `E.24`, U-kind admission in `E.24.UK`, or naming in Part F.
 
 ### C.3:End

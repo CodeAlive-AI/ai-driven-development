@@ -20,16 +20,16 @@ Admitting domain-specific primitives without their applicability boundaries can 
 
 | Problem | Practical effect |
 | --- | --- |
-| **Kernel bloat** | Adding unnecessary root U-kinds or local type vocabularies increases what every Kernel user must understand and maintain. |
+| **Kernel bloat** | Unnecessary root U-kinds or local type vocabularies can increase users' learning effort and maintainers' support work. |
 | **Conflicting assumptions** | Incompatible axioms presented as unconditional commitments leave the reader unable to select an applicable explanation. |
 
 ### A.5:3 - Forces
 
 | Force                            | Tension                                                                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Stability vs. Evolvability**   | Stable core needed for trust ↔ constant domain innovation needed for relevance.                                       |
+| **Stability vs. Evolvability**   | Stable common commitments support reuse ↔ changed domain needs can require new or revised contributions.                                       |
 | **Universality vs. Specificity** | Single kernel language ↔ rich disciplinary idioms.                     |
-| **Parsimony vs. Coverage**       | Few primitives keep reasoning elegant ↔ framework must still model energy budgets, epistemic uncertainty, agentic goals. |
+| **Parsimony vs. Coverage**       | Fewer shared primitives can reduce learning and maintenance work ↔ domain uses still need their applicable distinctions and laws. |
 
 ### A.5:4 - Solution
 

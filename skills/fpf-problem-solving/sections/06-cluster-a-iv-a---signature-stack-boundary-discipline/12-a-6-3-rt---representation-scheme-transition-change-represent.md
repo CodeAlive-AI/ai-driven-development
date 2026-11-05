@@ -126,7 +126,7 @@ The six SlotSpecs and direction are the exact `RelationSignature`. `X` and `Y` h
 A positive occurrence obtains only when all of the following hold together:
 
 1. all six participants resolve exactly, and the `BoundedModelUseStructure` was independently selected because its model-use organization changes this transition use;
-2. A.13 identifies the actual performer, and A.15.1 independently admits the dated representation-transformation Work. If the current use also needs to say exactly which assignment covered that Work, F.6 checks that separate relation against the same A.13 assignment; F.6 identifies neither performer nor assignment, and a missing or failed attribution leaves the Work intact. The Work uses all six participant values collectively through its governed inputs, result, references, A.6.1 bindings, or a combination of these;
+2. A.13 identifies the actual performer, and A.15.1 independently admits the dated representation-transformation Work. If the current use also needs to say exactly which assignment covered that Work, F.6 checks that separate relation against the same A.13 assignment; F.6 identifies neither performer nor assignment, and a missing or failed attribution alone does not overturn independently admitted Work. If the finding also invalidates a premise consumed by A.13 or A.15.1, recheck that premise and the claims that depend on it. The Work uses all six participant values collectively through its governed inputs, result, references, A.6.1 bindings, or a combination of these;
 3. exact `v : X -> Y` states claim construction, endpoint-scheme relation, same EntityOfConcern, preservation, loss or recoverability, prohibited strengthening, applicability, use, and return; and
 4. every depended-on correspondence is an exact separately governed relation or claim.
 
@@ -218,7 +218,7 @@ State which distinctions, inspection possibilities, uncertainty cues, or local q
 
 ##### A.6.3.RT:4.5.c - Decode-mediated entry
 
-A latent or decode-mediated case stays bounded until it has source material for the same concern, a decoding or access relation, recoverability evidence for the intended use, admissible and non-admissible use, remaining user action, and source return. When exact reliance is claimed, recover exact source episteme `X`, receiving episteme `Y`, construction `v`, and the source dependencies of `v` defined in §4.2.
+A latent or decode-mediated case stays bounded until it has source material for the same concern, a decoding or access relation, recoverability evidence for the intended use, and a supported use. State any needed user action, excluded use or source-return condition under §4.1. When exact reliance is claimed, recover exact source episteme `X`, receiving episteme `Y`, construction `v`, and the source dependencies of `v` defined in §4.2.
 
 A latent region, embedding, probe result, decoded rendering or publication may help locate the case. To use an episteme endpoint, recover its C.2.1 identity rather than inferring it from a label or readable output. Missing recovery evidence leaves the affected use exploratory, report-only or unavailable, according to what the remaining grounds support.
 
@@ -235,7 +235,7 @@ Reopen the affected account when source content, endpoint identity, recovery ass
 | Same-regime wording only | Use A.6.3.CR. |
 | Reader-useful ordering into a narrative path | Use A.6.3.NAR; keep RT only for a remaining material scheme shift. |
 | Explanation adequacy of an existing face | Use E.17.EFP. |
-| Receiving episteme has an independently identified different exact EntityOfConcern | Use A.6.4 for the retargeting arrow, its separate C.2.1 bounded-use assertion, and the current-case judgement `satisfies`, `fails`, or `cannot decide`. |
+| Receiving episteme has an independently identified different exact EntityOfConcern | Use A.6.4 to classify the retargeting arrow. For a claimed receiving use, establish its separate C.2.1 bounded-use assertion. When evaluating that assertion in a current case, judge it as `satisfies`, `fails`, or `cannot decide`. |
 | Changed kind, ontology frame, predicate set, mathematical domain, or notation without an established EntityOfConcern change | Repeat the C.2.1 identity test and use the exact ontology pattern for any changed claim. Stay in RT when the same EntityOfConcern remains current and representation is the primary change. |
 | Same-signal time/frequency or another mathematical representation change | Stay in RT when the same EntityOfConcern remains current and representation is the primary change. Add C.29 only when the use depends on a contested or claim-bearing mathematical lens. A.6.4 opens only after C.2.1 independently identifies a different receiving entity. |
 | Carrier rendering, export or serialization of a chosen representation; OCR or parsing that extracts carrier content without yet constituting a receiving episteme | Use A.7 or the corresponding carrier/extraction pattern. |
@@ -283,7 +283,7 @@ For this identity-and-obtaining illustration, take the stated endpoint, scheme, 
 
 Exact source episteme `CoolingLoopRelationTable-X` and exact receiving episteme `CoolingLoopDependencyDiagram-Y` state the same two connection claims about `CoolingLoop-7` under effective schemes `TabularPlantScheme-5` and `DirectedDiagramPlantScheme-3`. `Y` is a candidate episteme, not automatically a `U.View`.
 
-Scheme-description epistemes `TabularPlantSchemeDescription-5` and `DirectedDiagramPlantSchemeDescription-3` concern their respective schemes and state their interpretation rules. Independently selected `CoolingLoopReviewModelUseStructure` satisfies A.1.1 because its model-use organization changes this review. A.13 identifies `PlantModelingTool-2` as the actual performer through the exact covering assignment. A.15.1 independently admits dated `CoolingLoopDiagrammingWork-18`. Because this example states precise assignment-bound attribution, its direct case fact says that the Work was performed under the same exact A.13 assignment, so the F.6 check is positive. If that direct fact were missing, attribution would remain unresolved. If the facts refuted an F.6 condition, that attribution would fail. The independently admitted Work would remain intact in either case. The Work's A.6.1 bindings use all six participants. `DiagramCoolingLoop : X -> Y` is the exact construction; it states claim construction, endpoint-scheme relation, same exact EntityOfConcern, preserved connection claims, omitted table qualifiers and their recoverability, prohibited strengthening, applicability, topology-inspection use, and return to `X`.
+Scheme-description epistemes `TabularPlantSchemeDescription-5` and `DirectedDiagramPlantSchemeDescription-3` concern their respective schemes and state their interpretation rules. Independently selected `CoolingLoopReviewModelUseStructure` satisfies A.1.1 because its model-use organization changes this review. A.13 identifies `PlantModelingTool-2` as the actual performer through the exact covering assignment. A.15.1 independently admits dated `CoolingLoopDiagrammingWork-18`. Because this example states precise assignment-bound attribution, its direct case fact says that the Work was performed under the same exact A.13 assignment, so the F.6 check is positive. If that direct fact were missing, attribution would remain unresolved. If the facts refuted an F.6 condition, that attribution would fail. Neither outcome alone overturns the independent Work admission. A finding that also invalidates a premise consumed by A.13 or A.15.1 reopens that premise and the dependent claims. The Work's A.6.1 bindings use all six participants. `DiagramCoolingLoop : X -> Y` is the exact construction; it states claim construction, endpoint-scheme relation, same exact EntityOfConcern, preserved connection claims, omitted table qualifiers and their recoverability, prohibited strengthening, applicability, topology-inspection use, and return to `X`.
 
 Only then does this occurrence obtain:
 
@@ -341,11 +341,11 @@ A local reliability note about Pump P-2 becomes a comparison claiming operationa
 
 #### A.6.3.RT:5.4.b - Boundary to carrier work
 
-A table is exported as CSV and dashboard PNG after its representation scheme was chosen. The later Work produces the CSV and PNG carriers by formatting, exporting, packaging, or rendering the already chosen representation; it is not another RT merely because the visible form changed.
+A table is exported as CSV and dashboard PNG after its representation scheme was chosen. The later activity produces the CSV and PNG carriers by formatting, exporting, packaging, or rendering the already chosen representation; it is not another RT merely because the visible form changed.
 
 #### A.6.3.RT:5.4.c - Boundary to coarsened dashboard view
 
-An incident worksheet carries three causal branches, two confidence bands, and an open ambiguity; a dashboard tile foregrounds only cache-failover evidence. If the tile needs a declared narrower use, non-admissible action, and explicit return to the worksheet, A.6.3.CSC is primary. The tile is not causal proof, service-status verdict, or action cue.
+An incident worksheet carries three causal branches, two confidence bands, and an open ambiguity; a dashboard tile foregrounds only cache-failover evidence. If the tile is useful only under a declared narrower use and explicit return to the worksheet, A.6.3.CSC is primary. Its retained evidence can cue inspection of the cache-failover branch; the tile alone leaves the three-branch causal comparison unresolved.
 
 #### A.6.3.RT:5.4.d - Boundary to structure-to-narrative rendering
 
